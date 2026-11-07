@@ -16,6 +16,7 @@ form instead of a pull request.
 | `tools/merge_data.py` | Combines accepted exports into `GoldScout/Data_Community.lua` |
 | `data/submissions/` | Accepted exports, one file per contributor |
 | `companion/` | GoldScout Companion, the Windows tray app that shares saved drop data |
+| `site/` | The website: `python site/build.py` writes it to `site/dist/` (Cloudflare Pages builds it on every push) |
 | `server/` | The upload service the companion sends data to (Cloudflare Worker + D1) |
 | `tests/` | Tests for the data pipeline: `python -m unittest discover -s tests` |
 
