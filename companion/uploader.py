@@ -9,9 +9,9 @@ import os
 import urllib.error
 import urllib.request
 
-# Set once the upload service is deployed. Empty means automatic sharing isn't
-# available yet. GOLDSCOUT_UPLOAD_URL overrides it (for local testing).
-UPLOAD_URL = ""
+# The GoldScout upload service (server/). GOLDSCOUT_UPLOAD_URL overrides it,
+# for testing against a local server.
+UPLOAD_URL = "https://goldscout-api.cawley22.workers.dev"
 TERMS_VERSION = "2026-11-07"
 
 

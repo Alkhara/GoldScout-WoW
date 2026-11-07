@@ -2,6 +2,9 @@
 name = "goldscout-api"
 main = "src/index.js"
 compatibility_date = "2026-10-01"
+# Serve at https://goldscout-api.cawley22.workers.dev; no per-version preview URLs.
+workers_dev = true
+preview_urls = false
 
 [[d1_databases]]
 binding = "DB"
