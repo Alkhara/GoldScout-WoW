@@ -49,6 +49,11 @@ players. The more people share, the better the Farm tab gets for everyone.
    [Share drop data](https://github.com/Alkhara/GoldScout-WoW/issues/new?template=data-submission.yml)
    form.
 
+On Windows, the [GoldScout Companion](companion/README.md) does this for you:
+it reads what GoldScout saved, checks it, and opens the form already filled in.
+Download `GoldScoutCompanion.exe` from the
+[Releases](https://github.com/Alkhara/GoldScout-WoW/releases) page.
+
 Exports contain no character or account names. Accepted data ships in the next
 release. See the [Contributor Terms](docs/CONTRIBUTOR_TERMS.md) and
 [Privacy Policy](docs/PRIVACY.md).

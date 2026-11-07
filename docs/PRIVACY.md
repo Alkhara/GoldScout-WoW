@@ -19,6 +19,16 @@ files next to it:
 - what you've looted from creatures, how often, at what level and where
 - your settings and recent Hunt mode sessions
 
+## GoldScout Companion
+
+The companion app for Windows reads GoldScout's saved data file
+(`GoldScout.lua` in each account's SavedVariables folder) to show what you've
+learned and build an export. It never changes game files. It doesn't connect to
+the internet: when you click Share, it opens the submission form in your
+browser with the export filled in, and nothing is sent until you submit the
+form yourself. It stores your WoW folder location and when you last shared in
+`%APPDATA%\GoldScout Companion\config.json` on your PC.
+
 ## Sharing drop data
 
 Nothing leaves your computer unless you choose to share it. `/gscout export`
@@ -56,7 +66,7 @@ can't be separated from other players' data.
 
 ## Future services
 
-If we launch a companion app, website or other service that collects data
+If we launch a website, an upload service or anything else that collects data
 differently, this policy will be updated before it does.
 
 ## Contact

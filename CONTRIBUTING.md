@@ -15,6 +15,7 @@ form instead of a pull request.
 | `tools/submission.py` | Validates drop data exports |
 | `tools/merge_data.py` | Combines accepted exports into `GoldScout/Data_Community.lua` |
 | `data/submissions/` | Accepted exports, one file per contributor |
+| `companion/` | GoldScout Companion, the Windows app that shares saved drop data |
 | `tests/` | Tests for the data pipeline: `python -m unittest discover -s tests` |
 
 ## Working on the addon

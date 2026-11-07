@@ -84,14 +84,22 @@ end
 -- Your learned data as text for /gscout export. One line per mob:
 -- npcID^kills^picks^minLevel^maxLevel^uiMapID^x^y^positions^name^drops^pickDrops
 -- where drops are "itemID:times:quantity" joined by commas. No character names.
+-- Mob names keep letters (including accented ones), digits, spaces and a few
+-- punctuation marks; anything else would make the data bot reject the export.
 local function Clean(text)
-  return (tostring(text or ""):gsub("[%^\n|,:]", " "))
+  text = tostring(text or ""):gsub("[^%w '%-%.%(%)!%?&\128-\255]", " ")
+  return (text:gsub("%s+", " "):gsub("^ ", ""):gsub(" $", ""))
 end
 
-local function ItemList(items)
+-- Drops can't outnumber attempts (one corpse can hold two stacks of an item),
+-- so counts are clamped to keep every export valid.
+local function ItemList(items, attempts)
   local parts = {}
   for itemID, stat in pairs(items or {}) do
-    parts[#parts + 1] = itemID .. ":" .. (stat.d or 0) .. ":" .. (stat.q or 0)
+    local drops = math.min(stat.d or 0, attempts)
+    if drops > 0 then
+      parts[#parts + 1] = itemID .. ":" .. drops .. ":" .. math.max(stat.q or 0, drops)
+    end
   end
   return table.concat(parts, ",")
 end
@@ -99,15 +107,22 @@ end
 function Learn:ExportString()
   local lines = { "GoldScout-export 1" }
   for npcID, entry in pairs((ns.db and ns.db.drops) or {}) do
-    if (entry.k or 0) + (entry.p or 0) > 0 then
-      local x, y = 0, 0
-      if (entry.c or 0) > 0 then
+    local kills, picks = entry.k or 0, entry.p or 0
+    if kills + picks > 0 then
+      local map, count, x, y = entry.m or 0, math.min(entry.c or 0, kills), 0, 0
+      if map > 0 and count > 0 then
         x, y = entry.sx / entry.c, entry.sy / entry.c
+      else
+        map, count = 0, 0
+      end
+      local lmin, lmax = entry.lmin or 0, entry.lmax or 0
+      if lmin == 0 or lmax == 0 or lmax - lmin > 15 or lmax > 63 then
+        lmin, lmax = 0, 0
       end
       lines[#lines + 1] = table.concat({
-        npcID, entry.k or 0, entry.p or 0, entry.lmin or 0, entry.lmax or 0, entry.m or 0,
-        ("%.4f"):format(x), ("%.4f"):format(y), entry.c or 0, Clean(entry.n),
-        ItemList(entry.i), ItemList(entry.pi),
+        npcID, kills, picks, lmin, lmax, map,
+        ("%.4f"):format(x), ("%.4f"):format(y), count, Clean(entry.n),
+        ItemList(entry.i, kills), ItemList(entry.pi, picks),
       }, "^")
     end
   end
