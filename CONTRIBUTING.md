@@ -15,6 +15,7 @@ form instead of a pull request.
 | `tools/submission.py` | Validates drop data exports |
 | `tools/merge_data.py` | Combines accepted exports into `GoldScout/Data_Community.lua` |
 | `data/submissions/` | Accepted exports, one file per contributor |
+| `tests/` | Tests for the data pipeline: `python -m unittest discover -s tests` |
 
 ## Working on the addon
 
@@ -45,7 +46,8 @@ For Lua error popups in game, use `/console scriptErrors 1` or BugSack.
   players through the submission form.
 - **Don't edit `Data_Community.lua` by hand.** It's generated from
   `data/submissions/`.
-- Run `python tools/luacheck_lite.py GoldScout/*.lua` before opening a pull
+- Run `python tools/luacheck_lite.py GoldScout/*.lua` and
+  `python -m unittest discover -s tests` before opening a pull
   request.
 
 By contributing code you agree it's released under the MIT License. Community

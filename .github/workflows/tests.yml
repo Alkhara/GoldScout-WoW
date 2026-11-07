@@ -1,0 +1,42 @@
+# Runs the Lua check and the data pipeline tests on every push and pull request.
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check Lua syntax
+        run: python tools/luacheck_lite.py GoldScout/*.lua
+
+      - name: Validate community data files
+        run: |
+          python - <<'EOF'
+          import sys
+          from pathlib import Path
+          sys.path.insert(0, "tools")
+          import submission
+          bad = 0
+          for path in sorted(Path("data/submissions").glob("*.txt")):
+              result = submission.parse(path.read_text(encoding="utf-8"))
+              for error in result.errors:
+                  print("%s: %s" % (path, error))
+                  bad += 1
+          sys.exit(1 if bad else 0)
+          EOF
+
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
