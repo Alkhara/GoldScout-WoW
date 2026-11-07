@@ -129,9 +129,11 @@ stays in your own SavedVariables.
 
 `/gscout export` opens a window with your learned drop data: drops, kill
 counts, mob levels and loot locations, with no character names. Copy it and
-send it to the GoldScout data collection; by sharing it you agree it can be
-included in GoldScout under its MIT license. Every shared export makes the
-rankings better for everyone.
+paste it into the **Share drop data** form on GitHub:
+https://github.com/Alkhara/GoldScout-WoW/issues/new?template=data-submission.yml
+
+By sharing it you agree to the [Contributor Terms](https://github.com/Alkhara/GoldScout-WoW/blob/main/docs/CONTRIBUTOR_TERMS.md).
+Every shared export makes the rankings better for everyone.
 - **Gathering zones** are the classic spawn zones. Forever expanded several
   zones, so treat them as a starting point.
 - **Yields** (herbs per node, ore per node, leather per skin, cloth per kill)

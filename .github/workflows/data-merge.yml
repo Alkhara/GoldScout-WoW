@@ -1,0 +1,69 @@
+# Once a day (or when run by hand), gathers open submissions labeled
+# data-valid or data-approved, re-validates them, and opens or updates a pull
+# request that adds them to data/submissions/ and regenerates
+# GoldScout/Data_Community.lua. Merging the pull request closes the issues.
+#
+# Needs: Settings > Actions > General > "Allow GitHub Actions to create and
+# approve pull requests".
+name: Merge community data
+
+on:
+  schedule:
+    - cron: "17 9 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: read
+  pull-requests: write
+
+concurrency:
+  group: data-merge
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      BRANCH: data/community-update
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch accepted submissions
+        run: |
+          for label in data-valid data-approved; do
+            gh api --paginate "repos/$GITHUB_REPOSITORY/issues?state=open&labels=$label&per_page=100" \
+              --jq '.[] | select(.pull_request == null)
+                    | {number, body, user: {id: .user.id, login: .user.login, type: .user.type},
+                       labels: [.labels[].name]} | tostring'
+          done > issues.jsonl
+
+      - name: Validate and store
+        id: collect
+        run: python3 tools/data_bot.py collect issues.jsonl
+
+      - name: Regenerate community data
+        if: steps.collect.outputs.count != '0'
+        run: |
+          python3 tools/merge_data.py
+          python3 tools/luacheck_lite.py GoldScout/Data_Community.lua
+
+      - name: Open or update the pull request
+        if: steps.collect.outputs.count != '0'
+        run: |
+          if [ -z "$(git status --porcelain -- data GoldScout/Data_Community.lua)" ]; then
+            echo "Nothing changed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$BRANCH"
+          git add data GoldScout/Data_Community.lua
+          git commit -m "Update community drop data"
+          git push --force origin "$BRANCH"
+          state=$(gh pr view "$BRANCH" --json state --jq .state 2>/dev/null || true)
+          if [ "$state" = "OPEN" ]; then
+            gh pr edit "$BRANCH" --body-file pr_body.md
+          else
+            gh pr create --base main --head "$BRANCH" --title "Update community drop data" --body-file pr_body.md
+          fi

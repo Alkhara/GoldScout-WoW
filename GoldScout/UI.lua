@@ -982,8 +982,8 @@ function UI:ShowExport()
   end
   exportFrame = exportFrame or CreateExportFrame()
   exportFrame.info:SetText(("Drop data for %d mobs from your loot: drops, kill counts, levels and loot "
-    .. "locations, with no character names. Press Ctrl+C to copy it, then send it to the GoldScout data "
-    .. "collection. By sharing it you agree it can be included in GoldScout under its MIT license."):format(count))
+    .. "locations, with no character names. Press Ctrl+C to copy it, then paste it into the Share drop "
+    .. "data form on GoldScout's GitHub page. Sharing means you agree to the GoldScout Contributor Terms."):format(count))
   exportFrame.edit:SetText(text)
   exportFrame:Show()
   exportFrame.edit:SetFocus()

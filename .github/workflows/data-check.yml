@@ -1,0 +1,58 @@
+# Checks every drop data submission (issues from the "Share drop data" form)
+# and labels it: data-valid, data-needs-review or data-invalid.
+#
+# A maintainer can add data-approved to a data-needs-review issue to accept it
+# anyway. Editing an issue removes data-approved, so approved data can't be
+# swapped out afterwards.
+#
+# The issue text is untrusted. It's only read by tools/data_bot.py from the
+# event file, never placed into a shell command.
+name: Check data submission
+
+on:
+  issues:
+    types: [opened, edited, reopened]
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: data-check-${{ github.event.issue.number }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    if: >-
+      github.event.issue.state == 'open' &&
+      (contains(github.event.issue.labels.*.name, 'data-submission') ||
+       startsWith(github.event.issue.title, 'Drop data submission'))
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate the export
+        id: bot
+        run: python3 tools/data_bot.py check "$GITHUB_EVENT_PATH"
+
+      - name: Label and comment
+        if: steps.bot.outputs.status != 'skip'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUMBER: ${{ github.event.issue.number }}
+          STATUS: ${{ steps.bot.outputs.status }}
+          ACTION: ${{ github.event.action }}
+        run: |
+          gh label create data-submission --color 1d76db --description "Drop data shared with /gscout export" --force
+          gh label create data-valid --color 0e8a16 --description "Passed every check; goes into the next data update" --force
+          gh label create data-needs-review --color fbca04 --description "Valid, but some rates look unusual" --force
+          gh label create data-invalid --color d93f0b --description "Can't be accepted as is" --force
+          gh label create data-approved --color 5319e7 --description "Reviewed and accepted by a maintainer" --force
+
+          remove="data-valid,data-needs-review,data-invalid"
+          if [ "$ACTION" = "edited" ]; then
+            remove="$remove,data-approved"
+          fi
+          gh issue edit "$NUMBER" --remove-label "$remove" || true
+          gh issue edit "$NUMBER" --add-label "data-submission,data-$STATUS"
+          gh issue comment "$NUMBER" --body-file comment.md

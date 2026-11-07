@@ -4,7 +4,7 @@
 **Summary (one line):** Tells you what's worth farming or crafting on the character you're playing, using live auction house prices.
 **Categories:** Auction & Economy; Professions; Map & Minimap
 **Game version:** WoW Forever (1.60.1)
-**License:** MIT
+**License:** MIT (code); GoldScout Data License (community drop data)
 
 ---
 

@@ -1,0 +1,30 @@
+name: Share drop data
+description: Share the drop rates GoldScout learned from your loot, so the Farm tab gets better for everyone.
+title: "Drop data submission"
+labels: ["data-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping! In game, type `/gscout export`, press **Ctrl+C** to copy the text, and paste all of it below.
+
+        The export holds mob and item IDs, kill and drop counts, mob levels and where you looted, but no character or account names. This issue is public. A bot checks the export within a minute; accepted exports are added to GoldScout's community data. Each new export from you replaces your previous one, so share again whenever you've looted more.
+
+        Please read the [Contributor Terms](https://github.com/Alkhara/GoldScout-WoW/blob/main/docs/CONTRIBUTOR_TERMS.md) and the [Privacy Policy](https://github.com/Alkhara/GoldScout-WoW/blob/main/docs/PRIVACY.md) first.
+  - type: textarea
+    id: export
+    attributes:
+      label: Your /gscout export
+      description: Paste the whole text, starting with the line "GoldScout-export 1". Don't edit it.
+      render: text
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Contributor terms
+      options:
+        - label: I collected this data myself by playing World of Warcraft with GoldScout.
+          required: true
+        - label: I agree to the GoldScout Contributor Terms, including the license they grant for this data.
+          required: true
