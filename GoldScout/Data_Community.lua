@@ -7,3 +7,9 @@ local _, ns = ...
 
 ns.COMMUNITY = {
 }
+
+-- The export snapshot of each install included above, so a player's own
+-- client can take its shared loot back out (see Community.lua).
+ns.COMMUNITY_SOURCES = {
+}
+ns.COMMUNITY_CAP = 1000

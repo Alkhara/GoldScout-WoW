@@ -18,7 +18,7 @@ import merge_data  # noqa: E402
 import submission  # noqa: E402
 
 # A real export: two Zoram Strand crawlers.
-GOOD = """GoldScout-export 1
+GOOD = """GoldScout-export 2^abcdefghijkl^3
 3812^11^0^19^20^1440^0.1179^0.2989^11^Clattering Crawler^4874:2:2,3010:7:7,2675:5:5,5523:4:4,2674:4:4^
 3814^7^0^20^21^1440^0.1215^0.3092^7^Spined Crawler^5569:4:4,2674:4:4,2675:3:3,17057:2:2,5523:2:2,3010:1:1^
 """
@@ -46,19 +46,29 @@ class ValidatorTests(unittest.TestCase):
         self.assertEqual(errors(GOOD.replace("\n", "\r\n")), [])
 
     def test_round_trip(self):
-        mobs = submission.parse(GOOD).mobs
-        rebuilt = "\n".join([submission.HEADER] + [mob.to_line() for mob in mobs])
-        self.assertEqual([m.to_line() for m in submission.parse(rebuilt).mobs], [m.to_line() for m in mobs])
+        result = submission.parse(GOOD)
+        self.assertEqual((result.install_id, result.seq), ("abcdefghijkl", 3))
+        rebuilt = submission.parse(result.text())
+        self.assertEqual(rebuilt.text(), result.text())
+        self.assertEqual([m.to_line() for m in rebuilt.mobs], [m.to_line() for m in result.mobs])
+
+    def test_old_exports_get_a_clear_message(self):
+        message = errors(GOOD.replace("export 2^abcdefghijkl^3", "export 1"))[0]
+        self.assertIn("older GoldScout", message)
 
     def test_rejects_bad_structure(self):
         cases = {
-            "no header": GOOD.replace("GoldScout-export 1\n", ""),
-            "wrong header": GOOD.replace("export 1", "export 2"),
-            "header only": "GoldScout-export 1\n",
+            "no header": GOOD.replace("GoldScout-export 2^abcdefghijkl^3\n", ""),
+            "old version 1 header": GOOD.replace("export 2^abcdefghijkl^3", "export 1"),
+            "short install ID": GOOD.replace("abcdefghijkl", "abc"),
+            "uppercase install ID": GOOD.replace("abcdefghijkl", "ABCDEFGHIJKL"),
+            "snapshot zero": GOOD.replace("^abcdefghijkl^3", "^abcdefghijkl^0"),
+            "no snapshot": GOOD.replace("^abcdefghijkl^3", "^abcdefghijkl"),
+            "header only": "GoldScout-export 2^abcdefghijkl^3\n",
             "garbage": "hello world",
             "missing field": GOOD.replace("^Spined Crawler", ""),
             "duplicate mob": GOOD + CLATTERING,
-            "too large": "GoldScout-export 1\n" + "x" * 70000,
+            "too large": "GoldScout-export 2^abcdefghijkl^3\n" + "x" * 70000,
         }
         for name, text in cases.items():
             with self.subTest(name):
@@ -108,13 +118,13 @@ class ValidatorTests(unittest.TestCase):
 
 class OutlierTests(unittest.TestCase):
     OTHERS = submission.parse(
-        "GoldScout-export 1\n"
+        "GoldScout-export 2^abcdefghijkl^3\n"
         "3812^2000^0^19^20^1440^0.1179^0.2989^500^Clattering Crawler^2674:20:20,3010:1200:1200^\n").mobs
 
     def test_sharply_different_rates_are_flagged(self):
         big = (CLATTERING.replace("3812^11^0", "3812^100^0").replace("^11^Clattering", "^100^Clattering")
                .replace("2674:4:4", "2674:90:90"))
-        result = submission.compare(submission.parse("GoldScout-export 1\n" + big), [self.OTHERS])
+        result = submission.compare(submission.parse("GoldScout-export 2^abcdefghijkl^3\n" + big), [self.OTHERS])
         self.assertTrue(result.warnings)
 
     def test_small_samples_are_not_flagged(self):
@@ -141,7 +151,7 @@ class BotTests(unittest.TestCase):
         self.assertEqual(data_bot.review(form_body(GOOD).replace("\n", "\r\n"), 1)[0], "valid")
         self.assertEqual(data_bot.review(form_body(GOOD, ticked=False), 1)[0], "invalid")
         self.assertEqual(data_bot.review("random issue text", 1)[0], "invalid")
-        self.assertEqual(data_bot.review(form_body("GoldScout-export 1\nbad"), 1)[0], "invalid")
+        self.assertEqual(data_bot.review(form_body("GoldScout-export 2^abcdefghijkl^3\nbad"), 1)[0], "invalid")
 
     def run_check(self, issue):
         event = Path("event.json")
@@ -175,40 +185,58 @@ class BotTests(unittest.TestCase):
         issues = [
             issue(5, form_body(GOOD), 1),
             issue(9, form_body(GOOD.replace("3010:7:7", "3010:8:8")), 1),
-            issue(7, form_body("GoldScout-export 1\nbad"), 2),
+            issue(7, form_body("GoldScout-export 2^abcdefghijkl^3\nbad"), 2),
             issue(10, form_body(GOOD), 4, kind="Bot"),
         ]
         Path("issues.jsonl").write_text("\n".join(json.dumps(i) for i in issues), encoding="utf-8")
         data_bot.collect("issues.jsonl")
-        self.assertEqual(sorted(p.name for p in data_bot.SUBMISSIONS.glob("*.txt")), ["1.txt"])
-        self.assertIn("3010:8:8", (data_bot.SUBMISSIONS / "1.txt").read_text(encoding="utf-8"))
+        self.assertEqual(sorted(p.name for p in data_bot.SUBMISSIONS.glob("*.txt")), ["1-abcdefghijkl.txt"])
+        self.assertIn("3010:8:8", (data_bot.SUBMISSIONS / "1-abcdefghijkl.txt").read_text(encoding="utf-8"))
         body = Path("pr_body.md").read_text(encoding="utf-8")
         self.assertIn("Closes #5", body)
         self.assertIn("Closes #9", body)
         self.assertNotIn("Closes #7", body)
         self.assertNotIn("Closes #10", body)
 
+    def test_collect_keeps_newest_snapshot_per_install(self):
+        def issue(number, export):
+            return {"number": number, "body": form_body(export), "labels": ["data-valid"],
+                    "user": {"id": 1, "login": "p1", "type": "User"}}
+        newer = GOOD.replace("^abcdefghijkl^3", "^abcdefghijkl^7").replace("3010:7:7", "3010:8:8")
+        other_install = GOOD.replace("abcdefghijkl", "zzzzzzzzzzzz")
+        (data_bot.SUBMISSIONS / "1.txt").write_text("GoldScout-export 1\nold format\n", encoding="utf-8")
+        issues = [issue(20, newer), issue(21, GOOD), issue(22, other_install)]
+        Path("issues.jsonl").write_text("\n".join(json.dumps(i) for i in issues), encoding="utf-8")
+        data_bot.collect("issues.jsonl")
+        names = sorted(p.name for p in data_bot.SUBMISSIONS.glob("*.txt"))
+        self.assertEqual(names, ["1-abcdefghijkl.txt", "1-zzzzzzzzzzzz.txt"])  # old format removed
+        kept = submission.parse((data_bot.SUBMISSIONS / "1-abcdefghijkl.txt").read_text(encoding="utf-8"))
+        self.assertEqual(kept.seq, 7)  # snapshot 7 wins over 3, though its issue is older
+        body = Path("pr_body.md").read_text(encoding="utf-8")
+        for number in (20, 21, 22):
+            self.assertIn("Closes #%d" % number, body)
+
     def test_review_label_needs_approval(self):
         (data_bot.SUBMISSIONS / "999.txt").write_text(
-            "GoldScout-export 1\n3812^2000^0^19^20^1440^0.1179^0.2989^500^Clattering Crawler^"
+            "GoldScout-export 2^abcdefghijkl^3\n3812^2000^0^19^20^1440^0.1179^0.2989^500^Clattering Crawler^"
             "2674:20:20,3010:1200:1200^\n", encoding="utf-8")
         big = (CLATTERING.replace("3812^11^0", "3812^100^0").replace("^11^Clattering", "^100^Clattering")
                .replace("2674:4:4", "2674:90:90"))
-        body = form_body("GoldScout-export 1\n" + big)
+        body = form_body("GoldScout-export 2^abcdefghijkl^3\n" + big)
         for labels, stored in ((["data-valid"], False), (["data-approved"], True)):
             with self.subTest(labels=labels):
-                (data_bot.SUBMISSIONS / "3.txt").unlink(missing_ok=True)
+                (data_bot.SUBMISSIONS / "3-abcdefghijkl.txt").unlink(missing_ok=True)
                 issue = {"number": 8, "body": body, "labels": labels,
                          "user": {"id": 3, "login": "c", "type": "User"}}
                 Path("issues.jsonl").write_text(json.dumps(issue), encoding="utf-8")
                 data_bot.collect("issues.jsonl")
-                self.assertEqual((data_bot.SUBMISSIONS / "3.txt").exists(), stored)
+                self.assertEqual((data_bot.SUBMISSIONS / "3-abcdefghijkl.txt").exists(), stored)
 
 
 class MergeTests(unittest.TestCase):
     def test_one_player_is_capped(self):
         heavy = submission.parse(
-            "GoldScout-export 1\n3812^2000^0^19^20^1440^0.1179^0.2989^500^Clattering Crawler^3010:1200:1200^\n").mobs
+            "GoldScout-export 2^abcdefghijkl^3\n3812^2000^0^19^20^1440^0.1179^0.2989^500^Clattering Crawler^3010:1200:1200^\n").mobs
         merged = merge_data.merge([heavy, submission.parse(GOOD).mobs], max_per_player=1000)
         self.assertEqual(merged[3812]["k"], 1011)
         self.assertEqual(merged[3812]["i"][3010][0], 600 + 7)
@@ -217,10 +245,14 @@ class MergeTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             target = Path(tmp) / "Data_Community.lua"
             names = GOOD.replace("Spined Crawler", "Gath'Ilzogg")
-            kept = merge_data.write_lua(merge_data.merge([submission.parse(names).mobs], 1000), 5, target, 1)
+            results = [submission.parse(names)]
+            kept = merge_data.write_lua(merge_data.merge([r.mobs for r in results], 1000), 5, target, 1,
+                                        merge_data.sources_of(results), 1000)
             self.assertEqual(kept, 2)
             text = target.read_text(encoding="utf-8")
             self.assertIn("GoldScout Data License", text)
+            self.assertIn('["abcdefghijkl"] = 3', text)
+            self.assertIn("ns.COMMUNITY_CAP = 1000", text)
             check = subprocess.run([sys.executable, str(ROOT / "tools" / "luacheck_lite.py"), str(target)],
                                    capture_output=True, text=True)
             self.assertEqual(check.returncode, 0, check.stdout + check.stderr)

@@ -6,15 +6,23 @@ looks unusual (for example a drop rate far from what other players recorded),
 so a maintainer has to approve it by hand.
 
 Export format, one header line then one line per mob:
-  GoldScout-export 1
+  GoldScout-export 2^<install ID>^<snapshot number>
   npcID^kills^picks^minLevel^maxLevel^uiMapID^x^y^positions^name^drops^pickDrops
-where drops and pickDrops are "itemID:times:quantity" joined by commas.
+where drops and pickDrops are "itemID:times:quantity" joined by commas. The
+install ID is 12 random lowercase letters and digits identifying one WoW
+account's GoldScout data; the snapshot number goes up each time that data
+changes. Version 1 exports (no install ID) are no longer accepted.
 """
 import math
 import re
 from collections import defaultdict
 
-HEADER = "GoldScout-export 1"
+HEADER = "GoldScout-export 2"
+HEADER_RE = re.compile(r"^GoldScout-export 2\^([a-z0-9]{12})\^([1-9][0-9]{0,8})$")
+
+
+def header(install_id, seq):
+    return "%s^%s^%d" % (HEADER, install_id, seq)
 
 # Limits. Anything outside them is a hard error.
 MAX_BYTES = 60000           # GitHub issue bodies top out at 65536 characters
@@ -58,6 +66,13 @@ class Result:
         self.mobs = []
         self.errors = []
         self.warnings = []
+        self.install_id = None
+        self.seq = None
+
+    def text(self):
+        """The export rebuilt from the validated data."""
+        lines = [header(self.install_id, self.seq)] + [mob.to_line() for mob in self.mobs]
+        return "\n".join(lines) + "\n"
 
     @property
     def ok(self):
@@ -183,9 +198,15 @@ def parse(text):
         result.errors.append("The export is larger than %d bytes." % MAX_BYTES)
         return result
     lines = [line.strip() for line in text.replace("\r", "").split("\n") if line.strip()]
-    if not lines or lines[0] != HEADER:
-        result.errors.append("The first line must be exactly '%s'." % HEADER)
+    match = HEADER_RE.match(lines[0]) if lines else None
+    if not match:
+        if lines and lines[0] == "GoldScout-export 1":
+            result.errors.append("This export is from an older GoldScout. Update GoldScout, log in, "
+                                 "and export again.")
+        else:
+            result.errors.append("The first line must look like 'GoldScout-export 2^<install ID>^<number>'.")
         return result
+    result.install_id, result.seq = match.group(1), int(match.group(2))
     if len(lines) == 1:
         result.errors.append("The export has no mobs in it.")
         return result

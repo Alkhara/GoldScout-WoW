@@ -8,7 +8,8 @@
   python tools/data_bot.py collect ISSUES_JSONL
       Takes open submission issues (one JSON object per line: number, body,
       user {id, login, type}, labels [names]), re-validates them and writes each
-      contributor's latest accepted export to data/submissions/<user id>.txt.
+      contributor's newest accepted export per install to
+      data/submissions/<user id>-<install ID>.txt.
       Writes pr_body.md and prints how many submissions it stored.
 
 Issue text is untrusted: it is only ever parsed here, never run or put into a
@@ -65,7 +66,7 @@ def others(exclude_user_id):
     """Accepted exports from everyone except this contributor."""
     mobs = []
     for path in sorted(SUBMISSIONS.glob("*.txt")):
-        if path.stem == str(exclude_user_id):
+        if path.stem.split("-")[0] == str(exclude_user_id):
             continue
         result = submission.parse(path.read_text(encoding="utf-8"))
         if result.ok:
@@ -139,7 +140,11 @@ def check(event_path):
 
 
 def collect(issues_path):
-    latest = {}  # user id -> (issue number, login, result)
+    # (user id, install ID) -> (snapshot, issue number, login, result). Each
+    # export holds everything one WoW account's GoldScout has learned, so only
+    # the newest snapshot per player and install is kept.
+    latest = {}
+    accepted = {}  # issue number -> (user id, install ID)
     for raw in Path(issues_path).read_text(encoding="utf-8").splitlines():
         if not raw.strip():
             continue
@@ -152,18 +157,26 @@ def collect(issues_path):
         approved = APPROVED_LABEL in (issue.get("labels") or [])
         if status == "valid" or (status == "needs-review" and approved):
             number = issue["number"]
-            if user_id not in latest or number > latest[user_id][0]:
-                latest[user_id] = (number, user.get("login", "?"), result)
+            key = (user_id, result.install_id)
+            accepted[number] = key
+            if key not in latest or (result.seq, number) > latest[key][:2]:
+                latest[key] = (result.seq, number, user.get("login", "?"), result)
             print("accept #%d (%s)" % (number, status))
         else:
             print("skip #%d (%s)" % (issue.get("number", 0), status))
 
     SUBMISSIONS.mkdir(parents=True, exist_ok=True)
+    # Files that no longer pass validation (for example the old export format)
+    # are removed rather than left to be skipped forever.
+    for path in sorted(SUBMISSIONS.glob("*.txt")):
+        if not submission.parse(path.read_text(encoding="utf-8")).ok:
+            print("remove %s (no longer valid)" % path.name)
+            path.unlink()
     included = []
-    for user_id, (number, login, result) in sorted(latest.items(), key=lambda pair: pair[1][0]):
+    for (user_id, install_id), (seq, number, login, result) in sorted(latest.items(), key=lambda p: p[1][1]):
         # Store the export rebuilt from the parsed data, never the raw issue text.
-        text = "\n".join([submission.HEADER] + [mob.to_line() for mob in result.mobs]) + "\n"
-        (SUBMISSIONS / ("%d.txt" % user_id)).write_text(text, encoding="utf-8", newline="\n")
+        path = SUBMISSIONS / ("%d-%s.txt" % (user_id, install_id))
+        path.write_text(result.text(), encoding="utf-8", newline="\n")
         included.append((number, login, len(result.mobs), len(result.warnings)))
 
     body = ["Community drop data from player submissions. Each file in `data/submissions/` is one "
@@ -174,15 +187,9 @@ def collect(issues_path):
     for number, login, mobs, warnings in included:
         body.append("| #%d | `%s` | %d | %d |" % (number, login, mobs, warnings))
     body.append("")
-    # Older issues from the same players are replaced by their latest export.
-    numbers = []
-    for raw in Path(issues_path).read_text(encoding="utf-8").splitlines():
-        if raw.strip():
-            issue = json.loads(raw)
-            user = issue.get("user") or {}
-            if user.get("id") in latest and issue["number"] <= latest[user["id"]][0]:
-                numbers.append(issue["number"])
-    for number in sorted(set(numbers)):
+    # Every accepted issue is either included or replaced by a newer export
+    # from the same player and install, so merging closes them all.
+    for number in sorted(accepted):
         body.append("Closes #%d" % number)
     Path("pr_body.md").write_text("\n".join(body) + "\n", encoding="utf-8")
     set_output("count", len(included))

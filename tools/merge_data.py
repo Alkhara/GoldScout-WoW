@@ -17,6 +17,7 @@ one mob count up to --max-per-player, with their drops scaled to match.
 """
 import argparse
 import hashlib
+import math
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -30,7 +31,7 @@ TARGET = ROOT / "GoldScout" / "Data_Community.lua"
 
 
 def load(folder):
-    """Reads and validates every .txt export in a folder. Returns a list of mob lists."""
+    """Reads and validates every .txt export in a folder. Returns a list of Results."""
     seen, submissions = set(), []
     for path in sorted(Path(folder).glob("*.txt")):
         text = path.read_text(encoding="utf-8")
@@ -43,8 +44,14 @@ def load(folder):
             print("skip %s: %s" % (path.name, result.errors[0]))
             continue
         seen.add(digest)
-        submissions.append(result.mobs)
+        submissions.append(result)
     return submissions
+
+
+def half_up(value):
+    """Rounds like Community.lua does, so clients can undo a player's capped
+    contribution exactly."""
+    return int(math.floor(value + 0.5))
 
 
 def _scaled(items, factor):
@@ -52,10 +59,18 @@ def _scaled(items, factor):
         return items
     scaled = {}
     for item, (d, q) in items.items():
-        d2 = int(round(d * factor))
+        d2 = half_up(d * factor)
         if d2 > 0:
-            scaled[item] = (d2, max(d2, int(round(q * factor))))
+            scaled[item] = (d2, max(d2, half_up(q * factor)))
     return scaled
+
+
+def sources_of(submissions):
+    """Install ID -> the snapshot number included for it."""
+    sources = {}
+    for result in submissions:
+        sources[result.install_id] = max(result.seq, sources.get(result.install_id, 0))
+    return sources
 
 
 def merge(submissions, max_per_player):
@@ -98,7 +113,7 @@ def lua_string(text):
     return '"' + text.replace("\\", "\\\\").replace('"', '\\"') + '"'
 
 
-def write_lua(merged, min_attempts, path, contributors):
+def write_lua(merged, min_attempts, path, contributors, sources=None, cap=1000):
     out = [
         "-- GoldScout community data: drop rates and spawn spots collected by players",
         "-- with /gscout export and combined by tools/merge_data.py. Generated file;",
@@ -127,6 +142,14 @@ def write_lua(merged, min_attempts, path, contributors):
         fields += ["i = %s" % lua_items(entry["i"]), "pi = %s" % lua_items(entry["pi"])]
         out.append("  [%d] = { %s }," % (npc, ", ".join(fields)))
     out.append("}")
+    out.append("")
+    out.append("-- The export snapshot of each install included above, so a player's own")
+    out.append("-- client can take its shared loot back out (see Community.lua).")
+    out.append("ns.COMMUNITY_SOURCES = {")
+    for install_id, seq in sorted((sources or {}).items()):
+        out.append('  ["%s"] = %d,' % (install_id, seq))
+    out.append("}")
+    out.append("ns.COMMUNITY_CAP = %d" % cap)
     path.write_text("\n".join(out) + "\n", encoding="utf-8", newline="\n")
     return kept
 
@@ -145,7 +168,9 @@ def main():
     submissions = load(folder)
     if not submissions:
         print("No valid submissions in %s; writing an empty data file." % folder)
-    kept = write_lua(merge(submissions, args.max_per_player), args.min_attempts, TARGET, len(submissions))
+    merged = merge([result.mobs for result in submissions], args.max_per_player)
+    kept = write_lua(merged, args.min_attempts, TARGET, len(submissions), sources_of(submissions),
+                     args.max_per_player)
     print("Wrote %s: %d mobs from %d submission(s)." % (TARGET, kept, len(submissions)))
 
 

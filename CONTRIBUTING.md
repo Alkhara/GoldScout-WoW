@@ -49,7 +49,8 @@ For Lua error popups in game, use `/console scriptErrors 1` or BugSack.
   `data/submissions/`.
 - Run `python tools/luacheck_lite.py GoldScout/*.lua` and
   `python -m unittest discover -s tests` before opening a pull
-  request.
+  request. `pip install lupa` first to also run the Lua tests, which load the
+  addon's own `Community.lua` and `Learn.lua` in Lua 5.1.
 
 By contributing code you agree it's released under the MIT License. Community
 data is covered by the [GoldScout Data License](DATA_LICENSE.md).

@@ -1,12 +1,11 @@
 """GoldScout Companion: shares your GoldScout drop data without copy and paste.
 
-It finds WoW Forever, reads the drop data GoldScout saved, checks it with the
+It finds WoW Forever, reads the export GoldScout saved, checks it with the
 same validator the GoldScout data bot uses, and opens the Share drop data form
 with your export filled in. It only reads game files and never changes them.
 
 Run:  python companion/app.py
 """
-import hashlib
 import json
 import os
 import sys
@@ -23,7 +22,7 @@ sys.path.insert(0, str(HERE.parent / "tools"))
 import savedvars  # noqa: E402
 import submission  # noqa: E402
 
-VERSION = "0.1.0"
+VERSION = "0.3.0"
 FORM_URL = "https://github.com/Alkhara/GoldScout-WoW/issues/new?template=data-submission.yml"
 MAX_URL = 7500           # longer links get cut off; then the export goes via the clipboard
 POLL_MS = 15000          # how often to look for newer saved data
@@ -47,34 +46,21 @@ def share_url(export):
     return FORM_URL + "&" + urllib.parse.urlencode({"export": export.strip()})
 
 
-class Snapshot:
-    """What's in the saved data right now."""
-
-    def __init__(self, forever):
-        self.forever = forever
-        self.files = savedvars.saved_variables_files(forever) if forever else []
-        self.stamp = tuple((str(f), f.stat().st_mtime) for f in self.files)
-        self.error = None
-        self.mobs = {}
-        try:
-            self.mobs = savedvars.combine_drops(savedvars.read_drops(f) for f in self.files)
-        except (OSError, savedvars.LuaError) as error:
-            self.error = "Couldn't read GoldScout's saved data: %s" % error
-        self.export = savedvars.export_text(self.mobs)
-        self.result = submission.parse(self.export) if self.mobs else None
-        self.kills = sum(m["k"] for m in self.mobs.values())
-        self.picks = sum(m["p"] for m in self.mobs.values())
-        self.drops = sum(d for m in self.mobs.values() for d, _ in list(m["i"].values()) + list(m["pi"].values()))
-        self.digest = hashlib.sha256(self.export.encode("utf-8")).hexdigest()
+def file_stamp(forever):
+    files = savedvars.saved_variables_files(forever) if forever else []
+    return tuple((str(f), f.stat().st_mtime) for f in files)
 
 
 class App:
     def __init__(self, root):
         self.root = root
         self.config = load_config()
-        self.snapshot = None
+        self.accounts = []
+        self.account = None
+        self.result = None
+        self.stamp = None
         root.title("GoldScout Companion")
-        root.minsize(520, 380)
+        root.minsize(540, 400)
 
         frame = ttk.Frame(root, padding=16)
         frame.pack(fill="both", expand=True)
@@ -87,22 +73,25 @@ class App:
         folder = ttk.LabelFrame(frame, text="WoW Forever folder", padding=8)
         folder.grid(row=2, column=0, sticky="ew")
         folder.columnconfigure(0, weight=1)
-        self.folder_label = ttk.Label(folder, text="", wraplength=380)
+        self.folder_label = ttk.Label(folder, text="", wraplength=400)
         self.folder_label.grid(row=0, column=0, sticky="w")
         ttk.Button(folder, text="Change...", command=self.choose_folder).grid(row=0, column=1, padx=(8, 0))
 
         data = ttk.LabelFrame(frame, text="Your data", padding=8)
         data.grid(row=3, column=0, sticky="nsew", pady=12)
-        data.columnconfigure(0, weight=1)
+        data.columnconfigure(1, weight=1)
         frame.rowconfigure(3, weight=1)
+        self.account_label = ttk.Label(data, text="WoW account:")
+        self.account_choice = ttk.Combobox(data, state="readonly", width=24)
+        self.account_choice.bind("<<ComboboxSelected>>", lambda _: self.show_account())
         self.stats_label = ttk.Label(data, text="", font=("Segoe UI", 10, "bold"))
-        self.stats_label.grid(row=0, column=0, sticky="w")
+        self.stats_label.grid(row=1, column=0, columnspan=2, sticky="w")
         self.since_label = ttk.Label(data, text="")
-        self.since_label.grid(row=1, column=0, sticky="w", pady=(2, 6))
+        self.since_label.grid(row=2, column=0, columnspan=2, sticky="w", pady=(2, 6))
         self.notes = tk.Text(data, height=7, wrap="word", relief="flat", background=root.cget("background"),
                              font=("Segoe UI", 9))
-        self.notes.grid(row=2, column=0, sticky="nsew")
-        data.rowconfigure(2, weight=1)
+        self.notes.grid(row=3, column=0, columnspan=2, sticky="nsew")
+        data.rowconfigure(3, weight=1)
 
         buttons = ttk.Frame(frame)
         buttons.grid(row=4, column=0, sticky="ew")
@@ -112,7 +101,7 @@ class App:
         self.copy_button.pack(side="left", padx=8)
         ttk.Button(buttons, text="Refresh", command=self.refresh).pack(side="left")
 
-        ttk.Label(frame, foreground="#777", wraplength=480, font=("Segoe UI", 8),
+        ttk.Label(frame, foreground="#777", wraplength=500, font=("Segoe UI", 8),
                   text="GoldScout saves its data when you log out or type /reload, so new loot shows up "
                        "here after that. The companion only reads your saved data; it never changes game "
                        "files. Companion " + VERSION).grid(row=5, column=0, sticky="w", pady=(12, 0))
@@ -152,11 +141,8 @@ class App:
 
     # -- data -----------------------------------------------------------------
     def poll(self):
-        if self.forever:
-            files = savedvars.saved_variables_files(self.forever)
-            stamp = tuple((str(f), f.stat().st_mtime) for f in files)
-            if not self.snapshot or stamp != self.snapshot.stamp:
-                self.refresh()
+        if self.forever and file_stamp(self.forever) != self.stamp:
+            self.refresh()
         self.root.after(POLL_MS, self.poll)
 
     def set_notes(self, lines):
@@ -165,66 +151,92 @@ class App:
         self.notes.insert("1.0", "\n".join(lines))
         self.notes.configure(state="disabled")
 
-    def refresh(self):
-        self.folder_label.configure(text=str(self.forever) if self.forever else
-                                    "Not found. Click Change... and choose your World of Warcraft folder.")
-        self.snapshot = snap = Snapshot(self.forever)
-        can_share = False
-        if not self.forever:
-            self.stats_label.configure(text="No WoW Forever folder yet")
-            self.since_label.configure(text="")
-            self.set_notes([])
-        elif snap.error:
-            self.stats_label.configure(text="Saved data couldn't be read")
-            self.since_label.configure(text="")
-            self.set_notes([snap.error])
-        elif not snap.files:
-            self.stats_label.configure(text="No GoldScout data yet")
-            self.since_label.configure(text="")
-            self.set_notes(["Install GoldScout, loot some mobs, then log out or type /reload."])
-        elif not snap.mobs:
-            self.stats_label.configure(text="Nothing learned yet")
-            self.since_label.configure(text="")
-            self.set_notes(["Loot some mobs with GoldScout installed, then log out or type /reload."])
-        else:
-            self.stats_label.configure(text="%d mobs   ·   %d kills   ·   %d pickpockets   ·   %d item drops" % (
-                len(snap.mobs), snap.kills, snap.picks, snap.drops))
-            self.since_label.configure(text=self.since_text(snap))
-            notes = []
-            if snap.result.errors:
-                notes.append("Some data can't be shared as it is:")
-                notes += ["  " + error for error in snap.result.errors]
-            else:
-                can_share = True
-                notes.append("Ready to share. Your export passed every check the GoldScout data bot runs.")
-            if len(snap.files) > 1:
-                notes.append("Combines %d WoW accounts on this PC." % len(snap.files))
-            self.set_notes(notes)
+    def set_status(self, stats, since="", notes=(), can_share=False):
+        self.stats_label.configure(text=stats)
+        self.since_label.configure(text=since)
+        self.set_notes(list(notes))
         state = "normal" if can_share else "disabled"
         self.share_button.configure(state=state)
         self.copy_button.configure(state=state)
 
-    def since_text(self, snap):
-        last = self.config.get("last_shared")
+    def refresh(self):
+        self.folder_label.configure(text=str(self.forever) if self.forever else
+                                    "Not found. Click Change... and choose your World of Warcraft folder.")
+        self.stamp = file_stamp(self.forever)
+        self.accounts, error = [], None
+        if self.forever:
+            try:
+                self.accounts = savedvars.read_accounts(self.forever)
+            except (OSError, savedvars.LuaError) as problem:
+                error = "Couldn't read GoldScout's saved data: %s" % problem
+        names = [account.name for account in self.accounts]
+        if len(names) > 1:
+            previous = self.account_choice.get()
+            self.account_choice.configure(values=names)
+            self.account_choice.set(previous if previous in names else names[0])
+            self.account_label.grid(row=0, column=0, sticky="w", pady=(0, 6))
+            self.account_choice.grid(row=0, column=1, sticky="w", padx=(6, 0), pady=(0, 6))
+        else:
+            self.account_label.grid_remove()
+            self.account_choice.grid_remove()
+        if not self.forever:
+            self.set_status("No WoW Forever folder yet")
+        elif error:
+            self.set_status("Saved data couldn't be read", notes=[error])
+        elif not self.accounts:
+            self.set_status("No GoldScout data yet",
+                            notes=["Install GoldScout, loot some mobs, then log out or type /reload."])
+        else:
+            self.show_account()
+
+    def show_account(self):
+        chosen = self.account_choice.get() if len(self.accounts) > 1 else self.accounts[0].name
+        self.account = next(a for a in self.accounts if a.name == chosen)
+        account, self.result = self.account, None
+        if not account.export:
+            notes = ["Loot some mobs with GoldScout installed, then log out or type /reload."]
+            if account.has_loot:
+                notes = ["GoldScout has loot data, but no export saved yet. Update GoldScout to the latest "
+                         "version, log in, then log out or type /reload once."]
+            self.set_status("Nothing to share yet", notes=notes)
+            return
+        self.result = submission.parse(account.export)
+        if self.result.errors:
+            self.set_status("This export can't be shared as it is",
+                            notes=["The GoldScout data bot would reject it:"] +
+                                  ["  " + error for error in self.result.errors])
+            return
+        kills = sum(mob.k for mob in self.result.mobs)
+        picks = sum(mob.p for mob in self.result.mobs)
+        drops = sum(d for mob in self.result.mobs for d, _ in list(mob.i.values()) + list(mob.pi.values()))
+        self.set_status(
+            "%d mobs   ·   %d kills   ·   %d pickpockets   ·   %d item drops" % (
+                len(self.result.mobs), kills, picks, drops),
+            since=self.since_text(kills + picks),
+            notes=["Ready to share. Your export passed every check the GoldScout data bot runs."],
+            can_share=True)
+
+    def since_text(self, attempts):
+        last = self.config.get("shared", {}).get(self.account.install_id or "")
         if not last:
-            return "You haven't shared from this PC yet."
-        if last.get("digest") == snap.digest:
-            return "Shared %s; nothing new since." % time.strftime("%b %d, %H:%M", time.localtime(last["time"]))
-        more = snap.kills + snap.picks - last.get("kills", 0) - last.get("picks", 0)
+            return "You haven't shared this data from this PC yet."
+        when = time.strftime("%b %d, %H:%M", time.localtime(last["time"]))
+        if last.get("seq") == self.account.seq:
+            return "Shared %s; nothing new since." % when
+        more = attempts - last.get("attempts", 0)
         if more > 0:
             return "%d more kills and pickpockets since you last shared. Share again!" % more
-        return "Your data changed since you last shared."
+        return "Your data changed since you last shared on %s." % when
 
     # -- sharing --------------------------------------------------------------
     def copy(self):
         self.root.clipboard_clear()
-        self.root.clipboard_append(self.snapshot.export)
+        self.root.clipboard_append(self.account.export)
         self.root.update()
 
     def share(self):
-        snap = self.snapshot
         self.copy()
-        url = share_url(snap.export)
+        url = share_url(self.account.export)
         if len(url) <= MAX_URL:
             webbrowser.open(url)
             messagebox.showinfo("GoldScout Companion",
@@ -236,10 +248,11 @@ class App:
                                 "Your export is too long to fill in automatically, so it's on your clipboard. "
                                 "In the form that's opening, click the export box, press Ctrl+V, tick the two "
                                 "boxes and press Create.")
-        self.config["last_shared"] = {"time": time.time(), "digest": snap.digest,
-                                      "kills": snap.kills, "picks": snap.picks}
+        attempts = sum(mob.k + mob.p for mob in self.result.mobs)
+        self.config.setdefault("shared", {})[self.account.install_id or ""] = {
+            "time": time.time(), "seq": self.account.seq, "attempts": attempts}
         save_config(self.config)
-        self.since_label.configure(text=self.since_text(snap))
+        self.since_label.configure(text=self.since_text(attempts))
 
 
 def main():

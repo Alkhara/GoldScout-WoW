@@ -37,6 +37,12 @@ pickpocket counts, item drops, and the average map position where you looted
 each creature. It doesn't include character names, account names, realm names,
 prices, professions or settings.
 
+Each export also starts with an install ID: 12 random letters and digits that
+GoldScout generates once per WoW account, plus a snapshot number. The ID isn't
+derived from your account, character or computer. It's published in the
+community data file so your own GoldScout can recognize the snapshot you shared
+and avoid counting your loot twice.
+
 When you submit an export through the "Share drop data" issue form on GitHub:
 
 - **It's public.** The issue, including the export and your GitHub username, is

@@ -93,9 +93,19 @@ end
 
 -- Drops can't outnumber attempts (one corpse can hold two stacks of an item),
 -- so counts are clamped to keep every export valid.
+local function SortedKeys(table_)
+  local keys = {}
+  for key in pairs(table_ or {}) do
+    keys[#keys + 1] = key
+  end
+  table.sort(keys)
+  return keys
+end
+
 local function ItemList(items, attempts)
   local parts = {}
-  for itemID, stat in pairs(items or {}) do
+  for _, itemID in ipairs(SortedKeys(items)) do
+    local stat = items[itemID]
     local drops = math.min(stat.d or 0, attempts)
     if drops > 0 then
       parts[#parts + 1] = itemID .. ":" .. drops .. ":" .. math.max(stat.q or 0, drops)
@@ -104,9 +114,28 @@ local function ItemList(items, attempts)
   return table.concat(parts, ",")
 end
 
-function Learn:ExportString()
-  local lines = { "GoldScout-export 1" }
-  for npcID, entry in pairs((ns.db and ns.db.drops) or {}) do
+-- How many export snapshots to keep besides the one the community data has.
+local KEEP_SNAPSHOTS = 10
+local ID_CHARS = "abcdefghijklmnopqrstuvwxyz0123456789"
+
+-- A random ID for this WoW account's GoldScout data. It isn't derived from
+-- anything about you; it only lets your client recognize its own exports.
+local function NewInstallID()
+  local chars = {}
+  for i = 1, 12 do
+    local n = math.random(1, #ID_CHARS)
+    chars[i] = ID_CHARS:sub(n, n)
+  end
+  return table.concat(chars)
+end
+
+-- The mob lines of an export, in a fixed order so unchanged data gives
+-- identical text.
+local function ExportBody()
+  local drops = (ns.db and ns.db.drops) or {}
+  local lines = {}
+  for _, npcID in ipairs(SortedKeys(drops)) do
+    local entry = drops[npcID]
     local kills, picks = entry.k or 0, entry.p or 0
     if kills + picks > 0 then
       local map, count, x, y = entry.m or 0, math.min(entry.c or 0, kills), 0, 0
@@ -126,8 +155,58 @@ function Learn:ExportString()
       }, "^")
     end
   end
-  return table.concat(lines, "\n"), #lines - 1
+  return table.concat(lines, "\n"), #lines
 end
+
+-- Saves the current export as a numbered snapshot (a new number only when the
+-- data changed) and returns its full text and mob count. The companion app
+-- shares the latest snapshot, and the community data records which snapshot
+-- it includes, so your client can take exactly that back out.
+function Learn:Snapshot()
+  local db = ns.db
+  if not db then
+    return nil, 0
+  end
+  local body, count = ExportBody()
+  if count == 0 then
+    return nil, 0
+  end
+  local exports = db.exports
+  local latest = exports.list[exports.seq]
+  if not (latest and latest:match("^[^\n]*\n(.*)$") == body) then
+    exports.seq = exports.seq + 1
+    exports.list[exports.seq] = ("GoldScout-export 2^%s^%d\n%s"):format(db.installID, exports.seq, body)
+    local included = ns.COMMUNITY_SOURCES and ns.COMMUNITY_SOURCES[db.installID]
+    for seq in pairs(exports.list) do
+      if seq ~= included and seq <= exports.seq - KEEP_SNAPSHOTS then
+        exports.list[seq] = nil
+      end
+    end
+  end
+  return exports.list[exports.seq], count
+end
+
+function Learn:ExportString()
+  return self:Snapshot()
+end
+
+-- On load: give this account an install ID, then take your own shared loot
+-- back out of the community data so it isn't counted twice.
+ns.Listen("DB_READY", function()
+  local db = ns.db
+  db.installID = db.installID or NewInstallID()
+  db.exports = db.exports or { seq = 0, list = {} }
+  Learn.ownShared = ns.Community.RemoveOwn(ns.COMMUNITY, ns.COMMUNITY_SOURCES, ns.COMMUNITY_CAP,
+    db.installID, db.exports, db.drops)
+end)
+
+-- Keep the latest snapshot current for the companion app, which reads it
+-- from the saved data the game writes when you log out or /reload.
+ns.On("PLAYER_LOGOUT", function()
+  if ns.db and ns.db.settings.learnDrops then
+    Learn:Snapshot()
+  end
+end)
 
 -- Average spot where you've looted this mob: uiMapID, x, y in map percent.
 function Learn:Spot(npcID)
