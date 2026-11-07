@@ -238,6 +238,14 @@ def main():
     shutil.copy2(ROOT / "companion" / "icon.png", DIST / "favicon.png")
     s = stats()
     (DIST / "index.html").write_text(page(s), encoding="utf-8")
+    (DIST / "404.html").write_text(
+        '<!doctype html><html lang="en"><head><meta charset="utf-8">'
+        '<meta name="viewport" content="width=device-width, initial-scale=1"><title>Not found: GoldScout</title>'
+        '<link rel="icon" href="/favicon.png"><style>%s</style></head><body><div class="wrap">'
+        '<header class="top"><a class="brand" href="/"><img src="/logo-400.png" alt="">GoldScout</a></header>'
+        '<section><h2>Page not found</h2><p class="sub">That page doesn\'t exist.</p>'
+        '<a class="btn primary" href="/">Go to the GoldScout home page</a></section></div></body></html>' % CSS,
+        encoding="utf-8")
     (DIST / "_headers").write_text(
         "/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n"
         "  Content-Security-Policy: default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; "

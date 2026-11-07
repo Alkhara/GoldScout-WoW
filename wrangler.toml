@@ -1,0 +1,10 @@
+# GoldScout website: a static-assets Worker serving site/dist/, which the
+# build command (python site/build.py) generates. Cloudflare's Git integration
+# runs "npx wrangler deploy" from the repository root and reads this file.
+# The upload service has its own config in server/wrangler.toml.
+name = "goldscout"
+compatibility_date = "2026-10-01"
+
+[assets]
+directory = "./site/dist"
+not_found_handling = "404-page"
