@@ -52,7 +52,14 @@ jobs:
             count=$(python3 -c "import json; print(len(json.load(open('uploads.json')).get('uploads', [])))")
             echo "Upload service: $count install(s) found." | tee -a "$GITHUB_STEP_SUMMARY"
           else
-            echo "**Upload service not configured** (repository variable GOLDSCOUT_API_URL and secret GOLDSCOUT_API_ADMIN); companion uploads skipped." | tee -a "$GITHUB_STEP_SUMMARY"
+            url_state=missing; [ -n "$API_URL" ] && url_state=set
+            admin_state=missing; [ -n "$API_ADMIN" ] && admin_state=set
+            {
+              echo "**Upload service not configured**; companion uploads skipped."
+              echo
+              echo "- Variable \`GOLDSCOUT_API_URL\` (Settings > Secrets and variables > Actions > **Variables** tab): $url_state"
+              echo "- Secret \`GOLDSCOUT_API_ADMIN\` (same page, **Secrets** tab): $admin_state"
+            } | tee -a "$GITHUB_STEP_SUMMARY"
             echo '{"uploads": []}' > uploads.json
           fi
 
