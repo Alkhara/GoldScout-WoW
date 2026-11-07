@@ -22,12 +22,35 @@ files next to it:
 ## GoldScout Companion
 
 The companion app for Windows reads GoldScout's saved data file
-(`GoldScout.lua` in each account's SavedVariables folder) to show what you've
-learned and build an export. It never changes game files. It doesn't connect to
-the internet: when you click Share, it opens the submission form in your
-browser with the export filled in, and nothing is sent until you submit the
-form yourself. It stores your WoW folder location and when you last shared in
-`%APPDATA%\GoldScout Companion\config.json` on your PC.
+(`GoldScout.lua` in each account's SavedVariables folder). It never changes game
+files and never shows notifications.
+
+When you first open it, it asks you to agree to the
+[Contributor Terms](CONTRIBUTOR_TERMS.md). If you agree, it shares
+automatically: whenever GoldScout saves a new export (when you log out or
+/reload), the companion uploads it to the GoldScout upload service. If you
+choose "Not now", nothing is uploaded; you can still share by hand through the
+GitHub form. You can pause automatic sharing, or stop the companion starting
+with Windows, at any time from its tray icon.
+
+On your PC it stores, in `%APPDATA%\GoldScout Companion\config.json`: your WoW
+folder location, whether you agreed to the terms and when, your settings, and
+for each install the upload token and the last snapshot it uploaded.
+
+## The upload service
+
+The upload service runs on Cloudflare. For each install it keeps only the
+newest export (the same content described below), the Contributor Terms version
+you agreed to, a hash of the install's upload token, and when it was uploaded.
+The token stops anyone else replacing your install's data. Like any website,
+Cloudflare sees your IP address when the companion connects; we don't store it.
+To limit abuse, the service keeps a salted, one-way hash of the address for two
+days when a new install registers, then deletes it. Cloudflare processes data
+as described in its own [privacy policy](https://www.cloudflare.com/privacypolicy/).
+
+Accepted uploads are added to the public repository like form submissions, in
+`data/submissions/` under a file named after the install ID. Uploads from the
+companion aren't linked to any GitHub account.
 
 ## Sharing drop data
 
@@ -59,21 +82,24 @@ played. If that matters to you, don't share.
 
 ## What we don't do
 
-We don't collect email addresses, payment details, IP addresses or analytics
-through the addon or the submission process, and we don't sell personal
-information. GitHub, which hosts the repository and issues, processes data as
-described in its own privacy statement.
+We don't collect email addresses, payment details or analytics through the
+addon, the companion or the submission process, we don't store IP addresses
+(beyond the short-lived hash above), and we don't sell personal information.
+GitHub, which hosts the repository and issues, processes data as described in
+its own privacy statement.
 
 ## Removal
 
-To have your submission file removed from the repository, or your submission
-issue deleted, open an issue asking us to. Data already combined into a release
+To have your submission file removed from the repository, your submission
+issue deleted, or your uploads deleted from the upload service (tell us your
+install ID, shown in your exports), open an issue asking us to. Pausing
+automatic sharing in the companion stops new uploads. Data already combined into a release
 can't be separated from other players' data.
 
 ## Future services
 
-If we launch a website, an upload service or anything else that collects data
-differently, this policy will be updated before it does.
+If we launch a website or anything else that collects data differently, this
+policy will be updated before it does.
 
 ## Contact
 

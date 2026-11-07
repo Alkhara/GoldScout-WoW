@@ -2,19 +2,24 @@
 
 *Last updated: November 7, 2026*
 
-These terms apply when you share drop data with GoldScout, for example by
-submitting your `/gscout export` through the "Share drop data" issue form. They
-are between you and the GoldScout maintainer (GitHub user Alkhara, "we" below).
-By ticking the box on the form you agree to them.
+These terms apply when you share drop data with GoldScout: by submitting your
+`/gscout export` through the "Share drop data" issue form, or by letting the
+GoldScout Companion app share it automatically. They are between you and the
+GoldScout maintainer (GitHub user Alkhara, "we" below). You agree to them by
+ticking the boxes on the form, or by choosing "I agree, share automatically" in
+the companion. With the companion, the terms then cover every export it uploads
+until you pause automatic sharing or stop using it.
 
 ## What you're sharing
 
 A GoldScout export contains, for each creature you looted: its ID, name and
 level range, how many times you killed or pickpocketed it, the items it dropped
 and how often, and the average map position where you looted it. It contains no
-character names, account names or other personal details. Your submission is
-posted publicly on GitHub, together with your GitHub username. See the
-[Privacy Policy](PRIVACY.md) for details.
+character names, account names or other personal details. A form submission
+is posted publicly on GitHub, together with your GitHub username; a companion
+upload is stored by the GoldScout upload service and added to the public
+repository under its random install ID. See the [Privacy Policy](PRIVACY.md)
+for details.
 
 ## What you promise
 

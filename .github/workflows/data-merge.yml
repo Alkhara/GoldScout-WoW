@@ -1,7 +1,11 @@
-# Once a day (or when run by hand), gathers open submissions labeled
-# data-valid or data-approved, re-validates them, and opens or updates a pull
-# request that adds them to data/submissions/ and regenerates
-# GoldScout/Data_Community.lua. Merging the pull request closes the issues.
+# Once a day (or when run by hand), gathers new drop data and opens or updates
+# a pull request that adds it to data/submissions/ and regenerates
+# GoldScout/Data_Community.lua:
+#   - open issues labeled data-valid or data-approved (the Share drop data form)
+#   - companion uploads from the upload service (server/), once
+#     GOLDSCOUT_API_URL (variable) and GOLDSCOUT_API_ADMIN (secret) are set
+# Everything is re-validated with tools/submission.py first. Merging the pull
+# request closes the issues.
 #
 # Needs: Settings > Actions > General > "Allow GitHub Actions to create and
 # approve pull requests".
@@ -38,18 +42,29 @@ jobs:
                        labels: [.labels[].name]} | tostring'
           done > issues.jsonl
 
+      - name: Fetch companion uploads
+        env:
+          API_URL: ${{ vars.GOLDSCOUT_API_URL }}
+          API_ADMIN: ${{ secrets.GOLDSCOUT_API_ADMIN }}
+        run: |
+          if [ -n "$API_URL" ] && [ -n "$API_ADMIN" ]; then
+            curl -fsS --max-time 60 -H "Authorization: Bearer $API_ADMIN" "${API_URL%/}/v1/uploads" -o uploads.json
+          else
+            echo "Upload service not configured; skipping."
+            echo '{"uploads": []}' > uploads.json
+          fi
+
       - name: Validate and store
-        id: collect
-        run: python3 tools/data_bot.py collect issues.jsonl
+        run: |
+          python3 tools/data_bot.py collect issues.jsonl
+          python3 tools/data_bot.py collect-uploads uploads.json
 
       - name: Regenerate community data
-        if: steps.collect.outputs.count != '0'
         run: |
           python3 tools/merge_data.py
           python3 tools/luacheck_lite.py GoldScout/Data_Community.lua
 
       - name: Open or update the pull request
-        if: steps.collect.outputs.count != '0'
         run: |
           if [ -z "$(git status --porcelain -- data GoldScout/Data_Community.lua)" ]; then
             echo "Nothing changed."

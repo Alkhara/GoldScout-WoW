@@ -12,6 +12,12 @@
       data/submissions/<user id>-<install ID>.txt.
       Writes pr_body.md and prints how many submissions it stored.
 
+  python tools/data_bot.py collect-uploads UPLOADS_JSON
+      Takes the upload service's admin listing ({"uploads": [...]}), runs the
+      same checks, writes data/submissions/c-<install ID>.txt for each accepted
+      companion upload, and appends a section to pr_body.md. Uploads with rate
+      warnings are held unless their install ID is in data/approved-installs.txt.
+
 Issue text is untrusted: it is only ever parsed here, never run or put into a
 shell command, and messages never quote it back.
 """
@@ -34,6 +40,8 @@ REQUIRED_CONSENT = (
     "I agree to the GoldScout Contributor Terms, including the license they grant for this data.",
 )
 APPROVED_LABEL = "data-approved"
+# Contributor Terms versions the companion may upload under.
+TERMS_VERSIONS = {"2026-11-07"}
 FORM_URL = "https://github.com/Alkhara/GoldScout-WoW/issues/new?template=data-submission.yml"
 
 
@@ -62,11 +70,14 @@ def extract(body):
     return export, consent
 
 
-def others(exclude_user_id):
-    """Accepted exports from everyone except this contributor."""
+def others(exclude_user_id=None, exclude_install=None):
+    """Accepted exports from everyone except this contributor (by GitHub user
+    ID for issue submissions, or by install ID for companion uploads)."""
     mobs = []
     for path in sorted(SUBMISSIONS.glob("*.txt")):
-        if path.stem.split("-")[0] == str(exclude_user_id):
+        if exclude_user_id is not None and path.stem.split("-")[0] == str(exclude_user_id):
+            continue
+        if exclude_install and path.stem.endswith("-" + exclude_install):
             continue
         result = submission.parse(path.read_text(encoding="utf-8"))
         if result.ok:
@@ -195,13 +206,67 @@ def collect(issues_path):
     set_output("count", len(included))
 
 
-def main():
-    if len(sys.argv) != 3 or sys.argv[1] not in ("check", "collect"):
-        sys.exit(__doc__)
-    if sys.argv[1] == "check":
-        check(sys.argv[2])
+def approved_installs():
+    """Install IDs a maintainer accepted despite rate warnings (one per line)."""
+    path = ROOT / "data" / "approved-installs.txt"
+    if not path.exists():
+        return set()
+    return {line.strip() for line in path.read_text(encoding="utf-8").splitlines()
+            if line.strip() and not line.startswith("#")}
+
+
+def collect_uploads(uploads_path):
+    """Adds companion uploads (the upload service's admin listing, JSON) to
+    data/submissions/c-<install ID>.txt, with the same checks as issues, and
+    appends a section about them to pr_body.md."""
+    listing = json.loads(Path(uploads_path).read_text(encoding="utf-8") or "{}")
+    approved = approved_installs()
+    SUBMISSIONS.mkdir(parents=True, exist_ok=True)
+    stored, held, rejected = [], [], 0
+    for upload in listing.get("uploads") or []:
+        install = str(upload.get("install_id", ""))
+        result = submission.parse(str(upload.get("body", "")))
+        if not result.ok or result.install_id != install or upload.get("terms") not in TERMS_VERSIONS:
+            rejected += 1
+            print("reject upload %s" % install[:12])
+            continue
+        submission.compare(result, others(exclude_install=install))
+        if result.warnings and install not in approved:
+            held.append((install, len(result.mobs), result.warnings))
+            print("hold upload %s (rate warnings)" % install)
+            continue
+        path = SUBMISSIONS / ("c-%s.txt" % install)
+        if path.exists():
+            current = submission.parse(path.read_text(encoding="utf-8"))
+            if current.ok and current.seq >= result.seq:
+                continue
+        path.write_text(result.text(), encoding="utf-8", newline="\n")
+        stored.append((install, result.seq, len(result.mobs), len(result.warnings)))
+        print("store upload %s snapshot %d" % (install, result.seq))
+
+    body = ["", "### Companion uploads", ""]
+    if stored:
+        body += ["| Install | Snapshot | Mobs | Rate warnings |", "|---|---|---|---|"]
+        body += ["| `%s` | %d | %d | %d |" % row for row in stored]
     else:
-        collect(sys.argv[2])
+        body.append("No new companion uploads.")
+    if held:
+        body += ["", "Held back because some drop rates differ sharply from other players' data. To accept "
+                 "one, add its install ID to `data/approved-installs.txt` and run the workflow again:", ""]
+        for install, mobs, warnings in held:
+            body.append("- `%s` (%d mobs): %s" % (install, mobs, "; ".join(warnings[:3])))
+    if rejected:
+        body += ["", "%d upload(s) failed validation and were skipped." % rejected]
+    with open("pr_body.md", "a", encoding="utf-8") as handle:
+        handle.write("\n".join(body) + "\n")
+    set_output("uploads", len(stored))
+
+
+def main():
+    commands = {"check": check, "collect": collect, "collect-uploads": collect_uploads}
+    if len(sys.argv) != 3 or sys.argv[1] not in commands:
+        sys.exit(__doc__)
+    commands[sys.argv[1]](sys.argv[2])
 
 
 if __name__ == "__main__":

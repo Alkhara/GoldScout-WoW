@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Builds GoldScoutCompanion.exe, a single file that runs without Python.
 
-  pip install pyinstaller
+  pip install pyinstaller pystray pillow
   python companion/build.py
 
 The exe lands in companion/dist/.
@@ -21,6 +21,10 @@ def main():
         "--name", "GoldScoutCompanion",
         "--paths", str(ROOT / "tools"),
         "--hidden-import", "submission",
+        "--hidden-import", "pystray._win32",
+        "--icon", str(HERE / "icon.ico"),
+        "--add-data", "%s;." % (HERE / "icon.png"),
+        "--add-data", "%s;." % (HERE / "icon.ico"),
         "--distpath", str(HERE / "dist"),
         "--workpath", str(HERE / "build"),
         "--specpath", str(HERE / "build"),

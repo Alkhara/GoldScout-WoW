@@ -31,8 +31,11 @@ TARGET = ROOT / "GoldScout" / "Data_Community.lua"
 
 
 def load(folder):
-    """Reads and validates every .txt export in a folder. Returns a list of Results."""
-    seen, submissions = set(), []
+    """Reads and validates every .txt export in a folder. Returns a list of
+    Results, one per install: a companion upload (c-<install>.txt, which only
+    that install's token can update) beats an issue submission for the same
+    install, and otherwise the newest snapshot wins."""
+    seen, best = set(), {}
     for path in sorted(Path(folder).glob("*.txt")):
         text = path.read_text(encoding="utf-8")
         digest = hashlib.sha256(text.strip().encode("utf-8")).hexdigest()
@@ -44,8 +47,15 @@ def load(folder):
             print("skip %s: %s" % (path.name, result.errors[0]))
             continue
         seen.add(digest)
-        submissions.append(result)
-    return submissions
+        rank = (path.name.startswith("c-"), result.seq)
+        current = best.get(result.install_id)
+        if current is None or rank > current[0]:
+            if current is not None:
+                print("skip %s: replaced by a newer or companion export" % current[2])
+            best[result.install_id] = (rank, result, path.name)
+        else:
+            print("skip %s: replaced by a newer or companion export" % path.name)
+    return [result for _, result, _ in best.values()]
 
 
 def half_up(value):

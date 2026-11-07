@@ -1,0 +1,12 @@
+{
+  "name": "goldscout-api",
+  "private": true,
+  "description": "GoldScout upload service (Cloudflare Worker + D1)",
+  "scripts": {
+    "dev": "wrangler dev --local --port 8787",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "4.156.2"
+  }
+}

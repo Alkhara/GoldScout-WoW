@@ -1,0 +1,13 @@
+# GoldScout upload service. Deploy steps are in server/README.md.
+name = "goldscout-api"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "goldscout"
+# Replace with the id printed by: npx wrangler d1 create goldscout
+database_id = "00000000-0000-0000-0000-000000000000"
+
+[observability]
+enabled = true

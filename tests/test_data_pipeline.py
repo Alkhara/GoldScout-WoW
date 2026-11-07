@@ -216,6 +216,24 @@ class BotTests(unittest.TestCase):
         for number in (20, 21, 22):
             self.assertIn("Closes #%d" % number, body)
 
+    def test_collect_uploads(self):
+        newer = GOOD.replace("^abcdefghijkl^3", "^abcdefghijkl^5")
+        listing = {"uploads": [
+            {"install_id": "abcdefghijkl", "seq": 5, "body": newer, "terms": "2026-11-07"},
+            {"install_id": "zzzzzzzzzzzz", "seq": 3, "body": GOOD, "terms": "2026-11-07"},  # ID mismatch
+            {"install_id": "badtermsxxxx", "seq": 3, "body": GOOD.replace("abcdefghijkl", "badtermsxxxx"),
+             "terms": "1999-01-01"},
+        ]}
+        Path("uploads.json").write_text(json.dumps(listing), encoding="utf-8")
+        Path("pr_body.md").write_text("", encoding="utf-8")
+        data_bot.collect_uploads("uploads.json")
+        names = sorted(p.name for p in data_bot.SUBMISSIONS.glob("*.txt"))
+        self.assertEqual(names, ["c-abcdefghijkl.txt"])
+        self.assertEqual(submission.parse((data_bot.SUBMISSIONS / names[0]).read_text(encoding="utf-8")).seq, 5)
+        body = Path("pr_body.md").read_text(encoding="utf-8")
+        self.assertIn("`abcdefghijkl` | 5 |", body)
+        self.assertIn("2 upload(s) failed validation", body)
+
     def test_review_label_needs_approval(self):
         (data_bot.SUBMISSIONS / "999.txt").write_text(
             "GoldScout-export 2^abcdefghijkl^3\n3812^2000^0^19^20^1440^0.1179^0.2989^500^Clattering Crawler^"
@@ -234,6 +252,18 @@ class BotTests(unittest.TestCase):
 
 
 class MergeTests(unittest.TestCase):
+    def test_one_file_per_install(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            folder = Path(tmp)
+            (folder / "7-abcdefghijkl.txt").write_text(GOOD.replace("^3\n", "^9\n", 1), encoding="utf-8")
+            (folder / "c-abcdefghijkl.txt").write_text(GOOD.replace("3010:7:7", "3010:6:6"), encoding="utf-8")
+            (folder / "8-zzzzzzzzzzzz.txt").write_text(GOOD.replace("abcdefghijkl", "zzzzzzzzzzzz"), encoding="utf-8")
+            loaded = {r.install_id: r for r in merge_data.load(folder)}
+            self.assertEqual(sorted(loaded), ["abcdefghijkl", "zzzzzzzzzzzz"])
+            # The companion upload wins over a higher-numbered issue submission.
+            self.assertEqual(loaded["abcdefghijkl"].seq, 3)
+            self.assertIn("3010:6:6", loaded["abcdefghijkl"].text())
+
     def test_one_player_is_capped(self):
         heavy = submission.parse(
             "GoldScout-export 2^abcdefghijkl^3\n3812^2000^0^19^20^1440^0.1179^0.2989^500^Clattering Crawler^3010:1200:1200^\n").mobs

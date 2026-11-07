@@ -1,0 +1,47 @@
+# GoldScout upload service
+
+A small Cloudflare Worker with a D1 (SQLite) database that receives drop data
+uploads from the GoldScout Companion. It only does quick checks (format, size,
+terms version, upload token, rate limits) and keeps the newest export per
+install. The full validation runs in the GitHub merge workflow, which reads
+the uploads and opens the data pull request for review.
+
+| Endpoint | What it does |
+|---|---|
+| `POST /v1/uploads` | Upload an export. The first upload from an install returns its token; later uploads need `Authorization: Bearer <token>`. |
+| `GET /v1/uploads` | Admin only (`Authorization: Bearer <ADMIN_TOKEN>`): every install's newest export. `?since=<unix seconds>` limits it. |
+| `GET /health` | Returns `{"ok": true}`. |
+
+It fits in Cloudflare's free plan.
+
+## Deploying
+
+From this folder, with Node.js installed:
+
+1. `npm install`
+2. `npx wrangler login` and sign in with your Cloudflare account.
+3. `npx wrangler d1 create goldscout` and copy the `database_id` it prints into
+   `wrangler.toml`.
+4. `npx wrangler d1 execute goldscout --remote --file schema.sql`
+5. Set two secrets. Make each value long and random, for example from
+   `python -c "import secrets; print(secrets.token_hex(32))"`:
+   - `npx wrangler secret put ADMIN_TOKEN`: lets the GitHub merge workflow read uploads.
+   - `npx wrangler secret put IP_SALT`: used to hash addresses for rate limiting.
+6. `npx wrangler deploy`. It prints the service URL, for example
+   `https://goldscout-api.<your-subdomain>.workers.dev`.
+7. Check it: open `<URL>/health` in a browser.
+8. In GitHub (repository Settings → Secrets and variables → Actions), add a
+   variable `GOLDSCOUT_API_URL` set to the URL and a secret `GOLDSCOUT_API_ADMIN`
+   set to the same value as `ADMIN_TOKEN`.
+9. Put the URL in `companion/uploader.py` (`UPLOAD_URL`) and release a new
+   companion.
+
+## Developing locally
+
+1. `npm install`
+2. Create `.dev.vars` with `ADMIN_TOKEN=local-admin-token`, `IP_SALT=local-salt`
+   and `MIN_SECONDS_BETWEEN_UPLOADS=0`. Git ignores this file.
+3. `npx wrangler d1 execute goldscout --local --file schema.sql`
+4. `npx wrangler dev --local --port 8799`
+5. From the repository root:
+   `GOLDSCOUT_TEST_SERVER=http://127.0.0.1:8799 python -m unittest tests.test_server`
