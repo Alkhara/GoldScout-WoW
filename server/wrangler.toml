@@ -6,8 +6,7 @@ compatibility_date = "2026-10-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "goldscout"
-# Replace with the id printed by: npx wrangler d1 create goldscout
-database_id = "00000000-0000-0000-0000-000000000000"
+database_id = "ac21113c-605f-4d85-afa2-dbdebabdc6bd"
 
 [observability]
 enabled = true
