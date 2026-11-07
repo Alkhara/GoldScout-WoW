@@ -1,0 +1,36 @@
+# Builds a release zip and uploads it to CurseForge, Wago and GitHub when you
+# push a version tag (for example: git tag v0.1.0 && git push origin v0.1.0).
+#
+# Setup, once:
+#   1. Create the CurseForge and Wago projects, then add their IDs to
+#      GoldScout/GoldScout.toc as "## X-Curse-Project-ID: 123456" and
+#      "## X-Wago-ID: abcd1234".
+#   2. In GitHub: Settings > Secrets and variables > Actions, add CF_API_KEY
+#      (CurseForge API token) and WAGO_API_TOKEN (Wago API token).
+# Uploads to a site are skipped until its ID and token are both set.
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check Lua syntax
+        run: python3 tools/luacheck_lite.py GoldScout/*.lua
+
+      - name: Package and upload
+        uses: BigWigsMods/packager@v2
+        env:
+          CF_API_KEY: ${{ secrets.CF_API_KEY }}
+          WAGO_API_TOKEN: ${{ secrets.WAGO_API_TOKEN }}
+          GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}

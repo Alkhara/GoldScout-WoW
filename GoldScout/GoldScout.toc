@@ -1,0 +1,19 @@
+## Interface: 16001
+## Title: GoldScout
+## Notes: Scans the Auction House and ranks the most profitable things to farm or craft for your level and professions.
+## Version: @project-version@
+## SavedVariables: GoldScoutDB
+## SavedVariablesPerCharacter: GoldScoutCharDB
+## IconTexture: Interface\Icons\INV_Misc_Coin_02
+## AddonCompartmentFunc: GoldScout_OnCompartmentClick
+
+Core.lua
+Data.lua
+Data_Community.lua
+Prices.lua
+Scanner.lua
+Professions.lua
+Learn.lua
+Engine.lua
+Hunt.lua
+UI.lua

@@ -1,0 +1,11 @@
+# Packaging rules for the BigWigs packager (used by .github/workflows/release.yml).
+package-as: GoldScout
+
+# The addon lives in GoldScout/ inside the repo; ship that folder as the addon.
+move-folders:
+  GoldScout/GoldScout: GoldScout
+
+ignore:
+  - tools
+  - README.md
+  - docs
