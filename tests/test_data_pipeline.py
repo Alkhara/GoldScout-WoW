@@ -157,6 +157,12 @@ class BotTests(unittest.TestCase):
         for fragment in ("@everyone", "rm -rf", "<script>"):
             self.assertNotIn(fragment, comment)
 
+    def test_check_points_blank_issues_to_the_form(self):
+        comment = self.run_check({"number": 1, "body": GOOD,
+                                  "user": {"id": 5, "login": "x", "type": "User"}})
+        self.assertIn("regular issue", comment)
+        self.assertIn(data_bot.FORM_URL, comment)
+
     def test_check_skips_bots(self):
         Path("comment.md").unlink(missing_ok=True)
         self.assertEqual(self.run_check({"number": 1, "body": form_body(GOOD),

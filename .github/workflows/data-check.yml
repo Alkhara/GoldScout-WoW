@@ -26,7 +26,8 @@ jobs:
     if: >-
       github.event.issue.state == 'open' &&
       (contains(github.event.issue.labels.*.name, 'data-submission') ||
-       startsWith(github.event.issue.title, 'Drop data submission'))
+       startsWith(github.event.issue.title, 'Drop data submission') ||
+       contains(github.event.issue.body, 'GoldScout-export'))
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -48,6 +49,8 @@ jobs:
           gh label create data-needs-review --color fbca04 --description "Valid, but some rates look unusual" --force
           gh label create data-invalid --color d93f0b --description "Can't be accepted as is" --force
           gh label create data-approved --color 5319e7 --description "Reviewed and accepted by a maintainer" --force
+          gh label create bug --color d73a4a --description "Something isn't working" --force
+          gh label create idea --color a2eeef --description "Feature or improvement idea" --force
 
           remove="data-valid,data-needs-review,data-invalid"
           if [ "$ACTION" = "edited" ]; then

@@ -926,6 +926,34 @@ end
 -- Sharing your drop data (/gscout export)
 ---------------------------------------------------------------------------
 local exportFrame
+local SHARE_URL = "github.com/Alkhara/GoldScout-WoW/issues/new?template=data-submission.yml"
+
+-- A one-line box holding text to copy. Typing can't change it, and clicking
+-- selects all of it.
+local function CreateCopyBox(parent, text)
+  local box = CreateFrame("EditBox", nil, parent, "InputBoxTemplate")
+  box:SetAutoFocus(false)
+  box:SetFontObject(ChatFontNormal)
+  box:SetText(text)
+  box:SetCursorPosition(0)
+  box:SetScript("OnTextChanged", function(self, userInput)
+    if userInput then
+      self:SetText(text)
+      self:HighlightText()
+    end
+  end)
+  box:SetScript("OnMouseUp", function(self)
+    self:SetFocus()
+    self:HighlightText()
+  end)
+  box:SetScript("OnEditFocusGained", function(self)
+    self:HighlightText()
+  end)
+  box:SetScript("OnEscapePressed", function(self)
+    self:ClearFocus()
+  end)
+  return box
+end
 
 local function CreateExportFrame()
   local f = CreateFrame("Frame", "GoldScoutExportFrame", UIParent, "BackdropTemplate")
@@ -957,9 +985,17 @@ local function CreateExportFrame()
   f.info:SetPoint("RIGHT", f, "RIGHT", -22, 0)
   f.info:SetJustifyH("LEFT")
 
+  local linkLabel = f:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+  linkLabel:SetPoint("BOTTOMLEFT", 22, 26)
+  linkLabel:SetText("Share form:")
+  f.link = CreateCopyBox(f, SHARE_URL)
+  f.link:SetPoint("LEFT", linkLabel, "RIGHT", 10, 0)
+  f.link:SetPoint("RIGHT", f, "RIGHT", -24, 0)
+  f.link:SetHeight(20)
+
   local scroll = CreateFrame("ScrollFrame", nil, f, "UIPanelScrollFrameTemplate")
   scroll:SetPoint("TOPLEFT", 22, -104)
-  scroll:SetPoint("BOTTOMRIGHT", -42, 22)
+  scroll:SetPoint("BOTTOMRIGHT", -42, 56)
   local edit = CreateFrame("EditBox", nil, scroll)
   edit:SetMultiLine(true)
   edit:SetAutoFocus(false)
@@ -982,8 +1018,9 @@ function UI:ShowExport()
   end
   exportFrame = exportFrame or CreateExportFrame()
   exportFrame.info:SetText(("Drop data for %d mobs from your loot: drops, kill counts, levels and loot "
-    .. "locations, with no character names. Press Ctrl+C to copy it, then paste it into the Share drop "
-    .. "data form on GoldScout's GitHub page. Sharing means you agree to the GoldScout Contributor Terms."):format(count))
+    .. "locations, with no character names. Press Ctrl+C to copy it, then open the share form below in your "
+    .. "browser and paste it there. Sharing means you agree to the GoldScout Contributor Terms. "
+    .. "On Windows, the GoldScout Companion app does this for you."):format(count))
   exportFrame.edit:SetText(text)
   exportFrame:Show()
   exportFrame.edit:SetFocus()

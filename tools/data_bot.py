@@ -33,6 +33,7 @@ REQUIRED_CONSENT = (
     "I agree to the GoldScout Contributor Terms, including the license they grant for this data.",
 )
 APPROVED_LABEL = "data-approved"
+FORM_URL = "https://github.com/Alkhara/GoldScout-WoW/issues/new?template=data-submission.yml"
 
 
 def section(body, heading):
@@ -103,9 +104,14 @@ def check(event_path):
     status, result, consent, found = review(issue.get("body"), user.get("id"))
 
     lines = []
-    if not found:
-        lines.append("I couldn't find the export in this issue. Please use the **Share drop data** "
-                     "issue form and paste the whole `/gscout export` text into it.")
+    if not found and submission.HEADER in (issue.get("body") or ""):
+        lines.append("Thanks for sharing! It looks like this export was pasted into a regular issue. "
+                     "Drop data has to come through the **[Share drop data](%s)** form, so the "
+                     "Contributor Terms are agreed to. Please open the form, paste the same text into "
+                     "it, tick both boxes and submit; this issue can then be closed." % FORM_URL)
+    elif not found:
+        lines.append("I couldn't find the export in this issue. Please use the **[Share drop data](%s)** "
+                     "form and paste the whole `/gscout export` text into it." % FORM_URL)
     elif status == "invalid":
         lines.append("Thanks for sharing! This submission can't be accepted yet:")
         lines.append("")

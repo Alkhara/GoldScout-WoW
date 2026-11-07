@@ -1,0 +1,11 @@
+name: Suggest an idea
+description: A feature or improvement you'd like to see.
+labels: ["idea"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: What would you like GoldScout to do, and how would it help you?
+    validations:
+      required: true

@@ -1,0 +1,27 @@
+name: Report a bug
+description: Something in GoldScout or the companion isn't working.
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: Lua error (if any)
+      description: Turn on error popups with /console scriptErrors 1 (or use BugSack) and paste the error here.
+      render: text
+  - type: input
+    id: version
+    attributes:
+      label: GoldScout version
+      description: Shown in the AddOns list on the character screen.
+  - type: input
+    id: character
+    attributes:
+      label: Character
+      description: Level, class and professions, for example "25 Rogue, Leatherworking/Cooking". No names needed.
