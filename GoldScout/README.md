@@ -29,9 +29,9 @@ based on your level, class, faction and professions.
   (Uses the classic gray-level rule; hidden at level 60.)
 - **Hunt mode**: click a Farm row, then press **Hunt** (see below).
 - **Learns from your loot**: every corpse you loot and pocket you pick, on any
-  character, updates drop rates for that mob. Listed farms blend your rate with
-  the database rate, and mobs you've looted 15+ times that aren't on the list
-  appear on the Farm tab as **Learned**.
+  character, updates drop rates for that mob, combined with the community data
+  players have shared. Mobs looted 15+ times appear on the Farm tab as
+  **Learned**.
 
 ## Hunt mode
 
