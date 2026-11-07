@@ -30,9 +30,10 @@ From this folder, with Node.js installed:
 6. `npx wrangler deploy`. It prints the service URL, for example
    `https://goldscout-api.<your-subdomain>.workers.dev`.
 7. Check it: open `<URL>/health` in a browser.
-8. In GitHub (repository Settings → Secrets and variables → Actions), add a
-   variable `GOLDSCOUT_API_URL` set to the URL and a secret `GOLDSCOUT_API_ADMIN`
-   set to the same value as `ADMIN_TOKEN`.
+8. In GitHub (repository Settings → Secrets and variables → Actions →
+   Secrets), add a repository secret `GOLDSCOUT_API_ADMIN` set to the same
+   value as `ADMIN_TOKEN`. The merge workflow uses the live server's address by
+   default; a repository variable `GOLDSCOUT_API_URL` overrides it.
 9. Put the URL in `companion/uploader.py` (`UPLOAD_URL`) and release a new
    companion.
 

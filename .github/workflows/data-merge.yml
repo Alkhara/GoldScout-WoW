@@ -2,8 +2,9 @@
 # a pull request that adds it to data/submissions/ and regenerates
 # GoldScout/Data_Community.lua:
 #   - open issues labeled data-valid or data-approved (the Share drop data form)
-#   - companion uploads from the upload service (server/), once
-#     GOLDSCOUT_API_URL (variable) and GOLDSCOUT_API_ADMIN (secret) are set
+#   - companion uploads from the upload service (server/), once the
+#     GOLDSCOUT_API_ADMIN secret is set (GOLDSCOUT_API_URL, a variable, can
+#     point it at a different server)
 # Everything is re-validated with tools/submission.py first. Merging the pull
 # request closes the issues.
 #
@@ -44,7 +45,7 @@ jobs:
 
       - name: Fetch companion uploads
         env:
-          API_URL: ${{ vars.GOLDSCOUT_API_URL }}
+          API_URL: ${{ vars.GOLDSCOUT_API_URL || 'https://goldscout-api.cawley22.workers.dev' }}
           API_ADMIN: ${{ secrets.GOLDSCOUT_API_ADMIN }}
         run: |
           if [ -n "$API_URL" ] && [ -n "$API_ADMIN" ]; then
