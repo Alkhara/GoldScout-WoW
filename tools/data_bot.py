@@ -193,10 +193,14 @@ def collect(issues_path):
     body = ["Community drop data from player submissions. Each file in `data/submissions/` is one "
             "player's latest export, rebuilt from validated data; `GoldScout/Data_Community.lua` is "
             "regenerated from all of them.", ""]
-    body.append("| Issue | Player | Mobs | Rate warnings |")
-    body.append("|---|---|---|---|")
-    for number, login, mobs, warnings in included:
-        body.append("| #%d | `%s` | %d | %d |" % (number, login, mobs, warnings))
+    body += ["### Form submissions", ""]
+    if included:
+        body.append("| Issue | Player | Mobs | Rate warnings |")
+        body.append("|---|---|---|---|")
+        for number, login, mobs, warnings in included:
+            body.append("| #%d | `%s` | %d | %d |" % (number, login, mobs, warnings))
+    else:
+        body.append("No new form submissions.")
     body.append("")
     # Every accepted issue is either included or replaced by a newer export
     # from the same player and install, so merging closes them all.
