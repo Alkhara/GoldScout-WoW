@@ -35,12 +35,24 @@ jobs:
           WAGO_API_TOKEN: ${{ secrets.WAGO_API_TOKEN }}
           GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
 
-  # Builds GoldScoutCompanion.exe and attaches it to the same GitHub release.
+  # Builds GoldScoutCompanion.exe, signs it with Azure Artifact Signing when
+  # that's configured, and attaches it to the same GitHub release.
+  #
+  # Signing turns on once these repository variables exist (Settings > Secrets
+  # and variables > Actions > Variables): AZURE_CLIENT_ID, AZURE_TENANT_ID,
+  # AZURE_SUBSCRIPTION_ID, SIGNING_ENDPOINT (for example
+  # https://eus.codesigning.azure.net/), SIGNING_ACCOUNT and SIGNING_PROFILE.
+  # Azure login uses GitHub's OIDC token, so no password is stored. The job runs
+  # in the "release" environment so the Azure federated credential can trust
+  # one fixed subject (repo:Alkhara/GoldScout-WoW:environment:release) for
+  # every tag.
   companion:
     needs: release
     runs-on: windows-latest
+    environment: release
     permissions:
       contents: write
+      id-token: write
     steps:
       - uses: actions/checkout@v4
 
@@ -54,6 +66,36 @@ jobs:
           python -m pip install pyinstaller==6.22.3
           python -m unittest discover -s tests
           python companion/build.py
+
+      - name: Azure login
+        if: vars.SIGNING_ACCOUNT != ''
+        uses: azure/login@v3
+        with:
+          client-id: ${{ vars.AZURE_CLIENT_ID }}
+          tenant-id: ${{ vars.AZURE_TENANT_ID }}
+          subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Sign the companion
+        if: vars.SIGNING_ACCOUNT != ''
+        uses: azure/artifact-signing-action@v2
+        with:
+          endpoint: ${{ vars.SIGNING_ENDPOINT }}
+          signing-account-name: ${{ vars.SIGNING_ACCOUNT }}
+          certificate-profile-name: ${{ vars.SIGNING_PROFILE }}
+          files: ${{ github.workspace }}\companion\dist\GoldScoutCompanion.exe
+          file-digest: SHA256
+          timestamp-rfc3161: http://timestamp.acs.microsoft.com
+          timestamp-digest: SHA256
+          description: GoldScout Companion
+          description-url: https://github.com/Alkhara/GoldScout-WoW
+
+      - name: Check the signature
+        if: vars.SIGNING_ACCOUNT != ''
+        shell: pwsh
+        run: |
+          $signature = Get-AuthenticodeSignature companion\dist\GoldScoutCompanion.exe
+          "Signature: $($signature.Status), signed by $($signature.SignerCertificate.Subject)"
+          if ($signature.Status -ne 'Valid') { exit 1 }
 
       - name: Attach it to the release
         shell: bash
