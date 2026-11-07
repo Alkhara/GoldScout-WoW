@@ -49,8 +49,10 @@ jobs:
         run: |
           if [ -n "$API_URL" ] && [ -n "$API_ADMIN" ]; then
             curl -fsS --max-time 60 -H "Authorization: Bearer $API_ADMIN" "${API_URL%/}/v1/uploads" -o uploads.json
+            count=$(python3 -c "import json; print(len(json.load(open('uploads.json')).get('uploads', [])))")
+            echo "Upload service: $count install(s) found." | tee -a "$GITHUB_STEP_SUMMARY"
           else
-            echo "Upload service not configured; skipping."
+            echo "**Upload service not configured** (repository variable GOLDSCOUT_API_URL and secret GOLDSCOUT_API_ADMIN); companion uploads skipped." | tee -a "$GITHUB_STEP_SUMMARY"
             echo '{"uploads": []}' > uploads.json
           fi
 
@@ -66,8 +68,9 @@ jobs:
 
       - name: Open or update the pull request
         run: |
+          { echo; cat pr_body.md; } >> "$GITHUB_STEP_SUMMARY"
           if [ -z "$(git status --porcelain -- data GoldScout/Data_Community.lua)" ]; then
-            echo "Nothing changed."
+            echo "Nothing changed, so no pull request." | tee -a "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
           git config user.name "github-actions[bot]"
