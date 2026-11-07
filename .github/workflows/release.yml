@@ -8,15 +8,20 @@
 #   2. In GitHub: Settings > Secrets and variables > Actions, add CF_API_KEY
 #      (CurseForge API token) and WAGO_API_TOKEN (Wago API token).
 # Uploads to a site are skipped until its ID and token are both set.
+#
+# It can also be started by hand or by the Data release workflow on a tag
+# ("Run workflow" with a v* tag selected); on any other ref it does nothing.
 name: Release
 
 on:
   push:
     tags:
       - "v*"
+  workflow_dispatch:
 
 jobs:
   release:
+    if: startsWith(github.ref, 'refs/tags/v')
     runs-on: ubuntu-latest
     permissions:
       contents: write

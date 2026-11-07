@@ -1,0 +1,78 @@
+# Ships new community drop data to players once a week. If
+# GoldScout/Data_Community.lua changed since the latest version tag, and the
+# Tests workflow passed on this exact commit, it tags the next patch version
+# (v0.4.0 -> v0.4.1) and starts the Release workflow on that tag, which
+# publishes to GitHub, CurseForge and Wago. Otherwise it does nothing.
+#
+# A tag pushed with the workflow token doesn't start other workflows by
+# itself, so this starts Release explicitly.
+name: Data release
+
+on:
+  schedule:
+    - cron: "0 15 * * 2" # Tuesdays, 15:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: data-release
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Decide whether to release
+        id: decide
+        run: |
+          summary() { echo "$1" | tee -a "$GITHUB_STEP_SUMMARY"; }
+          last=$(git describe --tags --abbrev=0 --match 'v[0-9]*' 2>/dev/null || true)
+          if [ -z "$last" ]; then
+            summary "No version tag yet; tag the first release by hand."
+            exit 0
+          fi
+          if git diff --quiet "$last" HEAD -- GoldScout/Data_Community.lua; then
+            summary "No new community data since $last, so no release."
+            exit 0
+          fi
+          head=$(git rev-parse HEAD)
+          tests=$(gh run list --workflow tests.yml --branch main --limit 20 \
+            --json headSha,status,conclusion \
+            --jq "map(select(.headSha == \"$head\")) | .[0] | \"\(.status) \(.conclusion)\"")
+          if [ "$tests" != "completed success" ]; then
+            summary "New community data since $last, but Tests haven't passed on ${head:0:7} (${tests:-no run}); not releasing."
+            exit 0
+          fi
+          version=${last#v}
+          IFS=. read -r major minor patch <<< "$version"
+          next="v$major.$minor.$((patch + 1))"
+          {
+            echo "Releasing **$next**: community data changed since $last."
+            echo
+            echo "Other files changed since $last:"
+            echo
+            git diff --name-only "$last" HEAD -- . ':(exclude)GoldScout/Data_Community.lua' ':(exclude)data' \
+              | sed 's/^/- /' | head -50
+          } | tee -a "$GITHUB_STEP_SUMMARY"
+          echo "tag=$next" >> "$GITHUB_OUTPUT"
+
+      - name: Tag and start the release
+        if: steps.decide.outputs.tag != ''
+        env:
+          TAG: ${{ steps.decide.outputs.tag }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git tag -a "$TAG" -m "GoldScout $TAG: community data update"
+          git push origin "$TAG"
+          gh workflow run release.yml --ref "$TAG"
+          echo "Tagged $TAG and started the Release workflow." | tee -a "$GITHUB_STEP_SUMMARY"
