@@ -35,7 +35,7 @@ local COLUMNS = {
 local TAB_OPTIONS = {
   farm = {
     { setting = "showAllLevels", label = "All levels", tip = "Show farms for every level, not just mobs near yours." },
-    { setting = "showOtherProfs", label = "Other professions",
+    { setting = "showOtherProfs", label = "Other profs",
       tip = "Also show herbs, ore and leather you could gather if you trained that profession." },
     { setting = "xpOnly", label = "Gives XP",
       tip = "Hide farms whose mobs are all gray to you (no experience). The Lvl column is green when "
@@ -45,6 +45,9 @@ local TAB_OPTIONS = {
         .. "listed by price too, even before anyone has learned where they drop.\n\nThe Chance column's "
         .. "color shows how many kills back a drop rate up: |cffff8040orange|r under 5, |cffffd100yellow|r "
         .. "5-14, |cff9be35alight green|r 15-49, |cff40ff40green|r 50 or more." },
+    { setting = "showRareDrops", label = "Rare drops",
+      tip = "Also show BoE gear and recipes players have looted. They're rare world drops that can come "
+        .. "from many mobs, so their rates per mob are rough guides at best." },
   },
   craft = {
     { setting = "showTrivial", label = "Gray recipes", tip = "Include recipes that no longer give skill-ups." },
@@ -433,7 +436,7 @@ function UI:Create()
   f.scanButton:SetScript("OnLeave", HideTip)
 
   f.huntButton = CreateFrame("Button", nil, f, "UIPanelButtonTemplate")
-  f.huntButton:SetSize(110, 22)
+  f.huntButton:SetSize(85, 22)
   f.huntButton:SetPoint("TOPRIGHT", -22, -64)
   f.huntButton:SetText("Hunt")
   f.huntButton:SetScript("OnClick", function()
@@ -454,7 +457,8 @@ function UI:Create()
 
   f.farmTab = CreateTabButton(f, "Farm", "farm", 18)
   f.craftTab = CreateTabButton(f, "Craft", "craft", 100)
-  f.checks = { CreateCheckbox(f, 196), CreateCheckbox(f, 300), CreateCheckbox(f, 425), CreateCheckbox(f, 505) }
+  f.checks = { CreateCheckbox(f, 196), CreateCheckbox(f, 300), CreateCheckbox(f, 390), CreateCheckbox(f, 470),
+    CreateCheckbox(f, 565) }
 
   f.infoText = f:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
   f.infoText:SetPoint("TOPLEFT", 22, -96)
@@ -1050,6 +1054,7 @@ local SETTING_ALIASES = {
   markers = "huntMarkers",
   learn = "learnDrops",
   mobtips = "unitTooltips",
+  raredrops = "showRareDrops",
 }
 
 local function PrintHelp()
@@ -1061,7 +1066,7 @@ local function PrintHelp()
   print("  /gscout export - copy your learned drop data to share with GoldScout")
   print("  /gscout skills - show the skills and recipes GoldScout knows")
   print("  /gscout set kills|nodes|picks <number> - your rates per hour")
-  print("  /gscout set autoscan|tooltip|window|waypoint|markers|learn|mobtips on|off")
+  print("  /gscout set autoscan|tooltip|window|waypoint|markers|learn|mobtips|raredrops on|off")
   print("  /gscout reset prices | drops - forget saved prices or learned drop rates")
 end
 
@@ -1119,7 +1124,7 @@ local function SetOption(rest)
   local setting = key and SETTING_ALIASES[key:lower()]
   if not setting then
     ns.Print("Usage: /gscout set kills|nodes|picks <number>, or "
-      .. "/gscout set autoscan|tooltip|window|waypoint|markers|learn|mobtips on|off")
+      .. "/gscout set autoscan|tooltip|window|waypoint|markers|learn|mobtips|raredrops on|off")
     return
   end
   if type(ns.db.settings[setting]) == "boolean" then

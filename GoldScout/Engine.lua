@@ -219,6 +219,11 @@ local function GatheredItems()
   return gatheredItems
 end
 
+-- Weapons, armor and recipes: rare world drops that can come from many mobs,
+-- so a rate tied to one mob says little. Learned rows hide them unless the
+-- Rare drops option is on.
+local RARE_DROP_CLASSES = { [2] = true, [4] = true, [9] = true }
+
 -- Item classes that are never crafting reagents, skipped without loading the
 -- item: containers, weapons, armor, recipes, quest items.
 local NEVER_REAGENT_CLASSES = { [1] = true, [2] = true, [4] = true, [9] = true, [12] = true }
@@ -542,7 +547,10 @@ function Engine:Farms()
         for itemID in pairs(items) do
           local drops, attempts, perDrop = ns.Learn:Evidence(npcID, itemID, false)
           local bindType = ns.ItemBindType(itemID)
-          if drops >= 1 and bindType ~= 1 and bindType ~= 4 and not ns.IsPoorQuality(itemID) then
+          local _, _, _, _, _, itemClass = ns.GetItemInfoInstant(itemID)
+          local rareDrop = RARE_DROP_CLASSES[itemClass] ~= nil
+          if drops >= 1 and bindType ~= 1 and bindType ~= 4 and not ns.IsPoorQuality(itemID)
+              and (settings.showRareDrops or not rareDrop) then
             local net, listed, age = NetPrice(itemID)
             if net then
               local rate = drops / attempts

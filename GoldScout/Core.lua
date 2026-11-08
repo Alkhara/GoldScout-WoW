@@ -22,6 +22,7 @@ local DEFAULT_SETTINGS = {
   showOtherProfs = false, -- include gathering professions you don't have
   xpOnly = false,         -- hide farms whose mobs give you no experience
   knownRatesOnly = false, -- hide AH items that have no drop rate yet
+  showRareDrops = false,  -- show BoE gear and recipes (rare world drops) as Learned rows
   huntWaypoint = true,    -- hunts place Blizzard's map waypoint at the farm
   huntMarkers = true,     -- hunts put an icon over matching mobs' nameplates
   learnDrops = true,      -- learn drop rates from what you loot

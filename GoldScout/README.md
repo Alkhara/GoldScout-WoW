@@ -36,7 +36,8 @@ based on your level, class, faction and professions.
   drop. The **Chance** column's color shows how many kills back the rate up:
   orange under 5, yellow 5-14, light green 15-49, green 50 or more. Until a mob
   has 15 kills, gold per hour uses a cautious rate so one lucky drop doesn't top
-  the list.
+  the list. BoE gear and recipes are rare world drops from many mobs, so they're
+  hidden unless you tick **Rare drops**.
 
 ## Hunt mode
 
@@ -110,6 +111,7 @@ stays in your own SavedVariables.
 | `/gscout set markers off` | Hunts stop putting icons on nameplates |
 | `/gscout set mobtips off` | Remove GoldScout lines from mob tooltips |
 | `/gscout set learn off` | Stop learning drop rates from your loot |
+| `/gscout set raredrops on` | Show BoE gear and recipes as Learned rows (same as the **Rare drops** checkbox) |
 | `/gscout reset prices` | Forget this faction's saved prices |
 | `/gscout reset drops` | Forget the drop rates learned from your loot |
 
