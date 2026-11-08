@@ -26,7 +26,7 @@ Farms ranked by estimated gold per hour for your character:
 - mobs with valuable drops, using real drop rates from players
 - cloth from humanoids near your level
 - herbs, ore and leather your Herbalism, Mining or Skinning skill can gather
-- valuable trade goods selling on your auction house right now, even before anyone has learned where they drop
+- valuable crafting reagents, the mob-dropped materials professions always need, selling on your auction house right now, even before anyone has learned where they drop
 
 The **Lvl** column is green when the mobs still give you experience, yellow when only some do and gray when none do. Tick **Gives XP** to level and earn at the same time.
 

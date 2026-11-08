@@ -12,7 +12,7 @@ level 25 rogue, and you get advice that fits that character.
 ## Features
 
 - **Farm tab:** farms ranked by estimated gold per hour, including mob drops,
-  cloth, herbs, ore, leather, pickpocketing for rogues, and valuable trade goods
+  cloth, herbs, ore, leather, pickpocketing for rogues, and valuable crafting reagents
   selling on your auction house right now.
 - **Craft tab:** every recipe you know, ranked by profit after the auction house
   cut and the cheapest cost of materials.

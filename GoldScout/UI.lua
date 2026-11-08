@@ -41,7 +41,7 @@ local TAB_OPTIONS = {
       tip = "Hide farms whose mobs are all gray to you (no experience). The Lvl column is green when "
         .. "every mob gives XP, yellow when some do, and gray when none do." },
     { setting = "knownRatesOnly", label = "Known rates",
-      tip = "Only show farms with a drop rate. Unchecked, trade goods selling on your auction house are "
+      tip = "Only show farms with a drop rate. Unchecked, crafting reagents selling on your auction house are "
         .. "listed by price too, even before anyone has learned where they drop.\n\nThe Chance column's "
         .. "color shows how many kills back a drop rate up: |cffff8040orange|r under 5, |cffffd100yellow|r "
         .. "5-14, |cff9be35alight green|r 15-49, |cff40ff40green|r 50 or more." },

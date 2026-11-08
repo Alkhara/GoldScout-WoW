@@ -219,33 +219,45 @@ local function GatheredItems()
   return gatheredItems
 end
 
--- Item level and subclass of each trade good once the game has told us, or
--- false for items that aren't sellable trade goods. Remembered for the session
--- so the list doesn't change when the client drops items from its cache.
-local tradeGoodFacts = {}
+-- Item classes that are never crafting reagents, skipped without loading the
+-- item: containers, weapons, armor, recipes, quest items.
+local NEVER_REAGENT_CLASSES = { [1] = true, [2] = true, [4] = true, [9] = true, [12] = true }
 
-local function TradeGoodFacts(itemID)
-  local facts = tradeGoodFacts[itemID]
+-- Item level of each crafting reagent once the game has told us, or false for
+-- items that aren't sellable reagents worth farming. Remembered for the session
+-- so the list doesn't change when the client drops items from its cache.
+local reagentFacts = {}
+
+local function ReagentFacts(itemID)
+  local facts = reagentFacts[itemID]
   if facts ~= nil then
     return facts
   end
   local _, _, _, _, _, classID, subclassID = ns.GetItemInfoInstant(itemID)
-  if classID ~= TRADE_GOODS then
-    tradeGoodFacts[itemID] = false
+  if not classID or NEVER_REAGENT_CLASSES[classID] then
+    reagentFacts[itemID] = false
     return false
   end
-  local _, _, quality, itemLevel, _, _, _, _, _, _, _, _, _, bindType = ns.GetItemInfo(itemID)
+  local info = { ns.GetItemInfo(itemID) }
+  local quality, itemLevel, bindType = info[3], info[4], info[14]
   if not itemLevel then
     ns.RequestItem(itemID) -- the list refreshes once the item loads
     return nil
   end
+  -- The "Crafting Reagent" flag the game shows in item tooltips. If this client
+  -- doesn't report it, fall back to the trade goods category.
+  local isReagent = ns.Plain(info[17])
+  if type(isReagent) ~= "boolean" then
+    isReagent = classID == TRADE_GOODS
+  end
   -- Bound, quest and gray (vendor trash) items aren't worth farming for the AH.
-  if bindType == 1 or bindType == 4 or quality == ns.QUALITY_POOR then
+  if not isReagent or bindType == 1 or bindType == 4 or quality == ns.QUALITY_POOR then
     facts = false
   else
-    facts = { level = itemLevel, crafted = CRAFTED_SUBCLASSES[subclassID] or ns.CRAFTED_TRADE_GOODS[itemID] }
+    local craftedCategory = classID == TRADE_GOODS and CRAFTED_SUBCLASSES[subclassID]
+    facts = { level = itemLevel, crafted = craftedCategory or ns.CRAFTED_TRADE_GOODS[itemID] }
   end
-  tradeGoodFacts[itemID] = facts
+  reagentFacts[itemID] = facts
   return facts
 end
 
@@ -626,7 +638,7 @@ function Engine:Farms()
     end
   end
 
-  -- Trade goods selling on your auction house that no farm above covers.
+  -- Crafting reagents selling on your auction house that no farm above covers.
   -- Without a drop rate there's no hourly estimate, so they rank by price per
   -- item below the farms that have one. Looting them teaches the drop rate.
   if not settings.knownRatesOnly then
@@ -648,7 +660,7 @@ function Engine:Farms()
     end
     for itemID in pairs(ns.Prices:Market().items) do
       if not covered[itemID] and not gathered[itemID] then
-        local facts = TradeGoodFacts(itemID)
+        local facts = ReagentFacts(itemID)
         local itemLevel = facts and facts.level
         -- Crafted and vendor items aren't world drops, unless players have
         -- actually looted one from a mob.
@@ -665,7 +677,8 @@ function Engine:Farms()
                 kind = "Market", item = itemID, unknownRate = true, itemLevel = itemLevel, above = above,
                 source = "Source unknown", lvl = "-", chanceText = "?", per = "item",
                 each = net, listed = listed, age = age,
-                note = "No drop data yet, so this ranks by price alone. Loot it (or Hunt it) "
+                note = "A crafting reagent that professions need. No drop data yet, so this ranks by price "
+                  .. "alone. Loot it (or Hunt it) "
                   .. "and GoldScout learns which mobs drop it and how often.",
                 hunt = LootHunt("Market:" .. itemID, "kill", itemID, "Any source", "Wherever it drops"),
               }
