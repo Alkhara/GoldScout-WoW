@@ -1086,6 +1086,28 @@ local SETTING_ALIASES = {
   cloth = "showCloth",
 }
 
+-- Lists the errors GoldScout recorded (see ns.RecordError in Core.lua).
+local function ShowErrors(rest)
+  local errors = ns.db and ns.db.errors or {}
+  if rest and rest:lower() == "clear" then
+    if ns.db then
+      ns.db.errors = {}
+    end
+    ns.Print("error log cleared.")
+    return
+  end
+  if #errors == 0 then
+    ns.Print("no errors recorded.")
+    return
+  end
+  ns.Print(("%d error(s) recorded, newest last:"):format(#errors))
+  for i = math.max(1, #errors - 4), #errors do
+    local entry = errors[i]
+    print(("  %s x%d  %s"):format(date("%b %d %H:%M", entry.t or 0), entry.n or 1, entry.m or "?"))
+  end
+  print("  Full details are saved for bug reports. /gscout errors clear to reset.")
+end
+
 local function PrintHelp()
   ns.Print("commands:")
   print("  /gscout - show or hide the window")
@@ -1093,6 +1115,7 @@ local function PrintHelp()
   print("  /gscout scan - scan prices (auction house must be open)")
   print("  /gscout hunt - show the current hunt; /gscout hunt stop | history")
   print("  /gscout export - copy your learned drop data to share with GoldScout")
+  print("  /gscout errors - list GoldScout's recent errors; /gscout errors clear")
   print("  /gscout skills - show the skills and recipes GoldScout knows")
   print("  /gscout set kills|nodes|picks <number> - your rates per hour")
   print("  /gscout set autoscan|tooltip|window|waypoint|markers|learn|mobtips|raredrops|cloth on|off")
@@ -1189,6 +1212,8 @@ function UI:HandleSlash(message)
     HuntCommand(rest)
   elseif command == "export" then
     self:ShowExport()
+  elseif command == "errors" then
+    ShowErrors(rest)
   elseif command == "set" then
     SetOption(rest)
   elseif command == "reset" and rest:lower() == "prices" then

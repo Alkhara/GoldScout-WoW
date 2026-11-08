@@ -18,6 +18,7 @@ files next to it:
 - your characters' profession skills and known recipes
 - what you've looted from creatures, how often, at what level and where
 - your settings and recent Hunt mode sessions
+- a short log of GoldScout's own errors (never shared; it's there for bug reports)
 
 ## GoldScout Companion
 

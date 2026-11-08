@@ -272,8 +272,73 @@ function ns.MarketKey()
 end
 
 ---------------------------------------------------------------------------
+-- Error log: GoldScout's own Lua errors and blocked actions are kept in its
+-- saved data (newest 25, repeats counted) so they can be read after the fact
+-- with /gscout errors or tools/errors.py, instead of needing a screenshot.
+---------------------------------------------------------------------------
+local MAX_ERRORS = 25
+
+function ns.RecordError(message, stack)
+  message = tostring(message or "?"):sub(1, 400)
+  stack = tostring(stack or ""):sub(1, 1500)
+  local db = ns.db
+  if not db or not db.errors then
+    ns.pendingErrors = ns.pendingErrors or {}
+    if #ns.pendingErrors < MAX_ERRORS then
+      ns.pendingErrors[#ns.pendingErrors + 1] = { message, stack }
+    end
+    return
+  end
+  local now = time and time() or 0
+  for _, entry in ipairs(db.errors) do
+    if entry.m == message then
+      entry.n = (entry.n or 1) + 1
+      entry.t = now
+      return
+    end
+  end
+  local version = C_AddOns and C_AddOns.GetAddOnMetadata and C_AddOns.GetAddOnMetadata(ADDON_NAME, "Version")
+  table.insert(db.errors, { m = message, s = stack, n = 1, t = now, v = version })
+  while #db.errors > MAX_ERRORS do
+    table.remove(db.errors, 1)
+  end
+end
+
+local function MentionsGoldScout(text)
+  return type(text) == "string" and text:find("AddOns[/\\]" .. ADDON_NAME .. "[/\\]") ~= nil
+end
+
+-- Pass every error on to whatever handler was there (the default popup,
+-- BugSack...), but keep a copy of the ones that come from GoldScout.
+if geterrorhandler and seterrorhandler then
+  local previous = geterrorhandler()
+  seterrorhandler(function(message, ...)
+    pcall(function()
+      local stack = debugstack and debugstack(3, 12, 0) or ""
+      if MentionsGoldScout(tostring(message)) or MentionsGoldScout(stack) then
+        ns.RecordError(message, stack)
+      end
+    end)
+    if previous then
+      return previous(message, ...)
+    end
+  end)
+end
+
+-- The game refused something GoldScout tried (for example a protected call
+-- in combat): that's not a Lua error, so it has to be caught separately.
+local function OnBlocked(addon, action)
+  if addon == ADDON_NAME then
+    ns.RecordError("Blocked action: " .. tostring(action), debugstack and debugstack(3, 12, 0) or "")
+  end
+end
+
+---------------------------------------------------------------------------
 -- Saved variables
 ---------------------------------------------------------------------------
+ns.On("ADDON_ACTION_BLOCKED", OnBlocked)
+ns.On("ADDON_ACTION_FORBIDDEN", OnBlocked)
+
 ns.On("ADDON_LOADED", function(name)
   if name ~= ADDON_NAME then
     return
@@ -290,6 +355,11 @@ ns.On("ADDON_LOADED", function(name)
   db.names = db.names or {} -- item and zone names seen, for shared exports
   db.names.items = db.names.items or {}
   db.names.maps = db.names.maps or {}
+  db.errors = db.errors or {} -- GoldScout's own errors and blocked actions, for /gscout errors
+  for _, pending in ipairs(ns.pendingErrors or {}) do
+    ns.RecordError(pending[1], pending[2])
+  end
+  ns.pendingErrors = nil
   db.settings = db.settings or {}
   for key, value in pairs(DEFAULT_SETTINGS) do
     if db.settings[key] == nil then

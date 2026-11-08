@@ -19,6 +19,9 @@ form instead of a pull request.
 | `site/` | The website: `python site/build.py` writes it to `site/dist/` (Cloudflare Pages builds it on every push) |
 | `server/` | The upload service the companion sends data to (Cloudflare Worker + D1) |
 | `tools/check.py` | Runs every check (also used by CI and the pre-push hook) |
+| `tools/release.py` | Releases with every check: Tests passed, server ready, tag, follow, verify |
+| `tools/verify_release.py` | Verifies a release's files, or that the upload server accepts this build's exports |
+| `tools/errors.py` | Prints the errors GoldScout recorded in your saved data |
 | `tests/` | Tests for the data pipeline: `python -m unittest discover -s tests` |
 
 ## Working on the addon

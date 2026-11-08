@@ -104,6 +104,7 @@ stays in your own SavedVariables.
 | `/gscout hunt history` | List your last five hunts |
 | `/gscout export` | Copy your learned drop data to share |
 | `/gscout skills` | Show the skills and recipes GoldScout has read |
+| `/gscout errors` | List GoldScout's recent errors (handy for bug reports); `/gscout errors clear` resets |
 | `/gscout set kills 80` | Your kills per hour on same-level mobs (default 70) |
 | `/gscout set nodes 25` | Herb or ore nodes per hour (default 25) |
 | `/gscout set picks 110` | Pickpockets per hour (default 110) |
