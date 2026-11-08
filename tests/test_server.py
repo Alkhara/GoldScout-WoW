@@ -107,10 +107,17 @@ class ServerTests(unittest.TestCase):
         status, reply = raw("/v1/uploads", body, {"X-GoldScout-Terms": uploader.TERMS_VERSION,
                                                   "CF-Connecting-IP": fake_ip()}, "POST")
         self.assertEqual((status, reply.get("status")), (201, "registered"))
-        bad = body.replace("@c^2996^", "@q^1^x")
+        bad = body.replace("@c^2996^", "@z^1^x")
         status, _ = raw("/v1/uploads", bad.replace(install, new_install()),
                         {"X-GoldScout-Terms": uploader.TERMS_VERSION, "CF-Connecting-IP": fake_ip()}, "POST")
         self.assertEqual(status, 400)
+
+    def test_accepts_version_four(self):
+        body = ("GoldScout-export 4^%s^1\n%s\n@i^3010^Crawler Meat\n@q^3010^1:7:1\n@m^1440^Ashenvale\n"
+                % (new_install(), LINE))
+        status, reply = raw("/v1/uploads", body, {"X-GoldScout-Terms": uploader.TERMS_VERSION,
+                                                  "CF-Connecting-IP": fake_ip()}, "POST")
+        self.assertEqual((status, reply.get("status")), (201, "registered"))
 
     def test_list_needs_admin_token(self):
         self.assertEqual(raw("/v1/uploads")[0], 401)
