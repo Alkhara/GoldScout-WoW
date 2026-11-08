@@ -435,6 +435,11 @@ function UI:Create()
 
   local close = CreateFrame("Button", nil, f, "UIPanelCloseButton")
   close:SetPoint("TOPRIGHT", -6, -6)
+  -- The template's own handler goes through Blizzard's panel manager, which the
+  -- game blocks for addons in combat ("Interface action failed"). Hide directly.
+  close:SetScript("OnClick", function()
+    f:Hide()
+  end)
 
   local title = f:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
   title:SetPoint("TOP", 0, -18)
@@ -1009,6 +1014,11 @@ local function CreateExportFrame()
 
   local close = CreateFrame("Button", nil, f, "UIPanelCloseButton")
   close:SetPoint("TOPRIGHT", -6, -6)
+  -- The template's own handler goes through Blizzard's panel manager, which the
+  -- game blocks for addons in combat ("Interface action failed"). Hide directly.
+  close:SetScript("OnClick", function()
+    f:Hide()
+  end)
 
   local title = f:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
   title:SetPoint("TOP", 0, -18)
