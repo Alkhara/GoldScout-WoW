@@ -74,7 +74,10 @@ def export_version():
 
 def check_server(url=DEFAULT_SERVER):
     version = export_version()
-    body = ("GoldScout-export %d^probeprobepr^1\n@q^1^x\n" % version).encode("utf-8")
+    # A mob line with too few fields is malformed in every export version, so
+    # the server rejects it before touching its database. (Never use an @ line
+    # here: a later version may make it valid, and then the probe gets stored.)
+    body = ("GoldScout-export %d^probeprobepr^1\nnot^a^mob^line\n" % version).encode("utf-8")
     request = urllib.request.Request(url.rstrip("/") + "/v1/uploads", data=body, method="POST", headers={
         "Content-Type": "text/plain; charset=utf-8", "X-GoldScout-Terms": TERMS_VERSION,
         "User-Agent": "GoldScout-release-check"})

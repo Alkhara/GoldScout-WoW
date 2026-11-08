@@ -20,6 +20,7 @@ on:
     paths:
       - "server/**"
       - "tests/test_server.py"
+      - "tools/verify_release.py"
       - ".github/workflows/server-deploy.yml"
   workflow_dispatch:
 
