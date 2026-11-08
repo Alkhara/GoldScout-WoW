@@ -8,6 +8,12 @@
 # Everything is re-validated with tools/submission.py first. Merging the pull
 # request closes the issues.
 #
+# The pull request merges itself when it's clean: nothing held back for unusual
+# rates, nothing failed validation, and the website's Cloudflare build for the
+# branch (SITE_CHECK) passed. Otherwise it stays open for a maintainer, and the
+# run summary says why. After merging, it starts the Tests workflow on main
+# (the Data release workflow needs a passing Tests run on main's head).
+#
 # Needs: Settings > Actions > General > "Allow GitHub Actions to create and
 # approve pull requests".
 name: Merge community data
@@ -19,8 +25,10 @@ on:
 
 permissions:
   contents: write
-  issues: read
+  issues: write
   pull-requests: write
+  checks: read
+  actions: write
 
 concurrency:
   group: data-merge
@@ -31,6 +39,7 @@ jobs:
     env:
       GH_TOKEN: ${{ github.token }}
       BRANCH: data/community-update
+      SITE_CHECK: "Workers Builds: goldscout-wow"
     steps:
       - uses: actions/checkout@v4
 
@@ -65,6 +74,7 @@ jobs:
           fi
 
       - name: Validate and store
+        id: store
         run: |
           python3 tools/data_bot.py collect issues.jsonl
           python3 tools/data_bot.py collect-uploads uploads.json
@@ -75,6 +85,7 @@ jobs:
           python3 tools/luacheck_lite.py GoldScout/Data_Community.lua
 
       - name: Open or update the pull request
+        id: pr
         run: |
           { echo; cat pr_body.md; } >> "$GITHUB_STEP_SUMMARY"
           if [ -z "$(git status --porcelain -- data GoldScout/Data_Community.lua)" ]; then
@@ -93,3 +104,36 @@ jobs:
           else
             gh pr create --base main --head "$BRANCH" --title "Update community drop data" --body-file pr_body.md
           fi
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Merge it if it's clean
+        if: steps.pr.outputs.sha != ''
+        env:
+          SHA: ${{ steps.pr.outputs.sha }}
+          HELD: ${{ steps.store.outputs.held }}
+          REJECTED: ${{ steps.store.outputs.rejected }}
+        run: |
+          summary() { printf '%s\n' "$1" | tee -a "$GITHUB_STEP_SUMMARY"; }
+          echo >> "$GITHUB_STEP_SUMMARY"
+          if [ "${HELD:-0}" != "0" ] || [ "${REJECTED:-0}" != "0" ]; then
+            summary "**Not merged automatically:** $HELD upload(s) held for review and $REJECTED rejected. Review the pull request."
+            exit 0
+          fi
+          # Wait up to 20 minutes for Cloudflare to build the site from this branch.
+          result=""
+          for attempt in $(seq 1 60); do
+            result=$(gh api "repos/$GITHUB_REPOSITORY/commits/$SHA/check-runs" \
+              --jq ".check_runs[] | select(.name == \"$SITE_CHECK\") | \"\(.status) \(.conclusion)\"" | head -n 1)
+            case "$result" in
+              "completed success") break ;;
+              completed*) break ;;
+            esac
+            sleep 20
+          done
+          if [ "$result" != "completed success" ]; then
+            summary "**Not merged automatically:** the website build ($SITE_CHECK) ended as '${result:-not reported}'. Review the pull request."
+            exit 0
+          fi
+          gh pr merge "$BRANCH" --merge --delete-branch
+          gh workflow run tests.yml --ref main
+          summary "**Merged automatically:** every check passed, including the website build. Started Tests on main."

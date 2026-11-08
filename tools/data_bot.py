@@ -264,6 +264,8 @@ def collect_uploads(uploads_path):
     with open("pr_body.md", "a", encoding="utf-8") as handle:
         handle.write("\n".join(body) + "\n")
     set_output("uploads", len(stored))
+    set_output("held", len(held))
+    set_output("rejected", rejected)
 
 
 def main():
