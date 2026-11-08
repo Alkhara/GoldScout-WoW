@@ -34,7 +34,7 @@ local COLUMNS = {
 -- The two checkboxes change meaning with the tab.
 local TAB_OPTIONS = {
   farm = {
-    { setting = "showAllLevels", label = "All levels", tip = "Show farms for every level, not just mobs near yours." },
+    { setting = "showAllLevels", label = "All levels", tip = "Also show farms more than 4 levels above you. Lower-level farms are always shown." },
     { setting = "showOtherProfs", label = "Other profs",
       tip = "Also show herbs, ore and leather you could gather if you trained that profession." },
     { setting = "xpOnly", label = "Gives XP",

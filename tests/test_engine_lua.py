@@ -114,9 +114,9 @@ class FarmRulesTests(unittest.TestCase):
         if price:
             self.fake.prices[item_id] = price
 
-    def drops(self, npc, kills, items, name="Mob"):
-        entry = self.lua.eval("{ k = %d, p = 0, lmin = 24, lmax = 25, m = 1440, sx = 0.5, sy = 0.5, c = 1, i = {}, pi = {} }"
-                              % kills)
+    def drops(self, npc, kills, items, name="Mob", levels=(24, 25)):
+        entry = self.lua.eval("{ k = %d, p = 0, lmin = %d, lmax = %d, m = 1440, sx = 0.5, sy = 0.5, c = 1, i = {}, pi = {} }"
+                              % ((kills,) + tuple(levels)))
         entry.n = name
         for item_id, times in items.items():
             entry.i[item_id] = self.lua.table_from({"d": times, "q": times})
@@ -161,13 +161,27 @@ class FarmRulesTests(unittest.TestCase):
     def test_market_level_window(self):
         self.item(5020, ilvl=33)   # 8 above level 25: shown, marked above
         self.item(5021, ilvl=40)   # 15 above: hidden
-        self.item(5022, ilvl=10)   # 15 below: hidden
+        self.item(5022, ilvl=10)   # 15 below: shown (low-level materials can still pay best)
         rows = self.rows()
         self.assertTrue(rows[("Market", 5020)].above)
         self.assertNotIn(("Market", 5021), rows)
-        self.assertNotIn(("Market", 5022), rows)
+        self.assertIn(("Market", 5022), rows)
+        self.assertFalse(rows[("Market", 5022)].above)
         self.settings.showAllLevels = True
         self.assertIn(("Market", 5021), self.rows())
+
+    def test_low_level_drops_stay_listed_and_rank_by_gold_per_hour(self):
+        self.fake.level = 45
+        self.item(2673, price=30000, ilvl=20, name="Crawler Meat")
+        self.drops(3812, kills=40, items={2673: 18}, name="Clattering Crawler", levels=(19, 20))
+        self.item(3731, price=30000, ilvl=40, name="Lion Meat")
+        self.drops(2384, kills=40, items={3731: 18}, name="Starving Mountain Lion", levels=(44, 45))
+        rows = self.rows()
+        low, near = rows[("Learned", 2673)], rows[("Learned", 3731)]
+        self.assertGreater(low.hour, near.hour)       # same rate and price; low mobs die faster
+        self.item(9000, ilvl=55, name="Too high")
+        self.drops(9001, kills=40, items={9000: 18}, levels=(55, 56))
+        self.assertNotIn(("Learned", 9000), self.rows())   # more than 4 above: still hidden
 
     def test_known_rates_hides_market_rows(self):
         self.item(5000, ilvl=25)

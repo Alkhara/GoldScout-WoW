@@ -12,11 +12,11 @@ based on your level, class, faction and professions.
   minutes), or when you press **Scan AH**. It reads the lowest price per unit and
   the quantity listed for every item, in a few seconds, using the same summary
   scan Auctionator uses on the Forever client.
-- **Farm tab** ranks farms you can do at your level by estimated gold per hour:
+- **Farm tab** ranks farms you can do by estimated gold per hour, including lower-level ones that still pay well:
   - mobs that drop valuable crafting reagents, with rates from your own loot and other players'
-  - cloth from humanoids near your level (off by default; `/gscout set cloth on`)
+  - cloth from humanoids up to your level (off by default; `/gscout set cloth on`)
   - herbs, ore and leather you can gather with your Herbalism, Mining or Skinning skill
-  - **Market** rows: crafting reagents (items the game marks "Crafting Reagent") selling on your auction house near your level
+  - **Market** rows: crafting reagents (items the game marks "Crafting Reagent") selling on your auction house up to a few levels above yours
     that no farm covers yet, ranked by price per item. Gray (vendor trash), crafted and vendor-sold
     items are left out unless players have looted them from a mob. Their drop rate is learned
     as you loot them. Tick **Known rates** to hide them.

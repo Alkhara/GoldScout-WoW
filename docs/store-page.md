@@ -24,7 +24,7 @@ Open the auction house and GoldScout scans every item's lowest price and quantit
 ### Farm tab
 Farms ranked by estimated gold per hour for your character:
 - mobs with valuable drops, using real drop rates from players
-- cloth from humanoids near your level
+- cloth from humanoids up to your level
 - herbs, ore and leather your Herbalism, Mining or Skinning skill can gather
 - valuable crafting reagents, the mob-dropped materials professions always need, selling on your auction house right now, even before anyone has learned where they drop
 

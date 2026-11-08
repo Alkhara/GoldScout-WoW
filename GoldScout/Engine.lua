@@ -458,9 +458,11 @@ function Engine:Farms()
   local yield = ns.YIELD
   local rows = {}
 
-  -- Mobs from 12 levels below you to 4 above (stealth makes higher ones workable).
+  -- Anything up to 4 levels above you (stealth makes those workable). Lower
+  -- levels are never hidden: low-level materials can still pay best, and they
+  -- rank higher on their own because those mobs die faster (KillsPerHour).
   local function InWindow(minLevel, maxLevel)
-    return settings.showAllLevels or (maxLevel >= level - 12 and minLevel <= level + 4)
+    return settings.showAllLevels or minLevel <= level + 4
   end
 
   -- Typical level of what you'd fight in a band, never above your own.
