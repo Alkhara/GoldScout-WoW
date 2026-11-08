@@ -46,8 +46,8 @@ local TAB_OPTIONS = {
         .. "color shows how many kills back a drop rate up: |cffff8040orange|r under 5, |cffffd100yellow|r "
         .. "5-14, |cff9be35alight green|r 15-49, |cff40ff40green|r 50 or more." },
     { setting = "showRareDrops", label = "Rare drops",
-      tip = "Also show BoE gear and recipes players have looted. They're rare world drops that can come "
-        .. "from many mobs, so their rates per mob are rough guides at best." },
+      tip = "Also show BoE gear, recipes and gems. They're rare world drops that can come from many mobs, "
+        .. "so their rates per mob are rough guides at best." },
   },
   craft = {
     { setting = "showTrivial", label = "Gray recipes", tip = "Include recipes that no longer give skill-ups." },
@@ -1073,6 +1073,7 @@ local SETTING_ALIASES = {
   learn = "learnDrops",
   mobtips = "unitTooltips",
   raredrops = "showRareDrops",
+  cloth = "showCloth",
 }
 
 local function PrintHelp()
@@ -1084,7 +1085,7 @@ local function PrintHelp()
   print("  /gscout export - copy your learned drop data to share with GoldScout")
   print("  /gscout skills - show the skills and recipes GoldScout knows")
   print("  /gscout set kills|nodes|picks <number> - your rates per hour")
-  print("  /gscout set autoscan|tooltip|window|waypoint|markers|learn|mobtips|raredrops on|off")
+  print("  /gscout set autoscan|tooltip|window|waypoint|markers|learn|mobtips|raredrops|cloth on|off")
   print("  /gscout reset prices | drops - forget saved prices or learned drop rates")
 end
 
@@ -1142,7 +1143,7 @@ local function SetOption(rest)
   local setting = key and SETTING_ALIASES[key:lower()]
   if not setting then
     ns.Print("Usage: /gscout set kills|nodes|picks <number>, or "
-      .. "/gscout set autoscan|tooltip|window|waypoint|markers|learn|mobtips|raredrops on|off")
+      .. "/gscout set autoscan|tooltip|window|waypoint|markers|learn|mobtips|raredrops|cloth on|off")
     return
   end
   if type(ns.db.settings[setting]) == "boolean" then

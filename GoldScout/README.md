@@ -14,7 +14,7 @@ based on your level, class, faction and professions.
   scan Auctionator uses on the Forever client.
 - **Farm tab** ranks farms you can do at your level by estimated gold per hour:
   - mobs that drop valuable crafting reagents, with rates from your own loot and other players'
-  - cloth from humanoids near your level
+  - cloth from humanoids near your level (off by default; `/gscout set cloth on`)
   - herbs, ore and leather you can gather with your Herbalism, Mining or Skinning skill
   - **Market** rows: crafting reagents (items the game marks "Crafting Reagent") selling on your auction house near your level
     that no farm covers yet, ranked by price per item. Gray (vendor trash), crafted and vendor-sold
@@ -36,8 +36,9 @@ based on your level, class, faction and professions.
   drop. The **Chance** column's color shows how many kills back the rate up:
   orange under 5, yellow 5-14, light green 15-49, green 50 or more. Until a mob
   has 15 kills, gold per hour uses a cautious rate so one lucky drop doesn't top
-  the list. BoE gear and recipes are rare world drops from many mobs, so they're
-  hidden unless you tick **Rare drops**.
+  the list. BoE gear, recipes and gems are rare world drops from many mobs, so
+  they're hidden unless you tick **Rare drops**. Items with a "Use:" effect
+  (crates, food, scrolls) are never treated as reagents.
 
 ## Hunt mode
 
@@ -111,7 +112,8 @@ stays in your own SavedVariables.
 | `/gscout set markers off` | Hunts stop putting icons on nameplates |
 | `/gscout set mobtips off` | Remove GoldScout lines from mob tooltips |
 | `/gscout set learn off` | Stop learning drop rates from your loot |
-| `/gscout set raredrops on` | Show BoE gear and recipes as Learned rows (same as the **Rare drops** checkbox) |
+| `/gscout set raredrops on` | Show BoE gear, recipes and gems (same as the **Rare drops** checkbox) |
+| `/gscout set cloth on` | Show rough per-kill cloth rows for humanoids |
 | `/gscout reset prices` | Forget this faction's saved prices |
 | `/gscout reset drops` | Forget the drop rates learned from your loot |
 

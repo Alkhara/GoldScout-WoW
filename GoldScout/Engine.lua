@@ -223,6 +223,7 @@ end
 -- so a rate tied to one mob says little. Learned rows hide them unless the
 -- Rare drops option is on.
 local RARE_DROP_CLASSES = { [2] = true, [4] = true, [9] = true }
+local GEM_CLASS = (Enum.ItemClass and Enum.ItemClass.Gem) or 3
 
 -- Item classes that are never crafting reagents, skipped without loading the
 -- item: containers, weapons, armor, recipes, quest items.
@@ -255,12 +256,20 @@ local function ReagentFacts(itemID)
   if type(isReagent) ~= "boolean" then
     isReagent = classID == TRADE_GOODS
   end
+  -- Reagents are never used directly: anything with a "Use:" effect (crates,
+  -- food, scrolls) isn't one, whatever its flag says.
+  local useSpell = C_Item and C_Item.GetItemSpell and ns.Plain(C_Item.GetItemSpell(itemID))
   -- Bound, quest and gray (vendor trash) items aren't worth farming for the AH.
-  if not isReagent or bindType == 1 or bindType == 4 or quality == ns.QUALITY_POOR then
+  if not isReagent or useSpell or bindType == 1 or bindType == 4 or quality == ns.QUALITY_POOR then
     facts = false
   else
     local craftedCategory = classID == TRADE_GOODS and CRAFTED_SUBCLASSES[subclassID]
-    facts = { level = itemLevel, crafted = craftedCategory or ns.CRAFTED_TRADE_GOODS[itemID] }
+    facts = {
+      level = itemLevel,
+      crafted = craftedCategory or ns.CRAFTED_TRADE_GOODS[itemID],
+      -- Gems drop at random from many mobs (and come from mining), like gear.
+      gem = classID == GEM_CLASS or ns.GEMS[itemID] or nil,
+    }
   end
   reagentFacts[itemID] = facts
   return facts
@@ -479,8 +488,8 @@ function Engine:Farms()
     end
   end
 
-  -- Cloth from any humanoid in range
-  for _, cloth in ipairs(ns.CLOTH) do
+  -- Cloth from any humanoid in range (a rough guess, so only on request)
+  for _, cloth in ipairs(settings.showCloth and ns.CLOTH or {}) do
     if InWindow(cloth.min, cloth.max) then
       local net, listed, age = NetPrice(cloth.id)
       local each = net and net * yield.cloth
@@ -557,7 +566,8 @@ function Engine:Farms()
           if rareDrop then
             wanted = settings.showRareDrops and bindType ~= 1 and bindType ~= 4 and not ns.IsPoorQuality(itemID)
           else
-            wanted = ReagentFacts(itemID) and not gathered[itemID]
+            local facts = ReagentFacts(itemID)
+            wanted = facts and not gathered[itemID] and (settings.showRareDrops or not facts.gem)
           end
           if drops >= 1 and wanted then
             local net, listed, age = NetPrice(itemID)
@@ -683,7 +693,8 @@ function Engine:Farms()
         local notDropped = facts and (facts.crafted or madeByYou[itemID]
           or (ns.COMMUNITY_CRAFTED and ns.COMMUNITY_CRAFTED[itemID])
           or ns.VENDOR_REAGENTS[itemID] or ns.db.vendor[itemID] ~= nil)
-        if itemLevel and not (notDropped and not BestSighting(itemID)) then
+        if itemLevel and not (notDropped and not BestSighting(itemID))
+            and (settings.showRareDrops or not facts.gem) then
           local above = not InWindow(itemLevel, itemLevel) and not settings.showAllLevels
             and itemLevel > level and itemLevel <= level + MARKET_ABOVE_LEVELS
           if InWindow(itemLevel, itemLevel) or above then

@@ -101,6 +101,27 @@ ns.SKINNING = {
   { min = 45, max = 63, leather = 8170, hide = 8171 }, -- Rugged Leather / Rugged Hide
 }
 
+-- Gems from mining veins that also drop at random from many mobs. The Farm tab
+-- treats them like BoE gear: shown only with the Rare drops option.
+ns.GEMS = {
+  [774] = true,   -- Malachite
+  [818] = true,   -- Tigerseye
+  [1206] = true,  -- Moss Agate
+  [1210] = true,  -- Shadowgem
+  [1529] = true,  -- Jade
+  [1705] = true,  -- Lesser Moonstone
+  [3864] = true,  -- Citrine
+  [7909] = true,  -- Aquamarine
+  [7910] = true,  -- Star Ruby
+  [7971] = true,  -- Black Pearl
+  [11754] = true, -- Black Diamond
+  [12361] = true, -- Blue Sapphire
+  [12363] = true, -- Arcane Crystal
+  [12364] = true, -- Huge Emerald
+  [12799] = true, -- Large Opal
+  [12800] = true, -- Azerothian Diamond
+}
+
 -- Cloth by humanoid level (rough).
 ns.CLOTH = {
   { id = 2589, min = 5, max = 18 },   -- Linen Cloth
