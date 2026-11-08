@@ -17,14 +17,19 @@ Version 3 adds optional lines after the mobs:
   @i^itemID^name       an item's name, as the player's game client shows it
   @m^uiMapID^name      a zone's name
   @c^itemID^           an item some recipe makes (so it isn't a world drop)
-Version 2 (no @ lines) is still accepted; version 1 (no install ID) isn't.
+Version 4 adds:
+  @q^itemID^quality:class:reagent   item quality, item class ID and the
+                                    Crafting Reagent flag (1, 0 or x unknown)
+Versions 2 (no @ lines) and 3 are still accepted; version 1 (no install ID)
+isn't.
 """
 import math
 import re
 from collections import defaultdict
 
 HEADER = "GoldScout-export"
-HEADER_RE = re.compile(r"^GoldScout-export ([23])\^([a-z0-9]{12})\^([1-9][0-9]{0,8})$")
+HEADER_RE = re.compile(r"^GoldScout-export ([234])\^([a-z0-9]{12})\^([1-9][0-9]{0,8})$")
+ITEM_META_RE = re.compile(r"^([0-9]):([0-9]{1,2}):([01x])$")
 
 
 def header(install_id, seq, version=3):
@@ -80,11 +85,14 @@ class Result:
         self.item_names = {}
         self.map_names = {}
         self.crafted = set()
+        self.item_meta = {}  # itemID -> (quality, classID, reagent: True/False/None)
 
     def text(self):
         """The export rebuilt from the validated data."""
         lines = [header(self.install_id, self.seq, self.version)] + [mob.to_line() for mob in self.mobs]
         lines += ["@i^%d^%s" % (item, name) for item, name in sorted(self.item_names.items())]
+        lines += ["@q^%d^%d:%d:%s" % (item, quality, class_id, {True: "1", False: "0"}.get(reagent, "x"))
+                  for item, (quality, class_id, reagent) in sorted(self.item_meta.items())]
         lines += ["@m^%d^%s" % (map_id, name) for map_id, name in sorted(self.map_names.items())]
         lines += ["@c^%d^" % item for item in sorted(self.crafted)]
         return "\n".join(lines) + "\n"
@@ -207,14 +215,25 @@ def _parse_line(line, line_no, result):
 
 
 def _parse_extra(line, line_no, result):
-    """One @ line: an item name, a zone name or a crafted item."""
+    """One @ line: an item name, item details, a zone name or a crafted item."""
     fields = line.split("^")
-    if len(fields) != 3 or fields[0] not in ("@i", "@m", "@c"):
-        result.errors.append("Line %d: expected @i, @m or @c followed by an ID and a name." % line_no)
+    if len(fields) != 3 or fields[0] not in ("@i", "@m", "@c", "@q"):
+        result.errors.append("Line %d: expected @i, @q, @m or @c followed by an ID and a value." % line_no)
         return
     kind, id_text, name = fields
+    if kind == "@q" and result.version < 4:
+        result.errors.append("Line %d: item detail lines need a version 4 export." % line_no)
+        return
     some_id = _int(id_text, "ID", line_no, result, low=1)
     if some_id is None:
+        return
+    if kind == "@q":
+        match = ITEM_META_RE.match(name)
+        if not match:
+            result.errors.append("Line %d: item details must look like quality:class:reagent." % line_no)
+            return
+        reagent = {"1": True, "0": False}.get(match.group(3))
+        result.item_meta[some_id] = (int(match.group(1)), int(match.group(2)), reagent)
         return
     if kind == "@c":
         if name:

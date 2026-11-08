@@ -211,9 +211,31 @@ local function NewInstallID()
   return table.concat(chars)
 end
 
+-- Remembers an item's quality, class and Crafting Reagent flag as
+-- "quality:class:reagent" (reagent 1, 0, or x when the client doesn't say).
+-- Kept in saved data so exports stay identical when the item cache empties.
+local function NoteItemMeta(itemID)
+  local names = Names()
+  if not names or not itemID then
+    return
+  end
+  names.meta = names.meta or {}
+  if not ns.GetItemInfo then
+    return
+  end
+  local info = { ns.GetItemInfo(itemID) }
+  local quality, classID, reagent = ns.Plain(info[3]), ns.Plain(info[12]), ns.Plain(info[17])
+  if type(quality) ~= "number" or type(classID) ~= "number" then
+    return
+  end
+  local flag = (reagent == true and "1") or (reagent == false and "0") or "x"
+  names.meta[itemID] = ("%d:%d:%s"):format(quality, classID, flag)
+end
+
 -- The lines of an export, in a fixed order so unchanged data gives identical
 -- text: one per mob, then the names of the items and zones they mention
--- ("@i^itemID^name", "@m^uiMapID^name"), then every item a recipe makes
+-- ("@i^itemID^name", "@m^uiMapID^name"), what kind of item each is
+-- ("@q^itemID^quality:class:reagent"), then every item a recipe makes
 -- ("@c^itemID^"), which players' Market rows leave out.
 local function ExportBody()
   local drops = (ns.db and ns.db.drops) or {}
@@ -255,6 +277,17 @@ local function ExportBody()
       lines[#lines + 1] = "@i^" .. itemID .. "^" .. names.items[itemID]
     end
   end
+  -- What kind of item each is ("@q^itemID^quality:class:reagent"), so the
+  -- website can tell crafting reagents from food, gear and gray junk.
+  local meta = names.meta or {}
+  for _, itemID in ipairs(SortedKeys(items)) do
+    if not meta[itemID] then
+      NoteItemMeta(itemID)
+    end
+    if meta[itemID] then
+      lines[#lines + 1] = "@q^" .. itemID .. "^" .. meta[itemID]
+    end
+  end
   for _, mapID in ipairs(SortedKeys(maps)) do
     NoteMapName(mapID)
     if names.maps[mapID] and names.maps[mapID] ~= "" then
@@ -284,7 +317,7 @@ function Learn:Snapshot()
   local latest = exports.list[exports.seq]
   if not (latest and latest:match("^[^\n]*\n(.*)$") == body) then
     exports.seq = exports.seq + 1
-    exports.list[exports.seq] = ("GoldScout-export 3^%s^%d\n%s"):format(db.installID, exports.seq, body)
+    exports.list[exports.seq] = ("GoldScout-export 4^%s^%d\n%s"):format(db.installID, exports.seq, body)
     local included = ns.COMMUNITY_SOURCES and ns.COMMUNITY_SOURCES[db.installID]
     for seq in pairs(exports.list) do
       if seq ~= included and seq <= exports.seq - KEEP_SNAPSHOTS then
@@ -309,6 +342,7 @@ ns.Listen("DB_READY", function()
   db.names = db.names or {}
   db.names.items = db.names.items or {}
   db.names.maps = db.names.maps or {}
+  db.names.meta = db.names.meta or {}
   Learn.ownShared = ns.Community.RemoveOwn(ns.COMMUNITY, ns.COMMUNITY_SOURCES, ns.COMMUNITY_CAP,
     db.installID, db.exports, db.drops)
 end)
@@ -508,6 +542,7 @@ local function OnSlotCleared(slot)
       if ns.db.settings.learnDrops then
         RecordDrop(source.id, source.role, slotInfo.item, quantity)
         NoteItemName(slotInfo.item, slotInfo.name)
+        NoteItemMeta(slotInfo.item)
       end
       ns.Fire("LOOT_DROP", source.role, source.id, slotInfo.item, quantity)
     end

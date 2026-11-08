@@ -174,12 +174,14 @@ class SnapshotLuaTests(unittest.TestCase):
         self.ns.db.names["items"][5569] = "Pattern: Hillman's Cloak, Belt"
         self.ns.db.names.maps[1440] = "Ashenvale"
         self.ns.db.crafted[2996] = True
+        self.ns.db.names.meta[3010] = "1:7:1"
         learn = self.ns.Learn
         text, count = learn.ExportString(learn)
         self.assertEqual(count, 2)
-        self.assertTrue(text.startswith("GoldScout-export 3^"))
+        self.assertTrue(text.startswith("GoldScout-export 4^"))
         result = submission.parse(text)
         self.assertEqual(result.errors, [])
+        self.assertEqual(result.item_meta, {3010: (1, 7, True)})
         self.assertEqual(result.item_names, {3010: "Crawler Meat", 5569: "Pattern: Hillman's Cloak, Belt"})
         self.assertEqual(result.map_names, {1440: "Ashenvale"})
         self.assertEqual(result.crafted, {2996})

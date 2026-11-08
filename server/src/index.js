@@ -14,8 +14,8 @@
 
 const MAX_BYTES = 60000;
 const MAX_LINES = 1 + 1500 + 5000; // header, mobs, @ lines (names and crafted items)
-const HEADER = /^GoldScout-export [23]\^([a-z0-9]{12})\^([1-9][0-9]{0,8})$/;
-const EXTRA_LINE = /^@[imc]\^[0-9]{1,9}\^[^^]*$/;
+const HEADER = /^GoldScout-export [234]\^([a-z0-9]{12})\^([1-9][0-9]{0,8})$/;
+const EXTRA_LINE = /^@[imcq]\^[0-9]{1,9}\^[^^]*$/;
 const TERMS_VERSIONS = new Set(["2026-11-07"]);
 const NEW_INSTALLS_PER_IP_PER_DAY = 5;
 

@@ -17,6 +17,8 @@ HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 DIST = HERE / "dist"
 sys.path.insert(0, str(ROOT / "tools"))
+sys.path.insert(0, str(HERE))
+import data_pages  # noqa: E402
 import merge_data  # noqa: E402
 
 SITE_URL = "https://wowgoldscout.com"
@@ -51,10 +53,8 @@ def git(*args):
         return ""
 
 
-def stats():
+def stats(results, merged):
     """Numbers for the community section, from data/submissions/."""
-    results = merge_data.load(ROOT / "data" / "submissions")
-    merged = merge_data.merge([r.mobs for r in results], 1000)
     shown = {npc: e for npc, e in merged.items() if e["k"] + e["p"] >= 5}
     updated = git("log", "-1", "--format=%cs", "--", "GoldScout/Data_Community.lua")
     if updated:
@@ -120,6 +120,20 @@ section p.sub { color: var(--muted); margin: 0 0 28px; max-width: 46em; }
 ul.ticks { padding-left: 20px; margin: 0; } ul.ticks li { margin: 6px 0; }
 footer { padding: 36px 0 48px; color: var(--muted); font-size: 14px; border-top: 1px solid rgba(255,255,255,.06); }
 footer a { color: var(--muted); margin-right: 16px; }
+main.page { padding: 8px 0 40px; }
+main.page h1 { font-size: 34px; margin: 6px 0 4px; }
+main.page h2 { font-size: 22px; margin: 30px 0 10px; }
+.crumbs { margin: 0; font-size: 14px; } .crumbs a { color: var(--muted); }
+.facts { color: var(--muted); margin: 0 0 8px; }
+table { width: 100%; border-collapse: collapse; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; font-size: 15px; }
+th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: .4px; background: var(--bg2); }
+tr:last-child td { border-bottom: none; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.conf { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px; font-weight: 600; color: #1b1203; }
+.conf.low { background: #ff8040; } .conf.fair { background: #ffd100; } .conf.good { background: #9be35a; } .conf.high { background: #40d040; }
+.cta { margin-top: 34px; padding: 16px 18px; border: 1px solid var(--gold2); border-radius: 12px; background: rgba(242,194,85,.08); }
+.table-wrap { overflow-x: auto; }
 @media (max-width: 820px) {
   .hero, .two, .grid { grid-template-columns: 1fr; }
   .hero { padding-top: 16px; } .hero h1 { font-size: 34px; }
@@ -157,7 +171,7 @@ def page(s):
 <div class="wrap">
 <header class="top">
   <a class="brand" href="#"><img src="logo-400.png" alt="">GoldScout</a>
-  <nav><a href="#features">Features</a><a href="#data">Community data</a><a href="#companion">Companion</a><a href="%(guide)s">Guide</a></nav>
+  <nav><a href="#features">Features</a><a href="/farms">Farms by level</a><a href="#companion">Companion</a><a href="%(guide)s">Guide</a></nav>
 </header>
 
 <div class="hero">
@@ -196,6 +210,7 @@ def page(s):
     <li><b>It's checked.</b> Every submission is validated, and unusual drop rates are reviewed before they're used.</li>
     <li><b>Everyone gets it.</b> New community data ships in a release every week. Your own loot is never counted twice.</li>
   </ol>
+  <p style="margin-top:22px"><a class="btn" href="/farms">Browse farms by level</a></p>
 </div></section>
 
 <section id="companion"><div class="wrap two">
@@ -233,6 +248,42 @@ def page(s):
            kills=format(s["kills"], ","), drops=format(s["drops"], ","))
 
 
+def layout(title, description, path, body):
+    """A data page: the site's header and footer around body."""
+    return """<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>%(title)s | GoldScout</title>
+<meta name="description" content="%(description)s">
+<meta property="og:title" content="%(title)s">
+<meta property="og:description" content="%(description)s">
+<meta property="og:type" content="website">
+<meta property="og:url" content="%(site)s%(path)s">
+<meta property="og:image" content="%(site)s/logo-400.png">
+<link rel="canonical" href="%(site)s%(path)s">
+<link rel="icon" href="/favicon.png">
+<style>%(css)s</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <a class="brand" href="/"><img src="/logo-400.png" alt="">GoldScout</a>
+  <nav><a href="/farms">Farms by level</a><a href="/#companion">Companion</a><a href="%(curseforge)s">Get GoldScout</a></nav>
+</header>
+<main class="page"><div class="table-wrap">%(body)s</div></main>
+</div>
+<footer><div class="wrap">
+  <p><a href="/">Home</a><a href="%(source)s">GitHub</a><a href="%(privacy)s">Privacy</a><a href="%(data_license)s">Data license</a></p>
+  <p>Drop rates come from GoldScout players and are covered by the GoldScout Data License. GoldScout is a fan project, not affiliated with or endorsed by Blizzard Entertainment. World of Warcraft is a trademark of Blizzard Entertainment, Inc.</p>
+</div></footer>
+</body>
+</html>
+""" % dict(LINKS, site=SITE_URL, css=CSS, path=path, body=body,
+           title=html.escape(title), description=html.escape(description))
+
+
 def main():
     if DIST.exists():
         shutil.rmtree(DIST)
@@ -241,8 +292,26 @@ def main():
         shutil.copy2(ROOT / "docs" / "screenshots" / name, DIST / "screenshots" / name)
     shutil.copy2(ROOT / "docs" / "logo" / "goldscout-logo-400.png", DIST / "logo-400.png")
     shutil.copy2(ROOT / "companion" / "icon.png", DIST / "favicon.png")
-    s = stats()
+    results = merge_data.load(ROOT / "data" / "submissions")
+    merged = merge_data.merge([r.mobs for r in results], 1000)
+    s = stats(results, merged)
     (DIST / "index.html").write_text(page(s), encoding="utf-8")
+
+    def write(relative, title, description, body):
+        target = DIST / relative
+        target.parent.mkdir(parents=True, exist_ok=True)
+        url_path = "/" + relative[:-len(".html")]
+        target.write_text(layout(title, description, url_path, body), encoding="utf-8")
+
+    data = data_pages.Dataset(results, merged)
+    paths = ["/"] + data_pages.build(data, LINKS, write)
+    sitemap = ['<?xml version="1.0" encoding="UTF-8"?>',
+               '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    sitemap += ["  <url><loc>%s%s</loc></url>" % (SITE_URL, path) for path in paths]
+    sitemap.append("</urlset>")
+    (DIST / "sitemap.xml").write_text("\n".join(sitemap) + "\n", encoding="utf-8")
+    robots = ["User-agent: *", "Allow: /", "Sitemap: %s/sitemap.xml" % SITE_URL]
+    (DIST / "robots.txt").write_text("\n".join(robots) + "\n", encoding="utf-8")
     (DIST / "404.html").write_text(
         '<!doctype html><html lang="en"><head><meta charset="utf-8">'
         '<meta name="viewport" content="width=device-width, initial-scale=1"><title>Not found: GoldScout</title>'
@@ -255,7 +324,8 @@ def main():
         "/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n"
         "  Content-Security-Policy: default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; "
         "base-uri 'none'; form-action 'none'; frame-ancestors 'none'\n", encoding="utf-8")
-    print("Built %s: %d contributors, %d mobs, %d kills." % (DIST, s["contributors"], s["mobs"], s["kills"]))
+    print("Built %s: %d contributors, %d mobs, %d kills, %d pages." % (
+        DIST, s["contributors"], s["mobs"], s["kills"], len(paths)))
 
 
 if __name__ == "__main__":

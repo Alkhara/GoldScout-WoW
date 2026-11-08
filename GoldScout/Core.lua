@@ -355,6 +355,7 @@ ns.On("ADDON_LOADED", function(name)
   db.names = db.names or {} -- item and zone names seen, for shared exports
   db.names.items = db.names.items or {}
   db.names.maps = db.names.maps or {}
+  db.names.meta = db.names.meta or {}
   db.errors = db.errors or {} -- GoldScout's own errors and blocked actions, for /gscout errors
   for _, pending in ipairs(ns.pendingErrors or {}) do
     ns.RecordError(pending[1], pending[2])
