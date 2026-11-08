@@ -21,26 +21,41 @@ local window -- the loot window that is open right now
 local pendingDrops = {}
 local judgedDeaths = {}
 
--- When you last cast Skinning: a corpse's loot window that opens right after
--- is the skin, not the mob's drops.
-local SKINNING_SPELL = 8613
-local SKIN_SECONDS = 3
-local lastSkinCast = -math.huge
+-- When you last cast Skinning, Herb Gathering or Mining: a corpse's loot
+-- window that opens right after is gathering, not the mob's drops. (Some
+-- creatures can be herb-gathered or mined, not only skinned.)
+local GATHER_SPELLS = {
+  [8613] = true,  -- Skinning
+  [2366] = true,  -- Herb Gathering
+  [2575] = true,  -- Mining
+}
+local GATHER_SECONDS = 3
+local lastGatherCast = -math.huge
 
--- Leather, hides and scraps: what skinning gives. A creature loot window with
--- nothing else in it is a skin, even if the Skinning cast went unseen.
-local skinProducts
-local function IsSkinProduct(itemID)
-  if not skinProducts then
-    skinProducts = { [2934] = true } -- Ruined Leather Scraps
+-- What gathering gives: leather, hides and scraps, herbs, ore and stone. A
+-- creature loot window with nothing else in it is gathering, even if the cast
+-- went unseen.
+local gatherProducts
+local function IsGatherProduct(itemID)
+  if not gatherProducts then
+    gatherProducts = { [2934] = true } -- Ruined Leather Scraps
     for _, band in ipairs(ns.SKINNING or {}) do
-      skinProducts[band.leather] = true
+      gatherProducts[band.leather] = true
       if band.hide then
-        skinProducts[band.hide] = true
+        gatherProducts[band.hide] = true
+      end
+    end
+    for _, herb in ipairs(ns.HERBS or {}) do
+      gatherProducts[herb.id] = true
+    end
+    for _, ore in ipairs(ns.ORES or {}) do
+      gatherProducts[ore.id] = true
+      if ore.stone then
+        gatherProducts[ore.stone] = true
       end
     end
   end
-  return skinProducts[itemID] == true
+  return gatherProducts[itemID] == true
 end
 
 -- "Creature-0-server-instance-zone-npcID-spawn" -> "Creature", npcID
@@ -375,7 +390,7 @@ end
 ---------------------------------------------------------------------------
 -- Reading the loot window
 ---------------------------------------------------------------------------
-local function SourceRole(kind, guid, targetGUID, targetAlive, fishing, skinning)
+local function SourceRole(kind, guid, targetGUID, targetAlive, fishing, gathering)
   if fishing then
     return "fish"
   elseif kind == "Creature" or kind == "Vehicle" then
@@ -383,8 +398,8 @@ local function SourceRole(kind, guid, targetGUID, targetAlive, fishing, skinning
     if targetAlive and guid == targetGUID then
       return "pick"
     end
-    if skinning then
-      return "skin"
+    if gathering then
+      return "gather"
     end
     return "kill"
   elseif kind == "GameObject" then
@@ -398,19 +413,19 @@ local function ReadWindow()
   -- If the game hides whether the target is dead, assume it's a corpse.
   local targetAlive = targetGUID ~= nil and ns.Plain(UnitIsDead("target")) == false
   local fishing = (IsFishingLoot and IsFishingLoot()) or false
-  local skinning = GetTime() - lastSkinCast <= SKIN_SECONDS
+  local gathering = GetTime() - lastGatherCast <= GATHER_SECONDS
   local result = { slots = {}, sources = {} }
 
-  -- A window holding only leather, hides or scraps is a skin as well.
-  local count, allSkin = GetNumLootItems() or 0, true
+  -- A window holding only gathering products is gathering as well.
+  local count, allGathered = GetNumLootItems() or 0, true
   for slot = 1, count do
     local link = GetLootSlotType(slot) == ITEM_SLOT and GetLootSlotLink(slot)
     local itemID = link and tonumber(link:match("item:(%d+)"))
-    if not itemID or not IsSkinProduct(itemID) then
-      allSkin = false
+    if not itemID or not IsGatherProduct(itemID) then
+      allGathered = false
     end
   end
-  skinning = skinning or (count > 0 and allSkin)
+  gathering = gathering or (count > 0 and allGathered)
 
   for slot = 1, count do
     local slotInfo = { sources = {} }
@@ -430,7 +445,7 @@ local function ReadWindow()
         slotInfo.sources[#slotInfo.sources + 1] = { guid = guid, quantity = (type(quantity) == "number") and quantity or nil }
         if not result.sources[guid] then
           local kind, id = ns.ParseGUID(guid)
-          local role = SourceRole(kind, guid, targetGUID, targetAlive, fishing, skinning)
+          local role = SourceRole(kind, guid, targetGUID, targetAlive, fishing, gathering)
           local key = guid .. ":" .. role
           result.sources[guid] = {
             id = id, role = role, key = key, new = not counted[key], isTarget = (guid == targetGUID),
@@ -510,18 +525,34 @@ ns.On("LOOT_CLOSED", function()
 end)
 
 ---------------------------------------------------------------------------
--- Skinning casts
+-- Gathering casts (Skinning, Herb Gathering, Mining)
 ---------------------------------------------------------------------------
-local skinningName
-local function SkinningName()
-  if skinningName == nil then
-    local name = C_Spell and C_Spell.GetSpellName and C_Spell.GetSpellName(SKINNING_SPELL)
-    if name == nil and GetSpellInfo then
-      name = GetSpellInfo(SKINNING_SPELL)
-    end
-    skinningName = ns.Plain(name) or false
+local function SpellName(spellID)
+  local name = C_Spell and C_Spell.GetSpellName and C_Spell.GetSpellName(spellID)
+  if name == nil and GetSpellInfo then
+    name = GetSpellInfo(spellID)
   end
-  return skinningName
+  return ns.Plain(name)
+end
+
+-- The gathering spells' names in this client's language, so higher ranks and
+-- this client's own spell IDs match too.
+local gatherNames
+local function IsGatherSpell(spellID)
+  if GATHER_SPELLS[spellID] then
+    return true
+  end
+  if not gatherNames then
+    gatherNames = {}
+    for id in pairs(GATHER_SPELLS) do
+      local name = SpellName(id)
+      if type(name) == "string" then
+        gatherNames[name] = true
+      end
+    end
+  end
+  local name = SpellName(spellID)
+  return type(name) == "string" and gatherNames[name] == true
 end
 
 ns.On("UNIT_SPELLCAST_SUCCEEDED", function(unit, _, spellID)
@@ -532,9 +563,8 @@ ns.On("UNIT_SPELLCAST_SUCCEEDED", function(unit, _, spellID)
   if type(spellID) ~= "number" then
     return
   end
-  local name = C_Spell and C_Spell.GetSpellName and ns.Plain(C_Spell.GetSpellName(spellID))
-  if spellID == SKINNING_SPELL or (name and name == SkinningName()) then
-    lastSkinCast = GetTime()
+  if IsGatherSpell(spellID) then
+    lastGatherCast = GetTime()
   end
 end)
 

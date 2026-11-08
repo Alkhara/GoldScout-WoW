@@ -214,6 +214,8 @@ ns.Listen = function(name, fn) ns.handlers[name] = fn end
 ns.Fire = function(name, ...) ns.fired[#ns.fired + 1] = name end
 ns.Debounce = function() end
 ns.SKINNING = { { leather = 2318, hide = 783 } }
+ns.HERBS = { { id = 2447 } }
+ns.ORES = { { id = 2770, stone = 2835 } }
 GAME = { now = 100, loot = {}, units = {}, inGroup = false }
 strsplit = function(sep, text)
   local parts = {}
@@ -285,6 +287,25 @@ class LootCountingLuaTests(unittest.TestCase):
         self.game.now = 500
         self.loot(BEAR, 783)
         self.assertEqual(self.bear(), (None, {}))
+
+    def test_mining_or_herbing_a_corpse_is_not_a_kill(self):
+        self.loot(BEAR, 3730)
+        for spell, item in ((2575, 2770), (2366, 2447)):   # Mining, Herb Gathering
+            self.game.now += 10
+            self.ns.events["UNIT_SPELLCAST_SUCCEEDED"]("player", None, spell)
+            self.loot(BEAR2, item, 3730)   # even with something else in the window
+        self.assertEqual(self.bear(), (1, {3730: 1}))
+
+    def test_ore_or_herb_only_window_is_gathering_without_the_cast(self):
+        self.game.now = 500
+        self.loot(BEAR, 2770, 2835)
+        self.loot(BEAR2, 2447)
+        self.assertEqual(self.bear(), (None, {}))
+
+    def test_other_casts_dont_count_as_gathering(self):
+        self.ns.events["UNIT_SPELLCAST_SUCCEEDED"]("player", None, 1752)   # Sinister Strike
+        self.loot(BEAR, 3730)
+        self.assertEqual(self.bear(), (1, {3730: 1}))
 
     def test_corpse_without_loot_counts_the_kill(self):
         self.lua.globals().CanLootUnit = lambda guid: False
