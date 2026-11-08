@@ -286,46 +286,8 @@ end
 
 -- On load: give this account an install ID, then take your own shared loot
 -- back out of the community data so it isn't counted twice.
--- One-time repair: before GoldScout recognized skinning, a corpse skinned
--- after a /reload (or without looting it first) counted as a new kill, with
--- the leather or scraps recorded as its drops. Each such window holds only
--- skinning products, so the most-recorded skinning product per mob is the
--- number of false kills: take those kills and items back out.
-local function RepairSkinningKills(drops)
-  for npcID, entry in pairs(drops) do
-    local phantom = 0
-    for itemID, stat in pairs(entry.i or {}) do
-      if IsSkinProduct(itemID) then
-        phantom = math.max(phantom, stat.d or 0)
-        entry.i[itemID] = nil
-      end
-    end
-    if phantom > 0 then
-      local kills = entry.k or 0
-      local kept = math.max(0, kills - phantom)
-      if (entry.c or 0) > 0 and kills > 0 then
-        local scale = kept / kills
-        entry.sx, entry.sy = (entry.sx or 0) * scale, (entry.sy or 0) * scale
-        entry.c = math.floor((entry.c or 0) * scale + 0.5)
-        if entry.c == 0 then
-          entry.m, entry.sx, entry.sy = nil, 0, 0
-        end
-      end
-      entry.k = kept
-      if kept == 0 and (entry.p or 0) == 0 then
-        drops[npcID] = nil
-      end
-    end
-  end
-end
-Learn.RepairSkinningKills = RepairSkinningKills
-
 ns.Listen("DB_READY", function()
   local db = ns.db
-  if (db.repairs or 0) < 1 then
-    RepairSkinningKills(db.drops or {})
-    db.repairs = 1
-  end
   db.installID = db.installID or NewInstallID()
   db.exports = db.exports or { seq = 0, list = {} }
   db.crafted = db.crafted or {}

@@ -317,34 +317,3 @@ class LootCountingLuaTests(unittest.TestCase):
         self.dies(BEAR)
         self.dies(BEAR, unit="nameplate3")
         self.assertEqual(self.bear(), (1, {}))
-
-
-@unittest.skipIf(lua51 is None, "lupa is not installed")
-class SkinningRepairLuaTests(unittest.TestCase):
-    def test_repair_takes_out_skinning_kills_once(self):
-        lua = lua51.LuaRuntime(unpack_returned_tuples=True)
-        ns = lua.table()
-        lua.execute("return loadstring(...)", GAME_STUBS)(ns)
-        for name in ("Community.lua", "Learn.lua"):
-            source = (ROOT / "GoldScout" / name).read_text(encoding="utf-8")
-            lua.execute("return loadstring(...)", source)("GoldScout", ns)
-        ns.COMMUNITY = lua.table()
-        ns.db = lua.eval("""{ settings = { learnDrops = true }, drops = {
-          [3809] = { k = 10, p = 0, c = 10, m = 1440, sx = 5, sy = 6,
-                     i = { [3730] = { d = 3, q = 3 }, [2934] = { d = 4, q = 4 }, [2318] = { d = 1, q = 1 } }, pi = {} },
-          [1984] = { k = 2, p = 0, c = 2, m = 1, sx = 1, sy = 1, i = { [2934] = { d = 2, q = 2 } }, pi = {} },
-          [3812] = { k = 20, p = 0, i = { [2674] = { d = 9, q = 9 } }, pi = {} },
-        } }""")
-        ns.handlers["DB_READY"]()
-        bear = ns.db.drops[3809]
-        self.assertEqual(bear.k, 6)                       # 4 scrap windows were false kills
-        self.assertEqual(sorted(bear.i.keys()), [3730])   # skinning products gone, real drop kept
-        self.assertEqual(bear.c, 6)
-        self.assertAlmostEqual(bear.sx, 3.0)
-        self.assertAlmostEqual(bear.sy, 3.6)
-        self.assertIsNone(ns.db.drops[1984])               # nothing real left
-        self.assertEqual(ns.db.drops[3812].k, 20)          # untouched
-        self.assertEqual(ns.db.repairs, 1)
-        ns.db.drops[3812].i[2934] = lua.eval("{ d = 5, q = 5 }")
-        ns.handlers["DB_READY"]()                          # runs once only
-        self.assertEqual(ns.db.drops[3812].k, 20)
