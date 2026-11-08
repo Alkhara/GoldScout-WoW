@@ -228,6 +228,7 @@ def page(s):
       <li>Never shows pop-ups over your game.</li>
       <li>Shares new data automatically after you agree once, and can be paused any time.</li>
       <li>Only reads GoldScout's saved data. It never touches the game.</li>
+      <li>Updates itself in one click, and only installs genuine signed releases.</li>
       <li>Code-signed, so Windows shows who published it.</li>
     </ul>
     <p style="margin-top:22px"><a class="btn primary" href="%(companion)s">Download for Windows</a></p>

@@ -53,20 +53,50 @@ class SingleInstance:
         self.signal_path = signal_path
         self.handle = None
 
-    def claim(self):
+    def claim(self, signal=True):
+        """True if this copy now holds the mutex. Otherwise, with signal, asks the
+        running copy to show its window."""
         if sys.platform != "win32":
             return True
         import ctypes
         kernel32 = ctypes.windll.kernel32
         kernel32.CreateMutexW.restype = ctypes.c_void_p
-        self.handle = kernel32.CreateMutexW(None, False, self.MUTEX_NAME)
+        handle = kernel32.CreateMutexW(None, False, self.MUTEX_NAME)
         if kernel32.GetLastError() == 183:  # ERROR_ALREADY_EXISTS
-            try:
-                self.signal_path.parent.mkdir(parents=True, exist_ok=True)
-                self.signal_path.write_text("show", encoding="utf-8")
-            except OSError:
-                pass
+            if handle:
+                kernel32.CloseHandle(ctypes.c_void_p(handle))  # don't keep the other copy's mutex alive
+            if signal:
+                try:
+                    self.signal_path.parent.mkdir(parents=True, exist_ok=True)
+                    self.signal_path.write_text("show", encoding="utf-8")
+                except OSError:
+                    pass
             return False
+        self.handle = handle
+        return True
+
+    def claim_when_free(self, seconds):
+        """For a copy started by an update: waits for the old copy to let go."""
+        import time
+        deadline = time.time() + seconds
+        while not self.claim(signal=False):
+            if time.time() > deadline:
+                return False
+            time.sleep(0.25)
+        return True
+
+    @classmethod
+    def other_running(cls):
+        """True when some copy holds the mutex (opens it without creating it)."""
+        if sys.platform != "win32":
+            return False
+        import ctypes
+        kernel32 = ctypes.windll.kernel32
+        kernel32.OpenMutexW.restype = ctypes.c_void_p
+        handle = kernel32.OpenMutexW(0x00100000, False, cls.MUTEX_NAME)  # SYNCHRONIZE
+        if not handle:
+            return False
+        kernel32.CloseHandle(ctypes.c_void_p(handle))
         return True
 
     def show_requested(self):

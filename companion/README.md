@@ -18,7 +18,13 @@ automatically, from the system tray. More at https://wowgoldscout.com.
 It never shows notifications, so nothing pops up over your game. Click the tray
 icon to open the window, which shows what GoldScout has learned and when it
 last shared. The tray menu can pause automatic sharing, turn off starting with
-Windows, or quit. Closing the window keeps the companion running in the tray.
+Windows, check for updates, or quit. Closing the window keeps the companion running in the tray.
+
+**Updates are one click.** When a new version is out, the window and the tray
+menu show **Update**. The companion downloads it, checks it's the genuine signed
+release, replaces itself in place and restarts, keeping your settings. If the new
+version doesn't start, it puts the old one back. (Versions before 0.6.2 can't
+update themselves: download the new exe once and replace the old one.)
 
 If you choose **Not now**, nothing is uploaded. **Share now** then opens the
 Share drop data form on GitHub with your export filled in instead.

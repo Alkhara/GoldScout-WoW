@@ -26,6 +26,7 @@ sys.path.insert(0, str(HERE.parent / "tools"))
 import savedvars  # noqa: E402
 import submission  # noqa: E402
 import system  # noqa: E402
+import updater  # noqa: E402
 import uploader  # noqa: E402
 
 VERSION = "0.6.1"  # tools/release.py checks this matches the tag
@@ -35,6 +36,9 @@ PRIVACY_URL = "https://github.com/Alkhara/GoldScout-WoW/blob/main/docs/PRIVACY.m
 MAX_URL = 7500           # longer links get cut off; then the export goes via the clipboard
 POLL_MS = 15000          # how often to look for newer saved data
 RETRY_SECONDS = 300      # wait after a failed upload before trying again
+FIRST_CHECK_MS = 30000   # first update check, after startup settles
+CHECK_EVERY_MS = 6 * 3600 * 1000
+HANDOVER_SECONDS = 25    # how long a new version gets to start before we roll back
 CONFIG_DIR = Path(os.environ.get("APPDATA", Path.home())) / "GoldScout Companion"
 CONFIG_FILE = CONFIG_DIR / "config.json"
 SHOW_REQUEST = CONFIG_DIR / "show.request"
@@ -68,7 +72,7 @@ def link(parent, text, url):
 
 
 class App:
-    def __init__(self, root, start_hidden, instance=None):
+    def __init__(self, root, start_hidden, instance=None, updated=False):
         self.root = root
         self.instance = instance
         self.config = load_config()
@@ -76,6 +80,7 @@ class App:
         self.accounts, self.account, self.result, self.stamp = [], None, None, None
         self.uploading = False
         self.tray = None
+        self.update, self.updating = None, False
 
         root.title("GoldScout Companion")
         root.minsize(560, 420)
@@ -101,6 +106,11 @@ class App:
         self.refresh()
         self.root.after(200, self.pump)
         self.root.after(POLL_MS, self.poll)
+        if updated:
+            self.set_update_text("Updated to %s." % VERSION)
+        self.clean_up_updates(30)
+        if self.can_update():
+            self.root.after(FIRST_CHECK_MS, self.check_updates)
 
     # -- consent and settings -------------------------------------------------
     def has_consent(self):
@@ -170,6 +180,11 @@ class App:
         frame.columnconfigure(0, weight=1)
 
         ttk.Label(frame, text="GoldScout Companion", font=("Segoe UI", 15, "bold")).grid(row=0, column=0, sticky="w")
+        bar = ttk.Frame(frame)
+        bar.grid(row=0, column=0, sticky="e")
+        self.update_label = ttk.Label(bar, text="", foreground="#555")
+        self.update_label.pack(side="left")
+        self.update_button = ttk.Button(bar, text="Update", command=self.start_update)
         self.share_status = ttk.Label(frame, text="", foreground="#555")
         self.share_status.grid(row=1, column=0, sticky="w", pady=(0, 12))
 
@@ -264,6 +279,11 @@ class App:
                 lambda: self.set_start_with_windows(not system.start_with_windows_enabled())),
                 checked=lambda _: system.start_with_windows_enabled(),
                 enabled=lambda _: system.can_start_with_windows()),
+            pystray.MenuItem(lambda _: "Update to %s" % (self.update.version if self.update else ""),
+                             lambda: self.events.put(self.start_update),
+                             visible=lambda _: bool(self.update) and not self.updating),
+            pystray.MenuItem("Check for updates", lambda: self.events.put(lambda: self.check_updates(manual=True)),
+                             visible=lambda _: self.can_update() and not self.update and not self.updating),
             pystray.Menu.SEPARATOR,
             pystray.MenuItem("Quit", lambda: self.events.put(self.quit)),
         )
@@ -288,6 +308,138 @@ class App:
             self.root.after(200, self.pump)
         except tk.TclError:
             pass  # the window is gone; we're quitting
+
+    # -- updates --------------------------------------------------------------
+    def can_update(self):
+        """Only the packaged exe updates itself (running from source can't)."""
+        return system.can_start_with_windows()
+
+    def exe(self):
+        return Path(sys.executable)
+
+    def set_update_text(self, text, button=None):
+        self.update_label.configure(text=text)
+        if button:
+            self.update_button.configure(text=button, state="normal")
+            self.update_button.pack(side="left", padx=(8, 0))
+        else:
+            self.update_button.pack_forget()
+
+    def check_updates(self, manual=False):
+        """Asks GitHub for a newer version: on a timer, or when picked from the tray."""
+        def work():
+            try:
+                found, problem = updater.check(VERSION), None
+            except updater.UpdateError as error:
+                found, problem = self.update, str(error)   # offline: keep what we knew
+            self.events.put(lambda: self.update_found(found, problem if manual else None, manual))
+        if manual:
+            self.show()
+            self.set_update_text("Checking for updates...")
+        if not self.updating:
+            threading.Thread(target=work, daemon=True).start()
+        if not manual:
+            self.root.after(CHECK_EVERY_MS, self.check_updates)
+
+    def update_found(self, update, problem=None, manual=False):
+        if self.updating:
+            return
+        self.update = update
+        if update:
+            note = "  (it didn't start last time)" if self.config.get("update_failed") == update.version else ""
+            self.set_update_text("Version %s is available.%s" % (update.version, note), "Update")
+        elif problem:
+            self.set_update_text(problem)
+        elif manual:
+            self.set_update_text("You have the latest version.")
+        self.update_tray()
+
+    def start_update(self):
+        if not self.update or self.updating:
+            return
+        folder = self.exe().parent
+        if not self.can_update() or not updater.can_write(folder):
+            webbrowser.open(self.update.page)
+            messagebox.showinfo("GoldScout Companion",
+                                "The companion can't update itself in %s. The download page is opening: "
+                                "download GoldScoutCompanion.exe and replace this one." % folder)
+            return
+        self.updating = True
+        self.set_update_text("Downloading %s..." % self.update.version)
+        self.update_tray()
+        update = self.update
+
+        def progress(done, total):
+            self.events.put(lambda: self.update_label.configure(
+                text="Downloading %s... %d%%" % (update.version, done * 100 // max(total, 1))))
+
+        def work():
+            try:
+                new = updater.download(update, folder, VERSION, progress=progress)
+                self.events.put(lambda: self.update_label.configure(text="Checking the signature..."))
+                try:
+                    updater.verify_signature(new)
+                except updater.UpdateError:
+                    updater.remove(new)
+                    raise
+                self.events.put(lambda: self.install_update(new))
+            except updater.UpdateError as error:
+                message = str(error)
+                self.events.put(lambda: self.update_failed(message))
+        threading.Thread(target=work, daemon=True).start()
+
+    def install_update(self, new):
+        try:
+            updater.swap(self.exe(), new)
+        except updater.UpdateError as error:
+            updater.remove(new)
+            self.update_failed(str(error))
+            return
+        self.set_update_text("Starting %s..." % self.update.version)
+        hidden = self.root.state() == "withdrawn"
+        if self.tray:
+            self.tray.stop()
+            self.tray = None
+        if self.instance:
+            self.instance.close()
+        try:
+            updater.launch(self.exe(), ["--after-update"] + (["--tray"] if hidden else []))
+        except OSError as error:
+            self.roll_back("Couldn't start the new version (%s)." % error)
+            return
+        self.wait_for_handover(time.time() + HANDOVER_SECONDS)
+
+    def wait_for_handover(self, deadline):
+        if system.SingleInstance.other_running():
+            self.config.pop("update_failed", None)
+            save_config(self.config)
+            self.root.destroy()   # the new version has taken over
+            return
+        if time.time() > deadline:
+            self.roll_back("The new version didn't start, so this one was kept.")
+            return
+        self.root.after(250, lambda: self.wait_for_handover(deadline))
+
+    def roll_back(self, message):
+        updater.rollback(self.exe())
+        if self.instance:
+            self.instance.claim(signal=False)
+        self.config["update_failed"] = self.update.version
+        save_config(self.config)
+        self.start_tray()
+        self.update_failed(message)
+
+    def update_failed(self, message):
+        self.updating = False
+        self.set_update_text("Update failed: %s" % message, "Try again")
+        self.update_tray()
+
+    def clean_up_updates(self, tries):
+        """Deletes files earlier updates left; the old exe stays locked until its copy exits."""
+        if not self.can_update():
+            return
+        if not updater.clean_up(self.exe().parent) and tries > 1:
+            self.root.after(2000, lambda: self.clean_up_updates(tries - 1))
 
     # -- folder ---------------------------------------------------------------
     def find_folder(self):
@@ -496,10 +648,14 @@ class App:
 def main():
     parser = argparse.ArgumentParser(description="GoldScout Companion")
     parser.add_argument("--tray", action="store_true", help="start hidden in the system tray")
+    parser.add_argument("--after-update", action="store_true", help=argparse.SUPPRESS)
     args = parser.parse_args()
 
     instance = system.SingleInstance(SHOW_REQUEST)
-    if not instance.claim():
+    if args.after_update:
+        if not instance.claim_when_free(HANDOVER_SECONDS - 5):
+            return  # the old version is still running; it rolls back on its own
+    elif not instance.claim():
         return  # the copy that's already running shows its window instead
     instance.show_requested()  # clear any stale request
     root = tk.Tk()
@@ -507,7 +663,7 @@ def main():
         ttk.Style(root).theme_use("vista")
     except tk.TclError:
         pass
-    App(root, start_hidden=args.tray, instance=instance)
+    App(root, start_hidden=args.tray, instance=instance, updated=args.after_update)
     root.mainloop()
     instance.close()
 

@@ -34,6 +34,13 @@ choose "Not now", nothing is uploaded; you can still share by hand through the
 GitHub form. You can pause automatic sharing, or stop the companion starting
 with Windows, at any time from its tray icon.
 
+To offer updates, the companion asks GitHub for the latest GoldScout release
+shortly after it starts and every few hours (the request carries only the
+companion's version). It downloads an update only when you click Update, and
+uses it only if the file matches the release's published hash and is code-signed
+by GoldScout's publisher. GitHub sees your IP address for these requests, as
+described in its [privacy statement](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement).
+
 On your PC it stores, in `%APPDATA%\GoldScout Companion\config.json`: your WoW
 folder location, whether you agreed to the terms and when, your settings, and
 for each install the upload token and the last snapshot it uploaded.
