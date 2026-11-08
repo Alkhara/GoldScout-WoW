@@ -1,7 +1,7 @@
 # GoldScout Companion
 
 A small Windows app that shares the drop rates GoldScout learns from your loot,
-automatically, from the system tray.
+automatically, from the system tray. More at https://wowgoldscout.com.
 
 1. Download `GoldScoutCompanion.exe` from the latest
    [release](https://github.com/Alkhara/GoldScout-WoW/releases) and run it.

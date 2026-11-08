@@ -9,6 +9,7 @@ fields. The description is written in Markdown.
 **Game version:** WoW Forever (1.60.1)
 **Logo:** `docs/logo/goldscout-logo-1024.png`
 **License:** MIT (code); GoldScout Data License (community drop data)
+**Website:** https://wowgoldscout.com
 **Source:** https://github.com/Alkhara/GoldScout-WoW
 
 ---
@@ -53,7 +54,7 @@ GoldScout only shows information. It never moves, targets, attacks, loots or mar
 ### Commands
 `/gscout` opens the window · `/gscout scan` · `/gscout hunt` · `/gscout export` · `/gscout skills` · `/gscout set kills 80` · `/gscout help`
 
-Full guide: https://github.com/Alkhara/GoldScout-WoW/blob/main/GoldScout/README.md
+Website: https://wowgoldscout.com · Full guide: https://github.com/Alkhara/GoldScout-WoW/blob/main/GoldScout/README.md
 
 ---
 

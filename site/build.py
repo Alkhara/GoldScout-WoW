@@ -19,6 +19,7 @@ DIST = HERE / "dist"
 sys.path.insert(0, str(ROOT / "tools"))
 import merge_data  # noqa: E402
 
+SITE_URL = "https://wowgoldscout.com"
 REPO = "https://github.com/Alkhara/GoldScout-WoW"
 LINKS = {
     "curseforge": "https://www.curseforge.com/projects/1790110",
@@ -144,7 +145,11 @@ def page(s):
 <meta name="description" content="A free WoW Forever addon that tells each character what's worth farming or crafting for gold, using your own auction house prices and drop rates shared by players.">
 <meta property="og:title" content="GoldScout">
 <meta property="og:description" content="What should this character farm for gold right now? A free WoW Forever addon.">
-<meta property="og:image" content="logo-400.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="%(site)s/">
+<meta property="og:image" content="%(site)s/logo-400.png">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="%(site)s/">
 <link rel="icon" href="favicon.png">
 <style>%(css)s</style>
 </head>
@@ -223,7 +228,7 @@ def page(s):
 </div></footer>
 </body>
 </html>
-""" % dict(LINKS, css=CSS, shots=shots, updated=updated, contributors_label=contributors_label,
+""" % dict(LINKS, site=SITE_URL, css=CSS, shots=shots, updated=updated, contributors_label=contributors_label,
            contributors=format(s["contributors"], ","), mobs=format(s["mobs"], ","),
            kills=format(s["kills"], ","), drops=format(s["drops"], ","))
 

@@ -2,6 +2,8 @@
 
 **Find the best gold for your character in World of Warcraft: Forever.**
 
+Website: **https://wowgoldscout.com**
+
 GoldScout scans the auction house when you visit an auctioneer, then ranks what
 your character can farm or craft for the most gold per hour: based on your
 level, class, faction and professions. Log onto a level 10 druid herbalist or a

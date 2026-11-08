@@ -1,5 +1,7 @@
 # GoldScout
 
+Website: https://wowgoldscout.com
+
 A World of Warcraft: Forever addon that scans the auction house when you visit an
 auctioneer and ranks what is most profitable for your character to farm or craft,
 based on your level, class, faction and professions.
