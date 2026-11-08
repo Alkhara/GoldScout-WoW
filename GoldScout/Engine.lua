@@ -519,8 +519,9 @@ function Engine:Farms()
     end
   end
 
-  -- Mobs players have looted a lot (community data plus you) that the list
-  -- above doesn't cover
+  -- Mobs players have looted (community data plus you) that the list above
+  -- doesn't cover
+  local gathered = GatheredItems()
   local mobs = {}
   for npcID in pairs(ns.db.drops or {}) do
     mobs[npcID] = true
@@ -549,8 +550,16 @@ function Engine:Farms()
           local bindType = ns.ItemBindType(itemID)
           local _, _, _, _, _, itemClass = ns.GetItemInfoInstant(itemID)
           local rareDrop = RARE_DROP_CLASSES[itemClass] ~= nil
-          if drops >= 1 and bindType ~= 1 and bindType ~= 4 and not ns.IsPoorQuality(itemID)
-              and (settings.showRareDrops or not rareDrop) then
+          -- Worth farming: crafting reagents (not food, scrolls or vendor junk),
+          -- minus cloth, herbs, ore and leather, which have their own rows; plus
+          -- BoE gear and recipes when Rare drops is on.
+          local wanted
+          if rareDrop then
+            wanted = settings.showRareDrops and bindType ~= 1 and bindType ~= 4 and not ns.IsPoorQuality(itemID)
+          else
+            wanted = ReagentFacts(itemID) and not gathered[itemID]
+          end
+          if drops >= 1 and wanted then
             local net, listed, age = NetPrice(itemID)
             if net then
               local rate = drops / attempts
@@ -654,7 +663,6 @@ function Engine:Farms()
     for _, row in ipairs(rows) do
       covered[row.item] = true
     end
-    local gathered = GatheredItems()
     -- What any recipe makes counts as crafted too: every recipe output your
     -- characters have seen in a profession window (db.crafted), plus this
     -- character's known recipes.

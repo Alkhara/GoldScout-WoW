@@ -13,7 +13,7 @@ based on your level, class, faction and professions.
   the quantity listed for every item, in a few seconds, using the same summary
   scan Auctionator uses on the Forever client.
 - **Farm tab** ranks farms you can do at your level by estimated gold per hour:
-  - mobs whose drops you've learned are valuable (from your own loot)
+  - mobs that drop valuable crafting reagents, with rates from your own loot and other players'
   - cloth from humanoids near your level
   - herbs, ore and leather you can gather with your Herbalism, Mining or Skinning skill
   - **Market** rows: crafting reagents (items the game marks "Crafting Reagent") selling on your auction house near your level
