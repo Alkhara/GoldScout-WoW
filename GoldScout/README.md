@@ -114,6 +114,7 @@ stays in your own SavedVariables.
 | `/gscout set waypoint off` | Hunts stop placing the map waypoint |
 | `/gscout set markers off` | Hunts stop putting icons on nameplates |
 | `/gscout set mobtips off` | Remove GoldScout lines from mob tooltips |
+| `/gscout set companionhint on` | Bring back the Farm tab line about GoldScout Companion (its Hide button turns it off) |
 | `/gscout set learn off` | Stop learning drop rates from your loot |
 | `/gscout set raredrops on` | Show BoE gear, recipes and gems (same as the **Rare drops** checkbox) |
 | `/gscout set cloth on` | Show rough per-kill cloth rows for humanoids |

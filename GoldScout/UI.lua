@@ -4,7 +4,8 @@ local _, ns = ...
 local UI = { tab = "farm", offset = 0, rows = {}, data = {}, expanded = {} }
 ns.UI = UI
 
-local FRAME_WIDTH, FRAME_HEIGHT = 760, 486
+local FRAME_WIDTH, FRAME_HEIGHT = 760, 510
+local COMPANION_URL = "wowgoldscout.com"
 local ROW_HEIGHT = 20
 local VISIBLE_ROWS = 16
 local MAX_COLUMNS = 8
@@ -356,6 +357,33 @@ local function CreateRow(parent, index)
   return row
 end
 
+-- A one-line box holding text to copy. Typing can't change it, and clicking
+-- selects all of it.
+local function CreateCopyBox(parent, text)
+  local box = CreateFrame("EditBox", nil, parent, "InputBoxTemplate")
+  box:SetAutoFocus(false)
+  box:SetFontObject(ChatFontNormal)
+  box:SetText(text)
+  box:SetCursorPosition(0)
+  box:SetScript("OnTextChanged", function(self, userInput)
+    if userInput then
+      self:SetText(text)
+      self:HighlightText()
+    end
+  end)
+  box:SetScript("OnMouseUp", function(self)
+    self:SetFocus()
+    self:HighlightText()
+  end)
+  box:SetScript("OnEditFocusGained", function(self)
+    self:HighlightText()
+  end)
+  box:SetScript("OnEscapePressed", function(self)
+    self:ClearFocus()
+  end)
+  return box
+end
+
 local function CreateTabButton(frame, text, tab, x)
   local button = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
   button:SetSize(80, 22)
@@ -534,6 +562,36 @@ function UI:Create()
   f.pageText = f:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
   f.pageText:SetPoint("BOTTOMRIGHT", -76, 19)
   f.pageText:SetJustifyH("RIGHT")
+
+  -- A line pointing players to GoldScout Companion, until they hide it or their
+  -- data is in the community data (see UI:UpdateCompanionHint).
+  local hint = CreateFrame("Frame", nil, f)
+  hint:SetPoint("BOTTOMLEFT", 18, 37)
+  hint:SetPoint("RIGHT", f, "RIGHT", -18, 0)
+  hint:SetHeight(18)
+  hint.text = hint:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+  hint.text:SetPoint("LEFT", 4, 0)
+  hint.text:SetText("|cffffd100Drop rates come from players.|r Share yours automatically with GoldScout Companion:")
+  hint.link = CreateCopyBox(hint, COMPANION_URL)
+  hint.link:SetSize(130, 18)
+  hint.link:SetPoint("LEFT", hint.text, "RIGHT", 12, 0)
+  hint.hide = CreateFrame("Button", nil, hint, "UIPanelButtonTemplate")
+  hint.hide:SetSize(54, 18)
+  hint.hide:SetPoint("RIGHT", 0, 0)
+  hint.hide:SetText("Hide")
+  hint.hide:SetScript("OnClick", function()
+    ns.db.settings.companionHint = false
+    ns.Print("Companion tip hidden. /gscout set companionhint on brings it back.")
+    UI:UpdateCompanionHint()
+  end)
+  hint:SetScript("OnEnter", function(self)
+    ShowTip(self, "GoldScout Companion is a small Windows app that shares what GoldScout learns from "
+      .. "your loot, so everyone's drop rates get better. Copy the link and open it in your browser.")
+  end)
+  hint:SetScript("OnLeave", HideTip)
+  hint:EnableMouse(true)
+  hint:Hide()
+  f.companionHint = hint
 
   self:SetTab(self.tab)
   return f
@@ -837,7 +895,30 @@ function UI:Refresh()
   self.offset = math.min(self.offset, maxOffset)
   self:UpdateHeaderText()
   self:UpdateInfoText()
+  self:UpdateCompanionHint()
   self:Render()
+end
+
+-- Shown on the Farm tab until the player hides it, or until their own shared
+-- data is in the community data (then they already have the companion or use
+-- the share form). "/gscout set companionhint on" shows it regardless.
+function UI:CompanionHintWanted()
+  local db = ns.db
+  local setting = db and db.settings.companionHint
+  if self.tab ~= "farm" or not db or setting == false then
+    return false
+  end
+  if setting == "always" then
+    return true
+  end
+  return not (ns.COMMUNITY_SOURCES and db.installID and ns.COMMUNITY_SOURCES[db.installID])
+end
+
+function UI:UpdateCompanionHint()
+  local f = self.frame
+  if f and f.companionHint then
+    f.companionHint:SetShown(self:CompanionHintWanted())
+  end
 end
 
 function UI:QueueRefresh()
@@ -967,33 +1048,6 @@ end
 local exportFrame
 local SHARE_URL = "github.com/Alkhara/GoldScout-WoW/issues/new?template=data-submission.yml"
 
--- A one-line box holding text to copy. Typing can't change it, and clicking
--- selects all of it.
-local function CreateCopyBox(parent, text)
-  local box = CreateFrame("EditBox", nil, parent, "InputBoxTemplate")
-  box:SetAutoFocus(false)
-  box:SetFontObject(ChatFontNormal)
-  box:SetText(text)
-  box:SetCursorPosition(0)
-  box:SetScript("OnTextChanged", function(self, userInput)
-    if userInput then
-      self:SetText(text)
-      self:HighlightText()
-    end
-  end)
-  box:SetScript("OnMouseUp", function(self)
-    self:SetFocus()
-    self:HighlightText()
-  end)
-  box:SetScript("OnEditFocusGained", function(self)
-    self:HighlightText()
-  end)
-  box:SetScript("OnEscapePressed", function(self)
-    self:ClearFocus()
-  end)
-  return box
-end
-
 local function CreateExportFrame()
   local f = CreateFrame("Frame", "GoldScoutExportFrame", UIParent, "BackdropTemplate")
   f:SetSize(540, 380)
@@ -1084,6 +1138,7 @@ local SETTING_ALIASES = {
   mobtips = "unitTooltips",
   raredrops = "showRareDrops",
   cloth = "showCloth",
+  companionhint = "companionHint",
 }
 
 -- Lists the errors GoldScout recorded (see ns.RecordError in Core.lua).
@@ -1174,9 +1229,16 @@ end
 local function SetOption(rest)
   local key, value = rest:match("^(%S+)%s+(%S+)$")
   local setting = key and SETTING_ALIASES[key:lower()]
+  if setting == "companionHint" then
+    local on = value:lower() == "on" or value:lower() == "true" or value == "1"
+    ns.db.settings.companionHint = on and "always" or false
+    ns.Print(on and "The Farm tab shows the companion tip again." or "Companion tip hidden.")
+    UI:QueueRefresh()
+    return
+  end
   if not setting then
     ns.Print("Usage: /gscout set kills|nodes|picks <number>, or "
-      .. "/gscout set autoscan|tooltip|window|waypoint|markers|learn|mobtips|raredrops|cloth on|off")
+      .. "/gscout set autoscan|tooltip|window|waypoint|markers|learn|mobtips|raredrops|cloth|companionhint on|off")
     return
   end
   if type(ns.db.settings[setting]) == "boolean" then

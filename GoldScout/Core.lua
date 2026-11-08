@@ -28,6 +28,7 @@ local DEFAULT_SETTINGS = {
   huntMarkers = true,     -- hunts put an icon over matching mobs' nameplates
   learnDrops = true,      -- learn drop rates from what you loot
   unitTooltips = true,    -- add farm info to mob tooltips
+  companionHint = true,   -- Farm tab companion tip: true until shared, "always", or false once hidden
 }
 
 -- securecallfunction reports an error without stopping the other handlers.
