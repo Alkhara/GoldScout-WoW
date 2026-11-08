@@ -28,7 +28,7 @@ import submission  # noqa: E402
 import system  # noqa: E402
 import uploader  # noqa: E402
 
-VERSION = "0.6.0"  # tools/release.py checks this matches the tag
+VERSION = "0.6.1"  # tools/release.py checks this matches the tag
 FORM_URL = "https://github.com/Alkhara/GoldScout-WoW/issues/new?template=data-submission.yml"
 TERMS_URL = "https://github.com/Alkhara/GoldScout-WoW/blob/main/docs/CONTRIBUTOR_TERMS.md"
 PRIVACY_URL = "https://github.com/Alkhara/GoldScout-WoW/blob/main/docs/PRIVACY.md"
