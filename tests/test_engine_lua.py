@@ -254,6 +254,19 @@ class ErrorLogTests(FarmRulesTests.__bases__[0]):
         self.assertEqual(errors[1].n, 2)
         self.assertIn("attempt to index nil", errors[1].m)
 
+    def test_auction_house_scans_are_manual_after_the_settings_upgrade(self):
+        self.assertFalse(self.ns.db.settings.autoScan)                # new players
+        self.assertEqual(self.ns.db.settingsVersion, 2)
+        self.assertTrue(self.ns.db.settings.minimap)
+        saved = self.lua.eval("{ settings = { autoScan = true, killsPerHour = 90 } }")   # an existing player
+        self.lua.globals().GoldScoutDB = saved
+        self.fake.frame.scripts["OnEvent"](None, "ADDON_LOADED", "GoldScout")
+        self.assertFalse(saved.settings.autoScan)
+        self.assertEqual(saved.settings.killsPerHour, 90)              # other settings kept
+        saved.settings.autoScan = True                                 # turned back on by choice...
+        self.fake.frame.scripts["OnEvent"](None, "ADDON_LOADED", "GoldScout")
+        self.assertTrue(saved.settings.autoScan)                       # ...stays on
+
     def test_blocked_actions_are_recorded(self):
         self.fake.frame.scripts["OnEvent"](None, "ADDON_ACTION_BLOCKED", "GoldScout", "HideUIPanel()")
         self.fake.frame.scripts["OnEvent"](None, "ADDON_ACTION_BLOCKED", "OtherAddon", "Foo()")

@@ -8,8 +8,8 @@ based on your level, class, faction and professions.
 
 ## What it does
 
-- **Scans the auction house** automatically when you open it (at most every 10
-  minutes), or when you press **Scan AH**. It reads the lowest price per unit and
+- **Scans the auction house** when you press **Scan AH** (never on its own, so
+  you can open the auction house to buy something without waiting). It reads the lowest price per unit and
   the quantity listed for every item, in a few seconds, using the same summary
   scan Auctionator uses on the Forever client.
 - **Farm tab** ranks farms you can do by estimated gold per hour, including lower-level ones that still pay well:
@@ -87,7 +87,7 @@ stays in your own SavedVariables.
 
 1. Open each of your profession windows once (including Cooking and First Aid),
    so GoldScout learns your recipes.
-2. Visit an auctioneer. GoldScout opens beside the auction house and scans.
+2. Visit an auctioneer. GoldScout opens beside the auction house; press **Scan AH**.
 3. Visit vendors that sell crafting supplies (thread, vials, spices, flux) so
    GoldScout learns their exact prices.
 4. Type `/gscout` any time to open the window.
@@ -108,12 +108,13 @@ stays in your own SavedVariables.
 | `/gscout set kills 80` | Your kills per hour on same-level mobs (default 70) |
 | `/gscout set nodes 25` | Herb or ore nodes per hour (default 25) |
 | `/gscout set picks 110` | Pickpockets per hour (default 110) |
-| `/gscout set autoscan off` | Stop scanning automatically |
+| `/gscout set autoscan on` | Scan automatically when you open the auction house (at most every 10 minutes) |
 | `/gscout set window off` | Stop opening beside the auction house |
 | `/gscout set tooltip off` | Remove prices from item tooltips |
 | `/gscout set waypoint off` | Hunts stop placing the map waypoint |
 | `/gscout set markers off` | Hunts stop putting icons on nameplates |
 | `/gscout set mobtips off` | Remove GoldScout lines from mob tooltips |
+| `/gscout set minimap off` | Hide the minimap button (click it for the Farm tab, right-click for Craft, drag to move) |
 | `/gscout set companionhint on` | Bring back the Farm tab line about GoldScout Companion (its Hide button turns it off) |
 | `/gscout set learn off` | Stop learning drop rates from your loot |
 | `/gscout set raredrops on` | Show BoE gear, recipes and gems (same as the **Rare drops** checkbox) |

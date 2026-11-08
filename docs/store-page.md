@@ -19,7 +19,7 @@ fields. The description is written in Markdown.
 **What should *this* character be doing for gold right now?** GoldScout answers that for whichever character you're logged in on: its level, class, faction and professions, priced against your own auction house.
 
 ### Live prices, no setup
-Open the auction house and GoldScout scans every item's lowest price and quantity in a few seconds. Prices are kept per realm and faction and show on item tooltips.
+Press **Scan AH** at the auction house and GoldScout reads every item's lowest price and quantity in a few seconds. It never scans on its own, so buying something stays quick. Prices are kept per realm and faction and show on item tooltips.
 
 ### Farm tab
 Farms ranked by estimated gold per hour for your character:

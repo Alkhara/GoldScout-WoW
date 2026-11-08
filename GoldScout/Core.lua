@@ -9,7 +9,7 @@ ns.GetItemInfo = (C_Item and C_Item.GetItemInfo) or GetItemInfo
 ns.GetItemInfoInstant = (C_Item and C_Item.GetItemInfoInstant) or GetItemInfoInstant
 
 local DEFAULT_SETTINGS = {
-  autoScan = true,        -- scan automatically when the auction house opens
+  autoScan = false,       -- scan automatically when the auction house opens (off: press Scan AH)
   autoScanMinutes = 10,   -- minimum minutes between automatic scans
   openWithAH = true,      -- show the GoldScout window next to the auction house
   tooltip = true,         -- add GoldScout prices to item tooltips
@@ -28,6 +28,8 @@ local DEFAULT_SETTINGS = {
   huntMarkers = true,     -- hunts put an icon over matching mobs' nameplates
   learnDrops = true,      -- learn drop rates from what you loot
   unitTooltips = true,    -- add farm info to mob tooltips
+  minimap = true,         -- show the minimap button
+  minimapAngle = 200,     -- where the minimap button sits around the minimap, in degrees
   companionHint = true,   -- Farm tab companion tip: true until shared, "always", or false once hidden
 }
 
@@ -367,6 +369,12 @@ ns.On("ADDON_LOADED", function(name)
     if db.settings[key] == nil then
       db.settings[key] = value
     end
+  end
+  -- One-time changes to saved settings when a default changes for everyone.
+  db.settingsVersion = db.settingsVersion or 1
+  if db.settingsVersion < 2 then
+    db.settings.autoScan = false -- scans became manual: opening the AH to buy something shouldn't start one
+    db.settingsVersion = 2
   end
 
   cdb.recipes = cdb.recipes or {}

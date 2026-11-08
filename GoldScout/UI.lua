@@ -707,12 +707,12 @@ function UI:UpdateHeaderText()
     local pages, items = ns.Scanner:Progress()
     status = ("Scanning the auction house: page %d, %d items so far."):format(pages or 0, items or 0)
   elseif count == 0 then
-    status = "No prices yet. Visit an auctioneer; GoldScout scans automatically."
+    status = "No prices yet. Open the auction house and press Scan AH."
   else
     status = ("%d prices for %s, last full scan %s."):format(count, ns.MarketKey(),
       lastScan and ns.Age(time() - lastScan) or "never")
     if not ns.Scanner.ahOpen then
-      status = status .. " Visit an auctioneer to refresh."
+      status = status .. " Press Scan AH at an auctioneer to refresh."
     end
   end
   f.statusText:SetText(status)
@@ -1139,6 +1139,7 @@ local SETTING_ALIASES = {
   raredrops = "showRareDrops",
   cloth = "showCloth",
   companionhint = "companionHint",
+  minimap = "minimap",
 }
 
 -- Lists the errors GoldScout recorded (see ns.RecordError in Core.lua).
@@ -1173,7 +1174,7 @@ local function PrintHelp()
   print("  /gscout errors - list GoldScout's recent errors; /gscout errors clear")
   print("  /gscout skills - show the skills and recipes GoldScout knows")
   print("  /gscout set kills|nodes|picks <number> - your rates per hour")
-  print("  /gscout set autoscan|tooltip|window|waypoint|markers|learn|mobtips|raredrops|cloth on|off")
+  print("  /gscout set autoscan|tooltip|window|waypoint|markers|learn|mobtips|raredrops|cloth|minimap on|off")
   print("  /gscout reset prices | drops - forget saved prices or learned drop rates")
 end
 
@@ -1238,7 +1239,7 @@ local function SetOption(rest)
   end
   if not setting then
     ns.Print("Usage: /gscout set kills|nodes|picks <number>, or "
-      .. "/gscout set autoscan|tooltip|window|waypoint|markers|learn|mobtips|raredrops|cloth|companionhint on|off")
+      .. "/gscout set autoscan|tooltip|window|waypoint|markers|learn|mobtips|raredrops|cloth|minimap|companionhint on|off")
     return
   end
   if type(ns.db.settings[setting]) == "boolean" then
@@ -1253,6 +1254,9 @@ local function SetOption(rest)
     ns.db.settings[setting] = number
   end
   ns.Print(("%s is now %s."):format(key:lower(), tostring(ns.db.settings[setting])))
+  if setting == "minimap" then
+    UI:UpdateMinimapButton()
+  end
   UI:QueueRefresh()
 end
 
@@ -1300,3 +1304,92 @@ end
 function GoldScout_OnCompartmentClick()
   UI:Toggle()
 end
+
+---------------------------------------------------------------------------
+-- Minimap button: click opens the Farm tab (right-click the Craft tab), drag
+-- moves it around the minimap. /gscout set minimap off hides it.
+---------------------------------------------------------------------------
+local minimapButton
+
+-- Opens the window on a tab, or closes it when that tab is already showing.
+function UI:ToggleTab(tab)
+  if self.frame and self.frame:IsShown() and self.tab == tab then
+    self.frame:Hide()
+  else
+    self:Show(tab)
+  end
+end
+
+local function PlaceMinimapButton()
+  local angle = math.rad(ns.db.settings.minimapAngle or 200)
+  local radius = Minimap:GetWidth() / 2 + 10
+  minimapButton:ClearAllPoints()
+  minimapButton:SetPoint("CENTER", Minimap, "CENTER", math.cos(angle) * radius, math.sin(angle) * radius)
+end
+
+local function DragMinimapButton()
+  local mx, my = Minimap:GetCenter()
+  local cx, cy = GetCursorPosition()
+  local scale = Minimap:GetEffectiveScale()
+  ns.db.settings.minimapAngle = math.deg(math.atan2(cy / scale - my, cx / scale - mx)) % 360
+  PlaceMinimapButton()
+end
+
+function UI:CreateMinimapButton()
+  if minimapButton or not Minimap then
+    return minimapButton
+  end
+  local b = CreateFrame("Button", "GoldScoutMinimapButton", Minimap)
+  minimapButton = b
+  b:SetSize(31, 31)
+  b:SetFrameStrata("MEDIUM")
+  b:SetFrameLevel(8)
+  b:RegisterForClicks("LeftButtonUp", "RightButtonUp")
+  b:RegisterForDrag("LeftButton")
+  b:SetHighlightTexture("Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight")
+  local background = b:CreateTexture(nil, "BACKGROUND")
+  background:SetTexture("Interface\\Minimap\\UI-Minimap-Background")
+  background:SetSize(20, 20)
+  background:SetPoint("TOPLEFT", 7, -5)
+  local icon = b:CreateTexture(nil, "ARTWORK")
+  icon:SetTexture("Interface\\Icons\\INV_Misc_Coin_02")
+  icon:SetTexCoord(0.05, 0.95, 0.05, 0.95)
+  icon:SetSize(17, 17)
+  icon:SetPoint("TOPLEFT", 7, -6)
+  local border = b:CreateTexture(nil, "OVERLAY")
+  border:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder")
+  border:SetSize(53, 53)
+  border:SetPoint("TOPLEFT")
+
+  b:SetScript("OnClick", function(_, button)
+    UI:ToggleTab(button == "RightButton" and "craft" or "farm")
+  end)
+  b:SetScript("OnDragStart", function(self)
+    self:SetScript("OnUpdate", DragMinimapButton)
+  end)
+  b:SetScript("OnDragStop", function(self)
+    self:SetScript("OnUpdate", nil)
+  end)
+  b:SetScript("OnEnter", function(self)
+    GameTooltip:SetOwner(self, "ANCHOR_LEFT")
+    GameTooltip:AddLine("GoldScout")
+    GameTooltip:AddLine("Click: what to farm", 1, 1, 1)
+    GameTooltip:AddLine("Right-click: what to craft", 1, 1, 1)
+    GameTooltip:AddLine("Drag: move this button", 0.6, 0.6, 0.6)
+    GameTooltip:Show()
+  end)
+  b:SetScript("OnLeave", HideTip)
+  PlaceMinimapButton()
+  return b
+end
+
+function UI:UpdateMinimapButton()
+  local b = self:CreateMinimapButton()
+  if b then
+    b:SetShown(ns.db.settings.minimap ~= false)
+  end
+end
+
+ns.Listen("DB_READY", function()
+  UI:UpdateMinimapButton()
+end)

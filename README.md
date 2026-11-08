@@ -35,7 +35,7 @@ manual install, unzip the `GoldScout` folder into
 ## Getting started
 
 1. Open each of your profession windows once, so GoldScout learns your recipes.
-2. Visit an auctioneer. GoldScout opens beside the auction house and scans it.
+2. Visit an auctioneer. GoldScout opens beside the auction house; press **Scan AH**.
 3. Check the **Farm** and **Craft** tabs, pick something, and press **Hunt**.
 
 Type `/gscout` to open the window any time. The full guide, with every command
