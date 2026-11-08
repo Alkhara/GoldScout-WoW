@@ -234,12 +234,13 @@ local function TradeGoodFacts(itemID)
     tradeGoodFacts[itemID] = false
     return false
   end
-  local _, _, _, itemLevel, _, _, _, _, _, _, _, _, _, bindType = ns.GetItemInfo(itemID)
+  local _, _, quality, itemLevel, _, _, _, _, _, _, _, _, _, bindType = ns.GetItemInfo(itemID)
   if not itemLevel then
     ns.RequestItem(itemID) -- the list refreshes once the item loads
     return nil
   end
-  if bindType == 1 or bindType == 4 then
+  -- Bound, quest and gray (vendor trash) items aren't worth farming for the AH.
+  if bindType == 1 or bindType == 4 or quality == ns.QUALITY_POOR then
     facts = false
   else
     facts = { level = itemLevel, crafted = CRAFTED_SUBCLASSES[subclassID] or ns.CRAFTED_TRADE_GOODS[itemID] }
@@ -529,7 +530,7 @@ function Engine:Farms()
         for itemID in pairs(items) do
           local drops, attempts, perDrop = ns.Learn:Evidence(npcID, itemID, false)
           local bindType = ns.ItemBindType(itemID)
-          if drops >= 1 and bindType ~= 1 and bindType ~= 4 then
+          if drops >= 1 and bindType ~= 1 and bindType ~= 4 and not ns.IsPoorQuality(itemID) then
             local net, listed, age = NetPrice(itemID)
             if net then
               local rate = drops / attempts

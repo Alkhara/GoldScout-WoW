@@ -17,7 +17,7 @@ based on your level, class, faction and professions.
   - cloth from humanoids near your level
   - herbs, ore and leather you can gather with your Herbalism, Mining or Skinning skill
   - **Market** rows: trade goods selling on your auction house near your level
-    that no farm covers yet, ranked by price per item. Crafted and vendor-sold
+    that no farm covers yet, ranked by price per item. Gray (vendor trash), crafted and vendor-sold
     items are left out unless players have looted them from a mob. Their drop rate is learned
     as you loot them. Tick **Known rates** to hide them.
 - **Craft tab** ranks every recipe you know by profit per craft: auction house

@@ -217,7 +217,8 @@ local function ItemValue(itemID)
   end
   local sell = ns.ItemSellPrice(itemID) or 0
   local price = ns.Prices:Get(itemID)
-  if price then
+  -- Gray items are worth their vendor price, whatever someone lists them for.
+  if price and not ns.IsPoorQuality(itemID) then
     return math.max(price * ns.AH_CUT, sell)
   end
   return sell
@@ -562,7 +563,7 @@ function Hunt:UnitLines(npcID)
     local bestItem, bestValue, bestRate
     for itemID, stat in pairs(learned.i or {}) do
       local price = ns.Prices:Get(itemID)
-      if price then
+      if price and not ns.IsPoorQuality(itemID) then
         local value = price * stat.q / learned.k
         if not bestValue or value > bestValue then
           bestItem, bestValue, bestRate = itemID, value, stat.d / learned.k

@@ -230,6 +230,27 @@ function ns.ItemColor(itemID)
   return (color and color.hex) or "|cffffffff"
 end
 
+-- Item quality (0 = poor/gray, 1 = common/white, ...), or nil until the item
+-- has loaded.
+ns.QUALITY_POOR = (Enum and Enum.ItemQuality and Enum.ItemQuality.Poor) or 0
+
+function ns.ItemQuality(itemID)
+  local quality = select(3, ns.GetItemInfo(itemID))
+  if quality == nil and C_Item and C_Item.GetItemQualityByID then
+    quality = C_Item.GetItemQualityByID(itemID)
+  end
+  if quality == nil then
+    ns.RequestItem(itemID)
+  end
+  return quality
+end
+
+-- Gray items are vendor trash: nothing uses them, so an auction house price
+-- for one says nothing about its value.
+function ns.IsPoorQuality(itemID)
+  return ns.ItemQuality(itemID) == ns.QUALITY_POOR
+end
+
 function ns.ItemSellPrice(itemID)
   local sellPrice = select(11, ns.GetItemInfo(itemID))
   return sellPrice
