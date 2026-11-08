@@ -240,13 +240,31 @@ local function FarmTooltip(row)
   end
 end
 
+-- True while a row's tooltip loads the game's own item tooltip, so the item
+-- tooltip hook doesn't add price lines the row tooltip already shows.
+local inRowTooltip = false
+
 local function RowOnEnter(self)
   local row = self.data
   if not row then
     return
   end
   GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
-  GameTooltip:AddLine(ItemText(row))
+  -- The game's own item tooltip first (quality, "Crafting Reagent", vendor
+  -- price...), then GoldScout's details.
+  local shownItem = false
+  if row.item and GameTooltip.SetItemByID then
+    inRowTooltip = true
+    local ok = pcall(GameTooltip.SetItemByID, GameTooltip, row.item)
+    inRowTooltip = false
+    shownItem = ok and GameTooltip:NumLines() > 0
+  end
+  if shownItem then
+    GameTooltip:AddLine(" ")
+    GameTooltip:AddLine("GoldScout", 1, 0.82, 0)
+  else
+    GameTooltip:AddLine(ItemText(row))
+  end
   if row.kind == "craft" then
     CraftTooltip(row)
   else
@@ -886,7 +904,7 @@ end)
 -- Item tooltips
 ---------------------------------------------------------------------------
 local function AddTooltipPrices(tooltip, itemID)
-  if not ns.db or not ns.db.settings.tooltip or not itemID then
+  if not ns.db or not ns.db.settings.tooltip or not itemID or inRowTooltip then
     return
   end
   local price, listed, age = ns.Prices:Get(itemID)
