@@ -16,6 +16,17 @@ local ITEM_SLOT = (Enum.LootSlotType and Enum.LootSlotType.Item) or 1
 local counted = {}
 local window -- the loot window that is open right now
 
+-- Kills counted when the mob died, before (or without) its loot window. If you
+-- do loot the corpse, its drops still count but the kill isn't counted twice.
+local pendingDrops = {}
+local judgedDeaths = {}
+
+-- When you last cast Skinning: a corpse's loot window that opens right after
+-- is the skin, not the mob's drops.
+local SKINNING_SPELL = 8613
+local SKIN_SECONDS = 3
+local lastSkinCast = -math.huge
+
 -- "Creature-0-server-instance-zone-npcID-spawn" -> "Creature", npcID
 function ns.ParseGUID(guid)
   guid = ns.Plain(guid)
@@ -348,13 +359,32 @@ end
 ---------------------------------------------------------------------------
 -- Reading the loot window
 ---------------------------------------------------------------------------
-local function SourceRole(kind, guid, targetGUID, targetAlive, fishing)
+-- Leather, hides and scraps: what skinning gives. A creature loot window with
+-- nothing else in it is a skin, even if the Skinning cast went unseen.
+local skinProducts
+local function IsSkinProduct(itemID)
+  if not skinProducts then
+    skinProducts = { [2934] = true } -- Ruined Leather Scraps
+    for _, band in ipairs(ns.SKINNING or {}) do
+      skinProducts[band.leather] = true
+      if band.hide then
+        skinProducts[band.hide] = true
+      end
+    end
+  end
+  return skinProducts[itemID] == true
+end
+
+local function SourceRole(kind, guid, targetGUID, targetAlive, fishing, skinning)
   if fishing then
     return "fish"
   elseif kind == "Creature" or kind == "Vehicle" then
     -- Looting a living target means you just picked its pocket.
     if targetAlive and guid == targetGUID then
       return "pick"
+    end
+    if skinning then
+      return "skin"
     end
     return "kill"
   elseif kind == "GameObject" then
@@ -368,9 +398,21 @@ local function ReadWindow()
   -- If the game hides whether the target is dead, assume it's a corpse.
   local targetAlive = targetGUID ~= nil and ns.Plain(UnitIsDead("target")) == false
   local fishing = (IsFishingLoot and IsFishingLoot()) or false
+  local skinning = GetTime() - lastSkinCast <= SKIN_SECONDS
   local result = { slots = {}, sources = {} }
 
-  for slot = 1, GetNumLootItems() or 0 do
+  -- A window holding only leather, hides or scraps is a skin as well.
+  local count, allSkin = GetNumLootItems() or 0, true
+  for slot = 1, count do
+    local link = GetLootSlotType(slot) == ITEM_SLOT and GetLootSlotLink(slot)
+    local itemID = link and tonumber(link:match("item:(%d+)"))
+    if not itemID or not IsSkinProduct(itemID) then
+      allSkin = false
+    end
+  end
+  skinning = skinning or (count > 0 and allSkin)
+
+  for slot = 1, count do
     local slotInfo = { sources = {} }
     if GetLootSlotType(slot) == ITEM_SLOT then
       local link = GetLootSlotLink(slot)
@@ -388,9 +430,12 @@ local function ReadWindow()
         slotInfo.sources[#slotInfo.sources + 1] = { guid = guid, quantity = (type(quantity) == "number") and quantity or nil }
         if not result.sources[guid] then
           local kind, id = ns.ParseGUID(guid)
-          local role = SourceRole(kind, guid, targetGUID, targetAlive, fishing)
+          local role = SourceRole(kind, guid, targetGUID, targetAlive, fishing, skinning)
           local key = guid .. ":" .. role
-          result.sources[guid] = { id = id, role = role, key = key, new = not counted[key], isTarget = (guid == targetGUID) }
+          result.sources[guid] = {
+            id = id, role = role, key = key, new = not counted[key], isTarget = (guid == targetGUID),
+            pending = role == "kill" and pendingDrops[guid] == true,
+          }
         end
       end
     end
@@ -405,9 +450,14 @@ local function OnLootReady()
   end
   window = ReadWindow()
   local learn = ns.db.settings.learnDrops
-  for _, source in pairs(window.sources) do
-    if source.new then
+  for guid, source in pairs(window.sources) do
+    if source.pending then
+      -- Counted when it died; its drops still count now.
+      pendingDrops[guid] = nil
+      source.records = true
+    elseif source.new then
       counted[source.key] = true
+      source.records = true
       local isMob = source.role == "kill" or source.role == "pick"
       if isMob and source.id and learn then
         local entry = Entry(source.id, true)
@@ -438,7 +488,7 @@ local function OnSlotCleared(slot)
   ns.Fire("LOOT_GAINED", slotInfo.item, slotInfo.quantity)
   for _, slotSource in ipairs(slotInfo.sources) do
     local source = window.sources[slotSource.guid]
-    if source and source.new and source.id and (source.role == "kill" or source.role == "pick") then
+    if source and source.records and source.id and (source.role == "kill" or source.role == "pick") then
       local quantity = slotSource.quantity or slotInfo.quantity
       if ns.db.settings.learnDrops then
         RecordDrop(source.id, source.role, slotInfo.item, quantity)
@@ -456,5 +506,95 @@ ns.On("LOOT_CLOSED", function()
   window = nil
   ns.Debounce("lootLearned", 2, function()
     ns.Fire("LOOT_LEARNED")
+  end)
+end)
+
+---------------------------------------------------------------------------
+-- Skinning casts
+---------------------------------------------------------------------------
+local skinningName
+local function SkinningName()
+  if skinningName == nil then
+    local name = C_Spell and C_Spell.GetSpellName and C_Spell.GetSpellName(SKINNING_SPELL)
+    if name == nil and GetSpellInfo then
+      name = GetSpellInfo(SKINNING_SPELL)
+    end
+    skinningName = ns.Plain(name) or false
+  end
+  return skinningName
+end
+
+ns.On("UNIT_SPELLCAST_SUCCEEDED", function(unit, _, spellID)
+  if unit ~= "player" then
+    return
+  end
+  spellID = ns.Plain(spellID)
+  if type(spellID) ~= "number" then
+    return
+  end
+  local name = C_Spell and C_Spell.GetSpellName and ns.Plain(C_Spell.GetSpellName(spellID))
+  if spellID == SKINNING_SPELL or (name and name == SkinningName()) then
+    lastSkinCast = GetTime()
+  end
+end)
+
+---------------------------------------------------------------------------
+-- Kills whose corpse has no loot
+---------------------------------------------------------------------------
+-- A corpse with nothing on it never opens a loot window, so without this the
+-- kill would never be counted and every drop rate would look too high. When a
+-- mob you tagged dies while you're solo, GoldScout checks its corpse a moment
+-- later; with no loot on it, the kill counts right away. (In a group, others
+-- loot your kills, so only opened corpses count.)
+local function JudgeDeath(guid, npcID, name, level)
+  if counted[guid .. ":kill"] then
+    return -- already looted
+  end
+  local hasLoot
+  if CanLootUnit then
+    local ok, result = pcall(CanLootUnit, guid)
+    hasLoot = ok and ns.Plain(result) or nil
+  end
+  if hasLoot == true then
+    return -- the loot window will count it when you open the corpse
+  end
+  counted[guid .. ":kill"] = true
+  pendingDrops[guid] = true -- if you do loot it after all, its drops still count
+  local entry = Entry(npcID, true)
+  entry.k = entry.k + 1
+  NotePosition(entry)
+  Learn:NoteUnit(npcID, name, level)
+  ns.Fire("LOOT_ACTION", "kill", npcID)
+  ns.Debounce("lootLearned", 2, function()
+    ns.Fire("LOOT_LEARNED")
+  end)
+end
+
+ns.On("UNIT_HEALTH", function(unit)
+  if not ns.db or not ns.db.settings.learnDrops or type(unit) ~= "string" then
+    return
+  end
+  if unit ~= "target" and unit ~= "focus" and unit ~= "mouseover" and not unit:find("^nameplate") then
+    return
+  end
+  if ns.Plain(UnitIsDead(unit)) ~= true then
+    return
+  end
+  local guid = ns.Plain(UnitGUID(unit))
+  if type(guid) ~= "string" or judgedDeaths[guid] then
+    return
+  end
+  judgedDeaths[guid] = true
+  local kind, npcID = ns.ParseGUID(guid)
+  if kind ~= "Creature" or not npcID or (IsInGroup and IsInGroup()) then
+    return
+  end
+  -- Only mobs you tagged: their loot is yours.
+  if not UnitIsTapDenied or ns.Plain(UnitIsTapDenied(unit)) ~= false then
+    return
+  end
+  local name, level = UnitName(unit), UnitLevel(unit)
+  C_Timer.After(1.5, function()
+    JudgeDeath(guid, npcID, name, level)
   end)
 end)

@@ -201,3 +201,119 @@ class SnapshotLuaTests(unittest.TestCase):
         self.assertIn(1, kept)                    # what the community data includes
         self.assertEqual(len(kept), 1 + 10)       # plus the ten newest
         self.assertEqual(max(kept), self.ns.db.exports.seq)
+
+
+# A fake game: loot window, units and timers, driven from the tests.
+GAME_STUBS = """
+Enum = { LootSlotType = { Item = 1 } }
+local ns = ...
+ns.Plain = function(v) return v end
+ns.events, ns.handlers, ns.fired = {}, {}, {}
+ns.On = function(name, fn) ns.events[name] = fn end
+ns.Listen = function(name, fn) ns.handlers[name] = fn end
+ns.Fire = function(name, ...) ns.fired[#ns.fired + 1] = name end
+ns.Debounce = function() end
+ns.SKINNING = { { leather = 2318, hide = 783 } }
+GAME = { now = 100, loot = {}, units = {}, inGroup = false }
+strsplit = function(sep, text)
+  local parts = {}
+  for part in (text .. sep):gmatch("(.-)%" .. sep) do parts[#parts + 1] = part end
+  return unpack(parts)
+end
+GetTime = function() return GAME.now end
+C_Timer = { After = function(_, fn) fn() end }
+IsInGroup = function() return GAME.inGroup end
+IsFishingLoot = function() return false end
+GetNumLootItems = function() return #GAME.loot end
+GetLootSlotType = function() return 1 end
+GetLootSlotLink = function(slot) return "|cffffffff|Hitem:" .. GAME.loot[slot].item .. "::|h[Thing]|h|r" end
+GetLootSlotInfo = function(slot) return nil, nil, 1 end
+GetLootSourceInfo = function(slot) return GAME.loot[slot].guid, 1 end
+UnitGUID = function(unit) return GAME.units[unit] and GAME.units[unit].guid end
+UnitIsDead = function(unit) return GAME.units[unit] and GAME.units[unit].dead end
+UnitIsTapDenied = function(unit) return GAME.units[unit] and GAME.units[unit].tapDenied or false end
+UnitName = function() return "Ashenvale Bear" end
+UnitLevel = function() return 22 end
+"""
+
+BEAR = "Creature-0-1-2-3-3809-0000000001"
+BEAR2 = "Creature-0-1-2-3-3809-0000000002"
+
+
+@unittest.skipIf(lua51 is None, "lupa is not installed")
+class LootCountingLuaTests(unittest.TestCase):
+    def setUp(self):
+        self.lua = lua51.LuaRuntime(unpack_returned_tuples=True)
+        self.ns = self.lua.table()
+        self.lua.execute("return loadstring(...)", GAME_STUBS)(self.ns)
+        for name in ("Community.lua", "Learn.lua"):
+            source = (ROOT / "GoldScout" / name).read_text(encoding="utf-8")
+            self.lua.execute("return loadstring(...)", source)("GoldScout", self.ns)
+        self.ns.COMMUNITY = self.lua.table()
+        self.ns.db = self.lua.eval("{ settings = { learnDrops = true }, drops = {} }")
+        self.ns.handlers["DB_READY"]()
+        self.game = self.lua.globals().GAME
+
+    def loot(self, guid, *items):
+        self.game.loot = self.lua.table_from([self.lua.table_from({"item": i, "guid": guid}) for i in items])
+        self.ns.events["LOOT_READY"]()
+        for slot in range(1, len(items) + 1):
+            self.ns.events["LOOT_SLOT_CLEARED"](slot)
+        self.ns.events["LOOT_CLOSED"]()
+
+    def dies(self, guid, unit="target", tapDenied=False):
+        self.game.units[unit] = self.lua.table_from({"guid": guid, "dead": True, "tapDenied": tapDenied})
+        self.ns.events["UNIT_HEALTH"](unit)
+
+    def bear(self):
+        entry = self.ns.db.drops[3809]
+        if entry is None:
+            return None, {}
+        return entry.k, {item: stat.d for item, stat in entry.i.items()}
+
+    def test_normal_loot_counts_kill_and_drops(self):
+        self.loot(BEAR, 3730)
+        self.assertEqual(self.bear(), (1, {3730: 1}))
+
+    def test_skinning_after_cast_is_not_a_kill(self):
+        self.loot(BEAR, 3730)
+        self.ns.events["UNIT_SPELLCAST_SUCCEEDED"]("player", None, 8613)
+        self.loot(BEAR2, 2318, 2934)   # skinned someone else's corpse, or after a /reload
+        self.assertEqual(self.bear(), (1, {3730: 1}))
+
+    def test_leather_only_window_is_a_skin_without_seeing_the_cast(self):
+        self.game.now = 500
+        self.loot(BEAR, 783)
+        self.assertEqual(self.bear(), (None, {}))
+
+    def test_corpse_without_loot_counts_the_kill(self):
+        self.lua.globals().CanLootUnit = lambda guid: False
+        self.dies(BEAR)
+        self.assertEqual(self.bear(), (1, {}))
+
+    def test_lootable_corpse_counts_when_looted_not_at_death(self):
+        self.lua.globals().CanLootUnit = lambda guid: True
+        self.dies(BEAR)
+        self.assertEqual(self.bear(), (None, {}))
+        self.loot(BEAR, 3730)
+        self.assertEqual(self.bear(), (1, {3730: 1}))
+
+    def test_counted_at_death_then_looted_counts_once_with_drops(self):
+        # Without CanLootUnit every solo kill counts at death.
+        self.dies(BEAR)
+        self.loot(BEAR, 3730, 3702)
+        self.assertEqual(self.bear(), (1, {3730: 1, 3702: 1}))
+        self.loot(BEAR, 3730)          # reopening doesn't count again
+        self.assertEqual(self.bear(), (1, {3730: 1, 3702: 1}))
+
+    def test_group_and_other_players_kills_are_not_counted_at_death(self):
+        self.game.inGroup = True
+        self.dies(BEAR)
+        self.game.inGroup = False
+        self.dies(BEAR2, tapDenied=True)
+        self.assertEqual(self.bear(), (None, {}))
+
+    def test_a_death_is_judged_once(self):
+        self.dies(BEAR)
+        self.dies(BEAR, unit="nameplate3")
+        self.assertEqual(self.bear(), (1, {}))

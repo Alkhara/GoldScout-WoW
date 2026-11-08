@@ -38,7 +38,9 @@ based on your level, class, faction and professions.
   has 15 kills, gold per hour uses a cautious rate so one lucky drop doesn't top
   the list. BoE gear, recipes and gems are rare world drops from many mobs, so
   they're hidden unless you tick **Rare drops**. Items with a "Use:" effect
-  (crates, food, scrolls) are never treated as reagents.
+  (crates, food, scrolls) are never treated as reagents. Skinning a corpse never
+  counts as a kill, and when you're solo, a mob you killed whose corpse has no
+  loot still counts as a kill, so drop rates aren't inflated.
 
 ## Hunt mode
 
