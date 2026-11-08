@@ -116,6 +116,54 @@ class ValidatorTests(unittest.TestCase):
                 self.assertEqual(errors(GOOD.replace("Spined Crawler", name)), [])
 
 
+V3 = (GOOD.replace("export 2^", "export 3^")
+      + "@i^3010^Crawler Meat\n@i^4874^Pattern: Hillman's Cloak, Belt\n@m^1440^Ashenvale\n@c^2996^\n@c^4231^\n")
+
+
+class VersionThreeTests(unittest.TestCase):
+    def test_names_and_crafted_round_trip(self):
+        result = submission.parse(V3)
+        self.assertEqual(result.errors, [])
+        self.assertEqual(result.version, 3)
+        self.assertEqual(result.item_names[3010], "Crawler Meat")
+        self.assertEqual(result.item_names[4874], "Pattern: Hillman's Cloak, Belt")
+        self.assertEqual(result.map_names, {1440: "Ashenvale"})
+        self.assertEqual(result.crafted, {2996, 4231})
+        self.assertEqual(len(result.mobs), 2)
+        self.assertEqual(submission.parse(result.text()).text(), result.text())
+
+    def test_version_two_still_accepted_and_kept(self):
+        result = submission.parse(GOOD)
+        self.assertEqual((result.errors, result.version), ([], 2))
+        self.assertTrue(result.text().startswith("GoldScout-export 2^"))
+
+    def test_rejects_bad_extra_lines(self):
+        cases = {
+            "names in a v2 export": GOOD + "@i^3010^Crawler Meat\n",
+            "unknown kind": V3 + "@x^1^thing\n",
+            "pipe in name": V3.replace("Crawler Meat", "|cffff0000Meat"),
+            "quote in name": V3.replace("Crawler Meat", 'Crawler "Meat"'),
+            "empty name": V3.replace("Crawler Meat", ""),
+            "too long": V3.replace("Crawler Meat", "x" * 70),
+            "crafted with a name": V3.replace("@c^2996^", "@c^2996^Bolt"),
+            "bad id": V3.replace("@m^1440^", "@m^-4^"),
+            "extra field": V3.replace("@m^1440^Ashenvale", "@m^1440^Ash^envale"),
+        }
+        for name, text in cases.items():
+            with self.subTest(name):
+                self.assertTrue(errors(text))
+
+    def test_merge_writes_community_crafted(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            target = Path(tmp) / "Data_Community.lua"
+            results = [submission.parse(V3)]
+            merge_data.write_lua(merge_data.merge([r.mobs for r in results], 1000), 5, target, 1,
+                                 merge_data.sources_of(results), 1000, results[0].crafted)
+            text = target.read_text(encoding="utf-8")
+            self.assertIn("ns.COMMUNITY_CRAFTED = {", text)
+            self.assertIn("[2996] = true, [4231] = true,", text)
+
+
 class OutlierTests(unittest.TestCase):
     OTHERS = submission.parse(
         "GoldScout-export 2^abcdefghijkl^3\n"

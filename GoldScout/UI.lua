@@ -42,7 +42,9 @@ local TAB_OPTIONS = {
         .. "every mob gives XP, yellow when some do, and gray when none do." },
     { setting = "knownRatesOnly", label = "Known rates",
       tip = "Only show farms with a drop rate. Unchecked, trade goods selling on your auction house are "
-        .. "listed by price too, even before anyone has learned where they drop." },
+        .. "listed by price too, even before anyone has learned where they drop.\n\nThe Chance column's "
+        .. "color shows how many kills back a drop rate up: |cffff8040orange|r under 5, |cffffd100yellow|r "
+        .. "5-14, |cff9be35alight green|r 15-49, |cff40ff40green|r 50 or more." },
   },
   craft = {
     { setting = "showTrivial", label = "Gray recipes", tip = "Include recipes that no longer give skill-ups." },
@@ -101,11 +103,17 @@ local function CellText(key, row)
   elseif key == "source" then
     return row.source or ""
   elseif key == "lvl" then
+    if row.above then
+      return Gray(row.itemLevel and ("i" .. row.itemLevel) or (row.lvl or ""))
+    end
     local color = XP_COLOR[row.xp]
     return color and (color .. (row.lvl or "") .. "|r") or (row.lvl or "")
   elseif key == "chance" then
     if row.chanceText then
       return Gray(row.chanceText)
+    end
+    if row.chance and row.confidence then
+      return row.confidence.color .. Percent(row.chance) .. "|r"
     end
     return row.chance and Percent(row.chance) or ""
   elseif key == "each" then
@@ -193,6 +201,10 @@ local function FarmTooltip(row)
   end
   if row.chance then
     GameTooltip:AddDoubleLine("Chance per " .. (row.per or "try"), Percent(row.chance), 0.8, 0.8, 0.8, 1, 1, 1)
+  end
+  if row.confidence then
+    GameTooltip:AddDoubleLine("Confidence", ("%s%s|r (%d %s)"):format(row.confidence.color, row.confidence.text,
+      row.seenTrials or 0, row.per == "pick" and "picks" or "kills"), 0.8, 0.8, 0.8, 1, 1, 1)
   end
   if row.kind ~= "Learned" and row.seenTrials and row.seenTrials > 0 then
     GameTooltip:AddDoubleLine(("Player data (%d %s)"):format(row.seenTrials, row.per == "pick" and "picks" or "kills"),

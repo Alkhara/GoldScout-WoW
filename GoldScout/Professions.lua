@@ -141,15 +141,21 @@ function Professions:CaptureRecipes()
   end
 
   local list, count = {}, 0
+  local crafted = ns.db and ns.db.crafted
   for _, recipeID in ipairs(recipeIDs) do
     local info = C_TradeSkillUI.GetRecipeInfo(recipeID)
-    if info and info.learned and not info.isDummyRecipe and not info.isGatheringRecipe
+    if info and not info.isDummyRecipe and not info.isGatheringRecipe
         and not info.isSalvageRecipe and not info.isRecraft then
       local schematic = C_TradeSkillUI.GetRecipeSchematic(recipeID, false)
-      if schematic then
+      local output = schematic and ReadOutput(recipeID, schematic)
+      -- Anything a recipe makes, learned or not, isn't a world drop to farm.
+      if crafted and type(output) == "number" then
+        crafted[output] = true
+      end
+      if schematic and info.learned then
         list[recipeID] = {
           name = info.name,
-          out = ReadOutput(recipeID, schematic),
+          out = output,
           qmin = schematic.quantityMin or 1,
           qmax = schematic.quantityMax or schematic.quantityMin or 1,
           reagents = ReadReagents(schematic),

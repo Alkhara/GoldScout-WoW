@@ -56,9 +56,10 @@ companion aren't linked to any GitHub account.
 
 Nothing leaves your computer unless you choose to share it. `/gscout export`
 shows only your loot records: creature IDs, names and levels, kill and
-pickpocket counts, item drops, and the average map position where you looted
-each creature. It doesn't include character names, account names, realm names,
-prices, professions or settings.
+pickpocket counts, item drops, the average map position where you looted
+each creature, the names of those items and zones as your game shows them, and
+the IDs of items your characters' professions can make. It doesn't include
+character names, account names, realm names, prices, skill levels or settings.
 
 Each export also starts with an install ID: 12 random letters and digits that
 GoldScout generates once per WoW account, plus a snapshot number. The ID isn't

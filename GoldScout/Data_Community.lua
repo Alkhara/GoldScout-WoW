@@ -16,3 +16,7 @@ ns.COMMUNITY_SOURCES = {
   ["m00jxkjr841x"] = 2,
 }
 ns.COMMUNITY_CAP = 1000
+
+-- Items players' professions can make, so Market rows leave them out.
+ns.COMMUNITY_CRAFTED = {
+}

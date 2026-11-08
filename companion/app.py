@@ -28,7 +28,7 @@ import submission  # noqa: E402
 import system  # noqa: E402
 import uploader  # noqa: E402
 
-VERSION = "0.4.0"
+VERSION = "0.5.0"
 FORM_URL = "https://github.com/Alkhara/GoldScout-WoW/issues/new?template=data-submission.yml"
 TERMS_URL = "https://github.com/Alkhara/GoldScout-WoW/blob/main/docs/CONTRIBUTOR_TERMS.md"
 PRIVACY_URL = "https://github.com/Alkhara/GoldScout-WoW/blob/main/docs/PRIVACY.md"
@@ -137,9 +137,10 @@ class App:
             "GoldScout learns drop rates from your loot. The companion shares what it learns so the "
             "Farm tab gets better for everyone, and it does it automatically: it runs quietly in the "
             "system tray and uploads new data after you log out or /reload.\n\n"
-            "What's shared: creature and item IDs, kill and drop counts, mob levels and where you "
-            "looted, plus a random ID for your GoldScout data. Never character, account or realm "
-            "names. It only reads GoldScout's saved data and never changes game files.")
+            "What's shared: creature and item IDs and names, kill and drop counts, mob levels, where "
+            "you looted, and which items your professions can make, plus a random ID for your "
+            "GoldScout data. Never character, account or realm names. It only reads GoldScout's "
+            "saved data and never changes game files.")
         ).grid(sticky="w", pady=(10, 10))
         links = ttk.Frame(frame)
         links.grid(sticky="w")

@@ -9,7 +9,30 @@ local TRIVIAL = (Enum.TradeskillRelativeDifficulty and Enum.TradeskillRelativeDi
 -- How many of your own kills it takes before your loot outweighs the database rate.
 local PRIOR_WEIGHT = 30
 -- Kills of an unlisted mob before it shows up on the Farm tab as "Learned".
-local LEARNED_MIN_KILLS = 15
+-- Low counts are shown with a low confidence and a cautious rate (below).
+local LEARNED_MIN_KILLS = 1
+-- Gold per hour from player data uses drops / (attempts + this), so a lucky
+-- first drop doesn't top the list; it fades out as attempts add up.
+local CAUTION_ATTEMPTS = 2
+-- How far above your level Market rows still show (dimmed past the usual window).
+local MARKET_ABOVE_LEVELS = 10
+
+-- Confidence in a drop rate by how many kills (or picks) back it up.
+local CONFIDENCE = {
+  { min = 50, key = "high", text = "high", color = "|cff40ff40" },
+  { min = 15, key = "good", text = "good", color = "|cff9be35a" },
+  { min = 5, key = "fair", text = "fair", color = "|cffffd100" },
+  { min = 0, key = "low", text = "low", color = "|cffff8040" },
+}
+
+function Engine.Confidence(attempts)
+  for _, tier in ipairs(CONFIDENCE) do
+    if (attempts or 0) >= tier.min then
+      return tier
+    end
+  end
+  return CONFIDENCE[#CONFIDENCE]
+end
 -- Once players have recorded this many attempts on a mob, a hand-listed
 -- starting rate is ignored entirely and only player data counts.
 local STARTING_RATE_RETIRE_ATTEMPTS = 200
@@ -506,18 +529,24 @@ function Engine:Farms()
         for itemID in pairs(items) do
           local drops, attempts, perDrop = ns.Learn:Evidence(npcID, itemID, false)
           local bindType = ns.ItemBindType(itemID)
-          if drops >= 2 and bindType ~= 1 and bindType ~= 4 then
+          if drops >= 1 and bindType ~= 1 and bindType ~= 4 then
             local net, listed, age = NetPrice(itemID)
             if net then
               local rate = drops / attempts
-              local each = net * rate * perDrop
+              local cautious = drops / (attempts + CAUTION_ATTEMPTS)
+              local each = net * cautious * perDrop
+              local confidence = Engine.Confidence(attempts)
+              local note = ("Seen %d times in %d kills by GoldScout players."):format(drops, attempts)
+              if confidence.min < 15 then
+                note = note .. " Gold per hour uses a cautious rate until more kills are recorded."
+              end
               rows[#rows + 1] = {
                 kind = "Learned", item = itemID, source = mob, zone = zone,
                 lvl = LevelText(minLevel, maxLevel), chance = rate, per = "kill",
-                seenRate = rate, seenTrials = attempts,
+                seenRate = rate, seenTrials = attempts, confidence = confidence,
                 each = each, hour = each * Kills((minLevel + maxLevel) / 2),
                 listed = listed, age = age,
-                note = ("From player loot over %d kills."):format(attempts),
+                note = note,
                 hunt = MobHunt("Learned:" .. npcID .. ":" .. itemID, "kill", itemID, rate, mob, zone, npcID, nil),
               }
             end
@@ -605,8 +634,10 @@ function Engine:Farms()
       covered[row.item] = true
     end
     local gathered = GatheredItems()
-    -- What your recipes make counts as crafted too.
-    local madeByYou = {}
+    -- What any recipe makes counts as crafted too: every recipe output your
+    -- characters have seen in a profession window (db.crafted), plus this
+    -- character's known recipes.
+    local madeByYou = ns.db.crafted or {}
     for _, profession in pairs(ns.cdb.recipes) do
       for _, recipe in pairs(profession.list or {}) do
         if recipe.out then
@@ -621,13 +652,16 @@ function Engine:Farms()
         -- Crafted and vendor items aren't world drops, unless players have
         -- actually looted one from a mob.
         local notDropped = facts and (facts.crafted or madeByYou[itemID]
+          or (ns.COMMUNITY_CRAFTED and ns.COMMUNITY_CRAFTED[itemID])
           or ns.VENDOR_REAGENTS[itemID] or ns.db.vendor[itemID] ~= nil)
         if itemLevel and not (notDropped and not BestSighting(itemID)) then
-          if InWindow(itemLevel, itemLevel) then
+          local above = not InWindow(itemLevel, itemLevel) and not settings.showAllLevels
+            and itemLevel > level and itemLevel <= level + MARKET_ABOVE_LEVELS
+          if InWindow(itemLevel, itemLevel) or above then
             local net, listed, age = NetPrice(itemID)
             if net then
               local row = {
-                kind = "Market", item = itemID, unknownRate = true, itemLevel = itemLevel,
+                kind = "Market", item = itemID, unknownRate = true, itemLevel = itemLevel, above = above,
                 source = "Source unknown", lvl = "-", chanceText = "?", per = "item",
                 each = net, listed = listed, age = age,
                 note = "No drop data yet, so this ranks by price alone. Loot it (or Hunt it) "
@@ -645,9 +679,12 @@ function Engine:Farms()
                 if minLevel then
                   row.lvl = LevelText(minLevel, (own and own.lmax) or (shared and shared.lmax) or minLevel)
                 end
-                row.note = ("Seen %d times in %d kills of %s. It gets a drop rate and hourly estimate "
-                  .. "after %d kills."):format(drops, kills, mob, LEARNED_MIN_KILLS)
+                row.note = ("Seen %d times in %d kills of %s."):format(drops, kills, mob)
                 row.hunt = MobHunt("Market:" .. itemID, "kill", itemID, nil, mob, zone, npcID, nil)
+              end
+              if above then
+                row.note = (row.note .. " Item level %d: the mobs that drop it are likely above "
+                  .. "your level, so this may be a tougher farm."):format(itemLevel)
               end
               rows[#rows + 1] = row
             end

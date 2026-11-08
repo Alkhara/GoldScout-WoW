@@ -169,6 +169,25 @@ class SnapshotLuaTests(unittest.TestCase):
         newer, _ = learn.Snapshot(learn)
         self.assertEqual(submission.parse(newer).seq, 2)
 
+    def test_snapshot_carries_names_and_crafted_items(self):
+        self.ns.db.names["items"][3010] = "Crawler Meat"
+        self.ns.db.names["items"][5569] = "Pattern: Hillman's Cloak, Belt"
+        self.ns.db.names.maps[1440] = "Ashenvale"
+        self.ns.db.crafted[2996] = True
+        learn = self.ns.Learn
+        text, count = learn.ExportString(learn)
+        self.assertEqual(count, 2)
+        self.assertTrue(text.startswith("GoldScout-export 3^"))
+        result = submission.parse(text)
+        self.assertEqual(result.errors, [])
+        self.assertEqual(result.item_names, {3010: "Crawler Meat", 5569: "Pattern: Hillman's Cloak, Belt"})
+        self.assertEqual(result.map_names, {1440: "Ashenvale"})
+        self.assertEqual(result.crafted, {2996})
+        # The client's own parser skips the @ lines and still reads both mobs.
+        install, seq, mobs = self.ns.Community.ParseExport(text)
+        self.assertEqual((install, seq), (self.ns.db.installID, result.seq))
+        self.assertEqual(sorted(mobs.keys()), [3812, 3814])
+
     def test_old_snapshots_are_pruned_except_the_included_one(self):
         learn = self.ns.Learn
         learn.Snapshot(learn)

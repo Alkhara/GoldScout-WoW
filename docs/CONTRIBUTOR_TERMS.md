@@ -14,7 +14,9 @@ until you pause automatic sharing or stop using it.
 
 A GoldScout export contains, for each creature you looted: its ID, name and
 level range, how many times you killed or pickpocketed it, the items it dropped
-and how often, and the average map position where you looted it. It contains no
+and how often, and the average map position where you looted it. It also lists
+the names of those items and zones, and the IDs of items your professions can
+make. It contains no
 character names, account names or other personal details. A form submission
 is posted publicly on GitHub, together with your GitHub username; a companion
 upload is stored by the GoldScout upload service and added to the public

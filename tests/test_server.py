@@ -100,6 +100,18 @@ class ServerTests(unittest.TestCase):
                 self.assertIn(status, (400, 413))
                 self.assertIn("error", reply)
 
+    def test_accepts_version_three(self):
+        install = new_install()
+        body = ("GoldScout-export 3^%s^1\n%s\n@i^3010^Crawler Meat\n@m^1440^Ashenvale\n@c^2996^\n"
+                % (install, LINE))
+        status, reply = raw("/v1/uploads", body, {"X-GoldScout-Terms": uploader.TERMS_VERSION,
+                                                  "CF-Connecting-IP": fake_ip()}, "POST")
+        self.assertEqual((status, reply.get("status")), (201, "registered"))
+        bad = body.replace("@c^2996^", "@q^1^x")
+        status, _ = raw("/v1/uploads", bad.replace(install, new_install()),
+                        {"X-GoldScout-Terms": uploader.TERMS_VERSION, "CF-Connecting-IP": fake_ip()}, "POST")
+        self.assertEqual(status, 400)
+
     def test_list_needs_admin_token(self):
         self.assertEqual(raw("/v1/uploads")[0], 401)
         self.assertEqual(raw("/v1/uploads", headers={"Authorization": "Bearer wrong"})[0], 401)

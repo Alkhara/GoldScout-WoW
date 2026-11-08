@@ -6,23 +6,29 @@ looks unusual (for example a drop rate far from what other players recorded),
 so a maintainer has to approve it by hand.
 
 Export format, one header line then one line per mob:
-  GoldScout-export 2^<install ID>^<snapshot number>
+  GoldScout-export 3^<install ID>^<snapshot number>
   npcID^kills^picks^minLevel^maxLevel^uiMapID^x^y^positions^name^drops^pickDrops
 where drops and pickDrops are "itemID:times:quantity" joined by commas. The
 install ID is 12 random lowercase letters and digits identifying one WoW
 account's GoldScout data; the snapshot number goes up each time that data
-changes. Version 1 exports (no install ID) are no longer accepted.
+changes.
+
+Version 3 adds optional lines after the mobs:
+  @i^itemID^name       an item's name, as the player's game client shows it
+  @m^uiMapID^name      a zone's name
+  @c^itemID^           an item some recipe makes (so it isn't a world drop)
+Version 2 (no @ lines) is still accepted; version 1 (no install ID) isn't.
 """
 import math
 import re
 from collections import defaultdict
 
-HEADER = "GoldScout-export 2"
-HEADER_RE = re.compile(r"^GoldScout-export 2\^([a-z0-9]{12})\^([1-9][0-9]{0,8})$")
+HEADER = "GoldScout-export"
+HEADER_RE = re.compile(r"^GoldScout-export ([23])\^([a-z0-9]{12})\^([1-9][0-9]{0,8})$")
 
 
-def header(install_id, seq):
-    return "%s^%s^%d" % (HEADER, install_id, seq)
+def header(install_id, seq, version=3):
+    return "%s %d^%s^%d" % (HEADER, version, install_id, seq)
 
 # Limits. Anything outside them is a hard error.
 MAX_BYTES = 60000           # GitHub issue bodies top out at 65536 characters
@@ -35,6 +41,7 @@ MAX_ITEMS_PER_MOB = 150
 MAX_DROPS_PER_ATTEMPT = 8   # items one corpse or pocket can hold
 MAX_QUANTITY_PER_DROP = 100 # average stack size per drop
 MAX_NAME_LENGTH = 64
+MAX_EXTRA_LINES = 5000      # @ lines (names and crafted items) in one export
 
 # Rate checks against data already accepted from other players.
 OUTLIER_MIN_ATTEMPTS = 30   # both sides need at least this many attempts
@@ -43,6 +50,7 @@ OUTLIER_Z = 6.0             # how far apart two drop rates must be to flag
 INT = re.compile(r"^(0|[1-9][0-9]{0,8})$")
 COORD = re.compile(r"^(0|1)\.[0-9]{1,6}$")
 NAME_PUNCTUATION = set(" '-.()!?&")
+ITEM_NAME_PUNCTUATION = NAME_PUNCTUATION | set(":,")
 
 
 class Mob:
@@ -68,10 +76,17 @@ class Result:
         self.warnings = []
         self.install_id = None
         self.seq = None
+        self.version = 3
+        self.item_names = {}
+        self.map_names = {}
+        self.crafted = set()
 
     def text(self):
         """The export rebuilt from the validated data."""
-        lines = [header(self.install_id, self.seq)] + [mob.to_line() for mob in self.mobs]
+        lines = [header(self.install_id, self.seq, self.version)] + [mob.to_line() for mob in self.mobs]
+        lines += ["@i^%d^%s" % (item, name) for item, name in sorted(self.item_names.items())]
+        lines += ["@m^%d^%s" % (map_id, name) for map_id, name in sorted(self.map_names.items())]
+        lines += ["@c^%d^" % item for item in sorted(self.crafted)]
         return "\n".join(lines) + "\n"
 
     @property
@@ -191,6 +206,31 @@ def _parse_line(line, line_no, result):
                n=name, i=drops, pi=pick_drops)
 
 
+def _parse_extra(line, line_no, result):
+    """One @ line: an item name, a zone name or a crafted item."""
+    fields = line.split("^")
+    if len(fields) != 3 or fields[0] not in ("@i", "@m", "@c"):
+        result.errors.append("Line %d: expected @i, @m or @c followed by an ID and a name." % line_no)
+        return
+    kind, id_text, name = fields
+    some_id = _int(id_text, "ID", line_no, result, low=1)
+    if some_id is None:
+        return
+    if kind == "@c":
+        if name:
+            result.errors.append("Line %d: a crafted-item line has no name." % line_no)
+            return
+        result.crafted.add(some_id)
+        return
+    if not name or len(name) > MAX_NAME_LENGTH or name != name.strip():
+        result.errors.append("Line %d: the name is empty, too long or padded." % line_no)
+        return
+    if any(not (c.isalpha() or c.isdigit() or c in ITEM_NAME_PUNCTUATION) for c in name):
+        result.errors.append("Line %d: the name contains a character that isn't allowed." % line_no)
+        return
+    (result.item_names if kind == "@i" else result.map_names)[some_id] = name
+
+
 def parse(text):
     """Parses and checks one export. Returns a Result with mobs and any errors."""
     result = Result()
@@ -204,17 +244,30 @@ def parse(text):
             result.errors.append("This export is from an older GoldScout. Update GoldScout, log in, "
                                  "and export again.")
         else:
-            result.errors.append("The first line must look like 'GoldScout-export 2^<install ID>^<number>'.")
+            result.errors.append("The first line must look like 'GoldScout-export 3^<install ID>^<number>'.")
         return result
-    result.install_id, result.seq = match.group(1), int(match.group(2))
-    if len(lines) == 1:
+    result.version, result.install_id, result.seq = int(match.group(1)), match.group(2), int(match.group(3))
+    mob_lines = [(n, line) for n, line in enumerate(lines[1:], start=2) if not line.startswith("@")]
+    extra_lines = [(n, line) for n, line in enumerate(lines[1:], start=2) if line.startswith("@")]
+    if not mob_lines:
         result.errors.append("The export has no mobs in it.")
         return result
-    if len(lines) - 1 > MAX_MOBS:
+    if len(mob_lines) > MAX_MOBS:
         result.errors.append("The export has more than %d mobs." % MAX_MOBS)
         return result
+    if extra_lines and result.version < 3:
+        result.errors.append("Line %d: name lines need a version 3 export." % extra_lines[0][0])
+        return result
+    if len(extra_lines) > MAX_EXTRA_LINES:
+        result.errors.append("The export has more than %d name lines." % MAX_EXTRA_LINES)
+        return result
+    for line_no, line in extra_lines:
+        _parse_extra(line, line_no, result)
+        if len(result.errors) >= 20:
+            result.errors.append("Stopped checking after 20 errors.")
+            return result
     seen = set()
-    for line_no, line in enumerate(lines[1:], start=2):
+    for line_no, line in mob_lines:
         mob = _parse_line(line, line_no, result)
         if mob is None:
             if len(result.errors) >= 20:

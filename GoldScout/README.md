@@ -32,8 +32,11 @@ based on your level, class, faction and professions.
 - **Hunt mode**: click a Farm row, then press **Hunt** (see below).
 - **Learns from your loot**: every corpse you loot and pocket you pick, on any
   character, updates drop rates for that mob, combined with the community data
-  players have shared. Mobs looted 15+ times appear on the Farm tab as
-  **Learned**.
+  players have shared. Mobs appear on the Farm tab as **Learned** from the first
+  drop. The **Chance** column's color shows how many kills back the rate up:
+  orange under 5, yellow 5-14, light green 15-49, green 50 or more. Until a mob
+  has 15 kills, gold per hour uses a cautious rate so one lucky drop doesn't top
+  the list.
 
 ## Hunt mode
 
@@ -124,8 +127,9 @@ stays in your own SavedVariables.
   `/gscout set` so they match how you play.
 - **Mob drop rates and spawn spots** come only from players: your own loot,
   plus community data that players share with `/gscout export` and that ships
-  with each release. Mobs looted 15 or more times show up on the Farm tab as
-  **Learned**, and their hunts get a waypoint to where players find them.
+  with each release. Mobs show up on the Farm tab as **Learned** from their
+  first drop, colored by confidence, and their hunts get a waypoint to where
+  players find them.
 
 ## Sharing your data
 

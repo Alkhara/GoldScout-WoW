@@ -91,6 +91,46 @@ local function Clean(text)
   return (text:gsub("%s+", " "):gsub("^ ", ""):gsub(" $", ""))
 end
 
+-- Item and zone names can also hold colons and commas ("Pattern: Hillman's
+-- Cloak"); only the field separator, escapes and line breaks are dropped.
+local function CleanName(text)
+  text = tostring(text or ""):gsub("[^%w '%-%.%(%)!%?&:,\128-\255]", " ")
+  text = text:gsub("%s+", " "):gsub("^ ", ""):gsub(" $", "")
+  return text:sub(1, 64)
+end
+
+local function Names()
+  return ns.db and ns.db.names
+end
+
+-- Remembers an item's name (from a loot link or the client's item cache).
+local function NoteItemName(itemID, name)
+  local names = Names()
+  if not names or not itemID then
+    return
+  end
+  name = ns.Plain(name)
+  if type(name) ~= "string" or name == "" then
+    local quick = C_Item and C_Item.GetItemNameByID and ns.Plain(C_Item.GetItemNameByID(itemID))
+    name = type(quick) == "string" and quick or (ns.GetItemInfo and ns.Plain((ns.GetItemInfo(itemID))))
+  end
+  if type(name) == "string" and name ~= "" and not name:find("^Item %d+$") then
+    names.items[itemID] = CleanName(name)
+  end
+end
+
+local function NoteMapName(mapID)
+  local names = Names()
+  if not names or not mapID or names.maps[mapID] then
+    return
+  end
+  local info = C_Map and C_Map.GetMapInfo and C_Map.GetMapInfo(mapID)
+  local name = info and ns.Plain(info.name)
+  if type(name) == "string" and name ~= "" then
+    names.maps[mapID] = CleanName(name)
+  end
+end
+
 -- Drops can't outnumber attempts (one corpse can hold two stacks of an item),
 -- so counts are clamped to keep every export valid.
 local function SortedKeys(table_)
@@ -129,11 +169,14 @@ local function NewInstallID()
   return table.concat(chars)
 end
 
--- The mob lines of an export, in a fixed order so unchanged data gives
--- identical text.
+-- The lines of an export, in a fixed order so unchanged data gives identical
+-- text: one per mob, then the names of the items and zones they mention
+-- ("@i^itemID^name", "@m^uiMapID^name"), then every item a recipe makes
+-- ("@c^itemID^"), which players' Market rows leave out.
 local function ExportBody()
   local drops = (ns.db and ns.db.drops) or {}
-  local lines = {}
+  local names = Names() or { items = {}, maps = {} }
+  local lines, items, maps = {}, {}, {}
   for _, npcID in ipairs(SortedKeys(drops)) do
     local entry = drops[npcID]
     local kills, picks = entry.k or 0, entry.p or 0
@@ -148,14 +191,38 @@ local function ExportBody()
       if lmin == 0 or lmax == 0 or lmax - lmin > 15 or lmax > 63 then
         lmin, lmax = 0, 0
       end
+      local dropList, pickList = ItemList(entry.i, kills), ItemList(entry.pi, picks)
       lines[#lines + 1] = table.concat({
         npcID, kills, picks, lmin, lmax, map,
-        ("%.4f"):format(x), ("%.4f"):format(y), count, Clean(entry.n),
-        ItemList(entry.i, kills), ItemList(entry.pi, picks),
+        ("%.4f"):format(x), ("%.4f"):format(y), count, Clean(entry.n), dropList, pickList,
       }, "^")
+      for itemID in (dropList .. "," .. pickList):gmatch("(%d+):%d+:%d+") do
+        items[tonumber(itemID)] = true
+      end
+      if map > 0 then
+        maps[map] = true
+      end
     end
   end
-  return table.concat(lines, "\n"), #lines
+  local mobs = #lines
+  for _, itemID in ipairs(SortedKeys(items)) do
+    if not names.items[itemID] then
+      NoteItemName(itemID)
+    end
+    if names.items[itemID] and names.items[itemID] ~= "" then
+      lines[#lines + 1] = "@i^" .. itemID .. "^" .. names.items[itemID]
+    end
+  end
+  for _, mapID in ipairs(SortedKeys(maps)) do
+    NoteMapName(mapID)
+    if names.maps[mapID] and names.maps[mapID] ~= "" then
+      lines[#lines + 1] = "@m^" .. mapID .. "^" .. names.maps[mapID]
+    end
+  end
+  for _, itemID in ipairs(SortedKeys((ns.db and ns.db.crafted) or {})) do
+    lines[#lines + 1] = "@c^" .. itemID .. "^"
+  end
+  return table.concat(lines, "\n"), mobs
 end
 
 -- Saves the current export as a numbered snapshot (a new number only when the
@@ -175,7 +242,7 @@ function Learn:Snapshot()
   local latest = exports.list[exports.seq]
   if not (latest and latest:match("^[^\n]*\n(.*)$") == body) then
     exports.seq = exports.seq + 1
-    exports.list[exports.seq] = ("GoldScout-export 2^%s^%d\n%s"):format(db.installID, exports.seq, body)
+    exports.list[exports.seq] = ("GoldScout-export 3^%s^%d\n%s"):format(db.installID, exports.seq, body)
     local included = ns.COMMUNITY_SOURCES and ns.COMMUNITY_SOURCES[db.installID]
     for seq in pairs(exports.list) do
       if seq ~= included and seq <= exports.seq - KEEP_SNAPSHOTS then
@@ -196,6 +263,10 @@ ns.Listen("DB_READY", function()
   local db = ns.db
   db.installID = db.installID or NewInstallID()
   db.exports = db.exports or { seq = 0, list = {} }
+  db.crafted = db.crafted or {}
+  db.names = db.names or {}
+  db.names.items = db.names.items or {}
+  db.names.maps = db.names.maps or {}
   Learn.ownShared = ns.Community.RemoveOwn(ns.COMMUNITY, ns.COMMUNITY_SOURCES, ns.COMMUNITY_CAP,
     db.installID, db.exports, db.drops)
 end)
@@ -259,6 +330,7 @@ local function NotePosition(entry)
   entry.sx = entry.sx + x
   entry.sy = entry.sy + y
   entry.c = entry.c + 1
+  NoteMapName(map)
 end
 
 local function RecordDrop(npcID, role, itemID, quantity)
@@ -303,6 +375,7 @@ local function ReadWindow()
     if GetLootSlotType(slot) == ITEM_SLOT then
       local link = GetLootSlotLink(slot)
       slotInfo.item = link and tonumber(link:match("item:(%d+)"))
+      slotInfo.name = link and link:match("%[(.-)%]")
       local _, _, quantity = GetLootSlotInfo(slot)
       quantity = ns.Plain(quantity)
       slotInfo.quantity = (type(quantity) == "number" and quantity > 0) and quantity or 1
@@ -369,6 +442,7 @@ local function OnSlotCleared(slot)
       local quantity = slotSource.quantity or slotInfo.quantity
       if ns.db.settings.learnDrops then
         RecordDrop(source.id, source.role, slotInfo.item, quantity)
+        NoteItemName(slotInfo.item, slotInfo.name)
       end
       ns.Fire("LOOT_DROP", source.role, source.id, slotInfo.item, quantity)
     end

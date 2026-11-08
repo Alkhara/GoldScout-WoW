@@ -263,6 +263,10 @@ ns.On("ADDON_LOADED", function(name)
   db.vendor = db.vendor or {}
   db.drops = db.drops or {} -- loot you've seen, per creature ID (all characters)
   db.hunts = db.hunts or {} -- recent hunt summaries
+  db.crafted = db.crafted or {} -- every recipe output seen in a profession window (all characters)
+  db.names = db.names or {} -- item and zone names seen, for shared exports
+  db.names.items = db.names.items or {}
+  db.names.maps = db.names.maps or {}
   db.settings = db.settings or {}
   for key, value in pairs(DEFAULT_SETTINGS) do
     if db.settings[key] == nil then

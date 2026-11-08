@@ -123,7 +123,7 @@ def lua_string(text):
     return '"' + text.replace("\\", "\\\\").replace('"', '\\"') + '"'
 
 
-def write_lua(merged, min_attempts, path, contributors, sources=None, cap=1000):
+def write_lua(merged, min_attempts, path, contributors, sources=None, cap=1000, crafted=()):
     out = [
         "-- GoldScout community data: drop rates and spawn spots collected by players",
         "-- with /gscout export and combined by tools/merge_data.py. Generated file;",
@@ -160,6 +160,13 @@ def write_lua(merged, min_attempts, path, contributors, sources=None, cap=1000):
         out.append('  ["%s"] = %d,' % (install_id, seq))
     out.append("}")
     out.append("ns.COMMUNITY_CAP = %d" % cap)
+    out.append("")
+    out.append("-- Items players' professions can make, so Market rows leave them out.")
+    ids = sorted(crafted)
+    out.append("ns.COMMUNITY_CRAFTED = {")
+    for start in range(0, len(ids), 10):
+        out.append("  " + " ".join("[%d] = true," % item for item in ids[start:start + 10]))
+    out.append("}")
     path.write_text("\n".join(out) + "\n", encoding="utf-8", newline="\n")
     return kept
 
@@ -179,8 +186,9 @@ def main():
     if not submissions:
         print("No valid submissions in %s; writing an empty data file." % folder)
     merged = merge([result.mobs for result in submissions], args.max_per_player)
+    crafted = set().union(*(result.crafted for result in submissions)) if submissions else set()
     kept = write_lua(merged, args.min_attempts, TARGET, len(submissions), sources_of(submissions),
-                     args.max_per_player)
+                     args.max_per_player, crafted)
     print("Wrote %s: %d mobs from %d submission(s)." % (TARGET, kept, len(submissions)))
 
 
