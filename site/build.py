@@ -21,7 +21,7 @@ sys.path.insert(0, str(HERE))
 import data_pages  # noqa: E402
 import merge_data  # noqa: E402
 
-SITE_URL = "https://wowgoldscout.com"
+SITE_URL = data_pages.SITE_URL
 REPO = "https://github.com/Alkhara/GoldScout-WoW"
 LINKS = {
     "curseforge": "https://www.curseforge.com/projects/1790110",
@@ -56,7 +56,7 @@ def git(*args):
 def stats(results, merged):
     """Numbers for the community section, from data/submissions/."""
     shown = {npc: e for npc, e in merged.items() if e["k"] + e["p"] >= 5}
-    updated = git("log", "-1", "--format=%cs", "--", "GoldScout/Data_Community.lua")
+    updated = iso = git("log", "-1", "--format=%cs", "--", "GoldScout/Data_Community.lua")
     if updated:
         updated = datetime.date.fromisoformat(updated).strftime("%B %-d, %Y" if sys.platform != "win32"
                                                                else "%B %#d, %Y")
@@ -67,6 +67,7 @@ def stats(results, merged):
         "picks": sum(e["p"] for e in merged.values()),
         "drops": sum(d for e in merged.values() for d, _ in list(e["i"].values()) + list(e["pi"].values())),
         "updated": updated,
+        "updated_iso": iso,
     }
 
 
@@ -129,9 +130,13 @@ table { width: 100%; border-collapse: collapse; background: var(--panel); border
 th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
 th { color: var(--muted); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: .4px; background: var(--bg2); }
 tr:last-child td { border-bottom: none; }
+.nowrap { white-space: nowrap; }
 td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .conf { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px; font-weight: 600; color: #1b1203; }
 .conf.low { background: #ff8040; } .conf.fair { background: #ffd100; } .conf.good { background: #9be35a; } .conf.high { background: #40d040; }
+.summary { font-size: 18px; max-width: 46em; margin: 10px 0 6px; }
+ul.related { columns: 2; padding-left: 20px; margin: 0; } ul.related li { margin: 4px 0; break-inside: avoid; }
+main.page .small a { color: var(--muted); }
 .cta { margin-top: 34px; padding: 16px 18px; border: 1px solid var(--gold2); border-radius: 12px; background: rgba(242,194,85,.08); }
 .table-wrap { overflow-x: auto; }
 @media (max-width: 820px) {
@@ -165,13 +170,14 @@ def page(s):
 <meta name="twitter:card" content="summary">
 <link rel="canonical" href="%(site)s/">
 <link rel="icon" href="favicon.png">
+<script type="application/ld+json">%(jsonld)s</script>
 <style>%(css)s</style>
 </head>
 <body>
 <div class="wrap">
 <header class="top">
   <a class="brand" href="#"><img src="logo-400.png" alt="">GoldScout</a>
-  <nav><a href="#features">Features</a><a href="/farms">Farms by level</a><a href="#companion">Companion</a><a href="%(guide)s">Guide</a></nav>
+  <nav><a href="#features">Features</a><a href="/farms">Farms by level</a><a href="/drop-rates">Drop rates</a><a href="#companion">Companion</a><a href="%(guide)s">Guide</a></nav>
 </header>
 
 <div class="hero">
@@ -210,7 +216,7 @@ def page(s):
     <li><b>It's checked.</b> Every submission is validated, and unusual drop rates are reviewed before they're used.</li>
     <li><b>Everyone gets it.</b> New community data ships in a release every week. Your own loot is never counted twice.</li>
   </ol>
-  <p style="margin-top:22px"><a class="btn" href="/farms">Browse farms by level</a></p>
+  <p style="margin-top:22px"><a class="btn" href="/farms">Browse farms by level</a> <a class="btn" href="/drop-rates">How drop rates work</a></p>
 </div></section>
 
 <section id="companion"><div class="wrap two">
@@ -243,9 +249,22 @@ def page(s):
 </div></footer>
 </body>
 </html>
-""" % dict(LINKS, site=SITE_URL, css=CSS, shots=shots, updated=updated, contributors_label=contributors_label,
+""" % dict(LINKS, site=SITE_URL, css=CSS, shots=shots, jsonld=home_jsonld(), updated=updated, contributors_label=contributors_label,
            contributors=format(s["contributors"], ","), mobs=format(s["mobs"], ","),
            kills=format(s["kills"], ","), drops=format(s["drops"], ","))
+
+
+def home_jsonld():
+    """schema.org data for the home page: the site, and the addon as free software."""
+    data = [
+        {"@context": "https://schema.org", "@type": "WebSite", "name": "GoldScout", "url": SITE_URL + "/"},
+        {"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "GoldScout",
+         "applicationCategory": "GameApplication", "operatingSystem": "Windows, macOS",
+         "description": "A free WoW Forever addon that ranks what each character can farm or craft for gold.",
+         "url": SITE_URL + "/", "downloadUrl": LINKS["curseforge"], "image": SITE_URL + "/logo-400.png",
+         "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}},
+    ]
+    return data_pages.json_for_script(data)
 
 
 def layout(title, description, path, body):
@@ -262,6 +281,8 @@ def layout(title, description, path, body):
 <meta property="og:type" content="website">
 <meta property="og:url" content="%(site)s%(path)s">
 <meta property="og:image" content="%(site)s/logo-400.png">
+<meta property="og:site_name" content="GoldScout">
+<meta name="twitter:card" content="summary">
 <link rel="canonical" href="%(site)s%(path)s">
 <link rel="icon" href="/favicon.png">
 <style>%(css)s</style>
@@ -270,12 +291,12 @@ def layout(title, description, path, body):
 <div class="wrap">
 <header class="top">
   <a class="brand" href="/"><img src="/logo-400.png" alt="">GoldScout</a>
-  <nav><a href="/farms">Farms by level</a><a href="/#companion">Companion</a><a href="%(curseforge)s">Get GoldScout</a></nav>
+  <nav><a href="/farms">Farms by level</a><a href="/drop-rates">Drop rates</a><a href="/#companion">Companion</a><a href="%(curseforge)s">Get GoldScout</a></nav>
 </header>
 <main class="page"><div class="table-wrap">%(body)s</div></main>
 </div>
 <footer><div class="wrap">
-  <p><a href="/">Home</a><a href="%(source)s">GitHub</a><a href="%(privacy)s">Privacy</a><a href="%(data_license)s">Data license</a></p>
+  <p><a href="/">Home</a><a href="/farms">Farms by level</a><a href="/drop-rates">How drop rates work</a><a href="%(source)s">GitHub</a><a href="%(privacy)s">Privacy</a><a href="%(data_license)s">Data license</a></p>
   <p>Drop rates come from GoldScout players and are covered by the GoldScout Data License. GoldScout is a fan project, not affiliated with or endorsed by Blizzard Entertainment. World of Warcraft is a trademark of Blizzard Entertainment, Inc.</p>
 </div></footer>
 </body>
@@ -307,14 +328,15 @@ def main():
     paths = ["/"] + data_pages.build(data, LINKS, write)
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>',
                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    sitemap += ["  <url><loc>%s%s</loc></url>" % (SITE_URL, path) for path in paths]
+    lastmod = "<lastmod>%s</lastmod>" % s["updated_iso"] if s["updated_iso"] else ""
+    sitemap += ["  <url><loc>%s%s</loc>%s</url>" % (SITE_URL, path, lastmod) for path in paths]
     sitemap.append("</urlset>")
     (DIST / "sitemap.xml").write_text("\n".join(sitemap) + "\n", encoding="utf-8")
     robots = ["User-agent: *", "Allow: /", "Sitemap: %s/sitemap.xml" % SITE_URL]
     (DIST / "robots.txt").write_text("\n".join(robots) + "\n", encoding="utf-8")
     (DIST / "404.html").write_text(
         '<!doctype html><html lang="en"><head><meta charset="utf-8">'
-        '<meta name="viewport" content="width=device-width, initial-scale=1"><title>Not found: GoldScout</title>'
+        '<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Not found: GoldScout</title>'
         '<link rel="icon" href="/favicon.png"><style>%s</style></head><body><div class="wrap">'
         '<header class="top"><a class="brand" href="/"><img src="/logo-400.png" alt="">GoldScout</a></header>'
         '<section><h2>Page not found</h2><p class="sub">That page doesn\'t exist.</p>'

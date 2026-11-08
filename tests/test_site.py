@@ -1,5 +1,7 @@
 """The website's data pages: built from merged exports, with item kinds from
 version 4 @q lines, names escaped, gray items hidden."""
+import json
+import re
 import sys
 import unittest
 from pathlib import Path
@@ -65,6 +67,11 @@ class DataPagesTests(unittest.TestCase):
         self.assertEqual(kinds, {3730: "reagent", 3702: "reagent", 11407: "gray", 14728: "rare",
                                  1205: "other", 9999: "unknown"})
 
+    def test_addon_gems_are_rare_drops(self):
+        self.assertIn(1206, data_pages.GEMS)                # Moss Agate, from Data.lua's ns.GEMS
+        data = dataset(V4.replace("@q^1205^1:0:0", "@q^1205^1:7:1").replace("1205", "1206"))
+        self.assertEqual(data.kind(1206), "rare")
+
     def test_only_mobs_with_enough_kills(self):
         self.assertEqual(sorted(dataset().mobs), [3809, 4054])   # Plainstrider has 3 kills
 
@@ -83,8 +90,12 @@ class DataPagesTests(unittest.TestCase):
     def test_names_are_escaped(self):
         data = dataset()
         _, _, body = data_pages.mob_page(data, 4054, LINKS)
-        self.assertIn("Laughing Sister &amp; Co&#x27;s", body)
-        self.assertNotIn("Co's", body)
+        page = re.sub(r"<script.*?</script>", "", body)
+        self.assertIn("Laughing Sister &amp; Co&#x27;s", page)
+        self.assertNotIn("Co's", page)
+        script = re.search(r"<script[^>]*>(.*?)</script>", body).group(1)
+        self.assertNotIn("&", script)                     # escaped as \u0026 in the JSON
+        self.assertEqual(json.loads(script)["itemListElement"][-1]["name"], "Laughing Sister & Co's")
 
     def test_reagent_pages_and_farms(self):
         data = dataset()
@@ -96,6 +107,48 @@ class DataPagesTests(unittest.TestCase):
         self.assertLess(reagent.index("Ashenvale Bear"), reagent.index("Laughing"))   # 40% before 20%
         _, _, farms = pages["farms.html"]
         self.assertIn("Levels 21-30", farms)
+
+    def test_breadcrumbs_and_structured_data(self):
+        data = dataset()
+        _, _, body = data_pages.mob_page(data, 4054, LINKS)
+        script = re.search(r'<script type="application/ld\+json">(.*?)</script>', body).group(1)
+        crumbs = json.loads(script)
+        self.assertEqual(crumbs["@type"], "BreadcrumbList")
+        self.assertEqual([c["name"] for c in crumbs["itemListElement"]],
+                         ["Home", "Farms by level", "Levels 21-30", "Laughing Sister & Co's"])
+        self.assertEqual(crumbs["itemListElement"][2]["item"], "https://wowgoldscout.com/farms#levels-21-30")
+        _, _, farms = data_pages.farms_page(data, LINKS)
+        self.assertIn('id="levels-21-30"', farms)       # the breadcrumb's anchor exists
+
+    def test_summaries_and_descriptions(self):
+        data = dataset()
+        _, description, body = data_pages.mob_page(data, 3809, LINKS)
+        self.assertIn("Ashenvale Bear is a level 21-22 mob in Ashenvale in WoW Forever. GoldScout players have "
+                      "recorded 20 kills. Its most common crafting reagent is Big Bear Meat (40% of kills).", body)
+        self.assertIn("Big Bear Meat 40%", description)
+        _, description, body = data_pages.reagent_page(data, 3730, LINKS)
+        self.assertIn("looted it from 2 mobs; the most reliable is Ashenvale Bear (level 21-22, Ashenvale), "
+                      "which drops it on 40% of kills.", body)
+        self.assertIn("and 1 other mob in", description)
+        self.assertIn('href="/reagent/3702"', body)       # other reagents the same mobs drop
+
+    def test_zone_pages_and_links(self):
+        data = dataset()
+        pages = {}
+        paths = data_pages.build(data, LINKS, lambda path, *page: pages.__setitem__(path, page))
+        self.assertIn("/zone/1440", paths)
+        self.assertIn("/drop-rates", paths)
+        title, _, zone = pages["zone/1440.html"]
+        self.assertEqual(title, "Where to farm gold in Ashenvale (WoW Forever)")
+        self.assertIn('href="/mob/3809"', zone)
+        self.assertIn('href="/mob/4054"', zone)
+        self.assertIn("2 level 21-25 mobs in Ashenvale", zone)
+        _, _, mob = pages["mob/3809.html"]
+        self.assertIn('<a href="/zone/1440">Ashenvale</a>', mob)
+        self.assertIn("More farms in Ashenvale", mob)
+        self.assertIn('href="/drop-rates"', mob)
+        _, _, rates = pages["drop-rates.html"]
+        self.assertIn("1,000 kills per mob", rates)
 
     def test_without_item_details_everything_is_listed(self):
         v3 = "\n".join(line for line in V4.splitlines() if not line.startswith("@q"))
