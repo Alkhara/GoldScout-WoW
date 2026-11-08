@@ -18,6 +18,7 @@ form instead of a pull request.
 | `companion/` | GoldScout Companion, the Windows tray app that shares saved drop data |
 | `site/` | The website: `python site/build.py` writes it to `site/dist/` (Cloudflare Pages builds it on every push) |
 | `server/` | The upload service the companion sends data to (Cloudflare Worker + D1) |
+| `tools/check.py` | Runs every check (also used by CI and the pre-push hook) |
 | `tests/` | Tests for the data pipeline: `python -m unittest discover -s tests` |
 
 ## Working on the addon
@@ -49,10 +50,11 @@ For Lua error popups in game, use `/console scriptErrors 1` or BugSack.
   players through the submission form.
 - **Don't edit `Data_Community.lua` by hand.** It's generated from
   `data/submissions/`.
-- Run `python tools/luacheck_lite.py GoldScout/*.lua` and
-  `python -m unittest discover -s tests` before opening a pull
-  request. `pip install lupa` first to also run the Lua tests, which load the
-  addon's own `Community.lua` and `Learn.lua` in Lua 5.1.
+- Run `python tools/check.py` before opening a pull request: it checks the Lua,
+  lints the Python, validates the community data and runs every test.
+  `pip install pyflakes lupa` first to get all of it (the Lua tests load the
+  addon's own files in Lua 5.1). To run it before every push automatically:
+  `git config core.hooksPath tools/hooks`.
 
 By contributing code you agree it's released under the MIT License. Community
 data is covered by the [GoldScout Data License](DATA_LICENSE.md).

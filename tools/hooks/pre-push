@@ -1,0 +1,14 @@
+#!/bin/sh
+# Runs tools/check.py before every push. Enable once per clone:
+#   git config core.hooksPath tools/hooks
+# Uses the companion venv's Python when present (it has lupa and pyflakes).
+root=$(git rev-parse --show-toplevel)
+python="python"
+for candidate in "$root/companion/.venv/Scripts/python.exe" "$root/companion/.venv/bin/python"; do
+  if [ -x "$candidate" ]; then python="$candidate"; break; fi
+done
+echo "pre-push: running tools/check.py"
+"$python" "$root/tools/check.py" || {
+  echo "pre-push: checks failed; fix them before pushing."
+  exit 1
+}
