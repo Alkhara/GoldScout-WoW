@@ -65,6 +65,11 @@ def preflight(tag):
     latest = max(tags, key=version_key) if tags else None
     if latest and version_key(tag) <= version_key(latest):
         verify_release.fail("%s isn't newer than the latest release %s" % (tag, latest))
+    app = (ROOT / "companion" / "app.py").read_text(encoding="utf-8")
+    companion = re.search(r'^VERSION = "([^"]+)"', app, re.M)
+    if not companion or "v" + companion.group(1) != tag:
+        verify_release.fail("companion/app.py VERSION is %r; set it to %s first"
+                            % (companion and companion.group(1), tag[1:]))
     if git("rev-parse", "--abbrev-ref", "HEAD") != "main":
         verify_release.fail("not on main")
     if git("status", "--porcelain", "--untracked-files=no"):
