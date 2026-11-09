@@ -73,6 +73,7 @@ local ns = ...
 ns.Prices = {
   Get = function(_, id) local p = FAKE.prices[id]; if p then return p, 50, 60 end end,
   Market = function() local items = {}; for id, p in pairs(FAKE.prices) do items[id] = { p = p } end; return { items = items } end,
+  ItemIDs = function() local ids = {}; for id in pairs(FAKE.prices) do ids[id] = true end; return ids end,
 }
 ns.Professions = { Skills = function() return {} end }
 """

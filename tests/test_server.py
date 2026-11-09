@@ -197,6 +197,21 @@ class ServerTests(unittest.TestCase):
                 self.assertIn("error", reply)
         self.assertEqual(raw("/v1/prices/kr/%d" % house)[0], 404)
 
+    def test_realm_map_round_trip(self):
+        def put(body, admin=ADMIN):
+            return raw("/v1/admin/realms/kr", body, {"Authorization": "Bearer " + admin,
+                                                     "Content-Type": "application/json"}, "PUT")
+        self.assertEqual(put('{"A": 1}', admin="wrong")[0], 401)
+        for bad in ('[1, 2]', '{"A": "PvP"}', '{"<script>": 1}', '{"A": 0}', "nope"):
+            with self.subTest(bad):
+                self.assertEqual(put(bad)[0], 400)
+        self.assertEqual(put('{"TestRealm PvP": 1, "Other\'s Realm": 2}'), (200, {"status": "stored", "realms": 2}))
+        self.assertEqual(raw("/v1/prices")[1]["realms"]["kr"], {"Other's Realm": 2, "TestRealm PvP": 1})
+        self.assertEqual(put('{"TestRealm PvP": 3}')[0], 200)          # replaces the whole region
+        self.assertEqual(raw("/v1/prices")[1]["realms"]["kr"], {"TestRealm PvP": 3})
+        self.assertEqual(put("{}")[0], 200)
+        self.assertNotIn("kr", raw("/v1/prices")[1]["realms"])
+
 
 @unittest.skipUnless(SERVER and GITHUB_PORT, "set GOLDSCOUT_TEST_SERVER and GOLDSCOUT_TEST_GITHUB to test the crons")
 class CronTests(unittest.TestCase):

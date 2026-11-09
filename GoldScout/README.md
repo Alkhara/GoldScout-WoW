@@ -25,6 +25,11 @@ based on your level, class, faction and professions.
   when they are sold by vendors, otherwise the auction house price).
 - **Item tooltips** show the last auction house price, how many were listed,
   the average daily low, and the vendor price when known.
+- **Prices without scanning:** with GoldScout Companion running on Windows,
+  GoldScout also gets Blizzard's hourly auction house snapshot for your realm
+  (as of your last login or `/reload`) and uses whichever is newer for each
+  item, that or your own scan. When newer prices are waiting, the window offers
+  **Load newer prices**.
 - **Experience check**: on the Farm tab the **Lvl** column is green when every
   mob in that farm gives you experience, yellow when only some do, and gray when
   they're all gray to you. Tick **Gives XP** to hide the no-experience farms.
@@ -126,7 +131,10 @@ stays in your own SavedVariables.
 
 ## How the numbers work
 
-- **Prices** are the lowest buyout per unit at the last scan. One cheap listing
+- **Prices** are the lowest buyout per unit at your last scan, or in Blizzard's
+  hourly snapshot from GoldScout Companion when that's newer (tooltips say
+  "Blizzard data"). Auction data from the Blizzard Entertainment Game Data API;
+  GoldScout is not affiliated with or endorsed by Blizzard. One cheap listing
   can make an item look cheaper than it really is; the **Listed** column shows
   how deep the market is, and rows with few listings warn you in the tooltip.
 - **Each** is the expected value of one kill, node, skin or pickpocket: price
@@ -161,7 +169,9 @@ Every shared export makes the rankings better for everyone.
 - Pickpocket values count the junkbox contents, not the coin you also get.
 - Enchants have no item to sell, so enchanting recipes are not ranked.
 - Prices are per realm and faction; Alliance and Horde characters each need
-  their own scan.
+  their own scan, unless GoldScout Companion brings them in.
+- Companion prices update only at login or `/reload`: the game can't load new
+  files while you play.
 
 ## Troubleshooting
 

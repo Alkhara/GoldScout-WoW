@@ -486,6 +486,29 @@ function UI:Create()
   end)
   f.scanButton:SetScript("OnLeave", HideTip)
 
+  -- GoldScout Companion saves Blizzard's hourly auction snapshot as an addon
+  -- file, which the game only reads at login or /reload.
+  f.reloadButton = CreateFrame("Button", nil, f, "UIPanelButtonTemplate")
+  f.reloadButton:SetSize(140, 22)
+  f.reloadButton:SetPoint("TOPRIGHT", f.scanButton, "TOPLEFT", -6, 0)
+  f.reloadButton:SetText("Load newer prices")
+  f.reloadButton:SetScript("OnClick", function()
+    if InCombatLockdown and InCombatLockdown() then
+      ns.Print("Leave combat first, then load newer prices.")
+      return
+    end
+    ReloadUI()
+  end)
+  f.reloadButton:SetScript("OnEnter", function(self)
+    local written = ns.Prices:CompanionWritten()
+    ShowTip(self, "Reloads the interface, like /reload, so GoldScout reads the newest prices GoldScout "
+      .. "Companion has saved. It saves new ones about once an hour"
+      .. (written and ("; the ones loaded now were saved " .. ns.Age(time() - written)) or "") .. ". "
+      .. ns.Prices.SOURCE)
+  end)
+  f.reloadButton:SetScript("OnLeave", HideTip)
+  f.reloadButton:Hide()
+
   f.huntButton = CreateFrame("Button", nil, f, "UIPanelButtonTemplate")
   f.huntButton:SetSize(85, 22)
   f.huntButton:SetPoint("TOPRIGHT", -22, -64)
@@ -701,13 +724,16 @@ function UI:UpdateHeaderText()
     end
   end
 
-  local count, lastScan = ns.Prices:Summary()
+  local count, lastScan, snapshot = ns.Prices:Summary()
   local status
   if scanning then
     local pages, items = ns.Scanner:Progress()
     status = ("Scanning the auction house: page %d, %d items so far."):format(pages or 0, items or 0)
   elseif count == 0 then
     status = "No prices yet. Open the auction house and press Scan AH."
+  elseif snapshot then
+    status = ("%d prices for %s: Blizzard snapshot %s, your last scan %s."):format(count, ns.MarketKey(),
+      ns.Age(time() - snapshot), lastScan and ns.Age(time() - lastScan) or "never")
   else
     status = ("%d prices for %s, last full scan %s."):format(count, ns.MarketKey(),
       lastScan and ns.Age(time() - lastScan) or "never")
@@ -716,6 +742,9 @@ function UI:UpdateHeaderText()
     end
   end
   f.statusText:SetText(status)
+  -- The companion writes a new file about once an hour; offer to load it.
+  local written = ns.Prices:CompanionWritten()
+  f.reloadButton:SetShown(written ~= nil and time() - written > 65 * 60 and not scanning)
   self:UpdateHuntButton()
 end
 
@@ -993,7 +1022,7 @@ local function AddTooltipPrices(tooltip, itemID)
   if not ns.db or not ns.db.settings.tooltip or not itemID or inRowTooltip then
     return
   end
-  local price, listed, age = ns.Prices:Get(itemID)
+  local price, listed, age, source = ns.Prices:Get(itemID)
   local vendor = ns.db.vendor[itemID]
   if not price and not vendor then
     return
@@ -1003,7 +1032,8 @@ local function AddTooltipPrices(tooltip, itemID)
     if listed == 0 then
       text = text .. Gray(" (none listed)")
     end
-    tooltip:AddDoubleLine("GoldScout AH (" .. ns.Age(age) .. ")", text, 1, 0.82, 0, 1, 1, 1)
+    local label = source == "blizzard" and "GoldScout AH, Blizzard data (" or "GoldScout AH ("
+    tooltip:AddDoubleLine(label .. ns.Age(age) .. ")", text, 1, 0.82, 0, 1, 1, 1)
     local average, days = ns.Prices:Average(itemID)
     if average and days and days > 1 then
       tooltip:AddDoubleLine(("GoldScout %d-day avg low"):format(days), ns.Money(average), 1, 0.82, 0, 1, 1, 1)

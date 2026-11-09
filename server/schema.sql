@@ -38,3 +38,13 @@ CREATE TABLE IF NOT EXISTS ah_houses (
   prices TEXT NOT NULL,
   PRIMARY KEY (region, house)
 );
+
+-- Which ruleset each realm uses (from data/ah_houses.json, sent by
+-- tools/ah_prices.py), so GoldScout Companion can pick a player's auction
+-- house from their realm name. Realm names only; no player data.
+CREATE TABLE IF NOT EXISTS ah_realms (
+  region TEXT NOT NULL,
+  realm TEXT NOT NULL,      -- GetNormalizedRealmName(), e.g. CAMWOWUS2Realm2PvP
+  ruleset INTEGER NOT NULL,
+  PRIMARY KEY (region, realm)
+);

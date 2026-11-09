@@ -1,7 +1,8 @@
 # GoldScout Companion
 
 A small Windows app that shares the drop rates GoldScout learns from your loot,
-automatically, from the system tray. More at https://wowgoldscout.com.
+automatically, from the system tray, and brings current auction house prices
+into GoldScout without scanning. More at https://wowgoldscout.com.
 
 1. Download `GoldScoutCompanion.exe` from the latest
    [release](https://github.com/Alkhara/GoldScout-WoW/releases) and run it.
@@ -17,8 +18,8 @@ automatically, from the system tray. More at https://wowgoldscout.com.
 
 It never shows notifications, so nothing pops up over your game. Click the tray
 icon to open the window, which shows what GoldScout has learned and when it
-last shared. The tray menu can pause automatic sharing, turn off starting with
-Windows, check for updates, or quit. Closing the window keeps the companion running in the tray.
+last shared. The tray menu can pause automatic sharing, turn auction prices off,
+turn off starting with Windows, check for updates, or quit. Closing the window keeps the companion running in the tray.
 
 **Updates are one click.** When a new version is out, the window and the tray
 menu show **Update**. The companion downloads it, checks it's the genuine signed
@@ -29,11 +30,31 @@ update themselves: download the new exe once and replace the old one.)
 If you choose **Not now**, nothing is uploaded. **Share now** then opens the
 Share drop data form on GitHub with your export filled in instead.
 
+## Auction prices in GoldScout
+
+About once an hour the companion saves the latest auction house prices for your
+realms (from Blizzard's hourly snapshot) in a small `GoldScout_Prices` addon.
+GoldScout uses them for every item you haven't scanned more recently yourself,
+so your own scan still wins when it's newer. This works whether or not you share
+drop data.
+
+The game only reads addon files when you log in or `/reload`, so GoldScout has
+the prices from your last login. When newer ones are waiting, GoldScout's window
+shows **Load newer prices**, which reloads the interface for you.
+
+The first time, GoldScout needs to know which auction house is yours. Most
+realms are already known; on one that isn't, scan the auction house once in
+GoldScout, then log out or `/reload`, and the companion matches your scan to
+the right auction house within the hour (on your PC; nothing is uploaded).
+Turn auction prices off from the tray menu; that also removes the
+`GoldScout_Prices` folder.
+
 ## What it does and doesn't do
 
 - It reads only GoldScout's saved data
-  (`_forever_\WTF\Account\<account>\SavedVariables\GoldScout.lua`). It never
-  changes game files and never touches the game while it's running.
+  (`_forever_\WTF\Account\<account>\SavedVariables\GoldScout.lua`). The
+  only thing it writes in the WoW folder is the `GoldScout_Prices` addon, and it
+  never touches the game while it's running.
 - It uploads only GoldScout's drop data exports: creature and item IDs, kill and
   drop counts, levels and loot locations, plus a random ID for your GoldScout
   data. Never character, account or realm names.

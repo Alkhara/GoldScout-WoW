@@ -1,9 +1,12 @@
-"""GoldScout Companion: shares your GoldScout drop data automatically.
+"""GoldScout Companion: shares your GoldScout drop data automatically and
+brings auction house prices into GoldScout.
 
 It lives in the system tray, finds WoW Forever, reads the export GoldScout
 saves, checks it with the same validator the GoldScout data bot uses, and
-uploads new snapshots once you've agreed to the Contributor Terms. It only
-reads game files and never changes them, and it never shows notifications.
+uploads new snapshots once you've agreed to the Contributor Terms. Every hour
+it also writes the latest auction prices for your realms into the
+GoldScout_Prices data addon (auction_prices.py), the only thing it changes in
+the WoW folder. It never shows notifications.
 
 Run:  python companion/app.py          (--tray starts hidden in the tray)
 """
@@ -11,6 +14,7 @@ import argparse
 import json
 import os
 import queue
+import random
 import sys
 import threading
 import time
@@ -23,6 +27,7 @@ from tkinter import filedialog, messagebox, ttk
 HERE = Path(getattr(sys, "_MEIPASS", Path(__file__).resolve().parent))
 sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(HERE.parent / "tools"))
+import auction_prices  # noqa: E402
 import savedvars  # noqa: E402
 import submission  # noqa: E402
 import system  # noqa: E402
@@ -39,6 +44,9 @@ RETRY_SECONDS = 300      # wait after a failed upload before trying again
 FIRST_CHECK_MS = 30000   # first update check, after startup settles
 CHECK_EVERY_MS = 6 * 3600 * 1000
 HANDOVER_SECONDS = 25    # how long a new version gets to start before we roll back
+PRICE_MINUTE = 25        # check for new prices at :25 UTC (Blizzard's snapshot ~:16, on the server by ~:22)
+PRICE_RETRY_SECONDS = 600
+FIRST_PRICE_MS = 8000
 CONFIG_DIR = Path(os.environ.get("APPDATA", Path.home())) / "GoldScout Companion"
 CONFIG_FILE = CONFIG_DIR / "config.json"
 SHOW_REQUEST = CONFIG_DIR / "show.request"
@@ -81,6 +89,7 @@ class App:
         self.uploading = False
         self.tray = None
         self.update, self.updating = None, False
+        self.pricing, self.price_timer, self.price_keys = False, None, None
 
         root.title("GoldScout Companion")
         root.minsize(560, 420)
@@ -111,6 +120,8 @@ class App:
         self.clean_up_updates(30)
         if self.can_update():
             self.root.after(FIRST_CHECK_MS, self.check_updates)
+        self.update_prices_status()
+        self.schedule_prices(FIRST_PRICE_MS)
 
     # -- consent and settings -------------------------------------------------
     def has_consent(self):
@@ -149,8 +160,10 @@ class App:
             "system tray and uploads new data after you log out or /reload.\n\n"
             "What's shared: creature and item IDs and names, kill and drop counts, mob levels, where "
             "you looted, and which items your professions can make, plus a random ID for your "
-            "GoldScout data. Never character, account or realm names. It only reads GoldScout's "
-            "saved data and never changes game files.")
+            "GoldScout data. Never character, account or realm names.\n\n"
+            "It also brings auction house prices into GoldScout: about once an hour it saves the "
+            "latest prices for your realms in a small GoldScout_Prices addon, the only thing it "
+            "changes in your WoW folder. That works even if you don't share.")
         ).grid(sticky="w", pady=(10, 10))
         links = ttk.Frame(frame)
         links.grid(sticky="w")
@@ -219,10 +232,14 @@ class App:
         self.copy_button.pack(side="left", padx=8)
         ttk.Button(buttons, text="Refresh", command=self.refresh).pack(side="left")
 
+        self.prices_label = ttk.Label(frame, text="", foreground="#555", wraplength=520, justify="left")
+        self.prices_label.grid(row=5, column=0, sticky="w", pady=(10, 0))
+
         ttk.Label(frame, foreground="#777", wraplength=520, font=("Segoe UI", 8), text=(
             "Closing this window keeps the companion running in the system tray. GoldScout saves its "
-            "data when you log out or type /reload, so new loot shows up here after that. "
-            "Companion " + VERSION)).grid(row=5, column=0, sticky="w", pady=(12, 0))
+            "data when you log out or type /reload, so new loot shows up here after that. Auction "
+            "prices: Blizzard Entertainment Game Data API; GoldScout isn't affiliated with or endorsed "
+            "by Blizzard. Companion " + VERSION)).grid(row=6, column=0, sticky="w", pady=(12, 0))
         return frame
 
     def show_welcome(self):
@@ -275,6 +292,9 @@ class App:
             pystray.MenuItem("Open GoldScout Companion", lambda: self.events.put(self.show), default=True),
             pystray.MenuItem("Share automatically", lambda: self.events.put(
                 lambda: self.set_auto_share(not self.auto_share())), checked=lambda _: self.auto_share()),
+            pystray.MenuItem("Auction prices in GoldScout", lambda: self.events.put(
+                lambda: self.set_prices_enabled(not self.prices_enabled())),
+                checked=lambda _: self.prices_enabled()),
             pystray.MenuItem("Start with Windows", lambda: self.events.put(
                 lambda: self.set_start_with_windows(not system.start_with_windows_enabled())),
                 checked=lambda _: system.start_with_windows_enabled(),
@@ -523,6 +543,10 @@ class App:
             self.show_account()
         self.update_share_status()
         self.maybe_upload()
+        keys = sorted(auction_prices.wanted_markets(self.accounts, time.time())) if self.forever else []
+        if self.price_keys is not None and keys != self.price_keys:
+            self.schedule_prices(1000)   # a new realm or a new scan: no need to wait for the hour
+        self.price_keys = keys
 
     def show_account(self):
         chosen = self.account_choice.get() if len(self.accounts) > 1 else self.accounts[0].name
@@ -618,6 +642,93 @@ class App:
         if self.account:
             self.since_label.configure(text=self.since_text(self.account) if self.account.export else "")
         self.update_share_status()
+
+    # -- auction prices -------------------------------------------------------
+    def prices_enabled(self):
+        return self.config.get("prices_enabled", True)
+
+    def set_prices_enabled(self, enabled):
+        self.config["prices_enabled"] = enabled
+        save_config(self.config)
+        if enabled:
+            self.schedule_prices(500)
+        elif self.forever and auction_prices.remove_addon(self.forever):
+            self.config.get("price_state", {}).pop("written", None)
+            save_config(self.config)
+        self.update_tray()
+        self.update_prices_status()
+
+    def schedule_prices(self, delay_ms=None):
+        if self.price_timer:
+            self.root.after_cancel(self.price_timer)
+        if delay_ms is None:
+            now = time.time()
+            target = int(now // 3600) * 3600 + PRICE_MINUTE * 60
+            if target <= now:
+                target += 3600
+            delay_ms = int((target - now + random.uniform(0, 180)) * 1000)
+        self.price_timer = self.root.after(delay_ms, self.check_prices)
+
+    def check_prices(self):
+        """Hourly: brings the GoldScout_Prices data addon up to date (on a worker thread)."""
+        self.price_timer = None
+        if self.pricing:
+            return   # the running check reschedules when it finishes
+        if not self.prices_enabled() or not self.forever:
+            self.update_prices_status()
+            self.schedule_prices()
+            return
+        self.pricing = True
+        forever, accounts = self.forever, list(self.accounts)
+        state = json.loads(json.dumps(self.config.get("price_state", {})))
+
+        def work():
+            try:
+                summary = auction_prices.update(
+                    forever, accounts, state, time.time(),
+                    fetch=lambda path: auction_prices.get_json(path, VERSION))
+                problem = summary.get("problem")
+            except (auction_prices.PriceError, OSError, KeyError, TypeError, ValueError) as error:
+                summary, problem = None, str(error)
+            self.events.put(lambda: self.prices_done(state, summary, problem))
+        threading.Thread(target=work, daemon=True).start()
+
+    def prices_done(self, state, summary, problem):
+        self.pricing = False
+        if summary is not None:
+            self.config["price_state"] = state
+        previous = (self.config.get("price_status") or {}).get("summary")
+        self.config["price_status"] = {"time": time.time(), "problem": problem,
+                                       "summary": summary if summary is not None else previous}
+        save_config(self.config)
+        self.update_prices_status()
+        self.schedule_prices(PRICE_RETRY_SECONDS * 1000 if summary is None else None)
+
+    def update_prices_status(self):
+        if not self.prices_enabled():
+            text = "Auction prices in GoldScout are off. Turn them on from the tray icon."
+        else:
+            status = self.config.get("price_status") or {}
+            summary = status.get("summary") or {}
+            markets = summary.get("markets") or {}
+            parts = []
+            for key in sorted(markets):
+                minutes = max(0, int((time.time() - markets[key]["snapshot"]) // 60))
+                age = "%d min" % minutes if minutes < 90 else "%d h" % (minutes // 60)
+                parts.append("%s (%s old)" % (key, age))
+            if parts:
+                text = ("Auction prices in GoldScout: " + ", ".join(parts) +
+                        ". GoldScout loads them at login or /reload.")
+            elif summary.get("unknown"):
+                text = ("Auction prices: GoldScout doesn't know your auction house yet. Scan it once in "
+                        "GoldScout, then log out or /reload; the companion matches it within the hour.")
+            elif summary:
+                text = "Auction prices: log in with GoldScout installed once, then they'll be saved for it."
+            else:
+                text = "Auction prices: checking..."
+            if status.get("problem"):
+                text += "  Last check: " + status["problem"]
+        self.prices_label.configure(text=text)
 
     # -- manual sharing -------------------------------------------------------
     def copy(self):

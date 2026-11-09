@@ -97,15 +97,9 @@ def mapping_for(config, region, house):
     return ruleset, config["rulesets"][str(ruleset)], entry["faction"]
 
 
-def score(scan, house_prices):
-    """How well a player's scan {item: price} matches a house {item: [price, qty]}.
-
-    Returns (items in common, share of them with the same lowest price)."""
-    common = [i for i in scan if i in house_prices]
-    if not common:
-        return 0, 0.0
-    same = sum(1 for i in common if abs(house_prices[i][0] - scan[i]) <= 1)
-    return len(common), same / len(common)
+# The companion matches scans to houses the same way (companion/auction_prices.py).
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "companion"))
+from auction_prices import clear_match, score  # noqa: E402,F401
 
 
 # ---------------------------------------------------------------------------
@@ -226,6 +220,7 @@ def fetch(args):
     if status != 200:
         raise SystemExit("GoldScout server %s/v1/prices: HTTP %s %s" % (s["api"], status, stored))
     known = {(h["region"], h["house"]): h for h in stored.get("houses", [])}
+    realm_notes = sync_realms(s, config, stored)
 
     blizzard = Blizzard(s["client_id"], s["client_secret"])
     houses = house_list(blizzard)
@@ -273,7 +268,8 @@ def fetch(args):
             house, ruleset_name or "?", answer.get("status", "stored"), len(prices), age_text(snapshot)))
 
     report = ["**Auction prices:** %d house(s) updated, %d failed, %d Blizzard API calls." % (
-        updated, failed, blizzard.calls), "", "| House | Ruleset | Result | Snapshot |", "|---|---|---|---|"] + lines
+        updated, failed, blizzard.calls)] + realm_notes + [
+        "", "| House | Ruleset | Result | Snapshot |", "|---|---|---|---|"] + lines
     print("\n".join(report))
     summary = os.environ.get("GITHUB_STEP_SUMMARY")
     if summary:
@@ -283,6 +279,21 @@ def fetch(args):
     # one house hiccupping is retried by the next run 15 minutes later.
     if failed and failed == len(houses):
         sys.exit(1)
+
+
+def sync_realms(s, config, stored):
+    """Sends data/ah_houses.json's realm map to the server when it differs, so
+    GoldScout Companion can find a player's auction house from the realm name."""
+    notes = []
+    for region, realms in sorted(config.get("realms", {}).items()):
+        if stored.get("realms", {}).get(region) == realms:
+            continue
+        status, answer = server_request(s["api"], "/v1/admin/realms/%s" % region, s["admin"], "PUT",
+                                        json.dumps(realms, sort_keys=True),
+                                        {"Content-Type": "application/json"})
+        notes.append("Realm map for %s: %s" % (region, answer.get("status") if status == 200 else
+                                               "**not stored** (HTTP %s %s)" % (status, answer.get("error", ""))))
+    return notes
 
 
 def age_text(unix):
@@ -328,12 +339,11 @@ def match(args):
     for key, (scan, newest) in sorted(scans.items()):
         hours = (time.time() - newest) / 3600
         ranked = sorted(((score(scan, house_prices[h]), h) for h in house_prices), key=lambda x: -x[0][1])
-        (common, best), house = ranked[0]
-        runner_up = ranked[1][0][1] if len(ranked) > 1 else 0
         print("\n%s (scan %.1f h old, %d items)" % (key, hours, len(scan)))
         for (n, share), h in ranked[:4]:
             print("  house %d (%s): %d items in common, %.0f%% same lowest price" % (h, houses[h][0], n, 100 * share))
-        if common >= 200 and best >= 0.4 and best >= 2 * runner_up:
+        house = clear_match(ranked)
+        if house:
             print("  -> clear match: house %d. Add it to data/ah_houses.json with this realm's ruleset." % house)
         else:
             print("  -> no clear match; scan again at the auction house and run this soon after.")

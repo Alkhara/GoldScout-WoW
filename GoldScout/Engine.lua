@@ -686,7 +686,7 @@ function Engine:Farms()
         end
       end
     end
-    for itemID in pairs(ns.Prices:Market().items) do
+    for itemID in pairs(ns.Prices:ItemIDs()) do
       if not covered[itemID] and not gathered[itemID] then
         local facts = ReagentFacts(itemID)
         local itemLevel = facts and facts.level

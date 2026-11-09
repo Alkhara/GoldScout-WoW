@@ -1,6 +1,6 @@
 # GoldScout Privacy Policy
 
-*Last updated: November 9, 2026*
+*Last updated: November 10, 2026*
 
 This policy covers the GoldScout addon and the drop data players share with it.
 GoldScout is maintained by GitHub user Alkhara ("we" below).
@@ -14,6 +14,8 @@ data with other players. Everything it records stays in your own WoW folder, in
 files next to it:
 
 - auction house prices from your scans, per realm and faction
+- which realms and factions you've played, and when (so GoldScout Companion
+  knows which auction houses' prices to save for you)
 - vendor prices you've seen
 - your characters' profession skills and known recipes
 - what you've looted from creatures, how often, at what level and where
@@ -23,8 +25,9 @@ files next to it:
 ## GoldScout Companion
 
 The companion app for Windows reads GoldScout's saved data file
-(`GoldScout.lua` in each account's SavedVariables folder). It never changes game
-files and never shows notifications.
+(`GoldScout.lua` in each account's SavedVariables folder) and never shows
+notifications. The only thing it changes in your WoW folder is the
+`GoldScout_Prices` addon folder described below.
 
 When you first open it, it asks you to agree to the
 [Contributor Terms](CONTRIBUTOR_TERMS.md). If you agree, it shares
@@ -41,9 +44,23 @@ uses it only if the file matches the release's published hash and is code-signed
 by GoldScout's publisher. GitHub sees your IP address for these requests, as
 described in its [privacy statement](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement).
 
+**Auction prices.** About once an hour the companion downloads current auction
+house prices from the GoldScout server for the realms and factions you've played
+in the last 30 days, and saves them in `Interface\AddOns\GoldScout_Prices`, so
+GoldScout can show them in game. These downloads work whether or not you share
+drop data, and send nothing about you: the request names only an auction house
+number. Your realm names stay on your PC. To find your auction house when the
+server doesn't know your realm yet, the companion compares your own recent
+GoldScout scan with each auction house, on your PC. The prices come from
+Blizzard's Game Data API, and the companion removes them once they're more than
+30 days old. You can turn this off from the tray icon, which also removes the
+folder.
+
 On your PC it stores, in `%APPDATA%\GoldScout Companion\config.json`: your WoW
-folder location, whether you agreed to the terms and when, your settings, and
-for each install the upload token and the last snapshot it uploaded.
+folder location, whether you agreed to the terms and when, your settings, for
+each install the upload token and the last snapshot it uploaded, and for auction
+prices which auction house matches each of your realms and when it last saved
+them.
 
 ## The upload service
 
@@ -109,8 +126,8 @@ can't be separated from other players' data.
 
 wowgoldscout.com has no accounts, cookies, analytics or ads. Its farm, mob,
 reagent and zone pages load current auction house prices from the GoldScout
-server (goldscout-api.cawley22.workers.dev). Like any website, Cloudflare
-sees your IP address for those requests; we don't store it. The realm type
+server (goldscout-api.cawley22.workers.dev), as the companion does. Like any
+website, Cloudflare sees your IP address for those requests; we don't store it. The realm type
 and faction you pick for prices is remembered in your own browser (local
 storage); it only decides which auction house's prices your browser downloads.
 

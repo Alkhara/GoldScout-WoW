@@ -13,6 +13,7 @@ the uploads and opens the data pull request for review.
 | `GET /v1/prices` | Every WoW Forever auction house with prices: ruleset, faction, snapshot time, item count. Public. |
 | `GET /v1/prices/<region>/<house>` | One house's prices: `{"itemID": [lowest unit buyout in copper, quantity listed]}`. Public. |
 | `PUT /v1/admin/prices/<region>/<house>` | Admin only. `tools/ah_prices.py fetch` sends each new snapshot. |
+| `PUT /v1/admin/realms/<region>` | Admin only. `tools/ah_prices.py fetch` sends the realm map from `data/ah_houses.json` (`{"realm": ruleset}`) when it changes; `GET /v1/prices` lists it as `realms`, so GoldScout Companion can pick a player's auction house. |
 | `GET /health` | Returns `{"ok": true}`. |
 
 It fits in Cloudflare's free plan.

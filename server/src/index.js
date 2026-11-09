@@ -16,6 +16,8 @@
 //                      {"itemID": [lowest unit buyout in copper, quantity]}.
 //   PUT  /v1/admin/prices/<region>/<house>   admin only; tools/ah_prices.py
 //                      sends each new snapshot (metadata in X- headers).
+//   PUT  /v1/admin/realms/<region>   admin only; {"realm": ruleset id}, the
+//                      whole map for that region (listed by GET /v1/prices).
 //   GET  /health
 //
 // Cron triggers (wrangler.toml) start GitHub workflows on time: GitHub's own
@@ -43,6 +45,9 @@ const REGIONS = new Set(["us", "eu", "kr", "tw"]);
 const AH_FACTIONS = new Set(["Alliance", "Horde", "Neutral"]);
 const HOUSE_PATH = /^\/v1\/prices\/([a-z]{2})\/([0-9]{1,6})$/;
 const ADMIN_HOUSE_PATH = /^\/v1\/admin\/prices\/([a-z]{2})\/([0-9]{1,6})$/;
+const ADMIN_REALMS_PATH = /^\/v1\/admin\/realms\/([a-z]{2})$/;
+const REALM_NAME = /^[A-Za-z0-9' -]{1,64}$/;
+const MAX_REALMS = 500;
 const REPOSITORY = "Alkhara/GoldScout-WoW";
 const SCHEDULE = {
   "7,22,37,52 * * * *": ["ah-prices.yml"], // Blizzard's snapshots land around :16
@@ -72,6 +77,10 @@ export default {
       const adminHouse = ADMIN_HOUSE_PATH.exec(url.pathname);
       if (adminHouse && request.method === "PUT") {
         return await storePrices(request, env, adminHouse[1], Number(adminHouse[2]));
+      }
+      const adminRealms = ADMIN_REALMS_PATH.exec(url.pathname);
+      if (adminRealms && request.method === "PUT") {
+        return await storeRealms(request, env, adminRealms[1]);
       }
       return json({ error: "Not found." }, 404);
     } catch (error) {
@@ -220,7 +229,14 @@ async function priceHouses(env) {
   const { results } = await env.DB.prepare(
     `SELECT ${HOUSE_COLUMNS} FROM ah_houses WHERE snapshot >= ? ORDER BY region, house`,
   ).bind(oldest).all();
-  return publicJson(JSON.stringify({ source: SOURCE, houses: results.map(houseInfo) }));
+  const realms = {};
+  const { results: realmRows } = await env.DB.prepare(
+    "SELECT region, realm, ruleset FROM ah_realms ORDER BY region, realm",
+  ).all();
+  for (const row of realmRows) {
+    (realms[row.region] = realms[row.region] || {})[row.realm] = row.ruleset;
+  }
+  return publicJson(JSON.stringify({ source: SOURCE, houses: results.map(houseInfo), realms }));
 }
 
 async function housePrices(env, region, house) {
@@ -277,6 +293,34 @@ async function storePrices(request, env, region, house) {
     env.DB.prepare("DELETE FROM ah_houses WHERE snapshot < ?").bind(now - MAX_AGE_SECONDS),
   ]);
   return json({ status: previous && previous.snapshot === snapshot ? "unchanged" : "stored" });
+}
+
+// Replaces a region's realm map. The body is small (a few dozen realms), so
+// parsing it fits in the free plan's CPU time.
+async function storeRealms(request, env, region) {
+  if (!env.ADMIN_TOKEN || !sameText(bearer(request), env.ADMIN_TOKEN)) {
+    return json({ error: "Not allowed." }, 401);
+  }
+  if (!REGIONS.has(region) || Number(request.headers.get("Content-Length") || 0) > 50000) {
+    return json({ error: "Unknown region or body too large." }, 400);
+  }
+  let map;
+  try {
+    map = JSON.parse(await request.text());
+  } catch {
+    return json({ error: "The body must be JSON." }, 400);
+  }
+  const entries = map && typeof map === "object" && !Array.isArray(map) ? Object.entries(map) : null;
+  if (!entries || entries.length > MAX_REALMS ||
+      !entries.every(([realm, ruleset]) => REALM_NAME.test(realm) && Number.isInteger(ruleset) && ruleset > 0)) {
+    return json({ error: "Expected {\"realm name\": ruleset id}." }, 400);
+  }
+  await env.DB.batch([
+    env.DB.prepare("DELETE FROM ah_realms WHERE region = ?").bind(region),
+    ...entries.map(([realm, ruleset]) =>
+      env.DB.prepare("INSERT INTO ah_realms (region, realm, ruleset) VALUES (?, ?, ?)").bind(region, realm, ruleset)),
+  ]);
+  return json({ status: "stored", realms: entries.length });
 }
 
 // Starts each workflow on main. Failures are logged (Workers Logs) and fail

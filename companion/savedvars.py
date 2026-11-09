@@ -1,6 +1,7 @@
 """Reads GoldScout's SavedVariables and builds a drop data export from them.
 
-The companion only ever reads these files; it never writes to the WoW folder.
+The companion only ever reads these files. (The one thing it writes in the WoW
+folder is the GoldScout_Prices data addon; see auction_prices.py.)
 """
 import re
 import string
@@ -210,6 +211,10 @@ class Account:
         drops = database.get("drops") or {}
         self.has_loot = any(isinstance(entry, dict) and (entry.get("k") or entry.get("p"))
                             for entry in drops.values())
+        # Your own auction house scans and the realms you've played, so the
+        # companion knows which auction houses' prices to fetch for you.
+        self.markets = database.get("markets") if isinstance(database.get("markets"), dict) else {}
+        self.seen_markets = database.get("seenMarkets") if isinstance(database.get("seenMarkets"), dict) else {}
 
 
 def read_accounts(forever):
