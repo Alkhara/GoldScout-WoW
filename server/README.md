@@ -17,6 +17,13 @@ the uploads and opens the data pull request for review.
 
 It fits in Cloudflare's free plan.
 
+It also starts two GitHub workflows on a schedule, because GitHub's own
+schedule can skip runs for hours: `Auction prices` at :07, :22, :37 and :52,
+and `Merge community data` at :17 (cron triggers in `wrangler.toml`, mapped to
+workflows by `SCHEDULE` in `src/index.js`). This needs the
+`GITHUB_DISPATCH_TOKEN` secret (step 6 below); without it the crons do nothing
+and the workflows rely on GitHub's schedule alone.
+
 Auction prices come from Blizzard's Game Data API (the `Auction prices`
 workflow checks for new snapshots every 15 minutes). Blizzard's API terms
 require naming Blizzard as the source, which every price response does, and
@@ -36,22 +43,29 @@ From this folder, with Node.js installed:
    `python -c "import secrets; print(secrets.token_hex(32))"`:
    - `npx wrangler secret put ADMIN_TOKEN`: lets the GitHub merge workflow read uploads.
    - `npx wrangler secret put IP_SALT`: used to hash addresses for rate limiting.
-6. `npx wrangler deploy`. It prints the service URL, for example
+6. Optional, to start the workflows on time: create a fine-grained GitHub
+   token (GitHub → Settings → Developer settings → Fine-grained tokens) with
+   access to only this repository and one permission, **Actions: Read and
+   write**. Then `npx wrangler secret put GITHUB_DISPATCH_TOKEN` and paste it.
+   GitHub tokens expire; replace it the same way before it does.
+7. `npx wrangler deploy`. It prints the service URL, for example
    `https://goldscout-api.<your-subdomain>.workers.dev`.
-7. Check it: open `<URL>/health` in a browser.
-8. In GitHub (repository Settings → Secrets and variables → Actions →
+8. Check it: open `<URL>/health` in a browser.
+9. In GitHub (repository Settings → Secrets and variables → Actions →
    Secrets), add a repository secret `GOLDSCOUT_API_ADMIN` set to the same
    value as `ADMIN_TOKEN`. The merge workflow uses the live server's address by
    default; a repository variable `GOLDSCOUT_API_URL` overrides it.
-9. Put the URL in `companion/uploader.py` (`UPLOAD_URL`) and release a new
+10. Put the URL in `companion/uploader.py` (`UPLOAD_URL`) and release a new
    companion.
 
 ## Developing locally
 
 1. `npm install`
 2. Create `.dev.vars` with `ADMIN_TOKEN=local-admin-token`, `IP_SALT=local-salt`
-   and `MIN_SECONDS_BETWEEN_UPLOADS=0`. Git ignores this file.
+   and `MIN_SECONDS_BETWEEN_UPLOADS=0`. Git ignores this file. For the cron
+   tests, add `GITHUB_DISPATCH_TOKEN=local-dispatch-token` and
+   `GITHUB_API=http://127.0.0.1:8798`.
 3. `npx wrangler d1 execute goldscout --local --file schema.sql`
-4. `npx wrangler dev --local --port 8799`
+4. `npx wrangler dev --local --port 8799 --test-scheduled`
 5. From the repository root:
-   `GOLDSCOUT_TEST_SERVER=http://127.0.0.1:8799 python -m unittest tests.test_server`
+   `GOLDSCOUT_TEST_SERVER=http://127.0.0.1:8799 GOLDSCOUT_TEST_GITHUB=8798 python -m unittest tests.test_server`

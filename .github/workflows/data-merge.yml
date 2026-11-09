@@ -1,5 +1,7 @@
-# Every hour (or when run by hand), gathers new drop data and opens or updates
-# a pull request that adds it to data/submissions/ and regenerates
+# Every hour (started by the GoldScout server's cron trigger, with GitHub's own
+# schedule as a backup; see server/README.md), or when run by hand, gathers
+# new drop data and opens or updates a pull request that adds it to
+# data/submissions/ and regenerates
 # GoldScout/Data_Community.lua:
 #   - open issues labeled data-valid or data-approved (the Share drop data form)
 #   - companion uploads from the upload service (server/), once the

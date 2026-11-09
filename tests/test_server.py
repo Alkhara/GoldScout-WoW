@@ -5,9 +5,17 @@ set. Locally (from server/):
   npx wrangler d1 execute goldscout --local --file schema.sql
   npx wrangler dev --local --port 8787     (.dev.vars sets ADMIN_TOKEN etc.)
 then:  GOLDSCOUT_TEST_SERVER=http://127.0.0.1:8787 python -m unittest tests.test_server
+
+The cron test also needs the server started with --test-scheduled, .dev.vars
+lines GITHUB_DISPATCH_TOKEN=local-dispatch-token and
+GITHUB_API=http://127.0.0.1:8798, and GOLDSCOUT_TEST_GITHUB=8798 (the port the
+test's stand-in for GitHub listens on).
 """
+import http.server
 import json
 import os
+import queue
+import threading
 import random
 import string
 import sys
@@ -25,6 +33,7 @@ import uploader  # noqa: E402
 
 SERVER = os.environ.get("GOLDSCOUT_TEST_SERVER", "")
 ADMIN = os.environ.get("GOLDSCOUT_TEST_ADMIN", "local-admin-token")
+GITHUB_PORT = os.environ.get("GOLDSCOUT_TEST_GITHUB", "")
 LINE = "3812^11^0^19^20^1440^0.1179^0.2989^11^Clattering Crawler^2674:4:4,3010:7:7^"
 
 
@@ -187,6 +196,60 @@ class ServerTests(unittest.TestCase):
                 self.assertEqual(status, 400)
                 self.assertIn("error", reply)
         self.assertEqual(raw("/v1/prices/kr/%d" % house)[0], 404)
+
+
+@unittest.skipUnless(SERVER and GITHUB_PORT, "set GOLDSCOUT_TEST_SERVER and GOLDSCOUT_TEST_GITHUB to test the crons")
+class CronTests(unittest.TestCase):
+    """The server's cron triggers start GitHub workflows (a local stand-in for
+    GitHub's API records the requests)."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.calls = queue.Queue()
+        calls = cls.calls
+
+        class GitHub(http.server.BaseHTTPRequestHandler):
+            def do_POST(self):
+                body = self.rfile.read(int(self.headers.get("Content-Length") or 0))
+                calls.put((self.path, self.headers.get("Authorization"), json.loads(body or b"{}")))
+                self.send_response(204)
+                self.end_headers()
+
+            def log_message(self, *args):
+                pass
+
+        cls.github = http.server.HTTPServer(("127.0.0.1", int(GITHUB_PORT)), GitHub)
+        threading.Thread(target=cls.github.serve_forever, daemon=True).start()
+
+    @classmethod
+    def tearDownClass(cls):
+        cls.github.shutdown()
+        cls.github.server_close()
+
+    def run_cron(self, cron):
+        url = SERVER + "/cdn-cgi/handler/scheduled?cron=" + cron.replace(" ", "+")   # wrangler 4
+        with urllib.request.urlopen(url, timeout=10) as response:
+            response.read()
+
+    def started(self):
+        calls = []
+        while True:
+            try:
+                calls.append(self.calls.get(timeout=3))
+            except queue.Empty:
+                return calls
+
+    def test_each_cron_starts_its_workflow(self):
+        for cron, workflow in (("7,22,37,52 * * * *", "ah-prices.yml"), ("17 * * * *", "data-merge.yml")):
+            with self.subTest(cron):
+                self.run_cron(cron)
+                self.assertEqual(self.started(), [(
+                    "/repos/Alkhara/GoldScout-WoW/actions/workflows/%s/dispatches" % workflow,
+                    "Bearer local-dispatch-token", {"ref": "main"})])
+
+    def test_other_crons_start_nothing(self):
+        self.run_cron("0 0 * * *")
+        self.assertEqual(self.started(), [])
 
 
 if __name__ == "__main__":

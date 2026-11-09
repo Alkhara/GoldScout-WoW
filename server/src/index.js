@@ -18,6 +18,11 @@
 //                      sends each new snapshot (metadata in X- headers).
 //   GET  /health
 //
+// Cron triggers (wrangler.toml) start GitHub workflows on time: GitHub's own
+// schedule can skip runs for hours. SCHEDULE says which cron starts which
+// workflow; the GITHUB_DISPATCH_TOKEN secret (a fine-grained token for this
+// repository with Actions: read and write) is all the access it has.
+//
 // Prices come from Blizzard's Game Data API. Its terms require naming Blizzard
 // as the source (SOURCE, in every price response) and keeping data at most 30
 // days. The price lists are stored and served as text, never parsed here, so
@@ -38,6 +43,11 @@ const REGIONS = new Set(["us", "eu", "kr", "tw"]);
 const AH_FACTIONS = new Set(["Alliance", "Horde", "Neutral"]);
 const HOUSE_PATH = /^\/v1\/prices\/([a-z]{2})\/([0-9]{1,6})$/;
 const ADMIN_HOUSE_PATH = /^\/v1\/admin\/prices\/([a-z]{2})\/([0-9]{1,6})$/;
+const REPOSITORY = "Alkhara/GoldScout-WoW";
+const SCHEDULE = {
+  "7,22,37,52 * * * *": ["ah-prices.yml"], // Blizzard's snapshots land around :16
+  "17 * * * *": ["data-merge.yml"],
+};
 
 export default {
   async fetch(request, env) {
@@ -68,6 +78,10 @@ export default {
       console.error(error);
       return json({ error: "Server error." }, 500);
     }
+  },
+
+  async scheduled(event, env, ctx) {
+    ctx.waitUntil(startWorkflows(SCHEDULE[event.cron] || [], env));
   },
 };
 
@@ -263,4 +277,42 @@ async function storePrices(request, env, region, house) {
     env.DB.prepare("DELETE FROM ah_houses WHERE snapshot < ?").bind(now - MAX_AGE_SECONDS),
   ]);
   return json({ status: previous && previous.snapshot === snapshot ? "unchanged" : "stored" });
+}
+
+// Starts each workflow on main. Failures are logged (Workers Logs) and fail
+// the cron run, so they show in the dashboard; GitHub's own schedule remains
+// as a backup. GITHUB_API is only set for local tests.
+async function startWorkflows(workflows, env) {
+  if (!workflows.length) {
+    return;
+  }
+  if (!env.GITHUB_DISPATCH_TOKEN) {
+    console.log("GITHUB_DISPATCH_TOKEN is not set; not starting " + workflows.join(", "));
+    return;
+  }
+  const api = env.GITHUB_API || "https://api.github.com";
+  const failed = [];
+  for (const workflow of workflows) {
+    const response = await fetch(`${api}/repos/${REPOSITORY}/actions/workflows/${workflow}/dispatches`, {
+      method: "POST",
+      headers: {
+        Authorization: "Bearer " + env.GITHUB_DISPATCH_TOKEN,
+        Accept: "application/vnd.github+json",
+        "Content-Type": "application/json",
+        "User-Agent": "GoldScout-server",
+        "X-GitHub-Api-Version": "2022-11-28",
+      },
+      body: JSON.stringify({ ref: "main" }),
+    });
+    if (response.status === 204) {
+      console.log("Started " + workflow);
+    } else {
+      const detail = (await response.text()).slice(0, 300);
+      console.error(`Starting ${workflow}: HTTP ${response.status} ${detail}`);
+      failed.push(workflow);
+    }
+  }
+  if (failed.length) {
+    throw new Error("Could not start " + failed.join(", "));
+  }
 }

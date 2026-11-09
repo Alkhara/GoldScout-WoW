@@ -3,6 +3,9 @@
 # (tools/ah_prices.py fetch). Unchanged houses cost one If-Modified-Since
 # request each and nothing is downloaded, so most runs take seconds.
 #
+# The GoldScout server's cron trigger starts it on time (server/README.md);
+# GitHub's own schedule below is the backup, since it can skip runs for hours.
+#
 # Needs repository secrets BLIZZARD_CLIENT_ID and BLIZZARD_CLIENT_SECRET (a
 # client from develop.battle.net) and GOLDSCOUT_API_ADMIN (the server's
 # ADMIN_TOKEN, already used by the data merge). Without them the run is skipped.
