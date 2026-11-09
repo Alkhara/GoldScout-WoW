@@ -1,6 +1,6 @@
 # GoldScout Privacy Policy
 
-*Last updated: November 7, 2026*
+*Last updated: November 9, 2026*
 
 This policy covers the GoldScout addon and the drop data players share with it.
 GoldScout is maintained by GitHub user Alkhara ("we" below).
@@ -105,10 +105,24 @@ install ID, shown in your exports), open an issue asking us to. Pausing
 automatic sharing in the companion stops new uploads. Data already combined into a release
 can't be separated from other players' data.
 
+## The website
+
+wowgoldscout.com has no accounts, cookies, analytics or ads. Its farm, mob,
+reagent and zone pages load current auction house prices from the GoldScout
+server (goldscout-api.cawley22.workers.dev). Like any website, Cloudflare
+sees your IP address for those requests; we don't store it. The realm type
+and faction you pick for prices is remembered in your own browser (local
+storage); it only decides which auction house's prices your browser downloads.
+
+The prices are public auction house listings from Blizzard's Game Data API,
+reduced to the lowest buyout and quantity per item. They contain no player
+names or other player data, and we keep each auction house's newest snapshot
+for at most 30 days.
+
 ## Future services
 
-If we launch a website or anything else that collects data differently, this
-policy will be updated before it does.
+If we launch anything else that collects data differently, this policy will be
+updated before it does.
 
 ## Contact
 

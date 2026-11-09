@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Builds the GoldScout website into site/dist/ (static HTML, no JavaScript).
+"""Builds the GoldScout website into site/dist/ (static HTML, plus prices.js
+for live auction prices on the data pages).
 
   python site/build.py
 
@@ -22,6 +23,7 @@ import data_pages  # noqa: E402
 import merge_data  # noqa: E402
 
 SITE_URL = data_pages.SITE_URL
+API_URL = "https://goldscout-api.cawley22.workers.dev"   # also in prices.js
 REPO = "https://github.com/Alkhara/GoldScout-WoW"
 LINKS = {
     "curseforge": "https://www.curseforge.com/projects/1790110",
@@ -139,6 +141,12 @@ ul.related { columns: 2; padding-left: 20px; margin: 0; } ul.related li { margin
 main.page .small a { color: var(--muted); }
 .cta { margin-top: 34px; padding: 16px 18px; border: 1px solid var(--gold2); border-radius: 12px; background: rgba(242,194,85,.08); }
 .table-wrap { overflow-x: auto; }
+.pricebar { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; margin: 18px 0 8px; padding: 10px 14px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; font-size: 15px; }
+.pricebar label { font-weight: 600; }
+.pricebar select { margin-left: 6px; font: inherit; color: var(--text); background: var(--bg2); border: 1px solid var(--line); border-radius: 8px; padding: 4px 8px; }
+.pricebar .status { color: var(--muted); }
+.pricebar .source { flex-basis: 100%; color: var(--muted); font-size: 12px; }
+.muted { color: var(--muted); }
 @media (max-width: 820px) {
   .hero, .two, .grid { grid-template-columns: 1fr; }
   .hero { padding-top: 16px; } .hero h1 { font-size: 34px; }
@@ -287,6 +295,7 @@ def layout(title, description, path, body):
 <link rel="canonical" href="%(site)s%(path)s">
 <link rel="icon" href="/favicon.png">
 <style>%(css)s</style>
+<script src="/prices.js" defer></script>
 </head>
 <body>
 <div class="wrap">
@@ -314,6 +323,7 @@ def main():
         shutil.copy2(ROOT / "docs" / "screenshots" / name, DIST / "screenshots" / name)
     shutil.copy2(ROOT / "docs" / "logo" / "goldscout-logo-400.png", DIST / "logo-400.png")
     shutil.copy2(ROOT / "companion" / "icon.png", DIST / "favicon.png")
+    shutil.copy2(HERE / "prices.js", DIST / "prices.js")
     results = merge_data.load(ROOT / "data" / "submissions")
     merged = merge_data.merge([r.mobs for r in results], 1000)
     s = stats(results, merged)
@@ -346,7 +356,8 @@ def main():
     (DIST / "_headers").write_text(
         "/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n"
         "  Content-Security-Policy: default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; "
-        "base-uri 'none'; form-action 'none'; frame-ancestors 'none'\n", encoding="utf-8")
+        "script-src 'self'; connect-src %s; "
+        "base-uri 'none'; form-action 'none'; frame-ancestors 'none'\n" % API_URL, encoding="utf-8")
     print("Built %s: %d contributors, %d mobs, %d kills, %d pages." % (
         DIST, s["contributors"], s["mobs"], s["kills"], len(paths)))
 

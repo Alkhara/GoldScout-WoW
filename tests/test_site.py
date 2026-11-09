@@ -150,6 +150,40 @@ class DataPagesTests(unittest.TestCase):
         _, _, rates = pages["drop-rates.html"]
         self.assertIn("1,000 kills per mob", rates)
 
+    def test_price_placeholders_for_prices_js(self):
+        data = dataset()
+        pages = {}
+        data_pages.build(data, LINKS, lambda path, *page: pages.__setitem__(path, page))
+        _, _, mob = pages["mob/3809.html"]
+        self.assertIn('id="prices-bar"', mob)
+        self.assertIn('data-price="3730"', mob)
+        self.assertIn('data-value="3730:0.4"', mob)            # 8 of 20 kills, stacks of 1
+        self.assertIn("Blizzard Entertainment Game Data API", mob)
+        _, _, farms = pages["farms.html"]
+        self.assertIn("<table class=by-value>", farms)
+        self.assertIn("Gold per kill", farms)
+        _, _, reagent = pages["reagent/3730.html"]
+        self.assertIn('data-qty="3730"', reagent)
+        _, _, rates = pages["drop-rates.html"]
+        self.assertIn("Blizzard Entertainment Game Data API", rates)
+        self.assertNotIn("prices-bar", rates)
+
+    def test_per_kill_values(self):
+        self.assertEqual(data_pages.per_kill([(10, 0.5, 2.0), (11, 0.12345, 1.0)]), "10:1,11:0.1235")
+        self.assertEqual(data_pages.per_kill([]), "")
+
+    def test_prices_script_and_policy_agree_on_the_server(self):
+        # By path: other tests put companion/ on sys.path, whose build/ folder would win.
+        import importlib.util
+        spec = importlib.util.spec_from_file_location("site_build", ROOT / "site" / "build.py")
+        build = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(build)
+        script =(ROOT / "site" / "prices.js").read_text(encoding="utf-8")
+        self.assertIn('var API = "%s";' % build.API_URL, script)
+        self.assertNotIn("innerHTML", script)                  # server data only ever goes in as text
+        page = build.layout("t", "d", "/x", "<p>body</p>")
+        self.assertIn('<script src="/prices.js" defer></script>', page)
+
     def test_without_item_details_everything_is_listed(self):
         v3 = "\n".join(line for line in V4.splitlines() if not line.startswith("@q"))
         data = dataset(v3.replace("export 4^", "export 3^"))

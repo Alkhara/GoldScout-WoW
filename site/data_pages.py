@@ -8,6 +8,11 @@ has one, it's shown under "Drops" without being sorted into reagents.
 
 Every page gets breadcrumbs (visible, plus schema.org BreadcrumbList data) and
 a plain-language summary a search engine can quote.
+
+Prices aren't built in: they change every hour. Pages mark where they go
+(data-price, data-qty, data-value) and site/prices.js fills them in the browser
+from the GoldScout server's copy of Blizzard's auction data, for the realm type
+and faction the visitor picks in the price bar.
 """
 import html
 import json
@@ -86,9 +91,9 @@ class Dataset:
         self.reagent_sources = defaultdict(list)
         self.zones = defaultdict(list)
         for npc in self.mobs:
-            for item, rate, _ in self.drops(npc):
+            for item, rate, stack in self.drops(npc):
                 if self.kind(item) == "reagent":
-                    self.reagent_sources[item].append((npc, rate))
+                    self.reagent_sources[item].append((npc, rate, stack))
             zone = self.zone_id(npc)
             if zone is not None:
                 self.zones[zone].append(npc)
@@ -167,6 +172,32 @@ def json_for_script(data):
 
 
 # -- shared pieces ---------------------------------------------------------------
+LOADING = "&hellip;"
+SOURCE = ("Auction data from the Blizzard Entertainment Game Data API. "
+          "GoldScout is not affiliated with or endorsed by Blizzard.")
+
+
+def per_kill(rows):
+    """data-value for prices.js: each item's chance x average stack, so price x it = gold per kill."""
+    return ",".join("%d:%s" % (item, ("%.4f" % (rate * stack)).rstrip("0").rstrip("."))
+                    for item, rate, stack in rows)
+
+
+def price_bar():
+    """Where the visitor picks a realm type and faction; prices.js fills it in."""
+    return ('<div id="prices-bar" class="pricebar"><label>Auction prices for '
+            '<select aria-label="Realm type and faction" hidden></select></label> '
+            '<span class="status">Turn on JavaScript to see current auction prices.</span>'
+            '<span class="source">%s</span></div>' % SOURCE)
+
+
+def price_cell(item):
+    return '<td class=num data-price="%d">%s</td>' % (item, LOADING)
+
+
+def value_cell(rows):
+    return '<td class=num data-value="%s">%s</td>' % (per_kill(rows), LOADING)
+
 def crumbs(trail):
     """Visible breadcrumbs plus schema.org BreadcrumbList data. trail: [(path, label)], last is this page."""
     links = " &rsaquo; ".join('<a href="%s">%s</a>' % (path, e(label)) for path, label in trail[:-1])
@@ -215,25 +246,29 @@ def legend():
             '<a href="/drop-rates">How these numbers work</a></p>')
 
 
-def drop_table(data, rows):
+def drop_table(data, rows, per="kill"):
     body = "".join(
-        "<tr><td>%s</td><td class=num>%s</td><td class=num>%s</td></tr>"
-        % (item_cell(data, item), percent(rate), ("%.1f" % stack).rstrip("0").rstrip("."))
+        "<tr><td>%s</td><td class=num>%s</td><td class=num>%s</td>%s%s</tr>"
+        % (item_cell(data, item), percent(rate), ("%.1f" % stack).rstrip("0").rstrip("."),
+           price_cell(item), value_cell([(item, rate, stack)]))
         for item, rate, stack in rows)
-    return ("<table><thead><tr><th>Item</th><th class=num>Chance</th><th class=num>Avg. stack</th></tr></thead>"
-            "<tbody>%s</tbody></table>" % body)
+    return ("<table><thead><tr><th>Item</th><th class=num>Chance</th><th class=num>Avg. stack</th>"
+            "<th class=num>Price</th><th class=num>Per %s</th></tr></thead><tbody>%s</tbody></table>" % (per, body))
 
 
 def mob_table(data, npcs, zone_column=True):
+    """Mobs with their best reagent drops and gold per kill; prices.js re-sorts by gold per kill."""
     rows = "".join(
-        "<tr><td>%s</td><td class=nowrap>%s</td>%s<td>%s</td></tr>"
+        "<tr><td>%s</td><td class=nowrap>%s</td>%s<td>%s</td>%s</tr>"
         % (mob_link(data, npc), e(data.levels(npc)),
            "<td>%s</td>" % zone_link(data, npc) if zone_column else "",
            ", ".join("%s %s" % (item_cell(data, item), percent(rate))
-                     for item, rate, _ in data.best_drops(npc)[:3]) or '<span class=small>none yet</span>')
+                     for item, rate, _ in data.best_drops(npc)[:3]) or '<span class=small>none yet</span>',
+           value_cell(data.best_drops(npc)))
         for npc in npcs)
-    return ("<table><thead><tr><th>Mob</th><th>Level</th>%s<th>Best reagent drops</th></tr></thead>"
-            "<tbody>%s</tbody></table>" % ("<th>Zone</th>" if zone_column else "", rows))
+    return ("<table class=by-value><thead><tr><th>Mob</th><th>Level</th>%s<th>Best reagent drops</th>"
+            "<th class=num>Gold per kill</th></tr></thead><tbody>%s</tbody></table>"
+            % ("<th>Zone</th>" if zone_column else "", rows))
 
 
 def link_list(items):
@@ -280,7 +315,7 @@ def mob_page(data, npc, links):
     picks = data.drops(npc, "pi")
     if picks:
         sections.append("<h2>Pickpocketing</h2><p class=sub>Chance per pickpocket, over %d attempts.</p>"
-                        % entry["p"] + drop_table(data, picks))
+                        % entry["p"] + drop_table(data, picks, per="pickpocket"))
     if sections:
         sections.append(legend())
     else:
@@ -298,9 +333,14 @@ def mob_page(data, npc, links):
     if zone_id is not None:
         facts.append(zone_link(data, npc))
     facts.append("%s kills recorded %s" % (format(entry["k"], ","), badge(entry["k"])))
-    body = ("%s<h1>%s</h1><p class=facts>%s</p><p class=summary>%s</p>%s%s"
+    best = data.best_drops(npc)
+    worth = ""
+    if best:
+        worth = ('<p class=facts>%s are worth about <b data-value="%s">%s</b> per kill at current prices.</p>'
+                 % ("Its crafting reagents" if data.has_kinds else "Its drops", per_kill(best), LOADING))
+    body = ("%s<h1>%s</h1><p class=facts>%s</p><p class=summary>%s</p>%s%s%s%s"
             % (crumbs(farms_trail(data, npc) + [("/mob/%d" % npc, name)]), e(name), " &middot; ".join(facts),
-               e(mob_summary(data, npc)), "".join(sections), cta(links)))
+               e(mob_summary(data, npc)), price_bar(), worth, "".join(sections), cta(links)))
     title = "%s drops and drop rates (WoW Forever)" % name
     best = data.best_drops(npc)[:2]
     if best:
@@ -317,10 +357,11 @@ def reagent_page(data, item, links):
     name = data.item_name(item)
     sources = data.reagent_sources[item]
     rows = "".join(
-        "<tr><td>%s</td><td class=nowrap>%s</td><td>%s</td><td class=num>%s</td><td>%s</td></tr>"
-        % (mob_link(data, npc), e(data.levels(npc)), zone_link(data, npc), percent(rate), badge(data.mobs[npc]["k"]))
-        for npc, rate in sources)
-    top, top_rate = sources[0]
+        "<tr><td>%s</td><td class=nowrap>%s</td><td>%s</td><td class=num>%s</td>%s<td>%s</td></tr>"
+        % (mob_link(data, npc), e(data.levels(npc)), zone_link(data, npc), percent(rate),
+           value_cell([(item, rate, stack)]), badge(data.mobs[npc]["k"]))
+        for npc, rate, stack in sources)
+    top, top_rate, _ = sources[0]
     where = ", %s" % data.zone(top) if data.zone(top) else ""
     level = "level %s" % data.levels(top) if data.levels(top) else ""
     detail = " (%s)" % (level + where).strip(", ") if (level or where) else ""
@@ -330,7 +371,7 @@ def reagent_page(data, item, links):
                   name, count, "" if count == 1 else "s", data.mob_name(top), detail, percent(top_rate))
     related = []
     seen = {item}
-    for npc, _ in sources:
+    for npc, _, _ in sources:
         for other, _, _ in data.best_drops(npc):
             if other not in seen and other in data.reagent_sources:
                 seen.add(other)
@@ -338,12 +379,14 @@ def reagent_page(data, item, links):
     more = ("<h2>Farm these at the same time</h2><p class=sub>Other crafting reagents the same mobs drop.</p>%s"
             % link_list(related[:RELATED])) if related else ""
     trail = [("/", "Home"), ("/farms", "Farms by level"), ("/reagent/%d" % item, name)]
-    body = ("%s<h1>%s</h1><p class=summary>%s</p><h2>Where it drops</h2>"
+    price = ('<p class=facts>Lowest price: <b data-price="%d">%s</b> <span class=small data-qty="%d"></span></p>'
+             % (item, LOADING, item))
+    body = ("%s<h1>%s</h1><p class=summary>%s</p>%s%s<h2>Where it drops</h2>"
             "<table><thead><tr><th>Dropped by</th><th>Level</th><th>Zone</th><th class=num>Chance</th>"
-            "<th>Confidence</th></tr></thead><tbody>%s</tbody></table>%s"
-            "<p class=sub>Prices differ on every realm, so GoldScout ranks these by gold per hour in game, "
-            "using your own auction house.</p>%s%s" % (crumbs(trail), e(name), e(summary), rows, legend(), more,
-                                                         cta(links)))
+            "<th class=num>Gold per kill</th><th>Confidence</th></tr></thead><tbody>%s</tbody></table>%s"
+            "<p class=sub>Gold per kill is the drop chance times the average stack times the current price. "
+            "In game, GoldScout turns it into gold per hour for your character.</p>%s%s"
+            % (crumbs(trail), e(name), e(summary), price_bar(), price, rows, legend(), more, cta(links)))
     title = "Where to farm %s (WoW Forever)" % name
     description = "%s drops from %s (%s)%s in WoW Forever. Drop rates from GoldScout players' loot." % (
         name, data.mob_name(top), percent(top_rate),
@@ -371,14 +414,15 @@ def zone_page(data, map_id, links):
     if reagents:
         ordered = sorted(reagents.items(), key=lambda pair: -pair[1][1])
         sections.append("<h2>Crafting reagents in %s</h2><table><thead><tr><th>Reagent</th><th>Best source</th>"
-                        "<th class=num>Chance</th></tr></thead><tbody>%s</tbody></table>" % (e(zone), "".join(
-                            "<tr><td>%s</td><td>%s</td><td class=num>%s</td></tr>"
-                            % (item_cell(data, item), mob_link(data, npc), percent(rate))
+                        "<th class=num>Chance</th><th class=num>Price</th></tr></thead><tbody>%s</tbody></table>"
+                        % (e(zone), "".join(
+                            "<tr><td>%s</td><td>%s</td><td class=num>%s</td>%s</tr>"
+                            % (item_cell(data, item), mob_link(data, npc), percent(rate), price_cell(item))
                             for item, (npc, rate) in ordered)))
     sections.append(legend())
     trail = [("/", "Home"), ("/farms", "Farms by level"), ("/zone/%d" % map_id, zone)]
-    body = "%s<h1>Farming in %s</h1><p class=summary>%s</p>%s%s" % (
-        crumbs(trail), e(zone), e(summary), "".join(sections), cta(links))
+    body = "%s<h1>Farming in %s</h1><p class=summary>%s</p>%s%s%s" % (
+        crumbs(trail), e(zone), e(summary), price_bar(), "".join(sections), cta(links))
     title = "Where to farm gold in %s (WoW Forever)" % zone
     description = "Mobs to farm in %s, WoW Forever, and the crafting reagents they drop, from GoldScout players' loot." % zone
     return title, description, body
@@ -405,8 +449,9 @@ def farms_page(data, links):
             for map_id in zones))
     trail = [("/", "Home"), ("/farms", "Farms by level")]
     body = ("%s<h1>Farms by level</h1><p class=facts>Mobs GoldScout players have recorded at least %d kills of, "
-            "with the crafting reagents they drop most often. Open a mob for every drop, or a reagent for "
-            "everywhere it drops.</p>%s%s" % (crumbs(trail), MIN_ATTEMPTS, "".join(sections), cta(links)))
+            "with the crafting reagents they drop most often, ranked by gold per kill at current auction prices. "
+            "Open a mob for every drop, or a reagent for everywhere it drops.</p>%s%s%s"
+            % (crumbs(trail), MIN_ATTEMPTS, price_bar(), "".join(sections), cta(links)))
     return ("Gold farms by level (WoW Forever)",
             "WoW Forever mobs and the crafting reagents they drop, by level, from GoldScout players' loot.", body)
 
@@ -433,9 +478,11 @@ def rates_page(data, links):
 <li>Skinning, mining and herb gathering a corpse don't count as kills. Kills where the corpse had no loot do.</li>
 <li>Gray items are vendor trash and aren't shown. Gear, recipes and gems are rare world drops, listed under other drops.</li>
 </ul>
-<h2>Gold per hour</h2>
-<p>Prices differ on every realm, so the site shows drop rates, not gold. The GoldScout addon combines these rates with your own auction house prices and ranks what your character can farm by gold per hour.</p>
-%s""" % (crumbs(trail), levels, MIN_ATTEMPTS, format(PLAYER_CAP, ","), cta(links))
+<h2>Prices and gold per kill</h2>
+<p>Prices are the lowest buyout on the auction house for the realm type and faction you pick, from Blizzard's auction data, refreshed about every hour. Gold per kill adds up each crafting reagent's chance times its average stack times that price. It leaves out gear, recipes and gems (their prices swing too much) and how long a kill takes.</p>
+<p>The GoldScout addon turns this into gold per hour for your character, using your own auction house scans when they're newer.</p>
+<p class=small>%s</p>
+%s""" % (crumbs(trail), levels, MIN_ATTEMPTS, format(PLAYER_CAP, ","), SOURCE, cta(links))
     return ("How GoldScout drop rates work",
             "Where GoldScout's WoW Forever drop rates come from, what the chance and confidence mean, and how the data is checked.",
             body)
