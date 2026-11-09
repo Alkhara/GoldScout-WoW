@@ -16,9 +16,11 @@ into GoldScout without scanning. More at https://wowgoldscout.com.
    companion checks it with the same rules the GoldScout data bot uses and
    uploads it.
 
-It never shows notifications, so nothing pops up over your game. Click the tray
+Nothing pops up over your game. Its one notification says a new version is out,
+once per version, and it waits until World of Warcraft is closed. Click the tray
 icon to open the window, which shows what GoldScout has learned and when it
-last shared. The tray menu can pause automatic sharing, turn auction prices off,
+last shared. **Quit** in the window (or the tray menu) stops the companion until
+you start it again. The tray menu can pause automatic sharing, turn auction prices off,
 turn off starting with Windows, check for updates, or quit. Closing the window keeps the companion running in the tray.
 
 **Updates are one click.** When a new version is out, the window and the tray

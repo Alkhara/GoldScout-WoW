@@ -6,7 +6,8 @@ saves, checks it with the same validator the GoldScout data bot uses, and
 uploads new snapshots once you've agreed to the Contributor Terms. Every hour
 it also writes the latest auction prices for your realms into the
 GoldScout_Prices data addon (auction_prices.py), the only thing it changes in
-the WoW folder. It never shows notifications.
+the WoW folder. Its only notification says a new version is out, and only
+while World of Warcraft isn't running.
 
 Run:  python companion/app.py          (--tray starts hidden in the tray)
 """
@@ -47,6 +48,7 @@ HANDOVER_SECONDS = 25    # how long a new version gets to start before we roll b
 PRICE_MINUTE = 25        # check for new prices at :25 UTC (Blizzard's snapshot ~:16, on the server by ~:22)
 PRICE_RETRY_SECONDS = 600
 FIRST_PRICE_MS = 8000
+GAME_CHECK_MS = 60000    # while WoW is open, look again this often before telling about an update
 CONFIG_DIR = Path(os.environ.get("APPDATA", Path.home())) / "GoldScout Companion"
 CONFIG_FILE = CONFIG_DIR / "config.json"
 SHOW_REQUEST = CONFIG_DIR / "show.request"
@@ -90,6 +92,7 @@ class App:
         self.tray = None
         self.update, self.updating = None, False
         self.pricing, self.price_timer, self.price_keys = False, None, None
+        self.notify_timer = None
 
         root.title("GoldScout Companion")
         root.minsize(560, 420)
@@ -231,12 +234,14 @@ class App:
         self.copy_button = ttk.Button(buttons, text="Copy export", command=self.copy)
         self.copy_button.pack(side="left", padx=8)
         ttk.Button(buttons, text="Refresh", command=self.refresh).pack(side="left")
+        ttk.Button(buttons, text="Quit", command=self.quit).pack(side="right")
 
         self.prices_label = ttk.Label(frame, text="", foreground="#555", wraplength=520, justify="left")
         self.prices_label.grid(row=5, column=0, sticky="w", pady=(10, 0))
 
         ttk.Label(frame, foreground="#777", wraplength=520, font=("Segoe UI", 8), text=(
-            "Closing this window keeps the companion running in the system tray. GoldScout saves its "
+            "Closing this window keeps the companion running in the system tray; Quit stops it until "
+            "you start it again. GoldScout saves its "
             "data when you log out or type /reload, so new loot shows up here after that. Auction "
             "prices: Blizzard Entertainment Game Data API; GoldScout isn't affiliated with or endorsed "
             "by Blizzard. Companion " + VERSION)).grid(row=6, column=0, sticky="w", pady=(12, 0))
@@ -364,6 +369,9 @@ class App:
     def update_found(self, update, problem=None, manual=False):
         if self.updating:
             return
+        if self.notify_timer:
+            self.root.after_cancel(self.notify_timer)
+            self.notify_timer = None
         self.update = update
         if update:
             note = "  (it didn't start last time)" if self.config.get("update_failed") == update.version else ""
@@ -373,6 +381,31 @@ class App:
         elif manual:
             self.set_update_text("You have the latest version.")
         self.update_tray()
+        self.notify_update()
+
+    def notify_update(self):
+        """One Windows notification per new version, never while WoW is open:
+        it waits until the game is closed. Skipped when the window is open,
+        since it already shows Update."""
+        self.notify_timer = None
+        update = self.update
+        if not update or self.updating or self.config.get("update_notified") == update.version:
+            return
+        if self.root.state() != "withdrawn":
+            self.config["update_notified"] = update.version
+            save_config(self.config)
+            return
+        if system.game_running():
+            self.notify_timer = self.root.after(GAME_CHECK_MS, self.notify_update)
+            return
+        if self.tray and getattr(self.tray, "HAS_NOTIFICATION", False):
+            try:
+                self.tray.notify("GoldScout Companion %s is available. Click the GoldScout icon in the tray, "
+                                 "then Update." % update.version, "GoldScout Companion update")
+            except Exception:  # noqa: BLE001 - a notification is never worth crashing for
+                return
+        self.config["update_notified"] = update.version
+        save_config(self.config)
 
     def start_update(self):
         if not self.update or self.updating:

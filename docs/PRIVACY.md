@@ -25,9 +25,10 @@ files next to it:
 ## GoldScout Companion
 
 The companion app for Windows reads GoldScout's saved data file
-(`GoldScout.lua` in each account's SavedVariables folder) and never shows
-notifications. The only thing it changes in your WoW folder is the
-`GoldScout_Prices` addon folder described below.
+(`GoldScout.lua` in each account's SavedVariables folder). Its only notification
+says a new version is out, and only while World of Warcraft isn't running. The
+only thing it changes in your WoW folder is the `GoldScout_Prices` addon folder
+described below.
 
 When you first open it, it asks you to agree to the
 [Contributor Terms](CONTRIBUTOR_TERMS.md). If you agree, it shares

@@ -107,5 +107,22 @@ class AccountTests(unittest.TestCase):
             self.assertEqual(len(savedvars.saved_variables_files(forever)), 1)
 
 
+class GameRunningTests(unittest.TestCase):
+    """Update notifications wait while any WoW client is open."""
+
+    def test_any_wow_client_counts(self):
+        import system
+        for name in ("wow.exe", "wowclassic.exe"):
+            self.assertTrue(system.game_running({"explorer.exe", name}))
+        self.assertFalse(system.game_running({"explorer.exe", "battle.net.exe", "wowup.exe"}))
+
+    @unittest.skipUnless(sys.platform == "win32", "Windows only")
+    def test_sees_this_process(self):
+        import system
+        names = system.running_process_names()
+        self.assertIn(Path(sys.executable).name.lower(), names)
+        self.assertTrue(all(name == name.lower() for name in names))
+
+
 if __name__ == "__main__":
     unittest.main()
