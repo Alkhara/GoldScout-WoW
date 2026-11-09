@@ -34,6 +34,8 @@ HOUSES_FILE = ROOT / "data" / "ah_houses.json"
 DEV_VARS = ROOT / "server" / ".dev.vars"
 DEFAULT_API = "https://goldscout-api.cawley22.workers.dev"
 REGION = "us"
+# Cloudflare answers Python's default User-Agent with 403 (error 1010).
+USER_AGENT = "GoldScout-ah-prices/1.0 (+https://github.com/Alkhara/GoldScout-WoW)"
 FACTIONS = {"Alliance Auction House": "Alliance", "Horde Auction House": "Horde",
             "Blackwater Auction House": "Neutral"}
 
@@ -143,7 +145,8 @@ class Blizzard:
         auth = base64.b64encode(("%s:%s" % (client_id, client_secret)).encode()).decode()
         request = urllib.request.Request(
             "https://oauth.battle.net/token", data=b"grant_type=client_credentials",
-            headers={"Authorization": "Basic " + auth, "Content-Type": "application/x-www-form-urlencoded"})
+            headers={"Authorization": "Basic " + auth, "Content-Type": "application/x-www-form-urlencoded",
+                     "User-Agent": USER_AGENT})
         try:
             with urllib.request.urlopen(request, timeout=30) as response:
                 self.token = json.load(response)["access_token"]
@@ -153,7 +156,7 @@ class Blizzard:
     def get(self, path, since=None):
         """(status, parsed JSON or None, Last-Modified as unix time)."""
         query = urllib.parse.urlencode({"namespace": self.namespace, "locale": "en_US"})
-        headers = {"Authorization": "Bearer " + self.token}
+        headers = {"Authorization": "Bearer " + self.token, "User-Agent": USER_AGENT}
         if since:
             headers["If-Modified-Since"] = http_time(since)
         request = urllib.request.Request("%s%s?%s" % (self.base, path, query), headers=headers)
@@ -177,7 +180,7 @@ class Blizzard:
 
 
 def server_request(api, path, admin=None, method="GET", body=None, headers=None):
-    all_headers = dict(headers or {})
+    all_headers = dict(headers or {}, **{"User-Agent": USER_AGENT})
     if admin:
         all_headers["Authorization"] = "Bearer " + admin
     data = body.encode("utf-8") if isinstance(body, str) else body
