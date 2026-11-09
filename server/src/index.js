@@ -10,7 +10,18 @@
 //                      Authorization: Bearer <token> after the first upload.
 //   GET  /v1/uploads   admin only (Authorization: Bearer <ADMIN_TOKEN>).
 //                      ?since=<unix seconds> limits it to newer uploads.
+//   GET  /v1/prices    auction houses with prices: id, ruleset, faction,
+//                      snapshot time, item count. Public.
+//   GET  /v1/prices/<region>/<house>   one house's prices:
+//                      {"itemID": [lowest unit buyout in copper, quantity]}.
+//   PUT  /v1/admin/prices/<region>/<house>   admin only; tools/ah_prices.py
+//                      sends each new snapshot (metadata in X- headers).
 //   GET  /health
+//
+// Prices come from Blizzard's Game Data API. Its terms require naming Blizzard
+// as the source (SOURCE, in every price response) and keeping data at most 30
+// days. The price lists are stored and served as text, never parsed here, so
+// even the largest house stays within the free plan's CPU time.
 
 const MAX_BYTES = 60000;
 const MAX_LINES = 1 + 1500 + 5000; // header, mobs, @ lines (names and crafted items)
@@ -18,6 +29,15 @@ const HEADER = /^GoldScout-export [234]\^([a-z0-9]{12})\^([1-9][0-9]{0,8})$/;
 const EXTRA_LINE = /^@[imcq]\^[0-9]{1,9}\^[^^]*$/;
 const TERMS_VERSIONS = new Set(["2026-11-07"]);
 const NEW_INSTALLS_PER_IP_PER_DAY = 5;
+const SOURCE = "Auction data from the Blizzard Entertainment Game Data API. GoldScout is not affiliated with or endorsed by Blizzard.";
+const PRICES_MAX_BYTES = 1900000; // D1 rows hold up to 2 MB
+const PRICE_ENTRY = String.raw`"[0-9]{1,9}":\[[0-9]{1,15},[0-9]{1,9}\]`;
+const PRICES_FORMAT = new RegExp(String.raw`^\{(?:${PRICE_ENTRY}(?:,${PRICE_ENTRY})*)?\}$`);
+const MAX_AGE_SECONDS = 30 * 86400; // Blizzard Developer API Terms 2(s)
+const REGIONS = new Set(["us", "eu", "kr", "tw"]);
+const AH_FACTIONS = new Set(["Alliance", "Horde", "Neutral"]);
+const HOUSE_PATH = /^\/v1\/prices\/([a-z]{2})\/([0-9]{1,6})$/;
+const ADMIN_HOUSE_PATH = /^\/v1\/admin\/prices\/([a-z]{2})\/([0-9]{1,6})$/;
 
 export default {
   async fetch(request, env) {
@@ -32,6 +52,17 @@ export default {
       if (url.pathname === "/v1/uploads" && request.method === "GET") {
         return await list(request, env, url);
       }
+      if (url.pathname === "/v1/prices" && request.method === "GET") {
+        return await priceHouses(env);
+      }
+      const house = HOUSE_PATH.exec(url.pathname);
+      if (house && request.method === "GET") {
+        return await housePrices(env, house[1], Number(house[2]));
+      }
+      const adminHouse = ADMIN_HOUSE_PATH.exec(url.pathname);
+      if (adminHouse && request.method === "PUT") {
+        return await storePrices(request, env, adminHouse[1], Number(adminHouse[2]));
+      }
       return json({ error: "Not found." }, 404);
     } catch (error) {
       console.error(error);
@@ -44,6 +75,19 @@ function json(body, status = 200) {
   return new Response(JSON.stringify(body), {
     status,
     headers: { "Content-Type": "application/json; charset=utf-8" },
+  });
+}
+
+// Public price responses: readable from the website (any origin) and cacheable
+// for a few minutes, since snapshots change at most a few times an hour.
+function publicJson(text, status = 200) {
+  return new Response(text, {
+    status,
+    headers: {
+      "Content-Type": "application/json; charset=utf-8",
+      "Access-Control-Allow-Origin": "*",
+      "Cache-Control": status === 200 ? "public, max-age=300" : "no-store",
+    },
   });
 }
 
@@ -145,4 +189,78 @@ async function list(request, env, url) {
     "SELECT install_id, seq, body, terms, updated_at FROM installs WHERE updated_at > ? ORDER BY updated_at",
   ).bind(since).all();
   return json({ uploads: results });
+}
+
+const HOUSE_COLUMNS = "region, house, name, ruleset, ruleset_name, faction, snapshot, fetched, items";
+
+function houseInfo(row) {
+  return {
+    region: row.region, house: row.house, name: row.name, ruleset: row.ruleset,
+    rulesetName: row.ruleset_name, faction: row.faction, snapshot: row.snapshot,
+    fetched: row.fetched, items: row.items,
+  };
+}
+
+async function priceHouses(env) {
+  const oldest = Math.floor(Date.now() / 1000) - MAX_AGE_SECONDS;
+  const { results } = await env.DB.prepare(
+    `SELECT ${HOUSE_COLUMNS} FROM ah_houses WHERE snapshot >= ? ORDER BY region, house`,
+  ).bind(oldest).all();
+  return publicJson(JSON.stringify({ source: SOURCE, houses: results.map(houseInfo) }));
+}
+
+async function housePrices(env, region, house) {
+  const oldest = Math.floor(Date.now() / 1000) - MAX_AGE_SECONDS;
+  const row = await env.DB.prepare(
+    `SELECT ${HOUSE_COLUMNS}, prices FROM ah_houses WHERE region = ? AND house = ? AND snapshot >= ?`,
+  ).bind(region, house, oldest).first();
+  if (!row) {
+    return publicJson(JSON.stringify({ error: "No prices for that auction house." }), 404);
+  }
+  // Splice the stored text in rather than parsing and re-serializing it.
+  const head = JSON.stringify({ ...houseInfo(row), source: SOURCE });
+  return publicJson(head.slice(0, -1) + ',"prices":' + row.prices + "}");
+}
+
+async function storePrices(request, env, region, house) {
+  if (!env.ADMIN_TOKEN || !sameText(bearer(request), env.ADMIN_TOKEN)) {
+    return json({ error: "Not allowed." }, 401);
+  }
+  const now = Math.floor(Date.now() / 1000);
+  const header = (name) => (request.headers.get(name) || "").trim();
+  const snapshot = Number(header("X-Snapshot"));
+  const items = Number(header("X-Items"));
+  const rulesetText = header("X-Ruleset");
+  const ruleset = rulesetText === "" ? null : Number(rulesetText);
+  const rulesetName = ruleset === null ? null : header("X-Ruleset-Name").slice(0, 40);
+  const name = header("X-House-Name").slice(0, 60);
+  const faction = header("X-Faction");
+  if (!REGIONS.has(region) || !Number.isInteger(snapshot) || snapshot < now - MAX_AGE_SECONDS ||
+      snapshot > now + 600 || !Number.isInteger(items) || items < 0 || !name || !AH_FACTIONS.has(faction) ||
+      (ruleset !== null && (!Number.isInteger(ruleset) || ruleset < 1 || !rulesetName))) {
+    return json({ error: "Missing or invalid price headers." }, 400);
+  }
+  if (Number(request.headers.get("Content-Length") || 0) > PRICES_MAX_BYTES) {
+    return json({ error: "The price list is too large." }, 413);
+  }
+  const prices = await request.text();
+  if (new TextEncoder().encode(prices).length > PRICES_MAX_BYTES || !PRICES_FORMAT.test(prices)) {
+    return json({ error: "The price list is malformed or too large." }, 400);
+  }
+  const previous = await env.DB.prepare("SELECT snapshot FROM ah_houses WHERE region = ? AND house = ?")
+    .bind(region, house).first();
+  if (previous && previous.snapshot > snapshot) {
+    return json({ status: "older" });
+  }
+  await env.DB.batch([
+    env.DB.prepare(
+      "INSERT INTO ah_houses (region, house, name, ruleset, ruleset_name, faction, snapshot, fetched, items, prices) " +
+      "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT (region, house) DO UPDATE SET " +
+      "name = excluded.name, ruleset = excluded.ruleset, ruleset_name = excluded.ruleset_name, " +
+      "faction = excluded.faction, snapshot = excluded.snapshot, fetched = excluded.fetched, " +
+      "items = excluded.items, prices = excluded.prices",
+    ).bind(region, house, name, ruleset, rulesetName, faction, snapshot, now, items, prices),
+    env.DB.prepare("DELETE FROM ah_houses WHERE snapshot < ?").bind(now - MAX_AGE_SECONDS),
+  ]);
+  return json({ status: previous && previous.snapshot === snapshot ? "unchanged" : "stored" });
 }

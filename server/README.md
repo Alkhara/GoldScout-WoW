@@ -10,9 +10,18 @@ the uploads and opens the data pull request for review.
 |---|---|
 | `POST /v1/uploads` | Upload an export. The first upload from an install returns its token; later uploads need `Authorization: Bearer <token>`. |
 | `GET /v1/uploads` | Admin only (`Authorization: Bearer <ADMIN_TOKEN>`): every install's newest export. `?since=<unix seconds>` limits it. |
+| `GET /v1/prices` | Every WoW Forever auction house with prices: ruleset, faction, snapshot time, item count. Public. |
+| `GET /v1/prices/<region>/<house>` | One house's prices: `{"itemID": [lowest unit buyout in copper, quantity listed]}`. Public. |
+| `PUT /v1/admin/prices/<region>/<house>` | Admin only. `tools/ah_prices.py fetch` sends each new snapshot. |
 | `GET /health` | Returns `{"ok": true}`. |
 
 It fits in Cloudflare's free plan.
+
+Auction prices come from Blizzard's Game Data API (the `Auction prices`
+workflow checks for new snapshots every 15 minutes). Blizzard's API terms
+require naming Blizzard as the source, which every price response does, and
+keeping the data at most 30 days, so older snapshots are deleted and never
+served.
 
 ## Deploying
 

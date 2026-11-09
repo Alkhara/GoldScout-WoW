@@ -1,0 +1,23 @@
+{
+  "_about": "Which WoW Forever auction house belongs to which ruleset and faction. Blizzard's API lists every house under every ruleset, so this is mapped by hand: python tools/ah_prices.py match compares your own GoldScout scans with each house. Only add a house once a scan has matched it.",
+  "rulesets": {
+    "1": "PvP",
+    "2": "Normal",
+    "3": "Roleplay",
+    "15": "Roleplay PvP"
+  },
+  "houses": {
+    "us": {
+      "113": {
+        "ruleset": 1,
+        "faction": "Horde",
+        "how": "2026-11-09: GoldScout scan on CAMWOWUS2Realm2PvP (Horde) matched 67% of lowest prices; no other house above 25%"
+      }
+    }
+  },
+  "realms": {
+    "us": {
+      "CAMWOWUS2Realm2PvP": 1
+    }
+  }
+}

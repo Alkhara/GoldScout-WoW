@@ -1,0 +1,49 @@
+# Every 15 minutes, checks Blizzard's Game Data API for new WoW Forever auction
+# house snapshots and sends any new ones to the GoldScout server
+# (tools/ah_prices.py fetch). Unchanged houses cost one If-Modified-Since
+# request each and nothing is downloaded, so most runs take seconds.
+#
+# Needs repository secrets BLIZZARD_CLIENT_ID and BLIZZARD_CLIENT_SECRET (a
+# client from develop.battle.net) and GOLDSCOUT_API_ADMIN (the server's
+# ADMIN_TOKEN, already used by the data merge). Without them the run is skipped.
+name: Auction prices
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Fetch every house even if unchanged"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ah-prices
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      BLIZZARD_CLIENT_ID: ${{ secrets.BLIZZARD_CLIENT_ID }}
+      BLIZZARD_CLIENT_SECRET: ${{ secrets.BLIZZARD_CLIENT_SECRET }}
+      GOLDSCOUT_API_ADMIN: ${{ secrets.GOLDSCOUT_API_ADMIN }}
+      GOLDSCOUT_API_URL: ${{ vars.GOLDSCOUT_API_URL }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch new snapshots
+        run: |
+          if [ -z "$BLIZZARD_CLIENT_ID" ] || [ -z "$BLIZZARD_CLIENT_SECRET" ] || [ -z "$GOLDSCOUT_API_ADMIN" ]; then
+            echo "**Skipped:** add the BLIZZARD_CLIENT_ID and BLIZZARD_CLIENT_SECRET repository secrets (and GOLDSCOUT_API_ADMIN)." | tee -a "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          if [ "${{ inputs.force }}" = "true" ]; then
+            python3 tools/ah_prices.py fetch --force
+          else
+            python3 tools/ah_prices.py fetch
+          fi
