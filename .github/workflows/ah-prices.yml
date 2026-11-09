@@ -10,7 +10,9 @@ name: Auction prices
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    # Every 15 minutes, off the quarter hours: GitHub delays or drops scheduled
+    # runs at :00/:15/:30/:45, when everyone's crons fire.
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
     inputs:
       force:
