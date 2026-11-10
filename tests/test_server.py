@@ -133,6 +133,22 @@ class ServerTests(unittest.TestCase):
         self.assertEqual(raw("/v1/uploads")[0], 401)
         self.assertEqual(raw("/v1/uploads", headers={"Authorization": "Bearer wrong"})[0], 401)
 
+    def test_companion_version_is_recorded(self):
+        def client_of(install):
+            status, listing = raw("/v1/uploads?since=%d" % (time.time() - 3600),
+                                  headers={"Authorization": "Bearer " + ADMIN})
+            self.assertEqual(status, 200)
+            return next(u["client"] for u in listing["uploads"] if u["install_id"] == install)
+
+        install = new_install()
+        status, first = register(install)          # Python's own User-Agent: not the companion
+        self.assertEqual(status, 201)
+        self.assertEqual(client_of(install), "other")
+        self.assertEqual(uploader.upload(export(install, 1), first["token"], "9.8.7")["status"], "unchanged")
+        self.assertEqual(client_of(install), "9.8.7")
+        self.assertEqual(uploader.upload(export(install, 2), first["token"], "9.8.8")["status"], "stored")
+        self.assertEqual(client_of(install), "9.8.8")
+
     def test_new_installs_are_rate_limited_per_network(self):
         ip = fake_ip()
         statuses = [register(new_install(), ip)[0] for _ in range(7)]

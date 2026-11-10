@@ -14,6 +14,15 @@ CREATE TABLE IF NOT EXISTS installs (
 );
 CREATE INDEX IF NOT EXISTS installs_updated ON installs (updated_at);
 
+-- Which GoldScout Companion version an install last uploaded with (from the
+-- User-Agent, e.g. "0.7.0"), for tools/stats.py. A separate table because
+-- schema.sql runs on every deploy and SQLite can't add a column only if missing.
+CREATE TABLE IF NOT EXISTS install_clients (
+  install_id TEXT PRIMARY KEY,
+  client TEXT NOT NULL,
+  updated_at INTEGER NOT NULL
+);
+
 CREATE TABLE IF NOT EXISTS registrations (
   ip_hash TEXT NOT NULL,
   created_at INTEGER NOT NULL

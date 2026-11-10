@@ -3,6 +3,12 @@
 
   python tools/stats.py             the report
   python tools/stats.py --days 30   daily new installs over 30 days (default 14)
+  python tools/stats.py --players 0 leave out the per-player table (default: top 30)
+
+The per-player table names each companion install by a short tag (the start of
+a hash of its random install ID), with the companion version it last uploaded
+with and how much its newest export holds. No names, realms or addresses exist
+on the server to show.
 
 Reads three places:
   - the live upload server's database (through wrangler, with your Cloudflare
@@ -18,6 +24,7 @@ aren't contributors, since the addon alone never shares anything.
 """
 import argparse
 import datetime
+import hashlib
 import json
 import re
 import shutil
@@ -125,6 +132,58 @@ def summarize_installs(rows, now, mine, days):
     }
 
 
+def player_tag(install_id):
+    return hashlib.sha256(install_id.encode("utf-8")).hexdigest()[:5]
+
+
+def export_totals(body):
+    """(mobs, kills, pickpockets, item drops) in one export, or Nones if it doesn't parse."""
+    import submission
+    result = submission.parse(body or "")
+    if not result.ok:
+        return None, None, None, None
+    drops = sum(d for mob in result.mobs for d, _ in list(mob.i.values()) + list(mob.pi.values()))
+    return (len(result.mobs), sum(mob.k for mob in result.mobs), sum(mob.p for mob in result.mobs), drops)
+
+
+def player_rows(rows, mine):
+    """One row per install, most kills first: rows from the server with
+    install_id, created_at, updated_at, uploads, body and client."""
+    players = []
+    for r in rows:
+        mobs, kills, picks, drops = export_totals(r.get("body"))
+        players.append({"tag": player_tag(r["install_id"]), "you": r["install_id"] in mine,
+                        "client": r.get("client") or "unknown", "uploads": r["uploads"],
+                        "created": r["created_at"], "updated": r["updated_at"],
+                        "mobs": mobs, "kills": kills, "picks": picks, "drops": drops})
+    return sorted(players, key=lambda p: (-(p["kills"] or 0), p["tag"]))
+
+
+def ago(seconds):
+    if seconds < 3600:
+        return "%d min ago" % (seconds // 60)
+    if seconds < 2 * DAY:
+        return "%d h ago" % (seconds // 3600)
+    return "%d days ago" % (seconds // DAY)
+
+
+def player_table(players, now, limit):
+    def num(value):
+        return "?" if value is None else "{:,}".format(value)
+
+    lines = ["  %-7s %-10s %7s  %-12s %-14s %5s %7s %6s %7s" % (
+        "player", "companion", "uploads", "first seen", "last upload", "mobs", "kills", "picks", "drops")]
+    for p in players[:limit]:
+        first = datetime.datetime.fromtimestamp(p["created"], datetime.timezone.utc).strftime("%b %d")
+        lines.append("  %-7s %-10s %7d  %-12s %-14s %5s %7s %6s %7s" % (
+            p["tag"] + ("*" if p["you"] else ""), p["client"][:10], p["uploads"], first,
+            ago(now - p["updated"]), num(p["mobs"]), num(p["kills"]), num(p["picks"]), num(p["drops"])))
+    if len(players) > limit:
+        lines.append("  ... and %d more (--players %d shows them)" % (len(players) - limit, len(players)))
+    lines.append("  * yours. Totals are each install's newest export; companion version is from its latest upload.")
+    return lines
+
+
 def summarize_issues(issues, mine_logins=()):
     by_label = {}
     for issue in issues:
@@ -154,6 +213,7 @@ def bar(n, peak, width=24):
 def main():
     parser = argparse.ArgumentParser(description="How many players are sharing GoldScout data.")
     parser.add_argument("--days", type=int, default=14, help="days of daily new installs to show")
+    parser.add_argument("--players", type=int, default=30, help="rows in the per-player table (0: none)")
     args = parser.parse_args()
     now = int(time.time())
     mine = my_installs()
@@ -163,8 +223,13 @@ def main():
 
     print("\nUpload server (companion), live")
     try:
-        rows = wrangler_sql("SELECT install_id, created_at, updated_at, uploads, "
-                            "substr(body, 18, 1) AS version FROM installs")
+        columns = "install_id, created_at, installs.updated_at AS updated_at, uploads, body, " \
+                  "substr(body, 18, 1) AS version"
+        try:
+            rows = wrangler_sql("SELECT %s, client FROM installs LEFT JOIN install_clients USING (install_id)"
+                                % columns)
+        except RuntimeError:   # a server from before companion versions were recorded
+            rows = wrangler_sql("SELECT %s FROM installs" % columns)
         s = summarize_installs(rows, now, mine, args.days)
         print("  installs           %d  (%d yours, %d other players)" % (s["installs"], s["mine"], s["others"]))
         print("  new players        %d in 24 h, %d in 7 days" % (s["new_24h"], s["new_7d"]))
@@ -176,6 +241,14 @@ def main():
         print("  new players per day (UTC):")
         for day, n in s["daily"]:
             print("    %s %3d %s" % (day, n, bar(n, peak)))
+        if args.players > 0:
+            players = player_rows(rows, mine)
+            clients = {}
+            for p in players:
+                clients[p["client"]] = clients.get(p["client"], 0) + 1
+            print("  companion versions %s" % ", ".join("%s: %d" % item for item in sorted(clients.items())))
+            print("\nPlayers (companion installs)")
+            print("\n".join(player_table(players, now, args.players)))
     except Exception as error:
         print("  couldn't read the server: %s" % error)
         print("  (log in once from server/: npx wrangler login)")

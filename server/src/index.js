@@ -9,7 +9,8 @@
 //   POST /v1/uploads   body: export text. Headers: X-GoldScout-Terms, and
 //                      Authorization: Bearer <token> after the first upload.
 //   GET  /v1/uploads   admin only (Authorization: Bearer <ADMIN_TOKEN>).
-//                      ?since=<unix seconds> limits it to newer uploads.
+//                      ?since=<unix seconds> limits it to newer uploads. Each
+//                      upload lists the companion version it last came from.
 //   GET  /v1/prices    auction houses with prices: id, ruleset, faction,
 //                      snapshot time, item count. Public.
 //   GET  /v1/prices/<region>/<house>   one house's prices:
@@ -36,6 +37,7 @@ const HEADER = /^GoldScout-export [234]\^([a-z0-9]{12})\^([1-9][0-9]{0,8})$/;
 const EXTRA_LINE = /^@[imcq]\^[0-9]{1,9}\^[^^]*$/;
 const TERMS_VERSIONS = new Set(["2026-11-07"]);
 const NEW_INSTALLS_PER_IP_PER_DAY = 5;
+const CLIENT_AGENT = /^GoldScoutCompanion\/([0-9A-Za-z.+-]{1,24})$/;
 const SOURCE = "Auction data from the Blizzard Entertainment Game Data API. GoldScout is not affiliated with or endorsed by Blizzard.";
 const PRICES_MAX_BYTES = 1900000; // D1 rows hold up to 2 MB
 const PRICE_ENTRY = String.raw`"[0-9]{1,9}":\[[0-9]{1,15},[0-9]{1,9}\]`;
@@ -135,6 +137,19 @@ function newToken() {
   return [...bytes].map((b) => b.toString(16).padStart(2, "0")).join("");
 }
 
+// The companion version from the User-Agent ("0.7.0"), or "other".
+function clientVersion(request) {
+  const match = CLIENT_AGENT.exec(request.headers.get("User-Agent") || "");
+  return match ? match[1] : "other";
+}
+
+function recordClient(env, installId, request, now) {
+  return env.DB.prepare(
+    "INSERT INTO install_clients (install_id, client, updated_at) VALUES (?, ?, ?) " +
+    "ON CONFLICT (install_id) DO UPDATE SET client = excluded.client, updated_at = excluded.updated_at",
+  ).bind(installId, clientVersion(request), now);
+}
+
 async function receive(request, env) {
   const declared = Number(request.headers.get("Content-Length") || 0);
   if (declared > MAX_BYTES) {
@@ -183,6 +198,7 @@ async function receive(request, env) {
       ).bind(installId, await sha256(token), seq, text, request.headers.get("X-GoldScout-Terms"), now, now),
       env.DB.prepare("INSERT INTO registrations (ip_hash, created_at) VALUES (?, ?)").bind(ipHash, now),
       env.DB.prepare("DELETE FROM registrations WHERE created_at < ?").bind(now - 2 * 86400),
+      recordClient(env, installId, request, now),
     ]);
     return json({ status: "registered", token }, 201);
   }
@@ -192,14 +208,18 @@ async function receive(request, env) {
     return json({ error: "This GoldScout data is registered to another copy of the companion." }, 403);
   }
   if (seq <= row.seq) {
+    await recordClient(env, installId, request, now).run();
     return json({ status: "unchanged" });
   }
   if (now - row.updated_at < minSeconds) {
     return json({ error: "Uploading too often; try again in a minute." }, 429);
   }
-  await env.DB.prepare(
-    "UPDATE installs SET seq = ?, body = ?, terms = ?, updated_at = ?, uploads = uploads + 1 WHERE install_id = ?",
-  ).bind(seq, text, request.headers.get("X-GoldScout-Terms"), now, installId).run();
+  await env.DB.batch([
+    env.DB.prepare(
+      "UPDATE installs SET seq = ?, body = ?, terms = ?, updated_at = ?, uploads = uploads + 1 WHERE install_id = ?",
+    ).bind(seq, text, request.headers.get("X-GoldScout-Terms"), now, installId),
+    recordClient(env, installId, request, now),
+  ]);
   return json({ status: "stored" });
 }
 
@@ -209,7 +229,8 @@ async function list(request, env, url) {
   }
   const since = Number(url.searchParams.get("since") || 0);
   const { results } = await env.DB.prepare(
-    "SELECT install_id, seq, body, terms, updated_at FROM installs WHERE updated_at > ? ORDER BY updated_at",
+    "SELECT install_id, seq, body, terms, installs.updated_at AS updated_at, client FROM installs " +
+    "LEFT JOIN install_clients USING (install_id) WHERE installs.updated_at > ? ORDER BY installs.updated_at",
   ).bind(since).all();
   return json({ uploads: results });
 }
