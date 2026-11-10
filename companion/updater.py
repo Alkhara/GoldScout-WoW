@@ -9,9 +9,14 @@
               isn't signed by the GoldScout publisher. Our Azure Artifact
               Signing certificates last 3 days, so the publisher name is pinned,
               not a single certificate.
+  verify_mac()  the macOS equivalent, after prepare() unpacks the zip: the app
+              must pass codesign's strict check, be signed with a Developer ID
+              from GoldScout's Apple team, and be accepted by Gatekeeper
+              (which also means Apple notarized it).
   swap()      renames the running exe to GoldScoutCompanion.old.exe (Windows
-              allows renaming a running exe, not overwriting it) and moves the
-              new one into its place; rollback() undoes that if the new copy
+              allows renaming a running exe, not overwriting it), or on macOS
+              the app to GoldScout Companion.old.app, and moves the new one
+              into its place; rollback() undoes that if the new copy
               doesn't start.
 
 Nothing here runs a file that failed a check. The app (app.py) does the
@@ -21,6 +26,7 @@ import hashlib
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
 import urllib.error
@@ -30,14 +36,28 @@ from pathlib import Path
 
 LATEST_URL = "https://api.github.com/repos/Alkhara/GoldScout-WoW/releases/latest"
 RELEASES_PAGE = "https://github.com/Alkhara/GoldScout-WoW/releases/latest"
-ASSET = "GoldScoutCompanion.exe"
-NEW_NAME = "GoldScoutCompanion.new.exe"
-OLD_NAME = "GoldScoutCompanion.old.exe"
-FAILED_NAME = "GoldScoutCompanion.failed.exe"
+MAC = sys.platform == "darwin"
+WINDOWS_ASSET = "GoldScoutCompanion.exe"
+MAC_ASSET = "GoldScoutCompanion-macOS.zip"   # the signed, notarized app, zipped with ditto
+APP_BUNDLE = "GoldScout Companion.app"
+if MAC:
+    ASSET = MAC_ASSET
+    NEW_NAME = "GoldScout Companion.new.zip"
+    OLD_NAME = "GoldScout Companion.old.app"
+    FAILED_NAME = "GoldScout Companion.failed.app"
+else:
+    ASSET = WINDOWS_ASSET
+    NEW_NAME = "GoldScoutCompanion.new.exe"
+    OLD_NAME = "GoldScoutCompanion.old.exe"
+    FAILED_NAME = "GoldScoutCompanion.failed.exe"
+STAGE_NAME = "GoldScout Companion.new"   # macOS: where the downloaded zip is unpacked
 
 # Who signs GoldScout releases (see notes on code signing). Both must match.
 PUBLISHER_SUBJECT = ("CN=Chris Cawley", "O=Chris Cawley")
 PUBLISHER_ISSUER = "Microsoft ID Verified CS"
+# The Apple Developer Team ID that signs macOS releases. Until it's set, a Mac
+# copy never installs an update (it opens the download page instead).
+MAC_TEAM_ID = ""
 
 MAX_SIZE = 200_000_000
 CREATE_NO_WINDOW = 0x08000000
@@ -73,7 +93,7 @@ def fetch_json(url, version, timeout=20):
         return json.loads(response.read().decode("utf-8"))
 
 
-def check(current, fetch=fetch_json):
+def check(current, fetch=fetch_json, asset_name=ASSET):
     """The newer release's companion, or None. Raises UpdateError when GitHub can't be asked."""
     try:
         release = fetch(LATEST_URL, current)
@@ -86,7 +106,7 @@ def check(current, fetch=fetch_json):
         return None
     for asset in release.get("assets") or []:
         digest = asset.get("digest") or ""
-        if asset.get("name") == ASSET and digest.startswith("sha256:") and asset.get("size"):
+        if asset.get("name") == asset_name and digest.startswith("sha256:") and asset.get("size"):
             return Update(version, asset["browser_download_url"], int(asset["size"]),
                           digest.split(":", 1)[1].lower(), release.get("html_url") or RELEASES_PAGE)
     return None   # no companion in that release (or no hash to check it against)
@@ -150,9 +170,80 @@ def verify_signature(path, reader=read_signature):
         raise UpdateError("The update isn't signed by GoldScout's publisher, so it wasn't used.")
 
 
-def remove(path):
+def can_install(team=None):
+    """False on a Mac copy built before GoldScout had an Apple team to check against."""
+    return not MAC or bool(MAC_TEAM_ID if team is None else team)
+
+
+def prepare(downloaded, folder, run=subprocess.run):
+    """What to verify and install: the exe itself on Windows; on macOS the app
+    unpacked from the zip (the zip is deleted)."""
+    if not MAC:
+        return Path(downloaded)
+    return unpack_mac(downloaded, folder, run)
+
+
+def unpack_mac(archive, folder, run=subprocess.run):
+    stage = Path(folder) / STAGE_NAME
+    remove(stage)
     try:
-        Path(path).unlink()
+        result = run(["/usr/bin/ditto", "-x", "-k", str(archive), str(stage)], capture_output=True, timeout=300)
+    except (OSError, subprocess.SubprocessError) as error:
+        remove(stage)
+        raise UpdateError("Couldn't unpack the update (%s)." % error)
+    finally:
+        remove(archive)
+    app = stage / APP_BUNDLE
+    found = sorted(p.name for p in stage.iterdir() if p.name != "__MACOSX") if stage.is_dir() else []
+    if result.returncode != 0 or found != [APP_BUNDLE] or not app.is_dir():
+        remove(stage)
+        raise UpdateError("The update didn't contain the companion app, so it wasn't used.")
+    return app
+
+
+def _output(result):
+    return (result.stdout or "") + (result.stderr or "")
+
+
+def verify_mac(app, run=subprocess.run, team=None):
+    """Refuses an app that isn't intact, signed by GoldScout's Apple team with a
+    Developer ID, and accepted by Gatekeeper (signed and notarized)."""
+    team = MAC_TEAM_ID if team is None else team
+    if not team:
+        raise UpdateError("This copy can't check macOS updates, so it wasn't used.")
+
+    def ask(command):
+        try:
+            return run(command, capture_output=True, text=True, timeout=120)
+        except (OSError, subprocess.SubprocessError) as error:
+            raise UpdateError("Couldn't check the update's signature (%s)." % error)
+
+    if ask(["/usr/bin/codesign", "--verify", "--deep", "--strict", str(app)]).returncode != 0:
+        raise UpdateError("The update isn't validly signed, so it wasn't used.")
+    details = _output(ask(["/usr/bin/codesign", "-dv", "--verbose=2", str(app)])).splitlines()
+    teams = [line.split("=", 1)[1].strip() for line in details if line.startswith("TeamIdentifier=")]
+    authorities = [line.split("=", 1)[1].strip() for line in details if line.startswith("Authority=")]
+    if teams != [team] or not authorities or not authorities[0].startswith("Developer ID Application:")             or not authorities[0].endswith("(%s)" % team):
+        raise UpdateError("The update isn't signed by GoldScout's publisher, so it wasn't used.")
+    if ask(["/usr/sbin/spctl", "--assess", "--type", "execute", str(app)]).returncode != 0:
+        raise UpdateError("macOS didn't accept the update (it isn't notarized), so it wasn't used.")
+
+
+def verify(path):
+    """The signature check for this system."""
+    if MAC:
+        verify_mac(path)
+    else:
+        verify_signature(path)
+
+
+def remove(path):
+    path = Path(path)
+    try:
+        if path.is_dir() and not path.is_symlink():
+            shutil.rmtree(path)
+        else:
+            path.unlink()
         return True
     except FileNotFoundError:
         return True
@@ -207,7 +298,7 @@ def rollback(current):
 
 def clean_up(folder):
     """Deletes what earlier updates left. Returns True when nothing is left."""
-    return all([remove(Path(folder) / name) for name in (OLD_NAME, NEW_NAME, FAILED_NAME)])
+    return all([remove(Path(folder) / name) for name in (OLD_NAME, NEW_NAME, FAILED_NAME, STAGE_NAME)])
 
 
 def child_environment():
@@ -221,6 +312,10 @@ def child_environment():
 
 
 def launch(exe, args):
+    exe = Path(exe)
+    if exe.suffix == ".app":   # macOS: a new copy of the app, through Launch Services
+        return subprocess.Popen(["/usr/bin/open", "-n", "-a", str(exe), "--args"] + list(args),
+                                env=child_environment(), close_fds=True)
     flags = 0
     if sys.platform == "win32":
         flags = subprocess.DETACHED_PROCESS | subprocess.CREATE_NEW_PROCESS_GROUP

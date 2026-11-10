@@ -1,7 +1,7 @@
 """GoldScout Companion: shares your GoldScout drop data automatically and
 brings auction house prices into GoldScout.
 
-It lives in the system tray, finds WoW Forever, reads the export GoldScout
+It lives in the system tray (on macOS, in the Dock), finds WoW Forever, reads the export GoldScout
 saves, checks it with the same validator the GoldScout data bot uses, and
 uploads new snapshots once you've agreed to the Contributor Terms. Every hour
 it also writes the latest auction prices for your realms into the
@@ -9,11 +9,10 @@ GoldScout_Prices data addon (auction_prices.py), the only thing it changes in
 the WoW folder. Its only notification says a new version is out, and only
 while World of Warcraft isn't running.
 
-Run:  python companion/app.py          (--tray starts hidden in the tray)
+Run:  python companion/app.py          (--tray starts with the window hidden)
 """
 import argparse
 import json
-import os
 import queue
 import random
 import sys
@@ -49,9 +48,11 @@ PRICE_MINUTE = 25        # check for new prices at :25 UTC (Blizzard's snapshot 
 PRICE_RETRY_SECONDS = 600
 FIRST_PRICE_MS = 8000
 GAME_CHECK_MS = 60000    # while WoW is open, look again this often before telling about an update
-CONFIG_DIR = Path(os.environ.get("APPDATA", Path.home())) / "GoldScout Companion"
+CONFIG_DIR = system.config_dir()
 CONFIG_FILE = CONFIG_DIR / "config.json"
 SHOW_REQUEST = CONFIG_DIR / "show.request"
+FONT = "Segoe UI" if sys.platform == "win32" else "Helvetica"
+PASTE_KEY = "Cmd+V" if system.MAC else "Ctrl+V"
 
 
 def load_config():
@@ -97,10 +98,19 @@ class App:
         root.title("GoldScout Companion")
         root.minsize(560, 420)
         try:
-            root.iconbitmap(str(HERE / "icon.ico"))
+            if system.WINDOWS:
+                root.iconbitmap(str(HERE / "icon.ico"))
+            else:
+                self.icon = tk.PhotoImage(file=str(HERE / "icon.png"))
+                root.iconphoto(True, self.icon)
         except tk.TclError:
             pass
         root.protocol("WM_DELETE_WINDOW", self.hide)
+        if system.MAC:
+            # No tray icon on macOS: closing the window keeps the companion in
+            # the Dock, and clicking it there opens the window again.
+            root.createcommand("tk::mac::ReopenApplication", self.show)
+            root.createcommand("tk::mac::Quit", self.quit)
 
         self.welcome = self.build_welcome()
         self.main = self.build_main()
@@ -115,6 +125,9 @@ class App:
             root.withdraw()
 
         self.start_tray()
+        if not self.tray:
+            self.settings.grid(row=5, column=0, sticky="ew", pady=(10, 0))
+        self.update_controls()
         self.refresh()
         self.root.after(200, self.pump)
         self.root.after(POLL_MS, self.poll)
@@ -140,27 +153,32 @@ class App:
             return
         self.config["auto_share"] = enabled
         save_config(self.config)
-        self.update_tray()
+        self.update_controls()
         self.update_share_status()
         if enabled:
             self.maybe_upload()
 
-    def set_start_with_windows(self, enabled):
+    def set_start_at_login(self, enabled):
         try:
-            system.set_start_with_windows(enabled)
+            system.set_start_at_login(enabled)
         except OSError as error:
             messagebox.showerror("GoldScout Companion", "Couldn't change the startup setting: %s" % error)
-        self.update_tray()
+        self.update_controls()
+
+    def controls_place(self):
+        """Where the settings are: the tray icon's menu, or the window's Settings."""
+        return "the tray icon" if self.tray else "Settings below"
 
     # -- layout ---------------------------------------------------------------
     def build_welcome(self):
         frame = ttk.Frame(self.root, padding=20)
         frame.columnconfigure(0, weight=1)
-        ttk.Label(frame, text="Welcome to GoldScout Companion", font=("Segoe UI", 15, "bold")).grid(sticky="w")
+        ttk.Label(frame, text="Welcome to GoldScout Companion", font=(FONT, 15, "bold")).grid(sticky="w")
         ttk.Label(frame, wraplength=500, justify="left", text=(
             "GoldScout learns drop rates from your loot. The companion shares what it learns so the "
             "Farm tab gets better for everyone, and it does it automatically: it runs quietly in the "
-            "system tray and uploads new data after you log out or /reload.\n\n"
+            + ("background (in the Dock)" if system.MAC else "system tray") +
+            " and uploads new data after you log out or /reload.\n\n"
             "What's shared: creature and item IDs and names, kill and drop counts, mob levels, where "
             "you looted, and which items your professions can make, plus a random ID for your "
             "GoldScout data. Never character, account or realm names.\n\n"
@@ -175,14 +193,17 @@ class App:
         link(links, "Privacy Policy", PRIVACY_URL).pack(side="left")
 
         self.startup_choice = tk.BooleanVar(value=True)
-        startup = ttk.Checkbutton(frame, text="Start with Windows (in the tray)", variable=self.startup_choice)
+        startup = ttk.Checkbutton(frame, text=system.STARTUP_LABEL + (
+            " (in the background)" if system.MAC else " (in the tray)"), variable=self.startup_choice)
         startup.grid(sticky="w", pady=(14, 0))
-        if not system.can_start_with_windows():
+        if not system.can_start_at_login():
             startup.state(["disabled"])
             self.startup_choice.set(False)
 
         ttk.Label(frame, foreground="#555", wraplength=500, justify="left", text=(
-            "You can turn off automatic sharing or starting with Windows any time from the tray icon.")
+            "You can turn off automatic sharing or %s any time from %s." % (
+                "opening at login" if system.MAC else "starting with Windows",
+                "Settings in the companion's window" if system.MAC else "the tray icon"))
         ).grid(sticky="w", pady=(10, 0))
         buttons = ttk.Frame(frame)
         buttons.grid(sticky="w", pady=(16, 0))
@@ -195,7 +216,7 @@ class App:
         frame = ttk.Frame(root, padding=16)
         frame.columnconfigure(0, weight=1)
 
-        ttk.Label(frame, text="GoldScout Companion", font=("Segoe UI", 15, "bold")).grid(row=0, column=0, sticky="w")
+        ttk.Label(frame, text="GoldScout Companion", font=(FONT, 15, "bold")).grid(row=0, column=0, sticky="w")
         bar = ttk.Frame(frame)
         bar.grid(row=0, column=0, sticky="e")
         self.update_label = ttk.Label(bar, text="", foreground="#555")
@@ -218,12 +239,12 @@ class App:
         self.account_label = ttk.Label(data, text="WoW account:")
         self.account_choice = ttk.Combobox(data, state="readonly", width=24)
         self.account_choice.bind("<<ComboboxSelected>>", lambda _: self.show_account())
-        self.stats_label = ttk.Label(data, text="", font=("Segoe UI", 10, "bold"))
+        self.stats_label = ttk.Label(data, text="", font=(FONT, 10, "bold"))
         self.stats_label.grid(row=1, column=0, columnspan=2, sticky="w")
         self.since_label = ttk.Label(data, text="")
         self.since_label.grid(row=2, column=0, columnspan=2, sticky="w", pady=(2, 6))
         self.notes = tk.Text(data, height=6, wrap="word", relief="flat", background=root.cget("background"),
-                             font=("Segoe UI", 9))
+                             font=(FONT, 9))
         self.notes.grid(row=3, column=0, columnspan=2, sticky="nsew")
         data.rowconfigure(3, weight=1)
 
@@ -236,15 +257,37 @@ class App:
         ttk.Button(buttons, text="Refresh", command=self.refresh).pack(side="left")
         ttk.Button(buttons, text="Quit", command=self.quit).pack(side="right")
 
-        self.prices_label = ttk.Label(frame, text="", foreground="#555", wraplength=520, justify="left")
-        self.prices_label.grid(row=5, column=0, sticky="w", pady=(10, 0))
+        # Settings in the window, when there's no tray icon to hold them (macOS).
+        self.settings = ttk.LabelFrame(frame, text="Settings", padding=8)
+        self.share_choice = tk.BooleanVar(value=False)
+        self.prices_choice = tk.BooleanVar(value=True)
+        self.login_choice = tk.BooleanVar(value=False)
+        ttk.Checkbutton(self.settings, text="Share automatically", variable=self.share_choice,
+                        command=lambda: self.set_auto_share(self.share_choice.get())).grid(row=0, column=0, sticky="w")
+        ttk.Checkbutton(self.settings, text="Auction prices in GoldScout", variable=self.prices_choice,
+                        command=lambda: self.set_prices_enabled(self.prices_choice.get())).grid(
+                            row=0, column=1, sticky="w", padx=(16, 0))
+        self.login_check = ttk.Checkbutton(self.settings, text=system.STARTUP_LABEL, variable=self.login_choice,
+                                           command=lambda: self.set_start_at_login(self.login_choice.get()))
+        self.login_check.grid(row=0, column=2, sticky="w", padx=(16, 0))
+        self.check_button = ttk.Button(self.settings, text="Check for updates",
+                                       command=lambda: self.check_updates(manual=True))
+        self.check_button.grid(row=1, column=0, sticky="w", pady=(8, 0))
 
-        ttk.Label(frame, foreground="#777", wraplength=520, font=("Segoe UI", 8), text=(
-            "Closing this window keeps the companion running in the system tray; Quit stops it until "
+        self.prices_label = ttk.Label(frame, text="", foreground="#555", wraplength=520, justify="left")
+        self.prices_label.grid(row=6, column=0, sticky="w", pady=(10, 0))
+
+        if system.MAC:
+            closing = ("Closing this window keeps the companion running in the Dock; click its Dock icon "
+                       "to open it again. ")
+        else:
+            closing = "Closing this window keeps the companion running in the system tray; "
+        ttk.Label(frame, foreground="#777", wraplength=520, font=(FONT, 8), text=(
+            closing + "Quit stops it until "
             "you start it again. GoldScout saves its "
             "data when you log out or type /reload, so new loot shows up here after that. Auction "
             "prices: Blizzard Entertainment Game Data API; GoldScout isn't affiliated with or endorsed "
-            "by Blizzard. Companion " + VERSION)).grid(row=6, column=0, sticky="w", pady=(12, 0))
+            "by Blizzard. Companion " + VERSION)).grid(row=7, column=0, sticky="w", pady=(12, 0))
         return frame
 
     def show_welcome(self):
@@ -260,17 +303,17 @@ class App:
         self.config["auto_share"] = True
         self.config.pop("declined", None)
         save_config(self.config)
-        if system.can_start_with_windows():
-            self.set_start_with_windows(self.startup_choice.get())
+        if system.can_start_at_login():
+            self.set_start_at_login(self.startup_choice.get())
         self.show_main()
-        self.update_tray()
+        self.update_controls()
         self.refresh()
 
     def decline(self):
         self.config["declined"] = True
         save_config(self.config)
         self.show_main()
-        self.update_tray()
+        self.update_controls()
         self.refresh()
 
     # -- window and tray ------------------------------------------------------
@@ -288,6 +331,8 @@ class App:
         self.root.destroy()
 
     def start_tray(self):
+        if system.MAC:
+            return  # pystray and Tk can't share macOS's main thread; the window has Settings instead
         try:
             import pystray
             from PIL import Image
@@ -300,10 +345,10 @@ class App:
             pystray.MenuItem("Auction prices in GoldScout", lambda: self.events.put(
                 lambda: self.set_prices_enabled(not self.prices_enabled())),
                 checked=lambda _: self.prices_enabled()),
-            pystray.MenuItem("Start with Windows", lambda: self.events.put(
-                lambda: self.set_start_with_windows(not system.start_with_windows_enabled())),
-                checked=lambda _: system.start_with_windows_enabled(),
-                enabled=lambda _: system.can_start_with_windows()),
+            pystray.MenuItem(system.STARTUP_LABEL, lambda: self.events.put(
+                lambda: self.set_start_at_login(not system.start_at_login_enabled())),
+                checked=lambda _: system.start_at_login_enabled(),
+                enabled=lambda _: system.can_start_at_login()),
             pystray.MenuItem(lambda _: "Update to %s" % (self.update.version if self.update else ""),
                              lambda: self.events.put(self.start_update),
                              visible=lambda _: bool(self.update) and not self.updating),
@@ -315,9 +360,19 @@ class App:
         self.tray = pystray.Icon("GoldScoutCompanion", Image.open(HERE / "icon.png"), "GoldScout Companion", menu)
         self.tray.run_detached()
 
-    def update_tray(self):
+    def update_controls(self):
+        """Brings the tray menu, or the window's Settings, up to date."""
         if self.tray:
             self.tray.update_menu()
+            return
+        self.share_choice.set(self.auto_share())
+        self.prices_choice.set(self.prices_enabled())
+        self.login_choice.set(system.start_at_login_enabled())
+        self.login_check.state(["!disabled"] if system.can_start_at_login() else ["disabled"])
+        if self.can_update() and not self.update and not self.updating:
+            self.check_button.grid()
+        else:
+            self.check_button.grid_remove()
 
     def pump(self):
         """Runs work queued by the tray, uploads and the second-launch listener."""
@@ -336,11 +391,12 @@ class App:
 
     # -- updates --------------------------------------------------------------
     def can_update(self):
-        """Only the packaged exe updates itself (running from source can't)."""
-        return system.can_start_with_windows()
+        """Only the packaged app updates itself (running from source can't)."""
+        return system.packaged()
 
     def exe(self):
-        return Path(sys.executable)
+        """The exe on Windows, the .app on macOS."""
+        return system.installed_path()
 
     def set_update_text(self, text, button=None):
         self.update_label.configure(text=text)
@@ -380,11 +436,11 @@ class App:
             self.set_update_text(problem)
         elif manual:
             self.set_update_text("You have the latest version.")
-        self.update_tray()
+        self.update_controls()
         self.notify_update()
 
     def notify_update(self):
-        """One Windows notification per new version, never while WoW is open:
+        """One notification per new version, never while WoW is open:
         it waits until the game is closed. Skipped when the window is open,
         since it already shows Update."""
         self.notify_timer = None
@@ -404,6 +460,10 @@ class App:
                                  "then Update." % update.version, "GoldScout Companion update")
             except Exception:  # noqa: BLE001 - a notification is never worth crashing for
                 return
+        elif system.MAC:
+            system.notify("GoldScout Companion update",
+                          "Version %s is available. Click GoldScout Companion in the Dock, then Update."
+                          % update.version)
         self.config["update_notified"] = update.version
         save_config(self.config)
 
@@ -411,15 +471,19 @@ class App:
         if not self.update or self.updating:
             return
         folder = self.exe().parent
-        if not self.can_update() or not updater.can_write(folder):
+        if not self.can_update() or not updater.can_install() or not updater.can_write(folder):
             webbrowser.open(self.update.page)
+            if system.MAC:
+                how = "download %s, open it and drag GoldScout Companion into Applications" % updater.MAC_ASSET
+            else:
+                how = "download GoldScoutCompanion.exe and replace this one"
             messagebox.showinfo("GoldScout Companion",
-                                "The companion can't update itself in %s. The download page is opening: "
-                                "download GoldScoutCompanion.exe and replace this one." % folder)
+                                "The companion can't update itself in %s. The download page is opening: %s."
+                                % (folder, how))
             return
         self.updating = True
         self.set_update_text("Downloading %s..." % self.update.version)
-        self.update_tray()
+        self.update_controls()
         update = self.update
 
         def progress(done, total):
@@ -430,10 +494,12 @@ class App:
             try:
                 new = updater.download(update, folder, VERSION, progress=progress)
                 self.events.put(lambda: self.update_label.configure(text="Checking the signature..."))
+                new = updater.prepare(new, folder)
                 try:
-                    updater.verify_signature(new)
+                    updater.verify(new)
                 except updater.UpdateError:
                     updater.remove(new)
+                    updater.clean_up(folder)
                     raise
                 self.events.put(lambda: self.install_update(new))
             except updater.UpdateError as error:
@@ -463,7 +529,7 @@ class App:
         self.wait_for_handover(time.time() + HANDOVER_SECONDS)
 
     def wait_for_handover(self, deadline):
-        if system.SingleInstance.other_running():
+        if self.instance and self.instance.other_running():
             self.config.pop("update_failed", None)
             save_config(self.config)
             self.root.destroy()   # the new version has taken over
@@ -485,7 +551,7 @@ class App:
     def update_failed(self, message):
         self.updating = False
         self.set_update_text("Update failed: %s" % message, "Try again")
-        self.update_tray()
+        self.update_controls()
 
     def clean_up_updates(self, tries):
         """Deletes files earlier updates left; the old exe stays locked until its copy exits."""
@@ -624,9 +690,9 @@ class App:
         if not uploader.upload_url():
             text = "Automatic sharing isn't available yet; use Share now to share on GitHub."
         elif not self.has_consent():
-            text = "Automatic sharing is off. Turn it on from the tray icon."
+            text = "Automatic sharing is off. Turn it on from %s." % self.controls_place()
         elif not self.config.get("auto_share", True):
-            text = "Automatic sharing is paused. Turn it back on from the tray icon."
+            text = "Automatic sharing is paused. Turn it back on from %s." % self.controls_place()
         else:
             text = "Sharing automatically. New data uploads after you log out or /reload."
             error = self.config.get("last_error")
@@ -688,7 +754,7 @@ class App:
         elif self.forever and auction_prices.remove_addon(self.forever):
             self.config.get("price_state", {}).pop("written", None)
             save_config(self.config)
-        self.update_tray()
+        self.update_controls()
         self.update_prices_status()
 
     def schedule_prices(self, delay_ms=None):
@@ -739,7 +805,7 @@ class App:
 
     def update_prices_status(self):
         if not self.prices_enabled():
-            text = "Auction prices in GoldScout are off. Turn them on from the tray icon."
+            text = "Auction prices in GoldScout are off. Turn them on from %s." % self.controls_place()
         else:
             status = self.config.get("price_status") or {}
             summary = status.get("summary") or {}
@@ -785,13 +851,13 @@ class App:
             webbrowser.open(FORM_URL)
             messagebox.showinfo("GoldScout Companion",
                                 "Your export is too long to fill in automatically, so it's on your clipboard. "
-                                "In the form that's opening, click the export box, press Ctrl+V, tick the two "
-                                "boxes and press Create.")
+                                "In the form that's opening, click the export box, press %s, tick the two "
+                                "boxes and press Create." % PASTE_KEY)
 
 
 def main():
     parser = argparse.ArgumentParser(description="GoldScout Companion")
-    parser.add_argument("--tray", action="store_true", help="start hidden in the system tray")
+    parser.add_argument("--tray", action="store_true", help="start with the window hidden (in the tray or Dock)")
     parser.add_argument("--after-update", action="store_true", help=argparse.SUPPRESS)
     args = parser.parse_args()
 
@@ -803,10 +869,11 @@ def main():
         return  # the copy that's already running shows its window instead
     instance.show_requested()  # clear any stale request
     root = tk.Tk()
-    try:
-        ttk.Style(root).theme_use("vista")
-    except tk.TclError:
-        pass
+    if system.WINDOWS:
+        try:
+            ttk.Style(root).theme_use("vista")
+        except tk.TclError:
+            pass
     App(root, start_hidden=args.tray, instance=instance, updated=args.after_update)
     root.mainloop()
     instance.close()

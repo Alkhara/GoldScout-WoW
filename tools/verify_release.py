@@ -4,7 +4,8 @@
   python tools/verify_release.py assets DIR vX.Y.Z
       DIR holds the release's downloaded files. Checks the addon zip is there,
       its TOC version is the tag, every file the TOC lists is in the zip, and
-      the companion exe is there (and signed, when checked on Windows).
+      the companion exe is there (and signed, when checked on Windows), and the
+      Mac app is in its zip when the release has one.
 
   python tools/verify_release.py server [URL]
       Checks the live upload server accepts the export version this addon
@@ -62,6 +63,15 @@ def check_assets(folder, tag):
     else:
         print("ok   GoldScoutCompanion.exe present (%d MB); signature checked in the companion job"
               % (exe.stat().st_size // 1_000_000))
+
+    # The Mac app is attached only once Apple signing is set up.
+    mac = folder / "GoldScoutCompanion-macOS.zip"
+    if mac.is_file():
+        with zipfile.ZipFile(mac) as archive:
+            names = archive.namelist()
+        if "GoldScout Companion.app/Contents/MacOS/GoldScout Companion" not in names:
+            fail("GoldScoutCompanion-macOS.zip doesn't contain GoldScout Companion.app")
+        print("ok   GoldScoutCompanion-macOS.zip: the app is there; signing checked in the companion-mac job")
 
 
 def export_version():

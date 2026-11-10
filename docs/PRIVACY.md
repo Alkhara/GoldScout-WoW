@@ -24,7 +24,7 @@ files next to it:
 
 ## GoldScout Companion
 
-The companion app for Windows reads GoldScout's saved data file
+The companion app for Windows and macOS reads GoldScout's saved data file
 (`GoldScout.lua` in each account's SavedVariables folder). Its only notification
 says a new version is out, and only while World of Warcraft isn't running. The
 only thing it changes in your WoW folder is the `GoldScout_Prices` addon folder
@@ -36,13 +36,17 @@ automatically: whenever GoldScout saves a new export (when you log out or
 /reload), the companion uploads it to the GoldScout upload service. If you
 choose "Not now", nothing is uploaded; you can still share by hand through the
 GitHub form. You can pause automatic sharing, or stop the companion starting
-with Windows, at any time from its tray icon.
+when you log in, at any time from its tray icon (on macOS, from Settings in its
+window). On macOS, starting at login is a file in
+`~/Library/LaunchAgents/com.wowgoldscout.companion.plist`, removed when you turn
+it off.
 
 To offer updates, the companion asks GitHub for the latest GoldScout release
 shortly after it starts and every few hours (the request carries only the
 companion's version). It downloads an update only when you click Update, and
 uses it only if the file matches the release's published hash and is code-signed
-by GoldScout's publisher. GitHub sees your IP address for these requests, as
+by GoldScout's publisher (on macOS: signed with GoldScout's Apple Developer ID
+and notarized by Apple). GitHub sees your IP address for these requests, as
 described in its [privacy statement](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement).
 
 **Auction prices.** About once an hour the companion downloads current auction
@@ -54,10 +58,11 @@ number. Your realm names stay on your PC. To find your auction house when the
 server doesn't know your realm yet, the companion compares your own recent
 GoldScout scan with each auction house, on your PC. The prices come from
 Blizzard's Game Data API, and the companion removes them once they're more than
-30 days old. You can turn this off from the tray icon, which also removes the
-folder.
+30 days old. You can turn this off from the tray icon (on macOS, from Settings),
+which also removes the folder.
 
-On your PC it stores, in `%APPDATA%\GoldScout Companion\config.json`: your WoW
+On your computer it stores, in `%APPDATA%\GoldScout Companion\config.json`
+(on macOS, `~/Library/Application Support/GoldScout Companion/config.json`): your WoW
 folder location, whether you agreed to the terms and when, your settings, for
 each install the upload token and the last snapshot it uploaded, and for auction
 prices which auction house matches each of your realms and when it last saved

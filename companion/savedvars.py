@@ -5,6 +5,7 @@ folder is the GoldScout_Prices data addon; see auction_prices.py.)
 """
 import re
 import string
+import sys
 from pathlib import Path
 
 FOREVER = "_forever_"
@@ -158,14 +159,23 @@ def _registry_roots():
     return roots
 
 
+def mac_roots(home=None):
+    """Where Battle.net installs World of Warcraft on a Mac."""
+    home = Path(home or Path.home())
+    return [Path("/Applications/World of Warcraft"), home / "Applications" / "World of Warcraft"]
+
+
 def find_forever_folders():
-    """Every WoW Forever folder (the _forever_ directory) found on this PC."""
+    """Every WoW Forever folder (the _forever_ directory) found on this computer."""
     candidates = list(_registry_roots())
-    for drive in string.ascii_uppercase:
-        base = Path("%s:\\" % drive)
-        if not base.exists():
-            continue
-        candidates += [base / root for root in COMMON_ROOTS]
+    if sys.platform == "darwin":
+        candidates += mac_roots()
+    else:
+        for drive in string.ascii_uppercase:
+            base = Path("%s:\\" % drive)
+            if not base.exists():
+                continue
+            candidates += [base / root for root in COMMON_ROOTS]
     found = []
     for root in candidates:
         folder = root / FOREVER

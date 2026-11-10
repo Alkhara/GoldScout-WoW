@@ -67,8 +67,37 @@ Turn auction prices off from the tray menu; that also removes the
 The exe is code-signed, so Windows shows the publisher. See the
 [Privacy Policy](../docs/PRIVACY.md).
 
+## On a Mac
+
+The companion runs on macOS too. A signed Mac app will come with a later
+release; until then, run it from source (below). On a Mac:
+
+- There's no tray icon. Closing the window keeps the companion running in the
+  Dock; click its Dock icon to open the window again. **Settings** in the
+  window holds what the tray menu has on Windows: automatic sharing, auction
+  prices, **Open at login**, and checking for updates.
+- It looks for WoW in `/Applications/World of Warcraft` and
+  `~/Applications/World of Warcraft`; elsewhere, click **Change...**.
+- It keeps its settings in `~/Library/Application Support/GoldScout Companion`.
+  **Open at login** (in the app only) adds
+  `~/Library/LaunchAgents/com.wowgoldscout.companion.plist`, and macOS may say
+  a login item was added.
+- The update notification is a macOS notification, still only while World of
+  Warcraft is closed.
+
 ## Running from source
 
-With Python 3.10 or later and `pip install pystray pillow`:
-`python companion/app.py` (add `--tray` to start hidden). To build the exe:
-`pip install pyinstaller`, then `python companion/build.py`.
+With Python 3.10 or later:
+
+- Windows: `pip install pystray pillow`, then `python companion/app.py`.
+- macOS: Python from [python.org](https://www.python.org/downloads/macos/)
+  (it includes Tk; nothing else to install), then `python3 companion/app.py`.
+
+Add `--tray` to start with the window hidden. Running from source never updates
+itself or starts at login.
+
+To build the app: `pip install pyinstaller`, then `python companion/build.py`.
+On Windows that makes `GoldScoutCompanion.exe` (also `pip install pystray
+pillow`); on a Mac, `GoldScout Companion.app` (add `--universal2` with
+python.org's Python for one app that runs on Apple silicon and Intel). A local
+Mac build is unsigned: the first time, Control-click it and choose **Open**.

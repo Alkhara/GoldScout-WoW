@@ -116,6 +116,24 @@ class GameRunningTests(unittest.TestCase):
             self.assertTrue(system.game_running({"explorer.exe", name}))
         self.assertFalse(system.game_running({"explorer.exe", "battle.net.exe", "wowup.exe"}))
 
+    def test_mac_clients_count(self):
+        import system
+        names = system.parse_ps("/sbin/launchd\n/Applications/World of Warcraft/_forever_/World of Warcraft.app/"
+                                "Contents/MacOS/World of Warcraft\n/Applications/Battle.net.app/Contents/MacOS/"
+                                "Battle.net\n")
+        self.assertIn("world of warcraft", names)
+        self.assertTrue(system.game_running(names))
+        self.assertTrue(system.game_running({"world of warcraft classic"}))
+        self.assertFalse(system.game_running(system.parse_ps("/sbin/launchd\n/Applications/Battle.net.app/"
+                                                             "Contents/MacOS/Battle.net\n")))
+
+    def test_ps_failure_means_nothing_running(self):
+        import system
+
+        def broken(*args, **kwargs):
+            raise OSError("no ps")
+        self.assertEqual(system._ps_process_names(run=broken), set())
+
     @unittest.skipUnless(sys.platform == "win32", "Windows only")
     def test_sees_this_process(self):
         import system

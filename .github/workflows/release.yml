@@ -113,6 +113,109 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: gh release upload "$GITHUB_REF_NAME" companion/dist/GoldScoutCompanion.exe --clobber
 
+  # Builds GoldScout Companion.app for Apple silicon and Intel Macs. Only a
+  # signed and notarized app is attached to the release; until Apple signing
+  # is set up, the unsigned build is kept as this run's artifact for testing.
+  #
+  # Signing turns on once the repository variable APPLE_TEAM_ID exists (the
+  # 10-character Team ID; it must match MAC_TEAM_ID in companion/updater.py)
+  # and these secrets are set:
+  #   APPLE_DEVELOPER_ID_P12           the "Developer ID Application" certificate
+  #                                    with its private key, as base64 of the .p12
+  #   APPLE_DEVELOPER_ID_P12_PASSWORD  that .p12's password
+  #   APPLE_NOTARY_KEY                 an App Store Connect API key (.p8), as base64
+  #   APPLE_NOTARY_KEY_ID              that key's ID
+  #   APPLE_NOTARY_ISSUER_ID           the key's issuer ID
+  companion-mac:
+    needs: release
+    runs-on: macos-latest
+    environment: release
+    permissions:
+      contents: write
+    env:
+      APP: companion/dist/GoldScout Companion.app
+      ZIP: companion/dist/GoldScoutCompanion-macOS.zip
+    steps:
+      - uses: actions/checkout@v4
+
+      # python.org's installer is universal2 (Apple silicon and Intel), so the
+      # app can be too; setup-python's builds are one architecture.
+      - name: Install Python 3.12 (universal2)
+        run: |
+          curl -fsSL -o "$RUNNER_TEMP/python.pkg" https://www.python.org/ftp/python/3.12.10/python-3.12.10-macos11.pkg
+          sudo installer -pkg "$RUNNER_TEMP/python.pkg" -target /
+          echo "PY=/Library/Frameworks/Python.framework/Versions/3.12/bin/python3.12" >> "$GITHUB_ENV"
+
+      - name: Build the companion
+        run: |
+          "$PY" -m pip install pyinstaller==6.22.3
+          "$PY" -m unittest discover -s tests
+          "$PY" companion/build.py --universal2
+          archs="$(lipo -archs "$APP/Contents/MacOS/GoldScout Companion")"
+          echo "Architectures: $archs"
+          [[ "$archs" == *x86_64* && "$archs" == *arm64* ]]
+
+      - name: Check the updater trusts this team
+        if: vars.APPLE_TEAM_ID != ''
+        env:
+          TEAM: ${{ vars.APPLE_TEAM_ID }}
+        run: grep -q "^MAC_TEAM_ID = \"$TEAM\"$" companion/updater.py || { echo "Set MAC_TEAM_ID = \"$TEAM\" in companion/updater.py"; exit 1; }
+
+      - name: Sign and notarize
+        if: vars.APPLE_TEAM_ID != ''
+        env:
+          TEAM: ${{ vars.APPLE_TEAM_ID }}
+          P12: ${{ secrets.APPLE_DEVELOPER_ID_P12 }}
+          P12_PASSWORD: ${{ secrets.APPLE_DEVELOPER_ID_P12_PASSWORD }}
+          NOTARY_KEY: ${{ secrets.APPLE_NOTARY_KEY }}
+          NOTARY_KEY_ID: ${{ secrets.APPLE_NOTARY_KEY_ID }}
+          NOTARY_ISSUER: ${{ secrets.APPLE_NOTARY_ISSUER_ID }}
+        run: |
+          set -euo pipefail
+          keychain="$RUNNER_TEMP/signing.keychain-db"
+          keychain_password="$(uuidgen)"
+          printf '%s' "$P12" | base64 --decode > "$RUNNER_TEMP/developer-id.p12"
+          printf '%s' "$NOTARY_KEY" | base64 --decode > "$RUNNER_TEMP/notary.p8"
+          security create-keychain -p "$keychain_password" "$keychain"
+          security set-keychain-settings -lut 3600 "$keychain"
+          security unlock-keychain -p "$keychain_password" "$keychain"
+          security import "$RUNNER_TEMP/developer-id.p12" -k "$keychain" -P "$P12_PASSWORD" -T /usr/bin/codesign
+          security set-key-partition-list -S apple-tool:,apple: -s -k "$keychain_password" "$keychain" > /dev/null
+          security list-keychains -d user -s "$keychain"
+          rm "$RUNNER_TEMP/developer-id.p12"
+
+          codesign --force --deep --options runtime --timestamp --keychain "$keychain" \
+            --sign "Developer ID Application" "$APP"
+          codesign --verify --deep --strict --verbose=2 "$APP"
+          codesign -dv --verbose=2 "$APP" 2>&1 | grep -q "^TeamIdentifier=$TEAM$"
+
+          ditto -c -k --keepParent "$APP" "$RUNNER_TEMP/notarize.zip"
+          xcrun notarytool submit "$RUNNER_TEMP/notarize.zip" --key "$RUNNER_TEMP/notary.p8" \
+            --key-id "$NOTARY_KEY_ID" --issuer "$NOTARY_ISSUER" --wait --timeout 30m
+          rm "$RUNNER_TEMP/notary.p8"
+          xcrun stapler staple "$APP"
+          spctl --assess --type execute --verbose=2 "$APP"
+          ditto -c -k --keepParent "$APP" "$ZIP"
+          security delete-keychain "$keychain"
+
+      - name: Attach it to the release
+        if: vars.APPLE_TEAM_ID != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "$GITHUB_REF_NAME" "$ZIP" --clobber
+
+      - name: Keep the unsigned build for testing
+        if: vars.APPLE_TEAM_ID == ''
+        run: ditto -c -k --keepParent "$APP" "$ZIP"
+
+      - name: Upload the unsigned build
+        if: vars.APPLE_TEAM_ID == ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: GoldScoutCompanion-macOS-unsigned
+          path: companion/dist/GoldScoutCompanion-macOS.zip
+          retention-days: 14
+
   # Downloads what was just published and checks it: the zip's TOC version is
   # the tag, every file the TOC lists is in the zip, and the companion is there.
   verify:
