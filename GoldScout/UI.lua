@@ -207,9 +207,9 @@ local function FarmTooltip(row)
     GameTooltip:AddLine(row.zone, 0.8, 0.8, 0.8, true)
   end
   GameTooltip:AddLine(" ")
-  local price, listed, age = ns.Prices:Get(row.item)
+  local price, listed, age, source = ns.Prices:Get(row.item)
   if price then
-    AddMoneyLine(L["AH price per unit"], price)
+    AddMoneyLine(source == "estimate" and L["Regional estimate per unit"] or L["AH price per unit"], price)
   end
   if row.chance then
     GameTooltip:AddDoubleLine(L["Chance per %s"]:format(Per(row.per)), Percent(row.chance), 0.8, 0.8, 0.8, 1, 1, 1)
@@ -640,7 +640,7 @@ function UI:Create()
   hint:Hide()
   f.companionHint = hint
 
-  -- First run: what to do first, over the list until dismissed.
+  -- First run: a setup checklist over the list until dismissed (UI:UpdateIntro fills it in).
   local intro = CreateFrame("Frame", nil, f, "BackdropTemplate")
   intro:SetPoint("TOPLEFT", 14, -86)
   intro:SetPoint("BOTTOMRIGHT", -14, 14)
@@ -651,26 +651,32 @@ function UI:Create()
   intro.title = intro:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
   intro.title:SetPoint("TOP", 0, -28)
   intro.title:SetText(L["Welcome to GoldScout"])
-  intro.body = intro:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
-  intro.body:SetPoint("TOP", intro.title, "BOTTOM", 0, -22)
-  intro.body:SetWidth(560)
-  intro.body:SetJustifyH("LEFT")
-  intro.body:SetSpacing(6)
-  intro.body:SetText(table.concat({
-    L["1. Open each of your profession windows once, so GoldScout learns your recipes."],
-    L["2. Get auction prices: press Scan AH at any auctioneer, or install the free GoldScout Companion "
-      .. "(wowgoldscout.com/companion) for prices every hour without scanning."],
-    L["3. Pick a farm on the Farm tab and press Hunt for a waypoint, mob markers and a gold-per-hour tracker."],
-    "",
-    L["Settings are behind the gear in the top-left corner, or in Options > AddOns > GoldScout."],
-  }, "\n"))
+  intro.steps = {}
+  for i = 1, 3 do
+    local step = CreateFrame("Frame", nil, intro)
+    step:SetSize(560, 20)
+    step.icon = step:CreateTexture(nil, "ARTWORK")
+    step.icon:SetSize(18, 18)
+    step.icon:SetPoint("TOPLEFT", 0, 0)
+    step.text = step:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+    step.text:SetPoint("TOPLEFT", step.icon, "TOPRIGHT", 10, -2)
+    step.text:SetWidth(532)
+    step.text:SetJustifyH("LEFT")
+    step.text:SetSpacing(3)
+    intro.steps[i] = step
+  end
+  intro.link = CreateCopyBox(intro, COMPANION_URL)
+  intro.link:SetSize(200, 18)
+  intro.settings = intro:CreateFontString(nil, "OVERLAY", "GameFontDisable")
+  intro.settings:SetWidth(560)
+  intro.settings:SetJustifyH("LEFT")
+  intro.settings:SetText(L["Settings are behind the gear in the top-left corner, or in Options > AddOns > GoldScout."])
   intro.done = CreateFrame("Button", nil, intro, "UIPanelButtonTemplate")
-  intro.done:SetSize(120, 24)
-  intro.done:SetPoint("TOP", intro.body, "BOTTOM", 0, -24)
-  intro.done:SetText(L["Got it"])
+  intro.done:SetSize(140, 24)
   intro.done:SetScript("OnClick", function()
     ns.db.seenIntro = true
     UI:UpdateIntro()
+    UI:SetTab("farm")
   end)
   intro:Hide()
   f.intro = intro
@@ -801,13 +807,16 @@ function UI:UpdateHeaderText()
     end
   end
 
-  local count, lastScan, snapshot = ns.Prices:Summary()
+  local count, lastScan, snapshot, estimate = ns.Prices:Summary()
   local status
   if scanning then
     local pages, items = ns.Scanner:Progress()
     status = (L["Scanning the auction house: page %d, %d items so far."]):format(pages or 0, items or 0)
   elseif count == 0 then
     status = L["No prices yet. Open the auction house and press Scan AH."]
+  elseif estimate then
+    status = (L["Regional price estimates (Blizzard data, %s) until you have your own: get GoldScout Companion "
+      .. "or press Scan AH at an auctioneer."]):format(ns.Age(time() - estimate))
   elseif snapshot then
     status = (L["%d prices for the %s auction house: Blizzard snapshot %s, your last scan %s."]):format(count,
       ns.MarketLabel(),
@@ -1050,12 +1059,100 @@ function UI:Show(tab)
   self.frame:Show()
 end
 
--- The first-run welcome, until the player dismisses it (/gscout welcome brings it back).
+-- Professions with a recipe window (the Craft tab's), by skill line.
+local CRAFTING = { [171] = true, [164] = true, [185] = true, [333] = true, [202] = true, [129] = true,
+  [165] = true, [197] = true }
+
+local READY = "Interface\\RaidFrame\\ReadyCheck-Ready"
+local WAITING = "Interface\\RaidFrame\\ReadyCheck-Waiting"
+
+-- The welcome's steps as they stand: { icon, text, link? } each.
+local function SetupSteps()
+  local steps = {}
+  local count, _, snapshot, estimate = ns.Prices:Summary()
+  if snapshot then
+    steps[#steps + 1] = { READY, L["|cffffd100Prices:|r GoldScout Companion keeps your auction house's prices "
+      .. "up to date every hour."] }
+  elseif count > 0 and not estimate then
+    steps[#steps + 1] = { READY, L["|cffffd100Prices:|r from your own auction house scan. For fresh prices "
+      .. "every hour without scanning, get the free GoldScout Companion:"], true }
+  elseif estimate then
+    steps[#steps + 1] = { READY, L["|cffffd100Prices:|r regional estimates for now, so the Farm list works "
+      .. "right away. For your own auction house's prices, get the free GoldScout Companion, or press Scan AH "
+      .. "at an auctioneer:"], true }
+  else
+    steps[#steps + 1] = { WAITING, L["|cffffd100Prices:|r get the free GoldScout Companion for your auction "
+      .. "house's prices every hour, or press Scan AH at any auctioneer:"], true }
+  end
+
+  local crafting = 0
+  for skillID in pairs(ns.Professions:Skills()) do
+    if CRAFTING[skillID] then
+      crafting = crafting + 1
+    end
+  end
+  if crafting > 0 then
+    local read = 0
+    for _ in pairs(ns.cdb.recipes) do
+      read = read + 1
+    end
+    if read >= crafting then
+      steps[#steps + 1] = { READY, L["|cffffd100Recipes:|r learned. The Craft tab ranks what you can make."] }
+    else
+      steps[#steps + 1] = { WAITING, L["|cffffd100Recipes:|r open each of your profession windows once, so "
+        .. "the Craft tab can rank what you make."] }
+    end
+  end
+
+  steps[#steps + 1] = { WAITING, L["|cffffd100Farm:|r pick a row on the Farm tab and press Hunt for a "
+    .. "waypoint, mob markers and a gold-per-hour tracker."] }
+  return steps, count > 0
+end
+
+-- The first-run welcome, until the player dismisses it (/gscout welcome brings
+-- it back). Its checklist follows the player's setup each time it's shown.
 function UI:UpdateIntro()
   local f = self.frame
-  if f and f.intro then
-    f.intro:SetShown(ns.db ~= nil and not ns.db.seenIntro)
+  if not f or not f.intro then
+    return
   end
+  local intro = f.intro
+  local shown = ns.db ~= nil and ns.cdb ~= nil and not ns.db.seenIntro
+  intro:SetShown(shown)
+  if not shown then
+    return
+  end
+  local steps, priced = SetupSteps()
+  local anchor, offset = intro.title, -26
+  intro.link:Hide()
+  for i, step in ipairs(intro.steps) do
+    local info = steps[i]
+    step:SetShown(info ~= nil)
+    if info then
+      step.icon:SetTexture(info[1])
+      step.text:SetText(info[2])
+      step:ClearAllPoints()
+      if anchor == intro.title then
+        step:SetPoint("TOPLEFT", anchor, "BOTTOM", -280, offset)
+      else
+        step:SetPoint("TOPLEFT", anchor, "BOTTOMLEFT", 0, offset)
+      end
+      local height = (step.text:GetStringHeight() or 14) + 2
+      if info[3] then
+        intro.link:ClearAllPoints()
+        intro.link:SetPoint("TOPLEFT", step.text, "BOTTOMLEFT", 6, -6)
+        intro.link:Show()
+        height = height + 26
+      end
+      step:SetHeight(height)
+      anchor, offset = step, -14
+    end
+  end
+  intro.settings:ClearAllPoints()
+  intro.settings:SetPoint("TOPLEFT", anchor, "BOTTOMLEFT", 0, -22)
+  intro.done:ClearAllPoints()
+  intro.done:SetPoint("TOP", intro.settings, "BOTTOM", 0, -20)
+  intro.done:SetText(priced and L["Start farming"] or L["Got it"])
 end
 
 function UI:Toggle()
@@ -1130,7 +1227,8 @@ local function AddTooltipPrices(tooltip, itemID)
     if listed == 0 then
       text = text .. Gray(L[" (none listed)"])
     end
-    local label = source == "blizzard" and L["GoldScout AH, Blizzard data (%s)"] or L["GoldScout AH (%s)"]
+    local label = source == "blizzard" and L["GoldScout AH, Blizzard data (%s)"]
+      or source == "estimate" and L["GoldScout regional estimate (%s)"] or L["GoldScout AH (%s)"]
     tooltip:AddDoubleLine(label:format(ns.Age(age)), text, 1, 0.82, 0, 1, 1, 1)
     local average, days = ns.Prices:Average(itemID)
     if average and days and days > 1 then

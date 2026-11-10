@@ -29,7 +29,7 @@ the end, and they go to wowgoldscout.com pages, never straight to the exe.
 - **Every hour, without scanning:** with GoldScout Companion running, GoldScout gets Blizzard's hourly auction house snapshot for your realm and faction, plus the Blackwater (goblin) auction house as an extra tooltip line.
 - **Right now, with one click:** press **Scan AH** at the auction house and GoldScout reads every item's lowest price and quantity in a few seconds. Your own scan always wins when it's newer.
 
-Prices are kept per realm and faction and show on item tooltips.
+Prices are kept per realm and faction and show on item tooltips. Until you have your own, GoldScout starts with regional estimates from Blizzard's data that ship with every release, so the Farm list works the moment you install it.
 
 ### Farm tab
 Farms ranked by estimated gold per hour for your character:

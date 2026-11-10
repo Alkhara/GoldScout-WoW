@@ -7,6 +7,13 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- **The Farm list works the moment you install GoldScout:** until you have
+  prices of your own, it uses regional estimates (the typical price across
+  your region's auction houses, from Blizzard's data) that ship with each
+  release. Your own scans and GoldScout Companion's prices replace them.
+- **The welcome is now a setup checklist** that ticks itself off: prices,
+  recipes (only if you craft) and your first Hunt.
+
 ## v0.10.1
 
 - **A Settings page:** GoldScout now has its own page in Options › AddOns, with

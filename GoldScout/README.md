@@ -95,12 +95,17 @@ stays in your own SavedVariables.
 
 ## First run
 
-1. Open each of your profession windows once (including Cooking and First Aid),
-   so GoldScout learns your recipes.
-2. Visit an auctioneer. GoldScout opens beside the auction house; press **Scan AH**.
+Type `/gscout`. The Farm list works straight away with regional price
+estimates that ship with GoldScout, and a short checklist shows what's left to
+set up, ticking itself off as you go (`/gscout welcome` shows it again):
+
+1. Prices for your own auction house: GoldScout Companion brings them in every
+   hour, or visit an auctioneer and press **Scan AH**. Either replaces the
+   estimates.
+2. If you craft, open each of your profession windows once (including Cooking
+   and First Aid), so GoldScout learns your recipes.
 3. Visit vendors that sell crafting supplies (thread, vials, spices, flux) so
    GoldScout learns their exact prices.
-4. Type `/gscout` any time to open the window.
 
 ## Commands
 

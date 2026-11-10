@@ -1,8 +1,11 @@
 # Ships new community drop data to players once a week. If
-# GoldScout/Data_Community.lua changed since the latest version tag, and the
-# Tests workflow passed on this exact commit, it tags the next patch version
-# (v0.4.0 -> v0.4.1) and starts the Release workflow on that tag, which
-# publishes to GitHub, CurseForge and Wago. Otherwise it does nothing.
+# GoldScout/Data_Community.lua changed since the latest version tag, or that
+# tag is three weeks old, and the Tests workflow passed on this exact commit,
+# it tags the next patch version (v0.4.0 -> v0.4.1) and starts the Release
+# workflow on that tag, which publishes to GitHub, CurseForge and Wago.
+# Otherwise it does nothing. The three-week rule keeps the regional price
+# estimates each release bundles fresh: the addon stops using them after 30
+# days (Blizzard's API terms; tools/bundle_prices.py).
 #
 # A tag pushed with the workflow token doesn't start other workflows by
 # itself, so this starts Release explicitly.
@@ -43,23 +46,28 @@ jobs:
             summary "No version tag yet; tag the first release by hand."
             exit 0
           fi
+          reason="community data changed since $last"
           if git diff --quiet "$last" HEAD -- GoldScout/Data_Community.lua; then
-            summary "No new community data since $last, so no release."
-            exit 0
+            tagged=$(git for-each-ref --format='%(creatordate:unix)' "refs/tags/$last")
+            if [ $(( $(date +%s) - tagged )) -lt $(( 21 * 86400 )) ]; then
+              summary "No new community data since $last, so no release."
+              exit 0
+            fi
+            reason="$last is three weeks old, so its price estimates need refreshing"
           fi
           head=$(git rev-parse HEAD)
           tests=$(gh run list --workflow tests.yml --branch main --limit 20 \
             --json headSha,status,conclusion \
             --jq "map(select(.headSha == \"$head\")) | .[0] | \"\(.status) \(.conclusion)\"")
           if [ "$tests" != "completed success" ]; then
-            summary "New community data since $last, but Tests haven't passed on ${head:0:7} (${tests:-no run}); not releasing."
+            summary "Ready to release ($reason), but Tests haven't passed on ${head:0:7} (${tests:-no run}); not releasing."
             exit 0
           fi
           version=${last#v}
           IFS=. read -r major minor patch <<< "$version"
           next="v$major.$minor.$((patch + 1))"
           {
-            echo "Releasing **$next**: community data changed since $last."
+            echo "Releasing **$next**: $reason."
             echo
             echo "Other files changed since $last:"
             echo
@@ -75,7 +83,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git tag -a "$TAG" -m "GoldScout $TAG: community data update"
+          git tag -a "$TAG" -m "GoldScout $TAG: community data and price update"
           git push origin "$TAG"
           gh workflow run release.yml --ref "$TAG"
           echo "Tagged $TAG and started the Release workflow." | tee -a "$GITHUB_STEP_SUMMARY"

@@ -5,10 +5,10 @@
   python tools/changelog.py check v1.2.3     fail unless CHANGELOG.md has them
 
 A hand-made release needs its own "## v1.2.3" section (rename "Unreleased"
-before releasing; tools/release.py checks). A weekly community data release
-(tools are run by the Data release workflow, which tags without editing any
-file) has no section of its own: its notes say how much community data it
-ships, plus anything still under "Unreleased", since it ships main as it is.
+before releasing; tools/release.py checks). A weekly data release (tagged by
+the Data release workflow without editing any file) has no section of its own:
+its notes say it ships fresh price estimates and how much community data it
+has, plus anything still under "Unreleased", since it ships main as it is.
 The release workflow writes the notes to RELEASE_NOTES.md, which the packager
 publishes on GitHub, CurseForge and Wago (.pkgmeta manual-changelog).
 """
@@ -50,8 +50,10 @@ def notes(tag, text=None, counts=None):
         return "## What's new in GoldScout %s\n\n%s\n" % (tag, found[tag])
     mobs, contributors = counts or community_counts()
     lines = ["## What's new in GoldScout %s" % tag, "",
-             "- **New community drop data:** drop rates for %d mobs, shared by %d %s." % (
-                 mobs, contributors, "player" if contributors == 1 else "players")]
+             "- **Latest community drop data:** drop rates for %d mobs, shared by %d %s." % (
+                 mobs, contributors, "player" if contributors == 1 else "players"),
+             "- **Fresh regional price estimates,** so the Farm list works before you scan "
+             "or install GoldScout Companion."]
     if found.get("Unreleased"):
         lines += ["", "Also in this release:", "", found["Unreleased"]]
     return "\n".join(lines) + "\n"

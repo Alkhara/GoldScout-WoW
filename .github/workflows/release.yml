@@ -47,6 +47,12 @@ jobs:
       - name: Write the release notes
         run: python3 tools/changelog.py notes "$GITHUB_REF_NAME" > RELEASE_NOTES.md
 
+      # New players' Farm list works before they have prices of their own:
+      # regional estimates from the server's copy of Blizzard's snapshots,
+      # written over the empty stub in git (tools/bundle_prices.py).
+      - name: Bundle regional price estimates
+        run: python3 tools/bundle_prices.py
+
       - name: Package and upload
         uses: BigWigsMods/packager@v2
         env:

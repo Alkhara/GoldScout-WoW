@@ -8,6 +8,11 @@
 --     reads addon files at login or /reload, so that copy is as fresh as your
 --     last /reload; the window offers a button for it.
 --
+-- Until you have either, regional estimates shipped with the addon
+-- (Data_Prices.lua: the median across your region's auction houses) stand in,
+-- so a new player's Farm list isn't empty. They stop the moment you have prices
+-- of your own, and 30 days after their snapshot.
+--
 -- Blackwater (goblin) auction houses are a market of their own, "Realm-Neutral".
 -- A scan at one is kept there and never replaces your faction's prices, which
 -- stay the ones GoldScout ranks with; tooltips show the Blackwater price as an
@@ -61,6 +66,53 @@ function Prices:Companion(key)
   return market
 end
 
+-- GetCurrentRegion() numbers, as the region codes Blizzard's API uses.
+local REGIONS = { [1] = "us", [2] = "kr", [3] = "eu", [4] = "tw", [5] = "cn" }
+
+-- The regional estimates for your region, if the addon shipped some and
+-- they're under 30 days old: { snapshot, price = { [itemID] = copper },
+-- listed = { [itemID] = typical quantity } }. Read once; the other regions'
+-- text is dropped.
+local bundled
+function Prices:Bundled()
+  if bundled == nil then
+    bundled = false
+    local all = ns.BUNDLED_PRICES
+    local region = GetCurrentRegion and REGIONS[GetCurrentRegion()]
+    local data = type(all) == "table" and region and all[region]
+    if type(data) == "table" and type(data.snapshot) == "number" and type(data.items) == "string" then
+      local price, listed = {}, {}
+      for id, copper, quantity in data.items:gmatch("(%d+):(%d+):(%d+)") do
+        id = tonumber(id)
+        price[id], listed[id] = tonumber(copper), tonumber(quantity)
+      end
+      if next(price) then
+        bundled = { snapshot = data.snapshot, price = price, listed = listed }
+      end
+    end
+    ns.BUNDLED_PRICES = nil
+  end
+  if bundled and time() - bundled.snapshot <= COMPANION_MAX_AGE then
+    return bundled
+  end
+  return nil
+end
+
+-- True once you have prices of your own for this auction house: GoldScout
+-- Companion's (current) or a scan of yours.
+function Prices:HasOwn()
+  local market = ns.db and ns.db.markets[ns.MarketKey()]
+  return self:Companion() ~= nil or (market ~= nil and market.items ~= nil and next(market.items) ~= nil)
+end
+
+-- The regional estimates, while you have no prices of your own.
+function Prices:Estimates()
+  if self:HasOwn() then
+    return nil
+  end
+  return self:Bundled()
+end
+
 -- When GoldScout Companion last wrote its file (unix time), if it's loaded.
 function Prices:CompanionWritten()
   local data = GoldScoutPricesData
@@ -107,7 +159,16 @@ end
 -- Returns lowest unit buyout (copper), quantity listed, age in seconds, and
 -- the source ("scan" or "blizzard"), from whichever source is newer.
 -- The price is the last one seen, even if the item has since sold out.
+-- With no prices of your own yet, the regional estimate (source "estimate").
 function Prices:Get(itemID)
+  local estimates = self:Estimates()
+  if estimates then
+    local price = itemID and estimates.price[itemID]
+    if price then
+      return price, estimates.listed[itemID] or 0, time() - estimates.snapshot, "estimate"
+    end
+    return nil
+  end
   return self:GetFor(itemID, ns.MarketKey())
 end
 
@@ -152,6 +213,13 @@ end
 -- Every item with a price from either source: { [itemID] = true }.
 function Prices:ItemIDs()
   local ids = {}
+  local estimates = self:Estimates()
+  if estimates then
+    for itemID in pairs(estimates.price) do
+      ids[itemID] = true
+    end
+    return ids
+  end
   for itemID in pairs(self:Market().items) do
     ids[itemID] = true
   end
@@ -185,18 +253,17 @@ function Prices:Average(itemID)
 end
 
 -- Number of items with a price (either source), when your last complete
--- scan finished, and the companion's snapshot time (nil without one).
+-- scan finished, the companion's snapshot time (nil without one), and the
+-- regional estimates' snapshot time while those are in use.
 function Prices:Summary()
   local count = 0
   for _ in pairs(self:ItemIDs()) do
     count = count + 1
   end
   local companion = self:Companion()
-  return count, self:Market().lastScan, companion and companion.snapshot
+  local estimates = self:Estimates()
+  return count, self:Market().lastScan, companion and companion.snapshot, estimates and estimates.snapshot
 end
-
--- GetCurrentRegion() numbers, as the region codes Blizzard's API uses.
-local REGIONS = { [1] = "us", [2] = "kr", [3] = "eu", [4] = "tw", [5] = "cn" }
 
 -- Remember which realms and factions you play, and their region, so GoldScout
 -- Companion knows which auction houses' prices to save for you (read from this

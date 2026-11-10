@@ -67,7 +67,9 @@ Press **Scan AH** at any auctioneer and GoldScout reads the whole auction house
 in a few seconds. Or let the free **[GoldScout Companion](https://wowgoldscout.com/companion)**
 do it for you: about once an hour it brings Blizzard's auction house snapshot
 for your realm into GoldScout, for US, EU, Korean and Taiwanese realms. Your own
-scans still win when they're newer.
+scans still win when they're newer. Until you have either, GoldScout uses
+regional estimates that ship with each release, so the Farm list works the
+moment you install it.
 
 The companion runs quietly in the system tray on Windows, never pops up over
 your game, and also shares what GoldScout learns from your loot, so the Farm
@@ -87,10 +89,14 @@ signed Mac app is planned.)
 
 ## Getting started
 
-1. Open each of your profession windows once, so GoldScout learns your recipes.
-2. Visit an auctioneer and press **Scan AH**, unless the companion already
-   brings prices in.
-3. Open the **Farm** and **Craft** tabs, pick something, and press **Hunt**.
+Type `/gscout`: the Farm list is ranked straight away, and a short checklist
+shows what's left to set up, ticking itself off as you go.
+
+1. Prices for your own auction house: the companion brings them in, or press
+   **Scan AH** at any auctioneer.
+2. If you craft, open each of your profession windows once, so the **Craft**
+   tab knows your recipes.
+3. Pick a farm and press **Hunt**.
 
 Type `/gscout` to open the window any time. The full guide, with every command
 and setting, is in [GoldScout/README.md](GoldScout/README.md).

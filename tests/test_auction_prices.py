@@ -283,12 +283,12 @@ class AddonPricesTests(unittest.TestCase):
     def test_companion_data_older_than_30_days_is_ignored(self):
         self.load_companion_file(NOW - 31 * 86400, {"10": [500, 7]})
         self.assertEqual(self.get(10), None)
-        self.assertEqual(self.ns.Prices.Summary(self.ns.Prices), (0, None, None))
+        self.assertEqual(self.ns.Prices.Summary(self.ns.Prices), (0, None, None, None))
 
     def test_summary_counts_both_sources(self):
         self.load_companion_file(NOW - 3600, {"10": [500, 7], "11": [900, 2]})
         self.record_scan(12, 100, 1, NOW - 60)
-        count, _, snapshot = self.ns.Prices.Summary(self.ns.Prices)
+        count, _, snapshot, _ = self.ns.Prices.Summary(self.ns.Prices)
         self.assertEqual((count, snapshot), (3, NOW - 3600))
 
     def test_blackwater_is_recognized_only_for_sure(self):

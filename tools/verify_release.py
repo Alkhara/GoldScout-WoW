@@ -3,9 +3,10 @@
 
   python tools/verify_release.py assets DIR vX.Y.Z
       DIR holds the release's downloaded files. Checks the addon zip is there,
-      its TOC version is the tag, every file the TOC lists is in the zip, and
-      the companion exe is there (and signed, when checked on Windows), and the
-      Mac app is in its zip when the release has one.
+      its TOC version is the tag, every file the TOC lists is in the zip, it
+      ships regional price estimates, and the companion exe is there (and
+      signed, when checked on Windows), and the Mac app is in its zip when the
+      release has one.
 
   python tools/verify_release.py server [URL]
       Checks the live upload server accepts the export version this addon
@@ -41,6 +42,8 @@ def check_assets(folder, tag):
     with zipfile.ZipFile(zips[0]) as archive:
         names = set(archive.namelist())
         toc = archive.read("GoldScout/GoldScout.toc").decode("utf-8", "replace")
+        bundled = archive.read("GoldScout/Data_Prices.lua").decode("utf-8", "replace") \
+            if "GoldScout/Data_Prices.lua" in names else ""
     version = re.search(r"^## Version:\s*(\S+)", toc, re.M)
     if not version or version.group(1) != tag:
         fail("TOC version is %r, expected %s" % (version and version.group(1), tag))
@@ -49,6 +52,10 @@ def check_assets(folder, tag):
     if missing:
         fail("files listed in the TOC are missing from the zip: %s" % ", ".join(missing))
     print("ok   %s: version %s, %d Lua files" % (zips[0].name, tag, len(listed)))
+    regions = re.findall(r"^  (\w+) = \{ snapshot = \d+, houses = \d+, items = \"\d", bundled, re.M)
+    if not regions:
+        fail("Data_Prices.lua in the zip has no regional price estimates (the empty stub was packaged)")
+    print("ok   regional price estimates for %s" % ", ".join(regions))
 
     exe = folder / "GoldScoutCompanion.exe"
     if not exe.is_file() or exe.stat().st_size < 1_000_000:
