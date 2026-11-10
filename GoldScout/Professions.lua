@@ -1,5 +1,6 @@
 -- GoldScout professions: your skill levels, the recipes you know, and vendor prices.
 local _, ns = ...
+local L = ns.L
 
 local Professions = {}
 ns.Professions = Professions
@@ -167,7 +168,7 @@ function Professions:CaptureRecipes()
   end
 
   ns.cdb.recipes[professionID] = {
-    name = base.professionName or ns.SKILL_NAME[professionID] or "Profession",
+    name = base.professionName or ns.SKILL_NAME[professionID] or L["Profession"],
     rank = Plain(base.skillLevel),
     max = Plain(base.maxSkillLevel),
     updated = time(),

@@ -1,5 +1,6 @@
 -- GoldScout core: namespace, saved variables, event wiring and shared helpers.
 local ADDON_NAME, ns = ...
+local L = ns.L
 
 ns.ADDON_NAME = ADDON_NAME
 ns.AH_CUT = 0.95 -- you keep 95% of a sale after the auction house cut
@@ -146,18 +147,18 @@ end
 
 function ns.Age(seconds)
   if not seconds then
-    return "never"
+    return L["never"]
   end
   if seconds < 90 then
-    return "just now"
+    return L["just now"]
   end
   if seconds < 3600 then
-    return math.floor(seconds / 60) .. "m ago"
+    return L["%dm ago"]:format(math.floor(seconds / 60))
   end
   if seconds < 172800 then
-    return math.floor(seconds / 3600) .. "h ago"
+    return L["%dh ago"]:format(math.floor(seconds / 3600))
   end
-  return math.floor(seconds / 86400) .. "d ago"
+  return L["%dd ago"]:format(math.floor(seconds / 86400))
 end
 
 -- Midnight-era clients can hand addons "secret" values; treat them as unknown.
@@ -293,10 +294,13 @@ function ns.MarketLabel(key)
   if not realm then
     return key
   end
+  -- Shown to players, so translated (ns.L may be missing when tests load this alone).
+  local T = ns.L or {}
   local side = faction == "Neutral" and "Blackwater" or faction
+  side = T[side] or side
   for _, suffix in ipairs(RULESET_SUFFIXES) do
     if #realm > #suffix[1] and realm:sub(-#suffix[1]) == suffix[1] then
-      return suffix[2] .. " " .. side
+      return (T["%s %s"] or "%s %s"):format(T[suffix[2]] or suffix[2], side)
     end
   end
   if GetNormalizedRealmName and realm == GetNormalizedRealmName() and GetRealmName then

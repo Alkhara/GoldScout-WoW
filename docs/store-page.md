@@ -61,6 +61,9 @@ Every drop rate and spawn point comes from GoldScout players looting in game. No
 ### Plays by the rules
 GoldScout only shows information. It never moves, targets, attacks, loots or marks anything for you, and it respects every limit Blizzard puts on addons. The addon is free, and every in-game feature is the same for everyone.
 
+### Languages
+English, Deutsch, Français, 한국어 and 繁體中文, following your game's language. The translations are new: corrections are welcome on GitHub.
+
 ### Commands
 `/gscout` opens the window · `/gscout scan` · `/gscout hunt` · `/gscout export` · `/gscout skills` · `/gscout set kills 80` · `/gscout help`
 

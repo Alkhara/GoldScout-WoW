@@ -85,7 +85,7 @@ class FarmRulesTests(unittest.TestCase):
         self.lua = lua51.LuaRuntime(unpack_returned_tuples=True)
         self.ns = self.lua.table()
         self.run_lua(CLIENT)
-        for name in ("Core.lua", "Data.lua", "Data_Community.lua", "Community.lua"):
+        for name in ("Locale.lua", "Core.lua", "Data.lua", "Data_Community.lua", "Community.lua"):
             self.run_file(name)
         self.run_lua(STUBS_AFTER_CORE)
         for name in ("Learn.lua", "Engine.lua"):

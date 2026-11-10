@@ -6,6 +6,7 @@
 -- loots or sets raid markers for you. Values the game hides from addons are
 -- skipped rather than worked around.
 local _, ns = ...
+local L = ns.L
 
 local Hunt = {}
 ns.Hunt = Hunt
@@ -312,14 +313,14 @@ function Hunt:Start(target)
 
   local itemName = ns.ItemName(target.item)
   if placed then
-    ns.Print(("Hunting %s. Follow the waypoint arrow to %s."):format(itemName, target.zone or "the spot"))
+    ns.Print((L["Hunting %s. Follow the waypoint arrow to %s."]):format(itemName, target.zone or L["the spot"]))
   elseif target.spots and ns.db.settings.huntWaypoint then
-    ns.Print(("Hunting %s. Couldn't place a waypoint on that map; head to %s."):format(itemName, target.zone or "the zone"))
+    ns.Print((L["Hunting %s. Couldn't place a waypoint on that map; head to %s."]):format(itemName, target.zone or L["the zone"]))
   else
-    ns.Print(("Hunting %s in %s. Tracking your loot; no waypoint for this one."):format(itemName, target.zone or "the area"))
+    ns.Print((L["Hunting %s in %s. Tracking your loot; no waypoint for this one."]):format(itemName, target.zone or L["the area"]))
   end
   if next(target.npcs) and ns.db.settings.huntMarkers then
-    ns.Print("Mobs you're hunting get an icon over their nameplate (turn on enemy nameplates with V).")
+    ns.Print(L["Mobs you're hunting get an icon over their nameplate (turn on enemy nameplates with V)."])
   end
   ns.Fire("HUNT_CHANGED")
 end
@@ -346,7 +347,7 @@ function Hunt:Stop(silent)
     end
   end
   if not silent then
-    ns.Print(("Hunt over after %s: %d %s, %s in loot and %s in coin, about %s an hour."):format(
+    ns.Print((L["Hunt over after %s: %d %s, %s in loot and %s in coin, about %s an hour."]):format(
       Clock(summary.duration), summary.count, ns.ItemName(summary.item),
       ns.Money(summary.value), ns.Money(summary.coin), ns.Money(summary.perHour)))
   end
@@ -359,14 +360,14 @@ function Hunt:Retarget()
     return
   end
   if not session.target.spots then
-    ns.Print("No spawn coordinates for this hunt yet.")
+    ns.Print(L["No spawn coordinates for this hunt yet."])
     return
   end
   ClearWaypoint()
   if SetWaypoint(ChooseSpot(session.target.spots)) then
-    ns.Print("Waypoint set to the nearest spot.")
+    ns.Print(L["Waypoint set to the nearest spot."])
   else
-    ns.Print("Couldn't place a waypoint on that map.")
+    ns.Print(L["Couldn't place a waypoint on that map."])
   end
   self:UpdatePanel()
 end
@@ -382,7 +383,7 @@ function Hunt:Tick()
     if close then
       session.arrived = true
       ClearWaypoint()
-      ns.Print(("You've reached the %s spot."):format(ns.ItemName(session.target.item)))
+      ns.Print((L["You've reached the %s spot."]):format(ns.ItemName(session.target.item)))
       RefreshMarkers()
     end
   end
@@ -448,7 +449,7 @@ local function CreatePanel()
   panel.stop = CreateFrame("Button", nil, panel, "UIPanelButtonTemplate")
   panel.stop:SetSize(70, 20)
   panel.stop:SetPoint("BOTTOMRIGHT", -8, 8)
-  panel.stop:SetText("Stop")
+  panel.stop:SetText(L["Stop"])
   panel.stop:SetScript("OnClick", function()
     Hunt:Stop()
   end)
@@ -456,7 +457,7 @@ local function CreatePanel()
   panel.retarget = CreateFrame("Button", nil, panel, "UIPanelButtonTemplate")
   panel.retarget:SetSize(84, 20)
   panel.retarget:SetPoint("RIGHT", panel.stop, "LEFT", -4, 0)
-  panel.retarget:SetText("Waypoint")
+  panel.retarget:SetText(L["Waypoint"])
   panel.retarget:SetScript("OnClick", function()
     Hunt:Retarget()
   end)
@@ -466,18 +467,18 @@ end
 
 local function TravelLine(s)
   if s.arrived then
-    return "|cff40ff40On site.|r"
+    return L["|cff40ff40On site.|r"]
   end
   if s.waypoint then
     if s.distance and s.distanceUnit == "yd" then
-      return ("Travel: %d yards to go."):format(math.floor(s.distance))
+      return (L["Travel: %d yards to go."]):format(math.floor(s.distance))
     end
-    return "Travel: follow the waypoint arrow."
+    return L["Travel: follow the waypoint arrow."]
   end
   if not s.target.spots then
-    return "|cff9d9d9dNo spawn coordinates for this one.|r"
+    return L["|cff9d9d9dNo spawn coordinates for this one.|r"]
   end
-  return "|cff9d9d9dWaypoint cleared.|r"
+  return L["|cff9d9d9dWaypoint cleared.|r"]
 end
 
 function Hunt:UpdatePanel()
@@ -490,25 +491,25 @@ function Hunt:UpdatePanel()
   panel.title:SetText("Hunting " .. ns.ItemName(target.item))
   panel.subtitle:SetText(((target.label and target.label ~= "") and (target.label .. ", ") or "") .. (target.zone or ""))
 
-  local actions, noun = s.kills, "Kills"
+  local actions, noun = s.kills, L["Kills"]
   if target.per == "pick" then
-    actions, noun = s.picks, "Pickpockets"
+    actions, noun = s.picks, L["Pickpockets"]
   elseif target.per == "node" then
-    actions, noun = s.nodes, "Nodes"
+    actions, noun = s.nodes, L["Nodes"]
   end
 
   local lines = {
     TravelLine(s),
-    ("Time %s   ·   %s %d"):format(Clock(summary.duration), noun, actions),
+    (L["Time %s   ·   %s %d"]):format(Clock(summary.duration), noun, actions),
   }
   local targetLine = ("%s: %d"):format(ns.ItemName(target.item), summary.count)
   if target.chance and actions > 0 and (target.per == "kill" or target.per == "pick") then
-    targetLine = targetLine .. ("   ·   %d%% per %s (expected %d%%)"):format(
+    targetLine = targetLine .. (L["   ·   %d%% per %s (expected %d%%)"]):format(
       math.floor(s.hits / actions * 100 + 0.5), target.per, math.floor(target.chance * 100 + 0.5))
   end
   lines[#lines + 1] = targetLine
-  lines[#lines + 1] = ("Loot %s   ·   Coin %s"):format(ns.Money(summary.value), ns.Money(summary.coin))
-  lines[#lines + 1] = ("About %s an hour"):format(ns.Money(summary.perHour))
+  lines[#lines + 1] = (L["Loot %s   ·   Coin %s"]):format(ns.Money(summary.value), ns.Money(summary.coin))
+  lines[#lines + 1] = (L["About %s an hour"]):format(ns.Money(summary.perHour))
   panel.body:SetText(table.concat(lines, "\n"))
   panel:SetHeight(10 + 30 + 8 + panel.body:GetStringHeight() + 36)
 end
@@ -542,20 +543,20 @@ end
 function Hunt:UnitLines(npcID)
   local lines = {}
   if session and session.target.npcs[npcID] then
-    lines[#lines + 1] = "|cff40ff40You're hunting this mob.|r"
+    lines[#lines + 1] = L["|cff40ff40You're hunting this mob.|r"]
   end
   local _, class = UnitClass("player")
   for _, farm in ipairs(ns.FARMS_BY_NPC[npcID] or {}) do
     local entry = farm.entry
     if farm.kind == "Drop" then
       local price = ns.Prices:Get(entry.item)
-      local text = ("%s: %s per kill"):format(ns.ItemName(entry.item), Percent(entry.chance))
+      local text = (L["%s: %s per kill"]):format(ns.ItemName(entry.item), Percent(entry.chance))
       if price then
         text = text .. " (" .. ns.Money(price) .. " each)"
       end
       lines[#lines + 1] = text
     elseif farm.kind == "Pickpocket" and class == "ROGUE" then
-      lines[#lines + 1] = ("Pickpocket: junkbox on %s of picks"):format(Percent(entry.chance))
+      lines[#lines + 1] = (L["Pickpocket: junkbox on %s of picks"]):format(Percent(entry.chance))
     end
   end
   local learned = ns.Learn:Entry(npcID)
@@ -570,9 +571,9 @@ function Hunt:UnitLines(npcID)
         end
       end
     end
-    local text = ("You've looted %d of these"):format(learned.k)
+    local text = (L["You've looted %d of these"]):format(learned.k)
     if bestItem then
-      text = text .. ("; best drop %s at %s"):format(ns.ItemName(bestItem), Percent(bestRate))
+      text = text .. (L["; best drop %s at %s"]):format(ns.ItemName(bestItem), Percent(bestRate))
     end
     lines[#lines + 1] = text .. "."
   end

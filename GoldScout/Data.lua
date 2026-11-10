@@ -5,6 +5,7 @@
 -- marked "rough" are estimates. Mob drop rates and spawn spots come only from
 -- player-collected data (Data_Community.lua) and your own loot.
 local _, ns = ...
+local L = ns.L
 
 ns.SKILL = {
   ALCHEMY = 171,
@@ -23,19 +24,19 @@ ns.SKILL = {
 }
 
 ns.SKILL_NAME = {
-  [171] = "Alchemy",
-  [164] = "Blacksmithing",
-  [185] = "Cooking",
-  [333] = "Enchanting",
-  [202] = "Engineering",
-  [129] = "First Aid",
-  [356] = "Fishing",
-  [182] = "Herbalism",
-  [165] = "Leatherworking",
-  [633] = "Lockpicking",
-  [186] = "Mining",
-  [393] = "Skinning",
-  [197] = "Tailoring",
+  [171] = L["Alchemy"],
+  [164] = L["Blacksmithing"],
+  [185] = L["Cooking"],
+  [333] = L["Enchanting"],
+  [202] = L["Engineering"],
+  [129] = L["First Aid"],
+  [356] = L["Fishing"],
+  [182] = L["Herbalism"],
+  [165] = L["Leatherworking"],
+  [633] = L["Lockpicking"],
+  [186] = L["Mining"],
+  [393] = L["Skinning"],
+  [197] = L["Tailoring"],
 }
 
 -- Average units per node, skin or kill (rough).
@@ -50,46 +51,46 @@ ns.YIELD = {
 
 -- Herbs: item ID, Herbalism skill needed, classic spawn zones.
 ns.HERBS = {
-  { id = 2447, skill = 1, zones = "Starting zones, Barrens, Westfall" },              -- Peacebloom
-  { id = 765, skill = 1, zones = "Starting zones, Barrens, Westfall" },               -- Silverleaf
-  { id = 2449, skill = 15, zones = "Barrens, Westfall, Loch Modan, Darkshore" },      -- Earthroot
-  { id = 785, skill = 50, zones = "Barrens, Silverpine, Westfall, Redridge" },        -- Mageroyal
-  { id = 2450, skill = 70, zones = "Barrens, Silverpine, Redridge, Stonetalon" },     -- Briarthorn
-  { id = 3820, skill = 85, zones = "Underwater on coasts: Darkshore, Westfall, Wetlands, Hillsbrad" }, -- Stranglekelp
-  { id = 2453, skill = 100, zones = "Barrens, Redridge, Ashenvale, Stonetalon, Wetlands" }, -- Bruiseweed
-  { id = 3355, skill = 115, zones = "Stonetalon, Ashenvale, Thousand Needles, Arathi, Wetlands" }, -- Wild Steelbloom
-  { id = 3369, skill = 120, zones = "Duskwood, Desolace (Kodo Graveyard), Arathi, Wetlands" }, -- Grave Moss
-  { id = 3356, skill = 125, zones = "Ashenvale, Hillsbrad, Stonetalon, Thousand Needles, Wetlands" }, -- Kingsblood
-  { id = 3357, skill = 150, zones = "Riverbanks in Hillsbrad, Wetlands, Arathi, Stranglethorn" }, -- Liferoot
-  { id = 3818, skill = 160, zones = "Arathi, Stranglethorn, Swamp of Sorrows, Badlands" }, -- Fadeleaf
-  { id = 3821, skill = 170, zones = "Arathi, Stranglethorn, Badlands, Dustwallow, Feralas" }, -- Goldthorn
-  { id = 3358, skill = 185, zones = "Arathi, Stranglethorn, Hinterlands, Dustwallow, Feralas" }, -- Khadgar's Whisker
-  { id = 3819, skill = 195, zones = "Alterac Mountains" },                            -- Wintersbite
-  { id = 4625, skill = 205, zones = "Searing Gorge, Blasted Lands, Tanaris" },        -- Firebloom
-  { id = 8831, skill = 210, zones = "Tanaris, Feralas, Azshara, Hinterlands" },       -- Purple Lotus
-  { id = 8836, skill = 220, zones = "Felwood, Plaguelands" },                         -- Arthas' Tears
-  { id = 8838, skill = 230, zones = "Felwood, Hinterlands, Feralas, Un'Goro" },       -- Sungrass
-  { id = 8839, skill = 235, zones = "Swamp of Sorrows, Un'Goro" },                    -- Blindweed
-  { id = 8845, skill = 245, zones = "Maraudon, Hinterlands caves, Un'Goro" },         -- Ghost Mushroom
-  { id = 8846, skill = 250, zones = "Felwood, Desolace, Blasted Lands" },             -- Gromsblood
-  { id = 13464, skill = 260, zones = "Feralas, Azshara, Felwood, Burning Steppes" },  -- Golden Sansam
-  { id = 13463, skill = 270, zones = "Un'Goro, Azshara, Felwood, Silithus" },         -- Dreamfoil
-  { id = 13465, skill = 280, zones = "Winterspring, Un'Goro, Azshara, Burning Steppes" }, -- Mountain Silversage
-  { id = 13466, skill = 285, zones = "Plaguelands, Felwood" },                        -- Plaguebloom
-  { id = 13467, skill = 290, zones = "Winterspring" },                                -- Icecap
-  { id = 13468, skill = 300, zones = "Burning Steppes, Winterspring, Silithus, Eastern Plaguelands" }, -- Black Lotus
+  { id = 2447, skill = 1, zones = L["Starting zones, Barrens, Westfall"] },              -- Peacebloom
+  { id = 765, skill = 1, zones = L["Starting zones, Barrens, Westfall"] },               -- Silverleaf
+  { id = 2449, skill = 15, zones = L["Barrens, Westfall, Loch Modan, Darkshore"] },      -- Earthroot
+  { id = 785, skill = 50, zones = L["Barrens, Silverpine, Westfall, Redridge"] },        -- Mageroyal
+  { id = 2450, skill = 70, zones = L["Barrens, Silverpine, Redridge, Stonetalon"] },     -- Briarthorn
+  { id = 3820, skill = 85, zones = L["Underwater on coasts: Darkshore, Westfall, Wetlands, Hillsbrad"] }, -- Stranglekelp
+  { id = 2453, skill = 100, zones = L["Barrens, Redridge, Ashenvale, Stonetalon, Wetlands"] }, -- Bruiseweed
+  { id = 3355, skill = 115, zones = L["Stonetalon, Ashenvale, Thousand Needles, Arathi, Wetlands"] }, -- Wild Steelbloom
+  { id = 3369, skill = 120, zones = L["Duskwood, Desolace (Kodo Graveyard), Arathi, Wetlands"] }, -- Grave Moss
+  { id = 3356, skill = 125, zones = L["Ashenvale, Hillsbrad, Stonetalon, Thousand Needles, Wetlands"] }, -- Kingsblood
+  { id = 3357, skill = 150, zones = L["Riverbanks in Hillsbrad, Wetlands, Arathi, Stranglethorn"] }, -- Liferoot
+  { id = 3818, skill = 160, zones = L["Arathi, Stranglethorn, Swamp of Sorrows, Badlands"] }, -- Fadeleaf
+  { id = 3821, skill = 170, zones = L["Arathi, Stranglethorn, Badlands, Dustwallow, Feralas"] }, -- Goldthorn
+  { id = 3358, skill = 185, zones = L["Arathi, Stranglethorn, Hinterlands, Dustwallow, Feralas"] }, -- Khadgar's Whisker
+  { id = 3819, skill = 195, zones = L["Alterac Mountains"] },                            -- Wintersbite
+  { id = 4625, skill = 205, zones = L["Searing Gorge, Blasted Lands, Tanaris"] },        -- Firebloom
+  { id = 8831, skill = 210, zones = L["Tanaris, Feralas, Azshara, Hinterlands"] },       -- Purple Lotus
+  { id = 8836, skill = 220, zones = L["Felwood, Plaguelands"] },                         -- Arthas' Tears
+  { id = 8838, skill = 230, zones = L["Felwood, Hinterlands, Feralas, Un'Goro"] },       -- Sungrass
+  { id = 8839, skill = 235, zones = L["Swamp of Sorrows, Un'Goro"] },                    -- Blindweed
+  { id = 8845, skill = 245, zones = L["Maraudon, Hinterlands caves, Un'Goro"] },         -- Ghost Mushroom
+  { id = 8846, skill = 250, zones = L["Felwood, Desolace, Blasted Lands"] },             -- Gromsblood
+  { id = 13464, skill = 260, zones = L["Feralas, Azshara, Felwood, Burning Steppes"] },  -- Golden Sansam
+  { id = 13463, skill = 270, zones = L["Un'Goro, Azshara, Felwood, Silithus"] },         -- Dreamfoil
+  { id = 13465, skill = 280, zones = L["Winterspring, Un'Goro, Azshara, Burning Steppes"] }, -- Mountain Silversage
+  { id = 13466, skill = 285, zones = L["Plaguelands, Felwood"] },                        -- Plaguebloom
+  { id = 13467, skill = 290, zones = L["Winterspring"] },                                -- Icecap
+  { id = 13468, skill = 300, zones = L["Burning Steppes, Winterspring, Silithus, Eastern Plaguelands"] }, -- Black Lotus
 }
 
 -- Ores: item ID, Mining skill needed, stone from the same vein, classic zones.
 ns.ORES = {
-  { id = 2770, skill = 1, stone = 2835, zones = "Starting zones, Barrens, Westfall, Loch Modan, Darkshore" }, -- Copper Ore / Rough Stone
-  { id = 2771, skill = 65, stone = 2836, zones = "Redridge, Duskwood, Ashenvale, Stonetalon, Wetlands, Hillsbrad" }, -- Tin Ore / Coarse Stone
-  { id = 2775, skill = 75, zones = "Rare spawn where tin is: Redridge, Ashenvale, Stonetalon, Hillsbrad" }, -- Silver Ore
-  { id = 2772, skill = 125, stone = 2838, zones = "Arathi, Desolace, Thousand Needles, Stranglethorn, Badlands" }, -- Iron Ore / Heavy Stone
-  { id = 2776, skill = 155, zones = "Arathi, Desolace, Stranglethorn, Badlands, Thousand Needles" }, -- Gold Ore
-  { id = 3858, skill = 175, stone = 7912, zones = "Badlands, Hinterlands, Feralas, Tanaris, Searing Gorge" }, -- Mithril Ore / Solid Stone
-  { id = 7911, skill = 230, zones = "Rare spawn where mithril is: Badlands, Hinterlands, Tanaris" }, -- Truesilver Ore
-  { id = 10620, skill = 245, stone = 12365, zones = "Un'Goro, Silithus, Winterspring, Burning Steppes" }, -- Thorium Ore / Dense Stone
+  { id = 2770, skill = 1, stone = 2835, zones = L["Starting zones, Barrens, Westfall, Loch Modan, Darkshore"] }, -- Copper Ore / Rough Stone
+  { id = 2771, skill = 65, stone = 2836, zones = L["Redridge, Duskwood, Ashenvale, Stonetalon, Wetlands, Hillsbrad"] }, -- Tin Ore / Coarse Stone
+  { id = 2775, skill = 75, zones = L["Rare spawn where tin is: Redridge, Ashenvale, Stonetalon, Hillsbrad"] }, -- Silver Ore
+  { id = 2772, skill = 125, stone = 2838, zones = L["Arathi, Desolace, Thousand Needles, Stranglethorn, Badlands"] }, -- Iron Ore / Heavy Stone
+  { id = 2776, skill = 155, zones = L["Arathi, Desolace, Stranglethorn, Badlands, Thousand Needles"] }, -- Gold Ore
+  { id = 3858, skill = 175, stone = 7912, zones = L["Badlands, Hinterlands, Feralas, Tanaris, Searing Gorge"] }, -- Mithril Ore / Solid Stone
+  { id = 7911, skill = 230, zones = L["Rare spawn where mithril is: Badlands, Hinterlands, Tanaris"] }, -- Truesilver Ore
+  { id = 10620, skill = 245, stone = 12365, zones = L["Un'Goro, Silithus, Winterspring, Burning Steppes"] }, -- Thorium Ore / Dense Stone
 }
 
 -- Skinning: leather and hide by beast level.

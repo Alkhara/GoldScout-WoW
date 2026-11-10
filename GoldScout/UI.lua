@@ -1,5 +1,6 @@
 -- GoldScout window, item tooltips and slash commands.
 local _, ns = ...
+local L = ns.L
 
 local UI = { tab = "farm", offset = 0, rows = {}, data = {}, expanded = {} }
 ns.UI = UI
@@ -12,56 +13,56 @@ local MAX_COLUMNS = 8
 
 local COLUMNS = {
   farm = {
-    { key = "item", title = "Item", width = 165, align = "LEFT" },
-    { key = "kind", title = "Type", width = 70, align = "LEFT" },
-    { key = "source", title = "Best source", width = 154, align = "LEFT" },
-    { key = "lvl", title = "Lvl", width = 45, align = "CENTER" },
-    { key = "chance", title = "Chance", width = 55, align = "RIGHT" },
-    { key = "each", title = "Each", width = 70, align = "RIGHT" },
+    { key = "item", title = L["Item"], width = 165, align = "LEFT" },
+    { key = "kind", title = L["Type"], width = 70, align = "LEFT" },
+    { key = "source", title = L["Best source"], width = 154, align = "LEFT" },
+    { key = "lvl", title = L["Lvl"], width = 45, align = "CENTER" },
+    { key = "chance", title = L["Chance"], width = 55, align = "RIGHT" },
+    { key = "each", title = L["Each"], width = 70, align = "RIGHT" },
     { key = "hour", title = "Est. /hour", width = 80, align = "RIGHT" },
-    { key = "listed", title = "Listed", width = 50, align = "RIGHT" },
+    { key = "listed", title = L["Listed"], width = 50, align = "RIGHT" },
   },
   craft = {
-    { key = "item", title = "Item", width = 189, align = "LEFT" },
-    { key = "profit", title = "Profit", width = 85, align = "RIGHT" },
-    { key = "sell", title = "Sells for", width = 85, align = "RIGHT" },
-    { key = "cost", title = "Mats cost", width = 85, align = "RIGHT" },
-    { key = "listed", title = "Listed", width = 55, align = "RIGHT" },
-    { key = "skill", title = "Skill-up", width = 65, align = "CENTER" },
-    { key = "profession", title = "Profession", width = 110, align = "LEFT" },
+    { key = "item", title = L["Item"], width = 189, align = "LEFT" },
+    { key = "profit", title = L["Profit"], width = 85, align = "RIGHT" },
+    { key = "sell", title = L["Sells for"], width = 85, align = "RIGHT" },
+    { key = "cost", title = L["Mats cost"], width = 85, align = "RIGHT" },
+    { key = "listed", title = L["Listed"], width = 55, align = "RIGHT" },
+    { key = "skill", title = L["Skill-up"], width = 65, align = "CENTER" },
+    { key = "profession", title = L["Profession"], width = 110, align = "LEFT" },
   },
 }
 
 -- The two checkboxes change meaning with the tab.
 local TAB_OPTIONS = {
   farm = {
-    { setting = "showAllLevels", label = "All levels", tip = "Also show farms more than 4 levels above you. Lower-level farms are always shown." },
-    { setting = "showOtherProfs", label = "Other profs",
-      tip = "Also show herbs, ore and leather you could gather if you trained that profession." },
-    { setting = "xpOnly", label = "Gives XP",
-      tip = "Hide farms whose mobs are all gray to you (no experience). The Lvl column is green when "
-        .. "every mob gives XP, yellow when some do, and gray when none do." },
-    { setting = "knownRatesOnly", label = "Known rates",
-      tip = "Only show farms with a drop rate. Unchecked, crafting reagents selling on your auction house are "
+    { setting = "showAllLevels", label = L["All levels"], tip = L["Also show farms more than 4 levels above you. Lower-level farms are always shown."] },
+    { setting = "showOtherProfs", label = L["Other profs"],
+      tip = L["Also show herbs, ore and leather you could gather if you trained that profession."] },
+    { setting = "xpOnly", label = L["Gives XP"],
+      tip = L["Hide farms whose mobs are all gray to you (no experience). The Lvl column is green when "
+        .. "every mob gives XP, yellow when some do, and gray when none do."] },
+    { setting = "knownRatesOnly", label = L["Known rates"],
+      tip = L["Only show farms with a drop rate. Unchecked, crafting reagents selling on your auction house are "
         .. "listed by price too, even before anyone has learned where they drop.\n\nThe Chance column's "
         .. "color shows how many kills back a drop rate up: |cffff8040orange|r under 5, |cffffd100yellow|r "
-        .. "5-14, |cff9be35alight green|r 15-49, |cff40ff40green|r 50 or more." },
-    { setting = "showRareDrops", label = "Rare drops",
-      tip = "Also show BoE gear, recipes and gems. They're rare world drops that can come from many mobs, "
-        .. "so their rates per mob are rough guides at best." },
+        .. "5-14, |cff9be35alight green|r 15-49, |cff40ff40green|r 50 or more."] },
+    { setting = "showRareDrops", label = L["Rare drops"],
+      tip = L["Also show BoE gear, recipes and gems. They're rare world drops that can come from many mobs, "
+        .. "so their rates per mob are rough guides at best."] },
   },
   craft = {
-    { setting = "showTrivial", label = "Gray recipes", tip = "Include recipes that no longer give skill-ups." },
-    { setting = "showBound", label = "Soulbound results", tip = "Include recipes whose product can't be sold on the auction house." },
+    { setting = "showTrivial", label = L["Gray recipes"], tip = L["Include recipes that no longer give skill-ups."] },
+    { setting = "showBound", label = L["Soulbound results"], tip = L["Include recipes whose product can't be sold on the auction house."] },
   },
 }
 
 -- Experience styling for the Lvl column (see Engine's XP check).
 local XP_COLOR = { full = "|cff40ff40", some = "|cffffd100", none = "|cff808080" }
 local XP_TEXT = {
-  full = "|cff40ff40These mobs give you experience.|r",
-  some = "|cffffd100Only the higher-level mobs here give you experience.|r",
-  none = "|cff808080These mobs are gray to you: no experience.|r",
+  full = L["|cff40ff40These mobs give you experience.|r"],
+  some = L["|cffffd100Only the higher-level mobs here give you experience.|r"],
+  none = L["|cff808080These mobs are gray to you: no experience.|r"],
 }
 
 local function ShowTip(owner, text)
@@ -99,11 +100,18 @@ local function ItemText(row)
   return text
 end
 
+-- Words the code uses internally, as shown to players.
+local PER = { kill = L["kill"], pick = L["pick"], node = L["node"], skin = L["skin"], item = L["item"], try = L["try"] }
+local function Per(per)
+  return PER[per or "try"] or per
+end
+
 local function CellText(key, row)
   if key == "item" then
     return ItemText(row)
   elseif key == "kind" then
-    return row.needsProfession and Gray(row.kind) or row.kind
+    local kind = L[row.kind]
+    return row.needsProfession and Gray(kind) or kind
   elseif key == "source" then
     return row.source or ""
   elseif key == "lvl" then
@@ -142,7 +150,7 @@ local function CellText(key, row)
     if row.profit then
       return ns.Money(row.profit)
     end
-    return Gray(row.missing and "no price" or "-")
+    return Gray(row.missing and L["no price"] or "-")
   elseif key == "sell" then
     return ns.Money(row.sell)
   elseif key == "cost" then
@@ -168,76 +176,76 @@ end
 local function CraftTooltip(row)
   GameTooltip:AddLine((row.profession or "") .. ": " .. (row.name or ""), 1, 1, 1)
   if row.quantity ~= 1 then
-    GameTooltip:AddLine(("Makes %g per craft on average."):format(row.quantity), 0.8, 0.8, 0.8)
+    GameTooltip:AddLine((L["Makes %g per craft on average."]):format(row.quantity), 0.8, 0.8, 0.8)
   end
   GameTooltip:AddLine(" ")
   for _, part in ipairs(row.parts) do
-    local source = ({ vendor = "vendor", ["vendor~"] = "vendor, estimated", ah = "AH" })[part.source]
-      or "|cffff4040no price|r"
+    local source = ({ vendor = "vendor", ["vendor~"] = L["vendor, estimated"], ah = "AH" })[part.source]
+      or L["|cffff4040no price|r"]
     local cost = part.unit and ns.Money(part.unit * part.count) or "?"
     GameTooltip:AddDoubleLine(part.count .. "x " .. ns.ItemName(part.id), cost .. " (" .. source .. ")",
       1, 1, 1, 1, 1, 1)
   end
   GameTooltip:AddLine(" ")
-  AddMoneyLine("Materials", row.cost)
-  AddMoneyLine("You receive (after 5% AH cut)", row.revenue)
-  AddMoneyLine("Profit per craft", row.profit)
+  AddMoneyLine(L["Materials"], row.cost)
+  AddMoneyLine(L["You receive (after 5% AH cut)"], row.revenue)
+  AddMoneyLine(L["Profit per craft"], row.profit)
   if row.age then
-    GameTooltip:AddLine(("Price seen %s; %d listed."):format(ns.Age(row.age), row.listed or 0), 0.6, 0.6, 0.6)
+    GameTooltip:AddLine((L["Price seen %s; %d listed."]):format(ns.Age(row.age), row.listed or 0), 0.6, 0.6, 0.6)
   end
   if row.listed and row.listed > 0 and row.listed < 10 then
-    GameTooltip:AddLine("Few listings, so this price may not hold.", 1, 0.5, 0.25, true)
+    GameTooltip:AddLine(L["Few listings, so this price may not hold."], 1, 0.5, 0.25, true)
   end
   if row.estimated then
-    GameTooltip:AddLine("Some vendor costs are estimates until you visit a vendor that sells them.", 0.6, 0.6, 0.6, true)
+    GameTooltip:AddLine(L["Some vendor costs are estimates until you visit a vendor that sells them."], 0.6, 0.6, 0.6, true)
   end
 end
 
 local function FarmTooltip(row)
-  GameTooltip:AddLine(row.kind .. ": " .. (row.source or ""), 1, 1, 1)
+  GameTooltip:AddLine(L[row.kind] .. ": " .. (row.source or ""), 1, 1, 1)
   if row.zone then
     GameTooltip:AddLine(row.zone, 0.8, 0.8, 0.8, true)
   end
   GameTooltip:AddLine(" ")
   local price, listed, age = ns.Prices:Get(row.item)
   if price then
-    AddMoneyLine("AH price per unit", price)
+    AddMoneyLine(L["AH price per unit"], price)
   end
   if row.chance then
-    GameTooltip:AddDoubleLine("Chance per " .. (row.per or "try"), Percent(row.chance), 0.8, 0.8, 0.8, 1, 1, 1)
+    GameTooltip:AddDoubleLine(L["Chance per %s"]:format(Per(row.per)), Percent(row.chance), 0.8, 0.8, 0.8, 1, 1, 1)
   end
   if row.confidence then
-    GameTooltip:AddDoubleLine("Confidence", ("%s%s|r (%d %s)"):format(row.confidence.color, row.confidence.text,
-      row.seenTrials or 0, row.per == "pick" and "picks" or "kills"), 0.8, 0.8, 0.8, 1, 1, 1)
+    GameTooltip:AddDoubleLine(L["Confidence"], ("%s%s|r (%d %s)"):format(row.confidence.color, row.confidence.text,
+      row.seenTrials or 0, row.per == "pick" and L["picks"] or L["kills"]), 0.8, 0.8, 0.8, 1, 1, 1)
   end
   if row.kind ~= "Learned" and row.seenTrials and row.seenTrials > 0 then
-    GameTooltip:AddDoubleLine(("Player data (%d %s)"):format(row.seenTrials, row.per == "pick" and "picks" or "kills"),
+    GameTooltip:AddDoubleLine((L["Player data (%d %s)"]):format(row.seenTrials, row.per == "pick" and L["picks"] or L["kills"]),
       Percent(row.seenRate or 0), 0.8, 0.8, 0.8, 1, 1, 1)
     if row.baseChance then
-      GameTooltip:AddDoubleLine("Starting rate", Percent(row.baseChance), 0.8, 0.8, 0.8, 1, 1, 1)
+      GameTooltip:AddDoubleLine(L["Starting rate"], Percent(row.baseChance), 0.8, 0.8, 0.8, 1, 1, 1)
     end
   end
   if not row.unknownRate then
-    AddMoneyLine("Expected value per " .. (row.per or "try"), row.each)
-    AddMoneyLine("Rough estimate per hour", row.hour)
+    AddMoneyLine(L["Expected value per %s"]:format(Per(row.per)), row.each)
+    AddMoneyLine(L["Rough estimate per hour"], row.hour)
   end
   if row.xp then
     GameTooltip:AddLine(XP_TEXT[row.xp], 0.8, 0.8, 0.8)
   end
   if age then
-    GameTooltip:AddLine(("Price seen %s; %d listed."):format(ns.Age(age), listed or 0), 0.6, 0.6, 0.6)
+    GameTooltip:AddLine((L["Price seen %s; %d listed."]):format(ns.Age(age), listed or 0), 0.6, 0.6, 0.6)
   end
   if row.note then
     GameTooltip:AddLine(row.note, 0.95, 0.85, 0.55, true)
   end
-  GameTooltip:AddLine("Per-hour figures assume your /gscout set kills, nodes and picks rates.", 0.5, 0.5, 0.5, true)
+  GameTooltip:AddLine(L["Per-hour figures assume your /gscout set kills, nodes and picks rates."], 0.5, 0.5, 0.5, true)
   if row.sources and row.sources > 1 then
-    GameTooltip:AddLine(("Best of %d sources by gold per hour. Click + to see the others."):format(row.sources),
+    GameTooltip:AddLine((L["Best of %d sources by gold per hour. Click + to see the others."]):format(row.sources),
       0.4, 0.8, 1, true)
   end
   if row.hunt then
-    GameTooltip:AddLine(row.hunt.spots and "Click to select it, then press Hunt for a waypoint and loot tracker."
-      or "Click to select it, then press Hunt to track this farm's loot.", 0.4, 0.8, 1, true)
+    GameTooltip:AddLine(row.hunt.spots and L["Click to select it, then press Hunt for a waypoint and loot tracker."]
+      or L["Click to select it, then press Hunt to track this farm's loot."], 0.4, 0.8, 1, true)
   end
 end
 
@@ -272,7 +280,7 @@ local function RowOnEnter(self)
     FarmTooltip(row)
   end
   GameTooltip:AddLine(" ")
-  GameTooltip:AddLine("Shift-click to link the item in chat.", 0.5, 0.5, 0.5)
+  GameTooltip:AddLine(L["Shift-click to link the item in chat."], 0.5, 0.5, 0.5)
   GameTooltip:Show()
 end
 
@@ -476,13 +484,13 @@ function UI:Create()
   f.scanButton = CreateFrame("Button", nil, f, "UIPanelButtonTemplate")
   f.scanButton:SetSize(110, 22)
   f.scanButton:SetPoint("TOPRIGHT", -38, -15)
-  f.scanButton:SetText("Scan AH")
+  f.scanButton:SetText(L["Scan AH"])
   f.scanButton:SetScript("OnClick", function()
     ns.Scanner:Start("manual")
   end)
   f.scanButton:SetScript("OnEnter", function(self)
-    ShowTip(self, "Reads the lowest price and quantity of every item on the auction house. "
-      .. "Takes a few seconds; avoid searching the auction house while it runs.")
+    ShowTip(self, L["Reads the lowest price and quantity of every item on the auction house. "
+      .. "Takes a few seconds; avoid searching the auction house while it runs."])
   end)
   f.scanButton:SetScript("OnLeave", HideTip)
 
@@ -491,19 +499,19 @@ function UI:Create()
   f.reloadButton = CreateFrame("Button", nil, f, "UIPanelButtonTemplate")
   f.reloadButton:SetSize(140, 22)
   f.reloadButton:SetPoint("TOPRIGHT", f.scanButton, "TOPLEFT", -6, 0)
-  f.reloadButton:SetText("Load newer prices")
+  f.reloadButton:SetText(L["Load newer prices"])
   f.reloadButton:SetScript("OnClick", function()
     if InCombatLockdown and InCombatLockdown() then
-      ns.Print("Leave combat first, then load newer prices.")
+      ns.Print(L["Leave combat first, then load newer prices."])
       return
     end
     ReloadUI()
   end)
   f.reloadButton:SetScript("OnEnter", function(self)
     local written = ns.Prices:CompanionWritten()
-    ShowTip(self, "Reloads the interface, like /reload, so GoldScout reads the newest prices GoldScout "
-      .. "Companion has saved. It saves new ones about once an hour"
-      .. (written and ("; the ones loaded now were saved " .. ns.Age(time() - written)) or "") .. ". "
+    ShowTip(self, L["Reloads the interface, like /reload, so GoldScout reads the newest prices GoldScout "
+      .. "Companion has saved. It saves new ones about once an hour"]
+      .. (written and L["; the ones loaded now were saved %s"]:format(ns.Age(time() - written)) or "") .. ". "
       .. ns.Prices.SOURCE)
   end)
   f.reloadButton:SetScript("OnLeave", HideTip)
@@ -512,14 +520,14 @@ function UI:Create()
   f.huntButton = CreateFrame("Button", nil, f, "UIPanelButtonTemplate")
   f.huntButton:SetSize(85, 22)
   f.huntButton:SetPoint("TOPRIGHT", -22, -64)
-  f.huntButton:SetText("Hunt")
+  f.huntButton:SetText(L["Hunt"])
   f.huntButton:SetScript("OnClick", function()
     UI:OnHuntClicked()
   end)
   f.huntButton:SetScript("OnEnter", function(self)
-    ShowTip(self, "Starts a hunt for the selected farm: Blizzard's map waypoint to the spot, an icon over "
+    ShowTip(self, L["Starts a hunt for the selected farm: Blizzard's map waypoint to the spot, an icon over "
       .. "the mobs you're after, and a live loot and gold-per-hour tracker. Information only; it never "
-      .. "moves, targets or loots for you.")
+      .. "moves, targets or loots for you."])
   end)
   f.huntButton:SetScript("OnLeave", HideTip)
 
@@ -529,8 +537,8 @@ function UI:Create()
   f.charText:SetJustifyH("LEFT")
   f.charText:SetWordWrap(false)
 
-  f.farmTab = CreateTabButton(f, "Farm", "farm", 18)
-  f.craftTab = CreateTabButton(f, "Craft", "craft", 100)
+  f.farmTab = CreateTabButton(f, L["Farm"], "farm", 18)
+  f.craftTab = CreateTabButton(f, L["Craft"], "craft", 100)
   f.checks = { CreateCheckbox(f, 196), CreateCheckbox(f, 300), CreateCheckbox(f, 390), CreateCheckbox(f, 470),
     CreateCheckbox(f, 565) }
 
@@ -594,23 +602,23 @@ function UI:Create()
   hint:SetHeight(18)
   hint.text = hint:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
   hint.text:SetPoint("LEFT", 4, 0)
-  hint.text:SetText("|cffffd100Prices every hour, without scanning:|r get GoldScout Companion (free, Windows)")
+  hint.text:SetText(L["|cffffd100Prices every hour, without scanning:|r get GoldScout Companion (free, Windows)"])
   hint.link = CreateCopyBox(hint, COMPANION_URL)
   hint.link:SetSize(180, 18)
   hint.link:SetPoint("LEFT", hint.text, "RIGHT", 12, 0)
   hint.hide = CreateFrame("Button", nil, hint, "UIPanelButtonTemplate")
   hint.hide:SetSize(54, 18)
   hint.hide:SetPoint("RIGHT", 0, 0)
-  hint.hide:SetText("Hide")
+  hint.hide:SetText(L["Hide"])
   hint.hide:SetScript("OnClick", function()
     ns.db.settings.companionHint = false
-    ns.Print("Companion tip hidden. /gscout set companionhint on brings it back.")
+    ns.Print(L["Companion tip hidden. /gscout set companionhint on brings it back."])
     UI:UpdateCompanionHint()
   end)
   hint:SetScript("OnEnter", function(self)
-    ShowTip(self, "GoldScout Companion is a free Windows app. About once an hour it saves Blizzard's auction "
+    ShowTip(self, L["GoldScout Companion is a free Windows app. About once an hour it saves Blizzard's auction "
       .. "prices for your realm for GoldScout, and it shares what GoldScout learns from your loot so everyone's "
-      .. "drop rates get better. Copy the link and open it in your browser.")
+      .. "drop rates get better. Copy the link and open it in your browser."])
   end)
   hint:SetScript("OnLeave", HideTip)
   hint:EnableMouse(true)
@@ -705,7 +713,7 @@ end
 function UI:UpdateHeaderText()
   local f = self.frame
   local className = UnitClass("player") or ""
-  local text = ("Level %d %s (%s)"):format(UnitLevel("player") or 0, className, UnitFactionGroup("player") or "?")
+  local text = (L["Level %d %s (%s)"]):format(UnitLevel("player") or 0, className, UnitFactionGroup("player") or "?")
   local skills = SkillSummary()
   if skills ~= "" then
     text = text .. "  ·  " .. skills
@@ -717,7 +725,7 @@ function UI:UpdateHeaderText()
     f.scanButton:SetText("Scanning...")
     f.scanButton:Disable()
   else
-    f.scanButton:SetText("Scan AH")
+    f.scanButton:SetText(L["Scan AH"])
     if ns.Scanner.ahOpen then
       f.scanButton:Enable()
     else
@@ -729,23 +737,23 @@ function UI:UpdateHeaderText()
   local status
   if scanning then
     local pages, items = ns.Scanner:Progress()
-    status = ("Scanning the auction house: page %d, %d items so far."):format(pages or 0, items or 0)
+    status = (L["Scanning the auction house: page %d, %d items so far."]):format(pages or 0, items or 0)
   elseif count == 0 then
-    status = "No prices yet. Open the auction house and press Scan AH."
+    status = L["No prices yet. Open the auction house and press Scan AH."]
   elseif snapshot then
-    status = ("%d prices for the %s auction house: Blizzard snapshot %s, your last scan %s."):format(count,
+    status = (L["%d prices for the %s auction house: Blizzard snapshot %s, your last scan %s."]):format(count,
       ns.MarketLabel(),
       ns.Age(time() - snapshot), lastScan and ns.Age(time() - lastScan) or "never")
   else
-    status = ("%d prices for the %s auction house, last full scan %s."):format(count, ns.MarketLabel(),
+    status = (L["%d prices for the %s auction house, last full scan %s."]):format(count, ns.MarketLabel(),
       lastScan and ns.Age(time() - lastScan) or "never")
     if not ns.Scanner.ahOpen then
-      status = status .. " Press Scan AH at an auctioneer to refresh."
+      status = status .. L[" Press Scan AH at an auctioneer to refresh."]
     end
   end
   if not scanning and ns.Scanner.ahOpen and ns.Scanner.marketKey and ns.Scanner.marketKey ~= ns.MarketKey() then
-    status = "Blackwater (goblin) auction house: a scan here is kept separately and never replaces your "
-      .. (UnitFactionGroup("player") or "faction") .. " prices."
+    status = L["Blackwater (goblin) auction house: a scan here is kept separately and never replaces your %s prices."]
+      :format(L[UnitFactionGroup("player") or "faction"])
   end
   f.statusText:SetText(status)
   -- The companion writes a new file about once an hour; offer to load it.
@@ -775,10 +783,10 @@ function UI:UpdateHuntButton()
   local active = ns.Hunt:Active()
   local row = self:SelectedRow()
   if active and (not row or row.hunt.key == active.target.key) then
-    button:SetText("Stop hunt")
+    button:SetText(L["Stop hunt"])
     button:Enable()
   else
-    button:SetText("Hunt")
+    button:SetText(L["Hunt"])
     if row then
       button:Enable()
     else
@@ -804,26 +812,26 @@ function UI:UpdateInfoText()
   local info = ""
   local hunting = ns.Hunt:Active()
   if self.tab == "farm" and hunting then
-    info = ("Hunting %s; the hunt panel shows how it's going. Select another farm and press Hunt to switch."):format(
+    info = (L["Hunting %s; the hunt panel shows how it's going. Select another farm and press Hunt to switch."]):format(
       ns.ItemName(hunting.target.item))
   elseif self.tab == "farm" then
     if best and best.hour then
-      info = ("Best for you right now: %s from %s, roughly %s an hour."):format(
+      info = (L["Best for you right now: %s from %s, roughly %s an hour."]):format(
         ns.ItemName(best.item), best.source or "?", ns.Money(best.hour))
     elseif best and best.unknownRate then
-      info = "No drop rates yet, so items are ranked by price. Loot them to learn where they drop."
+      info = L["No drop rates yet, so items are ranked by price. Loot them to learn where they drop."]
     elseif #self.data > 0 then
-      info = "Scan the auction house to price these farms."
+      info = L["Scan the auction house to price these farms."]
     end
   else
     if not ns.Engine:HasRecipes() then
-      info = "Open each of your profession windows once so GoldScout can learn your recipes."
+      info = L["Open each of your profession windows once so GoldScout can learn your recipes."]
     elseif best and best.profit and best.profit > 0 then
-      info = ("Most profitable craft: %s, %s profit each."):format(ns.ItemName(best.item), ns.Money(best.profit))
+      info = (L["Most profitable craft: %s, %s profit each."]):format(ns.ItemName(best.item), ns.Money(best.profit))
     elseif best and best.profit then
-      info = "None of your recipes make a profit at current prices."
+      info = L["None of your recipes make a profit at current prices."]
     else
-      info = "Scan the auction house to price your recipes."
+      info = L["Scan the auction house to price your recipes."]
     end
   end
   f.infoText:SetText(info)
@@ -862,16 +870,16 @@ function UI:Render()
   local total = #self.data
   if total == 0 then
     if self.tab == "craft" then
-      f.emptyText:SetText(ns.Engine:HasRecipes() and "No recipes match these filters."
-        or "No recipes yet: open each of your profession windows once.")
+      f.emptyText:SetText(ns.Engine:HasRecipes() and L["No recipes match these filters."]
+        or L["No recipes yet: open each of your profession windows once."])
     else
-      f.emptyText:SetText("Nothing in range for your level. Try 'All levels'.")
+      f.emptyText:SetText(L["Nothing in range for your level. Try 'All levels'."])
     end
     f.emptyText:Show()
     f.pageText:SetText("")
   else
     f.emptyText:Hide()
-    f.pageText:SetText(("%d-%d of %d"):format(self.offset + 1, math.min(total, self.offset + VISIBLE_ROWS), total))
+    f.pageText:SetText((L["%d-%d of %d"]):format(self.offset + 1, math.min(total, self.offset + VISIBLE_ROWS), total))
   end
   if self.offset > 0 then
     f.upButton:Enable()
@@ -1044,27 +1052,27 @@ local function AddTooltipPrices(tooltip, itemID)
   if price then
     local text = ns.Money(price)
     if listed == 0 then
-      text = text .. Gray(" (none listed)")
+      text = text .. Gray(L[" (none listed)"])
     end
-    local label = source == "blizzard" and "GoldScout AH, Blizzard data (" or "GoldScout AH ("
-    tooltip:AddDoubleLine(label .. ns.Age(age) .. ")", text, 1, 0.82, 0, 1, 1, 1)
+    local label = source == "blizzard" and L["GoldScout AH, Blizzard data (%s)"] or L["GoldScout AH (%s)"]
+    tooltip:AddDoubleLine(label:format(ns.Age(age)), text, 1, 0.82, 0, 1, 1, 1)
     local average, days = ns.Prices:Average(itemID)
     if average and days and days > 1 then
-      tooltip:AddDoubleLine(("GoldScout %d-day avg low"):format(days), ns.Money(average), 1, 0.82, 0, 1, 1, 1)
+      tooltip:AddDoubleLine((L["GoldScout %d-day avg low"]):format(days), ns.Money(average), 1, 0.82, 0, 1, 1, 1)
     end
   end
   if goblin then
     local text = ns.Money(goblin)
     if goblinListed == 0 then
-      text = text .. Gray(" (none listed)")
+      text = text .. Gray(L[" (none listed)"])
     elseif price and price > 0 then
       local difference = math.floor((goblin / price - 1) * 100 + 0.5)
       text = text .. Gray((" (%s%d%%)"):format(difference >= 0 and "+" or "", difference))
     end
-    tooltip:AddDoubleLine("GoldScout Blackwater (" .. ns.Age(goblinAge) .. ")", text, 0.8, 0.7, 0.4, 1, 1, 1)
+    tooltip:AddDoubleLine(L["GoldScout Blackwater (%s)"]:format(ns.Age(goblinAge)), text, 0.8, 0.7, 0.4, 1, 1, 1)
   end
   if vendor then
-    tooltip:AddDoubleLine("GoldScout vendor price", ns.Money(vendor), 1, 0.82, 0, 1, 1, 1)
+    tooltip:AddDoubleLine(L["GoldScout vendor price"], ns.Money(vendor), 1, 0.82, 0, 1, 1, 1)
   end
 end
 
@@ -1130,7 +1138,7 @@ local function CreateExportFrame()
 
   local title = f:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
   title:SetPoint("TOP", 0, -18)
-  title:SetText("Share your drop data")
+  title:SetText(L["Share your drop data"])
 
   f.info = f:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
   f.info:SetPoint("TOPLEFT", 22, -44)
@@ -1139,7 +1147,7 @@ local function CreateExportFrame()
 
   local linkLabel = f:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
   linkLabel:SetPoint("BOTTOMLEFT", 22, 26)
-  linkLabel:SetText("Share form:")
+  linkLabel:SetText(L["Share form:"])
   f.link = CreateCopyBox(f, SHARE_URL)
   f.link:SetPoint("LEFT", linkLabel, "RIGHT", 10, 0)
   f.link:SetPoint("RIGHT", f, "RIGHT", -24, 0)
@@ -1165,14 +1173,14 @@ end
 function UI:ShowExport()
   local text, count = ns.Learn:ExportString()
   if count == 0 then
-    ns.Print("Nothing to share yet; loot some mobs first.")
+    ns.Print(L["Nothing to share yet; loot some mobs first."])
     return
   end
   exportFrame = exportFrame or CreateExportFrame()
-  exportFrame.info:SetText(("Drop data for %d mobs from your loot: drops, kill counts, levels and loot "
+  exportFrame.info:SetText((L["Drop data for %d mobs from your loot: drops, kill counts, levels and loot "
     .. "locations, with no character names. Press Ctrl+C to copy it, then open the share form below in your "
     .. "browser and paste it there. Sharing means you agree to the GoldScout Contributor Terms. "
-    .. "On Windows, the GoldScout Companion app does this for you."):format(count))
+    .. "On Windows, the GoldScout Companion app does this for you."]):format(count))
   exportFrame.edit:SetText(text)
   exportFrame:Show()
   exportFrame.edit:SetFocus()
@@ -1204,33 +1212,33 @@ local function ShowErrors(rest)
     if ns.db then
       ns.db.errors = {}
     end
-    ns.Print("error log cleared.")
+    ns.Print(L["error log cleared."])
     return
   end
   if #errors == 0 then
-    ns.Print("no errors recorded.")
+    ns.Print(L["no errors recorded."])
     return
   end
-  ns.Print(("%d error(s) recorded, newest last:"):format(#errors))
+  ns.Print((L["%d error(s) recorded, newest last:"]):format(#errors))
   for i = math.max(1, #errors - 4), #errors do
     local entry = errors[i]
     print(("  %s x%d  %s"):format(date("%b %d %H:%M", entry.t or 0), entry.n or 1, entry.m or "?"))
   end
-  print("  Full details are saved for bug reports. /gscout errors clear to reset.")
+  print(L["  Full details are saved for bug reports. /gscout errors clear to reset."])
 end
 
 local function PrintHelp()
   ns.Print("commands:")
-  print("  /gscout - show or hide the window")
-  print("  /gscout farm | craft - open a tab")
-  print("  /gscout scan - scan prices (auction house must be open)")
-  print("  /gscout hunt - show the current hunt; /gscout hunt stop | history")
-  print("  /gscout export - copy your learned drop data to share with GoldScout")
-  print("  /gscout errors - list GoldScout's recent errors; /gscout errors clear")
-  print("  /gscout skills - show the skills and recipes GoldScout knows")
-  print("  /gscout set kills|nodes|picks <number> - your rates per hour")
-  print("  /gscout set autoscan|tooltip|window|waypoint|markers|learn|mobtips|raredrops|cloth|minimap on|off")
-  print("  /gscout reset prices | drops - forget saved prices or learned drop rates")
+  print(L["  /gscout - show or hide the window"])
+  print(L["  /gscout farm | craft - open a tab"])
+  print(L["  /gscout scan - scan prices (auction house must be open)"])
+  print(L["  /gscout hunt - show the current hunt; /gscout hunt stop | history"])
+  print(L["  /gscout export - copy your learned drop data to share with GoldScout"])
+  print(L["  /gscout errors - list GoldScout's recent errors; /gscout errors clear"])
+  print(L["  /gscout skills - show the skills and recipes GoldScout knows"])
+  print(L["  /gscout set kills|nodes|picks <number> - your rates per hour"])
+  print(L["  /gscout set autoscan|tooltip|window|waypoint|markers|learn|mobtips|raredrops|cloth|minimap on|off"])
+  print(L["  /gscout reset prices | drops - forget saved prices or learned drop rates"])
 end
 
 local function HuntCommand(rest)
@@ -1240,22 +1248,22 @@ local function HuntCommand(rest)
     if active then
       ns.Hunt:Stop()
     else
-      ns.Print("No hunt is running.")
+      ns.Print(L["No hunt is running."])
     end
   elseif action == "history" then
     local history = ns.Hunt:History()
     if #history == 0 then
-      ns.Print("No finished hunts yet (hunts under a minute aren't saved).")
+      ns.Print(L["No finished hunts yet (hunts under a minute aren't saved)."])
     end
     for i = 1, math.min(5, #history) do
       local h = history[i]
-      ns.Print(("%s: %d %s in %d min, about %s an hour."):format(date("%b %d", h.started), h.count,
+      ns.Print((L["%s: %d %s in %d min, about %s an hour."]):format(date("%b %d", h.started), h.count,
         ns.ItemName(h.item), math.floor(h.duration / 60), ns.Money(h.perHour)))
     end
   elseif active then
     ns.Hunt:ShowPanel()
   else
-    ns.Print("Pick a farm on the Farm tab and press Hunt to start one.")
+    ns.Print(L["Pick a farm on the Farm tab and press Hunt to start one."])
     UI:Show("farm")
   end
 end
@@ -1263,7 +1271,7 @@ end
 local function PrintSkills()
   local skills = ns.Professions:ReadSkills()
   if not next(skills) then
-    ns.Print("No profession skills found yet.")
+    ns.Print(L["No profession skills found yet."])
   end
   for skillID, skill in pairs(skills) do
     ns.Print(("%s %d/%d"):format(skill.name or ns.SKILL_NAME[skillID] or "?", skill.rank, skill.max or skill.rank))
@@ -1275,10 +1283,10 @@ local function PrintSkills()
       count = count + 1
     end
     anyRecipes = true
-    ns.Print(("%s: %d recipes learned (read %s)."):format(profession.name, count, ns.Age(time() - (profession.updated or 0))))
+    ns.Print((L["%s: %d recipes learned (read %s)."]):format(profession.name, count, ns.Age(time() - (profession.updated or 0))))
   end
   if not anyRecipes then
-    ns.Print("No recipes yet: open each of your profession windows once.")
+    ns.Print(L["No recipes yet: open each of your profession windows once."])
   end
 end
 
@@ -1288,13 +1296,13 @@ local function SetOption(rest)
   if setting == "companionHint" then
     local on = value:lower() == "on" or value:lower() == "true" or value == "1"
     ns.db.settings.companionHint = on and "always" or false
-    ns.Print(on and "The Farm tab shows the companion tip again." or "Companion tip hidden.")
+    ns.Print(on and L["The Farm tab shows the companion tip again."] or L["Companion tip hidden."])
     UI:QueueRefresh()
     return
   end
   if not setting then
-    ns.Print("Usage: /gscout set kills|nodes|picks <number>, or "
-      .. "/gscout set autoscan|tooltip|blackwater|window|waypoint|markers|learn|mobtips|raredrops|cloth|minimap|companionhint on|off")
+    ns.Print(L["Usage: /gscout set kills|nodes|picks <number>, or "
+      .. "/gscout set autoscan|tooltip|blackwater|window|waypoint|markers|learn|mobtips|raredrops|cloth|minimap|companionhint on|off"])
     return
   end
   if type(ns.db.settings[setting]) == "boolean" then
@@ -1303,12 +1311,12 @@ local function SetOption(rest)
   else
     local number = tonumber(value)
     if not number or number <= 0 then
-      ns.Print("Please give a number above zero.")
+      ns.Print(L["Please give a number above zero."])
       return
     end
     ns.db.settings[setting] = number
   end
-  ns.Print(("%s is now %s."):format(key:lower(), tostring(ns.db.settings[setting])))
+  ns.Print((L["%s is now %s."]):format(key:lower(), tostring(ns.db.settings[setting])))
   if setting == "minimap" then
     UI:UpdateMinimapButton()
   end
@@ -1320,7 +1328,7 @@ function UI:HandleSlash(message)
   command = (command or ""):lower()
   rest = rest or ""
   if not ns.db then
-    ns.Print("Still loading; try again in a moment.")
+    ns.Print(L["Still loading; try again in a moment."])
   elseif command == "" or command == "show" then
     self:Toggle()
   elseif command == "farm" or command == "craft" then
@@ -1339,11 +1347,11 @@ function UI:HandleSlash(message)
     SetOption(rest)
   elseif command == "reset" and rest:lower() == "prices" then
     ns.Prices:Reset()
-    ns.Print("Cleared saved prices for the " .. ns.MarketLabel() .. " auction house.")
+    ns.Print(L["Cleared saved prices for the %s auction house."]:format(ns.MarketLabel()))
     self:QueueRefresh()
   elseif command == "reset" and rest:lower() == "drops" then
     wipe(ns.db.drops)
-    ns.Print("Cleared the drop rates GoldScout learned from your loot.")
+    ns.Print(L["Cleared the drop rates GoldScout learned from your loot."])
     self:QueueRefresh()
   else
     PrintHelp()
@@ -1428,9 +1436,9 @@ function UI:CreateMinimapButton()
   b:SetScript("OnEnter", function(self)
     GameTooltip:SetOwner(self, "ANCHOR_LEFT")
     GameTooltip:AddLine("GoldScout")
-    GameTooltip:AddLine("Click: what to farm", 1, 1, 1)
-    GameTooltip:AddLine("Right-click: what to craft", 1, 1, 1)
-    GameTooltip:AddLine("Drag: move this button", 0.6, 0.6, 0.6)
+    GameTooltip:AddLine(L["Click: what to farm"], 1, 1, 1)
+    GameTooltip:AddLine(L["Right-click: what to craft"], 1, 1, 1)
+    GameTooltip:AddLine(L["Drag: move this button"], 0.6, 0.6, 0.6)
     GameTooltip:Show()
   end)
   b:SetScript("OnLeave", HideTip)

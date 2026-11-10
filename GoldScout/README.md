@@ -169,6 +169,15 @@ Every shared export makes the rankings better for everyone.
 - **Yields** (herbs per node, ore per node, leather per skin, cloth per kill)
   are rough averages.
 
+## Languages
+
+GoldScout follows your game's language: English, German, French, Korean and
+Traditional Chinese. Item, zone and profession names come from the game itself.
+The translations are new drafts, so if a word reads wrong, open an issue on
+GitHub or edit `Locale_<language>.lua` (each line is `["English"] = "yours"`).
+Mobs you haven't met yourself show the name other players shared, which may be
+in English.
+
 ## Limitations
 
 - It can't tell how quickly something sells, only how many are listed.

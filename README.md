@@ -24,6 +24,8 @@ level 25 rogue, and you get advice that fits that character.
 - **Experience check:** see at a glance which farms still give you XP, so you
   can level and earn at the same time.
 - **Price tooltips:** the latest auction price and listing count on every item.
+- **Your language:** English, Deutsch, Français, 한국어 and 繁體中文, following your
+  game's language. The translations are new; corrections are welcome.
 - **Prices without scanning:** with the free
   [GoldScout Companion](companion/README.md) on Windows, GoldScout gets
   Blizzard's hourly auction house snapshot for your realm, and your own scans

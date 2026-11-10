@@ -5,6 +5,7 @@
 -- lowest unit buyout and total quantity, delivered in pages. This avoids the
 -- 15-minute throttle and disconnect risk of a full ReplicateItems scan.
 local _, ns = ...
+local L = ns.L
 
 local Scanner = { ahOpen = false }
 ns.Scanner = Scanner
@@ -57,11 +58,11 @@ end
 
 function Scanner:Start(reason)
   if not self.ahOpen then
-    ns.Print("Open the auction house to scan prices.")
+    ns.Print(L["Open the auction house to scan prices."])
     return false
   end
   if self.scan then
-    ns.Print("A scan is already running.")
+    ns.Print(L["A scan is already running."])
     return false
   end
   local scan = { results = {}, count = 0, pages = 0, seen = 0, reason = reason }
@@ -87,7 +88,7 @@ function Scanner:Request(kind, send)
     scan.timeoutToken = token
     C_Timer.After(PAGE_TIMEOUT, function()
       if self.scan == scan and scan.timeoutToken == token and scan.waiting then
-        ns.Print("The auction house stopped responding; saving what was received.")
+        ns.Print(L["The auction house stopped responding; saving what was received."])
         self:Finish(false)
       end
     end)
@@ -187,10 +188,10 @@ function Scanner:Finish(complete)
     market.lastScan = now
   end
 
-  ns.Print(("%s: %d items priced."):format(complete and "Scan complete" or "Scan stopped", count))
+  ns.Print((L["%s: %d items priced."]):format(complete and L["Scan complete"] or L["Scan stopped"], count))
   if blackwater then
-    ns.Print("This was a Blackwater (goblin) auction house: its prices are kept separately and show as an "
-      .. "extra tooltip line. Your " .. (UnitFactionGroup("player") or "faction") .. " prices are unchanged.")
+    ns.Print(L["This was a Blackwater (goblin) auction house: its prices are kept separately and show as an "
+      .. "extra tooltip line. Your %s prices are unchanged."]:format(L[UnitFactionGroup("player") or "faction"]))
   end
   ns.Fire("SCAN_FINISHED", complete, count)
 end
@@ -256,7 +257,7 @@ ns.On("AUCTION_HOUSE_BROWSE_RESULTS_ADDED", OnBrowseResults)
 ns.On("AUCTION_HOUSE_THROTTLED_SYSTEM_READY", Pump)
 ns.On("AUCTION_HOUSE_BROWSE_FAILURE", function()
   if Scanner.scan and Scanner.scan.waiting then
-    ns.Print("The auction house refused the request; try again in a moment.")
+    ns.Print(L["The auction house refused the request; try again in a moment."])
     Scanner:Finish(false)
   end
 end)

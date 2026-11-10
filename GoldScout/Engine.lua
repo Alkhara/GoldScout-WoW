@@ -1,5 +1,6 @@
 -- GoldScout engine: turns prices, recipes and farm data into ranked lists.
 local _, ns = ...
+local L = ns.L
 
 local Engine = {}
 ns.Engine = Engine
@@ -335,7 +336,7 @@ end
 -- zone (Coyote and Coyote Packleader both drop Coyote Meat), not
 -- only the row's own mob. Each row keeps its own key, and its own spots first
 -- so the waypoint still leads to that mob.
-local UNKNOWN_ZONE = "where players loot it"
+local UNKNOWN_ZONE = L["where players loot it"]
 
 local function ShareHunts(rows)
   local places = {}
@@ -559,13 +560,13 @@ function Engine:Farms()
     if InWindow(cloth.min, cloth.max) then
       local net, listed, age = NetPrice(cloth.id)
       local each = net and net * yield.cloth
-      local zone = "Humanoids level " .. LevelText(cloth.min, cloth.max)
+      local zone = L["Humanoids level "] .. LevelText(cloth.min, cloth.max)
       rows[#rows + 1] = {
-        kind = "Cloth", item = cloth.id, source = "Any humanoid", zone = zone,
+        kind = "Cloth", item = cloth.id, source = L["Any humanoid"], zone = zone,
         lvl = LevelText(cloth.min, cloth.max), chanceText = "~" .. yield.cloth, per = "kill",
         each = each, hour = each and each * Kills(BandLevel(cloth.min, cloth.max)),
-        listed = listed, age = age, note = "Cloth per kill is a rough average.",
-        hunt = LootHunt("Cloth:" .. cloth.id, "kill", cloth.id, "Any humanoid", zone),
+        listed = listed, age = age, note = L["Cloth per kill is a rough average."],
+        hunt = LootHunt("Cloth:" .. cloth.id, "kill", cloth.id, L["Any humanoid"], zone),
       }
     end
   end
@@ -577,9 +578,9 @@ function Engine:Farms()
         local boxValue, unpriced = self:JunkboxValue(target.box)
         local chance, seenRate, seenTrials = BlendedChance(target.chance, target.npc, target.box, true)
         local each = boxValue and boxValue * chance
-        local note = "Chance is per pickpocket. Value counts what's in the box, not coin."
+        local note = L["Chance is per pickpocket. Value counts what's in the box, not coin."]
         if unpriced then
-          note = note .. " Some contents have no AH price yet."
+          note = note .. L[" Some contents have no AH price yet."]
         end
         rows[#rows + 1] = {
           kind = "Pickpocket", item = target.box, source = target.mob, zone = target.zone,
@@ -611,7 +612,7 @@ function Engine:Farms()
       local minLevel = (own and own.lmin) or (shared and shared.lmin) or level
       local maxLevel = (own and own.lmax) or (shared and shared.lmax) or minLevel
       if InWindow(minLevel, maxLevel) then
-        local zone = MapName((shared and shared.m) or (own and own.m)) or "where players loot it"
+        local zone = MapName((shared and shared.m) or (own and own.m)) or L["where players loot it"]
         local mob = (own and own.n) or (shared and shared.n) or ("Mob #" .. npcID)
         local items = {}
         for itemID in pairs((own and own.i) or {}) do
@@ -642,9 +643,9 @@ function Engine:Farms()
               local cautious = drops / (attempts + CAUTION_ATTEMPTS)
               local each = net * cautious * perDrop
               local confidence = Engine.Confidence(attempts)
-              local note = ("Seen %d times in %d kills by GoldScout players."):format(drops, attempts)
+              local note = (L["Seen %d times in %d kills by GoldScout players."]):format(drops, attempts)
               if confidence.min < 15 then
-                note = note .. " Gold per hour uses a cautious rate until more kills are recorded."
+                note = note .. L[" Gold per hour uses a cautious rate until more kills are recorded."]
               end
               rows[#rows + 1] = {
                 kind = "Learned", item = itemID, source = mob, zone = zone,
@@ -676,11 +677,11 @@ function Engine:Farms()
         local each = net and net * yield.herb
         rows[#rows + 1] = {
           kind = "Herb", item = herb.id,
-          source = (herbalism and "Herbalism " or "Needs Herbalism ") .. herb.skill,
+          source = (herbalism and (L["Herbalism"] .. " ") or L["Needs Herbalism "]) .. herb.skill,
           zone = herb.zones, lvl = "-", chanceText = "node", per = "node",
           each = each, hour = each and each * settings.nodesPerHour,
           listed = listed, age = age, needsProfession = not herbalism,
-          hunt = LootHunt("Herb:" .. herb.id, "node", herb.id, "Herb nodes", herb.zones),
+          hunt = LootHunt("Herb:" .. herb.id, "node", herb.id, L["Herb nodes"], herb.zones),
         }
       end
     end
@@ -696,12 +697,12 @@ function Engine:Farms()
         local each = net and (net * yield.ore + (stoneNet or 0) * yield.stone)
         rows[#rows + 1] = {
           kind = "Ore", item = ore.id,
-          source = (mining and "Mining " or "Needs Mining ") .. ore.skill,
+          source = (mining and (L["Mining"] .. " ") or L["Needs Mining "]) .. ore.skill,
           zone = ore.zones, lvl = "-", chanceText = "node", per = "node",
           each = each, hour = each and each * settings.nodesPerHour,
           listed = listed, age = age, needsProfession = not mining,
-          note = ore.stone and ("Includes stone: " .. ns.ItemName(ore.stone) .. ".") or nil,
-          hunt = LootHunt("Ore:" .. ore.id, "node", ore.id, "Mining nodes", ore.zones),
+          note = ore.stone and (L["Includes stone: "] .. ns.ItemName(ore.stone) .. ".") or nil,
+          hunt = LootHunt("Ore:" .. ore.id, "node", ore.id, L["Mining nodes"], ore.zones),
         }
       end
     end
@@ -717,15 +718,15 @@ function Engine:Farms()
         local net, listed, age = NetPrice(band.leather)
         local hideNet = band.hide and NetPrice(band.hide)
         local each = net and (net * yield.leather + (hideNet or 0) * yield.hide)
-        local zone = "Beasts level " .. LevelText(band.min, top)
+        local zone = L["Beasts level "] .. LevelText(band.min, top)
         rows[#rows + 1] = {
           kind = "Skin", item = band.leather,
-          source = (skinning and "" or "Needs Skinning: ") .. "skin beasts",
+          source = (skinning and "" or L["Needs Skinning: "]) .. L["skin beasts"],
           zone = zone, lvl = LevelText(band.min, top), chanceText = "skin", per = "skin",
           each = each, hour = each and each * Kills(BandLevel(band.min, top)),
           listed = listed, age = age, needsProfession = not skinning,
-          note = "Skins stack on top of whatever the beast drops.",
-          hunt = LootHunt("Skin:" .. band.leather, "skin", band.leather, "Skinning", zone),
+          note = L["Skins stack on top of whatever the beast drops."],
+          hunt = LootHunt("Skin:" .. band.leather, "skin", band.leather, L["Skinning"], zone),
         }
       end
     end
@@ -768,12 +769,12 @@ function Engine:Farms()
             if net then
               local row = {
                 kind = "Market", item = itemID, unknownRate = true, itemLevel = itemLevel, above = above,
-                source = "Source unknown", lvl = "-", chanceText = "?", per = "item",
+                source = L["Source unknown"], lvl = "-", chanceText = "?", per = "item",
                 each = net, listed = listed, age = age,
-                note = "A crafting reagent that professions need. No drop data yet, so this ranks by price "
+                note = L["A crafting reagent that professions need. No drop data yet, so this ranks by price "
                   .. "alone. Loot it (or Hunt it) "
-                  .. "and GoldScout learns which mobs drop it and how often.",
-                hunt = LootHunt("Market:" .. itemID, "kill", itemID, "Any source", "Wherever it drops"),
+                  .. "and GoldScout learns which mobs drop it and how often."],
+                hunt = LootHunt("Market:" .. itemID, "kill", itemID, L["Any source"], L["Wherever it drops"]),
               }
               local npcID, drops, kills = BestSighting(itemID)
               if npcID then
@@ -786,12 +787,12 @@ function Engine:Farms()
                 if minLevel then
                   row.lvl = LevelText(minLevel, (own and own.lmax) or (shared and shared.lmax) or minLevel)
                 end
-                row.note = ("Seen %d times in %d kills of %s."):format(drops, kills, mob)
+                row.note = (L["Seen %d times in %d kills of %s."]):format(drops, kills, mob)
                 row.hunt = MobHunt("Market:" .. itemID, "kill", itemID, nil, mob, zone, npcID, nil)
               end
               if above then
-                row.note = (row.note .. " Item level %d: the mobs that drop it are likely above "
-                  .. "your level, so this may be a tougher farm."):format(itemLevel)
+                row.note = (row.note .. L[" Item level %d: the mobs that drop it are likely above "
+                  .. "your level, so this may be a tougher farm."]):format(itemLevel)
               end
               rows[#rows + 1] = row
             end
