@@ -359,7 +359,8 @@ class CronTests(unittest.TestCase):
                 return calls
 
     def test_each_cron_starts_its_workflow(self):
-        for cron, workflow in (("7,22,37,52 * * * *", "ah-prices.yml"), ("17 * * * *", "data-merge.yml")):
+        for cron, workflow in (("7,22,37,52 * * * *", "ah-prices.yml"), ("17 * * * *", "data-merge.yml"),
+                               ("0 15 * * 2", "data-release.yml")):
             with self.subTest(cron):
                 self.run_cron(cron)
                 self.assertEqual(self.started(), [(

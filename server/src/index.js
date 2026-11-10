@@ -61,6 +61,7 @@ const REPOSITORY = "Alkhara/GoldScout-WoW";
 const SCHEDULE = {
   "7,22,37,52 * * * *": ["ah-prices.yml"], // Blizzard's snapshots land around :16
   "17 * * * *": ["data-merge.yml"],
+  "0 15 * * 2": ["data-release.yml"], // Tuesdays; GitHub skipped its own 15:00 run
 };
 
 import { handleAdmin, storeStats } from "./admin.js";

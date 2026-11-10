@@ -10,7 +10,10 @@ name: Data release
 
 on:
   schedule:
-    - cron: "0 15 * * 2" # Tuesdays, 15:00 UTC
+    # The server's cron starts this on Tuesdays at 15:00 UTC (GitHub skips
+    # scheduled runs on the hour). This later one is a backup; a second run
+    # finds the data already tagged and does nothing.
+    - cron: "41 15 * * 2"
   workflow_dispatch:
 
 permissions:

@@ -17,10 +17,10 @@ binding = "DB"
 database_name = "goldscout"
 database_id = "ac21113c-605f-4d85-afa2-dbdebabdc6bd"
 
-# Start the auction price and data merge workflows on GitHub (SCHEDULE in
+# Start the auction price, data merge and weekly data release workflows on GitHub (SCHEDULE in
 # src/index.js maps each cron to its workflow). Times are UTC.
 [triggers]
-crons = ["7,22,37,52 * * * *", "17 * * * *"]
+crons = ["7,22,37,52 * * * *", "17 * * * *", "0 15 * * 2"]
 
 [observability]
 enabled = true
