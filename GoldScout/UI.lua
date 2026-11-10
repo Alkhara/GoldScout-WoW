@@ -465,6 +465,7 @@ function UI:Create()
   })
   f:SetScript("OnShow", function()
     UI:Refresh()
+    UI:UpdateIntro()
   end)
   f:Hide()
   table.insert(UISpecialFrames, "GoldScoutFrame") -- Escape closes it
@@ -480,6 +481,20 @@ function UI:Create()
   local title = f:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
   title:SetPoint("TOP", 0, -18)
   title:SetText("GoldScout")
+
+  f.settingsButton = CreateFrame("Button", nil, f)
+  f.settingsButton:SetSize(20, 20)
+  f.settingsButton:SetPoint("TOPLEFT", 18, -16)
+  f.settingsButton:SetNormalTexture("Interface\\Icons\\INV_Misc_Gear_01")
+  f.settingsButton:GetNormalTexture():SetTexCoord(0.08, 0.92, 0.08, 0.92)
+  f.settingsButton:SetHighlightTexture("Interface\\Buttons\\ButtonHilight-Square", "ADD")
+  f.settingsButton:SetScript("OnClick", function()
+    ns.Options:Open()
+  end)
+  f.settingsButton:SetScript("OnEnter", function(self)
+    ShowTip(self, L["Settings"])
+  end)
+  f.settingsButton:SetScript("OnLeave", HideTip)
 
   f.scanButton = CreateFrame("Button", nil, f, "UIPanelButtonTemplate")
   f.scanButton:SetSize(110, 22)
@@ -624,6 +639,41 @@ function UI:Create()
   hint:EnableMouse(true)
   hint:Hide()
   f.companionHint = hint
+
+  -- First run: what to do first, over the list until dismissed.
+  local intro = CreateFrame("Frame", nil, f, "BackdropTemplate")
+  intro:SetPoint("TOPLEFT", 14, -86)
+  intro:SetPoint("BOTTOMRIGHT", -14, 14)
+  intro:SetFrameLevel(f:GetFrameLevel() + 20)
+  intro:EnableMouse(true)
+  intro:SetBackdrop({ bgFile = "Interface\\ChatFrame\\ChatFrameBackground" })
+  intro:SetBackdropColor(0.03, 0.05, 0.07, 0.96)
+  intro.title = intro:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
+  intro.title:SetPoint("TOP", 0, -28)
+  intro.title:SetText(L["Welcome to GoldScout"])
+  intro.body = intro:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+  intro.body:SetPoint("TOP", intro.title, "BOTTOM", 0, -22)
+  intro.body:SetWidth(560)
+  intro.body:SetJustifyH("LEFT")
+  intro.body:SetSpacing(6)
+  intro.body:SetText(table.concat({
+    L["1. Open each of your profession windows once, so GoldScout learns your recipes."],
+    L["2. Get auction prices: press Scan AH at any auctioneer, or install the free GoldScout Companion "
+      .. "(wowgoldscout.com/companion) for prices every hour without scanning."],
+    L["3. Pick a farm on the Farm tab and press Hunt for a waypoint, mob markers and a gold-per-hour tracker."],
+    "",
+    L["Settings are behind the gear in the top-left corner, or in Options > AddOns > GoldScout."],
+  }, "\n"))
+  intro.done = CreateFrame("Button", nil, intro, "UIPanelButtonTemplate")
+  intro.done:SetSize(120, 24)
+  intro.done:SetPoint("TOP", intro.body, "BOTTOM", 0, -24)
+  intro.done:SetText(L["Got it"])
+  intro.done:SetScript("OnClick", function()
+    ns.db.seenIntro = true
+    UI:UpdateIntro()
+  end)
+  intro:Hide()
+  f.intro = intro
 
   self:SetTab(self.tab)
   return f
@@ -1000,6 +1050,14 @@ function UI:Show(tab)
   self.frame:Show()
 end
 
+-- The first-run welcome, until the player dismisses it (/gscout welcome brings it back).
+function UI:UpdateIntro()
+  local f = self.frame
+  if f and f.intro then
+    f.intro:SetShown(ns.db ~= nil and not ns.db.seenIntro)
+  end
+end
+
 function UI:Toggle()
   if self.frame and self.frame:IsShown() then
     self.frame:Hide()
@@ -1249,6 +1307,7 @@ local function PrintHelp()
   ns.Print(L["commands:"])
   print(L["  /gscout - show or hide the window"])
   print(L["  /gscout farm | craft - open a tab"])
+  print(L["  /gscout options - open GoldScout's settings"])
   print(L["  /gscout scan - scan prices (auction house must be open)"])
   print(L["  /gscout hunt - show the current hunt; /gscout hunt stop | history"])
   print(L["  /gscout export - copy your learned drop data to share with GoldScout"])
@@ -1351,6 +1410,12 @@ function UI:HandleSlash(message)
     self:Toggle()
   elseif command == "farm" or command == "craft" then
     self:Show(command)
+  elseif command == "options" or command == "settings" or command == "config" then
+    ns.Options:Open()
+  elseif command == "welcome" then
+    ns.db.seenIntro = false
+    self:Show()
+    self:UpdateIntro()
   elseif command == "scan" then
     ns.Scanner:Start("manual")
   elseif command == "skills" then

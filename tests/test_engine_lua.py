@@ -294,12 +294,16 @@ class ErrorLogTests(FarmRulesTests.__bases__[0]):
         db = self.load_saved(None)
         self.assertEqual((db.schema, self.ns.savedData), (self.ns.SCHEMA, "fresh"))
         self.assertEqual(self.lua.globals().GoldScoutCharDB.schema, self.ns.CHAR_SCHEMA)
+        self.assertIsNone(db.seenIntro)                                # new players get the welcome
 
     def test_data_from_before_schemas_is_upgraded_once(self):
         db = self.load_saved(self.lua.eval("{ settingsVersion = 2, settings = { autoScan = true } }"))
-        self.assertEqual((db.schema, db.settingsVersion), (2, None))   # the old marker is replaced
+        self.assertEqual((db.schema, db.settingsVersion), (self.ns.SCHEMA, None))   # the old marker is replaced
         self.assertTrue(db.settings.autoScan)                          # version 2's step already ran once
-        self.assertEqual(self.ns.savedData, "current")
+        self.assertTrue(db.seenIntro)                                  # existing players skip the welcome
+        self.assertEqual(self.ns.savedData, "upgraded")
+        self.load_saved(db)
+        self.assertEqual(self.ns.savedData, "current")                 # and it happens once
 
     def test_newer_saved_data_is_left_alone(self):
         db = self.load_saved(self.lua.eval("{ schema = 99, settings = {}, futureThing = { kept = true } }"))

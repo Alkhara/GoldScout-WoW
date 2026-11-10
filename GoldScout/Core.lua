@@ -422,11 +422,14 @@ ns.On("ADDON_ACTION_FORBIDDEN", OnBlocked)
 --   * new saved data starts at the current version and runs no steps;
 --   * data from a newer GoldScout (the addon was downgraded) is left alone.
 -- Tests: tests/test_engine_lua.py SavedDataTests.
-ns.SCHEMA = 2
+ns.SCHEMA = 3
 ns.UPGRADES = {
   [2] = function(db)
     db.settings = db.settings or {}
     db.settings.autoScan = false -- scans became manual: opening the AH to buy something shouldn't start one
+  end,
+  [3] = function(db)
+    db.seenIntro = true -- the first-run welcome is for new players, not everyone updating
   end,
 }
 ns.CHAR_SCHEMA = 1
