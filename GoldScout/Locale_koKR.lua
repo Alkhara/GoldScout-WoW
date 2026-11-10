@@ -269,5 +269,6 @@ ns.AddLocale("koKR", {
   ["Normal"] = "일반",
   ["Roleplay"] = "RP",
   ["Roleplay PvP"] = "RP-PvP",
+  ["Mob #%d"] = "몹 #%d",
   ["%s %s"] = "%s %s",
 })

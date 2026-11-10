@@ -17,6 +17,8 @@ Version 3 adds optional lines after the mobs:
   @i^itemID^name       an item's name, as the player's game client shows it
   @m^uiMapID^name      a zone's name
   @c^itemID^           an item some recipe makes (so it isn't a world drop)
+  @l^0^locale          the game client's language ("enUS", "deDE", "koKR"...),
+                       version 5 and later; names are in that language
 Version 4 adds:
   @q^itemID^quality:class:reagent   item quality, item class ID and the
                                     Crafting Reagent flag (1, 0 or x unknown)
@@ -28,7 +30,8 @@ import re
 from collections import defaultdict
 
 HEADER = "GoldScout-export"
-HEADER_RE = re.compile(r"^GoldScout-export ([234])\^([a-z0-9]{12})\^([1-9][0-9]{0,8})$")
+HEADER_RE = re.compile(r"^GoldScout-export ([2345])\^([a-z0-9]{12})\^([1-9][0-9]{0,8})$")
+LOCALE_RE = re.compile(r"^[a-z]{2}[A-Z]{2}$")
 ITEM_META_RE = re.compile(r"^([0-9]):([0-9]{1,2}):([01x])$")
 
 
@@ -86,6 +89,7 @@ class Result:
         self.map_names = {}
         self.crafted = set()
         self.item_meta = {}  # itemID -> (quality, classID, reagent: True/False/None)
+        self.locale = None   # the client's language (version 5+); None for older exports
 
     def text(self):
         """The export rebuilt from the validated data."""
@@ -95,6 +99,8 @@ class Result:
                   for item, (quality, class_id, reagent) in sorted(self.item_meta.items())]
         lines += ["@m^%d^%s" % (map_id, name) for map_id, name in sorted(self.map_names.items())]
         lines += ["@c^%d^" % item for item in sorted(self.crafted)]
+        if self.locale:
+            lines.append("@l^0^%s" % self.locale)
         return "\n".join(lines) + "\n"
 
     @property
@@ -217,10 +223,18 @@ def _parse_line(line, line_no, result):
 def _parse_extra(line, line_no, result):
     """One @ line: an item name, item details, a zone name or a crafted item."""
     fields = line.split("^")
-    if len(fields) != 3 or fields[0] not in ("@i", "@m", "@c", "@q"):
-        result.errors.append("Line %d: expected @i, @q, @m or @c followed by an ID and a value." % line_no)
+    if len(fields) != 3 or fields[0] not in ("@i", "@m", "@c", "@q", "@l"):
+        result.errors.append("Line %d: expected @i, @q, @m, @c or @l followed by an ID and a value." % line_no)
         return
     kind, id_text, name = fields
+    if kind == "@l":
+        if result.version < 5:
+            result.errors.append("Line %d: a language line needs a version 5 export." % line_no)
+        elif id_text != "0" or not LOCALE_RE.match(name):
+            result.errors.append("Line %d: the language line must look like @l^0^enUS." % line_no)
+        else:
+            result.locale = name
+        return
     if kind == "@q" and result.version < 4:
         result.errors.append("Line %d: item detail lines need a version 4 export." % line_no)
         return
@@ -248,6 +262,29 @@ def _parse_extra(line, line_no, result):
         result.errors.append("Line %d: the name contains a character that isn't allowed." % line_no)
         return
     (result.item_names if kind == "@i" else result.map_names)[some_id] = name
+
+
+def latin(name):
+    """True when a name uses only Latin letters (English, and most of German and French)."""
+    return all(ord(c) < 0x250 for c in name)
+
+
+def keep_english_names(result):
+    """Drops the names in a result that aren't English, in place, so the shared
+    data and the website stay English: every name in a non-English export, and
+    in older exports (no language line) any name in a non-Latin script. Drop
+    counts and everything else are kept."""
+    english = result.locale is None or result.locale.startswith("en")
+
+    def keep(name):
+        return english and (result.locale is not None or latin(name))
+
+    for mob in result.mobs:
+        if mob.n and not keep(mob.n):
+            mob.n = ""
+    result.item_names = {k: v for k, v in result.item_names.items() if keep(v)}
+    result.map_names = {k: v for k, v in result.map_names.items() if keep(v)}
+    return result
 
 
 def parse(text):

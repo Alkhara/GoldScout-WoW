@@ -311,7 +311,7 @@ local function DropHunt(drop)
     local otherMap = other.spots and other.spots[1] and other.spots[1][1]
     if other.item == drop.item and (other == drop or (map ~= nil and otherMap == map)) then
       npcs[other.npc] = true
-      names[#names + 1] = other.mob
+      names[#names + 1] = ns.MobName(other.npc, nil, other.mob)
       for _, spot in ipairs(SpotsFor(other.npc, other.spots) or {}) do
         spots[#spots + 1] = spot
       end
@@ -546,7 +546,7 @@ function Engine:Farms()
       local chance, seenRate, seenTrials = BlendedChance(drop.chance, drop.npc, drop.item, false)
       local each = net and net * chance
       rows[#rows + 1] = {
-        kind = "Drop", item = drop.item, source = drop.mob, zone = drop.zone,
+        kind = "Drop", item = drop.item, source = ns.MobName(drop.npc, nil, drop.mob), zone = drop.zone,
         lvl = LevelText(drop.min, drop.max), chance = chance, baseChance = drop.chance, per = "kill",
         seenRate = seenRate, seenTrials = seenTrials,
         each = each, hour = each and each * Kills((drop.min + drop.max) / 2),
@@ -583,12 +583,13 @@ function Engine:Farms()
           note = note .. L[" Some contents have no AH price yet."]
         end
         rows[#rows + 1] = {
-          kind = "Pickpocket", item = target.box, source = target.mob, zone = target.zone,
+          kind = "Pickpocket", item = target.box, source = ns.MobName(target.npc, nil, target.mob), zone = target.zone,
           lvl = LevelText(target.min, target.max), chance = chance, baseChance = target.chance, per = "pick",
           seenRate = seenRate, seenTrials = seenTrials,
           each = each, hour = each and each * settings.picksPerHour,
           bound = true, note = note,
-          hunt = MobHunt("Pickpocket:" .. target.npc, "pick", target.box, target.chance, target.mob,
+          hunt = MobHunt("Pickpocket:" .. target.npc, "pick", target.box, target.chance,
+            ns.MobName(target.npc, nil, target.mob),
             target.zone, target.npc, target.spots),
         }
       end
@@ -613,7 +614,7 @@ function Engine:Farms()
       local maxLevel = (own and own.lmax) or (shared and shared.lmax) or minLevel
       if InWindow(minLevel, maxLevel) then
         local zone = MapName((shared and shared.m) or (own and own.m)) or L["where players loot it"]
-        local mob = (own and own.n) or (shared and shared.n) or ("Mob #" .. npcID)
+        local mob = ns.MobName(npcID, own and own.n, shared and shared.n)
         local items = {}
         for itemID in pairs((own and own.i) or {}) do
           items[itemID] = true
@@ -779,7 +780,7 @@ function Engine:Farms()
               local npcID, drops, kills = BestSighting(itemID)
               if npcID then
                 local own, shared = ns.Learn:Entry(npcID), ns.COMMUNITY[npcID]
-                local mob = (own and own.n) or (shared and shared.n) or ("Mob #" .. npcID)
+                local mob = ns.MobName(npcID, own and own.n, shared and shared.n)
                 local zone = MapName((shared and shared.m) or (own and own.m))
                 local minLevel = (own and own.lmin) or (shared and shared.lmin)
                 row.source = mob

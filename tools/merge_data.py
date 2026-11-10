@@ -47,6 +47,7 @@ def load(folder):
             print("skip %s: %s" % (path.name, result.errors[0]))
             continue
         seen.add(digest)
+        submission.keep_english_names(result)   # shared names stay English
         rank = (path.name.startswith("c-"), result.seq)
         current = best.get(result.install_id)
         if current is None or rank > current[0]:

@@ -268,5 +268,6 @@ ns.AddLocale("deDE", {
   ["Normal"] = "Normal",
   ["Roleplay"] = "Rollenspiel",
   ["Roleplay PvP"] = "Rollenspiel-PvP",
+  ["Mob #%d"] = "Mob #%d",
   ["%s %s"] = "%s %s",
 })

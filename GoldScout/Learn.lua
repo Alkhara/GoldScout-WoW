@@ -11,6 +11,11 @@ ns.Learn = Learn
 
 local ITEM_SLOT = (Enum.LootSlotType and Enum.LootSlotType.Item) or 1
 
+-- Export format. Version 5 adds the game's language (an @l line), so shared
+-- names stay English. It stays 4 until companions that accept version 5
+-- (0.10.0 and later) are out: older ones refuse to share a version 5 export.
+local EXPORT_VERSION = 4
+
 -- GUIDs stay stable for a play session, so each corpse, pickpocket or node is
 -- counted once even if you reopen its loot (or skin it afterwards).
 local counted = {}
@@ -297,6 +302,9 @@ local function ExportBody()
   for _, itemID in ipairs(SortedKeys((ns.db and ns.db.crafted) or {})) do
     lines[#lines + 1] = "@c^" .. itemID .. "^"
   end
+  if EXPORT_VERSION >= 5 then
+    lines[#lines + 1] = "@l^0^" .. (ns.LOCALE or "enUS")
+  end
   return table.concat(lines, "\n"), mobs
 end
 
@@ -317,7 +325,8 @@ function Learn:Snapshot()
   local latest = exports.list[exports.seq]
   if not (latest and latest:match("^[^\n]*\n(.*)$") == body) then
     exports.seq = exports.seq + 1
-    exports.list[exports.seq] = ("GoldScout-export 4^%s^%d\n%s"):format(db.installID, exports.seq, body)
+    exports.list[exports.seq] = ("GoldScout-export %d^%s^%d\n%s"):format(EXPORT_VERSION, db.installID,
+      exports.seq, body)
     local included = ns.COMMUNITY_SOURCES and ns.COMMUNITY_SOURCES[db.installID]
     for seq in pairs(exports.list) do
       if seq ~= included and seq <= exports.seq - KEEP_SNAPSHOTS then

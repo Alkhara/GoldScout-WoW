@@ -76,10 +76,10 @@ def check_assets(folder, tag):
 
 def export_version():
     source = (ROOT / "GoldScout" / "Learn.lua").read_text(encoding="utf-8")
-    match = re.search(r"GoldScout%-export (\d+)|\"GoldScout-export (\d+)\^", source)
+    match = re.search(r"^local EXPORT_VERSION = (\d+)", source, re.M)
     if not match:
-        fail("can't find the export version in Learn.lua")
-    return int(match.group(1) or match.group(2))
+        fail("can't find EXPORT_VERSION in Learn.lua")
+    return int(match.group(1))
 
 
 def check_server(url=DEFAULT_SERVER):

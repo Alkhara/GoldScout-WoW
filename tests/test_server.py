@@ -182,6 +182,13 @@ class ServerTests(unittest.TestCase):
         self.assertGreaterEqual(systems["Windows"]["n"], 1)
         self.assertGreaterEqual(systems["Windows"]["d7"], 1)
 
+    def test_version_five_exports_with_a_language_are_accepted(self):
+        install = new_install()
+        text = "GoldScout-export 5^%s^1\n%s\n@l^0^deDE\n" % (install, LINE)
+        status, reply = raw("/v1/uploads", text, {"X-GoldScout-Terms": uploader.TERMS_VERSION,
+                                                  "CF-Connecting-IP": fake_ip()}, "POST")
+        self.assertEqual((status, reply.get("status")), (201, "registered"))
+
     def test_region_is_recorded(self):
         def region_of(install):
             status, listing = raw("/v1/uploads?since=%d" % (time.time() - 3600),
