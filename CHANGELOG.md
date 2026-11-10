@@ -5,6 +5,8 @@ and Wago. Add to **Unreleased** as changes land, written for players; when
 releasing, rename it to the version (`## v1.2.3`). Weekly community data
 releases add their own line automatically.
 
+## Unreleased
+
 ## v0.10.1
 
 - **A Settings page:** GoldScout now has its own page in Options › AddOns, with
