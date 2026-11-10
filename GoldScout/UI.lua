@@ -5,7 +5,7 @@ local UI = { tab = "farm", offset = 0, rows = {}, data = {}, expanded = {} }
 ns.UI = UI
 
 local FRAME_WIDTH, FRAME_HEIGHT = 760, 510
-local COMPANION_URL = "wowgoldscout.com"
+local COMPANION_URL = "wowgoldscout.com/companion"
 local ROW_HEIGHT = 20
 local VISIBLE_ROWS = 16
 local MAX_COLUMNS = 8
@@ -594,9 +594,9 @@ function UI:Create()
   hint:SetHeight(18)
   hint.text = hint:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
   hint.text:SetPoint("LEFT", 4, 0)
-  hint.text:SetText("|cffffd100Drop rates come from players.|r Share yours automatically with GoldScout Companion:")
+  hint.text:SetText("|cffffd100Prices every hour, without scanning:|r get GoldScout Companion (free, Windows)")
   hint.link = CreateCopyBox(hint, COMPANION_URL)
-  hint.link:SetSize(130, 18)
+  hint.link:SetSize(180, 18)
   hint.link:SetPoint("LEFT", hint.text, "RIGHT", 12, 0)
   hint.hide = CreateFrame("Button", nil, hint, "UIPanelButtonTemplate")
   hint.hide:SetSize(54, 18)
@@ -608,8 +608,9 @@ function UI:Create()
     UI:UpdateCompanionHint()
   end)
   hint:SetScript("OnEnter", function(self)
-    ShowTip(self, "GoldScout Companion is a small Windows app that shares what GoldScout learns from "
-      .. "your loot, so everyone's drop rates get better. Copy the link and open it in your browser.")
+    ShowTip(self, "GoldScout Companion is a free Windows app. About once an hour it saves Blizzard's auction "
+      .. "prices for your realm for GoldScout, and it shares what GoldScout learns from your loot so everyone's "
+      .. "drop rates get better. Copy the link and open it in your browser.")
   end)
   hint:SetScript("OnLeave", HideTip)
   hint:EnableMouse(true)
@@ -932,9 +933,10 @@ function UI:Refresh()
   self:Render()
 end
 
--- Shown on the Farm tab until the player hides it, or until their own shared
--- data is in the community data (then they already have the companion or use
--- the share form). "/gscout set companionhint on" shows it regardless.
+-- Shown on the Farm tab until the player hides it, the companion is saving
+-- prices for them, or their own shared data is in the community data (then
+-- they already have the companion or use the share form).
+-- "/gscout set companionhint on" shows it regardless.
 function UI:CompanionHintWanted()
   local db = ns.db
   local setting = db and db.settings.companionHint
@@ -943,6 +945,9 @@ function UI:CompanionHintWanted()
   end
   if setting == "always" then
     return true
+  end
+  if ns.Prices:CompanionWritten() then
+    return false
   end
   return not (ns.COMMUNITY_SOURCES and db.installID and ns.COMMUNITY_SOURCES[db.installID])
 end

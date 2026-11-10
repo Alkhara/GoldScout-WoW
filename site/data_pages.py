@@ -277,9 +277,10 @@ def link_list(items):
 
 def cta(links):
     return ("<div class=cta><b>Help fill this in.</b> Every number here comes from players looting in game. "
-            "Install <a href=\"%(curseforge)s\">GoldScout</a> and share what you loot: the "
-            "<a href=\"%(companion)s\">companion app</a> does it automatically. More players, better data "
-            "for everyone.</div>" % links)
+            "Install <a href=\"%(curseforge)s\">GoldScout</a> and add "
+            "<a href=\"/companion\">GoldScout Companion</a>: it brings auction prices into the game every hour "
+            "without scanning, and shares what you loot automatically. More players, better data for "
+            "everyone.</div>" % links)
 
 
 # -- pages -----------------------------------------------------------------------

@@ -123,6 +123,11 @@ section p.sub { color: var(--muted); margin: 0 0 28px; max-width: 46em; }
 ul.ticks { padding-left: 20px; margin: 0; } ul.ticks li { margin: 6px 0; }
 footer { padding: 36px 0 48px; color: var(--muted); font-size: 14px; border-top: 1px solid rgba(255,255,255,.06); }
 footer a { color: var(--muted); margin-right: 16px; }
+.next { margin: 22px 0 0; padding: 14px 16px; border: 1px solid var(--gold2); border-radius: 12px; background: rgba(242,194,85,.08); font-size: 15px; color: var(--muted); }
+.next b { color: var(--text); }
+.next .btn { margin-top: 10px; padding: 9px 16px; }
+.faq h3 { margin: 22px 0 4px; font-size: 18px; color: var(--gold); }
+.faq p { margin: 0; color: var(--muted); max-width: 46em; }
 main.page { padding: 8px 0 40px; }
 main.page h1 { font-size: 34px; margin: 6px 0 4px; }
 main.page h2 { font-size: 22px; margin: 30px 0 10px; }
@@ -185,7 +190,7 @@ def page(s):
 <div class="wrap">
 <header class="top">
   <a class="brand" href="#"><img src="logo-400.png" alt="">GoldScout</a>
-  <nav><a href="#features">Features</a><a href="/farms">Farms by level</a><a href="/drop-rates">Drop rates</a><a href="#companion">Companion</a><a href="%(guide)s">Guide</a></nav>
+  <nav><a href="#features">Features</a><a href="/farms">Farms by level</a><a href="/drop-rates">Drop rates</a><a href="/companion">Companion</a><a href="%(guide)s">Guide</a></nav>
 </header>
 
 <div class="hero">
@@ -198,6 +203,8 @@ def page(s):
       <a class="btn" href="%(releases)s">GitHub</a>
     </div>
     <p class="small">Free, open source, and every feature is the same for everyone.</p>
+    <div class="next"><b>Then add GoldScout Companion.</b> The free Windows app brings auction prices into GoldScout every hour, without scanning, and shares your drop data so the Farm tab keeps getting better.<br>
+      <a class="btn" href="/companion">Get the companion</a></div>
   </div>
   <img class="shot" src="screenshots/Frame.JPG" alt="The GoldScout Farm tab">
 </div>
@@ -220,7 +227,7 @@ def page(s):
   </div>
   <ol class="steps">
     <li><b>You play.</b> GoldScout learns what every mob you loot really drops, on all your characters.</li>
-    <li><b>You share.</b> The companion does it automatically, or use <code>/gscout export</code> and the <a href="%(share)s">share form</a>. No character or account names, ever.</li>
+    <li><b>You share.</b> <a href="/companion">GoldScout Companion</a> does it automatically, or use <code>/gscout export</code> and the <a href="%(share)s">share form</a>. No character or account names, ever.</li>
     <li><b>It's checked.</b> Every submission is validated, and unusual drop rates are reviewed before they're used.</li>
     <li><b>Everyone gets it.</b> New community data ships in a release every week. Your own loot is never counted twice.</li>
   </ol>
@@ -229,23 +236,23 @@ def page(s):
 
 <section id="companion"><div class="wrap two">
   <div>
-    <h2>GoldScout Companion</h2>
-    <p class="sub">An optional Windows app that shares what GoldScout learns, so you never have to think about it.</p>
+    <h2>Prices every hour, without scanning</h2>
+    <p class="sub">GoldScout Companion is a free Windows app that keeps GoldScout up to date while you play.</p>
     <ul class="ticks">
-      <li>Runs quietly in the system tray and starts with Windows.</li>
-      <li>Never shows pop-ups over your game.</li>
-      <li>Shares new data automatically after you agree once, and can be paused any time.</li>
-      <li>Only reads GoldScout's saved data. It never touches the game.</li>
-      <li>Updates itself in one click, and only installs genuine signed releases.</li>
-      <li>Code-signed, so Windows shows who published it.</li>
+      <li><b>Hourly auction prices.</b> Blizzard's auction house snapshot for your realm and faction, saved for GoldScout about once an hour. Your own scans still win when they're newer.</li>
+      <li><b>Blackwater prices too.</b> What items go for at the goblin auction houses, as an extra tooltip line.</li>
+      <li><b>Better drop rates, automatically.</b> It shares what GoldScout learns from your loot, never character or account names, so the Farm tab improves for you and everyone.</li>
+      <li><b>Out of your way.</b> It sits in the system tray, never pops up over your game, and updates itself in one click.</li>
     </ul>
-    <p style="margin-top:22px"><a class="btn primary" href="%(companion)s">Download for Windows</a></p>
+    <p style="margin-top:22px"><a class="btn primary" href="%(companion)s">Download for Windows</a> <a class="btn" href="/companion">How it works</a></p>
+    <p class="small">Free and code-signed, so Windows shows who published it. Windows only for now.</p>
   </div>
   <div>
     <h2>Plays by the rules</h2>
     <p class="sub">GoldScout only shows information. It never moves, targets, attacks, loots or clicks anything for you, and it respects every limit Blizzard puts on addons.</p>
     <ul class="ticks">
       <li>The addon never connects to anything; sharing is always your choice.</li>
+      <li>The companion never touches the running game: it reads GoldScout's saved data and writes one small data addon.</li>
       <li>Open source on <a href="%(source)s">GitHub</a>, so anyone can check what it does.</li>
       <li>Read the <a href="%(privacy)s">privacy policy</a> and <a href="%(terms)s">contributor terms</a>.</li>
     </ul>
@@ -301,7 +308,7 @@ def layout(title, description, path, body):
 <div class="wrap">
 <header class="top">
   <a class="brand" href="/"><img src="/logo-400.png" alt="">GoldScout</a>
-  <nav><a href="/farms">Farms by level</a><a href="/drop-rates">Drop rates</a><a href="/#companion">Companion</a><a href="%(curseforge)s">Get GoldScout</a></nav>
+  <nav><a href="/farms">Farms by level</a><a href="/drop-rates">Drop rates</a><a href="/companion">Companion</a><a href="%(curseforge)s">Get GoldScout</a></nav>
 </header>
 <main class="page"><div class="table-wrap">%(body)s</div></main>
 </div>
@@ -313,6 +320,72 @@ def layout(title, description, path, body):
 </html>
 """ % dict(LINKS, site=SITE_URL, css=CSS, path=path, body=body,
            title=html.escape(title), description=html.escape(description))
+
+
+def companion_page(s):
+    """(title, description, body) for /companion: what the companion does and how to get it."""
+    e = html.escape
+    players = "%s player%s" % (format(s["contributors"], ","), "" if s["contributors"] == 1 else "s")
+    body = """<h1>GoldScout Companion</h1>
+<p class="summary">A free Windows app that brings auction house prices into GoldScout every hour, without scanning, and
+shares your drop data so GoldScout's Farm tab keeps getting better for everyone.</p>
+<p><a class="btn primary" href="%(companion)s">Download for Windows</a> <a class="btn" href="%(curseforge)s">Get the GoldScout addon</a></p>
+<p class="small">Free · code-signed · updates itself · Windows only for now</p>
+
+<h2>What you get</h2>
+<div class="grid">
+  <div class="card"><h3>Prices every hour</h3><p>Blizzard's auction house snapshot for your realm and faction, saved
+    for GoldScout about once an hour. Farm and Craft rankings stay current without a trip to the auction house, and
+    your own scans still win when they're newer.</p></div>
+  <div class="card"><h3>Blackwater prices too</h3><p>What items go for at the goblin auction houses, shown as an
+    extra tooltip line. They never replace your own faction's prices.</p></div>
+  <div class="card"><h3>Better drop rates for everyone</h3><p>Every mob you loot teaches GoldScout what it really
+    drops. The companion shares that for you, so the next release knows more mobs, for you and every other player.</p></div>
+  <div class="card"><h3>Out of your way</h3><p>It sits in the system tray, starts with Windows if you like, never
+    pops up over your game, and updates itself in one click.</p></div>
+</div>
+
+<h2>Why it matters</h2>
+<p class="summary">GoldScout uses no data from Wowhead or any other site: every drop rate comes from players looting
+in game. %(players)s have shared so far. Each new player fills in mobs and zones nobody has recorded yet, and
+<a href="/farms">the farms</a> get more accurate with every kill.</p>
+
+<h2>Set it up in a minute</h2>
+<ol class="steps">
+  <li><b>Install GoldScout</b> from <a href="%(curseforge)s">CurseForge</a> or <a href="%(wago)s">Wago</a>, if you haven't already.</li>
+  <li><b>Download and launch the app.</b> There's nothing to install, and it finds your WoW Forever folder by itself.</li>
+  <li><b>Choose once.</b> Agree to share automatically, or choose Not now and use it just for prices.</li>
+  <li><b>Play.</b> GoldScout loads new prices when you log in or <code>/reload</code>, and its window offers
+    <b>Load newer prices</b> when a fresher snapshot is waiting.</li>
+</ol>
+
+<div class="faq">
+<h2>Questions</h2>
+<h3>Does it touch the game?</h3>
+<p>No. It reads GoldScout's saved data file and writes one small data addon, GoldScout_Prices, which the game loads
+at login like any other addon. It never reads or changes the running game. Auction prices come from Blizzard's
+official Game Data API.</p>
+<h3>What does it share?</h3>
+<p>Only GoldScout's drop data: creature and item IDs, kill and drop counts, levels and where you looted, plus a
+random ID. Never character, account or realm names. See the <a href="%(privacy)s">privacy policy</a> and
+<a href="%(terms)s">contributor terms</a>.</p>
+<h3>Do I need it?</h3>
+<p>No. GoldScout works on its own: scan at the auction house, and share with <code>/gscout export</code> and the
+<a href="%(share)s">share form</a>. The companion does both for you.</p>
+<h3>Will it interrupt my game?</h3>
+<p>No. Its only notification says a new version is out, and it waits until World of Warcraft is closed.</p>
+<h3>Is it safe to run?</h3>
+<p>Every release is code-signed, so Windows shows who published it, and the companion only installs updates that
+are signed the same way. The source is on <a href="%(source)s">GitHub</a>.</p>
+<h3>Is there a Mac version?</h3>
+<p>Not yet; it's Windows only for now.</p>
+</div>
+<p class="small" style="margin-top:28px">Auction data from the Blizzard Entertainment Game Data API. GoldScout is not
+affiliated with or endorsed by Blizzard Entertainment.</p>
+""" % dict(LINKS, players=e(players))
+    return ("GoldScout Companion: hourly auction prices for GoldScout",
+            "A free Windows app that brings auction house prices into the GoldScout addon every hour without "
+            "scanning, and shares drop data so everyone's Farm tab gets better.", body)
 
 
 def main():
@@ -335,8 +408,9 @@ def main():
         url_path = "/" + relative[:-len(".html")]
         target.write_text(layout(title, description, url_path, body), encoding="utf-8")
 
+    write("companion.html", *companion_page(s))
     data = data_pages.Dataset(results, merged)
-    paths = ["/"] + data_pages.build(data, LINKS, write)
+    paths = ["/", "/companion"] + data_pages.build(data, LINKS, write)
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>',
                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     lastmod = "<lastmod>%s</lastmod>" % s["updated_iso"] if s["updated_iso"] else ""

@@ -3,8 +3,13 @@
 Keep both store pages identical: paste the sections below into each site's
 fields. The description is written in Markdown.
 
+CurseForge doesn't allow download links to files hosted elsewhere, and wants
+links to outside sites at the bottom of the page. So the description names
+GoldScout Companion and what it does, but its only links are in **Links** at
+the end, and they go to wowgoldscout.com pages, never straight to the exe.
+
 **Name:** GoldScout
-**Summary (one line):** Tells you what's worth farming or crafting on the character you're playing, using live auction house prices.
+**Summary (one line):** Tells you what's worth farming or crafting on the character you're playing, using live auction house prices, updated hourly with the free companion app.
 **Categories:** Auction & Economy; Professions; Map & Minimap
 **Game version:** WoW Forever (1.60.1)
 **Logo:** `docs/logo/goldscout-logo-1024.png`
@@ -18,8 +23,13 @@ fields. The description is written in Markdown.
 
 **What should *this* character be doing for gold right now?** GoldScout answers that for whichever character you're logged in on: its level, class, faction and professions, priced against your own auction house.
 
-### Live prices, no setup
-Press **Scan AH** at the auction house and GoldScout reads every item's lowest price and quantity in a few seconds. It never scans on its own, so buying something stays quick. Prices are kept per realm and faction and show on item tooltips.
+> **Get the most out of GoldScout: add GoldScout Companion.** The free Windows app brings auction house prices into GoldScout every hour, without scanning, and shares your drop data automatically so the Farm tab keeps getting better. Get it from the GoldScout website (link at the bottom of this page).
+
+### Live prices, two ways
+- **Every hour, without scanning:** with GoldScout Companion running, GoldScout gets Blizzard's hourly auction house snapshot for your realm and faction, plus the Blackwater (goblin) auction house as an extra tooltip line.
+- **Right now, with one click:** press **Scan AH** at the auction house and GoldScout reads every item's lowest price and quantity in a few seconds. Your own scan always wins when it's newer.
+
+Prices are kept per realm and faction and show on item tooltips.
 
 ### Farm tab
 Farms ranked by estimated gold per hour for your character:
@@ -43,7 +53,7 @@ Pick a farm and press **Hunt**:
 ### Gets smarter the more people play
 Every corpse you loot teaches GoldScout what that mob really drops, on all your characters. Share what you've learned and it goes into the next release for everyone. The more players share, the better everyone's Farm tab gets.
 
-**GoldScout Companion** (Windows, optional) shares for you: it runs quietly in the system tray, never shows pop-ups over your game, and uploads new data after you agree once. Download it from the GitHub releases page. Without it, `/gscout export` and the Share drop data form on GitHub do the same job.
+**GoldScout Companion** shares for you: it runs quietly in the system tray, never shows pop-ups over your game, and uploads new data after you agree once. It only reads GoldScout's saved data and writes one small data addon; it never touches the running game. Without it, `/gscout export` and the Share drop data form do the same job.
 
 ### Honest data
 Every drop rate and spawn point comes from GoldScout players looting in game. Nothing is copied from Wowhead or any other site.
@@ -54,7 +64,14 @@ GoldScout only shows information. It never moves, targets, attacks, loots or mar
 ### Commands
 `/gscout` opens the window · `/gscout scan` · `/gscout hunt` · `/gscout export` · `/gscout skills` · `/gscout set kills 80` · `/gscout help`
 
-Website: https://wowgoldscout.com · Full guide: https://github.com/Alkhara/GoldScout-WoW/blob/main/GoldScout/README.md
+---
+
+### Links
+- **GoldScout Companion** (free, Windows): https://wowgoldscout.com/companion
+- Website: https://wowgoldscout.com
+- Full guide: https://github.com/Alkhara/GoldScout-WoW/blob/main/GoldScout/README.md
+
+*Auction data from the Blizzard Entertainment Game Data API. GoldScout is not affiliated with or endorsed by Blizzard Entertainment.*
 
 ---
 

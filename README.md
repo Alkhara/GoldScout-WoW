@@ -36,6 +36,10 @@ Get GoldScout from CurseForge, Wago, or the
 manual install, unzip the `GoldScout` folder into
 `World of Warcraft\_forever_\Interface\AddOns\` and restart the game.
 
+Then add the free [GoldScout Companion](https://wowgoldscout.com/companion) on
+Windows: it brings auction prices into GoldScout every hour without scanning,
+and shares your drop data so the Farm tab keeps getting better.
+
 ## Getting started
 
 1. Open each of your profession windows once, so GoldScout learns your recipes.
@@ -55,9 +59,9 @@ players. The more people share, the better the Farm tab gets for everyone.
    [Share drop data](https://github.com/Alkhara/GoldScout-WoW/issues/new?template=data-submission.yml)
    form.
 
-On Windows, the [GoldScout Companion](companion/README.md) does it for you: it
-runs quietly in the system tray and shares new data automatically after you
-agree to the terms once.
+On Windows, [GoldScout Companion](https://wowgoldscout.com/companion) does it
+for you: it runs quietly in the system tray, shares new data automatically
+after you agree to the terms once, and brings in auction prices every hour.
 Download `GoldScoutCompanion.exe` from the
 [Releases](https://github.com/Alkhara/GoldScout-WoW/releases) page.
 
