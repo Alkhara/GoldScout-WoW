@@ -184,7 +184,7 @@ class ServerTests(unittest.TestCase):
 
     def test_version_five_exports_with_a_language_are_accepted(self):
         install = new_install()
-        text = "GoldScout-export 5^%s^1\n%s\n@l^0^deDE\n" % (install, LINE)
+        text = "GoldScout-export 5^%s^1\n%s\n@a^3812^205:3,206:1\n@l^0^deDE\n" % (install, LINE)
         status, reply = raw("/v1/uploads", text, {"X-GoldScout-Terms": uploader.TERMS_VERSION,
                                                   "CF-Connecting-IP": fake_ip()}, "POST")
         self.assertEqual((status, reply.get("status")), (201, "registered"))

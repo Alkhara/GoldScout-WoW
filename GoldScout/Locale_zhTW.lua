@@ -270,5 +270,8 @@ ns.AddLocale("zhTW", {
   ["Roleplay"] = "RP",
   ["Roleplay PvP"] = "RP-PvP",
   ["Mob #%d"] = "怪物 #%d",
+  ["Hunting %s"] = "狩獵：%s",
+  ["Scanning..."] = "掃描中...",
+  ["commands:"] = "指令：",
   ["%s %s"] = "%s%s",
 })

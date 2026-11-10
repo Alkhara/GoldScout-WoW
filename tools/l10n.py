@@ -93,9 +93,32 @@ def signature(text):
     return arguments(text), text.count("|c"), text.count("|r"), text.count("\\n")
 
 
+# Text handed straight to something that shows it, without L[...]: SetText("..."),
+# ns.Print("..."), print("..."), ShowTip(frame, "..."), AddLine("..."),
+# AddDoubleLine("..."), also as ("..."):format(...).
+DISPLAY = re.compile(r'(?:SetText|ns\.Print|\bprint|ShowTip\(\s*[\w.]+\s*,|AddLine|AddDoubleLine)\(?\s*\(?\s*(' + LIT + r')')
+WORD = re.compile(r"[A-Za-z]{2,}")
+
+
+def bare_texts():
+    """Player-facing English text that skips the translation table: (file, line, text)."""
+    found = []
+    for path in sorted(ADDON.glob("*.lua")):
+        if path.name.startswith("Locale"):
+            continue
+        for number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+            if line.strip().startswith("--"):
+                continue
+            for match in DISPLAY.finditer(line):
+                text = re.sub(r"\|c[0-9a-fA-F]{8}|\|r|%[-0-9.]*[sdg]", "", unquote(match.group(1)))
+                if WORD.search(text) and "GoldScout" != text.strip(" :"):
+                    found.append((path.name, number, unquote(match.group(1))))
+    return found
+
+
 def check():
     known = keys()
-    problems = []
+    problems = ["%s:%d shows text without L[...]: %r" % found for found in bare_texts()]
     for locale in LOCALES:
         translated, found = entries(locale)
         problems += found

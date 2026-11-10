@@ -269,5 +269,8 @@ ns.AddLocale("deDE", {
   ["Roleplay"] = "Rollenspiel",
   ["Roleplay PvP"] = "Rollenspiel-PvP",
   ["Mob #%d"] = "Mob #%d",
+  ["Hunting %s"] = "Jagd: %s",
+  ["Scanning..."] = "Scanne...",
+  ["commands:"] = "Befehle:",
   ["%s %s"] = "%s %s",
 })

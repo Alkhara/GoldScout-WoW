@@ -93,6 +93,7 @@ def merge(submissions, max_per_player):
             entry = merged.setdefault(mob.npc, {
                 "k": 0, "p": 0, "lmin": 0, "lmax": 0, "names": defaultdict(int),
                 "maps": defaultdict(lambda: [0.0, 0.0, 0]),
+                "areas": defaultdict(lambda: defaultdict(float)),
                 "i": defaultdict(lambda: [0, 0]), "pi": defaultdict(lambda: [0, 0]),
             })
             entry["k"] += min(mob.k, max_per_player)
@@ -108,6 +109,11 @@ def merge(submissions, max_per_player):
                 spot[0] += mob.x * count
                 spot[1] += mob.y * count
                 spot[2] += count
+                cells = getattr(mob, "a", None) or {}
+                looted = sum(cells.values())
+                area_factor = min(1.0, max_per_player / looted) if looted else 1.0
+                for cell, n in cells.items():
+                    entry["areas"][mob.m][cell] += n * area_factor
             for key, factor in (("i", kill_factor), ("pi", pick_factor)):
                 for item, (d, q) in _scaled(getattr(mob, key), factor).items():
                     entry[key][item][0] += d
@@ -150,6 +156,10 @@ def write_lua(merged, min_attempts, path, contributors, sources=None, cap=1000, 
         if entry["maps"]:
             map_id, (sx, sy, count) = max(entry["maps"].items(), key=lambda pair: (pair[1][2], pair[0]))
             fields += ["m = %d" % map_id, "x = %.4f" % (sx / count), "y = %.4f" % (sy / count), "c = %d" % count]
+            cells = {cell: half_up(n) for cell, n in entry["areas"].get(map_id, {}).items() if half_up(n) > 0}
+            if cells:
+                # Where on that map it was looted: 20x20 grid squares (Learn.lua's AreaCell).
+                fields.append("a = { %s }" % ", ".join("[%d] = %d" % pair for pair in sorted(cells.items())))
         fields += ["i = %s" % lua_items(entry["i"]), "pi = %s" % lua_items(entry["pi"])]
         out.append("  [%d] = { %s }," % (npc, ", ".join(fields)))
     out.append("}")

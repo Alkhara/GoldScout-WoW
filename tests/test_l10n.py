@@ -22,6 +22,17 @@ class CheckTests(unittest.TestCase):
     def test_every_language_file_is_valid(self):
         self.assertEqual(l10n.check(), [])
 
+    def test_every_text_is_translated_in_every_language(self):
+        # New text in the addon needs L["..."] and a line in each Locale_*.lua.
+        # `python tools/l10n.py missing deDE` lists what a language lacks.
+        for locale in l10n.LOCALES:
+            translated, _ = l10n.entries(locale)
+            with self.subTest(locale):
+                self.assertEqual([text for text in l10n.keys() if text not in translated], [])
+
+    def test_no_text_skips_the_translation_table(self):
+        self.assertEqual(l10n.bare_texts(), [])
+
     def test_argument_order_is_checked(self):
         self.assertEqual(l10n.arguments("%d prices for the %s auction house"), ["d", "s"])
         self.assertEqual(l10n.arguments("%2$s 경매장 가격 %1$d개"), ["d", "s"])

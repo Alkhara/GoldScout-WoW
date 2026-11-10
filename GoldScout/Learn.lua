@@ -16,6 +16,17 @@ local ITEM_SLOT = (Enum.LootSlotType and Enum.LootSlotType.Item) or 1
 -- (0.10.0 and later) are out: older ones refuse to share a version 5 export.
 local EXPORT_VERSION = 4
 
+-- Where a mob is looted, as squares of a 20x20 grid over its zone map (each
+-- square is 5% of the map's width and height): enough to draw the area a hunt
+-- covers on the world map, without keeping exact positions. Cell = row * 20 + column.
+local AREA_GRID = 20
+
+local function AreaCell(x, y)
+  local column = math.min(AREA_GRID - 1, math.max(0, math.floor(x * AREA_GRID)))
+  local row = math.min(AREA_GRID - 1, math.max(0, math.floor(y * AREA_GRID)))
+  return row * AREA_GRID + column
+end
+
 -- GUIDs stay stable for a play session, so each corpse, pickpocket or node is
 -- counted once even if you reopen its loot (or skin it afterwards).
 local counted = {}
@@ -241,11 +252,13 @@ end
 -- text: one per mob, then the names of the items and zones they mention
 -- ("@i^itemID^name", "@m^uiMapID^name"), what kind of item each is
 -- ("@q^itemID^quality:class:reagent"), then every item a recipe makes
--- ("@c^itemID^"), which players' Market rows leave out.
+-- ("@c^itemID^"), which players' Market rows leave out. Version 5 adds the
+-- grid squares each mob was looted in ("@a^npcID^cell:count,...") and the
+-- game's language ("@l^0^enUS").
 local function ExportBody()
   local drops = (ns.db and ns.db.drops) or {}
   local names = Names() or { items = {}, maps = {} }
-  local lines, items, maps = {}, {}, {}
+  local lines, items, maps, areas = {}, {}, {}, {}
   for _, npcID in ipairs(SortedKeys(drops)) do
     local entry = drops[npcID]
     local kills, picks = entry.k or 0, entry.p or 0
@@ -259,6 +272,15 @@ local function ExportBody()
       local lmin, lmax = entry.lmin or 0, entry.lmax or 0
       if lmin == 0 or lmax == 0 or lmax - lmin > 15 or lmax > 63 then
         lmin, lmax = 0, 0
+      end
+      if map > 0 and type(entry.a) == "table" then
+        local cells = {}
+        for _, cell in ipairs(SortedKeys(entry.a)) do
+          cells[#cells + 1] = cell .. ":" .. entry.a[cell]
+        end
+        if #cells > 0 then
+          areas[#areas + 1] = "@a^" .. npcID .. "^" .. table.concat(cells, ",")
+        end
       end
       local dropList, pickList = ItemList(entry.i, kills), ItemList(entry.pi, picks)
       lines[#lines + 1] = table.concat({
@@ -303,6 +325,9 @@ local function ExportBody()
     lines[#lines + 1] = "@c^" .. itemID .. "^"
   end
   if EXPORT_VERSION >= 5 then
+    for _, line in ipairs(areas) do
+      lines[#lines + 1] = line
+    end
     lines[#lines + 1] = "@l^0^" .. (ns.LOCALE or "enUS")
   end
   return table.concat(lines, "\n"), mobs
@@ -410,11 +435,14 @@ local function NotePosition(entry)
     if (entry.c or 0) >= 5 then
       return -- stick with the zone we've seen it in most
     end
-    entry.m, entry.sx, entry.sy, entry.c = map, 0, 0, 0
+    entry.m, entry.sx, entry.sy, entry.c, entry.a = map, 0, 0, 0, {}
   end
   entry.sx = entry.sx + x
   entry.sy = entry.sy + y
   entry.c = entry.c + 1
+  entry.a = entry.a or {}
+  local cell = AreaCell(x, y)
+  entry.a[cell] = (entry.a[cell] or 0) + 1
   NoteMapName(map)
 end
 

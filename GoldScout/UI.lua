@@ -722,7 +722,7 @@ function UI:UpdateHeaderText()
 
   local scanning = ns.Scanner:IsScanning()
   if scanning then
-    f.scanButton:SetText("Scanning...")
+    f.scanButton:SetText(L["Scanning..."])
     f.scanButton:Disable()
   else
     f.scanButton:SetText(L["Scan AH"])
@@ -1228,7 +1228,7 @@ local function ShowErrors(rest)
 end
 
 local function PrintHelp()
-  ns.Print("commands:")
+  ns.Print(L["commands:"])
   print(L["  /gscout - show or hide the window"])
   print(L["  /gscout farm | craft - open a tab"])
   print(L["  /gscout scan - scan prices (auction house must be open)"])

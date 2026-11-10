@@ -53,6 +53,12 @@ For Lua error popups in game, use `/console scriptErrors 1` or BugSack.
   players through the submission form.
 - **Don't edit `Data_Community.lua` by hand.** It's generated from
   `data/submissions/`.
+- **Every piece of text the addon shows is translated.** Write it as
+  `L["Whole sentence with %s"]` (not pieces joined around a value), and add
+  the same English text with a translation to each `GoldScout/Locale_*.lua`.
+  `python tools/l10n.py check` finds untranslated or broken text, and
+  `python tools/l10n.py missing deDE` lists what a language still needs.
+  Mob names go through `ns.MobName`, so each player sees their own language.
 - Run `python tools/check.py` before opening a pull request: it checks the Lua,
   lints the Python, validates the community data and runs every test.
   `pip install pyflakes lupa` first to get all of it (the Lua tests load the

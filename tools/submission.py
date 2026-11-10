@@ -19,6 +19,9 @@ Version 3 adds optional lines after the mobs:
   @c^itemID^           an item some recipe makes (so it isn't a world drop)
   @l^0^locale          the game client's language ("enUS", "deDE", "koKR"...),
                        version 5 and later; names are in that language
+  @a^npcID^cell:count,...  where that mob was looted, as squares of a 20x20
+                       grid over its zone map (cell = row * 20 + column),
+                       version 5 and later
 Version 4 adds:
   @q^itemID^quality:class:reagent   item quality, item class ID and the
                                     Crafting Reagent flag (1, 0 or x unknown)
@@ -32,6 +35,8 @@ from collections import defaultdict
 HEADER = "GoldScout-export"
 HEADER_RE = re.compile(r"^GoldScout-export ([2345])\^([a-z0-9]{12})\^([1-9][0-9]{0,8})$")
 LOCALE_RE = re.compile(r"^[a-z]{2}[A-Z]{2}$")
+AREA_RE = re.compile(r"^\d{1,3}:\d{1,6}(?:,\d{1,3}:\d{1,6})*$")
+AREA_CELLS = 400            # a 20x20 grid
 ITEM_META_RE = re.compile(r"^([0-9]):([0-9]{1,2}):([01x])$")
 
 
@@ -62,9 +67,10 @@ ITEM_NAME_PUNCTUATION = NAME_PUNCTUATION | set(":,")
 
 
 class Mob:
-    __slots__ = ("npc", "k", "p", "lmin", "lmax", "m", "x", "y", "c", "n", "i", "pi")
+    __slots__ = ("npc", "k", "p", "lmin", "lmax", "m", "x", "y", "c", "n", "i", "pi", "a")
 
     def __init__(self, **fields):
+        self.a = {}          # area cells {cell: count} on map m (version 5)
         for key, value in fields.items():
             setattr(self, key, value)
 
@@ -90,6 +96,7 @@ class Result:
         self.crafted = set()
         self.item_meta = {}  # itemID -> (quality, classID, reagent: True/False/None)
         self.locale = None   # the client's language (version 5+); None for older exports
+        self.areas = {}      # npcID -> {cell: count} from @a lines, attached to the mobs
 
     def text(self):
         """The export rebuilt from the validated data."""
@@ -99,6 +106,9 @@ class Result:
                   for item, (quality, class_id, reagent) in sorted(self.item_meta.items())]
         lines += ["@m^%d^%s" % (map_id, name) for map_id, name in sorted(self.map_names.items())]
         lines += ["@c^%d^" % item for item in sorted(self.crafted)]
+        for mob in self.mobs:
+            if mob.a:
+                lines.append("@a^%d^%s" % (mob.npc, ",".join("%d:%d" % pair for pair in sorted(mob.a.items()))))
         if self.locale:
             lines.append("@l^0^%s" % self.locale)
         return "\n".join(lines) + "\n"
@@ -223,10 +233,26 @@ def _parse_line(line, line_no, result):
 def _parse_extra(line, line_no, result):
     """One @ line: an item name, item details, a zone name or a crafted item."""
     fields = line.split("^")
-    if len(fields) != 3 or fields[0] not in ("@i", "@m", "@c", "@q", "@l"):
-        result.errors.append("Line %d: expected @i, @q, @m, @c or @l followed by an ID and a value." % line_no)
+    if len(fields) != 3 or fields[0] not in ("@i", "@m", "@c", "@q", "@l", "@a"):
+        result.errors.append("Line %d: expected @i, @q, @m, @c, @l or @a followed by an ID and a value." % line_no)
         return
     kind, id_text, name = fields
+    if kind == "@a":
+        npc = _int(id_text, "NPC ID", line_no, result, low=1) if result.version >= 5 else None
+        if result.version < 5:
+            result.errors.append("Line %d: area lines need a version 5 export." % line_no)
+        elif npc is not None:
+            cells = {}
+            pairs = [p.split(":") for p in name.split(",")] if AREA_RE.match(name) else None
+            if not pairs or any(int(c) >= AREA_CELLS or int(n) < 1 for c, n in pairs) or \
+                    len({int(c) for c, _ in pairs}) != len(pairs):
+                result.errors.append("Line %d: area cells must look like cell:count,... (cells 0-399)." % line_no)
+            elif npc in result.areas:
+                result.errors.append("Line %d: NPC %d has more than one area line." % (line_no, npc))
+            else:
+                cells = {int(c): int(n) for c, n in pairs}
+                result.areas[npc] = cells
+        return
     if kind == "@l":
         if result.version < 5:
             result.errors.append("Line %d: a language line needs a version 5 export." % line_no)
@@ -335,6 +361,12 @@ def parse(text):
             continue
         seen.add(mob.npc)
         result.mobs.append(mob)
+    for npc in result.areas:
+        if npc not in seen:
+            result.errors.append("An area line is for NPC %d, which isn't in the export." % npc)
+    for mob in result.mobs:
+        if mob.m and mob.c:     # cells are on the mob's map; without one they mean nothing
+            mob.a = result.areas.get(mob.npc, {})
     return result
 
 

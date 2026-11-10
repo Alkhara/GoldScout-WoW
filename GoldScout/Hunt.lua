@@ -488,7 +488,7 @@ function Hunt:UpdatePanel()
   local s, target = session, session.target
   local summary = Summarize(s)
   panel.icon:SetTexture(ns.ItemIcon(target.item))
-  panel.title:SetText("Hunting " .. ns.ItemName(target.item))
+  panel.title:SetText(L["Hunting %s"]:format(ns.ItemName(target.item)))
   panel.subtitle:SetText(((target.label and target.label ~= "") and (target.label .. ", ") or "") .. (target.zone or ""))
 
   local actions, noun = s.kills, L["Kills"]
