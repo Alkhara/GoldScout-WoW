@@ -97,7 +97,7 @@ ns.COMMUNITY = {
 -- client can take its shared loot back out (see Community.lua).
 ns.COMMUNITY_SOURCES = {
   ["4z9mhp23fv2i"] = 3,
-  ["fvxpmchaz0r7"] = 10,
+  ["fvxpmchaz0r7"] = 11,
   ["lpchh63bnsyf"] = 3,
   ["m00jxkjr841x"] = 38,
 }
