@@ -71,12 +71,15 @@ rule stay closed. To set it up, in the Cloudflare dashboard:
 
 1. **Workers & Pages → goldscout-api → Settings → Domains & Routes → Add →
    Custom domain:** `admin.wowgoldscout.com`.
-2. **Zero Trust → Access → Applications → Add an application → Self-hosted:**
-   name it "GoldScout admin", domain `admin.wowgoldscout.com`, and add a policy
-   that allows only your email (login method: One-time PIN). Copy the
-   application's **Audience (AUD) tag**.
-3. Your **team domain** is under **Zero Trust → Settings → Custom pages**
-   (`<team>.cloudflareaccess.com`).
+2. **Zero Trust → Access controls → Applications → Add an application →
+   Self-hosted:** name it "GoldScout admin", domain `admin.wowgoldscout.com`,
+   and add a policy that allows only your email. The default login (your
+   Cloudflare account) is fine; a one-time PIN by email is optional, under
+   **Zero Trust → Integrations → Identity providers**. Then **Edit** the
+   application and copy the **Application Audience (AUD) Tag** from
+   **Additional settings**.
+3. Your **team domain** is the `<team>.cloudflareaccess.com` address that
+   `https://admin.wowgoldscout.com/admin` sends you to for signing in.
 4. From this folder:
    - `npx wrangler secret put ACCESS_TEAM_DOMAIN` (the team domain, without https://)
    - `npx wrangler secret put ACCESS_AUD` (the AUD tag)

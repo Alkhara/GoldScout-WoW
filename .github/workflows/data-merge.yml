@@ -30,8 +30,7 @@ permissions:
   issues: write
   pull-requests: write
   checks: read
-  actions: read   # the admin dashboard's workflow health (tools/admin_stats.py)
-  actions: write
+  actions: write   # starts Tests after merging; also lets tools/admin_stats.py read workflow runs
 
 concurrency:
   group: data-merge
