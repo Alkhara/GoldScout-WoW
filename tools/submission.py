@@ -37,6 +37,9 @@ HEADER_RE = re.compile(r"^GoldScout-export ([2345])\^([a-z0-9]{12})\^([1-9][0-9]
 LOCALE_RE = re.compile(r"^[a-z]{2}[A-Z]{2}$")
 AREA_RE = re.compile(r"^\d{1,3}:\d{1,6}(?:,\d{1,3}:\d{1,6})*$")
 AREA_CELLS = 400            # a 20x20 grid
+KNOWN_VERSION = 5           # the newest export version this copy understands
+KNOWN_EXTRA = ("@i", "@m", "@c", "@q", "@l", "@a")
+NEWER_HEADER_RE = re.compile(r"^GoldScout-export (\d+)\^[a-z0-9]{12}\^[1-9][0-9]{0,8}$")
 ITEM_META_RE = re.compile(r"^([0-9]):([0-9]{1,2}):([01x])$")
 
 
@@ -288,6 +291,20 @@ def _parse_extra(line, line_no, result):
         result.errors.append("Line %d: the name contains a character that isn't allowed." % line_no)
         return
     (result.item_names if kind == "@i" else result.map_names)[some_id] = name
+
+
+def newer_format(text):
+    """True for an export a newer GoldScout wrote: a higher version, or @ lines
+    this copy doesn't know. GoldScout Companion shares those as they are and
+    lets the server (always updated first) check them, so an out-of-date
+    companion never holds a player's data back."""
+    lines = [line.strip() for line in (text or "").replace("\r", "").split("\n") if line.strip()]
+    match = NEWER_HEADER_RE.match(lines[0]) if lines else None
+    if not match:
+        return False
+    if int(match.group(1)) > KNOWN_VERSION:
+        return True
+    return any(line.startswith("@") and line.split("^")[0] not in KNOWN_EXTRA for line in lines[1:])
 
 
 def latin(name):

@@ -206,13 +206,18 @@ def lua_string(text):
     return '"%s"' % text.replace("\\", "\\\\").replace('"', '\\"').replace("\n", "\\n").replace("\r", "\\r")
 
 
-def lua_text(markets, written):
-    """The data file. markets: {key: {"region", "house", "snapshot", "prices": {item: [price, qty]}}}."""
+def lua_text(markets, written, companion=None):
+    """The data file. markets: {key: {"region", "house", "snapshot", "prices": {item: [price, qty]}}}.
+    companion is this companion's version: GoldScout writes the newest export
+    format only for companions that understand it (0.10.0 and later)."""
     lines = ["-- Written by GoldScout Companion and replaced about once an hour. Don't edit.",
              "-- " + SOURCE,
              "GoldScoutPricesData = {",
              "  format = %d," % FORMAT,
-             "  written = %d," % written,
+             "  written = %d," % written]
+    if companion:
+        lines.append("  companion = %s," % lua_string(companion))
+    lines += [
              "  source = %s," % lua_string(SOURCE),
              "  markets = {"]
     for key in sorted(markets):
@@ -248,10 +253,10 @@ def _write(path, text):
     os.replace(temp, path)
 
 
-def write_addon(forever, markets, written):
+def write_addon(forever, markets, written, companion=None):
     folder = addons_folder(forever) / DATA_ADDON
     folder.mkdir(parents=True, exist_ok=True)
-    _write(folder / DATA_FILE, lua_text(markets, written))
+    _write(folder / DATA_FILE, lua_text(markets, written, companion))
     _write(folder / (DATA_ADDON + ".toc"), toc_text(interface_version(forever)))
     return folder
 
@@ -276,7 +281,7 @@ def addon_written(forever):
 # ---------------------------------------------------------------------------
 # One update
 # ---------------------------------------------------------------------------
-def update(forever, accounts, state, now, fetch=get_json):
+def update(forever, accounts, state, now, fetch=get_json, companion=None):
     """Brings the data addon up to date. state is the companion's saved
     {"learned", "tried", "written"} (updated in place). Returns a summary dict:
     {"markets": {key: {"house", "snapshot", "how"}}, "unknown": [keys], "wrote": bool}."""
@@ -352,14 +357,15 @@ def update(forever, accounts, state, now, fetch=get_json):
         state["written"] = {}
         return summary
     current = {key: [region, house, houses[(region, house)]["snapshot"]] for key, ((region, house), _) in chosen.items()}
-    if state.get("written") == current and addon_written(forever):
-        return summary
+    if state.get("written") == current and state.get("written_by") == companion and addon_written(forever):
+        return summary   # same snapshots, written by this same version
     markets = {}
     for key, ((region, house), _) in chosen.items():
         data = prices_for(region, house)
         markets[key] = {"region": region, "house": house, "snapshot": data["snapshot"],
                         "prices": data.get("prices", {})}
-    write_addon(forever, markets, int(now))
+    write_addon(forever, markets, int(now), companion)
     state["written"] = {key: [m["region"], m["house"], m["snapshot"]] for key, m in markets.items()}
+    state["written_by"] = companion
     summary["wrote"] = True
     return summary

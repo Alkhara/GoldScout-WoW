@@ -34,7 +34,7 @@ import system  # noqa: E402
 import updater  # noqa: E402
 import uploader  # noqa: E402
 
-VERSION = "0.9.0"  # tools/release.py checks this matches the tag; the release build stamps it
+VERSION = "0.10.0"  # tools/release.py checks this matches the tag; the release build stamps it
 FORM_URL = "https://github.com/Alkhara/GoldScout-WoW/issues/new?template=data-submission.yml"
 TERMS_URL = "https://github.com/Alkhara/GoldScout-WoW/blob/main/docs/CONTRIBUTOR_TERMS.md"
 PRIVACY_URL = "https://github.com/Alkhara/GoldScout-WoW/blob/main/docs/PRIVACY.md"
@@ -659,6 +659,12 @@ class App:
             self.set_status("Nothing to share yet", notes=notes)
             return
         self.result = submission.parse(account.export)
+        if self.result.errors and submission.newer_format(account.export):
+            self.set_status("Made by a newer GoldScout", since=self.since_text(account),
+                            notes=["This export uses a format newer than this companion knows. It's shared "
+                                   "as it is, and the GoldScout server checks it. Update the companion when "
+                                   "you can."], can_share=True)
+            return
         if self.result.errors:
             self.set_status("This export can't be shared as it is",
                             notes=["The GoldScout data bot would reject it:"] +
@@ -710,7 +716,7 @@ class App:
         pending = []
         for account in self.accounts:
             if account.export and account.install_id and account.seq > self.upload_state(account).get("seq", 0):
-                if submission.parse(account.export).ok:
+                if submission.parse(account.export).ok or submission.newer_format(account.export):
                     pending.append(account)
         if pending:
             self.uploading = True
@@ -785,7 +791,7 @@ class App:
             try:
                 summary = auction_prices.update(
                     forever, accounts, state, time.time(),
-                    fetch=lambda path: auction_prices.get_json(path, VERSION))
+                    fetch=lambda path: auction_prices.get_json(path, VERSION), companion=VERSION)
                 problem = summary.get("problem")
             except (auction_prices.PriceError, OSError, KeyError, TypeError, ValueError) as error:
                 summary, problem = None, str(error)

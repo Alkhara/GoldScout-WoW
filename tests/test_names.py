@@ -21,6 +21,20 @@ V5 = V4.replace("export 4^", "export 5^") + "@l^0^enUS\n"
 KOREAN = V5.replace("Ashenvale Bear", "잿빛 골짜기 곰").replace("@l^0^enUS", "@l^0^koKR")
 
 
+class NewerFormatTests(unittest.TestCase):
+    """An out-of-date companion shares exports from a newer GoldScout as they
+    are (the server, always updated first, checks them) instead of holding a
+    player's data back."""
+
+    def test_recognises_newer_exports(self):
+        self.assertFalse(submission.newer_format(V5))                      # known: checked here
+        self.assertFalse(submission.newer_format(V4))
+        self.assertTrue(submission.newer_format(V5.replace("export 5^", "export 6^")))
+        self.assertTrue(submission.newer_format(V5 + "@z^1^something new\n"))
+        self.assertFalse(submission.newer_format("not an export"))
+        self.assertFalse(submission.newer_format(V5.replace("abcdefghijkl", "BAD")))   # a broken header isn't "newer"
+
+
 class LanguageLineTests(unittest.TestCase):
     def test_version_five_says_its_language(self):
         result = submission.parse(V5)

@@ -85,6 +85,20 @@ class CompanionTests(unittest.TestCase):
         self.assertEqual(ap.house_for_realm(PVP, listing), ("us", 113))
         self.assertIsNone(ap.house_for_realm(OTHER, listing))
 
+    def test_the_data_file_says_which_companion_wrote_it(self):
+        # GoldScout writes its newest export format only for companions that understand it.
+        server = FakeServer([house(113, "Horde", 1)], {113: many(10)}, {"us": {"CAMWOWUS2Realm2PvP": 1}})
+        with Folder() as forever:
+            state = {}
+            ap.update(forever, [FakeAccount(seen={PVP: NOW})], state, NOW, server, companion="0.9.9")
+            lua = (forever / "Interface" / "AddOns" / ap.DATA_ADDON / ap.DATA_FILE).read_text(encoding="utf-8")
+            self.assertIn('companion = "0.9.9",', lua)
+            # Same snapshot, newer companion: the file is rewritten so GoldScout sees the new version.
+            again = ap.update(forever, [FakeAccount(seen={PVP: NOW})], state, NOW + 60, server, companion="0.10.0")
+            self.assertTrue(again["wrote"])
+            lua = (forever / "Interface" / "AddOns" / ap.DATA_ADDON / ap.DATA_FILE).read_text(encoding="utf-8")
+            self.assertIn('companion = "0.10.0",', lua)
+
     def test_writes_the_data_addon_once_per_snapshot(self):
         server = FakeServer([house(113, "Horde", 1)], {113: {2589: [18, 24560], 2770: [149, 5945]}},
                             {"us": {"CAMWOWUS2Realm2PvP": 1}})

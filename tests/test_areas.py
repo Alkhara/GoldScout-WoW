@@ -95,15 +95,16 @@ class RecordingTests(unittest.TestCase):
 
 @unittest.skipIf(lua51 is None, "lupa is not installed")
 class VersionFiveExportTests(unittest.TestCase):
-    def test_the_addons_version_5_export_is_valid(self):
+    """GoldScout writes version 5 unless this player's own companion is too old for it."""
+
+    def export(self, prices_data=None):
         lua = lua51.LuaRuntime(unpack_returned_tuples=True)
         ns = lua.table()
         lua.execute("return loadstring(...)", LEARN_STUBS)(ns)
-        learn_source = (ROOT / "GoldScout" / "Learn.lua").read_text(encoding="utf-8")
-        self.assertIn("local EXPORT_VERSION = 4", learn_source)         # still 4 until companions catch up
-        for name, source in (("Community.lua", None), ("Learn.lua", learn_source.replace(
-                "local EXPORT_VERSION = 4", "local EXPORT_VERSION = 5"))):
-            source = source or (ROOT / "GoldScout" / name).read_text(encoding="utf-8")
+        if prices_data:
+            lua.execute("GoldScoutPricesData = " + prices_data)
+        for name in ("Community.lua", "Learn.lua"):
+            source = (ROOT / "GoldScout" / name).read_text(encoding="utf-8")
             lua.execute("return loadstring(...)", source)("GoldScout", ns)
         ns.COMMUNITY = lua.table()
         ns.LOCALE = "deDE"
@@ -112,7 +113,26 @@ class VersionFiveExportTests(unittest.TestCase):
                      n = "Klappernder Kriecher", i = { [3010] = { d = 7, q = 7 } }, pi = {}, a = { [205] = 9, [206] = 2 } },
         } }""")
         ns.handlers["DB_READY"]()
-        text, count = ns.Learn.ExportString(ns.Learn)
+        text, _ = ns.Learn.ExportString(ns.Learn)
+        return ns, text
+
+    def test_versions_follow_the_players_companion(self):
+        cases = {
+            None: 5,                                                         # no companion here, or prices off
+            "{ markets = {} }": 4,                                           # a companion before 0.10.0
+            '{ markets = {}, companion = "0.9.0" }': 4,
+            '{ markets = {}, companion = "0.10.0" }': 5,
+            '{ markets = {}, companion = "1.2.0" }': 5,
+        }
+        for prices_data, version in cases.items():
+            with self.subTest(prices_data):
+                _, text = self.export(prices_data)
+                result = submission.parse(text)
+                self.assertEqual((result.errors, result.version), ([], version))
+                self.assertEqual("@a^" in text, version == 5)    # areas and language only in version 5
+
+    def test_the_addons_version_5_export_is_valid(self):
+        ns, text = self.export()
         result = submission.parse(text)
         self.assertEqual(result.errors, [])
         self.assertEqual((result.version, result.locale), (5, "deDE"))

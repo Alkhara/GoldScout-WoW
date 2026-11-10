@@ -11,10 +11,29 @@ ns.Learn = Learn
 
 local ITEM_SLOT = (Enum.LootSlotType and Enum.LootSlotType.Item) or 1
 
--- Export format. Version 5 adds the game's language (an @l line), so shared
--- names stay English. It stays 4 until companions that accept version 5
--- (0.10.0 and later) are out: older ones refuse to share a version 5 export.
-local EXPORT_VERSION = 4
+-- Export format. Version 5 adds the game's language (@l, so shared names stay
+-- English) and where mobs were looted (@a). GoldScout Companion before 0.10.0
+-- refuses version 5, and leaves its version out of the GoldScout_Prices file it
+-- writes; for a player with such a companion GoldScout keeps writing version 4
+-- until it's updated. Nothing is lost meanwhile: every export holds everything
+-- learned so far. Companions from 0.10.0 on share any newer format as it is.
+local EXPORT_VERSION = 5
+local COMPANION_FOR_V5 = { 0, 10, 0 }
+
+local function ExportVersion()
+  local data = GoldScoutPricesData
+  if type(data) ~= "table" or type(data.markets) ~= "table" then
+    return EXPORT_VERSION     -- no companion writing prices here (or the share form)
+  end
+  local major, minor, patch = tostring(data.companion or ""):match("^(%d+)%.(%d+)%.(%d+)")
+  local version = { tonumber(major) or 0, tonumber(minor) or 0, tonumber(patch) or 0 }
+  for i = 1, 3 do
+    if version[i] ~= COMPANION_FOR_V5[i] then
+      return version[i] > COMPANION_FOR_V5[i] and EXPORT_VERSION or 4
+    end
+  end
+  return EXPORT_VERSION
+end
 
 -- Where a mob is looted, as squares of a 20x20 grid over its zone map (each
 -- square is 5% of the map's width and height): enough to draw the area a hunt
@@ -324,7 +343,7 @@ local function ExportBody()
   for _, itemID in ipairs(SortedKeys((ns.db and ns.db.crafted) or {})) do
     lines[#lines + 1] = "@c^" .. itemID .. "^"
   end
-  if EXPORT_VERSION >= 5 then
+  if ExportVersion() >= 5 then
     for _, line in ipairs(areas) do
       lines[#lines + 1] = line
     end
@@ -350,7 +369,7 @@ function Learn:Snapshot()
   local latest = exports.list[exports.seq]
   if not (latest and latest:match("^[^\n]*\n(.*)$") == body) then
     exports.seq = exports.seq + 1
-    exports.list[exports.seq] = ("GoldScout-export %d^%s^%d\n%s"):format(EXPORT_VERSION, db.installID,
+    exports.list[exports.seq] = ("GoldScout-export %d^%s^%d\n%s"):format(ExportVersion(), db.installID,
       exports.seq, body)
     local included = ns.COMMUNITY_SOURCES and ns.COMMUNITY_SOURCES[db.installID]
     for seq in pairs(exports.list) do
