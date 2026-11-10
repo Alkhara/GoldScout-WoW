@@ -1,4 +1,4 @@
-GoldScout-export 4^fvxpmchaz0r7^11
+GoldScout-export 4^fvxpmchaz0r7^12
 2265^5^0^24^25^1424^0.3256^0.4537^5^Hillsbrad Apprentice Blacksmith^2592:1:1,3692:1:1,4306:1:1^
 2266^12^0^23^24^1424^0.3364^0.4259^12^Hillsbrad Farmer^929:1:1,2592:1:1,3039:1:1,3692:2:2,4306:1:1,4538:1:1^
 2267^24^0^24^25^1424^0.3437^0.4587^24^Hillsbrad Peasant^422:1:1,2589:1:2,2592:1:1,3692:2:2,4306:1:1^
@@ -69,7 +69,13 @@ GoldScout-export 4^fvxpmchaz0r7^11
 4104^3^0^30^30^1441^0.2648^0.5481^3^Screeching Windcaller^3385:1:1,4306:1:1,5117:1:1^
 4107^1^0^28^29^1441^0.1159^0.3140^1^Highperch Wyvern^5137:1:1^
 4109^3^0^28^29^1441^0.1099^0.3352^3^Highperch Consort^5137:1:1,5635:1:1^
-4124^1^0^27^28^1441^0.2681^0.2883^1^Needles Cougar^5137:1:1^
+4111^2^0^26^27^1441^0.3324^0.5244^2^Gravelsnout Kobold^2592:1:1^
+4114^1^0^28^28^1441^0.3700^0.4980^1^Gravelsnout Forager^929:1:1,2592:1:2^
+4117^3^0^25^26^1441^0.3759^0.5476^3^Cloud Serpent^6826:1:1^
+4118^2^0^27^28^1441^0.3579^0.5062^2^Venomous Cloud Serpent^17056:2:2^
+4124^5^0^27^28^1441^0.3337^0.4570^5^Needles Cougar^5137:3:3^
+4140^6^0^31^32^1441^0.8425^0.5843^6^Scorpid Reaver^5794:1:1,12037:1:1,19938:1:1^
+4248^9^0^26^27^1441^0.3525^0.5196^9^Pesterhide Hyena^3402:5:5^
 4788^3^0^20^21^1414^0.4397^0.3471^3^Fallenroot Satyr^^
 4789^1^0^22^22^1414^0.4419^0.3489^1^Fallenroot Rogue^^
 4798^1^0^0^0^0^0.0000^0.0000^0^^^
@@ -143,6 +149,7 @@ GoldScout-export 4^fvxpmchaz0r7^11
 @i^3039^Short Ash Bow
 @i^3048^Lambent Scale Legguards
 @i^3385^Lesser Mana Potion
+@i^3402^Soft Patch of Fur
 @i^3670^Large Slimy Bone
 @i^3692^Hillsbrad Human Skull
 @i^3730^Big Bear Meat
@@ -172,6 +179,7 @@ GoldScout-export 4^fvxpmchaz0r7^11
 @i^5585^Courser Eye
 @i^5635^Sharp Claw
 @i^5637^Large Fang
+@i^5794^Salty Scorpid Venom
 @i^5871^Large Hoof
 @i^5881^Head of Kelris
 @i^6308^Raw Bristle Whisker Catfish
@@ -185,6 +193,7 @@ GoldScout-export 4^fvxpmchaz0r7^11
 @i^11385^Basilisk Scale
 @i^11406^Rotting Bear Carcass
 @i^11407^Torn Bear Pelt
+@i^12037^Mystery Meat
 @i^12564^Assassination Note
 @i^12946^Hypercapacitor Gizmo
 @i^14165^Pagan Britches of the Sorcerer
@@ -207,6 +216,7 @@ GoldScout-export 4^fvxpmchaz0r7^11
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
+@i^19938^Heavy Scorpid Leg
 @i^211784^Scroll: WUBBA WUBBA
 @i^211855^Scroll: STHENIC LUNATE
 @i^248687^Waylaid Crate: Journeyman Ore
@@ -244,6 +254,7 @@ GoldScout-export 4^fvxpmchaz0r7^11
 @q^3039^2:2:0
 @q^3048^2:4:0
 @q^3385^1:0:0
+@q^3402^0:15:0
 @q^3670^0:15:0
 @q^3692^1:12:0
 @q^3730^1:7:1
@@ -273,6 +284,7 @@ GoldScout-export 4^fvxpmchaz0r7^11
 @q^5585^1:12:0
 @q^5635^1:7:1
 @q^5637^1:7:1
+@q^5794^1:12:0
 @q^5871^0:15:0
 @q^5881^1:12:0
 @q^6308^1:7:1
@@ -286,6 +298,7 @@ GoldScout-export 4^fvxpmchaz0r7^11
 @q^11385^0:15:0
 @q^11406^0:15:0
 @q^11407^1:12:0
+@q^12037^1:7:1
 @q^12564^1:12:0
 @q^12946^1:12:0
 @q^14165^2:4:0
@@ -308,6 +321,7 @@ GoldScout-export 4^fvxpmchaz0r7^11
 @q^17056^1:15:1
 @q^17057^1:15:0
 @q^17058^1:15:0
+@q^19938^0:15:0
 @q^211784^1:0:0
 @q^211855^1:0:0
 @q^248687^1:0:1
