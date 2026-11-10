@@ -275,6 +275,36 @@ function ns.MarketKey()
   return realm .. "-" .. faction
 end
 
+-- WoW Forever realm names say their ruleset at the end ("CAMWOWUS2Realm2PvP"),
+-- and every realm with the same ruleset shares one auction house per faction.
+-- Longest suffix first: "RPPvP" also ends in "PvP".
+local RULESET_SUFFIXES = {
+  { "RPPvP", "Roleplay PvP" },
+  { "PvP", "PvP" },
+  { "PvE", "Normal" },
+  { "RP", "Roleplay" },
+}
+
+-- A market as players would say it: "PvP Horde", "Normal Alliance",
+-- "PvP Blackwater". Other realm names are shown as the game shows them.
+function ns.MarketLabel(key)
+  key = key or ns.MarketKey()
+  local realm, faction = key:match("^(.*)%-([^-]*)$")
+  if not realm then
+    return key
+  end
+  local side = faction == "Neutral" and "Blackwater" or faction
+  for _, suffix in ipairs(RULESET_SUFFIXES) do
+    if #realm > #suffix[1] and realm:sub(-#suffix[1]) == suffix[1] then
+      return suffix[2] .. " " .. side
+    end
+  end
+  if GetNormalizedRealmName and realm == GetNormalizedRealmName() and GetRealmName then
+    realm = GetRealmName() or realm
+  end
+  return realm .. " " .. side
+end
+
 ---------------------------------------------------------------------------
 -- Error log: GoldScout's own Lua errors and blocked actions are kept in its
 -- saved data (newest 25, repeats counted) so they can be read after the fact

@@ -733,10 +733,11 @@ function UI:UpdateHeaderText()
   elseif count == 0 then
     status = "No prices yet. Open the auction house and press Scan AH."
   elseif snapshot then
-    status = ("%d prices for %s: Blizzard snapshot %s, your last scan %s."):format(count, ns.MarketKey(),
+    status = ("%d prices for the %s auction house: Blizzard snapshot %s, your last scan %s."):format(count,
+      ns.MarketLabel(),
       ns.Age(time() - snapshot), lastScan and ns.Age(time() - lastScan) or "never")
   else
-    status = ("%d prices for %s, last full scan %s."):format(count, ns.MarketKey(),
+    status = ("%d prices for the %s auction house, last full scan %s."):format(count, ns.MarketLabel(),
       lastScan and ns.Age(time() - lastScan) or "never")
     if not ns.Scanner.ahOpen then
       status = status .. " Press Scan AH at an auctioneer to refresh."
@@ -1338,7 +1339,7 @@ function UI:HandleSlash(message)
     SetOption(rest)
   elseif command == "reset" and rest:lower() == "prices" then
     ns.Prices:Reset()
-    ns.Print("Cleared saved prices for " .. ns.MarketKey() .. ".")
+    ns.Print("Cleared saved prices for the " .. ns.MarketLabel() .. " auction house.")
     self:QueueRefresh()
   elseif command == "reset" and rest:lower() == "drops" then
     wipe(ns.db.drops)

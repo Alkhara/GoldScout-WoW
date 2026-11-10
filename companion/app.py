@@ -810,11 +810,15 @@ class App:
             status = self.config.get("price_status") or {}
             summary = status.get("summary") or {}
             markets = summary.get("markets") or {}
+            newest = {}   # realms with the same ruleset share an auction house: list it once
+            for key, market in markets.items():
+                label = auction_prices.market_label(key)
+                newest[label] = max(newest.get(label, 0), market["snapshot"])
             parts = []
-            for key in sorted(markets):
-                minutes = max(0, int((time.time() - markets[key]["snapshot"]) // 60))
+            for label in sorted(newest):
+                minutes = max(0, int((time.time() - newest[label]) // 60))
                 age = "%d min" % minutes if minutes < 90 else "%d h" % (minutes // 60)
-                parts.append("%s (%s old)" % (key, age))
+                parts.append("%s (%s old)" % (label, age))
             if parts:
                 text = ("Auction prices in GoldScout: " + ", ".join(parts) +
                         ". GoldScout loads them at login or /reload.")

@@ -265,5 +265,37 @@ class AddonPricesTests(unittest.TestCase):
         self.assertEqual(self.ns.db.seenMarkets["Realm-Horde"], NOW)
 
 
+LABELS = {
+    "CAMWOWUS2Realm2PvP-Horde": "PvP Horde",
+    "CAMWOWUS1Realm7PvE-Alliance": "Normal Alliance",
+    "CAMWOWUS1Realm10RP-Alliance": "Roleplay Alliance",
+    "CAMWOWUS1Realm9RPPvP-Horde": "Roleplay PvP Horde",
+    "CAMWOWUS2Realm2PvP-Neutral": "PvP Blackwater",
+    "Stormrage-Alliance": "Stormrage Alliance",
+    "PvP-Horde": "PvP Horde",           # a realm named only "PvP": shown as it is
+}
+
+
+class MarketLabelTests(unittest.TestCase):
+    """Players see "PvP Horde", not the internal realm name; addon and companion agree."""
+
+    def test_companion(self):
+        for key, label in LABELS.items():
+            with self.subTest(key):
+                self.assertEqual(ap.market_label(key), label)
+
+    @unittest.skipIf(lua51 is None, "lupa is not installed")
+    def test_addon(self):
+        import re
+        core = (ROOT / "GoldScout" / "Core.lua").read_text(encoding="utf-8")
+        snippet = re.search(r"local RULESET_SUFFIXES = .*?\nend\n", core.replace("\r\n", "\n"), re.S).group(0)
+        lua = lua51.LuaRuntime(unpack_returned_tuples=True)
+        ns = lua.table()
+        lua.execute("return loadstring(...)", "local ns = ...\n" + snippet)(ns)
+        for key, label in LABELS.items():
+            with self.subTest(key):
+                self.assertEqual(ns.MarketLabel(key), label)
+
+
 if __name__ == "__main__":
     unittest.main()

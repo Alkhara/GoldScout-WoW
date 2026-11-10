@@ -63,6 +63,24 @@ def split_market(key):
     return realm, faction
 
 
+# WoW Forever realm names end in their ruleset ("CAMWOWUS2Realm2PvP"), and every
+# realm with the same ruleset shares one auction house per faction. Longest
+# suffix first: "RPPvP" also ends in "PvP". (GoldScout's Core.lua does the same.)
+RULESET_SUFFIXES = (("RPPvP", "Roleplay PvP"), ("PvP", "PvP"), ("PvE", "Normal"), ("RP", "Roleplay"))
+
+
+def market_label(key):
+    """A market as players would say it: "PvP Horde", "PvP Blackwater"."""
+    realm, faction = split_market(key)
+    if not realm:
+        return key
+    side = "Blackwater" if faction == "Neutral" else faction
+    for suffix, name in RULESET_SUFFIXES:
+        if len(realm) > len(suffix) and realm.endswith(suffix):
+            return "%s %s" % (name, side)
+    return "%s %s" % (realm, side)
+
+
 def wanted_markets(accounts, now):
     """{market key: {"scan": {item: price}, "last_scan": unix or None}} for the
     realms and factions played in the last 30 days, across WoW accounts."""
