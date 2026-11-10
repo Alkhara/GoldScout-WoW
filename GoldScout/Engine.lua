@@ -20,10 +20,10 @@ local MARKET_ABOVE_LEVELS = 10
 
 -- Confidence in a drop rate by how many kills (or picks) back it up.
 local CONFIDENCE = {
-  { min = 50, key = "high", text = "high", color = "|cff40ff40" },
-  { min = 15, key = "good", text = "good", color = "|cff9be35a" },
-  { min = 5, key = "fair", text = "fair", color = "|cffffd100" },
-  { min = 0, key = "low", text = "low", color = "|cffff8040" },
+  { min = 50, key = "high", text = L["high"], color = "|cff40ff40" },
+  { min = 15, key = "good", text = L["good"], color = "|cff9be35a" },
+  { min = 5, key = "fair", text = L["fair"], color = "|cffffd100" },
+  { min = 0, key = "low", text = L["low"], color = "|cffff8040" },
 }
 
 function Engine.Confidence(attempts)

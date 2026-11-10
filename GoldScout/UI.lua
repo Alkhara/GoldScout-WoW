@@ -19,7 +19,7 @@ local COLUMNS = {
     { key = "lvl", title = L["Lvl"], width = 45, align = "CENTER" },
     { key = "chance", title = L["Chance"], width = 55, align = "RIGHT" },
     { key = "each", title = L["Each"], width = 70, align = "RIGHT" },
-    { key = "hour", title = "Est. /hour", width = 80, align = "RIGHT" },
+    { key = "hour", title = L["Est. /hour"], width = 80, align = "RIGHT" },
     { key = "listed", title = L["Listed"], width = 50, align = "RIGHT" },
   },
   craft = {
@@ -690,6 +690,15 @@ function UI:SetTab(tab)
       check:Hide()
     end
   end
+  -- Space them by their labels, which are longer in some languages.
+  local x = 196
+  for _, check in ipairs(f.checks) do
+    if check:IsShown() then
+      check:ClearAllPoints()
+      check:SetPoint("TOPLEFT", x, -63)
+      x = x + 26 + math.ceil(check.label:GetStringWidth() or 60) + 14
+    end
+  end
   self:Refresh()
 end
 
@@ -699,11 +708,13 @@ function UI:Scroll(delta)
   self:Render()
 end
 
-local function SkillSummary()
+local function SkillSummary(short)
   local parts = {}
   for skillID, skill in pairs(ns.Professions:Skills()) do
     if skillID ~= ns.SKILL.LOCKPICKING then
-      parts[#parts + 1] = ("%s %d/%d"):format(skill.name or ns.SKILL_NAME[skillID] or "?", skill.rank, skill.max or skill.rank)
+      local name = skill.name or ns.SKILL_NAME[skillID] or "?"
+      parts[#parts + 1] = short and ("%s %d"):format(name, skill.rank)
+        or ("%s %d/%d"):format(name, skill.rank, skill.max or skill.rank)
     end
   end
   table.sort(parts)
@@ -713,12 +724,19 @@ end
 function UI:UpdateHeaderText()
   local f = self.frame
   local className = UnitClass("player") or ""
-  local text = (L["Level %d %s (%s)"]):format(UnitLevel("player") or 0, className, UnitFactionGroup("player") or "?")
+  local character = (L["Level %d %s (%s)"]):format(UnitLevel("player") or 0, className,
+    L[UnitFactionGroup("player") or "?"])
+  local text = character
   local skills = SkillSummary()
   if skills ~= "" then
-    text = text .. "  ·  " .. skills
+    text = character .. "  ·  " .. skills
   end
   f.charText:SetText(text)
+  -- Too long for one line (longer profession names in some languages): drop the maximums.
+  local room = (f:GetWidth() or 0) - 44
+  if skills ~= "" and room > 0 and (f.charText:GetStringWidth() or 0) > room then
+    f.charText:SetText(character .. "  ·  " .. SkillSummary(true))
+  end
 
   local scanning = ns.Scanner:IsScanning()
   if scanning then
@@ -1455,4 +1473,9 @@ end
 
 ns.Listen("DB_READY", function()
   UI:UpdateMinimapButton()
+end)
+
+-- Mob names the game was still loading (see ns.MobName): redraw once they're in.
+ns.Listen("MOB_NAMES_LOADED", function()
+  UI:QueueRefresh()
 end)

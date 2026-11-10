@@ -272,5 +272,10 @@ ns.AddLocale("frFR", {
   ["Hunting %s"] = "Chasse : %s",
   ["Scanning..."] = "Analyse...",
   ["commands:"] = "commandes :",
+  ["Est. /hour"] = "Est. /h",
+  ["high"] = "élevée",
+  ["good"] = "bonne",
+  ["fair"] = "moyenne",
+  ["low"] = "faible",
   ["%s %s"] = "%s %s",
 })

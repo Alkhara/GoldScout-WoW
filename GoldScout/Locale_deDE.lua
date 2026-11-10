@@ -4,9 +4,9 @@ local _, ns = ...
 ns.AddLocale("deDE", {
   ["never"] = "nie",
   ["just now"] = "gerade eben",
-  ["%dm ago"] = "vor %d Min.",
-  ["%dh ago"] = "vor %d Std.",
-  ["%dd ago"] = "vor %d T.",
+  ["%dm ago"] = "vor %d Min",
+  ["%dh ago"] = "vor %d Std",
+  ["%dd ago"] = "vor %d Tg",
   ["Alchemy"] = "Alchemie",
   ["Blacksmithing"] = "Schmiedekunst",
   ["Cooking"] = "Kochkunst",
@@ -272,5 +272,10 @@ ns.AddLocale("deDE", {
   ["Hunting %s"] = "Jagd: %s",
   ["Scanning..."] = "Scanne...",
   ["commands:"] = "Befehle:",
+  ["Est. /hour"] = "Gesch./Std",
+  ["high"] = "hoch",
+  ["good"] = "gut",
+  ["fair"] = "mittel",
+  ["low"] = "niedrig",
   ["%s %s"] = "%s %s",
 })

@@ -93,9 +93,12 @@ class MobNameTests(unittest.TestCase):
         ns = self.addon("koKR", {834: "코요테"})
         self.assertEqual(ns.MobName(834, None, "Coyote"), "코요테")
 
-    def test_your_own_recorded_name_comes_first(self):
-        ns = self.addon("enUS", {834: "Coyote"})
-        self.assertEqual(ns.MobName(834, "Coyote Packleader", None), "Coyote Packleader")
+    def test_the_games_name_beats_a_name_recorded_in_another_language(self):
+        # Recorded while the game was in English; now it runs in German.
+        ns = self.addon("deDE", {833: "Kojotenrudelführer"})
+        self.assertEqual(ns.MobName(833, "Coyote Packleader", None), "Kojotenrudelführer")
+        # A creature the game can't name: the player's own recorded name.
+        self.assertEqual(ns.MobName(4818, "Murloc Oracle", "Murloc"), "Murloc Oracle")
 
     def test_english_shared_names_only_for_english_players(self):
         self.assertEqual(self.addon("enUS").MobName(4818, None, "Murloc"), "Murloc")

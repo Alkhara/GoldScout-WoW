@@ -211,27 +211,35 @@ function ns.RequestItem(itemID)
   end
 end
 
--- A mob's name in the player's own language: the name they recorded
--- themselves, else the game's own name for that creature ID (the same lookup
--- a creature link's tooltip uses), else the name other players shared, which
--- is English and so only shown on English clients; else "Mob #id".
+-- A mob's name in the game's current language: the game's own name for that
+-- creature ID (the same lookup a creature link's tooltip uses), else the name
+-- the player recorded (in whatever language their game was then), else the
+-- name other players shared, which is English and so only shown on English
+-- clients; else "Mob #id". The game may need a moment to load a creature it
+-- hasn't seen: GoldScout then asks again shortly after (MOB_NAMES_LOADED).
 local mobNames = {}
 local ENGLISH_CLIENT = (ns.LOCALE or "enUS"):sub(1, 2) == "en"
+local asked = {}   -- lookups tried, so a creature the game never names isn't asked forever
 
 function ns.MobName(npcID, recorded, shared)
-  if type(recorded) == "string" and recorded ~= "" then
-    return recorded
-  end
-  if npcID and mobNames[npcID] == nil and C_TooltipInfo and C_TooltipInfo.GetHyperlink then
+  if npcID and mobNames[npcID] == nil and (asked[npcID] or 0) < 3 and C_TooltipInfo and C_TooltipInfo.GetHyperlink then
+    asked[npcID] = (asked[npcID] or 0) + 1
     local ok, data = pcall(C_TooltipInfo.GetHyperlink, ("unit:Creature-0-0-0-0-%d-0000000000"):format(npcID))
     local line = ok and type(data) == "table" and data.lines and data.lines[1]
     local name = line and ns.Plain(line.leftText)
     if type(name) == "string" and name ~= "" then
-      mobNames[npcID] = name   -- only names found are kept; a miss is asked again next time
+      mobNames[npcID] = name
+    elseif ns.Debounce and ns.Fire then
+      ns.Debounce("mobnames", 2, function()
+        ns.Fire("MOB_NAMES_LOADED")
+      end)
     end
   end
   if npcID and mobNames[npcID] then
     return mobNames[npcID]
+  end
+  if type(recorded) == "string" and recorded ~= "" then
+    return recorded
   end
   if ENGLISH_CLIENT and type(shared) == "string" and shared ~= "" then
     return shared

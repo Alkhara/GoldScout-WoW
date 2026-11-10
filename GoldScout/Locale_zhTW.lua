@@ -273,5 +273,10 @@ ns.AddLocale("zhTW", {
   ["Hunting %s"] = "狩獵：%s",
   ["Scanning..."] = "掃描中...",
   ["commands:"] = "指令：",
+  ["Est. /hour"] = "每小時",
+  ["high"] = "高",
+  ["good"] = "良好",
+  ["fair"] = "普通",
+  ["low"] = "低",
   ["%s %s"] = "%s%s",
 })

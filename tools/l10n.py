@@ -96,7 +96,8 @@ def signature(text):
 # Text handed straight to something that shows it, without L[...]: SetText("..."),
 # ns.Print("..."), print("..."), ShowTip(frame, "..."), AddLine("..."),
 # AddDoubleLine("..."), also as ("..."):format(...).
-DISPLAY = re.compile(r'(?:SetText|ns\.Print|\bprint|ShowTip\(\s*[\w.]+\s*,|AddLine|AddDoubleLine)\(?\s*\(?\s*(' + LIT + r')')
+DISPLAY = re.compile(r'(?:(?:SetText|ns\.Print|\bprint|ShowTip\(\s*[\w.]+\s*,|AddLine|AddDoubleLine)\(?\s*\(?'
+                     r'|\b(?:title|label|tip|text)\s*=)\s*(' + LIT + r')')
 WORD = re.compile(r"[A-Za-z]{2,}")
 
 

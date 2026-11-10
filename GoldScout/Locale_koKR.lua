@@ -273,5 +273,10 @@ ns.AddLocale("koKR", {
   ["Hunting %s"] = "%s 사냥",
   ["Scanning..."] = "검색 중...",
   ["commands:"] = "명령어:",
+  ["Est. /hour"] = "시간당",
+  ["high"] = "높음",
+  ["good"] = "좋음",
+  ["fair"] = "보통",
+  ["low"] = "낮음",
   ["%s %s"] = "%s %s",
 })
