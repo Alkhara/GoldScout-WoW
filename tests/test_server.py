@@ -34,6 +34,7 @@ import uploader  # noqa: E402
 SERVER = os.environ.get("GOLDSCOUT_TEST_SERVER", "")
 ADMIN = os.environ.get("GOLDSCOUT_TEST_ADMIN", "local-admin-token")
 GITHUB_PORT = os.environ.get("GOLDSCOUT_TEST_GITHUB", "")
+ACCESS_PORT = os.environ.get("GOLDSCOUT_TEST_ACCESS", "")
 LINE = "3812^11^0^19^20^1440^0.1179^0.2989^11^Clattering Crawler^2674:4:4,3010:7:7^"
 
 
@@ -281,6 +282,95 @@ class CronTests(unittest.TestCase):
     def test_other_crons_start_nothing(self):
         self.run_cron("0 0 * * *")
         self.assertEqual(self.started(), [])
+
+
+def fetch(path, headers=None, method="GET", body=None):
+    """(status, headers, text) for any response."""
+    request = urllib.request.Request(SERVER + path, headers=headers or {}, method=method,
+                                     data=body.encode() if body is not None else None)
+    try:
+        with urllib.request.urlopen(request, timeout=10) as response:
+            return response.status, response.headers, response.read().decode()
+    except urllib.error.HTTPError as error:
+        return error.code, error.headers, error.read().decode()
+
+
+@unittest.skipUnless(SERVER and ACCESS_PORT, "set GOLDSCOUT_TEST_SERVER and GOLDSCOUT_TEST_ACCESS to test the admin page")
+class AdminTests(unittest.TestCase):
+    """The admin dashboard opens only with a valid Cloudflare Access token (or
+    the admin token for its API). Needs .dev.vars ACCESS_TEAM_DOMAIN=
+    test.cloudflareaccess.com, ACCESS_AUD=test-audience and ACCESS_CERTS_URL=
+    http://127.0.0.1:<GOLDSCOUT_TEST_ACCESS>/certs; a stand-in serves the keys."""
+
+    @classmethod
+    def setUpClass(cls):
+        import subprocess
+        made = subprocess.run(["node", str(ROOT / "tests" / "access_jwt.mjs")], capture_output=True, text=True,
+                              check=True)
+        data = json.loads(made.stdout)
+        cls.tokens = data["tokens"]
+        keys = json.dumps(data["jwks"]).encode()
+
+        class Certs(http.server.BaseHTTPRequestHandler):
+            def do_GET(self):
+                self.send_response(200)
+                self.send_header("Content-Type", "application/json")
+                self.end_headers()
+                self.wfile.write(keys)
+
+            def log_message(self, *args):
+                pass
+
+        cls.certs = http.server.HTTPServer(("127.0.0.1", int(ACCESS_PORT)), Certs)
+        threading.Thread(target=cls.certs.serve_forever, daemon=True).start()
+
+    @classmethod
+    def tearDownClass(cls):
+        cls.certs.shutdown()
+        cls.certs.server_close()
+
+    def as_user(self, token):
+        return {"Cf-Access-Jwt-Assertion": token}
+
+    def test_closed_without_a_valid_access_token(self):
+        self.assertEqual(fetch("/admin")[0], 403)
+        self.assertEqual(fetch("/admin/api/summary")[0], 403)
+        for name in ("wrongAudience", "expired", "wrongIssuer", "wrongKey", "unknownKey", "tampered", "unsigned"):
+            with self.subTest(name):
+                status, _, text = fetch("/admin/api/summary", self.as_user(self.tokens[name]))
+                self.assertEqual(status, 403)
+                self.assertNotIn("live", text)
+        self.assertEqual(fetch("/admin", {"Authorization": "Bearer " + ADMIN})[0], 403)   # the page needs Access
+
+    def test_open_with_access(self):
+        status, headers, page = fetch("/admin", self.as_user(self.tokens["good"]))
+        self.assertEqual(status, 200)
+        self.assertIn("GoldScout admin", page)
+        self.assertIn("frame-ancestors 'none'", headers["Content-Security-Policy"])
+        self.assertEqual(headers["Cache-Control"], "no-store")
+        status, headers, script = fetch("/admin/app.js", self.as_user(self.tokens["good"]))
+        self.assertEqual((status, headers["Content-Type"].split(";")[0]), (200, "text/javascript"))
+        self.assertNotIn("innerHTML", script)
+        status, _, text = fetch("/admin/api/summary", self.as_user(self.tokens["good"]))
+        self.assertEqual(status, 200)
+        self.assertEqual(json.loads(text)["live"]["who"], "admin@example.com")
+
+    def test_stats_snapshot_round_trip(self):
+        def put(body, admin=ADMIN):
+            return fetch("/v1/admin/stats", {"Authorization": "Bearer " + admin,
+                                             "Content-Type": "application/json"}, "PUT", body)
+        self.assertEqual(put('{"generated": 1}', admin="wrong")[0], 401)
+        for bad in ("nope", "[1]", '{"no": "generated"}'):
+            with self.subTest(bad):
+                self.assertEqual(put(bad)[0], 400)
+        generated = int(time.time())
+        self.assertEqual(put(json.dumps({"generated": generated, "players": [{"tag": "abcde"}]}))[0], 200)
+        status, _, text = fetch("/admin/api/summary", {"Authorization": "Bearer " + ADMIN})
+        self.assertEqual(status, 200)
+        summary = json.loads(text)
+        self.assertEqual(summary["snapshot"]["generated"], generated)
+        self.assertEqual(summary["live"]["who"], "admin token")
+        self.assertIn("installs", summary["live"])
 
 
 if __name__ == "__main__":

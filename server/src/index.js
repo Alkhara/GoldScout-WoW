@@ -11,6 +11,10 @@
 //   GET  /v1/uploads   admin only (Authorization: Bearer <ADMIN_TOKEN>).
 //                      ?since=<unix seconds> limits it to newer uploads. Each
 //                      upload lists the companion version it last came from.
+//   PUT  /v1/admin/stats   admin only; the dashboard statistics from
+//                      tools/admin_stats.py.
+//   GET  /admin, /admin/api/summary   the admin dashboard (src/admin.js),
+//                      behind Cloudflare Access.
 //   GET  /v1/prices    auction houses with prices: id, ruleset, faction,
 //                      snapshot time, item count. Public.
 //   GET  /v1/prices/<region>/<house>   one house's prices:
@@ -56,12 +60,22 @@ const SCHEDULE = {
   "17 * * * *": ["data-merge.yml"],
 };
 
+import { handleAdmin, storeStats } from "./admin.js";
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     try {
       if (url.pathname === "/health") {
         return json({ ok: true });
+      }
+      const adminToken = (r) => isAdminToken(r, env);
+      const admin = await handleAdmin(request, env, url, adminToken);
+      if (admin) {
+        return admin;
+      }
+      if (url.pathname === "/v1/admin/stats" && request.method === "PUT") {
+        return await storeStats(request, env, adminToken);
       }
       if (url.pathname === "/v1/uploads" && request.method === "POST") {
         return await receive(request, env);
@@ -125,6 +139,10 @@ function sameText(a, b) {
   const left = new TextEncoder().encode(a);
   const right = new TextEncoder().encode(b);
   return left.length === right.length && crypto.subtle.timingSafeEqual(left, right);
+}
+
+function isAdminToken(request, env) {
+  return Boolean(env.ADMIN_TOKEN) && sameText(bearer(request), env.ADMIN_TOKEN);
 }
 
 function bearer(request) {
@@ -229,7 +247,8 @@ async function list(request, env, url) {
   }
   const since = Number(url.searchParams.get("since") || 0);
   const { results } = await env.DB.prepare(
-    "SELECT install_id, seq, body, terms, installs.updated_at AS updated_at, client FROM installs " +
+    "SELECT install_id, seq, body, terms, created_at, uploads, installs.updated_at AS updated_at, client " +
+    "FROM installs " +
     "LEFT JOIN install_clients USING (install_id) WHERE installs.updated_at > ? ORDER BY installs.updated_at",
   ).bind(since).all();
   return json({ uploads: results });

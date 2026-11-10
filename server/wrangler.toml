@@ -6,6 +6,12 @@ compatibility_date = "2026-10-01"
 workers_dev = true
 preview_urls = false
 
+# The admin dashboard's page, script and styles are bundled as text (src/admin/).
+[[rules]]
+type = "Text"
+globs = ["**/admin/*.html", "**/admin/*.css", "**/admin/*.client.js"]
+fallthrough = false
+
 [[d1_databases]]
 binding = "DB"
 database_name = "goldscout"

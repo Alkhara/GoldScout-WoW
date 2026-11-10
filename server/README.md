@@ -59,14 +59,47 @@ From this folder, with Node.js installed:
 10. Put the URL in `companion/uploader.py` (`UPLOAD_URL`) and release a new
    companion.
 
+## Admin dashboard
+
+`/admin` shows growth, companion versions, downloads, players (as short hashed
+tags), where the community data is thin, auction house freshness and workflow
+health. The hourly merge workflow builds the statistics with
+`tools/admin_stats.py` and sends them to `PUT /v1/admin/stats`; the page adds
+live counts. It opens only behind Cloudflare Access, and the Worker also checks
+Access's signature itself, so the `workers.dev` address and any misconfigured
+rule stay closed. To set it up, in the Cloudflare dashboard:
+
+1. **Workers & Pages → goldscout-api → Settings → Domains & Routes → Add →
+   Custom domain:** `admin.wowgoldscout.com`.
+2. **Zero Trust → Access → Applications → Add an application → Self-hosted:**
+   name it "GoldScout admin", domain `admin.wowgoldscout.com`, and add a policy
+   that allows only your email (login method: One-time PIN). Copy the
+   application's **Audience (AUD) tag**.
+3. Your **team domain** is under **Zero Trust → Settings → Custom pages**
+   (`<team>.cloudflareaccess.com`).
+4. From this folder:
+   - `npx wrangler secret put ACCESS_TEAM_DOMAIN` (the team domain, without https://)
+   - `npx wrangler secret put ACCESS_AUD` (the AUD tag)
+   - optional: `npx wrangler secret put ADMIN_EMAILS` (comma-separated; a second
+     allow-list on top of the Access policy)
+5. Optional, in GitHub (Settings → Secrets and variables → Actions → Variables):
+   `GOLDSCOUT_MY_INSTALLS`, your own install IDs, comma-separated, to mark them.
+
+Then open `https://admin.wowgoldscout.com/admin`. The statistics appear after
+the next hourly merge run (or run "Merge community data" by hand).
+
 ## Developing locally
 
 1. `npm install`
 2. Create `.dev.vars` with `ADMIN_TOKEN=local-admin-token`, `IP_SALT=local-salt`
    and `MIN_SECONDS_BETWEEN_UPLOADS=0`. Git ignores this file. For the cron
    tests, add `GITHUB_DISPATCH_TOKEN=local-dispatch-token` and
-   `GITHUB_API=http://127.0.0.1:8798`.
+   `GITHUB_API=http://127.0.0.1:8798`. For the admin tests, add
+   `ACCESS_TEAM_DOMAIN=test.cloudflareaccess.com`, `ACCESS_AUD=test-audience` and
+   `ACCESS_CERTS_URL=http://127.0.0.1:8797/certs`. To look at the dashboard
+   locally, start the server with `--var ADMIN_LOCAL:1` and open
+   `http://127.0.0.1:8799/admin` (that switch only works on 127.0.0.1).
 3. `npx wrangler d1 execute goldscout --local --file schema.sql`
 4. `npx wrangler dev --local --port 8799 --test-scheduled`
 5. From the repository root:
-   `GOLDSCOUT_TEST_SERVER=http://127.0.0.1:8799 GOLDSCOUT_TEST_GITHUB=8798 python -m unittest tests.test_server`
+   `GOLDSCOUT_TEST_SERVER=http://127.0.0.1:8799 GOLDSCOUT_TEST_GITHUB=8798 GOLDSCOUT_TEST_ACCESS=8797 python -m unittest tests.test_server`

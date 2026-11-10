@@ -57,3 +57,11 @@ CREATE TABLE IF NOT EXISTS ah_realms (
   ruleset INTEGER NOT NULL,
   PRIMARY KEY (region, realm)
 );
+
+-- The admin dashboard's statistics (tools/admin_stats.py, hourly): counts and
+-- coverage only; players appear as short hashed tags, never install IDs.
+CREATE TABLE IF NOT EXISTS admin_stats (
+  name TEXT PRIMARY KEY,
+  body TEXT NOT NULL,
+  updated_at INTEGER NOT NULL
+);

@@ -30,6 +30,7 @@ permissions:
   issues: write
   pull-requests: write
   checks: read
+  actions: read   # the admin dashboard's workflow health (tools/admin_stats.py)
   actions: write
 
 concurrency:
@@ -149,3 +150,18 @@ jobs:
           gh pr merge "$BRANCH" --merge --delete-branch
           gh workflow run tests.yml --ref main
           summary "**Merged automatically:** every check passed, including the website build. Started Tests on main."
+
+      - name: Update the admin dashboard
+        if: always()
+        continue-on-error: true
+        env:
+          GOLDSCOUT_API_URL: ${{ vars.GOLDSCOUT_API_URL || 'https://goldscout-api.cawley22.workers.dev' }}
+          GOLDSCOUT_API_ADMIN: ${{ secrets.GOLDSCOUT_API_ADMIN }}
+          GOLDSCOUT_MY_INSTALLS: ${{ vars.GOLDSCOUT_MY_INSTALLS }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$GOLDSCOUT_API_ADMIN" ]; then
+            echo "GOLDSCOUT_API_ADMIN isn't set; the admin dashboard wasn't updated." | tee -a "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          python3 tools/admin_stats.py | tee -a "$GITHUB_STEP_SUMMARY"

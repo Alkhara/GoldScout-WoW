@@ -56,6 +56,7 @@ jobs:
         run: |
           printf 'ADMIN_TOKEN=local-admin-token\nIP_SALT=local-salt\nMIN_SECONDS_BETWEEN_UPLOADS=0\n' > .dev.vars
           printf 'GITHUB_DISPATCH_TOKEN=local-dispatch-token\nGITHUB_API=http://127.0.0.1:8798\n' >> .dev.vars
+          printf 'ACCESS_TEAM_DOMAIN=test.cloudflareaccess.com\nACCESS_AUD=test-audience\nACCESS_CERTS_URL=http://127.0.0.1:8797/certs\n' >> .dev.vars
           npx wrangler d1 execute goldscout --local --file schema.sql
           npx wrangler dev --local --port 8799 --test-scheduled > ../wrangler-dev.log 2>&1 &
           for i in $(seq 1 60); do
@@ -63,7 +64,7 @@ jobs:
             sleep 2
           done
           cd ..
-          GOLDSCOUT_TEST_SERVER=http://127.0.0.1:8799 GOLDSCOUT_TEST_GITHUB=8798 python -m unittest tests.test_server -v
+          GOLDSCOUT_TEST_SERVER=http://127.0.0.1:8799 GOLDSCOUT_TEST_GITHUB=8798 GOLDSCOUT_TEST_ACCESS=8797 python -m unittest tests.test_server -v
 
       - name: Show the local server log
         if: failure()
