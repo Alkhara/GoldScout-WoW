@@ -229,6 +229,11 @@ class Account:
         self.seen_markets = database.get("seenMarkets") if isinstance(database.get("seenMarkets"), dict) else {}
         regions = database.get("marketRegions")
         self.market_regions = regions if isinstance(regions, dict) else {}
+        # GoldScout's own errors (/gscout errors), for optional error reports.
+        errors = database.get("errors")
+        if isinstance(errors, dict):      # a Lua list read back as {1: ..., 2: ...}
+            errors = [errors[k] for k in sorted(k for k in errors if isinstance(k, int))]
+        self.errors = [e for e in errors if isinstance(e, dict)] if isinstance(errors, list) else []
 
     @property
     def region(self):

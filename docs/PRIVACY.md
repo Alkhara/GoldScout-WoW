@@ -62,12 +62,23 @@ Blizzard's Game Data API, and the companion removes them once they're more than
 30 days old. You can turn this off from the tray icon (on macOS, from Settings),
 which also removes the folder.
 
+**Error reports (optional, off by default).** If you turn on "Send error
+reports" in the companion (the tray menu, or Settings on macOS), it sends
+GoldScout's own errors from its saved data to the GoldScout server, at most
+every 30 minutes: each error's message, how many times it happened, the
+GoldScout version, and only the stack lines from GoldScout's own files. Folder
+paths are removed on your computer first. A report carries a random ID the
+companion makes for this (not your install ID), so we can count how many
+players hit an error without knowing who they are. The server keeps an error
+for 90 days after it was last reported. Turning the setting off stops reports.
+
 On your computer it stores, in `%APPDATA%\GoldScout Companion\config.json`
 (on macOS, `~/Library/Application Support/GoldScout Companion/config.json`): your WoW
 folder location, whether you agreed to the terms and when, your settings, for
-each install the upload token and the last snapshot it uploaded, and for auction
+each install the upload token and the last snapshot it uploaded, for auction
 prices which auction house matches each of your realms and when it last saved
-them.
+them, and, if you turned on error reports, their random ID and which errors it
+has sent.
 
 ## The upload service
 

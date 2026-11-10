@@ -20,6 +20,9 @@ releases add their own line automatically.
 - **More translated:** the "Est. /hour" column and the confidence words in
   tooltips.
 - Your saved data now upgrades safely from one version to the next.
+- **GoldScout Companion: optional error reports.** Turn on **Send error
+  reports** (tray menu, or Settings on a Mac) to send GoldScout's own errors,
+  with folder paths removed, so bugs get fixed faster. Off by default.
 
 ## v0.10.0
 

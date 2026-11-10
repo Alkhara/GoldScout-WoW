@@ -150,7 +150,7 @@ export async function handleAdmin(request, env, url, isAdminToken) {
 
 async function summary(env, who) {
   const now = Math.floor(Date.now() / 1000);
-  const [installs, clients, systems, regions, houses, realms, stats] = await env.DB.batch([
+  const [installs, clients, systems, regions, houses, realms, stats, errors, errors24] = await env.DB.batch([
     env.DB.prepare("SELECT COUNT(*) AS installs, COALESCE(SUM(updated_at > ?), 0) AS d1, " +
       "COALESCE(SUM(updated_at > ?), 0) AS d7, COALESCE(SUM(created_at > ?), 0) AS new7 FROM installs")
       .bind(now - 86400, now - 7 * 86400, now - 7 * 86400),
@@ -168,12 +168,19 @@ async function summary(env, who) {
       "FROM ah_houses ORDER BY region, house"),
     env.DB.prepare("SELECT region, realm, ruleset FROM ah_realms ORDER BY region, realm"),
     env.DB.prepare("SELECT body, updated_at FROM admin_stats WHERE name = 'dashboard'"),
+    env.DB.prepare("SELECT message, stack, addon_version, first_seen, last_seen, occurrences, reports, " +
+      "(SELECT COUNT(*) FROM error_reporters e WHERE e.fingerprint = r.fingerprint) AS players " +
+      "FROM error_reports r ORDER BY last_seen DESC LIMIT 30"),
+    env.DB.prepare("SELECT COUNT(DISTINCT fingerprint) AS errors, COUNT(DISTINCT reporter) AS players " +
+      "FROM error_reporters WHERE last_seen > ?").bind(now - 86400),
   ]);
   const live = {
     now, who, ...installs.results[0],
     clients: clients.results,
     systems: systems.results,
     regions: regions.results,
+    errors: errors.results,
+    errors24: errors24.results[0],
     houses: houses.results,
     realms: realms.results,
     statsStored: stats.results[0] ? stats.results[0].updated_at : null,

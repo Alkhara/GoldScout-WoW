@@ -64,6 +64,7 @@ const SCHEDULE = {
 };
 
 import { handleAdmin, storeStats } from "./admin.js";
+import { receiveErrors } from "./errors.js";
 
 export default {
   async fetch(request, env) {
@@ -82,6 +83,9 @@ export default {
       }
       if (url.pathname === "/v1/uploads" && request.method === "POST") {
         return await receive(request, env);
+      }
+      if (url.pathname === "/v1/errors" && request.method === "POST") {
+        return await receiveErrors(request, env, clientVersion(request));
       }
       if (url.pathname === "/v1/uploads" && request.method === "GET") {
         return await list(request, env, url);

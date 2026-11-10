@@ -160,3 +160,8 @@ summary { cursor: pointer; color: var(--ink-2); font-size: 12.5px; }
 .checks { list-style: none; margin: 0; padding: 0; }
 .checks .check { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; padding: 6px 0; border-bottom: 1px solid var(--grid); }
 .checks .check:last-child { border-bottom: none; }
+
+/* Errors: message in the row, GoldScout's stack lines on demand */
+td.wrap { white-space: normal; max-width: 520px; }
+td.wrap summary { cursor: pointer; }
+pre.stack { margin: 6px 0 0; padding: 8px; font-size: 12px; white-space: pre-wrap; overflow-wrap: anywhere; background: var(--page); border: 1px solid var(--grid); border-radius: 6px; }

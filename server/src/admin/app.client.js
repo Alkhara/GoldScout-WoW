@@ -393,6 +393,11 @@
         checks.push(["critical", w.name + ": last run " + (last.conclusion || "failed"), last.url || null]);
       }
     });
+    var recent = live.errors24 || {};
+    checks.push(recent.errors ? [recent.players >= 3 ? "critical" : "warning",
+      "Errors in the last 24 h: " + num(recent.errors) + " kinds, from " + num(recent.players) +
+      (recent.players === 1 ? " player" : " players"), "See Errors below."]
+      : ["good", "No error reports in the last 24 h", null]);
     return checks;
   }
 
@@ -409,11 +414,35 @@
         " h without a new snapshot.", [el("ul", { cls: "checks" }, rows)])]);
   }
 
+  function errorsSection(live) {
+    var now = live.now;
+    var list = live.errors || [];
+    var rows = list.map(function (e) {
+      var stack = el("details", {}, [el("summary", { text: e.message }), el("pre", { cls: "stack", text: e.stack || "" })]);
+      return el("tr", {}, [
+        el("td", { cls: "wrap" }, [stack]),
+        el("td", { cls: "num", text: num(e.players) }),
+        el("td", { cls: "num", text: num(e.occurrences) }),
+        el("td", { text: e.addon_version || "-" }),
+        el("td", { text: ago(now - e.last_seen) }),
+        el("td", { text: date(e.first_seen) }),
+      ]);
+    });
+    var head = el("tr", {}, ["Error", "Players", "Times", "Version", "Last seen", "First seen"].map(function (h, i) {
+      return el("th", { cls: i === 1 || i === 2 ? "num" : "", text: h });
+    }));
+    return section("errors", "Errors", "Opt-in reports from GoldScout Companion, newest first", [
+      card(null, "Only players who turned on error reports in the companion send them. Each row is one error, " +
+        "grouped by its message and first stack line; click it for GoldScout's stack lines.",
+        [list.length ? el("div", { cls: "table-wrap" }, [el("table", {}, [el("thead", {}, [head]),
+          el("tbody", {}, rows)])]) : el("p", { cls: "muted", text: "No error reports yet." })])]);
+  }
+
   function gapsSection() {
     return section("gaps", "Not tracked yet", null, [card(null, null, [el("ul", {}, [
       el("li", { text: "Companion users who only download prices (no ID, no uploads). Phase 2: aggregate counts by version." }),
       el("li", { text: "Addon versions: exports don't include them." }),
-      el("li", { text: "GoldScout's own Lua errors stay on each player's PC (opt-in reporting would be phase 2)." }),
+      el("li", { text: "Errors from players who haven't turned on error reports (they stay on their PC)." }),
       el("li", { text: "Uploads the server refused, by reason." }),
       el("li", { text: "Website traffic: the site has no analytics by design." }),
     ])])]);
@@ -439,7 +468,7 @@
     }
     [healthSection(live, snap), growthSection(live, snap), versionsSection(live, snap), reachSection(live, snap),
       playersSection(snap),
-      coverageSection(snap), pricesSection(live), automationSection(snap), gapsSection()]
+      coverageSection(snap), pricesSection(live), errorsSection(live), automationSection(snap), gapsSection()]
       .forEach(function (s) { app.appendChild(s); });
   }
 

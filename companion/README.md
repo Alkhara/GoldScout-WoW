@@ -54,6 +54,15 @@ that clearly matches, within the hour (on your PC; nothing is uploaded).
 Turn auction prices off from the tray menu; that also removes the
 `GoldScout_Prices` folder.
 
+## Error reports (optional)
+
+**Send error reports** in the tray menu (Settings on a Mac) is off unless you
+turn it on. When it's on, the companion sends GoldScout's own errors, which
+GoldScout already keeps in its saved data, so bugs get fixed without anyone
+having to describe them. Only the error messages and GoldScout's own stack
+lines are sent, with folder paths removed, under a random ID that isn't your
+install ID. The window suggests it when GoldScout has recorded errors.
+
 ## What it does and doesn't do
 
 - It reads only GoldScout's saved data

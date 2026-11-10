@@ -189,6 +189,32 @@ class ServerTests(unittest.TestCase):
                                                   "CF-Connecting-IP": fake_ip()}, "POST")
         self.assertEqual((status, reply.get("status")), (201, "registered"))
 
+    def test_error_reports_are_grouped_and_rate_limited(self):
+        def report(reporter, errors):
+            body = json.dumps({"reporter": reporter, "errors": errors})
+            return raw("/v1/errors", body, {"Content-Type": "application/json",
+                                            "User-Agent": "GoldScoutCompanion/0.11.0 (Windows)"}, "POST")
+
+        message = "GoldScout/UI.lua:%d: attempt to index a nil value" % random.randint(1, 10 ** 9)
+        error = {"m": message, "s": "GoldScout/UI.lua:1: in function 'Refresh'", "n": 3, "v": "v0.10.1"}
+        first, second = new_install() + "abcd", new_install() + "ef01"
+        first, second = "".join("0123456789abcdef"[ord(c) % 16] for c in first[:16]), \
+            "".join("0123456789abcdef"[ord(c) % 16] for c in second[:16])
+        self.assertEqual(report(first, [error])[0], 200)
+        self.assertEqual(report(first, [error])[0], 429)                 # at most every 30 minutes
+        self.assertEqual(report(second, [dict(error, n=2)])[0], 200)
+        status, _, text = fetch("/admin/api/summary", {"Authorization": "Bearer " + ADMIN})
+        self.assertEqual(status, 200)
+        live = json.loads(text)["live"]
+        row = next(e for e in live["errors"] if e["message"] == message)
+        self.assertEqual((row["players"], row["occurrences"], row["reports"]), (2, 5, 2))
+        self.assertGreaterEqual(live["errors24"]["players"], 2)
+        for bad in ({"reporter": "nope", "errors": [error]}, {"reporter": first, "errors": []},
+                    {"reporter": first, "errors": [dict(error, n=0)]}, {"reporter": first, "errors": [{"m": 5}]}):
+            with self.subTest(bad):
+                self.assertEqual(raw("/v1/errors", json.dumps(bad), {"Content-Type": "application/json"}, "POST")[0],
+                                 400)
+
     def test_region_is_recorded(self):
         def region_of(install):
             status, listing = raw("/v1/uploads?since=%d" % (time.time() - 3600),

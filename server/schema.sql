@@ -74,6 +74,32 @@ CREATE TABLE IF NOT EXISTS ah_realms (
   PRIMARY KEY (region, realm)
 );
 
+-- Opt-in error reports from GoldScout Companion (src/errors.js): GoldScout's
+-- own Lua errors, cleaned on the player's PC to the message and GoldScout's
+-- stack lines, grouped by error. Reporters are random IDs the companion makes,
+-- not install IDs. Rows go 90 days after an error was last seen.
+CREATE TABLE IF NOT EXISTS error_reports (
+  fingerprint TEXT PRIMARY KEY,  -- hash of the message and its first stack line
+  message TEXT NOT NULL,
+  stack TEXT NOT NULL,
+  addon_version TEXT,
+  first_seen INTEGER NOT NULL,
+  last_seen INTEGER NOT NULL,
+  occurrences INTEGER NOT NULL,  -- how often it happened, summed over reports
+  reports INTEGER NOT NULL
+);
+CREATE TABLE IF NOT EXISTS error_reporters (
+  reporter TEXT NOT NULL,
+  fingerprint TEXT NOT NULL,
+  last_seen INTEGER NOT NULL,
+  PRIMARY KEY (reporter, fingerprint)
+);
+CREATE TABLE IF NOT EXISTS error_senders (
+  reporter TEXT PRIMARY KEY,
+  last_report INTEGER NOT NULL,
+  companion TEXT
+);
+
 -- The admin dashboard's statistics (tools/admin_stats.py, hourly): counts and
 -- coverage only; players appear as short hashed tags, never install IDs.
 CREATE TABLE IF NOT EXISTS admin_stats (

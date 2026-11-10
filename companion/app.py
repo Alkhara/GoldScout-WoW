@@ -28,6 +28,7 @@ HERE = Path(getattr(sys, "_MEIPASS", Path(__file__).resolve().parent))
 sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(HERE.parent / "tools"))
 import auction_prices  # noqa: E402
+import error_reports  # noqa: E402
 import savedvars  # noqa: E402
 import submission  # noqa: E402
 import system  # noqa: E402
@@ -93,6 +94,7 @@ class App:
         self.tray = None
         self.update, self.updating = None, False
         self.pricing, self.price_timer, self.price_keys = False, None, None
+        self.sending_errors = False
         self.notify_timer = None
 
         root.title("GoldScout Companion")
@@ -262,6 +264,7 @@ class App:
         self.share_choice = tk.BooleanVar(value=False)
         self.prices_choice = tk.BooleanVar(value=True)
         self.login_choice = tk.BooleanVar(value=False)
+        self.errors_choice = tk.BooleanVar(value=False)
         ttk.Checkbutton(self.settings, text="Share automatically", variable=self.share_choice,
                         command=lambda: self.set_auto_share(self.share_choice.get())).grid(row=0, column=0, sticky="w")
         ttk.Checkbutton(self.settings, text="Auction prices in GoldScout", variable=self.prices_choice,
@@ -270,6 +273,9 @@ class App:
         self.login_check = ttk.Checkbutton(self.settings, text=system.STARTUP_LABEL, variable=self.login_choice,
                                            command=lambda: self.set_start_at_login(self.login_choice.get()))
         self.login_check.grid(row=0, column=2, sticky="w", padx=(16, 0))
+        ttk.Checkbutton(self.settings, text="Send error reports", variable=self.errors_choice,
+                        command=lambda: self.set_error_reports(self.errors_choice.get())).grid(
+                            row=1, column=1, sticky="w", padx=(16, 0), pady=(8, 0))
         self.check_button = ttk.Button(self.settings, text="Check for updates",
                                        command=lambda: self.check_updates(manual=True))
         self.check_button.grid(row=1, column=0, sticky="w", pady=(8, 0))
@@ -345,6 +351,9 @@ class App:
             pystray.MenuItem("Auction prices in GoldScout", lambda: self.events.put(
                 lambda: self.set_prices_enabled(not self.prices_enabled())),
                 checked=lambda _: self.prices_enabled()),
+            pystray.MenuItem("Send error reports", lambda: self.events.put(
+                lambda: self.set_error_reports(not self.error_reports_enabled())),
+                checked=lambda _: self.error_reports_enabled()),
             pystray.MenuItem(system.STARTUP_LABEL, lambda: self.events.put(
                 lambda: self.set_start_at_login(not system.start_at_login_enabled())),
                 checked=lambda _: system.start_at_login_enabled(),
@@ -367,6 +376,7 @@ class App:
             return
         self.share_choice.set(self.auto_share())
         self.prices_choice.set(self.prices_enabled())
+        self.errors_choice.set(self.error_reports_enabled())
         self.login_choice.set(system.start_at_login_enabled())
         self.login_check.state(["!disabled"] if system.can_start_at_login() else ["disabled"])
         if self.can_update() and not self.update and not self.updating:
@@ -595,6 +605,10 @@ class App:
             self.refresh()
         else:
             self.maybe_upload()
+        try:
+            self.maybe_send_errors()
+        except Exception:  # noqa: BLE001 - error reports must never stop sharing or the poll loop
+            self.sending_errors = False
         self.root.after(POLL_MS, self.poll)
 
     def set_notes(self, lines):
@@ -677,8 +691,64 @@ class App:
             "%d mobs   ·   %d kills   ·   %d pickpockets   ·   %d item drops" % (
                 len(self.result.mobs), kills, picks, drops),
             since=self.since_text(account),
-            notes=["Your export passed every check the GoldScout data bot runs."],
+            notes=["Your export passed every check the GoldScout data bot runs."] + self.error_note(),
             can_share=True)
+
+    def error_note(self):
+        """A line offering error reports when GoldScout has recorded errors and they're off."""
+        count = sum(len(getattr(account, "errors", None) or []) for account in self.accounts)
+        if not count or self.error_reports_enabled():
+            return []
+        place = "Settings below" if not self.tray else "the tray menu"
+        return ["", "GoldScout recorded %d error%s on this PC. To help fix them, turn on Send error reports "
+                "in %s: only GoldScout's own errors are sent, with folder paths removed." % (
+                    count, "" if count == 1 else "s", place)]
+
+    # -- error reports ----------------------------------------------------------
+    def error_reports_enabled(self):
+        return self.config.get("error_reports", False)
+
+    def set_error_reports(self, enabled):
+        self.config["error_reports"] = bool(enabled)
+        if enabled and not self.config.get("reporter"):
+            self.config["reporter"] = error_reports.new_reporter_id()
+        save_config(self.config)
+        self.update_controls()
+        if self.account:
+            self.show_account()
+        if enabled:
+            self.maybe_send_errors(force=True)
+
+    def maybe_send_errors(self, force=False):
+        """Sends GoldScout's new errors, at most every 30 minutes, when the player turned reports on."""
+        if not self.error_reports_enabled() or not uploader.upload_url() or self.sending_errors:
+            return
+        if not force and time.time() - self.config.get("errors_tried", 0) < error_reports.SEND_EVERY:
+            return
+        since = self.config.get("errors_sent_until", 0)
+        errors, newest = error_reports.new_errors(self.accounts, since)
+        if not errors:
+            return
+        self.sending_errors = True
+        self.config["errors_tried"] = time.time()
+        reporter = self.config.get("reporter") or error_reports.new_reporter_id()
+        self.config["reporter"] = reporter
+        save_config(self.config)
+
+        def work():
+            try:
+                error_reports.send(reporter, errors, VERSION)
+                sent = newest
+            except error_reports.ReportError:
+                sent = None
+            self.events.put(lambda: self.errors_sent(sent))
+        threading.Thread(target=work, daemon=True).start()
+
+    def errors_sent(self, newest):
+        self.sending_errors = False
+        if newest is not None:
+            self.config["errors_sent_until"] = newest
+            save_config(self.config)
 
     def upload_state(self, account):
         return self.config.get("uploads", {}).get(account.install_id or "", {})
