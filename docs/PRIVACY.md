@@ -62,10 +62,11 @@ Blizzard's Game Data API, and the companion removes them once they're more than
 30 days old. You can turn this off from the tray icon (on macOS, from Settings),
 which also removes the folder.
 
-**Error reports (optional, off by default).** If you turn on "Send error
-reports" in the companion (the tray menu, or Settings on macOS), it sends
-GoldScout's own errors from its saved data to the GoldScout server, at most
-every 30 minutes: each error's message, how many times it happened, the
+**Error reports (on for sharers; you can turn them off).** When you've agreed
+to share, "Send error reports" in the companion (the tray menu, or Settings on
+macOS) is on unless you turn it off; if you chose "Not now", it's off unless you
+turn it on. While it's on, the companion sends GoldScout's own errors from its
+saved data to the GoldScout server, at most every 30 minutes: each error's message, how many times it happened, the
 GoldScout version, and only the stack lines from GoldScout's own files. Folder
 paths are removed on your computer first. A report carries a random ID the
 companion makes for this (not your install ID), so we can count how many

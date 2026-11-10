@@ -368,6 +368,7 @@
   // Blizzard publishes snapshots about hourly; the price workflow copies them.
   var PRICE_REGIONS = ["us", "eu", "kr", "tw"];
   var PRICE_WARN = 1.5 * HOUR, PRICE_ALERT = 3 * HOUR;
+  var PAID_MONTH = 10000000, FREE_DAY = 100000;   // Workers Paid includes 10M a month; Free allows 100k a day
 
   function healthChecks(live, snap) {
     var checks = [], now = live.now;
@@ -393,6 +394,17 @@
         checks.push(["critical", w.name + ": last run " + (last.conclusion || "failed"), last.url || null]);
       }
     });
+    var usage = snap && snap.requests;
+    if (usage && usage.month) {
+      var monthTotal = Object.keys(usage.month).reduce(function (s, k) { return s + usage.month[k]; }, 0);
+      var day = new Date(usage.through * 1000);
+      var daysIn = new Date(Date.UTC(day.getUTCFullYear(), day.getUTCMonth() + 1, 0)).getUTCDate();
+      var elapsed = day.getUTCDate() - 1 + (day.getUTCHours() * 60 + day.getUTCMinutes()) / 1440;
+      var projected = elapsed > 0.25 ? monthTotal / elapsed * daysIn : monthTotal;
+      checks.push([projected > 0.8 * PAID_MONTH ? "warning" : "good",
+        "Server requests this month: " + num(monthTotal) + ", on course for about " + num(Math.round(projected)),
+        projected > 0.8 * PAID_MONTH ? "Past 80% of the Workers Paid plan's 10 million included requests." : null]);
+    }
     var recent = live.errors24 || {};
     checks.push(recent.errors ? [recent.players >= 3 ? "critical" : "warning",
       "Errors in the last 24 h: " + num(recent.errors) + " kinds, from " + num(recent.players) +
@@ -414,6 +426,41 @@
         " h without a new snapshot.", [el("ul", { cls: "checks" }, rows)])]);
   }
 
+  function usageSection(snap) {
+    var usage = snap && snap.requests;
+    if (!usage || !usage.days) {
+      return section("usage", "Server requests", null, [card(null, null, [el("p", { cls: "muted",
+        text: "Not set up yet: add the CLOUDFLARE_ANALYTICS_TOKEN secret (a Cloudflare API token with Account " +
+          "Analytics: Read) and the CLOUDFLARE_ACCOUNT_ID variable to the GitHub repository." })])]);
+    }
+    function total(day) { return Object.keys(day.scripts).reduce(function (s, k) { return s + day.scripts[k]; }, 0); }
+    var days = usage.days;
+    var today = days.length ? days[days.length - 1] : null;
+    var week = days.slice(-8, -1);
+    var weekAvg = week.length ? week.reduce(function (s, d) { return s + total(d); }, 0) / week.length : 0;
+    var busiest = days.slice(0, -1).reduce(function (m, d) { return Math.max(m, total(d)); }, 0);
+    var month = Object.keys(usage.month || {}).reduce(function (s, k) { return s + usage.month[k]; }, 0);
+    var scripts = {};
+    days.forEach(function (d) { Object.keys(d.scripts).forEach(function (k) { scripts[k] = true; }); });
+    return section("usage", "Server requests", "Cloudflare Workers analytics, as of the statistics snapshot", [
+      tiles([
+        ["Today so far (UTC)", num(today ? total(today) : 0), today ? today.date : ""],
+        ["Daily average, 7 days", num(Math.round(weekAvg)), pct(weekAvg, FREE_DAY) + " of the free plan's day"],
+        ["Busiest day, 30 days", num(busiest), pct(busiest, FREE_DAY) + " of the free plan's day"],
+        ["This month", num(month), pct(month, PAID_MONTH) + " of Workers Paid's 10M"],
+      ]),
+      el("div", { cls: "grid" }, [
+        card("Requests per day", "All GoldScout Workers together. Free plan: 100,000 a day; Workers Paid: " +
+          "10 million a month included.", [columnChart(days.map(function (d) { return [d.date.slice(5), total(d)]; }),
+            "requests")]),
+        card("By Worker, this month", null, [table([["Worker", 0], ["Requests", 1, "num"], ["Errors", 2, "num"]],
+          Object.keys(scripts).sort().map(function (k) {
+            return [k, num((usage.month || {})[k] || 0), num((usage.errors || {})[k] || 0)];
+          }))]),
+      ]),
+    ]);
+  }
+
   function errorsSection(live) {
     var now = live.now;
     var list = live.errors || [];
@@ -431,8 +478,8 @@
     var head = el("tr", {}, ["Error", "Players", "Times", "Version", "Last seen", "First seen"].map(function (h, i) {
       return el("th", { cls: i === 1 || i === 2 ? "num" : "", text: h });
     }));
-    return section("errors", "Errors", "Opt-in reports from GoldScout Companion, newest first", [
-      card(null, "Only players who turned on error reports in the companion send them. Each row is one error, " +
+    return section("errors", "Errors", "Reports from GoldScout Companion, newest first", [
+      card(null, "Companions of players who share send them unless reports are turned off. Each row is one error, " +
         "grouped by its message and first stack line; click it for GoldScout's stack lines.",
         [list.length ? el("div", { cls: "table-wrap" }, [el("table", {}, [el("thead", {}, [head]),
           el("tbody", {}, rows)])]) : el("p", { cls: "muted", text: "No error reports yet." })])]);
@@ -442,7 +489,7 @@
     return section("gaps", "Not tracked yet", null, [card(null, null, [el("ul", {}, [
       el("li", { text: "Companion users who only download prices (no ID, no uploads). Phase 2: aggregate counts by version." }),
       el("li", { text: "Addon versions: exports don't include them." }),
-      el("li", { text: "Errors from players who haven't turned on error reports (they stay on their PC)." }),
+      el("li", { text: "Errors from players who don't share or turned error reports off (they stay on their PC)." }),
       el("li", { text: "Uploads the server refused, by reason." }),
       el("li", { text: "Website traffic: the site has no analytics by design." }),
     ])])]);
@@ -468,7 +515,8 @@
     }
     [healthSection(live, snap), growthSection(live, snap), versionsSection(live, snap), reachSection(live, snap),
       playersSection(snap),
-      coverageSection(snap), pricesSection(live), errorsSection(live), automationSection(snap), gapsSection()]
+      coverageSection(snap), pricesSection(live), usageSection(snap), errorsSection(live), automationSection(snap),
+      gapsSection()]
       .forEach(function (s) { app.appendChild(s); });
   }
 

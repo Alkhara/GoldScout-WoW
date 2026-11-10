@@ -183,7 +183,8 @@ class App:
             " and uploads new data after you log out or /reload.\n\n"
             "What's shared: creature and item IDs and names, kill and drop counts, mob levels, where "
             "you looted, and which items your professions can make, plus a random ID for your "
-            "GoldScout data. Never character, account or realm names.\n\n"
+            "GoldScout data. Never character, account or realm names. It also sends GoldScout's own "
+            "error reports, with folder paths removed, so bugs get fixed; you can turn that off.\n\n"
             "It also brings auction house prices into GoldScout: about once an hour it saves the "
             "latest prices for your realms in a small GoldScout_Prices addon, the only thing it "
             "changes in your WoW folder. That works even if you don't share.")
@@ -706,7 +707,9 @@ class App:
 
     # -- error reports ----------------------------------------------------------
     def error_reports_enabled(self):
-        return self.config.get("error_reports", False)
+        """On by default for players who agreed to share; off for those who chose Not now,
+        until they turn it on. Either way the setting can be changed any time."""
+        return self.config.get("error_reports", self.has_consent())
 
     def set_error_reports(self, enabled):
         self.config["error_reports"] = bool(enabled)

@@ -13,6 +13,8 @@ Needs GOLDSCOUT_API_ADMIN (the server's ADMIN_TOKEN). GITHUB_TOKEN is optional
 (without it, GitHub's public API is used, with its lower rate limit).
 GOLDSCOUT_MY_INSTALLS (comma-separated install IDs) marks the maintainer's own
 installs. Players appear only as short hashed tags, never install IDs.
+CLOUDFLARE_ANALYTICS_TOKEN (Account Analytics: Read) and CLOUDFLARE_ACCOUNT_ID
+add the Workers' daily request counts; without them that card says so.
 """
 import argparse
 import datetime
@@ -50,6 +52,48 @@ def get_json(url, headers=None, data=None, method=None):
                                      headers=dict(headers or {}, **{"User-Agent": USER_AGENT}))
     with urllib.request.urlopen(request, timeout=60) as response:
         return json.loads(response.read() or b"{}")
+
+
+CF_GRAPHQL = "https://api.cloudflare.com/client/v4/graphql"
+WORKER_REQUESTS_QUERY = """
+query ($account: string!, $start: string!, $end: string!) {
+  viewer {
+    accounts(filter: {accountTag: $account}) {
+      workersInvocationsAdaptive(limit: 10000, filter: {datetime_geq: $start, datetime_leq: $end}) {
+        sum { requests errors }
+        dimensions { date scriptName }
+      }
+    }
+  }
+}
+"""
+
+
+def worker_requests(token, account, now, days=30, post=None):
+    """{"days": [{"date", "scripts": {name: requests}}], "month": {name: requests},
+    "errors": {name: errors}} from Cloudflare's Workers analytics (GraphQL)."""
+    end = datetime.datetime.fromtimestamp(now, datetime.timezone.utc)
+    start = (end - datetime.timedelta(days=days - 1)).replace(hour=0, minute=0, second=0, microsecond=0)
+    body = json.dumps({"query": WORKER_REQUESTS_QUERY, "variables": {
+        "account": account, "start": start.strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "end": end.strftime("%Y-%m-%dT%H:%M:%SZ")}}).encode("utf-8")
+    headers = {"Authorization": "Bearer " + token, "Content-Type": "application/json"}
+    reply = (post or get_json)(CF_GRAPHQL, headers, body, "POST")
+    if reply.get("errors"):
+        raise RuntimeError(reply["errors"][0].get("message", "Cloudflare analytics error"))
+    accounts = ((reply.get("data") or {}).get("viewer") or {}).get("accounts") or []
+    rows = accounts[0].get("workersInvocationsAdaptive") or [] if accounts else []
+    by_day, month, errors = defaultdict(lambda: defaultdict(int)), defaultdict(int), defaultdict(int)
+    this_month = end.strftime("%Y-%m")
+    for row in rows:
+        day, script = row["dimensions"]["date"], row["dimensions"]["scriptName"]
+        requests = int(row["sum"]["requests"] or 0)
+        by_day[day][script] += requests
+        if day.startswith(this_month):
+            month[script] += requests
+            errors[script] += int(row["sum"].get("errors") or 0)
+    return {"days": [{"date": day, "scripts": dict(by_day[day])} for day in sorted(by_day)],
+            "month": dict(month), "errors": dict(errors), "through": int(now)}
 
 
 def github(path):
@@ -246,6 +290,9 @@ def build(now, api, admin, mine):
             "/actions/workflows/%s/runs?per_page=100" % f).get("workflow_runs", []))
         runs[file] = found or []
     snapshot["workflows"] = workflow_health(runs, now)
+    token, account = os.environ.get("CLOUDFLARE_ANALYTICS_TOKEN"), os.environ.get("CLOUDFLARE_ACCOUNT_ID")
+    snapshot["requests"] = attempt("Cloudflare analytics", lambda: worker_requests(token, account, now)) \
+        if token and account else None
     pulls = attempt("data pull request", lambda: github(
         "/pulls?state=open&head=%s:data/community-update" % REPO.split("/")[0])) or []
     snapshot["data_pr"] = None if not pulls else {

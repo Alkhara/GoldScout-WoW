@@ -88,6 +88,34 @@ class DownloadsTests(unittest.TestCase):
         self.assertEqual((row["zip"], row["exe"], row["mac"]), (10, 7, 3))
 
 
+class WorkerRequestsTests(unittest.TestCase):
+    def test_daily_counts_per_worker_and_this_month(self):
+        import admin_stats
+        sent = {}
+
+        def post(url, headers, body, method):
+            sent.update(url=url, auth=headers["Authorization"], body=body)
+            row = lambda date, script, n, e=0: {"dimensions": {"date": date, "scriptName": script},  # noqa: E731
+                                                "sum": {"requests": n, "errors": e}}
+            return {"data": {"viewer": {"accounts": [{"workersInvocationsAdaptive": [
+                row("2026-10-31", "goldscout-api", 500), row("2026-11-01", "goldscout-api", 900, 2),
+                row("2026-11-01", "goldscout-wow", 100), row("2026-11-10", "goldscout-api", 300, 1)]}]}}}
+
+        now = 1794297600   # 2026-11-10
+        usage = admin_stats.worker_requests("token", "acct", now, post=post)
+        self.assertEqual(sent["auth"], "Bearer token")
+        self.assertIn(b'"account": "acct"', sent["body"])
+        self.assertEqual([d["date"] for d in usage["days"]], ["2026-10-31", "2026-11-01", "2026-11-10"])
+        self.assertEqual(usage["days"][1]["scripts"], {"goldscout-api": 900, "goldscout-wow": 100})
+        self.assertEqual(usage["month"], {"goldscout-api": 1200, "goldscout-wow": 100})   # November only
+        self.assertEqual(usage["errors"]["goldscout-api"], 3)
+
+    def test_cloudflare_errors_are_reported(self):
+        import admin_stats
+        with self.assertRaises(RuntimeError):
+            admin_stats.worker_requests("t", "a", 0, post=lambda *a: {"errors": [{"message": "not authorized"}]})
+
+
 class StampTests(unittest.TestCase):
     def test_release_builds_report_the_tag(self):
         import stamp_companion
