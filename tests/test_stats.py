@@ -87,6 +87,21 @@ class DownloadsTests(unittest.TestCase):
         self.assertEqual((row["zip"], row["exe"], row["mac"]), (10, 7, 3))
 
 
+class StampTests(unittest.TestCase):
+    def test_release_builds_report_the_tag(self):
+        import stamp_companion
+        text = 'HERE = 1\nVERSION = "0.8.0"  # comment\nOTHER = "VERSION = 1"\n'
+        self.assertEqual(stamp_companion.stamp(text, "v0.8.1"),
+                         'HERE = 1\nVERSION = "0.8.1"  # comment\nOTHER = "VERSION = 1"\n')
+        for bad in ("main", "v0.8", "v0.8.1-beta"):
+            with self.assertRaises(ValueError):
+                stamp_companion.stamp(text, bad)
+        with self.assertRaises(ValueError):
+            stamp_companion.stamp("no version here", "v0.8.1")
+        app = (ROOT / "companion" / "app.py").read_text(encoding="utf-8")
+        self.assertIn('VERSION = "9.9.9"', stamp_companion.stamp(app, "v9.9.9"))
+
+
 class UserAgentTests(unittest.TestCase):
     def test_names_the_system(self):
         sys.path.insert(0, str(ROOT / "companion"))

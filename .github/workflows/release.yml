@@ -70,9 +70,12 @@ jobs:
         with:
           python-version: "3.12"
 
+      # The companion reports the tag's version, even on a weekly data release
+      # that changed no code (otherwise it would keep offering the same update).
       - name: Build the companion
         shell: bash
         run: |
+          python tools/stamp_companion.py "$GITHUB_REF_NAME"
           python -m pip install pyinstaller==6.22.3 pystray==0.19.5 pillow==11.3.0
           python -m unittest discover -s tests
           python companion/build.py
@@ -148,6 +151,7 @@ jobs:
 
       - name: Build the companion
         run: |
+          "$PY" tools/stamp_companion.py "$GITHUB_REF_NAME"
           "$PY" -m pip install pyinstaller==6.22.3
           "$PY" -m unittest discover -s tests
           "$PY" companion/build.py --universal2
