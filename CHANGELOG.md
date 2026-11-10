@@ -7,6 +7,8 @@ releases add their own line automatically.
 
 ## Unreleased
 
+## v0.11.0
+
 - **The Farm list works the moment you install GoldScout:** until you have
   prices of your own, it uses regional estimates (the typical price across
   your region's auction houses, from Blizzard's data) that ship with each
