@@ -6,6 +6,7 @@ replace that install's data.
 """
 import json
 import os
+import sys
 import urllib.error
 import urllib.request
 
@@ -21,6 +22,16 @@ class UploadError(Exception):
         self.status = status
 
 
+# The system named in uploads' User-Agent, so the GoldScout server can count
+# installs per OS (and nothing else about the computer).
+OS_NAME = {"win32": "Windows", "darwin": "macOS"}.get(sys.platform)
+
+
+def user_agent(version):
+    """'GoldScoutCompanion/0.8.0 (macOS)': the companion's version and system."""
+    return "GoldScoutCompanion/%s" % version + (" (%s)" % OS_NAME if OS_NAME else "")
+
+
 def upload_url():
     return os.environ.get("GOLDSCOUT_UPLOAD_URL", UPLOAD_URL).rstrip("/")
 
@@ -34,7 +45,7 @@ def upload(export, token=None, version="dev", timeout=20):
     headers = {
         "Content-Type": "text/plain; charset=utf-8",
         "X-GoldScout-Terms": TERMS_VERSION,
-        "User-Agent": "GoldScoutCompanion/%s" % version,
+        "User-Agent": user_agent(version),
     }
     if token:
         headers["Authorization"] = "Bearer " + token

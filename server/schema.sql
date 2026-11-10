@@ -23,6 +23,14 @@ CREATE TABLE IF NOT EXISTS install_clients (
   updated_at INTEGER NOT NULL
 );
 
+-- Which system an install's companion runs on ("Windows" or "macOS"), from the
+-- User-Agent of companions 0.8.0 and later. Separate for the same reason.
+CREATE TABLE IF NOT EXISTS install_os (
+  install_id TEXT PRIMARY KEY,
+  os TEXT NOT NULL,
+  updated_at INTEGER NOT NULL
+);
+
 CREATE TABLE IF NOT EXISTS registrations (
   ip_hash TEXT NOT NULL,
   created_at INTEGER NOT NULL

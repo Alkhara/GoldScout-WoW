@@ -193,7 +193,9 @@ def downloads(releases):
         out.append({"tag": release.get("tag_name"), "published": parse_time(release["published_at"])
                     if release.get("published_at") else None,
                     "exe": sum(n for name, n in assets.items() if name.lower().endswith(".exe")),
-                    "zip": sum(n for name, n in assets.items() if name.lower().endswith(".zip"))})
+                    "mac": sum(n for name, n in assets.items() if name == "GoldScoutCompanion-macOS.zip"),
+                    "zip": sum(n for name, n in assets.items()
+                               if name.lower().endswith(".zip") and name != "GoldScoutCompanion-macOS.zip")})
     return out
 
 

@@ -150,6 +150,38 @@ class ServerTests(unittest.TestCase):
         self.assertEqual(uploader.upload(export(install, 2), first["token"], "9.8.8")["status"], "stored")
         self.assertEqual(client_of(install), "9.8.8")
 
+    def test_companion_system_is_recorded(self):
+        def listed(install):
+            status, listing = raw("/v1/uploads?since=%d" % (time.time() - 3600),
+                                  headers={"Authorization": "Bearer " + ADMIN})
+            self.assertEqual(status, 200)
+            return next(u for u in listing["uploads"] if u["install_id"] == install)
+
+        def send(install, seq, token, agent):
+            return raw("/v1/uploads", export(install, seq), {
+                "Content-Type": "text/plain; charset=utf-8", "X-GoldScout-Terms": uploader.TERMS_VERSION,
+                "Authorization": "Bearer " + token, "User-Agent": agent}, "POST")
+
+        install = new_install()
+        status, first = register(install)
+        self.assertEqual(status, 201)
+        self.assertIsNone(listed(install)["os"])            # no companion system sent yet
+        token = first["token"]
+        self.assertEqual(send(install, 1, token, "GoldScoutCompanion/0.7.0")[0], 200)
+        self.assertIsNone(listed(install)["os"])            # companions before 0.8.0 send none
+        self.assertEqual(send(install, 1, token, "GoldScoutCompanion/0.8.0 (macOS)")[0], 200)
+        self.assertEqual((listed(install)["client"], listed(install)["os"]), ("0.8.0", "macOS"))
+        self.assertEqual(send(install, 1, token, "GoldScoutCompanion/0.8.0 (Linux)")[0], 200)
+        self.assertEqual((listed(install)["client"], listed(install)["os"]), ("0.8.0", "macOS"))  # unknown: kept
+        self.assertEqual(uploader.upload(export(install, 2), token, "0.8.1")["status"], "stored")
+        self.assertEqual(listed(install)["os"], uploader.OS_NAME)
+
+        status, _, text = fetch("/admin/api/summary", {"Authorization": "Bearer " + ADMIN})
+        self.assertEqual(status, 200)
+        systems = {row["os"]: row for row in json.loads(text)["live"]["systems"]}
+        self.assertGreaterEqual(systems[uploader.OS_NAME]["n"], 1)
+        self.assertGreaterEqual(systems[uploader.OS_NAME]["d7"], 1)
+
     def test_new_installs_are_rate_limited_per_network(self):
         ip = fake_ip()
         statuses = [register(new_install(), ip)[0] for _ in range(7)]

@@ -41,7 +41,9 @@ const HEADER = /^GoldScout-export [234]\^([a-z0-9]{12})\^([1-9][0-9]{0,8})$/;
 const EXTRA_LINE = /^@[imcq]\^[0-9]{1,9}\^[^^]*$/;
 const TERMS_VERSIONS = new Set(["2026-11-07"]);
 const NEW_INSTALLS_PER_IP_PER_DAY = 5;
-const CLIENT_AGENT = /^GoldScoutCompanion\/([0-9A-Za-z.+-]{1,24})$/;
+// "GoldScoutCompanion/0.8.0 (macOS)"; companions before 0.8.0 send no system.
+const CLIENT_AGENT = /^GoldScoutCompanion\/([0-9A-Za-z.+-]{1,24})(?: \(([A-Za-z]{1,16})\))?$/;
+const CLIENT_SYSTEMS = new Set(["Windows", "macOS"]);
 const SOURCE = "Auction data from the Blizzard Entertainment Game Data API. GoldScout is not affiliated with or endorsed by Blizzard.";
 const PRICES_MAX_BYTES = 1900000; // D1 rows hold up to 2 MB
 const PRICE_ENTRY = String.raw`"[0-9]{1,9}":\[[0-9]{1,15},[0-9]{1,9}\]`;
@@ -161,11 +163,27 @@ function clientVersion(request) {
   return match ? match[1] : "other";
 }
 
+// The companion's system from the User-Agent ("Windows" or "macOS"), or null.
+function clientSystem(request) {
+  const match = CLIENT_AGENT.exec(request.headers.get("User-Agent") || "");
+  return match && CLIENT_SYSTEMS.has(match[2]) ? match[2] : null;
+}
+
+// Statements that record the install's companion version, and its system
+// when the companion sent one.
 function recordClient(env, installId, request, now) {
-  return env.DB.prepare(
+  const statements = [env.DB.prepare(
     "INSERT INTO install_clients (install_id, client, updated_at) VALUES (?, ?, ?) " +
     "ON CONFLICT (install_id) DO UPDATE SET client = excluded.client, updated_at = excluded.updated_at",
-  ).bind(installId, clientVersion(request), now);
+  ).bind(installId, clientVersion(request), now)];
+  const system = clientSystem(request);
+  if (system) {
+    statements.push(env.DB.prepare(
+      "INSERT INTO install_os (install_id, os, updated_at) VALUES (?, ?, ?) " +
+      "ON CONFLICT (install_id) DO UPDATE SET os = excluded.os, updated_at = excluded.updated_at",
+    ).bind(installId, system, now));
+  }
+  return statements;
 }
 
 async function receive(request, env) {
@@ -216,7 +234,7 @@ async function receive(request, env) {
       ).bind(installId, await sha256(token), seq, text, request.headers.get("X-GoldScout-Terms"), now, now),
       env.DB.prepare("INSERT INTO registrations (ip_hash, created_at) VALUES (?, ?)").bind(ipHash, now),
       env.DB.prepare("DELETE FROM registrations WHERE created_at < ?").bind(now - 2 * 86400),
-      recordClient(env, installId, request, now),
+      ...recordClient(env, installId, request, now),
     ]);
     return json({ status: "registered", token }, 201);
   }
@@ -226,7 +244,7 @@ async function receive(request, env) {
     return json({ error: "This GoldScout data is registered to another copy of the companion." }, 403);
   }
   if (seq <= row.seq) {
-    await recordClient(env, installId, request, now).run();
+    await env.DB.batch(recordClient(env, installId, request, now));
     return json({ status: "unchanged" });
   }
   if (now - row.updated_at < minSeconds) {
@@ -236,7 +254,7 @@ async function receive(request, env) {
     env.DB.prepare(
       "UPDATE installs SET seq = ?, body = ?, terms = ?, updated_at = ?, uploads = uploads + 1 WHERE install_id = ?",
     ).bind(seq, text, request.headers.get("X-GoldScout-Terms"), now, installId),
-    recordClient(env, installId, request, now),
+    ...recordClient(env, installId, request, now),
   ]);
   return json({ status: "stored" });
 }
@@ -247,9 +265,9 @@ async function list(request, env, url) {
   }
   const since = Number(url.searchParams.get("since") || 0);
   const { results } = await env.DB.prepare(
-    "SELECT install_id, seq, body, terms, created_at, uploads, installs.updated_at AS updated_at, client " +
-    "FROM installs " +
-    "LEFT JOIN install_clients USING (install_id) WHERE installs.updated_at > ? ORDER BY installs.updated_at",
+    "SELECT install_id, seq, body, terms, created_at, uploads, installs.updated_at AS updated_at, client, os " +
+    "FROM installs LEFT JOIN install_clients USING (install_id) LEFT JOIN install_os USING (install_id) " +
+    "WHERE installs.updated_at > ? ORDER BY installs.updated_at",
   ).bind(since).all();
   return json({ uploads: results });
 }

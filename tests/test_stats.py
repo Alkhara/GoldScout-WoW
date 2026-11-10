@@ -56,23 +56,46 @@ class StatsTests(unittest.TestCase):
         body = ("GoldScout-export 4^aaaaaaaaaaaa^3\n"
                 "3809^20^2^21^22^1440^0.5400^0.5400^20^Ashenvale Bear^3730:8:8,3702:4:4^1205:1:1\n"
                 "4054^10^0^24^25^1440^0.5800^0.5500^10^Laughing Sister^3730:2:2^\n")
-        rows = [dict(install("aaaaaaaaaaaa", 2, 0.1, uploads=4), body=body, client="0.7.0"),
+        rows = [dict(install("aaaaaaaaaaaa", 2, 0.1, uploads=4), body=body, client="0.8.0", os="macOS"),
                 dict(install("me0000000000", 9, 1, uploads=20), body="not an export", client=None)]
         players = stats.player_rows(rows, {"me0000000000"})
         self.assertEqual([p["you"] for p in players], [False, True])     # most kills first
         top = players[0]
         self.assertEqual((top["mobs"], top["kills"], top["picks"], top["drops"]), (2, 30, 2, 15))
-        self.assertEqual((top["client"], top["uploads"]), ("0.7.0", 4))
-        self.assertEqual(players[1]["client"], "unknown")
+        self.assertEqual((top["client"], top["os"], top["uploads"]), ("0.8.0", "macOS", 4))
+        self.assertEqual((players[1]["client"], players[1]["os"]), ("unknown", "not sent"))
         self.assertIsNone(players[1]["kills"])
         self.assertEqual(len(top["tag"]), 5)
         self.assertNotIn(top["tag"], "aaaaaaaaaaaa")                    # a hash, not the ID itself
 
         lines = stats.player_table(players, NOW, limit=1)
-        self.assertIn("0.7.0", lines[1])
+        self.assertIn("0.8.0", lines[1])
+        self.assertIn("macOS", lines[1])
         self.assertIn("2 h ago", lines[1])
         self.assertTrue(any("1 more" in line for line in lines))
         self.assertNotIn("aaaaaaaaaaaa", "\n".join(lines))
+
+
+class DownloadsTests(unittest.TestCase):
+    def test_mac_app_isnt_counted_as_the_addon(self):
+        import admin_stats
+        release = {"tag_name": "v0.8.0", "published_at": "2026-11-20T12:00:00Z", "assets": [
+            {"name": "GoldScout-v0.8.0.zip", "download_count": 10},
+            {"name": "GoldScoutCompanion.exe", "download_count": 7},
+            {"name": "GoldScoutCompanion-macOS.zip", "download_count": 3}]}
+        [row] = admin_stats.downloads([release])
+        self.assertEqual((row["zip"], row["exe"], row["mac"]), (10, 7, 3))
+
+
+class UserAgentTests(unittest.TestCase):
+    def test_names_the_system(self):
+        sys.path.insert(0, str(ROOT / "companion"))
+        import uploader
+        from unittest import mock
+        with mock.patch.object(uploader, "OS_NAME", "macOS"):
+            self.assertEqual(uploader.user_agent("0.8.0"), "GoldScoutCompanion/0.8.0 (macOS)")
+        with mock.patch.object(uploader, "OS_NAME", None):
+            self.assertEqual(uploader.user_agent("0.8.0"), "GoldScoutCompanion/0.8.0")
 
 
 if __name__ == "__main__":

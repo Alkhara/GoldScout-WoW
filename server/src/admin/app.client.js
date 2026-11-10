@@ -206,7 +206,13 @@
     if (unknown > 0) { clients.push(["not reported yet", unknown]); }
     var exports = Object.keys((snap && snap.export_versions) || {}).map(function (k) {
       return ["v" + k, snap.export_versions[k]]; });
+    var systems = (live.systems || []).map(function (s) {
+      return [s.os || "before 0.8.0", s.n, s.d7]; });
     return section("versions", "Versions", null, [el("div", { cls: "grid" }, [
+      card("Companion system", "From each install's latest upload. Companions before 0.8.0 don't send it " +
+        "(they were Windows only). Bars split installs that shared in the last 7 days from the rest. " +
+        "Price-only users aren't counted.",
+        [splitBars(systems.map(function (s) { return [s[0], s[2], s[1] - s[2]]; }), "Shared in 7 days", "Earlier")]),
       card("Companion version (latest upload)", "Recorded since Nov 10, 2026; an install shows its version " +
         "after its next upload. Price-only companion users don't upload, so they aren't counted here.",
         [simpleBars(clients)]),
@@ -218,19 +224,22 @@
     var downloads = (snap && snap.downloads) || [];
     var exeTotal = downloads.reduce(function (s, d) { return s + d.exe; }, 0);
     var zipTotal = downloads.reduce(function (s, d) { return s + d.zip; }, 0);
+    var macTotal = downloads.reduce(function (s, d) { return s + (d.mac || 0); }, 0);
     var form = (snap && snap.form) || null;
     return section("reach", "Downloads and sharing", "GitHub release downloads (CurseForge and Wago keep their own counts)", [
       tiles([
-        ["Companion downloads", num(exeTotal), "last 10 releases, GitHub"],
+        ["Companion downloads", num(exeTotal + macTotal), num(exeTotal) + " Windows, " + num(macTotal) + " Mac; last 10 releases"],
         ["Addon zip downloads", num(zipTotal), "GitHub only"],
-        ["Companion installs", num(live.installs), exeTotal ? pct(live.installs, exeTotal) + " of companion downloads" : ""],
+        ["Companion installs", num(live.installs), exeTotal + macTotal ? pct(live.installs, exeTotal + macTotal) +
+          " of companion downloads" : ""],
         ["Sharing this week", num(live.d7), live.installs ? pct(live.d7, live.installs) + " of installs" : ""],
         ["Share form", form ? num(form.total) : "?", form ? num(form.people) + " people, " + num(form.open) + " open" : ""],
       ]),
       el("div", { cls: "grid" }, [
         card("Downloads per release", null, [table([
           ["Release", "tag"], ["Published", function (d) { return date(d.published); }],
-          ["Companion", "exe", "num"], ["Addon zip", "zip", "num"]], downloads)]),
+          ["Windows", "exe", "num"], ["Mac", function (d) { return num(d.mac || 0); }, "num"],
+          ["Addon zip", "zip", "num"]], downloads)]),
         card("Links", null, [el("ul", {}, [
           el("li", {}, [el("a", { href: "https://www.curseforge.com/", text: "CurseForge author dashboard" })]),
           el("li", {}, [el("a", { href: "https://addons.wago.io/", text: "Wago addons dashboard" })]),
@@ -247,7 +256,7 @@
     var now = snap ? snap.generated : 0;
     var columns = [
         ["Player", function (p) { return p.tag + (p.you ? " *" : ""); }],
-        ["Companion", "client"], ["Uploads", "uploads", "num"],
+        ["Companion", "client"], ["System", function (p) { return p.os || "not sent"; }], ["Uploads", "uploads", "num"],
         ["First seen", function (p) { return date(p.created); }],
         ["Last upload", function (p) { return ago(now - p.updated); }],
         ["Mobs", function (p) { return num(p.mobs); }, "num"], ["Kills", function (p) { return num(p.kills); }, "num"],

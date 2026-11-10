@@ -148,12 +148,13 @@ def export_totals(body):
 
 def player_rows(rows, mine):
     """One row per install, most kills first: rows from the server with
-    install_id, created_at, updated_at, uploads, body and client."""
+    install_id, created_at, updated_at, uploads, body, client and os."""
     players = []
     for r in rows:
         mobs, kills, picks, drops = export_totals(r.get("body"))
         players.append({"tag": player_tag(r["install_id"]), "you": r["install_id"] in mine,
-                        "client": r.get("client") or "unknown", "uploads": r["uploads"],
+                        "client": r.get("client") or "unknown", "os": r.get("os") or "not sent",
+                        "uploads": r["uploads"],
                         "created": r["created_at"], "updated": r["updated_at"],
                         "mobs": mobs, "kills": kills, "picks": picks, "drops": drops})
     return sorted(players, key=lambda p: (-(p["kills"] or 0), p["tag"]))
@@ -171,16 +172,16 @@ def player_table(players, now, limit):
     def num(value):
         return "?" if value is None else "{:,}".format(value)
 
-    lines = ["  %-7s %-10s %7s  %-12s %-14s %5s %7s %6s %7s" % (
-        "player", "companion", "uploads", "first seen", "last upload", "mobs", "kills", "picks", "drops")]
+    lines = ["  %-7s %-10s %-8s %7s  %-12s %-14s %5s %7s %6s %7s" % (
+        "player", "companion", "system", "uploads", "first seen", "last upload", "mobs", "kills", "picks", "drops")]
     for p in players[:limit]:
         first = datetime.datetime.fromtimestamp(p["created"], datetime.timezone.utc).strftime("%b %d")
-        lines.append("  %-7s %-10s %7d  %-12s %-14s %5s %7s %6s %7s" % (
-            p["tag"] + ("*" if p["you"] else ""), p["client"][:10], p["uploads"], first,
+        lines.append("  %-7s %-10s %-8s %7d  %-12s %-14s %5s %7s %6s %7s" % (
+            p["tag"] + ("*" if p["you"] else ""), p["client"][:10], p.get("os", "not sent")[:8], p["uploads"], first,
             ago(now - p["updated"]), num(p["mobs"]), num(p["kills"]), num(p["picks"]), num(p["drops"])))
     if len(players) > limit:
         lines.append("  ... and %d more (--players %d shows them)" % (len(players) - limit, len(players)))
-    lines.append("  * yours. Totals are each install's newest export; companion version is from its latest upload.")
+    lines.append("  * yours. Totals are each install's newest export; companion version and system are from its latest upload.")
     return lines
 
 
@@ -226,10 +227,14 @@ def main():
         columns = "install_id, created_at, installs.updated_at AS updated_at, uploads, body, " \
                   "substr(body, 18, 1) AS version"
         try:
-            rows = wrangler_sql("SELECT %s, client FROM installs LEFT JOIN install_clients USING (install_id)"
-                                % columns)
-        except RuntimeError:   # a server from before companion versions were recorded
-            rows = wrangler_sql("SELECT %s FROM installs" % columns)
+            rows = wrangler_sql("SELECT %s, client, os FROM installs LEFT JOIN install_clients USING (install_id) "
+                                "LEFT JOIN install_os USING (install_id)" % columns)
+        except RuntimeError:   # a server from before companion systems were recorded
+            try:
+                rows = wrangler_sql("SELECT %s, client FROM installs LEFT JOIN install_clients USING (install_id)"
+                                    % columns)
+            except RuntimeError:   # or before companion versions were
+                rows = wrangler_sql("SELECT %s FROM installs" % columns)
         s = summarize_installs(rows, now, mine, args.days)
         print("  installs           %d  (%d yours, %d other players)" % (s["installs"], s["mine"], s["others"]))
         print("  new players        %d in 24 h, %d in 7 days" % (s["new_24h"], s["new_7d"]))
@@ -243,10 +248,13 @@ def main():
             print("    %s %3d %s" % (day, n, bar(n, peak)))
         if args.players > 0:
             players = player_rows(rows, mine)
-            clients = {}
+            clients, systems = {}, {}
             for p in players:
                 clients[p["client"]] = clients.get(p["client"], 0) + 1
+                systems[p["os"]] = systems.get(p["os"], 0) + 1
             print("  companion versions %s" % ", ".join("%s: %d" % item for item in sorted(clients.items())))
+            print("  companion systems  %s  (\"not sent\": companions before 0.8.0, Windows only)"
+                  % ", ".join("%s: %d" % item for item in sorted(systems.items())))
             print("\nPlayers (companion installs)")
             print("\n".join(player_table(players, now, args.players)))
     except Exception as error:
