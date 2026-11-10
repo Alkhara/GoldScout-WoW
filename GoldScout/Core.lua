@@ -388,7 +388,10 @@ if geterrorhandler and seterrorhandler then
   local previous = geterrorhandler()
   seterrorhandler(function(message, ...)
     pcall(function()
-      local stack = debugstack and debugstack(3, 12, 0) or ""
+      -- Level 4 is the code that failed: 1 is this function, 2 pcall, 3 this
+      -- handler. Starting any higher puts the handler itself in every stack,
+      -- so every addon's errors looked like GoldScout's.
+      local stack = debugstack and debugstack(4, 12, 0) or ""
       if MentionsGoldScout(tostring(message)) or MentionsGoldScout(stack) then
         ns.RecordError(message, stack)
       end

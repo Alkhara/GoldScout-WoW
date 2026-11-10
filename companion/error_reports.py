@@ -24,6 +24,10 @@ ADDON_PATH = re.compile(r"(?:[A-Za-z]:/|/)[^\n\"']*?Interface/AddOns/")
 DRIVE_PATH = re.compile(r"[A-Za-z]:/(?:[^/:\n]+/)*")
 HOME_PATH = re.compile(r"/(?:Users|home)/[^/\n]+/")
 FRAME = re.compile(r"AddOns/(GoldScout[^\"'\]:\n]*)[\"'\]]*:(\d+):?\s*(.*)")
+ADDON_VERSION = re.compile(r"^v?(\d+)\.(\d+)\.(\d+)")
+# Before v0.11.1 every saved stack started with GoldScout's own error handler
+# (Core.lua), so other addons' errors were saved as if they were GoldScout's.
+HANDLER_FIXED = (0, 11, 1)
 
 
 class ReportError(Exception):
@@ -56,6 +60,12 @@ def clean_stack(text):
     return "\n".join(lines)
 
 
+def handler_first(version):
+    """True if an addon of this version saved its error handler as each stack's first line."""
+    match = ADDON_VERSION.match(version)
+    return bool(match) and tuple(int(part) for part in match.groups()) < HANDLER_FIXED
+
+
 def clean(entry):
     """One saved error as it's sent: {"m", "s", "n", "v"}, or None if there's nothing to send."""
     if not isinstance(entry, dict):
@@ -64,8 +74,13 @@ def clean(entry):
     if not message:
         return None
     count = entry.get("n") if isinstance(entry.get("n"), int) and entry.get("n") > 0 else 1
-    report = {"m": message, "s": clean_stack(entry.get("s")), "n": min(count, 1000000)}
+    stack = clean_stack(entry.get("s"))
     version = str(entry.get("v") or "")
+    if handler_first(version) and stack.startswith("GoldScout/Core.lua:"):
+        stack = stack.partition("\n")[2]
+        if not stack and "GoldScout/" not in message:
+            return None                      # another addon's error, caught by GoldScout's handler
+    report = {"m": message, "s": stack, "n": min(count, 1000000)}
     if VERSION_RE.match(version):
         report["v"] = version
     return report

@@ -270,6 +270,25 @@ class ErrorLogTests(FarmRulesTests.__bases__[0]):
         self.assertEqual(errors[1].n, 2)
         self.assertIn("attempt to index nil", errors[1].m)
 
+    def test_other_addons_errors_are_not_recorded_because_goldscout_caught_them(self):
+        # Real stacks: Core.lua's handler is on the stack whenever it runs, so
+        # only the frames below it may decide whose error it is.
+        self.lua.execute("FAKE.stack = nil; debugstack = function(start) return debug.traceback('', start + 1) end")
+        source = (ROOT / "GoldScout" / "Core.lua").read_text(encoding="utf-8")
+        self.lua.execute("return loadstring(...)", source, "@Interface/AddOns/GoldScout/Core.lua")("GoldScout", self.ns)
+        handler = self.fake.errorhandler
+
+        def fail_in(path, message):
+            code = "local handler, message = ...; handler(message)"
+            self.lua.execute("return loadstring(...)", code, "@Interface/AddOns/" + path)(handler, message)
+
+        fail_in("Questie/Modules/Auras.lua", "GetAuraDataByIndex(): Auras cannot be accessed when secret")
+        self.assertEqual(len(self.ns.db.errors), 0)
+        fail_in("GoldScout/UI.lua", "attempt to call a nil value")     # the message alone doesn't name GoldScout
+        self.assertEqual(len(self.ns.db.errors), 1)
+        self.assertIn("GoldScout/UI.lua", self.ns.db.errors[1].s)
+        self.assertNotIn("GoldScout/Core.lua", self.ns.db.errors[1].s)
+
     def test_auction_house_scans_are_manual_after_the_settings_upgrade(self):
         self.assertFalse(self.ns.db.settings.autoScan)                # new players
         self.assertEqual(self.ns.db.schema, self.ns.SCHEMA)

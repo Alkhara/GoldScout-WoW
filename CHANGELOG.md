@@ -7,6 +7,8 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- GoldScout's error log no longer keeps other addons' errors as its own.
+
 ## v0.11.0
 
 - **The Farm list works the moment you install GoldScout:** until you have
