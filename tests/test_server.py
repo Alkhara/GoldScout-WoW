@@ -173,14 +173,14 @@ class ServerTests(unittest.TestCase):
         self.assertEqual((listed(install)["client"], listed(install)["os"]), ("0.8.0", "macOS"))
         self.assertEqual(send(install, 1, token, "GoldScoutCompanion/0.8.0 (Linux)")[0], 200)
         self.assertEqual((listed(install)["client"], listed(install)["os"]), ("0.8.0", "macOS"))  # unknown: kept
-        self.assertEqual(uploader.upload(export(install, 2), token, "0.8.1")["status"], "stored")
-        self.assertEqual(listed(install)["os"], uploader.OS_NAME)
+        self.assertEqual(send(install, 2, token, "GoldScoutCompanion/0.8.1 (Windows)")[0], 200)
+        self.assertEqual((listed(install)["client"], listed(install)["os"]), ("0.8.1", "Windows"))
 
         status, _, text = fetch("/admin/api/summary", {"Authorization": "Bearer " + ADMIN})
         self.assertEqual(status, 200)
         systems = {row["os"]: row for row in json.loads(text)["live"]["systems"]}
-        self.assertGreaterEqual(systems[uploader.OS_NAME]["n"], 1)
-        self.assertGreaterEqual(systems[uploader.OS_NAME]["d7"], 1)
+        self.assertGreaterEqual(systems["Windows"]["n"], 1)
+        self.assertGreaterEqual(systems["Windows"]["d7"], 1)
 
     def test_new_installs_are_rate_limited_per_network(self):
         ip = fake_ip()
