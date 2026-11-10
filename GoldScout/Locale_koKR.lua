@@ -278,5 +278,7 @@ ns.AddLocale("koKR", {
   ["good"] = "좋음",
   ["fair"] = "보통",
   ["low"] = "낮음",
+  ["Your saved GoldScout data is from a newer version of GoldScout. Update GoldScout so nothing is lost."] = "저장된 GoldScout 데이터가 더 새로운 GoldScout 버전에서 만들어졌습니다. 데이터를 잃지 않도록 GoldScout를 업데이트하세요.",
+  ["Couldn't finish updating your saved GoldScout data; it will try again next login. /gscout errors shows why."] = "저장된 GoldScout 데이터 업데이트를 끝내지 못했습니다. 다음 접속 때 다시 시도합니다. /gscout errors에서 이유를 볼 수 있습니다.",
   ["%s %s"] = "%s %s",
 })

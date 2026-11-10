@@ -413,10 +413,58 @@ end
 ns.On("ADDON_ACTION_BLOCKED", OnBlocked)
 ns.On("ADDON_ACTION_FORBIDDEN", OnBlocked)
 
+-- Saved data versions. GoldScoutDB.schema (and each character's
+-- GoldScoutCharDB.schema) says which shape the saved data is in. At login,
+-- each step below upgrades it by one version, in order, once. Rules:
+--   * add a step, never edit or remove an old one;
+--   * a step must be safe to run twice (a step that errors stops the upgrade,
+--     the error is logged, and the same step runs again at the next login);
+--   * new saved data starts at the current version and runs no steps;
+--   * data from a newer GoldScout (the addon was downgraded) is left alone.
+-- Tests: tests/test_engine_lua.py SavedDataTests.
+ns.SCHEMA = 2
+ns.UPGRADES = {
+  [2] = function(db)
+    db.settings = db.settings or {}
+    db.settings.autoScan = false -- scans became manual: opening the AH to buy something shouldn't start one
+  end,
+}
+ns.CHAR_SCHEMA = 1
+ns.CHAR_UPGRADES = {}
+
+-- Brings one saved table up to `current` with `upgrades`. Returns "fresh",
+-- "current", "upgraded", "newer" (left alone) or "failed" (stopped at a step).
+function ns.UpgradeSavedData(store, current, upgrades, fresh)
+  -- Before schema existed, GoldScoutDB.settingsVersion played its part (1 or 2).
+  local version = store.schema or store.settingsVersion or 1
+  store.settingsVersion = nil
+  if fresh then
+    store.schema = current
+    return "fresh"
+  end
+  if version > current then
+    store.schema = version
+    return "newer"
+  end
+  local result = version == current and "current" or "upgraded"
+  for step = version + 1, current do
+    local ok, problem = pcall(upgrades[step] or function() end, store)
+    if not ok then
+      store.schema = step - 1
+      ns.RecordError(("Saved data upgrade to version %d failed: %s"):format(step, tostring(problem)), "")
+      return "failed"
+    end
+    store.schema = step
+  end
+  store.schema = current
+  return result
+end
+
 ns.On("ADDON_LOADED", function(name)
   if name ~= ADDON_NAME then
     return
   end
+  local freshDB, freshCharDB = GoldScoutDB == nil, GoldScoutCharDB == nil
   GoldScoutDB = GoldScoutDB or {}
   GoldScoutCharDB = GoldScoutCharDB or {}
   local db, cdb = GoldScoutDB, GoldScoutCharDB
@@ -431,30 +479,36 @@ ns.On("ADDON_LOADED", function(name)
   db.names.maps = db.names.maps or {}
   db.names.meta = db.names.meta or {}
   db.errors = db.errors or {} -- GoldScout's own errors and blocked actions, for /gscout errors
-  for _, pending in ipairs(ns.pendingErrors or {}) do
-    ns.RecordError(pending[1], pending[2])
-  end
-  ns.pendingErrors = nil
   db.settings = db.settings or {}
   for key, value in pairs(DEFAULT_SETTINGS) do
     if db.settings[key] == nil then
       db.settings[key] = value
     end
   end
-  -- One-time changes to saved settings when a default changes for everyone.
-  db.settingsVersion = db.settingsVersion or 1
-  if db.settingsVersion < 2 then
-    db.settings.autoScan = false -- scans became manual: opening the AH to buy something shouldn't start one
-    db.settingsVersion = 2
-  end
+  ns.savedData = ns.UpgradeSavedData(db, ns.SCHEMA, ns.UPGRADES, freshDB)
 
   cdb.recipes = cdb.recipes or {}
   cdb.skills = cdb.skills or {}
+  local charResult = ns.UpgradeSavedData(cdb, ns.CHAR_SCHEMA, ns.CHAR_UPGRADES, freshCharDB)
+  if charResult == "newer" or charResult == "failed" then
+    ns.savedData = charResult
+  end
 
   ns.db, ns.cdb = db, cdb
+  -- Errors from before the saved data was ready (loading, an upgrade step).
+  local pending = ns.pendingErrors or {}
+  ns.pendingErrors = nil
+  for _, entry in ipairs(pending) do
+    ns.RecordError(entry[1], entry[2])
+  end
   ns.Fire("DB_READY")
 end)
 
 ns.On("PLAYER_LOGIN", function()
+  if ns.savedData == "newer" then
+    ns.Print(L["Your saved GoldScout data is from a newer version of GoldScout. Update GoldScout so nothing is lost."])
+  elseif ns.savedData == "failed" then
+    ns.Print(L["Couldn't finish updating your saved GoldScout data; it will try again next login. /gscout errors shows why."])
+  end
   ns.Fire("LOGIN")
 end)

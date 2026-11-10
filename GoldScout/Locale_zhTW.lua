@@ -278,5 +278,7 @@ ns.AddLocale("zhTW", {
   ["good"] = "良好",
   ["fair"] = "普通",
   ["low"] = "低",
+  ["Your saved GoldScout data is from a newer version of GoldScout. Update GoldScout so nothing is lost."] = "你儲存的 GoldScout 資料來自較新版本的 GoldScout。請更新 GoldScout，以免遺失資料。",
+  ["Couldn't finish updating your saved GoldScout data; it will try again next login. /gscout errors shows why."] = "無法完成更新你儲存的 GoldScout 資料；下次登入時會再試一次。/gscout errors 會顯示原因。",
   ["%s %s"] = "%s%s",
 })

@@ -272,7 +272,7 @@ class ErrorLogTests(FarmRulesTests.__bases__[0]):
 
     def test_auction_house_scans_are_manual_after_the_settings_upgrade(self):
         self.assertFalse(self.ns.db.settings.autoScan)                # new players
-        self.assertEqual(self.ns.db.settingsVersion, 2)
+        self.assertEqual(self.ns.db.schema, self.ns.SCHEMA)
         self.assertTrue(self.ns.db.settings.minimap)
         saved = self.lua.eval("{ settings = { autoScan = true, killsPerHour = 90 } }")   # an existing player
         self.lua.globals().GoldScoutDB = saved
@@ -282,6 +282,48 @@ class ErrorLogTests(FarmRulesTests.__bases__[0]):
         saved.settings.autoScan = True                                 # turned back on by choice...
         self.fake.frame.scripts["OnEvent"](None, "ADDON_LOADED", "GoldScout")
         self.assertTrue(saved.settings.autoScan)                       # ...stays on
+
+    # -- Saved data versions (Core.lua ns.UpgradeSavedData) ----------------------
+    def load_saved(self, saved, char=None):
+        self.lua.globals().GoldScoutDB = saved
+        self.lua.globals().GoldScoutCharDB = char
+        self.fake.frame.scripts["OnEvent"](None, "ADDON_LOADED", "GoldScout")
+        return self.lua.globals().GoldScoutDB
+
+    def test_new_saved_data_starts_current(self):
+        db = self.load_saved(None)
+        self.assertEqual((db.schema, self.ns.savedData), (self.ns.SCHEMA, "fresh"))
+        self.assertEqual(self.lua.globals().GoldScoutCharDB.schema, self.ns.CHAR_SCHEMA)
+
+    def test_data_from_before_schemas_is_upgraded_once(self):
+        db = self.load_saved(self.lua.eval("{ settingsVersion = 2, settings = { autoScan = true } }"))
+        self.assertEqual((db.schema, db.settingsVersion), (2, None))   # the old marker is replaced
+        self.assertTrue(db.settings.autoScan)                          # version 2's step already ran once
+        self.assertEqual(self.ns.savedData, "current")
+
+    def test_newer_saved_data_is_left_alone(self):
+        db = self.load_saved(self.lua.eval("{ schema = 99, settings = {}, futureThing = { kept = true } }"))
+        self.assertEqual((db.schema, self.ns.savedData), (99, "newer"))
+        self.assertTrue(db.futureThing.kept)
+
+    def test_a_failing_step_stops_and_is_retried(self):
+        upgrade = self.ns.UpgradeSavedData
+        steps = self.lua.eval("""{
+          [2] = function(db) db.two = (db.two or 0) + 1 end,
+          [3] = function(db) if not db.ready then error("not yet") end db.three = true end,
+        }""")
+        store = self.lua.eval("{ schema = 1 }")
+        self.assertEqual(upgrade(store, 3, steps, False), "failed")
+        self.assertEqual((store.schema, store.two, store.three), (2, 1, None))
+        self.assertTrue(any("version 3 failed" in entry.m for entry in self.ns.db.errors.values()))
+        store.ready = True
+        self.assertEqual(upgrade(store, 3, steps, False), "upgraded")   # next login: only step 3 runs again
+        self.assertEqual((store.schema, store.two, store.three), (3, 1, True))
+        self.assertEqual(upgrade(store, 3, steps, False), "current")
+
+    def test_every_version_has_a_step(self):
+        for version in range(2, self.ns.SCHEMA + 1):
+            self.assertIsNotNone(self.ns.UPGRADES[version], version)
 
     def test_blocked_actions_are_recorded(self):
         self.fake.frame.scripts["OnEvent"](None, "ADDON_ACTION_BLOCKED", "GoldScout", "HideUIPanel()")

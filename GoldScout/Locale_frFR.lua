@@ -277,5 +277,7 @@ ns.AddLocale("frFR", {
   ["good"] = "bonne",
   ["fair"] = "moyenne",
   ["low"] = "faible",
+  ["Your saved GoldScout data is from a newer version of GoldScout. Update GoldScout so nothing is lost."] = "Vos données GoldScout enregistrées viennent d'une version plus récente de GoldScout. Mettez GoldScout à jour pour ne rien perdre.",
+  ["Couldn't finish updating your saved GoldScout data; it will try again next login. /gscout errors shows why."] = "La mise à jour de vos données GoldScout enregistrées n'a pas pu se terminer ; nouvel essai à la prochaine connexion. /gscout errors indique pourquoi.",
   ["%s %s"] = "%s %s",
 })
