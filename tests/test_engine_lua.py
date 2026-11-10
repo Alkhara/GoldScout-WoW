@@ -199,6 +199,21 @@ class FarmRulesTests(unittest.TestCase):
         self.assertAlmostEqual(row.each, 10000 * 0.95 * 4 / 12)   # drops / (kills + 2)
         self.assertNotIn(("Market", 3730), self.rows())             # covered, no duplicate
 
+    def test_hunting_an_item_marks_every_mob_dropping_it_in_the_zone(self):
+        self.item(2673, price=30000, ilvl=12, name="Coyote Meat")
+        self.drops(833, kills=40, items={2673: 16}, name="Coyote Packleader", levels=(11, 12))
+        self.drops(1109, kills=40, items={2673: 12}, name="Coyote", levels=(10, 11))
+        self.drops(1110, kills=40, items={2673: 12}, name="Far Coyote", levels=(10, 11))
+        self.ns.db.drops[1110].m = 1411                          # another zone: not marked
+        farms = self.ns.Engine.Farms(self.ns.Engine)
+        hunts = {row.source: row.hunt for row in farms.values() if row.item == 2673}
+        best = hunts["Coyote Packleader"]
+        self.assertEqual(sorted(best.npcs.keys()), [833, 1109])
+        self.assertEqual(best.label, "Coyote Packleader, Coyote")
+        self.assertEqual(best.key, "Learned:833:2673")          # its own key: hunt history stays per farm
+        self.assertEqual(sorted(hunts["Coyote"].npcs.keys()), [833, 1109])
+        self.assertEqual(sorted(hunts["Far Coyote"].npcs.keys()), [1110])
+
     def test_learned_leaves_out_junk(self):
         self.item(4001, ilvl=22, quality=0)                        # gray
         self.item(4002, ilvl=22, class_=0, reagent=False, spell=True)  # food/scroll

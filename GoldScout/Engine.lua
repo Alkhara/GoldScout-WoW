@@ -331,6 +331,70 @@ local function MobHunt(key, per, itemID, chance, mob, zone, npcID, spots)
   }
 end
 
+-- A hunt marks every mob on the Farm list that drops the same item in the same
+-- zone (Coyote and Coyote Packleader both drop Coyote Meat), not
+-- only the row's own mob. Each row keeps its own key, and its own spots first
+-- so the waypoint still leads to that mob.
+local UNKNOWN_ZONE = "where players loot it"
+
+local function ShareHunts(rows)
+  local places = {}
+  for _, row in ipairs(rows) do
+    local hunt = row.hunt
+    -- Same zone: the map of the mob's first known spot, else the zone's name.
+    local map = hunt and hunt.spots and hunt.spots[1] and hunt.spots[1][1]
+    local zone = map or (hunt and hunt.zone ~= UNKNOWN_ZONE and hunt.zone)
+    if hunt and hunt.per == "kill" and hunt.npcs and next(hunt.npcs) and zone then
+      local place = hunt.item .. "|" .. tostring(zone)
+      places[place] = places[place] or {}
+      table.insert(places[place], row)
+    end
+  end
+  for _, list in pairs(places) do
+    if #list > 1 then
+      local npcs, own = {}, {}
+      for i, row in ipairs(list) do
+        own[i] = row.hunt   -- the rows' own hunts, before any is replaced
+        for npcID in pairs(row.hunt.npcs) do
+          npcs[npcID] = true
+        end
+      end
+      for i, row in ipairs(list) do
+        -- This row's mobs first in the label, then the others.
+        local names, seen = {}, {}
+        local function AddNames(label)
+          for name in ((label or "") .. ", "):gmatch("(.-), ") do
+            if name ~= "" and not seen[name] then
+              seen[name] = true
+              names[#names + 1] = name
+            end
+          end
+        end
+        AddNames(own[i].label)
+        for j = 1, #list do
+          AddNames(own[j].label)
+        end
+        local shared = {}
+        for field, value in pairs(own[i]) do
+          shared[field] = value
+        end
+        local spots = {}
+        for j = 0, #list do
+          local hunt = own[j == 0 and i or j]
+          if j == 0 or j ~= i then
+            for _, spot in ipairs(hunt.spots or {}) do
+              spots[#spots + 1] = spot
+            end
+          end
+        end
+        shared.npcs, shared.label = npcs, table.concat(names, ", ")
+        shared.spots = (#spots > 0) and spots or nil
+        row.hunt = shared
+      end
+    end
+  end
+end
+
 -- Gathering and cloth hunts have no single mob or spot; they just track loot.
 local function LootHunt(key, per, itemID, label, zone)
   return { key = key, kind = "Loot", per = per, item = itemID, label = label, zone = zone, npcs = {} }
@@ -736,6 +800,8 @@ function Engine:Farms()
       end
     end
   end
+
+  ShareHunts(rows)
 
   -- Mark (and optionally hide) farms by whether their mobs still give experience.
   local shown = {}
