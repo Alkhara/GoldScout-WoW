@@ -13,7 +13,8 @@
 //                      upload lists the companion version it last came from.
 //   PUT  /v1/admin/stats   admin only; the dashboard statistics from
 //                      tools/admin_stats.py.
-//   GET  /admin, /admin/api/summary   the admin dashboard (src/admin.js),
+//   GET  /admin, /admin/api/summary, POST /admin/api/errors/dismiss   the
+//                      admin dashboard (src/admin.js),
 //                      behind Cloudflare Access.
 //   GET  /v1/prices    auction houses with prices: id, ruleset, faction,
 //                      snapshot time, item count. Public.

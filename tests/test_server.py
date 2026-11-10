@@ -209,6 +209,27 @@ class ServerTests(unittest.TestCase):
         row = next(e for e in live["errors"] if e["message"] == message)
         self.assertEqual((row["players"], row["occurrences"], row["reports"]), (2, 5, 2))
         self.assertGreaterEqual(live["errors24"]["players"], 2)
+        # Dismissed on the dashboard: gone, and later reports of it are ignored.
+        def dismiss(body, headers=None):
+            headers = dict({"Authorization": "Bearer " + ADMIN, "Content-Type": "application/json"}, **(headers or {}))
+            request = urllib.request.Request(SERVER + "/admin/api/errors/dismiss", data=body.encode(),
+                                             headers=headers, method="POST")
+            try:
+                with urllib.request.urlopen(request, timeout=10) as response:
+                    return response.status
+            except urllib.error.HTTPError as error:
+                return error.code
+
+        fingerprint = row["fingerprint"]
+        self.assertEqual(dismiss(json.dumps({"fingerprint": fingerprint}), {"Authorization": "Bearer wrong"}), 403)
+        self.assertEqual(dismiss(json.dumps({"fingerprint": fingerprint}), {"Origin": "https://evil.example"}), 403)
+        self.assertEqual(dismiss(json.dumps({"fingerprint": fingerprint}), {"Content-Type": "text/plain"}), 403)
+        self.assertEqual(dismiss(json.dumps({"fingerprint": "nope"})), 400)
+        self.assertEqual(dismiss(json.dumps({"fingerprint": fingerprint})), 200)
+        third = "".join("0123456789abcdef"[ord(c) % 16] for c in (new_install() + "9999")[:16])
+        self.assertEqual(report(third, [error])[0], 200)
+        status, _, text = fetch("/admin/api/summary", {"Authorization": "Bearer " + ADMIN})
+        self.assertFalse(any(e["message"] == message for e in json.loads(text)["live"]["errors"]))
         for bad in ({"reporter": "nope", "errors": [error]}, {"reporter": first, "errors": []},
                     {"reporter": first, "errors": [dict(error, n=0)]}, {"reporter": first, "errors": [{"m": 5}]}):
             with self.subTest(bad):

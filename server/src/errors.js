@@ -57,6 +57,23 @@ function validErrors(body) {
   return errors;
 }
 
+const FINGERPRINT = /^[0-9a-f]{32}$/;
+
+// The admin dashboard's Dismiss: forget an error and ignore its later reports.
+// Returns false if the fingerprint isn't one.
+export async function dismissError(env, id) {
+  if (typeof id !== "string" || !FINGERPRINT.test(id)) {
+    return false;
+  }
+  await env.DB.batch([
+    env.DB.prepare("INSERT INTO error_dismissed (fingerprint, dismissed_at) VALUES (?, ?) " +
+      "ON CONFLICT (fingerprint) DO NOTHING").bind(id, Math.floor(Date.now() / 1000)),
+    env.DB.prepare("DELETE FROM error_reports WHERE fingerprint = ?").bind(id),
+    env.DB.prepare("DELETE FROM error_reporters WHERE fingerprint = ?").bind(id),
+  ]);
+  return true;
+}
+
 // POST /v1/errors: {"reporter": "16 hex", "errors": [{"m", "s", "n", "v"}]}
 export async function receiveErrors(request, env, companionVersion) {
   const declared = Number(request.headers.get("Content-Length") || 0);
@@ -89,8 +106,13 @@ export async function receiveErrors(request, env, companionVersion) {
       "ON CONFLICT (reporter) DO UPDATE SET last_report = excluded.last_report, companion = excluded.companion",
     ).bind(reporter, now, companionVersion),
   ];
+  const dismissed = new Set((await env.DB.prepare("SELECT fingerprint FROM error_dismissed").all()).results
+    .map((row) => row.fingerprint));
   for (const error of errors) {
     const id = await fingerprint(error.m, error.s);
+    if (dismissed.has(id)) {
+      continue;                     // dismissed on the admin dashboard
+    }
     statements.push(env.DB.prepare(
       "INSERT INTO error_reports (fingerprint, message, stack, addon_version, first_seen, last_seen, occurrences, reports) " +
       "VALUES (?, ?, ?, ?, ?, ?, ?, 1) ON CONFLICT (fingerprint) DO UPDATE SET " +

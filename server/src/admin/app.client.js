@@ -461,6 +461,27 @@
     ]);
   }
 
+  function dismissButton(e) {
+    var button = el("button", { type: "button", text: "Dismiss", title: "Remove this error and ignore later reports of it" });
+    button.addEventListener("click", function () {
+      if (!window.confirm("Dismiss this error for good? Later reports of the same error are ignored.\n\n" + e.message)) {
+        return;
+      }
+      button.disabled = true;
+      fetch("/admin/api/errors/dismiss", {
+        method: "POST", credentials: "same-origin", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ fingerprint: e.fingerprint }),
+      }).then(function (response) {
+        if (!response.ok) { throw new Error("HTTP " + response.status); }
+        load();
+      }).catch(function (error) {
+        button.disabled = false;
+        window.alert("Couldn't dismiss it: " + error.message);
+      });
+    });
+    return button;
+  }
+
   function errorsSection(live) {
     var now = live.now;
     var list = live.errors || [];
@@ -473,14 +494,16 @@
         el("td", { text: e.addon_version || "-" }),
         el("td", { text: ago(now - e.last_seen) }),
         el("td", { text: date(e.first_seen) }),
+        el("td", {}, [dismissButton(e)]),
       ]);
     });
-    var head = el("tr", {}, ["Error", "Players", "Times", "Version", "Last seen", "First seen"].map(function (h, i) {
+    var head = el("tr", {}, ["Error", "Players", "Times", "Version", "Last seen", "First seen", ""].map(function (h, i) {
       return el("th", { cls: i === 1 || i === 2 ? "num" : "", text: h });
     }));
     return section("errors", "Errors", "Reports from GoldScout Companion, newest first", [
       card(null, "Companions of players who share send them unless reports are turned off. Each row is one error, " +
-        "grouped by its message and first stack line; click it for GoldScout's stack lines.",
+        "grouped by its message and first stack line; click it for GoldScout's stack lines. Dismiss removes an " +
+        "error for good: later reports of the same error are ignored.",
         [list.length ? el("div", { cls: "table-wrap" }, [el("table", {}, [el("thead", {}, [head]),
           el("tbody", {}, rows)])]) : el("p", { cls: "muted", text: "No error reports yet." })])]);
   }

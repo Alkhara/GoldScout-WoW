@@ -1,4 +1,5 @@
-// GoldScout admin dashboard: /admin (page, script, styles) and /admin/api/summary.
+// GoldScout admin dashboard: /admin (page, script, styles), /admin/api/summary
+// and POST /admin/api/errors/dismiss.
 //
 // Who may see it: Cloudflare Access sits in front of the admin hostname and
 // signs every request it lets through (Cf-Access-Jwt-Assertion). The Worker
@@ -18,6 +19,7 @@
 import PAGE from "./admin/index.html";
 import SCRIPT from "./admin/app.client.js";
 import STYLES from "./admin/app.css";
+import { dismissError } from "./errors.js";
 
 const STATS_MAX_BYTES = 1500000;
 const KEYS_TTL_MS = 3600 * 1000;
@@ -126,12 +128,16 @@ export async function handleAdmin(request, env, url, isAdminToken) {
   if (path !== "/admin" && !path.startsWith("/admin/")) {
     return null;
   }
-  if (request.method !== "GET") {
+  const dismissing = path === "/admin/api/errors/dismiss";
+  if (request.method !== (dismissing ? "POST" : "GET")) {
     return respond("Method not allowed.", "text/plain; charset=utf-8", 405);
   }
   const who = await identity(request, env, url, isAdminToken);
   if (!who) {
     return respond(CLOSED, "text/html; charset=utf-8", 403);
+  }
+  if (dismissing) {
+    return dismiss(request, env, url);
   }
   if (path === "/admin" || path === "/admin/") {
     return respond(PAGE, "text/html; charset=utf-8");
@@ -146,6 +152,26 @@ export async function handleAdmin(request, env, url, isAdminToken) {
     return summary(env, who);
   }
   return respond("Not found.", "text/plain; charset=utf-8", 404);
+}
+
+// POST /admin/api/errors/dismiss {"fingerprint"}: the dashboard's Dismiss button.
+// JSON only, and only from the dashboard's own origin, so another site can't
+// make a signed-in browser send it.
+async function dismiss(request, env, url) {
+  const origin = request.headers.get("Origin");
+  if ((origin && origin !== url.origin) || !(request.headers.get("Content-Type") || "").startsWith("application/json")) {
+    return respond('{"error":"Not allowed."}', "application/json; charset=utf-8", 403);
+  }
+  let body;
+  try {
+    body = JSON.parse(await request.text());
+  } catch {
+    body = null;
+  }
+  if (!body || !await dismissError(env, body.fingerprint)) {
+    return respond('{"error":"Expected {\\"fingerprint\\": \\"32 hex\\"}."}', "application/json; charset=utf-8", 400);
+  }
+  return respond('{"status":"dismissed"}', "application/json; charset=utf-8");
 }
 
 async function summary(env, who) {
@@ -168,7 +194,7 @@ async function summary(env, who) {
       "FROM ah_houses ORDER BY region, house"),
     env.DB.prepare("SELECT region, realm, ruleset FROM ah_realms ORDER BY region, realm"),
     env.DB.prepare("SELECT body, updated_at FROM admin_stats WHERE name = 'dashboard'"),
-    env.DB.prepare("SELECT message, stack, addon_version, first_seen, last_seen, occurrences, reports, " +
+    env.DB.prepare("SELECT fingerprint, message, stack, addon_version, first_seen, last_seen, occurrences, reports, " +
       "(SELECT COUNT(*) FROM error_reporters e WHERE e.fingerprint = r.fingerprint) AS players " +
       "FROM error_reports r ORDER BY last_seen DESC LIMIT 30"),
     env.DB.prepare("SELECT COUNT(DISTINCT fingerprint) AS errors, COUNT(DISTINCT reporter) AS players " +

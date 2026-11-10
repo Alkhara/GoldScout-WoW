@@ -94,6 +94,12 @@ CREATE TABLE IF NOT EXISTS error_reporters (
   last_seen INTEGER NOT NULL,
   PRIMARY KEY (reporter, fingerprint)
 );
+-- Errors dismissed on the admin dashboard: their rows are deleted and later
+-- reports of the same error are ignored.
+CREATE TABLE IF NOT EXISTS error_dismissed (
+  fingerprint TEXT PRIMARY KEY,
+  dismissed_at INTEGER NOT NULL
+);
 CREATE TABLE IF NOT EXISTS error_senders (
   reporter TEXT PRIMARY KEY,
   last_report INTEGER NOT NULL,
