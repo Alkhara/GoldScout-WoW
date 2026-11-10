@@ -36,9 +36,10 @@ def upload_url():
     return os.environ.get("GOLDSCOUT_UPLOAD_URL", UPLOAD_URL).rstrip("/")
 
 
-def upload(export, token=None, version="dev", timeout=20):
+def upload(export, token=None, version="dev", timeout=20, region=None):
     """Uploads one export. Returns the server's JSON reply, which includes a
-    new token the first time an install uploads."""
+    new token the first time an install uploads. region ("us", "eu", ...)
+    lets the server count installs per region."""
     base = upload_url()
     if not base:
         raise UploadError("Automatic sharing isn't available yet.")
@@ -49,6 +50,8 @@ def upload(export, token=None, version="dev", timeout=20):
     }
     if token:
         headers["Authorization"] = "Bearer " + token
+    if region:
+        headers["X-GoldScout-Region"] = region
     request = urllib.request.Request(base + "/v1/uploads", data=export.encode("utf-8"),
                                      headers=headers, method="POST")
     try:

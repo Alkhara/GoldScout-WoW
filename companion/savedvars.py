@@ -6,6 +6,8 @@ folder is the GoldScout_Prices data addon; see auction_prices.py.)
 import re
 import string
 import sys
+
+REGIONS = ("us", "eu", "kr", "tw", "cn")
 from pathlib import Path
 
 FOREVER = "_forever_"
@@ -227,6 +229,14 @@ class Account:
         self.seen_markets = database.get("seenMarkets") if isinstance(database.get("seenMarkets"), dict) else {}
         regions = database.get("marketRegions")
         self.market_regions = regions if isinstance(regions, dict) else {}
+
+    @property
+    def region(self):
+        """The region ("us", "eu", "kr", "tw" or "cn") of the realm this WoW
+        account played most recently, as GoldScout recorded it, or None."""
+        known = [(self.seen_markets.get(key) if isinstance(self.seen_markets.get(key), (int, float)) else 0, region)
+                 for key, region in self.market_regions.items() if region in REGIONS]
+        return max(known)[1] if known else None
 
 
 def read_accounts(forever):

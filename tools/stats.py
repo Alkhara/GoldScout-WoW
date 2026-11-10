@@ -154,6 +154,7 @@ def player_rows(rows, mine):
         mobs, kills, picks, drops = export_totals(r.get("body"))
         players.append({"tag": player_tag(r["install_id"]), "you": r["install_id"] in mine,
                         "client": r.get("client") or "unknown", "os": r.get("os") or "not sent",
+                        "region": r.get("region"),
                         "uploads": r["uploads"],
                         "created": r["created_at"], "updated": r["updated_at"],
                         "mobs": mobs, "kills": kills, "picks": picks, "drops": drops})
@@ -227,9 +228,10 @@ def main():
         columns = "install_id, created_at, installs.updated_at AS updated_at, uploads, body, " \
                   "substr(body, 18, 1) AS version"
         try:
-            rows = wrangler_sql("SELECT %s, client, os FROM installs LEFT JOIN install_clients USING (install_id) "
-                                "LEFT JOIN install_os USING (install_id)" % columns)
-        except RuntimeError:   # a server from before companion systems were recorded
+            rows = wrangler_sql("SELECT %s, client, os, region FROM installs "
+                                "LEFT JOIN install_clients USING (install_id) LEFT JOIN install_os USING (install_id) "
+                                "LEFT JOIN install_region USING (install_id)" % columns)
+        except RuntimeError:   # a server from before companion systems and regions were recorded
             try:
                 rows = wrangler_sql("SELECT %s, client FROM installs LEFT JOIN install_clients USING (install_id)"
                                     % columns)
@@ -248,13 +250,17 @@ def main():
             print("    %s %3d %s" % (day, n, bar(n, peak)))
         if args.players > 0:
             players = player_rows(rows, mine)
-            clients, systems = {}, {}
+            clients, systems, regions = {}, {}, {}
             for p in players:
                 clients[p["client"]] = clients.get(p["client"], 0) + 1
                 systems[p["os"]] = systems.get(p["os"], 0) + 1
+                region = p["region"].upper() if p["region"] else "not sent"
+                regions[region] = regions.get(region, 0) + 1
             print("  companion versions %s" % ", ".join("%s: %d" % item for item in sorted(clients.items())))
             print("  companion systems  %s  (\"not sent\": companions before 0.8.0, Windows only)"
                   % ", ".join("%s: %d" % item for item in sorted(systems.items())))
+            print("  regions            %s  (\"not sent\": companions before 0.9.0)"
+                  % ", ".join("%s: %d" % item for item in sorted(regions.items())))
             print("\nPlayers (companion installs)")
             print("\n".join(player_table(players, now, args.players)))
     except Exception as error:

@@ -182,6 +182,28 @@ class ServerTests(unittest.TestCase):
         self.assertGreaterEqual(systems["Windows"]["n"], 1)
         self.assertGreaterEqual(systems["Windows"]["d7"], 1)
 
+    def test_region_is_recorded(self):
+        def region_of(install):
+            status, listing = raw("/v1/uploads?since=%d" % (time.time() - 3600),
+                                  headers={"Authorization": "Bearer " + ADMIN})
+            return next(u["region"] for u in listing["uploads"] if u["install_id"] == install)
+
+        install = new_install()
+        status, first = register(install)
+        self.assertEqual(status, 201)
+        self.assertIsNone(region_of(install))
+        self.assertEqual(uploader.upload(export(install, 1), first["token"], "0.9.0", region="eu")["status"],
+                         "unchanged")
+        self.assertEqual(region_of(install), "eu")
+        status, _ = raw("/v1/uploads", export(install, 1), {
+            "Content-Type": "text/plain; charset=utf-8", "X-GoldScout-Terms": uploader.TERMS_VERSION,
+            "Authorization": "Bearer " + first["token"], "X-GoldScout-Region": "atlantis"}, "POST")
+        self.assertEqual(status, 200)
+        self.assertEqual(region_of(install), "eu")      # not a region: ignored, the last one kept
+        status, _, text = fetch("/admin/api/summary", {"Authorization": "Bearer " + ADMIN})
+        regions = {row["region"]: row["n"] for row in json.loads(text)["live"]["regions"]}
+        self.assertGreaterEqual(regions["eu"], 1)
+
     def test_new_installs_are_rate_limited_per_network(self):
         ip = fake_ip()
         statuses = [register(new_install(), ip)[0] for _ in range(7)]

@@ -208,11 +208,16 @@
       return ["v" + k, snap.export_versions[k]]; });
     var systems = (live.systems || []).map(function (s) {
       return [s.os || "before 0.8.0", s.n, s.d7]; });
+    var regions = (live.regions || []).map(function (r) {
+      return [r.region ? r.region.toUpperCase() : "before 0.9.0", r.n, r.d7]; });
     return section("versions", "Versions", null, [el("div", { cls: "grid" }, [
       card("Companion system", "From each install's latest upload. Companions before 0.8.0 don't send it " +
         "(they were Windows only). Bars split installs that shared in the last 7 days from the rest. " +
         "Price-only users aren't counted.",
         [splitBars(systems.map(function (s) { return [s[0], s[2], s[1] - s[2]]; }), "Shared in 7 days", "Earlier")]),
+      card("Region", "Where each install plays, from its latest upload (companion 0.9.0 and later). Prices " +
+        "come for US, EU, KR and TW. Price-only users aren't counted.",
+        [splitBars(regions.map(function (r) { return [r[0], r[2], r[1] - r[2]]; }), "Shared in 7 days", "Earlier")]),
       card("Companion version (latest upload)", "Recorded since Nov 10, 2026; an install shows its version " +
         "after its next upload. Price-only companion users don't upload, so they aren't counted here.",
         [simpleBars(clients)]),
@@ -256,7 +261,8 @@
     var now = snap ? snap.generated : 0;
     var columns = [
         ["Player", function (p) { return p.tag + (p.you ? " *" : ""); }],
-        ["Companion", "client"], ["System", function (p) { return p.os || "not sent"; }], ["Uploads", "uploads", "num"],
+        ["Companion", "client"], ["System", function (p) { return p.os || "not sent"; }],
+        ["Region", function (p) { return p.region ? p.region.toUpperCase() : "-"; }], ["Uploads", "uploads", "num"],
         ["First seen", function (p) { return date(p.created); }],
         ["Last upload", function (p) { return ago(now - p.updated); }],
         ["Mobs", function (p) { return num(p.mobs); }, "num"], ["Kills", function (p) { return num(p.kills); }, "num"],

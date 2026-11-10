@@ -98,6 +98,16 @@ class AccountTests(unittest.TestCase):
             self.assertIsNone(account.export)
             self.assertTrue(account.has_loot)
 
+    def test_region_is_the_most_recently_played(self):
+        saved = (SAVED.replace("GoldScoutDB = {", 'GoldScoutDB = {\n["seenMarkets"] = { ["A-Horde"] = 100, '
+                               '["B-Horde"] = 200 },\n["marketRegions"] = { ["A-Horde"] = "us", '
+                               '["B-Horde"] = "eu", ["C-Horde"] = "mars" },', 1))
+        with tempfile.TemporaryDirectory() as tmp:
+            account = savedvars.read_accounts(self.make_install(tmp, saved))[0]
+            self.assertEqual(account.region, "eu")
+            account.market_regions = {}
+            self.assertIsNone(account.region)   # an addon from before 0.9.0
+
     def test_finds_folders(self):
         with tempfile.TemporaryDirectory() as tmp:
             forever = self.make_install(tmp, SAVED)

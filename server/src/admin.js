@@ -150,7 +150,7 @@ export async function handleAdmin(request, env, url, isAdminToken) {
 
 async function summary(env, who) {
   const now = Math.floor(Date.now() / 1000);
-  const [installs, clients, systems, houses, realms, stats] = await env.DB.batch([
+  const [installs, clients, systems, regions, houses, realms, stats] = await env.DB.batch([
     env.DB.prepare("SELECT COUNT(*) AS installs, COALESCE(SUM(updated_at > ?), 0) AS d1, " +
       "COALESCE(SUM(updated_at > ?), 0) AS d7, COALESCE(SUM(created_at > ?), 0) AS new7 FROM installs")
       .bind(now - 86400, now - 7 * 86400, now - 7 * 86400),
@@ -158,6 +158,11 @@ async function summary(env, who) {
     // Installs without a system are from companions before 0.8.0, which were Windows only.
     env.DB.prepare("SELECT install_os.os AS os, COUNT(*) AS n, COALESCE(SUM(installs.updated_at > ?), 0) AS d7 " +
       "FROM installs LEFT JOIN install_os USING (install_id) GROUP BY install_os.os ORDER BY n DESC")
+      .bind(now - 7 * 86400),
+    // Installs without a region are from companions before 0.9.0.
+    env.DB.prepare("SELECT install_region.region AS region, COUNT(*) AS n, " +
+      "COALESCE(SUM(installs.updated_at > ?), 0) AS d7 " +
+      "FROM installs LEFT JOIN install_region USING (install_id) GROUP BY install_region.region ORDER BY n DESC")
       .bind(now - 7 * 86400),
     env.DB.prepare("SELECT region, house, name, ruleset, ruleset_name, faction, snapshot, fetched, items " +
       "FROM ah_houses ORDER BY region, house"),
@@ -168,6 +173,7 @@ async function summary(env, who) {
     now, who, ...installs.results[0],
     clients: clients.results,
     systems: systems.results,
+    regions: regions.results,
     houses: houses.results,
     realms: realms.results,
     statsStored: stats.results[0] ? stats.results[0].updated_at : null,

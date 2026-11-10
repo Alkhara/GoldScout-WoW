@@ -31,6 +31,14 @@ CREATE TABLE IF NOT EXISTS install_os (
   updated_at INTEGER NOT NULL
 );
 
+-- Which region an install plays in ("us", "eu", "kr", "tw" or "cn"), from the
+-- X-GoldScout-Region header of companions 0.9.0 and later.
+CREATE TABLE IF NOT EXISTS install_region (
+  install_id TEXT PRIMARY KEY,
+  region TEXT NOT NULL,
+  updated_at INTEGER NOT NULL
+);
+
 CREATE TABLE IF NOT EXISTS registrations (
   ip_hash TEXT NOT NULL,
   created_at INTEGER NOT NULL

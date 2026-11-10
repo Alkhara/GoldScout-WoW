@@ -44,6 +44,7 @@ const NEW_INSTALLS_PER_IP_PER_DAY = 5;
 // "GoldScoutCompanion/0.8.0 (macOS)"; companions before 0.8.0 send no system.
 const CLIENT_AGENT = /^GoldScoutCompanion\/([0-9A-Za-z.+-]{1,24})(?: \(([A-Za-z]{1,16})\))?$/;
 const CLIENT_SYSTEMS = new Set(["Windows", "macOS"]);
+const CLIENT_REGIONS = new Set(["us", "eu", "kr", "tw", "cn"]);
 const SOURCE = "Auction data from the Blizzard Entertainment Game Data API. GoldScout is not affiliated with or endorsed by Blizzard.";
 const PRICES_MAX_BYTES = 1900000; // D1 rows hold up to 2 MB
 const PRICE_ENTRY = String.raw`"[0-9]{1,9}":\[[0-9]{1,15},[0-9]{1,9}\]`;
@@ -169,8 +170,14 @@ function clientSystem(request) {
   return match && CLIENT_SYSTEMS.has(match[2]) ? match[2] : null;
 }
 
-// Statements that record the install's companion version, and its system
-// when the companion sent one.
+// The install's region from the companion ("eu"), or null.
+function clientRegion(request) {
+  const region = (request.headers.get("X-GoldScout-Region") || "").trim().toLowerCase();
+  return CLIENT_REGIONS.has(region) ? region : null;
+}
+
+// Statements that record the install's companion version, and its system and
+// region when the companion sent them.
 function recordClient(env, installId, request, now) {
   const statements = [env.DB.prepare(
     "INSERT INTO install_clients (install_id, client, updated_at) VALUES (?, ?, ?) " +
@@ -182,6 +189,13 @@ function recordClient(env, installId, request, now) {
       "INSERT INTO install_os (install_id, os, updated_at) VALUES (?, ?, ?) " +
       "ON CONFLICT (install_id) DO UPDATE SET os = excluded.os, updated_at = excluded.updated_at",
     ).bind(installId, system, now));
+  }
+  const region = clientRegion(request);
+  if (region) {
+    statements.push(env.DB.prepare(
+      "INSERT INTO install_region (install_id, region, updated_at) VALUES (?, ?, ?) " +
+      "ON CONFLICT (install_id) DO UPDATE SET region = excluded.region, updated_at = excluded.updated_at",
+    ).bind(installId, region, now));
   }
   return statements;
 }
@@ -265,8 +279,9 @@ async function list(request, env, url) {
   }
   const since = Number(url.searchParams.get("since") || 0);
   const { results } = await env.DB.prepare(
-    "SELECT install_id, seq, body, terms, created_at, uploads, installs.updated_at AS updated_at, client, os " +
-    "FROM installs LEFT JOIN install_clients USING (install_id) LEFT JOIN install_os USING (install_id) " +
+    "SELECT install_id, seq, body, terms, created_at, uploads, installs.updated_at AS updated_at, client, os, " +
+    "region FROM installs LEFT JOIN install_clients USING (install_id) LEFT JOIN install_os USING (install_id) " +
+    "LEFT JOIN install_region USING (install_id) " +
     "WHERE installs.updated_at > ? ORDER BY installs.updated_at",
   ).bind(since).all();
   return json({ uploads: results });

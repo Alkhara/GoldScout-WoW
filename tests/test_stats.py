@@ -56,13 +56,14 @@ class StatsTests(unittest.TestCase):
         body = ("GoldScout-export 4^aaaaaaaaaaaa^3\n"
                 "3809^20^2^21^22^1440^0.5400^0.5400^20^Ashenvale Bear^3730:8:8,3702:4:4^1205:1:1\n"
                 "4054^10^0^24^25^1440^0.5800^0.5500^10^Laughing Sister^3730:2:2^\n")
-        rows = [dict(install("aaaaaaaaaaaa", 2, 0.1, uploads=4), body=body, client="0.8.0", os="macOS"),
+        rows = [dict(install("aaaaaaaaaaaa", 2, 0.1, uploads=4), body=body, client="0.8.0", os="macOS",
+                     region="eu"),
                 dict(install("me0000000000", 9, 1, uploads=20), body="not an export", client=None)]
         players = stats.player_rows(rows, {"me0000000000"})
         self.assertEqual([p["you"] for p in players], [False, True])     # most kills first
         top = players[0]
         self.assertEqual((top["mobs"], top["kills"], top["picks"], top["drops"]), (2, 30, 2, 15))
-        self.assertEqual((top["client"], top["os"], top["uploads"]), ("0.8.0", "macOS", 4))
+        self.assertEqual((top["client"], top["os"], top["region"], top["uploads"]), ("0.8.0", "macOS", "eu", 4))
         self.assertEqual((players[1]["client"], players[1]["os"]), ("unknown", "not sent"))
         self.assertIsNone(players[1]["kills"])
         self.assertEqual(len(top["tag"]), 5)

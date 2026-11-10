@@ -74,8 +74,8 @@ them.
 The upload service runs on Cloudflare. For each install it keeps only the
 newest export (the same content described below), the Contributor Terms version
 you agreed to, a hash of the install's upload token, when it was uploaded, how
-many times, and which companion version uploaded it last and on which system
-(Windows or macOS).
+many times, and which companion version uploaded it last, on which system
+(Windows or macOS), and in which region your realms are (US, EU, KR or TW).
 The token stops anyone else replacing your install's data. Like any website,
 Cloudflare sees your IP address when the companion connects; we don't store it.
 To limit abuse, the service keeps a salted, one-way hash of the address for two
