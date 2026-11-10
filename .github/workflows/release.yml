@@ -7,6 +7,9 @@
 #      "## X-Wago-ID: abcd1234".
 #   2. In GitHub: Settings > Secrets and variables > Actions, add CF_API_KEY
 #      (CurseForge API token) and WAGO_API_TOKEN (Wago API token).
+#   3. WoWInterface: after uploading the first version there by hand, add its
+#      ID (the number in the addon's URL) to the TOC as "## X-WoWI-ID: 12345",
+#      and add the secret WOWI_API_TOKEN (an API token from WoWInterface's author control panel).
 # Uploads to a site are skipped until its ID and token are both set.
 #
 # It can also be started by hand or by the Data release workflow on a tag
@@ -43,6 +46,7 @@ jobs:
         env:
           CF_API_KEY: ${{ secrets.CF_API_KEY }}
           WAGO_API_TOKEN: ${{ secrets.WAGO_API_TOKEN }}
+          WOWI_API_TOKEN: ${{ secrets.WOWI_API_TOKEN }}
           GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
 
   # Builds GoldScoutCompanion.exe, signs it with Azure Artifact Signing when
