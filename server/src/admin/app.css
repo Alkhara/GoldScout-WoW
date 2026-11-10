@@ -155,3 +155,8 @@ summary { cursor: pointer; color: var(--ink-2); font-size: 12.5px; }
   .top, .jump, main { padding-left: 16px; padding-right: 16px; }
   .grid { grid-template-columns: 1fr; }
 }
+
+/* Health: one status line per check */
+.checks { list-style: none; margin: 0; padding: 0; }
+.checks .check { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; padding: 6px 0; border-bottom: 1px solid var(--grid); }
+.checks .check:last-child { border-bottom: none; }

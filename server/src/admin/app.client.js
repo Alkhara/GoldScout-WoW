@@ -364,6 +364,51 @@
     ]);
   }
 
+  // What needs attention now: stale prices per region, failing price runs.
+  // Blizzard publishes snapshots about hourly; the price workflow copies them.
+  var PRICE_REGIONS = ["us", "eu", "kr", "tw"];
+  var PRICE_WARN = 1.5 * HOUR, PRICE_ALERT = 3 * HOUR;
+
+  function healthChecks(live, snap) {
+    var checks = [], now = live.now;
+    var newest = {};
+    (live.houses || []).forEach(function (h) {
+      if (h.items > 0) { newest[h.region] = Math.max(newest[h.region] || 0, h.snapshot || 0); }
+    });
+    PRICE_REGIONS.forEach(function (region) {
+      var label = region.toUpperCase() + " prices";
+      if (!newest[region]) {
+        checks.push(["critical", label + ": none on the server", "Players in this region get no companion prices."]);
+        return;
+      }
+      var age = now - newest[region];
+      var level = age >= PRICE_ALERT ? "critical" : age >= PRICE_WARN ? "warning" : "good";
+      checks.push([level, label + ": newest snapshot " + ago(age),
+        level === "good" ? null : "The auction price workflow may be failing, or Blizzard's API is behind."]);
+    });
+    var flows = (snap && snap.workflows) || [];
+    flows.forEach(function (w) {
+      var last = w.latest;
+      if (/price/i.test(w.name) && last && last.status === "completed" && last.conclusion !== "success") {
+        checks.push(["critical", w.name + ": last run " + (last.conclusion || "failed"), last.url || null]);
+      }
+    });
+    return checks;
+  }
+
+  function healthSection(live, snap) {
+    var checks = healthChecks(live, snap);
+    var problems = checks.filter(function (c) { return c[0] !== "good"; });
+    var rows = checks.map(function (c) {
+      var detail = c[2] && /^https?:/.test(c[2]) ? el("a", { href: c[2], text: "Open the run" })
+        : (c[2] ? el("span", { cls: "muted", text: c[2] }) : null);
+      return el("li", { cls: "check" }, [status(c[0], c[1]), detail]);
+    });
+    return section("health", "Health", problems.length ? problems.length + " to look at" : "All clear", [
+      card(null, "Prices: amber after " + (PRICE_WARN / HOUR) + " h, red after " + (PRICE_ALERT / HOUR) +
+        " h without a new snapshot.", [el("ul", { cls: "checks" }, rows)])]);
+  }
+
   function gapsSection() {
     return section("gaps", "Not tracked yet", null, [card(null, null, [el("ul", {}, [
       el("li", { text: "Companion users who only download prices (no ID, no uploads). Phase 2: aggregate counts by version." }),
@@ -392,7 +437,8 @@
       app.appendChild(el("p", { cls: "problems", text: "No statistics snapshot yet: the data merge workflow sends " +
         "one every hour (tools/admin_stats.py). Live counts are shown below." }));
     }
-    [growthSection(live, snap), versionsSection(live, snap), reachSection(live, snap), playersSection(snap),
+    [healthSection(live, snap), growthSection(live, snap), versionsSection(live, snap), reachSection(live, snap),
+      playersSection(snap),
       coverageSection(snap), pricesSection(live), automationSection(snap), gapsSection()]
       .forEach(function (s) { app.appendChild(s); });
   }
