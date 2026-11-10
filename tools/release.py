@@ -23,6 +23,7 @@ ROOT = Path(__file__).resolve().parent.parent
 REPO = "Alkhara/GoldScout-WoW"
 API = "https://api.github.com/repos/" + REPO
 sys.path.insert(0, str(ROOT / "tools"))
+import changelog  # noqa: E402
 import verify_release  # noqa: E402
 
 
@@ -70,6 +71,9 @@ def preflight(tag):
     if not companion or "v" + companion.group(1) != tag:
         verify_release.fail("companion/app.py VERSION is %r; set it to %s first"
                             % (companion and companion.group(1), tag[1:]))
+    problem = changelog.check(tag)
+    if problem:
+        verify_release.fail(problem)
     if git("rev-parse", "--abbrev-ref", "HEAD") != "main":
         verify_release.fail("not on main")
     if git("status", "--porcelain", "--untracked-files=no"):

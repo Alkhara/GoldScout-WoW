@@ -5,7 +5,15 @@ package-as: GoldScout
 move-folders:
   GoldScout/GoldScout: GoldScout
 
+# Release notes for GitHub, CurseForge and Wago, written by the release
+# workflow from CHANGELOG.md (tools/changelog.py).
+manual-changelog:
+  filename: RELEASE_NOTES.md
+  markup-type: markdown
+
 ignore:
+  - CHANGELOG.md
+  - RELEASE_NOTES.md
   - tools
   - tests
   - companion
