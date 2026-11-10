@@ -46,10 +46,11 @@ The game only reads addon files when you log in or `/reload`, so GoldScout has
 the prices from your last login. When newer ones are waiting, GoldScout's window
 shows **Load newer prices**, which reloads the interface for you.
 
-The first time, GoldScout needs to know which auction house is yours. Most
-realms are already known; on one that isn't, scan the auction house once in
-GoldScout, then log out or `/reload`, and the companion matches your scan to
-the right auction house within the hour (on your PC; nothing is uploaded).
+Prices come for US, EU, Korean and Taiwanese realms. GoldScout works out which
+auction house is yours from your realm's ruleset. If it can't, or to make sure,
+scan the auction house once in GoldScout, then log out or `/reload`: the
+companion compares your scan with your region's auction houses and uses the one
+that clearly matches, within the hour (on your PC; nothing is uploaded).
 Turn auction prices off from the tray menu; that also removes the
 `GoldScout_Prices` folder.
 

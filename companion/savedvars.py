@@ -225,6 +225,8 @@ class Account:
         # companion knows which auction houses' prices to fetch for you.
         self.markets = database.get("markets") if isinstance(database.get("markets"), dict) else {}
         self.seen_markets = database.get("seenMarkets") if isinstance(database.get("seenMarkets"), dict) else {}
+        regions = database.get("marketRegions")
+        self.market_regions = regions if isinstance(regions, dict) else {}
 
 
 def read_accounts(forever):

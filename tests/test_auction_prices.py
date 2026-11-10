@@ -23,16 +23,16 @@ OTHER = "SomeNormalRealm-Horde"
 
 
 class FakeAccount:
-    def __init__(self, markets=None, seen=None):
-        self.markets, self.seen_markets = markets or {}, seen or {}
+    def __init__(self, markets=None, seen=None, regions=None):
+        self.markets, self.seen_markets, self.market_regions = markets or {}, seen or {}, regions or {}
 
 
 def scan(prices, when):
     return {"lastScan": when, "items": {item: {"p": price, "q": 1, "t": when} for item, price in prices.items()}}
 
 
-def house(number, faction, ruleset=None, snapshot=NOW - 600, items=300):
-    return {"region": "us", "house": number, "name": "Auction House", "ruleset": ruleset,
+def house(number, faction, ruleset=None, snapshot=NOW - 600, items=300, region="us"):
+    return {"region": region, "house": number, "name": "Auction House", "ruleset": ruleset,
             "rulesetName": "PvP" if ruleset == 1 else None, "faction": faction, "snapshot": snapshot,
             "fetched": snapshot + 300, "items": items}
 
@@ -47,9 +47,10 @@ class FakeServer:
         self.calls.append(path)
         if path == "/v1/prices":
             return {"houses": self.houses, "realms": self.realms}
-        number = int(path.rsplit("/", 1)[1])
-        info = next(h for h in self.houses if h["house"] == number)
-        return dict(info, prices={str(i): v for i, v in self.prices[number].items()})
+        region, number = path.rsplit("/", 2)[1], int(path.rsplit("/", 1)[1])
+        info = next(h for h in self.houses if h["house"] == number and h["region"] == region)
+        prices = self.prices.get((region, number), self.prices.get(number))
+        return dict(info, prices={str(i): v for i, v in prices.items()})
 
 
 class Folder:
@@ -161,6 +162,50 @@ class CompanionTests(unittest.TestCase):
             lua = (forever / "Interface" / "AddOns" / ap.DATA_ADDON / ap.DATA_FILE).read_text(encoding="utf-8")
             self.assertIn('["CAMWOWUS2Realm2PvP-Neutral"] = { region = "us", house = 116', lua)
 
+    def test_regions_come_from_goldscout_or_the_realm_name(self):
+        eu, plain = "CAMWOWEU1Realm3PvP-Horde", "Ravenholdt-Horde"
+        accounts = [FakeAccount(seen={eu: NOW, plain: NOW, PVP: NOW}, regions={plain: "eu"})]
+        wanted = ap.wanted_markets(accounts, NOW)
+        self.assertEqual((wanted[eu]["region"], wanted[plain]["region"], wanted[PVP]["region"]), ("eu", "eu", "us"))
+        self.assertEqual(ap.realm_ruleset("CAMWOWUS1Realm9RPPvP"), ("Roleplay PvP", 15))
+        self.assertIsNone(ap.realm_region("Stormrage"))
+
+    def test_other_regions_use_the_realm_names_ruleset(self):
+        eu = "CAMWOWEU1Realm3PvP-Horde"
+        server = FakeServer([house(113, "Horde", 1), house(113, "Horde", 1, region="eu"),
+                             house(114, "Horde", 2, region="eu")],
+                            {("us", 113): many(10), ("eu", 113): many(20), ("eu", 114): many(30)})
+        with Folder() as forever:
+            summary = ap.update(forever, [FakeAccount(seen={eu: NOW})], {}, NOW, server)
+            self.assertEqual(summary["markets"][eu], {"house": 113, "region": "eu",
+                                                      "snapshot": NOW - 600, "how": "realm name"})
+            lua = (forever / "Interface" / "AddOns" / ap.DATA_ADDON / ap.DATA_FILE).read_text(encoding="utf-8")
+            self.assertIn('["%s"] = { region = "eu", house = 113' % eu, lua)
+
+    def test_your_scan_corrects_an_inferred_house(self):
+        eu = "CAMWOWEU1Realm3PvP-Horde"
+        prices = {("eu", 113): many(100), ("eu", 114): many(100, offset=9), ("us", 114): many(100)}
+        server = FakeServer([house(113, "Horde", 1, region="eu"), house(114, "Horde", 2, region="eu"),
+                             house(114, "Horde", 2)], prices)
+        mine = {item: value[0] for item, value in prices[("eu", 114)].items()}
+        with Folder() as forever:
+            state = {}
+            summary = ap.update(forever, [FakeAccount({eu: scan(mine, NOW - 1800)}, regions={eu: "eu"})],
+                                state, NOW, server)
+            self.assertEqual((summary["markets"][eu]["house"], summary["markets"][eu]["how"]), (114, "your scan"))
+            self.assertEqual(state["learned"][eu], {"region": "eu", "house": 114, "matched": NOW})
+            # Next hour, no new scan: the learned house still wins over the realm name.
+            again = ap.update(forever, [FakeAccount({eu: scan(mine, NOW - 1800)}, regions={eu: "eu"})],
+                              state, NOW + 3600, server)
+            self.assertEqual(again["markets"][eu]["house"], 114)
+
+    def test_a_region_without_prices_says_so(self):
+        cn = "SomeChinaRealm-Horde"
+        server = FakeServer([house(113, "Horde", 1)], {113: many(10)})
+        with Folder() as forever:
+            summary = ap.update(forever, [FakeAccount(seen={cn: NOW}, regions={cn: "cn"})], {}, NOW, server)
+            self.assertEqual((summary["unsupported"], summary["unknown"]), ([cn], []))
+
     def test_needs_goldscout_installed(self):
         with tempfile.TemporaryDirectory() as temp:
             summary = ap.update(Path(temp), [FakeAccount(seen={PVP: NOW})], {}, NOW,
@@ -173,6 +218,7 @@ local ns = ...
 ns.listeners = {}
 function ns.Listen(message, handler) ns.listeners[message] = handler end
 function ns.MarketKey() return "Realm-Horde" end
+GetCurrentRegion = function() return 3 end
 NOW = 1800000000
 time = function() return NOW end
 FAKE = { map = 1454, npc = "Creature-0-6805-1-18-8724-6384EE0F44" }
@@ -263,6 +309,7 @@ class AddonPricesTests(unittest.TestCase):
     def test_login_remembers_the_market(self):
         self.ns.listeners["LOGIN"]()
         self.assertEqual(self.ns.db.seenMarkets["Realm-Horde"], NOW)
+        self.assertEqual(self.ns.db.marketRegions["Realm-Horde"], "eu")   # GetCurrentRegion() 3
 
 
 LABELS = {

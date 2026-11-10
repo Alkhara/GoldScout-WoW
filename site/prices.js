@@ -40,9 +40,20 @@
     return Math.round(minutes / 60) + " hours ago";
   }
 
+  var REGION_ORDER = ["us", "eu", "kr", "tw"];
+
   function label(house) {
     var faction = house.faction === "Neutral" ? "Blackwater (neutral)" : house.faction;
-    return house.rulesetName + " realms, " + faction;
+    return house.region.toUpperCase() + ": " + house.rulesetName + " realms, " + faction;
+  }
+
+  // US first (the default), then EU, KR and TW; by ruleset and faction within each.
+  function order(a, b) {
+    var ra = REGION_ORDER.indexOf(a.region), rb = REGION_ORDER.indexOf(b.region);
+    if (ra !== rb) {
+      return ra - rb;
+    }
+    return label(a) < label(b) ? -1 : 1;
   }
 
   function remember(key) {
@@ -140,9 +151,7 @@
       status.textContent = "Prices are unavailable right now.";
       return;
     }
-    houses.sort(function (a, b) {
-      return label(a) < label(b) ? -1 : 1;
-    });
+    houses.sort(order);
     var chosen = remembered();
     houses.forEach(function (h) {
       var option = document.createElement("option");

@@ -1,6 +1,7 @@
 """WoW Forever auction house prices from Blizzard's Game Data API.
 
-  python tools/ah_prices.py fetch    fetch every auction house that has a new
+  python tools/ah_prices.py fetch    fetch every auction house, in every
+                                     region (US, EU, KR, TW), that has a new
                                      snapshot and send the prices to the
                                      GoldScout server (the ah-prices workflow
                                      runs this every 15 minutes)
@@ -33,7 +34,8 @@ ROOT = Path(__file__).resolve().parent.parent
 HOUSES_FILE = ROOT / "data" / "ah_houses.json"
 DEV_VARS = ROOT / "server" / ".dev.vars"
 DEFAULT_API = "https://goldscout-api.cawley22.workers.dev"
-REGION = "us"
+REGION = "us"                        # where `match` looks (your own scans are US)
+REGIONS = ("us", "eu", "kr", "tw")   # WoW Forever regions with a Game Data API
 # Cloudflare answers Python's default User-Agent with 403 (error 1010).
 USER_AGENT = "GoldScout-ah-prices/1.0 (+https://github.com/Alkhara/GoldScout-WoW)"
 FACTIONS = {"Alliance Auction House": "Alliance", "Horde Auction House": "Horde",
@@ -131,11 +133,14 @@ def settings():
 
 
 class Blizzard:
-    def __init__(self, client_id, client_secret, region=REGION):
+    def __init__(self, client_id, client_secret, region=REGION, token=None):
         self.region = region
         self.base = "https://%s.api.blizzard.com" % region
         self.namespace = "dynamic-forever-%s" % region
         self.calls = 0
+        if token:   # one OAuth token works for every region
+            self.token = token
+            return
         auth = base64.b64encode(("%s:%s" % (client_id, client_secret)).encode()).decode()
         request = urllib.request.Request(
             "https://oauth.battle.net/token", data=b"grant_type=client_credentials",
@@ -195,7 +200,7 @@ def house_list(blizzard):
     """{house id: (name, ruleset ids listing it)} from every ruleset's index."""
     status, index, _ = blizzard.get("/data/wow/ruleset/index")
     if status != 200:
-        raise SystemExit("Ruleset index: HTTP %s" % status)
+        raise SystemExit("Ruleset index (%s): HTTP %s" % (blizzard.region, status))
     houses = {}
     for ruleset in index.get("rulesets") or []:
         status, auctions, _ = blizzard.get("/data/wow/ruleset/%s/auctions/" % ruleset["id"])
@@ -222,54 +227,28 @@ def fetch(args):
     known = {(h["region"], h["house"]): h for h in stored.get("houses", [])}
     realm_notes = sync_realms(s, config, stored)
 
-    blizzard = Blizzard(s["client_id"], s["client_secret"])
-    houses = house_list(blizzard)
-    every = max((len(r) for _, r in houses.values()), default=0)
-    lines, updated, failed = [], 0, 0
-    for house in sorted(houses):
-        name, listed_by = houses[house]
-        ruleset, ruleset_name, faction = mapping_for(config, REGION, house)
-        if ruleset is None and len(listed_by) < every and len(listed_by) == 1:
-            # Blizzard listing a house under one ruleset only would map it for us.
-            print("note house %d is listed only under ruleset %d" % (house, listed_by[0]))
-        faction = faction or FACTIONS.get(name, "")
-        previous = known.get((REGION, house))
-        same_mapping = previous and previous.get("ruleset") == ruleset and previous.get("faction") == faction
-        since = previous["snapshot"] if previous and same_mapping and not args.force else None
-        base = "/data/wow/ruleset/%d/auctions/%d" % (listed_by[0], house)
-        st1, regular, lm1 = blizzard.get(base, since)
-        st2, commodities, lm2 = blizzard.get(base + "/commodities", since)
-        if st1 == 304 and st2 == 304:
-            lines.append("| %d | %s | unchanged | %s |" % (house, ruleset_name or "?", age_text(since)))
-            continue
-        if st1 == 304:
-            st1, regular, lm1 = blizzard.get(base)
-        if st2 == 304:
-            st2, commodities, lm2 = blizzard.get(base + "/commodities")
-        if st1 != 200 or st2 not in (200, 404):
+    lines, updated, failed, total, calls, token = [], 0, 0, 0, 0, None
+    for region in REGIONS:
+        blizzard = Blizzard(s["client_id"], s["client_secret"], region=region, token=token)
+        token = blizzard.token
+        try:
+            houses = house_list(blizzard)
+        except SystemExit as error:
             failed += 1
-            lines.append("| %d | %s | **failed** (HTTP %s / %s) | |" % (house, ruleset_name or "?", st1, st2))
+            total += 1
+            lines.append("| %s | | | **failed** (%s) | |" % (region.upper(), error))
+            calls += blizzard.calls
             continue
-        prices = reduce_auctions((regular or {}).get("auctions"), (commodities or {}).get("auctions"))
-        snapshot = max(t for t in (lm1, lm2, 0) if t is not None) or int(time.time())
-        headers = {"X-Snapshot": str(snapshot), "X-House-Name": name, "X-Faction": faction,
-                   "X-Items": str(len(prices))}
-        if ruleset is not None:
-            headers.update({"X-Ruleset": str(ruleset), "X-Ruleset-Name": ruleset_name})
-        status, answer = server_request(s["api"], "/v1/admin/prices/%s/%d" % (REGION, house), s["admin"],
-                                        "PUT", prices_json(prices), headers)
-        if status != 200:
-            failed += 1
-            lines.append("| %d | %s | **server refused** (HTTP %s %s) | |" % (
-                house, ruleset_name or "?", status, answer.get("error", "")))
-            continue
-        updated += 1
-        lines.append("| %d | %s | %s, %d items | %s |" % (
-            house, ruleset_name or "?", answer.get("status", "stored"), len(prices), age_text(snapshot)))
+        total += len(houses)
+        result = fetch_region(args, s, config, known, blizzard, houses)
+        lines += result["lines"]
+        updated += result["updated"]
+        failed += result["failed"]
+        calls += blizzard.calls
 
     report = ["**Auction prices:** %d house(s) updated, %d failed, %d Blizzard API calls." % (
-        updated, failed, blizzard.calls)] + realm_notes + [
-        "", "| House | Ruleset | Result | Snapshot |", "|---|---|---|---|"] + lines
+        updated, failed, calls)] + realm_notes + [
+        "", "| Region | House | Ruleset | Result | Snapshot |", "|---|---|---|---|---|"] + lines
     print("\n".join(report))
     summary = os.environ.get("GITHUB_STEP_SUMMARY")
     if summary:
@@ -277,8 +256,57 @@ def fetch(args):
             handle.write("\n".join(report) + "\n")
     # Fail the run (and email the maintainer) only when nothing worked at all;
     # one house hiccupping is retried by the next run 15 minutes later.
-    if failed and failed == len(houses):
+    if failed and failed == total:
         sys.exit(1)
+
+
+def fetch_region(args, s, config, known, blizzard, houses):
+    """Fetches one region's houses that have a new snapshot and stores them."""
+    region = blizzard.region
+    out = {"lines": [], "updated": 0, "failed": 0}
+
+    def line(house, ruleset_name, result, when=""):
+        out["lines"].append("| %s | %d | %s | %s | %s |" % (region.upper(), house, ruleset_name or "?", result, when))
+
+    for house in sorted(houses):
+        name, listed_by = houses[house]
+        ruleset, ruleset_name, faction = mapping_for(config, region, house)
+        faction = faction or FACTIONS.get(name, "")
+        previous = known.get((region, house))
+        same_mapping = previous and previous.get("ruleset") == ruleset and previous.get("faction") == faction
+        since = previous["snapshot"] if previous and same_mapping and not args.force else None
+        base = "/data/wow/ruleset/%d/auctions/%d" % (listed_by[0], house)
+        st1, regular, lm1 = blizzard.get(base, since)
+        st2, commodities, lm2 = blizzard.get(base + "/commodities", since)
+        if st1 == 304 and st2 == 304:
+            line(house, ruleset_name, "unchanged", age_text(since))
+            continue
+        if st1 == 304:
+            st1, regular, lm1 = blizzard.get(base)
+        if st2 == 304:
+            st2, commodities, lm2 = blizzard.get(base + "/commodities")
+        if st1 != 200 or st2 not in (200, 404):
+            out["failed"] += 1
+            line(house, ruleset_name, "**failed** (HTTP %s / %s)" % (st1, st2))
+            continue
+        prices = reduce_auctions((regular or {}).get("auctions"), (commodities or {}).get("auctions"))
+        if not prices and not previous:
+            line(house, ruleset_name, "empty, not stored")   # a set no realm uses
+            continue
+        snapshot = max(t for t in (lm1, lm2, 0) if t is not None) or int(time.time())
+        headers = {"X-Snapshot": str(snapshot), "X-House-Name": name, "X-Faction": faction,
+                   "X-Items": str(len(prices))}
+        if ruleset is not None:
+            headers.update({"X-Ruleset": str(ruleset), "X-Ruleset-Name": ruleset_name})
+        status, answer = server_request(s["api"], "/v1/admin/prices/%s/%d" % (region, house), s["admin"],
+                                        "PUT", prices_json(prices), headers)
+        if status != 200:
+            out["failed"] += 1
+            line(house, ruleset_name, "**server refused** (HTTP %s %s)" % (status, answer.get("error", "")))
+            continue
+        out["updated"] += 1
+        line(house, ruleset_name, "%s, %d items" % (answer.get("status", "stored"), len(prices)), age_text(snapshot))
+    return out
 
 
 def sync_realms(s, config, stored):

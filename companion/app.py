@@ -822,6 +822,9 @@ class App:
             if parts:
                 text = ("Auction prices in GoldScout: " + ", ".join(parts) +
                         ". GoldScout loads them at login or /reload.")
+            elif summary.get("unsupported") and not summary.get("unknown"):
+                text = ("Auction prices: GoldScout doesn't have prices for your region yet. Scan at the "
+                        "auction house in GoldScout for prices in the meantime.")
             elif summary.get("unknown"):
                 text = ("Auction prices: GoldScout doesn't know your auction house yet. Scan it once in "
                         "GoldScout, then log out or /reload; the companion matches it within the hour.")

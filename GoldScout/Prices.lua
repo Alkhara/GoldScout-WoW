@@ -195,12 +195,22 @@ function Prices:Summary()
   return count, self:Market().lastScan, companion and companion.snapshot
 end
 
--- Remember which realms and factions you play, so GoldScout Companion knows
--- which auction houses' prices to save for you (read from this PC only).
+-- GetCurrentRegion() numbers, as the region codes Blizzard's API uses.
+local REGIONS = { [1] = "us", [2] = "kr", [3] = "eu", [4] = "tw", [5] = "cn" }
+
+-- Remember which realms and factions you play, and their region, so GoldScout
+-- Companion knows which auction houses' prices to save for you (read from this
+-- PC only).
 ns.Listen("LOGIN", function()
   if ns.db then
+    local key = ns.MarketKey()
     ns.db.seenMarkets = ns.db.seenMarkets or {}
-    ns.db.seenMarkets[ns.MarketKey()] = time()
+    ns.db.seenMarkets[key] = time()
+    local region = GetCurrentRegion and REGIONS[GetCurrentRegion()]
+    if region then
+      ns.db.marketRegions = ns.db.marketRegions or {}
+      ns.db.marketRegions[key] = region
+    end
   end
 end)
 

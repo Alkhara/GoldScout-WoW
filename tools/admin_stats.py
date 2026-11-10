@@ -222,8 +222,8 @@ def build(now, api, admin, mine):
     snapshot["export_versions"] = dict(sorted(count_by(rows, "version").items()))
 
     listing = attempt("prices", lambda: get_json(api + "/v1/prices")) or {}
-    mapped = sorted((h for h in listing.get("houses", []) if h.get("ruleset") and h.get("items")),
-                    key=lambda h: -h["items"])
+    mapped = sorted((h for h in listing.get("houses", []) if h.get("ruleset") and h.get("items")
+                     and h.get("region") == "us"), key=lambda h: -h["items"])
     prices = None
     if mapped:
         house = mapped[0]

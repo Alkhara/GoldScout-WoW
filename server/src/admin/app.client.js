@@ -318,7 +318,8 @@
         ["Known realms", num((live.realms || []).length), "in the server's realm map"],
       ]),
       el("div", { cls: "grid" }, [card("Houses", "Snapshot age: under 2 h good, under 6 h stale, older is a problem.", [table([
-        ["House", "house", "num"], ["Ruleset", function (h) { return h.ruleset_name || "unmapped"; }],
+        ["Region", function (h) { return h.region.toUpperCase(); }], ["House", "house", "num"],
+        ["Ruleset", function (h) { return h.ruleset_name || "unmapped"; }],
         ["Faction", "faction"], ["Items", function (h) { return num(h.items); }, "num"],
         ["Snapshot", function (h) {
           var age = now - h.snapshot;

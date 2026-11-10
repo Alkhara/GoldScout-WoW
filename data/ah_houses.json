@@ -1,5 +1,5 @@
 {
-  "_about": "Which WoW Forever auction house belongs to which ruleset and faction. Blizzard's API lists every house under every ruleset, so this is mapped by hand: python tools/ah_prices.py match compares your own GoldScout scans with each house. Only add a house once a scan has matched it.",
+  "_about": "Which WoW Forever auction house belongs to which ruleset and faction. Blizzard's API lists every house under every ruleset, so this is mapped by hand: python tools/ah_prices.py match compares your own GoldScout scans with each house. Only add a house once a scan has matched it. House IDs mean the same in every region (US layout, see the EU, KR and TW notes).",
   "rulesets": {
     "1": "PvP",
     "2": "Normal",
@@ -8,6 +8,11 @@
   },
   "houses": {
     "us": {
+      "110": {
+        "ruleset": 1,
+        "faction": "Alliance",
+        "how": "2026-11-10: inferred, not yet confirmed by a scan: houses come in Alliance/Horde/Blackwater sets, and this is the Alliance house of the PvP set 110/113/116 (113 and 116 confirmed by scans); it also has auctions in KR and TW, which only have PvP and Normal realms."
+      },
       "111": {
         "ruleset": 2,
         "faction": "Alliance",
@@ -62,6 +67,132 @@
         "ruleset": 15,
         "faction": "Neutral",
         "how": "2026-11-10: inferred from the Alliance/Horde/Blackwater sets, not yet confirmed by a scan (the PvP set 110/113/116 was confirmed with a Blackwater scan; this set's Alliance house was scanned)"
+      }
+    },
+    "eu": {
+      "110": {
+        "ruleset": 1,
+        "faction": "Alliance",
+        "how": "2026-11-10: inferred from the US mapping. Every region lists the same house IDs (110-125) with the same faction names, and the listings line up: KR and TW, which only have PvP and Normal realms, have auctions in exactly the US PvP and Normal houses (110, 111, 113, 114, 116, 117) and none in the Roleplay ones; EU has auctions in the same 12 houses as the US. Not confirmed by a scan in this region; the companion corrects it from a player's own scan if it's wrong."
+      },
+      "111": {
+        "ruleset": 2,
+        "faction": "Alliance",
+        "how": "2026-11-10: inferred from the US mapping. Every region lists the same house IDs (110-125) with the same faction names, and the listings line up: KR and TW, which only have PvP and Normal realms, have auctions in exactly the US PvP and Normal houses (110, 111, 113, 114, 116, 117) and none in the Roleplay ones; EU has auctions in the same 12 houses as the US. Not confirmed by a scan in this region; the companion corrects it from a player's own scan if it's wrong."
+      },
+      "113": {
+        "ruleset": 1,
+        "faction": "Horde",
+        "how": "2026-11-10: inferred from the US mapping. Every region lists the same house IDs (110-125) with the same faction names, and the listings line up: KR and TW, which only have PvP and Normal realms, have auctions in exactly the US PvP and Normal houses (110, 111, 113, 114, 116, 117) and none in the Roleplay ones; EU has auctions in the same 12 houses as the US. Not confirmed by a scan in this region; the companion corrects it from a player's own scan if it's wrong."
+      },
+      "114": {
+        "ruleset": 2,
+        "faction": "Horde",
+        "how": "2026-11-10: inferred from the US mapping. Every region lists the same house IDs (110-125) with the same faction names, and the listings line up: KR and TW, which only have PvP and Normal realms, have auctions in exactly the US PvP and Normal houses (110, 111, 113, 114, 116, 117) and none in the Roleplay ones; EU has auctions in the same 12 houses as the US. Not confirmed by a scan in this region; the companion corrects it from a player's own scan if it's wrong."
+      },
+      "116": {
+        "ruleset": 1,
+        "faction": "Neutral",
+        "how": "2026-11-10: inferred from the US mapping. Every region lists the same house IDs (110-125) with the same faction names, and the listings line up: KR and TW, which only have PvP and Normal realms, have auctions in exactly the US PvP and Normal houses (110, 111, 113, 114, 116, 117) and none in the Roleplay ones; EU has auctions in the same 12 houses as the US. Not confirmed by a scan in this region; the companion corrects it from a player's own scan if it's wrong."
+      },
+      "117": {
+        "ruleset": 2,
+        "faction": "Neutral",
+        "how": "2026-11-10: inferred from the US mapping. Every region lists the same house IDs (110-125) with the same faction names, and the listings line up: KR and TW, which only have PvP and Normal realms, have auctions in exactly the US PvP and Normal houses (110, 111, 113, 114, 116, 117) and none in the Roleplay ones; EU has auctions in the same 12 houses as the US. Not confirmed by a scan in this region; the companion corrects it from a player's own scan if it's wrong."
+      },
+      "119": {
+        "ruleset": 3,
+        "faction": "Alliance",
+        "how": "2026-11-10: inferred from the US mapping. Every region lists the same house IDs (110-125) with the same faction names, and the listings line up: KR and TW, which only have PvP and Normal realms, have auctions in exactly the US PvP and Normal houses (110, 111, 113, 114, 116, 117) and none in the Roleplay ones; EU has auctions in the same 12 houses as the US. Not confirmed by a scan in this region; the companion corrects it from a player's own scan if it's wrong."
+      },
+      "120": {
+        "ruleset": 3,
+        "faction": "Horde",
+        "how": "2026-11-10: inferred from the US mapping. Every region lists the same house IDs (110-125) with the same faction names, and the listings line up: KR and TW, which only have PvP and Normal realms, have auctions in exactly the US PvP and Normal houses (110, 111, 113, 114, 116, 117) and none in the Roleplay ones; EU has auctions in the same 12 houses as the US. Not confirmed by a scan in this region; the companion corrects it from a player's own scan if it's wrong."
+      },
+      "121": {
+        "ruleset": 3,
+        "faction": "Neutral",
+        "how": "2026-11-10: inferred from the US mapping. Every region lists the same house IDs (110-125) with the same faction names, and the listings line up: KR and TW, which only have PvP and Normal realms, have auctions in exactly the US PvP and Normal houses (110, 111, 113, 114, 116, 117) and none in the Roleplay ones; EU has auctions in the same 12 houses as the US. Not confirmed by a scan in this region; the companion corrects it from a player's own scan if it's wrong."
+      },
+      "123": {
+        "ruleset": 15,
+        "faction": "Alliance",
+        "how": "2026-11-10: inferred from the US mapping. Every region lists the same house IDs (110-125) with the same faction names, and the listings line up: KR and TW, which only have PvP and Normal realms, have auctions in exactly the US PvP and Normal houses (110, 111, 113, 114, 116, 117) and none in the Roleplay ones; EU has auctions in the same 12 houses as the US. Not confirmed by a scan in this region; the companion corrects it from a player's own scan if it's wrong."
+      },
+      "124": {
+        "ruleset": 15,
+        "faction": "Horde",
+        "how": "2026-11-10: inferred from the US mapping. Every region lists the same house IDs (110-125) with the same faction names, and the listings line up: KR and TW, which only have PvP and Normal realms, have auctions in exactly the US PvP and Normal houses (110, 111, 113, 114, 116, 117) and none in the Roleplay ones; EU has auctions in the same 12 houses as the US. Not confirmed by a scan in this region; the companion corrects it from a player's own scan if it's wrong."
+      },
+      "125": {
+        "ruleset": 15,
+        "faction": "Neutral",
+        "how": "2026-11-10: inferred from the US mapping. Every region lists the same house IDs (110-125) with the same faction names, and the listings line up: KR and TW, which only have PvP and Normal realms, have auctions in exactly the US PvP and Normal houses (110, 111, 113, 114, 116, 117) and none in the Roleplay ones; EU has auctions in the same 12 houses as the US. Not confirmed by a scan in this region; the companion corrects it from a player's own scan if it's wrong."
+      }
+    },
+    "kr": {
+      "110": {
+        "ruleset": 1,
+        "faction": "Alliance",
+        "how": "2026-11-10: inferred from the US mapping. Every region lists the same house IDs (110-125) with the same faction names, and the listings line up: KR and TW, which only have PvP and Normal realms, have auctions in exactly the US PvP and Normal houses (110, 111, 113, 114, 116, 117) and none in the Roleplay ones; EU has auctions in the same 12 houses as the US. Not confirmed by a scan in this region; the companion corrects it from a player's own scan if it's wrong."
+      },
+      "111": {
+        "ruleset": 2,
+        "faction": "Alliance",
+        "how": "2026-11-10: inferred from the US mapping. Every region lists the same house IDs (110-125) with the same faction names, and the listings line up: KR and TW, which only have PvP and Normal realms, have auctions in exactly the US PvP and Normal houses (110, 111, 113, 114, 116, 117) and none in the Roleplay ones; EU has auctions in the same 12 houses as the US. Not confirmed by a scan in this region; the companion corrects it from a player's own scan if it's wrong."
+      },
+      "113": {
+        "ruleset": 1,
+        "faction": "Horde",
+        "how": "2026-11-10: inferred from the US mapping. Every region lists the same house IDs (110-125) with the same faction names, and the listings line up: KR and TW, which only have PvP and Normal realms, have auctions in exactly the US PvP and Normal houses (110, 111, 113, 114, 116, 117) and none in the Roleplay ones; EU has auctions in the same 12 houses as the US. Not confirmed by a scan in this region; the companion corrects it from a player's own scan if it's wrong."
+      },
+      "114": {
+        "ruleset": 2,
+        "faction": "Horde",
+        "how": "2026-11-10: inferred from the US mapping. Every region lists the same house IDs (110-125) with the same faction names, and the listings line up: KR and TW, which only have PvP and Normal realms, have auctions in exactly the US PvP and Normal houses (110, 111, 113, 114, 116, 117) and none in the Roleplay ones; EU has auctions in the same 12 houses as the US. Not confirmed by a scan in this region; the companion corrects it from a player's own scan if it's wrong."
+      },
+      "116": {
+        "ruleset": 1,
+        "faction": "Neutral",
+        "how": "2026-11-10: inferred from the US mapping. Every region lists the same house IDs (110-125) with the same faction names, and the listings line up: KR and TW, which only have PvP and Normal realms, have auctions in exactly the US PvP and Normal houses (110, 111, 113, 114, 116, 117) and none in the Roleplay ones; EU has auctions in the same 12 houses as the US. Not confirmed by a scan in this region; the companion corrects it from a player's own scan if it's wrong."
+      },
+      "117": {
+        "ruleset": 2,
+        "faction": "Neutral",
+        "how": "2026-11-10: inferred from the US mapping. Every region lists the same house IDs (110-125) with the same faction names, and the listings line up: KR and TW, which only have PvP and Normal realms, have auctions in exactly the US PvP and Normal houses (110, 111, 113, 114, 116, 117) and none in the Roleplay ones; EU has auctions in the same 12 houses as the US. Not confirmed by a scan in this region; the companion corrects it from a player's own scan if it's wrong."
+      }
+    },
+    "tw": {
+      "110": {
+        "ruleset": 1,
+        "faction": "Alliance",
+        "how": "2026-11-10: inferred from the US mapping. Every region lists the same house IDs (110-125) with the same faction names, and the listings line up: KR and TW, which only have PvP and Normal realms, have auctions in exactly the US PvP and Normal houses (110, 111, 113, 114, 116, 117) and none in the Roleplay ones; EU has auctions in the same 12 houses as the US. Not confirmed by a scan in this region; the companion corrects it from a player's own scan if it's wrong."
+      },
+      "111": {
+        "ruleset": 2,
+        "faction": "Alliance",
+        "how": "2026-11-10: inferred from the US mapping. Every region lists the same house IDs (110-125) with the same faction names, and the listings line up: KR and TW, which only have PvP and Normal realms, have auctions in exactly the US PvP and Normal houses (110, 111, 113, 114, 116, 117) and none in the Roleplay ones; EU has auctions in the same 12 houses as the US. Not confirmed by a scan in this region; the companion corrects it from a player's own scan if it's wrong."
+      },
+      "113": {
+        "ruleset": 1,
+        "faction": "Horde",
+        "how": "2026-11-10: inferred from the US mapping. Every region lists the same house IDs (110-125) with the same faction names, and the listings line up: KR and TW, which only have PvP and Normal realms, have auctions in exactly the US PvP and Normal houses (110, 111, 113, 114, 116, 117) and none in the Roleplay ones; EU has auctions in the same 12 houses as the US. Not confirmed by a scan in this region; the companion corrects it from a player's own scan if it's wrong."
+      },
+      "114": {
+        "ruleset": 2,
+        "faction": "Horde",
+        "how": "2026-11-10: inferred from the US mapping. Every region lists the same house IDs (110-125) with the same faction names, and the listings line up: KR and TW, which only have PvP and Normal realms, have auctions in exactly the US PvP and Normal houses (110, 111, 113, 114, 116, 117) and none in the Roleplay ones; EU has auctions in the same 12 houses as the US. Not confirmed by a scan in this region; the companion corrects it from a player's own scan if it's wrong."
+      },
+      "116": {
+        "ruleset": 1,
+        "faction": "Neutral",
+        "how": "2026-11-10: inferred from the US mapping. Every region lists the same house IDs (110-125) with the same faction names, and the listings line up: KR and TW, which only have PvP and Normal realms, have auctions in exactly the US PvP and Normal houses (110, 111, 113, 114, 116, 117) and none in the Roleplay ones; EU has auctions in the same 12 houses as the US. Not confirmed by a scan in this region; the companion corrects it from a player's own scan if it's wrong."
+      },
+      "117": {
+        "ruleset": 2,
+        "faction": "Neutral",
+        "how": "2026-11-10: inferred from the US mapping. Every region lists the same house IDs (110-125) with the same faction names, and the listings line up: KR and TW, which only have PvP and Normal realms, have auctions in exactly the US PvP and Normal houses (110, 111, 113, 114, 116, 117) and none in the Roleplay ones; EU has auctions in the same 12 houses as the US. Not confirmed by a scan in this region; the companion corrects it from a player's own scan if it's wrong."
       }
     }
   },

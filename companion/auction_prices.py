@@ -6,10 +6,13 @@ them as a small data addon, GoldScout_Prices, which the game loads at login or
 /reload. GoldScout then uses whichever is newer for each item: that snapshot or
 your own scan.
 
-Which auction house is yours: the server lists which ruleset each known realm
-uses. For a realm it doesn't know yet, the companion compares your own recent
-GoldScout scan with each auction house of your faction, on this PC; nothing
-about it is uploaded.
+Which auction house is yours: GoldScout records each realm's region (US, EU,
+KR or TW). The server lists which ruleset each known realm uses; otherwise WoW
+Forever realm names end in their ruleset ("CAMWOWUS2Realm2PvP"). Every region
+uses the same auction house layout, so ruleset and faction pick the house.
+Whenever you've scanned recently, the companion also compares your own scan
+with each auction house of your faction and region, on this PC, and goes with
+a clear match; nothing about it is uploaded.
 
 The only folder ever written is AddOns/GoldScout_Prices. Blizzard's API terms
 allow keeping API data at most 30 days: the server never lists older snapshots,
@@ -17,6 +20,7 @@ the addon ignores them, and the folder is removed when nothing current is left.
 """
 import json
 import os
+import re
 import shutil
 import urllib.error
 import urllib.request
@@ -66,7 +70,22 @@ def split_market(key):
 # WoW Forever realm names end in their ruleset ("CAMWOWUS2Realm2PvP"), and every
 # realm with the same ruleset shares one auction house per faction. Longest
 # suffix first: "RPPvP" also ends in "PvP". (GoldScout's Core.lua does the same.)
-RULESET_SUFFIXES = (("RPPvP", "Roleplay PvP"), ("PvP", "PvP"), ("PvE", "Normal"), ("RP", "Roleplay"))
+RULESET_SUFFIXES = (("RPPvP", "Roleplay PvP", 15), ("PvP", "PvP", 1), ("PvE", "Normal", 2), ("RP", "Roleplay", 3))
+REGION_NAME = re.compile(r"^CAMWOW(US|EU|KR|TW)\d")
+
+
+def realm_ruleset(realm):
+    """(ruleset name, Blizzard ruleset id) from a WoW Forever realm name, or None."""
+    for suffix, name, ruleset in RULESET_SUFFIXES:
+        if len(realm) > len(suffix) and realm.endswith(suffix):
+            return name, ruleset
+    return None
+
+
+def realm_region(realm):
+    """"us", "eu", "kr" or "tw" from a WoW Forever realm name, or None."""
+    match = REGION_NAME.match(realm)
+    return match.group(1).lower() if match else None
 
 
 def market_label(key):
@@ -75,17 +94,19 @@ def market_label(key):
     if not realm:
         return key
     side = "Blackwater" if faction == "Neutral" else faction
-    for suffix, name in RULESET_SUFFIXES:
-        if len(realm) > len(suffix) and realm.endswith(suffix):
-            return "%s %s" % (name, side)
-    return "%s %s" % (realm, side)
+    ruleset = realm_ruleset(realm)
+    return "%s %s" % (ruleset[0] if ruleset else realm, side)
 
 
 def wanted_markets(accounts, now):
-    """{market key: {"scan": {item: price}, "last_scan": unix or None}} for the
-    realms and factions played in the last 30 days, across WoW accounts."""
-    found = {}
+    """{market key: {"scan": {item: price}, "last_scan": unix or None, "seen",
+    "region"}} for the realms and factions played in the last 30 days, across
+    WoW accounts. region is what GoldScout recorded, else from the realm name."""
+    found, regions = {}, {}
     for account in accounts:
+        for key, region in (getattr(account, "market_regions", None) or {}).items():
+            if region in ("us", "eu", "kr", "tw", "cn"):
+                regions[key] = region
         times = {}
         for key, seen in (account.seen_markets or {}).items():
             if isinstance(seen, (int, float)):
@@ -107,8 +128,11 @@ def wanted_markets(accounts, now):
         for key, seen in times.items():
             mine = found.setdefault(key, {"scan": {}, "last_scan": None, "seen": 0})
             mine["seen"] = max(mine["seen"], seen)
-    return {key: info for key, info in found.items()
-            if isinstance(key, str) and "-" in key and (not info["seen"] or now - info["seen"] <= MAX_AGE)}
+    wanted = {key: info for key, info in found.items()
+              if isinstance(key, str) and "-" in key and (not info["seen"] or now - info["seen"] <= MAX_AGE)}
+    for key, info in wanted.items():
+        info["region"] = regions.get(key) or realm_region(split_market(key)[0])
+    return wanted
 
 
 def score(scan, house_prices):
@@ -133,16 +157,28 @@ def clear_match(ranked):
     return None
 
 
-def house_for_realm(key, listing):
+def house_for_realm(key, listing, region=None):
     """(region, house) from the server's realm map, or None."""
     realm, faction = split_market(key)
-    for region, realms in (listing.get("realms") or {}).items():
+    for mapped, realms in (listing.get("realms") or {}).items():
         ruleset = realms.get(realm)
-        if ruleset is None:
+        if ruleset is None or (region and mapped != region):
             continue
         for house in listing.get("houses", []):
-            if house["region"] == region and house["ruleset"] == ruleset and house["faction"] == faction:
-                return region, house["house"]
+            if house["region"] == mapped and house["ruleset"] == ruleset and house["faction"] == faction:
+                return mapped, house["house"]
+    return None
+
+
+def house_for_realm_name(key, listing, region):
+    """(region, house) from the ruleset at the end of the realm's name, or None."""
+    realm, faction = split_market(key)
+    ruleset = realm_ruleset(realm)
+    if not ruleset or not region:
+        return None
+    for house in listing.get("houses", []):
+        if house["region"] == region and house["ruleset"] == ruleset[1] and house["faction"] == faction:
+            return region, house["house"]
     return None
 
 
@@ -247,7 +283,8 @@ def update(forever, accounts, state, now, fetch=get_json):
     learned = state.setdefault("learned", {})
     tried = state.setdefault("tried", {})
     if not (addons_folder(forever) / "GoldScout").is_dir():
-        return {"markets": {}, "unknown": [], "wrote": False, "problem": "GoldScout isn't installed in this WoW folder."}
+        return {"markets": {}, "unknown": [], "unsupported": [], "wrote": False,
+                "problem": "GoldScout isn't installed in this WoW folder."}
     wanted = wanted_markets(accounts, now)
     listing = fetch("/v1/prices")
     houses = {(h["region"], h["house"]): h for h in listing.get("houses", [])
@@ -266,17 +303,26 @@ def update(forever, accounts, state, now, fetch=get_json):
         realm, faction = split_market(key)
         neutral = realm + "-Neutral"
         if faction != "Neutral" and neutral not in wanted:
-            wanted[neutral] = {"scan": {}, "last_scan": None, "seen": 0}
+            wanted[neutral] = {"scan": {}, "last_scan": None, "seen": 0, "region": wanted[key]["region"]}
             extra.add(neutral)
 
-    chosen, unknown = {}, []
+    served = {h["region"] for h in houses.values()}
+    chosen, unknown, unsupported = {}, [], []
     for key, info in sorted(wanted.items()):
-        found, how = house_for_realm(key, listing), "realm"
-        if not found and key in learned:
+        region = info.get("region")
+        found, how = None, None
+        if key in learned and (learned[key]["region"], learned[key]["house"]) in houses:
             found, how = (learned[key]["region"], learned[key]["house"]), "your scan"
-        if not found and info["last_scan"] and len(info["scan"]) >= 200 and tried.get(key) != info["last_scan"]:
+        if not found:
+            found, how = house_for_realm(key, listing, region), "realm"
+        if not found:
+            found, how = house_for_realm_name(key, listing, region), "realm name"
+        # A recent scan of your own is checked against the houses of your faction
+        # (and region): a clear match wins, and corrects an inferred mapping.
+        if info["last_scan"] and len(info["scan"]) >= 200 and tried.get(key) != info["last_scan"]:
             _, faction = split_market(key)
             candidates = [h for h in houses.values() if h["faction"] == faction
+                          and (not region or h["region"] == region)
                           and abs(h["snapshot"] - info["last_scan"]) <= SCAN_WINDOW]
             if candidates:
                 tried[key] = info["last_scan"]
@@ -289,12 +335,17 @@ def update(forever, accounts, state, now, fetch=get_json):
                     found, how = match, "your scan"
         if found and found in houses:
             chosen[key] = (found, how)
-        elif key not in extra:
+        elif key in extra:
+            continue
+        elif region and region not in served:
+            unsupported.append(key)
+        else:
             unknown.append(key)
 
-    summary = {"markets": {key: {"house": house, "snapshot": houses[(region, house)]["snapshot"], "how": how}
+    summary = {"markets": {key: {"house": house, "region": region,
+                                 "snapshot": houses[(region, house)]["snapshot"], "how": how}
                            for key, ((region, house), how) in chosen.items()},
-               "unknown": unknown, "wrote": False}
+               "unknown": unknown, "unsupported": unsupported, "wrote": False}
     if not chosen:
         if remove_addon(forever):
             summary["wrote"] = True

@@ -14,8 +14,9 @@ data with other players. Everything it records stays in your own WoW folder, in
 files next to it:
 
 - auction house prices from your scans, per realm and faction
-- which realms and factions you've played, and when (so GoldScout Companion
-  knows which auction houses' prices to save for you)
+- which realms and factions you've played, when, and in which region (US, EU,
+  KR or TW), so GoldScout Companion knows which auction houses' prices to save
+  for you
 - vendor prices you've seen
 - your characters' profession skills and known recipes
 - what you've looted from creatures, how often, at what level and where
