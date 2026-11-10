@@ -7,6 +7,11 @@
 --     GoldScout_Prices data addon (global GoldScoutPricesData). The game only
 --     reads addon files at login or /reload, so that copy is as fresh as your
 --     last /reload; the window offers a button for it.
+--
+-- Blackwater (goblin) auction houses are a market of their own, "Realm-Neutral".
+-- A scan at one is kept there and never replaces your faction's prices, which
+-- stay the ones GoldScout ranks with; tooltips show the Blackwater price as an
+-- extra line.
 local _, ns = ...
 
 local Prices = {}
@@ -17,11 +22,36 @@ local COMPANION_MAX_AGE = 30 * 86400 -- Blizzard's API terms: use API data for a
 Prices.SOURCE = "Auction data from the Blizzard Entertainment Game Data API. "
   .. "GoldScout is not affiliated with or endorsed by Blizzard."
 
--- The companion's snapshot for this realm and faction, if it's current:
--- { house, snapshot, items = { [itemID] = { price, quantity } } }.
-function Prices:Companion()
+-- Where the Blackwater auction houses are: Booty Bay (Stranglethorn Vale),
+-- Gadgetzan (Tanaris) and Everlook (Winterspring). None of these zones has a
+-- faction auction house. Auctioneers seen in game are listed too.
+Prices.BLACKWATER_MAPS = { [1434] = true, [1446] = true, [1452] = true }
+Prices.BLACKWATER_AUCTIONEERS = { [8661] = true } -- Gadgetzan
+
+-- "Realm-Neutral": the Blackwater market on your realm.
+function Prices:BlackwaterKey()
+  return (ns.MarketKey():gsub("%-[^-]*$", "")) .. "-Neutral"
+end
+
+-- True only when the open auction house is positively a Blackwater one;
+-- anything else counts as your faction's.
+function Prices:AtBlackwater()
+  local guid = UnitGUID and UnitGUID("npc")
+  if guid then
+    local npcID = tonumber((select(6, strsplit("-", guid))))
+    if npcID and self.BLACKWATER_AUCTIONEERS[npcID] then
+      return true
+    end
+  end
+  local map = C_Map and C_Map.GetBestMapForUnit and C_Map.GetBestMapForUnit("player")
+  return map ~= nil and self.BLACKWATER_MAPS[map] == true
+end
+
+-- The companion's snapshot for a market (default: your realm and faction), if
+-- it's current: { house, snapshot, items = { [itemID] = { price, quantity } } }.
+function Prices:Companion(key)
   local data = GoldScoutPricesData
-  local market = type(data) == "table" and type(data.markets) == "table" and data.markets[ns.MarketKey()]
+  local market = type(data) == "table" and type(data.markets) == "table" and data.markets[key or ns.MarketKey()]
   if type(market) ~= "table" or type(market.items) ~= "table" or type(market.snapshot) ~= "number" then
     return nil
   end
@@ -37,8 +67,8 @@ function Prices:CompanionWritten()
   return type(data) == "table" and type(data.written) == "number" and data.written or nil
 end
 
-function Prices:Market()
-  local key = ns.MarketKey()
+function Prices:Market(key)
+  key = key or ns.MarketKey()
   local market = ns.db.markets[key]
   if not market then
     market = { items = {} }
@@ -78,14 +108,20 @@ end
 -- the source ("scan" or "blizzard"), from whichever source is newer.
 -- The price is the last one seen, even if the item has since sold out.
 function Prices:Get(itemID)
+  return self:GetFor(itemID, ns.MarketKey())
+end
+
+-- The same for any market, without creating it.
+function Prices:GetFor(itemID, key)
   if not ns.db or not itemID then
     return nil
   end
-  local entry = self:Market().items[itemID]
+  local market = ns.db.markets[key]
+  local entry = market and market.items and market.items[itemID]
   if entry and not entry.p then
     entry = nil
   end
-  local companion = self:Companion()
+  local companion = self:Companion(key)
   if companion and (not entry or (entry.t or 0) < companion.snapshot) then
     local listed = companion.items[itemID]
     if type(listed) == "table" and listed[1] then
@@ -101,6 +137,16 @@ function Prices:Get(itemID)
     return nil
   end
   return entry.p, entry.q or 0, time() - (entry.t or 0), "scan"
+end
+
+-- The Blackwater auction house's price on your realm (same returns as Get),
+-- for an extra tooltip line. Never used for rankings.
+function Prices:Blackwater(itemID)
+  local key = self:BlackwaterKey()
+  if key == ns.MarketKey() then
+    return nil -- a character without a faction already uses the Blackwater market
+  end
+  return self:GetFor(itemID, key)
 end
 
 -- Every item with a price from either source: { [itemID] = true }.

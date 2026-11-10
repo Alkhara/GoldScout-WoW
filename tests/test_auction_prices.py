@@ -150,6 +150,17 @@ class CompanionTests(unittest.TestCase):
             self.assertFalse(ap.remove_addon(forever))
             self.assertTrue(folder.exists())
 
+    def test_also_saves_the_realms_blackwater_house(self):
+        server = FakeServer([house(113, "Horde", 1), house(116, "Neutral", 1), house(114, "Horde", 2)],
+                            {113: many(10), 116: many(20), 114: many(30)},
+                            {"us": {"CAMWOWUS2Realm2PvP": 1, "PvERealm": 2}})
+        with Folder() as forever:
+            summary = ap.update(forever, [FakeAccount(seen={PVP: NOW, "PvERealm-Horde": NOW})], {}, NOW, server)
+            self.assertEqual(summary["markets"]["CAMWOWUS2Realm2PvP-Neutral"]["house"], 116)
+            self.assertEqual(summary["unknown"], [])          # PvE's Blackwater isn't mapped: not "unknown"
+            lua = (forever / "Interface" / "AddOns" / ap.DATA_ADDON / ap.DATA_FILE).read_text(encoding="utf-8")
+            self.assertIn('["CAMWOWUS2Realm2PvP-Neutral"] = { region = "us", house = 116', lua)
+
     def test_needs_goldscout_installed(self):
         with tempfile.TemporaryDirectory() as temp:
             summary = ap.update(Path(temp), [FakeAccount(seen={PVP: NOW})], {}, NOW,
@@ -164,6 +175,14 @@ function ns.Listen(message, handler) ns.listeners[message] = handler end
 function ns.MarketKey() return "Realm-Horde" end
 NOW = 1800000000
 time = function() return NOW end
+FAKE = { map = 1454, npc = "Creature-0-6805-1-18-8724-6384EE0F44" }
+UnitGUID = function(unit) if unit == "npc" then return FAKE.npc end end
+C_Map = { GetBestMapForUnit = function() return FAKE.map end }
+strsplit = function(sep, text)
+  local parts = {}
+  for part in (text .. sep):gmatch("(.-)%" .. sep) do parts[#parts + 1] = part end
+  return unpack(parts)
+end
 """
 
 
@@ -211,6 +230,35 @@ class AddonPricesTests(unittest.TestCase):
         self.record_scan(12, 100, 1, NOW - 60)
         count, _, snapshot = self.ns.Prices.Summary(self.ns.Prices)
         self.assertEqual((count, snapshot), (3, NOW - 3600))
+
+    def test_blackwater_is_recognized_only_for_sure(self):
+        fake, prices = self.lua.globals().FAKE, self.ns.Prices
+        self.assertFalse(prices.AtBlackwater(prices))                      # Orgrimmar, as seen in game
+        fake.map, fake.npc = 1446, "Creature-0-7053-1-22-8661-D6187EAA96"  # Gadgetzan, as seen in game
+        self.assertTrue(prices.AtBlackwater(prices))
+        fake.map = None                                                    # map unknown: the auctioneer decides
+        self.assertTrue(prices.AtBlackwater(prices))
+        fake.npc = "Creature-0-1-1-1-9999-0"
+        self.assertFalse(prices.AtBlackwater(prices))
+        self.assertEqual(prices.BlackwaterKey(prices), "Realm-Neutral")
+
+    def test_blackwater_prices_stay_separate(self):
+        prices = self.ns.Prices
+        self.record_scan(10, 500, 3, NOW - 600)                             # your Horde scan
+        neutral = prices.Market(prices, "Realm-Neutral")
+        prices.Record(prices, 10, 650, 2, NOW - 60, neutral)              # a newer Blackwater scan
+        self.assertEqual(self.get(10), (500, 3, 600, "scan"))               # rankings keep your faction's
+        self.assertEqual(prices.Blackwater(prices, 10), (650, 2, 60, "scan"))
+        self.assertEqual(prices.Blackwater(prices, 11), None)
+
+    def test_blackwater_from_the_companion_without_creating_a_market(self):
+        text = ap.lua_text({"Realm-Neutral": {"region": "us", "house": 116, "snapshot": NOW - 1800,
+                                              "prices": {"10": [700, 4]}}}, NOW)
+        self.lua.execute(text)
+        prices = self.ns.Prices
+        self.assertEqual(prices.Blackwater(prices, 10), (700, 4, 1800, "blizzard"))
+        self.assertEqual(self.get(10), None)
+        self.assertIsNone(self.ns.db.markets["Realm-Neutral"])
 
     def test_login_remembers_the_market(self):
         self.ns.listeners["LOGIN"]()

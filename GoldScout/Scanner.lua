@@ -170,7 +170,8 @@ function Scanner:Finish(complete)
   end
 
   local now = time()
-  local market = ns.Prices:Market()
+  local blackwater = self.marketKey ~= nil and self.marketKey ~= ns.MarketKey()
+  local market = ns.Prices:Market(self.marketKey)
   local count = 0
   for itemID, result in pairs(byItem) do
     ns.Prices:Record(itemID, result.p, result.q, now, market)
@@ -187,6 +188,10 @@ function Scanner:Finish(complete)
   end
 
   ns.Print(("%s: %d items priced."):format(complete and "Scan complete" or "Scan stopped", count))
+  if blackwater then
+    ns.Print("This was a Blackwater (goblin) auction house: its prices are kept separately and show as an "
+      .. "extra tooltip line. Your " .. (UnitFactionGroup("player") or "faction") .. " prices are unchanged.")
+  end
   ns.Fire("SCAN_FINISHED", complete, count)
 end
 
@@ -198,11 +203,13 @@ local function OnAuctionHouseShown()
     return
   end
   Scanner.ahOpen = true
+  -- Which market this auction house's scans belong to (see Prices:AtBlackwater).
+  Scanner.marketKey = ns.Prices:AtBlackwater() and ns.Prices:BlackwaterKey() or ns.MarketKey()
   ns.Fire("AH_SHOWN")
 
   local settings = ns.db and ns.db.settings
   if settings and settings.autoScan then
-    local last = ns.Prices:Market().lastScan or 0
+    local last = ns.Prices:Market(Scanner.marketKey).lastScan or 0
     if time() - last >= (settings.autoScanMinutes or 10) * 60 then
       -- Give the default UI a moment to send its own opening queries first.
       C_Timer.After(2, function()
@@ -222,6 +229,7 @@ local function OnAuctionHouseClosed()
   if Scanner.scan then
     Scanner:Finish(false)
   end
+  Scanner.marketKey = nil
   wipe(queue)
   ns.Fire("AH_HIDDEN")
 end

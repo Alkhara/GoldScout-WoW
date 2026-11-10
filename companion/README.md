@@ -37,7 +37,9 @@ Share drop data form on GitHub with your export filled in instead.
 About once an hour the companion saves the latest auction house prices for your
 realms (from Blizzard's hourly snapshot) in a small `GoldScout_Prices` addon.
 GoldScout uses them for every item you haven't scanned more recently yourself,
-so your own scan still wins when it's newer. This works whether or not you share
+so your own scan still wins when it's newer. It also saves your realm's
+Blackwater (goblin) auction house prices, which GoldScout shows as an extra
+tooltip line without ever using them in place of your faction's. This works whether or not you share
 drop data.
 
 The game only reads addon files when you log in or `/reload`, so GoldScout has

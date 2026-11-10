@@ -30,6 +30,11 @@ based on your level, class, faction and professions.
   (as of your last login or `/reload`) and uses whichever is newer for each
   item, that or your own scan. When newer prices are waiting, the window offers
   **Load newer prices**.
+- **Blackwater (goblin) auction houses** in Booty Bay, Gadgetzan and Everlook
+  are kept apart from your faction's auction house: scanning there never
+  replaces your own prices, which stay the ones GoldScout ranks with. Item
+  tooltips add a "GoldScout Blackwater" line with that price and how it
+  compares (from your scan there, or from GoldScout Companion).
 - **Experience check**: on the Farm tab the **Lvl** column is green when every
   mob in that farm gives you experience, yellow when only some do, and gray when
   they're all gray to you. Tick **Gives XP** to hide the no-experience farms.
@@ -116,6 +121,7 @@ stays in your own SavedVariables.
 | `/gscout set autoscan on` | Scan automatically when you open the auction house (at most every 10 minutes) |
 | `/gscout set window off` | Stop opening beside the auction house |
 | `/gscout set tooltip off` | Remove prices from item tooltips |
+| `/gscout set blackwater off` | Remove the Blackwater (goblin) auction house line from item tooltips |
 | `/gscout set waypoint off` | Hunts stop placing the map waypoint |
 | `/gscout set markers off` | Hunts stop putting icons on nameplates |
 | `/gscout set mobtips off` | Remove GoldScout lines from mob tooltips |

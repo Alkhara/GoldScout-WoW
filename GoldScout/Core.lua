@@ -13,6 +13,7 @@ local DEFAULT_SETTINGS = {
   autoScanMinutes = 10,   -- minimum minutes between automatic scans
   openWithAH = true,      -- show the GoldScout window next to the auction house
   tooltip = true,         -- add GoldScout prices to item tooltips
+  blackwaterTooltip = true, -- add the Blackwater (goblin) auction house price as a second tooltip line
   killsPerHour = 70,      -- kills per hour on mobs of your own level
   nodesPerHour = 25,      -- herb or ore nodes per hour
   picksPerHour = 110,     -- pickpockets per hour

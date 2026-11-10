@@ -741,6 +741,10 @@ function UI:UpdateHeaderText()
       status = status .. " Press Scan AH at an auctioneer to refresh."
     end
   end
+  if not scanning and ns.Scanner.ahOpen and ns.Scanner.marketKey and ns.Scanner.marketKey ~= ns.MarketKey() then
+    status = "Blackwater (goblin) auction house: a scan here is kept separately and never replaces your "
+      .. (UnitFactionGroup("player") or "faction") .. " prices."
+  end
   f.statusText:SetText(status)
   -- The companion writes a new file about once an hour; offer to load it.
   local written = ns.Prices:CompanionWritten()
@@ -1024,7 +1028,11 @@ local function AddTooltipPrices(tooltip, itemID)
   end
   local price, listed, age, source = ns.Prices:Get(itemID)
   local vendor = ns.db.vendor[itemID]
-  if not price and not vendor then
+  local goblin, goblinListed, goblinAge
+  if ns.db.settings.blackwaterTooltip ~= false then
+    goblin, goblinListed, goblinAge = ns.Prices:Blackwater(itemID)
+  end
+  if not price and not vendor and not goblin then
     return
   end
   if price then
@@ -1038,6 +1046,16 @@ local function AddTooltipPrices(tooltip, itemID)
     if average and days and days > 1 then
       tooltip:AddDoubleLine(("GoldScout %d-day avg low"):format(days), ns.Money(average), 1, 0.82, 0, 1, 1, 1)
     end
+  end
+  if goblin then
+    local text = ns.Money(goblin)
+    if goblinListed == 0 then
+      text = text .. Gray(" (none listed)")
+    elseif price and price > 0 then
+      local difference = math.floor((goblin / price - 1) * 100 + 0.5)
+      text = text .. Gray((" (%s%d%%)"):format(difference >= 0 and "+" or "", difference))
+    end
+    tooltip:AddDoubleLine("GoldScout Blackwater (" .. ns.Age(goblinAge) .. ")", text, 0.8, 0.7, 0.4, 1, 1, 1)
   end
   if vendor then
     tooltip:AddDoubleLine("GoldScout vendor price", ns.Money(vendor), 1, 0.82, 0, 1, 1, 1)
@@ -1161,6 +1179,7 @@ local SETTING_ALIASES = {
   picks = "picksPerHour",
   autoscan = "autoScan",
   tooltip = "tooltip",
+  blackwater = "blackwaterTooltip",
   window = "openWithAH",
   waypoint = "huntWaypoint",
   markers = "huntMarkers",
@@ -1269,7 +1288,7 @@ local function SetOption(rest)
   end
   if not setting then
     ns.Print("Usage: /gscout set kills|nodes|picks <number>, or "
-      .. "/gscout set autoscan|tooltip|window|waypoint|markers|learn|mobtips|raredrops|cloth|minimap|companionhint on|off")
+      .. "/gscout set autoscan|tooltip|blackwater|window|waypoint|markers|learn|mobtips|raredrops|cloth|minimap|companionhint on|off")
     return
   end
   if type(ns.db.settings[setting]) == "boolean" then

@@ -241,6 +241,16 @@ def update(forever, accounts, state, now, fetch=get_json):
             downloaded[(region, house)] = fetch("/v1/prices/%s/%d" % (region, house))
         return downloaded[(region, house)]
 
+    # Each realm's Blackwater (goblin) auction house too, for GoldScout's extra
+    # tooltip line; only when it's mapped, and never reported as unknown.
+    extra = set()
+    for key in list(wanted):
+        realm, faction = split_market(key)
+        neutral = realm + "-Neutral"
+        if faction != "Neutral" and neutral not in wanted:
+            wanted[neutral] = {"scan": {}, "last_scan": None, "seen": 0}
+            extra.add(neutral)
+
     chosen, unknown = {}, []
     for key, info in sorted(wanted.items()):
         found, how = house_for_realm(key, listing), "realm"
@@ -261,7 +271,7 @@ def update(forever, accounts, state, now, fetch=get_json):
                     found, how = match, "your scan"
         if found and found in houses:
             chosen[key] = (found, how)
-        else:
+        elif key not in extra:
             unknown.append(key)
 
     summary = {"markets": {key: {"house": house, "snapshot": houses[(region, house)]["snapshot"], "how": how}
