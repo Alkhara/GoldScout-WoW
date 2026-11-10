@@ -1,12 +1,12 @@
-GoldScout-export 4^m00jxkjr841x^43
+GoldScout-export 4^m00jxkjr841x^46
 154^2^0^16^17^1436^0.6243^0.6214^2^Greater Fleshripper^6889:1:1^
 157^17^0^14^15^1436^0.3592^0.5846^17^Goretusk^723:3:3,731:6:6,769:7:10,771:1:1,2677:2:2,3171:2:2,3172:4:4^
 199^3^0^10^11^1436^0.4139^0.2942^3^Young Fleshripper^4757:3:3,6889:2:2,17056:1:1^
 454^3^0^12^13^1436^0.5082^0.2620^3^Young Goretusk^731:1:1,769:1:1,3172:1:1^
 547^4^0^16^17^1436^0.6026^0.6674^4^Great Goretusk^769:1:1,3172:2:2,6528:1:1^
 598^2^0^0^0^0^0.0000^0.0000^0^^2589:1:3^
-833^30^0^11^12^1436^0.4171^0.3078^30^Coyote Packleader^2673:13:13,3299:12:12,3300:2:2,4561:1:1,5573:1:1,211780:1:1,211785:1:1^
-834^31^0^10^11^1436^0.4984^0.2540^31^Coyote^2673:12:12,3299:6:6,3300:2:2^
+833^77^0^11^12^1436^0.4129^0.2970^77^Coyote Packleader^774:1:1,2075:1:1,2673:28:28,2966:1:1,3299:32:32,3300:8:8,4561:1:1,4689:1:1,5573:1:1,9745:1:1,211780:1:1,211785:1:1^
+834^109^0^10^11^1436^0.4783^0.2556^109^Coyote^2140:1:1,2673:37:37,3299:26:26,3300:9:9,6514:1:1,6515:2:2^
 1109^12^0^13^14^1436^0.3881^0.6145^12^Fleshripper^555:3:3,729:4:4,3399:1:1,5114:2:2,6555:1:1,6889:5:5,17056:2:2^
 2236^2^0^20^21^1439^0.2877^0.9111^2^Raging Reef Crawler^2675:1:1,3010:2:2,17057:1:1^
 2529^2^0^0^0^0^0.0000^0.0000^0^^^
@@ -209,6 +209,7 @@ GoldScout-export 4^m00jxkjr841x^43
 @i^731^Goretusk Snout
 @i^769^Chunk of Boar Meat
 @i^771^Chipped Boar Tusk
+@i^774^Malachite
 @i^858^Lesser Healing Potion
 @i^929^Healing Potion
 @i^1015^Lean Wolf Flank
@@ -249,6 +250,8 @@ GoldScout-export 4^m00jxkjr841x^43
 @i^1812^Short-handled Battle Axe
 @i^1822^Cedar Walking Stick
 @i^1823^Bludgeoning Cudgel
+@i^2075^Priest's Mace of Magic
+@i^2140^Carving Knife of Magic
 @i^2210^Battered Buckler
 @i^2211^Bent Large Shield
 @i^2589^Linen Cloth
@@ -265,6 +268,7 @@ GoldScout-export 4^m00jxkjr841x^43
 @i^2783^Shoddy Blunderbuss
 @i^2785^Stiff Recurve Bow
 @i^2940^Bloody Bear Paw
+@i^2966^Warrior's Pants
 @i^3010^Fine Sand
 @i^3012^Scroll of Agility
 @i^3171^Broken Boar Tusk
@@ -297,6 +301,7 @@ GoldScout-export 4^m00jxkjr841x^43
 @i^4556^Speckled Shell Fragment
 @i^4561^Scalping Tomahawk of Strength
 @i^4606^Spongy Morel
+@i^4689^Hunting Cloak
 @i^4739^Plainstrider Meat
 @i^4740^Plainstrider Feather
 @i^4742^Mountain Cougar Pelt
@@ -363,6 +368,8 @@ GoldScout-export 4^m00jxkjr841x^43
 @i^5881^Head of Kelris
 @i^6308^Raw Bristle Whisker Catfish
 @i^6444^Forked Tongue
+@i^6514^Disciple's Cloak
+@i^6515^Disciple's Gloves
 @i^6528^Spellbinder Robe
 @i^6555^Bard's Cloak
 @i^6826^Brilliant Scale
@@ -374,6 +381,7 @@ GoldScout-export 4^m00jxkjr841x^43
 @i^7097^Leg Meat
 @i^7098^Splintered Tusk
 @i^9451^Bubbling Water
+@i^9745^Simple Cape
 @i^10459^Chief Sharptusk Thornmantle's Head
 @i^10621^Runed Scroll
 @i^11384^Broken Basilisk Teeth
@@ -428,6 +436,7 @@ GoldScout-export 4^m00jxkjr841x^43
 @q^731^1:7:1
 @q^769^1:7:1
 @q^771^0:15:0
+@q^774^2:7:1
 @q^858^1:0:0
 @q^929^1:0:0
 @q^1015^1:7:1
@@ -468,6 +477,8 @@ GoldScout-export 4^m00jxkjr841x^43
 @q^1812^0:2:0
 @q^1822^0:2:0
 @q^1823^0:2:0
+@q^2075^2:2:0
+@q^2140^2:2:0
 @q^2210^0:4:0
 @q^2211^0:4:0
 @q^2589^1:7:1
@@ -484,6 +495,7 @@ GoldScout-export 4^m00jxkjr841x^43
 @q^2783^0:2:0
 @q^2785^0:2:0
 @q^2940^0:15:0
+@q^2966^2:4:0
 @q^3010^0:15:0
 @q^3012^1:0:0
 @q^3171^0:15:0
@@ -516,6 +528,7 @@ GoldScout-export 4^m00jxkjr841x^43
 @q^4556^0:15:0
 @q^4561^2:2:0
 @q^4606^1:0:0
+@q^4689^1:4:0
 @q^4739^1:12:0
 @q^4740^1:12:0
 @q^4742^1:12:0
@@ -582,6 +595,8 @@ GoldScout-export 4^m00jxkjr841x^43
 @q^5881^1:12:0
 @q^6308^1:7:1
 @q^6444^0:15:0
+@q^6514^1:4:0
+@q^6515^1:4:0
 @q^6528^2:4:0
 @q^6555^1:4:0
 @q^6826^0:15:0
@@ -593,6 +608,7 @@ GoldScout-export 4^m00jxkjr841x^43
 @q^7097^1:0:0
 @q^7098^0:15:0
 @q^9451^1:0:0
+@q^9745^1:4:0
 @q^10459^1:12:0
 @q^10621^1:0:0
 @q^11384^0:15:0
