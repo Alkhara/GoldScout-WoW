@@ -80,8 +80,11 @@ ns.COMMUNITY = {
   [4094] = { k = 14, p = 0, lmin = 24, lmax = 25, n = "Galak Scout", m = 1441, x = 0.4500, y = 0.4009, c = 14, i = { [1205] = { d = 1, q = 1 }, [4306] = { d = 3, q = 4 } }, pi = {} },
   [4096] = { k = 19, p = 0, lmin = 24, lmax = 25, n = "Galak Windchaser", m = 1441, x = 0.4450, y = 0.3986, c = 19, i = { [1205] = { d = 1, q = 1 }, [1748] = { d = 1, q = 1 }, [2783] = { d = 1, q = 1 }, [4306] = { d = 2, q = 4 }, [211784] = { d = 1, q = 1 } }, pi = {} },
   [4100] = { k = 9, p = 0, lmin = 28, lmax = 29, n = "Screeching Harpy", m = 1441, x = 0.2680, y = 0.5215, c = 9, i = {}, pi = {} },
+  [4124] = { k = 5, p = 0, lmin = 27, lmax = 28, n = "Needles Cougar", m = 1441, x = 0.3337, y = 0.4570, c = 5, i = { [5137] = { d = 3, q = 3 } }, pi = {} },
   [4128] = { k = 12, p = 0, lmin = 22, lmax = 23, n = "Hecklefang Stalker", m = 1413, x = 0.4755, y = 0.7565, c = 12, i = { [3301] = { d = 3, q = 3 }, [3402] = { d = 2, q = 2 } }, pi = {} },
+  [4140] = { k = 6, p = 0, lmin = 31, lmax = 32, n = "Scorpid Reaver", m = 1441, x = 0.8425, y = 0.5843, c = 6, i = { [5794] = { d = 1, q = 1 }, [12037] = { d = 1, q = 1 }, [19938] = { d = 1, q = 1 } }, pi = {} },
   [4196] = { k = 8, p = 0, lmin = 21, lmax = 22, n = "Silithid Swarm", m = 1413, x = 0.4337, y = 0.7101, c = 8, i = {}, pi = {} },
+  [4248] = { k = 9, p = 0, lmin = 26, lmax = 27, n = "Pesterhide Hyena", m = 1441, x = 0.3525, y = 0.5196, c = 9, i = { [3402] = { d = 5, q = 5 } }, pi = {} },
   [4788] = { k = 8, p = 0, lmin = 20, lmax = 21, n = "Fallenroot Satyr", m = 1414, x = 0.4392, y = 0.3488, c = 8, i = { [1205] = { d = 1, q = 1 }, [1741] = { d = 1, q = 1 }, [2589] = { d = 1, q = 5 } }, pi = {} },
   [4802] = { k = 14, p = 0, lmin = 20, lmax = 21, n = "Blackfathom Tide Priestess", m = 1414, x = 0.4389, y = 0.3478, c = 14, i = { [1768] = { d = 1, q = 1 }, [5524] = { d = 1, q = 1 }, [6308] = { d = 1, q = 2 }, [16790] = { d = 1, q = 1 }, [17057] = { d = 3, q = 3 } }, pi = {} },
   [4803] = { k = 10, p = 0, lmin = 21, lmax = 22, n = "Blackfathom Oracle", m = 1414, x = 0.4406, y = 0.3468, c = 10, i = { [5524] = { d = 3, q = 3 } }, pi = {} },
@@ -97,7 +100,7 @@ ns.COMMUNITY = {
 -- client can take its shared loot back out (see Community.lua).
 ns.COMMUNITY_SOURCES = {
   ["4z9mhp23fv2i"] = 3,
-  ["fvxpmchaz0r7"] = 11,
+  ["fvxpmchaz0r7"] = 12,
   ["lpchh63bnsyf"] = 3,
   ["m00jxkjr841x"] = 38,
 }
