@@ -429,9 +429,15 @@
   function usageSection(snap) {
     var usage = snap && snap.requests;
     if (!usage || !usage.days) {
-      return section("usage", "Server requests", null, [card(null, null, [el("p", { cls: "muted",
-        text: "Not set up yet: add the CLOUDFLARE_ANALYTICS_TOKEN secret (a Cloudflare API token with Account " +
-          "Analytics: Read) and the CLOUDFLARE_ACCOUNT_ID variable to the GitHub repository." })])]);
+      var why = usage && usage.error
+        ? "Cloudflare refused the analytics request: " + usage.error + ". The CLOUDFLARE_ANALYTICS_TOKEN secret " +
+          "needs Account Analytics: Read on the account named by the CLOUDFLARE_ACCOUNT_ID variable."
+        : usage && usage.missing
+          ? "The data merge workflow didn't get " + usage.missing.join(" or ") + ". Check it's set under the " +
+            "repository's Settings > Secrets and variables > Actions, on the right tab (Secrets or Variables)."
+          : "Not set up yet: add the CLOUDFLARE_ANALYTICS_TOKEN secret (a Cloudflare API token with Account " +
+            "Analytics: Read) and the CLOUDFLARE_ACCOUNT_ID variable to the GitHub repository.";
+      return section("usage", "Server requests", null, [card(null, null, [el("p", { cls: "muted", text: why })])]);
     }
     function total(day) { return Object.keys(day.scripts).reduce(function (s, k) { return s + day.scripts[k]; }, 0); }
     var days = usage.days;

@@ -115,6 +115,26 @@ class WorkerRequestsTests(unittest.TestCase):
         with self.assertRaises(RuntimeError):
             admin_stats.worker_requests("t", "a", 0, post=lambda *a: {"errors": [{"message": "not authorized"}]})
 
+    def test_the_dashboard_is_told_why_there_are_no_request_counts(self):
+        import admin_stats
+        problems = []
+
+        def attempt(name, fn):
+            try:
+                return fn()
+            except Exception as error:
+                problems.append("%s: %s" % (name, error))
+
+        def refused(*_):
+            raise RuntimeError("not authorized")
+
+        both = {"CLOUDFLARE_ANALYTICS_TOKEN": "t", "CLOUDFLARE_ACCOUNT_ID": "a"}
+        self.assertEqual(admin_stats.request_counts(0, attempt, {"CLOUDFLARE_ANALYTICS_TOKEN": "t"}),
+                         {"missing": ["the CLOUDFLARE_ACCOUNT_ID variable"]})
+        self.assertEqual(admin_stats.request_counts(0, attempt, both, refused), {"error": "not authorized"})
+        self.assertEqual(problems, ["Cloudflare analytics: not authorized"])
+        self.assertEqual(admin_stats.request_counts(0, attempt, both, lambda *_: {"days": []}), {"days": []})
+
 
 class StampTests(unittest.TestCase):
     def test_release_builds_report_the_tag(self):

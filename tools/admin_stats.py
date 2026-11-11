@@ -96,6 +96,27 @@ def worker_requests(token, account, now, days=30, post=None):
             "month": dict(month), "errors": dict(errors), "through": int(now)}
 
 
+def request_counts(now, attempt, environ=os.environ, fetch=None):
+    """worker_requests() for the dashboard, or why there are none: {"missing": [...]}
+    when the workflow doesn't pass the token or account ID, {"error": "..."} when
+    Cloudflare refuses (also a problem, through attempt)."""
+    token, account = environ.get("CLOUDFLARE_ANALYTICS_TOKEN"), environ.get("CLOUDFLARE_ACCOUNT_ID")
+    missing = [name for name, value in (("the CLOUDFLARE_ANALYTICS_TOKEN secret", token),
+                                        ("the CLOUDFLARE_ACCOUNT_ID variable", account)) if not value]
+    if missing:
+        return {"missing": missing}
+    failure = []
+
+    def counts():
+        try:
+            return (fetch or worker_requests)(token, account, now)
+        except Exception as error:
+            failure.append(str(error))
+            raise
+
+    return attempt("Cloudflare analytics", counts) or {"error": failure[0] if failure else "no reply"}
+
+
 def github(path):
     headers = {"Accept": "application/vnd.github+json"}
     if os.environ.get("GITHUB_TOKEN"):
@@ -290,9 +311,7 @@ def build(now, api, admin, mine):
             "/actions/workflows/%s/runs?per_page=100" % f).get("workflow_runs", []))
         runs[file] = found or []
     snapshot["workflows"] = workflow_health(runs, now)
-    token, account = os.environ.get("CLOUDFLARE_ANALYTICS_TOKEN"), os.environ.get("CLOUDFLARE_ACCOUNT_ID")
-    snapshot["requests"] = attempt("Cloudflare analytics", lambda: worker_requests(token, account, now)) \
-        if token and account else None
+    snapshot["requests"] = request_counts(now, attempt)
     pulls = attempt("data pull request", lambda: github(
         "/pulls?state=open&head=%s:data/community-update" % REPO.split("/")[0])) or []
     snapshot["data_pr"] = None if not pulls else {
