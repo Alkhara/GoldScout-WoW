@@ -1,4 +1,4 @@
-GoldScout-export 5^fvxpmchaz0r7^16
+GoldScout-export 5^fvxpmchaz0r7^17
 2265^5^0^24^25^1424^0.3256^0.4537^5^Hillsbrad Apprentice Blacksmith^2592:1:1,3692:1:1,4306:1:1^
 2266^12^0^23^24^1424^0.3364^0.4259^12^Hillsbrad Farmer^929:1:1,2592:1:1,3039:1:1,3692:2:2,4306:1:1,4538:1:1^
 2267^24^0^24^25^1424^0.3437^0.4587^24^Hillsbrad Peasant^422:1:1,2589:1:2,2592:1:1,3692:2:2,4306:1:1^
@@ -14,6 +14,7 @@ GoldScout-export 5^fvxpmchaz0r7^16
 2348^1^0^26^27^1424^0.5829^0.6428^1^Elder Moss Creeper^2251:1:1^
 2349^1^0^25^25^1424^0.5993^0.4774^1^Giant Moss Creeper^1081:1:1,2251:1:1^
 2350^1^0^20^21^1424^0.6471^0.2416^1^Forest Moss Creeper^878:1:1^
+2351^2^0^21^22^1424^0.6734^0.1325^2^Gray Bear^2940:1:1,3702:1:1,3730:1:1,11406:1:1^
 2360^4^0^22^23^1424^0.3407^0.4164^4^Hillsbrad Farmhand^2592:1:2^
 2369^2^0^30^31^1424^0.5760^0.6665^2^Daggerspine Shorehunter^6308:1:3,17057:2:2,17058:1:1^
 2371^10^0^31^32^1424^0.5787^0.6605^10^Daggerspine Siren^3385:1:1,3509:5:5,7072:1:1,7355:1:1,17057:1:1,17058:3:3,248692:1:1^
@@ -130,6 +131,11 @@ GoldScout-export 5^fvxpmchaz0r7^16
 12876^1^0^0^0^0^0.0000^0.0000^0^^16782:1:1^
 12902^1^0^0^0^0^0.0000^0.0000^0^^^
 12918^1^0^26^26^1440^0.5645^0.6352^1^Chief Murgut^4306:1:1,16655:1:1^
+264079^1^0^27^28^1412^0.3331^0.0799^1^Gloomrise Hatchling^3167:1:1^
+264081^3^0^28^28^1412^0.3314^0.0824^3^Gloomrise Spinner^878:1:1,1081:1:1,273181:2:2^
+264082^1^0^30^30^1412^0.3376^0.0688^1^Broodmother Valraxx^273658:1:1^
+264083^4^0^28^29^1412^0.3390^0.1039^4^Gloomrise Soldier^1081:1:1,3167:1:1,3174:1:1,5465:3:3^
+264096^1^0^28^29^1412^0.3316^0.0745^1^Gnawed Corpse^273001:1:1^
 270094^1^0^30^30^1441^0.5739^0.5652^1^Stormheart^5128:1:1,279186:1:1^
 @i^422^Dwarven Mild
 @i^729^Stringy Vulture Meat
@@ -166,6 +172,8 @@ GoldScout-export 5^fvxpmchaz0r7^16
 @i^3010^Fine Sand
 @i^3039^Short Ash Bow
 @i^3048^Lambent Scale Legguards
+@i^3167^Thick Spider Hair
+@i^3174^Spider Ichor
 @i^3385^Lesser Mana Potion
 @i^3399^Vulture Talon
 @i^3402^Soft Patch of Fur
@@ -174,6 +182,7 @@ GoldScout-export 5^fvxpmchaz0r7^16
 @i^3670^Large Slimy Bone
 @i^3692^Hillsbrad Human Skull
 @i^3693^Humbert's Sword
+@i^3702^Bear Gall Bladder
 @i^3712^Turtle Meat
 @i^3730^Big Bear Meat
 @i^3770^Mutton Chop
@@ -193,6 +202,7 @@ GoldScout-export 5^fvxpmchaz0r7^16
 @i^5136^Torn Furry Ear
 @i^5137^Bright Eyeball
 @i^5447^Damaged Elemental Bracer
+@i^5465^Small Spider Leg
 @i^5471^Stag Meat
 @i^5481^Satyr Horns
 @i^5523^Small Barnacled Clam
@@ -255,6 +265,9 @@ GoldScout-export 5^fvxpmchaz0r7^16
 @i^248689^Waylaid Crate: Journeyman Curiosities
 @i^248692^Waylaid Crate: Expert Ore
 @i^249881^Recipe: Root Tea
+@i^273001^Gloomrise Toxin Sample
+@i^273181^Crystalline Silk
+@i^273658^Bloody Parchment
 @i^277936^Glittering Sunstone
 @i^279186^Stormheart's Still-beating Heart
 @q^422^1:0:0
@@ -292,6 +305,8 @@ GoldScout-export 5^fvxpmchaz0r7^16
 @q^3010^0:15:0
 @q^3039^2:2:0
 @q^3048^2:4:0
+@q^3167^0:15:0
+@q^3174^1:7:1
 @q^3385^1:0:0
 @q^3399^0:15:0
 @q^3402^0:15:0
@@ -300,6 +315,7 @@ GoldScout-export 5^fvxpmchaz0r7^16
 @q^3670^0:15:0
 @q^3692^1:12:0
 @q^3693^1:12:0
+@q^3702^0:15:0
 @q^3712^1:7:1
 @q^3730^1:7:1
 @q^3770^1:0:0
@@ -319,6 +335,7 @@ GoldScout-export 5^fvxpmchaz0r7^16
 @q^5136^0:15:0
 @q^5137^0:15:0
 @q^5447^0:15:0
+@q^5465^1:7:1
 @q^5471^1:7:1
 @q^5481^1:12:0
 @q^5523^1:7:0
@@ -381,8 +398,12 @@ GoldScout-export 5^fvxpmchaz0r7^16
 @q^248689^1:0:1
 @q^248692^1:0:1
 @q^249881^1:9:0
+@q^273001^1:12:0
+@q^273181^1:12:0
+@q^273658^1:15:0
 @q^277936^1:12:0
 @q^279186^1:12:0
+@m^1412^Mulgore
 @m^1414^Kalimdor
 @m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
@@ -1010,6 +1031,7 @@ GoldScout-export 5^fvxpmchaz0r7^16
 @a^2348^251:1
 @a^2349^191:1
 @a^2350^92:1
+@a^2351^53:1,73:1
 @a^2369^271:2
 @a^2371^251:2,271:8
 @a^2374^266:3
@@ -1018,4 +1040,9 @@ GoldScout-export 5^fvxpmchaz0r7^16
 @a^2377^267:2,268:5,288:1
 @a^2503^205:3,225:2
 @a^4142^274:1
+@a^264079^26:1
+@a^264081^26:3
+@a^264082^26:1
+@a^264083^26:1,46:2,47:1
+@a^264096^26:1
 @l^0^enUS
