@@ -73,6 +73,7 @@ English, Deutsch, Français, 한국어 and 繁體中文, following your game's l
 ### Links
 - **GoldScout Companion** (free, Windows): https://wowgoldscout.com/companion
 - Website: https://wowgoldscout.com
+- Questions and help: https://wowgoldscout.com/faq · Discord: https://discord.gg/rJdZcuepzN
 - Full guide: https://github.com/Alkhara/GoldScout-WoW/blob/main/GoldScout/README.md
 
 *Auction data from the Blizzard Entertainment Game Data API. GoldScout is not affiliated with or endorsed by Blizzard Entertainment.*

@@ -74,4 +74,5 @@ the "Last updated" date above shows the current version.
 
 ## Contact
 
-Open an issue at https://github.com/Alkhara/GoldScout-WoW/issues.
+Email admin@wowgoldscout.com, or open an issue at
+https://github.com/Alkhara/GoldScout-WoW/issues.

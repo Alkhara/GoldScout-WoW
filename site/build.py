@@ -9,6 +9,7 @@ the page always match the data in the repository.
 """
 import datetime
 import html
+import re
 import shutil
 import subprocess
 import sys
@@ -37,6 +38,9 @@ LINKS = {
     "terms": REPO + "/blob/main/docs/CONTRIBUTOR_TERMS.md",
     "data_license": REPO + "/blob/main/DATA_LICENSE.md",
     "source": REPO,
+    "companion_guide": REPO + "/blob/main/companion/README.md#on-a-mac",
+    "discord": "https://discord.gg/rJdZcuepzN",
+    "contact": "mailto:admin@wowgoldscout.com",
 }
 
 SCREENSHOTS = [
@@ -45,6 +49,121 @@ SCREENSHOTS = [
     ("Tracker.JPG", "Hunt mode", "Kills, drops and gold per hour while you farm."),
     ("TaggedMobs.JPG", "Hunt markers", "The mobs you're hunting, marked on their nameplates."),
 ]
+
+
+# The FAQ, by section: (question, answer as HTML). Answers may use the LINKS
+# names as %(name)s; the structured data gets the same text without tags.
+FAQ = [
+    ("Getting started", [
+        ("What is GoldScout?",
+         "A free addon for WoW Forever that answers one question: what should the character you're playing farm "
+         "or craft for gold right now? It ranks farms and recipes by gold per hour for that character's level, "
+         "class, faction and professions, using auction house prices and drop rates shared by players."),
+        ("How do I get started?",
+         "Install GoldScout from <a href=\"%(curseforge)s\">CurseForge</a> or <a href=\"%(wago)s\">Wago</a>, log "
+         "in and type <code>/gscout</code>. A short checklist shows what's left to set up and ticks itself off: "
+         "prices for your auction house, your recipes if you craft, and your first Hunt. <code>/gscout "
+         "welcome</code> shows it again."),
+        ("Is it free?",
+         "Yes. Every feature is the same for everyone, with no premium version, ads or accounts."),
+        ("Do I need GoldScout Companion?",
+         "No. GoldScout works on its own: press <b>Scan AH</b> at any auctioneer for prices. "
+         "<a href=\"/companion\">The companion</a> brings prices in every hour without scanning, and shares your "
+         "drop data so the Farm tab keeps getting better."),
+        ("Does it work on a Mac?",
+         "The addon does, like any addon. GoldScout Companion is a Windows app; on a Mac it "
+         "<a href=\"%(companion_guide)s\">runs from source</a> for now, and a signed Mac app is planned."),
+    ]),
+    ("Rules and safety", [
+        ("Is GoldScout allowed?",
+         "GoldScout only shows you information, using the same addon interface every addon uses. It never "
+         "moves, targets, attacks, loots or clicks anything for you, and it skips anything the game hides from "
+         "addons instead of working around it."),
+        ("Does the companion touch the game?",
+         "No. It reads GoldScout's saved data file and writes one small data addon, GoldScout_Prices, which the "
+         "game loads at login like any other addon. It never reads or changes the running game."),
+        ("Will anything pop up while I play?",
+         "No. The companion's only notification says a new version is out, and it waits until World of Warcraft "
+         "is closed."),
+    ]),
+    ("Prices", [
+        ("Where do the prices come from?",
+         "Three places, newest first: your own <b>Scan AH</b>, the companion's hourly copy of Blizzard's auction "
+         "house snapshot for your realm, and, until you have either, regional estimates (the typical price "
+         "across your region's auction houses) that ship with each release. Auction data comes from the "
+         "Blizzard Entertainment Game Data API."),
+        ("Which realms have prices?",
+         "Realms in the US, Europe, Korea and Taiwan. Prices are kept per realm type and faction, so Alliance "
+         "and Horde characters each see their own auction house. The goblin (Blackwater) auction houses show as "
+         "an extra tooltip line and never replace your faction's prices."),
+        ("A price looks wrong. Why?",
+         "Prices are the lowest buyout listed, so one cheap listing can make an item look cheaper than it "
+         "really is. The <b>Listed</b> column shows how many are up, and tooltips warn when there are only a "
+         "few. A fresh <b>Scan AH</b> always wins over older prices."),
+        ("I see GoldScout's prices twice in tooltips.",
+         "Another addon is adding the same lines. Turn GoldScout's off in Options &gt; AddOns &gt; GoldScout, "
+         "or with <code>/gscout set tooltip off</code>."),
+    ]),
+    ("Farms and drop rates", [
+        ("Where do the drop rates come from?",
+         "From players looting in game, never from Wowhead or any other site. GoldScout learns what every mob "
+         "you loot really drops, and the shared data from all players ships in a release every week. "
+         "<a href=\"/drop-rates\">How drop rates work</a>."),
+        ("How accurate is gold per hour?",
+         "It's an estimate: price after the auction house cut, times the chance per kill, times your pace. Set "
+         "your own pace in Options &gt; AddOns &gt; GoldScout or with <code>/gscout set kills 80</code> (also "
+         "<code>nodes</code> and <code>picks</code>). The Chance column's color shows how many kills back a "
+         "rate up, and a Hunt measures what you actually earn."),
+        ("Why isn't a mob or zone listed?",
+         "Nobody has shared enough loot from it yet. Loot it yourself and GoldScout learns it right away; share "
+         "and everyone gets it in the next release."),
+    ]),
+    ("Your data", [
+        ("What does GoldScout share?",
+         "Only drop data: creature and item IDs, kill and drop counts, levels and where you looted, plus a "
+         "random ID. Never character, account or realm names. The addon itself never connects to anything; "
+         "sharing happens through the companion or the <a href=\"%(share)s\">share form</a>, and only if you "
+         "agree. See the <a href=\"%(privacy)s\">privacy policy</a>."),
+        ("How do I stop sharing, or have my data deleted?",
+         "Turn off <b>Share automatically</b> in the companion to stop uploads, or <code>/gscout set learn "
+         "off</code> to stop GoldScout learning from your loot at all. To have what you've shared deleted, "
+         "email <a href=\"%(contact)s\">admin@wowgoldscout.com</a> with your install ID (shown in your "
+         "exports)."),
+    ]),
+    ("Help", [
+        ("Where can I ask a question?",
+         "On the <a href=\"%(discord)s\">GoldScout Discord</a>. Bugs and ideas are welcome there or in "
+         "<a href=\"%(issues)s\">GitHub issues</a>; for anything private, email "
+         "<a href=\"%(contact)s\">admin@wowgoldscout.com</a>."),
+        ("Something isn't working. What should I send?",
+         "Type <code>/gscout errors</code> to list GoldScout's recent errors and include them, along with what "
+         "you were doing. The <a href=\"%(guide)s\">guide</a> covers every feature, command and setting."),
+    ]),
+]
+
+
+def faq_page():
+    """(title, description, body) for /faq, with FAQPage structured data."""
+    sections, entries = [], []
+    for title, questions in FAQ:
+        parts = ['<h2 id="%s">%s</h2>' % (title.lower().replace(" ", "-"), html.escape(title))]
+        for question, answer in questions:
+            answer = answer % dict(LINKS)
+            parts.append("<h3>%s</h3>\n<p>%s</p>" % (html.escape(question), answer))
+            text = html.unescape(re.sub(r"<[^>]+>", "", answer))
+            entries.append({"@type": "Question", "name": question,
+                            "acceptedAnswer": {"@type": "Answer", "text": text}})
+        sections.append("\n".join(parts))
+    jsonld = data_pages.json_for_script({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": entries})
+    body = """<script type="application/ld+json">%s</script>
+<h1>Questions</h1>
+<p class="summary">Can't find your answer? Ask on the <a href="%s">GoldScout Discord</a>.</p>
+<div class="faq">
+%s
+</div>""" % (jsonld, LINKS["discord"], "\n".join(sections))
+    return ("GoldScout FAQ: questions about the WoW Forever gold addon",
+            "Answers about GoldScout: getting started, whether it's allowed, where prices and drop rates come "
+            "from, what it shares, and where to get help.", body)
 
 
 def git(*args):
@@ -190,7 +309,7 @@ def page(s):
 <div class="wrap">
 <header class="top">
   <a class="brand" href="#"><img src="logo-400.png" alt="">GoldScout</a>
-  <nav><a href="#features">Features</a><a href="/farms">Farms by level</a><a href="/drop-rates">Drop rates</a><a href="/companion">Companion</a><a href="%(guide)s">Guide</a></nav>
+  <nav><a href="#features">Features</a><a href="/farms">Farms by level</a><a href="/drop-rates">Drop rates</a><a href="/companion">Companion</a><a href="/faq">FAQ</a><a href="%(guide)s">Guide</a></nav>
 </header>
 
 <div class="hero">
@@ -260,7 +379,7 @@ def page(s):
 </div></section>
 
 <footer><div class="wrap">
-  <p><a href="%(source)s">GitHub</a><a href="%(guide)s">Guide</a><a href="%(issues)s">Report a bug</a><a href="%(privacy)s">Privacy</a><a href="%(terms)s">Contributor terms</a><a href="%(data_license)s">Data license</a></p>
+  <p><a href="/faq">FAQ</a><a href="%(discord)s">Discord</a><a href="%(source)s">GitHub</a><a href="%(guide)s">Guide</a><a href="%(issues)s">Report a bug</a><a href="%(privacy)s">Privacy</a><a href="%(terms)s">Contributor terms</a><a href="%(data_license)s">Data license</a></p>
   <p>GoldScout is a fan project, not affiliated with or endorsed by Blizzard Entertainment. World of Warcraft is a trademark of Blizzard Entertainment, Inc.</p>
 </div></footer>
 </body>
@@ -308,12 +427,12 @@ def layout(title, description, path, body):
 <div class="wrap">
 <header class="top">
   <a class="brand" href="/"><img src="/logo-400.png" alt="">GoldScout</a>
-  <nav><a href="/farms">Farms by level</a><a href="/drop-rates">Drop rates</a><a href="/companion">Companion</a><a href="%(curseforge)s">Get GoldScout</a></nav>
+  <nav><a href="/farms">Farms by level</a><a href="/drop-rates">Drop rates</a><a href="/companion">Companion</a><a href="/faq">FAQ</a><a href="%(curseforge)s">Get GoldScout</a></nav>
 </header>
 <main class="page"><div class="table-wrap">%(body)s</div></main>
 </div>
 <footer><div class="wrap">
-  <p><a href="/">Home</a><a href="/farms">Farms by level</a><a href="/drop-rates">How drop rates work</a><a href="%(source)s">GitHub</a><a href="%(privacy)s">Privacy</a><a href="%(data_license)s">Data license</a></p>
+  <p><a href="/">Home</a><a href="/farms">Farms by level</a><a href="/drop-rates">How drop rates work</a><a href="/faq">FAQ</a><a href="%(discord)s">Discord</a><a href="%(source)s">GitHub</a><a href="%(privacy)s">Privacy</a><a href="%(data_license)s">Data license</a></p>
   <p>Drop rates come from GoldScout players and are covered by the GoldScout Data License. GoldScout is a fan project, not affiliated with or endorsed by Blizzard Entertainment. World of Warcraft is a trademark of Blizzard Entertainment, Inc.</p>
 </div></footer>
 </body>
@@ -409,8 +528,9 @@ def main():
         target.write_text(layout(title, description, url_path, body), encoding="utf-8")
 
     write("companion.html", *companion_page(s))
+    write("faq.html", *faq_page())
     data = data_pages.Dataset(results, merged)
-    paths = ["/", "/companion"] + data_pages.build(data, LINKS, write)
+    paths = ["/", "/companion", "/faq"] + data_pages.build(data, LINKS, write)
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>',
                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     lastmod = "<lastmod>%s</lastmod>" % s["updated_iso"] if s["updated_iso"] else ""

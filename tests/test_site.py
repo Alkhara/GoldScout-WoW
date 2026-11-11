@@ -192,5 +192,20 @@ class DataPagesTests(unittest.TestCase):
         self.assertIn("Torn Bear Pelt", body)
 
 
+class FaqTests(unittest.TestCase):
+    def test_every_question_is_on_the_page_and_in_the_structured_data(self):
+        import build
+        _, _, body = build.faq_page()
+        data = json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>', body, re.S).group(1))
+        self.assertEqual(data["@type"], "FAQPage")
+        questions = [q for _, section in build.FAQ for q, _ in section]
+        self.assertEqual([entry["name"] for entry in data["mainEntity"]], questions)
+        for entry in data["mainEntity"]:
+            self.assertNotIn("<", entry["acceptedAnswer"]["text"])       # plain text, links resolved
+            self.assertNotIn("%(", entry["acceptedAnswer"]["text"])
+        self.assertIn('href="https://discord.gg/rJdZcuepzN"', body)
+        self.assertIn('href="mailto:admin@wowgoldscout.com"', body)
+
+
 if __name__ == "__main__":
     unittest.main()

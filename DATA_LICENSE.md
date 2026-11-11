@@ -45,7 +45,7 @@ example) are fine.
 
 ## Permission
 
-To ask about licensing the Data, open an issue at
+To ask about licensing the Data, email admin@wowgoldscout.com or open an issue at
 https://github.com/Alkhara/GoldScout-WoW/issues.
 
 ## No warranty

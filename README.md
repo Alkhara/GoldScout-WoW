@@ -128,7 +128,8 @@ affiliated with or endorsed by Blizzard Entertainment.
 
 ## Contributing
 
-Bug reports and ideas are welcome in
+Questions, help and news: join the [GoldScout Discord](https://discord.gg/rJdZcuepzN), or read the
+[FAQ](https://wowgoldscout.com/faq). Bug reports and ideas are welcome there or in
 [Issues](https://github.com/Alkhara/GoldScout-WoW/issues). **Translations are
 new**, so if a word reads wrong in your language, open an issue or edit the
 matching `GoldScout/Locale_<language>.lua`. To work on the code, see

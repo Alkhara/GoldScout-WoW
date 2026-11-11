@@ -1,6 +1,6 @@
 # GoldScout Privacy Policy
 
-*Last updated: November 10, 2026*
+*Last updated: November 11, 2026*
 
 This policy covers the GoldScout addon and the drop data players share with it.
 GoldScout is maintained by GitHub user Alkhara ("we" below).
@@ -139,7 +139,8 @@ its own privacy statement.
 
 To have your submission file removed from the repository, your submission
 issue deleted, or your uploads deleted from the upload service (tell us your
-install ID, shown in your exports), open an issue asking us to. Pausing
+install ID, shown in your exports), email admin@wowgoldscout.com. You can also open an
+issue, but issues are public; email keeps the request private. Pausing
 automatic sharing in the companion stops new uploads. Data already combined into a release
 can't be separated from other players' data.
 
@@ -164,4 +165,8 @@ updated before it does.
 
 ## Contact
 
-Open an issue at https://github.com/Alkhara/GoldScout-WoW/issues.
+For privacy questions and data requests, including anything you'd rather not
+post publicly, email admin@wowgoldscout.com. If you email us, we use your address only
+to reply to you. For everything else, ask on the GoldScout Discord
+(https://discord.gg/rJdZcuepzN) or open an issue at
+https://github.com/Alkhara/GoldScout-WoW/issues.

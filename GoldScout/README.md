@@ -205,3 +205,10 @@ in English.
 - A scan that gets no reply for 20 seconds stops and keeps what it received.
 - Avoid searching the auction house yourself while a scan is running; the two
   searches share the same results list.
+
+## Help
+
+Common questions are answered in the [FAQ](https://wowgoldscout.com/faq). Ask
+anything on the [GoldScout Discord](https://discord.gg/rJdZcuepzN), report bugs in
+[Issues](https://github.com/Alkhara/GoldScout-WoW/issues/new/choose), and send
+private requests (like deleting your shared data) to admin@wowgoldscout.com.
