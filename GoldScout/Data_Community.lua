@@ -1,6 +1,6 @@
 -- GoldScout community data: drop rates and spawn spots collected by players
 -- with /gscout export and combined by tools/merge_data.py. Generated file;
--- don't edit by hand. Built from 12 submission(s).
+-- don't edit by hand. Built from 13 submission(s).
 -- Covered by the GoldScout Data License (DATA_LICENSE.md), not the MIT
 -- License: no use outside GoldScout without permission.
 local _, ns = ...
@@ -201,6 +201,7 @@ ns.COMMUNITY_SOURCES = {
   ["m00jxkjr841x"] = 53,
   ["oys4qsklvnlk"] = 1,
   ["vdxu5aww9gkz"] = 1,
+  ["xy7fzrrb65zw"] = 1,
 }
 ns.COMMUNITY_CAP = 1000
 
