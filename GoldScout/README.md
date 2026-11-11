@@ -28,7 +28,7 @@ based on your level, class, faction and professions.
   when they are sold by vendors, otherwise the auction house price).
 - **Item tooltips** show the last auction house price, how many were listed,
   the average daily low, and the vendor price when known.
-- **Prices without scanning:** with GoldScout Companion running on Windows,
+- **Prices without scanning:** with GoldScout Companion running (Windows or Mac),
   GoldScout also gets Blizzard's hourly auction house snapshot for your realm
   (as of your last login or `/reload`) and uses whichever is newer for each
   item, that or your own scan. When newer prices are waiting, the window offers

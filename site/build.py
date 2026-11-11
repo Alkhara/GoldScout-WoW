@@ -31,6 +31,7 @@ LINKS = {
     "wago": "https://addons.wago.io/addons/QKyqnaK7",
     "releases": REPO + "/releases/latest",
     "companion": REPO + "/releases/latest/download/GoldScoutCompanion.exe",
+    "companion_mac": REPO + "/releases/latest/download/GoldScoutCompanion-macOS.zip",
     "share": REPO + "/issues/new?template=data-submission.yml",
     "guide": REPO + "/blob/main/GoldScout/README.md",
     "issues": REPO + "/issues/new/choose",
@@ -71,8 +72,10 @@ FAQ = [
          "<a href=\"/companion\">The companion</a> brings prices in every hour without scanning, and shares your "
          "drop data so the Farm tab keeps getting better."),
         ("Does it work on a Mac?",
-         "The addon does, like any addon. GoldScout Companion is a Windows app; on a Mac it "
-         "<a href=\"%(companion_guide)s\">runs from source</a> for now, and a signed Mac app is planned."),
+         "Yes. The addon works like any addon, and GoldScout Companion has a Mac app, signed and checked by "
+         "Apple, for Apple silicon and Intel Macs: <a href=\"%(companion_mac)s\">download it</a>, open the zip "
+         "and drag GoldScout Companion into Applications. It lives in the Dock; "
+         "<a href=\"%(companion_guide)s\">more about the Mac app</a>."),
     ]),
     ("Rules and safety", [
         ("Is GoldScout allowed?",
@@ -322,7 +325,7 @@ def page(s):
       <a class="btn" href="%(releases)s">GitHub</a>
     </div>
     <p class="small">Free, open source, and every feature is the same for everyone.</p>
-    <div class="next"><b>Then add GoldScout Companion.</b> The free Windows app brings auction prices into GoldScout every hour, without scanning, and shares your drop data so the Farm tab keeps getting better.<br>
+    <div class="next"><b>Then add GoldScout Companion.</b> The free app for Windows and Mac brings auction prices into GoldScout every hour, without scanning, and shares your drop data so the Farm tab keeps getting better.<br>
       <a class="btn" href="/companion">Get the companion</a></div>
   </div>
   <img class="shot" src="screenshots/Frame.JPG" alt="The GoldScout Farm tab">
@@ -356,15 +359,15 @@ def page(s):
 <section id="companion"><div class="wrap two">
   <div>
     <h2>Prices every hour, without scanning</h2>
-    <p class="sub">GoldScout Companion is a free Windows app that keeps GoldScout up to date while you play.</p>
+    <p class="sub">GoldScout Companion is a free app for Windows and Mac that keeps GoldScout up to date while you play.</p>
     <ul class="ticks">
       <li><b>Hourly auction prices.</b> Blizzard's auction house snapshot for your realm and faction, saved for GoldScout about once an hour. Your own scans still win when they're newer.</li>
       <li><b>Blackwater prices too.</b> What items go for at the goblin auction houses, as an extra tooltip line.</li>
       <li><b>Better drop rates, automatically.</b> It shares what GoldScout learns from your loot, never character or account names, so the Farm tab improves for you and everyone.</li>
-      <li><b>Out of your way.</b> It sits in the system tray, never pops up over your game, and updates itself in one click.</li>
+      <li><b>Out of your way.</b> It sits in the system tray (the Dock on a Mac), never pops up over your game, and updates itself in one click.</li>
     </ul>
-    <p style="margin-top:22px"><a class="btn primary" href="%(companion)s">Download for Windows</a> <a class="btn" href="/companion">How it works</a></p>
-    <p class="small">Free and code-signed, so Windows shows who published it. Windows only for now.</p>
+    <p style="margin-top:22px"><a class="btn primary" href="%(companion)s">Download for Windows</a> <a class="btn primary" href="%(companion_mac)s">Download for Mac</a> <a class="btn" href="/companion">How it works</a></p>
+    <p class="small">Free and code-signed, so Windows and macOS show who published it.</p>
   </div>
   <div>
     <h2>Plays by the rules</h2>
@@ -446,10 +449,10 @@ def companion_page(s):
     e = html.escape
     players = "%s player%s" % (format(s["contributors"], ","), "" if s["contributors"] == 1 else "s")
     body = """<h1>GoldScout Companion</h1>
-<p class="summary">A free Windows app that brings auction house prices into GoldScout every hour, without scanning, and
+<p class="summary">A free app for Windows and Mac that brings auction house prices into GoldScout every hour, without scanning, and
 shares your drop data so GoldScout's Farm tab keeps getting better for everyone.</p>
-<p><a class="btn primary" href="%(companion)s">Download for Windows</a> <a class="btn" href="%(curseforge)s">Get the GoldScout addon</a></p>
-<p class="small">Free · code-signed · updates itself · Windows only for now</p>
+<p><a class="btn primary" href="%(companion)s">Download for Windows</a> <a class="btn primary" href="%(companion_mac)s">Download for Mac</a> <a class="btn" href="%(curseforge)s">Get the GoldScout addon</a></p>
+<p class="small">Free · code-signed · updates itself · Windows, and Macs with Apple silicon or Intel</p>
 
 <h2>What you get</h2>
 <div class="grid">
@@ -460,8 +463,8 @@ shares your drop data so GoldScout's Farm tab keeps getting better for everyone.
     extra tooltip line. They never replace your own faction's prices.</p></div>
   <div class="card"><h3>Better drop rates for everyone</h3><p>Every mob you loot teaches GoldScout what it really
     drops. The companion shares that for you, so the next release knows more mobs, for you and every other player.</p></div>
-  <div class="card"><h3>Out of your way</h3><p>It sits in the system tray, starts with Windows if you like, never
-    pops up over your game, and updates itself in one click.</p></div>
+  <div class="card"><h3>Out of your way</h3><p>It sits in the system tray (the Dock on a Mac), starts when you log
+    in if you like, never pops up over your game, and updates itself in one click.</p></div>
 </div>
 
 <h2>Why it matters</h2>
@@ -472,7 +475,8 @@ in game. %(players)s have shared so far. Each new player fills in mobs and zones
 <h2>Set it up in a minute</h2>
 <ol class="steps">
   <li><b>Install GoldScout</b> from <a href="%(curseforge)s">CurseForge</a> or <a href="%(wago)s">Wago</a>, if you haven't already.</li>
-  <li><b>Download and launch the app.</b> There's nothing to install, and it finds your WoW Forever folder by itself.</li>
+  <li><b>Download and launch the app.</b> On Windows there's nothing to install; on a Mac, open the zip and drag
+    GoldScout Companion into Applications. It finds your WoW Forever folder by itself.</li>
   <li><b>Choose once.</b> Agree to share automatically, or choose Not now and use it just for prices.</li>
   <li><b>Play.</b> GoldScout loads new prices when you log in or <code>/reload</code>, and its window offers
     <b>Load newer prices</b> when a fresher snapshot is waiting.</li>
@@ -494,16 +498,18 @@ random ID. Never character, account or realm names. See the <a href="%(privacy)s
 <h3>Will it interrupt my game?</h3>
 <p>No. Its only notification says a new version is out, and it waits until World of Warcraft is closed.</p>
 <h3>Is it safe to run?</h3>
-<p>Every release is code-signed, so Windows shows who published it, and the companion only installs updates that
-are signed the same way. The source is on <a href="%(source)s">GitHub</a>.</p>
+<p>Every release is code-signed (and checked by Apple on a Mac), so your computer shows who published it, and
+the companion only installs updates that are signed the same way. The source is on <a href="%(source)s">GitHub</a>.</p>
 <h3>Is there a Mac version?</h3>
-<p>Not yet; it's Windows only for now.</p>
+<p>Yes, for Macs with Apple silicon or Intel: <a href="%(companion_mac)s">download it</a>, open the zip and drag
+GoldScout Companion into Applications. On a Mac it lives in the Dock instead of a tray, and its window's
+<b>Settings</b> hold sharing, auction prices, <b>Open at login</b> and updates.</p>
 </div>
 <p class="small" style="margin-top:28px">Auction data from the Blizzard Entertainment Game Data API. GoldScout is not
 affiliated with or endorsed by Blizzard Entertainment.</p>
 """ % dict(LINKS, players=e(players))
     return ("GoldScout Companion: hourly auction prices for GoldScout",
-            "A free Windows app that brings auction house prices into the GoldScout addon every hour without "
+            "A free app for Windows and Mac that brings auction house prices into the GoldScout addon every hour without "
             "scanning, and shares drop data so everyone's Farm tab gets better.", body)
 
 

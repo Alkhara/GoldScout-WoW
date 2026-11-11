@@ -72,10 +72,9 @@ scans still win when they're newer. Until you have either, GoldScout uses
 regional estimates that ship with each release, so the Farm list works the
 moment you install it.
 
-The companion runs quietly in the system tray on Windows, never pops up over
-your game, and also shares what GoldScout learns from your loot, so the Farm
-tab keeps getting better for everyone. (A macOS version runs from source; a
-signed Mac app is planned.)
+The companion runs quietly in the system tray on Windows (in the Dock on a
+Mac), never pops up over your game, and also shares what GoldScout learns from
+your loot, so the Farm tab keeps getting better for everyone.
 
 ## Install
 
@@ -84,9 +83,12 @@ signed Mac app is planned.)
    [Releases](https://github.com/Alkhara/GoldScout-WoW/releases/latest) page.
    For a manual install, unzip the `GoldScout` folder into
    `World of Warcraft\_forever_\Interface\AddOns\` and restart the game.
-2. Optional but recommended: download `GoldScoutCompanion.exe` from the
-   [latest release](https://github.com/Alkhara/GoldScout-WoW/releases/latest)
-   and launch it. There's nothing to install; it finds your WoW folder itself.
+2. Optional but recommended: get GoldScout Companion from the
+   [latest release](https://github.com/Alkhara/GoldScout-WoW/releases/latest).
+   On Windows, download `GoldScoutCompanion.exe` and launch it; there's nothing
+   to install. On a Mac (Apple silicon or Intel), download
+   `GoldScoutCompanion-macOS.zip`, open it and drag GoldScout Companion into
+   Applications. Either way, it finds your WoW folder itself.
 
 ## Getting started
 

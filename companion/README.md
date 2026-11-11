@@ -1,12 +1,13 @@
 # GoldScout Companion
 
-A small Windows app that shares the drop rates GoldScout learns from your loot,
-automatically, from the system tray, and brings current auction house prices
-into GoldScout without scanning. More at https://wowgoldscout.com.
+A small app for Windows and Mac that shares the drop rates GoldScout learns
+from your loot, automatically, from the system tray (the Dock on a Mac), and
+brings current auction house prices into GoldScout without scanning. More at
+https://wowgoldscout.com.
 
 1. Download `GoldScoutCompanion.exe` from the latest
-   [release](https://github.com/Alkhara/GoldScout-WoW/releases) and run it.
-   There's nothing to install.
+   [release](https://github.com/Alkhara/GoldScout-WoW/releases/latest) and run
+   it. There's nothing to install. On a Mac, see [On a Mac](#on-a-mac).
 2. The first time, it explains what it shares and asks you to agree to the
    [Contributor Terms](../docs/CONTRIBUTOR_TERMS.md). Choose **I agree, share
    automatically**. Starting with Windows is on by default; untick it if you
@@ -79,8 +80,10 @@ The exe is code-signed, so Windows shows the publisher. See the
 
 ## On a Mac
 
-The companion runs on macOS too. A signed Mac app will come with a later
-release; until then, run it from source (below). On a Mac:
+The companion runs on Macs with Apple silicon or Intel. Download
+[`GoldScoutCompanion-macOS.zip`](https://github.com/Alkhara/GoldScout-WoW/releases/latest/download/GoldScoutCompanion-macOS.zip) from the latest release, open it, and drag
+GoldScout Companion into Applications. It's signed and checked by Apple, so it
+opens like any other app. On a Mac:
 
 - There's no tray icon. Closing the window keeps the companion running in the
   Dock; click its Dock icon to open the window again. **Settings** in the
@@ -93,7 +96,8 @@ release; until then, run it from source (below). On a Mac:
   `~/Library/LaunchAgents/com.wowgoldscout.companion.plist`, and macOS may say
   a login item was added.
 - The update notification is a macOS notification, still only while World of
-  Warcraft is closed.
+  Warcraft is closed. **Update** checks the new version is signed by GoldScout
+  and checked by Apple before replacing the app.
 
 ## Running from source
 
@@ -101,7 +105,8 @@ With Python 3.10 or later:
 
 - Windows: `pip install -r companion/requirements.txt`, then `python companion/app.py`.
 - macOS: Python from [python.org](https://www.python.org/downloads/macos/)
-  (it includes Tk; nothing else to install), then `python3 companion/app.py`.
+  (it includes Tk), then `pip3 install -r companion/requirements-mac.txt` (the
+  certificates it checks HTTPS against) and `python3 companion/app.py`.
 
 Add `--tray` to start with the window hidden. Running from source never updates
 itself or starts at login.
@@ -112,3 +117,5 @@ To build the app: `pip install -r companion/requirements-build.txt` (on a Mac, a
 `pip install -r companion/requirements.txt`); on a Mac, `GoldScout Companion.app` (add `--universal2` with
 python.org's Python for one app that runs on Apple silicon and Intel). A local
 Mac build is unsigned: the first time, Control-click it and choose **Open**.
+On a Mac, build with Python from python.org: Apple's own `/usr/bin/python3` has
+an old Tk that draws blank windows, so the build refuses it.

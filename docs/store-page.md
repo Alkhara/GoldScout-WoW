@@ -23,7 +23,7 @@ the end, and they go to wowgoldscout.com pages, never straight to the exe.
 
 **What should *this* character be doing for gold right now?** GoldScout answers that for whichever character you're logged in on: its level, class, faction and professions, priced against your own auction house.
 
-> **Get the most out of GoldScout: add GoldScout Companion.** The free Windows app brings auction house prices into GoldScout every hour, without scanning, and shares your drop data automatically so the Farm tab keeps getting better. Get it from the GoldScout website (link at the bottom of this page).
+> **Get the most out of GoldScout: add GoldScout Companion.** The free app for Windows and Mac brings auction house prices into GoldScout every hour, without scanning, and shares your drop data automatically so the Farm tab keeps getting better. Get it from the GoldScout website (link at the bottom of this page).
 
 ### Live prices, two ways
 - **Every hour, without scanning:** with GoldScout Companion running, GoldScout gets Blizzard's hourly auction house snapshot for your realm and faction, plus the Blackwater (goblin) auction house as an extra tooltip line.
@@ -71,7 +71,7 @@ English, Deutsch, Français, 한국어 and 繁體中文, following your game's l
 ---
 
 ### Links
-- **GoldScout Companion** (free, Windows): https://wowgoldscout.com/companion
+- **GoldScout Companion** (free, Windows and Mac): https://wowgoldscout.com/companion
 - Website: https://wowgoldscout.com
 - Questions and help: https://wowgoldscout.com/faq · Discord: https://discord.gg/rJdZcuepzN
 - Full guide: https://github.com/Alkhara/GoldScout-WoW/blob/main/GoldScout/README.md
