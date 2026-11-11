@@ -1,15 +1,23 @@
-GoldScout-export 5^3hjxskcih6tg^5
+GoldScout-export 5^3hjxskcih6tg^6
 2955^1^0^1^1^1412^0.4537^0.7778^1^Plainstrider^4739:1:1,4740:1:1,7096:1:1^
 3225^1^0^11^11^1411^0.3714^0.2527^1^Corrupted Mottled Boar^769:1:1,771:1:1^
-3244^1^0^12^12^1413^0.4849^0.2787^1^Greater Plainstrider^5469:1:1^
+3244^1^0^11^12^1413^0.4849^0.2787^1^Greater Plainstrider^5469:1:1^
 3246^1^0^12^12^1413^0.4284^0.2417^1^Fleeting Plainstrider^5087:1:1^
 3255^1^0^13^15^1413^0.4405^0.2652^1^Sunscale Screecher^5062:1:1^
+3265^2^0^11^11^1413^0.5562^0.2709^2^Razormane Hunter^^
+3267^6^0^10^11^1413^0.5561^0.2713^6^Razormane Water Seeker^1179:1:1,1420:1:1,2589:1:3^
+3268^7^0^10^11^1413^0.5569^0.2703^7^Razormane Thornweaver^858:1:1,1179:1:1,1512:1:1,1732:1:1,2589:4:7,15476:1:1^
 3272^17^0^12^13^1413^0.4441^0.2325^17^Kolkar Wrangler^1516:1:1,2287:1:1,2589:3:7,3375:1:1,3654:2:2,5030:9:9,15480:1:1,15970:1:1^
 3273^13^0^13^14^1413^0.4447^0.2330^13^Kolkar Stormer^2589:4:7,3375:1:1,5030:6:6^
 3394^2^0^16^16^1413^0.4289^0.2365^2^Barak Kodobane^2592:1:2,5022:1:1^
 @i^769^Chunk of Boar Meat
 @i^771^Chipped Boar Tusk
+@i^858^Lesser Healing Potion
+@i^1179^Ice Cold Milk
+@i^1420^Worn Leather Bracers
+@i^1512^Crude Battle Axe
 @i^1516^Worn Hatchet
+@i^1732^Worn Mail Bracers
 @i^2287^Haunch of Meat
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
@@ -23,11 +31,17 @@ GoldScout-export 5^3hjxskcih6tg^5
 @i^5087^Plainstrider Beak
 @i^5469^Strider Meat
 @i^7096^Plucked Feather
+@i^15476^Charger's Handwraps
 @i^15480^War Torn Girdle
 @i^15970^Native Branch of the Eagle
 @q^769^1:7:1
 @q^771^0:15:0
+@q^858^1:0:0
+@q^1179^1:0:0
+@q^1420^0:4:0
+@q^1512^0:2:0
 @q^1516^0:2:0
+@q^1732^0:4:0
 @q^2287^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
@@ -41,6 +55,7 @@ GoldScout-export 5^3hjxskcih6tg^5
 @q^5087^1:12:0
 @q^5469^1:7:1
 @q^7096^0:15:0
+@q^15476^1:4:0
 @q^15480^1:4:0
 @q^15970^2:4:0
 @m^1411^Durotar
@@ -1337,6 +1352,9 @@ GoldScout-export 5^3hjxskcih6tg^5
 @a^3244^109:1
 @a^3246^88:1
 @a^3255^108:1
+@a^3265^111:2
+@a^3267^111:6
+@a^3268^111:7
 @a^3272^88:6,89:7,108:4
 @a^3273^88:4,89:6,108:3
 @a^3394^88:2
