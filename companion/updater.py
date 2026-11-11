@@ -57,9 +57,10 @@ STAGE_NAME = "GoldScout Companion.new"   # macOS: where the downloaded zip is un
 # Who signs GoldScout releases (see notes on code signing). Both must match.
 PUBLISHER_SUBJECT = ("CN=Chris Cawley", "O=Chris Cawley")
 PUBLISHER_ISSUER = "Microsoft ID Verified CS"
-# The Apple Developer Team ID that signs macOS releases. Until it's set, a Mac
-# copy never installs an update (it opens the download page instead).
-MAC_TEAM_ID = ""
+# The Apple Developer Team ID that signs macOS releases (Developer ID
+# Application: Christopher Cawley). A downloaded update installs only when it's
+# signed by this team; the release workflow checks it matches APPLE_TEAM_ID.
+MAC_TEAM_ID = "K8SM84TQ84"
 
 MAX_SIZE = 200_000_000
 CREATE_NO_WINDOW = 0x08000000
