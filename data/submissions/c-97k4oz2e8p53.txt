@@ -1,6 +1,10 @@
-GoldScout-export 5^97k4oz2e8p53^2
+GoldScout-export 5^97k4oz2e8p53^3
 3713^4^0^18^19^1440^0.1341^0.2093^4^Wrathtail Wave Rider^5490:3:3,5523:3:3^
 3717^2^0^18^19^1440^0.1379^0.2239^2^Wrathtail Sorceress^1205:1:1,1740:1:1,5490:2:2,5523:1:1^
+3765^1^0^27^27^1440^0.8250^0.5195^1^Bleakheart Satyr^^
+3767^3^0^28^28^1440^0.8110^0.4987^3^Bleakheart Trickster^4306:1:1,5481:1:1,14570:1:1^
+3770^1^0^27^28^1440^0.8140^0.4840^1^Bleakheart Shadowstalker^^
+3928^1^0^20^21^1440^0.7810^0.7225^1^Rotting Slime^^
 4009^2^0^18^19^1442^0.4943^0.3667^2^Raging Cliff Stormer^5128:2:2,5470:1:1^
 4016^1^0^24^25^1442^0.4023^0.1404^1^Fey Dragon^5583:1:1^
 4018^12^0^22^23^1442^0.3935^0.1304^12^Antlered Courser^5471:2:2,5566:2:2,5585:10:20,5871:2:2^
@@ -31,6 +35,7 @@ GoldScout-export 5^97k4oz2e8p53^2
 4832^1^0^0^0^0^0.0000^0.0000^0^^5881:1:1^
 4887^1^0^0^0^0^0.0000^0.0000^0^^^
 5928^1^0^27^27^1442^0.4759^0.3524^1^Sorrow Wing^5137:1:1,6605:1:1^
+6073^1^0^30^30^1440^0.8184^0.7062^1^Searing Infernal^16645:1:1^
 6243^1^0^0^0^0^0.0000^0.0000^0^^^
 12876^1^0^0^0^0^0.0000^0.0000^0^^9451:1:2^
 264079^4^0^27^28^1412^0.3408^0.1065^4^Gloomrise Hatchling^3167:4:4^
@@ -54,6 +59,7 @@ GoldScout-export 5^97k4oz2e8p53^2
 @i^3671^Lifeless Skull
 @i^3674^Decomposed Boot
 @i^3931^Poisoned Spider Fang
+@i^4306^Silk Cloth
 @i^4556^Speckled Shell Fragment
 @i^5128^Shed Lizard Skin
 @i^5136^Torn Furry Ear
@@ -61,6 +67,7 @@ GoldScout-export 5^97k4oz2e8p53^2
 @i^5465^Small Spider Leg
 @i^5470^Thunder Lizard Tail
 @i^5471^Stag Meat
+@i^5481^Satyr Horns
 @i^5490^Wrathtail Head
 @i^5516^Threshadon Fang
 @i^5523^Small Barnacled Clam
@@ -77,7 +84,9 @@ GoldScout-export 5^97k4oz2e8p53^2
 @i^6902^Bands of Serra'kis
 @i^9451^Bubbling Water
 @i^14162^Pagan Mitts of the Whale
+@i^14570^Bristlebark Blouse
 @i^15120^Robust Girdle of the Falcon
+@i^16645^Shredder Operating Manual - Page 1
 @i^17057^Shiny Fish Scales
 @i^211784^Scroll: WUBBA WUBBA
 @i^252795^Pattern: Totemic Leather Pants
@@ -100,6 +109,7 @@ GoldScout-export 5^97k4oz2e8p53^2
 @q^3671^0:15:0
 @q^3674^0:15:0
 @q^3931^0:15:0
+@q^4306^1:7:1
 @q^4556^0:15:0
 @q^5128^0:15:0
 @q^5136^0:15:0
@@ -107,6 +117,7 @@ GoldScout-export 5^97k4oz2e8p53^2
 @q^5465^1:7:1
 @q^5470^1:7:1
 @q^5471^1:7:1
+@q^5481^1:12:0
 @q^5490^1:12:0
 @q^5516^0:2:0
 @q^5523^1:7:0
@@ -123,7 +134,9 @@ GoldScout-export 5^97k4oz2e8p53^2
 @q^6902^3:4:0
 @q^9451^1:0:0
 @q^14162^2:4:0
+@q^14570^2:4:0
 @q^15120^2:4:0
+@q^16645^1:12:0
 @q^17057^1:15:0
 @q^211784^1:0:0
 @q^252795^3:9:0
@@ -897,6 +910,10 @@ GoldScout-export 5^97k4oz2e8p53^2
 @c^286152^
 @a^3713^42:1,62:1,102:2
 @a^3717^82:2
+@a^3765^216:1
+@a^3767^196:2,216:1
+@a^3770^196:1
+@a^3928^295:1
 @a^4009^149:1,150:1
 @a^4016^48:1
 @a^4018^27:5,28:1,47:2,48:1,66:1,67:1,149:1
@@ -909,6 +926,7 @@ GoldScout-export 5^97k4oz2e8p53^2
 @a^4057^47:2
 @a^4067^26:4,46:7,67:2
 @a^5928^149:1
+@a^6073^296:1
 @a^264079^26:1,46:1,47:2
 @a^264081^26:1,46:3,47:1
 @a^264082^26:1
