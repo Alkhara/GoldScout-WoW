@@ -1,4 +1,4 @@
-GoldScout-export 5^m00jxkjr841x^53
+GoldScout-export 5^m00jxkjr841x^54
 154^2^0^16^17^1436^0.6243^0.6214^2^Greater Fleshripper^6889:1:1^
 157^17^0^14^15^1436^0.3592^0.5846^17^Goretusk^723:3:3,731:6:6,769:7:10,771:1:1,2677:2:2,3171:2:2,3172:4:4^
 199^3^0^10^11^1436^0.4139^0.2942^3^Young Fleshripper^4757:3:3,6889:2:2,17056:1:1^
@@ -52,6 +52,11 @@ GoldScout-export 5^m00jxkjr841x^53
 2451^1^0^25^25^1424^0.3598^0.4641^1^Farmer Kalaba^^
 2503^5^0^27^28^1424^0.2954^0.5648^5^Hillsbrad Foreman^1785:1:1^
 2529^2^0^0^0^0^0.0000^0.0000^0^^^
+2559^4^0^30^31^1417^0.5461^0.4231^4^Highland Strider^3685:1:1,4461:2:2^
+2560^1^0^34^34^1417^0.3608^0.3000^1^Highland Thrasher^3685:1:1,4461:1:1^
+2563^10^0^32^33^1417^0.5547^0.4782^10^Plains Creeper^878:1:1,1074:1:1,1081:2:2,2251:4:4,4585:1:1,278225:1:1^
+2565^2^0^35^36^1417^0.5625^0.5557^2^Giant Plains Creeper^878:1:1,1074:1:1,1081:1:1,2251:1:1,3182:1:1,278225:2:2^
+2578^1^0^31^31^1417^0.2600^0.2379^1^Young Mesa Buzzard^3404:1:1,11416:1:1^
 2949^8^0^5^6^1412^0.5098^0.7317^8^Palemane Tanner^117:1:1,2589:2:4,3373:1:1^
 2950^6^0^6^7^1412^0.5113^0.7369^6^Palemane Skinner^117:1:1,159:1:1,2589:2:4^
 2951^5^0^7^8^1412^0.5201^0.7356^5^Palemane Poacher^1422:1:1^
@@ -259,6 +264,7 @@ GoldScout-export 5^m00jxkjr841x^53
 @i^878^Fist-sized Spinneret
 @i^929^Healing Potion
 @i^1015^Lean Wolf Flank
+@i^1074^Hard Spider Leg Tip
 @i^1081^Crisp Spider Meat
 @i^1205^Melon Juice
 @i^1206^Moss Agate
@@ -309,6 +315,7 @@ GoldScout-export 5^m00jxkjr841x^53
 @i^2140^Carving Knife of Magic
 @i^2210^Battered Buckler
 @i^2211^Bent Large Shield
+@i^2251^Gooey Spider Leg
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2651^Flimsy Chain Bracers
@@ -341,6 +348,7 @@ GoldScout-export 5^m00jxkjr841x^53
 @i^3385^Lesser Mana Potion
 @i^3399^Vulture Talon
 @i^3402^Soft Patch of Fur
+@i^3404^Buzzard Wing
 @i^3667^Tender Crocolisk Meat
 @i^3674^Decomposed Boot
 @i^3676^Slimy Ichor
@@ -372,6 +380,7 @@ GoldScout-export 5^m00jxkjr841x^53
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
 @i^4561^Scalping Tomahawk of Strength
+@i^4585^Dripping Spider Mandible
 @i^4586^Smooth Raptor Skin
 @i^4606^Spongy Morel
 @i^4689^Hunting Cloak
@@ -506,6 +515,7 @@ GoldScout-export 5^m00jxkjr841x^53
 @i^250182^Recipe: Bear Brisket
 @i^262888^Sealed Journeyman's Writ
 @i^277936^Glittering Sunstone
+@i^278225^Surgical Spidersilk
 @i^287505^Tender Strider Meat
 @q^117^1:0:0
 @q^159^1:0:0
@@ -524,6 +534,7 @@ GoldScout-export 5^m00jxkjr841x^53
 @q^878^0:7:0
 @q^929^1:0:0
 @q^1015^1:7:1
+@q^1074^0:15:0
 @q^1081^1:7:1
 @q^1205^1:0:0
 @q^1206^2:7:1
@@ -574,6 +585,7 @@ GoldScout-export 5^m00jxkjr841x^53
 @q^2140^2:2:0
 @q^2210^0:4:0
 @q^2211^0:4:0
+@q^2251^1:7:1
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2651^0:4:0
@@ -606,6 +618,7 @@ GoldScout-export 5^m00jxkjr841x^53
 @q^3385^1:0:0
 @q^3399^0:15:0
 @q^3402^0:15:0
+@q^3404^1:7:1
 @q^3667^1:7:1
 @q^3674^0:15:0
 @q^3676^0:15:0
@@ -637,6 +650,7 @@ GoldScout-export 5^m00jxkjr841x^53
 @q^4555^0:15:0
 @q^4556^0:15:0
 @q^4561^2:2:0
+@q^4585^0:15:0
 @q^4586^0:15:0
 @q^4606^1:0:0
 @q^4689^1:4:0
@@ -771,11 +785,13 @@ GoldScout-export 5^m00jxkjr841x^53
 @q^250182^1:9:0
 @q^262888^3:0:0
 @q^277936^1:12:0
+@q^278225^1:12:0
 @q^287505^1:12:0
 @m^1412^Mulgore
 @m^1413^The Barrens
 @m^1414^Kalimdor
 @m^1416^Alterac Mountains
+@m^1417^Arathi Highlands
 @m^1424^Hillsbrad Foothills
 @m^1434^Stranglethorn Vale
 @m^1436^Westfall
@@ -1693,5 +1709,10 @@ GoldScout-export 5^m00jxkjr841x^53
 @a^2450^226:1
 @a^2451^187:1
 @a^2503^225:3,226:2
+@a^2559^85:1,171:1,213:2
+@a^2560^107:1
+@a^2563^127:1,148:1,149:1,193:1,194:1,212:2,213:1,249:2
+@a^2565^211:1,231:1
+@a^2578^85:1
 @a^3560^44:1
 @l^0^enUS
