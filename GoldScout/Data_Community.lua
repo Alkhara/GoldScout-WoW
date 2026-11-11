@@ -1,6 +1,6 @@
 -- GoldScout community data: drop rates and spawn spots collected by players
 -- with /gscout export and combined by tools/merge_data.py. Generated file;
--- don't edit by hand. Built from 10 submission(s).
+-- don't edit by hand. Built from 11 submission(s).
 -- Covered by the GoldScout Data License (DATA_LICENSE.md), not the MIT
 -- License: no use outside GoldScout without permission.
 local _, ns = ...
@@ -90,6 +90,8 @@ ns.COMMUNITY = {
   [3812] = { k = 34, p = 0, lmin = 19, lmax = 20, n = "Clattering Crawler", m = 1440, x = 0.1237, y = 0.2617, c = 34, a = { [62] = 1 }, i = { [1210] = { d = 1, q = 1 }, [2674] = { d = 15, q = 15 }, [2675] = { d = 14, q = 14 }, [3010] = { d = 17, q = 17 }, [4874] = { d = 6, q = 6 }, [5523] = { d = 13, q = 13 }, [14125] = { d = 1, q = 1 }, [14368] = { d = 1, q = 1 } }, pi = {} },
   [3814] = { k = 23, p = 0, lmin = 20, lmax = 21, n = "Spined Crawler", m = 1440, x = 0.1193, y = 0.2442, c = 23, i = { [2674] = { d = 9, q = 9 }, [2675] = { d = 10, q = 10 }, [3010] = { d = 3, q = 3 }, [5523] = { d = 7, q = 7 }, [5569] = { d = 11, q = 11 }, [17057] = { d = 5, q = 5 } }, pi = {} },
   [3817] = { k = 20, p = 0, lmin = 22, lmax = 23, n = "Shadowhorn Stag", m = 1440, x = 0.5131, y = 0.5595, c = 20, i = { [1206] = { d = 1, q = 1 }, [5120] = { d = 1, q = 1 }, [5471] = { d = 10, q = 10 }, [5566] = { d = 9, q = 9 }, [5871] = { d = 4, q = 4 } }, pi = {} },
+  [3818] = { k = 7, p = 0, lmin = 26, lmax = 27, n = "Elder Shadowhorn Stag", m = 1440, x = 0.7141, y = 0.6265, c = 7, a = { [235] = 1, [253] = 3, [254] = 3 }, i = { [5119] = { d = 3, q = 3 }, [5120] = { d = 2, q = 2 }, [5471] = { d = 4, q = 4 }, [5566] = { d = 1, q = 1 } }, pi = {} },
+  [3825] = { k = 7, p = 0, lmin = 27, lmax = 28, n = "Ghostpaw Alpha", m = 1440, x = 0.6968, y = 0.6381, c = 7, a = { [253] = 3, [254] = 3, [273] = 1 }, i = { [1015] = { d = 2, q = 2 }, [3402] = { d = 1, q = 1 } }, pi = {} },
   [3853] = { k = 5, p = 0, i = {}, pi = {} },
   [3862] = { k = 6, p = 0, i = { [1015] = { d = 2, q = 2 }, [3301] = { d = 1, q = 1 }, [248684] = { d = 1, q = 1 } }, pi = {} },
   [3917] = { k = 11, p = 0, lmin = 23, lmax = 25, n = "Befouled Water Elemental", m = 1440, x = 0.4752, y = 0.6944, c = 11, i = { [5447] = { d = 2, q = 2 }, [9451] = { d = 4, q = 8 } }, pi = {} },
@@ -171,6 +173,7 @@ ns.COMMUNITY_SOURCES = {
   ["0apph2znowo4"] = 6,
   ["3hjxskcih6tg"] = 6,
   ["4z9mhp23fv2i"] = 3,
+  ["8qaumitums2i"] = 1,
   ["97k4oz2e8p53"] = 3,
   ["97kjy6kntayw"] = 1,
   ["9papmmd2w4we"] = 6,
