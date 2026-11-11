@@ -160,7 +160,7 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
           # Workers request counts for the dashboard (Account Analytics: Read).
           CLOUDFLARE_ANALYTICS_TOKEN: ${{ secrets.CLOUDFLARE_ANALYTICS_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}   # either tab works
         run: |
           if [ -z "$GOLDSCOUT_API_ADMIN" ]; then
             echo "GOLDSCOUT_API_ADMIN isn't set; the admin dashboard wasn't updated." | tee -a "$GITHUB_STEP_SUMMARY"
