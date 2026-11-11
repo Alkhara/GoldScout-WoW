@@ -1,0 +1,55 @@
+# Merges Dependabot's pull requests once Tests pass on them, so a fix for a
+# vulnerable dependency lands without anyone clicking: patch and minor
+# updates (and the weekly groups, which hold only those), never a major
+# version, which waits for review. It runs on the pull request itself
+# (GitHub gives Dependabot's pull requests the permissions declared below and
+# no secrets; none are needed), waits for that commit's Tests run, merges
+# exactly that commit, then starts Tests on main (a merge by this workflow's
+# token doesn't start other workflows). The weekly data release ships merged
+# companion updates to players (data-release.yml).
+name: Merge Dependabot updates
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+
+jobs:
+  merge:
+    if: github.event.pull_request.user.login == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      NUMBER: ${{ github.event.pull_request.number }}
+      TITLE: ${{ github.event.pull_request.title }}
+      SHA: ${{ github.event.pull_request.head.sha }}
+    steps:
+      - name: Merge a patch or minor update once Tests pass
+        run: |
+          summary() { printf '%s\n' "$1" | tee -a "$GITHUB_STEP_SUMMARY"; }
+          # "Bump pillow from 11.3.0 to 13.0.0 in /companion": compare the major versions.
+          if [[ "$TITLE" =~ from\ v?([0-9]+)[^\ ]*\ to\ v?([0-9]+) ]] && \
+             [ "${BASH_REMATCH[1]}" != "${BASH_REMATCH[2]}" ]; then
+            summary "**Not merged:** #$NUMBER ($TITLE) is a major version update; review it by hand."
+            exit 0
+          fi
+          result=""
+          for _ in $(seq 1 70); do
+            result=$(gh run list --workflow tests.yml --commit "$SHA" --event pull_request \
+              --json status,conclusion --jq '.[0] | "\(.status) \(.conclusion)"')
+            case "$result" in completed*) break ;; esac
+            sleep 30
+          done
+          if [ "$result" != "completed success" ]; then
+            summary "**Not merged:** Tests on #$NUMBER ended as '${result:-not found}'."
+            exit 0
+          fi
+          gh pr merge "$NUMBER" --merge --delete-branch --match-head-commit "$SHA"
+          gh workflow run tests.yml --ref main
+          summary "**Merged** #$NUMBER ($TITLE) after Tests passed, and started Tests on main."

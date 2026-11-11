@@ -2,11 +2,11 @@
 """Builds the companion so it runs without Python.
 
 Windows: GoldScoutCompanion.exe, a single file.
-  pip install pyinstaller pystray pillow
+  pip install -r companion/requirements-build.txt -r companion/requirements.txt
   python companion/build.py
 
 macOS: GoldScout Companion.app (no tray icon, so no pystray or Pillow needed).
-  pip install pyinstaller
+  pip install -r companion/requirements-build.txt
   python3 companion/build.py [--universal2]
 
 --universal2 builds one app for Apple silicon and Intel Macs; it needs a

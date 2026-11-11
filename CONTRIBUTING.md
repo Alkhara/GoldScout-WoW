@@ -65,7 +65,7 @@ For Lua error popups in game, use `/console scriptErrors 1` or BugSack.
   Mob names go through `ns.MobName`, so each player sees their own language.
 - Run `python tools/check.py` before opening a pull request: it checks the Lua,
   lints the Python, validates the community data and runs every test.
-  `pip install pyflakes lupa` first to get all of it (the Lua tests load the
+  `pip install -r tests/requirements.txt` first to get all of it (the Lua tests load the
   addon's own files in Lua 5.1). To run it before every push automatically:
   `git config core.hooksPath tools/hooks`.
 

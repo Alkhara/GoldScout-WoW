@@ -99,15 +99,15 @@ release; until then, run it from source (below). On a Mac:
 
 With Python 3.10 or later:
 
-- Windows: `pip install pystray pillow`, then `python companion/app.py`.
+- Windows: `pip install -r companion/requirements.txt`, then `python companion/app.py`.
 - macOS: Python from [python.org](https://www.python.org/downloads/macos/)
   (it includes Tk; nothing else to install), then `python3 companion/app.py`.
 
 Add `--tray` to start with the window hidden. Running from source never updates
 itself or starts at login.
 
-To build the app: `pip install pyinstaller`, then `python companion/build.py`.
-On Windows that makes `GoldScoutCompanion.exe` (also `pip install pystray
-pillow`); on a Mac, `GoldScout Companion.app` (add `--universal2` with
+To build the app: `pip install -r companion/requirements-build.txt`, then
+`python companion/build.py`. On Windows that makes `GoldScoutCompanion.exe` (also
+`pip install -r companion/requirements.txt`); on a Mac, `GoldScout Companion.app` (add `--universal2` with
 python.org's Python for one app that runs on Apple silicon and Intel). A local
 Mac build is unsigned: the first time, Control-click it and choose **Open**.

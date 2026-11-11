@@ -1,0 +1,4 @@
+# What the Windows companion bundles (the tray icon). The Mac app needs neither.
+# Pinned so every build is the same; Dependabot updates these (.github/dependabot.yml).
+pystray==0.19.5
+pillow==13.0.0

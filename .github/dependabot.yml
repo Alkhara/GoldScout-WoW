@@ -1,0 +1,51 @@
+# Dependabot keeps every pinned dependency current. Security updates (on as a
+# repository setting) open a pull request as soon as a fixed version of a
+# vulnerable package is out; these version updates catch the rest weekly.
+# Patch and minor updates merge themselves once Tests pass
+# (.github/workflows/dependabot-merge.yml); major ones wait for review.
+version: 2
+updates:
+  - package-ecosystem: pip       # what the companion bundles, and builds with
+    directory: /companion
+    schedule:
+      interval: weekly
+      day: monday
+    groups:
+      companion:
+        update-types: [minor, patch]
+
+  - package-ecosystem: pip       # the test tools
+    directory: /tests
+    schedule:
+      interval: weekly
+      day: monday
+    groups:
+      test-tools:
+        update-types: [minor, patch]
+
+  - package-ecosystem: pip       # the vulnerability audit
+    directory: /tools
+    schedule:
+      interval: weekly
+      day: monday
+    groups:
+      audit-tools:
+        update-types: [minor, patch]
+
+  - package-ecosystem: npm       # wrangler, which deploys the server
+    directory: /server
+    schedule:
+      interval: weekly
+      day: monday
+    groups:
+      server:
+        update-types: [minor, patch]
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    groups:
+      actions:
+        update-types: [minor, patch]

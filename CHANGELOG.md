@@ -7,6 +7,8 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- GoldScout Companion bundles the latest Pillow image library, which fixes
+  published security issues. The companion only uses it for its own tray icon.
 - **Fishing on the Farm tab:** GoldScout now learns what you fish up, in which
   zone, and whether it came from open water or a fishing pool. Each zone's open
   water and each kind of pool gets its own row, valued from everything players

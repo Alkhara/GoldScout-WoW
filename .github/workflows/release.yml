@@ -29,7 +29,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
         with:
           fetch-depth: 0
 
@@ -54,7 +54,7 @@ jobs:
         run: python3 tools/bundle_prices.py
 
       - name: Package and upload
-        uses: BigWigsMods/packager@v2
+        uses: BigWigsMods/packager@01e8631a69c69d7654c788d152630d5fed9e3812 # v2.7.0
         env:
           CF_API_KEY: ${{ secrets.CF_API_KEY }}
           WAGO_API_TOKEN: ${{ secrets.WAGO_API_TOKEN }}
@@ -80,9 +80,9 @@ jobs:
       contents: write
       id-token: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
         with:
           python-version: "3.12"
 
@@ -92,13 +92,13 @@ jobs:
         shell: bash
         run: |
           python tools/stamp_companion.py "$GITHUB_REF_NAME"
-          python -m pip install pyinstaller==6.22.3 pystray==0.19.5 pillow==11.3.0
+          python -m pip install -r companion/requirements-build.txt -r companion/requirements.txt
           python -m unittest discover -s tests
           python companion/build.py
 
       - name: Azure login
         if: vars.SIGNING_ACCOUNT != ''
-        uses: azure/login@v3
+        uses: azure/login@a641126d1b8aa4d1fa005f4f92df94a3a4c4c906 # v3.1.0
         with:
           client-id: ${{ vars.AZURE_CLIENT_ID }}
           tenant-id: ${{ vars.AZURE_TENANT_ID }}
@@ -106,7 +106,7 @@ jobs:
 
       - name: Sign the companion
         if: vars.SIGNING_ACCOUNT != ''
-        uses: azure/artifact-signing-action@v2
+        uses: azure/artifact-signing-action@c7ab2a863ab5f9a846ddb8265964877ef296ee82 # v2.0.0
         with:
           endpoint: ${{ vars.SIGNING_ENDPOINT }}
           signing-account-name: ${{ vars.SIGNING_ACCOUNT }}
@@ -155,7 +155,7 @@ jobs:
       APP: companion/dist/GoldScout Companion.app
       ZIP: companion/dist/GoldScoutCompanion-macOS.zip
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
 
       # python.org's installer is universal2 (Apple silicon and Intel), so the
       # app can be too; setup-python's builds are one architecture.
@@ -168,7 +168,7 @@ jobs:
       - name: Build the companion
         run: |
           "$PY" tools/stamp_companion.py "$GITHUB_REF_NAME"
-          "$PY" -m pip install pyinstaller==6.22.3
+          "$PY" -m pip install -r companion/requirements-build.txt
           "$PY" -m unittest discover -s tests
           "$PY" companion/build.py --universal2
           archs="$(lipo -archs "$APP/Contents/MacOS/GoldScout Companion")"
@@ -230,7 +230,7 @@ jobs:
 
       - name: Upload the unsigned build
         if: vars.APPLE_TEAM_ID == ''
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: GoldScoutCompanion-macOS-unsigned
           path: companion/dist/GoldScoutCompanion-macOS.zip
@@ -244,7 +244,7 @@ jobs:
     permissions:
       contents: read
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
 
       - name: Verify the published release
         env:
