@@ -1,4 +1,8 @@
-GoldScout-export 5^fvxpmchaz0r7^18
+GoldScout-export 5^fvxpmchaz0r7^19
+2240^2^0^32^33^1416^0.5672^0.6875^2^Syndicate Footpad^^
+2241^3^0^33^34^1424^0.6376^0.0687^1^Syndicate Thief^^
+2248^21^0^30^31^1424^0.4622^0.3176^21^Cave Yeti^2221:1:1,3708:1:1,3771:1:1,5637:1:1^
+2249^5^0^31^32^1424^0.4504^0.2910^5^Ferocious Yeti^2290:1:1,3771:1:1^
 2265^5^0^24^25^1424^0.3256^0.4537^5^Hillsbrad Apprentice Blacksmith^2592:1:1,3692:1:1,4306:1:1^
 2266^12^0^23^24^1424^0.3364^0.4259^12^Hillsbrad Farmer^929:1:1,2592:1:1,3039:1:1,3692:2:2,4306:1:1,4538:1:1^
 2267^24^0^24^25^1424^0.3437^0.4587^24^Hillsbrad Peasant^422:1:1,2589:1:2,2592:1:1,3692:2:2,4306:1:1^
@@ -188,8 +192,10 @@ GoldScout-export 5^fvxpmchaz0r7^18
 @i^1820^Wooden Maul
 @i^1823^Bludgeoning Cudgel
 @i^1831^Oaken War Staff
+@i^2221^Targe Shield
 @i^2222^Tower Shield
 @i^2251^Gooey Spider Leg
+@i^2290^Scroll of Intellect II
 @i^2295^Large Boar Tusk
 @i^2447^Peacebloom
 @i^2589^Linen Cloth
@@ -217,9 +223,11 @@ GoldScout-export 5^fvxpmchaz0r7^18
 @i^3692^Hillsbrad Human Skull
 @i^3693^Humbert's Sword
 @i^3702^Bear Gall Bladder
+@i^3708^Helcular's Rod
 @i^3712^Turtle Meat
 @i^3730^Big Bear Meat
 @i^3770^Mutton Chop
+@i^3771^Wild Hog Shank
 @i^3857^Coal
 @i^4306^Silk Cloth
 @i^4538^Snapvine Watermelon
@@ -336,8 +344,10 @@ GoldScout-export 5^fvxpmchaz0r7^18
 @q^1820^0:2:0
 @q^1823^0:2:0
 @q^1831^0:2:0
+@q^2221^0:4:0
 @q^2222^0:4:0
 @q^2251^1:7:1
+@q^2290^1:0:0
 @q^2295^0:15:0
 @q^2447^1:7:1
 @q^2589^1:7:1
@@ -365,9 +375,11 @@ GoldScout-export 5^fvxpmchaz0r7^18
 @q^3692^1:12:0
 @q^3693^1:12:0
 @q^3702^0:15:0
+@q^3708^1:12:0
 @q^3712^1:7:1
 @q^3730^1:7:1
 @q^3770^1:0:0
+@q^3771^1:0:0
 @q^3857^1:7:1
 @q^4306^1:7:1
 @q^4538^1:0:0
@@ -464,6 +476,7 @@ GoldScout-export 5^fvxpmchaz0r7^18
 @m^1412^Mulgore
 @m^1413^The Barrens
 @m^1414^Kalimdor
+@m^1416^Alterac Mountains
 @m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
 @m^1440^Ashenvale
@@ -1082,6 +1095,10 @@ GoldScout-export 5^fvxpmchaz0r7^18
 @c^279969^
 @c^279978^
 @c^279979^
+@a^2240^271:2
+@a^2241^32:1
+@a^2248^109:1,129:20
+@a^2249^108:2,109:2,129:1
 @a^2269^205:2,225:7,226:1
 @a^2270^225:2
 @a^2344^313:1,314:2
