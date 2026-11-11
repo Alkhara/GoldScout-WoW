@@ -129,8 +129,24 @@ class WorkerRequestsTests(unittest.TestCase):
             raise RuntimeError("not authorized")
 
         both = {"CLOUDFLARE_ANALYTICS_TOKEN": "t", "CLOUDFLARE_ACCOUNT_ID": "a"}
-        self.assertEqual(admin_stats.request_counts(0, attempt, {"CLOUDFLARE_ANALYTICS_TOKEN": "t"}),
+        token_only = {"CLOUDFLARE_ANALYTICS_TOKEN": "t"}
+        self.assertEqual(admin_stats.request_counts(0, attempt, token_only, lookup=lambda _: None),
                          {"missing": ["the CLOUDFLARE_ACCOUNT_ID variable"]})
+        # Without the account ID, the token's one account is used.
+        seen = []
+        self.assertEqual(admin_stats.request_counts(0, attempt, token_only,
+                                                    lambda t, a, n: seen.append(a) or {"days": []},
+                                                    lambda _: "acct1"), {"days": []})
+        self.assertEqual(seen, ["acct1"])
+        one = {"success": True, "result": [{"id": "acct1", "name": "Mine"}]}
+        self.assertEqual(admin_stats.token_account("t", lambda *_: one), "acct1")
+        two = {"success": True, "result": [{"id": "a"}, {"id": "b"}]}
+        self.assertIsNone(admin_stats.token_account("t", lambda *_: two))
+        self.assertIsNone(admin_stats.token_account("t", lambda *_: {"success": False, "errors": [{}]}))
+
+        def offline(*_):
+            raise OSError("no network")
+        self.assertIsNone(admin_stats.token_account("t", offline))
         self.assertEqual(admin_stats.request_counts(0, attempt, both, refused), {"error": "not authorized"})
         self.assertEqual(problems, ["Cloudflare analytics: not authorized"])
         self.assertEqual(admin_stats.request_counts(0, attempt, both, lambda *_: {"days": []}), {"days": []})

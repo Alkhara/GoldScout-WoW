@@ -14,7 +14,8 @@ Needs GOLDSCOUT_API_ADMIN (the server's ADMIN_TOKEN). GITHUB_TOKEN is optional
 GOLDSCOUT_MY_INSTALLS (comma-separated install IDs) marks the maintainer's own
 installs. Players appear only as short hashed tags, never install IDs.
 CLOUDFLARE_ANALYTICS_TOKEN (Account Analytics: Read) and CLOUDFLARE_ACCOUNT_ID
-add the Workers' daily request counts; without them that card says so.
+add the Workers' daily request counts (without the account ID, the token's own
+account is used when it has just one); without them that card says so.
 """
 import argparse
 import datetime
@@ -96,11 +97,26 @@ def worker_requests(token, account, now, days=30, post=None):
             "month": dict(month), "errors": dict(errors), "through": int(now)}
 
 
-def request_counts(now, attempt, environ=os.environ, fetch=None):
+def token_account(token, get=None):
+    """The account ID the analytics token belongs to, when it can see exactly one
+    account (Cloudflare lists the accounts a token has access to), else None."""
+    try:
+        reply = (get or get_json)("https://api.cloudflare.com/client/v4/accounts?per_page=5",
+                                  {"Authorization": "Bearer " + token})
+    except Exception:
+        return None
+    accounts = reply.get("result") or [] if reply.get("success") else []
+    return accounts[0].get("id") if len(accounts) == 1 else None
+
+
+def request_counts(now, attempt, environ=os.environ, fetch=None, lookup=None):
     """worker_requests() for the dashboard, or why there are none: {"missing": [...]}
     when the workflow doesn't pass the token or account ID, {"error": "..."} when
-    Cloudflare refuses (also a problem, through attempt)."""
+    Cloudflare refuses (also a problem, through attempt). Without CLOUDFLARE_ACCOUNT_ID,
+    the token's own account is used when it has just one."""
     token, account = environ.get("CLOUDFLARE_ANALYTICS_TOKEN"), environ.get("CLOUDFLARE_ACCOUNT_ID")
+    if token and not account:
+        account = (lookup or token_account)(token)
     missing = [name for name, value in (("the CLOUDFLARE_ANALYTICS_TOKEN secret", token),
                                         ("the CLOUDFLARE_ACCOUNT_ID variable", account)) if not value]
     if missing:
