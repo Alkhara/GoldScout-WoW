@@ -5,8 +5,13 @@ and Wago. Add to **Unreleased** as changes land, written for players; when
 releasing, rename it to the version (`## v1.2.3`). Weekly community data
 releases add their own line automatically.
 
-## Unreleased
+## v0.12.0
 
+- **GoldScout Companion for Mac:** a signed app, checked by Apple, for Apple
+  silicon and Intel Macs. Download `GoldScoutCompanion-macOS.zip` from this
+  release, open it and drag GoldScout Companion into Applications. It lives in
+  the Dock instead of a tray; its window's **Settings** hold sharing, auction
+  prices, **Open at login** and updates.
 - GoldScout Companion bundles the latest Pillow image library, which fixes
   published security issues. The companion only uses it for its own tray icon.
 - **Fishing on the Farm tab:** GoldScout now learns what you fish up, in which
