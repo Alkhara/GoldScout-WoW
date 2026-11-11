@@ -5,6 +5,8 @@ and Wago. Add to **Unreleased** as changes land, written for players; when
 releasing, rename it to the version (`## v1.2.3`). Weekly community data
 releases add their own line automatically.
 
+## Unreleased
+
 ## v0.12.0
 
 - **GoldScout Companion for Mac:** a signed app, checked by Apple, for Apple
