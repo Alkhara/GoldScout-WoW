@@ -12,6 +12,13 @@ name: Merge Dependabot updates
 on:
   pull_request:
     branches: [main]
+    # Only what Dependabot changes, so the hourly data pull requests don't
+    # start it (those runs ended as failures with no jobs).
+    paths:
+      - "**/requirements*.txt"
+      - "server/package.json"
+      - "server/package-lock.json"
+      - ".github/workflows/**"
 
 permissions:
   contents: write
