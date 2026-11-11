@@ -1,17 +1,24 @@
-GoldScout-export 5^0apph2znowo4^5
+GoldScout-export 5^0apph2znowo4^6
 46^8^0^9^10^1429^0.7646^0.8428^8^Murloc Forager^159:1:1,779:2:2,780:2:2,1181:1:1,2963:1:1,6303:1:1^
+116^7^0^8^9^1429^0.7096^0.7949^7^Defias Bandit^159:1:1,2070:1:1,2589:5:7^
 118^5^0^9^10^1429^0.8320^0.7521^5^Prowler^774:1:1,2672:4:4,3300:1:1^
-524^1^0^8^8^1429^0.7413^0.7923^1^Rockhide Boar^771:1:1^
+390^1^0^7^7^1429^0.7145^0.7936^1^Porcine Entourage^769:1:1^
+473^1^0^10^10^1429^0.7094^0.8031^1^Morgan the Collector^2589:1:2^
+524^2^0^7^8^1429^0.7168^0.7719^2^Rockhide Boar^769:1:1,771:2:2^
 732^16^0^9^10^1429^0.7686^0.8334^16^Murloc Lurker^118:1:1,774:1:1,779:6:6,780:5:5,2643:1:1,6303:4:9,9754:1:1,211786:1:1^
-822^2^0^8^9^1429^0.8007^0.7538^2^Young Forest Bear^3170:1:1,4865:1:1,7074:1:1^
+822^3^0^8^9^1429^0.7670^0.7534^3^Young Forest Bear^3170:1:1,4865:1:1,7073:1:1,7074:1:1^
+881^1^0^9^9^1429^0.7094^0.8031^1^Surena Caledon^6810:1:1^
 248278^1^0^11^11^1429^0.7670^0.8544^1^Croaky^^
 @i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
+@i^769^Chunk of Boar Meat
 @i^771^Chipped Boar Tusk
 @i^774^Malachite
 @i^779^Shiny Seashell
 @i^780^Torn Murloc Fin
 @i^1181^Scroll of Spirit
+@i^2070^Darnassian Bleu
+@i^2589^Linen Cloth
 @i^2643^Loose Chain Bracers
 @i^2672^Stringy Wolf Meat
 @i^2963^Burnt Leather Boots
@@ -19,16 +26,21 @@ GoldScout-export 5^0apph2znowo4^5
 @i^3300^Rabbit's Foot
 @i^4865^Ruined Pelt
 @i^6303^Raw Slitherskin Mackerel
+@i^6810^Surena's Choker
+@i^7073^Broken Fang
 @i^7074^Chipped Claw
 @i^9754^Nomad Cloak
 @i^211786^Scroll: CHAP BALK WELLES
 @q^118^1:0:0
 @q^159^1:0:0
+@q^769^1:7:1
 @q^771^0:15:0
 @q^774^2:7:1
 @q^779^0:15:0
 @q^780^1:12:0
 @q^1181^1:0:0
+@q^2070^1:0:0
+@q^2589^1:7:1
 @q^2643^0:4:0
 @q^2672^1:7:1
 @q^2963^1:4:0
@@ -36,6 +48,8 @@ GoldScout-export 5^0apph2znowo4^5
 @q^3300^0:15:0
 @q^4865^0:15:0
 @q^6303^1:7:1
+@q^6810^1:12:0
+@q^7073^0:15:0
 @q^7074^0:15:0
 @q^9754^1:4:0
 @q^211786^1:0:0
@@ -676,9 +690,13 @@ GoldScout-export 5^0apph2znowo4^5
 @c^279982^
 @c^286152^
 @a^46^335:6,355:2
+@a^116^314:5,334:2
 @a^118^297:2,316:3
-@a^524^314:1
+@a^390^314:1
+@a^473^334:1
+@a^524^313:1,314:1
 @a^732^335:13,355:3
-@a^822^297:1,334:1
+@a^822^297:1,313:1,334:1
+@a^881^334:1
 @a^248278^355:1
 @l^0^enUS
