@@ -26,6 +26,7 @@ local LEFT = {
     { key = "killsPerHour", label = L["Kills per hour"], min = 1, max = 999 },
     { key = "nodesPerHour", label = L["Herb or ore nodes per hour"], min = 1, max = 999 },
     { key = "picksPerHour", label = L["Pickpockets per hour"], min = 1, max = 999 },
+    { key = "catchesPerHour", label = L["Fishing catches per hour"], min = 1, max = 999 },
   } },
 }
 local RIGHT = {

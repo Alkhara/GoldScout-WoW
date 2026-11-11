@@ -107,7 +107,7 @@ class CommunityLuaTests(unittest.TestCase):
 
     def test_parse_export_matches_python(self):
         lua, ns = self.load(OTHER)
-        install, seq, mobs = ns.Community.ParseExport(OTHER)
+        install, seq, mobs, _ = ns.Community.ParseExport(OTHER)
         self.assertEqual((install, seq), ("otherotherot", 2))
         self.assertEqual(mobs[3812].k, 40)
         self.assertEqual((mobs[3812].i[3010].d, mobs[3812].i[3010].q), (25, 26))
@@ -154,7 +154,7 @@ class SnapshotLuaTests(unittest.TestCase):
 
     def test_snapshot_is_valid_and_stable(self):
         learn = self.ns.Learn
-        text, count = learn.ExportString(learn)
+        text, count, _ = learn.ExportString(learn)
         self.assertEqual(count, 2)
         result = submission.parse(text)
         self.assertEqual(result.errors, [])
@@ -163,10 +163,10 @@ class SnapshotLuaTests(unittest.TestCase):
         self.assertEqual([m.npc for m in result.mobs], [3812, 3814])  # sorted
         self.assertIn("^Spined Crawler^", text)                      # unsafe | removed
         self.assertIn("2674:7:9", text)                               # 9 drops in 7 kills clamped
-        again, _ = learn.Snapshot(learn)
+        again = learn.Snapshot(learn)[0]
         self.assertEqual(again, text)                                 # no change, same snapshot
         self.ns.db.drops[3812].k = 12
-        newer, _ = learn.Snapshot(learn)
+        newer = learn.Snapshot(learn)[0]
         self.assertEqual(submission.parse(newer).seq, 2)
 
     def test_snapshot_carries_names_and_crafted_items(self):
@@ -176,7 +176,7 @@ class SnapshotLuaTests(unittest.TestCase):
         self.ns.db.crafted[2996] = True
         self.ns.db.names.meta[3010] = "1:7:1"
         learn = self.ns.Learn
-        text, count = learn.ExportString(learn)
+        text, count, _ = learn.ExportString(learn)
         self.assertEqual(count, 2)
         self.assertTrue(text.startswith("GoldScout-export 5^"))   # no old companion here
         result = submission.parse(text)
@@ -186,7 +186,7 @@ class SnapshotLuaTests(unittest.TestCase):
         self.assertEqual(result.map_names, {1440: "Ashenvale"})
         self.assertEqual(result.crafted, {2996})
         # The client's own parser skips the @ lines and still reads both mobs.
-        install, seq, mobs = self.ns.Community.ParseExport(text)
+        install, seq, mobs, _ = self.ns.Community.ParseExport(text)
         self.assertEqual((install, seq), (self.ns.db.installID, result.seq))
         self.assertEqual(sorted(mobs.keys()), [3812, 3814])
 

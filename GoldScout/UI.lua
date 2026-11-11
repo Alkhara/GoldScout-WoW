@@ -101,7 +101,13 @@ local function ItemText(row)
 end
 
 -- Words the code uses internally, as shown to players.
-local PER = { kill = L["kill"], pick = L["pick"], node = L["node"], skin = L["skin"], item = L["item"], try = L["try"] }
+local PER = { kill = L["kill"], pick = L["pick"], node = L["node"], skin = L["skin"], item = L["item"], try = L["try"],
+  catch = L["catch"] }
+
+-- What a row's attempts are called in its tooltip.
+local function Attempts(per)
+  return (per == "pick" and L["picks"]) or (per == "catch" and L["catches"]) or L["kills"]
+end
 local function Per(per)
   return PER[per or "try"] or per
 end
@@ -216,10 +222,19 @@ local function FarmTooltip(row)
   end
   if row.confidence then
     GameTooltip:AddDoubleLine(L["Confidence"], ("%s%s|r (%d %s)"):format(row.confidence.color, row.confidence.text,
-      row.seenTrials or 0, row.per == "pick" and L["picks"] or L["kills"]), 0.8, 0.8, 0.8, 1, 1, 1)
+      row.seenTrials or 0, Attempts(row.per)), 0.8, 0.8, 0.8, 1, 1, 1)
   end
-  if row.kind ~= "Learned" and row.seenTrials and row.seenTrials > 0 then
-    GameTooltip:AddDoubleLine((L["Player data (%d %s)"]):format(row.seenTrials, row.per == "pick" and L["picks"] or L["kills"]),
+  if row.catch then
+    GameTooltip:AddLine(" ")
+    GameTooltip:AddLine(L["Each catch brings up"], 1, 1, 1)
+    for i = 1, math.min(8, #row.catch) do
+      local entry = row.catch[i]
+      GameTooltip:AddDoubleLine(ns.ItemName(entry.item), Percent(entry.rate), 0.8, 0.8, 0.8, 1, 1, 1)
+    end
+    GameTooltip:AddLine(" ")
+  end
+  if row.kind ~= "Learned" and row.kind ~= "Fish" and row.seenTrials and row.seenTrials > 0 then
+    GameTooltip:AddDoubleLine((L["Player data (%d %s)"]):format(row.seenTrials, Attempts(row.per)),
       Percent(row.seenRate or 0), 0.8, 0.8, 0.8, 1, 1, 1)
     if row.baseChance then
       GameTooltip:AddDoubleLine(L["Starting rate"], Percent(row.baseChance), 0.8, 0.8, 0.8, 1, 1, 1)
@@ -238,7 +253,7 @@ local function FarmTooltip(row)
   if row.note then
     GameTooltip:AddLine(row.note, 0.95, 0.85, 0.55, true)
   end
-  GameTooltip:AddLine(L["Per-hour figures assume your /gscout set kills, nodes and picks rates."], 0.5, 0.5, 0.5, true)
+  GameTooltip:AddLine(L["Per-hour figures assume your /gscout set kills, nodes, picks and catches rates."], 0.5, 0.5, 0.5, true)
   if row.sources and row.sources > 1 then
     GameTooltip:AddLine((L["Best of %d sources by gold per hour. Click + to see the others."]):format(row.sources),
       0.4, 0.8, 1, true)
@@ -1345,8 +1360,8 @@ local function CreateExportFrame()
 end
 
 function UI:ShowExport()
-  local text, count = ns.Learn:ExportString()
-  if count == 0 then
+  local text, count, spots = ns.Learn:ExportString()
+  if count + (spots or 0) == 0 then
     ns.Print(L["Nothing to share yet; loot some mobs first."])
     return
   end
@@ -1365,6 +1380,7 @@ local SETTING_ALIASES = {
   kills = "killsPerHour",
   nodes = "nodesPerHour",
   picks = "picksPerHour",
+  catches = "catchesPerHour",
   autoscan = "autoScan",
   tooltip = "tooltip",
   blackwater = "blackwaterTooltip",
@@ -1411,7 +1427,7 @@ local function PrintHelp()
   print(L["  /gscout export - copy your learned drop data to share with GoldScout"])
   print(L["  /gscout errors - list GoldScout's recent errors; /gscout errors clear"])
   print(L["  /gscout skills - show the skills and recipes GoldScout knows"])
-  print(L["  /gscout set kills|nodes|picks <number> - your rates per hour"])
+  print(L["  /gscout set kills|nodes|picks|catches <number> - your rates per hour"])
   print(L["  /gscout set autoscan|tooltip|window|waypoint|markers|learn|mobtips|raredrops|cloth|minimap on|off"])
   print(L["  /gscout reset prices | drops - forget saved prices or learned drop rates"])
 end
@@ -1476,7 +1492,7 @@ local function SetOption(rest)
     return
   end
   if not setting then
-    ns.Print(L["Usage: /gscout set kills|nodes|picks <number>, or "
+    ns.Print(L["Usage: /gscout set kills|nodes|picks|catches <number>, or "
       .. "/gscout set autoscan|tooltip|blackwater|window|waypoint|markers|learn|mobtips|raredrops|cloth|minimap|companionhint on|off"])
     return
   end

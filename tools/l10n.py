@@ -26,7 +26,7 @@ PLACEHOLDER = re.compile(r"%(?:\d+\$)?[-+ #0]*\d*(?:\.\d+)?([sdgfx%])")
 # Texts the addon looks up from a variable (L[row.kind], L[faction], ...).
 DYNAMIC = [
     # Farm kinds (Type column)
-    "Drop", "Pickpocket", "Learned", "Market", "Cloth", "Herb", "Ore", "Skin", "Loot",
+    "Drop", "Pickpocket", "Learned", "Market", "Cloth", "Herb", "Ore", "Skin", "Loot", "Fish",
     # Per-what words
     "kill", "pick", "node", "skin", "item", "try",
     # Factions and rulesets (auction house names: "%s %s" = ruleset, faction)

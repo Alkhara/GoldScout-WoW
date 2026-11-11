@@ -225,7 +225,7 @@ local function ItemValue(itemID)
   return sell
 end
 
-local ACTION_FIELD = { kill = "kills", pick = "picks", node = "nodes" }
+local ACTION_FIELD = { kill = "kills", pick = "picks", node = "nodes", catch = "catches" }
 
 ns.Listen("LOOT_ACTION", function(role)
   local field = ACTION_FIELD[role]
@@ -242,7 +242,7 @@ ns.Listen("LOOT_GAINED", function(itemID, quantity)
   end
 end)
 
--- Counts how many of your kills (or picks) dropped the item you're hunting.
+-- Counts how many of your kills (picks, or catches) dropped the item you're hunting.
 ns.Listen("LOOT_DROP", function(role, npcID, itemID)
   if not session or itemID ~= session.target.item or role ~= session.target.per then
     return
@@ -269,6 +269,7 @@ local function Summarize(s)
     kills = s.kills,
     picks = s.picks,
     nodes = s.nodes,
+    catches = s.catches,
     hits = s.hits,
     count = s.gained[s.target.item] or 0,
     value = value,
@@ -298,7 +299,7 @@ function Hunt:Start(target)
     target = target,
     started = time(),
     startMoney = GetMoney(),
-    kills = 0, picks = 0, nodes = 0, hits = 0,
+    kills = 0, picks = 0, nodes = 0, catches = 0, hits = 0,
     gained = {},
   }
   local placed = false
@@ -496,6 +497,8 @@ function Hunt:UpdatePanel()
     actions, noun = s.picks, L["Pickpockets"]
   elseif target.per == "node" then
     actions, noun = s.nodes, L["Nodes"]
+  elseif target.per == "catch" then
+    actions, noun = s.catches, L["Catches"]
   end
 
   local lines = {
@@ -503,7 +506,7 @@ function Hunt:UpdatePanel()
     (L["Time %s   ·   %s %d"]):format(Clock(summary.duration), noun, actions),
   }
   local targetLine = ("%s: %d"):format(ns.ItemName(target.item), summary.count)
-  if target.chance and actions > 0 and (target.per == "kill" or target.per == "pick") then
+  if target.chance and actions > 0 and (target.per == "kill" or target.per == "pick" or target.per == "catch") then
     targetLine = targetLine .. (L["   ·   %d%% per %s (expected %d%%)"]):format(
       math.floor(s.hits / actions * 100 + 0.5), target.per, math.floor(target.chance * 100 + 0.5))
   end

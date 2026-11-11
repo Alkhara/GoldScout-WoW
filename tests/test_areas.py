@@ -113,7 +113,7 @@ class VersionFiveExportTests(unittest.TestCase):
                      n = "Klappernder Kriecher", i = { [3010] = { d = 7, q = 7 } }, pi = {}, a = { [205] = 9, [206] = 2 } },
         } }""")
         ns.handlers["DB_READY"]()
-        text, _ = ns.Learn.ExportString(ns.Learn)
+        text = ns.Learn.ExportString(ns.Learn)[0]
         return ns, text
 
     def test_versions_follow_the_players_companion(self):
@@ -137,7 +137,7 @@ class VersionFiveExportTests(unittest.TestCase):
         self.assertEqual(result.errors, [])
         self.assertEqual((result.version, result.locale), (5, "deDE"))
         self.assertEqual(result.mobs[0].a, {205: 9, 206: 2})
-        install, _, mobs = ns.Community.ParseExport(text)            # the addon's own parser skips @ lines
+        install, _, mobs, _ = ns.Community.ParseExport(text)         # the addon's own parser skips @ lines
         self.assertEqual(sorted(mobs.keys()), [3812])
 
 

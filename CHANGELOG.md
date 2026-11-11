@@ -7,6 +7,12 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- **Fishing on the Farm tab:** GoldScout now learns what you fish up, in which
+  zone, and whether it came from open water or a fishing pool. Each zone's open
+  water and each kind of pool gets its own row, valued from everything players
+  have caught there; the tooltip lists the catch, and Hunt points you to where
+  the fish are and counts your catches. Shared like your drop data, so the rows
+  fill in as players fish. Set your pace with `/gscout set catches`.
 - GoldScout's error log no longer keeps other addons' errors as its own.
 
 ## v0.11.0

@@ -16,6 +16,9 @@ based on your level, class, faction and professions.
   - mobs that drop valuable crafting reagents, with rates from your own loot and other players'
   - cloth from humanoids up to your level (off by default; `/gscout set cloth on`)
   - herbs, ore and leather you can gather with your Herbalism, Mining or Skinning skill
+  - fishing: one row per zone for open water and for each kind of fishing pool, valued from what
+    players have actually fished up there (the tooltip lists the catch); pools count half your time,
+    since you have to find the next one
   - **Market** rows: crafting reagents (items the game marks "Crafting Reagent") selling on your auction house up to a few levels above yours
     that no farm covers yet, ranked by price per item. Gray (vendor trash), crafted and vendor-sold
     items are left out unless players have looted them from a mob. Their drop rate is learned
@@ -70,7 +73,8 @@ Select a farm on the Farm tab and press **Hunt**:
    summary; `/gscout hunt history` lists recent hunts.
 
 Gathering, cloth and skinning rows have no single spot, so their hunts just
-track loot.
+track loot. A fishing hunt points the waypoint at where players catch the most
+there, and counts your catches.
 
 ## Staying within the rules
 
@@ -123,6 +127,7 @@ set up, ticking itself off as you go (`/gscout welcome` shows it again):
 | `/gscout set kills 80` | Your kills per hour on same-level mobs (default 70) |
 | `/gscout set nodes 25` | Herb or ore nodes per hour (default 25) |
 | `/gscout set picks 110` | Pickpockets per hour (default 110) |
+| `/gscout set catches 200` | Fishing catches per hour in open water (default 200; pools count half) |
 | `/gscout set autoscan on` | Scan automatically when you open the auction house (at most every 10 minutes) |
 | `/gscout set window off` | Stop opening beside the auction house |
 | `/gscout set tooltip off` | Remove prices from item tooltips |
@@ -148,7 +153,7 @@ set up, ticking itself off as you go (`/gscout welcome` shows it again):
   GoldScout is not affiliated with or endorsed by Blizzard. One cheap listing
   can make an item look cheaper than it really is; the **Listed** column shows
   how deep the market is, and rows with few listings warn you in the tooltip.
-- **Each** is the expected value of one kill, node, skin or pickpocket: price
+- **Each** is the expected value of one kill, node, skin, catch or pickpocket: price
   after the 5% auction house cut times the drop chance or yield.
 - **Est. /hour** multiplies that by your rate. Kills per hour go up for mobs
   well below your level and down for mobs above it. Tune the rates with

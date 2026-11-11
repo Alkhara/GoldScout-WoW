@@ -34,8 +34,9 @@ priced against your own realm's auction house.
 ## Features
 
 - **Farm tab:** farms ranked by estimated gold per hour: mob drops, cloth,
-  herbs, ore and leather your skills can gather, pickpocketing for rogues, and
-  crafting reagents selling on your auction house right now.
+  herbs, ore and leather your skills can gather, fishing by zone and by kind of
+  fishing pool, pickpocketing for rogues, and crafting reagents selling on your
+  auction house right now.
 - **Experience check:** see at a glance which farms still give you XP, so you
   can level and earn at the same time.
 - **Craft tab:** every recipe you know, ranked by profit after the auction house

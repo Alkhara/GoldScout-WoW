@@ -402,6 +402,135 @@ local function LootHunt(key, per, itemID, label, zone)
 end
 
 ---------------------------------------------------------------------------
+-- Fishing
+---------------------------------------------------------------------------
+
+-- A fishing pool takes finding; this share of your time is spent fishing it.
+local POOL_FISHING_SHARE = 0.5
+-- Grid squares (Learn.lua's 20x20 AreaCell) where most catches were, as
+-- waypoint spots in map percent: up to this many.
+local FISH_SPOTS = 3
+
+-- Every zone and spot fished, community data plus your own:
+-- { { map, spot, n, s, i = { [itemID] = { d, q } }, a = { [cell] = count } } }.
+local function FishSpots()
+  local spots, index = {}, {}
+  local function Add(fishing)
+    for map, zone in pairs(fishing or {}) do
+      for spot, entry in pairs(zone) do
+        local key = map .. ":" .. spot
+        local merged = index[key]
+        if not merged then
+          merged = { map = map, spot = spot, n = 0, i = {}, a = {} }
+          index[key] = merged
+          spots[#spots + 1] = merged
+        end
+        merged.n = merged.n + (entry.n or 0)
+        if (entry.s or 0) > 0 then
+          merged.s = math.min(merged.s or entry.s, entry.s)
+        end
+        for itemID, stat in pairs(entry.i or {}) do
+          local item = merged.i[itemID] or { d = 0, q = 0 }
+          merged.i[itemID] = item
+          item.d, item.q = item.d + (stat.d or 0), item.q + (stat.q or 0)
+        end
+        for cell, count in pairs(entry.a or {}) do
+          merged.a[cell] = (merged.a[cell] or 0) + count
+        end
+      end
+    end
+  end
+  Add(ns.COMMUNITY_FISH)
+  Add(ns.Learn:Fish())
+  return spots
+end
+
+-- What one fished-up item is worth to you: the AH price after the cut, or the
+-- vendor price for gray items and anything without an AH price.
+local function CatchValue(itemID)
+  local sell = ns.ItemSellPrice(itemID) or 0
+  local net, listed, age = NetPrice(itemID)
+  if net and not ns.IsPoorQuality(itemID) then
+    return math.max(net, sell), listed, age
+  end
+  return sell > 0 and sell or nil
+end
+
+-- The busiest grid squares, as { map, x%, y% } spots for the hunt waypoint.
+local function CellSpots(map, cells)
+  local list = {}
+  for cell, count in pairs(cells) do
+    list[#list + 1] = { cell = cell, count = count }
+  end
+  table.sort(list, function(a, b)
+    return a.count ~= b.count and a.count > b.count or a.cell < b.cell
+  end)
+  local spots = {}
+  for i = 1, math.min(FISH_SPOTS, #list) do
+    local cell = list[i].cell
+    spots[i] = { map, (cell % 20 + 0.5) * 5, (math.floor(cell / 20) + 0.5) * 5 }
+  end
+  return (#spots > 0) and spots or nil
+end
+
+-- One Farm row per zone and spot (open water, or a kind of fishing pool),
+-- valued per catch from everything players have fished up there.
+local function FishRows(rows, settings, skills)
+  local fishing = skills[ns.SKILL.FISHING]
+  if not fishing and not settings.showOtherProfs then
+    return
+  end
+  local rank = fishing and ns.Plain(fishing.rank)
+  for _, place in ipairs(FishSpots()) do
+    if place.n > 0 then
+      local each, best, bestValue, bestRate, catch = 0, nil, nil, nil, {}
+      local bestListed, bestAge
+      for itemID, stat in pairs(place.i) do
+        local value, listed, age = CatchValue(itemID)
+        local rate = stat.d / place.n
+        catch[#catch + 1] = { item = itemID, rate = rate }
+        if value then
+          local worth = value * stat.q / place.n
+          each = each + worth
+          if not bestValue or worth > bestValue then
+            best, bestValue, bestRate, bestListed, bestAge = itemID, worth, rate, listed, age
+          end
+        end
+      end
+      if best then
+        table.sort(catch, function(a, b)
+          return a.rate ~= b.rate and a.rate > b.rate or a.item < b.item
+        end)
+        local pool = place.spot ~= 0
+        local cautious = each * place.n / (place.n + CAUTION_ATTEMPTS)
+        local perHour = settings.catchesPerHour * (pool and POOL_FISHING_SHARE or 1)
+        local zone = MapName(place.map) or L["where players loot it"]
+        local source = pool and L["Fishing pool"] or L["Open water"]
+        local tooLow = type(rank) == "number" and place.s and rank < place.s
+        local note = (L["%d catches recorded by GoldScout players."]):format(place.n)
+        if place.s then
+          note = note .. (L[" Lowest Fishing skill seen catching here: %d."]):format(place.s)
+        end
+        if pool then
+          note = note .. L[" Pools assume half your time goes to finding the next one."]
+        end
+        rows[#rows + 1] = {
+          kind = "Fish", item = best, source = source, zone = zone, lvl = "-",
+          chance = bestRate, per = "catch", seenRate = bestRate, seenTrials = place.n,
+          confidence = Engine.Confidence(place.n), catch = catch,
+          each = cautious, hour = cautious * perHour,
+          listed = bestListed, age = bestAge, needsProfession = not fishing or tooLow or nil, note = note,
+          hunt = {
+            key = "Fish:" .. place.map .. ":" .. place.spot, kind = "Fish", per = "catch", item = best,
+            chance = bestRate, label = source, zone = zone, npcs = {}, spots = CellSpots(place.map, place.a),
+          },
+        }
+      end
+    end
+  end
+end
+
+---------------------------------------------------------------------------
 -- Crafting
 ---------------------------------------------------------------------------
 
@@ -732,6 +861,8 @@ function Engine:Farms()
       end
     end
   end
+
+  FishRows(rows, settings, skills)
 
   -- Crafting reagents selling on your auction house that no farm above covers.
   -- Without a drop rate there's no hourly estimate, so they rank by price per

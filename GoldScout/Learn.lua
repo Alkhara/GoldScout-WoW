@@ -46,6 +46,14 @@ local function AreaCell(x, y)
   return row * AREA_GRID + column
 end
 
+-- Fishing: a loot window from fishing names its source as the bobber you cast
+-- (open water, spot 0) or the fishing pool the bobber landed in (that pool's
+-- object ID, so each kind of pool is its own spot). Catches are kept per zone
+-- and spot in GoldScoutDB.fish, with what came up and where you stood.
+local FISHING_BOBBER = 35591
+local OPEN_WATER = 0
+local MAX_EXPORT_CATCHES = 5000   -- tools/submission.py's limit per spot
+
 -- GUIDs stay stable for a play session, so each corpse, pickpocket or node is
 -- counted once even if you reopen its loot (or skin it afterwards).
 local counted = {}
@@ -273,7 +281,47 @@ end
 -- ("@q^itemID^quality:class:reagent"), then every item a recipe makes
 -- ("@c^itemID^"), which players' Market rows leave out. Version 5 adds the
 -- grid squares each mob was looted in ("@a^npcID^cell:count,...") and the
--- game's language ("@l^0^enUS").
+-- game's language ("@l^0^enUS"), and what was fished up, one line per zone
+-- and spot ("@f^uiMapID^spot^catches^skill^items^cells").
+local function FishLines(items, maps)
+  local lines = {}
+  local fish = (ns.db and ns.db.fish) or {}
+  for _, map in ipairs(SortedKeys(fish)) do
+    for _, spot in ipairs(SortedKeys(fish[map])) do
+      local entry = fish[map][spot]
+      local catches = entry.n or 0
+      if catches > 0 then
+        -- A very long session at one spot is scaled down to the shared limit.
+        local factor = math.min(1, MAX_EXPORT_CATCHES / catches)
+        local scaled = {}
+        for itemID, stat in pairs(entry.i or {}) do
+          local times = math.floor(stat.d * factor + 0.5)
+          if times > 0 then
+            scaled[itemID] = { d = times, q = math.max(times, math.floor(stat.q * factor + 0.5)) }
+          end
+        end
+        catches = math.min(catches, MAX_EXPORT_CATCHES)
+        local cells, placed = {}, 0
+        for _, cell in ipairs(SortedKeys(entry.a)) do
+          local count = math.floor(entry.a[cell] * factor + 0.5)
+          if count > 0 and placed + count <= catches then
+            cells[#cells + 1] = cell .. ":" .. count
+            placed = placed + count
+          end
+        end
+        local itemList = ItemList(scaled, catches)
+        lines[#lines + 1] = table.concat({ "@f", map, spot, catches, entry.s or 0, itemList,
+          table.concat(cells, ",") }, "^")
+        for itemID in itemList:gmatch("(%d+):%d+:%d+") do
+          items[tonumber(itemID)] = true
+        end
+        maps[map] = true
+      end
+    end
+  end
+  return lines
+end
+
 local function ExportBody()
   local drops = (ns.db and ns.db.drops) or {}
   local names = Names() or { items = {}, maps = {} }
@@ -315,6 +363,7 @@ local function ExportBody()
     end
   end
   local mobs = #lines
+  local fishLines = ExportVersion() >= 5 and FishLines(items, maps) or {}
   for _, itemID in ipairs(SortedKeys(items)) do
     if not names.items[itemID] then
       NoteItemName(itemID)
@@ -347,23 +396,26 @@ local function ExportBody()
     for _, line in ipairs(areas) do
       lines[#lines + 1] = line
     end
+    for _, line in ipairs(fishLines) do
+      lines[#lines + 1] = line
+    end
     lines[#lines + 1] = "@l^0^" .. (ns.LOCALE or "enUS")
   end
-  return table.concat(lines, "\n"), mobs
+  return table.concat(lines, "\n"), mobs, #fishLines
 end
 
 -- Saves the current export as a numbered snapshot (a new number only when the
--- data changed) and returns its full text and mob count. The companion app
+-- data changed) and returns its full text, mob count and fishing spot count. The companion app
 -- shares the latest snapshot, and the community data records which snapshot
 -- it includes, so your client can take exactly that back out.
 function Learn:Snapshot()
   local db = ns.db
   if not db then
-    return nil, 0
+    return nil, 0, 0
   end
-  local body, count = ExportBody()
-  if count == 0 then
-    return nil, 0
+  local body, count, spots = ExportBody()
+  if count + spots == 0 then
+    return nil, 0, 0
   end
   local exports = db.exports
   local latest = exports.list[exports.seq]
@@ -378,7 +430,7 @@ function Learn:Snapshot()
       end
     end
   end
-  return exports.list[exports.seq], count
+  return exports.list[exports.seq], count, spots
 end
 
 function Learn:ExportString()
@@ -396,8 +448,10 @@ ns.Listen("DB_READY", function()
   db.names.items = db.names.items or {}
   db.names.maps = db.names.maps or {}
   db.names.meta = db.names.meta or {}
+  db.fish = db.fish or {}
+  ns.COMMUNITY_FISH = ns.COMMUNITY_FISH or {}
   Learn.ownShared = ns.Community.RemoveOwn(ns.COMMUNITY, ns.COMMUNITY_SOURCES, ns.COMMUNITY_CAP,
-    db.installID, db.exports, db.drops)
+    db.installID, db.exports, db.drops, ns.COMMUNITY_FISH, db.fish)
 end)
 
 -- Keep the latest snapshot current for the companion app, which reads it
@@ -433,21 +487,31 @@ function Learn:NoteUnit(npcID, name, level)
   end
 end
 
-local function NotePosition(entry)
+-- Your zone map and position on it (0-1), or nil when the game doesn't say.
+-- x and y are nil when only the zone is known.
+local function PlayerSpot()
   if not C_Map or not C_Map.GetBestMapForUnit or not C_Map.GetPlayerMapPosition then
-    return
+    return nil
   end
   local map = ns.Plain(C_Map.GetBestMapForUnit("player"))
   if type(map) ~= "number" then
-    return
+    return nil
   end
   local position = C_Map.GetPlayerMapPosition(map, "player")
   if not position then
-    return
+    return map
   end
   local x, y = position:GetXY()
   x, y = ns.Plain(x), ns.Plain(y)
   if type(x) ~= "number" or type(y) ~= "number" or (x == 0 and y == 0) then
+    return map
+  end
+  return map, x, y
+end
+
+local function NotePosition(entry)
+  local map, x, y = PlayerSpot()
+  if not x then
     return
   end
   if entry.m ~= map then
@@ -462,6 +526,55 @@ local function NotePosition(entry)
   entry.a = entry.a or {}
   local cell = AreaCell(x, y)
   entry.a[cell] = (entry.a[cell] or 0) + 1
+  NoteMapName(map)
+end
+
+-- Everything fished up so far: { [uiMapID] = { [spot] = { n, s, i, a } } }.
+function Learn:Fish()
+  return (ns.db and ns.db.fish) or {}
+end
+
+-- One fishing loot window: counts the catch where you are, with what's in it.
+local function RecordCatch(spot, slots)
+  local map, x, y = PlayerSpot()
+  if not map or not ns.db or not ns.db.fish then
+    return
+  end
+  local zone = ns.db.fish[map] or {}
+  ns.db.fish[map] = zone
+  local entry = zone[spot]
+  if not entry then
+    entry = { n = 0, i = {}, a = {} }
+    zone[spot] = entry
+  end
+  entry.n = entry.n + 1
+  local skill = ns.Professions and ns.Professions:Skills()[ns.SKILL.FISHING]
+  local rank = skill and ns.Plain(skill.rank)
+  if type(rank) == "number" and rank > 0 then
+    entry.s = math.min(entry.s or rank, rank)
+  end
+  if x then
+    local cell = AreaCell(x, y)
+    entry.a[cell] = (entry.a[cell] or 0) + 1
+  end
+  -- An item counts once per catch however many slots it fills.
+  local caught = {}
+  for _, slotInfo in pairs(slots) do
+    if slotInfo.item then
+      caught[slotInfo.item] = (caught[slotInfo.item] or 0) + slotInfo.quantity
+      NoteItemName(slotInfo.item, slotInfo.name)
+      NoteItemMeta(slotInfo.item)
+    end
+  end
+  for itemID, quantity in pairs(caught) do
+    local stat = entry.i[itemID]
+    if not stat then
+      stat = { d = 0, q = 0 }
+      entry.i[itemID] = stat
+    end
+    stat.d = stat.d + 1
+    stat.q = stat.q + quantity
+  end
   NoteMapName(map)
 end
 
@@ -504,7 +617,7 @@ local function ReadWindow()
   local targetAlive = targetGUID ~= nil and ns.Plain(UnitIsDead("target")) == false
   local fishing = (IsFishingLoot and IsFishingLoot()) or false
   local gathering = GetTime() - lastGatherCast <= GATHER_SECONDS
-  local result = { slots = {}, sources = {} }
+  local result = { slots = {}, sources = {}, fishing = fishing, spot = OPEN_WATER }
 
   -- A window holding only gathering products is gathering as well.
   local count, allGathered = GetNumLootItems() or 0, true
@@ -535,6 +648,9 @@ local function ReadWindow()
         slotInfo.sources[#slotInfo.sources + 1] = { guid = guid, quantity = (type(quantity) == "number") and quantity or nil }
         if not result.sources[guid] then
           local kind, id = ns.ParseGUID(guid)
+          if fishing and kind == "GameObject" and id and id ~= FISHING_BOBBER then
+            result.spot = id   -- the bobber landed in a fishing pool
+          end
           local role = SourceRole(kind, guid, targetGUID, targetAlive, fishing, gathering)
           local key = guid .. ":" .. role
           result.sources[guid] = {
@@ -555,6 +671,19 @@ local function OnLootReady()
   end
   window = ReadWindow()
   local learn = ns.db.settings.learnDrops
+  if window.fishing then
+    -- One loot window per catch; it stays open (window set) until it closes.
+    if learn then
+      RecordCatch(window.spot, window.slots)
+    end
+    ns.Fire("LOOT_ACTION", "catch", window.spot)
+    for _, slotInfo in pairs(window.slots) do
+      if slotInfo.item then
+        ns.Fire("LOOT_DROP", "catch", window.spot, slotInfo.item, slotInfo.quantity)
+      end
+    end
+    return
+  end
   for guid, source in pairs(window.sources) do
     if source.pending then
       -- Counted when it died; its drops still count now.

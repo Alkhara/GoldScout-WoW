@@ -13,7 +13,9 @@ Every file is checked by tools/submission.py; files with errors are skipped.
 Identical files are counted once. Each export holds everything that player
 has ever looted, so keep only one file per player, or their loot counts twice.
 No single player can outweigh the rest: their kills (and pickpockets) of any
-one mob count up to --max-per-player, with their drops scaled to match.
+one mob count up to --max-per-player, with their drops scaled to match. The
+same goes for fishing: each player's catches at one spot (open water or a kind
+of fishing pool, per zone) count up to --max-per-player.
 """
 import argparse
 import hashlib
@@ -121,6 +123,27 @@ def merge(submissions, max_per_player):
     return merged
 
 
+def merge_fish(submissions, max_per_player):
+    """Every player's fishing, per zone and spot: {(map, spot): {"n", "s", "i", "a"}}."""
+    merged = {}
+    for fishing in submissions:
+        for fish in fishing:
+            factor = min(1.0, max_per_player / fish.n)
+            entry = merged.setdefault((fish.m, fish.spot), {
+                "n": 0, "s": 0, "i": defaultdict(lambda: [0, 0]), "a": defaultdict(float)})
+            entry["n"] += min(fish.n, max_per_player)
+            if fish.s:
+                entry["s"] = min(entry["s"] or fish.s, fish.s)
+            for item, (d, q) in _scaled(fish.i, factor).items():
+                entry["i"][item][0] += d
+                entry["i"][item][1] += q
+            placed = sum(fish.a.values())
+            cell_factor = min(1.0, max_per_player / placed) if placed else 1.0
+            for cell, n in fish.a.items():
+                entry["a"][cell] += n * cell_factor
+    return merged
+
+
 def lua_items(items):
     parts = ["[%d] = { d = %d, q = %d }" % (item_id, d, q) for item_id, (d, q) in sorted(items.items())]
     return "{ " + ", ".join(parts) + " }" if parts else "{}"
@@ -130,7 +153,7 @@ def lua_string(text):
     return '"' + text.replace("\\", "\\\\").replace('"', '\\"') + '"'
 
 
-def write_lua(merged, min_attempts, path, contributors, sources=None, cap=1000, crafted=()):
+def write_lua(merged, min_attempts, path, contributors, sources=None, cap=1000, crafted=(), fish=None):
     out = [
         "-- GoldScout community data: drop rates and spawn spots collected by players",
         "-- with /gscout export and combined by tools/merge_data.py. Generated file;",
@@ -162,6 +185,28 @@ def write_lua(merged, min_attempts, path, contributors, sources=None, cap=1000, 
                 fields.append("a = { %s }" % ", ".join("[%d] = %d" % pair for pair in sorted(cells.items())))
         fields += ["i = %s" % lua_items(entry["i"]), "pi = %s" % lua_items(entry["pi"])]
         out.append("  [%d] = { %s }," % (npc, ", ".join(fields)))
+    out.append("}")
+    out.append("")
+    out.append("-- What players fished up, by zone (uiMapID) and spot: 0 is open water,")
+    out.append("-- other numbers are fishing pools (the pool's object ID). n catches, s the")
+    out.append("-- lowest Fishing skill seen, i items, a where (20x20 grid squares).")
+    out.append("ns.COMMUNITY_FISH = {")
+    by_map = defaultdict(list)
+    for (map_id, spot), entry in sorted((fish or {}).items()):
+        if entry["n"] >= min_attempts:
+            by_map[map_id].append((spot, entry))
+    for map_id in sorted(by_map):
+        out.append("  [%d] = {" % map_id)
+        for spot, entry in by_map[map_id]:
+            fields = ["n = %d" % entry["n"]]
+            if entry["s"]:
+                fields.append("s = %d" % entry["s"])
+            fields.append("i = %s" % lua_items(entry["i"]))
+            cells = {cell: half_up(n) for cell, n in entry["a"].items() if half_up(n) > 0}
+            if cells:
+                fields.append("a = { %s }" % ", ".join("[%d] = %d" % pair for pair in sorted(cells.items())))
+            out.append("    [%d] = { %s }," % (spot, ", ".join(fields)))
+        out.append("  },")
     out.append("}")
     out.append("")
     out.append("-- The export snapshot of each install included above, so a player's own")
@@ -198,9 +243,11 @@ def main():
         print("No valid submissions in %s; writing an empty data file." % folder)
     merged = merge([result.mobs for result in submissions], args.max_per_player)
     crafted = set().union(*(result.crafted for result in submissions)) if submissions else set()
+    fish = merge_fish([result.fishing for result in submissions], args.max_per_player)
     kept = write_lua(merged, args.min_attempts, TARGET, len(submissions), sources_of(submissions),
-                     args.max_per_player, crafted)
-    print("Wrote %s: %d mobs from %d submission(s)." % (TARGET, kept, len(submissions)))
+                     args.max_per_player, crafted, fish)
+    print("Wrote %s: %d mobs and %d fishing spots from %d submission(s)."
+          % (TARGET, kept, sum(1 for entry in fish.values() if entry["n"] >= args.min_attempts), len(submissions)))
 
 
 if __name__ == "__main__":

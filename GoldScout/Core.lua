@@ -18,6 +18,7 @@ local DEFAULT_SETTINGS = {
   killsPerHour = 70,      -- kills per hour on mobs of your own level
   nodesPerHour = 25,      -- herb or ore nodes per hour
   picksPerHour = 110,     -- pickpockets per hour
+  catchesPerHour = 200,   -- fishing catches per hour in open water (pools count half)
   showTrivial = false,    -- include gray recipes that no longer give skill-ups
   showBound = false,      -- include recipes whose product can't be sold
   showAllLevels = false,  -- ignore your level when listing farms

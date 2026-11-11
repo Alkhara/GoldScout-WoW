@@ -25,6 +25,12 @@ Version 3 adds optional lines after the mobs:
 Version 4 adds:
   @q^itemID^quality:class:reagent   item quality, item class ID and the
                                     Crafting Reagent flag (1, 0 or x unknown)
+Version 5 exports can also hold what was fished up, one line per zone and spot:
+  @f^uiMapID^spot^catches^skill^items^cells
+where spot is 0 for open water or the fishing pool's object ID, catches is how
+many loot windows fishing opened there, skill the lowest Fishing skill a catch
+came at (0 if unknown), items "itemID:times:quantity" as for mobs, and cells
+where the catches were, as for @a. An export can hold only fishing lines.
 Versions 2 (no @ lines) and 3 are still accepted; version 1 (no install ID)
 isn't.
 """
@@ -38,7 +44,7 @@ LOCALE_RE = re.compile(r"^[a-z]{2}[A-Z]{2}$")
 AREA_RE = re.compile(r"^\d{1,3}:\d{1,6}(?:,\d{1,3}:\d{1,6})*$")
 AREA_CELLS = 400            # a 20x20 grid
 KNOWN_VERSION = 5           # the newest export version this copy understands
-KNOWN_EXTRA = ("@i", "@m", "@c", "@q", "@l", "@a")
+KNOWN_EXTRA = ("@i", "@m", "@c", "@q", "@l", "@a", "@f")
 NEWER_HEADER_RE = re.compile(r"^GoldScout-export (\d+)\^[a-z0-9]{12}\^[1-9][0-9]{0,8}$")
 ITEM_META_RE = re.compile(r"^([0-9]):([0-9]{1,2}):([01x])$")
 
@@ -58,6 +64,8 @@ MAX_DROPS_PER_ATTEMPT = 8   # items one corpse or pocket can hold
 MAX_QUANTITY_PER_DROP = 100 # average stack size per drop
 MAX_NAME_LENGTH = 64
 MAX_EXTRA_LINES = 5000      # @ lines (names and crafted items) in one export
+MAX_FISH_SKILL = 450        # Fishing skill, with lures and gear on top of 300
+MAX_ITEMS_PER_SPOT = 100    # different items fished up at one spot
 
 # Rate checks against data already accepted from other players.
 OUTLIER_MIN_ATTEMPTS = 30   # both sides need at least this many attempts
@@ -86,6 +94,19 @@ class Mob:
         ])
 
 
+class Fish:
+    """What was fished up at one spot (open water is spot 0) on one map."""
+    __slots__ = ("m", "spot", "n", "s", "i", "a")
+
+    def __init__(self, m, spot, n, s, i, a):
+        self.m, self.spot, self.n, self.s, self.i, self.a = m, spot, n, s, i, a
+
+    def to_line(self):
+        return "^".join(["@f", str(self.m), str(self.spot), str(self.n), str(self.s),
+                         ",".join("%d:%d:%d" % (item, d, q) for item, (d, q) in sorted(self.i.items())),
+                         ",".join("%d:%d" % pair for pair in sorted(self.a.items()))])
+
+
 class Result:
     def __init__(self):
         self.mobs = []
@@ -100,6 +121,7 @@ class Result:
         self.item_meta = {}  # itemID -> (quality, classID, reagent: True/False/None)
         self.locale = None   # the client's language (version 5+); None for older exports
         self.areas = {}      # npcID -> {cell: count} from @a lines, attached to the mobs
+        self.fishing = []    # Fish from @f lines
 
     def text(self):
         """The export rebuilt from the validated data."""
@@ -112,6 +134,7 @@ class Result:
         for mob in self.mobs:
             if mob.a:
                 lines.append("@a^%d^%s" % (mob.npc, ",".join("%d:%d" % pair for pair in sorted(mob.a.items()))))
+        lines += [fish.to_line() for fish in sorted(self.fishing, key=lambda f: (f.m, f.spot))]
         if self.locale:
             lines.append("@l^0^%s" % self.locale)
         return "\n".join(lines) + "\n"
@@ -233,9 +256,55 @@ def _parse_line(line, line_no, result):
                n=name, i=drops, pi=pick_drops)
 
 
+def _cells(text, line_no, result):
+    """ "cell:count,..." -> {cell: count}, or None (with an error) if it's malformed."""
+    pairs = [p.split(":") for p in text.split(",")] if AREA_RE.match(text) else None
+    if not pairs or any(int(c) >= AREA_CELLS or int(n) < 1 for c, n in pairs) or \
+            len({int(c) for c, _ in pairs}) != len(pairs):
+        result.errors.append("Line %d: area cells must look like cell:count,... (cells 0-399)." % line_no)
+        return None
+    return {int(c): int(n) for c, n in pairs}
+
+
+def _parse_fish(line, line_no, result):
+    """One @f line: what was fished up at a spot."""
+    fields = line.split("^")
+    if result.version < 5:
+        result.errors.append("Line %d: fishing lines need a version 5 export." % line_no)
+        return
+    if len(fields) != 7:
+        result.errors.append("Line %d: a fishing line has 7 fields separated by ^, found %d." % (line_no, len(fields)))
+        return
+    map_id = _int(fields[1], "map ID", line_no, result, low=1)
+    spot = _int(fields[2], "fishing spot", line_no, result)
+    catches = _int(fields[3], "catch count", line_no, result, low=1, high=MAX_ATTEMPTS)
+    skill = _int(fields[4], "Fishing skill", line_no, result, high=MAX_FISH_SKILL)
+    if None in (map_id, spot, catches, skill):
+        return
+    if len(fields[5].split(",")) > MAX_ITEMS_PER_SPOT:
+        result.errors.append("Line %d: more than %d different items fished up." % (line_no, MAX_ITEMS_PER_SPOT))
+        return
+    items = _items(fields[5], "catches", catches, line_no, result)
+    if items is None:
+        return
+    cells = _cells(fields[6], line_no, result) if fields[6] else {}
+    if cells is None:
+        return
+    if sum(cells.values()) > catches:
+        result.errors.append("Line %d: more catch positions than catches." % line_no)
+        return
+    if any(f.m == map_id and f.spot == spot for f in result.fishing):
+        result.errors.append("Line %d: map %d spot %d has more than one fishing line." % (line_no, map_id, spot))
+        return
+    result.fishing.append(Fish(map_id, spot, catches, skill, items, cells))
+
+
 def _parse_extra(line, line_no, result):
     """One @ line: an item name, item details, a zone name or a crafted item."""
     fields = line.split("^")
+    if fields[0] == "@f":
+        _parse_fish(line, line_no, result)
+        return
     if len(fields) != 3 or fields[0] not in ("@i", "@m", "@c", "@q", "@l", "@a"):
         result.errors.append("Line %d: expected @i, @q, @m, @c, @l or @a followed by an ID and a value." % line_no)
         return
@@ -245,15 +314,12 @@ def _parse_extra(line, line_no, result):
         if result.version < 5:
             result.errors.append("Line %d: area lines need a version 5 export." % line_no)
         elif npc is not None:
-            cells = {}
-            pairs = [p.split(":") for p in name.split(",")] if AREA_RE.match(name) else None
-            if not pairs or any(int(c) >= AREA_CELLS or int(n) < 1 for c, n in pairs) or \
-                    len({int(c) for c, _ in pairs}) != len(pairs):
-                result.errors.append("Line %d: area cells must look like cell:count,... (cells 0-399)." % line_no)
+            cells = _cells(name, line_no, result)
+            if cells is None:
+                pass
             elif npc in result.areas:
                 result.errors.append("Line %d: NPC %d has more than one area line." % (line_no, npc))
             else:
-                cells = {int(c): int(n) for c, n in pairs}
                 result.areas[npc] = cells
         return
     if kind == "@l":
@@ -348,8 +414,8 @@ def parse(text):
     result.version, result.install_id, result.seq = int(match.group(1)), match.group(2), int(match.group(3))
     mob_lines = [(n, line) for n, line in enumerate(lines[1:], start=2) if not line.startswith("@")]
     extra_lines = [(n, line) for n, line in enumerate(lines[1:], start=2) if line.startswith("@")]
-    if not mob_lines:
-        result.errors.append("The export has no mobs in it.")
+    if not mob_lines and not any(line.startswith("@f^") for _, line in extra_lines):
+        result.errors.append("The export has no mobs or fishing in it.")
         return result
     if len(mob_lines) > MAX_MOBS:
         result.errors.append("The export has more than %d mobs." % MAX_MOBS)

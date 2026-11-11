@@ -123,6 +123,12 @@ ns.COMMUNITY = {
   [12921] = { k = 11, p = 0, lmin = 23, lmax = 24, n = "Enraged Foulweald", m = 1440, x = 0.5635, y = 0.6354, c = 11, i = {}, pi = {} },
 }
 
+-- What players fished up, by zone (uiMapID) and spot: 0 is open water,
+-- other numbers are fishing pools (the pool's object ID). n catches, s the
+-- lowest Fishing skill seen, i items, a where (20x20 grid squares).
+ns.COMMUNITY_FISH = {
+}
+
 -- The export snapshot of each install included above, so a player's own
 -- client can take its shared loot back out (see Community.lua).
 ns.COMMUNITY_SOURCES = {

@@ -39,8 +39,17 @@ local function Items(text)
   return items
 end
 
--- Export text -> install ID, snapshot number, { [npcID] = mob }. Returns nil
--- for anything that isn't a version 2 export.
+local function Cells(text)
+  local cells = {}
+  for cell, count in (text or ""):gmatch("(%d+):(%d+)") do
+    cells[tonumber(cell)] = tonumber(count)
+  end
+  return cells
+end
+
+-- Export text -> install ID, snapshot number, { [npcID] = mob }, and what was
+-- fished up: { [uiMapID] = { [spot] = { n, s, i, a } } } from its @f lines.
+-- Returns nil for anything that isn't a version 2 or later export.
 function Community.ParseExport(text)
   local lines = {}
   for line in tostring(text or ""):gmatch("[^\r\n]+") do
@@ -50,11 +59,15 @@ function Community.ParseExport(text)
   if not install then
     return nil
   end
-  local mobs = {}
+  local mobs, fishing = {}, {}
   for i = 2, #lines do
     local f = Split(lines[i])
     local npcID = tonumber(f[1])
-    if #f == 12 and npcID then
+    if #f == 7 and f[1] == "@f" and tonumber(f[2]) and tonumber(f[3]) then
+      local map, spot = tonumber(f[2]), tonumber(f[3])
+      fishing[map] = fishing[map] or {}
+      fishing[map][spot] = { n = tonumber(f[4]) or 0, s = tonumber(f[5]) or 0, i = Items(f[6]), a = Cells(f[7]) }
+    elseif #f == 12 and npcID then
       mobs[npcID] = {
         k = tonumber(f[2]) or 0, p = tonumber(f[3]) or 0, m = tonumber(f[6]) or 0,
         x = tonumber(f[7]) or 0, y = tonumber(f[8]) or 0, c = tonumber(f[9]) or 0,
@@ -62,7 +75,7 @@ function Community.ParseExport(text)
       }
     end
   end
-  return install, tonumber(seq), mobs
+  return install, tonumber(seq), mobs, fishing
 end
 
 -- What one player's mob counts add to the community data, after the same
@@ -133,6 +146,37 @@ function Community.Subtract(community, mobs, cap)
   end
 end
 
+-- Takes one player's fishing back out of ns.COMMUNITY_FISH, in place, after
+-- the same per-player cap tools/merge_data.py applies.
+function Community.SubtractFish(community, fishing, cap)
+  cap = cap or Community.DEFAULT_CAP
+  for map, spots in pairs(fishing or {}) do
+    for spot, own in pairs(spots) do
+      local entry = community and community[map] and community[map][spot]
+      if entry and (own.n or 0) > 0 then
+        entry.n = math.max(0, (entry.n or 0) - math.min(own.n, cap))
+        SubtractItems(entry.i, Scaled(own.i, math.min(1, cap / own.n)))
+        local placed = 0
+        for _, count in pairs(own.a or {}) do
+          placed = placed + count
+        end
+        local factor = placed > 0 and math.min(1, cap / placed) or 1
+        for cell, count in pairs(own.a or {}) do
+          if entry.a and entry.a[cell] then
+            entry.a[cell] = entry.a[cell] - Round(count * factor)
+            if entry.a[cell] <= 0 then
+              entry.a[cell] = nil
+            end
+          end
+        end
+        if entry.n == 0 then
+          community[map][spot] = nil
+        end
+      end
+    end
+  end
+end
+
 -- Your saved loot (GoldScoutDB.drops) in the same shape ParseExport returns.
 function Community.MobsFromDrops(drops)
   local mobs = {}
@@ -147,24 +191,27 @@ function Community.MobsFromDrops(drops)
   return mobs
 end
 
--- Removes your own shared loot from ns.COMMUNITY. exports is
--- GoldScoutDB.exports; drops is GoldScoutDB.drops for the fallback. Returns
--- "snapshot", "estimate" or nil (nothing of yours is in the community data).
-function Community.RemoveOwn(community, sources, cap, install, exports, drops)
+-- Removes your own shared loot (and fishing) from ns.COMMUNITY and
+-- ns.COMMUNITY_FISH. exports is GoldScoutDB.exports; drops and fish are
+-- GoldScoutDB.drops and .fish for the fallback. Returns "snapshot", "estimate"
+-- or nil (nothing of yours is in the community data).
+function Community.RemoveOwn(community, sources, cap, install, exports, drops, fishCommunity, fish)
   local included = install and sources and sources[install]
   if not included then
     return nil
   end
   local text = exports and exports.list and exports.list[included]
   if text then
-    local _, _, mobs = Community.ParseExport(text)
+    local _, _, mobs, fishing = Community.ParseExport(text)
     if mobs then
       Community.Subtract(community, mobs, cap)
+      Community.SubtractFish(fishCommunity, fishing, cap)
       return "snapshot"
     end
   end
   -- The shared snapshot is gone (pruned, or shared from another PC): take out
   -- everything you've looted, which can only undercount your newest loot.
   Community.Subtract(community, Community.MobsFromDrops(drops), cap)
+  Community.SubtractFish(fishCommunity, fish, cap)
   return "estimate"
 end

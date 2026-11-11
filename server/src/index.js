@@ -40,6 +40,8 @@ const MAX_BYTES = 60000;
 const MAX_LINES = 1 + 1500 + 5000; // header, mobs, @ lines (names and crafted items)
 const HEADER = /^GoldScout-export [2345]\^([a-z0-9]{12})\^([1-9][0-9]{0,8})$/;
 const EXTRA_LINE = /^@[imcqla]\^[0-9]{1,9}\^[^^]*$/;
+// Fishing: @f^uiMapID^spot^catches^skill^items^cells (tools/submission.py checks the rest).
+const FISH_LINE = /^@f\^[0-9]{1,9}\^[0-9]{1,9}\^[0-9]{1,9}\^[0-9]{1,3}\^[0-9:,]*\^[0-9:,]*$/;
 const TERMS_VERSIONS = new Set(["2026-11-07"]);
 const NEW_INSTALLS_PER_IP_PER_DAY = 5;
 // "GoldScoutCompanion/0.8.0 (macOS)"; companions before 0.8.0 send no system.
@@ -223,7 +225,8 @@ async function receive(request, env) {
   if (!match) {
     return json({ error: "This isn't a GoldScout export. Update GoldScout and the companion." }, 400);
   }
-  const malformed = (line) => (line.startsWith("@") ? !EXTRA_LINE.test(line) : line.split("^").length !== 12);
+  const malformed = (line) => (line.startsWith("@") ? !(EXTRA_LINE.test(line) || FISH_LINE.test(line))
+    : line.split("^").length !== 12);
   if (lines.length < 2 || lines.length > MAX_LINES || lines.slice(1).some(malformed)) {
     return json({ error: "The export is malformed." }, 400);
   }

@@ -189,6 +189,19 @@ class ServerTests(unittest.TestCase):
                                                   "CF-Connecting-IP": fake_ip()}, "POST")
         self.assertEqual((status, reply.get("status")), (201, "registered"))
 
+    def test_fishing_only_exports_are_accepted(self):
+        def upload(lines):
+            text = "GoldScout-export 5^%s^1\n%s\n" % (new_install(), "\n".join(lines))
+            return raw("/v1/uploads", text, {"X-GoldScout-Terms": uploader.TERMS_VERSION,
+                                             "CF-Connecting-IP": fake_ip()}, "POST")
+
+        status, reply = upload(["@f^1413^0^20^75^6303:12:12,6291:5:5^335:10", "@f^1413^180683^6^0^6358:6:9^",
+                                "@l^0^enUS"])
+        self.assertEqual((status, reply.get("status")), (201, "registered"))
+        for bad in ("@f^1413^0^20^75^6303:12:12", "@f^1413^0^20^75^Raw Fish^", "@f^x^0^20^75^^"):
+            with self.subTest(bad):
+                self.assertEqual(upload([bad])[0], 400)
+
     def test_error_reports_are_grouped_and_rate_limited(self):
         def report(reporter, errors):
             body = json.dumps({"reporter": reporter, "errors": errors})
