@@ -168,7 +168,7 @@ jobs:
       - name: Build the companion
         run: |
           "$PY" tools/stamp_companion.py "$GITHUB_REF_NAME"
-          "$PY" -m pip install -r companion/requirements-build.txt
+          "$PY" -m pip install -r companion/requirements-build.txt -r companion/requirements-mac.txt
           "$PY" -m unittest discover -s tests
           "$PY" companion/build.py --universal2
           archs="$(lipo -archs "$APP/Contents/MacOS/GoldScout Companion")"

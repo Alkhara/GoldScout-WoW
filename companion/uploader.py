@@ -4,8 +4,10 @@ The first upload from an install registers it and returns an upload token.
 Every later upload for that install must carry the token, so nobody else can
 replace that install's data.
 """
+import functools
 import json
 import os
+import ssl
 import sys
 import urllib.error
 import urllib.request
@@ -14,6 +16,26 @@ import urllib.request
 # for testing against a local server.
 UPLOAD_URL = "https://goldscout-api.cawley22.workers.dev"
 TERMS_VERSION = "2026-11-07"
+
+
+@functools.lru_cache(maxsize=None)
+def https_context():
+    """The certificates HTTPS requests are checked against. On Windows, the
+    system's own. python.org's Python on macOS (and so the app built from it)
+    has none of its own until its Install Certificates script runs, so there
+    it's certifi's list, bundled with the app."""
+    if sys.platform == "darwin":
+        try:
+            import certifi
+            return ssl.create_default_context(cafile=certifi.where())
+        except ImportError:
+            pass
+    return ssl.create_default_context()
+
+
+def open_url(request, timeout):
+    """urllib.request.urlopen with https_context(); every request the companion makes."""
+    return urllib.request.urlopen(request, timeout=timeout, context=https_context())
 
 
 class UploadError(Exception):
@@ -55,7 +77,7 @@ def upload(export, token=None, version="dev", timeout=20, region=None):
     request = urllib.request.Request(base + "/v1/uploads", data=export.encode("utf-8"),
                                      headers=headers, method="POST")
     try:
-        with urllib.request.urlopen(request, timeout=timeout) as response:
+        with open_url(request, timeout) as response:
             return json.loads(response.read().decode("utf-8") or "{}")
     except urllib.error.HTTPError as error:
         try:

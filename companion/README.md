@@ -106,7 +106,8 @@ With Python 3.10 or later:
 Add `--tray` to start with the window hidden. Running from source never updates
 itself or starts at login.
 
-To build the app: `pip install -r companion/requirements-build.txt`, then
+To build the app: `pip install -r companion/requirements-build.txt` (on a Mac, add
+`-r companion/requirements-mac.txt`), then
 `python companion/build.py`. On Windows that makes `GoldScoutCompanion.exe` (also
 `pip install -r companion/requirements.txt`); on a Mac, `GoldScout Companion.app` (add `--universal2` with
 python.org's Python for one app that runs on Apple silicon and Intel). A local

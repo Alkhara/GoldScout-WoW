@@ -77,8 +77,27 @@ def file_stamp(forever):
     return tuple((str(f), f.stat().st_mtime) for f in files)
 
 
+# Text colors: fixed greys and blue on Windows' light window; macOS's own
+# colors on a Mac, which follow its light or dark appearance (fixed greys
+# all but vanish on its dark window).
+INKS = {"muted": ("#555", "systemSecondaryLabelColor"),
+        "faint": ("#777", "systemTertiaryLabelColor"),
+        "link": ("#1a5fb4", "systemLinkColor")}
+
+
+def ink(widget, name):
+    fixed, mac = INKS[name]
+    if system.MAC:
+        try:
+            widget.winfo_rgb(mac)  # older Tk lacks some of macOS's colors
+            return mac
+        except tk.TclError:
+            pass
+    return fixed
+
+
 def link(parent, text, url):
-    label = ttk.Label(parent, text=text, foreground="#1a5fb4", cursor="hand2")
+    label = ttk.Label(parent, text=text, foreground=ink(parent, "link"), cursor="hand2")
     label.bind("<Button-1>", lambda _: webbrowser.open(url))
     return label
 
@@ -203,7 +222,7 @@ class App:
             startup.state(["disabled"])
             self.startup_choice.set(False)
 
-        ttk.Label(frame, foreground="#555", wraplength=500, justify="left", text=(
+        ttk.Label(frame, foreground=ink(self.root, "muted"), wraplength=500, justify="left", text=(
             "You can turn off automatic sharing or %s any time from %s." % (
                 "opening at login" if system.MAC else "starting with Windows",
                 "Settings in the companion's window" if system.MAC else "the tray icon"))
@@ -222,10 +241,10 @@ class App:
         ttk.Label(frame, text="GoldScout Companion", font=(FONT, 15, "bold")).grid(row=0, column=0, sticky="w")
         bar = ttk.Frame(frame)
         bar.grid(row=0, column=0, sticky="e")
-        self.update_label = ttk.Label(bar, text="", foreground="#555")
+        self.update_label = ttk.Label(bar, text="", foreground=ink(self.root, "muted"))
         self.update_label.pack(side="left")
         self.update_button = ttk.Button(bar, text="Update", command=self.start_update)
-        self.share_status = ttk.Label(frame, text="", foreground="#555")
+        self.share_status = ttk.Label(frame, text="", foreground=ink(self.root, "muted"))
         self.share_status.grid(row=1, column=0, sticky="w", pady=(0, 12))
 
         folder = ttk.LabelFrame(frame, text="WoW Forever folder", padding=8)
@@ -281,7 +300,7 @@ class App:
                                        command=lambda: self.check_updates(manual=True))
         self.check_button.grid(row=1, column=0, sticky="w", pady=(8, 0))
 
-        self.prices_label = ttk.Label(frame, text="", foreground="#555", wraplength=520, justify="left")
+        self.prices_label = ttk.Label(frame, text="", foreground=ink(self.root, "muted"), wraplength=520, justify="left")
         self.prices_label.grid(row=6, column=0, sticky="w", pady=(10, 0))
 
         if system.MAC:
@@ -289,7 +308,7 @@ class App:
                        "to open it again. ")
         else:
             closing = "Closing this window keeps the companion running in the system tray; "
-        ttk.Label(frame, foreground="#777", wraplength=520, font=(FONT, 8), text=(
+        ttk.Label(frame, foreground=ink(self.root, "faint"), wraplength=520, font=(FONT, 8), text=(
             closing + "Quit stops it until "
             "you start it again. GoldScout saves its "
             "data when you log out or type /reload, so new loot shows up here after that. Auction "

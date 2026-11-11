@@ -152,5 +152,47 @@ class GameRunningTests(unittest.TestCase):
         self.assertTrue(all(name == name.lower() for name in names))
 
 
+class MacBuildTests(unittest.TestCase):
+    def test_the_mac_build_refuses_apples_old_tk(self):
+        import importlib.util  # site/build.py is also "build", so load this one by path
+        spec = importlib.util.spec_from_file_location("companion_build", ROOT / "companion" / "build.py")
+        build = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(build)
+        self.assertIn("python.org", build.mac_tk_problem(8.5, "8.5.9"))
+        self.assertIsNone(build.mac_tk_problem(8.6, "8.6.15"))
+        self.assertIsNone(build.mac_tk_problem(9.0, "9.0.1"))
+
+
+
+class HttpsTests(unittest.TestCase):
+    def test_every_request_checks_certificates(self):
+        import ssl
+        import uploader
+        uploader.https_context.cache_clear()
+        context = uploader.https_context()
+        self.assertEqual(context.verify_mode, ssl.CERT_REQUIRED)
+        self.assertTrue(context.check_hostname)
+
+    def test_a_mac_uses_certifis_certificates(self):
+        try:
+            import certifi  # companion/requirements-mac.txt; the Mac release build runs this
+        except ImportError:
+            self.skipTest("certifi isn't installed")
+        import uploader
+        from unittest import mock
+        uploader.https_context.cache_clear()
+        try:
+            with mock.patch.object(uploader.sys, "platform", "darwin"),                     mock.patch.object(uploader.ssl, "create_default_context") as create:
+                uploader.https_context()
+            create.assert_called_once_with(cafile=certifi.where())
+        finally:
+            uploader.https_context.cache_clear()
+
+    def test_no_companion_module_calls_urlopen_itself(self):
+        for path in (ROOT / "companion").glob("*.py"):
+            if path.name != "uploader.py":
+                self.assertNotIn("urlopen(", path.read_text(encoding="utf-8"), path.name)
+
+
 if __name__ == "__main__":
     unittest.main()

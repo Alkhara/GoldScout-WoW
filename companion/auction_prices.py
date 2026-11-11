@@ -50,7 +50,7 @@ def get_json(path, version="dev", timeout=30):
     request = urllib.request.Request(uploader.upload_url() + path,
                                      headers={"User-Agent": "GoldScoutCompanion/%s" % version})
     try:
-        with urllib.request.urlopen(request, timeout=timeout) as response:
+        with uploader.open_url(request, timeout) as response:
             return json.loads(response.read().decode("utf-8"))
     except urllib.error.HTTPError as error:
         raise PriceError("The GoldScout server answered HTTP %d." % error.code)

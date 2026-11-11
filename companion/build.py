@@ -5,8 +5,10 @@ Windows: GoldScoutCompanion.exe, a single file.
   pip install -r companion/requirements-build.txt -r companion/requirements.txt
   python companion/build.py
 
-macOS: GoldScout Companion.app (no tray icon, so no pystray or Pillow needed).
-  pip install -r companion/requirements-build.txt
+macOS: GoldScout Companion.app (no tray icon, so no pystray or Pillow needed;
+certifi's certificates instead). Python from python.org: Apple's /usr/bin/python3
+has Tk 8.5, which draws blank windows.
+  pip install -r companion/requirements-build.txt -r companion/requirements-mac.txt
   python3 companion/build.py [--universal2]
 
 --universal2 builds one app for Apple silicon and Intel Macs; it needs a
@@ -71,7 +73,22 @@ def make_icns(target):
         subprocess.run(["iconutil", "-c", "icns", str(iconset), "-o", str(target)], check=True)
 
 
+def mac_tk_problem(tk_version, patchlevel):
+    """Why this Python's Tk can't draw the companion's window, or None. Apple's
+    own Python (/usr/bin/python3, from the Command Line Tools) ships Tk 8.5,
+    whose windows come up blank on current macOS."""
+    if tk_version < 8.6:
+        return ("This Python has Tk %s, which draws blank windows on current macOS. Build with "
+                "Python from python.org (https://www.python.org/downloads/macos/) instead of "
+                "Apple's /usr/bin/python3." % patchlevel)
+    return None
+
+
 def build_mac(universal):
+    import tkinter
+    problem = mac_tk_problem(tkinter.TkVersion, tkinter.Tcl().eval("info patchlevel"))
+    if problem:
+        sys.exit(problem)
     build = HERE / "build"
     build.mkdir(exist_ok=True)
     icns = build / "GoldScout.icns"
@@ -80,6 +97,7 @@ def build_mac(universal):
             "--onedir", "--name", APP_NAME,
             "--osx-bundle-identifier", BUNDLE_ID,
             "--exclude-module", "pystray", "--exclude-module", "PIL",
+            "--hidden-import", "certifi",  # imported only on a Mac (uploader.https_context)
             "--icon", str(icns)]
     if universal:
         args += ["--target-arch", "universal2"]

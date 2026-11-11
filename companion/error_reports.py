@@ -108,7 +108,7 @@ def send(reporter, errors, version, timeout=20):
     request = urllib.request.Request(uploader.upload_url() + "/v1/errors", data=body, method="POST", headers={
         "Content-Type": "application/json", "User-Agent": uploader.user_agent(version)})
     try:
-        with urllib.request.urlopen(request, timeout=timeout) as response:
+        with uploader.open_url(request, timeout) as response:
             return json.loads(response.read().decode("utf-8") or "{}")
     except urllib.error.HTTPError as error:
         raise ReportError("The GoldScout server answered HTTP %d." % error.code)

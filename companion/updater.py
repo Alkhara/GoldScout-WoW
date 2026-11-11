@@ -34,6 +34,8 @@ import urllib.request
 from dataclasses import dataclass
 from pathlib import Path
 
+import uploader
+
 LATEST_URL = "https://api.github.com/repos/Alkhara/GoldScout-WoW/releases/latest"
 RELEASES_PAGE = "https://github.com/Alkhara/GoldScout-WoW/releases/latest"
 MAC = sys.platform == "darwin"
@@ -89,7 +91,7 @@ def is_newer(candidate, current):
 def fetch_json(url, version, timeout=20):
     request = urllib.request.Request(url, headers={
         "Accept": "application/vnd.github+json", "User-Agent": "GoldScoutCompanion/%s" % version})
-    with urllib.request.urlopen(request, timeout=timeout) as response:
+    with uploader.open_url(request, timeout) as response:
         return json.loads(response.read().decode("utf-8"))
 
 
@@ -112,7 +114,7 @@ def check(current, fetch=fetch_json, asset_name=ASSET):
     return None   # no companion in that release (or no hash to check it against)
 
 
-def download(update, folder, current_version, opener=urllib.request.urlopen, progress=None):
+def download(update, folder, current_version, opener=uploader.open_url, progress=None):
     """Saves the update as folder/GoldScoutCompanion.new.exe; checks size and hash."""
     if update.size > MAX_SIZE:
         raise UpdateError("The update is unexpectedly large.")
@@ -121,7 +123,7 @@ def download(update, folder, current_version, opener=urllib.request.urlopen, pro
     received = 0
     request = urllib.request.Request(update.url, headers={"User-Agent": "GoldScoutCompanion/%s" % current_version})
     try:
-        with opener(request, timeout=60) as response, open(target, "wb") as out:
+        with opener(request, 60) as response, open(target, "wb") as out:
             while True:
                 chunk = response.read(256 * 1024)
                 if not chunk:
