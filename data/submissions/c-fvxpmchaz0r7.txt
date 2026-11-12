@@ -1,4 +1,4 @@
-GoldScout-export 5^fvxpmchaz0r7^25
+GoldScout-export 5^fvxpmchaz0r7^26
 588^12^0^34^35^1434^0.2555^0.1241^12^Bloodscalp Scout^1519:8:8,2592:1:3,2749:1:1,3785:1:1,3901:3:3,4306:1:1^
 595^8^0^34^35^1434^0.2534^0.1162^8^Bloodscalp Hunter^1519:2:2,2748:1:1,3771:2:2,3779:1:1,3901:1:1,4306:1:1^
 597^2^0^36^37^1434^0.2473^0.0971^2^Bloodscalp Berserker^2738:1:1,4306:1:3^
@@ -6,14 +6,19 @@ GoldScout-export 5^fvxpmchaz0r7^25
 681^8^0^30^31^1434^0.3328^0.1147^8^Young Stranglethorn Tiger^1686:3:3,12202:5:5^
 682^9^0^32^33^1434^0.4390^0.1285^9^Stranglethorn Tiger^1686:2:2,1687:2:2,12202:5:5,248690:1:1^
 683^5^0^30^31^1434^0.4088^0.1150^5^Young Panther^1686:3:3,1687:2:2^
-685^1^0^33^33^1434^0.2797^0.1436^1^Stranglethorn Raptor^3685:1:1^
+685^8^0^33^34^1434^0.2696^0.1628^8^Stranglethorn Raptor^1696:2:2,3685:4:4,4461:3:3,4586:1:1,5637:1:1,12184:4:4^
+686^14^0^35^36^1434^0.3438^0.2198^14^Lashtail Raptor^1696:6:6,3685:6:6,4461:4:4,4586:2:2,12184:8:8^
+694^1^0^33^34^1434^0.3307^0.1574^1^Bloodscalp Axe Thrower^^
 699^1^0^34^35^1434^0.2533^0.1309^1^Bloodscalp Beastmaster^^
 701^7^0^34^35^1434^0.2575^0.1134^7^Bloodscalp Mystic^1519:3:3,3771:1:1,3901:1:1,4306:3:4,254018:1:1^
 702^3^0^33^34^1434^0.3181^0.1182^3^Bloodscalp Scavenger^2592:1:3,3901:2:2^
+729^1^0^37^37^1434^0.3229^0.1733^1^Sin'Dall^3879:1:1^
 736^4^0^32^33^1434^0.3029^0.1181^4^Panther^1686:4:4,5637:1:1^
+1085^3^0^34^35^1434^0.3184^0.1742^3^Elder Stranglethorn Tiger^12202:2:2^
 1094^2^0^34^35^1434^0.2907^0.0704^2^Venture Co. Miner^4306:2:3^
+1096^28^0^35^36^1434^0.4413^0.1836^28^Venture Co. Geologist^1630:2:2,2592:1:2,3771:1:1,3782:1:1,3787:1:1,3807:2:2,4106:7:7,4306:8:12,4717:1:1^
 1150^15^0^30^31^1434^0.3652^0.1047^15^River Crocolisk^770:5:5,3667:9:9,4053:2:2,12037:9:9^
-1152^6^0^35^36^1434^0.4165^0.1561^6^Snapjaw Crocolisk^770:2:2,3667:3:3,12037:4:4^
+1152^16^0^35^36^1434^0.4167^0.1597^16^Snapjaw Crocolisk^770:7:7,3667:9:9,4104:4:4,12037:9:9^
 2240^2^0^32^33^1416^0.5672^0.6875^2^Syndicate Footpad^^
 2241^3^0^33^34^1424^0.6376^0.0687^1^Syndicate Thief^^
 2248^21^0^30^31^1424^0.4622^0.3176^21^Cave Yeti^2221:1:1,3708:1:1,3771:1:1,5637:1:1^
@@ -222,8 +227,10 @@ GoldScout-export 5^fvxpmchaz0r7^25
 @i^1205^Melon Juice
 @i^1478^Scroll of Protection II
 @i^1519^Bloodscalp Ear
+@i^1630^Broken Electro-lantern
 @i^1686^Bristly Whisker
 @i^1687^Retractable Claw
+@i^1696^Curved Raptor Talon
 @i^1701^Curved Basilisk Claw
 @i^1702^Intact Basilisk Spine
 @i^1707^Stormwind Brie
@@ -286,17 +293,26 @@ GoldScout-export 5^fvxpmchaz0r7^25
 @i^3770^Mutton Chop
 @i^3771^Wild Hog Shank
 @i^3779^Hefty War Axe
+@i^3782^Large War Club
 @i^3785^Keen Axe
 @i^3786^Shiny Dirk
+@i^3787^Stone Club
+@i^3807^Hardened Leather Tunic
 @i^3857^Coal
+@i^3879^Paw of Sin'Dall
 @i^3901^Bloodscalp Tusk
 @i^4053^Large River Crocolisk Skin
 @i^4093^Large Basilisk Tail
+@i^4104^Snapjaw Crocolisk Skin
+@i^4106^Tumbled Crystal
 @i^4306^Silk Cloth
+@i^4461^Raptor Hide
 @i^4538^Snapvine Watermelon
 @i^4542^Moist Cornbread
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
+@i^4586^Smooth Raptor Skin
+@i^4717^Mail Combat Belt
 @i^4784^Lifeless Stone
 @i^4874^Clean Fishbones
 @i^5114^Severed Talon
@@ -350,6 +366,7 @@ GoldScout-export 5^fvxpmchaz0r7^25
 @i^11407^Torn Bear Pelt
 @i^11416^Delicate Ribcage
 @i^12037^Mystery Meat
+@i^12184^Raptor Flesh
 @i^12202^Tiger Meat
 @i^12207^Giant Egg
 @i^12564^Assassination Note
@@ -406,8 +423,10 @@ GoldScout-export 5^fvxpmchaz0r7^25
 @q^1205^1:0:0
 @q^1478^1:0:0
 @q^1519^1:12:0
+@q^1630^0:15:0
 @q^1686^0:15:0
 @q^1687^0:15:0
+@q^1696^0:15:0
 @q^1701^0:15:0
 @q^1702^0:15:0
 @q^1707^1:0:0
@@ -470,17 +489,26 @@ GoldScout-export 5^fvxpmchaz0r7^25
 @q^3770^1:0:0
 @q^3771^1:0:0
 @q^3779^0:2:0
+@q^3782^0:2:0
 @q^3785^0:2:0
 @q^3786^0:2:0
+@q^3787^0:2:0
+@q^3807^0:4:0
 @q^3857^1:7:1
+@q^3879^1:12:0
 @q^3901^1:12:0
 @q^4053^1:12:0
 @q^4093^0:15:0
+@q^4104^1:12:0
+@q^4106^1:12:0
 @q^4306^1:7:1
+@q^4461^1:7:1
 @q^4538^1:0:0
 @q^4542^1:0:0
 @q^4555^0:15:0
 @q^4556^0:15:0
+@q^4586^0:15:0
+@q^4717^2:4:0
 @q^4784^0:15:0
 @q^4874^0:15:0
 @q^5114^0:15:0
@@ -534,6 +562,7 @@ GoldScout-export 5^fvxpmchaz0r7^25
 @q^11407^1:12:0
 @q^11416^0:15:0
 @q^12037^1:7:1
+@q^12184^1:7:1
 @q^12202^1:7:1
 @q^12207^1:7:1
 @q^12564^1:12:0
@@ -1210,14 +1239,19 @@ GoldScout-export 5^fvxpmchaz0r7^25
 @a^681^26:3,46:4,47:1
 @a^682^25:1,48:2,49:5,68:1
 @a^683^48:5
-@a^685^45:1
+@a^685^45:1,65:7
+@a^686^67:2,86:9,87:3
+@a^694^66:1
 @a^699^45:1
 @a^701^45:7
 @a^702^46:3
+@a^729^66:1
 @a^736^25:1,26:1,46:1,66:1
+@a^1085^66:3
 @a^1094^25:2
+@a^1096^68:16,69:4,88:6,89:2
 @a^1150^26:5,27:1,46:2,47:4,48:3
-@a^1152^68:6
+@a^1152^67:1,68:15
 @a^2240^271:2
 @a^2241^32:1
 @a^2248^109:1,129:20
