@@ -9,12 +9,16 @@ Checks, in order:
   2. Python lint with pyflakes (skipped with a warning if it isn't installed)
   3. Every file in data/submissions/ passes the export validator
   4. All tests (the Lua tests need lupa; without it they're skipped)
+  5. The GitHub workflows: actionlint (with shellcheck on their scripts) and
+     zizmor's security audit (each skipped with a warning if not installed)
 
-To get everything locally: pip install pyflakes lupa
+To get everything locally: pip install -r tests/requirements.txt
 """
 import glob
+import shutil
 import subprocess
 import sys
+import sysconfig
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -32,6 +36,31 @@ def run(title, command):
 def has_module(name):
     return subprocess.run([sys.executable, "-c", "import %s" % name], cwd=ROOT,
                           capture_output=True).returncode == 0
+
+
+def tool(name):
+    """A command-line tool pip installed for this Python, or one on PATH."""
+    scripts = sysconfig.get_path("scripts")
+    return shutil.which(name, path=scripts) or shutil.which(name)
+
+
+def check_workflows():
+    results = []
+    actionlint = tool("actionlint")
+    if actionlint:
+        shellcheck = tool("shellcheck")
+        if not shellcheck:
+            print("   (shellcheck isn't installed, so workflow scripts aren't checked: pip install shellcheck-py)")
+        results.append(run("Workflow lint", [actionlint, "-shellcheck", shellcheck or ""]))
+    else:
+        print("== Workflow lint skipped: pip install actionlint-py")
+    zizmor = tool("zizmor")
+    if zizmor:
+        # Offline: the audits that need GitHub's API would need a token.
+        results.append(run("Workflow security", [zizmor, "--offline", "--no-progress", "--quiet", ".github/workflows"]))
+    else:
+        print("== Workflow security skipped: pip install zizmor")
+    return all(results)
 
 
 def check_submissions():
@@ -62,6 +91,7 @@ def main():
     if not has_module("lupa"):
         print("   (lupa isn't installed, so the Lua tests will be skipped: pip install lupa)")
     results.append(run("Tests", [sys.executable, "-m", "unittest", "discover", "-s", "tests"]))
+    results.append(check_workflows())
     if all(results):
         print("All checks passed.")
         return 0

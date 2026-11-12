@@ -40,14 +40,18 @@ jobs:
       GOLDSCOUT_API_URL: ${{ vars.GOLDSCOUT_API_URL }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
 
       - name: Fetch new snapshots
+        env:
+          FORCE: ${{ inputs.force }}
         run: |
           if [ -z "$BLIZZARD_CLIENT_ID" ] || [ -z "$BLIZZARD_CLIENT_SECRET" ] || [ -z "$GOLDSCOUT_API_ADMIN" ]; then
             echo "**Skipped:** add the BLIZZARD_CLIENT_ID and BLIZZARD_CLIENT_SECRET repository secrets (and GOLDSCOUT_API_ADMIN)." | tee -a "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
-          if [ "${{ inputs.force }}" = "true" ]; then
+          if [ "$FORCE" = "true" ]; then
             python3 tools/ah_prices.py fetch --force
           else
             python3 tools/ah_prices.py fetch
