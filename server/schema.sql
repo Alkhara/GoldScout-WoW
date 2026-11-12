@@ -113,3 +113,12 @@ CREATE TABLE IF NOT EXISTS admin_stats (
   body TEXT NOT NULL,
   updated_at INTEGER NOT NULL
 );
+
+-- Open alerts (src/alerts.js): one row per problem the hourly cron told
+-- Discord about, removed when it clears. Key "_on" marks the first message.
+CREATE TABLE IF NOT EXISTS alerts (
+  key TEXT PRIMARY KEY,
+  message TEXT NOT NULL,
+  since INTEGER NOT NULL,      -- when the problem was first seen
+  notified INTEGER NOT NULL    -- when Discord last heard about it
+);

@@ -354,7 +354,9 @@ class ServerTests(unittest.TestCase):
 @unittest.skipUnless(SERVER and GITHUB_PORT, "set GOLDSCOUT_TEST_SERVER and GOLDSCOUT_TEST_GITHUB to test the crons")
 class CronTests(unittest.TestCase):
     """The server's cron triggers start GitHub workflows (a local stand-in for
-    GitHub's API records the requests)."""
+    GitHub's API records the requests), and the hourly one sends alerts
+    (.dev.vars ALERT_WEBHOOK_URL=http://127.0.0.1:<GOLDSCOUT_TEST_GITHUB>/alert,
+    the same stand-in)."""
 
     @classmethod
     def setUpClass(cls):
@@ -384,13 +386,33 @@ class CronTests(unittest.TestCase):
         with urllib.request.urlopen(url, timeout=10) as response:
             response.read()
 
+    alerts = []   # every alert posted while these tests ran
+
     def started(self):
+        """The workflows started since the last look; alerts are set aside."""
         calls = []
         while True:
             try:
-                calls.append(self.calls.get(timeout=3))
+                call = self.calls.get(timeout=3)
             except queue.Empty:
                 return calls
+            if call[0] == "/alert":
+                CronTests.alerts.append(call[2])
+            else:
+                calls.append(call)
+
+    def test_alerts_go_out_once_and_never_mention_anyone(self):
+        self.run_cron("17 * * * *")
+        self.started()
+        before = len(self.alerts)
+        self.run_cron("17 * * * *")
+        self.started()
+        self.assertEqual(len(self.alerts), before)          # nothing new: nothing repeats within the day
+        if os.environ.get("GOLDSCOUT_TEST_FRESH_DB"):        # CI: the first run ever says alerts are on
+            self.assertTrue(any("alerts are on" in a["content"] for a in self.alerts))
+        for alert in self.alerts:
+            self.assertEqual(alert["allowed_mentions"], {"parse": []})
+            self.assertTrue(alert["content"])
 
     def test_each_cron_starts_its_workflow(self):
         for cron, workflow in (("7,22,37,52 * * * *", "ah-prices.yml"), ("17 * * * *", "data-merge.yml"),

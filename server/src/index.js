@@ -26,6 +26,9 @@
 //                      whole map for that region (listed by GET /v1/prices).
 //   GET  /health
 //
+// Alerts (alerts.js): the hourly cron posts problems to a Discord webhook
+// (ALERT_WEBHOOK_URL secret) when they start, daily while open, and when they clear.
+//
 // Cron triggers (wrangler.toml) start GitHub workflows on time: GitHub's own
 // schedule can skip runs for hours. SCHEDULE says which cron starts which
 // workflow; the GITHUB_DISPATCH_TOKEN secret (a fine-grained token for this
@@ -66,9 +69,12 @@ const SCHEDULE = {
   "17 * * * *": ["data-merge.yml"],
   "0 15 * * 2": ["data-release.yml"], // Tuesdays; GitHub skipped its own 15:00 run
 };
+// Hourly: alerts.js checks what the dashboard marks red and tells Discord.
+const ALERT_CRON = "17 * * * *";
 
 import { handleAdmin, storeStats } from "./admin.js";
 import { receiveErrors } from "./errors.js";
+import { checkAlerts } from "./alerts.js";
 
 export default {
   async fetch(request, env) {
@@ -118,6 +124,9 @@ export default {
 
   async scheduled(event, env, ctx) {
     ctx.waitUntil(startWorkflows(SCHEDULE[event.cron] || [], env));
+    if (event.cron === ALERT_CRON) {
+      ctx.waitUntil(checkAlerts(env));   // separate, so a failed alert never stops a workflow starting
+    }
   },
 };
 

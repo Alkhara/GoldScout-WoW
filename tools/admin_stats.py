@@ -42,7 +42,8 @@ DEFAULT_API = "https://api.wowgoldscout.com"
 USER_AGENT = "GoldScout-admin-stats/1.0 (+https://github.com/Alkhara/GoldScout-WoW)"
 WORKFLOWS = [("ah-prices.yml", "Auction prices", 96), ("data-merge.yml", "Merge community data", 24),
              ("tests.yml", "Tests", None), ("server-deploy.yml", "Deploy server", None),
-             ("release.yml", "Release", None), ("data-release.yml", "Data release", None)]
+             ("release.yml", "Release", None), ("data-release.yml", "Data release", None),
+             ("backup.yml", "Back up database", 1)]
 GOOD = 15          # attempts for "good" confidence (site/data_pages.py CONFIDENCE)
 LISTS = 25         # rows in each list
 

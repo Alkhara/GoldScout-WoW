@@ -94,6 +94,30 @@ rule stay closed. To set it up, in the Cloudflare dashboard:
 Then open `https://admin.wowgoldscout.com/admin`. The statistics appear after
 the next hourly merge run (or run "Merge community data" by hand).
 
+## Alerts
+
+Every hour the server checks what the dashboard's Health section marks red
+and posts to a private Discord channel: when a problem starts, once a day
+while it lasts, and when it clears (`src/alerts.js`). It watches:
+
+- each region's auction prices: none, or 3 hours without a new snapshot
+- the hourly data merge: no report for 3 hours
+- the last run of the price, merge, tests, deploy, release and backup
+  workflows: failed or timed out
+- GoldScout errors reported by 3 or more players in a day
+
+Messages carry only regions, workflow names, counts and links to runs, never
+player data. To turn them on:
+
+1. In Discord, make a private channel, then **Edit Channel → Integrations →
+   Webhooks → New Webhook** and **Copy Webhook URL**.
+2. `npx wrangler secret put ALERT_WEBHOOK_URL` and paste it. Within the hour
+   the channel gets "GoldScout alerts are on", plus anything already red.
+
+If the server itself is down, it can't send anything, so also point an
+uptime monitor (UptimeRobot's free plan, for example) at
+`https://api.wowgoldscout.com/health`, checking for `"ok":true`.
+
 ## Backups and restoring
 
 `.github/workflows/backup.yml` exports the database every day, checks the
