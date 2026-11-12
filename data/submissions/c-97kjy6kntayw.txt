@@ -1,15 +1,16 @@
-GoldScout-export 5^97kjy6kntayw^3
+GoldScout-export 5^97kjy6kntayw^4
 203^2^0^22^22^1431^0.7997^0.7394^2^Skeletal Mage^^
 205^5^0^28^29^1431^0.6504^0.6771^5^Nightbane Dark Runner^^
 206^3^0^29^29^1431^0.7029^0.7694^3^Nightbane Vile Fang^^
 212^1^0^30^30^1431^0.3410^0.7531^1^Splinter Fist Warrior^^
-533^2^0^27^28^1431^0.6383^0.4724^2^Nightbane Shadow Weaver^1205:1:1^
-628^1^0^25^25^1431^0.5471^0.5609^1^Black Ravager^3301:1:1^
+533^3^0^27^28^1431^0.6513^0.4713^3^Nightbane Shadow Weaver^1205:1:1^
+628^4^0^24^25^1431^0.5472^0.5610^4^Black Ravager^1015:2:2,3301:1:1,3402:1:1^
 889^2^0^25^26^1431^0.3943^0.7553^2^Splinter Fist Ogre^1800:1:1^
 891^3^0^26^27^1431^0.3946^0.7528^3^Splinter Fist Fire Weaver^2592:1:1^
 892^1^0^28^28^1431^0.3959^0.7501^1^Splinter Fist Taskmaster^^
-898^2^0^26^26^1431^0.6176^0.5055^2^Nightbane Worgen^1205:1:1^
+898^4^0^26^27^1431^0.6026^0.5089^4^Nightbane Worgen^1205:1:1,211854:1:1^
 923^2^0^23^24^1431^0.4784^0.6363^2^Young Black Ravager^1015:1:1,3301:1:1^
+930^3^0^25^25^1431^0.8591^0.5021^3^Black Widow Hatchling^1081:1:1,1206:1:1,2251:2:2,3174:2:2,4428:1:1,9807:1:1^
 1011^1^0^23^23^1437^0.3428^0.3470^1^Mosshide Trapper^^
 1018^14^0^27^28^1437^0.6955^0.3707^14^Highland Razormaw^1696:1:1,1697:3:3,3685:4:4,5637:1:1,248686:1:1,280103:8:8^
 1019^6^0^29^29^1437^0.7108^0.3628^6^Elder Razormaw^3870:1:1,5635:3:3,280103:5:5^
@@ -102,6 +103,7 @@ GoldScout-export 5^97kjy6kntayw^3
 @i^1826^Rock Maul
 @i^1827^Meat Cleaver
 @i^2219^Small Round Shield
+@i^2251^Gooey Spider Leg
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2674^Crawler Meat
@@ -113,12 +115,14 @@ GoldScout-export 5^97kjy6kntayw^3
 @i^3012^Scroll of Agility
 @i^3039^Short Ash Bow
 @i^3170^Large Bear Tooth
+@i^3174^Spider Ichor
 @i^3175^Ruined Dragonhide
 @i^3176^Small Claw
 @i^3179^Cracked Dragon Molting
 @i^3201^Barbarian War Axe of the Gorilla
 @i^3301^Sharp Canine
 @i^3337^Dragonmaw War Banner
+@i^3402^Soft Patch of Fur
 @i^3625^Nek'rosh's Head
 @i^3685^Raptor Egg
 @i^3712^Turtle Meat
@@ -127,6 +131,7 @@ GoldScout-export 5^97kjy6kntayw^3
 @i^3870^Plans: Green Iron Shoulders
 @i^3931^Poisoned Spider Fang
 @i^4306^Silk Cloth
+@i^4428^Spider Palp
 @i^4542^Moist Cornbread
 @i^4633^Heavy Bronze Lockbox
 @i^5108^Dark Iron Leather
@@ -141,6 +146,7 @@ GoldScout-export 5^97kjy6kntayw^3
 @i^5952^Corrupted Brain Stem
 @i^6907^Tortoise Armor
 @i^7356^Elder's Cloak of Strength
+@i^9807^Superior Shoulders of Healing
 @i^9847^Conjurer's Cloak of the Beast
 @i^11121^Darkwater Talwar
 @i^11994^Coral Band of Agility
@@ -151,6 +157,7 @@ GoldScout-export 5^97kjy6kntayw^3
 @i^15517^Spiked Chain Wristbands of the Boar
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
+@i^211854^Scroll: OMIT KESA
 @i^211855^Scroll: STHENIC LUNATE
 @i^248682^Waylaid Crate: Apprentice Herbs
 @i^248684^Waylaid Crate: Apprentice Textiles
@@ -195,6 +202,7 @@ GoldScout-export 5^97kjy6kntayw^3
 @q^1826^0:2:0
 @q^1827^0:2:0
 @q^2219^0:4:0
+@q^2251^1:7:1
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2674^1:7:1
@@ -206,12 +214,14 @@ GoldScout-export 5^97kjy6kntayw^3
 @q^3012^1:0:0
 @q^3039^2:2:0
 @q^3170^0:15:0
+@q^3174^1:7:1
 @q^3175^0:15:0
 @q^3176^0:15:0
 @q^3179^0:15:0
 @q^3201^2:2:0
 @q^3301^0:15:0
 @q^3337^1:12:0
+@q^3402^0:15:0
 @q^3625^1:12:0
 @q^3685^1:7:1
 @q^3712^1:7:1
@@ -220,6 +230,7 @@ GoldScout-export 5^97kjy6kntayw^3
 @q^3870^2:9:0
 @q^3931^0:15:0
 @q^4306^1:7:1
+@q^4428^0:15:0
 @q^4542^1:0:0
 @q^4633^2:15:0
 @q^5108^1:4:0
@@ -234,6 +245,7 @@ GoldScout-export 5^97kjy6kntayw^3
 @q^5952^1:12:0
 @q^6907^3:4:0
 @q^7356^2:4:0
+@q^9807^2:4:0
 @q^9847^2:4:0
 @q^11121^3:2:0
 @q^11994^2:4:0
@@ -244,6 +256,7 @@ GoldScout-export 5^97kjy6kntayw^3
 @q^15517^2:4:0
 @q^17057^1:15:0
 @q^17058^1:15:0
+@q^211854^1:0:0
 @q^211855^1:0:0
 @q^248682^1:0:1
 @q^248684^1:0:1
@@ -923,13 +936,14 @@ GoldScout-export 5^97kjy6kntayw^3
 @a^205^193:1,252:1,272:1,312:1,313:1
 @a^206^312:1,314:2
 @a^212^306:1
-@a^533^171:1,193:1
-@a^628^230:1
+@a^533^171:1,193:2
+@a^628^210:1,230:2,231:1
 @a^889^287:1,307:1
 @a^891^287:1,307:1,308:1
 @a^892^307:1
-@a^898^132:1,272:1
+@a^898^132:1,191:1,211:1,272:1
 @a^923^249:1,269:1
+@a^930^197:2,216:1
 @a^1011^126:1
 @a^1018^133:2,153:7,154:3,174:2
 @a^1019^133:4,174:2
