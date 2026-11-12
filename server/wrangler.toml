@@ -2,7 +2,10 @@
 name = "goldscout-api"
 main = "src/index.js"
 compatibility_date = "2026-10-01"
-# Serve at https://goldscout-api.cawley22.workers.dev; no per-version preview URLs.
+# Served at https://api.wowgoldscout.com (a custom domain added in the Cloudflare
+# dashboard, like admin.wowgoldscout.com; deploys leave both in place). Keep
+# workers_dev on: companions from v0.12.0 and earlier upload to
+# https://goldscout-api.cawley22.workers.dev. No per-version preview URLs.
 workers_dev = true
 preview_urls = false
 

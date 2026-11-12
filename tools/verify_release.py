@@ -25,7 +25,7 @@ import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-DEFAULT_SERVER = "https://goldscout-api.cawley22.workers.dev"
+DEFAULT_SERVER = "https://api.wowgoldscout.com"
 TERMS_VERSION = "2026-11-07"
 
 

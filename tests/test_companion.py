@@ -165,6 +165,17 @@ class MacBuildTests(unittest.TestCase):
 
 
 class HttpsTests(unittest.TestCase):
+    def test_clients_use_the_api_domain_not_workers_dev(self):
+        # Installed copies keep their address for good, so it must be ours.
+        # Only the server's own config and deploy check name workers.dev
+        # (kept on for copies from v0.12.0 and earlier).
+        import uploader
+        self.assertEqual(uploader.UPLOAD_URL, "https://api.wowgoldscout.com")
+        root = Path(__file__).resolve().parent.parent
+        for rel in ("site/build.py", "site/prices.js", "tools/ah_prices.py", "tools/admin_stats.py",
+                    "tools/bundle_prices.py", "tools/verify_release.py", ".github/workflows/data-merge.yml"):
+            self.assertNotIn("workers.dev", (root / rel).read_text(encoding="utf-8"), rel)
+
     def test_every_request_checks_certificates(self):
         import ssl
         import uploader

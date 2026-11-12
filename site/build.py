@@ -24,7 +24,7 @@ import data_pages  # noqa: E402
 import merge_data  # noqa: E402
 
 SITE_URL = data_pages.SITE_URL
-API_URL = "https://goldscout-api.cawley22.workers.dev"   # also in prices.js
+API_URL = "https://api.wowgoldscout.com"   # also in prices.js
 REPO = "https://github.com/Alkhara/GoldScout-WoW"
 LINKS = {
     "curseforge": "https://www.curseforge.com/projects/1790110",

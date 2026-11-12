@@ -33,7 +33,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 HOUSES_FILE = ROOT / "data" / "ah_houses.json"
 DEV_VARS = ROOT / "server" / ".dev.vars"
-DEFAULT_API = "https://goldscout-api.cawley22.workers.dev"
+DEFAULT_API = "https://api.wowgoldscout.com"
 REGION = "us"                        # where `match` looks (your own scans are US)
 REGIONS = ("us", "eu", "kr", "tw")   # WoW Forever regions with a Game Data API
 # Cloudflare answers Python's default User-Agent with 403 (error 1010).

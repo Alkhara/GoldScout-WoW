@@ -38,7 +38,7 @@ import stats  # noqa: E402
 
 DAY = 86400
 REPO = os.environ.get("GITHUB_REPOSITORY", "Alkhara/GoldScout-WoW")
-DEFAULT_API = "https://goldscout-api.cawley22.workers.dev"
+DEFAULT_API = "https://api.wowgoldscout.com"
 USER_AGENT = "GoldScout-admin-stats/1.0 (+https://github.com/Alkhara/GoldScout-WoW)"
 WORKFLOWS = [("ah-prices.yml", "Auction prices", 96), ("data-merge.yml", "Merge community data", 24),
              ("tests.yml", "Tests", None), ("server-deploy.yml", "Deploy server", None),

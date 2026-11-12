@@ -27,7 +27,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 OUTPUT = ROOT / "GoldScout" / "Data_Prices.lua"
-DEFAULT_API = "https://goldscout-api.cawley22.workers.dev"
+DEFAULT_API = "https://api.wowgoldscout.com"
 USER_AGENT = "GoldScout-bundle-prices/1.0 (+https://github.com/Alkhara/GoldScout-WoW)"
 FACTIONS = ("Alliance", "Horde")   # Blackwater (Neutral) houses are a market of their own
 MAX_SNAPSHOT_AGE = 2 * 86400       # leave out houses whose snapshot has stopped updating

@@ -13,8 +13,9 @@ import urllib.error
 import urllib.request
 
 # The GoldScout upload service (server/). GOLDSCOUT_UPLOAD_URL overrides it,
-# for testing against a local server.
-UPLOAD_URL = "https://goldscout-api.cawley22.workers.dev"
+# for testing against a local server. Copies from v0.12.0 and earlier use the Worker's
+# workers.dev address, which stays on for them (server/wrangler.toml).
+UPLOAD_URL = "https://api.wowgoldscout.com"
 TERMS_VERSION = "2026-11-07"
 
 

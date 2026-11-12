@@ -11,7 +11,7 @@
 // is written with textContent, never as HTML.
 (function () {
   "use strict";
-  var API = "https://goldscout-api.cawley22.workers.dev";
+  var API = "https://api.wowgoldscout.com";
   var STORE = "goldscout.market";
   var bar = document.getElementById("prices-bar");
   if (!bar || !window.fetch) {

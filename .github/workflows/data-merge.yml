@@ -56,7 +56,7 @@ jobs:
 
       - name: Fetch companion uploads
         env:
-          API_URL: ${{ vars.GOLDSCOUT_API_URL || 'https://goldscout-api.cawley22.workers.dev' }}
+          API_URL: ${{ vars.GOLDSCOUT_API_URL || 'https://api.wowgoldscout.com' }}
           API_ADMIN: ${{ secrets.GOLDSCOUT_API_ADMIN }}
         run: |
           if [ -n "$API_URL" ] && [ -n "$API_ADMIN" ]; then
@@ -154,7 +154,7 @@ jobs:
         if: always()
         continue-on-error: true
         env:
-          GOLDSCOUT_API_URL: ${{ vars.GOLDSCOUT_API_URL || 'https://goldscout-api.cawley22.workers.dev' }}
+          GOLDSCOUT_API_URL: ${{ vars.GOLDSCOUT_API_URL || 'https://api.wowgoldscout.com' }}
           GOLDSCOUT_API_ADMIN: ${{ secrets.GOLDSCOUT_API_ADMIN }}
           GOLDSCOUT_MY_INSTALLS: ${{ vars.GOLDSCOUT_MY_INSTALLS }}
           GITHUB_TOKEN: ${{ github.token }}

@@ -56,8 +56,11 @@ From this folder, with Node.js installed:
    Secrets), add a repository secret `GOLDSCOUT_API_ADMIN` set to the same
    value as `ADMIN_TOKEN`. The merge workflow uses the live server's address by
    default; a repository variable `GOLDSCOUT_API_URL` overrides it.
-10. Put the URL in `companion/uploader.py` (`UPLOAD_URL`) and release a new
-   companion.
+10. Give it its own address: **Workers & Pages → goldscout-api → Settings →
+   Domains & Routes → Add → Custom domain:** `api.wowgoldscout.com`. Put that
+   in `companion/uploader.py` (`UPLOAD_URL`) and release a new companion.
+   Leave `workers_dev` on in `wrangler.toml`: companions already installed
+   keep the address they were built with.
 
 ## Admin dashboard
 

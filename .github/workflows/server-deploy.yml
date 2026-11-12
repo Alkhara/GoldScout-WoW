@@ -84,6 +84,9 @@ jobs:
         if: env.HAS_TOKEN == 'true'
         run: |
           sleep 10
+          # Both addresses: the custom domain, and workers.dev for older companions.
+          curl -sf https://api.wowgoldscout.com/health
+          echo
           curl -sf https://goldscout-api.cawley22.workers.dev/health
           echo
           python tools/verify_release.py server

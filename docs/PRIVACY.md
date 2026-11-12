@@ -148,7 +148,7 @@ can't be separated from other players' data.
 
 wowgoldscout.com has no accounts, cookies, analytics or ads. Its farm, mob,
 reagent and zone pages load current auction house prices from the GoldScout
-server (goldscout-api.cawley22.workers.dev), as the companion does. Like any
+server (api.wowgoldscout.com), as the companion does. Like any
 website, Cloudflare sees your IP address for those requests; we don't store it. The realm type
 and faction you pick for prices is remembered in your own browser (local
 storage); it only decides which auction house's prices your browser downloads.
