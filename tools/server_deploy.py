@@ -22,6 +22,7 @@ nothing changes for players.
 """
 import json
 import os
+import shutil
 import subprocess
 import sys
 import time
@@ -42,6 +43,8 @@ USER_AGENT = "GoldScout-deploy-check (+https://github.com/Alkhara/GoldScout-WoW)
 
 def run(command, show=True):
     """Runs a wrangler command in server/: (succeeded, stdout)."""
+    # shutil.which finds npx.cmd on Windows, where subprocess alone wouldn't.
+    command = [shutil.which(command[0]) or command[0], *command[1:]]
     result = subprocess.run(command, cwd=SERVER, capture_output=True, text=True, encoding="utf-8", errors="replace")
     if show:
         print(result.stdout, end="")

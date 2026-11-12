@@ -97,8 +97,8 @@ the next hourly merge run (or run "Merge community data" by hand).
 ## Backups and restoring
 
 `.github/workflows/backup.yml` exports the database every day, checks the
-export restores into an empty database with every table, and keeps it in the
-private R2 bucket `goldscout-backups` as `d1/goldscout-YYYY-MM-DD.sql.gz`. A
+export restores into an empty D1 database with every table, row and value
+(`tools/check_backup.py`), and keeps it in the private R2 bucket `goldscout-backups` as `d1/goldscout-YYYY-MM-DD.sql.gz`. A
 lifecycle rule on the bucket deletes backups after 90 days. To set it up:
 
 1. **R2 → Create bucket:** `goldscout-backups` (private; no public access).
@@ -120,10 +120,14 @@ To restore from a backup (the database was deleted, or the account lost):
 1. Download it: **R2 → goldscout-backups → d1/** and pick the day, or
    `npx wrangler r2 object get goldscout-backups/d1/goldscout-YYYY-MM-DD.sql.gz --file backup.sql.gz --remote`.
    Unzip it to `backup.sql`.
-2. Load it into a new database first, so the live one is untouched until it's
+2. Turn it into restore SQL: `python tools/check_backup.py backup.sql --restore-file restore.sql`
+   (from the repository root; it also checks the result). The export can't be
+   loaded as it is: D1 refuses statements over 100 KB, and some rows are
+   bigger, so the restore SQL inserts those in pieces.
+3. Load it into a new database first, so the live one is untouched until it's
    checked: `npx wrangler d1 create goldscout-restored`, then
-   `npx wrangler d1 execute goldscout-restored --remote --file backup.sql`.
-3. Put the new `database_id` in `wrangler.toml` and push; the server deploy
+   `npx wrangler d1 execute goldscout-restored --remote --file restore.sql`.
+4. Put the new `database_id` in `wrangler.toml` and push; the server deploy
    switches to it.
 
 ## Developing locally
