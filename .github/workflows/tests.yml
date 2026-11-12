@@ -1,6 +1,10 @@
-# Runs tools/check.py (Lua syntax, Python lint, community data validation and
-# every test, including the Lua tests) on every push to main and on pull
-# requests. The same script runs locally from the pre-push hook.
+# Runs tools/check.py (Lua syntax, Python lint, community data validation,
+# workflow lint and every test, including the Lua tests) on every push to main
+# and on pull requests. The same script runs locally from the pre-push hook.
+#
+# The companion job runs every test again on Windows and macOS and builds the
+# app there (unsigned), so a platform-only bug shows up on the push instead of
+# on release day. Releases and Dependabot's auto-merge wait for this whole run.
 name: Tests
 
 on:
@@ -35,3 +39,34 @@ jobs:
 
       - name: Run every check
         run: python tools/check.py
+
+  companion:
+    name: companion (${{ matrix.os }})
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.12"
+
+      # What each system's app bundles, PyInstaller, and lupa for the Lua tests
+      # (its pin from tests/requirements.txt; the lint tools there run on Linux).
+      - name: Install
+        shell: bash
+        run: |
+          if [ "$RUNNER_OS" = "Windows" ]; then bundle=companion/requirements.txt; else bundle=companion/requirements-mac.txt; fi
+          python -m pip install -r companion/requirements-build.txt -r "$bundle" "$(grep '^lupa==' tests/requirements.txt)"
+
+      - name: Run every test
+        run: python -m unittest discover -s tests
+
+      - name: Build the app (unsigned)
+        run: python companion/build.py
