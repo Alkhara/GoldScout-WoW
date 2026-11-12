@@ -94,6 +94,38 @@ rule stay closed. To set it up, in the Cloudflare dashboard:
 Then open `https://admin.wowgoldscout.com/admin`. The statistics appear after
 the next hourly merge run (or run "Merge community data" by hand).
 
+## Backups and restoring
+
+`.github/workflows/backup.yml` exports the database every day, checks the
+export restores into an empty database with every table, and keeps it in the
+private R2 bucket `goldscout-backups` as `d1/goldscout-YYYY-MM-DD.sql.gz`. A
+lifecycle rule on the bucket deletes backups after 90 days. To set it up:
+
+1. **R2 → Create bucket:** `goldscout-backups` (private; no public access).
+   In the bucket's **Settings → Object lifecycle rules**, add a rule for the
+   prefix `d1/` that deletes objects 90 days after upload.
+2. **My Profile → API Tokens → Create Token → Custom token:** permissions
+   **Account → D1 → Edit** and **Account → Workers R2 Storage → Edit**, on
+   your account only. (Exporting needs Edit: it's a write to D1's API.)
+3. In GitHub, add it as the repository secret `CLOUDFLARE_BACKUP_TOKEN`.
+4. **Actions → Back up database → Run workflow** once, and check the run's
+   summary lists every table.
+
+To undo a recent mistake (a bad write or delete), D1's Time Travel is
+quicker: `npx wrangler d1 time-travel restore goldscout --timestamp=<when>`
+puts the whole database back to that moment (any point in the last 30 days).
+
+To restore from a backup (the database was deleted, or the account lost):
+
+1. Download it: **R2 → goldscout-backups → d1/** and pick the day, or
+   `npx wrangler r2 object get goldscout-backups/d1/goldscout-YYYY-MM-DD.sql.gz --file backup.sql.gz --remote`.
+   Unzip it to `backup.sql`.
+2. Load it into a new database first, so the live one is untouched until it's
+   checked: `npx wrangler d1 create goldscout-restored`, then
+   `npx wrangler d1 execute goldscout-restored --remote --file backup.sql`.
+3. Put the new `database_id` in `wrangler.toml` and push; the server deploy
+   switches to it.
+
 ## Developing locally
 
 1. `npm install`

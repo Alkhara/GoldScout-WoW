@@ -1,0 +1,77 @@
+# Backs up the upload server's D1 database every day to a private R2 bucket.
+# Each backup is first restored into a throwaway local database
+# (tools/check_backup.py) and only kept if every table comes back. The bucket's
+# lifecycle rule deletes backups after 90 days. Restoring: server/README.md.
+#
+# Needs: repository secret CLOUDFLARE_BACKUP_TOKEN (a Cloudflare token with
+# D1: Edit and Workers R2 Storage: Edit on the account) and repository variable
+# CLOUDFLARE_ACCOUNT_ID. Without the token it does nothing.
+#
+# The backup holds install IDs, hashed addresses and error reports: it only
+# ever goes to the bucket, never to a workflow artifact or the log.
+name: Back up database
+
+on:
+  schedule:
+    # Daily, at a quiet hour and between the price runs (:37 and :52): an
+    # export briefly holds up the database's other requests.
+    - cron: "44 10 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: database-backup
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      WRANGLER_SEND_METRICS: "false"
+      HAS_TOKEN: ${{ secrets.CLOUDFLARE_BACKUP_TOKEN != '' }}
+      BUCKET: goldscout-backups
+    steps:
+      - name: Note the missing token
+        if: env.HAS_TOKEN != 'true'
+        run: echo "**Skipped:** add the CLOUDFLARE_BACKUP_TOKEN secret to back up the database." | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        if: env.HAS_TOKEN == 'true'
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        if: env.HAS_TOKEN == 'true'
+        with:
+          node-version: "22"
+
+      - name: Install wrangler
+        if: env.HAS_TOKEN == 'true'
+        working-directory: server
+        run: npm ci
+
+      - name: Export the database
+        if: env.HAS_TOKEN == 'true'
+        working-directory: server
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_BACKUP_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx wrangler d1 export goldscout --remote --output ../backup.sql --skip-confirmation
+
+      - name: Check it restores
+        if: env.HAS_TOKEN == 'true'
+        run: python3 tools/check_backup.py backup.sql
+
+      - name: Keep it in the bucket
+        if: env.HAS_TOKEN == 'true'
+        working-directory: server
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_BACKUP_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          gzip -9 ../backup.sql
+          key="d1/goldscout-$(date -u +%Y-%m-%d).sql.gz"
+          npx wrangler r2 object put "$BUCKET/$key" --file ../backup.sql.gz --content-type application/gzip --remote
+          echo "Kept as \`$key\` in the $BUCKET bucket ($(du -h ../backup.sql.gz | cut -f1))." | tee -a "$GITHUB_STEP_SUMMARY"

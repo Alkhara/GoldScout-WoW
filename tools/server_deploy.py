@@ -42,7 +42,7 @@ USER_AGENT = "GoldScout-deploy-check (+https://github.com/Alkhara/GoldScout-WoW)
 
 def run(command, show=True):
     """Runs a wrangler command in server/: (succeeded, stdout)."""
-    result = subprocess.run(command, cwd=SERVER, capture_output=True, text=True)
+    result = subprocess.run(command, cwd=SERVER, capture_output=True, text=True, encoding="utf-8", errors="replace")
     if show:
         print(result.stdout, end="")
         print(result.stderr, end="", file=sys.stderr)
