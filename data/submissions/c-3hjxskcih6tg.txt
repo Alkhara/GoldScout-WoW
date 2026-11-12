@@ -1,4 +1,4 @@
-GoldScout-export 5^3hjxskcih6tg^7
+GoldScout-export 5^3hjxskcih6tg^8
 2955^1^0^1^1^1412^0.4537^0.7778^1^Plainstrider^4739:1:1,4740:1:1,7096:1:1^
 3225^1^0^11^11^1411^0.3714^0.2527^1^Corrupted Mottled Boar^769:1:1,771:1:1^
 3244^1^0^11^12^1413^0.4849^0.2787^1^Greater Plainstrider^5469:1:1^
@@ -10,11 +10,15 @@ GoldScout-export 5^3hjxskcih6tg^7
 3268^7^0^10^11^1413^0.5569^0.2703^7^Razormane Thornweaver^858:1:1,1179:1:1,1512:1:1,1732:1:1,2589:4:7,15476:1:1^
 3272^17^0^12^13^1413^0.4441^0.2325^17^Kolkar Wrangler^1516:1:1,2287:1:1,2589:3:7,3375:1:1,3654:2:2,5030:9:9,15480:1:1,15970:1:1^
 3273^13^0^13^14^1413^0.4447^0.2330^13^Kolkar Stormer^2589:4:7,3375:1:1,5030:6:6^
+3278^1^0^16^17^1413^0.3962^0.1469^1^Witchwing Slayer^2592:1:1^
 3282^1^0^15^15^1413^0.5633^0.0930^1^Venture Co. Mercenary^1179:1:1^
+3283^1^0^16^17^1413^0.6160^0.0498^1^Venture Co. Enforcer^1791:1:1,2592:1:2,5097:1:1^
 3284^7^0^14^15^1413^0.5343^0.1100^7^Venture Co. Drudger^1495:1:1,2287:3:3,2589:2:4^
 3285^11^0^13^14^1413^0.5235^0.1153^11^Venture Co. Peon^858:1:1,2589:3:5,248682:1:1^
+3286^1^0^18^18^1413^0.6160^0.0495^1^Venture Co. Overseer^^
 3394^2^0^16^16^1413^0.4289^0.2365^2^Barak Kodobane^2592:1:2,5022:1:1^
 3471^1^0^16^16^1413^0.5296^0.1076^1^Tinkerer Sniggles^^
+3475^1^0^16^16^1413^0.5576^0.1693^1^Echeyakee^5100:1:1^
 @i^769^Chunk of Boar Meat
 @i^771^Chipped Boar Tusk
 @i^858^Lesser Healing Potion
@@ -24,6 +28,7 @@ GoldScout-export 5^3hjxskcih6tg^7
 @i^1512^Crude Battle Axe
 @i^1516^Worn Hatchet
 @i^1732^Worn Mail Bracers
+@i^1791^Patched Leather Gloves
 @i^2287^Haunch of Meat
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
@@ -36,6 +41,8 @@ GoldScout-export 5^3hjxskcih6tg^7
 @i^5055^Intact Raptor Horn
 @i^5062^Raptor Head
 @i^5087^Plainstrider Beak
+@i^5097^Cats Eye Emerald
+@i^5100^Echeyakee's Hide
 @i^5123^Steel Arrowhead
 @i^5165^Sunscale Feather
 @i^5469^Strider Meat
@@ -54,6 +61,7 @@ GoldScout-export 5^3hjxskcih6tg^7
 @q^1512^0:2:0
 @q^1516^0:2:0
 @q^1732^0:4:0
+@q^1791^0:4:0
 @q^2287^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
@@ -66,6 +74,8 @@ GoldScout-export 5^3hjxskcih6tg^7
 @q^5055^1:12:0
 @q^5062^1:12:0
 @q^5087^1:12:0
+@q^5097^1:12:0
+@q^5100^1:12:0
 @q^5123^0:15:0
 @q^5165^1:12:0
 @q^5469^1:7:1
@@ -1375,9 +1385,13 @@ GoldScout-export 5^3hjxskcih6tg^7
 @a^3268^111:7
 @a^3272^88:6,89:7,108:4
 @a^3273^88:4,89:6,108:3
+@a^3278^47:1
 @a^3282^31:1
+@a^3283^12:1
 @a^3284^31:2,50:5
 @a^3285^50:11
+@a^3286^12:1
 @a^3394^88:2
 @a^3471^50:1
+@a^3475^71:1
 @l^0^enUS
