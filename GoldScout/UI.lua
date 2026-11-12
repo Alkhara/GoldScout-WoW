@@ -6,6 +6,9 @@ local UI = { tab = "farm", offset = 0, rows = {}, data = {}, expanded = {} }
 ns.UI = UI
 
 local FRAME_WIDTH, FRAME_HEIGHT = 760, 510
+-- The filter row: checkboxes run from after the Craft tab to before Hunt.
+local HUNT_WIDTH, HUNT_RIGHT = 85, 22
+local CHECK_BOX, CHECKS_LEFT, CHECKS_RIGHT = 26, 188, FRAME_WIDTH - HUNT_RIGHT - HUNT_WIDTH - 8
 local COMPANION_URL = "wowgoldscout.com/companion"
 local ROW_HEIGHT = 20
 local VISIBLE_ROWS = 16
@@ -424,6 +427,7 @@ local function CreateCheckbox(frame, x)
   check:SetPoint("TOPLEFT", x, -63)
   check.label = check:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
   check.label:SetPoint("LEFT", check, "RIGHT", 2, 0)
+  check.label:SetWordWrap(false)
   check:SetScript("OnClick", function(self)
     if self.setting then
       ns.db.settings[self.setting] = self:GetChecked() and true or false
@@ -548,8 +552,8 @@ function UI:Create()
   f.reloadButton:Hide()
 
   f.huntButton = CreateFrame("Button", nil, f, "UIPanelButtonTemplate")
-  f.huntButton:SetSize(85, 22)
-  f.huntButton:SetPoint("TOPRIGHT", -22, -64)
+  f.huntButton:SetSize(HUNT_WIDTH, 22)
+  f.huntButton:SetPoint("TOPRIGHT", -HUNT_RIGHT, -64)
   f.huntButton:SetText(L["Hunt"])
   f.huntButton:SetScript("OnClick", function()
     UI:OnHuntClicked()
@@ -761,14 +765,30 @@ function UI:SetTab(tab)
       check:Hide()
     end
   end
-  -- Space them by their labels, which are longer in some languages.
-  local x = 196
+  -- Space them by their labels, which are longer in some languages, and keep
+  -- the row clear of the Hunt button: gaps shrink first, then long labels are
+  -- cut short (their tooltip then starts with the full label).
+  local shown, widths = {}, {}
   for _, check in ipairs(f.checks) do
     if check:IsShown() then
-      check:ClearAllPoints()
-      check:SetPoint("TOPLEFT", x, -63)
-      x = x + 26 + math.ceil(check.label:GetStringWidth() or 60) + 14
+      check.label:SetWidth(0)
+      local measure = check.label.GetUnboundedStringWidth or check.label.GetStringWidth
+      shown[#shown + 1] = check
+      widths[#widths + 1] = math.ceil(measure(check.label) or 60)
     end
+  end
+  local gap, cap = ns.FitRow(widths, CHECK_BOX, CHECKS_RIGHT - CHECKS_LEFT, 14, 4)
+  local x = CHECKS_LEFT
+  for i, check in ipairs(shown) do
+    local width = widths[i]
+    if cap and width > cap then
+      width = cap
+      check.label:SetWidth(cap)
+      check.tip = check.label:GetText() .. "\n\n" .. (check.tip or "")
+    end
+    check:ClearAllPoints()
+    check:SetPoint("TOPLEFT", x, -63)
+    x = x + CHECK_BOX + width + gap
   end
   self:Refresh()
 end

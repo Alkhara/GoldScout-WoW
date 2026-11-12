@@ -302,6 +302,28 @@ class ErrorLogTests(FarmRulesTests.__bases__[0]):
         self.fake.frame.scripts["OnEvent"](None, "ADDON_LOADED", "GoldScout")
         self.assertTrue(saved.settings.autoScan)                       # ...stays on
 
+    # -- The Farm tab's filter row (Core.lua ns.FitRow) ---------------------------
+    def fit(self, widths, room):
+        gap, cap = self.ns.FitRow(self.lua.table(*widths), 26, room, 14, 4)
+        used = sum(26 + (min(w, cap) if cap is not None else w) for w in widths) + gap * (len(widths) - 1)
+        return gap, cap, used
+
+    def test_filter_row_keeps_full_gaps_when_there_is_room(self):
+        self.assertEqual(self.fit([50, 60, 45, 60, 55], 500)[:2], (14, None))
+
+    def test_filter_row_squeezes_gaps_before_cutting_labels(self):
+        gap, cap, used = self.fit([50, 60, 45, 60, 55], 420)
+        self.assertEqual(cap, None)
+        self.assertLess(gap, 14)
+        self.assertLessEqual(used, 420)
+
+    def test_filter_row_cuts_only_the_longest_labels_when_it_must(self):
+        gap, cap, used = self.fit([40, 120, 45, 110, 50], 400)
+        self.assertEqual(gap, 4)
+        self.assertGreater(cap, 50)                                    # short labels stay whole
+        self.assertLess(cap, 110)
+        self.assertLessEqual(used, 400)
+
     # -- Saved data versions (Core.lua ns.UpgradeSavedData) ----------------------
     def load_saved(self, saved, char=None):
         self.lua.globals().GoldScoutDB = saved

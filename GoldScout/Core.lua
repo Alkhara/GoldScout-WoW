@@ -346,6 +346,42 @@ function ns.MarketLabel(key)
   return realm .. " " .. side
 end
 
+-- Fits a row of labelled controls into `room` pixels. `widths` are the
+-- labels' natural widths and `fixed` the rest of each control (the box).
+-- Gaps shrink from `gap` down to `minGap` first; if that's still too wide,
+-- the longest labels are cut to a common cap (nil when nothing is cut).
+function ns.FitRow(widths, fixed, room, gap, minGap)
+  local count, total = #widths, 0
+  for _, width in ipairs(widths) do
+    total = total + width
+  end
+  if count < 2 then
+    gap = 0
+  else
+    local spare = room - count * fixed - total
+    gap = math.max(minGap, math.min(gap, math.floor(spare / (count - 1))))
+  end
+  local labelRoom = room - count * fixed - gap * math.max(0, count - 1)
+  if total <= labelRoom then
+    return gap, nil
+  end
+  -- Lower the cap one label at a time, longest first, until the rest fit.
+  local sorted = {}
+  for i, width in ipairs(widths) do
+    sorted[i] = width
+  end
+  table.sort(sorted)
+  local below = 0
+  for i, width in ipairs(sorted) do
+    local cap = math.floor((labelRoom - below) / (count - i + 1))
+    if cap <= width then
+      return gap, math.max(0, cap)
+    end
+    below = below + width
+  end
+  return gap, nil
+end
+
 ---------------------------------------------------------------------------
 -- Error log: GoldScout's own Lua errors and blocked actions are kept in its
 -- saved data (newest 25, repeats counted) so they can be read after the fact

@@ -7,6 +7,8 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- The Farm tab's checkboxes no longer run into the Hunt button; in longer languages their labels are shortened, with the full name in the tooltip.
+
 ## v0.12.0
 
 - **GoldScout Companion for Mac:** a signed app, checked by Apple, for Apple
