@@ -1,4 +1,4 @@
-GoldScout-export 5^3hjxskcih6tg^17
+GoldScout-export 5^3hjxskcih6tg^20
 2955^2^0^1^2^1412^0.4526^0.7902^2^Plainstrider^1374:1:1,4739:1:1,4740:1:1,4757:1:1,7096:1:1^
 2957^3^0^8^9^1412^0.4093^0.2519^3^Elder Plainstrider^4669:1:1,4757:2:2^
 2959^10^0^7^8^1412^0.4093^0.3905^10^Prairie Stalker^2672:10:10,3300:2:2^
@@ -8,7 +8,8 @@ GoldScout-export 5^3hjxskcih6tg^17
 2973^1^0^11^11^1412^0.4759^0.4212^1^Kodo Bull^5082:1:1^
 2974^1^0^12^12^1412^0.4759^0.4212^1^Kodo Matriarch^4779:1:1,5082:1:1,5467:1:1^
 3035^1^0^7^8^1412^0.3580^0.3483^1^Flatland Cougar^4814:1:1^
-3098^10^0^1^2^1411^0.4310^0.7177^10^Mottled Boar^1377:1:1,2649:1:1,2650:1:1,3365:2:2,4865:2:2,7098:7:7^
+3098^20^0^1^2^1411^0.4320^0.7165^20^Mottled Boar^117:2:2,1377:1:1,2649:2:2,2650:1:1,2656:2:2,3365:2:2,4865:5:5,7098:12:12^
+3124^1^0^3^3^1411^0.4475^0.7094^1^Scorpid Worker^2649:1:1,4862:1:1,7099:1:1^
 3225^1^0^11^11^1411^0.3714^0.2527^1^Corrupted Mottled Boar^769:1:1,771:1:1^
 3234^2^0^14^15^1413^0.5378^0.2831^2^Lost Barrens Kodo^5082:2:2^
 3240^5^0^18^19^1413^0.4607^0.4827^5^Stormsnout^4895:1:1,5128:3:3,5470:2:2,14722:1:1^
@@ -104,6 +105,7 @@ GoldScout-export 5^3hjxskcih6tg^17
 @i^2592^Wool Cloth
 @i^2649^Flimsy Chain Belt
 @i^2650^Flimsy Chain Boots
+@i^2656^Flimsy Chain Vest
 @i^2672^Stringy Wolf Meat
 @i^2764^Small Dagger
 @i^2777^Feeble Shortbow
@@ -134,6 +136,7 @@ GoldScout-export 5^3hjxskcih6tg^17
 @i^4776^Ruffled Feather
 @i^4779^Dull Kodo Tooth
 @i^4814^Discolored Fang
+@i^4862^Scorpid Worker Tail
 @i^4865^Ruined Pelt
 @i^4895^Thunder Lizard Horn
 @i^5020^Kolkar Booty Key
@@ -170,6 +173,7 @@ GoldScout-export 5^3hjxskcih6tg^17
 @i^6470^Deviate Scale
 @i^7096^Plucked Feather
 @i^7098^Splintered Tusk
+@i^7099^Severed Pincer
 @i^10338^Fresh Zhevra Carcass
 @i^10410^Leggings of the Fang
 @i^14098^Native Cloak
@@ -220,6 +224,7 @@ GoldScout-export 5^3hjxskcih6tg^17
 @q^2592^1:7:1
 @q^2649^0:4:0
 @q^2650^0:4:0
+@q^2656^0:4:0
 @q^2672^1:7:1
 @q^2764^0:2:0
 @q^2777^0:2:0
@@ -250,6 +255,7 @@ GoldScout-export 5^3hjxskcih6tg^17
 @q^4776^0:15:0
 @q^4779^0:15:0
 @q^4814^0:15:0
+@q^4862^1:12:0
 @q^4865^0:15:0
 @q^4895^1:12:0
 @q^5020^1:13:0
@@ -286,6 +292,7 @@ GoldScout-export 5^3hjxskcih6tg^17
 @q^6470^1:7:1
 @q^7096^0:15:0
 @q^7098^0:15:0
+@q^7099^0:15:0
 @q^10338^1:12:0
 @q^10410^3:4:0
 @q^14098^1:4:0
@@ -1607,7 +1614,8 @@ GoldScout-export 5^3hjxskcih6tg^17
 @a^2973^169:1
 @a^2974^169:1
 @a^3035^127:1
-@a^3098^268:1,288:9
+@a^3098^268:2,288:18
+@a^3124^288:1
 @a^3225^107:1
 @a^3234^51:1,170:1
 @a^3240^168:1,188:2,209:2
