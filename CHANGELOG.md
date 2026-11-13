@@ -7,7 +7,10 @@ releases add their own line automatically.
 
 ## Unreleased
 
+## v0.12.4
+
 - **Count all loot in gold per hour:** a new setting (Settings › Farm list, or `/gscout set allloot on`) that adds everything else a mob drops, vendor trash too, to its Farm rows' gold per hour, from your loot and other players'. The row's tooltip shows the extra per kill. Coin isn't recorded, so it isn't counted.
+- Updated drop data from the community.
 
 ## v0.12.3
 
