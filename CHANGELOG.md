@@ -7,7 +7,7 @@ releases add their own line automatically.
 
 ## Unreleased
 
-## v0.12.5
+## v0.12.6
 
 - **Contributor leaderboard:** everyone who shares drop data is ranked by their kills in the community data, on
   [wowgoldscout.com/leaderboard](https://wowgoldscout.com/leaderboard). You're anonymous unless you choose
