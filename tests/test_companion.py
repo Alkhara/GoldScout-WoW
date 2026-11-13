@@ -233,5 +233,49 @@ class UpdateNoticeTests(unittest.TestCase):
         self.assertTrue(app.should_notify({"update_notified": "0.12.1"}, "0.12.2", 1_800_000_000))
 
 
+
+class FakeButton:
+    def __init__(self):
+        self.shown = False
+
+    def pack(self, **_):
+        self.shown = True
+
+    def pack_forget(self):
+        self.shown = False
+
+
+@unittest.skipUnless(app, "tkinter isn't available")
+class CheckButtonTests(unittest.TestCase):
+    """The window's Check for updates shows when the tray menu's does, and hides while a check runs."""
+
+    def window(self, packaged=True, **state):
+        values = dict(update=None, updating=False, checking=False, check_button=FakeButton(),
+                      can_update=lambda: packaged)
+        values.update(state)
+        return _Window(values)
+
+    def shown(self, **state):
+        window = self.window(**state)
+        app.App.show_check_button(window)
+        return window.check_button.shown
+
+    def test_shown_with_no_update_waiting(self):
+        self.assertTrue(self.shown())
+
+    def test_hidden_while_an_update_waits_or_installs_or_a_check_runs(self):
+        self.assertFalse(self.shown(update=object()))
+        self.assertFalse(self.shown(updating=True))
+        self.assertFalse(self.shown(checking=True))
+
+    def test_hidden_when_running_from_source(self):
+        self.assertFalse(self.shown(packaged=False))
+
+
+class _Window:
+    def __init__(self, values):
+        self.__dict__.update(values)
+
+
 if __name__ == "__main__":
     unittest.main()

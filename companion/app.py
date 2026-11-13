@@ -121,7 +121,7 @@ class App:
         self.accounts, self.account, self.result, self.stamp = [], None, None, None
         self.uploading = False
         self.tray = None
-        self.update, self.updating = None, False
+        self.update, self.updating, self.checking = None, False, False
         self.pricing, self.price_timer, self.price_keys = False, None, None
         self.sending_errors = False
         self.notify_timer = None
@@ -254,6 +254,8 @@ class App:
         self.update_label = ttk.Label(bar, text="", foreground=ink(self.root, "muted"))
         self.update_label.pack(side="left")
         self.update_button = ttk.Button(bar, text="Update", command=self.start_update)
+        # Like the tray menu's: shown while there's no update waiting.
+        self.check_button = ttk.Button(bar, text="Check for updates", command=lambda: self.check_updates(manual=True))
         self.share_status = ttk.Label(frame, text="", foreground=ink(self.root, "muted"))
         self.share_status.grid(row=1, column=0, sticky="w", pady=(0, 12))
 
@@ -305,10 +307,7 @@ class App:
         self.login_check.grid(row=0, column=2, sticky="w", padx=(16, 0))
         ttk.Checkbutton(self.settings, text="Send error reports", variable=self.errors_choice,
                         command=lambda: self.set_error_reports(self.errors_choice.get())).grid(
-                            row=1, column=1, sticky="w", padx=(16, 0), pady=(8, 0))
-        self.check_button = ttk.Button(self.settings, text="Check for updates",
-                                       command=lambda: self.check_updates(manual=True))
-        self.check_button.grid(row=1, column=0, sticky="w", pady=(8, 0))
+                            row=1, column=0, sticky="w", pady=(8, 0))
 
         self.prices_label = ttk.Label(frame, text="", foreground=ink(self.root, "muted"), wraplength=520, justify="left")
         self.prices_label.grid(row=6, column=0, sticky="w", pady=(10, 0))
@@ -401,6 +400,7 @@ class App:
 
     def update_controls(self):
         """Brings the tray menu, or the window's Settings, up to date."""
+        self.show_check_button()
         if self.tray:
             self.tray.update_menu()
             return
@@ -409,10 +409,13 @@ class App:
         self.errors_choice.set(self.error_reports_enabled())
         self.login_choice.set(system.start_at_login_enabled())
         self.login_check.state(["!disabled"] if system.can_start_at_login() else ["disabled"])
-        if self.can_update() and not self.update and not self.updating:
-            self.check_button.grid()
+
+    def show_check_button(self):
+        """The window's Check for updates, shown when the tray menu shows its own."""
+        if self.can_update() and not self.update and not self.updating and not self.checking:
+            self.check_button.pack(side="left", padx=(8, 0))
         else:
-            self.check_button.grid_remove()
+            self.check_button.pack_forget()
 
     def pump(self):
         """Runs work queued by the tray, uploads and the second-launch listener."""
@@ -445,9 +448,10 @@ class App:
             self.update_button.pack(side="left", padx=(8, 0))
         else:
             self.update_button.pack_forget()
+        self.show_check_button()
 
     def check_updates(self, manual=False):
-        """Asks GitHub for a newer version: on a timer, or when picked from the tray."""
+        """Asks GitHub for a newer version: on a timer, or from the tray menu or window."""
         def work():
             try:
                 found, problem = updater.check(VERSION), None
@@ -456,6 +460,8 @@ class App:
             self.events.put(lambda: self.update_found(found, problem if manual else None, manual))
         if manual:
             self.show()
+            if not self.updating:
+                self.checking = True
             self.set_update_text("Checking for updates...")
         if not self.updating:
             threading.Thread(target=work, daemon=True).start()
@@ -463,6 +469,8 @@ class App:
             self.root.after(CHECK_EVERY_MS, self.check_updates)
 
     def update_found(self, update, problem=None, manual=False):
+        if manual:
+            self.checking = False
         if self.updating:
             return
         if self.notify_timer:
