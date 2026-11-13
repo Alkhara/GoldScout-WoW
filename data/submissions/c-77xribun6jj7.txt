@@ -1,4 +1,4 @@
-GoldScout-export 5^77xribun6jj7^3
+GoldScout-export 5^77xribun6jj7^4
 205^8^0^28^29^1431^0.6291^0.7198^8^Nightbane Dark Runner^^
 206^4^0^29^30^1431^0.5847^0.7898^4^Nightbane Vile Fang^^
 212^7^5^29^30^1431^0.3311^0.7068^7^Splinter Fist Warrior^929:1:1,2592:1:2^16882:1:1
@@ -9,7 +9,11 @@ GoldScout-export 5^77xribun6jj7^3
 522^1^0^35^35^1431^0.1980^0.3747^1^Mor'Ladim^3514:1:1^
 533^3^0^27^28^1431^0.6210^0.6981^3^Nightbane Shadow Weaver^2794:1:1,3770:1:1,5635:1:1^
 628^4^0^24^25^1431^0.6682^0.3065^4^Black Ravager^1015:1:1,3058:1:1,3301:1:1,262888:1:1^
+681^8^0^30^31^1434^0.3431^0.1162^8^Young Stranglethorn Tiger^1686:2:2,5637:1:1,12202:4:4^
+682^1^0^32^32^1434^0.3069^0.0946^1^Stranglethorn Tiger^^
+683^5^0^30^31^1434^0.4073^0.1206^5^Young Panther^1686:1:1^
 697^1^0^33^33^1434^0.3043^0.2077^1^Bloodscalp Shaman^^
+702^1^0^34^34^1434^0.3168^0.1192^1^Bloodscalp Scavenger^^
 889^9^6^25^26^1431^0.3913^0.7245^9^Splinter Fist Ogre^911:1:1,929:1:1,2592:4:6,3048:1:1,4306:1:1^16882:1:1
 891^4^4^26^27^1431^0.3959^0.7482^4^Splinter Fist Fire Weaver^1784:1:1^4542:1:1
 892^9^4^27^28^1431^0.3577^0.7241^9^Splinter Fist Taskmaster^1205:1:1,2227:1:1,2592:1:1,3770:1:1,4306:1:1^
@@ -32,6 +36,7 @@ GoldScout-export 5^77xribun6jj7^3
 @i^1081^Crisp Spider Meat
 @i^1130^Vial of Spider Venom
 @i^1205^Melon Juice
+@i^1686^Bristly Whisker
 @i^1784^Cross-stitched Pants
 @i^1968^Ogre's Monocle
 @i^2227^Heavy Ogre War Axe
@@ -52,6 +57,8 @@ GoldScout-export 5^77xribun6jj7^3
 @i^4542^Moist Cornbread
 @i^5373^Lucky Charm
 @i^5635^Sharp Claw
+@i^5637^Large Fang
+@i^12202^Tiger Meat
 @i^15223^Jagged Star of Defense
 @i^16882^Battered Junkbox
 @i^255724^Manual: Clever Poultice
@@ -66,6 +73,7 @@ GoldScout-export 5^77xribun6jj7^3
 @q^1081^1:7:1
 @q^1130^1:12:0
 @q^1205^1:0:0
+@q^1686^0:15:0
 @q^1784^0:4:0
 @q^1968^1:12:0
 @q^2227^2:2:0
@@ -86,6 +94,8 @@ GoldScout-export 5^77xribun6jj7^3
 @q^4542^1:0:0
 @q^5373^1:15:1
 @q^5635^1:7:1
+@q^5637^1:7:1
+@q^12202^1:7:1
 @q^15223^2:2:0
 @q^16882^1:15:0
 @q^255724^2:9:0
@@ -893,7 +903,11 @@ GoldScout-export 5^77xribun6jj7^3
 @a^522^143:1
 @a^533^273:1,292:2
 @a^628^112:1,113:1,133:1,153:1
+@a^681^26:2,46:2,47:2,67:2
+@a^682^26:1
+@a^683^47:1,48:4
 @a^697^86:1
+@a^702^46:1
 @a^889^287:7,288:2
 @a^891^287:1,288:2,307:1
 @a^892^286:3,287:5,307:1
