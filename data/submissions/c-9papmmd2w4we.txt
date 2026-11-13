@@ -1,4 +1,4 @@
-GoldScout-export 5^9papmmd2w4we^6
+GoldScout-export 5^9papmmd2w4we^7
 40^6^0^6^7^1429^0.4045^0.7999^6^Kobold Miner^774:1:1,2589:2:3^
 94^2^0^6^6^1429^0.4096^0.5246^2^Defias Cutpurse^2589:1:2,2646:1:1^
 113^2^0^5^6^1429^0.4194^0.8618^2^Stonetusk Boar^769:2:2^
@@ -8,8 +8,12 @@ GoldScout-export 5^9papmmd2w4we^6
 525^4^0^5^6^1429^0.4093^0.7007^4^Mangy Wolf^2672:4:4,3300:2:2^
 735^1^0^7^7^1429^0.5326^0.6972^1^Murloc Streamrunner^2138:1:1^
 1999^1^0^7^7^1438^0.5533^0.7319^1^Webwood Venomfang^5465:1:1^
+2000^2^0^8^8^1438^0.3464^0.3266^2^Webwood Silkspinner^1476:2:2,5465:1:2^
 2002^1^0^6^6^1438^0.5461^0.5138^1^Rascal Sprite^^
 2003^2^0^5^5^1438^0.5432^0.5158^2^Shadow Sprite^2589:1:2^
+2015^1^0^9^9^1438^0.3433^0.3407^1^Bloodfeather Harpy^5204:1:1,14090:1:1^
+2017^1^0^8^8^1438^0.3887^0.4276^1^Bloodfeather Rogue^^
+2018^2^0^9^9^1438^0.3581^0.3593^2^Bloodfeather Sorceress^2589:1:2,4775:1:1,5204:2:2^
 2022^3^0^5^6^1438^0.5802^0.6909^3^Timberling^1378:1:1,4604:1:1^
 2152^6^0^6^7^1438^0.4661^0.5221^6^Gnarlpine Ambusher^159:1:1,818:1:1,4536:1:1,5220:3:3^
 2162^1^0^8^8^1438^0.4621^0.5227^1^Agal^^
@@ -31,6 +35,7 @@ GoldScout-export 5^9papmmd2w4we^6
 @i^1378^Frayed Pants
 @i^1413^Feeble Sword
 @i^1431^Patchwork Pants
+@i^1476^Snapped Spider Limb
 @i^2138^Sharpened Letter Opener
 @i^2211^Bent Large Shield
 @i^2589^Linen Cloth
@@ -46,6 +51,7 @@ GoldScout-export 5^9papmmd2w4we^6
 @i^4604^Forest Mushroom Cap
 @i^4775^Cracked Bill
 @i^4874^Clean Fishbones
+@i^5204^Bloodfeather Belt
 @i^5220^Gnarlpine Fang
 @i^5348^Worn Parchment
 @i^5465^Small Spider Leg
@@ -55,6 +61,7 @@ GoldScout-export 5^9papmmd2w4we^6
 @i^7500^Bottom of Gelkak's Key
 @i^8136^Gargantuan Tumor
 @i^12237^Fine Crab Chunks
+@i^14090^Beaded Britches of the Owl
 @i^17056^Light Feather
 @q^159^1:0:0
 @q^769^1:7:1
@@ -66,6 +73,7 @@ GoldScout-export 5^9papmmd2w4we^6
 @q^1378^0:4:0
 @q^1413^0:2:0
 @q^1431^0:4:0
+@q^1476^0:15:0
 @q^2138^0:2:0
 @q^2211^0:4:0
 @q^2589^1:7:1
@@ -81,6 +89,7 @@ GoldScout-export 5^9papmmd2w4we^6
 @q^4604^1:0:0
 @q^4775^0:15:0
 @q^4874^0:15:0
+@q^5204^1:12:0
 @q^5220^1:12:0
 @q^5348^1:12:0
 @q^5465^1:7:1
@@ -90,6 +99,7 @@ GoldScout-export 5^9papmmd2w4we^6
 @q^7500^1:12:0
 @q^8136^1:12:0
 @q^12237^1:12:0
+@q^14090^2:4:0
 @q^17056^1:15:1
 @m^1429^Elwynn Forest
 @m^1438^Teldrassil
@@ -1389,8 +1399,12 @@ GoldScout-export 5^9papmmd2w4we^6
 @a^525^265:1,269:1,270:1,287:1
 @a^735^270:1
 @a^1999^291:1
+@a^2000^126:1,127:1
 @a^2002^210:1
 @a^2003^210:2
+@a^2015^126:1
+@a^2017^167:1
+@a^2018^126:1,147:1
 @a^2022^251:1,291:2
 @a^2152^209:6
 @a^2162^209:1
