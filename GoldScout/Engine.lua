@@ -12,6 +12,9 @@ local PRIOR_WEIGHT = 30
 -- Kills of an unlisted mob before it shows up on the Farm tab as "Learned".
 -- Low counts are shown with a low confidence and a cautious rate (below).
 local LEARNED_MIN_KILLS = 1
+-- Kills of a mob (yours plus the community's) before its other loot counts
+-- toward a row's gold per hour (the allLoot setting); fewer is mostly luck.
+local OTHER_LOOT_MIN_KILLS = 10
 -- Gold per hour from player data uses drops / (attempts + this), so a lucky
 -- first drop doesn't top the list; it fades out as attempts add up.
 local CAUTION_ATTEMPTS = 2
@@ -674,19 +677,35 @@ function Engine:Farms()
     return KillsPerHour(level, mobLevel, settings.killsPerHour)
   end
 
+  -- With "Count all loot" on, a mob row also earns everything else that mob
+  -- drops (vendor trash, other items) per kill, from your loot and the
+  -- community's. Sets row.otherLoot and adds it to row.hour.
+  local function AddOtherLoot(row, npcID, kills)
+    if not settings.allLoot or not row.each or not npcID then
+      return row
+    end
+    local value, seen = ns.KillLootValue(row.item, ns.Learn:Entry(npcID), ns.COMMUNITY[npcID])
+    if seen >= OTHER_LOOT_MIN_KILLS and value > 0 then
+      row.otherLoot, row.otherLootKills = value, seen
+      row.hour = (row.each + value) * kills
+    end
+    return row
+  end
+
   -- Specific mobs with valuable drops
   for _, drop in ipairs(ns.MOB_DROPS) do
     if InWindow(drop.min, drop.max) and (not drop.faction or drop.faction == faction) then
       local net, listed, age = NetPrice(drop.item)
       local chance, seenRate, seenTrials = BlendedChance(drop.chance, drop.npc, drop.item, false)
       local each = net and net * chance
-      rows[#rows + 1] = {
+      local kills = Kills((drop.min + drop.max) / 2)
+      rows[#rows + 1] = AddOtherLoot({
         kind = "Drop", item = drop.item, source = ns.MobName(drop.npc, nil, drop.mob), zone = drop.zone,
         lvl = LevelText(drop.min, drop.max), chance = chance, baseChance = drop.chance, per = "kill",
         seenRate = seenRate, seenTrials = seenTrials,
-        each = each, hour = each and each * Kills((drop.min + drop.max) / 2),
+        each = each, hour = each and each * kills,
         listed = listed, age = age, note = drop.note, hunt = DropHunt(drop),
-      }
+      }, drop.npc, kills)
     end
   end
 
@@ -783,15 +802,16 @@ function Engine:Farms()
               if confidence.min < 15 then
                 note = note .. L[" Gold per hour uses a cautious rate until more kills are recorded."]
               end
-              rows[#rows + 1] = {
+              local kills = Kills((minLevel + maxLevel) / 2)
+              rows[#rows + 1] = AddOtherLoot({
                 kind = "Learned", item = itemID, source = mob, zone = zone,
                 lvl = LevelText(minLevel, maxLevel), chance = rate, per = "kill",
                 seenRate = rate, seenTrials = attempts, confidence = confidence,
-                each = each, hour = each * Kills((minLevel + maxLevel) / 2),
+                each = each, hour = each * kills,
                 listed = listed, age = age,
                 note = note,
                 hunt = MobHunt("Learned:" .. npcID .. ":" .. itemID, "kill", itemID, rate, mob, zone, npcID, nil),
-              }
+              }, npcID, kills)
             end
           end
         end

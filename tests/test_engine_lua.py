@@ -379,6 +379,51 @@ class ErrorLogTests(FarmRulesTests.__bases__[0]):
 
 
 @unittest.skipIf(lua51 is None, "lupa is not installed")
+class AllLootTests(unittest.TestCase):
+    """Count all loot in gold per hour: a mob row also earns the mob's other loot."""
+    setUp = FarmRulesTests.setUp
+    run_lua, run_file, item, drops, rows = (FarmRulesTests.run_lua, FarmRulesTests.run_file, FarmRulesTests.item,
+                                            FarmRulesTests.drops, FarmRulesTests.rows)
+
+    def mob(self, kills=10):
+        self.item(5000, price=10000)                                   # the row's reagent: 9500 after the cut
+        self.item(5100, price=0, sell=50, quality=0, reagent=False)    # gray trash: vendor price
+        self.item(5101, price=1000, sell=5, reagent=False)             # a non-reagent drop: 950 after the cut
+        self.drops(3000, kills, {5000: 2, 5100: kills})
+        self.ns.db.drops[3000].i[5101] = self.lua.table_from({"d": 1, "q": 2})
+
+    def row(self):
+        return self.rows()[("Learned", 5000)]
+
+    def test_off_by_default_counts_only_the_item(self):
+        self.mob()
+        row = self.row()
+        self.assertIsNone(row.otherLoot)
+        self.assertGreater(row.hour, 0)
+
+    def test_on_adds_the_other_loot_per_kill(self):
+        self.mob()
+        before = self.row()
+        self.ns.db.settings.allLoot = True
+        row = self.row()
+        self.assertAlmostEqual(row.otherLoot, (50 * 10 + 950 * 2) / 10)    # 240 a kill; the reagent isn't counted twice
+        self.assertEqual(row.otherLootKills, 10)
+        self.assertAlmostEqual(row.each, before.each)
+        self.assertAlmostEqual(row.hour, before.hour * (row.each + row.otherLoot) / row.each)
+
+    def test_needs_ten_kills_from_you_and_the_community(self):
+        self.mob(kills=6)
+        self.ns.db.settings.allLoot = True
+        self.assertIsNone(self.row().otherLoot)
+        shared = self.lua.eval("{ k = 4, i = {} }")
+        shared.i[5100] = self.lua.table_from({"d": 4, "q": 4})
+        self.ns.COMMUNITY[3000] = shared
+        row = self.row()
+        self.assertEqual(row.otherLootKills, 10)
+        self.assertAlmostEqual(row.otherLoot, (50 * 10 + 950 * 2) / 10)
+
+
+@unittest.skipIf(lua51 is None, "lupa is not installed")
 class UnitTooltipTests(unittest.TestCase):
     """The lines GoldScout adds to a mob's tooltip (Hunt.lua)."""
     setUp_farm = FarmRulesTests.setUp

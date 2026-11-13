@@ -38,6 +38,8 @@ local RIGHT = {
   } },
   { title = L["Farm list"], note = L["More filters are the checkboxes at the top of the GoldScout window."], items = {
     { key = "showCloth", label = L["Show cloth from humanoids"] },
+    { key = "allLoot", label = L["Count all loot in gold per hour"],
+      tip = L["A mob's rows also count everything else it drops, vendor trash too, from your loot and other players'. Coin isn't counted."] },
   } },
   { title = L["Data and sharing"], items = {
     { key = "learnDrops", label = L["Learn drop rates from what you loot"] },

@@ -210,20 +210,7 @@ ns.On("NAME_PLATE_UNIT_REMOVED", Unmark)
 -- Session tracking
 ---------------------------------------------------------------------------
 
--- What a looted item is worth to you. Junkboxes count as zero because their
--- contents are counted when you open them.
-local function ItemValue(itemID)
-  if ns.JUNKBOXES[itemID] then
-    return 0
-  end
-  local sell = ns.ItemSellPrice(itemID) or 0
-  local price = ns.Prices:Get(itemID)
-  -- Gray items are worth their vendor price, whatever someone lists them for.
-  if price and not ns.IsPoorQuality(itemID) then
-    return math.max(price * ns.AH_CUT, sell)
-  end
-  return sell
-end
+local ItemValue = ns.LootValue   -- Core.lua
 
 local ACTION_FIELD = { kill = "kills", pick = "picks", node = "nodes", catch = "catches" }
 
@@ -585,24 +572,13 @@ function Hunt:UnitLines(npcID)
   local shared = ns.COMMUNITY[npcID]
   if shared and (shared.k or 0) > 0 then
     local text = (L["Other players have looted %d of these"]):format(shared.k)
-    local value = Hunt.KillValue(shared)
+    local value = ns.KillLootValue(nil, shared)
     if value > 0 then
       text = text .. (L["; loot averages %s per kill"]):format(ns.Money(value))
     end
     lines[#lines + 1] = text .. "."
   end
   return lines
-end
-
--- What a kill's loot is worth on average, valued like the Hunt panel values
--- your loot: auction price after the cut (vendor price for gray items).
--- Coin isn't recorded, so it isn't included.
-function Hunt.KillValue(entry)
-  local total = 0
-  for itemID, stat in pairs(entry.i or {}) do
-    total = total + ItemValue(itemID) * (stat.q or 0)
-  end
-  return total / entry.k
 end
 
 if TooltipDataProcessor and TooltipDataProcessor.AddTooltipPostCall and Enum.TooltipDataType and Enum.TooltipDataType.Unit then

@@ -13,7 +13,10 @@ based on your level, class, faction and professions.
   the quantity listed for every item, in a few seconds, using the same summary
   scan Auctionator uses on the Forever client.
 - **Farm tab** ranks farms you can do by estimated gold per hour, including lower-level ones that still pay well:
-  - mobs that drop valuable crafting reagents, with rates from your own loot and other players'
+  - mobs that drop valuable crafting reagents, with rates from your own loot and other players'.
+    By default a row counts only its item; turn on **Count all loot in gold per hour** in Settings
+    (or `/gscout set allloot on`) to add everything else the mob drops, vendor trash too, once
+    players have looted it 10 times (coin isn't recorded, so it isn't counted)
   - cloth from humanoids up to your level (off by default; `/gscout set cloth on`)
   - herbs, ore and leather you can gather with your Herbalism, Mining or Skinning skill
   - fishing: one row per zone for open water and for each kind of fishing pool, valued from what
@@ -142,6 +145,7 @@ set up, ticking itself off as you go (`/gscout welcome` shows it again):
 | `/gscout set learn off` | Stop learning drop rates from your loot |
 | `/gscout set raredrops on` | Show BoE gear, recipes and gems (same as the **Rare drops** checkbox) |
 | `/gscout set cloth on` | Show rough per-kill cloth rows for humanoids |
+| `/gscout set allloot on` | Mob rows' gold per hour also counts the mob's other loot, vendor trash too (not coin) |
 | `/gscout reset prices` | Forget this faction's saved prices |
 | `/gscout reset drops` | Forget the drop rates learned from your loot |
 

@@ -245,7 +245,14 @@ local function FarmTooltip(row)
   end
   if not row.unknownRate then
     AddMoneyLine(L["Expected value per %s"]:format(Per(row.per)), row.each)
+    if row.otherLoot then
+      AddMoneyLine(L["Other loot per kill"], row.otherLoot)
+    end
     AddMoneyLine(L["Rough estimate per hour"], row.hour)
+    if row.otherLoot then
+      GameTooltip:AddLine((L["Includes the mob's other loot, vendor trash too, from %d kills (not coin)."]):format(
+        row.otherLootKills), 0.6, 0.6, 0.6, true)
+    end
   end
   if row.xp then
     GameTooltip:AddLine(XP_TEXT[row.xp], 0.8, 0.8, 0.8)
@@ -1411,6 +1418,7 @@ local SETTING_ALIASES = {
   mobtips = "unitTooltips",
   raredrops = "showRareDrops",
   cloth = "showCloth",
+  allloot = "allLoot",
   companionhint = "companionHint",
   minimap = "minimap",
 }
@@ -1448,7 +1456,7 @@ local function PrintHelp()
   print(L["  /gscout errors - list GoldScout's recent errors; /gscout errors clear"])
   print(L["  /gscout skills - show the skills and recipes GoldScout knows"])
   print(L["  /gscout set kills|nodes|picks|catches <number> - your rates per hour"])
-  print(L["  /gscout set autoscan|tooltip|window|waypoint|markers|learn|mobtips|raredrops|cloth|minimap on|off"])
+  print(L["  /gscout set autoscan|tooltip|window|waypoint|markers|learn|mobtips|raredrops|cloth|allloot|minimap on|off"])
   print(L["  /gscout reset prices | drops - forget saved prices or learned drop rates"])
 end
 
@@ -1513,7 +1521,7 @@ local function SetOption(rest)
   end
   if not setting then
     ns.Print(L["Usage: /gscout set kills|nodes|picks|catches <number>, or "
-      .. "/gscout set autoscan|tooltip|blackwater|window|waypoint|markers|learn|mobtips|raredrops|cloth|minimap|companionhint on|off"])
+      .. "/gscout set autoscan|tooltip|blackwater|window|waypoint|markers|learn|mobtips|raredrops|cloth|allloot|minimap|companionhint on|off"])
     return
   end
   if type(ns.db.settings[setting]) == "boolean" then

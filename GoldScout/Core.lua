@@ -27,6 +27,7 @@ local DEFAULT_SETTINGS = {
   knownRatesOnly = false, -- hide AH items that have no drop rate yet
   showRareDrops = false,  -- show BoE gear, recipes and gems (rare world drops)
   showCloth = false,      -- show rough per-kill cloth rows for humanoids
+  allLoot = false,        -- add a mob's other loot (vendor trash too) to its rows' gold per hour
   huntWaypoint = true,    -- hunts place Blizzard's map waypoint at the farm
   huntMarkers = true,     -- hunts put an icon over matching mobs' nameplates
   learnDrops = true,      -- learn drop rates from what you loot
@@ -298,6 +299,42 @@ end
 function ns.ItemSellPrice(itemID)
   local sellPrice = select(11, ns.GetItemInfo(itemID))
   return sellPrice
+end
+
+-- What a looted item is worth to you: its auction price after the cut, or its
+-- vendor price when that's more. Gray items are worth their vendor price,
+-- whatever someone lists them for. Junkboxes count as zero because their
+-- contents are counted when you open them.
+function ns.LootValue(itemID)
+  if ns.JUNKBOXES and ns.JUNKBOXES[itemID] then
+    return 0
+  end
+  local sell = ns.ItemSellPrice(itemID) or 0
+  local price = ns.Prices and ns.Prices:Get(itemID)
+  if price and not ns.IsPoorQuality(itemID) then
+    return math.max(price * ns.AH_CUT, sell)
+  end
+  return sell
+end
+
+-- What a kill's loot is worth on average, from one or more drop records for
+-- the same mob (your own, the community's; either may be nil), leaving out
+-- skipItem. Coin isn't recorded, so it isn't included. Returns value per kill
+-- and the kills behind it.
+function ns.KillLootValue(skipItem, ...)
+  local kills, total = 0, 0
+  for i = 1, select("#", ...) do
+    local entry = select(i, ...)
+    if entry and (entry.k or 0) > 0 then
+      kills = kills + entry.k
+      for itemID, stat in pairs(entry.i or {}) do
+        if itemID ~= skipItem then
+          total = total + ns.LootValue(itemID) * (stat.q or 0)
+        end
+      end
+    end
+  end
+  return (kills > 0) and total / kills or 0, kills
 end
 
 -- 1 = binds when picked up, 4 = quest item. Both can't go on the auction house.
