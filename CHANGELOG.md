@@ -7,7 +7,10 @@ releases add their own line automatically.
 
 ## Unreleased
 
+## v0.12.3
+
 - **Mob tooltips show the community's loot:** how many times other players have looted that mob, and what its loot is worth per kill on average at your auction house's prices.
+- Updated drop data from the community.
 
 ## v0.12.2
 
