@@ -463,7 +463,10 @@ local function CellSpots(map, cells)
     list[#list + 1] = { cell = cell, count = count }
   end
   table.sort(list, function(a, b)
-    return a.count ~= b.count and a.count > b.count or a.cell < b.cell
+    if a.count ~= b.count then
+      return a.count > b.count
+    end
+    return a.cell < b.cell
   end)
   local spots = {}
   for i = 1, math.min(FISH_SPOTS, #list) do
@@ -499,7 +502,10 @@ local function FishRows(rows, settings, skills)
       end
       if best then
         table.sort(catch, function(a, b)
-          return a.rate ~= b.rate and a.rate > b.rate or a.item < b.item
+          if a.rate ~= b.rate then
+            return a.rate > b.rate
+          end
+          return a.item < b.item
         end)
         local pool = place.spot ~= 0
         local cautious = each * place.n / (place.n + CAUTION_ATTEMPTS)

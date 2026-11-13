@@ -226,6 +226,22 @@ class FishRowTests(engine_tests.FarmRulesTests.__bases__[0]):
         self.assertEqual(row.hunt.spots[1][1], 1413)
         self.assertEqual((row.hunt.spots[1][2], row.hunt.spots[1][3]), (42.5, 67.5))   # cell 268's center
 
+    def test_the_catch_is_listed_most_common_first(self):
+        # A sort rule that broke ties wrongly made Lua's sort fail now and then
+        # ("attempt to index local 'b'"), depending on the order pairs() gave.
+        self.fishing(150)
+        items = {6000 + i: (i * 7) % 23 + 1 for i in range(40)}      # mixed rates, some tied
+        for item_id in items:
+            self.item(item_id, price=100)
+        self.fished(0, 1000, items)
+        for _ in range(20):
+            fish = [row for key, row in self.rows().items() if key[0] == "Fish"]
+            self.assertEqual(len(fish), 1)
+            catch = fish[0].catch
+            order = [(catch[i].rate, catch[i].item) for i in range(1, len(catch) + 1)]
+            self.assertEqual(order, sorted(order, key=lambda pair: (-pair[0], pair[1])))
+            self.assertEqual(len(order), 40)
+
     def test_pools_are_their_own_rows_at_half_the_pace(self):
         self.fishing(150)
         self.item(6358, price=1000)

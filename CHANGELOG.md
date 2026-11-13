@@ -9,6 +9,7 @@ releases add their own line automatically.
 
 ## v0.12.2
 
+- Fixed a Lua error the Farm tab could hit while sorting what's caught at a fishing spot.
 - **Community drop data now ships every day,** instead of once a week.
 - GoldScout Companion's window has a **Check for updates** button, like the one in the tray menu.
 - GoldScout Companion's desktop notice about a new version now comes at most once a week; its window shows **Update** whenever one is out.
