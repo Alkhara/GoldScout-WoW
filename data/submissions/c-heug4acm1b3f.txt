@@ -1,4 +1,4 @@
-GoldScout-export 5^heug4acm1b3f^8
+GoldScout-export 5^heug4acm1b3f^9
 588^1^0^34^34^1434^0.2514^0.0955^1^Bloodscalp Scout^2740:1:1^
 595^1^0^35^35^1434^0.2539^0.1016^1^Bloodscalp Hunter^^
 597^3^0^36^37^1434^0.2456^0.1011^3^Bloodscalp Berserker^3771:2:2^
@@ -79,7 +79,19 @@ GoldScout-export 5^heug4acm1b3f^8
 4541^2^0^0^0^0^0.0000^0.0000^0^^^
 4543^2^0^0^0^0^0.0000^0.0000^0^^7685:1:1^
 4623^6^0^0^0^0^0.0000^0.0000^0^^4538:1:1^
-4692^1^0^32^33^1443^0.5660^0.1798^1^Dread Swoop^3404:1:1,5116:1:1^
+4664^3^0^30^31^1443^0.5584^0.2819^3^Burning Blade Reaver^4306:1:1^
+4665^5^0^31^32^1443^0.5489^0.2684^5^Burning Blade Adept^1710:1:1,4306:1:1,6986:1:1,14205:1:1^
+4666^10^0^31^32^1443^0.5465^0.2751^10^Burning Blade Felsworn^3385:1:1,3816:1:1,4306:5:9,6986:1:1^
+4670^4^0^31^31^1443^0.7389^0.1800^4^Hatefury Rogue^1708:1:1,3771:1:1,3810:1:1,4306:2:3,6246:2:2^
+4671^5^0^31^32^1443^0.7460^0.2128^5^Hatefury Trickster^4306:2:3,6247:2:2^
+4672^1^0^31^31^1443^0.7229^0.1773^1^Hatefury Felsworn^4306:1:1,6246:1:1^
+4673^12^0^32^33^1443^0.7550^0.1897^12^Hatefury Betrayer^2592:1:1,4306:5:9,6246:3:3,6247:3:3^
+4674^7^0^32^33^1443^0.7428^0.1971^7^Hatefury Shadowstalker^3385:1:1,4306:2:3,6246:2:2,6247:1:1^
+4675^8^0^32^33^1443^0.7545^0.2002^8^Hatefury Hellcaller^1708:2:2,6246:2:2,6247:4:4,15140:1:1^
+4692^2^0^32^33^1443^0.6108^0.1920^2^Dread Swoop^3404:1:1,5116:1:1,11418:1:1^
+4693^1^0^37^37^1443^0.7952^0.1767^1^Dread Flyer^1464:1:1,11416:1:1^
+4696^5^0^30^31^1443^0.6253^0.2425^5^Scorpashi Snapper^6248:2:2,12037:2:2^
+5643^1^0^36^36^1443^0.5297^0.2903^1^Tyranis Malem^6767:1:1^
 6168^1^0^0^0^0^0.0000^0.0000^0^^^
 6426^5^0^0^0^0^0.0000^0.0000^0^^3780:1:1,4306:1:1,6530:1:1^
 6427^1^0^0^0^0^0.0000^0.0000^0^^4306:1:2^
@@ -96,6 +108,7 @@ GoldScout-export 5^heug4acm1b3f^8
 @i^929^Healing Potion
 @i^1081^Crisp Spider Meat
 @i^1288^Large Venom Sac
+@i^1464^Buzzard Talon
 @i^1520^Troll Sweat
 @i^1630^Broken Electro-lantern
 @i^1686^Bristly Whisker
@@ -104,6 +117,7 @@ GoldScout-export 5^heug4acm1b3f^8
 @i^1702^Intact Basilisk Spine
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
+@i^1710^Greater Healing Potion
 @i^1827^Meat Cleaver
 @i^2219^Small Round Shield
 @i^2295^Large Boar Tusk
@@ -130,6 +144,8 @@ GoldScout-export 5^heug4acm1b3f^8
 @i^3779^Hefty War Axe
 @i^3780^Long-barreled Musket
 @i^3798^Interlaced Shoulderpads
+@i^3810^Double Mail Bracers
+@i^3816^Reflective Heater
 @i^3818^Fadeleaf
 @i^3868^Plans: Frost Tiger Blade
 @i^4093^Large Basilisk Tail
@@ -153,10 +169,15 @@ GoldScout-export 5^heug4acm1b3f^8
 @i^5795^Hardened Tortoise Shell
 @i^5825^Treshala's Pendant
 @i^5848^Hollow Vulture Bone
+@i^6246^Hatefury Claw
+@i^6247^Hatefury Horn
+@i^6248^Scorpashi Venom
 @i^6308^Raw Bristle Whisker Catfish
 @i^6362^Raw Rockscale Cod
 @i^6444^Forked Tongue
 @i^6530^Nightcrawlers
+@i^6767^Tyranis' Pendant
+@i^6986^Crimson Lotus
 @i^7685^Orb of the Forgotten Seer
 @i^7712^Mantle of Doan
 @i^7713^Illusionary Rod
@@ -166,11 +187,15 @@ GoldScout-export 5^heug4acm1b3f^8
 @i^11386^Squishy Basilisk Eye
 @i^11391^Spined Bat Wing
 @i^11394^Bat Heart
+@i^11416^Delicate Ribcage
+@i^11418^Hollow Wing Bone
 @i^12037^Mystery Meat
 @i^12202^Tiger Meat
 @i^12207^Giant Egg
 @i^14188^Raincaller Cloak of the Beast
 @i^14204^Thistlefur Robe of Intellect
+@i^14205^Thistlefur Belt of the Prophet
+@i^15140^Cutthroat's Mantle of Strength
 @i^15566^Marauder's Bracers of Magic
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
@@ -188,6 +213,7 @@ GoldScout-export 5^heug4acm1b3f^8
 @q^929^1:0:0
 @q^1081^1:7:1
 @q^1288^1:7:1
+@q^1464^0:15:0
 @q^1520^0:15:0
 @q^1630^0:15:0
 @q^1686^0:15:0
@@ -196,6 +222,7 @@ GoldScout-export 5^heug4acm1b3f^8
 @q^1702^0:15:0
 @q^1707^1:0:0
 @q^1708^1:0:0
+@q^1710^1:0:0
 @q^1827^0:2:0
 @q^2219^0:4:0
 @q^2295^0:15:0
@@ -222,6 +249,8 @@ GoldScout-export 5^heug4acm1b3f^8
 @q^3779^0:2:0
 @q^3780^0:2:0
 @q^3798^0:4:0
+@q^3810^0:4:0
+@q^3816^0:4:0
 @q^3818^1:7:1
 @q^3868^2:9:0
 @q^4093^0:15:0
@@ -245,10 +274,15 @@ GoldScout-export 5^heug4acm1b3f^8
 @q^5795^1:12:0
 @q^5825^1:12:0
 @q^5848^1:12:0
+@q^6246^1:12:0
+@q^6247^1:12:0
+@q^6248^1:12:0
 @q^6308^1:7:1
 @q^6362^1:7:1
 @q^6444^0:15:0
 @q^6530^1:0:0
+@q^6767^1:12:0
+@q^6986^0:15:0
 @q^7685^3:4:0
 @q^7712^2:4:0
 @q^7713^3:2:0
@@ -258,11 +292,15 @@ GoldScout-export 5^heug4acm1b3f^8
 @q^11386^0:15:0
 @q^11391^0:15:0
 @q^11394^0:15:0
+@q^11416^0:15:0
+@q^11418^0:15:0
 @q^12037^1:7:1
 @q^12202^1:7:1
 @q^12207^1:7:1
 @q^14188^2:4:0
 @q^14204^2:4:0
+@q^14205^2:4:0
+@q^15140^2:4:0
 @q^15566^2:4:0
 @q^17057^1:15:0
 @q^17058^1:15:0
@@ -1444,7 +1482,19 @@ GoldScout-export 5^heug4acm1b3f^8
 @a^4158^316:2,375:1
 @a^4248^207:1
 @a^4249^252:1
-@a^4692^71:1
+@a^4664^110:1,111:2
+@a^4665^110:3,111:2
+@a^4666^110:7,111:3
+@a^4670^74:2,75:1,94:1
+@a^4671^74:1,75:1,94:1,114:2
+@a^4672^74:1
+@a^4673^74:6,75:3,95:3
+@a^4674^74:4,94:1,95:2
+@a^4675^74:2,75:2,94:1,95:3
+@a^4692^71:1,93:1
+@a^4693^75:1
+@a^4696^92:1,93:1,111:1,112:2
+@a^5643^110:1
 @a^11559^86:1
 @a^11561^26:1,46:1,66:1,86:2,106:2
 @a^253272^86:1
