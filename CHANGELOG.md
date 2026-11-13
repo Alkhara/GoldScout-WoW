@@ -7,9 +7,12 @@ releases add their own line automatically.
 
 ## Unreleased
 
+## v0.12.2
+
 - **Community drop data now ships every day,** instead of once a week.
-- GoldScout Companion's desktop notice about a new version now comes at most once a week; its window shows **Update** whenever one is out.
 - GoldScout Companion's window has a **Check for updates** button, like the one in the tray menu.
+- GoldScout Companion's desktop notice about a new version now comes at most once a week; its window shows **Update** whenever one is out.
+- Updated drop data from the community.
 
 ## v0.12.1
 
