@@ -7,11 +7,14 @@ releases add their own line automatically.
 
 ## Unreleased
 
+## v0.12.5
+
 - **Contributor leaderboard:** everyone who shares drop data is ranked by their kills in the community data, on
   [wowgoldscout.com/leaderboard](https://wowgoldscout.com/leaderboard). You're anonymous unless you choose
   otherwise: GoldScout Companion's new **Leaderboard...** button shows your rank and lets you appear under a
   made-up name, or a name of your own once it's approved. With the companion, your rank also shows on
   GoldScout's minimap button.
+- Updated drop data from the community.
 
 ## v0.12.4
 
