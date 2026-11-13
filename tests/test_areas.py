@@ -73,6 +73,7 @@ class RecordingTests(unittest.TestCase):
             source = (ROOT / "GoldScout" / name).read_text(encoding="utf-8")
             self.lua.execute("return loadstring(...)", source)("GoldScout", self.ns)
         self.ns.COMMUNITY = self.lua.table()
+        self.ns.COMMUNITY_FISH = self.lua.table()   # not the shipped data
         self.ns.db = self.lua.eval("{ settings = { learnDrops = true }, drops = {} }")
         self.ns.handlers["DB_READY"]()
         self.game = self.lua.globals().GAME

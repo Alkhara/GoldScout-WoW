@@ -92,6 +92,7 @@ class FarmRulesTests(unittest.TestCase):
             self.run_file(name)
         self.fake = self.lua.globals().FAKE
         self.ns.COMMUNITY = self.lua.table()
+        self.ns.COMMUNITY_FISH = self.lua.table()   # not the shipped data
         self.ns.COMMUNITY_CRAFTED = self.lua.table()
         # Load saved data as the game would.
         self.lua.globals().GoldScoutDB = self.lua.table()
