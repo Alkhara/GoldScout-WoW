@@ -206,10 +206,12 @@ def lua_string(text):
     return '"%s"' % text.replace("\\", "\\\\").replace('"', '\\"').replace("\n", "\\n").replace("\r", "\\r")
 
 
-def lua_text(markets, written, companion=None):
+def lua_text(markets, written, companion=None, contributors=None):
     """The data file. markets: {key: {"region", "house", "snapshot", "prices": {item: [price, qty]}}}.
     companion is this companion's version: GoldScout writes the newest export
-    format only for companions that understand it (0.10.0 and later)."""
+    format only for companions that understand it (0.10.0 and later).
+    contributors: {install ID: {"rank", "of", "kills"}}, each account's place
+    on the contributor leaderboard, for GoldScout's minimap button."""
     lines = ["-- Written by GoldScout Companion and replaced about once an hour. Don't edit.",
              "-- " + SOURCE,
              "GoldScoutPricesData = {",
@@ -217,6 +219,13 @@ def lua_text(markets, written, companion=None):
              "  written = %d," % written]
     if companion:
         lines.append("  companion = %s," % lua_string(companion))
+    if contributors:
+        lines.append("  contributors = {")
+        for install_id in sorted(contributors):
+            entry = contributors[install_id]
+            lines.append("    [%s] = { rank = %d, of = %d, kills = %d }," % (
+                lua_string(install_id), entry["rank"], entry["of"], entry["kills"]))
+        lines.append("  },")
     lines += [
              "  source = %s," % lua_string(SOURCE),
              "  markets = {"]
@@ -253,10 +262,10 @@ def _write(path, text):
     os.replace(temp, path)
 
 
-def write_addon(forever, markets, written, companion=None):
+def write_addon(forever, markets, written, companion=None, contributors=None):
     folder = addons_folder(forever) / DATA_ADDON
     folder.mkdir(parents=True, exist_ok=True)
-    _write(folder / DATA_FILE, lua_text(markets, written, companion))
+    _write(folder / DATA_FILE, lua_text(markets, written, companion, contributors))
     _write(folder / (DATA_ADDON + ".toc"), toc_text(interface_version(forever)))
     return folder
 
@@ -281,7 +290,7 @@ def addon_written(forever):
 # ---------------------------------------------------------------------------
 # One update
 # ---------------------------------------------------------------------------
-def update(forever, accounts, state, now, fetch=get_json, companion=None):
+def update(forever, accounts, state, now, fetch=get_json, companion=None, contributors=None):
     """Brings the data addon up to date. state is the companion's saved
     {"learned", "tried", "written"} (updated in place). Returns a summary dict:
     {"markets": {key: {"house", "snapshot", "how"}}, "unknown": [keys], "wrote": bool}."""
@@ -357,15 +366,18 @@ def update(forever, accounts, state, now, fetch=get_json, companion=None):
         state["written"] = {}
         return summary
     current = {key: [region, house, houses[(region, house)]["snapshot"]] for key, ((region, house), _) in chosen.items()}
-    if state.get("written") == current and state.get("written_by") == companion and addon_written(forever):
-        return summary   # same snapshots, written by this same version
+    contributors = contributors or {}
+    if (state.get("written") == current and state.get("written_by") == companion
+            and state.get("written_ranks", {}) == contributors and addon_written(forever)):
+        return summary   # same snapshots and ranks, written by this same version
     markets = {}
     for key, ((region, house), _) in chosen.items():
         data = prices_for(region, house)
         markets[key] = {"region": region, "house": house, "snapshot": data["snapshot"],
                         "prices": data.get("prices", {})}
-    write_addon(forever, markets, int(now), companion)
+    write_addon(forever, markets, int(now), companion, contributors)
     state["written"] = {key: [m["region"], m["house"], m["snapshot"]] for key, m in markets.items()}
     state["written_by"] = companion
+    state["written_ranks"] = contributors
     summary["wrote"] = True
     return summary

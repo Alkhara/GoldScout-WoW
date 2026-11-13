@@ -254,6 +254,7 @@ ns.AddLocale("zhTW", {
   ["Click: what to farm"] = "點擊：刷什麼",
   ["Right-click: what to craft"] = "右鍵：做什麼",
   ["Drag: move this button"] = "拖曳：移動此按鈕",
+  ["Contributor rank: #%d of %d, %d kills shared"] = "貢獻者排名：第 %d 名，共 %d 人，已分享 %d 次擊殺",
   ["Drop"] = "掉落",
   ["Pickpocket"] = "偷竊",
   ["Learned"] = "已學習",

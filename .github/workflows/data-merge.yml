@@ -151,6 +151,23 @@ jobs:
           gh workflow run tests.yml --ref main
           summary "**Merged automatically:** every check passed, including the website build. Started Tests on main."
 
+      # Scores from main's submissions (merged or not this run), so only kills
+      # in the community data count; see tools/leaderboard.py.
+      - name: Update the contributor leaderboard
+        if: always()
+        continue-on-error: true
+        env:
+          GOLDSCOUT_API_URL: ${{ vars.GOLDSCOUT_API_URL || 'https://api.wowgoldscout.com' }}
+          GOLDSCOUT_API_ADMIN: ${{ secrets.GOLDSCOUT_API_ADMIN }}
+        run: |
+          if [ -z "$GOLDSCOUT_API_ADMIN" ]; then
+            echo "GOLDSCOUT_API_ADMIN isn't set; the leaderboard wasn't updated." | tee -a "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git fetch --quiet origin main
+          git worktree add --quiet --detach "$RUNNER_TEMP/main" FETCH_HEAD
+          python3 tools/leaderboard.py --push --input "$RUNNER_TEMP/main/data/submissions" | tail -n 2 | tee -a "$GITHUB_STEP_SUMMARY"
+
       - name: Update the admin dashboard
         if: always()
         continue-on-error: true

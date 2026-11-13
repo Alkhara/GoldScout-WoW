@@ -122,3 +122,23 @@ CREATE TABLE IF NOT EXISTS alerts (
   since INTEGER NOT NULL,      -- when the problem was first seen
   notified INTEGER NOT NULL    -- when Discord last heard about it
 );
+
+-- Contributor leaderboard (src/leaderboard.js). Scores: each install's kills
+-- that count in the community data, replaced hourly from tools/leaderboard.py.
+CREATE TABLE IF NOT EXISTS leaderboard_scores (
+  install_id TEXT PRIMARY KEY,
+  kills INTEGER NOT NULL,
+  mobs INTEGER NOT NULL,
+  updated_at INTEGER NOT NULL
+);
+CREATE INDEX IF NOT EXISTS leaderboard_kills ON leaderboard_scores (kills);
+-- Installs whose players chose to appear on the public board, from GoldScout
+-- Companion: a made-up alias, and optionally a name of their own, shown only
+-- once approved on the admin dashboard. No row: shown as anonymous.
+CREATE TABLE IF NOT EXISTS leaderboard_names (
+  install_id TEXT PRIMARY KEY,
+  alias TEXT NOT NULL,
+  name TEXT,
+  approved INTEGER NOT NULL DEFAULT 0,
+  updated_at INTEGER NOT NULL
+);

@@ -39,6 +39,7 @@ VERSION = "0.12.4"  # tools/release.py checks this matches the tag; the release 
 FORM_URL = "https://github.com/Alkhara/GoldScout-WoW/issues/new?template=data-submission.yml"
 TERMS_URL = "https://github.com/Alkhara/GoldScout-WoW/blob/main/docs/CONTRIBUTOR_TERMS.md"
 PRIVACY_URL = "https://github.com/Alkhara/GoldScout-WoW/blob/main/docs/PRIVACY.md"
+LEADERBOARD_URL = "https://wowgoldscout.com/leaderboard"
 MAX_URL = 7500           # longer links get cut off; then the export goes via the clipboard
 POLL_MS = 15000          # how often to look for newer saved data
 RETRY_SECONDS = 300      # wait after a failed upload before trying again
@@ -50,6 +51,7 @@ PRICE_RETRY_SECONDS = 600
 FIRST_PRICE_MS = 8000
 GAME_CHECK_MS = 60000    # while WoW is open, look again this often before telling about an update
 NOTIFY_EVERY_SECONDS = 7 * 86400   # data releases come daily; a desktop notice about them at most weekly
+RANK_EVERY_SECONDS = 1800          # scores change at most hourly (the data merge workflow)
 CONFIG_DIR = system.config_dir()
 CONFIG_FILE = CONFIG_DIR / "config.json"
 SHOW_REQUEST = CONFIG_DIR / "show.request"
@@ -76,6 +78,39 @@ def should_notify(config, version, now):
         return False
     told = config.get("update_notified_at")
     return not isinstance(told, (int, float)) or now - told >= NOTIFY_EVERY_SECONDS
+
+
+def rank_text(info):
+    """The window's leaderboard line, from the server's /v1/leaderboard/me reply."""
+    if not info:
+        return ""
+    if info.get("rank") is None:
+        text = ("Contributor leaderboard: your kills count once they're in the community data, "
+                "usually within a day of sharing.")
+    else:
+        text = "Contributor rank: #%d of %d, with %s kills counted." % (
+            info["rank"], info.get("contributors") or info["rank"], format(info.get("kills") or 0, ","))
+    if info.get("public"):
+        shown = info.get("name") if info.get("approved") else info.get("alias")
+        text += " Shown publicly as %s" % shown
+        if info.get("name") and not info.get("approved"):
+            text += " until %s is approved" % info["name"]
+        text += "."
+    else:
+        text += " You're anonymous on the public board."
+    return text
+
+
+def contributor_ranks(config, install_ids):
+    """{install ID: {"rank", "of", "kills"}} for GoldScout's in-game line, from
+    the ranks the companion last fetched for these installs."""
+    ranks = {}
+    for install_id in install_ids:
+        info = (config.get("leaderboard", {}).get(install_id) or {}).get("info") or {}
+        if info.get("rank"):
+            ranks[install_id] = {"rank": int(info["rank"]), "of": int(info.get("contributors") or info["rank"]),
+                                 "kills": int(info.get("kills") or 0)}
+    return ranks
 
 
 def share_url(export):
@@ -125,6 +160,7 @@ class App:
         self.pricing, self.price_timer, self.price_keys = False, None, None
         self.sending_errors = False
         self.notify_timer = None
+        self.ranking = False
 
         root.title("GoldScout Companion")
         root.minsize(560, 420)
@@ -281,6 +317,13 @@ class App:
                              font=(FONT, 9))
         self.notes.grid(row=3, column=0, columnspan=2, sticky="nsew")
         data.rowconfigure(3, weight=1)
+        board = ttk.Frame(data)
+        board.grid(row=4, column=0, columnspan=2, sticky="ew", pady=(6, 0))
+        board.columnconfigure(0, weight=1)
+        self.rank_label = ttk.Label(board, text="", wraplength=400, justify="left")
+        self.rank_label.grid(row=0, column=0, sticky="w")
+        self.board_button = ttk.Button(board, text="Leaderboard...", command=self.open_leaderboard)
+        self.board_button.grid(row=0, column=1, sticky="e", padx=(8, 0))
 
         buttons = ttk.Frame(frame)
         buttons.grid(row=4, column=0, sticky="ew")
@@ -650,6 +693,8 @@ class App:
             self.maybe_send_errors()
         except Exception:  # noqa: BLE001 - error reports must never stop sharing or the poll loop
             self.sending_errors = False
+        if self.account:
+            self.show_rank()
         self.root.after(POLL_MS, self.poll)
 
     def set_notes(self, lines):
@@ -706,6 +751,7 @@ class App:
         chosen = self.account_choice.get() if len(self.accounts) > 1 else self.accounts[0].name
         self.account = next(a for a in self.accounts if a.name == chosen)
         account, self.result = self.account, None
+        self.show_rank()
         if not account.export:
             notes = ["Loot some mobs with GoldScout installed, then log out or type /reload."]
             if account.has_loot:
@@ -859,7 +905,114 @@ class App:
         save_config(self.config)
         if self.account:
             self.since_label.configure(text=self.since_text(self.account) if self.account.export else "")
+            self.show_rank()
         self.update_share_status()
+
+    # -- contributor leaderboard ------------------------------------------------
+    def rank_state(self, account):
+        return self.config.get("leaderboard", {}).get(account.install_id or "", {})
+
+    def show_rank(self, force=False):
+        """Shows the chosen account's leaderboard line, fetching it every half hour."""
+        account = self.account
+        token = self.upload_state(account).get("token") if account else None
+        if not token or not uploader.upload_url():
+            self.rank_label.configure(text="Share your data to join the contributor leaderboard.")
+            self.board_button.state(["disabled"])
+            return
+        self.board_button.state(["!disabled"])
+        state = self.rank_state(account)
+        self.rank_label.configure(text=rank_text(state.get("info")) or "Contributor leaderboard: checking...")
+        if self.ranking or (not force and time.time() - state.get("time", 0) < RANK_EVERY_SECONDS):
+            return
+        self.ranking = True
+        install_id = account.install_id
+
+        def work():
+            try:
+                info = uploader.leaderboard(install_id, token, VERSION)
+            except uploader.UploadError:
+                info = None
+            self.events.put(lambda: self.rank_done(install_id, info))
+        threading.Thread(target=work, daemon=True).start()
+
+    def rank_done(self, install_id, info):
+        self.ranking = False
+        entry = self.config.setdefault("leaderboard", {}).setdefault(install_id, {})
+        entry["time"] = time.time()   # after a failure too: try again in half an hour
+        if info is not None:
+            entry["info"] = info
+        save_config(self.config)
+        if self.account and self.account.install_id == install_id:
+            self.show_rank()
+
+    def open_leaderboard(self):
+        """The leaderboard settings: whether to be shown publicly, and under which name."""
+        account = self.account
+        token = self.upload_state(account).get("token") if account else None
+        if not token:
+            return
+        info = self.rank_state(account).get("info") or {}
+        dialog = tk.Toplevel(self.root)
+        dialog.title("Contributor leaderboard")
+        dialog.transient(self.root)
+        dialog.resizable(False, False)
+        frame = ttk.Frame(dialog, padding=16)
+        frame.pack(fill="both", expand=True)
+        ttk.Label(frame, text="Contributor leaderboard", font=(FONT, 13, "bold")).grid(sticky="w")
+        ttk.Label(frame, wraplength=420, justify="left", text=(
+            "Everyone who shares is ranked by their kills in the community data, and stays anonymous "
+            "unless they choose otherwise. Your rank shows here, and on GoldScout's minimap button "
+            "after you log in or /reload.")).grid(sticky="w", pady=(6, 10))
+        public = tk.BooleanVar(value=bool(info.get("public")))
+        name = tk.StringVar(value=info.get("name") or "")
+        row = ttk.Frame(frame)
+        entry = ttk.Entry(row, textvariable=name, width=24)
+
+        def toggled():
+            entry.state(["!disabled"] if public.get() else ["disabled"])
+        ttk.Checkbutton(frame, text="Show me on the public leaderboard", variable=public,
+                        command=toggled).grid(sticky="w")
+        row.grid(sticky="w", pady=(8, 0), padx=(22, 0))
+        ttk.Label(row, text="Name (optional):").pack(side="left")
+        entry.pack(side="left", padx=(6, 0))
+        toggled()
+        alias = info.get("alias")
+        ttk.Label(frame, foreground=ink(self.root, "muted"), wraplength=400, justify="left", text=(
+            ("Leave it empty to be shown as %s, a name GoldScout made up. " % alias if alias else
+             "Leave it empty to be shown under a name GoldScout makes up, like Patient Boar. ") +
+            "A name of your own shows once it's approved. Your character or account name would tell "
+            "others who you are. Turn this off any time to be anonymous again.")).grid(
+                sticky="w", pady=(4, 0), padx=(22, 0))
+        link(frame, "See the leaderboard", LEADERBOARD_URL).grid(sticky="w", pady=(10, 0))
+        buttons = ttk.Frame(frame)
+        buttons.grid(sticky="e", pady=(14, 0))
+        save = ttk.Button(buttons, text="Save")
+        save.pack(side="left")
+        ttk.Button(buttons, text="Cancel", command=dialog.destroy).pack(side="left", padx=(8, 0))
+        install_id = account.install_id
+
+        def saved(reply, problem):
+            if problem:
+                save.state(["!disabled"])
+                messagebox.showerror("GoldScout Companion", "Couldn't save it: %s" % problem, parent=dialog)
+                return
+            self.rank_done(install_id, reply)
+            dialog.destroy()
+
+        def submit():
+            save.state(["disabled"])
+            settings = {"public": public.get(), "name": name.get().strip() or None}
+
+            def work():
+                try:
+                    reply, problem = uploader.leaderboard(install_id, token, VERSION, settings=settings), None
+                except uploader.UploadError as error:
+                    reply, problem = None, error
+                self.events.put(lambda: saved(reply, problem))
+            threading.Thread(target=work, daemon=True).start()
+        save.configure(command=submit)
+        dialog.grab_set()
 
     # -- auction prices -------------------------------------------------------
     def prices_enabled(self):
@@ -899,12 +1052,14 @@ class App:
         self.pricing = True
         forever, accounts = self.forever, list(self.accounts)
         state = json.loads(json.dumps(self.config.get("price_state", {})))
+        ranks = contributor_ranks(self.config, [a.install_id for a in accounts if a.install_id])
 
         def work():
             try:
                 summary = auction_prices.update(
                     forever, accounts, state, time.time(),
-                    fetch=lambda path: auction_prices.get_json(path, VERSION), companion=VERSION)
+                    fetch=lambda path: auction_prices.get_json(path, VERSION), companion=VERSION,
+                    contributors=ranks)
                 problem = summary.get("problem")
             except (auction_prices.PriceError, OSError, KeyError, TypeError, ValueError) as error:
                 summary, problem = None, str(error)

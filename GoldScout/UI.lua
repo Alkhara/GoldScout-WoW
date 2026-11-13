@@ -1664,6 +1664,11 @@ function UI:CreateMinimapButton()
     GameTooltip:AddLine(L["Click: what to farm"], 1, 1, 1)
     GameTooltip:AddLine(L["Right-click: what to craft"], 1, 1, 1)
     GameTooltip:AddLine(L["Drag: move this button"], 0.6, 0.6, 0.6)
+    local rank = ns.ContributorRank()
+    if rank then
+      GameTooltip:AddLine((L["Contributor rank: #%d of %d, %d kills shared"]):format(rank.rank,
+        tonumber(rank.of) or rank.rank, tonumber(rank.kills) or 0), 1, 0.82, 0)
+    end
     GameTooltip:Show()
   end)
   b:SetScript("OnLeave", HideTip)

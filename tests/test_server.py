@@ -335,6 +335,82 @@ class ServerTests(unittest.TestCase):
                 self.assertIn("error", reply)
         self.assertEqual(raw("/v1/prices/kr/%d" % house)[0], 404)
 
+    def put_scores(self, scores, admin=ADMIN):
+        return raw("/v1/admin/leaderboard", json.dumps({"generated": int(time.time()), "scores": scores}),
+                   {"Authorization": "Bearer " + admin, "Content-Type": "application/json"}, "PUT")
+
+    def me(self, install, token, settings=None):
+        headers = {"X-GoldScout-Install": install, "Authorization": "Bearer " + token}
+        if settings is None:
+            return raw("/v1/leaderboard/me", None, headers, "GET")
+        headers["Content-Type"] = "application/json"
+        return raw("/v1/leaderboard/me", json.dumps(settings), headers, "PUT")
+
+    def board(self):
+        status, board = raw("/v1/leaderboard")
+        self.assertEqual(status, 200)
+        return [(row["rank"], row["name"], row["kills"]) for row in board["top"]], board
+
+    def test_leaderboard_ranks_everyone_and_names_only_who_asked(self):
+        first, second, unclaimed = new_install(), new_install(), new_install()
+        token = register(first)[1]["token"]
+        register(second)
+        self.assertEqual(self.put_scores({first: [500, 10], second: [900, 20], unclaimed: [500, 4]}),
+                         (200, {"status": "stored", "scores": 3}))
+        rows, board = self.board()
+        self.assertEqual(rows, [(1, None, 900), (2, None, 500), (2, None, 500)])   # ties share a rank
+        self.assertEqual((board["contributors"], board["kills"]), (3, 1900))
+        self.assertNotIn(first, json.dumps(board))
+
+        status, mine = self.me(first, token)
+        self.assertEqual(status, 200)
+        self.assertEqual((mine["rank"], mine["contributors"], mine["kills"], mine["public"]), (2, 3, 500, False))
+        self.assertEqual(self.me(first, "0" * 64)[0], 403)
+        self.assertEqual(self.me(new_install(), token)[0], 404)
+        self.assertEqual(raw("/v1/leaderboard/me")[0], 401)
+
+        # Opting in shows a made-up alias.
+        status, mine = self.me(first, token, {"public": True, "name": None})
+        self.assertEqual((status, mine["public"], mine["name"]), (200, True, None))
+        alias = mine["alias"]
+        self.assertRegex(alias, r"^[A-Z][a-z]+ [A-Z][a-z]+$")
+        self.assertIn((2, alias, 500), self.board()[0])
+
+        # A name of their own waits for approval; the alias shows meanwhile.
+        for bad in ("x", "<script>", "a" * 21, 7):
+            with self.subTest(bad):
+                self.assertEqual(self.me(first, token, {"public": True, "name": bad})[0], 400)
+        status, mine = self.me(first, token, {"public": True, "name": "  Gold   Digger "})
+        self.assertEqual((mine["name"], mine["approved"], mine["alias"]), ("Gold Digger", False, alias))
+        self.assertIn((2, alias, 500), self.board()[0])
+
+        status, summary = raw("/admin/api/summary", None, {"Authorization": "Bearer " + ADMIN})
+        pending = [n for n in summary["live"]["names"] if n["name"] == "Gold Digger" and n["alias"] == alias]
+        self.assertEqual(len(pending), 1)
+
+        def review(approve, name="Gold Digger"):
+            return raw("/admin/api/names/review", json.dumps({"id": pending[0]["id"], "name": name, "approve": approve}),
+                       {"Authorization": "Bearer " + ADMIN, "Content-Type": "application/json"}, "POST")
+        self.assertEqual(review(True, name="Someone Else")[0], 409)   # not the name the dashboard showed
+        self.assertEqual(raw("/admin/api/names/review", "{}", {"Authorization": "Bearer " + ADMIN,
+                                                                "Content-Type": "text/plain"}, "POST")[0], 403)
+        self.assertEqual(review(True)[0], 200)
+        self.assertEqual(review(True)[0], 409)                         # already reviewed
+        self.assertIn((2, "Gold Digger", 500), self.board()[0])
+        self.assertTrue(self.me(first, token)[1]["approved"])
+
+        # Turning it off is anonymous again, at once.
+        status, mine = self.me(first, token, {"public": False})
+        self.assertEqual((mine["public"], mine["alias"], mine["name"]), (False, None, None))
+        self.assertNotIn("Gold Digger", json.dumps(self.board()[1]))
+
+    def test_leaderboard_scores_need_admin_and_valid_input(self):
+        self.assertEqual(self.put_scores({new_install(): [1, 1]}, admin="wrong")[0], 401)
+        for bad in ({"NOT-AN-ID": [1, 1]}, {new_install(): [1]}, {new_install(): [-1, 1]},
+                    {new_install(): [0, 0]}, {new_install(): ["1", 1]}):
+            with self.subTest(bad):
+                self.assertEqual(self.put_scores(bad)[0], 400)
+
     def test_realm_map_round_trip(self):
         def put(body, admin=ADMIN):
             return raw("/v1/admin/realms/kr", body, {"Authorization": "Bearer " + admin,

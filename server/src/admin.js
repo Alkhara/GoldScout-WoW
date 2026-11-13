@@ -1,5 +1,6 @@
-// GoldScout admin dashboard: /admin (page, script, styles), /admin/api/summary
-// and POST /admin/api/errors/dismiss.
+// GoldScout admin dashboard: /admin (page, script, styles), /admin/api/summary,
+// POST /admin/api/errors/dismiss and POST /admin/api/names/review (leaderboard
+// names waiting for approval).
 //
 // Who may see it: Cloudflare Access sits in front of the admin hostname and
 // signs every request it lets through (Cf-Access-Jwt-Assertion). The Worker
@@ -20,6 +21,7 @@ import PAGE from "./admin/index.html";
 import SCRIPT from "./admin/app.client.js";
 import STYLES from "./admin/app.css";
 import { dismissError } from "./errors.js";
+import { pendingNames, reviewName } from "./leaderboard.js";
 
 const STATS_MAX_BYTES = 1500000;
 const KEYS_TTL_MS = 3600 * 1000;
@@ -129,7 +131,8 @@ export async function handleAdmin(request, env, url, isAdminToken) {
     return null;
   }
   const dismissing = path === "/admin/api/errors/dismiss";
-  if (request.method !== (dismissing ? "POST" : "GET")) {
+  const reviewing = path === "/admin/api/names/review";
+  if (request.method !== (dismissing || reviewing ? "POST" : "GET")) {
     return respond("Method not allowed.", "text/plain; charset=utf-8", 405);
   }
   const who = await identity(request, env, url, isAdminToken);
@@ -138,6 +141,9 @@ export async function handleAdmin(request, env, url, isAdminToken) {
   }
   if (dismissing) {
     return dismiss(request, env, url);
+  }
+  if (reviewing) {
+    return review(request, env, url);
   }
   if (path === "/admin" || path === "/admin/") {
     return respond(PAGE, "text/html; charset=utf-8");
@@ -154,19 +160,40 @@ export async function handleAdmin(request, env, url, isAdminToken) {
   return respond("Not found.", "text/plain; charset=utf-8", 404);
 }
 
-// POST /admin/api/errors/dismiss {"fingerprint"}: the dashboard's Dismiss button.
-// JSON only, and only from the dashboard's own origin, so another site can't
-// make a signed-in browser send it.
-async function dismiss(request, env, url) {
+// The JSON body of a dashboard button's POST, or a 403 response. JSON only, and
+// only from the dashboard's own origin, so another site can't make a
+// signed-in browser send it.
+async function buttonBody(request, url) {
   const origin = request.headers.get("Origin");
   if ((origin && origin !== url.origin) || !(request.headers.get("Content-Type") || "").startsWith("application/json")) {
     return respond('{"error":"Not allowed."}', "application/json; charset=utf-8", 403);
   }
-  let body;
   try {
-    body = JSON.parse(await request.text());
+    return JSON.parse(await request.text());
   } catch {
-    body = null;
+    return null;
+  }
+}
+
+// POST /admin/api/names/review {"id", "name", "approve"}: a leaderboard name's
+// Approve or Reject button.
+async function review(request, env, url) {
+  const body = await buttonBody(request, url);
+  if (body instanceof Response) {
+    return body;
+  }
+  if (!body || !await reviewName(env, body.id, body.name, body.approve)) {
+    return respond('{"error":"That name changed or was already reviewed; refresh."}',
+      "application/json; charset=utf-8", 409);
+  }
+  return respond('{"status":"reviewed"}', "application/json; charset=utf-8");
+}
+
+// POST /admin/api/errors/dismiss {"fingerprint"}: the dashboard's Dismiss button.
+async function dismiss(request, env, url) {
+  const body = await buttonBody(request, url);
+  if (body instanceof Response) {
+    return body;
   }
   if (!body || !await dismissError(env, body.fingerprint)) {
     return respond('{"error":"Expected {\\"fingerprint\\": \\"32 hex\\"}."}', "application/json; charset=utf-8", 400);
@@ -176,7 +203,7 @@ async function dismiss(request, env, url) {
 
 async function summary(env, who) {
   const now = Math.floor(Date.now() / 1000);
-  const [installs, clients, systems, regions, houses, realms, stats, errors, errors24] = await env.DB.batch([
+  const [installs, clients, systems, regions, houses, realms, stats, errors, errors24, names] = await env.DB.batch([
     env.DB.prepare("SELECT COUNT(*) AS installs, COALESCE(SUM(updated_at > ?), 0) AS d1, " +
       "COALESCE(SUM(updated_at > ?), 0) AS d7, COALESCE(SUM(created_at > ?), 0) AS new7 FROM installs")
       .bind(now - 86400, now - 7 * 86400, now - 7 * 86400),
@@ -199,6 +226,7 @@ async function summary(env, who) {
       "FROM error_reports r ORDER BY last_seen DESC LIMIT 30"),
     env.DB.prepare("SELECT COUNT(DISTINCT fingerprint) AS errors, COUNT(DISTINCT reporter) AS players " +
       "FROM error_reporters WHERE last_seen > ?").bind(now - 86400),
+    pendingNames(env),
   ]);
   const live = {
     now, who, ...installs.results[0],
@@ -207,6 +235,7 @@ async function summary(env, who) {
     regions: regions.results,
     errors: errors.results,
     errors24: errors24.results[0],
+    names: names.results,
     houses: houses.results,
     realms: realms.results,
     statsStored: stats.results[0] ? stats.results[0].updated_at : null,

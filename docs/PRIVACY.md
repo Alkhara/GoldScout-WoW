@@ -1,6 +1,6 @@
 # GoldScout Privacy Policy
 
-*Last updated: November 11, 2026*
+*Last updated: November 13, 2026*
 
 This policy covers the GoldScout addon and the drop data players share with it.
 GoldScout is maintained by GitHub user Alkhara ("we" below).
@@ -98,6 +98,26 @@ Accepted uploads are added to the public repository like form submissions, in
 `data/submissions/` under a file named after the install ID. Uploads from the
 companion aren't linked to any GitHub account.
 
+## The contributor leaderboard
+
+Every install whose data is in the community data is ranked by its kills that
+count there (each mob's kills capped at 1,000, as in the data itself). The
+service keeps each install's kill and mob count for this, worked out every hour
+from the accepted submissions. The public leaderboard on wowgoldscout.com shows
+the top 100: rank, kills, mobs and a name. Install IDs are never shown, and
+everyone is "Anonymous contributor" unless they choose otherwise.
+
+**Showing a name (off unless you turn it on).** In the companion, **Leaderboard...**
+lets you appear by name. The service then keeps a name it makes up for you
+(like "Patient Boar") and, if you enter one, a name of your own, which is shown
+only after we approve it; until then, and if we don't, your made-up name shows.
+A name you choose is public, so don't use your character or account name if you
+want to stay anonymous. Only your copy of the companion can change your entry:
+it proves which install it speaks for with the install's upload token. Turning
+**Show me on the public leaderboard** off deletes both names right away. The
+companion keeps your latest rank in its settings file and, if auction prices
+are on, in the GoldScout_Prices addon, so GoldScout can show it.
+
 ## Sharing drop data
 
 Nothing leaves your computer unless you choose to share it. `/gscout export`
@@ -138,8 +158,8 @@ its own privacy statement.
 ## Removal
 
 To have your submission file removed from the repository, your submission
-issue deleted, or your uploads deleted from the upload service (tell us your
-install ID, shown in your exports), email admin@wowgoldscout.com. You can also open an
+issue deleted, or your uploads and leaderboard entry deleted from the upload
+service (tell us your install ID, shown in your exports), email admin@wowgoldscout.com. You can also open an
 issue, but issues are public; email keeps the request private. Pausing
 automatic sharing in the companion stops new uploads. Data already combined into a release
 can't be separated from other players' data.

@@ -254,6 +254,7 @@ ns.AddLocale("koKR", {
   ["Click: what to farm"] = "클릭: 파밍할 것",
   ["Right-click: what to craft"] = "오른쪽 클릭: 제작할 것",
   ["Drag: move this button"] = "드래그: 버튼 이동",
+  ["Contributor rank: #%d of %d, %d kills shared"] = "기여자 순위: %d위 / %d명, 공유한 처치 %d회",
   ["Drop"] = "획득",
   ["Pickpocket"] = "소매치기",
   ["Learned"] = "학습",

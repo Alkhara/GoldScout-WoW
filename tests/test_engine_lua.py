@@ -460,5 +460,35 @@ class UnitTooltipTests(unittest.TestCase):
         self.assertEqual(self.lines(3002), ["You've looted 5 of these."])
 
 
+
+@unittest.skipIf(lua51 is None, "lupa is not installed")
+class ContributorRankTests(unittest.TestCase):
+    """The minimap tooltip's leaderboard line, from what GoldScout Companion wrote into GoldScout_Prices."""
+    setUp = FarmRulesTests.setUp
+    run_lua, run_file = FarmRulesTests.run_lua, FarmRulesTests.run_file
+
+    def rank(self):
+        entry = self.ns.ContributorRank()
+        return None if entry is None else (entry.rank, entry.of, entry.kills)
+
+    def test_this_accounts_rank_only(self):
+        self.ns.db.installID = "abcdefghijkl"
+        self.lua.execute('''GoldScoutPricesData = { markets = {}, contributors = {
+          ["abcdefghijkl"] = { rank = 3, of = 40, kills = 1200 },
+          ["otheraccount"] = { rank = 1, of = 40, kills = 9000 } } }''')
+        self.assertEqual(self.rank(), (3, 40, 1200))
+        self.ns.db.installID = "notrankedyet"
+        self.assertIsNone(self.rank())
+
+    def test_nothing_without_a_companion_or_ranks(self):
+        self.ns.db.installID = "abcdefghijkl"
+        self.lua.execute("GoldScoutPricesData = nil")
+        self.assertIsNone(self.rank())
+        self.lua.execute("GoldScoutPricesData = { markets = {} }")
+        self.assertIsNone(self.rank())
+        self.lua.execute('GoldScoutPricesData = { contributors = { ["abcdefghijkl"] = "junk" } }')
+        self.assertIsNone(self.rank())
+
+
 if __name__ == "__main__":
     unittest.main()

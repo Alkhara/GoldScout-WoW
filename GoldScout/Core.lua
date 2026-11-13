@@ -296,6 +296,18 @@ function ns.IsPoorQuality(itemID)
   return ns.ItemQuality(itemID) == ns.QUALITY_POOR
 end
 
+-- This WoW account's place on the contributor leaderboard, which GoldScout
+-- Companion writes into GoldScout_Prices: { rank, of, kills }, or nil.
+function ns.ContributorRank()
+  local data = GoldScoutPricesData
+  local id = ns.db and ns.db.installID
+  local ranks = type(data) == "table" and type(data.contributors) == "table" and data.contributors
+  local entry = ranks and id and ranks[id]
+  if type(entry) == "table" and tonumber(entry.rank) then
+    return entry
+  end
+end
+
 function ns.ItemSellPrice(itemID)
   local sellPrice = select(11, ns.GetItemInfo(itemID))
   return sellPrice

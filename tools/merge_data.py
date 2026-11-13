@@ -30,6 +30,7 @@ import submission  # noqa: E402
 ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_INPUT = ROOT / "data" / "submissions"
 TARGET = ROOT / "GoldScout" / "Data_Community.lua"
+MAX_PER_PLAYER = 1000   # most kills (and picks, and catches at a spot) of one mob counted from one player
 
 
 def load(folder):
@@ -231,7 +232,7 @@ def main():
     parser = argparse.ArgumentParser(description="Merge GoldScout exports into Data_Community.lua.")
     parser.add_argument("--input", default=str(DEFAULT_INPUT), help="folder of export .txt files")
     parser.add_argument("--min-attempts", type=int, default=5, help="minimum kills plus picks per mob")
-    parser.add_argument("--max-per-player", type=int, default=1000,
+    parser.add_argument("--max-per-player", type=int, default=MAX_PER_PLAYER,
                         help="most kills (and picks) of one mob counted from any one player")
     args = parser.parse_args()
 

@@ -24,6 +24,8 @@
 //                      sends each new snapshot (metadata in X- headers).
 //   PUT  /v1/admin/realms/<region>   admin only; {"realm": ruleset id}, the
 //                      whole map for that region (listed by GET /v1/prices).
+//   GET  /v1/leaderboard, GET and PUT /v1/leaderboard/me, PUT /v1/admin/leaderboard
+//                      the contributor leaderboard (src/leaderboard.js).
 //   GET  /health
 //
 // Alerts (alerts.js): the hourly cron posts problems to a Discord webhook
@@ -75,6 +77,7 @@ const ALERT_CRON = "17 * * * *";
 import { handleAdmin, storeStats } from "./admin.js";
 import { receiveErrors } from "./errors.js";
 import { checkAlerts } from "./alerts.js";
+import { handleLeaderboard } from "./leaderboard.js";
 
 export default {
   async fetch(request, env) {
@@ -87,6 +90,13 @@ export default {
       const admin = await handleAdmin(request, env, url, adminToken);
       if (admin) {
         return admin;
+      }
+      if (url.pathname.startsWith("/v1/leaderboard") || url.pathname === "/v1/admin/leaderboard") {
+        const answer = await handleLeaderboard(request, env, url,
+          { json, publicJson, sha256, sameText, bearer, isAdminToken: adminToken });
+        if (answer) {
+          return answer;
+        }
       }
       if (url.pathname === "/v1/admin/stats" && request.method === "PUT") {
         return await storeStats(request, env, adminToken);

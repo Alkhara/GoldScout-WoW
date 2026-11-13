@@ -178,7 +178,10 @@ paste it into the **Share drop data** form on GitHub:
 https://github.com/Alkhara/GoldScout-WoW/issues/new?template=data-submission.yml
 
 Your own client knows which of your exports the community data includes, so
-your loot is never counted twice. By sharing it you agree to the [Contributor Terms](https://github.com/Alkhara/GoldScout-WoW/blob/main/docs/CONTRIBUTOR_TERMS.md).
+your loot is never counted twice. Everyone who shares is ranked on the
+[contributor leaderboard](https://wowgoldscout.com/leaderboard), anonymously
+unless you choose a name in GoldScout Companion (**Leaderboard...**); with the
+companion, your rank also shows on the minimap button's tooltip. By sharing it you agree to the [Contributor Terms](https://github.com/Alkhara/GoldScout-WoW/blob/main/docs/CONTRIBUTOR_TERMS.md).
 Every shared export makes the rankings better for everyone.
 - **Gathering zones** are the classic spawn zones. Forever expanded several
   zones, so treat them as a starting point.

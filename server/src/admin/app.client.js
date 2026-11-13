@@ -526,6 +526,46 @@
     ])])]);
   }
 
+  function reviewButton(n, approve) {
+    var button = el("button", { type: "button", text: approve ? "Approve" : "Reject",
+      title: approve ? "Show this name on the public leaderboard" : "Clear it; the player shows under their alias" });
+    button.addEventListener("click", function () {
+      button.disabled = true;
+      fetch("/admin/api/names/review", {
+        method: "POST", credentials: "same-origin", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id: n.id, name: n.name, approve: approve }),
+      }).then(function (response) {
+        if (!response.ok) { throw new Error("HTTP " + response.status); }
+        load();
+      }).catch(function (error) {
+        button.disabled = false;
+        window.alert("Couldn't review it: " + error.message);
+      });
+    });
+    return button;
+  }
+
+  function namesSection(live) {
+    var list = live.names || [];
+    var rows = list.map(function (n) {
+      return el("tr", {}, [
+        el("td", { cls: "wrap", text: n.name }),
+        el("td", { text: n.alias }),
+        el("td", { cls: "num", text: num(n.kills) }),
+        el("td", { text: ago(live.now - n.updated_at) }),
+        el("td", {}, [reviewButton(n, true), document.createTextNode(" "), reviewButton(n, false)]),
+      ]);
+    });
+    var head = el("tr", {}, ["Name", "Alias until approved", "Kills", "Asked", ""].map(function (h, i) {
+      return el("th", { cls: i === 2 ? "num" : "", text: h });
+    }));
+    return section("names", "Leaderboard names", "Names players chose in GoldScout Companion, waiting for review", [
+      card(null, "A name shows on the public leaderboard only once approved; until then the player shows under " +
+        "their alias. Reject anything offensive, impersonating someone, or advertising. Rejecting clears the name.",
+        [list.length ? el("div", { cls: "table-wrap" }, [el("table", {}, [el("thead", {}, [head]),
+          el("tbody", {}, rows)])]) : el("p", { cls: "muted", text: "No names waiting." })])]);
+  }
+
   function render(data) {
     var live = data.live, snap = data.snapshot;
     document.getElementById("who").textContent = "Signed in as " + live.who;
@@ -546,7 +586,8 @@
     }
     [healthSection(live, snap), growthSection(live, snap), versionsSection(live, snap), reachSection(live, snap),
       playersSection(snap),
-      coverageSection(snap), pricesSection(live), usageSection(snap), errorsSection(live), automationSection(snap),
+      coverageSection(snap), pricesSection(live), usageSection(snap), errorsSection(live), namesSection(live),
+      automationSection(snap),
       gapsSection()]
       .forEach(function (s) { app.appendChild(s); });
   }

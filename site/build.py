@@ -268,6 +268,7 @@ ul.related { columns: 2; padding-left: 20px; margin: 0; } ul.related li { margin
 main.page .small a { color: var(--muted); }
 .cta { margin-top: 34px; padding: 16px 18px; border: 1px solid var(--gold2); border-radius: 12px; background: rgba(242,194,85,.08); }
 .table-wrap { overflow-x: auto; }
+td.anon { color: var(--muted); font-style: italic; }
 .pricebar { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; margin: 18px 0 8px; padding: 10px 14px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; font-size: 15px; }
 .pricebar label { font-weight: 600; }
 .pricebar select { margin-left: 6px; font: inherit; color: var(--text); background: var(--bg2); border: 1px solid var(--line); border-radius: 8px; padding: 4px 8px; }
@@ -430,18 +431,53 @@ def layout(title, description, path, body):
 <div class="wrap">
 <header class="top">
   <a class="brand" href="/"><img src="/logo-400.png" alt="">GoldScout</a>
-  <nav><a href="/farms">Farms by level</a><a href="/drop-rates">Drop rates</a><a href="/companion">Companion</a><a href="/faq">FAQ</a><a href="%(curseforge)s">Get GoldScout</a></nav>
+  <nav><a href="/farms">Farms by level</a><a href="/drop-rates">Drop rates</a><a href="/companion">Companion</a><a href="/leaderboard">Leaderboard</a><a href="/faq">FAQ</a><a href="%(curseforge)s">Get GoldScout</a></nav>
 </header>
 <main class="page"><div class="table-wrap">%(body)s</div></main>
 </div>
 <footer><div class="wrap">
-  <p><a href="/">Home</a><a href="/farms">Farms by level</a><a href="/drop-rates">How drop rates work</a><a href="/faq">FAQ</a><a href="%(discord)s">Discord</a><a href="%(source)s">GitHub</a><a href="%(privacy)s">Privacy</a><a href="%(data_license)s">Data license</a></p>
+  <p><a href="/">Home</a><a href="/farms">Farms by level</a><a href="/drop-rates">How drop rates work</a><a href="/leaderboard">Leaderboard</a><a href="/faq">FAQ</a><a href="%(discord)s">Discord</a><a href="%(source)s">GitHub</a><a href="%(privacy)s">Privacy</a><a href="%(data_license)s">Data license</a></p>
   <p>Drop rates come from GoldScout players and are covered by the GoldScout Data License. GoldScout is a fan project, not affiliated with or endorsed by Blizzard Entertainment. World of Warcraft is a trademark of Blizzard Entertainment, Inc.</p>
 </div></footer>
 </body>
 </html>
 """ % dict(LINKS, site=SITE_URL, css=CSS, path=path, body=body,
            title=html.escape(title), description=html.escape(description))
+
+
+def leaderboard_page():
+    """(title, description, body) for /leaderboard; site/leaderboard.js fills the table in."""
+    body = """<h1>Contributor leaderboard</h1>
+<p class="summary">Every drop rate in GoldScout comes from players who share their loot. These are the players who've
+shared the most, ranked by their kills that count in the community data.</p>
+<p class="small" id="leaderboard-status">Loading the leaderboard...</p>
+<table id="leaderboard" hidden>
+<thead><tr><th class="num">Rank</th><th>Contributor</th><th class="num">Kills</th><th class="num">Mobs</th></tr></thead>
+<tbody></tbody>
+</table>
+<noscript><p class="small">The leaderboard needs JavaScript.</p></noscript>
+
+<div class="faq">
+<h2>How it works</h2>
+<h3>Who's on it?</h3>
+<p>Everyone who shares drop data with <a href="/companion">GoldScout Companion</a> or the share form is ranked, and
+everyone is anonymous unless they choose otherwise.</p>
+<h3>How do I put my name on it?</h3>
+<p>In GoldScout Companion, press <b>Leaderboard...</b> under Your data and tick <b>Show me on the public
+leaderboard</b>. You're shown under a name GoldScout makes up, or under a name of your own once it's approved.
+Only your copy of the companion can change your entry. Your rank also shows on GoldScout's minimap button.</p>
+<h3>What counts?</h3>
+<p>Kills that are in the community data: your export has to pass the data checks, and as in the data itself, at most
+1,000 kills of any one mob count from one player. Scores update every hour.</p>
+<h3>Can I leave?</h3>
+<p>Untick <b>Show me on the public leaderboard</b> any time and you're anonymous again. To remove your data
+altogether, see the <a href="%(privacy)s">privacy policy</a>.</p>
+</div>
+<script src="/leaderboard.js" defer></script>
+""" % LINKS
+    return ("Contributor leaderboard",
+            "The GoldScout players who've shared the most loot data, ranked by their kills in the community data.",
+            body)
 
 
 def companion_page(s):
@@ -470,7 +506,8 @@ shares your drop data so GoldScout's Farm tab keeps getting better for everyone.
 <h2>Why it matters</h2>
 <p class="summary">GoldScout uses no data from Wowhead or any other site: every drop rate comes from players looting
 in game. %(players)s have shared so far. Each new player fills in mobs and zones nobody has recorded yet, and
-<a href="/farms">the farms</a> get more accurate with every kill.</p>
+<a href="/farms">the farms</a> get more accurate with every kill. The <a href="/leaderboard">contributor
+leaderboard</a> ranks who's shared the most; you're anonymous on it unless you choose a name.</p>
 
 <h2>Set it up in a minute</h2>
 <ol class="steps">
@@ -522,6 +559,7 @@ def main():
     shutil.copy2(ROOT / "docs" / "logo" / "goldscout-logo-400.png", DIST / "logo-400.png")
     shutil.copy2(ROOT / "companion" / "icon.png", DIST / "favicon.png")
     shutil.copy2(HERE / "prices.js", DIST / "prices.js")
+    shutil.copy2(HERE / "leaderboard.js", DIST / "leaderboard.js")
     results = merge_data.load(ROOT / "data" / "submissions")
     merged = merge_data.merge([r.mobs for r in results], 1000)
     s = stats(results, merged)
@@ -535,8 +573,9 @@ def main():
 
     write("companion.html", *companion_page(s))
     write("faq.html", *faq_page())
+    write("leaderboard.html", *leaderboard_page())
     data = data_pages.Dataset(results, merged)
-    paths = ["/", "/companion", "/faq"] + data_pages.build(data, LINKS, write)
+    paths = ["/", "/companion", "/leaderboard", "/faq"] + data_pages.build(data, LINKS, write)
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>',
                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     lastmod = "<lastmod>%s</lastmod>" % s["updated_iso"] if s["updated_iso"] else ""

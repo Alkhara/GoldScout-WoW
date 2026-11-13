@@ -7,6 +7,12 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- **Contributor leaderboard:** everyone who shares drop data is ranked by their kills in the community data, on
+  [wowgoldscout.com/leaderboard](https://wowgoldscout.com/leaderboard). You're anonymous unless you choose
+  otherwise: GoldScout Companion's new **Leaderboard...** button shows your rank and lets you appear under a
+  made-up name, or a name of your own once it's approved. With the companion, your rank also shows on
+  GoldScout's minimap button.
+
 ## v0.12.4
 
 - **Count all loot in gold per hour:** a new setting (Settings › Farm list, or `/gscout set allloot on`) that adds everything else a mob drops, vendor trash too, to its Farm rows' gold per hour, from your loot and other players'. The row's tooltip shows the extra per kill. Coin isn't recorded, so it isn't counted.

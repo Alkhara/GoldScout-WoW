@@ -253,6 +253,7 @@ ns.AddLocale("deDE", {
   ["Click: what to farm"] = "Klick: was farmen",
   ["Right-click: what to craft"] = "Rechtsklick: was herstellen",
   ["Drag: move this button"] = "Ziehen: Knopf verschieben",
+  ["Contributor rank: #%d of %d, %d kills shared"] = "Beitragsrang: #%d von %d, %d geteilte Kills",
   ["Drop"] = "Drop",
   ["Pickpocket"] = "Taschendieb",
   ["Learned"] = "Gelernt",

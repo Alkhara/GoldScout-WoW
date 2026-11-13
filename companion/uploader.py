@@ -77,6 +77,30 @@ def upload(export, token=None, version="dev", timeout=20, region=None):
         headers["X-GoldScout-Region"] = region
     request = urllib.request.Request(base + "/v1/uploads", data=export.encode("utf-8"),
                                      headers=headers, method="POST")
+    return _send(request, timeout)
+
+
+def leaderboard(install_id, token, version="dev", settings=None, timeout=20):
+    """The install's place on the contributor leaderboard and how it's shown:
+    {"rank" (None until its kills are in the community data), "contributors",
+    "kills", "mobs", "public", "alias", "name", "approved"}. With settings
+    ({"public": bool, "name": str or None}) it changes them first. The upload
+    token proves which install this is."""
+    base = upload_url()
+    if not base or not token:
+        raise UploadError("Share your GoldScout data first.")
+    headers = {"User-Agent": user_agent(version), "Authorization": "Bearer " + token,
+               "X-GoldScout-Install": install_id}
+    data = None
+    if settings is not None:
+        data = json.dumps(settings).encode("utf-8")
+        headers["Content-Type"] = "application/json"
+    request = urllib.request.Request(base + "/v1/leaderboard/me", data=data, headers=headers,
+                                     method="PUT" if settings is not None else "GET")
+    return _send(request, timeout)
+
+
+def _send(request, timeout):
     try:
         with open_url(request, timeout) as response:
             return json.loads(response.read().decode("utf-8") or "{}")
