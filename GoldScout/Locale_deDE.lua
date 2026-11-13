@@ -109,6 +109,8 @@ ns.AddLocale("deDE", {
   ["Pickpocket: junkbox on %s of picks"] = "Taschendiebstahl: Kassette bei %s der Versuche",
   ["You've looted %d of these"] = "Du hast %d davon geplündert",
   ["; best drop %s at %s"] = "; beste Beute %s mit %s",
+  ["Other players have looted %d of these"] = "Andere Spieler haben %d davon geplündert",
+  ["; loot averages %s per kill"] = "; Beute im Schnitt %s pro Kill",
   ["Profession"] = "Beruf",
   ["Open the auction house to scan prices."] = "Öffne das Auktionshaus, um Preise zu scannen.",
   ["A scan is already running."] = "Ein Scan läuft bereits.",

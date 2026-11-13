@@ -7,6 +7,8 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- **Mob tooltips show the community's loot:** how many times other players have looted that mob, and what its loot is worth per kill on average at your auction house's prices.
+
 ## v0.12.2
 
 - Fixed a Lua error the Farm tab could hit while sorting what's caught at a fishing spot.

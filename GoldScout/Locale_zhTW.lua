@@ -110,6 +110,8 @@ ns.AddLocale("zhTW", {
   ["Pickpocket: junkbox on %s of picks"] = "偷竊：%s 的機率得到垃圾箱",
   ["You've looted %d of these"] = "你已拾取過 %d 隻",
   ["; best drop %s at %s"] = "；最佳掉落 %s（%s）",
+  ["Other players have looted %d of these"] = "其他玩家已拾取過 %d 隻",
+  ["; loot averages %s per kill"] = "；每次擊殺平均掉落價值 %s",
   ["Profession"] = "專業技能",
   ["Open the auction house to scan prices."] = "請開啟拍賣場以掃描價格。",
   ["A scan is already running."] = "掃描已在進行中。",

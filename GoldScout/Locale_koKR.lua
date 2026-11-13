@@ -110,6 +110,8 @@ ns.AddLocale("koKR", {
   ["Pickpocket: junkbox on %s of picks"] = "소매치기: %s 확률로 잡동사니 상자",
   ["You've looted %d of these"] = "이 몹을 %d번 획득했습니다",
   ["; best drop %s at %s"] = "; 최고 획득품 %s (%s)",
+  ["Other players have looted %d of these"] = "다른 플레이어가 이 몹을 %d번 획득했습니다",
+  ["; loot averages %s per kill"] = "; 처치당 평균 획득품 가치 %s",
   ["Profession"] = "전문 기술",
   ["Open the auction house to scan prices."] = "가격을 검색하려면 경매장을 여세요.",
   ["A scan is already running."] = "이미 검색 중입니다.",

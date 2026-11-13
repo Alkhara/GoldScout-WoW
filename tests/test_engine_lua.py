@@ -378,5 +378,42 @@ class ErrorLogTests(FarmRulesTests.__bases__[0]):
         self.assertEqual(messages, ["Blocked action: HideUIPanel()"])
 
 
+@unittest.skipIf(lua51 is None, "lupa is not installed")
+class UnitTooltipTests(unittest.TestCase):
+    """The lines GoldScout adds to a mob's tooltip (Hunt.lua)."""
+    setUp_farm = FarmRulesTests.setUp
+    run_lua, run_file, item, drops = (FarmRulesTests.run_lua, FarmRulesTests.run_file,
+                                      FarmRulesTests.item, FarmRulesTests.drops)
+
+    def setUp(self):
+        self.setUp_farm()
+        self.run_file("Hunt.lua")
+
+    def shared(self, npc, kills, items):
+        entry = self.lua.eval("{ k = %d, i = {} }" % kills)
+        for item_id, (times, quantity) in items.items():
+            entry.i[item_id] = self.lua.table_from({"d": times, "q": quantity})
+        self.ns.COMMUNITY[npc] = entry
+
+    def lines(self, npc):
+        return list(self.ns.Hunt.UnitLines(self.ns.Hunt, npc).values())
+
+    def test_community_loots_and_average_kill_value(self):
+        self.item(5001, price=1000)                          # 950 after the AH cut
+        self.item(5002, price=900, sell=7, quality=0)        # gray: its vendor price, whatever it lists for
+        self.shared(3000, 10, {5001: (3, 6), 5002: (10, 10)})
+        line = self.lines(3000)[-1]
+        self.assertIn("Other players have looted 10 of these", line)
+        self.assertIn("5|cffc7c7cfs|r 77", line)             # (950 * 6 + 7 * 10) / 10 = 577 copper
+
+    def test_no_value_known_shows_only_the_count(self):
+        self.shared(3001, 4, {5999: (1, 1)})                 # an item the game hasn't loaded
+        self.assertEqual(self.lines(3001), ["Other players have looted 4 of these."])
+
+    def test_no_community_data_no_line(self):
+        self.drops(3002, 5, {})
+        self.assertEqual(self.lines(3002), ["You've looted 5 of these."])
+
+
 if __name__ == "__main__":
     unittest.main()

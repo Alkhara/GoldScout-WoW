@@ -109,6 +109,8 @@ ns.AddLocale("frFR", {
   ["Pickpocket: junkbox on %s of picks"] = "Vol à la tire : coffret dans %s des vols",
   ["You've looted %d of these"] = "Vous en avez fouillé %d",
   ["; best drop %s at %s"] = " ; meilleur butin %s à %s",
+  ["Other players have looted %d of these"] = "D'autres joueurs en ont fouillé %d",
+  ["; loot averages %s per kill"] = " ; butin moyen de %s par victime",
   ["Profession"] = "Métier",
   ["Open the auction house to scan prices."] = "Ouvrez l'hôtel des ventes pour analyser les prix.",
   ["A scan is already running."] = "Une analyse est déjà en cours.",

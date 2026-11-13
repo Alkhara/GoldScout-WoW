@@ -66,7 +66,9 @@ Select a farm on the Farm tab and press **Hunt**:
 2. **Mob icons.** Mobs you're hunting get a small icon above their nameplate.
    Turn on enemy nameplates (default key V) to see them.
 3. **Mob tooltips.** Mousing over a listed mob shows its valuable drop and
-   chance, plus what you've looted from it yourself.
+   chance, plus what you've looted from it yourself, how many other players
+   have looted, and what its loot is worth per kill on average at your prices
+   (coin isn't counted).
 4. **Hunt panel.** A small movable panel shows time, kills or pickpockets, how
    many of the item you've gained, your drop rate against the expected rate,
    loot value, coin, and gold per hour. **Stop** ends the hunt and prints a

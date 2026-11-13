@@ -580,7 +580,29 @@ function Hunt:UnitLines(npcID)
     end
     lines[#lines + 1] = text .. "."
   end
+  -- Shared data from other players (your own is already taken out of it),
+  -- with what an average kill's loot is worth at your prices.
+  local shared = ns.COMMUNITY[npcID]
+  if shared and (shared.k or 0) > 0 then
+    local text = (L["Other players have looted %d of these"]):format(shared.k)
+    local value = Hunt.KillValue(shared)
+    if value > 0 then
+      text = text .. (L["; loot averages %s per kill"]):format(ns.Money(value))
+    end
+    lines[#lines + 1] = text .. "."
+  end
   return lines
+end
+
+-- What a kill's loot is worth on average, valued like the Hunt panel values
+-- your loot: auction price after the cut (vendor price for gray items).
+-- Coin isn't recorded, so it isn't included.
+function Hunt.KillValue(entry)
+  local total = 0
+  for itemID, stat in pairs(entry.i or {}) do
+    total = total + ItemValue(itemID) * (stat.q or 0)
+  end
+  return total / entry.k
 end
 
 if TooltipDataProcessor and TooltipDataProcessor.AddTooltipPostCall and Enum.TooltipDataType and Enum.TooltipDataType.Unit then
