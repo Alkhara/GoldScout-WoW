@@ -1,5 +1,5 @@
 # zizmor (workflow security lint, run by tools/check.py). The data merge and
-# the weekly data release push a branch and a tag with git, so their checkout
+# the daily data release push a branch and a tag with git, so their checkout
 # keeps the workflow token in .git/config; neither uploads artifacts.
 rules:
   artipacked:

@@ -1,4 +1,4 @@
-# Ships new community drop data to players once a week. If
+# Ships new community drop data to players once a day. If
 # GoldScout/Data_Community.lua or the companion's pinned dependencies
 # (companion/requirements*.txt, kept current by Dependabot) changed since the
 # latest version tag, or that tag is three weeks old, and the Tests workflow
@@ -15,10 +15,11 @@ name: Data release
 
 on:
   schedule:
-    # The server's cron starts this on Tuesdays at 15:00 UTC (GitHub skips
+    # The server's cron starts this every day at 15:00 UTC (GitHub skips
     # scheduled runs on the hour). This later one is a backup; a second run
-    # finds the data already tagged and does nothing.
-    - cron: "41 15 * * 2"
+    # finds the data already tagged and does nothing. It also catches a day
+    # when Tests were still running on the latest data merge at 15:00.
+    - cron: "41 15 * * *"
   workflow_dispatch:
 
 permissions:

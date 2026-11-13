@@ -2,10 +2,13 @@
 
 Each release's section here becomes its release notes on GitHub, CurseForge
 and Wago. Add to **Unreleased** as changes land, written for players; when
-releasing, rename it to the version (`## v1.2.3`). Weekly community data
+releasing, rename it to the version (`## v1.2.3`). Daily community data
 releases add their own line automatically.
 
 ## Unreleased
+
+- **Community drop data now ships every day,** instead of once a week.
+- GoldScout Companion's desktop notice about a new version now comes at most once a week; its window shows **Update** whenever one is out.
 
 ## v0.12.1
 

@@ -13,7 +13,7 @@ while the player has no prices of their own (GoldScout/Prices.lua).
 
 Blizzard's API terms allow keeping their data for at most 30 days, so each
 region carries its snapshot time and the addon stops using it 30 days later.
-The weekly data release ships at least every three weeks to keep it fresh.
+The daily data release ships at least every three weeks to keep it fresh.
 
 The file in git is an empty stub; the release workflow writes the real one
 just before packaging, so price data never lands in the repository.

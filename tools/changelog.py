@@ -5,7 +5,7 @@
   python tools/changelog.py check v1.2.3     fail unless CHANGELOG.md has them
 
 A hand-made release needs its own "## v1.2.3" section (rename "Unreleased"
-before releasing; tools/release.py checks). A weekly data release (tagged by
+before releasing; tools/release.py checks). A daily data release (tagged by
 the Data release workflow without editing any file) has no section of its own:
 its notes say it ships fresh price estimates and how much community data it
 has, plus anything still under "Unreleased", since it ships main as it is.

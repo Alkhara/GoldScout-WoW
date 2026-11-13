@@ -5,7 +5,7 @@
 # (GitHub gives Dependabot's pull requests the permissions declared below and
 # no secrets; none are needed), waits for that commit's Tests run, merges
 # exactly that commit, then starts Tests on main (a merge by this workflow's
-# token doesn't start other workflows). The weekly data release ships merged
+# token doesn't start other workflows). The daily data release ships merged
 # companion updates to players (data-release.yml).
 name: Merge Dependabot updates
 

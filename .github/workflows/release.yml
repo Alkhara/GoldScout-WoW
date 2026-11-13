@@ -44,7 +44,7 @@ jobs:
         run: python3 tools/verify_release.py server
 
       # Players' release notes: this version's section of CHANGELOG.md, or for a
-      # weekly data release a generated note. The packager publishes the file on
+      # daily data release a generated note. The packager publishes the file on
       # GitHub, CurseForge and Wago (.pkgmeta manual-changelog).
       - name: Write the release notes
         run: python3 tools/changelog.py notes "$GITHUB_REF_NAME" > RELEASE_NOTES.md
@@ -91,7 +91,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      # The companion reports the tag's version, even on a weekly data release
+      # The companion reports the tag's version, even on a daily data release
       # that changed no code (otherwise it would keep offering the same update).
       - name: Build the companion
         shell: bash

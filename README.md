@@ -117,7 +117,7 @@ gets for everyone.
   form.
 
 Exports contain no character or account names. Accepted data ships in the next
-weekly release. See the [Contributor Terms](docs/CONTRIBUTOR_TERMS.md) and
+daily release. See the [Contributor Terms](docs/CONTRIBUTOR_TERMS.md) and
 [Privacy Policy](docs/PRIVACY.md).
 
 ## Plays by the rules

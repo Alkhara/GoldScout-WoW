@@ -4,7 +4,7 @@
   python tools/stamp_companion.py v0.8.1
 
 The release workflow runs this, so the built companion always reports the
-version of the release it's attached to. Without it, a weekly data release
+version of the release it's attached to. Without it, a daily data release
 (which tags the next patch version without changing any code) would ship a
 companion that still reports the previous version, and every copy would keep
 offering the same update.

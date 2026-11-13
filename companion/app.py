@@ -49,6 +49,7 @@ PRICE_MINUTE = 25        # check for new prices at :25 UTC (Blizzard's snapshot 
 PRICE_RETRY_SECONDS = 600
 FIRST_PRICE_MS = 8000
 GAME_CHECK_MS = 60000    # while WoW is open, look again this often before telling about an update
+NOTIFY_EVERY_SECONDS = 7 * 86400   # data releases come daily; a desktop notice about them at most weekly
 CONFIG_DIR = system.config_dir()
 CONFIG_FILE = CONFIG_DIR / "config.json"
 SHOW_REQUEST = CONFIG_DIR / "show.request"
@@ -66,6 +67,15 @@ def load_config():
 def save_config(config):
     CONFIG_DIR.mkdir(parents=True, exist_ok=True)
     CONFIG_FILE.write_text(json.dumps(config, indent=2), encoding="utf-8")
+
+
+def should_notify(config, version, now):
+    """Whether a desktop notice about this version is due: not one we already
+    told about, and no notice in the last week (the window's Update shows it)."""
+    if config.get("update_notified") == version:
+        return False
+    told = config.get("update_notified_at")
+    return not isinstance(told, (int, float)) or now - told >= NOTIFY_EVERY_SECONDS
 
 
 def share_url(export):
@@ -470,16 +480,15 @@ class App:
         self.notify_update()
 
     def notify_update(self):
-        """One notification per new version, never while WoW is open:
-        it waits until the game is closed. Skipped when the window is open,
-        since it already shows Update."""
+        """At most one notification a week (data releases ship daily), and
+        never while WoW is open: it waits until the game is closed. Skipped
+        when the window is open, since it already shows Update."""
         self.notify_timer = None
         update = self.update
-        if not update or self.updating or self.config.get("update_notified") == update.version:
+        if not update or self.updating or not should_notify(self.config, update.version, time.time()):
             return
         if self.root.state() != "withdrawn":
-            self.config["update_notified"] = update.version
-            save_config(self.config)
+            self.mark_notified(update.version)
             return
         if system.game_running():
             self.notify_timer = self.root.after(GAME_CHECK_MS, self.notify_update)
@@ -494,7 +503,11 @@ class App:
             system.notify("GoldScout Companion update",
                           "Version %s is available. Click GoldScout Companion in the Dock, then Update."
                           % update.version)
-        self.config["update_notified"] = update.version
+        self.mark_notified(update.version)
+
+    def mark_notified(self, version):
+        self.config["update_notified"] = version
+        self.config["update_notified_at"] = int(time.time())
         save_config(self.config)
 
     def start_update(self):

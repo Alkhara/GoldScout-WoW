@@ -205,5 +205,33 @@ class HttpsTests(unittest.TestCase):
                 self.assertNotIn("urlopen(", path.read_text(encoding="utf-8"), path.name)
 
 
+try:
+    import app  # noqa: E402  (needs tkinter)
+except ImportError:
+    app = None
+
+
+@unittest.skipUnless(app, "tkinter isn't available")
+class UpdateNoticeTests(unittest.TestCase):
+    """Data releases ship daily; the desktop notice about a new version comes at most weekly."""
+    DAY = 86400
+
+    def test_the_first_update_is_told(self):
+        self.assertTrue(app.should_notify({}, "0.12.2", 1_800_000_000))
+
+    def test_a_version_is_told_once(self):
+        config = {"update_notified": "0.12.2", "update_notified_at": 0}
+        self.assertFalse(app.should_notify(config, "0.12.2", 1_800_000_000))
+
+    def test_a_newer_version_waits_a_week_after_the_last_notice(self):
+        config = {"update_notified": "0.12.2", "update_notified_at": 1_800_000_000}
+        self.assertFalse(app.should_notify(config, "0.12.3", 1_800_000_000 + self.DAY))
+        self.assertFalse(app.should_notify(config, "0.12.8", 1_800_000_000 + 7 * self.DAY - 1))
+        self.assertTrue(app.should_notify(config, "0.12.8", 1_800_000_000 + 7 * self.DAY))
+
+    def test_a_notice_from_an_older_companion_has_no_time_and_doesnt_block(self):
+        self.assertTrue(app.should_notify({"update_notified": "0.12.1"}, "0.12.2", 1_800_000_000))
+
+
 if __name__ == "__main__":
     unittest.main()

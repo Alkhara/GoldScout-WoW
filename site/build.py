@@ -110,7 +110,7 @@ FAQ = [
     ("Farms and drop rates", [
         ("Where do the drop rates come from?",
          "From players looting in game, never from Wowhead or any other site. GoldScout learns what every mob "
-         "you loot really drops, and the shared data from all players ships in a release every week. "
+         "you loot really drops, and the shared data from all players ships in a release every day. "
          "<a href=\"/drop-rates\">How drop rates work</a>."),
         ("How accurate is gold per hour?",
          "It's an estimate: price after the auction house cut, times the chance per kill, times your pace. Set "
@@ -351,7 +351,7 @@ def page(s):
     <li><b>You play.</b> GoldScout learns what every mob you loot really drops, on all your characters.</li>
     <li><b>You share.</b> <a href="/companion">GoldScout Companion</a> does it automatically, or use <code>/gscout export</code> and the <a href="%(share)s">share form</a>. No character or account names, ever.</li>
     <li><b>It's checked.</b> Every submission is validated, and unusual drop rates are reviewed before they're used.</li>
-    <li><b>Everyone gets it.</b> New community data ships in a release every week. Your own loot is never counted twice.</li>
+    <li><b>Everyone gets it.</b> New community data ships in a release every day. Your own loot is never counted twice.</li>
   </ol>
   <p style="margin-top:22px"><a class="btn" href="/farms">Browse farms by level</a> <a class="btn" href="/drop-rates">How drop rates work</a></p>
 </div></section>

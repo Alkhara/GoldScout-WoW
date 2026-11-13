@@ -67,7 +67,7 @@ const REPOSITORY = "Alkhara/GoldScout-WoW";
 const SCHEDULE = {
   "7,22,37,52 * * * *": ["ah-prices.yml"], // Blizzard's snapshots land around :16
   "17 * * * *": ["data-merge.yml"],
-  "0 15 * * 2": ["data-release.yml"], // Tuesdays; GitHub skipped its own 15:00 run
+  "0 15 * * *": ["data-release.yml"], // daily; GitHub skipped its own 15:00 run
 };
 // Hourly: alerts.js checks what the dashboard marks red and tells Discord.
 const ALERT_CRON = "17 * * * *";
