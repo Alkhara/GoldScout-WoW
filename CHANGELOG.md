@@ -7,8 +7,11 @@ releases add their own line automatically.
 
 ## Unreleased
 
-- GoldScout Companion now reaches the GoldScout server at its own address, api.wowgoldscout.com. Older versions keep working.
+## v0.12.1
+
 - The Farm tab's checkboxes no longer run into the Hunt button; in longer languages their labels are shortened, with the full name in the tooltip.
+- GoldScout Companion now reaches the GoldScout server at its own address, api.wowgoldscout.com. Older versions keep working.
+- Updated drop data from the community.
 
 ## v0.12.0
 
