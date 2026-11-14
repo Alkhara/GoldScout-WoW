@@ -31,6 +31,7 @@ local DEFAULT_SETTINGS = {
   farmView = "item",      -- Farm tab: "item" (one row per item) or "mob" (one row per mob)
   huntWaypoint = true,    -- hunts place Blizzard's map waypoint at the farm
   huntMarkers = true,     -- hunts put an icon over matching mobs' nameplates
+  huntMap = true,         -- hunts shade where players loot them on the world map
   learnDrops = true,      -- learn drop rates from what you loot
   unitTooltips = true,    -- add farm info to mob tooltips
   minimap = true,         -- show the minimap button

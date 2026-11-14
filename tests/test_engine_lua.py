@@ -561,6 +561,70 @@ class UnitTooltipTests(unittest.TestCase):
         self.assertEqual(self.lines(3002), ["You've looted 5 of these."])
 
 
+@unittest.skipIf(lua51 is None, "lupa is not installed")
+class HuntAreaTests(unittest.TestCase):
+    """The hunting area a hunt shades on the world map (Engine.HuntArea, Hunt.AreaSquares)."""
+    setUp_farm = FarmRulesTests.setUp
+    run_lua, run_file, item, drops, rows = (FarmRulesTests.run_lua, FarmRulesTests.run_file,
+                                            FarmRulesTests.item, FarmRulesTests.drops, FarmRulesTests.rows)
+
+    def setUp(self):
+        self.setUp_farm()
+        self.run_file("Hunt.lua")
+
+    def area(self, hunt):
+        area = self.ns.Engine.HuntArea(hunt)
+        if area is None:
+            return None
+        return {m: dict(cells.items()) for m, cells in area.items()}
+
+    def shared(self, npc, map_id, cells):
+        self.ns.COMMUNITY[npc] = self.lua.eval("{ k = 10, i = {}, m = %d, a = %s }" % (map_id, cells))
+
+    def test_a_mob_hunt_adds_your_loots_to_other_players(self):
+        self.item(5000)
+        self.drops(3000, 12, {5000: 6})
+        self.ns.db.drops[3000].a = self.lua.eval("{ [206] = 3, [300] = 1 }")
+        self.shared(3000, 1440, "{ [205] = 20, [206] = 7 }")
+        hunt = self.rows()[("Learned", 5000)].hunt
+        # 205: 20, 206: 7 + 3, 300: 1 (under a tenth of the busiest square, so left out)
+        self.assertEqual(self.area(hunt), {1440: {205: 1.0, 206: 0.5}})
+
+    def test_each_map_keeps_its_own_squares(self):
+        self.drops(3000, 5, {})
+        self.ns.db.drops[3000].m = 1441
+        self.ns.db.drops[3000].a = self.lua.eval("{ [10] = 4 }")
+        self.shared(3000, 1440, "{ [205] = 2 }")
+        hunt = self.lua.eval("{ npcs = { [3000] = true } }")
+        self.assertEqual(self.area(hunt), {1440: {205: 1.0}, 1441: {10: 1.0}})
+
+    def test_a_fishing_hunt_uses_its_catches(self):
+        hunt = self.lua.eval("{ npcs = {}, area = { [1440] = { [10] = 4, [11] = 1 } } }")
+        self.assertEqual(self.area(hunt), {1440: {10: 1.0, 11: 0.25}})
+
+    def test_nothing_known_no_area(self):
+        self.assertIsNone(self.area(self.lua.eval("{ npcs = { [3999] = true } }")))
+        self.assertIsNone(self.area(self.lua.eval("{ npcs = {} }")))
+
+    def test_squares_sit_on_the_grid(self):
+        squares = self.ns.Hunt.AreaSquares(self.lua.eval("{ [45] = 1 }"))   # row 2, column 5
+        square = squares[1]
+        self.assertAlmostEqual(square.left, 0.25)
+        self.assertAlmostEqual(square.top, 0.10)
+        self.assertAlmostEqual(square.size, 0.05)
+        self.assertAlmostEqual(square.alpha, 0.55)
+
+    def test_the_outline_runs_around_the_area(self):
+        # 45 and 46 side by side, 0 in the map's corner
+        squares = self.ns.Hunt.AreaSquares(self.lua.eval("{ [45] = 1, [46] = 0.5, [0] = 0.2 }"))
+        edges = {}
+        for square in squares.values():
+            cell = round(square.top * 20) * 20 + round(square.left * 20)
+            edges[cell] = sorted(side for side, on in square.edges.items() if on)
+        self.assertEqual(edges, {45: ["bottom", "left", "top"], 46: ["bottom", "right", "top"],
+                                 0: ["bottom", "left", "right", "top"]})
+
+
 
 @unittest.skipIf(lua51 is None, "lupa is not installed")
 class ContributorRankTests(unittest.TestCase):

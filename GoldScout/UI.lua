@@ -1638,6 +1638,7 @@ local SETTING_ALIASES = {
   window = "openWithAH",
   waypoint = "huntWaypoint",
   markers = "huntMarkers",
+  map = "huntMap",
   learn = "learnDrops",
   mobtips = "unitTooltips",
   raredrops = "showRareDrops",
@@ -1680,7 +1681,7 @@ local function PrintHelp()
   print(L["  /gscout errors - list GoldScout's recent errors; /gscout errors clear"])
   print(L["  /gscout skills - show the skills and recipes GoldScout knows"])
   print(L["  /gscout set kills|nodes|picks|catches <number> - your rates per hour"])
-  print(L["  /gscout set autoscan|tooltip|window|waypoint|markers|learn|mobtips|raredrops|cloth|allloot|minimap on|off"])
+  print(L["  /gscout set autoscan|tooltip|window|waypoint|markers|map|learn|mobtips|raredrops|cloth|allloot|minimap on|off"])
   print(L["  /gscout reset prices | drops - forget saved prices or learned drop rates"])
 end
 
@@ -1745,7 +1746,7 @@ local function SetOption(rest)
   end
   if not setting then
     ns.Print(L["Usage: /gscout set kills|nodes|picks|catches <number>, or "
-      .. "/gscout set autoscan|tooltip|blackwater|window|waypoint|markers|learn|mobtips|raredrops|cloth|allloot|minimap|companionhint on|off"])
+      .. "/gscout set autoscan|tooltip|blackwater|window|waypoint|markers|map|learn|mobtips|raredrops|cloth|allloot|minimap|companionhint on|off"])
     return
   end
   if type(ns.db.settings[setting]) == "boolean" then
@@ -1762,6 +1763,9 @@ local function SetOption(rest)
   ns.Print((L["%s is now %s."]):format(key:lower(), tostring(ns.db.settings[setting])))
   if setting == "minimap" then
     UI:UpdateMinimapButton()
+  end
+  if setting == "huntMap" then
+    ns.Hunt:RefreshArea()
   end
   UI:QueueRefresh()
 end

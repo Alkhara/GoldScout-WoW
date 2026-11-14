@@ -207,6 +207,137 @@ end)
 ns.On("NAME_PLATE_UNIT_REMOVED", Unmark)
 
 ---------------------------------------------------------------------------
+-- The hunting area on the world map (only you see it)
+---------------------------------------------------------------------------
+
+-- While a hunt runs, the squares where its mobs are looted (Engine.HuntArea)
+-- are shaded green on their zone's world map, stronger where players loot
+-- more, with a bright outline around the area so it stands out on any map.
+-- They're plain textures on the map: they take no clicks.
+local AREA_GRID = 20   -- Learn.lua's grid
+local AREA_ALPHA_MIN, AREA_ALPHA_RANGE = 0.25, 0.3
+local AREA_FILL = { 0.2, 1, 0.2 }
+local AREA_EDGE = { 0.4, 1, 0.4, 0.95 }
+local AREA_EDGE_WIDTH = 1 / 350   -- of the map's width; about 2 pixels on a full-size map
+
+local area          -- Engine.HuntArea of the hunt in progress
+local areaFrame     -- on the world map's canvas, made the first time it's needed
+local areaSquares, areaEdges = {}, {}
+
+-- Where each square of an area goes, as fractions of the map, and which of
+-- its sides are on the area's outline (no square of the area beyond them).
+function Hunt.AreaSquares(cells)
+  cells = cells or {}
+  local squares = {}
+  for cell, weight in pairs(cells) do
+    local column, row = cell % AREA_GRID, math.floor(cell / AREA_GRID)
+    squares[#squares + 1] = {
+      left = column / AREA_GRID,
+      top = row / AREA_GRID,
+      size = 1 / AREA_GRID,
+      alpha = AREA_ALPHA_MIN + AREA_ALPHA_RANGE * weight,
+      edges = {
+        top = row == 0 or not cells[cell - AREA_GRID],
+        bottom = row == AREA_GRID - 1 or not cells[cell + AREA_GRID],
+        left = column == 0 or not cells[cell - 1],
+        right = column == AREA_GRID - 1 or not cells[cell + 1],
+      },
+    }
+  end
+  return squares
+end
+
+local function Texture(pool, i, layer, color)
+  local texture = pool[i]
+  if not texture then
+    texture = areaFrame:CreateTexture(nil, layer)
+    texture:SetColorTexture(color[1], color[2], color[3], color[4] or 1)
+    pool[i] = texture
+  end
+  texture:ClearAllPoints()
+  texture:Show()
+  return texture
+end
+
+local function DrawArea()
+  if not areaFrame then
+    return
+  end
+  for _, pool in ipairs({ areaSquares, areaEdges }) do
+    for _, texture in ipairs(pool) do
+      texture:Hide()
+    end
+  end
+  local ok, map = pcall(WorldMapFrame.GetMapID, WorldMapFrame)
+  map = ok and ns.Plain(map) or nil
+  local cells = area and map and ns.db and ns.db.settings.huntMap and area[map]
+  if not cells then
+    areaFrame:Hide()
+    return
+  end
+  local width, height = areaFrame:GetWidth(), areaFrame:GetHeight()
+  local line = math.max(1, width * AREA_EDGE_WIDTH)
+  local edges = 0
+  for i, spot in ipairs(Hunt.AreaSquares(cells)) do
+    local x, y = spot.left * width, -spot.top * height
+    local w, h = spot.size * width, spot.size * height
+    local square = Texture(areaSquares, i, "ARTWORK", AREA_FILL)
+    square:SetPoint("TOPLEFT", areaFrame, "TOPLEFT", x, y)
+    square:SetSize(w, h)
+    square:SetAlpha(spot.alpha)
+    -- side = { x, y, width, height } of its outline piece
+    local sides = {
+      top = { x, y, w, line },
+      bottom = { x, y - h + line, w, line },
+      left = { x, y, line, h },
+      right = { x + w - line, y, line, h },
+    }
+    for side, rect in pairs(sides) do
+      if spot.edges[side] then
+        edges = edges + 1
+        local edge = Texture(areaEdges, edges, "OVERLAY", AREA_EDGE)
+        edge:SetPoint("TOPLEFT", areaFrame, "TOPLEFT", rect[1], rect[2])
+        edge:SetSize(rect[3], rect[4])
+      end
+    end
+  end
+  areaFrame:Show()
+end
+
+local function MakeAreaFrame()
+  local canvas = WorldMapFrame and WorldMapFrame.ScrollContainer and WorldMapFrame.ScrollContainer.Child
+  if areaFrame or not canvas or not WorldMapFrame.GetMapID then
+    return
+  end
+  areaFrame = CreateFrame("Frame", nil, canvas)
+  areaFrame:SetAllPoints(canvas)
+  -- Over the map and its explored areas, under its pins and labels.
+  local level = canvas:GetFrameLevel() + 1
+  local levels = WorldMapFrame.GetPinFrameLevelsManager and WorldMapFrame:GetPinFrameLevelsManager()
+  if levels and levels.GetValidFrameLevel then
+    local found, explored = pcall(levels.GetValidFrameLevel, levels, "PIN_FRAME_LEVEL_MAP_EXPLORATION")
+    if found and type(explored) == "number" then
+      level = math.max(level, explored)
+    end
+  end
+  areaFrame:SetFrameLevel(level)
+  areaFrame:SetScript("OnSizeChanged", DrawArea)
+  if WorldMapFrame.OnMapChanged then
+    hooksecurefunc(WorldMapFrame, "OnMapChanged", DrawArea)
+  end
+  WorldMapFrame:HookScript("OnShow", DrawArea)
+end
+
+-- Works out the area for the hunt in progress (none without one) and redraws it.
+function Hunt:RefreshArea()
+  area = session and ns.Engine.HuntArea(session.target) or nil
+  if area then
+    MakeAreaFrame()
+  end
+  DrawArea()
+end
+
+---------------------------------------------------------------------------
 -- Session tracking
 ---------------------------------------------------------------------------
 
@@ -297,6 +428,7 @@ function Hunt:Start(target)
     Hunt:Tick()
   end)
   RefreshMarkers()
+  self:RefreshArea()
   self:ShowPanel()
 
   local itemName = ns.ItemName(target.item)
@@ -309,6 +441,9 @@ function Hunt:Start(target)
   end
   if next(target.npcs) and ns.db.settings.huntMarkers then
     ns.Print(L["Mobs you're hunting get an icon over their nameplate (turn on enemy nameplates with V)."])
+  end
+  if area and ns.db.settings.huntMap then
+    ns.Print(L["Green squares on the world map show where players find it; the stronger the green, the more often."])
   end
   ns.Fire("HUNT_CHANGED")
 end
@@ -324,6 +459,7 @@ function Hunt:Stop(silent)
   ClearWaypoint()
   session = nil
   RefreshMarkers()
+  self:RefreshArea()
   self:HidePanel()
 
   local summary = Summarize(finished)

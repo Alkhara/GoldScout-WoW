@@ -34,6 +34,7 @@ local RIGHT = {
     { key = "huntWaypoint", label = L["Place a map waypoint at the farm"] },
     { key = "huntMarkers", label = L["Mark the mobs you're hunting on their nameplates"],
       tip = L["Turn on enemy nameplates (V) to see the markers."] },
+    { key = "huntMap", label = L["Shade the hunting area on the world map"] },
     { key = "unitTooltips", label = L["Add farm info to mob tooltips"] },
   } },
   { title = L["Farm list"], note = L["More filters are the checkboxes at the top of the GoldScout window."], items = {
@@ -53,6 +54,9 @@ local RIGHT = {
 local function Apply(key)
   if key == "minimap" and ns.UI.UpdateMinimapButton then
     ns.UI:UpdateMinimapButton()
+  end
+  if key == "huntMap" then
+    ns.Hunt:RefreshArea()
   end
   if ns.UI.QueueRefresh then
     ns.UI:QueueRefresh()

@@ -406,6 +406,58 @@ local function LootHunt(key, per, itemID, label, zone)
   return { key = key, kind = "Loot", per = per, item = itemID, label = label, zone = zone, npcs = {} }
 end
 
+-- A hunt's area for the world map: the squares of Learn.lua's 20x20 grid where
+-- its mobs are looted, by you and other players together, or where its
+-- catches come up (hunt.area). Squares with under AREA_MIN_SHARE of the busiest
+-- square's loots are left out, so a mob pulled far from its spawn doesn't
+-- stretch the area. Returns { [uiMapID] = { [cell] = weight } } with the
+-- busiest square at 1, or nil when nothing is known.
+local AREA_MIN_SHARE = 0.1
+
+function Engine.HuntArea(hunt)
+  if not hunt then
+    return nil
+  end
+  local maps = {}
+  local function Add(map, cells)
+    if type(map) ~= "number" or map <= 0 or type(cells) ~= "table" then
+      return
+    end
+    local merged = maps[map] or {}
+    maps[map] = merged
+    for cell, count in pairs(cells) do
+      merged[cell] = (merged[cell] or 0) + count
+    end
+  end
+  for map, cells in pairs(hunt.area or {}) do
+    Add(map, cells)
+  end
+  for npcID in pairs(hunt.npcs or {}) do
+    local shared, own = ns.COMMUNITY[npcID], ns.Learn:Entry(npcID)
+    if shared then
+      Add(shared.m, shared.a)
+    end
+    if own then
+      Add(own.m, own.a)
+    end
+  end
+  local area
+  for map, cells in pairs(maps) do
+    local most = 0
+    for _, count in pairs(cells) do
+      most = math.max(most, count)
+    end
+    for cell, count in pairs(cells) do
+      if most > 0 and count >= most * AREA_MIN_SHARE then
+        area = area or {}
+        area[map] = area[map] or {}
+        area[map][cell] = count / most
+      end
+    end
+  end
+  return area
+end
+
 ---------------------------------------------------------------------------
 -- Fishing
 ---------------------------------------------------------------------------
@@ -534,6 +586,7 @@ local function FishRows(rows, settings, skills)
           hunt = {
             key = "Fish:" .. place.map .. ":" .. place.spot, kind = "Fish", per = "catch", item = best,
             chance = bestRate, label = source, zone = zone, npcs = {}, spots = CellSpots(place.map, place.a),
+            area = { [place.map] = place.a },
           },
         }
       end

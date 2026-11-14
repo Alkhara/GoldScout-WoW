@@ -7,6 +7,10 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- **Hunting area on the world map:** while you hunt, the world map shades where you and other players have
+  looted those mobs, or caught that fish, in green: the stronger the green, the more often. Turn it off in
+  GoldScout's options or with `/gscout set map off`.
+
 ## v0.12.7
 
 - **Farm tab, By mob view:** the new **By item** and **By mob** buttons switch the Farm list between one row per

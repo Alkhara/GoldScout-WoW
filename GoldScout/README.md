@@ -74,11 +74,15 @@ Select a farm on the Farm tab and press **Hunt**:
    GoldScout placed).
 2. **Mob icons.** Mobs you're hunting get a small icon above their nameplate.
    Turn on enemy nameplates (default key V) to see them.
-3. **Mob tooltips.** Mousing over a listed mob shows its valuable drop and
+3. **Hunting area.** The world map shades where you and other players have
+   looted those mobs (or caught that fish) in green, stronger where it happens
+   most, so you can see how far the farm spreads. Squares are 5% of the zone
+   map; ones with only a stray loot or two are left out.
+4. **Mob tooltips.** Mousing over a listed mob shows its valuable drop and
    chance, plus what you've looted from it yourself, how many other players
    have looted, and what its loot is worth per kill on average at your prices
    (coin isn't counted).
-4. **Hunt panel.** A small movable panel shows time, kills or pickpockets, how
+5. **Hunt panel.** A small movable panel shows time, kills or pickpockets, how
    many of the item you've gained, your drop rate against the expected rate,
    loot value, coin, and gold per hour. **Stop** ends the hunt and prints a
    summary; `/gscout hunt history` lists recent hunts.
@@ -145,6 +149,7 @@ set up, ticking itself off as you go (`/gscout welcome` shows it again):
 | `/gscout set blackwater off` | Remove the Blackwater (goblin) auction house line from item tooltips |
 | `/gscout set waypoint off` | Hunts stop placing the map waypoint |
 | `/gscout set markers off` | Hunts stop putting icons on nameplates |
+| `/gscout set map off` | Hunts stop shading the hunting area on the world map |
 | `/gscout set mobtips off` | Remove GoldScout lines from mob tooltips |
 | `/gscout set minimap off` | Hide the minimap button (click it for the Farm tab, right-click for Craft, drag to move) |
 | `/gscout set companionhint on` | Bring back the Farm tab line about GoldScout Companion (its Hide button turns it off) |
