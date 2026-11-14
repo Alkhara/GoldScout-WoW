@@ -1,4 +1,4 @@
-GoldScout-export 5^fj189n2urp8k^3
+GoldScout-export 5^fj189n2urp8k^4
 232^1^0^23^23^1424^0.3270^0.3633^1^Farmer Ray^^
 1867^5^0^13^14^1421^0.5097^0.6147^5^Dalaran Apprentice^414:1:1,1502:1:1,1516:1:1,2589:2:6^
 1973^17^0^20^21^1421^0.5877^0.7125^17^Ravenclaw Guardian^1179:2:2,1775:1:1,1789:1:1,2589:2:4,2592:5:5,271343:1:1,271350:1:1^
@@ -16,6 +16,7 @@ GoldScout-export 5^fj189n2urp8k^3
 2449^1^0^25^25^1424^0.3312^0.3878^1^Citizen Wilkes^^
 2451^1^0^25^25^1424^0.3664^0.4797^1^Farmer Kalaba^422:1:1^
 2529^2^0^0^0^0^0.0000^0.0000^0^^1772:1:1^
+2676^1^0^22^22^1442^0.6344^0.4008^1^Compact Harvest Reaper^^
 3115^3^0^7^8^1411^0.5004^0.2438^3^Dustwind Harpy^117:1:1,1423:1:1,4775:1:1^
 3116^2^0^8^8^1411^0.4840^0.2014^2^Dustwind Pillager^1423:1:1,2589:1:2,4775:1:1^
 3117^2^0^9^10^1411^0.5405^0.2236^2^Dustwind Savage^2589:2:3^
@@ -37,6 +38,13 @@ GoldScout-export 5^fj189n2urp8k^3
 3886^2^0^0^0^0^0.0000^0.0000^0^^^
 3887^2^0^0^0^0^0.0000^0.0000^0^^^
 3914^2^0^0^0^0^0.0000^0.0000^0^^1739:1:1^
+3992^1^0^20^21^1442^0.6411^0.3872^1^Venture Co. Engineer^^
+3993^1^0^22^22^1442^0.6344^0.4008^1^Venture Co. Machine Smith^^
+4003^2^0^20^21^1442^0.7300^0.5837^2^Windshear Geomancer^4537:1:1^
+4015^1^0^25^25^1442^0.4686^0.4218^1^Pridewing Patriarch^5136:1:1,5752:1:1^
+4020^1^0^22^23^1442^0.4672^0.3780^1^Sap Beast^3674:1:1,7091:1:1^
+4070^1^0^20^20^1442^0.6412^0.3941^1^Venture Co. Builder^^
+4202^1^0^27^27^1442^0.6459^0.3975^1^Gerenzo Wrenchwhistle^2592:1:2,5736:1:1^
 4275^1^0^0^0^0^0.0000^0.0000^0^^5442:1:1^
 4279^1^0^0^0^0^0.0000^0.0000^0^^1750:1:1^
 4627^1^0^0^0^0^0.0000^0.0000^0^^6438:1:1^
@@ -71,18 +79,31 @@ GoldScout-export 5^fj189n2urp8k^3
 @i^3402^Soft Patch of Fur
 @i^3476^Gray Bear Tongue
 @i^3496^Mountain Lion Blood
+@i^3674^Decomposed Boot
 @i^3730^Big Bear Meat
 @i^3731^Lion Meat
+@i^3820^Stranglekelp
+@i^4537^Tel'Abim Banana
 @i^4575^Medicine Staff of the Falcon
 @i^4605^Red-speckled Mushroom
 @i^4775^Cracked Bill
+@i^5136^Torn Furry Ear
 @i^5442^Head of Arugal
 @i^5635^Sharp Claw
+@i^5736^Gerenzo's Mechanical Arm
+@i^5752^Wyvern Tailspike
+@i^6289^Raw Longjaw Mud Snapper
+@i^6308^Raw Bristle Whisker Catfish
+@i^6359^Firefin Snapper
 @i^6438^Dull Elemental Bracer
+@i^6456^Acidic Slime
 @i^6530^Nightcrawlers
+@i^7091^Pattern: Truefaith Gloves
 @i^9776^Bandit Boots of Spirit
 @i^11406^Rotting Bear Carcass
 @i^11407^Torn Bear Pelt
+@i^21071^Raw Sagefish
+@i^21114^Rumsey Rum Dark
 @i^248685^Waylaid Crate: Apprentice Curiosities
 @i^248707^Waylaid Crate: Journeyman Parts
 @i^271343^Note Scrap
@@ -118,18 +139,31 @@ GoldScout-export 5^fj189n2urp8k^3
 @q^3402^0:15:0
 @q^3476^1:12:0
 @q^3496^1:12:0
+@q^3674^0:15:0
 @q^3730^1:7:1
 @q^3731^1:7:1
+@q^3820^1:7:1
+@q^4537^1:0:0
 @q^4575^2:2:0
 @q^4605^1:0:0
 @q^4775^0:15:0
+@q^5136^0:15:0
 @q^5442^1:12:0
 @q^5635^1:7:1
+@q^5736^1:12:0
+@q^5752^2:2:0
+@q^6289^1:7:1
+@q^6308^1:7:1
+@q^6359^1:7:1
 @q^6438^0:15:0
+@q^6456^0:15:0
 @q^6530^1:0:0
+@q^7091^2:9:0
 @q^9776^2:4:0
 @q^11406^0:15:0
 @q^11407^1:12:0
+@q^21071^1:7:1
+@q^21114^1:0:0
 @q^248685^1:0:1
 @q^248707^2:0:1
 @q^271343^1:15:0
@@ -138,6 +172,7 @@ GoldScout-export 5^fj189n2urp8k^3
 @m^1411^Durotar
 @m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
+@m^1442^Stonetalon Mountains
 @c^724^
 @c^733^
 @c^787^
@@ -1001,10 +1036,13 @@ GoldScout-export 5^fj189n2urp8k^3
 @c^279270^
 @c^279271^
 @c^279943^
+@c^279947^
 @c^279956^
 @c^279957^
 @c^279959^
 @c^279961^
+@c^279962^
+@c^279964^
 @c^279965^
 @c^279966^
 @c^279967^
@@ -1035,9 +1073,18 @@ GoldScout-export 5^fj189n2urp8k^3
 @a^2403^147:1
 @a^2449^146:1
 @a^2451^187:1
+@a^2676^172:1
 @a^3115^89:2,110:1
 @a^3116^89:2
 @a^3117^90:2
 @a^3118^70:2,90:4
+@a^3992^152:1
+@a^3993^172:1
+@a^4003^234:2
+@a^4015^169:1
+@a^4020^149:1
+@a^4070^152:1
+@a^4202^152:1
 @a^212753^271:1
+@f^1442^0^46^146^3820:4:9,6289:5:5,6308:4:4,6359:6:6,6456:1:1,21071:25:25,21114:1:1^149:4,169:28,170:6,172:5,173:3
 @l^0^enUS
