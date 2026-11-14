@@ -424,6 +424,61 @@ class AllLootTests(unittest.TestCase):
 
 
 @unittest.skipIf(lua51 is None, "lupa is not installed")
+class MobViewTests(unittest.TestCase):
+    """The Farm tab's By mob view: one row per mob, adding up its farms."""
+    setUp = FarmRulesTests.setUp
+    run_lua, run_file, item, drops, rows = (FarmRulesTests.run_lua, FarmRulesTests.run_file, FarmRulesTests.item,
+                                            FarmRulesTests.drops, FarmRulesTests.rows)
+
+    def mobs(self):
+        farms = self.ns.Engine.Farms(self.ns.Engine)
+        return list(self.ns.Engine.MobFarms(self.ns.Engine, farms).values())
+
+    def two_reagent_mob(self):
+        self.item(5000, price=10000)
+        self.item(5001, price=4000)
+        self.drops(3000, 20, {5000: 4, 5001: 10}, name="Ghoul")
+
+    def test_a_mob_with_several_farms_is_one_row_adding_them_up(self):
+        self.two_reagent_mob()
+        rows = self.rows()
+        first, second = rows[("Learned", 5000)], rows[("Learned", 5001)]
+        mobs = [m for m in self.mobs() if m.npc == 3000]
+        self.assertEqual(len(mobs), 1)
+        mob = mobs[0]
+        self.assertEqual((mob.kind, mob.source, mob.mobKey), ("Mob", "Ghoul", "Mob:3000"))
+        self.assertEqual(len(mob["items"]), 2)
+        self.assertAlmostEqual(mob.each, first.each + second.each)
+        self.assertAlmostEqual(mob.hour, first.hour + second.hour)
+        self.assertEqual(mob["items"][1].item, max((first, second), key=lambda r: r.hour).item)  # best first
+        self.assertEqual(mob.hunt.key, "Mob:3000")
+        self.assertNotEqual(mob["items"][1].hunt.key, "Mob:3000")   # its farms keep their own hunts
+
+    def test_a_mob_with_one_farm_is_that_farm(self):
+        self.item(5000, price=10000)
+        self.drops(3000, 20, {5000: 4})
+        mob = [m for m in self.mobs() if m.npc == 3000][0]
+        self.assertEqual(mob.kind, "Learned")
+        self.assertIsNone(mob["items"])
+
+    def test_market_items_without_a_mob_are_left_out(self):
+        self.item(5002, ilvl=25)                                    # a Market row nobody has seen drop
+        self.assertEqual([m for m in self.mobs() if m.item == 5002], [])
+        self.assertEqual(self.kinds(5002), ["Market"])
+
+    def test_other_loot_counts_once_and_leaves_out_every_farmed_item(self):
+        self.two_reagent_mob()
+        self.item(5100, price=0, sell=50, quality=0, reagent=False)   # gray trash: 50 a kill
+        self.ns.db.drops[3000].i[5100] = self.lua.table_from({"d": 20, "q": 20})
+        self.ns.db.settings.allLoot = True
+        mob = [m for m in self.mobs() if m.npc == 3000][0]
+        self.assertAlmostEqual(mob.otherLoot, 50)
+        self.assertAlmostEqual(mob.hour, (mob.each + 50) * mob["items"][1].perHour)
+
+    kinds = FarmRulesTests.kinds
+
+
+@unittest.skipIf(lua51 is None, "lupa is not installed")
 class UnitTooltipTests(unittest.TestCase):
     """The lines GoldScout adds to a mob's tooltip (Hunt.lua)."""
     setUp_farm = FarmRulesTests.setUp

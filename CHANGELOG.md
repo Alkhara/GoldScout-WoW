@@ -7,6 +7,10 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- **Farm tab, By mob view:** the new **By item** and **By mob** buttons switch the Farm list between one row per
+  item (as before) and one row per mob. A mob's row adds up everything worth farming that it drops, so you can
+  see which mob pays best to grind; click **+** to see each drop. GoldScout remembers the view you picked.
+
 ## v0.12.6
 
 - **Contributor leaderboard:** everyone who shares drop data is ranked by their kills in the community data, on

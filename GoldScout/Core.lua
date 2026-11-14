@@ -28,6 +28,7 @@ local DEFAULT_SETTINGS = {
   showRareDrops = false,  -- show BoE gear, recipes and gems (rare world drops)
   showCloth = false,      -- show rough per-kill cloth rows for humanoids
   allLoot = false,        -- add a mob's other loot (vendor trash too) to its rows' gold per hour
+  farmView = "item",      -- Farm tab: "item" (one row per item) or "mob" (one row per mob)
   huntWaypoint = true,    -- hunts place Blizzard's map waypoint at the farm
   huntMarkers = true,     -- hunts put an icon over matching mobs' nameplates
   learnDrops = true,      -- learn drop rates from what you loot
@@ -334,13 +335,14 @@ end
 -- skipItem. Coin isn't recorded, so it isn't included. Returns value per kill
 -- and the kills behind it.
 function ns.KillLootValue(skipItem, ...)
+  local skip = type(skipItem) == "table" and skipItem or { [skipItem or false] = true }
   local kills, total = 0, 0
   for i = 1, select("#", ...) do
     local entry = select(i, ...)
     if entry and (entry.k or 0) > 0 then
       kills = kills + entry.k
       for itemID, stat in pairs(entry.i or {}) do
-        if itemID ~= skipItem then
+        if not skip[itemID] then
           total = total + ns.LootValue(itemID) * (stat.q or 0)
         end
       end

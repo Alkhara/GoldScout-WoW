@@ -26,6 +26,10 @@ based on your level, class, faction and professions.
     that no farm covers yet, ranked by price per item. Gray (vendor trash), crafted and vendor-sold
     items are left out unless players have looted them from a mob. Their drop rate is learned
     as you loot them. Tick **Known rates** to hide them.
+
+  Two views, switched with the **By item** and **By mob** buttons: one row per item from its best source
+  (click **+** for its other sources), or one row per mob adding up everything worth farming that it drops
+  (click **+** for each drop). Farms without a mob, like gathering and fishing, keep their own rows.
 - **Craft tab** ranks every recipe you know by profit per craft: auction house
   price after the 5% cut, minus the cheapest cost of the materials (vendor price
   when they are sold by vendors, otherwise the auction house price).

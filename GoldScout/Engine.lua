@@ -702,7 +702,7 @@ function Engine:Farms()
       rows[#rows + 1] = AddOtherLoot({
         kind = "Drop", item = drop.item, source = ns.MobName(drop.npc, nil, drop.mob), zone = drop.zone,
         lvl = LevelText(drop.min, drop.max), chance = chance, baseChance = drop.chance, per = "kill",
-        seenRate = seenRate, seenTrials = seenTrials,
+        seenRate = seenRate, seenTrials = seenTrials, npc = drop.npc, perHour = kills,
         each = each, hour = each and each * kills,
         listed = listed, age = age, note = drop.note, hunt = DropHunt(drop),
       }, drop.npc, kills)
@@ -739,7 +739,7 @@ function Engine:Farms()
         rows[#rows + 1] = {
           kind = "Pickpocket", item = target.box, source = ns.MobName(target.npc, nil, target.mob), zone = target.zone,
           lvl = LevelText(target.min, target.max), chance = chance, baseChance = target.chance, per = "pick",
-          seenRate = seenRate, seenTrials = seenTrials,
+          seenRate = seenRate, seenTrials = seenTrials, npc = target.npc, perHour = settings.picksPerHour,
           each = each, hour = each and each * settings.picksPerHour,
           bound = true, note = note,
           hunt = MobHunt("Pickpocket:" .. target.npc, "pick", target.box, target.chance,
@@ -807,7 +807,7 @@ function Engine:Farms()
                 kind = "Learned", item = itemID, source = mob, zone = zone,
                 lvl = LevelText(minLevel, maxLevel), chance = rate, per = "kill",
                 seenRate = rate, seenTrials = attempts, confidence = confidence,
-                each = each, hour = each * kills,
+                each = each, hour = each * kills, npc = npcID, perHour = kills,
                 listed = listed, age = age,
                 note = note,
                 hunt = MobHunt("Learned:" .. npcID .. ":" .. itemID, "kill", itemID, rate, mob, zone, npcID, nil),
@@ -942,6 +942,7 @@ function Engine:Farms()
                 local minLevel = (own and own.lmin) or (shared and shared.lmin)
                 row.source = mob
                 row.zone = zone
+                row.npc = npcID
                 if minLevel then
                   row.lvl = LevelText(minLevel, (own and own.lmax) or (shared and shared.lmax) or minLevel)
                 end
@@ -985,4 +986,91 @@ function Engine:Farms()
     return (a.source or "") < (b.source or "")
   end)
   return shown
+end
+
+-- The Farm tab's By mob view: the same farms, one row per mob you'd fight,
+-- adding up everything worth farming that it drops. Pickpocketing a mob is a
+-- row of its own. Farms without a mob (gathering, fishing, cloth) keep their
+-- own rows; market items nobody has seen drop are left out. A mob with one
+-- farm is just that farm's row. A mob with more gets a group row: kind
+-- "Mob", items = its farms best first, each = value per kill (or pick) of
+-- all of them, hour = that times kills per hour. `rows` is Farms() output,
+-- sorted best first.
+function Engine:MobFarms(rows)
+  local groups, order = {}, {}
+  for _, row in ipairs(rows) do
+    local key
+    if row.npc then
+      key = (row.per == "pick" and "Pick:" or "Mob:") .. row.npc
+    elseif row.kind ~= "Market" then
+      key = row
+    end
+    if key then
+      local group = groups[key]
+      if not group then
+        group = {}
+        groups[key] = group
+        order[#order + 1] = { key = key, rows = group }
+      end
+      group[#group + 1] = row
+    end
+  end
+  local list = {}
+  for _, entry in ipairs(order) do
+    local items = entry.rows
+    if #items == 1 then
+      list[#list + 1] = items[1]
+    else
+      local first = items[1]
+      local each, perHour, skip, otherLoot = 0, nil, {}, nil
+      for _, row in ipairs(items) do
+        if row.each and not row.unknownRate then
+          each = each + row.each
+          perHour = perHour or row.perHour
+          skip[row.item] = true
+          otherLoot = otherLoot or row.otherLoot
+        end
+      end
+      local group = {
+        kind = "Mob", mobKey = entry.key, items = items, npc = first.npc, item = first.item, source = first.source,
+        zone = first.zone, lvl = first.lvl, xp = first.xp, per = first.per, best = first.each,
+      }
+      if perHour then
+        if otherLoot then
+          -- The mob's other loot once, leaving out every item counted above.
+          local value, seen = ns.KillLootValue(skip, ns.Learn:Entry(first.npc), ns.COMMUNITY[first.npc])
+          if value > 0 then
+            group.otherLoot, group.otherLootKills = value, seen
+          end
+        end
+        group.each = each
+        group.hour = (each + (group.otherLoot or 0)) * perHour
+      else
+        group.unknownRate = true
+      end
+      local hunt = {}
+      for field, value in pairs(first.hunt or {}) do
+        hunt[field] = value
+      end
+      hunt.key = entry.key
+      group.hunt = first.hunt and hunt or nil
+      list[#list + 1] = group
+    end
+  end
+  table.sort(list, function(a, b)
+    if a.hour or b.hour then
+      if a.hour and b.hour and a.hour ~= b.hour then
+        return a.hour > b.hour
+      elseif not (a.hour and b.hour) then
+        return a.hour ~= nil
+      end
+    else
+      local x, y = a.best or a.each or 0, b.best or b.each or 0
+      if x ~= y then
+        return x > y
+      end
+    end
+    return (a.source or "") < (b.source or "")
+  end)
+  return list
 end

@@ -25,6 +25,15 @@ local COLUMNS = {
     { key = "hour", title = L["Est. /hour"], width = 80, align = "RIGHT" },
     { key = "listed", title = L["Listed"], width = 50, align = "RIGHT" },
   },
+  -- The Farm tab's By mob view.
+  mob = {
+    { key = "mob", title = L["Mob"], width = 170, align = "LEFT" },
+    { key = "zone", title = L["Zone"], width = 140, align = "LEFT" },
+    { key = "lvl", title = L["Lvl"], width = 45, align = "CENTER" },
+    { key = "drops", title = L["Drops"], width = 165, align = "LEFT" },
+    { key = "each", title = L["Each"], width = 80, align = "RIGHT" },
+    { key = "hour", title = L["Est. /hour"], width = 85, align = "RIGHT" },
+  },
   craft = {
     { key = "item", title = L["Item"], width = 189, align = "LEFT" },
     { key = "profit", title = L["Profit"], width = 85, align = "RIGHT" },
@@ -115,7 +124,44 @@ local function Per(per)
   return PER[per or "try"] or per
 end
 
-local function CellText(key, row)
+local CellText   -- below
+
+-- The By mob view's own columns, or nil where the Farm tab's text fits. A
+-- group row is a mob with several farms; other rows are one farm (under the
+-- mob's name), and child rows are one of an expanded mob's items.
+local function MobCellText(key, row)
+  if key == "mob" then
+    if row.child then
+      return Gray("    ") .. ns.ItemColor(row.item) .. ns.ItemName(row.item) .. "|r"
+    end
+    local text = row.source or ""
+    if row.per == "pick" then
+      text = text .. Gray(" (" .. L["Pickpocket"] .. ")")
+    end
+    return row.needsProfession and Gray(text) or text
+  elseif key == "zone" then
+    if row.child then
+      return Gray(L[row.kind])
+    end
+    return row.zone or ""
+  elseif key == "drops" then
+    if row.child then
+      return "    " .. CellText("chance", row)
+    end
+    local text = ns.ItemColor(row.item) .. ns.ItemName(row.item) .. "|r"
+    if row.items then
+      text = text .. Gray((" +%d"):format(#row.items - 1))
+    end
+    return text
+  elseif key == "lvl" and row.child then
+    return ""
+  elseif key == "each" and row.unknownRate and not row.each then
+    return Gray("?")
+  end
+  return nil
+end
+
+function CellText(key, row)
   if key == "item" then
     return ItemText(row)
   elseif key == "kind" then
@@ -210,6 +256,44 @@ local function CraftTooltip(row)
   end
 end
 
+-- A By mob row with several farms: everything it drops that's worth farming.
+local function MobTooltip(row)
+  GameTooltip:AddLine(row.source or "", 1, 1, 1)
+  if row.zone then
+    GameTooltip:AddLine(row.zone .. ((row.lvl and row.lvl ~= "-") and ("  ·  " .. L["Lvl"] .. " " .. row.lvl) or ""),
+      0.8, 0.8, 0.8, true)
+  end
+  GameTooltip:AddLine(" ")
+  GameTooltip:AddLine((L["Worth farming, per %s"]):format(Per(row.per)), 1, 1, 1)
+  for _, item in ipairs(row.items) do
+    local value = item.unknownRate and Gray(L["rate unknown"]) or ns.Money(item.each)
+    GameTooltip:AddDoubleLine(ns.ItemColor(item.item) .. ns.ItemName(item.item) .. "|r"
+      .. ((item.chance and not item.unknownRate) and Gray("  " .. Percent(item.chance)) or ""), value,
+      1, 1, 1, 1, 1, 1)
+  end
+  if row.otherLoot then
+    AddMoneyLine(L["Other loot per kill"], row.otherLoot)
+  end
+  GameTooltip:AddLine(" ")
+  if not row.unknownRate then
+    AddMoneyLine(L["Expected value per %s"]:format(Per(row.per)), (row.each or 0) + (row.otherLoot or 0))
+    AddMoneyLine(L["Rough estimate per hour"], row.hour)
+  end
+  if row.otherLoot then
+    GameTooltip:AddLine((L["Includes the mob's other loot, vendor trash too, from %d kills (not coin)."]):format(
+      row.otherLootKills), 0.6, 0.6, 0.6, true)
+  end
+  if row.xp then
+    GameTooltip:AddLine(XP_TEXT[row.xp], 0.8, 0.8, 0.8)
+  end
+  GameTooltip:AddLine(L["Per-hour figures assume your /gscout set kills, nodes, picks and catches rates."], 0.5, 0.5, 0.5, true)
+  GameTooltip:AddLine(L["Click + to see each drop on its own row."], 0.4, 0.8, 1, true)
+  if row.hunt then
+    GameTooltip:AddLine(row.hunt.spots and L["Click to select it, then press Hunt for a waypoint and loot tracker."]
+      or L["Click to select it, then press Hunt to track this farm's loot."], 0.4, 0.8, 1, true)
+  end
+end
+
 local function FarmTooltip(row)
   GameTooltip:AddLine(L[row.kind] .. ": " .. (row.source or ""), 1, 1, 1)
   if row.zone then
@@ -284,6 +368,13 @@ local function RowOnEnter(self)
     return
   end
   GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+  if row.items then
+    MobTooltip(row)
+    GameTooltip:AddLine(" ")
+    GameTooltip:AddLine(L["Shift-click to link the item in chat."], 0.5, 0.5, 0.5)
+    GameTooltip:Show()
+    return
+  end
   -- The game's own item tooltip first (quality, "Crafting Reagent", vendor
   -- price...), then GoldScout's details.
   local shownItem = false
@@ -369,7 +460,8 @@ local function CreateRow(parent, index)
   row.expander:SetScript("OnClick", function(self)
     local data = self:GetParent().data
     if data and data.sources and data.sources > 1 then
-      UI.expanded[data.item] = not UI.expanded[data.item] or nil
+      local key = data.mobKey or data.item
+      UI.expanded[key] = not UI.expanded[key] or nil
       UI:Regroup()
       UI:Render()
     end
@@ -583,9 +675,30 @@ function UI:Create()
   f.checks = { CreateCheckbox(f, 196), CreateCheckbox(f, 300), CreateCheckbox(f, 390), CreateCheckbox(f, 470),
     CreateCheckbox(f, 565) }
 
+  -- Farm tab: one row per item, or one row per mob.
+  local function ViewButton(text, view, tip)
+    local button = CreateFrame("Button", nil, f, "UIPanelButtonTemplate")
+    button:SetSize(76, 20)
+    button:SetText(text)
+    button:SetScript("OnClick", function()
+      UI:SetFarmView(view)
+    end)
+    button:SetScript("OnEnter", function(self)
+      ShowTip(self, tip)
+    end)
+    button:SetScript("OnLeave", HideTip)
+    return button
+  end
+  f.mobView = ViewButton(L["By mob"], "mob", L["One row per mob: everything worth farming that it drops, added up. "
+    .. "Click + on a mob to see each drop."])
+  f.mobView:SetPoint("TOPRIGHT", -HUNT_RIGHT, -92)
+  f.itemView = ViewButton(L["By item"], "item", L["One row per item, from its best source. Click + on an item "
+    .. "to see its other sources."])
+  f.itemView:SetPoint("RIGHT", f.mobView, "LEFT", -4, 0)
+
   f.infoText = f:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
   f.infoText:SetPoint("TOPLEFT", 22, -96)
-  f.infoText:SetPoint("RIGHT", f, "RIGHT", -22, 0)
+  f.infoText:SetPoint("RIGHT", f.itemView, "LEFT", -10, 0)
   f.infoText:SetJustifyH("LEFT")
   f.infoText:SetWordWrap(false)
 
@@ -711,10 +824,30 @@ function UI:Create()
   return f
 end
 
+-- The Farm tab's view: "item" or "mob".
+function UI:FarmView()
+  return ns.db and ns.db.settings.farmView == "mob" and "mob" or "item"
+end
+
+-- The columns shown now: the tab's, or the By mob view's.
+function UI:Columns()
+  if self.tab == "farm" and self:FarmView() == "mob" then
+    return COLUMNS.mob
+  end
+  return COLUMNS[self.tab]
+end
+
+function UI:SetFarmView(view)
+  if ns.db then
+    ns.db.settings.farmView = view
+  end
+  self:SetTab("farm")
+end
+
 -- Positions the header and row cells for the current tab's columns.
 function UI:LayoutColumns()
   local f = self.frame
-  local columns = COLUMNS[self.tab]
+  local columns = self:Columns()
   local x = ROW_HEIGHT + 20
   for i = 1, MAX_COLUMNS do
     local column = columns[i]
@@ -758,6 +891,16 @@ function UI:SetTab(tab)
   else
     f.craftTab:LockHighlight()
     f.farmTab:UnlockHighlight()
+  end
+  local mob = self:FarmView() == "mob"
+  f.itemView:SetShown(tab == "farm")
+  f.mobView:SetShown(tab == "farm")
+  if mob then
+    f.mobView:LockHighlight()
+    f.itemView:UnlockHighlight()
+  else
+    f.itemView:LockHighlight()
+    f.mobView:UnlockHighlight()
   end
   for i, check in ipairs(f.checks) do
     local option = TAB_OPTIONS[tab][i]
@@ -886,9 +1029,11 @@ function UI:SelectedRow()
   if self.tab ~= "farm" or not self.selectedKey then
     return nil
   end
-  for _, row in ipairs(self.allRows or self.data) do
-    if row.hunt and row.hunt.key == self.selectedKey then
-      return row
+  for _, list in ipairs({ self.data, self.allRows or {} }) do
+    for _, row in ipairs(list) do
+      if row.hunt and row.hunt.key == self.selectedKey then
+        return row
+      end
     end
   end
   return nil
@@ -934,7 +1079,9 @@ function UI:UpdateInfoText()
     info = (L["Hunting %s; the hunt panel shows how it's going. Select another farm and press Hunt to switch."]):format(
       ns.ItemName(hunting.target.item))
   elseif self.tab == "farm" then
-    if best and best.hour then
+    if best and best.hour and best.items then
+      info = (L["Best mob for you right now: %s, roughly %s an hour."]):format(best.source or "?", ns.Money(best.hour))
+    elseif best and best.hour then
       info = (L["Best for you right now: %s from %s, roughly %s an hour."]):format(
         ns.ItemName(best.item), best.source or "?", ns.Money(best.hour))
     elseif best and best.unknownRate then
@@ -962,7 +1109,8 @@ function UI:Render()
   if not f then
     return
   end
-  local columns = COLUMNS[self.tab]
+  local columns = self:Columns()
+  local mobView = columns == COLUMNS.mob
   for i = 1, VISIBLE_ROWS do
     local rowFrame = self.rows[i]
     local row = self.data[self.offset + i]
@@ -970,12 +1118,12 @@ function UI:Render()
     if row then
       rowFrame.icon:SetTexture(ns.ItemIcon(row.item))
       for c, column in ipairs(columns) do
-        rowFrame.cells[c]:SetText(CellText(column.key, row))
+        rowFrame.cells[c]:SetText(mobView and MobCellText(column.key, row) or CellText(column.key, row))
       end
       rowFrame.selected:SetShown(row.hunt ~= nil and row.hunt.key == self.selectedKey)
       local expandable = row.sources ~= nil and row.sources > 1
       if expandable then
-        local prefix = UI.expanded[row.item] and "Interface\\Buttons\\UI-MinusButton-" or "Interface\\Buttons\\UI-PlusButton-"
+        local prefix = UI.expanded[row.mobKey or row.item] and "Interface\\Buttons\\UI-MinusButton-" or "Interface\\Buttons\\UI-PlusButton-"
         rowFrame.expander:SetNormalTexture(prefix .. "Up")
         rowFrame.expander:SetPushedTexture(prefix .. "Down")
       end
@@ -1012,9 +1160,34 @@ function UI:Render()
   end
 end
 
+-- By mob: one row per mob (Engine:MobFarms); an expanded mob lists each of
+-- its farms underneath.
+function UI:RegroupByMob()
+  for _, row in ipairs(self.allRows or {}) do
+    row.child, row.sources = nil, nil
+  end
+  local list = {}
+  for _, row in ipairs(ns.Engine:MobFarms(self.allRows or {})) do
+    list[#list + 1] = row
+    if row.items then
+      row.sources = #row.items
+      if self.expanded[row.mobKey] then
+        for _, item in ipairs(row.items) do
+          item.child = true
+          list[#list + 1] = item
+        end
+      end
+    end
+  end
+  self.data = list
+end
+
 -- One row per item: its best source by gold per hour. An expanded item lists
 -- its other sources underneath, dimmed. allRows is already sorted best first.
 function UI:Regroup()
+  if self:FarmView() == "mob" then
+    return self:RegroupByMob()
+  end
   local order, groups = {}, {}
   for _, row in ipairs(self.allRows or {}) do
     row.child, row.sources = nil, nil
