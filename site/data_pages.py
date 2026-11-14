@@ -1,6 +1,10 @@
 """The website's data pages, built from the merged community data: one page
-per mob, one per crafting reagent, one per zone, farms by level, and how the
-numbers work.
+per mob, one per item players loot (everything but gray vendor trash), one
+per zone, farms by level, and how the numbers work.
+
+Pages whose numbers rest on fewer than INDEX_MIN kills are built but kept out
+of search engines (noindex, left out of the sitemap) until more players loot
+there: thin pages drag down how a search engine rates the whole site.
 
 Names come from players' exports (@i, @m lines and mob names) and are always
 HTML-escaped. Item kinds come from @q lines (export version 4): until an item
@@ -16,25 +20,47 @@ and faction the visitor picks in the price bar.
 """
 import html
 import json
+import math
 import re
 from collections import Counter, defaultdict
 from pathlib import Path
 
 SITE_URL = "https://wowgoldscout.com"
 MIN_ATTEMPTS = 5                 # same threshold as the shipped community data
+INDEX_MIN = 15                   # kills (or pickpockets) before a page is offered to search engines
 RARE_CLASSES = {2, 4, 9}         # weapons, armor, recipes: rare world drops
 GEM_CLASS = 3
+ADDON = Path(__file__).resolve().parent.parent / "GoldScout"
 
 
 def addon_gems():
     """Item IDs in the addon's ns.GEMS (Data.lua): gems that drop at random from many mobs.
     The Farm tab treats them like gear, so the site does too."""
-    source = (Path(__file__).resolve().parent.parent / "GoldScout" / "Data.lua").read_text(encoding="utf-8")
+    source = (ADDON / "Data.lua").read_text(encoding="utf-8")
     block = re.search(r"ns\.GEMS = \{(.*?)\n\}", source, re.S)
     return {int(item) for item in re.findall(r"\[(\d+)\]", block.group(1))} if block else set()
 
 
+def addon_pace(setting):
+    """A default pace from the addon's settings (Core.lua), so the site's gold per hour matches the Farm tab's."""
+    source = (ADDON / "Core.lua").read_text(encoding="utf-8")
+    return int(re.search(r"\b%s = (\d+)" % setting, source).group(1))
+
+
 GEMS = addon_gems()
+KILLS_PER_HOUR = addon_pace("killsPerHour")
+PICKS_PER_HOUR = addon_pace("picksPerHour")
+
+
+def wilson(hits, trials, z=1.96):
+    """The 95% range a drop chance really lies in, given hits out of trials (Wilson score interval)."""
+    if trials <= 0:
+        return 0.0, 1.0
+    p = hits / trials
+    centre = p + z * z / (2 * trials)
+    spread = z * math.sqrt(p * (1 - p) / trials + z * z / (4 * trials * trials))
+    scale = 1 + z * z / trials
+    return max(0.0, (centre - spread) / scale), min(1.0, (centre + spread) / scale)
 BRACKETS = [(1, 10), (11, 20), (21, 30), (31, 40), (41, 50), (51, 63)]
 CONFIDENCE = [(50, "high"), (15, "good"), (5, "fair"), (0, "low")]
 PLAYER_CAP = 1000                # kills per mob counted from any one player
@@ -89,16 +115,25 @@ class Dataset:
         self.item_meta = {item: votes.most_common(1)[0][0] for item, votes in meta_votes.items()}
         self.has_kinds = bool(self.item_meta)
         self.reagent_sources = defaultdict(list)
+        # Every item worth a page (not gray): [(npc, rate, stack, attempts, per)], per "kill" or "pickpocket".
+        self.sources = defaultdict(list)
         self.zones = defaultdict(list)
         for npc in self.mobs:
-            for item, rate, stack in self.drops(npc):
-                if self.kind(item) == "reagent":
-                    self.reagent_sources[item].append((npc, rate, stack))
+            for key, per in (("i", "kill"), ("pi", "pickpocket")):
+                attempts = self.mobs[npc]["k" if key == "i" else "p"]
+                for item, rate, stack in self.drops(npc, key):
+                    if self.kind(item) == "gray":
+                        continue
+                    self.sources[item].append((npc, rate, stack, attempts, per))
+                    if key == "i" and self.kind(item) == "reagent":
+                        self.reagent_sources[item].append((npc, rate, stack))
             zone = self.zone_id(npc)
             if zone is not None:
                 self.zones[zone].append(npc)
         for sources in self.reagent_sources.values():
             sources.sort(key=lambda pair: -pair[1])
+        for sources in self.sources.values():
+            sources.sort(key=lambda source: (source[3] < INDEX_MIN, -self.cautious(source), source[0]))
         for npcs in self.zones.values():
             npcs.sort(key=lambda npc: (self.mid_level(npc), self.mob_name(npc)))
 
@@ -156,6 +191,22 @@ class Dataset:
             return []
         rows = [(item, d / attempts, q / d if d else 1) for item, (d, q) in entry[key].items() if d]
         return sorted(rows, key=lambda row: -row[1])
+
+    @staticmethod
+    def cautious(source):
+        """Items per kill (or pickpocket) at the low end of the drop chance's range. Sources are ranked by it,
+        those with INDEX_MIN kills first, so a lucky few kills don't beat a mob players have pinned down."""
+        _, rate, stack, attempts, _ = source
+        return wilson(round(rate * attempts), attempts)[0] * stack
+
+    def attempts(self, npc):
+        return self.mobs[npc]["k"] + self.mobs[npc]["p"]
+
+    def mob_indexed(self, npc):
+        return self.attempts(npc) >= INDEX_MIN
+
+    def item_indexed(self, item):
+        return any(attempts >= INDEX_MIN for _, _, _, attempts, _ in self.sources[item])
 
     def best_drops(self, npc):
         """A mob's crafting reagent drops (every drop until items have kinds), best first."""
@@ -229,11 +280,21 @@ def zone_link(data, npc):
     return '<a href="/zone/%d">%s</a>' % (map_id, e(data.map_names[map_id]))
 
 
-def item_cell(data, item):
+def item_link(data, item):
     name = e(data.item_name(item))
-    if data.kind(item) == "reagent":
-        return '<a href="/reagent/%d">%s</a>' % (item, name)
+    if item in data.sources:
+        return '<a href="/item/%d">%s</a>' % (item, name)
     return name
+
+
+item_cell = item_link
+
+
+def chance(rate, attempts):
+    """A drop chance with the 95% range it really lies in, from the kills behind it."""
+    low, high = wilson(round(rate * attempts), attempts)
+    return ('%s <span class="range" title="95%% likely between these, from %d recorded">%s&ndash;%s</span>'
+            % (percent(rate), attempts, percent(low).rstrip("%"), percent(high)))
 
 
 def badge(attempts):
@@ -242,14 +303,15 @@ def badge(attempts):
 
 
 def legend():
-    return ('<p class=small>Chance is how often players got the item per kill. '
-            '<a href="/drop-rates">How these numbers work</a></p>')
+    return ('<p class=small>Chance is how often players got the item per kill; the small numbers are the range '
+            'it is 95%% likely to be in, which narrows as more kills are recorded. Counted in WoW Forever only: '
+            'no Classic Era data is mixed in. <a href="/drop-rates">How these numbers work</a></p>')
 
 
-def drop_table(data, rows, per="kill"):
+def drop_table(data, rows, attempts, per="kill"):
     body = "".join(
         "<tr><td>%s</td><td class=num>%s</td><td class=num>%s</td>%s%s</tr>"
-        % (item_cell(data, item), percent(rate), ("%.1f" % stack).rstrip("0").rstrip("."),
+        % (item_cell(data, item), chance(rate, attempts), ("%.1f" % stack).rstrip("0").rstrip("."),
            price_cell(item), value_cell([(item, rate, stack)]))
         for item, rate, stack in rows)
     return ("<table><thead><tr><th>Item</th><th class=num>Chance</th><th class=num>Avg. stack</th>"
@@ -308,15 +370,15 @@ def mob_page(data, npc, links):
         reagents = [row for row in drops if data.kind(row[0]) == "reagent"]
         others = [row for row in drops if data.kind(row[0]) in ("other", "unknown", "rare")]
         if reagents:
-            sections.append("<h2>Crafting reagents</h2>" + drop_table(data, reagents))
+            sections.append("<h2>Crafting reagents</h2>" + drop_table(data, reagents, entry["k"]))
         if others:
-            sections.append("<h2>Other drops</h2>" + drop_table(data, others))
+            sections.append("<h2>Other drops</h2>" + drop_table(data, others, entry["k"]))
     elif drops:
-        sections.append("<h2>Drops</h2>" + drop_table(data, drops))
+        sections.append("<h2>Drops</h2>" + drop_table(data, drops, entry["k"]))
     picks = data.drops(npc, "pi")
     if picks:
         sections.append("<h2>Pickpocketing</h2><p class=sub>Chance per pickpocket, over %d attempts.</p>"
-                        % entry["p"] + drop_table(data, picks, per="pickpocket"))
+                        % entry["p"] + drop_table(data, picks, entry["p"], per="pickpocket"))
     if sections:
         sections.append(legend())
     else:
@@ -354,44 +416,79 @@ def mob_page(data, npc, links):
     return title, description, body
 
 
-def reagent_page(data, item, links):
-    name = data.item_name(item)
-    sources = data.reagent_sources[item]
+KIND_TEXT = {"reagent": "a crafting reagent", "rare": "a rare world drop", "other": "an item",
+             "unknown": "an item"}
+
+
+def source_where(data, npc):
+    """'level 21-22, Ashenvale' for a summary, or ''."""
+    bits = []
+    if data.levels(npc):
+        bits.append("level %s" % data.levels(npc))
+    if data.zone(npc):
+        bits.append(data.zone(npc))
+    return ", ".join(bits)
+
+
+def source_table(data, item, sources, per):
+    """Where an item comes from, best first, with gold per kill and per hour at the visitor's prices."""
+    pace = KILLS_PER_HOUR if per == "kill" else PICKS_PER_HOUR
+    noun = "Kills" if per == "kill" else "Pickpockets"
     rows = "".join(
-        "<tr><td>%s</td><td class=nowrap>%s</td><td>%s</td><td class=num>%s</td>%s<td>%s</td></tr>"
-        % (mob_link(data, npc), e(data.levels(npc)), zone_link(data, npc), percent(rate),
-           value_cell([(item, rate, stack)]), badge(data.mobs[npc]["k"]))
-        for npc, rate, stack in sources)
-    top, top_rate, _ = sources[0]
-    where = ", %s" % data.zone(top) if data.zone(top) else ""
-    level = "level %s" % data.levels(top) if data.levels(top) else ""
-    detail = " (%s)" % (level + where).strip(", ") if (level or where) else ""
-    count = len(sources)
-    summary = "%s is a crafting reagent in WoW Forever. GoldScout players have looted it from %d mob%s; " \
-              "the most reliable is %s%s, which drops it on %s of kills." % (
-                  name, count, "" if count == 1 else "s", data.mob_name(top), detail, percent(top_rate))
-    related = []
-    seen = {item}
-    for npc, _, _ in sources:
-        for other, _, _ in data.best_drops(npc):
-            if other not in seen and other in data.reagent_sources:
+        "<tr><td>%s</td><td class=nowrap>%s</td><td>%s</td><td class=num>%s</td><td class=num>%s %s</td>%s%s</tr>"
+        % (mob_link(data, npc), e(data.levels(npc)), zone_link(data, npc), chance(rate, attempts),
+           format(attempts, ","), badge(attempts), value_cell([(item, rate, stack)]),
+           value_cell([(item, rate * pace, stack)]))
+        for npc, rate, stack, attempts, _ in sources)
+    return ("<table><thead><tr><th>%s</th><th>Level</th><th>Zone</th><th class=num>Chance</th>"
+            "<th class=num>%s</th><th class=num>Gold per %s</th><th class=num>Gold per hour*</th></tr></thead>"
+            "<tbody>%s</tbody></table><p class=small>* At %d %s an hour. In game, GoldScout works it out for your "
+            "character, at your own pace and level.</p>"
+            % ("Dropped by" if per == "kill" else "Pickpocketed from", noun, per, rows, pace,
+               "kills" if per == "kill" else "pickpockets"))
+
+
+def item_page(data, item, links):
+    """'Where to farm X': every mob players have looted (or pickpocketed) it from, most reliable first."""
+    name = data.item_name(item)
+    sources = data.sources[item]
+    kills = [source for source in sources if source[4] == "kill"]
+    picks = [source for source in sources if source[4] == "pickpocket"]
+    top_npc, top_rate, _, top_attempts, top_per = sources[0]
+    where = source_where(data, top_npc)
+    count = len({source[0] for source in sources})
+    looted = "looted it from" if kills else "pickpocketed it from"
+    summary = ("%s is %s in WoW Forever. GoldScout players have %s %d mob%s; the best source is %s%s, "
+               "which gave it on %s of %s %s." % (
+                   name, KIND_TEXT[data.kind(item)], looted, count, "" if count == 1 else "s",
+                   data.mob_name(top_npc), " (%s)" % where if where else "", percent(top_rate),
+                   format(top_attempts, ","), "kills" if top_per == "kill" else "pickpockets"))
+    sections = []
+    if kills:
+        sections.append("<h2>Where it drops</h2>" + source_table(data, item, kills, "kill"))
+    if picks:
+        sections.append("<h2>Pickpocketing</h2>" + source_table(data, item, picks, "pickpocket"))
+    sections.append(legend())
+    related, seen = [], {item}
+    for npc, _, _, _, _ in sources:
+        for other, _, _ in data.drops(npc):
+            if other not in seen and other in data.sources and data.kind(other) != "gray":
                 seen.add(other)
-                related.append('<a href="/reagent/%d">%s</a>' % (other, e(data.item_name(other))))
-    more = ("<h2>Farm these at the same time</h2><p class=sub>Other crafting reagents the same mobs drop.</p>%s"
-            % link_list(related[:RELATED])) if related else ""
-    trail = [("/", "Home"), ("/farms", "Farms by level"), ("/reagent/%d" % item, name)]
+                related.append(other)
+    related.sort(key=lambda other: (data.kind(other) != "reagent", data.item_name(other)))
+    if related:
+        sections.append("<h2>Farm these at the same time</h2><p class=sub>Other items the same mobs drop.</p>%s"
+                        % link_list(item_link(data, other) for other in related[:RELATED]))
+    trail = [("/", "Home"), ("/farms", "Farms by level"), ("/item/%d" % item, name)]
     price = ('<p class=facts>Lowest price: <b data-price="%d">%s</b> <span class=small data-qty="%d"></span></p>'
              % (item, LOADING, item))
-    body = ("%s<h1>%s</h1><p class=summary>%s</p>%s%s<h2>Where it drops</h2>"
-            "<table><thead><tr><th>Dropped by</th><th>Level</th><th>Zone</th><th class=num>Chance</th>"
-            "<th class=num>Gold per kill</th><th>Confidence</th></tr></thead><tbody>%s</tbody></table>%s"
-            "<p class=sub>Gold per kill is the drop chance times the average stack times the current price. "
-            "In game, GoldScout turns it into gold per hour for your character.</p>%s%s"
-            % (crumbs(trail), e(name), e(summary), price_bar(), price, rows, legend(), more, cta(links)))
+    body = ("%s<h1>%s</h1><p class=summary>%s</p>%s%s%s%s"
+            % (crumbs(trail), e(name), e(summary), price_bar(), price, "".join(sections), cta(links)))
     title = "Where to farm %s (WoW Forever)" % name
-    description = "%s drops from %s (%s)%s in WoW Forever. Drop rates from GoldScout players' loot." % (
-        name, data.mob_name(top), percent(top_rate),
-        " and %d other mob%s" % (count - 1, "" if count == 2 else "s") if count > 1 else "")
+    others = count - 1
+    description = "%s %s from %s (%s)%s in WoW Forever. Drop rates counted from GoldScout players' loot." % (
+        name, "drops" if top_per == "kill" else "is pickpocketed", data.mob_name(top_npc), percent(top_rate),
+        " and %d other mob%s" % (others, "" if others == 1 else "s") if others else "")
     return title, description, body
 
 
@@ -468,6 +565,8 @@ def rates_page(data, links):
 <p class=summary>Every number on this site comes from GoldScout players looting in WoW Forever. Nothing is copied from Wowhead or any other database.</p>
 <h2>Chance</h2>
 <p>The chance for an item is how many kills dropped it, divided by the kills recorded. A mob recorded 200 times that dropped an item 50 times shows 25%%. Average stack is how many of the item came in each drop. For pickpocketing, the chance is per pickpocket instead of per kill.</p>
+<p>Next to each chance is the range the real chance is 95%% likely to be in, given the kills behind it: 25%% from 200 kills is 20&ndash;31%%, from 20 kills it's 11&ndash;47%%. Where an item drops from several mobs, they're ranked by the low end of that range, so a few lucky kills don't outrank a mob hundreds of kills have pinned down.</p>
+<p>Everything is counted in WoW Forever. No Classic Era numbers are mixed in, so Forever's own drop rates show as they are.</p>
 <h2>Confidence</h2>
 <p>The more kills recorded, the closer the chance is to the real one. Each mob shows how sure the numbers are:</p>
 <ul class=ticks>%s</ul>
@@ -490,17 +589,21 @@ def rates_page(data, links):
 
 
 def build(data, links, write):
-    """Calls write(path, title, description, body) for every data page; returns their URL paths."""
+    """Calls write(path, title, description, body, index=...) for every data page; returns the URL paths
+    search engines should see (the sitemap's), leaving out the thin pages built with index=False."""
     paths = ["/farms", "/drop-rates"]
     write("farms.html", *farms_page(data, links))
     write("drop-rates.html", *rates_page(data, links))
+
+    def page(path, built, index=True):
+        write(path + ".html", *built, index=index)
+        if index:
+            paths.append("/" + path)
+
     for npc in sorted(data.mobs):
-        write("mob/%d.html" % npc, *mob_page(data, npc, links))
-        paths.append("/mob/%d" % npc)
-    for item in sorted(data.reagent_sources):
-        write("reagent/%d.html" % item, *reagent_page(data, item, links))
-        paths.append("/reagent/%d" % item)
+        page("mob/%d" % npc, mob_page(data, npc, links), data.mob_indexed(npc))
+    for item in sorted(data.sources):
+        page("item/%d" % item, item_page(data, item, links), data.item_indexed(item))
     for map_id in sorted(data.zones):
-        write("zone/%d.html" % map_id, *zone_page(data, map_id, links))
-        paths.append("/zone/%d" % map_id)
+        page("zone/%d" % map_id, zone_page(data, map_id, links))
     return paths

@@ -262,6 +262,7 @@ tr:last-child td { border-bottom: none; }
 .nowrap { white-space: nowrap; }
 td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .conf { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px; font-weight: 600; color: #1b1203; }
+.range { font-size: 12px; color: var(--muted); white-space: nowrap; }
 .conf.low { background: #ff8040; } .conf.fair { background: #ffd100; } .conf.good { background: #9be35a; } .conf.high { background: #40d040; }
 .summary { font-size: 18px; max-width: 46em; margin: 10px 0 6px; }
 ul.related { columns: 2; padding-left: 20px; margin: 0; } ul.related li { margin: 4px 0; break-inside: avoid; }
@@ -406,8 +407,8 @@ def home_jsonld():
     return data_pages.json_for_script(data)
 
 
-def layout(title, description, path, body):
-    """A data page: the site's header and footer around body."""
+def layout(title, description, path, body, index=True):
+    """A data page: the site's header and footer around body. index=False keeps it out of search engines."""
     return """<!doctype html>
 <html lang="en">
 <head>
@@ -422,7 +423,7 @@ def layout(title, description, path, body):
 <meta property="og:image" content="%(site)s/logo-400.png">
 <meta property="og:site_name" content="GoldScout">
 <meta name="twitter:card" content="summary">
-<link rel="canonical" href="%(site)s%(path)s">
+<link rel="canonical" href="%(site)s%(path)s">%(robots)s
 <link rel="icon" href="/favicon.png">
 <style>%(css)s</style>
 <script src="/prices.js" defer></script>
@@ -442,6 +443,7 @@ def layout(title, description, path, body):
 </body>
 </html>
 """ % dict(LINKS, site=SITE_URL, css=CSS, path=path, body=body,
+           robots="" if index else '\n<meta name="robots" content="noindex, follow">',
            title=html.escape(title), description=html.escape(description))
 
 
@@ -565,11 +567,11 @@ def main():
     s = stats(results, merged)
     (DIST / "index.html").write_text(page(s), encoding="utf-8")
 
-    def write(relative, title, description, body):
+    def write(relative, title, description, body, index=True):
         target = DIST / relative
         target.parent.mkdir(parents=True, exist_ok=True)
         url_path = "/" + relative[:-len(".html")]
-        target.write_text(layout(title, description, url_path, body), encoding="utf-8")
+        target.write_text(layout(title, description, url_path, body, index), encoding="utf-8")
 
     write("companion.html", *companion_page(s))
     write("faq.html", *faq_page())
@@ -592,6 +594,8 @@ def main():
         '<section><h2>Page not found</h2><p class="sub">That page doesn\'t exist.</p>'
         '<a class="btn primary" href="/">Go to the GoldScout home page</a></section></div></body></html>' % CSS,
         encoding="utf-8")
+    # Item pages replaced the reagent-only pages (2026-11-14); keep old links and search results working.
+    (DIST / "_redirects").write_text("/reagent/:id /item/:id 301\n", encoding="utf-8")
     (DIST / "_headers").write_text(
         "/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n"
         "  Content-Security-Policy: default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; "

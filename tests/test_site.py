@@ -81,8 +81,9 @@ class DataPagesTests(unittest.TestCase):
         self.assertIn("Ashenvale Bear", title)
         reagents, others = body.split("<h2>Other drops</h2>")
         self.assertIn("Big Bear Meat", reagents)
-        self.assertIn('href="/reagent/3730"', reagents)
+        self.assertIn('href="/item/3730"', reagents)
         self.assertIn("40%", reagents)                     # 8 of 20 kills
+        self.assertIn("22&ndash;61%", reagents)             # the 95% range around it
         self.assertIn("War Paint Shoulder Pads", others)
         self.assertNotIn("Torn Bear Pelt", body)            # gray: hidden
         self.assertIn("Help fill this in", body)
@@ -97,16 +98,65 @@ class DataPagesTests(unittest.TestCase):
         self.assertNotIn("&", script)                     # escaped as \u0026 in the JSON
         self.assertEqual(json.loads(script)["itemListElement"][-1]["name"], "Laughing Sister & Co's")
 
-    def test_reagent_pages_and_farms(self):
-        data = dataset()
-        pages = {}
-        paths = data_pages.build(data, LINKS, lambda path, *page: pages.__setitem__(path, page))
-        self.assertIn("/reagent/3730", paths)
-        self.assertNotIn("/reagent/14728", paths)           # gear isn't a reagent page
-        _, _, reagent = pages["reagent/3730.html"]
-        self.assertLess(reagent.index("Ashenvale Bear"), reagent.index("Laughing"))   # 40% before 20%
+    def build(self, data):
+        pages, index = {}, {}
+
+        def write(path, *page, index=True):
+            pages[path] = page
+            index_of[path] = index
+        index_of = index
+        paths = data_pages.build(data, LINKS, write)
+        return paths, pages, index
+
+    def test_item_pages_and_farms(self):
+        paths, pages, _ = self.build(dataset())
+        self.assertIn("/item/3730", paths)
+        self.assertIn("/item/14728", paths)                 # gear gets a page too
+        self.assertNotIn("item/11407.html", pages)          # gray vendor trash doesn't
+        title, _, item = pages["item/3730.html"]
+        self.assertEqual(title, "Where to farm Big Bear Meat (WoW Forever)")
+        self.assertLess(item.index("Ashenvale Bear"), item.index("Laughing"))   # 40% before 20%
+        self.assertIn("Gold per hour", item)
         _, _, farms = pages["farms.html"]
         self.assertIn("Levels 21-30", farms)
+
+    def test_sources_rank_by_the_cautious_end_of_their_range(self):
+        lucky = V4.replace("3809^20^0^21^22^1440^0.5400^0.5400^20^Ashenvale Bear^3730:8:8",
+                           "3809^200^0^21^22^1440^0.5400^0.5400^200^Ashenvale Bear^3730:80:80")
+        lucky = lucky.replace("^Laughing Sister & Co's^3730:2:2", "^Laughing Sister & Co's^3730:5:5")
+        data = dataset(lucky)                               # 40% of 200 kills beats 50% of 10
+        self.assertEqual([source[0] for source in data.sources[3730]], [3809, 4054])
+        few = V4.replace("^Laughing Sister & Co's^3730:2:2", "^Laughing Sister & Co's^3730:9:9")
+        data = dataset(few)                                 # 90% of 10 kills still comes after 40% of 20
+        self.assertEqual([source[0] for source in data.sources[3730]], [3809, 4054])
+
+    def test_thin_pages_stay_out_of_search(self):
+        paths, pages, index = self.build(dataset())
+        self.assertTrue(index["mob/3809.html"])             # 20 kills
+        self.assertFalse(index["mob/4054.html"])            # 10 kills: built, but noindex and not in the sitemap
+        self.assertIn("mob/4054.html", pages)
+        self.assertNotIn("/mob/4054", paths)
+        self.assertFalse(index["item/1205.html"])           # only from the 10-kill mob
+        self.assertTrue(index["item/3730.html"])
+
+    def test_pickpocket_sources(self):
+        rogue = V4.replace("4054^10^0^24^25", "4054^10^20^24^25").replace(
+            "^Laughing Sister & Co's^3730:2:2,1205:3:3^", "^Laughing Sister & Co's^3730:2:2,1205:3:3^16882:5:5")
+        _, pages, _ = self.build(dataset(rogue))
+        _, _, item = pages["item/16882.html"]
+        self.assertIn("<h2>Pickpocketing</h2>", item)
+        self.assertIn("pickpocketed it from 1 mob", item)
+        self.assertIn("At %d pickpockets an hour" % data_pages.PICKS_PER_HOUR, item)
+
+    def test_wilson_range(self):
+        self.assertEqual([round(x * 100) for x in data_pages.wilson(50, 200)], [20, 31])
+        self.assertEqual(data_pages.wilson(0, 0), (0.0, 1.0))
+        low, high = data_pages.wilson(0, 30)
+        self.assertEqual(low, 0.0)
+        self.assertLess(high, 0.12)
+
+    def test_pace_comes_from_the_addon(self):
+        self.assertEqual((data_pages.KILLS_PER_HOUR, data_pages.PICKS_PER_HOUR), (70, 110))
 
     def test_breadcrumbs_and_structured_data(self):
         data = dataset()
@@ -126,16 +176,17 @@ class DataPagesTests(unittest.TestCase):
         self.assertIn("Ashenvale Bear is a level 21-22 mob in Ashenvale in WoW Forever. GoldScout players have "
                       "recorded 20 kills. Its most common crafting reagent is Big Bear Meat (40% of kills).", body)
         self.assertIn("Big Bear Meat 40%", description)
-        _, description, body = data_pages.reagent_page(data, 3730, LINKS)
-        self.assertIn("looted it from 2 mobs; the most reliable is Ashenvale Bear (level 21-22, Ashenvale), "
-                      "which drops it on 40% of kills.", body)
+        _, description, body = data_pages.item_page(data, 3730, LINKS)
+        self.assertIn("Big Bear Meat is a crafting reagent in WoW Forever. GoldScout players have looted it from "
+                      "2 mobs; the best source is Ashenvale Bear (level 21-22, Ashenvale), "
+                      "which gave it on 40% of 20 kills.", body)
         self.assertIn("and 1 other mob in", description)
-        self.assertIn('href="/reagent/3702"', body)       # other reagents the same mobs drop
+        self.assertIn('href="/item/3702"', body)          # other items the same mobs drop
 
     def test_zone_pages_and_links(self):
         data = dataset()
         pages = {}
-        paths = data_pages.build(data, LINKS, lambda path, *page: pages.__setitem__(path, page))
+        paths = data_pages.build(data, LINKS, lambda path, *page, **_: pages.__setitem__(path, page))
         self.assertIn("/zone/1440", paths)
         self.assertIn("/drop-rates", paths)
         title, _, zone = pages["zone/1440.html"]
@@ -153,7 +204,7 @@ class DataPagesTests(unittest.TestCase):
     def test_price_placeholders_for_prices_js(self):
         data = dataset()
         pages = {}
-        data_pages.build(data, LINKS, lambda path, *page: pages.__setitem__(path, page))
+        data_pages.build(data, LINKS, lambda path, *page, **_: pages.__setitem__(path, page))
         _, _, mob = pages["mob/3809.html"]
         self.assertIn('id="prices-bar"', mob)
         self.assertIn('data-price="3730"', mob)
@@ -162,8 +213,9 @@ class DataPagesTests(unittest.TestCase):
         _, _, farms = pages["farms.html"]
         self.assertIn("<table class=by-value>", farms)
         self.assertIn("Gold per kill", farms)
-        _, _, reagent = pages["reagent/3730.html"]
-        self.assertIn('data-qty="3730"', reagent)
+        _, _, item = pages["item/3730.html"]
+        self.assertIn('data-qty="3730"', item)
+        self.assertIn('data-value="3730:28"', item)             # gold per hour: 0.4 a kill x 70 kills
         _, _, rates = pages["drop-rates.html"]
         self.assertIn("Blizzard Entertainment Game Data API", rates)
         self.assertNotIn("prices-bar", rates)
@@ -183,6 +235,8 @@ class DataPagesTests(unittest.TestCase):
         self.assertNotIn("innerHTML", script)                  # server data only ever goes in as text
         page = build.layout("t", "d", "/x", "<p>body</p>")
         self.assertIn('<script src="/prices.js" defer></script>', page)
+        self.assertNotIn("noindex", page)
+        self.assertIn('<meta name="robots" content="noindex, follow">', build.layout("t", "d", "/x", "", index=False))
 
     def test_without_item_details_everything_is_listed(self):
         v3 = "\n".join(line for line in V4.splitlines() if not line.startswith("@q"))
