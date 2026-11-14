@@ -7,6 +7,8 @@ releases add their own line automatically.
 
 ## Unreleased
 
+## v0.12.7
+
 - **Farm tab, By mob view:** the new **By item** and **By mob** buttons switch the Farm list between one row per
   item (as before) and one row per mob. A mob's row adds up everything worth farming that it drops, so you can
   see which mob pays best to grind; click **+** to see each drop, with the mob's other loot on a line of its
@@ -15,6 +17,7 @@ releases add their own line automatically.
   and only items that have dropped at least 3 times, so one lucky recipe or green no longer inflates a mob's
   gold per hour. An item your auction house lists at more than 3 times the regional price counts at 3 times
   it, so a pile of listings nobody buys can't either. The tooltip now lists what the other loot is.
+- Updated drop data from the community.
 
 ## v0.12.6
 
