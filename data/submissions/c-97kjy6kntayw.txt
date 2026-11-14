@@ -1,10 +1,13 @@
-GoldScout-export 5^97kjy6kntayw^10
+GoldScout-export 5^97kjy6kntayw^11
+46^1^0^10^10^1429^0.7463^0.8556^1^Murloc Forager^1412:1:1^
 203^2^0^22^22^1431^0.7997^0.7394^2^Skeletal Mage^^
 205^6^0^28^29^1431^0.6440^0.6369^6^Nightbane Dark Runner^^
 206^3^0^29^29^1431^0.7029^0.7694^3^Nightbane Vile Fang^^
 212^1^0^30^30^1431^0.3410^0.7531^1^Splinter Fist Warrior^^
+524^2^0^8^8^1429^0.7318^0.8323^2^Rockhide Boar^3171:1:1,8177:1:1^
 533^4^0^27^28^1431^0.6536^0.4558^4^Nightbane Shadow Weaver^1205:1:1^
-628^4^0^24^25^1431^0.5472^0.5610^4^Black Ravager^1015:2:2,3301:1:1,3402:1:1^
+565^1^0^20^20^1431^0.7804^0.2393^1^Rabid Dire Wolf^1015:1:1^
+628^5^0^24^25^1431^0.5764^0.5217^5^Black Ravager^1015:3:3,3301:1:1,3402:1:1^
 889^2^0^25^26^1431^0.3943^0.7553^2^Splinter Fist Ogre^1800:1:1^
 891^3^0^26^27^1431^0.3946^0.7528^3^Splinter Fist Fire Weaver^2592:1:1^
 892^1^0^28^28^1431^0.3959^0.7501^1^Splinter Fist Taskmaster^^
@@ -51,6 +54,7 @@ GoldScout-export 5^97kjy6kntayw^10
 1185^2^0^17^18^1432^0.6201^0.2021^2^Wood Lurker^1081:1:1,1475:1:1,3931:1:1,5465:2:3^
 1188^1^0^13^13^1432^0.6412^0.7337^1^Grizzled Black Bear^3170:1:1^
 1190^2^0^11^11^1432^0.2682^0.2099^2^Mountain Boar^771:2:2,2677:1:1^
+1258^1^0^26^26^1431^0.6882^0.3725^1^Black Ravager Mastiff^3301:1:1^
 1353^2^0^29^29^1437^0.3324^0.5154^2^Sarltooth^1697:1:1,3685:2:2^
 1400^12^0^23^24^1437^0.4118^0.3224^12^Wetlands Crocolisk^770:5:5,3667:5:5,6568:1:1,211854:1:1,262888:1:1^
 1417^18^0^21^22^1437^0.2721^0.4333^18^Young Wetlands Crocolisk^770:5:5,3397:5:5,3667:4:4^
@@ -120,6 +124,7 @@ GoldScout-export 5^97kjy6kntayw^10
 @i^1205^Melon Juice
 @i^1206^Moss Agate
 @i^1210^Shadowgem
+@i^1412^Crude Bastard Sword
 @i^1468^Murloc Fin
 @i^1470^Murloc Skin Bag
 @i^1475^Small Venom Sac
@@ -169,6 +174,7 @@ GoldScout-export 5^97kjy6kntayw^10
 @i^3039^Short Ash Bow
 @i^3074^Smoldering Gloves
 @i^3170^Large Bear Tooth
+@i^3171^Broken Boar Tusk
 @i^3174^Spider Ichor
 @i^3175^Ruined Dragonhide
 @i^3176^Small Claw
@@ -225,6 +231,7 @@ GoldScout-export 5^97kjy6kntayw^10
 @i^6568^Shimmering Trousers of the Owl
 @i^6907^Tortoise Armor
 @i^7356^Elder's Cloak of Strength
+@i^8177^Practice Sword
 @i^9801^Superior Belt of Nature's Wrath
 @i^9807^Superior Shoulders of Healing
 @i^9811^Fortified Bracers of Magic
@@ -283,6 +290,7 @@ GoldScout-export 5^97kjy6kntayw^10
 @q^1205^1:0:0
 @q^1206^2:7:1
 @q^1210^2:7:1
+@q^1412^0:2:0
 @q^1468^1:7:1
 @q^1470^1:1:0
 @q^1475^1:7:1
@@ -332,6 +340,7 @@ GoldScout-export 5^97kjy6kntayw^10
 @q^3039^2:2:0
 @q^3074^2:4:0
 @q^3170^0:15:0
+@q^3171^0:15:0
 @q^3174^1:7:1
 @q^3175^0:15:0
 @q^3176^0:15:0
@@ -388,6 +397,7 @@ GoldScout-export 5^97kjy6kntayw^10
 @q^6568^2:4:0
 @q^6907^3:4:0
 @q^7356^2:4:0
+@q^8177^1:2:0
 @q^9801^2:4:0
 @q^9807^2:4:0
 @q^9811^2:4:0
@@ -437,6 +447,7 @@ GoldScout-export 5^97kjy6kntayw^10
 @q^280398^1:12:0
 @m^1414^Kalimdor
 @m^1417^Arathi Highlands
+@m^1429^Elwynn Forest
 @m^1431^Duskwood
 @m^1432^Loch Modan
 @m^1437^Wetlands
@@ -1101,12 +1112,15 @@ GoldScout-export 5^97kjy6kntayw^10
 @c^285280^
 @c^285281^
 @c^286152^
+@a^46^354:1
 @a^203^296:1,315:1
 @a^205^172:1,193:1,252:1,272:1,312:1,313:1
 @a^206^312:1,314:2
 @a^212^306:1
+@a^524^334:2
 @a^533^171:1,173:1,193:2
-@a^628^210:1,230:2,231:1
+@a^565^95:1
+@a^628^153:1,210:1,230:2,231:1
 @a^889^287:1,307:1
 @a^891^287:1,307:1,308:1
 @a^892^307:1
@@ -1153,6 +1167,7 @@ GoldScout-export 5^97kjy6kntayw^10
 @a^1185^72:1,92:1
 @a^1188^292:1
 @a^1190^44:1,105:1
+@a^1258^153:1
 @a^1353^206:2
 @a^1400^86:1,106:1,107:1,127:2,128:2,129:2,148:2,149:1
 @a^1417^127:1,146:4,147:1,150:2,163:1,164:1,183:5,202:1,203:2
