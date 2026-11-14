@@ -490,6 +490,25 @@ class CronTests(unittest.TestCase):
             self.assertEqual(alert["allowed_mentions"], {"parse": []})
             self.assertTrue(alert["content"])
 
+    def test_a_name_waiting_for_review_is_announced_without_the_name(self):
+        install = new_install()
+        token = register(install)[1]["token"]
+        headers = {"X-GoldScout-Install": install, "Authorization": "Bearer " + token,
+                   "Content-Type": "application/json"}
+        name = "Cron Tester %d" % random.randint(100, 999)
+        self.assertEqual(raw("/v1/leaderboard/me", json.dumps({"public": True, "name": name}), headers, "PUT")[0], 200)
+        before = len(self.alerts)
+        self.run_cron("17 * * * *")
+        self.started()
+        sent = [a["content"] for a in self.alerts[before:]]
+        self.assertTrue(any("waiting for your approval" in text and "#names" in text for text in sent), sent)
+        self.assertFalse(any(name in text for text in sent))
+        before = len(self.alerts)
+        self.run_cron("17 * * * *")
+        self.started()
+        self.assertEqual(self.alerts[before:], [])                       # once, not every hour
+        raw("/v1/leaderboard/me", json.dumps({"public": False}), headers, "PUT")
+
     def test_each_cron_starts_its_workflow(self):
         for cron, workflow in (("7,22,37,52 * * * *", "ah-prices.yml"), ("17 * * * *", "data-merge.yml"),
                                ("0 15 * * *", "data-release.yml")):

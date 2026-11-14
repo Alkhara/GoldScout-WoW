@@ -110,5 +110,41 @@ class PlanAlertsTests(unittest.TestCase):
         self.assertLessEqual(len(plan([ON], current)["text"]), 2000)
 
 
+def names(waiting, stored, now=NOW):
+    return call("planNames", waiting, stored, now)
+
+
+LINK = "https://admin.wowgoldscout.com/admin#names"
+
+
+@unittest.skipUnless(NODE, "node isn't installed")
+class PlanNamesTests(unittest.TestCase):
+    def test_nothing_waiting_says_nothing(self):
+        self.assertEqual(names({"count": 0, "newest": None}, None), {"line": "", "writes": []})
+
+    def test_a_new_name_is_sent_once(self):
+        result = names({"count": 1, "newest": NOW - 600}, None)
+        self.assertEqual(result["line"], "📝 1 leaderboard name is waiting for your approval: " + LINK)
+        self.assertEqual(result["writes"][0][1:], ["_names", "", NOW, NOW])
+        stored = {"key": "_names", "message": "", "since": NOW, "notified": NOW}
+        self.assertEqual(names({"count": 1, "newest": NOW - 600}, stored, NOW + 3 * HOUR)["line"], "")
+
+    def test_another_name_arriving_is_sent(self):
+        stored = {"key": "_names", "message": "", "since": NOW - HOUR, "notified": NOW - HOUR}
+        result = names({"count": 3, "newest": NOW - 60}, stored)
+        self.assertEqual(result["line"], "📝 3 leaderboard names are waiting for your approval: " + LINK)
+        self.assertEqual(result["writes"], [["UPDATE alerts SET notified = ? WHERE key = ?", NOW, "_names"]])
+
+    def test_names_still_waiting_are_repeated_daily(self):
+        stored = {"key": "_names", "message": "", "since": NOW - 30 * HOUR, "notified": NOW - 24 * HOUR}
+        result = names({"count": 2, "newest": NOW - 30 * HOUR}, stored)
+        self.assertEqual(result["line"], "📝 Still 2 leaderboard names waiting for your approval: " + LINK)
+
+    def test_reviewing_them_all_forgets_quietly(self):
+        stored = {"key": "_names", "message": "", "since": NOW - HOUR, "notified": NOW - HOUR}
+        self.assertEqual(names({"count": 0, "newest": None}, stored),
+                         {"line": "", "writes": [["DELETE FROM alerts WHERE key = ?", "_names"]]})
+
+
 if __name__ == "__main__":
     unittest.main()

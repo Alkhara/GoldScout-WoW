@@ -1,5 +1,5 @@
 // Test helper for server/src/alerts.js (tests/test_alerts.py): reads
-// {"fn": "findProblems" | "planAlerts", "args": [...]} as JSON on stdin and
+// {"fn": "findProblems" | "planAlerts" | "planNames", "args": [...]} as JSON on stdin and
 // prints what the function returns, as JSON.
 import { pathToFileURL } from "node:url";
 import { resolve, dirname } from "node:path";

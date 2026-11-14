@@ -4,9 +4,13 @@
 // day while it lasts, and when it clears. Which problems are open is kept in
 // the alerts table, so each message goes out once.
 //
+// The same message also says when leaderboard names are waiting for review
+// (key "_names" in the alerts table): when new ones arrive, and once a day
+// while any wait. It gives only how many and a link, never the names.
+//
 // Messages hold only regions, workflow names, counts and links to runs:
-// never player data, and never text a player wrote (error messages stay on
-// the dashboard).
+// never player data, and never text a player wrote (error messages and
+// names stay on the dashboard).
 
 const HOUR = 3600;
 const PRICE_ALERT = 3 * HOUR;   // the dashboard turns red at 3 h too
@@ -16,6 +20,8 @@ const ERROR_PLAYERS = 3;        // the dashboard's red line for errors
 const REGIONS = ["us", "eu", "kr", "tw"];
 const FAILED = new Set(["failure", "timed_out", "startup_failure"]);
 const ON = "_on";               // marks that the "alerts are on" message went out
+const NAMES = "_names";         // when Discord last heard about waiting names
+const NAMES_LINK = "https://admin.wowgoldscout.com/admin#names";
 const MAX_MESSAGE = 1900;       // Discord allows 2000 characters
 
 function hours(seconds) {
@@ -95,6 +101,29 @@ export function planAlerts(stored, current, now) {
   return { text, writes };
 }
 
+// What to say and store about leaderboard names waiting for review, given
+// how many wait, when the newest arrived, and the stored "_names" row (or
+// null). Pure, so the tests can drive it.
+export function planNames(waiting, stored, now) {
+  const count = waiting.count || 0;
+  if (!count) {
+    return { line: "", writes: stored ? [["DELETE FROM alerts WHERE key = ?", NAMES]] : [] };
+  }
+  const what = count === 1 ? "1 leaderboard name is" : `${count} leaderboard names are`;
+  let line = "";
+  if (!stored || (waiting.newest || 0) > stored.notified) {
+    line = `📝 ${what} waiting for your approval: ${NAMES_LINK}`;
+  } else if (now - stored.notified >= REMIND) {
+    line = `📝 Still ${what.replace(/ is$| are$/, "")} waiting for your approval: ${NAMES_LINK}`;
+  }
+  if (!line) {
+    return { line, writes: [] };
+  }
+  return { line, writes: [stored
+    ? ["UPDATE alerts SET notified = ? WHERE key = ?", now, NAMES]
+    : ["INSERT INTO alerts (key, message, since, notified) VALUES (?, ?, ?, ?)", NAMES, "", now, now]] };
+}
+
 // Run by the hourly cron. Does nothing without the webhook secret. The state
 // is only written once Discord took the message, so a failed post is retried
 // next hour.
@@ -102,12 +131,14 @@ export async function checkAlerts(env, now = Math.floor(Date.now() / 1000)) {
   if (!env.ALERT_WEBHOOK_URL) {
     return;
   }
-  const [houses, stats, errors24, stored] = await env.DB.batch([
+  const [houses, stats, errors24, stored, waiting] = await env.DB.batch([
     env.DB.prepare("SELECT region, snapshot, items FROM ah_houses"),
     env.DB.prepare("SELECT body, updated_at FROM admin_stats WHERE name = 'dashboard'"),
     env.DB.prepare("SELECT COUNT(DISTINCT fingerprint) AS errors, COUNT(DISTINCT reporter) AS players " +
       "FROM error_reporters WHERE last_seen > ?").bind(now - 86400),
     env.DB.prepare("SELECT key, message, since, notified FROM alerts"),
+    env.DB.prepare("SELECT COUNT(*) AS count, MAX(updated_at) AS newest FROM leaderboard_names " +
+      "WHERE name IS NOT NULL AND approved = 0"),
   ]);
   const row = stats.results[0];
   let snapshot = null;
@@ -119,8 +150,15 @@ export async function checkAlerts(env, now = Math.floor(Date.now() / 1000)) {
   const current = findProblems({
     houses: houses.results, statsUpdated: row ? row.updated_at : null, snapshot, errors24: errors24.results[0],
   }, now);
-  const { text, writes } = planAlerts(stored.results, current, now);
+  const namesRow = stored.results.find((r) => r.key === NAMES) || null;
+  const health = planAlerts(stored.results.filter((r) => r.key !== NAMES), current, now);
+  const names = planNames(waiting.results[0] || {}, namesRow, now);
+  const text = [health.text, names.line].filter(Boolean).join("\n");
+  const writes = health.writes.concat(names.writes);
   if (!text) {
+    if (writes.length) {   // names were all reviewed: forget them quietly
+      await env.DB.batch(writes.map(([sql, ...params]) => env.DB.prepare(sql).bind(...params)));
+    }
     return;
   }
   const response = await fetch(env.ALERT_WEBHOOK_URL, {
@@ -135,5 +173,5 @@ export async function checkAlerts(env, now = Math.floor(Date.now() / 1000)) {
   if (writes.length) {
     await env.DB.batch(writes.map(([sql, ...params]) => env.DB.prepare(sql).bind(...params)));
   }
-  console.log("Sent an alert: " + Object.keys(current).join(", "));
+  console.log("Sent an alert: " + Object.keys(current).concat(names.line ? [NAMES] : []).join(", "));
 }
