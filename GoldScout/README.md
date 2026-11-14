@@ -16,7 +16,9 @@ based on your level, class, faction and professions.
   - mobs that drop valuable crafting reagents, with rates from your own loot and other players'.
     By default a row counts only its item; turn on **Count all loot in gold per hour** in Settings
     (or `/gscout set allloot on`) to add everything else the mob drops, vendor trash too, once
-    players have looted it 10 times (coin isn't recorded, so it isn't counted)
+    players have looted it 15 times, counting only items that dropped at least 3 times, so one lucky
+    drop doesn't inflate it, and pricing an item at no more than 3 times its regional price; the
+    tooltip lists what the other loot is (coin isn't recorded, so it isn't counted)
   - cloth from humanoids up to your level (off by default; `/gscout set cloth on`)
   - herbs, ore and leather you can gather with your Herbalism, Mining or Skinning skill
   - fishing: one row per zone for open water and for each kind of fishing pool, valued from what

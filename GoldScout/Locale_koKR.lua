@@ -353,4 +353,8 @@ ns.AddLocale("koKR", {
   ["By item"] = "아이템별",
   ["One row per item, from its best source. Click + on an item to see its other sources."] = "아이템당 한 줄, 가장 좋은 출처 기준입니다. 아이템의 +를 눌러 다른 출처를 보세요.",
   ["Best mob for you right now: %s, roughly %s an hour."] = "지금 가장 좋은 몬스터: %s, 시간당 약 %s.",
+  ["Other loot"] = "기타 획득품",
+  ["%d in %d kills"] = "%d회 / 처치 %d회",
+  ["and %d more"] = "외 %d개",
+  ["* Your auction house lists it at over %d times the regional price, so it counts at %d times that."] = "* 내 경매장 가격이 지역 가격의 %d배를 넘어서 %d배로 계산합니다.",
 })

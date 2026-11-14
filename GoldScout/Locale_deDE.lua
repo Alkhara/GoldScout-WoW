@@ -352,4 +352,8 @@ ns.AddLocale("deDE", {
   ["By item"] = "Nach Gegenstand",
   ["One row per item, from its best source. Click + on an item to see its other sources."] = "Eine Zeile pro Gegenstand, von seiner besten Quelle. Klicke bei einem Gegenstand auf +, um seine anderen Quellen zu sehen.",
   ["Best mob for you right now: %s, roughly %s an hour."] = "Bester Gegner für dich gerade: %s, etwa %s pro Stunde.",
+  ["Other loot"] = "Sonstige Beute",
+  ["%d in %d kills"] = "%d in %d Kills",
+  ["and %d more"] = "und %d weitere",
+  ["* Your auction house lists it at over %d times the regional price, so it counts at %d times that."] = "* Dein Auktionshaus listet es für mehr als das %d-Fache des regionalen Preises, daher zählt es mit dem %d-Fachen.",
 })

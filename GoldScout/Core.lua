@@ -317,38 +317,75 @@ end
 -- What a looted item is worth to you: its auction price after the cut, or its
 -- vendor price when that's more. Gray items are worth their vendor price,
 -- whatever someone lists them for. Junkboxes count as zero because their
--- contents are counted when you open them.
-function ns.LootValue(itemID)
+-- contents are counted when you open them. With `capped`, an auction price
+-- over OTHER_LOOT_PRICE_CAP times the regional estimate counts as that much
+-- (second return true): estimates of a mob's other loot use it, so an item
+-- nobody buys but someone lists high on your auction house can't carry them.
+ns.OTHER_LOOT_PRICE_CAP = 3
+
+function ns.LootValue(itemID, capped)
   if ns.JUNKBOXES and ns.JUNKBOXES[itemID] then
     return 0
   end
   local sell = ns.ItemSellPrice(itemID) or 0
   local price = ns.Prices and ns.Prices:Get(itemID)
   if price and not ns.IsPoorQuality(itemID) then
-    return math.max(price * ns.AH_CUT, sell)
+    local wasCapped = false
+    local regional = capped and ns.Prices.Bundled and ns.Prices:Bundled()
+    local estimate = regional and regional.price[itemID]
+    if estimate and price > estimate * ns.OTHER_LOOT_PRICE_CAP then
+      price, wasCapped = estimate * ns.OTHER_LOOT_PRICE_CAP, true
+    end
+    local value = math.max(price * ns.AH_CUT, sell)
+    return value, wasCapped and value > sell
   end
   return sell
 end
 
+-- Times an item must have dropped from a mob (yours plus the community's)
+-- before it counts toward that mob's loot value. A single lucky drop of a
+-- recipe or green over a few dozen kills would otherwise carry the average.
+ns.OTHER_LOOT_MIN_DROPS = 3
+
 -- What a kill's loot is worth on average, from one or more drop records for
 -- the same mob (your own, the community's; either may be nil), leaving out
--- skipItem. Coin isn't recorded, so it isn't included. Returns value per kill
--- and the kills behind it.
+-- skipItem (an item ID, or a set of them) and items seen fewer than
+-- OTHER_LOOT_MIN_DROPS times, with prices capped (ns.LootValue). Coin isn't
+-- recorded, so it isn't included. Returns value per kill, the kills behind
+-- it, and what makes it up: { { item, value (per kill), drops, capped } },
+-- most valuable first.
 function ns.KillLootValue(skipItem, ...)
   local skip = type(skipItem) == "table" and skipItem or { [skipItem or false] = true }
-  local kills, total = 0, 0
+  local kills, drops, quantity = 0, {}, {}
   for i = 1, select("#", ...) do
     local entry = select(i, ...)
     if entry and (entry.k or 0) > 0 then
       kills = kills + entry.k
       for itemID, stat in pairs(entry.i or {}) do
         if not skip[itemID] then
-          total = total + ns.LootValue(itemID) * (stat.q or 0)
+          drops[itemID] = (drops[itemID] or 0) + (stat.d or 0)
+          quantity[itemID] = (quantity[itemID] or 0) + (stat.q or 0)
         end
       end
     end
   end
-  return (kills > 0) and total / kills or 0, kills
+  local total, parts = 0, {}
+  for itemID, count in pairs(quantity) do
+    if drops[itemID] >= ns.OTHER_LOOT_MIN_DROPS and kills > 0 then
+      local value, capped = ns.LootValue(itemID, true)
+      if value > 0 then
+        total = total + value * count
+        parts[#parts + 1] = { item = itemID, value = value * count / kills, drops = drops[itemID], capped = capped }
+      end
+    end
+  end
+  table.sort(parts, function(a, b)
+    if a.value ~= b.value then
+      return a.value > b.value
+    end
+    return a.item < b.item
+  end)
+  return (kills > 0) and total / kills or 0, kills, parts
 end
 
 -- 1 = binds when picked up, 4 = quest item. Both can't go on the auction house.

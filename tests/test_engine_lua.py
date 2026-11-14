@@ -385,12 +385,12 @@ class AllLootTests(unittest.TestCase):
     run_lua, run_file, item, drops, rows = (FarmRulesTests.run_lua, FarmRulesTests.run_file, FarmRulesTests.item,
                                             FarmRulesTests.drops, FarmRulesTests.rows)
 
-    def mob(self, kills=10):
+    def mob(self, kills=15):
         self.item(5000, price=10000)                                   # the row's reagent: 9500 after the cut
         self.item(5100, price=0, sell=50, quality=0, reagent=False)    # gray trash: vendor price
         self.item(5101, price=1000, sell=5, reagent=False)             # a non-reagent drop: 950 after the cut
         self.drops(3000, kills, {5000: 2, 5100: kills})
-        self.ns.db.drops[3000].i[5101] = self.lua.table_from({"d": 1, "q": 2})
+        self.ns.db.drops[3000].i[5101] = self.lua.table_from({"d": 3, "q": 6})
 
     def row(self):
         return self.rows()[("Learned", 5000)]
@@ -406,21 +406,52 @@ class AllLootTests(unittest.TestCase):
         before = self.row()
         self.ns.db.settings.allLoot = True
         row = self.row()
-        self.assertAlmostEqual(row.otherLoot, (50 * 10 + 950 * 2) / 10)    # 240 a kill; the reagent isn't counted twice
-        self.assertEqual(row.otherLootKills, 10)
+        self.assertAlmostEqual(row.otherLoot, (50 * 15 + 950 * 6) / 15)    # 430 a kill; the reagent isn't counted twice
+        self.assertEqual(row.otherLootKills, 15)
         self.assertAlmostEqual(row.each, before.each)
         self.assertAlmostEqual(row.hour, before.hour * (row.each + row.otherLoot) / row.each)
 
-    def test_needs_ten_kills_from_you_and_the_community(self):
-        self.mob(kills=6)
+    def test_a_lucky_drop_or_two_doesnt_count(self):
+        self.mob()
+        self.item(5102, price=200000, reagent=False)                   # a 20g recipe, seen twice
+        self.ns.db.drops[3000].i[5102] = self.lua.table_from({"d": 2, "q": 2})
+        self.ns.db.settings.allLoot = True
+        self.assertAlmostEqual(self.row().otherLoot, (50 * 15 + 950 * 6) / 15)
+
+    def test_the_breakdown_lists_the_items_most_valuable_first(self):
+        self.mob()
+        self.ns.db.settings.allLoot = True
+        parts = list(self.row().otherLootParts.values())
+        self.assertEqual([(p.item, p.drops) for p in parts], [(5101, 3), (5100, 15)])
+        self.assertAlmostEqual(parts[0].value, 950 * 6 / 15)
+        self.assertFalse(parts[0].capped)
+
+    def test_a_price_far_above_the_regional_estimate_is_capped(self):
+        self.mob()
+        # Regional estimate 100 copper: listed at 1000 here, it counts at 3 x 100.
+        self.run_lua("local ns = ...; ns.Prices.Bundled = function() return { price = { [5101] = 100 } } end")
+        self.ns.db.settings.allLoot = True
+        row = self.row()
+        self.assertAlmostEqual(row.otherLoot, (50 * 15 + 300 * 0.95 * 6) / 15)
+        capped = [p for p in row.otherLootParts.values() if p.item == 5101][0]
+        self.assertTrue(capped.capped)
+
+    def test_a_price_near_the_regional_estimate_is_kept(self):
+        self.mob()
+        self.run_lua("local ns = ...; ns.Prices.Bundled = function() return { price = { [5101] = 400 } } end")
+        self.ns.db.settings.allLoot = True
+        self.assertAlmostEqual(self.row().otherLoot, (50 * 15 + 950 * 6) / 15)   # 1000 is under 3 x 400
+
+    def test_needs_fifteen_kills_from_you_and_the_community(self):
+        self.mob(kills=9)
         self.ns.db.settings.allLoot = True
         self.assertIsNone(self.row().otherLoot)
-        shared = self.lua.eval("{ k = 4, i = {} }")
-        shared.i[5100] = self.lua.table_from({"d": 4, "q": 4})
+        shared = self.lua.eval("{ k = 6, i = {} }")
+        shared.i[5100] = self.lua.table_from({"d": 6, "q": 6})
         self.ns.COMMUNITY[3000] = shared
         row = self.row()
-        self.assertEqual(row.otherLootKills, 10)
-        self.assertAlmostEqual(row.otherLoot, (50 * 10 + 950 * 2) / 10)
+        self.assertEqual(row.otherLootKills, 15)
+        self.assertAlmostEqual(row.otherLoot, (50 * 15 + 950 * 6) / 15)
 
 
 @unittest.skipIf(lua51 is None, "lupa is not installed")
@@ -473,7 +504,22 @@ class MobViewTests(unittest.TestCase):
         self.ns.db.settings.allLoot = True
         mob = [m for m in self.mobs() if m.npc == 3000][0]
         self.assertAlmostEqual(mob.otherLoot, 50)
-        self.assertAlmostEqual(mob.hour, (mob.each + 50) * mob["items"][1].perHour)
+        items = list(mob["items"].values())
+        self.assertAlmostEqual(mob.each, sum(item.each for item in items) + 50)   # Each includes it
+        self.assertAlmostEqual(mob.hour, mob.each * mob.perHour)
+        # The lines under the mob add up to its total: each item's own share plus the other loot.
+        other = mob.otherRow
+        self.assertEqual((other.kind, other.each), ("OtherLoot", 50))
+        self.assertAlmostEqual(sum(item.each * item.perHour for item in items) + other.hour, mob.hour)
+
+    def test_a_one_farm_mob_with_other_loot_is_a_group_too(self):
+        self.item(5000, price=10000)
+        self.item(5100, price=0, sell=50, quality=0, reagent=False)
+        self.drops(3000, 20, {5000: 4, 5100: 20})
+        self.ns.db.settings.allLoot = True
+        mob = [m for m in self.mobs() if m.npc == 3000][0]
+        self.assertEqual((mob.kind, len(mob["items"])), ("Mob", 1))
+        self.assertAlmostEqual(mob.otherRow.each, 50)
 
     kinds = FarmRulesTests.kinds
 

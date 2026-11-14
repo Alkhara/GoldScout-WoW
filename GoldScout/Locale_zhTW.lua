@@ -353,4 +353,8 @@ ns.AddLocale("zhTW", {
   ["By item"] = "依物品",
   ["One row per item, from its best source. Click + on an item to see its other sources."] = "每個物品一行，取其最佳來源。點擊物品的 + 查看其他來源。",
   ["Best mob for you right now: %s, roughly %s an hour."] = "目前最適合你的怪物：%s，每小時約 %s。",
+  ["Other loot"] = "其他掉落",
+  ["%d in %d kills"] = "%d 次 / %d 次擊殺",
+  ["and %d more"] = "還有 %d 項",
+  ["* Your auction house lists it at over %d times the regional price, so it counts at %d times that."] = "* 你的拍賣場售價超過地區價格的 %d 倍，因此以 %d 倍計算。",
 })

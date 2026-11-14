@@ -14,7 +14,9 @@ local PRIOR_WEIGHT = 30
 local LEARNED_MIN_KILLS = 1
 -- Kills of a mob (yours plus the community's) before its other loot counts
 -- toward a row's gold per hour (the allLoot setting); fewer is mostly luck.
-local OTHER_LOOT_MIN_KILLS = 10
+-- 15 is where a drop rate's confidence turns "good". Items also need a few
+-- drops of their own (ns.OTHER_LOOT_MIN_DROPS).
+local OTHER_LOOT_MIN_KILLS = 15
 -- Gold per hour from player data uses drops / (attempts + this), so a lucky
 -- first drop doesn't top the list; it fades out as attempts add up.
 local CAUTION_ATTEMPTS = 2
@@ -684,9 +686,9 @@ function Engine:Farms()
     if not settings.allLoot or not row.each or not npcID then
       return row
     end
-    local value, seen = ns.KillLootValue(row.item, ns.Learn:Entry(npcID), ns.COMMUNITY[npcID])
+    local value, seen, parts = ns.KillLootValue(row.item, ns.Learn:Entry(npcID), ns.COMMUNITY[npcID])
     if seen >= OTHER_LOOT_MIN_KILLS and value > 0 then
-      row.otherLoot, row.otherLootKills = value, seen
+      row.otherLoot, row.otherLootKills, row.otherLootParts = value, seen, parts
       row.hour = (row.each + value) * kills
     end
     return row
@@ -992,10 +994,12 @@ end
 -- adding up everything worth farming that it drops. Pickpocketing a mob is a
 -- row of its own. Farms without a mob (gathering, fishing, cloth) keep their
 -- own rows; market items nobody has seen drop are left out. A mob with one
--- farm is just that farm's row. A mob with more gets a group row: kind
--- "Mob", items = its farms best first, each = value per kill (or pick) of
--- all of them, hour = that times kills per hour. `rows` is Farms() output,
--- sorted best first.
+-- farm (and no other loot counted) is just that farm's row. Otherwise it
+-- gets a group row: kind "Mob", items = its farms best first, each = value
+-- per kill (or pick) of all of them plus its other loot, hour = that times
+-- kills per hour. With Count all loot on, otherRow is a line for the rest of
+-- the mob's loot, so the lines under a mob add up to its total. `rows` is
+-- Farms() output, sorted best first.
 function Engine:MobFarms(rows)
   local groups, order = {}, {}
   for _, row in ipairs(rows) do
@@ -1018,7 +1022,7 @@ function Engine:MobFarms(rows)
   local list = {}
   for _, entry in ipairs(order) do
     local items = entry.rows
-    if #items == 1 then
+    if #items == 1 and not items[1].otherLoot then
       list[#list + 1] = items[1]
     else
       local first = items[1]
@@ -1038,13 +1042,21 @@ function Engine:MobFarms(rows)
       if perHour then
         if otherLoot then
           -- The mob's other loot once, leaving out every item counted above.
-          local value, seen = ns.KillLootValue(skip, ns.Learn:Entry(first.npc), ns.COMMUNITY[first.npc])
+          local value, seen, parts = ns.KillLootValue(skip, ns.Learn:Entry(first.npc), ns.COMMUNITY[first.npc])
           if value > 0 then
-            group.otherLoot, group.otherLootKills = value, seen
+            group.otherLoot, group.otherLootKills, group.otherLootParts = value, seen, parts
           end
         end
-        group.each = each
-        group.hour = (each + (group.otherLoot or 0)) * perHour
+        group.each = each + (group.otherLoot or 0)
+        group.hour = group.each * perHour
+        group.perHour = perHour
+        if group.otherLoot then
+          group.otherRow = {
+            kind = "OtherLoot", otherLoot = group.otherLoot, otherLootKills = group.otherLootKills, per = first.per,
+            otherLootParts = group.otherLootParts,
+            each = group.otherLoot, hour = group.otherLoot * perHour,
+          }
+        end
       else
         group.unknownRate = true
       end

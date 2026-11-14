@@ -130,6 +130,14 @@ local CellText   -- below
 -- group row is a mob with several farms; other rows are one farm (under the
 -- mob's name), and child rows are one of an expanded mob's items.
 local function MobCellText(key, row)
+  if row.kind == "OtherLoot" then
+    if key == "mob" then
+      return Gray("    " .. L["Other loot"])
+    elseif key == "each" or key == "hour" then
+      return ns.Money(row[key])
+    end
+    return ""
+  end
   if key == "mob" then
     if row.child then
       return Gray("    ") .. ns.ItemColor(row.item) .. ns.ItemName(row.item) .. "|r"
@@ -149,12 +157,15 @@ local function MobCellText(key, row)
       return "    " .. CellText("chance", row)
     end
     local text = ns.ItemColor(row.item) .. ns.ItemName(row.item) .. "|r"
-    if row.items then
+    if row.items and #row.items > 1 then
       text = text .. Gray((" +%d"):format(#row.items - 1))
     end
     return text
   elseif key == "lvl" and row.child then
     return ""
+  elseif key == "hour" and row.child and row.otherLoot and row.perHour and row.each then
+    -- Under a mob, an item earns only its own share; the mob's other loot has its own line.
+    return ns.Money(row.each * row.perHour)
   elseif key == "each" and row.unknownRate and not row.each then
     return Gray("?")
   end
@@ -256,6 +267,28 @@ local function CraftTooltip(row)
   end
 end
 
+-- What makes up a row's other loot: its most valuable items per kill, so an
+-- odd price is easy to spot.
+local OTHER_LOOT_LINES = 6
+local function AddOtherLootLines(row)
+  local parts = row.otherLootParts or {}
+  local anyCapped = false
+  for i = 1, math.min(OTHER_LOOT_LINES, #parts) do
+    local part = parts[i]
+    anyCapped = anyCapped or part.capped
+    GameTooltip:AddDoubleLine("   " .. ns.ItemName(part.item)
+      .. Gray(" " .. (L["%d in %d kills"]):format(part.drops, row.otherLootKills or 0)),
+      ns.Money(part.value) .. (part.capped and "*" or ""), 0.8, 0.8, 0.8, 1, 1, 1)
+  end
+  if #parts > OTHER_LOOT_LINES then
+    GameTooltip:AddLine("   " .. (L["and %d more"]):format(#parts - OTHER_LOOT_LINES), 0.6, 0.6, 0.6)
+  end
+  if anyCapped then
+    GameTooltip:AddLine((L["* Your auction house lists it at over %d times the regional price, so it counts at %d "
+      .. "times that."]):format(ns.OTHER_LOOT_PRICE_CAP, ns.OTHER_LOOT_PRICE_CAP), 0.6, 0.6, 0.6, true)
+  end
+end
+
 -- A By mob row with several farms: everything it drops that's worth farming.
 local function MobTooltip(row)
   GameTooltip:AddLine(row.source or "", 1, 1, 1)
@@ -273,10 +306,11 @@ local function MobTooltip(row)
   end
   if row.otherLoot then
     AddMoneyLine(L["Other loot per kill"], row.otherLoot)
+    AddOtherLootLines(row)
   end
   GameTooltip:AddLine(" ")
   if not row.unknownRate then
-    AddMoneyLine(L["Expected value per %s"]:format(Per(row.per)), (row.each or 0) + (row.otherLoot or 0))
+    AddMoneyLine(L["Expected value per %s"]:format(Per(row.per)), row.each)
     AddMoneyLine(L["Rough estimate per hour"], row.hour)
   end
   if row.otherLoot then
@@ -331,6 +365,7 @@ local function FarmTooltip(row)
     AddMoneyLine(L["Expected value per %s"]:format(Per(row.per)), row.each)
     if row.otherLoot then
       AddMoneyLine(L["Other loot per kill"], row.otherLoot)
+      AddOtherLootLines(row)
     end
     AddMoneyLine(L["Rough estimate per hour"], row.hour)
     if row.otherLoot then
@@ -368,6 +403,16 @@ local function RowOnEnter(self)
     return
   end
   GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+  if row.kind == "OtherLoot" then
+    GameTooltip:AddLine(L["Other loot"], 1, 1, 1)
+    AddMoneyLine(L["Other loot per kill"], row.otherLoot)
+    AddOtherLootLines(row)
+    AddMoneyLine(L["Rough estimate per hour"], row.hour)
+    GameTooltip:AddLine((L["Includes the mob's other loot, vendor trash too, from %d kills (not coin)."]):format(
+      row.otherLootKills), 0.6, 0.6, 0.6, true)
+    GameTooltip:Show()
+    return
+  end
   if row.items then
     MobTooltip(row)
     GameTooltip:AddLine(" ")
@@ -419,7 +464,9 @@ local function RowOnClick(self)
     return
   end
   if IsShiftKeyDown() then
-    LinkInChat(row.item)
+    if row.item then
+      LinkInChat(row.item)
+    end
   elseif row.hunt then
     UI.selectedKey = (UI.selectedKey ~= row.hunt.key) and row.hunt.key or nil
     UI:Render()
@@ -1116,7 +1163,7 @@ function UI:Render()
     local row = self.data[self.offset + i]
     rowFrame.data = row
     if row then
-      rowFrame.icon:SetTexture(ns.ItemIcon(row.item))
+      rowFrame.icon:SetTexture(row.item and ns.ItemIcon(row.item) or "Interface\\Icons\\INV_Misc_Bag_10")
       for c, column in ipairs(columns) do
         rowFrame.cells[c]:SetText(mobView and MobCellText(column.key, row) or CellText(column.key, row))
       end
@@ -1170,11 +1217,15 @@ function UI:RegroupByMob()
   for _, row in ipairs(ns.Engine:MobFarms(self.allRows or {})) do
     list[#list + 1] = row
     if row.items then
-      row.sources = #row.items
+      row.sources = #row.items + (row.otherRow and 1 or 0)
       if self.expanded[row.mobKey] then
         for _, item in ipairs(row.items) do
           item.child = true
           list[#list + 1] = item
+        end
+        if row.otherRow then
+          row.otherRow.child = true
+          list[#list + 1] = row.otherRow
         end
       end
     end
