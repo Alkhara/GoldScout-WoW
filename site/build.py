@@ -432,12 +432,12 @@ def layout(title, description, path, body, index=True):
 <div class="wrap">
 <header class="top">
   <a class="brand" href="/"><img src="/logo-400.png" alt="">GoldScout</a>
-  <nav><a href="/farms">Farms by level</a><a href="/drop-rates">Drop rates</a><a href="/companion">Companion</a><a href="/leaderboard">Leaderboard</a><a href="/faq">FAQ</a><a href="%(curseforge)s">Get GoldScout</a></nav>
+  <nav><a href="/farms">Farms by level</a><a href="/fishing">Fishing</a><a href="/drop-rates">Drop rates</a><a href="/companion">Companion</a><a href="/leaderboard">Leaderboard</a><a href="/faq">FAQ</a><a href="%(curseforge)s">Get GoldScout</a></nav>
 </header>
 <main class="page"><div class="table-wrap">%(body)s</div></main>
 </div>
 <footer><div class="wrap">
-  <p><a href="/">Home</a><a href="/farms">Farms by level</a><a href="/drop-rates">How drop rates work</a><a href="/leaderboard">Leaderboard</a><a href="/faq">FAQ</a><a href="%(discord)s">Discord</a><a href="%(source)s">GitHub</a><a href="%(privacy)s">Privacy</a><a href="%(data_license)s">Data license</a></p>
+  <p><a href="/">Home</a><a href="/farms">Farms by level</a><a href="/fishing">Fishing</a><a href="/drop-rates">How drop rates work</a><a href="/leaderboard">Leaderboard</a><a href="/faq">FAQ</a><a href="%(discord)s">Discord</a><a href="%(source)s">GitHub</a><a href="%(privacy)s">Privacy</a><a href="%(data_license)s">Data license</a></p>
   <p>Drop rates come from GoldScout players and are covered by the GoldScout Data License. GoldScout is a fan project, not affiliated with or endorsed by Blizzard Entertainment. World of Warcraft is a trademark of Blizzard Entertainment, Inc.</p>
 </div></footer>
 </body>
@@ -576,7 +576,7 @@ def main():
     write("companion.html", *companion_page(s))
     write("faq.html", *faq_page())
     write("leaderboard.html", *leaderboard_page())
-    data = data_pages.Dataset(results, merged)
+    data = data_pages.Dataset(results, merged, merge_data.merge_fish([r.fishing for r in results], 1000))
     paths = ["/", "/companion", "/leaderboard", "/faq"] + data_pages.build(data, LINKS, write)
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>',
                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']

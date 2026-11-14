@@ -5,7 +5,8 @@
 //   data-qty="itemID"            how many are listed
 //   data-value="id:mult,id:mult" sum of price x mult (gold per kill: mult is
 //                                drop chance x average stack)
-//   table.by-value               rows re-sorted by their data-value, highest first
+//   table.by-value               rows re-sorted by their data-value, highest first; rows marked
+//                                data-thin (too few kills to trust) after the rest
 // The prices come from the GoldScout server, which copies Blizzard's auction
 // house snapshots (Game Data API) every 15 minutes. Everything from the server
 // is written with textContent, never as HTML.
@@ -109,6 +110,10 @@
       var body = table.tBodies[0];
       var rows = Array.prototype.slice.call(body.rows);
       rows.sort(function (a, b) {
+        var thinA = a.hasAttribute("data-thin"), thinB = b.hasAttribute("data-thin");
+        if (thinA !== thinB) {
+          return thinA ? 1 : -1;
+        }
         return copperOf(b) - copperOf(a);
       });
       rows.forEach(function (row) {

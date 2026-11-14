@@ -1,6 +1,7 @@
 """The website's data pages, built from the merged community data: one page
-per mob, one per item players loot (everything but gray vendor trash), one
-per zone, farms by level, and how the numbers work.
+per mob, one per item players loot or fish up (everything but gray vendor
+trash), one per zone, one per level range, fishing by zone, and how the
+numbers work.
 
 Pages whose numbers rest on fewer than INDEX_MIN kills are built but kept out
 of search engines (noindex, left out of the sitemap) until more players loot
@@ -41,15 +42,22 @@ def addon_gems():
     return {int(item) for item in re.findall(r"\[(\d+)\]", block.group(1))} if block else set()
 
 
+def addon_number(file, name):
+    """A number from the addon's code (`name = 123`), so the site's gold per hour matches the Farm tab's."""
+    source = (ADDON / file).read_text(encoding="utf-8")
+    return float(re.search(r"\b%s = ([\d.]+)" % name, source).group(1))
+
+
 def addon_pace(setting):
-    """A default pace from the addon's settings (Core.lua), so the site's gold per hour matches the Farm tab's."""
-    source = (ADDON / "Core.lua").read_text(encoding="utf-8")
-    return int(re.search(r"\b%s = (\d+)" % setting, source).group(1))
+    """A default pace from the addon's settings (Core.lua)."""
+    return int(addon_number("Core.lua", setting))
 
 
 GEMS = addon_gems()
 KILLS_PER_HOUR = addon_pace("killsPerHour")
 PICKS_PER_HOUR = addon_pace("picksPerHour")
+CATCHES_PER_HOUR = addon_pace("catchesPerHour")
+POOL_SHARE = addon_number("Engine.lua", "POOL_FISHING_SHARE")   # a pool takes finding: this share of your time fishes
 
 
 def wilson(hits, trials, z=1.96):
@@ -100,7 +108,7 @@ def bracket_anchor(bracket):
 
 
 class Dataset:
-    def __init__(self, results, merged):
+    def __init__(self, results, merged, fish=None):
         self.mobs = {npc: entry for npc, entry in merged.items() if entry["k"] + entry["p"] >= MIN_ATTEMPTS}
         item_votes, map_votes, meta_votes = defaultdict(Counter), defaultdict(Counter), defaultdict(Counter)
         for result in results:
@@ -134,6 +142,20 @@ class Dataset:
             sources.sort(key=lambda pair: -pair[1])
         for sources in self.sources.values():
             sources.sort(key=lambda source: (source[3] < INDEX_MIN, -self.cautious(source), source[0]))
+        # Fishing, per zone and spot (0 open water, else a kind of pool), with enough catches and a zone name.
+        self.fish = {key: entry for key, entry in (fish or {}).items()
+                     if entry["n"] >= MIN_ATTEMPTS and key[0] in self.map_names}
+        self.fish_sources = defaultdict(list)   # item: [(map, spot, rate, stack, catches)]
+        self.fish_zones = defaultdict(list)     # map: [spot], open water first
+        for (map_id, spot), entry in sorted(self.fish.items()):
+            self.fish_zones[map_id].append(spot)
+            for item, rate, stack in self.catches(map_id, spot):
+                if self.kind(item) != "gray":
+                    self.fish_sources[item].append((map_id, spot, rate, stack, entry["n"]))
+        for sources in self.fish_sources.values():
+            sources.sort(key=lambda source: (source[4] < INDEX_MIN, -self.cautious(
+                (None, source[2], source[3], source[4], None)), source[0], source[1]))
+        self.items = sorted(set(self.sources) | set(self.fish_sources))
         for npcs in self.zones.values():
             npcs.sort(key=lambda npc: (self.mid_level(npc), self.mob_name(npc)))
 
@@ -206,7 +228,28 @@ class Dataset:
         return self.attempts(npc) >= INDEX_MIN
 
     def item_indexed(self, item):
-        return any(attempts >= INDEX_MIN for _, _, _, attempts, _ in self.sources[item])
+        return (any(attempts >= INDEX_MIN for _, _, _, attempts, _ in self.sources.get(item, ()))
+                or any(catches >= INDEX_MIN for _, _, _, _, catches in self.fish_sources.get(item, ())))
+
+    def has_page(self, item):
+        return item in self.sources or item in self.fish_sources
+
+    def catches(self, map_id, spot):
+        """(item, rate per catch, average stack) for one fishing spot, best first."""
+        entry = self.fish[(map_id, spot)]
+        rows = [(item, d / entry["n"], q / d) for item, (d, q) in entry["i"].items() if d]
+        return sorted(rows, key=lambda row: (-row[1], row[0]))
+
+    def spot_name(self, map_id, spot):
+        if spot == 0:
+            return "Open water"
+        pools = [other for other in self.fish_zones[map_id] if other != 0]
+        return "Fishing pool" if len(pools) == 1 else "Fishing pool %d" % (pools.index(spot) + 1)
+
+    def bracket_mobs(self, bracket):
+        npcs = [npc for npc in self.mobs if self.bracket(npc) == bracket]
+        npcs.sort(key=lambda npc: (-(self.best_drops(npc)[0][1] if self.best_drops(npc) else 0), npc))
+        return npcs
 
     def best_drops(self, npc):
         """A mob's crafting reagent drops (every drop until items have kinds), best first."""
@@ -261,11 +304,15 @@ def crumbs(trail):
     return '<p class=crumbs>%s</p><script type="application/ld+json">%s</script>' % (links, script)
 
 
+def bracket_path(bracket):
+    return "/farms/" + bracket_anchor(bracket)
+
+
 def farms_trail(data, npc=None, bracket=None):
     trail = [("/", "Home"), ("/farms", "Farms by level")]
     bracket = bracket or (data.bracket(npc) if npc is not None else None)
     if bracket:
-        trail.append(("/farms#" + bracket_anchor(bracket), bracket_label(bracket)))
+        trail.append((bracket_path(bracket), bracket_label(bracket)))
     return trail
 
 
@@ -282,7 +329,7 @@ def zone_link(data, npc):
 
 def item_link(data, item):
     name = e(data.item_name(item))
-    if item in data.sources:
+    if data.has_page(item):
         return '<a href="/item/%d">%s</a>' % (item, name)
     return name
 
@@ -319,18 +366,35 @@ def drop_table(data, rows, attempts, per="kill"):
 
 
 def mob_table(data, npcs, zone_column=True):
-    """Mobs with their best reagent drops and gold per kill; prices.js re-sorts by gold per kill."""
+    """Mobs with their best reagent drops, gold per kill and per hour; prices.js re-sorts by value."""
     rows = "".join(
-        "<tr><td>%s</td><td class=nowrap>%s</td>%s<td>%s</td>%s</tr>"
-        % (mob_link(data, npc), e(data.levels(npc)),
+        "<tr%s><td>%s</td><td class=nowrap>%s</td>%s<td>%s</td><td class=num>%s %s</td>%s%s</tr>"
+        % (thin(data.mobs[npc]["k"]), mob_link(data, npc), e(data.levels(npc)),
            "<td>%s</td>" % zone_link(data, npc) if zone_column else "",
            ", ".join("%s %s" % (item_cell(data, item), percent(rate))
                      for item, rate, _ in data.best_drops(npc)[:3]) or '<span class=small>none yet</span>',
-           value_cell(data.best_drops(npc)))
+           format(data.mobs[npc]["k"], ","), badge(data.mobs[npc]["k"]),
+           value_cell(data.best_drops(npc)),
+           value_cell([(item, rate * KILLS_PER_HOUR, stack) for item, rate, stack in data.best_drops(npc)]))
         for npc in npcs)
     return ("<table class=by-value><thead><tr><th>Mob</th><th>Level</th>%s<th>Best reagent drops</th>"
-            "<th class=num>Gold per kill</th></tr></thead><tbody>%s</tbody></table>"
-            % ("<th>Zone</th>" if zone_column else "", rows))
+            "<th class=num>Kills</th><th class=num>Gold per kill</th><th class=num>Gold per hour*</th></tr></thead>"
+            "<tbody>%s</tbody></table><p class=small>* Crafting reagents only, at %d kills an hour. In game, "
+            "GoldScout works it out for your character, at your own pace.</p>"
+            % ("<th>Zone</th>" if zone_column else "", rows, KILLS_PER_HOUR))
+
+
+def fishing_link(data, map_id):
+    return '<a href="/fishing/%d">%s</a>' % (map_id, e(data.map_names[map_id]))
+
+
+def fish_pace(spot):
+    return CATCHES_PER_HOUR * (POOL_SHARE if spot else 1)
+
+
+def thin(attempts):
+    """Marks a ranked table row with too few kills (or catches) to trust: prices.js sorts those last."""
+    return " data-thin" if attempts < INDEX_MIN else ""
 
 
 def link_list(items):
@@ -448,47 +512,82 @@ def source_table(data, item, sources, per):
                "kills" if per == "kill" else "pickpockets"))
 
 
+def fish_source_table(data, item, sources):
+    """Where an item is fished up, best first, with gold per catch and per hour."""
+    rows = "".join(
+        "<tr><td>%s</td><td>%s</td><td class=num>%s</td><td class=num>%s %s</td>%s%s</tr>"
+        % (fishing_link(data, map_id), e(data.spot_name(map_id, spot)), chance(rate, catches),
+           format(catches, ","), badge(catches), value_cell([(item, rate, stack)]),
+           value_cell([(item, rate * fish_pace(spot), stack)]))
+        for map_id, spot, rate, stack, catches in sources)
+    return ("<table><thead><tr><th>Zone</th><th>Where</th><th class=num>Chance</th><th class=num>Catches</th>"
+            "<th class=num>Gold per catch</th><th class=num>Gold per hour*</th></tr></thead><tbody>%s</tbody></table>"
+            "<p class=small>* At %d catches an hour in open water, half that at pools (finding the next one takes "
+            "time).</p>" % (rows, CATCHES_PER_HOUR))
+
+
 def item_page(data, item, links):
-    """'Where to farm X': every mob players have looted (or pickpocketed) it from, most reliable first."""
+    """'Where to farm X': every mob players have looted (or pickpocketed) it from and everywhere it's been
+    fished up, most reliable first."""
     name = data.item_name(item)
-    sources = data.sources[item]
+    sources = data.sources.get(item, [])
+    fishing = data.fish_sources.get(item, [])
     kills = [source for source in sources if source[4] == "kill"]
     picks = [source for source in sources if source[4] == "pickpocket"]
-    top_npc, top_rate, _, top_attempts, top_per = sources[0]
-    where = source_where(data, top_npc)
-    count = len({source[0] for source in sources})
-    looted = "looted it from" if kills else "pickpocketed it from"
-    summary = ("%s is %s in WoW Forever. GoldScout players have %s %d mob%s; the best source is %s%s, "
-               "which gave it on %s of %s %s." % (
-                   name, KIND_TEXT[data.kind(item)], looted, count, "" if count == 1 else "s",
-                   data.mob_name(top_npc), " (%s)" % where if where else "", percent(top_rate),
-                   format(top_attempts, ","), "kills" if top_per == "kill" else "pickpockets"))
+    kind = KIND_TEXT[data.kind(item)]
+    fish_zones = len({source[0] for source in fishing})
+    if sources:
+        top_npc, top_rate, _, top_attempts, top_per = sources[0]
+        where = source_where(data, top_npc)
+        count = len({source[0] for source in sources})
+        looted = "looted it from" if kills else "pickpocketed it from"
+        summary = ("%s is %s in WoW Forever. GoldScout players have %s %d mob%s; the best source is %s%s, "
+                   "which gave it on %s of %s %s." % (
+                       name, kind, looted, count, "" if count == 1 else "s",
+                       data.mob_name(top_npc), " (%s)" % where if where else "", percent(top_rate),
+                       format(top_attempts, ","), "kills" if top_per == "kill" else "pickpockets"))
+        if fishing:
+            summary += " It's also fished up in %d zone%s." % (fish_zones, "" if fish_zones == 1 else "s")
+        others = count - 1
+        description = "%s %s from %s (%s)%s in WoW Forever. Drop rates counted from GoldScout players' loot." % (
+            name, "drops" if top_per == "kill" else "is pickpocketed", data.mob_name(top_npc), percent(top_rate),
+            " and %d other mob%s" % (others, "" if others == 1 else "s") if others else "")
+    else:
+        top_map, top_spot, top_rate, _, top_catches = fishing[0]
+        spot = data.spot_name(top_map, top_spot).lower()
+        summary = ("%s is %s in WoW Forever. GoldScout players have fished it up in %d zone%s; the best spot is %s "
+                   "in %s, which gave it on %s of %s catches." % (
+                       name, kind, fish_zones, "" if fish_zones == 1 else "s", spot, data.map_names[top_map],
+                       percent(top_rate), format(top_catches, ",")))
+        description = "Where to fish %s in WoW Forever: %s in %s (%s of catches)%s. Counted from GoldScout players' catches." % (
+            name, spot, data.map_names[top_map], percent(top_rate),
+            ", and %d other zone%s" % (fish_zones - 1, "" if fish_zones == 2 else "s") if fish_zones > 1 else "")
     sections = []
     if kills:
         sections.append("<h2>Where it drops</h2>" + source_table(data, item, kills, "kill"))
     if picks:
         sections.append("<h2>Pickpocketing</h2>" + source_table(data, item, picks, "pickpocket"))
+    if fishing:
+        sections.append("<h2>Fishing</h2>" + fish_source_table(data, item, fishing))
     sections.append(legend())
     related, seen = [], {item}
-    for npc, _, _, _, _ in sources:
-        for other, _, _ in data.drops(npc):
-            if other not in seen and other in data.sources and data.kind(other) != "gray":
-                seen.add(other)
-                related.append(other)
+    nearby = [row for npc, _, _, _, _ in sources for row in data.drops(npc)]
+    nearby += [row for map_id, spot, _, _, _ in fishing for row in data.catches(map_id, spot)]
+    for other, _, _ in nearby:
+        if other not in seen and data.has_page(other):
+            seen.add(other)
+            related.append(other)
     related.sort(key=lambda other: (data.kind(other) != "reagent", data.item_name(other)))
     if related:
-        sections.append("<h2>Farm these at the same time</h2><p class=sub>Other items the same mobs drop.</p>%s"
-                        % link_list(item_link(data, other) for other in related[:RELATED]))
-    trail = [("/", "Home"), ("/farms", "Farms by level"), ("/item/%d" % item, name)]
+        sections.append("<h2>Farm these at the same time</h2><p class=sub>Other items from the same mobs and "
+                        "fishing spots.</p>%s" % link_list(item_link(data, other) for other in related[:RELATED]))
+    trail = [("/", "Home"), ("/fishing" if not sources else "/farms",
+                             "Fishing" if not sources else "Farms by level"), ("/item/%d" % item, name)]
     price = ('<p class=facts>Lowest price: <b data-price="%d">%s</b> <span class=small data-qty="%d"></span></p>'
              % (item, LOADING, item))
     body = ("%s<h1>%s</h1><p class=summary>%s</p>%s%s%s%s"
             % (crumbs(trail), e(name), e(summary), price_bar(), price, "".join(sections), cta(links)))
-    title = "Where to farm %s (WoW Forever)" % name
-    others = count - 1
-    description = "%s %s from %s (%s)%s in WoW Forever. Drop rates counted from GoldScout players' loot." % (
-        name, "drops" if top_per == "kill" else "is pickpocketed", data.mob_name(top_npc), percent(top_rate),
-        " and %d other mob%s" % (others, "" if others == 1 else "s") if others else "")
+    title = ("Where to farm %s (WoW Forever)" if sources else "Where to fish %s (WoW Forever)") % name
     return title, description, body
 
 
@@ -517,6 +616,9 @@ def zone_page(data, map_id, links):
                             "<tr><td>%s</td><td>%s</td><td class=num>%s</td>%s</tr>"
                             % (item_cell(data, item), mob_link(data, npc), percent(rate), price_cell(item))
                             for item, (npc, rate) in ordered)))
+    if map_id in data.fish_zones:
+        sections.append('<p>Fishing here too: see <a href="/fishing/%d">what players catch in %s</a>.</p>'
+                        % (map_id, e(zone)))
     sections.append(legend())
     trail = [("/", "Home"), ("/farms", "Farms by level"), ("/zone/%d" % map_id, zone)]
     body = "%s<h1>Farming in %s</h1><p class=summary>%s</p>%s%s%s" % (
@@ -526,19 +628,26 @@ def zone_page(data, map_id, links):
     return title, description, body
 
 
+FARMS_PREVIEW = 5   # mobs per level range on the /farms overview
+
+
 def farms_page(data, links):
+    """The overview: each level range's top mobs, linking to its own page."""
     sections = []
     for bracket in BRACKETS:
-        npcs = [npc for npc in data.mobs if data.bracket(npc) == bracket]
+        npcs = data.bracket_mobs(bracket)
         if not npcs:
             continue
-        npcs.sort(key=lambda npc: -(data.best_drops(npc)[0][1] if data.best_drops(npc) else 0))
-        sections.append('<h2 id="%s">%s</h2>%s' % (bracket_anchor(bracket), bracket_label(bracket),
-                                                   mob_table(data, npcs)))
+        sections.append('<h2 id="%s"><a href="%s">%s</a></h2>%s<p><a href="%s">All %d farm%s for %s</a></p>'
+                        % (bracket_anchor(bracket), bracket_path(bracket), bracket_label(bracket),
+                           mob_table(data, npcs[:FARMS_PREVIEW]), bracket_path(bracket), len(npcs),
+                           "" if len(npcs) == 1 else "s", bracket_label(bracket).lower()))
     if not sections:
         sections.append("<p class=sub>No mobs have enough kills recorded yet.</p>")
     else:
         sections.append(legend())
+    if data.fish:
+        sections.append('<h2>Fishing</h2><p><a href="/fishing">The best fishing spots for gold</a>, by zone.</p>')
     if data.zones:
         zones = sorted(data.zones, key=lambda map_id: data.map_names[map_id])
         sections.append("<h2>By zone</h2>" + link_list(
@@ -547,11 +656,136 @@ def farms_page(data, links):
             for map_id in zones))
     trail = [("/", "Home"), ("/farms", "Farms by level")]
     body = ("%s<h1>Farms by level</h1><p class=facts>Mobs GoldScout players have recorded at least %d kills of, "
-            "with the crafting reagents they drop most often, ranked by gold per kill at current auction prices. "
-            "Open a mob for every drop, or a reagent for everywhere it drops.</p>%s%s%s"
-            % (crumbs(trail), MIN_ATTEMPTS, price_bar(), "".join(sections), cta(links)))
+            "with the crafting reagents they drop most often, ranked by gold per hour at current auction prices. "
+            "Open a level range for every farm in it, a mob for every drop, or an item for everywhere it drops.</p>"
+            "%s%s%s" % (crumbs(trail), MIN_ATTEMPTS, price_bar(), "".join(sections), cta(links)))
     return ("Gold farms by level (WoW Forever)",
-            "WoW Forever mobs and the crafting reagents they drop, by level, from GoldScout players' loot.", body)
+            "The best WoW Forever gold farms for every level range, ranked by gold per hour at current auction "
+            "prices, from GoldScout players' loot.", body)
+
+
+def bracket_page(data, bracket, links):
+    """Every mob in one level range, ranked by gold per hour at the visitor's prices."""
+    label = bracket_label(bracket)
+    npcs = data.bracket_mobs(bracket)
+    kills = sum(data.mobs[npc]["k"] for npc in npcs)
+    zones = sorted({data.zone_id(npc) for npc in npcs} - {None}, key=lambda map_id: data.map_names[map_id])
+    summary = ("%d mobs at %s that GoldScout players have recorded, from %s kills, ranked by what their crafting "
+               "reagents are worth an hour at current auction prices. Pick your realm type and faction for your "
+               "prices." % (len(npcs), label.lower(), format(kills, ",")))
+    sections = ["<h2>Mobs</h2>" + mob_table(data, npcs), legend()]
+    if zones:
+        sections.append("<h2>Zones at these levels</h2>" + link_list(
+            '<a href="/zone/%d">%s</a>' % (map_id, e(data.map_names[map_id])) for map_id in zones))
+    others = [other for other in BRACKETS if other != bracket and data.bracket_mobs(other)]
+    if others:
+        sections.append("<h2>Other levels</h2>" + link_list(
+            '<a href="%s">%s</a>' % (bracket_path(other), bracket_label(other)) for other in others))
+    body = ("%s<h1>Gold farms for %s</h1><p class=summary>%s</p>%s%s%s"
+            % (crumbs(farms_trail(data, bracket=bracket)), label.lower(), e(summary), price_bar(),
+               "".join(sections), cta(links)))
+    return ("Best gold farms for %s (WoW Forever)" % label.lower(),
+            "The WoW Forever mobs worth farming at %s, ranked by gold per hour at current auction prices, from %s "
+            "kills recorded by GoldScout players." % (label.lower(), format(kills, ",")), body)
+
+
+def catch_table(data, map_id, spot):
+    entry = data.fish[(map_id, spot)]
+    body = "".join(
+        "<tr><td>%s</td><td class=num>%s</td><td class=num>%s</td>%s%s</tr>"
+        % (item_link(data, item), chance(rate, entry["n"]), ("%.1f" % stack).rstrip("0").rstrip("."),
+           price_cell(item), value_cell([(item, rate, stack)]))
+        for item, rate, stack in data.catches(map_id, spot) if data.kind(item) != "gray")
+    return ("<table><thead><tr><th>Catch</th><th class=num>Chance</th><th class=num>Avg. stack</th>"
+            "<th class=num>Price</th><th class=num>Per catch</th></tr></thead><tbody>%s</tbody></table>" % body)
+
+
+def spot_rows_value(data, map_id, spot, per_hour=False, tag="td"):
+    """What a spot's catch (gray junk left out) is worth per catch, or per hour, for prices.js to fill in."""
+    pace = fish_pace(spot) if per_hour else 1
+    rows = [(item, rate * pace, stack) for item, rate, stack in data.catches(map_id, spot) if data.kind(item) != "gray"]
+    if tag == "td":
+        return value_cell(rows)
+    return '<%s data-value="%s">%s</%s>' % (tag, per_kill(rows), LOADING, tag)
+
+
+def spot_value(data, map_id, spot, per_hour=False):
+    return spot_rows_value(data, map_id, spot, per_hour)
+
+
+def fishing_zone_indexed(data, map_id):
+    return any(data.fish[(map_id, spot)]["n"] >= INDEX_MIN for spot in data.fish_zones[map_id])
+
+
+def fishing_zone_page(data, map_id, links):
+    zone = data.map_names[map_id]
+    spots = data.fish_zones[map_id]
+    catches = sum(data.fish[(map_id, spot)]["n"] for spot in spots)
+    skills = [data.fish[(map_id, spot)]["s"] for spot in spots if data.fish[(map_id, spot)]["s"]]
+    first = data.catches(map_id, spots[0])
+    top = [(item, rate) for item, rate, _ in first if data.kind(item) != "gray"][:2]
+    summary = "GoldScout players have recorded %s catches fishing in %s, WoW Forever." % (format(catches, ","), zone)
+    if skills:
+        summary += " The lowest Fishing skill seen catching here is %d." % min(skills)
+    if top:
+        summary += " %s gives %s." % (data.spot_name(map_id, spots[0]), " and ".join(
+            "%s on %s of catches" % (data.item_name(item), percent(rate)) for item, rate in top))
+    sections = []
+    for spot in spots:
+        entry = data.fish[(map_id, spot)]
+        facts = ["%s catches %s" % (format(entry["n"], ","), badge(entry["n"]))]
+        if entry["s"]:
+            facts.append("lowest skill seen %d" % entry["s"])
+        sections.append('<h2>%s</h2><p class=facts>%s &middot; about %s a catch, %s an hour*</p>%s'
+                        % (e(data.spot_name(map_id, spot)), " &middot; ".join(facts),
+                           spot_rows_value(data, map_id, spot, tag="b"),
+                           spot_rows_value(data, map_id, spot, True, tag="b"),
+                           catch_table(data, map_id, spot)))
+    sections.append("<p class=small>* At %d catches an hour in open water, half that at pools. Gray junk is "
+                    "left out.</p>" % CATCHES_PER_HOUR)
+    sections.append(legend().replace("per kill", "per catch").replace("more kills are", "more catches are"))
+    if map_id in data.zones:
+        sections.append('<p>Mobs to farm here too: see <a href="/zone/%d">farming in %s</a>.</p>' % (map_id, e(zone)))
+    others = [other for other in sorted(data.fish_zones, key=lambda m: data.map_names[m]) if other != map_id]
+    if others:
+        sections.append("<h2>Fishing elsewhere</h2>" + link_list(fishing_link(data, other) for other in others))
+    trail = [("/", "Home"), ("/fishing", "Fishing"), ("/fishing/%d" % map_id, zone)]
+    body = "%s<h1>Fishing in %s</h1><p class=summary>%s</p>%s%s%s" % (
+        crumbs(trail), e(zone), e(summary), price_bar(), "".join(sections), cta(links))
+    description = "What you catch fishing in %s, WoW Forever%s, from %s catches recorded by GoldScout players." % (
+        zone, ": " + ", ".join("%s %s" % (data.item_name(item), percent(rate)) for item, rate in top) if top else "",
+        format(catches, ","))
+    return "Fishing in %s: catches and gold per hour (WoW Forever)" % zone, description, body
+
+
+def fishing_page(data, links):
+    """Every zone and spot players have fished, ranked by gold per hour at the visitor's prices."""
+    rows = []
+    for map_id in data.fish_zones:
+        for spot in data.fish_zones[map_id]:
+            entry = data.fish[(map_id, spot)]
+            top = [(item, rate) for item, rate, _ in data.catches(map_id, spot) if data.kind(item) != "gray"][:2]
+            rows.append("<tr%s><td>%s</td><td>%s</td><td class=num>%s %s</td><td class=num>%s</td><td>%s</td>%s%s</tr>"
+                        % (thin(entry["n"]), fishing_link(data, map_id), e(data.spot_name(map_id, spot)), format(entry["n"], ","),
+                           badge(entry["n"]), entry["s"] or "", ", ".join(
+                               "%s %s" % (item_link(data, item), percent(rate)) for item, rate in top),
+                           spot_value(data, map_id, spot), spot_value(data, map_id, spot, True)))
+    table = ("<table class=by-value><thead><tr><th>Zone</th><th>Where</th><th class=num>Catches</th>"
+             "<th class=num>Lowest skill</th><th>Best catches</th><th class=num>Gold per catch</th>"
+             "<th class=num>Gold per hour*</th></tr></thead><tbody>%s</tbody></table>"
+             "<p class=small>* At %d catches an hour in open water, half that at pools. Lowest skill is the lowest "
+             "Fishing skill a player has caught there with.</p>" % ("".join(rows), CATCHES_PER_HOUR))
+    catches = sum(entry["n"] for entry in data.fish.values())
+    summary = ("Every zone GoldScout players have fished in WoW Forever, from %s catches, ranked by what the catch is "
+               "worth an hour at current auction prices. Pick your realm type and faction for your prices."
+               % format(catches, ","))
+    trail = [("/", "Home"), ("/fishing", "Fishing")]
+    body = "%s<h1>Fishing for gold</h1><p class=summary>%s</p>%s%s%s%s" % (
+        crumbs(trail), e(summary), price_bar(), table if rows else "<p class=sub>No fishing recorded yet.</p>",
+        legend().replace("per kill", "per catch").replace("more kills are", "more catches are"), cta(links))
+    return ("Best fishing spots for gold (WoW Forever)",
+            "Where to fish for gold in WoW Forever: every zone ranked by gold per hour at current auction prices, "
+            "from %s catches recorded by GoldScout players." % format(catches, ","), body)
 
 
 def rates_page(data, links):
@@ -600,10 +834,17 @@ def build(data, links, write):
         if index:
             paths.append("/" + path)
 
+    for bracket in BRACKETS:
+        if data.bracket_mobs(bracket):
+            page(bracket_path(bracket)[1:], bracket_page(data, bracket, links))
     for npc in sorted(data.mobs):
         page("mob/%d" % npc, mob_page(data, npc, links), data.mob_indexed(npc))
-    for item in sorted(data.sources):
+    for item in data.items:
         page("item/%d" % item, item_page(data, item, links), data.item_indexed(item))
     for map_id in sorted(data.zones):
         page("zone/%d" % map_id, zone_page(data, map_id, links))
+    if data.fish:
+        page("fishing", fishing_page(data, links))
+        for map_id in sorted(data.fish_zones):
+            page("fishing/%d" % map_id, fishing_zone_page(data, map_id, links), fishing_zone_indexed(data, map_id))
     return paths

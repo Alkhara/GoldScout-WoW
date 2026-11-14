@@ -157,6 +157,21 @@ class DataPagesTests(unittest.TestCase):
 
     def test_pace_comes_from_the_addon(self):
         self.assertEqual((data_pages.KILLS_PER_HOUR, data_pages.PICKS_PER_HOUR), (70, 110))
+        self.assertEqual((data_pages.CATCHES_PER_HOUR, data_pages.POOL_SHARE), (200, 0.5))
+
+    def test_level_range_pages(self):
+        paths, pages, index = self.build(dataset())
+        self.assertIn("/farms/levels-21-30", paths)
+        self.assertNotIn("farms/levels-1-10.html", pages)  # no mobs recorded at those levels
+        title, description, body = pages["farms/levels-21-30.html"]
+        self.assertEqual(title, "Best gold farms for levels 21-30 (WoW Forever)")
+        self.assertIn("from 30 kills", description)
+        self.assertIn('href="/mob/3809"', body)
+        self.assertIn('href="/zone/1440"', body)
+        self.assertIn("Gold per hour", body)
+        self.assertIn('data-value="3730:28', body)        # 0.4 Big Bear Meat a kill x 70 kills an hour
+        self.assertIn('<tr data-thin><td><a href="/mob/4054">', body)   # 10 kills: sorted after the rest
+        self.assertIn('<tr><td><a href="/mob/3809">', body)
 
     def test_breadcrumbs_and_structured_data(self):
         data = dataset()
@@ -166,9 +181,10 @@ class DataPagesTests(unittest.TestCase):
         self.assertEqual(crumbs["@type"], "BreadcrumbList")
         self.assertEqual([c["name"] for c in crumbs["itemListElement"]],
                          ["Home", "Farms by level", "Levels 21-30", "Laughing Sister & Co's"])
-        self.assertEqual(crumbs["itemListElement"][2]["item"], "https://wowgoldscout.com/farms#levels-21-30")
+        self.assertEqual(crumbs["itemListElement"][2]["item"], "https://wowgoldscout.com/farms/levels-21-30")
         _, _, farms = data_pages.farms_page(data, LINKS)
-        self.assertIn('id="levels-21-30"', farms)       # the breadcrumb's anchor exists
+        self.assertIn('id="levels-21-30"', farms)       # old /farms#levels-21-30 links still land
+        self.assertIn('href="/farms/levels-21-30"', farms)
 
     def test_summaries_and_descriptions(self):
         data = dataset()
@@ -244,6 +260,69 @@ class DataPagesTests(unittest.TestCase):
         _, _, body = data_pages.mob_page(data, 3809, LINKS)
         self.assertIn("<h2>Drops</h2>", body)
         self.assertIn("Torn Bear Pelt", body)
+
+
+FISH = """GoldScout-export 5^abcdefghijkl^1
+@f^1444^0^40^226^6359:12:12,6358:8:8,3670:30:30^
+@f^1444^180750^10^240^13422:6:12^
+@f^1440^0^4^100^6359:1:1^
+@i^6359^Firefin Snapper
+@i^6358^Oily Blackmouth
+@i^3670^Large Slimy Bone
+@i^13422^Stonescale Eel
+@q^6359^1:7:1
+@q^6358^1:7:1
+@q^3670^0:15:0
+@q^13422^1:7:1
+@m^1444^Feralas
+@m^1440^Ashenvale
+@l^0^enUS
+"""
+
+
+class FishingPagesTests(unittest.TestCase):
+    def setUp(self):
+        fish = submission.parse(FISH)
+        assert fish.ok, fish.errors
+        mobs = submission.parse(V4)
+        results = [mobs, fish]
+        self.data = data_pages.Dataset(results, merge_data.merge([mobs.mobs], 1000),
+                                       merge_data.merge_fish([fish.fishing], 1000))
+        self.pages, self.index = {}, {}
+
+        def write(path, *page, index=True):
+            self.pages[path] = page
+            self.index[path] = index
+        self.paths = data_pages.build(self.data, LINKS, write)
+
+    def test_zone_page_lists_each_spot(self):
+        self.assertIn("/fishing/1444", self.paths)
+        title, description, body = self.pages["fishing/1444.html"]
+        self.assertEqual(title, "Fishing in Feralas: catches and gold per hour (WoW Forever)")
+        self.assertIn("<h2>Open water</h2>", body)
+        self.assertIn("<h2>Fishing pool</h2>", body)
+        self.assertIn("lowest skill seen 226", body)
+        self.assertIn("Firefin Snapper on 30% of catches", body)
+        self.assertNotIn("Large Slimy Bone", body)            # gray junk left out
+        self.assertIn('data-value="6359:60,6358:40"', body)    # an hour of open water: 200 catches
+        self.assertIn('data-value="13422:120"', body)          # pools: half the pace, stacks of 2
+        self.assertNotIn("fishing/1440.html", self.pages)      # 4 catches: under the minimum
+
+    def test_overview_ranks_every_spot(self):
+        title, _, body = self.pages["fishing.html"]
+        self.assertEqual(title, "Best fishing spots for gold (WoW Forever)")
+        self.assertIn("<table class=by-value>", body)
+        self.assertEqual(body.count('href="/fishing/1444"'), 2)  # open water and the pool
+
+    def test_fish_get_item_pages(self):
+        title, description, body = self.pages["item/6359.html"]
+        self.assertEqual(title, "Where to fish Firefin Snapper (WoW Forever)")
+        self.assertIn("fished it up in 1 zone; the best spot is open water in Feralas, which gave it on 30% "
+                      "of 40 catches.", body)
+        self.assertIn("<h2>Fishing</h2>", body)
+        self.assertTrue(self.index["item/6359.html"])          # 40 catches
+        self.assertFalse(self.index["item/13422.html"])        # 10 catches at the pool
+        self.assertNotIn("item/3670.html", self.pages)
 
 
 class FaqTests(unittest.TestCase):
