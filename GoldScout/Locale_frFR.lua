@@ -366,7 +366,7 @@ ns.AddLocale("frFR", {
   ["Select it and press Hunt for a waypoint and to count your kills. Share your loot with GoldScout Companion so every player's rates get better."] = "Sélectionnez-le et appuyez sur Chasser pour un point de passage et pour compter vos victimes. Partagez votre butin avec GoldScout Companion pour améliorer les taux de tous les joueurs.",
   ["Data wanted"] = "Données recherchées",
   ["Mobs that need more kills before their drop rates are solid, near your level and in your zone first. Hunt one and share your loot: every GoldScout player's rates get better."] = "Monstres qui ont besoin de plus de victimes avant que leurs taux de butin soient fiables, proches de votre niveau et de votre zone en premier. Chassez-en un et partagez votre butin : les taux s'améliorent pour tous les joueurs de GoldScout.",
-  ["Kills wanted: %s needs %d more for solid drop rates."] = "Victimes recherchées : il manque encore %2$d à %1$s pour des taux de butin fiables.",
+  ["Kills wanted: %s needs %d more for solid drop rates."] = "Victimes recherchées : %s a encore besoin de %d victimes pour des taux de butin fiables.",
   ["Every mob players have recorded near your level has solid drop rates. Try 'All levels'."] = "Tous les monstres enregistrés proches de votre niveau ont des taux de butin fiables. Essayez 'Tous niveaux'.",
   ["  /gscout wanted - mobs that need more kills for solid drop rates"] = "  /gscout wanted - monstres qui ont besoin de plus de victimes pour des taux fiables",
 })
