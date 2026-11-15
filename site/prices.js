@@ -20,32 +20,47 @@
   }
   var pick = bar.querySelector("select");
   var status = bar.querySelector(".status");
+  // German pages (<html lang="de">, under /de/) show German; everything else English.
+  var GERMAN = document.documentElement.lang === "de";
+  var DE = {
+    "c": "k", "not listed": "nicht angeboten", " listed": " angeboten", "Loading prices...": "Preise werden geladen...",
+    "Lowest buyout, snapshot ": "Niedrigster Sofortkaufpreis, Stand ", "Prices are unavailable right now.":
+    "Preise sind gerade nicht verfügbar.", " realms, ": "-Realms, ", "Blackwater (neutral)": "Schwarzwasser (neutral)",
+    "Alliance": "Allianz", "Horde": "Horde"
+  };
+  function t(text) {
+    return GERMAN && DE[text] ? DE[text] : text;
+  }
+
+  function number(n) {
+    return n.toLocaleString(GERMAN ? "de-DE" : "en-US");
+  }
 
   function money(copper) {
     copper = Math.round(copper);
     var g = Math.floor(copper / 10000), s = Math.floor(copper / 100) % 100, c = copper % 100;
     if (g > 0) {
-      return g.toLocaleString("en-US") + "g " + s + "s";
+      return number(g) + "g " + s + "s";
     }
     if (s > 0) {
-      return s + "s " + c + "c";
+      return s + "s " + c + t("c");
     }
-    return c + "c";
+    return c + t("c");
   }
 
   function minutesAgo(unix) {
     var minutes = Math.max(0, Math.round((Date.now() / 1000 - unix) / 60));
     if (minutes < 90) {
-      return minutes + " min ago";
+      return GERMAN ? "vor " + minutes + (minutes === 1 ? " Minute" : " Minuten") : minutes + " min ago";
     }
-    return Math.round(minutes / 60) + " hours ago";
+    return GERMAN ? "vor " + Math.round(minutes / 60) + " Stunden" : Math.round(minutes / 60) + " hours ago";
   }
 
   var REGION_ORDER = ["us", "eu", "kr", "tw"];
 
   function label(house) {
-    var faction = house.faction === "Neutral" ? "Blackwater (neutral)" : house.faction;
-    return house.region.toUpperCase() + ": " + house.rulesetName + " realms, " + faction;
+    var faction = house.faction === "Neutral" ? t("Blackwater (neutral)") : t(house.faction);
+    return house.region.toUpperCase() + ": " + house.rulesetName + t(" realms, ") + faction;
   }
 
   // US first (the default), then EU, KR and TW; by ruleset and faction within each.
@@ -87,12 +102,12 @@
   function fill(prices) {
     each("[data-price]", function (el) {
       var p = prices[el.getAttribute("data-price")];
-      el.textContent = p ? money(p[0]) : "not listed";
+      el.textContent = p ? money(p[0]) : t("not listed");
       el.classList.toggle("muted", !p);
     });
     each("[data-qty]", function (el) {
       var p = prices[el.getAttribute("data-qty")];
-      el.textContent = p ? p[1].toLocaleString("en-US") + " listed" : "";
+      el.textContent = p ? number(p[1]) + t(" listed") : "";
     });
     each("[data-value]", function (el) {
       var total = 0, priced = false;
@@ -137,13 +152,13 @@
   }
 
   function load(house) {
-    status.textContent = "Loading prices...";
+    status.textContent = t("Loading prices...");
     getJson("/v1/prices/" + house.region + "/" + house.house).then(function (data) {
       fill(data.prices || {});
-      status.textContent = "Lowest buyout, snapshot " + minutesAgo(data.snapshot) + ".";
+      status.textContent = t("Lowest buyout, snapshot ") + minutesAgo(data.snapshot) + ".";
     }).catch(function () {
       clear("-");
-      status.textContent = "Prices are unavailable right now.";
+      status.textContent = t("Prices are unavailable right now.");
     });
   }
 
@@ -153,7 +168,7 @@
     });
     if (!houses.length) {
       clear("-");
-      status.textContent = "Prices are unavailable right now.";
+      status.textContent = t("Prices are unavailable right now.");
       return;
     }
     houses.sort(order);
@@ -175,6 +190,6 @@
     load(houses[pick.selectedIndex]);
   }).catch(function () {
     clear("-");
-    status.textContent = "Prices are unavailable right now.";
+    status.textContent = t("Prices are unavailable right now.");
   });
 })();

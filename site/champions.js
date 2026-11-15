@@ -11,9 +11,11 @@
     return;
   }
   var list = box.querySelector("ol");
+  // German pages (<html lang="de">, under /de/) show German; everything else English.
+  var GERMAN = document.documentElement.lang === "de";
 
   function number(n) {
-    return Number(n || 0).toLocaleString("en-US");
+    return Number(n || 0).toLocaleString(GERMAN ? "de-DE" : "en-US");
   }
 
   fetch(API + "/v1/leaderboard/zones").then(function (response) {
@@ -31,10 +33,10 @@
       li.value = row.rank;   // ties share a place
       var name = document.createElement("span");
       name.className = row.name ? "champion" : "champion anon";
-      name.textContent = row.name || "Anonymous contributor";
+      name.textContent = row.name || (GERMAN ? "Anonyme Mitwirkende" : "Anonymous contributor");
       var kills = document.createElement("span");
       kills.className = "small";
-      kills.textContent = " · " + number(row.kills) + " kills here";
+      kills.textContent = " · " + number(row.kills) + (GERMAN ? " Kills hier" : " kills here");
       li.appendChild(name);
       li.appendChild(kills);
       list.appendChild(li);

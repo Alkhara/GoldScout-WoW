@@ -437,6 +437,130 @@ class ChampionsScriptTests(unittest.TestCase):
         self.assertIn('"/v1/leaderboard/zones"', script)
 
 
+GERMAN = """GoldScout-export 5^dededededede^1
+3809^12^0^21^22^1440^0.5400^0.5400^12^Eschentalbär^3730:5:5^
+1000^6^0^30^31^1413^0.5000^0.5000^6^Fieser Kerl^3730:1:1^
+@i^3730^Großes Bärenfleisch
+@m^1440^Eschental
+@m^1413^Das Brachland
+@l^0^deDE
+"""
+
+
+class GermanPagesTests(unittest.TestCase):
+    """The German pages under /de/: German text, German names where German players recorded them."""
+
+    def setUp(self):
+        english, german = submission.parse(V4 + "@m^1413^The Barrens\n"), submission.parse(GERMAN)
+        assert english.ok and german.ok, (english.errors, german.errors)
+        results = [submission.keep_english_names(english), submission.keep_english_names(german)]
+        self.data = data_pages.Dataset(results, merge_data.merge([english.mobs, german.mobs], 1000))
+        data_pages.MISSING.clear()
+        self.pages = {}
+
+        def write(path, *page, index=True):
+            self.pages[path] = page
+        self.paths = data_pages.build_language("de", self.data, LINKS, write)
+
+    def test_german_names_are_kept_apart_from_the_shared_data(self):
+        german = submission.keep_english_names(submission.parse(GERMAN))
+        self.assertEqual(german.item_names, {})                       # the shared data stays English
+        self.assertEqual(german.local_names["items"], {3730: "Großes Bärenfleisch"})
+        self.assertEqual(german.local_names["maps"], {1440: "Eschental", 1413: "Das Brachland"})
+        self.assertEqual(german.local_names["mobs"], {3809: "Eschentalbär", 1000: "Fieser Kerl"})
+        self.assertEqual(submission.keep_english_names(submission.parse(V4)).local_names, {})
+
+    def test_every_text_on_the_german_pages_is_translated(self):
+        data_pages.LANG = "de"
+        try:
+            data_pages.search_index(self.data)
+        finally:
+            data_pages.LANG = "en"
+        self.assertEqual(data_pages.MISSING, set())
+        self.assertEqual(data_pages.LANG, "en")                       # building German leaves English as it was
+
+    def test_mob_page(self):
+        title, description, body = self.pages["mob/3809.html"]
+        self.assertEqual(title, "Eschentalbär: Drops und Dropraten (WoW Forever)")
+        self.assertIn("<h1>Eschentalbär</h1>", body)
+        self.assertIn("Eschentalbär ist ein Gegner der Stufe 21-22 in Eschental in WoW Forever. "
+                      "GoldScout-Spieler haben 32 Kills erfasst.", body)
+        self.assertIn('<a href="/de/item/3730">Großes Bärenfleisch</a>', body)
+        self.assertIn('<a href="/de/zone/1440">Eschental</a>', body)
+        self.assertIn('href="/de/drop-rates"', body)
+        self.assertIn('href="/companion"', body)                       # English only: linked in English
+        # A name no German player recorded keeps its English name, marked.
+        self.assertIn('<span class=en-name lang=en title="Noch kein deutscher Name erfasst">Bear Gall Bladder</span>',
+                      body)
+        self.assertNotIn("Ashenvale", body)
+
+    def test_numbers_and_percent(self):
+        _, _, body = self.pages["item/3730.html"]
+        self.assertIn("Großes Bärenfleisch ist ein Handwerksmaterial in WoW Forever.", body)
+        data_pages.LANG = "de"
+        try:
+            self.assertEqual((data_pages.num(12668), data_pages.percent(0.047)), ("12.668", "4,7%"))
+        finally:
+            data_pages.LANG = "en"
+        self.assertEqual((data_pages.num(12668), data_pages.percent(0.047)), ("12,668", "4.7%"))
+
+    def test_zone_names_with_an_article(self):
+        title, _, body = self.pages["zone/1413.html"]
+        self.assertEqual(title, "Wo du im Brachland Gold farmst (WoW Forever)")
+        self.assertIn("<h1>Farmen im Brachland</h1>", body)
+        data_pages.LANG = "de"
+        try:
+            self.assertEqual(data_pages.grammar('Karte von <a href="/de/zone/1">Das Brachland</a>, in Die Sümpfe'),
+                             'Karte vom <a href="/de/zone/1">Brachland</a>, in der Sümpfe')
+        finally:
+            data_pages.LANG = "en"
+        self.assertEqual(data_pages.grammar("in Das Brachland"), "in Das Brachland")   # English pages: as is
+
+    def test_the_same_pages_as_english(self):
+        english = {}
+        data_pages.build(self.data, LINKS, lambda path, *page, index=True: english.update({path: index}))
+        self.assertEqual(sorted(english), sorted(self.pages))
+
+    def test_search_index_has_german_and_english_names(self):
+        data_pages.LANG = "de"
+        try:
+            index = {(name, path) for name, path, _, _ in data_pages.search_index(self.data)}
+        finally:
+            data_pages.LANG = "en"
+        self.assertIn(("Großes Bärenfleisch", "/de/item/3730"), index)
+        self.assertIn(("Big Bear Meat", "/de/item/3730"), index)        # the English name finds it too
+        self.assertIn(("Eschental", "/de/zone/1440"), index)
+        self.assertIn(("Eschentalbär", "/de/mob/3809"), index)
+
+
+class LayoutLanguageTests(unittest.TestCase):
+    def test_alternates_and_switch(self):
+        import build
+        page = build.layout("T", "D", "/item/3730", "<p>x</p>")
+        self.assertIn('<html lang="en">', page)
+        self.assertIn('<link rel="alternate" hreflang="de" href="https://wowgoldscout.com/de/item/3730">', page)
+        self.assertIn('<link rel="alternate" hreflang="x-default" href="https://wowgoldscout.com/item/3730">', page)
+        self.assertIn('<a class="lang-switch" href="/de/item/3730" hreflang="de" lang="de">Deutsch</a>', page)
+        german = build.layout("T", "D", "/de/item/3730", "<p>x</p>", lang="de")
+        self.assertIn('<html lang="de">', german)
+        self.assertIn('<link rel="canonical" href="https://wowgoldscout.com/de/item/3730">', german)
+        self.assertIn('<a class="lang-switch" href="/item/3730" hreflang="en" lang="en">English</a>', german)
+        self.assertIn('<a href="/de/farms">Farmen nach Stufe</a>', german)
+        self.assertIn("Gegenstände, Gegner und Gebiete suchen", german)
+        # English-only pages have no German version to point to.
+        faq = build.layout("FAQ", "D", "/faq", "<p>x</p>")
+        self.assertNotIn("hreflang", faq)
+        self.assertNotIn('class="lang-switch"', faq)
+
+    def test_scripts_know_german(self):
+        for name in ("prices.js", "search.js", "champions.js"):
+            with self.subTest(name):
+                script = (ROOT / "site" / name).read_text(encoding="utf-8")
+                self.assertIn('document.documentElement.lang === "de"', script)
+                self.assertNotIn("innerHTML", script)
+        self.assertIn('"/search-de.json"', (ROOT / "site" / "search.js").read_text(encoding="utf-8"))
+
+
 class LegendTests(unittest.TestCase):
     def test_no_doubled_percent_signs(self):
         # The legend isn't %-formatted, so "%%" would show as is (it did, 2026-11-15).

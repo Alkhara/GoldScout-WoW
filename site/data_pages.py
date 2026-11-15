@@ -18,6 +18,12 @@ Prices aren't built in: they change every hour. Pages mark where they go
 (data-price, data-qty, data-value) and site/prices.js fills them in the browser
 from the GoldScout server's copy of Blizzard's auction data, for the realm type
 and faction the visitor picks in the price bar.
+
+German: build() runs a second time with LANG = "de" for the pages under /de/.
+Every sentence goes through T() (German from site/i18n_de.py), links to data
+pages through P() (which adds /de), and game names come from German players'
+exports where they've recorded them; English names are kept, marked, until
+then.
 """
 import html
 import json
@@ -26,12 +32,53 @@ import re
 from collections import Counter, defaultdict
 from pathlib import Path
 
+from i18n_de import DE, RATES_BODY as RATES_BODY_DE
+
 SITE_URL = "https://wowgoldscout.com"
 MIN_ATTEMPTS = 5                 # same threshold as the shipped community data
 INDEX_MIN = 15                   # kills (or pickpockets) before a page is offered to search engines
 RARE_CLASSES = {2, 4, 9}         # weapons, armor, recipes: rare world drops
 GEM_CLASS = 3
 ADDON = Path(__file__).resolve().parent.parent / "GoldScout"
+
+# -- languages ------------------------------------------------------------------------
+LANG = "en"                      # "de" while the German pages are built (build_language)
+LANGUAGES = {"de": "deDE"}       # page language -> the game client language whose names it uses
+MISSING = set()                  # texts looked up on a German page with no German yet (the tests keep it empty)
+# Pages that exist in every language; everything else (home, companion, FAQ...) is English only.
+LOCAL_PAGES = ("/item/", "/mob/", "/zone/", "/farms", "/fishing", "/data-wanted", "/drop-rates", "/search")
+
+
+def T(text):
+    """text in the language being built."""
+    if LANG == "en":
+        return text
+    if text in DE:
+        return DE[text]
+    MISSING.add(text)
+    return text
+
+
+def plural(n, one, many, shown=None):
+    """ "1 mob" / "3 mobs": the template for n, filled with shown (n itself by default)."""
+    return T(one if n == 1 else many) % (n if shown is None else shown)
+
+
+def num(n):
+    """1,234 (German: 1.234)."""
+    text = format(n, ",")
+    return text.replace(",", ".") if LANG == "de" else text
+
+
+def is_local_page(path):
+    return any(path == prefix.rstrip("/") or path.startswith(prefix) for prefix in LOCAL_PAGES)
+
+
+def P(path):
+    """A link to a page, in the language being built when that page exists in it."""
+    if LANG != "en" and is_local_page(path):
+        return "/" + LANG + path
+    return path
 
 
 def addon_gems():
@@ -97,7 +144,8 @@ def confidence(attempts):
 def percent(rate):
     if rate >= 0.1:
         return "%d%%" % round(rate * 100)
-    return "%.1f%%" % (rate * 100)
+    text = "%.1f%%" % (rate * 100)
+    return text.replace(".", ",") if LANG == "de" else text
 
 
 def bracket_of(level):
@@ -109,7 +157,13 @@ def bracket_of(level):
 
 def bracket_label(bracket):
     low, high = bracket
-    return "Levels %d-%d" % (low, min(high, 60))
+    return T("Levels %d-%d") % (low, min(high, 60))
+
+
+def bracket_phrase(bracket):
+    """The label inside a sentence: "levels 21-30" (German keeps its capital)."""
+    low, high = bracket
+    return T("levels %d-%d") % (low, min(high, 60))
 
 
 def bracket_anchor(bracket):
@@ -117,10 +171,16 @@ def bracket_anchor(bracket):
     return "levels-%d-%d" % (low, min(high, 60))
 
 
+def vote(names):
+    """{key: the name most players' exports gave it} from {key: Counter of names}."""
+    return {key: votes.most_common(1)[0][0] for key, votes in names.items()}
+
+
 class Dataset:
     def __init__(self, results, merged, fish=None):
         self.mobs = {npc: entry for npc, entry in merged.items() if entry["k"] + entry["p"] >= MIN_ATTEMPTS}
         item_votes, map_votes, meta_votes = defaultdict(Counter), defaultdict(Counter), defaultdict(Counter)
+        local_votes = {lang: {kind: defaultdict(Counter) for kind in ("items", "maps", "mobs")} for lang in LANGUAGES}
         for result in results:
             for item, name in result.item_names.items():
                 item_votes[item][name] += 1
@@ -128,9 +188,17 @@ class Dataset:
                 map_votes[map_id][name] += 1
             for item, meta in result.item_meta.items():
                 meta_votes[item][meta] += 1
-        self.item_names = {item: votes.most_common(1)[0][0] for item, votes in item_votes.items()}
-        self.map_names = {map_id: votes.most_common(1)[0][0] for map_id, votes in map_votes.items()}
-        self.item_meta = {item: votes.most_common(1)[0][0] for item, votes in meta_votes.items()}
+            for lang, locale in LANGUAGES.items():
+                if getattr(result, "locale", None) == locale:
+                    for kind, names in getattr(result, "local_names", {}).items():
+                        for key, name in names.items():
+                            local_votes[lang][kind][key][name] += 1
+        self.item_names = vote(item_votes)
+        self.map_names = vote(map_votes)
+        self.item_meta = vote(meta_votes)
+        # Names in each page language, from players whose game runs in it: {lang: {kind: {key: name}}}.
+        self.local_names = {lang: {kind: vote(names) for kind, names in kinds.items()}
+                            for lang, kinds in local_votes.items()}
         self.has_kinds = bool(self.item_meta)
         self.reagent_sources = defaultdict(list)
         # Every item worth a page (not gray): [(npc, rate, stack, attempts, per)], per "kill" or "pickpocket".
@@ -174,11 +242,19 @@ class Dataset:
         for (map_id, _), entry in self.fish.items():
             self.ground[map_id].update(cell for cell, n in entry.get("a", {}).items() if n > 0)
         for npcs in self.zones.values():
-            npcs.sort(key=lambda npc: (self.mid_level(npc), self.mob_name(npc)))
+            npcs.sort(key=lambda npc: (self.mid_level(npc), self.english_mob_name(npc)))
 
     # -- names and kinds --------------------------------------------------------
+    def local(self, kind, key):
+        """The name in the page language, or None (always None on English pages)."""
+        return self.local_names[LANG][kind].get(key) if LANG != "en" else None
+
+    def is_local(self, kind, key):
+        """Whether a name shows in the page language (English pages: always)."""
+        return LANG == "en" or self.local(kind, key) is not None
+
     def item_name(self, item):
-        return self.item_names.get(item, "Item %d" % item)
+        return self.local("items", item) or self.item_names.get(item, T("Item %d") % item)
 
     def kind(self, item):
         meta = self.item_meta.get(item)
@@ -191,9 +267,18 @@ class Dataset:
             return "rare"
         return "reagent" if reagent else "other"
 
-    def mob_name(self, npc):
+    def english_mob_name(self, npc):
         names = self.mobs[npc]["names"]
         return max(names.items(), key=lambda pair: (pair[1], pair[0]))[0] if names else "Mob %d" % npc
+
+    def mob_name(self, npc):
+        local = self.local("mobs", npc)
+        if local:
+            return local
+        return self.english_mob_name(npc) if self.mobs[npc]["names"] else T("Mob %d") % npc
+
+    def map_name(self, map_id):
+        return self.local("maps", map_id) or self.map_names[map_id]
 
     def zone_id(self, npc):
         """The map the mob was seen on most, if players' exports named it."""
@@ -205,7 +290,7 @@ class Dataset:
 
     def zone(self, npc):
         map_id = self.zone_id(npc)
-        return self.map_names[map_id] if map_id is not None else ""
+        return self.map_name(map_id) if map_id is not None else ""
 
     def levels(self, npc):
         entry = self.mobs[npc]
@@ -259,9 +344,9 @@ class Dataset:
 
     def spot_name(self, map_id, spot):
         if spot == 0:
-            return "Open water"
+            return T("Open water")
         pools = [other for other in self.fish_zones[map_id] if other != 0]
-        return "Fishing pool" if len(pools) == 1 else "Fishing pool %d" % (pools.index(spot) + 1)
+        return T("Fishing pool") if len(pools) == 1 else T("Fishing pool %d") % (pools.index(spot) + 1)
 
     def mob_area(self, npc):
         """{square: loots} where players looted a mob, on the map it's seen on most."""
@@ -312,6 +397,14 @@ SOURCE = ("Auction data from the Blizzard Entertainment Game Data API. "
           "GoldScout is not affiliated with or endorsed by Blizzard.")
 
 
+def name_html(text, local=True):
+    """A game name for HTML. On a translated page, one players haven't recorded in its language yet keeps
+    its English name, marked."""
+    if local or LANG == "en":
+        return e(text)
+    return '<span class=en-name lang=en title="%s">%s</span>' % (e(T("No German name recorded yet")), e(text))
+
+
 def per_kill(rows):
     """data-value for prices.js: each item's chance x average stack, so price x it = gold per kill."""
     return ",".join("%d:%s" % (item, ("%.4f" % (rate * stack)).rstrip("0").rstrip("."))
@@ -320,10 +413,12 @@ def per_kill(rows):
 
 def price_bar():
     """Where the visitor picks a realm type and faction; prices.js fills it in."""
-    return ('<div id="prices-bar" class="pricebar"><label>Auction prices for '
-            '<select aria-label="Realm type and faction" hidden></select></label> '
-            '<span class="status">Turn on JavaScript to see current auction prices.</span>'
-            '<span class="source">%s</span></div>' % SOURCE)
+    return ('<div id="prices-bar" class="pricebar"><label>%s '
+            '<select aria-label="%s" hidden></select></label> '
+            '<span class="status">%s</span>'
+            '<span class="source">%s</span></div>'
+            % (T("Auction prices for"), T("Realm type and faction"),
+               T("Turn on JavaScript to see current auction prices."), T(SOURCE)))
 
 
 def price_cell(item):
@@ -334,10 +429,11 @@ def value_cell(rows):
     return '<td class=num data-value="%s">%s</td>' % (per_kill(rows), LOADING)
 
 def crumbs(trail):
-    """Visible breadcrumbs plus schema.org BreadcrumbList data. trail: [(path, label)], last is this page."""
-    links = " &rsaquo; ".join('<a href="%s">%s</a>' % (path, e(label)) for path, label in trail[:-1])
+    """Visible breadcrumbs plus schema.org BreadcrumbList data. trail: [(path, label)], last is this page.
+    Paths are as on English pages; P() adds the language."""
+    links = " &rsaquo; ".join('<a href="%s">%s</a>' % (P(path), e(label)) for path, label in trail[:-1])
     data = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
-        {"@type": "ListItem", "position": n, "name": label, "item": SITE_URL + path}
+        {"@type": "ListItem", "position": n, "name": label, "item": SITE_URL + P(path)}
         for n, (path, label) in enumerate(trail, 1)]}
     # Inside a script element HTML escaping doesn't apply; escaping <, > and & in
     # the JSON (same value) means nothing in a name can end or break the element.
@@ -350,7 +446,7 @@ def bracket_path(bracket):
 
 
 def farms_trail(data, npc=None, bracket=None):
-    trail = [("/", "Home"), ("/farms", "Farms by level")]
+    trail = [("/", T("Home")), ("/farms", T("Farms by level"))]
     bracket = bracket or (data.bracket(npc) if npc is not None else None)
     if bracket:
         trail.append((bracket_path(bracket), bracket_label(bracket)))
@@ -358,20 +454,28 @@ def farms_trail(data, npc=None, bracket=None):
 
 
 def mob_link(data, npc):
-    return '<a href="/mob/%d">%s</a>' % (npc, e(data.mob_name(npc)))
+    return '<a href="%s">%s</a>' % (P("/mob/%d" % npc), name_html(data.mob_name(npc), data.is_local("mobs", npc)))
+
+
+def zone_html(data, map_id):
+    return name_html(data.map_name(map_id), data.is_local("maps", map_id))
 
 
 def zone_link(data, npc):
     map_id = data.zone_id(npc)
     if map_id is None:
         return ""
-    return '<a href="/zone/%d">%s</a>' % (map_id, e(data.map_names[map_id]))
+    return '<a href="%s">%s</a>' % (P("/zone/%d" % map_id), zone_html(data, map_id))
+
+
+def item_html(data, item):
+    return name_html(data.item_name(item), data.is_local("items", item))
 
 
 def item_link(data, item):
-    name = e(data.item_name(item))
+    name = item_html(data, item)
     if data.has_page(item):
-        return '<a href="/item/%d">%s</a>' % (item, name)
+        return '<a href="%s">%s</a>' % (P("/item/%d" % item), name)
     return name
 
 
@@ -381,29 +485,43 @@ item_cell = item_link
 def chance(rate, attempts):
     """A drop chance with the 95% range it really lies in, from the kills behind it."""
     low, high = wilson(round(rate * attempts), attempts)
-    return ('%s <span class="range" title="95%% likely between these, from %d recorded">%s&ndash;%s</span>'
-            % (percent(rate), attempts, percent(low).rstrip("%"), percent(high)))
+    return ('%s <span class="range" title="%s">%s&ndash;%s</span>'
+            % (percent(rate), T("95%% likely between these, from %d recorded") % attempts,
+               percent(low).rstrip("%"), percent(high)))
 
 
 def badge(attempts):
     level = confidence(attempts)
-    return '<span class="conf %s" title="%d kills recorded">%s</span>' % (level, attempts, level)
+    return '<span class="conf %s" title="%s">%s</span>' % (level, T("%d kills recorded") % attempts, T(level))
 
 
-def legend():
-    return ('<p class=small>Chance is how often players got the item per kill; the small numbers are the range '
-            'it is 95% likely to be in, which narrows as more kills are recorded. Counted in WoW Forever only: '
-            'no Classic Era data is mixed in. <a href="/drop-rates">How these numbers work</a></p>')
+def legend(per="kill"):
+    if per == "catch":
+        text = T("Chance is how often players got the item per catch; the small numbers are the range it is 95% "
+                 "likely to be in, which narrows as more catches are recorded. Counted in WoW Forever only: no "
+                 "Classic Era data is mixed in.")
+    else:
+        text = T("Chance is how often players got the item per kill; the small numbers are the range it is 95% "
+                 "likely to be in, which narrows as more kills are recorded. Counted in WoW Forever only: no "
+                 "Classic Era data is mixed in.")
+    return '<p class=small>%s <a href="%s">%s</a></p>' % (text, P("/drop-rates"), T("How these numbers work"))
 
 
 def drop_table(data, rows, attempts, per="kill"):
     body = "".join(
         "<tr><td>%s</td><td class=num>%s</td><td class=num>%s</td>%s%s</tr>"
-        % (item_cell(data, item), chance(rate, attempts), ("%.1f" % stack).rstrip("0").rstrip("."),
+        % (item_cell(data, item), chance(rate, attempts), stack_text(stack),
            price_cell(item), value_cell([(item, rate, stack)]))
         for item, rate, stack in rows)
-    return ("<table><thead><tr><th>Item</th><th class=num>Chance</th><th class=num>Avg. stack</th>"
-            "<th class=num>Price</th><th class=num>Per %s</th></tr></thead><tbody>%s</tbody></table>" % (per, body))
+    return ("<table><thead><tr><th>%s</th><th class=num>%s</th><th class=num>%s</th>"
+            "<th class=num>%s</th><th class=num>%s</th></tr></thead><tbody>%s</tbody></table>"
+            % (T("Item"), T("Chance"), T("Avg. stack"), T("Price"),
+               T("Per kill") if per == "kill" else T("Per pickpocket"), body))
+
+
+def stack_text(stack):
+    text = ("%.1f" % stack).rstrip("0").rstrip(".")
+    return text.replace(".", ",") if LANG == "de" else text
 
 
 def mob_table(data, npcs, zone_column=True):
@@ -413,20 +531,22 @@ def mob_table(data, npcs, zone_column=True):
         % (thin(data.mobs[npc]["k"]), mob_link(data, npc), e(data.levels(npc)),
            "<td>%s</td>" % zone_link(data, npc) if zone_column else "",
            ", ".join("%s %s" % (item_cell(data, item), percent(rate))
-                     for item, rate, _ in data.best_drops(npc)[:3]) or '<span class=small>none yet</span>',
-           format(data.mobs[npc]["k"], ","), badge(data.mobs[npc]["k"]),
+                     for item, rate, _ in data.best_drops(npc)[:3]) or '<span class=small>%s</span>' % T("none yet"),
+           num(data.mobs[npc]["k"]), badge(data.mobs[npc]["k"]),
            value_cell(data.best_drops(npc)),
            value_cell([(item, rate * KILLS_PER_HOUR, stack) for item, rate, stack in data.best_drops(npc)]))
         for npc in npcs)
-    return ("<table class=by-value><thead><tr><th>Mob</th><th>Level</th>%s<th>Best reagent drops</th>"
-            "<th class=num>Kills</th><th class=num>Gold per kill</th><th class=num>Gold per hour*</th></tr></thead>"
-            "<tbody>%s</tbody></table><p class=small>* Crafting reagents only, at %d kills an hour. In game, "
-            "GoldScout works it out for your character, at your own pace.</p>"
-            % ("<th>Zone</th>" if zone_column else "", rows, KILLS_PER_HOUR))
+    return ("<table class=by-value><thead><tr><th>%s</th><th>%s</th>%s<th>%s</th>"
+            "<th class=num>%s</th><th class=num>%s</th><th class=num>%s*</th></tr></thead>"
+            "<tbody>%s</tbody></table><p class=small>* %s</p>"
+            % (T("Mob"), T("Level"), "<th>%s</th>" % T("Zone") if zone_column else "", T("Best reagent drops"),
+               T("Kills"), T("Gold per kill"), T("Gold per hour"), rows,
+               T("Crafting reagents only, at %d kills an hour. In game, GoldScout works it out for your character, "
+                 "at your own pace.") % KILLS_PER_HOUR))
 
 
 def fishing_link(data, map_id):
-    return '<a href="/fishing/%d">%s</a>' % (map_id, e(data.map_names[map_id]))
+    return '<a href="%s">%s</a>' % (P("/fishing/%d" % map_id), zone_html(data, map_id))
 
 
 def fish_pace(spot):
@@ -506,8 +626,8 @@ def area_map(data, map_id, cells, label, tip):
 def ground_note(map_ids):
     """The grid's faint squares need explaining; the real map doesn't have them."""
     if all(has_map_art(map_id) for map_id in map_ids):
-        return "Map art &copy; Blizzard Entertainment."
-    return "Faint squares on a grid are where players have looted anything else in the zone."
+        return T("Map art &copy; Blizzard Entertainment.")
+    return T("Faint squares on a grid are where players have looted anything else in the zone.")
 
 
 def busiest(cells):
@@ -519,12 +639,14 @@ def mob_area_section(data, npc):
     cells = data.mob_area(npc)
     if sum(cells.values()) < AREA_MIN_LOOTS:
         return ""
-    name, zone = data.mob_name(npc), data.map_names[data.zone_id(npc)]
-    svg = area_map(data, data.zone_id(npc), cells, "Map of %s: where players looted %s" % (zone, name),
-                   lambda cell: "Around %s: looted %s here" % (square_coords(cell), format(int(cells[cell] + 0.5), ",")))
-    return ('<h2>Where to find it</h2><figure class="area-map">%s<figcaption>Brightest where players loot %s most: '
-            'around <b>%s</b> in %s. Coordinates match the in-game map. %s</figcaption></figure>'
-            % (svg, e(name), square_coords(busiest(cells)), zone_link(data, npc), ground_note([data.zone_id(npc)])))
+    name, zone = data.mob_name(npc), data.map_name(data.zone_id(npc))
+    svg = area_map(data, data.zone_id(npc), cells, T("Map of %s: where players looted %s") % (zone, name),
+                   lambda cell: T("Around %s: looted %s here") % (square_coords(cell), num(int(cells[cell] + 0.5))))
+    return ('<h2>%s</h2><figure class="area-map">%s<figcaption>%s %s</figcaption></figure>'
+            % (T("Where to find it"), svg,
+               T("Brightest where players loot %s most: around <b>%s</b> in %s. Coordinates match the in-game map.")
+               % (name_html(name, data.is_local("mobs", npc)), square_coords(busiest(cells)), zone_link(data, npc)),
+               ground_note([data.zone_id(npc)])))
 
 
 def item_area_section(data, item):
@@ -535,14 +657,17 @@ def item_area_section(data, item):
     name = data.item_name(item)
     figures = []
     for map_id, cells, _ in areas:
-        zone = data.map_names[map_id]
-        svg = area_map(data, map_id, cells, "Map of %s: where players found %s" % (zone, name),
-                       lambda cell: "Around %s" % square_coords(cell))
-        figures.append('<figure class="area-map"><figcaption class="zone">%s</figcaption>%s<figcaption>Most around '
-                       '<b>%s</b>.</figcaption></figure>' % (e(zone), svg, square_coords(busiest(cells))))
-    return ('<h2>Where on the map</h2><p class=sub>Brightest where the most %s turned up: squares where players '
-            'looted or fished more of it. Coordinates match the in-game map. %s</p><div class="area-maps">%s</div>'
-            % (e(name), ground_note([map_id for map_id, _, _ in areas]), "".join(figures)))
+        zone = data.map_name(map_id)
+        svg = area_map(data, map_id, cells, T("Map of %s: where players found %s") % (zone, name),
+                       lambda cell: T("Around %s") % square_coords(cell))
+        figures.append('<figure class="area-map"><figcaption class="zone">%s</figcaption>%s<figcaption>%s'
+                       '</figcaption></figure>' % (zone_html(data, map_id), svg,
+                                                   T("Most around <b>%s</b>.") % square_coords(busiest(cells))))
+    return ('<h2>%s</h2><p class=sub>%s %s</p><div class="area-maps">%s</div>'
+            % (T("Where on the map"),
+               T("Brightest where the most %s turned up: squares where players looted or fished more of it. "
+                 "Coordinates match the in-game map.") % item_html(data, item),
+               ground_note([map_id for map_id, _, _ in areas]), "".join(figures)))
 
 
 def thin(attempts):
@@ -556,35 +681,43 @@ def link_list(items):
 
 def cta(links, need=""):
     """The "help fill this in" box. need: a sentence on how thin this page's data is, or ""."""
-    return ("<div class=cta><b>Help fill this in.</b> %sEvery number here comes from players looting in game. "
-            "Install <a href=\"%s\">GoldScout</a> and add "
-            "<a href=\"/companion\">GoldScout Companion</a>: it brings auction prices into the game every hour "
-            "without scanning, and shares what you loot automatically. More players, better data for "
-            "everyone. <a href=\"/data-wanted\">See where data is needed most</a>.</div>"
-            % (need + " " if need else "", links["curseforge"]))
+    return ("<div class=cta><b>%s</b> %s%s</div>"
+            % (T("Help fill this in."), need + " " if need else "",
+               T("Every number here comes from players looting in game. Install <a href=\"%s\">GoldScout</a> and "
+                 "add <a href=\"/companion\">GoldScout Companion</a>: it brings auction prices into the game every "
+                 "hour without scanning, and shares what you loot automatically. More players, better data for "
+                 "everyone. <a href=\"%s\">See where data is needed most</a>.") % (links["curseforge"],
+                                                                                  P("/data-wanted"))))
 
 
 def kills_needed(name, attempts, noun="kills"):
     """A sentence for cta(): how far a thin mob, item or spot is from solid rates, or "" once it's there."""
     if attempts >= SOLID:
         return ""
-    return e("%s has %s %s recorded so far, so the ranges are wide; %d more and its rates are solid."
-             % (name, format(attempts, ","), noun, SOLID - attempts))
+    return e(T("%s has %s %s recorded so far, so the ranges are wide; %d more and its rates are solid.")
+             % (name, num(attempts), T(noun), SOLID - attempts))
 
 
 # -- pages -----------------------------------------------------------------------
 def mob_summary(data, npc):
     """One or two plain sentences about a mob (unescaped)."""
     name, level, zone = data.mob_name(npc), data.levels(npc), data.zone(npc)
-    where = " in %s" % zone if zone else ""
-    what = "a level %s mob%s" % (level, where) if level else "a mob%s" % where
     kills = data.mobs[npc]["k"]
-    text = "%s is %s in WoW Forever. GoldScout players have recorded %s kill%s." % (
-        name, what, format(kills, ","), "" if kills == 1 else "s")
+    if level and zone:
+        what = T("%s is a level %s mob in %s in WoW Forever.") % (name, level, zone)
+    elif level:
+        what = T("%s is a level %s mob in WoW Forever.") % (name, level)
+    elif zone:
+        what = T("%s is a mob in %s in WoW Forever.") % (name, zone)
+    else:
+        what = T("%s is a mob in WoW Forever.") % name
+    text = what + " " + plural(kills, "GoldScout players have recorded %s kill.",
+                               "GoldScout players have recorded %s kills.", num(kills))
     best = data.best_drops(npc)
     if best:
-        kind = "crafting reagent" if data.has_kinds else "drop"
-        text += " Its most common %s is %s (%s of kills)." % (kind, data.item_name(best[0][0]), percent(best[0][1]))
+        sentence = (T("Its most common crafting reagent is %s (%s of kills).") if data.has_kinds
+                    else T("Its most common drop is %s (%s of kills)."))
+        text += " " + sentence % (data.item_name(best[0][0]), percent(best[0][1]))
     return text
 
 
@@ -597,51 +730,57 @@ def mob_page(data, npc, links):
         reagents = [row for row in drops if data.kind(row[0]) == "reagent"]
         others = [row for row in drops if data.kind(row[0]) in ("other", "unknown", "rare")]
         if reagents:
-            sections.append("<h2>Crafting reagents</h2>" + drop_table(data, reagents, entry["k"]))
+            sections.append("<h2>%s</h2>" % T("Crafting reagents") + drop_table(data, reagents, entry["k"]))
         if others:
-            sections.append("<h2>Other drops</h2>" + drop_table(data, others, entry["k"]))
+            sections.append("<h2>%s</h2>" % T("Other drops") + drop_table(data, others, entry["k"]))
     elif drops:
-        sections.append("<h2>Drops</h2>" + drop_table(data, drops, entry["k"]))
+        sections.append("<h2>%s</h2>" % T("Drops") + drop_table(data, drops, entry["k"]))
     picks = data.drops(npc, "pi")
     if picks:
-        sections.append("<h2>Pickpocketing</h2><p class=sub>Chance per pickpocket, over %d attempts.</p>"
-                        % entry["p"] + drop_table(data, picks, entry["p"], per="pickpocket"))
+        sections.append("<h2>%s</h2><p class=sub>%s</p>" % (
+            T("Pickpocketing"), T("Chance per pickpocket, over %d attempts.") % entry["p"])
+            + drop_table(data, picks, entry["p"], per="pickpocket"))
     if sections:
         sections.append(legend())
     else:
-        sections.append("<p class=sub>No drops recorded yet.</p>")
+        sections.append("<p class=sub>%s</p>" % T("No drops recorded yet."))
     sections.append(mob_area_section(data, npc))
     zone_id = data.zone_id(npc)
     if zone_id is not None:
         siblings = [other for other in data.zones[zone_id] if other != npc][:RELATED]
         if siblings:
-            sections.append("<h2>More farms in %s</h2>%s" % (
-                e(data.map_names[zone_id]),
-                link_list("%s <span class=small>level %s</span>" % (mob_link(data, other), e(data.levels(other)))
+            sections.append("<h2>%s</h2>%s" % (
+                T("More farms in %s") % zone_html(data, zone_id),
+                link_list("%s <span class=small>%s</span>" % (mob_link(data, other),
+                                                               T("level %s") % e(data.levels(other)))
                           for other in siblings)))
     level = data.levels(npc)
-    facts = ["Level %s" % e(level)] if level else []
+    facts = [T("Level %s") % e(level)] if level else []
     if zone_id is not None:
         facts.append(zone_link(data, npc))
-    facts.append("%s kills recorded %s" % (format(entry["k"], ","), badge(entry["k"])))
+    facts.append(T("%s kills recorded %s") % (num(entry["k"]), badge(entry["k"])))
     best = data.best_drops(npc)
     worth = ""
     if best:
-        worth = ('<p class=facts>%s are worth about <b data-value="%s">%s</b> per kill at current prices.</p>'
-                 % ("Its crafting reagents" if data.has_kinds else "Its drops", per_kill(best), LOADING))
+        worth = ('<p class=facts>%s</p>'
+                 % ((T("Its crafting reagents are worth about <b data-value=\"%s\">%s</b> per kill at current prices.")
+                     if data.has_kinds else
+                     T("Its drops are worth about <b data-value=\"%s\">%s</b> per kill at current prices."))
+                    % (per_kill(best), LOADING)))
     body = ("%s<h1>%s</h1><p class=facts>%s</p><p class=summary>%s</p>%s%s%s%s"
-            % (crumbs(farms_trail(data, npc) + [("/mob/%d" % npc, name)]), e(name), " &middot; ".join(facts),
+            % (crumbs(farms_trail(data, npc) + [("/mob/%d" % npc, name)]),
+               name_html(name, data.is_local("mobs", npc)), " &middot; ".join(facts),
                e(mob_summary(data, npc)), price_bar(), worth, "".join(sections),
                cta(links, kills_needed(name, entry["k"]))))
-    title = "%s drops and drop rates (WoW Forever)" % name
+    title = T("%s drops and drop rates (WoW Forever)") % name
     best = data.best_drops(npc)[:2]
     if best:
-        description = "%s drop rates in WoW Forever: %s, from %d kills recorded by GoldScout players." % (
+        description = T("%s drop rates in WoW Forever: %s, from %d kills recorded by GoldScout players.") % (
             name, ", ".join("%s %s" % (data.item_name(item), percent(rate)) for item, rate, _ in best),
             entry["k"])
     else:
-        description = "What %s drops in WoW Forever, with drop rates from %d kills recorded by GoldScout players." % (
-            name, entry["k"])
+        description = T("What %s drops in WoW Forever, with drop rates from %d kills recorded by GoldScout "
+                        "players.") % (name, entry["k"])
     return title, description, body
 
 
@@ -653,7 +792,7 @@ def source_where(data, npc):
     """'level 21-22, Ashenvale' for a summary, or ''."""
     bits = []
     if data.levels(npc):
-        bits.append("level %s" % data.levels(npc))
+        bits.append(T("level %s") % data.levels(npc))
     if data.zone(npc):
         bits.append(data.zone(npc))
     return ", ".join(bits)
@@ -662,19 +801,24 @@ def source_where(data, npc):
 def source_table(data, item, sources, per):
     """Where an item comes from, best first, with gold per kill and per hour at the visitor's prices."""
     pace = KILLS_PER_HOUR if per == "kill" else PICKS_PER_HOUR
-    noun = "Kills" if per == "kill" else "Pickpockets"
     rows = "".join(
         "<tr><td>%s</td><td class=nowrap>%s</td><td>%s</td><td class=num>%s</td><td class=num>%s %s</td>%s%s</tr>"
         % (mob_link(data, npc), e(data.levels(npc)), zone_link(data, npc), chance(rate, attempts),
-           format(attempts, ","), badge(attempts), value_cell([(item, rate, stack)]),
+           num(attempts), badge(attempts), value_cell([(item, rate, stack)]),
            value_cell([(item, rate * pace, stack)]))
         for npc, rate, stack, attempts, _ in sources)
-    return ("<table><thead><tr><th>%s</th><th>Level</th><th>Zone</th><th class=num>Chance</th>"
-            "<th class=num>%s</th><th class=num>Gold per %s</th><th class=num>Gold per hour*</th></tr></thead>"
-            "<tbody>%s</tbody></table><p class=small>* At %d %s an hour. In game, GoldScout works it out for your "
-            "character, at your own pace and level.</p>"
-            % ("Dropped by" if per == "kill" else "Pickpocketed from", noun, per, rows, pace,
-               "kills" if per == "kill" else "pickpockets"))
+    if per == "kill":
+        head = (T("Dropped by"), T("Kills"), T("Gold per kill"))
+        note = T("At %d kills an hour. In game, GoldScout works it out for your character, at your own pace and "
+                 "level.") % pace
+    else:
+        head = (T("Pickpocketed from"), T("Pickpockets"), T("Gold per pickpocket"))
+        note = T("At %d pickpockets an hour. In game, GoldScout works it out for your character, at your own pace "
+                 "and level.") % pace
+    return ("<table><thead><tr><th>%s</th><th>%s</th><th>%s</th><th class=num>%s</th>"
+            "<th class=num>%s</th><th class=num>%s</th><th class=num>%s*</th></tr></thead>"
+            "<tbody>%s</tbody></table><p class=small>* %s</p>"
+            % (head[0], T("Level"), T("Zone"), T("Chance"), head[1], head[2], T("Gold per hour"), rows, note))
 
 
 def fish_source_table(data, item, sources):
@@ -682,13 +826,15 @@ def fish_source_table(data, item, sources):
     rows = "".join(
         "<tr><td>%s</td><td>%s</td><td class=num>%s</td><td class=num>%s %s</td>%s%s</tr>"
         % (fishing_link(data, map_id), e(data.spot_name(map_id, spot)), chance(rate, catches),
-           format(catches, ","), badge(catches), value_cell([(item, rate, stack)]),
+           num(catches), badge(catches), value_cell([(item, rate, stack)]),
            value_cell([(item, rate * fish_pace(spot), stack)]))
         for map_id, spot, rate, stack, catches in sources)
-    return ("<table><thead><tr><th>Zone</th><th>Where</th><th class=num>Chance</th><th class=num>Catches</th>"
-            "<th class=num>Gold per catch</th><th class=num>Gold per hour*</th></tr></thead><tbody>%s</tbody></table>"
-            "<p class=small>* At %d catches an hour in open water, half that at pools (finding the next one takes "
-            "time).</p>" % (rows, CATCHES_PER_HOUR))
+    return ("<table><thead><tr><th>%s</th><th>%s</th><th class=num>%s</th><th class=num>%s</th>"
+            "<th class=num>%s</th><th class=num>%s*</th></tr></thead><tbody>%s</tbody></table>"
+            "<p class=small>* %s</p>"
+            % (T("Zone"), T("Where"), T("Chance"), T("Catches"), T("Gold per catch"), T("Gold per hour"), rows,
+               T("At %d catches an hour in open water, half that at pools (finding the next one takes time).")
+               % CATCHES_PER_HOUR))
 
 
 def item_need(data, item):
@@ -696,11 +842,17 @@ def item_need(data, item):
     sources, fishing = data.sources.get(item, []), data.fish_sources.get(item, [])
     if sources:
         npc, _, _, attempts, per = sources[0]
-        return kills_needed("Its best source, %s," % data.mob_name(npc), attempts,
+        return kills_needed(T("Its best source, %s,") % data.mob_name(npc), attempts,
                             "kills" if per == "kill" else "pickpockets")
     map_id, spot, _, _, catches = fishing[0]
-    return kills_needed("Its best spot, %s in %s," % (data.spot_name(map_id, spot).lower(), data.map_names[map_id]),
+    return kills_needed(T("Its best spot, %s in %s,") % (spot_phrase(data, map_id, spot), data.map_name(map_id)),
                         catches, "catches")
+
+
+def spot_phrase(data, map_id, spot):
+    """A spot's name inside a sentence: "open water" (German nouns keep their capital)."""
+    name = data.spot_name(map_id, spot)
+    return name if LANG == "de" else name.lower()
 
 
 def item_page(data, item, links):
@@ -711,41 +863,49 @@ def item_page(data, item, links):
     fishing = data.fish_sources.get(item, [])
     kills = [source for source in sources if source[4] == "kill"]
     picks = [source for source in sources if source[4] == "pickpocket"]
-    kind = KIND_TEXT[data.kind(item)]
+    kind = T(KIND_TEXT[data.kind(item)])
     fish_zones = len({source[0] for source in fishing})
     if sources:
         top_npc, top_rate, _, top_attempts, top_per = sources[0]
         where = source_where(data, top_npc)
         count = len({source[0] for source in sources})
-        looted = "looted it from" if kills else "pickpocketed it from"
-        summary = ("%s is %s in WoW Forever. GoldScout players have %s %d mob%s; the best source is %s%s, "
-                   "which gave it on %s of %s %s." % (
-                       name, kind, looted, count, "" if count == 1 else "s",
-                       data.mob_name(top_npc), " (%s)" % where if where else "", percent(top_rate),
-                       format(top_attempts, ","), "kills" if top_per == "kill" else "pickpockets"))
+        looted = (plural(count, "GoldScout players have looted it from %d mob;",
+                         "GoldScout players have looted it from %d mobs;") if kills else
+                  plural(count, "GoldScout players have pickpocketed it from %d mob;",
+                         "GoldScout players have pickpocketed it from %d mobs;"))
+        summary = (T("%s is %s in WoW Forever.") % (name, kind) + " " + looted + " "
+                   + (T("the best source is %s%s, which gave it on %s of %s kills.") if top_per == "kill" else
+                      T("the best source is %s%s, which gave it on %s of %s pickpockets."))
+                   % (data.mob_name(top_npc), " (%s)" % where if where else "", percent(top_rate),
+                      num(top_attempts)))
         if fishing:
-            summary += " It's also fished up in %d zone%s." % (fish_zones, "" if fish_zones == 1 else "s")
+            summary += " " + plural(fish_zones, "It's also fished up in %d zone.", "It's also fished up in %d zones.")
         others = count - 1
-        description = "%s %s from %s (%s)%s in WoW Forever. Drop rates counted from GoldScout players' loot." % (
-            name, "drops" if top_per == "kill" else "is pickpocketed", data.mob_name(top_npc), percent(top_rate),
-            " and %d other mob%s" % (others, "" if others == 1 else "s") if others else "")
+        description = ((T("%s drops from %s (%s)%s in WoW Forever. Drop rates counted from GoldScout players' loot.")
+                        if top_per == "kill" else
+                        T("%s is pickpocketed from %s (%s)%s in WoW Forever. Drop rates counted from GoldScout "
+                          "players' loot."))
+                       % (name, data.mob_name(top_npc), percent(top_rate),
+                          plural(others, " and %d other mob", " and %d other mobs") if others else ""))
     else:
         top_map, top_spot, top_rate, _, top_catches = fishing[0]
-        spot = data.spot_name(top_map, top_spot).lower()
-        summary = ("%s is %s in WoW Forever. GoldScout players have fished it up in %d zone%s; the best spot is %s "
-                   "in %s, which gave it on %s of %s catches." % (
-                       name, kind, fish_zones, "" if fish_zones == 1 else "s", spot, data.map_names[top_map],
-                       percent(top_rate), format(top_catches, ",")))
-        description = "Where to fish %s in WoW Forever: %s in %s (%s of catches)%s. Counted from GoldScout players' catches." % (
-            name, spot, data.map_names[top_map], percent(top_rate),
-            ", and %d other zone%s" % (fish_zones - 1, "" if fish_zones == 2 else "s") if fish_zones > 1 else "")
+        spot = spot_phrase(data, top_map, top_spot)
+        summary = (T("%s is %s in WoW Forever.") % (name, kind) + " "
+                   + plural(fish_zones, "GoldScout players have fished it up in %d zone;",
+                            "GoldScout players have fished it up in %d zones;") + " "
+                   + T("the best spot is %s in %s, which gave it on %s of %s catches.")
+                   % (spot, data.map_name(top_map), percent(top_rate), num(top_catches)))
+        description = T("Where to fish %s in WoW Forever: %s in %s (%s of catches)%s. Counted from GoldScout "
+                        "players' catches.") % (
+            name, spot, data.map_name(top_map), percent(top_rate),
+            plural(fish_zones - 1, ", and %d other zone", ", and %d other zones") if fish_zones > 1 else "")
     sections = []
     if kills:
-        sections.append("<h2>Where it drops</h2>" + source_table(data, item, kills, "kill"))
+        sections.append("<h2>%s</h2>" % T("Where it drops") + source_table(data, item, kills, "kill"))
     if picks:
-        sections.append("<h2>Pickpocketing</h2>" + source_table(data, item, picks, "pickpocket"))
+        sections.append("<h2>%s</h2>" % T("Pickpocketing") + source_table(data, item, picks, "pickpocket"))
     if fishing:
-        sections.append("<h2>Fishing</h2>" + fish_source_table(data, item, fishing))
+        sections.append("<h2>%s</h2>" % T("Fishing") + fish_source_table(data, item, fishing))
     sections.append(legend())
     sections.append(item_area_section(data, item))
     related, seen = [], {item}
@@ -757,16 +917,17 @@ def item_page(data, item, links):
             related.append(other)
     related.sort(key=lambda other: (data.kind(other) != "reagent", data.item_name(other)))
     if related:
-        sections.append("<h2>Farm these at the same time</h2><p class=sub>Other items from the same mobs and "
-                        "fishing spots.</p>%s" % link_list(item_link(data, other) for other in related[:RELATED]))
-    trail = [("/", "Home"), ("/fishing" if not sources else "/farms",
-                             "Fishing" if not sources else "Farms by level"), ("/item/%d" % item, name)]
-    price = ('<p class=facts>Lowest price: <b data-price="%d">%s</b> <span class=small data-qty="%d"></span></p>'
-             % (item, LOADING, item))
+        sections.append("<h2>%s</h2><p class=sub>%s</p>%s" % (
+            T("Farm these at the same time"), T("Other items from the same mobs and fishing spots."),
+            link_list(item_link(data, other) for other in related[:RELATED])))
+    trail = [("/", T("Home")), ("/fishing" if not sources else "/farms",
+                                T("Fishing") if not sources else T("Farms by level")), ("/item/%d" % item, name)]
+    price = ('<p class=facts>%s <b data-price="%d">%s</b> <span class=small data-qty="%d"></span></p>'
+             % (T("Lowest price:"), item, LOADING, item))
     body = ("%s<h1>%s</h1><p class=summary>%s</p>%s%s%s%s"
-            % (crumbs(trail), e(name), e(summary), price_bar(), price, "".join(sections),
+            % (crumbs(trail), item_html(data, item), e(summary), price_bar(), price, "".join(sections),
                cta(links, item_need(data, item))))
-    title = ("Where to farm %s (WoW Forever)" if sources else "Where to fish %s (WoW Forever)") % name
+    title = (T("Where to farm %s (WoW Forever)") if sources else T("Where to fish %s (WoW Forever)")) % name
     return title, description, body
 
 
@@ -789,44 +950,48 @@ def zone_goal(data, map_id):
 def goal_bar(goal):
     """The share of solid mobs, with a tick at each milestone."""
     ticks = "".join('<i style="left:%d%%"></i>' % milestone for milestone in MILESTONES[:-1])
-    return ('<span class=goal-bar role=img aria-label="%d of %d mobs solid"><span style="width:%d%%"></span>%s</span>'
-            % (goal["solid"], goal["total"], round(goal["percent"]), ticks))
+    return ('<span class=goal-bar role=img aria-label="%s"><span style="width:%d%%"></span>%s</span>'
+            % (T("%d of %d mobs solid") % (goal["solid"], goal["total"]), round(goal["percent"]), ticks))
 
 
 def goal_next(goal):
     """ "2 more mobs to 25%" or "complete"."""
     if not goal["next"]:
-        return "<b class=done>Complete</b>"
-    return "%d more mob%s to %d%%" % (goal["needed"], "" if goal["needed"] == 1 else "s", goal["next"])
+        return "<b class=done>%s</b>" % T("Complete")
+    return T("%d more mob to %d%%" if goal["needed"] == 1 else "%d more mobs to %d%%") % (goal["needed"], goal["next"])
 
 
 def zone_goal_section(data, map_id):
-    zone = data.map_names[map_id]
     goal = zone_goal(data, map_id)
     if not goal["next"]:
-        text = ("<p><b>Goal reached:</b> every mob players have recorded in %s has solid drop rates. New mobs "
-                "recorded here join the goal.</p>" % e(zone))
+        text = ("<p>%s</p>" % T("<b>Goal reached:</b> every mob players have recorded in %s has solid drop rates. "
+                                "New mobs recorded here join the goal.") % zone_html(data, map_id))
     else:
-        text = ("<p>Every mob here with solid drop rates (%d+ kills): <b>%d of %d</b> so far%s. Next milestone: "
-                "%s.</p>" % (SOLID, goal["solid"], goal["total"],
-                             ", past %d%%" % goal["reached"] if goal["reached"] else "", goal_next(goal)))
+        text = "<p>%s</p>" % ((T("Every mob here with solid drop rates (%d+ kills): <b>%d of %d</b> so far, past %d%%. "
+                                 "Next milestone: %s.") % (SOLID, goal["solid"], goal["total"], goal["reached"],
+                                                           goal_next(goal)))
+                              if goal["reached"] else
+                              (T("Every mob here with solid drop rates (%d+ kills): <b>%d of %d</b> so far. Next "
+                                 "milestone: %s.") % (SOLID, goal["solid"], goal["total"], goal_next(goal))))
     left = ""
     if goal["left"]:
-        left = "<p class=sub>Closest to solid:</p>" + link_list(
-            "%s <span class=small>%s &middot; %d kills, <b>%d to go</b></span>"
-            % (mob_link(data, npc), "level %s" % e(data.levels(npc)) if data.levels(npc) else "",
-               data.mobs[npc]["k"], SOLID - data.mobs[npc]["k"])
+        left = "<p class=sub>%s</p>" % T("Closest to solid:") + link_list(
+            "%s <span class=small>%s &middot; %s</span>"
+            % (mob_link(data, npc), T("level %s") % e(data.levels(npc)) if data.levels(npc) else "",
+               T("%d kills, <b>%d to go</b>") % (data.mobs[npc]["k"], SOLID - data.mobs[npc]["k"]))
             for npc in goal["left"][:GOAL_LEFT])
     # Zone champions: filled in by site/champions.js from the server's leaderboard (hidden until then).
-    champions = ('<div id=zone-champions data-zone="%d" hidden><p class=sub>Zone champions: the players with the most '
-                 'kills here.</p><ol class=champions></ol><p class=small>Named only if they choose it in GoldScout '
-                 'Companion. <a href="/leaderboard">Contributor leaderboard</a></p></div>'
-                 '<script src="/champions.js" defer></script>' % map_id)
-    return '<section class=zone-goal><h2>Zone goal</h2>%s%s%s%s</section>' % (goal_bar(goal), text, left, champions)
+    champions = ('<div id=zone-champions data-zone="%d" hidden><p class=sub>%s</p><ol class=champions></ol>'
+                 '<p class=small>%s <a href="/leaderboard">%s</a></p></div>'
+                 '<script src="/champions.js" defer></script>'
+                 % (map_id, T("Zone champions: the players with the most kills here."),
+                    T("Named only if they choose it in GoldScout Companion."), T("Contributor leaderboard")))
+    return '<section class=zone-goal><h2>%s</h2>%s%s%s%s</section>' % (T("Zone goal"), goal_bar(goal), text, left,
+                                                                       champions)
 
 
 def zone_page(data, map_id, links):
-    zone = data.map_names[map_id]
+    zone = data.map_name(map_id)
     npcs = data.zones[map_id]
     reagents = {}
     for npc in npcs:
@@ -837,28 +1002,34 @@ def zone_page(data, map_id, links):
              [data.mobs[npc]["lmax"] for npc in npcs if data.mobs[npc]["lmax"]]
     span = ""
     if levels:
-        span = " level %d" % min(levels) if min(levels) == max(levels) else " level %d-%d" % (min(levels), max(levels))
-    summary = "GoldScout players have recorded %d%s mob%s in %s with enough kills for reliable drop rates%s." % (
-        len(npcs), span, "" if len(npcs) == 1 else "s", zone,
-        ", dropping %d crafting reagent%s" % (len(reagents), "" if len(reagents) == 1 else "s") if reagents else "")
-    sections = [zone_goal_section(data, map_id), "<h2>Mobs</h2>" + mob_table(data, npcs, zone_column=False)]
+        span = (T(" level %d") % min(levels) if min(levels) == max(levels)
+                else T(" level %d-%d") % (min(levels), max(levels)))
+    summary = (plural(len(npcs), "GoldScout players have recorded %d%s mob in %s with enough kills for reliable drop "
+                                 "rates", "GoldScout players have recorded %d%s mobs in %s with enough kills for "
+                                          "reliable drop rates", (len(npcs), span, zone))
+               + (plural(len(reagents), ", dropping %d crafting reagent", ", dropping %d crafting reagents")
+                  if reagents else "") + ".")
+    sections = [zone_goal_section(data, map_id), "<h2>%s</h2>" % T("Mobs") + mob_table(data, npcs, zone_column=False)]
     if reagents:
         ordered = sorted(reagents.items(), key=lambda pair: -pair[1][1])
-        sections.append("<h2>Crafting reagents in %s</h2><table><thead><tr><th>Reagent</th><th>Best source</th>"
-                        "<th class=num>Chance</th><th class=num>Price</th></tr></thead><tbody>%s</tbody></table>"
-                        % (e(zone), "".join(
-                            "<tr><td>%s</td><td>%s</td><td class=num>%s</td>%s</tr>"
-                            % (item_cell(data, item), mob_link(data, npc), percent(rate), price_cell(item))
-                            for item, (npc, rate) in ordered)))
+        sections.append("<h2>%s</h2><table><thead><tr><th>%s</th><th>%s</th>"
+                        "<th class=num>%s</th><th class=num>%s</th></tr></thead><tbody>%s</tbody></table>"
+                        % (T("Crafting reagents in %s") % zone_html(data, map_id), T("Reagent"), T("Best source"),
+                           T("Chance"), T("Price"), "".join(
+                               "<tr><td>%s</td><td>%s</td><td class=num>%s</td>%s</tr>"
+                               % (item_cell(data, item), mob_link(data, npc), percent(rate), price_cell(item))
+                               for item, (npc, rate) in ordered)))
     if map_id in data.fish_zones:
-        sections.append('<p>Fishing here too: see <a href="/fishing/%d">what players catch in %s</a>.</p>'
-                        % (map_id, e(zone)))
+        sections.append('<p>%s</p>' % T('Fishing here too: see <a href="%s">what players catch in %s</a>.')
+                        % (P("/fishing/%d" % map_id), zone_html(data, map_id)))
     sections.append(legend())
-    trail = [("/", "Home"), ("/farms", "Farms by level"), ("/zone/%d" % map_id, zone)]
-    body = "%s<h1>Farming in %s</h1><p class=summary>%s</p>%s%s%s" % (
-        crumbs(trail), e(zone), e(summary), price_bar(), "".join(sections), cta(links))
-    title = "Where to farm gold in %s (WoW Forever)" % zone
-    description = "Mobs to farm in %s, WoW Forever, and the crafting reagents they drop, from GoldScout players' loot." % zone
+    trail = [("/", T("Home")), ("/farms", T("Farms by level")), ("/zone/%d" % map_id, zone)]
+    body = "%s<h1>%s</h1><p class=summary>%s</p>%s%s%s" % (
+        crumbs(trail), T("Farming in %s") % zone_html(data, map_id), e(summary), price_bar(), "".join(sections),
+        cta(links))
+    title = T("Where to farm gold in %s (WoW Forever)") % zone
+    description = T("Mobs to farm in %s, WoW Forever, and the crafting reagents they drop, from GoldScout players' "
+                    "loot.") % zone
     return title, description, body
 
 
@@ -872,66 +1043,70 @@ def farms_page(data, links):
         npcs = data.bracket_mobs(bracket)
         if not npcs:
             continue
-        sections.append('<h2 id="%s"><a href="%s">%s</a></h2>%s<p><a href="%s">All %d farm%s for %s</a></p>'
-                        % (bracket_anchor(bracket), bracket_path(bracket), bracket_label(bracket),
-                           mob_table(data, npcs[:FARMS_PREVIEW]), bracket_path(bracket), len(npcs),
-                           "" if len(npcs) == 1 else "s", bracket_label(bracket).lower()))
+        sections.append('<h2 id="%s"><a href="%s">%s</a></h2>%s<p><a href="%s">%s</a></p>'
+                        % (bracket_anchor(bracket), P(bracket_path(bracket)), bracket_label(bracket),
+                           mob_table(data, npcs[:FARMS_PREVIEW]), P(bracket_path(bracket)),
+                           plural(len(npcs), "All %d farm for %s", "All %d farms for %s",
+                                  (len(npcs), bracket_phrase(bracket)))))
     if not sections:
-        sections.append("<p class=sub>No mobs have enough kills recorded yet.</p>")
+        sections.append("<p class=sub>%s</p>" % T("No mobs have enough kills recorded yet."))
     else:
         sections.append(legend())
     if data.fish:
-        sections.append('<h2>Fishing</h2><p><a href="/fishing">The best fishing spots for gold</a>, by zone.</p>')
+        sections.append('<h2>%s</h2><p>%s</p>' % (T("Fishing"), T('<a href="%s">The best fishing spots for gold</a>, '
+                                                                  'by zone.') % P("/fishing")))
     if data.zones:
-        zones = sorted(data.zones, key=lambda map_id: data.map_names[map_id])
-        sections.append("<h2>By zone</h2>" + link_list(
-            '<a href="/zone/%d">%s</a> <span class=small>%d mob%s</span>'
-            % (map_id, e(data.map_names[map_id]), len(data.zones[map_id]), "" if len(data.zones[map_id]) == 1 else "s")
+        zones = sorted(data.zones, key=lambda map_id: data.map_name(map_id))
+        sections.append("<h2>%s</h2>" % T("By zone") + link_list(
+            '<a href="%s">%s</a> <span class=small>%s</span>'
+            % (P("/zone/%d" % map_id), zone_html(data, map_id), plural(len(data.zones[map_id]), "%d mob", "%d mobs"))
             for map_id in zones))
-    trail = [("/", "Home"), ("/farms", "Farms by level")]
-    body = ("%s<h1>Farms by level</h1><p class=facts>Mobs GoldScout players have recorded at least %d kills of, "
-            "with the crafting reagents they drop most often, ranked by gold per hour at current auction prices. "
-            "Open a level range for every farm in it, a mob for every drop, or an item for everywhere it drops.</p>"
-            "%s%s%s" % (crumbs(trail), MIN_ATTEMPTS, price_bar(), "".join(sections), cta(links)))
-    return ("Gold farms by level (WoW Forever)",
-            "The best WoW Forever gold farms for every level range, ranked by gold per hour at current auction "
-            "prices, from GoldScout players' loot.", body)
+    trail = [("/", T("Home")), ("/farms", T("Farms by level"))]
+    body = ("%s<h1>%s</h1><p class=facts>%s</p>%s%s%s"
+            % (crumbs(trail), T("Farms by level"),
+               T("Mobs GoldScout players have recorded at least %d kills of, with the crafting reagents they drop "
+                 "most often, ranked by gold per hour at current auction prices. Open a level range for every farm "
+                 "in it, a mob for every drop, or an item for everywhere it drops.") % MIN_ATTEMPTS,
+               price_bar(), "".join(sections), cta(links)))
+    return (T("Gold farms by level (WoW Forever)"),
+            T("The best WoW Forever gold farms for every level range, ranked by gold per hour at current auction "
+              "prices, from GoldScout players' loot."), body)
 
 
 def bracket_page(data, bracket, links):
     """Every mob in one level range, ranked by gold per hour at the visitor's prices."""
-    label = bracket_label(bracket)
     npcs = data.bracket_mobs(bracket)
     kills = sum(data.mobs[npc]["k"] for npc in npcs)
-    zones = sorted({data.zone_id(npc) for npc in npcs} - {None}, key=lambda map_id: data.map_names[map_id])
-    summary = ("%d mobs at %s that GoldScout players have recorded, from %s kills, ranked by what their crafting "
-               "reagents are worth an hour at current auction prices. Pick your realm type and faction for your "
-               "prices." % (len(npcs), label.lower(), format(kills, ",")))
-    sections = ["<h2>Mobs</h2>" + mob_table(data, npcs), legend()]
+    zones = sorted({data.zone_id(npc) for npc in npcs} - {None}, key=lambda map_id: data.map_name(map_id))
+    summary = (T("%d mobs at %s that GoldScout players have recorded, from %s kills, ranked by what their crafting "
+                 "reagents are worth an hour at current auction prices. Pick your realm type and faction for your "
+                 "prices.") % (len(npcs), bracket_phrase(bracket), num(kills)))
+    sections = ["<h2>%s</h2>" % T("Mobs") + mob_table(data, npcs), legend()]
     if zones:
-        sections.append("<h2>Zones at these levels</h2>" + link_list(
-            '<a href="/zone/%d">%s</a>' % (map_id, e(data.map_names[map_id])) for map_id in zones))
+        sections.append("<h2>%s</h2>" % T("Zones at these levels") + link_list(
+            '<a href="%s">%s</a>' % (P("/zone/%d" % map_id), zone_html(data, map_id)) for map_id in zones))
     others = [other for other in BRACKETS if other != bracket and data.bracket_mobs(other)]
     if others:
-        sections.append("<h2>Other levels</h2>" + link_list(
-            '<a href="%s">%s</a>' % (bracket_path(other), bracket_label(other)) for other in others))
-    body = ("%s<h1>Gold farms for %s</h1><p class=summary>%s</p>%s%s%s"
-            % (crumbs(farms_trail(data, bracket=bracket)), label.lower(), e(summary), price_bar(),
-               "".join(sections), cta(links)))
-    return ("Best gold farms for %s (WoW Forever)" % label.lower(),
-            "The WoW Forever mobs worth farming at %s, ranked by gold per hour at current auction prices, from %s "
-            "kills recorded by GoldScout players." % (label.lower(), format(kills, ",")), body)
+        sections.append("<h2>%s</h2>" % T("Other levels") + link_list(
+            '<a href="%s">%s</a>' % (P(bracket_path(other)), bracket_label(other)) for other in others))
+    body = ("%s<h1>%s</h1><p class=summary>%s</p>%s%s%s"
+            % (crumbs(farms_trail(data, bracket=bracket)), T("Gold farms for %s") % bracket_phrase(bracket),
+               e(summary), price_bar(), "".join(sections), cta(links)))
+    return (T("Best gold farms for %s (WoW Forever)") % bracket_phrase(bracket),
+            T("The WoW Forever mobs worth farming at %s, ranked by gold per hour at current auction prices, from %s "
+              "kills recorded by GoldScout players.") % (bracket_phrase(bracket), num(kills)), body)
 
 
 def catch_table(data, map_id, spot):
     entry = data.fish[(map_id, spot)]
     body = "".join(
         "<tr><td>%s</td><td class=num>%s</td><td class=num>%s</td>%s%s</tr>"
-        % (item_link(data, item), chance(rate, entry["n"]), ("%.1f" % stack).rstrip("0").rstrip("."),
+        % (item_link(data, item), chance(rate, entry["n"]), stack_text(stack),
            price_cell(item), value_cell([(item, rate, stack)]))
         for item, rate, stack in data.catches(map_id, spot) if data.kind(item) != "gray")
-    return ("<table><thead><tr><th>Catch</th><th class=num>Chance</th><th class=num>Avg. stack</th>"
-            "<th class=num>Price</th><th class=num>Per catch</th></tr></thead><tbody>%s</tbody></table>" % body)
+    return ("<table><thead><tr><th>%s</th><th class=num>%s</th><th class=num>%s</th>"
+            "<th class=num>%s</th><th class=num>%s</th></tr></thead><tbody>%s</tbody></table>"
+            % (T("Catch"), T("Chance"), T("Avg. stack"), T("Price"), T("Per catch"), body))
 
 
 def spot_rows_value(data, map_id, spot, per_hour=False, tag="td"):
@@ -952,44 +1127,47 @@ def fishing_zone_indexed(data, map_id):
 
 
 def fishing_zone_page(data, map_id, links):
-    zone = data.map_names[map_id]
+    zone = data.map_name(map_id)
     spots = data.fish_zones[map_id]
     catches = sum(data.fish[(map_id, spot)]["n"] for spot in spots)
     skills = [data.fish[(map_id, spot)]["s"] for spot in spots if data.fish[(map_id, spot)]["s"]]
     first = data.catches(map_id, spots[0])
     top = [(item, rate) for item, rate, _ in first if data.kind(item) != "gray"][:2]
-    summary = "GoldScout players have recorded %s catches fishing in %s, WoW Forever." % (format(catches, ","), zone)
+    summary = T("GoldScout players have recorded %s catches fishing in %s, WoW Forever.") % (num(catches), zone)
     if skills:
-        summary += " The lowest Fishing skill seen catching here is %d." % min(skills)
+        summary += " " + T("The lowest Fishing skill seen catching here is %d.") % min(skills)
     if top:
-        summary += " %s gives %s." % (data.spot_name(map_id, spots[0]), " and ".join(
-            "%s on %s of catches" % (data.item_name(item), percent(rate)) for item, rate in top))
+        summary += " " + T("%s gives %s.") % (data.spot_name(map_id, spots[0]), T(" and ").join(
+            T("%s on %s of catches") % (data.item_name(item), percent(rate)) for item, rate in top))
     sections = []
     for spot in spots:
         entry = data.fish[(map_id, spot)]
-        facts = ["%s catches %s" % (format(entry["n"], ","), badge(entry["n"]))]
+        facts = [T("%s catches %s") % (num(entry["n"]), badge(entry["n"]))]
         if entry["s"]:
-            facts.append("lowest skill seen %d" % entry["s"])
-        sections.append('<h2>%s</h2><p class=facts>%s &middot; about %s a catch, %s an hour*</p>%s'
+            facts.append(T("lowest skill seen %d") % entry["s"])
+        sections.append('<h2>%s</h2><p class=facts>%s &middot; %s</p>%s'
                         % (e(data.spot_name(map_id, spot)), " &middot; ".join(facts),
-                           spot_rows_value(data, map_id, spot, tag="b"),
-                           spot_rows_value(data, map_id, spot, True, tag="b"),
+                           T("about %s a catch, %s an hour*") % (spot_rows_value(data, map_id, spot, tag="b"),
+                                                                 spot_rows_value(data, map_id, spot, True, tag="b")),
                            catch_table(data, map_id, spot)))
-    sections.append("<p class=small>* At %d catches an hour in open water, half that at pools. Gray junk is "
-                    "left out.</p>" % CATCHES_PER_HOUR)
-    sections.append(legend().replace("per kill", "per catch").replace("more kills are", "more catches are"))
+    sections.append("<p class=small>* %s</p>" % (T("At %d catches an hour in open water, half that at pools. Gray "
+                                                   "junk is left out.") % CATCHES_PER_HOUR))
+    sections.append(legend("catch"))
     if map_id in data.zones:
-        sections.append('<p>Mobs to farm here too: see <a href="/zone/%d">farming in %s</a>.</p>' % (map_id, e(zone)))
-    others = [other for other in sorted(data.fish_zones, key=lambda m: data.map_names[m]) if other != map_id]
+        sections.append('<p>%s</p>' % T('Mobs to farm here too: see <a href="%s">farming in %s</a>.')
+                        % (P("/zone/%d" % map_id), zone_html(data, map_id)))
+    others = [other for other in sorted(data.fish_zones, key=lambda m: data.map_name(m)) if other != map_id]
     if others:
-        sections.append("<h2>Fishing elsewhere</h2>" + link_list(fishing_link(data, other) for other in others))
-    trail = [("/", "Home"), ("/fishing", "Fishing"), ("/fishing/%d" % map_id, zone)]
-    body = "%s<h1>Fishing in %s</h1><p class=summary>%s</p>%s%s%s" % (
-        crumbs(trail), e(zone), e(summary), price_bar(), "".join(sections), cta(links))
-    description = "What you catch fishing in %s, WoW Forever%s, from %s catches recorded by GoldScout players." % (
+        sections.append("<h2>%s</h2>" % T("Fishing elsewhere") + link_list(fishing_link(data, other)
+                                                                          for other in others))
+    trail = [("/", T("Home")), ("/fishing", T("Fishing")), ("/fishing/%d" % map_id, zone)]
+    body = "%s<h1>%s</h1><p class=summary>%s</p>%s%s%s" % (
+        crumbs(trail), T("Fishing in %s") % zone_html(data, map_id), e(summary), price_bar(), "".join(sections),
+        cta(links))
+    description = T("What you catch fishing in %s, WoW Forever%s, from %s catches recorded by GoldScout players.") % (
         zone, ": " + ", ".join("%s %s" % (data.item_name(item), percent(rate)) for item, rate in top) if top else "",
-        format(catches, ","))
-    return "Fishing in %s: catches and gold per hour (WoW Forever)" % zone, description, body
+        num(catches))
+    return T("Fishing in %s: catches and gold per hour (WoW Forever)") % zone, description, body
 
 
 def fishing_page(data, links):
@@ -1000,36 +1178,37 @@ def fishing_page(data, links):
             entry = data.fish[(map_id, spot)]
             top = [(item, rate) for item, rate, _ in data.catches(map_id, spot) if data.kind(item) != "gray"][:2]
             rows.append("<tr%s><td>%s</td><td>%s</td><td class=num>%s %s</td><td class=num>%s</td><td>%s</td>%s%s</tr>"
-                        % (thin(entry["n"]), fishing_link(data, map_id), e(data.spot_name(map_id, spot)), format(entry["n"], ","),
-                           badge(entry["n"]), entry["s"] or "", ", ".join(
+                        % (thin(entry["n"]), fishing_link(data, map_id), e(data.spot_name(map_id, spot)),
+                           num(entry["n"]), badge(entry["n"]), entry["s"] or "", ", ".join(
                                "%s %s" % (item_link(data, item), percent(rate)) for item, rate in top),
                            spot_value(data, map_id, spot), spot_value(data, map_id, spot, True)))
-    table = ("<table class=by-value><thead><tr><th>Zone</th><th>Where</th><th class=num>Catches</th>"
-             "<th class=num>Lowest skill</th><th>Best catches</th><th class=num>Gold per catch</th>"
-             "<th class=num>Gold per hour*</th></tr></thead><tbody>%s</tbody></table>"
-             "<p class=small>* At %d catches an hour in open water, half that at pools. Lowest skill is the lowest "
-             "Fishing skill a player has caught there with.</p>" % ("".join(rows), CATCHES_PER_HOUR))
+    table = ("<table class=by-value><thead><tr><th>%s</th><th>%s</th><th class=num>%s</th>"
+             "<th class=num>%s</th><th>%s</th><th class=num>%s</th>"
+             "<th class=num>%s*</th></tr></thead><tbody>%s</tbody></table>"
+             "<p class=small>* %s</p>"
+             % (T("Zone"), T("Where"), T("Catches"), T("Lowest skill"), T("Best catches"), T("Gold per catch"),
+                T("Gold per hour"), "".join(rows),
+                T("At %d catches an hour in open water, half that at pools. Lowest skill is the lowest Fishing skill "
+                  "a player has caught there with.") % CATCHES_PER_HOUR))
     catches = sum(entry["n"] for entry in data.fish.values())
-    summary = ("Every zone GoldScout players have fished in WoW Forever, from %s catches, ranked by what the catch is "
-               "worth an hour at current auction prices. Pick your realm type and faction for your prices."
-               % format(catches, ","))
-    trail = [("/", "Home"), ("/fishing", "Fishing")]
-    body = "%s<h1>Fishing for gold</h1><p class=summary>%s</p>%s%s%s%s" % (
-        crumbs(trail), e(summary), price_bar(), table if rows else "<p class=sub>No fishing recorded yet.</p>",
-        legend().replace("per kill", "per catch").replace("more kills are", "more catches are"), cta(links))
-    return ("Best fishing spots for gold (WoW Forever)",
-            "Where to fish for gold in WoW Forever: every zone ranked by gold per hour at current auction prices, "
-            "from %s catches recorded by GoldScout players." % format(catches, ","), body)
+    summary = (T("Every zone GoldScout players have fished in WoW Forever, from %s catches, ranked by what the catch "
+                 "is worth an hour at current auction prices. Pick your realm type and faction for your prices.")
+               % num(catches))
+    trail = [("/", T("Home")), ("/fishing", T("Fishing"))]
+    body = "%s<h1>%s</h1><p class=summary>%s</p>%s%s%s%s" % (
+        crumbs(trail), T("Fishing for gold"), e(summary), price_bar(),
+        table if rows else "<p class=sub>%s</p>" % T("No fishing recorded yet."), legend("catch"), cta(links))
+    return (T("Best fishing spots for gold (WoW Forever)"),
+            T("Where to fish for gold in WoW Forever: every zone ranked by gold per hour at current auction prices, "
+              "from %s catches recorded by GoldScout players.") % num(catches), body)
 
 
-def rates_page(data, links):
-    levels = "".join("<li>%s: %s</li>" % (badge(minimum), text) for minimum, text in [
-        (0, "fewer than 5 kills. A first look; expect it to change."),
-        (5, "5 to 14 kills. Common drops are roughly right."),
-        (15, "15 to 49 kills. Good for most drops."),
-        (50, "50 kills or more. Reliable, even for uncommon drops.")])
-    trail = [("/", "Home"), ("/drop-rates", "How drop rates work")]
-    body = """%s<h1>How GoldScout drop rates work</h1>
+RATES_LEVELS = [
+    (0, "fewer than 5 kills. A first look; expect it to change."),
+    (5, "5 to 14 kills. Common drops are roughly right."),
+    (15, "15 to 49 kills. Good for most drops."),
+    (50, "50 kills or more. Reliable, even for uncommon drops.")]
+RATES_BODY = """<h1>How GoldScout drop rates work</h1>
 <p class=summary>Every number on this site comes from GoldScout players looting in WoW Forever. Nothing is copied from Wowhead or any other database.</p>
 <h2>Chance</h2>
 <p>The chance for an item is how many kills dropped it, divided by the kills recorded. A mob recorded 200 times that dropped an item 50 times shows 25%%. Average stack is how many of the item came in each drop. For pickpocketing, the chance is per pickpocket instead of per kill.</p>
@@ -1050,10 +1229,17 @@ def rates_page(data, links):
 <p>Prices are the lowest buyout on the auction house for the realm type and faction you pick, from Blizzard's auction data, refreshed about every hour. Gold per kill adds up each crafting reagent's chance times its average stack times that price. It leaves out gear, recipes and gems (their prices swing too much) and how long a kill takes.</p>
 <p>The GoldScout addon turns this into gold per hour for your character, using your own auction house scans when they're newer.</p>
 <p class=small>%s</p>
-%s""" % (crumbs(trail), levels, MIN_ATTEMPTS, format(PLAYER_CAP, ","), SOURCE, cta(links))
-    return ("How GoldScout drop rates work",
-            "Where GoldScout's WoW Forever drop rates come from, what the chance and confidence mean, and how the data is checked.",
-            body)
+"""
+DE[RATES_BODY] = RATES_BODY_DE
+
+
+def rates_page(data, links):
+    levels = "".join("<li>%s: %s</li>" % (badge(minimum), T(text)) for minimum, text in RATES_LEVELS)
+    trail = [("/", T("Home")), ("/drop-rates", T("How drop rates work"))]
+    body = crumbs(trail) + T(RATES_BODY) % (levels, MIN_ATTEMPTS, num(PLAYER_CAP), T(SOURCE)) + cta(links)
+    return (T("How GoldScout drop rates work"),
+            T("Where GoldScout's WoW Forever drop rates come from, what the chance and confidence mean, and how the "
+              "data is checked."), body)
 
 
 def coverage(data, npcs):
@@ -1067,11 +1253,11 @@ def coverage_row(label, npcs, data):
     mobs, kills, good, solid = coverage(data, npcs)
     if not mobs:
         return ("<tr><td>%s</td><td class=num>0</td><td class=num>0</td><td class=num>0</td><td class=num>0</td>"
-                "<td class=small>nobody yet</td></tr>" % label)
+                "<td class=small>%s</td></tr>" % (label, T("nobody yet")))
     return ("<tr><td>%s</td><td class=num>%d</td><td class=num>%s</td><td class=num>%d <span class=range>%d%%</span>"
             "</td><td class=num>%d</td><td class=bar><span class=track><span class=good style=\"width:%d%%\"><span "
             "class=solid style=\"width:%d%%\"></span></span></span></td></tr>"
-            % (label, mobs, format(kills, ","), good, round(100 * good / mobs), solid, round(100 * good / mobs),
+            % (label, mobs, num(kills), good, round(100 * good / mobs), solid, round(100 * good / mobs),
                round(100 * solid / good) if good else 0))
 
 
@@ -1084,11 +1270,12 @@ def zone_levels(data, map_id):
 
 def data_wanted_page(data, links):
     """/data-wanted: the level ranges and zones with the least data, and mobs a few kills from solid rates."""
-    head = ("<table><thead><tr><th>%s</th><th class=num>Mobs</th><th class=num>Kills</th><th class=num>%d+ "
-            "kills</th><th class=num>%d+ kills</th><th class=bar-head>Recorded</th></tr></thead><tbody>")
-    by_level = "".join(coverage_row(('<a href="%s">%s</a>' if data.bracket_mobs(bracket) else '%s%s')
-                                    % (bracket_path(bracket) if data.bracket_mobs(bracket) else "",
-                                       bracket_label(bracket)),
+    head = ("<table><thead><tr><th>%s</th><th class=num>%s</th><th class=num>%s</th><th class=num>%s</th>"
+            "<th class=num>%s</th><th class=bar-head>%s</th></tr></thead><tbody>"
+            % (T("Levels"), T("Mobs"), T("Kills"), T("%d+ kills") % INDEX_MIN, T("%d+ kills") % SOLID,
+               T("Recorded")))
+    by_level = "".join(coverage_row(('<a href="%s">%s</a>' % (P(bracket_path(bracket)), bracket_label(bracket))
+                                     if data.bracket_mobs(bracket) else bracket_label(bracket)),
                                     data.bracket_mobs(bracket), data) for bracket in BRACKETS)
     brackets = [bracket for bracket in BRACKETS if data.bracket_mobs(bracket)]
     zones = sorted(data.zones, key=lambda map_id: (coverage(data, data.zones[map_id])[1], data.map_names[map_id]))
@@ -1096,9 +1283,9 @@ def data_wanted_page(data, links):
     by_zone = "".join(
         "<tr><td>%s</td><td class=num>%d</td><td class=num>%s</td><td class=num>%d</td><td class=bar>%s</td>"
         "<td class=small>%s</td></tr>"
-        % ('<a href="/zone/%d">%s</a> <span class=small>%s</span>'
-           % (map_id, e(data.map_names[map_id]), e(zone_levels(data, map_id))),
-           goals[map_id]["total"], format(coverage(data, data.zones[map_id])[1], ","), goals[map_id]["solid"],
+        % ('<a href="%s">%s</a> <span class=small>%s</span>'
+           % (P("/zone/%d" % map_id), zone_html(data, map_id), e(zone_levels(data, map_id))),
+           goals[map_id]["total"], num(coverage(data, data.zones[map_id])[1]), goals[map_id]["solid"],
            goal_bar(goals[map_id]), goal_next(goals[map_id]))
         for map_id in zones)
     complete = sum(1 for goal in goals.values() if not goal["next"])
@@ -1109,36 +1296,43 @@ def data_wanted_page(data, links):
         npcs.sort(key=lambda npc: (-data.mobs[npc]["k"], npc))
         if npcs:
             almost.append("<h3>%s</h3>%s" % (bracket_label(bracket), link_list(
-                "%s <span class=small>%s%s &middot; %d kills, <b>%d to go</b></span>"
-                % (mob_link(data, npc), "level %s" % e(data.levels(npc)) if data.levels(npc) else "",
-                   ", %s" % e(data.zone(npc)) if data.zone(npc) else "", data.mobs[npc]["k"],
-                   SOLID - data.mobs[npc]["k"])
+                "%s <span class=small>%s%s &middot; %s</span>"
+                % (mob_link(data, npc), T("level %s") % e(data.levels(npc)) if data.levels(npc) else "",
+                   ", %s" % zone_html(data, data.zone_id(npc)) if data.zone(npc) else "",
+                   T("%d kills, <b>%d to go</b>") % (data.mobs[npc]["k"], SOLID - data.mobs[npc]["k"]))
                 for npc in npcs[:ALMOST])))
     mobs, kills, _, solid = coverage(data, list(data.mobs))
-    trail = [("/", "Home"), ("/farms", "Farms by level"), ("/data-wanted", "Where data is needed")]
-    body = ("%s<h1>Where GoldScout needs data</h1><p class=facts>Every drop rate on this site comes from GoldScout "
-            "players' loot: %s kills of %d mobs so far, %d of them with the %d+ kills that make a rate solid. Here's "
-            "where it's thin. Farming any of these with GoldScout and the companion running fills it in for "
-            "everyone.</p><p class=sub>The bar shows the share of mobs with %d+ kills (rated good); the brighter part "
-            "has %d+ (rated high: solid).</p>"
-            "<h2>By level</h2>%s%s</tbody></table>"
-            "<h2>Zone goals</h2><p class=sub>Each zone's goal: every mob players have recorded there with solid "
-            "drop rates (%d+ kills), with milestones at 10%%, 25%%, 50%% and 75%%. %d of %d zones complete, %d past a "
-            "milestone. Least recorded first; zones nobody has looted in yet aren't listed.</p>"
-            "<table><thead><tr><th>Zone</th><th class=num>Mobs</th><th class=num>Kills</th><th class=num>Solid</th>"
-            "<th class=bar-head>Goal</th><th>Next</th></tr></thead><tbody>%s</tbody></table>"
-            "<h2>Almost there</h2><p class=sub>Mobs a few kills from solid rates, the closest first.</p>%s%s"
-            % (crumbs(trail), format(kills, ","), mobs, solid, SOLID, INDEX_MIN, SOLID,
-               head % ("Levels", INDEX_MIN, SOLID), by_level,
-               SOLID, complete, len(goals), started, by_zone, "".join(almost), cta(links)))
-    return ("Where GoldScout needs drop data (WoW Forever)",
-            "The WoW Forever level ranges, zones and mobs with the least drop data recorded by GoldScout players, "
-            "and how to help fill them in.", body)
+    trail = [("/", T("Home")), ("/farms", T("Farms by level")), ("/data-wanted", T("Where data is needed"))]
+    body = ("%s<h1>%s</h1><p class=facts>%s</p><p class=sub>%s</p>"
+            "<h2>%s</h2>%s%s</tbody></table>"
+            "<h2>%s</h2><p class=sub>%s</p>"
+            "<table><thead><tr><th>%s</th><th class=num>%s</th><th class=num>%s</th><th class=num>%s</th>"
+            "<th class=bar-head>%s</th><th>%s</th></tr></thead><tbody>%s</tbody></table>"
+            "<h2>%s</h2><p class=sub>%s</p>%s%s"
+            % (crumbs(trail), T("Where GoldScout needs data"),
+               T("Every drop rate on this site comes from GoldScout players' loot: %s kills of %d mobs so far, %d of "
+                 "them with the %d+ kills that make a rate solid. Here's where it's thin. Farming any of these with "
+                 "GoldScout and the companion running fills it in for everyone.") % (num(kills), mobs, solid, SOLID),
+               T("The bar shows the share of mobs with %d+ kills (rated good); the brighter part has %d+ (rated high: "
+                 "solid).") % (INDEX_MIN, SOLID),
+               T("By level"), head, by_level,
+               T("Zone goals"),
+               T("Each zone's goal: every mob players have recorded there with solid drop rates (%d+ kills), with "
+                 "milestones at 10%%, 25%%, 50%% and 75%%. %d of %d zones complete, %d past a milestone. Least "
+                 "recorded first; zones nobody has looted in yet aren't listed.")
+               % (SOLID, complete, len(goals), started),
+               T("Zone"), T("Mobs"), T("Kills"), T("Solid"), T("Goal"), T("Next"), by_zone,
+               T("Almost there"), T("Mobs a few kills from solid rates, the closest first."), "".join(almost),
+               cta(links)))
+    return (T("Where GoldScout needs drop data (WoW Forever)"),
+            T("The WoW Forever level ranges, zones and mobs with the least drop data recorded by GoldScout players, "
+              "and how to help fill them in."), body)
 
 
 def build(data, links, write):
-    """Calls write(path, title, description, body, index=...) for every data page; returns the URL paths
-    search engines should see (the sitemap's), leaving out the thin pages built with index=False."""
+    """Calls write(path, title, description, body, index=...) for every data page in the language being built
+    (LANG; paths as on English pages); returns the URL paths search engines should see (the sitemap's),
+    leaving out the thin pages built with index=False."""
     paths = ["/farms", "/drop-rates", "/data-wanted"]
     write("farms.html", *farms_page(data, links))
     write("drop-rates.html", *rates_page(data, links))
@@ -1165,6 +1359,38 @@ def build(data, links, write):
     return paths
 
 
+def build_language(lang, data, links, write):
+    """build() with every page in another language: write gets the same paths as English, and P() links
+    point inside that language."""
+    global LANG
+    previous, LANG = LANG, lang
+
+    def written(path, title, description, body, index=True):
+        write(path, grammar(title), grammar(description), grammar(body), index=index)
+    try:
+        return build(data, links, written)
+    finally:
+        LANG = previous
+
+
+# German zone names with an article ("Das Brachland") after "in" and "von": "im Brachland", "vom Brachland",
+# "in der ...". The name may sit inside a link or an English-name mark.
+GERMAN_ARTICLES = [
+    (re.compile(r"\b([Ii])n ((?:<[^>]+>)*)D(?:as|er) "), r"\1m \2"),
+    (re.compile(r"\b([Ii])n ((?:<[^>]+>)*)Die "), r"\1n der \2"),
+    (re.compile(r"\b([Vv])on ((?:<[^>]+>)*)D(?:as|er) "), r"\1om \2"),
+    (re.compile(r"\b([Vv])on ((?:<[^>]+>)*)Die "), r"\1on der \2"),
+]
+
+
+def grammar(text):
+    """Fixes what filling names into sentences breaks in the language being built (German articles)."""
+    if LANG == "de":
+        for pattern, replacement in GERMAN_ARTICLES:
+            text = pattern.sub(replacement, text)
+    return text
+
+
 # -- site search -------------------------------------------------------------------
 KIND_LABEL = {"reagent": "Crafting reagent", "rare": "Rare drop", "other": "Item", "unknown": "Item"}
 
@@ -1172,39 +1398,48 @@ KIND_LABEL = {"reagent": "Crafting reagent", "rare": "Rare drop", "other": "Item
 def search_index(data):
     """[name, path, detail, weight] for every data page, for the site search (site/search.js). Weight
     (kills, catches) breaks ties between equally good matches. Mobs and items players' exports didn't
-    name are left out: nobody searches for "Mob 3637"."""
+    name are left out: nobody searches for "Mob 3637". In another language (LANG), names are that
+    language's where players have recorded them, with the English name as a second entry."""
     entries = []
+
+    def add(name, english, path, detail, weight):
+        entries.append([name, P(path), detail, weight])
+        if english and english != name:
+            entries.append([english, P(path), detail, weight])
+
     for bracket in BRACKETS:
         npcs = data.bracket_mobs(bracket)
         if npcs:
-            entries.append(["Gold farms for %s" % bracket_label(bracket).lower(), bracket_path(bracket),
-                            "Farms by level · %d mobs" % len(npcs), sum(data.mobs[npc]["k"] for npc in npcs)])
+            add(T("Gold farms for %s") % bracket_phrase(bracket), None, bracket_path(bracket),
+                T("Farms by level · %d mobs") % len(npcs), sum(data.mobs[npc]["k"] for npc in npcs))
     for map_id, npcs in data.zones.items():
-        entries.append([data.map_names[map_id], "/zone/%d" % map_id, "Zone · %d mob%s" % (
-            len(npcs), "" if len(npcs) == 1 else "s"), sum(data.attempts(npc) for npc in npcs)])
+        add(data.map_name(map_id), data.map_names[map_id], "/zone/%d" % map_id,
+            plural(len(npcs), "Zone · %d mob", "Zone · %d mobs"), sum(data.attempts(npc) for npc in npcs))
     for map_id, spots in data.fish_zones.items():
         catches = sum(data.fish[(map_id, spot)]["n"] for spot in spots)
-        entries.append(["Fishing in %s" % data.map_names[map_id], "/fishing/%d" % map_id,
-                        "Fishing · %s catches" % format(catches, ","), catches])
+        add(T("Fishing in %s") % data.map_name(map_id), T("Fishing in %s") % data.map_names[map_id],
+            "/fishing/%d" % map_id, T("Fishing · %s catches") % num(catches), catches)
     for npc in data.mobs:
         if not data.mobs[npc]["names"]:
             continue
-        bits = ["Mob"]
+        bits = [T("Mob")]
         if data.levels(npc):
-            bits.append("level %s" % data.levels(npc))
+            bits.append(T("level %s") % data.levels(npc))
         if data.zone(npc):
             bits.append(data.zone(npc))
-        entries.append([data.mob_name(npc), "/mob/%d" % npc, " · ".join(bits), data.attempts(npc)])
+        add(data.mob_name(npc), data.english_mob_name(npc), "/mob/%d" % npc, " · ".join(bits), data.attempts(npc))
     for item in data.items:
         if item not in data.item_names:
             continue
         sources = data.sources.get(item, [])
         fishing = data.fish_sources.get(item, [])
         count = len(sources) + len(fishing)
-        detail = "%s · %d source%s" % (KIND_LABEL[data.kind(item)], count, "" if count == 1 else "s")
+        detail = T(KIND_LABEL[data.kind(item)]) + " · " + plural(count, "%d source", "%d sources")
         if fishing:
-            detail += " · fished up"
-        entries.append([data.item_name(item), "/item/%d" % item, detail,
-                        sum(source[3] for source in sources) + sum(source[4] for source in fishing)])
+            detail += " · " + T("fished up")
+        add(data.item_name(item), data.item_names[item], "/item/%d" % item, detail,
+            sum(source[3] for source in sources) + sum(source[4] for source in fishing))
+    for entry in entries:
+        entry[0], entry[2] = grammar(entry[0]), grammar(entry[2])
     entries.sort(key=lambda entry: (entry[0].lower(), entry[1]))
     return entries

@@ -203,6 +203,46 @@ SEARCH_BOX = ('<form class="site-search" role="search" hidden>'
               '<input type="search" name="q" placeholder="Search items, mobs and zones" '
               'aria-label="Search items, mobs and zones" autocomplete="off" spellcheck="false">'
               '<ul class="results" role="listbox" hidden></ul></form>')
+SEARCH_BOX_DE = (SEARCH_BOX.replace('placeholder="Search items, mobs and zones"',
+                                   'placeholder="Gegenstände, Gegner, Gebiete"')
+                 .replace("Search items, mobs and zones", "Gegenstände, Gegner und Gebiete suchen"))
+
+# The data pages' header and footer in each language (data_pages.LOCAL_PAGES exist in both; the rest is
+# English, so German pages link there in English).
+CHROME = {
+    "en": {
+        "nav": '<a href="/farms">Farms by level</a><a href="/fishing">Fishing</a><a href="/drop-rates">Drop rates</a>'
+               '<a href="/companion">Companion</a><a href="/leaderboard">Leaderboard</a><a href="/faq">FAQ</a>'
+               '<a href="%(curseforge)s">Get GoldScout</a>',
+        "footer": '<a href="/">Home</a><a href="/farms">Farms by level</a><a href="/fishing">Fishing</a>'
+                  '<a href="/drop-rates">How drop rates work</a><a href="/leaderboard">Leaderboard</a>'
+                  '<a href="/data-wanted">Data wanted</a><a href="/faq">FAQ</a><a href="%(discord)s">Discord</a>'
+                  '<a href="%(source)s">GitHub</a><a href="%(privacy)s">Privacy</a>'
+                  '<a href="%(data_license)s">Data license</a>',
+        "notice": "Drop rates come from GoldScout players and are covered by the GoldScout Data License. GoldScout is "
+                  "a fan project, not affiliated with or endorsed by Blizzard Entertainment. World of Warcraft is a "
+                  "trademark of Blizzard Entertainment, Inc.",
+        "switch": ("de", "Deutsch"),
+        "search": SEARCH_BOX,
+    },
+    "de": {
+        "nav": '<a href="/de/farms">Farmen nach Stufe</a><a href="/de/fishing">Angeln</a>'
+               '<a href="/de/drop-rates">Dropraten</a><a href="/companion" lang="en">Companion</a>'
+               '<a href="/leaderboard" lang="en">Leaderboard</a><a href="/faq" lang="en">FAQ</a>'
+               '<a href="%(curseforge)s">GoldScout holen</a>',
+        "footer": '<a href="/" lang="en">Home</a><a href="/de/farms">Farmen nach Stufe</a><a href="/de/fishing">Angeln</a>'
+                  '<a href="/de/drop-rates">So funktionieren Dropraten</a><a href="/leaderboard" lang="en">Leaderboard</a>'
+                  '<a href="/de/data-wanted">Daten gesucht</a><a href="/faq" lang="en">FAQ</a>'
+                  '<a href="%(discord)s">Discord</a><a href="%(source)s">GitHub</a>'
+                  '<a href="%(privacy)s" lang="en">Privacy</a><a href="%(data_license)s" lang="en">Data license</a>',
+        "notice": "Die Dropraten stammen von GoldScout-Spielern und stehen unter der GoldScout Data License. "
+                  "Spielnamen, die noch kein deutscher Spieler erfasst hat, stehen kursiv auf Englisch. GoldScout ist "
+                  "ein Fanprojekt, nicht mit Blizzard Entertainment verbunden und nicht von Blizzard unterstützt. "
+                  "World of Warcraft ist eine Marke von Blizzard Entertainment, Inc.",
+        "switch": ("en", "English"),
+        "search": SEARCH_BOX_DE,
+    },
+}
 
 CSS = """
 :root {
@@ -272,6 +312,9 @@ tr:last-child td { border-bottom: none; }
 td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .conf { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px; font-weight: 600; color: #1b1203; }
 .range { font-size: 12px; color: var(--muted); white-space: nowrap; }
+.en-name { font-style: italic; }
+a.lang-switch { color: var(--muted); text-decoration: none; font-size: 14px; margin-left: 18px; border: 1px solid var(--line); border-radius: 8px; padding: 2px 8px; white-space: nowrap; }
+a.lang-switch:hover { color: var(--text); }
 td.bar { width: 120px; }
 td.bar { background: none; }
 .goal-bar { position: relative; display: block; height: 10px; min-width: 110px; border-radius: 5px; background: var(--line); overflow: hidden; }
@@ -459,10 +502,31 @@ def home_jsonld():
     return data_pages.json_for_script(data)
 
 
-def layout(title, description, path, body, index=True):
-    """A data page: the site's header and footer around body. index=False keeps it out of search engines."""
+def language_links(path, lang):
+    """hreflang alternates and the other language's address for a page that exists in every language,
+    or ("", None). path is the page's own path (/de/... for German)."""
+    english = path[len("/" + lang):] if lang != "en" else path
+    if not data_pages.is_local_page(english):
+        return "", None
+    links = ['<link rel="alternate" hreflang="en" href="%s%s">' % (SITE_URL, english)]
+    links += ['<link rel="alternate" hreflang="%s" href="%s/%s%s">' % (other, SITE_URL, other, english)
+              for other in data_pages.LANGUAGES]
+    links.append('<link rel="alternate" hreflang="x-default" href="%s%s">' % (SITE_URL, english))
+    target, _ = CHROME[lang]["switch"]
+    return "\n" + "\n".join(links), english if target == "en" else "/" + target + english
+
+
+def layout(title, description, path, body, index=True, lang="en"):
+    """A data page: the site's header and footer around body. index=False keeps it out of search engines.
+    lang: the page's language (German pages live under /de/)."""
+    chrome = CHROME[lang]
+    alternates, other = language_links(path, lang)
+    switch = ""
+    if other:
+        target, label = chrome["switch"]
+        switch = '<a class="lang-switch" href="%s" hreflang="%s" lang="%s">%s</a>' % (other, target, target, label)
     return """<!doctype html>
-<html lang="en">
+<html lang="%(lang)s">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -475,7 +539,7 @@ def layout(title, description, path, body, index=True):
 <meta property="og:image" content="%(site)s/logo-400.png">
 <meta property="og:site_name" content="GoldScout">
 <meta name="twitter:card" content="summary">
-<link rel="canonical" href="%(site)s%(path)s">%(robots)s
+<link rel="canonical" href="%(site)s%(path)s">%(robots)s%(alternates)s
 <link rel="icon" href="/favicon.png">
 <style>%(css)s</style>
 <script src="/prices.js" defer></script>
@@ -485,18 +549,20 @@ def layout(title, description, path, body, index=True):
 <div class="wrap">
 <header class="top">
   <a class="brand" href="/"><img src="/logo-400.png" alt="">GoldScout</a>
-  <nav><a href="/farms">Farms by level</a><a href="/fishing">Fishing</a><a href="/drop-rates">Drop rates</a><a href="/companion">Companion</a><a href="/leaderboard">Leaderboard</a><a href="/faq">FAQ</a><a href="%(curseforge)s">Get GoldScout</a></nav>
+  <nav>%(nav)s</nav>%(switch)s
 </header>
 %(search)s
 <main class="page"><div class="table-wrap">%(body)s</div></main>
 </div>
 <footer><div class="wrap">
-  <p><a href="/">Home</a><a href="/farms">Farms by level</a><a href="/fishing">Fishing</a><a href="/drop-rates">How drop rates work</a><a href="/leaderboard">Leaderboard</a><a href="/data-wanted">Data wanted</a><a href="/faq">FAQ</a><a href="%(discord)s">Discord</a><a href="%(source)s">GitHub</a><a href="%(privacy)s">Privacy</a><a href="%(data_license)s">Data license</a></p>
-  <p>Drop rates come from GoldScout players and are covered by the GoldScout Data License. GoldScout is a fan project, not affiliated with or endorsed by Blizzard Entertainment. World of Warcraft is a trademark of Blizzard Entertainment, Inc.</p>
+  <p>%(footer)s</p>
+  <p>%(notice)s</p>
 </div></footer>
 </body>
 </html>
-""" % dict(LINKS, site=SITE_URL, css=CSS, path=path, body=body, search=SEARCH_BOX,
+""" % dict(LINKS, site=SITE_URL, css=CSS, path=path, body=body, search=chrome["search"], lang=lang,
+           nav=chrome["nav"] % LINKS, footer=chrome["footer"] % LINKS, notice=chrome["notice"],
+           switch=switch, alternates=alternates,
            robots="" if index else '\n<meta name="robots" content="noindex, follow">',
            title=html.escape(title), description=html.escape(description))
 
@@ -513,6 +579,16 @@ STATIC_SEARCH = [
 ]
 
 
+def search_page_de():
+    """/de/search, as search_page()."""
+    body = """<h1>Suche</h1>
+<p class="small" id="search-status">Suche läuft...</p>
+<ul class="search-list" id="search-page-results"></ul>
+<noscript><p class="small">Die Suche braucht JavaScript. <a href="/de/farms">Farmen nach Stufe</a> durchsehen.</p></noscript>
+"""
+    return ("Suche", "Gegenstände, Gegner, Gebiete und Angelplätze aus WoW Forever bei GoldScout suchen.", body)
+
+
 def search_page():
     """(title, description, body) for /search; site/search.js lists the results for ?q=."""
     body = """<h1>Search</h1>
@@ -521,6 +597,17 @@ def search_page():
 <noscript><p class="small">Search needs JavaScript. <a href="/farms">Browse farms by level</a> instead.</p></noscript>
 """
     return ("Search", "Search GoldScout's WoW Forever items, mobs, zones and fishing spots.", body)
+
+
+STATIC_SEARCH_DE = [
+    ["Farmen nach Stufe", "/de/farms", "Die besten Goldfarmen für jede Stufe", TOP],
+    ["Angeln für Gold", "/de/fishing", "Jedes Gebiet, in dem Spieler geangelt haben, nach Gold pro Stunde", TOP],
+    ["So funktionieren Dropraten", "/de/drop-rates", "Chance, Bereiche und wie die Daten geprüft werden", TOP],
+    ["Wo GoldScout Daten braucht", "/de/data-wanted", "Stufen, Gebiete und Gegner mit den wenigsten Dropdaten", TOP],
+    ["GoldScout Companion", "/companion", "Kostenlose App (auf Englisch): stündliche Auktionspreise", TOP],
+    ["Bestenliste der Mitwirkenden", "/leaderboard", "Wer die meisten Dropdaten geteilt hat (auf Englisch)", TOP],
+    ["FAQ", "/faq", "Fragen zu GoldScout (auf Englisch)", TOP],
+]
 
 
 def leaderboard_page():
@@ -648,11 +735,14 @@ def main():
     s = stats(results, merged)
     (DIST / "index.html").write_text(page(s), encoding="utf-8")
 
-    def write(relative, title, description, body, index=True):
+    def write(relative, title, description, body, index=True, lang="en"):
         target = DIST / relative
         target.parent.mkdir(parents=True, exist_ok=True)
         url_path = "/" + relative[:-len(".html")]
-        target.write_text(layout(title, description, url_path, body, index), encoding="utf-8")
+        target.write_text(layout(title, description, url_path, body, index, lang), encoding="utf-8")
+
+    def write_de(relative, title, description, body, index=True):
+        write("de/" + relative, title, description, body, index, "de")
 
     write("companion.html", *companion_page(s))
     write("faq.html", *faq_page())
@@ -662,6 +752,16 @@ def main():
     write("search.html", *search_page(), index=False)   # results for one visitor's words: not for search engines
     index = data_pages.search_index(data) + STATIC_SEARCH
     (DIST / "search.json").write_text(json.dumps(index, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    # German: the same data pages under /de/, with German names where German players have recorded them.
+    paths += ["/de" + path for path in data_pages.build_language("de", data, LINKS, write_de)]
+    write_de("search.html", *search_page_de(), index=False)
+    data_pages.LANG = "de"
+    try:
+        index_de = data_pages.search_index(data) + STATIC_SEARCH_DE
+    finally:
+        data_pages.LANG = "en"
+    (DIST / "search-de.json").write_text(json.dumps(index_de, ensure_ascii=False, separators=(",", ":")),
+                                         encoding="utf-8")
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>',
                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     lastmod = "<lastmod>%s</lastmod>" % s["updated_iso"] if s["updated_iso"] else ""

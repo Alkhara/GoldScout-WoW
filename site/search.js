@@ -10,10 +10,34 @@
   var MAX_SUGGESTIONS = 8;
   var MAX_RESULTS = 100;
   var index = null, loading = null;
+  // German pages (<html lang="de">, under /de/) search the German index and show German.
+  var GERMAN = document.documentElement.lang === "de";
+  var PREFIX = GERMAN ? "/de" : "";
+  var WORDS = /[^\p{L}\p{N}']+/u;   // letters in any script, so "Händler" is one word
+  var TEXT = GERMAN ? {
+    none: "Noch nichts gefunden. Spieler haben es noch nicht erfasst, oder versuch es mit weniger Buchstaben.",
+    failed: "Die Suche ist gerade nicht verfügbar.",
+    empty: "Gib einen Gegenstand, Gegner oder ein Gebiet ins Suchfeld ein.",
+    first: "Die ersten ", result: " Treffer", results: " Treffer",
+    quote: function (q) { return " für \u201e" + q + "\u201c"; },
+    nothing: function (q) {
+      return "Noch nichts gefunden für \u201e" + q + "\u201c. Spieler haben es noch nicht erfasst, oder versuch es " +
+        "mit weniger Buchstaben.";
+    }
+  } : {
+    none: "Nothing found yet. Players haven't recorded it, or try fewer letters.",
+    failed: "Search isn't available right now.",
+    empty: "Type an item, mob or zone in the search box.",
+    first: "The first ", result: " result", results: " results",
+    quote: function (q) { return " for \u201c" + q + "\u201d"; },
+    nothing: function (q) {
+      return "Nothing found for \u201c" + q + "\u201d yet. Players haven't recorded it, or try fewer letters.";
+    }
+  };
 
   function load() {
     if (!loading) {
-      loading = fetch("/search.json").then(function (response) {
+      loading = fetch(GERMAN ? "/search-de.json" : "/search.json").then(function (response) {
         if (!response.ok) {
           throw new Error("HTTP " + response.status);
         }
@@ -22,7 +46,7 @@
         index = entries.map(function (entry) {
           var name = entry[0].toLowerCase();
           return { name: entry[0], path: entry[1], detail: entry[2], weight: entry[3], lower: name,
-                   words: name.split(/[^a-z0-9']+/).filter(Boolean) };
+                   words: name.split(WORDS).filter(Boolean) };
         });
         return index;
       });
@@ -55,7 +79,7 @@
     if (!query || !index) {
       return [];
     }
-    var terms = query.split(/[^a-z0-9']+/).filter(Boolean);
+    var terms = query.split(WORDS).filter(Boolean);
     var found = [];
     index.forEach(function (entry) {
       var s = score(entry, query, terms);
@@ -88,7 +112,7 @@
   }
 
   function fullSearch(text) {
-    window.location.href = "/search?q=" + encodeURIComponent(text.trim());
+    window.location.href = PREFIX + "/search?q=" + encodeURIComponent(text.trim());
   }
 
   function setUp(form) {
@@ -131,7 +155,7 @@
         if (!hits.length) {
           var none = document.createElement("li");
           none.className = "none";
-          none.textContent = "Nothing found yet. Players haven't recorded it, or try fewer letters.";
+          none.textContent = TEXT.none;
           list.appendChild(none);
         }
         hits.forEach(function (entry) {
@@ -142,7 +166,7 @@
         list.textContent = "";
         var failed = document.createElement("li");
         failed.className = "none";
-        failed.textContent = "Search isn't available right now.";
+        failed.textContent = TEXT.failed;
         list.appendChild(failed);
         list.hidden = false;
       });
@@ -188,19 +212,20 @@
       input.value = query;
     });
     if (!query.trim()) {
-      status.textContent = "Type an item, mob or zone in the search box.";
+      status.textContent = TEXT.empty;
       return;
     }
     load().then(function () {
       var hits = search(query, MAX_RESULTS);
       status.textContent = hits.length
-        ? (hits.length === MAX_RESULTS ? "The first " : "") + hits.length + " result" + (hits.length === 1 ? "" : "s") + " for “" + query.trim() + "”."
-        : "Nothing found for “" + query.trim() + "” yet. Players haven't recorded it, or try fewer letters.";
+        ? (hits.length === MAX_RESULTS ? TEXT.first : "") + hits.length +
+          (hits.length === 1 ? TEXT.result : TEXT.results) + TEXT.quote(query.trim()) + "."
+        : TEXT.nothing(query.trim());
       hits.forEach(function (entry) {
         target.appendChild(resultItem(entry));
       });
     }).catch(function () {
-      status.textContent = "Search isn't available right now.";
+      status.textContent = TEXT.failed;
     });
   }
 

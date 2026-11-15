@@ -122,6 +122,9 @@ class Result:
         self.locale = None   # the client's language (version 5+); None for older exports
         self.areas = {}      # npcID -> {cell: count} from @a lines, attached to the mobs
         self.fishing = []    # Fish from @f lines
+        # Names keep_english_names() took out of a non-English export, kept apart for the website's
+        # pages in that language: {"items": {itemID: name}, "maps": {...}, "mobs": {npcID: name}}.
+        self.local_names = {}
 
     def text(self):
         """The export rebuilt from the validated data."""
@@ -382,12 +385,16 @@ def keep_english_names(result):
     """Drops the names in a result that aren't English, in place, so the shared
     data and the website stay English: every name in a non-English export, and
     in older exports (no language line) any name in a non-Latin script. Drop
-    counts and everything else are kept."""
+    counts and everything else are kept. A non-English export's names are kept
+    apart in result.local_names, for the website's pages in that language."""
     english = result.locale is None or result.locale.startswith("en")
 
     def keep(name):
         return english and (result.locale is not None or latin(name))
 
+    if result.locale and not english:
+        result.local_names = {"items": dict(result.item_names), "maps": dict(result.map_names),
+                              "mobs": {mob.npc: mob.n for mob in result.mobs if mob.n}}
     for mob in result.mobs:
         if mob.n and not keep(mob.n):
             mob.n = ""
