@@ -25,6 +25,7 @@ pages through P() (which adds /de), and game names come from German players'
 exports where they've recorded them; English names are kept, marked, until
 then.
 """
+import datetime
 import html
 import json
 import math
@@ -179,6 +180,8 @@ def vote(names):
 class Dataset:
     def __init__(self, results, merged, fish=None):
         self.mobs = {npc: entry for npc, entry in merged.items() if entry["k"] + entry["p"] >= MIN_ATTEMPTS}
+        self.contributors = len(results)
+        self.kills = sum(entry["k"] for entry in merged.values())   # every kill, as on the home page
         item_votes, map_votes, meta_votes = defaultdict(Counter), defaultdict(Counter), defaultdict(Counter)
         local_votes = {lang: {kind: defaultdict(Counter) for kind in ("items", "maps", "mobs")} for lang in LANGUAGES}
         for result in results:
@@ -1301,21 +1304,21 @@ def data_wanted_page(data, links):
                    ", %s" % zone_html(data, data.zone_id(npc)) if data.zone(npc) else "",
                    T("%d kills, <b>%d to go</b>") % (data.mobs[npc]["k"], SOLID - data.mobs[npc]["k"]))
                 for npc in npcs[:ALMOST])))
-    mobs, kills, _, solid = coverage(data, list(data.mobs))
+    mobs, _, _, solid = coverage(data, list(data.mobs))
     trail = [("/", T("Home")), ("/farms", T("Farms by level")), ("/data-wanted", T("Where data is needed"))]
-    body = ("%s<h1>%s</h1><p class=facts>%s</p><p class=sub>%s</p>"
-            "<h2>%s</h2>%s%s</tbody></table>"
+    body = ("%s<h1>%s</h1><p class=facts>%s</p>"
+            "%s<h2>%s</h2><p class=sub>%s</p>%s%s</tbody></table>"
             "<h2>%s</h2><p class=sub>%s</p>"
             "<table><thead><tr><th>%s</th><th class=num>%s</th><th class=num>%s</th><th class=num>%s</th>"
             "<th class=bar-head>%s</th><th>%s</th></tr></thead><tbody>%s</tbody></table>"
             "<h2>%s</h2><p class=sub>%s</p>%s%s"
             % (crumbs(trail), T("Where GoldScout needs data"),
-               T("Every drop rate on this site comes from GoldScout players' loot: %s kills of %d mobs so far, %d of "
-                 "them with the %d+ kills that make a rate solid. Here's where it's thin. Farming any of these with "
-                 "GoldScout and the companion running fills it in for everyone.") % (num(kills), mobs, solid, SOLID),
+               T("Every drop rate on this site comes from GoldScout players' loot: %s kills so far, %d mobs with drop "
+                 "rates, %d of them with the %d+ kills that make a rate solid. Here's where it's thin. Farming any of these with "
+                 "GoldScout and the companion running fills it in for everyone.") % (num(data.kills), mobs, solid, SOLID),
+               targets_section(data), T("By level"),
                T("The bar shows the share of mobs with %d+ kills (rated good); the brighter part has %d+ (rated high: "
-                 "solid).") % (INDEX_MIN, SOLID),
-               T("By level"), head, by_level,
+                 "solid).") % (INDEX_MIN, SOLID), head, by_level,
                T("Zone goals"),
                T("Each zone's goal: every mob players have recorded there with solid drop rates (%d+ kills), with "
                  "milestones at 10%%, 25%%, 50%% and 75%%. %d of %d zones complete, %d past a milestone. Least "
@@ -1327,6 +1330,54 @@ def data_wanted_page(data, links):
     return (T("Where GoldScout needs drop data (WoW Forever)"),
             T("The WoW Forever level ranges, zones and mobs with the least drop data recorded by GoldScout players, "
               "and how to help fill them in."), body)
+
+
+# The community's targets (notes/WEBSITE-PLAN.md, Phase 2) on the home page and /data-wanted. When they're
+# reached or the date passes, set new ones here (and the German text, if it names them).
+TARGETS_DATE = datetime.date(2026, 12, 15)
+TARGETS = (("contributors", 50), ("kills", 30000), ("solid", 300))
+MONTHS = {"en": ("January", "February", "March", "April", "May", "June", "July", "August", "September",
+                 "October", "November", "December"),
+          "de": ("Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober",
+                 "November", "Dezember")}
+
+
+def day_text(day):
+    """ "December 15" (German: "15. Dezember")."""
+    month = MONTHS[LANG if LANG in MONTHS else "en"][day.month - 1]
+    return "%d. %s" % (day.day, month) if LANG == "de" else "%s %d" % (month, day.day)
+
+
+def community_targets(data):
+    """[(label, have, target)] for TARGETS."""
+    have = {"contributors": data.contributors, "kills": data.kills,
+            "solid": sum(1 for entry in data.mobs.values() if entry["k"] >= SOLID)}
+    labels = {"contributors": T("Players sharing data"), "kills": T("Kills recorded"),
+              "solid": T("Mobs with solid drop rates (%d+ kills)") % SOLID}
+    return [(labels[key], have[key], target) for key, target in TARGETS]
+
+
+def targets_section(data, today=None):
+    """The community's progress toward TARGETS: a bar each, and how long is left."""
+    today = today or datetime.date.today()
+    targets = community_targets(data)
+    day = day_text(TARGETS_DATE)
+    if all(have >= target for _, have, target in targets):
+        text = T("Every goal for %s reached. Thank you, everyone who shares!") % day
+    elif today > TARGETS_DATE:
+        text = T("The goals for %s, and how far everyone got.") % day
+    else:
+        left = (TARGETS_DATE - today).days
+        text = (T("Goals for everyone sharing data, by %s (%s). Every player who adds the companion and every kill "
+                  "moves them.") % (day, plural(left, "%d day left", "%d days left") if left else T("today")))
+    rows = "".join(
+        '<div class=target><span class=target-label>%s</span>'
+        '<span class=goal-bar role=img aria-label="%s"><span style="width:%d%%"></span></span>'
+        '<span class=target-num>%s</span></div>'
+        % (label, T("%s of %s") % (num(have), num(target)), min(100, round(100 * have / target)),
+           (T("<b class=done>%s</b> of %s") if have >= target else T("<b>%s</b> of %s")) % (num(have), num(target)))
+        for label, have, target in targets)
+    return '<section class=targets><h2>%s</h2><p class=sub>%s</p>%s</section>' % (T("Community goals"), text, rows)
 
 
 def build(data, links, write):

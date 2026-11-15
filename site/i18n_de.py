@@ -41,6 +41,22 @@ DE = {
     "Goal": "Ziel",
     "Next": "Nächstes",
     "Solid": "Verlässlich",
+    "Community goals": "Gemeinschaftsziele",
+    "Players sharing data": "Spieler, die Daten teilen",
+    "Kills recorded": "Erfasste Kills",
+    "Mobs with solid drop rates (%d+ kills)": "Gegner mit verlässlichen Dropraten (%d+ Kills)",
+    "%s of %s": "%s von %s",
+    "<b>%s</b> of %s": "<b>%s</b> von %s",
+    "<b class=done>%s</b> of %s": "<b class=done>%s</b> von %s",
+    "%d day left": "noch %d Tag",
+    "%d days left": "noch %d Tage",
+    "today": "heute",
+    "Goals for everyone sharing data, by %s (%s). Every player who adds the companion and every kill moves them.":
+        "Ziele für alle, die Daten teilen, bis zum %s (%s). Jeder Spieler, der GoldScout Companion dazunimmt, "
+        "und jeder Kill bringt sie näher.",
+    "The goals for %s, and how far everyone got.": "Die Ziele für den %s und wie weit alle gekommen sind.",
+    "Every goal for %s reached. Thank you, everyone who shares!":
+        "Alle Ziele für den %s erreicht. Danke an alle, die teilen!",
     "Price": "Preis",
     "Kills": "Kills",
     "kills": "Kills",
@@ -354,11 +370,11 @@ DE = {
     "The WoW Forever level ranges, zones and mobs with the least drop data recorded by GoldScout players, and how to "
     "help fill them in.": "Die Stufen, Gebiete und Gegner in WoW Forever, für die GoldScout-Spieler die wenigsten "
                          "Dropdaten erfasst haben, und wie du hilfst, sie zu füllen.",
-    "Every drop rate on this site comes from GoldScout players' loot: %s kills of %d mobs so far, %d of them with "
-    "the %d+ kills that make a rate solid. Here's where it's thin. Farming any of these with GoldScout and the "
+    "Every drop rate on this site comes from GoldScout players' loot: %s kills so far, %d mobs with drop rates, "
+    "%d of them with the %d+ kills that make a rate solid. Here's where it's thin. Farming any of these with GoldScout and the "
     "companion running fills it in for everyone.":
-        "Jede Droprate auf dieser Seite stammt aus der Beute von GoldScout-Spielern: bisher %s Kills von %d Gegnern, "
-        "%d davon mit den %d+ Kills, die eine Rate verlässlich machen. Hier ist es noch dünn. Wer hier mit GoldScout "
+        "Jede Droprate auf dieser Seite stammt aus der Beute von GoldScout-Spielern: bisher %s Kills, %d Gegner mit "
+        "Dropraten, %d davon mit den %d+ Kills, die eine Rate verlässlich machen. Hier ist es noch dünn. Wer hier mit GoldScout "
         "und laufendem Companion farmt, füllt das für alle.",
     "The bar shows the share of mobs with %d+ kills (rated good); the brighter part has %d+ (rated high: solid).":
         "Der Balken zeigt den Anteil der Gegner mit %d+ Kills (gut); der hellere Teil hat %d+ (hoch: verlässlich).",

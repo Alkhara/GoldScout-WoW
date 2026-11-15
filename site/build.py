@@ -322,6 +322,14 @@ td.bar { background: none; }
 .goal-bar i { position: absolute; top: 0; bottom: 0; width: 2px; margin-left: -1px; background: var(--bg2); opacity: .8; }
 .zone-goal { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 4px 18px 10px; margin: 18px 0; }
 .zone-goal .goal-bar { height: 14px; border-radius: 7px; margin: 4px 0 2px; }
+.targets { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 4px 18px 12px; margin: 18px 0; }
+.targets h2 { margin: 12px 0 4px; }
+.target { display: grid; grid-template-columns: minmax(0, 17em) 1fr 7.5em; gap: 4px 14px; align-items: center; margin: 9px 0; }
+.target .goal-bar { height: 12px; border-radius: 6px; }
+.target-num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--muted); }
+.target-num b { color: var(--text); }
+.target-num b.done { color: #40ff40; }
+@media (max-width: 620px) { .target { grid-template-columns: 1fr auto; } .target .goal-bar { grid-column: 1 / -1; grid-row: 2; } }
 b.done { color: #40ff40; }
 ol.champions { margin: 4px 0 6px; padding-left: 24px; }
 ol.champions li { margin: 3px 0; }
@@ -444,6 +452,7 @@ def page(s):
     <div class="stat"><b>%(kills)s</b><span>kills recorded</span></div>
     <div class="stat"><b>%(drops)s</b><span>item drops recorded</span></div>
   </div>
+  %(targets)s
   <ol class="steps">
     <li><b>You play.</b> GoldScout learns what every mob you loot really drops, on all your characters.</li>
     <li><b>You share.</b> <a href="/companion">GoldScout Companion</a> does it automatically, or use <code>/gscout export</code> and the <a href="%(share)s">share form</a>. No character or account names, ever.</li>
@@ -484,7 +493,7 @@ def page(s):
 </div></footer>
 </body>
 </html>
-""" % dict(LINKS, site=SITE_URL, css=CSS, shots=shots, jsonld=home_jsonld(), search=SEARCH_BOX, updated=updated, contributors_label=contributors_label,
+""" % dict(LINKS, site=SITE_URL, css=CSS, shots=shots, jsonld=home_jsonld(), search=SEARCH_BOX, updated=updated, contributors_label=contributors_label, targets=s.get("targets", ""),
            contributors=format(s["contributors"], ","), mobs=format(s["mobs"], ","),
            kills=format(s["kills"], ","), drops=format(s["drops"], ","))
 
@@ -733,6 +742,8 @@ def main():
     results = merge_data.load(ROOT / "data" / "submissions")
     merged = merge_data.merge([r.mobs for r in results], 1000)
     s = stats(results, merged)
+    data = data_pages.Dataset(results, merged, merge_data.merge_fish([r.fishing for r in results], 1000))
+    s["targets"] = data_pages.targets_section(data)
     (DIST / "index.html").write_text(page(s), encoding="utf-8")
 
     def write(relative, title, description, body, index=True, lang="en"):
@@ -747,7 +758,6 @@ def main():
     write("companion.html", *companion_page(s))
     write("faq.html", *faq_page())
     write("leaderboard.html", *leaderboard_page())
-    data = data_pages.Dataset(results, merged, merge_data.merge_fish([r.fishing for r in results], 1000))
     paths = ["/", "/companion", "/leaderboard", "/faq"] + data_pages.build(data, LINKS, write)
     write("search.html", *search_page(), index=False)   # results for one visitor's words: not for search engines
     index = data_pages.search_index(data) + STATIC_SEARCH

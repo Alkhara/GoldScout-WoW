@@ -1,5 +1,7 @@
 """The website's data pages: built from merged exports, with item kinds from
 version 4 @q lines, names escaped, gray items hidden."""
+import datetime
+import importlib.util
 import json
 import re
 import sys
@@ -15,6 +17,17 @@ sys.path.insert(0, str(ROOT / "site"))
 import data_pages  # noqa: E402
 import merge_data  # noqa: E402
 import submission  # noqa: E402
+
+
+def site_build():
+    """site/build.py, loaded by its path: companion/build.py has the same module name, and other test modules
+    put companion/ first on sys.path."""
+    if "site_build" not in sys.modules:
+        spec = importlib.util.spec_from_file_location("site_build", ROOT / "site" / "build.py")
+        module = importlib.util.module_from_spec(spec)
+        sys.modules["site_build"] = module
+        spec.loader.exec_module(module)
+    return sys.modules["site_build"]
 
 V4 = """GoldScout-export 4^abcdefghijkl^9
 3809^20^0^21^22^1440^0.5400^0.5400^20^Ashenvale Bear^3730:8:8,3702:4:4,11407:6:6,14728:1:1,2934:5:5^
@@ -429,6 +442,72 @@ class AreaMapTests(unittest.TestCase):
         self.assertIn("looted Laughing Sister &amp; Co&#x27;s", body)
 
 
+class CommunityTargetsTests(unittest.TestCase):
+    """The community's targets on the home page and /data-wanted: players, kills, solid mobs, by a date."""
+
+    def setUp(self):
+        self.data = dataset()   # 1 player, 30 kills of 2 mobs, none solid
+        self.before = data_pages.TARGETS_DATE - datetime.timedelta(days=12)
+
+    def tearDown(self):
+        data_pages.LANG = "en"
+
+    def test_progress_and_days_left(self):
+        box = data_pages.targets_section(self.data, self.before)
+        self.assertIn("<h2>Community goals</h2>", box)
+        self.assertIn("by %s (12 days left)" % data_pages.day_text(data_pages.TARGETS_DATE), box)
+        self.assertIn("Players sharing data</span>", box)
+        self.assertIn('<span class=target-num><b>1</b> of 50</span>', box)
+        self.assertIn('<span class=target-num><b>33</b> of 30,000</span>', box)   # every kill, thin mobs too
+        self.assertIn("Mobs with solid drop rates (50+ kills)", box)
+        self.assertIn('aria-label="0 of 300"><span style="width:0%"></span>', box)
+
+    def test_last_day_and_after(self):
+        box = data_pages.targets_section(self.data, data_pages.TARGETS_DATE - datetime.timedelta(days=1))
+        self.assertIn("(1 day left)", box)
+        self.assertIn("(today)", data_pages.targets_section(self.data, data_pages.TARGETS_DATE))
+        box = data_pages.targets_section(self.data, data_pages.TARGETS_DATE + datetime.timedelta(days=1))
+        self.assertIn("The goals for %s, and how far everyone got." % data_pages.day_text(data_pages.TARGETS_DATE),
+                      box)
+        self.assertNotIn("left)", box)
+
+    def test_reached(self):
+        self.data.contributors, self.data.kills = 60, 40000
+        for npc in range(300):
+            self.data.mobs[50000 + npc] = dict(self.data.mobs[3809], k=50)
+        box = data_pages.targets_section(self.data, self.before)
+        self.assertIn("Every goal for", box)
+        self.assertIn('<span class=target-num><b class=done>60</b> of 50</span>', box)
+        self.assertIn('style="width:100%"', box)                     # past the target, the bar stays full
+        self.assertNotIn('style="width:120%"', box)
+
+    def test_on_the_pages(self):
+        pages = {}
+
+        def write(path, *page, index=True):
+            pages[path] = page
+        data_pages.build(self.data, LINKS, write)
+        self.assertIn("<section class=targets>", pages["data-wanted.html"][2])
+        build = site_build()
+        s = dict(build.stats([], {}), targets=data_pages.targets_section(self.data, self.before))
+        self.assertIn("<section class=targets>", build.page(s))
+
+    def test_german(self):
+        data_pages.LANG = "de"
+        data_pages.MISSING.clear()
+        for day in (self.before, data_pages.TARGETS_DATE - datetime.timedelta(days=1), data_pages.TARGETS_DATE,
+                    data_pages.TARGETS_DATE + datetime.timedelta(days=1)):
+            box = data_pages.targets_section(self.data, day)
+        self.data.contributors, self.data.kills = 60, 40000
+        for npc in range(300):
+            self.data.mobs[50000 + npc] = dict(self.data.mobs[3809], k=50)
+        box = data_pages.targets_section(self.data, self.before)
+        self.assertEqual(data_pages.MISSING, set())
+        self.assertIn("<h2>Gemeinschaftsziele</h2>", box)
+        self.assertIn("40.000", box)
+        self.assertEqual(data_pages.day_text(datetime.date(2026, 3, 1)), "1. März")
+
+
 class ChampionsScriptTests(unittest.TestCase):
     def test_writes_text_only(self):
         script = (ROOT / "site" / "champions.js").read_text(encoding="utf-8")
@@ -535,7 +614,7 @@ class GermanPagesTests(unittest.TestCase):
 
 class LayoutLanguageTests(unittest.TestCase):
     def test_alternates_and_switch(self):
-        import build
+        build = site_build()
         page = build.layout("T", "D", "/item/3730", "<p>x</p>")
         self.assertIn('<html lang="en">', page)
         self.assertIn('<link rel="alternate" hreflang="de" href="https://wowgoldscout.com/de/item/3730">', page)
@@ -601,7 +680,7 @@ class DataWantedTests(unittest.TestCase):
         self.assertIn("/data-wanted", paths)
         title, _, body = pages["data-wanted.html"]
         self.assertEqual(title, "Where GoldScout needs drop data (WoW Forever)")
-        self.assertIn("30 kills of 2 mobs so far, 0 of them with the 50+ kills", body)
+        self.assertIn("33 kills so far, 2 mobs with drop rates, 0 of them with the 50+ kills", body)
         self.assertIn('<a href="/farms/levels-21-30">Levels 21-30</a></td><td class=num>2</td><td class=num>30</td>'
                       '<td class=num>1 <span class=range>50%</span>', body)
         self.assertIn("<tr><td>Levels 51-60</td><td class=num>0</td>", body)   # nobody's been: still listed
@@ -664,7 +743,7 @@ class ZoneGoalTests(unittest.TestCase):
 
 class FaqTests(unittest.TestCase):
     def test_every_question_is_on_the_page_and_in_the_structured_data(self):
-        import build
+        build = site_build()
         _, _, body = build.faq_page()
         data = json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>', body, re.S).group(1))
         self.assertEqual(data["@type"], "FAQPage")
