@@ -1,4 +1,4 @@
-GoldScout-export 5^anb338lcnnup^11
+GoldScout-export 5^anb338lcnnup^12
 92^7^0^39^40^1418^0.1751^0.4079^7^Rock Elemental^4627:3:3,7848:1:1^
 597^1^0^36^37^1434^0.2348^0.0828^1^Bloodscalp Berserker^^
 660^2^0^37^37^1434^0.2344^0.0818^2^Bloodscalp Witch Doctor^4306:1:1^
@@ -87,9 +87,17 @@ GoldScout-export 5^anb338lcnnup^11
 4411^4^0^36^37^1445^0.4787^0.2852^4^Darkfang Lurker^1074:1:1,3197:1:1,4585:2:2,5959:2:2^
 4413^1^0^36^36^1445^0.5086^0.2133^1^Darkfang Spider^5959:1:1^
 4414^1^0^37^37^1445^0.4342^0.3518^1^Darkfang Venomspitter^5959:1:1^
+4676^1^0^37^37^1443^0.5319^0.8333^1^Lesser Infernal^4784:1:1^
+4682^1^0^38^39^1443^0.5610^0.7840^1^Nether Sister^^
 5044^1^0^36^36^1445^0.4230^0.3871^1^Theramore Skirmisher^^
 5477^1^0^39^39^1435^0.4534^0.3732^1^Noboru the Cudgel^6196:1:1^
 5622^1^0^37^37^1435^0.6138^0.2224^1^Ongeku^6190:1:1^
+5760^1^0^40^40^1443^0.5602^0.7778^1^Lord Azrethoc^^
+5771^1^0^40^40^1443^0.5596^0.7782^1^Jugkar Grim'rod^4338:1:1^
+11560^8^0^38^39^2652^0.3285^0.2894^8^Centaur Spectre^15849:7:7^
+11561^1^0^37^40^2652^0.3329^0.2812^1^Undead Ravager^^
+11937^5^0^38^38^1443^0.5313^0.8019^5^Demon Portal Guardian^1710:1:1,4306:1:2^
+253272^1^0^42^43^2652^0.3220^0.3010^1^Magram Necromancer^260347:1:1^
 269175^1^0^37^37^1434^0.3370^0.3022^1^Carnivorous Weed^4607:1:1,256037:1:1^
 272389^40^0^34^36^1416^0.3077^0.2477^39^Marsh Owl^5116:1:1,5829:5:5,11416:6:6,11418:5:5,12207:12:12,17056:7:7^
 @i^770^Pointy Crocolisk Tooth
@@ -102,6 +110,7 @@ GoldScout-export 5^anb338lcnnup^11
 @i^1645^Moonberry Juice
 @i^1696^Curved Raptor Talon
 @i^1708^Sweet Nectar
+@i^1710^Greater Healing Potion
 @i^2289^Scroll of Strength II
 @i^2592^Wool Cloth
 @i^2725^Green Hills of Stranglethorn - Page 1
@@ -147,6 +156,7 @@ GoldScout-export 5^anb338lcnnup^11
 @i^4626^Small Stone Shard
 @i^4627^Large Stone Slab
 @i^4636^Strong Iron Lockbox
+@i^4784^Lifeless Stone
 @i^5113^Mark of the Syndicate
 @i^5116^Long Tail Feather
 @i^5636^Delicate Feather
@@ -191,6 +201,7 @@ GoldScout-export 5^anb338lcnnup^11
 @i^13759^Raw Nightfin Snapper
 @i^15233^Savage Axe of the Eagle
 @i^15234^Greater Scythe of the Whale
+@i^15849^Ghost-o-plasm
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
@@ -205,6 +216,7 @@ GoldScout-export 5^anb338lcnnup^11
 @i^248709^Waylaid Crate: Expert Ingots
 @i^251461^Plans: Mithril Claws
 @i^256037^Grass Clippings
+@i^260347^Tattered Journal
 @i^274044^Twisted Fire Totem
 @i^274045^Twisted Earth Totem
 @q^770^0:15:0
@@ -217,6 +229,7 @@ GoldScout-export 5^anb338lcnnup^11
 @q^1645^1:0:0
 @q^1696^0:15:0
 @q^1708^1:0:0
+@q^1710^1:0:0
 @q^2289^1:0:0
 @q^2592^1:7:1
 @q^2725^1:12:0
@@ -262,6 +275,7 @@ GoldScout-export 5^anb338lcnnup^11
 @q^4626^1:12:0
 @q^4627^1:12:0
 @q^4636^2:15:0
+@q^4784^0:15:0
 @q^5113^0:15:0
 @q^5116^1:7:1
 @q^5636^0:15:0
@@ -306,6 +320,7 @@ GoldScout-export 5^anb338lcnnup^11
 @q^13759^1:7:1
 @q^15233^2:2:0
 @q^15234^2:2:0
+@q^15849^1:12:0
 @q^17056^1:15:1
 @q^17057^1:15:0
 @q^17058^1:15:0
@@ -320,6 +335,7 @@ GoldScout-export 5^anb338lcnnup^11
 @q^248709^2:0:1
 @q^251461^2:9:0
 @q^256037^0:15:0
+@q^260347^1:15:0
 @q^274044^1:12:0
 @q^274045^1:12:0
 @m^1416^Alterac Mountains
@@ -327,8 +343,10 @@ GoldScout-export 5^anb338lcnnup^11
 @m^1418^Badlands
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
+@m^1443^Desolace
 @m^1444^Feralas
 @m^1445^Dustwallow Marsh
+@m^2652^Shen'dralas
 @c^118^
 @c^724^
 @c^733^
@@ -1254,9 +1272,17 @@ GoldScout-export 5^anb338lcnnup^11
 @a^4411^108:1,109:3
 @a^4413^90:1
 @a^4414^148:1
+@a^4676^330:1
+@a^4682^311:1
 @a^5044^148:1
 @a^5477^149:1
 @a^5622^92:1
+@a^5760^311:1
+@a^5771^311:1
+@a^11560^106:8
+@a^11561^106:1
+@a^11937^310:2,311:1,330:2
+@a^253272^126:1
 @a^269175^126:1
 @a^272389^5:5,26:6,46:2,47:5,106:2,107:3,126:1,145:1,146:3,165:4,184:1,185:6
 @f^1416^0^4^225^21150:4:4^67:4
