@@ -81,6 +81,8 @@ PLAYER_CAP = 1000                # kills per mob counted from any one player
 RELATED = 8                      # cross-links per list
 SOLID = CONFIDENCE[0][0]         # kills where a mob's rates count as solid ("high")
 ALMOST = 10                      # "almost there" mobs listed per level range on /data-wanted
+MILESTONES = (10, 25, 50, 75, 100)   # zone goals: % of a zone's mobs with solid rates (10: a first step in reach)
+GOAL_LEFT = 6                    # mobs listed under a zone's goal, the closest to solid first
 
 e = html.escape
 
@@ -768,6 +770,56 @@ def item_page(data, item, links):
     return title, description, body
 
 
+def zone_goal(data, map_id):
+    """A zone's community goal: every mob recorded there with solid rates (SOLID+ kills).
+    {solid, total, percent, reached (last milestone passed, 0 if none), next (milestone or None),
+    needed (more solid mobs to reach it), left (mobs not yet solid, the closest first)}."""
+    npcs = data.zones[map_id]
+    solid = sum(1 for npc in npcs if data.mobs[npc]["k"] >= SOLID)
+    total = len(npcs)
+    share = 100 * solid / total if total else 0
+    reached = max([milestone for milestone in MILESTONES if share >= milestone], default=0)
+    upcoming = next((milestone for milestone in MILESTONES if share < milestone), None)
+    needed = -(-upcoming * total // 100) - solid if upcoming else 0
+    left = sorted((npc for npc in npcs if data.mobs[npc]["k"] < SOLID), key=lambda npc: (-data.mobs[npc]["k"], npc))
+    return {"solid": solid, "total": total, "percent": share, "reached": reached, "next": upcoming,
+            "needed": needed, "left": left}
+
+
+def goal_bar(goal):
+    """The share of solid mobs, with a tick at each milestone."""
+    ticks = "".join('<i style="left:%d%%"></i>' % milestone for milestone in MILESTONES[:-1])
+    return ('<span class=goal-bar role=img aria-label="%d of %d mobs solid"><span style="width:%d%%"></span>%s</span>'
+            % (goal["solid"], goal["total"], round(goal["percent"]), ticks))
+
+
+def goal_next(goal):
+    """ "2 more mobs to 25%" or "complete"."""
+    if not goal["next"]:
+        return "<b class=done>Complete</b>"
+    return "%d more mob%s to %d%%" % (goal["needed"], "" if goal["needed"] == 1 else "s", goal["next"])
+
+
+def zone_goal_section(data, map_id):
+    zone = data.map_names[map_id]
+    goal = zone_goal(data, map_id)
+    if not goal["next"]:
+        text = ("<p><b>Goal reached:</b> every mob players have recorded in %s has solid drop rates. New mobs "
+                "recorded here join the goal.</p>" % e(zone))
+    else:
+        text = ("<p>Every mob here with solid drop rates (%d+ kills): <b>%d of %d</b> so far%s. Next milestone: "
+                "%s.</p>" % (SOLID, goal["solid"], goal["total"],
+                             ", past %d%%" % goal["reached"] if goal["reached"] else "", goal_next(goal)))
+    left = ""
+    if goal["left"]:
+        left = "<p class=sub>Closest to solid:</p>" + link_list(
+            "%s <span class=small>%s &middot; %d kills, <b>%d to go</b></span>"
+            % (mob_link(data, npc), "level %s" % e(data.levels(npc)) if data.levels(npc) else "",
+               data.mobs[npc]["k"], SOLID - data.mobs[npc]["k"])
+            for npc in goal["left"][:GOAL_LEFT])
+    return '<section class=zone-goal><h2>Zone goal</h2>%s%s%s</section>' % (goal_bar(goal), text, left)
+
+
 def zone_page(data, map_id, links):
     zone = data.map_names[map_id]
     npcs = data.zones[map_id]
@@ -784,7 +836,7 @@ def zone_page(data, map_id, links):
     summary = "GoldScout players have recorded %d%s mob%s in %s with enough kills for reliable drop rates%s." % (
         len(npcs), span, "" if len(npcs) == 1 else "s", zone,
         ", dropping %d crafting reagent%s" % (len(reagents), "" if len(reagents) == 1 else "s") if reagents else "")
-    sections = ["<h2>Mobs</h2>" + mob_table(data, npcs, zone_column=False)]
+    sections = [zone_goal_section(data, map_id), "<h2>Mobs</h2>" + mob_table(data, npcs, zone_column=False)]
     if reagents:
         ordered = sorted(reagents.items(), key=lambda pair: -pair[1][1])
         sections.append("<h2>Crafting reagents in %s</h2><table><thead><tr><th>Reagent</th><th>Best source</th>"
@@ -1035,9 +1087,17 @@ def data_wanted_page(data, links):
                                     data.bracket_mobs(bracket), data) for bracket in BRACKETS)
     brackets = [bracket for bracket in BRACKETS if data.bracket_mobs(bracket)]
     zones = sorted(data.zones, key=lambda map_id: (coverage(data, data.zones[map_id])[1], data.map_names[map_id]))
-    by_zone = "".join(coverage_row('<a href="/zone/%d">%s</a> <span class=small>%s</span>'
-                                   % (map_id, e(data.map_names[map_id]), e(zone_levels(data, map_id))),
-                                   data.zones[map_id], data) for map_id in zones)
+    goals = {map_id: zone_goal(data, map_id) for map_id in zones}
+    by_zone = "".join(
+        "<tr><td>%s</td><td class=num>%d</td><td class=num>%s</td><td class=num>%d</td><td class=bar>%s</td>"
+        "<td class=small>%s</td></tr>"
+        % ('<a href="/zone/%d">%s</a> <span class=small>%s</span>'
+           % (map_id, e(data.map_names[map_id]), e(zone_levels(data, map_id))),
+           goals[map_id]["total"], format(coverage(data, data.zones[map_id])[1], ","), goals[map_id]["solid"],
+           goal_bar(goals[map_id]), goal_next(goals[map_id]))
+        for map_id in zones)
+    complete = sum(1 for goal in goals.values() if not goal["next"])
+    started = sum(1 for goal in goals.values() if goal["reached"])
     almost = []
     for bracket in brackets:
         npcs = [npc for npc in data.bracket_mobs(bracket) if data.mobs[npc]["k"] < SOLID]
@@ -1057,12 +1117,15 @@ def data_wanted_page(data, links):
             "everyone.</p><p class=sub>The bar shows the share of mobs with %d+ kills (rated good); the brighter part "
             "has %d+ (rated high: solid).</p>"
             "<h2>By level</h2>%s%s</tbody></table>"
-            "<h2>By zone</h2><p class=sub>Least recorded first. Zones nobody has looted in yet aren't listed.</p>"
-            "%s%s</tbody></table>"
+            "<h2>Zone goals</h2><p class=sub>Each zone's goal: every mob players have recorded there with solid "
+            "drop rates (%d+ kills), with milestones at 10%%, 25%%, 50%% and 75%%. %d of %d zones complete, %d past a "
+            "milestone. Least recorded first; zones nobody has looted in yet aren't listed.</p>"
+            "<table><thead><tr><th>Zone</th><th class=num>Mobs</th><th class=num>Kills</th><th class=num>Solid</th>"
+            "<th class=bar-head>Goal</th><th>Next</th></tr></thead><tbody>%s</tbody></table>"
             "<h2>Almost there</h2><p class=sub>Mobs a few kills from solid rates, the closest first.</p>%s%s"
             % (crumbs(trail), format(kills, ","), mobs, solid, SOLID, INDEX_MIN, SOLID,
                head % ("Levels", INDEX_MIN, SOLID), by_level,
-               head % ("Zone", INDEX_MIN, SOLID), by_zone, "".join(almost), cta(links)))
+               SOLID, complete, len(goals), started, by_zone, "".join(almost), cta(links)))
     return ("Where GoldScout needs drop data (WoW Forever)",
             "The WoW Forever level ranges, zones and mobs with the least drop data recorded by GoldScout players, "
             "and how to help fill them in.", body)

@@ -274,6 +274,12 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-sp
 .range { font-size: 12px; color: var(--muted); white-space: nowrap; }
 td.bar { width: 120px; }
 td.bar { background: none; }
+.goal-bar { position: relative; display: block; height: 10px; min-width: 110px; border-radius: 5px; background: var(--line); overflow: hidden; }
+.goal-bar > span { display: block; height: 100%; min-width: 2px; background: var(--gold); }
+.goal-bar i { position: absolute; top: 0; bottom: 0; width: 2px; margin-left: -1px; background: var(--bg2); opacity: .8; }
+.zone-goal { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 4px 18px 10px; margin: 18px 0; }
+.zone-goal .goal-bar { height: 14px; border-radius: 7px; margin: 4px 0 2px; }
+b.done { color: #40ff40; }
 td.bar .track { display: block; height: 8px; border-radius: 4px; background: var(--line); }
 td.bar .good { display: block; height: 8px; min-width: 2px; border-radius: 4px; background: rgba(242,194,85,.4); }
 td.bar .solid { display: block; height: 8px; border-radius: 4px; background: var(--gold); }

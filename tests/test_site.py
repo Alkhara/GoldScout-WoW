@@ -478,6 +478,53 @@ class DataWantedTests(unittest.TestCase):
         # Almost there: the closest to solid first.
         self.assertLess(body.index("/mob/3809"), body.index("/mob/4054"))
         self.assertIn("20 kills, <b>30 to go</b>", body)
+        # Zone goals: Ashenvale's two mobs, neither solid yet.
+        self.assertIn("0 of 1 zones complete, 0 past a milestone", body)
+        self.assertIn('aria-label="0 of 2 mobs solid"', body)
+        self.assertIn("1 more mob to 10%", body)
+
+
+class ZoneGoalTests(unittest.TestCase):
+    """A zone's community goal: every mob recorded there with solid rates, with milestones."""
+
+    def setUp(self):
+        self.data = dataset()   # Ashenvale: Ashenvale Bear 20 kills, Laughing Sister 10
+
+    def goal(self, *kills):
+        """Ashenvale with mobs of these kill counts."""
+        self.data.zones[1440] = []
+        for i, k in enumerate(kills):
+            npc = 9000 + i
+            self.data.mobs[npc] = dict(self.data.mobs[3809], k=k)
+            self.data.zones[1440].append(npc)
+        return data_pages.zone_goal(self.data, 1440)
+
+    def test_milestones(self):
+        goal = self.goal(50, 60, 10, 49, 0, 5, 5, 5, 5, 5)          # 2 of 10 solid: 20%
+        self.assertEqual((goal["solid"], goal["total"], goal["reached"], goal["next"], goal["needed"]),
+                         (2, 10, 10, 25, 1))                       # 25% of 10 rounds up to 3 mobs
+        self.assertEqual(goal["left"][:2], [9003, 9002])           # the closest to solid first
+        self.assertEqual(data_pages.goal_next(goal), "1 more mob to 25%")
+
+    def test_nothing_solid_yet(self):
+        goal = self.goal(10, 20)
+        self.assertEqual((goal["reached"], goal["next"], goal["needed"]), (0, 10, 1))
+
+    def test_complete(self):
+        goal = self.goal(50, 80)
+        self.assertEqual((goal["reached"], goal["next"], goal["needed"], goal["left"]), (100, None, 0, []))
+        self.assertIn("Complete", data_pages.goal_next(goal))
+
+    def test_zone_page_shows_the_goal(self):
+        _, _, body = data_pages.zone_page(self.data, 1440, LINKS)
+        self.assertIn("<h2>Zone goal</h2>", body)
+        self.assertIn("<b>0 of 2</b> so far. Next milestone: 1 more mob to 10%.", body)
+        self.assertIn("20 kills, <b>30 to go</b>", body)
+        self.assertLess(body.index("Zone goal"), body.index("<h2>Mobs</h2>"))
+        self.data.mobs[3809]["k"] = self.data.mobs[4054]["k"] = 50
+        _, _, body = data_pages.zone_page(self.data, 1440, LINKS)
+        self.assertIn("<b>Goal reached:</b> every mob players have recorded in Ashenvale", body)
+        self.assertNotIn("Closest to solid", body)
 
 
 class FaqTests(unittest.TestCase):
