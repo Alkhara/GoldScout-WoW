@@ -249,8 +249,12 @@ class DataPagesTests(unittest.TestCase):
         script =(ROOT / "site" / "prices.js").read_text(encoding="utf-8")
         self.assertIn('var API = "%s";' % build.API_URL, script)
         self.assertNotIn("innerHTML", script)                  # server data only ever goes in as text
+        search = (ROOT / "site" / "search.js").read_text(encoding="utf-8")
+        self.assertNotIn("innerHTML", search)                  # search results only ever go in as text
         page = build.layout("t", "d", "/x", "<p>body</p>")
         self.assertIn('<script src="/prices.js" defer></script>', page)
+        self.assertIn('class="site-search" role="search" hidden', page)   # shown by search.js
+        self.assertIn('<script src="/search.js" defer></script>', page)
         self.assertNotIn("noindex", page)
         self.assertIn('<meta name="robots" content="noindex, follow">', build.layout("t", "d", "/x", "", index=False))
 
@@ -323,6 +327,18 @@ class FishingPagesTests(unittest.TestCase):
         self.assertTrue(self.index["item/6359.html"])          # 40 catches
         self.assertFalse(self.index["item/13422.html"])        # 10 catches at the pool
         self.assertNotIn("item/3670.html", self.pages)
+
+    def test_search_index_covers_every_kind_of_page(self):
+        index = {path: (name, detail) for name, path, detail, _ in data_pages.search_index(self.data)}
+        self.assertEqual(index["/item/3730"], ("Big Bear Meat", "Crafting reagent · 2 sources"))
+        self.assertEqual(index["/item/6359"], ("Firefin Snapper", "Crafting reagent · 1 source · fished up"))
+        self.assertEqual(index["/mob/3809"], ("Ashenvale Bear", "Mob · level 21-22 · Ashenvale"))
+        self.assertEqual(index["/zone/1440"][0], "Ashenvale")
+        self.assertEqual(index["/fishing/1444"][0], "Fishing in Feralas")
+        self.assertEqual(index["/farms/levels-21-30"][0], "Gold farms for levels 21-30")
+        self.assertNotIn("/item/3670", index)                   # gray: no page, so not searchable
+        for path in index:                                      # every result is a page the build makes
+            self.assertIn(path.lstrip("/") + ".html", self.pages)
 
 
 class FaqTests(unittest.TestCase):

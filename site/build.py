@@ -9,6 +9,7 @@ the page always match the data in the repository.
 """
 import datetime
 import html
+import json
 import re
 import shutil
 import subprocess
@@ -195,6 +196,12 @@ def stats(results, merged):
     }
 
 
+# Hidden until site/search.js runs: without it the box can't do anything.
+SEARCH_BOX = ('<form class="site-search" role="search" hidden>'
+              '<input type="search" name="q" placeholder="Search items, mobs and zones" '
+              'aria-label="Search items, mobs and zones" autocomplete="off" spellcheck="false">'
+              '<ul class="results" role="listbox" hidden></ul></form>')
+
 CSS = """
 :root {
   --bg: #071820; --bg2: #0c2530; --panel: #10303d; --line: #1f4a5a;
@@ -276,6 +283,16 @@ td.anon { color: var(--muted); font-style: italic; }
 .pricebar .status { color: var(--muted); }
 .pricebar .source { flex-basis: 100%; color: var(--muted); font-size: 12px; }
 .muted { color: var(--muted); }
+[hidden] { display: none !important; }
+.site-search { position: relative; max-width: 460px; margin: 0 0 8px; }
+.site-search input { width: 100%; font: inherit; font-size: 16px; color: var(--text); background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 9px 14px; }
+.site-search input:focus { outline: none; border-color: var(--gold2); }
+.site-search .results { position: absolute; left: 0; right: 0; top: calc(100% + 4px); z-index: 10; list-style: none; margin: 0; padding: 4px; background: var(--bg2); border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 12px 30px rgba(0,0,0,.5); max-height: 70vh; overflow-y: auto; }
+.site-search .results a, ul.search-list a { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 7px 10px; border-radius: 7px; text-decoration: none; color: var(--text); }
+.site-search .results a.active, .site-search .results a:hover, ul.search-list a:hover { background: var(--panel); }
+.site-search .detail, ul.search-list .detail { color: var(--muted); font-size: 13px; text-align: right; }
+.site-search .results li.none { padding: 8px 10px; color: var(--muted); font-size: 14px; }
+ul.search-list { list-style: none; padding: 0; margin: 12px 0; max-width: 680px; }
 @media (max-width: 820px) {
   .hero, .two, .grid { grid-template-columns: 1fr; }
   .hero { padding-top: 16px; } .hero h1 { font-size: 34px; }
@@ -309,13 +326,15 @@ def page(s):
 <link rel="icon" href="favicon.png">
 <script type="application/ld+json">%(jsonld)s</script>
 <style>%(css)s</style>
+<script src="/search.js" defer></script>
 </head>
 <body>
 <div class="wrap">
 <header class="top">
   <a class="brand" href="#"><img src="logo-400.png" alt="">GoldScout</a>
-  <nav><a href="#features">Features</a><a href="/farms">Farms by level</a><a href="/drop-rates">Drop rates</a><a href="/companion">Companion</a><a href="/faq">FAQ</a><a href="%(guide)s">Guide</a></nav>
+  <nav><a href="#features">Features</a><a href="/farms">Farms by level</a><a href="/fishing">Fishing</a><a href="/drop-rates">Drop rates</a><a href="/companion">Companion</a><a href="/faq">FAQ</a><a href="%(guide)s">Guide</a></nav>
 </header>
+%(search)s
 
 <div class="hero">
   <div>
@@ -389,7 +408,7 @@ def page(s):
 </div></footer>
 </body>
 </html>
-""" % dict(LINKS, site=SITE_URL, css=CSS, shots=shots, jsonld=home_jsonld(), updated=updated, contributors_label=contributors_label,
+""" % dict(LINKS, site=SITE_URL, css=CSS, shots=shots, jsonld=home_jsonld(), search=SEARCH_BOX, updated=updated, contributors_label=contributors_label,
            contributors=format(s["contributors"], ","), mobs=format(s["mobs"], ","),
            kills=format(s["kills"], ","), drops=format(s["drops"], ","))
 
@@ -427,6 +446,7 @@ def layout(title, description, path, body, index=True):
 <link rel="icon" href="/favicon.png">
 <style>%(css)s</style>
 <script src="/prices.js" defer></script>
+<script src="/search.js" defer></script>
 </head>
 <body>
 <div class="wrap">
@@ -434,6 +454,7 @@ def layout(title, description, path, body, index=True):
   <a class="brand" href="/"><img src="/logo-400.png" alt="">GoldScout</a>
   <nav><a href="/farms">Farms by level</a><a href="/fishing">Fishing</a><a href="/drop-rates">Drop rates</a><a href="/companion">Companion</a><a href="/leaderboard">Leaderboard</a><a href="/faq">FAQ</a><a href="%(curseforge)s">Get GoldScout</a></nav>
 </header>
+%(search)s
 <main class="page"><div class="table-wrap">%(body)s</div></main>
 </div>
 <footer><div class="wrap">
@@ -442,9 +463,30 @@ def layout(title, description, path, body, index=True):
 </div></footer>
 </body>
 </html>
-""" % dict(LINKS, site=SITE_URL, css=CSS, path=path, body=body,
+""" % dict(LINKS, site=SITE_URL, css=CSS, path=path, body=body, search=SEARCH_BOX,
            robots="" if index else '\n<meta name="robots" content="noindex, follow">',
            title=html.escape(title), description=html.escape(description))
+
+
+TOP = 10 ** 9   # the site's own pages win ties with data pages ("fishing" finds Fishing for gold first)
+STATIC_SEARCH = [
+    ["Farms by level", "/farms", "The best gold farms for every level range", TOP],
+    ["Fishing for gold", "/fishing", "Every zone players have fished, by gold per hour", TOP],
+    ["How drop rates work", "/drop-rates", "Chance, ranges and how the data is checked", TOP],
+    ["GoldScout Companion", "/companion", "Free app: hourly auction prices, shares your drops", TOP],
+    ["Contributor leaderboard", "/leaderboard", "Who's shared the most drop data", TOP],
+    ["FAQ", "/faq", "Questions about GoldScout", TOP],
+]
+
+
+def search_page():
+    """(title, description, body) for /search; site/search.js lists the results for ?q=."""
+    body = """<h1>Search</h1>
+<p class="small" id="search-status">Searching...</p>
+<ul class="search-list" id="search-page-results"></ul>
+<noscript><p class="small">Search needs JavaScript. <a href="/farms">Browse farms by level</a> instead.</p></noscript>
+"""
+    return ("Search", "Search GoldScout's WoW Forever items, mobs, zones and fishing spots.", body)
 
 
 def leaderboard_page():
@@ -562,6 +604,7 @@ def main():
     shutil.copy2(ROOT / "companion" / "icon.png", DIST / "favicon.png")
     shutil.copy2(HERE / "prices.js", DIST / "prices.js")
     shutil.copy2(HERE / "leaderboard.js", DIST / "leaderboard.js")
+    shutil.copy2(HERE / "search.js", DIST / "search.js")
     results = merge_data.load(ROOT / "data" / "submissions")
     merged = merge_data.merge([r.mobs for r in results], 1000)
     s = stats(results, merged)
@@ -578,6 +621,9 @@ def main():
     write("leaderboard.html", *leaderboard_page())
     data = data_pages.Dataset(results, merged, merge_data.merge_fish([r.fishing for r in results], 1000))
     paths = ["/", "/companion", "/leaderboard", "/faq"] + data_pages.build(data, LINKS, write)
+    write("search.html", *search_page(), index=False)   # results for one visitor's words: not for search engines
+    index = data_pages.search_index(data) + STATIC_SEARCH
+    (DIST / "search.json").write_text(json.dumps(index, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>',
                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     lastmod = "<lastmod>%s</lastmod>" % s["updated_iso"] if s["updated_iso"] else ""
@@ -589,17 +635,20 @@ def main():
     (DIST / "404.html").write_text(
         '<!doctype html><html lang="en"><head><meta charset="utf-8">'
         '<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Not found: GoldScout</title>'
-        '<link rel="icon" href="/favicon.png"><style>%s</style></head><body><div class="wrap">'
+        '<link rel="icon" href="/favicon.png"><style>%s</style><script src="/search.js" defer></script></head>'
+        '<body><div class="wrap">'
         '<header class="top"><a class="brand" href="/"><img src="/logo-400.png" alt="">GoldScout</a></header>'
-        '<section><h2>Page not found</h2><p class="sub">That page doesn\'t exist.</p>'
-        '<a class="btn primary" href="/">Go to the GoldScout home page</a></section></div></body></html>' % CSS,
+        '<section><h2>Page not found</h2><p class="sub">That page doesn\'t exist. Search for what you were after, '
+        'or start from the home page.</p>%s'
+        '<a class="btn primary" href="/">Go to the GoldScout home page</a></section></div></body></html>'
+        % (CSS, SEARCH_BOX),
         encoding="utf-8")
     # Item pages replaced the reagent-only pages (2026-11-14); keep old links and search results working.
     (DIST / "_redirects").write_text("/reagent/:id /item/:id 301\n", encoding="utf-8")
     (DIST / "_headers").write_text(
         "/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n"
         "  Content-Security-Policy: default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; "
-        "script-src 'self'; connect-src %s; "
+        "script-src 'self'; connect-src 'self' %s; "
         "base-uri 'none'; form-action 'none'; frame-ancestors 'none'\n" % API_URL, encoding="utf-8")
     print("Built %s: %d contributors, %d mobs, %d kills, %d pages." % (
         DIST, s["contributors"], s["mobs"], s["kills"], len(paths)))

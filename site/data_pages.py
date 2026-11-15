@@ -848,3 +848,48 @@ def build(data, links, write):
         for map_id in sorted(data.fish_zones):
             page("fishing/%d" % map_id, fishing_zone_page(data, map_id, links), fishing_zone_indexed(data, map_id))
     return paths
+
+
+# -- site search -------------------------------------------------------------------
+KIND_LABEL = {"reagent": "Crafting reagent", "rare": "Rare drop", "other": "Item", "unknown": "Item"}
+
+
+def search_index(data):
+    """[name, path, detail, weight] for every data page, for the site search (site/search.js). Weight
+    (kills, catches) breaks ties between equally good matches. Mobs and items players' exports didn't
+    name are left out: nobody searches for "Mob 3637"."""
+    entries = []
+    for bracket in BRACKETS:
+        npcs = data.bracket_mobs(bracket)
+        if npcs:
+            entries.append(["Gold farms for %s" % bracket_label(bracket).lower(), bracket_path(bracket),
+                            "Farms by level · %d mobs" % len(npcs), sum(data.mobs[npc]["k"] for npc in npcs)])
+    for map_id, npcs in data.zones.items():
+        entries.append([data.map_names[map_id], "/zone/%d" % map_id, "Zone · %d mob%s" % (
+            len(npcs), "" if len(npcs) == 1 else "s"), sum(data.attempts(npc) for npc in npcs)])
+    for map_id, spots in data.fish_zones.items():
+        catches = sum(data.fish[(map_id, spot)]["n"] for spot in spots)
+        entries.append(["Fishing in %s" % data.map_names[map_id], "/fishing/%d" % map_id,
+                        "Fishing · %s catches" % format(catches, ","), catches])
+    for npc in data.mobs:
+        if not data.mobs[npc]["names"]:
+            continue
+        bits = ["Mob"]
+        if data.levels(npc):
+            bits.append("level %s" % data.levels(npc))
+        if data.zone(npc):
+            bits.append(data.zone(npc))
+        entries.append([data.mob_name(npc), "/mob/%d" % npc, " · ".join(bits), data.attempts(npc)])
+    for item in data.items:
+        if item not in data.item_names:
+            continue
+        sources = data.sources.get(item, [])
+        fishing = data.fish_sources.get(item, [])
+        count = len(sources) + len(fishing)
+        detail = "%s · %d source%s" % (KIND_LABEL[data.kind(item)], count, "" if count == 1 else "s")
+        if fishing:
+            detail += " · fished up"
+        entries.append([data.item_name(item), "/item/%d" % item, detail,
+                        sum(source[3] for source in sources) + sum(source[4] for source in fishing)])
+    entries.sort(key=lambda entry: (entry[0].lower(), entry[1]))
+    return entries
