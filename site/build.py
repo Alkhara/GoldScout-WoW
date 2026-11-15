@@ -280,9 +280,15 @@ td.bar .solid { display: block; height: 8px; border-radius: 4px; background: var
 th.bar-head { width: 120px; }
 .area-maps { display: flex; flex-wrap: wrap; gap: 0 28px; }
 figure.area-map { margin: 10px 0 22px; width: 100%; max-width: 380px; }
+figure.area-map:has(.area-art) { max-width: 640px; }
+.area-maps figure.area-map:has(.area-art) { max-width: 480px; }
 figure.area-map figcaption { color: var(--muted); font-size: 14px; margin-top: 6px; }
 figure.area-map figcaption.zone { color: var(--text); font-weight: 600; margin: 0 0 4px; }
 svg.area { display: block; width: 100%; height: auto; }
+.area-art { position: relative; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); background: var(--bg2); }
+.area-art img { display: block; width: 100%; height: auto; }
+.area-art svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.area-art rect { fill: #2bff5e; stroke: #04310f; stroke-width: 2; }
 svg.area .bg { fill: var(--bg2); stroke: var(--line); stroke-width: 1; }
 svg.area .g { fill: var(--line); fill-opacity: .6; }
 svg.area .l { stroke: var(--line); stroke-width: .6; }
@@ -624,6 +630,8 @@ def main():
     shutil.copy2(HERE / "prices.js", DIST / "prices.js")
     shutil.copy2(HERE / "leaderboard.js", DIST / "leaderboard.js")
     shutil.copy2(HERE / "search.js", DIST / "search.js")
+    if (HERE / "maps").is_dir():   # the game's zone maps (tools/zone_maps.py)
+        shutil.copytree(HERE / "maps", DIST / "maps", dirs_exist_ok=True, ignore=shutil.ignore_patterns("*.md"))
     results = merge_data.load(ROOT / "data" / "submissions")
     merged = merge_data.merge([r.mobs for r in results], 1000)
     s = stats(results, merged)

@@ -62,6 +62,8 @@ AREA_GRID = int(addon_number("Learn.lua", "AREA_GRID"))   # where loot happened:
 AREA_MIN_SHARE = addon_number("Engine.lua", "AREA_MIN_SHARE")   # as the addon's hunt map: quieter squares are noise
 AREA_MIN_LOOTS = 5               # loots placed on a map before the page draws it
 AREA_ZONES = 3                   # maps on an item page
+MAPS = Path(__file__).resolve().parent / "maps"   # the game's zone maps (tools/zone_maps.py), as <uiMapID>.webp
+MAP_WIDTH, MAP_HEIGHT = 1002, 668   # the map area the game shows; map coordinates 0-1 cover exactly this
 
 
 def wilson(hits, trials, z=1.96):
@@ -388,7 +390,7 @@ def badge(attempts):
 
 def legend():
     return ('<p class=small>Chance is how often players got the item per kill; the small numbers are the range '
-            'it is 95%% likely to be in, which narrows as more kills are recorded. Counted in WoW Forever only: '
+            'it is 95% likely to be in, which narrows as more kills are recorded. Counted in WoW Forever only: '
             'no Classic Era data is mixed in. <a href="/drop-rates">How these numbers work</a></p>')
 
 
@@ -475,6 +477,37 @@ def area_svg(data, map_id, cells, label, tip):
             % (e(label), "".join(parts)))
 
 
+def has_map_art(map_id):
+    return (MAPS / ("%d.webp" % map_id)).exists()
+
+
+def area_art(map_id, cells, label, tip):
+    """The zone's own map with the squares drawn over it in the addon's hunt-map green."""
+    shown = area_squares(cells)
+    width, height = MAP_WIDTH / AREA_GRID, MAP_HEIGHT / AREA_GRID
+    squares = "".join(
+        '<rect x="%.1f" y="%.1f" width="%.1f" height="%.1f" fill-opacity="%.2f"><title>%s</title></rect>'
+        % (column * width, row * height, width, height, 0.22 + 0.48 * strength, e(tip(cell)))
+        for cell, strength in sorted(shown.items()) for row, column in [divmod(cell, AREA_GRID)])
+    return ('<div class="area-art"><img src="/maps/%d.webp" width="%d" height="%d" loading="lazy" decoding="async" '
+            'alt="%s"><svg viewBox="0 0 %d %d" preserveAspectRatio="none">%s</svg></div>'
+            % (map_id, MAP_WIDTH, MAP_HEIGHT, e(label), MAP_WIDTH, MAP_HEIGHT, squares))
+
+
+def area_map(data, map_id, cells, label, tip):
+    """The zone's map if we have its art, else our own grid."""
+    if has_map_art(map_id):
+        return area_art(map_id, cells, label, tip)
+    return area_svg(data, map_id, cells, label, tip)
+
+
+def ground_note(map_ids):
+    """The grid's faint squares need explaining; the real map doesn't have them."""
+    if all(has_map_art(map_id) for map_id in map_ids):
+        return "Map art &copy; Blizzard Entertainment."
+    return "Faint squares on a grid are where players have looted anything else in the zone."
+
+
 def busiest(cells):
     return max(sorted(cells), key=lambda cell: cells[cell])
 
@@ -485,12 +518,11 @@ def mob_area_section(data, npc):
     if sum(cells.values()) < AREA_MIN_LOOTS:
         return ""
     name, zone = data.mob_name(npc), data.map_names[data.zone_id(npc)]
-    svg = area_svg(data, data.zone_id(npc), cells, "Map grid of %s: where players looted %s" % (zone, name),
+    svg = area_map(data, data.zone_id(npc), cells, "Map of %s: where players looted %s" % (zone, name),
                    lambda cell: "Around %s: looted %s here" % (square_coords(cell), format(int(cells[cell] + 0.5), ",")))
     return ('<h2>Where to find it</h2><figure class="area-map">%s<figcaption>Brightest where players loot %s most: '
-            'around <b>%s</b> in %s. Faint squares are where players have looted anything else in the zone. '
-            'Coordinates match the in-game map.</figcaption></figure>'
-            % (svg, e(name), square_coords(busiest(cells)), zone_link(data, npc)))
+            'around <b>%s</b> in %s. Coordinates match the in-game map. %s</figcaption></figure>'
+            % (svg, e(name), square_coords(busiest(cells)), zone_link(data, npc), ground_note([data.zone_id(npc)])))
 
 
 def item_area_section(data, item):
@@ -502,13 +534,13 @@ def item_area_section(data, item):
     figures = []
     for map_id, cells, _ in areas:
         zone = data.map_names[map_id]
-        svg = area_svg(data, map_id, cells, "Map grid of %s: where players found %s" % (zone, name),
+        svg = area_map(data, map_id, cells, "Map of %s: where players found %s" % (zone, name),
                        lambda cell: "Around %s" % square_coords(cell))
         figures.append('<figure class="area-map"><figcaption class="zone">%s</figcaption>%s<figcaption>Most around '
                        '<b>%s</b>.</figcaption></figure>' % (e(zone), svg, square_coords(busiest(cells))))
     return ('<h2>Where on the map</h2><p class=sub>Brightest where the most %s turned up: squares where players '
-            'looted or fished more of it. Faint squares are where they looted anything else. Coordinates match '
-            'the in-game map.</p><div class="area-maps">%s</div>' % (e(name), "".join(figures)))
+            'looted or fished more of it. Coordinates match the in-game map. %s</p><div class="area-maps">%s</div>'
+            % (e(name), ground_note([map_id for map_id, _, _ in areas]), "".join(figures)))
 
 
 def thin(attempts):

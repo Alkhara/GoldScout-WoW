@@ -3,7 +3,9 @@ version 4 @q lines, names escaped, gray items hidden."""
 import json
 import re
 import sys
+import tempfile
 import unittest
+from unittest import mock
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -367,14 +369,38 @@ class AreaMapTests(unittest.TestCase):
     def test_quiet_squares_are_left_out_as_in_the_addon(self):
         self.assertEqual(data_pages.area_squares({210: 12, 211: 6, 250: 1}), {210: 1.0, 211: 0.5})
 
+    def maps(self, *map_ids):
+        """Point the pages at a folder holding these zones' map art (and only these)."""
+        folder = tempfile.TemporaryDirectory()
+        self.addCleanup(folder.cleanup)
+        for map_id in map_ids:
+            (Path(folder.name) / ("%d.webp" % map_id)).write_bytes(b"")
+        patcher = mock.patch.object(data_pages, "MAPS", Path(folder.name))
+        patcher.start()
+        self.addCleanup(patcher.stop)
+
     def test_mob_page_draws_where_it_was_looted(self):
+        self.maps()                                                # no map art: our own grid
         _, _, body = data_pages.mob_page(self.data, 3809, LINKS)
         self.assertIn("<h2>Where to find it</h2>", body)
         self.assertIn("around <b>52.5, 52.5</b>", body)
-        self.assertIn('aria-label="Map grid of Ashenvale: where players looted Ashenvale Bear"', body)
+        self.assertIn('aria-label="Map of Ashenvale: where players looted Ashenvale Bear"', body)
         self.assertEqual(body.count('class="h"'), 2)              # 250 is under a tenth of the busiest
         self.assertIn('class="g"', body)                          # the other mob's square: the zone's outline
         self.assertIn("<title>Around 52.5, 52.5: looted 12 here</title>", body)
+        self.assertIn("Faint squares", body)
+
+    def test_the_zones_own_map_when_we_have_it(self):
+        self.maps(1440)
+        _, _, body = data_pages.mob_page(self.data, 3809, LINKS)
+        self.assertIn('<img src="/maps/1440.webp" width="1002" height="668" loading="lazy"', body)
+        self.assertIn('alt="Map of Ashenvale: where players looted Ashenvale Bear"', body)
+        self.assertIn('<svg viewBox="0 0 1002 668"', body)
+        # Square 210 is row 10, column 10: half way across and down the map's 1002x668.
+        self.assertIn('<rect x="501.0" y="334.0" width="50.1" height="33.4" fill-opacity="0.70">', body)
+        self.assertEqual(body.count("<rect"), 2)                  # no outline squares over real art
+        self.assertIn("Map art &copy; Blizzard Entertainment.", body)
+        self.assertNotIn("Faint squares", body)
 
     def test_too_few_loots_draw_no_map(self):
         _, _, body = data_pages.mob_page(self.data, 4054, LINKS)   # 4 loots placed
@@ -401,6 +427,13 @@ class AreaMapTests(unittest.TestCase):
         self.data.mobs[4054]["areas"][1440][100] = 20
         _, _, body = data_pages.mob_page(self.data, 4054, LINKS)
         self.assertIn("looted Laughing Sister &amp; Co&#x27;s", body)
+
+
+class LegendTests(unittest.TestCase):
+    def test_no_doubled_percent_signs(self):
+        # The legend isn't %-formatted, so "%%" would show as is (it did, 2026-11-15).
+        self.assertIn("95% likely", data_pages.legend())
+        self.assertNotIn("%%", data_pages.legend())
 
 
 class DataWantedTests(unittest.TestCase):
