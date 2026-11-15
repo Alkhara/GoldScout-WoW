@@ -26,6 +26,8 @@ import merge_data  # noqa: E402
 
 SITE_URL = data_pages.SITE_URL
 API_URL = "https://api.wowgoldscout.com"   # also in prices.js
+ANALYTICS_SCRIPT = "https://static.cloudflareinsights.com"   # Cloudflare Web Analytics
+ANALYTICS_REPORT = "https://cloudflareinsights.com"
 REPO = "https://github.com/Alkhara/GoldScout-WoW"
 LINKS = {
     "curseforge": "https://www.curseforge.com/projects/1790110",
@@ -645,11 +647,14 @@ def main():
         encoding="utf-8")
     # Item pages replaced the reagent-only pages (2026-11-14); keep old links and search results working.
     (DIST / "_redirects").write_text("/reagent/:id /item/:id 301\n", encoding="utf-8")
+    # Cloudflare injects its Web Analytics beacon into every page: the script comes from
+    # static.cloudflareinsights.com and reports to cloudflareinsights.com.
     (DIST / "_headers").write_text(
         "/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n"
         "  Content-Security-Policy: default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; "
-        "script-src 'self'; connect-src 'self' %s; "
-        "base-uri 'none'; form-action 'none'; frame-ancestors 'none'\n" % API_URL, encoding="utf-8")
+        "script-src 'self' %s; connect-src 'self' %s %s; "
+        "base-uri 'none'; form-action 'none'; frame-ancestors 'none'\n"
+        % (ANALYTICS_SCRIPT, API_URL, ANALYTICS_REPORT), encoding="utf-8")
     print("Built %s: %d contributors, %d mobs, %d kills, %d pages." % (
         DIST, s["contributors"], s["mobs"], s["kills"], len(paths)))
 
