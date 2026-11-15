@@ -16,6 +16,9 @@ releases add their own line automatically.
   rates for every mob there, and its top three contributors by kills in the zone. GoldScout Companion's
   leaderboard option is now **Show me on the public leaderboard and zone pages**: you're still anonymous unless
   you turn it on.
+- **GoldScout Companion shares big exports again:** a long-time player's drop data could pass 60 KB, and the
+  companion then stopped sharing it ("The export is larger than 60000 bytes"). It now shares exports up to
+  250 KB. The share form on GitHub still takes up to 60 KB, so for more than that use the companion.
 
 ## v0.12.10
 

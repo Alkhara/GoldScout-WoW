@@ -53,7 +53,10 @@ def header(install_id, seq, version=3):
     return "%s %d^%s^%d" % (HEADER, version, install_id, seq)
 
 # Limits. Anything outside them is a hard error.
-MAX_BYTES = 60000           # GitHub issue bodies top out at 65536 characters
+# One export: GoldScout Companion uploads up to this (the server's limit too, server/src/index.js MAX_BYTES).
+# A long-time player's export passes 60 KB: hundreds of mobs, item names and details, crafted items, areas.
+MAX_BYTES = 250_000
+FORM_MAX_BYTES = 60_000     # through the share form: GitHub issue bodies top out at 65,536 characters
 MAX_MOBS = 1500
 MAX_ID = 2_000_000          # NPC, item and map IDs
 MAX_ATTEMPTS = 5000         # kills or pickpockets of one mob in one export
@@ -63,7 +66,7 @@ MAX_ITEMS_PER_MOB = 150
 MAX_DROPS_PER_ATTEMPT = 8   # items one corpse or pocket can hold
 MAX_QUANTITY_PER_DROP = 100 # average stack size per drop
 MAX_NAME_LENGTH = 64
-MAX_EXTRA_LINES = 5000      # @ lines (names and crafted items) in one export
+MAX_EXTRA_LINES = 20_000    # @ lines (names, item details, crafted items, areas, fishing) in one export
 MAX_FISH_SKILL = 450        # Fishing skill, with lures and gear on top of 300
 MAX_ITEMS_PER_SPOT = 100    # different items fished up at one spot
 

@@ -103,13 +103,23 @@ class ServerTests(unittest.TestCase):
             "old format": ("GoldScout-export 1\n" + LINE + "\n", headers),
             "garbage": ("hello", headers),
             "bad line": ("GoldScout-export 2^%s^1\n1^2^3\n" % new_install(), headers),
-            "too large": (export(new_install(), 1) + "x" * 70000, headers),
+            "too large": (export(new_install(), 1) + "x" * 260000, headers),
         }
         for name, (body, extra) in cases.items():
             with self.subTest(name):
                 status, reply = raw("/v1/uploads", body, extra, "POST")
                 self.assertIn(status, (400, 413))
                 self.assertIn("error", reply)
+
+    def test_accepts_exports_past_the_share_forms_limit(self):
+        # A long-time player's export: past the share form's 60 KB, within the companion's limit.
+        install = new_install()
+        names = "".join("@i^%d^Some Long Item Name Number %d\n" % (item, item) for item in range(10000, 12500))
+        body = "GoldScout-export 3^%s^1\n%s\n%s" % (install, LINE, names)
+        self.assertGreater(len(body.encode()), 70000)
+        status, reply = raw("/v1/uploads", body, {"X-GoldScout-Terms": uploader.TERMS_VERSION,
+                                                  "CF-Connecting-IP": fake_ip()}, "POST")
+        self.assertEqual((status, reply.get("status")), (201, "registered"))
 
     def test_accepts_version_three(self):
         install = new_install()

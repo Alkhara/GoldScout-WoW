@@ -91,6 +91,9 @@ def review(body, user_id):
     if export is None:
         return "invalid", None, consent, False
     result = submission.parse(export)
+    if result.ok and len(export.encode("utf-8")) > submission.FORM_MAX_BYTES:
+        result.errors.append("The export is larger than %d bytes, too big for the share form. GoldScout Companion "
+                             "can share it." % submission.FORM_MAX_BYTES)
     if result.ok:
         submission.compare(result, others(user_id))
     if not consent or not result.ok:

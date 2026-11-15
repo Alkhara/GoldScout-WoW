@@ -68,11 +68,23 @@ class ValidatorTests(unittest.TestCase):
             "garbage": "hello world",
             "missing field": GOOD.replace("^Spined Crawler", ""),
             "duplicate mob": GOOD + CLATTERING,
-            "too large": "GoldScout-export 2^abcdefghijkl^3\n" + "x" * 70000,
+            "too large": "GoldScout-export 2^abcdefghijkl^3\n" + "x" * 260000,
         }
         for name, text in cases.items():
             with self.subTest(name):
                 self.assertTrue(errors(text))
+
+    def test_long_time_players_exports_fit(self):
+        # Past the share form's 60 KB (GitHub issues), within what the companion uploads.
+        names = "".join("@i^%d^Some Long Item Name Number %d\n" % (item, item) for item in range(10000, 12500))
+        big = GOOD.replace("export 2^", "export 3^") + names
+        self.assertGreater(len(big.encode()), submission.FORM_MAX_BYTES)
+        self.assertEqual(errors(big), [])
+        # The share form still can't carry it, and says where to go instead.
+        status, result, _, _ = data_bot.review(form_body(big), 1)
+        self.assertEqual(status, "invalid")
+        self.assertIn("GoldScout Companion can share it", result.errors[0])
+        self.assertEqual(data_bot.review(form_body(GOOD), 1)[0], "valid")
 
     def test_rejects_bad_numbers(self):
         cases = {

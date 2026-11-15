@@ -41,8 +41,10 @@
 // days. The price lists are stored and served as text, never parsed here, so
 // even the largest house stays within the free plan's CPU time.
 
-const MAX_BYTES = 60000;
-const MAX_LINES = 1 + 1500 + 5000; // header, mobs, @ lines (names and crafted items)
+// One export; tools/submission.py has the same limits (MAX_BYTES, MAX_MOBS, MAX_EXTRA_LINES). A long-time
+// player's export passes 60 KB, the share form's limit, which only GitHub issues need.
+const MAX_BYTES = 250000;
+const MAX_LINES = 1 + 1500 + 20000; // header, mobs, @ lines (names, item details, crafted items, areas, fishing)
 const HEADER = /^GoldScout-export [2345]\^([a-z0-9]{12})\^([1-9][0-9]{0,8})$/;
 const EXTRA_LINE = /^@[imcqla]\^[0-9]{1,9}\^[^^]*$/;
 // Fishing: @f^uiMapID^spot^catches^skill^items^cells (tools/submission.py checks the rest).
