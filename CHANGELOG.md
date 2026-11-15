@@ -7,6 +7,12 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- **Data wanted:** a new **Data wanted** button on the Farm tab (or `/gscout wanted`) lists the mobs near your
+  level that still need kills before their drop rates are solid, counting every player's kills and yours, the
+  ones in your zone first. Select one and press **Hunt** for a waypoint and a kill count; share your loot with
+  GoldScout Companion and every player's rates get better. The same list for every level is on
+  [wowgoldscout.com/data-wanted](https://wowgoldscout.com/data-wanted).
+
 ## v0.12.10
 
 - **Hunting area on the world map:** while you hunt, the world map shades where you and other players have

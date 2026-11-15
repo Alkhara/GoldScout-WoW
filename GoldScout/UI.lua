@@ -34,6 +34,15 @@ local COLUMNS = {
     { key = "each", title = L["Each"], width = 80, align = "RIGHT" },
     { key = "hour", title = L["Est. /hour"], width = 85, align = "RIGHT" },
   },
+  -- The Farm tab's Data wanted view.
+  wanted = {
+    { key = "mob", title = L["Mob"], width = 170, align = "LEFT" },
+    { key = "zone", title = L["Zone"], width = 140, align = "LEFT" },
+    { key = "lvl", title = L["Lvl"], width = 45, align = "CENTER" },
+    { key = "kills", title = L["Kills"], width = 65, align = "RIGHT" },
+    { key = "needed", title = L["To go"], width = 60, align = "RIGHT" },
+    { key = "item", title = L["Most common drop"], width = 180, align = "LEFT" },
+  },
   craft = {
     { key = "item", title = L["Item"], width = 189, align = "LEFT" },
     { key = "profit", title = L["Profit"], width = 85, align = "RIGHT" },
@@ -125,6 +134,40 @@ local function Per(per)
 end
 
 local CellText   -- below
+
+-- The Data wanted view's cells. Kills are colored like the Chance column
+-- (how solid the rates are); mobs in your zone are highlighted.
+local function WantedCellText(key, row)
+  if key == "mob" then
+    return row.here and ("|cffffd100" .. (row.source or "") .. "|r") or (row.source or "")
+  elseif key == "zone" then
+    return row.zone or ""
+  elseif key == "lvl" then
+    return row.lvl or ""
+  elseif key == "kills" then
+    return ns.Engine.Confidence(row.kills).color .. row.kills .. "|r"
+  elseif key == "needed" then
+    return tostring(row.needed)
+  elseif key == "item" then
+    return row.item and ItemText(row) or Gray(L["none yet"])
+  end
+  return ""
+end
+
+local function WantedTooltip(row)
+  GameTooltip:AddLine(row.source or "", 1, 1, 1)
+  GameTooltip:AddLine(row.zone .. "  ·  " .. L["Lvl"] .. " " .. row.lvl, 0.8, 0.8, 0.8, true)
+  GameTooltip:AddLine(" ")
+  GameTooltip:AddLine((L["%d kills recorded by GoldScout players, yours included. %d more and its drop rates are "
+    .. "solid."]):format(row.kills, row.needed), 1, 1, 1, true)
+  if row.item then
+    GameTooltip:AddLine((L["Most common drop: %s (%d%% of kills)."]):format(ns.ItemName(row.item),
+      math.floor(row.chance * 100 + 0.5)), 0.8, 0.8, 0.8, true)
+    GameTooltip:AddLine(" ")
+    GameTooltip:AddLine(L["Select it and press Hunt for a waypoint and to count your kills. Share your loot with "
+      .. "GoldScout Companion so every player's rates get better."], 0.6, 0.6, 0.6, true)
+  end
+end
 
 -- The By mob view's own columns, or nil where the Farm tab's text fits. A
 -- group row is a mob with several farms; other rows are one farm (under the
@@ -410,6 +453,11 @@ local function RowOnEnter(self)
     AddMoneyLine(L["Rough estimate per hour"], row.hour)
     GameTooltip:AddLine((L["Includes the mob's other loot, vendor trash too, from %d kills (not coin)."]):format(
       row.otherLootKills), 0.6, 0.6, 0.6, true)
+    GameTooltip:Show()
+    return
+  end
+  if row.kind == "Wanted" then
+    WantedTooltip(row)
     GameTooltip:Show()
     return
   end
@@ -723,9 +771,9 @@ function UI:Create()
     CreateCheckbox(f, 565) }
 
   -- Farm tab: one row per item, or one row per mob.
-  local function ViewButton(text, view, tip)
+  local function ViewButton(text, view, tip, width)
     local button = CreateFrame("Button", nil, f, "UIPanelButtonTemplate")
-    button:SetSize(76, 20)
+    button:SetSize(width or 76, 20)
     button:SetText(text)
     button:SetScript("OnClick", function()
       UI:SetFarmView(view)
@@ -738,7 +786,11 @@ function UI:Create()
   end
   f.mobView = ViewButton(L["By mob"], "mob", L["One row per mob: everything worth farming that it drops, added up. "
     .. "Click + on a mob to see each drop."])
-  f.mobView:SetPoint("TOPRIGHT", -HUNT_RIGHT, -92)
+  f.wantedView = ViewButton(L["Data wanted"], "wanted", L["Mobs that need more kills before their drop rates are "
+    .. "solid, near your level and in your zone first. Hunt one and share your loot: every GoldScout player's "
+    .. "rates get better."], 96)
+  f.wantedView:SetPoint("TOPRIGHT", -HUNT_RIGHT, -92)
+  f.mobView:SetPoint("RIGHT", f.wantedView, "LEFT", -4, 0)
   f.itemView = ViewButton(L["By item"], "item", L["One row per item, from its best source. Click + on an item "
     .. "to see its other sources."])
   f.itemView:SetPoint("RIGHT", f.mobView, "LEFT", -4, 0)
@@ -871,15 +923,16 @@ function UI:Create()
   return f
 end
 
--- The Farm tab's view: "item" or "mob".
+-- The Farm tab's view: "item", "mob" or "wanted".
 function UI:FarmView()
-  return ns.db and ns.db.settings.farmView == "mob" and "mob" or "item"
+  local view = ns.db and ns.db.settings.farmView
+  return (view == "mob" or view == "wanted") and view or "item"
 end
 
 -- The columns shown now: the tab's, or the By mob view's.
 function UI:Columns()
-  if self.tab == "farm" and self:FarmView() == "mob" then
-    return COLUMNS.mob
+  if self.tab == "farm" and self:FarmView() ~= "item" then
+    return COLUMNS[self:FarmView()]
   end
   return COLUMNS[self.tab]
 end
@@ -939,15 +992,14 @@ function UI:SetTab(tab)
     f.craftTab:LockHighlight()
     f.farmTab:UnlockHighlight()
   end
-  local mob = self:FarmView() == "mob"
-  f.itemView:SetShown(tab == "farm")
-  f.mobView:SetShown(tab == "farm")
-  if mob then
-    f.mobView:LockHighlight()
-    f.itemView:UnlockHighlight()
-  else
-    f.itemView:LockHighlight()
-    f.mobView:UnlockHighlight()
+  local view = self:FarmView()
+  for name, button in pairs({ item = f.itemView, mob = f.mobView, wanted = f.wantedView }) do
+    button:SetShown(tab == "farm")
+    if name == view then
+      button:LockHighlight()
+    else
+      button:UnlockHighlight()
+    end
   end
   for i, check in ipairs(f.checks) do
     local option = TAB_OPTIONS[tab][i]
@@ -1125,6 +1177,10 @@ function UI:UpdateInfoText()
   if self.tab == "farm" and hunting then
     info = (L["Hunting %s; the hunt panel shows how it's going. Select another farm and press Hunt to switch."]):format(
       ns.ItemName(hunting.target.item))
+  elseif self.tab == "farm" and self:FarmView() == "wanted" then
+    if best then
+      info = (L["Kills wanted: %s needs %d more for solid drop rates."]):format(best.source or "?", best.needed)
+    end
   elseif self.tab == "farm" then
     if best and best.hour and best.items then
       info = (L["Best mob for you right now: %s, roughly %s an hour."]):format(best.source or "?", ns.Money(best.hour))
@@ -1157,7 +1213,7 @@ function UI:Render()
     return
   end
   local columns = self:Columns()
-  local mobView = columns == COLUMNS.mob
+  local cellText = (columns == COLUMNS.mob and MobCellText) or (columns == COLUMNS.wanted and WantedCellText) or nil
   for i = 1, VISIBLE_ROWS do
     local rowFrame = self.rows[i]
     local row = self.data[self.offset + i]
@@ -1165,7 +1221,7 @@ function UI:Render()
     if row then
       rowFrame.icon:SetTexture(row.item and ns.ItemIcon(row.item) or "Interface\\Icons\\INV_Misc_Bag_10")
       for c, column in ipairs(columns) do
-        rowFrame.cells[c]:SetText(mobView and MobCellText(column.key, row) or CellText(column.key, row))
+        rowFrame.cells[c]:SetText(cellText and cellText(column.key, row) or CellText(column.key, row))
       end
       rowFrame.selected:SetShown(row.hunt ~= nil and row.hunt.key == self.selectedKey)
       local expandable = row.sources ~= nil and row.sources > 1
@@ -1186,6 +1242,8 @@ function UI:Render()
     if self.tab == "craft" then
       f.emptyText:SetText(ns.Engine:HasRecipes() and L["No recipes match these filters."]
         or L["No recipes yet: open each of your profession windows once."])
+    elseif self:FarmView() == "wanted" then
+      f.emptyText:SetText(L["Every mob players have recorded near your level has solid drop rates. Try 'All levels'."])
     else
       f.emptyText:SetText(L["Nothing in range for your level. Try 'All levels'."])
     end
@@ -1273,6 +1331,9 @@ function UI:Refresh()
   end
   if self.tab == "craft" then
     self.data = ns.Engine:Crafts()
+  elseif self:FarmView() == "wanted" then
+    self.allRows = ns.Engine:WantedMobs()
+    self.data = self.allRows
   else
     self.allRows = ns.Engine:Farms()
     self:Regroup()
@@ -1674,6 +1735,7 @@ local function PrintHelp()
   ns.Print(L["commands:"])
   print(L["  /gscout - show or hide the window"])
   print(L["  /gscout farm | craft - open a tab"])
+  print(L["  /gscout wanted - mobs that need more kills for solid drop rates"])
   print(L["  /gscout options - open GoldScout's settings"])
   print(L["  /gscout scan - scan prices (auction house must be open)"])
   print(L["  /gscout hunt - show the current hunt; /gscout hunt stop | history"])
@@ -1780,6 +1842,9 @@ function UI:HandleSlash(message)
     self:Toggle()
   elseif command == "farm" or command == "craft" then
     self:Show(command)
+  elseif command == "wanted" then
+    self:Show("farm")
+    self:SetFarmView("wanted")
   elseif command == "options" or command == "settings" or command == "config" then
     ns.Options:Open()
   elseif command == "welcome" then

@@ -562,6 +562,74 @@ class UnitTooltipTests(unittest.TestCase):
 
 
 @unittest.skipIf(lua51 is None, "lupa is not installed")
+class WantedMobsTests(unittest.TestCase):
+    """The Farm tab's Data wanted view (Engine:WantedMobs): mobs whose drop rates still need kills."""
+    setUp = FarmRulesTests.setUp
+    run_lua, run_file, item, drops = (FarmRulesTests.run_lua, FarmRulesTests.run_file,
+                                      FarmRulesTests.item, FarmRulesTests.drops)
+
+    def shared(self, npc, kills, items, levels=(24, 25), map_id=1440):
+        entry = self.lua.eval("{ k = %d, p = 0, lmin = %d, lmax = %d, m = %d, i = {}, pi = {} }"
+                              % ((kills,) + tuple(levels) + (map_id,)))
+        for item_id, times in items.items():
+            entry.i[item_id] = self.lua.table_from({"d": times, "q": times})
+        self.ns.COMMUNITY[npc] = entry
+
+    def wanted(self):
+        rows = self.ns.Engine.WantedMobs(self.ns.Engine)
+        return [rows[i] for i in range(1, len(rows) + 1)]
+
+    def test_your_kills_and_other_players_add_up(self):
+        self.item(5000)
+        self.drops(3000, 12, {5000: 6})
+        self.shared(3000, 20, {5000: 9})
+        (row,) = self.wanted()
+        self.assertEqual((row.kind, row.npc, row.kills, row.needed, row.zone), ("Wanted", 3000, 32, 18, "Ashenvale"))
+        self.assertEqual(row.item, 5000)
+        self.assertAlmostEqual(row.chance, 15 / 32)
+        self.assertEqual(row.hunt.key, "Wanted:3000")
+        self.assertTrue(row.hunt.npcs[3000])
+
+    def test_solid_mobs_are_left_out(self):
+        self.shared(3000, 50, {})
+        self.shared(3001, 49, {})
+        self.assertEqual([row.npc for row in self.wanted()], [3001])
+
+    def test_far_above_your_level_needs_all_levels(self):
+        self.shared(3000, 10, {}, levels=(28, 29))   # you're 25: 3 above
+        self.shared(3001, 10, {}, levels=(27, 28))
+        self.assertEqual([row.npc for row in self.wanted()], [3001])
+        self.settings.showAllLevels = True
+        self.assertEqual(sorted(row.npc for row in self.wanted()), [3000, 3001])
+
+    def test_your_zone_first_then_closest_to_solid(self):
+        self.fake.maps[1441] = "Thousand Needles"
+        self.shared(3000, 40, {})
+        self.shared(3001, 10, {}, map_id=1441)
+        self.shared(3002, 45, {})
+        self.assertEqual([row.npc for row in self.wanted()], [3002, 3000, 3001])
+        self.run_lua("C_Map.GetBestMapForUnit = function() return 1441 end")
+        self.assertEqual([row.npc for row in self.wanted()], [3001, 3002, 3000])
+        self.assertTrue(self.wanted()[0].here)
+
+    def test_the_hunt_tracks_its_most_common_drop_but_not_vendor_trash(self):
+        self.item(5000)
+        self.item(5001, quality=0)
+        self.shared(3000, 20, {5000: 4, 5001: 15})
+        (row,) = self.wanted()
+        self.assertEqual(row.item, 5000)
+        self.shared(3000, 20, {5001: 15})
+        (row,) = self.wanted()
+        self.assertIsNone(row.item)
+        self.assertIsNone(row.hunt)                  # nothing to track: can't be hunted
+
+    def test_mobs_without_a_known_zone_or_level_are_left_out(self):
+        self.shared(3000, 10, {}, map_id=9999)        # a map the game doesn't name
+        self.shared(3001, 10, {}, levels=(0, 0))
+        self.assertEqual(self.wanted(), [])
+
+
+@unittest.skipIf(lua51 is None, "lupa is not installed")
 class HuntAreaTests(unittest.TestCase):
     """The hunting area a hunt shades on the world map (Engine.HuntArea, Hunt.AreaSquares)."""
     setUp_farm = FarmRulesTests.setUp

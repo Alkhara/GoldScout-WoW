@@ -32,6 +32,10 @@ based on your level, class, faction and professions.
   Two views, switched with the **By item** and **By mob** buttons: one row per item from its best source
   (click **+** for its other sources), or one row per mob adding up everything worth farming that it drops
   (click **+** for each drop). Farms without a mob, like gathering and fishing, keep their own rows.
+
+  **Data wanted** lists the mobs near your level that still need kills before their drop rates are solid
+  (50 kills, counting other players' and yours), the ones in your zone first. Hunt one and share your loot
+  with GoldScout Companion, and everyone's rates get better.
 - **Craft tab** ranks every recipe you know by profit per craft: auction house
   price after the 5% cut, minus the cheapest cost of the materials (vendor price
   when they are sold by vendors, otherwise the auction house price).
@@ -132,6 +136,7 @@ set up, ticking itself off as you go (`/gscout welcome` shows it again):
 |---|---|
 | `/gscout` | Show or hide the window |
 | `/gscout farm`, `/gscout craft` | Open a tab |
+| `/gscout wanted` | Open the Farm tab's Data wanted list |
 | `/gscout scan` | Scan prices (the auction house must be open) |
 | `/gscout hunt` | Show the hunt panel (or open the Farm tab to start one) |
 | `/gscout hunt stop` | End the current hunt and print a summary |

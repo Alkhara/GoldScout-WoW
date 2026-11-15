@@ -1053,6 +1053,71 @@ end
 -- kills per hour. With Count all loot on, otherRow is a line for the rest of
 -- the mob's loot, so the lines under a mob add up to its total. `rows` is
 -- Farms() output, sorted best first.
+-- The Farm tab's Data wanted view: mobs whose drop rates still need kills.
+-- WANTED_KILLS is where a rate counts as solid (the "high" confidence, and the
+-- website's goal on wowgoldscout.com/data-wanted); WANTED_ABOVE how far above
+-- your level a mob still shows (All levels shows every one).
+local WANTED_KILLS = CONFIDENCE[1].min
+local WANTED_ABOVE = 2
+
+-- Mobs players have recorded fewer than WANTED_KILLS kills of, yours
+-- included, so the list updates as you farm. Mobs in your zone come first,
+-- then the closest to solid, then the nearest your level. Each row hunts the
+-- mob for its most common drop.
+function Engine:WantedMobs()
+  local settings = ns.db.settings
+  local level = UnitLevel("player") or 1
+  local here = C_Map and C_Map.GetBestMapForUnit and C_Map.GetBestMapForUnit("player")
+  local cap = ns.Community and ns.Community.DEFAULT_CAP or 1000
+  local mobs = {}
+  for npcID in pairs(ns.db.drops or {}) do
+    mobs[npcID] = true
+  end
+  for npcID in pairs(ns.COMMUNITY) do
+    mobs[npcID] = true
+  end
+  local rows = {}
+  for npcID in pairs(mobs) do
+    local own, shared = ns.Learn:Entry(npcID), ns.COMMUNITY[npcID]
+    local kills = math.min((own and own.k) or 0, cap) + ((shared and shared.k) or 0)
+    local minLevel = (shared and shared.lmin) or (own and own.lmin)
+    local maxLevel = (shared and shared.lmax) or (own and own.lmax) or minLevel
+    local map = (shared and shared.m) or (own and own.m)
+    local zone = MapName(map)
+    if kills > 0 and kills < WANTED_KILLS and minLevel and minLevel > 0 and zone
+        and (settings.showAllLevels or minLevel <= level + WANTED_ABOVE) then
+      -- Its most common drop that isn't vendor trash: what the hunt tracks.
+      local top, topDrops = nil, 0
+      for _, items in ipairs({ (own and own.i) or {}, (shared and shared.i) or {} }) do
+        for itemID in pairs(items) do
+          local drops = ns.Learn:Evidence(npcID, itemID, false)
+          if (drops > topDrops or (drops == topDrops and top and itemID < top)) and not ns.IsPoorQuality(itemID) then
+            top, topDrops = itemID, drops
+          end
+        end
+      end
+      local mob = ns.MobName(npcID, own and own.n, shared and shared.n)
+      rows[#rows + 1] = {
+        kind = "Wanted", npc = npcID, source = mob, zone = zone, here = map == here,
+        lvl = LevelText(minLevel, maxLevel), maxLevel = maxLevel, kills = kills, needed = WANTED_KILLS - kills,
+        item = top, chance = top and topDrops / kills, per = "kill",
+        hunt = top and MobHunt("Wanted:" .. npcID, "kill", top, topDrops / kills, mob, zone, npcID, nil),
+      }
+    end
+  end
+  table.sort(rows, function(a, b)
+    if a.here ~= b.here then
+      return a.here
+    elseif a.needed ~= b.needed then
+      return a.needed < b.needed
+    elseif a.maxLevel ~= b.maxLevel then
+      return a.maxLevel > b.maxLevel
+    end
+    return a.npc < b.npc
+  end)
+  return rows
+end
+
 function Engine:MobFarms(rows)
   local groups, order = {}, {}
   for _, row in ipairs(rows) do
