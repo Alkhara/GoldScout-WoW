@@ -429,6 +429,14 @@ class AreaMapTests(unittest.TestCase):
         self.assertIn("looted Laughing Sister &amp; Co&#x27;s", body)
 
 
+class ChampionsScriptTests(unittest.TestCase):
+    def test_writes_text_only(self):
+        script = (ROOT / "site" / "champions.js").read_text(encoding="utf-8")
+        self.assertNotIn("innerHTML", script)
+        self.assertIn("textContent", script)
+        self.assertIn('"/v1/leaderboard/zones"', script)
+
+
 class LegendTests(unittest.TestCase):
     def test_no_doubled_percent_signs(self):
         # The legend isn't %-formatted, so "%%" would show as is (it did, 2026-11-15).
@@ -521,6 +529,9 @@ class ZoneGoalTests(unittest.TestCase):
         self.assertIn("<b>0 of 2</b> so far. Next milestone: 1 more mob to 10%.", body)
         self.assertIn("20 kills, <b>30 to go</b>", body)
         self.assertLess(body.index("Zone goal"), body.index("<h2>Mobs</h2>"))
+        # Zone champions come from the server, filled in by champions.js; hidden until then.
+        self.assertIn('<div id=zone-champions data-zone="1440" hidden>', body)
+        self.assertIn('<script src="/champions.js" defer></script>', body)
         self.data.mobs[3809]["k"] = self.data.mobs[4054]["k"] = 50
         _, _, body = data_pages.zone_page(self.data, 1440, LINKS)
         self.assertIn("<b>Goal reached:</b> every mob players have recorded in Ashenvale", body)

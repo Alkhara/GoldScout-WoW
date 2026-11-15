@@ -280,6 +280,9 @@ td.bar { background: none; }
 .zone-goal { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 4px 18px 10px; margin: 18px 0; }
 .zone-goal .goal-bar { height: 14px; border-radius: 7px; margin: 4px 0 2px; }
 b.done { color: #40ff40; }
+ol.champions { margin: 4px 0 6px; padding-left: 24px; }
+ol.champions li { margin: 3px 0; }
+.champion.anon { color: var(--muted); }
 td.bar .track { display: block; height: 8px; border-radius: 4px; background: var(--line); }
 td.bar .good { display: block; height: 8px; min-width: 2px; border-radius: 4px; background: rgba(242,194,85,.4); }
 td.bar .solid { display: block; height: 8px; border-radius: 4px; background: var(--gold); }
@@ -536,16 +539,17 @@ shared the most, ranked by their kills that count in the community data.</p>
 <h2>How it works</h2>
 <h3>Who's on it?</h3>
 <p>Everyone who shares drop data with <a href="/companion">GoldScout Companion</a> or the share form is ranked, and
-everyone is anonymous unless they choose otherwise.</p>
+everyone is anonymous unless they choose otherwise. Each zone's page also lists its zone champions: the top three by
+kills of the mobs there.</p>
 <h3>How do I put my name on it?</h3>
 <p>In GoldScout Companion, press <b>Leaderboard...</b> under Your data and tick <b>Show me on the public
-leaderboard</b>. You're shown under a name GoldScout makes up, or under a name of your own once it's approved.
+leaderboard and zone pages</b>. You're shown under a name GoldScout makes up, or under a name of your own once it's approved.
 Only your copy of the companion can change your entry. Your rank also shows on GoldScout's minimap button.</p>
 <h3>What counts?</h3>
 <p>Kills that are in the community data: your export has to pass the data checks, and as in the data itself, at most
 1,000 kills of any one mob count from one player. Scores update every hour.</p>
 <h3>Can I leave?</h3>
-<p>Untick <b>Show me on the public leaderboard</b> any time and you're anonymous again. To remove your data
+<p>Untick <b>Show me on the public leaderboard and zone pages</b> any time and you're anonymous again. To remove your data
 altogether, see the <a href="%(privacy)s">privacy policy</a>.</p>
 </div>
 <script src="/leaderboard.js" defer></script>
@@ -636,6 +640,7 @@ def main():
     shutil.copy2(HERE / "prices.js", DIST / "prices.js")
     shutil.copy2(HERE / "leaderboard.js", DIST / "leaderboard.js")
     shutil.copy2(HERE / "search.js", DIST / "search.js")
+    shutil.copy2(HERE / "champions.js", DIST / "champions.js")
     if (HERE / "maps").is_dir():   # the game's zone maps (tools/zone_maps.py)
         shutil.copytree(HERE / "maps", DIST / "maps", dirs_exist_ok=True, ignore=shutil.ignore_patterns("*.md"))
     results = merge_data.load(ROOT / "data" / "submissions")

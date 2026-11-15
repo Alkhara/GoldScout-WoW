@@ -52,6 +52,46 @@ class ScoreTests(unittest.TestCase):
         self.assertTrue(all(len(i) == 12 and kills > 0 and mobs > 0 for i, (kills, mobs) in table.items()))
 
 
+def placed(npc, k, map_id, seen=None):
+    """A mob as merge_data reads it: killed k times, looted seen times on map_id."""
+    return SimpleNamespace(npc=npc, k=k, p=0, lmin=10, lmax=11, n="Mob", m=map_id, c=k if seen is None else seen,
+                           x=0.5, y=0.5, a={}, i={}, pi={})
+
+
+class ZoneScoreTests(unittest.TestCase):
+    """Zone champions: each zone's top contributors by their kills there."""
+
+    def test_kills_count_in_the_mobs_zone(self):
+        a, b = "aaaaaaaaaaaa", "bbbbbbbbbbbb"
+        zones = leaderboard.zone_scores([
+            submission(a, placed(1, 30, 1436), placed(2, 5, 1440)),
+            submission(b, placed(1, 40, 1436)),
+        ])
+        self.assertEqual(zones, {"1436": [[b, 40], [a, 30]], "1440": [[a, 5]]})
+
+    def test_a_mob_belongs_to_the_zone_where_its_seen_most(self):
+        # A wandered off and looted it once on another map; it still counts in its usual zone.
+        a, b = "aaaaaaaaaaaa", "bbbbbbbbbbbb"
+        zones = leaderboard.zone_scores([submission(a, placed(1, 3, 1441)), submission(b, placed(1, 20, 1436))])
+        self.assertEqual(zones, {"1436": [[b, 20], [a, 3]]})
+
+    def test_capped_and_cut_to_the_top(self):
+        installs = ["%012d" % i for i in range(15)]
+        zones = leaderboard.zone_scores([submission(install, placed(1, 100 + i * 1000, 1436))
+                                         for i, install in enumerate(installs)], cap=1000, top=10)
+        self.assertEqual(len(zones["1436"]), 10)
+        self.assertEqual(zones["1436"][0][1], 1000)            # one mob counts up to the cap
+        self.assertEqual([pair[1] for pair in zones["1436"]][-1], 1000)
+        self.assertEqual(zones["1436"][-2:], [[installs[9], 1000], [installs[10], 1000]])   # ties: by install
+
+    def test_the_shipped_submissions(self):
+        zones = leaderboard.zone_scores(leaderboard.merge_data.load(ROOT / "data" / "submissions"))
+        self.assertTrue(zones)
+        for zone, pairs in zones.items():
+            self.assertTrue(zone.isdigit() and 0 < len(pairs) <= leaderboard.ZONE_SENT)
+            self.assertEqual(pairs, sorted(pairs, key=lambda pair: (-pair[1], pair[0])))
+
+
 @unittest.skipUnless(app, "tkinter isn't available")
 class RankTextTests(unittest.TestCase):
     def test_anonymous(self):

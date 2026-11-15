@@ -962,8 +962,9 @@ class App:
         ttk.Label(frame, text="Contributor leaderboard", font=(FONT, 13, "bold")).grid(sticky="w")
         ttk.Label(frame, wraplength=420, justify="left", text=(
             "Everyone who shares is ranked by their kills in the community data, and stays anonymous "
-            "unless they choose otherwise. Your rank shows here, and on GoldScout's minimap button "
-            "after you log in or /reload.")).grid(sticky="w", pady=(6, 10))
+            "unless they choose otherwise. Each zone's page on the website also lists its top three by "
+            "kills there. Your rank shows here, and on GoldScout's minimap button after you log in or "
+            "/reload.")).grid(sticky="w", pady=(6, 10))
         public = tk.BooleanVar(value=bool(info.get("public")))
         name = tk.StringVar(value=info.get("name") or "")
         row = ttk.Frame(frame)
@@ -971,7 +972,7 @@ class App:
 
         def toggled():
             entry.state(["!disabled"] if public.get() else ["disabled"])
-        ttk.Checkbutton(frame, text="Show me on the public leaderboard", variable=public,
+        ttk.Checkbutton(frame, text="Show me on the public leaderboard and zone pages", variable=public,
                         command=toggled).grid(sticky="w")
         row.grid(sticky="w", pady=(8, 0), padx=(22, 0))
         ttk.Label(row, text="Name (optional):").pack(side="left")

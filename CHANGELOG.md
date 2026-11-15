@@ -12,6 +12,10 @@ releases add their own line automatically.
   ones in your zone first. Select one and press **Hunt** for a waypoint and a kill count; share your loot with
   GoldScout Companion and every player's rates get better. The same list for every level is on
   [wowgoldscout.com/data-wanted](https://wowgoldscout.com/data-wanted).
+- **Zone goals and zone champions on the website:** each zone's page shows how close players are to solid drop
+  rates for every mob there, and its top three contributors by kills in the zone. GoldScout Companion's
+  leaderboard option is now **Show me on the public leaderboard and zone pages**: you're still anonymous unless
+  you turn it on.
 
 ## v0.12.10
 

@@ -817,7 +817,12 @@ def zone_goal_section(data, map_id):
             % (mob_link(data, npc), "level %s" % e(data.levels(npc)) if data.levels(npc) else "",
                data.mobs[npc]["k"], SOLID - data.mobs[npc]["k"])
             for npc in goal["left"][:GOAL_LEFT])
-    return '<section class=zone-goal><h2>Zone goal</h2>%s%s%s</section>' % (goal_bar(goal), text, left)
+    # Zone champions: filled in by site/champions.js from the server's leaderboard (hidden until then).
+    champions = ('<div id=zone-champions data-zone="%d" hidden><p class=sub>Zone champions: the players with the most '
+                 'kills here.</p><ol class=champions></ol><p class=small>Named only if they choose it in GoldScout '
+                 'Companion. <a href="/leaderboard">Contributor leaderboard</a></p></div>'
+                 '<script src="/champions.js" defer></script>' % map_id)
+    return '<section class=zone-goal><h2>Zone goal</h2>%s%s%s%s</section>' % (goal_bar(goal), text, left, champions)
 
 
 def zone_page(data, map_id, links):

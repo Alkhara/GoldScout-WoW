@@ -1,6 +1,6 @@
 # GoldScout Privacy Policy
 
-*Last updated: November 13, 2026*
+*Last updated: November 15, 2026*
 
 This policy covers the GoldScout addon and the drop data players share with it.
 GoldScout is maintained by GitHub user Alkhara ("we" below).
@@ -104,8 +104,11 @@ Every install whose data is in the community data is ranked by its kills that
 count there (each mob's kills capped at 1,000, as in the data itself). The
 service keeps each install's kill and mob count for this, worked out every hour
 from the accepted submissions. The public leaderboard on wowgoldscout.com shows
-the top 100: rank, kills, mobs and a name. Install IDs are never shown, and
-everyone is "Anonymous contributor" unless they choose otherwise.
+the top 100: rank, kills, mobs and a name. It also keeps each zone's top 10
+installs by their kills of the mobs in that zone (a mob belongs to the zone
+players see it in most), and each zone's page on the website lists the top 3
+as zone champions: rank, kills there and a name. Install IDs are never shown,
+and everyone is "Anonymous contributor" unless they choose otherwise.
 
 **Showing a name (off unless you turn it on).** In the companion, **Leaderboard...**
 lets you appear by name. The service then keeps a name it makes up for you
@@ -114,9 +117,10 @@ only after we approve it; until then, and if we don't, your made-up name shows.
 A name you choose is public, so don't use your character or account name if you
 want to stay anonymous. Only your copy of the companion can change your entry:
 it proves which install it speaks for with the install's upload token. Turning
-**Show me on the public leaderboard** off deletes both names right away. The
-companion keeps your latest rank in its settings file and, if auction prices
-are on, in the GoldScout_Prices addon, so GoldScout can show it.
+**Show me on the public leaderboard and zone pages** off deletes both names
+right away, from the leaderboard and the zone pages. The companion keeps your
+latest rank in its settings file and, if auction prices are on, in the
+GoldScout_Prices addon, so GoldScout can show it.
 
 ## Sharing drop data
 
