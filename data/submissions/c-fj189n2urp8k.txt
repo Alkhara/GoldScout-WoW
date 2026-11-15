@@ -1,4 +1,4 @@
-GoldScout-export 5^fj189n2urp8k^4
+GoldScout-export 5^fj189n2urp8k^5
 232^1^0^23^23^1424^0.3270^0.3633^1^Farmer Ray^^
 1867^5^0^13^14^1421^0.5097^0.6147^5^Dalaran Apprentice^414:1:1,1502:1:1,1516:1:1,2589:2:6^
 1973^17^0^20^21^1421^0.5877^0.7125^17^Ravenclaw Guardian^1179:2:2,1775:1:1,1789:1:1,2589:2:4,2592:5:5,271343:1:1,271350:1:1^
@@ -41,13 +41,22 @@ GoldScout-export 5^fj189n2urp8k^4
 3992^1^0^20^21^1442^0.6411^0.3872^1^Venture Co. Engineer^^
 3993^1^0^22^22^1442^0.6344^0.4008^1^Venture Co. Machine Smith^^
 4003^2^0^20^21^1442^0.7300^0.5837^2^Windshear Geomancer^4537:1:1^
+4007^1^0^18^18^1442^0.5321^0.5564^1^Deepmoss Venomspitter^1081:1:1^
 4015^1^0^25^25^1442^0.4686^0.4218^1^Pridewing Patriarch^5136:1:1,5752:1:1^
 4020^1^0^22^23^1442^0.4672^0.3780^1^Sap Beast^3674:1:1,7091:1:1^
+4022^1^0^24^24^1442^0.3445^0.5994^1^Bloodfury Harpy^2592:1:2,3385:1:1,277936:1:2^
+4025^1^0^24^24^1442^0.3450^0.6024^1^Bloodfury Ambusher^3770:1:1^
+4036^2^0^24^24^1442^0.3544^0.5540^2^Rogue Flame Spirit^16312:2:2^
+4044^2^0^23^24^1442^0.3708^0.4828^2^Blackened Basilisk^11385:1:1^
+4051^4^0^23^24^1442^0.3548^0.1255^4^Cenarion Botanist^2592:1:1^
+4053^6^0^23^25^1442^0.3609^0.1376^6^Daughter of Cenarius^2782:1:1^
+4057^4^0^24^25^1442^0.3698^0.1419^4^Son of Cenarius^1205:1:1,2589:1:3,2592:2:4^
 4070^1^0^20^20^1442^0.6412^0.3941^1^Venture Co. Builder^^
 4202^1^0^27^27^1442^0.6459^0.3975^1^Gerenzo Wrenchwhistle^2592:1:2,5736:1:1^
 4275^1^0^0^0^0^0.0000^0.0000^0^^5442:1:1^
 4279^1^0^0^0^0^0.0000^0.0000^0^^1750:1:1^
 4627^1^0^0^0^0^0.0000^0.0000^0^^6438:1:1^
+5806^4^0^24^25^1442^0.3700^0.1419^4^Treant Ally^^
 212753^1^0^20^20^1421^0.5809^0.6987^1^Tortured Soul^^
 @i^117^Tough Jerky
 @i^118^Minor Healing Potion
@@ -71,17 +80,20 @@ GoldScout-export 5^fj189n2urp8k^4
 @i^2251^Gooey Spider Leg
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2782^Mishandled Recurve Bow
 @i^2879^Antipodean Rod
 @i^2940^Bloody Bear Paw
 @i^2982^Seer's Pants
 @i^2984^Seer's Gloves
 @i^3198^Battering Hammer of Magic
+@i^3385^Lesser Mana Potion
 @i^3402^Soft Patch of Fur
 @i^3476^Gray Bear Tongue
 @i^3496^Mountain Lion Blood
 @i^3674^Decomposed Boot
 @i^3730^Big Bear Meat
 @i^3731^Lion Meat
+@i^3770^Mutton Chop
 @i^3820^Stranglekelp
 @i^4537^Tel'Abim Banana
 @i^4575^Medicine Staff of the Falcon
@@ -100,8 +112,10 @@ GoldScout-export 5^fj189n2urp8k^4
 @i^6530^Nightcrawlers
 @i^7091^Pattern: Truefaith Gloves
 @i^9776^Bandit Boots of Spirit
+@i^11385^Basilisk Scale
 @i^11406^Rotting Bear Carcass
 @i^11407^Torn Bear Pelt
+@i^16312^Incendrites
 @i^21071^Raw Sagefish
 @i^21114^Rumsey Rum Dark
 @i^248685^Waylaid Crate: Apprentice Curiosities
@@ -109,6 +123,7 @@ GoldScout-export 5^fj189n2urp8k^4
 @i^271343^Note Scrap
 @i^271350^Tortured Soul
 @i^277661^Dull Storm Orb
+@i^277936^Glittering Sunstone
 @q^117^1:0:0
 @q^118^1:0:0
 @q^414^1:0:0
@@ -131,17 +146,20 @@ GoldScout-export 5^fj189n2urp8k^4
 @q^2251^1:7:1
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2782^0:2:0
 @q^2879^3:4:0
 @q^2940^0:15:0
 @q^2982^2:4:0
 @q^2984^2:4:0
 @q^3198^2:2:0
+@q^3385^1:0:0
 @q^3402^0:15:0
 @q^3476^1:12:0
 @q^3496^1:12:0
 @q^3674^0:15:0
 @q^3730^1:7:1
 @q^3731^1:7:1
+@q^3770^1:0:0
 @q^3820^1:7:1
 @q^4537^1:0:0
 @q^4575^2:2:0
@@ -160,8 +178,10 @@ GoldScout-export 5^fj189n2urp8k^4
 @q^6530^1:0:0
 @q^7091^2:9:0
 @q^9776^2:4:0
+@q^11385^0:15:0
 @q^11406^0:15:0
 @q^11407^1:12:0
+@q^16312^1:12:0
 @q^21071^1:7:1
 @q^21114^1:0:0
 @q^248685^1:0:1
@@ -169,6 +189,7 @@ GoldScout-export 5^fj189n2urp8k^4
 @q^271343^1:15:0
 @q^271350^1:12:0
 @q^277661^1:12:0
+@q^277936^1:12:0
 @m^1411^Durotar
 @m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
@@ -1081,10 +1102,19 @@ GoldScout-export 5^fj189n2urp8k^4
 @a^3992^152:1
 @a^3993^172:1
 @a^4003^234:2
+@a^4007^230:1
 @a^4015^169:1
 @a^4020^149:1
+@a^4022^226:1
+@a^4025^246:1
+@a^4036^207:1,226:1
+@a^4044^187:1,207:1
+@a^4051^46:2,47:2
+@a^4053^47:3,67:3
+@a^4057^47:3,67:1
 @a^4070^152:1
 @a^4202^152:1
+@a^5806^47:3,67:1
 @a^212753^271:1
 @f^1442^0^46^146^3820:4:9,6289:5:5,6308:4:4,6359:6:6,6456:1:1,21071:25:25,21114:1:1^149:4,169:28,170:6,172:5,173:3
 @l^0^enUS
