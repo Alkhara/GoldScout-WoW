@@ -1,4 +1,4 @@
-GoldScout-export 5^nyot3uhlodmn^5
+GoldScout-export 5^nyot3uhlodmn^6
 36^5^0^11^12^1436^0.4731^0.6731^5^Harvest Golem^814:1:1,2778:1:1,255007:1:1^
 95^11^0^11^12^1436^0.4652^0.2022^11^Defias Smuggler^414:1:1,1512:1:1,1515:1:1,1731:1:1,2589:6:16^
 114^2^0^14^15^1436^0.3849^0.4620^2^Harvest Watcher^732:1:1,1274:2:2,1505:1:1,255007:1:1^
@@ -30,9 +30,13 @@ GoldScout-export 5^nyot3uhlodmn^5
 250937^17^0^4^4^2521^0.3671^0.2517^17^Ursera Scavenger^1374:1:1,2653:1:1,2656:1:1,7073:3:3,7074:7:7,251925:8:8^
 251115^1^0^5^5^2521^0.3568^0.2539^1^Urs'anah^^
 251143^6^0^2^3^2521^0.4696^0.2017^6^Roiling Winds^1367:1:1,2653:1:1,2654:1:1,251930:2:2,251931:4:4^
+251145^6^0^4^4^2521^0.3625^0.3325^6^Al'Aketh Brute^159:3:3,2589:2:2,3363:1:1,4540:3:3^
 251160^7^0^2^3^2521^0.4698^0.1920^7^Al'Aketh Convert^1367:1:1,1377:1:1^
 251169^8^0^1^1^2521^0.4540^0.2875^8^Pesky Cirrusfly^1369:1:1,2650:1:1,3365:1:1,251927:5:5,251928:3:3^
 251404^1^0^3^3^2521^0.4706^0.2714^1^Cirrusfly Queen^251927:1:1^
+251448^3^0^4^4^2521^0.3640^0.3386^3^Al'Aketh Neophyte^159:1:1,2589:1:1,2653:1:1,4540:2:2,5572:1:1^
+251451^1^0^5^5^2521^0.3917^0.3395^1^Al'Aketh Ambusher^2589:1:1,4540:1:1^
+@i^159^Refreshing Spring Water
 @i^414^Dalaran Sharp
 @i^555^Rough Vulture Feathers
 @i^723^Goretusk Liver
@@ -77,12 +81,15 @@ GoldScout-export 5^nyot3uhlodmn^5
 @i^3172^Boar Intestines
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
+@i^3363^Frayed Belt
 @i^3365^Frayed Bracers
 @i^3399^Vulture Talon
+@i^4540^Tough Hunk of Bread
 @i^4678^Veteran Girdle
 @i^4865^Ruined Pelt
 @i^5212^Blazing Wand
 @i^5523^Small Barnacled Clam
+@i^5572^Small Green Pouch
 @i^5771^Pattern: Red Linen Bag
 @i^6205^Burrowing Shovel
 @i^6289^Raw Longjaw Mud Snapper
@@ -109,6 +116,7 @@ GoldScout-export 5^nyot3uhlodmn^5
 @i^251931^Depleted Windstone
 @i^254548^Longshore Murloc Gill
 @i^255007^Golem Isospring
+@q^159^1:0:0
 @q^414^1:0:0
 @q^555^0:15:0
 @q^723^1:7:1
@@ -153,12 +161,15 @@ GoldScout-export 5^nyot3uhlodmn^5
 @q^3172^1:7:1
 @q^3299^0:15:0
 @q^3300^0:15:0
+@q^3363^0:4:0
 @q^3365^0:4:0
 @q^3399^0:15:0
+@q^4540^1:0:0
 @q^4678^1:4:0
 @q^4865^0:15:0
 @q^5212^2:2:0
 @q^5523^1:7:0
+@q^5572^1:1:0
 @q^5771^1:9:0
 @q^6205^2:2:0
 @q^6289^1:7:1
@@ -859,7 +870,10 @@ GoldScout-export 5^nyot3uhlodmn^5
 @a^250937^87:7,107:10
 @a^251115^107:1
 @a^251143^69:3,89:3
+@a^251145^127:6
 @a^251160^69:5,89:2
 @a^251169^108:3,109:5
 @a^251404^109:1
+@a^251448^127:3
+@a^251451^127:1
 @l^0^enUS
