@@ -403,6 +403,50 @@ class AreaMapTests(unittest.TestCase):
         self.assertIn("looted Laughing Sister &amp; Co&#x27;s", body)
 
 
+class DataWantedTests(unittest.TestCase):
+    """Phase 2: show where the data is thin, and ask for it on thin pages."""
+
+    def setUp(self):
+        self.data = dataset()   # Ashenvale Bear 20 kills (21-22), Laughing Sister 10 kills (24-25)
+
+    def test_thin_pages_say_how_far_from_solid(self):
+        _, _, body = data_pages.mob_page(self.data, 3809, LINKS)
+        self.assertIn("Ashenvale Bear has 20 kills recorded so far, so the ranges are wide; 30 more and its rates "
+                      "are solid.", body)
+        self.assertIn('href="/data-wanted"', body)
+        _, _, body = data_pages.item_page(self.data, 3730, LINKS)
+        self.assertIn("Its best source, Ashenvale Bear, has 20 kills", body)
+
+    def test_solid_pages_dont_ask(self):
+        self.data.mobs[3809]["k"] = 50
+        _, _, body = data_pages.mob_page(self.data, 3809, LINKS)
+        self.assertNotIn("recorded so far", body)
+        self.assertIn('href="/data-wanted"', body)
+
+    def test_names_in_the_ask_are_escaped(self):
+        _, _, body = data_pages.mob_page(self.data, 4054, LINKS)
+        self.assertIn("Laughing Sister &amp; Co&#x27;s has 10 kills", body)
+
+    def test_coverage_page(self):
+        pages = {}
+
+        def write(path, *page, index=True):
+            pages[path] = page
+        paths = data_pages.build(self.data, LINKS, write)
+        self.assertIn("/data-wanted", paths)
+        title, _, body = pages["data-wanted.html"]
+        self.assertEqual(title, "Where GoldScout needs drop data (WoW Forever)")
+        self.assertIn("30 kills of 2 mobs so far, 0 of them with the 50+ kills", body)
+        self.assertIn('<a href="/farms/levels-21-30">Levels 21-30</a></td><td class=num>2</td><td class=num>30</td>'
+                      '<td class=num>1 <span class=range>50%</span>', body)
+        self.assertIn("<tr><td>Levels 51-60</td><td class=num>0</td>", body)   # nobody's been: still listed
+        self.assertIn("nobody yet", body)
+        self.assertIn('<a href="/zone/1440">Ashenvale</a> <span class=small>21-25</span>', body)
+        # Almost there: the closest to solid first.
+        self.assertLess(body.index("/mob/3809"), body.index("/mob/4054"))
+        self.assertIn("20 kills, <b>30 to go</b>", body)
+
+
 class FaqTests(unittest.TestCase):
     def test_every_question_is_on_the_page_and_in_the_structured_data(self):
         import build

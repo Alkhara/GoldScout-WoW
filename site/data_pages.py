@@ -77,6 +77,8 @@ BRACKETS = [(1, 10), (11, 20), (21, 30), (31, 40), (41, 50), (51, 63)]
 CONFIDENCE = [(50, "high"), (15, "good"), (5, "fair"), (0, "low")]
 PLAYER_CAP = 1000                # kills per mob counted from any one player
 RELATED = 8                      # cross-links per list
+SOLID = CONFIDENCE[0][0]         # kills where a mob's rates count as solid ("high")
+ALMOST = 10                      # "almost there" mobs listed per level range on /data-wanted
 
 e = html.escape
 
@@ -518,12 +520,22 @@ def link_list(items):
     return "<ul class=related>%s</ul>" % "".join("<li>%s</li>" % item for item in items)
 
 
-def cta(links):
-    return ("<div class=cta><b>Help fill this in.</b> Every number here comes from players looting in game. "
-            "Install <a href=\"%(curseforge)s\">GoldScout</a> and add "
+def cta(links, need=""):
+    """The "help fill this in" box. need: a sentence on how thin this page's data is, or ""."""
+    return ("<div class=cta><b>Help fill this in.</b> %sEvery number here comes from players looting in game. "
+            "Install <a href=\"%s\">GoldScout</a> and add "
             "<a href=\"/companion\">GoldScout Companion</a>: it brings auction prices into the game every hour "
             "without scanning, and shares what you loot automatically. More players, better data for "
-            "everyone.</div>" % links)
+            "everyone. <a href=\"/data-wanted\">See where data is needed most</a>.</div>"
+            % (need + " " if need else "", links["curseforge"]))
+
+
+def kills_needed(name, attempts, noun="kills"):
+    """A sentence for cta(): how far a thin mob, item or spot is from solid rates, or "" once it's there."""
+    if attempts >= SOLID:
+        return ""
+    return e("%s has %s %s recorded so far, so the ranges are wide; %d more and its rates are solid."
+             % (name, format(attempts, ","), noun, SOLID - attempts))
 
 
 # -- pages -----------------------------------------------------------------------
@@ -585,7 +597,8 @@ def mob_page(data, npc, links):
                  % ("Its crafting reagents" if data.has_kinds else "Its drops", per_kill(best), LOADING))
     body = ("%s<h1>%s</h1><p class=facts>%s</p><p class=summary>%s</p>%s%s%s%s"
             % (crumbs(farms_trail(data, npc) + [("/mob/%d" % npc, name)]), e(name), " &middot; ".join(facts),
-               e(mob_summary(data, npc)), price_bar(), worth, "".join(sections), cta(links)))
+               e(mob_summary(data, npc)), price_bar(), worth, "".join(sections),
+               cta(links, kills_needed(name, entry["k"]))))
     title = "%s drops and drop rates (WoW Forever)" % name
     best = data.best_drops(npc)[:2]
     if best:
@@ -642,6 +655,18 @@ def fish_source_table(data, item, sources):
             "<th class=num>Gold per catch</th><th class=num>Gold per hour*</th></tr></thead><tbody>%s</tbody></table>"
             "<p class=small>* At %d catches an hour in open water, half that at pools (finding the next one takes "
             "time).</p>" % (rows, CATCHES_PER_HOUR))
+
+
+def item_need(data, item):
+    """cta() sentence for an item whose best source is still thin."""
+    sources, fishing = data.sources.get(item, []), data.fish_sources.get(item, [])
+    if sources:
+        npc, _, _, attempts, per = sources[0]
+        return kills_needed("Its best source, %s," % data.mob_name(npc), attempts,
+                            "kills" if per == "kill" else "pickpockets")
+    map_id, spot, _, _, catches = fishing[0]
+    return kills_needed("Its best spot, %s in %s," % (data.spot_name(map_id, spot).lower(), data.map_names[map_id]),
+                        catches, "catches")
 
 
 def item_page(data, item, links):
@@ -705,7 +730,8 @@ def item_page(data, item, links):
     price = ('<p class=facts>Lowest price: <b data-price="%d">%s</b> <span class=small data-qty="%d"></span></p>'
              % (item, LOADING, item))
     body = ("%s<h1>%s</h1><p class=summary>%s</p>%s%s%s%s"
-            % (crumbs(trail), e(name), e(summary), price_bar(), price, "".join(sections), cta(links)))
+            % (crumbs(trail), e(name), e(summary), price_bar(), price, "".join(sections),
+               cta(links, item_need(data, item))))
     title = ("Where to farm %s (WoW Forever)" if sources else "Where to fish %s (WoW Forever)") % name
     return title, description, body
 
@@ -941,12 +967,82 @@ def rates_page(data, links):
             body)
 
 
+def coverage(data, npcs):
+    """(mobs, kills, mobs with INDEX_MIN+ kills, mobs with SOLID+) for a set of mobs."""
+    kills = [data.mobs[npc]["k"] for npc in npcs]
+    return len(kills), sum(kills), sum(1 for k in kills if k >= INDEX_MIN), sum(1 for k in kills if k >= SOLID)
+
+
+def coverage_row(label, npcs, data):
+    """A row with a bar: the share of mobs with INDEX_MIN+ kills, the solid ones brighter inside it."""
+    mobs, kills, good, solid = coverage(data, npcs)
+    if not mobs:
+        return ("<tr><td>%s</td><td class=num>0</td><td class=num>0</td><td class=num>0</td><td class=num>0</td>"
+                "<td class=small>nobody yet</td></tr>" % label)
+    return ("<tr><td>%s</td><td class=num>%d</td><td class=num>%s</td><td class=num>%d <span class=range>%d%%</span>"
+            "</td><td class=num>%d</td><td class=bar><span class=track><span class=good style=\"width:%d%%\"><span "
+            "class=solid style=\"width:%d%%\"></span></span></span></td></tr>"
+            % (label, mobs, format(kills, ","), good, round(100 * good / mobs), solid, round(100 * good / mobs),
+               round(100 * solid / good) if good else 0))
+
+
+def zone_levels(data, map_id):
+    levels = [level for npc in data.zones[map_id] for level in (data.mobs[npc]["lmin"], data.mobs[npc]["lmax"]) if level]
+    if not levels:
+        return ""
+    return "%d-%d" % (min(levels), max(levels)) if min(levels) != max(levels) else str(min(levels))
+
+
+def data_wanted_page(data, links):
+    """/data-wanted: the level ranges and zones with the least data, and mobs a few kills from solid rates."""
+    head = ("<table><thead><tr><th>%s</th><th class=num>Mobs</th><th class=num>Kills</th><th class=num>%d+ "
+            "kills</th><th class=num>%d+ kills</th><th class=bar-head>Recorded</th></tr></thead><tbody>")
+    by_level = "".join(coverage_row(('<a href="%s">%s</a>' if data.bracket_mobs(bracket) else '%s%s')
+                                    % (bracket_path(bracket) if data.bracket_mobs(bracket) else "",
+                                       bracket_label(bracket)),
+                                    data.bracket_mobs(bracket), data) for bracket in BRACKETS)
+    brackets = [bracket for bracket in BRACKETS if data.bracket_mobs(bracket)]
+    zones = sorted(data.zones, key=lambda map_id: (coverage(data, data.zones[map_id])[1], data.map_names[map_id]))
+    by_zone = "".join(coverage_row('<a href="/zone/%d">%s</a> <span class=small>%s</span>'
+                                   % (map_id, e(data.map_names[map_id]), e(zone_levels(data, map_id))),
+                                   data.zones[map_id], data) for map_id in zones)
+    almost = []
+    for bracket in brackets:
+        npcs = [npc for npc in data.bracket_mobs(bracket) if data.mobs[npc]["k"] < SOLID]
+        npcs.sort(key=lambda npc: (-data.mobs[npc]["k"], npc))
+        if npcs:
+            almost.append("<h3>%s</h3>%s" % (bracket_label(bracket), link_list(
+                "%s <span class=small>%s%s &middot; %d kills, <b>%d to go</b></span>"
+                % (mob_link(data, npc), "level %s" % e(data.levels(npc)) if data.levels(npc) else "",
+                   ", %s" % e(data.zone(npc)) if data.zone(npc) else "", data.mobs[npc]["k"],
+                   SOLID - data.mobs[npc]["k"])
+                for npc in npcs[:ALMOST])))
+    mobs, kills, _, solid = coverage(data, list(data.mobs))
+    trail = [("/", "Home"), ("/farms", "Farms by level"), ("/data-wanted", "Where data is needed")]
+    body = ("%s<h1>Where GoldScout needs data</h1><p class=facts>Every drop rate on this site comes from GoldScout "
+            "players' loot: %s kills of %d mobs so far, %d of them with the %d+ kills that make a rate solid. Here's "
+            "where it's thin. Farming any of these with GoldScout and the companion running fills it in for "
+            "everyone.</p><p class=sub>The bar shows the share of mobs with %d+ kills (rated good); the brighter part "
+            "has %d+ (rated high: solid).</p>"
+            "<h2>By level</h2>%s%s</tbody></table>"
+            "<h2>By zone</h2><p class=sub>Least recorded first. Zones nobody has looted in yet aren't listed.</p>"
+            "%s%s</tbody></table>"
+            "<h2>Almost there</h2><p class=sub>Mobs a few kills from solid rates, the closest first.</p>%s%s"
+            % (crumbs(trail), format(kills, ","), mobs, solid, SOLID, INDEX_MIN, SOLID,
+               head % ("Levels", INDEX_MIN, SOLID), by_level,
+               head % ("Zone", INDEX_MIN, SOLID), by_zone, "".join(almost), cta(links)))
+    return ("Where GoldScout needs drop data (WoW Forever)",
+            "The WoW Forever level ranges, zones and mobs with the least drop data recorded by GoldScout players, "
+            "and how to help fill them in.", body)
+
+
 def build(data, links, write):
     """Calls write(path, title, description, body, index=...) for every data page; returns the URL paths
     search engines should see (the sitemap's), leaving out the thin pages built with index=False."""
-    paths = ["/farms", "/drop-rates"]
+    paths = ["/farms", "/drop-rates", "/data-wanted"]
     write("farms.html", *farms_page(data, links))
     write("drop-rates.html", *rates_page(data, links))
+    write("data-wanted.html", *data_wanted_page(data, links))
 
     def page(path, built, index=True):
         write(path + ".html", *built, index=index)

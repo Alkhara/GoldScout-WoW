@@ -272,6 +272,12 @@ tr:last-child td { border-bottom: none; }
 td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .conf { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px; font-weight: 600; color: #1b1203; }
 .range { font-size: 12px; color: var(--muted); white-space: nowrap; }
+td.bar { width: 120px; }
+td.bar { background: none; }
+td.bar .track { display: block; height: 8px; border-radius: 4px; background: var(--line); }
+td.bar .good { display: block; height: 8px; min-width: 2px; border-radius: 4px; background: rgba(242,194,85,.4); }
+td.bar .solid { display: block; height: 8px; border-radius: 4px; background: var(--gold); }
+th.bar-head { width: 120px; }
 .area-maps { display: flex; flex-wrap: wrap; gap: 0 28px; }
 figure.area-map { margin: 10px 0 22px; width: 100%; max-width: 380px; }
 figure.area-map figcaption { color: var(--muted); font-size: 14px; margin-top: 6px; }
@@ -470,7 +476,7 @@ def layout(title, description, path, body, index=True):
 <main class="page"><div class="table-wrap">%(body)s</div></main>
 </div>
 <footer><div class="wrap">
-  <p><a href="/">Home</a><a href="/farms">Farms by level</a><a href="/fishing">Fishing</a><a href="/drop-rates">How drop rates work</a><a href="/leaderboard">Leaderboard</a><a href="/faq">FAQ</a><a href="%(discord)s">Discord</a><a href="%(source)s">GitHub</a><a href="%(privacy)s">Privacy</a><a href="%(data_license)s">Data license</a></p>
+  <p><a href="/">Home</a><a href="/farms">Farms by level</a><a href="/fishing">Fishing</a><a href="/drop-rates">How drop rates work</a><a href="/leaderboard">Leaderboard</a><a href="/data-wanted">Data wanted</a><a href="/faq">FAQ</a><a href="%(discord)s">Discord</a><a href="%(source)s">GitHub</a><a href="%(privacy)s">Privacy</a><a href="%(data_license)s">Data license</a></p>
   <p>Drop rates come from GoldScout players and are covered by the GoldScout Data License. GoldScout is a fan project, not affiliated with or endorsed by Blizzard Entertainment. World of Warcraft is a trademark of Blizzard Entertainment, Inc.</p>
 </div></footer>
 </body>
@@ -487,6 +493,7 @@ STATIC_SEARCH = [
     ["How drop rates work", "/drop-rates", "Chance, ranges and how the data is checked", TOP],
     ["GoldScout Companion", "/companion", "Free app: hourly auction prices, shares your drops", TOP],
     ["Contributor leaderboard", "/leaderboard", "Who's shared the most drop data", TOP],
+    ["Where data is needed", "/data-wanted", "Level ranges, zones and mobs with the least drop data", TOP],
     ["FAQ", "/faq", "Questions about GoldScout", TOP],
 ]
 
