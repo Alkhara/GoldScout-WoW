@@ -1,4 +1,4 @@
-GoldScout-export 5^s77jubfp5icc^33
+GoldScout-export 5^s77jubfp5icc^34
 36^30^0^11^12^1436^0.4057^0.3632^30^Erntegolem^732:8:8,814:2:2,818:1:1,1274:4:4,1498:2:2,4359:3:3,255007:12:12^
 95^1^0^11^12^1436^0.4677^0.2767^1^Schmugglerin der Defias^^
 114^59^0^14^15^1436^0.4602^0.3473^59^Erntebehüter^732:8:8,814:5:5,1274:16:16,2215:1:1,2971:1:1,4359:2:2,15268:1:1,248684:1:1,255007:25:25^
@@ -11,8 +11,10 @@ GoldScout-export 5^s77jubfp5icc^33
 480^64^0^9^10^1436^0.5629^0.2163^64^Rostiger Erntegolem^732:5:5,814:5:5,1274:18:18,4359:2:2,255007:22:22,255154:8:8^
 481^1^0^10^10^1436^0.5679^0.1967^1^Schleicherin der Defias^^
 500^1^0^12^13^1436^0.4083^0.2202^1^Späher der Flusspfoten^1179:1:1,2589:1:1^
+587^1^0^33^34^1434^0.3405^0.1682^1^Krieger der Bloodscalp^3901:1:1,4306:1:1^
 589^1^0^14^14^1436^0.3149^0.4393^1^Plünderer der Defias^^
 590^1^0^14^14^1436^0.3166^0.4469^1^Ausplünderer der Defias^^
+686^2^0^36^36^1434^0.3230^0.2107^2^Schmetterschwanz^3685:1:1,4586:1:1,9848:1:1,12184:2:2^
 832^3^0^18^19^1436^0.3672^0.3089^3^Staubteufel^^
 833^106^0^11^12^1436^0.3919^0.2995^106^Kojotenrudelanführer^818:1:1,2673:46:46,3299:30:30,3300:8:8,4562:2:2,5071:1:1,5635:1:1,6515:1:1,9751:1:1,211780:1:1^
 834^183^0^10^11^1436^0.4499^0.2650^183^Kojote^774:1:1,2406:1:1,2673:87:87,3299:31:31,3300:13:13,3651:1:1,4569:1:1,5635:3:3,8180:1:1,9761:1:1^
@@ -351,6 +353,7 @@ GoldScout-export 5^s77jubfp5icc^33
 @i^3811^Doppelt genähter Umhang
 @i^3812^Doppelpanzerhandschuhe
 @i^3816^Reflektierender Langschild
+@i^3901^Hauer der Bloodscalp
 @i^3931^Vergifteter Spinnenfangzahn
 @i^4093^Großer Basiliskenschwanz
 @i^4297^Muster: Barbarische Handschuhe
@@ -438,6 +441,7 @@ GoldScout-export 5^s77jubfp5icc^33
 @i^9763^Kadettengamaschen des Tigers
 @i^9793^Efeustoffarmreifen des Zauberers
 @i^9825^Haltbare Hose des Heilers
+@i^9848^Herbeizauberer-Handschuhe des Propheten
 @i^10287^Grünzwirnmantel des Adlers
 @i^11384^Zerbrochene Basiliskenzähne
 @i^11385^Basiliskenschuppe
@@ -643,6 +647,7 @@ GoldScout-export 5^s77jubfp5icc^33
 @q^3811^0:4:0
 @q^3812^0:4:0
 @q^3816^0:4:0
+@q^3901^1:12:0
 @q^3931^0:15:0
 @q^4093^0:15:0
 @q^4297^2:9:0
@@ -730,6 +735,7 @@ GoldScout-export 5^s77jubfp5icc^33
 @q^9763^2:4:0
 @q^9793^2:4:0
 @q^9825^2:4:0
+@q^9848^2:4:0
 @q^10287^2:4:0
 @q^11384^0:15:0
 @q^11385^0:15:0
@@ -817,6 +823,7 @@ GoldScout-export 5^s77jubfp5icc^33
 @m^1420^Tirisfal
 @m^1421^Silberwald
 @m^1424^Vorgebirge von Hillsbrad
+@m^1434^Schlingendorntal
 @m^1436^Westfall
 @m^1440^Ashenvale
 @m^1441^Tausend Nadeln
@@ -1552,8 +1559,10 @@ GoldScout-export 5^s77jubfp5icc^33
 @a^480^71:21,90:10,91:21,110:11,111:1
 @a^481^71:1
 @a^500^88:1
+@a^587^66:1
 @a^589^166:1
 @a^590^166:1
+@a^686^86:2
 @a^832^87:1,147:2
 @a^833^68:4,69:6,87:2,88:4,89:7,107:10,108:22,110:1,111:2,126:9,127:2,129:1,146:15,147:12,151:1,166:7,171:1
 @a^834^51:2,68:2,69:4,70:11,71:14,87:10,88:7,89:6,90:5,91:2,92:2,107:24,108:28,109:11,110:5,111:4,112:4,126:2,128:8,129:4,130:1,131:1,132:1,146:11,147:4,148:3,150:1,166:5,190:1
