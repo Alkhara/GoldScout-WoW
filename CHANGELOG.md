@@ -7,6 +7,8 @@ releases add their own line automatically.
 
 ## Unreleased
 
+## v0.12.12
+
 - **Data wanted:** a new **Data wanted** button on the Farm tab (or `/gscout wanted`) lists the mobs near your
   level that still need kills before their drop rates are solid, counting every player's kills and yours, the
   ones in your zone first. Select one and press **Hunt** for a waypoint and a kill count; share your loot with
@@ -19,6 +21,7 @@ releases add their own line automatically.
 - **GoldScout Companion shares big exports again:** a long-time player's drop data could pass 60 KB, and the
   companion then stopped sharing it ("The export is larger than 60000 bytes"). It now shares exports up to
   250 KB. The share form on GitHub still takes up to 60 KB, so for more than that use the companion.
+- Updated drop data from the community.
 
 ## v0.12.10
 
