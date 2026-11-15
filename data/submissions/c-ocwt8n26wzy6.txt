@@ -1,4 +1,4 @@
-GoldScout-export 5^ocwt8n26wzy6^5
+GoldScout-export 5^ocwt8n26wzy6^6
 3664^1^0^24^24^1440^0.2527^0.6072^1^Ilkrud Magthrull^5533:1:1^
 3809^1^0^21^22^1440^0.3793^0.5974^1^Ashenvale Bear^2940:1:1,3730:1:1^
 3834^1^0^28^28^1440^0.6199^0.4471^1^Crazed Ancient^5475:1:1^
@@ -9,10 +9,15 @@ GoldScout-export 5^ocwt8n26wzy6^5
 3924^4^0^23^24^1440^0.3113^0.4322^4^Thistlefur Shaman^4306:1:1^
 3925^4^0^23^24^1440^0.3134^0.4486^4^Thistlefur Avenger^1746:1:1,2592:1:1,3012:1:1^
 3987^1^0^25^25^1440^0.3644^0.3368^1^Dal Bloodclaw^5544:1:1^
+3988^3^0^19^20^1442^0.6272^0.5358^3^Venture Co. Operator^1179:1:1,2592:1:2,5734:1:1^
+3989^1^0^18^19^1442^0.6145^0.5520^1^Venture Co. Logger^^
 4007^1^0^18^18^1442^0.5117^0.4208^1^Deepmoss Venomspitter^3931:1:1^
 4012^18^0^21^22^1442^0.5421^0.4303^18^Pridewing Wyvern^5135:3:3,5136:5:5,5808:9:9,277917:4:4^
 4014^9^0^22^23^1442^0.5439^0.4311^9^Pridewing Consort^5136:5:5,5808:3:3,277917:2:2^
+4022^1^0^23^23^1442^0.3714^0.4708^1^Bloodfury Harpy^2592:1:1^
+4027^1^0^27^27^1442^0.3057^0.6931^1^Bloodfury Storm Witch^2592:1:2^
 252762^2^0^10^11^2521^0.5945^0.5085^2^Al'Aketh Guardian^2589:1:1,2773:1:1,252022:1:2^
+@i^1179^Ice Cold Milk
 @i^1746^Linked Chain Belt
 @i^2220^Box Shield
 @i^2589^Linen Cloth
@@ -32,12 +37,14 @@ GoldScout-export 5^ocwt8n26wzy6^5
 @i^5475^Wooden Key
 @i^5533^Ilkrud Magthrull's Tome
 @i^5544^Dal Bloodclaw's Skull
+@i^5734^Super Reaper 6000 Blueprints
 @i^5808^Pridewing Venom Sac
 @i^9451^Bubbling Water
 @i^9772^Greenweave Leggings of Magic
 @i^12220^Intact Elemental Bracer
 @i^252022^Galestrider Jerky
 @i^277917^Stonetalon Supply Bundle
+@q^1179^1:0:0
 @q^1746^0:4:0
 @q^2220^0:4:0
 @q^2589^1:7:1
@@ -57,6 +64,7 @@ GoldScout-export 5^ocwt8n26wzy6^5
 @q^5475^1:13:0
 @q^5533^1:12:0
 @q^5544^1:12:0
+@q^5734^1:12:0
 @q^5808^1:12:0
 @q^9451^1:0:0
 @q^9772^2:4:0
@@ -628,8 +636,12 @@ GoldScout-export 5^ocwt8n26wzy6^5
 @a^3924^166:4
 @a^3925^166:2,186:2
 @a^3987^127:1
+@a^3988^212:3
+@a^3989^232:1
 @a^4007^170:1
 @a^4012^170:12,171:6
 @a^4014^170:2,171:6,190:1
+@a^4022^187:1
+@a^4027^266:1
 @a^252762^211:2
 @l^0^enUS
