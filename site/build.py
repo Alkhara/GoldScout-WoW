@@ -679,6 +679,9 @@ def main():
         "  Content-Security-Policy: default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; "
         "script-src 'self' %s; connect-src 'self' %s %s; "
         "base-uri 'none'; form-action 'none'; frame-ancestors 'none'\n"
+        # Zone maps only change when tools/zone_maps.py is rerun, so browsers keep them a week
+        # instead of asking again on every page.
+        "/maps/*\n  Cache-Control: public, max-age=604800\n"
         % (ANALYTICS_SCRIPT, API_URL, ANALYTICS_REPORT), encoding="utf-8")
     print("Built %s: %d contributors, %d mobs, %d kills, %d pages." % (
         DIST, s["contributors"], s["mobs"], s["kills"], len(paths)))
