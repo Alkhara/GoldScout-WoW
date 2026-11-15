@@ -341,6 +341,68 @@ class FishingPagesTests(unittest.TestCase):
             self.assertIn(path.lstrip("/") + ".html", self.pages)
 
 
+AREAS = V4.replace("export 4^", "export 5^") + "@a^3809^210:12,211:6,250:1\n@a^4054^100:4\n"
+FISH_AREAS = """GoldScout-export 5^mnopqrstuvwx^1
+@f^1444^0^40^226^6359:12:12^205:30,206:2
+@i^6359^Firefin Snapper
+@q^6359^1:7:1
+@m^1444^Feralas
+"""
+
+
+class AreaMapTests(unittest.TestCase):
+    """Where on the zone map: a grid with the game's coordinates, drawn from players' area squares."""
+
+    def setUp(self):
+        mobs, fish = submission.parse(AREAS), submission.parse(FISH_AREAS)
+        assert mobs.ok and fish.ok, (mobs.errors, fish.errors)
+        self.data = data_pages.Dataset([mobs, fish], merge_data.merge([mobs.mobs], 1000),
+                                       merge_data.merge_fish([fish.fishing], 1000))
+
+    def test_square_coordinates_match_the_game_map(self):
+        self.assertEqual(data_pages.square_coords(0), "2.5, 2.5")
+        self.assertEqual(data_pages.square_coords(210), "52.5, 52.5")   # row 10, column 10
+        self.assertEqual(data_pages.square_coords(399), "97.5, 97.5")
+
+    def test_quiet_squares_are_left_out_as_in_the_addon(self):
+        self.assertEqual(data_pages.area_squares({210: 12, 211: 6, 250: 1}), {210: 1.0, 211: 0.5})
+
+    def test_mob_page_draws_where_it_was_looted(self):
+        _, _, body = data_pages.mob_page(self.data, 3809, LINKS)
+        self.assertIn("<h2>Where to find it</h2>", body)
+        self.assertIn("around <b>52.5, 52.5</b>", body)
+        self.assertIn('aria-label="Map grid of Ashenvale: where players looted Ashenvale Bear"', body)
+        self.assertEqual(body.count('class="h"'), 2)              # 250 is under a tenth of the busiest
+        self.assertIn('class="g"', body)                          # the other mob's square: the zone's outline
+        self.assertIn("<title>Around 52.5, 52.5: looted 12 here</title>", body)
+
+    def test_too_few_loots_draw_no_map(self):
+        _, _, body = data_pages.mob_page(self.data, 4054, LINKS)   # 4 loots placed
+        self.assertNotIn("<svg", body)
+        self.assertNotIn("Where to find it", body)
+        self.assertEqual(data_pages.mob_page(dataset(), 3809, LINKS)[2].count("<svg"), 0)   # a version 4 export
+
+    def test_item_page_weighs_squares_by_drop_chance(self):
+        (map_id, cells, loots), = self.data.item_areas(3730)       # Big Bear Meat: two Ashenvale mobs
+        self.assertEqual((map_id, loots), (1440, 23))
+        self.assertAlmostEqual(cells[210], 12 * 0.4)
+        self.assertAlmostEqual(cells[100], 4 * 0.2)
+        _, _, body = data_pages.item_page(self.data, 3730, LINKS)
+        self.assertIn("<h2>Where on the map</h2>", body)
+        self.assertIn('<figcaption class="zone">Ashenvale</figcaption>', body)
+        self.assertIn("Most around <b>52.5, 52.5</b>", body)
+
+    def test_fishing_spots_are_drawn_too(self):
+        _, _, body = data_pages.item_page(self.data, 6359, LINKS)
+        self.assertIn('<figcaption class="zone">Feralas</figcaption>', body)
+        self.assertIn("Most around <b>27.5, 52.5</b>", body)
+
+    def test_names_in_the_map_are_escaped(self):
+        self.data.mobs[4054]["areas"][1440][100] = 20
+        _, _, body = data_pages.mob_page(self.data, 4054, LINKS)
+        self.assertIn("looted Laughing Sister &amp; Co&#x27;s", body)
+
+
 class FaqTests(unittest.TestCase):
     def test_every_question_is_on_the_page_and_in_the_structured_data(self):
         import build

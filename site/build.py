@@ -272,6 +272,16 @@ tr:last-child td { border-bottom: none; }
 td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .conf { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px; font-weight: 600; color: #1b1203; }
 .range { font-size: 12px; color: var(--muted); white-space: nowrap; }
+.area-maps { display: flex; flex-wrap: wrap; gap: 0 28px; }
+figure.area-map { margin: 10px 0 22px; width: 100%; max-width: 380px; }
+figure.area-map figcaption { color: var(--muted); font-size: 14px; margin-top: 6px; }
+figure.area-map figcaption.zone { color: var(--text); font-weight: 600; margin: 0 0 4px; }
+svg.area { display: block; width: 100%; height: auto; }
+svg.area .bg { fill: var(--bg2); stroke: var(--line); stroke-width: 1; }
+svg.area .g { fill: var(--line); fill-opacity: .6; }
+svg.area .l { stroke: var(--line); stroke-width: .6; }
+svg.area .h { fill: var(--gold); stroke: var(--bg2); stroke-width: .6; }
+svg.area text { fill: var(--muted); font-size: 9px; font-family: inherit; }
 .conf.low { background: #ff8040; } .conf.fair { background: #ffd100; } .conf.good { background: #9be35a; } .conf.high { background: #40d040; }
 .summary { font-size: 18px; max-width: 46em; margin: 10px 0 6px; }
 ul.related { columns: 2; padding-left: 20px; margin: 0; } ul.related li { margin: 4px 0; break-inside: avoid; }

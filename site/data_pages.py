@@ -58,6 +58,10 @@ KILLS_PER_HOUR = addon_pace("killsPerHour")
 PICKS_PER_HOUR = addon_pace("picksPerHour")
 CATCHES_PER_HOUR = addon_pace("catchesPerHour")
 POOL_SHARE = addon_number("Engine.lua", "POOL_FISHING_SHARE")   # a pool takes finding: this share of your time fishes
+AREA_GRID = int(addon_number("Learn.lua", "AREA_GRID"))   # where loot happened: squares of a grid over the zone map
+AREA_MIN_SHARE = addon_number("Engine.lua", "AREA_MIN_SHARE")   # as the addon's hunt map: quieter squares are noise
+AREA_MIN_LOOTS = 5               # loots placed on a map before the page draws it
+AREA_ZONES = 3                   # maps on an item page
 
 
 def wilson(hits, trials, z=1.96):
@@ -156,6 +160,13 @@ class Dataset:
             sources.sort(key=lambda source: (source[4] < INDEX_MIN, -self.cautious(
                 (None, source[2], source[3], source[4], None)), source[0], source[1]))
         self.items = sorted(set(self.sources) | set(self.fish_sources))
+        # Every square anyone has looted or fished in, per map: a rough outline of each zone for the page maps.
+        self.ground = defaultdict(set)
+        for entry in self.mobs.values():
+            for map_id, cells in entry.get("areas", {}).items():
+                self.ground[map_id].update(cell for cell, n in cells.items() if n > 0)
+        for (map_id, _), entry in self.fish.items():
+            self.ground[map_id].update(cell for cell, n in entry.get("a", {}).items() if n > 0)
         for npcs in self.zones.values():
             npcs.sort(key=lambda npc: (self.mid_level(npc), self.mob_name(npc)))
 
@@ -245,6 +256,30 @@ class Dataset:
             return "Open water"
         pools = [other for other in self.fish_zones[map_id] if other != 0]
         return "Fishing pool" if len(pools) == 1 else "Fishing pool %d" % (pools.index(spot) + 1)
+
+    def mob_area(self, npc):
+        """{square: loots} where players looted a mob, on the map it's seen on most."""
+        map_id = self.zone_id(npc)
+        if map_id is None:
+            return {}
+        return {cell: n for cell, n in self.mobs[npc].get("areas", {}).get(map_id, {}).items() if n > 0}
+
+    def item_areas(self, item):
+        """[(map, {square: items}, loots)], most items first: where an item turns up. Each square counts
+        the loots there times the chance and stack, so a mob that drops it more weighs more."""
+        maps = defaultdict(lambda: defaultdict(float))
+        loots = defaultdict(float)
+        placed = [(self.mobs[npc].get("areas", {}), rate * stack) for npc, rate, stack, _, _ in self.sources.get(item, ())]
+        placed += [({map_id: self.fish[(map_id, spot)].get("a", {})}, rate * stack)
+                   for map_id, spot, rate, stack, _ in self.fish_sources.get(item, ())]
+        for areas, per in placed:
+            for map_id, cells in areas.items():
+                for cell, n in cells.items():
+                    maps[map_id][cell] += n * per
+                    loots[map_id] += n
+        found = [(map_id, dict(cells), loots[map_id]) for map_id, cells in maps.items()
+                 if map_id in self.map_names and loots[map_id] >= AREA_MIN_LOOTS and any(cells.values())]
+        return sorted(found, key=lambda area: (-sum(area[1].values()), area[0]))
 
     def bracket_mobs(self, bracket):
         npcs = [npc for npc in self.mobs if self.bracket(npc) == bracket]
@@ -392,6 +427,88 @@ def fish_pace(spot):
     return CATCHES_PER_HOUR * (POOL_SHARE if spot else 1)
 
 
+def area_squares(cells):
+    """{square: strength 0-1} to draw: as the addon's hunt map, squares under AREA_MIN_SHARE of the busiest
+    are left out (a stray loot or two isn't where to go)."""
+    most = max(cells.values(), default=0)
+    return {cell: n / most for cell, n in cells.items() if most and n >= most * AREA_MIN_SHARE}
+
+
+def square_coords(cell):
+    """The middle of a square in the game's map coordinates (0-100), e.g. "32.5, 47.5"."""
+    row, column = divmod(cell, AREA_GRID)
+    size = 100 / AREA_GRID
+    return "%g, %g" % ((column + 0.5) * size, (row + 0.5) * size)
+
+
+AREA_SIZE = 10   # SVG units per square
+
+
+def area_svg(data, map_id, cells, label, tip):
+    """A zone as a grid with the game's map coordinates: faint squares wherever GoldScout players have looted
+    or fished there (all we know of the zone's shape: the game's map art isn't ours), bright ones in `cells`.
+    tip(cell) is each bright square's tooltip."""
+    shown = area_squares(cells)
+    side = AREA_SIZE * AREA_GRID
+
+    def square(cell, extra=""):
+        row, column = divmod(cell, AREA_GRID)
+        return '<rect x="%d" y="%d" width="%d" height="%d"%s' % (
+            column * AREA_SIZE, row * AREA_SIZE, AREA_SIZE, AREA_SIZE, extra)
+
+    parts = ['<rect class="bg" x="0" y="0" width="%d" height="%d"/>' % (side, side)]
+    parts += [square(cell, ' class="g"/>') for cell in sorted(data.ground.get(map_id, ())) if cell not in shown]
+    for step in range(0, 5):
+        at = side * step // 4
+        coordinate = 25 * step
+        if 0 < step < 4:
+            parts.append('<line class="l" x1="%d" y1="0" x2="%d" y2="%d"/>' % (at, at, side))
+            parts.append('<line class="l" x1="0" y1="%d" x2="%d" y2="%d"/>' % (at, side, at))
+        parts.append('<text x="%d" y="%d" text-anchor="middle">%d</text>' % (at, side + 13, coordinate))
+        parts.append('<text x="-5" y="%d" text-anchor="end" dominant-baseline="middle">%d</text>' % (at, coordinate))
+    parts += [square(cell, ' class="h" fill-opacity="%.2f"><title>%s</title></rect>'
+                     % (0.3 + 0.7 * strength, e(tip(cell))))
+              for cell, strength in sorted(shown.items())]
+    return ('<svg class="area" viewBox="-24 -6 230 226" role="img" aria-label="%s">%s</svg>'
+            % (e(label), "".join(parts)))
+
+
+def busiest(cells):
+    return max(sorted(cells), key=lambda cell: cells[cell])
+
+
+def mob_area_section(data, npc):
+    """Where players looted a mob, on its zone's grid, or "" until enough loots are placed."""
+    cells = data.mob_area(npc)
+    if sum(cells.values()) < AREA_MIN_LOOTS:
+        return ""
+    name, zone = data.mob_name(npc), data.map_names[data.zone_id(npc)]
+    svg = area_svg(data, data.zone_id(npc), cells, "Map grid of %s: where players looted %s" % (zone, name),
+                   lambda cell: "Around %s: looted %s here" % (square_coords(cell), format(int(cells[cell] + 0.5), ",")))
+    return ('<h2>Where to find it</h2><figure class="area-map">%s<figcaption>Brightest where players loot %s most: '
+            'around <b>%s</b> in %s. Faint squares are where players have looted anything else in the zone. '
+            'Coordinates match the in-game map.</figcaption></figure>'
+            % (svg, e(name), square_coords(busiest(cells)), zone_link(data, npc)))
+
+
+def item_area_section(data, item):
+    """Where an item turns up, one grid per zone (up to AREA_ZONES), or ""."""
+    areas = data.item_areas(item)[:AREA_ZONES]
+    if not areas:
+        return ""
+    name = data.item_name(item)
+    figures = []
+    for map_id, cells, _ in areas:
+        zone = data.map_names[map_id]
+        svg = area_svg(data, map_id, cells, "Map grid of %s: where players found %s" % (zone, name),
+                       lambda cell: "Around %s" % square_coords(cell))
+        figures.append('<figure class="area-map"><figcaption class="zone">%s</figcaption>%s<figcaption>Most around '
+                       '<b>%s</b>.</figcaption></figure>' % (e(zone), svg, square_coords(busiest(cells))))
+    return ('<h2>Where on the map</h2><p class=sub>Brightest where the most %s turned up: squares where players '
+            'looted or fished more of it. Faint squares are where they looted anything else. Coordinates match '
+            'the in-game map.</p><div class="area-maps">%s</div>' % (e(name), "".join(figures)))
+
+
 def thin(attempts):
     """Marks a ranked table row with too few kills (or catches) to trust: prices.js sorts those last."""
     return " data-thin" if attempts < INDEX_MIN else ""
@@ -447,6 +564,7 @@ def mob_page(data, npc, links):
         sections.append(legend())
     else:
         sections.append("<p class=sub>No drops recorded yet.</p>")
+    sections.append(mob_area_section(data, npc))
     zone_id = data.zone_id(npc)
     if zone_id is not None:
         siblings = [other for other in data.zones[zone_id] if other != npc][:RELATED]
@@ -570,6 +688,7 @@ def item_page(data, item, links):
     if fishing:
         sections.append("<h2>Fishing</h2>" + fish_source_table(data, item, fishing))
     sections.append(legend())
+    sections.append(item_area_section(data, item))
     related, seen = [], {item}
     nearby = [row for npc, _, _, _, _ in sources for row in data.drops(npc)]
     nearby += [row for map_id, spot, _, _, _ in fishing for row in data.catches(map_id, spot)]
