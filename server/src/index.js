@@ -24,7 +24,7 @@
 //                      sends each new snapshot (metadata in X- headers).
 //   PUT  /v1/admin/realms/<region>   admin only; {"realm": ruleset id}, the
 //                      whole map for that region (listed by GET /v1/prices).
-//   GET  /v1/leaderboard, GET and PUT /v1/leaderboard/me, PUT /v1/admin/leaderboard
+//   GET  /v1/leaderboard, GET /v1/leaderboard/zones, GET and PUT /v1/leaderboard/me, PUT /v1/admin/leaderboard
 //                      the contributor leaderboard (src/leaderboard.js).
 //   GET  /health
 //

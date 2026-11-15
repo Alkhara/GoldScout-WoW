@@ -132,6 +132,15 @@ CREATE TABLE IF NOT EXISTS leaderboard_scores (
   updated_at INTEGER NOT NULL
 );
 CREATE INDEX IF NOT EXISTS leaderboard_kills ON leaderboard_scores (kills);
+-- Zone champions: each zone's top contributors by their kills there (a mob
+-- counts in the zone where players see it most), sent with the scores by
+-- tools/leaderboard.py and replaced with them. map_id is the uiMapID.
+CREATE TABLE IF NOT EXISTS leaderboard_zones (
+  map_id INTEGER NOT NULL,
+  install_id TEXT NOT NULL,
+  kills INTEGER NOT NULL,
+  PRIMARY KEY (map_id, install_id)
+);
 -- Installs whose players chose to appear on the public board, from GoldScout
 -- Companion: a made-up alias, and optionally a name of their own, shown only
 -- once approved on the admin dashboard. No row: shown as anonymous.

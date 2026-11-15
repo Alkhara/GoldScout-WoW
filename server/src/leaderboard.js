@@ -10,11 +10,14 @@
 // the admin dashboard. Install IDs never leave this file.
 //
 //   GET  /v1/leaderboard          public: the top 100, contributor count, total kills.
+//   GET  /v1/leaderboard/zones    public: each zone's top 3 by kills there ("zone champions").
 //   GET  /v1/leaderboard/me       the install's rank and leaderboard settings.
 //   PUT  /v1/leaderboard/me       {"public": bool, "name": "..." | null}.
 //                                 Both "me" routes need X-GoldScout-Install
 //                                 and Authorization: Bearer <upload token>.
-//   PUT  /v1/admin/leaderboard    admin only; {"generated", "scores": {install: [kills, mobs]}}.
+//   PUT  /v1/admin/leaderboard    admin only; {"generated", "scores": {install: [kills, mobs]},
+//                                 "zones": {uiMapID: [[install, kills], ...]}} (zones optional, each
+//                                 zone's best first, up to ZONE_SENT of them).
 // Name review (approve or reject) is on the admin dashboard (src/admin.js).
 
 const TOP = 100;
@@ -22,6 +25,10 @@ const INSTALL_ID = /^[a-z0-9]{12}$/;
 const MAX_SCORES = 20000;
 const SCORES_MAX_BYTES = 1000000;
 const ROWS_PER_INSERT = 33;   // 3 values a row; D1 takes at most 100 bound values per statement
+const ZONE_TOP = 3;           // champions shown per zone
+const ZONE_SENT = 10;         // contributors per zone the scores may carry
+const MAX_ZONES = 1000;
+const MAP_ID = /^[1-9][0-9]{0,6}$/;
 // 3 to 20 letters, digits, spaces and . _ ' -, starting and ending with a letter or digit.
 const NAME = /^[\p{L}\p{N}](?:[\p{L}\p{N} ._'-]{1,18})[\p{L}\p{N}]$/u;
 
@@ -61,6 +68,9 @@ export async function handleLeaderboard(request, env, url, h) {
   const path = url.pathname;
   if (path === "/v1/leaderboard" && request.method === "GET") {
     return await board(env, h);
+  }
+  if (path === "/v1/leaderboard/zones" && request.method === "GET") {
+    return await zones(env, h);
   }
   if (path === "/v1/leaderboard/me" && (request.method === "GET" || request.method === "PUT")) {
     const installId = await authorized(request, env, h);
@@ -119,6 +129,26 @@ async function board(env, h) {
   const rows = top.results.map((row) => ({ rank: row.rank, name: shownName(row), kills: row.kills, mobs: row.mobs }));
   const { contributors, kills, updated } = totals.results[0];
   return h.publicJson(JSON.stringify({ contributors, kills, updated, top: rows }));
+}
+
+// Each zone's top ZONE_TOP contributors: rank, name (null unless they chose to
+// be shown) and kills there. Install IDs stay here.
+async function zones(env, h) {
+  const { results } = await env.DB.prepare(
+    "SELECT z.map_id, z.kills, n.alias, n.name, n.approved FROM leaderboard_zones z " +
+    "LEFT JOIN leaderboard_names n USING (install_id) ORDER BY z.map_id, z.kills DESC, z.install_id",
+  ).all();
+  const byZone = {};
+  for (const row of results) {
+    const list = byZone[row.map_id] || (byZone[row.map_id] = []);
+    if (list.length < ZONE_TOP) {
+      const previous = list[list.length - 1];
+      const rank = previous && previous.kills === row.kills ? previous.rank : list.length + 1;   // ties share
+      list.push({ rank, name: shownName(row), kills: row.kills });
+    }
+  }
+  const updated = (await env.DB.prepare("SELECT MAX(updated_at) AS updated FROM leaderboard_scores").first()).updated;
+  return h.publicJson(JSON.stringify({ updated, zones: byZone }));
 }
 
 async function mine(env, installId) {
@@ -203,7 +233,12 @@ async function storeScores(request, env, h) {
   if (!entries || entries.length > MAX_SCORES || !Number.isInteger(body.generated) || !entries.every(valid)) {
     return h.json({ error: "Expected {\"generated\": unix seconds, \"scores\": {install: [kills, mobs]}}." }, 400);
   }
-  const statements = [env.DB.prepare("DELETE FROM leaderboard_scores")];
+  const zoneRows = zoneEntries(body.zones);
+  if (!zoneRows) {
+    return h.json({ error: "Expected \"zones\": {uiMapID: [[install, kills], ...]}, at most " + ZONE_SENT +
+      " a zone." }, 400);
+  }
+  const statements = [env.DB.prepare("DELETE FROM leaderboard_scores"), env.DB.prepare("DELETE FROM leaderboard_zones")];
   for (let start = 0; start < entries.length; start += ROWS_PER_INSERT) {
     const chunk = entries.slice(start, start + ROWS_PER_INSERT);
     statements.push(env.DB.prepare(
@@ -211,8 +246,40 @@ async function storeScores(request, env, h) {
       chunk.map(() => "(?, ?, ?, " + body.generated + ")").join(", "),
     ).bind(...chunk.flatMap(([id, [kills, mobs]]) => [id, kills, mobs])));
   }
+  for (let start = 0; start < zoneRows.length; start += ROWS_PER_INSERT) {
+    const chunk = zoneRows.slice(start, start + ROWS_PER_INSERT);
+    statements.push(env.DB.prepare(
+      "INSERT INTO leaderboard_zones (map_id, install_id, kills) VALUES " + chunk.map(() => "(?, ?, ?)").join(", "),
+    ).bind(...chunk.flat()));
+  }
   await env.DB.batch(statements);
-  return h.json({ status: "stored", scores: entries.length });
+  return h.json({ status: "stored", scores: entries.length, zones: Object.keys(body.zones || {}).length });
+}
+
+// body.zones as [map, install, kills] rows; [] when it's missing; null if it's malformed.
+function zoneEntries(value) {
+  if (value === undefined) {
+    return [];
+  }
+  if (!value || typeof value !== "object" || Array.isArray(value) || Object.keys(value).length > MAX_ZONES) {
+    return null;
+  }
+  const rows = [];
+  for (const [map, list] of Object.entries(value)) {
+    if (!MAP_ID.test(map) || !Array.isArray(list) || list.length > ZONE_SENT) {
+      return null;
+    }
+    const seen = new Set();
+    for (const pair of list) {
+      if (!Array.isArray(pair) || pair.length !== 2 || !INSTALL_ID.test(pair[0]) || seen.has(pair[0]) ||
+          !Number.isInteger(pair[1]) || pair[1] <= 0 || pair[1] >= 1e9) {
+        return null;
+      }
+      seen.add(pair[0]);
+      rows.push([Number(map), pair[0], pair[1]]);
+    }
+  }
+  return rows;
 }
 
 // The admin dashboard's list of names waiting for review.

@@ -356,7 +356,7 @@ class ServerTests(unittest.TestCase):
         token = register(first)[1]["token"]
         register(second)
         self.assertEqual(self.put_scores({first: [500, 10], second: [900, 20], unclaimed: [500, 4]}),
-                         (200, {"status": "stored", "scores": 3}))
+                         (200, {"status": "stored", "scores": 3, "zones": 0}))
         rows, board = self.board()
         self.assertEqual(rows, [(1, None, 900), (2, None, 500), (2, None, 500)])   # ties share a rank
         self.assertEqual((board["contributors"], board["kills"]), (3, 1900))
@@ -403,6 +403,44 @@ class ServerTests(unittest.TestCase):
         status, mine = self.me(first, token, {"public": False})
         self.assertEqual((mine["public"], mine["alias"], mine["name"]), (False, None, None))
         self.assertNotIn("Gold Digger", json.dumps(self.board()[1]))
+
+    def test_zone_champions_name_only_who_asked(self):
+        first, second, third, fourth = new_install(), new_install(), new_install(), new_install()
+        token = register(first)[1]["token"]
+        zone = str(random.randint(900000, 999999))   # a zone no other test uses
+        zones = {zone: [[second, 300], [first, 200], [third, 200], [fourth, 50]]}
+        body = json.dumps({"generated": int(time.time()), "zones": zones,
+                           "scores": {first: [200, 3], second: [300, 4], third: [200, 2], fourth: [50, 1]}})
+        status, reply = raw("/v1/admin/leaderboard", body,
+                            {"Authorization": "Bearer " + ADMIN, "Content-Type": "application/json"}, "PUT")
+        self.assertEqual((status, reply["zones"]), (200, 1))
+        self.me(first, token, {"public": True, "name": None})
+
+        status, champions = raw("/v1/leaderboard/zones")
+        self.assertEqual(status, 200)
+        rows = champions["zones"][zone]
+        alias = self.me(first, token)[1]["alias"]
+        # The top 3, ties sharing a rank; only the one who opted in is named.
+        self.assertEqual(sorted((r["rank"], r["name"] or "", r["kills"]) for r in rows),
+                         [(1, "", 300), (2, "", 200), (2, alias, 200)])
+        text = json.dumps(champions)
+        for install in (first, second, third, fourth):
+            self.assertNotIn(install, text)
+
+        # A new upload replaces every zone.
+        self.assertEqual(self.put_scores({first: [1, 1]})[0], 200)
+        self.assertNotIn(zone, raw("/v1/leaderboard/zones")[1]["zones"])
+
+    def test_zone_champions_need_valid_input(self):
+        install = new_install()
+        for bad in ({"0": [[install, 1]]}, {"x": [[install, 1]]}, {"1440": [[install, 0]]},
+                    {"1440": [["NOT-AN-ID", 1]]}, {"1440": [[install, 1], [install, 2]]},
+                    {"1440": [[new_install(), 1] for _ in range(11)]}, {"1440": {install: 1}}, [1440]):
+            with self.subTest(bad):
+                body = json.dumps({"generated": int(time.time()), "scores": {install: [1, 1]}, "zones": bad})
+                self.assertEqual(raw("/v1/admin/leaderboard", body, {"Authorization": "Bearer " + ADMIN,
+                                                                      "Content-Type": "application/json"}, "PUT")[0],
+                                 400)
 
     def test_leaderboard_scores_need_admin_and_valid_input(self):
         self.assertEqual(self.put_scores({new_install(): [1, 1]}, admin="wrong")[0], 401)
