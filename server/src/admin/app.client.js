@@ -358,8 +358,9 @@
         ["Started by", function (w) { return Object.keys(w.by_event_24h || {}).map(function (k) {
           return k + " " + w.by_event_24h[k]; }).join(", ") || "-"; }]], flows)]),
         card("Data pull request", null, [pr ? el("p", {}, [el("a", { href: pr.url, text: "#" + pr.number }),
-          " is open, updated " + ago(now - pr.updated) + ". It merges itself when nothing is held or rejected " +
-          "and the website build passes."]) : el("p", { cls: "muted", text: "No data pull request is open." })]),
+          " is open, updated " + ago(now - pr.updated) + (pr.held ? ", " + num(pr.held) + " held for review" : "") +
+          (pr.rejected ? ", " + num(pr.rejected) + " rejected" : "") + ". It merges itself when nothing is held " +
+          "or rejected and the website build passes."]): el("p", { cls: "muted", text: "No data pull request is open." })]),
       ]),
     ]);
   }
@@ -394,6 +395,18 @@
         checks.push(["critical", w.name + ": last run " + (last.conclusion || "failed"), last.url || null]);
       }
     });
+    // The community data pull request: red when it needs a person (server/src/alerts.js alerts the same).
+    var pr = snap && snap.data_pr;
+    if (pr) {
+      var waiting = [pr.held ? num(pr.held) + " held for review" : "", pr.rejected ? num(pr.rejected) + " rejected" : ""]
+        .filter(Boolean).join(", ");
+      var open = now - (pr.created || pr.updated || now);
+      checks.push(waiting ? ["critical", "Community data isn't merging: " + waiting, pr.url, "Open the pull request"]
+        : [open >= 2 * HOUR ? "critical" : "warning", "Community data pull request open " + ago(open),
+          pr.url, "Open the pull request"]);
+    } else if (snap) {
+      checks.push(["good", "Community data merging normally", null]);
+    }
     var usage = snap && snap.requests;
     if (usage && usage.month) {
       var monthTotal = Object.keys(usage.month).reduce(function (s, k) { return s + usage.month[k]; }, 0);
@@ -417,7 +430,7 @@
     var checks = healthChecks(live, snap);
     var problems = checks.filter(function (c) { return c[0] !== "good"; });
     var rows = checks.map(function (c) {
-      var detail = c[2] && /^https?:/.test(c[2]) ? el("a", { href: c[2], text: "Open the run" })
+      var detail = c[2] && /^https?:/.test(c[2]) ? el("a", { href: c[2], text: c[3] || "Open the run" })
         : (c[2] ? el("span", { cls: "muted", text: c[2] }) : null);
       return el("li", { cls: "check" }, [status(c[0], c[1]), detail]);
     });

@@ -8,6 +8,10 @@
 // (key "_names" in the alerts table): when new ones arrive, and once a day
 // while any wait. It gives only how many and a link, never the names.
 //
+// The community data pull request counts too: it alerts as soon as uploads
+// are held for review or rejected (either stops it merging itself), and after
+// 2 h open for any other reason.
+//
 // Messages hold only regions, workflow names, counts and links to runs:
 // never player data, and never text a player wrote (error messages and
 // names stay on the dashboard).
@@ -15,6 +19,7 @@
 const HOUR = 3600;
 const PRICE_ALERT = 3 * HOUR;   // the dashboard turns red at 3 h too
 const STATS_ALERT = 3 * HOUR;   // the data merge reports hourly
+const DATA_PR_ALERT = 2 * HOUR; // a clean data pull request merges within its run; the next run retries
 const REMIND = 24 * HOUR;
 const ERROR_PLAYERS = 3;        // the dashboard's red line for errors
 const REGIONS = ["us", "eu", "kr", "tw"];
@@ -51,6 +56,23 @@ export function findProblems(data, now) {
   if (data.statsUpdated && now - data.statsUpdated >= STATS_ALERT) {
     found.stats = `The hourly data merge last reported ${hours(now - data.statsUpdated)} ago, so the merge ` +
       "workflow is probably failing or not starting.";
+  }
+  const pr = data.snapshot && data.snapshot.data_pr;
+  if (pr) {
+    // The community data pull request only stays open when it needs a person: uploads held for unusual
+    // drop rates or rejected (right away), or a website build that failed or ran long (after 2 h).
+    const held = pr.held || 0;
+    const rejected = pr.rejected || 0;
+    const open = now - (pr.created || pr.updated || now);
+    if (held || rejected) {
+      const what = [held ? `${held} upload${held === 1 ? "" : "s"} held for unusual drop rates` : "",
+        rejected ? `${rejected} rejected` : ""].filter(Boolean).join(" and ");
+      found.data_pr = `Community data isn't merging: ${what}, so new drop data waits until the pull request ` +
+        `is reviewed (to accept a held upload, add its install ID to data/approved-installs.txt). ${pr.url}`;
+    } else if (open >= DATA_PR_ALERT) {
+      found.data_pr = `The community data pull request has been open ${hours(open)} without merging itself; ` +
+        `its website build may have failed. ${pr.url}`;
+    }
   }
   for (const flow of (data.snapshot && data.snapshot.workflows) || []) {
     const last = flow.latest;

@@ -21,6 +21,7 @@ import argparse
 import datetime
 import json
 import os
+import re
 import sys
 import time
 import urllib.error
@@ -331,9 +332,22 @@ def build(now, api, admin, mine):
     snapshot["requests"] = request_counts(now, attempt)
     pulls = attempt("data pull request", lambda: github(
         "/pulls?state=open&head=%s:data/community-update" % REPO.split("/")[0])) or []
-    snapshot["data_pr"] = None if not pulls else {
-        "number": pulls[0]["number"], "url": pulls[0]["html_url"], "updated": parse_time(pulls[0]["updated_at"])}
+    snapshot["data_pr"] = data_pull(pulls[0]) if pulls else None
     return snapshot
+
+
+def data_pull(pull):
+    """The open community data pull request, for the dashboard and the Discord alerts (server/src/alerts.js):
+    when it opened, and how many uploads its body (tools/data_bot.py) says are held for review or were
+    rejected, either of which stops it merging itself. Counts only, never install IDs."""
+    body = pull.get("body") or ""
+    held = 0
+    if "Held back because" in body:
+        held = sum(1 for line in body.split("Held back because", 1)[1].splitlines() if line.startswith("- `"))
+    rejected = re.search(r"^(\d+) upload\(s\) failed validation", body, re.M)
+    return {"number": pull["number"], "url": pull["html_url"], "created": parse_time(pull["created_at"]),
+            "updated": parse_time(pull["updated_at"]), "held": held,
+            "rejected": int(rejected.group(1)) if rejected else 0}
 
 
 def main():

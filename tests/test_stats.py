@@ -92,6 +92,38 @@ class DownloadsTests(unittest.TestCase):
         self.assertEqual((row["zip"], row["exe"], row["mac"]), (10, 7, 3))
 
 
+class DataPullTests(unittest.TestCase):
+    """The open data pull request's held and rejected counts, read from the body tools/data_bot.py writes."""
+
+    def pull(self, body):
+        import admin_stats
+        return admin_stats.data_pull({"number": 147, "html_url": "https://github.com/x/pull/147", "body": body,
+                                      "created_at": "2026-11-16T05:18:12Z", "updated_at": "2026-11-16T19:34:34Z"})
+
+    def test_held_and_rejected_counts(self):
+        body = ("### Companion uploads\n\n| Install | Snapshot | Mobs | Rate warnings |\n|---|---|---|---|\n"
+                "| `aaaaaaaaaaaa` | 5 | 24 | 0 |\n\nHeld back because some drop rates differ sharply from other "
+                "players' data. To accept one, add its install ID to `data/approved-installs.txt` and run the "
+                "workflow again:\n\n- `bbbbbbbbbbbb` (4 mobs): NPC 1, item 2: 0.0% over 86 attempts\n"
+                "- `cccccccccccc` (2 mobs): NPC 3, item 4: 0.0% over 90 attempts\n\n"
+                "2 upload(s) failed validation and were skipped.\n")
+        pr = self.pull(body)
+        self.assertEqual((pr["held"], pr["rejected"], pr["number"]), (2, 2, 147))
+        self.assertEqual(pr["created"], 1794806292)
+        self.assertNotIn("bbbbbbbbbbbb", repr(pr))   # counts only, never install IDs
+
+    def test_a_clean_pull_request(self):
+        pr = self.pull("### Companion uploads\n\n| Install | Snapshot | Mobs | Rate warnings |\n")
+        self.assertEqual((pr["held"], pr["rejected"]), (0, 0))
+        self.assertEqual((self.pull(None)["held"], self.pull(None)["rejected"]), (0, 0))
+
+    def test_the_wording_matches_data_bot(self):
+        source = (ROOT / "tools" / "data_bot.py").read_text(encoding="utf-8")
+        self.assertIn('"Held back because', source)
+        self.assertIn('"- `%s` (%d mobs)', source)
+        self.assertIn('"%d upload(s) failed validation', source)
+
+
 class WorkerRequestsTests(unittest.TestCase):
     def test_daily_counts_per_worker_and_this_month(self):
         import admin_stats
