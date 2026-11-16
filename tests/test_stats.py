@@ -1,7 +1,11 @@
 """tools/stats.py: the counting, with fixed data (no server or GitHub)."""
+import io
+import json
+import os
 import sys
 import tempfile
 import unittest
+from unittest import mock
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -176,6 +180,38 @@ class UserAgentTests(unittest.TestCase):
             self.assertEqual(uploader.user_agent("0.8.0"), "GoldScoutCompanion/0.8.0 (macOS)")
         with mock.patch.object(uploader, "OS_NAME", None):
             self.assertEqual(uploader.user_agent("0.8.0"), "GoldScoutCompanion/0.8.0")
+
+
+class GithubIssuesTests(unittest.TestCase):
+    """The share-form count: with the workflow's GITHUB_TOKEN, since runners share the public API's limit."""
+
+    def fetch(self, environ):
+        seen = []
+
+        class Reply(io.BytesIO):
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *args):
+                return False
+
+        def urlopen(request, timeout=None):
+            seen.append(request)
+            return Reply(json.dumps([{"number": 1}, {"number": 2, "pull_request": {}}]).encode())
+        with mock.patch.dict(os.environ, environ, clear=False), mock.patch("urllib.request.urlopen", urlopen):
+            if "GITHUB_TOKEN" not in environ:
+                os.environ.pop("GITHUB_TOKEN", None)
+            issues = stats.github_issues()
+        return issues, seen[0]
+
+    def test_sends_the_workflows_token(self):
+        issues, request = self.fetch({"GITHUB_TOKEN": "t0ken"})
+        self.assertEqual(issues, [{"number": 1}])                 # pull requests left out
+        self.assertEqual(request.get_header("Authorization"), "Bearer t0ken")
+
+    def test_without_a_token_asks_anonymously(self):
+        _, request = self.fetch({})
+        self.assertIsNone(request.get_header("Authorization"))
 
 
 if __name__ == "__main__":

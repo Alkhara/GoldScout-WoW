@@ -26,6 +26,7 @@ import argparse
 import datetime
 import hashlib
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -64,7 +65,10 @@ def github_issues():
     issues, page = [], 1
     while True:
         url = "%s/issues?state=all&labels=data-submission&per_page=100&page=%d" % (REPO_API, page)
-        request = urllib.request.Request(url, headers={"User-Agent": "GoldScout-stats"})
+        headers = {"User-Agent": "GoldScout-stats"}
+        if os.environ.get("GITHUB_TOKEN"):   # the workflow's token: runners share the public API's hourly limit
+            headers["Authorization"] = "Bearer " + os.environ["GITHUB_TOKEN"]
+        request = urllib.request.Request(url, headers=headers)
         with urllib.request.urlopen(request, timeout=30) as response:
             batch = json.loads(response.read())
         issues += [issue for issue in batch if "pull_request" not in issue]
