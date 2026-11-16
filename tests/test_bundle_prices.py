@@ -4,6 +4,7 @@ installed): only while a player has no prices of their own, and never past
 30 days."""
 import sys
 import unittest
+from unittest import mock
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -57,6 +58,42 @@ class BundleTests(unittest.TestCase):
         toc = (ROOT / "GoldScout" / "GoldScout.toc").read_text(encoding="utf-8")
         lines = [line.strip() for line in toc.splitlines()]
         self.assertLess(lines.index("Data_Prices.lua"), lines.index("Prices.lua"))   # loads before Prices.lua
+
+
+class FetchRetryTests(unittest.TestCase):
+    """One slow or failed answer from the server used to stop a whole release (v0.12.16's first run)."""
+
+    def fetch(self, answers, tries=3):
+        import io
+        import urllib.error
+        calls, pauses = [], []
+
+        def opener(request, timeout):
+            calls.append(request.full_url)
+            answer = answers[len(calls) - 1]
+            if isinstance(answer, int):
+                raise urllib.error.HTTPError(request.full_url, answer, "error", {}, io.BytesIO(b""))
+            if isinstance(answer, Exception):
+                raise answer
+            return io.BytesIO(answer)
+        with mock.patch("sys.stderr", io.StringIO()):
+            try:
+                return bp.fetch_json("https://api", "/v1/prices", tries=tries, pause=10, sleep=pauses.append,
+                                     opener=opener), len(calls), pauses
+            except Exception as error:
+                return error, len(calls), pauses
+
+    def test_a_server_error_or_timeout_is_tried_again(self):
+        self.assertEqual(self.fetch([502, TimeoutError("timed out"), b'{"ok": 1}']), ({"ok": 1}, 3, [10, 20]))
+        self.assertEqual(self.fetch([429, b"{}"]), ({}, 2, [10]))
+
+    def test_it_gives_up_after_three_tries(self):
+        error, calls, pauses = self.fetch([503, 503, 503])
+        self.assertEqual((getattr(error, "code", None), calls, pauses), (503, 3, [10, 20]))
+
+    def test_a_404_isnt_tried_again(self):
+        error, calls, _ = self.fetch([404, b"{}"])
+        self.assertEqual((error.code, calls), (404, 1))
 
 
 @unittest.skipIf(lua51 is None, "lupa is not installed")

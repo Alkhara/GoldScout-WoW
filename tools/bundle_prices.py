@@ -22,6 +22,7 @@ import argparse
 import json
 import sys
 import time
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -73,10 +74,27 @@ def lua_text(regions, source):
     return "\n".join(lines) + "\n"
 
 
-def fetch_json(api, path):
+RETRIES = 3          # tries per request: one slow or failed answer used to stop a whole release
+RETRY_PAUSE = 10     # seconds before the second try, doubling after
+
+
+def fetch_json(api, path, tries=RETRIES, pause=RETRY_PAUSE, sleep=time.sleep, opener=urllib.request.urlopen):
     request = urllib.request.Request(api + path, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(request, timeout=60) as response:
-        return json.loads(response.read())
+    for attempt in range(1, tries + 1):
+        try:
+            with opener(request, timeout=60) as response:
+                return json.loads(response.read())
+        except urllib.error.HTTPError as error:
+            if error.code < 500 and error.code != 429 or attempt == tries:
+                raise   # a 404 or 403 won't change; the last try's error is the one to report
+            problem = "HTTP %d" % error.code
+        except (urllib.error.URLError, TimeoutError, ConnectionError, ValueError) as error:
+            if attempt == tries:
+                raise
+            problem = str(error) or error.__class__.__name__
+        print("..   %s: %s; trying again in %d s" % (path, problem, pause), file=sys.stderr)
+        sleep(pause)
+        pause *= 2
 
 
 def collect(api, now, fetch=fetch_json):
