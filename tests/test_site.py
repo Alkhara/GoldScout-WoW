@@ -460,7 +460,7 @@ class CommunityTargetsTests(unittest.TestCase):
         self.assertIn('<span class=target-num><b>1</b> of 50</span>', box)
         self.assertIn('<span class=target-num><b>33</b> of 30,000</span>', box)   # every kill, thin mobs too
         self.assertIn("Mobs with solid drop rates (50+ kills)", box)
-        self.assertIn('aria-label="0 of 300"><span style="width:0%"></span>', box)
+        self.assertIn('aria-label="0 of 150"><span style="width:0%"></span>', box)
 
     def test_last_day_and_after(self):
         box = data_pages.targets_section(self.data, data_pages.TARGETS_DATE - datetime.timedelta(days=1))

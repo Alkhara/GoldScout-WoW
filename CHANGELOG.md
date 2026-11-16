@@ -7,7 +7,10 @@ releases add their own line automatically.
 
 ## Unreleased
 
+## v0.12.14
+
 - **Share on the website:** `/gscout export` now points to wowgoldscout.com/share, where you paste your export and press Share. No GitHub account needed, and you can put your name on the leaderboard from there too; the GitHub form still works. The site also shows the community goals: players sharing, kills, and mobs with solid drop rates.
+- Updated drop data from the community.
 
 ## v0.12.12
 
