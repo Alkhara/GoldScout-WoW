@@ -1,4 +1,4 @@
-GoldScout-export 5^186ppl5tut0c^14
+GoldScout-export 5^186ppl5tut0c^15
 121^1^0^16^16^1436^0.3912^0.7016^1^Defias Pathstalker^^
 154^1^0^16^17^1436^0.6004^0.6282^1^Greater Fleshripper^4775:1:1,17056:1:1^
 589^2^0^14^15^1436^0.4094^0.6935^2^Defias Pillager^2078:1:1,2589:2:6^
@@ -9,6 +9,11 @@ GoldScout-export 5^186ppl5tut0c^14
 708^7^0^3^3^1426^0.2559^0.7351^7^Small Crag Boar^1366:1:1,2650:1:1,2654:1:1,4865:1:1,7098:6:6^
 724^3^0^2^2^1426^0.2339^0.7285^3^Burly Rockjaw Trogg^117:1:1,159:1:1,2211:1:1,2589:1:1^
 808^1^0^5^5^1426^0.3062^0.8021^1^Grik'nir the Cold^2004:1:1,2589:1:1^
+1024^11^0^20^21^1437^0.1810^0.4045^11^Bluegill Murloc^730:4:4,1205:1:1,1468:4:4,5524:5:5,5784:1:1,6308:1:3,6562:1:1,17057:3:3,248684:1:1^
+1025^2^0^21^22^1437^0.1824^0.3996^2^Bluegill Puddlejumper^730:1:1,5524:2:2^
+1026^1^0^22^22^1437^0.1572^0.4025^1^Bluegill Forager^17057:1:1^
+1259^1^0^22^22^1437^0.1784^0.4030^1^Gobbler^730:1:1,3618:1:1^
+1417^1^0^22^22^1437^0.1679^0.4375^1^Young Wetlands Crocolisk^770:1:1^
 2071^1^0^19^19^1439^0.3979^0.9192^1^Moonstalker Matriarch^5134:1:1^
 2165^6^0^16^17^1439^0.4305^0.8110^6^Grizzled Thistle Bear^3169:3:3,3170:2:2,3173:1:1,5414:3:3,11406:3:3^
 2169^2^0^17^18^1439^0.4475^0.8858^2^Blackwood Totemic^2592:1:2,4537:1:1^
@@ -59,6 +64,7 @@ GoldScout-export 5^186ppl5tut0c^14
 @i^730^Murloc Eye
 @i^750^Tough Wolf Meat
 @i^765^Silverleaf
+@i^770^Pointy Crocolisk Tooth
 @i^878^Fist-sized Spinneret
 @i^1015^Lean Wolf Flank
 @i^1081^Crisp Spider Meat
@@ -70,6 +76,7 @@ GoldScout-export 5^186ppl5tut0c^14
 @i^1367^Ragged Leather Boots
 @i^1372^Ragged Cloak
 @i^1377^Frayed Gloves
+@i^1468^Murloc Fin
 @i^1770^Canvas Vest
 @i^1800^Rawhide Pants
 @i^1813^Chipped Quarterstaff
@@ -96,6 +103,7 @@ GoldScout-export 5^186ppl5tut0c^14
 @i^3301^Sharp Canine
 @i^3376^Canvas Belt
 @i^3385^Lesser Mana Potion
+@i^3618^Gobbler's Head
 @i^3730^Big Bear Meat
 @i^4306^Silk Cloth
 @i^4428^Spider Palp
@@ -119,12 +127,15 @@ GoldScout-export 5^186ppl5tut0c^14
 @i^5490^Wrathtail Head
 @i^5508^Fallen Moonstone
 @i^5523^Small Barnacled Clam
+@i^5524^Thick-shelled Clam
 @i^5544^Dal Bloodclaw's Skull
 @i^5635^Sharp Claw
 @i^5734^Super Reaper 6000 Blueprints
 @i^5752^Wyvern Tailspike
 @i^5784^Slimy Murloc Scale
 @i^5808^Pridewing Venom Sac
+@i^6308^Raw Bristle Whisker Catfish
+@i^6562^Shimmering Boots of the Owl
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
 @i^7098^Splintered Tusk
@@ -140,6 +151,7 @@ GoldScout-export 5^186ppl5tut0c^14
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
 @i^211855^Scroll: STHENIC LUNATE
+@i^248684^Waylaid Crate: Apprentice Textiles
 @i^248702^Waylaid Crate: Apprentice Fabrics
 @i^248707^Waylaid Crate: Journeyman Parts
 @i^250182^Recipe: Bear Brisket
@@ -150,6 +162,7 @@ GoldScout-export 5^186ppl5tut0c^14
 @q^730^1:7:1
 @q^750^1:12:0
 @q^765^1:7:1
+@q^770^0:15:0
 @q^878^0:7:0
 @q^1015^1:7:1
 @q^1081^1:7:1
@@ -161,6 +174,7 @@ GoldScout-export 5^186ppl5tut0c^14
 @q^1367^0:4:0
 @q^1372^0:4:0
 @q^1377^0:4:0
+@q^1468^1:7:1
 @q^1770^0:4:0
 @q^1800^0:4:0
 @q^1813^0:2:0
@@ -187,6 +201,7 @@ GoldScout-export 5^186ppl5tut0c^14
 @q^3301^0:15:0
 @q^3376^0:4:0
 @q^3385^1:0:0
+@q^3618^1:12:0
 @q^3730^1:7:1
 @q^4306^1:7:1
 @q^4428^0:15:0
@@ -210,12 +225,15 @@ GoldScout-export 5^186ppl5tut0c^14
 @q^5490^1:12:0
 @q^5508^1:12:0
 @q^5523^1:7:0
+@q^5524^1:7:0
 @q^5544^1:12:0
 @q^5635^1:7:1
 @q^5734^1:12:0
 @q^5752^2:2:0
 @q^5784^1:7:1
 @q^5808^1:12:0
+@q^6308^1:7:1
+@q^6562^2:4:0
 @q^7073^0:15:0
 @q^7074^0:15:0
 @q^7098^0:15:0
@@ -231,6 +249,7 @@ GoldScout-export 5^186ppl5tut0c^14
 @q^17056^1:15:1
 @q^17057^1:15:0
 @q^211855^1:0:0
+@q^248684^1:0:1
 @q^248702^2:0:1
 @q^248707^2:0:1
 @q^250182^1:9:0
@@ -238,6 +257,7 @@ GoldScout-export 5^186ppl5tut0c^14
 @q^279276^1:0:0
 @m^1426^Dun Morogh
 @m^1436^Westfall
+@m^1437^Wetlands
 @m^1439^Darkshore
 @m^1440^Ashenvale
 @m^1442^Stonetalon Mountains
@@ -423,6 +443,11 @@ GoldScout-export 5^186ppl5tut0c^14
 @c^279981^
 @c^279982^
 @c^286152^
+@a^1024^143:1,163:9,164:1
+@a^1025^143:1,163:1
+@a^1026^163:1
+@a^1259^163:1
+@a^1417^163:1
 @a^3664^245:1
 @a^3711^41:5,61:1
 @a^3713^82:1,102:2
