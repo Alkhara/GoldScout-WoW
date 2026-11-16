@@ -641,6 +641,12 @@ class GermanSitePagesTests(unittest.TestCase):
         # The same sections and screenshots as the English home page.
         sections = re.compile(r'<section id="([^"]+)"|src="/?screenshots/([^"]+)"')
         self.assertEqual(sections.findall(english), sections.findall(home))
+        # The home pages' nav bar is the one every other page has.
+        nav = re.compile(r"<nav>.*?</nav>")
+        for lang, page in (("en", english), ("de", home)):
+            other = self.build.layout("T", "D", "/leaderboard", "", lang=lang)
+            self.assertEqual(nav.findall(page), nav.findall(other))
+            self.assertIn('/leaderboard"', nav.findall(page)[0])
 
     def test_leaderboard(self):
         title, _, body = self.build.leaderboard_page_de()

@@ -333,7 +333,8 @@ CHROME = {
                '<a href="%(curseforge)s">Get GoldScout</a>',
         "footer": '<a href="/">Home</a><a href="/farms">Farms by level</a><a href="/fishing">Fishing</a>'
                   '<a href="/drop-rates">How drop rates work</a><a href="/leaderboard">Leaderboard</a>'
-                  '<a href="/data-wanted">Data wanted</a><a href="/faq">FAQ</a><a href="%(discord)s">Discord</a>'
+                  '<a href="/data-wanted">Data wanted</a><a href="/share">Share data</a><a href="/faq">FAQ</a>'
+                  '<a href="%(discord)s">Discord</a>'
                   '<a href="%(source)s">GitHub</a><a href="%(privacy)s">Privacy</a>'
                   '<a href="%(data_license)s">Data license</a>',
         "notice": "Drop rates come from GoldScout players and are covered by the GoldScout Data License. GoldScout is "
@@ -555,7 +556,7 @@ def page(s):
 <div class="wrap">
 <header class="top">
   <a class="brand" href="#"><img src="logo-400.png" alt="">GoldScout</a>
-  <nav><a href="#features">Features</a><a href="/farms">Farms by level</a><a href="/fishing">Fishing</a><a href="/drop-rates">Drop rates</a><a href="/companion">Companion</a><a href="/faq">FAQ</a><a href="%(guide)s">Guide</a></nav>%(switch)s
+  <nav>%(nav)s</nav>%(switch)s
 </header>
 %(search)s
 
@@ -632,7 +633,8 @@ def page(s):
 </div></footer>
 </body>
 </html>
-""" % dict(LINKS, site=SITE_URL, css=CSS, shots=shots, jsonld=home_jsonld(), search=SEARCH_BOX, updated=updated, contributors_label=contributors_label, targets=s.get("targets", ""),
+""" % dict(LINKS, site=SITE_URL, css=CSS, shots=shots, jsonld=home_jsonld(), search=SEARCH_BOX,
+           nav=CHROME["en"]["nav"] % LINKS, updated=updated, contributors_label=contributors_label, targets=s.get("targets", ""),
            alternates=alternates, switch=switch,
            contributors=format(s["contributors"], ","), mobs=format(s["mobs"], ","),
            kills=format(s["kills"], ","), drops=format(s["drops"], ","))
@@ -700,7 +702,7 @@ def page_de(s):
 <div class="wrap">
 <header class="top">
   <a class="brand" href="/de/"><img src="/logo-400.png" alt="">GoldScout</a>
-  <nav><a href="#features">Funktionen</a><a href="/de/farms">Farmen nach Stufe</a><a href="/de/fishing">Angeln</a><a href="/de/drop-rates">Dropraten</a><a href="/de/companion">Companion</a><a href="/de/faq">FAQ</a><a href="%(guide)s" lang="en">Guide</a></nav>%(switch)s
+  <nav>%(nav)s</nav>%(switch)s
 </header>
 %(search)s
 
@@ -777,7 +779,8 @@ def page_de(s):
 </div></footer>
 </body>
 </html>
-""" % dict(LINKS, site=SITE_URL, css=CSS, shots=shots, jsonld=home_jsonld("de"), search=SEARCH_BOX_DE, updated=updated,
+""" % dict(LINKS, site=SITE_URL, css=CSS, shots=shots, jsonld=home_jsonld("de"), search=SEARCH_BOX_DE,
+           nav=CHROME["de"]["nav"] % LINKS, updated=updated,
            targets=s.get("targets_de", ""), alternates=alternates, switch=switch,
            contributors=format(s["contributors"], ",").replace(",", "."), mobs=format(s["mobs"], ",").replace(",", "."),
            kills=format(s["kills"], ",").replace(",", "."), drops=format(s["drops"], ",").replace(",", "."))
