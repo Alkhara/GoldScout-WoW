@@ -543,6 +543,51 @@ class SharePageTests(unittest.TestCase):
         self.assertTrue(any(entry[1] == "/share" for entry in build.STATIC_SEARCH))
 
 
+class GermanJoinPagesTests(unittest.TestCase):
+    """/de/companion and /de/share: German visitors who want to help don't land on English pages."""
+
+    def setUp(self):
+        self.build = site_build()
+
+    def test_pages(self):
+        title, _, body = self.build.companion_page_de({"contributors": 1234})
+        self.assertEqual(title, "GoldScout Companion: stündliche Auktionspreise für GoldScout")
+        self.assertIn("1.234 Spieler haben bisher geteilt", body)
+        self.assertIn('href="%s"' % self.build.LINKS["companion"], body)
+        self.assertIn('href="/de/share"', body)
+        title, _, body = self.build.share_page_de()
+        self.assertEqual(title, "Teile deine GoldScout-Dropdaten")
+        self.assertIn('<form id="share-form" class="share-form" hidden>', body)
+        self.assertIn('<script src="/share.js" defer></script>', body)
+        self.assertIn('href="/de/companion"', body)
+        self.assertIn('href="%s"' % self.build.LINKS["share"], body)
+        for page in (self.build.companion_page_de({"contributors": 1})[2], body):
+            self.assertNotIn("kostenlos", page.lower())
+
+    def test_same_form_as_english(self):
+        english, german = self.build.share_page()[2], self.build.share_page_de()[2]
+        pick = re.compile(r'id="[^"]+"|name="[^"]+"|type="[^"]+"')
+        self.assertEqual(pick.findall(english), pick.findall(german))
+
+    def test_language_links(self):
+        for path in ("/companion", "/share"):
+            self.assertTrue(data_pages.is_local_page(path))
+            alternates, other = self.build.language_links(path, "en")
+            self.assertEqual(other, "/de" + path)
+            self.assertIn('hreflang="de" href="https://wowgoldscout.com/de%s"' % path, alternates)
+        self.assertIn('href="/de/companion"', self.build.CHROME["de"]["nav"])
+        self.assertIn('href="/de/share"', self.build.CHROME["de"]["footer"])
+        self.assertTrue(all(not entry[1].startswith("/companion") and not entry[1].startswith("/share")
+                            for entry in self.build.STATIC_SEARCH_DE))
+
+    def test_script_speaks_both(self):
+        script = (ROOT / "site" / "share.js").read_text(encoding="utf-8")
+        german, english = re.search(r'lang === "de" \? \{(.*?)\} : \{(.*?)\};', script, re.S).groups()
+        keys = re.compile(r"^\s+(\w+):", re.M)
+        self.assertEqual(keys.findall(german), keys.findall(english))
+        self.assertGreater(len(keys.findall(german)), 10)
+
+
 class ChampionsScriptTests(unittest.TestCase):
     def test_writes_text_only(self):
         script = (ROOT / "site" / "champions.js").read_text(encoding="utf-8")
@@ -602,7 +647,7 @@ class GermanPagesTests(unittest.TestCase):
         self.assertIn('<a href="/de/item/3730">Großes Bärenfleisch</a>', body)
         self.assertIn('<a href="/de/zone/1440">Eschental</a>', body)
         self.assertIn('href="/de/drop-rates"', body)
-        self.assertIn('href="/companion"', body)                       # English only: linked in English
+        self.assertIn('href="/de/companion"', body)                    # the companion page has a German version
         # A name no German player recorded keeps its English name, marked.
         self.assertIn('<span class=en-name lang=en title="Noch kein deutscher Name erfasst">Bear Gall Bladder</span>',
                       body)

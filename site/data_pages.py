@@ -46,8 +46,10 @@ ADDON = Path(__file__).resolve().parent.parent / "GoldScout"
 LANG = "en"                      # "de" while the German pages are built (build_language)
 LANGUAGES = {"de": "deDE"}       # page language -> the game client language whose names it uses
 MISSING = set()                  # texts looked up on a German page with no German yet (the tests keep it empty)
-# Pages that exist in every language; everything else (home, companion, FAQ...) is English only.
-LOCAL_PAGES = ("/item/", "/mob/", "/zone/", "/farms", "/fishing", "/data-wanted", "/drop-rates", "/search")
+# Pages that exist in every language; everything else (home, FAQ, leaderboard...) is English only. The
+# companion and share pages are written by site/build.py; the rest by build() here.
+LOCAL_PAGES = ("/item/", "/mob/", "/zone/", "/farms", "/fishing", "/data-wanted", "/drop-rates", "/search",
+               "/companion", "/share")
 
 
 def T(text):
@@ -687,9 +689,10 @@ def cta(links, need=""):
     return ("<div class=cta><b>%s</b> %s%s</div>"
             % (T("Help fill this in."), need + " " if need else "",
                T("Every number here comes from players looting in game. Install <a href=\"%s\">GoldScout</a> and "
-                 "add <a href=\"/companion\">GoldScout Companion</a>: it brings auction prices into the game every "
+                 "add <a href=\"%s\">GoldScout Companion</a>: it brings auction prices into the game every "
                  "hour without scanning, and shares what you loot automatically. More players, better data for "
                  "everyone. <a href=\"%s\">See where data is needed most</a>.") % (links["curseforge"],
+                                                                                  P("/companion"),
                                                                                   P("/data-wanted"))))
 
 

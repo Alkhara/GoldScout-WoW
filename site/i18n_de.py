@@ -211,11 +211,11 @@ DE = {
         "in dem sie mit 95% Wahrscheinlichkeit liegt, und er wird enger, je mehr Fänge erfasst sind. Nur in WoW "
         "Forever gezählt: keine Classic-Era-Daten eingemischt.",
     "Every number here comes from players looting in game. Install <a href=\"%s\">GoldScout</a> and add "
-    "<a href=\"/companion\">GoldScout Companion</a>: it brings auction prices into the game every hour without "
+    "<a href=\"%s\">GoldScout Companion</a>: it brings auction prices into the game every hour without "
     "scanning, and shares what you loot automatically. More players, better data for everyone. <a href=\"%s\">See "
     "where data is needed most</a>.":
         "Jede Zahl hier stammt von Spielern, die im Spiel looten. Installiere <a href=\"%s\">GoldScout</a> und dazu "
-        "<a href=\"/companion\">GoldScout Companion</a> (auf Englisch): Es bringt stündlich Auktionspreise ins Spiel, "
+        "<a href=\"%s\">GoldScout Companion</a>: Es bringt stündlich Auktionspreise ins Spiel, "
         "ohne zu scannen, und teilt deine Beute automatisch. Mehr Spieler, bessere Daten für alle. <a href=\"%s\">Sieh "
         "nach, wo Daten am meisten fehlen</a>.",
     "%s has %s %s recorded so far, so the ranges are wide; %d more and its rates are solid.":

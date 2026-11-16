@@ -227,12 +227,13 @@ CHROME = {
     },
     "de": {
         "nav": '<a href="/de/farms">Farmen nach Stufe</a><a href="/de/fishing">Angeln</a>'
-               '<a href="/de/drop-rates">Dropraten</a><a href="/companion" lang="en">Companion</a>'
+               '<a href="/de/drop-rates">Dropraten</a><a href="/de/companion">Companion</a>'
                '<a href="/leaderboard" lang="en">Leaderboard</a><a href="/faq" lang="en">FAQ</a>'
                '<a href="%(curseforge)s">GoldScout holen</a>',
         "footer": '<a href="/" lang="en">Home</a><a href="/de/farms">Farmen nach Stufe</a><a href="/de/fishing">Angeln</a>'
                   '<a href="/de/drop-rates">So funktionieren Dropraten</a><a href="/leaderboard" lang="en">Leaderboard</a>'
-                  '<a href="/de/data-wanted">Daten gesucht</a><a href="/faq" lang="en">FAQ</a>'
+                  '<a href="/de/data-wanted">Daten gesucht</a><a href="/de/share">Daten teilen</a>'
+                  '<a href="/faq" lang="en">FAQ</a>'
                   '<a href="%(discord)s">Discord</a><a href="%(source)s">GitHub</a>'
                   '<a href="%(privacy)s" lang="en">Privacy</a><a href="%(data_license)s" lang="en">Data license</a>',
         "notice": "Die Dropraten stammen von GoldScout-Spielern und stehen unter der GoldScout Data License. "
@@ -624,8 +625,8 @@ STATIC_SEARCH_DE = [
     ["Angeln für Gold", "/de/fishing", "Jedes Gebiet, in dem Spieler geangelt haben, nach Gold pro Stunde", TOP],
     ["So funktionieren Dropraten", "/de/drop-rates", "Chance, Bereiche und wie die Daten geprüft werden", TOP],
     ["Wo GoldScout Daten braucht", "/de/data-wanted", "Stufen, Gebiete und Gegner mit den wenigsten Dropdaten", TOP],
-    ["GoldScout Companion", "/companion", "Kostenlose App (auf Englisch): stündliche Auktionspreise", TOP],
-    ["Dropdaten teilen", "/share", "Füge deinen /gscout-Export ein (auf Englisch)", TOP],
+    ["GoldScout Companion", "/de/companion", "App für Windows und Mac: stündliche Auktionspreise", TOP],
+    ["Dropdaten teilen", "/de/share", "Füge deinen /gscout-Export ein und teile ihn", TOP],
     ["Bestenliste der Mitwirkenden", "/leaderboard", "Wer die meisten Dropdaten geteilt hat (auf Englisch)", TOP],
     ["FAQ", "/faq", "Fragen zu GoldScout (auf Englisch)", TOP],
 ]
@@ -796,6 +797,142 @@ affiliated with or endorsed by Blizzard Entertainment.</p>
             "scanning, and shares drop data so everyone's Farm tab gets better.", body)
 
 
+def companion_page_de(s):
+    """/de/companion: companion_page() in German. Download links, privacy policy and terms stay the English
+    originals (marked lang="en" where the link text is English)."""
+    players = "%s Spieler" % format(s["contributors"], ",").replace(",", ".")
+    body = """<h1>GoldScout Companion</h1>
+<p class="summary">Eine App für Windows und Mac, die stündlich Auktionshauspreise in GoldScout bringt, ohne dass du
+scannen musst, und deine Dropdaten teilt, damit der Farmen-Tab von GoldScout für alle immer besser wird.</p>
+<p><a class="btn primary" href="%(companion)s">Für Windows herunterladen</a> <a class="btn primary" href="%(companion_mac)s">Für Mac herunterladen</a> <a class="btn" href="%(curseforge)s">Das GoldScout-Addon holen</a></p>
+<p class="small">Code-signiert · aktualisiert sich selbst · Windows, und Macs mit Apple Silicon oder Intel · die App selbst ist auf Englisch</p>
+
+<h2>Was du bekommst</h2>
+<div class="grid">
+  <div class="card"><h3>Stündlich Preise</h3><p>Blizzards Auktionshaus-Snapshot für deinen Realm und deine Fraktion,
+    etwa einmal pro Stunde für GoldScout gespeichert. Die Ranglisten unter Farmen und Herstellen bleiben aktuell,
+    ohne Gang zum Auktionshaus, und deine eigenen Scans gewinnen weiterhin, wenn sie neuer sind.</p></div>
+  <div class="card"><h3>Auch Preise aus Blackwater</h3><p>Was Gegenstände in den Goblin-Auktionshäusern kosten, als
+    zusätzliche Zeile im Tooltip. Sie ersetzen nie die Preise deiner eigenen Fraktion.</p></div>
+  <div class="card"><h3>Bessere Dropraten für alle</h3><p>Jeder Gegner, den du lootest, zeigt GoldScout, was er
+    wirklich fallen lässt. Die Companion-App teilt das für dich, damit das nächste Update mehr Gegner kennt, für dich
+    und alle anderen Spieler.</p></div>
+  <div class="card"><h3>Stört nicht</h3><p>Sie sitzt im Infobereich der Taskleiste (auf dem Mac im Dock), startet auf
+    Wunsch bei der Anmeldung, erscheint nie über deinem Spiel und aktualisiert sich mit einem Klick.</p></div>
+</div>
+
+<h2>Warum das zählt</h2>
+<p class="summary">GoldScout nutzt keine Daten von Wowhead oder einer anderen Seite: Jede Droprate stammt von
+Spielern, die im Spiel looten. %(players)s haben bisher geteilt. Jeder neue Spieler füllt Gegner und Gebiete, die
+noch niemand erfasst hat, und <a href="/de/farms">die Farmen</a> werden mit jedem Kill genauer. Die
+<a href="/de/data-wanted">Gemeinschaftsziele</a> zeigen, wie weit wir sind; die
+<a href="/leaderboard" lang="en">Bestenliste</a> (auf Englisch) zeigt, wer am meisten geteilt hat. Dort bist du
+anonym, außer du wählst einen Namen.</p>
+
+<h2>In einer Minute eingerichtet</h2>
+<ol class="steps">
+  <li><b>Installiere GoldScout</b> von <a href="%(curseforge)s">CurseForge</a> oder <a href="%(wago)s">Wago</a>, falls noch nicht geschehen.</li>
+  <li><b>Lade die App herunter und starte sie.</b> Unter Windows musst du nichts installieren; auf dem Mac öffnest du
+    die ZIP-Datei und ziehst GoldScout Companion in den Ordner Programme. Sie findet deinen WoW-Forever-Ordner selbst.</li>
+  <li><b>Einmal entscheiden.</b> Stimme dem automatischen Teilen zu oder wähle <span lang="en">Not now</span> und
+    nutze sie nur für Preise.</li>
+  <li><b>Spielen.</b> GoldScout lädt neue Preise, wenn du dich einloggst oder <code>/reload</code> eingibst, und sein
+    Fenster bietet <b>Load newer prices</b> an, sobald ein frischerer Snapshot bereitliegt.</li>
+</ol>
+
+<div class="faq">
+<h2>Fragen</h2>
+<h3>Greift sie ins Spiel ein?</h3>
+<p>Nein. Sie liest die gespeicherte Datendatei von GoldScout und schreibt ein kleines Daten-Addon, GoldScout_Prices,
+das das Spiel beim Einloggen wie jedes andere Addon lädt. Das laufende Spiel liest oder verändert sie nie. Die
+Auktionspreise stammen aus Blizzards offizieller Game Data API.</p>
+<h3>Was teilt sie?</h3>
+<p>Nur die Dropdaten von GoldScout: IDs von Gegnern und Gegenständen, Kill- und Dropzahlen, Stufen und wo du gelootet
+hast, dazu eine zufällige ID. Nie Namen von Charakteren, Accounts oder Realms. Siehe die
+<a href="%(privacy)s" lang="en">Privacy Policy</a> und die <a href="%(terms)s" lang="en">Contributor Terms</a>
+(auf Englisch).</p>
+<h3>Brauche ich sie?</h3>
+<p>Nein. GoldScout funktioniert auch allein: Scanne im Auktionshaus und teile mit <code>/gscout export</code> und der
+<a href="/de/share">Teilen-Seite</a>. Die Companion-App macht beides für dich.</p>
+<h3>Unterbricht sie mein Spiel?</h3>
+<p>Nein. Ihre einzige Benachrichtigung meldet eine neue Version, und sie wartet damit, bis World of Warcraft
+geschlossen ist.</p>
+<h3>Ist sie sicher?</h3>
+<p>Jede Version ist code-signiert (auf dem Mac zusätzlich von Apple geprüft), daher zeigt dein Computer, wer sie
+veröffentlicht hat, und die App installiert nur Updates, die genauso signiert sind. Der Quellcode liegt auf
+<a href="%(source)s">GitHub</a>.</p>
+<h3>Gibt es eine Mac-Version?</h3>
+<p>Ja, für Macs mit Apple Silicon oder Intel: <a href="%(companion_mac)s">herunterladen</a>, die ZIP-Datei öffnen und
+GoldScout Companion in den Ordner Programme ziehen. Auf dem Mac lebt sie im Dock statt im Infobereich, und unter
+<b>Settings</b> in ihrem Fenster findest du Teilen, Auktionspreise, <b>Open at login</b> und Updates.</p>
+</div>
+<p class="small" style="margin-top:28px">Auktionsdaten aus der Game Data API von Blizzard Entertainment. GoldScout ist
+nicht mit Blizzard Entertainment verbunden und wird nicht von Blizzard unterstützt.</p>
+""" % dict(LINKS, players=html.escape(players))
+    return ("GoldScout Companion: stündliche Auktionspreise für GoldScout",
+            "Eine App für Windows und Mac, die stündlich Auktionshauspreise ins GoldScout-Addon bringt, ohne zu "
+            "scannen, und Dropdaten teilt, damit der Farmen-Tab für alle besser wird.", body)
+
+
+def share_page_de():
+    """/de/share: share_page() in German (site/share.js answers in German on <html lang="de">)."""
+    body = """<h1>Teile deine Dropdaten</h1>
+<p class="summary">Jede Droprate in GoldScout stammt aus der Beute von Spielern. Füge hier deinen GoldScout-Export ein,
+und er fließt nach denselben Prüfungen wie alles andere beim nächsten stündlichen Update in die Gemeinschaftsdaten.
+Jeder Kill hilft bei den <a href="/de/data-wanted">Gemeinschaftszielen</a> und macht die Raten für alle genauer.</p>
+<p><a href="/de/companion">GoldScout Companion</a> macht das von selbst, jedes Mal wenn du dich ausloggst oder
+<code>/reload</code> eingibst, und bringt dazu Auktionspreise ins Spiel. Keine Companion-App? Diese Seite
+funktioniert in jedem Browser.</p>
+
+<ol class="steps">
+  <li><b>Exportieren.</b> Gib im Spiel <code>/gscout export</code> ein. GoldScout öffnet ein Fenster mit deinen Daten,
+  schon markiert: Drücke <b>Strg+C</b>, um sie zu kopieren.</li>
+  <li><b>Einfügen.</b> Füge sie unten ein, setze die beiden Haken und drücke <b>Teilen</b>.</li>
+</ol>
+
+<form id="share-form" class="share-form" hidden>
+  <label for="share-export">Dein /gscout-Export</label>
+  <textarea id="share-export" name="export" rows="8" spellcheck="false" autocomplete="off"
+    placeholder="GoldScout-export 5^..."></textarea>
+  <label class="check"><input type="checkbox" name="mine"> Ich habe diese Daten selbst gesammelt, beim Spielen von
+  World of Warcraft mit GoldScout.</label>
+  <label class="check"><input type="checkbox" name="terms"> Ich stimme den
+  <a href="%(terms)s" lang="en">GoldScout Contributor Terms</a> (auf Englisch) zu, einschließlich der Lizenz, die sie für
+  diese Daten erteilen.</label>
+  <button class="btn primary" type="submit">Teilen</button>
+  <p id="share-status" class="share-status" role="status" aria-live="polite"></p>
+</form>
+<noscript><p class="small">Dieses Formular braucht JavaScript. Du kannst stattdessen über das
+<a href="%(share)s">GitHub-Formular</a> teilen.</p></noscript>
+
+<div class="faq">
+<h2>Fragen</h2>
+<h3>Was steht im Export?</h3>
+<p>Nur Dropdaten: IDs von Gegnern und Gegenständen, Kill- und Dropzahlen, Stufen und wo du gelootet hast, dazu eine
+zufällige ID für die GoldScout-Daten deines WoW-Accounts. Nie Namen von Charakteren, Accounts oder Realms. Siehe die
+<a href="%(privacy)s" lang="en">Privacy Policy</a> (auf Englisch).</p>
+<h3>Wird er geprüft?</h3>
+<p>Ja. Jeder Export wird geprüft, und wenn einige seiner Dropraten weit von dem abweichen, was andere Spieler sehen,
+wartet er auf eine Prüfung durch einen Menschen, bevor er verwendet wird. Angenommene Exporte landen unter ihrer
+zufälligen ID im öffentlichen <a href="%(source)s">GitHub-Repository</a>, wie die aller anderen.</p>
+<h3>Kann ich später wieder teilen?</h3>
+<p>Ja, so oft du willst: Der neueste Export deiner Daten ersetzt den letzten. Dieser Browser merkt sich einen
+Schlüssel für deine Daten, so wie die Companion-App, damit nur er sie aktualisieren kann. Wenn du auch die
+Companion-App nutzt, teilt sie bereits für dich.</p>
+<h3>Kann ich meinen Namen in der Bestenliste zeigen?</h3>
+<p>Alle, die teilen, stehen anonym in der <a href="/leaderboard" lang="en">Bestenliste</a> und auf den
+Gebietsseiten. Einen Namen wählst du in <a href="/de/companion">GoldScout Companion</a>.</p>
+<h3>Lieber über GitHub?</h3>
+<p>Das <a href="%(share)s">GitHub-Formular</a> funktioniert weiterhin (auf Englisch). Es veröffentlicht deinen Export
+als öffentliches Issue unter deinem GitHub-Konto.</p>
+</div>
+<script src="/share.js" defer></script>
+""" % LINKS
+    return ("Teile deine GoldScout-Dropdaten",
+            "Füge deinen /gscout-Export ein, um deine Beute zu den Gemeinschafts-Dropraten von GoldScout für WoW Forever "
+            "beizutragen.", body)
+
+
 def main():
     if DIST.exists():
         shutil.rmtree(DIST)
@@ -838,6 +975,9 @@ def main():
     # German: the same data pages under /de/, with German names where German players have recorded them.
     paths += ["/de" + path for path in data_pages.build_language("de", data, LINKS, write_de)]
     write_de("search.html", *search_page_de(), index=False)
+    write_de("companion.html", *companion_page_de(s))
+    write_de("share.html", *share_page_de())
+    paths += ["/de/companion", "/de/share"]
     data_pages.LANG = "de"
     try:
         index_de = data_pages.search_index(data) + STATIC_SEARCH_DE
