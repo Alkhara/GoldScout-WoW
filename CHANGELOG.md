@@ -7,8 +7,11 @@ releases add their own line automatically.
 
 ## Unreleased
 
+## v0.12.16
+
 - **By item ranks items by what they earn themselves:** with **Count all loot** on, every item row used to add its mob's vendor trash and other drops to its gold per hour, so a cheap drop from a mob with good trash could top the list. Now an item row counts only its item, and its tooltip says what the mob's other loot adds. The **By mob** view counts everything a mob drops, as before.
 - **Count all loot is now on for everyone,** since it only changes the By mob view. Turn it off in Settings › Farm list, or with `/gscout set allloot off`.
+- Updated drop data from the community.
 
 ## v0.12.14
 
