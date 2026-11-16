@@ -508,6 +508,41 @@ class CommunityTargetsTests(unittest.TestCase):
         self.assertEqual(data_pages.day_text(datetime.date(2026, 3, 1)), "1. März")
 
 
+class SharePageTests(unittest.TestCase):
+    """/share: paste a /gscout export and send it to the upload service, as the companion does."""
+
+    def test_page(self):
+        build = site_build()
+        title, description, body = build.share_page()
+        self.assertEqual(title, "Share your GoldScout drop data")
+        self.assertIn('<form id="share-form" class="share-form" hidden>', body)   # shown by share.js
+        self.assertIn('<script src="/share.js" defer></script>', body)
+        self.assertIn('href="%s"' % build.LINKS["share"], body)                  # the GitHub form, for no JS
+        self.assertIn('href="%s"' % build.LINKS["terms"], body)
+        # The same two promises as the GitHub form.
+        for consent in ("I collected this data myself by playing World of\n  Warcraft with GoldScout.",
+                        "including the license they grant for this data."):
+            self.assertIn(consent, body)
+
+    def test_script_matches_the_server(self):
+        script = (ROOT / "site" / "share.js").read_text(encoding="utf-8")
+        server = (ROOT / "server" / "src" / "index.js").read_text(encoding="utf-8")
+        terms = re.search(r'var TERMS = "([0-9-]+)"', script).group(1)
+        self.assertIn('"%s"' % terms, re.search(r"const TERMS_VERSIONS = new Set\(\[(.*?)\]\)", server).group(1))
+        self.assertIn("const MAX_BYTES = %s;" % re.search(r"var MAX_BYTES = (\d+);", script).group(1), server)
+        header = re.search(r"var HEADER = (/.*/);", script).group(1)
+        self.assertIn("const HEADER = %s;" % header, server)
+        self.assertIn("textContent", script)
+        self.assertNotIn("innerHTML", script)
+
+    def test_pages_point_to_it(self):
+        build = site_build()
+        self.assertIn('href="/share"', build.page(dict(build.stats([], {}), targets="")))
+        self.assertIn('href="/share"', build.faq_page()[2])
+        self.assertIn('href="/share"', build.leaderboard_page()[2])
+        self.assertTrue(any(entry[1] == "/share" for entry in build.STATIC_SEARCH))
+
+
 class ChampionsScriptTests(unittest.TestCase):
     def test_writes_text_only(self):
         script = (ROOT / "site" / "champions.js").read_text(encoding="utf-8")

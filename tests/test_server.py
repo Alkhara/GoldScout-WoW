@@ -160,6 +160,43 @@ class ServerTests(unittest.TestCase):
         self.assertEqual(uploader.upload(export(install, 2), first["token"], "9.8.8")["status"], "stored")
         self.assertEqual(client_of(install), "9.8.8")
 
+    def test_the_websites_share_page_can_upload(self):
+        # site/share.js posts from the browser: the CORS preflight passes, replies are readable, and the
+        # upload is recorded as client "web".
+        request = urllib.request.Request(SERVER + "/v1/uploads", method="OPTIONS", headers={
+            "Origin": "https://wowgoldscout.com", "Access-Control-Request-Method": "POST",
+            "Access-Control-Request-Headers": "authorization,content-type,x-goldscout-terms"})
+        with urllib.request.urlopen(request, timeout=10) as response:
+            self.assertEqual(response.status, 204)
+            self.assertEqual(response.headers["Access-Control-Allow-Origin"], "*")
+            self.assertIn("POST", response.headers["Access-Control-Allow-Methods"])
+            allowed = response.headers["Access-Control-Allow-Headers"].lower()
+            for header in ("authorization", "content-type", "x-goldscout-terms"):
+                self.assertIn(header, allowed)
+
+        install = new_install()
+        request = urllib.request.Request(SERVER + "/v1/uploads", data=export(install, 1).encode(), method="POST",
+                                         headers={"Origin": "https://wowgoldscout.com",
+                                                  "Content-Type": "text/plain; charset=utf-8",
+                                                  "X-GoldScout-Terms": uploader.TERMS_VERSION,
+                                                  "CF-Connecting-IP": fake_ip()})
+        with urllib.request.urlopen(request, timeout=10) as response:
+            self.assertEqual(response.status, 201)
+            self.assertEqual(response.headers["Access-Control-Allow-Origin"], "*")
+        status, listing = raw("/v1/uploads?since=%d" % (time.time() - 3600),
+                              headers={"Authorization": "Bearer " + ADMIN})
+        self.assertEqual(status, 200)
+        self.assertEqual(next(u["client"] for u in listing["uploads"] if u["install_id"] == install), "web")
+
+        # Errors are readable too, so the page can show them.
+        request = urllib.request.Request(SERVER + "/v1/uploads", data=b"not an export", method="POST",
+                                         headers={"Origin": "https://wowgoldscout.com",
+                                                  "X-GoldScout-Terms": uploader.TERMS_VERSION})
+        with self.assertRaises(urllib.error.HTTPError) as caught:
+            urllib.request.urlopen(request, timeout=10)
+        self.assertEqual(caught.exception.code, 400)
+        self.assertEqual(caught.exception.headers["Access-Control-Allow-Origin"], "*")
+
     def test_companion_system_is_recorded(self):
         def listed(install):
             status, listing = raw("/v1/uploads?since=%d" % (time.time() - 3600),

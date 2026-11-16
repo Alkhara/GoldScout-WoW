@@ -7,6 +7,8 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- **Share on the website:** `/gscout export` now points to wowgoldscout.com/share, where you paste your export and press Share. No GitHub account needed; the GitHub form still works. The site also shows the community goals: players sharing, kills, and mobs with solid drop rates.
+
 ## v0.12.12
 
 - **Data wanted:** a new **Data wanted** button on the Farm tab (or `/gscout wanted`) lists the mobs near your

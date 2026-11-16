@@ -8,6 +8,10 @@
 //
 //   POST /v1/uploads   body: export text. Headers: X-GoldScout-Terms, and
 //                      Authorization: Bearer <token> after the first upload.
+//                      The website's share page (wowgoldscout.com/share,
+//                      site/share.js) posts here too, from the browser:
+//                      OPTIONS answers its CORS preflight. No cookies are
+//                      involved, so any origin may call it, as any program can.
 //   GET  /v1/uploads   admin only (Authorization: Bearer <ADMIN_TOKEN>).
 //                      ?since=<unix seconds> limits it to newer uploads. Each
 //                      upload lists the companion version it last came from.
@@ -54,6 +58,14 @@ const NEW_INSTALLS_PER_IP_PER_DAY = 5;
 // "GoldScoutCompanion/0.8.0 (macOS)"; companions before 0.8.0 send no system.
 const CLIENT_AGENT = /^GoldScoutCompanion\/([0-9A-Za-z.+-]{1,24})(?: \(([A-Za-z]{1,16})\))?$/;
 const CLIENT_SYSTEMS = new Set(["Windows", "macOS"]);
+// Uploads from the website's share page are recorded as client "web".
+const SITE_ORIGINS = new Set(["https://wowgoldscout.com", "https://www.wowgoldscout.com"]);
+const UPLOAD_CORS = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Methods": "POST",
+  "Access-Control-Allow-Headers": "Authorization, Content-Type, X-GoldScout-Terms",
+  "Access-Control-Max-Age": "86400",
+};
 const CLIENT_REGIONS = new Set(["us", "eu", "kr", "tw", "cn"]);
 const SOURCE = "Auction data from the Blizzard Entertainment Game Data API. GoldScout is not affiliated with or endorsed by Blizzard.";
 const PRICES_MAX_BYTES = 1900000; // D1 rows hold up to 2 MB
@@ -104,7 +116,12 @@ export default {
         return await storeStats(request, env, adminToken);
       }
       if (url.pathname === "/v1/uploads" && request.method === "POST") {
-        return await receive(request, env);
+        const answer = await receive(request, env);
+        answer.headers.set("Access-Control-Allow-Origin", "*");   // the website's share page reads the reply
+        return answer;
+      }
+      if (url.pathname === "/v1/uploads" && request.method === "OPTIONS") {
+        return new Response(null, { status: 204, headers: UPLOAD_CORS });
       }
       if (url.pathname === "/v1/errors" && request.method === "POST") {
         return await receiveErrors(request, env, clientVersion(request));
@@ -190,7 +207,10 @@ function newToken() {
 // The companion version from the User-Agent ("0.7.0"), or "other".
 function clientVersion(request) {
   const match = CLIENT_AGENT.exec(request.headers.get("User-Agent") || "");
-  return match ? match[1] : "other";
+  if (match) {
+    return match[1];
+  }
+  return SITE_ORIGINS.has(request.headers.get("Origin") || "") ? "web" : "other";
 }
 
 // The companion's system from the User-Agent ("Windows" or "macOS"), or null.

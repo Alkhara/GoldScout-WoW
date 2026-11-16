@@ -190,7 +190,8 @@ set up, ticking itself off as you go (`/gscout welcome` shows it again):
 
 `/gscout export` opens a window with your learned drop data: drops, kill
 counts, mob levels and loot locations, with no character names. Copy it and
-paste it into the **Share drop data** form on GitHub:
+paste it on the share page, https://wowgoldscout.com/share, or into the
+**Share drop data** form on GitHub:
 https://github.com/Alkhara/GoldScout-WoW/issues/new?template=data-submission.yml
 
 Your own client knows which of your exports the community data includes, so

@@ -128,7 +128,7 @@ FAQ = [
         ("What does GoldScout share?",
          "Only drop data: creature and item IDs, kill and drop counts, levels and where you looted, plus a "
          "random ID. Never character, account or realm names. The addon itself never connects to anything; "
-         "sharing happens through the companion or the <a href=\"%(share)s\">share form</a>, and only if you "
+         "sharing happens through the companion or the <a href=\"/share\">share page</a>, and only if you "
          "agree. See the <a href=\"%(privacy)s\">privacy policy</a>."),
         ("How do I stop sharing, or have my data deleted?",
          "Turn off <b>Share automatically</b> in the companion to stop uploads, or <code>/gscout set learn "
@@ -338,6 +338,16 @@ td.bar .track { display: block; height: 8px; border-radius: 4px; background: var
 td.bar .good { display: block; height: 8px; min-width: 2px; border-radius: 4px; background: rgba(242,194,85,.4); }
 td.bar .solid { display: block; height: 8px; border-radius: 4px; background: var(--gold); }
 th.bar-head { width: 120px; }
+.share-form { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; margin: 18px 0; display: grid; gap: 10px; }
+.share-form[hidden] { display: none; }
+.share-form textarea { width: 100%; box-sizing: border-box; min-height: 150px; resize: vertical; background: var(--bg2); color: var(--text); border: 1px solid var(--line); border-radius: 8px; padding: 10px; font: 13px/1.4 ui-monospace, Consolas, monospace; }
+.share-form label.check { display: flex; gap: 10px; align-items: flex-start; color: var(--muted); }
+.share-form label.check input { margin-top: 5px; flex: none; }
+.share-form button { justify-self: start; cursor: pointer; }
+.share-form button:disabled { opacity: .6; cursor: wait; }
+.share-status { margin: 0; min-height: 1.4em; }
+.share-status.good { color: #40ff40; }
+.share-status.bad { color: #ff8a7a; }
 .area-maps { display: flex; flex-wrap: wrap; gap: 0 28px; }
 figure.area-map { margin: 10px 0 22px; width: 100%; max-width: 380px; }
 figure.area-map:has(.area-art) { max-width: 640px; }
@@ -455,7 +465,7 @@ def page(s):
   %(targets)s
   <ol class="steps">
     <li><b>You play.</b> GoldScout learns what every mob you loot really drops, on all your characters.</li>
-    <li><b>You share.</b> <a href="/companion">GoldScout Companion</a> does it automatically, or use <code>/gscout export</code> and the <a href="%(share)s">share form</a>. No character or account names, ever.</li>
+    <li><b>You share.</b> <a href="/companion">GoldScout Companion</a> does it automatically, or use <code>/gscout export</code> and the <a href="/share">share page</a>. No character or account names, ever.</li>
     <li><b>It's checked.</b> Every submission is validated, and unusual drop rates are reviewed before they're used.</li>
     <li><b>Everyone gets it.</b> New community data ships in a release every day. Your own loot is never counted twice.</li>
   </ol>
@@ -584,6 +594,7 @@ STATIC_SEARCH = [
     ["GoldScout Companion", "/companion", "Free app: hourly auction prices, shares your drops", TOP],
     ["Contributor leaderboard", "/leaderboard", "Who's shared the most drop data", TOP],
     ["Where data is needed", "/data-wanted", "Level ranges, zones and mobs with the least drop data", TOP],
+    ["Share your drop data", "/share", "Paste your /gscout export to add it to the community data", TOP],
     ["FAQ", "/faq", "Questions about GoldScout", TOP],
 ]
 
@@ -614,6 +625,7 @@ STATIC_SEARCH_DE = [
     ["So funktionieren Dropraten", "/de/drop-rates", "Chance, Bereiche und wie die Daten geprüft werden", TOP],
     ["Wo GoldScout Daten braucht", "/de/data-wanted", "Stufen, Gebiete und Gegner mit den wenigsten Dropdaten", TOP],
     ["GoldScout Companion", "/companion", "Kostenlose App (auf Englisch): stündliche Auktionspreise", TOP],
+    ["Dropdaten teilen", "/share", "Füge deinen /gscout-Export ein (auf Englisch)", TOP],
     ["Bestenliste der Mitwirkenden", "/leaderboard", "Wer die meisten Dropdaten geteilt hat (auf Englisch)", TOP],
     ["FAQ", "/faq", "Fragen zu GoldScout (auf Englisch)", TOP],
 ]
@@ -634,7 +646,8 @@ shared the most, ranked by their kills that count in the community data.</p>
 <div class="faq">
 <h2>How it works</h2>
 <h3>Who's on it?</h3>
-<p>Everyone who shares drop data with <a href="/companion">GoldScout Companion</a> or the share form is ranked, and
+<p>Everyone who shares drop data with <a href="/companion">GoldScout Companion</a> or the
+<a href="/share">share page</a> is ranked, and
 everyone is anonymous unless they choose otherwise. Each zone's page also lists its zone champions: the top three by
 kills of the mobs there.</p>
 <h3>How do I put my name on it?</h3>
@@ -652,6 +665,64 @@ altogether, see the <a href="%(privacy)s">privacy policy</a>.</p>
 """ % LINKS
     return ("Contributor leaderboard",
             "The GoldScout players who've shared the most loot data, ranked by their kills in the community data.",
+            body)
+
+
+def share_page():
+    """(title, description, body) for /share: paste a /gscout export and send it (site/share.js), as the companion
+    does; the GitHub form stays as the other way."""
+    body = """<h1>Share your drop data</h1>
+<p class="summary">Every drop rate in GoldScout comes from players' loot. Paste your GoldScout export here and it
+joins the community data, after the same checks as everything else, at the next hourly update. Each kill helps the
+<a href="/data-wanted">community goals</a> and fills in the rates for everyone.</p>
+<p><a href="/companion">GoldScout Companion</a> does this by itself every time you log out or /reload, along with
+bringing in auction prices. No companion? This page works from any browser.</p>
+
+<ol class="steps">
+  <li><b>Export.</b> In game, type <code>/gscout export</code>. GoldScout opens a window with your data, already
+  selected: press <b>Ctrl+C</b> to copy it.</li>
+  <li><b>Paste.</b> Paste it below, tick the two boxes and press <b>Share</b>.</li>
+</ol>
+
+<form id="share-form" class="share-form" hidden>
+  <label for="share-export">Your /gscout export</label>
+  <textarea id="share-export" name="export" rows="8" spellcheck="false" autocomplete="off"
+    placeholder="GoldScout-export 5^..."></textarea>
+  <label class="check"><input type="checkbox" name="mine"> I collected this data myself by playing World of
+  Warcraft with GoldScout.</label>
+  <label class="check"><input type="checkbox" name="terms"> I agree to the <a href="%(terms)s">GoldScout
+  Contributor Terms</a>, including the license they grant for this data.</label>
+  <button class="btn primary" type="submit">Share</button>
+  <p id="share-status" class="share-status" role="status" aria-live="polite"></p>
+</form>
+<noscript><p class="small">This form needs JavaScript. You can share through the
+<a href="%(share)s">GitHub form</a> instead.</p></noscript>
+
+<div class="faq">
+<h2>Questions</h2>
+<h3>What does the export contain?</h3>
+<p>Only drop data: creature and item IDs, kill and drop counts, levels and where you looted, plus a random ID for
+your WoW account's GoldScout data. Never character, account or realm names. See the
+<a href="%(privacy)s">privacy policy</a>.</p>
+<h3>Is it checked?</h3>
+<p>Yes. Every export is validated, and if some of its drop rates are far off what other players see, it waits for a
+person to review it before it's used. Accepted exports are added to the public
+<a href="%(source)s">GitHub repository</a> under their random ID, like everyone's.</p>
+<h3>Can I share again later?</h3>
+<p>Yes, as often as you like: the newest export of your data replaces the last. This browser remembers a key for
+your data, the way the companion does, so only it can update your data. If you also run the companion, it already
+shares for you.</p>
+<h3>Can I show my name on the leaderboard?</h3>
+<p>Everyone who shares is on the <a href="/leaderboard">leaderboard</a> and the zone pages, anonymously. Choosing a
+name happens in <a href="/companion">GoldScout Companion</a>.</p>
+<h3>Prefer GitHub?</h3>
+<p>The <a href="%(share)s">GitHub share form</a> still works. It posts your export as a public issue under your
+GitHub account.</p>
+</div>
+<script src="/share.js" defer></script>
+""" % LINKS
+    return ("Share your GoldScout drop data",
+            "Paste your /gscout export to add your loot to GoldScout's community drop rates for WoW Forever.",
             body)
 
 
@@ -706,7 +777,7 @@ random ID. Never character, account or realm names. See the <a href="%(privacy)s
 <a href="%(terms)s">contributor terms</a>.</p>
 <h3>Do I need it?</h3>
 <p>No. GoldScout works on its own: scan at the auction house, and share with <code>/gscout export</code> and the
-<a href="%(share)s">share form</a>. The companion does both for you.</p>
+<a href="/share">share page</a>. The companion does both for you.</p>
 <h3>Will it interrupt my game?</h3>
 <p>No. Its only notification says a new version is out, and it waits until World of Warcraft is closed.</p>
 <h3>Is it safe to run?</h3>
@@ -737,6 +808,7 @@ def main():
     shutil.copy2(HERE / "leaderboard.js", DIST / "leaderboard.js")
     shutil.copy2(HERE / "search.js", DIST / "search.js")
     shutil.copy2(HERE / "champions.js", DIST / "champions.js")
+    shutil.copy2(HERE / "share.js", DIST / "share.js")
     if (HERE / "maps").is_dir():   # the game's zone maps (tools/zone_maps.py)
         shutil.copytree(HERE / "maps", DIST / "maps", dirs_exist_ok=True, ignore=shutil.ignore_patterns("*.md"))
     results = merge_data.load(ROOT / "data" / "submissions")
@@ -758,7 +830,8 @@ def main():
     write("companion.html", *companion_page(s))
     write("faq.html", *faq_page())
     write("leaderboard.html", *leaderboard_page())
-    paths = ["/", "/companion", "/leaderboard", "/faq"] + data_pages.build(data, LINKS, write)
+    write("share.html", *share_page())
+    paths = ["/", "/companion", "/leaderboard", "/faq", "/share"] + data_pages.build(data, LINKS, write)
     write("search.html", *search_page(), index=False)   # results for one visitor's words: not for search engines
     index = data_pages.search_index(data) + STATIC_SEARCH
     (DIST / "search.json").write_text(json.dumps(index, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")

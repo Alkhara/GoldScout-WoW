@@ -113,8 +113,9 @@ gets for everyone.
 - **Automatically:** [GoldScout Companion](https://wowgoldscout.com/companion)
   shares new data after you agree to the terms once.
 - **By hand:** type `/gscout export` in game, press **Ctrl+C**, and paste it
-  into the [Share drop data](https://github.com/Alkhara/GoldScout-WoW/issues/new?template=data-submission.yml)
-  form.
+  on the [share page](https://wowgoldscout.com/share), or into the
+  [Share drop data](https://github.com/Alkhara/GoldScout-WoW/issues/new?template=data-submission.yml)
+  form on GitHub.
 
 Exports contain no character or account names. Accepted data ships in the next
 daily release. See the [Contributor Terms](docs/CONTRIBUTOR_TERMS.md) and

@@ -3,7 +3,8 @@
 Thanks for helping! For bugs and ideas, open an
 [issue](https://github.com/Alkhara/GoldScout-WoW/issues), or say hi on the
 [GoldScout Discord](https://discord.gg/rJdZcuepzN). To share drop data,
-use the [Share drop data](https://github.com/Alkhara/GoldScout-WoW/issues/new?template=data-submission.yml)
+paste it on the [share page](https://wowgoldscout.com/share), or use the
+[Share drop data](https://github.com/Alkhara/GoldScout-WoW/issues/new?template=data-submission.yml)
 form instead of a pull request.
 
 ## Project layout

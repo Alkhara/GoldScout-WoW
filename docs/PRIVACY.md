@@ -1,6 +1,6 @@
 # GoldScout Privacy Policy
 
-*Last updated: November 15, 2026*
+*Last updated: November 16, 2026*
 
 This policy covers the GoldScout addon and the drop data players share with it.
 GoldScout is maintained by GitHub user Alkhara ("we" below).
@@ -97,6 +97,17 @@ as described in its own [privacy policy](https://www.cloudflare.com/privacypolic
 Accepted uploads are added to the public repository like form submissions, in
 `data/submissions/` under a file named after the install ID. Uploads from the
 companion aren't linked to any GitHub account.
+
+## Sharing on the website
+
+The share page (wowgoldscout.com/share) sends the export you paste to the same
+upload service, the same way the companion does, and the service keeps the same
+things (recording "web" in place of a companion version). Your browser keeps
+the upload token for your install in its local storage on your computer, so it
+can send newer exports of the same data later; nothing else is stored in your
+browser, and the page sets no cookies. Clearing your browser's site data
+removes the token; your data stays shared, and the companion or the GitHub form
+can still share newer exports.
 
 ## The contributor leaderboard
 

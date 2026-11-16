@@ -1609,7 +1609,7 @@ end
 -- Sharing your drop data (/gscout export)
 ---------------------------------------------------------------------------
 local exportFrame
-local SHARE_URL = "github.com/Alkhara/GoldScout-WoW/issues/new?template=data-submission.yml"
+local SHARE_URL = "wowgoldscout.com/share"   -- the site's share page (it links the GitHub form too)
 
 local function CreateExportFrame()
   local f = CreateFrame("Frame", "GoldScoutExportFrame", UIParent, "BackdropTemplate")
