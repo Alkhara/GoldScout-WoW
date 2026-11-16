@@ -92,6 +92,29 @@ class DownloadsTests(unittest.TestCase):
         self.assertEqual((row["zip"], row["exe"], row["mac"]), (10, 7, 3))
 
 
+class DataReleaseTests(unittest.TestCase):
+    """Whether community data is waiting for a release (server/src/alerts.js alerts after 30 h)."""
+
+    def test_latest_published_release(self):
+        import admin_stats
+        releases = [{"tag_name": "v0.12.16", "published_at": None, "draft": True},
+                    {"tag_name": "v0.12.15", "published_at": "2026-11-16T20:28:54Z"},
+                    {"tag_name": "v0.12.14", "published_at": "2026-11-16T05:10:00Z"}]
+        self.assertEqual(admin_stats.latest_release(releases), {"tag": "v0.12.15", "published": 1794860934})
+        self.assertIsNone(admin_stats.latest_release([]))
+
+    def test_oldest_data_change_since_the_release(self):
+        import admin_stats
+        latest = {"tag": "v0.12.15", "published": 1794860934}
+
+        def commit(when):
+            return {"commit": {"committer": {"date": when}}}
+        found = admin_stats.data_release(latest, [commit("2026-11-17T09:17:40Z"), commit("2026-11-17T02:17:40Z"),
+                                                  commit("2026-11-16T20:17:40Z")])   # before the release: shipped
+        self.assertEqual(found, {"latest": "v0.12.15", "published": 1794860934, "waiting_since": 1794881860})
+        self.assertIsNone(admin_stats.data_release(latest, [])["waiting_since"])
+
+
 class DataPullTests(unittest.TestCase):
     """The open data pull request's held and rejected counts, read from the body tools/data_bot.py writes."""
 

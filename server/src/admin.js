@@ -20,6 +20,7 @@
 import PAGE from "./admin/index.html";
 import SCRIPT from "./admin/app.client.js";
 import STYLES from "./admin/app.css";
+import { alertStatus } from "./alerts.js";
 import { dismissError } from "./errors.js";
 import { pendingNames, reviewName } from "./leaderboard.js";
 
@@ -157,6 +158,9 @@ export async function handleAdmin(request, env, url, isAdminToken) {
   if (path === "/admin/api/summary") {
     return summary(env, who);
   }
+  if (path === "/admin/api/alerts") {   // tools/alert_watch.py: are the hourly alert checks still running?
+    return respond(JSON.stringify(await alertStatus(env)), "application/json; charset=utf-8");
+  }
   return respond("Not found.", "text/plain; charset=utf-8", 404);
 }
 
@@ -205,7 +209,8 @@ async function summary(env, who) {
   const now = Math.floor(Date.now() / 1000);
   const [installs, clients, systems, regions, houses, realms, stats, errors, errors24, names] = await env.DB.batch([
     env.DB.prepare("SELECT COUNT(*) AS installs, COALESCE(SUM(updated_at > ?), 0) AS d1, " +
-      "COALESCE(SUM(updated_at > ?), 0) AS d7, COALESCE(SUM(created_at > ?), 0) AS new7 FROM installs")
+      "COALESCE(SUM(updated_at > ?), 0) AS d7, COALESCE(SUM(created_at > ?), 0) AS new7, " +
+      "MAX(updated_at) AS newestUpload FROM installs")
       .bind(now - 86400, now - 7 * 86400, now - 7 * 86400),
     env.DB.prepare("SELECT client, COUNT(*) AS n FROM install_clients GROUP BY client ORDER BY n DESC"),
     // Installs without a system are from companions before 0.8.0, which were Windows only.

@@ -89,6 +89,41 @@ class FindProblemsTests(unittest.TestCase):
         self.assertIn("open 3 h", problems(healthy(snapshot=pr(created=None, updated=NOW - 3 * HOUR)))["data_pr"])
         self.assertEqual(problems(healthy(snapshot={"workflows": [], "data_pr": None})), {})
 
+    def test_workflows_running_short_alert(self):
+        def flow(file, expected, runs, created=NOW - 600):
+            return {"file": file, "name": file, "expected_24h": expected, "runs_24h": runs,
+                    "latest": {"status": "completed", "conclusion": "success", "created": created, "url": None}}
+        snap = {"workflows": [flow("ah-prices.yml", 96, 40), flow("data-merge.yml", 24, 12),
+                              flow("tests.yml", None, 0), flow("backup.yml", 1, 1)]}
+        found = problems(healthy(snapshot=snap))
+        self.assertEqual(sorted(found), ["runs:ah-prices.yml"])   # 12 of 24 is half: fine
+        self.assertIn("ran 40 times in the last 24 h, where about 96 is normal", found["runs:ah-prices.yml"])
+        late = problems(healthy(snapshot={"workflows": [flow("backup.yml", 1, 0, NOW - 27 * HOUR)]}))
+        self.assertIn("hasn't run for 27 h", late["runs:backup.yml"])
+        self.assertEqual(problems(healthy(snapshot={"workflows": [flow("backup.yml", 1, 0, NOW - 25 * HOUR)]})), {})
+
+    def test_no_uploads_for_half_a_day_alerts(self):
+        self.assertEqual(problems(healthy(uploads={"newest": NOW - 11 * HOUR})), {})
+        self.assertEqual(problems(healthy(uploads={"newest": None})), {})   # a new server with no installs
+        self.assertIn("No uploads from players for 13 h", problems(healthy(uploads={"newest": NOW - 13 * HOUR}))["uploads"])
+
+    def test_data_waiting_for_a_release_alerts_after_30_hours(self):
+        def snap(waiting):
+            return {"workflows": [], "data_release": {"latest": "v0.12.15", "published": NOW - 40 * HOUR,
+                                                      "waiting_since": waiting}}
+        self.assertEqual(problems(healthy(snapshot=snap(None))), {})
+        self.assertEqual(problems(healthy(snapshot=snap(NOW - 29 * HOUR))), {})
+        found = problems(healthy(snapshot=snap(NOW - 31 * HOUR)))["data_release"]
+        self.assertIn("waited 31 h for a release (the latest, v0.12.15, came out 40 h ago)", found)
+        self.assertIn("data-release.yml", found)
+
+    def test_failed_workflow_starts_alert_while_they_keep_failing(self):
+        row = {"key": "_dispatch", "message": "Could not start ah-prices.yml (HTTP 401)", "since": NOW - 9 * HOUR}
+        found = problems(healthy(dispatch=dict(row, notified=NOW - 900)))
+        self.assertIn("couldn't start workflows on GitHub: Could not start ah-prices.yml (HTTP 401)", found["dispatch"])
+        self.assertIn("GITHUB_DISPATCH_TOKEN", found["dispatch"])
+        self.assertEqual(problems(healthy(dispatch=dict(row, notified=NOW - 3 * HOUR))), {})
+
     def test_errors_alert_from_three_players(self):
         self.assertEqual(problems(healthy(errors24={"errors": 2, "players": 2})), {})
         self.assertIn("from 3 players", problems(healthy(errors24={"errors": 1, "players": 3}))["errors"])
@@ -165,3 +200,36 @@ class PlanNamesTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+DAY_START = NOW - NOW % 86400   # midnight UTC of NOW's day
+SIXTEEN = DAY_START + 16 * HOUR + 17 * 60   # the 16:17 UTC check
+
+
+def daily(stored, open_problems, installs, release, now):
+    return call("planDaily", stored, open_problems, installs, release, now)
+
+
+@unittest.skipUnless(NODE, "node isn't installed")
+class PlanDailyTests(unittest.TestCase):
+    RELEASE = {"latest": "v0.12.15", "published": SIXTEEN - 2 * HOUR}
+
+    def test_all_clear_once_a_day_from_16_utc(self):
+        self.assertEqual(daily(None, 0, {"d1": 9, "new1": 2}, self.RELEASE, SIXTEEN - HOUR), {"line": "", "writes": []})
+        result = daily(None, 0, {"d1": 9, "new1": 2}, self.RELEASE, SIXTEEN)
+        self.assertEqual(result["line"], "☀️ Daily check: all clear. Last 24 h: 9 installs shared data, 2 new. "
+                                         "Latest release v0.12.15, 2 h ago.")
+        self.assertEqual(result["writes"][0][1:], ["_daily", "", SIXTEEN, SIXTEEN])
+        sent = {"key": "_daily", "message": "", "since": SIXTEEN, "notified": SIXTEEN}
+        self.assertEqual(daily(sent, 0, {}, None, SIXTEEN + HOUR)["line"], "")            # once that day
+        later = daily(sent, 0, {}, None, SIXTEEN + 24 * HOUR)
+        self.assertEqual(later["writes"], [["UPDATE alerts SET notified = ? WHERE key = ?", SIXTEEN + 24 * HOUR,
+                                            "_daily"]])
+
+    def test_a_missed_16_check_sends_it_at_the_next(self):
+        sent = {"key": "_daily", "message": "", "since": SIXTEEN - 24 * HOUR, "notified": SIXTEEN - 24 * HOUR}
+        self.assertTrue(daily(sent, 0, {}, None, SIXTEEN + HOUR)["line"])
+
+    def test_open_problems_are_counted(self):
+        line = daily(None, 2, {"d1": 1, "new1": 0}, None, SIXTEEN)["line"]
+        self.assertEqual(line, "☀️ Daily check: 2 problems open (see above). Last 24 h: 1 install shared data, 0 new.")

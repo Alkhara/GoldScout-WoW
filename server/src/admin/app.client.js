@@ -395,6 +395,28 @@
         checks.push(["critical", w.name + ": last run " + (last.conclusion || "failed"), last.url || null]);
       }
     });
+    // Things that stop quietly (server/src/alerts.js alerts the same): workflows running short, no uploads,
+    // community data waiting for a release.
+    flows.forEach(function (w) {
+      if (w.expected_24h >= 2 && (w.runs_24h || 0) < w.expected_24h / 2) {
+        checks.push(["critical", w.name + ": " + num(w.runs_24h || 0) + " runs in 24 h, about " +
+          num(w.expected_24h) + " is normal", "Something isn't starting it: the server's cron or its GitHub token."]);
+      } else if (w.expected_24h === 1 && w.latest && snap.generated - w.latest.created >= 26 * HOUR) {
+        checks.push(["critical", w.name + ": no run for " + ago(snap.generated - w.latest.created),
+          "It should run daily."]);
+      }
+    });
+    if (live.newestUpload) {
+      var quiet = now - live.newestUpload;
+      checks.push([quiet >= 12 * HOUR ? "critical" : quiet >= 6 * HOUR ? "warning" : "good",
+        "Newest upload from a player: " + ago(quiet),
+        quiet >= 6 * HOUR ? "The upload service, the companion or the share page may be broken." : null]);
+    }
+    var waitingData = snap && snap.data_release && snap.data_release.waiting_since;
+    if (waitingData && now - waitingData >= 30 * HOUR) {
+      checks.push(["critical", "New community data has waited " + ago(now - waitingData) + " for a release",
+        "https://github.com/Alkhara/GoldScout-WoW/actions/workflows/data-release.yml", "Open Data release"]);
+    }
     // The community data pull request: red when it needs a person (server/src/alerts.js alerts the same).
     var pr = snap && snap.data_pr;
     if (pr) {

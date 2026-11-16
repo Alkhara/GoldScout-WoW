@@ -185,3 +185,16 @@ jobs:
             exit 0
           fi
           python3 tools/admin_stats.py | tee -a "$GITHUB_STEP_SUMMARY"
+
+      # The server sends every other alert; this warns Discord from here when
+      # its hourly alert checks have stopped. Needs the ALERT_WEBHOOK_URL
+      # secret (the same Discord webhook as the server's).
+      - name: Check the server's alerts are running
+        if: always()
+        continue-on-error: true
+        env:
+          GOLDSCOUT_API_URL: ${{ vars.GOLDSCOUT_API_URL || 'https://api.wowgoldscout.com' }}
+          GOLDSCOUT_API_ADMIN: ${{ secrets.GOLDSCOUT_API_ADMIN }}
+          ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 tools/alert_watch.py | tee -a "$GITHUB_STEP_SUMMARY"

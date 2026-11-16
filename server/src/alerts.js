@@ -12,6 +12,18 @@
 // are held for review or rejected (either stops it merging itself), and after
 // 2 h open for any other reason.
 //
+// Things that stop quietly, where every run still "succeeds", alert as well:
+// no uploads for 12 h, new community data waiting 30 h for a release, a
+// scheduled workflow running at under half its usual rate (or a daily one
+// missing a day), and the server failing to start workflows on GitHub
+// (recordDispatchFailure, from index.js).
+//
+// Once a day, after 16:00 UTC, a short all-clear (or "N problems open") with
+// the day's upload and install counts goes out, so a silent channel means
+// the alerts themselves broke. Key "_checked" records each completed check;
+// GET /admin/api/alerts (admin.js) shows it to the data merge workflow, which
+// warns Discord from GitHub when the checks stop (tools/alert_watch.py).
+//
 // Messages hold only regions, workflow names, counts and links to runs:
 // never player data, and never text a player wrote (error messages and
 // names stay on the dashboard).
@@ -20,12 +32,21 @@ const HOUR = 3600;
 const PRICE_ALERT = 3 * HOUR;   // the dashboard turns red at 3 h too
 const STATS_ALERT = 3 * HOUR;   // the data merge reports hourly
 const DATA_PR_ALERT = 2 * HOUR; // a clean data pull request merges within its run; the next run retries
+const UPLOAD_ALERT = 12 * HOUR; // with dozens of companions sharing, half a day of nothing means a break
+const RELEASE_ALERT = 30 * HOUR; // the daily data release ships changes within about 24 h
+const DAILY_LATE = 26 * HOUR;   // a once-a-day workflow (the backup) that hasn't started in this long missed a day
+const DISPATCH_FRESH = 2 * HOUR; // a failed workflow start counts until starts have worked this long
+const DAILY_HOUR = 16;          // UTC hour from which the daily summary goes out (after the 15:00 release)
+const RELEASES_LINK = "https://github.com/Alkhara/GoldScout-WoW/actions/workflows/data-release.yml";
 const REMIND = 24 * HOUR;
 const ERROR_PLAYERS = 3;        // the dashboard's red line for errors
 const REGIONS = ["us", "eu", "kr", "tw"];
 const FAILED = new Set(["failure", "timed_out", "startup_failure"]);
 const ON = "_on";               // marks that the "alerts are on" message went out
 const NAMES = "_names";         // when Discord last heard about waiting names
+const DAILY = "_daily";         // when the daily summary last went out
+const CHECKED = "_checked";     // when the last check finished (read by tools/alert_watch.py)
+const DISPATCH = "_dispatch";   // the latest failure to start a workflow on GitHub
 const NAMES_LINK = "https://admin.wowgoldscout.com/admin#names";
 const MAX_MESSAGE = 1900;       // Discord allows 2000 characters
 
@@ -80,6 +101,31 @@ export function findProblems(data, now) {
       found["workflow:" + flow.file] = `${flow.name}: the last run ended as ${last.conclusion}.` +
         (last.url ? " " + last.url : "");
     }
+    // Running short: the server's cron (or GitHub's backup schedule) isn't starting it as often as it should.
+    const expected = flow.expected_24h || 0;
+    if (expected >= 2 && (flow.runs_24h || 0) < expected / 2) {
+      found["runs:" + flow.file] = `${flow.name} ran ${flow.runs_24h || 0} times in the last 24 h, where about ` +
+        `${expected} is normal, so something isn't starting it.`;
+    } else if (expected === 1 && last && now - last.created >= DAILY_LATE) {
+      found["runs:" + flow.file] = `${flow.name} hasn't run for ${hours(now - last.created)}; it should run daily.`;
+    }
+  }
+  const uploads = data.uploads || {};
+  if (uploads.newest && now - uploads.newest >= UPLOAD_ALERT) {
+    found.uploads = `No uploads from players for ${hours(now - uploads.newest)}. The upload service, the ` +
+      "companion or the website's share page may be broken.";
+  }
+  const release = data.snapshot && data.snapshot.data_release;
+  if (release && release.waiting_since && now - release.waiting_since >= RELEASE_ALERT) {
+    found.data_release = `New community data has waited ${hours(now - release.waiting_since)} for a release ` +
+      `(the latest, ${release.latest || "?"}, came out ${hours(now - (release.published || now))} ago). ` +
+      `The Data release workflow may be skipping it, for example because Tests haven't passed on main. ${RELEASES_LINK}`;
+  }
+  const dispatch = data.dispatch;
+  if (dispatch && now - dispatch.notified < DISPATCH_FRESH) {
+    found.dispatch = `The server couldn't start workflows on GitHub: ${dispatch.message}. A 401 means its ` +
+      "GITHUB_DISPATCH_TOKEN expired or was revoked; GitHub's own schedule keeps them going, more slowly, " +
+      "until it's replaced.";
   }
   const errors = data.errors24 || {};
   if (errors.errors && errors.players >= ERROR_PLAYERS) {
@@ -146,14 +192,51 @@ export function planNames(waiting, stored, now) {
     : ["INSERT INTO alerts (key, message, since, notified) VALUES (?, ?, ?, ?)", NAMES, "", now, now]] };
 }
 
+// The daily summary, given the stored "_daily" row (or null), how many
+// problems are open, the last 24 h of installs ({d1: installs that uploaded,
+// new1: new installs}) and the latest release. Goes out once per UTC day, at
+// the first check from DAILY_HOUR on. Pure, so the tests can drive it.
+export function planDaily(stored, open, installs, release, now) {
+  const today = Math.floor(now / 86400);
+  if ((now % 86400) / HOUR < DAILY_HOUR || (stored && Math.floor(stored.notified / 86400) === today)) {
+    return { line: "", writes: [] };
+  }
+  const counts = installs || {};
+  let line = open ? `☀️ Daily check: ${open} problem${open === 1 ? "" : "s"} open (see above).`
+    : "☀️ Daily check: all clear.";
+  line += ` Last 24 h: ${counts.d1 || 0} install${counts.d1 === 1 ? "" : "s"} shared data, ` +
+    `${counts.new1 || 0} new.`;
+  if (release && release.latest) {
+    line += ` Latest release ${release.latest}, ${hours(now - (release.published || now))} ago.`;
+  }
+  return { line, writes: [stored
+    ? ["UPDATE alerts SET notified = ? WHERE key = ?", now, DAILY]
+    : ["INSERT INTO alerts (key, message, since, notified) VALUES (?, ?, ?, ?)", DAILY, "", now, now]] };
+}
+
+// Called by index.js when the cron couldn't start a workflow on GitHub; the
+// next check alerts while failures keep coming (DISPATCH_FRESH).
+export async function recordDispatchFailure(env, message, now = Math.floor(Date.now() / 1000)) {
+  await env.DB.prepare("INSERT INTO alerts (key, message, since, notified) VALUES (?, ?, ?, ?) " +
+    "ON CONFLICT (key) DO UPDATE SET message = excluded.message, notified = excluded.notified")
+    .bind(DISPATCH, String(message).slice(0, 300), now, now).run();
+}
+
+// For GET /admin/api/alerts: when the last check finished, and whether the
+// webhook is set, for tools/alert_watch.py.
+export async function alertStatus(env) {
+  const row = await env.DB.prepare("SELECT notified FROM alerts WHERE key = ?").bind(CHECKED).first();
+  return { checked: row ? row.notified : null, webhook: Boolean(env.ALERT_WEBHOOK_URL) };
+}
+
 // Run by the hourly cron. Does nothing without the webhook secret. The state
 // is only written once Discord took the message, so a failed post is retried
-// next hour.
+// next hour (and "_checked" stays old, which tools/alert_watch.py notices).
 export async function checkAlerts(env, now = Math.floor(Date.now() / 1000)) {
   if (!env.ALERT_WEBHOOK_URL) {
     return;
   }
-  const [houses, stats, errors24, stored, waiting] = await env.DB.batch([
+  const [houses, stats, errors24, stored, waiting, installs] = await env.DB.batch([
     env.DB.prepare("SELECT region, snapshot, items FROM ah_houses"),
     env.DB.prepare("SELECT body, updated_at FROM admin_stats WHERE name = 'dashboard'"),
     env.DB.prepare("SELECT COUNT(DISTINCT fingerprint) AS errors, COUNT(DISTINCT reporter) AS players " +
@@ -161,6 +244,8 @@ export async function checkAlerts(env, now = Math.floor(Date.now() / 1000)) {
     env.DB.prepare("SELECT key, message, since, notified FROM alerts"),
     env.DB.prepare("SELECT COUNT(*) AS count, MAX(updated_at) AS newest FROM leaderboard_names " +
       "WHERE name IS NOT NULL AND approved = 0"),
+    env.DB.prepare("SELECT MAX(updated_at) AS newest, COALESCE(SUM(updated_at > ?), 0) AS d1, " +
+      "COALESCE(SUM(created_at > ?), 0) AS new1 FROM installs").bind(now - 86400, now - 86400),
   ]);
   const row = stats.results[0];
   let snapshot = null;
@@ -169,18 +254,27 @@ export async function checkAlerts(env, now = Math.floor(Date.now() / 1000)) {
   } catch {
     snapshot = null;
   }
+  const kept = (key) => stored.results.find((r) => r.key === key) || null;
+  const counts = installs.results[0] || {};
   const current = findProblems({
     houses: houses.results, statsUpdated: row ? row.updated_at : null, snapshot, errors24: errors24.results[0],
+    uploads: { newest: counts.newest }, dispatch: kept(DISPATCH),
   }, now);
-  const namesRow = stored.results.find((r) => r.key === NAMES) || null;
-  const health = planAlerts(stored.results.filter((r) => r.key !== NAMES), current, now);
-  const names = planNames(waiting.results[0] || {}, namesRow, now);
-  const text = [health.text, names.line].filter(Boolean).join("\n");
-  const writes = health.writes.concat(names.writes);
+  // Keys starting "_" are bookkeeping, not problems (except "_on", which planAlerts handles).
+  const health = planAlerts(stored.results.filter((r) => r.key === ON || !r.key.startsWith("_")), current, now);
+  const names = planNames(waiting.results[0] || {}, kept(NAMES), now);
+  const daily = planDaily(kept(DAILY), Object.keys(current).length, counts,
+    snapshot && snapshot.data_release, now);
+  let text = [health.text, names.line, daily.line].filter(Boolean).join("\n");
+  if (text.length > 1990) {   // Discord's limit is 2000; planAlerts already trims its own part
+    text = text.slice(0, 1990);
+  }
+  const checked = kept(CHECKED)
+    ? ["UPDATE alerts SET notified = ? WHERE key = ?", now, CHECKED]
+    : ["INSERT INTO alerts (key, message, since, notified) VALUES (?, ?, ?, ?)", CHECKED, "", now, now];
+  const writes = health.writes.concat(names.writes, daily.writes, [checked]);
   if (!text) {
-    if (writes.length) {   // names were all reviewed: forget them quietly
-      await env.DB.batch(writes.map(([sql, ...params]) => env.DB.prepare(sql).bind(...params)));
-    }
+    await env.DB.batch(writes.map(([sql, ...params]) => env.DB.prepare(sql).bind(...params)));
     return;
   }
   const response = await fetch(env.ALERT_WEBHOOK_URL, {
@@ -192,8 +286,7 @@ export async function checkAlerts(env, now = Math.floor(Date.now() / 1000)) {
   if (!response.ok) {
     throw new Error(`Alert webhook: HTTP ${response.status} ${(await response.text()).slice(0, 200)}`);
   }
-  if (writes.length) {
-    await env.DB.batch(writes.map(([sql, ...params]) => env.DB.prepare(sql).bind(...params)));
-  }
-  console.log("Sent an alert: " + Object.keys(current).concat(names.line ? [NAMES] : []).join(", "));
+  await env.DB.batch(writes.map(([sql, ...params]) => env.DB.prepare(sql).bind(...params)));
+  console.log("Sent an alert: " + Object.keys(current).concat(names.line ? [NAMES] : [], daily.line ? [DAILY] : [])
+    .join(", "));
 }

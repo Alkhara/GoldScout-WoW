@@ -104,7 +104,20 @@ while it lasts, and when it clears (`src/alerts.js`). It watches:
 - the hourly data merge: no report for 3 hours
 - the last run of the price, merge, tests, deploy, release and backup
   workflows: failed or timed out
+- workflows running short: the price or merge workflow at under half its
+  usual runs in 24 hours, or the daily backup not run for 26 hours
+- the server failing to start workflows on GitHub (an expired
+  `GITHUB_DISPATCH_TOKEN` shows as HTTP 401)
+- the community data pull request: uploads held for review or rejected
+  (right away), or open 2 hours for any other reason
+- no uploads from players for 12 hours
+- new community data waiting 30 hours for a release
 - GoldScout errors reported by 3 or more players in a day
+
+Once a day, from 16:00 UTC, it also posts a short all-clear (or how many
+problems are open) with the day's upload and install counts, so a quiet
+channel means the alerts themselves stopped. Leaderboard names waiting for
+review are mentioned too, as a count and a link.
 
 Messages carry only regions, workflow names, counts and links to runs, never
 player data. To turn them on:
@@ -113,6 +126,12 @@ player data. To turn them on:
    Webhooks → New Webhook** and **Copy Webhook URL**.
 2. `npx wrangler secret put ALERT_WEBHOOK_URL` and paste it. Within the hour
    the channel gets "GoldScout alerts are on", plus anything already red.
+
+3. Add the same webhook URL as a GitHub secret named `ALERT_WEBHOOK_URL`
+   (Settings → Secrets and variables → Actions). The hourly data merge then
+   checks the server's alerts are still running (`tools/alert_watch.py`,
+   reading `GET /admin/api/alerts`) and warns the channel from GitHub when
+   the server's checks have stopped for 3 hours or it can't be reached.
 
 If the server itself is down, it can't send anything, so also point an
 uptime monitor (UptimeRobot's free plan, for example) at

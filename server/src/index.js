@@ -97,7 +97,7 @@ const ALERT_CRON = "17 * * * *";
 
 import { handleAdmin, storeStats } from "./admin.js";
 import { receiveErrors } from "./errors.js";
-import { checkAlerts } from "./alerts.js";
+import { checkAlerts, recordDispatchFailure } from "./alerts.js";
 import { handleLeaderboard } from "./leaderboard.js";
 
 export default {
@@ -165,7 +165,12 @@ export default {
   },
 
   async scheduled(event, env, ctx) {
-    ctx.waitUntil(startWorkflows(SCHEDULE[event.cron] || [], env));
+    // A failed start is recorded for the next alert check (an expired GITHUB_DISPATCH_TOKEN would otherwise
+    // only show in Cloudflare's logs), then still thrown, so the cron shows as failed there too.
+    ctx.waitUntil(startWorkflows(SCHEDULE[event.cron] || [], env).catch(async (error) => {
+      await recordDispatchFailure(env, error.message).catch(() => {});
+      throw error;
+    }));
     if (event.cron === ALERT_CRON) {
       ctx.waitUntil(checkAlerts(env));   // separate, so a failed alert never stops a workflow starting
     }
@@ -489,7 +494,7 @@ async function startWorkflows(workflows, env) {
     } else {
       const detail = (await response.text()).slice(0, 300);
       console.error(`Starting ${workflow}: HTTP ${response.status} ${detail}`);
-      failed.push(workflow);
+      failed.push(`${workflow} (HTTP ${response.status})`);
     }
   }
   if (failed.length) {

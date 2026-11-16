@@ -282,6 +282,25 @@ def downloads(releases):
     return out
 
 
+def latest_release(releases):
+    """The newest published release, as {"tag", "published"}, or None."""
+    published = [r for r in releases if r.get("published_at") and not r.get("draft") and not r.get("prerelease")]
+    if not published:
+        return None
+    newest = max(published, key=lambda r: parse_time(r["published_at"]))
+    return {"tag": newest.get("tag_name"), "published": parse_time(newest["published_at"])}
+
+
+def data_release(latest, commits):
+    """Whether community data on main is waiting for a release, for the Discord alerts (server/src/alerts.js):
+    the latest release and when the oldest change to GoldScout/Data_Community.lua since it was committed
+    (commits: GitHub's list for that file since the release), or None if there is none."""
+    times = [parse_time(c["commit"]["committer"]["date"]) for c in commits
+             if c.get("commit", {}).get("committer", {}).get("date")]
+    waiting = [t for t in times if t > latest["published"]]
+    return {"latest": latest["tag"], "published": latest["published"], "waiting_since": min(waiting) if waiting else None}
+
+
 # -- building ------------------------------------------------------------------
 def build(now, api, admin, mine):
     snapshot = {"generated": now, "problems": []}
@@ -320,6 +339,14 @@ def build(now, api, admin, mine):
 
     releases = attempt("releases", lambda: github("/releases?per_page=10")) or []
     snapshot["downloads"] = downloads(releases)
+    latest = latest_release(releases)
+    if latest:
+        since = datetime.datetime.fromtimestamp(latest["published"], datetime.timezone.utc).strftime(
+            "%Y-%m-%dT%H:%M:%SZ")
+        commits = attempt("data commits", lambda: github(
+            "/commits?sha=main&path=GoldScout/Data_Community.lua&per_page=100&since=" + since))
+        if commits is not None:
+            snapshot["data_release"] = data_release(latest, commits)
     issues = attempt("share form", lambda: stats.github_issues())
     if issues is not None:
         snapshot["form"] = stats.summarize_issues(issues, {stats.MAINTAINER})
