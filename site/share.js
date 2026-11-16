@@ -11,6 +11,9 @@
   var MAX_BYTES = 250000;     // the server's limit for one export
   var HEADER = /^GoldScout-export [2345]\^([a-z0-9]{12})\^([1-9][0-9]{0,8})$/;
   var STORE = "goldscout-share-tokens";
+  var LAST = "goldscout-share-last";   // the install this browser shared most recently: its leaderboard entry
+  // Leaderboard names, as the server checks them (server/src/leaderboard.js NAME).
+  var NAME = /^[\p{L}\p{N}](?:[\p{L}\p{N} ._'-]{1,18})[\p{L}\p{N}]$/u;
   // German pages (<html lang="de">, under /de/) answer in German; everything else in English.
   var TEXT = document.documentElement.lang === "de" ? {
     registered: "Danke! Deine Daten sind angekommen. Sie werden geprüft und fließen beim nächsten stündlichen Update " +
@@ -31,6 +34,15 @@
     failed: "Etwas ist schiefgelaufen (%s). Versuch es in ein paar Minuten noch einmal.",
     offline: "Der GoldScout-Server ist nicht erreichbar. Prüfe deine Verbindung und versuch es noch einmal.",
     tooOften: "Zu viele Versuche gerade. Versuch es in ein paar Minuten noch einmal.",
+    rank: "Dein Rang: #{rank} von {of}, mit {kills} gezählten Kills.",
+    rankNone: "Deine Kills zählen, sobald sie in den Gemeinschaftsdaten sind, meist innerhalb eines Tages nach dem " +
+      "Teilen.",
+    shown: " Öffentlich gezeigt als {name}",
+    until: ", bis {name} freigegeben ist",
+    anonymous: " In der öffentlichen Bestenliste bist du anonym.",
+    saved: "Gespeichert.",
+    badName: "Namen haben 3 bis 20 Buchstaben, Ziffern und Leerzeichen (dazu . _ ' -).",
+    boardFailed: "Konnte nicht gespeichert werden ({status}). Versuch es gleich noch einmal.",
     serverErrors: false   // the server's own messages are English: show ours
   } : {
     registered: "Thanks! Your data is in. It's checked and joins the community data at the next hourly update. " +
@@ -50,6 +62,14 @@
     failed: "Something went wrong (%s). Try again in a few minutes.",
     offline: "Couldn't reach the GoldScout server. Check your connection and try again.",
     tooOften: "Too many tries just now. Try again in a few minutes.",
+    rank: "Your rank: #{rank} of {of}, with {kills} kills counted.",
+    rankNone: "Your kills count once they're in the community data, usually within a day of sharing.",
+    shown: " Shown publicly as {name}",
+    until: " until {name} is approved",
+    anonymous: " You're anonymous on the public board.",
+    saved: "Saved.",
+    badName: "Names are 3 to 20 letters, digits and spaces (and . _ ' -).",
+    boardFailed: "Couldn't save it ({status}). Try again in a moment.",
     serverErrors: true
   };
 
@@ -79,6 +99,12 @@
     } catch (error) {
       return false;
     }
+  }
+
+  function remember(install) {
+    try {
+      localStorage.setItem(LAST, install);
+    } catch (error) { /* the leaderboard box just won't come back on the next visit */ }
   }
 
   function say(text, kind) {
@@ -123,8 +149,12 @@
         if (response.ok && reply.status === "registered" && reply.token) {
           var kept = keep(install, reply.token);
           say(REPLIES.registered + (kept ? "" : TEXT.noKey), "good");
+          remember(install);
+          board.load(install);
         } else if (response.ok && REPLIES[reply.status]) {
           say(REPLIES[reply.status], "good");
+          remember(install);
+          board.load(install);
         } else if (response.status === 403) {
           say(TEXT.elsewhere, "bad");
         } else {
@@ -138,4 +168,100 @@
       button.disabled = false;
     });
   });
+
+  // "Your leaderboard entry": the rank of the install this browser shared, and whether (and under which name)
+  // it's shown publicly, through /v1/leaderboard/me with the install's upload token, as the companion does.
+  var board = (function () {
+    var section = document.getElementById("share-board");
+    if (!section) {
+      return { load: function () {} };
+    }
+    var rank = document.getElementById("board-rank");
+    var shown = document.getElementById("board-public");
+    var name = document.getElementById("board-name");
+    var save = document.getElementById("board-save");
+    var note = document.getElementById("board-status");
+    var current = null;
+
+    function number(n) {
+      return Number(n || 0).toLocaleString(document.documentElement.lang === "de" ? "de-DE" : "en-US");
+    }
+
+    function fill(info) {
+      var text = info.rank === null || info.rank === undefined ? TEXT.rankNone :
+        TEXT.rank.replace("{rank}", info.rank).replace("{of}", number(info.contributors || info.rank))
+          .replace("{kills}", number(info.kills));
+      if (info.public) {
+        text += TEXT.shown.replace("{name}", info.approved ? info.name : info.alias);
+        if (info.name && !info.approved) {
+          text += TEXT.until.replace("{name}", info.name);
+        }
+        text += ".";
+      } else {
+        text += TEXT.anonymous;
+      }
+      rank.textContent = text;
+      shown.checked = Boolean(info.public);
+      name.value = info.name || "";
+      name.disabled = !shown.checked;
+      section.hidden = false;
+    }
+
+    function request(install, method, body) {
+      var headers = { "X-GoldScout-Install": install, Authorization: "Bearer " + tokens()[install] };
+      if (body) {
+        headers["Content-Type"] = "application/json";
+      }
+      return fetch(API + "/v1/leaderboard/me", { method: method, headers: headers, body: body });
+    }
+
+    function load(install) {
+      if (!install || !tokens()[install]) {
+        return;
+      }
+      current = install;
+      request(install, "GET").then(function (response) {
+        return response.ok ? response.json() : null;
+      }).then(function (info) {
+        if (info && current === install) {
+          fill(info);
+        }
+      }).catch(function () { /* the box is a bonus: sharing works without it */ });
+    }
+
+    shown.addEventListener("change", function () {
+      name.disabled = !shown.checked;
+    });
+    save.addEventListener("click", function () {
+      var wanted = name.value.trim();
+      if (shown.checked && wanted && !NAME.test(wanted)) {
+        note.textContent = TEXT.badName;
+        note.className = "share-status bad";
+        return;
+      }
+      save.disabled = true;
+      request(current, "PUT", JSON.stringify({ public: shown.checked, name: wanted || null })).then(function (response) {
+        return response.json().catch(function () { return {}; }).then(function (reply) {
+          if (response.ok) {
+            fill(reply);
+            note.textContent = TEXT.saved;
+            note.className = "share-status good";
+          } else {
+            note.textContent = TEXT.boardFailed.replace("{status}", response.status);
+            note.className = "share-status bad";
+          }
+        });
+      }).catch(function () {
+        note.textContent = TEXT.offline;
+        note.className = "share-status bad";
+      }).then(function () {
+        save.disabled = false;
+      });
+    });
+
+    try {
+      load(localStorage.getItem(LAST));
+    } catch (error) { /* no storage: nothing shared from here to show */ }
+    return { load: load };
+  })();
 })();

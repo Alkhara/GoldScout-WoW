@@ -122,12 +122,14 @@ as zone champions: rank, kills there and a name. Install IDs are never shown,
 and everyone is "Anonymous contributor" unless they choose otherwise.
 
 **Showing a name (off unless you turn it on).** In the companion, **Leaderboard...**
-lets you appear by name. The service then keeps a name it makes up for you
+lets you appear by name; so does **Your leaderboard entry** on the website's share
+page, in the browser you shared from. The service then keeps a name it makes up for you
 (like "Patient Boar") and, if you enter one, a name of your own, which is shown
 only after we approve it; until then, and if we don't, your made-up name shows.
 A name you choose is public, so don't use your character or account name if you
-want to stay anonymous. Only your copy of the companion can change your entry:
-it proves which install it speaks for with the install's upload token. Turning
+want to stay anonymous. Only your copy of the companion, or the browser you
+shared from, can change your entry: it proves which install it speaks for with
+the install's upload token. Turning
 **Show me on the public leaderboard and zone pages** off deletes both names
 right away, from the leaderboard and the zone pages. The companion keeps your
 latest rank in its settings file and, if auction prices are on, in the

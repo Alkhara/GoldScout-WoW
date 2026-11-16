@@ -347,6 +347,16 @@ th.bar-head { width: 120px; }
 .share-form button { justify-self: start; cursor: pointer; }
 .share-form button:disabled { opacity: .6; cursor: wait; }
 .share-status { margin: 0; min-height: 1.4em; }
+.share-board { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 4px 18px 16px; margin: 18px 0; display: grid; gap: 10px; }
+.share-board[hidden] { display: none; }
+.share-board h2 { margin: 12px 0 0; }
+.share-board .sub { margin: 0; }
+.share-board label.check { display: flex; gap: 10px; align-items: flex-start; }
+.share-board label.check input { margin-top: 5px; flex: none; }
+.share-board input[type=text] { max-width: 260px; background: var(--bg2); color: var(--text); border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; font: inherit; }
+.share-board input[type=text]:disabled { opacity: .5; }
+.share-board .small { margin: 0; }
+.share-board button { justify-self: start; cursor: pointer; }
 .share-status.good { color: #40ff40; }
 .share-status.bad { color: #ff8a7a; }
 .area-maps { display: flex; flex-wrap: wrap; gap: 0 28px; }
@@ -653,8 +663,10 @@ everyone is anonymous unless they choose otherwise. Each zone's page also lists 
 kills of the mobs there.</p>
 <h3>How do I put my name on it?</h3>
 <p>In GoldScout Companion, press <b>Leaderboard...</b> under Your data and tick <b>Show me on the public
-leaderboard and zone pages</b>. You're shown under a name GoldScout makes up, or under a name of your own once it's approved.
-Only your copy of the companion can change your entry. Your rank also shows on GoldScout's minimap button.</p>
+leaderboard and zone pages</b>. If you share on the <a href="/share">share page</a>, the same choice appears there
+after you share. You're shown under a name GoldScout makes up, or under a name of your own once it's approved.
+Only your copy of the companion, or the browser you shared from, can change your entry. With the companion, your
+rank also shows on GoldScout's minimap button.</p>
 <h3>What counts?</h3>
 <p>Kills that are in the community data: your export has to pass the data checks, and as in the data itself, at most
 1,000 kills of any one mob count from one player. Scores update every hour.</p>
@@ -696,6 +708,19 @@ bringing in auction prices. No companion? This page works from any browser.</p>
   <button class="btn primary" type="submit">Share</button>
   <p id="share-status" class="share-status" role="status" aria-live="polite"></p>
 </form>
+<section id="share-board" class="share-board" hidden>
+  <h2>Your leaderboard entry</h2>
+  <p id="board-rank" class="sub"></p>
+  <label class="check"><input type="checkbox" id="board-public"> Show me on the public leaderboard and zone
+  pages</label>
+  <label for="board-name">Name (optional)</label>
+  <input id="board-name" type="text" maxlength="20" autocomplete="off" spellcheck="false">
+  <p class="small">Leave it empty to be shown under a name GoldScout makes up, like Patient Boar. A name of your
+  own shows once it's approved. Your character or account name would tell others who you are. Turn this off any
+  time to be anonymous again.</p>
+  <button class="btn" type="button" id="board-save">Save</button>
+  <p id="board-status" class="share-status" role="status" aria-live="polite"></p>
+</section>
 <noscript><p class="small">This form needs JavaScript. You can share through the
 <a href="%(share)s">GitHub form</a> instead.</p></noscript>
 
@@ -714,8 +739,9 @@ person to review it before it's used. Accepted exports are added to the public
 your data, the way the companion does, so only it can update your data. If you also run the companion, it already
 shares for you.</p>
 <h3>Can I show my name on the leaderboard?</h3>
-<p>Everyone who shares is on the <a href="/leaderboard">leaderboard</a> and the zone pages, anonymously. Choosing a
-name happens in <a href="/companion">GoldScout Companion</a>.</p>
+<p>Everyone who shares is on the <a href="/leaderboard">leaderboard</a> and the zone pages, anonymously unless they
+choose otherwise. After you share, <b>Your leaderboard entry</b> appears on this page, in this browser: your rank,
+and whether to be shown, under a name GoldScout makes up or one of your own.</p>
 <h3>Prefer GitHub?</h3>
 <p>The <a href="%(share)s">GitHub share form</a> still works. It posts your export as a public issue under your
 GitHub account.</p>
@@ -902,6 +928,19 @@ funktioniert in jedem Browser.</p>
   <button class="btn primary" type="submit">Teilen</button>
   <p id="share-status" class="share-status" role="status" aria-live="polite"></p>
 </form>
+<section id="share-board" class="share-board" hidden>
+  <h2>Dein Eintrag in der Bestenliste</h2>
+  <p id="board-rank" class="sub"></p>
+  <label class="check"><input type="checkbox" id="board-public"> Zeig mich in der öffentlichen Bestenliste und auf
+  den Gebietsseiten</label>
+  <label for="board-name">Name (optional)</label>
+  <input id="board-name" type="text" maxlength="20" autocomplete="off" spellcheck="false">
+  <p class="small">Lass ihn leer, dann erscheinst du unter einem Namen, den GoldScout erfindet, etwa Patient Boar.
+  Ein eigener Name erscheint, sobald er freigegeben ist. Dein Charakter- oder Accountname würde anderen verraten,
+  wer du bist. Schalte das jederzeit ab, um wieder anonym zu sein.</p>
+  <button class="btn" type="button" id="board-save">Speichern</button>
+  <p id="board-status" class="share-status" role="status" aria-live="polite"></p>
+</section>
 <noscript><p class="small">Dieses Formular braucht JavaScript. Du kannst stattdessen über das
 <a href="%(share)s">GitHub-Formular</a> teilen.</p></noscript>
 
@@ -920,8 +959,10 @@ zufälligen ID im öffentlichen <a href="%(source)s">GitHub-Repository</a>, wie 
 Schlüssel für deine Daten, so wie die Companion-App, damit nur er sie aktualisieren kann. Wenn du auch die
 Companion-App nutzt, teilt sie bereits für dich.</p>
 <h3>Kann ich meinen Namen in der Bestenliste zeigen?</h3>
-<p>Alle, die teilen, stehen anonym in der <a href="/leaderboard" lang="en">Bestenliste</a> und auf den
-Gebietsseiten. Einen Namen wählst du in <a href="/de/companion">GoldScout Companion</a>.</p>
+<p>Alle, die teilen, stehen in der <a href="/leaderboard" lang="en">Bestenliste</a> und auf den Gebietsseiten,
+anonym, außer sie wählen etwas anderes. Nach dem Teilen erscheint auf dieser Seite, in diesem Browser,
+<b>Dein Eintrag in der Bestenliste</b>: dein Rang und ob du gezeigt wirst, unter einem von GoldScout erfundenen
+oder einem eigenen Namen.</p>
 <h3>Lieber über GitHub?</h3>
 <p>Das <a href="%(share)s">GitHub-Formular</a> funktioniert weiterhin (auf Englisch). Es veröffentlicht deinen Export
 als öffentliches Issue unter deinem GitHub-Konto.</p>

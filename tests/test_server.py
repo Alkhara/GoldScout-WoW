@@ -398,6 +398,34 @@ class ServerTests(unittest.TestCase):
         self.assertEqual(status, 200)
         return [(row["rank"], row["name"], row["kills"]) for row in board["top"]], board
 
+    def test_the_share_page_can_set_its_leaderboard_entry(self):
+        # site/share.js reads and changes the uploader's own entry from the browser: preflight and replies.
+        request = urllib.request.Request(SERVER + "/v1/leaderboard/me", method="OPTIONS", headers={
+            "Origin": "https://wowgoldscout.com", "Access-Control-Request-Method": "PUT",
+            "Access-Control-Request-Headers": "authorization,content-type,x-goldscout-install"})
+        with urllib.request.urlopen(request, timeout=10) as response:
+            self.assertEqual(response.status, 204)
+            self.assertEqual(response.headers["Access-Control-Allow-Origin"], "*")
+            self.assertIn("PUT", response.headers["Access-Control-Allow-Methods"])
+            allowed = response.headers["Access-Control-Allow-Headers"].lower()
+            for header in ("authorization", "content-type", "x-goldscout-install"):
+                self.assertIn(header, allowed)
+        install = new_install()
+        token = register(install)[1]["token"]
+        request = urllib.request.Request(SERVER + "/v1/leaderboard/me", method="PUT",
+                                         data=json.dumps({"public": True, "name": None}).encode(), headers={
+                                             "Origin": "https://wowgoldscout.com", "X-GoldScout-Install": install,
+                                             "Authorization": "Bearer " + token, "Content-Type": "application/json"})
+        with urllib.request.urlopen(request, timeout=10) as response:
+            self.assertEqual(response.headers["Access-Control-Allow-Origin"], "*")
+            self.assertTrue(json.loads(response.read())["public"])
+        request = urllib.request.Request(SERVER + "/v1/leaderboard/me", headers={
+            "Origin": "https://wowgoldscout.com", "X-GoldScout-Install": install, "Authorization": "Bearer " + "0" * 64})
+        with self.assertRaises(urllib.error.HTTPError) as caught:
+            urllib.request.urlopen(request, timeout=10)
+        self.assertEqual(caught.exception.code, 403)
+        self.assertEqual(caught.exception.headers["Access-Control-Allow-Origin"], "*")
+
     def test_leaderboard_ranks_everyone_and_names_only_who_asked(self):
         first, second, unclaimed = new_install(), new_install(), new_install()
         token = register(first)[1]["token"]

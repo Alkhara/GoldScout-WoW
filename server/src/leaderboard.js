@@ -4,8 +4,9 @@
 // out by tools/leaderboard.py from the validated submissions on main (each
 // mob's kills capped like tools/merge_data.py caps them), and sent hourly by
 // the data merge workflow. Everyone with a score is ranked; nobody is named
-// unless they choose it in GoldScout Companion, which proves which install it
-// speaks for with that install's upload token. A player who opts in is shown
+// unless they choose it in GoldScout Companion or on the website's share page
+// (site/share.js), which prove which install they speak for with that
+// install's upload token. A player who opts in is shown
 // under a made-up alias, or under a name of their own once it's approved on
 // the admin dashboard. Install IDs never leave this file.
 //

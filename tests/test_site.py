@@ -535,6 +535,22 @@ class SharePageTests(unittest.TestCase):
         self.assertIn("textContent", script)
         self.assertNotIn("innerHTML", script)
 
+    def test_leaderboard_box(self):
+        # The same box on both pages (share.js finds it by these ids), and the same name rule as the server.
+        build = site_build()
+        english, german = build.share_page()[2], build.share_page_de()[2]
+        ids = re.compile(r'id="(board-[^"]+|share-board)"')
+        self.assertEqual(set(ids.findall(english)), {"share-board", "board-rank", "board-public", "board-name",
+                                                     "board-save", "board-status"})
+        self.assertEqual(ids.findall(english), ids.findall(german))
+        self.assertIn('<section id="share-board" class="share-board" hidden>', english)
+        script = (ROOT / "site" / "share.js").read_text(encoding="utf-8")
+        server = (ROOT / "server" / "src" / "leaderboard.js").read_text(encoding="utf-8")
+        for element in set(ids.findall(english)):
+            self.assertIn('getElementById("%s")' % element, script)
+        self.assertEqual(re.search(r"var NAME = (/.*/u);", script).group(1),
+                         re.search(r"const NAME = (/.*/u);", server).group(1))
+
     def test_pages_point_to_it(self):
         build = site_build()
         self.assertIn('href="/share"', build.page(dict(build.stats([], {}), targets="")))

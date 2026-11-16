@@ -10,8 +10,7 @@
 //                      Authorization: Bearer <token> after the first upload.
 //                      The website's share page (wowgoldscout.com/share,
 //                      site/share.js) posts here too, from the browser:
-//                      OPTIONS answers its CORS preflight. No cookies are
-//                      involved, so any origin may call it, as any program can.
+//                      OPTIONS answers its CORS preflight (preflight() below).
 //   GET  /v1/uploads   admin only (Authorization: Bearer <ADMIN_TOKEN>).
 //                      ?since=<unix seconds> limits it to newer uploads. Each
 //                      upload lists the companion version it last came from.
@@ -60,12 +59,20 @@ const CLIENT_AGENT = /^GoldScoutCompanion\/([0-9A-Za-z.+-]{1,24})(?: \(([A-Za-z]
 const CLIENT_SYSTEMS = new Set(["Windows", "macOS"]);
 // Uploads from the website's share page are recorded as client "web".
 const SITE_ORIGINS = new Set(["https://wowgoldscout.com", "https://www.wowgoldscout.com"]);
-const UPLOAD_CORS = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Methods": "POST",
-  "Access-Control-Allow-Headers": "Authorization, Content-Type, X-GoldScout-Terms",
-  "Access-Control-Max-Age": "86400",
-};
+// CORS preflight answers for the routes the share page calls from the browser (site/share.js): uploads,
+// and the uploader's own leaderboard entry. They take the upload token in a header, never cookies, so
+// any origin may call them, as any program can.
+function preflight(methods, headers) {
+  return new Response(null, {
+    status: 204,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": methods,
+      "Access-Control-Allow-Headers": headers,
+      "Access-Control-Max-Age": "86400",
+    },
+  });
+}
 const CLIENT_REGIONS = new Set(["us", "eu", "kr", "tw", "cn"]);
 const SOURCE = "Auction data from the Blizzard Entertainment Game Data API. GoldScout is not affiliated with or endorsed by Blizzard.";
 const PRICES_MAX_BYTES = 1900000; // D1 rows hold up to 2 MB
@@ -105,10 +112,16 @@ export default {
       if (admin) {
         return admin;
       }
+      if (url.pathname === "/v1/leaderboard/me" && request.method === "OPTIONS") {
+        return preflight("GET, PUT", "Authorization, Content-Type, X-GoldScout-Install");
+      }
       if (url.pathname.startsWith("/v1/leaderboard") || url.pathname === "/v1/admin/leaderboard") {
         const answer = await handleLeaderboard(request, env, url,
           { json, publicJson, sha256, sameText, bearer, isAdminToken: adminToken });
         if (answer) {
+          if (url.pathname === "/v1/leaderboard/me") {
+            answer.headers.set("Access-Control-Allow-Origin", "*");   // the share page reads it
+          }
           return answer;
         }
       }
@@ -121,7 +134,7 @@ export default {
         return answer;
       }
       if (url.pathname === "/v1/uploads" && request.method === "OPTIONS") {
-        return new Response(null, { status: 204, headers: UPLOAD_CORS });
+        return preflight("POST", "Authorization, Content-Type, X-GoldScout-Terms");
       }
       if (url.pathname === "/v1/errors" && request.method === "POST") {
         return await receiveErrors(request, env, clientVersion(request));
