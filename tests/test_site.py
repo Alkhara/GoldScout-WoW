@@ -604,6 +604,70 @@ class GermanJoinPagesTests(unittest.TestCase):
         self.assertGreater(len(keys.findall(german)), 10)
 
 
+class GermanSitePagesTests(unittest.TestCase):
+    """/de/, /de/faq and /de/leaderboard: the rest of the site in German."""
+
+    def setUp(self):
+        self.build = site_build()
+
+    def test_faq_matches_english(self):
+        self.assertEqual([len(questions) for _, questions in self.build.FAQ_DE],
+                         [len(questions) for _, questions in self.build.FAQ])
+        _, _, english = self.build.faq_page()
+        title, _, german = self.build.faq_page("de")
+        self.assertEqual(title, "GoldScout-FAQ: Fragen zum Gold-Addon für WoW Forever")
+        anchors = re.compile(r'<h2 id="([^"]+)"')
+        self.assertEqual(anchors.findall(english), anchors.findall(german))   # /faq#prices works on /de/faq
+        self.assertIn('"@type": "FAQPage"', german.replace('":"', '": "'))
+        self.assertIn('href="/de/share"', german)
+        self.assertNotIn("kostenlos", german.lower())
+
+    def test_home_page(self):
+        s = {"contributors": 1234, "mobs": 888, "kills": 20420, "drops": 18234, "updated": "x",
+             "updated_iso": "2026-11-16", "targets_de": "<section class=targets>T</section>"}
+        home = self.build.page_de(s)
+        self.assertIn('<html lang="de">', home)
+        self.assertIn('<link rel="canonical" href="https://wowgoldscout.com/de/">', home)
+        self.assertIn('hreflang="en" href="https://wowgoldscout.com/"', home)
+        self.assertIn('class="lang-switch" href="/"', home)
+        self.assertIn("<b>1.234</b><span>Mitwirkende</span>", home)
+        self.assertIn("Zuletzt aktualisiert am 16. November 2026.", home)
+        self.assertIn("<section class=targets>T</section>", home)
+        self.assertIn('placeholder="Gegenstände, Gegner, Gebiete"', home)
+        self.assertNotIn("kostenlos", home.lower())
+        english = self.build.page(dict(s, targets=""))
+        self.assertIn('class="lang-switch" href="/de/"', english)
+        self.assertIn('hreflang="de" href="https://wowgoldscout.com/de/"', english)
+        # The same sections and screenshots as the English home page.
+        sections = re.compile(r'<section id="([^"]+)"|src="/?screenshots/([^"]+)"')
+        self.assertEqual(sections.findall(english), sections.findall(home))
+
+    def test_leaderboard(self):
+        title, _, body = self.build.leaderboard_page_de()
+        self.assertEqual(title, "Bestenliste der Mitwirkenden")
+        for marker in ('id="leaderboard-status"', '<table id="leaderboard" hidden>', '<script src="/leaderboard.js"'):
+            self.assertIn(marker, body)
+        script = (ROOT / "site" / "leaderboard.js").read_text(encoding="utf-8")
+        german, english = re.search(r'GERMAN \? \{(.*?)\} : \{(.*?)\};', script, re.S).groups()
+        keys = re.compile(r"^\s+(\w+):", re.M)
+        self.assertEqual(keys.findall(german), keys.findall(english))
+        self.assertNotIn("innerHTML", script)
+
+    def test_german_links_stay_german(self):
+        chrome = self.build.CHROME["de"]
+        for path in ("/de/leaderboard", "/de/faq", "/de/"):
+            self.assertIn('href="%s"' % path, chrome["nav"] + chrome["footer"])
+        self.assertNotIn('lang="en">Leaderboard', chrome["nav"] + chrome["footer"])
+        self.assertTrue(data_pages.is_local_page("/"))
+        self.assertFalse(data_pages.is_local_page("/not-translated"))
+        data_pages.LANG = "de"
+        try:
+            self.assertEqual(data_pages.P("/"), "/de/")
+            self.assertEqual(data_pages.P("/leaderboard"), "/de/leaderboard")
+        finally:
+            data_pages.LANG = "en"
+
+
 class ChampionsScriptTests(unittest.TestCase):
     def test_writes_text_only(self):
         script = (ROOT / "site" / "champions.js").read_text(encoding="utf-8")
@@ -723,9 +787,9 @@ class LayoutLanguageTests(unittest.TestCase):
         self.assertIn('<a href="/de/farms">Farmen nach Stufe</a>', german)
         self.assertIn("Gegenstände, Gegner und Gebiete suchen", german)
         # English-only pages have no German version to point to.
-        faq = build.layout("FAQ", "D", "/faq", "<p>x</p>")
-        self.assertNotIn("hreflang", faq)
-        self.assertNotIn('class="lang-switch"', faq)
+        english_only = build.layout("Elsewhere", "D", "/not-translated", "<p>x</p>")   # no German version
+        self.assertNotIn("hreflang", english_only)
+        self.assertNotIn('class="lang-switch"', english_only)
 
     def test_scripts_know_german(self):
         for name in ("prices.js", "search.js", "champions.js"):

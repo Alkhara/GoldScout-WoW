@@ -46,10 +46,10 @@ ADDON = Path(__file__).resolve().parent.parent / "GoldScout"
 LANG = "en"                      # "de" while the German pages are built (build_language)
 LANGUAGES = {"de": "deDE"}       # page language -> the game client language whose names it uses
 MISSING = set()                  # texts looked up on a German page with no German yet (the tests keep it empty)
-# Pages that exist in every language; everything else (home, FAQ, leaderboard...) is English only. The
-# companion and share pages are written by site/build.py; the rest by build() here.
+# Pages that exist in every language (and the home page, "/"). The home page, companion, share, FAQ and
+# leaderboard pages are written by site/build.py; the rest by build() here.
 LOCAL_PAGES = ("/item/", "/mob/", "/zone/", "/farms", "/fishing", "/data-wanted", "/drop-rates", "/search",
-               "/companion", "/share")
+               "/companion", "/share", "/leaderboard", "/faq")
 
 
 def T(text):
@@ -74,7 +74,7 @@ def num(n):
 
 
 def is_local_page(path):
-    return any(path == prefix.rstrip("/") or path.startswith(prefix) for prefix in LOCAL_PAGES)
+    return path == "/" or any(path == prefix.rstrip("/") or path.startswith(prefix) for prefix in LOCAL_PAGES)
 
 
 def P(path):
@@ -988,10 +988,11 @@ def zone_goal_section(data, map_id):
             for npc in goal["left"][:GOAL_LEFT])
     # Zone champions: filled in by site/champions.js from the server's leaderboard (hidden until then).
     champions = ('<div id=zone-champions data-zone="%d" hidden><p class=sub>%s</p><ol class=champions></ol>'
-                 '<p class=small>%s <a href="/leaderboard">%s</a></p></div>'
+                 '<p class=small>%s <a href="%s">%s</a></p></div>'
                  '<script src="/champions.js" defer></script>'
                  % (map_id, T("Zone champions: the players with the most kills here."),
-                    T("Named only if they choose it in GoldScout Companion."), T("Contributor leaderboard")))
+                    T("Named only if they choose it in GoldScout Companion."), P("/leaderboard"),
+                    T("Contributor leaderboard")))
     return '<section class=zone-goal><h2>%s</h2>%s%s%s%s</section>' % (T("Zone goal"), goal_bar(goal), text, left,
                                                                        champions)
 
