@@ -7,6 +7,9 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- **By item ranks items by what they earn themselves:** with **Count all loot** on, every item row used to add its mob's vendor trash and other drops to its gold per hour, so a cheap drop from a mob with good trash could top the list. Now an item row counts only its item, and its tooltip says what the mob's other loot adds. The **By mob** view counts everything a mob drops, as before.
+- **Count all loot is now on for everyone,** since it only changes the By mob view. Turn it off in Settings › Farm list, or with `/gscout set allloot off`.
+
 ## v0.12.14
 
 - **Share on the website:** `/gscout export` now points to wowgoldscout.com/share, where you paste your export and press Share. No GitHub account needed, and you can put your name on the leaderboard from there too; the GitHub form still works. The site also shows the community goals: players sharing, kills, and mobs with solid drop rates.

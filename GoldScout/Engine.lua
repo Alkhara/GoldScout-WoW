@@ -732,17 +732,18 @@ function Engine:Farms()
     return KillsPerHour(level, mobLevel, settings.killsPerHour)
   end
 
-  -- With "Count all loot" on, a mob row also earns everything else that mob
-  -- drops (vendor trash, other items) per kill, from your loot and the
-  -- community's. Sets row.otherLoot and adds it to row.hour.
-  local function AddOtherLoot(row, npcID, kills)
+  -- With "Count all loot" on, notes everything else a mob drops (vendor
+  -- trash, other items) per kill, from your loot and the community's, in
+  -- row.otherLoot. An item row's gold per hour stays that item's own, so a
+  -- cheap drop from a mob with good trash doesn't top the By item list; the
+  -- By mob view (MobFarms) adds the other loot once per mob.
+  local function AddOtherLoot(row, npcID)
     if not settings.allLoot or not row.each or not npcID then
       return row
     end
     local value, seen, parts = ns.KillLootValue(row.item, ns.Learn:Entry(npcID), ns.COMMUNITY[npcID])
     if seen >= OTHER_LOOT_MIN_KILLS and value > 0 then
       row.otherLoot, row.otherLootKills, row.otherLootParts = value, seen, parts
-      row.hour = (row.each + value) * kills
     end
     return row
   end
@@ -760,7 +761,7 @@ function Engine:Farms()
         seenRate = seenRate, seenTrials = seenTrials, npc = drop.npc, perHour = kills,
         each = each, hour = each and each * kills,
         listed = listed, age = age, note = drop.note, hunt = DropHunt(drop),
-      }, drop.npc, kills)
+      }, drop.npc)
     end
   end
 
@@ -866,7 +867,7 @@ function Engine:Farms()
                 listed = listed, age = age,
                 note = note,
                 hunt = MobHunt("Learned:" .. npcID .. ":" .. itemID, "kill", itemID, rate, mob, zone, npcID, nil),
-              }, npcID, kills)
+              }, npcID)
             end
           end
         end

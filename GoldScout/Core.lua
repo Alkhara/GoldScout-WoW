@@ -27,7 +27,7 @@ local DEFAULT_SETTINGS = {
   knownRatesOnly = false, -- hide AH items that have no drop rate yet
   showRareDrops = false,  -- show BoE gear, recipes and gems (rare world drops)
   showCloth = false,      -- show rough per-kill cloth rows for humanoids
-  allLoot = false,        -- add a mob's other loot (vendor trash too) to its rows' gold per hour
+  allLoot = true,         -- By mob: add a mob's other loot (vendor trash too) to its gold per hour
   farmView = "item",      -- Farm tab: "item" (one row per item), "mob" (one row per mob) or "wanted" (mobs that need kills)
   huntWaypoint = true,    -- hunts place Blizzard's map waypoint at the farm
   huntMarkers = true,     -- hunts put an icon over matching mobs' nameplates
@@ -551,7 +551,7 @@ ns.On("ADDON_ACTION_FORBIDDEN", OnBlocked)
 --   * new saved data starts at the current version and runs no steps;
 --   * data from a newer GoldScout (the addon was downgraded) is left alone.
 -- Tests: tests/test_engine_lua.py SavedDataTests.
-ns.SCHEMA = 3
+ns.SCHEMA = 4
 ns.UPGRADES = {
   [2] = function(db)
     db.settings = db.settings or {}
@@ -559,6 +559,12 @@ ns.UPGRADES = {
   end,
   [3] = function(db)
     db.seenIntro = true -- the first-run welcome is for new players, not everyone updating
+  end,
+  [4] = function(db)
+    -- Count all loot now only changes the By mob view (an item row counts only its item), so it's on for
+    -- everyone: off was the old default, saved for every player whether they chose it or not.
+    db.settings = db.settings or {}
+    db.settings.allLoot = true
   end,
 }
 ns.CHAR_SCHEMA = 1

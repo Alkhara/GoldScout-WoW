@@ -206,9 +206,6 @@ local function MobCellText(key, row)
     return text
   elseif key == "lvl" and row.child then
     return ""
-  elseif key == "hour" and row.child and row.otherLoot and row.perHour and row.each then
-    -- Under a mob, an item earns only its own share; the mob's other loot has its own line.
-    return ns.Money(row.each * row.perHour)
   elseif key == "each" and row.unknownRate and not row.each then
     return Gray("?")
   end
@@ -406,14 +403,11 @@ local function FarmTooltip(row)
   end
   if not row.unknownRate then
     AddMoneyLine(L["Expected value per %s"]:format(Per(row.per)), row.each)
-    if row.otherLoot then
-      AddMoneyLine(L["Other loot per kill"], row.otherLoot)
-      AddOtherLootLines(row)
-    end
     AddMoneyLine(L["Rough estimate per hour"], row.hour)
-    if row.otherLoot then
-      GameTooltip:AddLine((L["Includes the mob's other loot, vendor trash too, from %d kills (not coin)."]):format(
-        row.otherLootKills), 0.6, 0.6, 0.6, true)
+    if row.otherLoot and not row.child then
+      -- This item's own gold per hour; the mob's other loot counts in the By mob view.
+      GameTooltip:AddLine((L["By mob adds this mob's other loot too, about %s a kill."]):format(
+        ns.Money(row.otherLoot)), 0.6, 0.6, 0.6, true)
     end
   end
   if row.xp then

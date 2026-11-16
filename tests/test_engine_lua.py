@@ -303,6 +303,15 @@ class ErrorLogTests(FarmRulesTests.__bases__[0]):
         self.fake.frame.scripts["OnEvent"](None, "ADDON_LOADED", "GoldScout")
         self.assertTrue(saved.settings.autoScan)                       # ...stays on
 
+    def test_count_all_loot_turns_on_once_for_existing_players(self):
+        saved = self.lua.eval("{ schema = 3, settings = { allLoot = false } }")   # the old default, saved
+        self.lua.globals().GoldScoutDB = saved
+        self.fake.frame.scripts["OnEvent"](None, "ADDON_LOADED", "GoldScout")
+        self.assertTrue(saved.settings.allLoot)
+        saved.settings.allLoot = False                                 # turned off by choice...
+        self.fake.frame.scripts["OnEvent"](None, "ADDON_LOADED", "GoldScout")
+        self.assertFalse(saved.settings.allLoot)                       # ...stays off
+
     # -- The Farm tab's filter row (Core.lua ns.FitRow) ---------------------------
     def fit(self, widths, room):
         gap, cap = self.ns.FitRow(self.lua.table(*widths), 26, room, 14, 4)
@@ -380,7 +389,8 @@ class ErrorLogTests(FarmRulesTests.__bases__[0]):
 
 @unittest.skipIf(lua51 is None, "lupa is not installed")
 class AllLootTests(unittest.TestCase):
-    """Count all loot in gold per hour: a mob row also earns the mob's other loot."""
+    """Count all loot in gold per hour: the By mob view also earns the mob's other loot; an item row notes it
+    (for its tooltip and MobFarms) but its gold per hour stays that item's own."""
     setUp = FarmRulesTests.setUp
     run_lua, run_file, item, drops, rows = (FarmRulesTests.run_lua, FarmRulesTests.run_file, FarmRulesTests.item,
                                             FarmRulesTests.drops, FarmRulesTests.rows)
@@ -395,21 +405,41 @@ class AllLootTests(unittest.TestCase):
     def row(self):
         return self.rows()[("Learned", 5000)]
 
-    def test_off_by_default_counts_only_the_item(self):
+    def test_on_by_default(self):
+        self.assertTrue(self.ns.db.settings.allLoot)
+
+    def test_off_notes_nothing(self):
         self.mob()
+        self.ns.db.settings.allLoot = False
         row = self.row()
         self.assertIsNone(row.otherLoot)
         self.assertGreater(row.hour, 0)
 
-    def test_on_adds_the_other_loot_per_kill(self):
+    def test_on_notes_the_other_loot_but_the_item_row_keeps_its_own_gold_per_hour(self):
         self.mob()
+        self.ns.db.settings.allLoot = False
         before = self.row()
         self.ns.db.settings.allLoot = True
         row = self.row()
         self.assertAlmostEqual(row.otherLoot, (50 * 15 + 950 * 6) / 15)    # 430 a kill; the reagent isn't counted twice
         self.assertEqual(row.otherLootKills, 15)
         self.assertAlmostEqual(row.each, before.each)
-        self.assertAlmostEqual(row.hour, before.hour * (row.each + row.otherLoot) / row.each)
+        self.assertAlmostEqual(row.hour, before.hour)
+
+    def test_a_cheap_drop_from_a_mob_with_good_trash_doesnt_top_the_item_list(self):
+        # A player's report: a 1% claw from Coyotes topped the list because Coyotes' trash pays well.
+        self.item(5002, price=100)                                     # the cheap drop: 95 a kill after the cut
+        self.item(5003, price=2000)                                    # a better item elsewhere: 1900
+        self.item(5100, price=0, sell=5000, quality=0, reagent=False)  # trash worth 50 silver every kill
+        self.drops(3000, 15, {5002: 15, 5100: 15}, name="Coyote")
+        self.drops(3001, 15, {5003: 15}, name="Wolf")
+        self.ns.db.settings.allLoot = True
+        rows = self.rows()
+        self.assertGreater(rows[("Learned", 5003)].hour, rows[("Learned", 5002)].hour)
+        # By mob, the Coyote's trash still counts: it earns more per kill than the Wolf.
+        mobs = {m.npc: m for m in self.ns.Engine.MobFarms(self.ns.Engine, self.ns.Engine.Farms(self.ns.Engine)).values()
+                if m.npc in (3000, 3001)}
+        self.assertGreater(mobs[3000].each, mobs[3001].each)
 
     def test_a_lucky_drop_or_two_doesnt_count(self):
         self.mob()
