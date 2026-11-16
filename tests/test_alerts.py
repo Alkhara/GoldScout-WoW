@@ -72,22 +72,27 @@ class FindProblemsTests(unittest.TestCase):
         self.assertEqual(problems(healthy(snapshot=flow("cancelled"))), {})
         self.assertEqual(problems(healthy(snapshot=None)), {})
 
-    def test_a_held_data_pull_request_alerts_right_away(self):
+    def test_a_stuck_data_pull_request_alerts_after_two_hours(self):
         def pr(**fields):
             return {"workflows": [], "data_pr": dict({"number": 147, "url": "https://github.com/x/pull/147",
                                                        "created": NOW - 600, "updated": NOW - 600}, **fields)}
-        found = problems(healthy(snapshot=pr(held=1)))["data_pr"]
-        self.assertIn("1 upload held for unusual drop rates", found)
-        self.assertIn("data/approved-installs.txt", found)
+        self.assertEqual(problems(healthy(snapshot=pr())), {})   # a slow website build merges on the next run
+        found = problems(healthy(snapshot=pr(created=NOW - 3 * HOUR)))["data_pr"]
+        self.assertIn("open 3 h", found)
         self.assertIn("https://github.com/x/pull/147", found)
-        self.assertIn("2 uploads held for unusual drop rates and 1 rejected",
-                      problems(healthy(snapshot=pr(held=2, rejected=1)))["data_pr"])
-        self.assertIn("3 rejected", problems(healthy(snapshot=pr(rejected=3)))["data_pr"])
-        # Nothing held: only once it has been open 2 h (a slow website build merges on the next run).
-        self.assertEqual(problems(healthy(snapshot=pr(held=0, rejected=0))), {})
-        self.assertIn("open 3 h", problems(healthy(snapshot=pr(created=NOW - 3 * HOUR)))["data_pr"])
         self.assertIn("open 3 h", problems(healthy(snapshot=pr(created=None, updated=NOW - 3 * HOUR)))["data_pr"])
         self.assertEqual(problems(healthy(snapshot={"workflows": [], "data_pr": None})), {})
+
+    def test_held_uploads_alert_right_away(self):
+        def snap(held):
+            return {"workflows": [], "held_uploads": held}
+        found = problems(healthy(snapshot=snap({"count": 1, "url": "https://github.com/x/runs/5"})))["held"]
+        self.assertIn("1 upload is held for review, so its data isn't in the community data", found)
+        self.assertIn("data/approved-installs.txt", found)
+        self.assertIn("https://github.com/x/runs/5", found)
+        self.assertIn("2 uploads are held", problems(healthy(snapshot=snap({"count": 2, "url": None})))["held"])
+        self.assertEqual(problems(healthy(snapshot=snap({"count": 0, "url": None}))), {})
+        self.assertEqual(problems(healthy(snapshot=snap(None))), {})
 
     def test_workflows_running_short_alert(self):
         def flow(file, expected, runs, created=NOW - 600):

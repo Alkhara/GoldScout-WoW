@@ -106,6 +106,14 @@ CREATE TABLE IF NOT EXISTS error_senders (
   companion TEXT
 );
 
+-- New error reporters per network (salted IP hash, kept 2 days, like
+-- registrations), so made-up reporter IDs can't fake "many players".
+CREATE TABLE IF NOT EXISTS error_networks (
+  ip_hash TEXT NOT NULL,
+  created_at INTEGER NOT NULL
+);
+CREATE INDEX IF NOT EXISTS error_networks_ip ON error_networks (ip_hash, created_at);
+
 -- The admin dashboard's statistics (tools/admin_stats.py, hourly): counts and
 -- coverage only; players appear as short hashed tags, never install IDs.
 CREATE TABLE IF NOT EXISTS admin_stats (

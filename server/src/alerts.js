@@ -8,9 +8,9 @@
 // (key "_names" in the alerts table): when new ones arrive, and once a day
 // while any wait. It gives only how many and a link, never the names.
 //
-// The community data pull request counts too: it alerts as soon as uploads
-// are held for review or rejected (either stops it merging itself), and after
-// 2 h open for any other reason.
+// Community data counts too: uploads held for review (as soon as the hourly
+// merge holds one; they're left out, so they don't stop the rest), and the
+// data pull request when it has been open 2 h without merging itself.
 //
 // Things that stop quietly, where every run still "succeeds", alert as well:
 // no uploads for 12 h, new community data waiting 30 h for a release, a
@@ -78,22 +78,18 @@ export function findProblems(data, now) {
     found.stats = `The hourly data merge last reported ${hours(now - data.statsUpdated)} ago, so the merge ` +
       "workflow is probably failing or not starting.";
   }
+  // The community data pull request merges itself once the website builds; held uploads are left out of it.
   const pr = data.snapshot && data.snapshot.data_pr;
-  if (pr) {
-    // The community data pull request only stays open when it needs a person: uploads held for unusual
-    // drop rates or rejected (right away), or a website build that failed or ran long (after 2 h).
-    const held = pr.held || 0;
-    const rejected = pr.rejected || 0;
-    const open = now - (pr.created || pr.updated || now);
-    if (held || rejected) {
-      const what = [held ? `${held} upload${held === 1 ? "" : "s"} held for unusual drop rates` : "",
-        rejected ? `${rejected} rejected` : ""].filter(Boolean).join(" and ");
-      found.data_pr = `Community data isn't merging: ${what}, so new drop data waits until the pull request ` +
-        `is reviewed (to accept a held upload, add its install ID to data/approved-installs.txt). ${pr.url}`;
-    } else if (open >= DATA_PR_ALERT) {
-      found.data_pr = `The community data pull request has been open ${hours(open)} without merging itself; ` +
-        `its website build may have failed. ${pr.url}`;
-    }
+  const open = pr ? now - (pr.created || pr.updated || now) : 0;
+  if (pr && open >= DATA_PR_ALERT) {
+    found.data_pr = `The community data pull request has been open ${hours(open)} without merging itself; ` +
+      `its website build may have failed. ${pr.url}`;
+  }
+  const held = data.snapshot && data.snapshot.held_uploads;
+  if (held && held.count > 0) {
+    found.held = `${held.count} upload${held.count === 1 ? " is" : "s are"} held for review, so ` +
+      `${held.count === 1 ? "its" : "their"} data isn't in the community data. The run summary says why; to ` +
+      `accept one, add its install ID to data/approved-installs.txt.` + (held.url ? " " + held.url : "");
   }
   for (const flow of (data.snapshot && data.snapshot.workflows) || []) {
     const last = flow.latest;

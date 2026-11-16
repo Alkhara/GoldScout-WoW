@@ -28,6 +28,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import merge_data  # noqa: E402
 import submission  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -222,14 +223,39 @@ def approved_installs():
             if line.strip() and not line.startswith("#")}
 
 
+FORM_TAKEOVER = ("first shared through the GitHub form, and install IDs from the form are public, so this upload "
+                 "waits in case someone else registered it. If that player switched to the companion, approve it.")
+
+
+def form_installs():
+    """Install IDs with a GitHub form submission (data/submissions/<user ID>-<install>.txt)."""
+    return {path.stem.split("-", 1)[1] for path in SUBMISSIONS.glob("*.txt")
+            if not path.name.startswith("c-") and "-" in path.stem}
+
+
+def record_install_dates(dates):
+    """Adds when each new install was first registered on the upload service to data/install-dates.json,
+    which tools/merge_data.py reads for its probation of new installs. Existing entries are kept."""
+    path = SUBMISSIONS.parent / merge_data.INSTALL_DATES_NAME
+    current = merge_data.install_dates(path)
+    added = {install: when for install, when in dates.items() if install not in current}
+    if added:
+        current.update(added)
+        path.write_text(json.dumps(dict(sorted(current.items())), indent=0) + "\n", encoding="utf-8", newline="\n")
+
+
 def collect_uploads(uploads_path):
     """Adds companion uploads (the upload service's admin listing, JSON) to
     data/submissions/c-<install ID>.txt, with the same checks as issues, and
-    appends a section about them to pr_body.md."""
+    appends a section about them to pr_body.md. An upload is held for review
+    (left out until its install ID is in data/approved-installs.txt) when its
+    rates differ sharply from other players', or when it's the first companion
+    upload for an install first shared through the form (FORM_TAKEOVER)."""
     listing = json.loads(Path(uploads_path).read_text(encoding="utf-8") or "{}")
     approved = approved_installs()
     SUBMISSIONS.mkdir(parents=True, exist_ok=True)
-    stored, held, rejected = [], [], 0
+    from_form = form_installs()
+    stored, held, rejected, dates = [], [], 0, {}
     for upload in listing.get("uploads") or []:
         install = str(upload.get("install_id", ""))
         result = submission.parse(str(upload.get("body", "")))
@@ -237,12 +263,18 @@ def collect_uploads(uploads_path):
             rejected += 1
             print("reject upload %s" % install[:12])
             continue
+        path = SUBMISSIONS / ("c-%s.txt" % install)
+        if install in from_form and not path.exists() and install not in approved:
+            held.append((install, len(result.mobs), [FORM_TAKEOVER]))
+            print("hold upload %s (first shared through the form)" % install)
+            continue
         submission.compare(result, others(exclude_install=install))
         if result.warnings and install not in approved:
             held.append((install, len(result.mobs), result.warnings))
             print("hold upload %s (rate warnings)" % install)
             continue
-        path = SUBMISSIONS / ("c-%s.txt" % install)
+        if isinstance(upload.get("created_at"), int):
+            dates[install] = upload["created_at"]
         if path.exists():
             current = submission.parse(path.read_text(encoding="utf-8"))
             if current.ok and current.seq >= result.seq:
@@ -250,6 +282,7 @@ def collect_uploads(uploads_path):
         path.write_text(result.text(), encoding="utf-8", newline="\n")
         stored.append((install, result.seq, len(result.mobs), len(result.warnings)))
         print("store upload %s snapshot %d" % (install, result.seq))
+    record_install_dates(dates)
 
     body = ["", "### Companion uploads", ""]
     if stored:
@@ -258,8 +291,8 @@ def collect_uploads(uploads_path):
     else:
         body.append("No new companion uploads.")
     if held:
-        body += ["", "Held back because some drop rates differ sharply from other players' data. To accept "
-                 "one, add its install ID to `data/approved-installs.txt` and run the workflow again:", ""]
+        body += ["", "Held back for review, and left out until accepted. To accept one, add its install ID to "
+                 "`data/approved-installs.txt` and run the workflow again:", ""]
         for install, mobs, warnings in held:
             body.append("- `%s` (%d mobs): %s" % (install, mobs, "; ".join(warnings[:3])))
     if rejected:

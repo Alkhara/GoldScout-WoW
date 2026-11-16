@@ -91,7 +91,8 @@ many times, and which companion version uploaded it last, on which system
 The token stops anyone else replacing your install's data. Like any website,
 Cloudflare sees your IP address when the companion connects; we don't store it.
 To limit abuse, the service keeps a salted, one-way hash of the address for two
-days when a new install registers, then deletes it. Cloudflare processes data
+days when a new install registers, or when a copy of the companion sends its
+first error report, then deletes it. Cloudflare processes data
 as described in its own [privacy policy](https://www.cloudflare.com/privacypolicy/).
 
 Accepted uploads are added to the public repository like form submissions, in

@@ -8,6 +8,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from unittest import mock
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -294,6 +295,39 @@ class BotTests(unittest.TestCase):
         self.assertIn("`abcdefghijkl` | 5 |", body)
         self.assertIn("2 upload(s) failed validation", body)
 
+    def upload(self, install="abcdefghijkl", seq=5, created=None):
+        entry = {"install_id": install, "seq": seq, "terms": "2026-11-07",
+                 "body": GOOD.replace("abcdefghijkl", install).replace("^3\n", "^%d\n" % seq, 1)}
+        if created is not None:
+            entry["created_at"] = created
+        Path("uploads.json").write_text(json.dumps({"uploads": [entry]}), encoding="utf-8")
+        Path("pr_body.md").write_text("", encoding="utf-8")
+        data_bot.collect_uploads("uploads.json")
+        return Path("pr_body.md").read_text(encoding="utf-8")
+
+    def test_a_companion_upload_for_an_install_from_the_form_waits_for_review(self):
+        # Form submissions make install IDs public, so someone else could register one on the upload service.
+        (data_bot.SUBMISSIONS / "7-abcdefghijkl.txt").write_text(GOOD, encoding="utf-8")
+        body = self.upload()
+        self.assertFalse((data_bot.SUBMISSIONS / "c-abcdefghijkl.txt").exists())
+        self.assertIn("first shared through the GitHub form", body)
+        self.assertIn("Held back for review", body)
+        with mock.patch.object(data_bot, "approved_installs", return_value={"abcdefghijkl"}):
+            self.upload()
+        self.assertTrue((data_bot.SUBMISSIONS / "c-abcdefghijkl.txt").exists())
+        self.upload(seq=6)   # once its companion file exists, later uploads go straight in
+        self.assertEqual(submission.parse((data_bot.SUBMISSIONS / "c-abcdefghijkl.txt").read_text(
+            encoding="utf-8")).seq, 6)
+
+    def test_upload_dates_are_recorded_once(self):
+        dates = data_bot.SUBMISSIONS.parent / "install-dates.json"
+        self.upload(created=1_800_000_000)
+        self.assertEqual(json.loads(dates.read_text(encoding="utf-8")), {"abcdefghijkl": 1_800_000_000})
+        self.upload(seq=6, created=1_900_000_000)
+        self.upload(install="zzzzzzzzzzzz", created=1_800_000_500)
+        self.assertEqual(json.loads(dates.read_text(encoding="utf-8")),
+                         {"abcdefghijkl": 1_800_000_000, "zzzzzzzzzzzz": 1_800_000_500})
+
     def test_review_label_needs_approval(self):
         (data_bot.SUBMISSIONS / "999.txt").write_text(
             "GoldScout-export 2^abcdefghijkl^3\n3812^2000^0^19^20^1440^0.1179^0.2989^500^Clattering Crawler^"
@@ -323,6 +357,31 @@ class MergeTests(unittest.TestCase):
             # The companion upload wins over a higher-numbered issue submission.
             self.assertEqual(loaded["abcdefghijkl"].seq, 3)
             self.assertIn("3010:6:6", loaded["abcdefghijkl"].text())
+
+    def test_new_installs_wait_to_add_mobs_nobody_else_has(self):
+        now = 1_800_000_000
+        with tempfile.TemporaryDirectory() as tmp:
+            folder = Path(tmp) / "submissions"
+            folder.mkdir()
+            # An established player has only the Clattering Crawler; a day-old install has both crawlers.
+            (folder / "8-zzzzzzzzzzzz.txt").write_text("GoldScout-export 2^zzzzzzzzzzzz^3\n" + CLATTERING + "\n",
+                                                        encoding="utf-8")
+            (folder / "c-abcdefghijkl.txt").write_text(GOOD, encoding="utf-8")
+            (Path(tmp) / "install-dates.json").write_text(json.dumps({"abcdefghijkl": now - 86400}), encoding="utf-8")
+            loaded = {r.install_id: r for r in merge_data.load(folder, now=now)}
+            self.assertEqual([m.npc for m in loaded["abcdefghijkl"].mobs], [3812])   # 3814 waits
+            self.assertEqual([m.npc for m in loaded["zzzzzzzzzzzz"].mobs], [3812])
+            loaded = {r.install_id: r for r in merge_data.load(folder, now=now + 3 * 86400)}
+            self.assertEqual(sorted(m.npc for m in loaded["abcdefghijkl"].mobs), [3812, 3814])   # three days on
+
+    def test_installs_without_a_date_are_established(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            folder = Path(tmp) / "submissions"
+            folder.mkdir()
+            (folder / "c-abcdefghijkl.txt").write_text(GOOD, encoding="utf-8")
+            self.assertEqual(len(merge_data.load(folder)[0].mobs), 2)
+            (Path(tmp) / "install-dates.json").write_text("not json", encoding="utf-8")
+            self.assertEqual(len(merge_data.load(folder)[0].mobs), 2)
 
     def test_one_player_is_capped(self):
         heavy = submission.parse(

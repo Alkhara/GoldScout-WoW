@@ -19,8 +19,10 @@ of fishing pool, per zone) count up to --max-per-player.
 """
 import argparse
 import hashlib
+import json
 import math
 import sys
+import time
 from collections import defaultdict
 from pathlib import Path
 
@@ -31,13 +33,50 @@ ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_INPUT = ROOT / "data" / "submissions"
 TARGET = ROOT / "GoldScout" / "Data_Community.lua"
 MAX_PER_PLAYER = 1000   # most kills (and picks, and catches at a spot) of one mob counted from one player
+INSTALL_DATES_NAME = "install-dates.json"   # beside the submissions folder; tools/data_bot.py keeps it
+INSTALL_DATES = ROOT / "data" / INSTALL_DATES_NAME
+PROBATION = 3 * 86400   # how long a new install's mobs that nobody else has recorded wait
 
 
-def load(folder):
+def install_dates(path):
+    """{install ID: when the upload service first registered it}, or {} without the file."""
+    try:
+        data = json.loads(Path(path).read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    return {str(k): v for k, v in data.items() if isinstance(v, int)} if isinstance(data, dict) else {}
+
+
+def probation(results, dates, now):
+    """Leaves out a new install's mobs (and fishing spots) that no established install has recorded, until
+    it's PROBATION old, so a made-up upload can't add drop rates on its own the moment it arrives. Installs
+    without a date (from before dates were kept, and form submissions, which need a GitHub account) are
+    established. Leaving whole mobs out keeps the addon's own-loot subtraction exact (Community.lua
+    Subtract only touches mobs that are in the community data)."""
+    new = {install for install, when in dates.items() if now - when < PROBATION}
+    if not new or not any(result.install_id in new for result in results):
+        return results
+    established = [result for result in results if result.install_id not in new]
+    mobs = {mob.npc for result in established for mob in result.mobs if mob.k or mob.p}
+    spots = {(fish.m, fish.spot) for result in established for fish in result.fishing}
+    for result in results:
+        if result.install_id in new:
+            kept = [mob for mob in result.mobs if mob.npc in mobs]
+            kept_fish = [fish for fish in result.fishing if (fish.m, fish.spot) in spots]
+            waiting = len(result.mobs) - len(kept), len(result.fishing) - len(kept_fish)
+            if any(waiting):
+                print("wait %s: %d mobs and %d fishing spots only new installs have recorded join after %d days"
+                      % (result.install_id, waiting[0], waiting[1], PROBATION // 86400))
+            result.mobs, result.fishing = kept, kept_fish
+    return results
+
+
+def load(folder, now=None):
     """Reads and validates every .txt export in a folder. Returns a list of
     Results, one per install: a companion upload (c-<install>.txt, which only
     that install's token can update) beats an issue submission for the same
-    install, and otherwise the newest snapshot wins."""
+    install, and otherwise the newest snapshot wins. New installs are on
+    probation (see probation()), using the dates file beside the folder."""
     seen, best = set(), {}
     for path in sorted(Path(folder).glob("*.txt")):
         text = path.read_text(encoding="utf-8")
@@ -59,7 +98,9 @@ def load(folder):
             best[result.install_id] = (rank, result, path.name)
         else:
             print("skip %s: replaced by a newer or companion export" % path.name)
-    return [result for _, result, _ in best.values()]
+    results = [result for _, result, _ in best.values()]
+    return probation(results, install_dates(Path(folder).parent / INSTALL_DATES_NAME),
+                     time.time() if now is None else now)
 
 
 def half_up(value):

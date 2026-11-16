@@ -358,9 +358,8 @@
         ["Started by", function (w) { return Object.keys(w.by_event_24h || {}).map(function (k) {
           return k + " " + w.by_event_24h[k]; }).join(", ") || "-"; }]], flows)]),
         card("Data pull request", null, [pr ? el("p", {}, [el("a", { href: pr.url, text: "#" + pr.number }),
-          " is open, updated " + ago(now - pr.updated) + (pr.held ? ", " + num(pr.held) + " held for review" : "") +
-          (pr.rejected ? ", " + num(pr.rejected) + " rejected" : "") + ". It merges itself when nothing is held " +
-          "or rejected and the website build passes."]): el("p", { cls: "muted", text: "No data pull request is open." })]),
+          " is open, updated " + ago(now - pr.updated) + ". It merges itself once the website build passes; " +
+          "uploads held for review are left out of it."]) : el("p", { cls: "muted", text: "No data pull request is open." })]),
       ]),
     ]);
   }
@@ -417,16 +416,18 @@
       checks.push(["critical", "New community data has waited " + ago(now - waitingData) + " for a release",
         "https://github.com/Alkhara/GoldScout-WoW/actions/workflows/data-release.yml", "Open Data release"]);
     }
-    // The community data pull request: red when it needs a person (server/src/alerts.js alerts the same).
+    // Community data: red when it needs a person (server/src/alerts.js alerts the same).
     var pr = snap && snap.data_pr;
+    var held = snap && snap.held_uploads;
+    if (held && held.count > 0) {
+      checks.push(["critical", num(held.count) + (held.count === 1 ? " upload held" : " uploads held") +
+        " for review", held.url || null, "Open the merge run"]);
+    }
     if (pr) {
-      var waiting = [pr.held ? num(pr.held) + " held for review" : "", pr.rejected ? num(pr.rejected) + " rejected" : ""]
-        .filter(Boolean).join(", ");
       var open = now - (pr.created || pr.updated || now);
-      checks.push(waiting ? ["critical", "Community data isn't merging: " + waiting, pr.url, "Open the pull request"]
-        : [open >= 2 * HOUR ? "critical" : "warning", "Community data pull request open " + ago(open),
-          pr.url, "Open the pull request"]);
-    } else if (snap) {
+      checks.push([open >= 2 * HOUR ? "critical" : "warning", "Community data pull request open " + ago(open),
+        pr.url, "Open the pull request"]);
+    } else if (snap && !(held && held.count > 0)) {
       checks.push(["good", "Community data merging normally", null]);
     }
     var usage = snap && snap.requests;

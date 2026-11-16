@@ -10,6 +10,7 @@ const MAX_ERRORS = 25;
 const REPORTER = /^[0-9a-f]{16}$/;
 const VERSION = /^[0-9A-Za-z.@+-]{0,24}$/;
 const MIN_SECONDS_BETWEEN_REPORTS = 30 * 60;
+const NEW_REPORTERS_PER_NETWORK_PER_DAY = 2;   // a household's two PCs; the errors alert needs 3 players
 const KEEP_SECONDS = 90 * 86400;
 
 function reply(body, status = 200) {
@@ -100,7 +101,25 @@ export async function receiveErrors(request, env, companionVersion) {
   if (last && now - last.last_report < MIN_SECONDS_BETWEEN_REPORTS) {
     return reply({ error: "Error reports are sent at most every 30 minutes." }, 429);
   }
+  // Reporter IDs are chosen by the sender, so a new one is also limited per network: otherwise one
+  // computer could pose as any number of players (and trip the "errors from 3 players" alert).
+  const network = [];
+  if (!last) {
+    const digest = await crypto.subtle.digest("SHA-256",
+      new TextEncoder().encode((env.IP_SALT || "") + (request.headers.get("CF-Connecting-IP") || "unknown")));
+    const ipHash = [...new Uint8Array(digest)].map((b) => b.toString(16).padStart(2, "0")).join("");
+    const recent = await env.DB.prepare("SELECT COUNT(*) AS n FROM error_networks WHERE ip_hash = ? AND created_at > ?")
+      .bind(ipHash, now - 86400).first();
+    if ((recent?.n ?? 0) >= NEW_REPORTERS_PER_NETWORK_PER_DAY) {
+      return reply({ error: "Too many new error reporters from this network today." }, 429);
+    }
+    network.push(
+      env.DB.prepare("INSERT INTO error_networks (ip_hash, created_at) VALUES (?, ?)").bind(ipHash, now),
+      env.DB.prepare("DELETE FROM error_networks WHERE created_at < ?").bind(now - 2 * 86400),
+    );
+  }
   const statements = [
+    ...network,
     env.DB.prepare(
       "INSERT INTO error_senders (reporter, last_report, companion) VALUES (?, ?, ?) " +
       "ON CONFLICT (reporter) DO UPDATE SET last_report = excluded.last_report, companion = excluded.companion",

@@ -3,6 +3,9 @@
 # vulnerable package is out; these version updates catch the rest weekly.
 # Patch and minor updates merge themselves once Tests pass
 # (.github/workflows/dependabot-merge.yml); major ones wait for review.
+# Version updates only propose releases that are a week old (cooldown), so a
+# hijacked package release is usually caught and pulled before it could
+# reach players; security updates don't wait.
 version: 2
 updates:
   - package-ecosystem: pip       # what the companion bundles, and builds with
@@ -10,6 +13,8 @@ updates:
     schedule:
       interval: weekly
       day: monday
+    cooldown:
+      default-days: 7   # new versions wait a week, so a hijacked release is usually pulled first
     groups:
       companion:
         update-types: [minor, patch]
@@ -19,6 +24,8 @@ updates:
     schedule:
       interval: weekly
       day: monday
+    cooldown:
+      default-days: 7   # new versions wait a week, so a hijacked release is usually pulled first
     groups:
       test-tools:
         update-types: [minor, patch]
@@ -28,6 +35,8 @@ updates:
     schedule:
       interval: weekly
       day: monday
+    cooldown:
+      default-days: 7   # new versions wait a week, so a hijacked release is usually pulled first
     groups:
       audit-tools:
         update-types: [minor, patch]
@@ -37,6 +46,8 @@ updates:
     schedule:
       interval: weekly
       day: monday
+    cooldown:
+      default-days: 7   # new versions wait a week, so a hijacked release is usually pulled first
     groups:
       server:
         update-types: [minor, patch]
@@ -46,6 +57,8 @@ updates:
     schedule:
       interval: weekly
       day: monday
+    cooldown:
+      default-days: 7   # new versions wait a week, so a hijacked release is usually pulled first
     groups:
       actions:
         update-types: [minor, patch]

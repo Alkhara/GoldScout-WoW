@@ -360,7 +360,17 @@ def build(now, api, admin, mine):
     pulls = attempt("data pull request", lambda: github(
         "/pulls?state=open&head=%s:data/community-update" % REPO.split("/")[0])) or []
     snapshot["data_pr"] = data_pull(pulls[0]) if pulls else None
+    snapshot["held_uploads"] = held_uploads(os.environ)
     return snapshot
+
+
+def held_uploads(environ):
+    """Companion uploads this merge run held for review (DATA_HELD, from data-merge.yml), and the run whose summary
+    lists them, for the Discord alert; None outside that workflow."""
+    held = environ.get("DATA_HELD", "")
+    if not held.isdigit():
+        return None
+    return {"count": int(held), "url": environ.get("DATA_RUN_URL") or None}
 
 
 def data_pull(pull):
@@ -369,8 +379,8 @@ def data_pull(pull):
     rejected, either of which stops it merging itself. Counts only, never install IDs."""
     body = pull.get("body") or ""
     held = 0
-    if "Held back because" in body:
-        held = sum(1 for line in body.split("Held back because", 1)[1].splitlines() if line.startswith("- `"))
+    if "Held back for review" in body:
+        held = sum(1 for line in body.split("Held back for review", 1)[1].splitlines() if line.startswith("- `"))
     rejected = re.search(r"^(\d+) upload\(s\) failed validation", body, re.M)
     return {"number": pull["number"], "url": pull["html_url"], "created": parse_time(pull["created_at"]),
             "updated": parse_time(pull["updated_at"]), "held": held,
