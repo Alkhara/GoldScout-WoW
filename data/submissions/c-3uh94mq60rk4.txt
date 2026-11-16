@@ -1,4 +1,4 @@
-GoldScout-export 5^3uh94mq60rk4^20
+GoldScout-export 5^3uh94mq60rk4^21
 6^18^0^1^2^1429^0.4774^0.3633^18^Kobold Vermin^755:4:4,1367:1:1,2589:5:5,2649:1:1,2653:1:1,4536:3:3,247834:1:1,247839:3:3^
 30^1^0^5^6^1429^0.4054^0.7738^1^Forest Spider^^
 38^27^0^3^4^1429^0.5295^0.4840^27^Defias Thug^159:2:2,752:12:12,1372:2:2,1378:1:1,2070:2:2,2589:8:8,2654:1:1,2656:1:1,3363:1:1,3365:1:1^
@@ -61,6 +61,9 @@ GoldScout-export 5^3uh94mq60rk4^20
 1087^1^0^42^42^1435^0.8816^0.1926^1^Sawtooth Snapper^770:1:2^
 1096^12^0^35^36^1434^0.4478^0.1912^12^Venture Co. Geologist^1630:1:1,2750:2:2,4306:2:3,248690:1:1^
 1114^16^0^37^38^1434^0.4685^0.3448^16^Jungle Thunderer^2799:5:5,4067:1:1,4096:4:4,4097:1:1^
+1115^9^0^8^9^1426^0.6833^0.6000^9^Rockjaw Skullthumper^117:2:2,159:1:1,2589:5:6,2591:2:2,268548:1:1^
+1196^2^0^7^8^1426^0.5603^0.4981^2^Ice Claw Bear^3170:1:1^
+1201^4^0^7^8^1426^0.6220^0.5970^4^Snow Leopard^4813:2:2,4814:2:2^
 1488^7^0^43^44^1434^0.3753^0.5576^7^Zanzil Zombie^2750:1:1,3928:1:1,4016:2:2,4338:1:2,7972:1:1^
 1489^10^0^43^44^1434^0.3847^0.5701^10^Zanzil Hunter^2725:1:1,4016:3:3,4306:1:2,4338:1:2^
 1490^11^0^44^44^1434^0.3857^0.5743^11^Zanzil Witch Doctor^3964:1:1,4016:5:5,4306:1:2,4338:3:4,8152:2:2^
@@ -121,6 +124,7 @@ GoldScout-export 5^3uh94mq60rk4^20
 248463^1^0^7^7^1429^0.6002^0.4880^1^Rumbler^^
 248464^1^0^6^6^1429^0.4140^0.7941^1^Nimsy^2213:1:1,2589:1:2,2835:1:1,248002:1:1^
 248474^1^0^7^7^1429^0.6072^0.4953^1^Geosculptor Yip^^
+@i^117^Tough Jerky
 @i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
 @i^182^Garrick's Head
@@ -171,6 +175,7 @@ GoldScout-export 5^3uh94mq60rk4^20
 @i^2295^Large Boar Tusk
 @i^2466^Skullsplitter Fetish
 @i^2589^Linen Cloth
+@i^2591^Dirty Trogg Cloth
 @i^2592^Wool Cloth
 @i^2643^Loose Chain Bracers
 @i^2645^Loose Chain Gloves
@@ -254,6 +259,8 @@ GoldScout-export 5^3uh94mq60rk4^20
 @i^4608^Raw Black Truffle
 @i^4666^Burnt Leather Belt
 @i^4726^Chief Brigadier Cloak
+@i^4813^Small Leather Collar
+@i^4814^Discolored Fang
 @i^4865^Ruined Pelt
 @i^5465^Small Spider Leg
 @i^5569^Seaweed
@@ -310,6 +317,8 @@ GoldScout-export 5^3uh94mq60rk4^20
 @i^248693^Waylaid Crate: Expert Textiles
 @i^251397^Plans: Shining Mithril Gauntlet
 @i^262889^Sealed Expert's Writ
+@i^268548^Empty Powder Keg
+@q^117^1:0:0
 @q^118^1:0:0
 @q^159^1:0:0
 @q^182^1:12:0
@@ -360,6 +369,7 @@ GoldScout-export 5^3uh94mq60rk4^20
 @q^2295^0:15:0
 @q^2466^1:12:0
 @q^2589^1:7:1
+@q^2591^0:15:0
 @q^2592^1:7:1
 @q^2643^0:4:0
 @q^2645^0:4:0
@@ -443,6 +453,8 @@ GoldScout-export 5^3uh94mq60rk4^20
 @q^4608^1:0:0
 @q^4666^1:4:0
 @q^4726^2:4:0
+@q^4813^0:15:0
+@q^4814^0:15:0
 @q^4865^0:15:0
 @q^5465^1:7:1
 @q^5569^0:15:0
@@ -499,8 +511,10 @@ GoldScout-export 5^3uh94mq60rk4^20
 @q^248693^1:0:1
 @q^251397^2:9:0
 @q^262889^3:0:0
+@q^268548^1:12:0
 @m^1413^The Barrens
 @m^1414^Kalimdor
+@m^1426^Dun Morogh
 @m^1429^Elwynn Forest
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
@@ -1970,6 +1984,9 @@ GoldScout-export 5^3uh94mq60rk4^20
 @a^1087^77:1
 @a^1096^68:6,69:2,88:2,89:2
 @a^1114^109:2,128:1,129:6,149:7
+@a^1115^233:3,234:1,253:5
+@a^1196^170:1,232:1
+@a^1201^232:2,252:2
 @a^1488^206:3,227:2,228:2
 @a^1489^206:2,227:7,228:1
 @a^1490^206:2,227:7,228:2
