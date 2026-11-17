@@ -1,4 +1,4 @@
-GoldScout-export 5^z4qyxbbqhuab^2
+GoldScout-export 5^z4qyxbbqhuab^3
 48^17^0^21^22^1431^0.8000^0.6871^17^Skeletal Warrior^1205:1:1,2378:7:7,2589:3:7,2592:2:3,4306:1:1,4606:1:1,11967:1:1,15248:1:1^
 203^10^0^22^23^1431^0.7908^0.6907^10^Skeletal Mage^2378:3:3,2592:4:5,4306:1:1^
 213^1^0^19^19^1431^0.0891^0.4208^1^Starving Dire Wolf^^
@@ -8,7 +8,11 @@ GoldScout-export 5^z4qyxbbqhuab^2
 569^2^0^21^22^1431^0.1271^0.4658^2^Green Recluse^1081:1:1,2251:1:1^
 923^1^0^23^23^1431^0.4940^0.6615^1^Young Black Ravager^^
 930^11^0^24^25^1431^0.3055^0.5363^11^Black Widow Hatchling^878:1:1,1081:6:6,1130:4:4,1288:2:2,2251:1:1,3174:7:7,4428:3:3,6602:1:1^
+1201^1^0^8^8^1426^0.3645^0.3268^1^Snow Leopard^^
+1211^2^0^10^10^1426^0.2754^0.3664^2^Leper Gnome^2589:1:2^
 272291^1^0^25^25^1431^0.7917^0.6811^1^Lost Knight^275895:1:1,281147:1:1^
+276003^3^0^7^8^1426^0.5564^0.4410^3^Minor Ice Elemental^2642:1:1,4877:1:1^
+276009^1^0^8^8^1426^0.5767^0.4216^1^Avala^4877:1:1,286325:1:1^
 @i^878^Fist-sized Spinneret
 @i^954^Scroll of Strength
 @i^1081^Crisp Spider Meat
@@ -19,15 +23,18 @@ GoldScout-export 5^z4qyxbbqhuab^2
 @i^2378^Skeleton Finger
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2642^Loose Chain Boots
 @i^3174^Spider Ichor
 @i^4306^Silk Cloth
 @i^4428^Spider Palp
 @i^4606^Spongy Morel
+@i^4877^Stone Arrowhead
 @i^6602^Dervish Bracers of the Bandit
 @i^11967^Zircon Band of Eluding
 @i^15248^Gleaming Claymore of Stamina
 @i^275895^Fading Echo
 @i^281147^Grant's Shield
+@i^286325^Avala's Core
 @q^878^0:7:0
 @q^954^1:0:0
 @q^1081^1:7:1
@@ -38,15 +45,19 @@ GoldScout-export 5^z4qyxbbqhuab^2
 @q^2378^1:12:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2642^0:4:0
 @q^3174^1:7:1
 @q^4306^1:7:1
 @q^4428^0:15:0
 @q^4606^1:0:0
+@q^4877^0:15:0
 @q^6602^2:4:0
 @q^11967^2:4:0
 @q^15248^2:2:0
 @q^275895^0:15:0
 @q^281147^1:15:0
+@q^286325^1:12:0
+@m^1426^Dun Morogh
 @m^1431^Duskwood
 @m^1433^Redridge Mountains
 @c^724^
@@ -742,5 +753,9 @@ GoldScout-export 5^z4qyxbbqhuab^2
 @a^569^162:1,182:1
 @a^923^269:1
 @a^930^185:2,186:2,205:1,206:1,226:5
+@a^1201^127:1
+@a^1211^145:2
 @a^272291^275:1
+@a^276003^170:1,171:1,191:1
+@a^276009^171:1
 @l^0^enUS
