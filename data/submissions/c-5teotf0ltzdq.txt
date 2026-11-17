@@ -1,4 +1,4 @@
-GoldScout-export 5^5teotf0ltzdq^7
+GoldScout-export 5^5teotf0ltzdq^8
 205^1^0^28^29^1431^0.6110^0.7405^1^Nightbane Dark Runner^^
 206^1^0^30^30^1431^0.5855^0.7728^1^Nightbane Vile Fang^^
 587^1^0^33^33^1434^0.2781^0.1856^1^Bloodscalp Warrior^3915:1:1^
@@ -45,8 +45,8 @@ GoldScout-export 5^5teotf0ltzdq^7
 1195^3^0^10^11^1432^0.3099^0.3140^3^Forest Lurker^1081:1:1,3174:2:2^
 2667^16^0^36^37^1434^0.3693^0.3052^16^Ward of Laze^^
 2727^9^0^35^36^1418^0.5507^0.2417^9^Crag Coyote^4582:1:1,4583:1:1,4636:1:1,7846:2:4,12203:7:7^
-2731^10^0^36^37^1418^0.5927^0.3230^10^Ridge Stalker^1688:2:2,12202:8:8^
-2829^26^0^35^37^1418^0.5950^0.2873^26^Starving Buzzard^1464:9:9,3404:7:7,5116:7:7,5636:4:4,7847:5:5,11416:7:7,11418:1:1,12037:9:9^
+2731^53^0^36^37^1418^0.6102^0.3204^53^Ridge Stalker^1686:2:2,1688:13:13,1725:1:1,5637:5:5,12202:35:35^
+2829^83^0^35^37^1418^0.6085^0.3071^83^Starving Buzzard^1464:37:37,3404:30:30,5116:15:15,5636:8:8,5829:1:1,7847:5:5,9853:1:1,11416:18:18,11418:6:6,12037:37:37^
 2992^1^0^37^37^1435^0.6373^0.2022^1^Healing Ward V^^
 3560^3^0^37^37^1434^0.2492^0.1060^3^Healing Ward^^
 4260^1^0^37^37^1434^0.4443^0.1927^1^Venture Co. Shredder^^
@@ -73,6 +73,7 @@ GoldScout-export 5^5teotf0ltzdq^7
 @i^1703^Crystal Basilisk Spine
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
+@i^1725^Large Knapsack
 @i^2633^Jungle Remedy
 @i^2730^Green Hills of Stranglethorn - Page 6
 @i^2732^Green Hills of Stranglethorn - Page 8
@@ -117,6 +118,7 @@ GoldScout-export 5^5teotf0ltzdq^7
 @i^5636^Delicate Feather
 @i^5637^Large Fang
 @i^5803^Speck of Dream Dust
+@i^5829^Razor-sharp Beak
 @i^5851^Cozzle's Key
 @i^6196^Noboru's Cudgel
 @i^7434^Twilight Boots of Frost Protection
@@ -124,6 +126,7 @@ GoldScout-export 5^5teotf0ltzdq^7
 @i^7443^Sentinel Gloves of the Tiger
 @i^7846^Crag Coyote Fang
 @i^7847^Buzzard Gizzard
+@i^9853^Conjurer's Cinch of Shadow Wrath
 @i^9890^Huntsman's Cape of the Elder
 @i^11386^Squishy Basilisk Eye
 @i^11416^Delicate Ribcage
@@ -155,6 +158,7 @@ GoldScout-export 5^5teotf0ltzdq^7
 @q^1703^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
+@q^1725^1:1:0
 @q^2633^1:0:0
 @q^2730^1:12:0
 @q^2732^1:12:0
@@ -199,6 +203,7 @@ GoldScout-export 5^5teotf0ltzdq^7
 @q^5636^0:15:0
 @q^5637^1:7:1
 @q^5803^1:12:0
+@q^5829^0:15:0
 @q^5851^1:13:0
 @q^6196^0:2:0
 @q^7434^2:4:0
@@ -206,6 +211,7 @@ GoldScout-export 5^5teotf0ltzdq^7
 @q^7443^2:4:0
 @q^7846^1:12:0
 @q^7847^1:12:0
+@q^9853^2:4:0
 @q^9890^2:4:0
 @q^11386^0:15:0
 @q^11416^0:15:0
@@ -274,8 +280,8 @@ GoldScout-export 5^5teotf0ltzdq^7
 @a^1195^85:1,126:1,146:1
 @a^2667^107:4,127:12
 @a^2727^70:1,90:1,91:2,110:1,111:4
-@a^2731^111:2,132:6,148:1,152:1
-@a^2829^90:1,91:4,111:8,112:3,132:10
+@a^2731^111:2,112:3,132:45,148:1,152:2
+@a^2829^90:1,91:4,111:10,112:8,132:59,152:1
 @a^2992^92:1
 @a^3560^44:2,45:1
 @a^4260^68:1
