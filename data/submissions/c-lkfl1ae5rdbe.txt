@@ -1,4 +1,4 @@
-GoldScout-export 5^lkfl1ae5rdbe^12
+GoldScout-export 5^lkfl1ae5rdbe^13
 11578^1^0^34^34^1443^0.5624^0.8069^1^Whirlwind Shredder^^
 11685^6^0^40^42^1414^0.3836^0.5805^6^Maraudine Priest^4306:2:4^
 11686^5^0^40^41^1414^0.3835^0.5808^5^Ghostly Raider^4306:3:6^
@@ -57,13 +57,31 @@ GoldScout-export 5^lkfl1ae5rdbe^12
 255997^3^0^0^0^0^0.0000^0.0000^0^^273883:1:1,276736:1:1,276737:1:1^
 256236^2^0^0^0^0^0.0000^0.0000^0^^274029:1:1^
 257016^3^0^0^0^0^0.0000^0.0000^0^^^
+261316^1^0^0^0^0^0.0000^0.0000^0^^^
+261319^1^0^0^0^0^0.0000^0.0000^0^^270256:1:1^
+263389^9^0^0^0^0^0.0000^0.0000^0^^1510:1:1,2589:4:16,2763:1:1,248685:1:1,275895:2:2^
+263390^7^0^0^0^0^0.0000^0.0000^0^^1502:1:1,2589:5:17,2777:1:1,3374:1:1,4566:1:1,275895:1:1^
+263396^7^0^0^0^0^0.0000^0.0000^0^^2589:1:5^
+263397^1^0^0^0^0^0.0000^0.0000^0^^858:1:1,2589:1:5^
+263438^5^0^0^0^0^0.0000^0.0000^0^^1503:1:1,1513:1:1,2589:1:5,6539:1:1,275893:1:1^
+263470^5^0^0^0^0^0.0000^0.0000^0^^3299:1:1^
 271780^1^0^0^0^0^0.0000^0.0000^0^^4338:1:4^
 271784^1^0^0^0^0^0.0000^0.0000^0^^^
 @i^770^Pointy Crocolisk Tooth
+@i^858^Lesser Healing Potion
+@i^1502^Warped Leather Belt
+@i^1503^Warped Leather Boots
+@i^1510^Heavy Hammer
+@i^1513^Old Greatsword
 @i^1645^Moonberry Juice
 @i^1701^Curved Basilisk Claw
 @i^1702^Intact Basilisk Spine
+@i^2589^Linen Cloth
+@i^2763^Fisherman Knife
+@i^2777^Feeble Shortbow
+@i^3299^Fractured Canine
 @i^3358^Khadgar's Whisker
+@i^3374^Calico Belt
 @i^3669^Gelatinous Goo
 @i^3671^Lifeless Skull
 @i^3676^Slimy Ichor
@@ -87,6 +105,7 @@ GoldScout-export 5^lkfl1ae5rdbe^12
 @i^4552^Smooth Stone Chip
 @i^4553^Jagged Piece of Stone
 @i^4554^Shiny Polished Stone
+@i^4566^Sturdy Quarterstaff of the Beast
 @i^4584^Large Trophy Paw
 @i^4599^Cured Ham Steak
 @i^4601^Soft Banana Bread
@@ -97,6 +116,7 @@ GoldScout-export 5^lkfl1ae5rdbe^12
 @i^5133^Seeping Gizzard
 @i^6149^Greater Mana Potion
 @i^6358^Oily Blackmouth
+@i^6539^Willow Belt of Stamina
 @i^7067^Elemental Earth
 @i^7070^Elemental Water
 @i^7912^Solid Stone
@@ -127,19 +147,33 @@ GoldScout-export 5^lkfl1ae5rdbe^12
 @i^17765^Gem of the Fifth Khan
 @i^20763^Broken Weapon
 @i^20767^Scum Covered Bag
+@i^248685^Waylaid Crate: Apprentice Curiosities
 @i^248692^Waylaid Crate: Expert Ore
 @i^248695^Waylaid Crate: Earthly Artisan Herbs
 @i^263992^Overseer's Keyring
+@i^270256^Durgen's Crescent Axe
 @i^273883^Ca'zass's Head
 @i^274029^Ornate Shackle Key
+@i^275893^Searing Gourd
+@i^275895^Fading Echo
 @i^276736^Seascale Bracers
 @i^276737^Cloak of the Tidemistress
 @i^276890^Zarla's Journal
 @q^770^0:15:0
+@q^858^1:0:0
+@q^1502^0:4:0
+@q^1503^0:4:0
+@q^1510^0:2:0
+@q^1513^0:2:0
 @q^1645^1:0:0
 @q^1701^0:15:0
 @q^1702^0:15:0
+@q^2589^1:7:1
+@q^2763^0:2:0
+@q^2777^0:2:0
+@q^3299^0:15:0
 @q^3358^1:7:1
+@q^3374^0:4:0
 @q^3669^0:15:0
 @q^3671^0:15:0
 @q^3676^0:15:0
@@ -163,6 +197,7 @@ GoldScout-export 5^lkfl1ae5rdbe^12
 @q^4552^0:15:0
 @q^4553^0:15:0
 @q^4554^0:15:0
+@q^4566^2:2:0
 @q^4584^0:15:0
 @q^4599^1:0:0
 @q^4601^1:0:0
@@ -173,6 +208,7 @@ GoldScout-export 5^lkfl1ae5rdbe^12
 @q^5133^0:15:0
 @q^6149^1:0:0
 @q^6358^1:7:1
+@q^6539^2:4:0
 @q^7067^1:7:1
 @q^7070^1:7:1
 @q^7912^1:7:1
@@ -203,11 +239,15 @@ GoldScout-export 5^lkfl1ae5rdbe^12
 @q^17765^1:12:0
 @q^20763^0:15:0
 @q^20767^1:15:0
+@q^248685^1:0:1
 @q^248692^1:0:1
 @q^248695^1:0:1
 @q^263992^1:13:0
+@q^270256^3:2:0
 @q^273883^1:12:0
 @q^274029^1:12:0
+@q^275893^1:15:0
+@q^275895^0:15:0
 @q^276736^3:4:0
 @q^276737^3:4:0
 @q^276890^1:12:0
