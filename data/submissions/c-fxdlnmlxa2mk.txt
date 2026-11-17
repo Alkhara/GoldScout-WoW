@@ -1,4 +1,4 @@
-GoldScout-export 5^fxdlnmlxa2mk^5
+GoldScout-export 5^fxdlnmlxa2mk^6
 597^24^0^36^37^1434^0.2033^0.1247^24^Bloodscalp Berserker^1708:1:1,2728:1:1,2732:1:1,3771:2:2,3915:4:4,4306:7:15,4338:1:1,213544:1:1^
 660^13^0^37^37^1434^0.2026^0.1285^13^Bloodscalp Witch Doctor^2730:1:1,3915:4:4,4306:2:6,4338:1:1^
 671^22^0^36^37^1434^0.2066^0.1259^22^Bloodscalp Headhunter^1529:1:1,1532:10:20,2749:1:1,3385:1:1,3915:6:6,4306:6:10,4338:2:2^
@@ -43,7 +43,7 @@ GoldScout-export 5^fxdlnmlxa2mk^5
 4411^8^0^36^37^1445^0.4425^0.2522^8^Darkfang Lurker^1074:2:2,4337:1:1,4585:4:4,5959:3:3,12205:2:2^
 4413^9^0^35^36^1445^0.4711^0.2404^9^Darkfang Spider^1074:2:2,1990:1:1,4585:3:3,5637:1:1,5959:3:3,10285:1:1,12205:1:1^
 4414^3^0^37^38^1445^0.4319^0.3977^3^Darkfang Venomspitter^4585:2:2,10285:1:1,12205:1:1,248691:1:1^
-4457^1^0^36^36^1434^0.3438^0.2315^1^Murkgill Forager^1710:1:1,17058:1:1^
+4457^1^0^35^36^1434^0.3438^0.2315^1^Murkgill Forager^1710:1:1,17058:1:1^
 4540^5^0^0^0^0^0.0000^0.0000^0^^4306:1:4^
 4542^3^0^0^0^0^0.0000^0.0000^0^^^
 4663^1^0^30^30^1443^0.5522^0.3006^1^Burning Blade Augur^1710:1:1,4306:1:2^
@@ -102,6 +102,24 @@ GoldScout-export 5^fxdlnmlxa2mk^5
 12865^1^0^36^36^1413^0.4821^0.9229^1^Ambassador Malcin^17009:1:1^
 13019^1^0^33^33^1443^0.5523^0.3008^1^Burning Blade Seer^4306:1:2,15750:1:1^
 14225^1^0^33^33^1443^0.7738^0.2317^1^Prince Kellen^9819:1:1^
+250187^1^0^0^0^0^0.0000^0.0000^0^^537:1:1,3804:1:1^
+258792^4^0^0^0^0^0.0000^0.0000^0^^^
+258797^5^0^0^0^0^0.0000^0.0000^0^^3794:1:1,4306:1:4,15260:1:1,248690:1:1^
+258799^9^0^0^0^0^0.0000^0.0000^0^^3779:1:1,4306:1:1^
+258804^4^0^0^0^0^0.0000^0.0000^0^^3786:1:1,4306:1:4^
+258818^2^0^0^0^0^0.0000^0.0000^0^^3817:1:1,279046:1:1^
+258905^1^0^0^0^0^0.0000^0.0000^0^^^
+259979^7^0^0^0^0^0.0000^0.0000^0^^4306:1:3,270333:4:4^
+259981^2^0^0^0^0^0.0000^0.0000^0^^270333:1:1^
+259987^5^0^0^0^0^0.0000^0.0000^0^^270333:3:3^
+260042^1^0^0^0^0^0.0000^0.0000^0^^^
+260202^1^0^0^0^0^0.0000^0.0000^0^^276894:1:1^
+260243^1^0^0^0^0^0.0000^0.0000^0^^^
+260353^2^0^0^0^0^0.0000^0.0000^0^^270333:2:2^
+263196^3^0^0^0^0^0.0000^0.0000^0^^4306:1:3^
+263886^1^0^0^0^0^0.0000^0.0000^0^^^
+263899^1^0^0^0^0^0.0000^0.0000^0^^1725:1:1,3798:1:1^
+@i^537^Dull Frenzy Scale
 @i^770^Pointy Crocolisk Tooth
 @i^1074^Hard Spider Leg Tip
 @i^1464^Buzzard Talon
@@ -116,6 +134,7 @@ GoldScout-export 5^fxdlnmlxa2mk^5
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
+@i^1725^Large Knapsack
 @i^1990^Ballast Maul of Nature Protection
 @i^2592^Wool Cloth
 @i^2675^Crawler Claw
@@ -134,9 +153,14 @@ GoldScout-export 5^fxdlnmlxa2mk^5
 @i^3779^Hefty War Axe
 @i^3781^Broad Claymore
 @i^3782^Large War Club
+@i^3786^Shiny Dirk
 @i^3787^Stone Club
 @i^3792^Interlaced Belt
+@i^3794^Interlaced Bracers
 @i^3797^Interlaced Pants
+@i^3798^Interlaced Shoulderpads
+@i^3804^Hardened Leather Gloves
+@i^3817^Reinforced Buckler
 @i^3827^Mana Potion
 @i^3838^Shadowmaw Claw
 @i^3839^Pristine Tigress Fang
@@ -183,6 +207,7 @@ GoldScout-export 5^fxdlnmlxa2mk^5
 @i^12205^White Spider Meat
 @i^13542^Demon Box
 @i^14408^Stonecloth Boots
+@i^15260^Stone Hammer of the Prophet
 @i^15750^Sceptre of Light
 @i^15874^Soft-shelled Clam
 @i^15878^Rackmore's Silver Key
@@ -203,6 +228,10 @@ GoldScout-export 5^fxdlnmlxa2mk^5
 @i^248692^Waylaid Crate: Expert Ore
 @i^248693^Waylaid Crate: Expert Textiles
 @i^248694^Waylaid Crate: Expert Curiosities
+@i^270333^Voodoo-Infused Artifact
+@i^276894^Ancient Gurubashi Idol
+@i^279046^Cracked Crab Pincer
+@q^537^0:15:0
 @q^770^0:15:0
 @q^1074^0:15:0
 @q^1464^0:15:0
@@ -217,6 +246,7 @@ GoldScout-export 5^fxdlnmlxa2mk^5
 @q^1707^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
+@q^1725^1:1:0
 @q^1990^2:2:0
 @q^2592^1:7:1
 @q^2675^1:7:1
@@ -235,9 +265,14 @@ GoldScout-export 5^fxdlnmlxa2mk^5
 @q^3779^0:2:0
 @q^3781^0:2:0
 @q^3782^0:2:0
+@q^3786^0:2:0
 @q^3787^0:2:0
 @q^3792^0:4:0
+@q^3794^0:4:0
 @q^3797^0:4:0
+@q^3798^0:4:0
+@q^3804^0:4:0
+@q^3817^0:4:0
 @q^3827^1:0:0
 @q^3838^1:12:0
 @q^3839^1:12:0
@@ -284,6 +319,7 @@ GoldScout-export 5^fxdlnmlxa2mk^5
 @q^12205^1:7:1
 @q^13542^1:12:0
 @q^14408^2:4:0
+@q^15260^2:2:0
 @q^15750^1:12:0
 @q^15874^1:13:0
 @q^15878^1:12:0
@@ -304,6 +340,9 @@ GoldScout-export 5^fxdlnmlxa2mk^5
 @q^248692^1:0:1
 @q^248693^1:0:1
 @q^248694^1:0:1
+@q^270333^1:12:0
+@q^276894^1:12:0
+@q^279046^0:15:0
 @m^1413^The Barrens
 @m^1414^Kalimdor
 @m^1417^Arathi Highlands
