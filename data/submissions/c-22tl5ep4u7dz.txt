@@ -1,4 +1,8 @@
-GoldScout-export 5^22tl5ep4u7dz^4
+GoldScout-export 5^22tl5ep4u7dz^5
+2374^6^0^28^29^1424^0.2963^0.7218^6^Torn Fin Muckdweller^3510:3:3,5524:2:2,17057:2:2,17058:2:2^
+2375^9^0^29^30^1424^0.3090^0.7179^9^Torn Fin Coastrunner^865:1:1,3510:2:2,5524:4:4,5785:1:1,6617:1:1,17057:4:4,17058:2:2^
+2376^3^0^31^31^1424^0.3461^0.6730^3^Torn Fin Oracle^929:1:1,5524:1:1,17057:1:1^
+2377^1^0^31^32^1424^0.3486^0.6694^1^Torn Fin Tidehunter^17057:1:1^
 4798^4^0^0^0^0^0.0000^0.0000^0^^2589:1:2^
 4799^3^0^0^0^0^0.0000^0.0000^0^^^
 4805^4^0^0^0^0^0.0000^0.0000^0^^1750:1:1,5524:2:2^
@@ -19,6 +23,8 @@ GoldScout-export 5^22tl5ep4u7dz^4
 264082^1^0^30^30^1412^0.3371^0.0683^1^Broodmother Valraxx^273658:1:1^
 264083^3^0^28^29^1412^0.3407^0.0999^3^Gloomrise Soldier^1081:1:1,3174:2:2,5465:2:2^
 264096^3^0^28^29^1412^0.3314^0.0987^3^Gnawed Corpse^273001:2:2^
+@i^865^Leaden Mace of the Bandit
+@i^929^Healing Potion
 @i^1081^Crisp Spider Meat
 @i^1750^Linked Chain Gloves
 @i^2589^Linen Cloth
@@ -28,15 +34,21 @@ GoldScout-export 5^22tl5ep4u7dz^4
 @i^3167^Thick Spider Hair
 @i^3174^Spider Ichor
 @i^3385^Lesser Mana Potion
+@i^3510^Torn Fin Eye
 @i^5465^Small Spider Leg
 @i^5524^Thick-shelled Clam
+@i^5785^Thick Murloc Scale
 @i^5881^Head of Kelris
+@i^6617^Sage's Mantle of Spirit
 @i^9451^Bubbling Water
 @i^16782^Strange Water Globe
 @i^17057^Shiny Fish Scales
+@i^17058^Fish Oil
 @i^273001^Gloomrise Toxin Sample
 @i^273181^Crystalline Silk
 @i^273658^Bloody Parchment
+@q^865^2:2:0
+@q^929^1:0:0
 @q^1081^1:7:1
 @q^1750^0:4:0
 @q^2589^1:7:1
@@ -46,16 +58,21 @@ GoldScout-export 5^22tl5ep4u7dz^4
 @q^3167^0:15:0
 @q^3174^1:7:1
 @q^3385^1:0:0
+@q^3510^1:12:0
 @q^5465^1:7:1
 @q^5524^1:7:0
+@q^5785^1:7:1
 @q^5881^1:12:0
+@q^6617^2:4:0
 @q^9451^1:0:0
 @q^16782^2:12:0
 @q^17057^1:15:0
+@q^17058^1:15:0
 @q^273001^1:12:0
 @q^273181^1:12:0
 @q^273658^1:15:0
 @m^1412^Mulgore
+@m^1424^Hillsbrad Foothills
 @c^118^
 @c^724^
 @c^733^
@@ -498,6 +515,10 @@ GoldScout-export 5^22tl5ep4u7dz^4
 @c^279987^
 @c^279990^
 @c^286152^
+@a^2374^285:4,286:2
+@a^2375^266:1,285:4,286:4
+@a^2376^266:3
+@a^2377^266:1
 @a^264079^26:1,46:2,47:1
 @a^264081^26:4,46:1
 @a^264082^26:1
