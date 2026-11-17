@@ -722,6 +722,24 @@ class HuntAreaTests(unittest.TestCase):
         self.assertEqual(edges, {45: ["bottom", "left", "top"], 46: ["bottom", "right", "top"],
                                  0: ["bottom", "left", "right", "top"]})
 
+    def test_a_hunt_splits_the_hunted_item_from_other_loot_and_coin(self):
+        # A player's report: hunting one item, the tracker's loot and gold per hour counted the trash too.
+        self.item(5000, price=10000)                                   # the hunted item: 9500 after the cut
+        self.item(5100, price=0, sell=50, quality=0, reagent=False)    # gray trash: 50
+        self.run_lua("GetMoney = function() return 1300 end")         # 300 copper of coin since the start
+        session = self.lua.eval("""{ started = -2600, startMoney = 1000, kills = 4, picks = 0, nodes = 0,
+          catches = 0, hits = 2, gained = { [5000] = 2, [5100] = 6 },
+          target = { item = 5000, label = "Mob", zone = "Zone", per = "kill" } }""")   # an hour (time() is 1000)
+        summary = self.ns.Hunt.Summarize(session)
+        self.assertEqual((summary.count, summary.targetValue, summary.otherValue, summary.coin, summary.total),
+                         (2, 19000, 300, 300, 19600))
+        self.assertAlmostEqual(summary.targetPerHour, 19000)
+        self.assertAlmostEqual(summary.perHour, 19600)
+        self.assertEqual(summary.value, 19300)                        # all loot, as hunt history keeps it
+        session.gained = self.lua.eval("{ [5100] = 6 }")              # nothing of the hunted item yet
+        summary = self.ns.Hunt.Summarize(session)
+        self.assertEqual((summary.targetValue, summary.otherValue, summary.total), (0, 300, 600))
+
     # OpenMap's stitched map: zone 1441 sits just right of 1440 on the world, at half its size.
     OPEN_MAP = """{
       WorldFromMap = function(zone, x, y)

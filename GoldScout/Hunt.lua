@@ -459,12 +459,17 @@ ns.Listen("LOOT_DROP", function(role, npcID, itemID)
   end
 end)
 
-local function Summarize(s)
+-- A hunt's takings, split so a player after one item sees what that item earned, apart from everything
+-- else they looted (vendor trash, other drops) and coin: targetValue + otherValue = value (all loot);
+-- value + coin = total. perHour is the total's rate, targetPerHour the hunted item's alone.
+function Hunt.Summarize(s)
   local duration = math.max(1, time() - s.started)
   local value = 0
   for itemID, quantity in pairs(s.gained) do
     value = value + ItemValue(itemID) * quantity
   end
+  local count = s.gained[s.target.item] or 0
+  local targetValue = count > 0 and ItemValue(s.target.item) * count or 0
   local coin = math.max(0, GetMoney() - s.startMoney)
   return {
     item = s.target.item,
@@ -477,12 +482,17 @@ local function Summarize(s)
     nodes = s.nodes,
     catches = s.catches,
     hits = s.hits,
-    count = s.gained[s.target.item] or 0,
+    count = count,
     value = value,
+    targetValue = targetValue,
+    otherValue = value - targetValue,
     coin = coin,
+    total = value + coin,
+    targetPerHour = targetValue * 3600 / duration,
     perHour = (value + coin) * 3600 / duration,
   }
 end
+local Summarize = Hunt.Summarize
 
 local function Clock(seconds)
   seconds = math.floor(seconds)
@@ -559,9 +569,9 @@ function Hunt:Stop(silent)
     end
   end
   if not silent then
-    ns.Print((L["Hunt over after %s: %d %s, %s in loot and %s in coin, about %s an hour."]):format(
-      Clock(summary.duration), summary.count, ns.ItemName(summary.item),
-      ns.Money(summary.value), ns.Money(summary.coin), ns.Money(summary.perHour)))
+    ns.Print((L["Hunt over after %s: %d %s worth %s, %s in other loot and %s in coin; %s in all, about %s an hour."]):format(
+      Clock(summary.duration), summary.count, ns.ItemName(summary.item), ns.Money(summary.targetValue),
+      ns.Money(summary.otherValue), ns.Money(summary.coin), ns.Money(summary.total), ns.Money(summary.perHour)))
   end
   ns.Fire("HUNT_CHANGED")
 end
@@ -722,8 +732,11 @@ function Hunt:UpdatePanel()
       math.floor(s.hits / actions * 100 + 0.5), target.per, math.floor(target.chance * 100 + 0.5))
   end
   lines[#lines + 1] = targetLine
-  lines[#lines + 1] = (L["Loot %s   ·   Coin %s"]):format(ns.Money(summary.value), ns.Money(summary.coin))
-  lines[#lines + 1] = (L["About %s an hour"]):format(ns.Money(summary.perHour))
+  -- The hunted item on its own, then everything else, then the whole picture.
+  lines[#lines + 1] = (L["%s worth %s   ·   about %s an hour"]):format(ns.ItemName(target.item),
+    ns.Money(summary.targetValue), ns.Money(summary.targetPerHour))
+  lines[#lines + 1] = (L["Other loot %s   ·   Coin %s"]):format(ns.Money(summary.otherValue), ns.Money(summary.coin))
+  lines[#lines + 1] = (L["Total %s   ·   about %s an hour"]):format(ns.Money(summary.total), ns.Money(summary.perHour))
   panel.body:SetText(table.concat(lines, "\n"))
   panel:SetHeight(10 + 30 + 8 + panel.body:GetStringHeight() + 36)
 end
