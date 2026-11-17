@@ -1,5 +1,10 @@
-GoldScout-export 5^ap1w90jr85h6^1
+GoldScout-export 5^ap1w90jr85h6^2
 2350^2^0^20^21^1424^0.5833^0.1176^2^Waldmooskrabbler^1081:2:2,2251:2:2,3182:1:1,4428:2:2^
+3256^1^0^17^17^1413^0.4544^0.1722^1^Bluthornsensenklaue^2079:1:1^
+3276^1^0^15^15^1413^0.3994^0.1881^1^Harpyie der Hexenschwingen^2589:1:2^
+3379^2^0^10^11^1413^0.4658^0.1825^2^Haudrauf der Burning Blade^2589:1:2^
+3380^1^0^12^12^1413^0.4778^0.1884^1^Akolyth der Burning Blade^14113:1:1^
+3415^1^0^11^11^1413^0.4867^0.2656^1^Savannenjägerin^^
 3630^1^0^15^15^1414^0.5194^0.5510^1^Deviatwinder^^
 3632^2^0^15^16^1414^0.5197^0.5477^2^Deviatkrabbler^6443:1:1^
 3636^5^0^0^0^0^0.0000^0.0000^0^^3040:1:1,6443:1:1^
@@ -30,6 +35,7 @@ GoldScout-export 5^ap1w90jr85h6^1
 @i^1081^Knuspriges Spinnenfleisch
 @i^1741^Geschnürter Umhang
 @i^1791^Geflickte Lederhandschuhe
+@i^2079^Sergeants Kriegshammer der Heilung
 @i^2251^Klebriges Spinnenbein
 @i^2589^Leinenstoff
 @i^2592^Wollstoff
@@ -40,6 +46,7 @@ GoldScout-export 5^ap1w90jr85h6^1
 @i^3181^Teilweise verdautes Fleisch
 @i^3182^Spinnenseide
 @i^3401^Raue Krokiliskenschuppe
+@i^3820^Würgetang
 @i^4428^Spinnentaster
 @i^4555^Dicker geschuppter Schwanz
 @i^4604^Waldpilzkappe
@@ -48,20 +55,26 @@ GoldScout-export 5^ap1w90jr85h6^1
 @i^5128^Abgeworfene Echsenhaut
 @i^5334^99 Jahre alter Portwein
 @i^5523^Kleine rankenfüßige Muschel
+@i^6289^Roher Langzahniger Matschschnapper
+@i^6291^Roher glänzender Kleinfisch
+@i^6308^Roher Stoppelfühlerwels
 @i^6443^Deviatbalg
 @i^6444^Gespaltene Zunge
 @i^6445^Abgestreifte Schlangenhaut
 @i^6464^Klageessenz
 @i^6470^Deviatschuppe
+@i^6522^Deviatfisch
 @i^9738^Edelstein von Kobrahn
 @i^9739^Edelstein von Anacondra
 @i^9740^Edelstein von Pythas
 @i^9741^Edelstein von Serpentis
 @i^10441^Leuchtender Splitter
+@i^14113^Ureinwohnerschärpe der Eule
 @q^858^1:0:0
 @q^1081^1:7:1
 @q^1741^0:4:0
 @q^1791^0:4:0
+@q^2079^2:2:0
 @q^2251^1:7:1
 @q^2589^1:7:1
 @q^2592^1:7:1
@@ -72,6 +85,7 @@ GoldScout-export 5^ap1w90jr85h6^1
 @q^3181^0:15:0
 @q^3182^1:7:1
 @q^3401^0:15:0
+@q^3820^1:7:1
 @q^4428^0:15:0
 @q^4555^0:15:0
 @q^4604^1:0:0
@@ -80,16 +94,22 @@ GoldScout-export 5^ap1w90jr85h6^1
 @q^5128^0:15:0
 @q^5334^1:12:0
 @q^5523^1:7:0
+@q^6289^1:7:1
+@q^6291^1:7:1
+@q^6308^1:7:1
 @q^6443^1:12:0
 @q^6444^0:15:0
 @q^6445^0:15:0
 @q^6464^1:0:0
 @q^6470^1:7:1
+@q^6522^1:0:1
 @q^9738^1:12:0
 @q^9739^1:12:0
 @q^9740^1:12:0
 @q^9741^1:12:0
 @q^10441^1:12:0
+@q^14113^2:4:0
+@m^1413^Das Brachland
 @m^1414^Kalimdor
 @m^1424^Vorgebirge von Hillsbrad
 @c^118^
@@ -784,9 +804,15 @@ GoldScout-export 5^ap1w90jr85h6^1
 @c^285281^
 @c^286152^
 @a^2350^32:1,50:1
+@a^3256^69:1
+@a^3276^67:1
+@a^3379^69:2
+@a^3380^69:1
+@a^3415^109:1
 @a^3630^230:1
 @a^3632^210:1,230:1
 @a^3638^210:1
 @a^3641^210:1
 @a^3655^210:1
+@f^1413^0^39^16^3820:1:2,6289:12:12,6291:3:3,6308:4:4,6522:19:19^88:11,89:28
 @l^0^deDE

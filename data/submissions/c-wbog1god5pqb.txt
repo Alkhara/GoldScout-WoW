@@ -1,4 +1,4 @@
-GoldScout-export 5^wbog1god5pqb^8
+GoldScout-export 5^wbog1god5pqb^9
 587^1^0^34^34^1434^0.3420^0.1404^1^Bloodscalp Warrior^^
 681^3^0^30^31^1434^0.3609^0.1287^3^Young Stranglethorn Tiger^1686:1:1,12202:1:1,248687:1:1^
 682^4^0^32^33^1434^0.4262^0.1548^4^Stranglethorn Tiger^1686:3:3,1687:1:1^
@@ -47,8 +47,22 @@ GoldScout-export 5^wbog1god5pqb^8
 1716^1^0^0^0^0^0.0000^0.0000^0^^2926:1:1^
 1717^1^0^0^0^0^0.0000^0.0000^0^^^
 1754^1^0^31^31^1453^0.7167^0.3554^1^Lord Gregor Lescovar^4306:1:2^
+2946^12^0^44^44^1424^0.4952^0.5303^12^Puppet of Helcular^^
 4458^1^0^36^36^1434^0.3639^0.2000^1^Murkgill Hunter^2749:1:1,17058:1:1^
+245999^1^0^0^0^0^0.0000^0.0000^0^^^
+246020^1^0^0^0^0^0.0000^0.0000^0^^251961:1:1^
+246600^3^0^0^0^0^0.0000^0.0000^0^^1827:1:1,6438:1:1,6439:2:2^
+246664^2^0^0^0^0^0.0000^0.0000^0^^276160:1:1^
+247001^1^0^0^0^0^0.0000^0.0000^0^^276160:1:1^
+247003^2^0^0^0^0^0.0000^0.0000^0^^6438:1:1,276160:2:2^
+247016^1^0^0^0^0^0.0000^0.0000^0^^4606:1:1^
+255066^2^0^0^0^0^0.0000^0.0000^0^^^
+255068^2^0^0^0^0^0.0000^0.0000^0^^2592:1:1,4606:1:1^
+255069^2^0^0^0^0^0.0000^0.0000^0^^^
+255070^3^0^0^0^0^0.0000^0.0000^0^^2222:1:1^
+255072^1^0^0^0^0^0.0000^0.0000^0^^^
 269075^1^0^6^6^1426^0.2727^0.6278^1^Snow Leopard Prowler^4814:1:1^
+269134^4^0^0^0^0^0.0000^0.0000^0^^3201:1:1^
 271486^4^0^6^8^1426^0.4178^0.4789^4^Wendigo Shaman^117:1:1,1417:1:1,211785:1:1,211786:1:1^
 271530^10^0^7^8^1426^0.4115^0.4739^10^Elder Wendigo^117:1:1,1411:1:1,1414:1:1,1420:1:1,2671:3:3,211780:1:1^
 271587^2^0^9^9^1426^0.3993^0.4879^2^Frosthowl^280426:1:1^
@@ -74,9 +88,11 @@ GoldScout-export 5^wbog1god5pqb^8
 @i^1696^Curved Raptor Talon
 @i^1753^Linked Chain Vest
 @i^1824^Shiny War Axe
+@i^1827^Meat Cleaver
 @i^2004^Grelin Whitebeard's Journal
 @i^2140^Carving Knife of Holy Wrath
 @i^2210^Battered Buckler
+@i^2222^Tower Shield
 @i^2589^Linen Cloth
 @i^2591^Dirty Trogg Cloth
 @i^2592^Wool Cloth
@@ -94,6 +110,7 @@ GoldScout-export 5^wbog1god5pqb^8
 @i^3171^Broken Boar Tusk
 @i^3172^Boar Intestines
 @i^3189^Wood Chopper
+@i^3201^Barbarian War Axe of the Physician
 @i^3385^Lesser Mana Potion
 @i^3627^Fang of Vagash
 @i^3628^Hand of Dextren Ward
@@ -109,11 +126,14 @@ GoldScout-export 5^wbog1god5pqb^8
 @i^4306^Silk Cloth
 @i^4461^Raptor Hide
 @i^4586^Smooth Raptor Skin
+@i^4606^Spongy Morel
 @i^4814^Discolored Fang
 @i^4865^Ruined Pelt
 @i^5446^Broken Elemental Bracer
 @i^5637^Large Fang
 @i^6308^Raw Bristle Whisker Catfish
+@i^6438^Dull Elemental Bracer
+@i^6439^Broken Binding Bracer
 @i^6609^Sage's Cloth of the Whale
 @i^6952^Thick Bear Fur
 @i^7073^Broken Fang
@@ -130,7 +150,9 @@ GoldScout-export 5^wbog1god5pqb^8
 @i^211785^Scroll: CWAL
 @i^211786^Scroll: CHAP BALK WELLES
 @i^248687^Waylaid Crate: Journeyman Ore
+@i^251961^Arcane Mote
 @i^268548^Empty Powder Keg
+@i^276160^Mana Fragment
 @i^280426^Sack of Fish
 @i^286325^Avala's Core
 @q^117^1:0:0
@@ -153,9 +175,11 @@ GoldScout-export 5^wbog1god5pqb^8
 @q^1696^0:15:0
 @q^1753^0:4:0
 @q^1824^0:2:0
+@q^1827^0:2:0
 @q^2004^1:12:0
 @q^2140^2:2:0
 @q^2210^0:4:0
+@q^2222^0:4:0
 @q^2589^1:7:1
 @q^2591^0:15:0
 @q^2592^1:7:1
@@ -173,6 +197,7 @@ GoldScout-export 5^wbog1god5pqb^8
 @q^3171^0:15:0
 @q^3172^1:7:1
 @q^3189^1:2:0
+@q^3201^2:2:0
 @q^3385^1:0:0
 @q^3627^1:12:0
 @q^3628^1:12:0
@@ -188,11 +213,14 @@ GoldScout-export 5^wbog1god5pqb^8
 @q^4306^1:7:1
 @q^4461^1:7:1
 @q^4586^0:15:0
+@q^4606^1:0:0
 @q^4814^0:15:0
 @q^4865^0:15:0
 @q^5446^0:15:0
 @q^5637^1:7:1
 @q^6308^1:7:1
+@q^6438^0:15:0
+@q^6439^0:15:0
 @q^6609^2:4:0
 @q^6952^1:12:0
 @q^7073^0:15:0
@@ -209,9 +237,12 @@ GoldScout-export 5^wbog1god5pqb^8
 @q^211785^1:0:0
 @q^211786^1:0:0
 @q^248687^1:0:1
+@q^251961^1:12:0
 @q^268548^1:12:0
+@q^276160^0:15:0
 @q^280426^1:12:0
 @q^286325^1:12:0
+@m^1424^Hillsbrad Foothills
 @m^1426^Dun Morogh
 @m^1434^Stranglethorn Vale
 @m^1453^Stormwind City
@@ -1562,6 +1593,7 @@ GoldScout-export 5^wbog1god5pqb^8
 @a^1201^211:1,231:2,232:1,252:1
 @a^1388^192:1
 @a^1754^154:1
+@a^2946^209:12
 @a^4458^87:1
 @a^269075^245:1
 @a^271486^188:4
