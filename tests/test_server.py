@@ -143,6 +143,25 @@ class ServerTests(unittest.TestCase):
     def test_list_needs_admin_token(self):
         self.assertEqual(raw("/v1/uploads")[0], 401)
         self.assertEqual(raw("/v1/uploads", headers={"Authorization": "Bearer wrong"})[0], 401)
+        self.assertEqual(raw("/v1/uploads?bodies=0", headers={"Authorization": "Bearer wrong"})[0], 401)
+
+    def test_list_without_exports_then_just_the_ones_wanted(self):
+        # tools/fetch_uploads.py: the hourly merge lists every install light, then downloads only what changed.
+        install, other = new_install(), new_install()
+        self.assertEqual(register(install)[0], 201)
+        self.assertEqual(register(other)[0], 201)
+        admin = {"Authorization": "Bearer " + ADMIN}
+        status, light = raw("/v1/uploads?bodies=0", headers=admin)
+        self.assertEqual(status, 200)
+        row = next(u for u in light["uploads"] if u["install_id"] == install)
+        self.assertNotIn("body", row)
+        self.assertEqual((row["seq"], row["terms"]), (1, uploader.TERMS_VERSION))
+        status, picked = raw("/v1/uploads?ids=" + install, headers=admin)
+        self.assertEqual(status, 200)
+        self.assertEqual([u["install_id"] for u in picked["uploads"]], [install])
+        self.assertTrue(picked["uploads"][0]["body"].startswith("GoldScout-export"))
+        for bad in ("NOT-AN-ID", ",".join([install] * 51)):
+            self.assertEqual(raw("/v1/uploads?ids=" + bad, headers=admin)[0], 400)
 
     def test_companion_version_is_recorded(self):
         def client_of(install):

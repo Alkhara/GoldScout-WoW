@@ -64,9 +64,9 @@ jobs:
           API_ADMIN: ${{ secrets.GOLDSCOUT_API_ADMIN }}
         run: |
           if [ -n "$API_URL" ] && [ -n "$API_ADMIN" ]; then
-            curl -fsS --max-time 60 -H "Authorization: Bearer $API_ADMIN" "${API_URL%/}/v1/uploads" -o uploads.json
-            count=$(python3 -c "import json; print(len(json.load(open('uploads.json')).get('uploads', [])))")
-            echo "Upload service: $count install(s) found." | tee -a "$GITHUB_STEP_SUMMARY"
+            # Only new and changed exports are downloaded (tools/fetch_uploads.py).
+            GOLDSCOUT_API_URL="$API_URL" GOLDSCOUT_API_ADMIN="$API_ADMIN" python3 tools/fetch_uploads.py uploads.json > fetched.txt
+            tee -a "$GITHUB_STEP_SUMMARY" < fetched.txt
           else
             url_state="missing"; [ -n "$API_URL" ] && url_state="set"
             admin_state="missing"; [ -n "$API_ADMIN" ] && admin_state="set"

@@ -292,6 +292,38 @@ class BotTests(unittest.TestCase):
         for number in (20, 21, 22):
             self.assertIn("Closes #%d" % number, body)
 
+    def test_an_upload_already_stored_is_skipped_without_its_export(self):
+        # The hourly merge downloads only new and changed exports (tools/fetch_uploads.py).
+        self.upload(seq=5)
+        stored = (data_bot.SUBMISSIONS / "c-abcdefghijkl.txt").read_text(encoding="utf-8")
+        listing = {"uploads": [{"install_id": "abcdefghijkl", "seq": 5, "terms": "2026-11-07",
+                                "created_at": 1_800_000_000}]}                  # no body
+        Path("uploads.json").write_text(json.dumps(listing), encoding="utf-8")
+        Path("pr_body.md").write_text("", encoding="utf-8")
+        data_bot.collect_uploads("uploads.json")
+        self.assertEqual((data_bot.SUBMISSIONS / "c-abcdefghijkl.txt").read_text(encoding="utf-8"), stored)
+        body = Path("pr_body.md").read_text(encoding="utf-8")
+        self.assertIn("No new companion uploads.", body)
+        self.assertNotIn("failed validation", body)
+
+    def test_checks_against_everyone_else_once_added_up(self):
+        # submission.tally of every file, minus the player's own, gives what others() used to: the player's own
+        # earlier file never counts against them.
+        (data_bot.SUBMISSIONS / "9-zzzzzzzzzzzz.txt").write_text(
+            "GoldScout-export 2^zzzzzzzzzzzz^3\n3812^2000^0^19^20^1440^0.1179^0.2989^500^Clattering Crawler^"
+            "2674:20:20,3010:1200:1200^\n", encoding="utf-8")
+        big = (CLATTERING.replace("3812^11^0", "3812^100^0").replace("^11^Clattering", "^100^Clattering")
+               .replace("2674:4:4", "2674:90:90"))
+        export = "GoldScout-export 2^abcdefghijkl^%d\n" + big + "\n"
+        (data_bot.SUBMISSIONS / "c-abcdefghijkl.txt").write_text(export % 3, encoding="utf-8")
+        files = {p.name: submission.parse(p.read_text(encoding="utf-8")) for p in data_bot.SUBMISSIONS.glob("*.txt")}
+        totals = submission.tally(f.mobs for f in files.values())
+        own = submission.tally([files["c-abcdefghijkl.txt"].mobs])
+        fresh = submission.parse(export % 4)
+        expected = submission.compare(submission.parse(export % 4), data_bot.others(exclude_install="abcdefghijkl"))
+        self.assertTrue(expected.warnings)
+        self.assertEqual(submission.compare(fresh, None, totals=totals, minus=own).warnings, expected.warnings)
+
     def test_collect_uploads(self):
         newer = GOOD.replace("^abcdefghijkl^3", "^abcdefghijkl^5")
         listing = {"uploads": [

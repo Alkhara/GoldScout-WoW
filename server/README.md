@@ -17,7 +17,7 @@ rules can't reach.
 | Endpoint | What it does |
 |---|---|
 | `POST /v1/uploads` | Upload an export. The first upload from an install returns its token; later uploads need `Authorization: Bearer <token>`. |
-| `GET /v1/uploads` | Admin only (`Authorization: Bearer <ADMIN_TOKEN>`): every install's newest export. `?since=<unix seconds>` limits it. |
+| `GET /v1/uploads` | Admin only (`Authorization: Bearer <ADMIN_TOKEN>`): every install's newest export. `?since=<unix seconds>` limits it; `?bodies=0` lists every install without its export; `?ids=a,b,c` (up to 50) gives just those installs, exports included. The hourly merge uses the last two (`tools/fetch_uploads.py`). |
 | `GET /v1/prices` | Every WoW Forever auction house with prices: ruleset, faction, snapshot time, item count. Public. |
 | `GET /v1/prices/<region>/<house>` | One house's prices: `{"itemID": [lowest unit buyout in copper, quantity listed]}`. Public. |
 | `PUT /v1/admin/prices/<region>/<house>` | Admin only. `tools/ah_prices.py fetch` sends each new snapshot. |

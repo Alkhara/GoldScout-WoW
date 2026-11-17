@@ -261,15 +261,37 @@ def collect_uploads(uploads_path):
     appends a section about them to pr_body.md. An upload is held for review
     (left out until its install ID is in data/approved-installs.txt) when its
     rates differ sharply from other players', or when it's the first companion
-    upload for an install first shared through the form (FORM_TAKEOVER)."""
+    upload for an install first shared through the form (FORM_TAKEOVER).
+
+    It scales with players: every accepted file is read and added up once
+    (submission.tally), each check takes that player's own share back out,
+    and an upload whose snapshot is already stored is skipped before any
+    check (so its body needn't be in the listing at all; see
+    tools/fetch_uploads.py)."""
     listing = json.loads(Path(uploads_path).read_text(encoding="utf-8") or "{}")
     approved = approved_installs()
     SUBMISSIONS.mkdir(parents=True, exist_ok=True)
     from_form = form_installs()
-    quests = quest_items()
+    files = {}
+    for path in sorted(SUBMISSIONS.glob("*.txt")):
+        parsed = submission.parse(path.read_text(encoding="utf-8"))
+        if parsed.ok:
+            files[path] = parsed
+    totals = submission.tally(parsed.mobs for parsed in files.values())
+    quests = {item for parsed in files.values() for item, meta in parsed.item_meta.items()
+              if meta[1] == submission.QUEST_ITEM_CLASS}
+    stored_seq = {path.stem[2:]: parsed.seq for path, parsed in files.items() if path.name.startswith("c-")}
     stored, held, rejected, dates = [], [], 0, {}
     for upload in listing.get("uploads") or []:
         install = str(upload.get("install_id", ""))
+        seq = upload.get("seq")
+        if install in stored_seq and isinstance(seq, int) and seq <= stored_seq[install]:
+            if isinstance(upload.get("created_at"), int):   # already stored by an earlier run
+                dates[install] = upload["created_at"]
+            continue
+        if "body" not in upload:
+            print("skip upload %s: not in this listing" % install[:12])
+            continue
         result = submission.parse(str(upload.get("body", "")))
         if not result.ok or result.install_id != install or upload.get("terms") not in TERMS_VERSIONS:
             rejected += 1
@@ -280,7 +302,8 @@ def collect_uploads(uploads_path):
             held.append((install, len(result.mobs), [FORM_TAKEOVER]))
             print("hold upload %s (first shared through the form)" % install)
             continue
-        submission.compare(result, others(exclude_install=install), quests)
+        own = [parsed.mobs for path, parsed in files.items() if path.stem.endswith("-" + install)]
+        submission.compare(result, None, quests, totals=totals, minus=submission.tally(own))
         if result.warnings and install not in approved:
             held.append((install, len(result.mobs), result.warnings))
             print("hold upload %s (rate warnings)" % install)

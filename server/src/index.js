@@ -401,15 +401,26 @@ async function list(request, env, url) {
   if (!env.ADMIN_TOKEN || !sameText(bearer(request), env.ADMIN_TOKEN)) {
     return json({ error: "Not allowed." }, 401);
   }
+  // ?bodies=0: every install without its export (a few hundred bytes each), so the hourly merge can see
+  // what changed; ?ids=a,b,c (up to MAX_LIST_IDS): just those installs, exports included
+  // (tools/fetch_uploads.py). Without either, every install with its export, as before.
   const since = Number(url.searchParams.get("since") || 0);
+  const ids = (url.searchParams.get("ids") || "").split(",").filter(Boolean);
+  if (ids.length > MAX_LIST_IDS || ids.some((id) => !INSTALL_ID.test(id))) {
+    return json({ error: `ids: up to ${MAX_LIST_IDS} install IDs, comma-separated.` }, 400);
+  }
+  const columns = url.searchParams.get("bodies") === "0" && !ids.length ? "" : "body, ";
+  const where = ids.length ? `install_id IN (${ids.map(() => "?").join(", ")})` : "installs.updated_at > ?";
   const { results } = await env.DB.prepare(
-    "SELECT install_id, seq, body, terms, created_at, uploads, installs.updated_at AS updated_at, client, os, " +
+    `SELECT install_id, seq, ${columns}terms, created_at, uploads, installs.updated_at AS updated_at, client, os, ` +
     "region FROM installs LEFT JOIN install_clients USING (install_id) LEFT JOIN install_os USING (install_id) " +
-    "LEFT JOIN install_region USING (install_id) " +
-    "WHERE installs.updated_at > ? ORDER BY installs.updated_at",
-  ).bind(since).all();
+    `LEFT JOIN install_region USING (install_id) WHERE ${where} ORDER BY installs.updated_at`,
+  ).bind(...(ids.length ? ids : [since])).all();
   return json({ uploads: results });
 }
+
+const MAX_LIST_IDS = 50;
+const INSTALL_ID = /^[a-z0-9]{12}$/;
 
 const HOUSE_COLUMNS = "region, house, name, ruleset, ruleset_name, faction, snapshot, fetched, items";
 

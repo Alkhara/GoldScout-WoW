@@ -301,6 +301,15 @@ def data_release(latest, commits):
     return {"latest": latest["tag"], "published": latest["published"], "waiting_since": min(waiting) if waiting else None}
 
 
+def stored_export(install, folder=ROOT / "data" / "submissions"):
+    """An install's export as the data merge stored it (data/submissions/c-<install>.txt), or "" (held,
+    rejected, or not merged yet)."""
+    path = folder / ("c-%s.txt" % install)
+    if not install.isalnum() or not path.is_file():
+        return ""
+    return path.read_text(encoding="utf-8")
+
+
 # -- building ------------------------------------------------------------------
 def build(now, api, admin, mine):
     snapshot = {"generated": now, "problems": []}
@@ -312,8 +321,13 @@ def build(now, api, admin, mine):
             snapshot["problems"].append("%s: %s" % (name, error))
             return None
 
+    # Every install without its export (the server's ?bodies=0), each export read from the copy the data merge
+    # keeps in data/submissions/, so this doesn't download every player's export every hour.
     uploads = attempt("upload server", lambda: get_json(
-        api + "/v1/uploads", {"Authorization": "Bearer " + admin})["uploads"]) or []
+        api + "/v1/uploads?bodies=0", {"Authorization": "Bearer " + admin})["uploads"]) or []
+    for upload in uploads:
+        if "body" not in upload:
+            upload["body"] = stored_export(upload.get("install_id", ""))
     installs = [u for u in uploads if "created_at" in u]
     rows = [dict(u, version=(u.get("body") or "")[17:18]) for u in installs]
     players = stats.player_rows(rows, mine)

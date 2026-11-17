@@ -474,45 +474,58 @@ def _z(drops_a, attempts_a, drops_b, attempts_b):
 QUEST_ITEM_CLASS = 12   # Blizzard's item class for quest items
 
 
-def compare(result, others, quest_items=()):
-    """Adds a warning for every drop rate far from what other players recorded.
-
-    others is a list of mob lists from accepted submissions (not including
-    this player's). Rates are compared per mob and item, with a z-test on the
-    two proportions. Quest items (class QUEST_ITEM_CLASS in this export's item
-    details, or in quest_items, from other players') aren't compared: they drop
-    only while you're on the quest, so a player who isn't sees 0% where others
-    saw 40%, and they can't be sold, so their rates change no one's gold."""
-    skip = set(quest_items) | {item for item, meta in result.item_meta.items() if meta[1] == QUEST_ITEM_CLASS}
-    totals = defaultdict(lambda: {"k": 0, "p": 0, "i": defaultdict(int), "pi": defaultdict(int)})
-    for mobs in others:
+def tally(mob_lists):
+    """Everyone's kills, picks and drops per mob, added up once: {npc: {"k", "p", "i": {item: drops},
+    "pi": {item: drops}}}. compare() takes it so a run checking many players reads every file once."""
+    totals = {}
+    for mobs in mob_lists:
         for mob in mobs:
-            entry = totals[mob.npc]
+            entry = totals.setdefault(mob.npc, {"k": 0, "p": 0, "i": defaultdict(int), "pi": defaultdict(int)})
             entry["k"] += mob.k
             entry["p"] += mob.p
             for item, (d, _) in mob.i.items():
                 entry["i"][item] += d
             for item, (d, _) in mob.pi.items():
                 entry["pi"][item] += d
+    return totals
+
+
+def compare(result, others, quest_items=(), totals=None, minus=None):
+    """Adds a warning for every drop rate far from what other players recorded.
+
+    others is a list of mob lists from accepted submissions (not including
+    this player's). Or, for many checks in one run, totals is tally() of every
+    accepted submission and minus is tally() of this player's own, taken back
+    out. Rates are compared per mob and item, with a z-test on the
+    two proportions. Quest items (class QUEST_ITEM_CLASS in this export's item
+    details, or in quest_items, from other players') aren't compared: they drop
+    only while you're on the quest, so a player who isn't sees 0% where others
+    saw 40%, and they can't be sold, so their rates change no one's gold."""
+    skip = set(quest_items) | {item for item, meta in result.item_meta.items() if meta[1] == QUEST_ITEM_CLASS}
+    totals = tally(others) if totals is None else totals
+    minus = minus or {}
     flagged = 0
     for mob in result.mobs:
         entry = totals.get(mob.npc)
         if not entry:
             continue
-        for key, attempts, other_attempts in (("i", mob.k, entry["k"]), ("pi", mob.p, entry["p"])):
+        own = minus.get(mob.npc, {"k": 0, "p": 0, "i": {}, "pi": {}})
+        for key, attempts, other_attempts in (("i", mob.k, entry["k"] - own["k"]),
+                                              ("pi", mob.p, entry["p"] - own["p"])):
             if attempts < OUTLIER_MIN_ATTEMPTS or other_attempts < OUTLIER_MIN_ATTEMPTS:
                 continue
             mine = getattr(mob, key)
-            for item in (set(mine) | set(entry[key])) - skip:
+            for item in sorted((set(mine) | set(entry[key])) - skip):
                 drops = mine.get(item, (0, 0))[0]
-                z = _z(drops, attempts, entry[key].get(item, 0), other_attempts)
+                theirs = entry[key].get(item, 0) - own[key].get(item, 0)
+                z = _z(drops, attempts, theirs, other_attempts)
                 if abs(z) >= OUTLIER_Z:
                     flagged += 1
                     if flagged <= 15:
                         result.warnings.append(
                             "NPC %d, item %d: %.1f%% over %d attempts, other players recorded %.1f%% over %d."
                             % (mob.npc, item, 100 * drops / attempts, attempts,
-                               100 * entry[key].get(item, 0) / other_attempts, other_attempts))
+                               100 * theirs / other_attempts, other_attempts))
     if flagged > 15:
         result.warnings.append("...and %d more rates that differ sharply." % (flagged - 15))
     return result

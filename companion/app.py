@@ -47,6 +47,8 @@ FIRST_CHECK_MS = 30000   # first update check, after startup settles
 CHECK_EVERY_MS = 6 * 3600 * 1000
 HANDOVER_SECONDS = 25    # how long a new version gets to start before we roll back
 PRICE_MINUTE = 25        # check for new prices at :25 UTC (Blizzard's snapshot ~:16, on the server by ~:22)
+PRICE_SPREAD = 15 * 60   # each check at a random point in :25-:40, so companions don't all ask the
+                         # server in the same minute
 PRICE_RETRY_SECONDS = 600
 FIRST_PRICE_MS = 8000
 GAME_CHECK_MS = 60000    # while WoW is open, look again this often before telling about an update
@@ -1038,7 +1040,7 @@ class App:
             target = int(now // 3600) * 3600 + PRICE_MINUTE * 60
             if target <= now:
                 target += 3600
-            delay_ms = int((target - now + random.uniform(0, 180)) * 1000)
+            delay_ms = int((target - now + random.uniform(0, PRICE_SPREAD)) * 1000)
         self.price_timer = self.root.after(delay_ms, self.check_prices)
 
     def check_prices(self):
