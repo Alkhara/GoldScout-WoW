@@ -1,4 +1,4 @@
-GoldScout-export 5^jyoh14ba15jf^4
+GoldScout-export 5^jyoh14ba15jf^5
 1161^20^0^11^12^1432^0.2761^0.5632^20^Stonesplinter Trogg^858:1:1,1179:1:1,2287:2:2,2536:8:8,2589:10:20,2778:1:1,5109:1:1,6267:1:1^
 1162^10^0^11^12^1432^0.2734^0.5513^10^Stonesplinter Scout^2589:5:10,2700:1:1,2777:1:1,4683:1:1^
 1172^7^0^10^11^1432^0.3034^0.2609^7^Tunnel Rat Vermin^1413:1:1,1515:1:1,2589:2:3,3110:3:3^
@@ -40,8 +40,12 @@ GoldScout-export 5^jyoh14ba15jf^4
 3728^5^0^18^19^1440^0.3195^0.2987^5^Dark Strand Adept^2592:1:2,3385:1:1^
 3730^2^0^19^20^1440^0.3159^0.3110^2^Dark Strand Excavator^2592:1:2,5366:1:1^
 3733^2^0^18^19^1440^0.3235^0.2376^2^Forsaken Herbalist^^
-3819^5^0^20^21^1440^0.2141^0.5602^5^Wildthorn Stalker^878:1:1,1081:1:1,2251:1:1,3174:4:4^
-3823^2^0^19^20^1440^0.2080^0.5746^2^Ghostpaw Runner^1015:1:1,5635:1:1^
+3772^2^0^24^24^1440^0.2627^0.6179^2^Lesser Felguard^2592:1:2,248682:1:1^
+3780^1^0^21^21^1440^0.4500^0.4629^1^Shadethicket Moss Eater^^
+3781^2^0^23^24^1440^0.3359^0.6658^2^Shadethicket Wood Shaper^4606:1:1^
+3783^3^0^22^23^1440^0.3305^0.6722^3^Shadethicket Raincaller^4606:3:3^
+3819^12^0^20^21^1440^0.3091^0.5574^12^Wildthorn Stalker^878:2:2,1081:3:3,2251:4:4,3174:8:8,3182:2:2,4428:1:1,14562:1:1,15506:1:1^
+3823^3^0^19^20^1440^0.2549^0.5815^3^Ghostpaw Runner^1015:2:2,3301:1:1,5635:2:2^
 6669^1^0^20^20^1439^0.5694^0.1337^1^The Threshwackonator 4100^^
 6788^1^0^18^19^1439^0.5155^0.3757^1^Den Mother^3173:1:1^
 6789^7^0^9^10^1439^0.5166^0.3744^7^Thistle Cub^4865:3:3,7073:2:2,7074:1:1^
@@ -91,6 +95,8 @@ GoldScout-export 5^jyoh14ba15jf^4
 @i^3173^Bear Meat
 @i^3174^Spider Ichor
 @i^3181^Partially Digested Meat
+@i^3182^Spider's Silk
+@i^3301^Sharp Canine
 @i^3307^Barbaric Cloth Boots
 @i^3308^Barbaric Cloth Gloves
 @i^3377^Canvas Bracers
@@ -99,7 +105,9 @@ GoldScout-export 5^jyoh14ba15jf^4
 @i^3627^Fang of Vagash
 @i^3882^Buzzard Feather
 @i^4306^Silk Cloth
+@i^4428^Spider Palp
 @i^4537^Tel'Abim Banana
+@i^4606^Spongy Morel
 @i^4683^Spellbinder Cloak
 @i^4813^Small Leather Collar
 @i^4865^Ruined Pelt
@@ -134,10 +142,13 @@ GoldScout-export 5^jyoh14ba15jf^4
 @i^14115^Aboriginal Bands
 @i^14117^Aboriginal Gloves of Intellect
 @i^14122^Ritual Bands of Intellect
+@i^14562^Prospector's Chestpiece
 @i^14724^War Paint Cloak
+@i^15506^Grunt's AnkleWraps of Stamina
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
 @i^211784^Scroll: WUBBA WUBBA
+@i^248682^Waylaid Crate: Apprentice Herbs
 @i^279276^Mathystral Amulet Fragment
 @i^279591^Marek's Croc-Hunting Knife
 @i^282637^Shaking Egg
@@ -183,6 +194,8 @@ GoldScout-export 5^jyoh14ba15jf^4
 @q^3173^1:7:1
 @q^3174^1:7:1
 @q^3181^0:15:0
+@q^3182^1:7:1
+@q^3301^0:15:0
 @q^3307^2:4:0
 @q^3308^2:4:0
 @q^3377^0:4:0
@@ -191,7 +204,9 @@ GoldScout-export 5^jyoh14ba15jf^4
 @q^3627^1:12:0
 @q^3882^0:15:0
 @q^4306^1:7:1
+@q^4428^0:15:0
 @q^4537^1:0:0
+@q^4606^1:0:0
 @q^4683^1:4:0
 @q^4813^0:15:0
 @q^4865^0:15:0
@@ -226,10 +241,13 @@ GoldScout-export 5^jyoh14ba15jf^4
 @q^14115^1:4:0
 @q^14117^2:4:0
 @q^14122^2:4:0
+@q^14562^2:4:0
 @q^14724^2:4:0
+@q^15506^2:4:0
 @q^17056^1:15:1
 @q^17057^1:15:0
 @q^211784^1:0:0
+@q^248682^1:0:1
 @q^279276^1:0:0
 @q^279591^1:12:0
 @q^282637^2:15:0
@@ -1027,8 +1045,12 @@ GoldScout-export 5^jyoh14ba15jf^4
 @a^3728^106:4,126:1
 @a^3730^126:2
 @a^3733^86:2
-@a^3819^204:1,223:2,224:2
-@a^3823^223:1,224:1
+@a^3772^245:2
+@a^3780^189:1
+@a^3781^266:2
+@a^3783^266:3
+@a^3819^188:1,204:1,207:1,223:2,224:2,226:2,227:3
+@a^3823^223:1,224:1,226:1
 @a^6669^51:1
 @a^6788^150:1
 @a^6789^150:7
