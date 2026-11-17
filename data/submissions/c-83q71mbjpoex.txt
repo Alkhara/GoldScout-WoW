@@ -1,4 +1,7 @@
-GoldScout-export 5^83q71mbjpoex^12
+GoldScout-export 5^83q71mbjpoex^13
+1767^1^0^13^13^1421^0.5692^0.2294^1^Vile Fin Shredder^1731:1:1^
+1909^1^0^18^19^1421^0.7031^0.1763^1^Vile Fin Lakestalker^5523:1:1^
+1953^1^0^16^16^1421^0.7034^0.3782^1^Lake Skulker^4605:1:1^
 2248^26^0^30^31^1424^0.4425^0.2955^26^Cave Yeti^1206:1:1,1708:2:2,1710:1:1,2289:1:1,3780:1:1^
 2249^14^0^31^32^1424^0.4410^0.2900^14^Ferocious Yeti^1710:1:1,3708:1:1,3771:1:1^
 2250^2^0^33^33^1416^0.4001^0.7215^2^Mountain Yeti^^
@@ -50,6 +53,25 @@ GoldScout-export 5^83q71mbjpoex^12
 11578^3^0^32^34^1443^0.5046^0.9266^3^Whirlwind Shredder^7069:1:1^
 218029^1^0^35^35^1417^0.6926^0.8264^1^Witherbark Champion^^
 218032^1^0^35^35^1417^0.6965^0.8210^1^Witherbark Goliath^253711:1:1^
+245999^1^0^0^0^0^0.0000^0.0000^0^^^
+246003^1^0^0^0^0^0.0000^0.0000^0^^^
+246008^1^0^0^0^0^0.0000^0.0000^0^^273042:1:1^
+246016^1^0^0^0^0^0.0000^0.0000^0^^273044:1:1^
+246017^1^0^0^0^0^0.0000^0.0000^0^^^
+246020^1^0^0^0^0^0.0000^0.0000^0^^251961:1:1^
+246602^1^0^0^0^0^0.0000^0.0000^0^^^
+246664^1^0^0^0^0^0.0000^0.0000^0^^276160:1:1^
+246990^1^0^0^0^0^0.0000^0.0000^0^^^
+247001^1^0^0^0^0^0.0000^0.0000^0^^1831:1:1^
+247016^2^0^0^0^0^0.0000^0.0000^0^^^
+247032^1^0^0^0^0^0.0000^0.0000^0^^^
+255065^1^0^0^0^0^0.0000^0.0000^0^^2592:1:2^
+255066^1^0^0^0^0^0.0000^0.0000^0^^^
+255068^2^0^0^0^0^0.0000^0.0000^0^^1810:1:1^
+255069^1^0^0^0^0^0.0000^0.0000^0^^^
+255070^1^0^0^0^0^0.0000^0.0000^0^^2592:1:2^
+255072^1^0^0^0^0^0.0000^0.0000^0^^^
+269134^1^0^0^0^0^0.0000^0.0000^0^^^
 @i^878^Fist-sized Spinneret
 @i^1074^Hard Spider Leg Tip
 @i^1081^Crisp Spider Meat
@@ -61,6 +83,9 @@ GoldScout-export 5^83q71mbjpoex^12
 @i^1696^Curved Raptor Talon
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
+@i^1731^Worn Mail Boots
+@i^1810^Tough Leather Armor
+@i^1831^Oaken War Staff
 @i^2251^Gooey Spider Leg
 @i^2289^Scroll of Strength II
 @i^2455^Minor Mana Potion
@@ -99,10 +124,12 @@ GoldScout-export 5^83q71mbjpoex^12
 @i^4553^Jagged Piece of Stone
 @i^4585^Dripping Spider Mandible
 @i^4586^Smooth Raptor Skin
+@i^4605^Red-speckled Mushroom
 @i^4784^Lifeless Stone
 @i^5113^Mark of the Syndicate
 @i^5116^Long Tail Feather
 @i^5137^Bright Eyeball
+@i^5523^Small Barnacled Clam
 @i^5635^Sharp Claw
 @i^5637^Large Fang
 @i^5811^Frostmaw's Mane
@@ -118,8 +145,12 @@ GoldScout-export 5^83q71mbjpoex^12
 @i^213422^Illegible Recipe
 @i^248686^Waylaid Crate: Journeyman Herbs
 @i^248688^Waylaid Crate: Journeyman Textiles
+@i^251961^Arcane Mote
 @i^253711^Goliath's Wristguards
 @i^262888^Sealed Journeyman's Writ
+@i^273042^Manascale Treads
+@i^273044^Violet Sorcerer's Robes
+@i^276160^Mana Fragment
 @i^278225^Surgical Spidersilk
 @q^878^0:7:0
 @q^1074^0:15:0
@@ -132,6 +163,9 @@ GoldScout-export 5^83q71mbjpoex^12
 @q^1696^0:15:0
 @q^1708^1:0:0
 @q^1710^1:0:0
+@q^1731^0:4:0
+@q^1810^0:4:0
+@q^1831^0:2:0
 @q^2251^1:7:1
 @q^2289^1:0:0
 @q^2455^1:0:0
@@ -170,10 +204,12 @@ GoldScout-export 5^83q71mbjpoex^12
 @q^4553^0:15:0
 @q^4585^0:15:0
 @q^4586^0:15:0
+@q^4605^1:0:0
 @q^4784^0:15:0
 @q^5113^0:15:0
 @q^5116^1:7:1
 @q^5137^0:15:0
+@q^5523^1:7:0
 @q^5635^1:7:1
 @q^5637^1:7:1
 @q^5811^1:12:0
@@ -189,12 +225,17 @@ GoldScout-export 5^83q71mbjpoex^12
 @q^213422^1:12:0
 @q^248686^1:0:1
 @q^248688^1:0:1
+@q^251961^1:12:0
 @q^253711^1:12:0
 @q^262888^3:0:0
+@q^273042^3:4:0
+@q^273044^3:4:0
+@q^276160^0:15:0
 @q^278225^1:12:0
 @m^1413^The Barrens
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
+@m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
 @m^1443^Desolace
 @c^118^
@@ -888,6 +929,9 @@ GoldScout-export 5^83q71mbjpoex^12
 @c^285280^
 @c^285281^
 @c^286152^
+@a^1767^91:1
+@a^1909^74:1
+@a^1953^154:1
 @a^2248^108:16,128:7,129:3
 @a^2249^108:8,109:1,128:5
 @a^2250^287:1,288:1

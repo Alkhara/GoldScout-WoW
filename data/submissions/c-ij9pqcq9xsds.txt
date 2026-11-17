@@ -1,10 +1,20 @@
-GoldScout-export 5^ij9pqcq9xsds^3
+GoldScout-export 5^ij9pqcq9xsds^4
 1561^1^0^40^40^1434^0.2762^0.7017^1^Bloodsail Raider^^
 1562^1^0^40^40^1434^0.2940^0.7146^1^Bloodsail Mage^4306:1:3^
+2555^7^0^33^34^1417^0.6917^0.6881^7^Witherbark Witch Doctor^4306:2:3,4522:4:4,9830:1:1^
+2556^17^0^34^35^1417^0.6786^0.8057^17^Witherbark Headhunter^4306:7:11,4503:3:3,216483:1:1,248710:1:1^
+2557^17^0^35^36^1417^0.6765^0.8087^17^Witherbark Shadow Hunter^3778:1:1,4306:4:4,4503:6:6,5040:1:1^
+2562^1^0^32^33^1417^0.3369^0.4946^1^Boulderfist Ogre^4306:1:1,213422:1:1^
 2572^1^0^36^36^1417^0.8209^0.3644^1^Drywhisker Kobold^1708:1:1^
 2573^12^0^37^38^1417^0.8503^0.3180^12^Drywhisker Surveyor^3780:1:1,3813:1:1,4306:4:6,4435:3:3^
 2574^19^0^36^37^1417^0.8416^0.3315^19^Drywhisker Digger^1708:1:1,4306:2:6,4338:1:1,4435:8:8,4539:2:2^
-2761^8^0^38^39^1417^0.6728^0.3017^8^Cresting Exile^4481:5:5,4791:2:5,7070:1:1^
+2588^4^0^36^37^1417^0.2620^0.6386^4^Syndicate Prowler^4306:1:1,5113:1:1^
+2590^1^0^35^36^1417^0.2604^0.6358^1^Syndicate Conjuror^3778:1:1^
+2597^1^0^40^40^1417^0.2626^0.6501^1^Lord Falconcrest^4517:1:1^
+2599^1^0^38^38^1417^0.2626^0.6501^1^Otto^4516:1:1^
+2761^15^0^38^39^1417^0.6718^0.2986^15^Cresting Exile^4481:8:8,4791:5:15,7070:2:2^
+2783^1^0^40^40^1417^0.2913^0.6408^1^Marez Cowl^4515:1:1^
+3560^2^0^33^33^1417^0.6743^0.6682^2^Healing Ward^^
 4648^1^0^33^34^1443^0.3827^0.7996^1^Gelkis Stamper^^
 4668^1^0^38^39^1443^0.4971^0.7755^1^Burning Blade Summoner^216956:1:1^
 4670^1^0^32^32^1443^0.7796^0.2490^1^Hatefury Rogue^6247:1:1^
@@ -41,6 +51,7 @@ GoldScout-export 5^ij9pqcq9xsds^3
 @i^1710^Greater Healing Potion
 @i^2592^Wool Cloth
 @i^3771^Wild Hog Shank
+@i^3778^Taut Compound Bow
 @i^3780^Long-barreled Musket
 @i^3785^Keen Axe
 @i^3787^Stone Club
@@ -51,9 +62,16 @@ GoldScout-export 5^ij9pqcq9xsds^3
 @i^4338^Mageweave Cloth
 @i^4435^Mote of Myzrael
 @i^4481^Cresting Charm
+@i^4503^Witherbark Tusk
+@i^4515^Marez's Head
+@i^4516^Otto's Head
+@i^4517^Falconcrest's Head
+@i^4522^Witherbark Medicine Pouch
 @i^4539^Goldenbark Apple
 @i^4784^Lifeless Stone
 @i^4791^Enchanted Water
+@i^5040^Shadow Hunter Knife
+@i^5113^Mark of the Syndicate
 @i^5122^Thick Kodo Hair
 @i^5215^Ember Wand of Spirit
 @i^5567^Silver Hook
@@ -62,19 +80,24 @@ GoldScout-export 5^ij9pqcq9xsds^3
 @i^6248^Scorpashi Venom
 @i^6249^Aged Kodo Hide
 @i^7070^Elemental Water
+@i^9830^Scaled Shield of the Falcon
 @i^12037^Mystery Meat
 @i^12204^Heavy Kodo Meat
 @i^19937^Small Scorpid Claw
 @i^19938^Heavy Scorpid Leg
+@i^213422^Illegible Recipe
+@i^216483^Witherbark Mallet
 @i^216956^Torn Letter
 @i^248689^Waylaid Crate: Journeyman Curiosities
 @i^248692^Waylaid Crate: Expert Ore
 @i^248694^Waylaid Crate: Expert Curiosities
+@i^248710^Waylaid Crate: Expert Parts
 @i^270333^Voodoo-Infused Artifact
 @q^1708^1:0:0
 @q^1710^1:0:0
 @q^2592^1:7:1
 @q^3771^1:0:0
+@q^3778^0:2:0
 @q^3780^0:2:0
 @q^3785^0:2:0
 @q^3787^0:2:0
@@ -85,9 +108,16 @@ GoldScout-export 5^ij9pqcq9xsds^3
 @q^4338^1:7:1
 @q^4435^1:12:0
 @q^4481^1:0:0
+@q^4503^1:12:0
+@q^4515^1:12:0
+@q^4516^1:12:0
+@q^4517^1:12:0
+@q^4522^1:12:0
 @q^4539^1:0:0
 @q^4784^0:15:0
 @q^4791^1:0:0
+@q^5040^1:2:0
+@q^5113^0:15:0
 @q^5122^0:15:0
 @q^5215^2:2:0
 @q^5567^0:15:0
@@ -96,14 +126,18 @@ GoldScout-export 5^ij9pqcq9xsds^3
 @q^6248^1:12:0
 @q^6249^1:12:0
 @q^7070^1:7:1
+@q^9830^2:4:0
 @q^12037^1:7:1
 @q^12204^1:7:1
 @q^19937^0:15:0
 @q^19938^0:15:0
+@q^213422^1:12:0
+@q^216483^1:0:0
 @q^216956^1:12:0
 @q^248689^1:0:1
 @q^248692^1:0:1
 @q^248694^1:0:1
+@q^248710^2:0:1
 @q^270333^1:12:0
 @m^1417^Arathi Highlands
 @m^1434^Stranglethorn Vale
@@ -634,10 +668,20 @@ GoldScout-export 5^ij9pqcq9xsds^3
 @c^285281^
 @a^1561^285:1
 @a^1562^285:1
+@a^2555^253:1,273:1,274:2,293:3
+@a^2556^313:6,314:1,333:10
+@a^2557^313:4,314:2,333:11
+@a^2562^186:1
 @a^2572^156:1
 @a^2573^116:1,136:3,137:8
 @a^2574^116:1,136:8,137:6,156:4
-@a^2761^113:3,133:5
+@a^2588^245:4
+@a^2590^245:1
+@a^2597^265:1
+@a^2599^265:1
+@a^2761^113:8,133:7
+@a^2783^245:1
+@a^3560^272:1,273:1
 @a^4648^307:1
 @a^4668^309:1
 @a^4670^95:1
