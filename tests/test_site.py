@@ -457,10 +457,11 @@ class CommunityTargetsTests(unittest.TestCase):
         self.assertIn("<h2>Community goals</h2>", box)
         self.assertIn("by %s (12 days left)" % data_pages.day_text(data_pages.TARGETS_DATE), box)
         self.assertIn("Players sharing data</span>", box)
-        self.assertIn('<span class=target-num><b>1</b> of 50</span>', box)
-        self.assertIn('<span class=target-num><b>33</b> of 30,000</span>', box)   # every kill, thin mobs too
+        goal = dict(data_pages.TARGETS)
+        self.assertIn('<span class=target-num><b>1</b> of {:,}</span>'.format(goal["contributors"]), box)
+        self.assertIn('<span class=target-num><b>33</b> of {:,}</span>'.format(goal["kills"]), box)   # every kill
         self.assertIn("Mobs with solid drop rates (50+ kills)", box)
-        self.assertIn('aria-label="0 of 150"><span style="width:0%"></span>', box)
+        self.assertIn('aria-label="0 of {}"><span style="width:0%"></span>'.format(goal["solid"]), box)
 
     def test_last_day_and_after(self):
         box = data_pages.targets_section(self.data, data_pages.TARGETS_DATE - datetime.timedelta(days=1))
@@ -472,12 +473,14 @@ class CommunityTargetsTests(unittest.TestCase):
         self.assertNotIn("left)", box)
 
     def test_reached(self):
-        self.data.contributors, self.data.kills = 60, 40000
-        for npc in range(300):
+        goal = dict(data_pages.TARGETS)
+        self.data.contributors, self.data.kills = goal["contributors"] + 10, goal["kills"] + 10000
+        for npc in range(goal["solid"] + 150):
             self.data.mobs[50000 + npc] = dict(self.data.mobs[3809], k=50)
         box = data_pages.targets_section(self.data, self.before)
         self.assertIn("Every goal for", box)
-        self.assertIn('<span class=target-num><b class=done>60</b> of 50</span>', box)
+        self.assertIn('<span class=target-num><b class=done>{:,}</b> of {:,}</span>'.format(
+            goal["contributors"] + 10, goal["contributors"]), box)
         self.assertIn('style="width:100%"', box)                     # past the target, the bar stays full
         self.assertNotIn('style="width:120%"', box)
 
@@ -498,13 +501,14 @@ class CommunityTargetsTests(unittest.TestCase):
         for day in (self.before, data_pages.TARGETS_DATE - datetime.timedelta(days=1), data_pages.TARGETS_DATE,
                     data_pages.TARGETS_DATE + datetime.timedelta(days=1)):
             box = data_pages.targets_section(self.data, day)
-        self.data.contributors, self.data.kills = 60, 40000
-        for npc in range(300):
+        goal = dict(data_pages.TARGETS)
+        self.data.contributors, self.data.kills = goal["contributors"] + 10, goal["kills"] + 10000
+        for npc in range(goal["solid"] + 150):
             self.data.mobs[50000 + npc] = dict(self.data.mobs[3809], k=50)
         box = data_pages.targets_section(self.data, self.before)
         self.assertEqual(data_pages.MISSING, set())
         self.assertIn("<h2>Gemeinschaftsziele</h2>", box)
-        self.assertIn("40.000", box)
+        self.assertIn("{:,}".format(goal["kills"] + 10000).replace(",", "."), box)   # German thousands separator
         self.assertEqual(data_pages.day_text(datetime.date(2026, 3, 1)), "1. März")
 
 
