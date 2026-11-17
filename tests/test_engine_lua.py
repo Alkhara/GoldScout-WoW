@@ -722,6 +722,35 @@ class HuntAreaTests(unittest.TestCase):
         self.assertEqual(edges, {45: ["bottom", "left", "top"], 46: ["bottom", "right", "top"],
                                  0: ["bottom", "left", "right", "top"]})
 
+    # OpenMap's stitched map: zone 1441 sits just right of 1440 on the world, at half its size.
+    OPEN_MAP = """{
+      WorldFromMap = function(zone, x, y)
+        if zone == 1440 then return x * 0.2, y * 0.2 end
+        if zone == 1441 then return 0.2 + x * 0.1, y * 0.1 end
+      end,
+      MapFromWorld = function(zone, u, v)
+        if zone == 1440 then return u / 0.2, v / 0.2 end
+      end,
+    }"""
+
+    def place(self, open_map, zone, canvas_map, left, top, size):
+        api = self.lua.eval(self.OPEN_MAP) if open_map else None
+        packed = self.lua.eval("function(h, ...) return { h.PlaceSquare(...) } end")
+        return list(packed(self.ns.Hunt, api, zone, canvas_map, left, top, size).values())
+
+    def test_squares_on_blizzards_map_stay_on_their_own_zone(self):
+        self.assertEqual([round(n, 6) for n in self.place(False, 1440, 1440, 0.25, 0.1, 0.05)], [0.25, 0.1, 0.3, 0.15])
+        self.assertEqual(self.place(False, 1441, 1440, 0.25, 0.1, 0.05), [])   # another zone: not drawn
+
+    def test_openmap_places_a_neighbouring_zones_squares_beside_the_map(self):
+        left, top, right, bottom = self.place(True, 1441, 1440, 0.5, 0.0, 0.05)
+        # 1441's x = 0.5 is world u = 0.25, which is 1.25 across 1440 (past its right edge)
+        self.assertAlmostEqual(left, 1.25)
+        self.assertAlmostEqual(top, 0.0)
+        self.assertAlmostEqual(right - left, 0.025)   # half the size: 1441 is half as big
+        self.assertAlmostEqual(bottom - top, 0.025)
+        self.assertEqual(self.place(True, 1442, 1440, 0.5, 0.0, 0.05), [])   # a zone OpenMap doesn't have
+
 
 
 @unittest.skipIf(lua51 is None, "lupa is not installed")

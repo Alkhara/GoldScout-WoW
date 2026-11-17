@@ -7,6 +7,8 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- **The hunting area shows with OpenMap:** with OpenMap's seamless map, the green hunting area was hidden under its map art. It now shows on OpenMap's map too, including when the area is in a zone next to the one you're looking at.
+
 ## v0.12.16
 
 - **By item ranks items by what they earn themselves:** with **Count all loot** on, every item row used to add its mob's vendor trash and other drops to its gold per hour, so a cheap drop from a mob with good trash could top the list. Now an item row counts only its item, and its tooltip says what the mob's other loot adds. The **By mob** view counts everything a mob drops, as before.

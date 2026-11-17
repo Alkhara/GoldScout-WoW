@@ -259,6 +259,60 @@ local function Texture(pool, i, layer, color)
   return texture
 end
 
+-- OpenMap (a popular map addon) can show one seamless map of every zone over
+-- Blizzard's: its art then covers the canvas up to OpenMapAPI.ArtTopLevel(),
+-- and the canvas's own map is just the one under the view, with its
+-- neighbours drawn around it. So while it's stitched, the area goes above the
+-- art (OpenMap lifts other addons' pins to +2 and up, so they stay over it)
+-- and each zone's squares are placed through OpenMap's API, wherever that
+-- zone sits on the canvas. Without OpenMap, or on Blizzard's map, nothing changes.
+local function OpenMapStitched()
+  local api = OpenMapAPI
+  if type(api) ~= "table" or type(api.IsStitched) ~= "function" then
+    return nil
+  end
+  local ok, stitched = pcall(api.IsStitched)
+  return ok and stitched and api or nil
+end
+
+local baseLevel     -- the area's frame level on Blizzard's own map
+local drawnMap      -- the canvas's map at the last draw (OpenMap's view can change it)
+
+local function SetAreaLevel(openMap)
+  local level = baseLevel
+  if openMap and type(openMap.ArtTopLevel) == "function" then
+    local ok, top = pcall(openMap.ArtTopLevel)
+    if ok and type(top) == "number" then
+      level = math.max(level, top + 1)
+    end
+  end
+  if areaFrame:GetFrameLevel() ~= level then
+    areaFrame:SetFrameLevel(level)
+  end
+end
+
+-- Where a square of zone `zone` (fractions of that zone) sits on the canvas, whose map is `map`: left, top,
+-- right, bottom as fractions of the canvas (past 0..1 for a zone beside it). nil if OpenMap can't place it.
+function Hunt.PlaceSquare(openMap, zone, map, left, top, size)
+  if zone == map then
+    return left, top, left + size, top + size
+  end
+  if not openMap then
+    return nil
+  end
+  local ok, u1, v1 = pcall(openMap.WorldFromMap, zone, left, top)
+  local ok2, u2, v2 = pcall(openMap.WorldFromMap, zone, left + size, top + size)
+  if not (ok and ok2 and u1 and u2) then
+    return nil
+  end
+  local ok3, x1, y1 = pcall(openMap.MapFromWorld, map, u1, v1)
+  local ok4, x2, y2 = pcall(openMap.MapFromWorld, map, u2, v2)
+  if not (ok3 and ok4 and x1 and x2) then
+    return nil
+  end
+  return x1, y1, x2, y2
+end
+
 local function DrawArea()
   if not areaFrame then
     return
@@ -270,38 +324,70 @@ local function DrawArea()
   end
   local ok, map = pcall(WorldMapFrame.GetMapID, WorldMapFrame)
   map = ok and ns.Plain(map) or nil
-  local cells = area and map and ns.db and ns.db.settings.huntMap and area[map]
-  if not cells then
+  drawnMap = map
+  local openMap = OpenMapStitched()
+  SetAreaLevel(openMap)
+  if not (area and map and ns.db and ns.db.settings.huntMap) then
     areaFrame:Hide()
     return
   end
   local width, height = areaFrame:GetWidth(), areaFrame:GetHeight()
   local line = math.max(1, width * AREA_EDGE_WIDTH)
-  local edges = 0
-  for i, spot in ipairs(Hunt.AreaSquares(cells)) do
-    local x, y = spot.left * width, -spot.top * height
-    local w, h = spot.size * width, spot.size * height
-    local square = Texture(areaSquares, i, "ARTWORK", AREA_FILL)
-    square:SetPoint("TOPLEFT", areaFrame, "TOPLEFT", x, y)
-    square:SetSize(w, h)
-    square:SetAlpha(spot.alpha)
-    -- side = { x, y, width, height } of its outline piece
-    local sides = {
-      top = { x, y, w, line },
-      bottom = { x, y - h + line, w, line },
-      left = { x, y, line, h },
-      right = { x + w - line, y, line, h },
-    }
-    for side, rect in pairs(sides) do
-      if spot.edges[side] then
-        edges = edges + 1
-        local edge = Texture(areaEdges, edges, "OVERLAY", AREA_EDGE)
-        edge:SetPoint("TOPLEFT", areaFrame, "TOPLEFT", rect[1], rect[2])
-        edge:SetSize(rect[3], rect[4])
+  local squares, edges = 0, 0
+  -- Blizzard's map shows one zone; OpenMap's, every zone of the area on its stitched world.
+  local zones = openMap and area or { [map] = area[map] }
+  for zone, cells in pairs(zones) do
+    for _, spot in ipairs(Hunt.AreaSquares(cells)) do
+      local left, top, right, bottom = Hunt.PlaceSquare(openMap, zone, map, spot.left, spot.top, spot.size)
+      if left then
+        local x, y = left * width, -top * height
+        local w, h = (right - left) * width, (bottom - top) * height
+        squares = squares + 1
+        local square = Texture(areaSquares, squares, "ARTWORK", AREA_FILL)
+        square:SetPoint("TOPLEFT", areaFrame, "TOPLEFT", x, y)
+        square:SetSize(w, h)
+        square:SetAlpha(spot.alpha)
+        -- side = { x, y, width, height } of its outline piece
+        local sides = {
+          top = { x, y, w, line },
+          bottom = { x, y - h + line, w, line },
+          left = { x, y, line, h },
+          right = { x + w - line, y, line, h },
+        }
+        for side, rect in pairs(sides) do
+          if spot.edges[side] then
+            edges = edges + 1
+            local edge = Texture(areaEdges, edges, "OVERLAY", AREA_EDGE)
+            edge:SetPoint("TOPLEFT", areaFrame, "TOPLEFT", rect[1], rect[2])
+            edge:SetSize(rect[3], rect[4])
+          end
+        end
       end
     end
   end
-  areaFrame:Show()
+  if squares > 0 then
+    areaFrame:Show()
+  else
+    areaFrame:Hide()
+  end
+end
+
+-- OpenMap tells other addons when its map comes or goes, and when its view moves (which can change the
+-- canvas's map); only a new map needs a redraw.
+local function WatchOpenMap()
+  local api = OpenMapAPI
+  if type(api) ~= "table" or type(api.RegisterCallback) ~= "function" then
+    return
+  end
+  pcall(api.RegisterCallback, "GoldScoutHuntArea", "OpenMap_StitchedChanged", function()
+    DrawArea()
+  end)
+  pcall(api.RegisterCallback, "GoldScoutHuntArea", "OpenMap_ViewChanged", function()
+    local ok, map = pcall(WorldMapFrame.GetMapID, WorldMapFrame)
+    if area and ok and ns.Plain(map) ~= drawnMap then
+      DrawArea()
+    end
+  end)
 end
 
 local function MakeAreaFrame()
@@ -320,12 +406,14 @@ local function MakeAreaFrame()
       level = math.max(level, explored)
     end
   end
+  baseLevel = level
   areaFrame:SetFrameLevel(level)
   areaFrame:SetScript("OnSizeChanged", DrawArea)
   if WorldMapFrame.OnMapChanged then
     hooksecurefunc(WorldMapFrame, "OnMapChanged", DrawArea)
   end
   WorldMapFrame:HookScript("OnShow", DrawArea)
+  WatchOpenMap()
 end
 
 -- Works out the area for the hunt in progress (none without one) and redraws it.
