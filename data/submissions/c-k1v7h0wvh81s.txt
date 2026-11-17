@@ -1,4 +1,4 @@
-GoldScout-export 5^k1v7h0wvh81s^9
+GoldScout-export 5^k1v7h0wvh81s^10
 6206^3^0^0^0^0^0.0000^0.0000^0^^4306:1:3^
 6212^2^0^0^0^0^0.0000^0.0000^0^^9308:1:1,9326:1:1^
 6224^3^0^0^0^0^0.0000^0.0000^0^^929:1:1,4542:1:1,9308:2:2^
@@ -25,8 +25,13 @@ GoldScout-export 5^k1v7h0wvh81s^9
 6556^2^0^48^50^1449^0.6750^0.4682^2^Muculent Ooze^12235:2:2,20763:1:1^
 6557^2^0^50^51^1449^0.5475^0.5174^2^Primal Ooze^11018:1:1,12235:2:2^
 6559^9^0^52^54^1449^0.3408^0.5732^9^Glutinous Ooze^3671:1:1,11018:1:1,12235:9:9,20763:1:1^
+7026^1^0^55^56^1428^0.4186^0.3524^1^Blackrock Sorcerer^^
+7027^6^0^56^57^1428^0.4061^0.3531^6^Blackrock Slayer^8766:1:1,13824:1:1,14047:4:8^
+7028^7^0^56^57^1428^0.4069^0.3524^7^Blackrock Warlock^13444:1:1,14047:2:6,262890:1:1^
+7029^3^0^57^58^1428^0.4079^0.3503^3^Blackrock Battlemaster^14047:1:1^
 7039^32^0^53^55^1428^0.6171^0.3883^32^War Reaver^4552:10:10,4554:1:1,7912:10:18,8150:8:8,8753:1:1,11266:10:10,13821:1:1,248698:1:1,262890:1:1^
 7047^1^0^51^52^1428^0.9476^0.3169^1^Black Broodling^^
+7048^1^0^53^53^1428^0.6026^0.2933^1^Scalding Broodling^^
 7092^12^0^51^52^1448^0.3960^0.4846^12^Tainted Ooze^3671:1:1,8086:1:1,12230:12:12,20763:1:1,20768:2:2,20770:1:1,262890:1:1^
 8890^12^0^49^50^1427^0.2619^0.8096^1^Anvilrage Warden^8766:1:1,8950:1:1,11078:3:3,14047:6:16,18945:2:9^
 8891^12^0^0^0^0^0.0000^0.0000^0^^8950:1:1,13443:1:1,14047:4:11,18945:3:14,262890:1:1^
@@ -90,6 +95,10 @@ GoldScout-export 5^k1v7h0wvh81s^9
 9938^2^0^0^0^0^0.0000^0.0000^0^^277129:1:1^
 10043^1^0^0^0^0^0.0000^0.0000^0^^^
 222525^2^0^0^0^0^0.0000^0.0000^0^^221314:1:1^
+248041^3^0^56^57^2482^0.7531^0.7580^3^Hyjal Stag^5471:1:1,251641:2:2^
+248395^5^0^55^56^2482^0.5884^0.7608^5^Tainted Shrubbery^8275:1:1,10286:1:1,247892:3:3^
+249051^1^0^57^57^2482^0.6584^0.7306^1^Celastrus the Bitter^282028:1:1^
+261914^1^0^55^55^2482^0.7249^0.8242^1^Tainted Hyjal Owl^11420:1:1,15420:1:3^
 272391^1^0^56^57^1450^0.3999^0.5364^1^Moonstrider^17056:1:1^
 @i^929^Healing Potion
 @i^2222^Tower Shield
@@ -117,6 +126,7 @@ GoldScout-export 5^k1v7h0wvh81s^9
 @i^4787^Burning Pitch
 @i^5128^Shed Lizard Skin
 @i^5133^Seeping Gizzard
+@i^5471^Stag Meat
 @i^6302^Delicate Insect Wing
 @i^7068^Elemental Fire
 @i^7077^Heart of Fire
@@ -126,6 +136,7 @@ GoldScout-export 5^k1v7h0wvh81s^9
 @i^8086^Light Plate Shoulderpads
 @i^8146^Wicked Claw
 @i^8150^Deeprock Salt
+@i^8275^Ebonhold Buckler
 @i^8753^Smooth Leather Helmet
 @i^8766^Morning Glory Dew
 @i^8950^Homemade Cherry Pie
@@ -145,6 +156,7 @@ GoldScout-export 5^k1v7h0wvh81s^9
 @i^11408^Bear Jaw
 @i^11409^Bear Flank
 @i^11411^Large Bear Bone
+@i^11420^Elegant Writing Tool
 @i^11476^U'cha's Pelt
 @i^11829^Un'Goro Ash
 @i^11830^Webbed Diemetradon Scale
@@ -156,11 +168,14 @@ GoldScout-export 5^k1v7h0wvh81s^9
 @i^12230^Felwood Slime Sample
 @i^12235^Un'Goro Slime Sample
 @i^13443^Superior Mana Potion
+@i^13444^Major Mana Potion
 @i^13446^Major Healing Potion
 @i^13821^Bulky Maul
+@i^13824^Recurve Long Bow
 @i^14047^Runecloth
 @i^14282^Opulent Gloves of Fire Protection
 @i^14444^Venomshroud Leggings
+@i^15420^Ironfeather
 @i^17056^Light Feather
 @i^18945^Dark Iron Residue
 @i^19935^Empty Venom Sac
@@ -168,10 +183,13 @@ GoldScout-export 5^k1v7h0wvh81s^9
 @i^20768^Oozing Bag
 @i^20770^Bubbling Green Ichor
 @i^221314^Wanted Notice
+@i^247892^Verdant Leaves
 @i^248695^Waylaid Crate: Earthly Artisan Herbs
 @i^248698^Waylaid Crate: Artisan Textiles
+@i^251641^Hyjal Venison Cut
 @i^262890^Sealed Artisan's Writ
 @i^277129^Fragment of the Firelands
+@i^282028^Broken Frond of Celastrus
 @q^929^1:0:0
 @q^2222^0:4:0
 @q^2592^1:7:1
@@ -198,6 +216,7 @@ GoldScout-export 5^k1v7h0wvh81s^9
 @q^4787^0:15:0
 @q^5128^0:15:0
 @q^5133^0:15:0
+@q^5471^1:7:1
 @q^6302^0:15:0
 @q^7068^1:7:1
 @q^7077^1:7:1
@@ -207,6 +226,7 @@ GoldScout-export 5^k1v7h0wvh81s^9
 @q^8086^0:4:0
 @q^8146^1:7:1
 @q^8150^1:7:1
+@q^8275^2:4:0
 @q^8753^0:4:0
 @q^8766^1:0:0
 @q^8950^1:0:0
@@ -226,6 +246,7 @@ GoldScout-export 5^k1v7h0wvh81s^9
 @q^11408^0:15:0
 @q^11409^0:15:0
 @q^11411^0:2:0
+@q^11420^0:15:0
 @q^11476^1:12:0
 @q^11829^1:12:0
 @q^11830^1:12:0
@@ -237,11 +258,14 @@ GoldScout-export 5^k1v7h0wvh81s^9
 @q^12230^1:12:0
 @q^12235^1:12:0
 @q^13443^1:0:0
+@q^13444^1:0:0
 @q^13446^1:0:0
 @q^13821^0:2:0
+@q^13824^0:2:0
 @q^14047^1:7:1
 @q^14282^2:4:0
 @q^14444^2:4:0
+@q^15420^1:7:1
 @q^17056^1:15:1
 @q^18945^1:12:0
 @q^19935^0:15:0
@@ -249,15 +273,19 @@ GoldScout-export 5^k1v7h0wvh81s^9
 @q^20768^1:15:0
 @q^20770^0:15:0
 @q^221314^1:12:0
+@q^247892^1:12:0
 @q^248695^1:0:1
 @q^248698^1:0:1
+@q^251641^1:12:0
 @q^262890^3:0:0
 @q^277129^1:12:0
+@q^282028^1:12:0
 @m^1427^Searing Gorge
 @m^1428^Burning Steppes
 @m^1448^Felwood
 @m^1449^Un'Goro Crater
 @m^1450^Moonglade
+@m^2482^Mount Hyjal
 @c^118^
 @c^724^
 @c^733^
@@ -1036,8 +1064,13 @@ GoldScout-export 5^k1v7h0wvh81s^9
 @a^6556^112:1,274:1
 @a^6557^70:1,331:1
 @a^6559^166:2,186:1,225:1,226:1,227:1,267:2,307:1
+@a^7026^148:1
+@a^7027^128:1,147:1,148:4
+@a^7028^128:2,147:3,148:2
+@a^7029^127:1,148:2
 @a^7039^131:1,132:1,150:4,151:4,152:2,153:11,171:3,172:6
 @a^7047^138:1
+@a^7048^112:1
 @a^7092^186:2,187:5,188:5
 @a^8890^325:1
 @a^8957^49:1,50:4
@@ -1051,5 +1084,9 @@ GoldScout-export 5^k1v7h0wvh81s^9
 @a^9167^147:1,224:7,244:3,245:1,247:2,307:1
 @a^9477^331:1
 @a^9622^53:1
+@a^248041^314:1,315:2
+@a^248395^272:1,311:4
+@a^249051^293:1
+@a^261914^334:1
 @a^272391^207:1
 @l^0^enUS
