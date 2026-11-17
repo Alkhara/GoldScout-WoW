@@ -7,6 +7,7 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- **GoldScout en español:** GoldScout now speaks Spanish on Spanish game clients (Spain and Latin America). It's a new translation; corrections are welcome on GitHub.
 - Fixed a Lua error from Blizzard's Sell tab ("attempt to compare nil with number") when a price scan ran while an item sat in the Sell tab: the scan now pauses while the Sell tab is open and carries on when you leave it.
 
 ## v0.12.19

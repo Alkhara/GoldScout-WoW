@@ -17,7 +17,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 ADDON = ROOT / "GoldScout"
-LOCALES = ("deDE", "frFR", "koKR", "zhTW")
+LOCALES = ("deDE", "frFR", "koKR", "zhTW", "esES")   # Locale_esES.lua serves esMX too
 LIT = r'"(?:[^"\\\n]|\\.)*"'
 LOOKUP = re.compile(r"\bL\[(" + LIT + r"(?:\s*\.\.\s*" + LIT + r")*)\]")
 ENTRY = re.compile(r'^\s*\[(' + LIT + r')\]\s*=\s*(' + LIT + r'),\s*$')

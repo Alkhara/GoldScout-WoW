@@ -1,6 +1,6 @@
 """GoldScout's translations: every language file only translates texts the
 addon uses, keeps their placeholders in a usable order, and actually loads in
-game (German and French run here; Korean and Chinese use %1$s positions,
+game (German, French and Spanish run here; Korean and Chinese use %1$s positions,
 which WoW's string.format supports and plain Lua 5.1 doesn't)."""
 import sys
 import unittest
@@ -50,7 +50,8 @@ class CheckTests(unittest.TestCase):
     def test_toc_loads_the_language_files_first(self):
         toc = (ROOT / "GoldScout" / "GoldScout.toc").read_text(encoding="utf-8").split()
         files = [name for name in toc if name.endswith(".lua")]
-        self.assertEqual(files[:5], ["Locale.lua"] + ["Locale_%s.lua" % locale for locale in l10n.LOCALES])
+        expected = ["Locale.lua"] + ["Locale_%s.lua" % locale for locale in l10n.LOCALES]
+        self.assertEqual(files[:len(expected)], expected)
 
 
 @unittest.skipIf(lua51 is None, "lupa is not installed")
@@ -64,6 +65,13 @@ class InGameTests(unittest.TestCase):
             lua.execute("return loadstring(...)", source)("GoldScout", ns)
         return lua, ns
 
+    def test_spanish_serves_both_spanish_clients(self):
+        for locale in ("esES", "esMX"):
+            _, ns = self.load(locale)
+            with self.subTest(locale):
+                self.assertEqual(ns.L["Scan AH"], "Escanear CS")
+                self.assertEqual(ns.L["Not translated anywhere"], "Not translated anywhere")
+
     def test_only_the_games_language_is_used(self):
         _, german = self.load("deDE")
         self.assertEqual(german.L["Scan AH"], "AH scannen")
@@ -74,7 +82,7 @@ class InGameTests(unittest.TestCase):
         self.assertEqual(korean.L["Scan AH"], "경매장 검색")
 
     def test_german_and_french_format(self):
-        for locale in ("deDE", "frFR"):
+        for locale in ("deDE", "frFR", "esES"):
             lua, ns = self.load(locale)
             fmt = lua.eval("function(text, ...) return text:format(...) end")
             translated, _ = l10n.entries(locale)
