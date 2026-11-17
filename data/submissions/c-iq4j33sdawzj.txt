@@ -1,4 +1,4 @@
-GoldScout-export 5^iq4j33sdawzj^5
+GoldScout-export 5^iq4j33sdawzj^6
 683^6^0^30^31^1434^0.4075^0.1121^6^Young Panther^1686:1:1,1687:2:2,248686:1:1,248690:1:1^
 2240^5^0^32^33^1416^0.5544^0.7107^5^Syndicate Footpad^3037:1:1,4306:1:1^
 2241^7^0^33^34^1416^0.5677^0.7002^7^Syndicate Thief^4306:3:3,5113:1:1^
@@ -20,11 +20,22 @@ GoldScout-export 5^iq4j33sdawzj^5
 2589^3^0^31^32^1417^0.3206^0.2860^3^Syndicate Mercenary^4306:1:1,5113:1:1^
 2619^1^0^35^35^1417^0.5997^0.5374^1^Hammerfall Grunt^^
 2946^1^0^44^44^1424^0.4906^0.4611^1^Puppet of Helcular^^
+4107^15^0^28^29^1441^0.1145^0.3537^15^Highperch Wyvern^5136:1:1,5137:7:7,5635:1:1,5809:5:5,248688:1:1^
+4109^6^0^28^29^1441^0.1158^0.3578^6^Highperch Consort^5136:1:1,5137:3:3,5809:4:4^
+4110^1^0^30^31^1441^0.1155^0.3529^1^Highperch Patriarch^5137:1:1,5809:1:1^
+4140^8^0^31^32^1441^0.8466^0.6247^8^Scorpid Reaver^1288:1:1,5794:4:4,12037:1:1,19938:1:1,213544:1:1^
+4142^1^0^31^31^1441^0.7105^0.6297^1^Sparkleshell Tortoise^4555:1:1^
+4143^5^0^34^35^1441^0.8524^0.6855^5^Sparkleshell Snapper^3712:4:4,4556:4:4,5795:1:1^
+4151^8^0^32^33^1441^0.8453^0.6706^8^Saltstone Crystalhide^1701:1:1,1702:1:1,4093:1:1,11386:1:1^
+4154^4^0^30^32^1441^0.8719^0.6529^4^Salt Flats Scavenger^5114:1:1,5116:1:1,5848:2:2,12037:1:1,17056:2:2^
 14276^1^0^30^30^1424^0.2649^0.7125^1^Scargil^5524:1:1,17057:1:1,17058:1:1^
 @i^1205^Melon Juice
+@i^1288^Large Venom Sac
 @i^1478^Scroll of Protection II
 @i^1686^Bristly Whisker
 @i^1687^Retractable Claw
+@i^1701^Curved Basilisk Claw
+@i^1702^Intact Basilisk Spine
 @i^1707^Stormwind Brie
 @i^1710^Greater Healing Potion
 @i^1827^Meat Cleaver
@@ -34,31 +45,53 @@ GoldScout-export 5^iq4j33sdawzj^5
 @i^3380^Cross-stitched Belt
 @i^3385^Lesser Mana Potion
 @i^3703^Southshore Stout
+@i^3712^Turtle Meat
 @i^3716^Murloc Head
 @i^3720^Yeti Fur
 @i^3731^Lion Meat
 @i^3771^Wild Hog Shank
 @i^3778^Taut Compound Bow
 @i^3783^Light Scimitar
+@i^4093^Large Basilisk Tail
 @i^4306^Silk Cloth
+@i^4555^Thick Scaly Tail
+@i^4556^Speckled Shell Fragment
 @i^5113^Mark of the Syndicate
+@i^5114^Severed Talon
+@i^5116^Long Tail Feather
+@i^5136^Torn Furry Ear
+@i^5137^Bright Eyeball
 @i^5524^Thick-shelled Clam
+@i^5635^Sharp Claw
 @i^5785^Thick Murloc Scale
+@i^5794^Salty Scorpid Venom
+@i^5795^Hardened Tortoise Shell
+@i^5809^Highperch Venom Sac
+@i^5848^Hollow Vulture Bone
 @i^6308^Raw Bristle Whisker Catfish
 @i^7072^Naga Scale
 @i^7354^Elder's Boots of the Whale
 @i^7561^Schematic: Goblin Jumper Cables
+@i^11386^Squishy Basilisk Eye
+@i^12037^Mystery Meat
+@i^17056^Light Feather
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
+@i^19938^Heavy Scorpid Leg
 @i^211853^Scroll: VOCE WELL
 @i^213543^Scroll: UPDOG
+@i^213544^Scroll: TOPAZ YORAK
 @i^213546^Scroll: SHOOBEEDOOP
 @i^248686^Waylaid Crate: Journeyman Herbs
+@i^248688^Waylaid Crate: Journeyman Textiles
 @i^248690^Waylaid Crate: Earthly Expert Herbs
 @q^1205^1:0:0
+@q^1288^1:7:1
 @q^1478^1:0:0
 @q^1686^0:15:0
 @q^1687^0:15:0
+@q^1701^0:15:0
+@q^1702^0:15:0
 @q^1707^1:0:0
 @q^1710^1:0:0
 @q^1827^0:2:0
@@ -68,31 +101,51 @@ GoldScout-export 5^iq4j33sdawzj^5
 @q^3380^0:4:0
 @q^3385^1:0:0
 @q^3703^1:0:0
+@q^3712^1:7:1
 @q^3716^1:12:0
 @q^3720^1:12:0
 @q^3731^1:7:1
 @q^3771^1:0:0
 @q^3778^0:2:0
 @q^3783^0:2:0
+@q^4093^0:15:0
 @q^4306^1:7:1
+@q^4555^0:15:0
+@q^4556^0:15:0
 @q^5113^0:15:0
+@q^5114^0:15:0
+@q^5116^1:7:1
+@q^5136^0:15:0
+@q^5137^0:15:0
 @q^5524^1:7:0
+@q^5635^1:7:1
 @q^5785^1:7:1
+@q^5794^1:12:0
+@q^5795^1:12:0
+@q^5809^1:12:0
+@q^5848^1:12:0
 @q^6308^1:7:1
 @q^7072^1:7:1
 @q^7354^2:4:0
 @q^7561^1:9:0
+@q^11386^0:15:0
+@q^12037^1:7:1
+@q^17056^1:15:1
 @q^17057^1:15:0
 @q^17058^1:15:0
+@q^19938^0:15:0
 @q^211853^1:0:0
 @q^213543^1:0:0
+@q^213544^1:0:0
 @q^213546^1:0:0
 @q^248686^1:0:1
+@q^248688^1:0:1
 @q^248690^1:0:1
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
 @m^1424^Hillsbrad Foothills
 @m^1434^Stranglethorn Vale
+@m^1441^Thousand Needles
 @c^118^
 @c^724^
 @c^733^
@@ -833,5 +886,13 @@ GoldScout-export 5^iq4j33sdawzj^5
 @a^2589^106:2,126:1
 @a^2619^211:1
 @a^2946^189:1
+@a^4107^122:8,141:1,142:6
+@a^4109^122:2,141:1,142:3
+@a^4110^142:1
+@a^4140^236:1,256:4,257:3
+@a^4142^254:1
+@a^4143^236:1,256:1,297:3
+@a^4151^256:2,257:2,276:2,316:2
+@a^4154^257:1,277:3
 @a^14276^285:1
 @l^0^enUS
