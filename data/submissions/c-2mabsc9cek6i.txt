@@ -1,4 +1,4 @@
-GoldScout-export 5^2mabsc9cek6i^11
+GoldScout-export 5^2mabsc9cek6i^12
 36^2^0^12^12^1436^0.5032^0.3465^2^Harvest Golem^732:1:1,814:1:1,1274:1:1,255007:1:1^
 117^31^0^11^12^1436^0.4467^0.1580^31^Riverpaw Gnoll^725:4:4,955:1:1,1511:1:1,1513:1:1,2287:1:1,2589:12:27,2763:1:1,2777:1:1,6269:1:1,9752:1:1,211780:2:2,211785:1:1,211786:1:1^
 199^2^0^11^11^1436^0.4471^0.1849^2^Young Fleshripper^3399:1:1,6889:1:1,7097:1:1,9752:1:1^
@@ -14,8 +14,8 @@ GoldScout-export 5^2mabsc9cek6i^11
 1126^1^0^7^7^1426^0.5217^0.4898^1^Large Crag Boar^771:1:1^
 1127^5^0^7^8^1426^0.7587^0.5565^5^Elder Crag Boar^769:2:2,771:2:2,2886:3:3,3171:1:1,3172:3:3^
 1131^1^0^7^8^1426^0.5147^0.4860^1^Winter Wolf^2672:1:1^
-1161^4^0^11^12^1432^0.3183^0.7435^4^Stonesplinter Trogg^2536:2:2,2589:2:5^
-1162^8^0^11^12^1432^0.3128^0.7424^8^Stonesplinter Scout^858:1:1,2075:1:1,2268:2:2,2287:1:1,2536:2:2,2589:4:6^
+1161^11^0^11^12^1432^0.3180^0.7648^11^Stonesplinter Trogg^1179:1:1,1731:1:1,2287:1:1,2536:3:3,2589:5:11,5109:1:1^
+1162^24^0^11^12^1432^0.3159^0.7577^24^Stonesplinter Scout^858:1:1,1499:1:1,1515:1:1,2075:1:1,2268:2:2,2287:1:1,2536:5:5,2589:8:14,4561:1:1^
 1172^3^0^10^11^1432^0.2692^0.4355^3^Tunnel Rat Vermin^2138:1:1,2589:2:4,2963:1:1^
 1173^1^0^11^11^1432^0.2830^0.4526^1^Tunnel Rat Scout^^
 1176^11^0^11^12^1432^0.2637^0.4330^11^Tunnel Rat Forager^955:1:1,1179:1:1,2589:4:9,3110:6:6,3375:2:2,4537:2:2^
@@ -101,6 +101,16 @@ GoldScout-export 5^2mabsc9cek6i^11
 10160^5^0^12^14^1439^0.4580^0.4776^5^Raging Moonkin^5114:2:2,6889:1:1,17056:1:1,211786:1:1^
 14429^1^0^11^11^1438^0.4213^0.7998^1^Grimmaw^2589:1:2,5572:1:1^
 260157^24^0^9^10^1426^0.7562^0.5949^24^Elder Snow Leopard^2960:1:1,4813:5:5,4814:16:16,8180:1:1,267414:6:6^
+261306^1^0^0^0^0^0.0000^0.0000^0^^^
+261311^1^0^0^0^0^0.0000^0.0000^0^^^
+261319^1^0^0^0^0^0.0000^0.0000^0^^274286:1:1^
+263389^2^0^0^0^0^0.0000^0.0000^0^^2589:1:5^
+263390^3^0^0^0^0^0.0000^0.0000^0^^2589:1:5,4689:1:1,248684:1:1^
+263396^9^0^0^0^0^0.0000^0.0000^0^^2589:4:10,3374:1:1,9785:1:1,275893:1:1^
+263397^2^0^0^0^0^0.0000^0.0000^0^^^
+263438^2^0^0^0^0^0.0000^0.0000^0^^^
+263466^1^0^0^0^0^0.0000^0.0000^0^^^
+263470^3^0^0^0^0^0.0000^0.0000^0^^2672:2:2,3300:1:1^
 272034^1^0^10^10^1438^0.3506^0.3876^1^Hatescreech^280831:1:1^
 272044^1^0^10^10^1438^0.3347^0.3567^1^Windmistress Gaedress^280832:1:1^
 272046^1^0^12^12^1438^0.3428^0.2802^1^Witchmother Arysa^2589:1:1,17056:1:1,280834:1:1^
@@ -164,6 +174,8 @@ GoldScout-export 5^2mabsc9cek6i^11
 @i^1507^Warped Leather Pants
 @i^1511^Commoner's Sword
 @i^1513^Old Greatsword
+@i^1515^Rough Wooden Staff
+@i^1731^Worn Mail Boots
 @i^1733^Worn Cloak
 @i^2067^Frostbit Staff
 @i^2075^Priest's Mace of the Whale
@@ -222,6 +234,7 @@ GoldScout-export 5^2mabsc9cek6i^11
 @i^3363^Frayed Belt
 @i^3365^Frayed Bracers
 @i^3370^Patchwork Belt
+@i^3374^Calico Belt
 @i^3375^Calico Bracers
 @i^3399^Vulture Talon
 @i^3409^Nightsaber Fang
@@ -230,11 +243,13 @@ GoldScout-export 5^2mabsc9cek6i^11
 @i^3642^Ancestral Bracers
 @i^4536^Shiny Red Apple
 @i^4537^Tel'Abim Banana
+@i^4561^Scalping Tomahawk of Agility
 @i^4565^Simple Dagger
 @i^4604^Forest Mushroom Cap
 @i^4669^Battle Chain Girdle
 @i^4672^Ancestral Belt
 @i^4686^Barbaric Cloth Cloak
+@i^4689^Hunting Cloak
 @i^4757^Cracked Egg Shells
 @i^4775^Cracked Bill
 @i^4776^Ruffled Feather
@@ -242,6 +257,7 @@ GoldScout-export 5^2mabsc9cek6i^11
 @i^4814^Discolored Fang
 @i^4865^Ruined Pelt
 @i^4874^Clean Fishbones
+@i^5109^Stonesplinter Rags
 @i^5114^Severed Talon
 @i^5115^Broken Wishbone
 @i^5134^Small Furry Paw
@@ -284,6 +300,7 @@ GoldScout-export 5^2mabsc9cek6i^11
 @i^8363^Shaman Voodoo Charm
 @i^9742^Simple Cord
 @i^9752^Nomad Bands
+@i^9785^Raider's Bracers of Arcane Protection
 @i^10639^Hyacinth Mushroom
 @i^10640^Webwood Ichor
 @i^11406^Rotting Bear Carcass
@@ -301,10 +318,13 @@ GoldScout-export 5^2mabsc9cek6i^11
 @i^211785^Scroll: CWAL
 @i^211786^Scroll: CHAP BALK WELLES
 @i^211787^Scroll: LOWER PING WHOMEVER
+@i^248684^Waylaid Crate: Apprentice Textiles
 @i^255007^Golem Isospring
 @i^267414^Pristine Leopard Pelt
 @i^268548^Empty Powder Keg
 @i^274268^Dark Iron Map
+@i^274286^Durgen Dirgehammer's Head
+@i^275893^Searing Gourd
 @i^277190^Fang of Githyiss
 @i^280087^Soft Nightsaber Pelt
 @i^280831^Hatescreech's Amulet
@@ -368,6 +388,8 @@ GoldScout-export 5^2mabsc9cek6i^11
 @q^1507^0:4:0
 @q^1511^0:2:0
 @q^1513^0:2:0
+@q^1515^0:2:0
+@q^1731^0:4:0
 @q^1733^0:4:0
 @q^2067^1:2:0
 @q^2075^2:2:0
@@ -426,6 +448,7 @@ GoldScout-export 5^2mabsc9cek6i^11
 @q^3363^0:4:0
 @q^3365^0:4:0
 @q^3370^0:4:0
+@q^3374^0:4:0
 @q^3375^0:4:0
 @q^3399^0:15:0
 @q^3409^1:12:0
@@ -434,11 +457,13 @@ GoldScout-export 5^2mabsc9cek6i^11
 @q^3642^1:4:0
 @q^4536^1:0:0
 @q^4537^1:0:0
+@q^4561^2:2:0
 @q^4565^1:2:0
 @q^4604^1:0:0
 @q^4669^1:4:0
 @q^4672^1:4:0
 @q^4686^1:4:0
+@q^4689^1:4:0
 @q^4757^0:15:0
 @q^4775^0:15:0
 @q^4776^0:15:0
@@ -446,6 +471,7 @@ GoldScout-export 5^2mabsc9cek6i^11
 @q^4814^0:15:0
 @q^4865^0:15:0
 @q^4874^0:15:0
+@q^5109^1:4:0
 @q^5114^0:15:0
 @q^5115^0:15:0
 @q^5134^1:12:0
@@ -488,6 +514,7 @@ GoldScout-export 5^2mabsc9cek6i^11
 @q^8363^1:12:0
 @q^9742^1:4:0
 @q^9752^1:4:0
+@q^9785^2:4:0
 @q^10639^1:12:0
 @q^10640^1:12:0
 @q^11406^0:15:0
@@ -505,10 +532,13 @@ GoldScout-export 5^2mabsc9cek6i^11
 @q^211785^1:0:0
 @q^211786^1:0:0
 @q^211787^1:0:0
+@q^248684^1:0:1
 @q^255007^1:7:1
 @q^267414^1:12:0
 @q^268548^1:12:0
 @q^274268^1:12:0
+@q^274286^1:12:0
+@q^275893^1:15:0
 @q^277190^1:12:0
 @q^280087^1:12:0
 @q^280831^1:12:0
@@ -719,8 +749,8 @@ GoldScout-export 5^2mabsc9cek6i^11
 @a^1126^190:1
 @a^1127^156:1,235:1,254:2,255:1
 @a^1131^190:1
-@a^1161^286:4
-@a^1162^286:7,306:1
+@a^1161^286:6,306:3,326:2
+@a^1162^286:12,306:11,326:1
 @a^1172^165:2,185:1
 @a^1173^185:1
 @a^1176^165:11
