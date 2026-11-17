@@ -112,6 +112,9 @@ export default {
       if (tooMany) {
         return tooMany;
       }
+      if (url.pathname === "/v1/limit-check") {   // TEMPORARY (November 17): what the limiter did, see limitNotes
+        return json({ limiter: limitNotes.get(request) || "not checked" });
+      }
       const admin = await handleAdmin(request, env, url, adminToken);
       if (admin) {
         return admin;
@@ -203,25 +206,35 @@ export function networkKey(ip) {
   return groups.slice(0, 4).map((g) => g.replace(/^0+(?=.)/, "")).join(":") + "::/64";
 }
 
+// TEMPORARY (November 17): what the limiter did with a request, for GET /v1/limit-check, to find out why
+// bursts got through live. Take out once that's known.
+const limitNotes = new WeakMap();
+
 async function limited(request, env, url) {
   if (!url.pathname.startsWith("/v1/") || request.method === "OPTIONS") {
     return null;
   }
   const ip = request.headers.get("CF-Connecting-IP");
   if (!ip || LOOPBACK.has(ip) || isAdminToken(request, env)) {
+    limitNotes.set(request, !ip ? "skipped: no address" : LOOPBACK.has(ip) ? "skipped: loopback" : "skipped: admin");
     return null;
   }
   const key = networkKey(ip);
+  const notes = ["key " + (key.includes(":") ? "IPv6 /64" : "IPv4")];
+  limitNotes.set(request, notes);
   for (const limiter of [env.API_LIMIT, WRITE_METHODS.has(request.method) ? env.WRITE_LIMIT : null]) {
     if (!limiter) {
+      notes.push(limiter === null ? "no write limit for " + request.method : "API_LIMIT binding missing");
       continue;
     }
     let outcome;
     try {
       outcome = await limiter.limit({ key });
-    } catch {
+    } catch (error) {
+      notes.push("limiter error: " + String((error && error.message) || error).slice(0, 120));
       continue;
     }
+    notes.push("outcome " + JSON.stringify(outcome));
     if (outcome && outcome.success === false) {
       return new Response(JSON.stringify({ error: "Too many requests from your network; try again in a minute." }), {
         status: 429,
