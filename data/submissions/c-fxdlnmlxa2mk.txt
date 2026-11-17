@@ -1,8 +1,13 @@
-GoldScout-export 5^fxdlnmlxa2mk^1
+GoldScout-export 5^fxdlnmlxa2mk^2
 597^24^0^36^37^1434^0.2033^0.1247^24^Bloodscalp Berserker^1708:1:1,2728:1:1,2732:1:1,3771:2:2,3915:4:4,4306:7:15,4338:1:1,213544:1:1^
 660^13^0^37^37^1434^0.2026^0.1285^13^Bloodscalp Witch Doctor^2730:1:1,3915:4:4,4306:2:6,4338:1:1^
 671^22^0^36^37^1434^0.2066^0.1259^22^Bloodscalp Headhunter^1529:1:1,1532:10:20,2749:1:1,3385:1:1,3915:6:6,4306:6:10,4338:2:2^
+684^9^0^37^38^1434^0.3759^0.3557^9^Shadowmaw Panther^1688:2:2,3838:8:8^
 689^7^0^34^35^1434^0.2525^0.1811^7^Crystal Spine Basilisk^1701:2:2,1702:1:1,1703:1:1,3918:3:3,8146:1:1^
+690^13^0^39^40^1434^0.3106^0.3966^13^Cold Eye Basilisk^1701:5:5,1702:3:3,3918:7:7,4093:2:2,5637:1:1,8146:2:2,11386:2:2^
+772^21^0^37^38^1434^0.3820^0.3671^21^Stranglethorn Tigress^1686:1:1,1688:7:7,3839:1:1,3864:1:1,4043:1:1,7444:1:1,8146:1:1,12202:10:10,248694:1:1^
+1114^1^0^37^37^1434^0.4062^0.2956^1^Jungle Thunderer^^
+1152^6^0^35^36^1434^0.3941^0.3081^6^Snapjaw Crocolisk^770:2:2,3667:2:2,4104:5:5^
 2566^6^0^35^36^1417^0.5347^0.7373^6^Boulderfist Brute^1708:1:1,4306:1:2^
 2567^3^0^36^37^1417^0.5189^0.7551^3^Boulderfist Magus^^
 2761^3^0^38^39^1417^0.6750^0.2996^3^Cresting Exile^4791:1:2,7070:1:1^
@@ -16,8 +21,11 @@ GoldScout-export 5^fxdlnmlxa2mk^1
 4297^2^0^0^0^0^0.0000^0.0000^0^^4306:1:4,215373:1:1^
 4298^4^0^0^0^0^0.0000^0.0000^0^^3787:1:1^
 6575^8^0^0^0^0^0.0000^0.0000^0^^4306:2:4^
+@i^770^Pointy Crocolisk Tooth
 @i^1529^Jade
 @i^1532^Shrunken Head
+@i^1686^Bristly Whisker
+@i^1688^Long Soft Tail
 @i^1701^Curved Basilisk Claw
 @i^1702^Intact Basilisk Spine
 @i^1703^Crystal Basilisk Spine
@@ -28,22 +36,37 @@ GoldScout-export 5^fxdlnmlxa2mk^1
 @i^2732^Green Hills of Stranglethorn - Page 8
 @i^2749^Green Hills of Stranglethorn - Page 25
 @i^3385^Lesser Mana Potion
+@i^3667^Tender Crocolisk Meat
 @i^3771^Wild Hog Shank
 @i^3782^Large War Club
 @i^3787^Stone Club
+@i^3838^Shadowmaw Claw
+@i^3839^Pristine Tigress Fang
+@i^3864^Citrine
 @i^3915^Bloody Bone Necklace
 @i^3918^Singing Crystal Shard
+@i^4043^Aurora Bracers
 @i^4059^Glyphed Bracers
+@i^4093^Large Basilisk Tail
+@i^4104^Snapjaw Crocolisk Skin
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4791^Enchanted Water
+@i^5637^Large Fang
 @i^7070^Elemental Water
+@i^7444^Sentinel Boots of Spirit
 @i^8146^Wicked Claw
+@i^11386^Squishy Basilisk Eye
+@i^12202^Tiger Meat
 @i^213544^Scroll: TOPAZ YORAK
 @i^215373^Silver Hand Training Hammer
 @i^215374^Ancestral Sword
+@i^248694^Waylaid Crate: Expert Curiosities
+@q^770^0:15:0
 @q^1529^2:7:1
 @q^1532^1:12:0
+@q^1686^0:15:0
+@q^1688^0:15:0
 @q^1701^0:15:0
 @q^1702^0:15:0
 @q^1703^1:0:0
@@ -54,20 +77,32 @@ GoldScout-export 5^fxdlnmlxa2mk^1
 @q^2732^1:12:0
 @q^2749^1:12:0
 @q^3385^1:0:0
+@q^3667^1:7:1
 @q^3771^1:0:0
 @q^3782^0:2:0
 @q^3787^0:2:0
+@q^3838^1:12:0
+@q^3839^1:12:0
+@q^3864^2:7:1
 @q^3915^1:12:0
 @q^3918^1:12:0
+@q^4043^2:4:0
 @q^4059^2:4:0
+@q^4093^0:15:0
+@q^4104^1:12:0
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4791^1:0:0
+@q^5637^1:7:1
 @q^7070^1:7:1
+@q^7444^2:4:0
 @q^8146^1:7:1
+@q^11386^0:15:0
+@q^12202^1:7:1
 @q^213544^1:0:0
 @q^215373^1:2:0
 @q^215374^1:2:0
+@q^248694^1:0:1
 @m^1417^Arathi Highlands
 @m^1434^Stranglethorn Vale
 @c^118^
@@ -105,7 +140,12 @@ GoldScout-export 5^fxdlnmlxa2mk^1
 @a^597^43:10,44:12,64:2
 @a^660^43:3,44:10
 @a^671^43:3,44:18,64:1
+@a^684^127:3,147:6
 @a^689^64:3,65:4
+@a^690^145:4,146:3,165:3,167:3
+@a^772^127:2,128:2,147:16,148:1
+@a^1114^108:1
+@a^1152^108:2,127:4
 @a^2566^290:5,310:1
 @a^2567^290:1,310:2
 @a^2761^113:2,133:1
