@@ -374,6 +374,23 @@ class MergeTests(unittest.TestCase):
             loaded = {r.install_id: r for r in merge_data.load(folder, now=now + 3 * 86400)}
             self.assertEqual(sorted(m.npc for m in loaded["abcdefghijkl"].mobs), [3812, 3814])   # three days on
 
+    def test_installs_from_before_probation_started_are_established(self):
+        # The first run that dated every install held back 196 mobs already shipped; those players weren't new.
+        start = merge_data.PROBATION_FROM
+        with tempfile.TemporaryDirectory() as tmp:
+            folder = Path(tmp) / "submissions"
+            folder.mkdir()
+            (folder / "8-zzzzzzzzzzzz.txt").write_text("GoldScout-export 2^zzzzzzzzzzzz^3\n" + CLATTERING + "\n",
+                                                        encoding="utf-8")
+            (folder / "c-abcdefghijkl.txt").write_text(GOOD, encoding="utf-8")
+            dates = Path(tmp) / "install-dates.json"
+            dates.write_text(json.dumps({"abcdefghijkl": start - 3600}), encoding="utf-8")   # an hour before
+            loaded = {r.install_id: r for r in merge_data.load(folder, now=start + 3600)}
+            self.assertEqual(len(loaded["abcdefghijkl"].mobs), 2)
+            dates.write_text(json.dumps({"abcdefghijkl": start + 60}), encoding="utf-8")       # just after
+            loaded = {r.install_id: r for r in merge_data.load(folder, now=start + 3600)}
+            self.assertEqual(len(loaded["abcdefghijkl"].mobs), 1)
+
     def test_installs_without_a_date_are_established(self):
         with tempfile.TemporaryDirectory() as tmp:
             folder = Path(tmp) / "submissions"

@@ -36,6 +36,9 @@ MAX_PER_PLAYER = 1000   # most kills (and picks, and catches at a spot) of one m
 INSTALL_DATES_NAME = "install-dates.json"   # beside the submissions folder; tools/data_bot.py keeps it
 INSTALL_DATES = ROOT / "data" / INSTALL_DATES_NAME
 PROBATION = 3 * 86400   # how long a new install's mobs that nobody else has recorded wait
+# Only installs registered from when probation started (2026-11-17 01:00 UTC) are new: the ones before were
+# already in the community data, and the first run that dated them took 196 shipped mobs back out.
+PROBATION_FROM = 1794877200
 
 
 def install_dates(path):
@@ -53,7 +56,7 @@ def probation(results, dates, now):
     without a date (from before dates were kept, and form submissions, which need a GitHub account) are
     established. Leaving whole mobs out keeps the addon's own-loot subtraction exact (Community.lua
     Subtract only touches mobs that are in the community data)."""
-    new = {install for install, when in dates.items() if now - when < PROBATION}
+    new = {install for install, when in dates.items() if when >= PROBATION_FROM and now - when < PROBATION}
     if not new or not any(result.install_id in new for result in results):
         return results
     established = [result for result in results if result.install_id not in new]
