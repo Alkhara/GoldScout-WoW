@@ -1,8 +1,9 @@
-GoldScout-export 5^ag0z7hvadgcj^2
+GoldScout-export 5^ag0z7hvadgcj^3
 667^5^0^39^40^1434^0.4625^0.3548^5^Skullsplitter Warrior^1520:2:2,3771:1:1,3916:1:1^
 696^2^0^39^40^1434^0.4458^0.3375^2^Skullsplitter Axe Thrower^1520:1:1,2735:1:1,3916:2:2^
 780^3^0^39^40^1434^0.4594^0.3446^3^Skullsplitter Mystic^3916:1:1,8151:1:1,213127:1:1^
 1114^3^0^37^38^1434^0.4579^0.3411^3^Jungle Thunderer^2799:2:2,4096:2:2,5637:1:1^
+1557^8^0^40^41^1434^0.3238^0.6662^8^Elder Mistvale Gorilla^2799:4:4,3862:1:1,3919:5:5,4097:2:2,9892:1:1^
 4663^5^0^30^31^1443^0.5328^0.2982^5^Burning Blade Augur^3771:1:1,4306:1:2^
 4664^5^0^30^31^1443^0.5573^0.2919^5^Burning Blade Reaver^4306:1:2^
 4665^3^0^32^32^1443^0.5320^0.3007^3^Burning Blade Adept^20310:1:1^
@@ -30,9 +31,12 @@ GoldScout-export 5^ag0z7hvadgcj^2
 @i^2735^Green Hills of Stranglethorn - Page 11
 @i^2799^Gorilla Fang
 @i^3771^Wild Hog Shank
+@i^3862^Aged Gorilla Sinew
 @i^3916^Split Bone Necklace
+@i^3919^Mistvale Giblets
 @i^4093^Large Basilisk Tail
 @i^4096^Coarse Gorilla Hair
+@i^4097^Chipped Gorilla Tooth
 @i^4306^Silk Cloth
 @i^5128^Shed Lizard Skin
 @i^5133^Seeping Gizzard
@@ -40,6 +44,7 @@ GoldScout-export 5^ag0z7hvadgcj^2
 @i^6986^Crimson Lotus
 @i^7072^Naga Scale
 @i^8151^Flask of Mojo
+@i^9892^Huntsman's Gloves of the Beast
 @i^11386^Squishy Basilisk Eye
 @i^12037^Mystery Meat
 @i^13542^Demon Box
@@ -60,9 +65,12 @@ GoldScout-export 5^ag0z7hvadgcj^2
 @q^2735^1:12:0
 @q^2799^1:12:0
 @q^3771^1:0:0
+@q^3862^1:12:0
 @q^3916^1:12:0
+@q^3919^1:12:0
 @q^4093^0:15:0
 @q^4096^1:15:0
+@q^4097^0:15:0
 @q^4306^1:7:1
 @q^5128^0:15:0
 @q^5133^0:15:0
@@ -70,6 +78,7 @@ GoldScout-export 5^ag0z7hvadgcj^2
 @q^6986^0:15:0
 @q^7072^1:7:1
 @q^8151^1:7:1
+@q^9892^2:4:0
 @q^11386^0:15:0
 @q^12037^1:7:1
 @q^13542^1:12:0
@@ -711,6 +720,7 @@ GoldScout-export 5^ag0z7hvadgcj^2
 @a^696^129:1,148:1
 @a^780^129:2,149:1
 @a^1114^128:1,129:2
+@a^1557^246:2,266:6
 @a^4663^110:3,130:2
 @a^4664^110:1,111:4
 @a^4665^110:1,130:2
