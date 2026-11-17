@@ -108,6 +108,10 @@ export default {
         return json({ ok: true });
       }
       const adminToken = (r) => isAdminToken(r, env);
+      const tooMany = await limited(request, env, url);
+      if (tooMany) {
+        return tooMany;
+      }
       const admin = await handleAdmin(request, env, url, adminToken);
       if (admin) {
         return admin;
@@ -176,6 +180,58 @@ export default {
     }
   },
 };
+
+// Per-network limits on the API (wrangler.toml [[ratelimits]]): a flood from one address gets 429s before
+// it reaches the database. Not counted: preflights, requests with the admin token (GitHub's workflows), and
+// requests from this computer (no CF-Connecting-IP, or a loopback one: local development and tests;
+// Cloudflare always sets the real address). If a limiter fails, the request goes through: the
+// per-install and per-reporter limits still apply.
+const WRITE_METHODS = new Set(["POST", "PUT", "PATCH", "DELETE"]);
+const LOOPBACK = new Set(["127.0.0.1", "::1"]);
+
+// The key a request is counted under: its IPv4 address, or its IPv6 /64 (one household's block, so an
+// attacker can't dodge the limit by changing the last part of their address).
+export function networkKey(ip) {
+  if (!ip.includes(":")) {
+    return ip;
+  }
+  const [head, tail = ""] = ip.toLowerCase().split("::");
+  const left = head ? head.split(":") : [];
+  const right = tail ? tail.split(":") : [];
+  const groups = ip.includes("::") ? [...left, ...Array(Math.max(0, 8 - left.length - right.length)).fill("0"), ...right]
+    : left;
+  return groups.slice(0, 4).map((g) => g.replace(/^0+(?=.)/, "")).join(":") + "::/64";
+}
+
+async function limited(request, env, url) {
+  if (!url.pathname.startsWith("/v1/") || request.method === "OPTIONS") {
+    return null;
+  }
+  const ip = request.headers.get("CF-Connecting-IP");
+  if (!ip || LOOPBACK.has(ip) || isAdminToken(request, env)) {
+    return null;
+  }
+  const key = networkKey(ip);
+  for (const limiter of [env.API_LIMIT, WRITE_METHODS.has(request.method) ? env.WRITE_LIMIT : null]) {
+    if (!limiter) {
+      continue;
+    }
+    let outcome;
+    try {
+      outcome = await limiter.limit({ key });
+    } catch {
+      continue;
+    }
+    if (outcome && outcome.success === false) {
+      return new Response(JSON.stringify({ error: "Too many requests from your network; try again in a minute." }), {
+        status: 429,
+        headers: { "Content-Type": "application/json; charset=utf-8", "Retry-After": "60",
+          "Access-Control-Allow-Origin": "*" },
+      });
+    }
+  }
+  return null;
+}
 
 function json(body, status = 200) {
   return new Response(JSON.stringify(body), {

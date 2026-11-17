@@ -15,6 +15,19 @@ type = "Text"
 globs = ["**/admin/*.html", "**/admin/*.css", "**/admin/*.client.js"]
 fallthrough = false
 
+# Per-IP request limits on the /v1/ API (src/index.js limited()), counted at Cloudflare's edge.
+# Generous for real use: a companion fetching its region's prices makes about 20 requests, and a
+# household shares one address. Requests with the admin token (the GitHub workflows) aren't limited.
+[[ratelimits]]
+name = "API_LIMIT"          # every /v1/ request
+namespace_id = "4201"
+simple = { limit = 120, period = 60 }
+
+[[ratelimits]]
+name = "WRITE_LIMIT"        # uploads, error reports and leaderboard changes, on top of API_LIMIT
+namespace_id = "4202"
+simple = { limit = 20, period = 60 }
+
 [[d1_databases]]
 binding = "DB"
 database_name = "goldscout"

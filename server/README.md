@@ -6,6 +6,14 @@ terms version, upload token, rate limits) and keeps the newest export per
 install. The full validation runs in the GitHub merge workflow, which reads
 the uploads and opens the data pull request for review.
 
+Every `/v1/` request is limited per network (an IPv4 address, or an IPv6
+/64): 120 a minute, and 20 a minute for uploads, error reports and
+leaderboard changes (`[[ratelimits]]` in `wrangler.toml`, `limited()` in
+`src/index.js`). Past that the answer is 429 for up to a minute. Requests
+with the admin token (the GitHub workflows) aren't counted. This works on
+the workers.dev address too, which Cloudflare's dashboard rate-limiting
+rules can't reach.
+
 | Endpoint | What it does |
 |---|---|
 | `POST /v1/uploads` | Upload an export. The first upload from an install returns its token; later uploads need `Authorization: Bearer <token>`. |

@@ -255,6 +255,22 @@ class ServerTests(unittest.TestCase):
         return raw("/v1/errors", body, {"Content-Type": "application/json", "CF-Connecting-IP": ip or fake_ip(),
                                         "User-Agent": "GoldScoutCompanion/0.11.0 (Windows)"}, "POST")
 
+    def test_a_flood_from_one_network_is_turned_away(self):
+        # wrangler.toml: writes are limited to 20 a minute per network, every /v1/ request to 120.
+        ip = fake_ip()
+        statuses = [raw("/v1/errors", "{}", {"Content-Type": "application/json", "CF-Connecting-IP": ip}, "POST")[0]
+                    for _ in range(21)]
+        self.assertEqual(statuses[:20], [400] * 20)                    # bad reports, but counted
+        self.assertEqual(statuses[20], 429)
+        self.assertEqual(raw("/v1/errors", "{}", {"Content-Type": "application/json", "CF-Connecting-IP": fake_ip()},
+                             "POST")[0], 400)                            # another network: fine
+        reads = [raw("/v1/prices", headers={"CF-Connecting-IP": ip})[0] for _ in range(100)]
+        self.assertEqual(reads[-1], 429)                                 # 21 + 100 is past 120
+        self.assertIn(200, reads)
+        # GitHub's workflows use the admin token and aren't limited.
+        self.assertEqual(raw("/v1/uploads", headers={"CF-Connecting-IP": ip,
+                                                      "Authorization": "Bearer " + ADMIN})[0], 200)
+
     def test_one_network_adds_only_two_new_error_reporters_a_day(self):
         # Reporter IDs are chosen by the sender: without this, one computer could pose as the 3 players the
         # Discord errors alert needs.
