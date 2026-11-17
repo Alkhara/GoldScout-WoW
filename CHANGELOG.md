@@ -7,8 +7,11 @@ releases add their own line automatically.
 
 ## Unreleased
 
+## v0.12.18
+
 - **The hunt tracker splits what you earn:** the item you're hunting (its value and gold per hour on its own), other loot such as vendor trash, coin, and the total with its gold per hour. The chat summary when a hunt ends shows the same.
 - **The hunting area shows with OpenMap:** with OpenMap's seamless map, the green hunting area was hidden under its map art. It now shows on OpenMap's map too, including when the area is in a zone next to the one you're looking at.
+- Updated drop data from the community.
 
 ## v0.12.16
 
