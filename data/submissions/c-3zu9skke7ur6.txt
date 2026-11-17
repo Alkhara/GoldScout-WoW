@@ -1,5 +1,19 @@
-GoldScout-export 5^3zu9skke7ur6^2
+GoldScout-export 5^3zu9skke7ur6^3
+1018^1^0^27^27^1437^0.6874^0.3551^1^Highland Razormaw^^
+1023^3^0^26^27^1437^0.3419^0.4674^3^Mottled Razormaw^^
+1051^2^0^27^28^1437^0.4844^0.1637^2^Dark Iron Dwarf^^
+1052^4^0^28^29^1437^0.4824^0.1457^4^Dark Iron Saboteur^^
+1053^4^0^29^30^1437^0.4751^0.1704^4^Dark Iron Tunneler^^
+1054^2^0^30^31^1437^0.4692^0.1801^2^Dark Iron Demolitionist^4306:1:2^
+1364^1^0^34^34^1437^0.4709^0.1779^1^Balgaras the Foul^3639:1:1^
+2575^1^0^31^31^1417^0.4822^0.8814^1^Dark Iron Supplier^^
+4062^2^0^30^31^1417^0.4870^0.8817^1^Dark Iron Bombardier^^
+270892^1^0^32^32^1437^0.3497^0.5257^1^Goaz Warder^279993:1:1^
+271334^1^0^25^25^1437^0.5553^0.2543^1^Maddened Rotclaw^280331:1:1^
+271336^1^0^30^30^1437^0.6956^0.2902^1^Carnage^280330:1:1^
+@i^3639^Ear of Balgaras
 @i^3820^Stranglekelp
+@i^4306^Silk Cloth
 @i^6289^Raw Longjaw Mud Snapper
 @i^6291^Raw Brilliant Smallfish
 @i^6308^Raw Bristle Whisker Catfish
@@ -9,7 +23,12 @@ GoldScout-export 5^3zu9skke7ur6^2
 @i^6522^Deviate Fish
 @i^20708^Tightly Sealed Trunk
 @i^20709^Rumsey Rum Light
+@i^279993^Titanic Keystone
+@i^280330^Carnage's Head
+@i^280331^Malignant Rotclaw Flesh
+@q^3639^1:12:0
 @q^3820^1:7:1
+@q^4306^1:7:1
 @q^6289^1:7:1
 @q^6291^1:7:1
 @q^6308^1:7:1
@@ -19,7 +38,12 @@ GoldScout-export 5^3zu9skke7ur6^2
 @q^6522^1:0:1
 @q^20708^1:15:0
 @q^20709^1:0:0
+@q^279993^1:12:0
+@q^280330^1:12:0
+@q^280331^1:12:0
 @m^1413^The Barrens
+@m^1417^Arathi Highlands
+@m^1437^Wetlands
 @c^724^
 @c^733^
 @c^787^
@@ -707,5 +731,17 @@ GoldScout-export 5^3zu9skke7ur6^2
 @c^279985^
 @c^279987^
 @c^286152^
+@a^1018^153:1
+@a^1023^166:1,186:2
+@a^1051^69:2
+@a^1052^30:1,69:3
+@a^1053^69:4
+@a^1054^69:2
+@a^1364^69:1
+@a^2575^349:1
+@a^4062^349:1
+@a^270892^206:1
+@a^271334^111:1
+@a^271336^113:1
 @f^1413^0^254^134^3820:6:10,6289:62:62,6291:23:23,6308:18:18,6309:2:2,6310:1:1,6470:2:2,6522:130:130,20708:7:7,20709:3:6^88:8,89:77,149:89,169:59,171:21
 @l^0^enUS
