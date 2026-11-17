@@ -579,7 +579,8 @@ SEARCH_BOX_FR = (SEARCH_BOX.replace('placeholder="Search items, mobs and zones"'
 CHROME = {
     "en": {
         "nav": '<a href="/farms">Farms by level</a><a href="/fishing">Fishing</a><a href="/drop-rates">Drop rates</a>'
-               '<a href="/companion">Companion</a><a href="/leaderboard">Leaderboard</a><a href="/faq">FAQ</a>'
+               '<a href="/companion">Companion</a><a href="/share">Share data</a><a href="/leaderboard">Leaderboard</a>'
+               '<a href="/faq">FAQ</a>'
                '<a href="%(curseforge)s">Get GoldScout</a>',
         "footer": '<a href="/">Home</a><a href="/farms">Farms by level</a><a href="/fishing">Fishing</a>'
                   '<a href="/drop-rates">How drop rates work</a><a href="/leaderboard">Leaderboard</a>'
@@ -595,7 +596,7 @@ CHROME = {
     "de": {
         "nav": '<a href="/de/farms">Farmen nach Stufe</a><a href="/de/fishing">Angeln</a>'
                '<a href="/de/drop-rates">Dropraten</a><a href="/de/companion">Companion</a>'
-               '<a href="/de/leaderboard">Bestenliste</a><a href="/de/faq">FAQ</a>'
+               '<a href="/de/share">Daten teilen</a><a href="/de/leaderboard">Bestenliste</a><a href="/de/faq">FAQ</a>'
                '<a href="%(curseforge)s">GoldScout holen</a>',
         "footer": '<a href="/de/">Startseite</a><a href="/de/farms">Farmen nach Stufe</a><a href="/de/fishing">Angeln</a>'
                   '<a href="/de/drop-rates">So funktionieren Dropraten</a><a href="/de/leaderboard">Bestenliste</a>'
@@ -612,7 +613,7 @@ CHROME = {
     "es": {
         "nav": '<a href="/es/farms">Farmeo por nivel</a><a href="/es/fishing">Pesca</a>'
                '<a href="/es/drop-rates">Tasas de botín</a><a href="/es/companion">Companion</a>'
-               '<a href="/es/leaderboard">Clasificación</a><a href="/es/faq">Preguntas</a>'
+               '<a href="/es/share">Compartir datos</a><a href="/es/leaderboard">Clasificación</a><a href="/es/faq">Preguntas</a>'
                '<a href="%(curseforge)s">Descargar</a>',
         "footer": '<a href="/es/">Inicio</a><a href="/es/farms">Farmeo por nivel</a><a href="/es/fishing">Pesca</a>'
                   '<a href="/es/drop-rates">Cómo funcionan las tasas de botín</a><a href="/es/leaderboard">Clasificación</a>'
@@ -629,7 +630,7 @@ CHROME = {
     "fr": {
         "nav": '<a href="/fr/farms">Farm par niveau</a><a href="/fr/fishing">Pêche</a>'
                '<a href="/fr/drop-rates">Taux de butin</a><a href="/fr/companion">Companion</a>'
-               '<a href="/fr/leaderboard">Classement</a><a href="/fr/faq">FAQ</a>'
+               '<a href="/fr/share">Partager</a><a href="/fr/leaderboard">Classement</a><a href="/fr/faq">FAQ</a>'
                '<a href="%(curseforge)s">Télécharger</a>',
         "footer": '<a href="/fr/">Accueil</a><a href="/fr/farms">Farm par niveau</a><a href="/fr/fishing">Pêche</a>'
                   '<a href="/fr/drop-rates">Comment fonctionnent les taux de butin</a>'
@@ -666,7 +667,7 @@ header.top { display: flex; align-items: center; justify-content: space-between;
 .brand { display: flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-weight: 700; font-size: 20px; margin-right: auto; }
 .brand img { width: 36px; height: 36px; border-radius: 8px; }
 nav { display: flex; flex-wrap: wrap; justify-content: flex-end; row-gap: 6px; }
-nav a { color: var(--muted); text-decoration: none; margin-left: 18px; font-size: 15px; white-space: nowrap; }
+nav a { color: var(--muted); text-decoration: none; margin-left: 14px; font-size: 15px; white-space: nowrap; }
 nav a:hover { color: var(--text); }
 .menu-toggle { display: none; font: inherit; font-size: 15px; color: var(--text); background: none; border: 1px solid var(--line); border-radius: 8px; padding: 7px 14px; cursor: pointer; }
 .hero { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: center; padding: 40px 0 56px; }
