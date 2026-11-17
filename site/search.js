@@ -5,6 +5,9 @@
 // boxes (form.site-search, hidden until this runs, since they need it) show
 // the best matches as you type; Enter opens the highlighted one, or the full
 // list on /search?q=... Everything is written with textContent, never as HTML.
+//
+// It also adds the Menu button phones use: below 820px the CSS hides the header's links and language codes until the
+// button opens them.
 (function () {
   "use strict";
   var MAX_SUGGESTIONS = 8;
@@ -22,6 +25,7 @@
       failed: "Die Suche ist gerade nicht verfügbar.",
       empty: "Gib einen Gegenstand, Gegner oder ein Gebiet ins Suchfeld ein.",
       first: "Die ersten ", result: " Treffer", results: " Treffer",
+      menu: "Menü",
       quote: function (q) { return " für „" + q + "“"; },
       nothing: function (q) {
         return "Noch nichts gefunden für „" + q + "“. Spieler haben es noch nicht erfasst, oder versuch es " +
@@ -33,6 +37,7 @@
       failed: "La búsqueda no está disponible ahora mismo.",
       empty: "Escribe un objeto, un enemigo o una zona en el cuadro de búsqueda.",
       first: "Los primeros ", result: " resultado", results: " resultados",
+      menu: "Menú",
       quote: function (q) { return " para «" + q + "»"; },
       nothing: function (q) {
         return "Aún no se encontró nada para «" + q + "». Los jugadores no lo han registrado aún, o prueba " +
@@ -44,6 +49,7 @@
       failed: "La recherche n'est pas disponible pour le moment.",
       empty: "Tapez un objet, un monstre ou une zone dans le champ de recherche.",
       first: "Les ", result: " résultat", results: " résultats",
+      menu: "Menu",
       quote: function (q) { return " pour «\u00a0" + q + "\u00a0»"; },
       nothing: function (q) {
         return "Rien trouvé pour «\u00a0" + q + "\u00a0» pour l'instant. Les joueurs ne l'ont pas encore " +
@@ -55,6 +61,7 @@
     failed: "Search isn't available right now.",
     empty: "Type an item, mob or zone in the search box.",
     first: "The first ", result: " result", results: " results",
+    menu: "Menu",
     quote: function (q) { return " for \u201c" + q + "\u201d"; },
     nothing: function (q) {
       return "Nothing found for \u201c" + q + "\u201d yet. Players haven't recorded it, or try fewer letters.";
@@ -255,6 +262,39 @@
     });
   }
 
+  // Phones: a Menu button in the header that shows and hides its links (the CSS hides them below 820px).
+  function menu(header) {
+    var nav = header.querySelector("nav");
+    if (!nav) {
+      return;
+    }
+    nav.id = "site-nav";
+    var button = document.createElement("button");
+    button.type = "button";
+    button.className = "menu-toggle";
+    button.textContent = TEXT.menu;
+    button.setAttribute("aria-controls", nav.id);
+    button.setAttribute("aria-expanded", "false");
+    function show(open) {
+      header.classList.toggle("menu-open", open);
+      button.setAttribute("aria-expanded", String(open));
+    }
+    button.addEventListener("click", function () {
+      show(!header.classList.contains("menu-open"));
+    });
+    header.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && header.classList.contains("menu-open")) {
+        show(false);
+        button.focus();
+      }
+    });
+    header.insertBefore(button, nav);
+  }
+
+  var header = document.querySelector("header.top");
+  if (header) {
+    menu(header);
+  }
   document.querySelectorAll("form.site-search").forEach(setUp);
   var page = document.getElementById("search-page-results");
   if (page) {

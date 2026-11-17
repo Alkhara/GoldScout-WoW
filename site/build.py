@@ -663,11 +663,12 @@ h1, h2, h3, p, li { overflow-wrap: break-word; }
 .hero > *, .grid > *, .two > * { min-width: 0; }
 .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
 header.top { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; }
-.brand { display: flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-weight: 700; font-size: 20px; }
+.brand { display: flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-weight: 700; font-size: 20px; margin-right: auto; }
 .brand img { width: 36px; height: 36px; border-radius: 8px; }
 nav { display: flex; flex-wrap: wrap; justify-content: flex-end; row-gap: 6px; }
 nav a { color: var(--muted); text-decoration: none; margin-left: 18px; font-size: 15px; white-space: nowrap; }
 nav a:hover { color: var(--text); }
+.menu-toggle { display: none; font: inherit; font-size: 15px; color: var(--text); background: none; border: 1px solid var(--line); border-radius: 8px; padding: 7px 14px; cursor: pointer; }
 .hero { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: center; padding: 40px 0 56px; }
 .hero h1 { font-size: 46px; line-height: 1.1; margin: 0 0 16px; letter-spacing: -0.5px; }
 .hero h1 span { color: var(--gold); }
@@ -805,7 +806,13 @@ ul.search-list { list-style: none; padding: 0; margin: 12px 0; max-width: 680px;
   .hero, .two, .grid { grid-template-columns: 1fr; }
   .hero { padding-top: 16px; } .hero h1 { font-size: 34px; }
   .stats { grid-template-columns: repeat(2, 1fr); }
-  nav { display: none; }
+  /* Phones: the links and language codes wait behind the Menu button (site/search.js adds it). */
+  header.top { flex-wrap: wrap; justify-content: flex-start; row-gap: 10px; }
+  nav, a.lang-switch { display: none; }
+  .menu-toggle { display: inline-block; }
+  header.top.menu-open nav { display: flex; flex-direction: column; order: 1; width: 100%; border-top: 1px solid var(--line); padding-top: 4px; }
+  header.top.menu-open nav a { margin-left: 0; padding: 10px 2px; font-size: 16px; }
+  header.top.menu-open a.lang-switch { display: inline-block; order: 2; margin: 4px 6px 4px 0; padding: 6px 12px; }
 }
 """
 
