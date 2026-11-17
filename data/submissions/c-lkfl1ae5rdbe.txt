@@ -1,4 +1,9 @@
-GoldScout-export 5^lkfl1ae5rdbe^13
+GoldScout-export 5^lkfl1ae5rdbe^14
+589^1^0^14^15^1436^0.4353^0.6800^1^Defias Pillager^1180:1:1^
+1783^8^0^50^51^1422^0.4890^0.7570^8^Skeletal Flayer^8766:2:2,14047:2:4^
+1784^2^0^51^52^1422^0.3871^0.5783^2^Skeletal Sorcerer^^
+1791^3^0^50^52^1422^0.4575^0.7233^3^Slavering Ghoul^6530:1:1,8948:1:1,14047:2:3^
+2653^2^0^44^45^1425^0.3283^0.7518^2^Witherbark Sadist^4338:1:1^
 11578^1^0^34^34^1443^0.5624^0.8069^1^Whirlwind Shredder^^
 11685^6^0^40^42^1414^0.3836^0.5805^6^Maraudine Priest^4306:2:4^
 11686^5^0^40^41^1414^0.3835^0.5808^5^Ghostly Raider^4306:3:6^
@@ -69,6 +74,7 @@ GoldScout-export 5^lkfl1ae5rdbe^13
 271784^1^0^0^0^0^0.0000^0.0000^0^^^
 @i^770^Pointy Crocolisk Tooth
 @i^858^Lesser Healing Potion
+@i^1180^Scroll of Stamina
 @i^1502^Warped Leather Belt
 @i^1503^Warped Leather Boots
 @i^1510^Heavy Hammer
@@ -116,6 +122,7 @@ GoldScout-export 5^lkfl1ae5rdbe^13
 @i^5133^Seeping Gizzard
 @i^6149^Greater Mana Potion
 @i^6358^Oily Blackmouth
+@i^6530^Nightcrawlers
 @i^6539^Willow Belt of Stamina
 @i^7067^Elemental Earth
 @i^7070^Elemental Water
@@ -123,7 +130,9 @@ GoldScout-export 5^lkfl1ae5rdbe^13
 @i^8150^Deeprock Salt
 @i^8365^Raw Mithril Head Trout
 @i^8749^Crochet Hat
+@i^8766^Morning Glory Dew
 @i^8831^Purple Lotus
+@i^8948^Dried King Bolete
 @i^10286^Heart of the Wild
 @i^11386^Squishy Basilisk Eye
 @i^11387^Basilisk Heart
@@ -133,6 +142,7 @@ GoldScout-export 5^lkfl1ae5rdbe^13
 @i^13760^Raw Sunscale Salmon
 @i^13882^42 Pound Redgill
 @i^13886^37 Pound Redgill
+@i^14047^Runecloth
 @i^14907^Brutish Helmet of the Beast
 @i^14910^Brutish Armguards of the Whale
 @i^17684^Theradric Crystal Carving
@@ -161,6 +171,7 @@ GoldScout-export 5^lkfl1ae5rdbe^13
 @i^276890^Zarla's Journal
 @q^770^0:15:0
 @q^858^1:0:0
+@q^1180^1:0:0
 @q^1502^0:4:0
 @q^1503^0:4:0
 @q^1510^0:2:0
@@ -208,6 +219,7 @@ GoldScout-export 5^lkfl1ae5rdbe^13
 @q^5133^0:15:0
 @q^6149^1:0:0
 @q^6358^1:7:1
+@q^6530^1:0:0
 @q^6539^2:4:0
 @q^7067^1:7:1
 @q^7070^1:7:1
@@ -215,7 +227,9 @@ GoldScout-export 5^lkfl1ae5rdbe^13
 @q^8150^1:7:1
 @q^8365^1:7:1
 @q^8749^0:4:0
+@q^8766^1:0:0
 @q^8831^1:7:1
+@q^8948^1:0:0
 @q^10286^1:7:1
 @q^11386^0:15:0
 @q^11387^0:15:0
@@ -225,6 +239,7 @@ GoldScout-export 5^lkfl1ae5rdbe^13
 @q^13760^1:7:1
 @q^13882^1:15:0
 @q^13886^1:15:0
+@q^14047^1:7:1
 @q^14907^2:4:0
 @q^14910^2:4:0
 @q^17684^1:12:0
@@ -252,6 +267,9 @@ GoldScout-export 5^lkfl1ae5rdbe^13
 @q^276737^3:4:0
 @q^276890^1:12:0
 @m^1414^Kalimdor
+@m^1422^Western Plaguelands
+@m^1425^The Hinterlands
+@m^1436^Westfall
 @m^1443^Desolace
 @m^1450^Moonglade
 @c^118^
@@ -1494,6 +1512,11 @@ GoldScout-export 5^lkfl1ae5rdbe^13
 @c^285280^
 @c^285281^
 @c^286152^
+@a^589^268:1
+@a^1783^227:1,310:4,330:3
+@a^1784^227:2
+@a^1791^227:1,309:1,310:1
+@a^2653^306:2
 @a^11578^331:1
 @a^11685^227:6
 @a^11686^227:5

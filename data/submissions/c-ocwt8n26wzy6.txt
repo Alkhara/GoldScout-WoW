@@ -1,4 +1,4 @@
-GoldScout-export 5^ocwt8n26wzy6^13
+GoldScout-export 5^ocwt8n26wzy6^14
 48^19^0^21^22^1431^0.7908^0.7078^19^Skeletal Warrior^1772:1:1,1799:1:1,1802:1:1,2378:7:7,2592:5:7,2794:1:1,3198:1:1,4698:1:1^
 202^2^0^23^24^1431^0.4917^0.5446^2^Skeletal Horror^^
 203^13^0^22^23^1431^0.7968^0.7141^13^Skeletal Mage^2378:3:3,2589:1:2,2592:5:9,4306:2:2,5576:1:1^
@@ -27,6 +27,8 @@ GoldScout-export 5^ocwt8n26wzy6^13
 2189^1^0^10^11^1439^0.4431^0.3723^1^Vile Sprite^2589:1:1,15473:1:1^
 3660^1^0^31^31^1439^0.5605^0.2622^1^Athrikus Narassin^5383:1:1^
 3664^1^0^24^24^1440^0.2527^0.6072^1^Ilkrud Magthrull^5533:1:1^
+3696^1^0^30^30^1440^0.5466^0.7926^1^Ran Bloodtooth^5388:1:1^
+3752^1^0^29^30^1440^0.7837^0.4355^1^Xavian Rogue^^
 3809^1^0^21^22^1440^0.3793^0.5974^1^Ashenvale Bear^2940:1:1,3730:1:1^
 3819^1^0^20^21^1440^0.3540^0.5545^1^Wildthorn Stalker^1081:1:1,3174:1:1^
 3834^1^0^28^28^1440^0.6199^0.4471^1^Crazed Ancient^5475:1:1^
@@ -50,6 +52,9 @@ GoldScout-export 5^ocwt8n26wzy6^13
 4416^8^0^0^0^0^0.0000^0.0000^0^^2589:2:5,2592:3:3,3196:1:1,10402:1:1,211855:1:1^
 4417^1^0^0^0^0^0.0000^0.0000^0^^1764:1:1^
 4418^2^0^0^0^0^0.0000^0.0000^0^^1740:1:1^
+4619^1^0^32^32^1440^0.7852^0.4319^1^Geltharis^5461:1:1^
+11680^6^0^26^28^1440^0.8695^0.5730^6^Horde Scout^1205:1:1,279507:4:4^
+11682^6^0^29^30^1440^0.8883^0.5735^6^Horde Grunt^929:1:1,4306:1:1,279505:6:6^
 252762^2^0^10^11^2521^0.5945^0.5085^2^Al'Aketh Guardian^2589:1:1,2773:1:1,252022:1:2^
 272260^1^0^24^24^1431^0.6766^0.3005^1^Lost Stalker^281143:1:1^
 @i^814^Flask of Oil
@@ -61,6 +66,7 @@ GoldScout-export 5^ocwt8n26wzy6^13
 @i^1129^Ghoul Fang
 @i^1130^Vial of Spider Venom
 @i^1179^Ice Cold Milk
+@i^1205^Melon Juice
 @i^1210^Shadowgem
 @i^1738^Laced Mail Belt
 @i^1740^Laced Mail Bracers
@@ -106,10 +112,12 @@ GoldScout-export 5^ocwt8n26wzy6^13
 @i^5136^Torn Furry Ear
 @i^5196^Smite's Reaver
 @i^5383^Athrikus Narassin's Head
+@i^5388^Ran Bloodtooth's Skull
 @i^5446^Broken Elemental Bracer
 @i^5447^Damaged Elemental Bracer
 @i^5448^Fractured Elemental Bracer
 @i^5451^Crushed Elemental Bracer
+@i^5461^Branch of Cenarius
 @i^5475^Wooden Key
 @i^5508^Fallen Moonstone
 @i^5529^Tomb Dust
@@ -134,6 +142,8 @@ GoldScout-export 5^ocwt8n26wzy6^13
 @i^273289^Ogre Loincloth
 @i^273293^Bandsaw Wristbands
 @i^277917^Stonetalon Supply Bundle
+@i^279505^Jagged Orcish Sword
+@i^279507^Curved Orcish Dagger
 @i^281143^Ira's Dagger
 @q^814^1:7:1
 @q^858^1:0:0
@@ -144,6 +154,7 @@ GoldScout-export 5^ocwt8n26wzy6^13
 @q^1129^1:12:0
 @q^1130^1:12:0
 @q^1179^1:0:0
+@q^1205^1:0:0
 @q^1210^2:7:1
 @q^1738^0:4:0
 @q^1740^0:4:0
@@ -189,10 +200,12 @@ GoldScout-export 5^ocwt8n26wzy6^13
 @q^5136^0:15:0
 @q^5196^3:2:0
 @q^5383^1:12:0
+@q^5388^1:12:0
 @q^5446^0:15:0
 @q^5447^0:15:0
 @q^5448^0:15:0
 @q^5451^0:15:0
+@q^5461^1:12:0
 @q^5475^1:13:0
 @q^5508^1:12:0
 @q^5529^0:15:0
@@ -217,6 +230,8 @@ GoldScout-export 5^ocwt8n26wzy6^13
 @q^273289^3:4:0
 @q^273293^3:4:0
 @q^277917^1:12:0
+@q^279505^1:2:0
+@q^279507^1:2:0
 @q^281143^1:15:0
 @m^1413^The Barrens
 @m^1431^Duskwood
@@ -789,6 +804,8 @@ GoldScout-export 5^ocwt8n26wzy6^13
 @a^2189^148:1
 @a^3660^111:1
 @a^3664^245:1
+@a^3696^310:1
+@a^3752^175:1
 @a^3809^227:1
 @a^3819^227:1
 @a^3834^172:1
@@ -808,6 +825,9 @@ GoldScout-export 5^ocwt8n26wzy6^13
 @a^4014^170:2,171:6,190:1
 @a^4022^187:1
 @a^4027^266:1
+@a^4619^175:1
+@a^11680^237:6
+@a^11682^237:5,238:1
 @a^252762^211:2
 @a^272260^133:1
 @l^0^enUS
