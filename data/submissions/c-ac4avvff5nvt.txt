@@ -1,4 +1,4 @@
-GoldScout-export 5^ac4avvff5nvt^11
+GoldScout-export 5^ac4avvff5nvt^12
 767^36^0^36^37^1435^0.3984^0.4310^36^Sumpfjaguar^1686:7:7,1688:29:29,3864:1:1,5637:1:1,8146:1:1,9886:1:1^
 858^5^0^36^37^1435^0.4051^0.4112^5^Trauerspinner^1074:1:1,4585:2:2,12205:2:2^
 1084^3^0^35^36^1435^0.3596^0.4877^3^Junger Sägezahnkrokilisk^770:2:2,3667:1:1^
@@ -12,6 +12,12 @@ GoldScout-export 5^ac4avvff5nvt^11
 1891^4^0^13^14^1421^0.4584^0.7286^4^Pyrewood-Behüter^1179:1:1^
 1894^3^0^14^15^1421^0.4362^0.7302^3^Pyrewood-Wachposten^2589:2:2^
 1895^2^0^14^14^1421^0.4571^0.7236^2^Pyrewood-Ältester^818:1:1,2589:1:4,6551:1:1^
+1953^9^0^15^16^1421^0.7153^0.3509^9^Seeschleicher^858:1:1,1730:1:1,3256:3:3,3375:1:1^
+1954^8^0^16^17^1421^0.7324^0.3479^8^Alter Seeschleicher^765:1:1,3256:3:3^
+1955^10^0^17^18^1421^0.7734^0.2756^10^Seekrabbler^765:1:1,1179:1:1,1769:1:1,1792:1:1,3257:4:4,4699:1:1^
+1956^8^0^18^19^1421^0.7742^0.2368^8^Alter Seekrabbler^1179:1:1,3257:2:2^
+1957^1^0^17^17^1421^0.7614^0.3028^1^Küstenkrabbler der Finsterflossen^730:1:1,5523:1:1^
+1958^2^0^17^18^1421^0.7545^0.3145^2^Gezeitenrufer der Finsterflossen^5523:1:1^
 2252^25^0^34^35^1416^0.4959^0.4119^25^Crushridge-Oger^3771:2:2,4306:10:14,8746:1:1,251391:2:2^
 2253^17^0^35^36^1416^0.4924^0.4417^17^Crushridge-Schläger^2592:1:2,3771:1:1,3779:1:1,4306:4:6^
 2735^2^0^38^39^1418^0.1352^0.3912^2^Kleiner Felselementar^4784:2:2,8150:1:1^
@@ -62,9 +68,11 @@ GoldScout-export 5^ac4avvff5nvt^11
 256801^3^0^40^41^2548^0.7389^0.6503^3^Murlockrieger^5524:2:2,268344:1:2^
 @i^729^Sehniges Geierfleisch
 @i^730^Murlocauge
+@i^765^Silberblatt
 @i^770^Spitzer Krokiliskenzahn
 @i^814^Fläschchen Öl
 @i^818^Tigerauge
+@i^858^Geringer Heiltrank
 @i^1074^Harte Spinnenbeinspitze
 @i^1179^Eiskalte Milch
 @i^1206^Moosachat
@@ -76,9 +84,11 @@ GoldScout-export 5^ac4avvff5nvt^11
 @i^1702^Intaktes Basiliskenrückgrat
 @i^1707^Brie aus Stormwind
 @i^1708^Süßer Nektar
+@i^1730^Abgenutzter Panzergürtel
 @i^1734^Abgenutzte Panzerhandschuhe
 @i^1735^Abgenutzte Panzerhose
 @i^1769^Segeltuchschulterpolster
+@i^1792^Geflickte Lederhose
 @i^1793^Geflickte Lederschulterstücke
 @i^2287^Fleischschenkel
 @i^2455^Schwacher Manatrank
@@ -87,11 +97,14 @@ GoldScout-export 5^ac4avvff5nvt^11
 @i^2672^Sehniges Wolfsfleisch
 @i^2777^Schwächlicher Kurzbogen
 @i^2780^Leichter Jagdbogen
+@i^3256^Seeschleichermoos
+@i^3257^Seekrabblermoos
 @i^3258^Verhärteter Tumor
 @i^3292^Vorfahren-Tunika
 @i^3299^Gerissener Eckzahn
 @i^3300^Hasenpfote
 @i^3301^Scharfer Eckzahn
+@i^3375^Kattunarmschienen
 @i^3399^Geierkralle
 @i^3667^Zartes Krokiliskenfleisch
 @i^3712^Schildkrötenfleisch
@@ -113,6 +126,7 @@ GoldScout-export 5^ac4avvff5nvt^11
 @i^4555^Dicker geschuppter Schwanz
 @i^4556^Getupftes Muschelschalenfragment
 @i^4585^Tropfender Spinnenunterkiefer
+@i^4699^Sehergürtel
 @i^4775^Gesprungener Schnabel
 @i^4776^Gesträubte Feder
 @i^4784^Lebloser Stein
@@ -173,9 +187,11 @@ GoldScout-export 5^ac4avvff5nvt^11
 @i^268345^Sandkriecherfleisch
 @q^729^1:7:1
 @q^730^1:7:1
+@q^765^1:7:1
 @q^770^0:15:0
 @q^814^1:7:1
 @q^818^2:7:1
+@q^858^1:0:0
 @q^1074^0:15:0
 @q^1179^1:0:0
 @q^1206^2:7:1
@@ -187,9 +203,11 @@ GoldScout-export 5^ac4avvff5nvt^11
 @q^1702^0:15:0
 @q^1707^1:0:0
 @q^1708^1:0:0
+@q^1730^0:4:0
 @q^1734^0:4:0
 @q^1735^0:4:0
 @q^1769^0:4:0
+@q^1792^0:4:0
 @q^1793^0:4:0
 @q^2287^1:0:0
 @q^2455^1:0:0
@@ -198,11 +216,14 @@ GoldScout-export 5^ac4avvff5nvt^11
 @q^2672^1:7:1
 @q^2777^0:2:0
 @q^2780^0:2:0
+@q^3256^1:12:0
+@q^3257^1:12:0
 @q^3258^1:12:0
 @q^3292^2:4:0
 @q^3299^0:15:0
 @q^3300^0:15:0
 @q^3301^0:15:0
+@q^3375^0:4:0
 @q^3399^0:15:0
 @q^3667^1:7:1
 @q^3712^1:7:1
@@ -224,6 +245,7 @@ GoldScout-export 5^ac4avvff5nvt^11
 @q^4555^0:15:0
 @q^4556^0:15:0
 @q^4585^0:15:0
+@q^4699^2:4:0
 @q^4775^0:15:0
 @q^4776^0:15:0
 @q^4784^0:15:0
@@ -1256,6 +1278,12 @@ GoldScout-export 5^ac4avvff5nvt^11
 @a^1891^288:2,289:2
 @a^1894^288:3
 @a^1895^288:1,289:1
+@a^1953^133:1,134:4,154:4
+@a^1954^134:4,154:4
+@a^1955^115:8,135:2
+@a^1956^95:6,115:2
+@a^1957^135:1
+@a^1958^135:2
 @a^2252^109:1,128:1,129:2,130:1,148:1,149:4,150:2,169:2,170:5,190:3,210:1,230:1,250:1
 @a^2253^128:1,129:1,149:3,150:1,169:4,190:3,210:2,230:1,250:1
 @a^2735^142:2

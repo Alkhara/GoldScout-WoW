@@ -1,4 +1,4 @@
-GoldScout-export 5^7lxfgsphqczb^27
+GoldScout-export 5^7lxfgsphqczb^28
 587^3^0^33^34^1434^0.2938^0.1914^3^Bloodscalp Warrior^1520:1:1,2592:1:1,2738:1:1,3786:1:1,3901:1:1,248710:1:1^
 588^22^1^34^35^1434^0.2556^0.1111^22^Bloodscalp Scout^1711:1:1,2592:1:2,2732:1:1,2742:1:1,3771:2:2,3778:1:1,3901:2:2,3915:8:8,4306:10:14^5427:1:1
 595^24^2^34^35^1434^0.2554^0.1090^24^Bloodscalp Hunter^1477:1:1,2592:1:2,2730:1:1,2732:1:1,3785:1:1,3901:2:2,3915:7:7,4306:11:17,248691:1:1^
@@ -27,6 +27,8 @@ GoldScout-export 5^7lxfgsphqczb^27
 1180^1^0^19^19^1432^0.7734^0.1405^1^Mo'grosh Brute^2592:1:2^
 1181^1^0^18^18^1432^0.6915^0.2259^1^Mo'grosh Shaman^^
 1183^2^0^19^20^1432^0.7598^0.1510^2^Mo'grosh Mystic^9775:1:1^
+1501^8^0^1^1^1420^0.3105^0.6330^8^Mindless Zombie^159:1:1,1370:1:1,1374:1:1,1378:1:1,2589:1:1^
+1502^8^0^1^2^1420^0.3181^0.6242^8^Wretched Zombie^159:2:2,1368:1:1,1370:1:1,2210:1:1,2589:3:3,2649:1:1,3363:1:1,3365:1:1,4604:2:2^
 2348^12^0^26^27^1424^0.6485^0.6388^12^Elder Moss Creeper^1074:1:1,1081:9:9,2251:3:3,3182:1:1^
 2349^3^0^24^25^1424^0.6178^0.4655^3^Giant Moss Creeper^2251:1:1,4428:2:2^
 2376^1^0^30^31^1424^0.4318^0.6725^1^Torn Fin Oracle^^
@@ -234,6 +236,7 @@ GoldScout-export 5^7lxfgsphqczb^27
 275044^6^0^0^0^0^0.0000^0.0000^0^^5373:1:1^
 275045^1^0^0^0^0^0.0000^0.0000^0^^4542:1:1^
 275046^5^0^0^0^0^0.0000^0.0000^0^^1785:1:1,4306:1:2^
+@i^159^Refreshing Spring Water
 @i^770^Pointy Crocolisk Tooth
 @i^858^Lesser Healing Potion
 @i^878^Fist-sized Spinneret
@@ -244,6 +247,10 @@ GoldScout-export 5^7lxfgsphqczb^27
 @i^1179^Ice Cold Milk
 @i^1205^Melon Juice
 @i^1206^Moss Agate
+@i^1368^Ragged Leather Gloves
+@i^1370^Ragged Leather Bracers
+@i^1374^Frayed Shoes
+@i^1378^Frayed Pants
 @i^1477^Scroll of Agility II
 @i^1520^Troll Sweat
 @i^1532^Shrunken Head
@@ -271,6 +278,7 @@ GoldScout-export 5^7lxfgsphqczb^27
 @i^1820^Wooden Maul
 @i^1830^Long Bastard Sword
 @i^1831^Oaken War Staff
+@i^2210^Battered Buckler
 @i^2219^Small Round Shield
 @i^2251^Gooey Spider Leg
 @i^2287^Haunch of Meat
@@ -278,6 +286,7 @@ GoldScout-export 5^7lxfgsphqczb^27
 @i^2295^Large Boar Tusk
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2649^Flimsy Chain Belt
 @i^2674^Crawler Meat
 @i^2675^Crawler Claw
 @i^2677^Boar Ribs
@@ -294,6 +303,8 @@ GoldScout-export 5^7lxfgsphqczb^27
 @i^3172^Boar Intestines
 @i^3182^Spider's Silk
 @i^3301^Sharp Canine
+@i^3363^Frayed Belt
+@i^3365^Frayed Bracers
 @i^3379^Brocade Bracers
 @i^3381^Cross-stitched Bracers
 @i^3385^Lesser Mana Potion
@@ -335,6 +346,7 @@ GoldScout-export 5^7lxfgsphqczb^27
 @i^4585^Dripping Spider Mandible
 @i^4586^Smooth Raptor Skin
 @i^4603^Raw Spotted Yellowtail
+@i^4604^Forest Mushroom Cap
 @i^4607^Delicious Cave Mold
 @i^4721^Insignia Mantle
 @i^4784^Lifeless Stone
@@ -440,6 +452,7 @@ GoldScout-export 5^7lxfgsphqczb^27
 @i^273096^Blueprint: Tanning Rack
 @i^273840^Cursed Murloc Eye
 @i^273842^Treacherous Treads
+@q^159^1:0:0
 @q^770^0:15:0
 @q^858^1:0:0
 @q^878^0:7:0
@@ -450,6 +463,10 @@ GoldScout-export 5^7lxfgsphqczb^27
 @q^1179^1:0:0
 @q^1205^1:0:0
 @q^1206^2:7:1
+@q^1368^0:4:0
+@q^1370^0:4:0
+@q^1374^0:4:0
+@q^1378^0:4:0
 @q^1477^1:0:0
 @q^1520^0:15:0
 @q^1532^1:12:0
@@ -477,6 +494,7 @@ GoldScout-export 5^7lxfgsphqczb^27
 @q^1820^0:2:0
 @q^1830^0:2:0
 @q^1831^0:2:0
+@q^2210^0:4:0
 @q^2219^0:4:0
 @q^2251^1:7:1
 @q^2287^1:0:0
@@ -484,6 +502,7 @@ GoldScout-export 5^7lxfgsphqczb^27
 @q^2295^0:15:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2649^0:4:0
 @q^2674^1:7:1
 @q^2675^1:7:1
 @q^2677^1:7:1
@@ -500,6 +519,8 @@ GoldScout-export 5^7lxfgsphqczb^27
 @q^3172^1:7:1
 @q^3182^1:7:1
 @q^3301^0:15:0
+@q^3363^0:4:0
+@q^3365^0:4:0
 @q^3379^0:4:0
 @q^3381^0:4:0
 @q^3385^1:0:0
@@ -541,6 +562,7 @@ GoldScout-export 5^7lxfgsphqczb^27
 @q^4585^0:15:0
 @q^4586^0:15:0
 @q^4603^1:7:1
+@q^4604^1:0:0
 @q^4607^1:0:0
 @q^4721^2:4:0
 @q^4784^0:15:0
@@ -1472,6 +1494,8 @@ GoldScout-export 5^7lxfgsphqczb^27
 @a^1180^55:1
 @a^1181^93:1
 @a^1183^55:1,75:1
+@a^1501^246:8
+@a^1502^246:8
 @a^2348^212:1,232:2,251:1,252:1,271:1,272:1,273:2,274:3
 @a^2349^172:1,192:2
 @a^2376^268:1
