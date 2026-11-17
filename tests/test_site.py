@@ -563,6 +563,15 @@ class SharePageTests(unittest.TestCase):
         self.assertTrue(any(entry[1] == "/share" for entry in build.STATIC_SEARCH))
 
 
+def script_texts(name):
+    """{language: [keys]} of a site script's TEXT table: {de: {...}, es: {...}}[...] || {English}."""
+    script = (ROOT / "site" / name).read_text(encoding="utf-8")
+    german, spanish, english = re.search(r"\bde: \{(.*?)\},\s*es: \{(.*?)\}\s*\}\[[^\]]+\] \|\| \{(.*?)\};",
+                                         script, re.S).groups()
+    keys = re.compile(r"^\s+(\w+):", re.M)
+    return {"de": keys.findall(german), "es": keys.findall(spanish), "en": keys.findall(english)}
+
+
 class GermanJoinPagesTests(unittest.TestCase):
     """/de/companion and /de/share: German visitors who want to help don't land on English pages."""
 
@@ -592,20 +601,21 @@ class GermanJoinPagesTests(unittest.TestCase):
     def test_language_links(self):
         for path in ("/companion", "/share"):
             self.assertTrue(data_pages.is_local_page(path))
-            alternates, other = self.build.language_links(path, "en")
-            self.assertEqual(other, "/de" + path)
-            self.assertIn('hreflang="de" href="https://wowgoldscout.com/de%s"' % path, alternates)
+            alternates, english = self.build.language_links(path, "en")
+            self.assertEqual(english, path)
+            for lang in ("de", "es"):
+                self.assertIn('hreflang="%s" href="https://wowgoldscout.com/%s%s"' % (lang, lang, path), alternates)
+                self.assertIn('href="/%s%s"' % (lang, path), self.build.lang_switch("en", english))
         self.assertIn('href="/de/companion"', self.build.CHROME["de"]["nav"])
         self.assertIn('href="/de/share"', self.build.CHROME["de"]["footer"])
         self.assertTrue(all(not entry[1].startswith("/companion") and not entry[1].startswith("/share")
                             for entry in self.build.STATIC_SEARCH_DE))
 
-    def test_script_speaks_both(self):
-        script = (ROOT / "site" / "share.js").read_text(encoding="utf-8")
-        german, english = re.search(r'lang === "de" \? \{(.*?)\} : \{(.*?)\};', script, re.S).groups()
-        keys = re.compile(r"^\s+(\w+):", re.M)
-        self.assertEqual(keys.findall(german), keys.findall(english))
-        self.assertGreater(len(keys.findall(german)), 10)
+    def test_script_speaks_every_language(self):
+        texts = script_texts("share.js")
+        self.assertEqual(texts["de"], texts["en"])
+        self.assertEqual(texts["es"], texts["en"])
+        self.assertGreater(len(texts["en"]), 10)
 
 
 class GermanSitePagesTests(unittest.TestCase):
@@ -657,11 +667,10 @@ class GermanSitePagesTests(unittest.TestCase):
         self.assertEqual(title, "Bestenliste der Mitwirkenden")
         for marker in ('id="leaderboard-status"', '<table id="leaderboard" hidden>', '<script src="/leaderboard.js"'):
             self.assertIn(marker, body)
-        script = (ROOT / "site" / "leaderboard.js").read_text(encoding="utf-8")
-        german, english = re.search(r'GERMAN \? \{(.*?)\} : \{(.*?)\};', script, re.S).groups()
-        keys = re.compile(r"^\s+(\w+):", re.M)
-        self.assertEqual(keys.findall(german), keys.findall(english))
-        self.assertNotIn("innerHTML", script)
+        texts = script_texts("leaderboard.js")
+        self.assertEqual(texts["de"], texts["en"])
+        self.assertEqual(texts["es"], texts["en"])
+        self.assertNotIn("innerHTML", (ROOT / "site" / "leaderboard.js").read_text(encoding="utf-8"))
 
     def test_german_links_stay_german(self):
         chrome = self.build.CHROME["de"]
@@ -676,6 +685,80 @@ class GermanSitePagesTests(unittest.TestCase):
             self.assertEqual(data_pages.P("/leaderboard"), "/de/leaderboard")
         finally:
             data_pages.LANG = "en"
+
+
+class SpanishSitePagesTests(unittest.TestCase):
+    """/es/: the site in Spanish, built like the German pages."""
+
+    def setUp(self):
+        self.build = site_build()
+
+    def test_faq_matches_english(self):
+        self.assertEqual([len(questions) for _, questions in self.build.FAQ_ES],
+                         [len(questions) for _, questions in self.build.FAQ])
+        _, _, english = self.build.faq_page()
+        title, _, spanish = self.build.faq_page("es")
+        self.assertEqual(title, "Preguntas frecuentes de GoldScout: el accesorio de oro para WoW Forever")
+        anchors = re.compile(r'<h2 id="([^"]+)"')
+        self.assertEqual(anchors.findall(english), anchors.findall(spanish))   # /faq#prices works on /es/faq
+        self.assertIn('href="/es/share"', spanish)
+        self.assertNotIn("gratis", spanish.lower())
+
+    def test_home_page(self):
+        s = {"contributors": 1234, "mobs": 888, "kills": 20420, "drops": 18234, "updated": "x",
+             "updated_iso": "2026-11-16", "targets_es": "<section class=targets>T</section>"}
+        home = self.build.page_es(s)
+        self.assertIn('<html lang="es">', home)
+        self.assertIn('<link rel="canonical" href="https://wowgoldscout.com/es/">', home)
+        for lang, href in (("en", "/"), ("de", "/de/")):
+            self.assertIn('class="lang-switch" href="%s" hreflang="%s"' % (href, lang), home)
+        self.assertIn("<b>1.234</b><span>colaboradores</span>", home)
+        self.assertIn("Última actualización: 16 de noviembre de 2026.", home)
+        self.assertIn("<section class=targets>T</section>", home)
+        self.assertIn('placeholder="Objetos, enemigos y zonas"', home)
+        self.assertNotIn("gratis", home.lower())
+        english = self.build.page(dict(s, targets=""))
+        self.assertIn('class="lang-switch" href="/es/" hreflang="es"', english)
+        sections = re.compile(r'<section id="([^"]+)"|src="/?screenshots/([^"]+)"')
+        self.assertEqual(sections.findall(english), sections.findall(home))
+        nav = re.compile(r"<nav>.*?</nav>")
+        self.assertEqual(nav.findall(home), nav.findall(self.build.layout("T", "D", "/leaderboard", "", lang="es")))
+
+    def test_join_pages(self):
+        title, _, body = self.build.companion_page_es({"contributors": 1234})
+        self.assertEqual(title, "GoldScout Companion: precios de subasta cada hora para GoldScout")
+        self.assertIn("1.234 jugadores han compartido hasta ahora", body)
+        self.assertIn('href="/es/share"', body)
+        english, spanish = self.build.share_page()[2], self.build.share_page_es()[2]
+        pick = re.compile(r'id="[^"]+"|name="[^"]+"|type="[^"]+"')
+        self.assertEqual(pick.findall(english), pick.findall(spanish))
+        title, _, body = self.build.leaderboard_page_es()
+        self.assertEqual(title, "Clasificación de colaboradores")
+        self.assertIn('<script src="/leaderboard.js"', body)
+        for page in (spanish, body, self.build.companion_page_es({"contributors": 1})[2]):
+            self.assertNotIn("gratis", page.lower())
+
+    def test_spanish_links_stay_spanish(self):
+        chrome = self.build.CHROME["es"]
+        for path in ("/es/leaderboard", "/es/faq", "/es/", "/es/share", "/es/companion"):
+            self.assertIn('href="%s"' % path, chrome["nav"] + chrome["footer"])
+        self.assertTrue(all(entry[1].startswith("/es/") for entry in self.build.STATIC_SEARCH_ES))
+        data_pages.LANG = "es"
+        try:
+            self.assertEqual(data_pages.P("/leaderboard"), "/es/leaderboard")
+            self.assertEqual(data_pages.num(12345), "12.345")
+            self.assertEqual(data_pages.day_text(datetime.date(2026, 12, 15)), "15 de diciembre")
+            self.assertEqual(data_pages.grammar("Mapa de El Bosque"), "Mapa del Bosque")
+        finally:
+            data_pages.LANG = "en"
+
+    def test_data_pages_have_every_text_in_spanish(self):
+        from i18n_de import DE
+        from i18n_es import ES
+        self.assertEqual(sorted(ES), sorted(DE))
+        placeholder = re.compile(r"%[sd%]")
+        for english, spanish in ES.items():
+            self.assertEqual(placeholder.findall(english), placeholder.findall(spanish), english[:40])
 
 
 class ChampionsScriptTests(unittest.TestCase):
@@ -694,6 +777,49 @@ GERMAN = """GoldScout-export 5^dededededede^1
 @m^1413^Das Brachland
 @l^0^deDE
 """
+
+
+SPANISH = """GoldScout-export 5^esesesesesmx^1
+3809^12^0^21^22^1440^0.5400^0.5400^12^Oso de Vallefresno^3730:5:5^
+@i^3730^Carne de oso grande
+@m^1440^Vallefresno
+@m^1413^Los Baldíos
+@l^0^esMX
+"""
+
+
+class SpanishPagesTests(unittest.TestCase):
+    """The Spanish pages under /es/: Spanish text, and names from Spanish players on either Spanish client."""
+
+    def setUp(self):
+        english, spanish = submission.parse(V4 + "@m^1413^The Barrens\n"), submission.parse(SPANISH)
+        assert english.ok and spanish.ok, (english.errors, spanish.errors)
+        results = [submission.keep_english_names(english), submission.keep_english_names(spanish)]
+        self.data = data_pages.Dataset(results, merge_data.merge([english.mobs, spanish.mobs], 1000))
+        data_pages.MISSING.clear()
+        self.pages = {}
+
+        def write(path, *page, index=True):
+            self.pages[path] = page
+        self.paths = data_pages.build_language("es", self.data, LINKS, write)
+
+    def test_every_text_on_the_spanish_pages_is_translated(self):
+        data_pages.LANG = "es"
+        try:
+            data_pages.search_index(self.data)
+        finally:
+            data_pages.LANG = "en"
+        self.assertEqual(data_pages.MISSING, set())
+        self.assertEqual(data_pages.LANG, "en")
+
+    def test_mob_page_uses_latin_american_names(self):
+        title, _, body = self.pages["mob/3809.html"]
+        self.assertEqual(title, "Oso de Vallefresno: botín y tasas de botín (WoW Forever)")
+        self.assertIn('<a href="/es/item/3730">Carne de oso grande</a>', body)
+        self.assertIn('<a href="/es/zone/1440">Vallefresno</a>', body)
+        self.assertIn('href="/es/drop-rates"', body)
+        # A name no Spanish player recorded keeps its English name, marked.
+        self.assertIn('title="Aún no hay nombre en español registrado"', self.pages["mob/4054.html"][2])
 
 
 class GermanPagesTests(unittest.TestCase):
@@ -801,13 +927,15 @@ class LayoutLanguageTests(unittest.TestCase):
         self.assertNotIn("hreflang", english_only)
         self.assertNotIn('class="lang-switch"', english_only)
 
-    def test_scripts_know_german(self):
-        for name in ("prices.js", "search.js", "champions.js"):
+    def test_scripts_know_every_language(self):
+        for name in ("prices.js", "search.js", "champions.js", "leaderboard.js", "share.js"):
             with self.subTest(name):
                 script = (ROOT / "site" / name).read_text(encoding="utf-8")
-                self.assertIn('document.documentElement.lang === "de"', script)
+                self.assertIn("document.documentElement.lang", script)
+                for lang in ("de", "es"):
+                    self.assertRegex(script, r'\b%s: \{|"%s"' % (lang, lang))
                 self.assertNotIn("innerHTML", script)
-        self.assertIn('"/search-de.json"', (ROOT / "site" / "search.js").read_text(encoding="utf-8"))
+        self.assertIn('"/search-" + LANG + ".json"', (ROOT / "site" / "search.js").read_text(encoding="utf-8"))
 
 
 class LegendTests(unittest.TestCase):

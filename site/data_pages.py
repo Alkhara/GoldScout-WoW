@@ -19,11 +19,11 @@ Prices aren't built in: they change every hour. Pages mark where they go
 from the GoldScout server's copy of Blizzard's auction data, for the realm type
 and faction the visitor picks in the price bar.
 
-German: build() runs a second time with LANG = "de" for the pages under /de/.
-Every sentence goes through T() (German from site/i18n_de.py), links to data
-pages through P() (which adds /de), and game names come from German players'
-exports where they've recorded them; English names are kept, marked, until
-then.
+Other languages: build() runs again with LANG = "de" for the pages under /de/,
+and LANG = "es" for /es/. Every sentence goes through T() (site/i18n_de.py,
+site/i18n_es.py), links to data pages through P() (which adds /de or /es), and
+game names come from the exports of players whose game runs in that language
+where they've recorded them; English names are kept, marked, until then.
 """
 import datetime
 import html
@@ -34,6 +34,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 from i18n_de import DE, RATES_BODY as RATES_BODY_DE
+from i18n_es import ES, RATES_BODY as RATES_BODY_ES
 
 SITE_URL = "https://wowgoldscout.com"
 MIN_ATTEMPTS = 5                 # same threshold as the shipped community data
@@ -43,9 +44,12 @@ GEM_CLASS = 3
 ADDON = Path(__file__).resolve().parent.parent / "GoldScout"
 
 # -- languages ------------------------------------------------------------------------
-LANG = "en"                      # "de" while the German pages are built (build_language)
-LANGUAGES = {"de": "deDE"}       # page language -> the game client language whose names it uses
-MISSING = set()                  # texts looked up on a German page with no German yet (the tests keep it empty)
+LANG = "en"                      # "de" or "es" while those pages are built (build_language)
+# page language -> the game client languages whose names it uses (Spanish: Spain's and Latin America's)
+LANGUAGES = {"de": ("deDE",), "es": ("esES", "esMX")}
+TEXTS = {"de": DE, "es": ES}     # page language -> its text, by the English
+DECIMAL_COMMA = {"de", "es"}     # 1.234 and 12,5%
+MISSING = set()                  # texts looked up on a translated page with no translation yet (tests keep it empty)
 # Pages that exist in every language (and the home page, "/"). The home page, companion, share, FAQ and
 # leaderboard pages are written by site/build.py; the rest by build() here.
 LOCAL_PAGES = ("/item/", "/mob/", "/zone/", "/farms", "/fishing", "/data-wanted", "/drop-rates", "/search",
@@ -56,8 +60,8 @@ def T(text):
     """text in the language being built."""
     if LANG == "en":
         return text
-    if text in DE:
-        return DE[text]
+    if text in TEXTS[LANG]:
+        return TEXTS[LANG][text]
     MISSING.add(text)
     return text
 
@@ -68,9 +72,9 @@ def plural(n, one, many, shown=None):
 
 
 def num(n):
-    """1,234 (German: 1.234)."""
+    """1,234 (German and Spanish: 1.234)."""
     text = format(n, ",")
-    return text.replace(",", ".") if LANG == "de" else text
+    return text.replace(",", ".") if LANG in DECIMAL_COMMA else text
 
 
 def is_local_page(path):
@@ -148,7 +152,7 @@ def percent(rate):
     if rate >= 0.1:
         return "%d%%" % round(rate * 100)
     text = "%.1f%%" % (rate * 100)
-    return text.replace(".", ",") if LANG == "de" else text
+    return text.replace(".", ",") if LANG in DECIMAL_COMMA else text
 
 
 def bracket_of(level):
@@ -193,8 +197,8 @@ class Dataset:
                 map_votes[map_id][name] += 1
             for item, meta in result.item_meta.items():
                 meta_votes[item][meta] += 1
-            for lang, locale in LANGUAGES.items():
-                if getattr(result, "locale", None) == locale:
+            for lang, locales in LANGUAGES.items():
+                if getattr(result, "locale", None) in locales:
                     for kind, names in getattr(result, "local_names", {}).items():
                         for key, name in names.items():
                             local_votes[lang][kind][key][name] += 1
@@ -407,7 +411,7 @@ def name_html(text, local=True):
     its English name, marked."""
     if local or LANG == "en":
         return e(text)
-    return '<span class=en-name lang=en title="%s">%s</span>' % (e(T("No German name recorded yet")), e(text))
+    return '<span class=en-name lang=en title="%s">%s</span>' % (e(T("No name recorded in this language yet")), e(text))
 
 
 def per_kill(rows):
@@ -526,7 +530,7 @@ def drop_table(data, rows, attempts, per="kill"):
 
 def stack_text(stack):
     text = ("%.1f" % stack).rstrip("0").rstrip(".")
-    return text.replace(".", ",") if LANG == "de" else text
+    return text.replace(".", ",") if LANG in DECIMAL_COMMA else text
 
 
 def mob_table(data, npcs, zone_column=True):
@@ -1238,6 +1242,7 @@ RATES_BODY = """<h1>How GoldScout drop rates work</h1>
 <p class=small>%s</p>
 """
 DE[RATES_BODY] = RATES_BODY_DE
+ES[RATES_BODY] = RATES_BODY_ES
 
 
 def rates_page(data, links):
@@ -1343,13 +1348,19 @@ TARGETS = (("contributors", 500), ("kills", 250000), ("solid", 600))
 MONTHS = {"en": ("January", "February", "March", "April", "May", "June", "July", "August", "September",
                  "October", "November", "December"),
           "de": ("Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober",
-                 "November", "Dezember")}
+                 "November", "Dezember"),
+          "es": ("enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre",
+                 "noviembre", "diciembre")}
 
 
 def day_text(day):
-    """ "December 15" (German: "15. Dezember")."""
+    """ "December 15" (German: "15. Dezember", Spanish: "15 de diciembre")."""
     month = MONTHS[LANG if LANG in MONTHS else "en"][day.month - 1]
-    return "%d. %s" % (day.day, month) if LANG == "de" else "%s %d" % (month, day.day)
+    if LANG == "de":
+        return "%d. %s" % (day.day, month)
+    if LANG == "es":
+        return "%d de %s" % (day.day, month)
+    return "%s %d" % (month, day.day)
 
 
 def community_targets(data):
@@ -1438,11 +1449,18 @@ GERMAN_ARTICLES = [
 ]
 
 
+# Spanish: "de" and "a" join a following "El" ("del Bosque", "al Bosque"), as filled-in names need.
+SPANISH_ARTICLES = [
+    (re.compile(r"\b([Dd])e ((?:<[^>]+>)*)El "), r"\1el \2"),
+    (re.compile(r"\b([Aa]) ((?:<[^>]+>)*)El "), r"\1l \2"),
+]
+
+
 def grammar(text):
-    """Fixes what filling names into sentences breaks in the language being built (German articles)."""
-    if LANG == "de":
-        for pattern, replacement in GERMAN_ARTICLES:
-            text = pattern.sub(replacement, text)
+    """Fixes what filling names into sentences breaks in the language being built (German and Spanish
+    articles)."""
+    for pattern, replacement in {"de": GERMAN_ARTICLES, "es": SPANISH_ARTICLES}.get(LANG, ()):
+        text = pattern.sub(replacement, text)
     return text
 
 

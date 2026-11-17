@@ -9,18 +9,31 @@
   if (!table || !status || !window.fetch) {
     return;
   }
-  // German pages (<html lang="de">, under /de/) show German; everything else English.
-  var GERMAN = document.documentElement.lang === "de";
-  var TEXT = GERMAN ? {
-    anonymous: "Anonyme Mitwirkende",
-    empty: "Noch keine Wertung. Sie erscheint innerhalb einer Stunde, nachdem geteilte Daten übernommen wurden.",
-    summary: "{contributors} Mitwirkende haben {kills} Kills geteilt, die in den Gemeinschaftsdaten zählen.",
-    updated: " Aktualisiert {ago}.",
-    minutes: "vor {n} Minuten",
-    hours: "vor {n} Stunden",
-    days: "vor {n} Tagen",
-    failed: "Die Bestenliste konnte gerade nicht geladen werden. Versuch es in ein paar Minuten noch einmal."
-  } : {
+  // German and Spanish pages (<html lang="de"> under /de/, "es" under /es/) show their language; the rest English.
+  var LANG = document.documentElement.lang;
+  var LOCALE = { de: "de-DE", es: "es-ES" }[LANG] || "en-US";
+  var TEXT = {
+    de: {
+      anonymous: "Anonyme Mitwirkende",
+      empty: "Noch keine Wertung. Sie erscheint innerhalb einer Stunde, nachdem geteilte Daten übernommen wurden.",
+      summary: "{contributors} Mitwirkende haben {kills} Kills geteilt, die in den Gemeinschaftsdaten zählen.",
+      updated: " Aktualisiert {ago}.",
+      minutes: "vor {n} Minuten",
+      hours: "vor {n} Stunden",
+      days: "vor {n} Tagen",
+      failed: "Die Bestenliste konnte gerade nicht geladen werden. Versuch es in ein paar Minuten noch einmal."
+    },
+    es: {
+      anonymous: "Colaborador anónimo",
+      empty: "Aún no hay puntuaciones. Aparecen en la hora siguiente a que se incorporen los datos compartidos.",
+      summary: "{contributors} colaboradores han compartido {kills} muertes que cuentan en los datos de la comunidad.",
+      updated: " Actualizado {ago}.",
+      minutes: "hace {n} min",
+      hours: "hace {n} horas",
+      days: "hace {n} días",
+      failed: "No se pudo cargar la clasificación ahora mismo. Inténtalo de nuevo en unos minutos."
+    }
+  }[LANG] || {
     anonymous: "Anonymous contributor",
     empty: "No scores yet. They appear within the hour after shared data is merged.",
     summary: "{contributors} contributors have shared {kills} kills that count in the community data.",
@@ -41,7 +54,7 @@
   }
 
   function number(n) {
-    return Number(n || 0).toLocaleString(GERMAN ? "de-DE" : "en-US");
+    return Number(n || 0).toLocaleString(LOCALE);
   }
 
   function ago(unix) {

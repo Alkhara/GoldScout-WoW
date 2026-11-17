@@ -10,21 +10,37 @@
   var MAX_SUGGESTIONS = 8;
   var MAX_RESULTS = 100;
   var index = null, loading = null;
-  // German pages (<html lang="de">, under /de/) search the German index and show German.
-  var GERMAN = document.documentElement.lang === "de";
-  var PREFIX = GERMAN ? "/de" : "";
+  // German and Spanish pages (<html lang="de"> under /de/, "es" under /es/) search their own index and show their
+  // language; the rest English.
+  var LANG = document.documentElement.lang === "de" || document.documentElement.lang === "es"
+    ? document.documentElement.lang : "en";
+  var PREFIX = LANG === "en" ? "" : "/" + LANG;
+  var INDEX = LANG === "en" ? "/search.json" : "/search-" + LANG + ".json";
   var WORDS = /[^\p{L}\p{N}']+/u;   // letters in any script, so "Händler" is one word
-  var TEXT = GERMAN ? {
-    none: "Noch nichts gefunden. Spieler haben es noch nicht erfasst, oder versuch es mit weniger Buchstaben.",
-    failed: "Die Suche ist gerade nicht verfügbar.",
-    empty: "Gib einen Gegenstand, Gegner oder ein Gebiet ins Suchfeld ein.",
-    first: "Die ersten ", result: " Treffer", results: " Treffer",
-    quote: function (q) { return " für \u201e" + q + "\u201c"; },
-    nothing: function (q) {
-      return "Noch nichts gefunden für \u201e" + q + "\u201c. Spieler haben es noch nicht erfasst, oder versuch es " +
-        "mit weniger Buchstaben.";
+  var TEXT = {
+    de: {
+      none: "Noch nichts gefunden. Spieler haben es noch nicht erfasst, oder versuch es mit weniger Buchstaben.",
+      failed: "Die Suche ist gerade nicht verfügbar.",
+      empty: "Gib einen Gegenstand, Gegner oder ein Gebiet ins Suchfeld ein.",
+      first: "Die ersten ", result: " Treffer", results: " Treffer",
+      quote: function (q) { return " für „" + q + "“"; },
+      nothing: function (q) {
+        return "Noch nichts gefunden für „" + q + "“. Spieler haben es noch nicht erfasst, oder versuch es " +
+          "mit weniger Buchstaben.";
+      }
+    },
+    es: {
+      none: "Aún no se encontró nada. Los jugadores no lo han registrado aún, o prueba con menos letras.",
+      failed: "La búsqueda no está disponible ahora mismo.",
+      empty: "Escribe un objeto, un enemigo o una zona en el cuadro de búsqueda.",
+      first: "Los primeros ", result: " resultado", results: " resultados",
+      quote: function (q) { return " para «" + q + "»"; },
+      nothing: function (q) {
+        return "Aún no se encontró nada para «" + q + "». Los jugadores no lo han registrado aún, o prueba " +
+          "con menos letras.";
+      }
     }
-  } : {
+  }[LANG] || {
     none: "Nothing found yet. Players haven't recorded it, or try fewer letters.",
     failed: "Search isn't available right now.",
     empty: "Type an item, mob or zone in the search box.",
@@ -37,7 +53,7 @@
 
   function load() {
     if (!loading) {
-      loading = fetch(GERMAN ? "/search-de.json" : "/search.json").then(function (response) {
+      loading = fetch(INDEX).then(function (response) {
         if (!response.ok) {
           throw new Error("HTTP " + response.status);
         }

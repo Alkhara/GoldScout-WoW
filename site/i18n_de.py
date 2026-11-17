@@ -100,7 +100,7 @@ DE = {
     "a crafting reagent": "ein Handwerksmaterial",
     "a rare world drop": "ein seltener Weltdrop",
     "an item": "ein Gegenstand",
-    "No German name recorded yet": "Noch kein deutscher Name erfasst",
+    "No name recorded in this language yet": "Noch kein deutscher Name erfasst",
 
     # -- headings and table heads ---------------------------------------------
     "By zone": "Nach Gebiet",

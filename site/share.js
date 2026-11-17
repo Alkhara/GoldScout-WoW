@@ -14,8 +14,9 @@
   var LAST = "goldscout-share-last";   // the install this browser shared most recently: its leaderboard entry
   // Leaderboard names, as the server checks them (server/src/leaderboard.js NAME).
   var NAME = /^[\p{L}\p{N}](?:[\p{L}\p{N} ._'-]{1,18})[\p{L}\p{N}]$/u;
-  // German pages (<html lang="de">, under /de/) answer in German; everything else in English.
-  var TEXT = document.documentElement.lang === "de" ? {
+  // German and Spanish pages (<html lang="de"> under /de/, "es" under /es/) answer in their language;
+  // everything else in English.
+  var TEXT = {de: {
     registered: "Danke! Deine Daten sind angekommen. Sie werden geprüft und fließen beim nächsten stündlichen Update " +
       "in die Gemeinschaftsdaten. Teile jederzeit wieder aus diesem Browser: Der neueste Export ersetzt den letzten.",
     stored: "Danke! Dein neuerer Export ist angekommen und ersetzt beim nächsten stündlichen Update den letzten.",
@@ -44,7 +45,37 @@
     badName: "Namen haben 3 bis 20 Buchstaben, Ziffern und Leerzeichen (dazu . _ ' -).",
     boardFailed: "Konnte nicht gespeichert werden ({status}). Versuch es gleich noch einmal.",
     serverErrors: false   // the server's own messages are English: show ours
-  } : {
+  }, es: {
+    registered: "¡Gracias! Tus datos han llegado. Se comprueban y se suman a los datos de la comunidad en la próxima " +
+      "actualización de cada hora. Comparte de nuevo cuando quieras desde este navegador: la exportación más reciente " +
+      "sustituye a la anterior.",
+    stored: "¡Gracias! Tu exportación más reciente ha llegado y sustituye a la anterior en la próxima actualización de " +
+      "cada hora.",
+    unchanged: "Ya compartida: el servidor ya tiene esta exportación. Juega un poco más y vuelve a exportar.",
+    noKey: " (Este navegador no pudo guardar la clave de tus datos, así que comparte las exportaciones nuevas con " +
+      "GoldScout Companion o con el formulario de GitHub.)",
+    empty: "Pega primero tu exportación: escribe /gscout export en el juego y copia el texto.",
+    notExport: "Eso no es una exportación de GoldScout. En el juego, escribe /gscout export, pulsa Ctrl+C en la " +
+      "ventana y pégalo todo aquí.",
+    tooLarge: "Esta exportación es demasiado grande para esta página. GoldScout Companion puede compartirla.",
+    boxes: "Marca las dos casillas para compartir.",
+    sending: "Enviando...",
+    elsewhere: "Estos datos ya se comparten desde GoldScout Companion o desde otro navegador, así que solo ese puede " +
+      "actualizarlos. Companion comparte las exportaciones nuevas solo; o usa el formulario de GitHub de abajo.",
+    failed: "Algo salió mal (%s). Inténtalo de nuevo en unos minutos.",
+    offline: "No se pudo conectar con el servidor de GoldScout. Comprueba tu conexión e inténtalo de nuevo.",
+    tooOften: "Demasiados intentos ahora mismo. Inténtalo de nuevo en unos minutos.",
+    rank: "Tu puesto: n.º {rank} de {of}, con {kills} muertes contadas.",
+    rankNone: "Tus muertes cuentan cuando están en los datos de la comunidad, normalmente en el día siguiente a " +
+      "compartir.",
+    shown: " Se te muestra públicamente como {name}",
+    until: ", hasta que se apruebe {name}",
+    anonymous: " En la clasificación pública eres anónimo.",
+    saved: "Guardado.",
+    badName: "Los nombres tienen de 3 a 20 letras, dígitos y espacios (y . _ ' -).",
+    boardFailed: "No se pudo guardar ({status}). Inténtalo de nuevo en un momento.",
+    serverErrors: false   // the server's own messages are English: show ours
+  }}[document.documentElement.lang] || {
     registered: "Thanks! Your data is in. It's checked and joins the community data at the next hourly update. " +
       "Share again any time from this browser: the newest export replaces the last.",
     stored: "Thanks! Your newer export is in and replaces the last one at the next hourly update.",
@@ -184,7 +215,7 @@
     var current = null;
 
     function number(n) {
-      return Number(n || 0).toLocaleString(document.documentElement.lang === "de" ? "de-DE" : "en-US");
+      return Number(n || 0).toLocaleString({ de: "de-DE", es: "es-ES" }[document.documentElement.lang] || "en-US");
     }
 
     function fill(info) {

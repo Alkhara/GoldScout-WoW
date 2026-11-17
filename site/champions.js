@@ -11,11 +11,16 @@
     return;
   }
   var list = box.querySelector("ol");
-  // German pages (<html lang="de">, under /de/) show German; everything else English.
-  var GERMAN = document.documentElement.lang === "de";
+  // German and Spanish pages (<html lang="de"> under /de/, "es" under /es/) show their language; the rest English.
+  var LANG = document.documentElement.lang;
+  var LOCALE = { de: "de-DE", es: "es-ES" }[LANG] || "en-US";
+  var TEXT = {
+    de: { anonymous: "Anonyme Mitwirkende", here: " Kills hier" },
+    es: { anonymous: "Colaborador anónimo", here: " muertes aquí" }
+  }[LANG] || { anonymous: "Anonymous contributor", here: " kills here" };
 
   function number(n) {
-    return Number(n || 0).toLocaleString(GERMAN ? "de-DE" : "en-US");
+    return Number(n || 0).toLocaleString(LOCALE);
   }
 
   fetch(API + "/v1/leaderboard/zones").then(function (response) {
@@ -33,10 +38,10 @@
       li.value = row.rank;   // ties share a place
       var name = document.createElement("span");
       name.className = row.name ? "champion" : "champion anon";
-      name.textContent = row.name || (GERMAN ? "Anonyme Mitwirkende" : "Anonymous contributor");
+      name.textContent = row.name || TEXT.anonymous;
       var kills = document.createElement("span");
       kills.className = "small";
-      kills.textContent = " · " + number(row.kills) + (GERMAN ? " Kills hier" : " kills here");
+      kills.textContent = " · " + number(row.kills) + TEXT.here;
       li.appendChild(name);
       li.appendChild(kills);
       list.appendChild(li);

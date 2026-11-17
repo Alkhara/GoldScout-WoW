@@ -20,20 +20,30 @@
   }
   var pick = bar.querySelector("select");
   var status = bar.querySelector(".status");
-  // German pages (<html lang="de">, under /de/) show German; everything else English.
-  var GERMAN = document.documentElement.lang === "de";
-  var DE = {
-    "c": "k", "not listed": "nicht angeboten", " listed": " angeboten", "Loading prices...": "Preise werden geladen...",
-    "Lowest buyout, snapshot ": "Niedrigster Sofortkaufpreis, Stand ", "Prices are unavailable right now.":
-    "Preise sind gerade nicht verfügbar.", " realms, ": "-Realms, ", "Blackwater (neutral)": "Schwarzwasser (neutral)",
-    "Alliance": "Allianz", "Horde": "Horde"
+  // German and Spanish pages (<html lang="de"> under /de/, "es" under /es/) show their language; the rest English.
+  var LANG = document.documentElement.lang;
+  var LOCALE = { de: "de-DE", es: "es-ES" }[LANG] || "en-US";
+  var TEXTS = {
+    de: {
+      "c": "k", "not listed": "nicht angeboten", " listed": " angeboten", "Loading prices...": "Preise werden geladen...",
+      "Lowest buyout, snapshot ": "Niedrigster Sofortkaufpreis, Stand ", "Prices are unavailable right now.":
+      "Preise sind gerade nicht verfügbar.", " realms, ": "-Realms, ", "Blackwater (neutral)": "Schwarzwasser (neutral)",
+      "Alliance": "Allianz", "Horde": "Horde"
+    },
+    es: {
+      "not listed": "no está en venta", " listed": " en venta", "Loading prices...": "Cargando precios...",
+      "Lowest buyout, snapshot ": "Compra inmediata más baja, instantánea de ", "Prices are unavailable right now.":
+      "Los precios no están disponibles ahora mismo.", "Blackwater (neutral)": "Aguasnegras (neutral)",
+      "Alliance": "Alianza", "Horde": "Horda"
+    }
   };
   function t(text) {
-    return GERMAN && DE[text] ? DE[text] : text;
+    var own = TEXTS[LANG];
+    return own && own[text] ? own[text] : text;
   }
 
   function number(n) {
-    return n.toLocaleString(GERMAN ? "de-DE" : "en-US");
+    return n.toLocaleString(LOCALE);
   }
 
   function money(copper) {
@@ -50,16 +60,23 @@
 
   function minutesAgo(unix) {
     var minutes = Math.max(0, Math.round((Date.now() / 1000 - unix) / 60));
-    if (minutes < 90) {
-      return GERMAN ? "vor " + minutes + (minutes === 1 ? " Minute" : " Minuten") : minutes + " min ago";
+    var hours = Math.round(minutes / 60);
+    if (LANG === "de") {
+      return minutes < 90 ? "vor " + minutes + (minutes === 1 ? " Minute" : " Minuten") : "vor " + hours + " Stunden";
     }
-    return GERMAN ? "vor " + Math.round(minutes / 60) + " Stunden" : Math.round(minutes / 60) + " hours ago";
+    if (LANG === "es") {
+      return minutes < 90 ? "hace " + minutes + " min" : "hace " + hours + " horas";
+    }
+    return minutes < 90 ? minutes + " min ago" : hours + " hours ago";
   }
 
   var REGION_ORDER = ["us", "eu", "kr", "tw"];
 
   function label(house) {
     var faction = house.faction === "Neutral" ? t("Blackwater (neutral)") : t(house.faction);
+    if (LANG === "es") {   // "US: reinos PvP, Horda"
+      return house.region.toUpperCase() + ": reinos " + house.rulesetName + ", " + faction;
+    }
     return house.region.toUpperCase() + ": " + house.rulesetName + t(" realms, ") + faction;
   }
 
