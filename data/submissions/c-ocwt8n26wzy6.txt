@@ -1,4 +1,4 @@
-GoldScout-export 5^ocwt8n26wzy6^11
+GoldScout-export 5^ocwt8n26wzy6^12
 48^19^0^21^22^1431^0.7908^0.7078^19^Skeletal Warrior^1772:1:1,1799:1:1,1802:1:1,2378:7:7,2592:5:7,2794:1:1,3198:1:1,4698:1:1^
 202^2^0^23^24^1431^0.4917^0.5446^2^Skeletal Horror^^
 203^13^0^22^23^1431^0.7968^0.7141^13^Skeletal Mage^2378:3:3,2589:1:2,2592:5:9,4306:2:2,5576:1:1^
@@ -24,6 +24,7 @@ GoldScout-export 5^ocwt8n26wzy6^11
 1729^3^0^0^0^0^0.0000^0.0000^0^^1792:1:1,4695:1:1^
 1731^5^0^0^0^0^0.0000^0.0000^0^^814:1:1,955:1:1,1767:1:1,1944:1:1,2455:1:1^
 1732^2^0^0^0^0^0.0000^0.0000^0^^1811:1:1,2592:1:2^
+3660^1^0^31^31^1439^0.5605^0.2622^1^Athrikus Narassin^5383:1:1^
 3664^1^0^24^24^1440^0.2527^0.6072^1^Ilkrud Magthrull^5533:1:1^
 3809^1^0^21^22^1440^0.3793^0.5974^1^Ashenvale Bear^2940:1:1,3730:1:1^
 3819^1^0^20^21^1440^0.3540^0.5545^1^Wildthorn Stalker^1081:1:1,3174:1:1^
@@ -34,7 +35,9 @@ GoldScout-export 5^ocwt8n26wzy6^11
 3919^4^0^26^27^1440^0.5666^0.3552^4^Withered Ancient^^
 3924^4^0^23^24^1440^0.3113^0.4322^4^Thistlefur Shaman^4306:1:1^
 3925^4^0^23^24^1440^0.3134^0.4486^4^Thistlefur Avenger^1746:1:1,2592:1:1,3012:1:1^
+3931^1^0^30^30^1440^0.6664^0.8161^1^Shadethicket Oracle^5508:1:1^
 3947^3^0^0^0^0^0.0000^0.0000^0^^1179:1:1,2589:1:1^
+3986^1^0^25^25^1413^0.4821^0.1911^1^Sarilus Foulborne^5537:1:1^
 3987^1^0^25^25^1440^0.3644^0.3368^1^Dal Bloodclaw^5544:1:1^
 3988^3^0^19^20^1442^0.6272^0.5358^3^Venture Co. Operator^1179:1:1,2592:1:2,5734:1:1^
 3989^1^0^18^19^1442^0.6145^0.5520^1^Venture Co. Logger^^
@@ -101,13 +104,16 @@ GoldScout-export 5^ocwt8n26wzy6^11
 @i^5135^Thin Black Claw
 @i^5136^Torn Furry Ear
 @i^5196^Smite's Reaver
+@i^5383^Athrikus Narassin's Head
 @i^5446^Broken Elemental Bracer
 @i^5447^Damaged Elemental Bracer
 @i^5448^Fractured Elemental Bracer
 @i^5451^Crushed Elemental Bracer
 @i^5475^Wooden Key
+@i^5508^Fallen Moonstone
 @i^5529^Tomb Dust
 @i^5533^Ilkrud Magthrull's Tome
+@i^5537^Sarilus Foulborne's Head
 @i^5544^Dal Bloodclaw's Skull
 @i^5576^Large Brown Sack
 @i^5734^Super Reaper 6000 Blueprints
@@ -180,13 +186,16 @@ GoldScout-export 5^ocwt8n26wzy6^11
 @q^5135^0:15:0
 @q^5136^0:15:0
 @q^5196^3:2:0
+@q^5383^1:12:0
 @q^5446^0:15:0
 @q^5447^0:15:0
 @q^5448^0:15:0
 @q^5451^0:15:0
 @q^5475^1:13:0
+@q^5508^1:12:0
 @q^5529^0:15:0
 @q^5533^1:12:0
+@q^5537^1:12:0
 @q^5544^1:12:0
 @q^5576^1:1:0
 @q^5734^1:12:0
@@ -206,7 +215,9 @@ GoldScout-export 5^ocwt8n26wzy6^11
 @q^273293^3:4:0
 @q^277917^1:12:0
 @q^281143^1:15:0
+@m^1413^The Barrens
 @m^1431^Duskwood
+@m^1439^Darkshore
 @m^1440^Ashenvale
 @m^1442^Stonetalon Mountains
 @m^2521^Zephras Isle
@@ -772,6 +783,7 @@ GoldScout-export 5^ocwt8n26wzy6^11
 @a^539^73:1
 @a^570^104:1,105:2,125:3
 @a^604^104:3,105:5,124:1,125:5
+@a^3660^111:1
 @a^3664^245:1
 @a^3809^227:1
 @a^3819^227:1
@@ -782,6 +794,8 @@ GoldScout-export 5^ocwt8n26wzy6^11
 @a^3919^131:2,151:2
 @a^3924^166:4
 @a^3925^166:2,186:2
+@a^3931^333:1
+@a^3986^69:1
 @a^3987^127:1
 @a^3988^212:3
 @a^3989^232:1
