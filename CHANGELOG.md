@@ -7,6 +7,11 @@ releases add their own line automatically.
 
 ## Unreleased
 
+## v0.12.19
+
+- **Drop data for about 200 mobs is back:** v0.12.18 left out mobs recorded only by players who joined in the last few days. They're back, with everything shared since: drop rates for over 1,400 mobs.
+- Updated drop data from the community.
+
 ## v0.12.18
 
 - **The hunt tracker splits what you earn:** the item you're hunting (its value and gold per hour on its own), other loot such as vendor trash, coin, and the total with its gold per hour. The chat summary when a hunt ends shows the same.
