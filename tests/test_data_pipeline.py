@@ -192,6 +192,21 @@ class OutlierTests(unittest.TestCase):
         result = submission.compare(submission.parse(GOOD), [self.OTHERS])
         self.assertEqual(result.warnings, [])
 
+    def test_quest_items_are_not_compared(self):
+        # Two players held for 0% of a quest item others saw 40% of: it drops only while you're on the quest.
+        big = (CLATTERING.replace("3812^11^0", "3812^100^0").replace("^11^Clattering", "^100^Clattering")
+               .replace("2674:4:4", "2674:90:90"))
+        export = "GoldScout-export 2^abcdefghijkl^3\n" + big
+        flagged = submission.compare(submission.parse(export), [self.OTHERS]).warnings
+        self.assertTrue(any("item 2674" in w for w in flagged))
+        # Known as a quest item from other players' exports...
+        result = submission.compare(submission.parse(export), [self.OTHERS], quest_items={2674})
+        self.assertFalse(any("item 2674" in w for w in result.warnings))
+        # ...or from this export's own item details.
+        own = submission.parse(export)
+        own.item_meta[2674] = (1, submission.QUEST_ITEM_CLASS, False)
+        self.assertFalse(any("item 2674" in w for w in submission.compare(own, [self.OTHERS]).warnings))
+
 
 class BotTests(unittest.TestCase):
     def setUp(self):

@@ -471,12 +471,19 @@ def _z(drops_a, attempts_a, drops_b, attempts_b):
     return (drops_a / attempts_a - drops_b / attempts_b) / spread
 
 
-def compare(result, others):
+QUEST_ITEM_CLASS = 12   # Blizzard's item class for quest items
+
+
+def compare(result, others, quest_items=()):
     """Adds a warning for every drop rate far from what other players recorded.
 
     others is a list of mob lists from accepted submissions (not including
     this player's). Rates are compared per mob and item, with a z-test on the
-    two proportions."""
+    two proportions. Quest items (class QUEST_ITEM_CLASS in this export's item
+    details, or in quest_items, from other players') aren't compared: they drop
+    only while you're on the quest, so a player who isn't sees 0% where others
+    saw 40%, and they can't be sold, so their rates change no one's gold."""
+    skip = set(quest_items) | {item for item, meta in result.item_meta.items() if meta[1] == QUEST_ITEM_CLASS}
     totals = defaultdict(lambda: {"k": 0, "p": 0, "i": defaultdict(int), "pi": defaultdict(int)})
     for mobs in others:
         for mob in mobs:
@@ -496,7 +503,7 @@ def compare(result, others):
             if attempts < OUTLIER_MIN_ATTEMPTS or other_attempts < OUTLIER_MIN_ATTEMPTS:
                 continue
             mine = getattr(mob, key)
-            for item in set(mine) | set(entry[key]):
+            for item in (set(mine) | set(entry[key])) - skip:
                 drops = mine.get(item, (0, 0))[0]
                 z = _z(drops, attempts, entry[key].get(item, 0), other_attempts)
                 if abs(z) >= OUTLIER_Z:

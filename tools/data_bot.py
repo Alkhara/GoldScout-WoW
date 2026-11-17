@@ -86,6 +86,17 @@ def others(exclude_user_id=None, exclude_install=None):
     return mobs
 
 
+def quest_items():
+    """Items any accepted export's item details call quest items (submission.QUEST_ITEM_CLASS): the rate
+    comparison skips them, since a player not on the quest rightly never loots one."""
+    found = set()
+    for path in sorted(SUBMISSIONS.glob("*.txt")):
+        result = submission.parse(path.read_text(encoding="utf-8"))
+        if result.ok:
+            found |= {item for item, meta in result.item_meta.items() if meta[1] == submission.QUEST_ITEM_CLASS}
+    return found
+
+
 def review(body, user_id):
     """Validates an issue body. Returns (status, result, consent, found_export)."""
     export, consent = extract(body)
@@ -96,7 +107,7 @@ def review(body, user_id):
         result.errors.append("The export is larger than %d bytes, too big for the share form. GoldScout Companion "
                              "can share it." % submission.FORM_MAX_BYTES)
     if result.ok:
-        submission.compare(result, others(user_id))
+        submission.compare(result, others(user_id), quest_items())
     if not consent or not result.ok:
         return "invalid", result, consent, True
     return ("needs-review" if result.warnings else "valid"), result, consent, True
@@ -255,6 +266,7 @@ def collect_uploads(uploads_path):
     approved = approved_installs()
     SUBMISSIONS.mkdir(parents=True, exist_ok=True)
     from_form = form_installs()
+    quests = quest_items()
     stored, held, rejected, dates = [], [], 0, {}
     for upload in listing.get("uploads") or []:
         install = str(upload.get("install_id", ""))
@@ -268,7 +280,7 @@ def collect_uploads(uploads_path):
             held.append((install, len(result.mobs), [FORM_TAKEOVER]))
             print("hold upload %s (first shared through the form)" % install)
             continue
-        submission.compare(result, others(exclude_install=install))
+        submission.compare(result, others(exclude_install=install), quests)
         if result.warnings and install not in approved:
             held.append((install, len(result.mobs), result.warnings))
             print("hold upload %s (rate warnings)" % install)
