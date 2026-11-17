@@ -249,11 +249,25 @@ class ServerTests(unittest.TestCase):
             with self.subTest(bad):
                 self.assertEqual(upload([bad])[0], 400)
 
+    def report(self, reporter, errors, ip=None):
+        """An error report, from its own network unless ip says (new reporters are limited per network)."""
+        body = json.dumps({"reporter": reporter, "errors": errors})
+        return raw("/v1/errors", body, {"Content-Type": "application/json", "CF-Connecting-IP": ip or fake_ip(),
+                                        "User-Agent": "GoldScoutCompanion/0.11.0 (Windows)"}, "POST")
+
+    def test_one_network_adds_only_two_new_error_reporters_a_day(self):
+        # Reporter IDs are chosen by the sender: without this, one computer could pose as the 3 players the
+        # Discord errors alert needs.
+        ip = fake_ip()
+        error = {"m": "GoldScout/UI.lua:%d: test" % random.randint(1, 10 ** 9), "s": "", "n": 1}
+        reporters = ["".join(random.choice("0123456789abcdef") for _ in range(16)) for _ in range(3)]
+        self.assertEqual(self.report(reporters[0], [error], ip)[0], 200)
+        self.assertEqual(self.report(reporters[1], [error], ip)[0], 200)
+        self.assertEqual(self.report(reporters[2], [error], ip)[0], 429)
+        self.assertEqual(self.report(reporters[2], [error])[0], 200)      # from another network: fine
+
     def test_error_reports_are_grouped_and_rate_limited(self):
-        def report(reporter, errors):
-            body = json.dumps({"reporter": reporter, "errors": errors})
-            return raw("/v1/errors", body, {"Content-Type": "application/json",
-                                            "User-Agent": "GoldScoutCompanion/0.11.0 (Windows)"}, "POST")
+        report = self.report
 
         message = "GoldScout/UI.lua:%d: attempt to index a nil value" % random.randint(1, 10 ** 9)
         error = {"m": message, "s": "GoldScout/UI.lua:1: in function 'Refresh'", "n": 3, "v": "v0.10.1"}
