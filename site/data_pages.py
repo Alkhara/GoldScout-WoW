@@ -20,8 +20,9 @@ from the GoldScout server's copy of Blizzard's auction data, for the realm type
 and faction the visitor picks in the price bar.
 
 Other languages: build() runs again with LANG = "de" for the pages under /de/,
-and LANG = "es" for /es/. Every sentence goes through T() (site/i18n_de.py,
-site/i18n_es.py), links to data pages through P() (which adds /de or /es), and
+LANG = "es" for /es/ and LANG = "fr" for /fr/. Every sentence goes through T()
+(site/i18n_de.py, i18n_es.py, i18n_fr.py), links to data pages through P()
+(which adds /de, /es or /fr), and
 game names come from the exports of players whose game runs in that language
 where they've recorded them; English names are kept, marked, until then.
 """
@@ -35,6 +36,7 @@ from pathlib import Path
 
 from i18n_de import DE, RATES_BODY as RATES_BODY_DE
 from i18n_es import ES, RATES_BODY as RATES_BODY_ES
+from i18n_fr import FR, RATES_BODY as RATES_BODY_FR
 
 SITE_URL = "https://wowgoldscout.com"
 MIN_ATTEMPTS = 5                 # same threshold as the shipped community data
@@ -44,16 +46,17 @@ GEM_CLASS = 3
 ADDON = Path(__file__).resolve().parent.parent / "GoldScout"
 
 # -- languages ------------------------------------------------------------------------
-LANG = "en"                      # "de" or "es" while those pages are built (build_language)
+LANG = "en"                      # "de", "es" or "fr" while those pages are built (build_language)
 # page language -> the game client languages whose names it uses (Spanish: Spain's and Latin America's)
-LANGUAGES = {"de": ("deDE",), "es": ("esES", "esMX")}
-TEXTS = {"de": DE, "es": ES}     # page language -> its text, by the English
-DECIMAL_COMMA = {"de", "es"}     # 1.234 and 12,5%
+LANGUAGES = {"de": ("deDE",), "es": ("esES", "esMX"), "fr": ("frFR",)}
+TEXTS = {"de": DE, "es": ES, "fr": FR}   # page language -> its text, by the English
+DECIMAL_COMMA = {"de", "es", "fr"}       # 12,5%
+THOUSANDS = {"de": ".", "es": ".", "fr": "\u202f"}   # 1.234 (French: 1 234, with a narrow no-break space)
 MISSING = set()                  # texts looked up on a translated page with no translation yet (tests keep it empty)
 # Pages that exist in every language (and the home page, "/"). The home page, companion, share, FAQ and
 # leaderboard pages are written by site/build.py; the rest by build() here.
 LOCAL_PAGES = ("/item/", "/mob/", "/zone/", "/farms", "/fishing", "/data-wanted", "/drop-rates", "/search",
-               "/companion", "/share", "/leaderboard", "/faq")
+               "/companion", "/share", "/leaderboard", "/faq", "/support")
 
 
 def T(text):
@@ -72,9 +75,8 @@ def plural(n, one, many, shown=None):
 
 
 def num(n):
-    """1,234 (German and Spanish: 1.234)."""
-    text = format(n, ",")
-    return text.replace(",", ".") if LANG in DECIMAL_COMMA else text
+    """1,234 (German and Spanish: 1.234; French: 1 234)."""
+    return format(n, ",").replace(",", THOUSANDS.get(LANG, ","))
 
 
 def is_local_page(path):
@@ -149,10 +151,11 @@ def confidence(attempts):
 
 
 def percent(rate):
-    if rate >= 0.1:
-        return "%d%%" % round(rate * 100)
-    text = "%.1f%%" % (rate * 100)
-    return text.replace(".", ",") if LANG in DECIMAL_COMMA else text
+    """25% and 0.5% (German and Spanish: 0,5%; French: 25 % and 0,5 %)."""
+    text = "%d%%" % round(rate * 100) if rate >= 0.1 else "%.1f%%" % (rate * 100)
+    if LANG in DECIMAL_COMMA:
+        text = text.replace(".", ",")
+    return text.replace("%", "\u00a0%") if LANG == "fr" else text
 
 
 def bracket_of(level):
@@ -496,7 +499,7 @@ def chance(rate, attempts):
     low, high = wilson(round(rate * attempts), attempts)
     return ('%s <span class="range" title="%s">%s&ndash;%s</span>'
             % (percent(rate), T("95%% likely between these, from %d recorded") % attempts,
-               percent(low).rstrip("%"), percent(high)))
+               percent(low).rstrip("%\u00a0"), percent(high)))
 
 
 def badge(attempts):
@@ -1243,6 +1246,7 @@ RATES_BODY = """<h1>How GoldScout drop rates work</h1>
 """
 DE[RATES_BODY] = RATES_BODY_DE
 ES[RATES_BODY] = RATES_BODY_ES
+FR[RATES_BODY] = RATES_BODY_FR
 
 
 def rates_page(data, links):
@@ -1350,16 +1354,20 @@ MONTHS = {"en": ("January", "February", "March", "April", "May", "June", "July",
           "de": ("Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober",
                  "November", "Dezember"),
           "es": ("enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre",
-                 "noviembre", "diciembre")}
+                 "noviembre", "diciembre"),
+          "fr": ("janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre",
+                 "novembre", "décembre")}
 
 
 def day_text(day):
-    """ "December 15" (German: "15. Dezember", Spanish: "15 de diciembre")."""
+    """ "December 15" (German: "15. Dezember", Spanish: "15 de diciembre", French: "15 décembre", "1er mars")."""
     month = MONTHS[LANG if LANG in MONTHS else "en"][day.month - 1]
     if LANG == "de":
         return "%d. %s" % (day.day, month)
     if LANG == "es":
         return "%d de %s" % (day.day, month)
+    if LANG == "fr":
+        return "%s %s" % ("1er" if day.day == 1 else day.day, month)
     return "%s %d" % (month, day.day)
 
 
@@ -1456,12 +1464,42 @@ SPANISH_ARTICLES = [
 ]
 
 
+# French: "de" and "à" join a following "Le"/"Les" ("du Bois", "des Tarides", "au Bois", "aux Tarides"), "de"
+# elides before a vowel ("d'Elwynn"), and "La", "Le", "Les", "L'" go lower case inside a sentence ("dans les
+# Tarides", "de la Forêt").
+_TAGS = r"((?:<[^>]+>)*)"
+FRENCH_ARTICLES = [
+    (re.compile(r"\b([Dd])e " + _TAGS + "Les "), r"\1es \2"),
+    (re.compile(r"\b([Dd])e " + _TAGS + "Le "), r"\1u \2"),
+    (re.compile(r"\bà " + _TAGS + "Les "), r"aux \1"),
+    (re.compile(r"\bà " + _TAGS + "Le "), r"au \1"),
+    (re.compile(r"\b(dans|de|sur|pour|par|vers|à) " + _TAGS + "(La |L')"),
+     lambda m: "%s %s%s" % (m.group(1), m.group(2), m.group(3).lower())),
+    (re.compile(r"\b(dans|sur|pour|par|vers) " + _TAGS + "(Les?) "),
+     lambda m: "%s %s%s " % (m.group(1), m.group(2), m.group(3).lower())),
+    (re.compile(r"\b([Dd])e " + _TAGS + "(?=[AEIOUYÂÊÎÔÉÈaeiouyâêîôéè])"), r"\1'\2"),
+]
+
+
 def grammar(text):
-    """Fixes what filling names into sentences breaks in the language being built (German and Spanish
+    """Fixes what filling names into sentences breaks in the language being built (German, Spanish and French
     articles)."""
-    for pattern, replacement in {"de": GERMAN_ARTICLES, "es": SPANISH_ARTICLES}.get(LANG, ()):
+    for pattern, replacement in {"de": GERMAN_ARTICLES, "es": SPANISH_ARTICLES, "fr": FRENCH_ARTICLES}.get(LANG, ()):
         text = pattern.sub(replacement, text)
     return text
+
+
+_CODE = re.compile(r"(<script\b.*?</script>|<style\b.*?</style>|<[^>]+>)", re.S)
+
+
+def french_typography(page):
+    """French spacing in a page's text (never inside tags, scripts or styles): a no-break space before : ; ? ! %
+    and », and after «, so "Prix :" never breaks before its colon."""
+    parts = _CODE.split(page)
+    for i in range(0, len(parts), 2):   # text between the tags
+        text = re.sub(r" (?=[:;?!»%])", "\u00a0", parts[i])
+        parts[i] = text.replace("« ", "«\u00a0")
+    return "".join(parts)
 
 
 # -- site search -------------------------------------------------------------------

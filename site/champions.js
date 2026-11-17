@@ -11,12 +11,14 @@
     return;
   }
   var list = box.querySelector("ol");
-  // German and Spanish pages (<html lang="de"> under /de/, "es" under /es/) show their language; the rest English.
+  // German, Spanish and French pages (<html lang="de"> under /de/, "es" under /es/, "fr" under /fr/) show their
+  // language; the rest English.
   var LANG = document.documentElement.lang;
-  var LOCALE = { de: "de-DE", es: "es-ES" }[LANG] || "en-US";
+  var LOCALE = { de: "de-DE", es: "es-ES", fr: "fr-FR" }[LANG] || "en-US";
   var TEXT = {
     de: { anonymous: "Anonyme Mitwirkende", here: " Kills hier" },
-    es: { anonymous: "Colaborador anónimo", here: " muertes aquí" }
+    es: { anonymous: "Colaborador anónimo", here: " muertes aquí" },
+    fr: { anonymous: "Contributeur anonyme", here: " victimes ici" }
   }[LANG] || { anonymous: "Anonymous contributor", here: " kills here" };
 
   function number(n) {

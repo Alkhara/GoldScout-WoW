@@ -10,10 +10,9 @@
   var MAX_SUGGESTIONS = 8;
   var MAX_RESULTS = 100;
   var index = null, loading = null;
-  // German and Spanish pages (<html lang="de"> under /de/, "es" under /es/) search their own index and show their
-  // language; the rest English.
-  var LANG = document.documentElement.lang === "de" || document.documentElement.lang === "es"
-    ? document.documentElement.lang : "en";
+  // German, Spanish and French pages (<html lang="de"> under /de/, "es" under /es/, "fr" under /fr/) search their own
+  // index and show their language; the rest English.
+  var LANG = ["de", "es", "fr"].indexOf(document.documentElement.lang) >= 0 ? document.documentElement.lang : "en";
   var PREFIX = LANG === "en" ? "" : "/" + LANG;
   var INDEX = LANG === "en" ? "/search.json" : "/search-" + LANG + ".json";
   var WORDS = /[^\p{L}\p{N}']+/u;   // letters in any script, so "Händler" is one word
@@ -38,6 +37,17 @@
       nothing: function (q) {
         return "Aún no se encontró nada para «" + q + "». Los jugadores no lo han registrado aún, o prueba " +
           "con menos letras.";
+      }
+    },
+    fr: {
+      none: "Rien trouvé pour l'instant. Les joueurs ne l'ont pas encore enregistré, ou essayez avec moins de lettres.",
+      failed: "La recherche n'est pas disponible pour le moment.",
+      empty: "Tapez un objet, un monstre ou une zone dans le champ de recherche.",
+      first: "Les ", result: " résultat", results: " résultats",
+      quote: function (q) { return " pour «\u00a0" + q + "\u00a0»"; },
+      nothing: function (q) {
+        return "Rien trouvé pour «\u00a0" + q + "\u00a0» pour l'instant. Les joueurs ne l'ont pas encore " +
+          "enregistré, ou essayez avec moins de lettres.";
       }
     }
   }[LANG] || {

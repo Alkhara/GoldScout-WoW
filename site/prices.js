@@ -20,12 +20,13 @@
   }
   var pick = bar.querySelector("select");
   var status = bar.querySelector(".status");
-  // German and Spanish pages (<html lang="de"> under /de/, "es" under /es/) show their language; the rest English.
+  // German, Spanish and French pages (<html lang="de"> under /de/, "es" under /es/, "fr" under /fr/) show their
+  // language; the rest English.
   var LANG = document.documentElement.lang;
-  var LOCALE = { de: "de-DE", es: "es-ES" }[LANG] || "en-US";
+  var LOCALE = { de: "de-DE", es: "es-ES", fr: "fr-FR" }[LANG] || "en-US";
   var TEXTS = {
     de: {
-      "c": "k", "not listed": "nicht angeboten", " listed": " angeboten", "Loading prices...": "Preise werden geladen...",
+      "not listed": "nicht angeboten", " listed": " angeboten", "Loading prices...": "Preise werden geladen...",
       "Lowest buyout, snapshot ": "Niedrigster Sofortkaufpreis, Stand ", "Prices are unavailable right now.":
       "Preise sind gerade nicht verfügbar.", " realms, ": "-Realms, ", "Blackwater (neutral)": "Schwarzwasser (neutral)",
       "Alliance": "Allianz", "Horde": "Horde"
@@ -35,8 +36,16 @@
       "Lowest buyout, snapshot ": "Compra inmediata más baja, instantánea de ", "Prices are unavailable right now.":
       "Los precios no están disponibles ahora mismo.", "Blackwater (neutral)": "Aguasnegras (neutral)",
       "Alliance": "Alianza", "Horde": "Horda"
+    },
+    fr: {
+      "not listed": "pas en vente", " listed": " en vente", "Loading prices...": "Chargement des prix...",
+      "Lowest buyout, snapshot ": "Achat immédiat le plus bas, instantané ", "Prices are unavailable right now.":
+      "Les prix ne sont pas disponibles pour le moment.", "Blackwater (neutral)": "Eaux-Noires (neutre)"
     }
   };
+  // Coin units as the game writes them: German copper is "k", French is "po pa pc" (pièces d'or, d'argent, de
+  // cuivre), with a no-break space before each unit.
+  var COIN = { de: ["g", "s", "k", ""], fr: ["po", "pa", "pc", "\u00a0"] }[LANG] || ["g", "s", "c", ""];
   function t(text) {
     var own = TEXTS[LANG];
     return own && own[text] ? own[text] : text;
@@ -49,13 +58,14 @@
   function money(copper) {
     copper = Math.round(copper);
     var g = Math.floor(copper / 10000), s = Math.floor(copper / 100) % 100, c = copper % 100;
+    var sp = COIN[3];
     if (g > 0) {
-      return number(g) + "g " + s + "s";
+      return number(g) + sp + COIN[0] + " " + s + sp + COIN[1];
     }
     if (s > 0) {
-      return s + "s " + c + t("c");
+      return s + sp + COIN[1] + " " + c + sp + COIN[2];
     }
-    return c + t("c");
+    return c + sp + COIN[2];
   }
 
   function minutesAgo(unix) {
@@ -67,6 +77,9 @@
     if (LANG === "es") {
       return minutes < 90 ? "hace " + minutes + " min" : "hace " + hours + " horas";
     }
+    if (LANG === "fr") {
+      return minutes < 90 ? "il y a " + minutes + "\u00a0min" : "il y a " + hours + "\u00a0h";
+    }
     return minutes < 90 ? minutes + " min ago" : hours + " hours ago";
   }
 
@@ -76,6 +89,9 @@
     var faction = house.faction === "Neutral" ? t("Blackwater (neutral)") : t(house.faction);
     if (LANG === "es") {   // "US: reinos PvP, Horda"
       return house.region.toUpperCase() + ": reinos " + house.rulesetName + ", " + faction;
+    }
+    if (LANG === "fr") {   // "US : royaumes PvP, Horde"
+      return house.region.toUpperCase() + "\u00a0: royaumes " + house.rulesetName + ", " + faction;
     }
     return house.region.toUpperCase() + ": " + house.rulesetName + t(" realms, ") + faction;
   }

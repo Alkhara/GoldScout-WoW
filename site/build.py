@@ -44,6 +44,7 @@ LINKS = {
     "source": REPO,
     "companion_guide": REPO + "/blob/main/companion/README.md#on-a-mac",
     "discord": "https://discord.gg/rJdZcuepzN",
+    "sponsor": "https://github.com/sponsors/Alkhara",
     "contact": "mailto:admin@wowgoldscout.com",
 }
 
@@ -70,6 +71,10 @@ FAQ = [
          "welcome</code> shows it again."),
         ("Is it free?",
          "Yes. Every feature is the same for everyone, with no premium version, ads or accounts."),
+        ("How is GoldScout paid for?",
+         "By its players. If you'd like to help cover hosting and code signing, you can "
+         "<a href=\"/support\">sponsor GoldScout on GitHub</a>. Supporters get the same GoldScout as everyone "
+         "else, and GoldScout never asks for money in the game."),
         ("Do I need GoldScout Companion?",
          "No. GoldScout works on its own: press <b>Scan AH</b> at any auctioneer for prices. "
          "<a href=\"/companion\">The companion</a> brings prices in every hour without scanning, and shares your "
@@ -163,6 +168,10 @@ FAQ_DE = [
          "erste Jagd. <code>/gscout welcome</code> zeigt sie wieder."),
         ("Kostet GoldScout etwas?",
          "Nein. Jede Funktion ist für alle gleich, ohne Premium-Version, Werbung oder Konten."),
+        ("Wie wird GoldScout finanziert?",
+         "Von seinen Spielern. Wenn du Hosting und Codesignatur mittragen möchtest, kannst du "
+         "<a href=\"/de/support\">GoldScout auf GitHub sponsern</a>. Unterstützer bekommen dasselbe GoldScout wie "
+         "alle anderen, und im Spiel bittet GoldScout nie um Geld."),
         ("Brauche ich GoldScout Companion?",
          "Nein. GoldScout funktioniert auch allein: Drücke bei einem Auktionator <b>AH scannen</b>, um Preise zu "
          "bekommen. <a href=\"/de/companion\">Die Companion-App</a> bringt stündlich Preise ins Spiel, ohne zu "
@@ -271,6 +280,10 @@ FAQ_ES = [
          "welcome</code> la vuelve a mostrar."),
         ("¿Cuesta algo?",
          "No. Todas las funciones son iguales para todos, sin versión premium, anuncios ni cuentas."),
+        ("¿Cómo se financia GoldScout?",
+         "Gracias a sus jugadores. Si quieres ayudar a cubrir el alojamiento y la firma de código, puedes "
+         "<a href=\"/es/support\">patrocinar GoldScout en GitHub</a>. Quienes lo apoyan reciben el mismo GoldScout "
+         "que todos los demás, y GoldScout nunca pide dinero dentro del juego."),
         ("¿Necesito GoldScout Companion?",
          "No. GoldScout funciona solo: pulsa <b>Escanear CS</b> en cualquier subastador para tener precios. "
          "<a href=\"/es/companion\">Companion</a> trae los precios cada hora sin escanear y comparte tus datos de "
@@ -361,6 +374,120 @@ SCREENSHOTS_ES = [
     ("TaggedMobs.JPG", "Marcas de caza", "Los enemigos que cazas, marcados sobre sus placas de nombre."),
 ]
 
+# The FAQ in French: the same sections and questions as FAQ, in the same order (the tests compare them).
+FAQ_FR = [
+    ("Premiers pas", [
+        ("Qu'est-ce que GoldScout ?",
+         "Un addon pour WoW Forever qui répond à une question : que devrait farmer ou fabriquer maintenant le "
+         "personnage que vous jouez pour gagner de l'or ? Il classe les farms et les recettes par or par heure selon "
+         "le niveau, la classe, la faction et les métiers de ce personnage, avec les prix de l'hôtel des ventes et des "
+         "taux de butin partagés par les joueurs."),
+        ("Comment commencer ?",
+         "Installez GoldScout depuis <a href=\"%(curseforge)s\">CurseForge</a> ou <a href=\"%(wago)s\">Wago</a>, "
+         "connectez-vous et tapez <code>/gscout</code>. Une courte liste montre ce qu'il reste à préparer et se coche "
+         "toute seule : les prix de votre hôtel des ventes, vos recettes si vous fabriquez, et votre première chasse. "
+         "<code>/gscout welcome</code> la réaffiche."),
+        ("Est-ce payant ?",
+         "Non. Chaque fonction est la même pour tout le monde, sans version premium, publicité ni compte."),
+        ("Comment GoldScout est-il financé ?",
+         "Par ses joueurs. Si vous voulez aider à couvrir l'hébergement et la signature du code, vous pouvez "
+         "<a href=\"/fr/support\">sponsoriser GoldScout sur GitHub</a>. Ceux qui le soutiennent reçoivent le même "
+         "GoldScout que tout le monde, et GoldScout ne demande jamais d'argent en jeu."),
+        ("Ai-je besoin de GoldScout Companion ?",
+         "Non. GoldScout fonctionne seul : appuyez sur <b>Analyser HV</b> chez n'importe quel commissaire-priseur pour "
+         "avoir des prix. <a href=\"/fr/companion\">Companion</a> apporte les prix toutes les heures sans analyse, et "
+         "partage vos données de butin pour que l'onglet Farm continue de s'améliorer."),
+        ("Est-ce que ça marche sur Mac ?",
+         "Oui. L'addon fonctionne comme n'importe quel addon, et GoldScout Companion a une application Mac, signée et "
+         "vérifiée par Apple, pour les Mac Apple silicon et Intel : <a href=\"%(companion_mac)s\">téléchargez-la</a>, "
+         "ouvrez le zip et glissez GoldScout Companion dans Applications. Elle vit dans le Dock ; "
+         "<a href=\"%(companion_guide)s\" lang=\"en\">plus sur l'application Mac</a> (en anglais)."),
+    ]),
+    ("Règles et sécurité", [
+        ("GoldScout est-il autorisé ?",
+         "GoldScout ne fait que vous montrer des informations, avec la même interface d'addons que tout le monde. Il "
+         "ne se déplace, ne cible, n'attaque, ne ramasse et ne clique jamais à votre place, et il laisse de côté ce que "
+         "le jeu cache aux addons au lieu de le contourner."),
+        ("Companion touche-t-il au jeu ?",
+         "Non. Il lit le fichier de données sauvegardé de GoldScout et écrit un petit addon de données, "
+         "GoldScout_Prices, que le jeu charge à la connexion comme n'importe quel addon. Il ne lit ni ne modifie "
+         "jamais le jeu en cours."),
+        ("Quelque chose va-t-il s'afficher pendant que je joue ?",
+         "Non. La seule notification de Companion annonce une nouvelle version, et elle attend que World of Warcraft "
+         "soit fermé."),
+    ]),
+    ("Prix", [
+        ("D'où viennent les prix ?",
+         "De trois sources, la plus récente d'abord : votre propre <b>Analyser HV</b>, la copie horaire que fait "
+         "Companion de l'instantané de l'hôtel des ventes de Blizzard pour votre royaume et, tant que vous n'avez ni "
+         "l'un ni l'autre, des estimations régionales (le prix habituel dans les hôtels des ventes de votre région) "
+         "livrées avec chaque version. Les données de l'hôtel des ventes viennent de la Game Data API de Blizzard "
+         "Entertainment."),
+        ("Quels royaumes ont des prix ?",
+         "Les royaumes américains, européens, coréens et taïwanais. Les prix sont gardés par type de royaume et par "
+         "faction, donc les personnages de l'Alliance et de la Horde voient chacun leur propre hôtel des ventes. Les "
+         "hôtels des ventes gobelins (Eaux-Noires) apparaissent sur une ligne de plus dans l'infobulle et ne "
+         "remplacent jamais les prix de votre faction."),
+        ("Un prix semble faux. Pourquoi ?",
+         "Les prix sont l'achat immédiat le plus bas en vente, donc une seule offre bon marché peut faire paraître un "
+         "objet moins cher qu'il ne l'est. La colonne <b>En vente</b> indique combien il y en a, et les infobulles "
+         "préviennent quand il y en a peu. Une <b>Analyser HV</b> récente l'emporte toujours sur des prix anciens."),
+        ("Je vois les prix de GoldScout deux fois dans les infobulles.",
+         "Un autre addon ajoute les mêmes lignes. Désactivez celles de GoldScout dans Options &gt; AddOns &gt; "
+         "GoldScout ou avec <code>/gscout set tooltip off</code>."),
+    ]),
+    ("Farm et taux de butin", [
+        ("D'où viennent les taux de butin ?",
+         "De joueurs qui ramassent du butin en jeu, jamais de Wowhead ni d'ailleurs. GoldScout apprend ce que donne "
+         "vraiment chaque monstre que vous fouillez, et les données partagées de tous les joueurs sortent dans une "
+         "nouvelle version chaque jour. <a href=\"/fr/drop-rates\">Comment fonctionnent les taux de butin</a>."),
+        ("L'or par heure est-il précis ?",
+         "C'est une estimation : le prix après la commission de l'hôtel des ventes, multiplié par la chance par "
+         "victime et par votre rythme. Réglez votre rythme dans Options &gt; AddOns &gt; GoldScout ou avec "
+         "<code>/gscout set kills 80</code> (aussi <code>nodes</code> et <code>picks</code>). La couleur de la "
+         "colonne Chance montre combien de victimes soutiennent un taux, et une chasse mesure ce que vous gagnez "
+         "vraiment."),
+        ("Pourquoi un monstre ou une zone n'apparaît-il pas ?",
+         "Personne n'a encore partagé assez de butin de là-bas. Ramassez-le vous-même et GoldScout l'apprend aussitôt ; "
+         "partagez-le et tout le monde l'aura dans la prochaine version. <a href=\"/fr/data-wanted\">Où il manque des "
+         "données</a>."),
+    ]),
+    ("Vos données", [
+        ("Que partage GoldScout ?",
+         "Seulement des données de butin : identifiants de monstres et d'objets, nombre de victimes et de butins, "
+         "niveaux et lieux où vous avez ramassé, plus un identifiant aléatoire. Jamais de noms de personnages, de "
+         "comptes ni de royaumes. L'addon ne se connecte jamais à rien ; le partage passe par Companion ou la "
+         "<a href=\"/fr/share\">page de partage</a>, et seulement si vous acceptez. Voir la "
+         "<a href=\"%(privacy)s\" lang=\"en\">politique de confidentialité</a> (en anglais)."),
+        ("Comment arrêter de partager ou faire supprimer mes données ?",
+         "Désactivez <b>Share automatically</b> dans Companion pour ne plus envoyer de données, ou tapez "
+         "<code>/gscout set learn off</code> pour que GoldScout cesse d'apprendre de votre butin. Pour faire supprimer "
+         "ce que vous avez partagé, écrivez à <a href=\"%(contact)s\">admin@wowgoldscout.com</a> avec votre "
+         "identifiant d'installation (il apparaît dans vos exportations)."),
+    ]),
+    ("Aide", [
+        ("Où poser une question ?",
+         "Sur le <a href=\"%(discord)s\">Discord de GoldScout</a>. Les bugs et les idées y sont bienvenus, ou dans les "
+         "<a href=\"%(issues)s\">tickets GitHub</a> ; pour quelque chose de privé, écrivez à "
+         "<a href=\"%(contact)s\">admin@wowgoldscout.com</a>. L'anglais est le plus rapide, mais le français convient "
+         "aussi."),
+        ("Quelque chose ne marche pas. Que dois-je envoyer ?",
+         "Tapez <code>/gscout errors</code> pour voir les erreurs récentes de GoldScout et joignez-les, avec ce que "
+         "vous faisiez. Le <a href=\"%(guide)s\" lang=\"en\">guide</a> (en anglais) explique chaque fonction, "
+         "commande et option."),
+    ]),
+]
+
+# SCREENSHOTS in French: the same images, with the French addon's names (Farm, Artisanat, Chasser).
+SCREENSHOTS_FR = [
+    ("Frame.JPG", "Onglet Farm", "Ce que ce personnage peut farmer, classé par or par heure, avec les prix actuels de "
+                                 "l'hôtel des ventes."),
+    ("CraftFrame.JPG", "Onglet Artisanat", "Chaque recette que vous connaissez, classée par bénéfice après les "
+                                           "composants."),
+    ("Tracker.JPG", "Mode chasse", "Victimes, butins et or par heure pendant que vous farmez."),
+    ("TaggedMobs.JPG", "Marqueurs de chasse", "Les monstres que vous chassez, marqués sur leur barre de nom."),
+]
+
 FAQ_TEXT = {
     "en": ("Questions", 'Can\'t find your answer? Ask on the <a href="%s">GoldScout Discord</a>.',
            "GoldScout FAQ: questions about the WoW Forever gold addon",
@@ -374,14 +501,18 @@ FAQ_TEXT = {
            "Preguntas frecuentes de GoldScout: el accesorio de oro para WoW Forever",
            "Respuestas sobre GoldScout: primeros pasos, si está permitido, de dónde salen los precios y las tasas de "
            "botín, qué comparte y dónde conseguir ayuda."),
+    "fr": ("Questions", 'Vous ne trouvez pas votre réponse ? Demandez sur le <a href="%s">Discord de GoldScout</a>.',
+           "FAQ de GoldScout : l'addon d'or pour WoW Forever",
+           "Réponses sur GoldScout : premiers pas, s'il est autorisé, d'où viennent les prix et les taux de butin, ce "
+           "qu'il partage et où trouver de l'aide."),
 }
 
 
 def faq_page(lang="en"):
-    """(title, description, body) for /faq (lang "de": /de/faq from FAQ_DE; "es": /es/faq from FAQ_ES), with
+    """(title, description, body) for /faq (lang "de": /de/faq from FAQ_DE; "es": FAQ_ES; "fr": FAQ_FR), with
     FAQPage structured data."""
     sections, entries = [], []
-    for (english, _), (title, questions) in zip(FAQ, {"de": FAQ_DE, "es": FAQ_ES}.get(lang, FAQ)):
+    for (english, _), (title, questions) in zip(FAQ, {"de": FAQ_DE, "es": FAQ_ES, "fr": FAQ_FR}.get(lang, FAQ)):
         # Section anchors stay English in every language, so links to /faq#prices work on /de/faq too.
         parts = ['<h2 id="%s">%s</h2>' % (english.lower().replace(" ", "-"), html.escape(title))]
         for question, answer in questions:
@@ -439,6 +570,9 @@ SEARCH_BOX_DE = (SEARCH_BOX.replace('placeholder="Search items, mobs and zones"'
 SEARCH_BOX_ES = (SEARCH_BOX.replace('placeholder="Search items, mobs and zones"',
                                    'placeholder="Objetos, enemigos y zonas"')
                  .replace("Search items, mobs and zones", "Buscar objetos, enemigos y zonas"))
+SEARCH_BOX_FR = (SEARCH_BOX.replace('placeholder="Search items, mobs and zones"',
+                                   'placeholder="Objets, monstres et zones"')
+                 .replace("Search items, mobs and zones", "Rechercher des objets, des monstres et des zones"))
 
 # The data pages' header and footer in each language (data_pages.LOCAL_PAGES exist in both; the rest is
 # English, so German pages link there in English).
@@ -450,7 +584,7 @@ CHROME = {
         "footer": '<a href="/">Home</a><a href="/farms">Farms by level</a><a href="/fishing">Fishing</a>'
                   '<a href="/drop-rates">How drop rates work</a><a href="/leaderboard">Leaderboard</a>'
                   '<a href="/data-wanted">Data wanted</a><a href="/share">Share data</a><a href="/faq">FAQ</a>'
-                  '<a href="%(discord)s">Discord</a>'
+                  '<a href="/support">Support GoldScout</a><a href="%(discord)s">Discord</a>'
                   '<a href="%(source)s">GitHub</a><a href="%(privacy)s">Privacy</a>'
                   '<a href="%(data_license)s">Data license</a>',
         "notice": "Drop rates come from GoldScout players and are covered by the GoldScout Data License. GoldScout is "
@@ -466,7 +600,7 @@ CHROME = {
         "footer": '<a href="/de/">Startseite</a><a href="/de/farms">Farmen nach Stufe</a><a href="/de/fishing">Angeln</a>'
                   '<a href="/de/drop-rates">So funktionieren Dropraten</a><a href="/de/leaderboard">Bestenliste</a>'
                   '<a href="/de/data-wanted">Daten gesucht</a><a href="/de/share">Daten teilen</a>'
-                  '<a href="/de/faq">FAQ</a>'
+                  '<a href="/de/faq">FAQ</a><a href="/de/support">GoldScout unterstützen</a>'
                   '<a href="%(discord)s">Discord</a><a href="%(source)s">GitHub</a>'
                   '<a href="%(privacy)s" lang="en">Privacy</a><a href="%(data_license)s" lang="en">Data license</a>',
         "notice": "Die Dropraten stammen von GoldScout-Spielern und stehen unter der GoldScout Data License. "
@@ -483,7 +617,7 @@ CHROME = {
         "footer": '<a href="/es/">Inicio</a><a href="/es/farms">Farmeo por nivel</a><a href="/es/fishing">Pesca</a>'
                   '<a href="/es/drop-rates">Cómo funcionan las tasas de botín</a><a href="/es/leaderboard">Clasificación</a>'
                   '<a href="/es/data-wanted">Datos buscados</a><a href="/es/share">Compartir datos</a>'
-                  '<a href="/es/faq">Preguntas</a>'
+                  '<a href="/es/faq">Preguntas</a><a href="/es/support">Apoyar GoldScout</a>'
                   '<a href="%(discord)s">Discord</a><a href="%(source)s">GitHub</a>'
                   '<a href="%(privacy)s" lang="en">Privacy</a><a href="%(data_license)s" lang="en">Data license</a>',
         "notice": "Las tasas de botín vienen de jugadores de GoldScout y están cubiertas por la GoldScout Data License. "
@@ -491,6 +625,24 @@ CHROME = {
                   "inglés. GoldScout es un proyecto de fans, no está afiliado a Blizzard Entertainment ni respaldado "
                   "por Blizzard. World of Warcraft es una marca registrada de Blizzard Entertainment, Inc.",
         "search": SEARCH_BOX_ES,
+    },
+    "fr": {
+        "nav": '<a href="/fr/farms">Farm par niveau</a><a href="/fr/fishing">Pêche</a>'
+               '<a href="/fr/drop-rates">Taux de butin</a><a href="/fr/companion">Companion</a>'
+               '<a href="/fr/leaderboard">Classement</a><a href="/fr/faq">FAQ</a>'
+               '<a href="%(curseforge)s">Télécharger</a>',
+        "footer": '<a href="/fr/">Accueil</a><a href="/fr/farms">Farm par niveau</a><a href="/fr/fishing">Pêche</a>'
+                  '<a href="/fr/drop-rates">Comment fonctionnent les taux de butin</a>'
+                  '<a href="/fr/leaderboard">Classement</a>'
+                  '<a href="/fr/data-wanted">Données recherchées</a><a href="/fr/share">Partager des données</a>'
+                  '<a href="/fr/faq">FAQ</a><a href="/fr/support">Soutenir GoldScout</a>'
+                  '<a href="%(discord)s">Discord</a><a href="%(source)s">GitHub</a>'
+                  '<a href="%(privacy)s" lang="en">Privacy</a><a href="%(data_license)s" lang="en">Data license</a>',
+        "notice": "Les taux de butin viennent de joueurs de GoldScout et sont couverts par la GoldScout Data License. "
+                  "Les noms du jeu qu'aucun joueur francophone n'a encore enregistrés apparaissent en italique et en "
+                  "anglais. GoldScout est un projet de fans, ni affilié à Blizzard Entertainment ni approuvé par "
+                  "Blizzard. World of Warcraft est une marque déposée de Blizzard Entertainment, Inc.",
+        "search": SEARCH_BOX_FR,
     },
 }
 
@@ -513,7 +665,8 @@ h1, h2, h3, p, li { overflow-wrap: break-word; }
 header.top { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; }
 .brand { display: flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-weight: 700; font-size: 20px; }
 .brand img { width: 36px; height: 36px; border-radius: 8px; }
-nav a { color: var(--muted); text-decoration: none; margin-left: 18px; font-size: 15px; }
+nav { display: flex; flex-wrap: wrap; justify-content: flex-end; row-gap: 6px; }
+nav a { color: var(--muted); text-decoration: none; margin-left: 18px; font-size: 15px; white-space: nowrap; }
 nav a:hover { color: var(--text); }
 .hero { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: center; padding: 40px 0 56px; }
 .hero h1 { font-size: 46px; line-height: 1.1; margin: 0 0 16px; letter-spacing: -0.5px; }
@@ -760,7 +913,7 @@ def page(s):
 </div></section>
 
 <footer><div class="wrap">
-  <p><a href="/faq">FAQ</a><a href="%(discord)s">Discord</a><a href="%(source)s">GitHub</a><a href="%(guide)s">Guide</a><a href="%(issues)s">Report a bug</a><a href="%(privacy)s">Privacy</a><a href="%(terms)s">Contributor terms</a><a href="%(data_license)s">Data license</a></p>
+  <p><a href="/faq">FAQ</a><a href="%(discord)s">Discord</a><a href="%(source)s">GitHub</a><a href="%(guide)s">Guide</a><a href="%(issues)s">Report a bug</a><a href="/support">Support GoldScout</a><a href="%(privacy)s">Privacy</a><a href="%(terms)s">Contributor terms</a><a href="%(data_license)s">Data license</a></p>
   <p>GoldScout is a fan project, not affiliated with or endorsed by Blizzard Entertainment. World of Warcraft is a trademark of Blizzard Entertainment, Inc.</p>
 </div></footer>
 </body>
@@ -778,6 +931,8 @@ def home_jsonld(lang="en"):
     description = {
         "de": "Ein Addon für WoW Forever, das zeigt, was jeder Charakter für Gold farmen oder herstellen kann.",
         "es": "Un accesorio para WoW Forever que ordena lo que cada personaje puede farmear o fabricar para ganar oro.",
+        "fr": "Un addon pour WoW Forever qui classe ce que chaque personnage peut farmer ou fabriquer pour gagner de "
+              "l'or.",
     }.get(lang, "A free WoW Forever addon that ranks what each character can farm or craft for gold.")
     data = [
         {"@context": "https://schema.org", "@type": "WebSite", "name": "GoldScout", "url": home, "inLanguage": lang},
@@ -802,13 +957,19 @@ def spanish_date(iso):
     return "%d de %s de %d" % (day.day, data_pages.MONTHS["es"][day.month - 1], day.year)
 
 
+def french_date(iso):
+    """2026-11-16 -> "16 novembre 2026" (the 1st: "1er")."""
+    day = datetime.date.fromisoformat(iso)
+    return "%s %s %d" % ("1er" if day.day == 1 else day.day, data_pages.MONTHS["fr"][day.month - 1], day.year)
+
+
 def home_switch(lang):
     """The home page's hreflang alternates and its links to the other languages' home pages."""
     alternates, english = language_links(lang_path(lang, "/"), lang)
     return alternates, lang_switch(lang, english)
 
 
-LANG_NAMES = {"en": "English", "de": "Deutsch", "es": "Español"}
+LANG_NAMES = {"en": "English", "de": "Deutsch", "es": "Español", "fr": "Français"}
 
 
 def lang_path(lang, english):
@@ -817,11 +978,12 @@ def lang_path(lang, english):
 
 
 def lang_switch(lang, english):
-    """Links to the page in every other language (english: its English path), or "" if it has none."""
+    """Links to the page in every other language (english: its English path), or "" if it has none. Each shows its
+    language's code (DE), short enough for four languages to fit beside the nav, with the name as its label."""
     if english is None:
         return ""
-    return "".join('<a class="lang-switch" href="%s" hreflang="%s" lang="%s">%s</a>'
-                   % (lang_path(other, english), other, other, LANG_NAMES[other])
+    return "".join('<a class="lang-switch" href="%s" hreflang="%s" lang="%s" title="%s" aria-label="%s">%s</a>'
+                   % (lang_path(other, english), other, other, LANG_NAMES[other], LANG_NAMES[other], other.upper())
                    for other in ["en"] + list(data_pages.LANGUAGES) if other != lang)
 
 
@@ -928,7 +1090,7 @@ def page_de(s):
 </div></section>
 
 <footer><div class="wrap">
-  <p><a href="/de/faq">FAQ</a><a href="%(discord)s">Discord</a><a href="%(source)s">GitHub</a><a href="%(guide)s" lang="en">Guide</a><a href="%(issues)s">Fehler melden</a><a href="%(privacy)s" lang="en">Privacy</a><a href="%(terms)s" lang="en">Contributor terms</a><a href="%(data_license)s" lang="en">Data license</a></p>
+  <p><a href="/de/faq">FAQ</a><a href="%(discord)s">Discord</a><a href="%(source)s">GitHub</a><a href="%(guide)s" lang="en">Guide</a><a href="%(issues)s">Fehler melden</a><a href="/de/support">GoldScout unterstützen</a><a href="%(privacy)s" lang="en">Privacy</a><a href="%(terms)s" lang="en">Contributor terms</a><a href="%(data_license)s" lang="en">Data license</a></p>
   <p>GoldScout ist ein Fanprojekt, nicht mit Blizzard Entertainment verbunden und nicht von Blizzard unterstützt. World of Warcraft ist eine Marke von Blizzard Entertainment, Inc.</p>
 </div></footer>
 </body>
@@ -1044,7 +1206,7 @@ def page_es(s):
 </div></section>
 
 <footer><div class="wrap">
-  <p><a href="/es/faq">Preguntas</a><a href="%(discord)s">Discord</a><a href="%(source)s">GitHub</a><a href="%(guide)s" lang="en">Guide</a><a href="%(issues)s">Informar de un error</a><a href="%(privacy)s" lang="en">Privacy</a><a href="%(terms)s" lang="en">Contributor terms</a><a href="%(data_license)s" lang="en">Data license</a></p>
+  <p><a href="/es/faq">Preguntas</a><a href="%(discord)s">Discord</a><a href="%(source)s">GitHub</a><a href="%(guide)s" lang="en">Guide</a><a href="%(issues)s">Informar de un error</a><a href="/es/support">Apoyar GoldScout</a><a href="%(privacy)s" lang="en">Privacy</a><a href="%(terms)s" lang="en">Contributor terms</a><a href="%(data_license)s" lang="en">Data license</a></p>
   <p>GoldScout es un proyecto de fans, no está afiliado a Blizzard Entertainment ni respaldado por Blizzard. World of Warcraft es una marca registrada de Blizzard Entertainment, Inc.</p>
 </div></footer>
 </body>
@@ -1053,6 +1215,122 @@ def page_es(s):
            nav=CHROME["es"]["nav"] % LINKS, updated=updated,
            targets=s.get("targets_es", ""), alternates=alternates, switch=switch,
            contributors=dots(s["contributors"]), mobs=dots(s["mobs"]), kills=dots(s["kills"]), drops=dots(s["drops"]))
+
+
+def page_fr(s):
+    """/fr/: the home page, page(), in French. s["targets_fr"]: the community goals box in French."""
+    e = html.escape
+    shots = "\n".join(
+        '<div class="card"><img src="/screenshots/%s" alt="%s" loading="lazy"><h3>%s</h3><p>%s</p></div>'
+        % (e(name), e(title), e(title), e(text)) for name, title, text in SCREENSHOTS_FR)
+    updated = " Dernière mise à jour : %s." % french_date(s["updated_iso"]) if s.get("updated_iso") else ""
+    alternates, switch = home_switch("fr")
+    spaced = lambda n: format(n, ",").replace(",", " ")
+    return data_pages.french_typography("""<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GoldScout : le guide pour farmer de l'or dans WoW Forever</title>
+<meta name="description" content="Un addon pour WoW Forever qui dit à chaque personnage ce qui vaut la peine d'être farmé ou fabriqué pour gagner de l'or, avec les prix de votre propre hôtel des ventes et des taux de butin partagés par les joueurs.">
+<meta property="og:title" content="GoldScout">
+<meta property="og:description" content="Que devrait farmer ce personnage maintenant pour gagner de l'or ? Un addon pour WoW Forever.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="%(site)s/fr/">
+<meta property="og:image" content="%(site)s/logo-400.png">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="%(site)s/fr/">%(alternates)s
+<link rel="icon" href="/favicon.png">
+<script type="application/ld+json">%(jsonld)s</script>
+<style>%(css)s</style>
+<script src="/search.js" defer></script>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <a class="brand" href="/fr/"><img src="/logo-400.png" alt="">GoldScout</a>
+  <nav>%(nav)s</nav>%(switch)s
+</header>
+%(search)s
+
+<div class="hero">
+  <div>
+    <h1>Que devrait farmer <span>ce personnage</span> maintenant pour gagner de l'or ?</h1>
+    <p class="lead">GoldScout est un addon pour WoW Forever. Ouvrez l'hôtel des ventes et il classe ce que le personnage que vous jouez peut farmer ou fabriquer pour gagner le plus d'or par heure, selon son niveau, sa classe, sa faction et ses métiers.</p>
+    <div class="buttons">
+      <a class="btn primary" href="%(curseforge)s">Le télécharger sur CurseForge</a>
+      <a class="btn" href="%(wago)s">Wago</a>
+      <a class="btn" href="%(releases)s">GitHub</a>
+    </div>
+    <p class="small">Open source, et chaque fonction est la même pour tous. L'addon parle français.</p>
+    <div class="next"><b>Ajoutez ensuite GoldScout Companion.</b> L'application pour Windows et Mac apporte les prix de l'hôtel des ventes dans GoldScout toutes les heures, sans analyse, et partage vos données de butin pour que l'onglet Farm continue de s'améliorer.<br>
+      <a class="btn" href="/fr/companion">Découvrir Companion</a></div>
+  </div>
+  <img class="shot" src="/screenshots/Frame.JPG" alt="L'onglet Farm de GoldScout">
+</div>
+</div>
+
+<section id="features"><div class="wrap">
+  <h2>Tout ce qu'il faut pour farmer de l'or, pour le personnage que vous jouez</h2>
+  <p class="sub">Des prix actuels de votre propre hôtel des ventes, des taux de butin de vrais joueurs, et une chasse qui vous mène sur place et fait les comptes.</p>
+  <div class="grid">%(shots)s</div>
+</div></section>
+
+<section id="data"><div class="wrap">
+  <h2>Des données de joueurs, pas copiées</h2>
+  <p class="sub">Chaque taux de butin et chaque lieu d'apparition de GoldScout vient de joueurs qui ramassent du butin en jeu. Rien n'est copié de Wowhead ni d'ailleurs. Plus il y a de gens qui partagent, meilleur est l'onglet Farm pour tous.%(updated)s</p>
+  <div class="stats">
+    <div class="stat"><b>%(contributors)s</b><span>contributeurs</span></div>
+    <div class="stat"><b>%(mobs)s</b><span>monstres avec taux de butin</span></div>
+    <div class="stat"><b>%(kills)s</b><span>victimes enregistrées</span></div>
+    <div class="stat"><b>%(drops)s</b><span>butins enregistrés</span></div>
+  </div>
+  %(targets)s
+  <ol class="steps">
+    <li><b>Vous jouez.</b> GoldScout apprend ce que donne vraiment chaque monstre que vous fouillez, sur tous vos personnages.</li>
+    <li><b>Vous partagez.</b> <a href="/fr/companion">GoldScout Companion</a> le fait automatiquement, ou utilisez <code>/gscout export</code> et la <a href="/fr/share">page de partage</a>. Jamais de noms de personnages ni de comptes.</li>
+    <li><b>C'est vérifié.</b> Chaque envoi est vérifié, et les taux de butin inhabituels sont contrôlés avant d'être utilisés.</li>
+    <li><b>Tout le monde en profite.</b> Les nouvelles données de la communauté sortent chaque jour dans une nouvelle version. Votre propre butin n'est jamais compté deux fois.</li>
+  </ol>
+  <p style="margin-top:22px"><a class="btn" href="/fr/farms">Voir le farm par niveau</a> <a class="btn" href="/fr/drop-rates">Comment fonctionnent les taux de butin</a></p>
+</div></section>
+
+<section id="companion"><div class="wrap two">
+  <div>
+    <h2>Des prix toutes les heures, sans analyse</h2>
+    <p class="sub">GoldScout Companion est une application pour Windows et Mac qui garde GoldScout à jour pendant que vous jouez.</p>
+    <ul class="ticks">
+      <li><b>Les prix de l'hôtel des ventes toutes les heures.</b> L'instantané de l'hôtel des ventes de Blizzard pour votre royaume et votre faction, enregistré pour GoldScout environ une fois par heure. Vos propres analyses l'emportent toujours quand elles sont plus récentes.</li>
+      <li><b>Les prix des Eaux-Noires aussi.</b> Ce que coûtent les objets dans les hôtels des ventes gobelins, sur une ligne de plus dans l'infobulle.</li>
+      <li><b>De meilleurs taux de butin, automatiquement.</b> Elle partage ce que GoldScout apprend de votre butin, jamais de noms de personnages ni de comptes, pour que l'onglet Farm s'améliore pour vous et pour tous.</li>
+      <li><b>Discrète.</b> Elle vit dans la zone de notification (sur Mac, dans le Dock), n'apparaît jamais par-dessus le jeu et se met à jour en un clic.</li>
+    </ul>
+    <p style="margin-top:22px"><a class="btn primary" href="%(companion)s">Télécharger pour Windows</a> <a class="btn primary" href="%(companion_mac)s">Télécharger pour Mac</a> <a class="btn" href="/fr/companion">Comment elle fonctionne</a></p>
+    <p class="small">Signée numériquement, donc Windows et macOS montrent qui la publie.</p>
+  </div>
+  <div>
+    <h2>Dans le respect des règles</h2>
+    <p class="sub">GoldScout ne fait que montrer des informations. Il ne se déplace, ne cible, n'attaque, ne ramasse et ne clique jamais à votre place, et respecte chaque limite que Blizzard impose aux addons.</p>
+    <ul class="ticks">
+      <li>L'addon ne se connecte jamais à rien ; c'est toujours vous qui décidez de partager.</li>
+      <li>Companion ne touche jamais au jeu en cours : elle lit les données sauvegardées de GoldScout et écrit un petit addon de données.</li>
+      <li>Open source sur <a href="%(source)s">GitHub</a>, pour que chacun puisse vérifier ce qu'il fait.</li>
+      <li>Lisez la <a href="%(privacy)s" lang="en">Privacy Policy</a> et les <a href="%(terms)s" lang="en">Contributor Terms</a> (en anglais).</li>
+    </ul>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <p><a href="/fr/faq">FAQ</a><a href="%(discord)s">Discord</a><a href="%(source)s">GitHub</a><a href="%(guide)s" lang="en">Guide</a><a href="%(issues)s">Signaler un bug</a><a href="/fr/support">Soutenir GoldScout</a><a href="%(privacy)s" lang="en">Privacy</a><a href="%(terms)s" lang="en">Contributor terms</a><a href="%(data_license)s" lang="en">Data license</a></p>
+  <p>GoldScout est un projet de fans, ni affilié à Blizzard Entertainment ni approuvé par Blizzard. World of Warcraft est une marque déposée de Blizzard Entertainment, Inc.</p>
+</div></footer>
+</body>
+</html>
+""" % dict(LINKS, site=SITE_URL, css=CSS, shots=shots, jsonld=home_jsonld("fr"), search=SEARCH_BOX_FR,
+           nav=CHROME["fr"]["nav"] % LINKS, updated=updated,
+           targets=s.get("targets_fr", ""), alternates=alternates, switch=switch,
+           contributors=spaced(s["contributors"]), mobs=spaced(s["mobs"]), kills=spaced(s["kills"]),
+           drops=spaced(s["drops"])))
 
 
 def language_links(path, lang):
@@ -1074,7 +1352,9 @@ def layout(title, description, path, body, index=True, lang="en"):
     chrome = CHROME[lang]
     alternates, english = language_links(path, lang)
     switch = lang_switch(lang, english)
-    return """<!doctype html>
+    if lang == "fr":
+        title, description = data_pages.french_typography(title), data_pages.french_typography(description)
+    page = """<!doctype html>
 <html lang="%(lang)s">
 <head>
 <meta charset="utf-8">
@@ -1114,6 +1394,7 @@ def layout(title, description, path, body, index=True, lang="en"):
            switch=switch, alternates=alternates,
            robots="" if index else '\n<meta name="robots" content="noindex, follow">',
            title=html.escape(title), description=html.escape(description))
+    return data_pages.french_typography(page) if lang == "fr" else page
 
 
 TOP = 10 ** 9   # the site's own pages win ties with data pages ("fishing" finds Fishing for gold first)
@@ -1181,6 +1462,31 @@ STATIC_SEARCH_ES = [
     ["Compartir datos de botín", "/es/share", "Pega tu exportación de /gscout y compártela", TOP],
     ["Clasificación de colaboradores", "/es/leaderboard", "Quién ha compartido más datos de botín", TOP],
     ["Preguntas", "/es/faq", "Preguntas sobre GoldScout", TOP],
+]
+
+
+def search_page_fr():
+    """/fr/search, as search_page()."""
+    body = """<h1>Recherche</h1>
+<p class="small" id="search-status">Recherche en cours...</p>
+<ul class="search-list" id="search-page-results"></ul>
+<noscript><p class="small">La recherche a besoin de JavaScript. Parcourez le <a href="/fr/farms">farm par niveau</a>.</p></noscript>
+"""
+    return ("Recherche", "Cherchez des objets, monstres, zones et lieux de pêche de WoW Forever sur GoldScout.", body)
+
+
+STATIC_SEARCH_FR = [
+    ["Farm par niveau", "/fr/farms", "Les meilleurs farms d'or pour chaque niveau", TOP],
+    ["Pêcher pour l'or", "/fr/fishing", "Chaque zone où les joueurs ont pêché, par or par heure", TOP],
+    ["Comment fonctionnent les taux de butin", "/fr/drop-rates", "Chance, intervalles et vérification des données",
+     TOP],
+    ["Où GoldScout a besoin de données", "/fr/data-wanted", "Niveaux, zones et monstres avec le moins de données",
+     TOP],
+    ["GoldScout Companion", "/fr/companion", "Application Windows et Mac : les prix de l'hôtel des ventes chaque heure",
+     TOP],
+    ["Partager vos données de butin", "/fr/share", "Collez votre exportation /gscout et partagez-la", TOP],
+    ["Classement des contributeurs", "/fr/leaderboard", "Qui a partagé le plus de données de butin", TOP],
+    ["FAQ", "/fr/faq", "Questions sur GoldScout", TOP],
 ]
 
 
@@ -1299,6 +1605,139 @@ borren tus datos por completo, consulta la <a href="%(privacy)s" lang="en">polí
     return ("Clasificación de colaboradores",
             "Los jugadores de GoldScout que más datos de botín han compartido, ordenados por sus muertes en los datos "
             "de la comunidad.", body)
+
+
+def leaderboard_page_fr():
+    """/fr/leaderboard: leaderboard_page() in French (site/leaderboard.js fills the table in, in French)."""
+    body = """<h1>Classement des contributeurs</h1>
+<p class="summary">Chaque taux de butin de GoldScout vient de joueurs qui partagent leur butin. Voici les joueurs qui
+ont le plus partagé, classés selon leurs victimes qui comptent dans les données de la communauté.</p>
+<p class="small" id="leaderboard-status">Chargement du classement...</p>
+<table id="leaderboard" hidden>
+<thead><tr><th class="num">Rang</th><th>Contributeur</th><th class="num">Victimes</th><th class="num">Monstres</th></tr></thead>
+<tbody></tbody>
+</table>
+<noscript><p class="small">Le classement a besoin de JavaScript.</p></noscript>
+
+<div class="faq">
+<h2>Comment ça marche</h2>
+<h3>Qui y figure ?</h3>
+<p>Tous ceux qui partagent des données de butin avec <a href="/fr/companion">GoldScout Companion</a> ou la
+<a href="/fr/share">page de partage</a> sont classés, et tous sont anonymes sauf s'ils choisissent le contraire. La page
+de chaque zone montre aussi ses champions : les trois joueurs avec le plus de victimes là-bas.</p>
+<h3>Comment y mettre mon nom ?</h3>
+<p>Dans GoldScout Companion, appuyez sur <b>Leaderboard...</b> sous <span lang="en">Your data</span> et cochez <b>Show
+me on the public leaderboard and zone pages</b>. Si vous partagez sur la <a href="/fr/share">page de partage</a>, le
+même choix y apparaît après le partage. Vous apparaissez sous un nom inventé par GoldScout, ou sous un nom à vous une
+fois qu'il est approuvé. Seule votre copie de Companion, ou le navigateur depuis lequel vous avez partagé, peut modifier
+votre entrée. Avec Companion, votre rang s'affiche aussi sur le bouton de la minicarte de GoldScout.</p>
+<h3>Qu'est-ce qui compte ?</h3>
+<p>Les victimes qui sont dans les données de la communauté : votre exportation doit passer les vérifications et, comme
+dans les données elles-mêmes, au plus 1 000 victimes d'un même monstre comptent par joueur. Le classement est mis à
+jour toutes les heures.</p>
+<h3>Puis-je en sortir ?</h3>
+<p>Décochez <b>Show me on the public leaderboard and zone pages</b> quand vous voulez et vous redevenez anonyme. Pour
+faire supprimer toutes vos données, voir la <a href="%(privacy)s" lang="en">politique de confidentialité</a> (en
+anglais).</p>
+</div>
+<script src="/leaderboard.js" defer></script>
+""" % LINKS
+    return ("Classement des contributeurs",
+            "Les joueurs de GoldScout qui ont partagé le plus de données de butin, classés selon leurs victimes dans "
+            "les données de la communauté.", body)
+
+
+SUPPORT = {
+    "en": ("Support GoldScout",
+           "How GoldScout is paid for, and how to help: sponsor it on GitHub or share your loot data.",
+           """<h1>Support GoldScout</h1>
+<p class="summary">GoldScout is a fan project, built and run in spare time. The addon, the companion and this site
+are the same for everyone, and nothing is held back for supporters. If GoldScout has helped you earn gold and you'd
+like to help cover what it costs to run, you can sponsor it on GitHub.</p>
+<p><a class="btn primary" href="%(sponsor)s">Sponsor GoldScout on GitHub</a></p>
+<div class="faq">
+<h2>Where the money goes</h2>
+<p>Hosting for this site and the data server, the code signing that lets Windows and macOS show who published
+GoldScout Companion, and the Apple developer account. Anything beyond that goes back into GoldScout as time.</p>
+<h2>What supporters get</h2>
+<p>Thanks. No features, data or early access are held back for supporters: every player gets the same GoldScout,
+and GoldScout never asks for money in the game.</p>
+<h2>Other ways to help</h2>
+<p>Share your loot data with <a href="/companion">GoldScout Companion</a> or on the <a href="/share">share page</a>:
+every kill makes the drop rates more accurate. Tell your guild, rate GoldScout on
+<a href="%(curseforge)s">CurseForge</a>, or bring bugs and ideas to <a href="%(discord)s">Discord</a>.</p>
+</div>"""),
+    "de": ("GoldScout unterstützen",
+           "Wie GoldScout finanziert wird und wie du helfen kannst: auf GitHub sponsern oder Dropdaten teilen.",
+           """<h1>GoldScout unterstützen</h1>
+<p class="summary">GoldScout ist ein Fanprojekt, das in der Freizeit entsteht. Addon, Companion und diese Website
+sind für alle gleich, und nichts bleibt Unterstützern vorbehalten. Wenn dir GoldScout beim Goldverdienen geholfen
+hat und du die laufenden Kosten mittragen möchtest, kannst du GoldScout auf GitHub sponsern.</p>
+<p><a class="btn primary" href="%(sponsor)s">GoldScout auf GitHub sponsern</a></p>
+<div class="faq">
+<h2>Wohin das Geld geht</h2>
+<p>Hosting für diese Website und den Datenserver, die Codesignatur, mit der Windows und macOS zeigen, wer GoldScout
+Companion veröffentlicht hat, und das Apple-Entwicklerkonto. Was darüber hinausgeht, fließt als Zeit zurück in
+GoldScout.</p>
+<h2>Was Unterstützer bekommen</h2>
+<p>Unseren Dank. Keine Funktionen, Daten oder früheren Zugang: Alle Spieler bekommen dasselbe GoldScout, und im
+Spiel bittet GoldScout nie um Geld.</p>
+<h2>Andere Wege zu helfen</h2>
+<p>Teile deine Dropdaten mit <a href="/de/companion">GoldScout Companion</a> oder auf der Seite
+<a href="/de/share">Daten teilen</a>: Jeder Kill macht die Dropraten genauer. Erzähl deiner Gilde davon, bewerte
+GoldScout auf <a href="%(curseforge)s">CurseForge</a> oder bring Fehler und Ideen in den
+<a href="%(discord)s">Discord</a>.</p>
+</div>"""),
+    "es": ("Apoyar GoldScout",
+           "Cómo se financia GoldScout y cómo ayudar: patrocínalo en GitHub o comparte tus datos de botín.",
+           """<h1>Apoyar GoldScout</h1>
+<p class="summary">GoldScout es un proyecto de fans que se hace en el tiempo libre. El accesorio, Companion y esta web
+son iguales para todos, y no se reserva nada para quienes lo apoyan. Si GoldScout te ha ayudado a ganar oro y quieres
+ayudar a cubrir lo que cuesta mantenerlo, puedes patrocinarlo en GitHub.</p>
+<p><a class="btn primary" href="%(sponsor)s">Patrocinar GoldScout en GitHub</a></p>
+<div class="faq">
+<h2>A dónde va el dinero</h2>
+<p>El alojamiento de esta web y del servidor de datos, la firma de código con la que Windows y macOS muestran quién
+publica GoldScout Companion, y la cuenta de desarrollador de Apple. Lo que sobre vuelve a GoldScout en forma de
+tiempo.</p>
+<h2>Qué reciben quienes lo apoyan</h2>
+<p>Nuestro agradecimiento. Ni funciones, ni datos, ni acceso anticipado: todos los jugadores tienen el mismo
+GoldScout, y GoldScout nunca pide dinero dentro del juego.</p>
+<h2>Otras formas de ayudar</h2>
+<p>Comparte tus datos de botín con <a href="/es/companion">GoldScout Companion</a> o en la página
+<a href="/es/share">Compartir datos</a>: cada muerte hace más precisas las tasas de botín. Cuéntaselo a tu hermandad,
+valora GoldScout en <a href="%(curseforge)s">CurseForge</a> o lleva errores e ideas a
+<a href="%(discord)s">Discord</a>.</p>
+</div>"""),
+    "fr": ("Soutenir GoldScout",
+           "Comment GoldScout est financé, et comment aider : le sponsoriser sur GitHub ou partager vos données de "
+           "butin.",
+           """<h1>Soutenir GoldScout</h1>
+<p class="summary">GoldScout est un projet de fans, construit et maintenu sur du temps libre. L'addon, Companion et ce
+site sont les mêmes pour tout le monde, et rien n'est réservé à ceux qui le soutiennent. Si GoldScout vous a aidé à
+gagner de l'or et que vous voulez aider à couvrir ce qu'il coûte, vous pouvez le sponsoriser sur GitHub.</p>
+<p><a class="btn primary" href="%(sponsor)s">Sponsoriser GoldScout sur GitHub</a></p>
+<div class="faq">
+<h2>Où va l'argent</h2>
+<p>L'hébergement de ce site et du serveur de données, la signature du code qui permet à Windows et macOS de montrer qui
+publie GoldScout Companion, et le compte développeur Apple. Le reste retourne à GoldScout sous forme de temps.</p>
+<h2>Ce que reçoivent ceux qui le soutiennent</h2>
+<p>Nos remerciements. Ni fonctions, ni données, ni accès anticipé : tous les joueurs ont le même GoldScout, et GoldScout
+ne demande jamais d'argent en jeu.</p>
+<h2>D'autres façons d'aider</h2>
+<p>Partagez vos données de butin avec <a href="/fr/companion">GoldScout Companion</a> ou sur la
+<a href="/fr/share">page de partage</a> : chaque victime rend les taux de butin plus précis. Parlez-en à votre guilde,
+notez GoldScout sur <a href="%(curseforge)s">CurseForge</a>, ou apportez bugs et idées sur
+<a href="%(discord)s">Discord</a>.</p>
+</div>"""),
+}
+
+
+def support_page(lang="en"):
+    """(title, description, body) for /support, /de/support and /es/support: the GitHub Sponsors link. Only on the
+    site: Blizzard's add-on policy rules out asking for money in the game, so the addon never links here."""
+    title, description, body = SUPPORT[lang]
+    return title, description, body % LINKS
 
 
 def share_page():
@@ -1746,6 +2185,160 @@ incidencia pública con tu cuenta de GitHub.</p>
             "para WoW Forever.", body)
 
 
+def companion_page_fr(s):
+    """/fr/companion: companion_page() in French. Download links, privacy policy and terms stay the English
+    originals (marked lang="en" where the link text is English)."""
+    players = "%s joueurs" % format(s["contributors"], ",").replace(",", " ")
+    body = """<h1>GoldScout Companion</h1>
+<p class="summary">Une application pour Windows et Mac qui apporte les prix de l'hôtel des ventes dans GoldScout toutes
+les heures sans que vous ayez à analyser, et partage vos données de butin pour que l'onglet Farm de GoldScout continue
+de s'améliorer pour tous.</p>
+<p><a class="btn primary" href="%(companion)s">Télécharger pour Windows</a> <a class="btn primary" href="%(companion_mac)s">Télécharger pour Mac</a> <a class="btn" href="%(curseforge)s">Obtenir l'addon GoldScout</a></p>
+<p class="small">Signée numériquement · se met à jour toute seule · Windows, et Mac Apple silicon ou Intel · l'application est en anglais</p>
+
+<h2>Ce que vous obtenez</h2>
+<div class="grid">
+  <div class="card"><h3>Des prix toutes les heures</h3><p>L'instantané de l'hôtel des ventes de Blizzard pour votre
+    royaume et votre faction, enregistré pour GoldScout environ une fois par heure. Les listes Farm et Artisanat restent
+    à jour sans passer à l'hôtel des ventes, et vos propres analyses l'emportent toujours quand elles sont plus
+    récentes.</p></div>
+  <div class="card"><h3>Les prix des Eaux-Noires aussi</h3><p>Ce que coûtent les objets dans les hôtels des ventes
+    gobelins, sur une ligne de plus dans l'infobulle. Ils ne remplacent jamais les prix de votre propre faction.</p></div>
+  <div class="card"><h3>De meilleurs taux de butin pour tous</h3><p>Chaque monstre que vous fouillez apprend à
+    GoldScout ce qu'il donne vraiment. Companion le partage pour vous, pour que la prochaine mise à jour connaisse plus
+    de monstres, pour vous et pour tous les autres joueurs.</p></div>
+  <div class="card"><h3>Discrète</h3><p>Elle vit dans la zone de notification (sur Mac, dans le Dock), peut démarrer
+    à l'ouverture de session, n'apparaît jamais par-dessus le jeu et se met à jour en un clic.</p></div>
+</div>
+
+<h2>Pourquoi c'est important</h2>
+<p class="summary">GoldScout n'utilise aucune donnée de Wowhead ni d'ailleurs : chaque taux de butin vient de joueurs qui
+ramassent du butin en jeu. %(players)s ont partagé jusqu'ici. Chaque nouveau joueur complète des monstres et des zones
+que personne n'a encore enregistrés, et <a href="/fr/farms">les farms</a> deviennent plus précis à chaque victime. Les
+<a href="/fr/data-wanted">objectifs de la communauté</a> montrent où nous en sommes ; le
+<a href="/fr/leaderboard">classement</a> montre qui a le plus partagé. Vous y êtes anonyme sauf si vous choisissez un
+nom.</p>
+
+<h2>Prête en une minute</h2>
+<ol class="steps">
+  <li><b>Installez GoldScout</b> depuis <a href="%(curseforge)s">CurseForge</a> ou <a href="%(wago)s">Wago</a>, si ce n'est pas déjà fait.</li>
+  <li><b>Téléchargez l'application et ouvrez-la.</b> Sous Windows, rien à installer ; sur Mac, ouvrez le zip et
+    glissez GoldScout Companion dans Applications. Elle trouve seule votre dossier WoW Forever.</li>
+  <li><b>Décidez une fois.</b> Acceptez le partage automatique ou choisissez <span lang="en">Not now</span> et
+    utilisez-la seulement pour les prix.</li>
+  <li><b>Jouez.</b> GoldScout charge les nouveaux prix quand vous vous connectez ou tapez <code>/reload</code>, et sa
+    fenêtre propose <b>Charger les prix récents</b> dès qu'un instantané plus récent existe.</li>
+</ol>
+
+<div class="faq">
+<h2>Questions</h2>
+<h3>Touche-t-elle au jeu ?</h3>
+<p>Non. Elle lit le fichier de données sauvegardé de GoldScout et écrit un petit addon de données, GoldScout_Prices, que
+le jeu charge à la connexion comme n'importe quel addon. Elle ne lit ni ne modifie jamais le jeu en cours. Les prix de
+l'hôtel des ventes viennent de la Game Data API officielle de Blizzard.</p>
+<h3>Que partage-t-elle ?</h3>
+<p>Seulement les données de butin de GoldScout : identifiants de monstres et d'objets, nombre de victimes et de butins,
+niveaux et lieux où vous avez ramassé, plus un identifiant aléatoire. Jamais de noms de personnages, de comptes ni de
+royaumes. Voir la <a href="%(privacy)s" lang="en">Privacy Policy</a> et les
+<a href="%(terms)s" lang="en">Contributor Terms</a> (en anglais).</p>
+<h3>En ai-je besoin ?</h3>
+<p>Non. GoldScout fonctionne seul : analysez à l'hôtel des ventes et partagez avec <code>/gscout export</code> et la
+<a href="/fr/share">page de partage</a>. Companion fait les deux pour vous.</p>
+<h3>Interrompt-elle ma partie ?</h3>
+<p>Non. Sa seule notification annonce une nouvelle version, et elle attend que World of Warcraft soit fermé.</p>
+<h3>Est-elle sûre ?</h3>
+<p>Chaque version est signée numériquement (et sur Mac, vérifiée par Apple), donc votre ordinateur montre qui la publie,
+et l'application n'installe que des mises à jour signées de la même façon. Le code source est sur
+<a href="%(source)s">GitHub</a>.</p>
+<h3>Existe-t-il une version Mac ?</h3>
+<p>Oui, pour les Mac Apple silicon ou Intel : <a href="%(companion_mac)s">téléchargez-la</a>, ouvrez le zip et glissez
+GoldScout Companion dans Applications. Sur Mac, elle vit dans le Dock au lieu de la zone de notification, et
+<b>Settings</b>, dans sa fenêtre, regroupe le partage, les prix, <b>Open at login</b> et les mises à jour.</p>
+</div>
+<p class="small" style="margin-top:28px">Données de l'hôtel des ventes issues de la Game Data API de Blizzard
+Entertainment. GoldScout n'est ni affilié à Blizzard Entertainment ni approuvé par Blizzard.</p>
+""" % dict(LINKS, players=html.escape(players))
+    return ("GoldScout Companion : les prix de l'hôtel des ventes toutes les heures pour GoldScout",
+            "Une application pour Windows et Mac qui apporte les prix de l'hôtel des ventes dans l'addon GoldScout "
+            "toutes les heures sans analyse, et partage des données de butin pour que l'onglet Farm s'améliore pour "
+            "tous.", body)
+
+
+def share_page_fr():
+    """/fr/share: share_page() in French (site/share.js answers in French on <html lang="fr">)."""
+    body = """<h1>Partagez vos données de butin</h1>
+<p class="summary">Chaque taux de butin de GoldScout vient du butin des joueurs. Collez ici votre exportation GoldScout
+et elle rejoindra les données de la communauté à la prochaine mise à jour horaire, après les mêmes vérifications que
+tout le reste. Chaque victime fait avancer les <a href="/fr/data-wanted">objectifs de la communauté</a> et améliore les
+taux pour tous.</p>
+<p><a href="/fr/companion">GoldScout Companion</a> le fait tout seul chaque fois que vous quittez le jeu ou tapez
+<code>/reload</code>, et apporte aussi les prix de l'hôtel des ventes. Pas de Companion ? Cette page marche depuis
+n'importe quel navigateur.</p>
+
+<ol class="steps">
+  <li><b>Exportez.</b> En jeu, tapez <code>/gscout export</code>. GoldScout ouvre une fenêtre avec vos données, déjà
+  sélectionnées : appuyez sur <b>Ctrl+C</b> pour les copier.</li>
+  <li><b>Collez.</b> Collez-les ci-dessous, cochez les deux cases et appuyez sur <b>Partager</b>.</li>
+</ol>
+
+<form id="share-form" class="share-form" hidden>
+  <label for="share-export">Votre exportation /gscout</label>
+  <textarea id="share-export" name="export" rows="8" spellcheck="false" autocomplete="off"
+    placeholder="GoldScout-export 5^..."></textarea>
+  <label class="check"><input type="checkbox" name="mine"> J'ai rassemblé ces données moi-même, en jouant à World of
+  Warcraft avec GoldScout.</label>
+  <label class="check"><input type="checkbox" name="terms"> J'accepte les
+  <a href="%(terms)s" lang="en">GoldScout Contributor Terms</a> (en anglais), y compris la licence qu'elles accordent sur
+  ces données.</label>
+  <button class="btn primary" type="submit">Partager</button>
+  <p id="share-status" class="share-status" role="status" aria-live="polite"></p>
+</form>
+<section id="share-board" class="share-board" hidden>
+  <h2>Votre entrée dans le classement</h2>
+  <p id="board-rank" class="sub"></p>
+  <label class="check"><input type="checkbox" id="board-public"> M'afficher dans le classement public et sur les pages
+  de zones</label>
+  <label for="board-name">Nom (facultatif)</label>
+  <input id="board-name" type="text" maxlength="20" autocomplete="off" spellcheck="false">
+  <p class="small">Laissez vide et vous apparaîtrez sous un nom inventé par GoldScout, comme Patient Boar. Un nom à vous
+  apparaît dès qu'il est approuvé. Le nom de votre personnage ou de votre compte dirait aux autres qui vous êtes.
+  Décochez quand vous voulez pour redevenir anonyme.</p>
+  <button class="btn" type="button" id="board-save">Enregistrer</button>
+  <p id="board-status" class="share-status" role="status" aria-live="polite"></p>
+</section>
+<noscript><p class="small">Ce formulaire a besoin de JavaScript. Vous pouvez partager avec le
+<a href="%(share)s">formulaire GitHub</a> à la place.</p></noscript>
+
+<div class="faq">
+<h2>Questions</h2>
+<h3>Que contient l'exportation ?</h3>
+<p>Seulement des données de butin : identifiants de monstres et d'objets, nombre de victimes et de butins, niveaux et
+lieux où vous avez ramassé, plus un identifiant aléatoire pour les données GoldScout de votre compte WoW. Jamais de noms
+de personnages, de comptes ni de royaumes. Voir la <a href="%(privacy)s" lang="en">Privacy Policy</a> (en anglais).</p>
+<h3>Est-ce vérifié ?</h3>
+<p>Oui. Chaque exportation est vérifiée et, si certains de ses taux de butin s'écartent beaucoup de ce que voient les
+autres joueurs, elle attend qu'une personne la contrôle avant d'être utilisée. Les exportations acceptées sont gardées
+avec leur identifiant aléatoire dans le <a href="%(source)s">dépôt GitHub public</a>, comme celles de tout le monde.</p>
+<h3>Puis-je repartager plus tard ?</h3>
+<p>Oui, autant de fois que vous voulez : l'exportation la plus récente de vos données remplace la précédente. Ce
+navigateur retient une clé pour vos données, comme Companion, pour que lui seul puisse les mettre à jour. Si vous
+utilisez aussi Companion, elle partage déjà pour vous.</p>
+<h3>Puis-je afficher mon nom dans le classement ?</h3>
+<p>Tous ceux qui partagent figurent dans le <a href="/fr/leaderboard">classement</a> et sur les pages de zones,
+anonymes sauf s'ils choisissent le contraire. Après le partage, <b>Votre entrée dans le classement</b> apparaît sur
+cette page, dans ce navigateur : votre rang et si vous êtes affiché, sous un nom inventé par GoldScout ou sous un nom à
+vous.</p>
+<h3>Vous préférez GitHub ?</h3>
+<p>Le <a href="%(share)s">formulaire GitHub</a> marche toujours (en anglais). Il publie votre exportation comme un
+ticket public avec votre compte GitHub.</p>
+</div>
+<script src="/share.js" defer></script>
+""" % LINKS
+    return ("Partagez vos données de butin GoldScout",
+            "Collez votre exportation /gscout pour ajouter votre butin aux taux de butin de la communauté GoldScout "
+            "pour WoW Forever.", body)
+
+
 def main():
     if DIST.exists():
         shutil.rmtree(DIST)
@@ -1781,7 +2374,8 @@ def main():
     write("faq.html", *faq_page())
     write("leaderboard.html", *leaderboard_page())
     write("share.html", *share_page())
-    paths = ["/", "/companion", "/leaderboard", "/faq", "/share"] + data_pages.build(data, LINKS, write)
+    write("support.html", *support_page())
+    paths = ["/", "/companion", "/leaderboard", "/faq", "/share", "/support"] + data_pages.build(data, LINKS, write)
     write("search.html", *search_page(), index=False)   # results for one visitor's words: not for search engines
     index = data_pages.search_index(data) + STATIC_SEARCH
     (DIST / "search.json").write_text(json.dumps(index, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
@@ -1792,13 +2386,14 @@ def main():
     write_de("share.html", *share_page_de())
     write_de("leaderboard.html", *leaderboard_page_de())
     write_de("faq.html", *faq_page("de"))
+    write_de("support.html", *support_page("de"))
     data_pages.LANG = "de"
     try:
         s["targets_de"] = data_pages.grammar(data_pages.targets_section(data))
     finally:
         data_pages.LANG = "en"
     (DIST / "de" / "index.html").write_text(page_de(s), encoding="utf-8")
-    paths += ["/de/companion", "/de/share", "/de/leaderboard", "/de/faq", "/de/"]
+    paths += ["/de/companion", "/de/share", "/de/leaderboard", "/de/faq", "/de/support", "/de/"]
     data_pages.LANG = "de"
     try:
         index_de = data_pages.search_index(data) + STATIC_SEARCH_DE
@@ -1817,6 +2412,7 @@ def main():
     write_es("share.html", *share_page_es())
     write_es("leaderboard.html", *leaderboard_page_es())
     write_es("faq.html", *faq_page("es"))
+    write_es("support.html", *support_page("es"))
     data_pages.LANG = "es"
     try:
         s["targets_es"] = data_pages.grammar(data_pages.targets_section(data))
@@ -1824,8 +2420,30 @@ def main():
     finally:
         data_pages.LANG = "en"
     (DIST / "es" / "index.html").write_text(page_es(s), encoding="utf-8")
-    paths += ["/es/companion", "/es/share", "/es/leaderboard", "/es/faq", "/es/"]
+    paths += ["/es/companion", "/es/share", "/es/leaderboard", "/es/faq", "/es/support", "/es/"]
     (DIST / "search-es.json").write_text(json.dumps(index_es, ensure_ascii=False, separators=(",", ":")),
+                                         encoding="utf-8")
+
+    # French: the same again under /fr/, with names from French players.
+    def write_fr(relative, title, description, body, index=True):
+        write("fr/" + relative, title, description, body, index, "fr")
+
+    paths += ["/fr" + path for path in data_pages.build_language("fr", data, LINKS, write_fr)]
+    write_fr("search.html", *search_page_fr(), index=False)
+    write_fr("companion.html", *companion_page_fr(s))
+    write_fr("share.html", *share_page_fr())
+    write_fr("leaderboard.html", *leaderboard_page_fr())
+    write_fr("faq.html", *faq_page("fr"))
+    write_fr("support.html", *support_page("fr"))
+    data_pages.LANG = "fr"
+    try:
+        s["targets_fr"] = data_pages.grammar(data_pages.targets_section(data))
+        index_fr = data_pages.search_index(data) + STATIC_SEARCH_FR
+    finally:
+        data_pages.LANG = "en"
+    (DIST / "fr" / "index.html").write_text(page_fr(s), encoding="utf-8")
+    paths += ["/fr/companion", "/fr/share", "/fr/leaderboard", "/fr/faq", "/fr/support", "/fr/"]
+    (DIST / "search-fr.json").write_text(json.dumps(index_fr, ensure_ascii=False, separators=(",", ":")),
                                          encoding="utf-8")
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>',
                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']

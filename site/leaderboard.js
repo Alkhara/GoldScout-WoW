@@ -9,9 +9,10 @@
   if (!table || !status || !window.fetch) {
     return;
   }
-  // German and Spanish pages (<html lang="de"> under /de/, "es" under /es/) show their language; the rest English.
+  // German, Spanish and French pages (<html lang="de"> under /de/, "es" under /es/, "fr" under /fr/) show their
+  // language; the rest English.
   var LANG = document.documentElement.lang;
-  var LOCALE = { de: "de-DE", es: "es-ES" }[LANG] || "en-US";
+  var LOCALE = { de: "de-DE", es: "es-ES", fr: "fr-FR" }[LANG] || "en-US";
   var TEXT = {
     de: {
       anonymous: "Anonyme Mitwirkende",
@@ -32,6 +33,16 @@
       hours: "hace {n} horas",
       days: "hace {n} días",
       failed: "No se pudo cargar la clasificación ahora mismo. Inténtalo de nuevo en unos minutos."
+    },
+    fr: {
+      anonymous: "Contributeur anonyme",
+      empty: "Pas encore de scores. Ils apparaissent dans l'heure qui suit l'ajout des données partagées.",
+      summary: "{contributors} contributeurs ont partagé {kills} victimes qui comptent dans les données de la communauté.",
+      updated: " Mis à jour {ago}.",
+      minutes: "il y a {n}\u00a0min",
+      hours: "il y a {n}\u00a0h",
+      days: "il y a {n}\u00a0jours",
+      failed: "Le classement n'a pas pu être chargé. Réessayez dans quelques minutes."
     }
   }[LANG] || {
     anonymous: "Anonymous contributor",

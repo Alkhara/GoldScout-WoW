@@ -14,8 +14,8 @@
   var LAST = "goldscout-share-last";   // the install this browser shared most recently: its leaderboard entry
   // Leaderboard names, as the server checks them (server/src/leaderboard.js NAME).
   var NAME = /^[\p{L}\p{N}](?:[\p{L}\p{N} ._'-]{1,18})[\p{L}\p{N}]$/u;
-  // German and Spanish pages (<html lang="de"> under /de/, "es" under /es/) answer in their language;
-  // everything else in English.
+  // German, Spanish and French pages (<html lang="de"> under /de/, "es" under /es/, "fr" under /fr/) answer in
+  // their language; everything else in English.
   var TEXT = {de: {
     registered: "Danke! Deine Daten sind angekommen. Sie werden geprüft und fließen beim nächsten stündlichen Update " +
       "in die Gemeinschaftsdaten. Teile jederzeit wieder aus diesem Browser: Der neueste Export ersetzt den letzten.",
@@ -74,6 +74,37 @@
     saved: "Guardado.",
     badName: "Los nombres tienen de 3 a 20 letras, dígitos y espacios (y . _ ' -).",
     boardFailed: "No se pudo guardar ({status}). Inténtalo de nuevo en un momento.",
+    serverErrors: false   // the server's own messages are English: show ours
+  }, fr: {
+    registered: "Merci\u00a0! Vos données sont arrivées. Elles sont vérifiées et rejoignent les données de la " +
+      "communauté à la prochaine mise à jour horaire. Partagez à nouveau quand vous voulez depuis ce navigateur\u00a0: " +
+      "l'exportation la plus récente remplace la précédente.",
+    stored: "Merci\u00a0! Votre exportation plus récente est arrivée et remplace la précédente à la prochaine mise à " +
+      "jour horaire.",
+    unchanged: "Déjà partagée\u00a0: le serveur a déjà cette exportation. Jouez encore un peu et exportez à nouveau.",
+    noKey: " (Ce navigateur n'a pas pu garder la clé de vos données, alors partagez les nouvelles exportations avec " +
+      "GoldScout Companion ou le formulaire GitHub.)",
+    empty: "Collez d'abord votre exportation\u00a0: tapez /gscout export en jeu et copiez le texte.",
+    notExport: "Ce n'est pas une exportation GoldScout. En jeu, tapez /gscout export, appuyez sur Ctrl+C dans la " +
+      "fenêtre et collez tout ici.",
+    tooLarge: "Cette exportation est trop grande pour cette page. GoldScout Companion peut la partager.",
+    boxes: "Cochez les deux cases pour partager.",
+    sending: "Envoi...",
+    elsewhere: "Ces données sont déjà partagées depuis GoldScout Companion ou un autre navigateur, donc seul celui-ci " +
+      "peut les mettre à jour. Companion partage les nouvelles exportations tout seul\u00a0; ou utilisez le formulaire " +
+      "GitHub ci-dessous.",
+    failed: "Quelque chose s'est mal passé (%s). Réessayez dans quelques minutes.",
+    offline: "Impossible de joindre le serveur GoldScout. Vérifiez votre connexion et réessayez.",
+    tooOften: "Trop d'essais pour le moment. Réessayez dans quelques minutes.",
+    rank: "Votre rang\u00a0: n°\u00a0{rank} sur {of}, avec {kills} victimes comptées.",
+    rankNone: "Vos victimes comptent une fois dans les données de la communauté, en général dans la journée qui suit " +
+      "le partage.",
+    shown: " Vous êtes affiché publiquement sous le nom {name}",
+    until: ", jusqu'à l'approbation de {name}",
+    anonymous: " Vous êtes anonyme dans le classement public.",
+    saved: "Enregistré.",
+    badName: "Les noms ont de 3 à 20 lettres, chiffres et espaces (plus . _ ' -).",
+    boardFailed: "Impossible d'enregistrer ({status}). Réessayez dans un instant.",
     serverErrors: false   // the server's own messages are English: show ours
   }}[document.documentElement.lang] || {
     registered: "Thanks! Your data is in. It's checked and joins the community data at the next hourly update. " +
@@ -215,7 +246,7 @@
     var current = null;
 
     function number(n) {
-      return Number(n || 0).toLocaleString({ de: "de-DE", es: "es-ES" }[document.documentElement.lang] || "en-US");
+      return Number(n || 0).toLocaleString({ de: "de-DE", es: "es-ES", fr: "fr-FR" }[document.documentElement.lang] || "en-US");
     }
 
     function fill(info) {
