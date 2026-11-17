@@ -116,6 +116,7 @@ ns.AddLocale("koKR", {
   ["Profession"] = "전문 기술",
   ["Open the auction house to scan prices."] = "가격을 검색하려면 경매장을 여세요.",
   ["A scan is already running."] = "이미 검색 중입니다.",
+  ["Price scan paused while the Sell tab is open; it carries on when you leave it."] = "판매 탭이 열려 있는 동안 가격 스캔이 일시 중지됩니다. 탭을 나가면 계속됩니다.",
   ["The auction house stopped responding; saving what was received."] = "경매장이 응답하지 않습니다. 받은 내용까지 저장합니다.",
   ["%s: %d items priced."] = "%s: 아이템 %d개 가격 확인.",
   ["Scan complete"] = "검색 완료",

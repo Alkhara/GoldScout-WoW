@@ -115,6 +115,7 @@ ns.AddLocale("deDE", {
   ["Profession"] = "Beruf",
   ["Open the auction house to scan prices."] = "Öffne das Auktionshaus, um Preise zu scannen.",
   ["A scan is already running."] = "Ein Scan läuft bereits.",
+  ["Price scan paused while the Sell tab is open; it carries on when you leave it."] = "Preisscan pausiert, solange der Verkaufen-Tab offen ist; er geht weiter, sobald du ihn verlässt.",
   ["The auction house stopped responding; saving what was received."] = "Das Auktionshaus antwortet nicht mehr; das Empfangene wird gespeichert.",
   ["%s: %d items priced."] = "%s: %d Gegenstände bepreist.",
   ["Scan complete"] = "Scan abgeschlossen",

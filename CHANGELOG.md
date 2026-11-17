@@ -7,6 +7,8 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- Fixed a Lua error from Blizzard's Sell tab ("attempt to compare nil with number") when a price scan ran while an item sat in the Sell tab: the scan now pauses while the Sell tab is open and carries on when you leave it.
+
 ## v0.12.19
 
 - **Drop data for about 200 mobs is back:** v0.12.18 left out mobs recorded only by players who joined in the last few days. They're back, with everything shared since: drop rates for over 1,400 mobs.

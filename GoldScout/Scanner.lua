@@ -15,12 +15,55 @@ local PAGE_TIMEOUT = 20 -- seconds to wait for one page of results
 -- The auction house throttles requests; queue them until it is ready.
 local queue = {}
 
+-- Blizzard's Sell tab re-checks its Post button whenever any auction house
+-- request goes out (AUCTION_HOUSE_THROTTLED_MESSAGE_SENT), and errors while
+-- the item it holds has no deposit yet (Blizzard_AuctionHouseSellFrame.lua
+-- CanPostItem: "attempt to compare nil with number"). It only listens while
+-- shown, so scan requests wait while a Sell tab is open.
+local sellFrames
+local function SellTabOpen()
+  local ah = AuctionHouseFrame
+  if not ah then
+    return false
+  end
+  if not sellFrames then
+    sellFrames = {}
+    for _, key in ipairs({ "ItemSellFrame", "CommoditiesSellFrame" }) do
+      if type(ah[key]) == "table" then
+        sellFrames[#sellFrames + 1] = ah[key]
+      end
+    end
+    if #sellFrames == 0 then   -- other names on this client: whatever has the Sell tab's Post check
+      for _, child in ipairs({ ah:GetChildren() }) do
+        if type(child.CanPostItem) == "function" then
+          sellFrames[#sellFrames + 1] = child
+        end
+      end
+    end
+  end
+  for _, frame in ipairs(sellFrames) do
+    if frame:IsVisible() then
+      return true
+    end
+  end
+  return false
+end
+Scanner.SellTabOpen = SellTabOpen
+
 local function Pump()
   if #queue == 0 then
     return
   end
   if not Scanner.ahOpen then
     wipe(queue)
+    return
+  end
+  if SellTabOpen() then
+    local scan = Scanner.scan
+    if scan and not scan.pauseSaid then
+      scan.pauseSaid = true
+      ns.Print(L["Price scan paused while the Sell tab is open; it carries on when you leave it."])
+    end
     return
   end
   if C_AuctionHouse.IsThrottledMessageSystemReady() then

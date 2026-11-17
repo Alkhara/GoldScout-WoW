@@ -772,6 +772,48 @@ class HuntAreaTests(unittest.TestCase):
 
 
 @unittest.skipIf(lua51 is None, "lupa is not installed")
+class ScannerTests(unittest.TestCase):
+    """The price scan (Scanner.lua) and Blizzard's Sell tab, which errors when a request goes out while the
+    item it holds has no deposit yet: scan requests wait while it's open."""
+    setUp_farm = FarmRulesTests.setUp
+    run_lua, run_file = FarmRulesTests.run_lua, FarmRulesTests.run_file
+
+    def setUp(self):
+        self.setUp_farm()
+        self.run_lua("""local ns = ...
+          SENT, PRINTED, SELL_SHOWN = 0, {}, false
+          C_Timer.NewTicker = function(_, fn) TICK = fn return { Cancel = function() end } end
+          C_Timer.After = function() end                     -- no page timeouts here
+          wipe = wipe or function(t) for k in pairs(t) do t[k] = nil end return t end
+          C_AuctionHouse = { IsThrottledMessageSystemReady = function() return true end,
+            SendBrowseQuery = function() SENT = SENT + 1 end, RequestMoreBrowseResults = function() SENT = SENT + 1 end }
+          AuctionHouseFrame = { ItemSellFrame = { IsVisible = function() return SELL_SHOWN end } }
+          ns.Print = function(text) PRINTED[#PRINTED + 1] = text end""")
+        self.run_file("Scanner.lua")
+        self.g = self.lua.globals()
+
+    def test_requests_wait_while_the_sell_tab_is_open(self):
+        self.g.SELL_SHOWN = True
+        self.ns.Scanner.ahOpen = True
+        self.assertTrue(self.ns.Scanner.Start(self.ns.Scanner, "test"))
+        self.assertEqual(self.g.SENT, 0)                      # the first query waits
+        self.g.TICK()
+        self.g.TICK()
+        self.assertEqual(self.g.SENT, 0)
+        self.assertEqual(len(self.g.PRINTED), 1)             # said once
+        self.assertIn("Sell tab", self.g.PRINTED[1])
+        self.g.SELL_SHOWN = False                            # back to Browse: it carries on
+        self.g.TICK()
+        self.assertEqual(self.g.SENT, 1)
+
+    def test_no_sell_tab_no_wait(self):
+        self.ns.Scanner.ahOpen = True
+        self.ns.Scanner.Start(self.ns.Scanner, "test")
+        self.assertEqual(self.g.SENT, 1)
+        self.assertEqual(len(self.g.PRINTED), 0)
+
+
+@unittest.skipIf(lua51 is None, "lupa is not installed")
 class ContributorRankTests(unittest.TestCase):
     """The minimap tooltip's leaderboard line, from what GoldScout Companion wrote into GoldScout_Prices."""
     setUp = FarmRulesTests.setUp

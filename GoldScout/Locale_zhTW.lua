@@ -116,6 +116,7 @@ ns.AddLocale("zhTW", {
   ["Profession"] = "專業技能",
   ["Open the auction house to scan prices."] = "請開啟拍賣場以掃描價格。",
   ["A scan is already running."] = "掃描已在進行中。",
+  ["Price scan paused while the Sell tab is open; it carries on when you leave it."] = "販售分頁開著時，價格掃描會暫停；離開該分頁後會繼續。",
   ["The auction house stopped responding; saving what was received."] = "拍賣場停止回應；儲存已收到的資料。",
   ["%s: %d items priced."] = "%s：已取得 %d 件物品價格。",
   ["Scan complete"] = "掃描完成",
