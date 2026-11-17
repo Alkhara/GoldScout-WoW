@@ -1,4 +1,4 @@
-GoldScout-export 5^en2um1c4pjh6^6
+GoldScout-export 5^en2um1c4pjh6^8
 95^12^0^11^12^1436^0.4826^0.4637^12^Defias Smuggler^858:1:1,1510:1:1,2589:5:11,7997:1:1^
 430^1^0^18^19^1433^0.2296^0.3230^1^Redridge Mystic^2589:1:1^
 441^1^0^17^18^1433^0.5205^0.7347^1^Black Dragon Whelp^9779:1:1^
@@ -18,12 +18,16 @@ GoldScout-export 5^en2um1c4pjh6^6
 824^1^0^15^16^1415^0.4113^0.7950^1^Defias Digger^2455:1:1,2836:1:5^
 1018^2^0^27^28^1437^0.7012^0.3251^2^Highland Razormaw^1697:1:1,3685:1:1^
 1019^4^0^29^29^1437^0.6995^0.2986^4^Elder Razormaw^1696:1:1,1697:1:1,3685:3:3^
+1024^10^0^20^21^1437^0.1440^0.4056^10^Bluegill Murloc^730:4:4,1468:2:2,3376:1:1,5524:1:1,5784:3:3,9776:1:1,17057:2:2^
+1025^4^0^21^22^1437^0.1411^0.3930^4^Bluegill Puddlejumper^730:2:2,1468:2:2,5784:3:3,17057:1:1,248684:1:1^
 1051^9^0^27^28^1437^0.5249^0.1935^9^Dark Iron Dwarf^1529:1:1,2592:1:2,4306:2:3^
 1052^6^0^28^29^1437^0.5166^0.1882^6^Dark Iron Saboteur^1205:1:1,1780:1:1,1831:1:1,2222:1:1,2785:1:1,4306:1:1^
 1053^5^0^29^30^1437^0.5492^0.2146^5^Dark Iron Tunneler^1760:1:1,1831:1:1,2222:1:1,4306:2:4,211784:1:1^
 1054^2^0^30^31^1437^0.6136^0.2553^2^Dark Iron Demolitionist^1805:1:1^
 1069^1^0^25^26^1437^0.6144^0.3108^1^Crimson Whelp^^
+1259^1^0^22^22^1437^0.1592^0.4008^1^Gobbler^3618:1:1,17057:1:1^
 1364^2^0^34^34^1437^0.5421^0.1991^2^Balgaras the Foul^3796:1:1^
+1417^13^0^21^22^1437^0.0634^0.5527^13^Young Wetlands Crocolisk^770:7:7,3397:6:6,3667:7:7^
 1725^1^0^0^0^0^0.0000^0.0000^0^^2589:1:4^
 1729^1^0^0^0^0^0.0000^0.0000^0^^^
 1731^4^0^0^0^0^0.0000^0.0000^0^^2592:1:3^
@@ -55,10 +59,13 @@ GoldScout-export 5^en2um1c4pjh6^6
 271462^1^0^32^32^1437^0.6762^0.7187^1^Golm^5741:1:3,248689:1:1^
 272389^29^0^34^36^1416^0.2973^0.3851^29^Marsh Owl^5116:5:5,5829:8:8,11418:3:3,12207:10:10,17056:8:8,248690:1:1^
 @i^414^Dalaran Sharp
+@i^730^Murloc Eye
+@i^770^Pointy Crocolisk Tooth
 @i^857^Large Red Sack
 @i^858^Lesser Healing Potion
 @i^1081^Crisp Spider Meat
 @i^1205^Melon Juice
+@i^1468^Murloc Fin
 @i^1510^Heavy Hammer
 @i^1529^Jade
 @i^1686^Bristly Whisker
@@ -86,6 +93,10 @@ GoldScout-export 5^en2um1c4pjh6^6
 @i^2785^Stiff Recurve Bow
 @i^2836^Coarse Stone
 @i^2940^Bloody Bear Paw
+@i^3376^Canvas Belt
+@i^3397^Young Crocolisk Skin
+@i^3618^Gobbler's Head
+@i^3667^Tender Crocolisk Meat
 @i^3685^Raptor Egg
 @i^3712^Turtle Meat
 @i^3731^Lion Meat
@@ -106,24 +117,31 @@ GoldScout-export 5^en2um1c4pjh6^6
 @i^5637^Large Fang
 @i^5734^Super Reaper 6000 Blueprints
 @i^5741^Rock Chip
+@i^5784^Slimy Murloc Scale
 @i^5808^Pridewing Venom Sac
 @i^5829^Razor-sharp Beak
 @i^6308^Raw Bristle Whisker Catfish
 @i^7997^Red Defias Mask
+@i^9776^Bandit Boots of Nature's Wrath
 @i^9779^Bandit Cloak of Shadow Wrath
 @i^11418^Hollow Wing Bone
 @i^12207^Giant Egg
 @i^14564^Prospector's Mitts
 @i^15248^Gleaming Claymore of the Wolf
 @i^17056^Light Feather
+@i^17057^Shiny Fish Scales
 @i^211784^Scroll: WUBBA WUBBA
+@i^248684^Waylaid Crate: Apprentice Textiles
 @i^248689^Waylaid Crate: Journeyman Curiosities
 @i^248690^Waylaid Crate: Earthly Expert Herbs
 @q^414^1:0:0
+@q^730^1:7:1
+@q^770^0:15:0
 @q^857^1:1:0
 @q^858^1:0:0
 @q^1081^1:7:1
 @q^1205^1:0:0
+@q^1468^1:7:1
 @q^1510^0:2:0
 @q^1529^2:7:1
 @q^1686^0:15:0
@@ -151,6 +169,10 @@ GoldScout-export 5^en2um1c4pjh6^6
 @q^2785^0:2:0
 @q^2836^1:7:1
 @q^2940^0:15:0
+@q^3376^0:4:0
+@q^3397^1:12:0
+@q^3618^1:12:0
+@q^3667^1:7:1
 @q^3685^1:7:1
 @q^3712^1:7:1
 @q^3731^1:7:1
@@ -171,17 +193,21 @@ GoldScout-export 5^en2um1c4pjh6^6
 @q^5637^1:7:1
 @q^5734^1:12:0
 @q^5741^0:15:0
+@q^5784^1:7:1
 @q^5808^1:12:0
 @q^5829^0:15:0
 @q^6308^1:7:1
 @q^7997^0:4:0
+@q^9776^2:4:0
 @q^9779^2:4:0
 @q^11418^0:15:0
 @q^12207^1:7:1
 @q^14564^2:4:0
 @q^15248^2:2:0
 @q^17056^1:15:1
+@q^17057^1:15:0
 @q^211784^1:0:0
+@q^248684^1:0:1
 @q^248689^1:0:1
 @q^248690^1:0:1
 @m^1415^Eastern Kingdoms
@@ -1352,12 +1378,16 @@ GoldScout-export 5^en2um1c4pjh6^6
 @a^824^308:1
 @a^1018^133:1,134:1
 @a^1019^113:2,114:1,134:1
+@a^1024^142:2,143:2,162:4,163:2
+@a^1025^142:3,162:1
 @a^1051^69:5,70:1,91:1,92:1,112:1
 @a^1052^69:4,92:2
 @a^1053^69:2,91:1,92:1,112:1
 @a^1054^92:1,112:1
 @a^1069^132:1
+@a^1259^163:1
 @a^1364^49:1,112:1
+@a^1417^161:1,181:5,201:1,220:1,240:2,241:1,260:2
 @a^2243^69:2
 @a^2252^128:2,129:1
 @a^2253^128:1,129:2,150:1
