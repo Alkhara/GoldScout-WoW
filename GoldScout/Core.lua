@@ -35,6 +35,7 @@ local DEFAULT_SETTINGS = {
   learnDrops = true,      -- learn drop rates from what you loot
   unitTooltips = true,    -- add farm info to mob tooltips
   minimap = true,         -- show the minimap button
+  bagCoins = true,        -- a coin on bag items worth listing on the auction house (Bags.lua)
   minimapAngle = 200,     -- where the minimap button sits around the minimap, in degrees
   companionHint = true,   -- Farm tab companion tip: true until shared, "always", or false once hidden
 }

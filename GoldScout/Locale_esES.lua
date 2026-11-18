@@ -236,7 +236,7 @@ local strings = {
   ["  /gscout errors - list GoldScout's recent errors; /gscout errors clear"] = "  /gscout errors - ver los errores recientes de GoldScout; /gscout errors clear",
   ["  /gscout skills - show the skills and recipes GoldScout knows"] = "  /gscout skills - ver las habilidades y recetas que conoce GoldScout",
   ["  /gscout set kills|nodes|picks|catches <number> - your rates per hour"] = "  /gscout set kills|nodes|picks|catches <número> - tus ritmos por hora",
-  ["  /gscout set autoscan|tooltip|window|waypoint|markers|map|learn|mobtips|raredrops|cloth|allloot|minimap on|off"] = "  /gscout set autoscan|tooltip|window|waypoint|markers|map|learn|mobtips|raredrops|cloth|allloot|minimap on|off",
+  ["  /gscout set autoscan|tooltip|window|waypoint|markers|map|learn|mobtips|raredrops|cloth|allloot|bagcoins|minimap on|off"] = "  /gscout set autoscan|tooltip|window|waypoint|markers|map|learn|mobtips|raredrops|cloth|allloot|bagcoins|minimap on|off",
   ["  /gscout reset prices | drops - forget saved prices or learned drop rates"] = "  /gscout reset prices | drops - olvidar los precios guardados o las tasas aprendidas",
   ["No hunt is running."] = "No hay ninguna caza en curso.",
   ["No finished hunts yet (hunts under a minute aren't saved)."] = "Aún no hay cazas terminadas (las de menos de un minuto no se guardan).",
@@ -246,7 +246,7 @@ local strings = {
   ["%s: %d recipes learned (read %s)."] = "%s: %d recetas aprendidas (leído %s).",
   ["The Farm tab shows the companion tip again."] = "La pestaña Farmear vuelve a mostrar el consejo de Companion.",
   ["Companion tip hidden."] = "Consejo de Companion oculto.",
-  ["Usage: /gscout set kills|nodes|picks|catches <number>, or /gscout set autoscan|tooltip|blackwater|window|waypoint|markers|map|learn|mobtips|raredrops|cloth|allloot|minimap|companionhint on|off"] = "Uso: /gscout set kills|nodes|picks|catches <número>, o /gscout set autoscan|tooltip|blackwater|window|waypoint|markers|map|learn|mobtips|raredrops|cloth|allloot|minimap|companionhint on|off",
+  ["Usage: /gscout set kills|nodes|picks|catches <number>, or /gscout set autoscan|tooltip|blackwater|window|waypoint|markers|map|learn|mobtips|raredrops|cloth|allloot|bagcoins|minimap|companionhint on|off"] = "Uso: /gscout set kills|nodes|picks|catches <número>, o /gscout set autoscan|tooltip|blackwater|window|waypoint|markers|map|learn|mobtips|raredrops|cloth|allloot|bagcoins|minimap|companionhint on|off",
   ["Please give a number above zero."] = "Indica un número mayor que cero.",
   ["%s is now %s."] = "%s ahora está en %s.",
   ["Still loading; try again in a moment."] = "Aún cargando; inténtalo de nuevo en un momento.",
@@ -386,6 +386,10 @@ local strings = {
   ["Target a mob first, then try again."] = "Selecciona primero un enemigo como objetivo y vuelve a intentarlo.",
   ["Drop rates"] = "Tasas de botín",
   ["  /gscout drops - everything your target drops (or right-click its portrait)"] = "  /gscout drops - todo lo que suelta tu objetivo (o clic derecho en su retrato)",
+  ["GoldScout: vendors won't buy it, but it sells on the auction house. List it."] = "GoldScout: los vendedores no lo compran, pero se vende en la casa de subastas. Ponlo a la venta.",
+  ["GoldScout: worth %s each on the auction house, %s at a vendor. List it."] = "GoldScout: vale %s cada uno en la casa de subastas, %s en un vendedor. Ponlo a la venta.",
+  ["Mark bag items worth listing on the auction house"] = "Marcar objetos de las bolsas que conviene vender en la casa de subastas",
+  ["A gold coin on crafting reagents and green or better items that sell for at least double their vendor price on your auction house, after the cut. Needs your own prices: a scan, or GoldScout Companion."] = "Una moneda de oro en los materiales de artesanía y objetos verdes o mejores que se venden al menos por el doble de su precio de vendedor en tu casa de subastas, tras la comisión. Necesita tus propios precios: un escaneo o GoldScout Companion.",
 }
 ns.AddLocale("esES", strings)
 ns.AddLocale("esMX", strings)

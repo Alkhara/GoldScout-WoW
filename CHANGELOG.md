@@ -7,6 +7,8 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- **A gold coin on bag items worth listing:** crafting reagents and green or better items that sell for at least double their vendor price on your auction house, after the cut, get a small gold coin in your bags (Blizzard's bags and Bagnon), and their tooltip says what they're worth on each. Gray junk, quest items and bound items never do. It needs your own realm's prices, from a scan or GoldScout Companion. Turn it off in Settings › Interface, or with `/gscout set bagcoins off`.
+
 ## v0.12.27
 
 - **Sharing survives a new PC:** after moving your game to a new PC or reinstalling Windows, GoldScout Companion could stop sharing with "This GoldScout data is registered to another copy of the companion", because the key it shares with stayed on the old PC. GoldScout now keeps a private recovery key in its saved data (never in your exports), and the companion uses it to get a new sharing key on its own. It protects you from your first share with this version of GoldScout and the companion.
