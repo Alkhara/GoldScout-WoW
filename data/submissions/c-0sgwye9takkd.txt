@@ -1,4 +1,4 @@
-GoldScout-export 5^0sgwye9takkd^5
+GoldScout-export 5^0sgwye9takkd^6
 232^1^0^23^23^1424^0.3328^0.3861^1^Farmer Ray^1485:1:1,4538:1:1^
 2265^3^0^24^25^1424^0.3317^0.4437^3^Hillsbrad Apprentice Blacksmith^2592:1:1,3692:1:1^
 2266^3^0^23^24^1424^0.3494^0.4073^3^Hillsbrad Farmer^1485:1:1,2592:1:1,3692:1:1^
@@ -8,6 +8,10 @@ GoldScout-export 5^0sgwye9takkd^5
 2451^1^0^25^25^1424^0.3546^0.4674^1^Farmer Kalaba^^
 2529^3^0^0^0^0^0.0000^0.0000^0^^^
 3717^1^0^18^19^1440^0.1404^0.1531^1^Wrathtail Sorceress^^
+3809^6^0^21^22^1440^0.4422^0.6050^6^Ashenvale Bear^3730:2:2,5635:1:1,11406:4:4,11407:1:1^
+3817^5^0^22^23^1440^0.4861^0.6345^5^Shadowhorn Stag^5471:4:4,5566:2:2,5871:1:1,15211:1:1,252804:1:1^
+3824^1^0^23^24^1440^0.5868^0.6802^1^Ghostpaw Howler^1015:1:1^
+3844^4^0^23^24^1440^0.4031^0.3275^4^Healing Ward IV^^
 3851^2^0^0^0^0^0.0000^0.0000^0^^^
 3853^2^0^0^0^0^0.0000^0.0000^0^^3770:1:1^
 3855^3^0^0^0^0^0.0000^0.0000^0^^2981:1:1^
@@ -22,6 +26,12 @@ GoldScout-export 5^0sgwye9takkd^5
 3877^6^0^0^0^0^0.0000^0.0000^0^^1752:1:1,2589:1:5,2592:2:6,248685:1:1,248686:1:1^
 3886^2^0^0^0^0^0.0000^0.0000^0^^6226:1:1^
 3917^1^0^23^25^1440^0.5097^0.6823^1^Befouled Water Elemental^16652:1:1^
+3921^10^0^23^24^1440^0.3996^0.3226^10^Thistlefur Ursa^1205:1:1,2589:2:5,2592:1:2,15122:1:1,16652:1:1^
+3922^5^0^23^24^1440^0.4048^0.3307^5^Thistlefur Totemic^2592:2:3,16655:1:1^
+3924^12^0^23^24^1440^0.3371^0.3904^12^Thistlefur Shaman^2592:2:4,4306:2:2,16653:1:1,262888:1:1^
+3925^9^0^23^24^1440^0.3485^0.3781^9^Thistlefur Avenger^1478:1:1,1748:1:1,2592:2:4,4306:3:3,12992:1:1^
+3926^4^0^23^24^1440^0.3493^0.3849^4^Thistlefur Pathfinder^4306:1:1,16646:2:2^
+4054^1^0^24^24^1440^0.5822^0.5556^1^Laughing Sister^2592:1:1,16646:1:1^
 4274^1^0^0^0^0^0.0000^0.0000^0^^3301:1:1^
 4275^1^0^0^0^0^0.0000^0.0000^0^^5442:1:1^
 4278^1^0^0^0^0^0.0000^0.0000^0^^^
@@ -42,6 +52,7 @@ GoldScout-export 5^0sgwye9takkd^5
 4832^1^0^0^0^0^0.0000^0.0000^0^^5881:1:1^
 6243^1^0^0^0^0^0.0000^0.0000^0^^^
 12676^1^0^31^31^1440^0.7577^0.6998^1^Sharptalon^16305:1:1^
+12678^1^0^25^25^1440^0.4122^0.6687^1^Ursangous^3730:1:1,16303:1:1^
 12759^1^0^27^27^1440^0.4854^0.6933^1^Tideress^16408:1:1^
 12856^2^0^23^24^1440^0.7453^0.7069^2^Ashenvale Outrunner^^
 12876^1^0^0^0^0^0.0000^0.0000^0^^16782:1:1^
@@ -51,8 +62,11 @@ GoldScout-export 5^0sgwye9takkd^5
 @i^730^Murloc Eye
 @i^929^Healing Potion
 @i^1015^Lean Wolf Flank
+@i^1205^Melon Juice
 @i^1468^Murloc Fin
+@i^1478^Scroll of Protection II
 @i^1485^Pitchfork
+@i^1748^Linked Chain Bracers
 @i^1752^Linked Chain Shoulderpads
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
@@ -63,30 +77,49 @@ GoldScout-export 5^0sgwye9takkd^5
 @i^3301^Sharp Canine
 @i^3402^Soft Patch of Fur
 @i^3692^Hillsbrad Human Skull
+@i^3730^Big Bear Meat
 @i^3770^Mutton Chop
+@i^4306^Silk Cloth
 @i^4538^Snapvine Watermelon
 @i^4555^Thick Scaly Tail
 @i^5442^Head of Arugal
+@i^5471^Stag Meat
 @i^5524^Thick-shelled Clam
+@i^5566^Broken Antler
+@i^5635^Sharp Claw
 @i^5784^Slimy Murloc Scale
 @i^5871^Large Hoof
 @i^5881^Head of Kelris
 @i^6226^Bloody Apron
 @i^6308^Raw Bristle Whisker Catfish
+@i^11406^Rotting Bear Carcass
+@i^11407^Torn Bear Pelt
+@i^12992^Searing Blade
 @i^14742^Hulking Boots
+@i^15122^Robust Bracers of Nature Protection
+@i^15211^Militant Shortsword of the Eagle
+@i^16303^Ursangous's Paw
 @i^16305^Sharptalon's Claw
 @i^16408^Befouled Water Globe
+@i^16646^Shredder Operating Manual - Page 2
 @i^16652^Shredder Operating Manual - Page 8
+@i^16653^Shredder Operating Manual - Page 9
+@i^16655^Shredder Operating Manual - Page 11
 @i^16782^Strange Water Globe
 @i^16790^Damp Note
 @i^17057^Shiny Fish Scales
 @i^248685^Waylaid Crate: Apprentice Curiosities
 @i^248686^Waylaid Crate: Journeyman Herbs
+@i^252804^Pattern: Hillman's Leather Boots
+@i^262888^Sealed Journeyman's Writ
 @q^730^1:7:1
 @q^929^1:0:0
 @q^1015^1:7:1
+@q^1205^1:0:0
 @q^1468^1:7:1
+@q^1478^1:0:0
 @q^1485^0:2:0
+@q^1748^0:4:0
 @q^1752^0:4:0
 @q^2589^1:7:1
 @q^2592^1:7:1
@@ -97,25 +130,41 @@ GoldScout-export 5^0sgwye9takkd^5
 @q^3301^0:15:0
 @q^3402^0:15:0
 @q^3692^1:12:0
+@q^3730^1:7:1
 @q^3770^1:0:0
+@q^4306^1:7:1
 @q^4538^1:0:0
 @q^4555^0:15:0
 @q^5442^1:12:0
+@q^5471^1:7:1
 @q^5524^1:7:0
+@q^5566^0:15:0
+@q^5635^1:7:1
 @q^5784^1:7:1
 @q^5871^0:15:0
 @q^5881^1:12:0
 @q^6226^3:4:0
 @q^6308^1:7:1
+@q^11406^0:15:0
+@q^11407^1:12:0
+@q^12992^3:2:0
 @q^14742^2:4:0
+@q^15122^2:4:0
+@q^15211^2:2:0
+@q^16303^2:12:0
 @q^16305^2:12:0
 @q^16408^2:12:0
+@q^16646^1:12:0
 @q^16652^1:12:0
+@q^16653^1:12:0
+@q^16655^1:12:0
 @q^16782^2:12:0
 @q^16790^1:15:0
 @q^17057^1:15:0
 @q^248685^1:0:1
 @q^248686^1:0:1
+@q^252804^2:9:0
+@q^262888^3:0:0
 @m^1414^Kalimdor
 @m^1424^Hillsbrad Foothills
 @m^1440^Ashenvale
@@ -280,10 +329,21 @@ GoldScout-export 5^0sgwye9takkd^5
 @a^2449^166:1
 @a^2451^187:1
 @a^3717^62:1
+@a^3809^166:1,249:3,268:1,269:1
+@a^3817^249:4,250:1
+@a^3824^271:1
+@a^3844^127:2,128:2
 @a^3917^270:1
+@a^3921^127:4,128:6
+@a^3922^127:1,128:4
+@a^3924^127:1,146:9,166:2
+@a^3925^128:1,146:6,147:2
+@a^3926^146:2,147:2
+@a^4054^231:1
 @a^4802^128:1,148:2
 @a^4803^128:1
 @a^12676^275:1
+@a^12678^268:1
 @a^12759^269:1
 @a^12856^274:1,294:1
 @a^12896^312:1

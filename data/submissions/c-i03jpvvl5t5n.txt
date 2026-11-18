@@ -1,31 +1,63 @@
-GoldScout-export 5^i03jpvvl5t5n^1
+GoldScout-export 5^i03jpvvl5t5n^2
 757^1^0^36^36^1435^0.5666^0.3130^1^Pescador Perdido^4338:1:1^
 760^1^0^36^36^1435^0.5583^0.3186^1^Habitabosta Perdido^4306:1:3^
 767^2^0^36^36^1435^0.4486^0.4384^2^Jaguar del pantano^1686:1:1,1688:1:1^
 1082^5^0^38^39^1435^0.5507^0.3585^5^Crocolisco Denteserra^770:5:5,3667:2:2,12037:1:1,262889:1:1^
+2336^11^0^16^17^1439^0.5679^0.2683^11^Fanática de la Facción Oscura^2589:4:7,2592:4:7^
+2337^8^0^28^29^1439^0.5621^0.2601^8^Clamavacío de la Facción Oscura^2592:1:2,4306:2:3^
+3660^1^0^31^31^1439^0.5616^0.2638^1^Athrikus Narassin^2592:1:2,5839:1:1^
+3662^1^0^17^17^1439^0.5674^0.2672^1^Delmanis el Odiado^2592:1:2^
+8996^8^0^28^36^1439^0.5622^0.2599^8^Esbirro abisario^^
 @i^770^Diente de crocolisco puntiagudo
 @i^1686^Bigote de cerdas
 @i^1688^Cola blanda larga
+@i^2589^Paño de lino
+@i^2592^Paño de lana
 @i^3667^Carne de crocolisco tierna
 @i^4306^Paño de seda
 @i^4338^Paño de tejido mágico
+@i^4603^Serviola moteada cruda
+@i^5839^Página de diario
+@i^6308^Siluro mostacherizo crudo
+@i^6358^Bocanegra graso
 @i^6359^Pargo de fuego
 @i^6362^Bacalao piedrescama crudo
+@i^8365^Trucha cabeza de mitril cruda
 @i^12037^Carne misteriosa
+@i^13758^Branquirrojo crudo
+@i^13759^Pargo nocturno crudo
+@i^13760^Salmón escama de sol crudo
+@i^16967^Ahi de Feralas
+@i^16968^Artillero Sar'theris
 @i^16970^Mahi mahi Juncobruma
 @i^262889^Libranza de experto lacrada
 @q^770^0:15:0
 @q^1686^0:15:0
 @q^1688^0:15:0
+@q^2589^1:7:1
+@q^2592^1:7:1
 @q^3667^1:7:1
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4603^1:7:1
+@q^5839^0:15:0
+@q^6308^1:7:1
+@q^6358^1:7:1
 @q^6359^1:7:1
 @q^6362^1:7:1
+@q^8365^1:7:1
 @q^12037^1:7:1
+@q^13758^1:7:1
+@q^13759^1:7:1
+@q^13760^1:7:1
+@q^16967^1:15:0
+@q^16968^1:12:0
 @q^16970^1:12:0
 @q^262889^3:0:0
 @m^1435^Pantano de las Penas
+@m^1439^Costa Oscura
+@m^1443^Desolace
+@m^1444^Feralas
 @c^118^
 @c^724^
 @c^733^
@@ -786,5 +818,12 @@ GoldScout-export 5^i03jpvvl5t5n^1
 @a^760^131:1
 @a^767^169:1,188:1
 @a^1082^132:2,150:2,169:1
+@a^2336^111:11
+@a^2337^111:8
+@a^3660^111:1
+@a^3662^111:1
+@a^8996^111:8
 @f^1435^0^5^225^6359:2:2,6362:3:3,16970:1:1^98:5
+@f^1443^0^13^225^4603:1:1,6308:2:2,6358:1:1,6359:1:1,6362:1:1,8365:7:7,16968:1:1^127:13
+@f^1444^0^21^225^6358:2:2,8365:1:1,13758:14:14,13759:2:2,13760:2:2,16967:1:1^212:21
 @l^0^esMX

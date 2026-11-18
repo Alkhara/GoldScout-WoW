@@ -1,4 +1,4 @@
-GoldScout-export 5^qbrgnhdry5lj^10
+GoldScout-export 5^qbrgnhdry5lj^11
 1520^1^0^6^6^1420^0.4604^0.3646^1^Rattlecage Soldier^118:1:1,3162:1:1^
 1522^5^0^7^8^1420^0.4615^0.3782^5^Darkeye Bonecaster^1419:1:1,2589:1:2,3163:3:3^
 1523^8^1^8^9^1420^0.4621^0.3322^8^Cracked Skull Soldier^2589:2:4,3162:4:4,3370:1:1^
@@ -44,7 +44,7 @@ GoldScout-export 5^qbrgnhdry5lj^10
 3269^9^0^12^13^1413^0.5805^0.2490^9^Razormane Geomancer^1179:1:1,1512:1:1,1737:1:1,2589:3:6^
 3271^1^0^13^14^1413^0.5898^0.2702^1^Razormane Mystic^2589:1:3^
 3272^18^0^12^13^1413^0.4418^0.2289^18^Kolkar Wrangler^858:1:1,1498:1:1,1514:1:1,2287:2:2,2589:3:6,5020:1:1,5030:7:7^
-3273^19^0^13^14^1413^0.4420^0.2259^19^Kolkar Stormer^1499:1:1,2589:10:19,5030:6:6,211780:1:1^
+3273^23^0^13^14^1413^0.4455^0.2508^23^Kolkar Stormer^818:1:1,1499:1:1,1515:1:1,2589:12:25,5030:6:6,211780:1:1^
 3275^1^0^16^16^1413^0.5311^0.4228^1^Kolkar Marauder^2287:1:1^
 3278^34^0^16^17^1413^0.3812^0.1361^34^Witchwing Slayer^1767:1:1,1813:1:1,2287:3:3,2455:1:1,2589:3:6,2592:6:8,3377:1:1,5065:6:6,5114:5:5,5115:9:9,5635:3:3,15493:1:1,17056:11:11,211784:2:2,248683:1:1^
 3279^2^0^18^18^1413^0.3838^0.1255^2^Witchwing Ambusher^5115:1:1^
@@ -70,8 +70,10 @@ GoldScout-export 5^qbrgnhdry5lj^10
 3445^2^0^18^18^1413^0.5606^0.0837^2^Supervisor Lugwizzle^2589:1:3,5050:1:1^
 3452^1^0^20^20^1413^0.3879^0.1179^1^Serena Bloodfeather^^
 3455^1^0^19^19^1413^0.6051^0.5483^1^Cannoneer Whessan^2589:1:1^
+3461^8^0^15^16^1413^0.4608^0.3902^8^Oasis Snapjaw^4555:3:3,5098:8:8,5523:5:5,6361:1:2,211854:1:1,248683:1:1^
 3467^2^0^16^16^1413^0.6384^0.4796^2^Baron Longshore^414:1:1,5084:1:1,5498:1:1^
 3475^1^0^16^16^1413^0.5579^0.1719^1^Echeyakee^5100:1:1,5134:1:1^
+3632^1^0^15^15^1414^0.5189^0.5551^1^Deviate Creeper^5124:1:1^
 3939^4^0^7^8^1413^0.5855^0.2437^4^Razormane Wolf^^
 5766^1^0^4^4^1413^0.6092^0.3458^1^Savannah Cub^^
 6494^1^0^13^13^1413^0.6380^0.4391^1^Tazan^211787:1:1^
@@ -157,6 +159,7 @@ GoldScout-export 5^qbrgnhdry5lj^10
 @i^4410^Schematic: Shadow Goggles
 @i^4496^Small Brown Pouch
 @i^4537^Tel'Abim Banana
+@i^4555^Thick Scaly Tail
 @i^4566^Sturdy Quarterstaff of the Monkey
 @i^4577^Compact Shotgun
 @i^4604^Forest Mushroom Cap
@@ -189,6 +192,7 @@ GoldScout-export 5^qbrgnhdry5lj^10
 @i^5087^Plainstrider Beak
 @i^5096^Prowler Claws
 @i^5097^Cats Eye Emerald
+@i^5098^Altered Snapjaw Shell
 @i^5100^Echeyakee's Hide
 @i^5107^Deckhand's Shirt
 @i^5114^Severed Talon
@@ -201,6 +205,7 @@ GoldScout-export 5^qbrgnhdry5lj^10
 @i^5469^Strider Meat
 @i^5470^Thunder Lizard Tail
 @i^5498^Small Lustrous Pearl
+@i^5523^Small Barnacled Clam
 @i^5635^Sharp Claw
 @i^5786^Pattern: Murloc Scale Belt
 @i^6293^Dried Bat Blood
@@ -311,6 +316,7 @@ GoldScout-export 5^qbrgnhdry5lj^10
 @q^4410^2:9:0
 @q^4496^1:1:0
 @q^4537^1:0:0
+@q^4555^0:15:0
 @q^4566^2:2:0
 @q^4577^2:2:0
 @q^4604^1:0:0
@@ -343,6 +349,7 @@ GoldScout-export 5^qbrgnhdry5lj^10
 @q^5087^1:12:0
 @q^5096^1:12:0
 @q^5097^1:12:0
+@q^5098^1:12:0
 @q^5100^1:12:0
 @q^5107^1:4:0
 @q^5114^0:15:0
@@ -355,6 +362,7 @@ GoldScout-export 5^qbrgnhdry5lj^10
 @q^5469^1:7:1
 @q^5470^1:7:1
 @q^5498^2:7:1
+@q^5523^1:7:0
 @q^5635^1:7:1
 @q^5786^1:9:0
 @q^6293^0:15:0
@@ -392,6 +400,7 @@ GoldScout-export 5^qbrgnhdry5lj^10
 @q^286009^1:12:0
 @m^1411^Durotar
 @m^1413^The Barrens
+@m^1414^Kalimdor
 @m^1420^Tirisfal Glades
 @c^118^
 @c^724^
@@ -1154,7 +1163,7 @@ GoldScout-export 5^qbrgnhdry5lj^10
 @a^3269^91:4,111:5
 @a^3271^111:1
 @a^3272^88:15,109:3
-@a^3273^88:18,89:1
+@a^3273^88:18,89:1,149:4
 @a^3275^170:1
 @a^3278^47:25,67:9
 @a^3279^47:2
@@ -1180,8 +1189,10 @@ GoldScout-export 5^qbrgnhdry5lj^10
 @a^3445^31:2
 @a^3452^47:1
 @a^3455^212:1
+@a^3461^149:8
 @a^3467^192:2
 @a^3475^71:1
+@a^3632^230:1
 @a^3939^91:4
 @a^5766^132:1
 @a^6494^172:1

@@ -1,6 +1,8 @@
-GoldScout-export 5^2z7i5u9nxikm^1
+GoldScout-export 5^2z7i5u9nxikm^2
 2376^3^0^30^31^1424^0.4305^0.6677^3^Torn Fin Oracle^5524:2:2,5785:1:1,17058:1:1^
 2377^4^0^31^32^1424^0.4276^0.6756^4^Torn Fin Tidehunter^5524:2:2,5785:1:1,17057:2:2,17058:1:1^
+2406^8^0^32^33^1416^0.3369^0.8536^8^Mountain Lion^1687:2:2,3731:5:5,15225:1:1^
+2407^2^0^33^34^1416^0.3808^0.8999^2^Hulking Mountain Lion^1687:1:1,3731:1:1^
 245999^2^0^0^0^0^0.0000^0.0000^0^^^
 246003^2^0^0^0^0^0.0000^0.0000^0^^^
 246008^2^0^0^0^0^0.0000^0.0000^0^^^
@@ -22,16 +24,19 @@ GoldScout-export 5^2z7i5u9nxikm^1
 255069^2^0^0^0^0^0.0000^0.0000^0^^^
 269134^6^0^0^0^0^0.0000^0.0000^0^^1205:1:1,1830:1:1,2589:1:2,248686:1:1^
 @i^1205^Melon Juice
+@i^1687^Retractable Claw
 @i^1759^Reinforced Chain Pants
 @i^1825^Bulky Bludgeon
 @i^1829^Short Cutlass
 @i^1830^Long Bastard Sword
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^3731^Lion Meat
 @i^5524^Thick-shelled Clam
 @i^5785^Thick Murloc Scale
 @i^6438^Dull Elemental Bracer
 @i^6439^Broken Binding Bracer
+@i^15225^Sequoia Hammer of the Hierophant
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
 @i^248686^Waylaid Crate: Journeyman Herbs
@@ -41,16 +46,19 @@ GoldScout-export 5^2z7i5u9nxikm^1
 @i^276158^Crystallized Shard
 @i^276160^Mana Fragment
 @q^1205^1:0:0
+@q^1687^0:15:0
 @q^1759^0:4:0
 @q^1825^0:2:0
 @q^1829^0:2:0
 @q^1830^0:2:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^3731^1:7:1
 @q^5524^1:7:0
 @q^5785^1:7:1
 @q^6438^0:15:0
 @q^6439^0:15:0
+@q^15225^2:2:0
 @q^17057^1:15:0
 @q^17058^1:15:0
 @q^248686^1:0:1
@@ -59,7 +67,10 @@ GoldScout-export 5^2z7i5u9nxikm^1
 @q^273055^3:4:0
 @q^276158^0:15:0
 @q^276160^0:15:0
+@m^1416^Alterac Mountains
 @m^1424^Hillsbrad Foothills
 @a^2376^249:1,268:2
 @a^2377^249:1,268:3
+@a^2406^326:5,345:1,347:1,367:1
+@a^2407^347:1,367:1
 @l^0^enUS
