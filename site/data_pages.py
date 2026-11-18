@@ -159,8 +159,10 @@ def percent(rate):
 
 
 def bracket_of(level):
+    """The level range a mob's middle level is in. Each range runs up to the next one's start, so a mob of levels
+    10-11 (10.5) is in 1-10 rather than in neither."""
     for low, high in BRACKETS:
-        if low <= level <= high:
+        if low <= level < high + 1:
             return low, high
     return None
 

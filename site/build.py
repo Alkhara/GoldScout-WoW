@@ -22,6 +22,7 @@ DIST = HERE / "dist"
 sys.path.insert(0, str(ROOT / "tools"))
 sys.path.insert(0, str(HERE))
 import data_pages  # noqa: E402
+import guides  # noqa: E402
 import merge_data  # noqa: E402
 
 SITE_URL = data_pages.SITE_URL
@@ -583,7 +584,8 @@ CHROME = {
                '<a href="%(curseforge)s">Get GoldScout</a>',
         "footer": '<a href="/">Home</a><a href="/farms">Farms by level</a><a href="/fishing">Fishing</a>'
                   '<a href="/drop-rates">How drop rates work</a><a href="/leaderboard">Leaderboard</a>'
-                  '<a href="/data-wanted">Data wanted</a><a href="/share">Share data</a><a href="/faq">FAQ</a>'
+                  '<a href="/guides">Gold guides</a><a href="/data-wanted">Data wanted</a>'
+                  '<a href="/share">Share data</a><a href="/faq">FAQ</a>'
                   '<a href="/support">Support GoldScout</a><a href="%(discord)s">Discord</a>'
                   '<a href="%(source)s">GitHub</a><a href="%(privacy)s">Privacy</a>'
                   '<a href="%(data_license)s">Data license</a>',
@@ -2379,6 +2381,8 @@ def main():
     write("share.html", *share_page())
     write("support.html", *support_page())
     paths = ["/", "/companion", "/leaderboard", "/faq", "/share", "/support"] + data_pages.build(data, LINKS, write)
+    # Gold guides: the best farms on each realm type and faction's auction house, at the latest prices (English).
+    paths += guides.build(data, LINKS, write, guides.fetch_markets(API_URL))
     write("search.html", *search_page(), index=False)   # results for one visitor's words: not for search engines
     index = data_pages.search_index(data) + STATIC_SEARCH
     (DIST / "search.json").write_text(json.dumps(index, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
