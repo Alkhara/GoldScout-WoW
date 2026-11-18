@@ -36,6 +36,7 @@ isn't.
 """
 import math
 import re
+import unicodedata
 from collections import defaultdict
 
 HEADER = "GoldScout-export"
@@ -76,8 +77,25 @@ OUTLIER_Z = 6.0             # how far apart two drop rates must be to flag
 
 INT = re.compile(r"^(0|[1-9][0-9]{0,8})$")
 COORD = re.compile(r"^(0|1)\.[0-9]{1,6}$")
-NAME_PUNCTUATION = set(" '-.()!?&")
+NAME_PUNCTUATION = set(" '-.()!?&·")    # the middle dot: Chinese clients write transliterated names with it
 ITEM_NAME_PUNCTUATION = NAME_PUNCTUATION | set(":,")
+# Typography the game's languages use, as the plain characters above. French writes a no-break space before ":"
+# and curly apostrophes; Chinese and Korean clients use full-width punctuation (NFKC turns those into plain ones).
+NAME_LOOKALIKES = str.maketrans({
+    "‘": "'", "’": "'", "ʼ": "'", "´": "'", "`": "'",
+    "«": "'", "»": "'", "“": "'", "”": "'", "„": "'",
+    "‐": "-", "‑": "-", "‒": "-", "–": "-", "—": "-", "―": "-",
+    "…": "...",
+})
+
+
+def clean_name(text, allowed=ITEM_NAME_PUNCTUATION):
+    """A name as GoldScout keeps it: typographic and full-width punctuation as plain characters, any other
+    character that isn't a letter, digit or allowed punctuation as a space, and spaces collapsed. One odd
+    character in a name never costs a player their whole export."""
+    text = unicodedata.normalize("NFKC", text.translate(NAME_LOOKALIKES)).translate(NAME_LOOKALIKES)
+    text = "".join(c if c.isalpha() or c.isdigit() or c in allowed else " " for c in text)
+    return " ".join(text.split())
 
 
 class Mob:
@@ -165,11 +183,7 @@ def _name(text, line_no, result):
     if len(text) > MAX_NAME_LENGTH:
         result.errors.append("Line %d: mob name is longer than %d characters." % (line_no, MAX_NAME_LENGTH))
         return None
-    for char in text:
-        if not (char.isalpha() or char.isdigit() or char in NAME_PUNCTUATION):
-            result.errors.append("Line %d: mob name contains a character that isn't allowed." % line_no)
-            return None
-    return text.strip()
+    return clean_name(text, NAME_PUNCTUATION)
 
 
 def _items(text, what, attempts, line_no, result):
@@ -359,8 +373,9 @@ def _parse_extra(line, line_no, result):
     if not name or len(name) > MAX_NAME_LENGTH or name != name.strip():
         result.errors.append("Line %d: the name is empty, too long or padded." % line_no)
         return
-    if any(not (c.isalpha() or c.isdigit() or c in ITEM_NAME_PUNCTUATION) for c in name):
-        result.errors.append("Line %d: the name contains a character that isn't allowed." % line_no)
+    name = clean_name(name)
+    if not name:
+        result.errors.append("Line %d: the name has no letters or digits." % line_no)
         return
     (result.item_names if kind == "@i" else result.map_names)[some_id] = name
 

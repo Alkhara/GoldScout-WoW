@@ -191,6 +191,19 @@ class SnapshotLuaTests(unittest.TestCase):
         self.assertEqual((install, seq), (self.ns.db.installID, result.seq))
         self.assertEqual(sorted(mobs.keys()), [3812, 3814])
 
+    def test_snapshot_writes_other_languages_typography_plainly(self):
+        # French no-break spaces, curly apostrophes and guillemets; Chinese full-width punctuation. Before, an
+        # older companion refused the whole export over one of them.
+        self.ns.db.drops[3812].n = "Ours d\u2019Orneval"
+        self.ns.db.names["items"][3010] = "Patron\u00a0: Cape \u00ab\u00a0Rouge\u00a0\u00bb"
+        self.ns.db.names.maps[1440] = "\u517b\u6b96\u573a\uff1a\u6d4b\u8bd5"
+        learn = self.ns.Learn
+        text, _, _ = learn.ExportString(learn)
+        self.assertIn("^Ours d'Orneval^", text)
+        self.assertIn("@i^3010^Patron : Cape ' Rouge '\n", text)
+        self.assertIn("@m^1440^\u517b\u6b96\u573a:\u6d4b\u8bd5\n", text)
+        self.assertEqual(submission.parse(text).errors, [])
+
     def test_old_snapshots_are_pruned_except_the_included_one(self):
         learn = self.ns.Learn
         learn.Snapshot(learn)

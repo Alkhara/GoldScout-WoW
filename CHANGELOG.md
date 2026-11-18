@@ -7,6 +7,8 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- **Sharing works with French, Chinese and Korean names:** a name with a curly apostrophe, a no-break space before ":", guillemets or full-width punctuation made GoldScout Companion refuse the whole export ("the name contains a character that isn't allowed"). GoldScout now writes that punctuation plainly, names saved by older versions included, and the companion and the data bot tidy any odd character instead of refusing the export.
+
 ## v0.12.24
 
 - **Drop rates count what dropped, not just what you took:** loot left on a corpse (full bags, or junk you skip) used to count the kill but not the drop, so those items looked rarer than they are. GoldScout now records everything a corpse shows when you open it, taken or not; going back for it later still counts it once. The hunt panel still counts what reaches your bags.

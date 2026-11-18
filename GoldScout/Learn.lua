@@ -171,15 +171,36 @@ end
 -- where drops are "itemID:times:quantity" joined by commas. No character names.
 -- Mob names keep letters (including accented ones), digits, spaces and a few
 -- punctuation marks; anything else would make the data bot reject the export.
+-- Typography some game languages use, as the plain characters the data bot keeps (tools/submission.py,
+-- clean_name): French no-break spaces and curly apostrophes, dashes, and Chinese and Korean full-width
+-- punctuation. (UTF-8 byte sequences; none of these bytes is special in a Lua pattern.)
+local LOOKALIKES = {
+  ["\226\128\152"] = "'", ["\226\128\153"] = "'", ["\194\171"] = "'", ["\194\187"] = "'", ["\194\180"] = "'",
+  ["\226\128\156"] = "'", ["\226\128\157"] = "'", ["\226\128\158"] = "'",
+  ["\194\160"] = " ", ["\226\128\175"] = " ", ["\226\128\137"] = " ", ["\227\128\128"] = " ",
+  ["\226\128\144"] = "-", ["\226\128\145"] = "-", ["\226\128\146"] = "-", ["\226\128\147"] = "-",
+  ["\226\128\148"] = "-", ["\226\128\149"] = "-", ["\226\128\166"] = "...",
+  ["\239\188\154"] = ":", ["\239\188\140"] = ",", ["\239\188\136"] = "(", ["\239\188\137"] = ")",
+  ["\239\188\129"] = "!", ["\239\188\159"] = "?", ["\239\188\142"] = ".", ["\239\188\141"] = "-",
+}
+
+local function PlainPunctuation(text)
+  text = tostring(text or "")
+  for from, to in pairs(LOOKALIKES) do
+    text = text:gsub(from, to)
+  end
+  return text
+end
+
 local function Clean(text)
-  text = tostring(text or ""):gsub("[^%w '%-%.%(%)!%?&\128-\255]", " ")
+  text = PlainPunctuation(text):gsub("[^%w '%-%.%(%)!%?&\128-\255]", " ")
   return (text:gsub("%s+", " "):gsub("^ ", ""):gsub(" $", ""))
 end
 
 -- Item and zone names can also hold colons and commas ("Pattern: Hillman's
 -- Cloak"); only the field separator, escapes and line breaks are dropped.
 local function CleanName(text)
-  text = tostring(text or ""):gsub("[^%w '%-%.%(%)!%?&:,\128-\255]", " ")
+  text = PlainPunctuation(text):gsub("[^%w '%-%.%(%)!%?&:,\128-\255]", " ")
   text = text:gsub("%s+", " "):gsub("^ ", ""):gsub(" $", "")
   return text:sub(1, 64)
 end
@@ -368,8 +389,10 @@ local function ExportBody()
     if not names.items[itemID] then
       NoteItemName(itemID)
     end
-    if names.items[itemID] and names.items[itemID] ~= "" then
-      lines[#lines + 1] = "@i^" .. itemID .. "^" .. names.items[itemID]
+    -- Cleaned again here: names saved by older versions can hold characters the data bot would refuse.
+    local name = names.items[itemID] and CleanName(names.items[itemID])
+    if name and name ~= "" then
+      lines[#lines + 1] = "@i^" .. itemID .. "^" .. name
     end
   end
   -- What kind of item each is ("@q^itemID^quality:class:reagent"), so the
@@ -385,8 +408,9 @@ local function ExportBody()
   end
   for _, mapID in ipairs(SortedKeys(maps)) do
     NoteMapName(mapID)
-    if names.maps[mapID] and names.maps[mapID] ~= "" then
-      lines[#lines + 1] = "@m^" .. mapID .. "^" .. names.maps[mapID]
+    local name = names.maps[mapID] and CleanName(names.maps[mapID])
+    if name and name ~= "" then
+      lines[#lines + 1] = "@m^" .. mapID .. "^" .. name
     end
   end
   for _, itemID in ipairs(SortedKeys((ns.db and ns.db.crafted) or {})) do

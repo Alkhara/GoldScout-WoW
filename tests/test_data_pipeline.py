@@ -118,10 +118,28 @@ class ValidatorTests(unittest.TestCase):
             with self.subTest(name):
                 self.assertTrue(errors(text))
 
-    def test_rejects_unsafe_names(self):
-        for name in ('Spined" Crawler', "|cffff0000Spined", "Spined\\Crawler", "x" * 70):
+    def test_unsafe_name_characters_are_removed_not_the_export(self):
+        # Quotes, backslashes and the game's | codes become spaces: harmless, and the rest of the export counts.
+        for name, kept in (('Spined" Crawler', "Spined Crawler"), ("|cffff0000Spined", "cffff0000Spined"),
+                           ("Spined\\Crawler", "Spined Crawler")):
             with self.subTest(name):
-                self.assertTrue(errors(GOOD.replace("Spined Crawler", name)))
+                result = submission.parse(GOOD.replace("Spined Crawler", name))
+                self.assertEqual(result.errors, [])
+                self.assertIn(kept, [mob.n for mob in result.mobs])
+        self.assertTrue(errors(GOOD.replace("Spined Crawler", "x" * 70)))
+
+    def test_other_languages_typography_is_kept_plain(self):
+        # French: a no-break space before ":", curly apostrophes, guillemets; Chinese: full-width punctuation.
+        text = (V3.replace("Spined Crawler", "Ours d\u2019Orneval\u2026")
+                .replace("@i^4874^Pattern: Hillman's Cloak, Belt", "@i^4874^Patron\u00a0: Cape \u00ab\u00a0Rouge\u00a0\u00bb")
+                .replace("@m^1440^Ashenvale", "@m^1440^\u517b\u6b96\u573a\uff1a\u6d4b\u8bd5\uff08\u4e00\uff09"))
+        result = submission.parse(text)
+        self.assertEqual(result.errors, [])
+        self.assertIn("Ours d'Orneval...", [mob.n for mob in result.mobs])
+        self.assertEqual(result.item_names[4874], "Patron : Cape ' Rouge '")
+        self.assertEqual(result.map_names[1440], "\u517b\u6b96\u573a:\u6d4b\u8bd5(\u4e00)")
+        self.assertIn("^Ours d'Orneval...^", result.text())          # kept as cleaned
+        self.assertTrue(errors(V3.replace("@m^1440^Ashenvale", "@m^1440^\u2605\u2605")))   # nothing left of it
 
     def test_allows_normal_names(self):
         for name in ("Gath'Ilzogg", "Ol' Sooty", "Dun Garok Mountaineer", "Death's Head Acolyte", ""):
@@ -154,8 +172,6 @@ class VersionThreeTests(unittest.TestCase):
         cases = {
             "names in a v2 export": GOOD + "@i^3010^Crawler Meat\n",
             "unknown kind": V3 + "@x^1^thing\n",
-            "pipe in name": V3.replace("Crawler Meat", "|cffff0000Meat"),
-            "quote in name": V3.replace("Crawler Meat", 'Crawler "Meat"'),
             "empty name": V3.replace("Crawler Meat", ""),
             "too long": V3.replace("Crawler Meat", "x" * 70),
             "crafted with a name": V3.replace("@c^2996^", "@c^2996^Bolt"),
@@ -236,12 +252,14 @@ class BotTests(unittest.TestCase):
         return Path("comment.md").read_text(encoding="utf-8") if Path("comment.md").exists() else ""
 
     def test_check_comment_never_quotes_the_issue(self):
-        evil = GOOD.replace("Spined Crawler", "@everyone `rm -rf` <script>")
-        comment = self.run_check({"number": 1, "body": form_body(evil),
-                                  "user": {"id": 5, "login": "x", "type": "User"}})
-        self.assertIn("can't be accepted", comment)
-        for fragment in ("@everyone", "rm -rf", "<script>"):
-            self.assertNotIn(fragment, comment)
+        # A hostile line that fails the checks, and a hostile name that's only cleaned: neither is quoted back.
+        for evil, verdict in ((GOOD + "@everyone `rm -rf` <script>\n", "can't be accepted"),
+                              (GOOD.replace("Spined Crawler", "@everyone `rm -rf` <script>"), "passed every check")):
+            comment = self.run_check({"number": 1, "body": form_body(evil),
+                                      "user": {"id": 5, "login": "x", "type": "User"}})
+            self.assertIn(verdict, comment)
+            for fragment in ("@everyone", "rm -rf", "<script>"):
+                self.assertNotIn(fragment, comment)
 
     def test_check_points_blank_issues_to_the_form(self):
         comment = self.run_check({"number": 1, "body": GOOD,
