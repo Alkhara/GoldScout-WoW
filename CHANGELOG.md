@@ -7,6 +7,8 @@ releases add their own line automatically.
 
 ## Unreleased
 
+## v0.12.23
+
 - **Companion:** fixed "Couldn't check for updates (CERTIFICATE_VERIFY_FAILED)" on some Windows PCs. Windows hadn't yet downloaded the root certificate GitHub uses, so the update check couldn't reach GitHub; the companion now also trusts Mozilla's list of certificates, bundled with the app.
 
 ## v0.12.22
