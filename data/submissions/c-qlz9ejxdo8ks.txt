@@ -1,7 +1,8 @@
-GoldScout-export 5^qlz9ejxdo8ks^1
+GoldScout-export 5^qlz9ejxdo8ks^2
 2240^12^0^32^33^1416^0.5739^0.6712^12^Syndicate Footpad^1707:1:1,4306:4:6^
 2241^14^0^33^34^1416^0.5755^0.6765^14^Syndicate Thief^1708:1:1,2592:1:1,3783:1:1,3827:1:1,4306:5:5,5113:2:2,6986:1:1^
 2319^1^0^34^35^1416^0.5817^0.6872^1^Syndicate Wizard^^
+2356^1^0^25^25^1424^0.8655^0.3878^1^Elder Gray Bear^2940:1:1,3702:1:1^
 2368^4^0^28^29^1424^0.6091^0.7588^4^Daggerspine Shorestalker^5524:1:1,17057:2:2,17058:1:1^
 2369^10^0^30^31^1424^0.5740^0.6977^10^Daggerspine Shorehunter^3811:1:1,5524:5:5,17057:3:3,17058:4:4,248707:1:1^
 2371^10^0^31^32^1424^0.5715^0.6834^10^Daggerspine Siren^3786:1:1,3800:1:1,12028:1:1,17057:3:3,17058:5:5^
@@ -13,10 +14,11 @@ GoldScout-export 5^qlz9ejxdo8ks^1
 2559^3^0^30^31^1417^0.5106^0.4571^3^Highland Strider^3685:2:2,4461:1:1,15285:1:1^
 2560^1^0^33^33^1417^0.4384^0.3486^1^Highland Thrasher^^
 2565^1^0^35^35^1417^0.4166^0.3093^1^Giant Plains Creeper^878:1:1,1074:1:1^
-2586^4^0^30^31^1417^0.3218^0.3073^4^Syndicate Highwayman^4306:4:7,5113:1:1^
+2586^9^0^30^31^1417^0.3280^0.2881^9^Syndicate Highwayman^1804:1:1,4306:4:7,5113:1:1^
 2587^2^0^33^33^1417^0.3278^0.2964^2^Syndicate Pathstalker^4306:2:3,5113:1:1^
-2589^6^0^31^32^1417^0.3263^0.2853^6^Syndicate Mercenary^3805:1:1,4306:2:2,255723:2:2^
+2589^7^0^31^32^1417^0.3243^0.2876^7^Syndicate Mercenary^1708:1:1,3805:1:1,4306:3:3,255723:2:2^
 14277^1^0^33^33^1424^0.5999^0.7446^1^Lady Zephris^10289:1:1,17057:1:1,17058:1:1^
+14280^1^0^27^27^1424^0.8655^0.3878^1^Big Samras^3702:1:1,3730:1:1,6602:1:1,9799:1:1,11406:1:1^
 @i^878^Fist-sized Spinneret
 @i^929^Healing Potion
 @i^1074^Hard Spider Leg Tip
@@ -25,10 +27,14 @@ GoldScout-export 5^qlz9ejxdo8ks^1
 @i^1687^Retractable Claw
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
+@i^1804^Tough Leather Boots
 @i^2592^Wool Cloth
+@i^2940^Bloody Bear Paw
 @i^3685^Raptor Egg
+@i^3702^Bear Gall Bladder
 @i^3703^Southshore Stout
 @i^3716^Murloc Head
+@i^3730^Big Bear Meat
 @i^3731^Lion Meat
 @i^3783^Light Scimitar
 @i^3786^Shiny Dirk
@@ -42,8 +48,11 @@ GoldScout-export 5^qlz9ejxdo8ks^1
 @i^4461^Raptor Hide
 @i^5113^Mark of the Syndicate
 @i^5524^Thick-shelled Clam
+@i^6602^Dervish Bracers of the Boar
 @i^6986^Crimson Lotus
+@i^9799^Ivycloth Sash of the Owl
 @i^10289^Durable Hat of Stamina
+@i^11406^Rotting Bear Carcass
 @i^12028^Basalt Necklace of the Elder
 @i^15285^Archer's Longbow
 @i^17057^Shiny Fish Scales
@@ -61,10 +70,14 @@ GoldScout-export 5^qlz9ejxdo8ks^1
 @q^1687^0:15:0
 @q^1707^1:0:0
 @q^1708^1:0:0
+@q^1804^0:4:0
 @q^2592^1:7:1
+@q^2940^0:15:0
 @q^3685^1:7:1
+@q^3702^0:15:0
 @q^3703^1:0:0
 @q^3716^1:12:0
+@q^3730^1:7:1
 @q^3731^1:7:1
 @q^3783^0:2:0
 @q^3786^0:2:0
@@ -78,8 +91,11 @@ GoldScout-export 5^qlz9ejxdo8ks^1
 @q^4461^1:7:1
 @q^5113^0:15:0
 @q^5524^1:7:0
+@q^6602^2:4:0
 @q^6986^0:15:0
+@q^9799^2:4:0
 @q^10289^2:4:0
+@q^11406^0:15:0
 @q^12028^2:4:0
 @q^15285^2:2:0
 @q^17057^1:15:0
@@ -786,6 +802,7 @@ GoldScout-export 5^qlz9ejxdo8ks^1
 @a^2240^251:1,271:11
 @a^2241^251:1,271:12,291:1
 @a^2319^271:1
+@a^2356^157:1
 @a^2368^291:1,312:3
 @a^2369^250:1,251:1,271:4,291:1,292:1,311:2
 @a^2371^250:1,251:1,270:1,271:4,291:2,292:1
@@ -797,9 +814,10 @@ GoldScout-export 5^qlz9ejxdo8ks^1
 @a^2559^169:1,190:1,191:1
 @a^2560^128:1
 @a^2565^128:1
-@a^2586^106:1,126:3
+@a^2586^106:5,126:4
 @a^2587^106:2
-@a^2589^106:5,126:1
+@a^2589^106:5,126:2
 @a^14277^291:1
+@a^14280^157:1
 @f^1424^0^3^225^3820:1:2,21113:1:1,21114:1:2^271:3
 @l^0^enUS

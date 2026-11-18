@@ -1,4 +1,4 @@
-GoldScout-export 5^0dnmy33hd98r^3
+GoldScout-export 5^0dnmy33hd98r^4
 4632^4^0^30^31^1443^0.7049^0.4470^4^Centaure kolkar^1826:1:1,4306:2:2,254432:1:1^
 4633^3^0^30^31^1443^0.7013^0.4423^3^Eclaireur kolkar^1708:1:1,2592:1:3,4306:2:3,254432:1:1^
 4634^12^0^31^32^1443^0.7227^0.4709^12^Marteleur kolkar^2592:1:3,4306:2:3,4338:1:1,6067:4:4,254432:2:2^
@@ -20,11 +20,14 @@ GoldScout-export 5^0dnmy33hd98r^3
 4674^6^0^32^33^1443^0.7480^0.2147^6^Traqueur des ténèbres Fielfurie^4306:1:1,6246:3:3,6247:3:3^
 4675^3^0^32^33^1443^0.7328^0.2162^3^Implorateur de l'enfer Fielfurie^6247:2:2^
 4692^1^0^32^33^1443^0.5927^0.1775^1^Rapace de l'effroi^1464:1:1,3404:1:1^
+4694^1^0^39^39^1443^0.6079^0.8016^1^Déchiqueteur de l'effroi^12037:1:1^
 4696^2^0^30^31^1443^0.6435^0.1446^2^Scorpashi mordeur^19937:1:1,19938:1:1^
 4728^10^0^31^32^1443^0.6465^0.3518^10^Basilic Mâchesable^1701:4:4,1702:4:4,4093:2:2,11386:2:2^
 5600^1^0^35^35^1443^0.7450^0.4892^1^Khan Dez'hepah^^
-11561^2^0^37^38^2652^0.3413^0.0961^2^Ravageur mort-vivant^4306:1:1,4607:1:1^
+11559^3^0^39^40^2652^0.3299^0.2637^3^Nécromancien renégat^260347:1:1^
+11561^13^0^37^43^2652^0.3243^0.2249^13^Ravageur mort-vivant^3794:1:1,4306:7:13,4607:1:1,213544:1:1^
 14228^1^0^34^34^1443^0.5888^0.0692^1^Glousse^7424:1:1^
+253272^2^0^42^43^2652^0.3367^0.2823^2^Nécromancien magram^4306:1:2^
 @i^1464^Serre de busard
 @i^1701^Griffe de basilic
 @i^1702^Epine dorsale intacte de basilic
@@ -36,6 +39,7 @@ GoldScout-export 5^0dnmy33hd98r^3
 @i^3771^Jarret de cochon sauvage
 @i^3786^Miséricorde rutilante
 @i^3787^Gourdin en pierre
+@i^3794^Brassards entrelacés
 @i^3814^Protège-épaules doublentins
 @i^4093^Grande queue de basilic
 @i^4306^Etoffe de soie
@@ -48,16 +52,19 @@ GoldScout-export 5^0dnmy33hd98r^3
 @i^6247^Corne de Fielfurie
 @i^6308^Poisson-chat moustachu cru
 @i^7424^Spallières de la phalange de la chouette
+@i^8365^Truite tête-mithril crue
 @i^11386^Oeil spongieux de basilic
 @i^12037^Viande mystère
 @i^12203^Viande de loup rouge
 @i^14761^Ceinture endurcie
 @i^19937^Petite griffe de scorpide
 @i^19938^Patte de scorpide épaisse
+@i^213544^Parchemin : ZOO ET DU KAFÊ
 @i^248686^Caisse détournée : plantes de compagnon
 @i^248690^Caisse détournée : plantes terreuses d'expert
 @i^248691^Caisse détournée : plantes à fleurs d'expert
 @i^254432^Totem centaure sculpté
+@i^260347^Journal en lambeaux
 @q^1464^0:15:0
 @q^1701^0:15:0
 @q^1702^0:15:0
@@ -69,6 +76,7 @@ GoldScout-export 5^0dnmy33hd98r^3
 @q^3771^1:0:0
 @q^3786^0:2:0
 @q^3787^0:2:0
+@q^3794^0:4:0
 @q^3814^0:4:0
 @q^4093^0:15:0
 @q^4306^1:7:1
@@ -81,16 +89,19 @@ GoldScout-export 5^0dnmy33hd98r^3
 @q^6247^1:12:0
 @q^6308^1:7:1
 @q^7424^2:4:0
+@q^8365^1:7:1
 @q^11386^0:15:0
 @q^12037^1:7:1
 @q^12203^1:7:1
 @q^14761^2:4:0
 @q^19937^0:15:0
 @q^19938^0:15:0
+@q^213544^1:0:0
 @q^248686^1:0:1
 @q^248690^1:0:1
 @q^248691^1:0:1
 @q^254432^2:15:0
+@q^260347^1:15:0
 @m^1443^Désolace
 @m^2652^Shen'dralas
 @c^118^
@@ -570,10 +581,13 @@ GoldScout-export 5^0dnmy33hd98r^3
 @a^4674^74:2,94:1,95:2,114:1
 @a^4675^74:1,94:2
 @a^4692^71:1
+@a^4694^332:1
 @a^4696^51:1,73:1
 @a^4728^52:1,132:2,133:1,153:3,173:3
 @a^5600^194:1
-@a^11561^26:2
+@a^11559^86:1,106:2
+@a^11561^26:2,46:1,86:4,105:3,106:2,127:1
 @a^14228^31:1
-@f^1443^0^1^225^6308:1:1^71:1
+@a^253272^105:1,107:1
+@f^1443^0^3^225^6308:1:1,8365:2:2^71:1,331:2
 @l^0^frFR

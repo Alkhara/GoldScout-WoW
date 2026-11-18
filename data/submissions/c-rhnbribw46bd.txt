@@ -1,4 +1,4 @@
-GoldScout-export 5^rhnbribw46bd^8
+GoldScout-export 5^rhnbribw46bd^9
 1492^1^0^47^47^1434^0.3372^0.7422^1^Gorlash^^
 1511^2^0^41^42^1434^0.3496^0.6104^2^Enraged Silverback Gorilla^2799:1:1^
 1514^1^0^44^44^1434^0.3483^0.6126^1^Mokk the Savage^^
@@ -15,6 +15,21 @@ GoldScout-export 5^rhnbribw46bd^8
 2549^1^0^43^43^1434^0.2938^0.8897^1^Garr Salthoof^^
 4505^5^0^43^44^1434^0.3139^0.8896^5^Bloodsail Deckhand^^
 4506^2^0^43^44^1434^0.2996^0.8936^2^Bloodsail Swabby^^
+5262^1^0^49^49^1444^0.4619^0.2471^1^Groddoc Thunderer^2799:1:1,4099:1:1^
+5274^1^0^48^49^1444^0.4094^0.1794^1^Ironfur Patriarch^^
+5288^2^0^48^48^1444^0.4384^0.2168^2^Rabid Longtooth^4583:1:1,12208:1:1,14907:1:1^
+5296^7^0^46^47^1444^0.5302^0.3158^7^Rage Scar Yeti^18947:1:1^
+5297^4^0^48^49^1444^0.5432^0.3278^4^Elder Rage Scar^^
+5299^13^0^47^48^1444^0.5290^0.3142^13^Ferocious Rage Scar^3928:1:1,8146:1:1,18947:3:3,262889:1:1^
+5359^5^0^48^49^1444^0.4474^0.5187^5^Zapped Shore Strider^18956:2:2^
+5360^4^0^47^48^1444^0.4577^0.5701^4^Zapped Deep Strider^4338:1:2,18956:3:3^
+5361^5^0^47^48^1444^0.4600^0.5815^5^Zapped Wave Strider^18956:2:2^
+5362^4^0^48^49^1444^0.3905^0.1325^4^Northspring Harpy^^
+5363^2^0^49^49^1444^0.4019^0.1360^2^Northspring Roguefeather^^
+5364^5^0^49^50^1444^0.4001^0.1350^5^Northspring Slayer^5117:1:1^
+5366^4^0^49^50^1444^0.3905^0.1281^4^Northspring Windcaller^^
+5461^13^0^48^49^1444^0.4638^0.5611^13^Sea Elemental^4791:1:3,18958:1:1^
+5462^10^0^47^48^1444^0.4649^0.5727^10^Sea Spray^^
 5833^1^0^48^48^1427^0.7307^0.7695^1^Margol the Rager^10000:1:1^
 5839^8^0^43^44^1427^0.6299^0.6043^8^Dark Iron Geologist^^
 5840^5^0^46^47^1427^0.4013^0.5045^5^Dark Iron Steamsmith^4338:2:5,4601:1:1,18959:1:1^
@@ -94,6 +109,7 @@ GoldScout-export 5^rhnbribw46bd^8
 @i^4021^Blunting Mace
 @i^4093^Large Basilisk Tail
 @i^4096^Coarse Gorilla Hair
+@i^4099^Tuft of Gorilla Hair
 @i^4337^Thick Spider's Silk
 @i^4338^Mageweave Cloth
 @i^4419^Scroll of Intellect III
@@ -106,6 +122,8 @@ GoldScout-export 5^rhnbribw46bd^8
 @i^4602^Moon Harvest Pumpkin
 @i^4638^Reinforced Steel Lockbox
 @i^4787^Burning Pitch
+@i^4791^Enchanted Water
+@i^5117^Vibrant Plume
 @i^5119^Fine Loose Hair
 @i^5120^Long Tail Hair
 @i^5133^Seeping Gizzard
@@ -113,6 +131,7 @@ GoldScout-export 5^rhnbribw46bd^8
 @i^5566^Broken Antler
 @i^6149^Greater Mana Potion
 @i^6302^Delicate Insect Wing
+@i^8146^Wicked Claw
 @i^8168^Jet Black Feather
 @i^8391^Snickerfang Jowl
 @i^8392^Blasted Boar Lung
@@ -144,12 +163,17 @@ GoldScout-export 5^rhnbribw46bd^8
 @i^13194^Felstone Field Cauldron Key
 @i^13446^Major Healing Potion
 @i^14047^Runecloth
+@i^14907^Brutish Helmet of the Beast
 @i^15631^Formidable Chestpiece of the Knight
+@i^18947^Rage Scar Yeti Hide
+@i^18956^Miniaturization Residue
+@i^18958^Water Elemental Core
 @i^18959^Smithing Tuyere
 @i^18960^Lookout's Spyglass
 @i^19441^Huge Venom Sac
 @i^19934^Large Scorpid Claw
 @i^20763^Broken Weapon
+@i^21228^Mithril Bound Trunk
 @i^213545^Scroll: PEATCHY ATTAX
 @i^238463^Mosshoof Hide
 @i^238503^Wild Honey
@@ -174,6 +198,7 @@ GoldScout-export 5^rhnbribw46bd^8
 @q^4021^0:2:0
 @q^4093^0:15:0
 @q^4096^1:15:0
+@q^4099^0:15:0
 @q^4337^1:7:1
 @q^4338^1:7:1
 @q^4419^1:0:0
@@ -186,6 +211,8 @@ GoldScout-export 5^rhnbribw46bd^8
 @q^4602^1:0:0
 @q^4638^2:15:0
 @q^4787^0:15:0
+@q^4791^1:0:0
+@q^5117^1:12:0
 @q^5119^0:15:0
 @q^5120^0:15:0
 @q^5133^0:15:0
@@ -193,6 +220,7 @@ GoldScout-export 5^rhnbribw46bd^8
 @q^5566^0:15:0
 @q^6149^1:0:0
 @q^6302^0:15:0
+@q^8146^1:7:1
 @q^8168^1:7:1
 @q^8391^1:12:0
 @q^8392^1:12:0
@@ -224,12 +252,17 @@ GoldScout-export 5^rhnbribw46bd^8
 @q^13194^1:12:0
 @q^13446^1:0:0
 @q^14047^1:7:1
+@q^14907^2:4:0
 @q^15631^2:4:0
+@q^18947^1:12:0
+@q^18956^1:12:0
+@q^18958^1:12:0
 @q^18959^1:12:0
 @q^18960^1:12:0
 @q^19441^1:7:1
 @q^19934^0:15:0
 @q^20763^0:15:0
+@q^21228^1:15:0
 @q^213545^1:0:0
 @q^238463^1:12:0
 @q^238503^1:12:0
@@ -245,6 +278,7 @@ GoldScout-export 5^rhnbribw46bd^8
 @m^1427^Searing Gorge
 @m^1428^Burning Steppes
 @m^1434^Stranglethorn Vale
+@m^1444^Feralas
 @m^1447^Azshara
 @m^1448^Felwood
 @c^724^
@@ -947,6 +981,21 @@ GoldScout-export 5^rhnbribw46bd^8
 @a^2549^345:1
 @a^4505^345:1,346:3,366:1
 @a^4506^345:1,346:1
+@a^5262^89:1
+@a^5274^68:1
+@a^5288^88:1,89:1
+@a^5296^110:1,130:5,131:1
+@a^5297^130:3,131:1
+@a^5299^130:13
+@a^5359^188:3,208:1,249:1
+@a^5360^208:1,229:2,249:1
+@a^5361^188:1,229:2,249:1,269:1
+@a^5362^47:4
+@a^5363^47:1,48:1
+@a^5364^47:2,48:3
+@a^5366^47:4
+@a^5461^189:2,209:5,229:2,249:3,269:1
+@a^5462^188:1,208:1,209:2,229:2,249:3,269:1
 @a^5833^314:1
 @a^5839^232:3,252:5
 @a^5840^187:2,207:1,208:2
@@ -1012,4 +1061,5 @@ GoldScout-export 5^rhnbribw46bd^8
 @a^14621^148:1
 @a^236028^203:4,223:1
 @a^269254^249:1
+@f^1444^0^4^168^3820:1:3,21228:3:3^209:4
 @l^0^enUS
