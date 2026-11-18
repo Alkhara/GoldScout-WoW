@@ -16,34 +16,52 @@ Bags.RATIO = 2
 local GREEN = 2                          -- item quality: uncommon
 local BIND_ON_PICKUP, QUEST_ITEM = 1, 4  -- item bind types that can't go on the auction house
 local COIN_TEXTURE = "Interface\\MoneyFrame\\UI-GoldIcon"
+local DISC_TEXTURE = "Interface\\CharacterFrame\\TempPortraitAlphaMask"   -- a plain white disc
 
 -- What an item fetches each on the auction house after the cut, and its vendor price, when it's worth listing
 -- rather than vendoring; nil otherwise (or until the game has loaded the item). isBound: the copy in your bags.
-function Bags:Worth(itemID, isBound)
-  if not itemID or isBound or not ns.db or ns.db.settings.bagCoins == false then
-    return nil
+-- Without a coin, the second return says why (for /gscout bagcoins).
+local function Judge(itemID, isBound)
+  if not itemID then
+    return nil, "empty"
+  end
+  if not ns.db or ns.db.settings.bagCoins == false then
+    return nil, "turned off"
+  end
+  if isBound then
+    return nil, "bound"
   end
   local info = { ns.GetItemInfo(itemID) }
   local quality, sell, bindType, reagent = info[3], info[11] or 0, info[14], ns.Plain(info[17])
   if quality == nil then
     ns.RequestItem(itemID)
-    return nil
+    return nil, "item not loaded yet"
   end
   if quality == ns.QUALITY_POOR or bindType == BIND_ON_PICKUP or bindType == QUEST_ITEM then
-    return nil
+    return nil, "gray, soulbound or quest"
   end
   if reagent ~= true and quality < GREEN then
-    return nil   -- white items that aren't crafting reagents: vendor fodder, whatever someone lists them for
+    return nil, "white, not a reagent"   -- vendor fodder, whatever someone lists them for
   end
   local price, _, _, source = ns.Prices:Get(itemID)
-  if not price or price <= 0 or source == "estimate" then
-    return nil
+  if not price or price <= 0 then
+    return nil, "no auction price"
+  end
+  if source == "estimate" then
+    return nil, "only a regional estimate"
   end
   local value = price * ns.AH_CUT
   if value < sell * Bags.RATIO then
-    return nil
+    return nil, ("under %dx vendor"):format(Bags.RATIO)
   end
   return value, sell
+end
+
+function Bags:Worth(itemID, isBound)
+  local value, sell = Judge(itemID, isBound)
+  if value then
+    return value, sell
+  end
 end
 
 -- The item a bag slot holds and whether that copy is bound: Bagnon's slots carry it (button.info), Blizzard's
@@ -83,23 +101,37 @@ function Bags:ForButton(button)
 end
 
 local seen = setmetatable({}, { __mode = "k" })   -- slots drawn so far, redrawn when prices change
+local hookedBlizzard, hookedBagnon, markCalls = nil, {}, 0
+local BAG_ADDONS = { "Bagnon", "Bagnonium", "BagBrother" }   -- globals that can hold Bagnon's Item class
+local BAG_ADDON_SET = {}
+for _, name in ipairs(BAG_ADDONS) do
+  BAG_ADDON_SET[name] = true
+end
 
 local function Mark(button)
   if type(button) ~= "table" or not button.CreateTexture then
     return
   end
   seen[button] = true
+  markCalls = markCalls + 1
   local worth = Bags:ForButton(button)
   local coin = button.GoldScoutCoin
   if worth and not coin then
+    -- A dark disc behind the coin so it stands out on bright icons.
+    local back = button:CreateTexture(nil, "OVERLAY", nil, 6)
+    back:SetTexture(DISC_TEXTURE)
+    back:SetVertexColor(0, 0, 0, 0.75)
+    back:SetSize(19, 19)
+    back:SetPoint("TOPRIGHT", button, "TOPRIGHT", 1, 1)
     coin = button:CreateTexture(nil, "OVERLAY", nil, 7)
     coin:SetTexture(COIN_TEXTURE)
-    coin:SetSize(12, 12)
-    coin:SetPoint("TOPRIGHT", button, "TOPRIGHT", -2, -2)
-    button.GoldScoutCoin = coin
+    coin:SetSize(15, 15)
+    coin:SetPoint("CENTER", back, "CENTER")
+    button.GoldScoutCoin, button.GoldScoutCoinBack = coin, back
   end
   if coin then
     coin:SetShown(worth ~= nil)
+    button.GoldScoutCoinBack:SetShown(worth ~= nil)
   end
 end
 Bags.Mark = Mark
@@ -128,15 +160,14 @@ local function MarkFrame(frame)
 end
 
 -- Redraws every slot seen so far: after a scan or new companion prices, once items load, or the setting changes.
+-- Closed bags too: Bagnon only redraws a slot when its contents change, so a slot first drawn before its item
+-- or prices loaded would otherwise keep no coin.
 function Bags:Refresh()
   for button in pairs(seen) do
-    if not button.IsVisible or button:IsVisible() then
-      Mark(button)
-    end
+    Mark(button)
   end
 end
 
-local hookedBlizzard, hookedBagnon
 local function HookBags()
   if not hooksecurefunc then
     return
@@ -160,17 +191,21 @@ local function HookBags()
       end
     end
   end
-  -- Bagnon (its core is the BagBrother addon): every slot redraws through Item:Update.
-  local bagnon = BagBrother and BagBrother.Item
-  if not hookedBagnon and type(bagnon) == "table" and type(bagnon.Update) == "function" then
-    hookedBagnon = true
-    hooksecurefunc(bagnon, "Update", Mark)
+  -- Bagnon: every slot redraws through Item:Update. Bagnon (and Bagnonium) load BagBrother's core files into
+  -- their own addon, so the classes are on the Bagnon global, not BagBrother.
+  for _, name in ipairs(BAG_ADDONS) do
+    local addon = _G[name]
+    local item = type(addon) == "table" and rawget(addon, "Item")
+    if not hookedBagnon[name] and type(item) == "table" and type(item.Update) == "function" then
+      hookedBagnon[name] = true
+      hooksecurefunc(item, "Update", Mark)
+    end
   end
 end
 
 HookBags()
 ns.On("ADDON_LOADED", function(name)
-  if name == "BagBrother" or name == "Bagnon" then
+  if BAG_ADDON_SET[name] then
     HookBags()
   end
 end)
@@ -192,4 +227,40 @@ function Bags:TooltipLine(tooltip)
   end
   return (L["GoldScout: worth %s each on the auction house, %s at a vendor. List it."]):format(
     ns.Money(value), ns.Money(sell))
+end
+
+-- /gscout bagcoins: whether the bag hooks are on, and why each slot drawn so far has a coin or not.
+function Bags:Report()
+  local print = ns.Print or print
+  local bagnon = {}
+  for name in pairs(hookedBagnon) do
+    bagnon[#bagnon + 1] = name
+  end
+  print(("Bag coins: setting %s, Blizzard bags hooked %s, Bagnon hooked: %s, slots drawn %d times")
+    :format(tostring(ns.db and ns.db.settings.bagCoins), tostring(hookedBlizzard),
+      #bagnon > 0 and table.concat(bagnon, ", ") or "none", markCalls))
+  local reasons, coins, count = {}, 0, 0
+  for button in pairs(seen) do
+    local itemID, isBound = SlotItem(button)
+    if itemID then
+      count = count + 1
+      local value, why = Judge(itemID, isBound)
+      local shown = button.GoldScoutCoin and button.GoldScoutCoin:IsShown()
+      if value then
+        coins = coins + 1
+        why = shown and "coin" or "coin due, not shown"
+      end
+      local entry = reasons[why] or { n = 0, ids = {} }
+      entry.n = entry.n + 1
+      if #entry.ids < 4 then
+        entry.ids[#entry.ids + 1] = itemID
+      end
+      reasons[why] = entry
+    end
+  end
+  print(("%d slots with items, %d worth a coin; market %s, own prices %s"):format(count, coins,
+    tostring(ns.MarketKey()), tostring(ns.Prices:HasOwn())))
+  for why, entry in pairs(reasons) do
+    print(("  %s: %d (e.g. %s)"):format(why, entry.n, table.concat(entry.ids, ", ")))
+  end
 end

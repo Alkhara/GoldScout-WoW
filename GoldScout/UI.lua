@@ -1852,6 +1852,8 @@ function UI:HandleSlash(message)
     self:SetFarmView("wanted")
   elseif command == "drops" then
     ns.MobDrops:ShowTarget()
+  elseif command == "bagcoins" then
+    ns.Bags:Report()
   elseif command == "options" or command == "settings" or command == "config" then
     ns.Options:Open()
   elseif command == "welcome" then

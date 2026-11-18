@@ -993,10 +993,10 @@ class BagCoinTests(unittest.TestCase):
           target[name] = function(...) local r = { original(...) }; fn(...); return unpack(r) end
           FAKE.hooks[#FAKE.hooks + 1] = name
         end
-        BagBrother = { Item = { Update = function() end } }
+        Bagnon = { Item = { Update = function() end } }
         local function Texture()
           local t = { shown = true }
-          function t:SetTexture() end function t:SetSize() end function t:SetPoint() end
+          function t:SetTexture() end function t:SetSize() end function t:SetPoint() end function t:SetVertexColor() end
           function t:SetShown(v) self.shown = v end
           return t
         end
@@ -1049,7 +1049,7 @@ class BagCoinTests(unittest.TestCase):
         self.assertIn("Update", list(self.lua.globals().FAKE.hooks.values()))   # Bagnon's Item:Update is hooked
         self.item(6040, price=1000, sell=100, reagent=True)
         slot = self.lua.globals().FAKE.Slot(6040, False)
-        self.lua.globals().BagBrother.Item.Update(slot)
+        self.lua.globals().Bagnon.Item.Update(slot)
         self.assertTrue(slot.GoldScoutCoin.shown)
         self.lua.globals().FAKE.prices[6040] = 150                             # the price falls under double
         self.bags.Refresh(self.bags)
