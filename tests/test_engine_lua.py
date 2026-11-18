@@ -842,5 +842,140 @@ class ContributorRankTests(unittest.TestCase):
         self.assertIsNone(self.rank())
 
 
+@unittest.skipIf(lua51 is None, "lupa is not installed")
+class MobDropsTests(unittest.TestCase):
+    """The drop rates window (MobDrops.lua): every item players have looted from one mob, and the
+    entry it adds to the target portrait's right-click menu."""
+    setUp_farm = FarmRulesTests.setUp
+    run_lua, run_file, item, drops = (FarmRulesTests.run_lua, FarmRulesTests.run_file,
+                                      FarmRulesTests.item, FarmRulesTests.drops)
+
+    def setUp(self):
+        self.setUp_farm()
+        self.run_lua(r"""
+        FAKE.units, FAKE.menus = {}, {}
+        UnitExists = function(unit) return FAKE.units[unit] ~= nil end
+        UnitIsPlayer = function(unit) return FAKE.units[unit] and FAKE.units[unit]:find("^Player") ~= nil end
+        UnitGUID = function(unit) return FAKE.units[unit] end
+        Menu = { ModifyMenu = function(tag, fn) FAKE.menus[tag] = fn end }
+        """)
+        self.run_file("MobDrops.lua")
+        self.drop_rows = self.ns.MobDrops.Rows
+
+    def shared(self, npc, kills, items, picks=0, picked=None):
+        entry = self.lua.eval("{ k = %d, p = %d, i = {}, pi = {} }" % (kills, picks))
+        for item_id, (times, quantity) in items.items():
+            entry.i[item_id] = self.lua.table_from({"d": times, "q": quantity})
+        for item_id, (times, quantity) in (picked or {}).items():
+            entry.pi[item_id] = self.lua.table_from({"d": times, "q": quantity})
+        self.ns.COMMUNITY[npc] = entry
+
+    def rows(self, npc):
+        rows, kills, picks = self.drop_rows(npc)
+        return [dict(row) for row in rows.values()], kills, picks
+
+    def target(self, guid):
+        self.lua.globals().FAKE.units.target = guid
+
+    def test_your_loot_and_the_communitys_add_up(self):
+        self.shared(3000, 90, {5001: (30, 60), 5002: (9, 9)})
+        self.drops(3000, kills=10, items={5001: 5, 5003: 1})
+        rows, kills, picks = self.rows(3000)
+        self.assertEqual((kills, picks), (100, 0))
+        self.assertEqual([row["item"] for row in rows], [5001, 5002, 5003])   # most often dropped first
+        first = rows[0]
+        self.assertEqual((first["drops"], first["quantity"], first["attempts"]), (35, 65, 100))
+        self.assertAlmostEqual(first["rate"], 0.35)
+        self.assertAlmostEqual(first["stack"], 65 / 35)
+
+    def test_pickpocketing_has_its_own_heading_and_attempts(self):
+        self.shared(3000, 20, {5001: (4, 4)}, picks=50, picked={5010: (10, 10)})
+        rows, kills, picks = self.rows(3000)
+        self.assertEqual((kills, picks), (20, 50))
+        self.assertEqual(rows[0]["attempts"], 20)
+        self.assertIn("50", rows[1]["heading"])
+        self.assertEqual((rows[2]["item"], rows[2]["attempts"], rows[2]["pick"]), (5010, 50, True))
+        self.assertAlmostEqual(rows[2]["rate"], 0.2)
+
+    def test_a_mob_nobody_has_looted_has_no_rows(self):
+        self.assertEqual(self.rows(4242), ([], 0, 0))
+
+    def test_drop_list_ignores_missing_records(self):
+        # pick = true reads only picks: a record with kills but no picks has nothing.
+        attempts, items = self.ns.Community.DropList(True, None, self.lua.eval("{ k = 5, i = { [1] = { d = 2, q = 2 } } }"))
+        self.assertEqual((attempts, len(items)), (0, 0))
+
+    def test_only_creatures_are_mobs(self):
+        npc_of = self.ns.MobDrops.NpcOf
+        self.target("Creature-0-1-2-3-3809-0000ABCDEF")
+        self.assertEqual(npc_of("target"), 3809)
+        self.target("Player-1234-00ABCDEF")
+        self.assertIsNone(npc_of("target"))
+        self.target("Pet-0-1-2-3-416-0000ABCDEF")
+        self.assertIsNone(npc_of("target"))
+        self.target(None)
+        self.assertIsNone(npc_of("target"))
+
+    def menu_buttons(self, tag="MENU_UNIT_TARGET", unit="target"):
+        root = self.lua.eval("""{ buttons = {},
+          CreateDivider = function() end, CreateTitle = function() end,
+          CreateButton = function(self, text, fn) self.buttons[#self.buttons + 1] = { text = text, fn = fn } end }""")
+        self.lua.globals().FAKE.menus[tag](None, root, self.lua.table_from({"unit": unit}))
+        return list(root.buttons.values())
+
+    def test_target_and_focus_menus_get_a_drop_rates_entry_for_mobs(self):
+        self.target("Creature-0-1-2-3-3809-0000ABCDEF")
+        buttons = self.menu_buttons()
+        self.assertEqual([button.text for button in buttons], ["Drop rates"])
+        self.assertIsNotNone(self.lua.globals().FAKE.menus["MENU_UNIT_FOCUS"])
+        self.target("Player-1234-00ABCDEF")
+        self.assertEqual(self.menu_buttons(), [])
+
+    def open_window(self, npc):
+        """Opens the window with a stand-in for the game's frames; returns every text it set."""
+        self.run_lua(r"""
+        FAKE.texts = {}
+        local function Widget()
+          return setmetatable({}, { __index = function(_, key)
+            return function(self, value)
+              if key == "SetText" then FAKE.texts[#FAKE.texts + 1] = tostring(value) end
+              if key == "Show" then rawset(self, "shown", true) end
+              if key == "Hide" then rawset(self, "shown", false) end
+              if key == "IsShown" then return rawget(self, "shown") end
+              if key == "CreateFontString" or key == "CreateTexture" then return Widget() end
+            end
+          end })
+        end
+        CreateFrame = function() return Widget() end
+        UISpecialFrames = {}
+        """)
+        self.ns.MobDrops.Show(self.ns.MobDrops, npc)
+        return "\n".join(self.lua.globals().FAKE.texts.values())
+
+    def test_window_shows_the_mob_and_its_drops(self):
+        self.item(5001, price=1000, name="Gooey Spider Leg")
+        self.shared(3000, 40, {5001: (10, 20)}, picks=8, picked={5010: (2, 2)})
+        self.drops(3000, kills=5, items={5001: 2}, name="Webwood Spider")
+        texts = self.open_window(3000)
+        self.assertIn("Webwood Spider", texts)
+        self.assertIn("45 kills recorded by GoldScout players, 5 of them yours.", texts)
+        self.assertIn("Gooey Spider Leg", texts)
+        self.assertIn("27%", texts)                      # 12 of 45 kills
+        self.assertIn("Pickpocketing: 8 picks", texts)
+        self.assertIn("wowgoldscout.com/mob/3000", texts)
+        self.assertEqual(list(self.ns.db.errors.values()), [])
+
+    def test_window_for_a_mob_nobody_has_looted(self):
+        texts = self.open_window(4242)
+        self.assertIn("Nobody has recorded loot from this mob yet.", texts)
+        self.assertNotIn("wowgoldscout.com", texts)       # no page on the website for it
+
+    def test_a_menu_error_is_recorded_not_raised(self):
+        self.target("Creature-0-1-2-3-3809-0000ABCDEF")
+        broken = self.lua.eval("{ CreateButton = function() error('menu changed') end }")
+        self.lua.globals().FAKE.menus["MENU_UNIT_TARGET"](None, broken, self.lua.table_from({"unit": "target"}))
+        self.assertIn("menu changed", self.ns.db.errors[1].m)
+
+
 if __name__ == "__main__":
     unittest.main()

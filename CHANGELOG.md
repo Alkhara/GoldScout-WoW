@@ -7,6 +7,7 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- **Every drop from a mob, one right-click away:** target a mob, right-click its portrait and choose **Drop rates**. A window lists everything GoldScout players have looted from it, your own loot included: each item's drop chance, what it's worth and what it adds per kill, with pickpocketing listed separately. `/gscout drops` opens it for your target too.
 - **GoldScout en español:** GoldScout now speaks Spanish on Spanish game clients (Spain and Latin America). It's a new translation; corrections are welcome on GitHub.
 - Fixed a Lua error from Blizzard's Sell tab ("attempt to compare nil with number") when a price scan ran while an item sat in the Sell tab: the scan now pauses while the Sell tab is open and carries on when you leave it.
 

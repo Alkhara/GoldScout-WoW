@@ -177,6 +177,48 @@ function Community.SubtractFish(community, fishing, cap)
   end
 end
 
+-- Every item recorded from one mob, for its drop rates window: one or more
+-- drop records for it (your own, the community's; either may be nil), corpse
+-- loot or, with pick, pickpocketing. Returns the kills (or picks) behind it and
+-- { { item, drops, quantity, rate, stack } }, the most often dropped first.
+function Community.DropList(pick, ...)
+  local attempts, drops, quantity = 0, {}, {}
+  for i = 1, select("#", ...) do
+    local entry = select(i, ...)
+    if entry then
+      local tries, items
+      if pick then
+        tries, items = entry.p, entry.pi
+      else
+        tries, items = entry.k, entry.i
+      end
+      attempts = attempts + (tries or 0)
+      for itemID, stat in pairs(items or {}) do
+        drops[itemID] = (drops[itemID] or 0) + (stat.d or 0)
+        quantity[itemID] = (quantity[itemID] or 0) + (stat.q or 0)
+      end
+    end
+  end
+  local list = {}
+  if attempts == 0 then
+    return 0, list
+  end
+  for itemID, count in pairs(drops) do
+    if count > 0 then
+      local total = math.max(count, quantity[itemID])
+      list[#list + 1] = { item = itemID, drops = count, quantity = total, rate = math.min(1, count / attempts),
+                          stack = total / count }
+    end
+  end
+  table.sort(list, function(a, b)
+    if a.drops ~= b.drops then
+      return a.drops > b.drops
+    end
+    return a.item < b.item
+  end)
+  return attempts, list
+end
+
 -- Your saved loot (GoldScoutDB.drops) in the same shape ParseExport returns.
 function Community.MobsFromDrops(drops)
   local mobs = {}

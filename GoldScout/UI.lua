@@ -498,6 +498,7 @@ local function LinkInChat(itemID)
     ChatFrameUtil.InsertLink(link)
   end
 end
+UI.LinkInChat = LinkInChat   -- the drop rates window's rows link items too
 
 -- Shift-click links the item; a plain click selects the farm for the Hunt button.
 local function RowOnClick(self)
@@ -1730,6 +1731,7 @@ local function PrintHelp()
   print(L["  /gscout - show or hide the window"])
   print(L["  /gscout farm | craft - open a tab"])
   print(L["  /gscout wanted - mobs that need more kills for solid drop rates"])
+  print(L["  /gscout drops - everything your target drops (or right-click its portrait)"])
   print(L["  /gscout options - open GoldScout's settings"])
   print(L["  /gscout scan - scan prices (auction house must be open)"])
   print(L["  /gscout hunt - show the current hunt; /gscout hunt stop | history"])
@@ -1839,6 +1841,8 @@ function UI:HandleSlash(message)
   elseif command == "wanted" then
     self:Show("farm")
     self:SetFarmView("wanted")
+  elseif command == "drops" then
+    ns.MobDrops:ShowTarget()
   elseif command == "options" or command == "settings" or command == "config" then
     ns.Options:Open()
   elseif command == "welcome" then

@@ -372,6 +372,20 @@ local strings = {
   ["Kills wanted: %s needs %d more for solid drop rates."] = "Se buscan muertes: a %s le faltan %d para tener tasas de botín fiables.",
   ["Every mob players have recorded near your level has solid drop rates. Try 'All levels'."] = "Todos los enemigos que los jugadores han registrado cerca de tu nivel tienen tasas de botín fiables. Prueba 'Todos los niveles'.",
   ["  /gscout wanted - mobs that need more kills for solid drop rates"] = "  /gscout wanted - enemigos que necesitan más muertes para tasas de botín fiables",
+  ["Pickpocketing: %d picks (values per pick)"] = "Robar: %d robos (valores por robo)",
+  ["Found in %d of %d picks."] = "Encontrado en %d de %d robos.",
+  ["Dropped in %d of %d kills."] = "Cayó en %d de %d muertes.",
+  ["Per kill"] = "Por muerte",
+  ["On the website:"] = "En la web:",
+  ["Nobody has recorded loot from this mob yet. Kill it a few times and share your loot to add it."] = "Nadie ha registrado botín de este enemigo todavía. Mátalo unas cuantas veces y comparte tu botín para añadirlo.",
+  ["%d kills recorded by GoldScout players, %d of them yours."] = "%d muertes registradas por jugadores de GoldScout, %d de ellas tuyas.",
+  ["%d kills recorded by GoldScout players."] = "%d muertes registradas por jugadores de GoldScout.",
+  ["That's only a few, so these rates are a rough guide."] = "Son pocas aún, así que estas tasas son solo orientativas.",
+  ["Players have killed it, but it hasn't dropped any items yet."] = "Los jugadores lo han matado, pero aún no ha soltado ningún objeto.",
+  ["Loot averages %s per kill, counting items seen at least %d times. Coin isn't recorded."] = "El botín promedia %s por muerte, contando objetos vistos al menos %d veces. Las monedas no se registran.",
+  ["Target a mob first, then try again."] = "Selecciona primero un enemigo como objetivo y vuelve a intentarlo.",
+  ["Drop rates"] = "Tasas de botín",
+  ["  /gscout drops - everything your target drops (or right-click its portrait)"] = "  /gscout drops - todo lo que suelta tu objetivo (o clic derecho en su retrato)",
 }
 ns.AddLocale("esES", strings)
 ns.AddLocale("esMX", strings)
