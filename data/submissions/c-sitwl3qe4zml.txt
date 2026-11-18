@@ -1,4 +1,4 @@
-GoldScout-export 5^sitwl3qe4zml^6
+GoldScout-export 5^sitwl3qe4zml^7
 1040^1^0^25^25^1437^0.5423^0.4201^1^Fen Creeper^2220:1:1^
 1417^1^0^21^22^1437^0.5293^0.3736^1^Young Wetlands Crocolisk^770:1:1^
 1523^1^0^8^8^1420^0.4764^0.2761^1^Cracked Skull Soldier^^
@@ -11,6 +11,7 @@ GoldScout-export 5^sitwl3qe4zml^6
 2356^2^0^25^25^1424^0.8289^0.5168^2^Elder Gray Bear^3730:1:1,11406:1:1,11407:1:1,211854:1:1^
 3238^5^0^22^23^1413^0.4782^0.7975^5^Stormhide^5128:1:1,5133:2:2,5470:4:4,211855:1:1^
 3249^1^0^24^24^1413^0.4691^0.7844^1^Greater Thunderhawk^17056:1:1^
+3263^3^0^19^20^1413^0.5090^0.5740^3^Bristleback Geomancer^2589:1:1,2592:1:2,5075:2:3^
 3415^2^0^11^12^1413^0.5129^0.1554^2^Savannah Huntress^^
 3712^3^0^19^20^1440^0.1280^0.3090^3^Wrathtail Razortail^2764:1:1,5490:1:1,5523:1:1^
 3713^9^0^18^19^1440^0.1357^0.2380^9^Wrathtail Wave Rider^3012:1:1,5490:8:8,5523:1:1,16656:1:1^
@@ -29,8 +30,15 @@ GoldScout-export 5^sitwl3qe4zml^6
 3823^3^0^19^20^1440^0.2120^0.4149^3^Ghostpaw Runner^1015:3:3^
 3844^3^0^24^24^1440^0.4017^0.3296^3^Healing Ward IV^^
 3851^2^0^0^0^0^0.0000^0.0000^0^^^
-3853^2^0^0^0^0^0.0000^0.0000^0^^^
+3853^4^0^0^0^0^0.0000^0.0000^0^^2780:1:1^
+3855^2^0^0^0^0^0.0000^0.0000^0^^6915:1:1^
+3857^1^0^0^0^0^0.0000^0.0000^0^^^
+3859^4^0^0^0^0^0.0000^0.0000^0^^1799:1:1^
 3861^1^0^0^0^0^0.0000^0.0000^0^^3402:1:1^
+3863^2^0^0^0^0^0.0000^0.0000^0^^3301:1:1^
+3873^2^0^0^0^0^0.0000^0.0000^0^^2592:1:2,2782:1:1^
+3875^5^0^0^0^0^0.0000^0.0000^0^^1205:1:1,1712:1:1,2592:2:8,4606:1:1^
+3877^2^0^0^0^0^0.0000^0.0000^0^^2592:2:6^
 3914^1^0^0^0^0^0.0000^0.0000^0^^^
 3917^1^0^24^25^1440^0.4614^0.6826^1^Befouled Water Elemental^9451:1:1^
 3921^4^0^23^24^1440^0.4007^0.3228^4^Thistlefur Ursa^2592:2:3,2765:1:1,16646:1:1,16651:1:1,16656:1:1^
@@ -40,6 +48,8 @@ GoldScout-export 5^sitwl3qe4zml^6
 3926^2^0^24^24^1440^0.3819^0.3620^2^Thistlefur Pathfinder^2592:2:3^
 3928^6^0^20^22^1440^0.7220^0.7284^6^Rotting Slime^3669:2:2,3670:1:1,3676:3:3,16648:1:1,16651:1:1^
 4128^6^0^22^23^1413^0.4864^0.7755^6^Hecklefang Stalker^3301:3:3,3402:2:2^
+4275^1^0^0^0^0^0.0000^0.0000^0^^^
+4279^1^0^0^0^0^0.0000^0.0000^0^^2782:1:1,6318:1:1^
 4789^2^0^21^22^1414^0.4408^0.3475^2^Fallenroot Rogue^1818:1:1^
 4798^4^0^0^0^0^0.0000^0.0000^0^^2592:1:2^
 4802^1^0^21^21^1414^0.4403^0.3457^1^Blackfathom Tide Priestess^5524:1:1,16790:1:1,17057:1:1^
@@ -90,12 +100,14 @@ GoldScout-export 5^sitwl3qe4zml^6
 @i^1288^Large Venom Sac
 @i^1468^Murloc Fin
 @i^1475^Small Venom Sac
+@i^1712^Scroll of Spirit II
 @i^1748^Linked Chain Bracers
 @i^1766^Canvas Cloak
 @i^1774^Brocade Cloak
 @i^1775^Brocade Gloves
 @i^1776^Brocade Pants
 @i^1797^Rawhide Bracers
+@i^1799^Rawhide Gloves
 @i^1818^Standard Claymore
 @i^1822^Cedar Walking Stick
 @i^2216^Simple Buckler
@@ -108,6 +120,8 @@ GoldScout-export 5^sitwl3qe4zml^6
 @i^2675^Crawler Claw
 @i^2764^Small Dagger
 @i^2765^Hunting Knife
+@i^2780^Light Hunting Bow
+@i^2782^Mishandled Recurve Bow
 @i^2940^Bloody Bear Paw
 @i^3010^Fine Sand
 @i^3012^Scroll of Agility
@@ -129,7 +143,9 @@ GoldScout-export 5^sitwl3qe4zml^6
 @i^4428^Spider Palp
 @i^4538^Snapvine Watermelon
 @i^4556^Speckled Shell Fragment
+@i^4606^Spongy Morel
 @i^4874^Clean Fishbones
+@i^5075^Blood Shard
 @i^5116^Long Tail Feather
 @i^5128^Shed Lizard Skin
 @i^5133^Seeping Gizzard
@@ -143,7 +159,9 @@ GoldScout-export 5^sitwl3qe4zml^6
 @i^6289^Raw Longjaw Mud Snapper
 @i^6291^Raw Brilliant Smallfish
 @i^6308^Raw Bristle Whisker Catfish
+@i^6318^Odo's Ley Staff
 @i^6914^Soran'ruk Fragment
+@i^6915^Large Soran'ruk Fragment
 @i^7070^Elemental Water
 @i^9451^Bubbling Water
 @i^11406^Rotting Bear Carcass
@@ -184,12 +202,14 @@ GoldScout-export 5^sitwl3qe4zml^6
 @q^1288^1:7:1
 @q^1468^1:7:1
 @q^1475^1:7:1
+@q^1712^1:0:0
 @q^1748^0:4:0
 @q^1766^0:4:0
 @q^1774^0:4:0
 @q^1775^0:4:0
 @q^1776^0:4:0
 @q^1797^0:4:0
+@q^1799^0:4:0
 @q^1818^0:2:0
 @q^1822^0:2:0
 @q^2216^0:4:0
@@ -202,6 +222,8 @@ GoldScout-export 5^sitwl3qe4zml^6
 @q^2675^1:7:1
 @q^2764^0:2:0
 @q^2765^0:2:0
+@q^2780^0:2:0
+@q^2782^0:2:0
 @q^2940^0:15:0
 @q^3010^0:15:0
 @q^3012^1:0:0
@@ -223,7 +245,9 @@ GoldScout-export 5^sitwl3qe4zml^6
 @q^4428^0:15:0
 @q^4538^1:0:0
 @q^4556^0:15:0
+@q^4606^1:0:0
 @q^4874^0:15:0
+@q^5075^1:12:0
 @q^5116^1:7:1
 @q^5128^0:15:0
 @q^5133^0:15:0
@@ -237,7 +261,9 @@ GoldScout-export 5^sitwl3qe4zml^6
 @q^6289^1:7:1
 @q^6291^1:7:1
 @q^6308^1:7:1
+@q^6318^3:2:0
 @q^6914^1:12:0
+@q^6915^1:12:0
 @q^7070^1:7:1
 @q^9451^1:0:0
 @q^11406^0:15:0
@@ -645,6 +671,7 @@ GoldScout-export 5^sitwl3qe4zml^6
 @a^2356^197:1,215:1
 @a^3238^309:3,329:2
 @a^3249^309:1
+@a^3263^230:3
 @a^3415^70:2
 @a^3712^122:3
 @a^3713^62:1,63:1,82:2,83:1,102:4
