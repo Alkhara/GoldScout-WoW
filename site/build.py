@@ -784,6 +784,14 @@ svg.area { display: block; width: 100%; height: auto; }
 .guide-farm summary { cursor: pointer; color: var(--link); }
 .ingame { border-left: 3px solid var(--gold); background: var(--panel); border-radius: 0 8px 8px 0; padding: 10px 14px; margin: 12px 0; font-size: 15px; }
 .guide-farm .scroll, .guide-levels { overflow-x: auto; }
+.trend { display: inline-block; font-size: 13px; font-weight: 600; padding: 1px 8px; border-radius: 999px; border: 1px solid; white-space: nowrap; font-variant-numeric: tabular-nums; }
+td .trend { padding: 0 6px; }
+.trend.rising { color: #7fe0a0; border-color: rgba(127,224,160,.4); background: rgba(127,224,160,.08); }
+.trend.cooling { color: #ffab9a; border-color: rgba(255,171,154,.4); background: rgba(255,171,154,.08); }
+.trend.steady { color: var(--muted); border-color: rgba(159,182,191,.3); }
+.trend.new { color: var(--link); border-color: rgba(143,211,255,.4); background: rgba(143,211,255,.08); }
+.guide-week { border: 1px solid var(--line); border-radius: 12px; padding: 4px 18px 10px; margin: 18px 0; }
+.guide-week ul { padding-left: 20px; } .guide-week li { margin: 4px 0; }
 @media (max-width: 1000px) { .guide-farm .cols { grid-template-columns: minmax(0, 1fr); } .guide-farm figure.area-map { max-width: 520px; } }
 .area-art rect { fill: #2bff5e; stroke: #04310f; stroke-width: 2; }
 svg.area .bg { fill: var(--bg2); stroke: var(--line); stroke-width: 1; }

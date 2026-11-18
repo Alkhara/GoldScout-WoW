@@ -6,6 +6,10 @@ latest auction prices, fetched when the site builds (so they're in the page for 
 filled in by prices.js). The value of a kill is the add-on's: drop chance x average stack x lowest buyout,
 after the auction house cut; mobs are ranked by the low end of the drop chance's range, so a lucky few kills
 can't top a list. English for now: these paths aren't in data_pages.LOCAL_PAGES, so no language switch.
+
+Trends: the server keeps each auction house's first snapshot of every day for 30 days (?ago=7), so each farm's
+main item is labelled rising, steady, cooling or new against a week ago, and "What changed this week" ranks the
+same farms at last week's prices to show what entered or left the top list and which prices moved most.
 """
 import json
 import time
@@ -22,6 +26,10 @@ AH_CUT = data_pages.addon_number("Core.lua", "AH_CUT")   # you keep this share o
 TOP = 3                     # farms in a guide's top list, each for a different item
 MINOR = 0.02                # drops worth less than this share of a farm's kill are left out of its table
 FETCH_TIMEOUT = 20
+WEEK = 7                    # days back for trends
+RISING, COOLING = 1.15, 0.85   # a week's price change past these is "rising" or "cooling"
+MOVERS = 6                  # biggest price moves listed under "What changed this week"
+MOVER_FARMS = 15            # among the main items of this many top farms
 
 
 # -- prices -----------------------------------------------------------------
@@ -31,10 +39,30 @@ def get_json(url, opener=urllib.request.urlopen, timeout=FETCH_TIMEOUT):
         return json.loads(response.read().decode("utf-8"))
 
 
+def price_pairs(body):
+    """{itemID: (copper, quantity)} from a price response, skipping anything malformed."""
+    prices = {}
+    for item, pair in ((body or {}).get("prices") or {}).items():
+        if isinstance(pair, list) and len(pair) >= 2 and item.isdigit():
+            prices[int(item)] = (int(pair[0]), int(pair[1]))
+    return prices
+
+
+def fetch_week(api, house, fetch):
+    """The house's prices about a week ago: {day, prices}, or None (too new, or the server has none)."""
+    try:
+        body = fetch("%s/v1/prices/%s/%d?ago=%d" % (api, house["region"], house["house"], WEEK))
+    except (OSError, ValueError, urllib.error.URLError):
+        return None
+    prices = price_pairs(body)
+    return {"day": str(body.get("day") or ""), "prices": prices} if prices else None
+
+
 def fetch_markets(api=API_URL, fetch=get_json):
-    """Every faction auction house with prices: [{region, house, ruleset, faction, snapshot, prices}], prices
-    {itemID: (lowest unit buyout in copper, quantity listed)}. The neutral Blackwater houses are left out (a
-    guide is where your character sells). Returns [] if the server can't be reached, so the site still builds."""
+    """Every faction auction house with prices: [{region, house, ruleset, faction, snapshot, prices, week}],
+    prices {itemID: (lowest unit buyout in copper, quantity listed)}, week the same about a week ago ({day,
+    prices}, or None). The neutral Blackwater houses are left out (a guide is where your character sells).
+    Returns [] if the server can't be reached, so the site still builds."""
     try:
         listing = fetch(api + "/v1/prices")
     except (OSError, ValueError, urllib.error.URLError) as error:
@@ -50,12 +78,9 @@ def fetch_markets(api=API_URL, fetch=get_json):
         except (OSError, ValueError, urllib.error.URLError) as error:
             print("Guide skipped for %s house %s: %s" % (house["region"], house["house"], error))
             continue
-        prices = {}
-        for item, pair in (body.get("prices") or {}).items():
-            if isinstance(pair, list) and len(pair) >= 2 and item.isdigit():
-                prices[int(item)] = (int(pair[0]), int(pair[1]))
         markets.append({"region": house["region"], "house": house["house"], "ruleset": house["rulesetName"],
-                        "faction": house["faction"], "snapshot": int(house.get("snapshot") or 0), "prices": prices})
+                        "faction": house["faction"], "snapshot": int(house.get("snapshot") or 0),
+                        "prices": price_pairs(body), "week": fetch_week(api, house, fetch)})
     markets.sort(key=lambda m: (list(REGIONS).index(m["region"]), m["ruleset"], m["faction"]))
     return markets
 
@@ -117,6 +142,89 @@ def by_level(data, ranked):
     for farm in ranked:
         best.setdefault(data.bracket(farm["npc"]), farm)
     return [(bracket, best[bracket]) for bracket in data_pages.BRACKETS if bracket in best]
+
+
+# -- trends -----------------------------------------------------------------
+def trend(market, item):
+    """How an item's price moved in a week: ("rising" | "steady" | "cooling" | "new", change as a fraction or
+    None), or None when there's no week-old snapshot to compare with (or no price now)."""
+    week = market.get("week")
+    if not week:
+        return None
+    now, _ = market["prices"].get(item, (0, 0))
+    then, listed = week["prices"].get(item, (0, 0))
+    if now <= 0:
+        return None
+    if then <= 0 or listed <= 0:
+        return "new", None
+    change = now / then - 1
+    if now >= then * RISING:
+        return "rising", change
+    if now <= then * COOLING:
+        return "cooling", change
+    return "steady", change
+
+
+def trend_badge(market, item):
+    """<span class="trend rising">Rising, +18% this week</span>, or "" without a week to compare."""
+    found = trend(market, item)
+    if not found:
+        return ""
+    label, change = found
+    if label == "new":
+        text = "New: not listed a week ago"
+    elif label == "steady":
+        text = "Steady this week"
+    else:
+        text = "%s, %+d%% this week" % (label.capitalize(), round(change * 100))
+    return '<span class="trend %s">%s</span>' % (label, text)
+
+
+def week_cell(market, item):
+    """+18%, -12%, new, or a dash, for a drop table's This week column."""
+    found = trend(market, item)
+    if not found:
+        return "&ndash;"
+    label, change = found
+    if label == "new":
+        return '<span class="trend new">new</span>'
+    return '<span class="trend %s">%+d%%</span>' % (label, round(change * 100))
+
+
+def places(ranked):
+    """{main item: its place in the top list} (1 = best), one place per item, as top() counts them."""
+    found = {}
+    for farm in ranked:
+        found.setdefault(farm["parts"][0]["item"], len(found) + 1)
+    return found
+
+
+def changes(data, market, ranked):
+    """(entered, left, moves) against a week ago, or None without a week-old snapshot. entered and left are
+    [(farm, place)]: farms new to the top list with their place a week ago (None if not ranked then), and farms
+    that left it with their place now (None if not ranked now). moves: [(item, then, now, change)] for the top
+    farms' main items that rose or cooled, biggest first. Both weeks are ranked with today's drop rates, so
+    only prices differ."""
+    week = market.get("week")
+    if not week:
+        return None
+    before = farms(data, week["prices"])
+    places_now, places_then = places(ranked), places(before)
+    picked_now, picked_then = top(ranked), top(before)
+    items_now = {farm["parts"][0]["item"] for farm in picked_now}
+    items_then = {farm["parts"][0]["item"] for farm in picked_then}
+    entered = [(farm, places_then.get(farm["parts"][0]["item"])) for farm in picked_now
+               if farm["parts"][0]["item"] not in items_then]
+    left = [(farm, places_now.get(farm["parts"][0]["item"])) for farm in picked_then
+            if farm["parts"][0]["item"] not in items_now]
+    moves = []
+    for farm in top(ranked, MOVER_FARMS):
+        item = farm["parts"][0]["item"]
+        found = trend(market, item)
+        if found and found[0] in ("rising", "cooling"):
+            moves.append((item, week["prices"][item][0], market["prices"][item][0], found[1]))
+    moves.sort(key=lambda move: (-abs(move[3]), move[0]))
+    return entered, left, moves[:MOVERS]
 
 
 # -- pages ------------------------------------------------------------------
@@ -191,26 +299,64 @@ def in_game(data, farm, links):
             % (item, mob, links["curseforge"]))
 
 
-def farm_card(data, rank, farm, prices, links):
+def farm_card(data, rank, farm, market, links):
     npc, main = farm["npc"], farm["parts"][0]
     where = data_pages.zone_link(data, npc)
     levels = data.levels(npc)
     head = "%d. %s from %s" % (rank, data_pages.item_link(data, main["item"]), data_pages.mob_link(data, npc))
     place = ", ".join(part for part in (where, "level %s" % levels if levels else "") if part)
     shown = [part for part in farm["parts"] if part["per_kill"] >= MINOR * farm["per_kill"]]
+    weekly = bool(market.get("week"))
     rows = "".join(
-        "<tr><td>%s</td><td class=num>%s</td><td class=num>%s</td><td class=num>%s</td><td class=num>%s</td></tr>"
+        "<tr><td>%s</td><td class=num>%s</td><td class=num>%s</td><td class=num>%s</td><td class=num>%s</td>%s</tr>"
         % (data_pages.item_link(data, part["item"]), data_pages.chance(part["rate"], farm["kills"]),
-           money(part["price"]), data_pages.num(part["listed"]), money(part["per_kill"]))
+           money(part["price"]), data_pages.num(part["listed"]), money(part["per_kill"]),
+           "<td class=num>%s</td>" % week_cell(market, part["item"]) if weekly else "")
         for part in shown)
+    badge = trend_badge(market, main["item"])
     return ('<section class=guide-farm><h3>%s</h3><p class=sub>%s</p><div class=cols><div>'
-            '<p><b>%s an hour</b> at %d kills an hour, from %s kills recorded by GoldScout players.</p>'
+            '<p><b>%s an hour</b> at %d kills an hour, from %s kills recorded by GoldScout players.%s</p>'
             '<div class=scroll><table><thead><tr><th>Drop</th><th class=num>Chance</th><th class=num>Lowest buyout'
-            '</th><th class=num>Listed now</th><th class=num>Per kill</th></tr></thead><tbody>%s</tbody></table></div>'
-            '%s%s<p class=small><a href="%s">Everything about %s</a></p></div>%s</div></section>'
-            % (head, place, hour_range(farm), data_pages.KILLS_PER_HOUR, data_pages.num(farm["kills"]), rows,
-               loot_table(data, npc, farm["kills"], prices), in_game(data, farm, links), P("/mob/%d" % npc),
-               e(data.mob_name(npc)), where_figure(data, npc)))
+            '</th><th class=num>Listed now</th><th class=num>Per kill</th>%s</tr></thead><tbody>%s</tbody></table>'
+            '</div>%s%s<p class=small><a href="%s">Everything about %s</a></p></div>%s</div></section>'
+            % (head, place, hour_range(farm), data_pages.KILLS_PER_HOUR, data_pages.num(farm["kills"]),
+               " " + badge if badge else "", "<th class=num>This week</th>" if weekly else "", rows,
+               loot_table(data, npc, farm["kills"], market["prices"]), in_game(data, farm, links),
+               P("/mob/%d" % npc), e(data.mob_name(npc)), where_figure(data, npc)))
+
+
+def week_section(data, market, ranked):
+    """What changed this week: farms that entered or left the top list, and the biggest price moves."""
+    found = changes(data, market, ranked)
+    if found is None:
+        return ""
+    entered, left, moves = found
+    since = market["week"]["day"]
+    try:
+        since = time.strftime("%d %b", time.strptime(since, "%Y-%m-%d")).lstrip("0")
+    except ValueError:
+        pass
+    lines = []
+    for farm, then in entered:
+        lines.append("<li><b>New in the top %d:</b> %s from %s (%s a week ago)</li>"
+                     % (TOP, data_pages.item_link(data, farm["parts"][0]["item"]),
+                        data_pages.mob_link(data, farm["npc"]), "#%d" % then if then else "not ranked"))
+    for farm, now in left:
+        lines.append("<li><b>Out of the top %d:</b> %s from %s (%s now)</li>"
+                     % (TOP, data_pages.item_link(data, farm["parts"][0]["item"]),
+                        data_pages.mob_link(data, farm["npc"]), "#%d" % now if now else "not listed now"))
+    if not lines:
+        lines.append("<li>The top %d is the same as a week ago.</li>" % TOP)
+    moved = ""
+    if moves:
+        moved = "<h3>Biggest price moves among the top farms</h3><ul class=moves>%s</ul>" % "".join(
+            '<li>%s: %s &rarr; %s <span class="trend %s">%+d%%</span></li>'
+            % (data_pages.item_link(data, item), money(then), money(now), "rising" if change > 0 else "cooling",
+               round(change * 100))
+            for item, then, now, change in moves)
+    return ("<section class=guide-week><h2>What changed this week</h2><p class=sub>Since %s, with today's drop "
+            "rates both weeks, so only prices changed.</p><ul>%s</ul>%s</section>"
+            % (e(since), "".join(lines), moved))
 
 
 def market_page(data, market, ranked, markets, links):
@@ -221,7 +367,8 @@ def market_page(data, market, ranked, markets, links):
     if picks:
         first = picks[0]
         sections.append("<h2>The top %d right now</h2>" % len(picks))
-        sections += [farm_card(data, rank, farm, market["prices"], links) for rank, farm in enumerate(picks, 1)]
+        sections += [farm_card(data, rank, farm, market, links) for rank, farm in enumerate(picks, 1)]
+        sections.append(week_section(data, market, ranked))
         levels = by_level(data, ranked)
         if levels:
             rows = "".join(
@@ -267,9 +414,13 @@ def index_page(data, markets, ranked):
     rows = []
     for market in markets:
         picks = top(ranked[slug(market)], 1)
-        best = ("%s from %s, %s an hour" % (data_pages.item_link(data, picks[0]["parts"][0]["item"]),
-                                           data_pages.mob_link(data, picks[0]["npc"]), hour_range(picks[0]))
-                if picks else "not enough data yet")
+        if picks:
+            badge = trend_badge(market, picks[0]["parts"][0]["item"])
+            best = "%s from %s, %s an hour%s" % (data_pages.item_link(data, picks[0]["parts"][0]["item"]),
+                                                data_pages.mob_link(data, picks[0]["npc"]), hour_range(picks[0]),
+                                                " " + badge if badge else "")
+        else:
+            best = "not enough data yet"
         rows.append('<tr><td><a href="%s">%s</a></td><td>%s</td></tr>'
                     % (P("/guides/" + slug(market)), e(market_name(market)), best))
     if rows:

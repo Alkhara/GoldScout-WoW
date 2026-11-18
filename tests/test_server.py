@@ -470,6 +470,28 @@ class ServerTests(unittest.TestCase):
         self.assertIsNone(raw("/v1/prices/kr/%d" % unmapped)[1]["ruleset"])
         self.assertEqual(raw("/v1/prices/kr/1")[0], 404)
 
+    def test_each_days_first_snapshot_is_kept_for_trends(self):
+        house = random.randint(100000, 999999)
+        now = int(time.time())
+        day = 86400
+        # Snapshots 9 days ago (two that day: the first is kept) and today.
+        nine = now - 9 * day
+        self.assertEqual(self.put_prices(house, nine, '{"2589":[10,100]}')[0], 200)
+        self.assertEqual(self.put_prices(house, nine + 60, '{"2589":[99,100]}')[0], 200)
+        self.assertEqual(self.put_prices(house, now - 60, '{"2589":[15,200]}')[0], 200)
+
+        status, week = raw("/v1/prices/kr/%d?ago=7" % house)   # no snapshot 7 days ago: the nearest day before
+        self.assertEqual(status, 200)
+        self.assertEqual(week["prices"], {"2589": [10, 100]})
+        self.assertEqual(week["day"], time.strftime("%Y-%m-%d", time.gmtime(nine)))
+        self.assertEqual(week["snapshot"], nine)
+        self.assertIn("Blizzard", week["source"])
+        self.assertEqual(raw("/v1/prices/kr/%d" % house)[1]["prices"], {"2589": [15, 200]})   # current unchanged
+        self.assertEqual(raw("/v1/prices/kr/%d?ago=10" % house)[0], 404)                       # nothing that old
+        for bad in ("0", "30", "x", "-1"):
+            with self.subTest(bad):
+                self.assertEqual(raw("/v1/prices/kr/%d?ago=%s" % (house, bad))[0], 400)
+
     def test_prices_need_admin_and_valid_input(self):
         now = int(time.time())
         house = random.randint(100000, 999999)
@@ -732,13 +754,13 @@ class CronTests(unittest.TestCase):
         raw("/v1/leaderboard/me", json.dumps({"public": False}), headers, "PUT")
 
     def test_each_cron_starts_its_workflow(self):
-        for cron, workflow in (("7,22,37,52 * * * *", "ah-prices.yml"), ("17 * * * *", "data-merge.yml"),
-                               ("0 15 * * *", "data-release.yml")):
+        for cron, workflows in (("7,22,37,52 * * * *", ["ah-prices.yml"]), ("17 * * * *", ["data-merge.yml"]),
+                                ("0 15 * * *", ["data-release.yml", "site-refresh.yml"])):
             with self.subTest(cron):
                 self.run_cron(cron)
                 self.assertEqual(self.started(), [(
                     "/repos/Alkhara/GoldScout-WoW/actions/workflows/%s/dispatches" % workflow,
-                    "Bearer local-dispatch-token", {"ref": "main"})])
+                    "Bearer local-dispatch-token", {"ref": "main"}) for workflow in workflows])
 
     def test_other_crons_start_nothing(self):
         self.run_cron("0 0 * * *")

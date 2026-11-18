@@ -139,9 +139,73 @@ class PageTests(unittest.TestCase):
         self.assertIn("Everything players have looted from it (2 items)", body)   # the Coyote: meat and scraps
         self.assertIn("<td class=num>&ndash;</td>", body)                      # scraps aren't listed here
 
+    def test_no_week_old_prices_no_trends(self):
+        body = self.pages["guides/us/pvp-horde.html"][2]
+        self.assertNotIn("What changed this week", body)
+        self.assertNotIn("This week</th>", body)
+        self.assertNotIn('class="trend', body)
+
     def test_nothing_ranked_yet(self):
         title, _, body = guides.market_page(self.data, self.market, [], [self.market], LINKS)
         self.assertIn("No farm on US PvP Horde", body)
+
+class TrendTests(unittest.TestCase):
+    """A week ago: Coyote Meat cheaper (now rising), Bear Gall Bladder dearer (now cooling, and the bear was #1),
+    Big Bear Meat not listed (new)."""
+    WEEK = {2673: (1000, 150), 3702: (9000, 10)}
+
+    def setUp(self):
+        self.data = dataset()
+        self.market = {"region": "us", "house": 113, "ruleset": "PvP", "faction": "Horde", "snapshot": 1794986707,
+                       "prices": PRICES, "week": {"day": "2026-11-11", "prices": self.WEEK}}
+        self.ranked = guides.farms(self.data, PRICES)
+
+    def test_labels(self):
+        self.assertEqual(guides.trend(self.market, 2673), ("rising", 0.55))
+        label, change = guides.trend(self.market, 3702)
+        self.assertEqual(label, "cooling")
+        self.assertAlmostEqual(change, 2000 / 9000 - 1)
+        self.assertEqual(guides.trend(self.market, 3730), ("new", None))
+        self.assertIsNone(guides.trend(self.market, 2934))                       # no price now
+        self.assertIsNone(guides.trend(dict(self.market, week=None), 2673))    # nothing to compare with
+        steady = dict(self.market, week={"day": "x", "prices": {2673: (1500, 1)}})
+        self.assertEqual(guides.trend(steady, 2673)[0], "steady")
+        self.assertIn("Rising, +55% this week", guides.trend_badge(self.market, 2673))
+
+    def test_what_changed(self):
+        entered, left, moves = guides.changes(self.data, self.market, self.ranked)
+        self.assertEqual([farm["npc"] for farm, _ in entered], [])               # same two farms, other order
+        self.assertEqual(left, [])
+        self.assertEqual([move[0] for move in moves], [3702, 2673])              # -78%, then +55%
+        # A week where Coyote Meat wasn't listed: the coyotes are new to the top list.
+        market = dict(self.market, week={"day": "2026-11-11", "prices": {3702: (2000, 12)}})
+        entered, left, _ = guides.changes(self.data, market, self.ranked)
+        self.assertEqual([(farm["npc"], then) for farm, then in entered], [(1109, None)])
+
+    def test_page(self):
+        _, _, body = guides.market_page(self.data, self.market, self.ranked, [self.market], LINKS)
+        self.assertIn("What changed this week", body)
+        self.assertIn("Since 11 Nov", body)
+        self.assertIn("The top 3 is the same as a week ago.", body)
+        self.assertIn("Biggest price moves", body)
+        self.assertIn("90s &rarr; 20s", body)
+        self.assertIn("This week</th>", body)
+        self.assertIn('<span class="trend new">new</span>', body)               # Big Bear Meat in the bear's table
+        index = guides.index_page(self.data, [self.market], {guides.slug(self.market): self.ranked})[2]
+        self.assertIn('class="trend rising"', index)
+
+    def test_fetch_asks_for_a_week_ago(self):
+        def fake(url):
+            if url.endswith("/v1/prices"):
+                return FetchTests.HOUSES
+            if url.endswith("?ago=7"):
+                if "/eu/" in url:
+                    raise OSError("HTTP 404")                                    # too new: no trends, still a guide
+                return {"day": "2026-11-11", "prices": {"2673": [1000, 150]}}
+            return {"prices": {"2673": [1550, 176]}}
+        us, eu = guides.fetch_markets("https://api.example", fake)
+        self.assertEqual(us["week"], {"day": "2026-11-11", "prices": {2673: (1000, 150)}})
+        self.assertIsNone(eu["week"])
 
     def test_money(self):
         self.assertEqual([guides.money(c) for c in (0, 80, 400, 412, 50000, 57600, 123456)],

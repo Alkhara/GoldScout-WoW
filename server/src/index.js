@@ -24,7 +24,8 @@
 //                      behind Cloudflare Access.
 //   GET  /v1/prices    auction houses with prices: id, ruleset, faction,
 //                      snapshot time, item count. Public.
-//   GET  /v1/prices/<region>/<house>   one house's prices:
+//   GET  /v1/prices/<region>/<house>   one house's prices; ?ago=N (1 to 29): its first
+//                      snapshot from N days ago or the nearest day before, with "day":
 //                      {"itemID": [lowest unit buyout in copper, quantity]}.
 //   PUT  /v1/admin/prices/<region>/<house>   admin only; tools/ah_prices.py
 //                      sends each new snapshot (metadata in X- headers).
@@ -95,7 +96,8 @@ const REPOSITORY = "Alkhara/GoldScout-WoW";
 const SCHEDULE = {
   "7,22,37,52 * * * *": ["ah-prices.yml"], // Blizzard's snapshots land around :16
   "17 * * * *": ["data-merge.yml"],
-  "0 15 * * *": ["data-release.yml"], // daily; GitHub skipped its own 15:00 run
+  // Daily; GitHub skipped its own 15:00 runs. site-refresh rebuilds the site when main had no push in 20 hours.
+  "0 15 * * *": ["data-release.yml", "site-refresh.yml"],
 };
 // Hourly: alerts.js checks what the dashboard marks red and tells Discord.
 const ALERT_CRON = "17 * * * *";
@@ -156,7 +158,7 @@ export default {
       }
       const house = HOUSE_PATH.exec(url.pathname);
       if (house && request.method === "GET") {
-        return await housePrices(env, house[1], Number(house[2]));
+        return await housePrices(env, house[1], Number(house[2]), url.searchParams.get("ago"));
       }
       const adminHouse = ADMIN_HOUSE_PATH.exec(url.pathname);
       if (adminHouse && request.method === "PUT") {
@@ -481,8 +483,16 @@ async function priceHouses(env) {
   return publicJson(JSON.stringify({ source: SOURCE, houses: results.map(houseInfo), realms }));
 }
 
-async function housePrices(env, region, house) {
+// YYYY-MM-DD in UTC.
+function utcDay(seconds) {
+  return new Date(seconds * 1000).toISOString().slice(0, 10);
+}
+
+async function housePrices(env, region, house, ago) {
   const oldest = Math.floor(Date.now() / 1000) - MAX_AGE_SECONDS;
+  if (ago !== null) {
+    return await pastPrices(env, region, house, ago, oldest);
+  }
   const row = await env.DB.prepare(
     `SELECT ${HOUSE_COLUMNS}, prices FROM ah_houses WHERE region = ? AND house = ? AND snapshot >= ?`,
   ).bind(region, house, oldest).first();
@@ -491,6 +501,24 @@ async function housePrices(env, region, house) {
   }
   // Splice the stored text in rather than parsing and re-serializing it.
   const head = JSON.stringify({ ...houseInfo(row), source: SOURCE });
+  return publicJson(head.slice(0, -1) + ',"prices":' + row.prices + "}");
+}
+
+// A house's first snapshot of the day `ago` days back, or of the nearest day before it.
+async function pastPrices(env, region, house, ago, oldest) {
+  const days = Number(ago);
+  if (!Number.isInteger(days) || days < 1 || days > 29) {
+    return publicJson(JSON.stringify({ error: "ago is a number of days from 1 to 29." }), 400);
+  }
+  const day = utcDay(Math.floor(Date.now() / 1000) - days * 86400);
+  const row = await env.DB.prepare(
+    "SELECT day, snapshot, prices FROM ah_daily WHERE region = ? AND house = ? AND day <= ? AND snapshot >= ? " +
+    "ORDER BY day DESC LIMIT 1",
+  ).bind(region, house, day, oldest).first();
+  if (!row) {
+    return publicJson(JSON.stringify({ error: "No prices from that long ago for that auction house." }), 404);
+  }
+  const head = JSON.stringify({ region, house, day: row.day, snapshot: row.snapshot, source: SOURCE });
   return publicJson(head.slice(0, -1) + ',"prices":' + row.prices + "}");
 }
 
@@ -533,6 +561,10 @@ async function storePrices(request, env, region, house) {
       "items = excluded.items, prices = excluded.prices",
     ).bind(region, house, name, ruleset, rulesetName, faction, snapshot, now, items, prices),
     env.DB.prepare("DELETE FROM ah_houses WHERE snapshot < ?").bind(now - MAX_AGE_SECONDS),
+    // The day's first snapshot stays as that day's (the guides' trends compare days).
+    env.DB.prepare("INSERT INTO ah_daily (region, house, day, snapshot, prices) VALUES (?, ?, ?, ?, ?) " +
+      "ON CONFLICT (region, house, day) DO NOTHING").bind(region, house, utcDay(snapshot), snapshot, prices),
+    env.DB.prepare("DELETE FROM ah_daily WHERE snapshot < ?").bind(now - MAX_AGE_SECONDS),
   ]);
   return json({ status: previous && previous.snapshot === snapshot ? "unchanged" : "stored" });
 }

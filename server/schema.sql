@@ -73,6 +73,18 @@ CREATE TABLE IF NOT EXISTS ah_houses (
   PRIMARY KEY (region, house)
 );
 
+-- Each auction house's first snapshot of every UTC day, for the gold guides' price trends ("rising", "What
+-- changed this week": GET /v1/prices/<region>/<house>?ago=7). Same text as ah_houses.prices; rows go after 30
+-- days like the snapshots themselves (Blizzard's API terms).
+CREATE TABLE IF NOT EXISTS ah_daily (
+  region TEXT NOT NULL,
+  house INTEGER NOT NULL,
+  day TEXT NOT NULL,          -- the snapshot's UTC date, YYYY-MM-DD
+  snapshot INTEGER NOT NULL,
+  prices TEXT NOT NULL,
+  PRIMARY KEY (region, house, day)
+);
+
 -- Which ruleset each realm uses (from data/ah_houses.json, sent by
 -- tools/ah_prices.py), so GoldScout Companion can pick a player's auction
 -- house from their realm name. Realm names only; no player data.
