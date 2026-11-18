@@ -1,4 +1,4 @@
-GoldScout-export 5^hplrfxkbrxvv^3
+GoldScout-export 5^hplrfxkbrxvv^4
 4632^1^0^30^31^1443^0.6971^0.4561^1^Centaure kolkar^15341:1:1,250370:1:1^
 4633^3^0^30^31^1443^0.6915^0.4605^3^Eclaireur kolkar^3771:1:1,4306:1:1,6067:1:1,254432:1:1^
 4634^5^0^31^32^1443^0.7177^0.4522^5^Marteleur kolkar^6067:2:2^
@@ -16,13 +16,18 @@ GoldScout-export 5^hplrfxkbrxvv^3
 4692^1^0^32^32^1443^0.6876^0.7189^1^Rapace de l'effroi^1464:1:1,11416:1:1^
 4696^3^0^30^31^1443^0.6042^0.2008^3^Scorpashi mordeur^12037:3:3,19938:1:1^
 4697^1^0^35^35^1443^0.6761^0.6733^1^Flagellant scorpashi^19938:1:1^
+4699^1^0^39^39^1443^0.5709^0.8691^1^Empoisonneur scorpashi^19937:1:1^
 4726^2^0^33^34^1443^0.6812^0.6974^2^Lézard-tonnerre enragé^5128:1:1,5133:1:1^
 4728^6^0^31^32^1443^0.6400^0.2138^6^Basilic Mâchesable^1701:2:2,4093:2:2,11386:1:1,15341:1:1^
+11559^3^0^39^40^2652^0.3147^0.2886^3^Nécromancien renégat^4338:1:1,260347:1:1^
+11561^8^0^37^43^2652^0.3290^0.2680^8^Ravageur mort-vivant^3827:1:1,4306:3:6^
+253272^2^0^42^42^2652^0.3391^0.2817^2^Nécromancien magram^4306:1:1^
 @i^1464^Serre de busard
 @i^1701^Griffe de basilic
 @i^2592^Etoffe de laine
 @i^3771^Jarret de cochon sauvage
 @i^3785^Hache funèbre
+@i^3827^Potion de mana
 @i^4093^Grande queue de basilic
 @i^4306^Etoffe de soie
 @i^4338^Etoffe de tisse-mage
@@ -30,23 +35,28 @@ GoldScout-export 5^hplrfxkbrxvv^3
 @i^5128^Peau de lézard dépouillée
 @i^5133^Gésier suintant
 @i^6067^Oreille de centaure
+@i^6308^Poisson-chat moustachu cru
 @i^6355^Coffre solide verrouillé
 @i^6358^Bouche-noire huileux
 @i^6359^Lutjan de nagefeu
 @i^6362^Morue rochécaille crue
+@i^8365^Truite tête-mithril crue
 @i^11386^Oeil spongieux de basilic
 @i^11416^Cage thoracique délicate
 @i^12037^Viande mystère
 @i^15341^Bottes de guide de brigandage
+@i^19937^Petite griffe de scorpide
 @i^19938^Patte de scorpide épaisse
 @i^248705^Caisse détournée : étoffes de compagnon
 @i^250370^Recette : élixir de robustesse
 @i^254432^Totem centaure sculpté
+@i^260347^Journal en lambeaux
 @q^1464^0:15:0
 @q^1701^0:15:0
 @q^2592^1:7:1
 @q^3771^1:0:0
 @q^3785^0:2:0
+@q^3827^1:0:0
 @q^4093^0:15:0
 @q^4306^1:7:1
 @q^4338^1:7:1
@@ -54,21 +64,26 @@ GoldScout-export 5^hplrfxkbrxvv^3
 @q^5128^0:15:0
 @q^5133^0:15:0
 @q^6067^1:12:0
+@q^6308^1:7:1
 @q^6355^1:15:0
 @q^6358^1:7:1
 @q^6359^1:7:1
 @q^6362^1:7:1
+@q^8365^1:7:1
 @q^11386^0:15:0
 @q^11416^0:15:0
 @q^12037^1:7:1
 @q^15341^2:4:0
+@q^19937^0:15:0
 @q^19938^0:15:0
 @q^248705^2:0:1
 @q^250370^1:9:0
 @q^254432^2:15:0
+@q^260347^1:15:0
 @m^1413^Les Tarides
 @m^1434^Vallée de Strangleronce
 @m^1443^Désolace
+@m^2652^Shen'dralas
 @c^118^
 @c^724^
 @c^733^
@@ -842,8 +857,13 @@ GoldScout-export 5^hplrfxkbrxvv^3
 @a^4692^293:1
 @a^4696^52:1,71:1,112:1
 @a^4697^273:1
+@a^4699^351:1
 @a^4726^273:1,293:1
 @a^4728^71:1,73:1,74:1,92:1,112:2
+@a^11559^106:3
+@a^11561^86:1,105:2,106:3,108:1,126:1
+@a^253272^87:1,126:1
 @f^1413^0^2^165^6358:2:2^152:2
 @f^1434^0^32^157^4603:8:8,6355:1:1,6358:4:4,6359:1:1,6362:18:18^285:2,305:30
+@f^1443^0^21^165^3827:1:1,6308:7:7,8365:13:13^308:19,330:2
 @l^0^frFR
