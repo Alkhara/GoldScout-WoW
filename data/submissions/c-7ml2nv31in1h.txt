@@ -1,12 +1,14 @@
-GoldScout-export 5^7ml2nv31in1h^4
+GoldScout-export 5^7ml2nv31in1h^6
 30^1^0^5^6^1429^0.4172^0.7623^1^Waldspinne^2590:1:1,5465:1:1^
 40^1^0^6^6^1429^0.6163^0.5356^1^Koboldminenarbeiter^159:1:1^
 46^1^0^9^10^1429^0.7774^0.5657^1^Murlocfutterwühler^779:1:1^
 116^38^0^8^9^1429^0.4813^0.7645^38^Bandit der Defias^159:1:1,727:1:1,1019:6:6,1412:2:2,1414:1:1,1416:1:1,1419:1:1,1421:1:1,1427:1:1,2070:2:2,2589:13:20,2648:1:1,2774:2:2,4293:1:1^
 117^2^0^11^12^1436^0.5335^0.1857^2^Gnoll der Flusspfoten^1510:1:1^
-118^1^0^9^9^1429^0.7971^0.5967^1^Streuner^777:1:1,3300:1:1^
+118^2^0^9^9^1429^0.8249^0.6304^2^Streuner^777:1:1,2672:1:1,3299:1:1,3300:1:1^
 126^1^0^12^12^1436^0.5154^0.1028^1^Murlocküstenläufer^^
 199^1^0^10^11^1436^0.5991^0.2777^1^Junger Fleischreißer^555:1:1,7096:1:1^
+423^1^0^15^16^1433^0.1162^0.6944^1^Bastard der Rotkammgnolle^^
+442^3^0^15^16^1433^0.0978^0.7091^3^Tarantel^1081:1:1^
 454^8^0^12^13^1436^0.5643^0.2254^8^Junger Geiferzahn^723:3:3,731:2:2,769:8:8,2677:1:1,3171:2:2,3172:1:1,6337:1:1^
 473^1^0^10^10^1429^0.7032^0.7942^1^Morgan der Sammler^2239:1:1^
 474^8^0^9^10^1429^0.6803^0.5651^8^Abtrünniger Hexer der Defias^1417:2:2,1431:1:1,2070:1:1,2589:2:4^
@@ -14,10 +16,13 @@ GoldScout-export 5^7ml2nv31in1h^4
 478^2^0^9^9^1429^0.4799^0.7573^2^Kundschafter der Flusspfoten^1307:1:1^
 480^1^0^9^10^1436^0.5499^0.2393^1^Rostiger Erntegolem^255007:1:1,255154:1:1^
 500^2^0^12^13^1436^0.5201^0.1622^2^Späher der Flusspfoten^725:1:1,2589:1:1^
+712^1^0^15^15^1433^0.1279^0.6619^1^Hauer der Rotkammgnolle^858:1:1,2589:1:1,280911:1:1^
 732^3^0^9^9^1429^0.7734^0.5576^3^Murloclauerer^779:1:1,1431:1:1,6303:1:3^
 822^5^0^8^9^1429^0.5030^0.7665^5^Junger Waldbär^818:1:1,3169:2:2,4865:2:2,7074:2:2^
 834^1^0^10^11^1436^0.6294^0.3286^1^Kojote^^
-1922^1^0^8^8^1429^0.6437^0.6787^1^Grauer Forstwolf^2672:1:1^
+1922^4^0^8^8^1429^0.6726^0.6714^4^Grauer Forstwolf^774:1:1,2672:4:4,3300:1:1^
+2044^1^0^26^26^1453^0.4406^0.7081^1^Unglückseliger Geist^^
+13159^1^0^12^12^1429^0.7928^0.6738^1^James Clark^^
 @i^159^Erfrischendes Quellwasser
 @i^555^Raue Geierfedern
 @i^723^Geiferzahnleber
@@ -25,10 +30,13 @@ GoldScout-export 5^7ml2nv31in1h^4
 @i^727^Schartiges Kurzschwert der Intelligenz
 @i^731^Geiferzahnschnauze
 @i^769^Brocken Eberfleisch
+@i^774^Malachit
 @i^777^Streunerzähne
 @i^779^Glänzende Seemuschelschale
 @i^818^Tigerauge
+@i^858^Geringer Heiltrank
 @i^1019^Rotes Leinenkopftuch
+@i^1081^Knuspriges Spinnenfleisch
 @i^1307^Goldabholplan
 @i^1412^Kunstloses Bastardschwert
 @i^1414^Gesprungener Vorschlaghammer
@@ -50,6 +58,7 @@ GoldScout-export 5^7ml2nv31in1h^4
 @i^3169^Gesplitterter Bärenzahn
 @i^3171^Zerbrochener Eberhauer
 @i^3172^Ebergedärme
+@i^3299^Gerissener Eckzahn
 @i^3300^Hasenpfote
 @i^4293^Muster: Lederweste des Hügelwächters
 @i^4865^Verdorbener Pelz
@@ -60,6 +69,7 @@ GoldScout-export 5^7ml2nv31in1h^4
 @i^7096^Ausgezupfte Feder
 @i^255007^Golemisofeder
 @i^255154^Defekter Gyrostabilisator
+@i^280911^Stachelhalsband
 @q^159^1:0:0
 @q^555^0:15:0
 @q^723^1:7:1
@@ -67,10 +77,13 @@ GoldScout-export 5^7ml2nv31in1h^4
 @q^727^2:2:0
 @q^731^1:7:1
 @q^769^1:7:1
+@q^774^2:7:1
 @q^777^0:15:0
 @q^779^0:15:0
 @q^818^2:7:1
+@q^858^1:0:0
 @q^1019^1:12:0
+@q^1081^1:7:1
 @q^1307^1:12:0
 @q^1412^0:2:0
 @q^1414^0:2:0
@@ -92,6 +105,7 @@ GoldScout-export 5^7ml2nv31in1h^4
 @q^3169^0:15:0
 @q^3171^0:15:0
 @q^3172^1:7:1
+@q^3299^0:15:0
 @q^3300^0:15:0
 @q^4293^2:9:0
 @q^4865^0:15:0
@@ -102,8 +116,11 @@ GoldScout-export 5^7ml2nv31in1h^4
 @q^7096^0:15:0
 @q^255007^1:7:1
 @q^255154^0:15:0
+@q^280911^1:12:0
 @m^1429^Wald von Elwynn
+@m^1433^Rotkammgebirge
 @m^1436^Westfall
+@m^1453^Stormwind
 @c^724^
 @c^733^
 @c^787^
@@ -836,9 +853,11 @@ GoldScout-export 5^7ml2nv31in1h^4
 @a^46^235:1
 @a^116^289:17,308:2,309:10,313:1,314:1,329:6,334:1
 @a^117^70:2
-@a^118^235:1
+@a^118^235:1,277:1
 @a^126^50:1
 @a^199^111:1
+@a^423^262:1
+@a^442^262:1,281:1,282:1
 @a^454^70:2,91:4,111:1,112:1
 @a^473^314:1
 @a^474^194:1,214:5,230:1,330:1
@@ -846,8 +865,11 @@ GoldScout-export 5^7ml2nv31in1h^4
 @a^478^233:1,385:1
 @a^480^90:1
 @a^500^70:2
+@a^712^262:1
 @a^732^235:3
 @a^822^289:2,309:1,313:1,329:1
 @a^834^132:1
-@a^1922^272:1
+@a^1922^272:1,273:2,274:1
+@a^2044^288:1
+@a^13159^275:1
 @l^0^deDE

@@ -1,4 +1,4 @@
-GoldScout-export 5^4xrx7rria12u^12
+GoldScout-export 5^4xrx7rria12u^13
 121^5^0^15^16^1436^0.5003^0.7668^5^Eclaireuse défias^1766:1:1,2217:1:1,2589:1:1,7997:1:1^
 122^13^0^17^18^1436^0.4659^0.7834^13^Malandrin défias^414:1:1,2589:4:9,2592:3:6,7997:1:1^
 391^1^0^20^20^1436^0.3030^0.8266^1^Vieux Troubloeil^3636:1:1,5523:1:1,6562:1:1^
@@ -73,10 +73,14 @@ GoldScout-export 5^4xrx7rria12u^12
 2338^9^0^16^17^1439^0.3874^0.8675^9^Disciple du crépuscule^1179:1:1,1745:1:1,2592:2:3,14113:1:1,15508:1:1,279279:1:1^
 2339^5^0^17^18^1439^0.4569^0.6534^5^Nervi du crépuscule^1179:1:1,2455:1:1,2589:1:2,2592:2:3^
 3560^2^0^17^17^1439^0.5313^0.3307^2^Gardien Guérisseur^^
-3725^2^0^18^19^1439^0.4150^0.8090^2^Sectateur de la Rive noire^2589:1:3,2592:1:1^
-3728^1^0^18^18^1439^0.4134^0.8122^1^Adepte de la Rive noire^^
+3725^5^0^18^19^1440^0.3089^0.3035^3^Sectateur de la Rive noire^1205:1:1,2589:1:3,2592:2:2,4306:1:1,15507:1:1^
+3727^4^0^21^21^1440^0.3158^0.3052^4^Massacreur de la Rive noire^4306:1:1^
+3728^7^0^18^19^1440^0.3121^0.3033^6^Adepte de la Rive noire^2592:4:5,5366:1:1,14370:1:1^
+3730^2^0^20^20^1440^0.3154^0.3021^2^Excavateur de la Rive noire^1814:1:1^
 6788^1^0^18^18^1439^0.5171^0.3727^1^Mère de la tanière^5414:1:1^
 6789^2^0^9^10^1439^0.5177^0.3717^2^Jeune chardon^7074:1:1^
+8996^6^0^18^19^1440^0.3110^0.3002^6^Sbire marcheur du Vide^^
+12922^3^0^18^19^1440^0.3103^0.3010^3^Diablotin serviteur^^
 14268^1^0^16^16^1432^0.7576^0.6705^1^Seigneur Condar^^
 14271^1^0^17^17^1433^0.1135^0.6594^1^Chassecôtes^2589:1:3,4697:1:1^
 269185^1^0^17^17^1432^0.3159^0.8585^1^Fendeur de têtes^^
@@ -97,6 +101,7 @@ GoldScout-export 5^4xrx7rria12u^12
 @i^1080^Viande de condor coriace
 @i^1081^Chair croustillante d'araignée
 @i^1179^Lait glacé
+@i^1205^Jus de melon
 @i^1210^Oeil ténébreux
 @i^1212^Bave de gnoll
 @i^1221^Ecaille ventrale de jeune dragon
@@ -117,6 +122,7 @@ GoldScout-export 5^4xrx7rria12u^12
 @i^1793^Protège-épaules raccommodés en cuir
 @i^1811^Claymore émoussée
 @i^1813^Bâton de guerre fendu
+@i^1814^Maillet endommagé
 @i^1875^Plaque de Crispechardon
 @i^1894^Carte du syndicat des mineurs
 @i^1926^Masse équilibrée
@@ -158,6 +164,7 @@ GoldScout-export 5^4xrx7rria12u^12
 @i^3401^Ecaille de crocilisque grossière
 @i^3636^Ecaille du Vieux Troubloeil
 @i^3882^Plume de busard
+@i^4306^Etoffe de soie
 @i^4575^Bâton d'homme-médecine de brigandage
 @i^4676^Gantelets squelettiques
 @i^4697^Ceinturon bruni
@@ -168,6 +175,7 @@ GoldScout-export 5^4xrx7rria12u^12
 @i^5134^Petite patte en fourrure
 @i^5135^Fine griffe noire
 @i^5348^Parchemin déchiré
+@i^5366^Gemme d'âme luminescente
 @i^5386^Belle peau de traquelune
 @i^5413^Croc de traquelune
 @i^5414^Scalp vieilli
@@ -189,7 +197,9 @@ GoldScout-export 5^4xrx7rria12u^12
 @i^9786^Cape d'écumeur de la chouette
 @i^11965^Anneau de quartz du gorille
 @i^14113^Echarpe aborigène de l'aigle
+@i^14370^Pantalon de mystique
 @i^15016^Protège-mains lupins d'endurance
+@i^15507^Brassards de grunt de courroux sacré
 @i^15508^Cape de grunt de protection contre le givre
 @i^17056^Plume légère
 @i^17057^Ecailles de poisson brillantes
@@ -219,6 +229,7 @@ GoldScout-export 5^4xrx7rria12u^12
 @q^1080^1:7:1
 @q^1081^1:7:1
 @q^1179^1:0:0
+@q^1205^1:0:0
 @q^1210^2:7:1
 @q^1212^0:15:0
 @q^1221^1:12:0
@@ -239,6 +250,7 @@ GoldScout-export 5^4xrx7rria12u^12
 @q^1793^0:4:0
 @q^1811^0:2:0
 @q^1813^0:2:0
+@q^1814^0:2:0
 @q^1875^1:12:0
 @q^1894^1:12:0
 @q^1926^2:2:0
@@ -280,6 +292,7 @@ GoldScout-export 5^4xrx7rria12u^12
 @q^3401^0:15:0
 @q^3636^1:12:0
 @q^3882^0:15:0
+@q^4306^1:7:1
 @q^4575^2:2:0
 @q^4676^2:4:0
 @q^4697^2:4:0
@@ -290,6 +303,7 @@ GoldScout-export 5^4xrx7rria12u^12
 @q^5134^1:12:0
 @q^5135^0:15:0
 @q^5348^1:12:0
+@q^5366^1:12:0
 @q^5386^1:12:0
 @q^5413^1:12:0
 @q^5414^1:12:0
@@ -311,7 +325,9 @@ GoldScout-export 5^4xrx7rria12u^12
 @q^9786^2:4:0
 @q^11965^2:4:0
 @q^14113^2:4:0
+@q^14370^2:4:0
 @q^15016^2:4:0
+@q^15507^2:4:0
 @q^15508^2:4:0
 @q^17056^1:15:1
 @q^17057^1:15:0
@@ -331,6 +347,7 @@ GoldScout-export 5^4xrx7rria12u^12
 @m^1433^Les Carmines
 @m^1436^Marche de l'Ouest
 @m^1439^Sombrivage
+@m^1440^Orneval
 @m^1453^Hurlevent
 @c^118^
 @c^724^
@@ -1168,10 +1185,14 @@ GoldScout-export 5^4xrx7rria12u^12
 @a^2338^347:9
 @a^2339^131:2,347:3
 @a^3560^130:2
-@a^3725^328:2
-@a^3728^328:1
+@a^3725^106:1,126:2
+@a^3727^106:1,126:3
+@a^3728^106:2,126:4
+@a^3730^106:1,126:1
 @a^6788^150:1
 @a^6789^150:2
+@a^8996^106:3,126:3
+@a^12922^106:1,126:2
 @a^14268^275:1
 @a^14271^262:1
 @a^269185^346:1

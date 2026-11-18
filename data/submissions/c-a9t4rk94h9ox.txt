@@ -1,4 +1,4 @@
-GoldScout-export 5^a9t4rk94h9ox^4
+GoldScout-export 5^a9t4rk94h9ox^5
 2505^8^0^49^50^1425^0.7773^0.6537^8^Saltwater Snapjaw^3712:3:3,4555:4:4,4556:7:7,4603:1:1,7973:3:3^
 2639^1^0^46^46^1425^0.4557^0.6428^1^Vilebranch Axe Thrower^8151:1:1,9259:1:1^
 2659^3^0^46^48^1425^0.5686^0.4486^3^Razorbeak Skylord^4589:1:1,4590:1:1,4591:3:4,19025:1:1^
@@ -18,6 +18,7 @@ GoldScout-export 5^a9t4rk94h9ox^4
 270772^1^0^49^49^1425^0.2448^0.6535^1^Witch Doctor Ti'ik^279913:1:1^
 @i^1520^Troll Sweat
 @i^1645^Moonberry Juice
+@i^3385^Lesser Mana Potion
 @i^3712^Turtle Meat
 @i^3961^Thick Leather Belt
 @i^4306^Silk Cloth
@@ -36,6 +37,8 @@ GoldScout-export 5^a9t4rk94h9ox^4
 @i^6289^Raw Longjaw Mud Snapper
 @i^6291^Raw Brilliant Smallfish
 @i^6308^Raw Bristle Whisker Catfish
+@i^6309^17 Pound Catfish
+@i^6310^19 Pound Catfish
 @i^7973^Big-mouth Clam
 @i^8151^Flask of Mojo
 @i^8153^Wildvine
@@ -50,6 +53,7 @@ GoldScout-export 5^a9t4rk94h9ox^4
 @i^279913^Ti'ik's Head
 @q^1520^0:15:0
 @q^1645^1:0:0
+@q^3385^1:0:0
 @q^3712^1:7:1
 @q^3961^0:4:0
 @q^4306^1:7:1
@@ -68,6 +72,8 @@ GoldScout-export 5^a9t4rk94h9ox^4
 @q^6289^1:7:1
 @q^6291^1:7:1
 @q^6308^1:7:1
+@q^6309^1:15:0
+@q^6310^1:15:0
 @q^7973^1:7:0
 @q^8151^1:7:1
 @q^8153^1:7:1
@@ -626,5 +632,5 @@ GoldScout-export 5^a9t4rk94h9ox^4
 @a^7977^235:1
 @a^14748^176:1
 @a^270772^264:1
-@f^1454^0^16^178^6289:8:8,6291:2:2,6308:6:6^113:2,133:14
+@f^1454^0^264^178^3385:1:1,6289:156:156,6291:45:45,6308:60:60,6309:1:1,6310:1:1^113:250,133:14
 @l^0^enUS

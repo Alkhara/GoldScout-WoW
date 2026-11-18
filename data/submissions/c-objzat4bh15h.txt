@@ -1,4 +1,4 @@
-GoldScout-export 5^objzat4bh15h^5
+GoldScout-export 5^objzat4bh15h^6
 587^1^0^33^33^1434^0.3305^0.1594^1^Bloodscalp Warrior^^
 588^7^0^34^35^1434^0.2548^0.1140^7^Bloodscalp Scout^3793:1:1,3795:1:1,3915:2:2,4306:2:4^
 595^5^0^34^35^1434^0.2613^0.1211^5^Bloodscalp Hunter^3805:1:1,3901:1:1,3915:2:2,4306:1:2^
@@ -19,6 +19,21 @@ GoldScout-export 5^objzat4bh15h^5
 1061^1^0^41^41^1434^0.2359^0.0882^1^Gan'zulah^2740:1:1^
 1062^1^0^40^40^1434^0.2359^0.0852^1^Nezzliok the Dire^1520:1:1^
 1085^3^0^34^35^1434^0.3190^0.1720^3^Elder Stranglethorn Tiger^1686:1:1,1687:2:2,12202:1:1^
+2240^1^0^32^33^1416^0.5756^0.6755^1^Syndicate Footpad^4306:1:1,5113:1:1^
+2241^1^0^33^34^1416^0.5757^0.6661^1^Syndicate Thief^^
+2248^2^0^30^31^1424^0.4513^0.2970^2^Cave Yeti^5637:1:1^
+2251^1^0^33^34^1416^0.3746^0.6721^1^Giant Yeti^^
+2270^1^0^27^28^1424^0.2662^0.6024^1^Hillsbrad Sentry^4306:1:1^
+2271^8^0^31^32^1416^0.1931^0.9052^5^Dalaran Shield Guard^2592:1:3,3787:1:1,4306:5:8^
+2272^1^0^32^33^1416^0.1929^0.9028^1^Dalaran Theurgist^1710:1:1^
+2305^1^0^30^30^1424^0.3104^0.5527^1^Foreman Bonds^4306:1:1^
+2335^1^0^30^30^1424^0.2955^0.4193^1^Magistrate Burnside^1756:1:1^
+2354^1^0^23^23^1424^0.4067^0.3668^1^Vicious Gray Bear^11406:1:1^
+2356^1^0^25^26^1424^0.2896^0.6081^1^Elder Gray Bear^2940:1:1,3730:1:1,11407:1:1^
+2358^2^0^32^33^1416^0.2539^0.6046^2^Dalaran Summoner^4306:1:1^
+2387^2^0^25^26^1424^0.2968^0.4218^2^Hillsbrad Councilman^2592:1:2^
+2406^2^0^32^33^1416^0.3008^0.7479^2^Mountain Lion^1686:1:1,3731:1:1^
+2411^1^0^33^33^1416^0.1958^0.8987^1^Ricter^4306:1:1^
 4420^1^0^0^0^0^0.0000^0.0000^0^^^
 4421^1^0^0^0^0^0.0000^0.0000^0^^^
 4424^1^0^0^0^0^0.0000^0.0000^0^^^
@@ -68,6 +83,7 @@ GoldScout-export 5^objzat4bh15h^5
 @i^1696^Curved Raptor Talon
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
+@i^1756^Reinforced Chain Bracers
 @i^1759^Reinforced Chain Pants
 @i^1761^Reinforced Chain Vest
 @i^1780^Cross-stitched Sandals
@@ -80,12 +96,16 @@ GoldScout-export 5^objzat4bh15h^5
 @i^2740^Green Hills of Stranglethorn - Page 16
 @i^2749^Green Hills of Stranglethorn - Page 25
 @i^2750^Green Hills of Stranglethorn - Page 26
+@i^2940^Bloody Bear Paw
 @i^3385^Lesser Mana Potion
 @i^3403^Ivory Boar Tusk
 @i^3685^Raptor Egg
+@i^3730^Big Bear Meat
+@i^3731^Lion Meat
 @i^3770^Mutton Chop
 @i^3771^Wild Hog Shank
 @i^3785^Keen Axe
+@i^3787^Stone Club
 @i^3793^Interlaced Boots
 @i^3795^Interlaced Cloak
 @i^3805^Hardened Leather Pants
@@ -96,9 +116,13 @@ GoldScout-export 5^objzat4bh15h^5
 @i^4461^Raptor Hide
 @i^4542^Moist Cornbread
 @i^4586^Smooth Raptor Skin
+@i^5113^Mark of the Syndicate
+@i^5637^Large Fang
 @i^9308^Grime-Encrusted Object
 @i^9451^Bubbling Water
 @i^11391^Spined Bat Wing
+@i^11406^Rotting Bear Carcass
+@i^11407^Torn Bear Pelt
 @i^12184^Raptor Flesh
 @i^12202^Tiger Meat
 @i^248688^Waylaid Crate: Journeyman Textiles
@@ -113,6 +137,7 @@ GoldScout-export 5^objzat4bh15h^5
 @q^1696^0:15:0
 @q^1708^1:0:0
 @q^1710^1:0:0
+@q^1756^0:4:0
 @q^1759^0:4:0
 @q^1761^0:4:0
 @q^1780^0:4:0
@@ -125,12 +150,16 @@ GoldScout-export 5^objzat4bh15h^5
 @q^2740^1:12:0
 @q^2749^1:12:0
 @q^2750^1:12:0
+@q^2940^0:15:0
 @q^3385^1:0:0
 @q^3403^0:15:0
 @q^3685^1:7:1
+@q^3730^1:7:1
+@q^3731^1:7:1
 @q^3770^1:0:0
 @q^3771^1:0:0
 @q^3785^0:2:0
+@q^3787^0:2:0
 @q^3793^0:4:0
 @q^3795^0:4:0
 @q^3805^0:4:0
@@ -141,13 +170,19 @@ GoldScout-export 5^objzat4bh15h^5
 @q^4461^1:7:1
 @q^4542^1:0:0
 @q^4586^0:15:0
+@q^5113^0:15:0
+@q^5637^1:7:1
 @q^9308^1:12:0
 @q^9451^1:0:0
 @q^11391^0:15:0
+@q^11406^0:15:0
+@q^11407^1:12:0
 @q^12184^1:7:1
 @q^12202^1:7:1
 @q^248688^1:0:1
 @m^1413^The Barrens
+@m^1416^Alterac Mountains
+@m^1424^Hillsbrad Foothills
 @m^1434^Stranglethorn Vale
 @a^587^66:1
 @a^588^45:7
@@ -169,5 +204,20 @@ GoldScout-export 5^objzat4bh15h^5
 @a^1061^24:1
 @a^1062^24:1
 @a^1085^66:3
+@a^2240^271:1
+@a^2241^271:1
+@a^2248^108:1,129:1
+@a^2251^267:1
+@a^2270^245:1
+@a^2271^343:1,344:1,363:1,364:2
+@a^2272^363:1
+@a^2305^226:1
+@a^2335^165:1
+@a^2354^148:1
+@a^2356^245:1
+@a^2358^225:1,244:1
+@a^2387^165:2
+@a^2406^265:1,306:1
+@a^2411^343:1
 @a^6132^368:1
 @l^0^enUS

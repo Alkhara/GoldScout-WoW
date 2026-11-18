@@ -1,20 +1,37 @@
-GoldScout-export 5^vmkib7g1d9wg^2
+GoldScout-export 5^vmkib7g1d9wg^3
 2347^1^0^40^40^1424^0.8080^0.3319^1^Wild Gryphon^213526:1:1^
 2354^1^0^23^23^1424^0.4910^0.4674^1^Vicious Gray Bear^3730:1:1,11407:1:1^
 2560^1^0^33^33^1417^0.3128^0.6563^1^Highland Thrasher^4461:1:1^
 2580^1^0^37^38^1417^0.2357^0.7028^1^Elder Mesa Buzzard^5116:1:1^
-2595^1^0^38^39^1417^0.2134^0.8431^1^Daggerspine Raider^7072:1:1^
+2595^12^3^38^39^1417^0.2246^0.8746^12^Daggerspine Raider^1708:1:1,7072:11:11,17057:5:5,17058:1:1^6362:1:2
+2596^7^5^39^40^1417^0.2222^0.8668^7^Daggerspine Sorceress^1529:1:1,17058:1:1^16883:1:1
+2762^2^0^39^39^1417^0.5245^0.4993^2^Thundering Exile^4480:1:1^
+2776^2^0^40^40^1417^0.3561^0.7973^2^Vengeful Surge^^
+@i^1529^Jade
+@i^1708^Sweet Nectar
 @i^3730^Big Bear Meat
 @i^4461^Raptor Hide
+@i^4480^Thundering Charm
 @i^5116^Long Tail Feather
+@i^6362^Raw Rockscale Cod
 @i^7072^Naga Scale
 @i^11407^Torn Bear Pelt
+@i^16883^Worn Junkbox
+@i^17057^Shiny Fish Scales
+@i^17058^Fish Oil
 @i^213526^Hybrid Haunch
+@q^1529^2:7:1
+@q^1708^1:0:0
 @q^3730^1:7:1
 @q^4461^1:7:1
+@q^4480^1:0:0
 @q^5116^1:7:1
+@q^6362^1:7:1
 @q^7072^1:7:1
 @q^11407^1:12:0
+@q^16883^1:15:0
+@q^17057^1:15:0
+@q^17058^1:15:0
 @q^213526^1:12:0
 @m^1417^Arathi Highlands
 @m^1424^Hillsbrad Foothills
@@ -778,5 +795,8 @@ GoldScout-export 5^vmkib7g1d9wg^2
 @a^2354^189:1
 @a^2560^266:1
 @a^2580^284:1
-@a^2595^324:1
+@a^2595^324:3,344:5,364:3,365:1
+@a^2596^324:5,344:1,364:1
+@a^2762^190:1,210:1
+@a^2776^307:2
 @l^0^enUS

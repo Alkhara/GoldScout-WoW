@@ -1,4 +1,4 @@
-GoldScout-export 5^b4adsbb55gxh^10
+GoldScout-export 5^b4adsbb55gxh^11
 587^14^0^33^34^1434^0.2961^0.1962^14^Bloodscalp Warrior^1519:2:2,2734:1:1,3771:1:1^
 588^8^0^34^35^1434^0.2480^0.1121^8^Bloodscalp Scout^2745:1:1,4306:1:2^
 595^8^0^34^35^1434^0.2373^0.1243^8^Bloodscalp Hunter^1519:3:3,4306:1:2^
@@ -118,6 +118,8 @@ GoldScout-export 5^b4adsbb55gxh^10
 10928^4^0^42^43^1434^0.2928^0.8130^4^Succubus Minion^^
 11748^1^0^40^40^1434^0.3938^0.0612^1^Samantha Swifthoof^^
 12922^8^0^38^43^1434^0.2973^0.8105^6^Imp Minion^^
+255849^1^0^41^41^2548^0.6806^0.1387^1^Bolder'ok Magus^4306:1:1^
+255850^1^0^42^42^2548^0.6786^0.1411^1^Bolder'ok Brute^3928:1:1^
 255851^1^0^38^39^2548^0.7956^0.3191^1^Mature Paletusk^^
 255898^2^0^38^39^2548^0.7138^0.6681^2^Murloc Oracle^5524:1:1^
 255899^37^0^37^38^2548^0.6937^0.6954^37^Murloc Tideskimmer^268344:12:12^
@@ -138,6 +140,7 @@ GoldScout-export 5^b4adsbb55gxh^10
 260968^5^0^41^42^2548^0.7485^0.2544^5^Twilight Mauler^4338:1:1^
 261497^1^0^40^41^2548^0.7704^0.2727^1^Twilight Firecaller^^
 263071^1^0^42^42^2548^0.5870^0.3912^1^Blademaster Kaijo^4306:1:1,271425:1:1^
+266862^1^0^34^34^2548^0.6765^0.1665^1^Juvenile Paletusk^2295:1:1,268632:1:1^
 272228^7^0^36^37^2548^0.5440^0.7602^7^Harvest Sentry^^
 @i^1519^Bloodscalp Ear
 @i^1520^Troll Sweat
@@ -149,6 +152,7 @@ GoldScout-export 5^b4adsbb55gxh^10
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
+@i^2295^Large Boar Tusk
 @i^2466^Skullsplitter Fetish
 @i^2592^Wool Cloth
 @i^2633^Jungle Remedy
@@ -187,6 +191,7 @@ GoldScout-export 5^b4adsbb55gxh^10
 @i^3925^Jon-Jon's Golden Spyglass
 @i^3926^Chucky's Huge Ring
 @i^3927^Fine Aged Cheddar
+@i^3928^Superior Healing Potion
 @i^3932^Smotts' Chest
 @i^3937^Crochet Boots
 @i^4007^Overlinked Chain Armor
@@ -291,6 +296,7 @@ GoldScout-export 5^b4adsbb55gxh^10
 @q^1707^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
+@q^2295^0:15:0
 @q^2466^1:12:0
 @q^2592^1:7:1
 @q^2633^1:0:0
@@ -329,6 +335,7 @@ GoldScout-export 5^b4adsbb55gxh^10
 @q^3925^1:12:0
 @q^3926^1:12:0
 @q^3927^1:0:0
+@q^3928^1:0:0
 @q^3932^1:12:0
 @q^3937^0:4:0
 @q^4007^0:4:0
@@ -1245,6 +1252,8 @@ GoldScout-export 5^b4adsbb55gxh^10
 @a^10928^306:1,325:3
 @a^11748^27:1
 @a^12922^306:1,325:3,326:2
+@a^255849^53:1
+@a^255850^53:1
 @a^255851^135:1
 @a^255898^254:1,293:1
 @a^255899^254:7,274:6,293:24
@@ -1265,5 +1274,6 @@ GoldScout-export 5^b4adsbb55gxh^10
 @a^260968^94:3,115:2
 @a^261497^115:1
 @a^263071^151:1
+@a^266862^73:1
 @a^272228^310:6,311:1
 @l^0^enUS
