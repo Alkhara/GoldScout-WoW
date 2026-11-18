@@ -1,4 +1,4 @@
-GoldScout-export 5^lpchh63bnsyf^16
+GoldScout-export 5^lpchh63bnsyf^17
 1529^5^0^9^10^1420^0.7483^0.5975^5^Bleeding Horror^2589:1:2^
 1532^4^0^10^11^1420^0.7507^0.5964^4^Wandering Spirit^159:1:1^
 1767^2^0^13^13^1421^0.5572^0.2786^2^Vile Fin Shredder^730:1:1,1734:1:1,3258:1:1^
@@ -21,14 +21,15 @@ GoldScout-export 5^lpchh63bnsyf^16
 3244^6^0^11^12^1413^0.5323^0.3282^6^Greater Plainstrider^1210:1:1,5087:3:3,5469:4:4,14095:1:1,17056:2:2^
 3245^1^0^16^17^1413^0.5547^0.3515^1^Ornery Plainstrider^4776:1:1^
 3246^9^0^12^13^1413^0.5426^0.3477^9^Fleeting Plainstrider^4775:2:2,4776:1:1,5087:4:4,5469:3:3,15297:1:1,17056:4:4^
+3247^1^0^19^20^1413^0.4430^0.5300^1^Thunderhawk Hatchling^5164:1:1^
 3254^1^0^11^11^1413^0.4768^0.1437^1^Sunscale Lashtail^5123:1:1,5165:1:1^
 3255^13^0^13^15^1413^0.5066^0.3655^13^Sunscale Screecher^4878:1:1,5062:12:12,5123:5:5,5165:2:2,5635:1:1^
 3256^10^0^16^18^1413^0.4806^0.2390^10^Sunscale Scytheclaw^5055:5:5,5124:4:4,5165:8:8,6344:1:1^
 3257^1^0^19^19^1413^0.5968^0.3026^1^Ishamuhale^5101:1:1^
-3258^10^0^17^18^1413^0.4417^0.5300^10^Bristleback Hunter^1179:1:1,1813:1:1,2589:1:2,5075:3:4,5085:10:15,14109:1:1,248685:1:1^
+3258^13^0^17^18^1413^0.4362^0.5160^13^Bristleback Hunter^1179:1:1,1813:1:1,2589:2:5,2592:1:2,5075:4:6,5085:13:20,14109:1:1,248685:1:1^
 3260^6^0^16^17^1413^0.4483^0.5487^6^Bristleback Water Seeker^2592:2:3,4537:2:2,5075:4:7,5085:6:8^
-3261^8^0^18^19^1413^0.4480^0.5159^8^Bristleback Thornweaver^2592:1:2,5075:4:7,5085:8:12^
-3263^5^0^19^20^1413^0.4228^0.4677^5^Bristleback Geomancer^2589:1:2,5075:1:2,5085:5:8^
+3261^12^0^18^19^1413^0.4470^0.5170^12^Bristleback Thornweaver^1179:1:1,2592:2:4,5075:6:11,5085:12:17,248684:1:1^
+3263^12^0^19^20^1413^0.4204^0.4652^12^Bristleback Geomancer^2589:2:4,2592:1:2,2781:1:1,5075:4:6,5085:12:16^
 3265^5^0^11^12^1413^0.5641^0.2563^5^Razormane Hunter^1498:1:1,2455:1:1,2589:1:2^
 3266^4^0^12^13^1413^0.5897^0.2616^4^Razormane Defender^1495:1:1,2589:1:3^
 3267^8^0^10^11^1413^0.5515^0.2599^8^Razormane Water Seeker^2589:2:3,4537:1:1^
@@ -182,6 +183,7 @@ GoldScout-export 5^lpchh63bnsyf^16
 @i^2763^Fisherman Knife
 @i^2774^Rust-covered Blunderbuss
 @i^2778^Cheap Blunderbuss
+@i^2781^Dirty Blunderbuss
 @i^2972^Spellbinder Gloves
 @i^3013^Scroll of Protection
 @i^3167^Thick Spider Hair
@@ -244,6 +246,7 @@ GoldScout-export 5^lpchh63bnsyf^16
 @i^5125^Charged Scale
 @i^5134^Small Furry Paw
 @i^5143^Thunder Lizard Blood
+@i^5164^Thunderhawk Wings
 @i^5165^Sunscale Feather
 @i^5465^Small Spider Leg
 @i^5467^Kodo Meat
@@ -278,6 +281,7 @@ GoldScout-export 5^lpchh63bnsyf^16
 @i^15852^Kodo Horn
 @i^17056^Light Feather
 @i^211786^Scroll: CHAP BALK WELLES
+@i^248684^Waylaid Crate: Apprentice Textiles
 @i^248685^Waylaid Crate: Apprentice Curiosities
 @i^248702^Waylaid Crate: Apprentice Fabrics
 @i^248703^Waylaid Crate: Apprentice Ingots
@@ -357,6 +361,7 @@ GoldScout-export 5^lpchh63bnsyf^16
 @q^2763^0:2:0
 @q^2774^0:2:0
 @q^2778^0:2:0
+@q^2781^0:2:0
 @q^2972^1:4:0
 @q^3013^1:0:0
 @q^3167^0:15:0
@@ -419,6 +424,7 @@ GoldScout-export 5^lpchh63bnsyf^16
 @q^5125^0:15:0
 @q^5134^1:12:0
 @q^5143^1:12:0
+@q^5164^1:12:0
 @q^5165^1:12:0
 @q^5465^1:7:1
 @q^5467^1:7:1
@@ -453,6 +459,7 @@ GoldScout-export 5^lpchh63bnsyf^16
 @q^15852^1:12:0
 @q^17056^1:15:1
 @q^211786^1:0:0
+@q^248684^1:0:1
 @q^248685^1:0:1
 @q^248702^2:0:1
 @q^248703^2:0:1
@@ -1274,14 +1281,15 @@ GoldScout-export 5^lpchh63bnsyf^16
 @a^3240^228:7,229:1
 @a^3242^131:1
 @a^3245^151:1
+@a^3247^208:1
 @a^3254^49:1
 @a^3255^108:1
 @a^3256^49:5,69:2,190:3
 @a^3257^131:1
-@a^3258^208:5,209:3,228:2
+@a^3258^188:3,208:5,209:3,228:2
 @a^3260^209:3,228:2,229:1
-@a^3261^208:4,209:4
-@a^3263^168:1,188:4
+@a^3261^208:6,209:6
+@a^3263^168:2,188:10
 @a^3265^91:1,111:1
 @a^3266^91:1,111:3
 @a^3269^91:4
