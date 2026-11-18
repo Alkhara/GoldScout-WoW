@@ -7,7 +7,10 @@ releases add their own line automatically.
 
 ## Unreleased
 
+## v0.12.24
+
 - **Drop rates count what dropped, not just what you took:** loot left on a corpse (full bags, or junk you skip) used to count the kill but not the drop, so those items looked rarer than they are. GoldScout now records everything a corpse shows when you open it, taken or not; going back for it later still counts it once. The hunt panel still counts what reaches your bags.
+- Updated drop data from the community.
 
 ## v0.12.23
 
