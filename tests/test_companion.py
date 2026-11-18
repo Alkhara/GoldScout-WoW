@@ -1,8 +1,10 @@
 """Tests for the companion's SavedVariables reader."""
+import os
 import re
 import sys
 import tempfile
 import unittest
+from unittest import mock
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -91,6 +93,31 @@ class AccountTests(unittest.TestCase):
             self.assertEqual(account.export, EXPORT)
             self.assertTrue(account.has_loot)
             self.assertEqual(submission.parse(account.export).errors, [])
+
+    def test_reads_recovery_secret(self):
+        secret = "0123456789abcdefghijklmnopqrstuv"
+        for value, expected in ((secret, secret), ("short", None)):
+            with tempfile.TemporaryDirectory() as tmp:
+                saved = SAVED.replace("GoldScoutDB = {", 'GoldScoutDB = { ["recoverySecret"] = "%s",' % value, 1)
+                self.assertEqual(savedvars.read_accounts(self.make_install(tmp, saved))[0].recovery, expected)
+        with tempfile.TemporaryDirectory() as tmp:
+            self.assertIsNone(savedvars.read_accounts(self.make_install(tmp, SAVED))[0].recovery)
+
+    def test_upload_sends_recovery_secret(self):
+        import uploader
+        sent = {}
+
+        def fake_send(request, timeout):
+            sent.update({k.lower(): v for k, v in request.header_items()})
+            return {"status": "stored"}
+
+        with mock.patch.object(uploader, "_send", fake_send), \
+                mock.patch.dict(os.environ, {"GOLDSCOUT_UPLOAD_URL": "https://example.invalid"}):
+            uploader.upload("x", "tok", recovery="0123456789abcdefghijklmnopqrstuv")
+            self.assertEqual(sent["x-goldscout-recovery"], "0123456789abcdefghijklmnopqrstuv")
+            sent.clear()
+            uploader.upload("x", "tok")
+            self.assertNotIn("x-goldscout-recovery", sent)
 
     def test_old_addon_without_exports(self):
         with tempfile.TemporaryDirectory() as tmp:

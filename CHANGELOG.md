@@ -7,6 +7,8 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- **Sharing survives a new PC:** after moving your game to a new PC or reinstalling Windows, GoldScout Companion could stop sharing with "This GoldScout data is registered to another copy of the companion", because the key it shares with stayed on the old PC. GoldScout now keeps a private recovery key in its saved data (never in your exports), and the companion uses it to get a new sharing key on its own. It protects you from your first share with this version of GoldScout and the companion.
+
 ## v0.12.25
 
 - **Sharing works with French, Chinese and Korean names:** a name with a curly apostrophe, a no-break space before ":", guillemets or full-width punctuation made GoldScout Companion refuse the whole export ("the name contains a character that isn't allowed"). GoldScout now writes that punctuation plainly, names saved by older versions included, and the companion and the data bot tidy any odd character instead of refusing the export.

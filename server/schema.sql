@@ -39,6 +39,15 @@ CREATE TABLE IF NOT EXISTS install_region (
   updated_at INTEGER NOT NULL
 );
 
+-- A hash of each install's recovery secret (X-GoldScout-Recovery, from GoldScout's saved data; never in an
+-- export). A companion that lost its upload token (a new PC, Windows reinstalled) proves with it that it
+-- reads the same saved data, and gets a new token. Set at registration, or by an upload with a valid token.
+CREATE TABLE IF NOT EXISTS install_secrets (
+  install_id TEXT PRIMARY KEY,
+  secret_hash TEXT NOT NULL,
+  updated_at INTEGER NOT NULL
+);
+
 CREATE TABLE IF NOT EXISTS registrations (
   ip_hash TEXT NOT NULL,
   created_at INTEGER NOT NULL

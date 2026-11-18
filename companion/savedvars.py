@@ -217,6 +217,9 @@ class Account:
         variables = parse_saved_variables(self.path.read_text(encoding="utf-8", errors="replace"))
         database = variables.get("GoldScoutDB") or {}
         self.install_id = database.get("installID")
+        # GoldScout 0.12.26+: a private secret that gets a new upload token if this companion lost its own.
+        secret = database.get("recoverySecret")
+        self.recovery = secret if isinstance(secret, str) and re.fullmatch(r"[a-z0-9]{32}", secret) else None
         exports = database.get("exports") or {}
         self.seq = exports.get("seq") if isinstance(exports.get("seq"), int) else 0
         self.export = (exports.get("list") or {}).get(self.seq)

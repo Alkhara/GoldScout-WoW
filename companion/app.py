@@ -889,7 +889,8 @@ class App:
         for account in accounts:
             token = self.upload_state(account).get("token")
             try:
-                reply = uploader.upload(account.export, token, VERSION, region=account.region)
+                reply = uploader.upload(account.export, token, VERSION, region=account.region,
+                                        recovery=account.recovery)
                 results.append((account, reply.get("token") or token, None))
             except uploader.UploadError as error:
                 results.append((account, token, error))

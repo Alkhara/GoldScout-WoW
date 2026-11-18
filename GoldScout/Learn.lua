@@ -275,6 +275,20 @@ local function NewInstallID()
   return table.concat(chars)
 end
 
+-- A private recovery secret for this account's GoldScout data. It's never in an export: GoldScout Companion
+-- reads it from the saved data and sends it, so a companion that lost its upload key (a new PC, Windows
+-- reinstalled) can prove it reads the same data and get a new key. Made at the first export, well after
+-- the install ID, with the high-resolution timer mixed in, so it can't be worked out from the public ID.
+local function NewRecoverySecret()
+  local timer = type(debugprofilestop) == "function" and debugprofilestop or function() return 0 end
+  local chars = {}
+  for i = 1, 32 do
+    local n = (math.random(1, #ID_CHARS) + math.floor(timer() * 1000)) % #ID_CHARS + 1
+    chars[i] = ID_CHARS:sub(n, n)
+  end
+  return table.concat(chars)
+end
+
 -- Remembers an item's quality, class and Crafting Reagent flag as
 -- "quality:class:reagent" (reagent 1, 0, or x when the client doesn't say).
 -- Kept in saved data so exports stay identical when the item cache empties.
@@ -441,6 +455,7 @@ function Learn:Snapshot()
   if count + spots == 0 then
     return nil, 0, 0
   end
+  db.recoverySecret = db.recoverySecret or NewRecoverySecret()
   local exports = db.exports
   local latest = exports.list[exports.seq]
   if not (latest and latest:match("^[^\n]*\n(.*)$") == body) then

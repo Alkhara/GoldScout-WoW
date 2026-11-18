@@ -170,6 +170,18 @@ class SnapshotLuaTests(unittest.TestCase):
         newer = learn.Snapshot(learn)[0]
         self.assertEqual(submission.parse(newer).seq, 2)
 
+    def test_recovery_secret_stays_out_of_exports(self):
+        learn = self.ns.Learn
+        self.assertIsNone(self.ns.db.recoverySecret)        # made at the first export, not at login
+        text = learn.ExportString(learn)[0]
+        secret = self.ns.db.recoverySecret
+        self.assertRegex(secret, r"^[a-z0-9]{32}$")
+        self.assertNotEqual(secret[:12], self.ns.db.installID)
+        self.assertNotIn(secret, text)
+        self.ns.db.drops[3812].k = 12
+        self.assertNotIn(secret, learn.Snapshot(learn)[0])
+        self.assertEqual(self.ns.db.recoverySecret, secret)  # kept for good
+
     def test_snapshot_carries_names_and_crafted_items(self):
         self.ns.db.names["items"][3010] = "Crawler Meat"
         self.ns.db.names["items"][5569] = "Pattern: Hillman's Cloak, Belt"

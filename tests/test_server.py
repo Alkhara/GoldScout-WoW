@@ -96,6 +96,48 @@ class ServerTests(unittest.TestCase):
         self.assertEqual(mine[0]["seq"], 2)
         self.assertEqual(mine[0]["body"], export(install, 2))
 
+    def test_recovery_secret_gets_a_new_token(self):
+        install = new_install()
+        secret = "".join(random.choice(string.ascii_lowercase + string.digits) for _ in range(32))
+        status, first = raw("/v1/uploads", export(install, 1),
+                            {"X-GoldScout-Terms": uploader.TERMS_VERSION, "CF-Connecting-IP": fake_ip(),
+                             "X-GoldScout-Recovery": secret}, "POST")
+        self.assertEqual(status, 201)
+        old = first["token"]
+
+        # A companion that lost its token: a wrong secret doesn't help, the right one gets a new token.
+        with self.assertRaises(uploader.UploadError) as wrong:
+            uploader.upload(export(install, 1), recovery=secret[::-1])
+        self.assertEqual(wrong.exception.status, 403)
+        reply = uploader.upload(export(install, 1), recovery=secret)
+        self.assertEqual(reply["status"], "unchanged")
+        new = reply["token"]
+        self.assertNotEqual(new, old)
+
+        # The old token stops working; the new one uploads, and a normal upload hands out no token.
+        with self.assertRaises(uploader.UploadError) as stale:
+            uploader.upload(export(install, 2), old)
+        self.assertEqual(stale.exception.status, 403)
+        reply = uploader.upload(export(install, 2), new, recovery=secret)
+        self.assertEqual(reply, {"status": "stored"})
+
+        # Recovering again hands over a token, even within the upload interval (MIN_SECONDS_BETWEEN_UPLOADS),
+        # where the export waits for the next upload.
+        reply = uploader.upload(export(install, 3), recovery=secret)
+        self.assertIn(reply["status"], ("stored", "unchanged"))
+        self.assertIn("token", reply)
+
+    def test_secret_added_by_a_later_upload(self):
+        # Installs registered before recovery secrets: the token holder's next upload stores one.
+        install = new_install()
+        status, first = register(install)
+        secret = "".join(random.choice(string.ascii_lowercase + string.digits) for _ in range(32))
+        with self.assertRaises(uploader.UploadError) as none_yet:
+            uploader.upload(export(install, 1), recovery=secret)
+        self.assertEqual(none_yet.exception.status, 403)
+        uploader.upload(export(install, 1), first["token"], recovery=secret)
+        self.assertIn("token", uploader.upload(export(install, 1), recovery=secret))
+
     def test_rejects_bad_uploads(self):
         headers = {"X-GoldScout-Terms": uploader.TERMS_VERSION}
         cases = {

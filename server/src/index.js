@@ -8,6 +8,9 @@
 //
 //   POST /v1/uploads   body: export text. Headers: X-GoldScout-Terms, and
 //                      Authorization: Bearer <token> after the first upload.
+//                      X-GoldScout-Recovery: the install's recovery secret
+//                      (companion 0.12.26+): stored hashed, and if the token
+//                      was lost, a matching secret gets a new one in "token".
 //                      The website's share page (wowgoldscout.com/share,
 //                      site/share.js) posts here too, from the browser:
 //                      OPTIONS answers its CORS preflight (preflight() below).
@@ -54,6 +57,8 @@ const EXTRA_LINE = /^@[imcqla]\^[0-9]{1,9}\^[^^]*$/;
 const FISH_LINE = /^@f\^[0-9]{1,9}\^[0-9]{1,9}\^[0-9]{1,9}\^[0-9]{1,3}\^[0-9:,]*\^[0-9:,]*$/;
 const TERMS_VERSIONS = new Set(["2026-11-07"]);
 const NEW_INSTALLS_PER_IP_PER_DAY = 5;
+// GoldScout's recovery secret for an install: 32 random letters and digits from its saved data.
+const RECOVERY_SECRET = /^[a-z0-9]{32}$/;
 // "GoldScoutCompanion/0.8.0 (macOS)"; companions before 0.8.0 send no system.
 const CLIENT_AGENT = /^GoldScoutCompanion\/([0-9A-Za-z.+-]{1,24})(?: \(([A-Za-z]{1,16})\))?$/;
 const CLIENT_SYSTEMS = new Set(["Windows", "macOS"]);
@@ -353,6 +358,12 @@ async function receive(request, env) {
 
   const row = await env.DB.prepare("SELECT token_hash, seq, updated_at FROM installs WHERE install_id = ?")
     .bind(installId).first();
+  const secret = (request.headers.get("X-GoldScout-Recovery") || "").trim();
+  const secretHash = RECOVERY_SECRET.test(secret) ? await sha256("recovery:" + secret) : null;
+  const keepSecret = () => (secretHash ? [env.DB.prepare(
+    "INSERT INTO install_secrets (install_id, secret_hash, updated_at) VALUES (?, ?, ?) " +
+    "ON CONFLICT (install_id) DO UPDATE SET secret_hash = excluded.secret_hash, updated_at = excluded.updated_at",
+  ).bind(installId, secretHash, now)] : []);
 
   if (!row) {
     // First upload from this install: register it and hand back its token.
@@ -373,28 +384,51 @@ async function receive(request, env) {
       env.DB.prepare("INSERT INTO registrations (ip_hash, created_at) VALUES (?, ?)").bind(ipHash, now),
       env.DB.prepare("DELETE FROM registrations WHERE created_at < ?").bind(now - 2 * 86400),
       ...recordClient(env, installId, request, now),
+      ...keepSecret(),
     ]);
     return json({ status: "registered", token }, 201);
   }
 
-  const token = bearer(request);
-  if (!token || !sameText(await sha256(token), row.token_hash)) {
-    return json({ error: "This GoldScout data is registered to another copy of the companion." }, 403);
+  // The token proves this is the companion that registered the install. One that lost its token
+  // (a new PC, Windows reinstalled) proves it reads the same saved data with the recovery secret,
+  // and gets a new token; the old one stops working.
+  let token = bearer(request);
+  let issued = {};
+  let updates = [];
+  if (token && sameText(await sha256(token), row.token_hash)) {
+    updates = keepSecret();
+  } else {
+    const stored = secretHash && await env.DB.prepare("SELECT secret_hash FROM install_secrets WHERE install_id = ?")
+      .bind(installId).first();
+    if (!stored || !sameText(secretHash, stored.secret_hash)) {
+      return json({ error: "This GoldScout data is registered to another copy of the companion." }, 403);
+    }
+    token = newToken();
+    issued = { token };
+    updates = [env.DB.prepare("UPDATE installs SET token_hash = ? WHERE install_id = ?")
+      .bind(await sha256(token), installId)];
   }
   if (seq <= row.seq) {
-    await env.DB.batch(recordClient(env, installId, request, now));
-    return json({ status: "unchanged" });
+    await env.DB.batch([...updates, ...recordClient(env, installId, request, now)]);
+    return json({ status: "unchanged", ...issued });
   }
   if (now - row.updated_at < minSeconds) {
+    if (issued.token) {
+      // The new token has to reach the companion, and an error reply wouldn't save it: keep the
+      // stored export for now; the companion's next export uploads with the new token.
+      await env.DB.batch([...updates, ...recordClient(env, installId, request, now)]);
+      return json({ status: "unchanged", ...issued });
+    }
     return json({ error: "Uploading too often; try again in a minute." }, 429);
   }
   await env.DB.batch([
     env.DB.prepare(
       "UPDATE installs SET seq = ?, body = ?, terms = ?, updated_at = ?, uploads = uploads + 1 WHERE install_id = ?",
     ).bind(seq, text, request.headers.get("X-GoldScout-Terms"), now, installId),
+    ...updates,
     ...recordClient(env, installId, request, now),
   ]);
-  return json({ status: "stored" });
+  return json({ status: "stored", ...issued });
 }
 
 async function list(request, env, url) {
