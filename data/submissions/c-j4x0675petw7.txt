@@ -1,4 +1,4 @@
-GoldScout-export 5^j4x0675petw7^10
+GoldScout-export 5^j4x0675petw7^11
 522^1^0^35^35^1431^0.2008^0.3567^1^Mor'Ladim^4306:1:2^
 597^2^0^37^37^1434^0.2353^0.0882^2^Bloodscalp Berserker^4306:2:5^
 660^1^0^37^37^1434^0.2341^0.0839^1^Bloodscalp Witch Doctor^2735:1:1^
@@ -28,9 +28,11 @@ GoldScout-export 5^j4x0675petw7^10
 1062^1^0^40^40^1434^0.2348^0.0934^1^Nezzliok the Dire^3905:1:1^
 1152^10^0^35^36^1434^0.4000^0.2741^10^Snapjaw Crocolisk^770:1:1,3667:1:1,4104:5:5^
 1550^1^0^41^42^1434^0.3909^0.5060^1^Thrashtail Basilisk^11386:1:1^
-2268^1^0^26^26^1424^0.3253^0.4617^1^Hillsbrad Footman^2589:1:2^
+1913^2^0^16^17^1421^0.6350^0.6320^2^Dalaran Warder^^
+2268^1^0^25^26^1424^0.3253^0.4617^1^Hillsbrad Footman^2589:1:2^
 2387^1^0^25^25^1424^0.3281^0.4275^1^Hillsbrad Councilman^^
 2404^1^0^26^26^1424^0.3248^0.4472^1^Blacksmith Verringtan^4306:1:2^
+2540^1^0^17^17^1421^0.6347^0.6317^1^Dalaran Serpent^^
 2676^1^0^0^0^1434^0.4135^0.4314^1^Compact Harvest Reaper^^
 2731^1^0^36^37^1418^0.4208^0.3938^1^Ridge Stalker^^
 2992^3^0^38^38^1435^0.6335^0.2229^3^Healing Ward V^^
@@ -117,6 +119,7 @@ GoldScout-export 5^j4x0675petw7^10
 7856^2^0^44^45^1446^0.7273^0.4735^2^Southsea Freebooter^4306:1:1,9276:1:1^
 7857^1^0^45^45^1446^0.7282^0.4735^1^Southsea Dock Worker^4306:1:1^
 7858^1^0^44^44^1446^0.7276^0.4801^1^Southsea Swashbuckler^4338:1:1^
+8996^3^0^17^18^1421^0.6322^0.6350^3^Voidwalker Minion^^
 11577^1^0^35^35^1443^0.4118^0.6549^1^Whirlwind Stormwalker^^
 12579^1^0^26^26^1442^0.3046^0.6287^1^Bloodfury Ripper^16190:1:1^
 12876^1^0^0^0^0^0.0000^0.0000^0^^16782:1:1^
@@ -206,6 +209,8 @@ GoldScout-export 5^j4x0675petw7^10
 @i^5784^Slimy Murloc Scale
 @i^5871^Large Hoof
 @i^6190^Draenethyst Shard
+@i^6289^Raw Longjaw Mud Snapper
+@i^6299^Sickly Looking Fish
 @i^6308^Raw Bristle Whisker Catfish
 @i^6411^Chief Brigadier Armor
 @i^7448^Sentinel Girdle of the Owl
@@ -319,6 +324,8 @@ GoldScout-export 5^j4x0675petw7^10
 @q^5784^1:7:1
 @q^5871^0:15:0
 @q^6190^1:12:0
+@q^6289^1:7:1
+@q^6299^1:0:0
 @q^6308^1:7:1
 @q^6411^2:4:0
 @q^7448^2:4:0
@@ -351,6 +358,7 @@ GoldScout-export 5^j4x0675petw7^10
 @m^1413^The Barrens
 @m^1414^Kalimdor
 @m^1418^Badlands
+@m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
 @m^1431^Duskwood
 @m^1434^Stranglethorn Vale
@@ -359,6 +367,7 @@ GoldScout-export 5^j4x0675petw7^10
 @m^1442^Stonetalon Mountains
 @m^1443^Desolace
 @m^1446^Tanaris
+@m^1458^Undercity
 @c^724^
 @c^733^
 @c^787^
@@ -1079,6 +1088,9 @@ GoldScout-export 5^j4x0675petw7^10
 @c^279945^
 @c^279957^
 @c^279961^
+@c^279965^
+@c^279966^
+@c^279967^
 @c^279969^
 @c^279974^
 @c^279978^
@@ -1115,9 +1127,11 @@ GoldScout-export 5^j4x0675petw7^10
 @a^1062^24:1
 @a^1152^88:3,108:4,127:3
 @a^1550^207:1
+@a^1913^252:2
 @a^2268^186:1
 @a^2387^166:1
 @a^2404^166:1
+@a^2540^252:1
 @a^2676^168:1
 @a^2731^148:1
 @a^2992^92:3
@@ -1184,8 +1198,10 @@ GoldScout-export 5^j4x0675petw7^10
 @a^7856^194:2
 @a^7857^194:1
 @a^7858^194:1
+@a^8996^252:3
 @a^11577^268:1
 @a^12579^246:1
 @a^12922^72:1,92:5,111:1
 @a^270294^91:1
+@f^1458^0^3^1^6289:2:2,6299:1:1^136:3
 @l^0^enUS
