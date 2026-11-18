@@ -21,17 +21,24 @@ TERMS_VERSION = "2026-11-07"
 
 @functools.lru_cache(maxsize=None)
 def https_context():
-    """The certificates HTTPS requests are checked against. On Windows, the
-    system's own. python.org's Python on macOS (and so the app built from it)
-    has none of its own until its Install Certificates script runs, so there
-    it's certifi's list, bundled with the app."""
-    if sys.platform == "darwin":
-        try:
-            import certifi
-            return ssl.create_default_context(cafile=certifi.where())
-        except ImportError:
-            pass
-    return ssl.create_default_context()
+    """The certificates HTTPS requests are checked against: the system's own,
+    plus certifi's list (Mozilla's), bundled with the app.
+
+    Windows downloads many root certificates only the first time its own
+    security code needs one, and Python reads the store without asking for
+    them, so a PC can lack a root a site uses: GitHub's (Sectigo E46 /
+    USERTrust ECC) failed the update check with CERTIFICATE_VERIFY_FAILED.
+    The system's own stay too, for certificates a company or antivirus adds.
+    python.org's Python on macOS (and so the app built from it) has none of
+    its own until its Install Certificates script runs: there, certifi's list
+    is all of them."""
+    context = ssl.create_default_context()
+    try:
+        import certifi
+    except ImportError:   # running from source without it: the system's only
+        return context
+    context.load_verify_locations(cafile=certifi.where())
+    return context
 
 
 def open_url(request, timeout):

@@ -1,4 +1,7 @@
-# What the Windows companion bundles (the tray icon). The Mac app needs neither.
-# Pinned so every build is the same; Dependabot updates these (.github/dependabot.yml).
+# What the Windows companion bundles: the tray icon (pystray, Pillow; the Mac app
+# needs neither) and certifi's certificate list, trusted alongside Windows' own for
+# HTTPS (uploader.https_context). Pinned so every build is the same; Dependabot
+# updates these (.github/dependabot.yml). Keep certifi the same as requirements-mac.txt.
 pystray==0.19.5
 pillow==13.0.0
+certifi==2026.10.23

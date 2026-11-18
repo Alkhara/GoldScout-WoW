@@ -5,8 +5,7 @@ Windows: GoldScoutCompanion.exe, a single file.
   pip install -r companion/requirements-build.txt -r companion/requirements.txt
   python companion/build.py
 
-macOS: GoldScout Companion.app (no tray icon, so no pystray or Pillow needed;
-certifi's certificates instead). Python from python.org: Apple's /usr/bin/python3
+macOS: GoldScout Companion.app (no tray icon, so no pystray or Pillow needed). Python from python.org: Apple's /usr/bin/python3
 has Tk 8.5, which draws blank windows.
   pip install -r companion/requirements-build.txt -r companion/requirements-mac.txt
   python3 companion/build.py [--universal2]
@@ -54,6 +53,7 @@ def build_windows():
     subprocess.run([sys.executable, "-m", "PyInstaller", *common_args(),
                     "--onefile", "--name", "GoldScoutCompanion",
                     "--hidden-import", "pystray._win32",
+                    "--hidden-import", "certifi",  # uploader.https_context
                     "--icon", str(HERE / "icon.ico"),
                     "--add-data", "%s;." % (HERE / "icon.ico"),
                     str(HERE / "app.py")], check=True)
@@ -97,7 +97,7 @@ def build_mac(universal):
             "--onedir", "--name", APP_NAME,
             "--osx-bundle-identifier", BUNDLE_ID,
             "--exclude-module", "pystray", "--exclude-module", "PIL",
-            "--hidden-import", "certifi",  # imported only on a Mac (uploader.https_context)
+            "--hidden-import", "certifi",  # uploader.https_context
             "--icon", str(icns)]
     if universal:
         args += ["--target-arch", "universal2"]

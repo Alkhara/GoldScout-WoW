@@ -108,6 +108,10 @@ With Python 3.10 or later:
   (it includes Tk), then `pip3 install -r companion/requirements-mac.txt` (the
   certificates it checks HTTPS against) and `python3 companion/app.py`.
 
+Both lists include certifi, Mozilla's list of trusted certificates, which the
+companion trusts alongside the system's own: Windows can lack a root a site
+uses until something asks Windows for it, and that broke the update check.
+
 Add `--tray` to start with the window hidden. Running from source never updates
 itself or starts at login.
 

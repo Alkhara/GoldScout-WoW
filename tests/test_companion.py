@@ -1,4 +1,5 @@
 """Tests for the companion's SavedVariables reader."""
+import re
 import sys
 import tempfile
 import unittest
@@ -184,20 +185,44 @@ class HttpsTests(unittest.TestCase):
         self.assertEqual(context.verify_mode, ssl.CERT_REQUIRED)
         self.assertTrue(context.check_hostname)
 
-    def test_a_mac_uses_certifis_certificates(self):
+    def test_certifis_certificates_are_trusted_with_the_systems(self):
+        # Windows can lack a root a site uses (GitHub's failed the update check):
+        # certifi's list is added to the system's, never instead of it.
+        import types
+        import uploader
+        from unittest import mock
+        fake = types.SimpleNamespace(where=lambda: "/bundled/cacert.pem")
+        uploader.https_context.cache_clear()
         try:
-            import certifi  # companion/requirements-mac.txt; the Mac release build runs this
-        except ImportError:
-            self.skipTest("certifi isn't installed")
+            with mock.patch.dict(sys.modules, {"certifi": fake}), \
+                    mock.patch.object(uploader.ssl, "create_default_context") as create:
+                context = uploader.https_context()
+            create.assert_called_once_with()
+            context.load_verify_locations.assert_called_once_with(cafile="/bundled/cacert.pem")
+        finally:
+            uploader.https_context.cache_clear()
+
+    def test_without_certifi_the_systems_certificates_are_used(self):
         import uploader
         from unittest import mock
         uploader.https_context.cache_clear()
         try:
-            with mock.patch.object(uploader.sys, "platform", "darwin"),                     mock.patch.object(uploader.ssl, "create_default_context") as create:
-                uploader.https_context()
-            create.assert_called_once_with(cafile=certifi.where())
+            with mock.patch.dict(sys.modules, {"certifi": None}), \
+                    mock.patch.object(uploader.ssl, "create_default_context") as create:
+                context = uploader.https_context()
+            self.assertIs(context, create.return_value)
+            context.load_verify_locations.assert_not_called()
         finally:
             uploader.https_context.cache_clear()
+
+    def test_every_build_bundles_certifi(self):
+        root = Path(__file__).resolve().parent.parent / "companion"
+        pins = {name: re.search(r"^certifi==(\S+)$", (root / name).read_text(encoding="utf-8"), re.M)
+                for name in ("requirements.txt", "requirements-mac.txt")}
+        self.assertTrue(all(pins.values()), pins)
+        self.assertEqual(pins["requirements.txt"].group(1), pins["requirements-mac.txt"].group(1))
+        build = (root / "build.py").read_text(encoding="utf-8")
+        self.assertEqual(build.count('"--hidden-import", "certifi"'), 2)   # Windows and Mac
 
     def test_no_companion_module_calls_urlopen_itself(self):
         for path in (ROOT / "companion").glob("*.py"):

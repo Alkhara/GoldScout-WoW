@@ -7,6 +7,8 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- **Companion:** fixed "Couldn't check for updates (CERTIFICATE_VERIFY_FAILED)" on some Windows PCs. Windows hadn't yet downloaded the root certificate GitHub uses, so the update check couldn't reach GitHub; the companion now also trusts Mozilla's list of certificates, bundled with the app.
+
 ## v0.12.22
 
 - **Every drop from a mob, one right-click away:** target a mob, right-click its portrait and choose **Drop rates**. A window lists everything GoldScout players have looted from it, your own loot included: each item's drop chance, what it's worth and what it adds per kill, with pickpocketing listed separately. `/gscout drops` opens it for your target too.
