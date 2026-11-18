@@ -1,4 +1,4 @@
-GoldScout-export 5^sigvda6wxpxp^5
+GoldScout-export 5^sigvda6wxpxp^6
 2265^3^0^24^25^1424^0.3194^0.4739^3^Hillsbrad Apprentice Blacksmith^929:1:1,3692:2:2^
 2266^4^0^23^24^1424^0.3405^0.4712^4^Hillsbrad Farmer^1485:1:1,3692:1:1,4306:1:1^
 2267^10^0^24^25^1424^0.3474^0.4670^10^Hillsbrad Peasant^1205:1:1,2589:2:4,2592:1:2,3692:4:4,4306:1:1^
@@ -40,6 +40,9 @@ GoldScout-export 5^sigvda6wxpxp^5
 3992^6^0^20^21^1442^0.6388^0.3984^6^Venture Co. Engineer^814:1:1,2592:2:3^
 3993^2^0^21^21^1442^0.6359^0.4018^2^Venture Co. Machine Smith^^
 4006^1^0^19^19^1442^0.6802^0.4481^1^Deepmoss Webspinner^3931:1:1^
+4018^13^0^22^23^1442^0.4544^0.2490^13^Antlered Courser^5471:4:4,5566:5:5,5585:12:24,5871:2:2,248702:1:1^
+4020^1^0^22^22^1442^0.4751^0.3310^1^Sap Beast^5582:1:1^
+4036^2^0^23^24^1442^0.4482^0.4264^2^Rogue Flame Spirit^16312:2:2^
 4070^1^0^21^21^1442^0.6414^0.3856^1^Venture Co. Builder^1179:1:1^
 4128^6^0^22^23^1413^0.4640^0.7870^6^Hecklefang Stalker^3301:5:5,3402:1:1^
 4196^5^0^21^22^1413^0.4303^0.7078^5^Silithid Swarm^^
@@ -86,14 +89,21 @@ GoldScout-export 5^sigvda6wxpxp^5
 @i^5268^Cracked Silithid Shell
 @i^5269^Silithid Ichor
 @i^5470^Thunder Lizard Tail
+@i^5471^Stag Meat
 @i^5523^Small Barnacled Clam
 @i^5524^Thick-shelled Clam
+@i^5566^Broken Antler
+@i^5582^Stonetalon Sap
+@i^5585^Courser Eye
 @i^5736^Gerenzo's Mechanical Arm
+@i^5871^Large Hoof
 @i^6614^Sage's Cloak of the Beast
 @i^15115^Rigid Gloves of the Eagle
+@i^16312^Incendrites
 @i^17057^Shiny Fish Scales
 @i^248686^Waylaid Crate: Journeyman Herbs
 @i^248687^Waylaid Crate: Journeyman Ore
+@i^248702^Waylaid Crate: Apprentice Fabrics
 @i^284400^Foreman's Helm
 @q^422^1:0:0
 @q^814^1:7:1
@@ -133,14 +143,21 @@ GoldScout-export 5^sigvda6wxpxp^5
 @q^5268^0:15:0
 @q^5269^0:15:0
 @q^5470^1:7:1
+@q^5471^1:7:1
 @q^5523^1:7:0
 @q^5524^1:7:0
+@q^5566^0:15:0
+@q^5582^1:12:0
+@q^5585^1:12:0
 @q^5736^1:12:0
+@q^5871^0:15:0
 @q^6614^2:4:0
 @q^15115^2:4:0
+@q^16312^1:12:0
 @q^17057^1:15:0
 @q^248686^1:0:1
 @q^248687^1:0:1
+@q^248702^2:0:1
 @q^284400^3:4:0
 @m^1413^The Barrens
 @m^1424^Hillsbrad Foothills
@@ -810,6 +827,9 @@ GoldScout-export 5^sigvda6wxpxp^5
 @a^3992^152:4,172:2
 @a^3993^152:1,172:1
 @a^4006^173:1
+@a^4018^88:3,89:6,108:1,109:2,129:1
+@a^4020^129:1
+@a^4036^168:1,169:1
 @a^4070^152:1
 @a^4128^308:1,309:4,329:1
 @a^4196^288:5
