@@ -1,4 +1,4 @@
-GoldScout-export 5^1665n1o9tbra^4
+GoldScout-export 5^1665n1o9tbra^5
 2240^7^0^32^33^1416^0.5770^0.6746^7^Détrousseur du Syndicat^4306:3:4,5113:1:1,6986:1:1^
 2241^6^0^33^34^1416^0.5773^0.6796^6^Larronnesse du Syndicat^4306:4:4,5113:1:1^
 2248^17^0^30^31^1424^0.4485^0.3067^17^Yéti des grottes^1708:1:1,3720:6:6^
@@ -21,14 +21,28 @@ GoldScout-export 5^1665n1o9tbra^4
 2589^4^0^31^32^1417^0.3175^0.2796^4^Mercenaire du Syndicat^1708:1:1,4306:1:1,248693:1:1^
 2714^1^0^35^35^1417^0.5120^0.6166^1^Messagère des Réprouvés^4482:1:1^
 2721^2^0^35^35^1417^0.5133^0.6143^2^Garde du corps Réprouvé^4306:1:2^
+4139^6^0^33^34^1441^0.8349^0.7899^6^Scorpide terrifiant^5794:2:2,12037:4:4,19937:1:1,19938:1:1^
+4140^11^0^31^32^1441^0.7356^0.6637^11^Scorpide ravageur^5794:4:4,12037:4:4^
+4142^13^0^30^31^1441^0.7403^0.6177^13^Tortue nacrétoile^3712:4:4,4555:2:2,4556:5:5,5795:3:3,6308:3:6^
+4143^8^0^34^35^1441^0.8233^0.6855^8^Mordeuse nacrétoile^3712:3:3,4555:3:3,4556:3:3,5795:4:4^
+4144^4^0^32^33^1441^0.7471^0.8684^4^Tortue fouisseuse nacrétoile^3712:1:1,5795:2:2,6362:1:1^
+4147^10^0^30^31^1441^0.7003^0.6191^10^Basilic du sel gemme^1701:2:2,1702:2:2,5635:1:1,11384:2:2,11385:3:3^
+4150^6^0^34^35^1441^0.7822^0.8474^6^Contemplateur du sel gemme^1701:3:3,1702:2:2,4093:2:2^
+4151^10^0^32^33^1441^0.8679^0.6841^10^Peau de cristal du sel gemme^1701:1:1,1702:4:4^
+4154^7^0^30^32^1441^0.8102^0.6603^7^Charognard des Salines^729:4:4,3399:2:2,5114:3:3,5116:2:2,5848:7:7,11416:1:1,12037:2:2,17056:3:3^
+4158^3^0^32^34^1441^0.7472^0.8496^3^Vautour des Salines^5848:3:3,12037:1:1^
+@i^729^Viande filandreuse de vautour
 @i^878^Petite filière
 @i^1205^Jus de melon
 @i^1686^Moustache à poil dur
+@i^1701^Griffe de basilic
+@i^1702^Epine dorsale intacte de basilic
 @i^1708^Nectar sucré
 @i^1805^Brassards en cuir armé
 @i^2221^Petite targe
 @i^2251^Patte d'araignée fondante
 @i^2940^Patte d'ours sanglante
+@i^3399^Serre de vautour
 @i^3702^Vésicule biliaire d'ours
 @i^3703^Bière d'Austrivage
 @i^3712^Viande de tortue
@@ -37,21 +51,36 @@ GoldScout-export 5^1665n1o9tbra^4
 @i^3731^Viande de lion
 @i^3792^Ceinture entrelacée
 @i^3799^Gilet entrelacé
+@i^4093^Grande queue de basilic
 @i^4306^Etoffe de soie
 @i^4482^Documents scellés
 @i^4555^Epaisse queue écailleuse
 @i^4556^Fragment de carapace moucheté
 @i^5113^Marque du Syndicat
+@i^5114^Griffe abîmée
+@i^5116^Longue plume de queue
 @i^5524^Palourde à coque épaisse
+@i^5635^Griffe aiguisée
 @i^5785^Ecailles de murloc épaisses
+@i^5794^Venin de scorpide acide
+@i^5795^Carapace de tortue durcie
+@i^5848^Os creux de vautour
 @i^6308^Poisson-chat moustachu cru
+@i^6362^Morue rochécaille crue
 @i^6406^Bottes nocturnes
 @i^6986^Lotus cramoisi
 @i^7072^Ecaille de naga
 @i^8746^Capuche entrelacée
 @i^11152^Formule : Enchantement de gants (Pêche)
+@i^11384^Dents de basilic cassées
+@i^11385^Ecaille de basilic
+@i^11416^Cage thoracique délicate
+@i^12037^Viande mystère
+@i^17056^Plume légère
 @i^17057^Ecailles de poisson brillantes
 @i^17058^Huile de poisson
+@i^19937^Petite griffe de scorpide
+@i^19938^Patte de scorpide épaisse
 @i^211853^Parchemin : VOCE WELL
 @i^211855^Parchemin : STHENIC LUNATE
 @i^213543^Parchemin : BONHOMME
@@ -60,14 +89,18 @@ GoldScout-export 5^1665n1o9tbra^4
 @i^248693^Caisse détournée : textiles d'expert
 @i^249881^Recette : thé aux racines
 @i^262889^Commission d'expert scellée
+@q^729^1:7:1
 @q^878^0:7:0
 @q^1205^1:0:0
 @q^1686^0:15:0
+@q^1701^0:15:0
+@q^1702^0:15:0
 @q^1708^1:0:0
 @q^1805^0:4:0
 @q^2221^0:4:0
 @q^2251^1:7:1
 @q^2940^0:15:0
+@q^3399^0:15:0
 @q^3702^0:15:0
 @q^3703^1:0:0
 @q^3712^1:7:1
@@ -76,21 +109,36 @@ GoldScout-export 5^1665n1o9tbra^4
 @q^3731^1:7:1
 @q^3792^0:4:0
 @q^3799^0:4:0
+@q^4093^0:15:0
 @q^4306^1:7:1
 @q^4482^1:12:0
 @q^4555^0:15:0
 @q^4556^0:15:0
 @q^5113^0:15:0
+@q^5114^0:15:0
+@q^5116^1:7:1
 @q^5524^1:7:0
+@q^5635^1:7:1
 @q^5785^1:7:1
+@q^5794^1:12:0
+@q^5795^1:12:0
+@q^5848^1:12:0
 @q^6308^1:7:1
+@q^6362^1:7:1
 @q^6406^2:4:0
 @q^6986^0:15:0
 @q^7072^1:7:1
 @q^8746^0:4:0
 @q^11152^2:9:0
+@q^11384^0:15:0
+@q^11385^0:15:0
+@q^11416^0:15:0
+@q^12037^1:7:1
+@q^17056^1:15:1
 @q^17057^1:15:0
 @q^17058^1:15:0
+@q^19937^0:15:0
+@q^19938^0:15:0
 @q^211853^1:0:0
 @q^211855^1:0:0
 @q^213543^1:0:0
@@ -102,6 +150,7 @@ GoldScout-export 5^1665n1o9tbra^4
 @m^1416^Montagnes d'Alterac
 @m^1417^Hautes-terres d'Arathi
 @m^1424^Contreforts de Hautebrande
+@m^1441^Mille pointes
 @c^724^
 @c^733^
 @c^787^
@@ -1320,4 +1369,14 @@ GoldScout-export 5^1665n1o9tbra^4
 @a^2589^106:3,126:1
 @a^2714^250:1
 @a^2721^250:2
+@a^4139^294:1,316:1,317:2,337:1,356:1
+@a^4140^215:1,254:2,257:1,273:2,275:1,294:4
+@a^4142^216:3,234:1,253:1,254:2,255:2,273:2,274:2
+@a^4143^216:2,274:1,277:1,297:2,314:1,317:1
+@a^4144^317:1,354:1,374:2
+@a^4147^214:1,234:2,253:2,254:1,273:4
+@a^4150^316:1,336:2,354:3
+@a^4151^216:1,237:2,277:1,297:4,317:1,337:1
+@a^4154^254:1,257:2,275:1,277:2,294:1
+@a^4158^314:1,356:1,374:1
 @l^0^frFR

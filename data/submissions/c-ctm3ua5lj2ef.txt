@@ -1,4 +1,4 @@
-GoldScout-export 5^ctm3ua5lj2ef^19
+GoldScout-export 5^ctm3ua5lj2ef^20
 92^1^0^39^39^1418^0.1344^0.3977^1^Elémentaire de roche^^
 589^1^0^14^14^1436^0.4543^0.7037^1^Pilleuse défias^7997:1:1^
 590^1^0^13^13^1436^0.4540^0.7023^1^Pillarde défias^^
@@ -6,7 +6,13 @@ GoldScout-export 5^ctm3ua5lj2ef^19
 667^4^0^39^40^1434^0.4290^0.3617^4^Guerrier Skullsplitter^1520:1:1,4306:1:1,4338:1:1^
 671^1^0^36^37^1434^0.2414^0.1085^1^Chasseur de tête Bloodscalp^2738:1:1,4306:1:1^
 696^2^0^39^40^1434^0.4462^0.3786^2^Lanceur de haches Skullsplitter^1520:2:2,1708:1:1^
+705^9^0^1^1^1426^0.2905^0.7381^9^Jeune loup décharné^750:8:8,1364:1:1,1378:1:1,2210:1:1,3365:1:1,4865:3:3,7073:4:4,7074:2:2^
+706^17^0^3^4^1426^0.2751^0.8011^17^Jeune troll Frostmane^117:2:2,159:2:2,1366:1:1,1378:1:1,2589:5:5,2652:1:1^
+707^8^0^1^2^1426^0.3061^0.7451^8^Trogg Mâcheroc^117:1:1,1368:1:1,1372:1:1,1374:1:1,2589:1:1^
+708^7^0^3^3^1426^0.2257^0.7082^7^Petit sanglier des rochers^117:1:1,1368:1:1,2210:1:1,3363:1:1,3365:1:1,4865:2:2,7098:6:6^
+724^6^0^2^2^1426^0.3115^0.7533^6^Trogg Mâcheroc forcené^117:1:1,1374:1:1,1380:2:2,2589:1:1^
 780^16^0^39^40^1434^0.4423^0.3497^16^Mystique Skullsplitter^1520:6:6,2466:4:4,2744:1:1,4306:2:6,4338:1:1,8151:3:3,213127:1:1^
+808^3^0^5^5^1426^0.3040^0.7991^3^Grik'nir le Froid^2004:1:1^
 1121^1^0^8^8^1426^0.7024^0.3918^1^Marche-neige Frostmane^^
 1183^2^0^19^20^1432^0.7735^0.1396^2^Mystique Mo'grosh^2287:1:1^
 1491^1^0^44^44^1434^0.4077^0.6084^1^Naga Zanzil^7973:1:1^
@@ -145,6 +151,16 @@ GoldScout-export 5^ctm3ua5lj2ef^19
 269134^6^0^0^0^0^0.0000^0.0000^0^^2592:1:2,3385:1:1,248686:1:1^
 270664^3^0^37^38^2548^0.3839^0.6417^3^Crache-toile venimeux^4585:2:2,5637:1:1,12205:1:1^
 272389^40^0^34^36^1416^0.2915^0.3962^40^Chouette des marais^5116:5:5,5829:4:4,11416:7:7,11418:3:3,12207:13:13,17056:16:16,248693:1:1^
+@i^117^Viande séchée coriace
+@i^159^Eau de source
+@i^750^Viande de loup coriace
+@i^1364^Gilet rapiécé en cuir
+@i^1366^Pantalon rapiécé en cuir
+@i^1368^Gants rapiécés en cuir
+@i^1372^Cape déchirée
+@i^1374^Chaussures râpées
+@i^1378^Pantalon râpé
+@i^1380^Robe râpée
 @i^1464^Serre de busard
 @i^1520^Sueur de troll
 @i^1686^Moustache à poil dur
@@ -156,16 +172,22 @@ GoldScout-export 5^ctm3ua5lj2ef^19
 @i^1760^Protège-épaules en anneaux renforcés
 @i^1784^Pantalon à couture croisée
 @i^1803^Ceinture en cuir armé
+@i^2004^Journal de Grelin Whitebeard
 @i^2077^Bâton de magicien de la baleine
+@i^2210^Targe endommagée
 @i^2222^Pavois
 @i^2287^Cuissot
 @i^2289^Parchemin de Force II
 @i^2466^Fétiche Skullsplitter
+@i^2589^Etoffe de lin
 @i^2592^Etoffe de laine
+@i^2652^Cape en anneaux fins
 @i^2738^Les vertes collines de Strangleronce - Page 14
 @i^2744^Les vertes collines de Strangleronce - Page 20
 @i^2748^Les vertes collines de Strangleronce - Page 24
 @i^3010^Sable fin
+@i^3363^Ceinture râpée
+@i^3365^Brassards râpés
 @i^3385^Potion de mana inférieure
 @i^3402^Touffe de fourrure douce
 @i^3404^Aile de busard
@@ -197,6 +219,7 @@ GoldScout-export 5^ctm3ua5lj2ef^19
 @i^4606^Morilles spongieuses
 @i^4636^Solide coffret en fer
 @i^4784^Pierre morte
+@i^4865^Peau détruite
 @i^5116^Longue plume de queue
 @i^5128^Peau de lézard dépouillée
 @i^5133^Gésier suintant
@@ -223,6 +246,9 @@ GoldScout-export 5^ctm3ua5lj2ef^19
 @i^7067^Terre élémentaire
 @i^7069^Air élémentaire
 @i^7070^Eau élémentaire
+@i^7073^Croc brisé
+@i^7074^Griffes émoussées
+@i^7098^Défense brisée
 @i^7454^Cuirasse de chevalier du sanglier
 @i^7973^Palourde à large bouche
 @i^7997^Masque rouge de Défias
@@ -308,6 +334,16 @@ GoldScout-export 5^ctm3ua5lj2ef^19
 @i^276894^Idole antique des Gurubashi
 @i^279046^Pince de crabe craquelée
 @i^281052^Peau d'Ombassa
+@q^117^1:0:0
+@q^159^1:0:0
+@q^750^1:12:0
+@q^1364^0:4:0
+@q^1366^0:4:0
+@q^1368^0:4:0
+@q^1372^0:4:0
+@q^1374^0:4:0
+@q^1378^0:4:0
+@q^1380^0:4:0
 @q^1464^0:15:0
 @q^1520^0:15:0
 @q^1686^0:15:0
@@ -319,16 +355,22 @@ GoldScout-export 5^ctm3ua5lj2ef^19
 @q^1760^0:4:0
 @q^1784^0:4:0
 @q^1803^0:4:0
+@q^2004^1:12:0
 @q^2077^2:2:0
+@q^2210^0:4:0
 @q^2222^0:4:0
 @q^2287^1:0:0
 @q^2289^1:0:0
 @q^2466^1:12:0
+@q^2589^1:7:1
 @q^2592^1:7:1
+@q^2652^0:4:0
 @q^2738^1:12:0
 @q^2744^1:12:0
 @q^2748^1:12:0
 @q^3010^0:15:0
+@q^3363^0:4:0
+@q^3365^0:4:0
 @q^3385^1:0:0
 @q^3402^0:15:0
 @q^3404^1:7:1
@@ -360,6 +402,7 @@ GoldScout-export 5^ctm3ua5lj2ef^19
 @q^4606^1:0:0
 @q^4636^2:15:0
 @q^4784^0:15:0
+@q^4865^0:15:0
 @q^5116^1:7:1
 @q^5128^0:15:0
 @q^5133^0:15:0
@@ -386,6 +429,9 @@ GoldScout-export 5^ctm3ua5lj2ef^19
 @q^7067^1:7:1
 @q^7069^1:7:1
 @q^7070^1:7:1
+@q^7073^0:15:0
+@q^7074^0:15:0
+@q^7098^0:15:0
 @q^7454^2:4:0
 @q^7973^1:7:0
 @q^7997^0:4:0
@@ -1250,7 +1296,13 @@ GoldScout-export 5^ctm3ua5lj2ef^19
 @a^667^148:4
 @a^671^44:1
 @a^696^148:1,149:1
+@a^705^285:8,286:1
+@a^706^305:4,324:2,325:10,326:1
+@a^707^284:1,286:3,306:4
+@a^708^264:4,284:2,285:1
+@a^724^286:1,306:5
 @a^780^128:2,129:5,148:7,149:1,168:1
+@a^808^306:2,326:1
 @a^1121^154:1
 @a^1183^55:2
 @a^1491^248:1
