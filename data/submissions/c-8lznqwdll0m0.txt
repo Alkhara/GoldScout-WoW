@@ -1,6 +1,11 @@
-GoldScout-export 5^8lznqwdll0m0^1
+GoldScout-export 5^8lznqwdll0m0^2
 1561^1^0^41^41^1434^0.2546^0.6604^1^Bloodsail Raider^^
 4405^1^0^44^44^1445^0.5643^0.6215^1^Muckshell Razorclaw^^
+5425^2^0^42^42^1446^0.4530^0.2879^2^Starving Blisterpaw^^
+5426^1^0^44^45^1446^0.4876^0.3610^1^Blisterpaw Hyena^12037:1:1^
+5428^10^0^41^43^1446^0.4736^0.3091^10^Roc^1464:2:2,3404:2:2,5829:1:1^
+5429^3^0^43^44^1446^0.4671^0.3924^3^Fire Roc^1464:1:1,5829:1:1^
+8207^1^0^46^46^1446^0.4745^0.3467^1^Greater Firebird^1464:1:1,3404:1:1,9959:1:1,11418:1:1^
 11318^22^0^0^0^0^0.0000^0.0000^0^^1509:1:1,1513:1:1,2589:4:16,15015:1:1,15306:1:1,248683:1:1^
 11319^7^0^0^0^0^0.0000^0.0000^0^^2589:1:2^
 11320^7^0^0^0^0^0.0000^0.0000^0^^3669:1:1^
@@ -13,6 +18,7 @@ GoldScout-export 5^8lznqwdll0m0^1
 11519^1^0^0^0^0^0.0000^0.0000^0^^273003:1:1^
 11520^1^0^0^0^0^0.0000^0.0000^0^^2589:1:4^
 @i^818^Tigerseye
+@i^1464^Buzzard Talon
 @i^1503^Warped Leather Boots
 @i^1509^Warped Leather Vest
 @i^1510^Heavy Hammer
@@ -21,12 +27,17 @@ GoldScout-export 5^8lznqwdll0m0^1
 @i^2589^Linen Cloth
 @i^3302^Brackwater Boots
 @i^3308^Barbaric Cloth Gloves
+@i^3404^Buzzard Wing
 @i^3669^Gelatinous Goo
 @i^4603^Raw Spotted Yellowtail
 @i^4784^Lifeless Stone
+@i^5829^Razor-sharp Beak
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
 @i^6362^Raw Rockscale Cod
+@i^9959^Warmonger's Cloak of Arcane Protection
+@i^11418^Hollow Wing Bone
+@i^12037^Mystery Meat
 @i^13758^Raw Redgill
 @i^14099^Native Sash
 @i^14109^Native Robe of Stamina
@@ -42,6 +53,7 @@ GoldScout-export 5^8lznqwdll0m0^1
 @i^248683^Waylaid Crate: Apprentice Ore
 @i^273003^Searing Dagger
 @q^818^2:7:1
+@q^1464^0:15:0
 @q^1503^0:4:0
 @q^1509^0:4:0
 @q^1510^0:2:0
@@ -50,12 +62,17 @@ GoldScout-export 5^8lznqwdll0m0^1
 @q^2589^1:7:1
 @q^3302^2:4:0
 @q^3308^2:4:0
+@q^3404^1:7:1
 @q^3669^0:15:0
 @q^4603^1:7:1
 @q^4784^0:15:0
+@q^5829^0:15:0
 @q^6358^1:7:1
 @q^6359^1:7:1
 @q^6362^1:7:1
+@q^9959^2:4:0
+@q^11418^0:15:0
+@q^12037^1:7:1
 @q^13758^1:7:1
 @q^14099^1:4:0
 @q^14109^2:4:0
@@ -75,6 +92,7 @@ GoldScout-export 5^8lznqwdll0m0^1
 @m^1443^Desolace
 @m^1444^Feralas
 @m^1445^Dustwallow Marsh
+@m^1446^Tanaris
 @c^118^
 @c^724^
 @c^733^
@@ -796,6 +814,11 @@ GoldScout-export 5^8lznqwdll0m0^1
 @c^286152^
 @a^1561^265:1
 @a^4405^251:1
+@a^5425^108:1,129:1
+@a^5426^149:1
+@a^5428^108:4,110:1,129:1,130:1,149:3
+@a^5429^149:2,168:1
+@a^8207^129:1
 @f^1434^0^5^225^6362:2:2,16969:1:1,21151:2:4,21228:1:1^265:5
 @f^1435^0^1^225^6362:1:1,16970:1:1^298:1
 @f^1443^0^24^225^4603:3:3,6358:4:4,6359:6:6,6362:11:11,16968:1:1^284:4,305:20
