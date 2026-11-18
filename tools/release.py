@@ -4,7 +4,8 @@
   python tools/release.py v0.5.5            release main's current commit
   python tools/release.py --verify v0.5.4   only check an existing release
 
-Steps: main is clean and matches origin; Tests passed on GitHub for this exact
+Steps: main is clean and matches origin; the CurseForge description is
+reviewed for this version (tools/store_page.py); Tests passed on GitHub for this exact
 commit; the upload server accepts this build's export format; tag and push;
 follow the Release workflow; download the release and verify it (zip version
 and contents, companion signature). Stops at the first problem.
@@ -24,6 +25,7 @@ REPO = "Alkhara/GoldScout-WoW"
 API = "https://api.github.com/repos/" + REPO
 sys.path.insert(0, str(ROOT / "tools"))
 import changelog  # noqa: E402
+import store_page  # noqa: E402
 import verify_release  # noqa: E402
 
 
@@ -74,6 +76,9 @@ def preflight(tag):
     problem = changelog.check(tag)
     if problem:
         verify_release.fail(problem)
+    problem = store_page.check(tag)
+    if problem:
+        verify_release.fail(problem)
     if git("rev-parse", "--abbrev-ref", "HEAD") != "main":
         verify_release.fail("not on main")
     if git("status", "--porcelain", "--untracked-files=no"):
@@ -82,7 +87,16 @@ def preflight(tag):
     if head != git("rev-parse", "origin/main"):
         verify_release.fail("main isn't the same as origin/main; push or pull first")
     say("ok   main %s is clean and pushed (latest release %s)" % (head[:7], latest))
-    return head
+    return head, latest
+
+
+def paste_reminder(latest):
+    """Whether the CurseForge description needs pasting again after this release."""
+    if latest and not store_page.changed_since(latest):
+        say("ok   the CurseForge description hasn't changed since %s: nothing to paste" % latest)
+    else:
+        say("**   the CurseForge description changed: open docs/curseforge-description.md, copy it all and "
+            "paste it into the project's description on CurseForge")
 
 
 def tests_passed(head):
@@ -140,7 +154,7 @@ def main():
     if args.verify:
         verify(args.version)
         return
-    head = preflight(args.version)
+    head, latest = preflight(args.version)
     tests_passed(head)
     verify_release.check_server()
     git("tag", "-a", args.version, "-m", "GoldScout " + args.version)
@@ -148,6 +162,7 @@ def main():
     say("ok   tagged and pushed %s" % args.version)
     follow_release(args.version)
     verify(args.version)
+    paste_reminder(latest)
     say("Done. CurseForge lists the new file after its own processing.")
 
 

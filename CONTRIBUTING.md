@@ -58,6 +58,13 @@ For Lua error popups in game, use `/console scriptErrors 1` or BugSack.
 - **Tell players what changed.** Add a line for each change players will notice
   under "Unreleased" in [CHANGELOG.md](CHANGELOG.md), written for them; each
   release's section becomes its notes on GitHub and CurseForge.
+- **Keep the CurseForge description current.** It's
+  [docs/curseforge-description.md](docs/curseforge-description.md), pasted into
+  CurseForge as it is (CurseForge has no API for descriptions). Before a release,
+  add that release's new features and commands to it, then set
+  "**Description reviewed for:**" in [docs/store-page.md](docs/store-page.md) to
+  the new version: `tools/release.py` won't release until it matches, and says
+  afterwards when there's a new copy to paste.
 - **Every piece of text the addon shows is translated.** Write it as
   `L["Whole sentence with %s"]` (not pieces joined around a value), and add
   the same English text with a translation to each `GoldScout/Locale_*.lua`.
