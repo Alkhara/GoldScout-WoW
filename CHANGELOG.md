@@ -7,6 +7,8 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- **A gold coin on bag items worth listing:** crafting reagents and green or better items that sell for at least double their vendor price on your auction house, after the cut, get a small gold coin in your bags (Blizzard's bags and Bagnon), and their tooltip says what they're worth on each. Gray junk, quest items and bound items never do. It needs your own realm's prices, from a scan or GoldScout Companion. Turn it off in Settings › Interface, or with `/gscout set bagcoins off`.
+
 ## v0.12.25
 
 - **Sharing works with French, Chinese and Korean names:** a name with a curly apostrophe, a no-break space before ":", guillemets or full-width punctuation made GoldScout Companion refuse the whole export ("the name contains a character that isn't allowed"). GoldScout now writes that punctuation plainly, names saved by older versions included, and the companion and the data bot tidy any odd character instead of refusing the export.

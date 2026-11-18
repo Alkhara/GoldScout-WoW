@@ -1570,6 +1570,11 @@ local function AddTooltipPrices(tooltip, itemID)
   if vendor then
     tooltip:AddDoubleLine(L["GoldScout vendor price"], ns.Money(vendor), 1, 0.82, 0, 1, 1, 1)
   end
+  -- A bag slot with GoldScout's coin: why it's there.
+  local hint = ns.Bags and ns.Bags:TooltipLine(tooltip)
+  if hint then
+    tooltip:AddLine(hint, 0.4, 1, 0.4, true)
+  end
 end
 
 local function IsUsableTooltip(tooltip)
@@ -1702,6 +1707,7 @@ local SETTING_ALIASES = {
   allloot = "allLoot",
   companionhint = "companionHint",
   minimap = "minimap",
+  bagcoins = "bagCoins",
 }
 
 -- Lists the errors GoldScout recorded (see ns.RecordError in Core.lua).
@@ -1739,7 +1745,7 @@ local function PrintHelp()
   print(L["  /gscout errors - list GoldScout's recent errors; /gscout errors clear"])
   print(L["  /gscout skills - show the skills and recipes GoldScout knows"])
   print(L["  /gscout set kills|nodes|picks|catches <number> - your rates per hour"])
-  print(L["  /gscout set autoscan|tooltip|window|waypoint|markers|map|learn|mobtips|raredrops|cloth|allloot|minimap on|off"])
+  print(L["  /gscout set autoscan|tooltip|window|waypoint|markers|map|learn|mobtips|raredrops|cloth|allloot|bagcoins|minimap on|off"])
   print(L["  /gscout reset prices | drops - forget saved prices or learned drop rates"])
 end
 
@@ -1804,7 +1810,7 @@ local function SetOption(rest)
   end
   if not setting then
     ns.Print(L["Usage: /gscout set kills|nodes|picks|catches <number>, or "
-      .. "/gscout set autoscan|tooltip|blackwater|window|waypoint|markers|map|learn|mobtips|raredrops|cloth|allloot|minimap|companionhint on|off"])
+      .. "/gscout set autoscan|tooltip|blackwater|window|waypoint|markers|map|learn|mobtips|raredrops|cloth|allloot|bagcoins|minimap|companionhint on|off"])
     return
   end
   if type(ns.db.settings[setting]) == "boolean" then
@@ -1824,6 +1830,9 @@ local function SetOption(rest)
   end
   if setting == "huntMap" then
     ns.Hunt:RefreshArea()
+  end
+  if setting == "bagCoins" and ns.Bags then
+    ns.Bags:Refresh()
   end
   UI:QueueRefresh()
 end

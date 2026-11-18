@@ -977,5 +977,95 @@ class MobDropsTests(unittest.TestCase):
         self.assertIn("menu changed", self.ns.db.errors[1].m)
 
 
+@unittest.skipIf(lua51 is None, "lupa is not installed")
+class BagCoinTests(unittest.TestCase):
+    """Bags.lua: a coin on bag items worth listing on the auction house instead of vendoring."""
+    setUp_farm = FarmRulesTests.setUp
+    run_lua, run_file, item = FarmRulesTests.run_lua, FarmRulesTests.run_file, FarmRulesTests.item
+
+    def setUp(self):
+        self.setUp_farm()
+        self.run_lua(r"""
+        FAKE.hooks = {}
+        hooksecurefunc = function(target, name, fn)
+          if type(target) == "string" then target, name, fn = _G, target, name end
+          local original = target[name]
+          target[name] = function(...) local r = { original(...) }; fn(...); return unpack(r) end
+          FAKE.hooks[#FAKE.hooks + 1] = name
+        end
+        BagBrother = { Item = { Update = function() end } }
+        local function Texture()
+          local t = { shown = true }
+          function t:SetTexture() end function t:SetSize() end function t:SetPoint() end
+          function t:SetShown(v) self.shown = v end
+          return t
+        end
+        function FAKE.Slot(itemID, bound)
+          local slot = { info = { itemID = itemID, isBound = bound } }
+          function slot:CreateTexture() return Texture() end
+          function slot:IsVisible() return true end
+          return slot
+        end
+        """)
+        self.run_file("Bags.lua")
+        self.bags = self.ns.Bags
+
+    def worth(self, item_id, bound=False):
+        return self.bags.Worth(self.bags, item_id, bound)
+
+    def test_reagents_and_green_items_at_double_the_vendor_price(self):
+        self.item(6000, price=1000, sell=400, reagent=True)                    # 950 after the cut >= 800
+        self.item(6001, price=700, sell=400, reagent=True)                     # 665 < 800
+        self.item(6002, price=30000, sell=5000, quality=2, class_=4, reagent=False)   # green gear
+        self.item(6003, price=2000, sell=0, quality=3, class_=2, reagent=False)       # vendors won't buy it
+        self.assertIsNotNone(self.worth(6000))
+        self.assertIsNone(self.worth(6001))
+        self.assertIsNotNone(self.worth(6002))
+        self.assertEqual(self.worth(6003), (2000 * 0.95, 0))
+
+    def test_never_junk_white_quest_or_bound(self):
+        self.item(6010, price=10000, sell=5, reagent=False)                    # white, not a reagent
+        self.item(6011, price=10000, sell=5, quality=0)                        # gray
+        self.item(6012, price=10000, sell=5, quality=2, bind=1, reagent=False) # binds on pickup
+        self.item(6013, price=10000, sell=5, bind=4)                           # quest item
+        self.item(6014, price=10000, sell=5, quality=2, reagent=False)         # fine, but this copy is bound
+        for item_id in (6010, 6011, 6012, 6013):
+            with self.subTest(item_id):
+                self.assertIsNone(self.worth(item_id))
+        self.assertIsNone(self.worth(6014, bound=True))
+        self.assertIsNotNone(self.worth(6014))
+
+    def test_needs_real_prices_not_the_regional_estimate(self):
+        self.item(6020, price=1000, sell=100, reagent=True)
+        self.run_lua('local ns = ...; ns.Prices.Get = function(_, id) return 1000, 5, 60, "estimate" end')
+        self.assertIsNone(self.worth(6020))
+
+    def test_the_setting_turns_it_off(self):
+        self.item(6030, price=1000, sell=100, reagent=True)
+        self.ns.db.settings.bagCoins = False
+        self.assertIsNone(self.worth(6030))
+
+    def test_bagnon_slots_get_a_coin_that_follows_the_price(self):
+        self.assertIn("Update", list(self.lua.globals().FAKE.hooks.values()))   # Bagnon's Item:Update is hooked
+        self.item(6040, price=1000, sell=100, reagent=True)
+        slot = self.lua.globals().FAKE.Slot(6040, False)
+        self.lua.globals().BagBrother.Item.Update(slot)
+        self.assertTrue(slot.GoldScoutCoin.shown)
+        self.lua.globals().FAKE.prices[6040] = 150                             # the price falls under double
+        self.bags.Refresh(self.bags)
+        self.assertFalse(slot.GoldScoutCoin.shown)
+        plain = self.lua.globals().FAKE.Slot(6041, False)                      # nothing worth listing: no coin made
+        self.bags.Mark(plain)
+        self.assertIsNone(plain.GoldScoutCoin)
+
+    def test_tooltip_says_why(self):
+        self.item(6050, price=1000, sell=100, reagent=True)
+        slot = self.lua.globals().FAKE.Slot(6050, False)
+        tooltip = self.lua.eval("function(owner) return { GetOwner = function() return owner end } end")(slot)
+        self.assertIn("on the auction house", self.bags.TooltipLine(self.bags, tooltip))
+        elsewhere = self.lua.eval("{ GetOwner = function() return {} end }")    # not a bag slot: no line
+        self.assertIsNone(self.bags.TooltipLine(self.bags, elsewhere))
+
+
 if __name__ == "__main__":
     unittest.main()
