@@ -7,7 +7,10 @@ releases add their own line automatically.
 
 ## Unreleased
 
+## v0.12.25
+
 - **Sharing works with French, Chinese and Korean names:** a name with a curly apostrophe, a no-break space before ":", guillemets or full-width punctuation made GoldScout Companion refuse the whole export ("the name contains a character that isn't allowed"). GoldScout now writes that punctuation plainly, names saved by older versions included, and the companion and the data bot tidy any odd character instead of refusing the export.
+- Updated drop data from the community.
 
 ## v0.12.24
 

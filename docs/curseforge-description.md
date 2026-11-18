@@ -61,6 +61,7 @@ English, Deutsch, Español, Français, 한국어 and 繁體中文, following you
 ### Links
 - **GoldScout Companion** (Windows and Mac): https://wowgoldscout.com/companion
 - Website: https://wowgoldscout.com
+- Gold guides, the best farms right now for your realm type and faction: https://wowgoldscout.com/guides
 - Share your drop data: https://wowgoldscout.com/share
 - Questions and help: https://wowgoldscout.com/faq · Discord: https://discord.gg/rJdZcuepzN
 - Full guide: https://github.com/Alkhara/GoldScout-WoW/blob/main/GoldScout/README.md
