@@ -205,7 +205,8 @@
     var unknown = (live.installs || 0) - clients.reduce(function (s, c) { return s + c[1]; }, 0);
     if (unknown > 0) { clients.push(["not reported yet", unknown]); }
     var exports = Object.keys((snap && snap.export_versions) || {}).map(function (k) {
-      return ["v" + k, snap.export_versions[k]]; });
+      // "?": no merged copy to read the version from (held for review, new and still waiting, or rejected).
+      return [k === "?" ? "Not merged yet" : "v" + k, snap.export_versions[k]]; });
     var systems = (live.systems || []).map(function (s) {
       return [s.os || "before 0.8.0", s.n, s.d7]; });
     var regions = (live.regions || []).map(function (r) {
@@ -221,7 +222,8 @@
       card("Companion version (latest upload)", "Recorded since Nov 10, 2026; an install shows its version " +
         "after its next upload. Price-only companion users don't upload, so they aren't counted here.",
         [simpleBars(clients)]),
-      card("Export format", "The addon's export version in each install's newest upload.", [simpleBars(exports)]),
+      card("Export format", "The addon's export version in each install's newest merged upload. Not merged yet: " +
+        "held for review, a new install still waiting, or rejected.", [simpleBars(exports)]),
     ])]);
   }
 
