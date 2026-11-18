@@ -1,4 +1,4 @@
-GoldScout-export 5^ioih5627zdzy^2
+GoldScout-export 5^ioih5627zdzy^3
 206^30^0^29^30^1431^0.6107^0.8102^30^Nightbane Vile Fang^1205:1:1,1759:1:1,2794:1:1,5635:4:4,5637:1:1,6607:1:1,248708:1:1^
 212^5^0^29^30^1431^0.3640^0.8050^5^Splinter Fist Warrior^929:1:1,4306:1:1^
 300^1^0^30^30^1431^0.3773^0.8428^1^Zzarc' Vul^1968:1:1^
@@ -8,19 +8,28 @@ GoldScout-export 5^ioih5627zdzy^2
 683^6^0^30^31^1434^0.4139^0.1211^6^Young Panther^1686:2:2,6610:1:1^
 920^15^0^30^31^1431^0.6179^0.8172^15^Nightbane Tainted One^1205:1:1,3770:1:1,5635:1:1^
 930^11^0^24^25^1431^0.3223^0.4309^11^Black Widow Hatchling^1081:5:5,1130:4:4,1288:1:1,2251:3:3,3174:6:6,3182:2:2,4428:5:5^
+1034^8^0^26^27^1437^0.4701^0.4725^8^Dragonmaw Raider^1705:1:1,3337:4:4,3380:1:1^
+1035^2^0^27^28^1437^0.4839^0.4752^2^Dragonmaw Swamprunner^3770:1:1^
+1036^1^0^28^28^1437^0.4894^0.4638^1^Dragonmaw Centurion^1711:1:1,3337:1:1,4306:1:1^
+1038^1^0^28^28^1437^0.4942^0.4648^1^Dragonmaw Shadowwarder^^
+1057^5^0^27^28^1437^0.4754^0.4724^5^Dragonmaw Bonewarder^3337:1:1,4306:1:2^
 1094^4^0^34^35^1434^0.2883^0.0733^4^Venture Co. Miner^1710:1:1,3813:1:1,4306:1:1^
 1095^1^0^36^36^1434^0.2889^0.0753^1^Venture Co. Workboss^4306:1:1^
 1096^1^0^35^35^1434^0.2880^0.0689^1^Venture Co. Geologist^4306:1:2^
 1097^3^0^34^35^1434^0.2883^0.0738^3^Venture Co. Mechanic^1725:1:1,4306:1:1^
 1251^1^0^28^28^1431^0.3661^0.8010^1^Splinter Fist Firemonger^2592:1:2^
 1487^1^0^31^31^1431^0.3814^0.8434^1^Splinter Fist Enslaver^^
+2108^1^0^29^29^1437^0.4694^0.4846^1^Garneg Charskull^929:1:1,2592:1:2,7370:1:1^
+6412^4^0^24^25^1437^0.4715^0.4737^4^Skeleton^^
 @i^929^Healing Potion
 @i^1081^Crisp Spider Meat
 @i^1130^Vial of Spider Venom
 @i^1205^Melon Juice
 @i^1288^Large Venom Sac
 @i^1686^Bristly Whisker
+@i^1705^Lesser Moonstone
 @i^1710^Greater Healing Potion
+@i^1711^Scroll of Stamina II
 @i^1725^Large Knapsack
 @i^1759^Reinforced Chain Pants
 @i^1968^Ogre's Monocle
@@ -29,6 +38,8 @@ GoldScout-export 5^ioih5627zdzy^2
 @i^2794^An Old History Book
 @i^3174^Spider Ichor
 @i^3182^Spider's Silk
+@i^3337^Dragonmaw War Banner
+@i^3380^Cross-stitched Belt
 @i^3514^Mor'Ladim's Skull
 @i^3629^Mistmantle Family Ring
 @i^3770^Mutton Chop
@@ -39,6 +50,7 @@ GoldScout-export 5^ioih5627zdzy^2
 @i^5637^Large Fang
 @i^6607^Dervish Leggings of the Gorilla
 @i^6610^Sage's Robe of the Elder
+@i^7370^Elder's Sash of the Sorcerer
 @i^12202^Tiger Meat
 @i^248708^Waylaid Crate: Expert Fabrics
 @q^929^1:0:0
@@ -47,7 +59,9 @@ GoldScout-export 5^ioih5627zdzy^2
 @q^1205^1:0:0
 @q^1288^1:7:1
 @q^1686^0:15:0
+@q^1705^2:7:1
 @q^1710^1:0:0
+@q^1711^1:0:0
 @q^1725^1:1:0
 @q^1759^0:4:0
 @q^1968^1:12:0
@@ -56,6 +70,8 @@ GoldScout-export 5^ioih5627zdzy^2
 @q^2794^1:12:0
 @q^3174^1:7:1
 @q^3182^1:7:1
+@q^3337^1:12:0
+@q^3380^0:4:0
 @q^3514^1:12:0
 @q^3629^1:12:0
 @q^3770^1:0:0
@@ -66,10 +82,12 @@ GoldScout-export 5^ioih5627zdzy^2
 @q^5637^1:7:1
 @q^6607^2:4:0
 @q^6610^2:4:0
+@q^7370^2:4:0
 @q^12202^1:7:1
 @q^248708^2:0:1
 @m^1431^Duskwood
 @m^1434^Stranglethorn Vale
+@m^1437^Wetlands
 @c^118^
 @c^858^
 @c^929^
@@ -129,10 +147,17 @@ GoldScout-export 5^ioih5627zdzy^2
 @a^683^47:1,48:5
 @a^920^311:3,312:2,332:10
 @a^930^125:1,126:2,166:4,186:2,226:2
+@a^1034^169:1,189:7
+@a^1035^189:2
+@a^1036^189:1
+@a^1038^189:1
+@a^1057^189:5
 @a^1094^25:4
 @a^1095^25:1
 @a^1096^25:1
 @a^1097^25:3
 @a^1251^327:1
 @a^1487^327:1
+@a^2108^189:1
+@a^6412^189:4
 @l^0^enUS
