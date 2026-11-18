@@ -590,6 +590,33 @@ local function RecordDrop(npcID, role, itemID, quantity)
   stat.q = stat.q + quantity
 end
 
+-- What a mob dropped is everything its loot window shows when it first opens,
+-- taken or not: with full bags, or junk left on the corpse, recording only what
+-- reached your bags made its rates look lower than they are. Counted once per
+-- corpse (sources marked records: new this window, or killed with no loot and
+-- looted after all), and an item filling several slots is one drop, as fishing.
+local function RecordWindowDrops(window)
+  local found = {}   -- [source] = { [itemID] = quantity }
+  for _, slotInfo in pairs(window.slots) do
+    if slotInfo.item then
+      for _, slotSource in ipairs(slotInfo.sources) do
+        local source = window.sources[slotSource.guid]
+        if source and source.records and source.id and (source.role == "kill" or source.role == "pick") then
+          found[source] = found[source] or {}
+          found[source][slotInfo.item] = (found[source][slotInfo.item] or 0) + (slotSource.quantity or slotInfo.quantity)
+          NoteItemName(slotInfo.item, slotInfo.name)
+          NoteItemMeta(slotInfo.item)
+        end
+      end
+    end
+  end
+  for source, items in pairs(found) do
+    for itemID, quantity in pairs(items) do
+      RecordDrop(source.id, source.role, itemID, quantity)
+    end
+  end
+end
+
 ---------------------------------------------------------------------------
 -- Reading the loot window
 ---------------------------------------------------------------------------
@@ -708,6 +735,9 @@ local function OnLootReady()
       ns.Fire("LOOT_ACTION", source.role, source.id)
     end
   end
+  if learn then
+    RecordWindowDrops(window)
+  end
 end
 
 local function OnSlotCleared(slot)
@@ -723,13 +753,7 @@ local function OnSlotCleared(slot)
   for _, slotSource in ipairs(slotInfo.sources) do
     local source = window.sources[slotSource.guid]
     if source and source.records and source.id and (source.role == "kill" or source.role == "pick") then
-      local quantity = slotSource.quantity or slotInfo.quantity
-      if ns.db.settings.learnDrops then
-        RecordDrop(source.id, source.role, slotInfo.item, quantity)
-        NoteItemName(slotInfo.item, slotInfo.name)
-        NoteItemMeta(slotInfo.item)
-      end
-      ns.Fire("LOOT_DROP", source.role, source.id, slotInfo.item, quantity)
+      ns.Fire("LOOT_DROP", source.role, source.id, slotInfo.item, slotSource.quantity or slotInfo.quantity)
     end
   end
 end

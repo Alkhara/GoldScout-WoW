@@ -338,6 +338,36 @@ class LootCountingLuaTests(unittest.TestCase):
         self.dies(BEAR2, tapDenied=True)
         self.assertEqual(self.bear(), (None, {}))
 
+    def open_window(self, guid, *items, take=()):
+        """Opens a corpse's loot window, takes only the slots in take (from 1), and closes it."""
+        self.game.loot = self.lua.table_from([self.lua.table_from({"item": i, "guid": guid}) for i in items])
+        self.ns.events["LOOT_READY"]()
+        for slot in take:
+            self.ns.events["LOOT_SLOT_CLEARED"](slot)
+        self.ns.events["LOOT_CLOSED"]()
+
+    def test_loot_left_on_the_corpse_still_counts(self):
+        # Full bags (or junk not worth taking): what dropped counts, taken or not.
+        self.open_window(BEAR, 3730, 2940, take=(1,))
+        self.open_window(BEAR2, 3730, 2940)
+        self.assertEqual(self.bear(), (2, {3730: 2, 2940: 2}))
+
+    def test_coming_back_for_left_loot_doesnt_count_twice(self):
+        self.open_window(BEAR, 3730, 2940)
+        self.open_window(BEAR, 3730, 2940, take=(1, 2))   # bags emptied, back to the corpse
+        self.assertEqual(self.bear(), (1, {3730: 1, 2940: 1}))
+
+    def test_an_item_filling_two_slots_is_one_drop(self):
+        self.open_window(BEAR, 3730, 3730, take=(1, 2))
+        stat = self.ns.db.drops[3809].i[3730]
+        self.assertEqual((stat.d, stat.q), (1, 2))
+
+    def test_the_hunt_hears_only_what_you_take(self):
+        # The hunt panel's earnings and drop count are what reached your bags.
+        self.open_window(BEAR, 3730, 2940, take=(2,))
+        fired = list(self.ns.fired.values())
+        self.assertEqual((fired.count("LOOT_GAINED"), fired.count("LOOT_DROP")), (1, 1))
+
     def test_a_death_is_judged_once(self):
         self.dies(BEAR)
         self.dies(BEAR, unit="nameplate3")

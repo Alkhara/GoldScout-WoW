@@ -7,6 +7,8 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- **Drop rates count what dropped, not just what you took:** loot left on a corpse (full bags, or junk you skip) used to count the kill but not the drop, so those items looked rarer than they are. GoldScout now records everything a corpse shows when you open it, taken or not; going back for it later still counts it once. The hunt panel still counts what reaches your bags.
+
 ## v0.12.23
 
 - **Companion:** fixed "Couldn't check for updates (CERTIFICATE_VERIFY_FAILED)" on some Windows PCs. Windows hadn't yet downloaded the root certificate GitHub uses, so the update check couldn't reach GitHub; the companion now also trusts Mozilla's list of certificates, bundled with the app.
