@@ -1,4 +1,4 @@
-GoldScout-export 5^rxl2rmqn7yrt^6
+GoldScout-export 5^rxl2rmqn7yrt^7
 1007^9^0^20^21^1437^0.6392^0.6393^9^Gnoll Poil-moussu^2592:2:4,2781:1:1^
 1008^4^0^21^22^1437^0.6349^0.6377^4^Bâtard Poil-moussu^1712:1:1,2589:1:1,2592:2:4,4306:1:1^
 1009^1^0^22^23^1437^0.6260^0.6926^1^Tisseur de brumes Poil-moussu^4306:1:1^
@@ -6,6 +6,8 @@ GoldScout-export 5^rxl2rmqn7yrt^6
 1011^5^0^23^24^1437^0.3963^0.3240^5^Trappeur Poil-moussu^2611:2:2,8186:1:1^
 1012^13^0^24^25^1437^0.3537^0.3024^13^Brute Poil-moussu^1712:1:1,1795:1:1,2592:5:9,2611:6:6,3770:2:2^
 1014^3^0^27^27^1437^0.3449^0.3088^3^Alpha Poil-moussu^1805:1:1,2611:1:1,2766:1:1,3770:2:2,4306:2:4^
+1018^10^0^27^28^1437^0.6910^0.3122^10^Tranchegueule des hautes-terres^1697:1:1,3685:7:7,5635:1:1,5637:1:1,280103:3:3^
+1019^11^0^29^29^1437^0.6858^0.3113^11^Ancien tranchegueule^1696:1:1,1697:1:1,3685:4:4,9809:1:1,280103:5:5^
 1020^6^0^22^23^1437^0.2325^0.5039^6^Raptor tacheté^1697:2:2,3685:1:1,250187:1:1^
 1021^4^0^24^25^1437^0.2320^0.5358^4^Hurleur tacheté^1697:1:1,3685:3:3^
 1022^7^0^25^26^1437^0.3510^0.4897^7^Faucheur tacheté^3180:1:1,3685:4:4,8186:1:1^
@@ -19,7 +21,7 @@ GoldScout-export 5^rxl2rmqn7yrt^6
 1158^4^0^27^28^1437^0.1387^0.2984^4^Soldat de marine maudit^2592:1:2,2786:1:1,6387:1:1^
 1353^1^0^29^29^1437^0.3321^0.5149^1^Grondecroc^3638:1:1^
 270892^1^0^32^32^1437^0.3504^0.5253^1^Gardien de Goaz^279993:1:1^
-271334^1^0^26^26^1437^0.6607^0.5244^1^Griffe pourrie affolée^211855:1:1^
+271334^1^0^25^26^1437^0.6607^0.5244^1^Griffe pourrie affolée^211855:1:1^
 271346^1^0^29^30^1437^0.5985^0.4494^1^Infitrateur gueule-de-dragon^3337:1:1^
 271348^1^0^29^30^1437^0.6369^0.4375^1^Lieur d'âme gueule-de-dragon^3337:1:1^
 271351^8^0^29^30^1437^0.5985^0.4526^8^Récupérateur gueule-de-dragon^3337:6:6,4306:1:1^
@@ -27,6 +29,7 @@ GoldScout-export 5^rxl2rmqn7yrt^6
 @i^765^Feuillargent
 @i^814^Flasque d'huile
 @i^1205^Jus de melon
+@i^1696^Griffe de raptor
 @i^1697^Dent de raptor
 @i^1712^Parchemin d'Esprit II
 @i^1795^Ceinture en cuir brut
@@ -52,6 +55,7 @@ GoldScout-export 5^rxl2rmqn7yrt^6
 @i^4306^Etoffe de soie
 @i^5529^Poussière tombale
 @i^5635^Griffe aiguisée
+@i^5637^Grand croc
 @i^6289^Lutjan à longue mâchoire cru
 @i^6308^Poisson-chat moustachu cru
 @i^6358^Bouche-noire huileux
@@ -61,16 +65,19 @@ GoldScout-export 5^rxl2rmqn7yrt^6
 @i^6570^Echarpe chatoyante d'intelligence
 @i^8186^Baguette redoutable
 @i^9802^Bottes excellente de chevalerie
+@i^9809^Tunique excellente de l'ours
 @i^20708^Malle soigneusement scellée
 @i^21114^Rhum brun de Rumsey
 @i^211855^Parchemin : STHENIC LUNATE
 @i^250187^Recette : délicieuses bouchées au raptor
 @i^279385^Écaille cramoisie immaculée
 @i^279993^Pierre-clé titanesque
+@i^280103^Incisive de tranchegueule
 @i^280397^Cœur de Golm
 @q^765^1:7:1
 @q^814^1:7:1
 @q^1205^1:0:0
+@q^1696^0:15:0
 @q^1697^0:15:0
 @q^1712^1:0:0
 @q^1795^0:4:0
@@ -96,6 +103,7 @@ GoldScout-export 5^rxl2rmqn7yrt^6
 @q^4306^1:7:1
 @q^5529^0:15:0
 @q^5635^1:7:1
+@q^5637^1:7:1
 @q^6289^1:7:1
 @q^6308^1:7:1
 @q^6358^1:7:1
@@ -105,12 +113,14 @@ GoldScout-export 5^rxl2rmqn7yrt^6
 @q^6570^2:4:0
 @q^8186^2:2:0
 @q^9802^2:4:0
+@q^9809^2:4:0
 @q^20708^1:15:0
 @q^21114^1:0:0
 @q^211855^1:0:0
 @q^250187^1:9:0
 @q^279385^1:12:0
 @q^279993^1:12:0
+@q^280103^1:12:0
 @q^280397^1:12:0
 @m^1413^Les Tarides
 @m^1437^Les Paluns
@@ -1280,6 +1290,8 @@ GoldScout-export 5^rxl2rmqn7yrt^6
 @a^1011^126:1,127:1,128:3
 @a^1012^106:4,107:2,126:3,127:2,128:2
 @a^1014^126:2,128:1
+@a^1018^113:1,114:2,133:7
+@a^1019^113:2,114:2,133:7
 @a^1020^184:3,204:2,224:1
 @a^1021^184:1,204:1,224:2
 @a^1022^167:1,187:1,206:3,207:2

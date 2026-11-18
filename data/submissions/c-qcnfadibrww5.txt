@@ -1,4 +1,4 @@
-GoldScout-export 5^qcnfadibrww5^1
+GoldScout-export 5^qcnfadibrww5^2
 2559^11^0^30^31^1417^0.6118^0.4478^11^Highland Strider^1696:2:2,3685:5:5,4461:3:3,4512:4:4,4586:1:1,12184:5:5^
 2561^9^0^36^37^1417^0.4672^0.7748^9^Highland Fleshstalker^3685:3:3,4461:2:2,4513:2:2,12184:4:4,248693:1:1^
 2563^25^0^32^33^1417^0.6601^0.5020^25^Plains Creeper^878:8:8,1074:10:10,1081:13:13,2251:8:8,3182:3:3,4337:1:1,4585:2:2,5637:1:1,278225:9:9^
@@ -13,23 +13,40 @@ GoldScout-export 5^qcnfadibrww5^1
 2582^5^0^30^31^1417^0.5548^0.3880^5^Dabyrie Laborer^1707:1:1,2592:1:1,4306:1:2^
 2611^1^0^42^42^1417^0.5048^0.5201^1^Fozruk^4552:1:1,7912:1:2^
 2761^1^0^39^39^1417^0.6650^0.3009^1^Cresting Exile^4481:1:1^
+4139^3^0^33^34^1441^0.7658^0.8035^3^Scorpid Terror^12037:1:1,19938:1:1^
+4140^15^0^31^32^1441^0.7610^0.6751^15^Scorpid Reaver^1288:1:1,5794:6:6,12037:5:5,19937:2:2,19938:7:7^
+4142^12^0^30^31^1441^0.7291^0.6468^12^Sparkleshell Tortoise^3712:6:6,4555:2:2,4556:1:1,5795:5:5,213544:1:1^
+4143^11^0^34^35^1441^0.7534^0.6944^11^Sparkleshell Snapper^3712:5:5,4555:3:3,4556:3:3,5795:3:3,6362:2:4^
+4144^2^0^32^33^1441^0.7892^0.8437^2^Sparkleshell Borer^3712:1:1,5795:1:1,7450:1:1^
+4147^16^0^30^31^1441^0.7280^0.6335^16^Saltstone Basilisk^1701:5:5,1702:4:4,5637:1:1,11384:8:8,11385:4:4^
+4150^5^0^34^35^1441^0.7986^0.8579^5^Saltstone Gazer^1702:2:2,5637:1:1^
+4151^10^0^32^33^1441^0.7705^0.7394^10^Saltstone Crystalhide^1701:4:4,1702:4:4,4093:1:1,11386:1:1^
+4154^9^0^30^32^1441^0.7422^0.6643^9^Salt Flats Scavenger^729:5:5,3399:3:3,5114:3:3,5116:3:3,5848:9:9,11416:2:2,12037:1:1,17056:2:2^
+4158^1^0^32^34^1441^0.7272^0.8532^1^Salt Flats Vulture^3399:1:1,5116:1:1,5848:1:1^
 4479^1^0^33^33^1417^0.5510^0.3905^1^Fardel Dabyrie^5831:1:1^
 4480^1^0^35^35^1417^0.5561^0.3635^1^Kenata Dabyrie^5830:1:1^
 4481^1^0^34^34^1417^0.5418^0.3904^1^Marcel Dabyrie^5832:1:1^
+@i^729^Stringy Vulture Meat
 @i^878^Fist-sized Spinneret
 @i^1074^Hard Spider Leg Tip
 @i^1081^Crisp Spider Meat
+@i^1288^Large Venom Sac
 @i^1696^Curved Raptor Talon
+@i^1701^Curved Basilisk Claw
+@i^1702^Intact Basilisk Spine
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
 @i^2251^Gooey Spider Leg
 @i^2592^Wool Cloth
 @i^3182^Spider's Silk
+@i^3399^Vulture Talon
 @i^3685^Raptor Egg
+@i^3712^Turtle Meat
 @i^3771^Wild Hog Shank
 @i^3782^Large War Club
 @i^3806^Hardened Leather Shoulderpads
 @i^3811^Double-Stitched Cloak
+@i^4093^Large Basilisk Tail
 @i^4306^Silk Cloth
 @i^4337^Thick Spider's Silk
 @i^4338^Mageweave Cloth
@@ -41,31 +58,56 @@ GoldScout-export 5^qcnfadibrww5^1
 @i^4513^Raptor Heart
 @i^4539^Goldenbark Apple
 @i^4552^Smooth Stone Chip
+@i^4555^Thick Scaly Tail
+@i^4556^Speckled Shell Fragment
 @i^4585^Dripping Spider Mandible
 @i^4586^Smooth Raptor Skin
+@i^5114^Severed Talon
+@i^5116^Long Tail Feather
 @i^5637^Large Fang
+@i^5794^Salty Scorpid Venom
+@i^5795^Hardened Tortoise Shell
 @i^5830^Kenata's Head
 @i^5831^Fardel's Head
 @i^5832^Marcel's Head
+@i^5848^Hollow Vulture Bone
+@i^6362^Raw Rockscale Cod
+@i^7450^Pattern: Green Whelp Armor
 @i^7912^Solid Stone
+@i^11384^Broken Basilisk Teeth
+@i^11385^Basilisk Scale
+@i^11386^Squishy Basilisk Eye
+@i^11416^Delicate Ribcage
+@i^12037^Mystery Meat
 @i^12184^Raptor Flesh
+@i^17056^Light Feather
+@i^19937^Small Scorpid Claw
+@i^19938^Heavy Scorpid Leg
 @i^213422^Illegible Recipe
+@i^213544^Scroll: TOPAZ YORAK
 @i^248693^Waylaid Crate: Expert Textiles
 @i^278225^Surgical Spidersilk
+@q^729^1:7:1
 @q^878^0:7:0
 @q^1074^0:15:0
 @q^1081^1:7:1
+@q^1288^1:7:1
 @q^1696^0:15:0
+@q^1701^0:15:0
+@q^1702^0:15:0
 @q^1707^1:0:0
 @q^1708^1:0:0
 @q^2251^1:7:1
 @q^2592^1:7:1
 @q^3182^1:7:1
+@q^3399^0:15:0
 @q^3685^1:7:1
+@q^3712^1:7:1
 @q^3771^1:0:0
 @q^3782^0:2:0
 @q^3806^0:4:0
 @q^3811^0:4:0
+@q^4093^0:15:0
 @q^4306^1:7:1
 @q^4337^1:7:1
 @q^4338^1:7:1
@@ -77,18 +119,37 @@ GoldScout-export 5^qcnfadibrww5^1
 @q^4513^1:12:0
 @q^4539^1:0:0
 @q^4552^0:15:0
+@q^4555^0:15:0
+@q^4556^0:15:0
 @q^4585^0:15:0
 @q^4586^0:15:0
+@q^5114^0:15:0
+@q^5116^1:7:1
 @q^5637^1:7:1
+@q^5794^1:12:0
+@q^5795^1:12:0
 @q^5830^1:12:0
 @q^5831^1:12:0
 @q^5832^1:12:0
+@q^5848^1:12:0
+@q^6362^1:7:1
+@q^7450^2:9:0
 @q^7912^1:7:1
+@q^11384^0:15:0
+@q^11385^0:15:0
+@q^11386^0:15:0
+@q^11416^0:15:0
+@q^12037^1:7:1
 @q^12184^1:7:1
+@q^17056^1:15:1
+@q^19937^0:15:0
+@q^19938^0:15:0
 @q^213422^1:12:0
+@q^213544^1:0:0
 @q^248693^1:0:1
 @q^278225^1:12:0
 @m^1417^Arathi Highlands
+@m^1441^Thousand Needles
 @a^2559^134:1,153:1,172:2,190:2,191:3,193:2
 @a^2561^289:1,309:8
 @a^2563^154:1,171:1,172:2,192:2,193:2,194:2,211:2,212:2,213:5,214:1,233:4,234:1
@@ -103,6 +164,16 @@ GoldScout-export 5^qcnfadibrww5^1
 @a^2582^150:2,151:3
 @a^2611^210:1
 @a^2761^133:1
+@a^4139^294:1,335:1,356:1
+@a^4140^237:3,253:1,274:3,275:2,294:3,295:3
+@a^4142^215:1,254:2,255:2,273:1,274:5,275:1
+@a^4143^216:1,236:1,274:3,295:2,296:1,314:3
+@a^4144^335:1,356:1
+@a^4147^234:2,235:2,253:1,254:3,255:1,273:2,274:5
+@a^4150^335:1,355:1,356:3
+@a^4151^215:1,236:1,295:3,314:1,334:1,335:1,355:2
+@a^4154^253:1,254:3,274:1,275:1,295:3
+@a^4158^354:1
 @a^4479^151:1
 @a^4480^151:1
 @a^4481^150:1

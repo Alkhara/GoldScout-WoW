@@ -1,4 +1,4 @@
-GoldScout-export 5^vk7s4k277aje^4
+GoldScout-export 5^vk7s4k277aje^5
 1564^1^0^43^43^1434^0.2975^0.8739^1^Bloodsail Warlock^9260:1:1^
 1565^2^0^44^45^1434^0.2936^0.8920^2^Bloodsail Sea Dog^2744:1:1^
 4505^2^0^43^44^1434^0.2930^0.8915^2^Bloodsail Deckhand^^
@@ -12,7 +12,13 @@ GoldScout-export 5^vk7s4k277aje^4
 5286^1^0^41^41^1444^0.8594^0.4560^1^Longtooth Runner^12203:1:1^
 5616^3^0^40^41^1446^0.6008^0.2420^3^Wastewander Thief^4338:2:3,8398:1:1^
 5618^4^0^41^42^1446^0.6046^0.2460^4^Wastewander Bandit^3927:1:1,4306:1:1,4338:1:2,8483:2:2,213545:1:1^
+11561^1^0^37^45^2652^0.3282^0.1074^1^Undead Ravager^^
 14123^18^0^42^43^1446^0.6686^0.2429^18^Steeljaw Snapper^3712:8:8,4555:7:7,4556:10:10,4603:1:1,7973:5:5,15603:1:1,213543:1:1^
+252711^4^0^42^43^2652^0.4385^0.3422^4^Decrepit Pylon Protector^260348:1:1,260349:1:1,260352:1:1,260353:1:1^
+254566^1^0^41^41^2652^0.6931^0.7158^1^Rowdy Rose^256036:1:1,256037:1:1^
+255207^1^0^43^43^2652^0.5113^0.5531^1^Prowler^260351:1:1^
+255561^2^0^40^40^1443^0.3575^0.8484^2^Gelkis Guardian^4306:1:2^
+263681^2^0^42^42^2652^0.5016^0.5583^2^Bear^11408:1:1,260350:1:1,260354:1:1^
 @i^2744^Green Hills of Stranglethorn - Page 20
 @i^3712^Turtle Meat
 @i^3820^Stranglekelp
@@ -37,6 +43,7 @@ GoldScout-export 5^vk7s4k277aje^4
 @i^8483^Wastewander Water Pouch
 @i^9260^Volatile Rum
 @i^11208^Formula: Enchant Weapon - Demonslaying
+@i^11408^Bear Jaw
 @i^11409^Bear Flank
 @i^12203^Red Wolf Meat
 @i^13422^Stonescale Eel
@@ -52,6 +59,15 @@ GoldScout-export 5^vk7s4k277aje^4
 @i^213543^Scroll: UPDOG
 @i^213545^Scroll: PEATCHY ATTAX
 @i^213546^Scroll: SHOOBEEDOOP
+@i^256036^Handful of Dirt
+@i^256037^Grass Clippings
+@i^260348^Barely Legible Journal Entry, Page I
+@i^260349^Barely Legible Journal Entry, Page II
+@i^260350^Barely Legible Journal Entry, Page III
+@i^260351^Barely Legible Journal Entry, Page IV
+@i^260352^Barely Legible Journal Entry, Page V
+@i^260353^Barely Legible Journal Entry, Page VI
+@i^260354^Barely Legible Journal Entry, Page VII
 @q^2744^1:12:0
 @q^3712^1:7:1
 @q^3820^1:7:1
@@ -76,6 +92,7 @@ GoldScout-export 5^vk7s4k277aje^4
 @q^8483^1:12:0
 @q^9260^1:0:0
 @q^11208^2:9:0
+@q^11408^0:15:0
 @q^11409^0:15:0
 @q^12203^1:7:1
 @q^13422^1:7:1
@@ -91,10 +108,20 @@ GoldScout-export 5^vk7s4k277aje^4
 @q^213543^1:0:0
 @q^213545^1:0:0
 @q^213546^1:0:0
+@q^256036^0:15:0
+@q^256037^0:15:0
+@q^260348^1:15:0
+@q^260349^1:15:0
+@q^260350^1:15:0
+@q^260351^1:15:0
+@q^260352^1:15:0
+@q^260353^1:15:0
+@q^260354^1:15:0
 @m^1434^Stranglethorn Vale
 @m^1443^Desolace
 @m^1444^Feralas
 @m^1446^Tanaris
+@m^2652^Shen'dralas
 @c^118^
 @c^724^
 @c^733^
@@ -272,7 +299,13 @@ GoldScout-export 5^vk7s4k277aje^4
 @a^5286^197:1
 @a^5616^92:2,111:1
 @a^5618^92:2,111:1,112:1
+@a^11561^46:1
 @a^14123^73:3,93:6,113:9
+@a^252711^128:2,148:2
+@a^254566^293:1
+@a^255207^230:1
+@a^255561^327:2
+@a^263681^230:2
 @f^1434^0^7^237^3820:1:2,21228:6:6^286:3,326:4
 @f^1444^0^92^225^6358:11:11,8365:9:9,13758:48:48,13759:17:17,13760:7:7^195:61,214:31
 @f^1446^0^98^238^4603:36:36,6359:9:9,6362:10:10,7973:14:14,13422:7:15,13754:12:12,13755:9:9,13874:1:1^93:67,113:31
