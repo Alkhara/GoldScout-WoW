@@ -1,4 +1,4 @@
-GoldScout-export 5^bqq6xm1a0nq3^2
+GoldScout-export 5^bqq6xm1a0nq3^3
 48^2^0^21^22^1431^0.8093^0.6750^2^Skeletal Warrior^2592:1:1^
 202^14^0^23^24^1431^0.7618^0.5818^14^Skeletal Horror^929:1:1,2592:6:10,3385:1:1,4306:1:1,248683:1:1^
 206^7^0^29^30^1431^0.7316^0.7030^7^Nightbane Vile Fang^1205:2:2,248687:1:1^
@@ -6,14 +6,18 @@ GoldScout-export 5^bqq6xm1a0nq3^2
 212^2^0^29^30^1431^0.3736^0.8071^2^Splinter Fist Warrior^2592:1:1^
 215^1^0^25^25^1431^0.2437^0.6862^1^Defias Night Runner^^
 300^1^0^30^30^1431^0.3693^0.8223^1^Zzarc' Vul^1968:1:1^
-315^1^0^32^32^1431^0.7828^0.3445^1^Stalvan Mistmantle^^
+315^2^0^32^32^1431^0.7739^0.3384^2^Stalvan Mistmantle^3629:1:1,4306:1:2^
 511^1^0^26^26^1431^0.8034^0.7109^1^Insane Ghoul^1946:1:1^
 522^1^0^35^35^1431^0.1919^0.3749^1^Mor'Ladim^3514:1:1,4306:1:2^
 570^4^0^28^29^1431^0.2547^0.3350^4^Brain Eater^884:1:1,887:1:1,1205:1:1,2592:1:2,4306:1:2,6530:1:1^
 604^11^0^27^28^1431^0.2514^0.3256^11^Plague Spreader^884:6:6,1803:1:1,2222:1:1,5529:2:2,6530:2:2^
+681^9^0^30^31^1434^0.3485^0.1182^9^Young Stranglethorn Tiger^1686:4:4,12202:5:5,12974:1:1^
+683^9^0^30^31^1434^0.4203^0.1128^9^Young Panther^1686:2:2,5637:1:1,9820:1:1,13106:1:1^
 909^3^0^25^26^1431^0.2428^0.7069^3^Defias Night Blade^929:1:1,1205:1:1^
 920^5^0^30^31^1431^0.7357^0.7698^5^Nightbane Tainted One^1205:1:1,5637:1:1^
 948^1^0^26^26^1431^0.2108^0.3273^1^Rotted One^5529:1:1^
+1110^2^0^27^28^1431^0.1735^0.3381^2^Skeletal Raider^2592:1:2,2785:1:1^
+1150^1^0^30^30^1434^0.3420^0.1113^1^River Crocolisk^3667:1:1,12037:1:1^
 1211^1^0^8^10^1426^0.2652^0.4287^1^Leper Gnome^1181:1:1^
 1270^3^0^29^30^1431^0.7698^0.3597^3^Fetid Corpse^1205:1:1,4306:1:1,4606:1:1^
 2044^1^0^25^25^1429^0.8565^0.6957^1^Forlorn Spirit^2589:1:2^
@@ -42,6 +46,7 @@ GoldScout-export 5^bqq6xm1a0nq3^2
 @i^929^Healing Potion
 @i^1181^Scroll of Spirit
 @i^1205^Melon Juice
+@i^1686^Bristly Whisker
 @i^1705^Lesser Moonstone
 @i^1761^Reinforced Chain Vest
 @i^1775^Brocade Gloves
@@ -53,8 +58,11 @@ GoldScout-export 5^bqq6xm1a0nq3^2
 @i^2222^Tower Shield
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2785^Stiff Recurve Bow
 @i^3385^Lesser Mana Potion
 @i^3514^Mor'Ladim's Skull
+@i^3629^Mistmantle Family Ring
+@i^3667^Tender Crocolisk Meat
 @i^3676^Slimy Ichor
 @i^3782^Large War Club
 @i^3804^Hardened Leather Gloves
@@ -76,8 +84,13 @@ GoldScout-export 5^bqq6xm1a0nq3^2
 @i^9452^Hydrocane
 @i^9459^Thermaplugg's Left Arm
 @i^9807^Superior Shoulders of the Falcon
+@i^9820^Durable Boots of the Sorcerer
 @i^9860^Archer's Cloak of the Whale
+@i^12037^Mystery Meat
 @i^12047^Spectral Necklace of the Hierophant
+@i^12202^Tiger Meat
+@i^12974^The Black Knight
+@i^13106^Glowing Magical Bracelets
 @i^211784^Scroll: WUBBA WUBBA
 @i^248683^Waylaid Crate: Apprentice Ore
 @i^248687^Waylaid Crate: Journeyman Ore
@@ -86,6 +99,7 @@ GoldScout-export 5^bqq6xm1a0nq3^2
 @q^929^1:0:0
 @q^1181^1:0:0
 @q^1205^1:0:0
+@q^1686^0:15:0
 @q^1705^2:7:1
 @q^1761^0:4:0
 @q^1775^0:4:0
@@ -97,8 +111,11 @@ GoldScout-export 5^bqq6xm1a0nq3^2
 @q^2222^0:4:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2785^0:2:0
 @q^3385^1:0:0
 @q^3514^1:12:0
+@q^3629^1:12:0
+@q^3667^1:7:1
 @q^3676^0:15:0
 @q^3782^0:2:0
 @q^3804^0:4:0
@@ -120,8 +137,13 @@ GoldScout-export 5^bqq6xm1a0nq3^2
 @q^9452^3:2:0
 @q^9459^3:2:0
 @q^9807^2:4:0
+@q^9820^2:4:0
 @q^9860^2:4:0
+@q^12037^1:7:1
 @q^12047^2:4:0
+@q^12202^1:7:1
+@q^12974^3:2:0
+@q^13106^3:4:0
 @q^211784^1:0:0
 @q^248683^1:0:1
 @q^248687^1:0:1
@@ -129,6 +151,7 @@ GoldScout-export 5^bqq6xm1a0nq3^2
 @m^1426^Dun Morogh
 @m^1429^Elwynn Forest
 @m^1431^Duskwood
+@m^1434^Stranglethorn Vale
 @m^1455^Ironforge
 @c^724^
 @c^733^
@@ -821,14 +844,18 @@ GoldScout-export 5^bqq6xm1a0nq3^2
 @a^212^327:2
 @a^215^264:1
 @a^300^327:1
-@a^315^135:1
+@a^315^135:2
 @a^511^296:1
 @a^522^143:1
 @a^570^124:1,125:3
 @a^604^104:2,124:2,125:7
+@a^681^46:5,47:4
+@a^683^28:1,48:8
 @a^909^284:3
 @a^920^314:5
 @a^948^124:1
+@a^1110^123:2
+@a^1150^46:1
 @a^1211^165:1
 @a^1270^135:1,155:2
 @a^2044^277:1
