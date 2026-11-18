@@ -343,6 +343,24 @@ class ServerTests(unittest.TestCase):
         self.assertEqual(self.report(reporters[2], [error], ip)[0], 429)
         self.assertEqual(self.report(reporters[2], [error])[0], 200)      # from another network: fine
 
+    def test_other_addons_errors_from_an_old_goldscout_are_dropped(self):
+        # GoldScout before v0.11.1 saved its own error handler as every stack's first line; old companions sent
+        # those errors as GoldScout's (a Questie error in a report).
+        tag = random.randint(1, 10 ** 9)
+        handler = "GoldScout/Core.lua:390: in function <GoldScout/Core.lua:389>"
+        questie = {"m": "Questie/Database/QuestieXP.lua:%d: attempt to index global 'LibQuestieDB'" % tag,
+                   "s": handler, "n": 1, "v": "v0.11.0"}
+        ours = {"m": "GoldScout/UI.lua:%d: attempt to index a nil value" % tag,
+                "s": handler + "\nGoldScout/UI.lua:5: in function 'Refresh'", "n": 1, "v": "v0.10.1"}
+        newer = dict(questie, m=questie["m"] + " (newer)", v="v0.12.0")   # a newer GoldScout's stack is its own
+        reporter = "".join(random.choice("0123456789abcdef") for _ in range(16))
+        self.assertEqual(self.report(reporter, [questie, ours, newer])[0], 200)
+        status, _, text = fetch("/admin/api/summary", {"Authorization": "Bearer " + ADMIN})
+        errors = {e["message"]: e for e in json.loads(text)["live"]["errors"]}
+        self.assertNotIn(questie["m"], errors)
+        self.assertEqual(errors[ours["m"]]["stack"], "GoldScout/UI.lua:5: in function 'Refresh'")
+        self.assertIn(newer["m"], errors)
+
     def test_error_reports_are_grouped_and_rate_limited(self):
         report = self.report
 

@@ -12,6 +12,37 @@ const VERSION = /^[0-9A-Za-z.@+-]{0,24}$/;
 const MIN_SECONDS_BETWEEN_REPORTS = 30 * 60;
 const NEW_REPORTERS_PER_NETWORK_PER_DAY = 2;   // a household's two PCs; the errors alert needs 3 players
 const KEEP_SECONDS = 90 * 86400;
+// GoldScout before v0.11.1 saved its own error handler (Core.lua) as every stack's first line, so other addons'
+// errors were saved as if they were GoldScout's. Companions since 0.12.x drop those (error_reports.clean); this
+// does the same for older companions.
+const HANDLER_FIXED = [0, 11, 1];
+const ADDON_VERSION = /^v?(\d+)\.(\d+)\.(\d+)/;
+
+function handlerFirst(version) {
+  const match = ADDON_VERSION.exec(version || "");
+  if (!match) {
+    return false;
+  }
+  for (let i = 0; i < 3; i++) {
+    const part = Number(match[i + 1]);
+    if (part !== HANDLER_FIXED[i]) {
+      return part < HANDLER_FIXED[i];
+    }
+  }
+  return false;
+}
+
+// The error as it should be kept, or null for another addon's error that an old GoldScout caught.
+function fromGoldScout(error) {
+  if (!handlerFirst(error.v) || !error.s.startsWith("GoldScout/Core.lua:")) {
+    return error;
+  }
+  const stack = error.s.slice(error.s.indexOf("\n") + 1 || error.s.length);   // without its first line
+  if (!stack.trim() && !error.m.includes("GoldScout/")) {
+    return null;
+  }
+  return { ...error, s: stack };
+}
 
 function reply(body, status = 200) {
   return new Response(JSON.stringify(body), {
@@ -53,7 +84,10 @@ function validErrors(body) {
     if (v !== undefined && (typeof v !== "string" || !VERSION.test(v))) {
       return null;
     }
-    errors.push({ m, s, n, v: v || null });
+    const kept = fromGoldScout({ m, s, n, v: v || null });
+    if (kept) {
+      errors.push(kept);
+    }
   }
   return errors;
 }
