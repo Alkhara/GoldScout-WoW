@@ -32,6 +32,7 @@ import error_reports  # noqa: E402
 import savedvars  # noqa: E402
 import submission  # noqa: E402
 import system  # noqa: E402
+import theme  # noqa: E402
 import updater  # noqa: E402
 import uploader  # noqa: E402
 
@@ -124,27 +125,8 @@ def file_stamp(forever):
     return tuple((str(f), f.stat().st_mtime) for f in files)
 
 
-# Text colors: fixed greys and blue on Windows' light window; macOS's own
-# colors on a Mac, which follow its light or dark appearance (fixed greys
-# all but vanish on its dark window).
-INKS = {"muted": ("#555", "systemSecondaryLabelColor"),
-        "faint": ("#777", "systemTertiaryLabelColor"),
-        "link": ("#1a5fb4", "systemLinkColor")}
-
-
-def ink(widget, name):
-    fixed, mac = INKS[name]
-    if system.MAC:
-        try:
-            widget.winfo_rgb(mac)  # older Tk lacks some of macOS's colors
-            return mac
-        except tk.TclError:
-            pass
-    return fixed
-
-
 def link(parent, text, url):
-    label = ttk.Label(parent, text=text, foreground=ink(parent, "link"), cursor="hand2")
+    label = ttk.Label(parent, text=text, style=theme.LINK, cursor="hand2")
     label.bind("<Button-1>", lambda _: webbrowser.open(url))
     return label
 
@@ -270,7 +252,7 @@ class App:
             startup.state(["disabled"])
             self.startup_choice.set(False)
 
-        ttk.Label(frame, foreground=ink(self.root, "muted"), wraplength=500, justify="left", text=(
+        ttk.Label(frame, style=theme.MUTED, wraplength=500, justify="left", text=(
             "You can turn off automatic sharing or %s any time from %s." % (
                 "opening at login" if system.MAC else "starting with Windows",
                 "Settings in the companion's window" if system.MAC else "the tray icon"))
@@ -289,12 +271,12 @@ class App:
         ttk.Label(frame, text="GoldScout Companion", font=(FONT, 15, "bold")).grid(row=0, column=0, sticky="w")
         bar = ttk.Frame(frame)
         bar.grid(row=0, column=0, sticky="e")
-        self.update_label = ttk.Label(bar, text="", foreground=ink(self.root, "muted"))
+        self.update_label = ttk.Label(bar, text="", style=theme.MUTED)
         self.update_label.pack(side="left")
         self.update_button = ttk.Button(bar, text="Update", command=self.start_update)
         # Like the tray menu's: shown while there's no update waiting.
         self.check_button = ttk.Button(bar, text="Check for updates", command=lambda: self.check_updates(manual=True))
-        self.share_status = ttk.Label(frame, text="", foreground=ink(self.root, "muted"))
+        self.share_status = ttk.Label(frame, text="", style=theme.MUTED)
         self.share_status.grid(row=1, column=0, sticky="w", pady=(0, 12))
 
         folder = ttk.LabelFrame(frame, text="WoW Forever folder", padding=8)
@@ -310,13 +292,14 @@ class App:
         frame.rowconfigure(3, weight=1)
         self.account_label = ttk.Label(data, text="WoW account:")
         self.account_choice = ttk.Combobox(data, state="readonly", width=24)
+        theme.combo(self.account_choice)
         self.account_choice.bind("<<ComboboxSelected>>", lambda _: self.show_account())
         self.stats_label = ttk.Label(data, text="", font=(FONT, 10, "bold"))
         self.stats_label.grid(row=1, column=0, columnspan=2, sticky="w")
         self.since_label = ttk.Label(data, text="")
         self.since_label.grid(row=2, column=0, columnspan=2, sticky="w", pady=(2, 6))
-        self.notes = tk.Text(data, height=6, wrap="word", relief="flat", background=root.cget("background"),
-                             font=(FONT, 9))
+        self.notes = tk.Text(data, height=6, wrap="word", relief="flat", font=(FONT, 9))
+        theme.text(self.notes)
         self.notes.grid(row=3, column=0, columnspan=2, sticky="nsew")
         data.rowconfigure(3, weight=1)
         board = ttk.Frame(data)
@@ -354,7 +337,7 @@ class App:
                         command=lambda: self.set_error_reports(self.errors_choice.get())).grid(
                             row=1, column=0, sticky="w", pady=(8, 0))
 
-        self.prices_label = ttk.Label(frame, text="", foreground=ink(self.root, "muted"), wraplength=520, justify="left")
+        self.prices_label = ttk.Label(frame, text="", style=theme.MUTED, wraplength=520, justify="left")
         self.prices_label.grid(row=6, column=0, sticky="w", pady=(10, 0))
 
         if system.MAC:
@@ -362,7 +345,7 @@ class App:
                        "to open it again. ")
         else:
             closing = "Closing this window keeps the companion running in the system tray; "
-        ttk.Label(frame, foreground=ink(self.root, "faint"), wraplength=520, font=(FONT, 8), text=(
+        ttk.Label(frame, style=theme.FAINT, wraplength=520, font=(FONT, 8), text=(
             closing + "Quit stops it until "
             "you start it again. GoldScout saves its "
             "data when you log out or type /reload, so new loot shows up here after that. Auction "
@@ -957,6 +940,7 @@ class App:
             return
         info = self.rank_state(account).get("info") or {}
         dialog = tk.Toplevel(self.root)
+        theme.window(dialog)
         dialog.title("Contributor leaderboard")
         dialog.transient(self.root)
         dialog.resizable(False, False)
@@ -982,7 +966,7 @@ class App:
         entry.pack(side="left", padx=(6, 0))
         toggled()
         alias = info.get("alias")
-        ttk.Label(frame, foreground=ink(self.root, "muted"), wraplength=400, justify="left", text=(
+        ttk.Label(frame, style=theme.MUTED, wraplength=400, justify="left", text=(
             ("Leave it empty to be shown as %s, a name GoldScout made up. " % alias if alias else
              "Leave it empty to be shown under a name GoldScout makes up, like Patient Boar. ") +
             "A name of your own shows once it's approved. Your character or account name would tell "
@@ -1154,11 +1138,7 @@ def main():
         return  # the copy that's already running shows its window instead
     instance.show_requested()  # clear any stale request
     root = tk.Tk()
-    if system.WINDOWS:
-        try:
-            ttk.Style(root).theme_use("vista")
-        except tk.TclError:
-            pass
+    theme.install(root)  # light or dark, following Windows' app mode
     App(root, start_hidden=args.tray, instance=instance, updated=args.after_update)
     root.mainloop()
     instance.close()

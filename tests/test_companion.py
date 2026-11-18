@@ -331,3 +331,51 @@ class _Window:
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ThemeTests(unittest.TestCase):
+    """The window follows Windows' app mode: light keeps the vista look, dark recolors everything."""
+
+    def test_reads_windows_app_mode(self):
+        import theme
+        for value, dark in ((0, True), (1, False)):
+            fake = mock.MagicMock()
+            fake.QueryValueEx.return_value = (value, 4)
+            with mock.patch.object(theme.system, "WINDOWS", True), mock.patch.dict(sys.modules, {"winreg": fake}):
+                self.assertIs(theme.windows_dark(), dark)
+        fake = mock.MagicMock()
+        fake.OpenKey.side_effect = OSError("no key")
+        with mock.patch.object(theme.system, "WINDOWS", True), mock.patch.dict(sys.modules, {"winreg": fake}):
+            self.assertFalse(theme.windows_dark())   # older Windows: light
+        with mock.patch.object(theme.system, "WINDOWS", False):
+            self.assertFalse(theme.windows_dark())
+
+    @unittest.skipUnless(sys.platform == "win32", "Windows' themes")
+    def test_switches_live(self):
+        import tkinter as tk
+        from tkinter import ttk
+        import theme
+        try:
+            root = tk.Tk()
+        except tk.TclError:
+            self.skipTest("no display")
+        try:
+            root.withdraw()
+            current = theme.Theme(root, watch=False)
+            text = tk.Text(root)
+            current.text(text)
+            dialog = tk.Toplevel(root)
+            current.window(dialog)
+            for dark in (True, False, True):
+                current.apply(dark=dark)
+                self.assertEqual(current.style.theme_use(), "clam" if dark else "vista")
+                muted = current.style.lookup(theme.MUTED, "foreground")
+                self.assertEqual(muted, theme.DARK["muted"] if dark else theme.LIGHT_INKS["muted"])
+                self.assertEqual(str(text.cget("background")), theme.DARK["bg"] if dark else current.light_bg)
+                self.assertEqual(str(dialog.cget("background")), theme.DARK["bg"] if dark else current.light_bg)
+            dialog.destroy()
+            current.apply(dark=False)   # a closed dialog is dropped, not an error
+            self.assertEqual(current.windows, [root])
+            self.assertIsInstance(ttk.Label(root, style=theme.LINK), ttk.Label)
+        finally:
+            root.destroy()
