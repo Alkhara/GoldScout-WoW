@@ -1,4 +1,4 @@
-GoldScout-export 5^2oyn7kh2mzjx^2
+GoldScout-export 5^2oyn7kh2mzjx^3
 597^3^0^36^37^1434^0.2008^0.1210^3^Bloodscalp Berserker^3771:1:1,4306:1:1,4338:1:1^
 660^6^0^37^37^1434^0.2003^0.1327^6^Bloodscalp Witch Doctor^2730:1:1,2732:1:1,4306:1:2^
 667^22^0^39^40^1434^0.4524^0.3327^22^Skullsplitter Warrior^1520:4:4,2735:1:1,3771:3:3,3797:1:1,3916:6:6,4306:6:13,4338:1:1,8151:1:1,8153:1:2,15214:1:1,15322:1:1,248692:1:1,262889:1:1^
@@ -28,6 +28,7 @@ GoldScout-export 5^2oyn7kh2mzjx^2
 250657^2^0^0^0^0^0.0000^0.0000^0^^271215:2:2^
 250660^1^0^0^0^0^0.0000^0.0000^0^^271206:1:1^
 250735^1^0^0^0^0^0.0000^0.0000^0^^818:1:1^
+252711^3^0^42^42^2652^0.4455^0.3491^3^Decrepit Pylon Protector^7909:1:1,260348:1:1,260351:1:1,260354:1:1^
 255207^1^0^41^41^2652^0.4631^0.5311^1^Prowler^259461:1:1^
 255964^2^0^0^0^0^0.0000^0.0000^0^^^
 256035^2^0^0^0^0^0.0000^0.0000^0^^271211:1:1,271212:1:1^
@@ -83,6 +84,7 @@ GoldScout-export 5^2oyn7kh2mzjx^2
 @i^6546^Soldier's Leggings of the Boar
 @i^6557^Bard's Boots of the Bear
 @i^7459^Knight's Pauldrons of the Physician
+@i^7909^Aquamarine
 @i^8151^Flask of Mojo
 @i^8153^Wildvine
 @i^11386^Squishy Basilisk Eye
@@ -95,6 +97,9 @@ GoldScout-export 5^2oyn7kh2mzjx^2
 @i^248694^Waylaid Crate: Expert Curiosities
 @i^259461^Partially Digested Collar
 @i^260347^Tattered Journal
+@i^260348^Barely Legible Journal Entry, Page I
+@i^260351^Barely Legible Journal Entry, Page IV
+@i^260354^Barely Legible Journal Entry, Page VII
 @i^262889^Sealed Expert's Writ
 @i^271206^Leftover Abomination Skin
 @i^271207^Rotmender's Leggings
@@ -156,6 +161,7 @@ GoldScout-export 5^2oyn7kh2mzjx^2
 @q^6546^2:4:0
 @q^6557^2:4:0
 @q^7459^2:4:0
+@q^7909^2:7:1
 @q^8151^1:7:1
 @q^8153^1:7:1
 @q^11386^0:15:0
@@ -168,6 +174,9 @@ GoldScout-export 5^2oyn7kh2mzjx^2
 @q^248694^1:0:1
 @q^259461^1:15:0
 @q^260347^1:15:0
+@q^260348^1:15:0
+@q^260351^1:15:0
+@q^260354^1:15:0
 @q^262889^3:0:0
 @q^271206^3:4:0
 @q^271207^3:4:0
@@ -1273,5 +1282,6 @@ GoldScout-export 5^2oyn7kh2mzjx^2
 @a^2667^107:5,127:8
 @a^3560^43:4,44:2
 @a^11559^104:1,105:1
+@a^252711^128:1,129:1,148:1
 @a^255207^209:1
 @l^0^enUS

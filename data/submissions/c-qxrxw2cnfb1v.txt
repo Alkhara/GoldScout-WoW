@@ -1,4 +1,4 @@
-GoldScout-export 5^qxrxw2cnfb1v^4
+GoldScout-export 5^qxrxw2cnfb1v^5
 1765^1^0^10^11^1421^0.4607^0.4399^1^Worg^^
 1766^13^0^11^12^1421^0.5728^0.1164^13^Mottled Worg^2672:7:7,3164:3:3,3299:2:2,3300:2:2,6515:1:1^
 1778^3^0^11^12^1421^0.4906^0.3940^3^Ferocious Grizzled Bear^818:1:1,3170:1:1,3173:1:1,3253:1:1^
@@ -25,10 +25,33 @@ GoldScout-export 5^qxrxw2cnfb1v^4
 8095^1^0^0^0^0^0.0000^0.0000^0^^1701:1:1^
 8120^2^0^0^0^0^0.0000^0.0000^0^^4093:1:1,11387:1:1^
 8127^1^0^0^0^0^0.0000^0.0000^0^^4338:1:1^
+250868^1^0^6^6^2521^0.4316^0.5137^1^Vuldren^1415:1:1,2672:1:1,3299:1:1^
+251245^14^0^5^6^2521^0.4146^0.4045^14^Prideclaw^1369:1:1,1425:1:1,2213:1:1,2645:1:1,3299:5:5,3365:1:1,252670:10:10,252671:9:9^
+251284^10^0^6^7^2521^0.3484^0.5461^10^Hippogryph Protector^1411:1:1,4775:7:7,4776:3:3,6889:3:3^
+251291^1^0^6^6^2521^0.3770^0.4958^1^Hippogryph Youth^6889:1:1,7096:1:1^
+251451^1^0^5^5^2521^0.4181^0.3489^1^Al'Aketh Ambusher^159:1:1,1366:1:1^
+251661^11^0^5^6^2521^0.4020^0.4126^11^Galestrider^1377:1:1,2649:1:1,4757:7:7,5469:6:6,6889:3:3,7096:2:2,7097:2:2^
+254589^1^0^8^8^2521^0.4281^0.5225^1^Vulgara the Insatiable^257942:1:1^
+257521^12^0^5^6^2521^0.4605^0.3914^12^High Order Apprentice^118:1:1,159:2:2,1364:1:1,1430:1:1,2589:2:3,2653:1:1,4540:9:9,255663:1:1^
+@i^118^Minor Healing Potion
+@i^159^Refreshing Spring Water
 @i^818^Tigerseye
+@i^1364^Ragged Leather Vest
+@i^1366^Ragged Leather Pants
+@i^1369^Ragged Leather Belt
+@i^1377^Frayed Gloves
+@i^1411^Withered Staff
+@i^1415^Carpenter's Mallet
+@i^1425^Worn Leather Vest
+@i^1430^Patchwork Gloves
 @i^1520^Troll Sweat
 @i^1645^Moonberry Juice
 @i^1701^Curved Basilisk Claw
+@i^2213^Worn Large Shield
+@i^2589^Linen Cloth
+@i^2645^Loose Chain Gloves
+@i^2649^Flimsy Chain Belt
+@i^2653^Flimsy Chain Gloves
 @i^2672^Stringy Wolf Meat
 @i^3164^Discolored Worg Heart
 @i^3170^Large Bear Tooth
@@ -36,28 +59,56 @@ GoldScout-export 5^qxrxw2cnfb1v^4
 @i^3253^Grizzled Bear Heart
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
+@i^3365^Frayed Bracers
 @i^3961^Thick Leather Belt
 @i^4019^Heavy Flint Axe
 @i^4093^Large Basilisk Tail
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
+@i^4540^Tough Hunk of Bread
 @i^4599^Cured Ham Steak
+@i^4757^Cracked Egg Shells
+@i^4775^Cracked Bill
+@i^4776^Ruffled Feather
+@i^5469^Strider Meat
 @i^6300^Husk Fragment
 @i^6515^Disciple's Gloves
 @i^6826^Brilliant Scale
+@i^6889^Small Egg
+@i^7096^Plucked Feather
+@i^7097^Leg Meat
 @i^8151^Flask of Mojo
 @i^8444^Executioner's Key
 @i^8707^Gahz'rilla's Electrified Scale
 @i^11387^Basilisk Heart
 @i^14944^Warbringer's Crown of the Boar
 @i^15168^Imposing Pants of the Monkey
+@i^252670^Prideclaw Pelt
+@i^252671^Hoarder's Foot
+@i^255663^Windstone
+@i^257942^Vulgara's Head
 @i^262889^Sealed Expert's Writ
 @i^274639^Sacrificial Chain Vest
 @i^274644^Undying Headdress
+@q^118^1:0:0
+@q^159^1:0:0
 @q^818^2:7:1
+@q^1364^0:4:0
+@q^1366^0:4:0
+@q^1369^0:4:0
+@q^1377^0:4:0
+@q^1411^0:2:0
+@q^1415^0:2:0
+@q^1425^0:4:0
+@q^1430^0:4:0
 @q^1520^0:15:0
 @q^1645^1:0:0
 @q^1701^0:15:0
+@q^2213^0:4:0
+@q^2589^1:7:1
+@q^2645^0:4:0
+@q^2649^0:4:0
+@q^2653^0:4:0
 @q^2672^1:7:1
 @q^3164^1:12:0
 @q^3170^0:15:0
@@ -65,26 +116,40 @@ GoldScout-export 5^qxrxw2cnfb1v^4
 @q^3253^1:12:0
 @q^3299^0:15:0
 @q^3300^0:15:0
+@q^3365^0:4:0
 @q^3961^0:4:0
 @q^4019^0:2:0
 @q^4093^0:15:0
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4540^1:0:0
 @q^4599^1:0:0
+@q^4757^0:15:0
+@q^4775^0:15:0
+@q^4776^0:15:0
+@q^5469^1:7:1
 @q^6300^0:15:0
 @q^6515^1:4:0
 @q^6826^0:15:0
+@q^6889^1:7:1
+@q^7096^0:15:0
+@q^7097^1:0:0
 @q^8151^1:7:1
 @q^8444^1:0:0
 @q^8707^1:12:0
 @q^11387^0:15:0
 @q^14944^2:4:0
 @q^15168^2:4:0
+@q^252670^1:12:0
+@q^252671^0:15:0
+@q^255663^1:0:0
+@q^257942^1:12:0
 @q^262889^3:0:0
 @q^274639^3:4:0
 @q^274644^3:4:0
 @m^1421^Silverpine Forest
 @m^1446^Tanaris
+@m^2521^Zephras Isle
 @c^2568^
 @c^2569^
 @c^2570^
@@ -1166,4 +1231,12 @@ GoldScout-export 5^qxrxw2cnfb1v^4
 @a^1778^150:2,169:1
 @a^1867^249:1
 @a^5647^87:1
+@a^250868^208:1
+@a^251245^148:7,167:2,168:3,187:1,188:1
+@a^251284^206:3,207:2,226:3,227:2
+@a^251291^187:1
+@a^251451^128:1
+@a^251661^148:5,167:4,187:1,188:1
+@a^254589^208:1
+@a^257521^149:12
 @l^0^enUS
