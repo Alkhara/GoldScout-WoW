@@ -578,7 +578,7 @@ SEARCH_BOX_FR = (SEARCH_BOX.replace('placeholder="Search items, mobs and zones"'
 # English, so German pages link there in English).
 CHROME = {
     "en": {
-        "nav": '<a href="/farms">Farms by level</a><a href="/fishing">Fishing</a><a href="/drop-rates">Drop rates</a>'
+        "nav": '<a href="/farms">Farms by level</a><a href="/fishing">Fishing</a><a href="/guides">Gold guides</a>'
                '<a href="/companion">Companion</a><a href="/share">Share data</a><a href="/leaderboard">Leaderboard</a>'
                '<a href="/faq">FAQ</a>'
                '<a href="%(curseforge)s">Get GoldScout</a>',
@@ -870,6 +870,7 @@ def page(s):
     <p class="lead">GoldScout is a free WoW Forever addon. Open the auction house and it ranks what the character you're playing can farm or craft for the most gold per hour, for its level, class, faction and professions.</p>
     <div class="buttons">
       <a class="btn primary" href="%(curseforge)s">Get it on CurseForge</a>
+      <a class="btn" href="/guides">Best farms right now</a>
       <a class="btn" href="%(releases)s">GitHub</a>
     </div>
     <p class="small">Free, open source, and every feature is the same for everyone.</p>
