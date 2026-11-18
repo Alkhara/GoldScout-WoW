@@ -1,4 +1,4 @@
-GoldScout-export 5^ddrzxaibpto2^14
+GoldScout-export 5^ddrzxaibpto2^15
 743^1^0^42^43^1435^0.8927^0.7307^1^Wyrmkin Dreamwalker^^
 747^1^0^42^42^1435^0.8316^0.8684^1^Marsh Murloc^^
 750^6^0^42^43^1435^0.9083^0.7008^6^Marsh Inkspewer^4422:1:1,6149:1:1,7973:1:1^
@@ -25,12 +25,17 @@ GoldScout-export 5^ddrzxaibpto2^14
 2692^6^0^44^45^1425^0.3214^0.4977^6^Highvale Scout^3928:1:1^
 2693^4^0^45^46^1425^0.2958^0.4797^4^Highvale Marksman^^
 2694^1^0^46^46^1425^0.2863^0.4651^1^Highvale Ranger^^
+2715^1^0^39^40^1418^0.2942^0.5997^1^Dustbelcher Brute^^
+2729^13^0^39^40^1418^0.2994^0.6090^13^Elder Crag Coyote^^
+2735^10^0^37^39^1418^0.1980^0.4433^10^Lesser Rock Elemental^4784:1:1,7912:2:2,8150:1:1^
+2831^12^0^39^41^1418^0.1934^0.6425^12^Giant Buzzard^5116:1:1,7847:2:2,12037:3:3,248710:1:1^
 2923^1^0^42^42^1425^0.1820^0.5105^1^Mangy Silvermane^^
 2925^3^0^45^46^1425^0.4906^0.5571^3^Silvermane Howler^12203:1:1,12208:1:1^
 2926^9^0^47^48^1425^0.6677^0.4972^9^Silvermane Stalker^4583:1:1,12203:2:2,12208:1:1^
 2927^1^0^43^43^1425^0.3421^0.5488^1^Vicious Owlbeast^4599:1:1^
 2928^1^0^45^45^1425^0.4431^0.5363^1^Primitive Owlbeast^^
 2929^3^0^46^47^1425^0.5976^0.5273^3^Savage Owlbeast^^
+2944^1^0^41^41^1418^0.3222^0.5600^1^Boss Tho'grun^^
 4323^2^0^41^42^1445^0.4227^0.6744^2^Searing Hatchling^^
 4324^1^0^42^42^1445^0.4378^0.6636^1^Searing Whelp^^
 4328^4^0^44^44^1445^0.3740^0.6867^4^Firemane Scalebane^^
@@ -80,6 +85,8 @@ GoldScout-export 5^ddrzxaibpto2^14
 @i^4591^Eagle Eye
 @i^4599^Cured Ham Steak
 @i^4603^Raw Spotted Yellowtail
+@i^4784^Lifeless Stone
+@i^5116^Long Tail Feather
 @i^5516^Threshadon Fang
 @i^5569^Seaweed
 @i^5637^Large Fang
@@ -90,13 +97,17 @@ GoldScout-export 5^ddrzxaibpto2^14
 @i^6359^Firefin Snapper
 @i^6361^Raw Rainbow Fin Albacore
 @i^6362^Raw Rockscale Cod
+@i^7847^Buzzard Gizzard
+@i^7912^Solid Stone
 @i^7973^Big-mouth Clam
+@i^8150^Deeprock Salt
 @i^8153^Wildvine
 @i^8365^Raw Mithril Head Trout
 @i^9241^Sacred Mallet
 @i^9259^Troll Tribal Necklace
 @i^10285^Shadow Silk
 @i^11409^Bear Flank
+@i^12037^Mystery Meat
 @i^12184^Raptor Flesh
 @i^12203^Red Wolf Meat
 @i^12206^Tender Crab Meat
@@ -113,6 +124,7 @@ GoldScout-export 5^ddrzxaibpto2^14
 @i^21150^Iron Bound Trunk
 @i^213526^Hybrid Haunch
 @i^248694^Waylaid Crate: Expert Curiosities
+@i^248710^Waylaid Crate: Expert Parts
 @i^279601^Intact Raptor Hide
 @q^770^0:15:0
 @q^3667^1:7:1
@@ -133,6 +145,8 @@ GoldScout-export 5^ddrzxaibpto2^14
 @q^4591^0:15:0
 @q^4599^1:0:0
 @q^4603^1:7:1
+@q^4784^0:15:0
+@q^5116^1:7:1
 @q^5516^0:2:0
 @q^5569^0:15:0
 @q^5637^1:7:1
@@ -143,13 +157,17 @@ GoldScout-export 5^ddrzxaibpto2^14
 @q^6359^1:7:1
 @q^6361^1:7:1
 @q^6362^1:7:1
+@q^7847^1:12:0
+@q^7912^1:7:1
 @q^7973^1:7:0
+@q^8150^1:7:1
 @q^8153^1:7:1
 @q^8365^1:7:1
 @q^9241^1:12:0
 @q^9259^1:15:0
 @q^10285^1:7:1
 @q^11409^0:15:0
+@q^12037^1:7:1
 @q^12184^1:7:1
 @q^12203^1:7:1
 @q^12206^1:7:1
@@ -166,8 +184,10 @@ GoldScout-export 5^ddrzxaibpto2^14
 @q^21150^1:15:0
 @q^213526^1:12:0
 @q^248694^1:0:1
+@q^248710^2:0:1
 @q^279601^1:12:0
 @m^1413^The Barrens
+@m^1418^Badlands
 @m^1424^Hillsbrad Foothills
 @m^1425^The Hinterlands
 @m^1434^Stranglethorn Vale
@@ -1038,12 +1058,17 @@ GoldScout-export 5^ddrzxaibpto2^14
 @a^2692^185:1,186:3,206:2
 @a^2693^185:3,186:1
 @a^2694^185:1
+@a^2715^225:1
+@a^2729^184:1,205:1,225:3,226:1,246:1,247:4,285:2
+@a^2735^163:5,164:1,184:4
+@a^2831^223:6,243:1,246:1,282:1,286:1,303:1,304:1
 @a^2923^203:1
 @a^2925^190:1,230:1,248:1
 @a^2926^192:1,193:2,194:1,195:2,210:1,211:1,213:1
 @a^2927^206:1
 @a^2928^208:1
 @a^2929^191:1,211:1,233:1
+@a^2944^226:1
 @a^4323^248:1,287:1
 @a^4324^268:1
 @a^4328^267:4
