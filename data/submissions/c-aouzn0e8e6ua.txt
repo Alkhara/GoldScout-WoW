@@ -1,4 +1,4 @@
-GoldScout-export 5^aouzn0e8e6ua^5
+GoldScout-export 5^aouzn0e8e6ua^6
 1120^1^0^7^7^1426^0.7025^0.3916^1^Frostmane Troll^^
 1557^4^0^40^41^1434^0.3270^0.6605^4^Elder Mistvale Gorilla^3919:2:2,4096:1:1,4097:1:1^
 1562^4^0^40^41^1434^0.2774^0.6973^4^Bloodsail Mage^4306:1:2^
@@ -12,6 +12,7 @@ GoldScout-export 5^aouzn0e8e6ua^5
 2761^20^0^38^39^1417^0.6700^0.2970^20^Cresting Exile^4481:8:8,4791:9:18,7070:2:2,213547:1:1^
 2762^26^0^38^39^1417^0.5187^0.5044^26^Thundering Exile^4480:8:8,7069:3:3^
 6239^1^0^40^40^1416^0.8062^0.6148^1^Cyclonian^6894:1:1^
+251661^1^0^6^6^2521^0.3992^0.4664^1^Galestrider^7096:1:1^
 254560^13^0^39^40^2548^0.4830^0.4780^13^Twilight Shadowmancer^4306:3:5,6438:1:1,266425:4:10,267073:2:5^
 255851^2^0^38^39^2548^0.7923^0.2795^2^Mature Paletusk^7909:1:1,268632:1:1^
 255898^6^0^38^39^2548^0.7310^0.6236^6^Murloc Oracle^4603:1:2,5524:2:2^
@@ -28,6 +29,7 @@ GoldScout-export 5^aouzn0e8e6ua^5
 256899^1^0^41^41^2548^0.4486^0.5114^1^Chogg'Zac^265750:1:1,265751:1:1^
 256952^18^0^39^40^2548^0.4908^0.4622^18^Twilight Raider^4306:7:10,5429:1:1,266148:2:2,266427:1:1,267073:3:8^
 257017^6^0^37^38^2548^0.4931^0.4600^6^Twilight Worg^4583:2:2,268632:4:4^
+257532^5^0^5^6^2521^0.3937^0.4773^5^Windshaper Novice Seer^118:1:1,159:2:2,1181:1:1,1372:1:1,1430:1:1,2589:1:2,4540:1:1^
 257861^1^0^45^45^2548^0.9070^0.2899^1^Admiral Lamora^268520:1:1^
 257901^8^0^41^42^2548^0.8669^0.3455^8^Eastsea Buccaneer^4026:1:1,4338:2:4^
 257910^2^0^42^43^2548^0.8796^0.3936^2^Eastsea Musketeer^4338:1:1^
@@ -48,6 +50,12 @@ GoldScout-export 5^aouzn0e8e6ua^5
 263348^11^0^37^38^2548^0.6653^0.5357^11^Roving Tallstrider^5116:4:4,7432:1:1,11416:6:6,11418:4:4,268632:2:2,271778:1:1^
 263380^1^0^42^42^2548^0.5529^0.4897^1^Ghostmaw^5128:1:1,271828:1:1^
 272228^1^0^36^37^2548^0.5465^0.7712^1^Harvest Sentry^4306:1:3^
+@i^118^Minor Healing Potion
+@i^159^Refreshing Spring Water
+@i^1181^Scroll of Spirit
+@i^1372^Ragged Cloak
+@i^1430^Patchwork Gloves
+@i^2589^Linen Cloth
 @i^2728^Green Hills of Stranglethorn - Page 4
 @i^2732^Green Hills of Stranglethorn - Page 8
 @i^2745^Green Hills of Stranglethorn - Page 21
@@ -70,6 +78,7 @@ GoldScout-export 5^aouzn0e8e6ua^5
 @i^4479^Burning Charm
 @i^4480^Thundering Charm
 @i^4481^Cresting Charm
+@i^4540^Tough Hunk of Bread
 @i^4552^Smooth Stone Chip
 @i^4553^Jagged Piece of Stone
 @i^4583^Thick Furry Mane
@@ -90,6 +99,7 @@ GoldScout-export 5^aouzn0e8e6ua^5
 @i^7068^Elemental Fire
 @i^7069^Elemental Air
 @i^7070^Elemental Water
+@i^7096^Plucked Feather
 @i^7429^Twilight Armor of Intellect
 @i^7432^Twilight Cowl of the Prophet
 @i^7909^Aquamarine
@@ -125,6 +135,12 @@ GoldScout-export 5^aouzn0e8e6ua^5
 @i^271425^Blademaster's Banner
 @i^271778^Intact Tallstrider Beak
 @i^271828^Ghostmaw's Fang
+@q^118^1:0:0
+@q^159^1:0:0
+@q^1181^1:0:0
+@q^1372^0:4:0
+@q^1430^0:4:0
+@q^2589^1:7:1
 @q^2728^1:12:0
 @q^2732^1:12:0
 @q^2745^1:12:0
@@ -147,6 +163,7 @@ GoldScout-export 5^aouzn0e8e6ua^5
 @q^4479^1:0:0
 @q^4480^1:0:0
 @q^4481^1:0:0
+@q^4540^1:0:0
 @q^4552^0:15:0
 @q^4553^0:15:0
 @q^4583^0:15:0
@@ -167,6 +184,7 @@ GoldScout-export 5^aouzn0e8e6ua^5
 @q^7068^1:7:1
 @q^7069^1:7:1
 @q^7070^1:7:1
+@q^7096^0:15:0
 @q^7429^2:4:0
 @q^7432^2:4:0
 @q^7909^2:7:1
@@ -206,6 +224,7 @@ GoldScout-export 5^aouzn0e8e6ua^5
 @m^1417^Arathi Highlands
 @m^1426^Dun Morogh
 @m^1434^Stranglethorn Vale
+@m^2521^Zephras Isle
 @m^2548^Riverglades
 @c^118^
 @c^724^
@@ -1463,6 +1482,7 @@ GoldScout-export 5^aouzn0e8e6ua^5
 @a^2761^113:11,133:9
 @a^2762^190:11,210:15
 @a^6239^256:1
+@a^251661^187:1
 @a^254560^169:1,189:10,209:2
 @a^255851^115:2
 @a^255898^254:5,255:1
@@ -1479,6 +1499,7 @@ GoldScout-export 5^aouzn0e8e6ua^5
 @a^256899^208:1
 @a^256952^169:1,170:4,188:2,189:8,190:3
 @a^257017^170:2,189:3,190:1
+@a^257532^187:4,188:1
 @a^257861^118:1
 @a^257901^136:2,137:3,157:2,177:1
 @a^257910^157:1,177:1

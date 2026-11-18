@@ -1,6 +1,8 @@
-GoldScout-export 5^3ubmf49vax6y^3
+GoldScout-export 5^3ubmf49vax6y^4
 428^123^0^18^19^1433^0.5359^0.7611^123^Dire Condor^556:13:13,1080:35:35,1464:13:13,2657:1:1,4775:55:55,4776:18:18,5114:9:9,5115:4:4,6889:76:76,15926:1:1,17056:39:39,211853:1:1,211854:1:1,211855:3:3,250188:6:6,251526:1:1^
 681^1^0^31^31^1434^0.3664^0.1412^1^Young Stranglethorn Tiger^^
+686^11^0^35^36^1434^0.3422^0.2530^11^Lashtail Raptor^864:1:1,1696:3:3,3685:8:8,4461:1:1,4586:1:1,12184:4:4^
+1085^2^0^34^34^1434^0.3210^0.2048^2^Elder Stranglethorn Tiger^12202:1:1^
 2358^3^0^32^33^1416^0.2338^0.5541^3^Dalaran Summoner^4306:1:1^
 2359^28^0^32^33^1416^0.2425^0.5593^28^Elemental Slave^2838:8:12,4553:6:6,4784:14:14,5741:2:6,7067:2:2,8150:12:12,9820:1:1,213546:1:1^
 2628^1^0^33^33^1416^0.2217^0.5707^1^Dalaran Worker^^
@@ -13,18 +15,25 @@ GoldScout-export 5^3ubmf49vax6y^3
 4297^1^0^0^0^0^0.0000^0.0000^0^^^
 4298^7^0^0^0^0^0.0000^0.0000^0^^1708:1:1,4306:1:3,213545:1:1,215374:1:1,248691:1:1^
 6575^10^0^0^0^0^0.0000^0.0000^0^^2785:1:1,4306:3:5^
+269175^6^0^37^38^1434^0.3386^0.2984^6^Carnivorous Weed^2452:1:1,7462:1:1,213547:1:1,256037:5:5^
 @i^556^Buzzard Beak
+@i^864^Knightly Longsword of the Eagle
 @i^1080^Tough Condor Meat
 @i^1464^Buzzard Talon
+@i^1696^Curved Raptor Talon
 @i^1708^Sweet Nectar
+@i^2452^Swiftthistle
 @i^2657^Red Leather Bag
 @i^2785^Stiff Recurve Bow
 @i^2838^Heavy Stone
+@i^3685^Raptor Egg
 @i^3780^Long-barreled Musket
 @i^3800^Hardened Leather Belt
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
+@i^4461^Raptor Hide
 @i^4553^Jagged Piece of Stone
+@i^4586^Smooth Raptor Skin
 @i^4775^Cracked Bill
 @i^4776^Ruffled Feather
 @i^4784^Lifeless Stone
@@ -33,8 +42,11 @@ GoldScout-export 5^3ubmf49vax6y^3
 @i^5741^Rock Chip
 @i^6889^Small Egg
 @i^7067^Elemental Earth
+@i^7462^Knight's Girdle of Stamina
 @i^8150^Deeprock Salt
 @i^9820^Durable Boots of the Eagle
+@i^12184^Raptor Flesh
+@i^12202^Tiger Meat
 @i^15926^Spellbinder Orb
 @i^17056^Light Feather
 @i^211853^Scroll: VOCE WELL
@@ -47,18 +59,25 @@ GoldScout-export 5^3ubmf49vax6y^3
 @i^248691^Waylaid Crate: Flowering Expert Herbs
 @i^250188^Recipe: Breakfast Omelette
 @i^251526^Recipe: Savory Whimsyfin Delight
+@i^256037^Grass Clippings
 @q^556^0:15:0
+@q^864^2:2:0
 @q^1080^1:7:1
 @q^1464^0:15:0
+@q^1696^0:15:0
 @q^1708^1:0:0
+@q^2452^1:7:1
 @q^2657^1:1:0
 @q^2785^0:2:0
 @q^2838^1:7:1
+@q^3685^1:7:1
 @q^3780^0:2:0
 @q^3800^0:4:0
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4461^1:7:1
 @q^4553^0:15:0
+@q^4586^0:15:0
 @q^4775^0:15:0
 @q^4776^0:15:0
 @q^4784^0:15:0
@@ -67,8 +86,11 @@ GoldScout-export 5^3ubmf49vax6y^3
 @q^5741^0:15:0
 @q^6889^1:7:1
 @q^7067^1:7:1
+@q^7462^2:4:0
 @q^8150^1:7:1
 @q^9820^2:4:0
+@q^12184^1:7:1
+@q^12202^1:7:1
 @q^15926^2:4:0
 @q^17056^1:15:1
 @q^211853^1:0:0
@@ -81,6 +103,7 @@ GoldScout-export 5^3ubmf49vax6y^3
 @q^248691^1:0:1
 @q^250188^1:9:0
 @q^251526^2:9:0
+@q^256037^0:15:0
 @m^1416^Alterac Mountains
 @m^1433^Redridge Mountains
 @m^1434^Stranglethorn Vale
@@ -805,7 +828,10 @@ GoldScout-export 5^3ubmf49vax6y^3
 @c^286152^
 @a^428^288:1,289:4,290:13,292:1,308:3,309:2,310:50,311:45,312:4
 @a^681^47:1
+@a^686^86:5,87:1,106:1,107:4
+@a^1085^86:2
 @a^2358^204:1,224:2
 @a^2359^204:9,205:4,224:6,225:6,245:3
 @a^2628^224:1
+@a^269175^106:3,126:3
 @l^0^enUS

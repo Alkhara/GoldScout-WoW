@@ -1,4 +1,4 @@
-GoldScout-export 5^x7z85aeqo4xt^7
+GoldScout-export 5^x7z85aeqo4xt^8
 595^1^0^35^35^1434^0.2302^0.1205^1^Bloodscalp Hunter^^
 701^2^0^35^35^1434^0.2532^0.1143^2^Bloodscalp Mystic^4306:1:1^
 873^1^0^37^37^1434^0.2484^0.2318^1^Saltscale Oracle^5796:1:1^
@@ -9,6 +9,7 @@ GoldScout-export 5^x7z85aeqo4xt^7
 2563^17^0^32^33^1417^0.4854^0.3773^17^Plains Creeper^878:3:3,1074:6:6,1081:10:10,2251:7:7,4337:1:1,4585:2:2^
 2565^26^0^35^36^1417^0.4301^0.3234^26^Giant Plains Creeper^878:6:6,1074:8:8,1081:15:15,2251:8:8,3182:2:2,4585:4:4^
 2581^2^0^31^32^1417^0.5810^0.3926^2^Dabyrie Militia^^
+2760^94^0^38^39^1417^0.2540^0.3024^94^Burning Exile^3857:13:13,4479:31:31,4787:29:29,6412:1:1,7068:6:6,13017:1:1,248692:1:1^
 3247^1^0^20^20^1413^0.4625^0.5705^1^Thunderhawk Hatchling^17056:1:1^
 3976^1^0^0^0^0^0.0000^0.0000^0^^^
 3977^1^0^0^0^0^0.0000^0.0000^0^^^
@@ -64,16 +65,21 @@ GoldScout-export 5^x7z85aeqo4xt^7
 @i^3798^Interlaced Shoulderpads
 @i^3807^Hardened Leather Tunic
 @i^3809^Double Mail Boots
+@i^3857^Coal
 @i^4306^Silk Cloth
 @i^4337^Thick Spider's Silk
 @i^4338^Mageweave Cloth
+@i^4479^Burning Charm
 @i^4585^Dripping Spider Mandible
 @i^4603^Raw Spotted Yellowtail
+@i^4787^Burning Pitch
 @i^4865^Ruined Pelt
 @i^5213^Scorching Wand
 @i^5524^Thick-shelled Clam
 @i^5637^Large Fang
 @i^5796^Encrusted Tail Fin
+@i^6412^Chief Brigadier Boots
+@i^7068^Elemental Fire
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
 @i^8188^Explosive Shotgun
@@ -82,6 +88,7 @@ GoldScout-export 5^x7z85aeqo4xt^7
 @i^10285^Shadow Silk
 @i^12184^Raptor Flesh
 @i^12205^White Spider Meat
+@i^13017^Hellslayer Battle Axe
 @i^13025^Deadwood Sledge
 @i^15233^Savage Axe of Strength
 @i^15577^Sparkleshell Bracers of the Defender
@@ -121,16 +128,21 @@ GoldScout-export 5^x7z85aeqo4xt^7
 @q^3798^0:4:0
 @q^3807^0:4:0
 @q^3809^0:4:0
+@q^3857^1:7:1
 @q^4306^1:7:1
 @q^4337^1:7:1
 @q^4338^1:7:1
+@q^4479^1:0:0
 @q^4585^0:15:0
 @q^4603^1:7:1
+@q^4787^0:15:0
 @q^4865^0:15:0
 @q^5213^2:2:0
 @q^5524^1:7:0
 @q^5637^1:7:1
 @q^5796^1:12:0
+@q^6412^2:4:0
+@q^7068^1:7:1
 @q^7073^0:15:0
 @q^7074^0:15:0
 @q^8188^2:2:0
@@ -139,6 +151,7 @@ GoldScout-export 5^x7z85aeqo4xt^7
 @q^10285^1:7:1
 @q^12184^1:7:1
 @q^12205^1:7:1
+@q^13017^3:2:0
 @q^13025^3:2:0
 @q^15233^2:2:0
 @q^15577^2:4:0
@@ -726,6 +739,7 @@ GoldScout-export 5^x7z85aeqo4xt^7
 @a^2563^107:1,148:2,149:8,150:2,169:1,170:2,172:1
 @a^2565^107:4,128:16,149:6
 @a^2581^151:2
+@a^2760^104:15,105:25,124:26,125:28
 @a^3247^229:1
 @a^4351^106:1
 @a^4376^86:42,106:1
