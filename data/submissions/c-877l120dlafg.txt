@@ -1,9 +1,13 @@
-GoldScout-export 5^877l120dlafg^2
-4360^10^0^37^38^1445^0.6389^0.2770^10^Mirefin Warrior^3796:1:1,4424:1:1,5847:3:3,14223:1:1,17057:5:5,17058:3:3^
-4361^5^0^36^37^1445^0.6367^0.2749^5^Mirefin Muckdweller^5785:1:1,5847:1:1,17057:3:3^
-4362^6^0^36^37^1445^0.6413^0.2815^6^Mirefin Coastrunner^5847:1:1,15243:1:1,17057:2:2,17058:1:1^
-4363^4^0^38^38^1445^0.6414^0.2696^4^Mirefin Oracle^5847:1:1,17057:1:1,17058:1:1^
-4397^3^0^37^38^1445^0.6429^0.3498^3^Mudrock Spikeshell^4555:1:1,4556:1:1^
+GoldScout-export 5^877l120dlafg^3
+4360^14^0^37^38^1445^0.6398^0.2772^14^Mirefin Warrior^3796:1:1,4424:1:1,5847:5:5,14223:1:1,17057:5:5,17058:6:6^
+4361^9^0^36^37^1445^0.6390^0.2739^9^Mirefin Muckdweller^5785:1:1,5847:2:2,6362:1:3,17057:3:3,17058:1:1^
+4362^9^0^36^37^1445^0.6409^0.2786^9^Mirefin Coastrunner^5847:2:2,15243:1:1,17057:2:2,17058:2:2^
+4363^10^0^37^38^1445^0.6414^0.2724^10^Mirefin Oracle^4424:1:1,5785:1:1,5847:3:3,17057:2:2,17058:3:3^
+4376^7^0^35^36^1445^0.3413^0.2222^7^Darkmist Spider^1074:3:3,4585:2:2,5884:7:10,12205:1:1^
+4378^11^0^36^37^1445^0.3402^0.2187^11^Darkmist Recluse^1074:2:2,3874:1:1,4585:5:5,5637:1:1,5884:11:22,10285:1:1,12205:6:6^
+4379^4^0^38^39^1445^0.3307^0.2269^4^Darkmist Silkspinner^4585:2:2,5884:4:9,10285:1:1,248694:1:1^
+4396^12^0^36^37^1445^0.6335^0.2753^12^Mudrock Tortoise^3712:1:1,4555:3:3,4556:2:2,5883:2:2,6362:1:2^
+4397^22^0^37^38^1445^0.6289^0.2853^22^Mudrock Spikeshell^3712:9:9,4555:13:13,4556:5:5,5883:6:6,6362:4:6^
 7327^2^0^0^0^0^0.0000^0.0000^0^^4306:1:3^
 7328^4^0^0^0^0^0.0000^0.0000^0^^4306:3:8,248709:1:1^
 7329^6^0^0^0^0^0.0000^0.0000^0^^1990:1:1,3810:1:1,4306:1:4,14211:1:1,14588:1:1^
@@ -23,12 +27,14 @@ GoldScout-export 5^877l120dlafg^2
 7872^2^0^33^34^1413^0.4764^0.8908^2^Death's Head Cultist^2290:1:1,3787:1:1^
 7873^5^0^33^34^1413^0.4727^0.9086^5^Razorfen Battleguard^4306:1:3^
 8567^1^0^0^0^0^0.0000^0.0000^0^^10774:1:1^
+@i^1074^Hard Spider Leg Tip
 @i^1708^Sweet Nectar
 @i^1990^Ballast Maul of Agility
 @i^2290^Scroll of Intellect II
 @i^2295^Large Boar Tusk
 @i^2592^Wool Cloth
 @i^2677^Boar Ribs
+@i^3712^Turtle Meat
 @i^3779^Hefty War Axe
 @i^3786^Shiny Dirk
 @i^3787^Stone Club
@@ -36,17 +42,25 @@ GoldScout-export 5^877l120dlafg^2
 @i^3799^Interlaced Vest
 @i^3810^Double Mail Bracers
 @i^3814^Double Mail Shoulderpads
+@i^3874^Plans: Polished Steel Boots
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4424^Scroll of Spirit III
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
+@i^4585^Dripping Spider Mandible
+@i^5637^Large Fang
 @i^5785^Thick Murloc Scale
 @i^5847^Mirefin Head
+@i^5883^Forked Mudrock Tongue
+@i^5884^Unpopped Darkmist Eye
+@i^6362^Raw Rockscale Cod
 @i^6530^Nightcrawlers
+@i^10285^Shadow Silk
 @i^10760^Swine Fists
 @i^10774^Fleshhide Shoulders
 @i^10777^Arachnid Gloves of Stamina
+@i^12205^White Spider Meat
 @i^14211^Vital Handwraps of Stamina
 @i^14223^Geomancer's Spaulders of the Elder
 @i^14418^Silksand Boots
@@ -56,13 +70,16 @@ GoldScout-export 5^877l120dlafg^2
 @i^15572^Marauder's Circlet of the Champion
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
+@i^248694^Waylaid Crate: Expert Curiosities
 @i^248709^Waylaid Crate: Expert Ingots
+@q^1074^0:15:0
 @q^1708^1:0:0
 @q^1990^2:2:0
 @q^2290^1:0:0
 @q^2295^0:15:0
 @q^2592^1:7:1
 @q^2677^1:7:1
+@q^3712^1:7:1
 @q^3779^0:2:0
 @q^3786^0:2:0
 @q^3787^0:2:0
@@ -70,17 +87,25 @@ GoldScout-export 5^877l120dlafg^2
 @q^3799^0:4:0
 @q^3810^0:4:0
 @q^3814^0:4:0
+@q^3874^2:9:0
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4424^1:0:0
 @q^4555^0:15:0
 @q^4556^0:15:0
+@q^4585^0:15:0
+@q^5637^1:7:1
 @q^5785^1:7:1
 @q^5847^1:12:0
+@q^5883^1:12:0
+@q^5884^1:12:0
+@q^6362^1:7:1
 @q^6530^1:0:0
+@q^10285^1:7:1
 @q^10760^3:4:0
 @q^10774^3:4:0
 @q^10777^3:4:0
+@q^12205^1:7:1
 @q^14211^2:4:0
 @q^14223^2:4:0
 @q^14418^2:4:0
@@ -90,6 +115,7 @@ GoldScout-export 5^877l120dlafg^2
 @q^15572^2:4:0
 @q^17057^1:15:0
 @q^17058^1:15:0
+@q^248694^1:0:1
 @q^248709^2:0:1
 @m^1413^The Barrens
 @m^1445^Dustwallow Marsh
@@ -780,11 +806,15 @@ GoldScout-export 5^877l120dlafg^2
 @c^279985^
 @c^279987^
 @c^286152^
-@a^4360^112:10
-@a^4361^112:5
-@a^4362^112:6
-@a^4363^112:4
-@a^4397^112:1,152:1,172:1
+@a^4360^112:14
+@a^4361^112:9
+@a^4362^112:9
+@a^4363^112:10
+@a^4376^86:7
+@a^4378^86:11
+@a^4379^86:4
+@a^4396^92:3,112:5,113:2,132:2
+@a^4397^92:3,112:11,113:2,132:4,152:1,172:1
 @a^7872^349:2
 @a^7873^369:5
 @l^0^enUS
