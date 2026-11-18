@@ -1277,7 +1277,7 @@ def page_fr(s):
       <a class="btn primary" href="%(curseforge)s">Le télécharger sur CurseForge</a>
       <a class="btn" href="%(releases)s">GitHub</a>
     </div>
-    <p class="small">Open source, et chaque fonction est la même pour tous. L'addon parle français.</p>
+    <p class="small">Open source. Addon intégralement traduit en français.</p>
     <div class="next"><b>Ajoutez ensuite GoldScout Companion.</b> L'application pour Windows et Mac apporte les prix de l'hôtel des ventes dans GoldScout toutes les heures, sans analyse, et partage vos données de butin pour que l'onglet Farm continue de s'améliorer.<br>
       <a class="btn" href="/fr/companion">Découvrir Companion</a></div>
   </div>
@@ -1287,7 +1287,7 @@ def page_fr(s):
 
 <section id="features"><div class="wrap">
   <h2>Tout ce qu'il faut pour farmer de l'or, pour le personnage que vous jouez</h2>
-  <p class="sub">Des prix actuels de votre propre hôtel des ventes, des taux de butin de vrais joueurs, et une chasse qui vous mène sur place et fait les comptes.</p>
+  <p class="sub">Prix en direct depuis l'hôtel des ventes, taux de butin de vrais joueurs, et un mode Chasse qui vous mène au bon endroit.</p>
   <div class="grid">%(shots)s</div>
 </div></section>
 
