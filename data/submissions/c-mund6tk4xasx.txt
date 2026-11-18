@@ -1,10 +1,15 @@
-GoldScout-export 5^mund6tk4xasx^2
+GoldScout-export 5^mund6tk4xasx^5
+3244^1^0^11^12^1413^0.5080^0.2795^1^Greater Plainstrider^4775:1:1^
+3245^6^0^16^17^1413^0.4768^0.1270^6^Ornery Plainstrider^4775:4:4,5114:2:2,5115:1:1,5469:2:2,17056:3:3^
 3255^1^0^13^15^1413^0.4501^0.3178^1^Sunscale Screecher^^
 3272^7^0^12^13^1413^0.4713^0.3974^7^Kolkar Wrangler^2287:2:2,2589:1:1^
 3273^2^0^13^14^1413^0.4628^0.3841^2^Kolkar Stormer^^
 3274^1^0^14^14^1413^0.4832^0.3876^1^Kolkar Pack Runner^^
-3415^1^0^12^12^1413^0.4940^0.2763^1^Savannah Huntress^4813:1:1^
+3284^8^0^14^15^1413^0.5242^0.1139^8^Venture Co. Drudger^2589:3:6,14724:1:1^
+3285^18^0^13^14^1413^0.5245^0.1148^18^Venture Co. Peon^818:1:1,1495:1:1,1514:1:1,2287:2:2,2589:5:10,4693:1:1^
+3415^3^0^11^12^1413^0.5090^0.2675^3^Savannah Huntress^4813:1:1,5134:1:1^
 3461^8^0^15^16^1413^0.4738^0.3970^8^Oasis Snapjaw^818:1:1,4555:3:3,5098:8:8,5523:5:5^
+3471^1^0^16^16^1413^0.5274^0.1082^1^Tinkerer Sniggles^5089:1:1^
 3632^2^0^15^16^1414^0.5203^0.5511^2^Deviate Creeper^3180:1:1,5124:1:1^
 3634^1^0^16^16^1414^0.5202^0.5527^1^Deviate Stalker^3180:1:1^
 4316^3^0^13^13^1413^0.4831^0.3877^3^Kolkar Packhound^3299:2:2,3300:1:1,15300:1:1,211787:1:1^
@@ -13,6 +18,8 @@ GoldScout-export 5^mund6tk4xasx^2
 9524^5^0^16^17^1413^0.4438^0.2839^5^Kolkar Invader^2589:2:4^
 @i^818^Tigerseye
 @i^1179^Ice Cold Milk
+@i^1495^Calico Shoes
+@i^1514^Rusty Warhammer
 @i^2287^Haunch of Meat
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
@@ -20,14 +27,25 @@ GoldScout-export 5^mund6tk4xasx^2
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
 @i^4555^Thick Scaly Tail
+@i^4693^Ceremonial Leather Belt
+@i^4775^Cracked Bill
 @i^4813^Small Leather Collar
+@i^5089^Console Key
 @i^5098^Altered Snapjaw Shell
+@i^5114^Severed Talon
+@i^5115^Broken Wishbone
 @i^5124^Small Raptor Tooth
+@i^5134^Small Furry Paw
+@i^5469^Strider Meat
 @i^5523^Small Barnacled Clam
+@i^14724^War Paint Cloak
 @i^15300^Grizzly Gloves
+@i^17056^Light Feather
 @i^211787^Scroll: LOWER PING WHOMEVER
 @q^818^2:7:1
 @q^1179^1:0:0
+@q^1495^0:4:0
+@q^1514^0:2:0
 @q^2287^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
@@ -35,11 +53,20 @@ GoldScout-export 5^mund6tk4xasx^2
 @q^3299^0:15:0
 @q^3300^0:15:0
 @q^4555^0:15:0
+@q^4693^1:4:0
+@q^4775^0:15:0
 @q^4813^0:15:0
+@q^5089^1:13:0
 @q^5098^1:12:0
+@q^5114^0:15:0
+@q^5115^0:15:0
 @q^5124^0:15:0
+@q^5134^1:12:0
+@q^5469^1:7:1
 @q^5523^1:7:0
+@q^14724^2:4:0
 @q^15300^1:4:0
+@q^17056^1:15:1
 @q^211787^1:0:0
 @m^1413^The Barrens
 @m^1414^Kalimdor
@@ -407,12 +434,17 @@ GoldScout-export 5^mund6tk4xasx^2
 @c^279982^
 @c^279990^
 @c^286152^
+@a^3244^110:1
+@a^3245^49:6
 @a^3255^129:1
 @a^3272^149:3,169:4
 @a^3273^149:2
 @a^3274^149:1
-@a^3415^109:1
+@a^3284^50:8
+@a^3285^50:18
+@a^3415^109:1,110:2
 @a^3461^149:5,169:3
+@a^3471^50:1
 @a^3632^230:2
 @a^3634^230:1
 @a^4316^149:3

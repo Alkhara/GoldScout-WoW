@@ -1,4 +1,4 @@
-GoldScout-export 5^ozhzrxzodxdo^2
+GoldScout-export 5^ozhzrxzodxdo^3
 684^1^0^37^37^1434^0.3540^0.3791^1^Shadowmaw Panther^1686:1:1^
 686^2^0^35^36^1434^0.3569^0.2126^2^Lashtail Raptor^3685:2:2,4461:1:1^
 687^3^0^40^41^1434^0.3077^0.4201^3^Jungle Stalker^4586:2:2,12184:2:2^
@@ -12,6 +12,17 @@ GoldScout-export 5^ozhzrxzodxdo^2
 1114^9^0^37^38^1434^0.4290^0.2844^9^Jungle Thunderer^2799:7:7,4096:4:4,4097:2:2,248693:1:1^
 1150^1^0^31^31^1434^0.4044^0.1232^1^River Crocolisk^770:1:1,3667:1:1,12037:1:1^
 1152^1^0^35^36^1434^0.3956^0.2156^1^Snapjaw Crocolisk^3667:1:1,12037:1:1^
+255898^2^0^38^39^2548^0.7045^0.6964^2^Murloc Oracle^^
+255899^17^0^37^38^2548^0.6947^0.7154^17^Murloc Tideskimmer^6149:1:1,268344:7:7^
+255901^13^0^36^37^2548^0.6844^0.7710^13^Sand Crawler^3010:2:2,5524:5:5,5569:4:4,6418:1:1,12206:6:6,17057:1:1,248694:1:1,268345:4:4^
+256749^11^0^38^39^2548^0.5962^0.3826^11^Rog'mar Trainee^3781:1:1,4306:2:5,4338:1:1,213544:1:1^
+256801^4^0^40^41^2548^0.6992^0.7248^4^Murloc Warrior^5524:1:1,268344:1:1^
+259054^2^0^38^39^2548^0.6007^0.5286^2^Wildplains Patriarch^1688:1:1,266888:2:2^
+259055^8^0^38^39^2548^0.5946^0.5388^8^Wildplains Huntress^1686:2:2,1688:3:3,5637:1:1,266888:4:4^
+263071^1^0^42^42^2548^0.5774^0.3860^1^Blademaster Kaijo^271425:1:1^
+263307^2^0^37^38^2548^0.6163^0.5608^2^Glade Viper^6826:2:2^
+263315^1^0^41^41^2548^0.5963^0.5353^1^Ombassa^281052:1:1^
+263348^2^0^37^38^2548^0.6351^0.5837^2^Roving Tallstrider^5116:1:1,5636:1:1^
 @i^770^Pointy Crocolisk Tooth
 @i^1686^Bristly Whisker
 @i^1687^Retractable Claw
@@ -19,23 +30,43 @@ GoldScout-export 5^ozhzrxzodxdo^2
 @i^1701^Curved Basilisk Claw
 @i^1702^Intact Basilisk Spine
 @i^2799^Gorilla Fang
+@i^3010^Fine Sand
 @i^3667^Tender Crocolisk Meat
 @i^3685^Raptor Egg
+@i^3781^Broad Claymore
 @i^3876^Fang of Bhag'thera
 @i^3877^Talon of Tethis
 @i^3880^Head of Bangalash
 @i^4093^Large Basilisk Tail
 @i^4096^Coarse Gorilla Hair
 @i^4097^Chipped Gorilla Tooth
+@i^4306^Silk Cloth
+@i^4338^Mageweave Cloth
 @i^4461^Raptor Hide
 @i^4586^Smooth Raptor Skin
 @i^5079^Cold Basilisk Eye
+@i^5116^Long Tail Feather
+@i^5524^Thick-shelled Clam
+@i^5569^Seaweed
+@i^5636^Delicate Feather
 @i^5637^Large Fang
+@i^6149^Greater Mana Potion
+@i^6418^Aurora Sash
+@i^6826^Brilliant Scale
 @i^11386^Squishy Basilisk Eye
 @i^12037^Mystery Meat
 @i^12184^Raptor Flesh
 @i^12202^Tiger Meat
+@i^12206^Tender Crab Meat
+@i^17057^Shiny Fish Scales
+@i^213544^Scroll: TOPAZ YORAK
 @i^248693^Waylaid Crate: Expert Textiles
+@i^248694^Waylaid Crate: Expert Curiosities
+@i^266888^Prized Lion Hide
+@i^268344^Saltwater Murloc Eye
+@i^268345^Sand Crawler Meat
+@i^271425^Blademaster's Banner
+@i^281052^Ombassa's Hide
 @q^770^0:15:0
 @q^1686^0:15:0
 @q^1687^0:15:0
@@ -43,24 +74,45 @@ GoldScout-export 5^ozhzrxzodxdo^2
 @q^1701^0:15:0
 @q^1702^0:15:0
 @q^2799^1:12:0
+@q^3010^0:15:0
 @q^3667^1:7:1
 @q^3685^1:7:1
+@q^3781^0:2:0
 @q^3876^1:12:0
 @q^3877^1:12:0
 @q^3880^1:12:0
 @q^4093^0:15:0
 @q^4096^1:15:0
 @q^4097^0:15:0
+@q^4306^1:7:1
+@q^4338^1:7:1
 @q^4461^1:7:1
 @q^4586^0:15:0
 @q^5079^2:4:0
+@q^5116^1:7:1
+@q^5524^1:7:0
+@q^5569^0:15:0
+@q^5636^0:15:0
 @q^5637^1:7:1
+@q^6149^1:0:0
+@q^6418^2:4:0
+@q^6826^0:15:0
 @q^11386^0:15:0
 @q^12037^1:7:1
 @q^12184^1:7:1
 @q^12202^1:7:1
+@q^12206^1:7:1
+@q^17057^1:15:0
+@q^213544^1:0:0
 @q^248693^1:0:1
+@q^248694^1:0:1
+@q^266888^1:12:0
+@q^268344^1:12:0
+@q^268345^1:12:0
+@q^271425^1:12:0
+@q^281052^1:12:0
 @m^1434^Stranglethorn Vale
+@m^2548^Riverglades
 @c^2300^
 @c^2302^
 @c^2303^
@@ -666,4 +718,15 @@ GoldScout-export 5^ozhzrxzodxdo^2
 @a^1114^108:6,109:1,128:2
 @a^1150^48:1
 @a^1152^87:1
+@a^255898^274:2
+@a^255899^274:8,293:5,294:1,313:3
+@a^255901^274:1,293:4,294:1,313:2,333:3,353:2
+@a^256749^151:8,152:2,171:1
+@a^256801^274:1,294:2,313:1
+@a^259054^211:1,212:1
+@a^259055^211:4,212:2,231:1,232:1
+@a^263071^151:1
+@a^263307^212:1,231:1
+@a^263315^211:1
+@a^263348^231:1,233:1
 @l^0^enUS

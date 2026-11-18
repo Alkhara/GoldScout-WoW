@@ -1,6 +1,6 @@
-GoldScout-export 5^ph5oogkzkurd^3
-3238^2^0^22^23^1413^0.4719^0.8133^2^Stormhide^5128:1:1,5133:1:1,248688:1:1^
-3249^2^0^23^23^1413^0.4717^0.7801^2^Greater Thunderhawk^17056:1:1^
+GoldScout-export 5^ph5oogkzkurd^4
+3238^24^0^22^23^1413^0.4742^0.7979^24^Stormhide^5128:1:1,5133:5:5,5470:7:7,248688:1:1^
+3249^16^0^23^24^1413^0.4730^0.7842^16^Greater Thunderhawk^6444:2:2,6826:3:3,17056:7:7^
 3374^18^0^21^22^1413^0.4753^0.8476^18^Bael'dun Excavator^929:1:1,1772:1:1,2592:8:13,2782:1:1,4542:1:1^
 3375^5^0^22^23^1413^0.4760^0.8514^5^Bael'dun Foreman^4542:1:1^
 3392^1^0^24^24^1413^0.4823^0.8592^1^Prospector Khazgorm^929:1:1,2592:1:2,5006:1:1^
@@ -18,7 +18,7 @@ GoldScout-export 5^ph5oogkzkurd^3
 4041^2^0^27^28^1442^0.3400^0.7206^2^Scorched Basilisk^1701:2:2,3857:1:1,5637:1:1,11385:1:1^
 4042^1^0^26^26^1442^0.3321^0.6897^1^Singed Basilisk^3857:1:1,11385:1:1^
 4044^1^0^23^24^1442^0.3508^0.5408^1^Blackened Basilisk^11384:1:1^
-4128^17^0^22^23^1413^0.4711^0.7966^17^Hecklefang Stalker^3301:2:2,3402:1:1,5635:1:1,211784:1:1^
+4128^55^0^22^23^1413^0.4735^0.7904^55^Hecklefang Stalker^3301:9:9,3402:9:9,5635:4:4,11967:1:1,15496:1:1,211784:2:2^
 11910^2^0^14^15^1442^0.7950^0.9294^2^Grimtotem Ruffian^2287:1:1^
 @i^929^Healing Potion
 @i^1081^Crisp Spider Meat
@@ -44,12 +44,17 @@ GoldScout-export 5^ph5oogkzkurd^3
 @i^5128^Shed Lizard Skin
 @i^5133^Seeping Gizzard
 @i^5136^Torn Furry Ear
+@i^5470^Thunder Lizard Tail
 @i^5635^Sharp Claw
 @i^5636^Delicate Feather
 @i^5637^Large Fang
+@i^6444^Forked Tongue
+@i^6826^Brilliant Scale
 @i^11384^Broken Basilisk Teeth
 @i^11385^Basilisk Scale
+@i^11967^Zircon Band of the Gorilla
 @i^15329^Wrangler's Belt of the Monkey
+@i^15496^Bloodspattered Shoulder Pads
 @i^15513^Grunt's Pauldrons of Defense
 @i^16312^Incendrites
 @i^17056^Light Feather
@@ -80,12 +85,17 @@ GoldScout-export 5^ph5oogkzkurd^3
 @q^5128^0:15:0
 @q^5133^0:15:0
 @q^5136^0:15:0
+@q^5470^1:7:1
 @q^5635^1:7:1
 @q^5636^0:15:0
 @q^5637^1:7:1
+@q^6444^0:15:0
+@q^6826^0:15:0
 @q^11384^0:15:0
 @q^11385^0:15:0
+@q^11967^2:4:0
 @q^15329^2:4:0
+@q^15496^1:4:0
 @q^15513^2:4:0
 @q^16312^1:12:0
 @q^17056^1:15:1
@@ -879,8 +889,8 @@ GoldScout-export 5^ph5oogkzkurd^3
 @c^279981^
 @c^279982^
 @c^286152^
-@a^3238^329:2
-@a^3249^289:1,329:1
+@a^3238^289:1,309:9,329:14
+@a^3249^289:2,309:11,329:3
 @a^3374^329:11,349:7
 @a^3375^329:1,349:4
 @a^3392^349:1
@@ -898,6 +908,6 @@ GoldScout-export 5^ph5oogkzkurd^3
 @a^4041^286:2
 @a^4042^266:1
 @a^4044^207:1
-@a^4128^289:3,309:1,329:13
+@a^4128^289:8,309:19,329:28
 @a^11910^375:1,396:1
 @l^0^enUS
