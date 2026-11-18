@@ -1,18 +1,20 @@
-GoldScout-export 5^czgu1yzi5zdt^3
+GoldScout-export 5^czgu1yzi5zdt^4
 3240^2^0^18^19^1413^0.4890^0.5321^2^Stormsnout^4895:1:1,5470:1:1^
 3258^3^0^17^17^1413^0.5147^0.5486^3^Bristleback Hunter^2589:2:3,5075:2:2,5085:3:4,15498:1:1^
 3260^1^0^17^17^1413^0.5160^0.5460^1^Bristleback Water Seeker^5085:1:1^
 3261^4^0^18^19^1413^0.5139^0.5516^4^Bristleback Thornweaver^2592:2:2,5075:2:3,5085:3:5^
 3461^8^0^15^16^1413^0.5561^0.4263^8^Oasis Snapjaw^4555:5:5,5098:8:8,5523:5:5^
 3474^1^0^22^22^1413^0.4790^0.5155^1^Lakota'mani^5099:1:1,5122:1:1^
-3630^1^0^16^16^1414^0.5188^0.5472^1^Deviate Coiler^^
-3631^1^0^16^17^1414^0.5239^0.5519^1^Deviate Stinglash^^
-3632^5^0^15^16^1414^0.5194^0.5523^5^Deviate Creeper^1210:1:1,3180:2:2,5124:2:2,6443:3:3^
-3634^3^0^15^16^1414^0.5194^0.5514^3^Deviate Stalker^5124:2:2,6470:1:1^
+3630^3^0^15^16^1414^0.5196^0.5493^3^Deviate Coiler^2073:1:1,6443:1:1,6445:1:1^
+3631^2^0^16^17^1414^0.5242^0.5516^2^Deviate Stinglash^6443:1:1,14364:1:1^
+3632^9^0^15^16^1414^0.5196^0.5509^9^Deviate Creeper^1210:1:1,2632:1:1,3180:4:4,5124:4:4,6443:3:3,6470:1:1^
+3633^2^0^16^17^1414^0.5253^0.5494^2^Deviate Slayer^5124:2:2,6443:1:1^
+3634^4^0^15^17^1414^0.5199^0.5513^4^Deviate Stalker^3180:1:1,5124:2:2,6470:1:1^
 3636^1^0^0^0^0^0.0000^0.0000^0^^5124:1:1^
 3637^5^0^0^0^0^0.0000^0.0000^0^^3180:1:1,5124:2:2,6443:1:1^
-3638^1^0^16^17^1414^0.5191^0.5502^1^Devouring Ectoplasm^1817:1:1,3669:1:1,6464:1:1,14123:1:1^
+3638^4^0^16^17^1414^0.5216^0.5492^4^Devouring Ectoplasm^1793:1:1,1817:1:1,3669:3:3,3670:2:2,3674:1:1,6464:1:1,14123:1:1^
 3640^8^0^0^0^0^0.0000^0.0000^0^^3669:3:3,3674:1:1,3676:1:1,6464:5:5^
+3641^7^0^16^17^1414^0.5240^0.5476^7^Deviate Lurker^2608:5:5,5516:2:2,5523:3:3,6361:1:2,6443:4:4,6470:2:2^
 3654^1^0^0^0^0^0.0000^0.0000^0^^6627:1:1,10441:1:1^
 3655^1^0^18^18^1414^0.5205^0.5536^1^Mad Magglish^^
 3669^1^0^0^0^0^0.0000^0.0000^0^^9738:1:1^
@@ -47,13 +49,17 @@ GoldScout-export 5^czgu1yzi5zdt^3
 @i^1787^Patched Leather Belt
 @i^1789^Patched Leather Bracers
 @i^1790^Patched Cloak
+@i^1793^Patched Leather Shoulderpads
 @i^1812^Short-handled Battle Axe
 @i^1816^Unbalanced Axe
 @i^1817^Stock Shortsword
+@i^2073^Dwarven Hatchet of Healing
 @i^2078^Northern Shortsword of Fire Protection
 @i^2287^Haunch of Meat
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2608^Threshadon Ambergris
+@i^2632^Curved Dagger of Stamina
 @i^3174^Spider Ichor
 @i^3180^Flecked Raptor Scale
 @i^3181^Partially Digested Meat
@@ -61,6 +67,7 @@ GoldScout-export 5^czgu1yzi5zdt^3
 @i^3377^Canvas Bracers
 @i^3401^Rough Crocolisk Scale
 @i^3669^Gelatinous Goo
+@i^3670^Large Slimy Bone
 @i^3674^Decomposed Boot
 @i^3676^Slimy Ichor
 @i^3931^Poisoned Spider Fang
@@ -76,8 +83,10 @@ GoldScout-export 5^czgu1yzi5zdt^3
 @i^5124^Small Raptor Tooth
 @i^5128^Shed Lizard Skin
 @i^5470^Thunder Lizard Tail
+@i^5516^Threshadon Fang
 @i^5523^Small Barnacled Clam
 @i^5734^Super Reaper 6000 Blueprints
+@i^6361^Raw Rainbow Fin Albacore
 @i^6443^Deviate Hide
 @i^6444^Forked Tongue
 @i^6445^Brittle Molting
@@ -107,13 +116,17 @@ GoldScout-export 5^czgu1yzi5zdt^3
 @q^1787^0:4:0
 @q^1789^0:4:0
 @q^1790^0:4:0
+@q^1793^0:4:0
 @q^1812^0:2:0
 @q^1816^0:2:0
 @q^1817^0:2:0
+@q^2073^2:2:0
 @q^2078^2:2:0
 @q^2287^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2608^0:15:0
+@q^2632^2:2:0
 @q^3174^1:7:1
 @q^3180^0:15:0
 @q^3181^0:15:0
@@ -121,6 +134,7 @@ GoldScout-export 5^czgu1yzi5zdt^3
 @q^3377^0:4:0
 @q^3401^0:15:0
 @q^3669^0:15:0
+@q^3670^0:15:0
 @q^3674^0:15:0
 @q^3676^0:15:0
 @q^3931^0:15:0
@@ -136,8 +150,10 @@ GoldScout-export 5^czgu1yzi5zdt^3
 @q^5124^0:15:0
 @q^5128^0:15:0
 @q^5470^1:7:1
+@q^5516^0:2:0
 @q^5523^1:7:0
 @q^5734^1:12:0
+@q^6361^1:7:1
 @q^6443^1:12:0
 @q^6444^0:15:0
 @q^6445^0:15:0
@@ -761,11 +777,13 @@ GoldScout-export 5^czgu1yzi5zdt^3
 @a^3261^210:1,230:3
 @a^3461^171:8
 @a^3474^209:1
-@a^3630^210:1
-@a^3631^230:1
-@a^3632^230:5
-@a^3634^230:3
-@a^3638^230:1
+@a^3630^210:1,230:2
+@a^3631^230:2
+@a^3632^210:2,230:7
+@a^3633^210:2
+@a^3634^230:4
+@a^3638^210:2,230:2
+@a^3641^210:7
 @a^3655^230:1
 @a^3988^212:1
 @a^3989^213:4,214:1,233:5,234:5

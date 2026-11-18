@@ -1,4 +1,4 @@
-GoldScout-export 5^741nqh6m07lz^6
+GoldScout-export 5^741nqh6m07lz^7
 667^1^0^40^40^1434^0.4659^0.2940^1^Skullsplitter Warrior^1520:1:1,3916:1:1^
 674^14^0^40^41^1434^0.4151^0.4259^14^Venture Co. Strip Miner^1630:6:6,2725:1:1,3771:1:1,3917:6:6,4306:7:12,4338:1:1,11203:1:1^
 676^4^0^41^42^1434^0.4151^0.4226^4^Venture Co. Surveyor^3917:3:3,4306:1:1,4338:1:2^
@@ -12,6 +12,14 @@ GoldScout-export 5^741nqh6m07lz^6
 728^1^0^40^40^1434^0.4730^0.2875^1^Bhag'thera^3876:1:1^
 772^4^0^37^38^1434^0.4671^0.2743^4^Stranglethorn Tigress^12202:3:3^
 1151^1^0^35^36^1434^0.2689^0.2027^1^Saltwater Crocolisk^770:1:1,12037:1:1^
+1492^1^0^47^47^1434^0.3683^0.6928^1^Gorlash^^
+1511^2^0^41^42^1434^0.3474^0.6158^2^Enraged Silverback Gorilla^2799:1:1^
+1514^1^0^44^44^1434^0.3474^0.6157^1^Mokk the Savage^2797:1:1^
+1557^8^0^40^41^1434^0.3344^0.6401^8^Elder Mistvale Gorilla^2799:2:2,3919:4:4,4096:1:1,4097:1:1^
+1558^1^0^43^43^1434^0.3676^0.6182^1^Silverback Patriarch^4096:1:1^
+1561^6^0^40^41^1434^0.2793^0.7020^6^Bloodsail Raider^^
+1562^6^0^40^41^1434^0.2810^0.7024^6^Bloodsail Mage^2728:1:1,4306:2:3^
+1907^3^0^43^44^1434^0.2740^0.6348^3^Naga Explorer^7973:1:1,17058:2:2^
 2559^4^0^30^31^1417^0.6858^0.3305^4^Highland Strider^4461:1:1^
 2572^1^0^36^36^1417^0.7741^0.4398^1^Drywhisker Kobold^4306:1:2,4539:1:1^
 2578^2^0^31^32^1417^0.6918^0.3419^2^Young Mesa Buzzard^1464:1:1,5636:1:1^
@@ -21,17 +29,24 @@ GoldScout-export 5^741nqh6m07lz^6
 4458^1^0^35^35^1434^0.3670^0.2326^1^Murkgill Hunter^6362:1:1,17058:1:1^
 4459^1^0^36^36^1434^0.3550^0.2301^1^Murkgill Oracle^^
 4461^1^0^36^36^1434^0.3365^0.2163^1^Murkgill Warrior^^
+14491^1^0^42^42^1434^0.3278^0.6619^1^Kurmokk^281746:1:1^
 @i^770^Pointy Crocolisk Tooth
 @i^1464^Buzzard Talon
 @i^1520^Troll Sweat
 @i^1630^Broken Electro-lantern
 @i^1688^Long Soft Tail
 @i^2725^Green Hills of Stranglethorn - Page 1
+@i^2728^Green Hills of Stranglethorn - Page 4
+@i^2797^Heart of Mokk
+@i^2799^Gorilla Fang
 @i^3771^Wild Hog Shank
 @i^3820^Stranglekelp
 @i^3876^Fang of Bhag'thera
 @i^3916^Split Bone Necklace
 @i^3917^Singing Blue Crystal
+@i^3919^Mistvale Giblets
+@i^4096^Coarse Gorilla Hair
+@i^4097^Chipped Gorilla Tooth
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4461^Raptor Hide
@@ -41,6 +56,7 @@ GoldScout-export 5^741nqh6m07lz^6
 @i^5636^Delicate Feather
 @i^6362^Raw Rockscale Cod
 @i^7070^Elemental Water
+@i^7973^Big-mouth Clam
 @i^11203^Formula: Enchant Gloves - Advanced Mining
 @i^12037^Mystery Meat
 @i^12202^Tiger Meat
@@ -48,17 +64,24 @@ GoldScout-export 5^741nqh6m07lz^6
 @i^21150^Iron Bound Trunk
 @i^213547^Scroll: THAW WORDS
 @i^262889^Sealed Expert's Writ
+@i^281746^Kurmokk's Pelt
 @q^770^0:15:0
 @q^1464^0:15:0
 @q^1520^0:15:0
 @q^1630^0:15:0
 @q^1688^0:15:0
 @q^2725^1:12:0
+@q^2728^1:12:0
+@q^2797^1:12:0
+@q^2799^1:12:0
 @q^3771^1:0:0
 @q^3820^1:7:1
 @q^3876^1:12:0
 @q^3916^1:12:0
 @q^3917^1:12:0
+@q^3919^1:12:0
+@q^4096^1:15:0
+@q^4097^0:15:0
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4461^1:7:1
@@ -68,6 +91,7 @@ GoldScout-export 5^741nqh6m07lz^6
 @q^5636^0:15:0
 @q^6362^1:7:1
 @q^7070^1:7:1
+@q^7973^1:7:0
 @q^11203^2:9:0
 @q^12037^1:7:1
 @q^12202^1:7:1
@@ -75,6 +99,7 @@ GoldScout-export 5^741nqh6m07lz^6
 @q^21150^1:15:0
 @q^213547^1:0:0
 @q^262889^3:0:0
+@q^281746^2:4:0
 @m^1417^Arathi Highlands
 @m^1434^Stranglethorn Vale
 @c^724^
@@ -222,6 +247,14 @@ GoldScout-export 5^741nqh6m07lz^6
 @a^728^109:1
 @a^772^89:2,109:1,148:1
 @a^1151^85:1
+@a^1492^267:1
+@a^1511^246:2
+@a^1514^246:1
+@a^1557^246:5,266:3
+@a^1558^247:1
+@a^1561^265:1,285:5
+@a^1562^265:2,285:4
+@a^1907^245:3
 @a^2559^113:2,153:2
 @a^2572^175:1
 @a^2578^133:1,153:1
@@ -231,5 +264,6 @@ GoldScout-export 5^741nqh6m07lz^6
 @a^4458^87:1
 @a^4459^87:1
 @a^4461^86:1
+@a^14491^266:1
 @f^1434^0^3^174^3820:1:3,6362:1:1,21150:1:1^85:1,105:2
 @l^0^enUS
