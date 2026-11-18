@@ -1,4 +1,4 @@
-GoldScout-export 5^j03rbk855jpr^4
+GoldScout-export 5^j03rbk855jpr^5
 432^2^0^23^24^1433^0.7345^0.3932^2^Brute Sombrepoil^^
 436^2^0^22^23^1433^0.6271^0.5876^2^Exhalombre rochenoire^^
 525^1^0^5^6^1429^0.5233^0.7229^1^Loup galeux^^
@@ -11,6 +11,8 @@ GoldScout-export 5^j03rbk855jpr^4
 644^1^0^0^0^0^0.0000^0.0000^0^^872:1:1^
 703^1^0^26^26^1433^0.7520^0.3792^1^Lieutenant Fangore^2592:1:2,3632:1:1^
 824^6^0^15^16^1415^0.4107^0.7930^6^Terrassier défias^954:1:1,2589:2:4^
+1034^10^0^26^27^1437^0.4514^0.4566^10^Ecumeur Dragonmaw^929:1:1,1712:1:1,1756:1:1,2592:2:4,4306:3:4^
+1038^1^0^29^29^1437^0.5346^0.5326^1^Veilleur des ombres Dragonmaw^^
 1184^3^0^13^14^1432^0.5542^0.6677^3^Rôdeuse des falaises^1081:1:1,3167:2:2,3174:1:1,5465:2:4,6336:1:1^
 1188^1^0^13^14^1432^0.4014^0.6690^1^Vieil ours noir^3170:1:1,3173:1:1^
 1189^2^0^17^17^1432^0.4838^0.4461^2^Patriarche ours noir^3169:1:1,3173:1:1^
@@ -38,11 +40,14 @@ GoldScout-export 5^j03rbk855jpr^4
 @i^818^Oeil de tigre
 @i^858^Potion de soins inférieure
 @i^872^Fend-le-roc
+@i^929^Potion de soins
 @i^954^Parchemin de force
 @i^1015^Steak de loup
 @i^1081^Chair croustillante d'araignée
 @i^1179^Lait glacé
+@i^1712^Parchemin d'Esprit II
 @i^1744^Protège-épaules en mailles entrelacées
+@i^1756^Brassards en anneaux renforcés
 @i^1769^Protège-épaules en canevas
 @i^1789^Brassards raccommodés en cuir
 @i^1791^Gants raccommodés en cuir
@@ -66,6 +71,7 @@ GoldScout-export 5^j03rbk855jpr^4
 @i^3385^Potion de mana inférieure
 @i^3402^Touffe de fourrure douce
 @i^3632^Patte de Fangore
+@i^4306^Etoffe de soie
 @i^5212^Baguette flamboyante
 @i^5465^Petite patte d'araignée
 @i^5635^Griffe aiguisée
@@ -86,11 +92,14 @@ GoldScout-export 5^j03rbk855jpr^4
 @q^818^2:7:1
 @q^858^1:0:0
 @q^872^3:2:0
+@q^929^1:0:0
 @q^954^1:0:0
 @q^1015^1:7:1
 @q^1081^1:7:1
 @q^1179^1:0:0
+@q^1712^1:0:0
 @q^1744^0:4:0
+@q^1756^0:4:0
 @q^1769^0:4:0
 @q^1789^0:4:0
 @q^1791^0:4:0
@@ -114,6 +123,7 @@ GoldScout-export 5^j03rbk855jpr^4
 @q^3385^1:0:0
 @q^3402^0:15:0
 @q^3632^1:12:0
+@q^4306^1:7:1
 @q^5212^2:2:0
 @q^5465^1:7:1
 @q^5635^1:7:1
@@ -1944,6 +1954,8 @@ GoldScout-export 5^j03rbk855jpr^4
 @a^619^308:1
 @a^703^155:1
 @a^824^308:6
+@a^1034^168:4,188:2,189:4
+@a^1038^210:1
 @a^1184^270:1,271:2
 @a^1188^268:1
 @a^1189^111:1,247:1
