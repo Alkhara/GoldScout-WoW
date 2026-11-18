@@ -1,4 +1,4 @@
-GoldScout-export 5^ap1w90jr85h6^4
+GoldScout-export 5^ap1w90jr85h6^5
 1939^7^0^16^17^1421^0.6563^0.2709^7^Schläger der Moderfelle^1811:1:1,2592:3:5^
 1940^3^0^18^18^1421^0.6552^0.2732^3^Seuchenwirker der Moderfelle^1768:1:1,2592:1:2,3012:1:1^
 1942^18^0^18^19^1421^0.6568^0.2434^18^Wilder der Moderfelle^1794:1:1,1817:1:1,2455:2:2,2589:2:3,2592:4:6,3377:1:1,4605:1:1,267412:1:1^
@@ -98,6 +98,9 @@ GoldScout-export 5^ap1w90jr85h6^4
 @i^5635^Scharfe Klaue
 @i^6289^Roher Langzahniger Matschschnapper
 @i^6291^Roher glänzender Kleinfisch
+@i^6297^Alter Schädel
+@i^6299^Krank aussehender Fisch
+@i^6301^Old Teamsters Schädel
 @i^6308^Roher Stoppelfühlerwels
 @i^6443^Deviatbalg
 @i^6444^Gespaltene Zunge
@@ -160,6 +163,9 @@ GoldScout-export 5^ap1w90jr85h6^4
 @q^5635^1:7:1
 @q^6289^1:7:1
 @q^6291^1:7:1
+@q^6297^0:15:0
+@q^6299^1:0:0
+@q^6301^0:15:0
 @q^6308^1:7:1
 @q^6443^1:12:0
 @q^6444^0:15:0
@@ -181,6 +187,7 @@ GoldScout-export 5^ap1w90jr85h6^4
 @q^271350^1:12:0
 @m^1413^Das Brachland
 @m^1414^Kalimdor
+@m^1420^Tirisfal
 @m^1421^Silberwald
 @m^1424^Vorgebirge von Hillsbrad
 @c^118^
@@ -892,5 +899,6 @@ GoldScout-export 5^ap1w90jr85h6^4
 @a^3641^210:1
 @a^3655^210:1
 @f^1413^0^50^16^3820:1:2,6289:17:17,6291:4:4,6308:8:8,6522:20:20^88:11,89:39
+@f^1420^0^43^68^6289:14:14,6291:21:21,6297:3:3,6299:4:4,6301:1:1^193:4,213:39
 @f^1421^0^3^65^6308:1:1,21071:2:2^153:3
 @l^0^deDE

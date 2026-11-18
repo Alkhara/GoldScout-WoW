@@ -1,5 +1,5 @@
-GoldScout-export 5^4pwziwqfnnzh^4
-92^1^0^40^40^1418^0.1678^0.3876^1^Rock Elemental^4784:1:1,7067:1:1^
+GoldScout-export 5^4pwziwqfnnzh^5
+92^4^0^39^40^1418^0.3289^0.6611^4^Rock Elemental^4552:2:2,4553:1:1,4627:3:3,4784:2:2,7067:1:1^
 2271^1^0^32^32^1416^0.2154^0.5396^1^Dalaran Shield Guard^4306:1:2^
 2358^2^0^33^33^1416^0.2243^0.5567^2^Dalaran Summoner^3745:1:1,4306:1:2^
 2359^13^0^32^33^1416^0.2402^0.5570^13^Elemental Slave^2838:4:6,3715:4:4,4553:1:1,4784:3:3,7067:1:1,8150:2:2,262888:1:1^
@@ -15,11 +15,20 @@ GoldScout-export 5^4pwziwqfnnzh^4
 2592^4^0^38^39^1417^0.3506^0.5694^4^Rumbling Exile^4552:1:1,4784:2:2,7067:1:1,7912:2:3^
 2595^10^0^38^39^1417^0.2148^0.8587^10^Daggerspine Raider^3809:1:1,4041:1:1,6362:1:1,7072:10:10,17057:2:2,17058:4:4^
 2596^4^0^40^40^1417^0.2160^0.8605^4^Daggerspine Sorceress^1708:1:1,3802:1:1,4738:1:1,7072:1:1,17058:2:2^
+2701^11^0^38^39^1418^0.2887^0.5880^11^Dustbelcher Ogre^3771:1:1,4306:2:3,4338:1:1,6416:1:1,211269:1:1,278515:1:1^
+2715^4^0^39^40^1418^0.3032^0.5967^4^Dustbelcher Brute^211269:1:1^
+2728^5^0^37^38^1418^0.4625^0.7336^5^Feral Crag Coyote^4582:3:3,6166:5:5,7846:3:4,12203:2:2^
+2729^25^0^39^40^1418^0.3449^0.6520^25^Elder Crag Coyote^4582:7:7,4583:5:5,5637:3:3,6166:25:25,7846:4:6,8146:2:2,12203:13:13^
 2735^53^0^37^39^1418^0.1983^0.4376^53^Lesser Rock Elemental^4552:6:6,4553:16:16,4626:10:10,4784:27:27,6417:1:1,7067:6:6,7848:5:5,7912:9:13,8150:17:17,213545:1:1^
 2760^4^0^38^39^1417^0.2624^0.3101^4^Burning Exile^3857:1:1,4479:1:1,4787:4:4,7068:1:1^
 2761^3^0^38^39^1417^0.6701^0.3189^3^Cresting Exile^4791:2:5^
 2762^5^0^38^39^1417^0.5148^0.4967^5^Thundering Exile^4480:2:2,7069:1:1^
 2776^2^0^40^40^1417^0.3569^0.7954^2^Vengeful Surge^^
+2830^1^0^38^38^1418^0.5054^0.7702^1^Buzzard^11416:1:1^
+2831^5^0^39^41^1418^0.1826^0.5894^5^Giant Buzzard^1464:3:3,3404:3:3,5116:2:2,7847:3:3,11416:1:1,12037:2:2^
+2893^16^0^39^40^1418^0.4977^0.7189^16^Stonevault Bonesnapper^4306:7:16,5797:8:8,8748:1:1,248694:1:1^
+2894^5^0^40^41^1418^0.4879^0.7041^5^Stonevault Shaman^4306:1:3,4338:1:1,5797:2:2^
+3560^3^0^40^41^1418^0.4880^0.7138^3^Healing Ward^^
 4342^3^0^37^37^1445^0.4828^0.2174^3^Drywallow Vicejaw^770:3:4,3667:1:1^
 4343^1^0^37^37^1445^0.3720^0.3532^1^Drywallow Snapper^3667:1:1^
 4351^1^0^35^36^1445^0.3816^0.2355^1^Bloodfen Raptor^^
@@ -42,6 +51,7 @@ GoldScout-export 5^4pwziwqfnnzh^4
 @i^770^Pointy Crocolisk Tooth
 @i^1074^Hard Spider Leg Tip
 @i^1081^Crisp Spider Meat
+@i^1464^Buzzard Talon
 @i^1696^Curved Raptor Talon
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
@@ -55,6 +65,7 @@ GoldScout-export 5^4pwziwqfnnzh^4
 @i^3685^Raptor Egg
 @i^3715^Bracers of Earth Binding
 @i^3745^Rune of Opening
+@i^3771^Wild Hog Shank
 @i^3796^Interlaced Gloves
 @i^3802^Hardened Leather Bracers
 @i^3809^Double Mail Boots
@@ -71,33 +82,45 @@ GoldScout-export 5^4pwziwqfnnzh^4
 @i^4513^Raptor Heart
 @i^4552^Smooth Stone Chip
 @i^4553^Jagged Piece of Stone
+@i^4582^Soft Bushy Tail
+@i^4583^Thick Furry Mane
 @i^4585^Dripping Spider Mandible
 @i^4586^Smooth Raptor Skin
 @i^4587^Tribal Raptor Feathers
 @i^4626^Small Stone Shard
+@i^4627^Large Stone Slab
 @i^4738^Imperial Leather Belt
 @i^4784^Lifeless Stone
 @i^4787^Burning Pitch
 @i^4791^Enchanted Water
+@i^5116^Long Tail Feather
 @i^5637^Large Fang
 @i^5785^Thick Murloc Scale
+@i^5797^Indurium Flake
 @i^5847^Mirefin Head
 @i^5884^Unpopped Darkmist Eye
 @i^5959^Acidic Venom Sac
+@i^6166^Coyote Jawbone
 @i^6362^Raw Rockscale Cod
+@i^6416^Aurora Boots
 @i^6417^Aurora Cloak
 @i^7067^Elemental Earth
 @i^7068^Elemental Fire
 @i^7069^Elemental Air
 @i^7072^Naga Scale
+@i^7846^Crag Coyote Fang
+@i^7847^Buzzard Gizzard
 @i^7848^Rock Elemental Shard
 @i^7912^Solid Stone
+@i^8146^Wicked Claw
 @i^8150^Deeprock Salt
+@i^8748^Double Mail Coif
 @i^10285^Shadow Silk
 @i^11416^Delicate Ribcage
 @i^12010^Fen Ring of Intellect
 @i^12037^Mystery Meat
 @i^12184^Raptor Flesh
+@i^12203^Red Wolf Meat
 @i^12205^White Spider Meat
 @i^14217^Geomancer's Cord of the Eagle
 @i^14589^Hawkeye's Shoes
@@ -105,15 +128,19 @@ GoldScout-export 5^4pwziwqfnnzh^4
 @i^15233^Savage Axe of the Bandit
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
+@i^211269^Primitive Drawing
 @i^213422^Illegible Recipe
 @i^213545^Scroll: PEATCHY ATTAX
 @i^213547^Scroll: THAW WORDS
+@i^248694^Waylaid Crate: Expert Curiosities
 @i^248710^Waylaid Crate: Expert Parts
 @i^262888^Sealed Journeyman's Writ
 @i^278225^Surgical Spidersilk
+@i^278515^Mus'hale's Stolen Supplies
 @q^770^0:15:0
 @q^1074^0:15:0
 @q^1081^1:7:1
+@q^1464^0:15:0
 @q^1696^0:15:0
 @q^1708^1:0:0
 @q^1710^1:0:0
@@ -127,6 +154,7 @@ GoldScout-export 5^4pwziwqfnnzh^4
 @q^3685^1:7:1
 @q^3715^1:12:0
 @q^3745^1:12:0
+@q^3771^1:0:0
 @q^3796^0:4:0
 @q^3802^0:4:0
 @q^3809^0:4:0
@@ -143,33 +171,45 @@ GoldScout-export 5^4pwziwqfnnzh^4
 @q^4513^1:12:0
 @q^4552^0:15:0
 @q^4553^0:15:0
+@q^4582^1:12:0
+@q^4583^0:15:0
 @q^4585^0:15:0
 @q^4586^0:15:0
 @q^4587^0:15:0
 @q^4626^1:12:0
+@q^4627^1:12:0
 @q^4738^2:4:0
 @q^4784^0:15:0
 @q^4787^0:15:0
 @q^4791^1:0:0
+@q^5116^1:7:1
 @q^5637^1:7:1
 @q^5785^1:7:1
+@q^5797^1:12:0
 @q^5847^1:12:0
 @q^5884^1:12:0
 @q^5959^1:12:0
+@q^6166^1:12:0
 @q^6362^1:7:1
+@q^6416^2:4:0
 @q^6417^2:4:0
 @q^7067^1:7:1
 @q^7068^1:7:1
 @q^7069^1:7:1
 @q^7072^1:7:1
+@q^7846^1:12:0
+@q^7847^1:12:0
 @q^7848^1:12:0
 @q^7912^1:7:1
+@q^8146^1:7:1
 @q^8150^1:7:1
+@q^8748^0:4:0
 @q^10285^1:7:1
 @q^11416^0:15:0
 @q^12010^2:4:0
 @q^12037^1:7:1
 @q^12184^1:7:1
+@q^12203^1:7:1
 @q^12205^1:7:1
 @q^14217^2:4:0
 @q^14589^2:4:0
@@ -177,12 +217,15 @@ GoldScout-export 5^4pwziwqfnnzh^4
 @q^15233^2:2:0
 @q^17057^1:15:0
 @q^17058^1:15:0
+@q^211269^1:12:0
 @q^213422^1:12:0
 @q^213545^1:0:0
 @q^213547^1:0:0
+@q^248694^1:0:1
 @q^248710^2:0:1
 @q^262888^3:0:0
 @q^278225^1:12:0
+@q^278515^1:12:0
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
 @m^1418^Badlands
@@ -949,7 +992,7 @@ GoldScout-export 5^4pwziwqfnnzh^4
 @c^279981^
 @c^279982^
 @c^286152^
-@a^92^143:1
+@a^92^143:1,287:2,307:1
 @a^2271^204:1
 @a^2358^204:1,224:1
 @a^2359^204:6,205:1,224:2,225:2,245:2
@@ -965,11 +1008,20 @@ GoldScout-export 5^4pwziwqfnnzh^4
 @a^2592^226:2,227:2
 @a^2595^324:4,343:2,344:4
 @a^2596^324:3,363:1
+@a^2701^225:10,245:1
+@a^2715^225:2,246:2
+@a^2728^288:2,289:2,310:1
+@a^2729^204:2,225:2,227:2,245:1,246:1,247:3,267:4,285:1,286:4,287:2,288:3
 @a^2735^143:2,163:20,164:19,183:1,184:11
 @a^2760^125:4
 @a^2761^133:3
 @a^2762^190:3,210:2
 @a^2776^307:2
+@a^2830^310:1
+@a^2831^223:4,245:1
+@a^2893^289:8,290:8
+@a^2894^269:3,289:2
+@a^3560^269:1,289:1,290:1
 @a^4342^89:3
 @a^4343^147:1
 @a^4351^87:1

@@ -1,9 +1,9 @@
-GoldScout-export 5^gmgkhw2mg17m^1
-681^1^0^30^30^1434^0.3542^0.1605^1^Young Stranglethorn Tiger^12202:1:1^
-697^1^0^33^33^1434^0.3362^0.1380^1^Bloodscalp Shaman^4306:1:1,9845:1:1^
-702^1^0^33^33^1434^0.3314^0.1353^1^Bloodscalp Scavenger^^
+GoldScout-export 5^gmgkhw2mg17m^2
+681^4^0^30^31^1434^0.3585^0.1397^4^Young Stranglethorn Tiger^1686:1:1,9827:1:1,12202:2:2^
+697^1^0^33^34^1434^0.3362^0.1380^1^Bloodscalp Shaman^4306:1:1,9845:1:1^
+702^2^0^33^34^1434^0.3309^0.1303^2^Bloodscalp Scavenger^^
 905^1^0^31^31^1434^0.3533^0.1007^1^Sharptooth Frenzy^^
-1085^1^0^34^35^1434^0.3194^0.1563^1^Elder Stranglethorn Tiger^1686:1:1,12202:1:1^
+1085^3^0^34^35^1434^0.3223^0.1804^3^Elder Stranglethorn Tiger^1686:2:2,12202:3:3^
 1108^1^0^33^33^1434^0.3710^0.1547^1^Mistvale Gorilla^2799:1:1,4097:1:1^
 1150^1^0^30^31^1434^0.3567^0.0885^1^River Crocolisk^12037:1:1^
 6206^5^0^0^0^0^0.0000^0.0000^0^^2592:2:5,4306:1:3,9308:2:2,248687:1:1^
@@ -49,6 +49,9 @@ GoldScout-export 5^gmgkhw2mg17m^1
 @i^4542^Moist Cornbread
 @i^4714^Silver-thread Sash
 @i^5003^Crystal Starfire Medallion
+@i^6289^Raw Longjaw Mud Snapper
+@i^6291^Raw Brilliant Smallfish
+@i^6308^Raw Bristle Whisker Catfish
 @i^6408^Insignia Gloves
 @i^6569^Shimmering Robe of Fire Protection
 @i^6617^Sage's Mantle of the Physician
@@ -64,6 +67,7 @@ GoldScout-export 5^gmgkhw2mg17m^1
 @i^9451^Bubbling Water
 @i^9452^Hydrocane
 @i^9492^Electromagnetic Gigaflux Reactivator
+@i^9827^Scaled Leather Belt of the Channeler
 @i^9831^Scaled Cloak of the Boar
 @i^9845^Conjurer's Shoes of the Hierophant
 @i^12037^Mystery Meat
@@ -94,6 +98,9 @@ GoldScout-export 5^gmgkhw2mg17m^1
 @q^4542^1:0:0
 @q^4714^2:4:0
 @q^5003^2:4:0
+@q^6289^1:7:1
+@q^6291^1:7:1
+@q^6308^1:7:1
 @q^6408^2:4:0
 @q^6569^2:4:0
 @q^6617^2:4:0
@@ -109,6 +116,7 @@ GoldScout-export 5^gmgkhw2mg17m^1
 @q^9451^1:0:0
 @q^9452^3:2:0
 @q^9492^3:4:0
+@q^9827^2:4:0
 @q^9831^2:4:0
 @q^9845^2:4:0
 @q^12037^1:7:1
@@ -118,6 +126,7 @@ GoldScout-export 5^gmgkhw2mg17m^1
 @q^253986^3:9:0
 @q^274042^3:4:0
 @m^1434^Stranglethorn Vale
+@m^1456^Thunder Bluff
 @c^118^
 @c^724^
 @c^733^
@@ -880,11 +889,12 @@ GoldScout-export 5^gmgkhw2mg17m^1
 @c^279981^
 @c^279982^
 @c^286152^
-@a^681^67:1
+@a^681^47:3,67:1
 @a^697^46:1
-@a^702^46:1
+@a^702^46:2
 @a^905^47:1
-@a^1085^66:1
+@a^1085^66:3
 @a^1108^67:1
 @a^1150^27:1
+@f^1456^0^22^55^6289:12:12,6291:6:6,6308:4:4^228:3,248:19
 @l^0^enUS

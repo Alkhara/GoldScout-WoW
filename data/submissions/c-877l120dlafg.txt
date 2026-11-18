@@ -1,4 +1,9 @@
-GoldScout-export 5^877l120dlafg^1
+GoldScout-export 5^877l120dlafg^2
+4360^10^0^37^38^1445^0.6389^0.2770^10^Mirefin Warrior^3796:1:1,4424:1:1,5847:3:3,14223:1:1,17057:5:5,17058:3:3^
+4361^5^0^36^37^1445^0.6367^0.2749^5^Mirefin Muckdweller^5785:1:1,5847:1:1,17057:3:3^
+4362^6^0^36^37^1445^0.6413^0.2815^6^Mirefin Coastrunner^5847:1:1,15243:1:1,17057:2:2,17058:1:1^
+4363^4^0^38^38^1445^0.6414^0.2696^4^Mirefin Oracle^5847:1:1,17057:1:1,17058:1:1^
+4397^3^0^37^38^1445^0.6429^0.3498^3^Mudrock Spikeshell^4555:1:1,4556:1:1^
 7327^2^0^0^0^0^0.0000^0.0000^0^^4306:1:3^
 7328^4^0^0^0^0^0.0000^0.0000^0^^4306:3:8,248709:1:1^
 7329^6^0^0^0^0^0.0000^0.0000^0^^1990:1:1,3810:1:1,4306:1:4,14211:1:1,14588:1:1^
@@ -27,20 +32,30 @@ GoldScout-export 5^877l120dlafg^1
 @i^3779^Hefty War Axe
 @i^3786^Shiny Dirk
 @i^3787^Stone Club
+@i^3796^Interlaced Gloves
 @i^3799^Interlaced Vest
 @i^3810^Double Mail Bracers
 @i^3814^Double Mail Shoulderpads
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
+@i^4424^Scroll of Spirit III
+@i^4555^Thick Scaly Tail
+@i^4556^Speckled Shell Fragment
+@i^5785^Thick Murloc Scale
+@i^5847^Mirefin Head
 @i^6530^Nightcrawlers
 @i^10760^Swine Fists
 @i^10774^Fleshhide Shoulders
 @i^10777^Arachnid Gloves of Stamina
 @i^14211^Vital Handwraps of Stamina
+@i^14223^Geomancer's Spaulders of the Elder
 @i^14418^Silksand Boots
 @i^14588^Hawkeye's Cord
+@i^15243^Deadly Kris of Agility
 @i^15358^Headhunter's Woolies of Arcane Protection
 @i^15572^Marauder's Circlet of the Champion
+@i^17057^Shiny Fish Scales
+@i^17058^Fish Oil
 @i^248709^Waylaid Crate: Expert Ingots
 @q^1708^1:0:0
 @q^1990^2:2:0
@@ -51,22 +66,33 @@ GoldScout-export 5^877l120dlafg^1
 @q^3779^0:2:0
 @q^3786^0:2:0
 @q^3787^0:2:0
+@q^3796^0:4:0
 @q^3799^0:4:0
 @q^3810^0:4:0
 @q^3814^0:4:0
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4424^1:0:0
+@q^4555^0:15:0
+@q^4556^0:15:0
+@q^5785^1:7:1
+@q^5847^1:12:0
 @q^6530^1:0:0
 @q^10760^3:4:0
 @q^10774^3:4:0
 @q^10777^3:4:0
 @q^14211^2:4:0
+@q^14223^2:4:0
 @q^14418^2:4:0
 @q^14588^2:4:0
+@q^15243^2:2:0
 @q^15358^2:4:0
 @q^15572^2:4:0
+@q^17057^1:15:0
+@q^17058^1:15:0
 @q^248709^2:0:1
 @m^1413^The Barrens
+@m^1445^Dustwallow Marsh
 @c^724^
 @c^733^
 @c^787^
@@ -754,6 +780,11 @@ GoldScout-export 5^877l120dlafg^1
 @c^279985^
 @c^279987^
 @c^286152^
+@a^4360^112:10
+@a^4361^112:5
+@a^4362^112:6
+@a^4363^112:4
+@a^4397^112:1,152:1,172:1
 @a^7872^349:2
 @a^7873^369:5
 @l^0^enUS
