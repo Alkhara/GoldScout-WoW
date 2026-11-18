@@ -791,6 +791,7 @@ td .trend { padding: 0 6px; }
 .trend.steady { color: var(--muted); border-color: rgba(159,182,191,.3); }
 .trend.new { color: var(--link); border-color: rgba(143,211,255,.4); background: rgba(143,211,255,.08); }
 .guide-week { border: 1px solid var(--line); border-radius: 12px; padding: 4px 18px 10px; margin: 18px 0; }
+.guide-note { margin: 10px 0; max-width: 46em; line-height: 1.6; }
 .guide-week ul { padding-left: 20px; } .guide-week li { margin: 4px 0; }
 @media (max-width: 1000px) { .guide-farm .cols { grid-template-columns: minmax(0, 1fr); } .guide-farm figure.area-map { max-width: 520px; } }
 .area-art rect { fill: #2bff5e; stroke: #04310f; stroke-width: 2; }

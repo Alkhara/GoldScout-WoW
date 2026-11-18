@@ -1,0 +1,116 @@
+# Once a week, Claude writes the gold guides' farm notes: a few sentences on how
+# to run each farm the guides show (tools/write_farm_notes.py). Every note is
+# checked against the farm's facts (site/farm_notes.py check: no number or name
+# that isn't in them, no prices, no claims about the game's behaviour), and the
+# site checks it again on every build, so a note that no longer fits is never
+# shown. Only new or stale notes are written; the rest are kept.
+#
+# The notes go in a pull request (site/farm_notes.json) that merges itself once
+# the website's Cloudflare build for it passes, like the hourly data merge.
+#
+# Needs the ANTHROPIC_API_KEY secret, and Settings > Actions > General > "Allow
+# GitHub Actions to create and approve pull requests" (already on for the data
+# merge).
+name: Guide notes
+
+on:
+  schedule:
+    - cron: "23 13 * * 1"   # Mondays
+  workflow_dispatch:
+    inputs:
+      all:
+        description: "Rewrite every note, not only new or stale ones"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  checks: read
+
+concurrency:
+  group: guide-notes
+
+jobs:
+  notes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45   # writing takes a few minutes; then up to 20 for the site build
+    env:
+      GH_TOKEN: ${{ github.token }}
+      BRANCH: guides/farm-notes
+      SITE_CHECK: "Workers Builds: goldscout-wow"
+      HAS_KEY: ${{ secrets.ANTHROPIC_API_KEY != '' }}
+    steps:
+      - name: Note the missing key
+        if: env.HAS_KEY != 'true'
+        run: echo "**Skipped:** add the ANTHROPIC_API_KEY secret to write the guides' farm notes." | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        if: env.HAS_KEY == 'true'
+
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        if: env.HAS_KEY == 'true'
+        with:
+          python-version: "3.12"
+
+      - name: Install the Claude SDK
+        if: env.HAS_KEY == 'true'
+        run: python -m pip install --quiet -r tools/requirements-guides.txt
+
+      - name: Write the notes
+        if: env.HAS_KEY == 'true'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ALL: ${{ inputs.all }}
+        run: |
+          if [ "$ALL" = "true" ]; then set -- --all; fi
+          python tools/write_farm_notes.py "$@" | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Check the site still builds and the tests pass
+        if: env.HAS_KEY == 'true'
+        run: |
+          python -m unittest tests.test_farm_notes tests.test_guides
+          python site/build.py > /dev/null
+
+      - name: Open the pull request
+        id: pr
+        if: env.HAS_KEY == 'true'
+        run: |
+          if [ -z "$(git status --porcelain -- site/farm_notes.json)" ]; then
+            echo "No notes changed, so no pull request." | tee -a "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$BRANCH"
+          git add site/farm_notes.json
+          git commit -m "Update the gold guides' farm notes"
+          git push --force origin "$BRANCH"
+          state=$(gh pr view "$BRANCH" --json state --jq .state 2>/dev/null || true)
+          if [ "$state" != "OPEN" ]; then
+            gh pr create --base main --head "$BRANCH" --title "Update the gold guides' farm notes" \
+              --body "Farm notes written by Claude from each farm's facts and checked by site/farm_notes.py. Merges itself once the website builds."
+          fi
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Merge it once the website builds
+        if: steps.pr.outputs.sha != ''
+        env:
+          SHA: ${{ steps.pr.outputs.sha }}
+        run: |
+          summary() { printf '%s\n' "$1" | tee -a "$GITHUB_STEP_SUMMARY"; }
+          result=""
+          for _ in $(seq 1 60); do
+            result=$(gh api "repos/$GITHUB_REPOSITORY/commits/$SHA/check-runs" \
+              --jq ".check_runs[] | select(.name == \"$SITE_CHECK\") | \"\(.status) \(.conclusion)\"" | head -n 1)
+            case "$result" in
+              completed*) break ;;
+            esac
+            sleep 20
+          done
+          if [ "$result" != "completed success" ]; then
+            summary "**Not merged automatically:** the website build ($SITE_CHECK) ended as '${result:-not reported}'. Review the pull request."
+            exit 0
+          fi
+          gh pr merge "$BRANCH" --merge --delete-branch
+          summary "**Merged automatically:** the website built with the new notes."

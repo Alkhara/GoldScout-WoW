@@ -17,6 +17,7 @@ import urllib.error
 import urllib.request
 
 import data_pages
+import farm_notes
 from data_pages import P, e
 
 API_URL = "https://api.wowgoldscout.com"
@@ -299,7 +300,7 @@ def in_game(data, farm, links):
             % (item, mob, links["curseforge"]))
 
 
-def farm_card(data, rank, farm, market, links):
+def farm_card(data, rank, farm, market, links, note=None):
     npc, main = farm["npc"], farm["parts"][0]
     where = data_pages.zone_link(data, npc)
     levels = data.levels(npc)
@@ -315,12 +316,13 @@ def farm_card(data, rank, farm, market, links):
         for part in shown)
     badge = trend_badge(market, main["item"])
     return ('<section class=guide-farm><h3>%s</h3><p class=sub>%s</p><div class=cols><div>'
-            '<p><b>%s an hour</b> at %d kills an hour, from %s kills recorded by GoldScout players.%s</p>'
+            '<p><b>%s an hour</b> at %d kills an hour, from %s kills recorded by GoldScout players.%s</p>%s'
             '<div class=scroll><table><thead><tr><th>Drop</th><th class=num>Chance</th><th class=num>Lowest buyout'
             '</th><th class=num>Listed now</th><th class=num>Per kill</th>%s</tr></thead><tbody>%s</tbody></table>'
             '</div>%s%s<p class=small><a href="%s">Everything about %s</a></p></div>%s</div></section>'
             % (head, place, hour_range(farm), data_pages.KILLS_PER_HOUR, data_pages.num(farm["kills"]),
-               " " + badge if badge else "", "<th class=num>This week</th>" if weekly else "", rows,
+               " " + badge if badge else "", '<p class=guide-note>%s</p>' % e(note) if note else "",
+               "<th class=num>This week</th>" if weekly else "", rows,
                loot_table(data, npc, farm["kills"], market["prices"]), in_game(data, farm, links),
                P("/mob/%d" % npc), e(data.mob_name(npc)), where_figure(data, npc)))
 
@@ -359,7 +361,7 @@ def week_section(data, market, ranked):
             % (e(since), "".join(lines), moved))
 
 
-def market_page(data, market, ranked, markets, links):
+def market_page(data, market, ranked, markets, links, notes=None):
     """(title, description, body) for one market's guide."""
     name = market_name(market)
     picks = top(ranked)
@@ -367,7 +369,8 @@ def market_page(data, market, ranked, markets, links):
     if picks:
         first = picks[0]
         sections.append("<h2>The top %d right now</h2>" % len(picks))
-        sections += [farm_card(data, rank, farm, market, links) for rank, farm in enumerate(picks, 1)]
+        notes = notes or (lambda farm: None)
+        sections += [farm_card(data, rank, farm, market, links, notes(farm)) for rank, farm in enumerate(picks, 1)]
         sections.append(week_section(data, market, ranked))
         levels = by_level(data, ranked)
         if levels:
@@ -438,12 +441,18 @@ def index_page(data, markets, ranked):
             "rates and the latest auction prices.", body)
 
 
-def build(data, links, write, markets):
+def build(data, links, write, markets, notes_file=farm_notes.NOTES_FILE):
     """Writes /guides and each market's guide; returns their URL paths."""
     ranked = {slug(market): farms(data, market["prices"]) for market in markets}
+    written = farm_notes.load(notes_file)
+    known = farm_notes.known_name_words(data) if written else set()
+
+    def notes(farm):
+        return farm_notes.note_for(data, farm, written, known)
     write("guides.html", *index_page(data, markets, ranked))
     paths = ["/guides"]
     for market in markets:
-        write("guides/%s.html" % slug(market), *market_page(data, market, ranked[slug(market)], markets, links))
+        write("guides/%s.html" % slug(market),
+              *market_page(data, market, ranked[slug(market)], markets, links, notes))
         paths.append("/guides/" + slug(market))
     return paths
