@@ -1,4 +1,6 @@
-GoldScout-export 5^s69s0bh1knt7^2
+GoldScout-export 5^s69s0bh1knt7^3
+704^1^0^2^2^1426^0.2963^0.7475^1^Ragged Timber Wolf^750:1:1,4865:1:1,7073:1:1^
+705^2^0^1^1^1426^0.2994^0.7450^2^Ragged Young Wolf^750:2:2,2654:1:1,7073:2:2,7074:1:1^
 730^1^0^43^43^1434^0.2841^0.4255^1^Tethis^3877:1:1,4461:1:1,12184:1:1^
 731^1^0^43^43^1434^0.3799^0.3555^1^King Bangalash^3880:1:1,4580:1:1,12202:1:1^
 764^4^0^38^39^1435^0.1512^0.3745^4^Swampwalker^765:1:1^
@@ -28,11 +30,13 @@ GoldScout-export 5^s69s0bh1knt7^2
 2635^1^0^38^38^1434^0.2267^0.1889^1^Elder Saltwater Crocolisk^770:1:1,3667:1:1,4105:1:1^
 10928^2^0^42^43^1434^0.3036^0.7946^2^Succubus Minion^^
 12922^5^0^42^43^1434^0.2898^0.8164^5^Imp Minion^^
+@i^750^Tough Wolf Meat
 @i^765^Silverleaf
 @i^770^Pointy Crocolisk Tooth
 @i^1645^Moonberry Juice
 @i^1686^Bristly Whisker
 @i^1688^Long Soft Tail
+@i^2654^Flimsy Chain Pants
 @i^2725^Green Hills of Stranglethorn - Page 1
 @i^2728^Green Hills of Stranglethorn - Page 4
 @i^2735^Green Hills of Stranglethorn - Page 11
@@ -68,10 +72,13 @@ GoldScout-export 5^s69s0bh1knt7^2
 @i^4603^Raw Spotted Yellowtail
 @i^4607^Delicious Cave Mold
 @i^4608^Raw Black Truffle
+@i^4865^Ruined Pelt
 @i^5569^Seaweed
 @i^5938^Pristine Crawler Leg
 @i^6149^Greater Mana Potion
 @i^6530^Nightcrawlers
+@i^7073^Broken Fang
+@i^7074^Chipped Claw
 @i^7973^Big-mouth Clam
 @i^9260^Volatile Rum
 @i^9926^Brigade Boots of the Tiger
@@ -88,11 +95,13 @@ GoldScout-export 5^s69s0bh1knt7^2
 @i^248692^Waylaid Crate: Expert Ore
 @i^248693^Waylaid Crate: Expert Textiles
 @i^248709^Waylaid Crate: Expert Ingots
+@q^750^1:12:0
 @q^765^1:7:1
 @q^770^0:15:0
 @q^1645^1:0:0
 @q^1686^0:15:0
 @q^1688^0:15:0
+@q^2654^0:4:0
 @q^2725^1:12:0
 @q^2728^1:12:0
 @q^2735^1:12:0
@@ -128,10 +137,13 @@ GoldScout-export 5^s69s0bh1knt7^2
 @q^4603^1:7:1
 @q^4607^1:0:0
 @q^4608^1:0:0
+@q^4865^0:15:0
 @q^5569^0:15:0
 @q^5938^1:12:0
 @q^6149^1:0:0
 @q^6530^1:0:0
+@q^7073^0:15:0
+@q^7074^0:15:0
 @q^7973^1:7:0
 @q^9260^1:0:0
 @q^9926^2:4:0
@@ -148,8 +160,11 @@ GoldScout-export 5^s69s0bh1knt7^2
 @q^248692^1:0:1
 @q^248693^1:0:1
 @q^248709^2:0:1
+@m^1426^Dun Morogh
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
+@a^704^285:1
+@a^705^285:1,286:1
 @a^730^165:1
 @a^731^147:1
 @a^764^122:1,142:1,143:2
