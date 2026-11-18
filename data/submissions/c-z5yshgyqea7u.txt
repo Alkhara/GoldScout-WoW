@@ -1,22 +1,62 @@
-GoldScout-export 5^z5yshgyqea7u^1
-5616^10^0^40^41^1446^0.6357^0.3130^10^Diebin der Wüstenläufer^3778:1:1,3792:1:1,4306:1:1,4338:6:9,8483:2:2,264215:1:1^
-5617^2^0^42^42^1446^0.6306^0.3150^2^Schattenmagier der Wüstenläufer^3964:1:1,4338:1:1,8483:1:1^
-5618^1^0^42^42^1446^0.6331^0.3328^1^Bandit der Wüstenläufer^4338:1:1^
-8996^2^0^42^42^1446^0.6307^0.3156^2^Leerwandlerdiener^^
+GoldScout-export 5^z5yshgyqea7u^2
+5459^2^0^47^48^1446^0.3908^0.2932^2^Tunnelgräber der Centipaar^6302:2:2^
+5615^2^0^43^44^1446^0.6243^0.3817^2^Schurkin der Wüstenläufer^^
+5616^15^0^40^41^1446^0.6359^0.3114^15^Diebin der Wüstenläufer^1645:1:1,3778:1:1,3792:1:1,3927:2:2,4022:1:1,4306:2:2,4338:7:10,8483:2:2,264215:1:1^
+5617^4^0^42^43^1446^0.6154^0.3443^4^Schattenmagier der Wüstenläufer^3964:1:1,4338:2:2,8483:1:1,248710:1:1^
+5618^10^0^41^42^1446^0.6342^0.3204^10^Banditin der Wüstenläufer^1645:2:2,4306:1:1,4338:1:1,4422:1:1,8483:4:4^
+7847^1^0^46^46^1446^0.5924^0.3924^1^Kalif Skorpidstich^8723:1:1^
+7855^10^0^44^45^1446^0.7316^0.4647^10^Pirat der Südmeerfreibeuter^3927:1:1,4338:4:6,20519:3:3^
+7856^16^0^44^45^1446^0.7368^0.4636^16^Seeräuber der Südmeerfreibeuter^4306:1:2,4338:4:7,9260:1:1,9276:2:2,14243:1:1,20519:6:6,248692:1:1^
+7857^18^0^44^45^1446^0.7346^0.4748^18^Dockarbeiter der Südmeerfreibeuter^3927:2:2,3928:1:1,3964:1:1,4306:1:2,4338:9:17,9260:1:1,9276:1:1,20519:7:7,248692:1:1^
+7858^20^0^44^45^1446^0.7430^0.4627^20^Schwadroneur der Südmeerfreibeuter^1645:1:1,3927:1:1,4338:5:9,6149:1:1,9260:1:1,20519:4:4,248694:1:1^
+7883^2^0^45^45^1446^0.7326^0.4730^2^Andre Feuerbart^4306:1:2,9246:1:1,20519:1:1^
+8996^4^0^42^43^1446^0.6154^0.3446^4^Leerwandlerdiener^^
 260419^1^0^38^38^1446^0.6739^0.2392^1^Dreschkiefer^4306:1:1^
+@i^1645^Mondbeerensaft
 @i^3778^Gespannter Kompaktbogen
 @i^3792^Geflochtener Gürtel
+@i^3927^Feiner alter Cheddar
+@i^3928^Überragender Heiltrank
 @i^3964^Dicker Umhang
+@i^4022^Schmetterschlägel
 @i^4306^Seidenstoff
 @i^4338^Magiestoff
+@i^4422^Rolle der Ausdauer III
+@i^6149^Großer Manatrank
+@i^6302^Zierlicher Insektenflügel
 @i^8483^Wasserbeutel eines Wüstenläufers
+@i^8723^Kalif Skorpidstichs Kopf
+@i^9246^Feuerbarts Kopf
+@i^9260^Flüchtiger Rum
+@i^9276^Piraten-Schließkiste
+@i^14243^Graunebelmantel der Eule
+@i^20519^Südmeerpiratenhut
+@i^248692^Abgefangene Kiste: Erz des Experten
+@i^248694^Abgefangene Kiste: Kuriositäten des Experten
+@i^248710^Abgefangene Kiste: Bauteile des Experten
 @i^264215^Bauplan: SAF-T-Bombe
+@q^1645^1:0:0
 @q^3778^0:2:0
 @q^3792^0:4:0
+@q^3927^1:0:0
+@q^3928^1:0:0
 @q^3964^0:4:0
+@q^4022^0:2:0
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4422^1:0:0
+@q^6149^1:0:0
+@q^6302^0:15:0
 @q^8483^1:12:0
+@q^8723^1:12:0
+@q^9246^1:12:0
+@q^9260^1:0:0
+@q^9276^1:15:0
+@q^14243^2:4:0
+@q^20519^1:12:0
+@q^248692^1:0:1
+@q^248694^1:0:1
+@q^248710^2:0:1
 @q^264215^1:9:0
 @m^1446^Tanaris
 @c^724^
@@ -157,9 +197,17 @@ GoldScout-export 5^z5yshgyqea7u^1
 @c^279981^
 @c^279982^
 @c^286152^
-@a^5616^112:4,132:6
-@a^5617^112:1,132:1
-@a^5618^132:1
-@a^8996^132:2
+@a^5459^107:2
+@a^5615^153:1,171:1
+@a^5616^112:7,132:8
+@a^5617^112:1,132:1,151:1,152:1
+@a^5618^112:2,132:8
+@a^7847^151:1
+@a^7855^174:1,194:9
+@a^7856^174:1,194:13,195:2
+@a^7857^194:18
+@a^7858^175:1,194:13,195:6
+@a^7883^194:2
+@a^8996^132:2,151:1,152:1
 @a^260419^93:1
 @l^0^deDE
