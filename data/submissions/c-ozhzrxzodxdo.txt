@@ -1,8 +1,12 @@
-GoldScout-export 5^ozhzrxzodxdo^1
+GoldScout-export 5^ozhzrxzodxdo^2
 684^1^0^37^37^1434^0.3540^0.3791^1^Shadowmaw Panther^1686:1:1^
 686^2^0^35^36^1434^0.3569^0.2126^2^Lashtail Raptor^3685:2:2,4461:1:1^
+687^3^0^40^41^1434^0.3077^0.4201^3^Jungle Stalker^4586:2:2,12184:2:2^
+690^4^0^39^40^1434^0.3586^0.4031^4^Cold Eye Basilisk^1701:1:1,1702:1:1,4093:1:1,5079:1:1,5637:1:1,11386:1:1^
 728^1^0^40^40^1434^0.4724^0.2876^1^Bhag'thera^3876:1:1^
-772^1^0^37^38^1434^0.4697^0.2792^1^Stranglethorn Tigress^12202:1:1^
+730^1^0^43^43^1434^0.2868^0.4293^1^Tethis^3877:1:1,4461:1:1^
+731^1^0^43^43^1434^0.3824^0.3549^1^King Bangalash^3880:1:1^
+772^3^0^37^38^1434^0.3958^0.3442^3^Stranglethorn Tigress^1686:1:1,1688:1:1,12202:2:2^
 1085^3^0^34^35^1434^0.3425^0.1879^3^Elder Stranglethorn Tiger^1686:1:1,1687:1:1,12202:1:1^
 1108^2^0^33^33^1434^0.3700^0.1781^2^Mistvale Gorilla^2799:2:2,4096:1:1^
 1114^9^0^37^38^1434^0.4290^0.2844^9^Jungle Thunderer^2799:7:7,4096:4:4,4097:2:2,248693:1:1^
@@ -11,27 +15,49 @@ GoldScout-export 5^ozhzrxzodxdo^1
 @i^770^Pointy Crocolisk Tooth
 @i^1686^Bristly Whisker
 @i^1687^Retractable Claw
+@i^1688^Long Soft Tail
+@i^1701^Curved Basilisk Claw
+@i^1702^Intact Basilisk Spine
 @i^2799^Gorilla Fang
 @i^3667^Tender Crocolisk Meat
 @i^3685^Raptor Egg
 @i^3876^Fang of Bhag'thera
+@i^3877^Talon of Tethis
+@i^3880^Head of Bangalash
+@i^4093^Large Basilisk Tail
 @i^4096^Coarse Gorilla Hair
 @i^4097^Chipped Gorilla Tooth
 @i^4461^Raptor Hide
+@i^4586^Smooth Raptor Skin
+@i^5079^Cold Basilisk Eye
+@i^5637^Large Fang
+@i^11386^Squishy Basilisk Eye
 @i^12037^Mystery Meat
+@i^12184^Raptor Flesh
 @i^12202^Tiger Meat
 @i^248693^Waylaid Crate: Expert Textiles
 @q^770^0:15:0
 @q^1686^0:15:0
 @q^1687^0:15:0
+@q^1688^0:15:0
+@q^1701^0:15:0
+@q^1702^0:15:0
 @q^2799^1:12:0
 @q^3667^1:7:1
 @q^3685^1:7:1
 @q^3876^1:12:0
+@q^3877^1:12:0
+@q^3880^1:12:0
+@q^4093^0:15:0
 @q^4096^1:15:0
 @q^4097^0:15:0
 @q^4461^1:7:1
+@q^4586^0:15:0
+@q^5079^2:4:0
+@q^5637^1:7:1
+@q^11386^0:15:0
 @q^12037^1:7:1
+@q^12184^1:7:1
 @q^12202^1:7:1
 @q^248693^1:0:1
 @m^1434^Stranglethorn Vale
@@ -629,8 +655,12 @@ GoldScout-export 5^ozhzrxzodxdo^1
 @c^279978^
 @a^684^147:1
 @a^686^86:1,87:1
+@a^687^165:1,166:2
+@a^690^147:1,167:3
 @a^728^109:1
-@a^772^109:1
+@a^730^165:1
+@a^731^147:1
+@a^772^109:1,147:2
 @a^1085^66:2,67:1
 @a^1108^67:2
 @a^1114^108:6,109:1,128:2
