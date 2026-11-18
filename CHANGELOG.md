@@ -7,6 +7,8 @@ releases add their own line automatically.
 
 ## Unreleased
 
+## v0.12.28
+
 - **GoldScout Companion has a dark mode on Windows:** its window, title bar included, follows Windows' app mode (Settings › Personalization › Colors), and switches when you change it. On a Mac it already followed your Mac's appearance.
 - **A gold coin on bag items worth listing:** crafting reagents and green or better items that sell for at least double their vendor price on your auction house, after the cut, get a small gold coin in your bags (Blizzard's bags and Bagnon), and their tooltip says what they're worth on each. Gray junk, quest items and bound items never do. It needs your own realm's prices, from a scan or GoldScout Companion. Turn it off in Settings › Interface, or with `/gscout set bagcoins off`.
 

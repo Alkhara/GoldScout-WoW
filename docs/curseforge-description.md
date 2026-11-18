@@ -42,7 +42,7 @@ Pick a farm and press **Hunt**:
 ### Gets smarter the more people play
 Every corpse you loot teaches GoldScout what that mob really drops, on all your characters. Share what you've learned and it goes into the next day's release for everyone. The more players share, the better everyone's Farm tab gets, and everyone who shares is ranked on the contributor leaderboard.
 
-**GoldScout Companion** shares for you: it runs quietly in the system tray, never shows pop-ups over your game, and uploads new data after you agree once, and picks up where it left off if you move to a new PC. It only reads GoldScout's saved data and writes one small data addon; it never touches the running game. Without it, `/gscout export` gives you your data to paste into the share page on the GoldScout website.
+**GoldScout Companion** shares for you: it runs quietly in the system tray, follows your light or dark mode, never shows pop-ups over your game, and uploads new data after you agree once, and picks up where it left off if you move to a new PC. It only reads GoldScout's saved data and writes one small data addon; it never touches the running game. Without it, `/gscout export` gives you your data to paste into the share page on the GoldScout website.
 
 ### Honest data
 Every drop rate and spawn point comes from GoldScout players looting in game. Nothing is copied from Wowhead or any other site.
