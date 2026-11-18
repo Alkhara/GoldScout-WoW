@@ -7,7 +7,10 @@ releases add their own line automatically.
 
 ## Unreleased
 
+## v0.12.27
+
 - **Sharing survives a new PC:** after moving your game to a new PC or reinstalling Windows, GoldScout Companion could stop sharing with "This GoldScout data is registered to another copy of the companion", because the key it shares with stayed on the old PC. GoldScout now keeps a private recovery key in its saved data (never in your exports), and the companion uses it to get a new sharing key on its own. It protects you from your first share with this version of GoldScout and the companion.
+- Updated drop data from the community.
 
 ## v0.12.25
 
