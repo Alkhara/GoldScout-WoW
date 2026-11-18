@@ -133,6 +133,11 @@ class PageTests(unittest.TestCase):
         self.assertIn(data_pages.SOURCE, body)           # Blizzard credited
         self.assertIn('href="/guides/us/normal-horde"', body)
         self.assertNotIn("Thin Mob", body)
+        # Each farm hands over to the add-on and carries the mob's whole loot table, priced here.
+        self.assertIn("Run it in game with GoldScout.", body)
+        self.assertIn('href="https://cf.example/goldscout"', body)
+        self.assertIn("Everything players have looted from it (2 items)", body)   # the Coyote: meat and scraps
+        self.assertIn("<td class=num>&ndash;</td>", body)                      # scraps aren't listed here
 
     def test_nothing_ranked_yet(self):
         title, _, body = guides.market_page(self.data, self.market, [], [self.market], LINKS)

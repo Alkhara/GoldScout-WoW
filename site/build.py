@@ -775,6 +775,16 @@ svg.area { display: block; width: 100%; height: auto; }
 .area-art { position: relative; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); background: var(--bg2); }
 .area-art img { display: block; width: 100%; height: auto; }
 .area-art svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+/* Gold guides (site/guides.py): a card per farm, its details beside the zone map, stacked on phones. */
+.guide-farm { border: 1px solid var(--line); border-radius: 12px; background: var(--bg2); padding: 16px 18px; margin: 18px 0; }
+.guide-farm h3 { margin: 0 0 2px; }
+.guide-farm .cols { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 360px); gap: 22px; align-items: start; }
+.guide-farm figure.area-map { margin: 6px 0 0; max-width: none; }
+.guide-farm details { margin: 10px 0; }
+.guide-farm summary { cursor: pointer; color: var(--link); }
+.ingame { border-left: 3px solid var(--gold); background: var(--panel); border-radius: 0 8px 8px 0; padding: 10px 14px; margin: 12px 0; font-size: 15px; }
+.guide-farm .scroll, .guide-levels { overflow-x: auto; }
+@media (max-width: 1000px) { .guide-farm .cols { grid-template-columns: minmax(0, 1fr); } .guide-farm figure.area-map { max-width: 520px; } }
 .area-art rect { fill: #2bff5e; stroke: #04310f; stroke-width: 2; }
 svg.area .bg { fill: var(--bg2); stroke: var(--line); stroke-width: 1; }
 svg.area .g { fill: var(--line); fill-opacity: .6; }

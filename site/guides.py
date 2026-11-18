@@ -142,7 +142,56 @@ def hour_range(farm):
     return low if low == high else "%s&ndash;%s" % (low, high)
 
 
-def farm_card(data, rank, farm):
+def where_figure(data, npc):
+    """The zone's map with the hunting area shaded where players loot this mob, as the add-on's hunt map shows
+    it in game; "" until enough loots are placed."""
+    cells = data.mob_area(npc)
+    if sum(cells.values()) < data_pages.AREA_MIN_LOOTS:
+        return ""
+    map_id, name = data.zone_id(npc), data.mob_name(npc)
+    zone = data.map_name(map_id)
+    art = data_pages.area_map(data, map_id, cells, "Map of %s: where players looted %s" % (zone, name),
+                              lambda cell: "Around %s: looted %s here" % (data_pages.square_coords(cell),
+                                                                          data_pages.num(int(cells[cell] + 0.5))))
+    return ('<figure class="area-map">%s<figcaption>Brightest where players loot it most: around <b>%s</b>. '
+            "Coordinates match the in-game map. %s</figcaption></figure>"
+            % (art, data_pages.square_coords(data_pages.busiest(cells)), data_pages.ground_note([map_id])))
+
+
+def loot_table(data, npc, kills, prices):
+    """Everything players have looted from the mob (gray junk aside), priced on this auction house."""
+    rows = []
+    for item, rate, stack in data.drops(npc):
+        if data.kind(item) == "gray":
+            continue
+        price, listed = prices.get(item, (0, 0))
+        each = price * AH_CUT if price > 0 and listed > 0 else 0
+        rows.append("<tr><td>%s</td><td class=num>%s</td><td class=num>%s</td><td class=num>%s</td>"
+                    "<td class=num>%s</td></tr>"
+                    % (data_pages.item_link(data, item), data_pages.chance(rate, kills), data_pages.stack_text(stack),
+                       money(price) if each else "&ndash;", money(rate * stack * each) if each else "&ndash;"))
+    if not rows:
+        return ""
+    return ("<details><summary>Everything players have looted from it (%d item%s)</summary>"
+            "<div class=scroll><table><thead><tr><th>Item</th><th class=num>Chance</th><th class=num>Avg. stack</th>"
+            "<th class=num>Lowest buyout</th><th class=num>Per kill</th></tr></thead><tbody>%s</tbody></table></div>"
+            "<p class=small>Gear, recipes and gems are random drops from many mobs, so their prices swing; the "
+            "hour above counts crafting reagents only.</p></details>"
+            % (len(rows), "" if len(rows) == 1 else "s", "".join(rows)))
+
+
+def in_game(data, farm, links):
+    """How to run the farm with the add-on: the guide hands straight over to the game."""
+    item, mob = data_pages.item_html(data, farm["parts"][0]["item"]), data_pages.name_html(
+        data.mob_name(farm["npc"]), data.is_local("mobs", farm["npc"]))
+    return ('<div class=ingame><b>Run it in game with GoldScout.</b> On the Farm tab, pick %s and press '
+            "<b>Hunt</b>: Blizzard's waypoint arrow takes you there, this area is shaded on your world map, and "
+            "the hunt panel counts your kills, drops and gold per hour as you go. Target a %s and right-click its "
+            'portrait for <b>Drop rates</b>: this loot table, in game. <a href="%s">Get GoldScout</a></div>'
+            % (item, mob, links["curseforge"]))
+
+
+def farm_card(data, rank, farm, prices, links):
     npc, main = farm["npc"], farm["parts"][0]
     where = data_pages.zone_link(data, npc)
     levels = data.levels(npc)
@@ -154,16 +203,14 @@ def farm_card(data, rank, farm):
         % (data_pages.item_link(data, part["item"]), data_pages.chance(part["rate"], farm["kills"]),
            money(part["price"]), data_pages.num(part["listed"]), money(part["per_kill"]))
         for part in shown)
-    minor = len(farm["parts"]) - len(shown)
-    more = (" Plus %d minor drop%s worth under %d%% of a kill." % (minor, "" if minor == 1 else "s", MINOR * 100)
-            if minor else "")
-    return ('<section class=guide-farm><h3>%s</h3><p class=sub>%s</p>'
+    return ('<section class=guide-farm><h3>%s</h3><p class=sub>%s</p><div class=cols><div>'
             '<p><b>%s an hour</b> at %d kills an hour, from %s kills recorded by GoldScout players.</p>'
-            '<table><thead><tr><th>Drop</th><th class=num>Chance</th><th class=num>Lowest buyout</th>'
-            '<th class=num>Listed now</th><th class=num>Per kill</th></tr></thead><tbody>%s</tbody></table>'
-            '<p class=small>%s<a href="%s">Where to find it, and everything it drops</a></p></section>'
+            '<div class=scroll><table><thead><tr><th>Drop</th><th class=num>Chance</th><th class=num>Lowest buyout'
+            '</th><th class=num>Listed now</th><th class=num>Per kill</th></tr></thead><tbody>%s</tbody></table></div>'
+            '%s%s<p class=small><a href="%s">Everything about %s</a></p></div>%s</div></section>'
             % (head, place, hour_range(farm), data_pages.KILLS_PER_HOUR, data_pages.num(farm["kills"]), rows,
-               e(more.strip()) + " " if more else "", P("/mob/%d" % npc)))
+               loot_table(data, npc, farm["kills"], prices), in_game(data, farm, links), P("/mob/%d" % npc),
+               e(data.mob_name(npc)), where_figure(data, npc)))
 
 
 def market_page(data, market, ranked, markets, links):
@@ -174,18 +221,18 @@ def market_page(data, market, ranked, markets, links):
     if picks:
         first = picks[0]
         sections.append("<h2>The top %d right now</h2>" % len(picks))
-        sections += [farm_card(data, rank, farm) for rank, farm in enumerate(picks, 1)]
+        sections += [farm_card(data, rank, farm, market["prices"], links) for rank, farm in enumerate(picks, 1)]
         levels = by_level(data, ranked)
         if levels:
-            sections.append("<h2>Best farm for your level</h2><table><thead><tr><th>Levels</th><th>Farm</th>"
-                            "<th>Zone</th><th class=num>Per hour</th></tr></thead><tbody>%s</tbody></table>"
-                            % "".join("<tr><td><a href=\"%s\">%s</a></td><td>%s from %s</td><td>%s</td>"
-                                      "<td class=num>%s</td></tr>"
-                                      % (P(data_pages.bracket_path(bracket)), data_pages.bracket_label(bracket),
-                                         data_pages.item_link(data, farm["parts"][0]["item"]),
-                                         data_pages.mob_link(data, farm["npc"]), data_pages.zone_link(data, farm["npc"]),
-                                         hour_range(farm))
-                                      for bracket, farm in levels))
+            rows = "".join(
+                '<tr><td><a href="%s">%s</a></td><td>%s from %s</td><td>%s</td><td class=num>%s</td></tr>'
+                % (P(data_pages.bracket_path(bracket)), data_pages.bracket_label(bracket),
+                   data_pages.item_link(data, farm["parts"][0]["item"]), data_pages.mob_link(data, farm["npc"]),
+                   data_pages.zone_link(data, farm["npc"]), hour_range(farm))
+                for bracket, farm in levels)
+            sections.append("<h2>Best farm for your level</h2><div class=guide-levels><table><thead><tr>"
+                            "<th>Levels</th><th>Farm</th><th>Zone</th><th class=num>Per hour</th></tr></thead>"
+                            "<tbody>%s</tbody></table></div>" % rows)
         summary = ("The best gold farm on %s auction houses right now is %s from %s, worth %s an hour. "
                    "Ranked from %s kills GoldScout players recorded in game and the auction house snapshot from %s."
                    % (e(name), e(data.item_name(first["parts"][0]["item"])), e(data.mob_name(first["npc"])),
