@@ -84,7 +84,7 @@ English, Deutsch, Français, 한국어 and 繁體中文, following your game's l
 
 Upload these in this order, with these captions:
 
-1. `docs/screenshots/Frame.JPG`: **Farm tab**: what this character can farm, ranked by gold per hour, with live auction prices.
+1. `docs/screenshots/20261117_Frame.JPG`: **Farm tab**: what this character can farm, ranked by gold per hour, with live auction prices.
 2. `docs/screenshots/CraftFrame.JPG`: **Craft tab**: every recipe you know, ranked by profit after materials.
 3. `docs/screenshots/Tracker.JPG`: **Hunt mode**: kills, drops and gold per hour while you farm.
 4. `docs/screenshots/TaggedMobs.JPG`: **Hunt markers**: the mobs you're hunting, marked on their nameplates.

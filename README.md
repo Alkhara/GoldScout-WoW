@@ -24,7 +24,7 @@
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/Frame.JPG" alt="The GoldScout Farm tab: farms ranked by gold per hour for a level 43 rogue" width="760">
+  <img src="docs/screenshots/20261117_Frame.JPG" alt="The GoldScout Farm tab: farms ranked by gold per hour for a level 43 rogue" width="760">
 </p>
 
 Log onto a level 12 druid herbalist or a level 31 rogue, open GoldScout, and you

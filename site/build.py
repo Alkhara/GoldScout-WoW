@@ -49,7 +49,7 @@ LINKS = {
 }
 
 SCREENSHOTS = [
-    ("Frame.JPG", "Farm tab", "What this character can farm, ranked by gold per hour, with live auction prices."),
+    ("20261117_Frame.JPG", "Farm tab", "What this character can farm, ranked by gold per hour, with live auction prices."),
     ("CraftFrame.JPG", "Craft tab", "Every recipe you know, ranked by profit after materials."),
     ("Tracker.JPG", "Hunt mode", "Kills, drops and gold per hour while you farm."),
     ("TaggedMobs.JPG", "Hunt markers", "The mobs you're hunting, marked on their nameplates."),
@@ -256,7 +256,7 @@ FAQ_DE = [
 
 # SCREENSHOTS in German: the same images, with the German addon's names (Farmen, Herstellen, Jagen).
 SCREENSHOTS_DE = [
-    ("Frame.JPG", "Farmen-Tab", "Was dieser Charakter farmen kann, nach Gold pro Stunde sortiert, mit aktuellen "
+    ("20261117_Frame.JPG", "Farmen-Tab", "Was dieser Charakter farmen kann, nach Gold pro Stunde sortiert, mit aktuellen "
                                 "Auktionspreisen."),
     ("CraftFrame.JPG", "Herstellen-Tab", "Jedes Rezept, das du kennst, nach Gewinn nach Abzug der Materialien "
                                          "sortiert."),
@@ -366,7 +366,7 @@ FAQ_ES = [
 
 # SCREENSHOTS in Spanish: the same images, with the Spanish addon's names (Farmear, Fabricar, Cazar).
 SCREENSHOTS_ES = [
-    ("Frame.JPG", "Pestaña Farmear", "Lo que este personaje puede farmear, ordenado por oro por hora, con precios de "
+    ("20261117_Frame.JPG", "Pestaña Farmear", "Lo que este personaje puede farmear, ordenado por oro por hora, con precios de "
                                      "subasta actuales."),
     ("CraftFrame.JPG", "Pestaña Fabricar", "Cada receta que conoces, ordenada por beneficio después de los "
                                            "materiales."),
@@ -480,7 +480,7 @@ FAQ_FR = [
 
 # SCREENSHOTS in French: the same images, with the French addon's names (Farm, Artisanat, Chasser).
 SCREENSHOTS_FR = [
-    ("Frame.JPG", "Onglet Farm", "Ce que ce personnage peut farmer, classé par or par heure, avec les prix actuels de "
+    ("20261117_Frame.JPG", "Onglet Farm", "Ce que ce personnage peut farmer, classé par or par heure, avec les prix actuels de "
                                  "l'hôtel des ventes."),
     ("CraftFrame.JPG", "Onglet Artisanat", "Chaque recette que vous connaissez, classée par bénéfice après les "
                                            "composants."),
@@ -866,7 +866,7 @@ def page(s):
     <div class="next"><b>Then add GoldScout Companion.</b> The free app for Windows and Mac brings auction prices into GoldScout every hour, without scanning, and shares your drop data so the Farm tab keeps getting better.<br>
       <a class="btn" href="/companion">Get the companion</a></div>
   </div>
-  <img class="shot" src="screenshots/Frame.JPG" alt="The GoldScout Farm tab">
+  <img class="shot" src="screenshots/20261117_Frame.JPG" alt="The GoldScout Farm tab">
 </div>
 </div>
 
@@ -1043,7 +1043,7 @@ def page_de(s):
     <div class="next"><b>Dann nimm GoldScout Companion dazu.</b> Die App für Windows und Mac bringt stündlich Auktionspreise in GoldScout, ohne zu scannen, und teilt deine Dropdaten, damit der Farmen-Tab immer besser wird.<br>
       <a class="btn" href="/de/companion">Zur Companion-App</a></div>
   </div>
-  <img class="shot" src="/screenshots/Frame.JPG" alt="Der Farmen-Tab von GoldScout">
+  <img class="shot" src="/screenshots/20261117_Frame.JPG" alt="Der Farmen-Tab von GoldScout">
 </div>
 </div>
 
@@ -1159,7 +1159,7 @@ def page_es(s):
     <div class="next"><b>Luego añade GoldScout Companion.</b> La aplicación para Windows y Mac trae cada hora los precios de subasta a GoldScout sin escanear, y comparte tus datos de botín para que la pestaña Farmear siga mejorando.<br>
       <a class="btn" href="/es/companion">Ver Companion</a></div>
   </div>
-  <img class="shot" src="/screenshots/Frame.JPG" alt="La pestaña Farmear de GoldScout">
+  <img class="shot" src="/screenshots/20261117_Frame.JPG" alt="La pestaña Farmear de GoldScout">
 </div>
 </div>
 
@@ -1274,7 +1274,7 @@ def page_fr(s):
     <div class="next"><b>Ajoutez ensuite GoldScout Companion.</b> L'application pour Windows et Mac apporte les prix de l'hôtel des ventes dans GoldScout toutes les heures, sans analyse, et partage vos données de butin pour que l'onglet Farm continue de s'améliorer.<br>
       <a class="btn" href="/fr/companion">Découvrir Companion</a></div>
   </div>
-  <img class="shot" src="/screenshots/Frame.JPG" alt="L'onglet Farm de GoldScout">
+  <img class="shot" src="/screenshots/20261117_Frame.JPG" alt="L'onglet Farm de GoldScout">
 </div>
 </div>
 
