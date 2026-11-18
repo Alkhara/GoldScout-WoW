@@ -1,4 +1,4 @@
-GoldScout-export 5^4pwziwqfnnzh^6
+GoldScout-export 5^4pwziwqfnnzh^7
 92^4^0^39^40^1418^0.3289^0.6611^4^Rock Elemental^4552:2:2,4553:1:1,4627:3:3,4784:2:2,7067:1:1^
 2271^1^0^32^32^1416^0.2154^0.5396^1^Dalaran Shield Guard^4306:1:2^
 2358^2^0^33^33^1416^0.2243^0.5567^2^Dalaran Summoner^3745:1:1,4306:1:2^
@@ -33,7 +33,8 @@ GoldScout-export 5^4pwziwqfnnzh^6
 2944^1^0^41^41^1418^0.6119^0.6786^1^Boss Tho'grun^4338:1:1,4640:1:1^
 3560^3^0^40^41^1418^0.4880^0.7138^3^Healing Ward^^
 4342^3^0^37^37^1445^0.4828^0.2174^3^Drywallow Vicejaw^770:3:4,3667:1:1^
-4343^1^0^37^37^1445^0.3720^0.3532^1^Drywallow Snapper^3667:1:1^
+4343^1^0^37^38^1445^0.3720^0.3532^1^Drywallow Snapper^3667:1:1^
+4344^1^0^39^39^1445^0.4786^0.4831^1^Mottled Drywallow Crocolisk^770:1:1^
 4351^1^0^35^36^1445^0.3816^0.2355^1^Bloodfen Raptor^^
 4352^5^0^36^37^1445^0.4761^0.1951^5^Bloodfen Screecher^4461:3:3,12184:1:1,14589:1:1^
 4355^10^0^37^38^1445^0.3943^0.4334^10^Bloodfen Scytheclaw^4461:4:4,4586:2:2,4587:1:1,5637:1:1,12184:4:4,248710:1:1^
@@ -47,6 +48,7 @@ GoldScout-export 5^4pwziwqfnnzh^6
 4379^8^0^38^39^1445^0.3157^0.2215^8^Darkmist Silkspinner^1074:1:1,4337:1:1,4585:3:3,5637:1:1,5884:5:11,12205:4:4^
 4380^1^0^40^40^1445^0.3095^0.2052^1^Darkmist Widow^1714:1:1^
 4382^1^0^35^35^1445^0.4988^0.2242^1^Withervine Creeper^^
+4393^1^0^40^40^1445^0.4791^0.4816^1^Acidic Swamp Ooze^^
 4411^7^0^36^37^1445^0.3980^0.3726^7^Darkfang Lurker^4585:4:4,5959:2:2,12205:5:5^
 4412^6^0^38^39^1445^0.3816^0.5254^6^Darkfang Creeper^5959:2:2,12205:2:2^
 4414^11^0^37^38^1445^0.4085^0.4282^11^Darkfang Venomspitter^4337:2:2,4585:5:5,5959:2:2,10285:1:1,12205:2:2,15226:1:1^
@@ -73,6 +75,7 @@ GoldScout-export 5^4pwziwqfnnzh^6
 @i^3802^Hardened Leather Bracers
 @i^3809^Double Mail Boots
 @i^3812^Double Mail Gloves
+@i^3827^Mana Potion
 @i^3857^Coal
 @i^4041^Aurora Cowl
 @i^4079^Chief Brigadier Leggings
@@ -107,6 +110,8 @@ GoldScout-export 5^4pwziwqfnnzh^6
 @i^5884^Unpopped Darkmist Eye
 @i^5959^Acidic Venom Sac
 @i^6166^Coyote Jawbone
+@i^6308^Raw Bristle Whisker Catfish
+@i^6309^17 Pound Catfish
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
 @i^6362^Raw Rockscale Cod
@@ -122,6 +127,7 @@ GoldScout-export 5^4pwziwqfnnzh^6
 @i^7912^Solid Stone
 @i^8146^Wicked Claw
 @i^8150^Deeprock Salt
+@i^8365^Raw Mithril Head Trout
 @i^8748^Double Mail Coif
 @i^9893^Huntsman's Leggings of Frost Protection
 @i^10285^Shadow Silk
@@ -171,6 +177,7 @@ GoldScout-export 5^4pwziwqfnnzh^6
 @q^3802^0:4:0
 @q^3809^0:4:0
 @q^3812^0:4:0
+@q^3827^1:0:0
 @q^3857^1:7:1
 @q^4041^2:4:0
 @q^4079^2:4:0
@@ -205,6 +212,8 @@ GoldScout-export 5^4pwziwqfnnzh^6
 @q^5884^1:12:0
 @q^5959^1:12:0
 @q^6166^1:12:0
+@q^6308^1:7:1
+@q^6309^1:15:0
 @q^6358^1:7:1
 @q^6359^1:7:1
 @q^6362^1:7:1
@@ -220,6 +229,7 @@ GoldScout-export 5^4pwziwqfnnzh^6
 @q^7912^1:7:1
 @q^8146^1:7:1
 @q^8150^1:7:1
+@q^8365^1:7:1
 @q^8748^0:4:0
 @q^9893^2:4:0
 @q^10285^1:7:1
@@ -1049,6 +1059,7 @@ GoldScout-export 5^4pwziwqfnnzh^6
 @a^3560^269:1,289:1,290:1
 @a^4342^89:3
 @a^4343^147:1
+@a^4344^189:1
 @a^4351^87:1
 @a^4352^69:3,89:2
 @a^4355^147:3,149:1,167:2,168:1,207:1,208:1,227:1
@@ -1062,9 +1073,11 @@ GoldScout-export 5^4pwziwqfnnzh^6
 @a^4379^86:8
 @a^4380^86:1
 @a^4382^89:1
+@a^4393^189:1
 @a^4411^107:2,147:1,167:1,168:3
 @a^4412^188:2,207:2,227:2
 @a^4414^147:2,168:7,187:1,208:1
 @a^4834^87:1,107:3,108:3,147:1,148:1
-@f^1434^0^25^150^4603:8:8,6358:2:2,6359:2:2,6362:12:12,21151:1:1^305:25
+@f^1434^0^32^150^4603:8:8,6358:2:2,6359:2:2,6362:19:19,21151:1:1^285:7,305:25
+@f^1445^0^165^158^3827:1:1,6308:58:58,6309:1:1,8365:105:105^189:165
 @l^0^enUS

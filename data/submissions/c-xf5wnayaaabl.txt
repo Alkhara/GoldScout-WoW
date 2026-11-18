@@ -1,18 +1,33 @@
-GoldScout-export 5^xf5wnayaaabl^2
+GoldScout-export 5^xf5wnayaaabl^3
+3098^10^0^1^2^1411^0.4342^0.7160^10^Mottled Boar^117:3:3,1372:1:1,1376:1:1,2210:1:1,4865:4:4,7098:3:3^
+3101^11^0^3^4^1411^0.4540^0.5711^11^Vile Familiar^1369:1:1,2589:7:7,2650:1:1^
+3124^14^0^3^3^1411^0.4086^0.6419^14^Scorpid Worker^1376:1:1,2211:1:1,2650:1:1,4862:8:8,4867:4:4,7099:5:5,7100:3:3,7101:3:3^
 3256^1^0^17^17^1413^0.5781^0.5335^1^Sunscale Scytheclaw^3180:1:1,5055:1:1^
 3266^3^0^12^13^1413^0.5833^0.2565^3^Razormane Defender^2589:1:2,4537:1:1,211786:1:1^
 3269^4^0^12^13^1413^0.5840^0.2511^4^Razormane Geomancer^2589:2:5,15297:1:1^
 3271^1^0^13^14^1413^0.5868^0.2690^1^Razormane Mystic^2589:1:1^
+3281^2^0^4^4^1411^0.4062^0.6740^2^Sarkoth^4862:2:2,4905:1:1,7100:2:2^
 3382^2^0^14^14^1413^0.6283^0.4973^2^Southsea Cannoneer^414:1:1,1498:1:1^
 3415^1^0^11^12^1413^0.5582^0.1779^1^Savannah Huntress^5134:1:1^
 3438^2^0^15^15^1413^0.5858^0.2720^2^Kreenig Snarlsnout^5063:1:1^
 3475^1^0^16^16^1413^0.5613^0.1816^1^Echeyakee^3731:1:1,5100:1:1,5135:1:1^
+@i^117^Tough Jerky
 @i^414^Dalaran Sharp
+@i^1369^Ragged Leather Belt
+@i^1372^Ragged Cloak
+@i^1376^Frayed Cloak
 @i^1498^Calico Gloves
+@i^2210^Battered Buckler
+@i^2211^Bent Large Shield
 @i^2589^Linen Cloth
+@i^2650^Flimsy Chain Boots
 @i^3180^Flecked Raptor Scale
 @i^3731^Lion Meat
 @i^4537^Tel'Abim Banana
+@i^4862^Scorpid Worker Tail
+@i^4865^Ruined Pelt
+@i^4867^Broken Scorpid Leg
+@i^4905^Sarkoth's Mangled Claw
 @i^5055^Intact Raptor Horn
 @i^5063^Kreenig Snarlsnout's Tusk
 @i^5100^Echeyakee's Hide
@@ -22,15 +37,30 @@ GoldScout-export 5^xf5wnayaaabl^2
 @i^6351^Dented Crate
 @i^6358^Oily Blackmouth
 @i^6361^Raw Rainbow Fin Albacore
+@i^7098^Splintered Tusk
+@i^7099^Severed Pincer
+@i^7100^Sticky Ichor
+@i^7101^Bug Eye
 @i^15297^Grizzly Bracers
 @i^20708^Tightly Sealed Trunk
 @i^211786^Scroll: CHAP BALK WELLES
+@q^117^1:0:0
 @q^414^1:0:0
+@q^1369^0:4:0
+@q^1372^0:4:0
+@q^1376^0:4:0
 @q^1498^0:4:0
+@q^2210^0:4:0
+@q^2211^0:4:0
 @q^2589^1:7:1
+@q^2650^0:4:0
 @q^3180^0:15:0
 @q^3731^1:7:1
 @q^4537^1:0:0
+@q^4862^1:12:0
+@q^4865^0:15:0
+@q^4867^0:15:0
+@q^4905^1:12:0
 @q^5055^1:12:0
 @q^5063^1:12:0
 @q^5100^1:12:0
@@ -40,14 +70,23 @@ GoldScout-export 5^xf5wnayaaabl^2
 @q^6351^1:15:0
 @q^6358^1:7:1
 @q^6361^1:7:1
+@q^7098^0:15:0
+@q^7099^0:15:0
+@q^7100^0:15:0
+@q^7101^0:15:0
 @q^15297^1:4:0
 @q^20708^1:15:0
 @q^211786^1:0:0
+@m^1411^Durotar
 @m^1413^The Barrens
+@a^3098^288:10
+@a^3101^228:3,229:8
+@a^3124^247:2,248:8,268:3,289:1
 @a^3256^211:1
 @a^3266^91:1,111:2
 @a^3269^91:1,111:3
 @a^3271^111:1
+@a^3281^268:2
 @a^3382^192:2
 @a^3415^71:1
 @a^3438^111:2
