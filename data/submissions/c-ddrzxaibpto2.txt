@@ -1,4 +1,5 @@
-GoldScout-export 5^ddrzxaibpto2^18
+GoldScout-export 5^ddrzxaibpto2^19
+92^8^0^39^40^1418^0.1459^0.3548^8^Rock Elemental^4552:1:1,4784:3:3,7067:1:1,8150:3:3^
 743^1^0^42^43^1435^0.8927^0.7307^1^Wyrmkin Dreamwalker^^
 747^1^0^42^42^1435^0.8316^0.8684^1^Marsh Murloc^^
 750^6^0^42^43^1435^0.9083^0.7008^6^Marsh Inkspewer^4422:1:1,6149:1:1,7973:1:1^
@@ -26,10 +27,13 @@ GoldScout-export 5^ddrzxaibpto2^18
 2693^4^0^45^46^1425^0.2958^0.4797^4^Highvale Marksman^^
 2694^1^0^46^46^1425^0.2863^0.4651^1^Highvale Ranger^^
 2715^1^0^39^40^1418^0.2942^0.5997^1^Dustbelcher Brute^^
+2717^1^0^42^42^1418^0.0673^0.7520^1^Dustbelcher Mauler^^
 2729^13^0^39^40^1418^0.2994^0.6090^13^Elder Crag Coyote^^
 2732^1^0^38^38^1418^0.4310^0.6820^1^Ridge Huntress^^
-2735^14^0^37^39^1418^0.2029^0.4460^14^Lesser Rock Elemental^4784:2:2,7912:3:3,8150:1:1^
+2735^37^0^37^39^1418^0.1929^0.4357^37^Lesser Rock Elemental^4552:2:2,4553:1:1,4626:4:4,4784:7:7,7067:1:1,7912:3:3,8150:1:1,248690:1:1^
+2736^6^0^42^44^1418^0.0509^0.8158^6^Greater Rock Elemental^4552:1:1,4554:1:1,4628:1:1,4784:3:3,7067:1:1,7912:2:4,8150:2:2^
 2748^1^0^0^0^0^0.0000^0.0000^0^^^
+2752^1^0^45^45^1418^0.0420^0.8183^1^Rumbler^^
 2831^12^0^39^41^1418^0.1934^0.6425^12^Giant Buzzard^5116:1:1,7847:2:2,12037:3:3,248710:1:1^
 2923^1^0^42^42^1425^0.1820^0.5105^1^Mangy Silvermane^^
 2925^3^0^45^46^1425^0.4906^0.5571^3^Silvermane Howler^12203:1:1,12208:1:1^
@@ -114,6 +118,9 @@ GoldScout-export 5^ddrzxaibpto2^18
 @i^4338^Mageweave Cloth
 @i^4422^Scroll of Stamina III
 @i^4461^Raptor Hide
+@i^4552^Smooth Stone Chip
+@i^4553^Jagged Piece of Stone
+@i^4554^Shiny Polished Stone
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
 @i^4583^Thick Furry Mane
@@ -123,6 +130,8 @@ GoldScout-export 5^ddrzxaibpto2^18
 @i^4591^Eagle Eye
 @i^4599^Cured Ham Steak
 @i^4603^Raw Spotted Yellowtail
+@i^4626^Small Stone Shard
+@i^4628^Bracers of Rock Binding
 @i^4784^Lifeless Stone
 @i^5116^Long Tail Feather
 @i^5516^Threshadon Fang
@@ -135,6 +144,7 @@ GoldScout-export 5^ddrzxaibpto2^18
 @i^6359^Firefin Snapper
 @i^6361^Raw Rainbow Fin Albacore
 @i^6362^Raw Rockscale Cod
+@i^7067^Elemental Earth
 @i^7847^Buzzard Gizzard
 @i^7912^Solid Stone
 @i^7973^Big-mouth Clam
@@ -161,6 +171,7 @@ GoldScout-export 5^ddrzxaibpto2^18
 @i^19023^Katoom's Best Lure
 @i^21150^Iron Bound Trunk
 @i^213526^Hybrid Haunch
+@i^248690^Waylaid Crate: Earthly Expert Herbs
 @i^248694^Waylaid Crate: Expert Curiosities
 @i^248710^Waylaid Crate: Expert Parts
 @i^279601^Intact Raptor Hide
@@ -176,6 +187,9 @@ GoldScout-export 5^ddrzxaibpto2^18
 @q^4338^1:7:1
 @q^4422^1:0:0
 @q^4461^1:7:1
+@q^4552^0:15:0
+@q^4553^0:15:0
+@q^4554^0:15:0
 @q^4555^0:15:0
 @q^4556^0:15:0
 @q^4583^0:15:0
@@ -185,6 +199,8 @@ GoldScout-export 5^ddrzxaibpto2^18
 @q^4591^0:15:0
 @q^4599^1:0:0
 @q^4603^1:7:1
+@q^4626^1:12:0
+@q^4628^1:12:0
 @q^4784^0:15:0
 @q^5116^1:7:1
 @q^5516^0:2:0
@@ -197,6 +213,7 @@ GoldScout-export 5^ddrzxaibpto2^18
 @q^6359^1:7:1
 @q^6361^1:7:1
 @q^6362^1:7:1
+@q^7067^1:7:1
 @q^7847^1:12:0
 @q^7912^1:7:1
 @q^7973^1:7:0
@@ -223,6 +240,7 @@ GoldScout-export 5^ddrzxaibpto2^18
 @q^19023^1:12:0
 @q^21150^1:15:0
 @q^213526^1:12:0
+@q^248690^1:0:1
 @q^248694^1:0:1
 @q^248710^2:0:1
 @q^279601^1:12:0
@@ -1072,6 +1090,7 @@ GoldScout-export 5^ddrzxaibpto2^18
 @c^279982^
 @c^279990^
 @c^286152^
+@a^92^122:3,142:3,143:2
 @a^743^297:1
 @a^747^356:1
 @a^750^258:2,278:2,317:1,337:1
@@ -1099,9 +1118,12 @@ GoldScout-export 5^ddrzxaibpto2^18
 @a^2693^185:3,186:1
 @a^2694^185:1
 @a^2715^225:1
+@a^2717^301:1
 @a^2729^184:1,205:1,225:3,226:1,246:1,247:4,285:2
 @a^2732^268:1
-@a^2735^163:7,164:1,184:6
+@a^2735^142:1,143:2,163:17,164:3,183:3,184:11
+@a^2736^320:3,321:3
+@a^2752^320:1
 @a^2831^223:6,243:1,246:1,282:1,286:1,303:1,304:1
 @a^2923^203:1
 @a^2925^190:1,230:1,248:1

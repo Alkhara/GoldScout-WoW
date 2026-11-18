@@ -1,4 +1,5 @@
-GoldScout-export 5^4pwziwqfnnzh^3
+GoldScout-export 5^4pwziwqfnnzh^4
+92^1^0^40^40^1418^0.1678^0.3876^1^Rock Elemental^4784:1:1,7067:1:1^
 2271^1^0^32^32^1416^0.2154^0.5396^1^Dalaran Shield Guard^4306:1:2^
 2358^2^0^33^33^1416^0.2243^0.5567^2^Dalaran Summoner^3745:1:1,4306:1:2^
 2359^13^0^32^33^1416^0.2402^0.5570^13^Elemental Slave^2838:4:6,3715:4:4,4553:1:1,4784:3:3,7067:1:1,8150:2:2,262888:1:1^
@@ -12,8 +13,9 @@ GoldScout-export 5^4pwziwqfnnzh^3
 2574^8^0^36^37^1417^0.8454^0.3184^8^Drywhisker Digger^4306:2:6,4338:1:1,4435:6:6^
 2580^1^0^37^37^1417^0.2161^0.7254^1^Elder Mesa Buzzard^3404:1:1,11416:1:1,12037:1:1^
 2592^4^0^38^39^1417^0.3506^0.5694^4^Rumbling Exile^4552:1:1,4784:2:2,7067:1:1,7912:2:3^
-2595^6^0^38^39^1417^0.2250^0.8473^6^Daggerspine Raider^3809:1:1,4041:1:1,6362:1:1,7072:6:6,17057:1:1,17058:2:2^
-2596^3^0^40^40^1417^0.2240^0.8469^3^Daggerspine Sorceress^1708:1:1,3802:1:1,17058:1:1^
+2595^10^0^38^39^1417^0.2148^0.8587^10^Daggerspine Raider^3809:1:1,4041:1:1,6362:1:1,7072:10:10,17057:2:2,17058:4:4^
+2596^4^0^40^40^1417^0.2160^0.8605^4^Daggerspine Sorceress^1708:1:1,3802:1:1,4738:1:1,7072:1:1,17058:2:2^
+2735^53^0^37^39^1418^0.1983^0.4376^53^Lesser Rock Elemental^4552:6:6,4553:16:16,4626:10:10,4784:27:27,6417:1:1,7067:6:6,7848:5:5,7912:9:13,8150:17:17,213545:1:1^
 2760^4^0^38^39^1417^0.2624^0.3101^4^Burning Exile^3857:1:1,4479:1:1,4787:4:4,7068:1:1^
 2761^3^0^38^39^1417^0.6701^0.3189^3^Cresting Exile^4791:2:5^
 2762^5^0^38^39^1417^0.5148^0.4967^5^Thundering Exile^4480:2:2,7069:1:1^
@@ -72,6 +74,8 @@ GoldScout-export 5^4pwziwqfnnzh^3
 @i^4585^Dripping Spider Mandible
 @i^4586^Smooth Raptor Skin
 @i^4587^Tribal Raptor Feathers
+@i^4626^Small Stone Shard
+@i^4738^Imperial Leather Belt
 @i^4784^Lifeless Stone
 @i^4787^Burning Pitch
 @i^4791^Enchanted Water
@@ -81,10 +85,12 @@ GoldScout-export 5^4pwziwqfnnzh^3
 @i^5884^Unpopped Darkmist Eye
 @i^5959^Acidic Venom Sac
 @i^6362^Raw Rockscale Cod
+@i^6417^Aurora Cloak
 @i^7067^Elemental Earth
 @i^7068^Elemental Fire
 @i^7069^Elemental Air
 @i^7072^Naga Scale
+@i^7848^Rock Elemental Shard
 @i^7912^Solid Stone
 @i^8150^Deeprock Salt
 @i^10285^Shadow Silk
@@ -100,6 +106,7 @@ GoldScout-export 5^4pwziwqfnnzh^3
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
 @i^213422^Illegible Recipe
+@i^213545^Scroll: PEATCHY ATTAX
 @i^213547^Scroll: THAW WORDS
 @i^248710^Waylaid Crate: Expert Parts
 @i^262888^Sealed Journeyman's Writ
@@ -139,6 +146,8 @@ GoldScout-export 5^4pwziwqfnnzh^3
 @q^4585^0:15:0
 @q^4586^0:15:0
 @q^4587^0:15:0
+@q^4626^1:12:0
+@q^4738^2:4:0
 @q^4784^0:15:0
 @q^4787^0:15:0
 @q^4791^1:0:0
@@ -148,10 +157,12 @@ GoldScout-export 5^4pwziwqfnnzh^3
 @q^5884^1:12:0
 @q^5959^1:12:0
 @q^6362^1:7:1
+@q^6417^2:4:0
 @q^7067^1:7:1
 @q^7068^1:7:1
 @q^7069^1:7:1
 @q^7072^1:7:1
+@q^7848^1:12:0
 @q^7912^1:7:1
 @q^8150^1:7:1
 @q^10285^1:7:1
@@ -167,12 +178,14 @@ GoldScout-export 5^4pwziwqfnnzh^3
 @q^17057^1:15:0
 @q^17058^1:15:0
 @q^213422^1:12:0
+@q^213545^1:0:0
 @q^213547^1:0:0
 @q^248710^2:0:1
 @q^262888^3:0:0
 @q^278225^1:12:0
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
+@m^1418^Badlands
 @m^1445^Dustwallow Marsh
 @c^118^
 @c^724^
@@ -936,6 +949,7 @@ GoldScout-export 5^4pwziwqfnnzh^3
 @c^279981^
 @c^279982^
 @c^286152^
+@a^92^143:1
 @a^2271^204:1
 @a^2358^204:1,224:1
 @a^2359^204:6,205:1,224:2,225:2,245:2
@@ -949,8 +963,9 @@ GoldScout-export 5^4pwziwqfnnzh^3
 @a^2574^116:1,136:4,137:3
 @a^2580^284:1
 @a^2592^226:2,227:2
-@a^2595^324:4,344:2
-@a^2596^324:3
+@a^2595^324:4,343:2,344:4
+@a^2596^324:3,363:1
+@a^2735^143:2,163:20,164:19,183:1,184:11
 @a^2760^125:4
 @a^2761^133:3
 @a^2762^190:3,210:2
