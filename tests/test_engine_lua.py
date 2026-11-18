@@ -441,6 +441,28 @@ class AllLootTests(unittest.TestCase):
                 if m.npc in (3000, 3001)}
         self.assertGreater(mobs[3000].each, mobs[3001].each)
 
+    def test_each_item_row_leaves_out_only_its_own_item(self):
+        # The mob's loot is valued once per build; each of its rows then takes out its own item.
+        self.mob()
+        self.item(5001, price=4000)                                    # a second reagent: 3800 after the cut
+        self.ns.db.drops[3000].i[5001] = self.lua.table_from({"d": 5, "q": 5})
+        self.ns.db.settings.allLoot = True
+        rows = self.rows()
+        first, second = rows[("Learned", 5000)], rows[("Learned", 5001)]
+        self.assertAlmostEqual(first.otherLoot, (50 * 15 + 950 * 6 + 3800 * 5) / 15)
+        self.assertAlmostEqual(second.otherLoot, (50 * 15 + 950 * 6) / 15)   # 5000 dropped twice: under the minimum
+        self.assertEqual(sorted(p.item for p in first.otherLootParts.values()), [5001, 5100, 5101])
+        self.assertEqual(sorted(p.item for p in second.otherLootParts.values()), [5100, 5101])
+
+    def test_item_values_are_only_kept_during_a_build(self):
+        self.mob()
+        self.ns.db.settings.allLoot = True
+        self.rows()
+        self.fake.prices[5101] = 3000                                  # a new price after the list was built
+        self.assertAlmostEqual(self.ns.LootValue(5101)[0], 3000 * 0.95)
+        self.assertIsNone(self.ns.BuildCache())
+        self.assertAlmostEqual(self.row().otherLoot, (50 * 15 + 2850 * 6) / 15)
+
     def test_a_lucky_drop_or_two_doesnt_count(self):
         self.mob()
         self.item(5102, price=200000, reagent=False)                   # a 20g recipe, seen twice

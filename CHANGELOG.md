@@ -7,6 +7,8 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- **The Farm tab opens about three times faster:** with over 2,000 mobs in the community data, building the Farm list could freeze the game for half a second, and on slower PCs stop with "script ran too long". It now values each item and each mob's loot once per update instead of once per row.
+
 ## v0.12.28
 
 - **GoldScout Companion has a dark mode on Windows:** its window, title bar included, follows Windows' app mode (Settings › Personalization › Colors), and switches when you change it. On a Mac it already followed your Mac's appearance.

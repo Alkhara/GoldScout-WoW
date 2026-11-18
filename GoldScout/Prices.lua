@@ -55,6 +55,20 @@ end
 -- The companion's snapshot for a market (default: your realm and faction), if
 -- it's current: { house, snapshot, items = { [itemID] = { price, quantity } } }.
 function Prices:Companion(key)
+  local cache = ns.BuildCache and ns.BuildCache()
+  if cache then
+    key = key or ns.MarketKey()
+    local hit = cache["companion:" .. key]
+    if hit == nil then
+      hit = self:CompanionNow(key) or false
+      cache["companion:" .. key] = hit
+    end
+    return hit or nil
+  end
+  return self:CompanionNow(key)
+end
+
+function Prices:CompanionNow(key)
   local data = GoldScoutPricesData
   local market = type(data) == "table" and type(data.markets) == "table" and data.markets[key or ns.MarketKey()]
   if type(market) ~= "table" or type(market.items) ~= "table" or type(market.snapshot) ~= "number" then
@@ -107,10 +121,15 @@ end
 
 -- The regional estimates, while you have no prices of your own.
 function Prices:Estimates()
-  if self:HasOwn() then
-    return nil
+  local cache = ns.BuildCache and ns.BuildCache()
+  if cache and cache.estimates ~= nil then
+    return cache.estimates or nil
   end
-  return self:Bundled()
+  local estimates = (not self:HasOwn()) and self:Bundled() or nil
+  if cache then
+    cache.estimates = estimates or false
+  end
+  return estimates
 end
 
 -- When GoldScout Companion last wrote its file (unix time), if it's loaded.

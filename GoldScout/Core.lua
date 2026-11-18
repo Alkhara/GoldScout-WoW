@@ -325,7 +325,7 @@ end
 -- nobody buys but someone lists high on your auction house can't carry them.
 ns.OTHER_LOOT_PRICE_CAP = 3
 
-function ns.LootValue(itemID, capped)
+local function LootValueNow(itemID, capped)
   if ns.JUNKBOXES and ns.JUNKBOXES[itemID] then
     return 0
   end
@@ -342,6 +342,36 @@ function ns.LootValue(itemID, capped)
     return value, wasCapped and value > sell
   end
   return sell
+end
+
+-- Building the Farm list values the same items thousands of times (every mob's other loot), so while it runs
+-- each item is valued once: ns.CacheLootValues(true) before, (false) after. The cache also ends with the
+-- frame it started in, so an error mid-build can't leave stale values behind.
+local lootValues, lootValuesTime, marketKey
+
+function ns.CacheLootValues(on)
+  lootValues, lootValuesTime, marketKey = on and {} or nil, on and GetTime() or nil, nil
+end
+
+-- While a Farm list build runs: a table other modules can keep answers in for the rest of the build (string
+-- keys; item values use the number keys). nil otherwise.
+function ns.BuildCache()
+  if lootValues and lootValuesTime == GetTime() then
+    return lootValues
+  end
+end
+
+function ns.LootValue(itemID, capped)
+  if lootValues and lootValuesTime == GetTime() then
+    local key = capped and -itemID or itemID
+    local hit = lootValues[key]
+    if not hit then
+      hit = { LootValueNow(itemID, capped) }
+      lootValues[key] = hit
+    end
+    return hit[1], hit[2]
+  end
+  return LootValueNow(itemID, capped)
 end
 
 -- Times an item must have dropped from a mob (yours plus the community's)
@@ -398,9 +428,16 @@ end
 
 -- Each realm and faction has its own auction house, so prices are stored per market.
 function ns.MarketKey()
+  if marketKey and lootValues and lootValuesTime == GetTime() then
+    return marketKey   -- every price lookup asks; during a Farm list build it can't change
+  end
   local realm = (GetNormalizedRealmName and GetNormalizedRealmName()) or GetRealmName() or "Unknown"
   local faction = UnitFactionGroup("player") or "Neutral"
-  return realm .. "-" .. faction
+  local key = realm .. "-" .. faction
+  if lootValues then
+    marketKey = key
+  end
+  return key
 end
 
 -- WoW Forever realm names say their ruleset at the end ("CAMWOWUS2Realm2PvP"),

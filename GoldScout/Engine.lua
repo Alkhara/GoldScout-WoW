@@ -17,6 +17,8 @@ local LEARNED_MIN_KILLS = 1
 -- 15 is where a drop rate's confidence turns "good". Items also need a few
 -- drops of their own (ns.OTHER_LOOT_MIN_DROPS).
 local OTHER_LOOT_MIN_KILLS = 15
+local NO_SKIP = {}
+local SORT_HOUR = 1e12   -- copper: 100 million gold
 -- Gold per hour from player data uses drops / (attempts + this), so a lucky
 -- first drop doesn't top the list; it fades out as attempts add up.
 local CAUTION_ATTEMPTS = 2
@@ -59,12 +61,31 @@ Engine.DIFFICULTY_TEXT = {
 }
 
 -- What you would actually receive selling one unit on the auction house.
-local function NetPrice(itemID)
+local function NetPriceNow(itemID)
   local price, listed, age = ns.Prices:Get(itemID)
   if not price then
     return nil, listed, age
   end
   return price * ns.AH_CUT, listed, age
+end
+
+-- The same, kept for the rest of a Farm list build (an item can have a row for every mob that drops it).
+local function NetPrice(itemID)
+  local cache = ns.BuildCache and ns.BuildCache()
+  if not cache then
+    return NetPriceNow(itemID)
+  end
+  local prices = cache.netPrices
+  if not prices then
+    prices = {}
+    cache.netPrices = prices
+  end
+  local hit = prices[itemID]
+  if not hit then
+    hit = { NetPriceNow(itemID) }
+    prices[itemID] = hit
+  end
+  return hit[1], hit[2], hit[3]
 end
 
 local function LevelText(minLevel, maxLevel)
@@ -281,25 +302,40 @@ local function ReagentFacts(itemID)
   return facts
 end
 
--- The mob players have seen drop an item most often per kill, even with too
--- few kills to rank it yet. Returns npcID, drops, kills, or nil.
-local function BestSighting(itemID)
-  local bestNpc, bestDrops, bestKills, bestRate
-  local function Check(npcID, entry)
-    local stat = entry and entry.i and entry.i[itemID]
-    if stat and (entry.k or 0) > 0 then
-      local drops, kills = ns.Learn:Evidence(npcID, itemID, false)
-      local rate = (kills > 0) and drops / kills or 0
-      if not bestRate or rate > bestRate then
-        bestNpc, bestDrops, bestKills, bestRate = npcID, drops, kills, rate
+-- Which mobs have dropped each item, listed in one pass over every mob the first time a Farm list build asks
+-- (looking through every mob for each item took a pass per item).
+local sightings
+
+local function IndexSightings()
+  local index = {}
+  for _, source in ipairs({ ns.db.drops or {}, ns.COMMUNITY }) do
+    for npcID, entry in pairs(source) do
+      if entry.i and (entry.k or 0) > 0 then
+        for itemID in pairs(entry.i) do
+          local list = index[itemID]
+          if not list then
+            list = {}
+            index[itemID] = list
+          end
+          list[#list + 1] = npcID
+        end
       end
     end
   end
-  for npcID, entry in pairs(ns.db.drops or {}) do
-    Check(npcID, entry)
-  end
-  for npcID, entry in pairs(ns.COMMUNITY) do
-    Check(npcID, entry)
+  return index
+end
+
+-- The mob players have seen drop an item most often per kill, even with too
+-- few kills to rank it yet. Returns npcID, drops, kills, or nil.
+local function BestSighting(itemID)
+  sightings = sightings or IndexSightings()
+  local bestNpc, bestDrops, bestKills, bestRate
+  for _, npcID in ipairs(sightings[itemID] or {}) do
+    local drops, kills = ns.Learn:Evidence(npcID, itemID, false)
+    local rate = (kills > 0) and drops / kills or 0
+    if not bestRate or rate > bestRate then
+      bestNpc, bestDrops, bestKills, bestRate = npcID, drops, kills, rate
+    end
   end
   return bestNpc, bestDrops, bestKills
 end
@@ -365,20 +401,28 @@ local function ShareHunts(rows)
           npcs[npcID] = true
         end
       end
-      for i, row in ipairs(list) do
-        -- This row's mobs first in the label, then the others.
-        local names, seen = {}, {}
-        local function AddNames(label)
-          for name in ((label or "") .. ", "):gmatch("(.-), ") do
-            if name ~= "" and not seen[name] then
-              seen[name] = true
-              names[#names + 1] = name
-            end
+      -- Every mob's name once, in list order; each row's label puts its own mobs first.
+      local groupNames = {}
+      local function Names(label, into, seen)
+        for name in ((label or "") .. ", "):gmatch("(.-), ") do
+          if name ~= "" and not seen[name] then
+            seen[name] = true
+            into[#into + 1] = name
           end
         end
-        AddNames(own[i].label)
-        for j = 1, #list do
-          AddNames(own[j].label)
+      end
+      local groupSeen = {}
+      for _, hunt in ipairs(own) do
+        Names(hunt.label, groupNames, groupSeen)
+      end
+      for i, row in ipairs(list) do
+        local names, seen = {}, {}
+        Names(own[i].label, names, seen)
+        for _, name in ipairs(groupNames) do
+          if not seen[name] then
+            seen[name] = true
+            names[#names + 1] = name
+          end
         end
         local shared = {}
         for field, value in pairs(own[i]) do
@@ -707,7 +751,7 @@ function Engine:JunkboxValue(boxID)
   return total, unpriced
 end
 
-function Engine:Farms()
+local function BuildFarms(self)
   local settings = ns.db.settings
   local level = UnitLevel("player") or 1
   local _, class = UnitClass("player")
@@ -737,13 +781,36 @@ function Engine:Farms()
   -- row.otherLoot. An item row's gold per hour stays that item's own, so a
   -- cheap drop from a mob with good trash doesn't top the By item list; the
   -- By mob view (MobFarms) adds the other loot once per mob.
+  -- Each mob's loot is valued once (a mob can have a dozen item rows), then each row leaves out its own item.
+  local mobLoot = {}
+  local wantedItems = {}   -- itemID: worth a Learned row (see below)
   local function AddOtherLoot(row, npcID)
     if not settings.allLoot or not row.each or not npcID then
       return row
     end
-    local value, seen, parts = ns.KillLootValue(row.item, ns.Learn:Entry(npcID), ns.COMMUNITY[npcID])
-    if seen >= OTHER_LOOT_MIN_KILLS and value > 0 then
-      row.otherLoot, row.otherLootKills, row.otherLootParts = value, seen, parts
+    local mob = mobLoot[npcID]
+    if not mob then
+      local value, seen, parts = ns.KillLootValue(NO_SKIP, ns.Learn:Entry(npcID), ns.COMMUNITY[npcID])
+      mob = { value = value, seen = seen, parts = parts }
+      mobLoot[npcID] = mob
+    end
+    if mob.seen < OTHER_LOOT_MIN_KILLS then
+      return row
+    end
+    local value, parts = mob.value, mob.parts
+    for i, part in ipairs(mob.parts) do
+      if part.item == row.item then
+        value, parts = value - part.value, {}
+        for j, other in ipairs(mob.parts) do
+          if j ~= i then
+            parts[#parts + 1] = other
+          end
+        end
+        break
+      end
+    end
+    if #parts > 0 then
+      row.otherLoot, row.otherLootKills, row.otherLootParts = value, mob.seen, parts
     end
     return row
   end
@@ -833,19 +900,26 @@ function Engine:Farms()
           items[itemID] = true
         end
         for itemID in pairs(items) do
-          local drops, attempts, perDrop = ns.Learn:Evidence(npcID, itemID, false)
-          local bindType = ns.ItemBindType(itemID)
-          local _, _, _, _, _, itemClass = ns.GetItemInfoInstant(itemID)
-          local rareDrop = RARE_DROP_CLASSES[itemClass] ~= nil
           -- Worth farming: crafting reagents (not food, scrolls or vendor junk),
           -- minus cloth, herbs, ore and leather, which have their own rows; plus
-          -- BoE gear and recipes when Rare drops is on.
-          local wanted
-          if rareDrop then
-            wanted = settings.showRareDrops and bindType ~= 1 and bindType ~= 4 and not ns.IsPoorQuality(itemID)
-          else
-            local facts = ReagentFacts(itemID)
-            wanted = facts and not gathered[itemID] and (settings.showRareDrops or not facts.gem)
+          -- BoE gear and recipes when Rare drops is on. Most loot isn't, so this
+          -- is decided once per item, before counting any drops.
+          local wanted = wantedItems[itemID]
+          if wanted == nil then
+            local _, _, _, _, _, itemClass = ns.GetItemInfoInstant(itemID)
+            if RARE_DROP_CLASSES[itemClass] ~= nil then
+              local bindType = settings.showRareDrops and ns.ItemBindType(itemID)
+              wanted = settings.showRareDrops and bindType ~= 1 and bindType ~= 4 and not ns.IsPoorQuality(itemID)
+            else
+              local facts = ReagentFacts(itemID)
+              wanted = facts and not gathered[itemID] and (settings.showRareDrops or not facts.gem)
+            end
+            wanted = wanted and true or false
+            wantedItems[itemID] = wanted
+          end
+          local drops, attempts, perDrop = 0, 0, 1
+          if wanted then
+            drops, attempts, perDrop = ns.Learn:Evidence(npcID, itemID, false)
           end
           if drops >= 1 and wanted then
             local net, listed, age = NetPrice(itemID)
@@ -1028,19 +1102,27 @@ function Engine:Farms()
     end
   end
 
-  -- Farms with an hourly estimate first, then market-only items by price.
+  -- Farms with an hourly estimate first, then market-only items by price. One number per row sorts thousands of
+  -- rows much faster than comparing fields: rows with an hourly estimate sit above SORT_HOUR, which no
+  -- per-hour or per-item value reaches.
+  for _, row in ipairs(shown) do
+    row.sortKey = row.hour and (SORT_HOUR + row.hour) or (row.each or 0)
+  end
   table.sort(shown, function(a, b)
-    if a.hour or b.hour then
-      if a.hour and b.hour and a.hour ~= b.hour then
-        return a.hour > b.hour
-      elseif not (a.hour and b.hour) then
-        return a.hour ~= nil
-      end
-    elseif a.each ~= b.each then
-      return (a.each or 0) > (b.each or 0)
+    if a.sortKey ~= b.sortKey then
+      return a.sortKey > b.sortKey
     end
     return (a.source or "") < (b.source or "")
   end)
+  return shown
+end
+
+function Engine:Farms()
+  ns.CacheLootValues(true)
+  sightings = nil
+  local shown = BuildFarms(self)
+  ns.CacheLootValues(false)
+  sightings = nil
   return shown
 end
 
