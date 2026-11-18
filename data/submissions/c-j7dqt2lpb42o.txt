@@ -1,33 +1,68 @@
-GoldScout-export 5^j7dqt2lpb42o^2
-597^4^0^36^37^1434^0.2010^0.1342^4^Bloodscalp Berserker^3915:1:1,4306:1:3^
-660^3^0^37^37^1434^0.2038^0.1277^3^Bloodscalp Witch Doctor^2742:1:1,4306:2:5^
-671^3^0^36^37^1434^0.2071^0.1374^3^Bloodscalp Headhunter^1532:3:4,3915:2:2,4306:2:3^
+GoldScout-export 5^j7dqt2lpb42o^4
+588^4^0^34^35^1434^0.2501^0.1133^4^Bloodscalp Scout^1708:1:1,2748:1:1,4306:2:3^
+595^4^0^34^35^1434^0.2604^0.0906^4^Bloodscalp Hunter^2725:1:1,4306:1:2^
+597^8^0^36^37^1434^0.2123^0.1209^8^Bloodscalp Berserker^3385:1:1,3915:1:1,4306:4:8^
+660^7^0^37^37^1434^0.2188^0.1152^7^Bloodscalp Witch Doctor^2730:1:1,2742:1:1,3915:1:1,4306:2:5^
+671^12^0^36^37^1434^0.2199^0.1084^12^Bloodscalp Headhunter^1532:11:20,2730:1:1,3915:2:2,4306:7:14^
+698^2^0^34^35^1434^0.2289^0.0976^2^Bloodscalp Tiger^^
+699^2^0^34^35^1434^0.2285^0.0982^2^Bloodscalp Beastmaster^2749:1:1^
+701^2^0^34^35^1434^0.2459^0.1090^2^Bloodscalp Mystic^2744:1:1,4306:1:2^
+729^4^0^37^37^1434^0.3215^0.1704^4^Sin'Dall^^
 873^1^0^36^37^1434^0.2475^0.2343^1^Saltscale Oracle^5796:1:1,17057:1:1^
 879^1^0^35^35^1434^0.2479^0.2326^1^Saltscale Hunter^1477:1:1,3815:1:1,5796:1:1^
+1094^9^0^34^35^1434^0.2789^0.0828^9^Venture Co. Miner^2745:1:1,3385:1:1,3799:1:1,4306:4:6,264210:1:1^
+1096^3^0^35^36^1434^0.2834^0.0827^3^Venture Co. Geologist^2749:1:1,4106:1:1,4306:3:4^
+1097^1^0^34^34^1434^0.2867^0.0774^1^Venture Co. Mechanic^1630:1:1,15286:1:1^
 3100^1^0^9^9^1411^0.4474^0.1730^1^Elder Mottled Boar^769:1:1,771:1:1^
-3560^3^0^37^37^1434^0.2031^0.1290^3^Healing Ward^^
+3560^4^0^37^37^1434^0.2111^0.1235^4^Healing Ward^^
 @i^769^Chunk of Boar Meat
 @i^771^Chipped Boar Tusk
 @i^1477^Scroll of Agility II
 @i^1532^Shrunken Head
+@i^1630^Broken Electro-lantern
+@i^1708^Sweet Nectar
+@i^2725^Green Hills of Stranglethorn - Page 1
+@i^2730^Green Hills of Stranglethorn - Page 6
 @i^2742^Green Hills of Stranglethorn - Page 18
+@i^2744^Green Hills of Stranglethorn - Page 20
+@i^2745^Green Hills of Stranglethorn - Page 21
+@i^2748^Green Hills of Stranglethorn - Page 24
+@i^2749^Green Hills of Stranglethorn - Page 25
+@i^3385^Lesser Mana Potion
+@i^3799^Interlaced Vest
 @i^3815^Double Mail Vest
 @i^3915^Bloody Bone Necklace
+@i^4106^Tumbled Crystal
 @i^4306^Silk Cloth
 @i^5796^Encrusted Tail Fin
 @i^6359^Firefin Snapper
+@i^15286^Long Redwood Bow
 @i^17057^Shiny Fish Scales
+@i^264210^Schematic: Shafety Sheep
 @q^769^1:7:1
 @q^771^0:15:0
 @q^1477^1:0:0
 @q^1532^1:12:0
+@q^1630^0:15:0
+@q^1708^1:0:0
+@q^2725^1:12:0
+@q^2730^1:12:0
 @q^2742^1:12:0
+@q^2744^1:12:0
+@q^2745^1:12:0
+@q^2748^1:12:0
+@q^2749^1:12:0
+@q^3385^1:0:0
+@q^3799^0:4:0
 @q^3815^0:4:0
 @q^3915^1:12:0
+@q^4106^1:12:0
 @q^4306^1:7:1
 @q^5796^1:12:0
 @q^6359^1:7:1
+@q^15286^2:2:0
 @q^17057^1:15:0
+@q^264210^1:9:0
 @m^1411^Durotar
 @m^1434^Stranglethorn Vale
 @c^118^
@@ -792,12 +827,21 @@ GoldScout-export 5^j7dqt2lpb42o^2
 @c^279981^
 @c^279982^
 @c^286152^
-@a^597^43:2,44:2
-@a^660^43:1,44:2
-@a^671^44:3
+@a^588^25:1,44:1,45:2
+@a^595^25:4
+@a^597^43:2,44:6
+@a^660^43:2,44:5
+@a^671^24:3,44:9
+@a^698^24:1,44:1
+@a^699^24:1,44:1
+@a^701^25:1,44:1
+@a^729^66:4
 @a^873^84:1
 @a^879^84:1
+@a^1094^25:9
+@a^1096^25:3
+@a^1097^25:1
 @a^3100^68:1
-@a^3560^43:1,44:2
+@a^3560^43:1,44:3
 @f^1434^0^3^155^6359:3:3^64:3
 @l^0^enUS
