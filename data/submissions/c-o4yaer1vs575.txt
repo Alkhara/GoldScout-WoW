@@ -1,4 +1,4 @@
-GoldScout-export 5^o4yaer1vs575^9
+GoldScout-export 5^o4yaer1vs575^10
 3^10^0^24^25^1431^0.2289^0.3653^10^Flesh Eater^887:1:1,929:1:1,1129:5:5,2589:1:1,2592:2:3,3048:1:1,4606:1:1,5529:1:1,6530:1:1^
 48^8^0^21^22^1431^0.8084^0.6980^8^Skeletal Warrior^1747:1:1,1772:1:1,2592:3:4,3385:1:1^
 202^26^0^23^24^1431^0.3600^0.4944^26^Skeletal Horror^880:1:1,1205:1:1,1598:3:3,1753:1:1,1823:1:1,2378:2:2,2589:1:1,2592:7:11,4306:1:1,4606:2:2,211855:1:1^
@@ -8,6 +8,7 @@ GoldScout-export 5^o4yaer1vs575^9
 213^13^0^19^20^1431^0.2362^0.2579^13^Starving Dire Wolf^1015:4:4,3301:1:1,9775:1:1,211784:1:1^
 217^12^0^19^20^1431^0.4019^0.2230^12^Venom Web Spider^1081:4:4,1130:2:2,2251:5:5,3174:5:5,4428:1:1,5574:1:1^
 218^2^0^24^25^1431^0.2180^0.4161^2^Grave Robber^2592:1:2^
+285^14^0^6^7^1429^0.5401^0.6597^14^Murloc^118:1:1,159:1:1,774:1:1,779:6:6,1417:1:1,2774:1:1,6303:1:3,8179:1:1^
 345^1^0^24^24^1433^0.1262^0.4785^1^Bellygrub^3631:1:1^
 511^1^0^26^26^1431^0.8067^0.7142^1^Insane Ghoul^1946:1:1^
 531^18^0^24^25^1431^0.1695^0.4447^18^Skeletal Fiend^1772:1:1,1818:1:1,2378:6:6,2589:3:6,2592:2:3,4306:1:1^
@@ -16,6 +17,7 @@ GoldScout-export 5^o4yaer1vs575^9
 565^8^0^20^21^1431^0.2943^0.2625^8^Rabid Dire Wolf^1015:2:2,3301:1:1,3402:3:3^
 569^6^0^21^22^1431^0.5781^0.2179^6^Green Recluse^878:2:2,1081:2:2,1130:2:2,3174:2:2,3182:1:1,4428:2:2^
 604^2^0^27^28^1431^0.2219^0.3493^2^Plague Spreader^1129:1:1,4606:1:1,6530:1:1^
+735^1^0^7^7^1429^0.5248^0.6601^1^Murloc Streamrunner^779:1:1^
 787^5^0^26^27^1431^0.1574^0.4084^5^Skeletal Healer^2378:2:2,4306:3:6^
 909^2^0^25^26^1431^0.5017^0.7684^2^Defias Night Blade^^
 930^11^0^24^25^1431^0.3689^0.4188^11^Black Widow Hatchling^1081:3:3,1288:2:2,2251:3:3,3174:5:5,3182:1:1,4428:3:3^
@@ -93,6 +95,10 @@ GoldScout-export 5^o4yaer1vs575^9
 267308^4^0^18^19^1413^0.5801^0.2669^4^Razormane Flesheater^2589:1:2^
 267314^1^0^19^19^1413^0.5794^0.2718^1^Razormane Berserker^1767:1:1^
 272273^1^0^24^24^1431^0.1939^0.6208^1^Lost Watcher^275895:1:1,281142:1:1^
+@i^118^Minor Healing Potion
+@i^159^Refreshing Spring Water
+@i^774^Malachite
+@i^779^Shiny Seashell
 @i^878^Fist-sized Spinneret
 @i^880^Staff of Horrors
 @i^887^Pound of Flesh
@@ -103,6 +109,7 @@ GoldScout-export 5^o4yaer1vs575^9
 @i^1130^Vial of Spider Venom
 @i^1205^Melon Juice
 @i^1288^Large Venom Sac
+@i^1417^Beaten Battle Axe
 @i^1475^Small Venom Sac
 @i^1598^Rot Blossom
 @i^1701^Curved Basilisk Claw
@@ -123,6 +130,7 @@ GoldScout-export 5^o4yaer1vs575^9
 @i^2447^Peacebloom
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2774^Rust-covered Blunderbuss
 @i^2794^An Old History Book
 @i^2969^Spellbinder Vest
 @i^3048^Lambent Scale Legguards
@@ -164,9 +172,11 @@ GoldScout-export 5^o4yaer1vs575^9
 @i^5664^Corroded Shrapnel
 @i^5675^Crystalized Scales
 @i^5736^Gerenzo's Mechanical Arm
+@i^6303^Raw Slitherskin Mackerel
 @i^6530^Nightcrawlers
 @i^6536^Willow Vest of Spirit
 @i^7307^Flesh Eating Worm
+@i^8179^Cadet's Bow
 @i^9451^Bubbling Water
 @i^9775^Bandit Cinch of Healing
 @i^11384^Broken Basilisk Teeth
@@ -185,6 +195,10 @@ GoldScout-export 5^o4yaer1vs575^9
 @i^279505^Jagged Orcish Sword
 @i^279507^Curved Orcish Dagger
 @i^281142^Merrick's Bow
+@q^118^1:0:0
+@q^159^1:0:0
+@q^774^2:7:1
+@q^779^0:15:0
 @q^878^0:7:0
 @q^880^2:2:0
 @q^887^0:15:0
@@ -195,6 +209,7 @@ GoldScout-export 5^o4yaer1vs575^9
 @q^1130^1:12:0
 @q^1205^1:0:0
 @q^1288^1:7:1
+@q^1417^0:2:0
 @q^1475^1:7:1
 @q^1598^1:12:0
 @q^1701^0:15:0
@@ -215,6 +230,7 @@ GoldScout-export 5^o4yaer1vs575^9
 @q^2447^1:7:1
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2774^0:2:0
 @q^2794^1:12:0
 @q^2969^2:4:0
 @q^3048^2:4:0
@@ -256,9 +272,11 @@ GoldScout-export 5^o4yaer1vs575^9
 @q^5664^1:12:0
 @q^5675^1:12:0
 @q^5736^1:12:0
+@q^6303^1:7:1
 @q^6530^1:0:0
 @q^6536^2:4:0
 @q^7307^1:0:0
+@q^8179^1:2:0
 @q^9451^1:0:0
 @q^9775^2:4:0
 @q^11384^0:15:0
@@ -757,6 +775,7 @@ GoldScout-export 5^o4yaer1vs575^9
 @a^213^83:2,86:1,88:1,102:3,104:2,105:3,106:1
 @a^217^69:2,70:3,72:1,87:1,94:1,102:1,103:2,162:1
 @a^218^164:2
+@a^285^250:1,269:1,270:8,271:4
 @a^345^182:1
 @a^511^296:1
 @a^531^162:1,163:6,164:3,183:8
@@ -765,6 +784,7 @@ GoldScout-export 5^o4yaer1vs575^9
 @a^565^91:2,103:2,104:4
 @a^569^70:1,90:1,91:3,94:1
 @a^604^124:2
+@a^735^270:1
 @a^787^162:1,163:4
 @a^909^310:2
 @a^930^126:4,146:2,166:1,167:1,186:1,206:1,276:1

@@ -1,18 +1,23 @@
-GoldScout-export 5^4pwziwqfnnzh^2
+GoldScout-export 5^4pwziwqfnnzh^3
 2271^1^0^32^32^1416^0.2154^0.5396^1^Dalaran Shield Guard^4306:1:2^
 2358^2^0^33^33^1416^0.2243^0.5567^2^Dalaran Summoner^3745:1:1,4306:1:2^
 2359^13^0^32^33^1416^0.2402^0.5570^13^Elemental Slave^2838:4:6,3715:4:4,4553:1:1,4784:3:3,7067:1:1,8150:2:2,262888:1:1^
-2561^2^0^36^37^1417^0.5293^0.6877^2^Highland Fleshstalker^3685:1:1,4513:1:1,12184:1:1^
+2561^10^0^36^37^1417^0.5018^0.7126^10^Highland Fleshstalker^1696:1:1,3685:3:3,4461:5:5,4513:2:2,4586:2:2,12184:4:4^
 2563^5^0^32^33^1417^0.5605^0.3914^5^Plains Creeper^1074:2:2,1081:2:2,2251:4:4,278225:5:5^
+2565^1^0^35^36^1417^0.5621^0.6505^1^Giant Plains Creeper^1074:1:1^
 2566^6^0^35^36^1417^0.5282^0.7461^6^Boulderfist Brute^4306:2:3,213422:1:1^
 2567^3^0^36^37^1417^0.5329^0.7713^3^Boulderfist Magus^4306:2:5^
 2572^5^0^35^36^1417^0.7932^0.3596^5^Drywhisker Kobold^2592:1:3,4306:1:1,4435:3:3^
 2573^7^0^37^38^1417^0.8426^0.3047^7^Drywhisker Surveyor^4306:4:8,4435:3:3^
 2574^8^0^36^37^1417^0.8454^0.3184^8^Drywhisker Digger^4306:2:6,4338:1:1,4435:6:6^
+2580^1^0^37^37^1417^0.2161^0.7254^1^Elder Mesa Buzzard^3404:1:1,11416:1:1,12037:1:1^
 2592^4^0^38^39^1417^0.3506^0.5694^4^Rumbling Exile^4552:1:1,4784:2:2,7067:1:1,7912:2:3^
+2595^6^0^38^39^1417^0.2250^0.8473^6^Daggerspine Raider^3809:1:1,4041:1:1,6362:1:1,7072:6:6,17057:1:1,17058:2:2^
+2596^3^0^40^40^1417^0.2240^0.8469^3^Daggerspine Sorceress^1708:1:1,3802:1:1,17058:1:1^
 2760^4^0^38^39^1417^0.2624^0.3101^4^Burning Exile^3857:1:1,4479:1:1,4787:4:4,7068:1:1^
 2761^3^0^38^39^1417^0.6701^0.3189^3^Cresting Exile^4791:2:5^
 2762^5^0^38^39^1417^0.5148^0.4967^5^Thundering Exile^4480:2:2,7069:1:1^
+2776^2^0^40^40^1417^0.3569^0.7954^2^Vengeful Surge^^
 4342^3^0^37^37^1445^0.4828^0.2174^3^Drywallow Vicejaw^770:3:4,3667:1:1^
 4343^1^0^37^37^1445^0.3720^0.3532^1^Drywallow Snapper^3667:1:1^
 4351^1^0^35^36^1445^0.3816^0.2355^1^Bloodfen Raptor^^
@@ -35,19 +40,25 @@ GoldScout-export 5^4pwziwqfnnzh^2
 @i^770^Pointy Crocolisk Tooth
 @i^1074^Hard Spider Leg Tip
 @i^1081^Crisp Spider Meat
+@i^1696^Curved Raptor Talon
+@i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
 @i^1714^Necklace of Calisea
 @i^2251^Gooey Spider Leg
 @i^2592^Wool Cloth
 @i^2838^Heavy Stone
 @i^3197^Stonecutter Claymore of the Hierophant
+@i^3404^Buzzard Wing
 @i^3667^Tender Crocolisk Meat
 @i^3685^Raptor Egg
 @i^3715^Bracers of Earth Binding
 @i^3745^Rune of Opening
 @i^3796^Interlaced Gloves
+@i^3802^Hardened Leather Bracers
+@i^3809^Double Mail Boots
 @i^3812^Double Mail Gloves
 @i^3857^Coal
+@i^4041^Aurora Cowl
 @i^4306^Silk Cloth
 @i^4337^Thick Spider's Silk
 @i^4338^Mageweave Cloth
@@ -73,10 +84,13 @@ GoldScout-export 5^4pwziwqfnnzh^2
 @i^7067^Elemental Earth
 @i^7068^Elemental Fire
 @i^7069^Elemental Air
+@i^7072^Naga Scale
 @i^7912^Solid Stone
 @i^8150^Deeprock Salt
 @i^10285^Shadow Silk
+@i^11416^Delicate Ribcage
 @i^12010^Fen Ring of Intellect
+@i^12037^Mystery Meat
 @i^12184^Raptor Flesh
 @i^12205^White Spider Meat
 @i^14217^Geomancer's Cord of the Eagle
@@ -93,19 +107,25 @@ GoldScout-export 5^4pwziwqfnnzh^2
 @q^770^0:15:0
 @q^1074^0:15:0
 @q^1081^1:7:1
+@q^1696^0:15:0
+@q^1708^1:0:0
 @q^1710^1:0:0
 @q^1714^3:4:0
 @q^2251^1:7:1
 @q^2592^1:7:1
 @q^2838^1:7:1
 @q^3197^2:2:0
+@q^3404^1:7:1
 @q^3667^1:7:1
 @q^3685^1:7:1
 @q^3715^1:12:0
 @q^3745^1:12:0
 @q^3796^0:4:0
+@q^3802^0:4:0
+@q^3809^0:4:0
 @q^3812^0:4:0
 @q^3857^1:7:1
+@q^4041^2:4:0
 @q^4306^1:7:1
 @q^4337^1:7:1
 @q^4338^1:7:1
@@ -131,10 +151,13 @@ GoldScout-export 5^4pwziwqfnnzh^2
 @q^7067^1:7:1
 @q^7068^1:7:1
 @q^7069^1:7:1
+@q^7072^1:7:1
 @q^7912^1:7:1
 @q^8150^1:7:1
 @q^10285^1:7:1
+@q^11416^0:15:0
 @q^12010^2:4:0
+@q^12037^1:7:1
 @q^12184^1:7:1
 @q^12205^1:7:1
 @q^14217^2:4:0
@@ -916,17 +939,22 @@ GoldScout-export 5^4pwziwqfnnzh^2
 @a^2271^204:1
 @a^2358^204:1,224:1
 @a^2359^204:6,205:1,224:2,225:2,245:2
-@a^2561^270:1,290:1
+@a^2561^250:1,270:2,289:1,290:4,309:1,329:1
 @a^2563^125:1,153:1,154:1,171:2
+@a^2565^271:1
 @a^2566^290:3,310:3
 @a^2567^290:1,310:2
 @a^2572^135:1,155:3,156:1
 @a^2573^116:3,117:1,136:3
 @a^2574^116:1,136:4,137:3
+@a^2580^284:1
 @a^2592^226:2,227:2
+@a^2595^324:4,344:2
+@a^2596^324:3
 @a^2760^125:4
 @a^2761^133:3
 @a^2762^190:3,210:2
+@a^2776^307:2
 @a^4342^89:3
 @a^4343^147:1
 @a^4351^87:1
