@@ -1,7 +1,7 @@
-# GoldScout: store page text (CurseForge and Wago)
+# GoldScout: store page text (CurseForge)
 
-Keep both store pages identical: paste the sections below into each site's
-fields. The description is written in Markdown.
+The master copy of GoldScout's CurseForge page: paste the sections below into
+its fields. The description is written in Markdown.
 
 CurseForge doesn't allow download links to files hosted elsewhere, and wants
 links to outside sites at the bottom of the page. So the description names

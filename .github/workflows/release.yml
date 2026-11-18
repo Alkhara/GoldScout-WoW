@@ -1,12 +1,11 @@
-# Builds a release zip and uploads it to CurseForge, Wago and GitHub when you
+# Builds a release zip and uploads it to CurseForge and GitHub when you
 # push a version tag (for example: git tag v0.1.0 && git push origin v0.1.0).
 #
 # Setup, once:
-#   1. Create the CurseForge and Wago projects, then add their IDs to
-#      GoldScout/GoldScout.toc as "## X-Curse-Project-ID: 123456" and
-#      "## X-Wago-ID: abcd1234".
+#   1. Create the CurseForge project, then add its ID to
+#      GoldScout/GoldScout.toc as "## X-Curse-Project-ID: 123456".
 #   2. In GitHub: Settings > Secrets and variables > Actions, add CF_API_KEY
-#      (CurseForge API token) and WAGO_API_TOKEN (Wago API token).
+#      (CurseForge API token).
 #   3. WoWInterface: after uploading the first version there by hand, add its
 #      ID (the number in the addon's URL) to the TOC as "## X-WoWI-ID: 12345",
 #      and add the secret WOWI_API_TOKEN (an API token from WoWInterface's author control panel).
@@ -45,7 +44,7 @@ jobs:
 
       # Players' release notes: this version's section of CHANGELOG.md, or for a
       # daily data release a generated note. The packager publishes the file on
-      # GitHub, CurseForge and Wago (.pkgmeta manual-changelog).
+      # GitHub and CurseForge (.pkgmeta manual-changelog).
       - name: Write the release notes
         run: python3 tools/changelog.py notes "$GITHUB_REF_NAME" > RELEASE_NOTES.md
 
@@ -59,7 +58,6 @@ jobs:
         uses: BigWigsMods/packager@01e8631a69c69d7654c788d152630d5fed9e3812 # v2.7.0
         env:
           CF_API_KEY: ${{ secrets.CF_API_KEY }}
-          WAGO_API_TOKEN: ${{ secrets.WAGO_API_TOKEN }}
           WOWI_API_TOKEN: ${{ secrets.WOWI_API_TOKEN }}
           GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
 

@@ -19,7 +19,7 @@ Reads three places:
 Your own installs (from GoldScout's saved data on this PC) are marked "you"
 and left out of the "other players" counts.
 
-CurseForge and Wago download counts are on their project dashboards; downloads
+CurseForge's download count is on its project dashboard; downloads
 aren't contributors, since the addon alone never shares anything.
 """
 import argparse
@@ -288,7 +288,7 @@ def main():
     tag, sources = release_sources()
     if tag:
         print("  in release %-7s %d installs (%d other players)" % (tag, len(sources), len(sources - mine)))
-    print("\nDownloads: CurseForge and Wago dashboards (downloads aren't contributors).")
+    print("\nDownloads: the CurseForge dashboard (downloads aren't contributors).")
 
 
 if __name__ == "__main__":

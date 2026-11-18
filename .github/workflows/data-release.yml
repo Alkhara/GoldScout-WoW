@@ -4,7 +4,7 @@
 # latest version tag, or that tag is three weeks old, and the Tests workflow
 # passed on this exact commit,
 # it tags the next patch version (v0.4.0 -> v0.4.1) and starts the Release
-# workflow on that tag, which publishes to GitHub, CurseForge and Wago.
+# workflow on that tag, which publishes to GitHub and CurseForge.
 # Otherwise it does nothing. The three-week rule keeps the regional price
 # estimates each release bundles fresh: the addon stops using them after 30
 # days (Blizzard's API terms; tools/bundle_prices.py).

@@ -10,7 +10,7 @@ the Data release workflow without editing any file) has no section of its own:
 its notes say it ships fresh price estimates and how much community data it
 has, plus anything still under "Unreleased", since it ships main as it is.
 The release workflow writes the notes to RELEASE_NOTES.md, which the packager
-publishes on GitHub, CurseForge and Wago (.pkgmeta manual-changelog).
+publishes on GitHub and CurseForge (.pkgmeta manual-changelog).
 """
 import re
 import sys

@@ -231,7 +231,7 @@
     var zipTotal = downloads.reduce(function (s, d) { return s + d.zip; }, 0);
     var macTotal = downloads.reduce(function (s, d) { return s + (d.mac || 0); }, 0);
     var form = (snap && snap.form) || null;
-    return section("reach", "Downloads and sharing", "GitHub release downloads (CurseForge and Wago keep their own counts)", [
+    return section("reach", "Downloads and sharing", "GitHub release downloads (CurseForge keeps its own count)", [
       tiles([
         ["Companion downloads", num(exeTotal + macTotal), num(exeTotal) + " Windows, " + num(macTotal) + " Mac; last 10 releases"],
         ["Addon zip downloads", num(zipTotal), "GitHub only"],
@@ -247,7 +247,6 @@
           ["Addon zip", "zip", "num"]], downloads)]),
         card("Links", null, [el("ul", {}, [
           el("li", {}, [el("a", { href: "https://www.curseforge.com/", text: "CurseForge author dashboard" })]),
-          el("li", {}, [el("a", { href: "https://addons.wago.io/", text: "Wago addons dashboard" })]),
           el("li", {}, [el("a", { href: "https://github.com/Alkhara/GoldScout-WoW/releases", text: "GitHub releases" })]),
           el("li", {}, [el("a", { href: "https://github.com/Alkhara/GoldScout-WoW/issues?q=label%3Adata-submission",
             text: "Share drop data issues" })]),

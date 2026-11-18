@@ -148,7 +148,7 @@ def main():
     say("ok   tagged and pushed %s" % args.version)
     follow_release(args.version)
     verify(args.version)
-    say("Done. CurseForge and Wago list the new file after their own processing.")
+    say("Done. CurseForge lists the new file after its own processing.")
 
 
 if __name__ == "__main__":

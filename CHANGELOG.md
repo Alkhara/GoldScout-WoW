@@ -1,7 +1,7 @@
 # What's new in GoldScout
 
-Each release's section here becomes its release notes on GitHub, CurseForge
-and Wago. Add to **Unreleased** as changes land, written for players; when
+Each release's section here becomes its release notes on GitHub and
+CurseForge. Add to **Unreleased** as changes land, written for players; when
 releasing, rename it to the version (`## v1.2.3`). Daily community data
 releases add their own line automatically.
 

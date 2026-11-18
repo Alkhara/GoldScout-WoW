@@ -78,8 +78,7 @@ your loot, so the Farm tab keeps getting better for everyone.
 
 ## Install
 
-1. Get GoldScout from [CurseForge](https://www.curseforge.com/projects/1790110),
-   [Wago](https://addons.wago.io/addons/QKyqnaK7) or the
+1. Get GoldScout from [CurseForge](https://www.curseforge.com/projects/1790110) or the
    [Releases](https://github.com/Alkhara/GoldScout-WoW/releases/latest) page.
    For a manual install, unzip the `GoldScout` folder into
    `World of Warcraft\_forever_\Interface\AddOns\` and restart the game.

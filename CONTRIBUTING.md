@@ -57,7 +57,7 @@ For Lua error popups in game, use `/console scriptErrors 1` or BugSack.
   `data/submissions/`.
 - **Tell players what changed.** Add a line for each change players will notice
   under "Unreleased" in [CHANGELOG.md](CHANGELOG.md), written for them; each
-  release's section becomes its notes on GitHub, CurseForge and Wago.
+  release's section becomes its notes on GitHub and CurseForge.
 - **Every piece of text the addon shows is translated.** Write it as
   `L["Whole sentence with %s"]` (not pieces joined around a value), and add
   the same English text with a translation to each `GoldScout/Locale_*.lua`.

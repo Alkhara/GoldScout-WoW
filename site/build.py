@@ -31,7 +31,6 @@ ANALYTICS_REPORT = "https://cloudflareinsights.com"
 REPO = "https://github.com/Alkhara/GoldScout-WoW"
 LINKS = {
     "curseforge": "https://www.curseforge.com/projects/1790110",
-    "wago": "https://addons.wago.io/addons/QKyqnaK7",
     "releases": REPO + "/releases/latest",
     "companion": REPO + "/releases/latest/download/GoldScoutCompanion.exe",
     "companion_mac": REPO + "/releases/latest/download/GoldScoutCompanion-macOS.zip",
@@ -65,8 +64,8 @@ FAQ = [
          "or craft for gold right now? It ranks farms and recipes by gold per hour for that character's level, "
          "class, faction and professions, using auction house prices and drop rates shared by players."),
         ("How do I get started?",
-         "Install GoldScout from <a href=\"%(curseforge)s\">CurseForge</a> or <a href=\"%(wago)s\">Wago</a>, log "
-         "in and type <code>/gscout</code>. A short checklist shows what's left to set up and ticks itself off: "
+         "Install GoldScout from <a href=\"%(curseforge)s\">CurseForge</a>, log in "
+         "and type <code>/gscout</code>. A short checklist shows what's left to set up and ticks itself off: "
          "prices for your auction house, your recipes if you craft, and your first Hunt. <code>/gscout "
          "welcome</code> shows it again."),
         ("Is it free?",
@@ -162,7 +161,7 @@ FAQ_DE = [
          "Klasse, Fraktion und Berufen dieses Charakters, mit Auktionshauspreisen und Dropraten, die Spieler "
          "teilen."),
         ("Wie fange ich an?",
-         "Installiere GoldScout von <a href=\"%(curseforge)s\">CurseForge</a> oder <a href=\"%(wago)s\">Wago</a>, "
+         "Installiere GoldScout von <a href=\"%(curseforge)s\">CurseForge</a>, "
          "logge dich ein und gib <code>/gscout</code> ein. Eine kurze Checkliste zeigt, was noch einzurichten ist, "
          "und hakt sich selbst ab: Preise für dein Auktionshaus, deine Rezepte, wenn du herstellst, und deine "
          "erste Jagd. <code>/gscout welcome</code> zeigt sie wieder."),
@@ -274,7 +273,7 @@ FAQ_ES = [
          "según el nivel, la clase, la facción y las profesiones de ese personaje, con precios de la casa de subastas "
          "y tasas de botín que comparten los jugadores."),
         ("¿Cómo empiezo?",
-         "Instala GoldScout desde <a href=\"%(curseforge)s\">CurseForge</a> o <a href=\"%(wago)s\">Wago</a>, entra "
+         "Instala GoldScout desde <a href=\"%(curseforge)s\">CurseForge</a>, entra "
          "en el juego y escribe <code>/gscout</code>. Una lista corta muestra lo que falta por preparar y se marca "
          "sola: precios para tu casa de subastas, tus recetas si fabricas y tu primera caza. <code>/gscout "
          "welcome</code> la vuelve a mostrar."),
@@ -383,7 +382,7 @@ FAQ_FR = [
          "le niveau, la classe, la faction et les métiers de ce personnage, avec les prix de l'hôtel des ventes et des "
          "taux de butin partagés par les joueurs."),
         ("Comment commencer ?",
-         "Installez GoldScout depuis <a href=\"%(curseforge)s\">CurseForge</a> ou <a href=\"%(wago)s\">Wago</a>, "
+         "Installez GoldScout depuis <a href=\"%(curseforge)s\">CurseForge</a>, "
          "connectez-vous et tapez <code>/gscout</code>. Une courte liste montre ce qu'il reste à préparer et se coche "
          "toute seule : les prix de votre hôtel des ventes, vos recettes si vous fabriquez, et votre première chasse. "
          "<code>/gscout welcome</code> la réaffiche."),
@@ -859,7 +858,6 @@ def page(s):
     <p class="lead">GoldScout is a free WoW Forever addon. Open the auction house and it ranks what the character you're playing can farm or craft for the most gold per hour, for its level, class, faction and professions.</p>
     <div class="buttons">
       <a class="btn primary" href="%(curseforge)s">Get it on CurseForge</a>
-      <a class="btn" href="%(wago)s">Wago</a>
       <a class="btn" href="%(releases)s">GitHub</a>
     </div>
     <p class="small">Free, open source, and every feature is the same for everyone.</p>
@@ -1036,7 +1034,6 @@ def page_de(s):
     <p class="lead">GoldScout ist ein Addon für WoW Forever. Öffne das Auktionshaus, und es zeigt, was der Charakter, den du spielst, für das meiste Gold pro Stunde farmen oder herstellen kann, passend zu Stufe, Klasse, Fraktion und Berufen.</p>
     <div class="buttons">
       <a class="btn primary" href="%(curseforge)s">Bei CurseForge holen</a>
-      <a class="btn" href="%(wago)s">Wago</a>
       <a class="btn" href="%(releases)s">GitHub</a>
     </div>
     <p class="small">Open Source, und jede Funktion ist für alle gleich. Das Addon spricht Deutsch.</p>
@@ -1152,7 +1149,6 @@ def page_es(s):
     <p class="lead">GoldScout es un accesorio para WoW Forever. Abre la casa de subastas y ordena lo que el personaje con el que juegas puede farmear o fabricar para ganar más oro por hora, según su nivel, clase, facción y profesiones.</p>
     <div class="buttons">
       <a class="btn primary" href="%(curseforge)s">Consíguelo en CurseForge</a>
-      <a class="btn" href="%(wago)s">Wago</a>
       <a class="btn" href="%(releases)s">GitHub</a>
     </div>
     <p class="small">Código abierto, y todas las funciones son iguales para todos. El accesorio habla español.</p>
@@ -1267,7 +1263,6 @@ def page_fr(s):
     <p class="lead">GoldScout est un addon pour WoW Forever. Ouvrez l'hôtel des ventes et il classe ce que le personnage que vous jouez peut farmer ou fabriquer pour gagner le plus d'or par heure, selon son niveau, sa classe, sa faction et ses métiers.</p>
     <div class="buttons">
       <a class="btn primary" href="%(curseforge)s">Le télécharger sur CurseForge</a>
-      <a class="btn" href="%(wago)s">Wago</a>
       <a class="btn" href="%(releases)s">GitHub</a>
     </div>
     <p class="small">Open source, et chaque fonction est la même pour tous. L'addon parle français.</p>
@@ -1851,7 +1846,7 @@ leaderboard</a> ranks who's shared the most; you're anonymous on it unless you c
 
 <h2>Set it up in a minute</h2>
 <ol class="steps">
-  <li><b>Install GoldScout</b> from <a href="%(curseforge)s">CurseForge</a> or <a href="%(wago)s">Wago</a>, if you haven't already.</li>
+  <li><b>Install GoldScout</b> from <a href="%(curseforge)s">CurseForge</a>, if you haven't already.</li>
   <li><b>Download and launch the app.</b> On Windows there's nothing to install; on a Mac, open the zip and drag
     GoldScout Companion into Applications. It finds your WoW Forever folder by itself.</li>
   <li><b>Choose once.</b> Agree to share automatically, or choose Not now and use it just for prices.</li>
@@ -1924,7 +1919,7 @@ anonym, außer du wählst einen Namen.</p>
 
 <h2>In einer Minute eingerichtet</h2>
 <ol class="steps">
-  <li><b>Installiere GoldScout</b> von <a href="%(curseforge)s">CurseForge</a> oder <a href="%(wago)s">Wago</a>, falls noch nicht geschehen.</li>
+  <li><b>Installiere GoldScout</b> von <a href="%(curseforge)s">CurseForge</a>, falls noch nicht geschehen.</li>
   <li><b>Lade die App herunter und starte sie.</b> Unter Windows musst du nichts installieren; auf dem Mac öffnest du
     die ZIP-Datei und ziehst GoldScout Companion in den Ordner Programme. Sie findet deinen WoW-Forever-Ordner selbst.</li>
   <li><b>Einmal entscheiden.</b> Stimme dem automatischen Teilen zu oder wähle <span lang="en">Not now</span> und
@@ -2076,7 +2071,7 @@ nombre.</p>
 
 <h2>Lista en un minuto</h2>
 <ol class="steps">
-  <li><b>Instala GoldScout</b> desde <a href="%(curseforge)s">CurseForge</a> o <a href="%(wago)s">Wago</a>, si aún no lo tienes.</li>
+  <li><b>Instala GoldScout</b> desde <a href="%(curseforge)s">CurseForge</a>, si aún no lo tienes.</li>
   <li><b>Descarga la aplicación y ábrela.</b> En Windows no hay que instalar nada; en Mac, abre el zip y arrastra
     GoldScout Companion a Aplicaciones. Encuentra tu carpeta de WoW Forever sola.</li>
   <li><b>Decide una vez.</b> Acepta compartir automáticamente o elige <span lang="en">Not now</span> y úsala solo para
@@ -2229,7 +2224,7 @@ nom.</p>
 
 <h2>Prête en une minute</h2>
 <ol class="steps">
-  <li><b>Installez GoldScout</b> depuis <a href="%(curseforge)s">CurseForge</a> ou <a href="%(wago)s">Wago</a>, si ce n'est pas déjà fait.</li>
+  <li><b>Installez GoldScout</b> depuis <a href="%(curseforge)s">CurseForge</a>, si ce n'est pas déjà fait.</li>
   <li><b>Téléchargez l'application et ouvrez-la.</b> Sous Windows, rien à installer ; sur Mac, ouvrez le zip et
     glissez GoldScout Companion dans Applications. Elle trouve seule votre dossier WoW Forever.</li>
   <li><b>Décidez une fois.</b> Acceptez le partage automatique ou choisissez <span lang="en">Not now</span> et
