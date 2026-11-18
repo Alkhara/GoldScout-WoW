@@ -1,4 +1,4 @@
-GoldScout-export 5^en2um1c4pjh6^13
+GoldScout-export 5^en2um1c4pjh6^14
 95^12^0^11^12^1436^0.4826^0.4637^12^Defias Smuggler^858:1:1,1510:1:1,2589:5:11,7997:1:1^
 430^1^0^18^19^1433^0.2296^0.3230^1^Redridge Mystic^2589:1:1^
 441^1^0^17^18^1433^0.5205^0.7347^1^Black Dragon Whelp^9779:1:1^
@@ -232,7 +232,9 @@ GoldScout-export 5^en2um1c4pjh6^13
 @i^5808^Pridewing Venom Sac
 @i^5829^Razor-sharp Beak
 @i^6296^Patch of Bat Hair
+@i^6303^Raw Slitherskin Mackerel
 @i^6308^Raw Bristle Whisker Catfish
+@i^6361^Raw Rainbow Fin Albacore
 @i^6443^Deviate Hide
 @i^6444^Forked Tongue
 @i^6445^Brittle Molting
@@ -259,6 +261,7 @@ GoldScout-export 5^en2um1c4pjh6^13
 @i^11407^Torn Bear Pelt
 @i^11418^Hollow Wing Bone
 @i^12207^Giant Egg
+@i^12238^Darkshore Grouper
 @i^13245^Kresh's Back
 @i^14117^Aboriginal Gloves of the Eagle
 @i^14122^Ritual Bands of Stamina
@@ -402,7 +405,9 @@ GoldScout-export 5^en2um1c4pjh6^13
 @q^5808^1:12:0
 @q^5829^0:15:0
 @q^6296^0:15:0
+@q^6303^1:7:1
 @q^6308^1:7:1
+@q^6361^1:7:1
 @q^6443^1:12:0
 @q^6444^0:15:0
 @q^6445^0:15:0
@@ -429,6 +434,7 @@ GoldScout-export 5^en2um1c4pjh6^13
 @q^11407^1:12:0
 @q^11418^0:15:0
 @q^12207^1:7:1
+@q^12238^1:0:0
 @q^13245^3:4:0
 @q^14117^2:4:0
 @q^14122^2:4:0
@@ -462,6 +468,8 @@ GoldScout-export 5^en2um1c4pjh6^13
 @m^1433^Redridge Mountains
 @m^1436^Westfall
 @m^1437^Wetlands
+@m^1438^Teldrassil
+@m^1439^Darkshore
 @m^1440^Ashenvale
 @m^1442^Stonetalon Mountains
 @c^118^
@@ -1874,4 +1882,6 @@ GoldScout-export 5^en2um1c4pjh6^13
 @a^271462^293:1
 @a^271961^224:2,225:6
 @a^272389^106:5,145:5,146:8,165:7,184:1,185:3
+@f^1438^0^22^55^6303:22:22^390:22
+@f^1439^0^5^50^6303:1:1,6361:3:3,12238:1:1^146:4,166:1
 @l^0^enUS
