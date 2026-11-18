@@ -1,4 +1,4 @@
-GoldScout-export 5^lst5ezws6a6t^5
+GoldScout-export 5^lst5ezws6a6t^6
 116^22^1^8^9^1429^0.7017^0.7808^22^Defias Bandit^118:1:1,159:1:1,1019:6:6,1181:1:1,2070:1:1,2138:1:1,2589:5:9,2648:1:1,2774:1:1,3192:1:1^
 118^8^0^9^10^1429^0.8555^0.6994^8^Prowler^2672:4:4,3299:1:1^
 330^1^0^9^9^1429^0.6981^0.7938^1^Princess^1006:1:1,3171:1:1^
@@ -7,10 +7,20 @@ GoldScout-export 5^lst5ezws6a6t^5
 822^2^0^8^9^1429^0.7863^0.7261^2^Young Forest Bear^4865:1:1^
 880^1^0^8^8^1429^0.7040^0.7889^1^Erlan Drudgemoor^1421:1:1^
 881^1^0^9^9^1429^0.7101^0.8081^1^Surena Caledon^767:1:1^
-1127^4^0^7^8^1426^0.2908^0.5156^4^Elder Crag Boar^769:1:1,2886:2:2,3171:2:2,3172:2:2^
-1128^1^0^6^6^1426^0.3210^0.5645^1^Young Black Bear^^
-1196^2^0^7^8^1426^0.2905^0.5225^2^Ice Claw Bear^7074:1:1^
-1201^4^0^7^8^1426^0.3027^0.5128^4^Snow Leopard^774:1:1,4814:4:4^
+1115^6^0^8^9^1426^0.6963^0.5817^6^Rockjaw Skullthumper^117:1:1,159:1:1,1421:1:1,1429:1:1,1430:1:1,2066:1:1,2589:1:2,2591:1:1,2773:1:1^
+1120^5^0^7^8^1426^0.2642^0.5113^5^Frostmane Troll^117:1:1,2589:2:2^
+1121^2^0^8^9^1426^0.2608^0.5129^2^Frostmane Snowstrider^2589:1:1^
+1122^3^0^9^10^1426^0.2291^0.5352^3^Frostmane Hideskinner^159:1:1,1417:1:1,2589:1:2^
+1123^4^0^8^9^1426^0.2342^0.5242^4^Frostmane Headhunter^1181:1:1,1422:1:1,2138:1:1,211786:1:1^
+1127^8^0^7^8^1426^0.3321^0.4651^8^Elder Crag Boar^769:2:2,2886:3:3,3171:3:3,3172:5:5^
+1128^1^0^5^6^1426^0.3210^0.5645^1^Young Black Bear^^
+1131^1^0^7^8^1426^0.3568^0.4349^1^Winter Wolf^2672:1:1,3300:1:1^
+1138^1^0^6^7^1426^0.4451^0.4770^1^Snow Tracker Wolf^2672:1:1^
+1196^6^0^7^8^1426^0.3712^0.4565^6^Ice Claw Bear^3169:1:1,3170:2:2,4865:2:2,7074:3:3^
+1201^8^0^7^8^1426^0.3251^0.4373^8^Snow Leopard^774:1:1,4813:1:1,4814:6:6^
+1961^1^0^11^11^1426^0.8001^0.3620^1^Mangeclaw^3173:1:1,3183:1:1,4561:1:1^
+276003^1^0^8^8^1426^0.5594^0.4608^1^Minor Ice Elemental^^
+@i^117^Tough Jerky
 @i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
 @i^767^Long Bo Staff
@@ -19,21 +29,37 @@ GoldScout-export 5^lst5ezws6a6t^5
 @i^1006^Brass Collar
 @i^1019^Red Linen Bandana
 @i^1181^Scroll of Spirit
+@i^1417^Beaten Battle Axe
 @i^1421^Worn Hide Cloak
+@i^1422^Worn Leather Gloves
+@i^1429^Patchwork Cloak
+@i^1430^Patchwork Gloves
+@i^2066^Skull Hatchet
 @i^2070^Darnassian Bleu
 @i^2138^Sharpened Letter Opener
 @i^2589^Linen Cloth
+@i^2591^Dirty Trogg Cloth
 @i^2648^Loose Chain Vest
 @i^2672^Stringy Wolf Meat
+@i^2773^Cracked Shortbow
 @i^2774^Rust-covered Blunderbuss
 @i^2886^Crag Boar Rib
+@i^3169^Chipped Bear Tooth
+@i^3170^Large Bear Tooth
 @i^3171^Broken Boar Tusk
 @i^3172^Boar Intestines
+@i^3173^Bear Meat
+@i^3183^Mangy Claw
 @i^3192^Short Bastard Sword of Healing
 @i^3299^Fractured Canine
+@i^3300^Rabbit's Foot
+@i^4561^Scalping Tomahawk of the Boar
+@i^4813^Small Leather Collar
 @i^4814^Discolored Fang
 @i^4865^Ruined Pelt
 @i^7074^Chipped Claw
+@i^211786^Scroll: CHAP BALK WELLES
+@q^117^1:0:0
 @q^118^1:0:0
 @q^159^1:0:0
 @q^767^1:2:0
@@ -42,21 +68,36 @@ GoldScout-export 5^lst5ezws6a6t^5
 @q^1006^1:12:0
 @q^1019^1:12:0
 @q^1181^1:0:0
+@q^1417^0:2:0
 @q^1421^0:4:0
+@q^1422^0:4:0
+@q^1429^0:4:0
+@q^1430^0:4:0
+@q^2066^1:2:0
 @q^2070^1:0:0
 @q^2138^0:2:0
 @q^2589^1:7:1
+@q^2591^0:15:0
 @q^2648^0:4:0
 @q^2672^1:7:1
+@q^2773^0:2:0
 @q^2774^0:2:0
 @q^2886^1:7:1
+@q^3169^0:15:0
+@q^3170^0:15:0
 @q^3171^0:15:0
 @q^3172^1:7:1
+@q^3173^1:7:1
+@q^3183^1:12:0
 @q^3192^2:2:0
 @q^3299^0:15:0
+@q^3300^0:15:0
+@q^4561^2:2:0
+@q^4813^0:15:0
 @q^4814^0:15:0
 @q^4865^0:15:0
 @q^7074^0:15:0
+@q^211786^1:0:0
 @m^1426^Dun Morogh
 @m^1429^Elwynn Forest
 @c^724^
@@ -976,8 +1017,17 @@ GoldScout-export 5^lst5ezws6a6t^5
 @a^822^277:1,314:1
 @a^880^314:1
 @a^881^334:1
-@a^1127^185:1,205:2,206:1
+@a^1115^233:5,234:1
+@a^1120^205:5
+@a^1121^205:2
+@a^1122^204:3
+@a^1123^204:2,205:2
+@a^1127^147:2,185:1,187:1,188:1,205:2,206:1
 @a^1128^226:1
-@a^1196^205:2
-@a^1201^205:1,206:3
+@a^1131^167:1
+@a^1138^188:1
+@a^1196^146:2,167:1,205:2,211:1
+@a^1201^146:4,205:1,206:3
+@a^1961^156:1
+@a^276003^191:1
 @l^0^enUS

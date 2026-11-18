@@ -1,4 +1,4 @@
-GoldScout-export 5^axf0wk3imksc^8
+GoldScout-export 5^axf0wk3imksc^11
 587^3^0^33^34^1434^0.2993^0.1920^3^Bloodscalp Warrior^1520:1:1,2735:1:1,4306:1:2^
 597^1^0^36^37^1434^0.2277^0.0865^1^Bloodscalp Berserker^^
 660^2^0^37^37^1434^0.2446^0.1031^2^Bloodscalp Witch Doctor^2750:1:1,4338:1:1^
@@ -31,6 +31,13 @@ GoldScout-export 5^axf0wk3imksc^8
 1114^1^0^37^38^1434^0.4834^0.3484^1^Jungle Thunderer^2799:1:1,4096:1:1^
 1151^1^0^36^36^1434^0.2147^0.1787^1^Saltwater Crocolisk^3667:1:1^
 1421^1^0^31^31^1434^0.3929^0.0528^1^Private Merle^4306:1:2^
+2250^3^0^32^32^1416^0.3949^0.6743^3^Mountain Yeti^^
+2251^8^0^33^34^1416^0.3472^0.5567^8^Giant Yeti^1710:1:1,248707:1:1^
+2255^1^0^37^37^1416^0.3891^0.4980^1^Crushridge Mage^^
+2256^8^0^38^39^1416^0.3703^0.5408^8^Crushridge Enforcer^3771:1:1,4306:6:13^
+2287^8^0^39^40^1416^0.3668^0.5400^8^Crushridge Warmonger^4306:4:9,4338:1:3,9879:1:1,248692:1:1,284870:1:1^
+2417^1^0^39^39^1416^0.3802^0.5389^1^Grel'borg the Miser^3684:1:1^
+2421^1^0^40^40^1416^0.3862^0.4693^1^Muckrake^^
 3974^1^0^0^0^0^0.0000^0.0000^0^^1708:1:1^
 3975^1^0^0^0^0^0.0000^0.0000^0^^^
 3976^1^0^0^0^0^0.0000^0.0000^0^^^
@@ -99,6 +106,7 @@ GoldScout-export 5^axf0wk3imksc^8
 @i^3358^Khadgar's Whisker
 @i^3615^Kurzen's Head
 @i^3667^Tender Crocolisk Meat
+@i^3684^Perenolde Tiara
 @i^3771^Wild Hog Shank
 @i^3780^Long-barreled Musket
 @i^3785^Keen Axe
@@ -121,14 +129,18 @@ GoldScout-export 5^axf0wk3imksc^8
 @i^5785^Thick Murloc Scale
 @i^6362^Raw Rockscale Cod
 @i^7070^Elemental Water
+@i^9879^Sorcerer Bracelets of Frost Protection
 @i^11386^Squishy Basilisk Eye
 @i^12202^Tiger Meat
 @i^17058^Fish Oil
 @i^215374^Ancestral Sword
 @i^216616^Compound Cage Key
 @i^248689^Waylaid Crate: Journeyman Curiosities
+@i^248692^Waylaid Crate: Expert Ore
+@i^248707^Waylaid Crate: Journeyman Parts
 @i^270333^Voodoo-Infused Artifact
 @i^276894^Ancient Gurubashi Idol
+@i^284870^Schematic: Unsanctified Grenade
 @q^1477^1:0:0
 @q^1519^1:12:0
 @q^1520^0:15:0
@@ -159,6 +171,7 @@ GoldScout-export 5^axf0wk3imksc^8
 @q^3358^1:7:1
 @q^3615^1:12:0
 @q^3667^1:7:1
+@q^3684^1:12:0
 @q^3771^1:0:0
 @q^3780^0:2:0
 @q^3785^0:2:0
@@ -181,14 +194,19 @@ GoldScout-export 5^axf0wk3imksc^8
 @q^5785^1:7:1
 @q^6362^1:7:1
 @q^7070^1:7:1
+@q^9879^2:4:0
 @q^11386^0:15:0
 @q^12202^1:7:1
 @q^17058^1:15:0
 @q^215374^1:2:0
 @q^216616^1:12:0
 @q^248689^1:0:1
+@q^248692^1:0:1
+@q^248707^2:0:1
 @q^270333^1:12:0
 @q^276894^1:12:0
+@q^284870^1:9:0
+@m^1416^Alterac Mountains
 @m^1434^Stranglethorn Vale
 @a^587^65:1,66:2
 @a^597^24:1
@@ -222,4 +240,11 @@ GoldScout-export 5^axf0wk3imksc^8
 @a^1114^129:1
 @a^1151^64:1
 @a^1421^27:1
+@a^2250^267:3
+@a^2251^185:1,186:2,206:2,248:1,267:1,268:1
+@a^2255^187:1
+@a^2256^187:2,206:1,207:1,227:3,247:1
+@a^2287^187:1,206:1,207:3,227:3
+@a^2417^207:1
+@a^2421^187:1
 @l^0^enUS

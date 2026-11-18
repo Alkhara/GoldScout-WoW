@@ -1,4 +1,4 @@
-GoldScout-export 5^jzhdfwdfma4r^4
+GoldScout-export 5^jzhdfwdfma4r^6
 2156^8^0^18^19^1439^0.3579^0.8539^8^Cracked Golem^2836:1:1,4575:1:1,5568:1:5^
 2157^2^0^19^19^1439^0.3586^0.8576^2^Stone Behemoth^^
 2158^5^0^18^19^1439^0.3524^0.8479^5^Gravelflint Scout^2589:1:2^
@@ -19,20 +19,28 @@ GoldScout-export 5^jzhdfwdfma4r^4
 3732^1^1^18^19^1440^0.3168^0.2319^1^Forsaken Seeker^2217:1:1,2592:1:2^
 3733^2^1^19^19^1440^0.3248^0.2217^2^Forsaken Herbalist^^4605:1:1
 3734^2^0^20^20^1440^0.3193^0.2344^2^Forsaken Thug^1205:1:1,14568:1:1^
+3780^7^0^21^23^1440^0.4564^0.4440^7^Shadethicket Moss Eater^1822:1:1,4606:2:2^
+3809^6^0^21^22^1440^0.4346^0.5067^6^Ashenvale Bear^3702:2:2,3730:2:2,11406:3:3^
 3816^11^0^18^19^1440^0.2889^0.3088^11^Wild Buck^5471:5:5,5566:3:3,248704:1:1^
+3819^10^0^20^21^1440^0.4295^0.4639^10^Wildthorn Stalker^878:1:1,1081:4:4,1288:1:1,2251:3:3,3174:2:2,4428:1:1,15311:1:1^
 3823^1^0^20^20^1440^0.2867^0.3003^1^Ghostpaw Runner^1015:1:1^
 8996^1^0^18^18^1440^0.3039^0.3185^1^Voidwalker Minion^^
 12922^1^0^19^19^1440^0.3080^0.3162^1^Imp Minion^^
 @i^730^Murloc Eye
 @i^858^Lesser Healing Potion
+@i^878^Fist-sized Spinneret
 @i^1015^Lean Wolf Flank
+@i^1081^Crisp Spider Meat
 @i^1179^Ice Cold Milk
 @i^1205^Melon Juice
 @i^1210^Shadowgem
+@i^1288^Large Venom Sac
 @i^1745^Laced Mail Vest
 @i^1764^Canvas Shoes
 @i^1811^Blunt Claymore
+@i^1822^Cedar Walking Stick
 @i^2217^Rectangular Shield
+@i^2251^Gooey Spider Leg
 @i^2287^Haunch of Meat
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
@@ -42,9 +50,14 @@ GoldScout-export 5^jzhdfwdfma4r^4
 @i^3169^Chipped Bear Tooth
 @i^3170^Large Bear Tooth
 @i^3173^Bear Meat
+@i^3174^Spider Ichor
 @i^3376^Canvas Belt
+@i^3702^Bear Gall Bladder
+@i^3730^Big Bear Meat
+@i^4428^Spider Palp
 @i^4575^Medicine Staff of Intellect
 @i^4605^Red-speckled Mushroom
+@i^4606^Spongy Morel
 @i^4775^Cracked Bill
 @i^5114^Severed Talon
 @i^5352^Book: The Powers Below
@@ -57,21 +70,29 @@ GoldScout-export 5^jzhdfwdfma4r^4
 @i^5568^Smooth Pebble
 @i^5784^Slimy Murloc Scale
 @i^6454^Manual: Strong Anti-Venom
+@i^11406^Rotting Bear Carcass
+@i^12238^Darkshore Grouper
 @i^14161^Pagan Cape of Nature's Wrath
 @i^14568^Bristlebark Boots
+@i^15311^Feral Harness of Fire Protection
 @i^17056^Light Feather
 @i^248704^Waylaid Crate: Apprentice Parts
 @i^279279^Peerless Eye
 @q^730^1:7:1
 @q^858^1:0:0
+@q^878^0:7:0
 @q^1015^1:7:1
+@q^1081^1:7:1
 @q^1179^1:0:0
 @q^1205^1:0:0
 @q^1210^2:7:1
+@q^1288^1:7:1
 @q^1745^0:4:0
 @q^1764^0:4:0
 @q^1811^0:2:0
+@q^1822^0:2:0
 @q^2217^0:4:0
+@q^2251^1:7:1
 @q^2287^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
@@ -81,9 +102,14 @@ GoldScout-export 5^jzhdfwdfma4r^4
 @q^3169^0:15:0
 @q^3170^0:15:0
 @q^3173^1:7:1
+@q^3174^1:7:1
 @q^3376^0:4:0
+@q^3702^0:15:0
+@q^3730^1:7:1
+@q^4428^0:15:0
 @q^4575^2:2:0
 @q^4605^1:0:0
+@q^4606^1:0:0
 @q^4775^0:15:0
 @q^5114^0:15:0
 @q^5352^1:12:0
@@ -96,23 +122,41 @@ GoldScout-export 5^jzhdfwdfma4r^4
 @q^5568^1:6:0
 @q^5784^1:7:1
 @q^6454^2:9:0
+@q^11406^0:15:0
+@q^12238^1:0:0
 @q^14161^2:4:0
 @q^14568^2:4:0
+@q^15311^2:4:0
 @q^17056^1:15:1
 @q^248704^2:0:1
 @q^279279^1:12:0
 @m^1439^Darkshore
 @m^1440^Ashenvale
+@c^118^
+@c^858^
+@c^929^
+@c^1251^
+@c^1710^
+@c^2581^
 @c^2892^
 @c^2893^
+@c^3530^
+@c^3531^
 @c^3775^
 @c^3776^
+@c^3928^
 @c^5237^
 @c^5530^
+@c^6450^
+@c^6451^
+@c^6452^
+@c^6453^
 @c^6947^
 @c^6949^
 @c^6950^
 @c^6951^
+@c^8544^
+@c^8545^
 @c^8926^
 @c^8927^
 @c^8928^
@@ -123,12 +167,29 @@ GoldScout-export 5^jzhdfwdfma4r^4
 @c^10920^
 @c^10921^
 @c^10922^
+@c^13446^
+@c^14529^
+@c^14530^
+@c^19440^
 @c^20844^
+@c^23684^
 @c^217345^
 @c^217346^
 @c^217347^
 @c^226374^
+@c^232433^
 @c^234444^
+@c^255715^
+@c^255716^
+@c^255717^
+@c^255718^
+@c^255719^
+@c^255720^
+@c^255721^
+@c^255722^
+@c^279940^
+@c^279951^
+@c^279968^
 @a^2156^327:3,347:5
 @a^2157^347:2
 @a^2158^327:4,347:1
@@ -149,8 +210,12 @@ GoldScout-export 5^jzhdfwdfma4r^4
 @a^3732^86:1
 @a^3733^86:2
 @a^3734^86:2
+@a^3780^168:1,169:4,188:1,189:1
+@a^3809^168:1,188:3,229:2
 @a^3816^105:2,106:2,125:7
+@a^3819^168:4,169:1,188:3,208:2
 @a^3823^125:1
 @a^8996^126:1
 @a^12922^126:1
+@f^1439^0^1^58^12238:1:1^166:1
 @l^0^enUS
