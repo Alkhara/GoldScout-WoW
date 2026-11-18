@@ -1,4 +1,4 @@
-GoldScout-export 5^ei2hpamwwmyr^7
+GoldScout-export 5^ei2hpamwwmyr^8
 3975^1^0^0^0^0^0.0000^0.0000^0^^^
 4128^1^0^23^23^1413^0.4784^0.7298^1^Hecklefang Stalker^^
 4286^1^0^0^0^0^0.0000^0.0000^0^^^
@@ -20,13 +20,18 @@ GoldScout-export 5^ei2hpamwwmyr^7
 256433^4^0^32^33^2548^0.4107^0.6256^4^Woodworker^2592:1:3,3804:1:1^
 256434^23^0^37^38^2548^0.4116^0.6341^23^Turner's Mill Lumberjack^3785:1:1,4306:8:16,263972:10:10^
 256438^2^0^39^39^2548^0.4114^0.6215^2^Halligan Turner^^
-259046^3^0^38^39^2548^0.5713^0.5184^3^Freshwater Crocolisk^770:2:2^
-263307^7^0^37^38^2548^0.6023^0.5922^7^Glade Viper^6444:3:3,6826:3:3,271776:3:3^
+257926^6^0^38^39^2548^0.5046^0.6982^6^Farholde Scout^4306:1:2^
+259046^8^0^38^39^2548^0.5783^0.4745^8^Freshwater Crocolisk^770:4:4,5128:1:1^
+259054^2^0^39^39^2548^0.5968^0.5169^2^Wildplains Patriarch^1688:1:1,266888:1:1^
+259055^6^0^38^39^2548^0.5964^0.5234^6^Wildplains Huntress^1686:1:1,5637:1:1,7440:1:1,266888:5:5^
+263307^10^0^37^38^2548^0.6033^0.5910^10^Glade Viper^6444:3:3,6826:5:5,271776:4:4^
 263343^11^0^37^38^2548^0.6067^0.6008^11^Low Plains Buzzard^1464:1:1,3404:3:3,5636:1:1,5829:1:1,11418:1:1,12037:5:5,271793:6:6^
 263348^4^0^37^38^2548^0.5788^0.5827^4^Roving Tallstrider^5116:2:2,5636:1:1,5829:1:1,271778:1:1^
 270094^1^0^30^30^1441^0.5454^0.5409^1^Stormheart^5128:1:1^
 @i^770^Pointy Crocolisk Tooth
 @i^1464^Buzzard Talon
+@i^1686^Bristly Whisker
+@i^1688^Long Soft Tail
 @i^1710^Greater Healing Potion
 @i^2289^Scroll of Strength II
 @i^2592^Wool Cloth
@@ -41,10 +46,12 @@ GoldScout-export 5^ei2hpamwwmyr^7
 @i^5116^Long Tail Feather
 @i^5128^Shed Lizard Skin
 @i^5636^Delicate Feather
+@i^5637^Large Fang
 @i^5829^Razor-sharp Beak
 @i^6444^Forked Tongue
 @i^6826^Brilliant Scale
 @i^7291^Infernal Orb
+@i^7440^Sentinel Trousers of the Owl
 @i^7912^Solid Stone
 @i^11418^Hollow Wing Bone
 @i^12037^Mystery Meat
@@ -52,11 +59,14 @@ GoldScout-export 5^ei2hpamwwmyr^7
 @i^14220^Geomancer's Cap of the Sorcerer
 @i^215373^Silver Hand Training Hammer
 @i^263972^Woodworker's Axe
+@i^266888^Prized Lion Hide
 @i^271776^Glade Viper Venom
 @i^271778^Intact Tallstrider Beak
 @i^271793^Plains Buzzard Feather
 @q^770^0:15:0
 @q^1464^0:15:0
+@q^1686^0:15:0
+@q^1688^0:15:0
 @q^1710^1:0:0
 @q^2289^1:0:0
 @q^2592^1:7:1
@@ -71,10 +81,12 @@ GoldScout-export 5^ei2hpamwwmyr^7
 @q^5116^1:7:1
 @q^5128^0:15:0
 @q^5636^0:15:0
+@q^5637^1:7:1
 @q^5829^0:15:0
 @q^6444^0:15:0
 @q^6826^0:15:0
 @q^7291^1:12:0
+@q^7440^2:4:0
 @q^7912^1:7:1
 @q^11418^0:15:0
 @q^12037^1:7:1
@@ -82,6 +94,7 @@ GoldScout-export 5^ei2hpamwwmyr^7
 @q^14220^2:4:0
 @q^215373^1:2:0
 @q^263972^1:12:0
+@q^266888^1:12:0
 @q^271776^1:12:0
 @q^271778^1:12:0
 @q^271793^1:12:0
@@ -786,8 +799,11 @@ GoldScout-export 5^ei2hpamwwmyr^7
 @a^256433^248:3,267:1
 @a^256434^228:3,247:2,248:12,267:3,268:3
 @a^256438^248:2
-@a^259046^171:1,172:1,290:1
-@a^263307^231:2,232:4,251:1
+@a^257926^270:3,289:3
+@a^259046^151:1,152:1,171:2,172:2,269:1,290:1
+@a^259054^211:1,212:1
+@a^259055^211:4,212:2
+@a^263307^231:2,232:6,251:1,252:1
 @a^263343^231:5,232:3,252:1,253:2
 @a^263348^231:3,251:1
 @a^270094^210:1
