@@ -1,11 +1,15 @@
-GoldScout-export 5^zbm9unaf3lp9^2
+GoldScout-export 5^zbm9unaf3lp9^3
 36^4^0^11^12^1436^0.3210^0.3459^4^Harvest Golem^732:1:1,814:1:1,1274:1:1,255007:2:2^
 123^14^0^13^14^1436^0.3680^0.3152^14^Riverpaw Mongrel^821:1:1,1497:1:1,1516:1:1,2287:2:2,2589:5:12^
 157^10^0^14^15^1436^0.3786^0.3166^10^Goretusk^723:3:3,731:2:2,769:8:13,771:3:3,2677:6:6,3172:6:6,248683:1:1^
+217^4^0^19^20^1431^0.5171^0.1716^4^Venom Web Spider^878:1:1,1081:3:3,1130:3:3,1475:1:1^
 454^30^0^12^13^1436^0.3766^0.3027^30^Young Goretusk^723:9:9,731:13:13,769:24:24,771:5:5,2677:7:7,3171:3:3,3172:12:12,6267:1:1,211787:1:1^
 500^11^0^12^13^1436^0.3675^0.3137^11^Riverpaw Scout^2287:1:1,2589:4:8,2961:1:1,3375:1:1,211787:2:2^
 504^3^0^12^13^1436^0.3217^0.3460^3^Defias Trapper^2589:1:1^
 506^2^0^18^18^1436^0.3670^0.3153^2^Sergeant Brashclaw^2204:1:1,6540:1:1^
+539^2^0^18^18^1431^0.5031^0.1537^2^Pygmy Venom Web Spider^1081:1:1,1130:1:1,3174:1:1,4428:1:1,211853:1:1^
+565^3^0^20^21^1431^0.6168^0.2002^3^Rabid Dire Wolf^893:1:1,1015:1:1^
+569^4^0^22^22^1431^0.5631^0.1969^4^Green Recluse^1081:3:3,1130:1:1,2251:1:1,3174:3:3,3182:1:1,4694:1:1^
 572^1^0^19^19^1436^0.4127^0.2824^1^Leprithus^2085:1:1,6530:1:1,6581:1:1^
 832^1^0^18^19^1436^0.3920^0.2212^1^Dust Devil^^
 833^42^0^11^12^1436^0.3747^0.3005^42^Coyote Packleader^2673:20:20,3299:11:11,3300:12:12,5573:1:1,6515:1:1,211780:1:1,211785:2:2^
@@ -18,11 +22,18 @@ GoldScout-export 5^zbm9unaf3lp9^2
 @i^771^Chipped Boar Tusk
 @i^814^Flask of Oil
 @i^821^Riverpaw Leather Vest
+@i^878^Fist-sized Spinneret
+@i^893^Dire Wolf Fang
+@i^1015^Lean Wolf Flank
+@i^1081^Crisp Spider Meat
+@i^1130^Vial of Spider Venom
 @i^1274^Hops
+@i^1475^Small Venom Sac
 @i^1497^Calico Cloak
 @i^1516^Worn Hatchet
 @i^2085^Chunk of Flesh
 @i^2204^Brashclaw's Skewer
+@i^2251^Gooey Spider Leg
 @i^2287^Haunch of Meat
 @i^2589^Linen Cloth
 @i^2673^Coyote Meat
@@ -30,10 +41,14 @@ GoldScout-export 5^zbm9unaf3lp9^2
 @i^2961^Burnt Leather Vest
 @i^3171^Broken Boar Tusk
 @i^3172^Boar Intestines
+@i^3174^Spider Ichor
+@i^3182^Spider's Silk
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
 @i^3375^Calico Bracers
+@i^4428^Spider Palp
 @i^4605^Red-speckled Mushroom
+@i^4694^Burnished Pauldrons
 @i^5573^Green Leather Bag
 @i^6267^Disciple's Pants of Spirit
 @i^6515^Disciple's Gloves
@@ -45,6 +60,7 @@ GoldScout-export 5^zbm9unaf3lp9^2
 @i^211780^Scroll: KWYJIBO
 @i^211785^Scroll: CWAL
 @i^211787^Scroll: LOWER PING WHOMEVER
+@i^211853^Scroll: VOCE WELL
 @i^248683^Waylaid Crate: Apprentice Ore
 @i^255007^Golem Isospring
 @q^723^1:7:1
@@ -54,11 +70,18 @@ GoldScout-export 5^zbm9unaf3lp9^2
 @q^771^0:15:0
 @q^814^1:7:1
 @q^821^2:4:0
+@q^878^0:7:0
+@q^893^0:15:0
+@q^1015^1:7:1
+@q^1081^1:7:1
+@q^1130^1:12:0
 @q^1274^1:12:0
+@q^1475^1:7:1
 @q^1497^0:4:0
 @q^1516^0:2:0
 @q^2085^0:15:0
 @q^2204^2:2:0
+@q^2251^1:7:1
 @q^2287^1:0:0
 @q^2589^1:7:1
 @q^2673^1:7:1
@@ -66,10 +89,14 @@ GoldScout-export 5^zbm9unaf3lp9^2
 @q^2961^2:4:0
 @q^3171^0:15:0
 @q^3172^1:7:1
+@q^3174^1:7:1
+@q^3182^1:7:1
 @q^3299^0:15:0
 @q^3300^0:15:0
 @q^3375^0:4:0
+@q^4428^0:15:0
 @q^4605^1:0:0
+@q^4694^1:4:0
 @q^5573^1:1:0
 @q^6267^2:4:0
 @q^6515^1:4:0
@@ -81,8 +108,10 @@ GoldScout-export 5^zbm9unaf3lp9^2
 @q^211780^1:0:0
 @q^211785^1:0:0
 @q^211787^1:0:0
+@q^211853^1:0:0
 @q^248683^1:0:1
 @q^255007^1:7:1
+@m^1431^Duskwood
 @m^1436^Westfall
 @c^724^
 @c^733^
@@ -696,10 +725,14 @@ GoldScout-export 5^zbm9unaf3lp9^2
 @a^36^126:4
 @a^123^127:14
 @a^157^107:3,126:2,127:1,128:2,147:1,168:1
+@a^217^69:1,70:2,71:1
 @a^454^87:1,106:1,107:11,108:3,126:5,127:4,128:3,147:2
 @a^500^107:1,127:10
 @a^504^126:3
 @a^506^127:2
+@a^539^50:1,69:1
+@a^565^71:1,72:1,93:1
+@a^569^70:1,91:2,92:1
 @a^572^108:1
 @a^832^87:1
 @a^833^87:2,107:9,108:11,126:8,127:1,128:4,146:1,147:4,166:2

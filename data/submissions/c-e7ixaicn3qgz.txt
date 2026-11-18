@@ -1,38 +1,57 @@
-GoldScout-export 5^e7ixaicn3qgz^1
+GoldScout-export 5^e7ixaicn3qgz^2
 423^13^0^15^16^1433^0.2534^0.8048^13^Bastard der Rotkammgnolle^1179:1:1,1210:1:1,2589:2:4,2592:2:4,9748:1:1^
 424^9^0^16^17^1433^0.2507^0.8018^9^Wilderer der Rotkammgnolle^1179:1:1,1212:4:4,2589:2:5,2592:3:5^
+426^8^0^17^18^1433^0.3354^0.3361^8^Schläger der Rotkammgnolle^1013:2:2,2589:1:1,2592:1:1,2856:2:2^
+430^13^0^18^19^1433^0.3352^0.3367^13^Mystiker der Rotkammgnolle^1013:3:3,1741:1:1,1769:1:1,2287:1:1,2589:3:8,2592:2:4,2856:3:3,2969:1:1,14167:1:1,248703:1:1^
+440^2^0^19^19^1433^0.3526^0.4109^2^Grunzer der Blackrock^2589:1:2^
 441^19^0^17^18^1433^0.2973^0.7157^19^Schwarzer Großdrachenwelpe^1221:6:6,3176:3:3,4701:1:1,248685:1:1,248704:1:1^
 712^12^0^14^15^1433^0.2598^0.7970^12^Hauer der Rotkammgnolle^1179:1:1,1212:1:1,1495:1:1,1498:1:1,2589:1:2,2592:2:4,2632:1:1,6268:1:1,248685:1:1,280911:5:5^
+@i^1013^Eisenniete
 @i^1179^Eiskalte Milch
 @i^1210^Schattenedelstein
 @i^1212^Gnollspeichel
 @i^1221^Welpenbauchschuppe
 @i^1495^Kattunschuhe
 @i^1498^Kattunhandschuhe
+@i^1741^Geschnürter Umhang
+@i^1769^Segeltuchschulterpolster
+@i^2287^Fleischschenkel
 @i^2589^Leinenstoff
 @i^2592^Wollstoff
 @i^2632^Geschwungener Dolch des Falken
+@i^2856^Eisenspitze
+@i^2969^Zauberbinder-Weste
 @i^3176^Kleine Klaue
 @i^4701^Gravierter Umhang
 @i^6268^Pioniertunika des Bären
 @i^9748^Einfache Robe des heiligen Zorns
+@i^14167^Bukanier-Cape des Naturschutzes
 @i^248685^Abgefangene Kiste: Kuriositäten des Lehrlings
+@i^248703^Abgefangene Kiste: Barren des Lehrlings
 @i^248704^Abgefangene Kiste: Bauteile des Lehrlings
 @i^280911^Stachelhalsband
+@q^1013^1:12:0
 @q^1179^1:0:0
 @q^1210^2:7:1
 @q^1212^0:15:0
 @q^1221^1:12:0
 @q^1495^0:4:0
 @q^1498^0:4:0
+@q^1741^0:4:0
+@q^1769^0:4:0
+@q^2287^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2632^2:2:0
+@q^2856^1:12:0
+@q^2969^2:4:0
 @q^3176^0:15:0
 @q^4701^2:4:0
 @q^6268^2:4:0
 @q^9748^2:4:0
+@q^14167^2:4:0
 @q^248685^1:0:1
+@q^248703^2:0:1
 @q^248704^2:0:1
 @q^280911^1:12:0
 @m^1433^Rotkammgebirge
@@ -800,6 +819,9 @@ GoldScout-export 5^e7ixaicn3qgz^1
 @c^286152^
 @a^423^304:1,305:5,324:4,325:3
 @a^424^304:2,305:3,325:4
+@a^426^126:7,146:1
+@a^430^126:8,127:3,144:1,146:1
+@a^440^167:2
 @a^441^244:1,265:3,285:4,286:9,304:1,306:1
 @a^712^304:2,305:6,324:2,325:2
 @l^0^deDE

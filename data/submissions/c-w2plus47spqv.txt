@@ -1,4 +1,9 @@
-GoldScout-export 5^w2plus47spqv^4
+GoldScout-export 5^w2plus47spqv^5
+2554^4^0^32^33^1417^0.7176^0.6418^4^Witherbark Axe Thrower^1708:1:1,3771:1:1,4306:2:2^
+2555^6^0^33^34^1417^0.7145^0.6599^6^Witherbark Witch Doctor^4306:2:2,216483:1:1^
+2556^5^0^34^35^1417^0.6836^0.7660^5^Witherbark Headhunter^2592:1:1,3771:1:1,4306:1:2^
+2557^2^0^36^36^1417^0.6738^0.8147^2^Witherbark Shadow Hunter^4306:1:2^
+3560^3^0^33^33^1417^0.7234^0.6611^3^Healing Ward^^
 250927^2^0^10^11^2521^0.5807^0.4045^2^Shadowgale Ursera^4776:1:1,6889:1:1^
 251314^8^0^7^8^2521^0.5981^0.7492^8^Skyhopper^^
 251676^25^0^10^11^2521^0.5793^0.3139^25^Wind Hollow^6297:5:5,255663:1:1,257224:2:2,257226:7:7,262357:10:10^
@@ -15,12 +20,16 @@ GoldScout-export 5^w2plus47spqv^4
 @i^774^Malachite
 @i^1181^Scroll of Spirit
 @i^1427^Patchwork Shoes
+@i^1708^Sweet Nectar
 @i^2589^Linen Cloth
+@i^2592^Wool Cloth
 @i^2643^Loose Chain Bracers
 @i^2675^Crawler Claw
 @i^2773^Cracked Shortbow
 @i^3299^Fractured Canine
 @i^3373^Patchwork Bracers
+@i^3771^Wild Hog Shank
+@i^4306^Silk Cloth
 @i^4776^Ruffled Feather
 @i^4873^Dry Hardened Barnacle
 @i^4874^Clean Fishbones
@@ -29,6 +38,7 @@ GoldScout-export 5^w2plus47spqv^4
 @i^6297^Old Skull
 @i^6889^Small Egg
 @i^211786^Scroll: CHAP BALK WELLES
+@i^216483^Witherbark Mallet
 @i^252022^Galestrider Jerky
 @i^252030^Pungent Skycheddar
 @i^252031^Crisp Spring Water
@@ -50,12 +60,16 @@ GoldScout-export 5^w2plus47spqv^4
 @q^774^2:7:1
 @q^1181^1:0:0
 @q^1427^0:4:0
+@q^1708^1:0:0
 @q^2589^1:7:1
+@q^2592^1:7:1
 @q^2643^0:4:0
 @q^2675^1:7:1
 @q^2773^0:2:0
 @q^3299^0:15:0
 @q^3373^0:4:0
+@q^3771^1:0:0
+@q^4306^1:7:1
 @q^4776^0:15:0
 @q^4873^0:15:0
 @q^4874^0:15:0
@@ -64,6 +78,7 @@ GoldScout-export 5^w2plus47spqv^4
 @q^6297^0:15:0
 @q^6889^1:7:1
 @q^211786^1:0:0
+@q^216483^1:0:0
 @q^252022^1:0:0
 @q^252030^1:0:0
 @q^252031^1:0:0
@@ -80,6 +95,7 @@ GoldScout-export 5^w2plus47spqv^4
 @q^265475^1:12:0
 @q^265476^1:12:0
 @q^267474^1:0:0
+@m^1417^Arathi Highlands
 @m^2521^Zephras Isle
 @c^724^
 @c^733^
@@ -999,6 +1015,11 @@ GoldScout-export 5^w2plus47spqv^4
 @c^279982^
 @c^279990^
 @c^286152^
+@a^2554^253:1,254:1,274:2
+@a^2555^254:2,273:2,274:2
+@a^2556^274:1,313:2,333:2
+@a^2557^333:2
+@a^3560^254:1,274:2
 @a^250927^152:1,170:1
 @a^251314^291:1,292:4,311:2,312:1
 @a^251676^111:4,131:21

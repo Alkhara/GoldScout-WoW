@@ -1,4 +1,4 @@
-GoldScout-export 5^btk5gepz9y7n^2
+GoldScout-export 5^btk5gepz9y7n^3
 428^139^0^18^19^1433^0.5144^0.6859^139^Dire Condor^556:4:4,1080:47:47,1464:7:7,2987:1:1,4775:28:28,4776:7:7,5114:3:3,5115:1:1,6889:61:61,9781:1:1,17056:24:24,211854:2:2,211855:1:1,250188:1:1^
 441^16^0^17^18^1433^0.5389^0.7716^16^Black Dragon Whelp^3177:1:1,248683:1:1,248685:1:1^
 544^1^0^21^22^1433^0.7620^0.6074^1^Murloc Nightcrawler^^
@@ -13,6 +13,8 @@ GoldScout-export 5^btk5gepz9y7n^2
 2233^2^0^18^20^1439^0.5174^0.2190^2^Encrusted Tide Crawler^5523:1:1^
 2235^2^0^15^17^1439^0.4578^0.2042^2^Reef Crawler^5071:1:1^
 2322^1^0^14^16^1439^0.4841^0.2698^1^Foreststrider^^
+2369^3^0^30^31^1424^0.5734^0.7060^3^Daggerspine Shorehunter^5524:3:3^
+2371^7^0^31^32^1424^0.5797^0.6774^7^Daggerspine Siren^17057:1:1,17058:1:1^
 6206^1^0^0^0^0^0.0000^0.0000^0^^15284:1:1^
 6208^4^0^25^26^1415^0.4336^0.5324^4^Caverndeep Invader^211784:2:2,211853:1:1^
 6210^1^0^24^25^1415^0.4338^0.5314^1^Caverndeep Pillager^4306:1:1^
@@ -57,6 +59,7 @@ GoldScout-export 5^btk5gepz9y7n^2
 @i^5114^Severed Talon
 @i^5115^Broken Wishbone
 @i^5523^Small Barnacled Clam
+@i^5524^Thick-shelled Clam
 @i^5784^Slimy Murloc Scale
 @i^6289^Raw Longjaw Mud Snapper
 @i^6889^Small Egg
@@ -66,6 +69,8 @@ GoldScout-export 5^btk5gepz9y7n^2
 @i^9781^Bandit Pants of the Whale
 @i^15284^Long Battle Bow
 @i^17056^Light Feather
+@i^17057^Shiny Fish Scales
+@i^17058^Fish Oil
 @i^211784^Scroll: WUBBA WUBBA
 @i^211853^Scroll: VOCE WELL
 @i^211854^Scroll: OMIT KESA
@@ -97,6 +102,7 @@ GoldScout-export 5^btk5gepz9y7n^2
 @q^5114^0:15:0
 @q^5115^0:15:0
 @q^5523^1:7:0
+@q^5524^1:7:0
 @q^5784^1:7:1
 @q^6289^1:7:1
 @q^6889^1:7:1
@@ -106,6 +112,8 @@ GoldScout-export 5^btk5gepz9y7n^2
 @q^9781^2:4:0
 @q^15284^2:2:0
 @q^17056^1:15:1
+@q^17057^1:15:0
+@q^17058^1:15:0
 @q^211784^1:0:0
 @q^211853^1:0:0
 @q^211854^1:0:0
@@ -114,6 +122,7 @@ GoldScout-export 5^btk5gepz9y7n^2
 @q^248685^1:0:1
 @q^250188^1:9:0
 @m^1415^Eastern Kingdoms
+@m^1424^Hillsbrad Foothills
 @m^1433^Redridge Mountains
 @m^1439^Darkshore
 @c^724^
@@ -814,6 +823,8 @@ GoldScout-export 5^btk5gepz9y7n^2
 @a^2233^90:2
 @a^2235^89:2
 @a^2322^109:1
+@a^2369^250:1,291:1,311:1
+@a^2371^251:1,271:4,291:2
 @a^6208^208:4
 @a^6210^208:1
 @a^6213^208:2
