@@ -1,4 +1,4 @@
-GoldScout-export 5^6dbz4t5wteaw^1
+GoldScout-export 5^6dbz4t5wteaw^2
 2959^2^0^7^8^1412^0.4487^0.4726^2^Prairie Stalker^2672:2:2^
 3035^1^0^8^8^1412^0.4259^0.4471^1^Flatland Cougar^4563:1:1^
 3100^2^0^8^9^1411^0.4869^0.1459^2^Elder Mottled Boar^769:1:1,3171:2:2^
@@ -17,6 +17,10 @@ GoldScout-export 5^6dbz4t5wteaw^1
 3267^1^0^11^11^1413^0.5353^0.2646^1^Razormane Water Seeker^^
 3268^1^0^10^11^1413^0.5436^0.2564^1^Razormane Thornweaver^2589:1:2^
 5822^1^0^11^11^1411^0.5281^0.0897^1^Felweaver Scornn^1503:1:1,5572:1:1^
+250927^6^0^10^11^2521^0.6013^0.3372^6^Shadowgale Ursera^1513:1:1,4775:2:2,4776:4:4,6889:2:2^
+252764^1^0^10^10^2521^0.6659^0.5342^1^Al'Aketh Skypriest^255663:1:1^
+256092^1^0^10^11^2521^0.6257^0.3770^1^Shadowgale Shriekling^^
+259398^1^0^11^11^2521^0.6274^0.6173^1^Galemender Delanea^2589:1:2,252032:1:2,285255:1:1^
 266852^1^0^12^12^1411^0.4345^0.2408^1^Halikor^275719:1:1,275723:1:1,277665:1:1^
 275666^1^0^11^11^1411^0.5921^0.1762^1^Aggor the Young^1733:1:1,4605:1:1,286009:1:1^
 @i^117^Tough Jerky
@@ -27,6 +31,7 @@ GoldScout-export 5^6dbz4t5wteaw^1
 @i^1422^Worn Leather Gloves
 @i^1430^Patchwork Gloves
 @i^1503^Warped Leather Boots
+@i^1513^Old Greatsword
 @i^1733^Worn Cloak
 @i^2589^Linen Cloth
 @i^2644^Loose Chain Cloak
@@ -34,6 +39,8 @@ GoldScout-export 5^6dbz4t5wteaw^1
 @i^3171^Broken Boar Tusk
 @i^4563^Billy Club
 @i^4605^Red-speckled Mushroom
+@i^4775^Cracked Bill
+@i^4776^Ruffled Feather
 @i^4867^Broken Scorpid Leg
 @i^4869^Fizzle's Claw
 @i^4871^Searing Collar
@@ -47,12 +54,16 @@ GoldScout-export 5^6dbz4t5wteaw^1
 @i^4903^Eye of Burning Shadow
 @i^5466^Scorpid Stinger
 @i^5572^Small Green Pouch
+@i^6889^Small Egg
 @i^14087^Beaded Cuffs
 @i^14088^Beaded Cloak
 @i^14544^Lieutenant's Insignia
+@i^252032^Red Delicious Stormapple
+@i^255663^Windstone
 @i^275719^Weathered Spine
 @i^275723^Halikor's Hoof
 @i^277665^Charged Thunder Lizard Organ
+@i^285255^Thendal Watcher's Gloves
 @i^286009^Aggor's Belt
 @q^117^1:0:0
 @q^118^1:0:0
@@ -62,6 +73,7 @@ GoldScout-export 5^6dbz4t5wteaw^1
 @q^1422^0:4:0
 @q^1430^0:4:0
 @q^1503^0:4:0
+@q^1513^0:2:0
 @q^1733^0:4:0
 @q^2589^1:7:1
 @q^2644^0:4:0
@@ -69,6 +81,8 @@ GoldScout-export 5^6dbz4t5wteaw^1
 @q^3171^0:15:0
 @q^4563^1:2:0
 @q^4605^1:0:0
+@q^4775^0:15:0
+@q^4776^0:15:0
 @q^4867^0:15:0
 @q^4869^1:12:0
 @q^4871^1:12:0
@@ -82,16 +96,21 @@ GoldScout-export 5^6dbz4t5wteaw^1
 @q^4903^1:12:0
 @q^5466^1:7:1
 @q^5572^1:1:0
+@q^6889^1:7:1
 @q^14087^1:4:0
 @q^14088^1:4:0
 @q^14544^1:12:0
+@q^252032^1:0:0
+@q^255663^1:0:0
 @q^275719^1:12:0
 @q^275723^1:12:0
 @q^277665^1:12:0
+@q^285255^2:4:0
 @q^286009^1:12:0
 @m^1411^Durotar
 @m^1412^Mulgore
 @m^1413^The Barrens
+@m^2521^Zephras Isle
 @c^2300^
 @c^2302^
 @c^2303^
@@ -1226,6 +1245,10 @@ GoldScout-export 5^6dbz4t5wteaw^1
 @a^3267^110:1
 @a^3268^110:1
 @a^5822^30:1
+@a^250927^131:5,152:1
+@a^252764^213:1
+@a^256092^152:1
+@a^259398^252:1
 @a^266852^88:1
 @a^275666^71:1
 @l^0^enUS
