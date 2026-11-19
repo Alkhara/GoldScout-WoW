@@ -1,12 +1,18 @@
-GoldScout-export 5^w3tllpw00r6k^2
+GoldScout-export 5^w3tllpw00r6k^3
 2244^3^0^21^22^1424^0.7870^0.4056^3^Syndicate Shadow Mage^1205:1:1,2592:1:2,211853:1:1^
 2260^7^0^21^22^1424^0.7857^0.4328^7^Syndicate Rogue^2589:1:1,2592:1:1^
 2261^22^0^20^21^1424^0.7779^0.4384^22^Syndicate Watchman^422:2:2,1776:1:1,1794:1:1,2592:3:4,2782:1:1,4306:2:2,211853:1:1,251335:1:1^
+2266^1^0^23^23^1424^0.3636^0.3557^1^Hillsbrad Farmer^2592:1:1,4538:1:1^
+2354^5^0^22^23^1424^0.4200^0.4102^5^Vicious Gray Bear^2940:2:2,3730:3:3,5635:1:1,11406:2:2,11407:1:1^
+2384^30^0^23^24^1424^0.4448^0.4049^30^Starving Mountain Lion^3496:10:10,3731:16:16,5135:3:3,5136:12:12,211784:1:1,248686:1:1,248689:1:1^
 2427^2^0^24^24^1424^0.7755^0.4249^2^Jailor Eston^2592:1:1,3467:2:2^
 2428^1^0^24^24^1424^0.7784^0.3943^1^Jailor Marlgen^3499:1:1^
 3100^5^0^8^9^1411^0.5463^0.1677^5^Elder Mottled Boar^769:4:4,771:3:3,3171:2:2^
 3108^2^0^10^10^1411^0.5795^0.1521^2^Encrusted Surf Crawler^4873:1:1,4874:1:1^
 3228^1^0^11^11^1411^0.5804^0.1554^1^Corrupted Surf Crawler^4873:1:1^
+3632^2^0^15^16^1414^0.5194^0.5540^2^Deviate Creeper^5124:1:1^
+3633^1^0^16^16^1414^0.5267^0.5505^1^Deviate Slayer^5124:1:1^
+3680^1^0^1^1^1414^0.5277^0.5460^1^Serpentbloom Snake^^
 @i^422^Dwarven Mild
 @i^769^Chunk of Boar Meat
 @i^771^Chipped Boar Tusk
@@ -16,13 +22,27 @@ GoldScout-export 5^w3tllpw00r6k^2
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2782^Mishandled Recurve Bow
+@i^2940^Bloody Bear Paw
 @i^3171^Broken Boar Tusk
 @i^3467^Dull Iron Key
+@i^3496^Mountain Lion Blood
 @i^3499^Burnished Gold Key
+@i^3730^Big Bear Meat
+@i^3731^Lion Meat
 @i^4306^Silk Cloth
+@i^4538^Snapvine Watermelon
 @i^4873^Dry Hardened Barnacle
 @i^4874^Clean Fishbones
+@i^5124^Small Raptor Tooth
+@i^5135^Thin Black Claw
+@i^5136^Torn Furry Ear
+@i^5635^Sharp Claw
+@i^11406^Rotting Bear Carcass
+@i^11407^Torn Bear Pelt
+@i^211784^Scroll: WUBBA WUBBA
 @i^211853^Scroll: VOCE WELL
+@i^248686^Waylaid Crate: Journeyman Herbs
+@i^248689^Waylaid Crate: Journeyman Curiosities
 @i^251335^Plans: Sterling Silver Boots
 @q^422^1:0:0
 @q^769^1:7:1
@@ -33,15 +53,30 @@ GoldScout-export 5^w3tllpw00r6k^2
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2782^0:2:0
+@q^2940^0:15:0
 @q^3171^0:15:0
 @q^3467^1:13:0
+@q^3496^1:12:0
 @q^3499^1:13:0
+@q^3730^1:7:1
+@q^3731^1:7:1
 @q^4306^1:7:1
+@q^4538^1:0:0
 @q^4873^0:15:0
 @q^4874^0:15:0
+@q^5124^0:15:0
+@q^5135^0:15:0
+@q^5136^0:15:0
+@q^5635^1:7:1
+@q^11406^0:15:0
+@q^11407^1:12:0
+@q^211784^1:0:0
 @q^211853^1:0:0
+@q^248686^1:0:1
+@q^248689^1:0:1
 @q^251335^2:9:0
 @m^1411^Durotar
+@m^1414^Kalimdor
 @m^1424^Hillsbrad Foothills
 @c^2454^
 @c^2455^
@@ -240,9 +275,15 @@ GoldScout-export 5^w3tllpw00r6k^2
 @a^2244^156:1,175:2
 @a^2260^175:7
 @a^2261^175:14,176:1,195:7
+@a^2266^147:1
+@a^2354^147:1,167:1,168:3
+@a^2384^129:2,147:4,148:2,149:1,150:1,167:5,168:7,169:4,170:2,171:1,189:1
 @a^2427^175:2
 @a^2428^155:1
 @a^3100^70:4,71:1
 @a^3108^51:1,71:1
 @a^3228^71:1
+@a^3632^230:2
+@a^3633^230:1
+@a^3680^210:1
 @l^0^enUS

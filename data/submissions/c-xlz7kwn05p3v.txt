@@ -1,16 +1,27 @@
-GoldScout-export 5^xlz7kwn05p3v^3
+GoldScout-export 5^xlz7kwn05p3v^4
 426^3^0^17^18^1433^0.3050^0.3255^3^Redridge Brute^2856:1:1^
 430^4^0^18^19^1433^0.2590^0.2672^4^Redridge Mystic^1013:2:2,1766:1:1,2589:1:1,2592:2:2^
+437^3^0^21^22^1433^0.7312^0.6941^3^Blackrock Renegade^3014:2:2^
+440^7^0^19^20^1433^0.7035^0.7919^7^Blackrock Grunt^2589:2:6,2592:1:2,3014:2:2,211854:1:1,248685:1:1^
 446^9^0^19^20^1433^0.2679^0.2651^9^Redridge Basher^1013:3:3,2287:1:1,2589:1:2,2856:3:3,4698:1:1,211784:1:1^
+485^12^0^20^21^1433^0.7154^0.7825^12^Blackrock Outrunner^818:1:1,1179:1:1,1791:1:1,1798:1:1,2287:2:2,2592:1:1,3014:6:6^
 881^1^0^9^9^1429^0.7084^0.8027^1^Surena Caledon^6810:1:1^
 1725^1^0^18^18^1415^0.4083^0.7967^1^Defias Watchman^1816:1:1^
+4463^2^0^22^23^1433^0.6903^0.7876^2^Blackrock Summoner^2592:1:2,3012:1:1^
+214519^1^0^23^23^1433^0.7203^0.8517^1^Incinerator Gar'im^271872:1:1^
+@i^818^Tigerseye
 @i^1013^Iron Rivet
+@i^1179^Ice Cold Milk
 @i^1766^Canvas Cloak
+@i^1791^Patched Leather Gloves
+@i^1798^Rawhide Cloak
 @i^1816^Unbalanced Axe
 @i^2287^Haunch of Meat
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2856^Iron Pike
+@i^3012^Scroll of Agility
+@i^3014^Battleworn Axe
 @i^4698^Seer's Mantle
 @i^6289^Raw Longjaw Mud Snapper
 @i^6303^Raw Slitherskin Mackerel
@@ -19,13 +30,22 @@ GoldScout-export 5^xlz7kwn05p3v^3
 @i^6361^Raw Rainbow Fin Albacore
 @i^6810^Surena's Choker
 @i^211784^Scroll: WUBBA WUBBA
+@i^211854^Scroll: OMIT KESA
+@i^248685^Waylaid Crate: Apprentice Curiosities
+@i^271872^Broken Staff of Incinerator Gar'im
+@q^818^2:7:1
 @q^1013^1:12:0
+@q^1179^1:0:0
 @q^1766^0:4:0
+@q^1791^0:4:0
+@q^1798^0:4:0
 @q^1816^0:2:0
 @q^2287^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2856^1:12:0
+@q^3012^1:0:0
+@q^3014^1:12:0
 @q^4698^1:4:0
 @q^6289^1:7:1
 @q^6303^1:7:1
@@ -34,6 +54,9 @@ GoldScout-export 5^xlz7kwn05p3v^3
 @q^6361^1:7:1
 @q^6810^1:12:0
 @q^211784^1:0:0
+@q^211854^1:0:0
+@q^248685^1:0:1
+@q^271872^1:12:0
 @m^1415^Eastern Kingdoms
 @m^1429^Elwynn Forest
 @m^1433^Redridge Mountains
@@ -175,9 +198,14 @@ GoldScout-export 5^xlz7kwn05p3v^3
 @c^286152^
 @a^426^124:1,126:2
 @a^430^85:1,104:2,105:1
+@a^437^274:2,294:1
+@a^440^294:1,313:2,334:4
 @a^446^104:4,105:5
+@a^485^274:3,294:1,314:1,333:1,334:6
 @a^881^334:1
 @a^1725^308:1
+@a^4463^313:2
+@a^214519^354:1
 @f^1433^0^29^118^6289:12:12,6308:17:17^204:29
 @f^1453^0^33^130^6303:13:13,6358:6:6,6361:14:14^65:33
 @l^0^enUS

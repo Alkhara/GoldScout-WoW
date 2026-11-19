@@ -1,4 +1,8 @@
-GoldScout-export 5^qtzr3pesrdlg^3
+GoldScout-export 5^qtzr3pesrdlg^4
+1025^3^0^21^22^1437^0.1499^0.3381^3^Bluegill Puddlejumper^730:1:1,1468:1:1,5524:2:2,17057:1:1^
+1026^1^0^22^22^1437^0.1493^0.3425^1^Bluegill Forager^1468:1:1,5784:1:1,6308:1:3^
+1027^9^0^24^25^1437^0.1440^0.3355^9^Bluegill Warrior^730:2:2,929:1:1,1468:1:1,5784:2:2,17057:2:2,211853:1:1^
+1028^5^0^23^24^1437^0.1609^0.3323^5^Bluegill Muckdweller^730:2:2,1468:2:2,4661:1:1,5524:2:2,6568:1:1,17057:3:3^
 254560^13^0^39^40^2548^0.4828^0.4796^13^Twilight Shadowmancer^4306:5:11,4338:1:1,6438:1:1,265745:3:3^
 255851^3^0^38^39^2548^0.7300^0.5080^3^Mature Paletusk^769:2:2,2295:1:1,3403:1:1^
 256798^10^0^37^38^2548^0.4820^0.4812^10^Twilight Neophyte^3671:1:1,4306:2:5^
@@ -16,7 +20,10 @@ GoldScout-export 5^qtzr3pesrdlg^3
 261710^4^0^39^40^2548^0.4902^0.4750^4^Twilight Brute^4306:1:2,5431:1:1^
 261711^8^0^38^39^2548^0.4711^0.5018^8^Empowered Brute^3803:1:1,6438:2:2^
 262169^19^0^39^41^2548^0.4806^0.4968^19^Twilight Ritualist^4306:6:14,4338:2:3,5429:1:1,6438:1:1^
+@i^730^Murloc Eye
 @i^769^Chunk of Boar Meat
+@i^929^Healing Potion
+@i^1468^Murloc Fin
 @i^2295^Large Boar Tusk
 @i^3403^Ivory Boar Tusk
 @i^3671^Lifeless Skull
@@ -25,13 +32,18 @@ GoldScout-export 5^qtzr3pesrdlg^3
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4582^Soft Bushy Tail
+@i^4661^Bright Mantle
 @i^5429^A Pretty Rock
 @i^5431^Empty Hip Flask
 @i^5524^Thick-shelled Clam
 @i^5569^Seaweed
+@i^5784^Slimy Murloc Scale
+@i^6308^Raw Bristle Whisker Catfish
 @i^6438^Dull Elemental Bracer
+@i^6568^Shimmering Trousers of Shadow Wrath
 @i^12206^Tender Crab Meat
 @i^17057^Shiny Fish Scales
+@i^211853^Scroll: VOCE WELL
 @i^265745^Twilight Missive
 @i^265750^Chogg's Head
 @i^265751^Zac's Head
@@ -39,7 +51,10 @@ GoldScout-export 5^qtzr3pesrdlg^3
 @i^268581^Scoutmaster's Eye
 @i^268796^Smuggled Goods
 @i^269257^Skullbasher
+@q^730^1:7:1
 @q^769^1:7:1
+@q^929^1:0:0
+@q^1468^1:7:1
 @q^2295^0:15:0
 @q^3403^0:15:0
 @q^3671^0:15:0
@@ -48,13 +63,18 @@ GoldScout-export 5^qtzr3pesrdlg^3
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4582^1:12:0
+@q^4661^2:4:0
 @q^5429^0:15:0
 @q^5431^0:15:0
 @q^5524^1:7:0
 @q^5569^0:15:0
+@q^5784^1:7:1
+@q^6308^1:7:1
 @q^6438^0:15:0
+@q^6568^2:4:0
 @q^12206^1:7:1
 @q^17057^1:15:0
+@q^211853^1:0:0
 @q^265745^1:12:0
 @q^265750^1:12:0
 @q^265751^1:12:0
@@ -62,6 +82,7 @@ GoldScout-export 5^qtzr3pesrdlg^3
 @q^268581^1:12:0
 @q^268796^1:15:0
 @q^269257^1:12:0
+@m^1437^Wetlands
 @m^2548^Riverglades
 @c^2568^
 @c^2569^
@@ -534,6 +555,10 @@ GoldScout-export 5^qtzr3pesrdlg^3
 @c^279959^
 @c^279972^
 @c^279973^
+@a^1025^122:1,123:2
+@a^1026^122:1
+@a^1027^122:9
+@a^1028^123:5
 @a^254560^189:11,190:1,209:1
 @a^255851^214:3
 @a^256798^189:8,209:2

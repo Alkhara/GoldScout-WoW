@@ -1,4 +1,4 @@
-GoldScout-export 5^gmgkhw2mg17m^6
+GoldScout-export 5^gmgkhw2mg17m^7
 36^1^0^11^11^1436^0.3320^0.3822^1^Harvest Golem^1506:1:1^
 114^2^0^14^15^1436^0.3748^0.5132^2^Harvest Watcher^732:2:2,814:1:1,1274:1:1^
 122^1^0^17^17^1436^0.3627^0.8307^1^Defias Highwayman^^
@@ -20,15 +20,19 @@ GoldScout-export 5^gmgkhw2mg17m^6
 1150^1^0^30^31^1434^0.3567^0.0885^1^River Crocolisk^12037:1:1^
 1525^6^0^5^6^1420^0.5426^0.5683^6^Rotting Dead^118:1:1,3363:1:1^
 1526^2^0^7^7^1420^0.5358^0.5751^2^Ravaged Corpse^^
+1527^3^0^7^8^1420^0.6773^0.4325^3^Hungering Dead^159:1:1^
 1529^8^0^9^10^1420^0.7658^0.6151^8^Bleeding Horror^1423:1:1,1430:1:1,2589:3:5,9761:1:1^
 1532^8^0^10^11^1420^0.7640^0.6020^8^Wandering Spirit^159:1:1,2589:3:6,4604:2:2^
 1535^3^0^6^7^1420^0.3199^0.4804^3^Scarlet Warrior^2589:2:3^
 1537^7^0^8^9^1420^0.7574^0.5798^7^Scarlet Zealot^159:1:1,1414:1:1,1415:1:1,1416:1:1,2070:1:1,2589:3:4^
-1538^5^0^9^10^1420^0.7950^0.5618^5^Scarlet Friar^159:1:1,1433:1:1,3214:1:1^
-1547^1^0^6^6^1420^0.5874^0.5461^1^Decrepit Darkhound^^
+1538^7^0^9^10^1420^0.7953^0.4778^7^Scarlet Friar^159:1:1,1414:1:1,1433:1:1,2589:1:2,3214:1:1^
+1540^2^0^10^11^1420^0.7827^0.3301^2^Scarlet Vanguard^1181:1:1,2642:1:1^
+1547^3^0^6^6^1420^0.6509^0.6082^3^Decrepit Darkhound^2672:2:2,3300:1:1^
 1548^2^0^7^8^1420^0.5526^0.6535^2^Cursed Darkhound^2672:1:1^
-1554^2^0^8^9^1420^0.7340^0.5759^2^Vampiric Duskbat^7074:2:2,12223:1:1^
+1549^2^0^10^10^1420^0.8141^0.4494^2^Ravenous Darkhound^2672:2:2^
+1554^5^0^8^9^1420^0.7421^0.4840^5^Vampiric Duskbat^6296:2:2,7074:3:3,9760:1:1,12223:2:2^
 1555^14^0^9^10^1420^0.8636^0.5273^14^Vicious Night Web Spider^1475:2:2,1476:9:9,2872:4:4,5465:3:3^
+1660^2^0^8^8^1420^0.7949^0.2537^2^Scarlet Bodyguard^2589:1:1^
 1664^1^0^11^11^1420^0.7886^0.5599^1^Captain Vachon^^
 1765^1^0^11^11^1421^0.6713^0.0595^1^Worg^2672:1:1^
 1766^1^0^12^12^1421^0.6324^0.0967^1^Mottled Worg^^
@@ -136,7 +140,11 @@ GoldScout-export 5^gmgkhw2mg17m^6
 259434^1^0^11^11^1420^0.1311^0.6561^1^Tarnished Drudge^^
 260428^9^0^10^12^1420^0.1054^0.6663^9^Shadowvale Lurcher^1411:1:1,1498:1:1,1737:1:1,2589:3:6,4604:1:1,211785:1:1,286259:5:5^
 260430^2^0^10^10^1420^0.1075^0.6623^2^Shadowvale Mystic^159:1:1,286259:1:1^
+267006^8^0^11^12^1420^0.6805^0.6415^8^Dark Neophyte^117:1:1,2589:3:8,275851:3:3^
+275437^8^0^10^12^1420^0.6763^0.6479^8^Dark Enforcer^117:1:1,2589:2:2,2763:1:1,275851:2:2^
+276020^1^0^13^13^1420^0.8230^0.4634^1^Riptear^2589:1:2,286326:1:1^
 277882^1^0^13^13^1421^0.6145^0.1091^1^Foothills Duskbat^6296:1:1^
+@i^117^Tough Jerky
 @i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
 @i^414^Dalaran Sharp
@@ -150,6 +158,7 @@ GoldScout-export 5^gmgkhw2mg17m^6
 @i^814^Flask of Oil
 @i^828^Small Blue Pouch
 @i^1180^Scroll of Stamina
+@i^1181^Scroll of Spirit
 @i^1205^Melon Juice
 @i^1274^Hops
 @i^1374^Frayed Shoes
@@ -186,6 +195,7 @@ GoldScout-export 5^gmgkhw2mg17m^6
 @i^2210^Battered Buckler
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2642^Loose Chain Boots
 @i^2649^Flimsy Chain Belt
 @i^2650^Flimsy Chain Boots
 @i^2672^Stringy Wolf Meat
@@ -254,6 +264,7 @@ GoldScout-export 5^gmgkhw2mg17m^6
 @i^6289^Raw Longjaw Mud Snapper
 @i^6291^Raw Brilliant Smallfish
 @i^6296^Patch of Bat Hair
+@i^6299^Sickly Looking Fish
 @i^6308^Raw Bristle Whisker Catfish
 @i^6390^Pattern: Stylish Blue Shirt
 @i^6402^Mail Combat Leggings
@@ -284,6 +295,7 @@ GoldScout-export 5^gmgkhw2mg17m^6
 @i^9451^Bubbling Water
 @i^9452^Hydrocane
 @i^9492^Electromagnetic Gigaflux Reactivator
+@i^9760^Cadet Bracers
 @i^9761^Cadet Cloak
 @i^9827^Scaled Leather Belt of the Channeler
 @i^9831^Scaled Cloak of the Boar
@@ -316,7 +328,10 @@ GoldScout-export 5^gmgkhw2mg17m^6
 @i^274290^Painwalker Buckler
 @i^274291^Polished Skullcap
 @i^274293^Spellsever Crossbow
+@i^275851^Necrotic Crystal Fragment
 @i^286259^Faintly Glowing Bone
+@i^286326^Riptear's Heart
+@q^117^1:0:0
 @q^118^1:0:0
 @q^159^1:0:0
 @q^414^1:0:0
@@ -330,6 +345,7 @@ GoldScout-export 5^gmgkhw2mg17m^6
 @q^814^1:7:1
 @q^828^1:1:0
 @q^1180^1:0:0
+@q^1181^1:0:0
 @q^1205^1:0:0
 @q^1274^1:12:0
 @q^1374^0:4:0
@@ -366,6 +382,7 @@ GoldScout-export 5^gmgkhw2mg17m^6
 @q^2210^0:4:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2642^0:4:0
 @q^2649^0:4:0
 @q^2650^0:4:0
 @q^2672^1:7:1
@@ -434,6 +451,7 @@ GoldScout-export 5^gmgkhw2mg17m^6
 @q^6289^1:7:1
 @q^6291^1:7:1
 @q^6296^0:15:0
+@q^6299^1:0:0
 @q^6308^1:7:1
 @q^6390^2:9:0
 @q^6402^2:4:0
@@ -464,6 +482,7 @@ GoldScout-export 5^gmgkhw2mg17m^6
 @q^9451^1:0:0
 @q^9452^3:2:0
 @q^9492^3:4:0
+@q^9760^1:4:0
 @q^9761^1:4:0
 @q^9827^2:4:0
 @q^9831^2:4:0
@@ -496,7 +515,9 @@ GoldScout-export 5^gmgkhw2mg17m^6
 @q^274290^3:4:0
 @q^274291^3:4:0
 @q^274293^3:2:0
+@q^275851^1:12:0
 @q^286259^1:12:0
+@q^286326^1:12:0
 @m^1413^The Barrens
 @m^1420^Tirisfal Glades
 @m^1421^Silverpine Forest
@@ -2555,15 +2576,19 @@ GoldScout-export 5^gmgkhw2mg17m^6
 @a^1150^27:1
 @a^1525^230:5,231:1
 @a^1526^230:2
+@a^1527^173:3
 @a^1529^235:1,254:1,255:6
 @a^1532^235:2,255:6
 @a^1535^186:3
 @a^1537^235:6,270:1
-@a^1538^235:5
-@a^1547^211:1
+@a^1538^115:2,235:5
+@a^1540^135:2
+@a^1547^211:1,253:1,273:1
 @a^1548^252:1,290:1
-@a^1554^234:2
+@a^1549^176:1,196:1
+@a^1554^154:1,174:1,175:1,234:2
 @a^1555^197:2,216:1,217:8,236:2,237:1
+@a^1660^115:2
 @a^1664^235:1
 @a^1765^33:1
 @a^1766^32:1
@@ -2608,6 +2633,10 @@ GoldScout-export 5^gmgkhw2mg17m^6
 @a^259434^262:1
 @a^260428^261:2,262:7
 @a^260430^261:1,262:1
+@a^267006^253:6,273:2
+@a^275437^253:4,273:4
+@a^276020^196:1
 @a^277882^52:1
+@f^1420^0^3^1^6289:1:1,6291:1:1,6299:1:1^213:3
 @f^1456^0^22^55^6289:12:12,6291:6:6,6308:4:4^228:3,248:19
 @l^0^enUS

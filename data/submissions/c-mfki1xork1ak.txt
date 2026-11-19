@@ -1,6 +1,12 @@
-GoldScout-export 5^mfki1xork1ak^1
+GoldScout-export 5^mfki1xork1ak^2
+667^2^0^39^40^1434^0.4403^0.3951^2^Skullsplitter Warrior^1524:1:1,2730:1:1^
+669^3^0^41^42^1434^0.4597^0.4041^3^Skullsplitter Hunter^1520:1:1,1645:1:1,4338:2:4,8151:1:1^
+696^2^0^39^40^1434^0.4408^0.4020^2^Skullsplitter Axe Thrower^1520:1:1,1524:1:1,4306:1:3^
 730^1^0^43^43^1434^0.2837^0.4291^1^Tethis^3877:1:1,4461:1:1,4587:1:1^
 731^1^0^43^43^1434^0.3830^0.3458^1^King Bangalash^3880:1:1^
+756^4^0^41^42^1434^0.4560^0.4052^4^Skullsplitter Panther^^
+780^5^0^39^40^1434^0.4519^0.3817^5^Skullsplitter Mystic^1520:1:1,1524:1:1,2466:4:4,2738:1:1,8151:1:1,8153:1:3^
+784^1^0^41^41^1434^0.4447^0.4081^1^Skullsplitter Beastmaster^1520:1:1,1524:1:1,4338:1:2,4599:1:1^
 1561^8^0^40^41^1434^0.2968^0.7049^8^Bloodsail Raider^3910:2:2,4306:2:4^
 1562^3^0^40^41^1434^0.3062^0.7165^3^Bloodsail Mage^4306:1:3,4338:1:1^
 1563^19^0^42^43^1434^0.2590^0.6462^19^Bloodsail Swashbuckler^1645:3:3,2730:1:1,3897:1:1,3910:5:5,4306:1:1,4338:6:7^
@@ -9,7 +15,10 @@ GoldScout-export 5^mfki1xork1ak^1
 10928^8^0^42^43^1434^0.2481^0.5630^8^Succubus Minion^^
 12922^5^0^42^43^1434^0.2763^0.7018^5^Imp Minion^^
 @i^770^Pointy Crocolisk Tooth
+@i^1520^Troll Sweat
+@i^1524^Skullsplitter Tusk
 @i^1645^Moonberry Juice
+@i^2466^Skullsplitter Fetish
 @i^2730^Green Hills of Stranglethorn - Page 6
 @i^2738^Green Hills of Stranglethorn - Page 14
 @i^2744^Green Hills of Stranglethorn - Page 20
@@ -26,12 +35,18 @@ GoldScout-export 5^mfki1xork1ak^1
 @i^4338^Mageweave Cloth
 @i^4461^Raptor Hide
 @i^4587^Tribal Raptor Feathers
+@i^4599^Cured Ham Steak
+@i^8151^Flask of Mojo
+@i^8153^Wildvine
 @i^9260^Volatile Rum
 @i^21150^Iron Bound Trunk
 @i^21228^Mithril Bound Trunk
 @i^217161^Torn Mystical Scroll
 @q^770^0:15:0
+@q^1520^0:15:0
+@q^1524^1:12:0
 @q^1645^1:0:0
+@q^2466^1:12:0
 @q^2730^1:12:0
 @q^2738^1:12:0
 @q^2744^1:12:0
@@ -48,6 +63,9 @@ GoldScout-export 5^mfki1xork1ak^1
 @q^4338^1:7:1
 @q^4461^1:7:1
 @q^4587^0:15:0
+@q^4599^1:0:0
+@q^8151^1:7:1
+@q^8153^1:7:1
 @q^9260^1:0:0
 @q^21150^1:15:0
 @q^21228^1:15:0
@@ -103,8 +121,14 @@ GoldScout-export 5^mfki1xork1ak^1
 @c^279952^
 @c^279960^
 @c^279968^
+@a^667^148:2
+@a^669^149:1,169:2
+@a^696^168:2
 @a^730^165:1
 @a^731^127:1
+@a^756^149:1,168:1,169:2
+@a^780^128:1,149:3,168:1
+@a^784^168:1
 @a^1561^265:4,285:1,286:3
 @a^1562^285:1,286:2
 @a^1563^204:6,224:6,306:1,325:3,326:3
