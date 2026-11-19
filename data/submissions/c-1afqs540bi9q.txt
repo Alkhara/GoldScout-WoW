@@ -1,4 +1,4 @@
-GoldScout-export 5^1afqs540bi9q^7
+GoldScout-export 5^1afqs540bi9q^8
 205^12^0^28^29^1431^0.6422^0.4996^12^Nightbane Dark Runner^^
 206^8^0^29^30^1431^0.5860^0.7908^8^Nightbane Vile Fang^1783:2:2,5635:2:2^
 210^5^0^26^27^1431^0.2383^0.3302^5^Bone Chewer^1129:2:2,2592:1:2,3048:1:1,4306:1:2^
@@ -12,6 +12,9 @@ GoldScout-export 5^1afqs540bi9q^7
 604^20^0^27^28^1431^0.2456^0.3097^20^Plague Spreader^884:4:4,887:1:1,1129:4:4,1478:1:1,1759:1:1,1827:1:1,2077:1:1,2592:4:6,3385:1:1,4036:1:1,4306:6:9,4606:2:2,4633:1:1,5529:1:1,6530:3:3,248688:1:1^
 681^10^0^30^31^1434^0.3609^0.1310^10^Young Stranglethorn Tiger^1686:5:5,12202:1:1^
 683^10^0^30^31^1434^0.4048^0.1256^10^Young Panther^1686:4:4^
+705^12^0^1^1^1426^0.2898^0.7372^12^Ragged Young Wolf^750:8:8,1378:1:1,2649:1:1,4865:4:4,7073:8:8,7074:6:6^
+708^12^0^3^3^1426^0.2038^0.7306^12^Small Crag Boar^117:5:5,1374:1:1,2653:2:2,3363:1:1,3365:1:1,4865:5:5,7098:3:3^
+724^3^0^2^2^1426^0.2480^0.7302^3^Burly Rockjaw Trogg^2589:1:1,4496:1:1^
 785^1^0^29^29^1431^0.1700^0.3335^1^Skeletal Warder^^
 892^4^0^27^28^1431^0.3459^0.7200^4^Splinter Fist Taskmaster^^
 898^2^0^26^26^1431^0.6124^0.4936^2^Nightbane Worgen^^
@@ -26,11 +29,15 @@ GoldScout-export 5^1afqs540bi9q^7
 2044^1^0^26^26^1429^0.8558^0.6968^1^Forlorn Spirit^2592:1:2^
 2462^6^0^25^25^1431^0.2343^0.3590^6^Flesh Eating Worm^^
 4969^2^0^25^25^1453^0.7358^0.5947^2^Old Town Thug^^
+@i^117^Tough Jerky
 @i^422^Dwarven Mild
+@i^750^Tough Wolf Meat
 @i^884^Ghoul Rib
 @i^887^Pound of Flesh
 @i^1129^Ghoul Fang
 @i^1205^Melon Juice
+@i^1374^Frayed Shoes
+@i^1378^Frayed Pants
 @i^1478^Scroll of Protection II
 @i^1686^Bristly Whisker
 @i^1711^Scroll of Stamina II
@@ -44,7 +51,11 @@ GoldScout-export 5^1afqs540bi9q^7
 @i^2382^The Embalmer's Heart
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2649^Flimsy Chain Belt
+@i^2653^Flimsy Chain Gloves
 @i^3048^Lambent Scale Legguards
+@i^3363^Frayed Belt
+@i^3365^Frayed Bracers
 @i^3385^Lesser Mana Potion
 @i^3514^Mor'Ladim's Skull
 @i^3629^Mistmantle Family Ring
@@ -52,20 +63,29 @@ GoldScout-export 5^1afqs540bi9q^7
 @i^3787^Stone Club
 @i^4036^Silver-thread Cuffs
 @i^4306^Silk Cloth
+@i^4496^Small Brown Pouch
 @i^4606^Spongy Morel
 @i^4633^Heavy Bronze Lockbox
+@i^4865^Ruined Pelt
 @i^5529^Tomb Dust
 @i^5635^Sharp Claw
 @i^6530^Nightcrawlers
+@i^7073^Broken Fang
+@i^7074^Chipped Claw
+@i^7098^Splintered Tusk
 @i^12202^Tiger Meat
 @i^248688^Waylaid Crate: Journeyman Textiles
 @i^248689^Waylaid Crate: Journeyman Curiosities
 @i^248694^Waylaid Crate: Expert Curiosities
+@q^117^1:0:0
 @q^422^1:0:0
+@q^750^1:12:0
 @q^884^1:12:0
 @q^887^0:15:0
 @q^1129^1:12:0
 @q^1205^1:0:0
+@q^1374^0:4:0
+@q^1378^0:4:0
 @q^1478^1:0:0
 @q^1686^0:15:0
 @q^1711^1:0:0
@@ -79,7 +99,11 @@ GoldScout-export 5^1afqs540bi9q^7
 @q^2382^1:12:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2649^0:4:0
+@q^2653^0:4:0
 @q^3048^2:4:0
+@q^3363^0:4:0
+@q^3365^0:4:0
 @q^3385^1:0:0
 @q^3514^1:12:0
 @q^3629^1:12:0
@@ -87,15 +111,21 @@ GoldScout-export 5^1afqs540bi9q^7
 @q^3787^0:2:0
 @q^4036^2:4:0
 @q^4306^1:7:1
+@q^4496^1:1:0
 @q^4606^1:0:0
 @q^4633^2:15:0
+@q^4865^0:15:0
 @q^5529^0:15:0
 @q^5635^1:7:1
 @q^6530^1:0:0
+@q^7073^0:15:0
+@q^7074^0:15:0
+@q^7098^0:15:0
 @q^12202^1:7:1
 @q^248688^1:0:1
 @q^248689^1:0:1
 @q^248694^1:0:1
+@m^1426^Dun Morogh
 @m^1429^Elwynn Forest
 @m^1431^Duskwood
 @m^1434^Stranglethorn Vale
@@ -837,6 +867,9 @@ GoldScout-export 5^1afqs540bi9q^7
 @a^604^104:11,125:7,144:2
 @a^681^47:8,67:2
 @a^683^47:2,48:7,66:1
+@a^705^285:12
+@a^708^283:2,284:8,304:2
+@a^724^284:2,285:1
 @a^785^123:1
 @a^892^286:2,287:2
 @a^898^192:2

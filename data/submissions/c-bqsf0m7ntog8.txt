@@ -1,11 +1,15 @@
-GoldScout-export 5^bqsf0m7ntog8^3
+GoldScout-export 5^bqsf0m7ntog8^4
 565^1^0^20^20^1431^0.6833^0.2465^1^Rabid Dire Wolf^^
 628^15^0^24^25^1431^0.6638^0.3054^15^Black Ravager^1015:9:9,3301:1:1,3402:8:8,5635:1:1,6573:1:1^
 923^4^0^23^24^1431^0.6785^0.2864^4^Young Black Ravager^1015:2:2,3301:1:1,3402:1:1,15259:1:1^
 1007^2^0^20^21^1437^0.6136^0.6336^2^Mosshide Gnoll^^
 1008^2^0^21^22^1437^0.6095^0.6047^2^Mosshide Mongrel^2592:1:1^
 1010^3^0^22^23^1437^0.5953^0.5660^3^Mosshide Fenrunner^2589:1:3^
-1011^2^0^24^24^1437^0.2891^0.3190^2^Mosshide Trapper^15241:1:1^
+1011^2^0^23^24^1437^0.2891^0.3190^2^Mosshide Trapper^15241:1:1^
+1016^1^0^24^25^1437^0.3612^0.2375^1^Highland Lashtail^1697:1:1^
+1017^6^0^25^26^1437^0.3597^0.2018^6^Highland Scytheclaw^1697:3:3,3180:1:1,3685:2:2^
+1018^11^0^27^28^1437^0.3517^0.1836^11^Highland Razormaw^3685:7:7,5635:2:2,280103:7:7^
+1019^2^0^29^29^1437^0.3295^0.1491^2^Elder Razormaw^3685:2:2,280103:2:2^
 1024^8^0^20^21^1437^0.1482^0.4137^8^Bluegill Murloc^730:4:4,1468:3:3,1797:1:1,5524:4:4,6565:1:1,17057:2:2^
 1025^2^0^21^22^1437^0.1483^0.4057^2^Bluegill Puddlejumper^730:2:2,1468:2:2,5524:1:1^
 1027^1^0^24^24^1437^0.1791^0.3768^1^Bluegill Warrior^730:1:1,17057:1:1^
@@ -32,6 +36,7 @@ GoldScout-export 5^bqsf0m7ntog8^3
 @i^1015^Lean Wolf Flank
 @i^1081^Crisp Spider Meat
 @i^1468^Murloc Fin
+@i^1697^Keen Raptor Tooth
 @i^1705^Lesser Moonstone
 @i^1749^Linked Chain Cloak
 @i^1783^Cross-stitched Gloves
@@ -41,6 +46,7 @@ GoldScout-export 5^bqsf0m7ntog8^3
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^3174^Spider Ichor
+@i^3180^Flecked Raptor Scale
 @i^3182^Spider's Silk
 @i^3301^Sharp Canine
 @i^3348^Giant Crocolisk Skin
@@ -49,6 +55,7 @@ GoldScout-export 5^bqsf0m7ntog8^3
 @i^3402^Soft Patch of Fur
 @i^3618^Gobbler's Head
 @i^3667^Tender Crocolisk Meat
+@i^3685^Raptor Egg
 @i^4306^Silk Cloth
 @i^4428^Spider Palp
 @i^5524^Thick-shelled Clam
@@ -64,6 +71,7 @@ GoldScout-export 5^bqsf0m7ntog8^3
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
 @i^248688^Waylaid Crate: Journeyman Textiles
+@i^280103^Razormaw Incisor
 @i^280319^Unruptured Stalker Gland
 @q^730^1:7:1
 @q^770^0:15:0
@@ -72,6 +80,7 @@ GoldScout-export 5^bqsf0m7ntog8^3
 @q^1015^1:7:1
 @q^1081^1:7:1
 @q^1468^1:7:1
+@q^1697^0:15:0
 @q^1705^2:7:1
 @q^1749^0:4:0
 @q^1783^0:4:0
@@ -81,6 +90,7 @@ GoldScout-export 5^bqsf0m7ntog8^3
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^3174^1:7:1
+@q^3180^0:15:0
 @q^3182^1:7:1
 @q^3301^0:15:0
 @q^3348^1:12:0
@@ -89,6 +99,7 @@ GoldScout-export 5^bqsf0m7ntog8^3
 @q^3402^0:15:0
 @q^3618^1:12:0
 @q^3667^1:7:1
+@q^3685^1:7:1
 @q^4306^1:7:1
 @q^4428^0:15:0
 @q^5524^1:7:0
@@ -104,6 +115,7 @@ GoldScout-export 5^bqsf0m7ntog8^3
 @q^17057^1:15:0
 @q^17058^1:15:0
 @q^248688^1:0:1
+@q^280103^1:12:0
 @q^280319^1:12:0
 @m^1431^Duskwood
 @m^1437^Wetlands
@@ -709,6 +721,10 @@ GoldScout-export 5^bqsf0m7ntog8^3
 @a^1008^231:1,252:1
 @a^1010^211:1,231:1,232:1
 @a^1011^125:2
+@a^1016^87:1
+@a^1017^66:1,67:2,87:3
+@a^1018^66:4,67:5,87:2
+@a^1019^46:1,66:1
 @a^1024^143:1,162:5,163:2
 @a^1025^143:1,162:1
 @a^1027^143:1
