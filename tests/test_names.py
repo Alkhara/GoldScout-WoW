@@ -28,8 +28,9 @@ class NewerFormatTests(unittest.TestCase):
 
     def test_recognises_newer_exports(self):
         self.assertFalse(submission.newer_format(V5))                      # known: checked here
+        self.assertFalse(submission.newer_format(V5.replace("export 5^", "export 6^")))   # version 6 is known too
         self.assertFalse(submission.newer_format(V4))
-        self.assertTrue(submission.newer_format(V5.replace("export 5^", "export 6^")))
+        self.assertTrue(submission.newer_format(V5.replace("export 5^", "export 7^")))
         self.assertTrue(submission.newer_format(V5 + "@z^1^something new\n"))
         self.assertFalse(submission.newer_format("not an export"))
         self.assertFalse(submission.newer_format(V5.replace("abcdefghijkl", "BAD")))   # a broken header isn't "newer"

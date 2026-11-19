@@ -23,7 +23,7 @@ import json
 import math
 import sys
 import time
-from collections import defaultdict
+from collections import Counter, defaultdict
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -140,6 +140,7 @@ def merge(submissions, max_per_player):
             entry = merged.setdefault(mob.npc, {
                 "k": 0, "p": 0, "lmin": 0, "lmax": 0, "names": defaultdict(int),
                 "maps": defaultdict(lambda: [0.0, 0.0, 0]),
+                "zones": Counter(),   # zones reported without a position (dungeons), by kills
                 "areas": defaultdict(lambda: defaultdict(float)),
                 "i": defaultdict(lambda: [0, 0]), "pi": defaultdict(lambda: [0, 0]),
             })
@@ -150,6 +151,8 @@ def merge(submissions, max_per_player):
             entry["lmax"] = max(entry["lmax"], mob.lmax)
             if mob.n:
                 entry["names"][mob.n] += 1
+            if mob.m and not mob.c:
+                entry["zones"][mob.m] += min(mob.k, max_per_player)
             if mob.m and mob.c:
                 count = min(mob.c, max_per_player)
                 spot = entry["maps"][mob.m]
@@ -228,6 +231,9 @@ def write_lua(merged, min_attempts, path, contributors, sources=None, cap=1000, 
             if cells:
                 # Where on that map it was looted: 20x20 grid squares (Learn.lua's AreaCell).
                 fields.append("a = { %s }" % ", ".join("[%d] = %d" % pair for pair in sorted(cells.items())))
+        elif entry["zones"]:
+            # Only a zone (inside a dungeon the game gives no position): the one reported most.
+            fields.append("m = %d" % max(entry["zones"].items(), key=lambda pair: (pair[1], pair[0]))[0])
         fields += ["i = %s" % lua_items(entry["i"]), "pi = %s" % lua_items(entry["pi"])]
         out.append("  [%d] = { %s }," % (npc, ", ".join(fields)))
     out.append("}")

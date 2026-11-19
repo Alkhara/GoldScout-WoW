@@ -48,6 +48,7 @@ local RIGHT = {
   } },
   { title = L["Interface"], items = {
     { key = "minimap", label = L["Show the minimap button"] },
+    { key = "showDungeons", label = L["Show dungeon drops"], tip = L["Also list farms on mobs inside dungeons and raids. You run those with a group and a lockout, so their gold per hour doesn't compare with farming on your own."] },
     { key = "bagCoins", label = L["Mark bag items worth listing on the auction house"],
       tip = L["An auction house hammer on crafting reagents and green or better items that sell for at least double their vendor price on your auction house, after the cut. Needs your own prices: a scan, or GoldScout Companion."] },
   } },

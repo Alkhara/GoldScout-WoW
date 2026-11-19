@@ -31,6 +31,8 @@ where spot is 0 for open water or the fishing pool's object ID, catches is how
 many loot windows fishing opened there, skill the lowest Fishing skill a catch
 came at (0 if unknown), items "itemID:times:quantity" as for mobs, and cells
 where the catches were, as for @a. An export can hold only fishing lines.
+Version 6 lets a mob line give a zone without a position (x, y and the position
+count 0): inside dungeons the game gives addons no map position, only the zone.
 Versions 2 (no @ lines) and 3 are still accepted; version 1 (no install ID)
 isn't.
 """
@@ -40,11 +42,11 @@ import unicodedata
 from collections import defaultdict
 
 HEADER = "GoldScout-export"
-HEADER_RE = re.compile(r"^GoldScout-export ([2345])\^([a-z0-9]{12})\^([1-9][0-9]{0,8})$")
+HEADER_RE = re.compile(r"^GoldScout-export ([2-6])\^([a-z0-9]{12})\^([1-9][0-9]{0,8})$")
 LOCALE_RE = re.compile(r"^[a-z]{2}[A-Z]{2}$")
 AREA_RE = re.compile(r"^\d{1,3}:\d{1,6}(?:,\d{1,3}:\d{1,6})*$")
 AREA_CELLS = 400            # a 20x20 grid
-KNOWN_VERSION = 5           # the newest export version this copy understands
+KNOWN_VERSION = 6           # the newest export version this copy understands
 KNOWN_EXTRA = ("@i", "@m", "@c", "@q", "@l", "@a", "@f")
 NEWER_HEADER_RE = re.compile(r"^GoldScout-export (\d+)\^[a-z0-9]{12}\^[1-9][0-9]{0,8}$")
 ITEM_META_RE = re.compile(r"^([0-9]):([0-9]{1,2}):([01x])$")
@@ -260,6 +262,8 @@ def _parse_line(line, line_no, result):
         if positions or x or y:
             result.errors.append("Line %d: has a position but no map." % line_no)
             return None
+    elif positions == 0 and not (x or y) and result.version >= 6:
+        pass    # a zone without a position: inside a dungeon
     elif positions == 0 or positions > kills:
         result.errors.append("Line %d: %d positions for %d kills." % (line_no, positions, kills))
         return None

@@ -182,6 +182,17 @@ class ServerTests(unittest.TestCase):
                                                   "CF-Connecting-IP": fake_ip()}, "POST")
         self.assertEqual((status, reply.get("status")), (201, "registered"))
 
+    def test_accepts_version_six_with_a_dungeon_zone(self):
+        # Version 6: a mob with its zone but no position (inside a dungeon).
+        dungeon = "3812^40^0^19^20^291^0.0000^0.0000^0^Defias Miner^3010:7:7^"
+        body = "GoldScout-export 6^%s^1\n%s\n@m^291^The Deadmines\n" % (new_install(), dungeon)
+        status, reply = raw("/v1/uploads", body, {"X-GoldScout-Terms": uploader.TERMS_VERSION,
+                                                  "CF-Connecting-IP": fake_ip()}, "POST")
+        self.assertEqual((status, reply.get("status")), (201, "registered"))
+        status, _ = raw("/v1/uploads", body.replace("export 6^", "export 7^"),
+                        {"X-GoldScout-Terms": uploader.TERMS_VERSION, "CF-Connecting-IP": fake_ip()}, "POST")
+        self.assertEqual(status, 400)
+
     def test_list_needs_admin_token(self):
         self.assertEqual(raw("/v1/uploads")[0], 401)
         self.assertEqual(raw("/v1/uploads", headers={"Authorization": "Bearer wrong"})[0], 401)

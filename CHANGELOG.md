@@ -7,6 +7,9 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- **Dungeon farms are hidden unless you want them:** a new setting, **Show dungeon drops** (Settings › Farm list, or `/gscout set dungeons on`), adds farms on mobs inside dungeons and raids to the Farm list. They're off by default: you run those with a group and a lockout, so their gold per hour doesn't compare with farming on your own.
+- **Dungeon mobs get their zone:** inside dungeons the game gives addons no map position, so GoldScout recorded no zone either, and those farms said "where players loot it". GoldScout now records which dungeon they're in. Shared drop data fills in their zones as players run dungeons with this version.
+
 ## v0.12.34
 
 - **No more "script ran too long" from the Farm tab:** with over 2,400 mobs in the community data, building the Farm list could still take longer on a slower PC than WoW lets one script run. It's now built a few milliseconds at a time over a few frames; the list you last saw stays up until the new one is ready.

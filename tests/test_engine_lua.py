@@ -45,7 +45,9 @@ UnitClass = function() return "Rogue", FAKE.class end
 UnitFactionGroup = function() return "Horde" end
 GetRealmName = function() return "Realm" end
 UnitName = function() return "Mob" end
-C_Map = { GetMapInfo = function(id) return FAKE.maps[id] and { name = FAKE.maps[id] } end }
+C_Map = { GetMapInfo = function(id)
+  return FAKE.maps[id] and { name = FAKE.maps[id], mapType = FAKE.dungeons and FAKE.dungeons[id] and 4 or 3 }
+end }
 -- item = { name, quality, ilvl, class, subclass, bind, reagent, spell, sell }
 local function Item(id) return FAKE.items[id] end
 C_Item = {
@@ -214,6 +216,29 @@ class FarmRulesTests(unittest.TestCase):
         self.assertEqual(best.key, "Learned:833:2673")          # its own key: hunt history stays per farm
         self.assertEqual(sorted(hunts["Coyote"].npcs.keys()), [833, 1109])
         self.assertEqual(sorted(hunts["Far Coyote"].npcs.keys()), [1110])
+
+    def test_dungeon_farms_only_when_asked(self):
+        # A dungeon mob (its zone is a dungeon, or no zone at all, as older exports from inside one) is left out
+        # unless Show dungeon drops is on; outdoor mobs are always there.
+        self.fake.maps[291] = "The Deadmines"
+        self.fake.dungeons = self.lua.table_from({291: True})
+        self.item(5000, price=10000, ilvl=20)
+        self.item(5001, price=10000, ilvl=20)
+        self.item(5002, price=10000, ilvl=20)
+        self.drops(3000, 20, {5000: 4}, name="Defias Miner")
+        self.ns.db.drops[3000].m = 291
+        self.drops(3001, 20, {5001: 4}, name="Zoneless")
+        self.ns.db.drops[3001].m = None
+        self.drops(3002, 20, {5002: 4}, name="Outdoor")
+        self.assertFalse(self.settings.showDungeons)
+        rows = self.rows()
+        self.assertIn(("Learned", 5002), rows)
+        self.assertNotIn(("Learned", 5000), rows)
+        self.assertNotIn(("Learned", 5001), rows)
+        self.settings.showDungeons = True
+        rows = self.rows()
+        self.assertEqual(rows[("Learned", 5000)].zone, "The Deadmines")
+        self.assertIn(("Learned", 5001), rows)
 
     def test_item_names_stay_once_the_game_drops_the_item(self):
         # The client's item cache drops items while GoldScout looks at thousands; names flickered to "Item 3730".

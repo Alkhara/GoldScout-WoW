@@ -499,6 +499,29 @@ class MergeTests(unittest.TestCase):
         self.assertEqual(merged[3812]["k"], 1011)
         self.assertEqual(merged[3812]["i"][3010][0], 600 + 7)
 
+    def test_dungeon_zones_without_a_position(self):
+        # Inside a dungeon the game gives no position, only the zone: version 6 can say that, older versions can't.
+        dungeon = "3812^40^0^19^20^291^0.0000^0.0000^0^Defias Miner^3010:7:7^"
+        self.assertEqual(submission.parse("GoldScout-export 6^abcdefghijkl^3\n" + dungeon + "\n").errors, [])
+        self.assertTrue(submission.parse("GoldScout-export 5^abcdefghijkl^3\n" + dungeon + "\n").errors)
+        # A zone with a stray position count, or a position, still has to be whole.
+        self.assertTrue(submission.parse("GoldScout-export 6^abcdefghijkl^3\n"
+                                         + dungeon.replace("^0.0000^0.0000^0^", "^0.5000^0.5000^0^") + "\n").errors)
+        # The merge keeps the zone players reported most, without a spot; a real position still wins.
+        zoned = submission.parse("GoldScout-export 6^abcdefghijkl^3\n" + dungeon + "\n")
+        other = submission.parse("GoldScout-export 6^zzzzzzzzzzzz^3\n" + dungeon.replace("^291^", "^292^")
+                                 .replace("3812^40^", "3812^10^") + "\n")
+        with tempfile.TemporaryDirectory() as tmp:
+            target = Path(tmp) / "Data_Community.lua"
+            merge_data.write_lua(merge_data.merge([zoned.mobs, other.mobs], 1000), 5, target, 2,
+                                 merge_data.sources_of([zoned, other]), 1000)
+            line = next(l for l in target.read_text(encoding="utf-8").splitlines() if l.startswith("  [3812] ="))
+        self.assertIn("m = 291", line)
+        self.assertNotIn(", x = ", line)                               # no spot (not lmax)
+        merged = merge_data.merge([zoned.mobs, submission.parse(GOOD).mobs], 1000)
+        self.assertEqual(dict(merged[3812]["zones"]), {291: 40})
+        self.assertIn(1440, merged[3812]["maps"])                      # the outdoor player's spot
+
     def test_generated_lua_is_valid(self):
         with tempfile.TemporaryDirectory() as tmp:
             target = Path(tmp) / "Data_Community.lua"

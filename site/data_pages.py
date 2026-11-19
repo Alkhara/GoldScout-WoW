@@ -297,9 +297,13 @@ class Dataset:
     def zone_id(self, npc):
         """The map the mob was seen on most, if players' exports named it."""
         maps = self.mobs[npc]["maps"]
-        if not maps:
+        zones = self.mobs[npc].get("zones")
+        if maps:
+            map_id = max(maps.items(), key=lambda pair: (pair[1][2], pair[0]))[0]
+        elif zones:
+            map_id = max(zones.items(), key=lambda pair: (pair[1], pair[0]))[0]   # a dungeon: no position
+        else:
             return None
-        map_id = max(maps.items(), key=lambda pair: (pair[1][2], pair[0]))[0]
         return map_id if map_id in self.map_names else None
 
     def zone(self, npc):

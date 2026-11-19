@@ -11,7 +11,7 @@ local _, ns = ...
 local Community = {}
 ns.Community = Community
 
-Community.HEADER_PATTERN = "^GoldScout%-export [2345]%^(%w+)%^(%d+)$"
+Community.HEADER_PATTERN = "^GoldScout%-export [2-6]%^(%w+)%^(%d+)$"
 Community.DEFAULT_CAP = 1000
 
 local function Round(value)

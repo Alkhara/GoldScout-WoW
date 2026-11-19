@@ -235,7 +235,7 @@ local strings = {
   ["  /gscout errors - list GoldScout's recent errors; /gscout errors clear"] = "  /gscout errors - ver los errores recientes de GoldScout; /gscout errors clear",
   ["  /gscout skills - show the skills and recipes GoldScout knows"] = "  /gscout skills - ver las habilidades y recetas que conoce GoldScout",
   ["  /gscout set kills|nodes|picks|catches <number> - your rates per hour"] = "  /gscout set kills|nodes|picks|catches <número> - tus ritmos por hora",
-  ["  /gscout set autoscan|tooltip|window|waypoint|markers|map|learn|mobtips|raredrops|cloth|allloot|bagcoins|minimap on|off"] = "  /gscout set autoscan|tooltip|window|waypoint|markers|map|learn|mobtips|raredrops|cloth|allloot|bagcoins|minimap on|off",
+  ["  /gscout set autoscan|tooltip|window|waypoint|markers|map|learn|mobtips|raredrops|cloth|allloot|bagcoins|dungeons|minimap on|off"] = "  /gscout set autoscan|tooltip|window|waypoint|markers|map|learn|mobtips|raredrops|cloth|allloot|bagcoins|dungeons|minimap on|off",
   ["  /gscout reset prices | drops - forget saved prices or learned drop rates"] = "  /gscout reset prices | drops - olvidar los precios guardados o las tasas aprendidas",
   ["No hunt is running."] = "No hay ninguna caza en curso.",
   ["No finished hunts yet (hunts under a minute aren't saved)."] = "Aún no hay cazas terminadas (las de menos de un minuto no se guardan).",
@@ -245,7 +245,7 @@ local strings = {
   ["%s: %d recipes learned (read %s)."] = "%s: %d recetas aprendidas (leído %s).",
   ["The Farm tab shows the companion tip again."] = "La pestaña Farmear vuelve a mostrar el consejo de Companion.",
   ["Companion tip hidden."] = "Consejo de Companion oculto.",
-  ["Usage: /gscout set kills|nodes|picks|catches <number>, or /gscout set autoscan|tooltip|blackwater|window|waypoint|markers|map|learn|mobtips|raredrops|cloth|allloot|bagcoins|minimap|companionhint on|off"] = "Uso: /gscout set kills|nodes|picks|catches <número>, o /gscout set autoscan|tooltip|blackwater|window|waypoint|markers|map|learn|mobtips|raredrops|cloth|allloot|bagcoins|minimap|companionhint on|off",
+  ["Usage: /gscout set kills|nodes|picks|catches <number>, or /gscout set autoscan|tooltip|blackwater|window|waypoint|markers|map|learn|mobtips|raredrops|cloth|allloot|bagcoins|dungeons|minimap|companionhint on|off"] = "Uso: /gscout set kills|nodes|picks|catches <número>, o /gscout set autoscan|tooltip|blackwater|window|waypoint|markers|map|learn|mobtips|raredrops|cloth|allloot|bagcoins|dungeons|minimap|companionhint on|off",
   ["Please give a number above zero."] = "Indica un número mayor que cero.",
   ["%s is now %s."] = "%s ahora está en %s.",
   ["Still loading; try again in a moment."] = "Aún cargando; inténtalo de nuevo en un momento.",
@@ -403,6 +403,8 @@ local strings = {
   ["No flips right now: nothing at Blackwater sells for at least 15% more on your auction house after the cut."] = "No hay reventas ahora: nada de Aguasnegras se vende al menos un 15 % más caro en tu casa de subastas tras la comisión.",
   ["  /gscout farm | craft | flip - open a tab"] = "  /gscout farm | craft | flip - abrir una pestaña",
   ["Working out the best farms..."] = "Calculando las mejores zonas de farmeo...",
+  ["Show dungeon drops"] = "Mostrar botín de mazmorras",
+  ["Also list farms on mobs inside dungeons and raids. You run those with a group and a lockout, so their gold per hour doesn't compare with farming on your own."] = "Mostrar también las zonas de farmeo con enemigos de mazmorras y bandas. Se hacen en grupo y con un bloqueo, así que su oro por hora no se compara con farmear en solitario.",
 }
 ns.AddLocale("esES", strings)
 ns.AddLocale("esMX", strings)

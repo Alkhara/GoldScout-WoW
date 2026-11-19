@@ -191,7 +191,7 @@ class SnapshotLuaTests(unittest.TestCase):
         learn = self.ns.Learn
         text, count, _ = learn.ExportString(learn)
         self.assertEqual(count, 2)
-        self.assertTrue(text.startswith("GoldScout-export 5^"))   # no old companion here
+        self.assertTrue(text.startswith("GoldScout-export 6^"))   # no old companion here
         result = submission.parse(text)
         self.assertEqual(result.errors, [])
         self.assertEqual(result.item_meta, {3010: (1, 7, True)})

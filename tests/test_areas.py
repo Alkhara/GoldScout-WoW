@@ -86,6 +86,18 @@ class RecordingTests(unittest.TestCase):
         self.ns.events["LOOT_SLOT_CLEARED"](1)
         self.ns.events["LOOT_CLOSED"]()
 
+    def test_inside_a_dungeon_the_zone_is_kept_without_a_spot(self):
+        # The game gives no position inside dungeons (GetPlayerMapPosition returns nothing), only the map.
+        self.lua.execute("POSITION.map = 291; C_Map.GetPlayerMapPosition = function() return nil end")
+        self.loot(BEAR, 0, 0)
+        entry = self.ns.db.drops[3809]
+        self.assertEqual((entry.m, entry.c or 0), (291, 0))
+        text = self.ns.Learn.ExportString(self.ns.Learn)[0]
+        result = submission.parse(text)
+        self.assertEqual(result.errors, [])
+        mob = result.mobs[0]
+        self.assertEqual((mob.m, mob.c, mob.x, mob.y), (291, 0, 0.0, 0.0))
+
     def test_loot_spots_land_in_grid_squares(self):
         self.loot(BEAR, 0.27, 0.51)                       # row 10, column 5 -> 205
         self.loot(BEAR.replace("0001", "0002"), 0.28, 0.52)
@@ -119,24 +131,24 @@ class VersionFiveExportTests(unittest.TestCase):
 
     def test_versions_follow_the_players_companion(self):
         cases = {
-            None: 5,                                                         # no companion here, or prices off
+            None: 6,                                                         # no companion here, or prices off
             "{ markets = {} }": 4,                                           # a companion before 0.10.0
             '{ markets = {}, companion = "0.9.0" }': 4,
-            '{ markets = {}, companion = "0.10.0" }': 5,
-            '{ markets = {}, companion = "1.2.0" }': 5,
+            '{ markets = {}, companion = "0.10.0" }': 6,
+            '{ markets = {}, companion = "1.2.0" }': 6,
         }
         for prices_data, version in cases.items():
             with self.subTest(prices_data):
                 _, text = self.export(prices_data)
                 result = submission.parse(text)
                 self.assertEqual((result.errors, result.version), ([], version))
-                self.assertEqual("@a^" in text, version == 5)    # areas and language only in version 5
+                self.assertEqual("@a^" in text, version >= 5)    # areas and language from version 5
 
     def test_the_addons_version_5_export_is_valid(self):
         ns, text = self.export()
         result = submission.parse(text)
         self.assertEqual(result.errors, [])
-        self.assertEqual((result.version, result.locale), (5, "deDE"))
+        self.assertEqual((result.version, result.locale), (6, "deDE"))
         self.assertEqual(result.mobs[0].a, {205: 9, 206: 2})
         install, _, mobs, _ = ns.Community.ParseExport(text)         # the addon's own parser skips @ lines
         self.assertEqual(sorted(mobs.keys()), [3812])

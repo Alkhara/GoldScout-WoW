@@ -37,6 +37,9 @@ based on your level, class, faction and professions.
   **Data wanted** lists the mobs near your level that still need kills before their drop rates are solid
   (50 kills, counting other players' and yours), the ones in your zone first. Hunt one and share your loot
   with GoldScout Companion, and everyone's rates get better.
+- **Dungeon farms** (mobs inside dungeons and raids) are left out of the Farm list
+  unless you turn on **Show dungeon drops** (Settings › Farm list, or
+  `/gscout set dungeons on`): you run those with a group and a lockout.
 - **Craft tab** ranks every recipe you know by profit per craft: auction house
   price after the 5% cut, minus the cheapest cost of the materials (vendor price
   when they are sold by vendors, otherwise the auction house price).

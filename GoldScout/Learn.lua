@@ -17,7 +17,9 @@ local ITEM_SLOT = (Enum.LootSlotType and Enum.LootSlotType.Item) or 1
 -- writes; for a player with such a companion GoldScout keeps writing version 4
 -- until it's updated. Nothing is lost meanwhile: every export holds everything
 -- learned so far. Companions from 0.10.0 on share any newer format as it is.
-local EXPORT_VERSION = 5
+-- Version 6 lets a mob have a zone without a position: inside dungeons the
+-- game gives addons no map position, only the zone (tools/submission.py).
+local EXPORT_VERSION = 6
 local COMPANION_FOR_V5 = { 0, 10, 0 }
 
 local function ExportVersion()
@@ -359,6 +361,7 @@ end
 
 local function ExportBody()
   local drops = (ns.db and ns.db.drops) or {}
+  local zoneOnly = ExportVersion() >= 6
   local names = Names() or { items = {}, maps = {} }
   local lines, items, maps, areas = {}, {}, {}, {}
   for _, npcID in ipairs(SortedKeys(drops)) do
@@ -368,8 +371,8 @@ local function ExportBody()
       local map, count, x, y = entry.m or 0, math.min(entry.c or 0, kills), 0, 0
       if map > 0 and count > 0 then
         x, y = entry.sx / entry.c, entry.sy / entry.c
-      else
-        map, count = 0, 0
+      elseif not (map > 0 and kills > 0 and zoneOnly) then
+        map, count = 0, 0      -- a zone without a position (a dungeon) needs a version 6 export
       end
       local lmin, lmax = entry.lmin or 0, entry.lmax or 0
       if lmin == 0 or lmax == 0 or lmax - lmin > 15 or lmax > 63 then
@@ -551,6 +554,12 @@ end
 local function NotePosition(entry)
   local map, x, y = PlayerSpot()
   if not x then
+    -- Inside a dungeon the game says only which one: keep that as the mob's zone (no spot), so the Farm tab
+    -- can name it and leave dungeon farms out unless you want them.
+    if map and not entry.m then
+      entry.m = map
+      NoteMapName(map)
+    end
     return
   end
   if entry.m ~= map then

@@ -100,6 +100,26 @@ local function MapName(mapID)
   return info and info.name
 end
 
+-- Mobs inside dungeons and raids are left out of the Farm list unless Show dungeon drops is on: you run them
+-- with a group and a lockout, not at a solo pace. A mob with no zone at all is one too: only inside a dungeon
+-- does the game give no position, and before version 6 exports didn't keep the zone either.
+local DUNGEON_MAP = (Enum and Enum.UIMapType and Enum.UIMapType.Dungeon) or 4
+local dungeonMaps = {}
+
+local function InDungeon(mapID)
+  if not mapID or mapID == 0 then
+    return true
+  end
+  local known = dungeonMaps[mapID]
+  if known == nil then
+    local info = C_Map and C_Map.GetMapInfo and C_Map.GetMapInfo(mapID)
+    known = info ~= nil and info.mapType == DUNGEON_MAP
+    dungeonMaps[mapID] = known
+  end
+  return known
+end
+Engine.InDungeon = InDungeon
+
 -- Rough kills per hour: mobs well below your level die much faster.
 local function KillsPerHour(playerLevel, mobLevel, base)
   local diff = playerLevel - mobLevel
@@ -950,8 +970,9 @@ local function BuildFarms(self)
     if kills >= LEARNED_MIN_KILLS and not ns.FARMS_BY_NPC[npcID] then
       local minLevel = (own and own.lmin) or (shared and shared.lmin) or level
       local maxLevel = (own and own.lmax) or (shared and shared.lmax) or minLevel
-      if InWindow(minLevel, maxLevel) then
-        local zone = MapName((shared and shared.m) or (own and own.m)) or L["where players loot it"]
+      local zoneMap = (shared and shared.m) or (own and own.m)
+      if InWindow(minLevel, maxLevel) and (settings.showDungeons or not InDungeon(zoneMap)) then
+        local zone = MapName(zoneMap) or L["where players loot it"]
         local mob = ns.MobName(npcID, own and own.n, shared and shared.n)
         local items = {}
         for itemID in pairs((own and own.i) or {}) do
@@ -1127,6 +1148,12 @@ local function BuildFarms(self)
                 hunt = LootHunt("Market:" .. itemID, "kill", itemID, L["Any source"], L["Wherever it drops"]),
               }
               local npcID, drops, kills = BestSighting(itemID)
+              if npcID and not settings.showDungeons then
+                local own, shared = ns.Learn:Entry(npcID), ns.COMMUNITY[npcID]
+                if InDungeon((shared and shared.m) or (own and own.m)) then
+                  npcID = nil     -- best seen in a dungeon: listed by price, without its source
+                end
+              end
               if npcID then
                 local own, shared = ns.Learn:Entry(npcID), ns.COMMUNITY[npcID]
                 local mob = ns.MobName(npcID, own and own.n, shared and shared.n)
@@ -1263,6 +1290,7 @@ function Engine:WantedMobs()
     local map = (shared and shared.m) or (own and own.m)
     local zone = MapName(map)
     if kills > 0 and kills < WANTED_KILLS and minLevel and minLevel > 0 and zone
+        and (settings.showDungeons or not InDungeon(map))
         and (settings.showAllLevels or minLevel <= level + WANTED_ABOVE) then
       -- Its most common drop that isn't vendor trash: what the hunt tracks.
       local top, topDrops = nil, 0

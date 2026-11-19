@@ -1796,6 +1796,7 @@ local SETTING_ALIASES = {
   companionhint = "companionHint",
   minimap = "minimap",
   bagcoins = "bagCoins",
+  dungeons = "showDungeons",
 }
 
 -- Lists the errors GoldScout recorded (see ns.RecordError in Core.lua).
@@ -1833,7 +1834,7 @@ local function PrintHelp()
   print(L["  /gscout errors - list GoldScout's recent errors; /gscout errors clear"])
   print(L["  /gscout skills - show the skills and recipes GoldScout knows"])
   print(L["  /gscout set kills|nodes|picks|catches <number> - your rates per hour"])
-  print(L["  /gscout set autoscan|tooltip|window|waypoint|markers|map|learn|mobtips|raredrops|cloth|allloot|bagcoins|minimap on|off"])
+  print(L["  /gscout set autoscan|tooltip|window|waypoint|markers|map|learn|mobtips|raredrops|cloth|allloot|bagcoins|dungeons|minimap on|off"])
   print(L["  /gscout reset prices | drops - forget saved prices or learned drop rates"])
 end
 
@@ -1898,7 +1899,7 @@ local function SetOption(rest)
   end
   if not setting then
     ns.Print(L["Usage: /gscout set kills|nodes|picks|catches <number>, or "
-      .. "/gscout set autoscan|tooltip|blackwater|window|waypoint|markers|map|learn|mobtips|raredrops|cloth|allloot|bagcoins|minimap|companionhint on|off"])
+      .. "/gscout set autoscan|tooltip|blackwater|window|waypoint|markers|map|learn|mobtips|raredrops|cloth|allloot|bagcoins|dungeons|minimap|companionhint on|off"])
     return
   end
   if type(ns.db.settings[setting]) == "boolean" then

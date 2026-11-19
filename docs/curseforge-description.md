@@ -21,7 +21,7 @@ Three views:
 - **By mob:** one row per mob, with everything worth farming that it drops added up, vendor trash included.
 - **Data wanted:** mobs near your level that need more kills before their drop rates are solid. Hunt one and share your loot, and everyone's rates get better.
 
-The **Lvl** column is green when the mobs still give you experience, yellow when only some do and gray when none do. Tick **Gives XP** to level and earn at the same time.
+The **Lvl** column is green when the mobs still give you experience, yellow when only some do and gray when none do. Tick **Gives XP** to level and earn at the same time. Farms inside dungeons and raids stay out of the list unless you turn on **Show dungeon drops** in the settings.
 
 ### Every drop from any mob
 Target a mob, right-click its portrait and choose **Drop rates** (or type `/gscout drops`). A window lists everything GoldScout players have looted from it, your own loot included: each item's drop chance, what it's worth and what it adds per kill, with pickpocketing listed separately.
