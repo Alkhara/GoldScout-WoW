@@ -1,4 +1,4 @@
-GoldScout-export 5^7wcgv11q7ccm^2
+GoldScout-export 5^7wcgv11q7ccm^3
 2242^9^0^35^36^1416^0.6199^0.4325^9^Syndicate Spy^1710:1:1,4306:2:3,5113:1:1,6986:1:1^
 2250^2^0^32^33^1416^0.3837^0.7071^2^Mountain Yeti^^
 2251^2^0^33^34^1416^0.4211^0.6681^2^Giant Yeti^^
@@ -11,20 +11,28 @@ GoldScout-export 5^7wcgv11q7ccm^2
 2431^1^0^37^37^1416^0.6312^0.4394^1^Jailor Borhuin^3704:1:1,4338:1:1^
 4119^3^0^27^29^1441^0.5418^0.4697^3^Elder Cloud Serpent^17056:1:1^
 4120^1^0^28^28^1441^0.6788^0.6081^1^Thundering Boulderkin^4784:1:1^
-4124^2^0^28^28^1441^0.5663^0.4988^2^Needles Cougar^5137:1:1,5635:1:1^
+4124^2^0^27^28^1441^0.5663^0.4988^2^Needles Cougar^5137:1:1,5635:1:1^
 4130^5^0^32^33^1441^0.7081^0.8379^5^Silithid Searcher^5853:1:1,5854:2:2,5855:1:1,6302:1:1^
 4133^9^0^33^34^1441^0.7008^0.8564^9^Silithid Hive Drone^5853:2:2,5854:3:3,6300:2:2,6302:2:2,11202:1:1,248693:1:1^
 4139^2^0^33^34^1441^0.7197^0.7606^2^Scorpid Terror^5794:1:1,12037:1:1,19938:1:1^
-4140^2^0^31^32^1441^0.6983^0.6517^2^Scorpid Reaver^5794:2:2,12037:2:2^
-4142^3^0^30^31^1441^0.7002^0.6683^3^Sparkleshell Tortoise^3712:1:1,4555:1:1,5795:1:1,6308:1:2^
-4143^1^0^34^35^1441^0.7266^0.7942^1^Sparkleshell Snapper^3712:1:1^
+4140^7^0^31^32^1441^0.7658^0.6462^7^Scorpid Reaver^1288:2:2,5794:5:5,12037:5:5,19938:1:1^
+4142^6^0^30^31^1441^0.7119^0.6298^6^Sparkleshell Tortoise^3712:2:2,4555:1:1,4556:2:2,5795:3:3,6308:2:4^
+4143^3^0^34^35^1441^0.7650^0.7348^3^Sparkleshell Snapper^3712:2:2,4555:2:2^
 4147^1^0^30^31^1441^0.7281^0.6644^1^Saltstone Basilisk^^
+4151^4^0^32^33^1441^0.8380^0.6860^4^Saltstone Crystalhide^1701:1:1,1702:2:2^
+4154^2^0^30^32^1441^0.8415^0.6755^2^Salt Flats Scavenger^729:1:1,3399:2:2,5116:1:1,5848:2:2,17056:1:1^
 4249^5^0^28^29^1441^0.6303^0.5605^5^Pesterhide Snarler^3402:1:1^
 4504^1^0^37^37^1416^0.3736^0.6875^1^Frostmaw^5811:1:1^
 266357^2^0^36^36^1416^0.6310^0.4524^2^Barton^^
+270094^1^0^30^30^1441^0.5766^0.5598^1^Stormheart^5128:1:1,279186:1:1^
+@i^729^Stringy Vulture Meat
+@i^1288^Large Venom Sac
+@i^1701^Curved Basilisk Claw
+@i^1702^Intact Basilisk Spine
 @i^1710^Greater Healing Potion
 @i^2592^Wool Cloth
 @i^2940^Bloody Bear Paw
+@i^3399^Vulture Talon
 @i^3402^Soft Patch of Fur
 @i^3702^Bear Gall Bladder
 @i^3704^Rusted Iron Key
@@ -33,14 +41,18 @@ GoldScout-export 5^7wcgv11q7ccm^2
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4555^Thick Scaly Tail
+@i^4556^Speckled Shell Fragment
 @i^4784^Lifeless Stone
 @i^5113^Mark of the Syndicate
+@i^5116^Long Tail Feather
+@i^5128^Shed Lizard Skin
 @i^5136^Torn Furry Ear
 @i^5137^Bright Eyeball
 @i^5635^Sharp Claw
 @i^5794^Salty Scorpid Venom
 @i^5795^Hardened Tortoise Shell
 @i^5811^Frostmaw's Mane
+@i^5848^Hollow Vulture Bone
 @i^5853^Intact Silithid Carapace
 @i^5854^Silithid Talon
 @i^5855^Silithid Heart
@@ -60,9 +72,15 @@ GoldScout-export 5^7wcgv11q7ccm^2
 @i^17056^Light Feather
 @i^19938^Heavy Scorpid Leg
 @i^248693^Waylaid Crate: Expert Textiles
+@i^279186^Stormheart's Still-beating Heart
+@q^729^1:7:1
+@q^1288^1:7:1
+@q^1701^0:15:0
+@q^1702^0:15:0
 @q^1710^1:0:0
 @q^2592^1:7:1
 @q^2940^0:15:0
+@q^3399^0:15:0
 @q^3402^0:15:0
 @q^3702^0:15:0
 @q^3704^1:13:0
@@ -71,14 +89,18 @@ GoldScout-export 5^7wcgv11q7ccm^2
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4555^0:15:0
+@q^4556^0:15:0
 @q^4784^0:15:0
 @q^5113^0:15:0
+@q^5116^1:7:1
+@q^5128^0:15:0
 @q^5136^0:15:0
 @q^5137^0:15:0
 @q^5635^1:7:1
 @q^5794^1:12:0
 @q^5795^1:12:0
 @q^5811^1:12:0
+@q^5848^1:12:0
 @q^5853^1:12:0
 @q^5854^1:12:0
 @q^5855^1:12:0
@@ -98,6 +120,7 @@ GoldScout-export 5^7wcgv11q7ccm^2
 @q^17056^1:15:1
 @q^19938^0:15:0
 @q^248693^1:0:1
+@q^279186^1:12:0
 @m^1416^Alterac Mountains
 @m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
@@ -809,12 +832,15 @@ GoldScout-export 5^7wcgv11q7ccm^2
 @a^4130^333:1,334:3,354:1
 @a^4133^334:3,353:6
 @a^4139^314:2
-@a^4140^253:1,274:1
-@a^4142^253:1,274:2
-@a^4143^314:1
+@a^4140^234:1,253:1,255:1,274:1,276:3
+@a^4142^234:2,253:1,254:1,274:2
+@a^4143^275:1,295:1,314:1
 @a^4147^274:1
+@a^4151^276:3,296:1
+@a^4154^276:1,277:1
 @a^4249^211:1,212:2,233:1,253:1
 @a^4504^267:1
 @a^266357^192:2
+@a^270094^231:1
 @f^1421^0^36^123^6289:14:14,6291:5:5,6297:4:4,6299:6:6,6308:6:6,6309:1:1^173:36
 @l^0^enUS

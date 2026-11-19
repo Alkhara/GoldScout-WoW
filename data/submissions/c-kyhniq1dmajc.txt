@@ -1,4 +1,4 @@
-GoldScout-export 5^kyhniq1dmajc^12
+GoldScout-export 5^kyhniq1dmajc^13
 36^7^0^11^12^1436^0.5573^0.3521^7^Harvest Golem^732:1:1,814:2:2,1274:3:3,255007:5:5,255010:1:1^
 40^23^0^6^7^1429^0.4946^0.7088^23^Kobold Miner^1389:1:1,1411:1:1,1420:1:1,2589:6:8^
 113^41^0^5^6^1429^0.3980^0.8618^41^Stonetusk Boar^769:22:22,771:2:2,3171:18:18^
@@ -48,11 +48,12 @@ GoldScout-export 5^kyhniq1dmajc^12
 2249^8^0^31^32^1424^0.4397^0.3017^8^Ferocious Yeti^3720:2:2,3771:1:1^
 2319^1^0^34^34^1416^0.5833^0.6849^1^Syndicate Wizard^^
 2333^1^0^30^30^1416^0.5740^0.6880^1^Henchman Valik^^
-2376^24^0^30^31^1424^0.4303^0.6779^24^Torn Fin Oracle^929:1:1,1205:1:1,3716:7:7,5524:13:13,5785:2:2,6308:1:2,17057:6:6,17058:8:8,249881:2:2^
-2377^24^0^31^32^1424^0.4319^0.6785^24^Torn Fin Tidehunter^3716:1:1,3779:1:1,3781:1:1,5524:8:8,5785:1:1,17057:6:6,17058:7:7^
+2376^30^0^30^31^1424^0.4188^0.6784^30^Torn Fin Oracle^929:1:1,1205:1:1,3716:9:9,5524:14:14,5785:3:3,6308:2:5,6395:1:1,17057:6:6,17058:10:10,249881:2:2^
+2377^28^0^31^32^1424^0.4220^0.6801^28^Torn Fin Tidehunter^3716:2:2,3779:1:1,3781:1:1,5524:11:11,5785:1:1,8747:1:1,12028:1:1,17057:8:8,17058:8:8^
 2406^7^0^32^33^1416^0.4478^0.7693^7^Mountain Lion^1686:2:2,3731:7:7^
 2407^6^0^33^34^1416^0.4352^0.7736^6^Hulking Mountain Lion^1686:1:1,3731:4:4,5637:1:1^
 2408^9^0^30^31^1416^0.8064^0.5639^5^Snapjaw^3712:1:2,4555:4:4,4556:3:3,5524:6:6,211855:1:1,248692:1:1^
+2434^4^0^37^38^1424^0.5009^0.5869^4^Shadowy Assassin^3668:1:1,3779:1:1^
 2440^2^0^33^33^1416^0.5826^0.6880^2^Drunken Footpad^3703:2:2^
 2559^1^0^30^30^1417^0.4418^0.7982^1^Highland Strider^3685:1:1,12184:1:1^
 2946^23^0^44^44^1424^0.5077^0.5746^23^Puppet of Helcular^^
@@ -154,6 +155,7 @@ GoldScout-export 5^kyhniq1dmajc^12
 @i^3373^Patchwork Bracers
 @i^3385^Lesser Mana Potion
 @i^3667^Tender Crocolisk Meat
+@i^3668^Assassin's Contract
 @i^3685^Raptor Egg
 @i^3703^Southshore Stout
 @i^3712^Turtle Meat
@@ -192,6 +194,7 @@ GoldScout-export 5^kyhniq1dmajc^12
 @i^6359^Firefin Snapper
 @i^6361^Raw Rainbow Fin Albacore
 @i^6362^Raw Rockscale Cod
+@i^6395^Silver-thread Amice
 @i^6515^Disciple's Gloves
 @i^6540^Willow Pants of the Sorcerer
 @i^6543^Willow Bracers of Arcane Wrath
@@ -205,6 +208,7 @@ GoldScout-export 5^kyhniq1dmajc^12
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
 @i^7350^Disciple's Bracers
+@i^8747^Hardened Leather Helm
 @i^9395^Gloves of Old
 @i^9744^Simple Bands
 @i^9746^Simple Gloves
@@ -213,6 +217,7 @@ GoldScout-export 5^kyhniq1dmajc^12
 @i^9823^Durable Gloves of the Elder
 @i^9840^Banded Girdle of Magic
 @i^11416^Delicate Ribcage
+@i^12028^Basalt Necklace of the Whale
 @i^12037^Mystery Meat
 @i^12184^Raptor Flesh
 @i^12238^Darkshore Grouper
@@ -331,6 +336,7 @@ GoldScout-export 5^kyhniq1dmajc^12
 @q^3373^0:4:0
 @q^3385^1:0:0
 @q^3667^1:7:1
+@q^3668^1:12:0
 @q^3685^1:7:1
 @q^3703^1:0:0
 @q^3712^1:7:1
@@ -369,6 +375,7 @@ GoldScout-export 5^kyhniq1dmajc^12
 @q^6359^1:7:1
 @q^6361^1:7:1
 @q^6362^1:7:1
+@q^6395^2:4:0
 @q^6515^1:4:0
 @q^6540^2:4:0
 @q^6543^2:4:0
@@ -382,6 +389,7 @@ GoldScout-export 5^kyhniq1dmajc^12
 @q^7073^0:15:0
 @q^7074^0:15:0
 @q^7350^1:4:0
+@q^8747^0:4:0
 @q^9395^3:4:0
 @q^9744^1:4:0
 @q^9746^1:4:0
@@ -390,6 +398,7 @@ GoldScout-export 5^kyhniq1dmajc^12
 @q^9823^2:4:0
 @q^9840^2:4:0
 @q^11416^0:15:0
+@q^12028^2:4:0
 @q^12037^1:7:1
 @q^12184^1:7:1
 @q^12238^1:0:0
@@ -2315,11 +2324,12 @@ GoldScout-export 5^kyhniq1dmajc^12
 @a^2249^108:1,109:1,128:6
 @a^2319^271:1
 @a^2333^271:1
-@a^2376^249:2,267:2,268:15,269:4,288:1
-@a^2377^249:1,267:2,268:14,269:6,288:1
+@a^2376^249:2,267:7,268:16,269:4,288:1
+@a^2377^249:1,267:6,268:14,269:6,288:1
 @a^2406^193:1,215:1,326:1,345:1,346:1,367:2
 @a^2407^215:1,309:1,326:2,346:1,347:1
 @a^2408^216:3,255:2
+@a^2434^229:1,230:3
 @a^2440^271:2
 @a^2559^308:1
 @a^2946^230:23

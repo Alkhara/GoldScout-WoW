@@ -1,7 +1,11 @@
-GoldScout-export 5^tdoelmshpvxx^2
+GoldScout-export 5^tdoelmshpvxx^3
+587^6^0^33^34^1434^0.2960^0.2017^6^Bloodscalp Warrior^2734:1:1,2740:1:1,2742:1:1,3385:1:1,3901:3:3,3915:1:1,4306:1:1^
 595^1^0^34^34^1434^0.2294^0.1207^1^Bloodscalp Hunter^3901:1:1^
 671^1^0^36^37^1434^0.2155^0.1443^1^Bloodscalp Headhunter^2751:1:1,3901:1:1^
-694^1^0^33^34^1434^0.2943^0.1990^1^Bloodscalp Axe Thrower^2592:1:3^
+694^5^0^33^34^1434^0.3021^0.1942^5^Bloodscalp Axe Thrower^2592:1:3,3915:2:2,4306:1:2^
+697^6^0^33^34^1434^0.2970^0.1976^6^Bloodscalp Shaman^2744:1:1,3901:2:2,3915:2:2,4306:2:3^
+702^3^0^33^34^1434^0.3255^0.1398^3^Bloodscalp Scavenger^1520:1:1,3901:2:2,3915:1:1,4066:1:1,4306:1:1^
+1085^9^0^34^35^1434^0.3277^0.1894^9^Elder Stranglethorn Tiger^1686:2:2,1687:3:3,12202:2:2^
 1125^19^0^5^6^1426^0.4164^0.6073^19^Crag Boar^769:5:5,771:5:5,2886:8:8,3171:3:3^
 1126^20^0^6^7^1426^0.5165^0.5145^20^Large Crag Boar^769:7:7,771:1:1,2886:9:9,3171:1:1,4562:1:1^
 1127^26^0^7^8^1426^0.6172^0.5426^26^Elder Crag Boar^769:9:9,771:4:4,2886:13:13,3171:5:5,3172:8:8^
@@ -23,24 +27,35 @@ GoldScout-export 5^tdoelmshpvxx^2
 263899^2^0^0^0^0^0.0000^0.0000^0^^4306:1:4^
 @i^769^Chunk of Boar Meat
 @i^771^Chipped Boar Tusk
+@i^1520^Troll Sweat
+@i^1686^Bristly Whisker
+@i^1687^Retractable Claw
 @i^2592^Wool Cloth
 @i^2598^Pattern: Red Linen Robe
+@i^2734^Green Hills of Stranglethorn - Page 10
+@i^2740^Green Hills of Stranglethorn - Page 16
+@i^2742^Green Hills of Stranglethorn - Page 18
+@i^2744^Green Hills of Stranglethorn - Page 20
 @i^2751^Green Hills of Stranglethorn - Page 27
 @i^2886^Crag Boar Rib
 @i^3170^Large Bear Tooth
 @i^3171^Broken Boar Tusk
 @i^3172^Boar Intestines
+@i^3385^Lesser Mana Potion
 @i^3779^Hefty War Axe
 @i^3785^Keen Axe
 @i^3806^Hardened Leather Shoulderpads
 @i^3807^Hardened Leather Tunic
 @i^3901^Bloodscalp Tusk
+@i^3915^Bloody Bone Necklace
 @i^4038^Nightsky Robe
+@i^4066^Insignia Buckler
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4562^Severing Axe of the Boar
 @i^7462^Knight's Girdle of Shadow Protection
 @i^7909^Aquamarine
+@i^12202^Tiger Meat
 @i^262889^Sealed Expert's Writ
 @i^270333^Voodoo-Infused Artifact
 @i^274605^Briny Sash
@@ -48,24 +63,35 @@ GoldScout-export 5^tdoelmshpvxx^2
 @i^274615^Heart of the Primeval
 @q^769^1:7:1
 @q^771^0:15:0
+@q^1520^0:15:0
+@q^1686^0:15:0
+@q^1687^0:15:0
 @q^2592^1:7:1
 @q^2598^2:9:0
+@q^2734^1:12:0
+@q^2740^1:12:0
+@q^2742^1:12:0
+@q^2744^1:12:0
 @q^2751^1:12:0
 @q^2886^1:7:1
 @q^3170^0:15:0
 @q^3171^0:15:0
 @q^3172^1:7:1
+@q^3385^1:0:0
 @q^3779^0:2:0
 @q^3785^0:2:0
 @q^3806^0:4:0
 @q^3807^0:4:0
 @q^3901^1:12:0
+@q^3915^1:12:0
 @q^4038^2:4:0
+@q^4066^2:4:0
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4562^2:2:0
 @q^7462^2:4:0
 @q^7909^2:7:1
+@q^12202^1:7:1
 @q^262889^3:0:0
 @q^270333^1:12:0
 @q^274605^3:4:0
@@ -497,9 +523,13 @@ GoldScout-export 5^tdoelmshpvxx^2
 @c^285277^
 @c^285278^
 @c^286152^
+@a^587^66:1,85:5
 @a^595^44:1
 @a^671^44:1
-@a^694^65:1
+@a^694^46:1,65:1,85:3
+@a^697^65:1,66:1,85:4
+@a^702^46:3
+@a^1085^66:9
 @a^1125^226:5,229:3,247:3,248:3,249:4,268:1
 @a^1126^187:3,190:4,191:2,207:3,211:1,213:3,229:1,232:2,249:1
 @a^1127^186:1,211:5,213:7,214:3,231:3,232:7

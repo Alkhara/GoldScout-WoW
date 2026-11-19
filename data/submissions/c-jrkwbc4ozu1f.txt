@@ -1,4 +1,4 @@
-GoldScout-export 5^jrkwbc4ozu1f^12
+GoldScout-export 5^jrkwbc4ozu1f^13
 2949^9^0^5^6^1412^0.4981^0.7331^9^Coureiro Jubalba^117:1:1,1368:1:1,1422:1:1,2589:1:2,2649:1:1^
 2950^8^0^6^7^1412^0.4707^0.7332^8^Esfolador Jubalba^159:1:1,1416:1:1,2589:4:6^
 2951^6^0^7^8^1412^0.5141^0.7334^6^Larápio Jubalba^117:1:1,1421:1:1,2589:1:1,2645:1:1,2774:1:1^
@@ -26,8 +26,20 @@ GoldScout-export 5^jrkwbc4ozu1f^12
 3068^1^0^9^9^1412^0.4954^0.4802^1^Mazzranache^4861:1:1,7097:1:1^
 3229^1^0^5^5^1412^0.5991^0.8185^1^Grunhido Mantospinho^2589:1:1,4951:1:1^
 3566^6^0^9^9^1412^0.4731^0.3571^6^Predador das Estepes^2140:1:1,4813:1:1,4814:4:4,5203:4:4^
-5426^1^0^44^44^1446^0.5190^0.4694^1^Hiena Patapústula^12037:1:1,12208:1:1^
+5422^1^0^41^41^1446^0.6400^0.2645^1^Caçador Escorpídeo^12037:1:1,19936:1:1^
+5426^1^0^44^45^1446^0.5190^0.4694^1^Hiena Patapústula^12037:1:1,12208:1:1^
+5474^2^0^47^48^1446^0.4024^0.5829^2^Brutamontes Dunamalho^^
 5786^1^0^9^9^1412^0.4794^0.7303^1^Lança Infame^2589:1:2,3233:1:1^
+6212^4^0^0^0^0^0.0000^0.0000^0^^2592:1:2,4306:1:3,9326:2:2^
+6218^1^0^0^0^0^0.0000^0.0000^0^^3674:1:1^
+6222^1^0^0^0^0^0.0000^0.0000^0^^9308:1:1^
+6226^1^0^0^0^0^0.0000^0.0000^0^^^
+6229^1^0^0^0^0^0.0000^0.0000^0^^9450:1:1,274049:1:1^
+6230^2^0^0^0^0^0.0000^0.0000^0^^1786:1:1,7411:1:1^
+6233^3^0^0^0^0^0.0000^0.0000^0^^4363:1:1,6045:1:1^
+6234^3^0^0^0^0^0.0000^0.0000^0^^4377:1:1^
+7603^4^0^0^0^0^0.0000^0.0000^0^^4306:1:1,15212:1:1^
+7800^1^0^0^0^0^0.0000^0.0000^0^^9299:1:1,9459:1:1,9826:1:1,251352:1:1^
 8554^1^0^5^5^1412^0.6074^0.7808^1^Chefe Presadura Mantospinho^2589:1:1,10459:1:1^
 257885^2^0^0^0^0^0.0000^0.0000^0^^^
 257888^3^0^0^0^0^0.0000^0.0000^0^^1645:1:1,4306:1:1,15798:1:1^
@@ -61,12 +73,14 @@ GoldScout-export 5^jrkwbc4ozu1f^12
 @i^1427^Sapatos de Retalhos
 @i^1431^Calças de Retalhos
 @i^1645^Suco de Lunamora
+@i^1786^Colete em Ponto de Cruz
 @i^2138^Abridor de Cartas Afiado
 @i^2140^Faca de Entalhar do Intelecto
 @i^2210^Broquel Desgastado
 @i^2211^Escudo Grande Amassado
 @i^2213^Escudo Grande Desgastado
 @i^2589^Linho
+@i^2592^Lã
 @i^2645^Luvas Folgadas Encadeadas
 @i^2649^Cinto Frágil Encadeado
 @i^2651^Braçadeiras Frágeis Encadeadas
@@ -78,8 +92,11 @@ GoldScout-export 5^jrkwbc4ozu1f^12
 @i^3299^Canino Fraturado
 @i^3300^Pata de Coelho
 @i^3363^Cinto Puído
+@i^3674^Bota em Decomposição
 @i^4306^Seda
 @i^4338^Magitrama
+@i^4363^Modulador de Cobre
+@i^4377^Pó Explosivo Pesado
 @i^4536^Maçã Vermelha Brilhante
 @i^4540^Naco de Pão Duro
 @i^4603^Rabo-amarelo Mosqueado Cru
@@ -108,6 +125,7 @@ GoldScout-export 5^jrkwbc4ozu1f^12
 @i^4865^Pelagem Arruinada
 @i^4951^Cinto do Grunhido
 @i^5203^Garra de Predador das Estepes
+@i^6045^Instruções: Contrapeso de Ferro
 @i^6289^Pargo-da-lama Bocalonga Cru
 @i^6291^Peixinho Brilhante Cru
 @i^6362^Bacalhau Escama-de-pedra Cru
@@ -117,15 +135,26 @@ GoldScout-export 5^jrkwbc4ozu1f^12
 @i^7096^Pena Arrancada
 @i^7097^Carne de Coxa
 @i^7098^Presa Estilhaçada
+@i^7411^Manto do Infiltrador da Agilidade
 @i^8179^Arco dos Cadetes
+@i^9299^Combinação do Cofre do Termaplugue
+@i^9308^Objeto Encardido
+@i^9326^Anel Encardido
+@i^9450^Botas de Operação do Gnomobô
+@i^9459^Braço Esquerdo do Termaplugue
+@i^9826^Veste Durável da Ira Arcana
 @i^10459^Cabeça do Chefe Presadura Mantospinho
 @i^12037^Carne Misteriosa
 @i^12208^Carne Tenra de Lobo
+@i^15212^Espada Larga do Lutador da Águia
 @i^15474^Braçadeiras do Corcel
 @i^15798^Dentes Lascados de Ogro
+@i^19936^Carapaça Seca de Escorpídeo
 @i^211785^Pergaminho: CWAL
+@i^251352^Instruções: Elmo Encadeado do Protetor
 @i^267086^Olho de Mugg
 @i^270302^Pelagem de Chakuyak
+@i^274049^Diagrama: Bateria Extra 9-60
 @i^287505^Carne Tenra de Moa
 @q^117^1:0:0
 @q^159^1:0:0
@@ -149,12 +178,14 @@ GoldScout-export 5^jrkwbc4ozu1f^12
 @q^1427^0:4:0
 @q^1431^0:4:0
 @q^1645^1:0:0
+@q^1786^0:4:0
 @q^2138^0:2:0
 @q^2140^2:2:0
 @q^2210^0:4:0
 @q^2211^0:4:0
 @q^2213^0:4:0
 @q^2589^1:7:1
+@q^2592^1:7:1
 @q^2645^0:4:0
 @q^2649^0:4:0
 @q^2651^0:4:0
@@ -166,8 +197,11 @@ GoldScout-export 5^jrkwbc4ozu1f^12
 @q^3299^0:15:0
 @q^3300^0:15:0
 @q^3363^0:4:0
+@q^3674^0:15:0
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4363^1:7:1
+@q^4377^1:7:1
 @q^4536^1:0:0
 @q^4540^1:0:0
 @q^4603^1:7:1
@@ -196,6 +230,7 @@ GoldScout-export 5^jrkwbc4ozu1f^12
 @q^4865^0:15:0
 @q^4951^1:4:0
 @q^5203^1:12:0
+@q^6045^2:9:0
 @q^6289^1:7:1
 @q^6291^1:7:1
 @q^6362^1:7:1
@@ -205,15 +240,26 @@ GoldScout-export 5^jrkwbc4ozu1f^12
 @q^7096^0:15:0
 @q^7097^1:0:0
 @q^7098^0:15:0
+@q^7411^2:4:0
 @q^8179^1:2:0
+@q^9299^1:13:0
+@q^9308^1:12:0
+@q^9326^1:12:0
+@q^9450^3:4:0
+@q^9459^3:2:0
+@q^9826^2:4:0
 @q^10459^1:12:0
 @q^12037^1:7:1
 @q^12208^1:7:1
+@q^15212^2:2:0
 @q^15474^1:4:0
 @q^15798^0:15:0
+@q^19936^0:15:0
 @q^211785^1:0:0
+@q^251352^3:9:0
 @q^267086^1:12:0
 @q^270302^1:12:0
+@q^274049^2:9:0
 @q^287505^1:12:0
 @m^1412^Mulgore
 @m^1446^Tanaris
@@ -433,7 +479,9 @@ GoldScout-export 5^jrkwbc4ozu1f^12
 @a^3068^189:1
 @a^3229^331:1
 @a^3566^129:2,149:4
+@a^5422^112:1
 @a^5426^190:1
+@a^5474^228:2
 @a^5786^289:1
 @a^8554^312:1
 @a^268558^247:1
