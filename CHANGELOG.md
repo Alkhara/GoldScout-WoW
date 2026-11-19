@@ -7,7 +7,11 @@ releases add their own line automatically.
 
 ## Unreleased
 
+## v0.12.31
+
 - **The Farm tab's Each column is now Per kill:** it was never an item's price, but what one kill (or node, skin, catch or pickpocket) is worth on average from that item, its price times its drop chance. The item's own price is in the row's tooltip.
+- Updated drop data from the community.
+
 ## v0.12.29
 
 - **The Farm tab opens about three times faster:** with over 2,000 mobs in the community data, building the Farm list could freeze the game for half a second, and on slower PCs stop with "script ran too long". It now values each item and each mob's loot once per update instead of once per row.
