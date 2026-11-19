@@ -1,4 +1,4 @@
-GoldScout-export 5^qxrxw2cnfb1v^11
+GoldScout-export 5^qxrxw2cnfb1v^12
 1765^4^0^10^11^1421^0.4652^0.4507^4^Worg^2672:1:1^
 1766^13^0^11^12^1421^0.5728^0.1164^13^Mottled Worg^2672:7:7,3164:3:3,3299:2:2,3300:2:2,6515:1:1^
 1769^6^0^10^11^1421^0.5304^0.4117^6^Moonrage Whitescalp^4663:1:1^
@@ -40,9 +40,15 @@ GoldScout-export 5^qxrxw2cnfb1v^11
 8095^1^0^0^0^0^0.0000^0.0000^0^^1701:1:1^
 8120^2^0^0^0^0^0.0000^0.0000^0^^4093:1:1,11387:1:1^
 8127^1^0^0^0^0^0.0000^0.0000^0^^4338:1:1^
+11687^1^0^42^42^1414^0.3859^0.5801^1^Ghostly Marauder^4005:1:1,4338:1:2^
+11777^6^0^40^41^1414^0.3833^0.5722^6^Shadowshard Rumbler^3864:1:1,4784:1:1,14900:1:1,17756:3:3^
+11778^12^0^41^42^1414^0.3828^0.5729^12^Shadowshard Smasher^3914:1:1,4552:1:1,4784:4:4,7067:1:1,7912:2:3,14825:1:1,14829:1:1,17756:7:7^
 11783^8^0^0^0^0^0.0000^0.0000^0^^4552:2:2,4638:1:1,4784:6:6,8150:2:2,15162:1:1^
 11784^1^0^0^0^0^0.0000^0.0000^0^^4784:1:1,8150:1:1^
-11786^1^0^41^42^1414^0.3912^0.5798^1^Ambereye Reaver^4092:1:1,4093:1:1^
+11785^1^0^41^41^1414^0.3902^0.5840^1^Ambereye Basilisk^1718:1:1^
+11786^3^0^41^42^1414^0.3921^0.5794^3^Ambereye Reaver^4092:1:1,4093:1:1,11387:1:1,248694:1:1^
+11787^3^0^40^41^1414^0.3826^0.5716^3^Rock Borer^3669:2:2,3676:3:3^
+11788^2^0^41^42^1414^0.3834^0.5699^2^Rock Worm^3669:1:1,3676:2:2^
 11789^8^0^0^0^0^0.0000^0.0000^0^^1994:1:1,3669:4:4,3676:5:5^
 11790^3^0^0^0^0^0.0000^0.0000^0^^4338:1:4,17684:2:2^
 11791^3^0^0^0^0^0.0000^0.0000^0^^17684:2:2^
@@ -62,6 +68,8 @@ GoldScout-export 5^qxrxw2cnfb1v^11
 12223^1^0^0^0^0^0.0000^0.0000^0^^4023:1:1,17684:1:1^
 12225^1^0^0^0^0^0.0000^0.0000^0^^17739:1:1^
 12236^1^0^0^0^0^0.0000^0.0000^0^^17703:1:1,275864:1:1^
+12240^1^0^43^43^1414^0.3851^0.5772^1^Spirit of Kolk^17761:1:1^
+12241^1^0^43^43^1414^0.3923^0.5770^1^Magra^17763:1:1^
 12242^1^0^0^0^0^0.0000^0.0000^0^^17764:1:1^
 12243^1^0^0^0^0^0.0000^0.0000^0^^17765:1:1^
 12258^1^0^0^0^0^0.0000^0.0000^0^^17748:1:1^
@@ -104,6 +112,7 @@ GoldScout-export 5^qxrxw2cnfb1v^11
 @i^1520^Troll Sweat
 @i^1645^Moonberry Juice
 @i^1701^Curved Basilisk Claw
+@i^1718^Basilisk Hide Pants
 @i^1994^Ebonclaw Reaver of Healing
 @i^2070^Darnassian Bleu
 @i^2138^Sharpened Letter Opener
@@ -135,9 +144,12 @@ GoldScout-export 5^qxrxw2cnfb1v^11
 @i^3676^Slimy Ichor
 @i^3819^Wintersbite
 @i^3821^Goldthorn
+@i^3864^Citrine
+@i^3914^Journeyman's Backpack
 @i^3961^Thick Leather Belt
 @i^3989^Blocking Targe
 @i^4004^Overlinked Chain Gloves
+@i^4005^Overlinked Chain Pants
 @i^4019^Heavy Flint Axe
 @i^4023^Fine Pointed Dagger
 @i^4092^Prismatic Basilisk Scale
@@ -171,6 +183,7 @@ GoldScout-export 5^qxrxw2cnfb1v^11
 @i^6515^Disciple's Gloves
 @i^6826^Brilliant Scale
 @i^6889^Small Egg
+@i^7067^Elemental Earth
 @i^7096^Plucked Feather
 @i^7097^Leg Meat
 @i^7909^Aquamarine
@@ -180,6 +193,9 @@ GoldScout-export 5^qxrxw2cnfb1v^11
 @i^8444^Executioner's Key
 @i^8707^Gahz'rilla's Electrified Scale
 @i^11387^Basilisk Heart
+@i^14825^Symbolic Crest
+@i^14829^Symbolic Legplates
+@i^14900^Saltstone Legplates of the Knight
 @i^14944^Warbringer's Crown of the Boar
 @i^15162^Imposing Boots of the Champion
 @i^15168^Imposing Pants of the Monkey
@@ -195,6 +211,9 @@ GoldScout-export 5^qxrxw2cnfb1v^11
 @i^17739^Grovekeeper's Drape
 @i^17746^Noxxion's Shackles
 @i^17748^Vinerot Sandals
+@i^17756^Shadowshard Fragment
+@i^17761^Gem of the First Khan
+@i^17763^Gem of the Third Khan
 @i^17764^Gem of the Fourth Khan
 @i^17765^Gem of the Fifth Khan
 @i^20763^Broken Weapon
@@ -232,6 +251,7 @@ GoldScout-export 5^qxrxw2cnfb1v^11
 @q^1520^0:15:0
 @q^1645^1:0:0
 @q^1701^0:15:0
+@q^1718^3:4:0
 @q^1994^2:2:0
 @q^2070^1:0:0
 @q^2138^0:2:0
@@ -263,9 +283,12 @@ GoldScout-export 5^qxrxw2cnfb1v^11
 @q^3676^0:15:0
 @q^3819^1:7:1
 @q^3821^1:7:1
+@q^3864^2:7:1
+@q^3914^1:1:0
 @q^3961^0:4:0
 @q^3989^0:4:0
 @q^4004^0:4:0
+@q^4005^0:4:0
 @q^4019^0:2:0
 @q^4023^0:2:0
 @q^4092^0:15:0
@@ -299,6 +322,7 @@ GoldScout-export 5^qxrxw2cnfb1v^11
 @q^6515^1:4:0
 @q^6826^0:15:0
 @q^6889^1:7:1
+@q^7067^1:7:1
 @q^7096^0:15:0
 @q^7097^1:0:0
 @q^7909^2:7:1
@@ -308,6 +332,9 @@ GoldScout-export 5^qxrxw2cnfb1v^11
 @q^8444^1:0:0
 @q^8707^1:12:0
 @q^11387^0:15:0
+@q^14825^2:4:0
+@q^14829^2:4:0
+@q^14900^2:4:0
 @q^14944^2:4:0
 @q^15162^2:4:0
 @q^15168^2:4:0
@@ -323,6 +350,9 @@ GoldScout-export 5^qxrxw2cnfb1v^11
 @q^17739^3:4:0
 @q^17746^3:4:0
 @q^17748^3:4:0
+@q^17756^1:12:0
+@q^17761^1:12:0
+@q^17763^1:12:0
 @q^17764^1:12:0
 @q^17765^1:12:0
 @q^20763^0:15:0
@@ -2164,7 +2194,15 @@ GoldScout-export 5^qxrxw2cnfb1v^11
 @a^3129^211:2,231:6
 @a^3192^231:1
 @a^5647^87:1
-@a^11786^227:1
+@a^11687^227:1
+@a^11777^227:6
+@a^11778^227:12
+@a^11785^227:1
+@a^11786^227:3
+@a^11787^227:3
+@a^11788^227:2
+@a^12240^227:1
+@a^12241^227:1
 @a^13718^227:2
 @a^250868^208:1
 @a^251245^148:7,167:2,168:3,187:1,188:1

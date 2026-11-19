@@ -1,5 +1,6 @@
-GoldScout-export 5^gscr7mjrqqkr^5
+GoldScout-export 5^gscr7mjrqqkr^6
 92^51^0^39^40^1418^0.1404^0.3464^51^Rock Elemental^4552:6:6,4553:13:13,4784:29:29,7067:8:8,7491:1:1,7848:4:4,7912:10:17,8150:4:4^
+2659^2^0^48^48^1425^0.5614^0.5084^2^Razorbeak Skylord^4589:2:2,4590:2:2,4591:2:3,19025:1:1^
 2729^20^0^39^40^1418^0.1492^0.6348^20^Elder Crag Coyote^4582:8:8,4583:2:2,5637:2:2,7846:6:9,12203:10:10^
 2735^20^0^37^39^1418^0.1563^0.3939^20^Lesser Rock Elemental^4552:4:4,4553:4:4,4626:10:10,4784:10:10,7067:3:3,7848:1:1,7912:8:12,8150:3:3^
 2748^1^0^0^0^0^0.0000^0.0000^0^^1645:1:1,4306:1:2,7912:1:2^
@@ -42,6 +43,13 @@ GoldScout-export 5^gscr7mjrqqkr^5
 5278^8^0^43^45^1444^0.6835^0.4832^8^Sprite Darter^4402:2:2,4460:1:1,6444:1:1,8146:1:1,9369:6:10,9589:2:2^
 5287^1^0^43^44^1444^0.5706^0.5079^1^Longtooth Howler^4584:1:1,12203:1:1^
 5308^1^0^44^46^1444^0.4705^0.4841^1^Rogue Vale Screecher^6444:1:1^
+5471^1^0^46^46^1446^0.4823^0.6459^1^Dunemaul Ogre^^
+5472^1^0^46^46^1446^0.4833^0.6609^1^Dunemaul Enforcer^4338:1:1^
+5473^3^0^47^47^1446^0.4725^0.6423^3^Dunemaul Ogre Mage^4338:2:4^
+5474^1^0^48^48^1446^0.4679^0.6406^1^Dunemaul Brute^^
+5616^18^0^40^41^1446^0.6050^0.2405^18^Wastewander Thief^1645:1:1,4338:6:9,4421:1:1,8483:5:5,15605:1:1^
+5618^10^0^41^42^1446^0.6169^0.2659^10^Wastewander Bandit^1645:1:1,3927:3:3,4306:2:3,4338:2:4,8483:2:2^
+5623^1^0^45^45^1446^0.6176^0.3381^1^Wastewander Assassin^^
 6907^1^0^0^0^0^0.0000^0.0000^0^^2459:1:1^
 6910^1^0^0^0^0^0.0000^0.0000^0^^4306:1:1,7741:1:1^
 7011^1^0^0^0^0^0.0000^0.0000^0^^^
@@ -61,6 +69,11 @@ GoldScout-export 5^gscr7mjrqqkr^5
 7725^7^0^42^43^1444^0.6726^0.4240^7^Grimtotem Raider^1645:1:1,3968:1:1,4338:1:1^
 7726^10^0^41^42^1444^0.6740^0.4295^10^Grimtotem Naturalist^4087:1:1,4306:1:1,4424:1:1^
 7727^2^0^43^44^1444^0.6711^0.4238^2^Grimtotem Shaman^^
+7855^13^0^44^45^1446^0.7252^0.4604^13^Southsea Pirate^3928:1:1,4306:1:2,4338:4:6,9260:1:1,9276:2:2,20519:3:3^
+7856^18^0^44^45^1446^0.7318^0.4466^18^Southsea Freebooter^4020:1:1,4338:6:8,6149:1:1,9260:1:1,20519:9:9^
+7857^10^0^44^45^1446^0.7472^0.4774^10^Southsea Dock Worker^4306:1:2,4338:4:7,14911:1:1,20519:4:4^
+7858^10^0^44^45^1446^0.7523^0.4578^10^Southsea Swashbuckler^4306:1:1,4338:4:8,6149:1:1,9260:1:1,14654:1:1,20519:4:4^
+7883^1^0^45^45^1446^0.7307^0.4689^1^Andre Firebeard^9246:1:1^
 11562^1^0^33^34^1443^0.2459^0.8175^1^Drysnap Crawler^17057:1:1^
 222286^1^0^43^43^1444^0.6666^0.3848^1^Namida Grimtotem^254877:1:1^
 @i^929^Healing Potion
@@ -90,10 +103,12 @@ GoldScout-export 5^gscr7mjrqqkr^5
 @i^3771^Wild Hog Shank
 @i^3805^Hardened Leather Pants
 @i^3827^Mana Potion
+@i^3927^Fine Aged Cheddar
 @i^3928^Superior Healing Potion
 @i^3939^Crochet Cloak
 @i^3941^Crochet Pants
 @i^3968^Thick Leather Tunic
+@i^4020^Splintering Battle Axe
 @i^4021^Blunting Mace
 @i^4023^Fine Pointed Dagger
 @i^4087^Trueshot Bow of the Bandit
@@ -102,6 +117,7 @@ GoldScout-export 5^gscr7mjrqqkr^5
 @i^4338^Mageweave Cloth
 @i^4402^Small Flame Sac
 @i^4419^Scroll of Intellect III
+@i^4421^Scroll of Protection III
 @i^4424^Scroll of Spirit III
 @i^4460^Ripped Wing Webbing
 @i^4552^Smooth Stone Chip
@@ -112,6 +128,9 @@ GoldScout-export 5^gscr7mjrqqkr^5
 @i^4582^Soft Bushy Tail
 @i^4583^Thick Furry Mane
 @i^4584^Large Trophy Paw
+@i^4589^Long Elegant Feather
+@i^4590^Curved Yellow Bill
+@i^4591^Eagle Eye
 @i^4599^Cured Ham Steak
 @i^4603^Raw Spotted Yellowtail
 @i^4606^Spongy Morel
@@ -144,8 +163,12 @@ GoldScout-export 5^gscr7mjrqqkr^5
 @i^8052^An'Alleum Power Stone
 @i^8146^Wicked Claw
 @i^8150^Deeprock Salt
+@i^8483^Wastewander Water Pouch
 @i^8746^Interlaced Cowl
 @i^9237^Woodpaw Gnoll Mane
+@i^9246^Firebeard's Head
+@i^9260^Volatile Rum
+@i^9276^Pirate's Footlocker
 @i^9369^Iridescent Sprite Darter Wing
 @i^9589^Encrusted Minerals
 @i^9590^Splintered Log
@@ -161,13 +184,20 @@ GoldScout-export 5^gscr7mjrqqkr^5
 @i^13759^Raw Nightfin Snapper
 @i^13760^Raw Sunscale Salmon
 @i^14599^Warden's Footpads
+@i^14654^Scorpashi Wristbands
+@i^14911^Brutish Boots of Intellect
+@i^15605^Ancient Gauntlets of the Sorcerer
 @i^16967^Feralas Ahi
 @i^16968^Sar'theris Striker
 @i^16969^Savage Coast Blue Sailfin
 @i^16970^Misty Reed Mahi Mahi
 @i^17057^Shiny Fish Scales
+@i^19025^Skylord Plume
 @i^19937^Small Scorpid Claw
+@i^20519^Southsea Pirate Hat
 @i^21150^Iron Bound Trunk
+@i^21151^Rumsey Rum Black Label
+@i^21228^Mithril Bound Trunk
 @i^213543^Scroll: UPDOG
 @i^213547^Scroll: THAW WORDS
 @i^248682^Waylaid Crate: Apprentice Herbs
@@ -200,10 +230,12 @@ GoldScout-export 5^gscr7mjrqqkr^5
 @q^3771^1:0:0
 @q^3805^0:4:0
 @q^3827^1:0:0
+@q^3927^1:0:0
 @q^3928^1:0:0
 @q^3939^0:4:0
 @q^3941^0:4:0
 @q^3968^0:4:0
+@q^4020^0:2:0
 @q^4021^0:2:0
 @q^4023^0:2:0
 @q^4087^2:2:0
@@ -212,6 +244,7 @@ GoldScout-export 5^gscr7mjrqqkr^5
 @q^4338^1:7:1
 @q^4402^1:7:1
 @q^4419^1:0:0
+@q^4421^1:0:0
 @q^4424^1:0:0
 @q^4460^0:15:0
 @q^4552^0:15:0
@@ -222,6 +255,9 @@ GoldScout-export 5^gscr7mjrqqkr^5
 @q^4582^1:12:0
 @q^4583^0:15:0
 @q^4584^0:15:0
+@q^4589^1:7:1
+@q^4590^0:15:0
+@q^4591^0:15:0
 @q^4599^1:0:0
 @q^4603^1:7:1
 @q^4606^1:0:0
@@ -254,8 +290,12 @@ GoldScout-export 5^gscr7mjrqqkr^5
 @q^8052^1:12:0
 @q^8146^1:7:1
 @q^8150^1:7:1
+@q^8483^1:12:0
 @q^8746^0:4:0
 @q^9237^1:12:0
+@q^9246^1:12:0
+@q^9260^1:0:0
+@q^9276^1:15:0
 @q^9369^1:12:0
 @q^9589^1:12:0
 @q^9590^1:12:0
@@ -271,24 +311,33 @@ GoldScout-export 5^gscr7mjrqqkr^5
 @q^13759^1:7:1
 @q^13760^1:7:1
 @q^14599^2:4:0
+@q^14654^2:4:0
+@q^14911^2:4:0
+@q^15605^2:4:0
 @q^16967^1:15:0
 @q^16968^1:12:0
 @q^16969^1:12:0
 @q^16970^1:12:0
 @q^17057^1:15:0
+@q^19025^1:12:0
 @q^19937^0:15:0
+@q^20519^1:12:0
 @q^21150^1:15:0
+@q^21151^1:0:0
+@q^21228^1:15:0
 @q^213543^1:0:0
 @q^213547^1:0:0
 @q^248682^1:0:1
 @q^248693^1:0:1
 @q^254877^1:12:0
 @m^1418^Badlands
+@m^1425^The Hinterlands
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
 @m^1443^Desolace
 @m^1444^Feralas
 @m^1445^Dustwallow Marsh
+@m^1446^Tanaris
 @m^1454^Orgrimmar
 @c^118^
 @c^724^
@@ -1244,6 +1293,7 @@ GoldScout-export 5^gscr7mjrqqkr^5
 @c^279990^
 @c^286152^
 @a^92^122:32,123:2,142:15,143:2
+@a^2659^211:2
 @a^2729^185:1,241:2,242:7,243:3,262:5,266:2
 @a^2735^142:12,143:3,163:2,164:3
 @a^2831^223:6,242:1,243:11,246:1,262:2,282:1
@@ -1267,10 +1317,22 @@ GoldScout-export 5^gscr7mjrqqkr^5
 @a^5278^193:8
 @a^5287^211:1
 @a^5308^189:1
+@a^5471^249:1
+@a^5472^269:1
+@a^5473^249:2,269:1
+@a^5474^249:1
+@a^5616^91:6,92:11,133:1
+@a^5618^91:3,92:2,112:4,132:1
+@a^5623^132:1
 @a^7584^234:2
 @a^7725^153:4,193:3
 @a^7726^153:4,173:1,193:5
 @a^7727^153:1,193:1
+@a^7855^174:3,194:10
+@a^7856^174:8,175:2,194:4,195:4
+@a^7857^194:8,195:2
+@a^7858^175:1,194:3,195:6
+@a^7883^194:1
 @a^11562^324:1
 @a^222286^153:1
 @f^1434^0^1^225^6358:1:1,16969:1:1^265:1
@@ -1278,5 +1340,6 @@ GoldScout-export 5^gscr7mjrqqkr^5
 @f^1443^0^17^225^4603:2:2,6358:3:3,6359:8:8,6362:3:3,16968:1:1,21150:1:1^324:17
 @f^1444^0^8^225^13758:6:6,13759:1:1,13760:1:1,16967:1:1^212:8
 @f^1445^0^69^189^4603:10:10,6358:4:4,6359:7:7,6362:48:48^231:45,251:24
+@f^1446^0^2^225^21151:1:2,21228:1:1^153:2
 @f^1454^0^133^202^6289:70:70,6291:21:21,6308:40:40,6309:1:1,6310:1:1^113:133
 @l^0^enUS
