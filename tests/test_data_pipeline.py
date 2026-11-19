@@ -2,6 +2,8 @@
 
 Run from the repository root:  python -m unittest discover -s tests
 """
+import contextlib
+import io
 import json
 import os
 import subprocess
@@ -291,6 +293,22 @@ class BotTests(unittest.TestCase):
         self.assertIn("Closes #9", body)
         self.assertNotIn("Closes #7", body)
         self.assertNotIn("Closes #10", body)
+
+    def test_merged_lists_issues_main_already_has(self):
+        # Main holds player 1's export at snapshot 3 for this install. #5 (snapshot 3) and #4 (an older
+        # snapshot 2) are in the data; #6 (snapshot 7, newer) isn't yet; #8 is another player with nothing on main.
+        def issue(number, export, user_id=1):
+            return {"number": number, "body": form_body(export), "labels": ["data-valid"],
+                    "user": {"id": user_id, "login": "p%d" % user_id, "type": "User"}}
+        issues = [issue(5, GOOD), issue(4, GOOD.replace("^abcdefghijkl^3", "^abcdefghijkl^2")),
+                  issue(6, GOOD.replace("^abcdefghijkl^3", "^abcdefghijkl^7")), issue(8, GOOD, 2),
+                  {"number": 9, "body": "no export here", "labels": [], "user": {"id": 1, "type": "User"}}]
+        Path("issues.jsonl").write_text("\n".join(json.dumps(i) for i in issues), encoding="utf-8")
+        on_main = {"1-abcdefghijkl.txt": GOOD}
+        printed = io.StringIO()
+        with contextlib.redirect_stdout(printed):
+            data_bot.merged("issues.jsonl", read=lambda path: on_main.get(path.name))
+        self.assertEqual(printed.getvalue().split(), ["4", "5"])
 
     def test_collect_keeps_newest_snapshot_per_install(self):
         def issue(number, export):

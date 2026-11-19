@@ -18,12 +18,17 @@
       companion upload, and appends a section to pr_body.md. Uploads with rate
       warnings are held unless their install ID is in data/approved-installs.txt.
 
+  python tools/data_bot.py merged ISSUES_JSONL
+      Prints the numbers of the issues (same format as collect) whose data main
+      already has, one per line, so the data merge can close them.
+
 Issue text is untrusted: it is only ever parsed here, never run or put into a
 shell command, and messages never quote it back.
 """
 import json
 import os
 import re
+import subprocess
 import sys
 from pathlib import Path
 
@@ -339,8 +344,37 @@ def collect_uploads(uploads_path):
     set_output("rejected", rejected)
 
 
+def main_file(path, ref="origin/main"):
+    """A file's text on main (fetched), or None if main doesn't have it."""
+    try:
+        return subprocess.run(["git", "show", "%s:%s" % (ref, path.relative_to(ROOT).as_posix())], cwd=ROOT,
+                              capture_output=True, text=True, encoding="utf-8", check=True).stdout
+    except (OSError, subprocess.CalledProcessError):
+        return None
+
+
+def merged(issues_path, read=main_file):
+    """Prints the open share-form issues whose data main already has: the same player's file for that install,
+    at the same or a newer export. The data merge closes them: GitHub ignores "Closes #N" in a pull request
+    merged with the workflow's own token, so they'd otherwise stay open."""
+    found = []
+    for line in Path(issues_path).read_text(encoding="utf-8").splitlines():
+        issue = json.loads(line)
+        user_id = (issue.get("user") or {}).get("id")
+        export, _ = extract(issue.get("body"))
+        result = submission.parse(export) if export else None
+        if not isinstance(user_id, int) or not result or not result.ok:
+            continue
+        stored = read(SUBMISSIONS / ("%d-%s.txt" % (user_id, result.install_id)))
+        stored = submission.parse(stored) if stored else None
+        if stored and stored.ok and stored.seq >= result.seq:
+            found.append(issue["number"])
+    for number in sorted(found):
+        print(number)
+
+
 def main():
-    commands = {"check": check, "collect": collect, "collect-uploads": collect_uploads}
+    commands = {"check": check, "collect": collect, "collect-uploads": collect_uploads, "merged": merged}
     if len(sys.argv) != 3 or sys.argv[1] not in commands:
         sys.exit(__doc__)
     commands[sys.argv[1]](sys.argv[2])

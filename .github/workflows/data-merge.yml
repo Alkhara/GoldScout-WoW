@@ -157,6 +157,22 @@ jobs:
           gh workflow run tests.yml --ref main
           summary "**Merged automatically:** every check passed, including the website build. Started Tests on main."
 
+      # GitHub ignores the pull request's "Closes #N" when this workflow's own
+      # token merges it, so shared issues would stay open: close every open one
+      # whose data main already has (the same player and install, at the same or
+      # a newer export). Reads main itself, so an unmerged pull request closes nothing.
+      - name: Close shared issues that are in the data
+        if: always()
+        continue-on-error: true
+        run: |
+          git fetch --quiet origin main:refs/remotes/origin/main
+          closed=0
+          for number in $(python3 tools/data_bot.py merged issues.jsonl); do
+            gh issue close "$number" --comment "Thanks for sharing! Your drop data is in GoldScout's community data now, and every player gets it with the next daily release."
+            closed=$((closed + 1))
+          done
+          echo "Closed $closed shared issue(s) whose data is on main." | tee -a "$GITHUB_STEP_SUMMARY"
+
       # Scores from main's submissions (merged or not this run), so only kills
       # in the community data count; see tools/leaderboard.py.
       - name: Update the contributor leaderboard
