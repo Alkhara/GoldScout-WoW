@@ -18,10 +18,10 @@ local COLUMNS = {
   farm = {
     { key = "item", title = L["Item"], width = 165, align = "LEFT" },
     { key = "kind", title = L["Type"], width = 70, align = "LEFT" },
-    { key = "source", title = L["Best source"], width = 154, align = "LEFT" },
+    { key = "source", title = L["Best source"], width = 148, align = "LEFT" },
     { key = "lvl", title = L["Lvl"], width = 45, align = "CENTER" },
     { key = "chance", title = L["Chance"], width = 55, align = "RIGHT" },
-    { key = "each", title = L["Each"], width = 70, align = "RIGHT" },
+    { key = "each", title = L["Per kill"], width = 76, align = "RIGHT" },   -- per skin, node or catch on those rows
     { key = "hour", title = L["Est. /hour"], width = 80, align = "RIGHT" },
     { key = "listed", title = L["Listed"], width = 50, align = "RIGHT" },
   },
@@ -31,7 +31,7 @@ local COLUMNS = {
     { key = "zone", title = L["Zone"], width = 140, align = "LEFT" },
     { key = "lvl", title = L["Lvl"], width = 45, align = "CENTER" },
     { key = "drops", title = L["Drops"], width = 165, align = "LEFT" },
-    { key = "each", title = L["Each"], width = 80, align = "RIGHT" },
+    { key = "each", title = L["Per kill"], width = 80, align = "RIGHT" },
     { key = "hour", title = L["Est. /hour"], width = 85, align = "RIGHT" },
   },
   -- The Farm tab's Data wanted view.

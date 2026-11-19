@@ -176,8 +176,10 @@ set up, ticking itself off as you go (`/gscout welcome` shows it again):
   GoldScout is not affiliated with or endorsed by Blizzard. One cheap listing
   can make an item look cheaper than it really is; the **Listed** column shows
   how deep the market is, and rows with few listings warn you in the tooltip.
-- **Each** is the expected value of one kill, node, skin, catch or pickpocket: price
-  after the 5% auction house cut times the drop chance or yield.
+- **Per kill** is what one kill is worth on average: the item's price after the
+  5% auction house cut times its drop chance, not the item's own price (that's
+  in the row's tooltip). On gathering, fishing and pickpocket rows it's per
+  node, skin, catch or pickpocket, times the yield.
 - **Est. /hour** multiplies that by your rate. Kills per hour go up for mobs
   well below your level and down for mobs above it. Tune the rates with
   `/gscout set` so they match how you play.
