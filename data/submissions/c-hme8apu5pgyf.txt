@@ -1,4 +1,4 @@
-GoldScout-export 5^hme8apu5pgyf^4
+GoldScout-export 5^hme8apu5pgyf^5
 4196^28^0^49^50^1446^0.4795^0.5777^28^Silithid Swarm^^
 5419^3^0^42^43^1446^0.4527^0.3204^3^Glasshide Basilisk^4093:1:1,11386:1:1,213545:1:1^
 5420^1^0^46^46^1446^0.3807^0.4804^1^Glasshide Gazer^4093:1:1,11387:1:1^
@@ -33,11 +33,17 @@ GoldScout-export 5^hme8apu5pgyf^4
 6506^5^0^49^50^1449^0.6794^0.6940^5^Ravasaur Runner^4587:2:2,11018:1:1,12184:3:3^
 6507^4^0^49^50^1449^0.6721^0.5404^4^Ravasaur Hunter^11116:1:1,12184:2:2,20015:1:1^
 6508^3^0^50^51^1449^0.6916^0.5915^3^Venomhide Ravasaur^4587:2:2,12184:3:3^
+6510^1^0^52^52^1449^0.5144^0.2085^1^Bloodpetal Flayer^11018:1:1,11316:1:1^
 6518^1^0^52^54^1449^0.5278^0.2643^1^Tar Lurker^^
+7153^11^0^48^49^1448^0.4876^0.9062^11^Deadwood Warrior^3943:1:1,4338:6:14,4602:1:1,4638:1:1^
+7154^7^0^48^49^1448^0.4761^0.9031^7^Deadwood Gardener^4338:2:3^
+7155^7^0^49^50^1448^0.4853^0.9069^7^Deadwood Pathfinder^1645:1:1,4338:1:1^
 7769^24^0^45^45^1446^0.5615^0.6866^24^Hazzali Parasite^^
 8504^3^0^48^48^1427^0.4320^0.5929^3^Dark Iron Sentry^^
 8566^2^0^47^48^1427^0.4504^0.6184^2^Dark Iron Lookout^4338:1:3^
 8637^2^0^45^45^1427^0.6706^0.3457^2^Dark Iron Watchman^4306:1:1,4338:1:1^
+8956^13^0^47^48^1448^0.5039^0.8714^13^Angerclaw Bear^8146:1:1,11408:6:6,11409:2:2,11410:2:2,11411:2:2,277958:8:8^
+8959^24^0^47^48^1448^0.4876^0.8308^24^Felpaw Wolf^4583:8:8,4584:2:2,8146:2:2,12203:14:14,12208:6:6,277959:10:10^
 9318^17^0^47^49^1427^0.4902^0.2674^17^Incendosaur^5128:2:2,5133:11:11^
 9683^2^0^49^50^1449^0.6706^0.7331^2^Lar'korwi Mate^4587:1:1,11509:2:2,20015:1:1^
 269254^1^0^45^47^1427^0.5185^0.3809^1^Famished Blackworg^4583:1:1,8146:1:1,12203:1:1^
@@ -48,6 +54,7 @@ GoldScout-export 5^hme8apu5pgyf^4
 @i^3821^Goldthorn
 @i^3857^Coal
 @i^3938^Crochet Bracers
+@i^3943^Crochet Vest
 @i^4093^Large Basilisk Tail
 @i^4306^Silk Cloth
 @i^4337^Thick Spider's Silk
@@ -55,11 +62,14 @@ GoldScout-export 5^hme8apu5pgyf^4
 @i^4425^Scroll of Agility III
 @i^4552^Smooth Stone Chip
 @i^4583^Thick Furry Mane
+@i^4584^Large Trophy Paw
 @i^4585^Dripping Spider Mandible
 @i^4587^Tribal Raptor Feathers
 @i^4588^Pristine Raptor Skull
 @i^4601^Soft Banana Bread
+@i^4602^Moon Harvest Pumpkin
 @i^4608^Raw Black Truffle
+@i^4638^Reinforced Steel Lockbox
 @i^4787^Burning Pitch
 @i^5117^Vibrant Plume
 @i^5128^Shed Lizard Skin
@@ -83,8 +93,13 @@ GoldScout-export 5^hme8apu5pgyf^4
 @i^10552^Symbol of Ragnaros
 @i^11018^Un'Goro Soil
 @i^11116^A Mangled Journal
+@i^11316^Bloodpetal
 @i^11386^Squishy Basilisk Eye
 @i^11387^Basilisk Heart
+@i^11408^Bear Jaw
+@i^11409^Bear Flank
+@i^11410^Savage Bear Claw
+@i^11411^Large Bear Bone
 @i^11509^Ravasaur Pheromone Gland
 @i^11725^Solid Crystal Leg Shaft
 @i^11818^Grimesilt Outhouse Key
@@ -99,6 +114,8 @@ GoldScout-export 5^hme8apu5pgyf^4
 @i^19937^Small Scorpid Claw
 @i^20015^Elder Raptor Feathers
 @i^213545^Scroll: PEATCHY ATTAX
+@i^277958^Putrescent Bear Organs
+@i^277959^Putrescent Wolf Organs
 @i^280459^Crystal Infused Scale
 @q^1464^0:15:0
 @q^1645^1:0:0
@@ -107,6 +124,7 @@ GoldScout-export 5^hme8apu5pgyf^4
 @q^3821^1:7:1
 @q^3857^1:7:1
 @q^3938^0:4:0
+@q^3943^0:4:0
 @q^4093^0:15:0
 @q^4306^1:7:1
 @q^4337^1:7:1
@@ -114,11 +132,14 @@ GoldScout-export 5^hme8apu5pgyf^4
 @q^4425^1:0:0
 @q^4552^0:15:0
 @q^4583^0:15:0
+@q^4584^0:15:0
 @q^4585^0:15:0
 @q^4587^0:15:0
 @q^4588^0:15:0
 @q^4601^1:0:0
+@q^4602^1:0:0
 @q^4608^1:0:0
+@q^4638^2:15:0
 @q^4787^0:15:0
 @q^5117^1:12:0
 @q^5128^0:15:0
@@ -142,8 +163,13 @@ GoldScout-export 5^hme8apu5pgyf^4
 @q^10552^1:12:0
 @q^11018^1:12:0
 @q^11116^2:15:0
+@q^11316^1:12:0
 @q^11386^0:15:0
 @q^11387^0:15:0
+@q^11408^0:15:0
+@q^11409^0:15:0
+@q^11410^0:15:0
+@q^11411^0:2:0
 @q^11509^1:12:0
 @q^11725^1:12:0
 @q^11818^1:12:0
@@ -158,9 +184,12 @@ GoldScout-export 5^hme8apu5pgyf^4
 @q^19937^0:15:0
 @q^20015^0:15:0
 @q^213545^1:0:0
+@q^277958^1:12:0
+@q^277959^1:12:0
 @q^280459^1:12:0
 @m^1427^Searing Gorge
 @m^1446^Tanaris
+@m^1448^Felwood
 @m^1449^Un'Goro Crater
 @c^2300^
 @c^2302^
@@ -788,11 +817,17 @@ GoldScout-export 5^hme8apu5pgyf^4
 @a^6506^253:1,273:2,293:2
 @a^6507^192:1,213:1,233:1,234:1
 @a^6508^233:2,254:1
+@a^6510^90:1
 @a^6518^110:1
+@a^7153^349:2,369:9
+@a^7154^349:4,369:3
+@a^7155^349:2,369:5
 @a^7769^250:2,251:2,271:10,291:10
 @a^8504^229:1,247:1,248:1
 @a^8566^248:1,249:1
 @a^8637^133:2
+@a^8956^309:1,329:2,349:4,350:1,351:1,370:1,371:3
+@a^8959^309:2,328:6,329:5,330:4,350:6,371:1
 @a^9318^89:7,108:1,109:1,110:5,150:3
 @a^9683^293:2
 @a^269254^150:1

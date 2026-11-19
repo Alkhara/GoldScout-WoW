@@ -1,4 +1,4 @@
-GoldScout-export 5^gjunsy5vhmry^2
+GoldScout-export 5^gjunsy5vhmry^3
 2069^1^0^15^15^1439^0.5173^0.2600^1^Moonstalker^5134:1:1^
 2202^2^0^12^12^1439^0.3831^0.2889^2^Greymist Coastrunner^5523:1:1^
 2203^1^0^13^14^1439^0.3867^0.2971^1^Greymist Seer^730:1:1,4567:1:1,5523:1:1^
@@ -7,6 +7,7 @@ GoldScout-export 5^gjunsy5vhmry^2
 6789^2^0^9^10^1439^0.5157^0.3761^2^Thistle Cub^4562:2:2,7073:1:1^
 10158^2^0^13^13^1439^0.4525^0.4905^2^Moonkin^15015:1:1,17056:1:1^
 10160^2^0^13^14^1439^0.4618^0.4906^2^Raging Moonkin^1515:1:1,6889:1:1^
+250868^4^0^6^6^2521^0.4475^0.3923^4^Vuldren^2138:1:1,2672:2:2,3299:1:1,3300:3:3^
 250873^25^0^1^1^2521^0.4503^0.2533^25^Juvenile Vuldren^1367:2:2,1369:2:2,1370:1:1,1376:1:1,2210:2:2,2650:1:1,2654:1:1,2672:6:6,4865:11:11,7073:12:12,7074:6:6^
 250926^10^0^3^4^2521^0.3891^0.2738^10^Scrawny Ursera^2650:1:1,2654:1:1,7073:3:3,7074:3:3,251918:6:6,251925:4:4^
 250937^6^0^4^4^2521^0.3631^0.2530^6^Ursera Scavenger^1369:1:1,7073:4:4,7074:1:1,251925:4:4^
@@ -15,13 +16,17 @@ GoldScout-export 5^gjunsy5vhmry^2
 251145^4^0^4^4^2521^0.3637^0.3341^4^Al'Aketh Brute^159:1:1,1374:1:1,1380:1:1,2589:2:2,4540:3:3^
 251160^5^0^2^3^2521^0.4831^0.2011^5^Al'Aketh Convert^1377:1:1,1380:1:1,2589:1:1,2652:1:1,4540:1:1^
 251169^9^0^1^1^2521^0.4577^0.2695^9^Pesky Cirrusfly^1368:1:1,1370:1:1,2654:1:1,251927:1:1,251928:8:8^
+251245^7^0^5^6^2521^0.4479^0.3880^7^Prideclaw^1367:1:1,1414:1:1,3299:4:4,252670:6:6,252671:3:3^
 251402^2^0^2^2^2521^0.4778^0.2801^2^Cirrusfly Soldier^251928:2:2^
 251404^1^0^3^3^2521^0.4837^0.2826^1^Cirrusfly Queen^251928:1:1^
 251448^4^0^4^4^2521^0.3632^0.3258^4^Al'Aketh Neophyte^159:2:2,2589:1:1,4540:2:2^
 251451^2^0^5^5^2521^0.4027^0.3547^2^Al'Aketh Ambusher^2589:2:2,4540:2:2^
-251661^1^0^6^6^2521^0.4133^0.3879^1^Galestrider^6889:1:1,7096:1:1^
+251661^5^0^5^6^2521^0.4422^0.3784^5^Galestrider^1431:1:1,4757:3:3,5469:3:3,6889:2:2,7096:2:2^
+257521^8^0^5^6^2521^0.4624^0.3917^8^High Order Apprentice^118:1:1,159:3:3,1366:2:2,1368:1:1,2589:2:4,3013:2:2,3363:1:1,4540:2:2^
+@i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
 @i^730^Murloc Eye
+@i^1366^Ragged Leather Pants
 @i^1367^Ragged Leather Boots
 @i^1368^Ragged Leather Gloves
 @i^1369^Ragged Leather Belt
@@ -31,8 +36,11 @@ GoldScout-export 5^gjunsy5vhmry^2
 @i^1376^Frayed Cloak
 @i^1377^Frayed Gloves
 @i^1380^Frayed Robe
+@i^1414^Cracked Sledge
+@i^1431^Patchwork Pants
 @i^1515^Rough Wooden Staff
 @i^1769^Canvas Shoulderpads
+@i^2138^Sharpened Letter Opener
 @i^2210^Battered Buckler
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
@@ -40,13 +48,19 @@ GoldScout-export 5^gjunsy5vhmry^2
 @i^2652^Flimsy Chain Cloak
 @i^2654^Flimsy Chain Pants
 @i^2672^Stringy Wolf Meat
+@i^3013^Scroll of Protection
+@i^3299^Fractured Canine
+@i^3300^Rabbit's Foot
+@i^3363^Frayed Belt
 @i^3376^Canvas Belt
 @i^4540^Tough Hunk of Bread
 @i^4562^Severing Axe of the Owl
 @i^4567^Merc Sword of the Eagle
+@i^4757^Cracked Egg Shells
 @i^4865^Ruined Pelt
 @i^5134^Small Furry Paw
 @i^5348^Worn Parchment
+@i^5469^Strider Meat
 @i^5523^Small Barnacled Clam
 @i^6889^Small Egg
 @i^7073^Broken Fang
@@ -60,8 +74,12 @@ GoldScout-export 5^gjunsy5vhmry^2
 @i^251928^Torn Insect Wing
 @i^251931^Depleted Windstone
 @i^252665^Head of Urs'anah
+@i^252670^Prideclaw Pelt
+@i^252671^Hoarder's Foot
+@q^118^1:0:0
 @q^159^1:0:0
 @q^730^1:7:1
+@q^1366^0:4:0
 @q^1367^0:4:0
 @q^1368^0:4:0
 @q^1369^0:4:0
@@ -71,8 +89,11 @@ GoldScout-export 5^gjunsy5vhmry^2
 @q^1376^0:4:0
 @q^1377^0:4:0
 @q^1380^0:4:0
+@q^1414^0:2:0
+@q^1431^0:4:0
 @q^1515^0:2:0
 @q^1769^0:4:0
+@q^2138^0:2:0
 @q^2210^0:4:0
 @q^2589^1:7:1
 @q^2592^1:7:1
@@ -80,13 +101,19 @@ GoldScout-export 5^gjunsy5vhmry^2
 @q^2652^0:4:0
 @q^2654^0:4:0
 @q^2672^1:7:1
+@q^3013^1:0:0
+@q^3299^0:15:0
+@q^3300^0:15:0
+@q^3363^0:4:0
 @q^3376^0:4:0
 @q^4540^1:0:0
 @q^4562^2:2:0
 @q^4567^2:2:0
+@q^4757^0:15:0
 @q^4865^0:15:0
 @q^5134^1:12:0
 @q^5348^1:12:0
+@q^5469^1:7:1
 @q^5523^1:7:0
 @q^6889^1:7:1
 @q^7073^0:15:0
@@ -100,6 +127,8 @@ GoldScout-export 5^gjunsy5vhmry^2
 @q^251928^0:15:0
 @q^251931^0:15:0
 @q^252665^1:12:0
+@q^252670^1:12:0
+@q^252671^0:15:0
 @m^1439^Darkshore
 @m^2521^Zephras Isle
 @c^724^
@@ -834,6 +863,7 @@ GoldScout-export 5^gjunsy5vhmry^2
 @a^6789^150:2
 @a^10158^188:1,189:1
 @a^10160^189:2
+@a^250868^148:1,149:1,168:1,169:1
 @a^250873^88:1,89:9,108:12,109:3
 @a^250926^107:8,108:1,127:1
 @a^250937^87:1,107:5
@@ -842,9 +872,11 @@ GoldScout-export 5^gjunsy5vhmry^2
 @a^251145^127:4
 @a^251160^69:3,89:2
 @a^251169^108:3,109:6
+@a^251245^148:3,149:2,168:1,169:1
 @a^251402^109:2
 @a^251404^109:1
 @a^251448^127:4
 @a^251451^127:1,148:1
-@a^251661^148:1
+@a^251661^148:2,149:3
+@a^257521^149:8
 @l^0^enUS
