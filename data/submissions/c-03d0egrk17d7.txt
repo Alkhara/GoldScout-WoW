@@ -1,8 +1,15 @@
-GoldScout-export 5^03d0egrk17d7^1
+GoldScout-export 5^03d0egrk17d7^3
 2760^10^0^38^39^1417^0.2509^0.2995^10^Burning Exile^3857:1:1,4479:6:6,4787:6:6,7068:1:1,248693:1:1^
 2761^6^0^38^39^1417^0.6623^0.3040^6^Cresting Exile^4481:2:2,4791:4:18,7070:1:1^
 2762^3^0^38^39^1417^0.5140^0.5126^3^Thundering Exile^4480:2:2,7069:1:1^
+11561^2^0^37^40^2652^0.2920^0.1701^2^Undead Ravager^4338:1:1^
+252711^2^0^42^43^2652^0.5903^0.2716^2^Decrepit Pylon Protector^^
+253524^1^0^43^43^2652^0.6420^0.2331^1^Bristleback Nomad^4306:1:1^
+253526^3^0^42^43^2652^0.6070^0.2411^3^Bristleback Skullcrusher^4306:2:6,213545:1:1^
+254490^2^0^37^38^2652^0.5441^0.2476^2^Desolace Bone Worm^^
 @i^3857^Coal
+@i^4306^Silk Cloth
+@i^4338^Mageweave Cloth
 @i^4479^Burning Charm
 @i^4480^Thundering Charm
 @i^4481^Cresting Charm
@@ -11,8 +18,11 @@ GoldScout-export 5^03d0egrk17d7^1
 @i^7068^Elemental Fire
 @i^7069^Elemental Air
 @i^7070^Elemental Water
+@i^213545^Scroll: PEATCHY ATTAX
 @i^248693^Waylaid Crate: Expert Textiles
 @q^3857^1:7:1
+@q^4306^1:7:1
+@q^4338^1:7:1
 @q^4479^1:0:0
 @q^4480^1:0:0
 @q^4481^1:0:0
@@ -21,8 +31,10 @@ GoldScout-export 5^03d0egrk17d7^1
 @q^7068^1:7:1
 @q^7069^1:7:1
 @q^7070^1:7:1
+@q^213545^1:0:0
 @q^248693^1:0:1
 @m^1417^Arathi Highlands
+@m^2652^Shen'dralas
 @c^118^
 @c^724^
 @c^733^
@@ -745,4 +757,9 @@ GoldScout-export 5^03d0egrk17d7^1
 @a^2760^104:3,105:3,124:2,125:2
 @a^2761^113:1,133:5
 @a^2762^190:1,210:2
+@a^11561^26:1,84:1
+@a^252711^95:1,128:1
+@a^253524^92:1
+@a^253526^91:1,92:2
+@a^254490^91:1,110:1
 @l^0^enUS

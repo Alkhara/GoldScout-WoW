@@ -1,4 +1,12 @@
-GoldScout-export 5^1665n1o9tbra^5
+GoldScout-export 5^1665n1o9tbra^6
+682^9^0^32^33^1434^0.4672^0.1402^9^Tigre de Strangleronce^1686:5:5,12202:3:3^
+688^3^0^31^32^1434^0.3469^0.0670^3^Basilic de pierre^^
+775^2^0^32^33^1434^0.4054^0.0838^2^Agent de Kurzen^2734:1:1,4306:1:2^
+937^15^0^32^33^1434^0.4523^0.1030^15^Guerrier de la jungle de Kurzen^1710:1:1,2732:2:2,3816:1:1,4306:3:5,4338:1:1,251388:1:1^
+940^2^0^32^33^1434^0.4419^0.0953^2^Guérisseur de Kurzen^^
+1096^4^0^35^36^1434^0.4379^0.1755^4^Géologue de la KapitalRisk^3813:1:1^
+1097^1^0^34^34^1434^0.4209^0.1813^1^Mécanicien de la KapitalRisk^^
+1150^9^0^30^31^1434^0.3694^0.1078^9^Crocilisque des rivières^770:5:5,3667:6:6,4053:2:2,12037:2:2^
 2240^7^0^32^33^1416^0.5770^0.6746^7^Détrousseur du Syndicat^4306:3:4,5113:1:1,6986:1:1^
 2241^6^0^33^34^1416^0.5773^0.6796^6^Larronnesse du Syndicat^4306:4:4,5113:1:1^
 2248^17^0^30^31^1424^0.4485^0.3067^17^Yéti des grottes^1708:1:1,3720:6:6^
@@ -31,18 +39,26 @@ GoldScout-export 5^1665n1o9tbra^5
 4151^10^0^32^33^1441^0.8679^0.6841^10^Peau de cristal du sel gemme^1701:1:1,1702:4:4^
 4154^7^0^30^32^1441^0.8102^0.6603^7^Charognard des Salines^729:4:4,3399:2:2,5114:3:3,5116:2:2,5848:7:7,11416:1:1,12037:2:2,17056:3:3^
 4158^3^0^32^34^1441^0.7472^0.8496^3^Vautour des Salines^5848:3:3,12037:1:1^
+4723^1^0^38^38^1434^0.4242^0.1846^1^Contremaître Cozzle^4306:1:1,5851:1:1^
+260429^1^0^39^39^1434^0.4364^0.2023^1^Agent de la KapitalRisk^2589:1:3^
 @i^729^Viande filandreuse de vautour
+@i^770^Croc pointu de crocilisque
 @i^878^Petite filière
 @i^1205^Jus de melon
 @i^1686^Moustache à poil dur
 @i^1701^Griffe de basilic
 @i^1702^Epine dorsale intacte de basilic
 @i^1708^Nectar sucré
+@i^1710^Potion de soins supérieure
 @i^1805^Brassards en cuir armé
 @i^2221^Petite targe
 @i^2251^Patte d'araignée fondante
+@i^2589^Etoffe de lin
+@i^2732^Les vertes collines de Strangleronce - Page 8
+@i^2734^Les vertes collines de Strangleronce - Page 10
 @i^2940^Patte d'ours sanglante
 @i^3399^Serre de vautour
+@i^3667^Viande de crocilisque tendre
 @i^3702^Vésicule biliaire d'ours
 @i^3703^Bière d'Austrivage
 @i^3712^Viande de tortue
@@ -51,8 +67,12 @@ GoldScout-export 5^1665n1o9tbra^5
 @i^3731^Viande de lion
 @i^3792^Ceinture entrelacée
 @i^3799^Gilet entrelacé
+@i^3813^Pantalon doublentin
+@i^3816^Ecu réfléchissant
+@i^4053^Grande peau de crocilisque des rivières
 @i^4093^Grande queue de basilic
 @i^4306^Etoffe de soie
+@i^4338^Etoffe de tisse-mage
 @i^4482^Documents scellés
 @i^4555^Epaisse queue écailleuse
 @i^4556^Fragment de carapace moucheté
@@ -65,6 +85,7 @@ GoldScout-export 5^1665n1o9tbra^5
 @i^5794^Venin de scorpide acide
 @i^5795^Carapace de tortue durcie
 @i^5848^Os creux de vautour
+@i^5851^Clé de Cozzle
 @i^6308^Poisson-chat moustachu cru
 @i^6362^Morue rochécaille crue
 @i^6406^Bottes nocturnes
@@ -76,6 +97,7 @@ GoldScout-export 5^1665n1o9tbra^5
 @i^11385^Ecaille de basilic
 @i^11416^Cage thoracique délicate
 @i^12037^Viande mystère
+@i^12202^Viande de tigre
 @i^17056^Plume légère
 @i^17057^Ecailles de poisson brillantes
 @i^17058^Huile de poisson
@@ -88,19 +110,26 @@ GoldScout-export 5^1665n1o9tbra^5
 @i^248690^Caisse détournée : plantes terreuses d'expert
 @i^248693^Caisse détournée : textiles d'expert
 @i^249881^Recette : thé aux racines
+@i^251388^Plans : jambières dorées dures
 @i^262889^Commission d'expert scellée
 @q^729^1:7:1
+@q^770^0:15:0
 @q^878^0:7:0
 @q^1205^1:0:0
 @q^1686^0:15:0
 @q^1701^0:15:0
 @q^1702^0:15:0
 @q^1708^1:0:0
+@q^1710^1:0:0
 @q^1805^0:4:0
 @q^2221^0:4:0
 @q^2251^1:7:1
+@q^2589^1:7:1
+@q^2732^1:12:0
+@q^2734^1:12:0
 @q^2940^0:15:0
 @q^3399^0:15:0
+@q^3667^1:7:1
 @q^3702^0:15:0
 @q^3703^1:0:0
 @q^3712^1:7:1
@@ -109,8 +138,12 @@ GoldScout-export 5^1665n1o9tbra^5
 @q^3731^1:7:1
 @q^3792^0:4:0
 @q^3799^0:4:0
+@q^3813^0:4:0
+@q^3816^0:4:0
+@q^4053^1:12:0
 @q^4093^0:15:0
 @q^4306^1:7:1
+@q^4338^1:7:1
 @q^4482^1:12:0
 @q^4555^0:15:0
 @q^4556^0:15:0
@@ -123,6 +156,7 @@ GoldScout-export 5^1665n1o9tbra^5
 @q^5794^1:12:0
 @q^5795^1:12:0
 @q^5848^1:12:0
+@q^5851^1:13:0
 @q^6308^1:7:1
 @q^6362^1:7:1
 @q^6406^2:4:0
@@ -134,6 +168,7 @@ GoldScout-export 5^1665n1o9tbra^5
 @q^11385^0:15:0
 @q^11416^0:15:0
 @q^12037^1:7:1
+@q^12202^1:7:1
 @q^17056^1:15:1
 @q^17057^1:15:0
 @q^17058^1:15:0
@@ -146,10 +181,12 @@ GoldScout-export 5^1665n1o9tbra^5
 @q^248690^1:0:1
 @q^248693^1:0:1
 @q^249881^1:9:0
+@q^251388^2:9:0
 @q^262889^3:0:0
 @m^1416^Montagnes d'Alterac
 @m^1417^Hautes-terres d'Arathi
 @m^1424^Contreforts de Hautebrande
+@m^1434^Vallée de Strangleronce
 @m^1441^Mille pointes
 @c^724^
 @c^733^
@@ -1347,6 +1384,14 @@ GoldScout-export 5^1665n1o9tbra^5
 @c^279981^
 @c^279982^
 @c^286152^
+@a^682^48:1,49:5,69:3
+@a^688^26:2,27:1
+@a^775^28:2
+@a^937^28:4,29:2,48:4,49:5
+@a^940^28:2
+@a^1096^68:4
+@a^1097^68:1
+@a^1150^26:3,27:1,46:1,47:2,48:2
 @a^2240^271:7
 @a^2241^271:6
 @a^2248^108:4,109:1,128:6,129:6
@@ -1379,4 +1424,6 @@ GoldScout-export 5^1665n1o9tbra^5
 @a^4151^216:1,237:2,277:1,297:4,317:1,337:1
 @a^4154^254:1,257:2,275:1,277:2,294:1
 @a^4158^314:1,356:1,374:1
+@a^4723^68:1
+@a^260429^88:1
 @l^0^frFR

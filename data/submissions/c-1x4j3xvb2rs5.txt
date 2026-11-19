@@ -1,4 +1,4 @@
-GoldScout-export 5^1x4j3xvb2rs5^9
+GoldScout-export 5^1x4j3xvb2rs5^10
 1525^9^0^5^6^1420^0.5333^0.4989^9^Mort pourrissant^1181:1:1,2589:2:3,2855:2:2^
 1526^8^0^6^7^1420^0.5280^0.4985^8^Cadavre décomposé^^
 1535^10^0^6^7^1420^0.3348^0.4823^10^Guerrière écarlate^^
@@ -7,8 +7,11 @@ GoldScout-export 5^1x4j3xvb2rs5^9
 1553^7^0^6^7^1420^0.4784^0.5535^7^Grande chauve-souris du crépuscule^7073:1:1,12223:2:2^
 1934^1^0^6^6^1420^0.3820^0.5162^1^Fermier de Tirisfal^^
 1935^2^0^5^6^1420^0.3813^0.5015^2^Journalier de Tirisfal^^
-2248^8^0^30^31^1424^0.4436^0.3102^8^Yéti des grottes^^
-2249^3^0^31^32^1424^0.4372^0.2959^3^Yéti féroce^1708:1:1,262888:1:1^
+2248^23^0^30^31^1424^0.4397^0.3027^23^Yéti des grottes^1708:1:1^
+2249^19^0^31^32^1424^0.4361^0.2995^19^Yéti féroce^1529:1:1,1708:1:1,3708:1:1,3771:1:1,262888:1:1^
+2268^3^0^25^26^1424^0.3094^0.4210^3^Fantassin d'Hillsbrad^^
+2335^1^0^30^30^1424^0.2985^0.4172^1^Magistrat Burnside^^
+2448^1^0^26^26^1424^0.2980^0.4253^1^Commis Horrace Whitesteed^^
 4140^1^0^32^32^1441^0.7615^0.7182^1^Scorpide ravageur^12037:1:1^
 4151^1^0^32^32^1441^0.7700^0.8357^1^Peau de cristal du sel gemme^^
 4421^1^0^0^0^0^0.0000^0.0000^0^^5793:1:1,17008:1:1^
@@ -51,6 +54,7 @@ GoldScout-export 5^1x4j3xvb2rs5^9
 7603^12^0^0^0^0^0.0000^0.0000^0^^^
 7800^1^0^0^0^0^0.0000^0.0000^0^^9299:1:1^
 @i^1181^Parchemin d'esprit
+@i^1529^Jade
 @i^1708^Nectar sucré
 @i^1804^Bottes en cuir armé
 @i^2295^Grande défense de sanglier
@@ -65,6 +69,8 @@ GoldScout-export 5^1x4j3xvb2rs5^9
 @i^3300^Patte de lapin
 @i^3385^Potion de mana inférieure
 @i^3403^Défense de sanglier en ivoire
+@i^3708^Bâtonnet d'Helcular
+@i^3771^Jarret de cochon sauvage
 @i^4306^Etoffe de soie
 @i^5637^Grand croc
 @i^5793^Coeur de Trancheflanc
@@ -78,6 +84,7 @@ GoldScout-export 5^1x4j3xvb2rs5^9
 @i^262888^Commission de compagnon scellée
 @i^278243^Peau de sombredogue
 @q^1181^1:0:0
+@q^1529^2:7:1
 @q^1708^1:0:0
 @q^1804^0:4:0
 @q^2295^0:15:0
@@ -92,6 +99,8 @@ GoldScout-export 5^1x4j3xvb2rs5^9
 @q^3300^0:15:0
 @q^3385^1:0:0
 @q^3403^0:15:0
+@q^3708^1:12:0
+@q^3771^1:0:0
 @q^4306^1:7:1
 @q^5637^1:7:1
 @q^5793^1:12:0
@@ -1422,8 +1431,11 @@ GoldScout-export 5^1x4j3xvb2rs5^9
 @a^1553^207:1,208:1,211:2,229:3
 @a^1934^207:1
 @a^1935^187:1,207:1
-@a^2248^108:2,128:3,129:3
-@a^2249^108:1,109:1,128:1
+@a^2248^108:8,128:11,129:4
+@a^2249^108:7,109:1,128:11
+@a^2268^165:1,166:2
+@a^2335^165:1
+@a^2448^165:1
 @a^4140^295:1
 @a^4151^335:1
 @a^6132^290:1
