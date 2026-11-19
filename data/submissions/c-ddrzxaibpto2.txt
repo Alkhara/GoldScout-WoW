@@ -1,4 +1,4 @@
-GoldScout-export 5^ddrzxaibpto2^28
+GoldScout-export 5^ddrzxaibpto2^29
 92^8^0^39^40^1418^0.1459^0.3548^8^Rock Elemental^4552:1:1,4784:3:3,7067:1:1,8150:3:3^
 743^1^0^42^43^1435^0.8927^0.7307^1^Wyrmkin Dreamwalker^^
 747^1^0^42^42^1435^0.8316^0.8684^1^Marsh Murloc^^
@@ -52,6 +52,10 @@ GoldScout-export 5^ddrzxaibpto2^28
 2928^1^0^45^45^1425^0.4431^0.5363^1^Primitive Owlbeast^^
 2929^3^0^46^47^1425^0.5976^0.5273^3^Savage Owlbeast^^
 2944^1^0^41^41^1418^0.3222^0.5600^1^Boss Tho'grun^^
+3098^11^0^1^2^1411^0.4364^0.6364^11^Mottled Boar^117:4:4,1378:2:2,1380:1:1,2210:1:1,3363:1:1,4865:3:3,7098:7:7^
+3101^1^0^4^4^1411^0.4651^0.5784^1^Vile Familiar^^
+3124^11^0^3^3^1411^0.4528^0.6228^11^Scorpid Worker^1366:1:1,2652:1:1,4862:7:7,4867:5:5,7099:2:2,7100:2:2,7101:3:3^
+3281^1^0^4^4^1411^0.4069^0.6680^1^Sarkoth^4905:1:1,7101:1:1^
 4323^2^0^41^42^1445^0.4227^0.6744^2^Searing Hatchling^^
 4324^1^0^42^42^1445^0.4378^0.6636^1^Searing Whelp^^
 4328^4^0^44^44^1445^0.3740^0.6867^4^Firemane Scalebane^^
@@ -151,10 +155,17 @@ GoldScout-export 5^ddrzxaibpto2^28
 10802^1^0^51^51^1425^0.5765^0.8688^1^Hitah'ya the Keeper^19064:1:1^
 14748^2^0^49^49^1425^0.8437^0.4095^2^Vilebranch Kidnapper^^
 222286^1^0^43^43^1444^0.6637^0.3852^1^Namida Grimtotem^^
+@i^117^Tough Jerky
 @i^770^Pointy Crocolisk Tooth
+@i^1366^Ragged Leather Pants
+@i^1378^Frayed Pants
+@i^1380^Frayed Robe
 @i^1520^Troll Sweat
+@i^2210^Battered Buckler
 @i^2459^Swiftness Potion
+@i^2652^Flimsy Chain Cloak
 @i^3187^Sacrificial Kris of the Owl
+@i^3363^Frayed Belt
 @i^3667^Tender Crocolisk Meat
 @i^3671^Lifeless Skull
 @i^3676^Slimy Ichor
@@ -194,6 +205,10 @@ GoldScout-export 5^ddrzxaibpto2^28
 @i^4628^Bracers of Rock Binding
 @i^4784^Lifeless Stone
 @i^4847^Lotwil's Shackles of Elemental Binding
+@i^4862^Scorpid Worker Tail
+@i^4865^Ruined Pelt
+@i^4867^Broken Scorpid Leg
+@i^4905^Sarkoth's Mangled Claw
 @i^5116^Long Tail Feather
 @i^5117^Vibrant Plume
 @i^5516^Threshadon Fang
@@ -214,6 +229,10 @@ GoldScout-export 5^ddrzxaibpto2^28
 @i^6362^Raw Rockscale Cod
 @i^6444^Forked Tongue
 @i^7067^Elemental Earth
+@i^7098^Splintered Tusk
+@i^7099^Severed Pincer
+@i^7100^Sticky Ichor
+@i^7101^Bug Eye
 @i^7847^Buzzard Gizzard
 @i^7909^Aquamarine
 @i^7912^Solid Stone
@@ -282,10 +301,17 @@ GoldScout-export 5^ddrzxaibpto2^28
 @i^274657^Hydra Leather Legs
 @i^277112^Zum'rah's Head
 @i^279601^Intact Raptor Hide
+@q^117^1:0:0
 @q^770^0:15:0
+@q^1366^0:4:0
+@q^1378^0:4:0
+@q^1380^0:4:0
 @q^1520^0:15:0
+@q^2210^0:4:0
 @q^2459^1:0:0
+@q^2652^0:4:0
 @q^3187^2:2:0
+@q^3363^0:4:0
 @q^3667^1:7:1
 @q^3671^0:15:0
 @q^3676^0:15:0
@@ -325,6 +351,10 @@ GoldScout-export 5^ddrzxaibpto2^28
 @q^4628^1:12:0
 @q^4784^0:15:0
 @q^4847^1:12:0
+@q^4862^1:12:0
+@q^4865^0:15:0
+@q^4867^0:15:0
+@q^4905^1:12:0
 @q^5116^1:7:1
 @q^5117^1:12:0
 @q^5516^0:2:0
@@ -345,6 +375,10 @@ GoldScout-export 5^ddrzxaibpto2^28
 @q^6362^1:7:1
 @q^6444^0:15:0
 @q^7067^1:7:1
+@q^7098^0:15:0
+@q^7099^0:15:0
+@q^7100^0:15:0
+@q^7101^0:15:0
 @q^7847^1:12:0
 @q^7909^2:7:1
 @q^7912^1:7:1
@@ -413,6 +447,7 @@ GoldScout-export 5^ddrzxaibpto2^28
 @q^274657^3:4:0
 @q^277112^1:12:0
 @q^279601^1:12:0
+@m^1411^Durotar
 @m^1413^The Barrens
 @m^1418^Badlands
 @m^1424^Hillsbrad Foothills
@@ -1312,6 +1347,10 @@ GoldScout-export 5^ddrzxaibpto2^28
 @a^2928^208:1
 @a^2929^191:1,211:1,233:1
 @a^2944^226:1
+@a^3098^248:10,269:1
+@a^3101^229:1
+@a^3124^229:3,248:2,249:5,268:1
+@a^3281^268:1
 @a^4323^248:1,287:1
 @a^4324^268:1
 @a^4328^267:4
