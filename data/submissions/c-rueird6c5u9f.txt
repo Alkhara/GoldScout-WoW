@@ -1,4 +1,4 @@
-GoldScout-export 5^rueird6c5u9f^11
+GoldScout-export 5^rueird6c5u9f^12
 2253^1^0^36^36^1416^0.4844^0.5757^1^Tosco Aplastacresta^7441:1:1^
 2254^17^0^36^37^1416^0.4344^0.4679^17^Aplastador Aplastacresta^3771:1:1,3785:1:1,3864:1:1,4306:6:18,6413:1:1^
 2255^2^0^37^37^1416^0.4562^0.4672^2^Mago Aplastacresta^4338:1:3^
@@ -22,6 +22,10 @@ GoldScout-export 5^rueird6c5u9f^11
 4860^3^0^0^0^0^0.0000^0.0000^0^^4554:1:1,7912:1:2,8150:1:1^
 4861^2^0^0^0^0^0.0000^0.0000^0^^5637:1:1,11392:1:1,11393:1:1,11394:1:1^
 4863^2^0^0^0^0^0.0000^0.0000^0^^1701:1:1,1702:1:1,11386:2:2^
+5292^1^0^44^44^1444^0.5579^0.5843^1^Yeti Cicatriz Feral^^
+5300^23^0^43^44^1444^0.5640^0.6241^23^Hipogrifo Plumavieja^4589:7:7,4590:2:2,5117:2:2,5829:3:3,11417:5:5,11418:4:4,15287:1:1^
+5304^18^0^44^45^1444^0.5496^0.6558^18^Alacervo Plumavieja^4590:3:3,5117:6:6,5829:5:5,11417:3:3,11418:5:5,14258:1:1^
+5305^3^0^46^46^1444^0.5475^0.6656^3^Asaltacielo Plumavieja^4590:1:1,5829:1:1,11418:1:1^
 5422^1^0^41^41^1446^0.5504^0.3477^1^Cazador escórpido^^
 5615^9^0^43^44^1446^0.5934^0.3775^9^Pícaro Vagayermo^4306:1:1,4338:4:6,8483:3:3^
 5616^10^0^40^41^1446^0.6391^0.3057^10^Ladrona Deambuladora^3927:1:1,4338:2:3,8398:1:1,8483:2:2,264215:1:1^
@@ -123,12 +127,16 @@ GoldScout-export 5^rueird6c5u9f^11
 @i^4544^Pan de especias de Mulgore
 @i^4552^Trozo de piedra lisa
 @i^4554^Piedra pulida lustrosa
+@i^4589^Pluma elegante larga
+@i^4590^Pico amarillo curvo
 @i^4599^Filete de jamón curado
 @i^4601^Pan de plátano tierno
 @i^4636^Arcón de hierro fuerte
 @i^5116^Pluma de cola larga
+@i^5117^Péndola vibrante
 @i^5431^Petaca vacía
 @i^5637^Colmillo grande
+@i^5829^Pico afilado
 @i^6300^Trozo de coraza
 @i^6302^Ala de insecto delicada
 @i^6308^Siluro mostacherizo crudo
@@ -178,13 +186,17 @@ GoldScout-export 5^rueird6c5u9f^11
 @i^11392^Garra de murciélago cortada
 @i^11393^Calavera de murciélago pequeño
 @i^11394^Corazón de murciélago
+@i^11417^Ala emplumada
+@i^11418^Hueso hueco de ala
 @i^11973^Eslabón de hematites de la bestia
 @i^12203^Carne de lobo rojo
 @i^13100^Botas de Furen
 @i^13754^Vigorpez lustroso crudo
+@i^14258^Cordón de tejido de sangre del anciano
 @i^14467^Patrón: toga de tejido de Escarcha
 @i^14774^Corona de devastador
 @i^15234^Guadaña superior de la bestia
+@i^15287^Arco de cruzado de defensa
 @i^19936^Caparazón de escórpido seco
 @i^19938^Pata de escórpido pesada
 @i^21150^Valija reforzada con hierro
@@ -244,12 +256,16 @@ GoldScout-export 5^rueird6c5u9f^11
 @q^4544^1:0:0
 @q^4552^0:15:0
 @q^4554^0:15:0
+@q^4589^1:7:1
+@q^4590^0:15:0
 @q^4599^1:0:0
 @q^4601^1:0:0
 @q^4636^2:15:0
 @q^5116^1:7:1
+@q^5117^1:12:0
 @q^5431^0:15:0
 @q^5637^1:7:1
+@q^5829^0:15:0
 @q^6300^0:15:0
 @q^6302^0:15:0
 @q^6308^1:7:1
@@ -299,13 +315,17 @@ GoldScout-export 5^rueird6c5u9f^11
 @q^11392^0:15:0
 @q^11393^0:15:0
 @q^11394^0:15:0
+@q^11417^0:15:0
+@q^11418^0:15:0
 @q^11973^2:4:0
 @q^12203^1:7:1
 @q^13100^3:4:0
 @q^13754^1:7:1
+@q^14258^2:4:0
 @q^14467^2:9:0
 @q^14774^2:4:0
 @q^15234^2:2:0
+@q^15287^2:2:0
 @q^19936^0:15:0
 @q^19938^0:15:0
 @q^21150^1:15:0
@@ -329,6 +349,7 @@ GoldScout-export 5^rueird6c5u9f^11
 @q^277112^1:12:0
 @m^1416^Montañas de Alterac
 @m^1418^Tierras Inhóspitas
+@m^1444^Feralas
 @m^1446^Tanaris
 @m^2548^Claros del Río
 @c^118^
@@ -509,6 +530,10 @@ GoldScout-export 5^rueird6c5u9f^11
 @a^4846^48:2,67:1
 @a^4851^67:1
 @a^4856^67:1
+@a^5292^231:1
+@a^5300^230:1,251:22
+@a^5304^250:2,251:6,270:6,271:4
+@a^5305^270:1,271:2
 @a^5422^131:1
 @a^5615^151:7,152:2
 @a^5616^92:1,112:2,132:5,133:2

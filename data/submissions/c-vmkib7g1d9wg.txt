@@ -1,4 +1,4 @@
-GoldScout-export 5^vmkib7g1d9wg^5
+GoldScout-export 5^vmkib7g1d9wg^6
 2347^1^0^40^40^1424^0.8080^0.3319^1^Wild Gryphon^213526:1:1^
 2354^1^0^23^23^1424^0.4910^0.4674^1^Vicious Gray Bear^3730:1:1,11407:1:1^
 2558^0^3^36^37^0^0.0000^0.0000^0^Witherbark Berserker^^5427:1:1
@@ -23,18 +23,26 @@ GoldScout-export 5^vmkib7g1d9wg^5
 256798^3^6^37^38^2548^0.4655^0.4768^3^Twilight Neophyte^4306:2:4^5427:1:1
 256952^5^5^39^40^2548^0.4619^0.4793^5^Twilight Raider^3671:1:1,4306:1:2,4636:1:1^4601:1:1,5428:2:2
 257017^1^0^37^37^2548^0.4676^0.4807^1^Twilight Worg^^
+258331^2^0^36^37^2548^0.5331^0.7655^2^Young Paletusk^2295:1:1,3403:1:1^
+258573^8^7^36^37^2548^0.5041^0.8046^8^Mudfin Oracle^1645:2:2,4603:1:1,5524:2:2,17058:3:3^
+258574^8^7^37^38^2548^0.5069^0.8034^8^Mudfin Warrior^3864:1:1,5524:1:1,17058:2:2^6362:1:2,16883:1:1
+259046^1^0^38^38^2548^0.5144^0.8221^1^Freshwater Crocolisk^1465:1:1^
 260993^1^0^42^42^2548^0.2732^0.3692^1^Crag'rog^^
 260995^2^1^42^43^2548^0.2737^0.3607^2^Ogre Miner^4338:2:3^5428:1:1
 260996^2^1^42^42^2548^0.2712^0.3568^2^Twilight Subjugator^^
 262037^6^0^37^38^2548^0.6019^0.8508^6^Roosting Duskbat^11393:1:1,11394:1:1^
+@i^1465^Tigerbane
 @i^1529^Jade
+@i^1645^Moonberry Juice
 @i^1688^Long Soft Tail
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
 @i^2289^Scroll of Strength II
+@i^2295^Large Boar Tusk
 @i^2592^Wool Cloth
 @i^3385^Lesser Mana Potion
+@i^3403^Ivory Boar Tusk
 @i^3671^Lifeless Skull
 @i^3730^Big Bear Meat
 @i^3779^Hefty War Axe
@@ -42,6 +50,7 @@ GoldScout-export 5^vmkib7g1d9wg^5
 @i^3787^Stone Club
 @i^3794^Interlaced Bracers
 @i^3812^Double Mail Gloves
+@i^3864^Citrine
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4461^Raptor Hide
@@ -53,12 +62,14 @@ GoldScout-export 5^vmkib7g1d9wg^5
 @i^4583^Thick Furry Mane
 @i^4586^Smooth Raptor Skin
 @i^4601^Soft Banana Bread
+@i^4603^Raw Spotted Yellowtail
 @i^4636^Strong Iron Lockbox
 @i^5113^Mark of the Syndicate
 @i^5116^Long Tail Feather
 @i^5427^Crude Pocket Watch
 @i^5428^An Exotic Cookbook
 @i^5431^Empty Hip Flask
+@i^5524^Thick-shelled Clam
 @i^6362^Raw Rockscale Cod
 @i^6986^Crimson Lotus
 @i^7072^Naga Scale
@@ -74,14 +85,18 @@ GoldScout-export 5^vmkib7g1d9wg^5
 @i^17058^Fish Oil
 @i^17124^Syndicate Emblem
 @i^213526^Hybrid Haunch
+@q^1465^2:2:0
 @q^1529^2:7:1
+@q^1645^1:0:0
 @q^1688^0:15:0
 @q^1707^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
 @q^2289^1:0:0
+@q^2295^0:15:0
 @q^2592^1:7:1
 @q^3385^1:0:0
+@q^3403^0:15:0
 @q^3671^0:15:0
 @q^3730^1:7:1
 @q^3779^0:2:0
@@ -89,6 +104,7 @@ GoldScout-export 5^vmkib7g1d9wg^5
 @q^3787^0:2:0
 @q^3794^0:4:0
 @q^3812^0:4:0
+@q^3864^2:7:1
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4461^1:7:1
@@ -100,12 +116,14 @@ GoldScout-export 5^vmkib7g1d9wg^5
 @q^4583^0:15:0
 @q^4586^0:15:0
 @q^4601^1:0:0
+@q^4603^1:7:1
 @q^4636^2:15:0
 @q^5113^0:15:0
 @q^5116^1:7:1
 @q^5427^0:15:0
 @q^5428^0:15:0
 @q^5431^0:15:0
+@q^5524^1:7:0
 @q^6362^1:7:1
 @q^6986^0:15:0
 @q^7072^1:7:1
@@ -1334,6 +1352,7 @@ GoldScout-export 5^vmkib7g1d9wg^5
 @c^279269^
 @c^279270^
 @c^279271^
+@c^279938^
 @c^279940^
 @c^279941^
 @c^279943^
@@ -1343,10 +1362,12 @@ GoldScout-export 5^vmkib7g1d9wg^5
 @c^279959^
 @c^279961^
 @c^279968^
+@c^279969^
 @c^279972^
 @c^279973^
 @c^279974^
 @c^279978^
+@c^279979^
 @c^279981^
 @c^279982^
 @c^286152^
@@ -1371,6 +1392,10 @@ GoldScout-export 5^vmkib7g1d9wg^5
 @a^256798^189:3
 @a^256952^189:5
 @a^257017^189:1
+@a^258331^310:2
+@a^258573^309:1,310:2,329:2,330:3
+@a^258574^309:1,310:3,329:1,330:3
+@a^259046^330:1
 @a^260993^145:1
 @a^260995^145:2
 @a^260996^145:2

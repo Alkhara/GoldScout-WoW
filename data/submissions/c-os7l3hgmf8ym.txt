@@ -1,4 +1,4 @@
-GoldScout-export 5^os7l3hgmf8ym^3
+GoldScout-export 5^os7l3hgmf8ym^4
 3272^1^0^12^12^1413^0.4693^0.2298^1^Zänker der Kolkar^^
 3379^5^0^10^11^1413^0.4777^0.1907^5^Haudrauf der Burning Blade^2287:1:1,2589:3:5^
 3380^5^0^11^12^1413^0.4789^0.1908^5^Akolyth der Burning Blade^1509:1:1,211786:1:1^
@@ -23,6 +23,12 @@ GoldScout-export 5^os7l3hgmf8ym^3
 3809^3^0^21^22^1440^0.4282^0.6105^3^Ashenvalebär^2940:2:2,3730:2:2,262888:1:1^
 3840^19^0^0^0^0^0.0000^0.0000^0^^1206:1:1,1769:1:1,1790:1:1,1812:1:1,1813:1:1,2216:2:2,2589:1:3,2592:4:6,4537:1:1,5207:1:1,7092:1:1,15211:1:1^
 3986^1^0^25^25^1413^0.4821^0.1917^1^Sarilus Foulborne^1802:1:1,2592:1:2,5537:1:1^
+4012^1^0^21^22^1442^0.4433^0.4569^1^Prachtschwingenflügeldrache^5635:1:1^
+4018^6^0^22^23^1442^0.4466^0.2204^6^Gehörnter Renner^5471:1:1,5566:4:4,5871:3:3^
+4021^1^0^25^25^1442^0.3922^0.1935^1^Ätzblutsaftbestie^1823:1:1^
+4022^2^0^23^23^1442^0.3770^0.4473^2^Harpyie der Blutfurien^2592:1:2^
+4044^2^0^24^24^1442^0.3727^0.4960^2^Geschwärzter Basilisk^11385:1:1^
+4128^1^0^22^22^1413^0.4701^0.7489^1^Fleischreißerpirscher^^
 5048^1^0^0^0^0^0.0000^0.0000^0^^6445:1:1^
 5053^1^0^0^0^0^0.0000^0.0000^0^^2924:1:1,3181:1:3,3401:1:1,6443:1:1^
 5055^6^0^0^0^0^0.0000^0.0000^0^^4604:4:4,4605:2:2,4606:2:2^
@@ -41,6 +47,7 @@ GoldScout-export 5^os7l3hgmf8ym^3
 @i^1812^Kurzstielige Streitaxt
 @i^1813^Gesplitterter Bauernstecken
 @i^1814^Ramponierter Schlaghammer
+@i^1823^Schlägerknüppel
 @i^2079^Sergeants Kriegshammer der Heilung
 @i^2216^Einfacher Rundschild
 @i^2287^Fleischschenkel
@@ -66,11 +73,14 @@ GoldScout-export 5^os7l3hgmf8ym^3
 @i^5124^Kleiner Raptorzahn
 @i^5207^Undurchsichtiger Zauberstab
 @i^5334^99 Jahre alter Portwein
+@i^5471^Hirschfleisch
 @i^5516^Dreschadonfangzahn
 @i^5523^Kleine rankenfüßige Muschel
 @i^5524^Dickschalige Muschel
 @i^5537^Sarilus Foulbornes Kopf
+@i^5566^Zerbrochenes Geweih
 @i^5635^Scharfe Klaue
+@i^5871^Großer Huf
 @i^5970^Schlangen-Handschuhe
 @i^6361^Roher Regenbogenflossenthunfisch
 @i^6443^Deviatbalg
@@ -88,6 +98,7 @@ GoldScout-export 5^os7l3hgmf8ym^3
 @i^7092^Muster: Hände der Dunkelheit
 @i^10441^Leuchtender Splitter
 @i^11039^Formel: Umhang - Schwache Beweglichkeit
+@i^11385^Basiliskenschuppe
 @i^13245^Kreshs Rücken
 @i^14364^Mystikerschuhe
 @i^15211^Militantes Kurzschwert der Beweglichkeit
@@ -105,6 +116,7 @@ GoldScout-export 5^os7l3hgmf8ym^3
 @q^1812^0:2:0
 @q^1813^0:2:0
 @q^1814^0:2:0
+@q^1823^0:2:0
 @q^2079^2:2:0
 @q^2216^0:4:0
 @q^2287^1:0:0
@@ -130,11 +142,14 @@ GoldScout-export 5^os7l3hgmf8ym^3
 @q^5124^0:15:0
 @q^5207^2:2:0
 @q^5334^1:12:0
+@q^5471^1:7:1
 @q^5516^0:2:0
 @q^5523^1:7:0
 @q^5524^1:7:0
 @q^5537^1:12:0
+@q^5566^0:15:0
 @q^5635^1:7:1
+@q^5871^0:15:0
 @q^5970^3:4:0
 @q^6361^1:7:1
 @q^6443^1:12:0
@@ -152,6 +167,7 @@ GoldScout-export 5^os7l3hgmf8ym^3
 @q^7092^2:9:0
 @q^10441^1:12:0
 @q^11039^2:9:0
+@q^11385^0:15:0
 @q^13245^3:4:0
 @q^14364^2:4:0
 @q^15211^2:2:0
@@ -164,6 +180,7 @@ GoldScout-export 5^os7l3hgmf8ym^3
 @m^1413^Das Brachland
 @m^1414^Kalimdor
 @m^1440^Ashenvale
+@m^1442^Steinkrallengebirge
 @c^118^
 @c^724^
 @c^733^
@@ -1418,4 +1435,10 @@ GoldScout-export 5^os7l3hgmf8ym^3
 @a^3750^250:2
 @a^3809^248:3
 @a^3986^69:1
+@a^4012^188:1
+@a^4018^68:2,88:2,89:1,108:1
+@a^4021^67:1
+@a^4022^167:1,187:1
+@a^4044^187:1,207:1
+@a^4128^289:1
 @l^0^deDE
