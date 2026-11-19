@@ -1,4 +1,4 @@
-GoldScout-export 5^t86ydjon7iyb^2
+GoldScout-export 5^t86ydjon7iyb^3
 1527^1^0^8^8^1420^0.6775^0.4280^1^Hungering Dead^^
 1538^3^0^9^10^1420^0.7960^0.2655^3^Scarlet Friar^2589:1:2,3189:1:1^
 1539^2^0^10^11^1420^0.7952^0.2636^2^Scarlet Neophyte^2589:2:4^
@@ -8,13 +8,19 @@ GoldScout-export 5^t86ydjon7iyb^2
 1554^5^0^8^9^1420^0.7820^0.4585^5^Vampiric Duskbat^4865:1:1,6296:2:2,7073:1:1,7074:1:1,12223:3:3^
 1660^2^1^8^8^1420^0.7948^0.2584^2^Scarlet Bodyguard^118:1:1,1425:1:1,2589:1:1^
 1665^1^0^12^12^1420^0.7973^0.2654^1^Captain Melrache^2589:1:2^
+1778^1^0^12^12^1421^0.5108^0.3791^1^Ferocious Grizzled Bear^3173:1:1^
+1797^1^0^12^12^1421^0.5204^0.6201^1^Giant Grizzled Bear^^
+1867^1^2^13^13^1421^0.4977^0.6030^1^Dalaran Apprentice^^4408:1:1
+2384^1^0^24^24^1424^0.5973^0.2076^1^Starving Mountain Lion^^
 @i^118^Minor Healing Potion
 @i^774^Malachite
 @i^1425^Worn Leather Vest
 @i^2589^Linen Cloth
 @i^2672^Stringy Wolf Meat
+@i^3173^Bear Meat
 @i^3189^Wood Chopper
 @i^3300^Rabbit's Foot
+@i^4408^Schematic: Mechanical Squirrel
 @i^4865^Ruined Pelt
 @i^6296^Patch of Bat Hair
 @i^7073^Broken Fang
@@ -25,14 +31,18 @@ GoldScout-export 5^t86ydjon7iyb^2
 @q^1425^0:4:0
 @q^2589^1:7:1
 @q^2672^1:7:1
+@q^3173^1:7:1
 @q^3189^1:2:0
 @q^3300^0:15:0
+@q^4408^2:9:0
 @q^4865^0:15:0
 @q^6296^0:15:0
 @q^7073^0:15:0
 @q^7074^0:15:0
 @q^12223^1:7:1
 @m^1420^Tirisfal Glades
+@m^1421^Silverpine Forest
+@m^1424^Hillsbrad Foothills
 @c^118^
 @c^724^
 @c^733^
@@ -801,4 +811,8 @@ GoldScout-export 5^t86ydjon7iyb^2
 @a^1554^175:1,194:1,195:3
 @a^1660^115:2
 @a^1665^115:1
+@a^1778^150:1
+@a^1797^250:1
+@a^1867^249:1
+@a^2384^91:1
 @l^0^enUS
