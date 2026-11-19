@@ -1,4 +1,4 @@
-GoldScout-export 5^1afqs540bi9q^8
+GoldScout-export 5^1afqs540bi9q^9
 205^12^0^28^29^1431^0.6422^0.4996^12^Nightbane Dark Runner^^
 206^8^0^29^30^1431^0.5860^0.7908^8^Nightbane Vile Fang^1783:2:2,5635:2:2^
 210^5^0^26^27^1431^0.2383^0.3302^5^Bone Chewer^1129:2:2,2592:1:2,3048:1:1,4306:1:2^
@@ -13,8 +13,9 @@ GoldScout-export 5^1afqs540bi9q^8
 681^10^0^30^31^1434^0.3609^0.1310^10^Young Stranglethorn Tiger^1686:5:5,12202:1:1^
 683^10^0^30^31^1434^0.4048^0.1256^10^Young Panther^1686:4:4^
 705^12^0^1^1^1426^0.2898^0.7372^12^Ragged Young Wolf^750:8:8,1378:1:1,2649:1:1,4865:4:4,7073:8:8,7074:6:6^
-708^12^0^3^3^1426^0.2038^0.7306^12^Small Crag Boar^117:5:5,1374:1:1,2653:2:2,3363:1:1,3365:1:1,4865:5:5,7098:3:3^
-724^3^0^2^2^1426^0.2480^0.7302^3^Burly Rockjaw Trogg^2589:1:1,4496:1:1^
+706^14^0^3^4^1426^0.2637^0.7884^14^Frostmane Troll Whelp^117:1:1,159:1:1,1369:2:2,1372:3:3,2589:7:7,2653:1:1,2654:1:1,264356:2:2^
+708^22^0^3^3^1426^0.2128^0.7209^22^Small Crag Boar^117:6:6,1374:1:1,2651:1:1,2653:2:2,3363:1:1,3365:1:1,4865:13:13,7098:6:6^
+724^7^0^2^2^1426^0.2385^0.7282^7^Burly Rockjaw Trogg^117:1:1,2589:3:3,4496:1:1^
 785^1^0^29^29^1431^0.1700^0.3335^1^Skeletal Warder^^
 892^4^0^27^28^1431^0.3459^0.7200^4^Splinter Fist Taskmaster^^
 898^2^0^26^26^1431^0.6124^0.4936^2^Nightbane Worgen^^
@@ -30,12 +31,15 @@ GoldScout-export 5^1afqs540bi9q^8
 2462^6^0^25^25^1431^0.2343^0.3590^6^Flesh Eating Worm^^
 4969^2^0^25^25^1453^0.7358^0.5947^2^Old Town Thug^^
 @i^117^Tough Jerky
+@i^159^Refreshing Spring Water
 @i^422^Dwarven Mild
 @i^750^Tough Wolf Meat
 @i^884^Ghoul Rib
 @i^887^Pound of Flesh
 @i^1129^Ghoul Fang
 @i^1205^Melon Juice
+@i^1369^Ragged Leather Belt
+@i^1372^Ragged Cloak
 @i^1374^Frayed Shoes
 @i^1378^Frayed Pants
 @i^1478^Scroll of Protection II
@@ -52,7 +56,9 @@ GoldScout-export 5^1afqs540bi9q^8
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2649^Flimsy Chain Belt
+@i^2651^Flimsy Chain Bracers
 @i^2653^Flimsy Chain Gloves
+@i^2654^Flimsy Chain Pants
 @i^3048^Lambent Scale Legguards
 @i^3363^Frayed Belt
 @i^3365^Frayed Bracers
@@ -77,13 +83,17 @@ GoldScout-export 5^1afqs540bi9q^8
 @i^248688^Waylaid Crate: Journeyman Textiles
 @i^248689^Waylaid Crate: Journeyman Curiosities
 @i^248694^Waylaid Crate: Expert Curiosities
+@i^264356^Iceclaw Bear Pendant
 @q^117^1:0:0
+@q^159^1:0:0
 @q^422^1:0:0
 @q^750^1:12:0
 @q^884^1:12:0
 @q^887^0:15:0
 @q^1129^1:12:0
 @q^1205^1:0:0
+@q^1369^0:4:0
+@q^1372^0:4:0
 @q^1374^0:4:0
 @q^1378^0:4:0
 @q^1478^1:0:0
@@ -100,7 +110,9 @@ GoldScout-export 5^1afqs540bi9q^8
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2649^0:4:0
+@q^2651^0:4:0
 @q^2653^0:4:0
+@q^2654^0:4:0
 @q^3048^2:4:0
 @q^3363^0:4:0
 @q^3365^0:4:0
@@ -125,6 +137,7 @@ GoldScout-export 5^1afqs540bi9q^8
 @q^248688^1:0:1
 @q^248689^1:0:1
 @q^248694^1:0:1
+@q^264356^1:12:0
 @m^1426^Dun Morogh
 @m^1429^Elwynn Forest
 @m^1431^Duskwood
@@ -868,8 +881,9 @@ GoldScout-export 5^1afqs540bi9q^8
 @a^681^47:8,67:2
 @a^683^47:2,48:7,66:1
 @a^705^285:12
-@a^708^283:2,284:8,304:2
-@a^724^284:2,285:1
+@a^706^305:14
+@a^708^264:4,283:2,284:14,304:2
+@a^724^284:6,285:1
 @a^785^123:1
 @a^892^286:2,287:2
 @a^898^192:2

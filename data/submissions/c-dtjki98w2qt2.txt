@@ -1,4 +1,4 @@
-GoldScout-export 5^dtjki98w2qt2^7
+GoldScout-export 5^dtjki98w2qt2^8
 690^1^0^39^39^1434^0.3692^0.4249^1^Basilisco Ojogélido^1701:1:1,2476:1:1^
 755^6^0^34^35^1435^0.2531^0.4398^6^Rondafango perdido^3771:1:1,3792:1:1,4306:2:3,4338:1:1^
 764^11^0^38^39^1435^0.1492^0.3725^11^Caminalodo^1710:1:1,3817:1:1,4607:1:1,6065:1:1^
@@ -15,12 +15,18 @@ GoldScout-export 5^dtjki98w2qt2^7
 1715^10^0^0^0^0^0.0000^0.0000^0^^422:1:1,2592:3:6,4306:2:4,9822:1:1^
 1716^1^0^0^0^0^0.0000^0.0000^0^^273829:1:1^
 1717^1^0^0^0^0^0.0000^0.0000^0^^1784:1:1,273809:1:1^
+1996^1^0^7^8^1438^0.6423^0.6886^1^Estridador estrígido^6889:1:1,7096:1:1^
+1998^1^0^5^6^1438^0.5740^0.6370^1^Rondador Tejemadera^1476:1:1,5465:1:1^
+2006^1^0^5^5^1438^0.6472^0.6409^1^Ursa Tuercepinos^^
+2022^4^0^5^6^1438^0.5670^0.6800^4^Brezomadera^^
+2042^3^0^5^6^1438^0.5408^0.6333^3^Sable de la Noche^4814:3:3^
 2580^1^0^38^38^1417^0.1499^0.6814^1^Águila ratonera Mesa^5116:1:1,11418:1:1,213544:1:1^
 5043^4^0^20^20^1453^0.5179^0.6888^4^Alborotador Defias^^
 6128^1^0^10^10^1438^0.4729^0.6361^1^Vorlus Pezuñavil^6805:1:1^
 251096^1^0^33^33^1417^0.1490^0.6806^1^Espíritu amargo^^
 272096^3^0^10^11^1438^0.4948^0.4605^3^Tejemadera contaminada^1476:3:3,5465:1:1^
 272116^1^0^12^12^1438^0.5102^0.4300^1^Xethorr el Maldito^281023:1:1^
+275703^2^0^6^7^1438^0.5591^0.6841^2^Brote azotador^286017:2:2^
 @i^422^Cerveza enana
 @i^1205^Zumo de melón
 @i^1476^Miembro de araña partido
@@ -45,11 +51,14 @@ GoldScout-export 5^dtjki98w2qt2^7
 @i^4338^Tela de paño mágico
 @i^4585^Mandíbula de araña chorreando
 @i^4607^Moho de cueva delicado
+@i^4814^Colmillo descolorido
 @i^5116^Pluma de cola larga
 @i^5465^Pata de araña pequeña
 @i^6065^Ensayos sobre convergencia dimensional de Khadgar
 @i^6586^Guantes de exploración del águila
 @i^6805^Cuerno de Vorlus
+@i^6889^Huevo pequeño
+@i^7096^Pluma arrancada
 @i^9822^Manteo durable del hechicero
 @i^10285^Seda de las Sombras
 @i^11418^Hueso hueco de ala
@@ -66,6 +75,7 @@ GoldScout-export 5^dtjki98w2qt2^7
 @i^273829^Ballesta de mano oculta
 @i^274092^Cubertería afilada
 @i^281023^Musgovil maduro
+@i^286017^Fronda húmeda de azotadora
 @q^422^1:0:0
 @q^1205^1:0:0
 @q^1476^0:15:0
@@ -90,11 +100,14 @@ GoldScout-export 5^dtjki98w2qt2^7
 @q^4338^1:7:1
 @q^4585^0:15:0
 @q^4607^1:0:0
+@q^4814^0:15:0
 @q^5116^1:7:1
 @q^5465^1:7:1
 @q^6065^1:12:0
 @q^6586^2:4:0
 @q^6805^1:12:0
+@q^6889^1:7:1
+@q^7096^0:15:0
 @q^9822^2:4:0
 @q^10285^1:7:1
 @q^11418^0:15:0
@@ -111,6 +124,7 @@ GoldScout-export 5^dtjki98w2qt2^7
 @q^273829^3:2:0
 @q^274092^3:2:0
 @q^281023^1:12:0
+@q^286017^1:12:0
 @m^1417^Tierras Altas de Arathi
 @m^1434^Vega de Tuercespina
 @m^1435^Pantano de las Penas
@@ -1449,10 +1463,16 @@ GoldScout-export 5^dtjki98w2qt2^7
 @a^765^121:1,122:1,123:1,142:2,143:1
 @a^766^121:1,122:1
 @a^858^165:1
+@a^1996^272:1
+@a^1998^251:1
+@a^2006^252:1
+@a^2022^270:1,271:2,291:1
+@a^2042^250:2,270:1
 @a^2580^262:1
 @a^5043^270:4
 @a^6128^249:1
 @a^251096^262:1
 @a^272096^169:1,189:2
 @a^272116^170:1
+@a^275703^271:1,291:1
 @l^0^esES

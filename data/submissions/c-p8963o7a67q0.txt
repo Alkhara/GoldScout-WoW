@@ -1,4 +1,4 @@
-GoldScout-export 5^p8963o7a67q0^12
+GoldScout-export 5^p8963o7a67q0^13
 587^4^0^33^34^1434^0.3388^0.1613^4^Guerrier Bloodscalp^1519:1:1,2592:1:1,3901:2:2,3915:1:1,4306:1:1^
 588^14^0^34^35^1434^0.2499^0.1132^14^Eclaireur Bloodscalp^1519:5:5,1708:1:1,2732:1:1,2734:1:1,2738:1:1,2748:1:1,3915:5:5,4306:4:6^
 595^9^0^34^35^1434^0.2570^0.1094^9^Chasseur Bloodscalp^1519:1:1,3771:1:1,3915:3:3,4306:4:7,262889:1:1^
@@ -112,7 +112,7 @@ GoldScout-export 5^p8963o7a67q0^12
 10760^3^0^26^27^1441^0.3411^0.3794^3^Géomancien du Totem sinistre^2592:1:1^
 10761^2^0^28^28^1441^0.3649^0.4065^2^Saccageuse du Totem-sinistre^4306:1:1^
 260429^1^0^39^39^1434^0.4338^0.2042^1^Agent de la KapitalRisk^^
-262397^13^0^36^38^1434^0.2326^0.2644^13^Tirailleur écaille-de-mer^2740:1:1,5524:5:5,17058:7:7^
+262397^34^0^36^38^1434^0.2275^0.2697^34^Tirailleur écaille-de-mer^1645:1:1,2740:1:1,2744:1:1,3800:1:1,4422:1:1,4603:1:1,5524:12:12,17058:13:13,248690:1:1,270305:10:10^
 268623^1^0^23^23^1413^0.4978^0.7799^1^Pilleur indigné^15223:1:1^
 268624^7^0^16^19^1413^0.5002^0.5223^7^Pillard tranchecrin^929:1:1,2589:1:1,2592:1:2,4306:1:1,248702:1:1,277277:4:4^
 269175^1^0^36^38^1434^0.3527^0.2930^1^Herbe carnivore^1708:1:1^
@@ -128,6 +128,7 @@ GoldScout-export 5^p8963o7a67q0^12
 @i^1524^Défense de Skullsplitter
 @i^1532^Tête réduite
 @i^1630^Electro-lanterne cassée
+@i^1645^Jus de baie lunaire
 @i^1686^Moustache à poil dur
 @i^1687^Griffe rétractile
 @i^1688^Longue queue soyeuse
@@ -200,6 +201,7 @@ GoldScout-export 5^p8963o7a67q0^12
 @i^4106^Cristal réduit
 @i^4306^Etoffe de soie
 @i^4338^Etoffe de tisse-mage
+@i^4422^Parchemin d'Endurance III
 @i^4461^Peau de raptor
 @i^4537^Banane de Tel'Abim
 @i^4538^Pastèque claquevigne
@@ -207,6 +209,7 @@ GoldScout-export 5^p8963o7a67q0^12
 @i^4556^Fragment de carapace moucheté
 @i^4586^Peau lisse de raptor
 @i^4599^Jambonneau traité
+@i^4603^Jaune-queue tacheté cru
 @i^4607^Délicieux humus des grottes
 @i^4897^Glande salivaire de faucon-tonnerre
 @i^4898^Glande d'éclair
@@ -292,6 +295,7 @@ GoldScout-export 5^p8963o7a67q0^12
 @i^248709^Caisse détournée : lingots d'expert
 @i^251457^Plans : lance en acier
 @i^262889^Commission d'expert scellée
+@i^270305^Trident d'écaille-de-mer
 @i^277277^Parure d'Olgra
 @q^729^1:7:1
 @q^770^0:15:0
@@ -305,6 +309,7 @@ GoldScout-export 5^p8963o7a67q0^12
 @q^1524^1:12:0
 @q^1532^1:12:0
 @q^1630^0:15:0
+@q^1645^1:0:0
 @q^1686^0:15:0
 @q^1687^0:15:0
 @q^1688^0:15:0
@@ -377,6 +382,7 @@ GoldScout-export 5^p8963o7a67q0^12
 @q^4106^1:12:0
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4422^1:0:0
 @q^4461^1:7:1
 @q^4537^1:0:0
 @q^4538^1:0:0
@@ -384,6 +390,7 @@ GoldScout-export 5^p8963o7a67q0^12
 @q^4556^0:15:0
 @q^4586^0:15:0
 @q^4599^1:0:0
+@q^4603^1:7:1
 @q^4607^1:0:0
 @q^4897^1:12:0
 @q^4898^1:12:0
@@ -469,6 +476,7 @@ GoldScout-export 5^p8963o7a67q0^12
 @q^248709^2:0:1
 @q^251457^2:9:0
 @q^262889^3:0:0
+@q^270305^1:12:0
 @q^277277^1:12:0
 @m^1413^Les Tarides
 @m^1420^Clairières de Tirisfal
@@ -572,7 +580,7 @@ GoldScout-export 5^p8963o7a67q0^12
 @a^10760^146:3
 @a^10761^146:1,167:1
 @a^260429^88:1
-@a^262397^104:12,105:1
+@a^262397^84:1,104:32,105:1
 @a^268623^309:1
 @a^268624^209:2,210:4,230:1
 @a^269175^107:1
