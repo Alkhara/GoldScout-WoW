@@ -403,4 +403,5 @@ ns.AddLocale("zhTW", {
   ["No Blackwater prices yet: GoldScout Companion saves them every hour, or scan at a Blackwater auction house."] = "還沒有黑水價格：GoldScout Companion 每小時會儲存，或在黑水拍賣場掃描。",
   ["No flips right now: nothing at Blackwater sells for at least 15% more on your auction house after the cut."] = "目前沒有可轉賣的：黑水沒有東西在扣除手續費後能在你的拍賣場多賣 15% 以上。",
   ["  /gscout farm | craft | flip - open a tab"] = "  /gscout farm | craft | flip - 開啟分頁",
+  ["Working out the best farms..."] = "正在找出最佳的刷錢地點……",
 })

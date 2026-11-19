@@ -379,6 +379,20 @@ end
 -- so the waypoint still leads to that mob.
 local UNKNOWN_ZONE = L["where players loot it"]
 
+-- Building the Farm list can take longer than WoW lets one script run on a slow PC ("script ran too long",
+-- wherever it happens to be). So the window builds it a few milliseconds per frame (Engine:FarmsInSteps):
+-- the build calls Yield() in its long loops, which hands the frame back once this step has used
+-- Engine.STEP_MS. Outside such a build (Engine:Farms, the tests) Yield does nothing.
+Engine.STEP_MS = 8
+local clock = debugprofilestop or function() return (GetTime and GetTime() or 0) * 1000 end
+local stepStart
+
+local function Yield()
+  if stepStart and clock() - stepStart >= Engine.STEP_MS then
+    coroutine.yield()
+  end
+end
+
 local function ShareHunts(rows)
   local places = {}
   for _, row in ipairs(rows) do
@@ -393,6 +407,7 @@ local function ShareHunts(rows)
     end
   end
   for _, list in pairs(places) do
+    Yield()
     if #list > 1 then
       local npcs, own = {}, {}
       for i, row in ipairs(list) do
@@ -861,6 +876,7 @@ local function BuildFarms(self)
 
   -- Specific mobs with valuable drops
   for _, drop in ipairs(ns.MOB_DROPS) do
+    Yield()
     if InWindow(drop.min, drop.max) and (not drop.faction or drop.faction == faction) then
       local net, listed, age = NetPrice(drop.item)
       local chance, seenRate, seenTrials = BlendedChance(drop.chance, drop.npc, drop.item, false)
@@ -928,6 +944,7 @@ local function BuildFarms(self)
     mobs[npcID] = true
   end
   for npcID in pairs(mobs) do
+    Yield()
     local own, shared = ns.Learn:Entry(npcID), ns.COMMUNITY[npcID]
     local kills = ((own and own.k) or 0) + ((shared and shared.k) or 0)
     if kills >= LEARNED_MIN_KILLS and not ns.FARMS_BY_NPC[npcID] then
@@ -1084,6 +1101,7 @@ local function BuildFarms(self)
       end
     end
     for itemID in pairs(ns.Prices:ItemIDs()) do
+      Yield()
       if not covered[itemID] and not gathered[itemID] then
         local facts = ReagentFacts(itemID)
         local itemLevel = facts and facts.level
@@ -1140,6 +1158,7 @@ local function BuildFarms(self)
   -- Mark (and optionally hide) farms by whether their mobs still give experience.
   local shown = {}
   for _, row in ipairs(rows) do
+    Yield()
     row.xp = XpStatus(level, row.lvl)
     if not (settings.xpOnly and row.xp == "none") then
       shown[#shown + 1] = row
@@ -1168,6 +1187,38 @@ function Engine:Farms()
   ns.CacheLootValues(false)
   sightings = nil
   return shown
+end
+
+-- The Farm list built a step at a time: returns step(), which does up to STEP_MS of the work each time it's
+-- called (once a frame) and returns true and the rows once they're done, else false. An error ends the build
+-- (reported like any other) with no rows.
+function Engine:FarmsInSteps()
+  local thread = coroutine.create(function()
+    ns.CacheLootValues(true, true)    -- kept across frames until the build ends
+    sightings = nil
+    local shown = BuildFarms(self)
+    ns.CacheLootValues(false)
+    sightings = nil
+    return shown
+  end)
+  return function()
+    stepStart = clock()
+    local ok, result = coroutine.resume(thread)
+    stepStart = nil
+    if not ok then
+      ns.CacheLootValues(false)
+      sightings = nil
+      local handler = geterrorhandler and geterrorhandler()
+      if handler then
+        handler(result)
+      end
+      return true, {}
+    end
+    if coroutine.status(thread) == "dead" then
+      return true, result
+    end
+    return false
+  end
 end
 
 -- The Farm tab's By mob view: the same farms, one row per mob you'd fight,

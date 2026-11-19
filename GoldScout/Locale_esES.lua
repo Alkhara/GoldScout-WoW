@@ -402,6 +402,7 @@ local strings = {
   ["No Blackwater prices yet: GoldScout Companion saves them every hour, or scan at a Blackwater auction house."] = "Aún no hay precios de Aguasnegras: GoldScout Companion los guarda cada hora, o escanea en una casa de subastas de Aguasnegras.",
   ["No flips right now: nothing at Blackwater sells for at least 15% more on your auction house after the cut."] = "No hay reventas ahora: nada de Aguasnegras se vende al menos un 15 % más caro en tu casa de subastas tras la comisión.",
   ["  /gscout farm | craft | flip - open a tab"] = "  /gscout farm | craft | flip - abrir una pestaña",
+  ["Working out the best farms..."] = "Calculando las mejores zonas de farmeo...",
 }
 ns.AddLocale("esES", strings)
 ns.AddLocale("esMX", strings)

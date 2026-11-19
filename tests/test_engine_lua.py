@@ -215,6 +215,15 @@ class FarmRulesTests(unittest.TestCase):
         self.assertEqual(sorted(hunts["Coyote"].npcs.keys()), [833, 1109])
         self.assertEqual(sorted(hunts["Far Coyote"].npcs.keys()), [1110])
 
+    def test_item_names_stay_once_the_game_drops_the_item(self):
+        # The client's item cache drops items while GoldScout looks at thousands; names flickered to "Item 3730".
+        self.item(3730, name="Big Bear Meat")
+        self.assertEqual(self.ns.ItemName(3730), "Big Bear Meat")
+        self.fake["items"][3730] = None                      # the client forgot it
+        self.assertEqual(self.ns.ItemName(3730), "Big Bear Meat")
+        self.assertEqual(self.ns.ItemQuality(3730), 1)
+        self.assertEqual(self.ns.ItemName(99999), "Item 99999")   # never seen: still asks the game
+
     def test_learned_leaves_out_junk(self):
         self.item(4001, ilvl=22, quality=0)                        # gray
         self.item(4002, ilvl=22, class_=0, reagent=False, spell=True)  # food/scroll
@@ -504,6 +513,49 @@ class AllLootTests(unittest.TestCase):
         row = self.row()
         self.assertEqual(row.otherLootKills, 15)
         self.assertAlmostEqual(row.otherLoot, (50 * 15 + 950 * 6) / 15)
+
+
+@unittest.skipIf(lua51 is None, "lupa is not installed")
+class StepTests(unittest.TestCase):
+    """The window builds the Farm list a step per frame, so a slow PC never hits "script ran too long"."""
+    setUp = FarmRulesTests.setUp
+    run_lua, run_file, item, drops = (FarmRulesTests.run_lua, FarmRulesTests.run_file, FarmRulesTests.item,
+                                      FarmRulesTests.drops)
+
+    def farm_data(self):
+        for npc in range(3000, 3040):
+            self.item(5000 + npc, price=10000 + npc)
+            self.drops(npc, 30, {5000 + npc: 6}, name="Mob %d" % npc)
+
+    def test_steps_end_with_the_same_list(self):
+        self.farm_data()
+        whole = [(row.kind, row.item, row.hour) for row in self.ns.Engine.Farms(self.ns.Engine).values()]
+        self.ns.Engine.STEP_MS = -1          # hand the frame back at every chance
+        step = self.ns.Engine.FarmsInSteps(self.ns.Engine)
+        steps, done, rows = 0, False, None
+        while not done:
+            steps += 1
+            result = step()
+            done, rows = result if isinstance(result, tuple) else (result, None)
+            self.assertLess(steps, 10000)
+        self.assertGreater(steps, 40)        # it yielded in its loops, not just once
+        self.assertEqual([(row.kind, row.item, row.hour) for row in rows.values()], whole)
+        self.assertIsNone(self.ns.BuildCache())   # the cache ends with the build
+
+    def test_an_error_ends_the_build_without_rows(self):
+        self.farm_data()
+        reported = []
+        self.lua.globals().geterrorhandler = lambda: (lambda message: reported.append(str(message)))
+        self.run_lua("local ns = ...; ns.Learn.Evidence = function() error('broken') end")
+        step = self.ns.Engine.FarmsInSteps(self.ns.Engine)
+        result = step()
+        while result is False or (isinstance(result, tuple) and not result[0]):
+            result = step()
+        done, rows = result
+        self.assertTrue(done)
+        self.assertEqual(len(list(rows.values())), 0)
+        self.assertTrue(any("broken" in message for message in reported))
+        self.assertIsNone(self.ns.BuildCache())
 
 
 @unittest.skipIf(lua51 is None, "lupa is not installed")

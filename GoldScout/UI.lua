@@ -1281,6 +1281,8 @@ function UI:Render()
         .. "nothing at Blackwater sells for at least 15% more on your auction house after the cut."])
     elseif self:FarmView() == "wanted" then
       f.emptyText:SetText(L["Every mob players have recorded near your level has solid drop rates. Try 'All levels'."])
+    elseif self.farmStep and not self.farmRows then
+      f.emptyText:SetText(L["Working out the best farms..."])
     else
       f.emptyText:SetText(L["Nothing in range for your level. Try 'All levels'."])
     end
@@ -1374,9 +1376,51 @@ function UI:Refresh()
     self.allRows = ns.Engine:WantedMobs()
     self.data = self.allRows
   else
-    self.allRows = ns.Engine:Farms()
+    -- The last list shows at once; the new one is built a step per frame (Engine:FarmsInSteps), so even a
+    -- slow PC never runs one long script, and replaces it when it's done.
+    self.allRows = self.farmRows or {}
     self:Regroup()
+    self:BuildFarms()
   end
+  self:ShowData()
+end
+
+-- Builds the Farm list in steps, one per frame, then shows it if the Farm tab still wants it. Asked again
+-- while building, it builds once more when this one ends, so the list always ends up current.
+local farmBuilder = CreateFrame("Frame")
+farmBuilder:Hide()
+
+function UI:BuildFarms()
+  if self.farmStep then
+    self.farmAgain = true
+    return
+  end
+  self.farmStep = ns.Engine:FarmsInSteps()
+  farmBuilder:Show()
+end
+
+farmBuilder:SetScript("OnUpdate", function(builder)
+  local done, rows = UI.farmStep()
+  if not done then
+    return
+  end
+  UI.farmStep = nil
+  UI.farmRows = rows
+  builder:Hide()
+  local f = UI.frame
+  if f and f:IsShown() and UI.tab == "farm" and UI:FarmView() ~= "wanted" then
+    UI.allRows = rows
+    UI:Regroup()
+    UI:ShowData()
+  end
+  if UI.farmAgain then
+    UI.farmAgain = nil
+    UI:BuildFarms()
+  end
+end)
+
+-- Shows self.data: the page, the header and info lines, the companion tip and the rows.
+function UI:ShowData()
   local maxOffset = math.max(0, #self.data - VISIBLE_ROWS)
   self.offset = math.min(self.offset, maxOffset)
   self:UpdateHeaderText()

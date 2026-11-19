@@ -402,4 +402,5 @@ ns.AddLocale("deDE", {
   ["No Blackwater prices yet: GoldScout Companion saves them every hour, or scan at a Blackwater auction house."] = "Noch keine Schwarzwasser-Preise: GoldScout Companion speichert sie stündlich, oder scanne in einem Schwarzwasser-Auktionshaus.",
   ["No flips right now: nothing at Blackwater sells for at least 15% more on your auction house after the cut."] = "Gerade kein Handel: nichts von Schwarzwasser bringt in deinem Auktionshaus nach Abzug mindestens 15 % mehr.",
   ["  /gscout farm | craft | flip - open a tab"] = "  /gscout farm | craft | flip - einen Reiter öffnen",
+  ["Working out the best farms..."] = "Die besten Farmen werden ermittelt ...",
 })

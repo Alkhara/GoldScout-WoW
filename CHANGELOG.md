@@ -7,6 +7,9 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- **No more "script ran too long" from the Farm tab:** with over 2,400 mobs in the community data, building the Farm list could still take longer on a slower PC than WoW lets one script run. It's now built a few milliseconds at a time over a few frames; the list you last saw stays up until the new one is ready.
+- **Item names no longer turn into "Item 1234":** the game forgets items again while GoldScout looks at thousands of them, so names could flicker and then stay as numbers. GoldScout now remembers each item's name and details for the rest of your session.
+
 ## v0.12.32
 
 - **Flip tab: buy at Blackwater, sell on your auction house.** The new tab lists items that are cheap on your realm's Blackwater (goblin) auction house and sell for more on your faction's, with the profit each after the cut, the margin, and how many are listed on both. It needs prices for both auction houses: GoldScout Companion saves them every hour, or scan at each. `/gscout flip` opens it.

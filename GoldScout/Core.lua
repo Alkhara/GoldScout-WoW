@@ -6,7 +6,29 @@ ns.ADDON_NAME = ADDON_NAME
 ns.AH_CUT = 0.95 -- you keep 95% of a sale after the auction house cut
 
 -- Forever runs on the modern client, where item lookups live in C_Item.
-ns.GetItemInfo = (C_Item and C_Item.GetItemInfo) or GetItemInfo
+local RawGetItemInfo = (C_Item and C_Item.GetItemInfo) or GetItemInfo
+
+-- What the game said about each item, kept for the session. The client's own item cache is small and drops
+-- items again while GoldScout looks at thousands (the Farm list does), so names flickered back to "Item 1234"
+-- and, once an item's few re-requests (ns.RequestItem) were spent, stayed that way. An item's name,
+-- quality, vendor price and so on don't change during a session.
+local itemInfo = {}
+
+local function Pack(...)
+  return { n = select("#", ...), ... }
+end
+
+function ns.GetItemInfo(item)
+  local known = itemInfo[item]
+  if known then
+    return unpack(known, 1, known.n)
+  end
+  local info = Pack(RawGetItemInfo(item))
+  if info[1] ~= nil then
+    itemInfo[item] = info
+  end
+  return unpack(info, 1, info.n)
+end
 ns.GetItemInfoInstant = (C_Item and C_Item.GetItemInfoInstant) or GetItemInfoInstant
 
 local DEFAULT_SETTINGS = {
@@ -349,20 +371,25 @@ end
 -- frame it started in, so an error mid-build can't leave stale values behind.
 local lootValues, lootValuesTime, marketKey
 
-function ns.CacheLootValues(on)
-  lootValues, lootValuesTime, marketKey = on and {} or nil, on and GetTime() or nil, nil
+-- across: the build runs over several frames (Engine:FarmsInSteps), so the cache lasts until it's turned off.
+function ns.CacheLootValues(on, across)
+  lootValues, lootValuesTime, marketKey = on and {} or nil, on and (across and true or GetTime()) or nil, nil
+end
+
+local function CacheCurrent()
+  return lootValues ~= nil and (lootValuesTime == true or lootValuesTime == GetTime())
 end
 
 -- While a Farm list build runs: a table other modules can keep answers in for the rest of the build (string
 -- keys; item values use the number keys). nil otherwise.
 function ns.BuildCache()
-  if lootValues and lootValuesTime == GetTime() then
+  if CacheCurrent() then
     return lootValues
   end
 end
 
 function ns.LootValue(itemID, capped)
-  if lootValues and lootValuesTime == GetTime() then
+  if CacheCurrent() then
     local key = capped and -itemID or itemID
     local hit = lootValues[key]
     if not hit then
@@ -428,7 +455,7 @@ end
 
 -- Each realm and faction has its own auction house, so prices are stored per market.
 function ns.MarketKey()
-  if marketKey and lootValues and lootValuesTime == GetTime() then
+  if marketKey and CacheCurrent() then
     return marketKey   -- every price lookup asks; during a Farm list build it can't change
   end
   local realm = (GetNormalizedRealmName and GetNormalizedRealmName()) or GetRealmName() or "Unknown"

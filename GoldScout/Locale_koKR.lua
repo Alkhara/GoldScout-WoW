@@ -403,4 +403,5 @@ ns.AddLocale("koKR", {
   ["No Blackwater prices yet: GoldScout Companion saves them every hour, or scan at a Blackwater auction house."] = "아직 검은바다 가격이 없습니다: GoldScout Companion이 매시간 저장하거나, 검은바다 경매장에서 검색하세요.",
   ["No flips right now: nothing at Blackwater sells for at least 15% more on your auction house after the cut."] = "지금은 되팔 것이 없습니다: 수수료를 뗀 뒤 내 경매장에서 15% 이상 더 비싸게 팔리는 검은바다 물건이 없습니다.",
   ["  /gscout farm | craft | flip - open a tab"] = "  /gscout farm | craft | flip - 탭 열기",
+  ["Working out the best farms..."] = "최고의 파밍 장소를 찾는 중...",
 })
