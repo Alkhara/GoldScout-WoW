@@ -1,4 +1,8 @@
-GoldScout-export 5^gk7uvc0r09n0^8
+GoldScout-export 5^gk7uvc0r09n0^9
+2269^23^0^26^27^1424^0.2928^0.5571^23^Hillsbrad Miner^422:2:2,929:1:1,2592:2:3,2838:1:3,4306:9:16,7127:10:10^
+2270^2^0^27^28^1424^0.2661^0.5900^2^Hillsbrad Sentry^4306:1:1^
+2450^1^0^29^29^1424^0.3089^0.5362^1^Miner Hackett^^
+2503^3^0^27^28^1424^0.2904^0.5720^3^Hillsbrad Foreman^4306:1:2^
 2529^1^0^0^0^0^0.0000^0.0000^0^^2220:1:1^
 3240^5^0^18^19^1413^0.4376^0.5083^5^Stormsnout^4895:1:1,5128:1:1,5143:3:3,5470:2:2,14131:1:1^
 3241^19^0^15^16^1413^0.4532^0.1494^19^Savannah Patriarch^3308:1:1,4813:1:1,4893:4:4,5134:6:6,5635:2:2,269715:6:6^
@@ -73,6 +77,8 @@ GoldScout-export 5^gk7uvc0r09n0^8
 4002^3^0^22^23^1442^0.7181^0.6050^3^Windshear Stonecutter^^
 4003^13^0^20^21^1442^0.7312^0.5991^13^Windshear Geomancer^1819:1:1,2589:3:8,2592:4:7,4537:1:1,7126:5:5^
 4004^4^0^21^22^1442^0.7251^0.6035^4^Windshear Overlord^2589:1:3,2592:1:2,7126:1:1^
+4013^1^0^24^24^1442^0.5354^0.3797^1^Pridewing Skyhunter^^
+4015^1^0^25^25^1442^0.5309^0.3520^1^Pridewing Patriarch^9793:1:1^
 4127^2^0^15^16^1413^0.5617^0.1592^2^Hecklefang Hyena^^
 4274^1^0^0^0^0^0.0000^0.0000^0^^6340:1:1^
 4275^2^0^0^0^0^0.0000^0.0000^0^^3385:1:3,5442:1:1,6324:1:1,6392:1:1^
@@ -100,6 +106,7 @@ GoldScout-export 5^gk7uvc0r09n0^8
 267308^3^0^18^19^1413^0.5788^0.2628^3^Razormane Flesheater^2589:2:4^
 267314^5^0^18^19^1413^0.5791^0.2626^5^Razormane Berserker^^
 @i^414^Dalaran Sharp
+@i^422^Dwarven Mild
 @i^818^Tigerseye
 @i^858^Lesser Healing Potion
 @i^929^Healing Potion
@@ -137,6 +144,7 @@ GoldScout-export 5^gk7uvc0r09n0^8
 @i^2780^Light Hunting Bow
 @i^2781^Dirty Blunderbuss
 @i^2782^Mishandled Recurve Bow
+@i^2838^Heavy Stone
 @i^2882^Plans: Silvered Bronze Shoulders
 @i^2924^Crocolisk Meat
 @i^3012^Scroll of Agility
@@ -215,9 +223,11 @@ GoldScout-export 5^gk7uvc0r09n0^8
 @i^7091^Pattern: Truefaith Gloves
 @i^7119^Twitching Antenna
 @i^7126^Smoky Iron Ingot
+@i^7127^Powdered Azurite
 @i^9738^Gem of Cobrahn
 @i^9768^Greenweave Bracers of the Sorcerer
 @i^9770^Greenweave Cloak of the Wolf
+@i^9793^Ivycloth Bracelets of the Owl
 @i^10338^Fresh Zhevra Carcass
 @i^10441^Glowing Shard
 @i^14025^Mystic's Belt
@@ -250,6 +260,7 @@ GoldScout-export 5^gk7uvc0r09n0^8
 @i^276070^Chol'aruk's Head
 @i^285330^Signet of the Zhevra
 @q^414^1:0:0
+@q^422^1:0:0
 @q^818^2:7:1
 @q^858^1:0:0
 @q^929^1:0:0
@@ -287,6 +298,7 @@ GoldScout-export 5^gk7uvc0r09n0^8
 @q^2780^0:2:0
 @q^2781^0:2:0
 @q^2782^0:2:0
+@q^2838^1:7:1
 @q^2882^2:9:0
 @q^2924^1:7:1
 @q^3012^1:0:0
@@ -365,9 +377,11 @@ GoldScout-export 5^gk7uvc0r09n0^8
 @q^7091^2:9:0
 @q^7119^1:12:0
 @q^7126^1:12:0
+@q^7127^1:0:0
 @q^9738^1:12:0
 @q^9768^2:4:0
 @q^9770^2:4:0
+@q^9793^2:4:0
 @q^10338^1:12:0
 @q^10441^1:12:0
 @q^14025^2:4:0
@@ -401,6 +415,7 @@ GoldScout-export 5^gk7uvc0r09n0^8
 @q^285330^3:4:0
 @m^1413^The Barrens
 @m^1414^Kalimdor
+@m^1424^Hillsbrad Foothills
 @m^1442^Stonetalon Mountains
 @c^2300^
 @c^2302^
@@ -1752,6 +1767,10 @@ GoldScout-export 5^gk7uvc0r09n0^8
 @c^285276^
 @c^285277^
 @c^285278^
+@a^2269^205:6,206:6,225:8,226:3
+@a^2270^225:2
+@a^2450^206:1
+@a^2503^205:1,225:2
 @a^3240^188:2,208:1,209:1,229:1
 @a^3241^48:3,49:9,68:7
 @a^3242^149:1
@@ -1803,6 +1822,8 @@ GoldScout-export 5^gk7uvc0r09n0^8
 @a^4002^254:3
 @a^4003^234:7,254:6
 @a^4004^234:1,254:3
+@a^4013^150:1
+@a^4015^150:1
 @a^4127^50:1,71:1
 @a^5766^132:3
 @a^5780^210:2

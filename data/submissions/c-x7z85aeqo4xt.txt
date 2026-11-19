@@ -1,4 +1,4 @@
-GoldScout-export 5^x7z85aeqo4xt^9
+GoldScout-export 5^x7z85aeqo4xt^10
 595^1^0^35^35^1434^0.2302^0.1205^1^Bloodscalp Hunter^^
 701^2^0^35^35^1434^0.2532^0.1143^2^Bloodscalp Mystic^4306:1:1^
 873^1^0^37^37^1434^0.2484^0.2318^1^Saltscale Oracle^5796:1:1^
@@ -38,9 +38,9 @@ GoldScout-export 5^x7z85aeqo4xt^9
 2611^1^0^42^42^1417^0.4109^0.5439^1^Fozruk^4087:1:1,4469:1:1,8150:1:1^
 2612^1^0^38^38^1417^0.2678^0.5140^1^Lieutenant Valorcall^4306:1:3^
 2738^1^0^36^37^1417^0.2681^0.5148^1^Stromgarde Cavalryman^^
-2760^97^0^38^39^1417^0.2538^0.3025^97^Burning Exile^3857:14:14,4479:33:33,4787:29:29,6412:1:1,7068:6:6,13017:1:1,248692:1:1^
+2760^199^0^38^39^1417^0.2565^0.3045^199^Burning Exile^3857:29:29,4479:64:64,4787:53:53,6412:1:1,7068:19:19,9885:1:1,11997:1:1,13017:1:1,248690:2:2,248692:1:1^
 2761^1^0^38^38^1417^0.6790^0.3087^1^Cresting Exile^4481:1:1^
-2762^2^0^39^39^1417^0.5217^0.4968^2^Thundering Exile^7069:1:1^
+2762^4^0^38^39^1417^0.5178^0.5045^4^Thundering Exile^7069:1:1^
 2783^1^0^40^40^1417^0.2807^0.6413^1^Marez Cowl^4510:1:1^
 3247^1^0^20^20^1413^0.4625^0.5705^1^Thunderhawk Hatchling^17056:1:1^
 3976^1^0^0^0^0^0.0000^0.0000^0^^^
@@ -153,10 +153,12 @@ GoldScout-export 5^x7z85aeqo4xt^9
 @i^8188^Explosive Shotgun
 @i^8746^Interlaced Cowl
 @i^8747^Hardened Leather Helm
+@i^9885^Huntsman's Boots of the Champion
 @i^9900^Jazeraint Gauntlets of Power
 @i^9902^Jazeraint Helm of the Beast
 @i^10285^Shadow Silk
 @i^11986^Thallium Hoop of the Sorcerer
+@i^11997^Greenstone Circle of the Beast
 @i^12184^Raptor Flesh
 @i^12205^White Spider Meat
 @i^13017^Hellslayer Battle Axe
@@ -262,10 +264,12 @@ GoldScout-export 5^x7z85aeqo4xt^9
 @q^8188^2:2:0
 @q^8746^0:4:0
 @q^8747^0:4:0
+@q^9885^2:4:0
 @q^9900^2:4:0
 @q^9902^2:4:0
 @q^10285^1:7:1
 @q^11986^2:4:0
+@q^11997^2:4:0
 @q^12184^1:7:1
 @q^12205^1:7:1
 @q^13017^3:2:0
@@ -894,9 +898,9 @@ GoldScout-export 5^x7z85aeqo4xt^9
 @a^2611^208:1
 @a^2612^205:1
 @a^2738^205:1
-@a^2760^104:15,105:25,124:29,125:28
+@a^2760^104:26,105:50,124:37,125:86
 @a^2761^133:1
-@a^2762^190:2
+@a^2762^190:2,210:2
 @a^2783^245:1
 @a^3247^229:1
 @a^3984^126:1
