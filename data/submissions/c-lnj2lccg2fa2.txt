@@ -1,14 +1,17 @@
-GoldScout-export 5^lnj2lccg2fa2^3
-426^5^0^17^18^1433^0.1910^0.3559^5^Redridge Brute^1013:3:3,2856:3:3^
+GoldScout-export 5^lnj2lccg2fa2^4
+426^8^0^17^18^1433^0.2487^0.3422^8^Redridge Brute^1013:3:3,2589:1:3,2856:5:5^
 430^1^0^18^18^1433^0.1664^0.3613^1^Redridge Mystic^1013:1:1,1179:1:1,2592:1:1^
 446^1^0^20^20^1433^0.2278^0.3010^1^Redridge Basher^1013:1:1^
+485^2^0^20^21^1433^0.6929^0.7861^2^Blackrock Outrunner^3014:2:2^
 880^1^0^8^8^1429^0.7047^0.7982^1^Erlan Drudgemoor^2589:1:2^
 881^1^0^9^9^1429^0.7082^0.8027^1^Surena Caledon^6810:1:1^
+214519^1^0^23^23^1433^0.7211^0.8532^1^Incinerator Gar'im^271872:1:1^
 @i^1013^Iron Rivet
 @i^1179^Ice Cold Milk
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2856^Iron Pike
+@i^3014^Battleworn Axe
 @i^6289^Raw Longjaw Mud Snapper
 @i^6291^Raw Brilliant Smallfish
 @i^6303^Raw Slitherskin Mackerel
@@ -17,11 +20,13 @@ GoldScout-export 5^lnj2lccg2fa2^3
 @i^6358^Oily Blackmouth
 @i^6361^Raw Rainbow Fin Albacore
 @i^6810^Surena's Choker
+@i^271872^Broken Staff of Incinerator Gar'im
 @q^1013^1:12:0
 @q^1179^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2856^1:12:0
+@q^3014^1:12:0
 @q^6289^1:7:1
 @q^6291^1:7:1
 @q^6303^1:7:1
@@ -30,6 +35,7 @@ GoldScout-export 5^lnj2lccg2fa2^3
 @q^6358^1:7:1
 @q^6361^1:7:1
 @q^6810^1:12:0
+@q^271872^1:12:0
 @m^1429^Elwynn Forest
 @m^1433^Redridge Mountains
 @m^1453^Stormwind City
@@ -720,11 +726,13 @@ GoldScout-export 5^lnj2lccg2fa2^3
 @c^279985^
 @c^279987^
 @c^286152^
-@a^426^124:1,143:4
+@a^426^124:1,126:2,127:1,143:4
 @a^430^143:1
 @a^446^124:1
+@a^485^313:2
 @a^880^314:1
 @a^881^334:1
+@a^214519^354:1
 @f^1433^0^49^138^6289:18:18,6308:31:31^204:49
 @f^1453^0^48^150^6289:17:17,6291:2:2,6303:11:11,6307:1:1,6308:4:4,6358:2:2,6361:11:11^65:25,253:23
 @l^0^enUS

@@ -1,4 +1,6 @@
-GoldScout-export 5^83q71mbjpoex^23
+GoldScout-export 5^83q71mbjpoex^24
+767^1^0^37^37^1435^0.1624^0.5567^1^Swamp Jaguar^1688:1:1^
+768^1^0^39^39^1435^0.8975^0.7100^1^Shadow Panther^^
 1501^1^0^1^1^1420^0.3222^0.6559^1^Mindless Zombie^^
 1502^2^0^1^1^1420^0.3208^0.6557^2^Wretched Zombie^^
 1767^1^0^12^13^1421^0.5692^0.2294^1^Vile Fin Shredder^1731:1:1^
@@ -96,6 +98,7 @@ GoldScout-export 5^83q71mbjpoex^23
 4275^1^0^0^0^0^0.0000^0.0000^0^^5442:1:1,6324:1:1^
 4278^1^0^0^0^0^0.0000^0.0000^0^^273105:1:1,273643:1:1^
 4279^1^0^0^0^0^0.0000^0.0000^0^^273645:1:1^
+4342^1^0^37^37^1445^0.4527^0.4074^1^Drywallow Vicejaw^770:1:1^
 4420^1^0^0^0^0^0.0000^0.0000^0^^^
 4421^1^0^0^0^0^0.0000^0.0000^0^^5793:1:1,6692:1:1,17008:1:1^
 4422^1^0^0^0^0^0.0000^0.0000^0^^3172:1:1,3403:1:1^
@@ -194,6 +197,7 @@ GoldScout-export 5^83q71mbjpoex^23
 270094^1^0^30^30^1441^0.5572^0.5551^1^Stormheart^279186:1:1^
 @i^422^Dwarven Mild
 @i^729^Stringy Vulture Meat
+@i^770^Pointy Crocolisk Tooth
 @i^878^Fist-sized Spinneret
 @i^929^Healing Potion
 @i^955^Scroll of Intellect
@@ -210,6 +214,7 @@ GoldScout-export 5^83q71mbjpoex^23
 @i^1485^Pitchfork
 @i^1529^Jade
 @i^1686^Bristly Whisker
+@i^1688^Long Soft Tail
 @i^1696^Curved Raptor Talon
 @i^1702^Intact Basilisk Spine
 @i^1708^Sweet Nectar
@@ -343,6 +348,7 @@ GoldScout-export 5^83q71mbjpoex^23
 @i^7067^Elemental Earth
 @i^7069^Elemental Air
 @i^7367^Elder's Mantle of Frost Protection
+@i^8365^Raw Mithril Head Trout
 @i^8748^Double Mail Coif
 @i^9299^Thermaplugg's Safe Combination
 @i^9308^Grime-Encrusted Object
@@ -360,14 +366,18 @@ GoldScout-export 5^83q71mbjpoex^23
 @i^11407^Torn Bear Pelt
 @i^12037^Mystery Meat
 @i^12184^Raptor Flesh
+@i^13757^Lightning Eel
 @i^13758^Raw Redgill
 @i^13759^Raw Nightfin Snapper
 @i^13760^Raw Sunscale Salmon
+@i^13885^34 Pound Redgill
 @i^14166^Buccaneer's Bracers of Spirit
 @i^15249^Polished Zweihander of the Tiger
 @i^15286^Long Redwood Bow
 @i^16967^Feralas Ahi
 @i^16968^Sar'theris Striker
+@i^16969^Savage Coast Blue Sailfin
+@i^16970^Misty Reed Mahi Mahi
 @i^17008^Small Scroll
 @i^17056^Light Feather
 @i^19937^Small Scorpid Claw
@@ -404,6 +414,7 @@ GoldScout-export 5^83q71mbjpoex^23
 @i^280438^Abominable Head
 @q^422^1:0:0
 @q^729^1:7:1
+@q^770^0:15:0
 @q^878^0:7:0
 @q^929^1:0:0
 @q^955^1:0:0
@@ -420,6 +431,7 @@ GoldScout-export 5^83q71mbjpoex^23
 @q^1485^0:2:0
 @q^1529^2:7:1
 @q^1686^0:15:0
+@q^1688^0:15:0
 @q^1696^0:15:0
 @q^1702^0:15:0
 @q^1708^1:0:0
@@ -553,6 +565,7 @@ GoldScout-export 5^83q71mbjpoex^23
 @q^7067^1:7:1
 @q^7069^1:7:1
 @q^7367^2:4:0
+@q^8365^1:7:1
 @q^8748^0:4:0
 @q^9299^1:13:0
 @q^9308^1:12:0
@@ -570,14 +583,18 @@ GoldScout-export 5^83q71mbjpoex^23
 @q^11407^1:12:0
 @q^12037^1:7:1
 @q^12184^1:7:1
+@q^13757^1:7:1
 @q^13758^1:7:1
 @q^13759^1:7:1
 @q^13760^1:7:1
+@q^13885^1:15:0
 @q^14166^2:4:0
 @q^15249^2:2:0
 @q^15286^2:2:0
 @q^16967^1:15:0
 @q^16968^1:12:0
+@q^16969^1:12:0
+@q^16970^1:12:0
 @q^17008^1:15:0
 @q^17056^1:15:1
 @q^19937^0:15:0
@@ -619,6 +636,8 @@ GoldScout-export 5^83q71mbjpoex^23
 @m^1420^Tirisfal Glades
 @m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
+@m^1434^Stranglethorn Vale
+@m^1435^Swamp of Sorrows
 @m^1441^Thousand Needles
 @m^1443^Desolace
 @m^1444^Feralas
@@ -1909,6 +1928,8 @@ GoldScout-export 5^83q71mbjpoex^23
 @c^285280^
 @c^285281^
 @c^286152^
+@a^767^223:1
+@a^768^297:1
 @a^1501^266:1
 @a^1502^266:2
 @a^1767^91:1
@@ -1989,6 +2010,7 @@ GoldScout-export 5^83q71mbjpoex^23
 @a^4154^275:1
 @a^4248^230:1
 @a^4249^253:1
+@a^4342^169:1
 @a^4479^151:1
 @a^4481^150:1
 @a^4504^267:1
@@ -2002,7 +2024,9 @@ GoldScout-export 5^83q71mbjpoex^23
 @a^218032^333:1
 @a^270094^231:1
 @f^1424^0^8^210^21071:8:8^93:8
+@f^1434^0^7^225^4603:1:1,6358:2:2,6359:1:1,6362:3:3,16969:1:1^126:7
+@f^1435^0^3^225^6358:1:1,6362:2:2,16970:1:1^298:3
 @f^1443^0^25^225^4603:5:5,6355:1:1,6358:3:3,6362:16:16,16968:1:1^305:25
-@f^1444^0^9^225^6358:3:3,13758:4:4,13759:1:1,13760:1:1,16967:1:1^212:9
+@f^1444^0^79^225^6358:11:11,8365:4:4,13757:13:13,13758:25:25,13759:1:1,13760:24:24,13885:1:1,16967:1:1^194:70,212:9
 @f^1445^0^92^211^4603:15:15,6358:18:18,6359:7:7,6362:52:52^231:2,251:90
 @l^0^enUS

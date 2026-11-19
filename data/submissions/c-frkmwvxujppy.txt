@@ -1,4 +1,4 @@
-GoldScout-export 5^frkmwvxujppy^4
+GoldScout-export 5^frkmwvxujppy^5
 4097^1^0^27^27^1441^0.1945^0.2240^1^Galak Stormer^^
 4099^3^0^26^27^1441^0.1891^0.2217^3^Galak Marauder^4306:2:2^
 4111^1^0^26^26^1441^0.2941^0.2799^1^Gravelsnout Kobold^2592:1:2^
@@ -20,9 +20,9 @@ GoldScout-export 5^frkmwvxujppy^4
 4249^4^0^28^29^1441^0.6260^0.5687^4^Pesterhide Snarler^3402:3:3^
 4341^1^0^35^35^1445^0.5823^0.3094^1^Drywallow Crocolisk^3667:1:1,10300:1:1^
 4342^1^0^36^37^1445^0.5901^0.3459^1^Drywallow Vicejaw^770:1:2,3667:1:1^
-4360^3^0^37^38^1445^0.6404^0.2888^3^Mirefin Warrior^6362:1:2,17057:1:1^
-4361^3^0^37^37^1445^0.6405^0.2880^3^Mirefin Muckdweller^1708:1:1,5847:1:1,17057:1:1^
-4362^1^0^36^37^1445^0.6305^0.3048^1^Mirefin Coastrunner^^
+4360^7^0^37^38^1445^0.6365^0.2875^7^Mirefin Warrior^2289:1:1,5847:1:1,6362:1:2,17057:2:2,17058:3:3^
+4361^5^0^37^37^1445^0.6390^0.2868^5^Mirefin Muckdweller^1708:1:1,5785:1:1,5847:2:2,17057:2:2^
+4362^7^0^36^37^1445^0.6349^0.2879^7^Mirefin Coastrunner^5847:2:2,17057:1:1,17058:2:2^
 4363^1^0^37^38^1445^0.6447^0.2807^1^Mirefin Oracle^17058:1:1^
 4396^2^0^36^37^1445^0.6360^0.3318^2^Mudrock Tortoise^4555:1:1,4556:1:1,14226:1:1^
 4397^1^0^37^38^1445^0.6386^0.3834^1^Mudrock Spikeshell^4555:1:1,4556:1:1^
@@ -38,6 +38,7 @@ GoldScout-export 5^frkmwvxujppy^4
 @i^1701^Curved Basilisk Claw
 @i^1702^Intact Basilisk Spine
 @i^1708^Sweet Nectar
+@i^2289^Scroll of Strength II
 @i^2592^Wool Cloth
 @i^2838^Heavy Stone
 @i^3201^Barbarian War Axe of the Wolf
@@ -57,6 +58,7 @@ GoldScout-export 5^frkmwvxujppy^4
 @i^5137^Bright Eyeball
 @i^5637^Large Fang
 @i^5741^Rock Chip
+@i^5785^Thick Murloc Scale
 @i^5794^Salty Scorpid Venom
 @i^5847^Mirefin Head
 @i^5848^Hollow Vulture Bone
@@ -89,6 +91,7 @@ GoldScout-export 5^frkmwvxujppy^4
 @q^1701^0:15:0
 @q^1702^0:15:0
 @q^1708^1:0:0
+@q^2289^1:0:0
 @q^2592^1:7:1
 @q^2838^1:7:1
 @q^3201^2:2:0
@@ -108,6 +111,7 @@ GoldScout-export 5^frkmwvxujppy^4
 @q^5137^0:15:0
 @q^5637^1:7:1
 @q^5741^0:15:0
+@q^5785^1:7:1
 @q^5794^1:12:0
 @q^5847^1:12:0
 @q^5848^1:12:0
@@ -716,9 +720,9 @@ GoldScout-export 5^frkmwvxujppy^4
 @a^4249^211:1,212:1,252:1,253:1
 @a^4341^131:1
 @a^4342^131:1
-@a^4360^112:3
-@a^4361^112:3
-@a^4362^132:1
+@a^4360^112:7
+@a^4361^112:5
+@a^4362^112:6,132:1
 @a^4363^112:1
 @a^4396^132:1,152:1
 @a^4397^152:1
