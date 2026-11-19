@@ -31,6 +31,9 @@ Hovering a mob shows its best drops in the tooltip, how many times players have 
 ### Craft tab
 Every recipe you know, ranked by profit per craft: auction house price after the cut, minus the cheapest cost of the materials. Vendor prices are learned automatically.
 
+### Flip tab
+Items cheap on your realm's Blackwater (goblin) auction house that sell for more on your faction's: what one costs there, what it sells for here, your profit after the 5% cut and the margin, and how many are listed on each. Only flips worth at least 1 silver and 15% each, from prices of the last 12 hours.
+
 ### Hunt mode
 Pick a farm and press **Hunt**:
 - Blizzard's own waypoint arrow to where players find those mobs
@@ -54,7 +57,7 @@ GoldScout only shows information. It never moves, targets, attacks, loots or mar
 English, Deutsch, Español, Français, 한국어 and 繁體中文, following your game's language. Corrections to the translations are welcome on GitHub.
 
 ### Commands
-`/gscout` opens the window · `/gscout scan` · `/gscout hunt` · `/gscout drops` · `/gscout wanted` · `/gscout export` · `/gscout skills` · `/gscout set kills 80` · `/gscout help`
+`/gscout` opens the window · `/gscout scan` · `/gscout hunt` · `/gscout drops` · `/gscout flip` · `/gscout wanted` · `/gscout export` · `/gscout skills` · `/gscout set kills 80` · `/gscout help`
 
 ---
 

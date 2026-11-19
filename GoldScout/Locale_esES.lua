@@ -229,7 +229,6 @@ local strings = {
   ["%d error(s) recorded, newest last:"] = "%d error(es) registrado(s), el más reciente al final:",
   ["  Full details are saved for bug reports. /gscout errors clear to reset."] = "  Los detalles completos se guardan para informes de errores. /gscout errors clear para reiniciar.",
   ["  /gscout - show or hide the window"] = "  /gscout - mostrar u ocultar la ventana",
-  ["  /gscout farm | craft - open a tab"] = "  /gscout farm | craft - abrir una pestaña",
   ["  /gscout scan - scan prices (auction house must be open)"] = "  /gscout scan - escanear precios (la casa de subastas debe estar abierta)",
   ["  /gscout hunt - show the current hunt; /gscout hunt stop | history"] = "  /gscout hunt - mostrar la caza actual; /gscout hunt stop | history",
   ["  /gscout export - copy your learned drop data to share with GoldScout"] = "  /gscout export - copiar tus datos de botín para compartirlos con GoldScout",
@@ -390,6 +389,19 @@ local strings = {
   ["GoldScout: worth %s each on the auction house, %s at a vendor. List it."] = "GoldScout: vale %s cada uno en la casa de subastas, %s en un vendedor. Ponlo a la venta.",
   ["Mark bag items worth listing on the auction house"] = "Marcar objetos de las bolsas que conviene vender en la casa de subastas",
   ["An auction house hammer on crafting reagents and green or better items that sell for at least double their vendor price on your auction house, after the cut. Needs your own prices: a scan, or GoldScout Companion."] = "Un martillo de subasta en los materiales de artesanía y objetos verdes o mejores que se venden al menos por el doble de su precio de vendedor en tu casa de subastas, tras la comisión. Necesita tus propios precios: un escaneo o GoldScout Companion.",
+  ["Flip"] = "Reventa",
+  ["Margin"] = "Margen",
+  ["Stock"] = "Existencias",
+  ["Buy at Blackwater, each"] = "Compra en Aguasnegras, cada uno",
+  ["Sells for here, each"] = "Venta aquí, cada uno",
+  ["Profit each"] = "Beneficio por unidad",
+  ["%d listed at Blackwater, %d on your auction house."] = "%d a la venta en Aguasnegras, %d en tu casa de subastas.",
+  ["Only the cheapest auctions are at this price: check before buying many. Prices seen %s."] = "Solo las subastas más baratas tienen este precio: compruébalo antes de comprar muchas. Precios vistos %s.",
+  ["Best flip: buy %s at Blackwater for %s, sell it here for %s: %s profit each."] = "Mejor reventa: compra %s en Aguasnegras por %s y véndelo aquí por %s: %s de beneficio cada uno.",
+  ["Your character has no faction, so there's no other auction house to sell on."] = "Tu personaje no tiene facción, así que no hay otra casa de subastas donde vender.",
+  ["No Blackwater prices yet: GoldScout Companion saves them every hour, or scan at a Blackwater auction house."] = "Aún no hay precios de Aguasnegras: GoldScout Companion los guarda cada hora, o escanea en una casa de subastas de Aguasnegras.",
+  ["No flips right now: nothing at Blackwater sells for at least 15% more on your auction house after the cut."] = "No hay reventas ahora: nada de Aguasnegras se vende al menos un 15 % más caro en tu casa de subastas tras la comisión.",
+  ["  /gscout farm | craft | flip - open a tab"] = "  /gscout farm | craft | flip - abrir una pestaña",
 }
 ns.AddLocale("esES", strings)
 ns.AddLocale("esMX", strings)

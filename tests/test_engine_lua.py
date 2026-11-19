@@ -507,6 +507,65 @@ class AllLootTests(unittest.TestCase):
 
 
 @unittest.skipIf(lua51 is None, "lupa is not installed")
+class FlipTests(unittest.TestCase):
+    """The Flip tab: buy on the Blackwater (neutral) auction house, sell on your faction's."""
+    setUp = FarmRulesTests.setUp
+    run_lua, run_file = FarmRulesTests.run_lua, FarmRulesTests.run_file
+
+    def market(self, neutral, mine, age=60):
+        """Both markets' prices ({item: (copper, listed)}) as Prices:GetFor sees them, `age` seconds old."""
+        self.run_lua("""
+            local ns, neutral, mine, age = ...
+            ns.Prices.BlackwaterKey = function() return "Realm-Neutral" end
+            local markets = { ["Realm-Neutral"] = neutral, ["Realm-Horde"] = mine }
+            ns.Prices.GetFor = function(_, item, key)
+              local entry = markets[key] and markets[key][item]
+              if entry then return entry[1], entry[2], age end
+            end
+            ns.Prices.MarketItemIDs = function(_, key)
+              local ids = {}
+              for item in pairs(markets[key] or {}) do ids[item] = true end
+              return ids
+            end
+        """.replace("local ns, neutral, mine, age = ...", "local ns = ...; local neutral, mine, age = FLIP_N, FLIP_M, FLIP_AGE"))
+
+    def flips(self, neutral, mine, age=60):
+        g = self.lua.globals()
+        g.FLIP_N = self.lua.table_from({k: self.lua.table_from(list(v)) for k, v in neutral.items()})
+        g.FLIP_M = self.lua.table_from({k: self.lua.table_from(list(v)) for k, v in mine.items()})
+        g.FLIP_AGE = age
+        self.market(neutral, mine, age)
+        return self.result()
+
+    def result(self):
+        found = self.ns.Engine.Flips(self.ns.Engine)
+        rows, reason = found if isinstance(found, tuple) else (found, None)   # lupa unwraps a single return
+        return list(rows.values()), reason
+
+    def test_flips_worth_making_best_first(self):
+        rows, reason = self.flips(
+            {1: (1000, 5), 2: (10000, 2), 3: (1000, 9), 4: (500, 3), 5: (100, 50)},
+            {1: (2000, 40), 2: (12000, 7), 3: (1100, 9), 6: (9000, 1), 5: (300, 10)})
+        # 1: 1900 - 1000 = 900 (90%). 2: 11400 - 10000 = 1400 (14%: under the 15% margin).
+        # 3: 1045 - 1000 = 45 (too little). 4: none listed on yours. 6: none at Blackwater. 5: 185 (185%).
+        self.assertIsNone(reason)
+        self.assertEqual([row.item for row in rows], [1, 5])
+        first = rows[0]
+        self.assertAlmostEqual(first.profit, 2000 * 0.95 - 1000)
+        self.assertAlmostEqual(first.margin, 0.9)
+        self.assertEqual((first.cost, first.sell, first.stock, first.listed), (1000, 2000, 5, 40))
+
+    def test_old_prices_dont_count(self):
+        rows, _ = self.flips({1: (1000, 5)}, {1: (2000, 40)}, age=13 * 3600)
+        self.assertEqual(rows, [])
+
+    def test_why_there_are_none(self):
+        self.assertEqual(self.flips({}, {1: (2000, 40)})[1], "noprices")
+        self.run_lua('local ns = ...; ns.Prices.BlackwaterKey = function() return ns.MarketKey() end')
+        self.assertEqual(self.result()[1], "neutral")
+
+
+@unittest.skipIf(lua51 is None, "lupa is not installed")
 class MobViewTests(unittest.TestCase):
     """The Farm tab's By mob view: one row per mob, adding up its farms."""
     setUp = FarmRulesTests.setUp

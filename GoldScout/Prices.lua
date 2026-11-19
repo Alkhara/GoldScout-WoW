@@ -251,6 +251,20 @@ function Prices:ItemIDs()
   return ids
 end
 
+-- Every item one market has a price for, from your scans and GoldScout Companion: { [itemID] = true }.
+function Prices:MarketItemIDs(key)
+  local ids = {}
+  local market = ns.db and ns.db.markets[key]
+  for itemID in pairs(market and market.items or {}) do
+    ids[itemID] = true
+  end
+  local companion = self:Companion(key)
+  for itemID in pairs(companion and companion.items or {}) do
+    ids[itemID] = true
+  end
+  return ids
+end
+
 -- Average of the daily lows we have, and how many days that covers.
 function Prices:Average(itemID)
   if not ns.db or not itemID then

@@ -6,13 +6,14 @@ local UI = { tab = "farm", offset = 0, rows = {}, data = {}, expanded = {} }
 ns.UI = UI
 
 local FRAME_WIDTH, FRAME_HEIGHT = 760, 510
--- The filter row: checkboxes run from after the Craft tab to before Hunt.
+-- The filter row: checkboxes run from after the Flip tab to before Hunt.
 local HUNT_WIDTH, HUNT_RIGHT = 85, 22
-local CHECK_BOX, CHECKS_LEFT, CHECKS_RIGHT = 26, 188, FRAME_WIDTH - HUNT_RIGHT - HUNT_WIDTH - 8
+local CHECK_BOX, CHECKS_LEFT, CHECKS_RIGHT = 26, 226, FRAME_WIDTH - HUNT_RIGHT - HUNT_WIDTH - 8
 local COMPANION_URL = "wowgoldscout.com/companion"
 local ROW_HEIGHT = 20
 local VISIBLE_ROWS = 16
 local MAX_COLUMNS = 8
+local TAB_WIDTH = 64        -- the Farm, Craft and Flip buttons
 
 local COLUMNS = {
   farm = {
@@ -52,6 +53,16 @@ local COLUMNS = {
     { key = "skill", title = L["Skill-up"], width = 65, align = "CENTER" },
     { key = "profession", title = L["Profession"], width = 110, align = "LEFT" },
   },
+  -- Blackwater flips: buy on the neutral auction house, sell on yours.
+  flip = {
+    { key = "item", title = L["Item"], width = 189, align = "LEFT" },
+    { key = "cost", title = L["Blackwater"], width = 85, align = "RIGHT" },
+    { key = "sell", title = L["Sells for"], width = 85, align = "RIGHT" },
+    { key = "profit", title = L["Profit"], width = 85, align = "RIGHT" },
+    { key = "margin", title = L["Margin"], width = 60, align = "RIGHT" },
+    { key = "stock", title = L["Stock"], width = 60, align = "RIGHT" },
+    { key = "listed", title = L["Listed"], width = 60, align = "RIGHT" },
+  },
 }
 
 -- The two checkboxes change meaning with the tab.
@@ -76,6 +87,7 @@ local TAB_OPTIONS = {
     { setting = "showTrivial", label = L["Gray recipes"], tip = L["Include recipes that no longer give skill-ups."] },
     { setting = "showBound", label = L["Soulbound results"], tip = L["Include recipes whose product can't be sold on the auction house."] },
   },
+  flip = {},
 }
 
 -- Experience styling for the Lvl column (see Engine's XP check).
@@ -268,6 +280,10 @@ function CellText(key, row)
     return ns.Engine.DIFFICULTY_TEXT[row.diff or -1] or ""
   elseif key == "profession" then
     return row.profession or ""
+  elseif key == "margin" then
+    return row.margin and Percent(row.margin) or ""
+  elseif key == "stock" then
+    return row.stock and tostring(row.stock) or ""
   end
   return ""
 end
@@ -277,6 +293,19 @@ end
 ---------------------------------------------------------------------------
 local function AddMoneyLine(label, copper)
   GameTooltip:AddDoubleLine(label, ns.Money(copper), 0.8, 0.8, 0.8, 1, 1, 1)
+end
+
+-- A Blackwater flip: what it costs there, what it sells for here, and why to look before buying a lot.
+local function FlipTooltip(row)
+  AddMoneyLine(L["Buy at Blackwater, each"], row.cost)
+  AddMoneyLine(L["Sells for here, each"], row.sell)
+  AddMoneyLine(L["You receive (after 5% AH cut)"], row.revenue)
+  AddMoneyLine(L["Profit each"], row.profit)
+  GameTooltip:AddLine(" ")
+  GameTooltip:AddLine((L["%d listed at Blackwater, %d on your auction house."]):format(row.stock, row.listed),
+    0.8, 0.8, 0.8, true)
+  GameTooltip:AddLine((L["Only the cheapest auctions are at this price: check before buying many. Prices seen %s."])
+    :format(ns.Age(row.age)), 0.6, 0.6, 0.6, true)
 end
 
 local function CraftTooltip(row)
@@ -479,6 +508,8 @@ local function RowOnEnter(self)
   end
   if row.kind == "craft" then
     CraftTooltip(row)
+  elseif row.kind == "flip" then
+    FlipTooltip(row)
   else
     FarmTooltip(row)
   end
@@ -601,7 +632,7 @@ end
 
 local function CreateTabButton(frame, text, tab, x)
   local button = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
-  button:SetSize(80, 22)
+  button:SetSize(TAB_WIDTH, 22)
   button:SetPoint("TOPLEFT", x, -64)
   button:SetText(text)
   button:SetScript("OnClick", function()
@@ -761,7 +792,8 @@ function UI:Create()
   f.charText:SetWordWrap(false)
 
   f.farmTab = CreateTabButton(f, L["Farm"], "farm", 18)
-  f.craftTab = CreateTabButton(f, L["Craft"], "craft", 100)
+  f.craftTab = CreateTabButton(f, L["Craft"], "craft", 18 + TAB_WIDTH + 4)
+  f.flipTab = CreateTabButton(f, L["Flip"], "flip", 18 + 2 * (TAB_WIDTH + 4))
   f.checks = { CreateCheckbox(f, 196), CreateCheckbox(f, 300), CreateCheckbox(f, 390), CreateCheckbox(f, 470),
     CreateCheckbox(f, 565) }
 
@@ -980,12 +1012,12 @@ function UI:SetTab(tab)
     return
   end
   self:LayoutColumns()
-  if tab == "farm" then
-    f.farmTab:LockHighlight()
-    f.craftTab:UnlockHighlight()
-  else
-    f.craftTab:LockHighlight()
-    f.farmTab:UnlockHighlight()
+  for name, button in pairs({ farm = f.farmTab, craft = f.craftTab, flip = f.flipTab }) do
+    if name == tab then
+      button:LockHighlight()
+    else
+      button:UnlockHighlight()
+    end
   end
   local view = self:FarmView()
   for name, button in pairs({ item = f.itemView, mob = f.mobView, wanted = f.wantedView }) do
@@ -1187,6 +1219,11 @@ function UI:UpdateInfoText()
     elseif #self.data > 0 then
       info = L["Scan the auction house to price these farms."]
     end
+  elseif self.tab == "flip" then
+    if best then
+      info = (L["Best flip: buy %s at Blackwater for %s, sell it here for %s: %s profit each."]):format(
+        ns.ItemName(best.item), ns.Money(best.cost), ns.Money(best.sell), ns.Money(best.profit))
+    end
   else
     if not ns.Engine:HasRecipes() then
       info = L["Open each of your profession windows once so GoldScout can learn your recipes."]
@@ -1237,6 +1274,11 @@ function UI:Render()
     if self.tab == "craft" then
       f.emptyText:SetText(ns.Engine:HasRecipes() and L["No recipes match these filters."]
         or L["No recipes yet: open each of your profession windows once."])
+    elseif self.tab == "flip" then
+      f.emptyText:SetText((self.flipReason == "neutral" and L["Your character has no faction, so there's no other "
+        .. "auction house to sell on."]) or (self.flipReason == "noprices" and L["No Blackwater prices yet: GoldScout "
+        .. "Companion saves them every hour, or scan at a Blackwater auction house."]) or L["No flips right now: "
+        .. "nothing at Blackwater sells for at least 15% more on your auction house after the cut."])
     elseif self:FarmView() == "wanted" then
       f.emptyText:SetText(L["Every mob players have recorded near your level has solid drop rates. Try 'All levels'."])
     else
@@ -1326,6 +1368,8 @@ function UI:Refresh()
   end
   if self.tab == "craft" then
     self.data = ns.Engine:Crafts()
+  elseif self.tab == "flip" then
+    self.data, self.flipReason = ns.Engine:Flips()
   elseif self:FarmView() == "wanted" then
     self.allRows = ns.Engine:WantedMobs()
     self.data = self.allRows
@@ -1735,7 +1779,7 @@ end
 local function PrintHelp()
   ns.Print(L["commands:"])
   print(L["  /gscout - show or hide the window"])
-  print(L["  /gscout farm | craft - open a tab"])
+  print(L["  /gscout farm | craft | flip - open a tab"])
   print(L["  /gscout wanted - mobs that need more kills for solid drop rates"])
   print(L["  /gscout drops - everything your target drops (or right-click its portrait)"])
   print(L["  /gscout options - open GoldScout's settings"])
@@ -1845,7 +1889,7 @@ function UI:HandleSlash(message)
     ns.Print(L["Still loading; try again in a moment."])
   elseif command == "" or command == "show" then
     self:Toggle()
-  elseif command == "farm" or command == "craft" then
+  elseif command == "farm" or command == "craft" or command == "flip" then
     self:Show(command)
   elseif command == "wanted" then
     self:Show("farm")

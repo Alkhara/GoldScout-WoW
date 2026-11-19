@@ -40,6 +40,12 @@ based on your level, class, faction and professions.
 - **Craft tab** ranks every recipe you know by profit per craft: auction house
   price after the 5% cut, minus the cheapest cost of the materials (vendor price
   when they are sold by vendors, otherwise the auction house price).
+- **Flip tab** lists items that are cheap on your realm's Blackwater (goblin)
+  auction house and sell for more on your faction's: buy there, list here. It
+  shows the profit per item after the 5% cut and the margin, and how many are
+  listed on each side. Only flips worth at least 1 silver and 15%, from prices
+  of the last 12 hours (GoldScout Companion's hourly snapshots, or your scans
+  at both). Only the cheapest auctions are at the price shown.
 - **Item tooltips** show the last auction house price, how many were listed,
   the average daily low, and the vendor price when known.
 - **Prices without scanning:** with GoldScout Companion running (Windows or Mac),
@@ -136,7 +142,7 @@ set up, ticking itself off as you go (`/gscout welcome` shows it again):
 | Command | What it does |
 |---|---|
 | `/gscout` | Show or hide the window |
-| `/gscout farm`, `/gscout craft` | Open a tab |
+| `/gscout farm`, `/gscout craft`, `/gscout flip` | Open a tab |
 | `/gscout wanted` | Open the Farm tab's Data wanted list |
 | `/gscout scan` | Scan prices (the auction house must be open) |
 | `/gscout hunt` | Show the hunt panel (or open the Farm tab to start one) |

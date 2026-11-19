@@ -721,6 +721,50 @@ function Engine:Crafts()
   return rows
 end
 
+-- Blackwater flips: items whose lowest buyout on your realm's Blackwater (neutral) auction house is low enough
+-- that buying them there and listing them on your faction's auction house earns at least FLIP_MIN_PROFIT and
+-- FLIP_MIN_MARGIN more, after the faction auction house's cut. Buying costs no fee. Both prices must be from
+-- the last FLIP_MAX_AGE (GoldScout Companion's hourly snapshots, or your scans). Anything listed on an auction
+-- house can be traded, so no bound items turn up. Returns rows (best profit first), or {} and why there are none:
+-- "neutral" (your character has no faction to sell to) or "noprices" (no Blackwater prices yet).
+Engine.FLIP_MIN_PROFIT = 100        -- copper per item
+Engine.FLIP_MIN_MARGIN = 0.15       -- of the Blackwater price
+Engine.FLIP_MAX_AGE = 12 * 3600
+
+function Engine:Flips()
+  local prices = ns.Prices
+  local mine, neutral = ns.MarketKey(), prices:BlackwaterKey()
+  if mine == neutral then
+    return {}, "neutral"
+  end
+  local ids = prices:MarketItemIDs(neutral)
+  if not next(ids) then
+    return {}, "noprices"
+  end
+  local rows = {}
+  for itemID in pairs(ids) do
+    local buy, stock, boughtAge = prices:GetFor(itemID, neutral)
+    local sell, listed, soldAge = prices:GetFor(itemID, mine)
+    if buy and sell and buy > 0 and (stock or 0) > 0 and (listed or 0) > 0
+        and (boughtAge or math.huge) <= self.FLIP_MAX_AGE and (soldAge or math.huge) <= self.FLIP_MAX_AGE then
+      local profit = sell * ns.AH_CUT - buy
+      if profit >= self.FLIP_MIN_PROFIT and profit >= buy * self.FLIP_MIN_MARGIN then
+        rows[#rows + 1] = {
+          kind = "flip", item = itemID, cost = buy, sell = sell, revenue = sell * ns.AH_CUT, profit = profit,
+          margin = profit / buy, stock = stock, listed = listed, age = math.max(boughtAge, soldAge),
+        }
+      end
+    end
+  end
+  table.sort(rows, function(a, b)
+    if a.profit ~= b.profit then
+      return a.profit > b.profit
+    end
+    return a.item < b.item
+  end)
+  return rows
+end
+
 function Engine:HasRecipes()
   return ns.cdb ~= nil and next(ns.cdb.recipes) ~= nil
 end
