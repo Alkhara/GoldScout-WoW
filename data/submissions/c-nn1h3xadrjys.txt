@@ -1,4 +1,4 @@
-GoldScout-export 5^nn1h3xadrjys^10
+GoldScout-export 5^nn1h3xadrjys^11
 232^2^0^23^23^1424^0.3360^0.3501^2^Farmer Ray^1485:1:1,4538:2:2^
 1769^1^0^11^11^1421^0.5076^0.4756^1^Moonrage Whitescalp^^
 1797^1^0^12^13^1421^0.5270^0.5877^1^Giant Grizzled Bear^3173:1:1^
@@ -28,8 +28,16 @@ GoldScout-export 5^nn1h3xadrjys^10
 2428^1^0^24^24^1424^0.7791^0.4059^1^Jailor Marlgen^^
 2449^3^0^25^25^1424^0.3335^0.4050^3^Citizen Wilkes^2589:1:1,3692:1:1^
 2451^1^0^25^25^1424^0.3601^0.4667^1^Farmer Kalaba^2592:1:2,4538:1:1^
+3099^6^0^6^7^1411^0.5406^0.5067^6^Dire Mottled Boar^769:3:3^
+3100^7^0^8^9^1411^0.4735^0.1796^7^Elder Mottled Boar^769:5:5,771:2:2,774:1:1,3171:2:2^
+3112^1^0^7^8^1411^0.4756^0.4831^1^Razormane Scout^^
+3122^1^0^7^7^1411^0.5471^0.3750^1^Bloodtalon Taillasher^4878:1:1^
+3125^2^0^5^6^1411^0.5421^0.5547^2^Clattering Scorpid^5466:1:1^
 212753^1^0^20^20^1421^0.5790^0.6992^1^Tortured Soul^^
 @i^422^Dwarven Mild
+@i^769^Chunk of Boar Meat
+@i^771^Chipped Boar Tusk
+@i^774^Malachite
 @i^858^Lesser Healing Potion
 @i^929^Healing Potion
 @i^1081^Crisp Spider Meat
@@ -48,6 +56,7 @@ GoldScout-export 5^nn1h3xadrjys^10
 @i^2765^Hunting Knife
 @i^2782^Mishandled Recurve Bow
 @i^2940^Bloody Bear Paw
+@i^3171^Broken Boar Tusk
 @i^3173^Bear Meat
 @i^3182^Spider's Silk
 @i^3467^Dull Iron Key
@@ -60,8 +69,10 @@ GoldScout-export 5^nn1h3xadrjys^10
 @i^3731^Lion Meat
 @i^4306^Silk Cloth
 @i^4538^Snapvine Watermelon
+@i^4878^Broken Bloodstained Bow
 @i^5135^Thin Black Claw
 @i^5136^Torn Furry Ear
+@i^5466^Scorpid Stinger
 @i^5620^Vial of Innocent Blood
 @i^5635^Sharp Claw
 @i^6545^Soldier's Armor of the Wolf
@@ -70,6 +81,9 @@ GoldScout-export 5^nn1h3xadrjys^10
 @i^271343^Note Scrap
 @i^271350^Tortured Soul
 @q^422^1:0:0
+@q^769^1:7:1
+@q^771^0:15:0
+@q^774^2:7:1
 @q^858^1:0:0
 @q^929^1:0:0
 @q^1081^1:7:1
@@ -88,6 +102,7 @@ GoldScout-export 5^nn1h3xadrjys^10
 @q^2765^0:2:0
 @q^2782^0:2:0
 @q^2940^0:15:0
+@q^3171^0:15:0
 @q^3173^1:7:1
 @q^3182^1:7:1
 @q^3467^1:13:0
@@ -100,8 +115,10 @@ GoldScout-export 5^nn1h3xadrjys^10
 @q^3731^1:7:1
 @q^4306^1:7:1
 @q^4538^1:0:0
+@q^4878^0:15:0
 @q^5135^0:15:0
 @q^5136^0:15:0
+@q^5466^1:7:1
 @q^5620^1:12:0
 @q^5635^1:7:1
 @q^6545^2:4:0
@@ -109,6 +126,7 @@ GoldScout-export 5^nn1h3xadrjys^10
 @q^11407^1:12:0
 @q^271343^1:15:0
 @q^271350^1:12:0
+@m^1411^Durotar
 @m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
 @c^724^
@@ -914,5 +932,10 @@ GoldScout-export 5^nn1h3xadrjys^10
 @a^2428^175:1
 @a^2449^147:1,166:2
 @a^2451^187:1
+@a^3099^151:1,190:2,230:1,231:2
+@a^3100^69:6,89:1
+@a^3112^189:1
+@a^3122^150:1
+@a^3125^210:1,230:1
 @a^212753^271:1
 @l^0^enUS

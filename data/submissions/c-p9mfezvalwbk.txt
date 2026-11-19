@@ -1,5 +1,7 @@
-GoldScout-export 5^p9mfezvalwbk^7
-475^1^0^5^5^1429^0.3664^0.7879^1^Koboldtunnelgräber^772:1:1,1376:1:1,2589:1:2^
+GoldScout-export 5^p9mfezvalwbk^8
+40^1^0^7^7^1429^0.3954^0.8022^1^Koboldminenarbeiter^772:1:1^
+113^6^0^5^6^1429^0.4183^0.8789^6^Steinhauereber^769:4:4,771:1:1,3171:3:3^
+475^28^0^5^6^1429^0.3826^0.8323^28^Koboldtunnelgräber^159:3:3,772:7:7,773:10:10,1372:1:1,1376:2:2,1378:1:1,1416:1:1,1419:1:1,2210:1:1,2211:1:1,2589:11:17,2656:1:1,2770:2:2,4536:1:1,248001:6:6^
 2369^1^0^30^31^1424^0.5778^0.6928^1^Küstenjäger der Säbelflossen^5524:1:1^
 2371^1^0^31^32^1424^0.5670^0.6662^1^Sirene der Säbelflossen^17058:1:1^
 2559^1^0^31^31^1417^0.2687^0.2188^1^Hochlandschreiter^213547:1:1^
@@ -46,10 +48,18 @@ GoldScout-export 5^p9mfezvalwbk^7
 255072^1^0^0^0^0^0.0000^0.0000^0^^9796:1:1^
 269134^2^0^0^0^0^0.0000^0.0000^0^^6592:1:1^
 272389^40^0^34^36^1416^0.3071^0.2854^40^Sumpfeule^5116:6:6,5829:1:1,9856:1:1,11416:4:4,11418:5:5,12207:7:7,17056:19:19^
+@i^159^Erfrischendes Quellwasser
 @i^765^Silberblatt
+@i^769^Brocken Eberfleisch
+@i^771^Gesplitterter Eberhauer
 @i^772^Große Kerze
+@i^773^Goldstaub
 @i^1205^Melonensaft
+@i^1372^Struppiger Umhang
 @i^1376^Ausgefranster Umhang
+@i^1378^Ausgefranste Hose
+@i^1416^Rostiges Kriegsbeil
+@i^1419^Abgenutzte Lederstiefel
 @i^1478^Rolle des Schutzes II
 @i^1705^Geringer Mondstein
 @i^1712^Rolle der Willenskraft II
@@ -61,12 +71,17 @@ GoldScout-export 5^p9mfezvalwbk^7
 @i^1819^Stechhacke
 @i^1826^Steinschlägel
 @i^1828^Steinkriegsaxt
+@i^2210^Ramponierter Rundschild
+@i^2211^Gebogener großer Schild
 @i^2222^Turmschild
 @i^2290^Rolle der Intelligenz II
 @i^2589^Leinenstoff
 @i^2592^Wollstoff
+@i^2656^Sehr leichte Kettenweste
+@i^2770^Kupfererz
 @i^2786^Geölte Donnerbüchse
 @i^3058^Waldlederhandschuhe
+@i^3171^Zerbrochener Eberhauer
 @i^3186^Wikingerschwert des Wolfs
 @i^3206^Chevalier-Zweihänder des Wolfs
 @i^3210^Brutale Kriegsaxt des Heilers
@@ -76,6 +91,7 @@ GoldScout-export 5^p9mfezvalwbk^7
 @i^3812^Doppelpanzerhandschuhe
 @i^3820^Würgetang
 @i^4306^Seidenstoff
+@i^4536^Glänzender roter Apfel
 @i^4542^Saftiges Maisbrot
 @i^4633^Schwere bronzene Schließkassette
 @i^5116^Lange Schwanzfeder
@@ -109,6 +125,7 @@ GoldScout-export 5^p9mfezvalwbk^7
 @i^17056^Leichte Feder
 @i^17058^Fischöl
 @i^213547^Schriftrolle: WELCH SCHWESTER
+@i^248001^Verlorenes Buch
 @i^248686^Abgefangene Kiste: Kräuter des Gesellen
 @i^248687^Abgefangene Kiste: Erz des Gesellen
 @i^248707^Abgefangene Kiste: Bauteile des Gesellen
@@ -123,10 +140,18 @@ GoldScout-export 5^p9mfezvalwbk^7
 @i^274042^Gürtel der Betrügereien
 @i^276158^Kristallisierter Splitter
 @i^276160^Manafragment
+@q^159^1:0:0
 @q^765^1:7:1
+@q^769^1:7:1
+@q^771^0:15:0
 @q^772^1:12:0
+@q^773^1:12:0
 @q^1205^1:0:0
+@q^1372^0:4:0
 @q^1376^0:4:0
+@q^1378^0:4:0
+@q^1416^0:2:0
+@q^1419^0:4:0
 @q^1478^1:0:0
 @q^1705^2:7:1
 @q^1712^1:0:0
@@ -138,12 +163,17 @@ GoldScout-export 5^p9mfezvalwbk^7
 @q^1819^0:2:0
 @q^1826^0:2:0
 @q^1828^0:2:0
+@q^2210^0:4:0
+@q^2211^0:4:0
 @q^2222^0:4:0
 @q^2290^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2656^0:4:0
+@q^2770^1:7:1
 @q^2786^0:2:0
 @q^3058^2:4:0
+@q^3171^0:15:0
 @q^3186^2:2:0
 @q^3206^2:2:0
 @q^3210^2:2:0
@@ -153,6 +183,7 @@ GoldScout-export 5^p9mfezvalwbk^7
 @q^3812^0:4:0
 @q^3820^1:7:1
 @q^4306^1:7:1
+@q^4536^1:0:0
 @q^4542^1:0:0
 @q^4633^2:15:0
 @q^5116^1:7:1
@@ -186,6 +217,7 @@ GoldScout-export 5^p9mfezvalwbk^7
 @q^17056^1:15:1
 @q^17058^1:15:0
 @q^213547^1:0:0
+@q^248001^1:12:0
 @q^248686^1:0:1
 @q^248687^1:0:1
 @q^248707^2:0:1
@@ -864,7 +896,9 @@ GoldScout-export 5^p9mfezvalwbk^7
 @c^285280^
 @c^285281^
 @c^286152^
-@a^475^307:1
+@a^40^327:1
+@a^113^348:6
+@a^475^307:1,327:24,347:3
 @a^2369^271:1
 @a^2371^271:1
 @a^2559^85:1
