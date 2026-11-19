@@ -7,6 +7,8 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- **Bag items worth listing now show an auction house hammer, not a gold coin:** junk-selling addons such as Scrap mark items to sell to a vendor with a gold coin, which is the opposite advice, and the two were easy to mix up.
+
 ## v0.12.31
 
 - **The Farm tab's Each column is now Per kill:** it was never an item's price, but what one kill (or node, skin, catch or pickpocket) is worth on average from that item, its price times its drop chance. The item's own price is in the row's tooltip.

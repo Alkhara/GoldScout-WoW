@@ -389,7 +389,7 @@ local strings = {
   ["GoldScout: vendors won't buy it, but it sells on the auction house. List it."] = "GoldScout: los vendedores no lo compran, pero se vende en la casa de subastas. Ponlo a la venta.",
   ["GoldScout: worth %s each on the auction house, %s at a vendor. List it."] = "GoldScout: vale %s cada uno en la casa de subastas, %s en un vendedor. Ponlo a la venta.",
   ["Mark bag items worth listing on the auction house"] = "Marcar objetos de las bolsas que conviene vender en la casa de subastas",
-  ["A gold coin on crafting reagents and green or better items that sell for at least double their vendor price on your auction house, after the cut. Needs your own prices: a scan, or GoldScout Companion."] = "Una moneda de oro en los materiales de artesanía y objetos verdes o mejores que se venden al menos por el doble de su precio de vendedor en tu casa de subastas, tras la comisión. Necesita tus propios precios: un escaneo o GoldScout Companion.",
+  ["An auction house hammer on crafting reagents and green or better items that sell for at least double their vendor price on your auction house, after the cut. Needs your own prices: a scan, or GoldScout Companion."] = "Un martillo de subasta en los materiales de artesanía y objetos verdes o mejores que se venden al menos por el doble de su precio de vendedor en tu casa de subastas, tras la comisión. Necesita tus propios precios: un escaneo o GoldScout Companion.",
 }
 ns.AddLocale("esES", strings)
 ns.AddLocale("esMX", strings)

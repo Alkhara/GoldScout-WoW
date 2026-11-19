@@ -390,5 +390,5 @@ ns.AddLocale("koKR", {
   ["GoldScout: vendors won't buy it, but it sells on the auction house. List it."] = "GoldScout: 상인은 사지 않지만 경매장에서는 팔립니다. 경매장에 올리세요.",
   ["GoldScout: worth %s each on the auction house, %s at a vendor. List it."] = "GoldScout: 경매장에서 개당 %s, 상인에게는 %s. 경매장에 올리세요.",
   ["Mark bag items worth listing on the auction house"] = "경매장에 팔 만한 가방 아이템 표시",
-  ["A gold coin on crafting reagents and green or better items that sell for at least double their vendor price on your auction house, after the cut. Needs your own prices: a scan, or GoldScout Companion."] = "수수료를 뗀 뒤에도 내 경매장에서 상점 판매가의 두 배 이상에 팔리는 제작 재료와 고급(녹색) 이상 아이템에 금화를 표시합니다. 내 서버의 가격이 필요합니다: 경매장 검색 또는 GoldScout Companion.",
+  ["An auction house hammer on crafting reagents and green or better items that sell for at least double their vendor price on your auction house, after the cut. Needs your own prices: a scan, or GoldScout Companion."] = "수수료를 뗀 뒤에도 내 경매장에서 상점 판매가의 두 배 이상에 팔리는 제작 재료와 고급(녹색) 이상 아이템에 경매 망치를 표시합니다. 내 서버의 가격이 필요합니다: 경매장 검색 또는 GoldScout Companion.",
 })

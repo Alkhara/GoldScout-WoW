@@ -390,5 +390,5 @@ ns.AddLocale("zhTW", {
   ["GoldScout: vendors won't buy it, but it sells on the auction house. List it."] = "GoldScout：商人不收，但在拍賣場賣得掉。拿去拍賣吧。",
   ["GoldScout: worth %s each on the auction house, %s at a vendor. List it."] = "GoldScout：拍賣場每個值 %s，賣給商人 %s。拿去拍賣吧。",
   ["Mark bag items worth listing on the auction house"] = "標示背包中值得拿去拍賣場賣的物品",
-  ["A gold coin on crafting reagents and green or better items that sell for at least double their vendor price on your auction house, after the cut. Needs your own prices: a scan, or GoldScout Companion."] = "在扣除手續費後，於你的拍賣場售價至少是商人收購價兩倍的製作材料與綠色以上物品上顯示金幣。需要你自己的價格：掃描一次，或使用 GoldScout Companion。",
+  ["An auction house hammer on crafting reagents and green or better items that sell for at least double their vendor price on your auction house, after the cut. Needs your own prices: a scan, or GoldScout Companion."] = "在扣除手續費後，於你的拍賣場售價至少是商人收購價兩倍的製作材料與綠色以上物品上顯示拍賣槌。需要你自己的價格：掃描一次，或使用 GoldScout Companion。",
 })

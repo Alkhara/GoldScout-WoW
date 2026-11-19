@@ -1,10 +1,10 @@
--- A gold coin on bag items worth listing on the auction house instead of
+-- An auction house hammer on bag items worth listing on the auction house instead of
 -- selling to a vendor: crafting reagents and green or better items whose
 -- auction price, after the cut, is at least RATIO times the vendor price.
 -- Gray junk, quest items and bound items never get one, and neither does an
 -- item priced only by the regional estimate: it takes your own realm and
 -- faction's prices (a scan or GoldScout Companion). Works in Blizzard's bags
--- and in Bagnon; the coin is only a picture on the slot, so clicking the item
+-- and in Bagnon; the hammer is only a picture on the slot, so clicking the item
 -- works as always, in combat too. /gscout set bagcoins off turns it off.
 local _, ns = ...
 local L = ns.L
@@ -15,12 +15,15 @@ ns.Bags = Bags
 Bags.RATIO = 2
 local GREEN = 2                          -- item quality: uncommon
 local BIND_ON_PICKUP, QUEST_ITEM = 1, 4  -- item bind types that can't go on the auction house
-local COIN_TEXTURE = "Interface\\MoneyFrame\\UI-GoldIcon"
+-- The auction house's hammer (the map's auctioneer icon), not a coin: junk sellers such as Scrap mark items to
+-- vendor with a gold coin, the opposite advice.
+local HAMMER_ATLAS = "Auctioneer"
+local HAMMER_TEXTURE = "Interface\\Minimap\\Tracking\\Auctioneer"
 local DISC_TEXTURE = "Interface\\CharacterFrame\\TempPortraitAlphaMask"   -- a plain white disc
 
 -- What an item fetches each on the auction house after the cut, and its vendor price, when it's worth listing
 -- rather than vendoring; nil otherwise (or until the game has loaded the item). isBound: the copy in your bags.
--- Without a coin, the second return says why.
+-- Without a hammer, the second return says why.
 local function Judge(itemID, isBound)
   if not itemID then
     return nil, "empty"
@@ -116,14 +119,17 @@ local function Mark(button)
   local worth = Bags:ForButton(button)
   local coin = button.GoldScoutCoin
   if worth and not coin then
-    -- A dark disc behind the coin so it stands out on bright icons.
+    -- A dark disc behind the hammer so it stands out on bright icons.
     local back = button:CreateTexture(nil, "OVERLAY", nil, 6)
     back:SetTexture(DISC_TEXTURE)
     back:SetVertexColor(0, 0, 0, 0.75)
     back:SetSize(19, 19)
     back:SetPoint("TOPRIGHT", button, "TOPRIGHT", 1, 1)
     coin = button:CreateTexture(nil, "OVERLAY", nil, 7)
-    coin:SetTexture(COIN_TEXTURE)
+    if not (coin.SetAtlas and C_Texture and C_Texture.GetAtlasInfo and C_Texture.GetAtlasInfo(HAMMER_ATLAS)
+        and pcall(coin.SetAtlas, coin, HAMMER_ATLAS)) then
+      coin:SetTexture(HAMMER_TEXTURE)
+    end
     coin:SetSize(15, 15)
     coin:SetPoint("CENTER", back, "CENTER")
     button.GoldScoutCoin, button.GoldScoutCoinBack = coin, back
@@ -160,7 +166,7 @@ end
 
 -- Redraws every slot seen so far: after a scan or new companion prices, once items load, or the setting changes.
 -- Closed bags too: Bagnon only redraws a slot when its contents change, so a slot first drawn before its item
--- or prices loaded would otherwise keep no coin.
+-- or prices loaded would otherwise keep no hammer.
 function Bags:Refresh()
   for button in pairs(seen) do
     Mark(button)
