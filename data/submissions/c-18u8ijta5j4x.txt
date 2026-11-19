@@ -1,4 +1,12 @@
-GoldScout-export 5^18u8ijta5j4x^1
+GoldScout-export 5^18u8ijta5j4x^2
+3244^1^0^11^12^1413^0.5108^0.1551^1^Großer Ebenenschreiter^17056:1:1^
+3743^4^0^23^24^1440^0.5482^0.6233^4^Krieger der Fäulnisklauen^2589:2:3,16651:1:1,16656:1:1^
+3746^2^0^25^25^1440^0.5648^0.6392^2^Höhlenbehüter der Fäulnisklauen^2589:1:1,16743:1:1^
+3748^1^0^24^24^1440^0.5671^0.6284^1^Schamane der Fäulnisklauen^16645:1:1^
+3749^2^0^24^25^1440^0.5687^0.6319^2^Ursa der Fäulnisklauen^^
+3765^1^0^27^27^1440^0.7976^0.5067^1^Satyr der Herzschinder^^
+3825^1^0^28^28^1440^0.7794^0.5593^1^Geisterpfotenalpha^1015:1:1^
+12921^3^0^23^24^1440^0.5639^0.6377^3^Wütende Fäulnisklaue^^
 260322^2^0^0^0^0^0.0000^0.0000^0^^273023:1:1,273024:1:1^
 260325^1^0^0^0^0^0.0000^0.0000^0^^273026:1:1^
 260326^1^0^0^0^0^0.0000^0.0000^0^^270866:1:1,273028:1:1^
@@ -15,10 +23,12 @@ GoldScout-export 5^18u8ijta5j4x^1
 275045^1^0^0^0^0^0.0000^0.0000^0^^4306:1:2^
 275046^1^0^0^0^0^0.0000^0.0000^0^^284844:1:1^
 @i^770^Spitzer Krokiliskenzahn
+@i^1015^Magere Wolfflanke
 @i^1074^Harte Spinnenbeinspitze
 @i^1697^Beißender Raptorzahn
 @i^1756^Verstärkte Kettenarmschienen
 @i^1828^Steinkriegsaxt
+@i^2589^Leinenstoff
 @i^3180^Gesprenkelte Raptorschuppe
 @i^3667^Zartes Krokiliskenfleisch
 @i^3685^Raptorei
@@ -26,6 +36,11 @@ GoldScout-export 5^18u8ijta5j4x^1
 @i^4306^Seidenstoff
 @i^4715^Geschmückter Umhang
 @i^13062^Donnerholz
+@i^16645^Schredderanleitung - Seite 1
+@i^16651^Schredderanleitung - Seite 7
+@i^16656^Schredderanleitung - Seite 12
+@i^16743^Holzfällerseil
+@i^17056^Leichte Feder
 @i^270866^Relikt der Titanen
 @i^271100^Dickichtraptorfleisch
 @i^273023^Salzschuppengurt
@@ -34,10 +49,12 @@ GoldScout-export 5^18u8ijta5j4x^1
 @i^273028^Reliquiarmantelung
 @i^284844^Dragonmaw-Bericht
 @q^770^0:15:0
+@q^1015^1:7:1
 @q^1074^0:15:0
 @q^1697^0:15:0
 @q^1756^0:4:0
 @q^1828^0:2:0
+@q^2589^1:7:1
 @q^3180^0:15:0
 @q^3667^1:7:1
 @q^3685^1:7:1
@@ -45,6 +62,11 @@ GoldScout-export 5^18u8ijta5j4x^1
 @q^4306^1:7:1
 @q^4715^2:4:0
 @q^13062^3:2:0
+@q^16645^1:12:0
+@q^16651^1:12:0
+@q^16656^1:12:0
+@q^16743^1:12:0
+@q^17056^1:15:1
 @q^270866^1:12:0
 @q^271100^1:12:0
 @q^273023^3:4:0
@@ -52,6 +74,8 @@ GoldScout-export 5^18u8ijta5j4x^1
 @q^273026^3:4:0
 @q^273028^3:4:0
 @q^284844^1:12:0
+@m^1413^Das Brachland
+@m^1440^Ashenvale
 @c^2454^
 @c^2455^
 @c^2456^
@@ -768,4 +792,12 @@ GoldScout-export 5^18u8ijta5j4x^1
 @c^285279^
 @c^285280^
 @c^285281^
+@a^3244^70:1
+@a^3743^249:1,251:3
+@a^3746^251:2
+@a^3748^251:1
+@a^3749^251:2
+@a^3765^215:1
+@a^3825^235:1
+@a^12921^251:3
 @l^0^deDE

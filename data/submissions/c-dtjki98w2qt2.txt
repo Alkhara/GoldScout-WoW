@@ -1,5 +1,10 @@
-GoldScout-export 5^dtjki98w2qt2^4
+GoldScout-export 5^dtjki98w2qt2^6
 690^1^0^39^39^1434^0.3692^0.4249^1^Basilisco Ojogélido^1701:1:1,2476:1:1^
+755^6^0^34^35^1435^0.2531^0.4398^6^Rondafango perdido^3771:1:1,3792:1:1,4306:2:3,4338:1:1^
+764^11^0^38^39^1435^0.1492^0.3725^11^Caminalodo^1710:1:1,3817:1:1,4607:1:1,6065:1:1^
+765^6^0^39^40^1435^0.1283^0.3548^6^Viejo caminalodo^1710:1:1^
+766^2^0^40^41^1435^0.1100^0.3186^2^Horror enredado^^
+858^1^0^36^37^1435^0.2547^0.4482^1^Girapenas^4585:1:1,10285:1:1^
 1663^1^0^0^0^0^0.0000^0.0000^0^^4306:1:1,273817:1:1^
 1666^2^0^0^0^0^0.0000^0.0000^0^^1205:1:1,3640:1:1,4306:1:2,273807:2:2^
 1696^2^0^0^0^0^0.0000^0.0000^0^^2592:1:3,4306:1:2,252792:1:1,273804:1:1,273806:1:1^
@@ -18,6 +23,7 @@ GoldScout-export 5^dtjki98w2qt2^4
 @i^1205^Zumo de melón
 @i^1476^Miembro de araña partido
 @i^1701^Garra de basilisco curva
+@i^1710^Poción de curación superior
 @i^1749^Capa de eslabones
 @i^1772^Zapatos brocados
 @i^1784^Pantalones a punto de cruz
@@ -30,11 +36,19 @@ GoldScout-export 5^dtjki98w2qt2^4
 @i^2592^Paño de lana
 @i^2783^Trabuco de pésima calidad
 @i^3640^Cabeza de Furiahonda
+@i^3771^Pata de cero salvaje
+@i^3792^Cinturón entrelazado
+@i^3817^Rodela reforzada
 @i^4306^Paño de seda
+@i^4338^Tela de paño mágico
+@i^4585^Mandíbula de araña chorreando
+@i^4607^Moho de cueva delicado
 @i^5465^Pata de araña pequeña
+@i^6065^Ensayos sobre convergencia dimensional de Khadgar
 @i^6586^Guantes de exploración del águila
 @i^6805^Cuerno de Vorlus
 @i^9822^Manteo durable del hechicero
+@i^10285^Seda de las Sombras
 @i^15269^Hacha de batalla maciza de protección Arcana
 @i^248688^Cajón saqueado: textiles de oficial
 @i^248689^Cajón saqueado: curiosidades de oficial
@@ -51,6 +65,7 @@ GoldScout-export 5^dtjki98w2qt2^4
 @q^1205^1:0:0
 @q^1476^0:15:0
 @q^1701^0:15:0
+@q^1710^1:0:0
 @q^1749^0:4:0
 @q^1772^0:4:0
 @q^1784^0:4:0
@@ -63,11 +78,19 @@ GoldScout-export 5^dtjki98w2qt2^4
 @q^2592^1:7:1
 @q^2783^0:2:0
 @q^3640^1:12:0
+@q^3771^1:0:0
+@q^3792^0:4:0
+@q^3817^0:4:0
 @q^4306^1:7:1
+@q^4338^1:7:1
+@q^4585^0:15:0
+@q^4607^1:0:0
 @q^5465^1:7:1
+@q^6065^1:12:0
 @q^6586^2:4:0
 @q^6805^1:12:0
 @q^9822^2:4:0
+@q^10285^1:7:1
 @q^15269^2:2:0
 @q^248688^1:0:1
 @q^248689^1:0:1
@@ -81,6 +104,7 @@ GoldScout-export 5^dtjki98w2qt2^4
 @q^274092^3:2:0
 @q^281023^1:12:0
 @m^1434^Vega de Tuercespina
+@m^1435^Pantano de las Penas
 @m^1438^Teldrassil
 @m^1453^Ciudad de Ventormenta
 @c^118^
@@ -1276,6 +1300,11 @@ GoldScout-export 5^dtjki98w2qt2^4
 @c^279985^
 @c^279987^
 @a^690^167:1
+@a^755^145:2,165:1,184:3
+@a^764^122:2,123:1,142:2,143:5,163:1
+@a^765^121:1,122:1,123:1,142:2,143:1
+@a^766^121:1,122:1
+@a^858^165:1
 @a^5043^270:4
 @a^6128^249:1
 @a^272096^169:1,189:2

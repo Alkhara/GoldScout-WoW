@@ -1,4 +1,4 @@
-GoldScout-export 5^seedhykaa5zj^5
+GoldScout-export 5^seedhykaa5zj^6
 588^10^0^34^35^1434^0.2468^0.1181^10^Bloodscalp Scout^1519:5:5,2748:1:1,4306:2:3^
 595^12^0^34^35^1434^0.2495^0.1147^12^Bloodscalp Hunter^1519:7:7,2735:1:1,2738:1:1,2748:1:1,3771:2:2,4306:4:5,5009:1:1,277957:1:1^
 597^3^0^36^37^1434^0.2352^0.1037^3^Bloodscalp Berserker^1519:1:1,1710:1:1,2751:1:1,4306:1:1^
@@ -24,7 +24,10 @@ GoldScout-export 5^seedhykaa5zj^5
 2371^10^0^31^32^1424^0.5959^0.7185^10^Daggerspine Siren^1205:1:1,7072:1:1,17057:1:1,17058:2:2,213546:1:1^
 2376^8^0^30^31^1424^0.4181^0.6816^8^Torn Fin Oracle^3716:6:6,5524:2:2,5785:1:1,6308:1:2,17057:2:2,17058:3:3,213546:1:1^
 2377^7^0^31^32^1424^0.4180^0.6776^7^Torn Fin Tidehunter^3716:4:4,5524:2:2,5785:1:1,17057:1:1,17058:1:1^
+2554^13^0^32^33^1417^0.6429^0.7155^13^Witherbark Axe Thrower^1710:1:1,3771:1:1,4306:3:5,7273:7:7,216483:1:1^
+2555^4^0^33^34^1417^0.6489^0.7218^4^Witherbark Witch Doctor^2290:1:1,4306:2:3,7273:3:3,7420:1:1,216483:1:1^
 2618^1^0^34^34^1417^0.5975^0.5954^1^Hammerfall Peon^213543:1:1^
+2619^8^0^34^35^1417^0.6004^0.5611^8^Hammerfall Grunt^3771:1:1,3808:1:1,4306:4:6^
 2714^1^0^35^35^1417^0.6040^0.6097^1^Forsaken Courier^4482:1:1^
 2733^1^0^36^36^1417^0.6004^0.5921^1^Apothecary Jorell^4338:1:1^
 3974^1^0^0^0^0^0.0000^0.0000^0^^274292:1:1^
@@ -98,6 +101,7 @@ GoldScout-export 5^seedhykaa5zj^5
 @i^1806^Tough Cloak
 @i^1809^Tough Leather Shoulderpads
 @i^1827^Meat Cleaver
+@i^2290^Scroll of Intellect II
 @i^2295^Large Boar Tusk
 @i^2450^Briarthorn
 @i^2592^Wool Cloth
@@ -121,6 +125,7 @@ GoldScout-export 5^seedhykaa5zj^5
 @i^3784^Metal Stave
 @i^3796^Interlaced Gloves
 @i^3804^Hardened Leather Gloves
+@i^3808^Double Mail Belt
 @i^3873^Plans: Golden Scale Cuirass
 @i^3918^Singing Crystal Shard
 @i^4053^Large River Crocolisk Skin
@@ -147,7 +152,9 @@ GoldScout-export 5^seedhykaa5zj^5
 @i^6690^Ferine Leggings
 @i^6694^Heart of Agamaggan
 @i^7072^Naga Scale
+@i^7273^Witherbark Totem Stick
 @i^7417^Phalanx Boots of the Eagle
+@i^7420^Phalanx Headguard of Stamina
 @i^7685^Orb of the Forgotten Seer
 @i^8146^Wicked Claw
 @i^8747^Hardened Leather Helm
@@ -172,6 +179,7 @@ GoldScout-export 5^seedhykaa5zj^5
 @i^213545^Scroll: PEATCHY ATTAX
 @i^213546^Scroll: SHOOBEEDOOP
 @i^213547^Scroll: THAW WORDS
+@i^216483^Witherbark Mallet
 @i^248689^Waylaid Crate: Journeyman Curiosities
 @i^248705^Waylaid Crate: Journeyman Fabrics
 @i^252817^Pattern: Totemic Leather Helm
@@ -200,6 +208,7 @@ GoldScout-export 5^seedhykaa5zj^5
 @q^1806^0:4:0
 @q^1809^0:4:0
 @q^1827^0:2:0
+@q^2290^1:0:0
 @q^2295^0:15:0
 @q^2450^1:7:1
 @q^2592^1:7:1
@@ -223,6 +232,7 @@ GoldScout-export 5^seedhykaa5zj^5
 @q^3784^0:2:0
 @q^3796^0:4:0
 @q^3804^0:4:0
+@q^3808^0:4:0
 @q^3873^2:9:0
 @q^3918^1:12:0
 @q^4053^1:12:0
@@ -249,7 +259,9 @@ GoldScout-export 5^seedhykaa5zj^5
 @q^6690^3:4:0
 @q^6694^3:4:0
 @q^7072^1:7:1
+@q^7273^1:12:0
 @q^7417^2:4:0
+@q^7420^2:4:0
 @q^7685^3:4:0
 @q^8146^1:7:1
 @q^8747^0:4:0
@@ -274,6 +286,7 @@ GoldScout-export 5^seedhykaa5zj^5
 @q^213545^1:0:0
 @q^213546^1:0:0
 @q^213547^1:0:0
+@q^216483^1:0:0
 @q^248689^1:0:1
 @q^248705^2:0:1
 @q^252817^3:9:0
@@ -1030,7 +1043,10 @@ GoldScout-export 5^seedhykaa5zj^5
 @a^2371^291:7,292:3
 @a^2376^267:2,268:5,269:1
 @a^2377^267:2,268:3,269:2
+@a^2554^253:1,272:2,292:6,293:4
+@a^2555^272:1,292:2,293:1
 @a^2618^231:1
+@a^2619^212:1,231:2,232:5
 @a^2714^252:1
 @a^2733^232:1
 @a^4284^137:1
