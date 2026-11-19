@@ -74,6 +74,9 @@ MAX_ITEMS_PER_SPOT = 100    # different items fished up at one spot
 # Rate checks against data already accepted from other players.
 OUTLIER_MIN_ATTEMPTS = 30   # both sides need at least this many attempts
 OUTLIER_Z = 6.0             # how far apart two drop rates must be to flag
+# A rate higher than everyone else's takes at least this many drops to count as unusual: one lucky world drop
+# (a green from a Coyote nobody else saw) isn't evidence of anything, and held uploads for review.
+OUTLIER_MIN_DROPS = 2
 
 INT = re.compile(r"^(0|[1-9][0-9]{0,8})$")
 COORD = re.compile(r"^(0|1)\.[0-9]{1,6}$")
@@ -533,6 +536,8 @@ def compare(result, others, quest_items=(), totals=None, minus=None):
             for item in sorted((set(mine) | set(entry[key])) - skip):
                 drops = mine.get(item, (0, 0))[0]
                 theirs = entry[key].get(item, 0) - own[key].get(item, 0)
+                if drops < OUTLIER_MIN_DROPS and drops * other_attempts > theirs * attempts:
+                    continue    # one drop above everyone else's rate: luck, not a pattern
                 z = _z(drops, attempts, theirs, other_attempts)
                 if abs(z) >= OUTLIER_Z:
                     flagged += 1

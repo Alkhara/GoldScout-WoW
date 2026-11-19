@@ -206,6 +206,15 @@ class OutlierTests(unittest.TestCase):
         result = submission.compare(submission.parse("GoldScout-export 2^abcdefghijkl^3\n" + big), [self.OTHERS])
         self.assertTrue(result.warnings)
 
+    def test_one_lucky_drop_is_not_flagged(self):
+        # Held uploads: one green world drop from a mob nobody else saw it from, in 30-40 kills.
+        def export(drops):
+            mob = (CLATTERING.replace("3812^11^0", "3812^40^0").replace("^11^Clattering", "^40^Clattering")
+                   .replace("2674:4:4", "2674:4:4,9999:%d:%d" % (drops, drops)))
+            return submission.parse("GoldScout-export 2^abcdefghijkl^3\n" + mob)
+        self.assertFalse(any("item 9999" in w for w in submission.compare(export(1), [self.OTHERS]).warnings))
+        self.assertTrue(any("item 9999" in w for w in submission.compare(export(3), [self.OTHERS]).warnings))
+
     def test_small_samples_are_not_flagged(self):
         result = submission.compare(submission.parse(GOOD), [self.OTHERS])
         self.assertEqual(result.warnings, [])
