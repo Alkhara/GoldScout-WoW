@@ -1,5 +1,9 @@
-GoldScout-export 5^v47hhdsw85n3^1
+GoldScout-export 5^v47hhdsw85n3^2
 1853^1^0^0^0^0^0.0000^0.0000^0^^12843:1:1,13964:1:1,16727:1:1^
+5982^19^0^46^48^1419^0.5613^0.3396^19^Black Slayer^1464:5:5,3404:8:8,5117:3:3,5829:5:5,8168:15:15,8396:6:6,11417:1:1,11418:6:6,12037:5:5,12207:3:3,15235:1:1^
+5988^2^0^51^51^1419^0.4640^0.1987^2^Scorpok Stinger^12037:1:1,19933:1:1,19934:1:1,19935:1:1^
+5990^1^0^47^48^1419^0.6159^0.2632^1^Redstone Basilisk^8394:1:1^
+6004^1^0^52^52^1419^0.6470^0.4113^1^Shadowsworn Cultist^^
 10432^1^0^0^0^0^0.0000^0.0000^0^^12843:1:1,273121:1:1,273130:1:1^
 10433^1^0^0^0^0^0.0000^0.0000^0^^3950:1:1,8948:1:1,12843:1:1^
 10469^4^0^0^0^0^0.0000^0.0000^0^^14047:1:4^
@@ -32,21 +36,31 @@ GoldScout-export 5^v47hhdsw85n3^1
 14520^1^0^0^0^0^0.0000^0.0000^0^^14047:1:4^
 16093^2^0^60^60^1454^0.3547^0.3741^2^Spectral Stalker^^
 @i^1074^Hard Spider Leg Tip
+@i^1464^Buzzard Talon
+@i^3404^Buzzard Wing
 @i^3950^Twill Shoulderpads
 @i^3969^Smooth Leather Belt
 @i^4337^Thick Spider's Silk
+@i^5117^Vibrant Plume
+@i^5829^Razor-sharp Beak
 @i^6530^Nightcrawlers
 @i^7972^Ichor of Undeath
 @i^8146^Wicked Claw
+@i^8168^Jet Black Feather
+@i^8394^Basilisk Brain
+@i^8396^Vulture Gizzard
 @i^8754^Twill Cover
 @i^8766^Morning Glory Dew
 @i^8948^Dried King Bolete
 @i^10155^Mercurial Greaves of Agility
 @i^10235^Engraved Helm of Magic
 @i^10285^Shadow Silk
+@i^11417^Feathery Wing
+@i^11418^Hollow Wing Bone
 @i^12005^Granite Ring of the Gorilla
 @i^12037^Mystery Meat
 @i^12205^White Spider Meat
+@i^12207^Giant Egg
 @i^12753^Skin of Shadow
 @i^12808^Essence of Undeath
 @i^12843^Corruptor's Scourgestone
@@ -59,6 +73,7 @@ GoldScout-export 5^v47hhdsw85n3^1
 @i^14047^Runecloth
 @i^14227^Ironweb Spider Silk
 @i^14528^Rattlecage Buckler
+@i^15235^Crescent Edge of the Defender
 @i^16701^Dreadmist Mantle
 @i^16722^Lightforge Bracers
 @i^16727^Lightforge Helm
@@ -68,6 +83,7 @@ GoldScout-export 5^v47hhdsw85n3^1
 @i^19441^Huge Venom Sac
 @i^19933^Glowing Scorpid Blood
 @i^19934^Large Scorpid Claw
+@i^19935^Empty Venom Sac
 @i^20520^Dark Rune
 @i^22381^Silithus Venom Sample
 @i^23200^Totem of Sustaining
@@ -78,21 +94,31 @@ GoldScout-export 5^v47hhdsw85n3^1
 @i^273130^Undeath Engine
 @i^276784^Charger's Lost Soul
 @q^1074^0:15:0
+@q^1464^0:15:0
+@q^3404^1:7:1
 @q^3950^0:4:0
 @q^3969^0:4:0
 @q^4337^1:7:1
+@q^5117^1:12:0
+@q^5829^0:15:0
 @q^6530^1:0:0
 @q^7972^1:7:1
 @q^8146^1:7:1
+@q^8168^1:7:1
+@q^8394^1:12:0
+@q^8396^1:12:0
 @q^8754^0:4:0
 @q^8766^1:0:0
 @q^8948^1:0:0
 @q^10155^2:4:0
 @q^10235^2:4:0
 @q^10285^1:7:1
+@q^11417^0:15:0
+@q^11418^0:15:0
 @q^12005^2:4:0
 @q^12037^1:7:1
 @q^12205^1:7:1
+@q^12207^1:7:1
 @q^12753^2:12:0
 @q^12808^2:7:1
 @q^12843^2:12:0
@@ -105,6 +131,7 @@ GoldScout-export 5^v47hhdsw85n3^1
 @q^14047^1:7:1
 @q^14227^1:7:1
 @q^14528^3:4:0
+@q^15235^2:2:0
 @q^16701^3:4:0
 @q^16722^3:4:0
 @q^16727^3:4:0
@@ -114,6 +141,7 @@ GoldScout-export 5^v47hhdsw85n3^1
 @q^19441^1:7:1
 @q^19933^1:15:0
 @q^19934^0:15:0
+@q^19935^0:15:0
 @q^20520^2:7:1
 @q^22381^1:12:0
 @q^23200^3:4:0
@@ -123,6 +151,7 @@ GoldScout-export 5^v47hhdsw85n3^1
 @q^273125^2:15:1
 @q^273130^2:15:1
 @q^276784^1:12:0
+@m^1419^Blasted Lands
 @m^1451^Silithus
 @m^1454^Orgrimmar
 @c^118^
@@ -813,6 +842,10 @@ GoldScout-export 5^v47hhdsw85n3^1
 @c^285280^
 @c^285281^
 @c^286152^
+@a^5982^69:3,112:2,151:11,152:1,171:2
+@a^5988^69:2
+@a^5990^112:1
+@a^6004^172:1
 @a^11735^127:3,147:3,148:5
 @a^11736^187:1,207:4,208:7,228:3,248:3
 @a^11738^127:2,147:2,148:1,168:2

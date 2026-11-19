@@ -1,4 +1,8 @@
-GoldScout-export 5^bc8q9lt657eo^2
+GoldScout-export 5^bc8q9lt657eo^3
+117^2^0^11^12^1436^0.4906^0.1679^2^Riverpaw Gnoll^2589:1:1^
+832^1^0^19^19^1436^0.3908^0.2158^1^Dust Devil^2091:1:1^
+833^39^0^11^12^1436^0.3923^0.2891^39^Coyote Packleader^2673:19:19,2698:1:1,3299:16:16,3300:3:3,6337:1:1,6518:1:1,211780:1:1^
+834^74^0^10^11^1436^0.4511^0.2398^74^Coyote^818:1:1,2673:26:26,2959:1:1,3299:21:21,3300:12:12,4563:1:1,4566:1:1,6507:1:1,6509:1:1,211780:1:1^
 2244^7^0^21^22^1424^0.7756^0.4184^7^Syndicate Shadow Mage^422:1:1,1777:1:1,1797:1:1,2592:3:4,5620:5:5^
 2260^8^0^21^22^1424^0.7956^0.4335^8^Syndicate Rogue^1775:1:1,2589:1:2,2592:2:3,4306:1:1,4697:1:1^
 2261^13^0^20^21^1424^0.7805^0.4194^13^Syndicate Watchman^422:1:1,929:1:1,1205:1:1,1799:1:1,2592:1:1,7608:1:1,248688:1:1^
@@ -10,6 +14,7 @@ GoldScout-export 5^bc8q9lt657eo^2
 2427^2^0^24^24^1424^0.7754^0.4194^2^Jailor Eston^422:1:1,2592:1:2,3467:1:1^
 2428^1^0^24^24^1424^0.7782^0.4042^1^Jailor Marlgen^3499:1:1^
 @i^422^Dwarven Mild
+@i^818^Tigerseye
 @i^929^Healing Potion
 @i^1081^Crisp Spider Meat
 @i^1205^Melon Juice
@@ -18,11 +23,17 @@ GoldScout-export 5^bc8q9lt657eo^2
 @i^1777^Brocade Shoulderpads
 @i^1797^Rawhide Bracers
 @i^1799^Rawhide Gloves
+@i^2091^Magic Dust
 @i^2251^Gooey Spider Leg
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2673^Coyote Meat
+@i^2698^Recipe: Cooked Crab Claw
 @i^2940^Bloody Bear Paw
+@i^2959^Journeyman's Boots
 @i^3182^Spider's Silk
+@i^3299^Fractured Canine
+@i^3300^Rabbit's Foot
 @i^3467^Dull Iron Key
 @i^3476^Gray Bear Tongue
 @i^3477^Creeper Ichor
@@ -31,17 +42,28 @@ GoldScout-export 5^bc8q9lt657eo^2
 @i^3730^Big Bear Meat
 @i^4306^Silk Cloth
 @i^4428^Spider Palp
+@i^4563^Billy Club
+@i^4566^Sturdy Quarterstaff of Healing
 @i^4697^Burnished Girdle
 @i^5620^Vial of Innocent Blood
 @i^5635^Sharp Claw
+@i^6289^Raw Longjaw Mud Snapper
+@i^6291^Raw Brilliant Smallfish
+@i^6308^Raw Bristle Whisker Catfish
+@i^6337^Infantry Leggings of Magic
+@i^6507^Infantry Bracers
+@i^6509^Infantry Belt
+@i^6518^Pioneer Boots
 @i^7608^Seer's Fine Stein
 @i^11406^Rotting Bear Carcass
 @i^11407^Torn Bear Pelt
 @i^21071^Raw Sagefish
+@i^211780^Scroll: KWYJIBO
 @i^248682^Waylaid Crate: Apprentice Herbs
 @i^248688^Waylaid Crate: Journeyman Textiles
 @i^248702^Waylaid Crate: Apprentice Fabrics
 @q^422^1:0:0
+@q^818^2:7:1
 @q^929^1:0:0
 @q^1081^1:7:1
 @q^1205^1:0:0
@@ -50,11 +72,17 @@ GoldScout-export 5^bc8q9lt657eo^2
 @q^1777^0:4:0
 @q^1797^0:4:0
 @q^1799^0:4:0
+@q^2091^1:0:0
 @q^2251^1:7:1
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2673^1:7:1
+@q^2698^1:9:0
 @q^2940^0:15:0
+@q^2959^1:4:0
 @q^3182^1:7:1
+@q^3299^0:15:0
+@q^3300^0:15:0
 @q^3467^1:13:0
 @q^3476^1:12:0
 @q^3477^1:12:0
@@ -63,17 +91,29 @@ GoldScout-export 5^bc8q9lt657eo^2
 @q^3730^1:7:1
 @q^4306^1:7:1
 @q^4428^0:15:0
+@q^4563^1:2:0
+@q^4566^2:2:0
 @q^4697^2:4:0
 @q^5620^1:12:0
 @q^5635^1:7:1
+@q^6289^1:7:1
+@q^6291^1:7:1
+@q^6308^1:7:1
+@q^6337^2:4:0
+@q^6507^1:4:0
+@q^6509^1:4:0
+@q^6518^1:4:0
 @q^7608^2:4:0
 @q^11406^0:15:0
 @q^11407^1:12:0
 @q^21071^1:7:1
+@q^211780^1:0:0
 @q^248682^1:0:1
 @q^248688^1:0:1
 @q^248702^2:0:1
 @m^1424^Hillsbrad Foothills
+@m^1436^Westfall
+@m^1456^Thunder Bluff
 @c^118^
 @c^724^
 @c^733^
@@ -862,6 +902,10 @@ GoldScout-export 5^bc8q9lt657eo^2
 @c^279981^
 @c^279982^
 @c^286152^
+@a^117^51:1,68:1
+@a^832^87:1
+@a^833^68:2,69:3,87:1,88:4,89:1,107:1,108:10,126:5,127:1,128:1,146:5,147:2,166:2,172:1
+@a^834^51:9,68:3,69:3,70:3,71:9,87:7,88:1,89:1,90:2,107:9,108:13,109:1,126:2,128:1,146:4,147:1,166:4,172:1
 @a^2244^155:1,175:5,195:1
 @a^2260^175:4,176:2,196:2
 @a^2261^155:2,174:1,175:7,176:2,195:1
@@ -873,4 +917,5 @@ GoldScout-export 5^bc8q9lt657eo^2
 @a^2427^175:2
 @a^2428^175:1
 @f^1424^0^1^50^21071:1:1^153:1
+@f^1456^0^44^51^6289:27:27,6291:9:9,6308:8:8^228:44
 @l^0^enUS
