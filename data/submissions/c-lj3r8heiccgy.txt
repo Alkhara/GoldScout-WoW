@@ -1,7 +1,10 @@
-GoldScout-export 5^lj3r8heiccgy^1
+GoldScout-export 5^lj3r8heiccgy^2
+1126^2^0^6^7^1426^0.5668^0.5044^2^Grande jabalí del risco^2886:1:1^
 1128^3^0^5^6^1426^0.3942^0.5943^3^Oso negro joven^3169:1:1,3170:1:1,7073:1:1,7074:1:1^
+1131^2^0^7^8^1426^0.5169^0.5020^2^Lobo invernal^2672:1:1,3300:1:1^
 1134^2^0^5^6^1426^0.4256^0.5395^2^Wendigo joven^1369:1:1,250375:1:1^
 1135^6^0^6^7^1426^0.4129^0.4871^6^Wendigo^1417:1:1,1430:1:1,2644:1:1^
+1201^3^0^7^8^1426^0.5735^0.5594^3^Leopardo de la nieve^4814:2:2^
 271486^2^0^6^8^1426^0.4207^0.4935^2^Wendigo chamán^118:1:1,1411:1:1^
 271530^2^0^7^8^1426^0.4088^0.4565^2^Wendigo anciano^^
 271587^1^0^9^9^1426^0.4010^0.4841^1^Aúllaescarcha^280426:1:1^
@@ -11,8 +14,12 @@ GoldScout-export 5^lj3r8heiccgy^1
 @i^1417^Hacha de batalla golpeada
 @i^1430^Guantes de retales
 @i^2644^Capa de anillas sueltas
+@i^2672^Carne fibrosa de lobo
+@i^2886^Costilla de jabalí del risco
 @i^3169^Diente de oso astillado
 @i^3170^Diente de oso grande
+@i^3300^Pata de conejo
+@i^4814^Colmillo descolorido
 @i^7073^Colmillo roto
 @i^7074^Garra astillada
 @i^250375^Receta: elixir de sangre de mago menor
@@ -23,8 +30,12 @@ GoldScout-export 5^lj3r8heiccgy^1
 @q^1417^0:2:0
 @q^1430^0:4:0
 @q^2644^0:4:0
+@q^2672^1:7:1
+@q^2886^1:7:1
 @q^3169^0:15:0
 @q^3170^0:15:0
+@q^3300^0:15:0
+@q^4814^0:15:0
 @q^7073^0:15:0
 @q^7074^0:15:0
 @q^250375^1:9:0
@@ -162,9 +173,12 @@ GoldScout-export 5^lj3r8heiccgy^1
 @c^279981^
 @c^279982^
 @c^286152^
+@a^1126^191:1,211:1
 @a^1128^227:2,247:1
+@a^1131^190:1,210:1
 @a^1134^208:2
 @a^1135^188:4,208:2
+@a^1201^211:1,231:2
 @a^271486^188:2
 @a^271530^188:2
 @a^271587^188:1

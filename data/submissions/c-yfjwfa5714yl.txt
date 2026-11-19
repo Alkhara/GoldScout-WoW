@@ -1,4 +1,6 @@
-GoldScout-export 5^yfjwfa5714yl^20
+GoldScout-export 5^yfjwfa5714yl^21
+1501^8^0^1^1^1420^0.3159^0.6271^8^Mindless Zombie^159:2:2,1364:1:1,2210:1:1,2589:4:4,2653:1:1,4604:1:1^
+1502^9^0^1^2^1420^0.3264^0.6329^9^Wretched Zombie^1376:1:1,2589:3:3,4604:2:2^
 2505^60^0^49^50^1425^0.7730^0.6721^60^Saltwater Snapjaw^3712:18:18,4555:32:32,4556:42:42,4603:1:1,7973:19:19,213546:1:1,213547:1:1^
 2639^1^0^45^45^1425^0.4777^0.6299^1^Vilebranch Axe Thrower^4599:1:1^
 2655^14^5^46^47^1425^0.5764^0.4245^14^Green Sludge^3671:2:2,3676:1:1,16884:1:1,20763:3:3^
@@ -118,12 +120,18 @@ GoldScout-export 5^yfjwfa5714yl^20
 247013^1^1^53^53^1447^0.7091^0.2913^1^Ranger Lydrea^14047:1:1,246722:1:1^
 247033^1^0^53^53^1447^0.7091^0.2912^1^Bloodshrike^^
 269254^1^0^46^46^1427^0.5895^0.8428^1^Famished Blackworg^4583:1:1,9912:1:1^
+@i^159^Refreshing Spring Water
 @i^1074^Hard Spider Leg Tip
 @i^1081^Crisp Spider Meat
+@i^1364^Ragged Leather Vest
+@i^1376^Frayed Cloak
 @i^1464^Buzzard Talon
 @i^1520^Troll Sweat
 @i^1645^Moonberry Juice
+@i^2210^Battered Buckler
 @i^2295^Large Boar Tusk
+@i^2589^Linen Cloth
+@i^2653^Flimsy Chain Gloves
 @i^3174^Spider Ichor
 @i^3403^Ivory Boar Tusk
 @i^3404^Buzzard Wing
@@ -167,6 +175,7 @@ GoldScout-export 5^yfjwfa5714yl^20
 @i^4599^Cured Ham Steak
 @i^4601^Soft Banana Bread
 @i^4603^Raw Spotted Yellowtail
+@i^4604^Forest Mushroom Cap
 @i^4608^Raw Black Truffle
 @i^4637^Steel Lockbox
 @i^4787^Burning Pitch
@@ -297,12 +306,18 @@ GoldScout-export 5^yfjwfa5714yl^20
 @i^274653^Deep Ritual Girdle
 @i^274655^Peacekeeper Wand
 @i^277112^Zum'rah's Head
+@q^159^1:0:0
 @q^1074^0:15:0
 @q^1081^1:7:1
+@q^1364^0:4:0
+@q^1376^0:4:0
 @q^1464^0:15:0
 @q^1520^0:15:0
 @q^1645^1:0:0
+@q^2210^0:4:0
 @q^2295^0:15:0
+@q^2589^1:7:1
+@q^2653^0:4:0
 @q^3174^1:7:1
 @q^3403^0:15:0
 @q^3404^1:7:1
@@ -346,6 +361,7 @@ GoldScout-export 5^yfjwfa5714yl^20
 @q^4599^1:0:0
 @q^4601^1:0:0
 @q^4603^1:7:1
+@q^4604^1:0:0
 @q^4608^1:0:0
 @q^4637^2:15:0
 @q^4787^0:15:0
@@ -477,6 +493,7 @@ GoldScout-export 5^yfjwfa5714yl^20
 @q^274655^3:2:0
 @q^277112^1:12:0
 @m^1419^Blasted Lands
+@m^1420^Tirisfal Glades
 @m^1425^The Hinterlands
 @m^1427^Searing Gorge
 @m^1428^Burning Steppes
@@ -876,6 +893,8 @@ GoldScout-export 5^yfjwfa5714yl^20
 @c^279982^
 @c^279990^
 @c^286152^
+@a^1501^246:8
+@a^1502^246:8,266:1
 @a^2505^176:1,235:3,236:1,255:9,274:1,275:28,294:3,295:14
 @a^2639^249:1
 @a^2655^151:1,171:12,172:1
