@@ -1,4 +1,4 @@
-GoldScout-export 5^igcld70cevb4^10
+GoldScout-export 5^igcld70cevb4^11
 6^20^0^1^2^1429^0.4758^0.3600^20^Kobold Vermin^755:3:3,1367:1:1,1376:1:1,2589:3:3,2650:1:1,2654:1:1,3363:1:1,4536:1:1,247834:1:1,247839:4:4^
 30^1^0^6^6^1429^0.3893^0.6855^1^Forest Spider^1476:1:1^
 38^22^0^3^4^1429^0.5435^0.4907^22^Defias Thug^159:3:3,752:10:10,1368:1:1,1372:1:1,1378:1:1,2589:9:9,2651:1:1,3365:1:1^
@@ -30,11 +30,25 @@ GoldScout-export 5^igcld70cevb4^10
 732^7^0^9^10^1429^0.7739^0.7533^7^Murloc Lurker^159:1:1,779:2:2,6303:1:3^
 735^4^0^6^7^1429^0.5543^0.6445^4^Murloc Streamrunner^779:2:2,1256:1:1^
 822^4^0^8^9^1429^0.7492^0.7083^4^Young Forest Bear^3169:1:1,4865:1:1,7073:2:2,7074:1:1^
+1116^4^0^10^10^1426^0.7469^0.5659^4^Rockjaw Ambusher^117:1:1,159:1:1,1419:1:1,2589:1:2,2591:1:1,7350:1:1,268548:1:1^
+1117^3^0^9^10^1426^0.7585^0.5807^3^Rockjaw Bonesnapper^118:1:1,1413:1:1,2589:1:1,2591:1:1,4666:1:1,9743:1:1,211785:1:1^
+1127^2^0^7^8^1426^0.5786^0.5047^2^Elder Crag Boar^769:1:1,2886:1:1^
 1922^10^0^7^8^1429^0.6816^0.6448^10^Gray Forest Wolf^2672:8:8,3299:3:3,8177:1:1^
+6123^10^0^10^11^1426^0.7697^0.6100^10^Dark Iron Spy^118:1:1,159:1:1,1504:1:1,1507:1:1,2589:2:3,274268:3:3^
 248362^1^0^3^3^1429^0.4937^0.2795^1^Shinyfinder Narf^755:1:1,3363:1:1,247886:1:1^
 248463^5^0^6^7^1429^0.5285^0.6159^5^Rumbler^^
 248464^1^0^6^6^1429^0.4160^0.7995^1^Nimsy^2589:1:2,2770:1:2,248002:1:1^
 248474^1^0^7^7^1429^0.6111^0.4915^1^Geosculptor Yip^2589:1:2,2646:1:1,2835:1:2,248003:1:1^
+260157^1^0^9^9^1426^0.7534^0.5668^1^Elder Snow Leopard^4814:1:1^
+261319^1^0^0^0^0^0.0000^0.0000^0^^270261:1:1,274286:1:1^
+263389^1^0^0^0^0^0.0000^0.0000^0^^2589:1:5^
+263390^3^0^0^0^0^0.0000^0.0000^0^^1505:1:1,275895:1:1^
+263396^6^0^0^0^0^0.0000^0.0000^0^^1513:1:1,1516:1:1,2589:1:5,2777:2:2,275891:1:1^
+263397^2^0^0^0^0^0.0000^0.0000^0^^1210:1:1,6542:1:1,275893:1:1^
+263438^3^0^0^0^0^0.0000^0.0000^0^^2589:2:5,211787:1:1^
+263470^5^0^0^0^0^0.0000^0.0000^0^^818:1:1,2672:3:3,3036:1:1,3300:1:1,211787:1:1^
+276003^2^0^8^8^1426^0.5612^0.4534^2^Minor Ice Elemental^2407:1:1^
+@i^117^Tough Jerky
 @i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
 @i^182^Garrick's Head
@@ -59,6 +73,7 @@ GoldScout-export 5^igcld70cevb4^10
 @i^1179^Ice Cold Milk
 @i^1180^Scroll of Stamina
 @i^1181^Scroll of Spirit
+@i^1210^Shadowgem
 @i^1256^Crystal Kelp Frond
 @i^1274^Hops
 @i^1364^Ragged Leather Vest
@@ -76,18 +91,25 @@ GoldScout-export 5^igcld70cevb4^10
 @i^1411^Withered Staff
 @i^1412^Crude Bastard Sword
 @i^1413^Feeble Sword
+@i^1419^Worn Leather Boots
 @i^1422^Worn Leather Gloves
 @i^1425^Worn Leather Vest
 @i^1431^Patchwork Pants
 @i^1476^Snapped Spider Limb
 @i^1497^Calico Cloak
+@i^1504^Warped Leather Bracers
+@i^1505^Warped Cloak
+@i^1507^Warped Leather Pants
 @i^1511^Commoner's Sword
 @i^1513^Old Greatsword
+@i^1516^Worn Hatchet
 @i^1737^Worn Mail Vest
 @i^2210^Battered Buckler
 @i^2211^Bent Large Shield
 @i^2213^Worn Large Shield
+@i^2407^Pattern: White Leather Jerkin
 @i^2589^Linen Cloth
+@i^2591^Dirty Trogg Cloth
 @i^2645^Loose Chain Gloves
 @i^2646^Loose Chain Pants
 @i^2650^Flimsy Chain Boots
@@ -96,9 +118,12 @@ GoldScout-export 5^igcld70cevb4^10
 @i^2654^Flimsy Chain Pants
 @i^2672^Stringy Wolf Meat
 @i^2770^Copper Ore
+@i^2777^Feeble Shortbow
 @i^2835^Rough Stone
+@i^2886^Crag Boar Rib
 @i^2962^Burnt Leather Breeches
 @i^3000^Brood Mother Carapace
+@i^3036^Heavy Shortbow
 @i^3169^Chipped Bear Tooth
 @i^3171^Broken Boar Tusk
 @i^3174^Spider Ichor
@@ -109,6 +134,8 @@ GoldScout-export 5^igcld70cevb4^10
 @i^4361^Copper Tube
 @i^4536^Shiny Red Apple
 @i^4564^Spiked Club of Healing
+@i^4666^Burnt Leather Belt
+@i^4814^Discolored Fang
 @i^4865^Ruined Pelt
 @i^5465^Small Spider Leg
 @i^5523^Small Barnacled Clam
@@ -116,11 +143,14 @@ GoldScout-export 5^igcld70cevb4^10
 @i^6267^Disciple's Pants of Stamina
 @i^6303^Raw Slitherskin Mackerel
 @i^6514^Disciple's Cloak
+@i^6542^Willow Cape of Frost Protection
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
+@i^7350^Disciple's Bracers
 @i^7351^Disciple's Boots
 @i^7997^Red Defias Mask
 @i^8177^Practice Sword
+@i^9743^Simple Shoes
 @i^9755^Nomad Gloves
 @i^211785^Scroll: CWAL
 @i^211787^Scroll: LOWER PING WHOMEVER
@@ -133,6 +163,14 @@ GoldScout-export 5^igcld70cevb4^10
 @i^248004^Arcane Explainer: Magical Stuff in Simple Words
 @i^254548^Longshore Murloc Gill
 @i^255007^Golem Isospring
+@i^268548^Empty Powder Keg
+@i^270261^Robes of the Disgraced Thane
+@i^274268^Dark Iron Map
+@i^274286^Durgen Dirgehammer's Head
+@i^275891^Dwarven Skull
+@i^275893^Searing Gourd
+@i^275895^Fading Echo
+@q^117^1:0:0
 @q^118^1:0:0
 @q^159^1:0:0
 @q^182^1:12:0
@@ -157,6 +195,7 @@ GoldScout-export 5^igcld70cevb4^10
 @q^1179^1:0:0
 @q^1180^1:0:0
 @q^1181^1:0:0
+@q^1210^2:7:1
 @q^1256^1:12:0
 @q^1274^1:12:0
 @q^1364^0:4:0
@@ -174,18 +213,25 @@ GoldScout-export 5^igcld70cevb4^10
 @q^1411^0:2:0
 @q^1412^0:2:0
 @q^1413^0:2:0
+@q^1419^0:4:0
 @q^1422^0:4:0
 @q^1425^0:4:0
 @q^1431^0:4:0
 @q^1476^0:15:0
 @q^1497^0:4:0
+@q^1504^0:4:0
+@q^1505^0:4:0
+@q^1507^0:4:0
 @q^1511^0:2:0
 @q^1513^0:2:0
+@q^1516^0:2:0
 @q^1737^0:4:0
 @q^2210^0:4:0
 @q^2211^0:4:0
 @q^2213^0:4:0
+@q^2407^2:9:0
 @q^2589^1:7:1
+@q^2591^0:15:0
 @q^2645^0:4:0
 @q^2646^0:4:0
 @q^2650^0:4:0
@@ -194,9 +240,12 @@ GoldScout-export 5^igcld70cevb4^10
 @q^2654^0:4:0
 @q^2672^1:7:1
 @q^2770^1:7:1
+@q^2777^0:2:0
 @q^2835^1:7:1
+@q^2886^1:7:1
 @q^2962^2:4:0
 @q^3000^2:4:0
+@q^3036^2:2:0
 @q^3169^0:15:0
 @q^3171^0:15:0
 @q^3174^1:7:1
@@ -207,6 +256,8 @@ GoldScout-export 5^igcld70cevb4^10
 @q^4361^1:7:1
 @q^4536^1:0:0
 @q^4564^2:2:0
+@q^4666^1:4:0
+@q^4814^0:15:0
 @q^4865^0:15:0
 @q^5465^1:7:1
 @q^5523^1:7:0
@@ -214,11 +265,14 @@ GoldScout-export 5^igcld70cevb4^10
 @q^6267^2:4:0
 @q^6303^1:7:1
 @q^6514^1:4:0
+@q^6542^2:4:0
 @q^7073^0:15:0
 @q^7074^0:15:0
+@q^7350^1:4:0
 @q^7351^1:4:0
 @q^7997^0:4:0
 @q^8177^1:2:0
+@q^9743^1:4:0
 @q^9755^1:4:0
 @q^211785^1:0:0
 @q^211787^1:0:0
@@ -231,6 +285,14 @@ GoldScout-export 5^igcld70cevb4^10
 @q^248004^1:12:0
 @q^254548^1:12:0
 @q^255007^1:7:1
+@q^268548^1:12:0
+@q^270261^3:4:0
+@q^274268^1:12:0
+@q^274286^1:12:0
+@q^275891^0:15:0
+@q^275893^1:15:0
+@q^275895^0:15:0
+@m^1426^Dun Morogh
 @m^1429^Elwynn Forest
 @m^1436^Westfall
 @c^2568^
@@ -1322,9 +1384,15 @@ GoldScout-export 5^igcld70cevb4^10
 @a^732^235:2,315:2,335:1,355:2
 @a^735^250:1,251:2,271:1
 @a^822^254:1,274:1,315:2
+@a^1116^214:1,235:3
+@a^1117^235:2,255:1
+@a^1127^211:2
 @a^1922^251:1,253:2,254:2,271:1,273:2,274:2
+@a^6123^235:1,255:9
 @a^248362^109:1
 @a^248463^192:3,308:1,327:1
 @a^248464^308:1
 @a^248474^192:1
+@a^260157^235:1
+@a^276003^191:2
 @l^0^enUS
