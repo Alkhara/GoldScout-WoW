@@ -1,4 +1,4 @@
-GoldScout-export 5^aouzn0e8e6ua^9
+GoldScout-export 5^aouzn0e8e6ua^10
 1120^1^0^7^7^1426^0.7025^0.3916^1^Frostmane Troll^^
 1557^4^0^40^41^1434^0.3270^0.6605^4^Elder Mistvale Gorilla^3919:2:2,4096:1:1,4097:1:1^
 1562^4^0^40^41^1434^0.2774^0.6973^4^Bloodsail Mage^4306:1:2^
@@ -17,6 +17,7 @@ GoldScout-export 5^aouzn0e8e6ua^9
 2760^22^0^38^39^1417^0.2558^0.3037^22^Burning Exile^3857:3:3,4479:8:8,4787:8:8,7068:2:2^
 2761^20^0^38^39^1417^0.6700^0.2970^20^Cresting Exile^4481:8:8,4791:9:18,7070:2:2,213547:1:1^
 2762^26^0^38^39^1417^0.5187^0.5044^26^Thundering Exile^4480:8:8,7069:3:3^
+3256^6^0^16^18^1413^0.5555^0.5047^6^Sunscale Scytheclaw^5055:5:5,5124:2:2,5165:3:3,211854:1:1,248685:1:1^
 3725^1^0^18^18^1439^0.4140^0.8117^1^Dark Strand Cultist^^
 3728^2^0^18^19^1439^0.4157^0.8103^2^Dark Strand Adept^2592:1:2^
 3974^2^0^0^0^0^0.0000^0.0000^0^^3456:1:1,7756:2:2,253986:1:1^
@@ -31,6 +32,7 @@ GoldScout-export 5^aouzn0e8e6ua^9
 4308^3^0^0^0^0^0.0000^0.0000^0^^^
 4540^12^0^0^0^0^0.0000^0.0000^0^^1710:1:1,3779:1:1,5213:1:1,7437:1:1,12010:1:1^
 4543^1^0^0^0^0^0.0000^0.0000^0^^274291:1:1^
+5831^1^0^21^21^1413^0.6051^0.3403^1^Swiftmane^5119:1:1,285330:1:1^
 6239^1^0^40^40^1416^0.8062^0.6148^1^Cyclonian^6894:1:1^
 6426^2^0^0^0^0^0.0000^0.0000^0^^4306:1:2,4607:1:1,262889:1:1^
 6427^1^0^0^0^0^0.0000^0.0000^0^^^
@@ -160,8 +162,12 @@ GoldScout-export 5^aouzn0e8e6ua^9
 @i^4784^Lifeless Stone
 @i^4787^Burning Pitch
 @i^4791^Enchanted Water
+@i^5055^Intact Raptor Horn
 @i^5116^Long Tail Feather
+@i^5119^Fine Loose Hair
+@i^5124^Small Raptor Tooth
 @i^5128^Shed Lizard Skin
+@i^5165^Sunscale Feather
 @i^5213^Scorching Wand
 @i^5414^Grizzled Scalp
 @i^5429^A Pretty Rock
@@ -203,7 +209,9 @@ GoldScout-export 5^aouzn0e8e6ua^9
 @i^15798^Chipped Ogre Teeth
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
+@i^211854^Scroll: OMIT KESA
 @i^213547^Scroll: THAW WORDS
+@i^248685^Waylaid Crate: Apprentice Curiosities
 @i^248690^Waylaid Crate: Earthly Expert Herbs
 @i^248694^Waylaid Crate: Expert Curiosities
 @i^253986^Pattern: Filigreed Shining Circlet
@@ -238,6 +246,7 @@ GoldScout-export 5^aouzn0e8e6ua^9
 @i^275003^Worgbinder's Treads
 @i^275004^Chain of the Corruptor
 @i^275009^Emblem of Slamming
+@i^285330^Signet of the Zhevra
 @i^286429^Big-Belly Belt
 @i^287010^Outrider's Gloves
 @q^118^1:0:0
@@ -308,8 +317,12 @@ GoldScout-export 5^aouzn0e8e6ua^9
 @q^4784^0:15:0
 @q^4787^0:15:0
 @q^4791^1:0:0
+@q^5055^1:12:0
 @q^5116^1:7:1
+@q^5119^0:15:0
+@q^5124^0:15:0
 @q^5128^0:15:0
+@q^5165^1:12:0
 @q^5213^2:2:0
 @q^5414^1:12:0
 @q^5429^0:15:0
@@ -351,7 +364,9 @@ GoldScout-export 5^aouzn0e8e6ua^9
 @q^15798^0:15:0
 @q^17057^1:15:0
 @q^17058^1:15:0
+@q^211854^1:0:0
 @q^213547^1:0:0
+@q^248685^1:0:1
 @q^248690^1:0:1
 @q^248694^1:0:1
 @q^253986^3:9:0
@@ -386,8 +401,10 @@ GoldScout-export 5^aouzn0e8e6ua^9
 @q^275003^3:4:0
 @q^275004^3:4:0
 @q^275009^3:4:0
+@q^285330^3:4:0
 @q^286429^3:4:0
 @q^287010^3:4:0
+@m^1413^The Barrens
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
 @m^1426^Dun Morogh
@@ -1656,8 +1673,10 @@ GoldScout-export 5^aouzn0e8e6ua^9
 @a^2760^104:3,105:8,124:5,125:6
 @a^2761^113:11,133:9
 @a^2762^190:11,210:15
+@a^3256^190:2,211:4
 @a^3725^328:1
 @a^3728^328:2
+@a^5831^132:1
 @a^6239^256:1
 @a^11218^328:1
 @a^251661^187:1
