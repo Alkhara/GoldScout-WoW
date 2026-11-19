@@ -1,5 +1,10 @@
-GoldScout-export 5^0fvwfe5g4vnw^4
+GoldScout-export 5^0fvwfe5g4vnw^6
+423^6^0^15^16^1433^0.1017^0.6640^6^Bâtard des Carmines^1212:1:1,2287:1:1,2589:1:2,2592:2:2,7289:1:1^
+441^2^0^18^18^1433^0.2551^0.7338^2^Dragonnet noir^^
+442^3^0^15^16^1433^0.0951^0.7303^3^Tarentule^1081:3:3,3167:2:2,3174:3:3^
+547^2^0^16^17^1433^0.2618^0.6975^2^Grand Broche-tripes^769:1:2,2677:1:1^
 565^1^0^21^21^1431^0.7580^0.2181^1^Loup redoutable enragé^893:1:1,1015:1:1^
+712^2^0^14^15^1433^0.0924^0.6641^2^Vandale des Carmines^1511:1:1,2287:1:1^
 1165^8^0^17^18^1432^0.7116^0.6514^8^Géomancien Brisepierre^2287:2:2,2592:2:4,2636:5:5^
 1167^6^0^18^19^1432^0.7066^0.6577^6^Terrassier Brisepierre^1179:1:1,2287:2:2,2589:3:5,2636:2:2^
 1174^2^0^12^13^1432^0.3586^0.2133^2^Géomancien Rat des tunnels^2589:2:5^
@@ -57,8 +62,10 @@ GoldScout-export 5^0fvwfe5g4vnw^4
 @i^1015^Steak de loup
 @i^1081^Chair croustillante d'araignée
 @i^1179^Lait glacé
+@i^1212^Bave de gnoll
 @i^1506^Gants déformés en cuir
 @i^1507^Pantalon déformé en cuir
+@i^1511^Epée commune
 @i^1743^Pantalon en mailles entrelacées
 @i^1750^Gants en anneaux rivetés
 @i^1794^Pourpoint raccommodé en cuir
@@ -84,6 +91,7 @@ GoldScout-export 5^0fvwfe5g4vnw^4
 @i^2924^Viande de crocilisque
 @i^2925^Peau de crocilisque
 @i^3010^Sable fin
+@i^3167^Poil d'araignée épais
 @i^3169^Dent d'ours abîmée
 @i^3170^Grand croc d'ours
 @i^3172^Tripes de sanglier
@@ -110,6 +118,7 @@ GoldScout-export 5^0fvwfe5g4vnw^4
 @i^6568^Pantalon chatoyant de la baleine
 @i^6889^Petit oeuf
 @i^7073^Croc brisé
+@i^7289^Patron : Cape de dragonnet noir
 @i^9749^Chemisette simple de la chouette
 @i^9802^Bottes excellente de brigandage
 @i^12237^Belle chair de crabe
@@ -136,8 +145,10 @@ GoldScout-export 5^0fvwfe5g4vnw^4
 @q^1015^1:7:1
 @q^1081^1:7:1
 @q^1179^1:0:0
+@q^1212^0:15:0
 @q^1506^0:4:0
 @q^1507^0:4:0
+@q^1511^0:2:0
 @q^1743^0:4:0
 @q^1750^0:4:0
 @q^1794^0:4:0
@@ -163,6 +174,7 @@ GoldScout-export 5^0fvwfe5g4vnw^4
 @q^2924^1:7:1
 @q^2925^1:12:0
 @q^3010^0:15:0
+@q^3167^0:15:0
 @q^3169^0:15:0
 @q^3170^0:15:0
 @q^3172^1:7:1
@@ -189,6 +201,7 @@ GoldScout-export 5^0fvwfe5g4vnw^4
 @q^6568^2:4:0
 @q^6889^1:7:1
 @q^7073^0:15:0
+@q^7289^1:9:0
 @q^9749^2:4:0
 @q^9802^2:4:0
 @q^12237^1:12:0
@@ -205,6 +218,7 @@ GoldScout-export 5^0fvwfe5g4vnw^4
 @q^279591^1:12:0
 @m^1431^Bois de la Pénombre
 @m^1432^Loch Modan
+@m^1433^Les Carmines
 @m^1437^Les Paluns
 @m^1439^Sombrivage
 @c^2568^
@@ -696,7 +710,12 @@ GoldScout-export 5^0fvwfe5g4vnw^4
 @c^279960^
 @c^279972^
 @c^279973^
+@a^423^241:1,261:2,262:3
+@a^441^285:2
+@a^442^262:1,301:2
+@a^547^265:1,285:1
 @a^565^95:1
+@a^712^261:2
 @a^1165^253:1,254:3,273:1,274:3
 @a^1167^253:1,254:1,273:2,274:2
 @a^1174^67:1,87:1

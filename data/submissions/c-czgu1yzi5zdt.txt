@@ -1,4 +1,4 @@
-GoldScout-export 5^czgu1yzi5zdt^15
+GoldScout-export 5^czgu1yzi5zdt^16
 232^1^0^23^23^1424^0.3310^0.3627^1^Farmer Ray^4538:1:1^
 1867^2^0^13^13^1421^0.5051^0.6528^2^Dalaran Apprentice^^
 1888^9^0^18^19^1421^0.6168^0.7750^9^Dalaran Watcher^1179:1:1,1210:1:1,2592:2:3^
@@ -118,6 +118,8 @@ GoldScout-export 5^czgu1yzi5zdt^15
 4128^4^0^22^23^1413^0.4600^0.7502^4^Hecklefang Stalker^3301:1:1,3402:2:2^
 4275^1^0^0^0^0^0.0000^0.0000^0^^5442:1:1^
 4278^1^0^0^0^0^0.0000^0.0000^0^^6320:1:1^
+4788^2^0^20^21^1414^0.4382^0.3514^2^Fallenroot Satyr^1751:1:1,2589:1:2,2764:1:1^
+4802^1^0^20^21^1414^0.4387^0.3506^1^Blackfathom Tide Priestess^16790:1:1,17057:1:1^
 5048^1^0^0^0^0^0.0000^0.0000^0^^^
 5053^4^0^0^0^0^0.0000^0.0000^0^^3181:1:2,3401:2:3,6443:2:2^
 5055^7^0^0^0^0^0.0000^0.0000^0^^4604:6:6,4606:2:2^
@@ -177,6 +179,7 @@ GoldScout-export 5^czgu1yzi5zdt^15
 @i^2608^Threshadon Ambergris
 @i^2632^Curved Dagger of Stamina
 @i^2675^Crawler Claw
+@i^2764^Small Dagger
 @i^2765^Hunting Knife
 @i^2782^Mishandled Recurve Bow
 @i^2940^Bloody Bear Paw
@@ -295,7 +298,9 @@ GoldScout-export 5^czgu1yzi5zdt^15
 @i^15523^Spiked Chain Shoulder Pads of the Champion
 @i^15529^Sentry's Leggings of the Gorilla
 @i^16645^Shredder Operating Manual - Page 1
+@i^16790^Damp Note
 @i^17056^Light Feather
+@i^17057^Shiny Fish Scales
 @i^211784^Scroll: WUBBA WUBBA
 @i^211853^Scroll: VOCE WELL
 @i^211855^Scroll: STHENIC LUNATE
@@ -350,6 +355,7 @@ GoldScout-export 5^czgu1yzi5zdt^15
 @q^2608^0:15:0
 @q^2632^2:2:0
 @q^2675^1:7:1
+@q^2764^0:2:0
 @q^2765^0:2:0
 @q^2782^0:2:0
 @q^2940^0:15:0
@@ -468,7 +474,9 @@ GoldScout-export 5^czgu1yzi5zdt^15
 @q^15523^2:4:0
 @q^15529^2:4:0
 @q^16645^1:12:0
+@q^16790^1:15:0
 @q^17056^1:15:1
+@q^17057^1:15:0
 @q^211784^1:0:0
 @q^211853^1:0:0
 @q^211855^1:0:0
@@ -1170,6 +1178,8 @@ GoldScout-export 5^czgu1yzi5zdt^15
 @a^4073^193:1
 @a^4074^233:1
 @a^4128^288:1,289:2,309:1
+@a^4788^148:2
+@a^4802^148:1
 @a^11858^354:1
 @a^11912^354:6
 @a^11913^354:4
