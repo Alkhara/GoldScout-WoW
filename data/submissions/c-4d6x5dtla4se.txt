@@ -1,4 +1,4 @@
-GoldScout-export 5^4d6x5dtla4se^9
+GoldScout-export 5^4d6x5dtla4se^10
 2267^3^0^24^25^1424^0.2965^0.4050^3^Hillsbrad Peasant^2592:1:2^
 2268^2^0^25^26^1424^0.3183^0.4431^2^Hillsbrad Footman^2592:1:2^
 2269^9^0^26^27^1424^0.3093^0.5540^9^Hillsbrad Miner^422:1:1,2222:1:1,2592:1:1,4306:3:3^
@@ -33,6 +33,8 @@ GoldScout-export 5^4d6x5dtla4se^9
 3245^1^0^17^17^1413^0.5961^0.3115^1^Ornery Plainstrider^4775:1:1,5469:1:1^
 3256^1^0^16^18^1413^0.5954^0.3112^1^Sunscale Scytheclaw^5124:1:1,5635:1:1^
 3257^1^0^19^19^1413^0.5973^0.3036^1^Ishamuhale^5101:1:1^
+3261^1^0^18^19^1413^0.5062^0.5758^1^Bristleback Thornweaver^^
+3263^3^0^19^20^1413^0.5257^0.5493^3^Bristleback Geomancer^5075:1:1^
 3273^1^0^13^13^1413^0.4680^0.4078^1^Kolkar Stormer^^
 3396^1^0^19^19^1413^0.4577^0.4056^1^Hezrul Bloodmark^5025:1:1,5030:1:1^
 3397^2^0^14^15^1413^0.4566^0.4062^2^Kolkar Bloodcharger^2589:2:5,5030:1:1^
@@ -151,6 +153,7 @@ GoldScout-export 5^4d6x5dtla4se^9
 @i^4814^Discolored Fang
 @i^5025^Hezrul's Head
 @i^5030^Centaur Bracers
+@i^5075^Blood Shard
 @i^5098^Altered Snapjaw Shell
 @i^5101^Ishamuhale's Fang
 @i^5124^Small Raptor Tooth
@@ -262,6 +265,7 @@ GoldScout-export 5^4d6x5dtla4se^9
 @q^4814^0:15:0
 @q^5025^1:12:0
 @q^5030^1:12:0
+@q^5075^1:12:0
 @q^5098^1:12:0
 @q^5101^1:12:0
 @q^5124^0:15:0
@@ -983,6 +987,8 @@ GoldScout-export 5^4d6x5dtla4se^9
 @a^3245^131:1
 @a^3256^131:1
 @a^3257^131:1
+@a^3261^230:1
+@a^3263^210:2,230:1
 @a^3273^169:1
 @a^3396^169:1
 @a^3397^169:2

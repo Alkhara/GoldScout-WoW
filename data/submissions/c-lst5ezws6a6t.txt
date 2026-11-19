@@ -1,9 +1,13 @@
-GoldScout-export 5^lst5ezws6a6t^7
+GoldScout-export 5^lst5ezws6a6t^10
+30^2^0^5^6^1429^0.3963^0.7428^2^Forest Spider^2590:1:1^
+40^2^0^6^7^1429^0.4055^0.7987^2^Kobold Miner^118:1:1,773:1:1,1389:1:1,2589:1:2^
+113^5^0^5^6^1429^0.3938^0.8450^5^Stonetusk Boar^769:4:4^
 116^22^1^8^9^1429^0.7017^0.7808^22^Defias Bandit^118:1:1,159:1:1,1019:6:6,1181:1:1,2070:1:1,2138:1:1,2589:5:9,2648:1:1,2774:1:1,3192:1:1^
 118^8^0^9^10^1429^0.8555^0.6994^8^Prowler^2672:4:4,3299:1:1^
+327^1^0^8^8^1429^0.4101^0.7824^1^Goldtooth^^
 330^1^0^9^9^1429^0.6981^0.7938^1^Princess^1006:1:1,3171:1:1^
 390^1^0^7^7^1429^0.7033^0.7922^1^Porcine Entourage^^
-475^1^0^5^5^1429^0.3778^0.8667^1^Kobold Tunneler^^
+475^16^0^5^6^1429^0.3915^0.8216^16^Kobold Tunneler^159:1:1,772:7:7,773:7:7,1195:2:2,1366:1:1,1374:1:1,1376:1:1,1411:2:2,2589:2:3,2835:1:3,4536:1:1,248001:6:6^
 822^2^0^8^9^1429^0.7863^0.7261^2^Young Forest Bear^4865:1:1^
 880^1^0^8^8^1429^0.7040^0.7889^1^Erlan Drudgemoor^1421:1:1^
 881^1^0^9^9^1429^0.7101^0.8081^1^Surena Caledon^767:1:1^
@@ -19,16 +23,25 @@ GoldScout-export 5^lst5ezws6a6t^7
 1196^6^0^7^8^1426^0.3712^0.4565^6^Ice Claw Bear^3169:1:1,3170:2:2,4865:2:2,7074:3:3^
 1201^8^0^7^8^1426^0.3251^0.4373^8^Snow Leopard^774:1:1,4813:1:1,4814:6:6^
 1961^1^0^11^11^1426^0.8001^0.3620^1^Mangeclaw^3173:1:1,3183:1:1,4561:1:1^
+248464^1^0^6^6^1429^0.4142^0.8018^1^Nimsy^773:1:1,1417:1:1,2835:1:1,248002:1:1^
 276003^1^0^8^8^1426^0.5594^0.4608^1^Minor Ice Elemental^^
 @i^117^Tough Jerky
 @i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
 @i^767^Long Bo Staff
 @i^769^Chunk of Boar Meat
+@i^772^Large Candle
+@i^773^Gold Dust
 @i^774^Malachite
 @i^1006^Brass Collar
 @i^1019^Red Linen Bandana
 @i^1181^Scroll of Spirit
+@i^1195^Kobold Mining Shovel
+@i^1366^Ragged Leather Pants
+@i^1374^Frayed Shoes
+@i^1376^Frayed Cloak
+@i^1389^Kobold Mining Mallet
+@i^1411^Withered Staff
 @i^1417^Beaten Battle Axe
 @i^1421^Worn Hide Cloak
 @i^1422^Worn Leather Gloves
@@ -38,11 +51,13 @@ GoldScout-export 5^lst5ezws6a6t^7
 @i^2070^Darnassian Bleu
 @i^2138^Sharpened Letter Opener
 @i^2589^Linen Cloth
+@i^2590^Forest Spider Webbing
 @i^2591^Dirty Trogg Cloth
 @i^2648^Loose Chain Vest
 @i^2672^Stringy Wolf Meat
 @i^2773^Cracked Shortbow
 @i^2774^Rust-covered Blunderbuss
+@i^2835^Rough Stone
 @i^2886^Crag Boar Rib
 @i^3169^Chipped Bear Tooth
 @i^3170^Large Bear Tooth
@@ -53,21 +68,32 @@ GoldScout-export 5^lst5ezws6a6t^7
 @i^3192^Short Bastard Sword of Healing
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
+@i^4536^Shiny Red Apple
 @i^4561^Scalping Tomahawk of the Boar
 @i^4813^Small Leather Collar
 @i^4814^Discolored Fang
 @i^4865^Ruined Pelt
 @i^7074^Chipped Claw
 @i^211786^Scroll: CHAP BALK WELLES
+@i^248001^Lost Book
+@i^248002^Picture Book: Fun with Elementals
 @q^117^1:0:0
 @q^118^1:0:0
 @q^159^1:0:0
 @q^767^1:2:0
 @q^769^1:7:1
+@q^772^1:12:0
+@q^773^1:12:0
 @q^774^2:7:1
 @q^1006^1:12:0
 @q^1019^1:12:0
 @q^1181^1:0:0
+@q^1195^1:2:0
+@q^1366^0:4:0
+@q^1374^0:4:0
+@q^1376^0:4:0
+@q^1389^1:2:0
+@q^1411^0:2:0
 @q^1417^0:2:0
 @q^1421^0:4:0
 @q^1422^0:4:0
@@ -77,11 +103,13 @@ GoldScout-export 5^lst5ezws6a6t^7
 @q^2070^1:0:0
 @q^2138^0:2:0
 @q^2589^1:7:1
+@q^2590^0:15:0
 @q^2591^0:15:0
 @q^2648^0:4:0
 @q^2672^1:7:1
 @q^2773^0:2:0
 @q^2774^0:2:0
+@q^2835^1:7:1
 @q^2886^1:7:1
 @q^3169^0:15:0
 @q^3170^0:15:0
@@ -92,12 +120,15 @@ GoldScout-export 5^lst5ezws6a6t^7
 @q^3192^2:2:0
 @q^3299^0:15:0
 @q^3300^0:15:0
+@q^4536^1:0:0
 @q^4561^2:2:0
 @q^4813^0:15:0
 @q^4814^0:15:0
 @q^4865^0:15:0
 @q^7074^0:15:0
 @q^211786^1:0:0
+@q^248001^1:12:0
+@q^248002^1:12:0
 @m^1426^Dun Morogh
 @m^1429^Elwynn Forest
 @c^724^
@@ -1601,11 +1632,15 @@ GoldScout-export 5^lst5ezws6a6t^7
 @c^285280^
 @c^285281^
 @c^286152^
+@a^30^288:1,307:1
+@a^40^307:1,328:1
+@a^113^307:1,347:2,348:2
 @a^116^313:6,314:15,334:1
 @a^118^277:4,297:3,315:1
+@a^327^308:1
 @a^330^313:1
 @a^390^314:1
-@a^475^347:1
+@a^475^307:2,308:1,327:8,328:3,347:2
 @a^822^277:1,314:1
 @a^880^314:1
 @a^881^334:1
@@ -1621,5 +1656,6 @@ GoldScout-export 5^lst5ezws6a6t^7
 @a^1196^146:2,167:1,205:2,211:1
 @a^1201^146:4,205:1,206:3
 @a^1961^156:1
+@a^248464^328:1
 @a^276003^191:1
 @l^0^enUS
