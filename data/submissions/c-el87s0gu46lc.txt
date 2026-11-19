@@ -1,16 +1,22 @@
-GoldScout-export 5^el87s0gu46lc^6
-2735^13^0^37^39^1418^0.2057^0.4427^13^Lesser Rock Elemental^4552:1:1,4553:2:2,4784:11:11,7067:1:1,7912:3:5,8150:2:2^
+GoldScout-export 5^el87s0gu46lc^8
+744^12^0^42^43^1435^0.7139^0.3764^12^Green Scalebane^1645:2:2,4080:1:1,5803:6:6^
+745^7^0^43^44^1435^0.7228^0.4045^7^Scalebane Captain^5803:2:2^
+746^2^0^45^45^1435^0.7732^0.4125^2^Elder Dragonkin^5803:2:2^
+2735^17^0^37^39^1418^0.2043^0.4433^17^Lesser Rock Elemental^4552:1:1,4553:4:4,4784:14:14,7067:1:1,7912:4:7,8150:3:3^
 14123^13^0^42^43^1446^0.6758^0.2716^13^Steeljaw Snapper^3712:3:3,4555:8:8,4556:9:9,4603:1:1,7973:5:5,9298:1:1^
 259055^1^0^38^39^2548^0.6169^0.5482^1^Wildplains Huntress^1688:1:1^
 263307^53^0^37^38^2548^0.6238^0.5907^53^Glade Viper^6444:13:13,6826:34:34,7457:1:1,248690:1:1,248709:1:1^
+@i^1645^Moonberry Juice
 @i^1688^Long Soft Tail
 @i^3712^Turtle Meat
+@i^4080^Blackforge Cowl
 @i^4552^Smooth Stone Chip
 @i^4553^Jagged Piece of Stone
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
 @i^4603^Raw Spotted Yellowtail
 @i^4784^Lifeless Stone
+@i^5803^Speck of Dream Dust
 @i^6444^Forked Tongue
 @i^6826^Brilliant Scale
 @i^7067^Elemental Earth
@@ -21,14 +27,17 @@ GoldScout-export 5^el87s0gu46lc^6
 @i^9298^Recipe: Elixir of Giants
 @i^248690^Waylaid Crate: Earthly Expert Herbs
 @i^248709^Waylaid Crate: Expert Ingots
+@q^1645^1:0:0
 @q^1688^0:15:0
 @q^3712^1:7:1
+@q^4080^2:4:0
 @q^4552^0:15:0
 @q^4553^0:15:0
 @q^4555^0:15:0
 @q^4556^0:15:0
 @q^4603^1:7:1
 @q^4784^0:15:0
+@q^5803^1:12:0
 @q^6444^0:15:0
 @q^6826^0:15:0
 @q^7067^1:7:1
@@ -40,6 +49,7 @@ GoldScout-export 5^el87s0gu46lc^6
 @q^248690^1:0:1
 @q^248709^2:0:1
 @m^1418^Badlands
+@m^1435^Swamp of Sorrows
 @m^1446^Tanaris
 @m^2548^Riverglades
 @c^2300^
@@ -637,7 +647,10 @@ GoldScout-export 5^el87s0gu46lc^6
 @c^279969^
 @c^279978^
 @c^279979^
-@a^2735^163:4,164:5,183:1,184:3
+@a^744^134:1,152:2,153:3,154:2,155:4
+@a^745^152:1,154:2,155:1,172:1,175:1,196:1
+@a^746^175:2
+@a^2735^163:5,164:6,183:2,184:4
 @a^14123^93:1,113:12
 @a^259055^212:1
 @a^263307^212:3,231:3,232:26,252:21
