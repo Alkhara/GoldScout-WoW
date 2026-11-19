@@ -35,6 +35,9 @@ class FactTests(unittest.TestCase):
                          ("Coyote", "Coyote Meat", "Westfall", "10-11"))
         self.assertEqual(self.sheet["other_drops"], ["Ruined Leather Scraps"])
         self.assertTrue(self.sheet["item_is_crafting_reagent"])
+        # Consumables (food, scrolls) aren't offered as other drops: their names can be odd.
+        self.data.item_meta[2934] = (1, 0, False)          # class 0: a consumable
+        self.assertEqual(farm_notes.facts(self.data, self.coyote)["other_drops"], [])
 
     def checked(self, text, sheet=None):
         sheet = dict(sheet or self.sheet, busiest_spot="52.5, 47.5", other_spots=["52.5, 47.5"])
@@ -127,10 +130,14 @@ class WriterTests(unittest.TestCase):
         client = FakeClient(GOOD.replace("fair shot", "40% chance"), GOOD)
         self.assertEqual(write_farm_notes.write_note(client, self.sheet, self.known), (GOOD, []))
         self.assertIn("percentages", client.asked[1]["messages"][0]["content"])
-        client = FakeClient(GOOD + " They respawn fast.", GOOD + " They respawn fast.")
+        # Up to two rewrites; still broken after them, the farm gets no note.
+        client = FakeClient(*[GOOD + " They respawn fast."] * 3)
         note, problems = write_farm_notes.write_note(client, self.sheet, self.known)
         self.assertIsNone(note)
         self.assertTrue(problems)
+        self.assertEqual(len(client.asked), 1 + write_farm_notes.RETRIES)
+        client = FakeClient(GOOD + " They respawn fast.", GOOD + " They respawn fast.", GOOD)
+        self.assertEqual(write_farm_notes.write_note(client, self.sheet, self.known), (GOOD, []))
 
     def test_a_refusal_writes_nothing(self):
         self.assertEqual(write_farm_notes.write_note(FakeClient(refuse=True), self.sheet, self.known),

@@ -3,8 +3,8 @@
 For every farm the guides show (the top NOTE_FARMS of each realm type and faction's ranking), Claude gets the
 farm's fact sheet (site/farm_notes.py facts) and writes a few sentences on how to run it. Each note must pass
 farm_notes.check: no number or name that isn't in the facts, no prices or chances, no claims about the game's
-behaviour. A note that fails gets one retry with the problems listed; if that fails too, the farm keeps no
-note (the guide shows its tables as before). Notes that still pass and are under MAX_AGE_DAYS old are kept,
+behaviour. A note that fails gets up to RETRIES rewrites with the problems listed; if those fail too, the farm keeps
+no note (the guide shows its tables as before). Notes that still pass and are under MAX_AGE_DAYS old are kept,
 so a week's run only writes what's new or stale.
 
   python tools/write_farm_notes.py            needs ANTHROPIC_API_KEY (or an `ant auth login` profile)
@@ -28,6 +28,7 @@ import merge_data  # noqa: E402
 MODEL = "claude-opus-5-5"
 NOTE_FARMS = 6          # per market: the top 3 and the next few, which can move up within a week
 MAX_AGE_DAYS = 28
+RETRIES = 2             # rewrites of a note that breaks the rules, each told what was wrong
 SCHEMA = {
     "type": "object",
     "properties": {"note": {"type": "string"}},
@@ -94,15 +95,15 @@ def ask(client, sheet, retry=None):
 def write_note(client, sheet, known):
     """(note, problems): a note that passes farm_notes.check, or None with the last attempt's problems."""
     note = ask(client, sheet)
-    if note is None:
-        return None, ["declined"]
-    problems = farm_notes.check(note, sheet, known)
-    if problems:
-        note = ask(client, sheet, (note, problems))
+    for attempt in range(RETRIES + 1):
         if note is None:
             return None, ["declined"]
         problems = farm_notes.check(note, sheet, known)
-    return (None, problems) if problems else (note, [])
+        if not problems:
+            return note, []
+        if attempt < RETRIES:
+            note = ask(client, sheet, (note, problems))
+    return None, problems
 
 
 def main():

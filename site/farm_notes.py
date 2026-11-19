@@ -19,6 +19,7 @@ MIN_WORDS, MAX_WORDS = 35, 130
 MAX_SPOTS = 2              # map coordinates a note may give: more reads like a list, not advice
 NEARBY_SPOTS = 2           # spots after the busiest one a fact sheet offers
 OTHER_DROPS = 4             # the mob's other drops a fact sheet lists, most likely first
+CONSUMABLE_CLASS = 0        # Blizzard's item class for food, potions and scrolls: left out of other drops
 # Words of the guides and the add-on a note may name besides the farm's own names.
 ALLOWED_NAMES = {"GoldScout", "Hunt", "Farm", "Drop", "Rates", "WoW", "Forever", "Blizzard", "Horde",
                  "Alliance", "I", "Skinning", "Herbalism", "Mining", "Fishing", "Pickpocket", "Pickpocketing",
@@ -43,8 +44,11 @@ def facts(data, farm):
     cells = data.mob_area(npc)
     placed = sum(cells.values()) >= data_pages.AREA_MIN_LOOTS
     entry = data.mobs[npc]
-    others = [data.item_name(other) for other, _, _ in data.drops(npc)
-              if other != item and data.kind(other) not in ("gray", "unknown")][:OTHER_DROPS]
+    # Other drops worth naming: not junk, and not consumables (food, potions, scrolls), whose names can be odd.
+    worth = [data.item_name(other) for other, _, _ in data.drops(npc)
+             if other != item and data.kind(other) not in ("gray", "unknown")
+             and data.item_meta.get(other, (0, None, 0))[1] != CONSUMABLE_CLASS]
+    others = worth[:OTHER_DROPS]
     return {
         "mob": data.mob_name(npc),
         "item": data.item_name(item),
@@ -59,17 +63,22 @@ def facts(data, farm):
         # but Claude only sees the busiest and the nearby ones (prompt_facts).
         "other_spots": sorted(data_pages.square_coords(cell) for cell in cells) if placed else [],
         "other_drops": others,
+        # Every reagent and gear drop: a note may name any (the top few change as kills add up), but Claude only
+        # sees other_drops (prompt_facts).
+        "all_drops": worth,
         "item_is_crafting_reagent": data.kind(item) == "reagent",
     }
 
 
 def prompt_facts(sheet):
-    """The fact sheet as Claude gets it: without the full list of squares, so a note picks a spot or two."""
-    return {field: value for field, value in sheet.items() if field != "other_spots"}
+    """The fact sheet as Claude gets it: without the full lists of squares and drops, so a note picks a spot or
+    two and the drops most worth mentioning."""
+    return {field: value for field, value in sheet.items() if field not in ("other_spots", "all_drops")}
 
 
 def names_in(sheet):
-    return [name for name in [sheet["mob"], sheet["item"], sheet["zone"], *sheet["other_drops"]] if name]
+    return [name for name in [sheet["mob"], sheet["item"], sheet["zone"], *sheet["other_drops"],
+                              *sheet.get("all_drops", [])] if name]
 
 
 def allowed_numbers(sheet):
