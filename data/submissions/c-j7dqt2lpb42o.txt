@@ -1,4 +1,4 @@
-GoldScout-export 5^j7dqt2lpb42o^15
+GoldScout-export 5^j7dqt2lpb42o^18
 588^5^0^34^35^1434^0.2506^0.1133^5^Bloodscalp Scout^1708:1:1,2748:1:1,4306:2:3^
 595^4^0^34^35^1434^0.2604^0.0906^4^Bloodscalp Hunter^2725:1:1,4306:1:2^
 597^10^0^36^37^1434^0.2182^0.1142^10^Bloodscalp Berserker^3385:1:1,3915:1:1,4306:5:9^
@@ -7,6 +7,7 @@ GoldScout-export 5^j7dqt2lpb42o^15
 682^1^0^32^33^1434^0.4707^0.1870^1^Stranglethorn Tiger^1686:1:1^
 684^8^0^37^38^1434^0.3783^0.3943^8^Shadowmaw Panther^1688:2:2,3838:8:8^
 686^10^0^35^36^1434^0.3175^0.2406^10^Lashtail Raptor^1696:1:1,3685:3:3,4461:3:3,4586:3:3,5637:2:2,12184:2:2^
+687^1^0^40^40^1434^0.2711^0.4106^1^Jungle Stalker^3863:1:1,213546:1:1^
 690^3^0^39^40^1434^0.3829^0.4036^3^Cold Eye Basilisk^1702:1:1,248708:1:1^
 698^2^0^34^35^1434^0.2289^0.0976^2^Bloodscalp Tiger^^
 699^2^0^34^35^1434^0.2285^0.0982^2^Bloodscalp Beastmaster^2749:1:1^
@@ -25,6 +26,7 @@ GoldScout-export 5^j7dqt2lpb42o^15
 1142^10^0^36^37^1434^0.3725^0.3018^10^Mosh'Ogg Brute^1708:1:1,2738:1:1,2748:1:1,4306:4:10^
 1144^6^0^36^37^1434^0.3743^0.3018^6^Mosh'Ogg Witch Doctor^2728:1:1,4306:1:3^
 1151^1^0^36^36^1434^0.2133^0.1641^1^Saltwater Crocolisk^770:1:1,12037:1:1^
+1562^1^0^40^40^1434^0.2618^0.6750^1^Bloodsail Mage^2748:1:1,4306:1:3,7909:1:1^
 2667^7^0^36^37^1434^0.3744^0.3037^7^Ward of Laze^^
 2729^10^0^39^40^1418^0.3399^0.6363^10^Elder Crag Coyote^4582:4:4,4583:1:1,5637:1:1,12203:5:5,213544:1:1^
 2732^13^0^38^39^1418^0.3517^0.5355^13^Ridge Huntress^1686:1:1,1688:5:5,5637:2:2,8146:2:2,12202:8:8^
@@ -78,8 +80,10 @@ GoldScout-export 5^j7dqt2lpb42o^15
 @i^3799^Interlaced Vest
 @i^3808^Double Mail Belt
 @i^3815^Double Mail Vest
+@i^3820^Stranglekelp
 @i^3838^Shadowmaw Claw
 @i^3839^Pristine Tigress Fang
+@i^3863^Jungle Stalker Feather
 @i^3879^Paw of Sin'Dall
 @i^3904^Gan'zulah's Head
 @i^3905^Nezzliok's Head
@@ -105,7 +109,10 @@ GoldScout-export 5^j7dqt2lpb42o^15
 @i^6291^Raw Brilliant Smallfish
 @i^6308^Raw Bristle Whisker Catfish
 @i^6309^17 Pound Catfish
+@i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
+@i^6362^Raw Rockscale Cod
+@i^7909^Aquamarine
 @i^8146^Wicked Claw
 @i^8365^Raw Mithril Head Trout
 @i^11386^Squishy Basilisk Eye
@@ -118,8 +125,10 @@ GoldScout-export 5^j7dqt2lpb42o^15
 @i^15286^Long Redwood Bow
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
+@i^21228^Mithril Bound Trunk
 @i^213543^Scroll: UPDOG
 @i^213544^Scroll: TOPAZ YORAK
+@i^213546^Scroll: SHOOBEEDOOP
 @i^248708^Waylaid Crate: Expert Fabrics
 @i^256037^Grass Clippings
 @i^264210^Schematic: Shafety Sheep
@@ -158,8 +167,10 @@ GoldScout-export 5^j7dqt2lpb42o^15
 @q^3799^0:4:0
 @q^3808^0:4:0
 @q^3815^0:4:0
+@q^3820^1:7:1
 @q^3838^1:12:0
 @q^3839^1:12:0
+@q^3863^1:12:0
 @q^3879^1:12:0
 @q^3904^1:12:0
 @q^3905^1:12:0
@@ -185,7 +196,10 @@ GoldScout-export 5^j7dqt2lpb42o^15
 @q^6291^1:7:1
 @q^6308^1:7:1
 @q^6309^1:15:0
+@q^6358^1:7:1
 @q^6359^1:7:1
+@q^6362^1:7:1
+@q^7909^2:7:1
 @q^8146^1:7:1
 @q^8365^1:7:1
 @q^11386^0:15:0
@@ -198,8 +212,10 @@ GoldScout-export 5^j7dqt2lpb42o^15
 @q^15286^2:2:0
 @q^17057^1:15:0
 @q^17058^1:15:0
+@q^21228^1:15:0
 @q^213543^1:0:0
 @q^213544^1:0:0
+@q^213546^1:0:0
 @q^248708^2:0:1
 @q^256037^0:15:0
 @q^264210^1:9:0
@@ -979,6 +995,7 @@ GoldScout-export 5^j7dqt2lpb42o^15
 @a^682^69:1
 @a^684^147:6,167:2
 @a^686^86:9,106:1
+@a^687^165:1
 @a^690^147:1,167:2
 @a^698^24:1,44:1
 @a^699^24:1,44:1
@@ -997,6 +1014,7 @@ GoldScout-export 5^j7dqt2lpb42o^15
 @a^1142^107:4,127:6
 @a^1144^107:3,127:3
 @a^1151^64:1
+@a^1562^265:1
 @a^2667^107:3,127:4
 @a^2729^204:1,205:1,206:1,248:2,266:2,267:2,287:1
 @a^2732^185:1,186:2,206:3,207:3,227:2,248:1,268:1
@@ -1016,6 +1034,6 @@ GoldScout-export 5^j7dqt2lpb42o^15
 @a^11576^308:1
 @a^262397^104:21
 @a^269175^106:1
-@f^1434^0^5^155^6308:1:1,6359:3:3,8365:1:1^64:3,68:2
+@f^1434^0^68^155^3820:2:4,4603:6:6,6308:1:1,6358:12:12,6359:11:11,6362:30:30,8365:1:1,21228:5:5^64:3,68:2,126:4,146:4,244:7,265:45,285:3
 @f^1454^0^35^156^6289:20:20,6291:8:8,6308:6:6,6309:1:1^133:2,134:33
 @l^0^enUS

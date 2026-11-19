@@ -1,4 +1,4 @@
-GoldScout-export 5^ddrzxaibpto2^27
+GoldScout-export 5^ddrzxaibpto2^28
 92^8^0^39^40^1418^0.1459^0.3548^8^Rock Elemental^4552:1:1,4784:3:3,7067:1:1,8150:3:3^
 743^1^0^42^43^1435^0.8927^0.7307^1^Wyrmkin Dreamwalker^^
 747^1^0^42^42^1435^0.8316^0.8684^1^Marsh Murloc^^
@@ -97,7 +97,7 @@ GoldScout-export 5^ddrzxaibpto2^27
 5305^8^0^45^46^1444^0.5562^0.7103^8^Frayfeather Skystormer^4590:1:1,5117:1:1,5829:3:3,9591:8:8,11417:3:3,11418:3:3^
 5306^4^0^46^47^1444^0.5642^0.7500^4^Frayfeather Patriarch^5829:1:1,9591:4:4,9592:3:3^
 5307^4^0^41^42^1444^0.5951^0.6087^4^Vale Screecher^6444:1:1^
-5419^3^0^42^43^1446^0.5837^0.2567^3^Glasshide Basilisk^^
+5419^5^0^42^43^1446^0.5422^0.2638^5^Glasshide Basilisk^4092:1:1,11386:2:2^
 5422^2^0^40^41^1446^0.5715^0.2769^2^Scorpid Hunter^^
 5425^1^0^41^41^1446^0.4378^0.2320^1^Starving Blisterpaw^12037:1:1,12203:1:1,12208:1:1^
 5616^2^0^40^40^1446^0.6044^0.2271^2^Wastewander Thief^^
@@ -168,6 +168,7 @@ GoldScout-export 5^ddrzxaibpto2^27
 @i^4021^Blunting Mace
 @i^4025^Balanced Long Bow
 @i^4088^Dreadblade of the Elder
+@i^4092^Prismatic Basilisk Scale
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4402^Small Flame Sac
@@ -243,6 +244,7 @@ GoldScout-export 5^ddrzxaibpto2^27
 @i^10285^Shadow Silk
 @i^10660^First Mosh'aru Tablet
 @i^10661^Second Mosh'aru Tablet
+@i^11386^Squishy Basilisk Eye
 @i^11408^Bear Jaw
 @i^11409^Bear Flank
 @i^11417^Feathery Wing
@@ -297,6 +299,7 @@ GoldScout-export 5^ddrzxaibpto2^27
 @q^4021^0:2:0
 @q^4025^0:2:0
 @q^4088^2:2:0
+@q^4092^0:15:0
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4402^1:7:1
@@ -372,6 +375,7 @@ GoldScout-export 5^ddrzxaibpto2^27
 @q^10285^1:7:1
 @q^10660^1:12:0
 @q^10661^1:12:0
+@q^11386^0:15:0
 @q^11408^0:15:0
 @q^11409^0:15:0
 @q^11417^0:15:0
@@ -1341,7 +1345,7 @@ GoldScout-export 5^ddrzxaibpto2^27
 @a^5305^250:2,271:1,290:1,291:4
 @a^5306^291:2,310:1,311:1
 @a^5307^231:1,251:2,252:1
-@a^5419^92:1,111:2
+@a^5419^92:1,109:2,111:2
 @a^5422^111:2
 @a^5425^88:1
 @a^5616^91:1,92:1

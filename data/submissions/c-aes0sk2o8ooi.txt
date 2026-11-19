@@ -1,4 +1,10 @@
-GoldScout-export 5^aes0sk2o8ooi^6
+GoldScout-export 5^aes0sk2o8ooi^7
+5331^12^0^42^43^1444^0.2681^0.5300^12^Hatecrest Warrior^3939:1:1,7973:2:2,9247:4:4,17058:4:4^
+5332^5^0^41^42^1444^0.2629^0.5440^5^Hatecrest Wave Rider^4603:1:1,9247:1:1,17058:3:3^
+5333^2^0^44^45^1444^0.2784^0.6994^2^Hatecrest Serpent Guard^7973:2:2^
+5335^11^0^41^42^1444^0.2735^0.5255^11^Hatecrest Screamer^7973:2:2,9247:3:3,17058:3:3^
+5336^3^0^44^44^1444^0.2805^0.7021^3^Hatecrest Sorceress^7973:1:1^
+5337^4^0^42^43^1444^0.2675^0.5436^4^Hatecrest Siren^1645:1:1,4421:1:1,9247:2:2,17058:1:1^
 5833^1^0^48^48^1427^0.7349^0.7578^1^Margol the Rager^5128:1:1,10000:1:1^
 5839^5^0^43^44^1427^0.6404^0.5416^5^Dark Iron Geologist^3864:1:1,4338:1:1^
 5843^2^0^45^47^1427^0.4219^0.2462^2^Slave Worker^^
@@ -9,6 +15,7 @@ GoldScout-export 5^aes0sk2o8ooi^6
 5860^3^0^47^48^1427^0.1865^0.3742^3^Twilight Dark Shaman^10552:1:1,262890:1:1^
 5861^10^0^48^49^1427^0.2393^0.3147^10^Twilight Fire Guard^1645:1:1,4018:1:1,4021:1:1,4338:5:14,4602:1:1,7909:1:1,10458:1:1^
 5862^2^0^49^50^1427^0.2625^0.2598^2^Twilight Geomancer^1645:1:1^
+8136^1^0^47^47^1444^0.2844^0.7027^1^Lord Shalzaru^9248:1:1^
 8282^1^0^51^51^1427^0.1443^0.3731^1^Highlord Mastrogonde^4338:1:2,7527:1:1,15263:1:1^
 8391^1^0^52^52^1427^0.4149^0.2520^1^Lathoric the Black^10447:1:1^
 8400^2^0^52^52^1427^0.4175^0.2565^2^Obsidion^3975:1:1,4552:2:2,7912:1:2,8150:1:1,10446:1:1^
@@ -16,21 +23,27 @@ GoldScout-export 5^aes0sk2o8ooi^6
 8637^3^0^44^45^1427^0.6455^0.5145^3^Dark Iron Watchman^4306:2:4,4338:1:1^
 @i^1645^Moonberry Juice
 @i^3864^Citrine
+@i^3939^Crochet Cloak
 @i^3975^Smooth Leather Shoulderpads
 @i^4018^Whetted Claymore
 @i^4021^Blunting Mace
 @i^4306^Silk Cloth
 @i^4337^Thick Spider's Silk
 @i^4338^Mageweave Cloth
+@i^4421^Scroll of Protection III
 @i^4552^Smooth Stone Chip
 @i^4554^Shiny Polished Stone
 @i^4585^Dripping Spider Mandible
 @i^4602^Moon Harvest Pumpkin
+@i^4603^Raw Spotted Yellowtail
 @i^5128^Shed Lizard Skin
 @i^7527^Cabalist Chestpiece of the Tiger
 @i^7909^Aquamarine
 @i^7912^Solid Stone
+@i^7973^Big-mouth Clam
 @i^8150^Deeprock Salt
+@i^9247^Hatecrest Naga Scale
+@i^9248^Mysterious Relic
 @i^10000^Margol's Horn
 @i^10285^Shadow Silk
 @i^10446^Heart of Obsidion
@@ -41,24 +54,31 @@ GoldScout-export 5^aes0sk2o8ooi^6
 @i^12205^White Spider Meat
 @i^15244^Razor Blade of Spirit
 @i^15263^Royal Mallet of the Eagle
+@i^17058^Fish Oil
 @i^262890^Sealed Artisan's Writ
 @q^1645^1:0:0
 @q^3864^2:7:1
+@q^3939^0:4:0
 @q^3975^0:4:0
 @q^4018^0:2:0
 @q^4021^0:2:0
 @q^4306^1:7:1
 @q^4337^1:7:1
 @q^4338^1:7:1
+@q^4421^1:0:0
 @q^4552^0:15:0
 @q^4554^0:15:0
 @q^4585^0:15:0
 @q^4602^1:0:0
+@q^4603^1:7:1
 @q^5128^0:15:0
 @q^7527^2:4:0
 @q^7909^2:7:1
 @q^7912^1:7:1
+@q^7973^1:7:0
 @q^8150^1:7:1
+@q^9247^1:12:0
+@q^9248^1:12:0
 @q^10000^1:12:0
 @q^10285^1:7:1
 @q^10446^1:12:0
@@ -69,8 +89,10 @@ GoldScout-export 5^aes0sk2o8ooi^6
 @q^12205^1:7:1
 @q^15244^2:2:0
 @q^15263^2:2:0
+@q^17058^1:15:0
 @q^262890^3:0:0
 @m^1427^Searing Gorge
+@m^1444^Feralas
 @c^2840^
 @c^2841^
 @c^2842^
@@ -595,6 +617,12 @@ GoldScout-export 5^aes0sk2o8ooi^6
 @c^285279^
 @c^285280^
 @c^285281^
+@a^5331^205:12
+@a^5332^205:4,225:1
+@a^5333^265:1,285:1
+@a^5335^205:11
+@a^5336^265:1,285:2
+@a^5337^205:3,225:1
 @a^5833^314:1
 @a^5839^133:1,232:3,252:1
 @a^5843^88:1,108:1
@@ -605,6 +633,7 @@ GoldScout-export 5^aes0sk2o8ooi^6
 @a^5860^143:1,144:1,162:1
 @a^5861^105:5,123:1,143:1,144:3
 @a^5862^104:1,105:1
+@a^8136^285:1
 @a^8282^142:1
 @a^8391^108:1
 @a^8400^108:2
