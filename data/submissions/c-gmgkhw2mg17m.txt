@@ -1,4 +1,4 @@
-GoldScout-export 5^gmgkhw2mg17m^7
+GoldScout-export 5^gmgkhw2mg17m^8
 36^1^0^11^11^1436^0.3320^0.3822^1^Harvest Golem^1506:1:1^
 114^2^0^14^15^1436^0.3748^0.5132^2^Harvest Watcher^732:2:2,814:1:1,1274:1:1^
 122^1^0^17^17^1436^0.3627^0.8307^1^Defias Highwayman^^
@@ -18,11 +18,14 @@ GoldScout-export 5^gmgkhw2mg17m^7
 1108^1^0^33^33^1434^0.3710^0.1547^1^Mistvale Gorilla^2799:1:1,4097:1:1^
 1109^3^0^13^14^1436^0.3532^0.4049^3^Fleshripper^555:1:1,729:2:2,3399:2:2,6889:2:2,17056:2:2^
 1150^1^0^30^31^1434^0.3567^0.0885^1^River Crocolisk^12037:1:1^
-1525^6^0^5^6^1420^0.5426^0.5683^6^Rotting Dead^118:1:1,3363:1:1^
+1522^3^0^7^8^1420^0.4922^0.3582^3^Darkeye Bonecaster^1425:1:1,3370:1:1,4604:1:1^
+1525^7^0^5^6^1420^0.5390^0.5556^7^Rotting Dead^118:1:1,3363:1:1^
 1526^2^0^7^7^1420^0.5358^0.5751^2^Ravaged Corpse^^
 1527^3^0^7^8^1420^0.6773^0.4325^3^Hungering Dead^159:1:1^
 1529^8^0^9^10^1420^0.7658^0.6151^8^Bleeding Horror^1423:1:1,1430:1:1,2589:3:5,9761:1:1^
+1530^8^0^10^11^1420^0.5232^0.2918^8^Rotting Ancestor^2589:2:3^
 1532^8^0^10^11^1420^0.7640^0.6020^8^Wandering Spirit^159:1:1,2589:3:6,4604:2:2^
+1534^9^0^9^10^1420^0.5221^0.2894^9^Wailing Ancestor^2589:3:3,4604:1:1,9742:1:1^
 1535^3^0^6^7^1420^0.3199^0.4804^3^Scarlet Warrior^2589:2:3^
 1537^7^0^8^9^1420^0.7574^0.5798^7^Scarlet Zealot^159:1:1,1414:1:1,1415:1:1,1416:1:1,2070:1:1,2589:3:4^
 1538^7^0^9^10^1420^0.7953^0.4778^7^Scarlet Friar^159:1:1,1414:1:1,1433:1:1,2589:1:2,3214:1:1^
@@ -32,6 +35,8 @@ GoldScout-export 5^gmgkhw2mg17m^7
 1549^2^0^10^10^1420^0.8141^0.4494^2^Ravenous Darkhound^2672:2:2^
 1554^5^0^8^9^1420^0.7421^0.4840^5^Vampiric Duskbat^6296:2:2,7074:3:3,9760:1:1,12223:2:2^
 1555^14^0^9^10^1420^0.8636^0.5273^14^Vicious Night Web Spider^1475:2:2,1476:9:9,2872:4:4,5465:3:3^
+1657^1^0^9^9^1420^0.4740^0.4095^1^Devlin Agamand^774:1:1,2589:1:2,3641:1:1^
+1658^1^0^13^13^1420^0.5231^0.2633^1^Captain Dargol^3082:1:1^
 1660^2^0^8^8^1420^0.7949^0.2537^2^Scarlet Bodyguard^2589:1:1^
 1664^1^0^11^11^1420^0.7886^0.5599^1^Captain Vachon^^
 1765^1^0^11^11^1421^0.6713^0.0595^1^Worg^2672:1:1^
@@ -155,6 +160,7 @@ GoldScout-export 5^gmgkhw2mg17m^7
 @i^732^Okra
 @i^769^Chunk of Boar Meat
 @i^771^Chipped Boar Tusk
+@i^774^Malachite
 @i^814^Flask of Oil
 @i^828^Small Blue Pouch
 @i^1180^Scroll of Stamina
@@ -170,6 +176,7 @@ GoldScout-export 5^gmgkhw2mg17m^7
 @i^1416^Rusty Hatchet
 @i^1419^Worn Leather Boots
 @i^1423^Worn Leather Pants
+@i^1425^Worn Leather Vest
 @i^1427^Patchwork Shoes
 @i^1430^Patchwork Gloves
 @i^1433^Patchwork Armor
@@ -207,6 +214,7 @@ GoldScout-export 5^gmgkhw2mg17m^7
 @i^2872^Vicious Night Web Spider Venom
 @i^2972^Spellbinder Gloves
 @i^3013^Scroll of Protection
+@i^3082^Dargol's Skull
 @i^3171^Broken Boar Tusk
 @i^3172^Boar Intestines
 @i^3207^Hunting Bracers
@@ -216,9 +224,11 @@ GoldScout-export 5^gmgkhw2mg17m^7
 @i^3300^Rabbit's Foot
 @i^3335^Farmer's Broom
 @i^3363^Frayed Belt
+@i^3370^Patchwork Belt
 @i^3379^Brocade Bracers
 @i^3399^Vulture Talon
 @i^3402^Soft Patch of Fur
+@i^3641^Journeyman's Bracers
 @i^3674^Decomposed Boot
 @i^3783^Light Scimitar
 @i^3785^Keen Axe
@@ -295,6 +305,7 @@ GoldScout-export 5^gmgkhw2mg17m^7
 @i^9451^Bubbling Water
 @i^9452^Hydrocane
 @i^9492^Electromagnetic Gigaflux Reactivator
+@i^9742^Simple Cord
 @i^9760^Cadet Bracers
 @i^9761^Cadet Cloak
 @i^9827^Scaled Leather Belt of the Channeler
@@ -342,6 +353,7 @@ GoldScout-export 5^gmgkhw2mg17m^7
 @q^732^1:12:0
 @q^769^1:7:1
 @q^771^0:15:0
+@q^774^2:7:1
 @q^814^1:7:1
 @q^828^1:1:0
 @q^1180^1:0:0
@@ -357,6 +369,7 @@ GoldScout-export 5^gmgkhw2mg17m^7
 @q^1416^0:2:0
 @q^1419^0:4:0
 @q^1423^0:4:0
+@q^1425^0:4:0
 @q^1427^0:4:0
 @q^1430^0:4:0
 @q^1433^0:4:0
@@ -394,6 +407,7 @@ GoldScout-export 5^gmgkhw2mg17m^7
 @q^2872^1:12:0
 @q^2972^1:4:0
 @q^3013^1:0:0
+@q^3082^1:12:0
 @q^3171^0:15:0
 @q^3172^1:7:1
 @q^3207^1:4:0
@@ -403,9 +417,11 @@ GoldScout-export 5^gmgkhw2mg17m^7
 @q^3300^0:15:0
 @q^3335^1:2:0
 @q^3363^0:4:0
+@q^3370^0:4:0
 @q^3379^0:4:0
 @q^3399^0:15:0
 @q^3402^0:15:0
+@q^3641^1:4:0
 @q^3674^0:15:0
 @q^3783^0:2:0
 @q^3785^0:2:0
@@ -482,6 +498,7 @@ GoldScout-export 5^gmgkhw2mg17m^7
 @q^9451^1:0:0
 @q^9452^3:2:0
 @q^9492^3:4:0
+@q^9742^1:4:0
 @q^9760^1:4:0
 @q^9761^1:4:0
 @q^9827^2:4:0
@@ -2574,11 +2591,14 @@ GoldScout-export 5^gmgkhw2mg17m^7
 @a^1108^67:1
 @a^1109^166:1,167:2
 @a^1150^27:1
-@a^1525^230:5,231:1
+@a^1522^129:1,130:1,169:1
+@a^1525^190:1,230:5,231:1
 @a^1526^230:2
 @a^1527^173:3
 @a^1529^235:1,254:1,255:6
+@a^1530^110:4,130:4
 @a^1532^235:2,255:6
+@a^1534^110:7,130:2
 @a^1535^186:3
 @a^1537^235:6,270:1
 @a^1538^115:2,235:5
@@ -2588,6 +2608,8 @@ GoldScout-export 5^gmgkhw2mg17m^7
 @a^1549^176:1,196:1
 @a^1554^154:1,174:1,175:1,234:2
 @a^1555^197:2,216:1,217:8,236:2,237:1
+@a^1657^169:1
+@a^1658^110:1
 @a^1660^115:2
 @a^1664^235:1
 @a^1765^33:1
