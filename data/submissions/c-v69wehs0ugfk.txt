@@ -1,4 +1,4 @@
-GoldScout-export 5^v69wehs0ugfk^10
+GoldScout-export 5^v69wehs0ugfk^11
 588^5^0^34^35^1434^0.2415^0.1153^5^Bloodscalp Scout^3385:1:1,3901:2:2,3915:1:1,4306:2:3^
 595^3^0^34^35^1434^0.2498^0.1078^3^Bloodscalp Hunter^4306:2:3^
 597^15^0^36^37^1434^0.2243^0.1125^15^Bloodscalp Berserker^2289:1:1,3771:1:1,3915:8:8,4306:4:9^
@@ -57,9 +57,18 @@ GoldScout-export 5^v69wehs0ugfk^10
 4807^1^0^0^0^0^0.0000^0.0000^0^^17057:1:1^
 4834^1^0^35^35^1445^0.3771^0.2698^1^Theramore Infiltrator^^
 12902^1^0^0^0^0^0.0000^0.0000^0^^422:1:1,4306:1:3,273841:1:1^
+250483^1^0^0^0^0^0.0000^0.0000^0^^271202:1:1^
+250484^6^0^0^0^0^0.0000^0.0000^0^^1498:1:1,1510:1:1,1768:1:1,3167:3:3,3376:1:1,3931:2:2,4571:1:1^
+250488^1^0^0^0^0^0.0000^0.0000^0^^4585:1:1^
+250619^1^0^0^0^0^0.0000^0.0000^0^^1764:1:1,3167:1:1,9779:1:1^
+250625^9^0^0^0^0^0.0000^0.0000^0^^818:2:2,1498:1:1,2777:1:1,2972:1:1,3167:5:5,3375:1:1,3931:3:3,4684:1:1^
+250626^3^0^0^0^0^0.0000^0.0000^0^^1511:1:1^
+250660^1^0^0^0^0^0.0000^0.0000^0^^271205:1:1^
+250689^1^0^0^0^0^0.0000^0.0000^0^^2216:1:1,2287:1:1^
 255898^5^0^38^39^2548^0.7356^0.6261^5^Murloc Oracle^5524:2:2,268344:1:1^
 255899^22^0^37^38^2548^0.7254^0.6403^22^Murloc Tideskimmer^268344:8:8^
 255901^11^0^36^37^2548^0.7365^0.6365^11^Sand Crawler^5524:1:1,5569:5:5,12206:2:2,17057:3:3,268345:6:6^
+256040^6^0^0^0^0^0.0000^0.0000^0^^1516:1:1,1733:1:1,2778:1:1,3167:4:4,6553:1:1^
 256383^12^0^35^36^2548^0.4547^0.8121^12^Meadowsbrook Farmhand^3803:1:1,3817:1:1,4306:5:11^
 256433^6^0^32^33^2548^0.4084^0.6105^6^Woodworker^3800:1:1,4306:1:2^
 256434^26^0^37^38^2548^0.4082^0.6216^26^Turner's Mill Lumberjack^3799:1:1,4306:3:6,4338:4:4,263972:10:10^
@@ -95,6 +104,7 @@ GoldScout-export 5^v69wehs0ugfk^10
 @i^770^Pointy Crocolisk Tooth
 @i^785^Mageroyal
 @i^814^Flask of Oil
+@i^818^Tigerseye
 @i^856^Blue Leather Bag
 @i^858^Lesser Healing Potion
 @i^878^Fist-sized Spinneret
@@ -105,12 +115,18 @@ GoldScout-export 5^v69wehs0ugfk^10
 @i^1210^Shadowgem
 @i^1464^Buzzard Talon
 @i^1475^Small Venom Sac
+@i^1498^Calico Gloves
+@i^1510^Heavy Hammer
+@i^1511^Commoner's Sword
+@i^1516^Worn Hatchet
 @i^1686^Bristly Whisker
 @i^1688^Long Soft Tail
 @i^1696^Curved Raptor Talon
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
+@i^1733^Worn Cloak
+@i^1764^Canvas Shoes
 @i^1766^Canvas Cloak
 @i^1768^Canvas Pants
 @i^1770^Canvas Vest
@@ -127,6 +143,7 @@ GoldScout-export 5^v69wehs0ugfk^10
 @i^1990^Ballast Maul of the Owl
 @i^1996^Voodoo Band
 @i^2169^Buzzer Blade
+@i^2216^Simple Buckler
 @i^2217^Rectangular Shield
 @i^2287^Haunch of Meat
 @i^2289^Scroll of Strength II
@@ -140,10 +157,14 @@ GoldScout-export 5^v69wehs0ugfk^10
 @i^2735^Green Hills of Stranglethorn - Page 11
 @i^2740^Green Hills of Stranglethorn - Page 16
 @i^2764^Small Dagger
+@i^2777^Feeble Shortbow
+@i^2778^Cheap Blunderbuss
 @i^2780^Light Hunting Bow
 @i^2781^Dirty Blunderbuss
+@i^2972^Spellbinder Gloves
 @i^3167^Thick Spider Hair
 @i^3182^Spider's Silk
+@i^3375^Calico Bracers
 @i^3376^Canvas Belt
 @i^3385^Lesser Mana Potion
 @i^3404^Buzzard Wing
@@ -168,8 +189,11 @@ GoldScout-export 5^v69wehs0ugfk^10
 @i^4359^Handful of Copper Bolts
 @i^4364^Coarse Blasting Powder
 @i^4461^Raptor Hide
+@i^4571^War Knife of Magic
 @i^4585^Dripping Spider Mandible
 @i^4586^Smooth Raptor Skin
+@i^4603^Raw Spotted Yellowtail
+@i^4684^Spellbinder Belt
 @i^4726^Chief Brigadier Cloak
 @i^5128^Shed Lizard Skin
 @i^5187^Rhahk'Zor's Hammer
@@ -187,8 +211,10 @@ GoldScout-export 5^v69wehs0ugfk^10
 @i^6308^Raw Bristle Whisker Catfish
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
+@i^6362^Raw Rockscale Cod
 @i^6379^Inscribed Leather Belt
 @i^6444^Forked Tongue
+@i^6553^Bard's Trousers of Magic
 @i^6826^Brilliant Scale
 @i^7230^Smite's Mighty Hammer
 @i^7431^Twilight Pants of Spirit
@@ -198,6 +224,7 @@ GoldScout-export 5^v69wehs0ugfk^10
 @i^8365^Raw Mithril Head Trout
 @i^9294^Recipe: Wildvine Potion
 @i^9777^Bandit Bracers of Fire Protection
+@i^9779^Bandit Cloak of Intellect
 @i^9788^Raider's Belt of Nature Protection
 @i^9848^Conjurer's Gloves of Nature Protection
 @i^9855^Archer's Belt of Agility
@@ -235,6 +262,8 @@ GoldScout-export 5^v69wehs0ugfk^10
 @i^268345^Sand Crawler Meat
 @i^270305^Brinescale Trident
 @i^270333^Voodoo-Infused Artifact
+@i^271202^Witherbite Bracers
+@i^271205^Abomination Bones
 @i^271776^Glade Viper Venom
 @i^271778^Intact Tallstrider Beak
 @i^271793^Plains Buzzard Feather
@@ -252,6 +281,7 @@ GoldScout-export 5^v69wehs0ugfk^10
 @q^770^0:15:0
 @q^785^1:7:1
 @q^814^1:7:1
+@q^818^2:7:1
 @q^856^1:1:0
 @q^858^1:0:0
 @q^878^0:7:0
@@ -262,12 +292,18 @@ GoldScout-export 5^v69wehs0ugfk^10
 @q^1210^2:7:1
 @q^1464^0:15:0
 @q^1475^1:7:1
+@q^1498^0:4:0
+@q^1510^0:2:0
+@q^1511^0:2:0
+@q^1516^0:2:0
 @q^1686^0:15:0
 @q^1688^0:15:0
 @q^1696^0:15:0
 @q^1707^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
+@q^1733^0:4:0
+@q^1764^0:4:0
 @q^1766^0:4:0
 @q^1768^0:4:0
 @q^1770^0:4:0
@@ -284,6 +320,7 @@ GoldScout-export 5^v69wehs0ugfk^10
 @q^1990^2:2:0
 @q^1996^2:4:0
 @q^2169^3:2:0
+@q^2216^0:4:0
 @q^2217^0:4:0
 @q^2287^1:0:0
 @q^2289^1:0:0
@@ -297,10 +334,14 @@ GoldScout-export 5^v69wehs0ugfk^10
 @q^2735^1:12:0
 @q^2740^1:12:0
 @q^2764^0:2:0
+@q^2777^0:2:0
+@q^2778^0:2:0
 @q^2780^0:2:0
 @q^2781^0:2:0
+@q^2972^1:4:0
 @q^3167^0:15:0
 @q^3182^1:7:1
+@q^3375^0:4:0
 @q^3376^0:4:0
 @q^3385^1:0:0
 @q^3404^1:7:1
@@ -325,8 +366,11 @@ GoldScout-export 5^v69wehs0ugfk^10
 @q^4359^1:7:1
 @q^4364^1:7:1
 @q^4461^1:7:1
+@q^4571^2:2:0
 @q^4585^0:15:0
 @q^4586^0:15:0
+@q^4603^1:7:1
+@q^4684^1:4:0
 @q^4726^2:4:0
 @q^5128^0:15:0
 @q^5187^3:2:0
@@ -344,8 +388,10 @@ GoldScout-export 5^v69wehs0ugfk^10
 @q^6308^1:7:1
 @q^6358^1:7:1
 @q^6359^1:7:1
+@q^6362^1:7:1
 @q^6379^2:4:0
 @q^6444^0:15:0
+@q^6553^2:4:0
 @q^6826^0:15:0
 @q^7230^3:2:0
 @q^7431^2:4:0
@@ -355,6 +401,7 @@ GoldScout-export 5^v69wehs0ugfk^10
 @q^8365^1:7:1
 @q^9294^2:9:0
 @q^9777^2:4:0
+@q^9779^2:4:0
 @q^9788^2:4:0
 @q^9848^2:4:0
 @q^9855^2:4:0
@@ -392,6 +439,8 @@ GoldScout-export 5^v69wehs0ugfk^10
 @q^268345^1:12:0
 @q^270305^1:12:0
 @q^270333^1:12:0
+@q^271202^3:4:0
+@q^271205^3:4:0
 @q^271776^1:12:0
 @q^271778^1:12:0
 @q^271793^1:12:0
@@ -1228,6 +1277,7 @@ GoldScout-export 5^v69wehs0ugfk^10
 @a^264096^26:2
 @a^269175^106:1,126:2
 @a^270664^228:2,247:1,248:1
+@f^1434^0^26^160^4603:5:5,6358:7:7,6359:4:4,6362:10:10^305:26
 @f^1443^0^26^145^6308:8:8,6358:1:1,6359:2:2,8365:14:14,21150:1:1^284:26
 @f^1445^0^25^153^6308:7:7,8365:18:18^127:25
 @l^0^enUS

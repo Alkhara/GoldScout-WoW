@@ -1,4 +1,4 @@
-GoldScout-export 5^g3x2ax8hz43x^5
+GoldScout-export 5^g3x2ax8hz43x^6
 1142^4^0^36^37^1434^0.3711^0.3081^4^Mosh'Ogg Brute^4306:1:2^
 1144^4^0^36^37^1434^0.3628^0.3119^4^Mosh'Ogg Witch Doctor^3771:1:1,4338:1:1^
 2069^1^0^14^15^1439^0.3828^0.6814^1^Moonstalker^4813:1:1^
@@ -16,11 +16,15 @@ GoldScout-export 5^g3x2ax8hz43x^5
 3823^1^0^19^20^1440^0.2172^0.3030^1^Ghostpaw Runner^1015:1:1^
 3825^7^0^27^28^1440^0.6884^0.6619^7^Ghostpaw Alpha^1015:2:2,3301:1:1,3402:2:2^
 4114^1^0^28^28^1441^0.5963^0.5605^1^Gravelsnout Forager^^
-4352^2^0^36^37^1445^0.4618^0.1917^2^Bloodfen Screecher^12184:1:1^
+4341^2^0^35^35^1445^0.4907^0.2197^2^Drywallow Crocolisk^770:1:1,3667:1:1^
+4342^1^0^37^37^1445^0.4190^0.2926^1^Drywallow Vicejaw^770:1:1^
+4343^1^0^37^37^1445^0.4188^0.2931^1^Drywallow Snapper^770:1:1,3667:1:1^
+4352^5^0^36^37^1445^0.4680^0.1889^5^Bloodfen Screecher^5637:1:1,12184:2:2^
 9377^3^0^33^34^1441^0.7994^0.6460^3^Swirling Vortex^^
 10158^1^0^12^12^1439^0.4655^0.4688^1^Moonkin^6889:1:1,17056:1:1^
 @i^727^Notched Shortsword of the Monkey
 @i^730^Murloc Eye
+@i^770^Pointy Crocolisk Tooth
 @i^818^Tigerseye
 @i^856^Blue Leather Bag
 @i^858^Lesser Healing Potion
@@ -35,6 +39,7 @@ GoldScout-export 5^g3x2ax8hz43x^5
 @i^3282^Battle Chain Pants
 @i^3301^Sharp Canine
 @i^3402^Soft Patch of Fur
+@i^3667^Tender Crocolisk Meat
 @i^3771^Wild Hog Shank
 @i^3820^Stranglekelp
 @i^4294^Pattern: Hillman's Belt
@@ -48,6 +53,7 @@ GoldScout-export 5^g3x2ax8hz43x^5
 @i^5506^Beady Eye Stalk
 @i^5523^Small Barnacled Clam
 @i^5566^Broken Antler
+@i^5637^Large Fang
 @i^6289^Raw Longjaw Mud Snapper
 @i^6291^Raw Brilliant Smallfish
 @i^6303^Raw Slitherskin Mackerel
@@ -74,6 +80,7 @@ GoldScout-export 5^g3x2ax8hz43x^5
 @i^248685^Waylaid Crate: Apprentice Curiosities
 @q^727^2:2:0
 @q^730^1:7:1
+@q^770^0:15:0
 @q^818^2:7:1
 @q^856^1:1:0
 @q^858^1:0:0
@@ -88,6 +95,7 @@ GoldScout-export 5^g3x2ax8hz43x^5
 @q^3282^2:4:0
 @q^3301^0:15:0
 @q^3402^0:15:0
+@q^3667^1:7:1
 @q^3771^1:0:0
 @q^3820^1:7:1
 @q^4294^2:9:0
@@ -101,6 +109,7 @@ GoldScout-export 5^g3x2ax8hz43x^5
 @q^5506^0:15:0
 @q^5523^1:7:0
 @q^5566^0:15:0
+@q^5637^1:7:1
 @q^6289^1:7:1
 @q^6291^1:7:1
 @q^6303^1:7:1
@@ -841,7 +850,10 @@ GoldScout-export 5^g3x2ax8hz43x^5
 @a^3823^124:1
 @a^3825^253:1,254:3,273:3
 @a^4114^231:1
-@a^4352^69:2
+@a^4341^89:2
+@a^4342^108:1
+@a^4343^108:1
+@a^4352^69:5
 @a^9377^234:1,256:1,296:1
 @a^10158^189:1
 @f^1413^0^129^50^6289:45:45,6291:16:16,6303:3:3,6308:14:14,6358:2:2,6361:2:2,6470:1:1,6522:46:46^149:122,152:7

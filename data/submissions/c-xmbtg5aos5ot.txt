@@ -1,4 +1,4 @@
-GoldScout-export 5^xmbtg5aos5ot^4
+GoldScout-export 5^xmbtg5aos5ot^5
 1913^1^0^16^16^1421^0.6351^0.6314^1^Garde de Dalaran^^
 7032^1^0^56^56^1428^0.3753^0.6437^1^Grand élémentaire d'obsidienne^4784:1:1,7076:1:1^
 8096^5^0^40^40^1436^0.5262^0.5359^5^Protecteur du Peuple^^
@@ -64,6 +64,9 @@ GoldScout-export 5^xmbtg5aos5ot^4
 @i^5758^Coffret en mithril
 @i^6289^Lutjan à longue mâchoire cru
 @i^6291^Goujon brillant cru
+@i^6292^Lutjan de 10 livres
+@i^6294^Lutjan de 12 livres
+@i^6308^Poisson-chat moustachu cru
 @i^6530^Asticots
 @i^7076^Essence de terre
 @i^7972^Ichor de non-mort
@@ -130,6 +133,9 @@ GoldScout-export 5^xmbtg5aos5ot^4
 @q^5758^2:15:0
 @q^6289^1:7:1
 @q^6291^1:7:1
+@q^6292^1:15:0
+@q^6294^1:15:0
+@q^6308^1:7:1
 @q^6530^1:0:0
 @q^7076^2:7:1
 @q^7972^1:7:1
@@ -190,7 +196,9 @@ GoldScout-export 5^xmbtg5aos5ot^4
 @m^1423^Maleterres de l'est
 @m^1428^Steppes ardentes
 @m^1436^Marche de l'Ouest
+@m^1442^Les Serres-Rocheuses
 @m^1447^Azshara
+@m^1456^Thunder Bluff
 @c^118^
 @c^724^
 @c^733^
@@ -896,5 +904,7 @@ GoldScout-export 5^xmbtg5aos5ot^4
 @a^250027^107:1
 @a^255394^127:1
 @a^272307^107:1
-@f^1412^0^11^1^6289:5:5,6291:6:6^229:11
+@f^1412^0^76^1^6289:32:32,6291:42:42,6292:1:1,6294:1:1^229:76
+@f^1442^0^47^130^6289:13:13,6308:34:34^229:47
+@f^1456^0^108^75^6289:63:63,6291:16:16,6308:29:29^247:108
 @l^0^frFR

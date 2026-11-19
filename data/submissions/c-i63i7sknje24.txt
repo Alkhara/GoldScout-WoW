@@ -1,4 +1,4 @@
-GoldScout-export 5^i63i7sknje24^4
+GoldScout-export 5^i63i7sknje24^5
 215^1^0^25^25^1431^0.2433^0.7085^1^Defias Night Runner^^
 1017^1^0^25^26^1437^0.3487^0.1978^1^Highland Scytheclaw^3685:1:1^
 1018^7^0^27^28^1437^0.3517^0.1790^7^Highland Razormaw^1697:2:2,3685:3:3,280103:2:2^
@@ -57,8 +57,10 @@ GoldScout-export 5^i63i7sknje24^4
 @i^4712^Glimmering Mail Girdle
 @i^5576^Large Brown Sack
 @i^6289^Raw Longjaw Mud Snapper
+@i^6291^Raw Brilliant Smallfish
 @i^6303^Raw Slitherskin Mackerel
 @i^6308^Raw Bristle Whisker Catfish
+@i^6309^17 Pound Catfish
 @i^6358^Oily Blackmouth
 @i^6361^Raw Rainbow Fin Albacore
 @i^6613^Sage's Bracers of the Channeler
@@ -111,8 +113,10 @@ GoldScout-export 5^i63i7sknje24^4
 @q^4712^2:4:0
 @q^5576^1:1:0
 @q^6289^1:7:1
+@q^6291^1:7:1
 @q^6303^1:7:1
 @q^6308^1:7:1
+@q^6309^1:15:0
 @q^6358^1:7:1
 @q^6361^1:7:1
 @q^6613^2:4:0
@@ -136,6 +140,7 @@ GoldScout-export 5^i63i7sknje24^4
 @q^248705^2:0:1
 @q^274043^3:4:0
 @q^280103^1:12:0
+@m^1413^The Barrens
 @m^1415^Eastern Kingdoms
 @m^1426^Dun Morogh
 @m^1431^Duskwood
@@ -878,6 +883,9 @@ GoldScout-export 5^i63i7sknje24^4
 @a^6208^208:1
 @a^6221^208:2
 @a^6231^208:1
+@f^1413^0^7^102^6303:3:3,6361:4:4^152:7
 @f^1433^0^20^91^6289:9:9,6308:11:11^225:20
+@f^1437^0^1^102^6358:1:1^240:1
 @f^1439^0^20^77^3820:1:1,6303:3:3,6358:6:6,6361:4:4,6717:3:3,12238:4:4,20708:1:1,20709:1:2^166:9,287:7,326:4
+@f^1453^0^59^106^6289:40:40,6291:10:10,6308:8:8,6309:1:1^270:59
 @l^0^enUS
