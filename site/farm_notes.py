@@ -16,6 +16,8 @@ import data_pages
 
 NOTES_FILE = Path(__file__).resolve().parent / "farm_notes.json"
 MIN_WORDS, MAX_WORDS = 35, 130
+MAX_SPOTS = 2              # map coordinates a note may give: more reads like a list, not advice
+NEARBY_SPOTS = 2           # spots after the busiest one a fact sheet offers
 OTHER_DROPS = 4             # the mob's other drops a fact sheet lists, most likely first
 # Words of the guides and the add-on a note may name besides the farm's own names.
 ALLOWED_NAMES = {"GoldScout", "Hunt", "Farm", "Drop", "Rates", "WoW", "Forever", "Blizzard", "Horde",
@@ -27,6 +29,7 @@ FORBIDDEN = ("respawn", "patrol", "elite", "caster", "flee", "rare spawn", "ques
 
 WORD = re.compile(r"[A-Za-z][A-Za-z'’-]*")
 NUMBER = re.compile(r"\d+(?:[.,]\d+)?")
+SPOT = re.compile(r"\d+(?:\.\d+)?, \d+(?:\.\d+)?")     # map coordinates: "52.5, 47.5"
 
 
 def key(farm):
@@ -50,10 +53,19 @@ def facts(data, farm):
         "level_low": entry["lmin"] or None,
         "level_high": entry["lmax"] or None,
         "busiest_spot": data_pages.square_coords(data_pages.busiest(cells)) if placed else None,
+        "nearby_spots": [data_pages.square_coords(cell) for cell in
+                         sorted(cells, key=lambda cell: (-cells[cell], cell))[1:1 + NEARBY_SPOTS]] if placed else [],
+        # Every square players loot it in: a note may name any (the busiest can change from week to week),
+        # but Claude only sees the busiest and the nearby ones (prompt_facts).
         "other_spots": sorted(data_pages.square_coords(cell) for cell in cells) if placed else [],
         "other_drops": others,
         "item_is_crafting_reagent": data.kind(item) == "reagent",
     }
+
+
+def prompt_facts(sheet):
+    """The fact sheet as Claude gets it: without the full list of squares, so a note picks a spot or two."""
+    return {field: value for field, value in sheet.items() if field != "other_spots"}
 
 
 def names_in(sheet):
@@ -90,6 +102,9 @@ def check(text, sheet, known_words):
     for number in NUMBER.findall(text):
         if number not in numbers:
             problems.append("the number %s isn't in the facts" % number)
+    spots = len(SPOT.findall(text))
+    if spots > MAX_SPOTS:
+        problems.append("%d map spots; a note gives at most %d" % (spots, MAX_SPOTS))
     if "%" in text or re.search(r"\d\s*[gsc]\b", text):
         problems.append("prices and percentages belong in the live tables")
     lowered = text.lower()

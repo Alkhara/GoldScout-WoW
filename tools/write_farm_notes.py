@@ -39,7 +39,8 @@ SYSTEM = """You write short farming notes for GoldScout's gold-making guides for
 Each note is 2 to 4 sentences (40 to 110 words) of practical advice on running one farm: which mob to kill \
 for which item, in which zone, at what character level, where in the zone players loot it most (map \
 coordinates), and what else it drops that's worth picking up. Write for a player reading the guide: direct, \
-specific, friendly, no hype, no headings, no lists, no emoji.
+specific, friendly, no hype, no headings, no lists, no emoji. For where to go, give the busiest spot and at \
+most one of the nearby spots, never a list of coordinates.
 
 Use only the facts you're given. In particular:
 - Name only the mob, item, zone and other drops in the facts, spelled exactly as given.
@@ -70,7 +71,7 @@ def farms_to_note(data, markets):
 
 def ask(client, sheet, retry=None):
     """One note for a fact sheet, or None if Claude declined. retry: (draft, problems) to fix."""
-    content = "Facts (JSON):\n" + json.dumps(sheet, ensure_ascii=False, indent=1)
+    content = "Facts (JSON):\n" + json.dumps(farm_notes.prompt_facts(sheet), ensure_ascii=False, indent=1)
     if retry:
         draft, problems = retry
         content += ("\n\nYour previous note broke the rules:\n- " + "\n- ".join(problems)

@@ -57,6 +57,19 @@ class FactTests(unittest.TestCase):
         problems = self.checked(GOOD + " Ashenvale is close by.")
         self.assertTrue(any("'Ashenvale'" in p for p in problems), problems)
 
+    def test_at_most_two_map_spots(self):
+        sheet = dict(self.sheet, busiest_spot="52.5, 47.5", other_spots=["52.5, 47.5", "57.5, 47.5", "52.5, 42.5"])
+        two = GOOD.replace("around 52.5, 47.5", "around 52.5, 47.5 or 57.5, 47.5")
+        self.assertEqual(farm_notes.check(two, sheet, self.known), [])
+        three = GOOD.replace("around 52.5, 47.5", "around 52.5, 47.5, 57.5, 47.5 and 52.5, 42.5")
+        self.assertTrue(any("3 map spots" in p for p in farm_notes.check(three, sheet, self.known)))
+
+    def test_claude_sees_the_busiest_spots_not_every_square(self):
+        sheet = dict(self.sheet, other_spots=["1, 2", "3, 4"], nearby_spots=["3, 4"])
+        shown = farm_notes.prompt_facts(sheet)
+        self.assertNotIn("other_spots", shown)
+        self.assertEqual(shown["nearby_spots"], ["3, 4"])
+
     def test_plurals_and_possessives_of_allowed_names(self):
         text = GOOD.replace("Press Hunt in GoldScout", "Kill the Coyotes and press Hunt in GoldScout's window")
         self.assertEqual(self.checked(text), [])
