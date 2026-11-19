@@ -1,14 +1,15 @@
-GoldScout-export 5^objzat4bh15h^6
+GoldScout-export 5^objzat4bh15h^7
 587^1^0^33^33^1434^0.3305^0.1594^1^Bloodscalp Warrior^^
 588^7^0^34^35^1434^0.2548^0.1140^7^Bloodscalp Scout^3793:1:1,3795:1:1,3915:2:2,4306:2:4^
 595^5^0^34^35^1434^0.2613^0.1211^5^Bloodscalp Hunter^3805:1:1,3901:1:1,3915:2:2,4306:1:2^
-597^10^0^36^37^1434^0.2422^0.0943^10^Bloodscalp Berserker^1519:2:2,1710:1:1,2749:1:1,2750:1:1,3915:5:5,4306:2:2^
+597^11^0^36^37^1434^0.2425^0.0958^11^Bloodscalp Berserker^1519:2:2,1710:1:1,2749:1:1,2750:1:1,3915:5:5,4306:2:2^
 660^9^0^37^37^1434^0.2402^0.0950^9^Bloodscalp Witch Doctor^1519:2:2,1708:1:1,3915:4:4,4338:3:3^
-671^11^0^36^37^1434^0.2375^0.1023^11^Bloodscalp Headhunter^1519:4:4,1708:1:1,1710:1:1,3901:2:2,3915:4:4,4306:5:8^
+671^14^0^36^37^1434^0.2383^0.1038^14^Bloodscalp Headhunter^1519:4:4,1532:3:7,1708:2:2,1710:1:1,2742:1:1,3801:1:1,3901:2:2,3915:4:4,4306:6:10^
 682^4^0^32^33^1434^0.2930^0.0924^4^Stranglethorn Tiger^1686:3:3,12202:1:1^
 683^1^0^30^31^1434^0.3513^0.1510^1^Young Panther^1687:1:1^
 685^3^0^33^34^1434^0.2664^0.1678^3^Stranglethorn Raptor^3685:2:2,4461:1:1,4586:2:2,12184:1:1^
-686^9^0^35^36^1434^0.3199^0.2301^9^Lashtail Raptor^1696:2:2,1988:1:1,3685:7:7,4461:1:1,4586:1:1,12184:6:6^
+686^12^0^35^36^1434^0.3174^0.2331^12^Lashtail Raptor^1696:2:2,1988:1:1,3685:8:8,4461:1:1,4586:1:1,8146:1:1,12184:8:8^
+689^22^0^34^35^1434^0.2411^0.1720^22^Crystal Spine Basilisk^1701:5:5,1702:10:10,1703:7:7,3918:8:8,4093:2:2,5637:1:1,11386:1:1^
 697^4^0^33^34^1434^0.3296^0.1561^4^Bloodscalp Shaman^1519:3:3,1520:1:1,3901:2:2,3915:2:2,4306:3:4^
 699^1^0^34^35^1434^0.2808^0.1154^1^Bloodscalp Beastmaster^3901:1:1^
 701^10^0^34^35^1434^0.2609^0.1150^10^Bloodscalp Mystic^1519:1:1,3771:1:1,3915:3:3,4306:3:4^
@@ -77,10 +78,14 @@ GoldScout-export 5^objzat4bh15h^6
 @i^1478^Scroll of Protection II
 @i^1519^Bloodscalp Ear
 @i^1520^Troll Sweat
+@i^1532^Shrunken Head
 @i^1686^Bristly Whisker
 @i^1687^Retractable Claw
 @i^1688^Long Soft Tail
 @i^1696^Curved Raptor Talon
+@i^1701^Curved Basilisk Claw
+@i^1702^Intact Basilisk Spine
+@i^1703^Crystal Basilisk Spine
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
 @i^1756^Reinforced Chain Bracers
@@ -94,6 +99,7 @@ GoldScout-export 5^objzat4bh15h^6
 @i^2592^Wool Cloth
 @i^2677^Boar Ribs
 @i^2740^Green Hills of Stranglethorn - Page 16
+@i^2742^Green Hills of Stranglethorn - Page 18
 @i^2749^Green Hills of Stranglethorn - Page 25
 @i^2750^Green Hills of Stranglethorn - Page 26
 @i^2940^Bloody Bear Paw
@@ -108,9 +114,12 @@ GoldScout-export 5^objzat4bh15h^6
 @i^3787^Stone Club
 @i^3793^Interlaced Boots
 @i^3795^Interlaced Cloak
+@i^3801^Hardened Leather Boots
 @i^3805^Hardened Leather Pants
 @i^3901^Bloodscalp Tusk
 @i^3915^Bloody Bone Necklace
+@i^3918^Singing Crystal Shard
+@i^4093^Large Basilisk Tail
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4461^Raptor Hide
@@ -118,8 +127,10 @@ GoldScout-export 5^objzat4bh15h^6
 @i^4586^Smooth Raptor Skin
 @i^5113^Mark of the Syndicate
 @i^5637^Large Fang
+@i^8146^Wicked Claw
 @i^9308^Grime-Encrusted Object
 @i^9451^Bubbling Water
+@i^11386^Squishy Basilisk Eye
 @i^11391^Spined Bat Wing
 @i^11406^Rotting Bear Carcass
 @i^11407^Torn Bear Pelt
@@ -131,10 +142,14 @@ GoldScout-export 5^objzat4bh15h^6
 @q^1478^1:0:0
 @q^1519^1:12:0
 @q^1520^0:15:0
+@q^1532^1:12:0
 @q^1686^0:15:0
 @q^1687^0:15:0
 @q^1688^0:15:0
 @q^1696^0:15:0
+@q^1701^0:15:0
+@q^1702^0:15:0
+@q^1703^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
 @q^1756^0:4:0
@@ -148,6 +163,7 @@ GoldScout-export 5^objzat4bh15h^6
 @q^2592^1:7:1
 @q^2677^1:7:1
 @q^2740^1:12:0
+@q^2742^1:12:0
 @q^2749^1:12:0
 @q^2750^1:12:0
 @q^2940^0:15:0
@@ -162,9 +178,12 @@ GoldScout-export 5^objzat4bh15h^6
 @q^3787^0:2:0
 @q^3793^0:4:0
 @q^3795^0:4:0
+@q^3801^0:4:0
 @q^3805^0:4:0
 @q^3901^1:12:0
 @q^3915^1:12:0
+@q^3918^1:12:0
+@q^4093^0:15:0
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4461^1:7:1
@@ -172,8 +191,10 @@ GoldScout-export 5^objzat4bh15h^6
 @q^4586^0:15:0
 @q^5113^0:15:0
 @q^5637^1:7:1
+@q^8146^1:7:1
 @q^9308^1:12:0
 @q^9451^1:0:0
+@q^11386^0:15:0
 @q^11391^0:15:0
 @q^11406^0:15:0
 @q^11407^1:12:0
@@ -187,13 +208,14 @@ GoldScout-export 5^objzat4bh15h^6
 @a^587^66:1
 @a^588^45:7
 @a^595^44:1,45:4
-@a^597^24:7,44:3
+@a^597^24:7,44:4
 @a^660^24:7,44:2
-@a^671^24:4,44:7
+@a^671^24:4,44:10
 @a^682^25:4
 @a^683^67:1
 @a^685^65:3
-@a^686^86:9
+@a^686^86:12
+@a^689^64:20,65:2
 @a^697^46:1,66:3
 @a^699^45:1
 @a^701^25:1,45:9

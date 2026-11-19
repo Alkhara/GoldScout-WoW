@@ -1,4 +1,4 @@
-GoldScout-export 5^83q71mbjpoex^22
+GoldScout-export 5^83q71mbjpoex^23
 1501^1^0^1^1^1420^0.3222^0.6559^1^Mindless Zombie^^
 1502^2^0^1^1^1420^0.3208^0.6557^2^Wretched Zombie^^
 1767^1^0^12^13^1421^0.5692^0.2294^1^Vile Fin Shredder^1731:1:1^
@@ -300,6 +300,7 @@ GoldScout-export 5^83q71mbjpoex^22
 @i^4556^Speckled Shell Fragment
 @i^4585^Dripping Spider Mandible
 @i^4586^Smooth Raptor Skin
+@i^4603^Raw Spotted Yellowtail
 @i^4605^Red-speckled Mushroom
 @i^4606^Spongy Morel
 @i^4633^Heavy Bronze Lockbox
@@ -325,7 +326,10 @@ GoldScout-export 5^83q71mbjpoex^22
 @i^6314^Wolfmaster Cape
 @i^6321^Silverlaine's Family Seal
 @i^6324^Robes of Arugal
+@i^6355^Sturdy Locked Chest
+@i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
+@i^6362^Raw Rockscale Cod
 @i^6397^Emblazoned Gloves
 @i^6398^Emblazoned Belt
 @i^6438^Dull Elemental Bracer
@@ -356,9 +360,14 @@ GoldScout-export 5^83q71mbjpoex^22
 @i^11407^Torn Bear Pelt
 @i^12037^Mystery Meat
 @i^12184^Raptor Flesh
+@i^13758^Raw Redgill
+@i^13759^Raw Nightfin Snapper
+@i^13760^Raw Sunscale Salmon
 @i^14166^Buccaneer's Bracers of Spirit
 @i^15249^Polished Zweihander of the Tiger
 @i^15286^Long Redwood Bow
+@i^16967^Feralas Ahi
+@i^16968^Sar'theris Striker
 @i^17008^Small Scroll
 @i^17056^Light Feather
 @i^19937^Small Scorpid Claw
@@ -501,6 +510,7 @@ GoldScout-export 5^83q71mbjpoex^22
 @q^4556^0:15:0
 @q^4585^0:15:0
 @q^4586^0:15:0
+@q^4603^1:7:1
 @q^4605^1:0:0
 @q^4606^1:0:0
 @q^4633^2:15:0
@@ -526,7 +536,10 @@ GoldScout-export 5^83q71mbjpoex^22
 @q^6314^3:4:0
 @q^6321^3:4:0
 @q^6324^3:4:0
+@q^6355^1:15:0
+@q^6358^1:7:1
 @q^6359^1:7:1
+@q^6362^1:7:1
 @q^6397^2:4:0
 @q^6398^2:4:0
 @q^6438^0:15:0
@@ -557,9 +570,14 @@ GoldScout-export 5^83q71mbjpoex^22
 @q^11407^1:12:0
 @q^12037^1:7:1
 @q^12184^1:7:1
+@q^13758^1:7:1
+@q^13759^1:7:1
+@q^13760^1:7:1
 @q^14166^2:4:0
 @q^15249^2:2:0
 @q^15286^2:2:0
+@q^16967^1:15:0
+@q^16968^1:12:0
 @q^17008^1:15:0
 @q^17056^1:15:1
 @q^19937^0:15:0
@@ -603,6 +621,7 @@ GoldScout-export 5^83q71mbjpoex^22
 @m^1424^Hillsbrad Foothills
 @m^1441^Thousand Needles
 @m^1443^Desolace
+@m^1444^Feralas
 @m^1445^Dustwallow Marsh
 @c^118^
 @c^724^
@@ -1983,5 +2002,7 @@ GoldScout-export 5^83q71mbjpoex^22
 @a^218032^333:1
 @a^270094^231:1
 @f^1424^0^8^210^21071:8:8^93:8
-@f^1445^0^1^211^6359:1:1^231:1
+@f^1443^0^25^225^4603:5:5,6355:1:1,6358:3:3,6362:16:16,16968:1:1^305:25
+@f^1444^0^9^225^6358:3:3,13758:4:4,13759:1:1,13760:1:1,16967:1:1^212:9
+@f^1445^0^92^211^4603:15:15,6358:18:18,6359:7:7,6362:52:52^231:2,251:90
 @l^0^enUS

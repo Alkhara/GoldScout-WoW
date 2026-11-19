@@ -1,4 +1,4 @@
-GoldScout-export 5^v7xgljtjy09b^13
+GoldScout-export 5^v7xgljtjy09b^14
 3^3^0^24^25^1431^0.2317^0.3616^3^Flesh Eater^2592:1:1^
 30^2^0^5^6^1429^0.3449^0.5644^2^Forest Spider^1476:1:1,2590:1:1^
 94^3^0^5^6^1429^0.3518^0.5832^3^Defias Cutpurse^2649:1:1^
@@ -95,6 +95,18 @@ GoldScout-export 5^v7xgljtjy09b^13
 3809^5^0^21^22^1440^0.4193^0.5885^5^Ashenvale Bear^2940:2:2,3730:3:3,11406:1:1^
 3819^4^0^20^21^1440^0.3218^0.5830^4^Wildthorn Stalker^1081:2:2,3174:2:2,4428:1:1^
 3823^2^0^19^20^1440^0.3265^0.3579^2^Ghostpaw Runner^^
+3917^2^0^23^25^1440^0.4623^0.6808^2^Befouled Water Elemental^5446:2:2,7070:1:1^
+3988^4^2^19^20^1442^0.6384^0.5166^4^Venture Co. Operator^2589:1:3,2592:2:4,5734:1:1^
+3989^13^12^18^19^1442^0.6286^0.5403^13^Venture Co. Logger^858:2:2,1792:1:1,2287:2:2,2589:4:11,2592:2:4,14745:1:1^5379:2:2
+3991^7^8^19^20^1442^0.6468^0.5149^7^Venture Co. Deforester^2592:3:5^5379:1:1
+4006^4^0^19^20^1442^0.7654^0.4575^4^Deepmoss Webspinner^1081:1:1,3174:1:1,3931:1:1^
+4007^1^0^17^18^1442^0.6126^0.5766^1^Deepmoss Venomspitter^3174:1:1^
+4011^1^0^19^19^1442^0.6244^0.6125^1^Young Pridewing^^
+4012^7^0^21^22^1442^0.5131^0.4421^7^Pridewing Wyvern^5135:1:1,5136:3:3,277917:4:4^
+4014^2^0^22^23^1442^0.5143^0.4375^2^Pridewing Consort^5135:1:1^
+4018^1^0^22^22^1442^0.4423^0.2571^1^Antlered Courser^5471:1:1^
+4263^2^0^14^14^1442^0.6242^0.6131^2^Deepmoss Hatchling^^
+4264^1^0^22^22^1442^0.6242^0.6131^1^Deepmoss Matriarch^3174:1:1,4428:1:1^
 4463^2^1^22^23^1433^0.6860^0.7913^2^Blackrock Summoner^2589:1:3^
 7051^0^1^23^23^0^0.0000^0.0000^0^Malformed Defias Drone^^7923:1:1
 8996^4^0^18^19^1440^0.3108^0.3033^4^Voidwalker Minion^^
@@ -151,6 +163,7 @@ GoldScout-export 5^v7xgljtjy09b^13
 @i^1774^Brocade Cloak
 @i^1775^Brocade Gloves
 @i^1778^Brocade Vest
+@i^1792^Patched Leather Pants
 @i^1801^Rawhide Shoulderpads
 @i^1813^Chipped Quarterstaff
 @i^1814^Battered Mallet
@@ -220,13 +233,19 @@ GoldScout-export 5^v7xgljtjy09b^13
 @i^4813^Small Leather Collar
 @i^4814^Discolored Fang
 @i^4865^Ruined Pelt
+@i^5135^Thin Black Claw
+@i^5136^Torn Furry Ear
 @i^5366^Glowing Soul Gem
 @i^5371^Piece of Coral
 @i^5376^Broken Mirror
+@i^5379^Boot Knife
 @i^5414^Grizzled Scalp
+@i^5446^Broken Elemental Bracer
 @i^5463^Glowing Gem
+@i^5471^Stag Meat
 @i^5523^Small Barnacled Clam
 @i^5568^Smooth Pebble
+@i^5734^Super Reaper 6000 Blueprints
 @i^5784^Slimy Murloc Scale
 @i^6289^Raw Longjaw Mud Snapper
 @i^6291^Raw Brilliant Smallfish
@@ -237,6 +256,7 @@ GoldScout-export 5^v7xgljtjy09b^13
 @i^6546^Soldier's Leggings of the Bear
 @i^6889^Small Egg
 @i^6952^Thick Bear Fur
+@i^7070^Elemental Water
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
 @i^7098^Splintered Tusk
@@ -248,6 +268,7 @@ GoldScout-export 5^v7xgljtjy09b^13
 @i^12237^Fine Crab Chunks
 @i^14174^Buccaneer's Boots of Arcane Wrath
 @i^14374^Sanguine Sandals
+@i^14745^Hulking Cloak
 @i^15305^Feral Shoes of Nature's Wrath
 @i^15308^Feral Cord of Power
 @i^17056^Light Feather
@@ -256,6 +277,7 @@ GoldScout-export 5^v7xgljtjy09b^13
 @i^248684^Waylaid Crate: Apprentice Textiles
 @i^264356^Iceclaw Bear Pendant
 @i^275895^Fading Echo
+@i^277917^Stonetalon Supply Bundle
 @q^117^1:0:0
 @q^118^1:0:0
 @q^159^1:0:0
@@ -303,6 +325,7 @@ GoldScout-export 5^v7xgljtjy09b^13
 @q^1774^0:4:0
 @q^1775^0:4:0
 @q^1778^0:4:0
+@q^1792^0:4:0
 @q^1801^0:4:0
 @q^1813^0:2:0
 @q^1814^0:2:0
@@ -372,13 +395,19 @@ GoldScout-export 5^v7xgljtjy09b^13
 @q^4813^0:15:0
 @q^4814^0:15:0
 @q^4865^0:15:0
+@q^5135^0:15:0
+@q^5136^0:15:0
 @q^5366^1:12:0
 @q^5371^0:15:0
 @q^5376^0:15:0
+@q^5379^0:2:0
 @q^5414^1:12:0
+@q^5446^0:15:0
 @q^5463^1:12:0
+@q^5471^1:7:1
 @q^5523^1:7:0
 @q^5568^1:6:0
+@q^5734^1:12:0
 @q^5784^1:7:1
 @q^6289^1:7:1
 @q^6291^1:7:1
@@ -389,6 +418,7 @@ GoldScout-export 5^v7xgljtjy09b^13
 @q^6546^2:4:0
 @q^6889^1:7:1
 @q^6952^1:12:0
+@q^7070^1:7:1
 @q^7073^0:15:0
 @q^7074^0:15:0
 @q^7098^0:15:0
@@ -400,6 +430,7 @@ GoldScout-export 5^v7xgljtjy09b^13
 @q^12237^1:12:0
 @q^14174^2:4:0
 @q^14374^2:4:0
+@q^14745^2:4:0
 @q^15305^2:4:0
 @q^15308^2:4:0
 @q^17056^1:15:1
@@ -408,6 +439,7 @@ GoldScout-export 5^v7xgljtjy09b^13
 @q^248684^1:0:1
 @q^264356^1:12:0
 @q^275895^0:15:0
+@q^277917^1:12:0
 @m^1426^Dun Morogh
 @m^1429^Elwynn Forest
 @m^1431^Duskwood
@@ -415,6 +447,7 @@ GoldScout-export 5^v7xgljtjy09b^13
 @m^1436^Westfall
 @m^1439^Darkshore
 @m^1440^Ashenvale
+@m^1442^Stonetalon Mountains
 @m^1453^Stormwind City
 @m^1455^Ironforge
 @c^118^
@@ -1579,6 +1612,18 @@ GoldScout-export 5^v7xgljtjy09b^13
 @a^3809^188:2,247:1,268:2
 @a^3819^225:2,247:2
 @a^3823^46:1,227:1
+@a^3917^269:2
+@a^3988^212:2,213:2
+@a^3989^211:2,212:5,213:3,232:2,233:1
+@a^3991^212:2,213:5
+@a^4006^175:1,195:3
+@a^4007^232:1
+@a^4011^252:1
+@a^4012^170:6,190:1
+@a^4014^170:2
+@a^4018^108:1
+@a^4263^252:2
+@a^4264^252:1
 @a^4463^313:2
 @a^8996^106:1,126:3
 @a^10928^245:1
