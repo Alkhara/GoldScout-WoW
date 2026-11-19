@@ -506,6 +506,49 @@
     ]);
   }
 
+  function trafficSection(snap) {
+    var traffic = snap && snap.traffic;
+    if (!traffic || !traffic.days) {
+      var why = traffic && traffic.error
+        ? "Cloudflare refused the web analytics request: " + traffic.error + ". The CLOUDFLARE_ANALYTICS_TOKEN " +
+          "secret needs Account Analytics: Read, and Web Analytics has to be on for wowgoldscout.com."
+        : "Not set up yet: this uses the same CLOUDFLARE_ANALYTICS_TOKEN secret and CLOUDFLARE_ACCOUNT_ID " +
+          "variable as Server requests.";
+      return section("traffic", "Website", null, [card(null, null, [el("p", { cls: "muted", text: why })])]);
+    }
+    var days = traffic.days;
+    function sum(list, key) { return list.reduce(function (s, d) { return s + (d[key] || 0); }, 0); }
+    var today = days.length ? days[days.length - 1] : null;
+    var week = days.slice(-8, -1);
+    var visits = sum(days, "visits"), views = sum(days, "views");
+    var others = (traffic.hosts || []).filter(function (h) { return h.host !== traffic.host; });
+    return section("traffic", "Website", traffic.host + ", Cloudflare Web Analytics, last " + days.length + " days", [
+      tiles([
+        ["Visits, " + days.length + " days", num(visits), num(views) + " page views"],
+        ["Visits per day, 7 days", num(Math.round(sum(week, "visits") / Math.max(1, week.length))),
+          num(Math.round(sum(week, "views") / Math.max(1, week.length))) + " page views"],
+        ["Today so far (UTC)", num(today ? today.visits : 0), today ? num(today.views) + " page views" : ""],
+        ["Pages per visit", visits ? (views / visits).toFixed(1) : "-", "page views / visits"],
+      ]),
+      el("div", { cls: "grid" }, [
+        card("Visits per day", "A visit starts when someone arrives from another site or types the address; " +
+          "each page they open is a page view. Cloudflare counts without cookies and samples busy days, so " +
+          "these are close estimates.", [columnChart(days.map(function (d) { return [d.date.slice(5), d.visits]; }),
+            "Visits")]),
+        card("Top pages", null, [table([["Page", "path"], ["Views", function (p) { return num(p.views); }, "num"],
+          ["Visits", function (p) { return num(p.visits); }, "num"]], traffic.pages || [])]),
+        card("Where visits come from", "Sites that linked to a page. (none) means typed in, a bookmark, or a " +
+          "site that hides its address.", [table([["Site", function (r) { return r.host || "(none)"; }],
+            ["Visits", function (r) { return num(r.visits); }, "num"]], traffic.referrers || [])]),
+        card("Countries", null, [table([["Country", "name"], ["Visits", function (r) { return num(r.visits); }, "num"]],
+          traffic.countries || [])]),
+        card("Devices", others.length ? "Also counted on other addresses: " + others.map(function (h) {
+          return h.host + " (" + num(h.views) + " page views)"; }).join(", ") + "." : null,
+        [table([["Device", "name"], ["Visits", function (r) { return num(r.visits); }, "num"]], traffic.devices || [])]),
+      ]),
+    ]);
+  }
+
   function dismissButton(e) {
     var button = el("button", { type: "button", text: "Dismiss", title: "Remove this error and ignore later reports of it" });
     button.addEventListener("click", function () {
@@ -559,7 +602,6 @@
       el("li", { text: "Addon versions: exports don't include them." }),
       el("li", { text: "Errors from players who don't share or turned error reports off (they stay on their PC)." }),
       el("li", { text: "Uploads the server refused, by reason." }),
-      el("li", { text: "Website traffic: the site has no analytics by design." }),
     ])])]);
   }
 
@@ -621,7 +663,7 @@
       app.appendChild(el("p", { cls: "problems", text: "No statistics snapshot yet: the data merge workflow sends " +
         "one every hour (tools/admin_stats.py). Live counts are shown below." }));
     }
-    [healthSection(live, snap), growthSection(live, snap), versionsSection(live, snap), reachSection(live, snap),
+    [healthSection(live, snap), growthSection(live, snap), versionsSection(live, snap), reachSection(live, snap), trafficSection(snap),
       playersSection(snap),
       coverageSection(snap), pricesSection(live), usageSection(snap), errorsSection(live), namesSection(live),
       automationSection(snap),

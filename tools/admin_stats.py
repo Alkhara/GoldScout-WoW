@@ -14,8 +14,9 @@ Needs GOLDSCOUT_API_ADMIN (the server's ADMIN_TOKEN). GITHUB_TOKEN is optional
 GOLDSCOUT_MY_INSTALLS (comma-separated install IDs) marks the maintainer's own
 installs. Players appear only as short hashed tags, never install IDs.
 CLOUDFLARE_ANALYTICS_TOKEN (Account Analytics: Read) and CLOUDFLARE_ACCOUNT_ID
-add the Workers' daily request counts (without the account ID, the token's own
-account is used when it has just one); without them that card says so.
+add the Workers' daily request counts and the website's traffic (Cloudflare Web
+Analytics); without the account ID, the token's own account is used when it has
+just one, and without the token those cards say so.
 """
 import argparse
 import datetime
@@ -73,20 +74,26 @@ query ($account: string!, $start: string!, $end: string!) {
 """
 
 
-def worker_requests(token, account, now, days=30, post=None):
-    """{"days": [{"date", "scripts": {name: requests}}], "month": {name: requests},
-    "errors": {name: errors}} from Cloudflare's Workers analytics (GraphQL)."""
-    end = datetime.datetime.fromtimestamp(now, datetime.timezone.utc)
-    start = (end - datetime.timedelta(days=days - 1)).replace(hour=0, minute=0, second=0, microsecond=0)
-    body = json.dumps({"query": WORKER_REQUESTS_QUERY, "variables": {
-        "account": account, "start": start.strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "end": end.strftime("%Y-%m-%dT%H:%M:%SZ")}}).encode("utf-8")
+def graphql(token, query, variables, post=None):
+    """The account's part of a Cloudflare GraphQL analytics reply ({} if there is none)."""
+    body = json.dumps({"query": query, "variables": variables}).encode("utf-8")
     headers = {"Authorization": "Bearer " + token, "Content-Type": "application/json"}
     reply = (post or get_json)(CF_GRAPHQL, headers, body, "POST")
     if reply.get("errors"):
         raise RuntimeError(reply["errors"][0].get("message", "Cloudflare analytics error"))
     accounts = ((reply.get("data") or {}).get("viewer") or {}).get("accounts") or []
-    rows = accounts[0].get("workersInvocationsAdaptive") or [] if accounts else []
+    return accounts[0] if accounts else {}
+
+
+def worker_requests(token, account, now, days=30, post=None):
+    """{"days": [{"date", "scripts": {name: requests}}], "month": {name: requests},
+    "errors": {name: errors}} from Cloudflare's Workers analytics (GraphQL)."""
+    end = datetime.datetime.fromtimestamp(now, datetime.timezone.utc)
+    start = (end - datetime.timedelta(days=days - 1)).replace(hour=0, minute=0, second=0, microsecond=0)
+    account_data = graphql(token, WORKER_REQUESTS_QUERY, {
+        "account": account, "start": start.strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "end": end.strftime("%Y-%m-%dT%H:%M:%SZ")}, post)
+    rows = account_data.get("workersInvocationsAdaptive") or []
     by_day, month, errors = defaultdict(lambda: defaultdict(int)), defaultdict(int), defaultdict(int)
     this_month = end.strftime("%Y-%m")
     for row in rows:
@@ -98,6 +105,69 @@ def worker_requests(token, account, now, days=30, post=None):
             errors[script] += int(row["sum"].get("errors") or 0)
     return {"days": [{"date": day, "scripts": dict(by_day[day])} for day in sorted(by_day)],
             "month": dict(month), "errors": dict(errors), "through": int(now)}
+
+
+# Website traffic from Cloudflare Web Analytics, which Cloudflare adds to the site's pages (site/build.py
+# lets its script run). It counts without cookies and keeps no IP addresses; we only get these totals.
+# A page view is one page opened; a visit is a page view that came from another site or was typed in.
+SITE_HOST = "wowgoldscout.com"
+TRAFFIC_LIST = 25
+SITE_TRAFFIC_QUERY = """
+query ($account: string!) {
+  viewer {
+    accounts(filter: {accountTag: $account}) {
+      hosts: rumPageloadEventsAdaptiveGroups(limit: 10, filter: %(every)s, orderBy: [count_DESC]) {
+        count sum { visits } dimensions { requestHost } }
+      days: rumPageloadEventsAdaptiveGroups(limit: 100, filter: %(site)s) {
+        count sum { visits } dimensions { date } }
+      pages: rumPageloadEventsAdaptiveGroups(limit: %(list)d, filter: %(site)s, orderBy: [count_DESC]) {
+        count sum { visits } dimensions { requestPath } }
+      referrers: rumPageloadEventsAdaptiveGroups(limit: %(list)d, filter: %(site)s, orderBy: [sum_visits_DESC]) {
+        count sum { visits } dimensions { refererHost } }
+      countries: rumPageloadEventsAdaptiveGroups(limit: %(list)d, filter: %(site)s, orderBy: [sum_visits_DESC]) {
+        count sum { visits } dimensions { countryName } }
+      devices: rumPageloadEventsAdaptiveGroups(limit: 10, filter: %(site)s, orderBy: [sum_visits_DESC]) {
+        count sum { visits } dimensions { deviceType } }
+    }
+  }
+}
+"""
+
+
+def site_traffic(token, account, now, days=30, post=None, host=SITE_HOST):
+    """The website's last days of traffic: {"days": [{"date", "views", "visits"}] (every day, oldest first),
+    "pages": [{"path", "views", "visits"}], "referrers": [{"host", "visits"}], "countries": [{"name",
+    "visits"}], "devices": [{"name", "visits"}], "hosts": [{"host", "views"}], "host", "through"}."""
+    end = datetime.datetime.fromtimestamp(now, datetime.timezone.utc)
+    start = (end - datetime.timedelta(days=days - 1)).replace(hour=0, minute=0, second=0, microsecond=0)
+    window = "datetime_geq: %s, datetime_leq: %s" % (json.dumps(start.strftime("%Y-%m-%dT%H:%M:%SZ")),
+                                                      json.dumps(end.strftime("%Y-%m-%dT%H:%M:%SZ")))
+    query = SITE_TRAFFIC_QUERY % {"every": "{%s}" % window, "list": TRAFFIC_LIST,
+                                  "site": "{%s, requestHost: %s}" % (window, json.dumps(host))}
+    data = graphql(token, query, {"account": account}, post)
+
+    def rows(alias, dimension):
+        for row in data.get(alias) or []:
+            yield ((row.get("dimensions") or {}).get(dimension) or "", int(row.get("count") or 0),
+                   int((row.get("sum") or {}).get("visits") or 0))
+
+    by_day = {day: (views, visits) for day, views, visits in rows("days", "date")}
+    every_day = [(start + datetime.timedelta(days=n)).date().isoformat() for n in range(days)]
+    return {
+        "host": host, "through": int(now),
+        "days": [{"date": day, "views": by_day.get(day, (0, 0))[0], "visits": by_day.get(day, (0, 0))[1]}
+                 for day in every_day],
+        "pages": [{"path": path or "/", "views": views, "visits": visits}
+                  for path, views, visits in rows("pages", "requestPath")],
+        # Visits from the site's own pages are clicks within it, not arrivals; "" is typed in or unknown.
+        "referrers": [{"host": name, "visits": visits} for name, _, visits in rows("referrers", "refererHost")
+                      if visits and name != host],
+        "countries": [{"name": name or "Unknown", "visits": visits}
+                      for name, _, visits in rows("countries", "countryName") if visits],
+        "devices": [{"name": name or "unknown", "visits": visits}
+                    for name, _, visits in rows("devices", "deviceType") if visits],
+        "hosts": [{"host": name, "views": views} for name, views, _ in rows("hosts", "requestHost")],
+    }
 
 
 def token_account(token, get=None):
@@ -112,7 +182,7 @@ def token_account(token, get=None):
     return accounts[0].get("id") if len(accounts) == 1 else None
 
 
-def request_counts(now, attempt, environ=os.environ, fetch=None, lookup=None):
+def request_counts(now, attempt, environ=os.environ, fetch=None, lookup=None, name="Cloudflare analytics"):
     """worker_requests() for the dashboard, or why there are none: {"missing": [...]}
     when the workflow doesn't pass the token or account ID, {"error": "..."} when
     Cloudflare refuses (also a problem, through attempt). Without CLOUDFLARE_ACCOUNT_ID,
@@ -133,7 +203,7 @@ def request_counts(now, attempt, environ=os.environ, fetch=None, lookup=None):
             failure.append(str(error))
             raise
 
-    return attempt("Cloudflare analytics", counts) or {"error": failure[0] if failure else "no reply"}
+    return attempt(name, counts) or {"error": failure[0] if failure else "no reply"}
 
 
 def github(path):
@@ -372,6 +442,7 @@ def build(now, api, admin, mine):
         runs[file] = found or []
     snapshot["workflows"] = workflow_health(runs, now)
     snapshot["requests"] = request_counts(now, attempt)
+    snapshot["traffic"] = request_counts(now, attempt, fetch=site_traffic, name="Cloudflare web analytics")
     pulls = attempt("data pull request", lambda: github(
         "/pulls?state=open&head=%s:data/community-update" % REPO.split("/")[0])) or []
     snapshot["data_pr"] = data_pull(pulls[0]) if pulls else None

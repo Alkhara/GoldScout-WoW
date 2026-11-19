@@ -221,6 +221,74 @@ class WorkerRequestsTests(unittest.TestCase):
         self.assertEqual(admin_stats.request_counts(0, attempt, both, lambda *_: {"days": []}), {"days": []})
 
 
+class SiteTrafficTests(unittest.TestCase):
+    """Website traffic from Cloudflare Web Analytics (tools/admin_stats.py site_traffic, tools/traffic.py)."""
+
+    NOW = 1794297600 + 3600   # 2026-11-10 09:00 UTC
+
+    def fetch(self):
+        import admin_stats
+        sent = {}
+
+        def row(dimension, value, views, visits):
+            return {"dimensions": {dimension: value}, "count": views, "sum": {"visits": visits}}
+
+        def post(url, headers, body, method):
+            sent.update(url=url, auth=headers["Authorization"], body=json.loads(body))
+            return {"data": {"viewer": {"accounts": [{
+                "hosts": [row("requestHost", "wowgoldscout.com", 90, 30), row("requestHost", "admin.wowgoldscout.com", 4, 1)],
+                "days": [row("date", "2026-11-08", 40, 12), row("date", "2026-11-10", 50, 18)],
+                "pages": [row("requestPath", "/", 30, 20), row("requestPath", "/guides/", 12, 3)],
+                "referrers": [row("refererHost", "www.curseforge.com", 20, 14), row("refererHost", "", 9, 9),
+                              row("refererHost", "wowgoldscout.com", 60, 0), row("refererHost", "www.google.com", 3, 0)],
+                "countries": [row("countryName", "US", 70, 25), row("countryName", "", 2, 0)],
+                "devices": [row("deviceType", "desktop", 80, 26), row("deviceType", "mobile", 10, 4)],
+            }]}}}
+
+        return admin_stats.site_traffic("token", "acct", self.NOW, days=3, post=post), sent
+
+    def test_traffic_by_day_page_and_source(self):
+        traffic, sent = self.fetch()
+        self.assertEqual(sent["auth"], "Bearer token")
+        self.assertEqual(sent["body"]["variables"], {"account": "acct"})
+        query = sent["body"]["query"]
+        self.assertIn('datetime_geq: "2026-11-08T00:00:00Z", datetime_leq: "2026-11-10T09:00:00Z"', query)
+        self.assertIn('requestHost: "wowgoldscout.com"', query)
+        # Every day, with the quiet one filled in.
+        self.assertEqual(traffic["days"], [{"date": "2026-11-08", "views": 40, "visits": 12},
+                                           {"date": "2026-11-09", "views": 0, "visits": 0},
+                                           {"date": "2026-11-10", "views": 50, "visits": 18}])
+        self.assertEqual(traffic["pages"][1], {"path": "/guides/", "views": 12, "visits": 3})
+        # Clicks within the site and sources without visits aren't arrivals; "" (typed in) stays.
+        self.assertEqual(traffic["referrers"], [{"host": "www.curseforge.com", "visits": 14}, {"host": "", "visits": 9}])
+        self.assertEqual(traffic["countries"], [{"name": "US", "visits": 25}])
+        self.assertEqual([h["host"] for h in traffic["hosts"]], ["wowgoldscout.com", "admin.wowgoldscout.com"])
+
+    def test_the_report(self):
+        import traffic as traffic_tool
+        traffic, _ = self.fetch()
+        text = traffic_tool.report(traffic, 2)
+        self.assertIn("wowgoldscout.com: 18 visits, 50 page views in the last 2 days", text)
+        self.assertNotIn("2026-11-08 ", text)                                    # only the last 2 days
+        self.assertIn("(typed in, bookmark, or hidden)", text)
+        self.assertIn("Also counted on: admin.wowgoldscout.com (4 page views)", text)
+        self.assertIn("Top pages (last 3 days)", text)
+
+    def test_the_report_from_the_dashboard_snapshot(self):
+        import traffic as traffic_tool
+        stored, _ = self.fetch()
+
+        class Done:
+            returncode = 0
+            stdout = json.dumps([{"results": [{"traffic": json.dumps(stored)}]}])
+            stderr = ""
+        self.assertEqual(traffic_tool.saved(lambda *a, **k: Done()), stored)
+        Done.stdout = json.dumps([{"results": [{"traffic": json.dumps({"error": "not authorized"})}]}])
+        with self.assertRaises(SystemExit) as raised:
+            traffic_tool.saved(lambda *a, **k: Done())
+        self.assertIn("not authorized", str(raised.exception))
+
+
 class StampTests(unittest.TestCase):
     def test_release_builds_report_the_tag(self):
         import stamp_companion

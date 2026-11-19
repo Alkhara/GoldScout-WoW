@@ -1,6 +1,6 @@
 # GoldScout Privacy Policy
 
-*Last updated: November 16, 2026*
+*Last updated: November 19, 2026*
 
 This policy covers the GoldScout addon and the drop data players share with it.
 GoldScout is maintained by GitHub user Alkhara ("we" below).
@@ -186,7 +186,12 @@ can't be separated from other players' data.
 
 ## The website
 
-wowgoldscout.com has no accounts, cookies, analytics or ads. Its farm, mob,
+wowgoldscout.com has no accounts, cookies or ads. To see how many people use
+it, it uses Cloudflare Web Analytics: Cloudflare counts page views without
+cookies or fingerprinting and doesn't keep your IP address, and we only see
+totals, such as visits per day, the pages opened, the sites that linked to
+them, and visitors' countries and device types (desktop, mobile or tablet).
+Its farm, mob,
 reagent and zone pages load current auction house prices from the GoldScout
 server (api.wowgoldscout.com), as the companion does. Like any
 website, Cloudflare sees your IP address for those requests; we don't store it. The realm type
