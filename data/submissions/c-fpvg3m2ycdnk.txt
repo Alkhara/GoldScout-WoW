@@ -1,16 +1,43 @@
-GoldScout-export 5^fpvg3m2ycdnk^2
-3743^1^0^23^24^1440^0.5110^0.6074^1^Guerrier Vile-sylve^2589:1:1^
-3746^1^0^24^25^1440^0.5032^0.6062^1^Protecteur Vile-sylve^15520:1:1^
-3749^1^0^24^24^1440^0.4987^0.6033^1^Ursa Vile-sylve^^
+GoldScout-export 5^fpvg3m2ycdnk^4
+3743^5^0^23^24^1440^0.5103^0.6184^5^Guerrier Vile-sylve^1772:1:1,2589:2:3^
+3746^3^0^24^25^1440^0.5028^0.6092^3^Protecteur Vile-sylve^4538:1:1,15520:1:1^
+3749^1^0^24^25^1440^0.4987^0.6033^1^Ursa Vile-sylve^^
+3750^7^0^23^24^1440^0.5167^0.6174^7^Totémique Vile-sylve^1798:1:1,2592:2:2,4538:1:1^
+3917^13^0^23^25^1440^0.4805^0.6990^13^Elémentaire d'eau souillé^5446:2:2,5447:1:1,5448:3:3,5451:1:1,9451:5:11,12220:4:4,14165:1:1^
+12759^1^0^27^27^1440^0.4849^0.6950^1^Maréen^5447:1:1,7070:1:1^
+@i^1772^Chaussures en brocart
+@i^1798^Cape en cuir brut
 @i^2589^Etoffe de lin
+@i^2592^Etoffe de laine
+@i^4538^Pastèque claquevigne
+@i^5446^Bracelet élémentaire rompu
+@i^5447^Bracelet élémentaire endommagé
+@i^5448^Bracelet élémentaire cassé
+@i^5451^Bracelet élémentaire brisé
 @i^6289^Lutjan à longue mâchoire cru
 @i^6291^Goujon brillant cru
 @i^6308^Poisson-chat moustachu cru
+@i^7070^Eau élémentaire
+@i^9451^Eau bouillonnante
+@i^12220^Bracelets élémentaires intacts
+@i^14165^Jambières païennes de la baleine
 @i^15520^Gantelets en anneaux cloutés du singe
+@q^1772^0:4:0
+@q^1798^0:4:0
 @q^2589^1:7:1
+@q^2592^1:7:1
+@q^4538^1:0:0
+@q^5446^0:15:0
+@q^5447^0:15:0
+@q^5448^0:15:0
+@q^5451^0:15:0
 @q^6289^1:7:1
 @q^6291^1:7:1
 @q^6308^1:7:1
+@q^7070^1:7:1
+@q^9451^1:0:0
+@q^12220^1:12:0
+@q^14165^2:4:0
 @q^15520^2:4:0
 @m^1440^Orneval
 @m^1457^Darnassus
@@ -673,8 +700,11 @@ GoldScout-export 5^fpvg3m2ycdnk^2
 @c^285280^
 @c^285281^
 @c^286152^
-@a^3743^250:1
-@a^3746^250:1
+@a^3743^249:2,250:3
+@a^3746^250:3
 @a^3749^249:1
+@a^3750^249:1,250:6
+@a^3917^269:7,289:6
+@a^12759^269:1
 @f^1457^0^99^1^6289:60:60,6291:16:16,6308:23:23^185:76,229:23
 @l^0^frFR

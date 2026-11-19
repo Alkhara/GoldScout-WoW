@@ -1,4 +1,4 @@
-GoldScout-export 5^yeqak4pqsl9i^7
+GoldScout-export 5^yeqak4pqsl9i^8
 94^1^0^6^6^1429^0.3662^0.5362^1^Vide-gousset défias^^
 116^1^0^9^9^1429^0.5206^0.5945^1^Bandit défias^^
 1562^1^0^41^41^1434^0.2932^0.7171^1^Mage de la Voile sanglante^^
@@ -10,8 +10,9 @@ GoldScout-export 5^yeqak4pqsl9i^7
 2559^1^0^30^31^1417^0.4781^0.5013^1^Arpenteur des hautes-terres^4461:1:1^
 2563^1^0^32^33^1417^0.4813^0.4932^1^Rampant des plaines^878:1:1,3182:1:1^
 2565^2^0^35^36^1417^0.5295^0.5768^2^Rampant des plaines géant^878:1:1,1081:2:2,2251:1:1,4585:1:1^
+2760^4^0^38^39^1417^0.2511^0.3215^4^Exilé ardent^3857:2:2,4479:2:2,4787:1:1^
 2761^19^0^38^39^1417^0.6622^0.3013^19^Exilé grimpeur^4481:4:4,4791:10:31,7070:1:1^
-2762^36^0^38^39^1417^0.5209^0.5057^36^Exilé foudroyant^4480:18:18,4729:1:1,7069:8:8^
+2762^81^0^38^39^1417^0.5189^0.5076^81^Exilé foudroyant^4480:40:40,4729:1:1,7069:18:18,7439:1:1,9892:1:1^
 2887^1^0^44^44^1417^0.6550^0.3074^1^Exilé prismatique^^
 3244^6^0^11^12^1413^0.5128^0.2778^6^Grand trotteur des plaines^4775:2:2,5469:2:2,15944:1:1,17056:3:3^
 3246^4^0^12^13^1413^0.5270^0.3276^4^Trotteur des plaines fugitif^5115:1:1,5469:1:1,17056:3:3^
@@ -142,10 +143,12 @@ GoldScout-export 5^yeqak4pqsl9i^7
 @i^3674^Botte décomposée
 @i^3676^Ichor visqueux
 @i^3731^Viande de lion
+@i^3857^Charbon
 @i^3931^Croc d'araignée empoisonné
 @i^4093^Grande queue de basilic
 @i^4306^Etoffe de soie
 @i^4461^Peau de raptor
+@i^4479^Charme ardent
 @i^4480^Charme de tonnerre
 @i^4481^Charme armorié
 @i^4568^Hache de grunt de force
@@ -154,6 +157,7 @@ GoldScout-export 5^yeqak4pqsl9i^7
 @i^4605^Champignon à pois rouges
 @i^4729^Mantelet de l'aurore
 @i^4775^Bec craquelé
+@i^4787^Poix ardente
 @i^4791^Eau enchantée
 @i^5020^Clé du butin des Kolkar
 @i^5115^Os brisé
@@ -184,8 +188,10 @@ GoldScout-export 5^yeqak4pqsl9i^7
 @i^6630^Targe de Seedcloud
 @i^7069^Air élémentaire
 @i^7070^Eau élémentaire
+@i^7439^Harnais de sentinelle d'intelligence
 @i^9762^Gantelets de cadet
 @i^9764^Bouclier de cadet d'intelligence
+@i^9892^Gants de veneur de protection contre l'ombre
 @i^10441^Eclat luminescent
 @i^12037^Viande mystère
 @i^12205^Viande d'araignée blanche
@@ -276,10 +282,12 @@ GoldScout-export 5^yeqak4pqsl9i^7
 @q^3674^0:15:0
 @q^3676^0:15:0
 @q^3731^1:7:1
+@q^3857^1:7:1
 @q^3931^0:15:0
 @q^4093^0:15:0
 @q^4306^1:7:1
 @q^4461^1:7:1
+@q^4479^1:0:0
 @q^4480^1:0:0
 @q^4481^1:0:0
 @q^4568^2:2:0
@@ -288,6 +296,7 @@ GoldScout-export 5^yeqak4pqsl9i^7
 @q^4605^1:0:0
 @q^4729^2:4:0
 @q^4775^0:15:0
+@q^4787^0:15:0
 @q^4791^1:0:0
 @q^5020^1:13:0
 @q^5115^0:15:0
@@ -318,8 +327,10 @@ GoldScout-export 5^yeqak4pqsl9i^7
 @q^6630^3:4:0
 @q^7069^1:7:1
 @q^7070^1:7:1
+@q^7439^2:4:0
 @q^9762^1:4:0
 @q^9764^2:4:0
+@q^9892^2:4:0
 @q^10441^1:12:0
 @q^12037^1:7:1
 @q^12205^1:7:1
@@ -959,8 +970,9 @@ GoldScout-export 5^yeqak4pqsl9i^7
 @a^2559^209:1
 @a^2563^189:1
 @a^2565^230:2
+@a^2760^124:2,125:2
 @a^2761^113:7,132:2,133:10
-@a^2762^190:11,210:25
+@a^2762^190:23,210:58
 @a^2887^133:1
 @a^3244^110:6
 @a^3246^109:1,130:1,131:2

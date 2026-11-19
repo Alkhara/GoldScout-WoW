@@ -1,4 +1,4 @@
-GoldScout-export 5^m5s65gpkwz94^8
+GoldScout-export 5^m5s65gpkwz94^9
 705^1^0^1^1^1426^0.2795^0.7281^1^Struppiger junger Wolf^^
 708^12^0^3^3^1426^0.2156^0.7093^12^Kleiner Klippeneber^117:1:1,4865:2:2,7098:2:2^
 724^13^0^2^2^1426^0.2632^0.7280^13^Bulliger Trogg der Felsenkiefer^159:2:2,1374:1:1,2589:1:1^
@@ -16,9 +16,14 @@ GoldScout-export 5^m5s65gpkwz94^8
 2927^1^0^43^43^1425^0.2588^0.5489^1^Heimtückische Eulenbestie^^
 4846^1^0^35^36^1418^0.3681^0.1403^1^Buddler der Schattenschmiede^4306:1:3^
 5308^1^0^44^45^1444^0.4667^0.5065^1^Wilder Talkreischer^6444:1:1^
+5420^2^0^45^46^1446^0.6138^0.5237^2^Glashautstarrer^4093:1:1,11386:1:1^
+5422^1^0^41^41^1446^0.6570^0.2991^1^Skorpidjäger^19936:1:1^
+5423^1^0^43^43^1446^0.6510^0.4193^1^Skorpidschwanzpeitscher^12037:1:1,19935:1:1^
 5425^1^0^41^42^1446^0.4652^0.2539^1^Verhungernde Eiterpfote^^
+5426^3^0^44^45^1446^0.6118^0.5433^3^Eiterpfotenhyäne^4584:1:1,12037:2:2,12203:2:2^
 5428^2^0^41^43^1446^0.4538^0.2568^2^Roc^12207:1:1^
 5462^1^0^47^48^1444^0.4361^0.3973^1^Meeresschauer^4791:1:5^
+7805^1^0^45^45^1446^0.6627^0.3500^1^Gesetzlose der Wüstenläufer^4338:1:2,8483:1:1^
 7855^10^0^44^45^1446^0.7265^0.4687^10^Pirat der Südmeerfreibeuter^4338:2:4,9260:1:1,20519:2:2,251397:1:1^
 7856^18^0^44^45^1446^0.7302^0.4644^18^Seeräuber der Südmeerfreibeuter^1613:1:1,3928:1:1,4021:1:1,4306:3:4,4338:3:6,9260:1:1,9276:1:1,20519:7:7,213544:1:1^
 7857^24^0^44^45^1446^0.7376^0.4750^24^Dockarbeiter der Südmeerfreibeuter^1645:1:1,4025:1:1,4306:2:3,4338:4:5,7909:1:1,9260:1:1,20519:9:9,213544:1:1,213545:1:1^
@@ -63,6 +68,7 @@ GoldScout-export 5^m5s65gpkwz94^8
 @i^3928^Überragender Heiltrank
 @i^4021^Stumpfer Streitkolben
 @i^4025^Ausbalancierter Langbogen
+@i^4093^Großer Basiliskenschwanz
 @i^4306^Seidenstoff
 @i^4338^Magiestoff
 @i^4583^Dicke fellige Mähne
@@ -84,15 +90,20 @@ GoldScout-export 5^m5s65gpkwz94^8
 @i^7098^Abgesplitterter Hauer
 @i^7909^Aquamarin
 @i^7973^Großmaulmuschel
+@i^8483^Wasserbeutel eines Wüstenläufers
 @i^9259^Troll-Stammeshalskette
 @i^9260^Flüchtiger Rum
 @i^9276^Piraten-Schließkiste
+@i^11386^Matschiges Basiliskenauge
+@i^12037^Eigenartiges Fleisch
 @i^12203^Rotes Wolfsfleisch
 @i^12207^Riesenei
 @i^12208^Zartes Wolfsfleisch
 @i^13422^Steinschuppenaal
 @i^13754^Roher glänzender Machtfisch
 @i^13755^Roher Winterkalmar
+@i^19935^Leerer Giftbeutel
+@i^19936^Getrockneter Skorpidknochenpanzer
 @i^20519^Südmeerpiratenhut
 @i^21151^Schwarzer Rumsey Rum
 @i^21228^Mithrilbeschlagener Koffer
@@ -135,6 +146,7 @@ GoldScout-export 5^m5s65gpkwz94^8
 @q^3928^1:0:0
 @q^4021^0:2:0
 @q^4025^0:2:0
+@q^4093^0:15:0
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4583^0:15:0
@@ -156,15 +168,20 @@ GoldScout-export 5^m5s65gpkwz94^8
 @q^7098^0:15:0
 @q^7909^2:7:1
 @q^7973^1:7:0
+@q^8483^1:12:0
 @q^9259^1:15:0
 @q^9260^1:0:0
 @q^9276^1:15:0
+@q^11386^0:15:0
+@q^12037^1:7:1
 @q^12203^1:7:1
 @q^12207^1:7:1
 @q^12208^1:7:1
 @q^13422^1:7:1
 @q^13754^1:7:1
 @q^13755^1:0:1
+@q^19935^0:15:0
+@q^19936^0:15:0
 @q^20519^1:12:0
 @q^21151^1:0:0
 @q^21228^1:15:0
@@ -889,9 +906,14 @@ GoldScout-export 5^m5s65gpkwz94^8
 @a^2927^205:1
 @a^4846^47:1
 @a^5308^209:1
+@a^5420^172:1,231:1
+@a^5422^113:1
+@a^5423^173:1
 @a^5425^109:1
+@a^5426^212:2,232:1
 @a^5428^88:1,109:1
 @a^5462^148:1
+@a^7805^133:1
 @a^7855^174:1,194:9
 @a^7856^174:1,194:16,195:1
 @a^7857^194:24
