@@ -1,4 +1,4 @@
-GoldScout-export 5^0pjgxbjovwbd^5
+GoldScout-export 5^0pjgxbjovwbd^6
 704^6^0^2^2^1426^0.2734^0.7638^6^Ragged Timber Wolf^750:3:3,1376:1:1,2210:1:1,7073:3:3,7074:2:2^
 705^8^0^1^1^1426^0.2836^0.7356^8^Ragged Young Wolf^750:5:5,1374:1:1,1376:1:1,1377:1:1,4865:1:1,7073:4:4,7074:4:4^
 706^43^0^3^4^1426^0.2817^0.8019^43^Frostmane Troll Whelp^117:5:5,159:2:2,1364:1:1,1366:1:1,1368:1:1,1372:1:1,1374:1:1,1376:1:1,1377:1:1,1380:1:1,2589:17:17,2649:1:1,2654:2:2,2656:1:1^
@@ -6,10 +6,18 @@ GoldScout-export 5^0pjgxbjovwbd^5
 808^1^0^5^5^1426^0.3023^0.7932^1^Grik'nir the Cold^1372:1:1,2004:1:1,2589:1:1^
 946^3^0^3^4^1426^0.2890^0.8248^3^Frostmane Novice^6753:3:3^
 1138^1^0^6^6^1426^0.4533^0.4730^1^Snow Tracker Wolf^2672:1:1,3299:1:1^
+251314^4^0^7^8^2521^0.6095^0.7527^4^Skyhopper^^
+251707^16^0^8^9^2521^0.4999^0.7854^16^Ornery Galestrider^1413:1:1,4775:11:11,4776:5:5,15478:1:1,253597:7:7^
+251727^8^0^7^8^2521^0.6087^0.7483^8^Skyhopper^^
+252802^6^0^8^9^2521^0.4704^0.8028^6^Hungry Bandit^1181:1:1,1416:1:1,1422:1:1,2589:1:2,14098:1:1,211780:1:1,252028:1:1,252030:1:1,252031:1:1,252032:1:2,267474:1:1^
+252820^3^0^8^9^2521^0.5084^0.7090^3^Bandit Highwayman^1411:1:1,2589:1:2,252022:1:1,252028:1:1,252031:1:2^
+253282^3^0^8^9^2521^0.5176^0.6611^3^Shriekling Fledgling^3299:3:3^
+253283^1^0^9^9^2521^0.5223^0.6529^1^Shriekling Matriarch^257107:1:1^
 269075^1^0^6^6^1426^0.2732^0.6272^1^Snow Leopard Prowler^4814:1:1^
 @i^117^Tough Jerky
 @i^159^Refreshing Spring Water
 @i^750^Tough Wolf Meat
+@i^1181^Scroll of Spirit
 @i^1364^Ragged Leather Vest
 @i^1366^Ragged Leather Pants
 @i^1368^Ragged Leather Gloves
@@ -18,6 +26,10 @@ GoldScout-export 5^0pjgxbjovwbd^5
 @i^1376^Frayed Cloak
 @i^1377^Frayed Gloves
 @i^1380^Frayed Robe
+@i^1411^Withered Staff
+@i^1413^Feeble Sword
+@i^1416^Rusty Hatchet
+@i^1422^Worn Leather Gloves
 @i^2004^Grelin Whitebeard's Journal
 @i^2210^Battered Buckler
 @i^2589^Linen Cloth
@@ -26,15 +38,29 @@ GoldScout-export 5^0pjgxbjovwbd^5
 @i^2656^Flimsy Chain Vest
 @i^2672^Stringy Wolf Meat
 @i^3299^Fractured Canine
+@i^4775^Cracked Bill
+@i^4776^Ruffled Feather
 @i^4814^Discolored Fang
 @i^4865^Ruined Pelt
 @i^6753^Feather Charm
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
 @i^7098^Splintered Tusk
+@i^14098^Native Cloak
+@i^15478^Charger's Shield
+@i^211780^Scroll: KWYJIBO
+@i^252022^Galestrider Jerky
+@i^252028^Fresh Gustberry Bread
+@i^252030^Pungent Skycheddar
+@i^252031^Crisp Spring Water
+@i^252032^Red Delicious Stormapple
+@i^253597^Lowlands Galestrider Tenderloin
+@i^257107^Shriekling Matriarch's Head
+@i^267474^Galeswept Forestshroom
 @q^117^1:0:0
 @q^159^1:0:0
 @q^750^1:12:0
+@q^1181^1:0:0
 @q^1364^0:4:0
 @q^1366^0:4:0
 @q^1368^0:4:0
@@ -43,6 +69,10 @@ GoldScout-export 5^0pjgxbjovwbd^5
 @q^1376^0:4:0
 @q^1377^0:4:0
 @q^1380^0:4:0
+@q^1411^0:2:0
+@q^1413^0:2:0
+@q^1416^0:2:0
+@q^1422^0:4:0
 @q^2004^1:12:0
 @q^2210^0:4:0
 @q^2589^1:7:1
@@ -51,13 +81,27 @@ GoldScout-export 5^0pjgxbjovwbd^5
 @q^2656^0:4:0
 @q^2672^1:7:1
 @q^3299^0:15:0
+@q^4775^0:15:0
+@q^4776^0:15:0
 @q^4814^0:15:0
 @q^4865^0:15:0
 @q^6753^1:12:0
 @q^7073^0:15:0
 @q^7074^0:15:0
 @q^7098^0:15:0
+@q^14098^1:4:0
+@q^15478^1:4:0
+@q^211780^1:0:0
+@q^252022^1:0:0
+@q^252028^1:0:0
+@q^252030^1:0:0
+@q^252031^1:0:0
+@q^252032^1:0:0
+@q^253597^1:12:0
+@q^257107^1:12:0
+@q^267474^1:0:0
 @m^1426^Dun Morogh
+@m^2521^Zephras Isle
 @c^118^
 @c^858^
 @c^929^
@@ -1352,5 +1396,12 @@ GoldScout-export 5^0pjgxbjovwbd^5
 @a^808^306:1
 @a^946^325:3
 @a^1138^189:1
+@a^251314^291:2,292:1,312:1
+@a^251707^309:9,310:5,330:2
+@a^251727^291:3,292:3,312:2
+@a^252802^309:3,329:3
+@a^252820^290:3
+@a^253282^270:3
+@a^253283^270:1
 @a^269075^245:1
 @l^0^enUS
