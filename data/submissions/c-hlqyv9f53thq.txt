@@ -1,4 +1,4 @@
-GoldScout-export 5^hlqyv9f53thq^5
+GoldScout-export 5^hlqyv9f53thq^6
 92^7^0^39^40^1418^0.2642^0.5390^7^Rock Elemental^4552:1:1,4553:3:3,4627:3:3,4784:3:3,7848:1:1,7912:2:3,8150:1:1^
 684^6^0^37^38^1434^0.3620^0.3571^6^Shadowmaw Panther^1686:1:1,1688:1:1,3838:6:6,5637:1:1,8146:1:1^
 687^26^0^40^41^1434^0.2992^0.4351^26^Jungle Stalker^3863:10:10,4461:10:10,4586:5:5,4587:2:2,5637:1:1,7533:1:1,8146:1:1,12184:10:10^
@@ -16,10 +16,36 @@ GoldScout-export 5^hlqyv9f53thq^5
 2829^3^0^35^36^1418^0.6182^0.4647^3^Starving Buzzard^1464:1:1,11416:1:1,12037:1:1^
 2830^16^0^37^39^1418^0.5861^0.5542^16^Buzzard^1464:6:6,3404:4:4,5116:6:6,5829:2:2,7847:5:5,11416:3:3,11418:2:2,12037:6:6,248693:1:1^
 2831^3^0^39^41^1418^0.2228^0.6589^3^Giant Buzzard^1464:2:2,3404:1:1,5116:1:1,5829:1:1,12037:2:2,213547:1:1^
+3103^5^0^6^7^1411^0.5891^0.7489^5^Makrura Clacker^1413:1:1,2213:1:1,3013:1:1,4887:3:3,6303:1:2,211787:1:1^
+3104^2^0^6^6^1411^0.5875^0.7584^2^Makrura Shellhide^1425:1:1,2773:1:1,4887:1:1^
+3106^2^0^5^6^1411^0.5823^0.7661^2^Pygmy Surf Crawler^4873:1:1,4888:1:1^
+3125^5^0^5^6^1411^0.5293^0.5802^5^Clattering Scorpid^4872:1:1,5466:3:3^
+3128^13^0^5^6^1411^0.5823^0.5633^13^Kul Tiras Sailor^118:1:1,1372:1:1,1380:1:1,1429:1:1,2589:5:6,2656:1:1,4870:5:5^
+3129^17^0^6^7^1411^0.5907^0.5723^17^Kul Tiras Marine^1415:1:1,1425:1:1,2070:1:1,2212:1:1,2589:3:5,2642:1:1,4870:4:4^
+3192^2^0^8^8^1411^0.5955^0.5835^2^Lieutenant Benedict^2773:1:1,4882:2:2^
+266849^6^0^5^6^1411^0.5169^0.6324^6^Ridgeshade Lurker^1476:2:2,2590:1:1,5465:4:7^
+266850^7^0^5^6^1411^0.5163^0.6052^7^Ridgeshade Creeper^1476:2:2,2590:2:2,5465:5:8^
+@i^118^Minor Healing Potion
+@i^1372^Ragged Cloak
+@i^1380^Frayed Robe
+@i^1413^Feeble Sword
+@i^1415^Carpenter's Mallet
+@i^1425^Worn Leather Vest
+@i^1429^Patchwork Cloak
 @i^1464^Buzzard Talon
+@i^1476^Snapped Spider Limb
 @i^1686^Bristly Whisker
 @i^1688^Long Soft Tail
 @i^1702^Intact Basilisk Spine
+@i^2070^Darnassian Bleu
+@i^2212^Cracked Buckler
+@i^2213^Worn Large Shield
+@i^2589^Linen Cloth
+@i^2590^Forest Spider Webbing
+@i^2642^Loose Chain Boots
+@i^2656^Flimsy Chain Vest
+@i^2773^Cracked Shortbow
+@i^3013^Scroll of Protection
 @i^3404^Buzzard Wing
 @i^3838^Shadowmaw Claw
 @i^3839^Pristine Tigress Fang
@@ -35,10 +61,19 @@ GoldScout-export 5^hlqyv9f53thq^5
 @i^4626^Small Stone Shard
 @i^4627^Large Stone Slab
 @i^4784^Lifeless Stone
+@i^4870^Canvas Scraps
+@i^4872^Dry Scorpid Eye
+@i^4873^Dry Hardened Barnacle
+@i^4882^Benedict's Key
+@i^4887^Intact Makrura Eye
+@i^4888^Crawler Mucus
 @i^5116^Long Tail Feather
+@i^5465^Small Spider Leg
+@i^5466^Scorpid Stinger
 @i^5637^Large Fang
 @i^5829^Razor-sharp Beak
 @i^6166^Coyote Jawbone
+@i^6303^Raw Slitherskin Mackerel
 @i^6420^Glyphed Boots
 @i^7067^Elemental Earth
 @i^7533^Cabalist Cloak of the Knight
@@ -55,13 +90,31 @@ GoldScout-export 5^hlqyv9f53thq^5
 @i^12184^Raptor Flesh
 @i^12202^Tiger Meat
 @i^12203^Red Wolf Meat
+@i^211787^Scroll: LOWER PING WHOMEVER
 @i^213547^Scroll: THAW WORDS
 @i^248692^Waylaid Crate: Expert Ore
 @i^248693^Waylaid Crate: Expert Textiles
+@q^118^1:0:0
+@q^1372^0:4:0
+@q^1380^0:4:0
+@q^1413^0:2:0
+@q^1415^0:2:0
+@q^1425^0:4:0
+@q^1429^0:4:0
 @q^1464^0:15:0
+@q^1476^0:15:0
 @q^1686^0:15:0
 @q^1688^0:15:0
 @q^1702^0:15:0
+@q^2070^1:0:0
+@q^2212^0:4:0
+@q^2213^0:4:0
+@q^2589^1:7:1
+@q^2590^0:15:0
+@q^2642^0:4:0
+@q^2656^0:4:0
+@q^2773^0:2:0
+@q^3013^1:0:0
 @q^3404^1:7:1
 @q^3838^1:12:0
 @q^3839^1:12:0
@@ -77,10 +130,19 @@ GoldScout-export 5^hlqyv9f53thq^5
 @q^4626^1:12:0
 @q^4627^1:12:0
 @q^4784^0:15:0
+@q^4870^1:12:0
+@q^4872^0:15:0
+@q^4873^0:15:0
+@q^4882^1:13:0
+@q^4887^1:12:0
+@q^4888^1:12:0
 @q^5116^1:7:1
+@q^5465^1:7:1
+@q^5466^1:7:1
 @q^5637^1:7:1
 @q^5829^0:15:0
 @q^6166^1:12:0
+@q^6303^1:7:1
 @q^6420^2:4:0
 @q^7067^1:7:1
 @q^7533^2:4:0
@@ -97,9 +159,11 @@ GoldScout-export 5^hlqyv9f53thq^5
 @q^12184^1:7:1
 @q^12202^1:7:1
 @q^12203^1:7:1
+@q^211787^1:0:0
 @q^213547^1:0:0
 @q^248692^1:0:1
 @q^248693^1:0:1
+@m^1411^Durotar
 @m^1418^Badlands
 @m^1434^Stranglethorn Vale
 @c^2300^
@@ -737,4 +801,13 @@ GoldScout-export 5^hlqyv9f53thq^5
 @a^2829^172:1,192:2
 @a^2830^191:1,192:2,210:3,212:3,230:1,231:3,251:1,271:2
 @a^2831^184:1,266:1,303:1
+@a^3103^291:1,292:1,311:3
+@a^3104^291:1,311:1
+@a^3106^311:2
+@a^3125^190:1,210:2,230:1,311:1
+@a^3128^211:3,231:10
+@a^3129^211:2,231:15
+@a^3192^231:2
+@a^266849^250:6
+@a^266850^210:1,230:1,250:5
 @l^0^enUS

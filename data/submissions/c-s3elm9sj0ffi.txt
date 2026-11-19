@@ -1,4 +1,4 @@
-GoldScout-export 5^s3elm9sj0ffi^13
+GoldScout-export 5^s3elm9sj0ffi^14
 122^1^0^17^17^1436^0.4367^0.7821^1^Defias Highwayman^^
 124^1^0^16^16^1436^0.4964^0.6126^1^Riverpaw Brute^^
 154^1^0^17^17^1436^0.5974^0.5206^1^Greater Fleshripper^4775:1:1^
@@ -71,6 +71,7 @@ GoldScout-export 5^s3elm9sj0ffi^13
 3886^2^0^0^0^0^0.0000^0.0000^0^^^
 3887^1^0^0^0^0^0.0000^0.0000^0^^^
 3914^1^0^0^0^0^0.0000^0.0000^0^^^
+3917^8^0^23^25^1440^0.5102^0.6914^8^Befouled Water Elemental^5447:2:2,5448:2:2,9451:4:9,12220:5:5^
 3927^2^0^0^0^0^0.0000^0.0000^0^^^
 3947^6^0^0^0^0^0.0000^0.0000^0^^248683:1:1^
 4274^2^0^0^0^0^0.0000^0.0000^0^^3301:1:1^
@@ -202,6 +203,8 @@ GoldScout-export 5^s3elm9sj0ffi^13
 @i^5374^Small Pocket Watch
 @i^5375^Scratching Stick
 @i^5376^Broken Mirror
+@i^5447^Damaged Elemental Bracer
+@i^5448^Fractured Elemental Bracer
 @i^5524^Thick-shelled Clam
 @i^5569^Seaweed
 @i^5635^Sharp Claw
@@ -209,6 +212,7 @@ GoldScout-export 5^s3elm9sj0ffi^13
 @i^5784^Slimy Murloc Scale
 @i^5879^Twilight Pendant
 @i^5952^Corrupted Brain Stem
+@i^6289^Raw Longjaw Mud Snapper
 @i^6303^Raw Slitherskin Mackerel
 @i^6308^Raw Bristle Whisker Catfish
 @i^6358^Oily Blackmouth
@@ -222,7 +226,9 @@ GoldScout-export 5^s3elm9sj0ffi^13
 @i^6908^Ghamoo-ra's Bind
 @i^6910^Leech Pants
 @i^8490^Cat Carrier (Siamese)
+@i^9451^Bubbling Water
 @i^9785^Raider's Bracers of the Whale
+@i^12220^Intact Elemental Bracer
 @i^12238^Darkshore Grouper
 @i^14165^Pagan Britches of the Owl
 @i^14371^Mystic's Robe
@@ -331,6 +337,8 @@ GoldScout-export 5^s3elm9sj0ffi^13
 @q^5374^0:15:0
 @q^5375^0:15:0
 @q^5376^0:15:0
+@q^5447^0:15:0
+@q^5448^0:15:0
 @q^5524^1:7:0
 @q^5569^0:15:0
 @q^5635^1:7:1
@@ -338,6 +346,7 @@ GoldScout-export 5^s3elm9sj0ffi^13
 @q^5784^1:7:1
 @q^5879^1:12:0
 @q^5952^1:12:0
+@q^6289^1:7:1
 @q^6303^1:7:1
 @q^6308^1:7:1
 @q^6358^1:7:1
@@ -351,7 +360,9 @@ GoldScout-export 5^s3elm9sj0ffi^13
 @q^6908^3:4:0
 @q^6910^3:4:0
 @q^8490^1:15:0
+@q^9451^1:0:0
 @q^9785^2:4:0
+@q^12220^1:12:0
 @q^12238^1:0:0
 @q^14165^2:4:0
 @q^14371^2:4:0
@@ -377,6 +388,7 @@ GoldScout-export 5^s3elm9sj0ffi^13
 @m^1433^Redridge Mountains
 @m^1436^Westfall
 @m^1439^Darkshore
+@m^1440^Ashenvale
 @c^118^
 @c^724^
 @c^733^
@@ -1810,6 +1822,7 @@ GoldScout-export 5^s3elm9sj0ffi^13
 @a^2384^171:3
 @a^2408^53:1,54:1,73:2,133:1,153:1,172:2,211:2,231:1
 @a^2428^175:1
+@a^3917^269:1,270:6,290:1
 @a^4789^128:1
 @a^4802^128:1
 @a^4803^128:2
@@ -1817,4 +1830,5 @@ GoldScout-export 5^s3elm9sj0ffi^13
 @a^266216^195:2
 @f^1424^0^146^171^6358:29:29,6359:7:7,6361:110:110^269:146
 @f^1439^0^34^164^3820:4:8,6303:7:7,6358:6:6,6361:8:8,12238:8:8,20709:1:3^146:2,166:3,187:24,227:5
+@f^1440^0^36^200^6289:13:13,6308:23:23^269:36
 @l^0^enUS

@@ -1,4 +1,4 @@
-GoldScout-export 5^g60fuukks5sf^5
+GoldScout-export 5^g60fuukks5sf^6
 588^11^0^34^35^1434^0.2513^0.1140^11^Eclaireur Bloodscalp^1519:3:3,2748:1:1,3771:1:1,3901:3:3,3915:1:1,4306:2:3,7463:1:1^
 595^17^0^34^35^1434^0.2564^0.1051^17^Chasseur Bloodscalp^1519:1:1,1708:3:3,2592:1:2,2735:1:1,2748:1:1,2749:1:1,3771:1:1,3794:1:1,3901:3:3,3915:6:6,4306:1:2,4338:2:2^
 597^5^0^36^37^1434^0.2390^0.0939^5^Berserker Bloodscalp^1519:2:2,3915:1:1,4306:1:1^
@@ -54,6 +54,7 @@ GoldScout-export 5^g60fuukks5sf^5
 11876^1^0^37^37^1443^0.5500^0.2662^1^Esprit démon^13542:1:1^
 12369^1^0^38^38^1443^0.2856^0.0663^1^Seigneur Kragaru^17058:1:1^
 13019^1^0^33^33^1443^0.5515^0.3007^1^Prophétesse de la Lame ardente^15750:1:1^
+272313^2^0^39^40^2548^0.6667^0.7612^2^Claqueur saumécaille^^
 @i^770^Croc pointu de crocilisque
 @i^1519^Oreille de Bloodscalp
 @i^1520^Sueur de troll
@@ -83,6 +84,7 @@ GoldScout-export 5^g60fuukks5sf^5
 @i^3792^Ceinture entrelacée
 @i^3794^Brassards entrelacés
 @i^3795^Cape entrelacée
+@i^3820^Etouffante
 @i^3838^Griffe d'Ombregueule
 @i^3839^Croc de tigresse en parfait état
 @i^3879^Patte de Sin'Dall
@@ -98,9 +100,12 @@ GoldScout-export 5^g60fuukks5sf^5
 @i^4461^Peau de raptor
 @i^4582^Queue fournie soyeuse
 @i^4586^Peau lisse de raptor
+@i^4603^Jaune-queue tacheté cru
 @i^5637^Grand croc
 @i^5785^Ecailles de murloc épaisses
 @i^6067^Oreille de centaure
+@i^6358^Bouche-noire huileux
+@i^6359^Lutjan de nagefeu
 @i^6362^Morue rochécaille crue
 @i^6442^Cristal d'oracle
 @i^6986^Lotus cramoisi
@@ -114,6 +119,7 @@ GoldScout-export 5^g60fuukks5sf^5
 @i^12184^Chair de raptor
 @i^12202^Viande de tigre
 @i^12203^Viande de loup rouge
+@i^13422^Anguille pierre-écaille
 @i^13542^Boîte démoniaque
 @i^15349^Ceinture de chasseur de têtes de l'épervier
 @i^15563^Bouclier de pilleur de héraut
@@ -123,6 +129,7 @@ GoldScout-export 5^g60fuukks5sf^5
 @i^17057^Ecailles de poisson brillantes
 @i^17058^Huile de poisson
 @i^21151^Rhum de Rumsey label noir
+@i^21228^Malle cerclée de mithril
 @i^216616^Clé de cage de la base
 @i^248693^Caisse détournée : textiles d'expert
 @i^254432^Totem centaure sculpté
@@ -157,6 +164,7 @@ GoldScout-export 5^g60fuukks5sf^5
 @q^3792^0:4:0
 @q^3794^0:4:0
 @q^3795^0:4:0
+@q^3820^1:7:1
 @q^3838^1:12:0
 @q^3839^1:12:0
 @q^3879^1:12:0
@@ -172,9 +180,12 @@ GoldScout-export 5^g60fuukks5sf^5
 @q^4461^1:7:1
 @q^4582^1:12:0
 @q^4586^0:15:0
+@q^4603^1:7:1
 @q^5637^1:7:1
 @q^5785^1:7:1
 @q^6067^1:12:0
+@q^6358^1:7:1
+@q^6359^1:7:1
 @q^6362^1:7:1
 @q^6442^1:12:0
 @q^6986^0:15:0
@@ -188,6 +199,7 @@ GoldScout-export 5^g60fuukks5sf^5
 @q^12184^1:7:1
 @q^12202^1:7:1
 @q^12203^1:7:1
+@q^13422^1:7:1
 @q^13542^1:12:0
 @q^15349^2:4:0
 @q^15563^2:4:0
@@ -197,6 +209,7 @@ GoldScout-export 5^g60fuukks5sf^5
 @q^17057^1:15:0
 @q^17058^1:15:0
 @q^21151^1:0:0
+@q^21228^1:15:0
 @q^216616^1:12:0
 @q^248693^1:0:1
 @q^254432^2:15:0
@@ -204,6 +217,7 @@ GoldScout-export 5^g60fuukks5sf^5
 @q^277957^1:12:0
 @m^1434^Vallée de Strangleronce
 @m^1443^Désolace
+@m^2548^Rives Claires
 @c^118^
 @c^724^
 @c^733^
@@ -981,5 +995,7 @@ GoldScout-export 5^g60fuukks5sf^5
 @a^11876^110:1
 @a^12369^25:1
 @a^13019^131:1
+@a^272313^294:1,331:1
 @f^1434^0^1^154^21151:1:2^85:1
+@f^2548^0^62^154^3820:1:1,4603:3:3,6358:28:28,6359:7:7,6362:1:1,13422:15:33,21151:1:2,21228:6:6^137:4,157:2,196:5,254:6,274:6,293:4,294:5,312:2,313:7,331:6,333:2,351:5,353:8
 @l^0^frFR
