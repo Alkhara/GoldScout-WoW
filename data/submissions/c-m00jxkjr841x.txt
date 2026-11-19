@@ -1,4 +1,4 @@
-GoldScout-export 5^m00jxkjr841x^93
+GoldScout-export 5^m00jxkjr841x^94
 98^1^0^17^17^1436^0.6373^0.7055^1^Riverpaw Taskmaster^^
 117^1^0^11^12^1436^0.5780^0.1317^1^Riverpaw Gnoll^1502:1:1^
 154^2^0^16^17^1436^0.6243^0.6214^2^Greater Fleshripper^6889:1:1^
@@ -209,10 +209,11 @@ GoldScout-export 5^m00jxkjr841x^93
 3473^1^0^24^24^1413^0.4413^0.6196^1^Owatanka^5102:1:1^
 3560^15^0^34^37^1434^0.2131^0.1252^15^Healing Ward^^
 3566^1^0^9^9^1412^0.6023^0.7160^1^Flatland Prowler^4814:1:1^
-3712^2^0^19^20^1440^0.1070^0.2992^2^Wrathtail Razortail^^
-3713^2^0^18^19^1440^0.1218^0.2572^2^Wrathtail Wave Rider^^
-3715^4^0^19^20^1440^0.1085^0.1714^4^Wrathtail Sea Witch^5523:1:1,16649:1:1^
-3717^1^0^18^19^1440^0.1339^0.2390^1^Wrathtail Sorceress^^
+3712^4^0^19^20^1440^0.1099^0.2180^4^Wrathtail Razortail^6308:1:3^
+3713^10^0^18^19^1440^0.1359^0.2407^10^Wrathtail Wave Rider^5523:3:3,16656:1:1^
+3715^7^0^19^20^1440^0.1142^0.2043^7^Wrathtail Sea Witch^5523:1:1,9768:1:1,16649:1:1,16656:1:1^
+3717^4^0^18^19^1440^0.1349^0.2438^4^Wrathtail Sorceress^5523:1:1,14161:1:1,16652:1:1^
+3721^1^0^19^20^1440^0.1115^0.2719^1^Mystlash Hydra^^
 3748^1^0^24^24^1440^0.5605^0.6402^1^Foulweald Shaman^^
 3749^1^0^24^24^1440^0.5608^0.6352^1^Foulweald Ursa^^
 3765^3^0^26^27^1440^0.8081^0.5010^3^Bleakheart Satyr^4306:1:2,5481:1:1^
@@ -870,6 +871,7 @@ GoldScout-export 5^m00jxkjr841x^93
 @i^9745^Simple Cape
 @i^9754^Nomad Cloak
 @i^9763^Cadet Leggings of the Monkey
+@i^9768^Greenweave Bracers of the Owl
 @i^9777^Bandit Bracers of Magic
 @i^9779^Bandit Cloak of the Gorilla
 @i^9841^Banded Leggings of Arcane Protection
@@ -904,6 +906,7 @@ GoldScout-export 5^m00jxkjr841x^93
 @i^12946^Hypercapacitor Gizmo
 @i^14089^Beaded Gloves
 @i^14125^Ritual Leggings
+@i^14161^Pagan Cape of Intellect
 @i^14183^Watcher's Leggings of the Sorcerer
 @i^14373^Sanguine Belt
 @i^14728^War Paint Shoulder Pads
@@ -925,6 +928,7 @@ GoldScout-export 5^m00jxkjr841x^93
 @i^16647^Shredder Operating Manual - Page 3
 @i^16649^Shredder Operating Manual - Page 5
 @i^16650^Shredder Operating Manual - Page 6
+@i^16652^Shredder Operating Manual - Page 8
 @i^16654^Shredder Operating Manual - Page 10
 @i^16656^Shredder Operating Manual - Page 12
 @i^16782^Strange Water Globe
@@ -1385,6 +1389,7 @@ GoldScout-export 5^m00jxkjr841x^93
 @q^9745^1:4:0
 @q^9754^1:4:0
 @q^9763^2:4:0
+@q^9768^2:4:0
 @q^9777^2:4:0
 @q^9779^2:4:0
 @q^9841^2:4:0
@@ -1419,6 +1424,7 @@ GoldScout-export 5^m00jxkjr841x^93
 @q^12946^1:12:0
 @q^14089^1:4:0
 @q^14125^2:4:0
+@q^14161^2:4:0
 @q^14183^2:4:0
 @q^14373^2:4:0
 @q^14728^1:4:0
@@ -1440,6 +1446,7 @@ GoldScout-export 5^m00jxkjr841x^93
 @q^16647^1:12:0
 @q^16649^1:12:0
 @q^16650^1:12:0
+@q^16652^1:12:0
 @q^16654^1:12:0
 @q^16656^1:12:0
 @q^16782^2:12:0
@@ -2562,8 +2569,11 @@ GoldScout-export 5^m00jxkjr841x^93
 @a^3463^209:1
 @a^3466^229:3,248:2,249:4
 @a^3560^24:1,44:14
-@a^3713^82:1
-@a^3715^42:3
+@a^3712^42:2
+@a^3713^62:1,82:1,83:3,102:4
+@a^3715^42:4,122:2
+@a^3717^82:2,102:1
+@a^3721^102:1
 @a^3789^150:1
 @a^3791^150:3
 @a^3809^332:1,353:2

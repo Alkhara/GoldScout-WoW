@@ -1,4 +1,5 @@
-GoldScout-export 5^a9t4rk94h9ox^5
+GoldScout-export 5^a9t4rk94h9ox^6
+750^1^0^43^43^1435^0.8268^0.9119^1^Marsh Inkspewer^17058:1:1^
 2505^8^0^49^50^1425^0.7773^0.6537^8^Saltwater Snapjaw^3712:3:3,4555:4:4,4556:7:7,4603:1:1,7973:3:3^
 2639^1^0^46^46^1425^0.4557^0.6428^1^Vilebranch Axe Thrower^8151:1:1,9259:1:1^
 2659^3^0^46^48^1425^0.5686^0.4486^3^Razorbeak Skylord^4589:1:1,4590:1:1,4591:3:4,19025:1:1^
@@ -14,12 +15,14 @@ GoldScout-export 5^a9t4rk94h9ox^5
 4466^15^0^46^47^1425^0.5639^0.5467^15^Vilebranch Scalper^1520:6:6,1645:2:2,4338:5:10,8151:1:1,8153:4:7,9259:7:7^
 4467^7^0^46^47^1425^0.5322^0.5957^7^Vilebranch Soothsayer^1520:4:4,4338:1:1,8151:1:1,9259:3:3^
 7977^1^0^48^48^1425^0.7824^0.5814^1^Gammerita^4556:1:2,19023:1:1^
+11563^1^0^34^34^1443^0.2599^0.7781^1^Drysnap Pincer^^
 14748^1^0^49^49^1425^0.8457^0.4102^1^Vilebranch Kidnapper^19034:1:1^
 270772^1^0^49^49^1425^0.2448^0.6535^1^Witch Doctor Ti'ik^279913:1:1^
 @i^1520^Troll Sweat
 @i^1645^Moonberry Juice
 @i^3385^Lesser Mana Potion
 @i^3712^Turtle Meat
+@i^3820^Stranglekelp
 @i^3961^Thick Leather Belt
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
@@ -39,14 +42,25 @@ GoldScout-export 5^a9t4rk94h9ox^5
 @i^6308^Raw Bristle Whisker Catfish
 @i^6309^17 Pound Catfish
 @i^6310^19 Pound Catfish
+@i^6358^Oily Blackmouth
+@i^6359^Firefin Snapper
+@i^6362^Raw Rockscale Cod
 @i^7973^Big-mouth Clam
 @i^8151^Flask of Mojo
 @i^8153^Wildvine
+@i^8365^Raw Mithril Head Trout
 @i^9259^Troll Tribal Necklace
 @i^11417^Feathery Wing
 @i^12203^Red Wolf Meat
 @i^12207^Giant Egg
 @i^12208^Tender Wolf Meat
+@i^13758^Raw Redgill
+@i^13760^Raw Sunscale Salmon
+@i^16967^Feralas Ahi
+@i^16968^Sar'theris Striker
+@i^16969^Savage Coast Blue Sailfin
+@i^16970^Misty Reed Mahi Mahi
+@i^17058^Fish Oil
 @i^19023^Katoom's Best Lure
 @i^19025^Skylord Plume
 @i^19034^Lard's Lunch
@@ -55,6 +69,7 @@ GoldScout-export 5^a9t4rk94h9ox^5
 @q^1645^1:0:0
 @q^3385^1:0:0
 @q^3712^1:7:1
+@q^3820^1:7:1
 @q^3961^0:4:0
 @q^4306^1:7:1
 @q^4338^1:7:1
@@ -74,19 +89,34 @@ GoldScout-export 5^a9t4rk94h9ox^5
 @q^6308^1:7:1
 @q^6309^1:15:0
 @q^6310^1:15:0
+@q^6358^1:7:1
+@q^6359^1:7:1
+@q^6362^1:7:1
 @q^7973^1:7:0
 @q^8151^1:7:1
 @q^8153^1:7:1
+@q^8365^1:7:1
 @q^9259^1:15:0
 @q^11417^0:15:0
 @q^12203^1:7:1
 @q^12207^1:7:1
 @q^12208^1:7:1
+@q^13758^1:7:1
+@q^13760^1:7:1
+@q^16967^1:15:0
+@q^16968^1:12:0
+@q^16969^1:12:0
+@q^16970^1:12:0
+@q^17058^1:15:0
 @q^19023^1:12:0
 @q^19025^1:12:0
 @q^19034^1:12:0
 @q^279913^1:12:0
 @m^1425^The Hinterlands
+@m^1434^Stranglethorn Vale
+@m^1435^Swamp of Sorrows
+@m^1443^Desolace
+@m^1444^Feralas
 @m^1454^Orgrimmar
 @c^2840^
 @c^2841^
@@ -615,6 +645,7 @@ GoldScout-export 5^a9t4rk94h9ox^5
 @c^285279^
 @c^285280^
 @c^285281^
+@a^750^376:1
 @a^2505^235:2,255:2,275:2,295:2
 @a^2639^249:1
 @a^2659^170:1,190:1,192:1
@@ -630,7 +661,12 @@ GoldScout-export 5^a9t4rk94h9ox^5
 @a^4466^170:2,173:4,214:2,249:1,250:1,268:1,269:3,270:1
 @a^4467^173:2,249:2,269:3
 @a^7977^235:1
+@a^11563^305:1
 @a^14748^176:1
 @a^270772^264:1
+@f^1434^0^32^225^4603:11:11,6358:4:4,6359:3:3,6362:14:14,16969:1:1^126:32
+@f^1435^0^16^225^4603:4:4,6358:3:3,6359:2:2,6362:7:7,16970:1:1^298:7,357:1,376:8
+@f^1443^0^4^225^3820:2:3,6362:2:2,16968:1:1^305:4
+@f^1444^0^4^225^8365:1:1,13758:2:2,13760:1:1,16967:1:1^212:4
 @f^1454^0^264^178^3385:1:1,6289:156:156,6291:45:45,6308:60:60,6309:1:1,6310:1:1^113:250,133:14
 @l^0^enUS
