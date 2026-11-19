@@ -1,11 +1,14 @@
-GoldScout-export 5^j1zwpq81b59k^4
+GoldScout-export 5^j1zwpq81b59k^5
 705^1^0^1^1^1426^0.3217^0.7095^1^Ragged Young Wolf^4865:1:1^
 1125^12^0^5^6^1426^0.4512^0.5734^12^Crag Boar^769:7:7,771:2:2,2886:7:7^
 1128^3^0^5^6^1426^0.4670^0.5045^3^Young Black Bear^4865:2:2,7073:1:1^
 1134^3^0^5^6^1426^0.4232^0.5546^3^Young Wendigo^1376:1:1^
 1135^1^0^6^7^1426^0.4245^0.5443^1^Wendigo^117:1:1^
 1199^1^0^5^6^1426^0.3915^0.6133^1^Juvenile Snow Leopard^4813:1:1^
+1561^2^0^40^40^1434^0.2733^0.6851^2^Bloodsail Raider^4306:1:2,4636:1:1^
+1562^4^0^40^41^1434^0.2661^0.6807^4^Bloodsail Mage^1708:1:1,4306:2:4,4338:1:1,9260:1:1^
 1718^4^0^3^4^1426^0.3546^0.6745^4^Rockjaw Raider^117:1:1,1374:1:1,2589:1:1,3365:1:1^
+1907^23^0^43^44^1434^0.2604^0.6178^23^Naga Explorer^1645:2:2,3940:1:1,4047:1:1,4424:1:1,6149:1:1,7973:10:10,17058:9:9,248708:1:1^
 4140^3^0^31^32^1441^0.7737^0.5960^3^Scorpid Reaver^12037:1:1,19937:1:1,19938:1:1^
 4142^5^0^30^31^1441^0.7608^0.5615^5^Sparkleshell Tortoise^3712:3:3,4555:1:1,4556:2:2,6308:3:5^
 4143^5^0^34^35^1441^0.8080^0.6769^5^Sparkleshell Snapper^3712:1:1,4555:1:1,4556:3:3,248690:1:1^
@@ -29,6 +32,7 @@ GoldScout-export 5^j1zwpq81b59k^4
 255898^1^0^38^38^2548^0.6663^0.7438^1^Murloc Oracle^5524:1:1^
 255899^4^0^38^38^2548^0.6844^0.7277^4^Murloc Tideskimmer^^
 255901^6^0^36^37^2548^0.6451^0.7385^6^Sand Crawler^5524:3:3,5569:3:3,12206:1:1^
+260425^2^0^36^37^1434^0.2996^0.7093^2^Venture Co. Mercenary^^
 @i^117^Tough Jerky
 @i^729^Stringy Vulture Meat
 @i^769^Chunk of Boar Meat
@@ -36,19 +40,26 @@ GoldScout-export 5^j1zwpq81b59k^4
 @i^1374^Frayed Shoes
 @i^1376^Frayed Cloak
 @i^1464^Buzzard Talon
+@i^1645^Moonberry Juice
 @i^1701^Curved Basilisk Claw
 @i^1702^Intact Basilisk Spine
+@i^1708^Sweet Nectar
 @i^2589^Linen Cloth
 @i^2886^Crag Boar Rib
 @i^3365^Frayed Bracers
 @i^3399^Vulture Talon
 @i^3404^Buzzard Wing
 @i^3712^Turtle Meat
+@i^3940^Crochet Gloves
+@i^4047^Mistscape Boots
+@i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
+@i^4424^Scroll of Spirit III
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
 @i^4583^Thick Furry Mane
 @i^4603^Raw Spotted Yellowtail
+@i^4636^Strong Iron Lockbox
 @i^4813^Small Leather Collar
 @i^4865^Ruined Pelt
 @i^5114^Severed Talon
@@ -59,11 +70,13 @@ GoldScout-export 5^j1zwpq81b59k^4
 @i^5569^Seaweed
 @i^5637^Large Fang
 @i^5829^Razor-sharp Beak
+@i^6149^Greater Mana Potion
 @i^6308^Raw Bristle Whisker Catfish
 @i^7069^Elemental Air
 @i^7073^Broken Fang
 @i^7081^Breath of Wind
 @i^7973^Big-mouth Clam
+@i^9260^Volatile Rum
 @i^11384^Broken Basilisk Teeth
 @i^11385^Basilisk Scale
 @i^11386^Squishy Basilisk Eye
@@ -76,11 +89,13 @@ GoldScout-export 5^j1zwpq81b59k^4
 @i^12208^Tender Wolf Meat
 @i^15552^Thick Scale Shield of the Whale
 @i^17056^Light Feather
+@i^17058^Fish Oil
 @i^19936^Dried Scorpid Carapace
 @i^19937^Small Scorpid Claw
 @i^19938^Heavy Scorpid Leg
 @i^248690^Waylaid Crate: Earthly Expert Herbs
 @i^248692^Waylaid Crate: Expert Ore
+@i^248708^Waylaid Crate: Expert Fabrics
 @q^117^1:0:0
 @q^729^1:7:1
 @q^769^1:7:1
@@ -88,19 +103,26 @@ GoldScout-export 5^j1zwpq81b59k^4
 @q^1374^0:4:0
 @q^1376^0:4:0
 @q^1464^0:15:0
+@q^1645^1:0:0
 @q^1701^0:15:0
 @q^1702^0:15:0
+@q^1708^1:0:0
 @q^2589^1:7:1
 @q^2886^1:7:1
 @q^3365^0:4:0
 @q^3399^0:15:0
 @q^3404^1:7:1
 @q^3712^1:7:1
+@q^3940^0:4:0
+@q^4047^2:4:0
+@q^4306^1:7:1
 @q^4338^1:7:1
+@q^4424^1:0:0
 @q^4555^0:15:0
 @q^4556^0:15:0
 @q^4583^0:15:0
 @q^4603^1:7:1
+@q^4636^2:15:0
 @q^4813^0:15:0
 @q^4865^0:15:0
 @q^5114^0:15:0
@@ -111,11 +133,13 @@ GoldScout-export 5^j1zwpq81b59k^4
 @q^5569^0:15:0
 @q^5637^1:7:1
 @q^5829^0:15:0
+@q^6149^1:0:0
 @q^6308^1:7:1
 @q^7069^1:7:1
 @q^7073^0:15:0
 @q^7081^1:7:1
 @q^7973^1:7:0
+@q^9260^1:0:0
 @q^11384^0:15:0
 @q^11385^0:15:0
 @q^11386^0:15:0
@@ -128,12 +152,15 @@ GoldScout-export 5^j1zwpq81b59k^4
 @q^12208^1:7:1
 @q^15552^2:4:0
 @q^17056^1:15:1
+@q^17058^1:15:0
 @q^19936^0:15:0
 @q^19937^0:15:0
 @q^19938^0:15:0
 @q^248690^1:0:1
 @q^248692^1:0:1
+@q^248708^2:0:1
 @m^1426^Dun Morogh
+@m^1434^Stranglethorn Vale
 @m^1441^Thousand Needles
 @m^1446^Tanaris
 @m^1448^Felwood
@@ -734,7 +761,10 @@ GoldScout-export 5^j1zwpq81b59k^4
 @a^1134^208:1,228:2
 @a^1135^208:1
 @a^1199^247:1
+@a^1561^265:2
+@a^1562^265:4
 @a^1718^267:4
+@a^1907^224:1,244:7,245:15
 @a^4140^215:1,254:1,256:1
 @a^4142^215:2,234:2,236:1
 @a^4143^256:2,275:1,297:1,314:1
@@ -758,4 +788,5 @@ GoldScout-export 5^j1zwpq81b59k^4
 @a^255898^293:1
 @a^255899^293:4
 @a^255901^292:4,293:2
+@a^260425^285:2
 @l^0^enUS

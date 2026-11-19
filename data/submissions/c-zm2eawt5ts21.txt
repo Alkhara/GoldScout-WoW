@@ -1,4 +1,4 @@
-GoldScout-export 5^zm2eawt5ts21^4
+GoldScout-export 5^zm2eawt5ts21^5
 682^6^0^32^33^1434^0.3004^0.1122^6^Stranglethorn Tiger^1686:1:1,1687:1:1,5637:2:2,12202:3:3^
 683^2^0^30^31^1434^0.4243^0.1347^2^Young Panther^1687:1:1,213544:1:1^
 685^7^0^33^34^1434^0.2685^0.1608^7^Stranglethorn Raptor^3685:3:3,4461:2:2,9834:1:1,12184:4:4^
@@ -19,6 +19,9 @@ GoldScout-export 5^zm2eawt5ts21^4
 2412^1^0^33^33^1416^0.1939^0.9166^1^Alina^3690:1:1,4306:1:1^
 2413^1^0^33^33^1416^0.1902^0.9181^1^Dermot^3691:1:1^
 2414^1^0^33^33^1416^0.1646^0.8993^1^Kegan Darkmar^3688:1:1^
+4130^1^0^32^33^1441^0.7012^0.8536^1^Silithid Searcher^5853:1:1,5854:1:1,6300:1:1^
+4131^2^0^34^35^1441^0.6446^0.8612^2^Silithid Invader^6302:2:2^
+4133^8^0^33^34^1441^0.6727^0.8454^8^Silithid Hive Drone^5853:2:2,5854:4:4,5855:1:1,5877:1:1,6300:1:1,6302:4:4^
 4633^1^0^30^30^1443^0.6847^0.4129^1^Kolkar Scout^^
 4663^10^8^30^31^1443^0.5519^0.2894^10^Burning Blade Augur^1708:1:1,2221:1:1,3771:1:1,4306:6:8,4338:1:1,14191:1:1^3770:1:1,16882:1:1
 4664^6^4^30^31^1443^0.5535^0.2919^6^Burning Blade Reaver^3385:1:1,4306:2:2,20310:1:1^16882:1:1
@@ -71,6 +74,12 @@ GoldScout-export 5^zm2eawt5ts21^4
 @i^5427^Crude Pocket Watch
 @i^5431^Empty Hip Flask
 @i^5637^Large Fang
+@i^5853^Intact Silithid Carapace
+@i^5854^Silithid Talon
+@i^5855^Silithid Heart
+@i^5877^Cracked Silithid Carapace
+@i^6300^Husk Fragment
+@i^6302^Delicate Insect Wing
 @i^9829^Scaled Leather Bracers of Agility
 @i^9834^Scaled Leather Shoulders of the Bandit
 @i^12184^Raptor Flesh
@@ -120,6 +129,12 @@ GoldScout-export 5^zm2eawt5ts21^4
 @q^5427^0:15:0
 @q^5431^0:15:0
 @q^5637^1:7:1
+@q^5853^1:12:0
+@q^5854^1:12:0
+@q^5855^1:12:0
+@q^5877^1:12:0
+@q^6300^0:15:0
+@q^6302^0:15:0
 @q^9829^2:4:0
 @q^9834^2:4:0
 @q^12184^1:7:1
@@ -133,6 +148,7 @@ GoldScout-export 5^zm2eawt5ts21^4
 @m^1416^Alterac Mountains
 @m^1424^Hillsbrad Foothills
 @m^1434^Stranglethorn Vale
+@m^1441^Thousand Needles
 @m^1443^Desolace
 @c^118^
 @c^724^
@@ -904,6 +920,7 @@ GoldScout-export 5^zm2eawt5ts21^4
 @c^279256^
 @c^279257^
 @c^279258^
+@c^279938^
 @c^279940^
 @c^279941^
 @c^279945^
@@ -914,8 +931,10 @@ GoldScout-export 5^zm2eawt5ts21^4
 @c^279966^
 @c^279967^
 @c^279968^
+@c^279969^
 @c^279974^
 @c^279978^
+@c^279979^
 @c^279981^
 @c^279982^
 @c^286152^
@@ -939,6 +958,9 @@ GoldScout-export 5^zm2eawt5ts21^4
 @a^2412^363:1
 @a^2413^363:1
 @a^2414^343:1
+@a^4130^354:1
+@a^4131^352:1,353:1
+@a^4133^333:3,334:1,352:2,353:2
 @a^4633^173:1
 @a^4663^110:5,111:4,131:1
 @a^4664^110:1,111:3,130:1,131:1
