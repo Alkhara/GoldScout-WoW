@@ -1,4 +1,4 @@
-GoldScout-export 5^6s9monbzjmun^13
+GoldScout-export 5^6s9monbzjmun^14
 3^3^0^24^25^1431^0.2524^0.3680^3^Flesh Eater^1129:2:2,2592:1:2,4306:1:1,5529:1:1^
 48^21^0^21^22^1431^0.7888^0.7056^21^Skeletal Warrior^1205:1:1,1774:1:1,1824:1:1,2378:7:7,2589:3:7,2592:3:5,2782:1:1,2794:1:1,4306:2:2,4606:2:2^
 118^1^0^10^10^1429^0.8658^0.7044^1^Prowler^2672:1:1^
@@ -59,7 +59,7 @@ GoldScout-export 5^6s9monbzjmun^13
 948^3^0^25^26^1431^0.2464^0.3758^3^Rotted One^1129:1:1,2592:1:2^
 949^2^0^26^26^1431^0.2277^0.3977^2^Carrion Recluse^1081:1:1,3174:1:1^
 1258^1^0^25^26^1431^0.6866^0.3721^1^Black Ravager Mastiff^^
-1270^4^0^29^30^1431^0.7695^0.3572^4^Fetid Corpse^1129:2:2,1478:1:1^
+1270^6^0^29^30^1431^0.7712^0.3461^6^Fetid Corpse^887:1:1,1129:2:2,1478:1:1,2014:1:1^
 1663^1^0^0^0^0^0.0000^0.0000^0^^3628:1:1^
 1666^1^0^0^0^0^0.0000^0.0000^0^^^
 1696^1^0^0^0^0^0.0000^0.0000^0^^3630:1:1^
@@ -120,6 +120,7 @@ GoldScout-export 5^6s9monbzjmun^13
 @i^769^Chunk of Boar Meat
 @i^771^Chipped Boar Tusk
 @i^878^Fist-sized Spinneret
+@i^887^Pound of Flesh
 @i^893^Dire Wolf Fang
 @i^929^Healing Potion
 @i^1013^Iron Rivet
@@ -168,6 +169,7 @@ GoldScout-export 5^6s9monbzjmun^13
 @i^1946^Mary's Looking Glass
 @i^1962^Glowing Shadowhide Pendant
 @i^2011^Twisted Sabre
+@i^2014^Black Metal Greatsword
 @i^2216^Simple Buckler
 @i^2217^Rectangular Shield
 @i^2251^Gooey Spider Leg
@@ -272,6 +274,7 @@ GoldScout-export 5^6s9monbzjmun^13
 @q^769^1:7:1
 @q^771^0:15:0
 @q^878^0:7:0
+@q^887^0:15:0
 @q^893^0:15:0
 @q^929^1:0:0
 @q^1013^1:12:0
@@ -320,6 +323,7 @@ GoldScout-export 5^6s9monbzjmun^13
 @q^1946^1:12:0
 @q^1962^1:12:0
 @q^2011^3:2:0
+@q^2014^2:2:0
 @q^2216^0:4:0
 @q^2217^0:4:0
 @q^2251^1:7:1
@@ -1245,7 +1249,7 @@ GoldScout-export 5^6s9monbzjmun^13
 @a^948^144:2,145:1
 @a^949^144:1,164:1
 @a^1258^153:1
-@a^1270^135:2,155:2
+@a^1270^135:4,155:2
 @a^1871^125:1
 @a^1922^273:1
 @a^2044^268:1

@@ -1,7 +1,11 @@
-GoldScout-export 5^w7auhaboly1b^3
+GoldScout-export 5^w7auhaboly1b^5
 506^1^0^18^18^1436^0.3716^0.3183^1^Sergeant Brashclaw^2203:1:1,2592:1:2^
 833^66^0^11^12^1436^0.3651^0.3270^66^Coyote Packleader^2075:1:1,2673:26:26,2698:1:1,3299:23:23,3300:19:19,4409:1:1,4577:1:1,4689:1:1,6513:1:1,9750:1:1,9751:1:1^
 834^88^0^10^11^1436^0.3901^0.2922^88^Coyote^774:1:1,2140:1:1,2673:39:39,2966:1:1,3214:1:1,3299:25:25,3300:12:12,4346:1:1,5635:1:1,6519:1:1,6521:1:1,6555:1:1,8180:1:1,9746:1:1,9760:1:1^
+2552^1^0^30^30^1417^0.7447^0.3698^1^Witherbark Troll^^
+2553^1^0^31^31^1417^0.7447^0.3698^1^Witherbark Shadowcaster^^
+2556^1^0^35^35^1417^0.7447^0.3698^1^Witherbark Headhunter^^
+2563^11^0^32^33^1417^0.6871^0.4723^11^Plains Creeper^878:1:1,1074:2:2,1081:5:5,2251:3:3,3182:1:1,4337:1:1,4585:1:1,5637:1:1,278225:2:2^
 3974^1^0^0^0^0^0.0000^0.0000^0^^7756:1:1^
 3984^1^0^33^33^1416^0.2966^0.3252^1^Nancy Vishas^4306:1:4,5538:1:1^
 4151^2^0^32^33^1441^0.7980^0.6039^2^Saltstone Crystalhide^^
@@ -31,6 +35,9 @@ GoldScout-export 5^w7auhaboly1b^3
 263899^2^0^0^0^0^0.0000^0.0000^0^^262889:1:1^
 @i^774^Malachite
 @i^864^Knightly Longsword of the Monkey
+@i^878^Fist-sized Spinneret
+@i^1074^Hard Spider Leg Tip
+@i^1081^Crisp Spider Meat
 @i^1465^Tigerbane
 @i^1529^Jade
 @i^1708^Sweet Nectar
@@ -39,11 +46,13 @@ GoldScout-export 5^w7auhaboly1b^3
 @i^2075^Priest's Mace of the Gorilla
 @i^2140^Carving Knife of Intellect
 @i^2203^Brashclaw's Chopper
+@i^2251^Gooey Spider Leg
 @i^2592^Wool Cloth
 @i^2673^Coyote Meat
 @i^2698^Recipe: Cooked Crab Claw
 @i^2966^Warrior's Pants
 @i^3010^Fine Sand
+@i^3182^Spider's Silk
 @i^3214^Warrior's Bracers
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
@@ -59,15 +68,18 @@ GoldScout-export 5^w7auhaboly1b^3
 @i^4038^Nightsky Robe
 @i^4059^Glyphed Bracers
 @i^4306^Silk Cloth
+@i^4337^Thick Spider's Silk
 @i^4338^Mageweave Cloth
 @i^4346^Pattern: Heavy Woolen Cloak
 @i^4409^Schematic: Small Seaforium Charge
 @i^4577^Compact Shotgun
+@i^4585^Dripping Spider Mandible
 @i^4636^Strong Iron Lockbox
 @i^4689^Hunting Cloak
 @i^5538^Vorrel's Wedding Ring
 @i^5567^Silver Hook
 @i^5635^Sharp Claw
+@i^5637^Large Fang
 @i^6402^Mail Combat Leggings
 @i^6513^Disciple's Sash
 @i^6519^Pioneer Bracers
@@ -96,8 +108,12 @@ GoldScout-export 5^w7auhaboly1b^3
 @i^274612^Waterlogged Burial Shroud
 @i^274613^Priestess Cloak
 @i^276894^Ancient Gurubashi Idol
+@i^278225^Surgical Spidersilk
 @q^774^2:7:1
 @q^864^2:2:0
+@q^878^0:7:0
+@q^1074^0:15:0
+@q^1081^1:7:1
 @q^1465^2:2:0
 @q^1529^2:7:1
 @q^1708^1:0:0
@@ -106,11 +122,13 @@ GoldScout-export 5^w7auhaboly1b^3
 @q^2075^2:2:0
 @q^2140^2:2:0
 @q^2203^2:2:0
+@q^2251^1:7:1
 @q^2592^1:7:1
 @q^2673^1:7:1
 @q^2698^1:9:0
 @q^2966^2:4:0
 @q^3010^0:15:0
+@q^3182^1:7:1
 @q^3214^1:4:0
 @q^3299^0:15:0
 @q^3300^0:15:0
@@ -126,15 +144,18 @@ GoldScout-export 5^w7auhaboly1b^3
 @q^4038^2:4:0
 @q^4059^2:4:0
 @q^4306^1:7:1
+@q^4337^1:7:1
 @q^4338^1:7:1
 @q^4346^2:9:0
 @q^4409^2:9:0
 @q^4577^2:2:0
+@q^4585^0:15:0
 @q^4636^2:15:0
 @q^4689^1:4:0
 @q^5538^1:12:0
 @q^5567^0:15:0
 @q^5635^1:7:1
+@q^5637^1:7:1
 @q^6402^2:4:0
 @q^6513^1:4:0
 @q^6519^1:4:0
@@ -163,7 +184,9 @@ GoldScout-export 5^w7auhaboly1b^3
 @q^274612^3:4:0
 @q^274613^3:4:0
 @q^276894^1:12:0
+@q^278225^1:12:0
 @m^1416^Alterac Mountains
+@m^1417^Arathi Highlands
 @m^1436^Westfall
 @m^1441^Thousand Needles
 @c^118^
@@ -395,6 +418,10 @@ GoldScout-export 5^w7auhaboly1b^3
 @a^506^127:1
 @a^833^68:1,69:1,88:2,89:1,107:5,108:14,126:7,127:3,128:1,129:1,146:14,147:8,166:6,167:2
 @a^834^68:1,69:2,70:2,87:9,88:2,89:1,90:2,107:16,108:23,109:2,126:2,127:2,128:2,146:11,147:2,148:2,166:5,167:2
+@a^2552^154:1
+@a^2553^154:1
+@a^2556^154:1
+@a^2563^192:2,193:2,194:6,213:1
 @a^3984^125:1
 @a^4151^235:1,256:1
 @a^9377^235:2,236:1,255:1,256:1

@@ -1,5 +1,6 @@
-GoldScout-export 5^j1zwpq81b59k^7
+GoldScout-export 5^j1zwpq81b59k^8
 705^1^0^1^1^1426^0.3217^0.7095^1^Ragged Young Wolf^4865:1:1^
+1087^1^0^42^42^1435^0.7478^0.1367^1^Sawtooth Snapper^770:1:2^
 1125^12^0^5^6^1426^0.4512^0.5734^12^Crag Boar^769:7:7,771:2:2,2886:7:7^
 1128^3^0^5^6^1426^0.4670^0.5045^3^Young Black Bear^4865:2:2,7073:1:1^
 1134^3^0^5^6^1426^0.4232^0.5546^3^Young Wendigo^1376:1:1^
@@ -24,8 +25,13 @@ GoldScout-export 5^j1zwpq81b59k^7
 5426^7^0^44^45^1446^0.4633^0.4327^7^Blisterpaw Hyena^4583:2:2,12037:4:4,12203:1:1,12208:2:2^
 5428^4^0^41^43^1446^0.4941^0.3474^4^Roc^1464:1:1,3404:3:3,5829:1:1,11418:1:1^
 5429^12^0^43^45^1446^0.4599^0.4304^12^Fire Roc^1464:7:7,3404:9:9,5117:1:1,11417:1:1,11418:5:5,12207:6:6,248690:1:1,248692:1:1^
+5615^3^0^43^44^1446^0.5978^0.3964^3^Wastewander Rogue^1645:1:1,3928:1:1^
+5616^4^0^40^41^1446^0.6059^0.2627^4^Wastewander Thief^3927:1:1,4306:1:1,4338:1:1,8483:2:2,264215:1:1^
+5617^2^0^42^43^1446^0.6354^0.3119^2^Wastewander Shadow Mage^4338:1:2,8483:1:1^
+5618^5^0^41^42^1446^0.6387^0.3245^5^Wastewander Bandit^3927:1:1,4338:2:3,4419:1:1,8483:2:2,8623:1:1,248692:1:1^
 7153^2^0^49^49^1448^0.4775^0.9041^2^Deadwood Warrior^4338:1:2^
 7154^2^0^49^49^1448^0.4677^0.8970^2^Deadwood Gardener^4338:1:3^
+7847^1^0^46^46^1446^0.5978^0.4025^1^Caliph Scorpidsting^8723:1:1^
 8667^1^0^44^44^1446^0.5058^0.4225^1^Gusting Vortex^7081:1:1^
 8961^1^0^51^52^1448^0.6225^0.1525^1^Felpaw Ravager^12208:1:1^
 9377^14^0^33^34^1441^0.8210^0.7137^14^Swirling Vortex^7069:2:2^
@@ -78,6 +84,7 @@ GoldScout-export 5^j1zwpq81b59k^7
 @i^3712^Turtle Meat
 @i^3782^Large War Club
 @i^3927^Fine Aged Cheddar
+@i^3928^Superior Healing Potion
 @i^3932^Smotts' Chest
 @i^3939^Crochet Cloak
 @i^3940^Crochet Gloves
@@ -85,6 +92,7 @@ GoldScout-export 5^j1zwpq81b59k^7
 @i^4047^Mistscape Boots
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
+@i^4419^Scroll of Intellect III
 @i^4424^Scroll of Spirit III
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
@@ -111,7 +119,10 @@ GoldScout-export 5^j1zwpq81b59k^7
 @i^7081^Breath of Wind
 @i^7471^Regal Gloves of the Whale
 @i^7973^Big-mouth Clam
+@i^8483^Wastewander Water Pouch
 @i^8494^Parrot Cage (Hyacinth Macaw)
+@i^8623^OOX-17 TN Distress Beacon
+@i^8723^Caliph Scorpidsting's Head
 @i^9260^Volatile Rum
 @i^9288^Field Plate Girdle of the Owl
 @i^11384^Broken Basilisk Teeth
@@ -137,6 +148,7 @@ GoldScout-export 5^j1zwpq81b59k^7
 @i^248692^Waylaid Crate: Expert Ore
 @i^248694^Waylaid Crate: Expert Curiosities
 @i^248708^Waylaid Crate: Expert Fabrics
+@i^264215^Schematic: SAF-T Bomb
 @i^267138^Krol'dok Moulding
 @i^271721^Krol'dok Ogre Key
 @i^271828^Ghostmaw's Fang
@@ -169,6 +181,7 @@ GoldScout-export 5^j1zwpq81b59k^7
 @q^3712^1:7:1
 @q^3782^0:2:0
 @q^3927^1:0:0
+@q^3928^1:0:0
 @q^3932^1:12:0
 @q^3939^0:4:0
 @q^3940^0:4:0
@@ -176,6 +189,7 @@ GoldScout-export 5^j1zwpq81b59k^7
 @q^4047^2:4:0
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4419^1:0:0
 @q^4424^1:0:0
 @q^4555^0:15:0
 @q^4556^0:15:0
@@ -202,7 +216,10 @@ GoldScout-export 5^j1zwpq81b59k^7
 @q^7081^1:7:1
 @q^7471^2:4:0
 @q^7973^1:7:0
+@q^8483^1:12:0
 @q^8494^1:15:0
+@q^8623^2:12:0
+@q^8723^1:12:0
 @q^9260^1:0:0
 @q^9288^2:4:0
 @q^11384^0:15:0
@@ -228,6 +245,7 @@ GoldScout-export 5^j1zwpq81b59k^7
 @q^248692^1:0:1
 @q^248694^1:0:1
 @q^248708^2:0:1
+@q^264215^1:9:0
 @q^267138^1:12:0
 @q^271721^1:13:0
 @q^271828^1:12:0
@@ -238,6 +256,7 @@ GoldScout-export 5^j1zwpq81b59k^7
 @q^287008^3:4:0
 @m^1426^Dun Morogh
 @m^1434^Stranglethorn Vale
+@m^1435^Swamp of Sorrows
 @m^1441^Thousand Needles
 @m^1446^Tanaris
 @m^1448^Felwood
@@ -833,6 +852,7 @@ GoldScout-export 5^j1zwpq81b59k^7
 @c^279985^
 @c^279987^
 @a^705^286:1
+@a^1087^54:1
 @a^1125^208:1,209:2,227:1,228:4,229:2,249:2
 @a^1128^209:3
 @a^1134^208:1,228:2
@@ -857,8 +877,13 @@ GoldScout-export 5^j1zwpq81b59k^7
 @a^5426^149:1,168:2,189:4
 @a^5428^109:1,149:3
 @a^5429^149:3,168:3,169:1,189:5
+@a^5615^151:2,171:1
+@a^5616^91:3,132:1
+@a^5617^112:1,132:1
+@a^5618^132:3,133:2
 @a^7153^349:1,369:1
 @a^7154^349:1,369:1
+@a^7847^171:1
 @a^8667^170:1
 @a^8961^72:1
 @a^9377^235:1,256:3,274:1,276:1,296:1,297:2,316:3,317:1,334:1

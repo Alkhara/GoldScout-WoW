@@ -1,6 +1,8 @@
-GoldScout-export 5^j8t92ky34632^2
-212^1^0^29^29^1431^0.3749^0.7893^1^Splinter Fist Warrior^^
+GoldScout-export 5^j8t92ky34632^3
+212^3^0^29^30^1431^0.3386^0.7182^3^Splinter Fist Warrior^^
 300^1^0^30^30^1431^0.3752^0.7895^1^Zzarc' Vul^^
+570^3^0^28^29^1431^0.1750^0.3337^3^Brain Eater^887:1:1,2592:1:2,4306:1:2,6530:1:1^
+1110^1^0^27^28^1431^0.1751^0.3364^1^Skeletal Raider^^
 1251^2^0^28^29^1431^0.3697^0.8091^2^Splinter Fist Firemonger^^
 4139^2^0^33^34^1441^0.8670^0.7835^2^Scorpid Terror^5794:1:1,12037:1:1,19937:1:1^
 4140^2^0^31^32^1441^0.7521^0.5636^2^Scorpid Reaver^5794:1:1,12037:1:1,213543:1:1^
@@ -10,15 +12,19 @@ GoldScout-export 5^j8t92ky34632^2
 4150^2^0^34^35^1441^0.7817^0.8973^2^Saltstone Gazer^1701:1:1,11386:1:1,14235:1:1^
 4151^4^0^32^33^1441^0.8177^0.8164^4^Saltstone Crystalhide^1701:1:1,1702:2:2,4634:1:1^
 9377^1^0^33^33^1441^0.7355^0.5712^1^Swirling Vortex^7069:1:1^
+@i^887^Pound of Flesh
 @i^1701^Curved Basilisk Claw
 @i^1702^Intact Basilisk Spine
+@i^2592^Wool Cloth
 @i^3712^Turtle Meat
+@i^4306^Silk Cloth
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
 @i^4634^Iron Lockbox
 @i^5794^Salty Scorpid Venom
 @i^5795^Hardened Tortoise Shell
 @i^6308^Raw Bristle Whisker Catfish
+@i^6530^Nightcrawlers
 @i^7069^Elemental Air
 @i^11384^Broken Basilisk Teeth
 @i^11385^Basilisk Scale
@@ -31,15 +37,19 @@ GoldScout-export 5^j8t92ky34632^2
 @i^19937^Small Scorpid Claw
 @i^213543^Scroll: UPDOG
 @i^248688^Waylaid Crate: Journeyman Textiles
+@q^887^0:15:0
 @q^1701^0:15:0
 @q^1702^0:15:0
+@q^2592^1:7:1
 @q^3712^1:7:1
+@q^4306^1:7:1
 @q^4555^0:15:0
 @q^4556^0:15:0
 @q^4634^2:15:0
 @q^5794^1:12:0
 @q^5795^1:12:0
 @q^6308^1:7:1
+@q^6530^1:0:0
 @q^7069^1:7:1
 @q^11384^0:15:0
 @q^11385^0:15:0
@@ -813,8 +823,10 @@ GoldScout-export 5^j8t92ky34632^2
 @c^279981^
 @c^279982^
 @c^286152^
-@a^212^307:1
+@a^212^266:2,307:1
 @a^300^307:1
+@a^570^123:3
+@a^1110^123:1
 @a^1251^307:1,327:1
 @a^4139^316:1,317:1
 @a^4140^215:1,235:1

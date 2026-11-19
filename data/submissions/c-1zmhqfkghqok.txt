@@ -1,4 +1,4 @@
-GoldScout-export 5^1zmhqfkghqok^3
+GoldScout-export 5^1zmhqfkghqok^4
 92^3^0^39^40^1418^0.1460^0.3405^3^Rock Elemental^4553:1:1,4627:3:3,4784:1:1,7912:3:6^
 589^1^0^15^15^1436^0.4542^0.7033^1^Defias Pillager^2455:1:1^
 590^2^0^13^14^1436^0.4389^0.7033^2^Defias Looter^^
@@ -35,12 +35,19 @@ GoldScout-export 5^1zmhqfkghqok^3
 4417^7^0^0^0^0^0.0000^0.0000^0^^1179:1:1,2589:4:13,2592:1:3,7997:1:1^
 4418^1^0^0^0^0^0.0000^0.0000^0^^2592:1:2^
 5425^1^0^41^41^1446^0.5437^0.2567^1^Starving Blisterpaw^4583:1:1^
+256383^12^0^35^36^2548^0.4559^0.7989^12^Meadowsbrook Farmhand^4306:2:5^
+256433^13^0^32^33^2548^0.4021^0.6043^13^Woodworker^4306:2:3^
+256434^20^0^37^38^2548^0.4063^0.5958^20^Turner's Mill Lumberjack^4306:6:10,4338:1:1,263972:10:10^
+258573^1^0^36^37^2548^0.4947^0.7481^1^Mudfin Oracle^5524:1:1,17058:1:1^
+258574^4^0^37^38^2548^0.4609^0.6147^4^Mudfin Warrior^4603:1:2,5524:1:1,17058:1:1^
+259046^1^0^38^39^2548^0.5852^0.4226^1^Freshwater Crocolisk^^
 259054^4^0^38^39^2548^0.6024^0.5319^4^Wildplains Patriarch^1688:3:3,5637:1:1,266888:3:3^
 259055^6^0^38^39^2548^0.5967^0.5328^6^Wildplains Huntress^1688:3:3,7445:1:1,266888:3:3^
 263307^10^0^37^38^2548^0.6262^0.5882^10^Glade Viper^6444:1:1,6826:8:8,271776:4:4^
 263315^1^0^41^41^2548^0.5956^0.5365^1^Ombassa^281052:1:1^
 263343^19^0^37^38^2548^0.6628^0.5762^19^Low Plains Buzzard^1464:5:5,3404:7:7,5636:1:1,5829:3:3,11418:1:1,12037:8:8,271793:6:6^
 263348^2^0^37^38^2548^0.6415^0.5132^2^Roving Tallstrider^5829:1:1,11416:1:1,271778:1:1^
+270664^1^0^37^38^2548^0.3999^0.5787^1^Venomweb Spitter^4337:1:1,4585:1:1^
 @i^414^Dalaran Sharp
 @i^814^Flask of Oil
 @i^858^Lesser Healing Potion
@@ -87,6 +94,7 @@ GoldScout-export 5^1zmhqfkghqok^3
 @i^3812^Double Mail Gloves
 @i^3864^Citrine
 @i^4306^Silk Cloth
+@i^4337^Thick Spider's Silk
 @i^4338^Mageweave Cloth
 @i^4364^Coarse Blasting Powder
 @i^4552^Smooth Stone Chip
@@ -94,6 +102,7 @@ GoldScout-export 5^1zmhqfkghqok^3
 @i^4576^Light Bow
 @i^4582^Soft Bushy Tail
 @i^4583^Thick Furry Mane
+@i^4585^Dripping Spider Mandible
 @i^4603^Raw Spotted Yellowtail
 @i^4626^Small Stone Shard
 @i^4627^Large Stone Slab
@@ -101,6 +110,7 @@ GoldScout-export 5^1zmhqfkghqok^3
 @i^5116^Long Tail Feather
 @i^5194^Taskmaster Axe
 @i^5523^Small Barnacled Clam
+@i^5524^Thick-shelled Clam
 @i^5636^Delicate Feather
 @i^5637^Large Fang
 @i^5797^Indurium Flake
@@ -136,8 +146,10 @@ GoldScout-export 5^1zmhqfkghqok^3
 @i^13422^Stonescale Eel
 @i^13754^Raw Glossy Mightfish
 @i^15211^Militant Shortsword of the Monkey
+@i^17058^Fish Oil
 @i^211855^Scroll: STHENIC LUNATE
 @i^252773^Pattern: Defender's Leather Armor
+@i^263972^Woodworker's Axe
 @i^266888^Prized Lion Hide
 @i^271776^Glade Viper Venom
 @i^271778^Intact Tallstrider Beak
@@ -192,6 +204,7 @@ GoldScout-export 5^1zmhqfkghqok^3
 @q^3812^0:4:0
 @q^3864^2:7:1
 @q^4306^1:7:1
+@q^4337^1:7:1
 @q^4338^1:7:1
 @q^4364^1:7:1
 @q^4552^0:15:0
@@ -199,6 +212,7 @@ GoldScout-export 5^1zmhqfkghqok^3
 @q^4576^2:2:0
 @q^4582^1:12:0
 @q^4583^0:15:0
+@q^4585^0:15:0
 @q^4603^1:7:1
 @q^4626^1:12:0
 @q^4627^1:12:0
@@ -206,6 +220,7 @@ GoldScout-export 5^1zmhqfkghqok^3
 @q^5116^1:7:1
 @q^5194^3:2:0
 @q^5523^1:7:0
+@q^5524^1:7:0
 @q^5636^0:15:0
 @q^5637^1:7:1
 @q^5797^1:12:0
@@ -241,8 +256,10 @@ GoldScout-export 5^1zmhqfkghqok^3
 @q^13422^1:7:1
 @q^13754^1:7:1
 @q^15211^2:2:0
+@q^17058^1:15:0
 @q^211855^1:0:0
 @q^252773^3:9:0
+@q^263972^1:12:0
 @q^266888^1:12:0
 @q^271776^1:12:0
 @q^271778^1:12:0
@@ -998,12 +1015,19 @@ GoldScout-export 5^1zmhqfkghqok^3
 @a^2919^185:1
 @a^3560^269:3,289:4,290:1
 @a^5425^110:1
+@a^256383^308:2,309:6,328:2,329:2
+@a^256433^227:1,228:5,248:6,267:1
+@a^256434^227:4,228:9,247:2,248:5
+@a^258573^289:1
+@a^258574^228:3,290:1
+@a^259046^171:1
 @a^259054^211:1,212:3
 @a^259055^211:6
 @a^263307^231:1,232:8,252:1
 @a^263315^211:1
 @a^263343^193:1,212:1,213:7,232:1,233:2,252:1,253:4,273:2
 @a^263348^192:1,213:1
+@a^270664^227:1
 @f^1434^0^2^184^6359:2:2^43:2
 @f^1446^0^25^184^4603:7:7,6359:3:3,6362:2:2,13422:7:14,13754:6:6^93:25
 @l^0^enUS

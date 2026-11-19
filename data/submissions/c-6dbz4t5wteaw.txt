@@ -1,10 +1,20 @@
-GoldScout-export 5^6dbz4t5wteaw^10
+GoldScout-export 5^6dbz4t5wteaw^12
 1529^3^0^9^10^1420^0.7669^0.6214^3^Bleeding Horror^^
 1532^3^0^10^11^1420^0.7671^0.6101^3^Wandering Spirit^774:1:1^
 1547^3^0^5^6^1420^0.6619^0.6302^3^Decrepit Darkhound^3300:1:1,278243:3:3^
-1548^1^0^8^8^1420^0.6710^0.5804^1^Cursed Darkhound^278243:1:1^
+1548^1^0^7^8^1420^0.6710^0.5804^1^Cursed Darkhound^278243:1:1^
 1553^6^0^6^7^1420^0.6675^0.5846^6^Greater Duskbat^6296:2:2,7073:2:2,12223:2:2,278242:4:4^
 1554^2^0^8^9^1420^0.8356^0.4290^2^Vampiric Duskbat^6296:1:1,12223:2:2^
+1769^3^0^10^11^1421^0.4961^0.3397^3^Moonrage Whitescalp^1730:1:1^
+1772^3^0^11^12^1421^0.4462^0.2087^3^Rot Hide Gladerunner^2589:2:5,4605:1:1^
+1778^5^0^11^12^1421^0.4944^0.2218^5^Ferocious Grizzled Bear^3169:1:1,3173:4:4,3253:3:3^
+1779^3^0^12^13^1421^0.4944^0.2236^3^Moonrage Glutton^9745:1:1^
+1780^5^0^12^13^1421^0.3542^0.1513^5^Moss Stalker^1475:1:1,3167:1:1,3174:4:4,5465:4:7^
+1781^7^0^13^14^1421^0.3525^0.0995^7^Mist Creeper^3167:2:2,3174:1:1,3254:4:4,5465:5:8,211785:1:1^
+1782^1^0^13^13^1421^0.4570^0.2930^1^Moonrage Darksoul^^
+1797^11^0^12^13^1421^0.4292^0.1749^11^Giant Grizzled Bear^2940:1:1,3169:2:2,3170:3:3,3173:5:5,3192:1:1,3253:3:3,9755:1:1,11406:1:1^
+1866^3^0^11^12^1421^0.5373^0.1481^3^Ravenclaw Slave^2589:1:1^
+1983^1^0^14^14^1421^0.4545^0.2165^1^Nightlash^2589:1:1,3622:1:1^
 2959^2^0^7^8^1412^0.4487^0.4726^2^Prairie Stalker^2672:2:2^
 3035^1^0^8^8^1412^0.4259^0.4471^1^Flatland Cougar^4563:1:1^
 3100^2^0^8^9^1411^0.4869^0.1459^2^Elder Mottled Boar^769:1:1,3171:2:2^
@@ -67,16 +77,28 @@ GoldScout-export 5^6dbz4t5wteaw^10
 @i^1415^Carpenter's Mallet
 @i^1422^Worn Leather Gloves
 @i^1430^Patchwork Gloves
+@i^1475^Small Venom Sac
 @i^1502^Warped Leather Belt
 @i^1503^Warped Leather Boots
 @i^1513^Old Greatsword
 @i^1688^Long Soft Tail
+@i^1730^Worn Mail Belt
 @i^1733^Worn Cloak
 @i^2589^Linen Cloth
 @i^2644^Loose Chain Cloak
 @i^2672^Stringy Wolf Meat
+@i^2940^Bloody Bear Paw
+@i^3167^Thick Spider Hair
+@i^3169^Chipped Bear Tooth
+@i^3170^Large Bear Tooth
 @i^3171^Broken Boar Tusk
+@i^3173^Bear Meat
+@i^3174^Spider Ichor
+@i^3192^Short Bastard Sword of the Whale
+@i^3253^Grizzled Bear Heart
+@i^3254^Skittering Blood
 @i^3300^Rabbit's Foot
+@i^3622^Essence of Nightlash
 @i^3671^Lifeless Skull
 @i^3795^Interlaced Cloak
 @i^3804^Hardened Leather Gloves
@@ -107,6 +129,7 @@ GoldScout-export 5^6dbz4t5wteaw^10
 @i^4903^Eye of Burning Shadow
 @i^5429^A Pretty Rock
 @i^5431^Empty Hip Flask
+@i^5465^Small Spider Leg
 @i^5466^Scorpid Stinger
 @i^5572^Small Green Pouch
 @i^6296^Patch of Bat Hair
@@ -115,12 +138,16 @@ GoldScout-export 5^6dbz4t5wteaw^10
 @i^7073^Broken Fang
 @i^7544^Champion's Cape of the Champion
 @i^8746^Interlaced Cowl
+@i^9745^Simple Cape
+@i^9755^Nomad Gloves
 @i^10604^Schematic: Mithril Heavy-bore Rifle
+@i^11406^Rotting Bear Carcass
 @i^12223^Meaty Bat Wing
 @i^14087^Beaded Cuffs
 @i^14088^Beaded Cloak
 @i^14544^Lieutenant's Insignia
 @i^15226^Giant Club of Agility
+@i^211785^Scroll: CWAL
 @i^213544^Scroll: TOPAZ YORAK
 @i^213546^Scroll: SHOOBEEDOOP
 @i^248693^Waylaid Crate: Expert Textiles
@@ -156,16 +183,28 @@ GoldScout-export 5^6dbz4t5wteaw^10
 @q^1415^0:2:0
 @q^1422^0:4:0
 @q^1430^0:4:0
+@q^1475^1:7:1
 @q^1502^0:4:0
 @q^1503^0:4:0
 @q^1513^0:2:0
 @q^1688^0:15:0
+@q^1730^0:4:0
 @q^1733^0:4:0
 @q^2589^1:7:1
 @q^2644^0:4:0
 @q^2672^1:7:1
+@q^2940^0:15:0
+@q^3167^0:15:0
+@q^3169^0:15:0
+@q^3170^0:15:0
 @q^3171^0:15:0
+@q^3173^1:7:1
+@q^3174^1:7:1
+@q^3192^2:2:0
+@q^3253^1:12:0
+@q^3254^1:12:0
 @q^3300^0:15:0
+@q^3622^1:12:0
 @q^3671^0:15:0
 @q^3795^0:4:0
 @q^3804^0:4:0
@@ -196,6 +235,7 @@ GoldScout-export 5^6dbz4t5wteaw^10
 @q^4903^1:12:0
 @q^5429^0:15:0
 @q^5431^0:15:0
+@q^5465^1:7:1
 @q^5466^1:7:1
 @q^5572^1:1:0
 @q^6296^0:15:0
@@ -204,12 +244,16 @@ GoldScout-export 5^6dbz4t5wteaw^10
 @q^7073^0:15:0
 @q^7544^2:4:0
 @q^8746^0:4:0
+@q^9745^1:4:0
+@q^9755^1:4:0
 @q^10604^2:9:0
+@q^11406^0:15:0
 @q^12223^1:7:1
 @q^14087^1:4:0
 @q^14088^1:4:0
 @q^14544^1:12:0
 @q^15226^2:2:0
+@q^211785^1:0:0
 @q^213544^1:0:0
 @q^213546^1:0:0
 @q^248693^1:0:1
@@ -239,6 +283,7 @@ GoldScout-export 5^6dbz4t5wteaw^10
 @m^1412^Mulgore
 @m^1413^The Barrens
 @m^1420^Tirisfal Glades
+@m^1421^Silverpine Forest
 @m^2521^Zephras Isle
 @m^2548^Riverglades
 @c^2300^
@@ -2103,6 +2148,16 @@ GoldScout-export 5^6dbz4t5wteaw^10
 @a^1548^233:1
 @a^1553^213:1,232:1,233:2,253:2
 @a^1554^176:2
+@a^1769^90:1,149:2
+@a^1772^68:2,89:1
+@a^1778^69:3,90:1,129:1
+@a^1779^69:1,70:1,109:1
+@a^1780^47:3,66:1,67:1
+@a^1781^26:1,27:3,47:3
+@a^1782^109:1
+@a^1797^47:1,66:1,67:1,68:5,69:2,88:1
+@a^1866^50:2,70:1
+@a^1983^89:1
 @a^2959^168:1,209:1
 @a^3035^168:1
 @a^3100^51:1,68:1

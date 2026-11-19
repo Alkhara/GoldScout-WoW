@@ -1,4 +1,4 @@
-GoldScout-export 5^j1hable3mato^10
+GoldScout-export 5^j1hable3mato^11
 2554^11^0^32^33^1417^0.7132^0.6082^11^Witherbark Axe Thrower^3771:2:2,3813:1:1,4306:6:6,216483:1:1^
 2555^8^0^33^34^1417^0.7156^0.6370^8^Witherbark Witch Doctor^4306:2:4^
 2556^10^0^34^35^1417^0.7145^0.6490^10^Witherbark Headhunter^1710:1:1,2592:1:1,3771:1:1,3816:1:1,4306:4:7^
@@ -20,6 +20,9 @@ GoldScout-export 5^j1hable3mato^10
 4151^2^0^32^33^1441^0.7357^0.8163^2^Saltstone Crystalhide^1701:1:1,11386:1:1^
 4154^5^0^30^32^1441^0.7568^0.6269^5^Salt Flats Scavenger^5114:2:2,5116:1:1,5848:5:5,11416:2:2,12037:1:1,17056:2:2^
 4158^1^0^32^34^1441^0.6874^0.8894^1^Salt Flats Vulture^5116:1:1,5848:1:1^
+4280^3^0^29^30^1420^0.8192^0.3315^3^Scarlet Preserver^4306:1:4,5805:3:3^
+4281^12^0^29^30^1420^0.8334^0.3268^12^Scarlet Scout^1707:1:1,4338:1:1,5805:12:12^
+4282^5^0^29^30^1420^0.8290^0.3381^5^Scarlet Magician^1803:1:1,4306:3:5,5805:5:5^
 4420^1^0^0^0^0^0.0000^0.0000^0^^274161:1:1^
 4421^1^0^0^0^0^0.0000^0.0000^0^^5793:1:1,6692:1:1,15541:1:1,17008:1:1^
 4424^1^0^0^0^0^0.0000^0.0000^0^^5543:1:1,252816:1:1,274159:1:1^
@@ -102,6 +105,7 @@ GoldScout-export 5^j1hable3mato^10
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
 @i^1711^Scroll of Stamina II
+@i^1803^Tough Leather Belt
 @i^1805^Tough Leather Bracers
 @i^1822^Cedar Walking Stick
 @i^1830^Long Bastard Sword
@@ -157,6 +161,7 @@ GoldScout-export 5^j1hable3mato^10
 @i^5793^Razorflank's Heart
 @i^5795^Hardened Tortoise Shell
 @i^5801^Kraul Guano
+@i^5805^Heart of Zeal
 @i^5848^Hollow Vulture Bone
 @i^5853^Intact Silithid Carapace
 @i^6066^Khan Dez'hepah's Head
@@ -221,6 +226,7 @@ GoldScout-export 5^j1hable3mato^10
 @q^1708^1:0:0
 @q^1710^1:0:0
 @q^1711^1:0:0
+@q^1803^0:4:0
 @q^1805^0:4:0
 @q^1822^0:2:0
 @q^1830^0:2:0
@@ -276,6 +282,7 @@ GoldScout-export 5^j1hable3mato^10
 @q^5793^1:12:0
 @q^5795^1:12:0
 @q^5801^1:12:0
+@q^5805^1:12:0
 @q^5848^1:12:0
 @q^5853^1:12:0
 @q^6066^1:12:0
@@ -329,6 +336,7 @@ GoldScout-export 5^j1hable3mato^10
 @m^1412^Mulgore
 @m^1413^The Barrens
 @m^1417^Arathi Highlands
+@m^1420^Tirisfal Glades
 @m^1441^Thousand Needles
 @m^1443^Desolace
 @c^118^
@@ -855,6 +863,9 @@ GoldScout-export 5^j1hable3mato^10
 @a^4151^314:1,355:1
 @a^4154^233:1,254:1,255:1,274:1,277:1
 @a^4158^353:1
+@a^4280^136:2,156:1
+@a^4281^116:4,136:2,137:1,156:5
+@a^4282^136:2,156:3
 @a^4632^194:1
 @a^4634^174:2,194:6
 @a^4635^174:4,194:7,214:1

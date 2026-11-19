@@ -1,4 +1,10 @@
-GoldScout-export 5^6m4tv8a5tcr3^7
+GoldScout-export 5^6m4tv8a5tcr3^8
+40^2^0^6^7^1429^0.6113^0.5141^2^Mineur kobold^^
+95^1^0^11^12^1436^0.4985^0.1968^1^Contrebandière défias^^
+114^5^0^14^15^1436^0.5135^0.2328^5^Gardien des moissons^732:2:2,814:3:3,1274:3:3,1503:1:1,6379:1:1,248702:1:1,255007:1:1^
+454^1^0^12^12^1436^0.5100^0.2033^1^Jeune Broche-tripes^731:1:1,769:1:1,3171:1:1^
+480^4^0^9^10^1436^0.5667^0.2074^4^Golem des moissons rouillé^732:2:2,814:1:1,1274:1:1,1427:1:1,2774:1:1,255007:1:1,255155:1:1^
+504^1^0^12^13^1436^0.4941^0.1912^1^Trappeuse défias^2589:1:2^
 1111^1^0^21^22^1437^0.5387^0.6511^1^Traqueuse sanguine^1081:1:1^
 2244^5^0^21^22^1424^0.7943^0.4399^5^Mage de l'ombre du Syndicat^929:1:1,2592:3:5^
 2260^10^0^21^22^1424^0.7962^0.4396^10^Voleur du Syndicat^935:1:1,1746:1:1,2589:1:2,2592:3:5,2765:1:1,2985:1:1^
@@ -105,7 +111,11 @@ GoldScout-export 5^6m4tv8a5tcr3^7
 275045^3^0^0^0^0^0.0000^0.0000^0^^2084:2:2^
 275046^2^0^0^0^0^0.0000^0.0000^0^^284844:2:2^
 @i^730^Oeil de murloc
+@i^731^Groin de Broche-tripes
+@i^732^Okra
+@i^769^Morceau de viande de sanglier
 @i^770^Croc pointu de crocilisque
+@i^814^Flasque d'huile
 @i^858^Potion de soins inférieure
 @i^888^Gants de bataille nagas
 @i^929^Potion de soins
@@ -115,9 +125,12 @@ GoldScout-export 5^6m4tv8a5tcr3^7
 @i^1081^Chair croustillante d'araignée
 @i^1205^Jus de melon
 @i^1210^Oeil ténébreux
+@i^1274^Houblon
 @i^1288^Grande glande à venin
+@i^1427^Bottes en patchwork
 @i^1468^Aileron de murloc
 @i^1478^Parchemin de Protection II
+@i^1503^Bottes déformées en cuir
 @i^1697^Dent de raptor
 @i^1712^Parchemin d'Esprit II
 @i^1743^Pantalon en mailles entrelacées
@@ -156,6 +169,7 @@ GoldScout-export 5^6m4tv8a5tcr3^7
 @i^2675^Pince de clampant
 @i^2765^Couteau de chasse
 @i^2766^Stylet rapide
+@i^2774^Tromblon couvert de rouille
 @i^2782^Arc courbe mal traité
 @i^2785^Arc à double courbure rigide
 @i^2819^Dague croisée de canalisation
@@ -163,6 +177,7 @@ GoldScout-export 5^6m4tv8a5tcr3^7
 @i^2940^Patte d'ours sanglante
 @i^2985^Cuirasse en cuir gravé
 @i^3066^Gants éclatants
+@i^3171^Défense de sanglier cassée
 @i^3180^Ecaille de raptor tacheté
 @i^3182^Soie d'araignée
 @i^3210^Hache de guerre brutale de la bête
@@ -215,6 +230,7 @@ GoldScout-export 5^6m4tv8a5tcr3^7
 @i^5785^Ecailles de murloc épaisses
 @i^5881^Tête de Kelris
 @i^6308^Poisson-chat moustachu cru
+@i^6379^Ceinture en cuir gravé
 @i^6598^Targe de derviche de sorcellerie
 @i^6611^Echarpe de sage de l'aigle
 @i^6613^Brassards de sage d'endurance
@@ -249,9 +265,12 @@ GoldScout-export 5^6m4tv8a5tcr3^7
 @i^248683^Caisse détournée : minerai d'apprenti
 @i^248688^Caisse détournée : textiles de compagnon
 @i^248689^Caisse détournée : curiosités de compagnon
+@i^248702^Caisse détournée : étoffes d'apprenti
 @i^248707^Caisse détournée : composants de compagnon
 @i^251335^Plans : bottes en argent fin
 @i^251349^Plans : jambières de croisé en anneaux
+@i^255007^Isoressort de golem
+@i^255155^Assemblage autocognitif de précision
 @i^270866^Relique des Titans
 @i^271100^Viande de raptor des fourrés
 @i^273024^Mules d'œiluisant
@@ -265,7 +284,11 @@ GoldScout-export 5^6m4tv8a5tcr3^7
 @i^279186^Cœur palpitant de Cœur-d'orage
 @i^284844^Couperet gueule-de-dragon
 @q^730^1:7:1
+@q^731^1:7:1
+@q^732^1:12:0
+@q^769^1:7:1
 @q^770^0:15:0
+@q^814^1:7:1
 @q^858^1:0:0
 @q^888^3:4:0
 @q^929^1:0:0
@@ -275,9 +298,12 @@ GoldScout-export 5^6m4tv8a5tcr3^7
 @q^1081^1:7:1
 @q^1205^1:0:0
 @q^1210^2:7:1
+@q^1274^1:12:0
 @q^1288^1:7:1
+@q^1427^0:4:0
 @q^1468^1:7:1
 @q^1478^1:0:0
+@q^1503^0:4:0
 @q^1697^0:15:0
 @q^1712^1:0:0
 @q^1743^0:4:0
@@ -316,6 +342,7 @@ GoldScout-export 5^6m4tv8a5tcr3^7
 @q^2675^1:7:1
 @q^2765^0:2:0
 @q^2766^0:2:0
+@q^2774^0:2:0
 @q^2782^0:2:0
 @q^2785^0:2:0
 @q^2819^2:2:0
@@ -323,6 +350,7 @@ GoldScout-export 5^6m4tv8a5tcr3^7
 @q^2940^0:15:0
 @q^2985^2:4:0
 @q^3066^2:4:0
+@q^3171^0:15:0
 @q^3180^0:15:0
 @q^3182^1:7:1
 @q^3210^2:2:0
@@ -375,6 +403,7 @@ GoldScout-export 5^6m4tv8a5tcr3^7
 @q^5785^1:7:1
 @q^5881^1:12:0
 @q^6308^1:7:1
+@q^6379^2:4:0
 @q^6598^2:4:0
 @q^6611^2:4:0
 @q^6613^2:4:0
@@ -409,9 +438,12 @@ GoldScout-export 5^6m4tv8a5tcr3^7
 @q^248683^1:0:1
 @q^248688^1:0:1
 @q^248689^1:0:1
+@q^248702^2:0:1
 @q^248707^2:0:1
 @q^251335^2:9:0
 @q^251349^3:9:0
+@q^255007^1:7:1
+@q^255155^1:12:0
 @q^270866^1:12:0
 @q^271100^1:12:0
 @q^273024^3:4:0
@@ -426,6 +458,8 @@ GoldScout-export 5^6m4tv8a5tcr3^7
 @q^284844^1:12:0
 @m^1413^Les Tarides
 @m^1424^Contreforts de Hautebrande
+@m^1429^Forêt d'Elwynn
+@m^1436^Marche de l'Ouest
 @m^1437^Les Paluns
 @m^1440^Orneval
 @m^1441^Mille pointes
@@ -1715,6 +1749,12 @@ GoldScout-export 5^6m4tv8a5tcr3^7
 @c^285280^
 @c^285281^
 @c^286152^
+@a^40^212:2
+@a^95^69:1
+@a^114^89:1,90:3,130:1
+@a^454^90:1
+@a^480^71:2,90:1,91:1
+@a^504^69:1
 @a^1111^270:1
 @a^2244^175:3,196:2
 @a^2260^175:3,176:3,195:2,196:2
