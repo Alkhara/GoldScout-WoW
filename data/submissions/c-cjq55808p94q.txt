@@ -1,7 +1,10 @@
-GoldScout-export 5^cjq55808p94q^5
-500^1^0^13^13^1436^0.3724^0.2803^1^Riverpaw Scout^^
-833^5^0^11^12^1436^0.3857^0.2755^5^Coyote Packleader^2673:1:1,3299:1:1,3300:1:1,9742:1:1^
-834^6^0^10^11^1436^0.4120^0.2842^6^Coyote^2673:4:4,3300:1:1^
+GoldScout-export 5^cjq55808p94q^6
+123^2^0^13^14^1436^0.3829^0.2874^2^Riverpaw Mongrel^2455:1:1^
+157^1^0^14^14^1436^0.4129^0.3168^1^Goretusk^769:1:1,2677:1:1^
+454^1^0^12^13^1436^0.4138^0.3017^1^Young Goretusk^723:1:1,731:1:1,771:1:1^
+500^1^0^12^13^1436^0.3724^0.2803^1^Riverpaw Scout^^
+833^27^0^11^12^1436^0.4014^0.2647^27^Coyote Packleader^2673:4:4,2975:1:1,3299:8:8,3300:6:6,9742:1:1,9745:1:1^
+834^40^0^10^11^1436^0.4090^0.2735^40^Coyote^774:2:2,2673:19:19,2960:1:1,3299:10:10,3300:4:4,9747:1:1^
 2344^12^0^28^29^1424^0.6954^0.7577^12^Dun Garok Mountaineer^1758:1:1,1806:1:1,2592:2:5,4306:3:4,4542:1:1,11984:1:1^
 2345^7^0^29^30^1424^0.7017^0.7562^7^Dun Garok Rifleman^1205:1:1,1206:1:1,2592:1:3,3041:1:1,4050:1:1,4306:1:2,262888:1:1^
 2346^2^0^29^30^1424^0.7041^0.7645^2^Dun Garok Priest^2592:1:1,4306:1:2^
@@ -23,6 +26,11 @@ GoldScout-export 5^cjq55808p94q^5
 11560^4^0^38^39^2652^0.3164^0.2947^4^Centaur Spectre^15849:4:4^
 11561^1^0^37^39^2652^0.2370^0.2578^1^Undead Ravager^^
 264850^1^0^35^35^1417^0.4865^0.5579^1^Hawk^^
+@i^723^Goretusk Liver
+@i^731^Goretusk Snout
+@i^769^Chunk of Boar Meat
+@i^771^Chipped Boar Tusk
+@i^774^Malachite
 @i^878^Fist-sized Spinneret
 @i^1074^Hard Spider Leg Tip
 @i^1081^Crisp Spider Meat
@@ -33,8 +41,12 @@ GoldScout-export 5^cjq55808p94q^5
 @i^1758^Reinforced Chain Gloves
 @i^1806^Tough Cloak
 @i^2251^Gooey Spider Leg
+@i^2455^Minor Mana Potion
 @i^2592^Wool Cloth
 @i^2673^Coyote Meat
+@i^2677^Boar Ribs
+@i^2960^Journeyman's Gloves
+@i^2975^Hunting Boots
 @i^3041^Mage-Eye Blunderbuss
 @i^3182^Spider's Silk
 @i^3299^Fractured Canine
@@ -66,6 +78,8 @@ GoldScout-export 5^cjq55808p94q^5
 @i^6986^Crimson Lotus
 @i^8146^Wicked Claw
 @i^9742^Simple Cord
+@i^9745^Simple Cape
+@i^9747^Simple Britches of the Whale
 @i^9898^Jazeraint Cloak of the Bandit
 @i^11416^Delicate Ribcage
 @i^11984^Cobalt Ring of the Eagle
@@ -77,6 +91,11 @@ GoldScout-export 5^cjq55808p94q^5
 @i^213526^Hybrid Haunch
 @i^262888^Sealed Journeyman's Writ
 @i^278225^Surgical Spidersilk
+@q^723^1:7:1
+@q^731^1:7:1
+@q^769^1:7:1
+@q^771^0:15:0
+@q^774^2:7:1
 @q^878^0:7:0
 @q^1074^0:15:0
 @q^1081^1:7:1
@@ -87,8 +106,12 @@ GoldScout-export 5^cjq55808p94q^5
 @q^1758^0:4:0
 @q^1806^0:4:0
 @q^2251^1:7:1
+@q^2455^1:0:0
 @q^2592^1:7:1
 @q^2673^1:7:1
+@q^2677^1:7:1
+@q^2960^1:4:0
+@q^2975^1:4:0
 @q^3041^2:2:0
 @q^3182^1:7:1
 @q^3299^0:15:0
@@ -120,6 +143,8 @@ GoldScout-export 5^cjq55808p94q^5
 @q^6986^0:15:0
 @q^8146^1:7:1
 @q^9742^1:4:0
+@q^9745^1:4:0
+@q^9747^2:4:0
 @q^9898^2:4:0
 @q^11416^0:15:0
 @q^11984^2:4:0
@@ -306,9 +331,12 @@ GoldScout-export 5^cjq55808p94q^5
 @c^279981^
 @c^279982^
 @c^286152^
+@a^123^107:2
+@a^157^128:1
+@a^454^128:1
 @a^500^107:1
-@a^833^88:1,107:3,108:1
-@a^834^87:1,88:1,107:2,108:1,190:1
+@a^833^87:1,88:3,107:4,108:18,127:1
+@a^834^87:3,88:4,107:5,108:23,128:3,148:1,190:1
 @a^2344^293:3,294:2,313:5,314:2
 @a^2345^293:1,294:1,313:3,314:2
 @a^2346^294:1,313:1

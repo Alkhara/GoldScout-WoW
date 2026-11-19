@@ -1,4 +1,4 @@
-GoldScout-export 5^seedhykaa5zj^7
+GoldScout-export 5^seedhykaa5zj^8
 588^10^0^34^35^1434^0.2468^0.1181^10^Bloodscalp Scout^1519:5:5,2748:1:1,4306:2:3^
 595^12^0^34^35^1434^0.2495^0.1147^12^Bloodscalp Hunter^1519:7:7,2735:1:1,2738:1:1,2748:1:1,3771:2:2,4306:4:5,5009:1:1,277957:1:1^
 597^3^0^36^37^1434^0.2352^0.1037^3^Bloodscalp Berserker^1519:1:1,1710:1:1,2751:1:1,4306:1:1^
@@ -76,12 +76,15 @@ GoldScout-export 5^seedhykaa5zj^7
 4542^1^0^0^0^0^0.0000^0.0000^0^^19509:1:1^
 4543^1^0^0^0^0^0.0000^0.0000^0^^4306:1:3,7685:1:1^
 4623^5^0^0^0^0^0.0000^0.0000^0^^2592:1:3,4306:2:4^
+4668^1^0^38^38^1443^0.7993^0.7782^1^Burning Blade Summoner^4424:1:1,7291:1:1^
+4685^2^0^40^40^1443^0.7834^0.7641^2^Ley Hunter^4582:1:1,4583:1:1^
 6168^1^0^0^0^0^0.0000^0.0000^0^^274152:1:1^
 6426^1^0^0^0^0^0.0000^0.0000^0^^9834:1:1^
 6487^1^0^0^0^0^0.0000^0.0000^0^^274293:1:1,274294:1:1^
 6575^6^0^0^0^0^0.0000^0.0000^0^^1710:1:1,4306:1:1,10289:1:1,211855:1:1^
 11559^3^0^39^40^2652^0.2841^0.2617^3^Outcast Necromancer^260347:2:2^
 11561^6^0^37^42^2652^0.3097^0.2493^5^Undead Ravager^4306:2:6,4338:1:1,4421:1:1^
+12922^1^0^38^38^1443^0.7955^0.7748^1^Imp Minion^^
 @i^770^Pointy Crocolisk Tooth
 @i^863^Gloom Reaper of the Bandit
 @i^1205^Melon Juice
@@ -137,8 +140,10 @@ GoldScout-export 5^seedhykaa5zj^7
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4421^Scroll of Protection III
+@i^4424^Scroll of Spirit III
 @i^4482^Sealed Folder
 @i^4582^Soft Bushy Tail
+@i^4583^Thick Furry Mane
 @i^4634^Iron Lockbox
 @i^5009^Mindbender Loop
 @i^5524^Thick-shelled Clam
@@ -153,6 +158,7 @@ GoldScout-export 5^seedhykaa5zj^7
 @i^6694^Heart of Agamaggan
 @i^7072^Naga Scale
 @i^7273^Witherbark Totem Stick
+@i^7291^Infernal Orb
 @i^7417^Phalanx Boots of the Eagle
 @i^7420^Phalanx Headguard of Stamina
 @i^7685^Orb of the Forgotten Seer
@@ -244,8 +250,10 @@ GoldScout-export 5^seedhykaa5zj^7
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4421^1:0:0
+@q^4424^1:0:0
 @q^4482^1:12:0
 @q^4582^1:12:0
+@q^4583^0:15:0
 @q^4634^2:15:0
 @q^5009^2:4:0
 @q^5524^1:7:0
@@ -260,6 +268,7 @@ GoldScout-export 5^seedhykaa5zj^7
 @q^6694^3:4:0
 @q^7072^1:7:1
 @q^7273^1:12:0
+@q^7291^1:12:0
 @q^7417^2:4:0
 @q^7420^2:4:0
 @q^7685^3:4:0
@@ -300,6 +309,7 @@ GoldScout-export 5^seedhykaa5zj^7
 @m^1420^Tirisfal Glades
 @m^1424^Hillsbrad Foothills
 @m^1434^Stranglethorn Vale
+@m^1443^Desolace
 @m^1445^Dustwallow Marsh
 @m^2652^Shen'dralas
 @c^118^
@@ -1052,6 +1062,9 @@ GoldScout-export 5^seedhykaa5zj^7
 @a^4284^137:1
 @a^4387^188:1
 @a^4457^66:1
+@a^4668^315:1
+@a^4685^315:2
 @a^11559^86:1,105:2
 @a^11561^84:1,86:2,106:2
-@l^0^deDE
+@a^12922^315:1
+@l^0^enUS

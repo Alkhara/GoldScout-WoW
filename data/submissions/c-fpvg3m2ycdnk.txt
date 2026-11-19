@@ -1,15 +1,34 @@
-GoldScout-export 5^fpvg3m2ycdnk^4
+GoldScout-export 5^fpvg3m2ycdnk^6
+1984^7^0^1^2^1438^0.5800^0.4342^7^Jeune sanglier des chardons^1376:1:1,1378:1:1,4865:3:3,7098:3:3^
+1985^6^0^2^3^1438^0.5710^0.3592^6^Sanglier des chardons^117:1:1,1370:1:1,4865:4:4,7098:2:2^
+1986^9^0^3^4^1438^0.5729^0.3222^9^Araignée Tissebois^1368:1:1,1476:1:1,2656:1:1,7100:1:1,7101:3:3,10640:1:1^
+1988^11^0^2^3^1438^0.5584^0.4490^11^Grell^117:2:2,159:1:1,2589:3:3,3297:7:7,3363:2:2^
+1989^3^0^3^4^1438^0.5534^0.4410^3^Grellide^3297:1:1^
+2031^7^0^1^1^1438^0.6057^0.4515^7^Jeune sabre-de-nuit^1378:1:1,2210:1:1,4865:3:3,7073:2:2,7074:3:3^
+2032^2^0^2^2^1438^0.5885^0.3391^2^Sabre-de-nuit galeux^7073:1:1^
 3743^5^0^23^24^1440^0.5103^0.6184^5^Guerrier Vile-sylve^1772:1:1,2589:2:3^
 3746^3^0^24^25^1440^0.5028^0.6092^3^Protecteur Vile-sylve^4538:1:1,15520:1:1^
 3749^1^0^24^25^1440^0.4987^0.6033^1^Ursa Vile-sylve^^
 3750^7^0^23^24^1440^0.5167^0.6174^7^Totémique Vile-sylve^1798:1:1,2592:2:2,4538:1:1^
 3917^13^0^23^25^1440^0.4805^0.6990^13^Elémentaire d'eau souillé^5446:2:2,5447:1:1,5448:3:3,5451:1:1,9451:5:11,12220:4:4,14165:1:1^
 12759^1^0^27^27^1440^0.4849^0.6950^1^Maréen^5447:1:1,7070:1:1^
+@i^117^Viande séchée coriace
+@i^159^Eau de source
+@i^1368^Gants rapiécés en cuir
+@i^1370^Brassards rapiécés en cuir
+@i^1376^Cape râpée
+@i^1378^Pantalon râpé
+@i^1476^Patte d'araignée brisée
 @i^1772^Chaussures en brocart
 @i^1798^Cape en cuir brut
+@i^2210^Targe endommagée
 @i^2589^Etoffe de lin
 @i^2592^Etoffe de laine
+@i^2656^Lorica fine
+@i^3297^Gangremousse
+@i^3363^Ceinture râpée
 @i^4538^Pastèque claquevigne
+@i^4865^Peau détruite
 @i^5446^Bracelet élémentaire rompu
 @i^5447^Bracelet élémentaire endommagé
 @i^5448^Bracelet élémentaire cassé
@@ -18,15 +37,33 @@ GoldScout-export 5^fpvg3m2ycdnk^4
 @i^6291^Goujon brillant cru
 @i^6308^Poisson-chat moustachu cru
 @i^7070^Eau élémentaire
+@i^7073^Croc brisé
+@i^7074^Griffes émoussées
+@i^7098^Défense brisée
+@i^7100^Ichor gluant
+@i^7101^Oeil de bestiole
 @i^9451^Eau bouillonnante
+@i^10640^Ichor d'araignée Tissebois
 @i^12220^Bracelets élémentaires intacts
 @i^14165^Jambières païennes de la baleine
 @i^15520^Gantelets en anneaux cloutés du singe
+@q^117^1:0:0
+@q^159^1:0:0
+@q^1368^0:4:0
+@q^1370^0:4:0
+@q^1376^0:4:0
+@q^1378^0:4:0
+@q^1476^0:15:0
 @q^1772^0:4:0
 @q^1798^0:4:0
+@q^2210^0:4:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2656^0:4:0
+@q^3297^1:12:0
+@q^3363^0:4:0
 @q^4538^1:0:0
+@q^4865^0:15:0
 @q^5446^0:15:0
 @q^5447^0:15:0
 @q^5448^0:15:0
@@ -35,10 +72,17 @@ GoldScout-export 5^fpvg3m2ycdnk^4
 @q^6291^1:7:1
 @q^6308^1:7:1
 @q^7070^1:7:1
+@q^7073^0:15:0
+@q^7074^0:15:0
+@q^7098^0:15:0
+@q^7100^0:15:0
+@q^7101^0:15:0
 @q^9451^1:0:0
+@q^10640^1:12:0
 @q^12220^1:12:0
 @q^14165^2:4:0
 @q^15520^2:4:0
+@m^1438^Teldrassil
 @m^1440^Orneval
 @m^1457^Darnassus
 @c^724^
@@ -700,6 +744,13 @@ GoldScout-export 5^fpvg3m2ycdnk^4
 @c^285280^
 @c^285281^
 @c^286152^
+@a^1984^171:5,191:2
+@a^1985^131:2,151:4
+@a^1986^111:1,131:8
+@a^1988^171:7,191:4
+@a^1989^171:3
+@a^2031^172:2,191:2,192:3
+@a^2032^131:1,151:1
 @a^3743^249:2,250:3
 @a^3746^250:3
 @a^3749^249:1

@@ -1,4 +1,4 @@
-GoldScout-export 5^hiowz4l54xwz^2
+GoldScout-export 5^hiowz4l54xwz^3
 587^5^0^33^34^1434^0.2970^0.1892^5^Bloodscalp Warrior^1519:2:2,1520:1:1,1711:1:1,2592:1:3,3901:2:2,3915:4:4,4306:2:4^
 588^12^0^34^35^1434^0.2434^0.1209^12^Bloodscalp Scout^1519:2:2,1708:1:1,2592:1:2,2734:1:1,2740:1:1,2742:1:1,3915:4:4,4306:3:4^
 595^16^0^34^35^1434^0.2457^0.1233^16^Bloodscalp Hunter^1519:2:2,2592:1:2,3771:1:1,3915:5:5,4306:4:7^
@@ -22,8 +22,17 @@ GoldScout-export 5^hiowz4l54xwz^2
 1150^5^0^30^31^1434^0.3578^0.0966^5^River Crocolisk^770:2:2,3667:2:2,4053:2:2,12037:1:1,248707:1:1^
 3560^2^0^37^37^1434^0.2501^0.1034^2^Healing Ward^^
 4461^2^0^35^35^1434^0.3426^0.2115^2^Murkgill Warrior^2749:1:1^
+4692^2^0^32^33^1443^0.3617^0.7164^2^Dread Swoop^1464:1:1,3404:1:1,5116:1:1,11416:1:1^
+4693^7^0^36^37^1443^0.4352^0.5901^7^Dread Flyer^1464:4:4,3404:5:5,12037:3:3^
+4697^3^0^34^35^1443^0.4127^0.6446^3^Scorpashi Lasher^12037:3:3^
+4725^4^0^37^38^1443^0.3076^0.7619^4^Crazed Sandstrider^5116:1:1,5636:1:1,5829:2:2,11416:2:2^
+4726^2^0^34^34^1443^0.3758^0.7145^2^Raging Thunder Lizard^5128:1:1,5133:1:1^
+4727^2^0^37^37^1443^0.3793^0.6719^2^Elder Thunder Lizard^5128:1:1^
+4729^1^0^36^36^1443^0.4206^0.5735^1^Hulking Gritjaw Basilisk^^
+11577^1^0^35^35^1443^0.4388^0.5729^1^Whirlwind Stormwalker^^
 269175^6^0^36^38^1434^0.3372^0.2666^6^Carnivorous Weed^256036:2:2,256037:4:4^
 @i^770^Pointy Crocolisk Tooth
+@i^1464^Buzzard Talon
 @i^1519^Bloodscalp Ear
 @i^1520^Troll Sweat
 @i^1523^Huge Stone Club
@@ -45,6 +54,7 @@ GoldScout-export 5^hiowz4l54xwz^2
 @i^2748^Green Hills of Stranglethorn - Page 24
 @i^2749^Green Hills of Stranglethorn - Page 25
 @i^3385^Lesser Mana Potion
+@i^3404^Buzzard Wing
 @i^3667^Tender Crocolisk Meat
 @i^3685^Raptor Egg
 @i^3771^Wild Hog Shank
@@ -59,10 +69,16 @@ GoldScout-export 5^hiowz4l54xwz^2
 @i^4461^Raptor Hide
 @i^4586^Smooth Raptor Skin
 @i^4636^Strong Iron Lockbox
+@i^5116^Long Tail Feather
+@i^5128^Shed Lizard Skin
+@i^5133^Seeping Gizzard
+@i^5636^Delicate Feather
 @i^5637^Large Fang
+@i^5829^Razor-sharp Beak
 @i^6396^Emblazoned Chestpiece
 @i^9836^Banded Armor of the Beast
 @i^11386^Squishy Basilisk Eye
+@i^11416^Delicate Ribcage
 @i^11997^Greenstone Circle of the Defender
 @i^12037^Mystery Meat
 @i^12184^Raptor Flesh
@@ -77,6 +93,7 @@ GoldScout-export 5^hiowz4l54xwz^2
 @i^256037^Grass Clippings
 @i^277957^Primitive Key
 @q^770^0:15:0
+@q^1464^0:15:0
 @q^1519^1:12:0
 @q^1520^0:15:0
 @q^1523^2:2:0
@@ -98,6 +115,7 @@ GoldScout-export 5^hiowz4l54xwz^2
 @q^2748^1:12:0
 @q^2749^1:12:0
 @q^3385^1:0:0
+@q^3404^1:7:1
 @q^3667^1:7:1
 @q^3685^1:7:1
 @q^3771^1:0:0
@@ -112,10 +130,16 @@ GoldScout-export 5^hiowz4l54xwz^2
 @q^4461^1:7:1
 @q^4586^0:15:0
 @q^4636^2:15:0
+@q^5116^1:7:1
+@q^5128^0:15:0
+@q^5133^0:15:0
+@q^5636^0:15:0
 @q^5637^1:7:1
+@q^5829^0:15:0
 @q^6396^2:4:0
 @q^9836^2:4:0
 @q^11386^0:15:0
+@q^11416^0:15:0
 @q^11997^2:4:0
 @q^12037^1:7:1
 @q^12184^1:7:1
@@ -130,6 +154,7 @@ GoldScout-export 5^hiowz4l54xwz^2
 @q^256037^0:15:0
 @q^277957^1:12:0
 @m^1434^Stranglethorn Vale
+@m^1443^Desolace
 @c^724^
 @c^733^
 @c^787^
@@ -809,5 +834,13 @@ GoldScout-export 5^hiowz4l54xwz^2
 @a^1150^26:3,47:1,48:1
 @a^3560^24:1,45:1
 @a^4461^86:2
+@a^4692^287:2
+@a^4693^228:5,248:2
+@a^4697^228:1,248:1,287:1
+@a^4725^286:1,305:2,306:1
+@a^4726^268:1,287:1
+@a^4727^228:1,306:1
+@a^4729^228:1
+@a^11577^228:1
 @a^269175^106:6
 @l^0^enUS
