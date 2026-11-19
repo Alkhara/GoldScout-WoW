@@ -1,6 +1,9 @@
-GoldScout-export 5^efk2crigw1nx^5
-4396^12^0^36^37^1445^0.6260^0.3240^12^Tortue Rochefange^3712:5:5,4555:5:5,4556:7:7,6362:2:4^
-4397^15^0^37^38^1445^0.6260^0.3250^15^Epineuse Rochefange^3712:5:5,4555:9:9,4556:3:3,6362:2:3^
+GoldScout-export 5^efk2crigw1nx^6
+597^10^0^36^37^1434^0.2044^0.1329^10^Berserker Bloodscalp^1519:4:4,4306:5:6^
+660^13^0^37^37^1434^0.2061^0.1299^13^Sorcier-docteur Bloodscalp^1519:5:5,2749:1:1,3771:1:1,3778:1:1,3803:1:1,4306:6:13,4338:1:1^
+671^14^0^36^37^1434^0.2128^0.1249^14^Chasseur de tête Bloodscalp^1519:4:4,1522:1:1,1988:1:1,2735:1:1,2744:1:1,2751:1:1,3771:1:1,4306:5:9,213547:1:1^
+4396^15^0^36^37^1445^0.6293^0.3376^15^Tortue Rochefange^3712:5:5,4555:6:6,4556:9:9,6362:2:4^
+4397^16^0^37^38^1445^0.6271^0.3294^16^Epineuse Rochefange^3712:5:5,4555:10:10,4556:3:3,6362:2:3^
 258792^4^0^0^0^0^0.0000^0.0000^0^^4306:1:1,4607:1:1,13129:1:1,248693:1:1,248708:1:1^
 258797^2^0^0^0^0^0.0000^0.0000^0^^213545:1:1^
 258799^7^0^0^0^0^0.0000^0.0000^0^^4306:3:5^
@@ -22,9 +25,19 @@ GoldScout-export 5^efk2crigw1nx^5
 263899^3^0^0^0^0^0.0000^0.0000^0^^4338:1:1,213546:1:1,262889:1:1^
 @i^864^Epée longue des chevaliers de l'ours
 @i^1465^Fléau des tigres
+@i^1519^Oreille de Bloodscalp
+@i^1522^Lance de chasseur de têtes
+@i^1988^Gantelets de général de brigade
+@i^2735^Les vertes collines de Strangleronce - Page 11
+@i^2744^Les vertes collines de Strangleronce - Page 20
+@i^2749^Les vertes collines de Strangleronce - Page 25
+@i^2751^Les vertes collines de Strangleronce - Page 27
 @i^3712^Viande de tortue
+@i^3771^Jarret de cochon sauvage
+@i^3778^Arc composite de sarcasme
 @i^3786^Miséricorde rutilante
 @i^3800^Ceinture en cuir durci
+@i^3803^Cape en cuir durci
 @i^4059^Brassards glyphés
 @i^4306^Etoffe de soie
 @i^4338^Etoffe de tisse-mage
@@ -38,6 +51,7 @@ GoldScout-export 5^efk2crigw1nx^5
 @i^13129^Jambières Crins-de-feu
 @i^213545^Parchemin : CHUTE D'AGUERRI
 @i^213546^Parchemin : TAGADAAA
+@i^213547^Parchemin : ELLUQE PÉÉE
 @i^248693^Caisse détournée : textiles d'expert
 @i^248708^Caisse détournée : étoffes d'expert
 @i^262889^Commission d'expert scellée
@@ -53,9 +67,19 @@ GoldScout-export 5^efk2crigw1nx^5
 @i^279046^Pince de crabe craquelée
 @q^864^2:2:0
 @q^1465^2:2:0
+@q^1519^1:12:0
+@q^1522^2:2:0
+@q^1988^2:4:0
+@q^2735^1:12:0
+@q^2744^1:12:0
+@q^2749^1:12:0
+@q^2751^1:12:0
 @q^3712^1:7:1
+@q^3771^1:0:0
+@q^3778^0:2:0
 @q^3786^0:2:0
 @q^3800^0:4:0
+@q^3803^0:4:0
 @q^4059^2:4:0
 @q^4306^1:7:1
 @q^4338^1:7:1
@@ -69,6 +93,7 @@ GoldScout-export 5^efk2crigw1nx^5
 @q^13129^3:4:0
 @q^213545^1:0:0
 @q^213546^1:0:0
+@q^213547^1:0:0
 @q^248693^1:0:1
 @q^248708^2:0:1
 @q^262889^3:0:0
@@ -82,7 +107,11 @@ GoldScout-export 5^efk2crigw1nx^5
 @q^274614^3:4:0
 @q^276894^1:12:0
 @q^279046^0:15:0
+@m^1434^Vallée de Strangleronce
 @m^1445^Marécage d'Âprefange
-@a^4396^92:1,112:4,132:3,152:3,172:1
-@a^4397^92:2,112:3,132:4,152:5,172:1
+@a^597^43:2,44:8
+@a^660^43:4,44:9
+@a^671^43:3,44:11
+@a^4396^92:1,112:4,132:3,152:6,172:1
+@a^4397^92:2,112:3,132:4,152:6,172:1
 @l^0^frFR

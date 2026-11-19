@@ -1,18 +1,18 @@
-GoldScout-export 5^yeqak4pqsl9i^9
-94^1^0^6^6^1429^0.3662^0.5362^1^Vide-gousset défias^^
+GoldScout-export 5^yeqak4pqsl9i^11
+94^1^0^5^6^1429^0.3662^0.5362^1^Vide-gousset défias^^
 116^1^0^9^9^1429^0.5206^0.5945^1^Bandit défias^^
 1562^1^0^41^41^1434^0.2932^0.7171^1^Mage de la Voile sanglante^^
 1908^1^0^19^20^1421^0.6784^0.4548^1^Oracle Aileron noir^730:1:1^
 2348^9^0^26^27^1424^0.6142^0.6617^9^Ancienne Rampemousse^878:1:1,1074:3:3,1081:5:5,2251:3:3,3182:1:1^
 2349^2^0^24^25^1421^0.6818^0.5059^1^Rampemousse géante^1081:1:1,2251:1:1^
-2371^1^0^32^32^1424^0.5415^0.6190^1^Sirène Daguéchine^17057:1:1^
+2371^1^0^31^32^1424^0.5415^0.6190^1^Sirène Daguéchine^17057:1:1^
 2385^5^0^27^28^1424^0.6082^0.6448^5^Lion des montagnes farouche^3731:2:2,5137:2:2^
 2559^1^0^30^31^1417^0.4781^0.5013^1^Arpenteur des hautes-terres^4461:1:1^
 2563^1^0^32^33^1417^0.4813^0.4932^1^Rampant des plaines^878:1:1,3182:1:1^
 2565^2^0^35^36^1417^0.5295^0.5768^2^Rampant des plaines géant^878:1:1,1081:2:2,2251:1:1,4585:1:1^
-2760^4^0^38^39^1417^0.2511^0.3215^4^Exilé ardent^3857:2:2,4479:2:2,4787:1:1^
+2760^5^0^38^39^1417^0.2514^0.3130^5^Exilé ardent^3857:2:2,4479:2:2,4787:2:2^
 2761^19^0^38^39^1417^0.6622^0.3013^19^Exilé grimpeur^4481:4:4,4791:10:31,7070:1:1^
-2762^81^0^38^39^1417^0.5189^0.5076^81^Exilé foudroyant^4480:40:40,4729:1:1,7069:18:18,7439:1:1,9892:1:1^
+2762^125^0^38^39^1417^0.5188^0.5075^125^Exilé foudroyant^4480:64:64,4729:1:1,7069:25:25,7439:1:1,7441:1:1,7445:1:1,9892:1:1,248692:1:1^
 2887^1^0^44^44^1417^0.6550^0.3074^1^Exilé prismatique^^
 3244^6^0^11^12^1413^0.5128^0.2778^6^Grand trotteur des plaines^4775:2:2,5469:2:2,15944:1:1,17056:3:3^
 3245^1^0^16^16^1413^0.5200^0.4849^1^Trotteur des plaines hargneux^^
@@ -228,6 +228,8 @@ GoldScout-export 5^yeqak4pqsl9i^9
 @i^7070^Eau élémentaire
 @i^7415^Spallières de derviche d'esprit
 @i^7439^Harnais de sentinelle d'intelligence
+@i^7441^Coiffe de sentinelle de défense
+@i^7445^Epaulières de sentinelle de défense
 @i^9762^Gantelets de cadet
 @i^9764^Bouclier de cadet d'intelligence
 @i^9892^Gants de veneur de protection contre l'ombre
@@ -252,6 +254,7 @@ GoldScout-export 5^yeqak4pqsl9i^9
 @i^19938^Patte de scorpide épaisse
 @i^213543^Parchemin : BONHOMME
 @i^248687^Caisse détournée : minerai de compagnon
+@i^248692^Caisse détournée : minerai d'expert
 @i^251961^Granule arcanique
 @i^254432^Totem centaure sculpté
 @i^260347^Journal en lambeaux
@@ -397,6 +400,8 @@ GoldScout-export 5^yeqak4pqsl9i^9
 @q^7070^1:7:1
 @q^7415^2:4:0
 @q^7439^2:4:0
+@q^7441^2:4:0
+@q^7445^2:4:0
 @q^9762^1:4:0
 @q^9764^2:4:0
 @q^9892^2:4:0
@@ -421,6 +426,7 @@ GoldScout-export 5^yeqak4pqsl9i^9
 @q^19938^0:15:0
 @q^213543^1:0:0
 @q^248687^1:0:1
+@q^248692^1:0:1
 @q^251961^1:12:0
 @q^254432^2:15:0
 @q^260347^1:15:0
@@ -1056,9 +1062,9 @@ GoldScout-export 5^yeqak4pqsl9i^9
 @a^2559^209:1
 @a^2563^189:1
 @a^2565^230:2
-@a^2760^124:2,125:2
+@a^2760^105:1,124:2,125:2
 @a^2761^113:7,132:2,133:10
-@a^2762^190:23,210:58
+@a^2762^190:32,210:93
 @a^2887^133:1
 @a^3244^110:6
 @a^3245^190:1

@@ -1,6 +1,6 @@
-GoldScout-export 5^sq3q4yaomaxk^3
+GoldScout-export 5^sq3q4yaomaxk^4
 5420^3^0^45^46^1446^0.6253^0.5119^3^Contemplateur Peau-de-verre^8146:1:1,11386:2:2^
-5422^5^0^40^41^1446^0.5223^0.3108^5^Scorpide chasseur^12037:3:3,19935:1:1,19937:3:3,213544:1:1^
+5422^6^0^40^41^1446^0.5454^0.2924^6^Scorpide chasseur^12037:3:3,19935:2:2,19937:3:3,213544:1:1^
 5423^40^0^43^44^1446^0.4698^0.3908^40^Scorpide flagellant^12037:11:11,19935:2:2,19936:12:12,19937:8:8,213545:1:1,213546:1:1,255645:1:1^
 5424^13^0^46^47^1446^0.4529^0.4614^13^Scorpide des sables^12037:8:8,19935:7:7,19936:2:2,248699:1:1^
 5425^1^0^41^42^1446^0.6010^0.2931^1^Brûlepatte affamée^12208:1:1^
@@ -23,9 +23,10 @@ GoldScout-export 5^sq3q4yaomaxk^3
 7858^18^0^44^45^1446^0.7466^0.4606^18^Bretteur des Mers du sud^4020:1:1,4306:2:4,4338:5:7,9276:1:1,20519:6:6,248708:1:1^
 7883^2^0^45^45^1446^0.7338^0.4707^2^Andre Barbe-en-feu^4306:1:2,9246:1:1,20519:1:1^
 8996^1^0^42^43^1446^0.6428^0.3952^1^Sbire marcheur du Vide^^
-14123^1^0^42^42^1446^0.6655^0.2909^1^Mordeuse mâchoire d'acier^4555:1:1^
+14123^10^0^42^43^1446^0.6677^0.2168^10^Mordeuse mâchoire d'acier^3712:2:2,4555:5:5,4556:4:4,4603:1:1,7973:3:3,15251:1:1^
 @i^1464^Serre de busard
 @i^1645^Jus de baie lunaire
+@i^3712^Viande de tortue
 @i^3928^Potion de soins excellente
 @i^3940^Gants en crochet
 @i^4019^Lourde hache en silex
@@ -35,7 +36,10 @@ GoldScout-export 5^sq3q4yaomaxk^3
 @i^4338^Etoffe de tisse-mage
 @i^4422^Parchemin d'Endurance III
 @i^4555^Epaisse queue écailleuse
+@i^4556^Fragment de carapace moucheté
 @i^4583^Epaisse crinière
+@i^4603^Jaune-queue tacheté cru
+@i^7973^Palourde à large bouche
 @i^8146^Serre cruelle
 @i^8395^Patron : Cuirasse armée du scorpide
 @i^8399^Patron : Bottes armées du scorpide
@@ -55,6 +59,7 @@ GoldScout-export 5^sq3q4yaomaxk^3
 @i^14838^Ceinture de tyran
 @i^14839^Bottes de tyran
 @i^15156^Chapeau de noctambule du singe
+@i^15251^Epée frappe-tête d'hiérophante
 @i^15370^Bottes de chevaucheur de loup de sorcellerie
 @i^15610^Brassards de mailles d'os de guérison
 @i^19935^Glande à venin vide
@@ -70,6 +75,7 @@ GoldScout-export 5^sq3q4yaomaxk^3
 @i^278186^Bracelet brillamment poli
 @q^1464^0:15:0
 @q^1645^1:0:0
+@q^3712^1:7:1
 @q^3928^1:0:0
 @q^3940^0:4:0
 @q^4019^0:2:0
@@ -79,7 +85,10 @@ GoldScout-export 5^sq3q4yaomaxk^3
 @q^4338^1:7:1
 @q^4422^1:0:0
 @q^4555^0:15:0
+@q^4556^0:15:0
 @q^4583^0:15:0
+@q^4603^1:7:1
+@q^7973^1:7:0
 @q^8146^1:7:1
 @q^8395^2:9:0
 @q^8399^2:9:0
@@ -99,6 +108,7 @@ GoldScout-export 5^sq3q4yaomaxk^3
 @q^14838^2:4:0
 @q^14839^2:4:0
 @q^15156^2:4:0
+@q^15251^2:2:0
 @q^15370^2:4:0
 @q^15610^2:4:0
 @q^19935^0:15:0
@@ -902,7 +912,7 @@ GoldScout-export 5^sq3q4yaomaxk^3
 @c^279982^
 @c^286152^
 @a^5420^173:1,212:1,232:1
-@a^5422^113:1,129:4
+@a^5422^93:1,113:1,129:4
 @a^5423^108:1,128:3,129:2,148:9,149:6,168:8,169:5,172:3,173:1,192:2
 @a^5424^167:4,169:2,188:3,189:2,212:1,231:1
 @a^5425^112:1
@@ -925,5 +935,5 @@ GoldScout-export 5^sq3q4yaomaxk^3
 @a^7858^194:8,195:10
 @a^7883^194:2
 @a^8996^152:1
-@a^14123^113:1
+@a^14123^73:3,93:6,113:1
 @l^0^frFR

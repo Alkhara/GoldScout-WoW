@@ -1,4 +1,4 @@
-GoldScout-export 5^741nqh6m07lz^22
+GoldScout-export 5^741nqh6m07lz^23
 92^11^0^39^40^1418^0.1382^0.3415^11^Rock Elemental^4552:2:2,4553:5:5,4784:6:6,7067:1:1,7848:3:3,7912:5:7,8150:3:3^
 667^1^0^40^40^1434^0.4659^0.2940^1^Skullsplitter Warrior^1520:1:1,3916:1:1^
 674^14^0^40^41^1434^0.4151^0.4259^14^Venture Co. Strip Miner^1630:6:6,2725:1:1,3771:1:1,3917:6:6,4306:7:12,4338:1:1,11203:1:1^
@@ -22,7 +22,10 @@ GoldScout-export 5^741nqh6m07lz^22
 1561^9^0^40^41^1434^0.2787^0.6992^9^Bloodsail Raider^4306:1:3^
 1562^6^0^40^41^1434^0.2810^0.7024^6^Bloodsail Mage^2728:1:1,4306:2:3^
 1563^4^0^42^43^1434^0.2291^0.5241^4^Bloodsail Swashbuckler^7479:1:1^
+1779^3^0^12^13^1421^0.5781^0.4547^3^Moonrage Glutton^^
+1782^6^0^13^14^1421^0.5800^0.4514^6^Moonrage Darksoul^1514:1:1,1516:1:1^
 1907^4^0^43^44^1434^0.2729^0.6239^4^Naga Explorer^7973:1:1,17058:2:2^
+1973^1^0^20^21^1421^0.5993^0.7194^1^Ravenclaw Guardian^^
 2304^1^0^32^32^1424^0.7180^0.8012^1^Captain Ironhill^4306:1:2^
 2344^10^0^28^29^1424^0.7156^0.7897^10^Dun Garok Mountaineer^1205:1:1,1783:1:1,2592:1:2^
 2345^2^0^29^30^1424^0.7063^0.7748^2^Dun Garok Rifleman^4306:1:1^
@@ -134,6 +137,8 @@ GoldScout-export 5^741nqh6m07lz^22
 @i^1205^Melon Juice
 @i^1464^Buzzard Talon
 @i^1477^Scroll of Agility II
+@i^1514^Rusty Warhammer
+@i^1516^Worn Hatchet
 @i^1520^Troll Sweat
 @i^1630^Broken Electro-lantern
 @i^1688^Long Soft Tail
@@ -240,6 +245,8 @@ GoldScout-export 5^741nqh6m07lz^22
 @q^1205^1:0:0
 @q^1464^0:15:0
 @q^1477^1:0:0
+@q^1514^0:2:0
+@q^1516^0:2:0
 @q^1520^0:15:0
 @q^1630^0:15:0
 @q^1688^0:15:0
@@ -344,6 +351,7 @@ GoldScout-export 5^741nqh6m07lz^22
 @m^1413^The Barrens
 @m^1417^Arathi Highlands
 @m^1418^Badlands
+@m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
 @m^1434^Stranglethorn Vale
 @m^1441^Thousand Needles
@@ -1063,7 +1071,10 @@ GoldScout-export 5^741nqh6m07lz^22
 @a^1561^265:3,285:6
 @a^1562^265:2,285:4
 @a^1563^204:4
+@a^1779^191:3
+@a^1782^171:2,191:4
 @a^1907^225:1,245:3
+@a^1973^291:1
 @a^2304^334:1
 @a^2344^313:1,314:7,334:2
 @a^2345^313:1,314:1

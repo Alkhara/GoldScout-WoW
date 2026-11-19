@@ -1,4 +1,4 @@
-GoldScout-export 5^roh1h5yuz91j^8
+GoldScout-export 5^roh1h5yuz91j^9
 1520^6^0^6^7^1420^0.4557^0.4061^6^Rattlecage Soldier^118:1:1,1417:1:1,2589:4:7,2839:1:1,3162:5:5,4604:1:1^
 1522^4^0^7^8^1420^0.4495^0.3966^4^Darkeye Bonecaster^818:1:1,2589:2:3,3163:3:3^
 1526^1^0^6^6^1420^0.5276^0.4686^1^Ravaged Corpse^2589:1:2,4604:1:1^
@@ -27,6 +27,12 @@ GoldScout-export 5^roh1h5yuz91j^8
 3128^11^0^5^6^1411^0.5747^0.5495^11^Kul Tiras Sailor^2589:2:2,3013:1:1,3373:1:1^
 3129^8^0^6^7^1411^0.5859^0.5617^8^Kul Tiras Marine^118:1:1,2070:1:1^
 3192^2^0^8^8^1411^0.5961^0.5821^2^Lieutenant Benedict^4882:2:2^
+3239^8^0^20^21^1413^0.4879^0.6044^8^Thunderhead^5128:2:2,5470:2:2,5578:1:1^
+3240^6^0^18^19^1413^0.4943^0.5669^6^Stormsnout^5128:3:3,5470:2:2^
+3466^1^0^20^20^1413^0.4912^0.5805^1^Zhevra Courser^^
+3473^1^0^24^24^1413^0.4912^0.6149^1^Owatanka^5102:1:1^
+3474^1^0^22^22^1413^0.4992^0.5328^1^Lakota'mani^5082:1:1,5099:1:1^
+4129^1^0^18^18^1413^0.4965^0.5492^1^Hecklefang Snarler^3301:1:1^
 250868^2^0^6^6^2521^0.4045^0.4252^2^Vuldren^2672:1:1,3299:1:1,3300:1:1^
 251145^6^0^4^4^2521^0.3662^0.3196^6^Al'Aketh Brute^159:1:1,2589:2:2,3365:1:1,4540:5:5^
 251245^16^0^5^6^2521^0.4024^0.4845^16^Prideclaw^1364:1:1,1411:1:1,1430:1:1,3299:6:6,252670:10:10,252671:10:10^
@@ -83,6 +89,7 @@ GoldScout-export 5^roh1h5yuz91j^8
 @i^3163^Blackened Skull
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
+@i^3301^Sharp Canine
 @i^3327^Vile Fin Oracle Staff
 @i^3365^Frayed Bracers
 @i^3373^Patchwork Bracers
@@ -107,9 +114,15 @@ GoldScout-export 5^roh1h5yuz91j^8
 @i^4865^Ruined Pelt
 @i^4867^Broken Scorpid Leg
 @i^4882^Benedict's Key
+@i^5082^Thin Kodo Leather
+@i^5099^Hoof of Lakota'mani
+@i^5102^Owatanka's Tailspike
+@i^5128^Shed Lizard Skin
 @i^5465^Small Spider Leg
 @i^5466^Scorpid Stinger
 @i^5469^Strider Meat
+@i^5470^Thunder Lizard Tail
+@i^5578^Plans: Silvered Bronze Breastplate
 @i^6297^Old Skull
 @i^6299^Sickly Looking Fish
 @i^6308^Raw Bristle Whisker Catfish
@@ -175,6 +188,7 @@ GoldScout-export 5^roh1h5yuz91j^8
 @q^3163^1:12:0
 @q^3299^0:15:0
 @q^3300^0:15:0
+@q^3301^0:15:0
 @q^3327^1:2:0
 @q^3365^0:4:0
 @q^3373^0:4:0
@@ -199,9 +213,15 @@ GoldScout-export 5^roh1h5yuz91j^8
 @q^4865^0:15:0
 @q^4867^0:15:0
 @q^4882^1:13:0
+@q^5082^1:7:1
+@q^5099^1:12:0
+@q^5102^1:12:0
+@q^5128^0:15:0
 @q^5465^1:7:1
 @q^5466^1:7:1
 @q^5469^1:7:1
+@q^5470^1:7:1
+@q^5578^2:9:0
 @q^6297^0:15:0
 @q^6299^1:0:0
 @q^6308^1:7:1
@@ -231,6 +251,7 @@ GoldScout-export 5^roh1h5yuz91j^8
 @q^278244^1:12:0
 @m^1411^Durotar
 @m^1412^Mulgore
+@m^1413^The Barrens
 @m^1416^Alterac Mountains
 @m^1420^Tirisfal Glades
 @m^1421^Silverpine Forest
@@ -2294,6 +2315,12 @@ GoldScout-export 5^roh1h5yuz91j^8
 @a^3128^211:5,231:6
 @a^3129^211:2,231:6
 @a^3192^231:2
+@a^3239^229:3,249:5
+@a^3240^209:1,229:4,230:1
+@a^3466^229:1
+@a^3473^249:1
+@a^3474^209:1
+@a^4129^209:1
 @a^250868^167:1,168:1
 @a^251145^127:6
 @a^251245^149:1,167:3,187:3,188:4,208:1,209:1,227:2,228:1
