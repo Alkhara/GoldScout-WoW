@@ -1,4 +1,4 @@
-GoldScout-export 5^ioih5627zdzy^8
+GoldScout-export 5^ioih5627zdzy^9
 206^30^0^29^30^1431^0.6107^0.8102^30^Nightbane Vile Fang^1205:1:1,1759:1:1,2794:1:1,5635:4:4,5637:1:1,6607:1:1,248708:1:1^
 212^5^0^29^30^1431^0.3640^0.8050^5^Splinter Fist Warrior^929:1:1,4306:1:1^
 300^1^0^30^30^1431^0.3773^0.8428^1^Zzarc' Vul^1968:1:1^
@@ -39,8 +39,8 @@ GoldScout-export 5^ioih5627zdzy^8
 1487^1^0^31^31^1431^0.3814^0.8434^1^Splinter Fist Enslaver^^
 1693^40^0^14^15^1432^0.5496^0.3863^40^Loch Crocolisk^2924:17:17,3181:17:17,3401:8:8,5212:1:1,6549:1:1,6560:1:1,9764:1:1,248683:1:1^
 2108^1^0^29^29^1437^0.4694^0.4846^1^Garneg Charskull^929:1:1,2592:1:2,7370:1:1^
-2248^10^0^30^31^1424^0.4459^0.2904^10^Cave Yeti^3720:3:3^
-2249^20^0^31^32^1424^0.4405^0.2839^20^Ferocious Yeti^3720:7:7,3771:2:2,3816:1:1^
+2248^38^0^30^31^1424^0.4437^0.2986^38^Cave Yeti^1708:2:2,3720:3:3,4055:1:1,5002:1:1^
+2249^45^0^31^32^1424^0.4395^0.2884^45^Ferocious Yeti^1708:1:1,3720:7:7,3771:3:3,3816:1:1,248687:1:1,248688:1:1^
 2369^8^0^30^31^1424^0.5701^0.6844^8^Daggerspine Shorehunter^5524:5:5,17057:2:2,17058:2:2^
 2371^9^0^31^32^1424^0.5839^0.6892^9^Daggerspine Siren^7072:2:2,17057:2:2,17058:1:1^
 2376^25^0^30^31^1424^0.4209^0.6802^25^Torn Fin Oracle^3716:5:5,5524:12:12,5785:1:1,6308:1:2,17057:8:8,17058:6:6,249881:1:1^
@@ -68,6 +68,7 @@ GoldScout-export 5^ioih5627zdzy^8
 @i^1696^Curved Raptor Talon
 @i^1697^Keen Raptor Tooth
 @i^1705^Lesser Moonstone
+@i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
 @i^1711^Scroll of Stamina II
 @i^1725^Large Knapsack
@@ -104,8 +105,10 @@ GoldScout-export 5^ioih5627zdzy^8
 @i^3771^Wild Hog Shank
 @i^3813^Double Mail Pants
 @i^3816^Reflective Heater
+@i^4055^Insignia Boots
 @i^4306^Silk Cloth
 @i^4428^Spider Palp
+@i^5002^Glowing Green Talisman
 @i^5212^Blazing Wand
 @i^5516^Threshadon Fang
 @i^5523^Small Barnacled Clam
@@ -130,6 +133,8 @@ GoldScout-export 5^ioih5627zdzy^8
 @i^248683^Waylaid Crate: Apprentice Ore
 @i^248684^Waylaid Crate: Apprentice Textiles
 @i^248686^Waylaid Crate: Journeyman Herbs
+@i^248687^Waylaid Crate: Journeyman Ore
+@i^248688^Waylaid Crate: Journeyman Textiles
 @i^248707^Waylaid Crate: Journeyman Parts
 @i^248708^Waylaid Crate: Expert Fabrics
 @i^249881^Recipe: Root Tea
@@ -152,6 +157,7 @@ GoldScout-export 5^ioih5627zdzy^8
 @q^1696^0:15:0
 @q^1697^0:15:0
 @q^1705^2:7:1
+@q^1708^1:0:0
 @q^1710^1:0:0
 @q^1711^1:0:0
 @q^1725^1:1:0
@@ -188,8 +194,10 @@ GoldScout-export 5^ioih5627zdzy^8
 @q^3771^1:0:0
 @q^3813^0:4:0
 @q^3816^0:4:0
+@q^4055^2:4:0
 @q^4306^1:7:1
 @q^4428^0:15:0
+@q^5002^2:4:0
 @q^5212^2:2:0
 @q^5516^0:2:0
 @q^5523^1:7:0
@@ -214,6 +222,8 @@ GoldScout-export 5^ioih5627zdzy^8
 @q^248683^1:0:1
 @q^248684^1:0:1
 @q^248686^1:0:1
+@q^248687^1:0:1
+@q^248688^1:0:1
 @q^248707^2:0:1
 @q^248708^2:0:1
 @q^249881^1:9:0
@@ -962,8 +972,8 @@ GoldScout-export 5^ioih5627zdzy^8
 @a^1487^327:1
 @a^1693^131:1,150:21,151:13,170:4,210:1
 @a^2108^189:1
-@a^2248^88:1,109:4,128:4,129:1
-@a^2249^88:3,108:12,109:1,128:4
+@a^2248^88:2,108:8,109:7,128:14,129:7
+@a^2249^88:4,108:23,109:4,128:12,129:2
 @a^2369^251:3,271:3,291:2
 @a^2371^251:1,271:5,291:1,292:2
 @a^2376^249:2,267:4,268:17,269:2
