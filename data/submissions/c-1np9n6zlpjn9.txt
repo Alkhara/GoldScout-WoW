@@ -1,21 +1,42 @@
-GoldScout-export 5^1np9n6zlpjn9^2
+GoldScout-export 5^1np9n6zlpjn9^4
+116^1^0^9^9^1429^0.7214^0.7839^1^Defias Bandit^1423:1:1^
+118^1^0^10^10^1429^0.7744^0.7649^1^Prowler^2672:1:1,3300:1:1^
+524^7^0^7^8^1429^0.7254^0.7877^7^Rockhide Boar^769:6:6,771:1:1,3171:3:3^
+822^1^0^9^9^1429^0.7315^0.8072^1^Young Forest Bear^3170:1:1,4865:1:1^
 1184^1^0^13^13^1432^0.5472^0.7700^1^Cliff Lurker^3174:1:1^
 1189^2^0^16^17^1432^0.5940^0.2783^2^Black Bear Patriarch^2940:1:1,3173:1:1,11406:1:1^
 1693^2^0^14^14^1432^0.5713^0.2932^2^Loch Crocolisk^2924:1:1,3181:1:1,6336:1:1^
+@i^769^Chunk of Boar Meat
+@i^771^Chipped Boar Tusk
+@i^1423^Worn Leather Pants
+@i^2672^Stringy Wolf Meat
 @i^2924^Crocolisk Meat
 @i^2940^Bloody Bear Paw
+@i^3170^Large Bear Tooth
+@i^3171^Broken Boar Tusk
 @i^3173^Bear Meat
 @i^3174^Spider Ichor
 @i^3181^Partially Digested Meat
+@i^3300^Rabbit's Foot
+@i^4865^Ruined Pelt
 @i^6336^Infantry Tunic of Fire Protection
 @i^11406^Rotting Bear Carcass
+@q^769^1:7:1
+@q^771^0:15:0
+@q^1423^0:4:0
+@q^2672^1:7:1
 @q^2924^1:7:1
 @q^2940^0:15:0
+@q^3170^0:15:0
+@q^3171^0:15:0
 @q^3173^1:7:1
 @q^3174^1:7:1
 @q^3181^0:15:0
+@q^3300^0:15:0
+@q^4865^0:15:0
 @q^6336^2:4:0
 @q^11406^0:15:0
+@m^1429^Elwynn Forest
 @m^1432^Loch Modan
 @c^724^
 @c^733^
@@ -658,6 +679,10 @@ GoldScout-export 5^1np9n6zlpjn9^2
 @c^285280^
 @c^285281^
 @c^286152^
+@a^116^314:1
+@a^118^315:1
+@a^524^314:5,334:2
+@a^822^334:1
 @a^1184^310:1
 @a^1189^91:1,132:1
 @a^1693^91:1,151:1
