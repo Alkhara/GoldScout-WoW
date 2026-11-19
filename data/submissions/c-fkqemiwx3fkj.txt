@@ -1,27 +1,85 @@
-GoldScout-export 5^fkqemiwx3fkj^1
+GoldScout-export 5^fkqemiwx3fkj^2
+212^1^0^30^30^1431^0.3726^0.7793^1^Splinter Fist Warrior^^
+684^7^0^37^38^1434^0.3946^0.3692^7^Shadowmaw Panther^1686:1:1,1688:1:1,3838:7:7^
+688^3^0^31^32^1434^0.3489^0.0661^3^Stone Maw Basilisk^1701:2:2,3918:1:1^
+689^8^0^34^35^1434^0.4810^0.0806^8^Crystal Spine Basilisk^1701:1:1,1702:1:1,1703:1:1,3918:4:4,4093:1:1,11386:1:1,213547:1:1^
+690^2^0^39^39^1434^0.3776^0.4032^2^Cold Eye Basilisk^1702:2:2,3918:1:1^
+772^1^0^37^38^1434^0.4129^0.3419^1^Stranglethorn Tigress^12202:1:1^
+938^3^0^34^35^1434^0.4520^0.0827^3^Kurzen Commando^^
+940^1^0^32^33^1434^0.4373^0.0806^1^Kurzen Medicine Man^2633:1:1^
+1114^1^0^37^37^1434^0.4225^0.3149^1^Jungle Thunderer^4096:1:1^
+1251^2^0^29^29^1431^0.3733^0.7842^2^Splinter Fist Firemonger^2592:1:1,4306:1:1^
 4041^2^0^27^28^1442^0.3488^0.7230^2^Scorched Basilisk^1702:2:2,3857:1:1^
+4344^1^0^39^39^1445^0.4083^0.5855^1^Mottled Drywallow Crocolisk^^
+4391^1^0^39^39^1445^0.3803^0.5257^1^Swamp Ooze^^
+4411^1^0^36^36^1445^0.3581^0.4030^1^Darkfang Lurker^248693:1:1^
+4412^1^0^38^38^1445^0.3949^0.5678^1^Darkfang Creeper^4585:1:1,5959:1:1^
+4414^1^0^38^38^1445^0.3679^0.4520^1^Darkfang Venomspitter^5959:1:1^
 4664^3^0^30^31^1443^0.5717^0.2533^3^Burning Blade Reaver^1783:1:1,4306:1:2,20310:1:1^
 4665^1^0^32^32^1443^0.5622^0.2981^1^Burning Blade Adept^^
 4666^2^0^31^31^1443^0.5680^0.2839^2^Burning Blade Felsworn^3771:1:1,4306:2:2^
 4696^1^0^30^30^1443^0.5628^0.1668^1^Scorpashi Snapper^1288:1:1^
 4728^2^0^31^32^1443^0.5450^0.1175^2^Gritjaw Basilisk^^
 11576^1^0^32^33^1443^0.5570^0.3378^1^Whirlwind Ripper^^
+250484^2^0^0^0^0^0.0000^0.0000^0^^1790:1:1,3167:1:1^
+250625^2^0^0^0^0^0.0000^0.0000^0^^3167:2:2,4577:1:1^
 @i^1288^Large Venom Sac
+@i^1686^Bristly Whisker
+@i^1688^Long Soft Tail
+@i^1701^Curved Basilisk Claw
 @i^1702^Intact Basilisk Spine
+@i^1703^Crystal Basilisk Spine
 @i^1783^Cross-stitched Gloves
+@i^1790^Patched Cloak
+@i^2592^Wool Cloth
+@i^2633^Jungle Remedy
+@i^3167^Thick Spider Hair
 @i^3771^Wild Hog Shank
+@i^3838^Shadowmaw Claw
 @i^3857^Coal
+@i^3918^Singing Crystal Shard
+@i^4093^Large Basilisk Tail
+@i^4096^Coarse Gorilla Hair
 @i^4306^Silk Cloth
+@i^4577^Compact Shotgun
+@i^4585^Dripping Spider Mandible
+@i^5959^Acidic Venom Sac
+@i^11386^Squishy Basilisk Eye
+@i^12202^Tiger Meat
 @i^20310^Flayed Demon Skin
+@i^213547^Scroll: THAW WORDS
+@i^248693^Waylaid Crate: Expert Textiles
 @q^1288^1:7:1
+@q^1686^0:15:0
+@q^1688^0:15:0
+@q^1701^0:15:0
 @q^1702^0:15:0
+@q^1703^1:0:0
 @q^1783^0:4:0
+@q^1790^0:4:0
+@q^2592^1:7:1
+@q^2633^1:0:0
+@q^3167^0:15:0
 @q^3771^1:0:0
+@q^3838^1:12:0
 @q^3857^1:7:1
+@q^3918^1:12:0
+@q^4093^0:15:0
+@q^4096^1:15:0
 @q^4306^1:7:1
+@q^4577^2:2:0
+@q^4585^0:15:0
+@q^5959^1:12:0
+@q^11386^0:15:0
+@q^12202^1:7:1
 @q^20310^1:12:0
+@q^213547^1:0:0
+@q^248693^1:0:1
+@m^1431^Duskwood
+@m^1434^Stranglethorn Vale
 @m^1442^Stonetalon Mountains
 @m^1443^Desolace
+@m^1445^Dustwallow Marsh
 @c^118^
 @c^724^
 @c^733^
@@ -273,7 +331,22 @@ GoldScout-export 5^fkqemiwx3fkj^1
 @c^279985^
 @c^279987^
 @c^286152^
+@a^212^307:1
+@a^684^128:2,147:3,167:2
+@a^688^26:2,27:1
+@a^689^29:7,49:1
+@a^690^167:2
+@a^772^128:1
+@a^938^28:1,29:2
+@a^940^28:1
+@a^1114^128:1
+@a^1251^307:2
 @a^4041^286:1,287:1
+@a^4344^228:1
+@a^4391^207:1
+@a^4411^167:1
+@a^4412^227:1
+@a^4414^187:1
 @a^4664^91:1,111:2
 @a^4665^111:1
 @a^4666^111:2
