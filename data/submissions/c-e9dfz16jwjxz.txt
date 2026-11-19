@@ -1,14 +1,27 @@
-GoldScout-export 5^e9dfz16jwjxz^1
+GoldScout-export 5^e9dfz16jwjxz^2
 2156^2^0^18^19^1439^0.3562^0.8409^2^Gesprungener Golem^2836:1:1,5568:2:43^
-2157^1^0^20^20^1439^0.3614^0.8613^1^Steinungetüm^^
+2157^1^0^19^20^1439^0.3614^0.8613^1^Steinungetüm^^
 2158^1^0^18^18^1439^0.3516^0.8494^1^Späher der Kieselsplittertroggs^2781:1:1^
 2163^2^0^11^12^1439^0.4750^0.4117^2^Distelbär^2940:1:1,3169:1:1,3170:1:1,3173:1:1,11406:1:1^
 2164^1^0^13^14^1439^0.5176^0.3503^1^Tollwütiger Distelbär^3173:1:1^
+2165^1^0^16^17^1439^0.3901^0.8183^1^Ergrauter Distelbär^3170:1:1^
 2168^2^0^16^17^1439^0.5274^0.3317^2^Krieger der Schwarzfelle^^
 2169^2^0^17^18^1439^0.5081^0.3516^2^Totemiker der Schwarzfelle^1812:1:1^
-2237^2^0^18^18^1439^0.3868^0.7746^2^Mondpirscherpatriarch^5135:2:2^
+2174^1^0^15^15^1439^0.3382^0.7752^1^Küstenfrenzy^537:1:1^
+2181^12^0^18^19^1439^0.5831^0.2194^12^Myrmidone der Sturmschuppen^1788:1:1,1814:1:1,5523:5:5,279276:5:5^
+2182^8^0^19^20^1439^0.5901^0.2180^8^Zauberhexerin der Sturmschuppen^5523:3:3,279276:6:6^
+2183^6^0^20^21^1439^0.6054^0.2288^6^Krieger der Sturmschuppen^1746:1:1,1815:1:1,5523:2:2,17057:5:5,279276:2:2^
+2207^2^0^18^18^1439^0.3169^0.8585^2^Orakel der Grauflossen^5523:2:2,5784:1:1^
+2208^2^0^19^20^1439^0.3190^0.8720^2^Gezeitenjäger der Grauflossen^1179:1:1,5523:1:1,5784:1:1^
+2237^5^0^17^18^1439^0.4076^0.8017^5^Mondpirscherpatriarch^5135:3:3,5386:3:3^
 6788^1^0^19^19^1439^0.5155^0.3780^1^Höhlenmutter^2940:1:1,3170:1:1,3173:1:1^
+@i^537^Glanzlose Frenzyschuppe
+@i^1179^Eiskalte Milch
+@i^1746^Gekettelter Gürtel
+@i^1788^Geflickte Lederstiefel
 @i^1812^Kurzstielige Streitaxt
+@i^1814^Ramponierter Schlaghammer
+@i^1815^Ornamentstreitkolben
 @i^2781^Schmutzige Donnerbüchse
 @i^2836^Grober Stein
 @i^2940^Blutige Bärentatze
@@ -16,9 +29,20 @@ GoldScout-export 5^e9dfz16jwjxz^1
 @i^3170^Großer Bärenzahn
 @i^3173^Bärenfleisch
 @i^5135^Dünne schwarze Klaue
+@i^5386^Feiner Mondpirscherpelz
+@i^5523^Kleine rankenfüßige Muschel
 @i^5568^Glatter Kiesel
+@i^5784^Schleimige Murlocschuppe
 @i^11406^Faulendes Bärengerippe
+@i^17057^Glänzende Fischschuppen
+@i^279276^Fragment des Amuletts von Mathystra
+@q^537^0:15:0
+@q^1179^1:0:0
+@q^1746^0:4:0
+@q^1788^0:4:0
 @q^1812^0:2:0
+@q^1814^0:2:0
+@q^1815^0:2:0
 @q^2781^0:2:0
 @q^2836^1:7:1
 @q^2940^0:15:0
@@ -26,8 +50,13 @@ GoldScout-export 5^e9dfz16jwjxz^1
 @q^3170^0:15:0
 @q^3173^1:7:1
 @q^5135^0:15:0
+@q^5386^1:12:0
+@q^5523^1:7:0
 @q^5568^1:6:0
+@q^5784^1:7:1
 @q^11406^0:15:0
+@q^17057^1:15:0
+@q^279276^1:0:0
 @m^1439^Dunkelküste
 @c^724^
 @c^733^
@@ -643,8 +672,15 @@ GoldScout-export 5^e9dfz16jwjxz^1
 @a^2158^327:1
 @a^2163^169:2
 @a^2164^150:1
+@a^2165^327:1
 @a^2168^130:2
 @a^2169^149:1,150:1
-@a^2237^287:1,327:1
+@a^2174^306:1
+@a^2181^71:1,91:8,92:3
+@a^2182^91:6,92:2
+@a^2183^91:1,92:5
+@a^2207^346:2
+@a^2208^346:2
+@a^2237^287:1,327:2,328:2
 @a^6788^150:1
 @l^0^deDE
