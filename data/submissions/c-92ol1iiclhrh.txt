@@ -1,4 +1,9 @@
-GoldScout-export 5^92ol1iiclhrh^4
+GoldScout-export 5^92ol1iiclhrh^5
+2266^3^0^23^24^1424^0.3587^0.4245^3^Hillsbrad Farmer^2592:2:2,3692:1:1,4538:1:1,248688:1:1^
+2268^1^0^25^26^1424^0.3429^0.4265^1^Hillsbrad Footman^^
+2354^1^0^23^23^1424^0.4575^0.3644^1^Vicious Gray Bear^11406:1:1^
+2360^4^0^22^23^1424^0.3568^0.4219^4^Hillsbrad Farmhand^422:1:1,2592:2:3,3692:4:4^
+2449^1^0^25^25^1424^0.3349^0.4321^1^Citizen Wilkes^2592:1:2^
 2965^1^0^11^11^1412^0.3638^0.2393^1^Windfury Matriarch^2589:1:1,4776:1:1,17056:1:1^
 3991^1^0^20^20^1442^0.6467^0.5633^1^Venture Co. Deforester^^
 4023^3^0^25^26^1442^0.3653^0.6941^3^Bloodfury Roguefeather^929:1:1,3770:1:1,5115:1:1,17056:2:2,277936:1:1^
@@ -8,14 +13,17 @@ GoldScout-export 5^92ol1iiclhrh^4
 4035^1^0^26^26^1442^0.3570^0.7179^1^Furious Stone Spirit^^
 4038^5^0^26^27^1442^0.3427^0.7148^5^Burning Destroyer^16312:5:5^
 4041^1^0^27^28^1442^0.3666^0.7362^1^Scorched Basilisk^^
+@i^422^Dwarven Mild
 @i^929^Healing Potion
 @i^1205^Melon Juice
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2785^Stiff Recurve Bow
+@i^3692^Hillsbrad Human Skull
 @i^3770^Mutton Chop
 @i^3857^Coal
 @i^4306^Silk Cloth
+@i^4538^Snapvine Watermelon
 @i^4776^Ruffled Feather
 @i^5115^Broken Wishbone
 @i^5116^Long Tail Feather
@@ -28,18 +36,23 @@ GoldScout-export 5^92ol1iiclhrh^4
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
 @i^6361^Raw Rainbow Fin Albacore
+@i^11406^Rotting Bear Carcass
 @i^13881^Bloated Redgill
 @i^16312^Incendrites
 @i^17056^Light Feather
+@i^248688^Waylaid Crate: Journeyman Textiles
 @i^277936^Glittering Sunstone
+@q^422^1:0:0
 @q^929^1:0:0
 @q^1205^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2785^0:2:0
+@q^3692^1:12:0
 @q^3770^1:0:0
 @q^3857^1:7:1
 @q^4306^1:7:1
+@q^4538^1:0:0
 @q^4776^0:15:0
 @q^5115^0:15:0
 @q^5116^1:7:1
@@ -52,12 +65,15 @@ GoldScout-export 5^92ol1iiclhrh^4
 @q^6358^1:7:1
 @q^6359^1:7:1
 @q^6361^1:7:1
+@q^11406^0:15:0
 @q^13881^2:15:0
 @q^16312^1:12:0
 @q^17056^1:15:1
+@q^248688^1:0:1
 @q^277936^1:12:0
 @m^1412^Mulgore
 @m^1413^The Barrens
+@m^1424^Hillsbrad Foothills
 @m^1442^Stonetalon Mountains
 @m^1456^Thunder Bluff
 @c^724^
@@ -747,6 +763,11 @@ GoldScout-export 5^92ol1iiclhrh^4
 @c^279985^
 @c^279987^
 @c^286152^
+@a^2266^167:3
+@a^2268^166:1
+@a^2354^149:1
+@a^2360^166:1,167:3
+@a^2449^166:1
 @a^2965^87:1
 @a^3991^232:1
 @a^4023^267:3
