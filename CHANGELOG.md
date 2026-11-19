@@ -7,8 +7,11 @@ releases add their own line automatically.
 
 ## Unreleased
 
+## v0.12.32
+
 - **Flip tab: buy at Blackwater, sell on your auction house.** The new tab lists items that are cheap on your realm's Blackwater (goblin) auction house and sell for more on your faction's, with the profit each after the cut, the margin, and how many are listed on both. It needs prices for both auction houses: GoldScout Companion saves them every hour, or scan at each. `/gscout flip` opens it.
 - **Bag items worth listing now show an auction house hammer, not a gold coin:** junk-selling addons such as Scrap mark items to sell to a vendor with a gold coin, which is the opposite advice, and the two were easy to mix up.
+- Updated drop data from the community.
 
 ## v0.12.31
 
