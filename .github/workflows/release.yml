@@ -244,6 +244,27 @@ jobs:
 
   # Downloads what was just published and checks it: the zip's TOC version is
   # the tag, every file the TOC lists is in the zip, and the companion is there.
+  # Tells the GoldScout Discord's announcements channel about a hand-made
+  # release, with its patch notes (tools/announce.py), once it's published and
+  # verified. Daily data releases aren't announced. Needs the
+  # DISCORD_ANNOUNCE_WEBHOOK secret (that channel's webhook URL); without it,
+  # nothing is posted.
+  announce:
+    needs: verify
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Announce on Discord
+        env:
+          DISCORD_ANNOUNCE_WEBHOOK: ${{ secrets.DISCORD_ANNOUNCE_WEBHOOK }}
+        run: python3 tools/announce.py "$GITHUB_REF_NAME" | tee -a "$GITHUB_STEP_SUMMARY"
+
   verify:
     needs: [release, companion]
     runs-on: ubuntu-latest

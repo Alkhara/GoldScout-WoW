@@ -24,6 +24,7 @@ ROOT = Path(__file__).resolve().parent.parent
 REPO = "Alkhara/GoldScout-WoW"
 API = "https://api.github.com/repos/" + REPO
 sys.path.insert(0, str(ROOT / "tools"))
+import announce  # noqa: E402
 import changelog  # noqa: E402
 import store_page  # noqa: E402
 import verify_release  # noqa: E402
@@ -76,6 +77,11 @@ def preflight(tag):
     problem = changelog.check(tag)
     if problem:
         verify_release.fail(problem)
+    # The notes go out on GitHub, CurseForge and Discord: a security fix is "Security fix", never its details.
+    words = announce.sensitive(changelog.sections(changelog.CHANGELOG.read_text(encoding="utf-8")).get(tag, ""))
+    if words:
+        verify_release.fail("CHANGELOG.md %s says too much about a security problem (%s): write \"Security fix\" "
+                            "instead" % (tag, ", ".join(words)))
     problem = store_page.check(tag)
     if problem:
         verify_release.fail(problem)
