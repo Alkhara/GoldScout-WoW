@@ -1,10 +1,16 @@
-GoldScout-export 5^qxrxw2cnfb1v^7
+GoldScout-export 5^qxrxw2cnfb1v^8
 1765^1^0^10^11^1421^0.4607^0.4399^1^Worg^^
 1766^13^0^11^12^1421^0.5728^0.1164^13^Mottled Worg^2672:7:7,3164:3:3,3299:2:2,3300:2:2,6515:1:1^
 1778^3^0^11^12^1421^0.4906^0.3940^3^Ferocious Grizzled Bear^818:1:1,3170:1:1,3173:1:1,3253:1:1^
 1867^1^0^13^14^1421^0.4933^0.6112^1^Dalaran Apprentice^^
-3125^1^0^6^6^1411^0.5580^0.4917^1^Clattering Scorpid^^
-3129^1^0^7^7^1411^0.5624^0.5021^1^Kul Tiras Marine^1414:1:1^
+3119^14^0^6^7^1411^0.4942^0.7890^14^Kolkar Drudge^117:1:1,118:1:1,1427:1:1,2589:1:1,2643:1:1,2774:1:1,4870:4:4^
+3120^11^0^7^8^1411^0.4725^0.7887^11^Kolkar Outrunner^159:1:1,1412:1:1,1420:1:1,2589:2:2,4870:4:4^
+3121^4^0^7^8^1411^0.6271^0.9244^4^Durotar Tiger^4814:1:1,4892:4:4^
+3122^2^0^6^8^1411^0.6351^0.8390^2^Bloodtalon Taillasher^^
+3125^3^0^5^6^1411^0.5398^0.6327^3^Clattering Scorpid^^
+3128^5^0^5^6^1411^0.5849^0.5679^5^Kul Tiras Sailor^1376:1:1,1377:1:1,2070:1:1,2138:1:1,2589:3:4,2649:1:1^
+3129^8^0^6^7^1411^0.5857^0.5616^8^Kul Tiras Marine^118:1:1,1414:2:2,2070:1:1,2589:1:1^
+3192^1^0^8^8^1411^0.5963^0.5835^1^Lieutenant Benedict^4882:1:1^
 5647^1^0^44^44^1446^0.3884^0.2064^1^Sandfury Firecaller^1520:1:1^
 5648^4^0^0^0^0^0.0000^0.0000^0^^4306:1:4,4338:1:4^
 5649^4^0^0^0^0^0.0000^0.0000^0^^1520:1:1,4019:1:1,4306:1:2,262889:1:1^
@@ -35,28 +41,37 @@ GoldScout-export 5^qxrxw2cnfb1v^7
 251661^15^0^5^6^2521^0.4061^0.4081^15^Galestrider^1377:1:1,2138:1:1,2649:1:1,4757:10:10,5469:8:8,6889:4:4,7096:3:3,7097:2:2^
 254589^1^0^8^8^2521^0.4281^0.5225^1^Vulgara the Insatiable^257942:1:1^
 257521^12^0^5^6^2521^0.4605^0.3914^12^High Order Apprentice^118:1:1,159:2:2,1364:1:1,1430:1:1,2589:2:3,2653:1:1,4540:9:9,255663:1:1^
+268530^1^0^9^9^1411^0.6842^0.7190^1^Bloodtalon Matriarch^4877:1:1,277128:1:1^
+@i^117^Tough Jerky
 @i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
 @i^818^Tigerseye
 @i^1364^Ragged Leather Vest
 @i^1366^Ragged Leather Pants
 @i^1369^Ragged Leather Belt
+@i^1376^Frayed Cloak
 @i^1377^Frayed Gloves
 @i^1411^Withered Staff
+@i^1412^Crude Bastard Sword
 @i^1414^Cracked Sledge
 @i^1415^Carpenter's Mallet
+@i^1420^Worn Leather Bracers
 @i^1425^Worn Leather Vest
+@i^1427^Patchwork Shoes
 @i^1430^Patchwork Gloves
 @i^1520^Troll Sweat
 @i^1645^Moonberry Juice
 @i^1701^Curved Basilisk Claw
+@i^2070^Darnassian Bleu
 @i^2138^Sharpened Letter Opener
 @i^2213^Worn Large Shield
 @i^2589^Linen Cloth
+@i^2643^Loose Chain Bracers
 @i^2645^Loose Chain Gloves
 @i^2649^Flimsy Chain Belt
 @i^2653^Flimsy Chain Gloves
 @i^2672^Stringy Wolf Meat
+@i^2774^Rust-covered Blunderbuss
 @i^3164^Discolored Worg Heart
 @i^3170^Large Bear Tooth
 @i^3173^Bear Meat
@@ -74,6 +89,11 @@ GoldScout-export 5^qxrxw2cnfb1v^7
 @i^4757^Cracked Egg Shells
 @i^4775^Cracked Bill
 @i^4776^Ruffled Feather
+@i^4814^Discolored Fang
+@i^4870^Canvas Scraps
+@i^4877^Stone Arrowhead
+@i^4882^Benedict's Key
+@i^4892^Durotar Tiger Fur
 @i^5469^Strider Meat
 @i^6300^Husk Fragment
 @i^6515^Disciple's Gloves
@@ -94,28 +114,37 @@ GoldScout-export 5^qxrxw2cnfb1v^7
 @i^262889^Sealed Expert's Writ
 @i^274639^Sacrificial Chain Vest
 @i^274644^Undying Headdress
+@i^277128^Bloodtalon Matriarch Eggs
+@q^117^1:0:0
 @q^118^1:0:0
 @q^159^1:0:0
 @q^818^2:7:1
 @q^1364^0:4:0
 @q^1366^0:4:0
 @q^1369^0:4:0
+@q^1376^0:4:0
 @q^1377^0:4:0
 @q^1411^0:2:0
+@q^1412^0:2:0
 @q^1414^0:2:0
 @q^1415^0:2:0
+@q^1420^0:4:0
 @q^1425^0:4:0
+@q^1427^0:4:0
 @q^1430^0:4:0
 @q^1520^0:15:0
 @q^1645^1:0:0
 @q^1701^0:15:0
+@q^2070^1:0:0
 @q^2138^0:2:0
 @q^2213^0:4:0
 @q^2589^1:7:1
+@q^2643^0:4:0
 @q^2645^0:4:0
 @q^2649^0:4:0
 @q^2653^0:4:0
 @q^2672^1:7:1
+@q^2774^0:2:0
 @q^3164^1:12:0
 @q^3170^0:15:0
 @q^3173^1:7:1
@@ -133,6 +162,11 @@ GoldScout-export 5^qxrxw2cnfb1v^7
 @q^4757^0:15:0
 @q^4775^0:15:0
 @q^4776^0:15:0
+@q^4814^0:15:0
+@q^4870^1:12:0
+@q^4877^0:15:0
+@q^4882^1:13:0
+@q^4892^1:12:0
 @q^5469^1:7:1
 @q^6300^0:15:0
 @q^6515^1:4:0
@@ -153,6 +187,7 @@ GoldScout-export 5^qxrxw2cnfb1v^7
 @q^262889^3:0:0
 @q^274639^3:4:0
 @q^274644^3:4:0
+@q^277128^1:12:0
 @m^1411^Durotar
 @m^1421^Silverpine Forest
 @m^1446^Tanaris
@@ -1369,8 +1404,14 @@ GoldScout-export 5^qxrxw2cnfb1v^7
 @a^1766^31:1,51:11,52:1
 @a^1778^150:2,169:1
 @a^1867^249:1
-@a^3125^191:1
-@a^3129^211:1
+@a^3119^309:5,310:6,329:3
+@a^3120^309:9,329:2
+@a^3121^331:1,372:1,392:2
+@a^3122^292:1,372:1
+@a^3125^191:1,290:2
+@a^3128^211:1,231:4
+@a^3129^211:2,231:6
+@a^3192^231:1
 @a^5647^87:1
 @a^250868^208:1
 @a^251245^148:7,167:2,168:3,187:1,188:1
@@ -1380,4 +1421,5 @@ GoldScout-export 5^qxrxw2cnfb1v^7
 @a^251661^148:8,167:4,168:1,187:1,188:1
 @a^254589^208:1
 @a^257521^149:12
+@a^268530^293:1
 @l^0^enUS

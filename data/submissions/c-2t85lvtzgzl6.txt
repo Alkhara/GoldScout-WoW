@@ -1,7 +1,11 @@
-GoldScout-export 5^2t85lvtzgzl6^2
+GoldScout-export 5^2t85lvtzgzl6^3
 5229^11^0^40^41^1444^0.7595^0.2972^11^Gordunni Ogre^4306:2:3,4338:5:8,248691:1:1^
 5232^7^0^42^43^1444^0.7667^0.3090^7^Gordunni Brute^4306:1:1,4338:1:2,262889:1:1^
+5234^5^0^43^44^1444^0.6034^0.5905^5^Gordunni Mauler^4024:1:1,4306:1:2^
 5237^11^0^41^42^1444^0.7794^0.3239^11^Gordunni Ogre Mage^4306:1:1,4338:4:6,4599:1:1^
+5238^1^0^45^46^1444^0.5846^0.7251^1^Gordunni Battlemaster^^
+5239^2^0^46^46^1444^0.5822^0.7217^2^Gordunni Mage-Lord^4338:2:2,9371:1:1^
+5240^1^0^43^44^1444^0.5965^0.6273^1^Gordunni Warlock^^
 5249^9^0^40^41^1444^0.7267^0.3695^9^Woodpaw Mongrel^4306:1:1,4338:3:4,9237:2:2^
 5251^6^0^41^42^1444^0.7281^0.3738^6^Woodpaw Trapper^4306:1:1,4338:1:2,9237:1:1^
 5253^18^0^41^42^1444^0.7297^0.3737^18^Woodpaw Brute^4338:3:6,4599:1:1,6149:1:1,9237:6:6^
@@ -9,6 +13,12 @@ GoldScout-export 5^2t85lvtzgzl6^2
 5255^10^0^42^43^1444^0.6781^0.5385^10^Woodpaw Reaver^4338:3:3,4599:1:1^
 5258^3^0^43^44^1444^0.6820^0.5306^3^Woodpaw Alpha^4338:1:2^
 5278^8^0^43^45^1444^0.6800^0.4816^8^Sprite Darter^4402:1:1,6444:1:1,9369:5:7,9589:5:5^
+5292^9^0^43^44^1444^0.5470^0.5609^9^Feral Scar Yeti^1645:1:1,3928:1:1,4424:1:1,8973:2:2^
+5293^4^0^45^46^1444^0.5164^0.5987^4^Hulking Feral Scar^8973:2:2^
+5295^2^0^44^45^1444^0.5269^0.5666^2^Enraged Feral Scar^8973:1:1^
+5300^17^0^43^44^1444^0.5620^0.6216^17^Frayfeather Hippogryph^4589:4:4,4590:2:2,5829:2:2,9591:14:14,9592:10:10,11417:1:1,11418:4:4^
+5304^3^0^44^45^1444^0.5567^0.6394^3^Frayfeather Stagwing^4590:1:1,5829:1:1,9591:3:3,9592:2:2,11418:2:2^
+5307^3^0^41^42^1444^0.5868^0.5847^3^Vale Screecher^6444:1:1^
 5423^1^0^44^44^1446^0.4371^0.3882^1^Scorpid Tail Lasher^^
 5617^2^0^43^43^1446^0.6123^0.2795^2^Wastewander Shadow Mage^1645:1:1,4338:1:1^
 5623^1^0^44^44^1446^0.6579^0.3628^1^Wastewander Assassin^3927:1:1^
@@ -29,26 +39,37 @@ GoldScout-export 5^2t85lvtzgzl6^2
 @i^1645^Moonberry Juice
 @i^2450^Briarthorn
 @i^3927^Fine Aged Cheddar
+@i^3928^Superior Healing Potion
 @i^3964^Thick Cloak
 @i^4020^Splintering Battle Axe
+@i^4024^Heavy War Staff
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4402^Small Flame Sac
 @i^4421^Scroll of Protection III
+@i^4424^Scroll of Spirit III
+@i^4589^Long Elegant Feather
+@i^4590^Curved Yellow Bill
 @i^4599^Cured Ham Steak
 @i^4601^Soft Banana Bread
+@i^5829^Razor-sharp Beak
 @i^6149^Greater Mana Potion
 @i^6444^Forked Tongue
 @i^8751^Overlinked Coif
+@i^8973^Thick Yeti Hide
 @i^9237^Woodpaw Gnoll Mane
 @i^9246^Firebeard's Head
 @i^9260^Volatile Rum
 @i^9276^Pirate's Footlocker
 @i^9369^Iridescent Sprite Darter Wing
+@i^9371^Gordunni Orb
 @i^9460^Grimtotem Horn
 @i^9589^Encrusted Minerals
 @i^9590^Splintered Log
+@i^9591^Resilient Sinew
 @i^9592^Metallic Fragments
+@i^11417^Feathery Wing
+@i^11418^Hollow Wing Bone
 @i^12023^Tellurium Necklace of the Gorilla
 @i^14417^Silksand Tunic
 @i^14956^Bloodforged Bindings of Nature Protection
@@ -61,26 +82,37 @@ GoldScout-export 5^2t85lvtzgzl6^2
 @q^1645^1:0:0
 @q^2450^1:7:1
 @q^3927^1:0:0
+@q^3928^1:0:0
 @q^3964^0:4:0
 @q^4020^0:2:0
+@q^4024^0:2:0
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4402^1:7:1
 @q^4421^1:0:0
+@q^4424^1:0:0
+@q^4589^1:7:1
+@q^4590^0:15:0
 @q^4599^1:0:0
 @q^4601^1:0:0
+@q^5829^0:15:0
 @q^6149^1:0:0
 @q^6444^0:15:0
 @q^8751^0:4:0
+@q^8973^1:12:0
 @q^9237^1:12:0
 @q^9246^1:12:0
 @q^9260^1:0:0
 @q^9276^1:15:0
 @q^9369^1:12:0
+@q^9371^1:12:0
 @q^9460^1:12:0
 @q^9589^1:12:0
 @q^9590^1:12:0
+@q^9591^1:12:0
 @q^9592^1:12:0
+@q^11417^0:15:0
+@q^11418^0:15:0
 @q^12023^2:4:0
 @q^14417^2:4:0
 @q^14956^2:4:0
@@ -786,7 +818,11 @@ GoldScout-export 5^2t85lvtzgzl6^2
 @c^286152^
 @a^5229^114:3,115:4,135:3,156:1
 @a^5232^94:1,114:1,115:1,135:3,136:1
+@a^5234^232:3,251:2
 @a^5237^114:2,115:1,135:5,136:1,156:2
+@a^5238^291:1
+@a^5239^291:2
+@a^5240^251:1
 @a^5249^154:9
 @a^5251^154:6
 @a^5253^154:17,174:1
@@ -794,6 +830,12 @@ GoldScout-export 5^2t85lvtzgzl6^2
 @a^5255^213:6,233:2,234:2
 @a^5258^213:2,234:1
 @a^5278^193:8
+@a^5292^211:2,230:3,231:4
+@a^5293^230:2,250:2
+@a^5295^230:2
+@a^5300^250:1,251:16
+@a^5304^250:1,251:2
+@a^5307^211:1,252:2
 @a^5423^148:1
 @a^5617^91:1,132:1
 @a^5623^153:1
