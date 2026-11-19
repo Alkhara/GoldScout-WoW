@@ -1,5 +1,8 @@
-GoldScout-export 5^b7g4gvdbycfb^4
+GoldScout-export 5^b7g4gvdbycfb^5
 1111^10^0^21^22^1437^0.5180^0.6311^10^Leech Stalker^878:1:1,1081:3:3,1288:1:1,2251:3:3,3174:6:6,4428:4:4^
+2248^9^0^30^31^1424^0.4665^0.3253^9^Cave Yeti^^
+2249^1^0^32^32^1424^0.4541^0.3132^1^Ferocious Yeti^^
+2384^5^0^23^24^1424^0.4632^0.3744^5^Starving Mountain Lion^3496:2:2,5136:3:3,5635:1:1,248684:1:1^
 3103^4^0^6^7^1411^0.6081^0.7012^4^Makrura Clacker^1414:1:1,4873:2:2,4887:3:3,211787:1:1^
 3104^4^0^6^7^1411^0.6076^0.6490^4^Makrura Shellhide^4887:1:1^
 3106^20^0^5^6^1411^0.5806^0.6752^20^Pygmy Surf Crawler^4873:8:8,4874:5:5,4888:8:8^
@@ -91,6 +94,7 @@ GoldScout-export 5^b7g4gvdbycfb^4
 @i^2774^Rust-covered Blunderbuss
 @i^3174^Spider Ichor
 @i^3182^Spider's Silk
+@i^3496^Mountain Lion Blood
 @i^3667^Tender Crocolisk Meat
 @i^3712^Turtle Meat
 @i^3740^Decapitating Sword of Healing
@@ -109,6 +113,7 @@ GoldScout-export 5^b7g4gvdbycfb^4
 @i^4887^Intact Makrura Eye
 @i^4888^Crawler Mucus
 @i^4892^Durotar Tiger Fur
+@i^5136^Torn Furry Ear
 @i^5465^Small Spider Leg
 @i^5524^Thick-shelled Clam
 @i^5635^Sharp Claw
@@ -131,6 +136,7 @@ GoldScout-export 5^b7g4gvdbycfb^4
 @i^17058^Fish Oil
 @i^211784^Scroll: WUBBA WUBBA
 @i^211787^Scroll: LOWER PING WHOMEVER
+@i^248684^Waylaid Crate: Apprentice Textiles
 @i^248687^Waylaid Crate: Journeyman Ore
 @i^248688^Waylaid Crate: Journeyman Textiles
 @i^270866^Titan Relic
@@ -182,6 +188,7 @@ GoldScout-export 5^b7g4gvdbycfb^4
 @q^2774^0:2:0
 @q^3174^1:7:1
 @q^3182^1:7:1
+@q^3496^1:12:0
 @q^3667^1:7:1
 @q^3712^1:7:1
 @q^3740^2:2:0
@@ -200,6 +207,7 @@ GoldScout-export 5^b7g4gvdbycfb^4
 @q^4887^1:12:0
 @q^4888^1:12:0
 @q^4892^1:12:0
+@q^5136^0:15:0
 @q^5465^1:7:1
 @q^5524^1:7:0
 @q^5635^1:7:1
@@ -222,6 +230,7 @@ GoldScout-export 5^b7g4gvdbycfb^4
 @q^17058^1:15:0
 @q^211784^1:0:0
 @q^211787^1:0:0
+@q^248684^1:0:1
 @q^248687^1:0:1
 @q^248688^1:0:1
 @q^270866^1:12:0
@@ -236,6 +245,7 @@ GoldScout-export 5^b7g4gvdbycfb^4
 @q^284844^1:12:0
 @m^1411^Durotar
 @m^1414^Kalimdor
+@m^1424^Hillsbrad Foothills
 @m^1437^Wetlands
 @c^724^
 @c^733^
@@ -1515,6 +1525,9 @@ GoldScout-export 5^b7g4gvdbycfb^4
 @c^279987^
 @c^286152^
 @a^1111^230:1,249:3,250:3,270:3
+@a^2248^129:9
+@a^2249^129:1
+@a^2384^129:1,148:1,149:2,169:1
 @a^3103^272:2,291:1,292:1
 @a^3104^212:1,252:1,291:2
 @a^3106^172:2,192:3,212:2,272:1,292:2,311:5,330:4,331:1

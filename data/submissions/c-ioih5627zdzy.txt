@@ -1,4 +1,4 @@
-GoldScout-export 5^ioih5627zdzy^4
+GoldScout-export 5^ioih5627zdzy^5
 206^30^0^29^30^1431^0.6107^0.8102^30^Nightbane Vile Fang^1205:1:1,1759:1:1,2794:1:1,5635:4:4,5637:1:1,6607:1:1,248708:1:1^
 212^5^0^29^30^1431^0.3640^0.8050^5^Splinter Fist Warrior^929:1:1,4306:1:1^
 300^1^0^30^30^1431^0.3773^0.8428^1^Zzarc' Vul^1968:1:1^
@@ -26,6 +26,10 @@ GoldScout-export 5^ioih5627zdzy^4
 1364^1^0^34^34^1437^0.6219^0.2993^1^Balgaras the Foul^3639:1:1^
 1487^1^0^31^31^1431^0.3814^0.8434^1^Splinter Fist Enslaver^^
 2108^1^0^29^29^1437^0.4694^0.4846^1^Garneg Charskull^929:1:1,2592:1:2,7370:1:1^
+2248^1^0^31^31^1424^0.4397^0.3142^1^Cave Yeti^^
+2249^8^0^31^32^1424^0.4453^0.2949^8^Ferocious Yeti^3720:3:3,3771:2:2,3816:1:1^
+2369^8^0^30^31^1424^0.5701^0.6844^8^Daggerspine Shorehunter^5524:5:5,17057:2:2,17058:2:2^
+2371^9^0^31^32^1424^0.5839^0.6892^9^Daggerspine Siren^7072:2:2,17057:2:2,17058:1:1^
 2376^25^0^30^31^1424^0.4209^0.6802^25^Torn Fin Oracle^3716:5:5,5524:12:12,5785:1:1,6308:1:2,17057:8:8,17058:6:6,249881:1:1^
 2377^30^0^31^32^1424^0.4236^0.6794^30^Torn Fin Tidehunter^3716:5:5,5524:16:16,5785:2:2,6308:1:3,7410:1:1,17057:7:7,17058:8:8^
 2434^2^0^37^38^1424^0.4971^0.5990^2^Shadowy Assassin^^
@@ -57,9 +61,12 @@ GoldScout-export 5^ioih5627zdzy^4
 @i^3639^Ear of Balgaras
 @i^3685^Raptor Egg
 @i^3716^Murloc Head
+@i^3720^Yeti Fur
 @i^3730^Big Bear Meat
 @i^3770^Mutton Chop
+@i^3771^Wild Hog Shank
 @i^3813^Double Mail Pants
+@i^3816^Reflective Heater
 @i^4306^Silk Cloth
 @i^4428^Spider Palp
 @i^5524^Thick-shelled Clam
@@ -69,6 +76,7 @@ GoldScout-export 5^ioih5627zdzy^4
 @i^6308^Raw Bristle Whisker Catfish
 @i^6607^Dervish Leggings of the Gorilla
 @i^6610^Sage's Robe of the Elder
+@i^7072^Naga Scale
 @i^7370^Elder's Sash of the Sorcerer
 @i^7410^Infiltrator Bracers of the Bear
 @i^11407^Torn Bear Pelt
@@ -105,9 +113,12 @@ GoldScout-export 5^ioih5627zdzy^4
 @q^3639^1:12:0
 @q^3685^1:7:1
 @q^3716^1:12:0
+@q^3720^1:12:0
 @q^3730^1:7:1
 @q^3770^1:0:0
+@q^3771^1:0:0
 @q^3813^0:4:0
+@q^3816^0:4:0
 @q^4306^1:7:1
 @q^4428^0:15:0
 @q^5524^1:7:0
@@ -117,6 +128,7 @@ GoldScout-export 5^ioih5627zdzy^4
 @q^6308^1:7:1
 @q^6607^2:4:0
 @q^6610^2:4:0
+@q^7072^1:7:1
 @q^7370^2:4:0
 @q^7410^2:4:0
 @q^11407^1:12:0
@@ -849,6 +861,10 @@ GoldScout-export 5^ioih5627zdzy^4
 @a^1364^112:1
 @a^1487^327:1
 @a^2108^189:1
+@a^2248^128:1
+@a^2249^108:8
+@a^2369^251:3,271:3,291:2
+@a^2371^251:1,271:5,291:1,292:2
 @a^2376^249:2,267:4,268:17,269:2
 @a^2377^249:2,267:4,268:18,269:6
 @a^2434^229:1,249:1

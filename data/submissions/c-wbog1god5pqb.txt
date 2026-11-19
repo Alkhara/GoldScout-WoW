@@ -1,4 +1,4 @@
-GoldScout-export 5^wbog1god5pqb^16
+GoldScout-export 5^wbog1god5pqb^17
 587^1^0^34^34^1434^0.3420^0.1404^1^Bloodscalp Warrior^^
 681^3^0^30^31^1434^0.3609^0.1287^3^Young Stranglethorn Tiger^1686:1:1,12202:1:1,248687:1:1^
 682^4^0^32^33^1434^0.4262^0.1548^4^Stranglethorn Tiger^1686:3:3,1687:1:1^
@@ -82,6 +82,7 @@ GoldScout-export 5^wbog1god5pqb^16
 4539^2^0^0^0^0^0.0000^0.0000^0^^11392:2:2,11393:1:1^
 4541^1^0^0^0^0^0.0000^0.0000^0^^^
 4623^4^0^0^0^0^0.0000^0.0000^0^^^
+4693^1^0^36^37^1443^0.5895^0.4849^1^Dread Flyer^1464:1:1,12037:1:1^
 4842^1^0^0^0^0^0.0000^0.0000^0^^6688:1:1^
 6035^2^0^0^0^0^0.0000^0.0000^0^^^
 6132^5^0^23^24^1413^0.4311^0.9021^5^Razorfen Servitor^2592:2:7,4306:1:1^
@@ -115,6 +116,9 @@ GoldScout-export 5^wbog1god5pqb^16
 7732^15^0^1^1^1415^0.4317^0.5282^15^Dupe Bug^^
 7800^2^0^0^0^0^0.0000^0.0000^0^^7368:1:1,9459:1:1,9492:1:1,9857:1:1^
 10928^1^0^29^30^1437^0.6054^0.4180^1^Succubus Minion^^
+11559^2^0^39^40^2652^0.3293^0.2535^2^Outcast Necromancer^4338:1:1,260347:1:1^
+11561^8^0^37^42^2652^0.3428^0.2460^8^Undead Ravager^4306:3:7,4338:1:1^
+11576^1^0^34^34^1443^0.5499^0.6532^1^Whirlwind Ripper^^
 245999^1^0^0^0^0^0.0000^0.0000^0^^^
 246020^1^0^0^0^0^0.0000^0.0000^0^^251961:1:1^
 246600^3^0^0^0^0^0.0000^0.0000^0^^1827:1:1,6438:1:1,6439:2:2^
@@ -122,6 +126,7 @@ GoldScout-export 5^wbog1god5pqb^16
 247001^1^0^0^0^0^0.0000^0.0000^0^^276160:1:1^
 247003^2^0^0^0^0^0.0000^0.0000^0^^6438:1:1,276160:2:2^
 247016^1^0^0^0^0^0.0000^0.0000^0^^4606:1:1^
+253272^1^0^42^42^2652^0.3499^0.2177^1^Magram Necromancer^^
 255066^2^0^0^0^0^0.0000^0.0000^0^^^
 255068^2^0^0^0^0^0.0000^0.0000^0^^2592:1:1,4606:1:1^
 255069^2^0^0^0^0^0.0000^0.0000^0^^^
@@ -157,6 +162,7 @@ GoldScout-export 5^wbog1god5pqb^16
 @i^1420^Worn Leather Bracers
 @i^1423^Worn Leather Pants
 @i^1427^Patchwork Shoes
+@i^1464^Buzzard Talon
 @i^1529^Jade
 @i^1630^Broken Electro-lantern
 @i^1686^Bristly Whisker
@@ -232,6 +238,7 @@ GoldScout-export 5^wbog1god5pqb^16
 @i^3880^Head of Bangalash
 @i^4097^Chipped Gorilla Tooth
 @i^4306^Silk Cloth
+@i^4338^Mageweave Cloth
 @i^4363^Copper Modulator
 @i^4377^Heavy Blasting Powder
 @i^4461^Raptor Hide
@@ -299,6 +306,7 @@ GoldScout-export 5^wbog1god5pqb^16
 @i^248687^Waylaid Crate: Journeyman Ore
 @i^251961^Arcane Mote
 @i^253982^Pattern: Filigreed Shadow Circlet
+@i^260347^Tattered Journal
 @i^262888^Sealed Journeyman's Writ
 @i^268548^Empty Powder Keg
 @i^274042^Skullduggery Belt
@@ -326,6 +334,7 @@ GoldScout-export 5^wbog1god5pqb^16
 @q^1420^0:4:0
 @q^1423^0:4:0
 @q^1427^0:4:0
+@q^1464^0:15:0
 @q^1529^2:7:1
 @q^1630^0:15:0
 @q^1686^0:15:0
@@ -401,6 +410,7 @@ GoldScout-export 5^wbog1god5pqb^16
 @q^3880^1:12:0
 @q^4097^0:15:0
 @q^4306^1:7:1
+@q^4338^1:7:1
 @q^4363^1:7:1
 @q^4377^1:7:1
 @q^4461^1:7:1
@@ -468,6 +478,7 @@ GoldScout-export 5^wbog1god5pqb^16
 @q^248687^1:0:1
 @q^251961^1:12:0
 @q^253982^3:9:0
+@q^260347^1:15:0
 @q^262888^3:0:0
 @q^268548^1:12:0
 @q^274042^3:4:0
@@ -486,8 +497,10 @@ GoldScout-export 5^wbog1god5pqb^16
 @m^1434^Stranglethorn Vale
 @m^1437^Wetlands
 @m^1441^Thousand Needles
+@m^1443^Desolace
 @m^1445^Dustwallow Marsh
 @m^1453^Stormwind City
+@m^2652^Shen'dralas
 @c^118^
 @c^724^
 @c^733^
@@ -1853,6 +1866,7 @@ GoldScout-export 5^wbog1god5pqb^16
 @a^4386^147:1
 @a^4387^167:1
 @a^4458^87:1
+@a^4693^191:1
 @a^6132^368:5
 @a^6208^208:1
 @a^6210^208:5
@@ -1861,6 +1875,10 @@ GoldScout-export 5^wbog1god5pqb^16
 @a^6231^208:5
 @a^7732^208:15
 @a^10928^172:1
+@a^11559^86:1,106:1
+@a^11561^26:1,86:2,106:3,126:1,128:1
+@a^11576^270:1
+@a^253272^86:1
 @a^269075^245:1
 @a^270094^210:1
 @a^271336^113:1
