@@ -1,4 +1,4 @@
-GoldScout-export 5^1dkail4qsvir^3
+GoldScout-export 5^1dkail4qsvir^4
 428^5^0^18^19^1433^0.4202^0.3286^5^Dire Condor^556:1:1,1080:1:1,4775:1:1,4776:1:1,5114:1:1,6889:5:5,17056:3:3^
 429^3^0^25^25^1433^0.7273^0.4269^3^Shadowhide Darkweaver^1075:1:1,1962:1:1^
 430^3^0^18^19^1433^0.2061^0.2444^3^Redridge Mystic^2589:1:3^
@@ -18,9 +18,20 @@ GoldScout-export 5^1dkail4qsvir^3
 615^10^0^23^24^1433^0.3025^0.1007^10^Blackrock Tracker^929:1:1,1445:1:1,1752:1:1,2592:2:3,3770:1:1^
 703^1^0^26^26^1433^0.7642^0.4093^1^Lieutenant Fangore^3632:1:1^
 4463^5^0^22^23^1433^0.2989^0.1180^5^Blackrock Summoner^2592:2:2,3770:1:1^
+4798^4^0^0^0^0^0.0000^0.0000^0^^2592:1:3,5952:1:1,248707:1:1^
+4799^4^0^0^0^0^0.0000^0.0000^0^^1823:1:1,5952:1:1,14567:1:1,211784:1:1^
+4805^6^0^0^0^0^0.0000^0.0000^0^^1801:1:1,1824:1:1,2219:1:1,3012:1:1,5524:1:1,5952:1:1,14728:1:1,17057:2:2^
+4807^6^0^0^0^0^0.0000^0.0000^0^^5524:3:3,5952:1:1,14162:1:1,17057:3:3^
+4810^1^0^0^0^0^0.0000^0.0000^0^^2592:1:3^
+4815^1^0^0^0^0^0.0000^0.0000^0^^^
+4818^3^0^0^0^0^0.0000^0.0000^0^^730:1:1,1468:1:1,5524:2:2,5784:1:1,17057:1:1^
+4820^3^0^0^0^0^0.0000^0.0000^0^^730:1:1,1468:1:1,1752:1:1,6308:1:3,14182:1:1,17057:1:1,17058:1:1^
+6243^1^0^0^0^0^0.0000^0.0000^0^^6905:1:1^
+12902^1^0^0^0^0^0.0000^0.0000^0^^273842:1:1^
 12922^4^0^22^23^1433^0.2966^0.1217^4^Imp Minion^^
 214456^1^0^23^23^1433^0.2889^0.0723^1^Dro'zem the Blasphemous^9799:1:1^
 @i^556^Buzzard Beak
+@i^730^Murloc Eye
 @i^929^Healing Potion
 @i^1075^Shadowhide Pendant
 @i^1080^Tough Condor Meat
@@ -28,11 +39,17 @@ GoldScout-export 5^1dkail4qsvir^3
 @i^1440^Gnoll Skull Basher
 @i^1445^Blackrock Pauldrons
 @i^1460^Shadowhide Two-handed Sword
+@i^1468^Murloc Fin
 @i^1752^Linked Chain Shoulderpads
+@i^1801^Rawhide Shoulderpads
+@i^1823^Bludgeoning Cudgel
+@i^1824^Shiny War Axe
 @i^1962^Glowing Shadowhide Pendant
+@i^2219^Small Round Shield
 @i^2287^Haunch of Meat
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^3012^Scroll of Agility
 @i^3049^Lambent Scale Breastplate
 @i^3174^Spider Ichor
 @i^3193^Oak Mallet of the Boar
@@ -44,12 +61,28 @@ GoldScout-export 5^1dkail4qsvir^3
 @i^4775^Cracked Bill
 @i^4776^Ruffled Feather
 @i^5114^Severed Talon
+@i^5524^Thick-shelled Clam
+@i^5784^Slimy Murloc Scale
+@i^5952^Corrupted Brain Stem
+@i^6308^Raw Bristle Whisker Catfish
+@i^6359^Firefin Snapper
 @i^6889^Small Egg
+@i^6905^Reef Axe
 @i^9799^Ivycloth Sash of Intellect
+@i^14162^Pagan Mitts of Shadow Wrath
+@i^14182^Watcher's Mantle of Spirit
+@i^14567^Bristlebark Belt
+@i^14728^War Paint Shoulder Pads
 @i^17056^Light Feather
+@i^17057^Shiny Fish Scales
+@i^17058^Fish Oil
+@i^211784^Scroll: WUBBA WUBBA
 @i^211853^Scroll: VOCE WELL
 @i^211855^Scroll: STHENIC LUNATE
+@i^248707^Waylaid Crate: Journeyman Parts
+@i^273842^Treacherous Treads
 @q^556^0:15:0
+@q^730^1:7:1
 @q^929^1:0:0
 @q^1075^1:12:0
 @q^1080^1:7:1
@@ -57,11 +90,17 @@ GoldScout-export 5^1dkail4qsvir^3
 @q^1440^2:2:0
 @q^1445^1:4:0
 @q^1460^2:2:0
+@q^1468^1:7:1
 @q^1752^0:4:0
+@q^1801^0:4:0
+@q^1823^0:2:0
+@q^1824^0:2:0
 @q^1962^1:12:0
+@q^2219^0:4:0
 @q^2287^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^3012^1:0:0
 @q^3049^2:4:0
 @q^3174^1:7:1
 @q^3193^2:2:0
@@ -73,12 +112,28 @@ GoldScout-export 5^1dkail4qsvir^3
 @q^4775^0:15:0
 @q^4776^0:15:0
 @q^5114^0:15:0
+@q^5524^1:7:0
+@q^5784^1:7:1
+@q^5952^1:12:0
+@q^6308^1:7:1
+@q^6359^1:7:1
 @q^6889^1:7:1
+@q^6905^3:2:0
 @q^9799^2:4:0
+@q^14162^2:4:0
+@q^14182^2:4:0
+@q^14567^2:4:0
+@q^14728^1:4:0
 @q^17056^1:15:1
+@q^17057^1:15:0
+@q^17058^1:15:0
+@q^211784^1:0:0
 @q^211853^1:0:0
 @q^211855^1:0:0
+@q^248707^2:0:1
+@q^273842^3:4:0
 @m^1433^Redridge Mountains
+@m^1437^Wetlands
 @c^2568^
 @c^2569^
 @c^2570^
@@ -652,4 +707,5 @@ GoldScout-export 5^1dkail4qsvir^3
 @a^4463^25:1,26:1,46:2,64:1
 @a^12922^25:1,26:1,46:1,64:1
 @a^214456^25:1
+@f^1437^0^2^124^6359:2:2^240:2
 @l^0^enUS

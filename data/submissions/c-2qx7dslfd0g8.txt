@@ -1,4 +1,4 @@
-GoldScout-export 5^2qx7dslfd0g8^4
+GoldScout-export 5^2qx7dslfd0g8^5
 2248^1^0^30^31^1424^0.4677^0.3315^1^Cave Yeti^^
 2265^4^0^24^25^1424^0.3241^0.4450^4^Hillsbrad Apprentice Blacksmith^422:1:1,2592:1:2^
 2267^1^0^24^25^1424^0.3034^0.4113^1^Hillsbrad Peasant^^
@@ -26,7 +26,9 @@ GoldScout-export 5^2qx7dslfd0g8^4
 2959^18^0^7^8^1412^0.4869^0.5820^18^Prairie Stalker^2672:11:11,3299:3:3,3300:2:2,4801:6:6^
 2962^13^0^7^8^1412^0.6084^0.7216^13^Windfury Harpy^2589:4:7,4751:6:6,4775:4:4,249865:1:1^
 2963^8^0^8^9^1412^0.5844^0.6943^8^Windfury Wind Witch^117:1:1,1429:1:1,2589:2:3,2598:1:1,4751:2:2,4776:1:1^
-2969^3^0^6^7^1412^0.3758^0.6106^3^Wiry Swoop^4769:3:3,6889:1:1^
+2967^6^0^8^9^1412^0.6050^0.6105^6^Galak Centaur^2212:1:1,2589:2:3,4562:1:1^
+2968^4^0^9^10^1412^0.6102^0.6084^4^Galak Outrunner^774:1:1,14088:1:1^
+2969^3^0^5^7^1412^0.3758^0.6106^3^Wiry Swoop^4769:3:3,6889:1:1^
 2970^2^0^7^9^1412^0.3680^0.4965^2^Swoop^4769:2:2^
 2989^7^0^7^8^1412^0.3407^0.5433^7^Bael'dun Digger^1416:1:1,1429:1:1,2589:3:4,2835:1:2,4702:5:5^
 3035^8^0^7^8^1412^0.3809^0.4910^8^Flatland Cougar^4802:6:6,4814:4:4^
@@ -51,9 +53,11 @@ GoldScout-export 5^2qx7dslfd0g8^4
 255072^2^0^0^0^0^0.0000^0.0000^0^^^
 268558^1^0^5^5^1412^0.3873^0.6182^1^Chakuyak^3300:1:1,270302:1:1^
 269134^1^0^0^0^0^0.0000^0.0000^0^^^
+275767^1^0^11^11^1412^0.6047^0.5981^1^Herak the Pillager^286075:1:1^
 276109^1^0^10^10^1412^0.3283^0.6566^1^Snarlsnout^^
 @i^117^Tough Jerky
 @i^422^Dwarven Mild
+@i^774^Malachite
 @i^1081^Crisp Spider Meat
 @i^1205^Melon Juice
 @i^1288^Large Venom Sac
@@ -65,6 +69,7 @@ GoldScout-export 5^2qx7dslfd0g8^4
 @i^1707^Stormwind Brie
 @i^1761^Reinforced Chain Vest
 @i^1786^Cross-stitched Vest
+@i^2212^Cracked Buckler
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2598^Pattern: Red Linen Robe
@@ -88,6 +93,7 @@ GoldScout-export 5^2qx7dslfd0g8^4
 @i^4338^Mageweave Cloth
 @i^4428^Spider Palp
 @i^4553^Jagged Piece of Stone
+@i^4562^Severing Axe of Agility
 @i^4606^Spongy Morel
 @i^4702^Prospector's Pick
 @i^4751^Windfury Talon
@@ -110,6 +116,7 @@ GoldScout-export 5^2qx7dslfd0g8^4
 @i^9808^Superior Leggings of Strength
 @i^12020^Thallium Choker of the Boar
 @i^12029^Greenstone Talisman of the Gorilla
+@i^14088^Beaded Cloak
 @i^15230^Ridge Cleaver of Healing
 @i^249865^Peace Tea
 @i^251961^Arcane Mote
@@ -123,8 +130,10 @@ GoldScout-export 5^2qx7dslfd0g8^4
 @i^275997^Cracked Sentry Core
 @i^276158^Crystallized Shard
 @i^276160^Mana Fragment
+@i^286075^Herak's Head
 @q^117^1:0:0
 @q^422^1:0:0
+@q^774^2:7:1
 @q^1081^1:7:1
 @q^1205^1:0:0
 @q^1288^1:7:1
@@ -136,6 +145,7 @@ GoldScout-export 5^2qx7dslfd0g8^4
 @q^1707^1:0:0
 @q^1761^0:4:0
 @q^1786^0:4:0
+@q^2212^0:4:0
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2598^2:9:0
@@ -159,6 +169,7 @@ GoldScout-export 5^2qx7dslfd0g8^4
 @q^4338^1:7:1
 @q^4428^0:15:0
 @q^4553^0:15:0
+@q^4562^2:2:0
 @q^4606^1:0:0
 @q^4702^1:12:0
 @q^4751^1:12:0
@@ -181,6 +192,7 @@ GoldScout-export 5^2qx7dslfd0g8^4
 @q^9808^2:4:0
 @q^12020^2:4:0
 @q^12029^2:4:0
+@q^14088^1:4:0
 @q^15230^2:2:0
 @q^249865^1:0:0
 @q^251961^1:12:0
@@ -194,6 +206,7 @@ GoldScout-export 5^2qx7dslfd0g8^4
 @q^275997^1:12:0
 @q^276158^0:15:0
 @q^276160^0:15:0
+@q^286075^1:12:0
 @m^1412^Mulgore
 @m^1416^Alterac Mountains
 @m^1424^Hillsbrad Foothills
@@ -356,10 +369,13 @@ GoldScout-export 5^2qx7dslfd0g8^4
 @a^2959^187:2,188:5,209:1,227:1,270:1,271:8
 @a^2962^291:6,292:7
 @a^2963^187:1,291:2,292:5
+@a^2967^251:3,252:3
+@a^2968^252:4
 @a^2969^227:1,247:2
 @a^2970^187:1,207:1
 @a^2989^206:6,207:1
 @a^3035^187:4,188:2,207:1,227:1
 @a^268558^247:1
+@a^275767^232:1
 @a^276109^266:1
 @l^0^enUS
