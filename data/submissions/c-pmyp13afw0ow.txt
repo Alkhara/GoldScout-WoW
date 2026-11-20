@@ -1,4 +1,4 @@
-GoldScout-export 5^pmyp13afw0ow^22
+GoldScout-export 5^pmyp13afw0ow^23
 587^18^0^33^34^1434^0.3106^0.1816^18^Bloodscalp Warrior^1519:3:3,1520:1:1,1710:1:1,2750:1:1,3815:1:1,3901:4:4,3915:4:4,4306:4:7^
 588^14^0^34^35^1434^0.2516^0.1164^14^Bloodscalp Scout^2732:1:1,2749:1:1,3782:1:1,3795:1:1,3901:5:5,3915:2:2,4306:4:6^
 595^19^0^34^35^1434^0.2536^0.1154^19^Bloodscalp Hunter^2592:1:3,3771:1:1,3815:1:1,3901:6:6,3915:4:4,4306:3:5,8746:1:1^
@@ -40,7 +40,7 @@ GoldScout-export 5^pmyp13afw0ow^22
 1152^2^0^35^36^1434^0.4051^0.1561^2^Snapjaw Crocolisk^3667:1:1^
 1562^1^0^40^41^1434^0.3150^0.7140^1^Bloodsail Mage^^
 3099^6^0^6^7^1411^0.5158^0.5882^6^Dire Mottled Boar^769:5:5,211787:1:1^
-3100^13^0^8^9^1411^0.4375^0.1855^13^Elder Mottled Boar^769:9:9,771:5:5,3171:2:2^
+3100^14^0^8^9^1411^0.4454^0.1796^14^Elder Mottled Boar^769:10:10,771:5:5,3171:2:2^
 3110^21^0^9^11^1413^0.6299^0.1589^4^Dreadmaw Crocolisk^3286:1:1,4875:6:6,4876:4:4,15004:1:1^
 3111^8^0^6^7^1411^0.4727^0.4882^8^Razormane Quilboar^2589:3:4^
 3112^5^0^7^8^1411^0.4725^0.4903^5^Razormane Scout^2589:1:1,2635:1:1^
@@ -63,7 +63,8 @@ GoldScout-export 5^pmyp13afw0ow^22
 3131^12^0^10^11^1411^0.4296^0.2428^12^Lightning Hide^4879:6:6,4880:1:1,275720:4:4,277665:4:4^
 3195^2^0^8^9^1411^0.5342^0.2896^2^Burning Blade Thug^2589:1:1^
 3196^2^0^9^10^1411^0.5290^0.2727^2^Burning Blade Neophyte^^
-3197^3^0^9^10^1411^0.4183^0.2613^3^Burning Blade Fanatic^2589:1:2,2774:1:1^
+3197^10^0^9^10^1411^0.5067^0.1449^10^Burning Blade Fanatic^118:1:1,2212:1:1,2589:1:2,2644:1:1,2774:1:1,3289:1:1,4871:5:5,15004:1:1^
+3198^4^0^10^11^1411^0.5397^0.0966^4^Burning Blade Apprentice^117:1:1,2773:1:1,4675:1:1,4871:2:2^
 3199^2^0^11^11^1411^0.5283^0.2671^2^Burning Blade Cultist^6652:1:1^
 3203^1^0^12^12^1411^0.4207^0.2654^1^Fizzle Darkstorm^4869:1:1^
 3225^1^0^10^10^1411^0.4185^0.2363^1^Corrupted Mottled Boar^769:1:1,3171:1:1^
@@ -122,6 +123,7 @@ GoldScout-export 5^pmyp13afw0ow^22
 7873^3^0^33^34^1413^0.4823^0.9131^3^Razorfen Battleguard^4306:1:1,15243:1:1^
 7874^5^0^33^34^1413^0.4806^0.9197^5^Razorfen Thornweaver^3785:1:1,4306:1:1,4539:1:1,213544:1:1^
 8567^1^0^0^0^0^0.0000^0.0000^0^^10772:1:1^
+8996^1^0^10^11^1411^0.5424^0.1026^1^Voidwalker Minion^^
 9377^1^0^33^34^1441^0.7505^0.5349^1^Swirling Vortex^^
 12676^1^0^31^31^1440^0.7363^0.7030^1^Sharptalon^12037:1:1,16305:1:1^
 12865^1^0^36^36^1413^0.4803^0.9252^1^Ambassador Malcin^4306:1:4,17009:1:1^
@@ -163,11 +165,13 @@ GoldScout-export 5^pmyp13afw0ow^22
 @i^1997^Pressed Felt Robe
 @i^1998^Bloodscalp Channeling Staff
 @i^2070^Darnassian Bleu
+@i^2212^Cracked Buckler
 @i^2589^Linen Cloth
 @i^2590^Forest Spider Webbing
 @i^2592^Wool Cloth
 @i^2633^Jungle Remedy
 @i^2635^Loose Chain Belt
+@i^2644^Loose Chain Cloak
 @i^2649^Flimsy Chain Belt
 @i^2654^Flimsy Chain Pants
 @i^2677^Boar Ribs
@@ -186,6 +190,7 @@ GoldScout-export 5^pmyp13afw0ow^22
 @i^3171^Broken Boar Tusk
 @i^3172^Boar Intestines
 @i^3286^Tribal Gloves
+@i^3289^Ancestral Boots
 @i^3358^Khadgar's Whisker
 @i^3373^Patchwork Bracers
 @i^3403^Ivory Boar Tusk
@@ -222,10 +227,12 @@ GoldScout-export 5^pmyp13afw0ow^22
 @i^4556^Speckled Shell Fragment
 @i^4585^Dripping Spider Mandible
 @i^4634^Iron Lockbox
+@i^4675^Tribal Belt
 @i^4775^Cracked Bill
 @i^4867^Broken Scorpid Leg
 @i^4869^Fizzle's Claw
 @i^4870^Canvas Scraps
+@i^4871^Searing Collar
 @i^4872^Dry Scorpid Eye
 @i^4875^Slimy Bone
 @i^4876^Bloody Leather Boot
@@ -322,11 +329,13 @@ GoldScout-export 5^pmyp13afw0ow^22
 @q^1997^2:4:0
 @q^1998^2:2:0
 @q^2070^1:0:0
+@q^2212^0:4:0
 @q^2589^1:7:1
 @q^2590^0:15:0
 @q^2592^1:7:1
 @q^2633^1:0:0
 @q^2635^0:4:0
+@q^2644^0:4:0
 @q^2649^0:4:0
 @q^2654^0:4:0
 @q^2677^1:7:1
@@ -345,6 +354,7 @@ GoldScout-export 5^pmyp13afw0ow^22
 @q^3171^0:15:0
 @q^3172^1:7:1
 @q^3286^1:4:0
+@q^3289^1:4:0
 @q^3358^1:7:1
 @q^3373^0:4:0
 @q^3403^0:15:0
@@ -381,10 +391,12 @@ GoldScout-export 5^pmyp13afw0ow^22
 @q^4556^0:15:0
 @q^4585^0:15:0
 @q^4634^2:15:0
+@q^4675^1:4:0
 @q^4775^0:15:0
 @q^4867^0:15:0
 @q^4869^1:12:0
 @q^4870^1:12:0
+@q^4871^1:12:0
 @q^4872^0:15:0
 @q^4875^0:15:0
 @q^4876^0:15:0
@@ -1781,7 +1793,7 @@ GoldScout-export 5^pmyp13afw0ow^22
 @a^1152^67:1,68:1
 @a^1562^286:1
 @a^3099^210:1,230:2,250:3
-@a^3100^48:1,49:1,68:9,69:1,147:1
+@a^3100^48:1,49:1,50:1,68:9,69:1,147:1
 @a^3110^52:1,72:3
 @a^3111^189:8
 @a^3112^189:5
@@ -1804,7 +1816,8 @@ GoldScout-export 5^pmyp13afw0ow^22
 @a^3131^88:12
 @a^3195^110:2
 @a^3196^110:2
-@a^3197^108:3
+@a^3197^30:4,50:2,51:1,108:3
+@a^3198^30:3,50:1
 @a^3199^110:2
 @a^3203^108:1
 @a^3225^88:1
@@ -1842,6 +1855,7 @@ GoldScout-export 5^pmyp13afw0ow^22
 @a^7872^349:2,369:5
 @a^7873^349:1,369:2
 @a^7874^349:1,369:4
+@a^8996^50:1
 @a^9377^215:1
 @a^12676^294:1
 @a^12865^369:1

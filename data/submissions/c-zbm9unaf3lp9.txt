@@ -1,4 +1,4 @@
-GoldScout-export 5^zbm9unaf3lp9^5
+GoldScout-export 5^zbm9unaf3lp9^6
 3^7^0^24^25^1431^0.2454^0.3691^7^Flesh Eater^884:1:1,887:1:1,929:1:1,4606:1:1,6530:1:1,12990:1:1^
 36^4^0^11^12^1436^0.3210^0.3459^4^Harvest Golem^732:1:1,814:1:1,1274:1:1,255007:2:2^
 117^3^0^11^12^1436^0.4143^0.2064^3^Riverpaw Gnoll^2589:1:1^
@@ -30,6 +30,12 @@ GoldScout-export 5^zbm9unaf3lp9^5
 1109^1^0^13^14^1436^0.3765^0.2827^1^Fleshripper^555:1:1^
 1251^1^0^28^28^1431^0.3472^0.7456^1^Splinter Fist Firemonger^^
 2462^18^0^25^25^1431^0.2456^0.3644^18^Flesh Eating Worm^^
+4632^6^0^30^31^1443^0.6983^0.4437^6^Kolkar Centaur^4306:3:4,6067:1:1,15242:1:1,211784:1:1,213544:1:1^
+4633^8^0^30^31^1443^0.6912^0.4422^8^Kolkar Scout^1710:1:1,4306:1:2,6067:4:4,254432:2:2^
+4634^3^0^31^32^1443^0.7137^0.4155^3^Kolkar Mauler^4306:1:1,6067:1:1^
+4635^11^0^31^32^1443^0.7131^0.4320^11^Kolkar Windchaser^3385:1:1,4306:5:6,6067:5:5,254432:4:4^
+4636^2^0^32^33^1443^0.7121^0.4504^2^Kolkar Battle Lord^1708:1:1^
+4637^1^0^32^32^1443^0.7071^0.4805^1^Kolkar Destroyer^^
 4663^3^0^30^31^1443^0.5462^0.2927^3^Burning Blade Augur^4306:2:2,11164:1:1^
 4664^3^0^30^31^1443^0.5582^0.2838^3^Burning Blade Reaver^2592:1:2,4306:1:1^
 4665^3^0^31^32^1443^0.5471^0.2751^3^Burning Blade Adept^3802:1:1,3807:1:1^
@@ -60,6 +66,8 @@ GoldScout-export 5^zbm9unaf3lp9^5
 @i^1497^Calico Cloak
 @i^1516^Worn Hatchet
 @i^1598^Rot Blossom
+@i^1708^Sweet Nectar
+@i^1710^Greater Healing Potion
 @i^1758^Reinforced Chain Gloves
 @i^1782^Cross-stitched Cloak
 @i^2085^Chunk of Flesh
@@ -83,6 +91,7 @@ GoldScout-export 5^zbm9unaf3lp9^5
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
 @i^3375^Calico Bracers
+@i^3385^Lesser Mana Potion
 @i^3802^Hardened Leather Bracers
 @i^3807^Hardened Leather Tunic
 @i^4306^Silk Cloth
@@ -95,6 +104,7 @@ GoldScout-export 5^zbm9unaf3lp9^5
 @i^5529^Tomb Dust
 @i^5573^Green Leather Bag
 @i^5635^Sharp Claw
+@i^6067^Centaur Ear
 @i^6267^Disciple's Pants of Spirit
 @i^6515^Disciple's Gloves
 @i^6518^Pioneer Boots
@@ -107,13 +117,17 @@ GoldScout-export 5^zbm9unaf3lp9^5
 @i^9758^Cadet Belt
 @i^11164^Formula: Enchant Weapon - Lesser Beastslayer
 @i^12990^Razor's Edge
+@i^15242^Honed Stiletto of Stamina
 @i^211780^Scroll: KWYJIBO
+@i^211784^Scroll: WUBBA WUBBA
 @i^211785^Scroll: CWAL
 @i^211787^Scroll: LOWER PING WHOMEVER
 @i^211853^Scroll: VOCE WELL
 @i^211854^Scroll: OMIT KESA
 @i^211855^Scroll: STHENIC LUNATE
+@i^213544^Scroll: TOPAZ YORAK
 @i^248683^Waylaid Crate: Apprentice Ore
+@i^254432^Carved Centaur Totem
 @i^255007^Golem Isospring
 @q^555^0:15:0
 @q^723^1:7:1
@@ -139,6 +153,8 @@ GoldScout-export 5^zbm9unaf3lp9^5
 @q^1497^0:4:0
 @q^1516^0:2:0
 @q^1598^1:12:0
+@q^1708^1:0:0
+@q^1710^1:0:0
 @q^1758^0:4:0
 @q^1782^0:4:0
 @q^2085^0:15:0
@@ -162,6 +178,7 @@ GoldScout-export 5^zbm9unaf3lp9^5
 @q^3299^0:15:0
 @q^3300^0:15:0
 @q^3375^0:4:0
+@q^3385^1:0:0
 @q^3802^0:4:0
 @q^3807^0:4:0
 @q^4306^1:7:1
@@ -174,6 +191,7 @@ GoldScout-export 5^zbm9unaf3lp9^5
 @q^5529^0:15:0
 @q^5573^1:1:0
 @q^5635^1:7:1
+@q^6067^1:12:0
 @q^6267^2:4:0
 @q^6515^1:4:0
 @q^6518^1:4:0
@@ -186,13 +204,17 @@ GoldScout-export 5^zbm9unaf3lp9^5
 @q^9758^1:4:0
 @q^11164^2:9:0
 @q^12990^3:2:0
+@q^15242^2:2:0
 @q^211780^1:0:0
+@q^211784^1:0:0
 @q^211785^1:0:0
 @q^211787^1:0:0
 @q^211853^1:0:0
 @q^211854^1:0:0
 @q^211855^1:0:0
+@q^213544^1:0:0
 @q^248683^1:0:1
+@q^254432^2:15:0
 @q^255007^1:7:1
 @m^1431^Duskwood
 @m^1436^Westfall
@@ -837,6 +859,12 @@ GoldScout-export 5^zbm9unaf3lp9^5
 @a^1109^107:1
 @a^1251^286:1
 @a^2462^125:4,144:8,145:6
+@a^4632^173:2,174:1,193:1,194:2
+@a^4633^153:2,173:2,193:4
+@a^4634^154:1,174:2
+@a^4635^154:1,174:6,193:1,194:3
+@a^4636^174:1,194:1
+@a^4637^194:1
 @a^4663^110:2,111:1
 @a^4664^110:1,111:1,131:1
 @a^4665^111:2,130:1

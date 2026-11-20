@@ -1,4 +1,4 @@
-GoldScout-export 6^9xh8am2ot2tx^4
+GoldScout-export 6^9xh8am2ot2tx^5
 114^3^0^14^15^1436^0.5225^0.2649^3^Gardien des moissons^732:1:1,814:3:3,1274:1:1,1499:1:1,4359:1:1^
 115^1^0^17^18^1436^0.6141^0.5837^1^Moissonneur^814:1:1,4363:1:1,255007:1:1^
 122^1^0^17^18^1436^0.6116^0.5809^1^Malandrin défias^1813:1:1^
@@ -40,6 +40,10 @@ GoldScout-export 6^9xh8am2ot2tx^4
 3673^1^0^0^0^0^0.0000^0.0000^0^^6459:1:1^
 3840^15^0^0^0^0^0.0000^0.0000^0^^789:1:1,818:1:1,1210:1:1,2455:1:1,2592:4:4,3040:1:1,4537:1:1,10413:1:1,14367:1:1,15285:1:1^
 4127^1^0^15^15^1413^0.6131^0.4174^1^Hyène Jappecroc^3301:1:1^
+4144^1^0^32^32^1441^0.7575^0.8277^1^Tortue fouisseuse nacrétoile^4556:1:1^
+4150^1^0^34^34^1441^0.7816^0.9006^1^Contemplateur du sel gemme^1701:1:1,11386:1:1^
+4151^3^0^32^33^1441^0.7814^0.8973^3^Peau de cristal du sel gemme^1701:2:2,1702:1:1,11386:1:1^
+4413^1^0^36^36^1445^0.5744^0.3440^1^Araignée Sombrecroc^4337:1:1,4585:1:1^
 5048^4^0^0^0^0^0.0000^0.0000^0^^6443:1:1,6444:2:2,6445:2:2^
 5053^6^0^0^0^0^0.0000^0.0000^0^^3181:3:6,3401:2:5,6443:1:1,6470:1:1,14161:1:1,15248:1:1^
 5055^6^0^0^0^0^0.0000^0.0000^0^^4604:4:4,4605:2:2^
@@ -52,6 +56,7 @@ GoldScout-export 6^9xh8am2ot2tx^4
 5775^1^0^0^0^0^0.0000^0.0000^0^^6631:1:1^
 6250^1^0^12^12^1436^0.2739^0.3546^1^Clampant^^
 6494^1^0^13^13^1413^0.6411^0.4444^1^Tazan^^
+10079^1^0^30^30^1441^0.3226^0.2206^1^Brave Moonhorn^^
 @i^414^Dalaran piquant
 @i^723^Foie de Broche-tripes
 @i^729^Viande filandreuse de vautour
@@ -69,6 +74,8 @@ GoldScout-export 6^9xh8am2ot2tx^4
 @i^1274^Houblon
 @i^1499^Pantalon en calicot
 @i^1506^Gants déformés en cuir
+@i^1701^Griffe de basilic
+@i^1702^Epine dorsale intacte de basilic
 @i^1705^Pierre de lune inférieure
 @i^1730^Ceinture usée en mailles
 @i^1734^Gants usés en mailles
@@ -96,11 +103,14 @@ GoldScout-export 6^9xh8am2ot2tx^4
 @i^3670^Grand os visqueux
 @i^3674^Botte décomposée
 @i^4306^Etoffe de soie
+@i^4337^Soie d'araignée épaisse
 @i^4359^Poignée de boulons en cuivre
 @i^4363^Modulateur en cuivre
 @i^4537^Banane de Tel'Abim
+@i^4556^Fragment de carapace moucheté
 @i^4567^Epée mercenaire de protection contre le givre
 @i^4568^Hache de grunt de magie
+@i^4585^Mandibule d'araignée visqueuse
 @i^4604^Tête de champignon sylvestre
 @i^4605^Champignon à pois rouges
 @i^4776^Plume ébouriffée
@@ -129,6 +139,7 @@ GoldScout-export 6^9xh8am2ot2tx^4
 @i^7997^Masque rouge de Défias
 @i^10413^Gants du Croc
 @i^10441^Eclat luminescent
+@i^11386^Oeil spongieux de basilic
 @i^12052^Anneau de la lune
 @i^12976^Lame Ironpatch
 @i^13245^Carapace de Kresh
@@ -162,6 +173,8 @@ GoldScout-export 6^9xh8am2ot2tx^4
 @q^1274^1:12:0
 @q^1499^0:4:0
 @q^1506^0:4:0
+@q^1701^0:15:0
+@q^1702^0:15:0
 @q^1705^2:7:1
 @q^1730^0:4:0
 @q^1734^0:4:0
@@ -189,11 +202,14 @@ GoldScout-export 6^9xh8am2ot2tx^4
 @q^3670^0:15:0
 @q^3674^0:15:0
 @q^4306^1:7:1
+@q^4337^1:7:1
 @q^4359^1:7:1
 @q^4363^1:7:1
 @q^4537^1:0:0
+@q^4556^0:15:0
 @q^4567^2:2:0
 @q^4568^2:2:0
+@q^4585^0:15:0
 @q^4604^1:0:0
 @q^4605^1:0:0
 @q^4776^0:15:0
@@ -222,6 +238,7 @@ GoldScout-export 6^9xh8am2ot2tx^4
 @q^7997^0:4:0
 @q^10413^3:4:0
 @q^10441^1:12:0
+@q^11386^0:15:0
 @q^12052^2:4:0
 @q^12976^3:2:0
 @q^13245^3:4:0
@@ -242,6 +259,8 @@ GoldScout-export 6^9xh8am2ot2tx^4
 @m^1414^Kalimdor
 @m^1431^Bois de la Pénombre
 @m^1436^Marche de l'Ouest
+@m^1441^Mille pointes
+@m^1445^Marécage d'Âprefange
 @c^118^
 @c^724^
 @c^733^
@@ -733,6 +752,11 @@ GoldScout-export 6^9xh8am2ot2tx^4
 @a^3633^210:1
 @a^3641^210:1
 @a^4127^172:1
+@a^4144^335:1
+@a^4150^375:1
+@a^4151^355:2,375:1
+@a^4413^131:1
 @a^6250^145:1
 @a^6494^172:1
+@a^10079^86:1
 @l^0^frFR
