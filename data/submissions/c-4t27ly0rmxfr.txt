@@ -1,8 +1,12 @@
-GoldScout-export 6^4t27ly0rmxfr^6
+GoldScout-export 6^4t27ly0rmxfr^7
 767^2^0^36^36^1435^0.2607^0.3888^2^Swamp Jaguar^1688:2:2^
 1084^1^0^36^36^1435^0.2638^0.5548^1^Young Sawtooth Crocolisk^3667:1:1^
-2701^2^0^38^38^1418^0.6211^0.6882^2^Dustbelcher Ogre^4306:1:2^
-2715^1^0^40^40^1418^0.6203^0.6846^1^Dustbelcher Brute^4306:1:3^
+2701^3^0^38^38^1418^0.6230^0.6821^3^Dustbelcher Ogre^4306:1:2^
+2715^2^0^39^40^1418^0.6257^0.6755^2^Dustbelcher Brute^4306:2:4^
+2725^10^0^41^43^1418^0.7869^0.5247^10^Scalding Whelp^4402:3:3,4460:7:7,4612:1:1,6444:2:2^
+2726^7^0^43^45^1418^0.8128^0.5076^7^Scorched Guardian^4460:4:4,6444:2:2,262889:1:1^
+2728^2^0^38^38^1418^0.6566^0.5965^2^Feral Crag Coyote^12203:1:1^
+2944^1^0^41^41^1418^0.6193^0.6716^1^Boss Tho'grun^4640:1:1^
 4640^1^0^33^34^1443^0.7152^0.7915^1^Magram Wrangler^^
 4644^1^0^36^36^1443^0.7204^0.7841^1^Magram Marauder^4306:1:2^
 5308^2^0^44^46^1444^0.4545^0.3845^2^Rogue Vale Screecher^6826:1:1^
@@ -23,14 +27,21 @@ GoldScout-export 6^4t27ly0rmxfr^6
 @i^3667^Tender Crocolisk Meat
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
+@i^4402^Small Flame Sac
+@i^4460^Ripped Wing Webbing
 @i^4584^Large Trophy Paw
+@i^4612^Black Drake's Heart
+@i^4640^Sign of the Earth
 @i^5829^Razor-sharp Beak
+@i^6444^Forked Tongue
 @i^6826^Brilliant Scale
 @i^8168^Jet Black Feather
 @i^8396^Vulture Gizzard
 @i^11418^Hollow Wing Bone
 @i^12037^Mystery Meat
+@i^12203^Red Wolf Meat
 @i^12207^Giant Egg
+@i^262889^Sealed Expert's Writ
 @i^268520^Lamora's Key
 @q^1464^0:15:0
 @q^1688^0:15:0
@@ -39,14 +50,21 @@ GoldScout-export 6^4t27ly0rmxfr^6
 @q^3667^1:7:1
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4402^1:7:1
+@q^4460^0:15:0
 @q^4584^0:15:0
+@q^4612^1:12:0
+@q^4640^1:12:0
 @q^5829^0:15:0
+@q^6444^0:15:0
 @q^6826^0:15:0
 @q^8168^1:7:1
 @q^8396^1:12:0
 @q^11418^0:15:0
 @q^12037^1:7:1
+@q^12203^1:7:1
 @q^12207^1:7:1
+@q^262889^3:0:0
 @q^268520^1:12:0
 @m^1418^Badlands
 @m^1419^Blasted Lands
@@ -1288,8 +1306,12 @@ GoldScout-export 6^4t27ly0rmxfr^6
 @c^286152^
 @a^767^125:1,165:1
 @a^1084^225:1
-@a^2701^272:2
-@a^2715^272:1
+@a^2701^272:3
+@a^2715^272:2
+@a^2725^136:1,156:2,213:1,234:1,235:1,254:1,256:3
+@a^2726^196:3,216:3,236:1
+@a^2728^213:1,272:1
+@a^2944^272:1
 @a^4640^314:1
 @a^4644^314:1
 @a^5308^148:1,169:1
