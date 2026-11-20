@@ -22,6 +22,7 @@ DIST = HERE / "dist"
 sys.path.insert(0, str(ROOT / "tools"))
 sys.path.insert(0, str(HERE))
 import data_pages  # noqa: E402
+import flips  # noqa: E402
 import guides  # noqa: E402
 import merge_data  # noqa: E402
 
@@ -579,12 +580,14 @@ SEARCH_BOX_FR = (SEARCH_BOX.replace('placeholder="Search items, mobs and zones"'
 CHROME = {
     "en": {
         "nav": '<a href="/farms">Farms by level</a><a href="/fishing">Fishing</a><a href="/guides">Gold guides</a>'
+               '<a href="/flips">Blackwater flips</a>'
                '<a href="/companion">Companion</a><a href="/share">Share data</a><a href="/leaderboard">Leaderboard</a>'
                '<a href="/faq">FAQ</a>'
                '<a href="%(curseforge)s">Get GoldScout</a>',
         "footer": '<a href="/">Home</a><a href="/farms">Farms by level</a><a href="/fishing">Fishing</a>'
                   '<a href="/drop-rates">How drop rates work</a><a href="/leaderboard">Leaderboard</a>'
-                  '<a href="/guides">Gold guides</a><a href="/data-wanted">Data wanted</a>'
+                  '<a href="/guides">Gold guides</a><a href="/flips">Blackwater flips</a>'
+                  '<a href="/data-wanted">Data wanted</a>'
                   '<a href="/share">Share data</a><a href="/faq">FAQ</a>'
                   '<a href="/support">Support GoldScout</a><a href="%(discord)s">Discord</a>'
                   '<a href="%(source)s">GitHub</a><a href="%(privacy)s">Privacy</a>'
@@ -775,6 +778,11 @@ svg.area { display: block; width: 100%; height: auto; }
 .area-art { position: relative; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); background: var(--bg2); }
 .area-art img { display: block; width: 100%; height: auto; }
 .area-art svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+/* Blackwater flips (site/flips.py): item names in their quality's color. */
+.q0 { color: #9d9d9d; } .q1 { color: var(--text); } .q2 { color: #3fe05a; } .q3 { color: #4aa8ff; }
+.q4 { color: #c27cff; } .q5 { color: #ff9a2e; } .q6, .q7 { color: #e6cc80; }
+a.q0, a.q1, a.q2, a.q3, a.q4, a.q5, a.q6, a.q7 { text-decoration: underline; text-decoration-color: rgba(143,211,255,.5); }
+.flips td:first-child { white-space: nowrap; }
 /* Gold guides (site/guides.py): a card per farm, its details beside the zone map, stacked on phones. */
 .guide-farm { border: 1px solid var(--line); border-radius: 12px; background: var(--bg2); padding: 16px 18px; margin: 18px 0; }
 .guide-farm h3 { margin: 0 0 2px; }
@@ -1426,6 +1434,7 @@ TOP = 10 ** 9   # the site's own pages win ties with data pages ("fishing" finds
 STATIC_SEARCH = [
     ["Farms by level", "/farms", "The best gold farms for every level range", TOP],
     ["Fishing for gold", "/fishing", "Every zone players have fished, by gold per hour", TOP],
+    ["Blackwater flips", "/flips", "What to buy on the goblin auction house and sell on yours", TOP],
     ["How drop rates work", "/drop-rates", "Chance, ranges and how the data is checked", TOP],
     ["GoldScout Companion", "/companion", "Free app: hourly auction prices, shares your drops", TOP],
     ["Contributor leaderboard", "/leaderboard", "Who's shared the most drop data", TOP],
@@ -2373,6 +2382,7 @@ def main():
     shutil.copy2(ROOT / "docs" / "logo" / "goldscout-logo-400.png", DIST / "logo-400.png")
     shutil.copy2(ROOT / "companion" / "icon.png", DIST / "favicon.png")
     shutil.copy2(HERE / "prices.js", DIST / "prices.js")
+    shutil.copy2(HERE / "flips.js", DIST / "flips.js")
     shutil.copy2(HERE / "leaderboard.js", DIST / "leaderboard.js")
     shutil.copy2(HERE / "search.js", DIST / "search.js")
     shutil.copy2(HERE / "champions.js", DIST / "champions.js")
@@ -2402,7 +2412,16 @@ def main():
     write("support.html", *support_page())
     paths = ["/", "/companion", "/leaderboard", "/faq", "/share", "/support"] + data_pages.build(data, LINKS, write)
     # Gold guides: the best farms on each realm type and faction's auction house, at the latest prices (English).
-    paths += guides.build(data, LINKS, write, guides.fetch_markets(API_URL))
+    markets = guides.fetch_markets(API_URL)
+    paths += guides.build(data, LINKS, write, markets)
+    # Blackwater flips: what to buy on the goblin auction house and sell on your faction's (English).
+    names = flips.load_names()
+    flip_markets = flips.fetch_markets(API_URL, known=markets)
+    paths += flips.build(data, LINKS, write, flip_markets, names)
+    (DIST / "flips-names.json").write_text(flips.names_json(data, names), encoding="utf-8")
+    for region in sorted({market["region"] for market in flip_markets}):
+        (DIST / "flips" / ("reference-%s.json" % region)).write_text(flips.reference_json(flip_markets, region),
+                                                                    encoding="utf-8")
     write("search.html", *search_page(), index=False)   # results for one visitor's words: not for search engines
     index = data_pages.search_index(data) + STATIC_SEARCH
     (DIST / "search.json").write_text(json.dumps(index, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
