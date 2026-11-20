@@ -1,4 +1,4 @@
-GoldScout-export 6^ma2tat9f4hc6^4
+GoldScout-export 6^ma2tat9f4hc6^5
 95^1^0^11^12^1436^0.4142^0.4094^1^Defias Smuggler^^
 122^2^0^17^18^1436^0.3651^0.8184^2^Defias Highwayman^827:1:1,1812:1:1,2592:1:2,9788:1:1^
 123^1^0^14^14^1436^0.3508^0.3227^1^Riverpaw Mongrel^^
@@ -10,6 +10,10 @@ GoldScout-export 6^ma2tat9f4hc6^4
 833^18^0^11^12^1436^0.3701^0.3067^18^Coyote Packleader^2140:1:1,2673:8:8,2958:1:1,3213:1:1,3299:5:5,3300:3:3,4570:1:1^
 834^24^0^10^11^1436^0.4075^0.2713^24^Coyote^2673:17:17,2958:1:1,3299:4:4,3300:7:7^
 1109^11^0^13^14^1436^0.4056^0.4907^11^Fleshripper^555:3:3,729:5:5,3399:6:6,4775:1:1,5114:3:3,6889:6:6,7288:1:1,17056:6:6,211786:1:1^
+3767^2^0^27^28^1440^0.8164^0.5135^2^Bleakheart Trickster^1809:1:1^
+3770^3^0^27^28^1440^0.8122^0.4995^3^Bleakheart Shadowstalker^3770:1:1,4306:1:2,14188:1:1^
+3771^1^0^27^27^1440^0.8223^0.5206^1^Bleakheart Hellcaller^1712:1:1,1782:1:1^
+12922^1^0^27^27^1440^0.8223^0.5206^1^Imp Minion^^
 @i^555^Rough Vulture Feathers
 @i^723^Goretusk Liver
 @i^729^Stringy Vulture Meat
@@ -17,6 +21,9 @@ GoldScout-export 6^ma2tat9f4hc6^4
 @i^769^Chunk of Boar Meat
 @i^771^Chipped Boar Tusk
 @i^827^Wicked Blackjack
+@i^1712^Scroll of Spirit II
+@i^1782^Cross-stitched Cloak
+@i^1809^Tough Leather Shoulderpads
 @i^1812^Short-handled Battle Axe
 @i^2091^Magic Dust
 @i^2140^Carving Knife of the Bear
@@ -32,6 +39,9 @@ GoldScout-export 6^ma2tat9f4hc6^4
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
 @i^3399^Vulture Talon
+@i^3770^Mutton Chop
+@i^3820^Stranglekelp
+@i^4306^Silk Cloth
 @i^4570^Birchwood Maul of Healing
 @i^4757^Cracked Egg Shells
 @i^4775^Cracked Bill
@@ -44,8 +54,11 @@ GoldScout-export 6^ma2tat9f4hc6^4
 @i^7288^Pattern: Rugged Leather Pants
 @i^9775^Bandit Cinch of Defense
 @i^9788^Raider's Belt of Intellect
+@i^14188^Raincaller Cloak of the Owl
 @i^15925^Journeyman's Stave
 @i^17056^Light Feather
+@i^21071^Raw Sagefish
+@i^21113^Watertight Trunk
 @i^211786^Scroll: CHAP BALK WELLES
 @i^211855^Scroll: STHENIC LUNATE
 @q^555^0:15:0
@@ -55,6 +68,9 @@ GoldScout-export 6^ma2tat9f4hc6^4
 @q^769^1:7:1
 @q^771^0:15:0
 @q^827^2:2:0
+@q^1712^1:0:0
+@q^1782^0:4:0
+@q^1809^0:4:0
 @q^1812^0:2:0
 @q^2091^1:0:0
 @q^2140^2:2:0
@@ -70,6 +86,9 @@ GoldScout-export 6^ma2tat9f4hc6^4
 @q^3299^0:15:0
 @q^3300^0:15:0
 @q^3399^0:15:0
+@q^3770^1:0:0
+@q^3820^1:7:1
+@q^4306^1:7:1
 @q^4570^2:2:0
 @q^4757^0:15:0
 @q^4775^0:15:0
@@ -82,11 +101,15 @@ GoldScout-export 6^ma2tat9f4hc6^4
 @q^7288^2:9:0
 @q^9775^2:4:0
 @q^9788^2:4:0
+@q^14188^2:4:0
 @q^15925^2:4:0
 @q^17056^1:15:1
+@q^21071^1:7:1
+@q^21113^1:15:0
 @q^211786^1:0:0
 @q^211855^1:0:0
 @m^1436^Westfall
+@m^1440^Ashenvale
 @c^118^
 @c^724^
 @c^733^
@@ -1008,4 +1031,9 @@ GoldScout-export 6^ma2tat9f4hc6^4
 @a^833^68:2,69:1,87:1,88:1,107:2,126:2,127:1,146:2,147:4,166:2
 @a^834^68:2,70:1,87:3,88:1,107:5,108:6,109:1,111:1,128:1,146:1,147:1,166:1
 @a^1109^88:1,167:3,188:2,208:1,247:3,267:1
+@a^3767^216:2
+@a^3770^196:2,216:1
+@a^3771^216:1
+@a^12922^216:1
+@f^1440^0^8^189^3820:1:1,21071:6:6,21113:1:1^235:8
 @l^0^enUS

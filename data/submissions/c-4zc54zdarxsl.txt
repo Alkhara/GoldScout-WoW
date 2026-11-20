@@ -1,15 +1,18 @@
-GoldScout-export 6^4zc54zdarxsl^2
+GoldScout-export 6^4zc54zdarxsl^3
 682^2^0^32^33^1434^0.4667^0.1626^2^Stranglethorn Tiger^^
 685^10^0^33^34^1434^0.2709^0.1608^10^Stranglethorn Raptor^3685:3:3,4461:5:5,4586:2:2,12184:8:8^
 686^2^0^35^36^1434^0.3810^0.2259^2^Lashtail Raptor^4461:1:1^
 689^22^0^34^35^1434^0.4797^0.0804^22^Crystal Spine Basilisk^1701:9:9,1702:2:2,1703:2:2,3918:10:10,4093:3:3,8146:1:1,11386:1:1^
 701^1^0^35^35^1434^0.2390^0.1325^1^Bloodscalp Mystic^3771:1:1,4306:1:2^
-772^3^0^37^38^1434^0.3749^0.4375^3^Stranglethorn Tigress^1688:1:1,12202:1:1^
+772^4^0^37^38^1434^0.3743^0.4258^4^Stranglethorn Tigress^1688:1:1,12202:1:1^
 905^1^0^31^31^1434^0.3930^0.2880^1^Sharptooth Frenzy^4860:1:1^
 1096^9^0^35^36^1434^0.4416^0.2110^9^Venture Co. Geologist^864:1:1,1630:2:2,2592:1:2,2725:1:1,2740:1:1,3771:1:1,4106:6:6,4306:4:6^
 1142^1^0^37^37^1434^0.3773^0.3058^1^Mosh'Ogg Brute^^
 1150^3^0^30^31^1434^0.4049^0.1275^3^River Crocolisk^4053:2:2^
 1152^2^0^35^36^1434^0.3994^0.2269^2^Snapjaw Crocolisk^3667:1:1^
+2554^10^0^32^33^1417^0.7221^0.6207^10^Witherbark Axe Thrower^1708:1:1,4306:6:8^
+2555^8^0^33^34^1417^0.7174^0.6469^8^Witherbark Witch Doctor^3771:2:2,3800:1:1,4306:1:1,9849:1:1^
+2556^10^0^34^35^1417^0.6966^0.7152^10^Witherbark Headhunter^1708:2:2,3771:1:1,4306:7:10^
 4457^1^0^36^36^1434^0.3566^0.2243^1^Murkgill Forager^^
 4458^1^0^35^36^1434^0.3412^0.2499^1^Murkgill Hunter^^
 4460^1^0^37^37^1434^0.3566^0.2416^1^Murkgill Lord^17057:1:1^
@@ -19,12 +22,14 @@ GoldScout-export 6^4zc54zdarxsl^2
 @i^1701^Curved Basilisk Claw
 @i^1702^Intact Basilisk Spine
 @i^1703^Crystal Basilisk Spine
+@i^1708^Sweet Nectar
 @i^2592^Wool Cloth
 @i^2725^Green Hills of Stranglethorn - Page 1
 @i^2740^Green Hills of Stranglethorn - Page 16
 @i^3667^Tender Crocolisk Meat
 @i^3685^Raptor Egg
 @i^3771^Wild Hog Shank
+@i^3800^Hardened Leather Belt
 @i^3918^Singing Crystal Shard
 @i^4053^Large River Crocolisk Skin
 @i^4093^Large Basilisk Tail
@@ -37,6 +42,7 @@ GoldScout-export 6^4zc54zdarxsl^2
 @i^6358^Oily Blackmouth
 @i^6361^Raw Rainbow Fin Albacore
 @i^8146^Wicked Claw
+@i^9849^Conjurer's Hood of Spirit
 @i^11386^Squishy Basilisk Eye
 @i^12184^Raptor Flesh
 @i^12202^Tiger Meat
@@ -48,12 +54,14 @@ GoldScout-export 6^4zc54zdarxsl^2
 @q^1701^0:15:0
 @q^1702^0:15:0
 @q^1703^1:0:0
+@q^1708^1:0:0
 @q^2592^1:7:1
 @q^2725^1:12:0
 @q^2740^1:12:0
 @q^3667^1:7:1
 @q^3685^1:7:1
 @q^3771^1:0:0
+@q^3800^0:4:0
 @q^3918^1:12:0
 @q^4053^1:12:0
 @q^4093^0:15:0
@@ -66,12 +74,14 @@ GoldScout-export 6^4zc54zdarxsl^2
 @q^6358^1:7:1
 @q^6361^1:7:1
 @q^8146^1:7:1
+@q^9849^2:4:0
 @q^11386^0:15:0
 @q^12184^1:7:1
 @q^12202^1:7:1
 @q^17057^1:15:0
 @q^21153^1:7:1
 @m^1413^The Barrens
+@m^1417^Arathi Highlands
 @m^1434^Stranglethorn Vale
 @c^118^
 @c^724^
@@ -245,12 +255,15 @@ GoldScout-export 6^4zc54zdarxsl^2
 @a^686^87:2
 @a^689^29:18,49:4
 @a^701^44:1
-@a^772^167:2,187:1
+@a^772^147:1,167:2,187:1
 @a^905^107:1
 @a^1096^68:1,88:5,89:3
 @a^1142^127:1
 @a^1150^47:1,48:2
 @a^1152^67:1,108:1
+@a^2554^234:2,254:6,274:2
+@a^2555^254:6,274:1,293:1
+@a^2556^254:2,274:1,293:4,313:3
 @a^4457^87:1
 @a^4458^86:1
 @a^4460^87:1

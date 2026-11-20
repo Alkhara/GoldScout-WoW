@@ -1,4 +1,6 @@
-GoldScout-export 5^0fux42a0v8jk^4
+GoldScout-export 5^0fux42a0v8jk^5
+2964^11^0^9^10^1412^0.3248^0.3136^11^Windfury Sorceress^117:2:2,1423:1:1,2589:3:6,4752:3:3,4775:2:2,15009:1:1^
+2965^15^0^10^11^1412^0.3280^0.3191^14^Windfury Matriarch^117:2:2,118:1:1,1730:1:1,2589:6:9,3013:1:1,4753:6:6,4775:6:6,4776:1:1,17056:4:4^
 3099^6^0^6^7^1411^0.4582^0.4377^6^Dire Mottled Boar^769:6:6,3171:1:1^
 3111^3^0^6^7^1411^0.4540^0.4898^3^Razormane Quilboar^^
 3112^6^0^7^8^1411^0.4581^0.4881^6^Razormane Scout^118:1:1,1425:1:1,1430:1:1,2589:3:4,4536:1:1^
@@ -14,20 +16,26 @@ GoldScout-export 5^0fux42a0v8jk^4
 251661^10^0^5^6^2521^0.4232^0.4095^10^Galestrider^2653:1:1,4757:3:3,5469:6:6,6889:2:2,7096:5:5,7097:2:2^
 251918^3^0^7^7^2521^0.4744^0.3697^3^Highlands Bandit^2589:1:1,252028:1:1,252030:1:1,252031:1:2,257945:2:2^
 254589^1^0^8^8^2521^0.4261^0.5207^1^Vulgara the Insatiable^257942:1:1^
+@i^117^Tough Jerky
 @i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
 @i^768^Lumberjack Axe
 @i^769^Chunk of Boar Meat
 @i^774^Malachite
 @i^1412^Crude Bastard Sword
+@i^1423^Worn Leather Pants
 @i^1425^Worn Leather Vest
 @i^1430^Patchwork Gloves
+@i^1730^Worn Mail Belt
 @i^2589^Linen Cloth
 @i^2653^Flimsy Chain Gloves
 @i^2774^Rust-covered Blunderbuss
+@i^3013^Scroll of Protection
 @i^3171^Broken Boar Tusk
 @i^3299^Fractured Canine
 @i^4536^Shiny Red Apple
+@i^4752^Azure Feather
+@i^4753^Bronze Feather
 @i^4757^Cracked Egg Shells
 @i^4775^Cracked Bill
 @i^4776^Ruffled Feather
@@ -37,6 +45,8 @@ GoldScout-export 5^0fux42a0v8jk^4
 @i^6889^Small Egg
 @i^7096^Plucked Feather
 @i^7097^Leg Meat
+@i^15009^Primal Leggings of the Monkey
+@i^17056^Light Feather
 @i^252028^Fresh Gustberry Bread
 @i^252030^Pungent Skycheddar
 @i^252031^Crisp Spring Water
@@ -44,20 +54,26 @@ GoldScout-export 5^0fux42a0v8jk^4
 @i^252671^Hoarder's Foot
 @i^257942^Vulgara's Head
 @i^257945^Pilfered Windstone
+@q^117^1:0:0
 @q^118^1:0:0
 @q^159^1:0:0
 @q^768^1:2:0
 @q^769^1:7:1
 @q^774^2:7:1
 @q^1412^0:2:0
+@q^1423^0:4:0
 @q^1425^0:4:0
 @q^1430^0:4:0
+@q^1730^0:4:0
 @q^2589^1:7:1
 @q^2653^0:4:0
 @q^2774^0:2:0
+@q^3013^1:0:0
 @q^3171^0:15:0
 @q^3299^0:15:0
 @q^4536^1:0:0
+@q^4752^1:12:0
+@q^4753^1:12:0
 @q^4757^0:15:0
 @q^4775^0:15:0
 @q^4776^0:15:0
@@ -67,6 +83,8 @@ GoldScout-export 5^0fux42a0v8jk^4
 @q^6889^1:7:1
 @q^7096^0:15:0
 @q^7097^1:0:0
+@q^15009^2:4:0
+@q^17056^1:15:1
 @q^252028^1:0:0
 @q^252030^1:0:0
 @q^252031^1:0:0
@@ -75,10 +93,13 @@ GoldScout-export 5^0fux42a0v8jk^4
 @q^257942^1:12:0
 @q^257945^1:12:0
 @m^1411^Durotar
+@m^1412^Mulgore
 @m^2521^Zephras Isle
 @c^279938^
 @c^279969^
 @c^279979^
+@a^2964^106:1,126:10
+@a^2965^106:2,126:12
 @a^3099^168:2,169:4
 @a^3111^188:1,189:1,208:1
 @a^3112^188:2,189:3,208:1

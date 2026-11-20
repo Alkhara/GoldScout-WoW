@@ -1,4 +1,4 @@
-GoldScout-export 6^dbu7cjilrgdd^1
+GoldScout-export 6^dbu7cjilrgdd^2
 2748^1^0^0^0^0^0.0000^0.0000^0^^11118:1:1,274432:1:1^
 4848^1^0^0^0^0^0.0000^0.0000^0^^3986:1:1,4306:1:3,8052:1:1^
 4849^2^0^0^0^0^0.0000^0.0000^0^^8009:1:1,8052:1:1^
@@ -27,27 +27,47 @@ GoldScout-export 6^dbu7cjilrgdd^1
 7396^5^0^0^0^0^0.0000^0.0000^0^^1994:1:1,4306:1:1,4338:1:2,4601:1:1,6149:1:1^
 7397^1^0^0^0^0^0.0000^0.0000^0^^4338:1:2^
 7405^2^0^0^0^0^0.0000^0.0000^0^^12037:1:1,19937:1:1^
+255770^1^0^37^37^2548^0.3056^0.6665^1^Redridge Mystic^4306:1:1^
+255772^2^0^36^37^2548^0.1755^0.7082^2^Redridge Trapper^^
+255774^2^0^35^36^2548^0.2051^0.7039^2^Redridge Scout^3782:1:1,7462:1:1^
+262473^128^0^39^40^2548^0.2999^0.7318^128^Cinderscale Whelp^4068:1:1,4402:16:16,4460:42:42,4636:1:1,6444:53:53,8146:2:2,9876:1:1,9891:1:1,248690:1:1^
+262477^85^0^41^42^2548^0.3001^0.7365^85^Cinderscale Warrior^1645:2:2,3928:1:1,4003:1:1,4424:2:2,4599:4:4,6149:1:1,8749:1:1^
+@i^1645^Moonberry Juice
 @i^1710^Greater Healing Potion
 @i^1994^Ebonclaw Reaver of the Bandit
+@i^3782^Large War Club
+@i^3928^Superior Healing Potion
 @i^3968^Thick Leather Tunic
 @i^3986^Protective Pavise
+@i^4003^Overlinked Chain Cloak
+@i^4068^Chief Brigadier Shield
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
+@i^4402^Small Flame Sac
+@i^4424^Scroll of Spirit III
+@i^4460^Ripped Wing Webbing
 @i^4552^Smooth Stone Chip
 @i^4554^Shiny Polished Stone
 @i^4599^Cured Ham Steak
 @i^4601^Soft Banana Bread
+@i^4636^Strong Iron Lockbox
 @i^6149^Greater Mana Potion
+@i^6444^Forked Tongue
+@i^7462^Knight's Girdle of Power
 @i^7912^Solid Stone
 @i^8009^Dentrium Power Stone
 @i^8052^An'Alleum Power Stone
+@i^8146^Wicked Claw
 @i^8150^Deeprock Salt
 @i^8159^Jouster's Girdle
+@i^8749^Crochet Hat
 @i^9292^Field Plate Pauldrons of the Beast
 @i^9388^Revelosh's Armguards of the Hierophant
 @i^9408^Ironshod Bludgeon
 @i^9411^Rockshard Pauldrons
 @i^9416^Grimlok's Charge
+@i^9876^Sorcerer Slippers of the Channeler
+@i^9891^Huntsman's Belt of the Bandit
 @i^9897^Jazeraint Chestguard of Power
 @i^9935^Embossed Plate Shield of the Sorcerer
 @i^9969^Embossed Plate Helmet of the Champion
@@ -55,29 +75,45 @@ GoldScout-export 6^dbu7cjilrgdd^1
 @i^11310^Flameseer Mantle
 @i^12037^Mystery Meat
 @i^19937^Small Scorpid Claw
+@i^248690^Waylaid Crate: Earthly Expert Herbs
 @i^274428^Dark Golem Breastplate
 @i^274432^Stone Keeper Spire
+@q^1645^1:0:0
 @q^1710^1:0:0
 @q^1994^2:2:0
+@q^3782^0:2:0
+@q^3928^1:0:0
 @q^3968^0:4:0
 @q^3986^0:4:0
+@q^4003^0:4:0
+@q^4068^2:4:0
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4402^1:7:1
+@q^4424^1:0:0
+@q^4460^0:15:0
 @q^4552^0:15:0
 @q^4554^0:15:0
 @q^4599^1:0:0
 @q^4601^1:0:0
+@q^4636^2:15:0
 @q^6149^1:0:0
+@q^6444^0:15:0
+@q^7462^2:4:0
 @q^7912^1:7:1
 @q^8009^1:12:0
 @q^8052^1:12:0
+@q^8146^1:7:1
 @q^8150^1:7:1
 @q^8159^2:4:0
+@q^8749^0:4:0
 @q^9292^2:4:0
 @q^9388^3:4:0
 @q^9408^3:2:0
 @q^9411^3:4:0
 @q^9416^3:2:0
+@q^9876^2:4:0
+@q^9891^2:4:0
 @q^9897^2:4:0
 @q^9935^2:4:0
 @q^9969^2:4:0
@@ -85,8 +121,10 @@ GoldScout-export 6^dbu7cjilrgdd^1
 @q^11310^3:4:0
 @q^12037^1:7:1
 @q^19937^0:15:0
+@q^248690^1:0:1
 @q^274428^3:4:0
 @q^274432^3:2:0
+@m^2548^Riverglades
 @c^118^
 @c^724^
 @c^733^
@@ -846,4 +884,9 @@ GoldScout-export 6^dbu7cjilrgdd^1
 @c^279981^
 @c^279982^
 @c^286152^
+@a^255770^266:1
+@a^255772^283:2
+@a^255774^284:2
+@a^262473^285:50,286:61,305:12,306:5
+@a^262477^285:29,286:40,305:16
 @l^0^enUS
