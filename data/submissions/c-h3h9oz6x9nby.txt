@@ -1,4 +1,4 @@
-GoldScout-export 5^h3h9oz6x9nby^4
+GoldScout-export 5^h3h9oz6x9nby^5
 2554^10^0^32^33^1417^0.7006^0.6242^10^Witherbark Axe Thrower^3771:1:1,4306:3:6^
 2555^10^0^33^34^1417^0.7074^0.6690^10^Witherbark Witch Doctor^1708:1:1,3782:1:1,4306:5:8,4338:1:1^
 2556^34^0^34^35^1417^0.6860^0.7590^34^Witherbark Headhunter^1708:1:1,4306:12:16,4338:1:1,11166:1:1,216483:1:1^
@@ -23,6 +23,7 @@ GoldScout-export 5^h3h9oz6x9nby^4
 4150^1^0^34^35^1441^0.7630^0.8946^1^Saltstone Gazer^1701:1:1^
 4151^7^0^32^33^1441^0.7928^0.8357^7^Saltstone Crystalhide^1701:4:4,1702:2:2,5637:1:1,11386:1:1^
 4154^9^0^30^32^1441^0.8057^0.6562^9^Salt Flats Scavenger^729:4:4,3399:2:2,5114:3:3,5115:1:1,5116:2:2,5848:8:8,11416:2:2,12037:4:4,17056:1:1^
+4281^1^0^29^30^1420^0.8366^0.3671^1^Scarlet Scout^1761:1:1,5805:1:1^
 218029^2^0^34^35^1417^0.6955^0.8130^2^Witherbark Champion^4306:1:1^
 218032^1^0^35^35^1417^0.6972^0.8161^1^Witherbark Goliath^4306:1:2,253711:1:1^
 245999^1^0^0^0^0^0.0000^0.0000^0^^273035:1:1^
@@ -54,6 +55,7 @@ GoldScout-export 5^h3h9oz6x9nby^4
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
+@i^1761^Reinforced Chain Vest
 @i^1780^Cross-stitched Sandals
 @i^1810^Tough Leather Armor
 @i^1829^Short Cutlass
@@ -89,6 +91,7 @@ GoldScout-export 5^h3h9oz6x9nby^4
 @i^5637^Large Fang
 @i^5794^Salty Scorpid Venom
 @i^5795^Hardened Tortoise Shell
+@i^5805^Heart of Zeal
 @i^5848^Hollow Vulture Bone
 @i^5853^Intact Silithid Carapace
 @i^5854^Silithid Talon
@@ -141,6 +144,7 @@ GoldScout-export 5^h3h9oz6x9nby^4
 @q^1707^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
+@q^1761^0:4:0
 @q^1780^0:4:0
 @q^1810^0:4:0
 @q^1829^0:2:0
@@ -176,6 +180,7 @@ GoldScout-export 5^h3h9oz6x9nby^4
 @q^5637^1:7:1
 @q^5794^1:12:0
 @q^5795^1:12:0
+@q^5805^1:12:0
 @q^5848^1:12:0
 @q^5853^1:12:0
 @q^5854^1:12:0
@@ -216,6 +221,7 @@ GoldScout-export 5^h3h9oz6x9nby^4
 @q^276160^0:15:0
 @q^278225^1:12:0
 @m^1417^Arathi Highlands
+@m^1420^Tirisfal Glades
 @m^1441^Thousand Needles
 @c^118^
 @c^724^
@@ -997,6 +1003,7 @@ GoldScout-export 5^h3h9oz6x9nby^4
 @a^4150^355:1
 @a^4151^237:1,355:6
 @a^4154^254:2,257:1,273:1,274:1,277:4
+@a^4281^156:1
 @a^218029^333:2
 @a^218032^333:1
 @l^0^enUS
