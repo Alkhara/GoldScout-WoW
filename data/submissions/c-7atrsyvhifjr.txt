@@ -1,4 +1,4 @@
-GoldScout-export 6^7atrsyvhifjr^19
+GoldScout-export 6^7atrsyvhifjr^20
 116^1^0^9^9^1429^0.8892^0.7802^1^Defias Bandit^8180:1:1^
 442^1^0^15^15^1433^0.0922^0.7114^1^Tarantula^^
 486^1^0^24^24^1433^0.6418^0.5973^1^Tharil'zun^2589:1:5^
@@ -38,6 +38,9 @@ GoldScout-export 6^7atrsyvhifjr^19
 5649^25^0^0^0^0^0.0000^0.0000^0^^1520:4:4,1645:1:1,4306:3:10,4338:4:15,4599:1:1,8386:1:1,8623:1:1,9242:1:1,9523:8:8,14839:1:1,14906:1:1,248710:1:1,262889:1:1^
 5650^22^0^0^0^0^0.0000^0.0000^0^^1520:5:5,4002:1:1,4024:1:1,4306:2:4,4338:5:12,8751:1:1,9523:5:5,12012:1:1,15287:1:1,213545:1:1^
 6093^1^0^11^11^1429^0.8888^0.7785^1^Dead-Tooth Jack^2589:1:1,6783:1:1^
+6509^8^0^48^49^1449^0.6917^0.3360^8^Bloodpetal Lasher^3357:1:1,4606:1:1,4607:2:2,4608:2:2,11018:2:2,11316:1:1^
+6510^2^0^51^52^1449^0.5277^0.1624^2^Bloodpetal Flayer^4606:1:1,11018:1:1,11316:2:2^
+6511^12^0^49^50^1449^0.6713^0.2869^12^Bloodpetal Thresher^4606:1:1,4607:1:1,4608:1:1,10286:3:3,11018:4:4,11116:1:1,11316:3:3^
 7246^17^0^0^0^0^0.0000^0.0000^0^^1520:6:6,3938:1:1,3964:1:1,4306:1:2,4338:3:4,4599:1:1,4638:1:1,8151:1:1,9523:4:4,14653:2:2^
 7267^1^0^0^0^0^0.0000^0.0000^0^^9477:1:1^
 7269^9^0^0^0^0^0.0000^0.0000^0^^6302:4:4,9238:5:5,14947:1:1^
@@ -156,6 +159,7 @@ GoldScout-export 6^7atrsyvhifjr^19
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
 @i^3348^Giant Crocolisk Skin
+@i^3357^Liferoot
 @i^3365^Frayed Bracers
 @i^3385^Lesser Mana Potion
 @i^3404^Buzzard Wing
@@ -181,6 +185,9 @@ GoldScout-export 6^7atrsyvhifjr^19
 @i^4583^Thick Furry Mane
 @i^4584^Large Trophy Paw
 @i^4599^Cured Ham Steak
+@i^4606^Spongy Morel
+@i^4607^Delicious Cave Mold
+@i^4608^Raw Black Truffle
 @i^4638^Reinforced Steel Lockbox
 @i^4757^Cracked Egg Shells
 @i^4775^Cracked Bill
@@ -226,9 +233,13 @@ GoldScout-export 6^7atrsyvhifjr^19
 @i^9523^Troll Temper
 @i^9640^Vice Grips of Arcane Protection
 @i^9822^Durable Cape of the Whale
+@i^10286^Heart of the Wild
 @i^10660^First Mosh'aru Tablet
 @i^10661^Second Mosh'aru Tablet
+@i^11018^Un'Goro Soil
+@i^11116^A Mangled Journal
 @i^11165^Formula: Enchant Weapon - Lesser Elemental Slayer
+@i^11316^Bloodpetal
 @i^11386^Squishy Basilisk Eye
 @i^11387^Basilisk Heart
 @i^11407^Torn Bear Pelt
@@ -356,6 +367,7 @@ GoldScout-export 6^7atrsyvhifjr^19
 @q^3299^0:15:0
 @q^3300^0:15:0
 @q^3348^1:12:0
+@q^3357^1:7:1
 @q^3365^0:4:0
 @q^3385^1:0:0
 @q^3404^1:7:1
@@ -381,6 +393,9 @@ GoldScout-export 6^7atrsyvhifjr^19
 @q^4583^0:15:0
 @q^4584^0:15:0
 @q^4599^1:0:0
+@q^4606^1:0:0
+@q^4607^1:0:0
+@q^4608^1:0:0
 @q^4638^2:15:0
 @q^4757^0:15:0
 @q^4775^0:15:0
@@ -426,9 +441,13 @@ GoldScout-export 6^7atrsyvhifjr^19
 @q^9523^1:12:0
 @q^9640^3:4:0
 @q^9822^2:4:0
+@q^10286^1:7:1
 @q^10660^1:12:0
 @q^10661^1:12:0
+@q^11018^1:12:0
+@q^11116^2:15:0
 @q^11165^2:9:0
+@q^11316^1:12:0
 @q^11386^0:15:0
 @q^11387^0:15:0
 @q^11407^1:12:0
@@ -505,6 +524,7 @@ GoldScout-export 6^7atrsyvhifjr^19
 @m^1433^Redridge Mountains
 @m^1437^Wetlands
 @m^1446^Tanaris
+@m^1449^Un'Goro Crater
 @m^1453^Stormwind City
 @m^2521^Zephras Isle
 @c^118^
@@ -1826,6 +1846,9 @@ GoldScout-export 6^7atrsyvhifjr^19
 @a^5617^91:1
 @a^5618^91:4,92:2,112:3,132:1
 @a^6093^317:1
+@a^6509^93:1,113:1,132:1,133:1,153:1,154:2,155:1
+@a^6510^70:2
+@a^6511^93:4,113:3,132:2,153:2,154:1
 @a^7847^151:1
 @a^7855^174:2,194:10
 @a^7856^174:4,194:7

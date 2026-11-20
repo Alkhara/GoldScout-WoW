@@ -1,4 +1,4 @@
-GoldScout-export 6^s70mvkx249ov^8
+GoldScout-export 6^s70mvkx249ov^10
 1025^1^0^21^21^1437^0.1285^0.3621^1^Bluegill Puddlejumper^1822:1:1,5784:1:1^
 2959^4^0^7^8^1412^0.5064^0.6154^4^Prairie Stalker^2672:3:3,3299:1:1^
 2960^21^0^9^10^1412^0.5991^0.6678^21^Prairie Wolf Alpha^2672:17:17,3299:5:5,3300:5:5,4668:1:1,4803:8:8,15010:1:1^
@@ -25,7 +25,12 @@ GoldScout-export 6^s70mvkx249ov^8
 3269^7^0^12^13^1413^0.5700^0.2501^7^Razormane Geomancer^2215:1:1,2589:2:5^
 3271^2^0^13^14^1413^0.5864^0.2618^2^Razormane Mystic^2589:1:3^
 3273^1^0^14^14^1413^0.4565^0.3999^1^Kolkar Stormer^^
+3381^5^0^12^13^1413^0.6406^0.4695^5^Southsea Brigand^2589:1:1,15301:1:1^
+3382^6^0^13^14^1413^0.6403^0.4664^6^Southsea Cannoneer^2589:4:8,5498:1:1^
+3383^4^0^14^15^1413^0.6181^0.4470^4^Southsea Cutthroat^1514:1:1,2589:2:3^
+3384^1^0^14^14^1413^0.6190^0.4440^1^Southsea Privateer^1513:1:1^
 3438^1^0^15^15^1413^0.5856^0.2659^1^Kreenig Snarlsnout^1495:1:1,5063:1:1^
+3467^1^0^16^16^1413^0.6410^0.4668^1^Baron Longshore^2592:1:2^
 3566^6^0^9^9^1412^0.4104^0.3229^6^Flatland Prowler^4813:1:1,4814:4:4,5203:4:4^
 3939^9^0^7^8^1413^0.5575^0.2478^9^Razormane Wolf^^
 5823^1^0^11^11^1411^0.3675^0.5257^1^Death Flayer^4867:1:1,5466:1:1,5572:1:1^
@@ -46,12 +51,15 @@ GoldScout-export 6^s70mvkx249ov^8
 @i^1495^Calico Shoes
 @i^1502^Warped Leather Belt
 @i^1504^Warped Leather Bracers
+@i^1513^Old Greatsword
+@i^1514^Rusty Warhammer
 @i^1731^Worn Mail Boots
 @i^1822^Cedar Walking Stick
 @i^2138^Sharpened Letter Opener
 @i^2214^Wooden Buckler
 @i^2215^Wooden Shield
 @i^2589^Linen Cloth
+@i^2592^Wool Cloth
 @i^2672^Stringy Wolf Meat
 @i^2774^Rust-covered Blunderbuss
 @i^3013^Scroll of Protection
@@ -87,6 +95,7 @@ GoldScout-export 6^s70mvkx249ov^8
 @i^5203^Flatland Prowler Claw
 @i^5466^Scorpid Stinger
 @i^5469^Strider Meat
+@i^5498^Small Lustrous Pearl
 @i^5572^Small Green Pouch
 @i^5635^Sharp Claw
 @i^5784^Slimy Murloc Scale
@@ -108,6 +117,7 @@ GoldScout-export 6^s70mvkx249ov^8
 @i^15008^Primal Mitts
 @i^15010^Primal Wraps of Frost Protection
 @i^15015^Lupine Cloak
+@i^15301^Grizzly Slippers
 @i^15302^Grizzly Belt
 @i^15478^Charger's Shield
 @i^15483^War Torn Cape
@@ -137,12 +147,15 @@ GoldScout-export 6^s70mvkx249ov^8
 @q^1495^0:4:0
 @q^1502^0:4:0
 @q^1504^0:4:0
+@q^1513^0:2:0
+@q^1514^0:2:0
 @q^1731^0:4:0
 @q^1822^0:2:0
 @q^2138^0:2:0
 @q^2214^0:4:0
 @q^2215^0:4:0
 @q^2589^1:7:1
+@q^2592^1:7:1
 @q^2672^1:7:1
 @q^2774^0:2:0
 @q^3013^1:0:0
@@ -178,6 +191,7 @@ GoldScout-export 6^s70mvkx249ov^8
 @q^5203^1:12:0
 @q^5466^1:7:1
 @q^5469^1:7:1
+@q^5498^2:7:1
 @q^5572^1:1:0
 @q^5635^1:7:1
 @q^5784^1:7:1
@@ -199,6 +213,7 @@ GoldScout-export 6^s70mvkx249ov^8
 @q^15008^1:4:0
 @q^15010^2:4:0
 @q^15015^1:4:0
+@q^15301^1:4:0
 @q^15302^1:4:0
 @q^15478^1:4:0
 @q^15483^1:4:0
@@ -222,11 +237,16 @@ GoldScout-export 6^s70mvkx249ov^8
 @m^1439^Darkshore
 @m^1453^Stormwind City
 @m^1456^Thunder Bluff
+@c^118^
 @c^724^
 @c^733^
 @c^787^
+@c^858^
+@c^929^
 @c^1017^
 @c^1082^
+@c^1251^
+@c^1710^
 @c^2300^
 @c^2302^
 @c^2303^
@@ -244,6 +264,7 @@ GoldScout-export 6^s70mvkx249ov^8
 @c^2317^
 @c^2318^
 @c^2319^
+@c^2581^
 @c^2679^
 @c^2680^
 @c^2681^
@@ -254,6 +275,8 @@ GoldScout-export 6^s70mvkx249ov^8
 @c^2687^
 @c^2888^
 @c^3220^
+@c^3530^
+@c^3531^
 @c^3662^
 @c^3663^
 @c^3664^
@@ -264,6 +287,7 @@ GoldScout-export 6^s70mvkx249ov^8
 @c^3727^
 @c^3728^
 @c^3729^
+@c^3928^
 @c^4231^
 @c^4233^
 @c^4234^
@@ -327,6 +351,10 @@ GoldScout-export 6^s70mvkx249ov^8
 @c^6038^
 @c^6290^
 @c^6316^
+@c^6450^
+@c^6451^
+@c^6452^
+@c^6453^
 @c^6466^
 @c^6467^
 @c^6468^
@@ -403,6 +431,8 @@ GoldScout-export 6^s70mvkx249ov^8
 @c^8349^
 @c^8364^
 @c^8367^
+@c^8544^
+@c^8545^
 @c^8957^
 @c^10841^
 @c^12209^
@@ -419,6 +449,7 @@ GoldScout-export 6^s70mvkx249ov^8
 @c^12632^
 @c^12636^
 @c^12641^
+@c^13446^
 @c^13851^
 @c^13927^
 @c^13928^
@@ -429,6 +460,8 @@ GoldScout-export 6^s70mvkx249ov^8
 @c^13933^
 @c^13934^
 @c^13935^
+@c^14529^
+@c^14530^
 @c^15045^
 @c^15046^
 @c^15047^
@@ -515,6 +548,7 @@ GoldScout-export 6^s70mvkx249ov^8
 @c^19157^
 @c^19162^
 @c^19163^
+@c^19440^
 @c^19685^
 @c^19686^
 @c^19687^
@@ -545,6 +579,7 @@ GoldScout-export 6^s70mvkx249ov^8
 @c^22759^
 @c^22760^
 @c^22761^
+@c^23684^
 @c^34086^
 @c^211423^
 @c^211502^
@@ -586,6 +621,7 @@ GoldScout-export 6^s70mvkx249ov^8
 @c^227879^
 @c^227882^
 @c^227883^
+@c^232433^
 @c^232436^
 @c^232438^
 @c^233802^
@@ -843,6 +879,14 @@ GoldScout-export 6^s70mvkx249ov^8
 @c^252605^
 @c^252606^
 @c^252683^
+@c^255715^
+@c^255716^
+@c^255717^
+@c^255718^
+@c^255719^
+@c^255720^
+@c^255721^
+@c^255722^
 @c^263507^
 @c^263509^
 @c^263512^
@@ -938,9 +982,11 @@ GoldScout-export 6^s70mvkx249ov^8
 @c^279257^
 @c^279258^
 @c^279938^
+@c^279940^
 @c^279941^
 @c^279945^
 @c^279947^
+@c^279951^
 @c^279957^
 @c^279961^
 @c^279962^
@@ -948,6 +994,7 @@ GoldScout-export 6^s70mvkx249ov^8
 @c^279965^
 @c^279966^
 @c^279967^
+@c^279968^
 @c^279969^
 @c^279974^
 @c^279978^
@@ -981,7 +1028,12 @@ GoldScout-export 6^s70mvkx249ov^8
 @a^3269^91:4,111:3
 @a^3271^111:2
 @a^3273^149:1
+@a^3381^172:1,192:4
+@a^3382^172:1,192:5
+@a^3383^172:3,192:1
+@a^3384^172:1
 @a^3438^111:1
+@a^3467^192:1
 @a^3566^87:3,107:1,126:1,271:1
 @a^3939^90:2,91:5,110:2
 @a^5823^207:1

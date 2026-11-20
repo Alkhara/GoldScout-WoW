@@ -1,4 +1,4 @@
-GoldScout-export 6^ka03lago9tdb^10
+GoldScout-export 6^ka03lago9tdb^11
 3560^2^0^26^27^1441^0.3391^0.3774^2^Healing Ward^^
 3743^5^0^23^24^1440^0.5726^0.6419^5^Foulweald Warrior^2589:1:2,16645:1:1,16743:1:1^
 3749^1^0^25^25^1440^0.5740^0.6344^1^Foulweald Ursa^^
@@ -37,10 +37,15 @@ GoldScout-export 6^ka03lago9tdb^10
 4120^1^0^28^28^1441^0.1335^0.2775^1^Thundering Boulderkin^2838:1:2,4784:1:1^
 4124^7^0^27^28^1441^0.3492^0.3995^7^Needles Cougar^5137:6:6^
 4126^1^0^25^26^1441^0.3478^0.2671^1^Crag Stalker^5137:1:1^
-4139^1^0^33^33^1441^0.8179^0.8652^1^Scorpid Terror^1288:1:1^
-4144^1^0^32^33^1441^0.7587^0.8332^1^Sparkleshell Borer^4556:1:1,5795:1:1^
+4139^2^0^33^34^1441^0.7910^0.8435^2^Scorpid Terror^1288:1:1,5794:1:1,19938:1:1^
+4140^7^0^31^32^1441^0.8138^0.5903^7^Scorpid Reaver^1288:1:1,5794:3:3,12037:4:4,19938:2:2^
+4142^1^0^30^31^1441^0.7752^0.5718^1^Sparkleshell Tortoise^4556:1:1,5795:1:1^
+4143^5^0^34^35^1441^0.7942^0.6217^5^Sparkleshell Snapper^4555:3:3,4556:2:2,5795:2:2^
+4144^3^0^32^33^1441^0.7896^0.8570^3^Sparkleshell Borer^3712:1:1,4556:1:1,5795:2:2^
+4147^8^0^30^31^1441^0.7510^0.5729^8^Saltstone Basilisk^1702:4:4,5637:1:1,11384:4:4,11385:1:1^
 4150^4^0^34^35^1441^0.7770^0.8557^4^Saltstone Gazer^1529:1:1,1701:1:1,1702:1:1,11386:1:1^
-4151^5^0^32^33^1441^0.7814^0.8558^5^Saltstone Crystalhide^1701:1:1,1702:1:1^
+4151^7^0^32^33^1441^0.7846^0.7648^7^Saltstone Crystalhide^1701:1:1,1702:2:2^
+4154^3^0^31^32^1441^0.8245^0.5866^3^Salt Flats Scavenger^729:2:2,3399:1:1,5115:1:1,5116:1:1,5848:3:3,11416:1:1,12037:1:1,17056:2:2^
 4248^3^0^26^27^1441^0.3655^0.3113^3^Pesterhide Hyena^248686:1:1,262888:1:1^
 4249^3^0^28^29^1441^0.1643^0.2547^3^Pesterhide Snarler^3301:1:1,3402:1:1^
 4490^1^0^31^31^1441^0.2700^0.5521^1^Grenka Bloodscreech^5843:1:1^
@@ -59,6 +64,7 @@ GoldScout-export 6^ka03lago9tdb^10
 12759^1^0^27^27^1440^0.5170^0.7231^1^Tideress^16408:1:1^
 12856^3^0^23^24^1440^0.7384^0.6964^3^Ashenvale Outrunner^2592:1:2,16650:1:1^
 12918^1^0^26^26^1440^0.5679^0.6354^1^Chief Murgut^4306:1:1,16648:1:1^
+@i^729^Stringy Vulture Meat
 @i^929^Healing Potion
 @i^1081^Crisp Spider Meat
 @i^1205^Melon Juice
@@ -88,11 +94,13 @@ GoldScout-export 6^ka03lago9tdb^10
 @i^3174^Spider Ichor
 @i^3301^Sharp Canine
 @i^3385^Lesser Mana Potion
+@i^3399^Vulture Talon
 @i^3402^Soft Patch of Fur
 @i^3669^Gelatinous Goo
 @i^3670^Large Slimy Bone
 @i^3674^Decomposed Boot
 @i^3676^Slimy Ichor
+@i^3712^Turtle Meat
 @i^3730^Big Bear Meat
 @i^3740^Decapitating Sword of Intellect
 @i^3770^Mutton Chop
@@ -100,8 +108,11 @@ GoldScout-export 6^ka03lago9tdb^10
 @i^4416^Schematic: Goblin Land Mine
 @i^4428^Spider Palp
 @i^4538^Snapvine Watermelon
+@i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
 @i^4784^Lifeless Stone
+@i^5115^Broken Wishbone
+@i^5116^Long Tail Feather
 @i^5137^Bright Eyeball
 @i^5446^Broken Elemental Bracer
 @i^5447^Damaged Elemental Bracer
@@ -112,21 +123,27 @@ GoldScout-export 6^ka03lago9tdb^10
 @i^5566^Broken Antler
 @i^5635^Sharp Claw
 @i^5636^Delicate Feather
+@i^5637^Large Fang
 @i^5741^Rock Chip
+@i^5794^Salty Scorpid Venom
 @i^5795^Hardened Tortoise Shell
 @i^5837^Steelsnap's Rib
 @i^5842^Unrefined Ore Sample
 @i^5843^Grenka's Claw
 @i^5844^Fragments of Rok'Alim
+@i^5848^Hollow Vulture Bone
 @i^5871^Large Hoof
 @i^6308^Raw Bristle Whisker Catfish
 @i^6444^Forked Tongue
 @i^6826^Brilliant Scale
 @i^7070^Elemental Water
 @i^9451^Bubbling Water
+@i^11384^Broken Basilisk Teeth
+@i^11385^Basilisk Scale
 @i^11386^Squishy Basilisk Eye
 @i^11406^Rotting Bear Carcass
 @i^11416^Delicate Ribcage
+@i^12037^Mystery Meat
 @i^12884^Arnak's Hoof
 @i^12946^Hypercapacitor Gizmo
 @i^14131^Ritual Belt of the Owl
@@ -152,6 +169,7 @@ GoldScout-export 6^ka03lago9tdb^10
 @i^16656^Shredder Operating Manual - Page 12
 @i^16743^Logging Rope
 @i^17056^Light Feather
+@i^19938^Heavy Scorpid Leg
 @i^21071^Raw Sagefish
 @i^21114^Rumsey Rum Dark
 @i^211784^Scroll: WUBBA WUBBA
@@ -159,6 +177,7 @@ GoldScout-export 6^ka03lago9tdb^10
 @i^248684^Waylaid Crate: Apprentice Textiles
 @i^248686^Waylaid Crate: Journeyman Herbs
 @i^262888^Sealed Journeyman's Writ
+@q^729^1:7:1
 @q^929^1:0:0
 @q^1081^1:7:1
 @q^1205^1:0:0
@@ -188,11 +207,13 @@ GoldScout-export 6^ka03lago9tdb^10
 @q^3174^1:7:1
 @q^3301^0:15:0
 @q^3385^1:0:0
+@q^3399^0:15:0
 @q^3402^0:15:0
 @q^3669^0:15:0
 @q^3670^0:15:0
 @q^3674^0:15:0
 @q^3676^0:15:0
+@q^3712^1:7:1
 @q^3730^1:7:1
 @q^3740^2:2:0
 @q^3770^1:0:0
@@ -200,8 +221,11 @@ GoldScout-export 6^ka03lago9tdb^10
 @q^4416^2:9:0
 @q^4428^0:15:0
 @q^4538^1:0:0
+@q^4555^0:15:0
 @q^4556^0:15:0
 @q^4784^0:15:0
+@q^5115^0:15:0
+@q^5116^1:7:1
 @q^5137^0:15:0
 @q^5446^0:15:0
 @q^5447^0:15:0
@@ -212,21 +236,27 @@ GoldScout-export 6^ka03lago9tdb^10
 @q^5566^0:15:0
 @q^5635^1:7:1
 @q^5636^0:15:0
+@q^5637^1:7:1
 @q^5741^0:15:0
+@q^5794^1:12:0
 @q^5795^1:12:0
 @q^5837^1:12:0
 @q^5842^1:12:0
 @q^5843^1:12:0
 @q^5844^1:12:0
+@q^5848^1:12:0
 @q^5871^0:15:0
 @q^6308^1:7:1
 @q^6444^0:15:0
 @q^6826^0:15:0
 @q^7070^1:7:1
 @q^9451^1:0:0
+@q^11384^0:15:0
+@q^11385^0:15:0
 @q^11386^0:15:0
 @q^11406^0:15:0
 @q^11416^0:15:0
+@q^12037^1:7:1
 @q^12884^1:0:0
 @q^12946^1:12:0
 @q^14131^2:4:0
@@ -252,6 +282,7 @@ GoldScout-export 6^ka03lago9tdb^10
 @q^16656^1:12:0
 @q^16743^1:12:0
 @q^17056^1:15:1
+@q^19938^0:15:0
 @q^21071^1:7:1
 @q^21114^1:0:0
 @q^211784^1:0:0
@@ -770,10 +801,15 @@ GoldScout-export 6^ka03lago9tdb^10
 @a^4120^102:1
 @a^4124^122:1,123:1,143:1,170:2,185:1,192:1
 @a^4126^106:1
-@a^4139^356:1
-@a^4144^335:1
+@a^4139^335:1,356:1
+@a^4140^215:2,235:1,256:4
+@a^4142^235:1
+@a^4143^215:2,235:1,277:1,334:1
+@a^4144^335:1,355:1,356:1
+@a^4147^215:2,234:4,235:1,254:1
 @a^4150^335:1,355:3
-@a^4151^355:5
+@a^4151^215:1,235:1,355:5
+@a^4154^215:1,256:1,277:1
 @a^4248^106:1,127:2
 @a^4249^83:2,122:1
 @a^4490^225:1

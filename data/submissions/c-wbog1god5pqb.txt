@@ -1,4 +1,4 @@
-GoldScout-export 6^wbog1god5pqb^23
+GoldScout-export 6^wbog1god5pqb^24
 412^1^0^35^35^1431^0.5850^0.6501^1^Stitches^929:1:1,2592:1:1,3360:1:1,3806:1:1^
 587^2^0^34^34^1434^0.3183^0.1691^2^Bloodscalp Warrior^^
 588^1^0^35^35^1434^0.2481^0.1130^1^Bloodscalp Scout^2744:1:1^
@@ -185,6 +185,7 @@ GoldScout-export 6^wbog1god5pqb^23
 255069^2^0^0^0^0^0.0000^0.0000^0^^^
 255070^3^0^0^0^0^0.0000^0.0000^0^^2222:1:1^
 255072^1^0^0^0^0^0.0000^0.0000^0^^^
+258522^1^0^38^38^2548^0.5428^0.8576^1^Sootfur^4582:1:1,265738:1:1^
 258573^9^0^36^37^2548^0.4988^0.7944^9^Mudfin Oracle^4603:1:2,5524:3:3,17058:2:2,267266:4:4^
 258574^11^0^37^38^2548^0.4968^0.7902^11^Mudfin Warrior^4603:1:3,5524:3:3,17058:5:5,267266:4:4^
 258588^12^0^38^40^2548^0.5168^0.7394^12^Jumbo Crawfish^5524:5:5,266157:4:4^
@@ -204,6 +205,7 @@ GoldScout-export 6^wbog1god5pqb^23
 269075^1^0^6^6^1426^0.2727^0.6278^1^Snow Leopard Prowler^4814:1:1^
 269134^4^0^0^0^0^0.0000^0.0000^0^^3201:1:1^
 270094^1^0^30^30^1441^0.5103^0.5219^1^Stormheart^5133:1:1^
+270664^1^0^37^37^2548^0.3755^0.6877^1^Venomweb Spitter^1074:1:1,10285:1:1^
 271336^1^0^30^30^1437^0.6947^0.2890^1^Carnage^280330:1:1^
 271338^1^0^32^32^1437^0.7760^0.4683^1^Ados^5741:1:10,280395:1:1^
 271346^5^0^29^30^1437^0.7093^0.4739^5^Dragonmaw Infiltrator^1828:1:1,1955:1:1,2785:1:1,3770:1:1,4306:1:3^
@@ -224,6 +226,7 @@ GoldScout-export 6^wbog1god5pqb^23
 @i^771^Chipped Boar Tusk
 @i^878^Fist-sized Spinneret
 @i^929^Healing Potion
+@i^1074^Hard Spider Leg Tip
 @i^1205^Melon Juice
 @i^1206^Moss Agate
 @i^1364^Ragged Leather Vest
@@ -352,6 +355,7 @@ GoldScout-export 6^wbog1god5pqb^23
 @i^4538^Snapvine Watermelon
 @i^4542^Moist Cornbread
 @i^4553^Jagged Piece of Stone
+@i^4582^Soft Bushy Tail
 @i^4586^Smooth Raptor Skin
 @i^4603^Raw Spotted Yellowtail
 @i^4606^Spongy Morel
@@ -418,6 +422,7 @@ GoldScout-export 6^wbog1god5pqb^23
 @i^9492^Electromagnetic Gigaflux Reactivator
 @i^9841^Banded Leggings of the Gorilla
 @i^9857^Archer's Bracers of Power
+@i^10285^Shadow Silk
 @i^11391^Spined Bat Wing
 @i^11392^Severed Bat Claw
 @i^11393^Small Bat Skull
@@ -457,6 +462,7 @@ GoldScout-export 6^wbog1god5pqb^23
 @i^253982^Pattern: Filigreed Shadow Circlet
 @i^260347^Tattered Journal
 @i^262888^Sealed Journeyman's Writ
+@i^265738^Sootfur's Pelt
 @i^266157^Jumbo Crawfish Shell
 @i^267266^Mudfin Murloc Head
 @i^268548^Empty Powder Keg
@@ -486,6 +492,7 @@ GoldScout-export 6^wbog1god5pqb^23
 @q^771^0:15:0
 @q^878^0:7:0
 @q^929^1:0:0
+@q^1074^0:15:0
 @q^1205^1:0:0
 @q^1206^2:7:1
 @q^1364^0:4:0
@@ -614,6 +621,7 @@ GoldScout-export 6^wbog1god5pqb^23
 @q^4538^1:0:0
 @q^4542^1:0:0
 @q^4553^0:15:0
+@q^4582^1:12:0
 @q^4586^0:15:0
 @q^4603^1:7:1
 @q^4606^1:0:0
@@ -680,6 +688,7 @@ GoldScout-export 6^wbog1god5pqb^23
 @q^9492^3:4:0
 @q^9841^2:4:0
 @q^9857^2:4:0
+@q^10285^1:7:1
 @q^11391^0:15:0
 @q^11392^0:15:0
 @q^11393^0:15:0
@@ -719,6 +728,7 @@ GoldScout-export 6^wbog1god5pqb^23
 @q^253982^3:9:0
 @q^260347^1:15:0
 @q^262888^3:0:0
+@q^265738^1:12:0
 @q^266157^1:12:0
 @q^267266^1:12:0
 @q^268548^1:12:0
@@ -2156,11 +2166,13 @@ GoldScout-export 6^wbog1god5pqb^23
 @a^11748^27:1
 @a^14279^207:1
 @a^253272^86:1
+@a^258522^350:1
 @a^258573^309:6,330:3
 @a^258574^290:1,309:6,310:1,329:2,330:1
 @a^258588^269:1,270:3,289:1,290:3,330:3,331:1
 @a^269075^245:1
 @a^270094^210:1
+@a^270664^267:1
 @a^271336^113:1
 @a^271338^195:1
 @a^271346^192:1,193:1,194:1,195:2

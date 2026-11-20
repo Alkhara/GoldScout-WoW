@@ -1,4 +1,4 @@
-GoldScout-export 6^0sb8zshq8772^3
+GoldScout-export 6^0sb8zshq8772^4
 764^3^0^39^39^1435^0.1413^0.3526^3^Swampwalker^6065:1:1,12040:1:1^
 765^2^0^39^40^1435^0.1076^0.3349^2^Swampwalker Elder^2452:1:1,248693:1:1^
 2554^8^0^32^33^1417^0.6864^0.6774^8^Witherbark Axe Thrower^4306:1:1,4503:1:1,216483:1:1^
@@ -20,10 +20,20 @@ GoldScout-export 6^0sb8zshq8772^3
 2599^1^0^38^38^1417^0.2597^0.6479^1^Otto^4516:1:1^
 2783^1^0^40^40^1417^0.2919^0.6402^1^Marez Cowl^3792:1:1,4515:1:1^
 2793^1^0^39^39^1417^0.5456^0.8123^1^Kor'gresh Coldrage^4525:1:1^
+4681^1^0^39^39^1443^0.5581^0.7787^1^Mage Hunter^15363:1:1^
 4729^1^0^36^36^1443^0.6295^0.4888^1^Hulking Gritjaw Basilisk^1702:1:1^
+5771^1^0^40^40^1443^0.5582^0.7779^1^Jugkar Grim'rod^^
 11576^6^0^32^34^1443^0.4386^0.6878^6^Whirlwind Ripper^7069:1:1^
 11577^10^0^35^37^1443^0.5180^0.5582^10^Whirlwind Stormwalker^7069:1:1^
 11578^16^0^32^34^1443^0.5127^0.8029^16^Whirlwind Shredder^7069:3:3,248686:1:1^
+252711^5^0^42^43^2652^0.5564^0.2980^5^Decrepit Pylon Protector^260348:1:1,260351:1:1,260352:1:1,260354:1:1,286647:1:1^
+253524^2^0^42^43^2652^0.6716^0.2325^2^Bristleback Nomad^^
+253525^1^0^42^43^2652^0.7136^0.3073^1^Bristleback Thornweaver^4306:1:1^
+253526^1^0^42^43^2652^0.6395^0.4058^1^Bristleback Skullcrusher^^
+254566^3^0^41^42^2652^0.6501^0.7342^3^Rowdy Rose^3358:1:1,256036:1:1,260350:2:2,260353:1:1^
+254567^3^0^42^42^2652^0.6742^0.7310^3^Terrible Tulip^256036:1:1,256037:1:1,260350:2:2^
+255207^1^0^41^41^2652^0.4596^0.5091^1^Prowler^5637:1:1,259461:1:1^
+263681^1^0^42^42^2652^0.3404^0.4311^1^Bear^11409:1:1,260349:1:1^
 @i^1702^Intact Basilisk Spine
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
@@ -33,6 +43,7 @@ GoldScout-export 6^0sb8zshq8772^3
 @i^2452^Swiftthistle
 @i^2592^Wool Cloth
 @i^3185^Acrobatic Staff of Defense
+@i^3358^Khadgar's Whisker
 @i^3385^Lesser Mana Potion
 @i^3771^Wild Hog Shank
 @i^3784^Metal Stave
@@ -54,13 +65,16 @@ GoldScout-export 6^0sb8zshq8772^3
 @i^4603^Raw Spotted Yellowtail
 @i^5040^Shadow Hunter Knife
 @i^5113^Mark of the Syndicate
+@i^5637^Large Fang
 @i^6065^Khadgar's Essays on Dimensional Convergence
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
 @i^6362^Raw Rockscale Cod
 @i^6986^Crimson Lotus
 @i^7069^Elemental Air
+@i^11409^Bear Flank
 @i^12040^Forest Pendant of the Bandit
+@i^15363^Trickster's Headdress of the Tiger
 @i^213422^Illegible Recipe
 @i^216483^Witherbark Mallet
 @i^248686^Waylaid Crate: Journeyman Herbs
@@ -68,6 +82,17 @@ GoldScout-export 6^0sb8zshq8772^3
 @i^248693^Waylaid Crate: Expert Textiles
 @i^248694^Waylaid Crate: Expert Curiosities
 @i^255723^Manual: Greater Healing Potion
+@i^256036^Handful of Dirt
+@i^256037^Grass Clippings
+@i^259461^Partially Digested Collar
+@i^260348^Barely Legible Journal Entry, Page I
+@i^260349^Barely Legible Journal Entry, Page II
+@i^260350^Barely Legible Journal Entry, Page III
+@i^260351^Barely Legible Journal Entry, Page IV
+@i^260352^Barely Legible Journal Entry, Page V
+@i^260353^Barely Legible Journal Entry, Page VI
+@i^260354^Barely Legible Journal Entry, Page VII
+@i^286647^Depleted Crystal Heart
 @q^1702^0:15:0
 @q^1707^1:0:0
 @q^1708^1:0:0
@@ -77,6 +102,7 @@ GoldScout-export 6^0sb8zshq8772^3
 @q^2452^1:7:1
 @q^2592^1:7:1
 @q^3185^2:2:0
+@q^3358^1:7:1
 @q^3385^1:0:0
 @q^3771^1:0:0
 @q^3784^0:2:0
@@ -98,13 +124,16 @@ GoldScout-export 6^0sb8zshq8772^3
 @q^4603^1:7:1
 @q^5040^1:2:0
 @q^5113^0:15:0
+@q^5637^1:7:1
 @q^6065^1:12:0
 @q^6358^1:7:1
 @q^6359^1:7:1
 @q^6362^1:7:1
 @q^6986^0:15:0
 @q^7069^1:7:1
+@q^11409^0:15:0
 @q^12040^2:4:0
+@q^15363^2:4:0
 @q^213422^1:12:0
 @q^216483^1:0:0
 @q^248686^1:0:1
@@ -112,10 +141,22 @@ GoldScout-export 6^0sb8zshq8772^3
 @q^248693^1:0:1
 @q^248694^1:0:1
 @q^255723^2:9:0
+@q^256036^0:15:0
+@q^256037^0:15:0
+@q^259461^1:15:0
+@q^260348^1:15:0
+@q^260349^1:15:0
+@q^260350^1:15:0
+@q^260351^1:15:0
+@q^260352^1:15:0
+@q^260353^1:15:0
+@q^260354^1:15:0
+@q^286647^1:12:0
 @m^1417^Arathi Highlands
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
 @m^1443^Desolace
+@m^2652^Shen'dralas
 @c^118^
 @c^724^
 @c^733^
@@ -856,9 +897,19 @@ GoldScout-export 6^0sb8zshq8772^3
 @a^2599^245:1
 @a^2783^245:1
 @a^2793^330:1
+@a^4681^311:1
 @a^4729^192:1
+@a^5771^311:1
 @a^11576^251:1,268:4,307:1
 @a^11577^192:1,210:1,212:3,228:4,248:1
 @a^11578^292:2,306:1,312:4,325:2,326:1,331:4,349:1,350:1
+@a^252711^94:2,128:3
+@a^253524^92:1,93:1
+@a^253525^134:1
+@a^253526^172:1
+@a^254566^292:1,293:1,313:1
+@a^254567^293:2,313:1
+@a^255207^209:1
+@a^263681^166:1
 @f^1434^0^19^200^4603:4:4,6358:1:1,6359:2:2,6362:12:12^305:19
 @l^0^enUS

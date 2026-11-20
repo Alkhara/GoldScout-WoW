@@ -1,4 +1,4 @@
-GoldScout-export 6^ukldp0o9bjhk^6
+GoldScout-export 6^ukldp0o9bjhk^7
 667^13^0^39^40^1434^0.4683^0.3970^13^Krieger der Skullsplitter^1520:4:4,1708:2:2,2732:1:1,2738:1:1,3916:2:2,4306:2:4,4338:1:1,8151:1:1,8153:2:4^
 669^16^0^41^42^1434^0.4567^0.4186^16^Jäger der Skullsplitter^866:1:1,1520:3:3,1524:4:4,1645:1:1,2730:1:1,2735:1:1,2745:1:1,3916:5:5,4025:1:1,4306:1:2,4338:2:2,8151:3:3,9880:1:1^
 670^8^0^41^42^1434^0.4585^0.4229^8^Hexendoktor der Skullsplitter^1520:2:2,1524:3:3,4306:2:3,4338:1:1^
@@ -32,10 +32,14 @@ GoldScout-export 6^ukldp0o9bjhk^6
 2648^2^0^50^51^1425^0.5966^0.7786^2^Aman'zasiwache der Vilebranch^8704:1:1^
 2681^1^0^50^51^1425^0.5930^0.7548^1^Raubwolf der Vilebranch^4583:1:1^
 3560^1^0^41^41^1434^0.4571^0.4265^1^Heilungszauberschutz^^
-4323^2^0^42^42^1445^0.4293^0.6900^2^Sengendes Jungtier^4460:2:2,5840:1:1,5841:2:2,8146:1:1^
-4324^4^0^43^43^1445^0.5032^0.6895^4^Sengender Welpe^4460:1:1,5840:2:2,5841:1:1,6444:1:1,7552:1:1^
-4329^2^0^41^41^1445^0.5050^0.6833^2^Späher der Feuermähnen^^
-4331^2^0^42^43^1445^0.4993^0.6900^2^Aschenschweif der Feuermähnen^^
+4323^24^0^41^42^1445^0.4454^0.7375^24^Sengendes Jungtier^4402:3:3,4460:7:7,5840:7:7,5841:8:8,6444:1:1,8146:1:1,279934:9:9^
+4324^36^0^42^43^1445^0.4492^0.7307^36^Sengender Welpe^4402:5:5,4460:10:10,5840:7:7,5841:7:7,6444:4:4,7552:1:1,8146:1:1,279934:7:7^
+4328^5^0^43^44^1445^0.4859^0.7500^5^Bannschuppe der Feuermähnen^^
+4329^15^0^41^42^1445^0.4535^0.7038^15^Späher der Feuermähnen^1645:1:1,4599:1:1,279934:2:2^
+4331^17^0^42^43^1445^0.4522^0.6993^17^Aschenschweif der Feuermähnen^1645:1:1,3928:1:1,4422:1:1,4599:2:2,279934:2:2^
+4345^1^0^41^41^1445^0.4643^0.7516^1^Staubsuhlerdolchrachen^3667:1:1^
+4356^6^0^39^40^1445^0.3534^0.7085^6^Blutsumpfscharfzahn^4461:4:4,4586:1:1,5637:1:1,12184:2:2,279601:2:2^
+4357^6^0^40^41^1445^0.3509^0.6950^6^Blutsumpfschmetterschwanz^4461:2:2,4586:2:2,4587:1:1,5637:2:2,12184:1:1,279601:6:6^
 4405^1^0^43^43^1445^0.5578^0.6521^1^Matschpanzerklingenklaue^7973:1:1^
 4632^2^0^31^31^1443^0.6905^0.5153^2^Zentaur der Kolkar^4306:2:4^
 4633^1^0^30^30^1443^0.7010^0.5009^1^Späher der Kolkar^^
@@ -163,20 +167,27 @@ GoldScout-export 6^ukldp0o9bjhk^6
 @i^3811^Doppelt genähter Umhang
 @i^3813^Doppelpanzerhose
 @i^3815^Doppelpanzerweste
+@i^3820^Würgetang
 @i^3864^Citrin
 @i^3909^Zerbrochene Rüstung von Ana'thek
 @i^3916^Spaltknochenhalskette
 @i^3917^Singender blauer Kristall
+@i^3928^Überragender Heiltrank
 @i^4020^Absplitternde Streitaxt
 @i^4025^Ausbalancierter Langbogen
 @i^4306^Seidenstoff
 @i^4338^Magiestoff
 @i^4377^Schweres Sprengpulver
+@i^4402^Kleiner Flammenbeutel
+@i^4422^Rolle der Ausdauer III
 @i^4460^Zerfetztes Flügelnetz
+@i^4461^Raptorbalg
 @i^4539^Goldrindenapfel
 @i^4582^Weicher buschiger Schweif
 @i^4583^Dicke fellige Mähne
 @i^4585^Tropfender Spinnenunterkiefer
+@i^4586^Glatte Raptorenhaut
+@i^4587^Stammesraptorfedern
 @i^4599^Räucherschinkensteak
 @i^4603^Roher Tüpfelgelbschwanz
 @i^4607^Köstlicher Höhlenschimmel
@@ -235,6 +246,7 @@ GoldScout-export 6^ukldp0o9bjhk^6
 @i^10777^Arachnidenhandschuhe des Kanalisierers
 @i^11416^Zierlicher Brustkorb
 @i^12037^Eigenartiges Fleisch
+@i^12184^Raptorfleisch
 @i^12206^Zartes Krebsfleisch
 @i^13137^Eisenwirker
 @i^13542^Dämonenkasten
@@ -253,6 +265,8 @@ GoldScout-export 6^ukldp0o9bjhk^6
 @i^17058^Fischöl
 @i^20310^Geschundene Dämonenhaut
 @i^20763^Beschädigte Waffe
+@i^21150^Eisenbeschlagener Koffer
+@i^21151^Schwarzer Rumsey Rum
 @i^213127^Unvollständige mystische Notizen
 @i^213545^Schriftrolle: ZAEHLEZ STARKDEUTIEN
 @i^248690^Abgefangene Kiste: Weltliche Kräuter des Experten
@@ -262,6 +276,8 @@ GoldScout-export 6^ukldp0o9bjhk^6
 @i^255728^Handbuch: Wirksames Gegengift
 @i^258530^Glücksköder
 @i^274380^Verwesende Fleischbänder
+@i^279601^Intakter Raptorbalg
+@i^279934^Abgeworfene dunkle Drachenschuppe
 @i^285101^Fäulnisverschmolzene Schienbeinschützer
 @q^770^0:15:0
 @q^863^2:2:0
@@ -312,20 +328,27 @@ GoldScout-export 6^ukldp0o9bjhk^6
 @q^3811^0:4:0
 @q^3813^0:4:0
 @q^3815^0:4:0
+@q^3820^1:7:1
 @q^3864^2:7:1
 @q^3909^1:12:0
 @q^3916^1:12:0
 @q^3917^1:12:0
+@q^3928^1:0:0
 @q^4020^0:2:0
 @q^4025^0:2:0
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4377^1:7:1
+@q^4402^1:7:1
+@q^4422^1:0:0
 @q^4460^0:15:0
+@q^4461^1:7:1
 @q^4539^1:0:0
 @q^4582^1:12:0
 @q^4583^0:15:0
 @q^4585^0:15:0
+@q^4586^0:15:0
+@q^4587^0:15:0
 @q^4599^1:0:0
 @q^4603^1:7:1
 @q^4607^1:0:0
@@ -384,6 +407,7 @@ GoldScout-export 6^ukldp0o9bjhk^6
 @q^10777^3:4:0
 @q^11416^0:15:0
 @q^12037^1:7:1
+@q^12184^1:7:1
 @q^12206^1:7:1
 @q^13137^3:2:0
 @q^13542^1:12:0
@@ -402,6 +426,8 @@ GoldScout-export 6^ukldp0o9bjhk^6
 @q^17058^1:15:0
 @q^20310^1:12:0
 @q^20763^0:15:0
+@q^21150^1:15:0
+@q^21151^1:0:0
 @q^213127^1:15:0
 @q^213545^1:0:0
 @q^248690^1:0:1
@@ -411,6 +437,8 @@ GoldScout-export 6^ukldp0o9bjhk^6
 @q^255728^2:9:0
 @q^258530^1:12:0
 @q^274380^3:4:0
+@q^279601^1:12:0
+@q^279934^1:12:0
 @q^285101^2:4:0
 @m^1413^Das Brachland
 @m^1414^Kalimdor
@@ -1699,10 +1727,14 @@ GoldScout-export 6^ukldp0o9bjhk^6
 @a^2648^311:2
 @a^2681^311:1
 @a^3560^169:1
-@a^4323^269:1,288:1
-@a^4324^269:2,290:1,291:1
-@a^4329^269:1,291:1
-@a^4331^268:1,291:1
+@a^4323^249:1,268:2,269:5,288:5,289:1,290:1,308:2,328:6,329:1
+@a^4324^249:1,268:1,269:8,288:7,289:2,290:2,291:1,308:8,309:3,328:2,329:1
+@a^4328^289:3,309:2
+@a^4329^268:3,269:5,288:2,289:1,291:1,308:1,309:1,328:1
+@a^4331^248:1,268:4,269:5,288:2,289:1,291:1,308:1,309:1,328:1
+@a^4345^309:1
+@a^4356^267:1,286:3,287:2
+@a^4357^266:3,267:2,286:1
 @a^4405^271:1
 @a^4632^213:2
 @a^4633^214:1
@@ -1760,7 +1792,7 @@ GoldScout-export 6^ukldp0o9bjhk^6
 @a^14356^193:1,215:1,233:1,253:1
 @a^252711^128:3
 @a^255561^347:2
-@f^1434^0^44^206^4603:3:3,6308:9:9,6358:3:3,6359:3:3,6362:11:11,8365:15:15,16969:1:1^105:3,106:32,285:9
+@f^1434^0^53^206^3820:1:3,4603:3:3,6308:10:10,6358:7:7,6359:3:3,6362:11:11,8365:15:15,16969:1:1,21150:2:2,21151:1:1^105:3,106:41,285:9
 @f^1435^0^3^225^4603:2:2,6362:1:1,16970:1:1^57:3
 @f^1443^0^5^225^6362:5:5,16968:1:1^305:5
 @f^1444^0^2^225^6358:1:1,8365:1:1,16967:1:1^212:2

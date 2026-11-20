@@ -1,4 +1,4 @@
-GoldScout-export 6^4zc54zdarxsl^6
+GoldScout-export 6^4zc54zdarxsl^7
 682^2^0^32^33^1434^0.4667^0.1626^2^Stranglethorn Tiger^^
 685^10^0^33^34^1434^0.2709^0.1608^10^Stranglethorn Raptor^3685:3:3,4461:5:5,4586:2:2,12184:8:8^
 686^2^0^35^36^1434^0.3810^0.2259^2^Lashtail Raptor^4461:1:1^
@@ -8,7 +8,7 @@ GoldScout-export 6^4zc54zdarxsl^6
 757^4^0^35^36^1435^0.4929^0.3176^4^Lost One Fisherman^4306:2:5,274045:1:1^
 759^2^0^36^37^1435^0.5502^0.3001^2^Lost One Hunter^4306:1:2,274045:2:2^
 772^4^0^37^38^1434^0.3743^0.4258^4^Stranglethorn Tigress^1688:1:1,12202:1:1^
-905^1^0^31^31^1434^0.3930^0.2880^1^Sharptooth Frenzy^4860:1:1^
+905^1^0^31^32^1434^0.3930^0.2880^1^Sharptooth Frenzy^4860:1:1^
 1096^9^0^35^36^1434^0.4416^0.2110^9^Venture Co. Geologist^864:1:1,1630:2:2,2592:1:2,2725:1:1,2740:1:1,3771:1:1,4106:6:6,4306:4:6^
 1142^1^0^37^37^1434^0.3773^0.3058^1^Mosh'Ogg Brute^^
 1150^3^0^30^31^1434^0.4049^0.1275^3^River Crocolisk^4053:2:2^
@@ -24,6 +24,7 @@ GoldScout-export 6^4zc54zdarxsl^6
 2555^8^0^33^34^1417^0.7174^0.6469^8^Witherbark Witch Doctor^3771:2:2,3800:1:1,4306:1:1,9849:1:1^
 2556^10^0^34^35^1417^0.6966^0.7152^10^Witherbark Headhunter^1708:2:2,3771:1:1,4306:7:10^
 2675^1^0^30^30^1413^0.6699^0.4296^1^Explosive Sheep^^
+2729^7^0^39^40^1418^0.2174^0.5611^7^Elder Crag Coyote^4582:2:2,4583:3:3,6166:7:7,7846:3:5,8146:1:1,12203:5:5^
 2967^2^0^8^9^1412^0.6261^0.6425^2^Galak Centaur^1418:1:1^
 3035^1^0^8^8^1412^0.3998^0.4665^1^Flatland Cougar^4814:1:1^
 3103^1^0^6^6^1411^0.6263^0.5703^1^Makrura Clacker^^
@@ -134,6 +135,8 @@ GoldScout-export 6^4zc54zdarxsl^6
 @i^4338^Mageweave Cloth
 @i^4461^Raptor Hide
 @i^4536^Shiny Red Apple
+@i^4582^Soft Bushy Tail
+@i^4583^Thick Furry Mane
 @i^4586^Smooth Raptor Skin
 @i^4603^Raw Spotted Yellowtail
 @i^4814^Discolored Fang
@@ -146,6 +149,7 @@ GoldScout-export 6^4zc54zdarxsl^6
 @i^5133^Seeping Gizzard
 @i^5137^Bright Eyeball
 @i^5538^Vorrel's Wedding Ring
+@i^6166^Coyote Jawbone
 @i^6308^Raw Bristle Whisker Catfish
 @i^6358^Oily Blackmouth
 @i^6361^Raw Rainbow Fin Albacore
@@ -157,6 +161,7 @@ GoldScout-export 6^4zc54zdarxsl^6
 @i^7718^Herod's Shoulder
 @i^7722^Triune Amulet
 @i^7723^Mograine's Might
+@i^7846^Crag Coyote Fang
 @i^8146^Wicked Claw
 @i^8188^Explosive Shotgun
 @i^9849^Conjurer's Hood of Spirit
@@ -231,6 +236,8 @@ GoldScout-export 6^4zc54zdarxsl^6
 @q^4338^1:7:1
 @q^4461^1:7:1
 @q^4536^1:0:0
+@q^4582^1:12:0
+@q^4583^0:15:0
 @q^4586^0:15:0
 @q^4603^1:7:1
 @q^4814^0:15:0
@@ -243,6 +250,7 @@ GoldScout-export 6^4zc54zdarxsl^6
 @q^5133^0:15:0
 @q^5137^0:15:0
 @q^5538^1:12:0
+@q^6166^1:12:0
 @q^6308^1:7:1
 @q^6358^1:7:1
 @q^6361^1:7:1
@@ -254,6 +262,7 @@ GoldScout-export 6^4zc54zdarxsl^6
 @q^7718^3:4:0
 @q^7722^3:4:0
 @q^7723^3:2:0
+@q^7846^1:12:0
 @q^8146^1:7:1
 @q^8188^2:2:0
 @q^9849^2:4:0
@@ -282,6 +291,7 @@ GoldScout-export 6^4zc54zdarxsl^6
 @m^1413^The Barrens
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
+@m^1418^Badlands
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
 @m^1441^Thousand Needles
@@ -949,6 +959,7 @@ GoldScout-export 6^4zc54zdarxsl^6
 @a^2555^254:6,274:1,293:1
 @a^2556^254:2,274:1,293:4,313:3
 @a^2675^173:1
+@a^2729^203:1,204:2,223:1,224:1,225:2
 @a^2967^252:1,272:1
 @a^3035^187:1
 @a^3103^232:1

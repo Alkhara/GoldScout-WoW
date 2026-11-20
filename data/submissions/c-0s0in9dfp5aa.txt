@@ -1,4 +1,4 @@
-GoldScout-export 6^0s0in9dfp5aa^12
+GoldScout-export 6^0s0in9dfp5aa^14
 1973^9^0^20^21^1421^0.5809^0.7100^9^Ravenclaw Guardian^955:1:1,1179:1:1,1794:1:1,2589:3:5,271343:1:1,271350:1:1^
 1974^5^0^19^20^1421^0.5931^0.7119^5^Ravenclaw Drudger^4605:1:1,6530:2:2^
 2244^3^0^21^22^1424^0.7885^0.4353^3^Syndicate Shadow Mage^2592:1:1^
@@ -79,6 +79,10 @@ GoldScout-export 6^0s0in9dfp5aa^12
 4129^1^0^19^19^1413^0.4430^0.5140^1^Hecklefang Snarler^3301:1:1^
 4275^1^0^0^0^0^0.0000^0.0000^0^^1819:1:1,2589:1:4,3385:1:2,5442:1:1,6392:1:1^
 4278^1^0^0^0^0^0.0000^0.0000^0^^6320:1:1^
+4376^2^0^35^36^1445^0.3425^0.2258^2^Darkmist Spider^1074:1:1,12205:1:1^
+4377^18^0^37^38^1445^0.3174^0.2201^18^Darkmist Lurker^4337:1:1,4585:5:5,10285:1:1,12205:6:6,15153:1:1^
+4378^7^0^36^37^1445^0.3437^0.2229^7^Darkmist Recluse^1074:1:1,4585:2:2,12205:4:4,14411:1:1^
+4379^13^0^38^39^1445^0.3124^0.2173^13^Darkmist Silkspinner^1074:1:1,4585:9:9,12205:3:3^
 4789^1^0^21^21^1414^0.4434^0.3496^1^Fallenroot Rogue^2592:1:4^
 4798^2^0^0^0^0^0.0000^0.0000^0^^^
 4799^1^0^0^0^0^0.0000^0.0000^0^^2589:1:4,2783:1:1^
@@ -260,6 +264,7 @@ GoldScout-export 6^0s0in9dfp5aa^12
 @i^3931^Poisoned Spider Fang
 @i^3989^Blocking Targe
 @i^4306^Silk Cloth
+@i^4337^Thick Spider's Silk
 @i^4338^Mageweave Cloth
 @i^4352^Pattern: Boots of the Enchanter
 @i^4428^Spider Palp
@@ -267,6 +272,7 @@ GoldScout-export 6^0s0in9dfp5aa^12
 @i^4538^Snapvine Watermelon
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
+@i^4585^Dripping Spider Mandible
 @i^4599^Cured Ham Steak
 @i^4604^Forest Mushroom Cap
 @i^4605^Red-speckled Mushroom
@@ -341,6 +347,7 @@ GoldScout-export 6^0s0in9dfp5aa^12
 @i^9740^Gem of Pythas
 @i^9741^Gem of Serpentis
 @i^9775^Bandit Cinch of the Monkey
+@i^10285^Shadow Silk
 @i^10412^Belt of the Fang
 @i^10441^Glowing Shard
 @i^10661^Second Mosh'aru Tablet
@@ -348,14 +355,17 @@ GoldScout-export 6^0s0in9dfp5aa^12
 @i^11407^Torn Bear Pelt
 @i^11416^Delicate Ribcage
 @i^11993^Clay Ring of the Monkey
+@i^12205^White Spider Meat
 @i^12994^Thorbia's Gauntlets
 @i^13245^Kresh's Back
 @i^14129^Ritual Sandals of Stamina
 @i^14370^Mystic's Woolies
+@i^14411^Stonecloth Gloves
 @i^14433^Windchaser Woolies
 @i^14560^Prospector's Boots
 @i^14724^War Paint Cloak
 @i^14951^Bloodforged Sabatons of the Boar
+@i^15153^Nocturnal Cloak of the Boar
 @i^15162^Imposing Boots of Fire Protection
 @i^15168^Imposing Pants of Agility
 @i^15173^Potent Cape of the Prophet
@@ -520,6 +530,7 @@ GoldScout-export 6^0s0in9dfp5aa^12
 @q^3931^0:15:0
 @q^3989^0:4:0
 @q^4306^1:7:1
+@q^4337^1:7:1
 @q^4338^1:7:1
 @q^4352^2:9:0
 @q^4428^0:15:0
@@ -527,6 +538,7 @@ GoldScout-export 6^0s0in9dfp5aa^12
 @q^4538^1:0:0
 @q^4555^0:15:0
 @q^4556^0:15:0
+@q^4585^0:15:0
 @q^4599^1:0:0
 @q^4604^1:0:0
 @q^4605^1:0:0
@@ -601,6 +613,7 @@ GoldScout-export 6^0s0in9dfp5aa^12
 @q^9740^1:12:0
 @q^9741^1:12:0
 @q^9775^2:4:0
+@q^10285^1:7:1
 @q^10412^3:4:0
 @q^10441^1:12:0
 @q^10661^1:12:0
@@ -608,14 +621,17 @@ GoldScout-export 6^0s0in9dfp5aa^12
 @q^11407^1:12:0
 @q^11416^0:15:0
 @q^11993^2:4:0
+@q^12205^1:7:1
 @q^12994^3:4:0
 @q^13245^3:4:0
 @q^14129^2:4:0
 @q^14370^2:4:0
+@q^14411^2:4:0
 @q^14433^2:4:0
 @q^14560^2:4:0
 @q^14724^2:4:0
 @q^14951^2:4:0
+@q^15153^2:4:0
 @q^15162^2:4:0
 @q^15168^2:4:0
 @q^15173^2:4:0
@@ -683,6 +699,7 @@ GoldScout-export 6^0s0in9dfp5aa^12
 @m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
 @m^1440^Ashenvale
+@m^1445^Dustwallow Marsh
 @m^1450^Moonglade
 @c^724^
 @c^733^
@@ -1657,6 +1674,10 @@ GoldScout-export 6^0s0in9dfp5aa^12
 @a^3926^127:1,128:1,147:3
 @a^4054^211:3,212:6,231:6,232:3
 @a^4129^208:1
+@a^4376^86:2
+@a^4377^86:18
+@a^4378^86:6,87:1
+@a^4379^86:13
 @a^4789^128:1
 @a^4802^128:1,148:1
 @a^12676^274:1
