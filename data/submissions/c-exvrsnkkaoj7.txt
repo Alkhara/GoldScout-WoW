@@ -1,9 +1,11 @@
-GoldScout-export 6^exvrsnkkaoj7^14
+GoldScout-export 6^exvrsnkkaoj7^15
 1563^1^0^42^42^1434^0.2690^0.8243^1^Bloodsail Swashbuckler^4338:1:2^
 1564^1^0^42^43^1434^0.2687^0.8279^1^Bloodsail Warlock^^
 1821^16^0^52^53^1422^0.4762^0.5892^16^Carrion Lurker^1074:4:4,4337:2:2,4585:4:4,10285:2:2,12205:5:5,14227:3:5,248696:1:1^
 1824^2^0^54^55^1422^0.5189^0.5695^2^Plague Lurker^12205:1:1^
 1853^1^0^0^0^0^0.0000^0.0000^0^^12843:1:1,13501:1:1,13951:1:1,16693:1:1^
+2588^7^0^36^37^1417^0.2806^0.6453^7^Syndicate Prowler^5113:2:2,6986:2:2,9879:1:1^
+2590^3^0^35^36^1417^0.2804^0.6496^3^Syndicate Conjuror^1707:1:1,5113:1:1^
 3560^7^0^56^57^2482^0.2658^0.6221^7^Healing Ward^^
 4328^3^0^43^44^1445^0.5687^0.7977^3^Firemane Scalebane^^
 4334^5^0^43^44^1445^0.5375^0.8221^5^Firemane Flamecaller^1645:1:1^
@@ -246,6 +248,7 @@ GoldScout-export 6^exvrsnkkaoj7^14
 278644^1^0^0^0^0^0.0000^0.0000^0^^11129:1:3^
 @i^1074^Hard Spider Leg Tip
 @i^1645^Moonberry Juice
+@i^1707^Stormwind Brie
 @i^3730^Big Bear Meat
 @i^3820^Stranglekelp
 @i^3857^Coal
@@ -276,6 +279,7 @@ GoldScout-export 6^exvrsnkkaoj7^14
 @i^4584^Large Trophy Paw
 @i^4585^Dripping Spider Mandible
 @i^4787^Burning Pitch
+@i^5113^Mark of the Syndicate
 @i^5758^Mithril Lockbox
 @i^5759^Thorium Lockbox
 @i^6300^Husk Fragment
@@ -285,6 +289,7 @@ GoldScout-export 6^exvrsnkkaoj7^14
 @i^6444^Forked Tongue
 @i^6530^Nightcrawlers
 @i^6826^Brilliant Scale
+@i^6986^Crimson Lotus
 @i^7068^Elemental Fire
 @i^7077^Heart of Fire
 @i^7078^Essence of Fire
@@ -313,6 +318,7 @@ GoldScout-export 6^exvrsnkkaoj7^14
 @i^8950^Homemade Cherry Pie
 @i^8952^Roasted Quail
 @i^8953^Deep Fried Plantains
+@i^9879^Sorcerer Bracelets of Frozen Wrath
 @i^10068^Righteous Boots of Intellect
 @i^10100^Councillor's Shoulders of Stamina
 @i^10107^Wanderer's Bracers of the Wolf
@@ -581,6 +587,7 @@ GoldScout-export 6^exvrsnkkaoj7^14
 @i^287034^Grove Subjugator's Blade
 @q^1074^0:15:0
 @q^1645^1:0:0
+@q^1707^1:0:0
 @q^3730^1:7:1
 @q^3820^1:7:1
 @q^3857^1:7:1
@@ -611,6 +618,7 @@ GoldScout-export 6^exvrsnkkaoj7^14
 @q^4584^0:15:0
 @q^4585^0:15:0
 @q^4787^0:15:0
+@q^5113^0:15:0
 @q^5758^2:15:0
 @q^5759^2:15:0
 @q^6300^0:15:0
@@ -620,6 +628,7 @@ GoldScout-export 6^exvrsnkkaoj7^14
 @q^6444^0:15:0
 @q^6530^1:0:0
 @q^6826^0:15:0
+@q^6986^0:15:0
 @q^7068^1:7:1
 @q^7077^1:7:1
 @q^7078^2:7:1
@@ -648,6 +657,7 @@ GoldScout-export 6^exvrsnkkaoj7^14
 @q^8950^1:0:0
 @q^8952^1:0:0
 @q^8953^1:0:0
+@q^9879^2:4:0
 @q^10068^2:4:0
 @q^10100^2:4:0
 @q^10107^2:4:0
@@ -914,6 +924,7 @@ GoldScout-export 6^exvrsnkkaoj7^14
 @q^280085^3:2:0
 @q^281018^1:0:0
 @q^287034^3:2:0
+@m^1417^Arathi Highlands
 @m^1422^Western Plaguelands
 @m^1423^Eastern Plaguelands
 @m^1427^Searing Gorge
@@ -1647,6 +1658,8 @@ GoldScout-export 6^exvrsnkkaoj7^14
 @a^1564^325:1
 @a^1821^228:3,229:9,230:2,249:2
 @a^1824^230:2
+@a^2588^245:4,265:3
+@a^2590^245:1,265:2
 @a^3560^225:2,226:1,244:1,245:1,264:2
 @a^4328^311:2,331:1
 @a^4334^311:1,330:4

@@ -1,4 +1,4 @@
-GoldScout-export 5^yx8f7zt37g4f^5
+GoldScout-export 5^yx8f7zt37g4f^6
 1015^1^0^23^24^1437^0.5349^0.2396^1^Highland Raptor^3685:1:1^
 1017^1^0^25^25^1437^0.5919^0.2893^1^Highland Scytheclaw^3685:1:1^
 1069^3^0^25^26^1437^0.6116^0.3244^3^Crimson Whelp^3175:1:1,4402:1:1^
@@ -12,6 +12,8 @@ GoldScout-export 5^yx8f7zt37g4f^5
 2351^1^0^21^22^1424^0.5681^0.2531^1^Gray Bear^11406:1:1^
 2354^1^0^22^23^1424^0.5199^0.3057^1^Vicious Gray Bear^2940:1:1,3730:1:1^
 2356^2^0^25^26^1424^0.6329^0.4587^2^Elder Gray Bear^2940:1:1,3730:2:2^
+2358^4^0^32^33^1416^0.2532^0.6021^4^Dalaran Summoner^2592:1:1,3745:4:4^
+2359^5^0^32^33^1416^0.2200^0.5288^5^Elemental Slave^2838:1:1,4553:4:4,4784:3:3,7067:1:1,8150:2:2,248694:1:1^
 2372^2^0^27^27^1424^0.6407^0.6647^2^Mudsnout Gnoll^4306:1:1^
 2385^167^0^27^28^1424^0.6475^0.6924^167^Feral Mountain Lion^2819:1:1,3731:93:93,3873:1:1,5001:1:1,5136:14:14,5137:74:74,5635:13:13,5637:2:2,6599:1:1,7415:1:1,9796:1:1,9803:1:1,262888:1:1^
 2408^14^0^30^31^1416^0.7858^0.5919^11^Snapjaw^3712:6:9,4555:2:2,4556:4:4,5524:6:6^
@@ -86,6 +88,7 @@ GoldScout-export 5^yx8f7zt37g4f^5
 @i^2785^Stiff Recurve Bow
 @i^2786^Oiled Blunderbuss
 @i^2819^Cross Dagger of Strength
+@i^2838^Heavy Stone
 @i^2940^Bloody Bear Paw
 @i^3056^Forest Leather Pants
 @i^3174^Spider Ichor
@@ -107,16 +110,19 @@ GoldScout-export 5^yx8f7zt37g4f^5
 @i^3712^Turtle Meat
 @i^3730^Big Bear Meat
 @i^3731^Lion Meat
+@i^3745^Rune of Opening
 @i^3817^Reinforced Buckler
 @i^3873^Plans: Golden Scale Cuirass
 @i^4306^Silk Cloth
 @i^4402^Small Flame Sac
 @i^4428^Spider Palp
+@i^4553^Jagged Piece of Stone
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
 @i^4711^Glimmering Cloak
 @i^4713^Silver-thread Cloak
 @i^4715^Emblazoned Cloak
+@i^4784^Lifeless Stone
 @i^5001^Heart Ring
 @i^5120^Long Tail Hair
 @i^5136^Torn Furry Ear
@@ -132,7 +138,9 @@ GoldScout-export 5^yx8f7zt37g4f^5
 @i^6597^Battleforge Shoulderguards of the Knight
 @i^6599^Battleforge Shield of the Elder
 @i^6613^Sage's Bracers of the Hierophant
+@i^7067^Elemental Earth
 @i^7415^Dervish Spaulders of the Owl
+@i^8150^Deeprock Salt
 @i^8184^Firestarter
 @i^9767^Greenweave Sandals of Magic
 @i^9796^Ivycloth Mantle of the Elder
@@ -157,6 +165,7 @@ GoldScout-export 5^yx8f7zt37g4f^5
 @i^248686^Waylaid Crate: Journeyman Herbs
 @i^248687^Waylaid Crate: Journeyman Ore
 @i^248693^Waylaid Crate: Expert Textiles
+@i^248694^Waylaid Crate: Expert Curiosities
 @i^248702^Waylaid Crate: Apprentice Fabrics
 @i^248704^Waylaid Crate: Apprentice Parts
 @i^250182^Recipe: Bear Brisket
@@ -199,6 +208,7 @@ GoldScout-export 5^yx8f7zt37g4f^5
 @q^2785^0:2:0
 @q^2786^0:2:0
 @q^2819^2:2:0
+@q^2838^1:7:1
 @q^2940^0:15:0
 @q^3056^2:4:0
 @q^3174^1:7:1
@@ -220,16 +230,19 @@ GoldScout-export 5^yx8f7zt37g4f^5
 @q^3712^1:7:1
 @q^3730^1:7:1
 @q^3731^1:7:1
+@q^3745^1:12:0
 @q^3817^0:4:0
 @q^3873^2:9:0
 @q^4306^1:7:1
 @q^4402^1:7:1
 @q^4428^0:15:0
+@q^4553^0:15:0
 @q^4555^0:15:0
 @q^4556^0:15:0
 @q^4711^2:4:0
 @q^4713^2:4:0
 @q^4715^2:4:0
+@q^4784^0:15:0
 @q^5001^2:4:0
 @q^5120^0:15:0
 @q^5136^0:15:0
@@ -245,7 +258,9 @@ GoldScout-export 5^yx8f7zt37g4f^5
 @q^6597^2:4:0
 @q^6599^2:4:0
 @q^6613^2:4:0
+@q^7067^1:7:1
 @q^7415^2:4:0
+@q^8150^1:7:1
 @q^8184^2:2:0
 @q^9767^2:4:0
 @q^9796^2:4:0
@@ -270,6 +285,7 @@ GoldScout-export 5^yx8f7zt37g4f^5
 @q^248686^1:0:1
 @q^248687^1:0:1
 @q^248693^1:0:1
+@q^248694^1:0:1
 @q^248702^2:0:1
 @q^248704^2:0:1
 @q^250182^1:9:0
@@ -776,6 +792,8 @@ GoldScout-export 5^yx8f7zt37g4f^5
 @a^2351^111:1
 @a^2354^130:1
 @a^2356^172:1,192:1
+@a^2358^224:1,225:1,244:1,245:1
+@a^2359^204:4,224:1
 @a^2372^272:1,273:1
 @a^2385^211:1,231:6,251:3,253:1,272:44,273:32,292:28,293:44,313:8
 @a^2408^197:1,216:2,235:2,236:1,255:3,274:2
