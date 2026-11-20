@@ -120,6 +120,10 @@ class ValidatorTests(unittest.TestCase):
             with self.subTest(name):
                 self.assertTrue(errors(text))
 
+    def test_a_boss_dropping_a_full_stack_of_ammo_is_fine(self):
+        # Lord Roccor drops Rockshard Pellets 200 at a time: 3 kills, 3 drops, 600 pellets.
+        self.assertEqual(errors(GOOD.replace("4874:2:2", "4874:2:400")), [])
+
     def test_unsafe_name_characters_are_removed_not_the_export(self):
         # Quotes, backslashes and the game's | codes become spaces: harmless, and the rest of the export counts.
         for name, kept in (('Spined" Crawler', "Spined Crawler"), ("|cffff0000Spined", "cffff0000Spined"),
