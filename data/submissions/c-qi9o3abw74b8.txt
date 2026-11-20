@@ -1,4 +1,5 @@
-GoldScout-export 6^qi9o3abw74b8^2
+GoldScout-export 6^qi9o3abw74b8^3
+4693^1^0^37^37^1443^0.5099^0.4917^1^Schreckensflieger^11416:1:1,12037:1:1^
 5331^6^0^42^43^1444^0.2795^0.5298^6^Krieger der Hasskämme^1645:1:1,7973:1:1,9247:2:2,17058:2:2^
 5332^1^0^42^42^1444^0.2656^0.5386^1^Wellenreiter der Hasskämme^7973:1:1,9247:1:1^
 5335^14^0^41^42^1444^0.2779^0.5273^14^Kreischer der Hasskämme^1645:1:1,4603:1:2,7973:6:6,9247:3:3,17058:4:4^
@@ -7,6 +8,7 @@ GoldScout-export 6^qi9o3abw74b8^2
 5617^4^0^42^43^1446^0.6324^0.3203^4^Schattenmagierin der Wüstenläufer^1645:1:1,4338:1:1,8483:2:2^
 5618^10^0^41^42^1446^0.6327^0.3082^10^Bandit der Wüstenläufer^3927:1:1,4338:3:4,8483:5:5,248690:1:1^
 8996^4^0^42^43^1446^0.6314^0.3186^4^Leerwandlerdiener^^
+11577^1^0^35^37^1443^0.4864^0.4791^1^Wirbelsturmgänger^^
 @i^1645^Mondbeerensaft
 @i^3809^Doppelpanzerstiefel
 @i^3927^Feiner alter Cheddar
@@ -14,9 +16,12 @@ GoldScout-export 6^qi9o3abw74b8^2
 @i^4306^Seidenstoff
 @i^4338^Magiestoff
 @i^4603^Roher Tüpfelgelbschwanz
+@i^6358^Öliges Schwarzmaul
 @i^7973^Großmaulmuschel
 @i^8483^Wasserbeutel eines Wüstenläufers
 @i^9247^Nagaschuppe der Hasskämme
+@i^11416^Zierlicher Brustkorb
+@i^12037^Eigenartiges Fleisch
 @i^17058^Fischöl
 @i^248690^Abgefangene Kiste: Weltliche Kräuter des Experten
 @q^1645^1:0:0
@@ -26,11 +31,15 @@ GoldScout-export 6^qi9o3abw74b8^2
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4603^1:7:1
+@q^6358^1:7:1
 @q^7973^1:7:0
 @q^8483^1:12:0
 @q^9247^1:12:0
+@q^11416^0:15:0
+@q^12037^1:7:1
 @q^17058^1:15:0
 @q^248690^1:0:1
+@m^1443^Desolace
 @m^1444^Feralas
 @m^1446^Tanaris
 @c^724^
@@ -720,6 +729,7 @@ GoldScout-export 6^qi9o3abw74b8^2
 @c^279985^
 @c^279987^
 @c^286152^
+@a^4693^190:1
 @a^5331^205:6
 @a^5332^205:1
 @a^5335^205:14
@@ -728,4 +738,6 @@ GoldScout-export 6^qi9o3abw74b8^2
 @a^5617^132:3,133:1
 @a^5618^92:1,112:1,132:7,133:1
 @a^8996^132:3,133:1
+@a^11577^189:1
+@f^1446^0^3^200^6358:3:4^113:3
 @l^0^deDE

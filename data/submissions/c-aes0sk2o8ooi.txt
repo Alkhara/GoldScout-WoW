@@ -1,4 +1,4 @@
-GoldScout-export 6^aes0sk2o8ooi^10
+GoldScout-export 6^aes0sk2o8ooi^11
 2937^1^0^43^43^1445^0.6043^0.1042^1^Dagun the Ravenous^4641:1:1^
 4196^10^0^49^50^1446^0.3592^0.4497^10^Silithid Swarm^^
 4360^9^0^37^38^1445^0.5924^0.1024^9^Mirefin Warrior^2289:1:1,6362:1:2,17057:3:3,17058:2:2^
@@ -53,16 +53,33 @@ GoldScout-export 6^aes0sk2o8ooi^10
 8637^3^0^44^45^1427^0.6455^0.5145^3^Dark Iron Watchman^4306:2:4,4338:1:1^
 8675^1^0^51^51^1419^0.4933^0.3586^1^Felbeast^^
 222233^1^0^43^43^1444^0.7493^0.2495^1^Ohk'zi^254692:1:1^
+255262^3^0^0^0^0^0.0000^0.0000^0^^15980:1:1^
+255267^1^0^0^0^0^0.0000^0.0000^0^^14479:1:1^
+255271^4^0^0^0^0^0.0000^0.0000^0^^4338:1:1,4602:1:1^
+255276^1^0^0^0^0^0.0000^0.0000^0^^14442:1:1^
+255309^1^0^0^0^0^0.0000^0.0000^0^^4022:1:1^
+255364^1^0^0^0^0^0.0000^0.0000^0^^^
+255373^2^0^0^0^0^0.0000^0.0000^0^^3967:1:1^
+255377^4^0^0^0^0^0.0000^0.0000^0^^^
+255391^1^0^0^0^0^0.0000^0.0000^0^^276733:1:1^
+255702^1^0^0^0^0^0.0000^0.0000^0^^276746:1:1,276890:1:1^
+255995^3^0^0^0^0^0.0000^0.0000^0^^14835:1:1^
+255997^2^0^0^0^0^0.0000^0.0000^0^^273883:1:1,276736:1:1,276737:1:1^
+256236^1^0^0^0^0^0.0000^0.0000^0^^274029:1:1,276742:1:1^
+257016^1^0^0^0^0^0.0000^0.0000^0^^276740:1:1^
+271784^1^0^0^0^0^0.0000^0.0000^0^^14292:1:1^
 @i^785^Mageroyal
 @i^1645^Moonberry Juice
 @i^2289^Scroll of Strength II
 @i^3864^Citrine
 @i^3928^Superior Healing Potion
 @i^3939^Crochet Cloak
+@i^3967^Thick Leather Shoulderpads
 @i^3975^Smooth Leather Shoulderpads
 @i^4018^Whetted Claymore
 @i^4020^Splintering Battle Axe
 @i^4021^Blunting Mace
+@i^4022^Crushing Maul
 @i^4306^Silk Cloth
 @i^4337^Thick Spider's Silk
 @i^4338^Mageweave Cloth
@@ -112,9 +129,14 @@ GoldScout-export 6^aes0sk2o8ooi^10
 @i^12205^White Spider Meat
 @i^12208^Tender Wolf Meat
 @i^14233^Embersilk Leggings of the Channeler
+@i^14292^Arachnidian Cape of the Eagle
+@i^14442^Venomshroud Mitts
+@i^14479^Pattern: Brightcloth Gloves
+@i^14835^Tyrant's Chestpiece
 @i^14853^Sunscale Wristguards
 @i^15244^Razor Blade of Spirit
 @i^15263^Royal Mallet of the Eagle
+@i^15980^Darkmist Orb of the Prophet
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
 @i^18956^Miniaturization Residue
@@ -125,6 +147,15 @@ GoldScout-export 6^aes0sk2o8ooi^10
 @i^248693^Waylaid Crate: Expert Textiles
 @i^254692^Staff of Ohk'zi
 @i^262890^Sealed Artisan's Writ
+@i^273883^Ca'zass's Head
+@i^274029^Ornate Shackle Key
+@i^276733^Grips of Control
+@i^276736^Seascale Bracers
+@i^276737^Cloak of the Tidemistress
+@i^276740^Sentimental Locket
+@i^276742^Girdle of Extracted Answers
+@i^276746^Defias Enforcer's Legguards
+@i^276890^Zarla's Journal
 @i^280203^Jameson's Training Sword
 @q^785^1:7:1
 @q^1645^1:0:0
@@ -132,10 +163,12 @@ GoldScout-export 6^aes0sk2o8ooi^10
 @q^3864^2:7:1
 @q^3928^1:0:0
 @q^3939^0:4:0
+@q^3967^0:4:0
 @q^3975^0:4:0
 @q^4018^0:2:0
 @q^4020^0:2:0
 @q^4021^0:2:0
+@q^4022^0:2:0
 @q^4306^1:7:1
 @q^4337^1:7:1
 @q^4338^1:7:1
@@ -185,9 +218,14 @@ GoldScout-export 6^aes0sk2o8ooi^10
 @q^12205^1:7:1
 @q^12208^1:7:1
 @q^14233^2:4:0
+@q^14292^2:4:0
+@q^14442^2:4:0
+@q^14479^2:9:0
+@q^14835^2:4:0
 @q^14853^2:4:0
 @q^15244^2:2:0
 @q^15263^2:2:0
+@q^15980^2:4:0
 @q^17057^1:15:0
 @q^17058^1:15:0
 @q^18956^1:12:0
@@ -198,6 +236,15 @@ GoldScout-export 6^aes0sk2o8ooi^10
 @q^248693^1:0:1
 @q^254692^1:12:0
 @q^262890^3:0:0
+@q^273883^1:12:0
+@q^274029^1:12:0
+@q^276733^3:4:0
+@q^276736^3:4:0
+@q^276737^3:4:0
+@q^276740^3:4:0
+@q^276742^3:4:0
+@q^276746^3:4:0
+@q^276890^1:12:0
 @q^280203^1:12:0
 @m^1419^Blasted Lands
 @m^1427^Searing Gorge
