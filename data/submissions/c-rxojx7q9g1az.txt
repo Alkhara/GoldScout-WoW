@@ -1,4 +1,4 @@
-GoldScout-export 6^rxojx7q9g1az^22
+GoldScout-export 6^rxojx7q9g1az^23
 232^1^0^23^23^1424^0.3331^0.3459^1^Farmer Ray^^
 1532^1^0^10^11^1420^0.7400^0.6046^1^Wandering Spirit^^
 1766^11^0^11^12^1421^0.5734^0.1294^11^Mottled Worg^2672:6:6,3164:2:2,3300:1:1,6518:1:1,211787:1:1^
@@ -63,6 +63,8 @@ GoldScout-export 6^rxojx7q9g1az^22
 2529^1^0^0^0^0^0.0000^0.0000^0^^1205:1:1^
 2559^33^0^30^31^1417^0.5996^0.4267^33^Highland Strider^1696:3:3,3685:14:14,4461:13:13,4512:10:10,4586:1:1,5637:2:2,12184:11:11,15284:1:1^
 2563^1^0^32^33^1417^0.7013^0.3581^1^Plains Creeper^1074:1:1,1081:1:1,2251:1:1,248694:1:1^
+2581^2^0^31^32^1417^0.5474^0.3915^2^Dabyrie Militia^1707:1:1^
+2582^12^0^30^31^1417^0.5498^0.3945^12^Dabyrie Laborer^1708:1:1,1783:1:1,4306:4:5,213547:1:1^
 3111^4^0^6^7^1411^0.4892^0.4893^4^Razormane Quilboar^2213:1:1^
 3112^2^0^7^8^1411^0.4910^0.4914^2^Razormane Scout^2589:2:3^
 3113^1^0^8^9^1411^0.4302^0.3835^1^Razormane Dustrunner^2589:1:2,4536:1:1^
@@ -216,6 +218,7 @@ GoldScout-export 6^rxojx7q9g1az^22
 4437^1^0^0^0^0^0.0000^0.0000^0^^^
 4438^1^0^0^0^0^0.0000^0.0000^0^^6679:1:1^
 4442^1^0^0^0^0^0.0000^0.0000^0^^^
+4479^1^0^33^33^1417^0.5517^0.3902^1^Fardel Dabyrie^^
 4490^1^0^31^31^1441^0.2597^0.5543^1^Grenka Bloodscreech^5843:1:1^
 4511^2^0^0^0^0^0.0000^0.0000^0^^3403:1:1,11967:1:1^
 4514^9^0^0^0^0^0.0000^0.0000^0^^2295:1:1,2677:5:5,3172:5:5,3403:3:3,15348:1:1^
@@ -381,6 +384,8 @@ GoldScout-export 6^rxojx7q9g1az^22
 @i^1515^Rough Wooden Staff
 @i^1696^Curved Raptor Talon
 @i^1697^Keen Raptor Tooth
+@i^1707^Stormwind Brie
+@i^1708^Sweet Nectar
 @i^1732^Worn Mail Bracers
 @i^1738^Laced Mail Belt
 @i^1741^Laced Cloak
@@ -393,6 +398,7 @@ GoldScout-export 6^rxojx7q9g1az^22
 @i^1768^Canvas Pants
 @i^1772^Brocade Shoes
 @i^1777^Brocade Shoulderpads
+@i^1783^Cross-stitched Gloves
 @i^1785^Cross-stitched Shoulderpads
 @i^1788^Patched Leather Boots
 @i^1790^Patched Cloak
@@ -692,6 +698,7 @@ GoldScout-export 6^rxojx7q9g1az^22
 @i^211853^Scroll: VOCE WELL
 @i^211854^Scroll: OMIT KESA
 @i^211855^Scroll: STHENIC LUNATE
+@i^213547^Scroll: THAW WORDS
 @i^248683^Waylaid Crate: Apprentice Ore
 @i^248685^Waylaid Crate: Apprentice Curiosities
 @i^248686^Waylaid Crate: Journeyman Herbs
@@ -768,6 +775,8 @@ GoldScout-export 6^rxojx7q9g1az^22
 @q^1515^0:2:0
 @q^1696^0:15:0
 @q^1697^0:15:0
+@q^1707^1:0:0
+@q^1708^1:0:0
 @q^1732^0:4:0
 @q^1738^0:4:0
 @q^1741^0:4:0
@@ -780,6 +789,7 @@ GoldScout-export 6^rxojx7q9g1az^22
 @q^1768^0:4:0
 @q^1772^0:4:0
 @q^1777^0:4:0
+@q^1783^0:4:0
 @q^1785^0:4:0
 @q^1788^0:4:0
 @q^1790^0:4:0
@@ -1079,6 +1089,7 @@ GoldScout-export 6^rxojx7q9g1az^22
 @q^211853^1:0:0
 @q^211854^1:0:0
 @q^211855^1:0:0
+@q^213547^1:0:0
 @q^248683^1:0:1
 @q^248685^1:0:1
 @q^248686^1:0:1
@@ -2224,6 +2235,8 @@ GoldScout-export 6^rxojx7q9g1az^22
 @a^2451^167:1
 @a^2559^149:1,153:3,154:2,169:3,171:5,172:4,173:7,190:5,192:3
 @a^2563^154:1
+@a^2581^150:2
+@a^2582^150:5,151:7
 @a^3111^189:4
 @a^3112^189:1,190:1
 @a^3113^148:1
@@ -2341,6 +2354,7 @@ GoldScout-export 6^rxojx7q9g1az^22
 @a^4249^102:1,232:1
 @a^4263^290:1
 @a^4316^170:1,171:1
+@a^4479^151:1
 @a^4490^225:1
 @a^4789^128:1
 @a^4802^128:1,148:2

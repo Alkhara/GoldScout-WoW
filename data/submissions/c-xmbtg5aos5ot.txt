@@ -1,4 +1,4 @@
-GoldScout-export 5^xmbtg5aos5ot^9
+GoldScout-export 5^xmbtg5aos5ot^10
 1913^1^0^16^16^1421^0.6351^0.6314^1^Garde de Dalaran^^
 4789^1^0^21^21^1414^0.4440^0.3487^1^Voleur Sans-racines^^
 4798^1^0^0^0^0^0.0000^0.0000^0^^2589:1:4,3379:1:1^
@@ -90,6 +90,7 @@ GoldScout-export 5^xmbtg5aos5ot^9
 @i^4555^Epaisse queue écailleuse
 @i^4556^Fragment de carapace moucheté
 @i^4585^Mandibule d'araignée visqueuse
+@i^4603^Jaune-queue tacheté cru
 @i^4784^Pierre morte
 @i^5524^Palourde à coque épaisse
 @i^5758^Coffret en mithril
@@ -100,6 +101,7 @@ GoldScout-export 5^xmbtg5aos5ot^9
 @i^6294^Lutjan de 12 livres
 @i^6308^Poisson-chat moustachu cru
 @i^6309^Poisson-chat de 17 livres
+@i^6358^Bouche-noire huileux
 @i^6359^Lutjan de nagefeu
 @i^6362^Morue rochécaille crue
 @i^6530^Asticots
@@ -163,6 +165,9 @@ GoldScout-export 5^xmbtg5aos5ot^9
 @i^16732^Jambières de vaillance
 @i^16737^Gantelets de vaillance
 @i^16967^Ahi de Feralas
+@i^16968^Frappeur Sar'theris
+@i^16969^Sailfin bleu de la Côte sauvage
+@i^16970^Mahi Mahi de Brumejonc
 @i^17057^Ecailles de poisson brillantes
 @i^17058^Huile de poisson
 @i^18335^Diamant noir parfait
@@ -217,6 +222,7 @@ GoldScout-export 5^xmbtg5aos5ot^9
 @q^4555^0:15:0
 @q^4556^0:15:0
 @q^4585^0:15:0
+@q^4603^1:7:1
 @q^4784^0:15:0
 @q^5524^1:7:0
 @q^5758^2:15:0
@@ -227,6 +233,7 @@ GoldScout-export 5^xmbtg5aos5ot^9
 @q^6294^1:15:0
 @q^6308^1:7:1
 @q^6309^1:15:0
+@q^6358^1:7:1
 @q^6359^1:7:1
 @q^6362^1:7:1
 @q^6530^1:0:0
@@ -290,6 +297,9 @@ GoldScout-export 5^xmbtg5aos5ot^9
 @q^16732^3:4:0
 @q^16737^3:4:0
 @q^16967^1:15:0
+@q^16968^1:12:0
+@q^16969^1:12:0
+@q^16970^1:12:0
 @q^17057^1:15:0
 @q^17058^1:15:0
 @q^18335^3:12:1
@@ -327,6 +337,8 @@ GoldScout-export 5^xmbtg5aos5ot^9
 @m^1421^Forêt des Pins argentés
 @m^1423^Maleterres de l'est
 @m^1428^Steppes ardentes
+@m^1434^Vallée de Strangleronce
+@m^1435^Marais des Chagrins
 @m^1436^Marche de l'Ouest
 @m^1442^Les Serres-Rocheuses
 @m^1443^Désolace
@@ -1044,8 +1056,10 @@ GoldScout-export 5^xmbtg5aos5ot^9
 @a^255394^127:1
 @a^272307^107:1
 @f^1412^0^76^1^6289:32:32,6291:42:42,6292:1:1,6294:1:1^229:76
+@f^1434^0^4^225^4603:1:1,6362:3:3,16969:1:1^126:4
+@f^1435^0^12^225^6358:1:1,6359:2:2,6362:9:9,16970:1:1^158:12
 @f^1442^0^315^130^929:1:1,2881:1:1,6289:106:106,6308:205:205,6309:2:2^229:48,249:267
-@f^1443^0^2^225^6359:1:1,6362:1:1^305:2
+@f^1443^0^7^225^4603:2:2,6358:1:1,6359:2:2,6362:2:2,16968:1:1^305:7
 @f^1444^0^5^225^8365:1:1,13758:3:3,13760:1:1,16967:1:1^212:5
 @f^1445^0^124^205^6308:59:59,8365:65:65^127:124
 @f^1456^0^108^75^6289:63:63,6291:16:16,6308:29:29^247:108

@@ -1,4 +1,4 @@
-GoldScout-export 6^0s0in9dfp5aa^14
+GoldScout-export 6^0s0in9dfp5aa^15
 1973^9^0^20^21^1421^0.5809^0.7100^9^Ravenclaw Guardian^955:1:1,1179:1:1,1794:1:1,2589:3:5,271343:1:1,271350:1:1^
 1974^5^0^19^20^1421^0.5931^0.7119^5^Ravenclaw Drudger^4605:1:1,6530:2:2^
 2244^3^0^21^22^1424^0.7885^0.4353^3^Syndicate Shadow Mage^2592:1:1^
@@ -21,6 +21,12 @@ GoldScout-export 6^0s0in9dfp5aa^14
 2428^2^0^24^24^1424^0.7876^0.4041^2^Jailor Marlgen^422:1:1,2592:1:1,3499:1:1^
 2451^2^0^25^25^1424^0.3632^0.4671^2^Farmer Kalaba^422:1:1,6568:1:1^
 2529^1^0^0^0^0^0.0000^0.0000^0^^^
+2559^1^0^30^31^1417^0.4422^0.4078^1^Highland Strider^3685:1:1^
+2560^1^0^33^34^1417^0.4462^0.3918^1^Highland Thrasher^1696:1:1,3685:1:1^
+2563^20^0^32^33^1417^0.4150^0.4212^20^Plains Creeper^878:3:3,1074:4:4,1081:9:9,2251:8:8,3182:3:3,4337:1:1,4585:5:5^
+2565^8^0^35^36^1417^0.4157^0.3054^8^Giant Plains Creeper^878:1:1,1074:4:4,1081:4:4,2251:4:4,3182:1:1,4585:1:1,5637:1:1^
+2760^50^0^38^39^1417^0.2550^0.3020^50^Burning Exile^3857:6:6,4479:29:29,4787:27:27,7068:8:8,7435:1:1^
+2762^16^0^38^39^1417^0.5171^0.5058^16^Thundering Exile^4480:9:9^
 3245^2^0^16^17^1413^0.4970^0.5004^2^Ornery Plainstrider^17056:1:1^
 3255^1^0^13^14^1413^0.4998^0.4555^1^Sunscale Screecher^^
 3256^8^0^16^18^1413^0.5047^0.4846^8^Sunscale Scytheclaw^5055:2:2,5124:1:1,5165:5:5,248682:1:1^
@@ -188,6 +194,7 @@ GoldScout-export 6^0s0in9dfp5aa^14
 @i^1512^Crude Battle Axe
 @i^1520^Troll Sweat
 @i^1645^Moonberry Juice
+@i^1696^Curved Raptor Talon
 @i^1697^Keen Raptor Tooth
 @i^1735^Worn Mail Pants
 @i^1744^Laced Mail Shoulderpads
@@ -260,6 +267,7 @@ GoldScout-export 6^0s0in9dfp5aa^14
 @i^3730^Big Bear Meat
 @i^3731^Lion Meat
 @i^3770^Mutton Chop
+@i^3857^Coal
 @i^3928^Superior Healing Potion
 @i^3931^Poisoned Spider Fang
 @i^3989^Blocking Targe
@@ -268,6 +276,8 @@ GoldScout-export 6^0s0in9dfp5aa^14
 @i^4338^Mageweave Cloth
 @i^4352^Pattern: Boots of the Enchanter
 @i^4428^Spider Palp
+@i^4479^Burning Charm
+@i^4480^Thundering Charm
 @i^4537^Tel'Abim Banana
 @i^4538^Snapvine Watermelon
 @i^4555^Thick Scaly Tail
@@ -277,6 +287,7 @@ GoldScout-export 6^0s0in9dfp5aa^14
 @i^4604^Forest Mushroom Cap
 @i^4605^Red-speckled Mushroom
 @i^4637^Steel Lockbox
+@i^4787^Burning Pitch
 @i^5055^Intact Raptor Horn
 @i^5075^Blood Shard
 @i^5078^Theramore Medal
@@ -302,6 +313,7 @@ GoldScout-export 6^0s0in9dfp5aa^14
 @i^5567^Silver Hook
 @i^5569^Seaweed
 @i^5635^Sharp Claw
+@i^5637^Large Fang
 @i^5784^Slimy Murloc Scale
 @i^5867^Etched Phial
 @i^5871^Large Hoof
@@ -325,9 +337,11 @@ GoldScout-export 6^0s0in9dfp5aa^14
 @i^6629^Sporid Cape
 @i^6902^Bands of Serra'kis
 @i^6911^Moss Cinch
+@i^7068^Elemental Fire
 @i^7085^Pattern: Azure Shoulders
 @i^7092^Pattern: Hands of Darkness
 @i^7364^Pattern: Heavy Earthen Gloves
+@i^7435^Twilight Mantle of the Eagle
 @i^7525^Gossamer Bracers of Stamina
 @i^8151^Flask of Mojo
 @i^8548^Divino-matic Rod
@@ -454,6 +468,7 @@ GoldScout-export 6^0s0in9dfp5aa^14
 @q^1512^0:2:0
 @q^1520^0:15:0
 @q^1645^1:0:0
+@q^1696^0:15:0
 @q^1697^0:15:0
 @q^1735^0:4:0
 @q^1744^0:4:0
@@ -526,6 +541,7 @@ GoldScout-export 6^0s0in9dfp5aa^14
 @q^3730^1:7:1
 @q^3731^1:7:1
 @q^3770^1:0:0
+@q^3857^1:7:1
 @q^3928^1:0:0
 @q^3931^0:15:0
 @q^3989^0:4:0
@@ -534,6 +550,8 @@ GoldScout-export 6^0s0in9dfp5aa^14
 @q^4338^1:7:1
 @q^4352^2:9:0
 @q^4428^0:15:0
+@q^4479^1:0:0
+@q^4480^1:0:0
 @q^4537^1:0:0
 @q^4538^1:0:0
 @q^4555^0:15:0
@@ -543,6 +561,7 @@ GoldScout-export 6^0s0in9dfp5aa^14
 @q^4604^1:0:0
 @q^4605^1:0:0
 @q^4637^2:15:0
+@q^4787^0:15:0
 @q^5055^1:12:0
 @q^5075^1:12:0
 @q^5078^1:12:0
@@ -568,6 +587,7 @@ GoldScout-export 6^0s0in9dfp5aa^14
 @q^5567^0:15:0
 @q^5569^0:15:0
 @q^5635^1:7:1
+@q^5637^1:7:1
 @q^5784^1:7:1
 @q^5867^1:12:0
 @q^5871^0:15:0
@@ -591,9 +611,11 @@ GoldScout-export 6^0s0in9dfp5aa^14
 @q^6629^3:4:0
 @q^6902^3:4:0
 @q^6911^3:4:0
+@q^7068^1:7:1
 @q^7085^2:9:0
 @q^7092^2:9:0
 @q^7364^2:9:0
+@q^7435^2:4:0
 @q^7525^2:4:0
 @q^8151^1:7:1
 @q^8548^1:0:0
@@ -696,6 +718,7 @@ GoldScout-export 6^0s0in9dfp5aa^14
 @m^1412^Mulgore
 @m^1413^The Barrens
 @m^1414^Kalimdor
+@m^1417^Arathi Highlands
 @m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
 @m^1440^Ashenvale
@@ -1640,6 +1663,12 @@ GoldScout-export 6^0s0in9dfp5aa^14
 @a^2427^175:2
 @a^2428^175:2
 @a^2451^187:2
+@a^2559^168:1
+@a^2560^148:1
+@a^2563^143:1,144:1,147:1,148:3,149:2,150:1,163:4,169:1,191:3,192:2,211:1
+@a^2565^87:1,107:4,148:2,149:1
+@a^2760^104:5,105:18,124:12,125:15
+@a^2762^190:6,210:10
 @a^3245^189:1,209:1
 @a^3255^189:1
 @a^3256^189:5,190:2,210:1

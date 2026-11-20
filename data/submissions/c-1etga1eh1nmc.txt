@@ -1,10 +1,14 @@
-GoldScout-export 6^1etga1eh1nmc^6
+GoldScout-export 6^1etga1eh1nmc^7
 1085^1^0^35^35^1434^0.3194^0.1984^1^Elder Stranglethorn Tiger^1687:1:1^
 1117^1^0^9^9^1426^0.7776^0.5960^1^Rockjaw Bonesnapper^118:1:1,2589:1:1^
 1135^2^0^6^7^1426^0.4183^0.4830^2^Wendigo^^
 1152^1^0^36^36^1434^0.3845^0.3190^1^Snapjaw Crocolisk^770:1:1,3667:1:1,12037:1:1^
-1162^1^0^11^11^1432^0.2694^0.4546^1^Stonesplinter Scout^1511:1:1,2536:1:1^
-1172^4^0^10^11^1432^0.3995^0.2157^4^Tunnel Rat Vermin^2589:1:1,3110:2:2,4537:1:1,9753:1:1^
+1161^3^0^11^12^1432^0.2843^0.5991^3^Stonesplinter Trogg^2287:1:1,2536:1:1^
+1162^4^0^11^12^1432^0.3123^0.6428^4^Stonesplinter Scout^1511:1:1,2536:2:2^
+1163^3^0^13^14^1432^0.2909^0.8229^3^Stonesplinter Skullthumper^2536:2:2,2589:2:6,6336:1:1,9743:1:1^
+1166^3^0^13^14^1432^0.2908^0.8386^3^Stonesplinter Seer^1497:1:1,2589:2:6^
+1172^5^0^10^11^1432^0.3910^0.2264^5^Tunnel Rat Vermin^2589:1:1,3110:3:3,4537:1:1,9753:1:1^
+1173^2^0^10^10^1432^0.3173^0.3573^2^Tunnel Rat Scout^3110:1:1,4537:1:1^
 1175^2^0^12^13^1432^0.3526^0.2211^2^Tunnel Rat Digger^2589:2:6^
 1186^3^0^11^12^1432^0.2922^0.1254^3^Elder Black Bear^3169:2:2,3170:1:1,3173:1:1^
 1190^3^0^10^11^1432^0.2708^0.2488^3^Mountain Boar^769:2:2,3171:1:1^
@@ -44,6 +48,7 @@ GoldScout-export 6^1etga1eh1nmc^6
 @i^769^Chunk of Boar Meat
 @i^770^Pointy Crocolisk Tooth
 @i^1430^Patchwork Gloves
+@i^1497^Calico Cloak
 @i^1511^Commoner's Sword
 @i^1529^Jade
 @i^1687^Retractable Claw
@@ -51,6 +56,7 @@ GoldScout-export 6^1etga1eh1nmc^6
 @i^1708^Sweet Nectar
 @i^1731^Worn Mail Boots
 @i^1990^Ballast Maul of Stamina
+@i^2287^Haunch of Meat
 @i^2536^Trogg Stone Tooth
 @i^2589^Linen Cloth
 @i^2646^Loose Chain Pants
@@ -87,6 +93,7 @@ GoldScout-export 6^1etga1eh1nmc^6
 @i^6294^12 Pound Mud Snapper
 @i^6308^Raw Bristle Whisker Catfish
 @i^6317^Raw Loch Frenzy
+@i^6336^Infantry Tunic of Holy Wrath
 @i^6355^Sturdy Locked Chest
 @i^6357^Sealed Crate
 @i^6358^Oily Blackmouth
@@ -103,6 +110,7 @@ GoldScout-export 6^1etga1eh1nmc^6
 @i^8188^Explosive Shotgun
 @i^8365^Raw Mithril Head Trout
 @i^8748^Double Mail Coif
+@i^9743^Simple Shoes
 @i^9753^Nomad Buckler of the Eagle
 @i^9870^Renegade Circlet of the Falcon
 @i^9878^Sorcerer Hat of the Channeler
@@ -131,6 +139,7 @@ GoldScout-export 6^1etga1eh1nmc^6
 @q^769^1:7:1
 @q^770^0:15:0
 @q^1430^0:4:0
+@q^1497^0:4:0
 @q^1511^0:2:0
 @q^1529^2:7:1
 @q^1687^0:15:0
@@ -138,6 +147,7 @@ GoldScout-export 6^1etga1eh1nmc^6
 @q^1708^1:0:0
 @q^1731^0:4:0
 @q^1990^2:2:0
+@q^2287^1:0:0
 @q^2536^1:12:0
 @q^2589^1:7:1
 @q^2646^0:4:0
@@ -174,6 +184,7 @@ GoldScout-export 6^1etga1eh1nmc^6
 @q^6294^1:15:0
 @q^6308^1:7:1
 @q^6317^1:7:1
+@q^6336^2:4:0
 @q^6355^1:15:0
 @q^6357^1:15:0
 @q^6358^1:7:1
@@ -190,6 +201,7 @@ GoldScout-export 6^1etga1eh1nmc^6
 @q^8188^2:2:0
 @q^8365^1:7:1
 @q^8748^0:4:0
+@q^9743^1:4:0
 @q^9753^2:4:0
 @q^9870^2:4:0
 @q^9878^2:4:0
@@ -1183,8 +1195,12 @@ GoldScout-export 6^1etga1eh1nmc^6
 @a^1117^235:1
 @a^1135^188:2
 @a^1152^127:1
-@a^1162^185:1
-@a^1172^67:1,68:1,87:2
+@a^1161^185:1,205:1,306:1
+@a^1162^185:1,226:1,306:2
+@a^1163^325:3
+@a^1166^325:2,345:1
+@a^1172^67:1,68:1,87:2,107:1
+@a^1173^107:1,185:1
 @a^1175^87:2
 @a^1186^26:1,45:2
 @a^1190^44:1,105:1,125:1

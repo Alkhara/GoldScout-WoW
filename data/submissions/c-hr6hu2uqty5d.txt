@@ -1,11 +1,15 @@
-GoldScout-export 6^hr6hu2uqty5d^8
+GoldScout-export 6^hr6hu2uqty5d^9
 92^4^0^39^40^1418^0.3350^0.6738^4^Felselementar^4552:1:1,4553:2:2,4627:3:3,7912:1:2,8150:1:1^
 588^1^0^35^35^1434^0.2272^0.1194^1^Späher der Bloodscalp^^
 597^3^0^36^37^1434^0.2333^0.0946^3^Berserker der Bloodscalp^4306:1:3^
 598^3^0^0^0^0^0.0000^0.0000^0^^414:1:1,7997:1:1^
 660^5^0^37^37^1434^0.2336^0.0932^5^Hexendoktor der Bloodscalp^4306:1:2^
 671^1^0^37^37^1434^0.2341^0.1007^1^Kopfjäger der Bloodscalp^^
+674^10^0^40^41^1434^0.4105^0.4280^10^Akkordminenarbeiter der Venture Co.^2751:1:1,3385:1:1,3917:4:4,4306:4:9,4338:2:2^
+676^1^0^41^41^1434^0.4113^0.4359^1^Feldmesser der Venture Co.^1645:1:1,3917:1:1^
+687^30^0^40^41^1434^0.2862^0.4612^30^Dschungelpirscher^3863:10:10,4461:16:16,4586:9:9,4587:4:4,5215:1:1,5637:1:1,8146:1:1,12184:16:16^
 701^1^0^35^35^1434^0.2297^0.1222^1^Mystiker der Bloodscalp^^
+854^1^0^37^37^1434^0.3187^0.4219^1^Junger Dschungelpirscher^12184:1:1^
 1061^1^0^41^41^1434^0.2338^0.0887^1^Gan'zulah^1520:1:1,1524:1:1,3904:1:1,4306:1:2^
 1062^1^0^40^40^1434^0.2340^0.0957^1^Nezzliok der Düstere^1520:1:1,1524:1:1,3385:1:1,3905:1:1,8153:1:2^
 1729^2^0^0^0^0^0.0000^0.0000^0^^^
@@ -30,13 +34,17 @@ GoldScout-export 6^hr6hu2uqty5d^8
 @i^1464^Bussardkralle
 @i^1520^Trollschweiß
 @i^1524^Hauer der Skullsplitter
+@i^1645^Mondbeerensaft
 @i^1710^Großer Heiltrank
 @i^1725^Große Reisetasche
+@i^2751^Die Grünen Hügel des Schlingendorntals - Seite 27
 @i^3385^Geringer Manatrank
 @i^3404^Bussardflügel
 @i^3685^Raptorei
+@i^3863^Dschungelpirscherfeder
 @i^3904^Gan'zulahs Kopf
 @i^3905^Nezzlioks Kopf
+@i^3917^Singender blauer Kristall
 @i^4105^Haut eines alten Krokilisken
 @i^4306^Seidenstoff
 @i^4338^Magiestoff
@@ -46,12 +54,15 @@ GoldScout-export 6^hr6hu2uqty5d^8
 @i^4554^Glänzender polierter Stein
 @i^4582^Weicher buschiger Schweif
 @i^4583^Dicke fellige Mähne
+@i^4586^Glatte Raptorenhaut
+@i^4587^Stammesraptorfedern
 @i^4626^Kleiner Steinsplitter
 @i^4627^Große Steinplatte
 @i^4628^Armschienen der Steinbindung
 @i^4640^Zeichen der Erde
 @i^4784^Lebloser Stein
 @i^5116^Lange Schwanzfeder
+@i^5215^Glutzauberstab der Eule
 @i^5636^Zierliche Feder
 @i^5637^Großer Fangzahn
 @i^5797^Induriumspäne
@@ -71,6 +82,7 @@ GoldScout-export 6^hr6hu2uqty5d^8
 @i^11418^Hohler Flügelknochen
 @i^12037^Eigenartiges Fleisch
 @i^12042^Marschkette der Konzentration
+@i^12184^Raptorfleisch
 @i^12203^Rotes Wolfsfleisch
 @i^17057^Glänzende Fischschuppen
 @i^17058^Fischöl
@@ -82,13 +94,17 @@ GoldScout-export 6^hr6hu2uqty5d^8
 @q^1464^0:15:0
 @q^1520^0:15:0
 @q^1524^1:12:0
+@q^1645^1:0:0
 @q^1710^1:0:0
 @q^1725^1:1:0
+@q^2751^1:12:0
 @q^3385^1:0:0
 @q^3404^1:7:1
 @q^3685^1:7:1
+@q^3863^1:12:0
 @q^3904^1:12:0
 @q^3905^1:12:0
+@q^3917^1:12:0
 @q^4105^1:12:0
 @q^4306^1:7:1
 @q^4338^1:7:1
@@ -98,12 +114,15 @@ GoldScout-export 6^hr6hu2uqty5d^8
 @q^4554^0:15:0
 @q^4582^1:12:0
 @q^4583^0:15:0
+@q^4586^0:15:0
+@q^4587^0:15:0
 @q^4626^1:12:0
 @q^4627^1:12:0
 @q^4628^1:12:0
 @q^4640^1:12:0
 @q^4784^0:15:0
 @q^5116^1:7:1
+@q^5215^2:2:0
 @q^5636^0:15:0
 @q^5637^1:7:1
 @q^5797^1:12:0
@@ -123,6 +142,7 @@ GoldScout-export 6^hr6hu2uqty5d^8
 @q^11418^0:15:0
 @q^12037^1:7:1
 @q^12042^2:4:0
+@q^12184^1:7:1
 @q^12203^1:7:1
 @q^17057^1:15:0
 @q^17058^1:15:0
@@ -334,7 +354,11 @@ GoldScout-export 6^hr6hu2uqty5d^8
 @a^597^24:3
 @a^660^24:4,44:1
 @a^671^44:1
+@a^674^168:10
+@a^676^168:1
+@a^687^146:2,165:4,166:5,185:15,205:4
 @a^701^44:1
+@a^854^166:1
 @a^1061^24:1
 @a^1062^24:1
 @a^2560^230:1
