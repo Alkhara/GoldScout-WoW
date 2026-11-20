@@ -1,4 +1,4 @@
-GoldScout-export 6^zqkf28jonejs^16
+GoldScout-export 6^zqkf28jonejs^17
 30^3^0^5^6^1429^0.3946^0.7348^3^Forest Spider^1476:1:1,2590:1:1^
 38^4^0^3^4^1429^0.5431^0.4708^4^Defias Thug^1378:1:1,2589:2:2^
 40^21^0^6^7^1429^0.5732^0.5770^21^Kobold Miner^1389:1:1,1412:1:1,1419:1:1,1427:1:1,2589:8:11,3373:1:1,4293:1:1,4536:1:1,5572:1:1^
@@ -13,6 +13,11 @@ GoldScout-export 6^zqkf28jonejs^16
 475^20^0^5^6^1429^0.3854^0.8364^20^Kobold Tunneler^159:1:1,772:6:6,773:10:10,1195:1:1,1429:1:1,2589:10:17,2643:1:1,2770:2:3,2774:1:1,2835:1:1,3365:1:1,4536:1:1,248001:6:6^
 476^10^0^7^8^1429^0.6311^0.5587^10^Kobold Geomancer^1399:4:4,2589:2:2,3373:1:1,4536:1:1,6348:1:1,247883:4:4^
 525^16^0^5^6^1429^0.5326^0.6061^16^Mangy Wolf^2672:10:10,3299:1:1,3300:3:3^
+705^8^0^1^1^1426^0.2915^0.7340^8^Ragged Young Wolf^750:8:8,1372:1:1,4865:1:1,7073:5:5,7074:3:3^
+706^14^0^3^4^1426^0.2421^0.7864^14^Frostmane Troll Whelp^117:1:1,159:2:2,1364:1:1,1380:1:1,2589:4:4,2649:1:1,3365:1:1^
+707^6^0^1^2^1426^0.2828^0.7482^6^Rockjaw Trogg^117:2:2,1369:1:1,2589:2:2,2652:1:1,2654:1:1^
+708^12^0^3^3^1426^0.2231^0.7129^12^Small Crag Boar^117:2:2,4865:7:7,7098:4:4^
+724^6^0^2^2^1426^0.2276^0.7112^6^Burly Rockjaw Trogg^2211:1:1,2589:4:4^
 735^5^0^6^7^1429^0.5628^0.6342^5^Murloc Streamrunner^774:1:1,1256:3:3,1427:1:1^
 757^1^0^35^36^1435^0.5987^0.2813^1^Lost One Fisherman^4306:1:2^
 759^55^0^36^37^1435^0.6008^0.2409^55^Lost One Hunter^1477:1:1,1708:1:1,1710:1:1,3771:3:3,3779:1:1,4306:23:46,4338:3:3,7456:1:1,213547:1:1,248710:1:1,251463:1:1^
@@ -220,10 +225,12 @@ GoldScout-export 6^zqkf28jonejs^16
 269104^1^0^0^0^0^0.0000^0.0000^0^^273050:1:1^
 269151^1^0^0^0^0^0.0000^0.0000^0^^^
 272307^1^0^55^55^1447^0.3576^0.2678^1^Legashi Satyr^^
+@i^117^Tough Jerky
 @i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
 @i^182^Garrick's Head
 @i^730^Murloc Eye
+@i^750^Tough Wolf Meat
 @i^755^Melted Candle
 @i^769^Chunk of Boar Meat
 @i^771^Chipped Boar Tusk
@@ -237,7 +244,11 @@ GoldScout-export 6^zqkf28jonejs^16
 @i^1195^Kobold Mining Shovel
 @i^1210^Shadowgem
 @i^1256^Crystal Kelp Frond
+@i^1364^Ragged Leather Vest
+@i^1369^Ragged Leather Belt
+@i^1372^Ragged Cloak
 @i^1378^Frayed Pants
+@i^1380^Frayed Robe
 @i^1389^Kobold Mining Mallet
 @i^1399^Magic Candle
 @i^1412^Crude Bastard Sword
@@ -252,11 +263,15 @@ GoldScout-export 6^zqkf28jonejs^16
 @i^1741^Laced Cloak
 @i^1787^Patched Leather Belt
 @i^1795^Rawhide Belt
+@i^2211^Bent Large Shield
 @i^2589^Linen Cloth
 @i^2590^Forest Spider Webbing
 @i^2592^Wool Cloth
 @i^2643^Loose Chain Bracers
+@i^2649^Flimsy Chain Belt
 @i^2650^Flimsy Chain Boots
+@i^2652^Flimsy Chain Cloak
+@i^2654^Flimsy Chain Pants
 @i^2672^Stringy Wolf Meat
 @i^2764^Small Dagger
 @i^2770^Copper Ore
@@ -339,7 +354,9 @@ GoldScout-export 6^zqkf28jonejs^16
 @i^6530^Nightcrawlers
 @i^6629^Sporid Cape
 @i^6826^Brilliant Scale
+@i^7073^Broken Fang
 @i^7074^Chipped Claw
+@i^7098^Splintered Tusk
 @i^7456^Knight's Headguard of the Beast
 @i^7909^Aquamarine
 @i^7972^Ichor of Undeath
@@ -472,10 +489,12 @@ GoldScout-export 6^zqkf28jonejs^16
 @i^274396^Fel Ash Experimentation Notes
 @i^276893^Blackmaw Ritual Totem
 @i^281015^Scroll: DOST OREM
+@q^117^1:0:0
 @q^118^1:0:0
 @q^159^1:0:0
 @q^182^1:12:0
 @q^730^1:7:1
+@q^750^1:12:0
 @q^755^0:15:0
 @q^769^1:7:1
 @q^771^0:15:0
@@ -489,7 +508,11 @@ GoldScout-export 6^zqkf28jonejs^16
 @q^1195^1:2:0
 @q^1210^2:7:1
 @q^1256^1:12:0
+@q^1364^0:4:0
+@q^1369^0:4:0
+@q^1372^0:4:0
 @q^1378^0:4:0
+@q^1380^0:4:0
 @q^1389^1:2:0
 @q^1399^1:0:0
 @q^1412^0:2:0
@@ -504,11 +527,15 @@ GoldScout-export 6^zqkf28jonejs^16
 @q^1741^0:4:0
 @q^1787^0:4:0
 @q^1795^0:4:0
+@q^2211^0:4:0
 @q^2589^1:7:1
 @q^2590^0:15:0
 @q^2592^1:7:1
 @q^2643^0:4:0
+@q^2649^0:4:0
 @q^2650^0:4:0
+@q^2652^0:4:0
+@q^2654^0:4:0
 @q^2672^1:7:1
 @q^2764^0:2:0
 @q^2770^1:7:1
@@ -591,7 +618,9 @@ GoldScout-export 6^zqkf28jonejs^16
 @q^6530^1:0:0
 @q^6629^3:4:0
 @q^6826^0:15:0
+@q^7073^0:15:0
 @q^7074^0:15:0
+@q^7098^0:15:0
 @q^7456^2:4:0
 @q^7909^2:7:1
 @q^7972^1:7:1
@@ -729,6 +758,7 @@ GoldScout-export 6^zqkf28jonejs^16
 @m^1422^Western Plaguelands
 @m^1423^Eastern Plaguelands
 @m^1424^Hillsbrad Foothills
+@m^1426^Dun Morogh
 @m^1427^Searing Gorge
 @m^1428^Burning Steppes
 @m^1429^Elwynn Forest
@@ -2095,6 +2125,11 @@ GoldScout-export 6^zqkf28jonejs^16
 @a^475^307:1,308:1,327:13,347:5
 @a^476^192:2,212:1,232:7
 @a^525^229:1,231:1,249:1,250:9,251:4
+@a^705^285:8
+@a^706^304:9,305:4,324:1
+@a^707^284:1,305:5
+@a^708^264:1,284:11
+@a^724^284:6
 @a^735^250:1,251:4
 @a^757^111:1
 @a^759^91:13,92:17,93:9,111:16

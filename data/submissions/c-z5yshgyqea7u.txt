@@ -1,4 +1,4 @@
-GoldScout-export 6^z5yshgyqea7u^9
+GoldScout-export 6^z5yshgyqea7u^10
 4196^7^0^49^49^1446^0.3626^0.4333^7^Silithidschwarm^^
 5232^2^0^42^43^1444^0.6131^0.5467^2^Schläger der Gordunni^4306:1:2,4338:1:1^
 5234^5^0^43^44^1444^0.6135^0.5546^5^Raufer der Gordunni^4306:1:1,4338:2:2,8705:1:1,248693:1:1^
@@ -79,11 +79,18 @@ GoldScout-export 6^z5yshgyqea7u^9
 8095^1^0^0^0^0^0.0000^0.0000^0^^11387:1:1^
 8120^1^0^0^0^0^0.0000^0.0000^0^^4093:1:1^
 8996^13^0^42^43^1446^0.6268^0.3546^13^Leerwandlerdiener^^
+11785^1^0^41^41^1414^0.3901^0.5842^1^Goldaugenbasilisk^1702:1:1,4093:1:1^
 12046^1^0^49^49^1446^0.4139^0.5770^1^Gor'marok der Verheerer^4338:1:3^
+13718^1^0^41^41^1414^0.3822^0.5806^1^Der namenlose Prophet^17757:1:1^
 14661^1^0^47^47^1444^0.7366^0.6350^1^Zornstachel^18961:1:1,18962:1:1^
+252711^6^0^42^43^2652^0.6311^0.2692^6^Verfallener Pylonenbeschützer^260348:1:1,260349:1:1,260350:1:1,260351:1:1,260353:1:1,260354:1:1,286647:1:1^
+253272^1^0^42^43^2652^0.4651^0.4232^1^Totenbeschwörer der Magram^260347:1:1^
+253526^2^0^42^43^2652^0.7127^0.2337^2^Schädelbrecher der Borstennacken^4306:2:3,213545:1:1^
 260419^1^0^38^38^1446^0.6739^0.2392^1^Dreschkiefer^4306:1:1^
+276401^1^0^43^43^2652^0.3862^0.5312^1^Entstehender Pylonenbeschützer^260349:1:1^
 @i^1520^Trollschweiß
 @i^1645^Mondbeerensaft
+@i^1702^Intaktes Basiliskenrückgrat
 @i^2449^Erdwurzel
 @i^2799^Gorillafangzahn
 @i^3778^Gespannter Kompaktbogen
@@ -126,6 +133,7 @@ GoldScout-export 6^z5yshgyqea7u^9
 @i^6149^Großer Manatrank
 @i^6300^Hüllenfragment
 @i^6302^Zierlicher Insektenflügel
+@i^6308^Roher Stoppelfühlerwels
 @i^6358^Öliges Schwarzmaul
 @i^6359^Feuerflossenschnapper
 @i^6362^Roher Steinschuppenkabeljau
@@ -188,6 +196,7 @@ GoldScout-export 6^z5yshgyqea7u^9
 @i^15378^Zornprankengürtel des Gorillas
 @i^15603^Uralter Umhang des Ältesten
 @i^16968^Sar'theris-Barsch
+@i^17757^Amulett der Geister
 @i^18082^Zum'rahs Hexerstab
 @i^18083^Jumanza Handschutz
 @i^18956^Schrumpf-Überreste
@@ -195,6 +204,7 @@ GoldScout-export 6^z5yshgyqea7u^9
 @i^18961^Zukk'ashknochenpanzer
 @i^18962^Zornstachels Drüsen
 @i^20519^Südmeerpiratenhut
+@i^213545^Schriftrolle: ZAEHLEZ STARKDEUTIEN
 @i^213546^Schriftrolle: SCHUBIDU
 @i^248692^Abgefangene Kiste: Erz des Experten
 @i^248693^Abgefangene Kiste: Textilien des Experten
@@ -202,6 +212,13 @@ GoldScout-export 6^z5yshgyqea7u^9
 @i^248695^Abgefangene Kiste: Weltliche Kräuter des Fachmanns
 @i^248698^Abgefangene Kiste: Textilien des Fachmanns
 @i^248710^Abgefangene Kiste: Bauteile des Experten
+@i^260347^Zerlumptes Tagebuch
+@i^260348^Kaum lesbarer Tagebucheintrag, Seite I
+@i^260349^Kaum lesbarer Tagebucheintrag, Seite II
+@i^260350^Kaum lesbarer Tagebucheintrag, Seite III
+@i^260351^Kaum lesbarer Tagebucheintrag, Seite IV
+@i^260353^Kaum lesbarer Tagebucheintrag, Seite VI
+@i^260354^Kaum lesbarer Tagebucheintrag, Seite VII
 @i^264215^Bauplan: SAF-T-Bombe
 @i^274638^Schulterstücke der Sandfury
 @i^274644^Unvergänglicher Kopfputz
@@ -209,8 +226,10 @@ GoldScout-export 6^z5yshgyqea7u^9
 @i^274648^Die Wüstenrose
 @i^274653^Tiefenritualgürtel
 @i^278186^Glänzend polierter Armreif
+@i^286647^Erschöpftes Kristallherz
 @q^1520^0:15:0
 @q^1645^1:0:0
+@q^1702^0:15:0
 @q^2449^1:7:1
 @q^2799^1:12:0
 @q^3778^0:2:0
@@ -253,6 +272,7 @@ GoldScout-export 6^z5yshgyqea7u^9
 @q^6149^1:0:0
 @q^6300^0:15:0
 @q^6302^0:15:0
+@q^6308^1:7:1
 @q^6358^1:7:1
 @q^6359^1:7:1
 @q^6362^1:7:1
@@ -315,6 +335,7 @@ GoldScout-export 6^z5yshgyqea7u^9
 @q^15378^2:4:0
 @q^15603^2:4:0
 @q^16968^1:12:0
+@q^17757^1:12:0
 @q^18082^3:2:0
 @q^18083^3:4:0
 @q^18956^1:12:0
@@ -322,6 +343,7 @@ GoldScout-export 6^z5yshgyqea7u^9
 @q^18961^1:12:0
 @q^18962^1:12:0
 @q^20519^1:12:0
+@q^213545^1:0:0
 @q^213546^1:0:0
 @q^248692^1:0:1
 @q^248693^1:0:1
@@ -329,6 +351,13 @@ GoldScout-export 6^z5yshgyqea7u^9
 @q^248695^1:0:1
 @q^248698^1:0:1
 @q^248710^2:0:1
+@q^260347^1:15:0
+@q^260348^1:15:0
+@q^260349^1:15:0
+@q^260350^1:15:0
+@q^260351^1:15:0
+@q^260353^1:15:0
+@q^260354^1:15:0
 @q^264215^1:9:0
 @q^274638^3:4:0
 @q^274644^3:4:0
@@ -336,15 +365,24 @@ GoldScout-export 6^z5yshgyqea7u^9
 @q^274648^3:4:0
 @q^274653^3:4:0
 @q^278186^1:12:0
+@q^286647^1:12:0
+@m^1414^Kalimdor
 @m^1443^Desolace
 @m^1444^Feralas
 @m^1445^Marschen von Dustwallow
 @m^1446^Tanaris
+@m^2652^Shen'dralas
+@c^118^
 @c^724^
 @c^733^
 @c^787^
+@c^858^
+@c^929^
 @c^1017^
 @c^1082^
+@c^1251^
+@c^1710^
+@c^2581^
 @c^2679^
 @c^2680^
 @c^2681^
@@ -355,6 +393,8 @@ GoldScout-export 6^z5yshgyqea7u^9
 @c^2687^
 @c^2888^
 @c^3220^
+@c^3530^
+@c^3531^
 @c^3662^
 @c^3663^
 @c^3664^
@@ -364,6 +404,7 @@ GoldScout-export 6^z5yshgyqea7u^9
 @c^3727^
 @c^3728^
 @c^3729^
+@c^3928^
 @c^4457^
 @c^4592^
 @c^4593^
@@ -383,12 +424,18 @@ GoldScout-export 6^z5yshgyqea7u^9
 @c^6038^
 @c^6290^
 @c^6316^
+@c^6450^
+@c^6451^
+@c^6452^
+@c^6453^
 @c^6657^
 @c^6887^
 @c^6888^
 @c^6890^
 @c^7676^
 @c^8364^
+@c^8544^
+@c^8545^
 @c^8957^
 @c^10841^
 @c^12209^
@@ -401,6 +448,7 @@ GoldScout-export 6^z5yshgyqea7u^9
 @c^12217^
 @c^12218^
 @c^12224^
+@c^13446^
 @c^13851^
 @c^13927^
 @c^13928^
@@ -411,17 +459,22 @@ GoldScout-export 6^z5yshgyqea7u^9
 @c^13933^
 @c^13934^
 @c^13935^
+@c^14529^
+@c^14530^
 @c^16766^
 @c^17197^
 @c^17198^
 @c^17222^
 @c^18045^
 @c^18254^
+@c^19440^
 @c^20074^
 @c^20452^
 @c^21023^
 @c^21072^
 @c^21217^
+@c^23684^
+@c^232433^
 @c^232436^
 @c^232438^
 @c^238637^
@@ -460,13 +513,24 @@ GoldScout-export 6^z5yshgyqea7u^9
 @c^250081^
 @c^251525^
 @c^252683^
+@c^255715^
+@c^255716^
+@c^255717^
+@c^255718^
+@c^255719^
+@c^255720^
+@c^255721^
+@c^255722^
 @c^263507^
 @c^263509^
 @c^263512^
 @c^267341^
 @c^274971^
 @c^274976^
+@c^279938^
+@c^279940^
 @c^279947^
+@c^279951^
 @c^279957^
 @c^279961^
 @c^279962^
@@ -474,7 +538,10 @@ GoldScout-export 6^z5yshgyqea7u^9
 @c^279965^
 @c^279966^
 @c^279967^
+@c^279968^
+@c^279969^
 @c^279974^
+@c^279979^
 @c^279981^
 @c^279982^
 @c^286152^
@@ -535,9 +602,15 @@ GoldScout-export 6^z5yshgyqea7u^9
 @a^7883^194:2
 @a^8075^28:1
 @a^8996^132:5,151:2,152:1,153:5
+@a^11785^227:1
 @a^12046^228:1
+@a^13718^227:1
 @a^14661^254:1
+@a^252711^94:4,128:2
+@a^253272^169:1
+@a^253526^94:2
 @a^260419^93:1
-@f^1443^0^9^225^4603:2:2,6359:4:4,6362:3:3,16968:1:1^305:9
+@a^276401^207:1
+@f^1443^0^36^225^4603:2:2,6308:8:8,6359:4:4,6362:3:3,8365:19:19,16968:1:1^284:27,305:9
 @f^1444^0^222^225^6358:27:27,8365:24:24,9963:1:1,13757:13:13,13758:91:91,13760:66:66^212:222
 @l^0^deDE

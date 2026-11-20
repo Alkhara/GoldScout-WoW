@@ -1,4 +1,4 @@
-GoldScout-export 6^877l120dlafg^9
+GoldScout-export 6^877l120dlafg^10
 92^3^0^39^40^1418^0.4374^0.8008^3^Rock Elemental^4552:1:1,4553:1:1,4627:3:3,4784:2:2,7067:1:1,8150:1:1^
 667^21^0^39^40^1434^0.4389^0.3471^21^Skullsplitter Warrior^1520:5:5,1524:6:6,2728:1:1,2740:1:1,3807:1:1,4306:10:19,4338:2:2,8151:2:2,8153:1:2,248693:1:1^
 674^23^0^40^41^1434^0.4151^0.4318^23^Venture Co. Strip Miner^1630:7:7,2744:1:1,2836:1:4,3771:2:2,3793:1:1,3917:9:9,4306:6:15,4338:1:1,11203:1:1^
@@ -319,6 +319,7 @@ GoldScout-export 6^877l120dlafg^9
 @i^6302^Delicate Insect Wing
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
+@i^6361^Raw Rainbow Fin Albacore
 @i^6362^Raw Rockscale Cod
 @i^6421^Glyphed Belt
 @i^6444^Forked Tongue
@@ -382,6 +383,7 @@ GoldScout-export 6^877l120dlafg^9
 @i^13754^Raw Glossy Mightfish
 @i^13757^Lightning Eel
 @i^13758^Raw Redgill
+@i^13759^Raw Nightfin Snapper
 @i^13760^Raw Sunscale Salmon
 @i^14208^Vital Headband of the Owl
 @i^14211^Vital Handwraps of Stamina
@@ -570,6 +572,7 @@ GoldScout-export 6^877l120dlafg^9
 @q^6302^0:15:0
 @q^6358^1:7:1
 @q^6359^1:7:1
+@q^6361^1:7:1
 @q^6362^1:7:1
 @q^6421^2:4:0
 @q^6444^0:15:0
@@ -633,6 +636,7 @@ GoldScout-export 6^877l120dlafg^9
 @q^13754^1:7:1
 @q^13757^1:7:1
 @q^13758^1:7:1
+@q^13759^1:7:1
 @q^13760^1:7:1
 @q^14208^2:4:0
 @q^14211^2:4:0
@@ -686,6 +690,7 @@ GoldScout-export 6^877l120dlafg^9
 @m^1418^Badlands
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
+@m^1439^Darkshore
 @m^1443^Desolace
 @m^1444^Feralas
 @m^1445^Dustwallow Marsh
@@ -1556,5 +1561,6 @@ GoldScout-export 6^877l120dlafg^9
 @a^255560^313:13,333:6
 @a^262838^149:2
 @f^1434^0^23^173^4603:5:5,6358:2:2,6359:1:1,6362:15:15^285:12,305:11
-@f^1444^0^58^178^4603:4:4,6358:3:3,8365:12:12,13754:1:1,13757:5:5,13758:19:19,13760:14:14^166:5,195:10,212:43
+@f^1439^0^2^198^6358:1:1,6361:1:1^146:2
+@f^1444^0^104^178^4603:4:4,6358:10:10,8365:16:16,13754:1:1,13757:5:5,13758:39:39,13759:7:7,13760:22:22^166:5,195:56,212:43
 @l^0^enUS

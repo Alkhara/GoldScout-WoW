@@ -1,4 +1,4 @@
-GoldScout-export 6^1z9zltwvzpqf^17
+GoldScout-export 6^1z9zltwvzpqf^18
 1543^2^0^7^8^1420^0.3657^0.4252^2^Vile Fin Puddlejumper^^
 1544^4^0^8^8^1420^0.3630^0.4255^4^Vile Fin Minor Oracle^779:1:1,1413:1:1^
 1545^1^0^10^10^1420^0.3634^0.4240^1^Vile Fin Muckdweller^^
@@ -253,10 +253,14 @@ GoldScout-export 6^1z9zltwvzpqf^17
 @i^6309^17 Pound Catfish
 @i^6348^Formula: Enchant Weapon - Minor Beastslayer
 @i^6358^Oily Blackmouth
+@i^6359^Firefin Snapper
 @i^6361^Raw Rainbow Fin Albacore
 @i^6443^Deviate Hide
 @i^6444^Forked Tongue
 @i^6445^Brittle Molting
+@i^6456^Acidic Slime
+@i^6457^Rusted Engineering Parts
+@i^6458^Oil Covered Fish
 @i^6515^Disciple's Gloves
 @i^6518^Pioneer Boots
 @i^6522^Deviate Fish
@@ -286,6 +290,8 @@ GoldScout-export 6^1z9zltwvzpqf^17
 @i^20708^Tightly Sealed Trunk
 @i^20709^Rumsey Rum Light
 @i^21071^Raw Sagefish
+@i^21113^Watertight Trunk
+@i^21114^Rumsey Rum Dark
 @i^211784^Scroll: WUBBA WUBBA
 @i^211785^Scroll: CWAL
 @i^211854^Scroll: OMIT KESA
@@ -424,10 +430,14 @@ GoldScout-export 6^1z9zltwvzpqf^17
 @q^6309^1:15:0
 @q^6348^2:9:0
 @q^6358^1:7:1
+@q^6359^1:7:1
 @q^6361^1:7:1
 @q^6443^1:12:0
 @q^6444^0:15:0
 @q^6445^0:15:0
+@q^6456^0:15:0
+@q^6457^0:15:0
+@q^6458^1:0:0
 @q^6515^1:4:0
 @q^6518^1:4:0
 @q^6522^1:0:1
@@ -457,6 +467,8 @@ GoldScout-export 6^1z9zltwvzpqf^17
 @q^20708^1:15:0
 @q^20709^1:0:0
 @q^21071^1:7:1
+@q^21113^1:15:0
+@q^21114^1:0:0
 @q^211784^1:0:0
 @q^211785^1:0:0
 @q^211854^1:0:0
@@ -1794,6 +1806,9 @@ GoldScout-export 6^1z9zltwvzpqf^17
 @c^279959^
 @c^279960^
 @c^279961^
+@c^279965^
+@c^279966^
+@c^279967^
 @c^279968^
 @c^279969^
 @c^279972^
@@ -1921,5 +1936,6 @@ GoldScout-export 6^1z9zltwvzpqf^17
 @a^268622^309:3
 @f^1413^0^82^122^858:1:1,3820:3:5,6289:20:20,6291:4:4,6303:1:1,6308:7:7,6309:1:1,6358:1:1,6361:3:3,6522:31:31,6546:1:1,20708:5:5,20709:4:7^89:6,149:38,169:28,212:10
 @f^1421^0^2^145^6291:1:1,21071:1:1^91:2
-@f^1456^0^9^118^6289:7:7,6291:1:1,6308:1:1^228:9
+@f^1442^0^89^115^3820:2:5,6289:8:8,6308:15:15,6359:28:28,6456:5:5,6457:5:5,6458:5:5,21113:14:14,21114:7:9^172:25,173:22,192:3,213:15,214:20,234:4
+@f^1456^0^155^1^6289:103:103,6291:25:25,6308:27:27^228:155
 @l^0^enUS
