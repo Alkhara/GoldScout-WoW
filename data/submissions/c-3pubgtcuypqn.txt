@@ -1,4 +1,4 @@
-GoldScout-export 5^3pubgtcuypqn^8
+GoldScout-export 5^3pubgtcuypqn^9
 6^12^0^1^2^1429^0.4830^0.3579^12^Kobold Vermin^159:1:1,755:4:4,1364:1:1,1369:1:1,2589:3:3,4536:2:2,247834:1:1,247839:2:2^
 30^1^0^5^5^1429^0.4272^0.7316^1^Forest Spider^2590:1:1^
 36^4^0^11^12^1436^0.5272^0.3347^4^Harvest Golem^732:2:2,814:3:3,1274:2:2,2214:1:1,255010:2:2^
@@ -79,6 +79,13 @@ GoldScout-export 5^3pubgtcuypqn^8
 248362^1^0^3^3^1429^0.4913^0.2795^1^Shinyfinder Narf^247886:1:1^
 248464^1^0^6^6^1429^0.4155^0.7999^1^Nimsy^248002:1:1^
 248474^1^0^7^7^1429^0.6134^0.4900^1^Geosculptor Yip^248003:1:1^
+261306^1^0^0^0^0^0.0000^0.0000^0^^271097:1:1^
+263389^3^0^0^0^0^0.0000^0.0000^0^^1495:1:1,2589:3:10^
+263390^2^0^0^0^0^0.0000^0.0000^0^^2589:2:8,211786:1:1^
+263396^4^0^0^0^0^0.0000^0.0000^0^^1210:1:1,2073:1:1,2969:1:1,9764:1:1^
+263397^1^0^0^0^0^0.0000^0.0000^0^^^
+263438^2^0^0^0^0^0.0000^0.0000^0^^2589:1:2^
+263470^2^0^0^0^0^0.0000^0.0000^0^^2672:1:1,2979:1:1^
 270196^1^0^12^12^1439^0.4502^0.5885^1^Jai'vhanel^281038:1:1^
 @i^117^Tough Jerky
 @i^118^Minor Healing Potion
@@ -148,6 +155,7 @@ GoldScout-export 5^3pubgtcuypqn^8
 @i^2065^Rockjaw Blade
 @i^2067^Frostbit Staff
 @i^2070^Darnassian Bleu
+@i^2073^Dwarven Hatchet of the Bear
 @i^2075^Priest's Mace of Stamina
 @i^2138^Sharpened Letter Opener
 @i^2210^Battered Buckler
@@ -186,6 +194,8 @@ GoldScout-export 5^3pubgtcuypqn^8
 @i^2778^Cheap Blunderbuss
 @i^2940^Bloody Bear Paw
 @i^2960^Journeyman's Gloves
+@i^2969^Spellbinder Vest
+@i^2979^Veteran Boots
 @i^3000^Brood Mother Carapace
 @i^3013^Scroll of Protection
 @i^3110^Tunnel Rat Ear
@@ -242,12 +252,14 @@ GoldScout-export 5^3pubgtcuypqn^8
 @i^7108^Infantry Shield of the Hierophant
 @i^7997^Red Defias Mask
 @i^9758^Cadet Belt
+@i^9764^Cadet Shield of the Channeler
 @i^11406^Rotting Bear Carcass
 @i^15016^Lupine Handwraps of Arcane Wrath
 @i^17056^Light Feather
 @i^20709^Rumsey Rum Light
 @i^211780^Scroll: KWYJIBO
 @i^211785^Scroll: CWAL
+@i^211786^Scroll: CHAP BALK WELLES
 @i^211787^Scroll: LOWER PING WHOMEVER
 @i^247834^Nibbled-On Book
 @i^247839^Stolen Book
@@ -263,6 +275,7 @@ GoldScout-export 5^3pubgtcuypqn^8
 @i^255010^Harvester Gyrostabilizer
 @i^267415^Stolen Blasting Powder
 @i^268548^Empty Powder Keg
+@i^271097^Spiritwraith Drape
 @i^274268^Dark Iron Map
 @i^281038^Feather of Jai'vhanel
 @q^117^1:0:0
@@ -333,6 +346,7 @@ GoldScout-export 5^3pubgtcuypqn^8
 @q^2065^1:2:0
 @q^2067^1:2:0
 @q^2070^1:0:0
+@q^2073^2:2:0
 @q^2075^2:2:0
 @q^2138^0:2:0
 @q^2210^0:4:0
@@ -371,6 +385,8 @@ GoldScout-export 5^3pubgtcuypqn^8
 @q^2778^0:2:0
 @q^2940^0:15:0
 @q^2960^1:4:0
+@q^2969^2:4:0
+@q^2979^1:4:0
 @q^3000^2:4:0
 @q^3013^1:0:0
 @q^3110^1:12:0
@@ -427,12 +443,14 @@ GoldScout-export 5^3pubgtcuypqn^8
 @q^7108^2:4:0
 @q^7997^0:4:0
 @q^9758^1:4:0
+@q^9764^2:4:0
 @q^11406^0:15:0
 @q^15016^2:4:0
 @q^17056^1:15:1
 @q^20709^1:0:0
 @q^211780^1:0:0
 @q^211785^1:0:0
+@q^211786^1:0:0
 @q^211787^1:0:0
 @q^247834^1:15:0
 @q^247839^1:12:0
@@ -448,6 +466,7 @@ GoldScout-export 5^3pubgtcuypqn^8
 @q^255010^1:12:0
 @q^267415^1:12:0
 @q^268548^1:12:0
+@q^271097^3:4:0
 @q^274268^1:12:0
 @q^281038^1:12:0
 @m^1426^Dun Morogh

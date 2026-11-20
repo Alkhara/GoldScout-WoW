@@ -1,4 +1,4 @@
-GoldScout-export 6^ui8x93tfrayk^28
+GoldScout-export 6^ui8x93tfrayk^30
 92^1^0^39^40^1418^0.1382^0.3492^1^Rock Elemental^4553:1:1^
 525^5^0^5^6^1429^0.3488^0.6263^5^Mangy Wolf^2672:4:4,3299:1:1,3300:1:1^
 588^2^0^34^35^1434^0.2391^0.1202^2^Bloodscalp Scout^2592:1:2^
@@ -52,10 +52,18 @@ GoldScout-export 6^ui8x93tfrayk^28
 2893^13^0^39^40^1418^0.5166^0.6380^13^Stonevault Bonesnapper^1708:1:1,3771:2:2,4306:2:2,4338:1:1,211269:1:1,274044:4:4^
 2945^1^0^42^42^1418^0.5157^0.6544^1^Murdaloc^274044:1:1^
 3560^10^0^41^42^1434^0.4538^0.4175^10^Healing Ward^^
+3977^1^0^0^0^0^0.0000^0.0000^0^^1707:1:1,4338:1:2^
+4294^3^0^0^0^0^0.0000^0.0000^0^^4306:1:2^
+4295^2^0^0^0^0^0.0000^0.0000^0^^3817:1:1,4306:1:4^
+4298^1^0^0^0^0^0.0000^0.0000^0^^1707:1:1^
+4300^2^0^0^0^0^0.0000^0.0000^0^^3801:1:1,4306:1:4^
+4301^5^0^0^0^0^0.0000^0.0000^0^^1707:1:1,215376:1:1^
+4303^2^0^0^0^0^0.0000^0.0000^0^^3809:1:1,6424:1:1^
 4360^2^0^37^38^1445^0.6356^0.2304^2^Mirefin Warrior^1708:1:1,5785:1:1,274046:1:1^
 4361^2^0^36^37^1445^0.6364^0.2704^2^Mirefin Muckdweller^5785:1:1,274046:1:1^
 4362^4^0^36^37^1445^0.6363^0.2314^4^Mirefin Coastrunner^6362:1:3,15367:1:1,17057:1:1,274046:1:1^
 4363^5^0^37^38^1445^0.6379^0.2540^5^Mirefin Oracle^17057:1:1,17058:1:1,274046:2:2^
+4540^3^0^0^0^0^0.0000^0.0000^0^^4306:1:3,248690:1:1^
 4654^2^0^37^37^1443^0.3669^0.6000^2^Maraudine Scout^4306:1:3,4338:1:1,254432:1:1,274047:1:1^
 4655^4^0^37^38^1443^0.3830^0.6102^4^Maraudine Wrangler^274047:3:3^
 4656^2^0^39^39^1443^0.3398^0.5455^2^Maraudine Mauler^254432:1:1^
@@ -120,8 +128,10 @@ GoldScout-export 6^ui8x93tfrayk^28
 @i^3780^Long-barreled Musket
 @i^3781^Broad Claymore
 @i^3783^Light Scimitar
+@i^3801^Hardened Leather Boots
 @i^3803^Hardened Cloak
 @i^3805^Hardened Leather Pants
+@i^3809^Double Mail Boots
 @i^3814^Double Mail Shoulderpads
 @i^3817^Reinforced Buckler
 @i^3818^Fadeleaf
@@ -148,6 +158,7 @@ GoldScout-export 6^ui8x93tfrayk^28
 @i^6362^Raw Rockscale Cod
 @i^6417^Aurora Cloak
 @i^6421^Glyphed Belt
+@i^6424^Blackforge Cape
 @i^6610^Sage's Robe of Fiery Wrath
 @i^7067^Elemental Earth
 @i^7407^Infiltrator Armor of the Channeler
@@ -179,7 +190,9 @@ GoldScout-export 6^ui8x93tfrayk^28
 @i^212792^Eye of the Tempest
 @i^213127^Partial Mystical Notes
 @i^213547^Scroll: THAW WORDS
+@i^215376^Crusader's Mace
 @i^216616^Compound Cage Key
+@i^248690^Waylaid Crate: Earthly Expert Herbs
 @i^248694^Waylaid Crate: Expert Curiosities
 @i^254432^Carved Centaur Totem
 @i^270333^Voodoo-Infused Artifact
@@ -235,8 +248,10 @@ GoldScout-export 6^ui8x93tfrayk^28
 @q^3780^0:2:0
 @q^3781^0:2:0
 @q^3783^0:2:0
+@q^3801^0:4:0
 @q^3803^0:4:0
 @q^3805^0:4:0
+@q^3809^0:4:0
 @q^3814^0:4:0
 @q^3817^0:4:0
 @q^3818^1:7:1
@@ -263,6 +278,7 @@ GoldScout-export 6^ui8x93tfrayk^28
 @q^6362^1:7:1
 @q^6417^2:4:0
 @q^6421^2:4:0
+@q^6424^2:4:0
 @q^6610^2:4:0
 @q^7067^1:7:1
 @q^7407^2:4:0
@@ -294,7 +310,9 @@ GoldScout-export 6^ui8x93tfrayk^28
 @q^212792^1:12:0
 @q^213127^1:15:0
 @q^213547^1:0:0
+@q^215376^1:2:0
 @q^216616^1:12:0
+@q^248690^1:0:1
 @q^248694^1:0:1
 @q^254432^2:15:0
 @q^270333^1:12:0
