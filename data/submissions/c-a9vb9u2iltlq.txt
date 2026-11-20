@@ -1,7 +1,7 @@
-GoldScout-export 6^a9vb9u2iltlq^14
+GoldScout-export 6^a9vb9u2iltlq^15
 36^6^0^11^12^1436^0.4997^0.3372^6^Harvest Golem^732:1:1,814:3:3,816:1:1,1274:2:2,1513:1:1,2075:1:1,2698:1:1,255007:3:3,255010:1:1^
 95^21^0^11^12^1436^0.4745^0.4247^21^Defias Smuggler^829:9:9,2589:7:18,2777:1:1,9751:1:1^
-114^20^0^14^15^1436^0.5320^0.3160^20^Harvest Watcher^732:8:8,814:12:12,1274:8:8,1501:1:1,1731:1:1,4359:1:1,4361:1:1,211785:1:1,255007:10:10,255010:4:4,255155:1:1^
+114^21^0^14^15^1436^0.5254^0.3252^21^Harvest Watcher^732:9:9,814:12:12,1274:8:8,1501:1:1,1731:1:1,1733:1:1,4359:1:1,4361:1:1,211785:1:1,255007:10:10,255010:4:4,255155:1:1^
 126^14^0^12^13^1436^0.5412^0.0965^14^Murloc Coastrunner^730:4:4,1179:1:1,1511:1:1,5523:3:3,5574:1:1,9764:1:1,254548:5:5^
 481^2^0^11^11^1436^0.5697^0.1809^2^Defias Footpad^829:1:1,2589:1:3^
 502^1^0^15^15^1436^0.4980^0.1980^1^Benny Blaanco^1498:1:1^
@@ -21,6 +21,13 @@ GoldScout-export 6^a9vb9u2iltlq^14
 1096^24^0^35^36^1434^0.4404^0.1786^24^Venture Co. Geologist^1630:2:2,1710:1:1,2592:2:5,2738:1:1,2750:1:1,4106:8:8,4306:7:9,15935:1:1^
 1097^3^0^34^35^1434^0.4228^0.1863^3^Venture Co. Mechanic^1708:1:1,2738:1:1,4306:2:4^
 1150^7^0^30^31^1434^0.3957^0.1206^7^River Crocolisk^770:3:3,3667:3:3,4053:2:2,4064:1:1,12037:1:1^
+2069^1^0^14^14^1439^0.3832^0.7330^1^Moonstalker^^
+2164^1^0^13^14^1439^0.3855^0.6342^1^Captured Rabid Thistle Bear^3170:1:1,3173:1:1^
+2168^2^0^16^16^1439^0.4075^0.7840^2^Blackwood Warrior^2592:1:1^
+2201^2^0^11^12^1439^0.3665^0.5094^2^Greymist Raider^730:2:2,5523:2:2^
+2202^1^0^12^12^1439^0.3651^0.5080^1^Greymist Coastrunner^^
+2232^11^0^12^14^1439^0.3650^0.6666^11^Tide Crawler^2674:1:1,2675:1:1,4874:7:7,5385:5:5,5506:2:2,5523:6:6,15970:1:1,211786:1:1^
+2234^10^0^10^11^1439^0.3655^0.5614^10^Young Reef Crawler^2674:3:3,2675:4:4,4874:3:3,5385:1:1,5506:3:3,5523:3:3,211780:1:1^
 2578^1^0^31^31^1417^0.4932^0.4262^1^Young Mesa Buzzard^3404:1:1^
 2586^9^0^30^31^1417^0.3259^0.3091^9^Syndicate Highwayman^1707:1:1,4306:1:2,5113:1:1,211854:1:1^
 2589^4^0^31^32^1417^0.3185^0.2998^4^Syndicate Mercenary^3801:1:1^
@@ -164,6 +171,7 @@ GoldScout-export 6^a9vb9u2iltlq^14
 @i^1725^Large Knapsack
 @i^1730^Worn Mail Belt
 @i^1731^Worn Mail Boots
+@i^1733^Worn Cloak
 @i^2075^Priest's Mace of Healing
 @i^2138^Sharpened Letter Opener
 @i^2210^Battered Buckler
@@ -180,6 +188,7 @@ GoldScout-export 6^a9vb9u2iltlq^14
 @i^2650^Flimsy Chain Boots
 @i^2654^Flimsy Chain Pants
 @i^2672^Stringy Wolf Meat
+@i^2674^Crawler Meat
 @i^2675^Crawler Claw
 @i^2698^Recipe: Cooked Crab Claw
 @i^2728^Green Hills of Stranglethorn - Page 4
@@ -189,6 +198,8 @@ GoldScout-export 6^a9vb9u2iltlq^14
 @i^2777^Feeble Shortbow
 @i^2778^Cheap Blunderbuss
 @i^3013^Scroll of Protection
+@i^3170^Large Bear Tooth
+@i^3173^Bear Meat
 @i^3287^Tribal Pants
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
@@ -233,10 +244,12 @@ GoldScout-export 6^a9vb9u2iltlq^14
 @i^4873^Dry Hardened Barnacle
 @i^4874^Clean Fishbones
 @i^5113^Mark of the Syndicate
+@i^5385^Crawler Leg
 @i^5427^Crude Pocket Watch
 @i^5429^A Pretty Rock
 @i^5431^Empty Hip Flask
 @i^5469^Strider Meat
+@i^5506^Beady Eye Stalk
 @i^5523^Small Barnacled Clam
 @i^5524^Thick-shelled Clam
 @i^5574^White Leather Bag
@@ -279,11 +292,13 @@ GoldScout-export 6^a9vb9u2iltlq^14
 @i^15128^Robust Tunic of the Channeler
 @i^15483^War Torn Cape
 @i^15935^Durable Rod of Frost Protection
+@i^15970^Native Branch of Healing
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
 @i^19937^Small Scorpid Claw
 @i^19938^Heavy Scorpid Leg
+@i^211780^Scroll: KWYJIBO
 @i^211785^Scroll: CWAL
 @i^211786^Scroll: CHAP BALK WELLES
 @i^211787^Scroll: LOWER PING WHOMEVER
@@ -399,6 +414,7 @@ GoldScout-export 6^a9vb9u2iltlq^14
 @q^1725^1:1:0
 @q^1730^0:4:0
 @q^1731^0:4:0
+@q^1733^0:4:0
 @q^2075^2:2:0
 @q^2138^0:2:0
 @q^2210^0:4:0
@@ -415,6 +431,7 @@ GoldScout-export 6^a9vb9u2iltlq^14
 @q^2650^0:4:0
 @q^2654^0:4:0
 @q^2672^1:7:1
+@q^2674^1:7:1
 @q^2675^1:7:1
 @q^2698^1:9:0
 @q^2728^1:12:0
@@ -424,6 +441,8 @@ GoldScout-export 6^a9vb9u2iltlq^14
 @q^2777^0:2:0
 @q^2778^0:2:0
 @q^3013^1:0:0
+@q^3170^0:15:0
+@q^3173^1:7:1
 @q^3287^2:4:0
 @q^3299^0:15:0
 @q^3300^0:15:0
@@ -468,10 +487,12 @@ GoldScout-export 6^a9vb9u2iltlq^14
 @q^4873^0:15:0
 @q^4874^0:15:0
 @q^5113^0:15:0
+@q^5385^1:12:0
 @q^5427^0:15:0
 @q^5429^0:15:0
 @q^5431^0:15:0
 @q^5469^1:7:1
+@q^5506^0:15:0
 @q^5523^1:7:0
 @q^5524^1:7:0
 @q^5574^1:1:0
@@ -514,11 +535,13 @@ GoldScout-export 6^a9vb9u2iltlq^14
 @q^15128^2:4:0
 @q^15483^1:4:0
 @q^15935^2:4:0
+@q^15970^2:4:0
 @q^17056^1:15:1
 @q^17057^1:15:0
 @q^17058^1:15:0
 @q^19937^0:15:0
 @q^19938^0:15:0
+@q^211780^1:0:0
 @q^211785^1:0:0
 @q^211786^1:0:0
 @q^211787^1:0:0
@@ -580,6 +603,7 @@ GoldScout-export 6^a9vb9u2iltlq^14
 @m^1417^Arathi Highlands
 @m^1434^Stranglethorn Vale
 @m^1436^Westfall
+@m^1439^Darkshore
 @m^1441^Thousand Needles
 @m^1445^Dustwallow Marsh
 @m^1446^Tanaris
@@ -1592,7 +1616,7 @@ GoldScout-export 6^a9vb9u2iltlq^14
 @c^286152^
 @a^36^129:3,130:2,131:1
 @a^95^69:1,149:7,189:13
-@a^114^90:2,130:17,149:1
+@a^114^90:2,130:17,149:1,207:1
 @a^126^30:4,31:5,50:5
 @a^481^71:2
 @a^502^69:1
@@ -1612,6 +1636,13 @@ GoldScout-export 6^a9vb9u2iltlq^14
 @a^1096^68:22,69:1,88:1
 @a^1097^68:3
 @a^1150^47:5,48:2
+@a^2069^287:1
+@a^2164^247:1
+@a^2168^308:2
+@a^2201^207:2
+@a^2202^207:1
+@a^2232^247:2,267:9
+@a^2234^207:3,227:6,247:1
 @a^2578^169:1
 @a^2586^86:1,106:1,126:7
 @a^2589^106:2,126:2
