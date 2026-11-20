@@ -1,4 +1,4 @@
-GoldScout-export 6^z1ffmqhyzzxo^25
+GoldScout-export 6^z1ffmqhyzzxo^26
 449^1^0^17^17^1436^0.3600^0.7755^1^Defias Knuckleduster^1770:1:1,2589:1:1^
 598^9^0^0^0^0^0.0000^0.0000^0^^1930:1:1,2589:1:2,2592:2:3,2771:1:2,248702:1:1^
 622^1^0^0^0^0^0.0000^0.0000^0^^4695:1:1^
@@ -49,9 +49,11 @@ GoldScout-export 6^z1ffmqhyzzxo^25
 3713^7^0^18^19^1440^0.1347^0.2161^7^Wrathtail Wave Rider^2780:1:1,5490:7:7,5523:3:3,16651:1:1^
 3715^2^0^19^20^1440^0.1013^0.2401^2^Wrathtail Sea Witch^5490:2:2,5523:1:1^
 3717^4^0^18^19^1440^0.1364^0.2167^4^Wrathtail Sorceress^1205:1:1,5490:3:3,16649:1:1^
-3809^2^0^21^22^1440^0.3799^0.6225^2^Ashenvale Bear^2940:1:1,3730:1:1^
-3819^6^0^20^21^1440^0.3303^0.5053^6^Wildthorn Stalker^878:1:1,1081:4:4,1288:2:2,2251:2:2,3174:3:3,4428:1:1,248702:1:1^
-3823^5^0^19^20^1440^0.2578^0.4292^5^Ghostpaw Runner^1015:1:1,3301:2:2^
+3809^7^0^21^22^1440^0.3905^0.6391^7^Ashenvale Bear^2940:2:2,3702:1:1,3730:2:2,11406:2:2,11407:1:1^
+3817^3^0^22^23^1440^0.3894^0.6511^3^Shadowhorn Stag^5120:1:1,5471:1:1,5566:2:2^
+3819^7^0^20^21^1440^0.3334^0.5118^7^Wildthorn Stalker^878:1:1,1081:4:4,1288:2:2,2251:3:3,3174:4:4,4428:1:1,248702:1:1^
+3823^6^0^19^20^1440^0.2738^0.4504^6^Ghostpaw Runner^1015:2:2,3301:2:2^
+3825^1^0^28^28^1440^0.6496^0.6998^1^Ghostpaw Alpha^1015:1:1^
 3851^3^0^0^0^0^0.0000^0.0000^0^^1791:1:1^
 3853^5^0^0^0^0^0.0000^0.0000^0^^818:1:1,1210:1:1,2882:1:1,2988:1:1^
 3855^3^0^0^0^0^0.0000^0.0000^0^^11965:1:1^
@@ -258,6 +260,7 @@ GoldScout-export 6^z1ffmqhyzzxo^25
 @i^3402^Soft Patch of Fur
 @i^3634^Head of Grimson
 @i^3669^Gelatinous Goo
+@i^3702^Bear Gall Bladder
 @i^3730^Big Bear Meat
 @i^3748^Feline Mantle
 @i^3770^Mutton Chop
@@ -284,6 +287,7 @@ GoldScout-export 6^z1ffmqhyzzxo^25
 @i^4693^Ceremonial Leather Belt
 @i^4695^Burnished Cloak
 @i^4784^Lifeless Stone
+@i^5120^Long Tail Hair
 @i^5121^Dirty Kodo Scale
 @i^5122^Thick Kodo Hair
 @i^5128^Shed Lizard Skin
@@ -293,8 +297,10 @@ GoldScout-export 6^z1ffmqhyzzxo^25
 @i^5442^Head of Arugal
 @i^5469^Strider Meat
 @i^5470^Thunder Lizard Tail
+@i^5471^Stag Meat
 @i^5490^Wrathtail Head
 @i^5523^Small Barnacled Clam
+@i^5566^Broken Antler
 @i^5637^Large Fang
 @i^5734^Super Reaper 6000 Blueprints
 @i^6220^Meteor Shard
@@ -330,6 +336,8 @@ GoldScout-export 6^z1ffmqhyzzxo^25
 @i^10316^Pattern: Colorful Kilt
 @i^10402^Blackened Defias Boots
 @i^11384^Broken Basilisk Teeth
+@i^11406^Rotting Bear Carcass
+@i^11407^Torn Bear Pelt
 @i^11416^Delicate Ribcage
 @i^11965^Quartz Ring of the Boar
 @i^12184^Raptor Flesh
@@ -479,6 +487,7 @@ GoldScout-export 6^z1ffmqhyzzxo^25
 @q^3402^0:15:0
 @q^3634^1:12:0
 @q^3669^0:15:0
+@q^3702^0:15:0
 @q^3730^1:7:1
 @q^3748^3:4:0
 @q^3770^1:0:0
@@ -505,6 +514,7 @@ GoldScout-export 6^z1ffmqhyzzxo^25
 @q^4693^1:4:0
 @q^4695^2:4:0
 @q^4784^0:15:0
+@q^5120^0:15:0
 @q^5121^0:15:0
 @q^5122^0:15:0
 @q^5128^0:15:0
@@ -514,8 +524,10 @@ GoldScout-export 6^z1ffmqhyzzxo^25
 @q^5442^1:12:0
 @q^5469^1:7:1
 @q^5470^1:7:1
+@q^5471^1:7:1
 @q^5490^1:12:0
 @q^5523^1:7:0
+@q^5566^0:15:0
 @q^5637^1:7:1
 @q^5734^1:12:0
 @q^6220^3:2:0
@@ -551,6 +563,8 @@ GoldScout-export 6^z1ffmqhyzzxo^25
 @q^10316^2:9:0
 @q^10402^3:4:0
 @q^11384^0:15:0
+@q^11406^0:15:0
+@q^11407^1:12:0
 @q^11416^0:15:0
 @q^11965^2:4:0
 @q^12184^1:7:1
@@ -1426,9 +1440,11 @@ GoldScout-export 6^z1ffmqhyzzxo^25
 @a^3713^62:3,82:3,122:1
 @a^3715^81:1,82:1
 @a^3717^42:1,82:1,83:1,102:1
-@a^3809^227:1,247:1
-@a^3819^146:1,186:1,206:3,227:1
-@a^3823^123:1,144:2,206:1,227:1
+@a^3809^227:1,247:3,248:1,267:2
+@a^3817^227:1,267:2
+@a^3819^146:1,186:1,206:3,227:2
+@a^3823^123:1,144:2,206:1,227:2
+@a^3825^272:1
 @a^3921^127:2,128:11
 @a^3922^127:1,128:6
 @a^3923^128:1

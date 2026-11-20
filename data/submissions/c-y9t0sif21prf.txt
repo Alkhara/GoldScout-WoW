@@ -1,4 +1,4 @@
-GoldScout-export 5^y9t0sif21prf^2
+GoldScout-export 6^y9t0sif21prf^3
 1380^1^0^10^10^1432^0.5309^0.6852^1^Saean^^
 2715^1^0^40^40^1418^0.6133^0.7043^1^Brute Crache-poussières^4338:1:1^
 2716^1^0^40^41^1418^0.5589^0.6044^1^Chasseur Wyrm Crache-poussières^^
@@ -76,6 +76,11 @@ GoldScout-export 5^y9t0sif21prf^2
 255207^1^0^43^43^2652^0.4647^0.5854^1^Rôdeur^1688:1:1,259461:1:1,260353:1:1^
 255238^1^0^40^40^2652^0.4578^0.3565^1^Estafette magram^254432:1:1,260349:1:1^
 255560^1^0^41^41^1443^0.6778^0.7887^1^Gardien magram^1710:1:1,254432:1:1^
+256795^1^0^42^43^2548^0.2857^0.4355^1^Fanatique du Crépuscule^3671:1:1^
+256797^9^0^42^43^2548^0.2655^0.4476^9^Corrupteur du Crépuscule^3671:1:1,4306:1:2,4338:2:3,5429:1:1,8749:1:1,213543:1:1^
+256799^12^0^43^44^2548^0.2711^0.4389^12^Championne du Crépuscule^3671:2:2,3966:1:1,4306:1:1,4338:2:3,4637:1:1,6424:1:1,265821:4:4^
+256881^1^0^46^46^2548^0.2677^0.4463^1^Suzerain Kilgar^265837:1:1^
+256892^1^0^46^46^2548^0.2669^0.4786^1^Kargra l'Aveugle^3914:1:1^
 @i^1464^Serre de busard
 @i^1529^Jade
 @i^1688^Longue queue soyeuse
@@ -89,6 +94,7 @@ GoldScout-export 5^y9t0sif21prf^2
 @i^2772^Minerai de fer
 @i^3172^Tripes de sanglier
 @i^3404^Aile de busard
+@i^3671^Crâne pourrissant
 @i^3771^Jarret de cochon sauvage
 @i^3778^Arc composite de sarcasme
 @i^3786^Miséricorde rutilante
@@ -97,7 +103,9 @@ GoldScout-export 5^y9t0sif21prf^2
 @i^3799^Gilet entrelacé
 @i^3812^Gants doublentins
 @i^3813^Pantalon doublentin
+@i^3914^Sac à dos de compagnon
 @i^3943^Gilet en crochet
+@i^3966^Pantalon en cuir épais
 @i^4026^Mousquet de sentinelle
 @i^4041^Capuche de l'aurore
 @i^4093^Grande queue de basilic
@@ -114,14 +122,17 @@ GoldScout-export 5^y9t0sif21prf^2
 @i^4634^Coffret en fer
 @i^4635^Amulette de Hammertoe
 @i^4636^Solide coffret en fer
+@i^4637^Coffret d'acier
 @i^4784^Pierre morte
 @i^5009^Anneau d'influence mentale
 @i^5116^Longue plume de queue
+@i^5429^Un joli caillou
 @i^5829^Bec acéré
 @i^6357^Caisse scellée
 @i^6358^Bouche-noire huileux
 @i^6359^Lutjan de nagefeu
 @i^6362^Morue rochécaille crue
+@i^6424^Cape forgenoire
 @i^7069^Air élémentaire
 @i^7443^Gants de sentinelle du sanglier
 @i^7546^Ceinturon de champion de l'épervier
@@ -133,6 +144,7 @@ GoldScout-export 5^y9t0sif21prf^2
 @i^8009^Pierre de puissance Dentrium
 @i^8052^Pierre de puissance An'Alleum
 @i^8150^Sel de Fonderoc
+@i^8749^Chapeau en crochet
 @i^9390^Gants de Revelosh d'hiérophante
 @i^9409^Brassards d'Ironaya d'agilité
 @i^9411^Espauliers Rockshard
@@ -157,6 +169,7 @@ GoldScout-export 5^y9t0sif21prf^2
 @i^15154^Echarpe de noctambule de héraut
 @i^19936^Carapace de scorpide desséchée
 @i^19937^Petite griffe de scorpide
+@i^213543^Parchemin : BONHOMME
 @i^213544^Parchemin : ZOO ET DU KAFÊ
 @i^248690^Caisse détournée : plantes terreuses d'expert
 @i^248691^Caisse détournée : plantes à fleurs d'expert
@@ -169,6 +182,8 @@ GoldScout-export 5^y9t0sif21prf^2
 @i^260349^Extrait de journal à peine lisible, page II
 @i^260353^Extrait de journal à peine lisible, page VI
 @i^260354^Extrait de journal à peine lisible, page VII
+@i^265821^Clé du Crépuscule
+@i^265837^Tête de Kilgar
 @i^274380^Poignets en chair putréfiée
 @i^274430^Tranchoir de sentinelle de roche
 @q^1464^0:15:0
@@ -184,6 +199,7 @@ GoldScout-export 5^y9t0sif21prf^2
 @q^2772^1:7:1
 @q^3172^1:7:1
 @q^3404^1:7:1
+@q^3671^0:15:0
 @q^3771^1:0:0
 @q^3778^0:2:0
 @q^3786^0:2:0
@@ -192,7 +208,9 @@ GoldScout-export 5^y9t0sif21prf^2
 @q^3799^0:4:0
 @q^3812^0:4:0
 @q^3813^0:4:0
+@q^3914^1:1:0
 @q^3943^0:4:0
+@q^3966^0:4:0
 @q^4026^0:2:0
 @q^4041^2:4:0
 @q^4093^0:15:0
@@ -209,14 +227,17 @@ GoldScout-export 5^y9t0sif21prf^2
 @q^4634^2:15:0
 @q^4635^1:12:0
 @q^4636^2:15:0
+@q^4637^2:15:0
 @q^4784^0:15:0
 @q^5009^2:4:0
 @q^5116^1:7:1
+@q^5429^0:15:0
 @q^5829^0:15:0
 @q^6357^1:15:0
 @q^6358^1:7:1
 @q^6359^1:7:1
 @q^6362^1:7:1
+@q^6424^2:4:0
 @q^7069^1:7:1
 @q^7443^2:4:0
 @q^7546^2:4:0
@@ -228,6 +249,7 @@ GoldScout-export 5^y9t0sif21prf^2
 @q^8009^1:12:0
 @q^8052^1:12:0
 @q^8150^1:7:1
+@q^8749^0:4:0
 @q^9390^3:4:0
 @q^9409^3:4:0
 @q^9411^3:4:0
@@ -252,6 +274,7 @@ GoldScout-export 5^y9t0sif21prf^2
 @q^15154^2:4:0
 @q^19936^0:15:0
 @q^19937^0:15:0
+@q^213543^1:0:0
 @q^213544^1:0:0
 @q^248690^1:0:1
 @q^248691^1:0:1
@@ -264,6 +287,8 @@ GoldScout-export 5^y9t0sif21prf^2
 @q^260349^1:15:0
 @q^260353^1:15:0
 @q^260354^1:15:0
+@q^265821^1:12:0
+@q^265837^1:12:0
 @q^274380^3:4:0
 @q^274430^3:2:0
 @m^1413^Les Tarides
@@ -663,6 +688,11 @@ GoldScout-export 5^y9t0sif21prf^2
 @a^255207^229:1
 @a^255238^149:1
 @a^255560^313:1
+@a^256795^165:1
+@a^256797^165:4,185:5
+@a^256799^145:1,165:7,185:4
+@a^256881^165:1
+@a^256892^185:1
 @f^1434^0^17^160^4603:3:3,6357:1:1,6358:1:1,6359:2:2,6362:10:10^285:17
 @f^2548^0^2^165^4603:1:1,6359:1:1^216:2
 @l^0^frFR

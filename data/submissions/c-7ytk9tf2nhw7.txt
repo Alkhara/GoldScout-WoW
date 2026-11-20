@@ -1,4 +1,4 @@
-GoldScout-export 6^7ytk9tf2nhw7^32
+GoldScout-export 6^7ytk9tf2nhw7^33
 6^17^0^1^2^1429^0.4813^0.3641^17^Kobold Vermin^159:3:3,755:8:8,1369:1:1,1378:1:1,2211:3:3,2589:6:6,4496:1:1,247834:1:1,247839:3:3^
 30^4^0^5^6^1429^0.3854^0.6888^4^Forest Spider^1476:2:2,2590:1:1,5465:1:1^
 36^12^0^11^12^1436^0.4929^0.3352^12^Harvest Golem^732:7:7,814:3:3,1274:4:4,1516:1:1,255007:1:1,255010:1:1^
@@ -61,7 +61,10 @@ GoldScout-export 6^7ytk9tf2nhw7^32
 568^2^0^24^25^1433^0.7559^0.4470^2^Shadowhide Warrior^2592:1:1^
 579^1^0^24^24^1433^0.7538^0.4882^1^Shadowhide Assassin^1774:1:1^
 580^9^0^20^21^1433^0.1322^0.2070^9^Redridge Drudger^1212:2:2,1752:1:1,2589:3:9,2592:1:1,2783:1:1,15248:1:1^
-590^1^0^14^14^1436^0.4914^0.2174^1^Defias Looter^829:1:1^
+590^1^0^13^14^1436^0.4914^0.2174^1^Defias Looter^829:1:1^
+598^6^0^0^0^0^0.0000^0.0000^0^^2589:2:4,2592:3:5,2771:1:2^
+634^2^0^0^0^0^0.0000^0.0000^0^^2592:1:1,4349:1:1^
+644^1^0^0^0^0^0.0000^0.0000^0^^5187:1:1^
 711^1^0^24^24^1433^0.1328^0.1642^1^Ardo Dirtpaw^^
 712^16^0^14^15^1433^0.1408^0.6930^16^Redridge Thrasher^1179:1:1,1212:2:2,1213:1:1,1513:1:1,2287:1:1,2589:4:8,2592:3:3,280911:5:5^
 732^1^0^10^10^1429^0.7684^0.8251^1^Murloc Lurker^1422:1:1^
@@ -121,7 +124,7 @@ GoldScout-export 6^7ytk9tf2nhw7^32
 2237^6^0^17^18^1439^0.4305^0.8107^6^Moonstalker Sire^5134:1:1,5135:1:1,5386:5:5^
 2321^3^0^11^13^1439^0.4055^0.5081^3^Foreststrider Fledgling^4776:1:1,5114:1:1,17056:2:2^
 2324^14^0^13^14^1439^0.3926^0.5432^14^Blackwood Windtalker^1511:1:1,2589:4:6,2763:1:1,4537:1:1,4571:1:1^
-2336^14^0^16^17^1439^0.5623^0.2689^14^Dark Strand Fanatic^414:3:3,1179:1:1,2589:2:4,2592:4:6,5348:4:4^
+2336^34^0^16^17^1439^0.5625^0.2689^34^Dark Strand Fanatic^414:5:5,1179:2:2,1738:1:1,1769:1:1,1770:1:1,2455:1:1,2589:3:6,2592:7:12,5348:8:8^
 2338^3^0^16^17^1439^0.3883^0.8597^3^Twilight Disciple^2589:1:1^
 2339^4^0^17^18^1439^0.3907^0.8564^4^Twilight Thug^2592:1:1,2780:1:1,279279:1:1^
 2350^3^0^20^21^1424^0.6416^0.4156^3^Forest Moss Creeper^878:1:1,1081:2:2,2251:1:1^
@@ -249,10 +252,13 @@ GoldScout-export 6^7ytk9tf2nhw7^32
 @i^1733^Worn Cloak
 @i^1735^Worn Mail Pants
 @i^1737^Worn Mail Vest
+@i^1738^Laced Mail Belt
 @i^1744^Laced Mail Shoulderpads
 @i^1747^Linked Chain Boots
 @i^1752^Linked Chain Shoulderpads
 @i^1766^Canvas Cloak
+@i^1769^Canvas Shoulderpads
+@i^1770^Canvas Vest
 @i^1774^Brocade Cloak
 @i^1788^Patched Leather Boots
 @i^1807^Tough Leather Gloves
@@ -297,6 +303,7 @@ GoldScout-export 6^7ytk9tf2nhw7^32
 @i^2677^Boar Ribs
 @i^2698^Recipe: Cooked Crab Claw
 @i^2763^Fisherman Knife
+@i^2771^Tin Ore
 @i^2773^Cracked Shortbow
 @i^2774^Rust-covered Blunderbuss
 @i^2777^Feeble Shortbow
@@ -343,6 +350,7 @@ GoldScout-export 6^7ytk9tf2nhw7^32
 @i^3770^Mutton Chop
 @i^3820^Stranglekelp
 @i^4292^Pattern: Green Woolen Bag
+@i^4349^Pattern: Phoenix Pants
 @i^4361^Copper Tube
 @i^4363^Copper Modulator
 @i^4496^Small Brown Pouch
@@ -375,6 +383,7 @@ GoldScout-export 6^7ytk9tf2nhw7^32
 @i^5134^Small Furry Paw
 @i^5135^Thin Black Claw
 @i^5136^Torn Furry Ear
+@i^5187^Rhahk'Zor's Hammer
 @i^5348^Worn Parchment
 @i^5382^Anaya's Pendant
 @i^5385^Crawler Leg
@@ -571,10 +580,13 @@ GoldScout-export 6^7ytk9tf2nhw7^32
 @q^1733^0:4:0
 @q^1735^0:4:0
 @q^1737^0:4:0
+@q^1738^0:4:0
 @q^1744^0:4:0
 @q^1747^0:4:0
 @q^1752^0:4:0
 @q^1766^0:4:0
+@q^1769^0:4:0
+@q^1770^0:4:0
 @q^1774^0:4:0
 @q^1788^0:4:0
 @q^1807^0:4:0
@@ -619,6 +631,7 @@ GoldScout-export 6^7ytk9tf2nhw7^32
 @q^2677^1:7:1
 @q^2698^1:9:0
 @q^2763^0:2:0
+@q^2771^1:7:1
 @q^2773^0:2:0
 @q^2774^0:2:0
 @q^2777^0:2:0
@@ -665,6 +678,7 @@ GoldScout-export 6^7ytk9tf2nhw7^32
 @q^3770^1:0:0
 @q^3820^1:7:1
 @q^4292^2:9:0
+@q^4349^2:9:0
 @q^4361^1:7:1
 @q^4363^1:7:1
 @q^4496^1:1:0
@@ -697,6 +711,7 @@ GoldScout-export 6^7ytk9tf2nhw7^32
 @q^5134^1:12:0
 @q^5135^0:15:0
 @q^5136^0:15:0
+@q^5187^3:2:0
 @q^5348^1:12:0
 @q^5382^1:12:0
 @q^5385^1:12:0
@@ -2240,7 +2255,7 @@ GoldScout-export 6^7ytk9tf2nhw7^32
 @a^2237^308:1,328:5
 @a^2321^128:1,227:1,247:1
 @a^2324^207:9,208:1,227:4
-@a^2336^110:1,111:13
+@a^2336^110:2,111:32
 @a^2338^347:3
 @a^2339^347:4
 @a^2350^152:1,172:1,194:1
