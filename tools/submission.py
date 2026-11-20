@@ -139,6 +139,7 @@ class Result:
         self.mobs = []
         self.errors = []
         self.warnings = []
+        self.outliers = []   # compare(): every rate far from other players', as Outlier
         self.install_id = None
         self.seq = None
         self.version = 3
@@ -497,6 +498,16 @@ def _z(drops_a, attempts_a, drops_b, attempts_b):
 QUEST_ITEM_CLASS = 12   # Blizzard's item class for quest items
 
 
+class Outlier:
+    """One rate compare() flagged: this player's drops of item from npc (key "i" loot, "pi" pickpocket) over
+    attempts, against everyone else's theirs over other_attempts."""
+    __slots__ = ("npc", "key", "item", "drops", "attempts", "theirs", "other_attempts")
+
+    def __init__(self, npc, key, item, drops, attempts, theirs, other_attempts):
+        self.npc, self.key, self.item = npc, key, item
+        self.drops, self.attempts, self.theirs, self.other_attempts = drops, attempts, theirs, other_attempts
+
+
 def tally(mob_lists):
     """Everyone's kills, picks and drops per mob, added up once: {npc: {"k", "p", "i": {item: drops},
     "pi": {item: drops}}}. compare() takes it so a run checking many players reads every file once."""
@@ -546,6 +557,7 @@ def compare(result, others, quest_items=(), totals=None, minus=None):
                 z = _z(drops, attempts, theirs, other_attempts)
                 if abs(z) >= OUTLIER_Z:
                     flagged += 1
+                    result.outliers.append(Outlier(mob.npc, key, item, drops, attempts, theirs, other_attempts))
                     if flagged <= 15:
                         result.warnings.append(
                             "NPC %d, item %d: %.1f%% over %d attempts, other players recorded %.1f%% over %d."

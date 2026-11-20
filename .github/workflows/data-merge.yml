@@ -12,7 +12,9 @@
 #
 # The pull request merges itself once the website's Cloudflare build for the
 # branch (SITE_CHECK) passes; otherwise it stays open for a maintainer, and
-# the run summary says why. Uploads held for review (unusual rates, or a
+# the run summary says why. An upload whose rates differ only a little from
+# everyone else's (tools/data_bot.py, AUTO_ACCEPT_*) goes in and is listed in
+# the pull request. Uploads held for review (rates that differ more, or a
 # companion upload for an install first shared through the form) or rejected
 # are left out of it, so they never hold up everyone else's data; held ones
 # are listed in the run summary and alert Discord. After merging, it starts
@@ -132,9 +134,13 @@ jobs:
           SHA: ${{ steps.pr.outputs.sha }}
           HELD: ${{ steps.store.outputs.held }}
           REJECTED: ${{ steps.store.outputs.rejected }}
+          UNREVIEWED: ${{ steps.store.outputs.accepted_unreviewed }}
         run: |
           summary() { printf '%s\n' "$1" | tee -a "$GITHUB_STEP_SUMMARY"; }
           echo >> "$GITHUB_STEP_SUMMARY"
+          if [ "${UNREVIEWED:-0}" != "0" ]; then
+            summary "${UNREVIEWED} upload(s) with small rate differences accepted without review; the pull request lists them."
+          fi
           if [ "${HELD:-0}" != "0" ] || [ "${REJECTED:-0}" != "0" ]; then
             summary "${HELD:-0} upload(s) held for review and ${REJECTED:-0} rejected; they're left out, and the rest merges."
           fi

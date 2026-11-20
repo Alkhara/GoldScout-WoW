@@ -415,6 +415,68 @@ class BotTests(unittest.TestCase):
         self.assertEqual(submission.parse((data_bot.SUBMISSIONS / "c-abcdefghijkl.txt").read_text(
             encoding="utf-8")).seq, 6)
 
+    def lucky_uploads(self, *drops):
+        # Everyone else: one 2675 in 3,000 Clattering Crawler kills. Each upload: 40 kills, with that many 2675s.
+        (data_bot.SUBMISSIONS / "9-zzzzzzzzzzzz.txt").write_text(
+            "GoldScout-export 2^zzzzzzzzzzzz^3\n3812^3000^0^19^20^1440^0.1179^0.2989^500^Clattering Crawler^"
+            "2675:1:1^\n", encoding="utf-8")
+        uploads = []
+        for number, count in enumerate(drops):
+            install = "lucky%07d" % number
+            uploads.append({"install_id": install, "seq": 4, "terms": "2026-11-07", "body":
+                            "GoldScout-export 2^%s^4\n3812^40^0^19^20^1440^0.1179^0.2989^40^Clattering Crawler^"
+                            "2675:%d:%d^\n" % (install, count, count)})
+        Path("uploads.json").write_text(json.dumps({"uploads": uploads}), encoding="utf-8")
+        Path("pr_body.md").write_text("", encoding="utf-8")
+        data_bot.collect_uploads("uploads.json")
+        return Path("pr_body.md").read_text(encoding="utf-8")
+
+    def test_a_lucky_streak_goes_in_without_review(self):
+        # 4 in 40 against 1 in 3,000 is far apart, but taking it in moves the rate from 0.03% to 0.16%.
+        body = self.lucky_uploads(4)
+        self.assertTrue((data_bot.SUBMISSIONS / "c-lucky0000000.txt").exists())
+        self.assertIn("Accepted without review", body)
+        self.assertIn("- `lucky0000000` (1 mobs): NPC 3812, item 2675: 4 in 40 against 0.03% from everyone else; "
+                      "the rate goes to 0.16%.", body)
+        self.assertNotIn("Held back for review", body)
+
+    def test_rates_that_would_move_the_community_rate_wait_for_review(self):
+        # 30 in 40 would take the rate from 0.03% to 1.02%; the lucky one beside it still goes in.
+        body = self.lucky_uploads(30, 4)
+        self.assertFalse((data_bot.SUBMISSIONS / "c-lucky0000000.txt").exists())
+        self.assertTrue((data_bot.SUBMISSIONS / "c-lucky0000001.txt").exists())
+        self.assertIn("- `lucky0000000` (1 mobs): NPC 3812, item 2675: 75.0% over 40 attempts", body)
+        self.assertLess(body.index("Accepted without review"), body.index("Held back for review"))
+        import admin_stats   # the dashboard counts held uploads only, not the ones accepted without review
+        pull = admin_stats.data_pull({"number": 1, "html_url": "", "body": body,
+                                      "created_at": "2026-11-20T00:00:00Z", "updated_at": "2026-11-20T00:00:00Z"})
+        self.assertEqual(pull["held"], 1)
+
+    def test_many_small_differences_wait_for_review(self):
+        result = submission.Result()
+        result.outliers = [submission.Outlier(3812, "i", item, 2, 40, 0, 3000) for item in (1, 2, 3)]
+        self.assertFalse(data_bot.small_differences(result))     # three odd rates: not one lucky streak
+        result.outliers = result.outliers[:2]
+        self.assertTrue(data_bot.small_differences(result))
+        result.outliers = []
+        self.assertFalse(data_bot.small_differences(result))
+
+    def test_a_player_dropping_far_less_than_everyone_waits_for_review(self):
+        # 0 in 93 against 40.7% in 86 would halve the rate.
+        result = submission.Result()
+        result.outliers = [submission.Outlier(2735, "i", 4626, 0, 93, 35, 86)]
+        self.assertFalse(data_bot.small_differences(result))
+
+    def test_an_install_on_the_held_list_always_waits(self):
+        with mock.patch.object(data_bot, "held_installs", return_value={"abcdefghijkl"}):
+            body = self.upload()
+        self.assertFalse((data_bot.SUBMISSIONS / "c-abcdefghijkl.txt").exists())
+        self.assertIn("on data/held-installs.txt", body)
+        with mock.patch.object(data_bot, "held_installs", return_value={"abcdefghijkl"}), \
+                mock.patch.object(data_bot, "approved_installs", return_value={"abcdefghijkl"}):
+            self.upload()
+        self.assertTrue((data_bot.SUBMISSIONS / "c-abcdefghijkl.txt").exists())   # approving still lets it in
+
     def test_upload_dates_are_recorded_once(self):
         dates = data_bot.SUBMISSIONS.parent / "install-dates.json"
         self.upload(created=1_800_000_000)

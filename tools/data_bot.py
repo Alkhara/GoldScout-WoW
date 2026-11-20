@@ -239,6 +239,49 @@ def approved_installs():
             if line.strip() and not line.startswith("#")}
 
 
+def held_installs():
+    """Install IDs a maintainer wants reviewed every time, even when their rates look fine: one taken back out
+    after it was accepted without review (delete its data/submissions/c-<install ID>.txt as well)."""
+    path = ROOT / "data" / "held-installs.txt"
+    if not path.exists():
+        return set()
+    return {line.strip() for line in path.read_text(encoding="utf-8").splitlines()
+            if line.strip() and not line.startswith("#")}
+
+
+# An upload whose rates differ sharply from everyone else's goes in without review when what stands out is
+# small: at most AUTO_ACCEPT_RATES such rates, none of which taking it in moves by more than AUTO_ACCEPT_SHIFT
+# (half a percentage point). Every upload held for rates up to then (11, all approved by hand) was one item
+# dropping about twice in a few dozen kills: a lucky streak among hundreds of players. Broken or made-up data
+# shows as many odd rates, or rates that would move the community's, and those still wait for review.
+AUTO_ACCEPT_RATES = 2
+AUTO_ACCEPT_SHIFT = 0.005
+ON_HELD_LIST = "on data/held-installs.txt, so every upload from it waits for review."
+
+
+def rate_shift(outlier):
+    """(before, after): the community's rate for an Outlier without this player's data, and with it (counting
+    at most merge_data.MAX_PER_PLAYER of their attempts, as the merge does)."""
+    scale = min(1.0, merge_data.MAX_PER_PLAYER / outlier.attempts)
+    before = outlier.theirs / outlier.other_attempts
+    after = (outlier.theirs + outlier.drops * scale) / (outlier.other_attempts + outlier.attempts * scale)
+    return before, after
+
+
+def small_differences(result):
+    """True when compare() flagged at most AUTO_ACCEPT_RATES rates and accepting moves none of them by more
+    than AUTO_ACCEPT_SHIFT."""
+    if not result.outliers or len(result.outliers) > AUTO_ACCEPT_RATES:
+        return False
+    return all(abs(after - before) <= AUTO_ACCEPT_SHIFT for before, after in map(rate_shift, result.outliers))
+
+
+def describe_shift(outlier):
+    before, after = rate_shift(outlier)
+    return "NPC %d, item %d: %d in %d against %.2f%% from everyone else; the rate goes to %.2f%%" % (
+        outlier.npc, outlier.item, outlier.drops, outlier.attempts, 100 * before, 100 * after)
+
+
 FORM_TAKEOVER = ("first shared through the GitHub form, and install IDs from the form are public, so this upload "
                  "waits in case someone else registered it. If that player switched to the companion, approve it.")
 
@@ -275,6 +318,7 @@ def collect_uploads(uploads_path):
     tools/fetch_uploads.py)."""
     listing = json.loads(Path(uploads_path).read_text(encoding="utf-8") or "{}")
     approved = approved_installs()
+    always_held = held_installs()
     SUBMISSIONS.mkdir(parents=True, exist_ok=True)
     from_form = form_installs()
     files = {}
@@ -286,7 +330,7 @@ def collect_uploads(uploads_path):
     quests = {item for parsed in files.values() for item, meta in parsed.item_meta.items()
               if meta[1] == submission.QUEST_ITEM_CLASS}
     stored_seq = {path.stem[2:]: parsed.seq for path, parsed in files.items() if path.name.startswith("c-")}
-    stored, held, rejected, dates = [], [], 0, {}
+    stored, held, auto, rejected, dates = [], [], [], 0, {}
     for upload in listing.get("uploads") or []:
         install = str(upload.get("install_id", ""))
         seq = upload.get("seq")
@@ -303,13 +347,18 @@ def collect_uploads(uploads_path):
             print("reject upload %s" % install[:12])
             continue
         path = SUBMISSIONS / ("c-%s.txt" % install)
+        if install in always_held and install not in approved:
+            held.append((install, len(result.mobs), [ON_HELD_LIST]))
+            print("hold upload %s (on the held list)" % install)
+            continue
         if install in from_form and not path.exists() and install not in approved:
             held.append((install, len(result.mobs), [FORM_TAKEOVER]))
             print("hold upload %s (first shared through the form)" % install)
             continue
         own = [parsed.mobs for path, parsed in files.items() if path.stem.endswith("-" + install)]
         submission.compare(result, None, quests, totals=totals, minus=submission.tally(own))
-        if result.warnings and install not in approved:
+        lucky = bool(result.warnings) and install not in approved
+        if lucky and not small_differences(result):
             held.append((install, len(result.mobs), result.warnings))
             print("hold upload %s (rate warnings)" % install)
             continue
@@ -321,7 +370,9 @@ def collect_uploads(uploads_path):
                 continue
         path.write_text(result.text(), encoding="utf-8", newline="\n")
         stored.append((install, result.seq, len(result.mobs), len(result.warnings)))
-        print("store upload %s snapshot %d" % (install, result.seq))
+        if lucky:
+            auto.append((install, len(result.mobs), result.outliers))
+        print("store upload %s snapshot %d%s" % (install, result.seq, " (small rate differences)" if lucky else ""))
     record_install_dates(dates)
 
     body = ["", "### Companion uploads", ""]
@@ -330,6 +381,13 @@ def collect_uploads(uploads_path):
         body += ["| `%s` | %d | %d | %d |" % row for row in stored]
     else:
         body.append("No new companion uploads.")
+    if auto:   # before the held list: tools/admin_stats.py counts the "- `" lines after "Held back for review"
+        body += ["", "Accepted without review: each differs sharply from other players on at most %d rates, and "
+                 "moves none by more than %.1f points. To take one back out, add its install ID to "
+                 "`data/held-installs.txt` and delete its `data/submissions/c-<install ID>.txt`:"
+                 % (AUTO_ACCEPT_RATES, 100 * AUTO_ACCEPT_SHIFT), ""]
+        for install, mobs, outliers in auto:
+            body.append("- `%s` (%d mobs): %s." % (install, mobs, "; ".join(map(describe_shift, outliers))))
     if held:
         body += ["", "Held back for review, and left out until accepted. To accept one, add its install ID to "
                  "`data/approved-installs.txt` and run the workflow again:", ""]
@@ -341,6 +399,7 @@ def collect_uploads(uploads_path):
         handle.write("\n".join(body) + "\n")
     set_output("uploads", len(stored))
     set_output("held", len(held))
+    set_output("accepted_unreviewed", len(auto))
     set_output("rejected", rejected)
 
 

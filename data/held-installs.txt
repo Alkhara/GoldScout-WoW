@@ -1,0 +1,3 @@
+# Install IDs whose uploads always wait for review, even when their rates look fine (tools/data_bot.py).
+# One per line. Use it to take back out an upload that was accepted without review, and delete its
+# data/submissions/c-<install ID>.txt as well.
