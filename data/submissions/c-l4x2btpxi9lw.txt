@@ -1,4 +1,8 @@
-GoldScout-export 5^l4x2btpxi9lw^1
+GoldScout-export 5^l4x2btpxi9lw^2
+1501^13^0^1^1^1420^0.3100^0.6319^13^Mindless Zombie^159:2:2,1364:1:1,2211:1:1,2589:3:3,2656:1:1,4604:1:1^
+1502^10^0^1^2^1420^0.3161^0.6326^10^Wretched Zombie^1376:2:2,1378:2:2,2211:1:1,2589:2:2,4604:2:2^
+1508^12^0^1^1^1420^0.3021^0.6392^12^Young Scavenger^1376:1:1,2650:1:1,3265:6:6,4865:1:1,7073:8:8,7074:5:5^
+1512^11^0^1^2^1420^0.2970^0.6606^11^Duskbat^1370:1:1,2650:1:1,2654:1:1,3264:6:6,3363:1:1,4865:6:6,7073:3:3,7074:3:3^
 4638^3^0^32^33^1443^0.6906^0.7056^3^Magram Scout^4306:1:2,6067:1:1,15225:1:1^
 4639^5^0^32^33^1443^0.6873^0.7228^5^Magram Outrunner^4306:1:1,6067:1:1,254432:1:1^
 4640^7^0^33^34^1443^0.6959^0.7684^7^Magram Wrangler^1708:1:1,2592:1:1,4306:2:2,254432:1:1^
@@ -12,9 +16,22 @@ GoldScout-export 5^l4x2btpxi9lw^1
 4695^2^0^35^36^1443^0.5325^0.6080^2^Carrion Horror^3404:2:2,5116:2:2^
 11521^2^0^37^38^1443^0.5447^0.6137^2^Kodo Apparition^^
 255560^1^0^41^41^1443^0.6785^0.7864^1^Magram Guardian^4306:1:2,6067:1:1^
+@i^159^Refreshing Spring Water
+@i^1364^Ragged Leather Vest
+@i^1370^Ragged Leather Bracers
+@i^1376^Frayed Cloak
+@i^1378^Frayed Pants
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
+@i^2211^Bent Large Shield
+@i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2650^Flimsy Chain Boots
+@i^2654^Flimsy Chain Pants
+@i^2656^Flimsy Chain Vest
+@i^3264^Duskbat Wing
+@i^3265^Scavenger Paw
+@i^3363^Frayed Belt
 @i^3404^Buzzard Wing
 @i^3771^Wild Hog Shank
 @i^3778^Taut Compound Bow
@@ -25,17 +42,34 @@ GoldScout-export 5^l4x2btpxi9lw^1
 @i^4338^Mageweave Cloth
 @i^4582^Soft Bushy Tail
 @i^4583^Thick Furry Mane
+@i^4604^Forest Mushroom Cap
+@i^4865^Ruined Pelt
 @i^5116^Long Tail Feather
 @i^6067^Centaur Ear
+@i^7073^Broken Fang
+@i^7074^Chipped Claw
 @i^12037^Mystery Meat
 @i^12203^Red Wolf Meat
 @i^14414^Stonecloth Belt
 @i^15225^Sequoia Hammer of Magic
 @i^213546^Scroll: SHOOBEEDOOP
 @i^254432^Carved Centaur Totem
+@q^159^1:0:0
+@q^1364^0:4:0
+@q^1370^0:4:0
+@q^1376^0:4:0
+@q^1378^0:4:0
 @q^1708^1:0:0
 @q^1710^1:0:0
+@q^2211^0:4:0
+@q^2589^1:7:1
 @q^2592^1:7:1
+@q^2650^0:4:0
+@q^2654^0:4:0
+@q^2656^0:4:0
+@q^3264^1:12:0
+@q^3265^1:12:0
+@q^3363^0:4:0
 @q^3404^1:7:1
 @q^3771^1:0:0
 @q^3778^0:2:0
@@ -46,15 +80,24 @@ GoldScout-export 5^l4x2btpxi9lw^1
 @q^4338^1:7:1
 @q^4582^1:12:0
 @q^4583^0:15:0
+@q^4604^1:0:0
+@q^4865^0:15:0
 @q^5116^1:7:1
 @q^6067^1:12:0
+@q^7073^0:15:0
+@q^7074^0:15:0
 @q^12037^1:7:1
 @q^12203^1:7:1
 @q^14414^2:4:0
 @q^15225^2:2:0
 @q^213546^1:0:0
 @q^254432^2:15:0
+@m^1420^Tirisfal Glades
 @m^1443^Desolace
+@a^1501^246:13
+@a^1502^246:9,266:1
+@a^1508^246:9,265:3
+@a^1512^245:3,246:1,265:5,266:1,286:1
 @a^4638^274:1,293:2
 @a^4639^274:2,293:1,313:2
 @a^4640^294:3,313:2,333:2
