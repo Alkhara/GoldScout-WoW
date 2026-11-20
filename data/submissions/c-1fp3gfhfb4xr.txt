@@ -1,6 +1,6 @@
-GoldScout-export 6^1fp3gfhfb4xr^1
-740^9^0^34^35^1435^0.1371^0.6309^9^Adolescent Whelp^1529:1:1,213545:1:1^
-741^7^0^35^36^1435^0.1461^0.6266^7^Dreaming Whelp^4460:1:1^
+GoldScout-export 6^1fp3gfhfb4xr^2
+740^23^0^34^35^1435^0.1347^0.6218^23^Adolescent Whelp^1529:1:1,4402:1:1,4460:2:2,5637:1:1,5803:8:8,213545:1:1^
+741^20^0^35^36^1435^0.1399^0.6211^20^Dreaming Whelp^4402:1:1,4460:3:3,5803:2:2,248691:1:1^
 755^6^0^34^35^1435^0.2529^0.4358^6^Lost One Mudlurker^4306:2:2^
 757^1^0^35^36^1435^0.4514^0.3467^1^Lost One Fisherman^258530:1:1^
 759^5^0^36^37^1435^0.5635^0.2751^5^Lost One Hunter^4306:2:4,4338:1:1^
@@ -18,13 +18,16 @@ GoldScout-export 6^1fp3gfhfb4xr^1
 @i^4057^Insignia Chestguard
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
+@i^4402^Small Flame Sac
 @i^4460^Ripped Wing Webbing
 @i^4585^Dripping Spider Mandible
 @i^5637^Large Fang
+@i^5803^Speck of Dream Dust
 @i^6196^Noboru's Cudgel
 @i^12037^Mystery Meat
 @i^12205^White Spider Meat
 @i^213545^Scroll: PEATCHY ATTAX
+@i^248691^Waylaid Crate: Flowering Expert Herbs
 @i^255728^Manual: Potent Anti-Venom
 @i^258530^Lucky Lure
 @q^770^0:15:0
@@ -36,13 +39,16 @@ GoldScout-export 6^1fp3gfhfb4xr^1
 @q^4057^2:4:0
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4402^1:7:1
 @q^4460^0:15:0
 @q^4585^0:15:0
 @q^5637^1:7:1
+@q^5803^1:12:0
 @q^6196^0:2:0
 @q^12037^1:7:1
 @q^12205^1:7:1
 @q^213545^1:0:0
+@q^248691^1:0:1
 @q^255728^2:9:0
 @q^258530^1:12:0
 @m^1435^Swamp of Sorrows
@@ -404,8 +410,8 @@ GoldScout-export 6^1fp3gfhfb4xr^1
 @c^279982^
 @c^279990^
 @c^286152^
-@a^740^222:2,242:3,243:1,262:1,263:2
-@a^741^222:2,242:1,243:3,262:1
+@a^740^222:7,242:9,243:3,262:2,263:2
+@a^741^222:5,242:5,243:7,262:3
 @a^755^145:2,165:2,184:2
 @a^757^129:1
 @a^759^111:4,131:1

@@ -1,11 +1,26 @@
-GoldScout-export 5^fuft69042xbl^5
+GoldScout-export 6^fuft69042xbl^6
 588^2^0^34^34^1434^0.2299^0.1263^2^Explorador Sangrapellejo^3771:2:2^
 595^1^0^34^34^1434^0.2295^0.1226^1^Cazador Sangrapellejo^3385:1:1^
 689^5^0^34^35^1434^0.2561^0.1780^5^Basilisco Espina de Cristal^1701:2:2,1702:2:2,1703:3:3,3918:2:2,4093:1:1^
 701^1^0^34^35^1434^0.2310^0.1335^1^Místico Sangrapellejo^^
+4127^1^0^16^16^1413^0.4271^0.3072^1^Hiena Dentecenado^3301:1:1^
+11858^2^0^18^18^1442^0.7370^0.8608^2^Grundig Nube Negra^2592:1:1^
+11910^9^0^14^15^1442^0.8125^0.9051^9^Rufiana Tótem Siniestro^1179:1:1,2589:1:2,2777:1:1,14723:1:1^
+11911^11^0^14^15^1442^0.8097^0.8965^11^Mercenario Tótem Siniestro^858:1:1,1512:1:1,1513:1:1,2287:3:3,2589:3:6^
+11912^8^0^15^16^1442^0.7999^0.8697^8^Tosco Tótem Siniestro^2589:5:8^
+11913^3^1^15^16^1442^0.7980^0.8696^3^Hechicero Tótem Siniestro^2287:1:1,2589:2:4^
+@i^858^Poción de sanación inferior
+@i^1179^Leche fría como el hielo
+@i^1512^Hacha de batalla rudimentaria
+@i^1513^Espada magna vieja
 @i^1701^Garra de basilisco curva
 @i^1702^Espina de basilisco intacta
 @i^1703^Columna de basilisco de cristal
+@i^2287^Anca de carne
+@i^2589^Paño de lino
+@i^2592^Paño de lana
+@i^2777^Arco corto débil
+@i^3301^Canino afilado
 @i^3385^Poción de maná inferior
 @i^3771^Pata de marrano salvaje
 @i^3820^Alga estranguladora
@@ -19,14 +34,24 @@ GoldScout-export 5^fuft69042xbl^5
 @i^6457^Piezas de ingeniería oxidadas
 @i^6458^Pescado cubierto de aceite
 @i^8365^Trucha cabeza de mitril cruda
+@i^14723^Ataduras de pintura de guerra
 @i^21113^Valija hermética
 @i^21114^Ron Rumsey dorado
 @i^21150^Valija reforzada con hierro
 @i^21151^Ron Rumsey etiqueta negra
 @i^21153^Sabiola cruda superior
+@q^858^1:0:0
+@q^1179^1:0:0
+@q^1512^0:2:0
+@q^1513^0:2:0
 @q^1701^0:15:0
 @q^1702^0:15:0
 @q^1703^1:0:0
+@q^2287^1:0:0
+@q^2589^1:7:1
+@q^2592^1:7:1
+@q^2777^0:2:0
+@q^3301^0:15:0
 @q^3385^1:0:0
 @q^3771^1:0:0
 @q^3820^1:7:1
@@ -40,11 +65,13 @@ GoldScout-export 5^fuft69042xbl^5
 @q^6457^0:15:0
 @q^6458^1:0:0
 @q^8365^1:7:1
+@q^14723^2:4:0
 @q^21113^1:15:0
 @q^21114^1:0:0
 @q^21150^1:15:0
 @q^21151^1:0:0
 @q^21153^1:7:1
+@m^1413^Los Baldíos
 @m^1434^Vega de Tuercespina
 @m^1442^Sierra Espolón
 @c^118^
@@ -1560,6 +1587,12 @@ GoldScout-export 5^fuft69042xbl^5
 @a^595^44:1
 @a^689^64:2,65:3
 @a^701^44:1
+@a^4127^128:1
+@a^11858^354:2
+@a^11910^356:5,376:3,396:1
+@a^11911^355:1,356:5,375:1,376:4
+@a^11912^355:6,356:2
+@a^11913^355:2,356:1
 @f^1434^0^41^175^6308:7:8,8365:4:6,21150:4:4,21151:3:5,21153:30:41^26:18,27:3,47:9,67:3,88:8
 @f^1442^0^45^183^3820:7:16,4377:1:1,6289:6:7,6308:6:9,6359:20:28,6456:2:2,6457:4:4,6458:2:2,21113:7:7,21114:4:7^172:6,192:7,213:15,214:14,234:3
 @l^0^esMX

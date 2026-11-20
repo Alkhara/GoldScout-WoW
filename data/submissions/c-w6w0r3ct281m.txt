@@ -1,4 +1,7 @@
-GoldScout-export 6^w6w0r3ct281m^6
+GoldScout-export 6^w6w0r3ct281m^7
+2009^1^0^8^8^1438^0.3759^0.6629^1^Xamã Masca-pinho^2589:1:2,4536:1:1^
+2012^1^0^9^9^1438^0.4065^0.7969^1^Desbravador Masca-pinho^159:1:1^
+2013^1^0^9^9^1438^0.4076^0.7959^1^Vingador Masca-pinho^^
 3806^1^0^29^30^1440^0.7481^0.7294^1^Renegado Infiltrado^1205:1:1^
 3807^1^0^30^30^1440^0.7480^0.7283^1^Assassino Renegado^4306:1:2^
 3809^5^0^21^22^1440^0.5252^0.4880^5^Urso do Vale Gris^2940:3:3,3730:1:1,11406:1:1,11407:1:1,211784:1:1^
@@ -11,8 +14,12 @@ GoldScout-export 6^w6w0r3ct281m^6
 4014^5^0^22^23^1442^0.5163^0.4407^5^Consorte Asaltiva^5135:1:1,5136:2:2,5808:1:1,211855:1:1,277917:2:2^
 4020^1^0^23^23^1442^0.3650^0.1715^1^Fera de Seiva^3670:1:1^
 5928^1^0^27^27^1442^0.4988^0.3599^1^Pesarasa^5137:1:1,5808:1:1,9802:1:1^
+14429^1^0^11^11^1438^0.4095^0.7935^1^Bocarranca^1179:1:1,284166:1:1^
+@i^159^Água Refrescante da Fonte
+@i^1179^Leite Gelado
 @i^1205^Suco de Melão
 @i^2453^Ervamossa
+@i^2589^Linho
 @i^2940^Pata Ensanguentada de Urso
 @i^3174^Linfa de Aranha
 @i^3669^Meleca Gelatinosa
@@ -22,6 +29,7 @@ GoldScout-export 6^w6w0r3ct281m^6
 @i^3820^Estrangulalga
 @i^3931^Presa Envenenada de Aranha
 @i^4306^Seda
+@i^4536^Maçã Vermelha Brilhante
 @i^4576^Arco Leve
 @i^5135^Garra Preta Fina
 @i^5136^Orelha Peluda Arrancada
@@ -43,8 +51,12 @@ GoldScout-export 6^w6w0r3ct281m^6
 @i^248704^Caixote Extraviado: Peças de Aprendiz
 @i^248707^Caixote Extraviado: Peças de Profissional
 @i^277917^Pacotão de Suprimentos de Torres de Pedra
+@i^284166^Cajado de Guerra Masca-pinho
+@q^159^1:0:0
+@q^1179^1:0:0
 @q^1205^1:0:0
 @q^2453^1:7:1
+@q^2589^1:7:1
 @q^2940^0:15:0
 @q^3174^1:7:1
 @q^3669^0:15:0
@@ -54,6 +66,7 @@ GoldScout-export 6^w6w0r3ct281m^6
 @q^3820^1:7:1
 @q^3931^0:15:0
 @q^4306^1:7:1
+@q^4536^1:0:0
 @q^4576^2:2:0
 @q^5135^0:15:0
 @q^5136^0:15:0
@@ -75,6 +88,8 @@ GoldScout-export 6^w6w0r3ct281m^6
 @q^248704^2:0:1
 @q^248707^2:0:1
 @q^277917^1:12:0
+@q^284166^2:2:0
+@m^1438^Teldrassil
 @m^1440^Vale Gris
 @m^1442^Cordilheira das Torres de Pedra
 @c^118^
@@ -438,6 +453,9 @@ GoldScout-export 6^w6w0r3ct281m^6
 @c^279982^
 @c^279990^
 @c^286152^
+@a^2009^267:1
+@a^2012^308:1
+@a^2013^308:1
 @a^3806^294:1
 @a^3807^294:1
 @a^3809^190:3,210:1,211:1
@@ -450,5 +468,6 @@ GoldScout-export 6^w6w0r3ct281m^6
 @a^4014^170:5
 @a^4020^67:1
 @a^5928^149:1
+@a^14429^308:1
 @f^1440^0^14^138^3820:1:1,6289:3:3,6308:1:1,21071:8:8,21113:1:1^186:5,187:9
 @l^0^ptBR
