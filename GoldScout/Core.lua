@@ -595,10 +595,28 @@ if geterrorhandler and seterrorhandler then
   end)
 end
 
+-- The protected or restricted functions GoldScout calls itself. The game
+-- reports a blocked call against the add-on whose taint it finds in the path,
+-- often not the one that caused it (Blizzard's own guild window:
+-- IsUserOAuthed(), GetGuildLinkStatus()), and the event comes after the fact,
+-- so its stack is only our event dispatcher. Only blocks of these are ours to fix.
+local OWN_ACTIONS = { "SendBrowseQuery", "RequestMoreBrowseResults", "ReplicateItems", "SetUserWaypoint",
+  "ClearUserWaypoint", "SetSuperTrackedUserWaypoint", "OpenToCategory" }
+
+local function IsOwnAction(action)
+  action = tostring(action or "")
+  for _, name in ipairs(OWN_ACTIONS) do
+    if action:find(name, 1, true) then
+      return true
+    end
+  end
+  return false
+end
+
 -- The game refused something GoldScout tried (for example a protected call
 -- in combat): that's not a Lua error, so it has to be caught separately.
 local function OnBlocked(addon, action)
-  if addon == ADDON_NAME then
+  if addon == ADDON_NAME and IsOwnAction(action) then
     ns.RecordError("Blocked action: " .. tostring(action), debugstack and debugstack(3, 12, 0) or "")
   end
 end

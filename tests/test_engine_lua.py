@@ -415,10 +415,16 @@ class ErrorLogTests(FarmRulesTests.__bases__[0]):
             self.assertIsNotNone(self.ns.UPGRADES[version], version)
 
     def test_blocked_actions_are_recorded(self):
-        self.fake.frame.scripts["OnEvent"](None, "ADDON_ACTION_BLOCKED", "GoldScout", "HideUIPanel()")
-        self.fake.frame.scripts["OnEvent"](None, "ADDON_ACTION_BLOCKED", "OtherAddon", "Foo()")
-        messages = [e.m for e in self.ns.db.errors.values()]
-        self.assertEqual(messages, ["Blocked action: HideUIPanel()"])
+        event = self.fake.frame.scripts["OnEvent"]
+        event(None, "ADDON_ACTION_BLOCKED", "GoldScout", "C_AuctionHouse.SendBrowseQuery()")
+        event(None, "ADDON_ACTION_FORBIDDEN", "GoldScout", "C_SuperTrack.SetSuperTrackedUserWaypoint()")
+        event(None, "ADDON_ACTION_BLOCKED", "OtherAddon", "C_AuctionHouse.SendBrowseQuery()")
+        # Blizzard's own windows, blamed on GoldScout's taint: nothing GoldScout calls, nothing to trace.
+        event(None, "ADDON_ACTION_BLOCKED", "GoldScout", "IsUserOAuthed()")
+        event(None, "ADDON_ACTION_BLOCKED", "GoldScout", "UNKNOWN()")
+        messages = sorted(e.m for e in self.ns.db.errors.values())
+        self.assertEqual(messages, ["Blocked action: C_AuctionHouse.SendBrowseQuery()",
+                                    "Blocked action: C_SuperTrack.SetSuperTrackedUserWaypoint()"])
 
 
 @unittest.skipIf(lua51 is None, "lupa is not installed")

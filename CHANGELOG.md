@@ -7,6 +7,8 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- **Fewer false error reports:** when the game blocks a Blizzard window's own action (the guild window, for one) and blames GoldScout, GoldScout no longer logs or reports it. Blocks of things GoldScout itself does, like scanning the auction house, still are.
+
 ## v0.12.36
 
 - **Dungeon farms are hidden unless you want them:** a new setting, **Show dungeon drops** (Settings › Farm list, or `/gscout set dungeons on`), adds farms on mobs inside dungeons and raids to the Farm list. They're off by default: you run those with a group and a lockout, so their gold per hour doesn't compare with farming on your own.
