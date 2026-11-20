@@ -1,4 +1,4 @@
-GoldScout-export 5^6pfw5ohsmbc9^9
+GoldScout-export 5^6pfw5ohsmbc9^10
 587^10^0^33^34^1434^0.3095^0.1831^10^Guerrier Bloodscalp^2592:1:2,3771:1:1,3795:1:1,3901:4:4,3915:2:2,4306:2:3,213547:1:1^
 588^22^0^34^35^1434^0.2536^0.1150^22^Eclaireur Bloodscalp^2592:1:3,2721:1:1,2734:1:1,2735:1:1,3771:1:1,3901:4:4,3915:6:6,4306:7:9,4338:1:1^
 595^17^0^34^35^1434^0.2476^0.1096^17^Chasseur Bloodscalp^2592:2:4,2742:1:1,3771:2:2,3901:4:4,3915:2:2,4306:5:9,248706:1:1,277957:1:1^
@@ -61,6 +61,7 @@ GoldScout-export 5^6pfw5ohsmbc9^9
 4151^9^0^32^33^1441^0.8661^0.6830^9^Peau de cristal du sel gemme^1701:2:2,1702:2:2,11386:2:2,262889:1:1^
 4154^10^0^30^32^1441^0.8514^0.5901^10^Charognard des Salines^729:5:5,3042:1:1,3399:3:3,5114:1:1,5115:1:1,5848:10:10,11416:3:3,12037:2:2,17056:3:3^
 4249^1^0^28^29^1441^0.6370^0.5893^1^Grogneuse Pestepoil^3402:1:1^
+4415^1^0^40^40^1445^0.5443^0.5944^1^Araignée Sombrecroc géante^4585:1:1,12205:1:1^
 5683^1^0^22^22^1437^0.5011^0.1258^1^Corma Villard^^
 6167^1^0^28^28^1442^0.3628^0.7252^1^Matriarche chimère^6840:1:1^
 6238^1^0^33^33^1413^0.6861^0.4873^1^Grand Will^^
@@ -221,7 +222,9 @@ GoldScout-export 5^6pfw5ohsmbc9^9
 @i^4569^Marteau fidèle du singe
 @i^4571^Couteau de guerre du loup
 @i^4577^Fusil compact
+@i^4585^Mandibule d'araignée visqueuse
 @i^4586^Peau lisse de raptor
+@i^4603^Jaune-queue tacheté cru
 @i^4605^Champignon à pois rouges
 @i^4606^Morilles spongieuses
 @i^4607^Délicieux humus des grottes
@@ -250,6 +253,9 @@ GoldScout-export 5^6pfw5ohsmbc9^9
 @i^6302^Aile d'insecte délicate
 @i^6308^Poisson-chat moustachu cru
 @i^6311^Poisson-chat de 22 livres
+@i^6358^Bouche-noire huileux
+@i^6359^Lutjan de nagefeu
+@i^6362^Morue rochécaille crue
 @i^6396^Plastron blasonné
 @i^6410^Brassards à insigne
 @i^6438^Bracelet élémentaire terne
@@ -286,6 +292,8 @@ GoldScout-export 5^6pfw5ohsmbc9^9
 @i^15933^Branche simple de l'aigle
 @i^16190^Cadavre de Déchiqueteuse Rougefurie
 @i^16654^Manuel d'utilisation du Déchiqueteur - Page 10
+@i^16969^Sailfin bleu de la Côte sauvage
+@i^16970^Mahi Mahi de Brumejonc
 @i^17056^Plume légère
 @i^17058^Huile de poisson
 @i^19937^Petite griffe de scorpide
@@ -424,7 +432,9 @@ GoldScout-export 5^6pfw5ohsmbc9^9
 @q^4569^2:2:0
 @q^4571^2:2:0
 @q^4577^2:2:0
+@q^4585^0:15:0
 @q^4586^0:15:0
+@q^4603^1:7:1
 @q^4605^1:0:0
 @q^4606^1:0:0
 @q^4607^1:0:0
@@ -453,6 +463,9 @@ GoldScout-export 5^6pfw5ohsmbc9^9
 @q^6302^0:15:0
 @q^6308^1:7:1
 @q^6311^1:15:0
+@q^6358^1:7:1
+@q^6359^1:7:1
+@q^6362^1:7:1
 @q^6396^2:4:0
 @q^6410^2:4:0
 @q^6438^0:15:0
@@ -489,6 +502,8 @@ GoldScout-export 5^6pfw5ohsmbc9^9
 @q^15933^2:4:0
 @q^16190^1:12:0
 @q^16654^1:12:0
+@q^16969^1:12:0
+@q^16970^1:12:0
 @q^17056^1:15:1
 @q^17058^1:15:0
 @q^19937^0:15:0
@@ -529,10 +544,12 @@ GoldScout-export 5^6pfw5ohsmbc9^9
 @m^1424^Contreforts de Hautebrande
 @m^1431^Bois de la Pénombre
 @m^1434^Vallée de Strangleronce
+@m^1435^Marais des Chagrins
 @m^1437^Les Paluns
 @m^1440^Orneval
 @m^1441^Mille pointes
 @m^1442^Les Serres-Rocheuses
+@m^1445^Marécage d'Âprefange
 @c^118^
 @c^724^
 @c^733^
@@ -1286,6 +1303,7 @@ GoldScout-export 5^6pfw5ohsmbc9^9
 @a^4151^237:2,256:1,257:2,316:1,317:2,337:1
 @a^4154^236:7,257:1,277:2
 @a^4249^232:1
+@a^4415^230:1
 @a^5683^50:1
 @a^6167^287:1
 @a^6238^193:1
@@ -1294,5 +1312,7 @@ GoldScout-export 5^6pfw5ohsmbc9^9
 @a^262397^84:1,104:1
 @a^269175^106:3,126:2
 @f^1421^0^38^225^6289:15:15,6291:7:7,6297:8:8,6299:4:4,6308:4:4^173:38
-@f^1434^0^51^225^3820:1:3,6308:13:13,6311:1:1,8365:29:29,21150:2:2,21153:5:5^26:3,48:5,126:43
+@f^1434^0^56^225^3820:1:3,6308:13:13,6311:1:1,6358:1:1,6359:1:1,6362:2:2,8365:30:30,16969:1:1,21150:2:2,21153:5:5^26:3,48:5,106:1,126:47
+@f^1435^0^9^225^4603:1:1,6358:2:2,6359:1:1,6362:5:5,16970:1:1^199:9
+@f^1445^0^3^225^4603:1:1,6358:1:1,6362:1:1^251:3
 @l^0^frFR

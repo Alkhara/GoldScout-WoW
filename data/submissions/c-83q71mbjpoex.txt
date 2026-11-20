@@ -1,4 +1,4 @@
-GoldScout-export 5^83q71mbjpoex^27
+GoldScout-export 6^83q71mbjpoex^28
 767^1^0^37^37^1435^0.1624^0.5567^1^Swamp Jaguar^1688:1:1^
 768^1^0^39^39^1435^0.8975^0.7100^1^Shadow Panther^^
 1501^1^0^1^1^1420^0.3222^0.6559^1^Mindless Zombie^^
@@ -69,6 +69,9 @@ GoldScout-export 5^83q71mbjpoex^27
 3382^1^0^13^13^1413^0.6449^0.4705^1^Southsea Cannoneer^^
 3424^1^0^20^22^1413^0.4532^0.6693^1^Thunderhawk Cloudscraper^6444:1:1^
 3560^11^0^33^34^1417^0.6124^0.6423^11^Healing Ward^^
+3799^1^0^29^29^1440^0.7688^0.7605^1^Severed Druid^^
+3801^2^0^28^29^1440^0.7616^0.7549^2^Severed Sleeper^2592:1:1^
+3803^2^0^29^30^1440^0.7580^0.7497^2^Severed Keeper^^
 3851^3^0^0^0^0^0.0000^0.0000^0^^2078:1:1^
 3855^2^0^0^0^0^0.0000^0.0000^0^^14166:1:1^
 3857^1^0^0^0^0^0.0000^0.0000^0^^1774:1:1^
@@ -82,6 +85,10 @@ GoldScout-export 5^83q71mbjpoex^27
 3887^1^0^0^0^0^0.0000^0.0000^0^^6321:1:1^
 3914^1^0^0^0^0^0.0000^0.0000^0^^5254:1:1^
 3927^1^0^0^0^0^0.0000^0.0000^0^^6314:1:1^
+3928^2^0^20^22^1440^0.7676^0.7331^2^Rotting Slime^3670:1:1^
+3942^1^0^32^32^1440^0.7504^0.7412^1^Mavoris Cloudsbreak^2592:1:1^
+3989^1^0^18^19^1442^0.7234^0.5179^1^Venture Co. Logger^2592:1:2^
+4007^1^0^17^18^1442^0.6191^0.6376^1^Deepmoss Venomspitter^3931:1:1^
 4113^2^0^28^29^1441^0.6067^0.5943^2^Gravelsnout Digger^4306:1:1,4538:1:1^
 4114^1^0^28^28^1441^0.5994^0.5874^1^Gravelsnout Forager^^
 4116^1^0^30^30^1441^0.5878^0.5804^1^Gravelsnout Surveyor^^
@@ -156,6 +163,7 @@ GoldScout-export 5^83q71mbjpoex^27
 7603^18^0^0^0^0^0.0000^0.0000^0^^929:1:1,2592:1:2,4299:1:1,4306:5:8,4542:2:2,4633:1:1^
 7800^2^0^0^0^0^0.0000^0.0000^0^^7407:1:1,9299:1:1,9461:1:1,9492:1:1,9850:1:1^
 11578^3^0^32^34^1443^0.5046^0.9266^3^Whirlwind Shredder^7069:1:1^
+12856^1^0^23^23^1440^0.7619^0.7332^1^Ashenvale Outrunner^1801:1:1^
 218029^1^0^35^35^1417^0.6926^0.8264^1^Witherbark Champion^^
 218032^1^0^35^35^1417^0.6965^0.8210^1^Witherbark Goliath^253711:1:1^
 245999^1^0^0^0^0^0.0000^0.0000^0^^^
@@ -235,6 +243,7 @@ GoldScout-export 5^83q71mbjpoex^27
 @i^1780^Cross-stitched Sandals
 @i^1786^Cross-stitched Vest
 @i^1800^Rawhide Pants
+@i^1801^Rawhide Shoulderpads
 @i^1806^Tough Cloak
 @i^1810^Tough Leather Armor
 @i^1813^Chipped Quarterstaff
@@ -276,6 +285,7 @@ GoldScout-export 5^83q71mbjpoex^27
 @i^3476^Gray Bear Tongue
 @i^3477^Creeper Ichor
 @i^3496^Mountain Lion Blood
+@i^3670^Large Slimy Bone
 @i^3671^Lifeless Skull
 @i^3674^Decomposed Boot
 @i^3685^Raptor Egg
@@ -475,6 +485,7 @@ GoldScout-export 5^83q71mbjpoex^27
 @q^1780^0:4:0
 @q^1786^0:4:0
 @q^1800^0:4:0
+@q^1801^0:4:0
 @q^1806^0:4:0
 @q^1810^0:4:0
 @q^1813^0:2:0
@@ -516,6 +527,7 @@ GoldScout-export 5^83q71mbjpoex^27
 @q^3476^1:12:0
 @q^3477^1:12:0
 @q^3496^1:12:0
+@q^3670^0:15:0
 @q^3671^0:15:0
 @q^3674^0:15:0
 @q^3685^1:7:1
@@ -689,7 +701,9 @@ GoldScout-export 5^83q71mbjpoex^27
 @m^1424^Hillsbrad Foothills
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
+@m^1440^Ashenvale
 @m^1441^Thousand Needles
+@m^1442^Stonetalon Mountains
 @m^1443^Desolace
 @m^1444^Feralas
 @m^1445^Dustwallow Marsh
@@ -2050,6 +2064,13 @@ GoldScout-export 5^83q71mbjpoex^27
 @a^3382^192:1
 @a^3424^269:1
 @a^3560^186:2,253:3,293:5,294:1
+@a^3799^315:1
+@a^3801^315:2
+@a^3803^295:1,315:1
+@a^3928^295:2
+@a^3942^295:1
+@a^3989^214:1
+@a^4007^252:1
 @a^4113^231:1,252:1
 @a^4114^231:1
 @a^4116^231:1
@@ -2073,6 +2094,7 @@ GoldScout-export 5^83q71mbjpoex^27
 @a^6240^193:7
 @a^6466^270:1
 @a^11578^369:1,370:2
+@a^12856^295:1
 @a^218029^333:1
 @a^218032^333:1
 @a^270094^231:1

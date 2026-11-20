@@ -1,4 +1,5 @@
-GoldScout-export 5^4d6x5dtla4se^19
+GoldScout-export 5^4d6x5dtla4se^21
+1512^3^0^1^2^1420^0.2981^0.6889^3^Duskbat^1367:1:1,1378:1:1,4865:1:1,7073:2:2^
 2240^1^0^33^33^1416^0.4703^0.8280^1^Syndicate Footpad^^
 2241^1^0^34^34^1416^0.4605^0.8083^1^Syndicate Thief^3601:1:1^
 2248^15^0^30^31^1424^0.4603^0.2952^15^Cave Yeti^3708:1:1,211853:1:1^
@@ -13,7 +14,8 @@ GoldScout-export 5^4d6x5dtla4se^19
 2271^28^0^31^32^1416^0.1957^0.8939^28^Dalaran Shield Guard^1707:2:2,1708:2:2,1710:1:1,3714:8:8,3794:1:1,3795:1:1,4306:8:12,213547:1:1,248690:1:1^
 2272^3^0^32^33^1416^0.1795^0.8964^2^Dalaran Theurgist^3714:1:1,4306:1:1^
 2305^1^0^30^30^1424^0.3083^0.5666^1^Foreman Bonds^2592:1:2^
-2349^1^0^25^25^1424^0.2939^0.5760^1^Giant Moss Creeper^1081:1:1^
+2349^1^0^24^25^1424^0.2939^0.5760^1^Giant Moss Creeper^1081:1:1^
+2356^1^0^26^26^1424^0.6770^0.6231^1^Elder Gray Bear^2940:1:1,11407:1:1^
 2360^9^0^22^23^1424^0.3216^0.3857^9^Hillsbrad Farmhand^422:1:1,1824:1:1,2589:1:1,2592:4:7^
 2372^1^0^27^27^1424^0.6407^0.6071^1^Mudsnout Gnoll^4306:1:1,6387:1:1^
 2373^2^0^27^27^1424^0.6433^0.6090^2^Mudsnout Shaman^3770:1:1^
@@ -167,6 +169,8 @@ GoldScout-export 5^4d6x5dtla4se^19
 @i^1181^Scroll of Spirit
 @i^1205^Melon Juice
 @i^1206^Moss Agate
+@i^1367^Ragged Leather Boots
+@i^1378^Frayed Pants
 @i^1418^Worn Leather Belt
 @i^1431^Patchwork Pants
 @i^1475^Small Venom Sac
@@ -271,6 +275,7 @@ GoldScout-export 5^4d6x5dtla4se^19
 @i^4807^Swoop Gizzard
 @i^4813^Small Leather Collar
 @i^4814^Discolored Fang
+@i^4865^Ruined Pelt
 @i^5025^Hezrul's Head
 @i^5030^Centaur Bracers
 @i^5072^Lok's Skull
@@ -316,6 +321,7 @@ GoldScout-export 5^4d6x5dtla4se^19
 @i^6530^Nightcrawlers
 @i^6826^Brilliant Scale
 @i^6889^Small Egg
+@i^7073^Broken Fang
 @i^7096^Plucked Feather
 @i^7097^Leg Meat
 @i^8180^Hunting Bow
@@ -378,6 +384,8 @@ GoldScout-export 5^4d6x5dtla4se^19
 @q^1181^1:0:0
 @q^1205^1:0:0
 @q^1206^2:7:1
+@q^1367^0:4:0
+@q^1378^0:4:0
 @q^1418^0:4:0
 @q^1431^0:4:0
 @q^1475^1:7:1
@@ -482,6 +490,7 @@ GoldScout-export 5^4d6x5dtla4se^19
 @q^4807^1:12:0
 @q^4813^0:15:0
 @q^4814^0:15:0
+@q^4865^0:15:0
 @q^5025^1:12:0
 @q^5030^1:12:0
 @q^5072^1:12:0
@@ -527,6 +536,7 @@ GoldScout-export 5^4d6x5dtla4se^19
 @q^6530^1:0:0
 @q^6826^0:15:0
 @q^6889^1:7:1
+@q^7073^0:15:0
 @q^7096^0:15:0
 @q^7097^1:0:0
 @q^8180^2:2:0
@@ -579,6 +589,7 @@ GoldScout-export 5^4d6x5dtla4se^19
 @m^1413^The Barrens
 @m^1414^Kalimdor
 @m^1416^Alterac Mountains
+@m^1420^Tirisfal Glades
 @m^1424^Hillsbrad Foothills
 @m^1440^Ashenvale
 @m^1442^Stonetalon Mountains
@@ -1813,6 +1824,7 @@ GoldScout-export 5^4d6x5dtla4se^19
 @c^285280^
 @c^285281^
 @c^286152^
+@a^1512^265:2,266:1
 @a^2240^329:1
 @a^2241^329:1
 @a^2248^108:5,109:2,129:8
@@ -1828,6 +1840,7 @@ GoldScout-export 5^4d6x5dtla4se^19
 @a^2272^343:1,363:1
 @a^2305^226:1
 @a^2349^225:1
+@a^2356^253:1
 @a^2360^146:7,167:2
 @a^2372^252:1
 @a^2373^252:1,253:1
