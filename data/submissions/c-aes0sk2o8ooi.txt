@@ -1,10 +1,18 @@
-GoldScout-export 5^aes0sk2o8ooi^7
+GoldScout-export 6^aes0sk2o8ooi^9
+5292^7^0^43^44^1444^0.5324^0.5675^7^Feral Scar Yeti^8973:1:1^
+5293^14^0^45^46^1444^0.5201^0.5957^14^Hulking Feral Scar^4599:1:1,8750:1:1,8973:4:4^
+5295^12^0^44^45^1444^0.5185^0.5911^12^Enraged Feral Scar^1645:1:1,8146:1:1,8973:3:3,213544:1:1^
 5331^12^0^42^43^1444^0.2681^0.5300^12^Hatecrest Warrior^3939:1:1,7973:2:2,9247:4:4,17058:4:4^
 5332^5^0^41^42^1444^0.2629^0.5440^5^Hatecrest Wave Rider^4603:1:1,9247:1:1,17058:3:3^
 5333^2^0^44^45^1444^0.2784^0.6994^2^Hatecrest Serpent Guard^7973:2:2^
 5335^11^0^41^42^1444^0.2735^0.5255^11^Hatecrest Screamer^7973:2:2,9247:3:3,17058:3:3^
 5336^3^0^44^44^1444^0.2805^0.7021^3^Hatecrest Sorceress^7973:1:1^
 5337^4^0^42^43^1444^0.2675^0.5436^4^Hatecrest Siren^1645:1:1,4421:1:1,9247:2:2,17058:1:1^
+5359^5^0^48^49^1444^0.4682^0.5987^5^Zapped Shore Strider^4338:3:8,4603:1:3,7973:4:4,18956:5:5^
+5360^3^0^47^49^1444^0.4537^0.6248^3^Zapped Deep Strider^4338:1:1,7973:1:1,18956:3:3^
+5361^7^0^47^48^1444^0.4631^0.5966^7^Zapped Wave Strider^4020:1:1,4338:2:4,7973:2:2,18956:7:7^
+5461^12^0^48^49^1444^0.4617^0.5689^12^Sea Elemental^4791:3:9,7070:1:1,7079:2:2,18958:3:3^
+5462^11^0^47^48^1444^0.4620^0.5642^11^Sea Spray^4791:5:16,18958:6:6^
 5833^1^0^48^48^1427^0.7349^0.7578^1^Margol the Rager^5128:1:1,10000:1:1^
 5839^5^0^43^44^1427^0.6404^0.5416^5^Dark Iron Geologist^3864:1:1,4338:1:1^
 5843^2^0^45^47^1427^0.4219^0.2462^2^Slave Worker^^
@@ -26,6 +34,7 @@ GoldScout-export 5^aes0sk2o8ooi^7
 @i^3939^Crochet Cloak
 @i^3975^Smooth Leather Shoulderpads
 @i^4018^Whetted Claymore
+@i^4020^Splintering Battle Axe
 @i^4021^Blunting Mace
 @i^4306^Silk Cloth
 @i^4337^Thick Spider's Silk
@@ -34,14 +43,21 @@ GoldScout-export 5^aes0sk2o8ooi^7
 @i^4552^Smooth Stone Chip
 @i^4554^Shiny Polished Stone
 @i^4585^Dripping Spider Mandible
+@i^4599^Cured Ham Steak
 @i^4602^Moon Harvest Pumpkin
 @i^4603^Raw Spotted Yellowtail
+@i^4791^Enchanted Water
 @i^5128^Shed Lizard Skin
+@i^7070^Elemental Water
+@i^7079^Globe of Water
 @i^7527^Cabalist Chestpiece of the Tiger
 @i^7909^Aquamarine
 @i^7912^Solid Stone
 @i^7973^Big-mouth Clam
+@i^8146^Wicked Claw
 @i^8150^Deeprock Salt
+@i^8750^Thick Leather Hat
+@i^8973^Thick Yeti Hide
 @i^9247^Hatecrest Naga Scale
 @i^9248^Mysterious Relic
 @i^10000^Margol's Horn
@@ -55,12 +71,16 @@ GoldScout-export 5^aes0sk2o8ooi^7
 @i^15244^Razor Blade of Spirit
 @i^15263^Royal Mallet of the Eagle
 @i^17058^Fish Oil
+@i^18956^Miniaturization Residue
+@i^18958^Water Elemental Core
+@i^213544^Scroll: TOPAZ YORAK
 @i^262890^Sealed Artisan's Writ
 @q^1645^1:0:0
 @q^3864^2:7:1
 @q^3939^0:4:0
 @q^3975^0:4:0
 @q^4018^0:2:0
+@q^4020^0:2:0
 @q^4021^0:2:0
 @q^4306^1:7:1
 @q^4337^1:7:1
@@ -69,14 +89,21 @@ GoldScout-export 5^aes0sk2o8ooi^7
 @q^4552^0:15:0
 @q^4554^0:15:0
 @q^4585^0:15:0
+@q^4599^1:0:0
 @q^4602^1:0:0
 @q^4603^1:7:1
+@q^4791^1:0:0
 @q^5128^0:15:0
+@q^7070^1:7:1
+@q^7079^1:7:1
 @q^7527^2:4:0
 @q^7909^2:7:1
 @q^7912^1:7:1
 @q^7973^1:7:0
+@q^8146^1:7:1
 @q^8150^1:7:1
+@q^8750^0:4:0
+@q^8973^1:12:0
 @q^9247^1:12:0
 @q^9248^1:12:0
 @q^10000^1:12:0
@@ -90,6 +117,9 @@ GoldScout-export 5^aes0sk2o8ooi^7
 @q^15244^2:2:0
 @q^15263^2:2:0
 @q^17058^1:15:0
+@q^18956^1:12:0
+@q^18958^1:12:0
+@q^213544^1:0:0
 @q^262890^3:0:0
 @m^1427^Searing Gorge
 @m^1444^Feralas
@@ -617,12 +647,20 @@ GoldScout-export 5^aes0sk2o8ooi^7
 @c^285279^
 @c^285280^
 @c^285281^
+@a^5292^230:6,231:1
+@a^5293^230:9,250:5
+@a^5295^230:8,250:4
 @a^5331^205:12
 @a^5332^205:4,225:1
 @a^5333^265:1,285:1
 @a^5335^205:11
 @a^5336^265:1,285:2
 @a^5337^205:3,225:1
+@a^5359^229:2,249:3
+@a^5360^229:1,248:1,268:1
+@a^5361^229:5,249:2
+@a^5461^188:1,209:3,229:5,249:1,269:2
+@a^5462^188:1,209:2,229:7,269:1
 @a^5833^314:1
 @a^5839^133:1,232:3,252:1
 @a^5843^88:1,108:1

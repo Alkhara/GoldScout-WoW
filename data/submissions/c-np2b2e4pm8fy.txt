@@ -1,30 +1,51 @@
-GoldScout-export 6^np2b2e4pm8fy^3
+GoldScout-export 6^np2b2e4pm8fy^4
+251245^1^0^6^6^2521^0.5093^0.6563^1^Prideclaw^252671:1:1^
 251707^1^0^8^9^2521^0.5448^0.7020^1^Ornery Galestrider^4776:1:1^
 253195^4^0^8^9^2521^0.6288^0.6572^4^Al'Aketh Preacher^1414:1:1,1423:1:1,2589:1:1,3013:1:1,3189:1:1,252030:1:1,252031:1:1,255663:1:1^
+253282^5^0^8^9^2521^0.5170^0.6617^5^Shriekling Fledgling^1415:1:1,3299:1:1,3300:4:4^
+253283^1^0^9^9^2521^0.5201^0.6559^1^Shriekling Matriarch^3300:1:1,257107:1:1^
 253511^2^0^8^8^2521^0.6324^0.6538^2^Al'Aketh Pillager^2589:1:1,252022:1:2,252030:1:1^
-254626^3^0^9^10^2521^0.5527^0.6101^3^Al'Aketh Assassin^2589:1:2,252022:2:4,267474:1:2^
+254626^12^0^9^10^2521^0.5544^0.5996^12^Al'Aketh Assassin^1181:2:2,1417:1:1,1425:1:1,2589:4:8,252022:3:5,252028:2:3,252030:2:4,252031:1:2,255663:1:1,267474:1:2^
 268602^1^0^10^10^2521^0.6441^0.6378^1^Skypriest Faladiel^^
+@i^1181^Scroll of Spirit
 @i^1414^Cracked Sledge
+@i^1415^Carpenter's Mallet
+@i^1417^Beaten Battle Axe
 @i^1423^Worn Leather Pants
+@i^1425^Worn Leather Vest
 @i^2589^Linen Cloth
 @i^3013^Scroll of Protection
 @i^3189^Wood Chopper
+@i^3299^Fractured Canine
+@i^3300^Rabbit's Foot
 @i^4776^Ruffled Feather
 @i^252022^Galestrider Jerky
+@i^252028^Fresh Gustberry Bread
 @i^252030^Pungent Skycheddar
 @i^252031^Crisp Spring Water
+@i^252671^Hoarder's Foot
 @i^255663^Windstone
+@i^257107^Shriekling Matriarch's Head
 @i^267474^Galeswept Forestshroom
+@q^1181^1:0:0
 @q^1414^0:2:0
+@q^1415^0:2:0
+@q^1417^0:2:0
 @q^1423^0:4:0
+@q^1425^0:4:0
 @q^2589^1:7:1
 @q^3013^1:0:0
 @q^3189^1:2:0
+@q^3299^0:15:0
+@q^3300^0:15:0
 @q^4776^0:15:0
 @q^252022^1:0:0
+@q^252028^1:0:0
 @q^252030^1:0:0
 @q^252031^1:0:0
+@q^252671^0:15:0
 @q^255663^1:0:0
+@q^257107^1:12:0
 @q^267474^1:0:0
 @m^2521^Zephras Isle
 @c^118^
@@ -391,9 +412,12 @@ GoldScout-export 6^np2b2e4pm8fy^3
 @c^279982^
 @c^279990^
 @c^286152^
+@a^251245^270:1
 @a^251707^290:1
 @a^253195^252:2,272:2
+@a^253282^250:1,270:4
+@a^253283^270:1
 @a^253511^272:2
-@a^254626^251:3
+@a^254626^231:6,250:2,251:4
 @a^268602^252:1
 @l^0^enUS
