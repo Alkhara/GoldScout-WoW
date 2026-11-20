@@ -1,4 +1,4 @@
-GoldScout-export 5^ao61eb9qvsir^12
+GoldScout-export 5^ao61eb9qvsir^13
 2265^7^0^24^25^1424^0.3268^0.4636^7^Hillsbrad Apprentice Blacksmith^422:1:1,1205:2:2,1748:1:1,2589:1:3,2592:2:4^
 2266^3^0^23^24^1424^0.3391^0.4560^3^Hillsbrad Farmer^1210:1:1,2592:1:2,3385:1:1,3692:1:1,4306:1:1,4538:1:1^
 2267^8^0^24^25^1424^0.3363^0.4485^8^Hillsbrad Peasant^422:1:1,2592:1:1,3692:3:3,15223:1:1^
@@ -162,6 +162,7 @@ GoldScout-export 5^ao61eb9qvsir^12
 @i^3730^Big Bear Meat
 @i^3731^Lion Meat
 @i^3770^Mutton Chop
+@i^3820^Stranglekelp
 @i^4297^Pattern: Barbaric Gloves
 @i^4306^Silk Cloth
 @i^4538^Snapvine Watermelon
@@ -198,6 +199,7 @@ GoldScout-export 5^ao61eb9qvsir^12
 @i^5867^Etched Phial
 @i^5871^Large Hoof
 @i^5881^Head of Kelris
+@i^6289^Raw Longjaw Mud Snapper
 @i^6308^Raw Bristle Whisker Catfish
 @i^6375^Formula: Enchant Bracer - Lesser Spirit
 @i^6444^Forked Tongue
@@ -236,6 +238,9 @@ GoldScout-export 5^ao61eb9qvsir^12
 @i^16790^Damp Note
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
+@i^21071^Raw Sagefish
+@i^21113^Watertight Trunk
+@i^21114^Rumsey Rum Dark
 @i^211853^Scroll: VOCE WELL
 @i^248687^Waylaid Crate: Journeyman Ore
 @i^248689^Waylaid Crate: Journeyman Curiosities
@@ -291,6 +296,7 @@ GoldScout-export 5^ao61eb9qvsir^12
 @q^3730^1:7:1
 @q^3731^1:7:1
 @q^3770^1:0:0
+@q^3820^1:7:1
 @q^4297^2:9:0
 @q^4306^1:7:1
 @q^4538^1:0:0
@@ -327,6 +333,7 @@ GoldScout-export 5^ao61eb9qvsir^12
 @q^5867^1:12:0
 @q^5871^0:15:0
 @q^5881^1:12:0
+@q^6289^1:7:1
 @q^6308^1:7:1
 @q^6375^2:9:0
 @q^6444^0:15:0
@@ -365,6 +372,9 @@ GoldScout-export 5^ao61eb9qvsir^12
 @q^16790^1:15:0
 @q^17056^1:15:1
 @q^17057^1:15:0
+@q^21071^1:7:1
+@q^21113^1:15:0
+@q^21114^1:0:0
 @q^211853^1:0:0
 @q^248687^1:0:1
 @q^248689^1:0:1
@@ -1383,4 +1393,5 @@ GoldScout-export 5^ao61eb9qvsir^12
 @a^12856^275:2,294:4,295:3
 @a^12860^312:1
 @a^12897^312:3
+@f^1424^0^45^186^3820:1:3,6289:1:1,21071:37:37,21113:4:4,21114:2:4^113:12,132:7,153:6,172:10,191:9,231:1
 @l^0^enUS

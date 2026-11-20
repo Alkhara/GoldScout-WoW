@@ -1,4 +1,4 @@
-GoldScout-export 6^m2kihidx2y4p^10
+GoldScout-export 6^m2kihidx2y4p^12
 588^10^0^34^35^1434^0.2454^0.1232^10^Bloodscalp Scout^2592:1:1,2732:1:1,4306:3:5,13045:1:1,277957:1:1^
 595^15^0^34^35^1434^0.2410^0.1195^15^Bloodscalp Hunter^2592:1:3,2734:1:1,4306:7:10,7460:1:1,8188:1:1,9845:1:1,213545:1:1^
 597^15^0^36^37^1434^0.2451^0.0967^15^Bloodscalp Berserker^2745:1:1,2749:1:1,2751:1:1,4306:3:3,4338:2:2,213547:1:1,248690:1:1^
@@ -25,9 +25,27 @@ GoldScout-export 6^m2kihidx2y4p^10
 1152^3^0^36^36^1434^0.4226^0.1638^3^Snapjaw Crocolisk^3667:2:2,12037:1:1,213543:1:1^
 3560^5^0^37^37^1434^0.2448^0.0970^5^Healing Ward^^
 3801^1^0^28^28^1440^0.7623^0.7507^1^Severed Sleeper^^
+3974^1^0^0^0^0^0.0000^0.0000^0^^7710:1:1,253978:1:1^
+4281^1^0^29^30^1420^0.8297^0.3386^1^Scarlet Scout^2786:1:1,4306:1:4,5805:1:1,248688:1:1^
+4283^1^0^31^31^0^0.0000^0.0000^0^Scarlet Sentry^5805:1:1,215375:1:1^
+4287^11^0^0^0^0^0.0000^0.0000^0^^1707:1:1,4306:2:6,5805:8:8,213543:1:1^
+4291^4^0^0^0^0^0.0000^0.0000^0^^2592:1:1,5805:3:3,213544:1:1^
+4293^1^0^0^0^0^0.0000^0.0000^0^^5805:1:1^
+4296^1^0^0^0^0^0.0000^0.0000^0^^5805:1:1^
+4299^3^0^0^0^0^0.0000^0.0000^0^^1529:1:1,3814:1:1,4306:1:1^
+4304^1^0^0^0^0^0.0000^0.0000^0^^3402:1:1^
+4306^2^0^0^0^0^0.0000^0.0000^0^^5805:2:2^
+4308^1^0^0^0^0^0.0000^0.0000^0^^^
 4457^1^0^35^35^1434^0.3755^0.2254^1^Murkgill Forager^^
 4499^1^0^30^30^1441^0.1843^0.3829^1^Rok'Alim the Pounder^4784:1:1,5741:1:1,5844:1:1^
+4540^4^0^0^0^0^0.0000^0.0000^0^^5805:3:3^
+4543^1^0^0^0^0^0.0000^0.0000^0^^274291:1:1^
+6426^1^0^0^0^0^0.0000^0.0000^0^^1708:1:1,4306:1:1^
+6427^1^0^0^0^0^0.0000^0.0000^0^^^
+6487^1^0^0^0^0^0.0000^0.0000^0^^7714:1:1,274294:1:1^
+6490^1^0^0^0^0^0.0000^0.0000^0^^7708:1:1^
 @i^770^Pointy Crocolisk Tooth
+@i^1529^Jade
 @i^1532^Shrunken Head
 @i^1630^Broken Electro-lantern
 @i^1686^Bristly Whisker
@@ -35,6 +53,7 @@ GoldScout-export 6^m2kihidx2y4p^10
 @i^1696^Curved Raptor Talon
 @i^1701^Curved Basilisk Claw
 @i^1702^Intact Basilisk Spine
+@i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
 @i^2592^Wool Cloth
@@ -47,11 +66,14 @@ GoldScout-export 6^m2kihidx2y4p^10
 @i^2745^Green Hills of Stranglethorn - Page 21
 @i^2749^Green Hills of Stranglethorn - Page 25
 @i^2751^Green Hills of Stranglethorn - Page 27
+@i^2786^Oiled Blunderbuss
+@i^3402^Soft Patch of Fur
 @i^3667^Tender Crocolisk Meat
 @i^3685^Raptor Egg
 @i^3771^Wild Hog Shank
 @i^3778^Taut Compound Bow
 @i^3781^Broad Claymore
+@i^3814^Double Mail Shoulderpads
 @i^3879^Paw of Sin'Dall
 @i^3918^Singing Crystal Shard
 @i^4043^Aurora Bracers
@@ -65,8 +87,12 @@ GoldScout-export 6^m2kihidx2y4p^10
 @i^4784^Lifeless Stone
 @i^5637^Large Fang
 @i^5741^Rock Chip
+@i^5805^Heart of Zeal
 @i^5844^Fragments of Rok'Alim
 @i^7460^Knight's Cloak of the Bandit
+@i^7708^Necrotic Wand
+@i^7710^Loksey's Training Stick
+@i^7714^Hypnotic Blade
 @i^8188^Explosive Shotgun
 @i^9845^Conjurer's Shoes of the Sorcerer
 @i^9863^Archer's Shoulderpads of the Bandit
@@ -77,12 +103,19 @@ GoldScout-export 6^m2kihidx2y4p^10
 @i^13045^Viscous Hammer
 @i^211853^Scroll: VOCE WELL
 @i^213543^Scroll: UPDOG
+@i^213544^Scroll: TOPAZ YORAK
 @i^213545^Scroll: PEATCHY ATTAX
 @i^213546^Scroll: SHOOBEEDOOP
 @i^213547^Scroll: THAW WORDS
+@i^215375^Tactician's Staff
+@i^248688^Waylaid Crate: Journeyman Textiles
 @i^248690^Waylaid Crate: Earthly Expert Herbs
+@i^253978^Pattern: Filigreed Silky Circlet
+@i^274291^Polished Skullcap
+@i^274294^Library Walkers
 @i^277957^Primitive Key
 @q^770^0:15:0
+@q^1529^2:7:1
 @q^1532^1:12:0
 @q^1630^0:15:0
 @q^1686^0:15:0
@@ -90,6 +123,7 @@ GoldScout-export 6^m2kihidx2y4p^10
 @q^1696^0:15:0
 @q^1701^0:15:0
 @q^1702^0:15:0
+@q^1707^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
 @q^2592^1:7:1
@@ -102,11 +136,14 @@ GoldScout-export 6^m2kihidx2y4p^10
 @q^2745^1:12:0
 @q^2749^1:12:0
 @q^2751^1:12:0
+@q^2786^0:2:0
+@q^3402^0:15:0
 @q^3667^1:7:1
 @q^3685^1:7:1
 @q^3771^1:0:0
 @q^3778^0:2:0
 @q^3781^0:2:0
+@q^3814^0:4:0
 @q^3879^1:12:0
 @q^3918^1:12:0
 @q^4043^2:4:0
@@ -120,8 +157,12 @@ GoldScout-export 6^m2kihidx2y4p^10
 @q^4784^0:15:0
 @q^5637^1:7:1
 @q^5741^0:15:0
+@q^5805^1:12:0
 @q^5844^1:12:0
 @q^7460^2:4:0
+@q^7708^3:2:0
+@q^7710^3:2:0
+@q^7714^3:2:0
 @q^8188^2:2:0
 @q^9845^2:4:0
 @q^9863^2:4:0
@@ -132,11 +173,18 @@ GoldScout-export 6^m2kihidx2y4p^10
 @q^13045^3:2:0
 @q^211853^1:0:0
 @q^213543^1:0:0
+@q^213544^1:0:0
 @q^213545^1:0:0
 @q^213546^1:0:0
 @q^213547^1:0:0
+@q^215375^1:2:0
+@q^248688^1:0:1
 @q^248690^1:0:1
+@q^253978^3:9:0
+@q^274291^3:4:0
+@q^274294^2:4:0
 @q^277957^1:12:0
+@m^1420^Tirisfal Glades
 @m^1434^Stranglethorn Vale
 @m^1440^Ashenvale
 @m^1441^Thousand Needles
@@ -718,6 +766,7 @@ GoldScout-export 6^m2kihidx2y4p^10
 @a^1152^68:3
 @a^3560^24:3,44:2
 @a^3801^315:1
+@a^4281^136:1
 @a^4457^87:1
 @a^4499^143:1
 @l^0^enUS

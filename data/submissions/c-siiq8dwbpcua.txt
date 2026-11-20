@@ -1,4 +1,4 @@
-GoldScout-export 5^siiq8dwbpcua^7
+GoldScout-export 5^siiq8dwbpcua^8
 95^25^0^11^12^1436^0.4804^0.4373^25^Defias Smuggler^414:1:1,829:7:7,1179:2:2,2589:9:22^
 114^37^0^14^15^1436^0.4522^0.3286^37^Harvest Watcher^732:9:9,814:12:12,1274:12:12,1495:1:1,1511:2:2,1513:1:1,1516:1:1,2763:1:1,4359:2:2,4361:2:2,6539:1:1,255007:14:14,255010:5:5^
 126^9^0^12^13^1436^0.5557^0.0838^9^Murloc Coastrunner^730:4:4,1495:1:1,3013:1:1,5523:3:3,6518:1:1,254548:1:1^
@@ -14,6 +14,14 @@ GoldScout-export 5^siiq8dwbpcua^7
 2185^11^0^12^14^1439^0.3341^0.5006^11^Darkshore Thresher^2608:4:4,5071:1:1,5412:3:3,5523:1:1,6361:1:2,15015:1:1^
 2231^10^0^9^10^1439^0.3543^0.4885^10^Pygmy Tide Crawler^2674:2:2,2675:4:4,5385:2:2,5506:1:1,5523:2:2,15005:1:1^
 2234^10^0^10^11^1439^0.3608^0.5441^10^Young Reef Crawler^2674:5:5,2675:3:3,4672:1:1,4874:2:2,5385:4:4,5506:3:3,5523:3:3^
+261306^1^0^0^0^0^0.0000^0.0000^0^^271096:1:1^
+261319^1^0^0^0^0^0.0000^0.0000^0^^274286:1:1^
+263389^4^0^0^0^0^0.0000^0.0000^0^^1495:1:1,1498:1:1,2589:2:6,275895:1:1^
+263390^5^0^0^0^0^0.0000^0.0000^0^^818:1:1,2409:1:1,2974:1:1^
+263396^11^0^0^0^0^0.0000^0.0000^0^^1509:1:1,1737:1:1,2073:1:1,2215:1:1,2589:2:8,5071:1:1,6380:1:1,275893:2:2^
+263397^3^0^0^0^0^0.0000^0.0000^0^^1179:1:1,2589:1:5,9756:1:1^
+263438^2^0^0^0^0^0.0000^0.0000^0^^4541:1:1,6556:1:1,10940:1:1^
+263470^4^0^0^0^0^0.0000^0.0000^0^^818:1:1,1516:1:1,2672:1:1,2777:1:1,3299:1:1,6558:1:1^
 271486^4^0^6^8^1426^0.4108^0.4752^4^Wendigo Shaman^^
 271530^8^0^7^8^1426^0.4042^0.4699^8^Elder Wendigo^1412:1:1^
 @i^414^Dalaran Sharp
@@ -22,25 +30,35 @@ GoldScout-export 5^siiq8dwbpcua^7
 @i^769^Chunk of Boar Meat
 @i^774^Malachite
 @i^814^Flask of Oil
+@i^818^Tigerseye
 @i^829^Red Leather Bandana
 @i^1179^Ice Cold Milk
 @i^1274^Hops
 @i^1412^Crude Bastard Sword
 @i^1495^Calico Shoes
 @i^1498^Calico Gloves
+@i^1509^Warped Leather Vest
 @i^1511^Commoner's Sword
 @i^1513^Old Greatsword
 @i^1516^Worn Hatchet
 @i^1730^Worn Mail Belt
+@i^1737^Worn Mail Vest
+@i^2073^Dwarven Hatchet of Power
+@i^2215^Wooden Shield
+@i^2409^Pattern: Dark Leather Tunic
 @i^2589^Linen Cloth
 @i^2608^Threshadon Ambergris
 @i^2672^Stringy Wolf Meat
 @i^2674^Crawler Meat
 @i^2675^Crawler Claw
 @i^2763^Fisherman Knife
+@i^2777^Feeble Shortbow
+@i^2974^Hunting Pants
 @i^3013^Scroll of Protection
+@i^3299^Fractured Canine
 @i^4359^Handful of Copper Bolts
 @i^4361^Copper Tube
+@i^4541^Freshly Baked Bread
 @i^4672^Ancestral Belt
 @i^4874^Clean Fishbones
 @i^5071^Shadow Wand
@@ -54,8 +72,13 @@ GoldScout-export 5^siiq8dwbpcua^7
 @i^6307^Message in a Bottle
 @i^6308^Raw Bristle Whisker Catfish
 @i^6361^Raw Rainbow Fin Albacore
+@i^6380^Inscribed Buckler
 @i^6518^Pioneer Boots
 @i^6539^Willow Belt of Nature Protection
+@i^6556^Bard's Bracers of Nature's Wrath
+@i^6558^Bard's Belt of Spirit
+@i^9756^Nomad Trousers of Healing
+@i^10940^Strange Dust
 @i^15005^Primal Bands
 @i^15015^Lupine Cloak
 @i^211786^Scroll: CHAP BALK WELLES
@@ -63,31 +86,45 @@ GoldScout-export 5^siiq8dwbpcua^7
 @i^254548^Longshore Murloc Gill
 @i^255007^Golem Isospring
 @i^255010^Harvester Gyrostabilizer
+@i^271096^Aetherwisp Bracers
+@i^274286^Durgen Dirgehammer's Head
+@i^275893^Searing Gourd
+@i^275895^Fading Echo
 @q^414^1:0:0
 @q^730^1:7:1
 @q^732^1:12:0
 @q^769^1:7:1
 @q^774^2:7:1
 @q^814^1:7:1
+@q^818^2:7:1
 @q^829^1:12:0
 @q^1179^1:0:0
 @q^1274^1:12:0
 @q^1412^0:2:0
 @q^1495^0:4:0
 @q^1498^0:4:0
+@q^1509^0:4:0
 @q^1511^0:2:0
 @q^1513^0:2:0
 @q^1516^0:2:0
 @q^1730^0:4:0
+@q^1737^0:4:0
+@q^2073^2:2:0
+@q^2215^0:4:0
+@q^2409^2:9:0
 @q^2589^1:7:1
 @q^2608^0:15:0
 @q^2672^1:7:1
 @q^2674^1:7:1
 @q^2675^1:7:1
 @q^2763^0:2:0
+@q^2777^0:2:0
+@q^2974^2:4:0
 @q^3013^1:0:0
+@q^3299^0:15:0
 @q^4359^1:7:1
 @q^4361^1:7:1
+@q^4541^1:0:0
 @q^4672^1:4:0
 @q^4874^0:15:0
 @q^5071^2:2:0
@@ -101,8 +138,13 @@ GoldScout-export 5^siiq8dwbpcua^7
 @q^6307^1:15:0
 @q^6308^1:7:1
 @q^6361^1:7:1
+@q^6380^2:4:0
 @q^6518^1:4:0
 @q^6539^2:4:0
+@q^6556^2:4:0
+@q^6558^2:4:0
+@q^9756^2:4:0
+@q^10940^1:7:1
 @q^15005^1:4:0
 @q^15015^1:4:0
 @q^211786^1:0:0
@@ -110,6 +152,10 @@ GoldScout-export 5^siiq8dwbpcua^7
 @q^254548^1:12:0
 @q^255007^1:7:1
 @q^255010^1:12:0
+@q^271096^3:4:0
+@q^274286^1:12:0
+@q^275893^1:15:0
+@q^275895^0:15:0
 @m^1426^Dun Morogh
 @m^1436^Westfall
 @m^1439^Darkshore

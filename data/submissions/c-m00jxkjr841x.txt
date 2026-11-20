@@ -1,4 +1,4 @@
-GoldScout-export 5^m00jxkjr841x^98
+GoldScout-export 6^m00jxkjr841x^99
 98^1^0^17^17^1436^0.6373^0.7055^1^Riverpaw Taskmaster^^
 117^1^0^11^12^1436^0.5780^0.1317^1^Riverpaw Gnoll^1502:1:1^
 154^2^0^16^17^1436^0.6243^0.6214^2^Greater Fleshripper^6889:1:1^
@@ -162,7 +162,10 @@ GoldScout-export 5^m00jxkjr841x^98
 2596^2^0^40^40^1417^0.2221^0.8463^2^Daggerspine Sorceress^7072:1:1,17057:1:1,17058:2:2^
 2611^1^0^42^42^1417^0.6584^0.3732^1^Fozruk^4469:1:1,7912:1:1^
 2667^9^0^36^37^1434^0.3679^0.3054^9^Ward of Laze^^
-2729^1^0^39^40^1418^0.2717^0.5797^1^Elder Crag Coyote^12203:1:1^
+2723^5^0^38^39^1418^0.4082^0.2675^5^Stone Golem^8150:1:1^
+2729^2^0^39^40^1418^0.2780^0.5285^2^Elder Crag Coyote^4583:1:1,5637:1:1,6166:1:1,12203:2:2^
+2742^32^10^38^39^1418^0.4124^0.2839^32^Shadowforge Chanter^1477:1:1,3817:1:1,4306:8:17,4338:1:1,4544:1:2,5431:1:1,7494:1:1^5431:2:2,16883:3:3
+2743^53^15^38^39^1418^0.4184^0.2878^53^Shadowforge Warrior^1465:1:1,1707:1:1,1708:1:1,3797:1:1,3803:1:1,3812:1:1,4306:16:30,4338:1:1,4544:3:3,5431:1:1,16883:1:1,248694:1:1^1707:1:1,3864:1:1,5431:1:1,16883:5:5
 2760^5^0^38^39^1417^0.2586^0.3148^5^Burning Exile^3857:1:1,4479:2:2,4787:2:2^
 2761^1^0^39^39^1417^0.6523^0.3041^1^Cresting Exile^7070:1:1^
 2762^1^0^39^39^1417^0.5328^0.4901^1^Thundering Exile^^
@@ -543,6 +546,7 @@ GoldScout-export 5^m00jxkjr841x^98
 @i^1384^Dull Blade
 @i^1422^Worn Leather Gloves
 @i^1464^Buzzard Talon
+@i^1465^Tigerbane
 @i^1468^Murloc Fin
 @i^1475^Small Venom Sac
 @i^1477^Scroll of Agility II
@@ -688,10 +692,12 @@ GoldScout-export 5^m00jxkjr841x^98
 @i^3792^Interlaced Belt
 @i^3797^Interlaced Pants
 @i^3802^Hardened Leather Bracers
+@i^3803^Hardened Cloak
 @i^3806^Hardened Leather Shoulderpads
 @i^3807^Hardened Leather Tunic
 @i^3810^Double Mail Bracers
 @i^3811^Double-Stitched Cloak
+@i^3812^Double Mail Gloves
 @i^3814^Double Mail Shoulderpads
 @i^3817^Reinforced Buckler
 @i^3830^Recipe: Elixir of Lesser Fortitude
@@ -700,6 +706,7 @@ GoldScout-export 5^m00jxkjr841x^98
 @i^3857^Coal
 @i^3862^Aged Gorilla Sinew
 @i^3863^Jungle Stalker Feather
+@i^3864^Citrine
 @i^3876^Fang of Bhag'thera
 @i^3877^Talon of Tethis
 @i^3879^Paw of Sin'Dall
@@ -865,6 +872,7 @@ GoldScout-export 5^m00jxkjr841x^98
 @i^5877^Cracked Silithid Carapace
 @i^5881^Head of Kelris
 @i^6149^Greater Mana Potion
+@i^6166^Coyote Jawbone
 @i^6271^Pattern: Red Linen Vest
 @i^6289^Raw Longjaw Mud Snapper
 @i^6291^Raw Brilliant Smallfish
@@ -904,6 +912,7 @@ GoldScout-export 5^m00jxkjr841x^98
 @i^7460^Knight's Cloak of Stamina
 @i^7470^Regal Wizard Hat of Stamina
 @i^7472^Regal Boots of the Whale
+@i^7494^Captain's Waistguard of the Bandit
 @i^7909^Aquamarine
 @i^7912^Solid Stone
 @i^7973^Big-mouth Clam
@@ -1094,6 +1103,7 @@ GoldScout-export 5^m00jxkjr841x^98
 @q^1384^1:2:0
 @q^1422^0:4:0
 @q^1464^0:15:0
+@q^1465^2:2:0
 @q^1468^1:7:1
 @q^1475^1:7:1
 @q^1477^1:0:0
@@ -1239,10 +1249,12 @@ GoldScout-export 5^m00jxkjr841x^98
 @q^3792^0:4:0
 @q^3797^0:4:0
 @q^3802^0:4:0
+@q^3803^0:4:0
 @q^3806^0:4:0
 @q^3807^0:4:0
 @q^3810^0:4:0
 @q^3811^0:4:0
+@q^3812^0:4:0
 @q^3814^0:4:0
 @q^3817^0:4:0
 @q^3830^1:9:0
@@ -1251,6 +1263,7 @@ GoldScout-export 5^m00jxkjr841x^98
 @q^3857^1:7:1
 @q^3862^1:12:0
 @q^3863^1:12:0
+@q^3864^2:7:1
 @q^3876^1:12:0
 @q^3877^1:12:0
 @q^3879^1:12:0
@@ -1416,6 +1429,7 @@ GoldScout-export 5^m00jxkjr841x^98
 @q^5877^1:12:0
 @q^5881^1:12:0
 @q^6149^1:0:0
+@q^6166^1:12:0
 @q^6271^2:9:0
 @q^6289^1:7:1
 @q^6291^1:7:1
@@ -1455,6 +1469,7 @@ GoldScout-export 5^m00jxkjr841x^98
 @q^7460^2:4:0
 @q^7470^2:4:0
 @q^7472^2:4:0
+@q^7494^2:4:0
 @q^7909^2:7:1
 @q^7912^1:7:1
 @q^7973^1:7:0
@@ -2647,7 +2662,10 @@ GoldScout-export 5^m00jxkjr841x^98
 @a^2596^324:2
 @a^2611^153:1
 @a^2667^107:3,127:6
-@a^2729^225:1
+@a^2723^107:1,108:4
+@a^2729^185:1,225:1
+@a^2742^107:2,108:26,128:4
+@a^2743^108:43,128:10
 @a^2760^124:1,125:4
 @a^2761^133:1
 @a^2762^190:1
