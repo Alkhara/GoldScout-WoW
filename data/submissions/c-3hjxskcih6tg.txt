@@ -1,4 +1,4 @@
-GoldScout-export 5^3hjxskcih6tg^55
+GoldScout-export 5^3hjxskcih6tg^56
 704^2^0^2^2^1426^0.2898^0.7549^2^Ragged Timber Wolf^750:2:2,1376:1:1,4865:2:2,7074:1:1^
 705^18^0^1^1^1426^0.2960^0.7472^18^Ragged Young Wolf^750:12:12,1368:1:1,1377:1:1,2651:1:1,4865:7:7,7073:4:4,7074:6:6^
 706^21^0^3^4^1426^0.2518^0.7965^21^Frostmane Troll Whelp^117:2:2,159:3:3,1366:1:1,1372:1:1,1376:2:2,1380:1:1,2589:5:5,3363:1:1^
@@ -148,8 +148,13 @@ GoldScout-export 5^3hjxskcih6tg^55
 3670^1^0^0^0^0^0.0000^0.0000^0^^^
 3671^1^0^0^0^0^0.0000^0.0000^0^^273088:1:1^
 3674^1^0^0^0^0^0.0000^0.0000^0^^5125:1:1^
+3810^4^0^25^26^1440^0.6566^0.5936^4^Elder Ashenvale Bear^2940:1:1,3702:3:3,3730:1:1^
+3818^7^0^26^27^1440^0.6276^0.4741^7^Elder Shadowhorn Stag^5120:1:1,5471:4:4,5566:6:6^
 3819^1^0^20^20^1440^0.7144^0.8141^1^Wildthorn Stalker^2251:1:1,3174:1:1^
+3820^1^0^24^24^1440^0.6415^0.5708^1^Wildthorn Venomspitter^4428:1:1^
+3825^1^0^27^28^1440^0.6418^0.4993^1^Ghostpaw Alpha^1015:1:1^
 3840^12^0^0^0^0^0.0000^0.0000^0^^789:1:1,858:1:1,2455:1:1,2592:4:6,2764:1:1,14367:1:1^
+3919^1^0^26^26^1440^0.6441^0.4935^1^Withered Ancient^1806:1:1^
 3928^2^0^21^21^1440^0.7115^0.7311^2^Rotting Slime^3669:1:1,3674:1:1,15269:1:1^
 3988^10^0^19^20^1442^0.7002^0.5341^10^Venture Co. Operator^2287:1:1,2589:1:1,2592:2:3,5734:1:1^
 3989^21^0^18^19^1442^0.6784^0.5380^21^Venture Co. Logger^858:1:1,955:1:1,1210:1:1,1768:1:1,2455:1:1,2589:3:6,2592:3:5,14364:1:1^
@@ -250,6 +255,7 @@ GoldScout-export 5^3hjxskcih6tg^55
 @i^858^Lesser Healing Potion
 @i^929^Healing Potion
 @i^955^Scroll of Intellect
+@i^1015^Lean Wolf Flank
 @i^1081^Crisp Spider Meat
 @i^1179^Ice Cold Milk
 @i^1180^Scroll of Stamina
@@ -306,6 +312,7 @@ GoldScout-export 5^3hjxskcih6tg^55
 @i^1791^Patched Leather Gloves
 @i^1798^Rawhide Cloak
 @i^1801^Rawhide Shoulderpads
+@i^1806^Tough Cloak
 @i^1811^Blunt Claymore
 @i^1813^Chipped Quarterstaff
 @i^1815^Ornamental Mace
@@ -346,6 +353,7 @@ GoldScout-export 5^3hjxskcih6tg^55
 @i^2780^Light Hunting Bow
 @i^2781^Dirty Blunderbuss
 @i^2886^Crag Boar Rib
+@i^2940^Bloody Bear Paw
 @i^2958^Journeyman's Pants
 @i^2968^Warrior's Gloves
 @i^3008^Wendigo Fur Cloak
@@ -384,6 +392,8 @@ GoldScout-export 5^3hjxskcih6tg^55
 @i^3670^Large Slimy Bone
 @i^3674^Decomposed Boot
 @i^3676^Slimy Ichor
+@i^3702^Bear Gall Bladder
+@i^3730^Big Bear Meat
 @i^3770^Mutton Chop
 @i^3857^Coal
 @i^3931^Poisoned Spider Fang
@@ -392,6 +402,7 @@ GoldScout-export 5^3hjxskcih6tg^55
 @i^4359^Handful of Copper Bolts
 @i^4363^Copper Modulator
 @i^4371^Bronze Tube
+@i^4428^Spider Palp
 @i^4537^Tel'Abim Banana
 @i^4540^Tough Hunk of Bread
 @i^4555^Thick Scaly Tail
@@ -476,9 +487,11 @@ GoldScout-export 5^3hjxskcih6tg^55
 @i^5467^Kodo Meat
 @i^5469^Strider Meat
 @i^5470^Thunder Lizard Tail
+@i^5471^Stag Meat
 @i^5516^Threshadon Fang
 @i^5523^Small Barnacled Clam
 @i^5524^Thick-shelled Clam
+@i^5566^Broken Antler
 @i^5635^Sharp Claw
 @i^5734^Super Reaper 6000 Blueprints
 @i^5736^Gerenzo's Mechanical Arm
@@ -580,6 +593,7 @@ GoldScout-export 5^3hjxskcih6tg^55
 @q^858^1:0:0
 @q^929^1:0:0
 @q^955^1:0:0
+@q^1015^1:7:1
 @q^1081^1:7:1
 @q^1179^1:0:0
 @q^1180^1:0:0
@@ -636,6 +650,7 @@ GoldScout-export 5^3hjxskcih6tg^55
 @q^1791^0:4:0
 @q^1798^0:4:0
 @q^1801^0:4:0
+@q^1806^0:4:0
 @q^1811^0:2:0
 @q^1813^0:2:0
 @q^1815^0:2:0
@@ -676,6 +691,7 @@ GoldScout-export 5^3hjxskcih6tg^55
 @q^2780^0:2:0
 @q^2781^0:2:0
 @q^2886^1:7:1
+@q^2940^0:15:0
 @q^2958^2:4:0
 @q^2968^1:4:0
 @q^3008^2:4:0
@@ -714,6 +730,8 @@ GoldScout-export 5^3hjxskcih6tg^55
 @q^3670^0:15:0
 @q^3674^0:15:0
 @q^3676^0:15:0
+@q^3702^0:15:0
+@q^3730^1:7:1
 @q^3770^1:0:0
 @q^3857^1:7:1
 @q^3931^0:15:0
@@ -722,6 +740,7 @@ GoldScout-export 5^3hjxskcih6tg^55
 @q^4359^1:7:1
 @q^4363^1:7:1
 @q^4371^1:7:1
+@q^4428^0:15:0
 @q^4537^1:0:0
 @q^4540^1:0:0
 @q^4555^0:15:0
@@ -806,9 +825,11 @@ GoldScout-export 5^3hjxskcih6tg^55
 @q^5467^1:7:1
 @q^5469^1:7:1
 @q^5470^1:7:1
+@q^5471^1:7:1
 @q^5516^0:2:0
 @q^5523^1:7:0
 @q^5524^1:7:0
+@q^5566^0:15:0
 @q^5635^1:7:1
 @q^5734^1:12:0
 @q^5736^1:12:0
@@ -2883,7 +2904,12 @@ GoldScout-export 5^3hjxskcih6tg^55
 @a^3638^210:13,230:2
 @a^3641^210:3
 @a^3655^210:1
+@a^3810^232:2,233:1,253:1
+@a^3818^192:6,212:1
 @a^3819^334:1
+@a^3820^232:1
+@a^3825^192:1
+@a^3919^192:1
 @a^3928^294:1,314:1
 @a^3988^193:1,213:4,233:1,234:3,235:1
 @a^3989^193:1,213:10,214:2,233:6,234:1,235:1

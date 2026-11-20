@@ -1,4 +1,4 @@
-GoldScout-export 5^sdc81v536gz1^6
+GoldScout-export 5^sdc81v536gz1^9
 1121^7^0^8^9^1426^0.2524^0.5118^7^Frostmane Snowstrider^767:1:1,1413:1:1,2589:2:3^
 1122^6^0^9^10^1426^0.2171^0.5291^6^Frostmane Hideskinner^2138:1:1,2589:1:1^
 1123^8^0^8^9^1426^0.2568^0.5101^8^Frostmane Headhunter^159:1:1,1414:1:1,2589:3:3^
@@ -11,20 +11,43 @@ GoldScout-export 5^sdc81v536gz1^6
 1271^1^0^11^11^1426^0.3705^0.5321^1^Old Icebeard^^
 1388^1^0^11^11^1426^0.6206^0.4719^1^Vagash^3627:1:1^
 1397^6^0^8^9^1426^0.4125^0.4474^6^Frostmane Seer^2589:2:2,2676:1:1,2968:1:1^
+1984^12^0^1^2^1438^0.5899^0.4238^12^Young Thistle Boar^1380:1:1,2210:1:1,2650:1:1,2651:1:1,4865:6:6,7098:6:6^
+1985^7^0^2^3^1438^0.5883^0.3739^7^Thistle Boar^117:2:2,1376:1:1,1377:1:1,2211:1:1,4865:2:2,7098:3:3^
+1986^19^0^3^4^1438^0.5736^0.3175^19^Webwood Spider^1376:1:1,1377:1:1,1380:1:1,1476:6:6,2210:1:1,2649:1:1,5166:10:10,7100:8:8,7101:9:9,10640:1:1^
+1988^8^0^2^3^1438^0.5589^0.4496^8^Grell^117:1:1,159:2:2,1370:1:1,2589:4:4,3297:7:7,3363:1:1^
+1989^2^0^3^4^1438^0.5528^0.4461^2^Grellkin^117:1:1,2589:1:1,3297:1:1,3363:1:1^
+1994^6^0^5^5^1438^0.5674^0.2643^6^Githyiss the Vile^1476:3:3,2649:1:1,3363:1:1,3365:1:1,7100:1:1,7101:1:1,277190:3:3^
+2031^8^0^1^1^1438^0.6133^0.4313^8^Young Nightsaber^2654:1:1,3363:2:2,4865:3:3,7073:2:2,7074:3:3^
+2032^7^0^2^2^1438^0.6086^0.3540^7^Mangy Nightsaber^1368:1:1,1372:1:1,1374:1:1,2211:1:1,4865:2:2,7073:2:2,7074:4:4^
 3809^2^0^21^21^1440^0.4272^0.6106^2^Ashenvale Bear^2940:1:1,3702:1:1,3730:2:2,5635:1:1,250182:1:1^
 4006^2^0^19^20^1442^0.7749^0.4323^2^Deepmoss Webspinner^1081:1:1,3174:1:1,3931:1:1,15248:1:1^
 4012^9^0^21^22^1442^0.5226^0.4408^9^Pridewing Wyvern^5135:1:1,5136:5:5,5808:4:4^
 4014^4^0^22^23^1442^0.5192^0.4445^4^Pridewing Consort^5136:2:2,5808:1:1^
+@i^117^Tough Jerky
 @i^159^Refreshing Spring Water
 @i^727^Notched Shortsword of Agility
 @i^767^Long Bo Staff
 @i^769^Chunk of Boar Meat
 @i^771^Chipped Boar Tusk
 @i^1081^Crisp Spider Meat
+@i^1368^Ragged Leather Gloves
+@i^1370^Ragged Leather Bracers
+@i^1372^Ragged Cloak
+@i^1374^Frayed Shoes
+@i^1376^Frayed Cloak
+@i^1377^Frayed Gloves
+@i^1380^Frayed Robe
 @i^1413^Feeble Sword
 @i^1414^Cracked Sledge
+@i^1476^Snapped Spider Limb
 @i^2138^Sharpened Letter Opener
+@i^2210^Battered Buckler
+@i^2211^Bent Large Shield
 @i^2589^Linen Cloth
+@i^2649^Flimsy Chain Belt
+@i^2650^Flimsy Chain Boots
+@i^2651^Flimsy Chain Bracers
+@i^2654^Flimsy Chain Pants
 @i^2672^Stringy Wolf Meat
 @i^2676^Shimmerweed
 @i^2886^Crag Boar Rib
@@ -35,7 +58,10 @@ GoldScout-export 5^sdc81v536gz1^6
 @i^3171^Broken Boar Tusk
 @i^3172^Boar Intestines
 @i^3174^Spider Ichor
+@i^3297^Fel Moss
 @i^3300^Rabbit's Foot
+@i^3363^Frayed Belt
+@i^3365^Frayed Bracers
 @i^3627^Fang of Vagash
 @i^3702^Bear Gall Bladder
 @i^3730^Big Bear Meat
@@ -45,23 +71,45 @@ GoldScout-export 5^sdc81v536gz1^6
 @i^4865^Ruined Pelt
 @i^5135^Thin Black Claw
 @i^5136^Torn Furry Ear
+@i^5166^Webwood Venom Sac
 @i^5635^Sharp Claw
 @i^5808^Pridewing Venom Sac
 @i^6308^Raw Bristle Whisker Catfish
+@i^7073^Broken Fang
 @i^7074^Chipped Claw
+@i^7098^Splintered Tusk
+@i^7100^Sticky Ichor
+@i^7101^Bug Eye
+@i^10640^Webwood Ichor
 @i^15248^Gleaming Claymore of the Whale
 @i^21071^Raw Sagefish
 @i^250182^Recipe: Bear Brisket
+@i^277190^Fang of Githyiss
+@q^117^1:0:0
 @q^159^1:0:0
 @q^727^2:2:0
 @q^767^1:2:0
 @q^769^1:7:1
 @q^771^0:15:0
 @q^1081^1:7:1
+@q^1368^0:4:0
+@q^1370^0:4:0
+@q^1372^0:4:0
+@q^1374^0:4:0
+@q^1376^0:4:0
+@q^1377^0:4:0
+@q^1380^0:4:0
 @q^1413^0:2:0
 @q^1414^0:2:0
+@q^1476^0:15:0
 @q^2138^0:2:0
+@q^2210^0:4:0
+@q^2211^0:4:0
 @q^2589^1:7:1
+@q^2649^0:4:0
+@q^2650^0:4:0
+@q^2651^0:4:0
+@q^2654^0:4:0
 @q^2672^1:7:1
 @q^2676^1:12:0
 @q^2886^1:7:1
@@ -72,7 +120,10 @@ GoldScout-export 5^sdc81v536gz1^6
 @q^3171^0:15:0
 @q^3172^1:7:1
 @q^3174^1:7:1
+@q^3297^1:12:0
 @q^3300^0:15:0
+@q^3363^0:4:0
+@q^3365^0:4:0
 @q^3627^1:12:0
 @q^3702^0:15:0
 @q^3730^1:7:1
@@ -82,14 +133,22 @@ GoldScout-export 5^sdc81v536gz1^6
 @q^4865^0:15:0
 @q^5135^0:15:0
 @q^5136^0:15:0
+@q^5166^1:12:0
 @q^5635^1:7:1
 @q^5808^1:12:0
 @q^6308^1:7:1
+@q^7073^0:15:0
 @q^7074^0:15:0
+@q^7098^0:15:0
+@q^7100^0:15:0
+@q^7101^0:15:0
+@q^10640^1:12:0
 @q^15248^2:2:0
 @q^21071^1:7:1
 @q^250182^1:9:0
+@q^277190^1:12:0
 @m^1426^Dun Morogh
+@m^1438^Teldrassil
 @m^1440^Ashenvale
 @m^1442^Stonetalon Mountains
 @c^118^
@@ -855,6 +914,14 @@ GoldScout-export 5^sdc81v536gz1^6
 @a^1271^207:1
 @a^1388^192:1
 @a^1397^168:4,188:2
+@a^1984^171:6,172:6
+@a^1985^131:2,151:2,152:2,171:1
+@a^1986^111:4,131:15
+@a^1988^171:3,191:5
+@a^1989^171:2
+@a^1994^111:6
+@a^2031^172:8
+@a^2032^131:1,132:1,151:2,152:3
 @a^3809^228:1,248:1
 @a^4006^175:2
 @a^4012^169:1,170:6,190:2

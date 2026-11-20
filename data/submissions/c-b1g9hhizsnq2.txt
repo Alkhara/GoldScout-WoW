@@ -1,4 +1,4 @@
-GoldScout-export 5^b1g9hhizsnq2^6
+GoldScout-export 6^b1g9hhizsnq2^7
 667^9^0^39^40^1434^0.4668^0.3980^9^Skullsplitter Warrior^1520:1:1,1524:3:3,2732:1:1,2738:1:1,3916:3:3,4306:4:8,8151:2:2^
 669^8^0^41^42^1434^0.4565^0.4199^8^Skullsplitter Hunter^1520:2:2,1524:1:1,2745:1:1,3916:3:3,4306:1:2,4338:1:2,8153:1:1^
 670^6^0^41^42^1434^0.4578^0.4242^6^Skullsplitter Witch Doctor^1524:1:1,4338:1:1,12042:1:1^
@@ -35,6 +35,9 @@ GoldScout-export 5^b1g9hhizsnq2^6
 1494^1^0^52^52^1434^0.2983^0.7246^1^Negolash^3935:1:1^
 1511^4^0^41^42^1434^0.3520^0.6044^4^Enraged Silverback Gorilla^2799:4:4^
 1514^1^0^44^44^1434^0.3524^0.6033^1^Mokk the Savage^2797:1:1^
+1520^16^0^6^7^1420^0.4812^0.3884^16^Rattlecage Soldier^1414:1:1,1417:1:1,1427:1:1,1430:1:1,2589:3:6,3189:1:1,4604:1:1^
+1522^2^0^7^8^1420^0.4872^0.3783^2^Darkeye Bonecaster^2589:1:1,3013:1:1,6271:1:1^
+1523^1^0^8^9^1420^0.4541^0.3510^1^Cracked Skull Soldier^^
 1551^6^0^43^44^1434^0.4319^0.4852^6^Ironjaw Basilisk^4093:2:2,4637:2:2,9882:1:1,11386:2:2,11387:2:2^
 1552^1^0^45^45^1434^0.4360^0.4926^1^Scale Belly^9966:1:1^
 1557^33^0^40^41^1434^0.3315^0.6465^33^Elder Mistvale Gorilla^2799:19:19,3862:1:1,3919:5:5,4096:16:16,4097:5:5,6422:1:1^
@@ -117,6 +120,10 @@ GoldScout-export 5^b1g9hhizsnq2^6
 260419^1^0^38^38^1446^0.6740^0.2397^1^Slugjaw^^
 260429^1^0^39^39^1434^0.4340^0.2040^1^Venture Co. Agent^2589:1:3,14426:1:1,268810:1:1^
 @i^770^Pointy Crocolisk Tooth
+@i^1414^Cracked Sledge
+@i^1417^Beaten Battle Axe
+@i^1427^Patchwork Shoes
+@i^1430^Patchwork Gloves
 @i^1520^Troll Sweat
 @i^1524^Skullsplitter Tusk
 @i^1613^Spiritchaser Staff of the Physician
@@ -143,6 +150,8 @@ GoldScout-export 5^b1g9hhizsnq2^6
 @i^2751^Green Hills of Stranglethorn - Page 27
 @i^2797^Heart of Mokk
 @i^2799^Gorilla Fang
+@i^3013^Scroll of Protection
+@i^3189^Wood Chopper
 @i^3385^Lesser Mana Potion
 @i^3626^Head of Baron Vardus
 @i^3685^Raptor Egg
@@ -196,6 +205,7 @@ GoldScout-export 5^b1g9hhizsnq2^6
 @i^4587^Tribal Raptor Feathers
 @i^4599^Cured Ham Steak
 @i^4603^Raw Spotted Yellowtail
+@i^4604^Forest Mushroom Cap
 @i^4608^Raw Black Truffle
 @i^4637^Steel Lockbox
 @i^4639^Enchanted Sea Kelp
@@ -208,6 +218,7 @@ GoldScout-export 5^b1g9hhizsnq2^6
 @i^5945^Deadmire's Tooth
 @i^6149^Greater Mana Potion
 @i^6267^Disciple's Pants of the Eagle
+@i^6271^Pattern: Red Linen Vest
 @i^6300^Husk Fragment
 @i^6302^Delicate Insect Wing
 @i^6422^Glyphed Helm
@@ -263,6 +274,10 @@ GoldScout-export 5^b1g9hhizsnq2^6
 @i^268810^Ruzzgot's Shipment
 @i^278186^Brilliantly Polished Bangle
 @q^770^0:15:0
+@q^1414^0:2:0
+@q^1417^0:2:0
+@q^1427^0:4:0
+@q^1430^0:4:0
 @q^1520^0:15:0
 @q^1524^1:12:0
 @q^1613^2:2:0
@@ -289,6 +304,8 @@ GoldScout-export 5^b1g9hhizsnq2^6
 @q^2751^1:12:0
 @q^2797^1:12:0
 @q^2799^1:12:0
+@q^3013^1:0:0
+@q^3189^1:2:0
 @q^3385^1:0:0
 @q^3626^1:12:0
 @q^3685^1:7:1
@@ -342,6 +359,7 @@ GoldScout-export 5^b1g9hhizsnq2^6
 @q^4587^0:15:0
 @q^4599^1:0:0
 @q^4603^1:7:1
+@q^4604^1:0:0
 @q^4608^1:0:0
 @q^4637^2:15:0
 @q^4639^1:12:0
@@ -354,6 +372,7 @@ GoldScout-export 5^b1g9hhizsnq2^6
 @q^5945^1:12:0
 @q^6149^1:0:0
 @q^6267^2:4:0
+@q^6271^2:9:0
 @q^6300^0:15:0
 @q^6302^0:15:0
 @q^6422^2:4:0
@@ -411,6 +430,7 @@ GoldScout-export 5^b1g9hhizsnq2^6
 @m^1413^The Barrens
 @m^1416^Alterac Mountains
 @m^1418^Badlands
+@m^1420^Tirisfal Glades
 @m^1425^The Hinterlands
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
@@ -1692,6 +1712,9 @@ GoldScout-export 5^b1g9hhizsnq2^6
 @a^1494^285:1
 @a^1511^247:4
 @a^1514^247:1
+@a^1520^129:2,149:8,169:5,170:1
+@a^1522^149:2
+@a^1523^149:1
 @a^1551^188:6
 @a^1552^188:1
 @a^1557^226:2,246:16,266:15
