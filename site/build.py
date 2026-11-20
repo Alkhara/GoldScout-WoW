@@ -734,12 +734,14 @@ td.bar { background: none; }
 .zone-goal .goal-bar { height: 14px; border-radius: 7px; margin: 4px 0 2px; }
 .targets { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 4px 18px 12px; margin: 18px 0; }
 .targets h2 { margin: 12px 0 4px; }
-.target { display: grid; grid-template-columns: minmax(0, 17em) 1fr 7.5em; gap: 4px 14px; align-items: center; margin: 9px 0; }
+/* One grid for every row, so the numbers column fits the widest ("280,432 of 2,000,000") and the bars line up. */
+.target-rows { display: grid; grid-template-columns: minmax(0, 17em) 1fr auto; gap: 18px 14px; align-items: center; margin: 14px 0 6px; }
+.target { display: contents; }
 .target .goal-bar { height: 12px; border-radius: 6px; }
 .target-num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--muted); }
 .target-num b { color: var(--text); }
 .target-num b.done { color: #40ff40; }
-@media (max-width: 620px) { .target { grid-template-columns: 1fr auto; } .target .goal-bar { grid-column: 1 / -1; grid-row: 2; } }
+@media (max-width: 620px) { .target-rows { grid-template-columns: 1fr auto; grid-auto-flow: dense; row-gap: 6px; } .target .goal-bar { grid-column: 1 / -1; margin-bottom: 10px; } }
 b.done { color: #40ff40; }
 ol.champions { margin: 4px 0 6px; padding-left: 24px; }
 ol.champions li { margin: 3px 0; }

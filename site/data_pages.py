@@ -1406,7 +1406,8 @@ def targets_section(data, today=None):
         % (label, T("%s of %s") % (num(have), num(target)), min(100, round(100 * have / target)),
            (T("<b class=done>%s</b> of %s") if have >= target else T("<b>%s</b> of %s")) % (num(have), num(target)))
         for label, have, target in targets)
-    return '<section class=targets><h2>%s</h2><p class=sub>%s</p>%s</section>' % (T("Community goals"), text, rows)
+    return ('<section class=targets><h2>%s</h2><p class=sub>%s</p><div class=target-rows>%s</div></section>'
+            % (T("Community goals"), text, rows))
 
 
 def build(data, links, write):
