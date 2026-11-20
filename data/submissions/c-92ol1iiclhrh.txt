@@ -1,4 +1,4 @@
-GoldScout-export 5^92ol1iiclhrh^11
+GoldScout-export 5^92ol1iiclhrh^12
 2244^1^0^21^21^1424^0.6483^0.4687^1^Syndicate Shadow Mage^1752:1:1^
 2260^2^0^22^22^1424^0.6577^0.4882^2^Syndicate Rogue^2592:2:4^
 2266^3^0^23^24^1424^0.3587^0.4245^3^Hillsbrad Farmer^2592:2:2,3692:1:1,4538:1:1,248688:1:1^
@@ -33,6 +33,7 @@ GoldScout-export 5^92ol1iiclhrh^11
 2989^5^0^7^8^1412^0.3539^0.5348^5^Bael'dun Digger^159:1:1,1181:1:1,2773:1:1,4702:3:3^
 2990^4^0^8^9^1412^0.3390^0.5399^4^Bael'dun Appraiser^159:1:1,2589:3:5,2635:1:1,4702:2:2^
 3035^5^0^7^8^1412^0.4599^0.5046^5^Flatland Cougar^4814:5:5^
+3098^1^0^2^2^1411^0.4387^0.6536^1^Mottled Boar^4865:1:1,7098:1:1^
 3991^1^0^20^20^1442^0.6467^0.5633^1^Venture Co. Deforester^^
 4023^3^0^25^26^1442^0.3653^0.6941^3^Bloodfury Roguefeather^929:1:1,3770:1:1,5115:1:1,17056:2:2,277936:1:1^
 4024^5^0^25^26^1442^0.3578^0.6916^5^Bloodfury Slayer^2592:4:7,5635:1:1,277936:3:3^
@@ -99,6 +100,7 @@ GoldScout-export 5^92ol1iiclhrh^11
 @i^4806^Plainstrider Scale
 @i^4807^Swoop Gizzard
 @i^4814^Discolored Fang
+@i^4865^Ruined Pelt
 @i^5115^Broken Wishbone
 @i^5116^Long Tail Feather
 @i^5135^Thin Black Claw
@@ -115,6 +117,7 @@ GoldScout-export 5^92ol1iiclhrh^11
 @i^6889^Small Egg
 @i^7096^Plucked Feather
 @i^7097^Leg Meat
+@i^7098^Splintered Tusk
 @i^9817^Fortified Spaulders of the Falcon
 @i^11406^Rotting Bear Carcass
 @i^11407^Torn Bear Pelt
@@ -187,6 +190,7 @@ GoldScout-export 5^92ol1iiclhrh^11
 @q^4806^1:12:0
 @q^4807^1:12:0
 @q^4814^0:15:0
+@q^4865^0:15:0
 @q^5115^0:15:0
 @q^5116^1:7:1
 @q^5135^0:15:0
@@ -203,6 +207,7 @@ GoldScout-export 5^92ol1iiclhrh^11
 @q^6889^1:7:1
 @q^7096^0:15:0
 @q^7097^1:0:0
+@q^7098^0:15:0
 @q^9817^2:4:0
 @q^11406^0:15:0
 @q^11407^1:12:0
@@ -218,6 +223,7 @@ GoldScout-export 5^92ol1iiclhrh^11
 @q^270302^1:12:0
 @q^277936^1:12:0
 @q^287505^1:12:0
+@m^1411^Durotar
 @m^1412^Mulgore
 @m^1413^The Barrens
 @m^1424^Hillsbrad Foothills
@@ -976,6 +982,7 @@ GoldScout-export 5^92ol1iiclhrh^11
 @a^2989^207:5
 @a^2990^206:4
 @a^3035^167:1,187:1,209:1,210:1,230:1
+@a^3098^268:1
 @a^3991^232:1
 @a^4023^267:3
 @a^4024^267:5

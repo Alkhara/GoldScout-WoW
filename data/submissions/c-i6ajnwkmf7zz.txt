@@ -1,4 +1,4 @@
-GoldScout-export 6^i6ajnwkmf7zz^10
+GoldScout-export 6^i6ajnwkmf7zz^11
 40^10^0^6^7^1429^0.6092^0.5097^10^Kobold Miner^159:1:1,1415:1:1,1427:1:1,2589:3:4,2835:1:2,4565:1:1^
 46^6^0^9^10^1429^0.7721^0.7931^6^Murloc Forager^779:1:1,1413:1:1,2642:1:1,3373:1:1,6303:1:1^
 69^4^0^2^2^1429^0.5095^0.4462^4^Timber Wolf^2654:1:1,7073:2:2,7074:3:3^
@@ -12,10 +12,12 @@ GoldScout-export 6^i6ajnwkmf7zz^10
 121^2^0^15^16^1436^0.3800^0.5616^2^Defias Pathstalker^829:1:1^
 123^2^0^14^14^1436^0.3505^0.6164^2^Riverpaw Mongrel^955:1:1,2589:2:4,4569:1:1^
 126^10^0^12^13^1436^0.5443^0.0955^10^Murloc Coastrunner^730:3:3,5523:6:6,6289:1:2,6337:1:1,254548:4:4^
+127^1^0^18^18^1436^0.3443^0.8386^1^Murloc Tidehunter^1817:1:1^
 199^2^0^11^11^1436^0.5106^0.2158^2^Young Fleshripper^555:1:1,3399:1:1,4757:1:1,6889:2:2,17056:2:2^
 285^6^0^6^7^1429^0.5704^0.6696^6^Murloc^^
 299^1^0^1^1^1429^0.5086^0.4434^1^Young Wolf^4496:1:1,4865:1:1^
 330^1^0^9^9^1429^0.6954^0.7865^1^Princess^1006:1:1^
+391^1^0^20^20^1436^0.2877^0.7617^1^Old Murk-Eye^730:1:1,1811:1:1,3636:1:1,5523:1:1,17057:1:1^
 454^1^0^12^13^1436^0.5628^0.3952^1^Young Goretusk^731:1:1,2140:1:1,3171:1:1^
 471^3^0^7^7^1429^0.6172^0.4715^3^Mother Fang^1476:1:1,5465:2:7,6148:2:2,8182:1:1,248004:1:1^
 473^1^0^10^10^1429^0.7065^0.7936^1^Morgan the Collector^^
@@ -207,6 +209,7 @@ GoldScout-export 6^i6ajnwkmf7zz^10
 @i^1813^Chipped Quarterstaff
 @i^1815^Ornamental Mace
 @i^1816^Unbalanced Axe
+@i^1817^Stock Shortsword
 @i^1875^Thistlenettle's Badge
 @i^1894^Miners' Union Card
 @i^1925^Defias Rapier
@@ -264,6 +267,7 @@ GoldScout-export 6^i6ajnwkmf7zz^10
 @i^3377^Canvas Bracers
 @i^3399^Vulture Talon
 @i^3627^Fang of Vagash
+@i^3636^Scale of Old Murk-Eye
 @i^3637^Head of VanCleef
 @i^3820^Stranglekelp
 @i^3931^Poisoned Spider Fang
@@ -328,6 +332,7 @@ GoldScout-export 6^i6ajnwkmf7zz^10
 @i^11406^Rotting Bear Carcass
 @i^12238^Darkshore Grouper
 @i^17056^Light Feather
+@i^17057^Shiny Fish Scales
 @i^20708^Tightly Sealed Trunk
 @i^20709^Rumsey Rum Light
 @i^21071^Raw Sagefish
@@ -428,6 +433,7 @@ GoldScout-export 6^i6ajnwkmf7zz^10
 @q^1813^0:2:0
 @q^1815^0:2:0
 @q^1816^0:2:0
+@q^1817^0:2:0
 @q^1875^1:12:0
 @q^1894^1:12:0
 @q^1925^2:2:0
@@ -485,6 +491,7 @@ GoldScout-export 6^i6ajnwkmf7zz^10
 @q^3377^0:4:0
 @q^3399^0:15:0
 @q^3627^1:12:0
+@q^3636^1:12:0
 @q^3637^1:12:0
 @q^3820^1:7:1
 @q^3931^0:15:0
@@ -549,6 +556,7 @@ GoldScout-export 6^i6ajnwkmf7zz^10
 @q^11406^0:15:0
 @q^12238^1:0:0
 @q^17056^1:15:1
+@q^17057^1:15:0
 @q^20708^1:15:0
 @q^20709^1:0:0
 @q^21071^1:7:1
@@ -783,10 +791,12 @@ GoldScout-export 6^i6ajnwkmf7zz^10
 @a^121^227:2
 @a^123^246:1,247:1
 @a^126^30:7,31:1,51:2
+@a^127^326:1
 @a^199^69:1,110:1
 @a^285^271:6
 @a^299^170:1
 @a^330^313:1
+@a^391^305:1
 @a^454^151:1
 @a^471^192:3
 @a^473^314:1

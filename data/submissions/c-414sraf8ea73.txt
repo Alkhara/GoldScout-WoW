@@ -1,7 +1,8 @@
-GoldScout-export 6^414sraf8ea73^2
+GoldScout-export 6^414sraf8ea73^3
 587^1^0^34^34^1434^0.3450^0.1443^1^Bloodscalp Warrior^1519:1:1,2592:1:2,2742:1:1^
 686^12^0^35^36^1434^0.3407^0.2494^12^Lashtail Raptor^1696:2:2,3685:6:6,4461:4:4,4586:2:2,5637:2:2,7353:1:1,12184:4:4,248693:1:1^
 688^1^0^32^32^1434^0.3497^0.0701^1^Stone Maw Basilisk^1701:1:1^
+690^6^0^39^40^1434^0.2997^0.3792^6^Cold Eye Basilisk^1702:3:3,3918:3:3,4093:1:1^
 694^2^0^34^34^1434^0.3387^0.1431^2^Bloodscalp Axe Thrower^3787:1:1,3901:2:2^
 697^4^0^33^34^1434^0.3338^0.1449^4^Bloodscalp Shaman^1519:1:1,3901:3:3,3915:1:1,4306:2:3^
 698^1^0^34^34^1434^0.2917^0.1257^1^Bloodscalp Tiger^^
@@ -17,6 +18,7 @@ GoldScout-export 6^414sraf8ea73^2
 @i^1520^Troll Sweat
 @i^1696^Curved Raptor Talon
 @i^1701^Curved Basilisk Claw
+@i^1702^Intact Basilisk Spine
 @i^1708^Sweet Nectar
 @i^2450^Briarthorn
 @i^2589^Linen Cloth
@@ -28,7 +30,9 @@ GoldScout-export 6^414sraf8ea73^2
 @i^3827^Mana Potion
 @i^3901^Bloodscalp Tusk
 @i^3915^Bloody Bone Necklace
+@i^3918^Singing Crystal Shard
 @i^4053^Large River Crocolisk Skin
+@i^4093^Large Basilisk Tail
 @i^4306^Silk Cloth
 @i^4461^Raptor Hide
 @i^4586^Smooth Raptor Skin
@@ -42,6 +46,7 @@ GoldScout-export 6^414sraf8ea73^2
 @q^1520^0:15:0
 @q^1696^0:15:0
 @q^1701^0:15:0
+@q^1702^0:15:0
 @q^1708^1:0:0
 @q^2450^1:7:1
 @q^2589^1:7:1
@@ -53,7 +58,9 @@ GoldScout-export 6^414sraf8ea73^2
 @q^3827^1:0:0
 @q^3901^1:12:0
 @q^3915^1:12:0
+@q^3918^1:12:0
 @q^4053^1:12:0
+@q^4093^0:15:0
 @q^4306^1:7:1
 @q^4461^1:7:1
 @q^4586^0:15:0
@@ -431,6 +438,7 @@ GoldScout-export 6^414sraf8ea73^2
 @a^587^46:1
 @a^686^86:5,106:3,107:4
 @a^688^26:1
+@a^690^145:4,146:2
 @a^694^46:2
 @a^697^46:3,66:1
 @a^698^45:1
