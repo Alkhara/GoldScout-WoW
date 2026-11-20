@@ -1,10 +1,16 @@
-GoldScout-export 5^a7bqejsmx1rx^7
+GoldScout-export 5^a7bqejsmx1rx^8
 2748^1^0^0^0^0^0.0000^0.0000^0^^^
 4847^1^0^0^0^0^0.0000^0.0000^0^^^
 4849^1^0^0^0^0^0.0000^0.0000^0^^^
 4852^3^0^0^0^0^0.0000^0.0000^0^^^
 4855^5^0^0^0^0^0.0000^0.0000^0^^^
 4860^2^0^0^0^0^0.0000^0.0000^0^^^
+5331^12^0^42^43^1444^0.2663^0.5353^12^Hatecrest Warrior^3928:1:1,7973:6:6,9247:3:3,14435:1:1,17058:3:3^
+5332^7^0^41^42^1444^0.2654^0.5344^7^Hatecrest Wave Rider^7973:4:4,9247:1:1,17058:4:4^
+5333^6^0^44^45^1444^0.2632^0.6793^6^Hatecrest Serpent Guard^4603:1:2,7973:4:4,17058:2:2^
+5335^15^0^41^42^1444^0.2650^0.5258^15^Hatecrest Screamer^3937:1:1,7973:6:6,9247:3:3,17058:4:4^
+5336^20^0^43^44^1444^0.2678^0.6835^20^Hatecrest Sorceress^1645:1:1,3928:1:1,4424:1:1,4603:1:1,7973:6:6,8705:1:1,17058:8:8^
+5337^7^0^42^43^1444^0.2640^0.5430^7^Hatecrest Siren^7973:4:4,9247:3:3,17058:5:5^
 5419^2^0^42^43^1446^0.5332^0.2566^2^Glasshide Basilisk^^
 5422^1^0^41^41^1446^0.5583^0.2442^1^Scorpid Hunter^^
 5425^1^0^41^41^1446^0.5589^0.2454^1^Starving Blisterpaw^12037:1:1^
@@ -47,6 +53,7 @@ GoldScout-export 5^a7bqejsmx1rx^7
 8095^4^0^0^0^0^0.0000^0.0000^0^^1701:1:1,1702:1:1,4092:4:4,14786:1:1^
 8120^1^0^0^0^0^0.0000^0.0000^0^^4093:1:1,11387:1:1^
 8127^1^0^0^0^0^0.0000^0.0000^0^^9523:1:1^
+8136^1^0^47^47^1444^0.2854^0.7046^1^Lord Shalzaru^9248:1:1^
 8996^4^0^42^43^1446^0.6264^0.3285^4^Voidwalker Minion^^
 9396^1^0^42^42^1446^0.5603^0.2463^1^Ground Pounder^^
 10082^2^0^0^0^0^0.0000^0.0000^0^^14270:1:1,251402:1:1,274658:2:2^
@@ -80,6 +87,7 @@ GoldScout-export 5^a7bqejsmx1rx^7
 @i^3864^Citrine
 @i^3928^Superior Healing Potion
 @i^3936^Crochet Belt
+@i^3937^Crochet Boots
 @i^3962^Thick Leather Boots
 @i^3966^Thick Leather Pants
 @i^3968^Thick Leather Tunic
@@ -87,23 +95,29 @@ GoldScout-export 5^a7bqejsmx1rx^7
 @i^4093^Large Basilisk Tail
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
+@i^4424^Scroll of Spirit III
 @i^4599^Cured Ham Steak
+@i^4603^Raw Spotted Yellowtail
 @i^4636^Strong Iron Lockbox
 @i^4637^Steel Lockbox
 @i^5524^Thick-shelled Clam
 @i^6149^Greater Mana Potion
 @i^6300^Husk Fragment
 @i^6302^Delicate Insect Wing
+@i^7973^Big-mouth Clam
 @i^8151^Flask of Mojo
 @i^8444^Executioner's Key
 @i^8483^Wastewander Water Pouch
 @i^8548^Divino-matic Rod
 @i^8623^OOX-17 TN Distress Beacon
+@i^8705^OOX-22 FE Distress Beacon
 @i^8707^Gahz'rilla's Electrified Scale
 @i^8723^Caliph Scorpidsting's Head
 @i^9234^Tiara of the Deep
 @i^9238^Uncracked Scarab Shell
 @i^9243^Shriveled Heart
+@i^9247^Hatecrest Naga Scale
+@i^9248^Mysterious Relic
 @i^9467^Gahz'rilla Fang
 @i^9474^Jinxed Hoodoo Kilt
 @i^9478^Ripsaw
@@ -115,11 +129,13 @@ GoldScout-export 5^a7bqejsmx1rx^7
 @i^12037^Mystery Meat
 @i^14261^Bloodwoven Cloak of Magic
 @i^14270^Gaea's Cloak of the Wolf
+@i^14435^Windchaser Cinch
 @i^14781^Khan's Cloak
 @i^14786^Khan's Legguards
 @i^14839^Tyrant's Greaves
 @i^14843^Tyrant's Helm
 @i^14910^Brutish Armguards of the Tiger
+@i^17058^Fish Oil
 @i^18082^Zum'rah's Vexing Cane
 @i^213544^Scroll: TOPAZ YORAK
 @i^213547^Scroll: THAW WORDS
@@ -155,6 +171,7 @@ GoldScout-export 5^a7bqejsmx1rx^7
 @q^3864^2:7:1
 @q^3928^1:0:0
 @q^3936^0:4:0
+@q^3937^0:4:0
 @q^3962^0:4:0
 @q^3966^0:4:0
 @q^3968^0:4:0
@@ -162,23 +179,29 @@ GoldScout-export 5^a7bqejsmx1rx^7
 @q^4093^0:15:0
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4424^1:0:0
 @q^4599^1:0:0
+@q^4603^1:7:1
 @q^4636^2:15:0
 @q^4637^2:15:0
 @q^5524^1:7:0
 @q^6149^1:0:0
 @q^6300^0:15:0
 @q^6302^0:15:0
+@q^7973^1:7:0
 @q^8151^1:7:1
 @q^8444^1:0:0
 @q^8483^1:12:0
 @q^8548^1:0:0
 @q^8623^2:12:0
+@q^8705^2:12:0
 @q^8707^1:12:0
 @q^8723^1:12:0
 @q^9234^1:12:0
 @q^9238^1:12:0
 @q^9243^2:4:0
+@q^9247^1:12:0
+@q^9248^1:12:0
 @q^9467^3:2:0
 @q^9474^3:4:0
 @q^9478^3:2:0
@@ -190,11 +213,13 @@ GoldScout-export 5^a7bqejsmx1rx^7
 @q^12037^1:7:1
 @q^14261^2:4:0
 @q^14270^2:4:0
+@q^14435^2:4:0
 @q^14781^2:4:0
 @q^14786^2:4:0
 @q^14839^2:4:0
 @q^14843^2:4:0
 @q^14910^2:4:0
+@q^17058^1:15:0
 @q^18082^3:2:0
 @q^213544^1:0:0
 @q^213547^1:0:0
@@ -221,6 +246,7 @@ GoldScout-export 5^a7bqejsmx1rx^7
 @q^274657^3:4:0
 @q^274658^3:2:0
 @q^277112^1:12:0
+@m^1444^Feralas
 @m^1446^Tanaris
 @m^2548^Riverglades
 @c^118^
@@ -1503,6 +1529,12 @@ GoldScout-export 5^a7bqejsmx1rx^7
 @c^285280^
 @c^285281^
 @c^286152^
+@a^5331^185:1,205:10,225:1
+@a^5332^205:7
+@a^5333^265:5,285:1
+@a^5335^185:1,205:14
+@a^5336^265:16,285:4
+@a^5337^205:5,225:2
 @a^5419^110:2
 @a^5422^91:1
 @a^5425^91:1
@@ -1513,6 +1545,7 @@ GoldScout-export 5^a7bqejsmx1rx^7
 @a^5623^132:1
 @a^5647^87:1
 @a^7847^152:1
+@a^8136^285:1
 @a^8996^132:4
 @a^9396^91:1
 @a^255898^295:7,315:1

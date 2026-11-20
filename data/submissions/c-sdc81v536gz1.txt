@@ -1,4 +1,4 @@
-GoldScout-export 5^sdc81v536gz1^10
+GoldScout-export 6^sdc81v536gz1^11
 1121^7^0^8^9^1426^0.2524^0.5118^7^Frostmane Snowstrider^767:1:1,1413:1:1,2589:2:3^
 1122^6^0^9^10^1426^0.2171^0.5291^6^Frostmane Hideskinner^2138:1:1,2589:1:1^
 1123^8^0^8^9^1426^0.2568^0.5101^8^Frostmane Headhunter^159:1:1,1414:1:1,2589:3:3^
@@ -24,10 +24,16 @@ GoldScout-export 5^sdc81v536gz1^10
 2031^8^0^1^1^1438^0.6133^0.4313^8^Young Nightsaber^2654:1:1,3363:2:2,4865:3:3,7073:2:2,7074:3:3^
 2032^7^0^2^2^1438^0.6086^0.3540^7^Mangy Nightsaber^1368:1:1,1372:1:1,1374:1:1,2211:1:1,4865:2:2,7073:2:2,7074:4:4^
 2042^1^0^6^6^1438^0.6400^0.5664^1^Nightsaber^4813:1:1^
+3743^1^0^24^24^1440^0.5281^0.6290^1^Foulweald Warrior^^
+3746^2^0^25^25^1440^0.5119^0.5987^2^Foulweald Den Watcher^2592:1:1^
+3748^2^0^24^25^1440^0.5086^0.5981^2^Foulweald Shaman^211854:1:1^
+3750^3^0^23^24^1440^0.5210^0.6091^3^Foulweald Totemic^1819:1:1,4306:1:1,4538:1:1,211854:1:1^
 3809^2^0^21^21^1440^0.4272^0.6106^2^Ashenvale Bear^2940:1:1,3702:1:1,3730:2:2,5635:1:1,250182:1:1^
 4006^2^0^19^20^1442^0.7749^0.4323^2^Deepmoss Webspinner^1081:1:1,3174:1:1,3931:1:1,15248:1:1^
-4012^9^0^21^22^1442^0.5226^0.4408^9^Pridewing Wyvern^5135:1:1,5136:5:5,5808:4:4^
-4014^4^0^22^23^1442^0.5192^0.4445^4^Pridewing Consort^5136:2:2,5808:1:1^
+4012^16^0^21^22^1442^0.4936^0.4498^16^Pridewing Wyvern^5135:2:2,5136:6:6,5808:10:10^
+4013^4^0^23^24^1442^0.5235^0.3964^4^Pridewing Skyhunter^5136:2:2,5635:1:1,277917:3:3^
+4014^8^0^22^23^1442^0.4855^0.4589^8^Pridewing Consort^5135:1:1,5136:4:4,5808:2:2^
+4015^1^0^25^25^1442^0.5466^0.3947^1^Pridewing Patriarch^5136:1:1,5751:1:1,277917:1:1^
 275703^1^0^6^6^1438^0.6063^0.6693^1^Lasher Sproutling^4604:1:1^
 @i^117^Tough Jerky
 @i^118^Minor Healing Potion
@@ -49,11 +55,13 @@ GoldScout-export 5^sdc81v536gz1^10
 @i^1414^Cracked Sledge
 @i^1415^Carpenter's Mallet
 @i^1476^Snapped Spider Limb
+@i^1819^Gouging Pick
 @i^2138^Sharpened Letter Opener
 @i^2210^Battered Buckler
 @i^2211^Bent Large Shield
 @i^2449^Earthroot
 @i^2589^Linen Cloth
+@i^2592^Wool Cloth
 @i^2649^Flimsy Chain Belt
 @i^2650^Flimsy Chain Boots
 @i^2651^Flimsy Chain Bracers
@@ -77,6 +85,8 @@ GoldScout-export 5^sdc81v536gz1^10
 @i^3702^Bear Gall Bladder
 @i^3730^Big Bear Meat
 @i^3931^Poisoned Spider Fang
+@i^4306^Silk Cloth
+@i^4538^Snapvine Watermelon
 @i^4604^Forest Mushroom Cap
 @i^4757^Cracked Egg Shells
 @i^4813^Small Leather Collar
@@ -87,6 +97,7 @@ GoldScout-export 5^sdc81v536gz1^10
 @i^5166^Webwood Venom Sac
 @i^5168^Timberling Seed
 @i^5635^Sharp Claw
+@i^5751^Webwing Cloak
 @i^5808^Pridewing Venom Sac
 @i^6308^Raw Bristle Whisker Catfish
 @i^6889^Small Egg
@@ -99,8 +110,12 @@ GoldScout-export 5^sdc81v536gz1^10
 @i^10640^Webwood Ichor
 @i^15248^Gleaming Claymore of the Whale
 @i^21071^Raw Sagefish
+@i^21113^Watertight Trunk
+@i^21114^Rumsey Rum Dark
+@i^211854^Scroll: OMIT KESA
 @i^250182^Recipe: Bear Brisket
 @i^277190^Fang of Githyiss
+@i^277917^Stonetalon Supply Bundle
 @q^117^1:0:0
 @q^118^1:0:0
 @q^159^1:0:0
@@ -121,11 +136,13 @@ GoldScout-export 5^sdc81v536gz1^10
 @q^1414^0:2:0
 @q^1415^0:2:0
 @q^1476^0:15:0
+@q^1819^0:2:0
 @q^2138^0:2:0
 @q^2210^0:4:0
 @q^2211^0:4:0
 @q^2449^1:7:1
 @q^2589^1:7:1
+@q^2592^1:7:1
 @q^2649^0:4:0
 @q^2650^0:4:0
 @q^2651^0:4:0
@@ -149,6 +166,8 @@ GoldScout-export 5^sdc81v536gz1^10
 @q^3702^0:15:0
 @q^3730^1:7:1
 @q^3931^0:15:0
+@q^4306^1:7:1
+@q^4538^1:0:0
 @q^4604^1:0:0
 @q^4757^0:15:0
 @q^4813^0:15:0
@@ -159,6 +178,7 @@ GoldScout-export 5^sdc81v536gz1^10
 @q^5166^1:12:0
 @q^5168^1:12:0
 @q^5635^1:7:1
+@q^5751^2:4:0
 @q^5808^1:12:0
 @q^6308^1:7:1
 @q^6889^1:7:1
@@ -171,8 +191,12 @@ GoldScout-export 5^sdc81v536gz1^10
 @q^10640^1:12:0
 @q^15248^2:2:0
 @q^21071^1:7:1
+@q^21113^1:15:0
+@q^21114^1:0:0
+@q^211854^1:0:0
 @q^250182^1:9:0
 @q^277190^1:12:0
+@q^277917^1:12:0
 @m^1426^Dun Morogh
 @m^1438^Teldrassil
 @m^1440^Ashenvale
@@ -953,10 +977,16 @@ GoldScout-export 5^sdc81v536gz1^10
 @a^2031^172:8
 @a^2032^131:1,132:1,151:2,152:3
 @a^2042^232:1
+@a^3743^250:1
+@a^3746^230:2
+@a^3748^230:2
+@a^3750^230:1,250:2
 @a^3809^228:1,248:1
 @a^4006^175:2
-@a^4012^169:1,170:6,190:2
-@a^4014^170:2,190:2
+@a^4012^169:1,170:6,188:2,189:5,190:2
+@a^4013^150:3,169:1
+@a^4014^170:2,188:1,189:3,190:2
+@a^4015^150:1
 @a^275703^272:1
-@f^1442^0^6^132^6308:1:1,21071:5:5^169:6
+@f^1442^0^11^132^6308:1:1,21071:8:8,21113:1:1,21114:1:2^149:5,169:6
 @l^0^enUS

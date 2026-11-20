@@ -1,4 +1,4 @@
-GoldScout-export 5^zbm9unaf3lp9^6
+GoldScout-export 5^zbm9unaf3lp9^7
 3^7^0^24^25^1431^0.2454^0.3691^7^Flesh Eater^884:1:1,887:1:1,929:1:1,4606:1:1,6530:1:1,12990:1:1^
 36^4^0^11^12^1436^0.3210^0.3459^4^Harvest Golem^732:1:1,814:1:1,1274:1:1,255007:2:2^
 117^3^0^11^12^1436^0.4143^0.2064^3^Riverpaw Gnoll^2589:1:1^
@@ -36,12 +36,17 @@ GoldScout-export 5^zbm9unaf3lp9^6
 4635^11^0^31^32^1443^0.7131^0.4320^11^Kolkar Windchaser^3385:1:1,4306:5:6,6067:5:5,254432:4:4^
 4636^2^0^32^33^1443^0.7121^0.4504^2^Kolkar Battle Lord^1708:1:1^
 4637^1^0^32^32^1443^0.7071^0.4805^1^Kolkar Destroyer^^
-4663^3^0^30^31^1443^0.5462^0.2927^3^Burning Blade Augur^4306:2:2,11164:1:1^
+4663^4^0^30^31^1443^0.5478^0.2950^4^Burning Blade Augur^4306:3:3,11164:1:1^
 4664^3^0^30^31^1443^0.5582^0.2838^3^Burning Blade Reaver^2592:1:2,4306:1:1^
 4665^3^0^31^32^1443^0.5471^0.2751^3^Burning Blade Adept^3802:1:1,3807:1:1^
-4666^7^0^31^32^1443^0.5495^0.2816^7^Burning Blade Felsworn^2289:1:1,4306:2:3,4338:1:1^
+4666^10^0^31^32^1443^0.5501^0.2870^10^Burning Blade Felsworn^1708:1:1,2289:1:1,3041:1:1,4306:2:3,4338:1:1^
 4667^1^0^33^33^1443^0.5523^0.2659^1^Burning Blade Shadowmage^4306:1:2^
+4711^3^0^32^33^1443^0.3606^0.2761^3^Slitherblade Naga^17057:1:1^
+4712^1^0^32^32^1443^0.3600^0.2950^1^Slitherblade Sorceress^^
 5643^1^0^36^36^1443^0.5270^0.2899^1^Tyranis Malem^6767:1:1^
+11562^1^0^34^34^1443^0.3518^0.3097^1^Drysnap Crawler^^
+11563^1^0^34^35^1443^0.3595^0.3406^1^Drysnap Pincer^15139:1:1^
+13019^1^0^33^33^1443^0.5508^0.2974^1^Burning Blade Seer^4306:1:1,15750:1:1^
 @i^555^Rough Vulture Feathers
 @i^723^Goretusk Liver
 @i^729^Stringy Vulture Meat
@@ -84,6 +89,7 @@ GoldScout-export 5^zbm9unaf3lp9^6
 @i^2765^Hunting Knife
 @i^2961^Burnt Leather Vest
 @i^2965^Warrior's Tunic
+@i^3041^Mage-Eye Blunderbuss
 @i^3171^Broken Boar Tusk
 @i^3172^Boar Intestines
 @i^3174^Spider Ichor
@@ -117,7 +123,10 @@ GoldScout-export 5^zbm9unaf3lp9^6
 @i^9758^Cadet Belt
 @i^11164^Formula: Enchant Weapon - Lesser Beastslayer
 @i^12990^Razor's Edge
+@i^15139^Cutthroat's Pants of Stamina
 @i^15242^Honed Stiletto of Stamina
+@i^15750^Sceptre of Light
+@i^17057^Shiny Fish Scales
 @i^211780^Scroll: KWYJIBO
 @i^211784^Scroll: WUBBA WUBBA
 @i^211785^Scroll: CWAL
@@ -171,6 +180,7 @@ GoldScout-export 5^zbm9unaf3lp9^6
 @q^2765^0:2:0
 @q^2961^2:4:0
 @q^2965^2:4:0
+@q^3041^2:2:0
 @q^3171^0:15:0
 @q^3172^1:7:1
 @q^3174^1:7:1
@@ -204,7 +214,10 @@ GoldScout-export 5^zbm9unaf3lp9^6
 @q^9758^1:4:0
 @q^11164^2:9:0
 @q^12990^3:2:0
+@q^15139^2:4:0
 @q^15242^2:2:0
+@q^15750^1:12:0
+@q^17057^1:15:0
 @q^211780^1:0:0
 @q^211784^1:0:0
 @q^211785^1:0:0
@@ -865,10 +878,15 @@ GoldScout-export 5^zbm9unaf3lp9^6
 @a^4635^154:1,174:6,193:1,194:3
 @a^4636^174:1,194:1
 @a^4637^194:1
-@a^4663^110:2,111:1
+@a^4663^110:2,111:1,131:1
 @a^4664^110:1,111:1,131:1
 @a^4665^111:2,130:1
-@a^4666^110:2,111:5
+@a^4666^110:2,111:7,131:1
 @a^4667^111:1
+@a^4711^107:3
+@a^4712^107:1
 @a^5643^110:1
+@a^11562^127:1
+@a^11563^127:1
+@a^13019^111:1
 @l^0^enUS
