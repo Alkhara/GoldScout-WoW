@@ -1,4 +1,4 @@
-GoldScout-export 5^1dkail4qsvir^5
+GoldScout-export 5^1dkail4qsvir^6
 428^5^0^18^19^1433^0.4202^0.3286^5^Dire Condor^556:1:1,1080:1:1,4775:1:1,4776:1:1,5114:1:1,6889:5:5,17056:3:3^
 429^3^0^25^25^1433^0.7273^0.4269^3^Shadowhide Darkweaver^1075:1:1,1962:1:1^
 430^3^0^18^19^1433^0.2061^0.2444^3^Redridge Mystic^2589:1:3^
@@ -17,6 +17,15 @@ GoldScout-export 5^1dkail4qsvir^5
 579^1^0^24^24^1433^0.6993^0.4253^1^Shadowhide Assassin^2592:1:1^
 615^10^0^23^24^1433^0.3025^0.1007^10^Blackrock Tracker^929:1:1,1445:1:1,1752:1:1,2592:2:3,3770:1:1^
 703^1^0^26^26^1433^0.7642^0.4093^1^Lieutenant Fangore^3632:1:1^
+1024^3^0^20^21^1437^0.1373^0.4106^3^Bluegill Murloc^730:2:2,1468:2:2,1774:1:1,5524:2:2,5784:1:1^
+1025^7^0^21^22^1437^0.1347^0.3869^7^Bluegill Puddlejumper^730:2:2,929:1:1,1468:1:1,5524:4:4,5784:1:1,17057:2:2,211853:1:1^
+1026^1^0^22^22^1437^0.1334^0.3954^1^Bluegill Forager^5524:1:1^
+1040^1^0^24^25^1437^0.1933^0.2543^1^Fen Creeper^1712:1:1^
+1157^18^0^26^27^1437^0.1400^0.3002^18^Cursed Sailor^929:1:1,1205:1:1,1756:1:1,2592:1:2,4306:5:9^
+1158^5^0^27^28^1437^0.1408^0.3003^5^Cursed Marine^929:1:1,2785:1:1,4306:3:4^
+1159^1^0^29^29^1437^0.1394^0.2998^1^First Mate Snellig^3619:1:1^
+1400^1^0^23^23^1437^0.1939^0.2665^1^Wetlands Crocolisk^770:1:1^
+2089^5^0^25^26^1437^0.1784^0.2589^5^Giant Wetlands Crocolisk^770:2:2,3348:5:5^
 4463^5^0^22^23^1433^0.2989^0.1180^5^Blackrock Summoner^2592:2:2,3770:1:1^
 4798^5^0^0^0^0^0.0000^0.0000^0^^2592:1:3,5952:1:1,248707:1:1^
 4799^4^0^0^0^0^0.0000^0.0000^0^^1823:1:1,5952:1:1,14567:1:1,211784:1:1^
@@ -41,15 +50,20 @@ GoldScout-export 5^1dkail4qsvir^5
 214456^1^0^23^23^1433^0.2889^0.0723^1^Dro'zem the Blasphemous^9799:1:1^
 @i^556^Buzzard Beak
 @i^730^Murloc Eye
+@i^770^Pointy Crocolisk Tooth
 @i^929^Healing Potion
 @i^1075^Shadowhide Pendant
 @i^1080^Tough Condor Meat
 @i^1081^Crisp Spider Meat
+@i^1205^Melon Juice
 @i^1440^Gnoll Skull Basher
 @i^1445^Blackrock Pauldrons
 @i^1460^Shadowhide Two-handed Sword
 @i^1468^Murloc Fin
+@i^1712^Scroll of Spirit II
 @i^1752^Linked Chain Shoulderpads
+@i^1756^Reinforced Chain Bracers
+@i^1774^Brocade Cloak
 @i^1801^Rawhide Shoulderpads
 @i^1820^Wooden Maul
 @i^1823^Bludgeoning Cudgel
@@ -61,16 +75,20 @@ GoldScout-export 5^1dkail4qsvir^5
 @i^2592^Wool Cloth
 @i^2674^Crawler Meat
 @i^2675^Crawler Claw
+@i^2785^Stiff Recurve Bow
 @i^3012^Scroll of Agility
 @i^3049^Lambent Scale Breastplate
 @i^3174^Spider Ichor
 @i^3193^Oak Mallet of the Boar
+@i^3348^Giant Crocolisk Skin
 @i^3379^Brocade Bracers
 @i^3385^Lesser Mana Potion
 @i^3614^Yowler's Paw
+@i^3619^Snellig's Snuffbox
 @i^3632^Fangore's Paw
 @i^3770^Mutton Chop
 @i^3931^Poisoned Spider Fang
+@i^4306^Silk Cloth
 @i^4775^Cracked Bill
 @i^4776^Ruffled Feather
 @i^5114^Severed Talon
@@ -104,15 +122,20 @@ GoldScout-export 5^1dkail4qsvir^5
 @i^273842^Treacherous Treads
 @q^556^0:15:0
 @q^730^1:7:1
+@q^770^0:15:0
 @q^929^1:0:0
 @q^1075^1:12:0
 @q^1080^1:7:1
 @q^1081^1:7:1
+@q^1205^1:0:0
 @q^1440^2:2:0
 @q^1445^1:4:0
 @q^1460^2:2:0
 @q^1468^1:7:1
+@q^1712^1:0:0
 @q^1752^0:4:0
+@q^1756^0:4:0
+@q^1774^0:4:0
 @q^1801^0:4:0
 @q^1820^0:2:0
 @q^1823^0:2:0
@@ -124,16 +147,20 @@ GoldScout-export 5^1dkail4qsvir^5
 @q^2592^1:7:1
 @q^2674^1:7:1
 @q^2675^1:7:1
+@q^2785^0:2:0
 @q^3012^1:0:0
 @q^3049^2:4:0
 @q^3174^1:7:1
 @q^3193^2:2:0
+@q^3348^1:12:0
 @q^3379^0:4:0
 @q^3385^1:0:0
 @q^3614^1:12:0
+@q^3619^1:12:0
 @q^3632^1:12:0
 @q^3770^1:0:0
 @q^3931^0:15:0
+@q^4306^1:7:1
 @q^4775^0:15:0
 @q^4776^0:15:0
 @q^5114^0:15:0
@@ -737,8 +764,17 @@ GoldScout-export 5^1dkail4qsvir^5
 @a^579^173:1
 @a^615^25:4,26:2,45:1,46:3
 @a^703^175:1
+@a^1024^142:1,162:2
+@a^1025^142:6,162:1
+@a^1026^142:1
+@a^1040^103:1
+@a^1157^102:2,103:2,122:14
+@a^1158^102:2,122:3
+@a^1159^102:1
+@a^1400^103:1
+@a^2089^83:1,84:1,102:1,103:2
 @a^4463^25:1,26:1,46:2,64:1
 @a^12922^25:1,26:1,46:1,64:1
 @a^214456^25:1
-@f^1437^0^2^124^6359:2:2^240:2
+@f^1437^0^3^124^6359:3:3^64:1,240:2
 @l^0^enUS

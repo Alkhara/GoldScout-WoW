@@ -1,4 +1,4 @@
-GoldScout-export 5^9qrbjwbnme9p^13
+GoldScout-export 5^9qrbjwbnme9p^14
 660^1^0^37^37^1434^0.2471^0.0968^1^Sorcier-docteur Bloodscalp^^
 667^2^0^39^40^1434^0.4833^0.3995^2^Guerrier Skullsplitter^4306:1:2,8153:1:1^
 694^1^0^34^34^1434^0.2987^0.1901^1^Lanceur de haches Bloodscalp^^
@@ -15,6 +15,12 @@ GoldScout-export 5^9qrbjwbnme9p^13
 978^6^0^38^38^1434^0.4914^0.0549^6^Lieutenant de Kurzen^2740:1:1,4306:3:4^
 979^2^0^38^38^1434^0.4914^0.0567^2^Chasseur des ombres de Kurzen^1708:1:1,4338:1:1^
 1114^3^0^37^38^1434^0.4561^0.3424^3^Foudroyeur de la Jungle^2799:1:1,4096:1:1,4097:1:1,9899:1:1^
+1178^2^0^18^18^1432^0.6943^0.2606^2^Ogre Mo'grosh^6347:1:1^
+1179^3^0^18^19^1432^0.7166^0.2512^3^Massacreur Mo'grosh^1210:1:1^
+1180^5^0^19^20^1432^0.7627^0.1747^5^Brute Mo'grosh^1179:1:1,1787:1:1,1811:1:1,1816:1:1,2287:1:1,2589:1:4,4576:1:1,6562:1:1,15248:1:1^
+1183^2^0^19^19^1432^0.7554^0.2476^2^Mystique Mo'grosh^2607:1:1^
+1185^1^0^18^18^1432^0.7546^0.3232^1^Rôdeuse des bois^1081:1:1,1475:1:1,3931:1:1,5465:1:1^
+1210^1^0^22^22^1432^0.7879^0.1572^1^Chok'sul^2561:1:1^
 2240^10^0^32^33^1416^0.5223^0.7652^10^Détrousseuse du Syndicat^4306:4:7,5113:2:2,6986:1:1^
 2241^4^0^34^34^1416^0.4988^0.7747^4^Larron du Syndicat^3800:1:1,4306:1:1^
 2242^2^0^36^36^1416^0.6026^0.4662^2^Espion du Syndicat^4306:1:1,5113:1:1^
@@ -88,8 +94,11 @@ GoldScout-export 5^9qrbjwbnme9p^13
 @i^929^Potion de soins
 @i^1074^Patte d'araignée
 @i^1081^Chair croustillante d'araignée
+@i^1179^Lait glacé
 @i^1205^Jus de melon
+@i^1210^Oeil ténébreux
 @i^1464^Serre de busard
+@i^1475^Petite glande à venin
 @i^1477^Parchemin d'Agilité II
 @i^1520^Sueur de troll
 @i^1686^Moustache à poil dur
@@ -99,10 +108,17 @@ GoldScout-export 5^9qrbjwbnme9p^13
 @i^1708^Nectar sucré
 @i^1710^Potion de soins supérieure
 @i^1711^Parchemin d'Endurance II
+@i^1787^Ceinture raccommodée en cuir
 @i^1806^Cape en cuir armé
+@i^1811^Claymore émoussée
+@i^1816^Hache déséquilibrée
 @i^2251^Patte d'araignée fondante
+@i^2287^Cuissot
 @i^2466^Fétiche Skullsplitter
+@i^2561^Tête de Chok'sul
+@i^2589^Etoffe de lin
 @i^2592^Etoffe de laine
+@i^2607^Cristal Mo'grosh
 @i^2633^Remède tropical
 @i^2732^Les vertes collines de Strangleronce - Page 8
 @i^2735^Les vertes collines de Strangleronce - Page 11
@@ -143,6 +159,7 @@ GoldScout-export 5^9qrbjwbnme9p^13
 @i^3805^Pantalon en cuir durci
 @i^3818^Pâlerette
 @i^3864^Citrine
+@i^3931^Croc d'araignée empoisonné
 @i^4065^Bouclier de combat
 @i^4096^Poil de gorille grossier
 @i^4097^Croc de gorille ébréché
@@ -158,6 +175,7 @@ GoldScout-export 5^9qrbjwbnme9p^13
 @i^4539^Pomme dorette
 @i^4553^Morceau de pierre délabré
 @i^4555^Epaisse queue écailleuse
+@i^4576^Arc léger
 @i^4606^Morilles spongieuses
 @i^4607^Délicieux humus des grottes
 @i^4712^Ceinturon en mailles rougeoyantes
@@ -168,12 +186,15 @@ GoldScout-export 5^9qrbjwbnme9p^13
 @i^5113^Marque du Syndicat
 @i^5116^Longue plume de queue
 @i^5136^Oreille de fourrure déchirée
+@i^5465^Petite patte d'araignée
 @i^5524^Palourde à coque épaisse
 @i^5637^Grand croc
 @i^5785^Ecailles de murloc épaisses
 @i^6308^Poisson-chat moustachu cru
+@i^6347^Formule : Enchantement de bracelets (Force mineure)
 @i^6358^Bouche-noire huileux
 @i^6361^Thon arc-en-ciel cru
+@i^6562^Bottes chatoyantes d'esprit
 @i^6986^Lotus cramoisi
 @i^7069^Air élémentaire
 @i^7354^Bottes de doyen d'ancienneté
@@ -195,6 +216,7 @@ GoldScout-export 5^9qrbjwbnme9p^13
 @i^11386^Oeil spongieux de basilic
 @i^11970^Anneau de spinel du tigre
 @i^12203^Viande de loup rouge
+@i^15248^Claymore resplendissante de courroux sacré
 @i^15935^Bâtonnet solide de l'aigle
 @i^17057^Ecailles de poisson brillantes
 @i^17058^Huile de poisson
@@ -214,8 +236,11 @@ GoldScout-export 5^9qrbjwbnme9p^13
 @q^929^1:0:0
 @q^1074^0:15:0
 @q^1081^1:7:1
+@q^1179^1:0:0
 @q^1205^1:0:0
+@q^1210^2:7:1
 @q^1464^0:15:0
+@q^1475^1:7:1
 @q^1477^1:0:0
 @q^1520^0:15:0
 @q^1686^0:15:0
@@ -225,10 +250,17 @@ GoldScout-export 5^9qrbjwbnme9p^13
 @q^1708^1:0:0
 @q^1710^1:0:0
 @q^1711^1:0:0
+@q^1787^0:4:0
 @q^1806^0:4:0
+@q^1811^0:2:0
+@q^1816^0:2:0
 @q^2251^1:7:1
+@q^2287^1:0:0
 @q^2466^1:12:0
+@q^2561^1:12:0
+@q^2589^1:7:1
 @q^2592^1:7:1
+@q^2607^1:12:0
 @q^2633^1:0:0
 @q^2732^1:12:0
 @q^2735^1:12:0
@@ -269,6 +301,7 @@ GoldScout-export 5^9qrbjwbnme9p^13
 @q^3805^0:4:0
 @q^3818^1:7:1
 @q^3864^2:7:1
+@q^3931^0:15:0
 @q^4065^2:4:0
 @q^4096^1:15:0
 @q^4097^0:15:0
@@ -284,6 +317,7 @@ GoldScout-export 5^9qrbjwbnme9p^13
 @q^4539^1:0:0
 @q^4553^0:15:0
 @q^4555^0:15:0
+@q^4576^2:2:0
 @q^4606^1:0:0
 @q^4607^1:0:0
 @q^4712^2:4:0
@@ -294,12 +328,15 @@ GoldScout-export 5^9qrbjwbnme9p^13
 @q^5113^0:15:0
 @q^5116^1:7:1
 @q^5136^0:15:0
+@q^5465^1:7:1
 @q^5524^1:7:0
 @q^5637^1:7:1
 @q^5785^1:7:1
 @q^6308^1:7:1
+@q^6347^2:9:0
 @q^6358^1:7:1
 @q^6361^1:7:1
+@q^6562^2:4:0
 @q^6986^0:15:0
 @q^7069^1:7:1
 @q^7354^2:4:0
@@ -321,6 +358,7 @@ GoldScout-export 5^9qrbjwbnme9p^13
 @q^11386^0:15:0
 @q^11970^2:4:0
 @q^12203^1:7:1
+@q^15248^2:2:0
 @q^15935^2:4:0
 @q^17057^1:15:0
 @q^17058^1:15:0
@@ -341,6 +379,7 @@ GoldScout-export 5^9qrbjwbnme9p^13
 @m^1417^Hautes-terres d'Arathi
 @m^1418^Terres ingrates
 @m^1424^Contreforts de Hautebrande
+@m^1432^Loch Modan
 @m^1434^Vallée de Strangleronce
 @m^1440^Orneval
 @m^1443^Désolace
@@ -1088,6 +1127,12 @@ GoldScout-export 5^9qrbjwbnme9p^13
 @a^978^9:2,29:4
 @a^979^29:2
 @a^1114^128:1,129:1,149:1
+@a^1178^94:1,113:1
+@a^1179^94:1,114:2
+@a^1180^55:1,75:3,114:1
+@a^1183^95:2
+@a^1185^135:1
+@a^1210^75:1
 @a^2240^271:4,329:6
 @a^2241^271:1,309:1,329:2
 @a^2242^191:1,192:1

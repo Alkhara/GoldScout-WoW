@@ -1,7 +1,14 @@
-GoldScout-export 5^i63i7sknje24^8
+GoldScout-export 5^i63i7sknje24^9
 215^1^0^25^25^1431^0.2433^0.7085^1^Defias Night Runner^^
+681^12^0^30^31^1434^0.3470^0.1142^12^Young Stranglethorn Tiger^1686:1:1,12202:6:6^
+683^10^0^30^31^1434^0.4067^0.1209^10^Young Panther^1686:2:2,1687:2:2,5637:2:2^
+702^1^0^34^34^1434^0.3252^0.1202^1^Bloodscalp Scavenger^^
+937^1^0^32^32^1434^0.4467^0.1108^1^Kurzen Jungle Fighter^4306:1:1^
+938^1^0^34^34^1434^0.4424^0.0797^1^Kurzen Commando^2725:1:1^
+940^2^0^32^32^1434^0.4414^0.0969^2^Kurzen Medicine Man^2633:1:1^
 1017^1^0^25^26^1437^0.3487^0.1978^1^Highland Scytheclaw^3685:1:1^
 1018^7^0^27^28^1437^0.3517^0.1790^7^Highland Razormaw^1697:2:2,3685:3:3,280103:2:2^
+1150^1^0^30^31^1434^0.3678^0.1080^1^River Crocolisk^^
 1211^2^0^8^10^1426^0.2460^0.3968^2^Leper Gnome^2589:1:2^
 4969^1^0^25^25^1453^0.7365^0.5946^1^Old Town Thug^^
 6206^5^0^0^0^0^0.0000^0.0000^0^^804:1:1,2592:2:5,3385:1:1,6613:1:1,9308:1:1,9309:2:2^
@@ -31,6 +38,8 @@ GoldScout-export 5^i63i7sknje24^8
 @i^804^Large Blue Sack
 @i^929^Healing Potion
 @i^1205^Melon Juice
+@i^1686^Bristly Whisker
+@i^1687^Retractable Claw
 @i^1697^Keen Raptor Tooth
 @i^1753^Linked Chain Vest
 @i^1756^Reinforced Chain Bracers
@@ -41,6 +50,8 @@ GoldScout-export 5^i63i7sknje24^8
 @i^2221^Targe Shield
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2633^Jungle Remedy
+@i^2725^Green Hills of Stranglethorn - Page 1
 @i^2785^Stiff Recurve Bow
 @i^3186^Viking Sword of Stamina
 @i^3210^Brutal War Axe of the Prophet
@@ -56,6 +67,7 @@ GoldScout-export 5^i63i7sknje24^8
 @i^4542^Moist Cornbread
 @i^4712^Glimmering Mail Girdle
 @i^5576^Large Brown Sack
+@i^5637^Large Fang
 @i^6289^Raw Longjaw Mud Snapper
 @i^6291^Raw Brilliant Smallfish
 @i^6303^Raw Slitherskin Mackerel
@@ -67,6 +79,7 @@ GoldScout-export 5^i63i7sknje24^8
 @i^6613^Sage's Bracers of the Channeler
 @i^6717^Gaffer Jack
 @i^6893^Workshop Key
+@i^8365^Raw Mithril Head Trout
 @i^9277^Techbot's Memory Core
 @i^9279^White Punch Card
 @i^9308^Grime-Encrusted Object
@@ -77,10 +90,13 @@ GoldScout-export 5^i63i7sknje24^8
 @i^9458^Thermaplugg's Central Core
 @i^11968^Amber Hoop of the Bandit
 @i^11984^Cobalt Ring of the Hierophant
+@i^12202^Tiger Meat
 @i^12238^Darkshore Grouper
 @i^13097^Thunderbrow Ring
 @i^20708^Tightly Sealed Trunk
 @i^20709^Rumsey Rum Light
+@i^21150^Iron Bound Trunk
+@i^21153^Raw Greater Sagefish
 @i^248692^Waylaid Crate: Expert Ore
 @i^248705^Waylaid Crate: Journeyman Fabrics
 @i^274043^Irradiated Shield
@@ -88,6 +104,8 @@ GoldScout-export 5^i63i7sknje24^8
 @q^804^1:1:0
 @q^929^1:0:0
 @q^1205^1:0:0
+@q^1686^0:15:0
+@q^1687^0:15:0
 @q^1697^0:15:0
 @q^1753^0:4:0
 @q^1756^0:4:0
@@ -98,6 +116,8 @@ GoldScout-export 5^i63i7sknje24^8
 @q^2221^0:4:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2633^1:0:0
+@q^2725^1:12:0
 @q^2785^0:2:0
 @q^3186^2:2:0
 @q^3210^2:2:0
@@ -113,6 +133,7 @@ GoldScout-export 5^i63i7sknje24^8
 @q^4542^1:0:0
 @q^4712^2:4:0
 @q^5576^1:1:0
+@q^5637^1:7:1
 @q^6289^1:7:1
 @q^6291^1:7:1
 @q^6303^1:7:1
@@ -124,6 +145,7 @@ GoldScout-export 5^i63i7sknje24^8
 @q^6613^2:4:0
 @q^6717^1:12:0
 @q^6893^1:13:0
+@q^8365^1:7:1
 @q^9277^1:12:0
 @q^9279^1:12:0
 @q^9308^1:12:0
@@ -134,10 +156,13 @@ GoldScout-export 5^i63i7sknje24^8
 @q^9458^3:4:0
 @q^11968^2:4:0
 @q^11984^2:4:0
+@q^12202^1:7:1
 @q^12238^1:0:0
 @q^13097^3:4:0
 @q^20708^1:15:0
 @q^20709^1:0:0
+@q^21150^1:15:0
+@q^21153^1:7:1
 @q^248692^1:0:1
 @q^248705^2:0:1
 @q^274043^3:4:0
@@ -880,8 +905,15 @@ GoldScout-export 5^i63i7sknje24^8
 @c^279982^
 @c^286152^
 @a^215^284:1
+@a^681^26:1,28:1,46:6,47:4
+@a^683^28:1,47:1,48:7,67:1
+@a^702^46:1
+@a^937^48:1
+@a^938^28:1
+@a^940^28:2
 @a^1017^66:1
 @a^1018^66:3,67:4
+@a^1150^47:1
 @a^1211^144:2
 @a^4969^234:1
 @a^6208^208:1
@@ -889,7 +921,7 @@ GoldScout-export 5^i63i7sknje24^8
 @a^6231^208:1
 @f^1413^0^7^102^6303:3:3,6361:4:4^152:7
 @f^1433^0^20^91^6289:9:9,6308:11:11^225:20
-@f^1434^0^2^145^6362:2:2^285:2
+@f^1434^0^14^145^6308:1:1,6362:2:2,8365:4:4,21150:1:1,21153:6:6^46:4,47:8,285:2
 @f^1437^0^1^102^6358:1:1^240:1
 @f^1439^0^20^77^3820:1:1,6303:3:3,6358:6:6,6361:4:4,6717:3:3,12238:4:4,20708:1:1,20709:1:2^166:9,287:7,326:4
 @f^1440^0^39^145^6289:14:14,6308:25:25^186:4,289:34,312:1
