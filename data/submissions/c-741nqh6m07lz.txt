@@ -1,4 +1,4 @@
-GoldScout-export 6^741nqh6m07lz^30
+GoldScout-export 6^741nqh6m07lz^31
 92^11^0^39^40^1418^0.1382^0.3415^11^Rock Elemental^4552:2:2,4553:5:5,4784:6:6,7067:1:1,7848:3:3,7912:5:7,8150:3:3^
 667^1^0^40^40^1434^0.4659^0.2940^1^Skullsplitter Warrior^1520:1:1,3916:1:1^
 674^14^0^40^41^1434^0.4151^0.4259^14^Venture Co. Strip Miner^1630:6:6,2725:1:1,3771:1:1,3917:6:6,4306:7:12,4338:1:1,11203:1:1^
@@ -44,6 +44,8 @@ GoldScout-export 6^741nqh6m07lz^30
 2831^16^0^39^41^1418^0.1745^0.6270^16^Giant Buzzard^1464:5:5,3404:4:4,5116:2:2,5829:2:2,7847:5:5,11416:2:2,11418:1:1,12037:3:3^
 2892^1^0^39^40^1418^0.6637^0.4491^1^Stonevault Seer^211269:1:1^
 2909^1^0^40^40^1418^0.3753^0.1116^1^Hammertoe Grez^^
+2955^18^0^1^2^1412^0.4548^0.7964^18^Plainstrider^1366:1:1,1368:2:2,2210:1:1,2211:1:1,2650:1:1,3363:2:2,4739:7:7,4740:7:7,4757:10:10,7096:10:10^
+2961^14^0^3^3^1412^0.4432^0.8815^14^Mountain Cougar^1364:1:1,1367:1:1,1368:1:1,1372:1:1,1377:1:1,2210:1:1,2652:1:1,2654:1:1,4742:10:10,4865:4:4,7073:4:4,7074:8:8^
 4113^1^0^28^28^1441^0.6268^0.6067^1^Gravelsnout Digger^4306:1:1^
 4130^1^0^32^33^1441^0.6758^0.8597^1^Silithid Searcher^6300:1:1,248692:1:1^
 4131^8^0^34^35^1441^0.6548^0.8606^8^Silithid Invader^6300:2:2,6302:3:3^
@@ -194,6 +196,12 @@ GoldScout-export 6^741nqh6m07lz^30
 @i^770^Pointy Crocolisk Tooth
 @i^1177^Oil of Olaf
 @i^1205^Melon Juice
+@i^1364^Ragged Leather Vest
+@i^1366^Ragged Leather Pants
+@i^1367^Ragged Leather Boots
+@i^1368^Ragged Leather Gloves
+@i^1372^Ragged Cloak
+@i^1377^Frayed Gloves
 @i^1464^Buzzard Talon
 @i^1477^Scroll of Agility II
 @i^1514^Rusty Warhammer
@@ -206,12 +214,18 @@ GoldScout-export 6^741nqh6m07lz^30
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
 @i^1783^Cross-stitched Gloves
+@i^2210^Battered Buckler
+@i^2211^Bent Large Shield
 @i^2313^Medium Armor Kit
 @i^2592^Wool Cloth
+@i^2650^Flimsy Chain Boots
+@i^2652^Flimsy Chain Cloak
+@i^2654^Flimsy Chain Pants
 @i^2725^Green Hills of Stranglethorn - Page 1
 @i^2728^Green Hills of Stranglethorn - Page 4
 @i^2797^Heart of Mokk
 @i^2799^Gorilla Fang
+@i^3363^Frayed Belt
 @i^3404^Buzzard Wing
 @i^3667^Tender Crocolisk Meat
 @i^3771^Wild Hog Shank
@@ -257,8 +271,13 @@ GoldScout-export 6^741nqh6m07lz^30
 @i^4601^Soft Banana Bread
 @i^4607^Delicious Cave Mold
 @i^4638^Reinforced Steel Lockbox
+@i^4739^Plainstrider Meat
+@i^4740^Plainstrider Feather
+@i^4742^Mountain Cougar Pelt
+@i^4757^Cracked Egg Shells
 @i^4784^Lifeless Stone
 @i^4791^Enchanted Water
+@i^4865^Ruined Pelt
 @i^5116^Long Tail Feather
 @i^5215^Ember Wand of the Sorcerer
 @i^5524^Thick-shelled Clam
@@ -277,6 +296,9 @@ GoldScout-export 6^741nqh6m07lz^30
 @i^6826^Brilliant Scale
 @i^7067^Elemental Earth
 @i^7070^Elemental Water
+@i^7073^Broken Fang
+@i^7074^Chipped Claw
+@i^7096^Plucked Feather
 @i^7479^Ranger Helm of the Bandit
 @i^7846^Crag Coyote Fang
 @i^7847^Buzzard Gizzard
@@ -368,6 +390,12 @@ GoldScout-export 6^741nqh6m07lz^30
 @q^770^0:15:0
 @q^1177^1:0:0
 @q^1205^1:0:0
+@q^1364^0:4:0
+@q^1366^0:4:0
+@q^1367^0:4:0
+@q^1368^0:4:0
+@q^1372^0:4:0
+@q^1377^0:4:0
 @q^1464^0:15:0
 @q^1477^1:0:0
 @q^1514^0:2:0
@@ -380,12 +408,18 @@ GoldScout-export 6^741nqh6m07lz^30
 @q^1708^1:0:0
 @q^1710^1:0:0
 @q^1783^0:4:0
+@q^2210^0:4:0
+@q^2211^0:4:0
 @q^2313^1:0:0
 @q^2592^1:7:1
+@q^2650^0:4:0
+@q^2652^0:4:0
+@q^2654^0:4:0
 @q^2725^1:12:0
 @q^2728^1:12:0
 @q^2797^1:12:0
 @q^2799^1:12:0
+@q^3363^0:4:0
 @q^3404^1:7:1
 @q^3667^1:7:1
 @q^3771^1:0:0
@@ -431,8 +465,13 @@ GoldScout-export 6^741nqh6m07lz^30
 @q^4601^1:0:0
 @q^4607^1:0:0
 @q^4638^2:15:0
+@q^4739^1:12:0
+@q^4740^1:12:0
+@q^4742^1:12:0
+@q^4757^0:15:0
 @q^4784^0:15:0
 @q^4791^1:0:0
+@q^4865^0:15:0
 @q^5116^1:7:1
 @q^5215^2:2:0
 @q^5524^1:7:0
@@ -451,6 +490,9 @@ GoldScout-export 6^741nqh6m07lz^30
 @q^6826^0:15:0
 @q^7067^1:7:1
 @q^7070^1:7:1
+@q^7073^0:15:0
+@q^7074^0:15:0
+@q^7096^0:15:0
 @q^7479^2:4:0
 @q^7846^1:12:0
 @q^7847^1:12:0
@@ -539,6 +581,7 @@ GoldScout-export 6^741nqh6m07lz^30
 @q^277112^1:12:0
 @q^279601^1:12:0
 @q^281746^2:4:0
+@m^1412^Mulgore
 @m^1413^The Barrens
 @m^1417^Arathi Highlands
 @m^1418^Badlands
@@ -1285,6 +1328,8 @@ GoldScout-export 6^741nqh6m07lz^30
 @a^2831^204:1,206:1,222:1,223:3,243:5,262:1,282:1,283:2,285:1
 @a^2892^173:1
 @a^2909^47:1
+@a^2955^308:1,309:10,328:6,329:1
+@a^2961^348:8,349:5,368:1
 @a^4113^252:1
 @a^4130^353:1
 @a^4131^352:2,353:6

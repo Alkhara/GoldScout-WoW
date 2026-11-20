@@ -1,4 +1,4 @@
-GoldScout-export 6^3yybfx92e4lq^10
+GoldScout-export 6^3yybfx92e4lq^11
 2244^4^0^21^22^1424^0.6658^0.4748^4^Syndicate Shadow Mage^2592:1:2,3692:2:2^
 2260^5^0^21^22^1424^0.6603^0.4794^5^Syndicate Rogue^2592:1:1,3692:2:2,4306:1:1^
 2261^5^0^20^21^1424^0.6686^0.4739^5^Syndicate Watchman^1742:1:1,2592:2:2,3692:2:2,211784:1:1^
@@ -44,6 +44,8 @@ GoldScout-export 6^3yybfx92e4lq^10
 2562^8^0^32^33^1417^0.3300^0.4790^8^Boulderfist Ogre^3771:1:1,4306:2:4^
 2563^2^0^32^33^1417^0.5473^0.3349^2^Plains Creeper^1074:1:1,1081:1:1,3182:1:1,4585:1:1^
 2564^10^0^33^34^1417^0.3416^0.4503^10^Boulderfist Enforcer^1708:1:1,2592:1:3,3341:1:1,3771:1:1,4306:1:1,213546:1:1^
+2566^10^0^35^36^1417^0.5394^0.7132^10^Boulderfist Brute^1710:2:2,3771:1:1,3780:1:1,3792:1:1,4306:3:4,15213:1:1,213422:2:2^
+2567^4^0^36^37^1417^0.5408^0.7147^4^Boulderfist Magus^^
 2581^1^0^31^31^1417^0.5577^0.3628^1^Dabyrie Militia^^
 2582^4^0^30^31^1417^0.5637^0.3955^4^Dabyrie Laborer^4306:2:3^
 4420^1^0^0^0^0^0.0000^0.0000^0^^4306:1:2,274161:1:1^
@@ -148,8 +150,10 @@ GoldScout-export 6^3yybfx92e4lq^10
 @i^3731^Lion Meat
 @i^3745^Rune of Opening
 @i^3771^Wild Hog Shank
+@i^3780^Long-barreled Musket
 @i^3784^Metal Stave
 @i^3787^Stone Club
+@i^3792^Interlaced Belt
 @i^3802^Hardened Leather Bracers
 @i^4306^Silk Cloth
 @i^4461^Raptor Hide
@@ -198,6 +202,7 @@ GoldScout-export 6^3yybfx92e4lq^10
 @i^14209^Vital Sash of the Whale
 @i^14585^Dokebi Leggings
 @i^15125^Robust Gloves of Shadow Protection
+@i^15213^Mercenary Blade of the Wolf
 @i^15242^Honed Stiletto of the Whale
 @i^15259^Hefty Battlehammer of Magic
 @i^15334^Wrangler's Gloves of Fire Protection
@@ -207,6 +212,7 @@ GoldScout-export 6^3yybfx92e4lq^10
 @i^211853^Scroll: VOCE WELL
 @i^211854^Scroll: OMIT KESA
 @i^211855^Scroll: STHENIC LUNATE
+@i^213422^Illegible Recipe
 @i^213545^Scroll: PEATCHY ATTAX
 @i^213546^Scroll: SHOOBEEDOOP
 @i^216483^Witherbark Mallet
@@ -280,8 +286,10 @@ GoldScout-export 6^3yybfx92e4lq^10
 @q^3731^1:7:1
 @q^3745^1:12:0
 @q^3771^1:0:0
+@q^3780^0:2:0
 @q^3784^0:2:0
 @q^3787^0:2:0
+@q^3792^0:4:0
 @q^3802^0:4:0
 @q^4306^1:7:1
 @q^4461^1:7:1
@@ -330,6 +338,7 @@ GoldScout-export 6^3yybfx92e4lq^10
 @q^14209^2:4:0
 @q^14585^2:4:0
 @q^15125^2:4:0
+@q^15213^2:2:0
 @q^15242^2:2:0
 @q^15259^2:2:0
 @q^15334^2:4:0
@@ -339,6 +348,7 @@ GoldScout-export 6^3yybfx92e4lq^10
 @q^211853^1:0:0
 @q^211854^1:0:0
 @q^211855^1:0:0
+@q^213422^1:12:0
 @q^213545^1:0:0
 @q^213546^1:0:0
 @q^216483^1:0:0
@@ -1119,6 +1129,8 @@ GoldScout-export 6^3yybfx92e4lq^10
 @a^2562^186:6,187:2
 @a^2563^130:1,131:1
 @a^2564^166:5,167:1,186:4
+@a^2566^270:1,290:7,291:2
+@a^2567^290:4
 @a^2581^151:1
 @a^2582^150:1,151:2,171:1
 @a^4479^150:1

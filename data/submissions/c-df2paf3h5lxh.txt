@@ -1,4 +1,4 @@
-GoldScout-export 6^df2paf3h5lxh^6
+GoldScout-export 6^df2paf3h5lxh^7
 154^15^0^16^17^1436^0.6177^0.5824^15^Großer Fleischreißer^555:1:1,729:4:4,4775:5:5,4776:4:4,5114:4:4,6575:1:1,6889:9:9,17056:5:5,248682:1:1^
 157^25^0^14^15^1436^0.4210^0.5757^25^Geiferzahn^723:11:11,731:12:12,769:19:25,771:4:4,818:1:1,2677:9:9,3171:3:3,3172:6:6,9747:1:1,211785:1:1^
 199^11^0^10^11^1436^0.5499^0.2842^11^Junger Fleischreißer^555:4:4,3399:3:3,4757:4:4,4775:4:4,6889:10:10,7096:2:2,17056:5:5,211780:1:1,211787:1:1^
@@ -7,6 +7,7 @@ GoldScout-export 6^df2paf3h5lxh^6
 833^13^0^11^12^1436^0.4162^0.3250^13^Kojotenrudelanführer^2673:6:6,3299:6:6,3300:6:6,211780:1:1^
 834^17^0^10^11^1436^0.5308^0.2619^17^Kojote^774:1:1,2406:1:1,2673:7:7,3299:8:8,3300:4:4,9758:1:1,211786:2:2^
 1109^18^0^13^14^1436^0.4926^0.5295^18^Fleischreißer^555:9:9,729:5:5,1210:1:1,3399:2:2,5114:1:1,5115:1:1,6889:11:11,17056:3:3,211780:2:2^
+4054^12^0^24^25^1440^0.5921^0.5710^12^Lachende Schwester^1205:1:1,1712:1:1,2592:1:2,4306:1:1,4538:1:1,7270:12:12,16645:1:1,211855:1:1^
 260326^1^0^0^0^0^0.0000^0.0000^0^^270866:1:1^
 260797^1^0^0^0^0^0.0000^0.0000^0^^211784:1:1^
 260798^1^0^0^0^0^0.0000^0.0000^0^^770:1:1,3667:1:1^
@@ -27,10 +28,13 @@ GoldScout-export 6^df2paf3h5lxh^6
 @i^774^Malachit
 @i^818^Tigerauge
 @i^1074^Harte Spinnenbeinspitze
+@i^1205^Melonensaft
 @i^1210^Schattenedelstein
 @i^1697^Beißender Raptorzahn
+@i^1712^Rolle der Willenskraft II
 @i^1804^Feste Lederstiefel
 @i^2406^Muster: Feine Lederstiefel
+@i^2592^Wollstoff
 @i^2673^Kojotenfleisch
 @i^2677^Eberrippchen
 @i^3171^Zerbrochener Eberhauer
@@ -42,6 +46,8 @@ GoldScout-export 6^df2paf3h5lxh^6
 @i^3667^Zartes Krokiliskenfleisch
 @i^3685^Raptorei
 @i^3820^Würgetang
+@i^4306^Seidenstoff
+@i^4538^Schnappranken-Wassermelone
 @i^4701^Gravierter Umhang
 @i^4757^Gesprungene Eierschalen
 @i^4775^Gesprungener Schnabel
@@ -55,6 +61,7 @@ GoldScout-export 6^df2paf3h5lxh^6
 @i^6575^Verteidigerumhang des Tigers
 @i^6889^Kleines Ei
 @i^7096^Ausgezupfte Feder
+@i^7270^Haar der lachenden Schwester
 @i^8365^Rohe Mithrilkopfforelle
 @i^9743^Einfache Schuhe
 @i^9747^Einfache Kniehosen der Ausdauer
@@ -63,6 +70,7 @@ GoldScout-export 6^df2paf3h5lxh^6
 @i^13759^Roher Nachtflossenschnapper
 @i^13760^Roher Sonnenschuppenlachs
 @i^13886^37-pfündiger Rotkiemen
+@i^16645^Schredderanleitung - Seite 1
 @i^17056^Leichte Feder
 @i^21071^Roher Weisenfisch
 @i^21113^Wasserdichter Koffer
@@ -88,10 +96,13 @@ GoldScout-export 6^df2paf3h5lxh^6
 @q^774^2:7:1
 @q^818^2:7:1
 @q^1074^0:15:0
+@q^1205^1:0:0
 @q^1210^2:7:1
 @q^1697^0:15:0
+@q^1712^1:0:0
 @q^1804^0:4:0
 @q^2406^2:9:0
+@q^2592^1:7:1
 @q^2673^1:7:1
 @q^2677^1:7:1
 @q^3171^0:15:0
@@ -103,6 +114,8 @@ GoldScout-export 6^df2paf3h5lxh^6
 @q^3667^1:7:1
 @q^3685^1:7:1
 @q^3820^1:7:1
+@q^4306^1:7:1
+@q^4538^1:0:0
 @q^4701^2:4:0
 @q^4757^0:15:0
 @q^4775^0:15:0
@@ -116,6 +129,7 @@ GoldScout-export 6^df2paf3h5lxh^6
 @q^6575^2:4:0
 @q^6889^1:7:1
 @q^7096^0:15:0
+@q^7270^1:12:0
 @q^8365^1:7:1
 @q^9743^1:4:0
 @q^9747^2:4:0
@@ -124,6 +138,7 @@ GoldScout-export 6^df2paf3h5lxh^6
 @q^13759^1:7:1
 @q^13760^1:7:1
 @q^13886^1:15:0
+@q^16645^1:12:0
 @q^17056^1:15:1
 @q^21071^1:7:1
 @q^21113^1:15:0
@@ -140,6 +155,7 @@ GoldScout-export 6^df2paf3h5lxh^6
 @q^271100^1:12:0
 @q^284844^1:12:0
 @m^1436^Westfall
+@m^1440^Ashenvale
 @m^1442^Steinkrallengebirge
 @m^1444^Feralas
 @m^1445^Marschen von Dustwallow
@@ -289,6 +305,7 @@ GoldScout-export 6^df2paf3h5lxh^6
 @a^833^107:2,108:5,126:1,147:1,152:2,166:2
 @a^834^51:2,71:3,92:2,107:1,108:1,112:2,126:2,132:1,146:1,152:1,172:1
 @a^1109^146:1,167:1,171:3,172:1,191:2,192:3,247:1,267:1,268:5
+@a^4054^211:1,231:9,232:2
 @f^1442^0^261^147^3820:1:1,6289:79:79,6308:165:165,21071:12:12,21113:2:2,21114:2:4^170:261
 @f^1444^0^332^225^6358:35:35,8365:25:25,13758:186:186,13759:44:44,13760:41:41,13886:1:1^175:332
 @f^1445^0^125^205^6308:50:50,6309:1:1,8365:74:74^127:125

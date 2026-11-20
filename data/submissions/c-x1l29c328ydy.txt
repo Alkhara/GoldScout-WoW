@@ -1,4 +1,4 @@
-GoldScout-export 6^x1l29c328ydy^29
+GoldScout-export 6^x1l29c328ydy^31
 587^7^0^33^34^1434^0.3242^0.1668^7^Bloodscalp Warrior^1520:1:1,1708:1:1,2592:1:3,2740:1:1,3901:1:1,3915:2:2,4306:3:5^
 588^15^0^34^35^1434^0.2453^0.1210^15^Bloodscalp Scout^2592:1:2,2730:2:2,3782:1:1,3901:3:3,3915:2:2,4306:2:2,262889:1:1^
 595^25^0^34^35^1434^0.2507^0.1176^25^Bloodscalp Hunter^2730:1:1,3771:2:2,3783:1:1,3901:6:6,3915:2:2,4306:7:11,248690:1:1,248693:1:1^
@@ -70,7 +70,8 @@ GoldScout-export 6^x1l29c328ydy^29
 2408^3^0^30^31^1416^0.8025^0.5884^3^Snapjaw^3712:1:2,5524:2:2^
 2423^1^0^41^41^1416^0.3935^0.1490^1^Lord Aliden Perenolde^^
 2431^1^0^37^37^1416^0.6073^0.4380^1^Jailor Borhuin^3704:1:1,4306:1:3^
-2559^3^0^30^31^1417^0.6305^0.3973^3^Highland Strider^3685:2:2,4461:2:2,4586:1:1,12184:1:1^
+2559^8^0^30^31^1417^0.5905^0.4408^8^Highland Strider^3685:4:4,4461:4:4,4586:1:1,12184:3:3^
+2563^2^0^32^33^1417^0.6854^0.3563^2^Plains Creeper^1081:2:2,2251:2:2,3182:1:1,4337:1:1,5637:1:1^
 2572^5^0^35^36^1417^0.8205^0.3734^5^Drywhisker Kobold^4306:1:2,4435:2:2^
 2573^9^0^37^38^1417^0.8410^0.3216^9^Drywhisker Surveyor^4306:4:6,4338:1:1,4435:3:3,248693:1:1^
 2574^16^0^36^37^1417^0.8351^0.3373^16^Drywhisker Digger^1708:2:2,3827:1:1,4306:7:16,4435:7:7^
@@ -78,7 +79,8 @@ GoldScout-export 6^x1l29c328ydy^29
 2635^1^0^38^38^1434^0.2522^0.1919^1^Elder Saltwater Crocolisk^770:1:1,3667:1:1,4105:1:1,12037:1:1^
 2667^8^0^36^37^1434^0.3668^0.3040^8^Ward of Laze^^
 2760^1^0^38^39^1417^0.2755^0.3092^1^Burning Exile^4479:1:1^
-2762^2^0^38^39^1417^0.5131^0.5285^2^Thundering Exile^^
+2761^17^0^38^39^1417^0.6689^0.2979^17^Cresting Exile^4481:6:6,4791:6:20,7070:1:1,9435:1:1^
+2762^9^0^38^39^1417^0.5209^0.5020^9^Thundering Exile^4480:4:4,7069:2:2^
 2964^1^0^10^10^1412^0.4006^0.1809^1^Windfury Sorceress^117:1:1,1413:1:1^
 2965^1^0^10^11^1412^0.3995^0.1905^1^Windfury Matriarch^117:1:1^
 3560^8^0^34^37^1434^0.2099^0.1211^7^Healing Ward^^
@@ -161,6 +163,7 @@ GoldScout-export 6^x1l29c328ydy^29
 @i^117^Tough Jerky
 @i^770^Pointy Crocolisk Tooth
 @i^1074^Hard Spider Leg Tip
+@i^1081^Crisp Spider Meat
 @i^1207^Murphstar of the Sorcerer
 @i^1280^Cloaked Hood
 @i^1413^Feeble Sword
@@ -182,6 +185,7 @@ GoldScout-export 6^x1l29c328ydy^29
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
 @i^1711^Scroll of Stamina II
+@i^2251^Gooey Spider Leg
 @i^2289^Scroll of Strength II
 @i^2447^Peacebloom
 @i^2449^Earthroot
@@ -202,6 +206,7 @@ GoldScout-export 6^x1l29c328ydy^29
 @i^2751^Green Hills of Stranglethorn - Page 27
 @i^2838^Heavy Stone
 @i^3010^Fine Sand
+@i^3182^Spider's Silk
 @i^3385^Lesser Mana Potion
 @i^3404^Buzzard Wing
 @i^3626^Head of Baron Vardus
@@ -250,6 +255,8 @@ GoldScout-export 6^x1l29c328ydy^29
 @i^4460^Ripped Wing Webbing
 @i^4461^Raptor Hide
 @i^4479^Burning Charm
+@i^4480^Thundering Charm
+@i^4481^Cresting Charm
 @i^4553^Jagged Piece of Stone
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
@@ -258,6 +265,7 @@ GoldScout-export 6^x1l29c328ydy^29
 @i^4634^Iron Lockbox
 @i^4722^Insignia Cloak
 @i^4784^Lifeless Stone
+@i^4791^Enchanted Water
 @i^4860^Glistening Frenzy Scale
 @i^5113^Mark of the Syndicate
 @i^5133^Seeping Gizzard
@@ -280,12 +288,15 @@ GoldScout-export 6^x1l29c328ydy^29
 @i^6894^Whirlwind Heart
 @i^6986^Crimson Lotus
 @i^7067^Elemental Earth
+@i^7069^Elemental Air
+@i^7070^Elemental Water
 @i^7072^Naga Scale
 @i^7434^Twilight Boots of the Sorcerer
 @i^7436^Twilight Cape of the Bandit
 @i^8146^Wicked Claw
 @i^8150^Deeprock Salt
 @i^8746^Interlaced Cowl
+@i^9435^Reticulated Bone Gauntlets
 @i^9842^Banded Pauldrons of the Defender
 @i^9877^Sorcerer Cloak of the Tiger
 @i^10285^Shadow Silk
@@ -334,6 +345,7 @@ GoldScout-export 6^x1l29c328ydy^29
 @q^117^1:0:0
 @q^770^0:15:0
 @q^1074^0:15:0
+@q^1081^1:7:1
 @q^1207^2:2:0
 @q^1280^2:4:0
 @q^1413^0:2:0
@@ -355,6 +367,7 @@ GoldScout-export 6^x1l29c328ydy^29
 @q^1708^1:0:0
 @q^1710^1:0:0
 @q^1711^1:0:0
+@q^2251^1:7:1
 @q^2289^1:0:0
 @q^2447^1:7:1
 @q^2449^1:7:1
@@ -375,6 +388,7 @@ GoldScout-export 6^x1l29c328ydy^29
 @q^2751^1:12:0
 @q^2838^1:7:1
 @q^3010^0:15:0
+@q^3182^1:7:1
 @q^3385^1:0:0
 @q^3404^1:7:1
 @q^3626^1:12:0
@@ -423,6 +437,8 @@ GoldScout-export 6^x1l29c328ydy^29
 @q^4460^0:15:0
 @q^4461^1:7:1
 @q^4479^1:0:0
+@q^4480^1:0:0
+@q^4481^1:0:0
 @q^4553^0:15:0
 @q^4555^0:15:0
 @q^4556^0:15:0
@@ -431,6 +447,7 @@ GoldScout-export 6^x1l29c328ydy^29
 @q^4634^2:15:0
 @q^4722^2:4:0
 @q^4784^0:15:0
+@q^4791^1:0:0
 @q^4860^0:15:0
 @q^5113^0:15:0
 @q^5133^0:15:0
@@ -453,12 +470,15 @@ GoldScout-export 6^x1l29c328ydy^29
 @q^6894^1:12:0
 @q^6986^0:15:0
 @q^7067^1:7:1
+@q^7069^1:7:1
+@q^7070^1:7:1
 @q^7072^1:7:1
 @q^7434^2:4:0
 @q^7436^2:4:0
 @q^8146^1:7:1
 @q^8150^1:7:1
 @q^8746^0:4:0
+@q^9435^3:4:0
 @q^9842^2:4:0
 @q^9877^2:4:0
 @q^10285^1:7:1
@@ -582,7 +602,8 @@ GoldScout-export 6^x1l29c328ydy^29
 @a^2408^235:1,236:2
 @a^2423^47:1
 @a^2431^172:1
-@a^2559^134:1,172:1,191:1
+@a^2559^134:1,172:2,190:2,191:2,192:1
+@a^2563^133:1,153:1
 @a^2572^156:5
 @a^2573^116:2,136:4,137:2,156:1
 @a^2574^136:8,137:2,156:6
@@ -590,7 +611,8 @@ GoldScout-export 6^x1l29c328ydy^29
 @a^2635^65:1
 @a^2667^127:8
 @a^2760^125:1
-@a^2762^210:2
+@a^2761^113:8,133:9
+@a^2762^190:5,210:4
 @a^2964^68:1
 @a^2965^67:1
 @a^3560^44:7

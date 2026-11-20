@@ -1,4 +1,4 @@
-GoldScout-export 6^x8uuaw190rl5^24
+GoldScout-export 6^x8uuaw190rl5^25
 334^1^0^26^26^1433^0.6353^0.5618^1^Gath'Ilzogg^3633:1:1^
 335^1^0^24^24^1433^0.6446^0.5592^1^Chamusco^3175:1:1^
 345^2^0^24^24^1433^0.1116^0.4944^2^Ronquifuça^2677:1:1,3631:1:1^
@@ -49,8 +49,12 @@ GoldScout-export 6^x8uuaw190rl5^24
 3734^4^0^20^20^1440^0.3238^0.2276^4^Capanga Renegada^2781:1:1,4306:1:1^
 3780^5^0^21^23^1440^0.4586^0.4484^5^Come-musgo da Sombra-cerrada^^
 3809^1^0^22^22^1440^0.4402^0.5374^1^Urso do Vale Gris^2940:1:1,3730:1:1^
+3818^43^0^26^27^1440^0.6083^0.4387^43^Cervo Ancião Galhassombra^1206:1:1,5119:3:3,5120:8:8,5471:22:22,5566:25:25,211855:1:1^
 3819^2^0^20^21^1440^0.4364^0.4869^2^Espreitadora Cardagreste^2251:1:1,3174:1:1^
 3823^1^0^20^20^1440^0.3059^0.5176^1^Corredor Patalmas^1015:1:1,3402:1:1^
+3825^6^0^27^28^1440^0.5986^0.4216^6^Patalmas Alfa^1015:3:3,3301:1:1,3402:2:2,5637:1:1^
+3834^6^0^27^28^1440^0.6010^0.4252^6^Anciente Enlouquecido^1761:1:1,2452:1:1^
+3919^5^0^26^27^1440^0.5991^0.4095^5^Anciente Fenescido^929:1:1^
 3924^1^0^24^24^1440^0.3712^0.3409^1^Xamã Pelocardo^^
 3925^1^0^23^23^1440^0.3888^0.3744^1^Vingador Pelocardo^4306:1:1^
 3926^1^0^23^23^1440^0.3397^0.3554^1^Desbravador Pelocardo^4306:1:1^
@@ -92,6 +96,7 @@ GoldScout-export 6^x8uuaw190rl5^24
 @i^1746^Cinto de Malha Articulada
 @i^1747^Botas de Malha Articulada
 @i^1750^Luvas de Malha Articulada
+@i^1761^Colete Encadeado Reforçado
 @i^1772^Sapatos Brocados
 @i^1778^Colete Brocado
 @i^1797^Braçadeiras de Couro Cru
@@ -101,6 +106,7 @@ GoldScout-export 6^x8uuaw190rl5^24
 @i^2079^Martelo de Guerra do Sargento do Poder
 @i^2220^Escudo de Tampa
 @i^2251^Perna de Aranha Pegajosa
+@i^2452^Cardo-veloz
 @i^2453^Ervamossa
 @i^2589^Linho
 @i^2592^Lã
@@ -115,6 +121,7 @@ GoldScout-export 6^x8uuaw190rl5^24
 @i^3175^Couro de Dragão Arruinado
 @i^3180^Escama Sarapintada de Raptor
 @i^3182^Seda da Aranha
+@i^3301^Canino Afiado
 @i^3348^Pele de Crocolisco Gigante
 @i^3349^Bolsa da Cida
 @i^3397^Pele de Crocolisco Jovem
@@ -137,9 +144,14 @@ GoldScout-export 6^x8uuaw190rl5^24
 @i^4428^Palpo de Aranha
 @i^4710^Manto da Floresta
 @i^4775^Bico Rachado
+@i^5119^Cabelos Finos Soltos
+@i^5120^Pelo de Cauda Longo
+@i^5471^Carne de Cervo
 @i^5524^Marisco de Casca Grossa
 @i^5544^Crânio de Dal Sangarra
+@i^5566^Galhada Quebrada
 @i^5635^Garra Afiada
+@i^5637^Presa Grande
 @i^5784^Escama Viscosa de Murloc
 @i^6303^Cavala Deslizapele Crua
 @i^6308^Bagre de Bigode Cerdoso Cru
@@ -193,6 +205,7 @@ GoldScout-export 6^x8uuaw190rl5^24
 @q^1746^0:4:0
 @q^1747^0:4:0
 @q^1750^0:4:0
+@q^1761^0:4:0
 @q^1772^0:4:0
 @q^1778^0:4:0
 @q^1797^0:4:0
@@ -202,6 +215,7 @@ GoldScout-export 6^x8uuaw190rl5^24
 @q^2079^2:2:0
 @q^2220^0:4:0
 @q^2251^1:7:1
+@q^2452^1:7:1
 @q^2453^1:7:1
 @q^2589^1:7:1
 @q^2592^1:7:1
@@ -216,6 +230,7 @@ GoldScout-export 6^x8uuaw190rl5^24
 @q^3175^0:15:0
 @q^3180^0:15:0
 @q^3182^1:7:1
+@q^3301^0:15:0
 @q^3348^1:12:0
 @q^3349^1:12:0
 @q^3397^1:12:0
@@ -238,9 +253,14 @@ GoldScout-export 6^x8uuaw190rl5^24
 @q^4428^0:15:0
 @q^4710^2:4:0
 @q^4775^0:15:0
+@q^5119^0:15:0
+@q^5120^0:15:0
+@q^5471^1:7:1
 @q^5524^1:7:0
 @q^5544^1:12:0
+@q^5566^0:15:0
 @q^5635^1:7:1
+@q^5637^1:7:1
 @q^5784^1:7:1
 @q^6303^1:7:1
 @q^6308^1:7:1
@@ -1044,8 +1064,12 @@ GoldScout-export 6^x8uuaw190rl5^24
 @a^3734^86:4
 @a^3780^169:3,188:1,189:1
 @a^3809^208:1
+@a^3818^151:3,152:3,171:11,172:13,192:12,212:1
 @a^3819^188:1,208:1
 @a^3823^206:1
+@a^3825^152:1,171:3,172:2
+@a^3834^151:1,171:4,192:1
+@a^3919^151:1,152:1,171:2,172:1
 @a^3924^127:1
 @a^3925^147:1
 @a^3926^146:1
