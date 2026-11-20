@@ -461,7 +461,7 @@ class CommunityTargetsTests(unittest.TestCase):
         self.assertIn('<span class=target-num><b>1</b> of {:,}</span>'.format(goal["contributors"]), box)
         self.assertIn('<span class=target-num><b>33</b> of {:,}</span>'.format(goal["kills"]), box)   # every kill
         self.assertIn("Mobs with solid drop rates (50+ kills)", box)
-        self.assertIn('aria-label="0 of {}"><span style="width:0%"></span>'.format(goal["solid"]), box)
+        self.assertIn('aria-label="0 of {:,}"><span style="width:0%"></span>'.format(goal["solid"]), box)
 
     def test_last_day_and_after(self):
         box = data_pages.targets_section(self.data, data_pages.TARGETS_DATE - datetime.timedelta(days=1))

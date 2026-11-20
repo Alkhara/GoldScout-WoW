@@ -1354,7 +1354,7 @@ def data_wanted_page(data, links):
 # The community's targets (notes/WEBSITE-PLAN.md, Phase 2) on the home page and /data-wanted. When they're
 # reached or the date passes, set new ones here (and the German text, if it names them).
 TARGETS_DATE = datetime.date(2026, 12, 15)
-TARGETS = (("contributors", 500), ("kills", 250000), ("solid", 600))
+TARGETS = (("contributors", 3000), ("kills", 2000000), ("solid", 2500))
 MONTHS = {"en": ("January", "February", "March", "April", "May", "June", "July", "August", "September",
                  "October", "November", "December"),
           "de": ("Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober",
