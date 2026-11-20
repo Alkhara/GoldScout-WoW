@@ -1,4 +1,4 @@
-GoldScout-export 5^efk2crigw1nx^8
+GoldScout-export 5^efk2crigw1nx^9
 588^3^0^34^35^1434^0.2368^0.1276^3^Eclaireur Bloodscalp^1710:1:1^
 595^2^0^34^35^1434^0.2530^0.1178^2^Chasseur Bloodscalp^277957:1:1^
 597^10^0^36^37^1434^0.2044^0.1329^10^Berserker Bloodscalp^1519:4:4,4306:5:6^
@@ -6,9 +6,22 @@ GoldScout-export 5^efk2crigw1nx^8
 671^14^0^36^37^1434^0.2128^0.1249^14^Chasseur de tête Bloodscalp^1519:4:4,1522:1:1,1988:1:1,2735:1:1,2744:1:1,2751:1:1,3771:1:1,4306:5:9,213547:1:1^
 691^14^0^36^37^1434^0.2042^0.2218^14^Elémentaire d'eau mineur^1706:5:5,3923:6:6,4791:10:29^
 701^4^0^34^35^1434^0.2443^0.1263^4^Mystique Bloodscalp^4306:1:1,213547:1:1^
-767^1^0^37^37^1435^0.1064^0.5836^1^Jaguar du marécage^1688:1:1^
+740^18^0^34^35^1435^0.1439^0.6108^18^Jeune dragonnet^1529:1:1,4402:1:1,4459:3:3,4460:2:2,5803:5:5,9826:1:1^
+741^13^0^35^36^1435^0.1492^0.6282^13^Dragonnet rêveur^5803:5:5^
+757^1^0^36^36^1435^0.5607^0.3092^1^Pêcheur Perdu^^
+759^3^0^36^37^1435^0.5647^0.2642^3^Chasseur Perdu^1710:1:1^
+760^2^0^36^37^1435^0.4556^0.3593^2^Marche-boue Perdu^^
+761^1^0^38^38^1435^0.6542^0.2008^1^Prophète Perdu^^
+764^11^0^38^39^1435^0.3030^0.3821^11^Maraistreur^1710:2:2,10286:1:1^
+765^7^0^39^40^1435^0.1139^0.3563^7^Ancien Maraistreur^1708:1:1^
+766^6^0^40^41^1435^0.4926^0.3356^6^Horreur enchevêtrée^2449:1:1,4607:1:1,11205:1:1^
+767^11^0^36^37^1435^0.3076^0.4112^11^Jaguar du marécage^1686:3:3,1688:8:8,5637:1:1^
+858^10^0^36^37^1435^0.2773^0.5527^10^Tisseuse des pleurs^4585:5:5,5637:1:1,12205:2:2^
+1084^8^0^35^36^1435^0.3207^0.3823^8^Jeune crocilisque Dents-de-scie^770:4:4,3667:4:4,12037:3:3^
 4396^15^0^36^37^1445^0.6293^0.3376^15^Tortue Rochefange^3712:5:5,4555:6:6,4556:9:9,6362:2:4^
 4397^16^0^37^38^1445^0.6271^0.3294^16^Epineuse Rochefange^3712:5:5,4555:10:10,4556:3:3,6362:2:3^
+5477^1^0^39^39^1435^0.4570^0.3569^1^Noboru le Gourdin^1708:1:1,6196:1:1^
+5622^1^0^37^37^1435^0.6139^0.2276^1^Ongeku^6190:1:1^
 258792^4^0^0^0^0^0.0000^0.0000^0^^4306:1:1,4607:1:1,13129:1:1,248693:1:1,248708:1:1^
 258797^2^0^0^0^0^0.0000^0.0000^0^^213545:1:1^
 258799^7^0^0^0^0^0.0000^0.0000^0^^4306:3:5^
@@ -28,18 +41,24 @@ GoldScout-export 5^efk2crigw1nx^8
 263196^2^0^0^0^0^0.0000^0.0000^0^^4306:1:4,4607:1:1^
 263886^1^0^0^0^0^0.0000^0.0000^0^^274612:1:1^
 263899^3^0^0^0^0^0.0000^0.0000^0^^4338:1:1,213546:1:1,262889:1:1^
+@i^770^Croc pointu de crocilisque
 @i^864^Epée longue des chevaliers de l'ours
 @i^1465^Fléau des tigres
 @i^1519^Oreille de Bloodscalp
 @i^1522^Lance de chasseur de têtes
+@i^1529^Jade
+@i^1686^Moustache à poil dur
 @i^1688^Longue queue soyeuse
 @i^1706^Eclats de Profondazur
+@i^1708^Nectar sucré
 @i^1710^Potion de soins supérieure
 @i^1988^Gantelets de général de brigade
+@i^2449^Terrestrine
 @i^2735^Les vertes collines de Strangleronce - Page 11
 @i^2744^Les vertes collines de Strangleronce - Page 20
 @i^2749^Les vertes collines de Strangleronce - Page 25
 @i^2751^Les vertes collines de Strangleronce - Page 27
+@i^3667^Viande de crocilisque tendre
 @i^3712^Viande de tortue
 @i^3771^Jarret de cochon sauvage
 @i^3778^Arc composite de sarcasme
@@ -50,14 +69,27 @@ GoldScout-export 5^efk2crigw1nx^8
 @i^4059^Brassards glyphés
 @i^4306^Etoffe de soie
 @i^4338^Etoffe de tisse-mage
+@i^4402^Petit sac de flammes
+@i^4459^Fragile os de dragon
+@i^4460^Palmure d'aile arrachée
 @i^4555^Epaisse queue écailleuse
 @i^4556^Fragment de carapace moucheté
+@i^4585^Mandibule d'araignée visqueuse
 @i^4607^Délicieux humus des grottes
 @i^4791^Eau enchantée
 @i^5567^Crochet d'argent
+@i^5637^Grand croc
+@i^5803^Grain de poussière de rêve
+@i^6190^Fragment de draenéthyste
+@i^6196^Gourdin de Noboru
 @i^6362^Morue rochécaille crue
 @i^7432^Capuche du crépuscule d'endurance
 @i^7465^Cimier de chevalier de héraut
+@i^9826^Robe solide de courroux glacial
+@i^10286^Coeur de fauve
+@i^11205^Formule : Enchantement de gants (Herboristerie avancée)
+@i^12037^Viande mystère
+@i^12205^Viande d'araignée blanche
 @i^13129^Jambières Crins-de-feu
 @i^213545^Parchemin : CHUTE D'AGUERRI
 @i^213546^Parchemin : TAGADAAA
@@ -76,18 +108,24 @@ GoldScout-export 5^efk2crigw1nx^8
 @i^276894^Idole antique des Gurubashi
 @i^277957^Clé primitive
 @i^279046^Pince de crabe craquelée
+@q^770^0:15:0
 @q^864^2:2:0
 @q^1465^2:2:0
 @q^1519^1:12:0
 @q^1522^2:2:0
+@q^1529^2:7:1
+@q^1686^0:15:0
 @q^1688^0:15:0
 @q^1706^0:15:0
+@q^1708^1:0:0
 @q^1710^1:0:0
 @q^1988^2:4:0
+@q^2449^1:7:1
 @q^2735^1:12:0
 @q^2744^1:12:0
 @q^2749^1:12:0
 @q^2751^1:12:0
+@q^3667^1:7:1
 @q^3712^1:7:1
 @q^3771^1:0:0
 @q^3778^0:2:0
@@ -98,14 +136,27 @@ GoldScout-export 5^efk2crigw1nx^8
 @q^4059^2:4:0
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4402^1:7:1
+@q^4459^0:15:0
+@q^4460^0:15:0
 @q^4555^0:15:0
 @q^4556^0:15:0
+@q^4585^0:15:0
 @q^4607^1:0:0
 @q^4791^1:0:0
 @q^5567^0:15:0
+@q^5637^1:7:1
+@q^5803^1:12:0
+@q^6190^1:12:0
+@q^6196^0:2:0
 @q^6362^1:7:1
 @q^7432^2:4:0
 @q^7465^2:4:0
+@q^9826^2:4:0
+@q^10286^1:7:1
+@q^11205^2:9:0
+@q^12037^1:7:1
+@q^12205^1:7:1
 @q^13129^3:4:0
 @q^213545^1:0:0
 @q^213546^1:0:0
@@ -134,7 +185,20 @@ GoldScout-export 5^efk2crigw1nx^8
 @a^671^43:3,44:11
 @a^691^83:1,84:13
 @a^701^44:3,45:1
-@a^767^222:1
+@a^740^222:3,223:3,242:7,243:4,263:1
+@a^741^222:1,223:1,242:4,243:5,262:1,263:1
+@a^757^131:1
+@a^759^91:1,111:2
+@a^760^149:2
+@a^761^93:1
+@a^764^142:2,143:1,149:4,150:1,162:1,163:2
+@a^765^121:2,122:1,142:4
+@a^766^94:1,122:1,133:1,135:1,142:1,191:1
+@a^767^145:4,147:4,166:1,167:1,222:1
+@a^858^147:1,165:1,205:1,206:1,224:1,244:3,245:2
+@a^1084^128:1,145:3,146:1,147:2,186:1
 @a^4396^92:1,112:4,132:3,152:6,172:1
 @a^4397^92:2,112:3,132:4,152:6,172:1
+@a^5477^149:1
+@a^5622^92:1
 @l^0^frFR

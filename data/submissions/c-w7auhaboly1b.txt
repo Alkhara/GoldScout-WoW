@@ -1,4 +1,4 @@
-GoldScout-export 5^w7auhaboly1b^6
+GoldScout-export 6^w7auhaboly1b^7
 506^1^0^18^18^1436^0.3716^0.3183^1^Sergeant Brashclaw^2203:1:1,2592:1:2^
 833^66^0^11^12^1436^0.3651^0.3270^66^Coyote Packleader^2075:1:1,2673:26:26,2698:1:1,3299:23:23,3300:19:19,4409:1:1,4577:1:1,4689:1:1,6513:1:1,9750:1:1,9751:1:1^
 834^88^0^10^11^1436^0.3901^0.2922^88^Coyote^774:1:1,2140:1:1,2673:39:39,2966:1:1,3214:1:1,3299:25:25,3300:12:12,4346:1:1,5635:1:1,6519:1:1,6521:1:1,6555:1:1,8180:1:1,9746:1:1,9760:1:1^
@@ -9,11 +9,19 @@ GoldScout-export 5^w7auhaboly1b^6
 3974^1^0^0^0^0^0.0000^0.0000^0^^7756:1:1^
 3984^1^0^33^33^1416^0.2966^0.3252^1^Nancy Vishas^4306:1:4,5538:1:1^
 4151^2^0^32^33^1441^0.7980^0.6039^2^Saltstone Crystalhide^^
+4286^1^0^0^0^0^0.0000^0.0000^0^^7369:1:1^
 4287^2^0^0^0^0^0.0000^0.0000^0^^1711:1:1,4306:1:1,7412:1:1^
+4289^2^0^0^0^0^0.0000^0.0000^0^^4306:1:2^
+4290^4^0^0^0^0^0.0000^0.0000^0^^1710:1:1,4306:1:4,10333:1:1,248691:1:1^
 4291^4^0^0^0^0^0.0000^0.0000^0^^1708:1:1,3781:1:1,3817:1:1,4306:3:8^
+4292^1^0^0^0^0^0.0000^0.0000^0^^215373:1:1^
+4295^4^0^0^0^0^0.0000^0.0000^0^^4306:1:1^
+4297^1^0^0^0^0^0.0000^0.0000^0^^^
+4298^1^0^0^0^0^0.0000^0.0000^0^^4306:1:2^
 4299^6^0^0^0^0^0.0000^0.0000^0^^3781:1:1,6402:1:1^
 4304^1^0^0^0^0^0.0000^0.0000^0^^3402:1:1^
 4540^2^0^0^0^0^0.0000^0.0000^0^^7462:1:1^
+6575^5^0^0^0^0^0.0000^0.0000^0^^3381:1:1,3827:1:1,15242:1:1,255730:1:1^
 9377^5^0^33^34^1441^0.7967^0.6009^5^Swirling Vortex^7069:1:1^
 250187^1^0^0^0^0^0.0000^0.0000^0^^262889:1:1^
 258792^4^0^0^0^0^0.0000^0.0000^0^^1710:1:1,15234:1:1,248709:1:1^
@@ -56,6 +64,7 @@ GoldScout-export 5^w7auhaboly1b^6
 @i^3214^Warrior's Bracers
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
+@i^3381^Cross-stitched Bracers
 @i^3402^Soft Patch of Fur
 @i^3781^Broad Claymore
 @i^3783^Light Scimitar
@@ -64,6 +73,7 @@ GoldScout-export 5^w7auhaboly1b^6
 @i^3803^Hardened Cloak
 @i^3805^Hardened Leather Pants
 @i^3817^Reinforced Buckler
+@i^3827^Mana Potion
 @i^3864^Citrine
 @i^4038^Nightsky Robe
 @i^4059^Glyphed Bracers
@@ -86,6 +96,7 @@ GoldScout-export 5^w7auhaboly1b^6
 @i^6521^Pioneer Gloves
 @i^6555^Bard's Cloak
 @i^7069^Elemental Air
+@i^7369^Elder's Robe of the Channeler
 @i^7412^Infiltrator Gloves of the Whale
 @i^7461^Knight's Bracers of Magic
 @i^7462^Knight's Girdle of the Beast
@@ -98,9 +109,13 @@ GoldScout-export 5^w7auhaboly1b^6
 @i^9760^Cadet Bracers
 @i^9871^Renegade Leggings of the Owl
 @i^9901^Jazeraint Belt of Power
+@i^10333^Scarlet Wristguards
 @i^15234^Greater Scythe of Power
+@i^15242^Honed Stiletto of the Tiger
+@i^215373^Silver Hand Training Hammer
 @i^248691^Waylaid Crate: Flowering Expert Herbs
 @i^248709^Waylaid Crate: Expert Ingots
+@i^255730^Manual: Surgical Tourniquet
 @i^262889^Sealed Expert's Writ
 @i^270333^Voodoo-Infused Artifact
 @i^274599^Oathbound Bracers
@@ -132,6 +147,7 @@ GoldScout-export 5^w7auhaboly1b^6
 @q^3214^1:4:0
 @q^3299^0:15:0
 @q^3300^0:15:0
+@q^3381^0:4:0
 @q^3402^0:15:0
 @q^3781^0:2:0
 @q^3783^0:2:0
@@ -140,6 +156,7 @@ GoldScout-export 5^w7auhaboly1b^6
 @q^3803^0:4:0
 @q^3805^0:4:0
 @q^3817^0:4:0
+@q^3827^1:0:0
 @q^3864^2:7:1
 @q^4038^2:4:0
 @q^4059^2:4:0
@@ -162,6 +179,7 @@ GoldScout-export 5^w7auhaboly1b^6
 @q^6521^1:4:0
 @q^6555^1:4:0
 @q^7069^1:7:1
+@q^7369^2:4:0
 @q^7412^2:4:0
 @q^7461^2:4:0
 @q^7462^2:4:0
@@ -174,9 +192,13 @@ GoldScout-export 5^w7auhaboly1b^6
 @q^9760^1:4:0
 @q^9871^2:4:0
 @q^9901^2:4:0
+@q^10333^3:4:0
 @q^15234^2:2:0
+@q^15242^2:2:0
+@q^215373^1:2:0
 @q^248691^1:0:1
 @q^248709^2:0:1
+@q^255730^2:9:0
 @q^262889^3:0:0
 @q^270333^1:12:0
 @q^274599^3:4:0
