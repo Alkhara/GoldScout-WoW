@@ -1,4 +1,10 @@
-GoldScout-export 5^00c7384as2m7^4
+GoldScout-export 6^00c7384as2m7^5
+1536^1^0^7^7^1420^0.5279^0.6944^1^Scarlet Missionary^^
+1537^3^0^8^9^1420^0.5328^0.6732^3^Scarlet Zealot^118:1:1,2589:1:1^
+1548^13^0^7^8^1420^0.5585^0.6487^13^Cursed Darkhound^2672:7:7,3299:3:3,3300:3:3^
+1553^7^0^6^7^1420^0.5611^0.6214^7^Greater Duskbat^4865:2:2,6293:2:2,7073:1:1,7074:1:1,12223:1:1^
+1554^1^0^9^9^1420^0.5474^0.6052^1^Vampiric Duskbat^6293:1:1^
+1765^10^0^10^11^1421^0.6790^0.0690^6^Worg^2672:8:8,3299:2:2,5572:1:1,5635:1:1^
 2505^3^0^49^50^1425^0.7663^0.7206^3^Saltwater Snapjaw^3712:1:1,4555:1:1,4556:1:1,7973:1:1^
 2640^1^0^46^46^1425^0.4751^0.6958^1^Vilebranch Witch Doctor^4338:1:2,8151:1:1,8153:1:3,9259:1:1^
 2659^1^0^46^48^1425^0.5361^0.5287^1^Razorbeak Skylord^19025:1:1^
@@ -60,10 +66,16 @@ GoldScout-export 5^00c7384as2m7^4
 8636^1^0^50^50^1425^0.4868^0.6832^1^Morta'gya the Keeper^1520:1:1,9259:1:1^
 9396^2^0^41^41^1446^0.5713^0.3281^2^Ground Pounder^4552:1:1,4554:1:1,4784:1:1,7912:1:1,8150:2:2^
 10081^1^0^0^0^0^0.0000^0.0000^0^^12469:1:1^
+277882^2^0^12^13^1421^0.6865^0.0552^2^Foothills Duskbat^6293:2:2^
+@i^118^Minor Healing Potion
 @i^1464^Buzzard Talon
 @i^1520^Troll Sweat
 @i^1625^Exquisite Flamberge of the Beast
 @i^1645^Moonberry Juice
+@i^2589^Linen Cloth
+@i^2672^Stringy Wolf Meat
+@i^3299^Fractured Canine
+@i^3300^Rabbit's Foot
 @i^3404^Buzzard Wing
 @i^3712^Turtle Meat
 @i^3927^Fine Aged Cheddar
@@ -90,13 +102,19 @@ GoldScout-export 5^00c7384as2m7^4
 @i^4590^Curved Yellow Bill
 @i^4599^Cured Ham Steak
 @i^4784^Lifeless Stone
+@i^4865^Ruined Pelt
 @i^5117^Vibrant Plume
+@i^5572^Small Green Pouch
+@i^5635^Sharp Claw
 @i^5636^Delicate Feather
 @i^5829^Razor-sharp Beak
 @i^6149^Greater Mana Potion
+@i^6293^Dried Bat Blood
 @i^6300^Husk Fragment
 @i^6302^Delicate Insect Wing
 @i^6826^Brilliant Scale
+@i^7073^Broken Fang
+@i^7074^Chipped Claw
 @i^7909^Aquamarine
 @i^7910^Star Ruby
 @i^7912^Solid Stone
@@ -135,6 +153,7 @@ GoldScout-export 5^00c7384as2m7^4
 @i^12203^Red Wolf Meat
 @i^12207^Giant Egg
 @i^12208^Tender Wolf Meat
+@i^12223^Meaty Bat Wing
 @i^12469^Mutilator
 @i^14228^Embersilk Coronet of the Channeler
 @i^14258^Bloodwoven Cord of Arcane Wrath
@@ -162,10 +181,15 @@ GoldScout-export 5^00c7384as2m7^4
 @i^274654^Sandfury Guillotine
 @i^277112^Zum'rah's Head
 @i^278186^Brilliantly Polished Bangle
+@q^118^1:0:0
 @q^1464^0:15:0
 @q^1520^0:15:0
 @q^1625^2:2:0
 @q^1645^1:0:0
+@q^2589^1:7:1
+@q^2672^1:7:1
+@q^3299^0:15:0
+@q^3300^0:15:0
 @q^3404^1:7:1
 @q^3712^1:7:1
 @q^3927^1:0:0
@@ -192,13 +216,19 @@ GoldScout-export 5^00c7384as2m7^4
 @q^4590^0:15:0
 @q^4599^1:0:0
 @q^4784^0:15:0
+@q^4865^0:15:0
 @q^5117^1:12:0
+@q^5572^1:1:0
+@q^5635^1:7:1
 @q^5636^0:15:0
 @q^5829^0:15:0
 @q^6149^1:0:0
+@q^6293^0:15:0
 @q^6300^0:15:0
 @q^6302^0:15:0
 @q^6826^0:15:0
+@q^7073^0:15:0
+@q^7074^0:15:0
 @q^7909^2:7:1
 @q^7910^2:7:1
 @q^7912^1:7:1
@@ -237,6 +267,7 @@ GoldScout-export 5^00c7384as2m7^4
 @q^12203^1:7:1
 @q^12207^1:7:1
 @q^12208^1:7:1
+@q^12223^1:7:1
 @q^12469^3:2:0
 @q^14228^2:4:0
 @q^14258^2:4:0
@@ -264,6 +295,8 @@ GoldScout-export 5^00c7384as2m7^4
 @q^274654^3:2:0
 @q^277112^1:12:0
 @q^278186^1:12:0
+@m^1420^Tirisfal Glades
+@m^1421^Silverpine Forest
 @m^1425^The Hinterlands
 @m^1444^Feralas
 @m^1446^Tanaris
@@ -688,6 +721,12 @@ GoldScout-export 5^00c7384as2m7^4
 @c^285277^
 @c^285278^
 @c^286152^
+@a^1536^270:1
+@a^1537^270:3
+@a^1548^250:1,251:6,252:1,270:1,271:1,290:3
+@a^1553^250:1,251:5,270:1
+@a^1554^250:1
+@a^1765^33:6
 @a^2505^275:1,295:2
 @a^2640^269:1
 @a^2659^210:1
@@ -732,4 +771,5 @@ GoldScout-export 5^00c7384as2m7^4
 @a^7996^269:1
 @a^8636^269:1
 @a^9396^131:2
+@a^277882^13:1,34:1
 @l^0^enUS

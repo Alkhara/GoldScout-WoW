@@ -1,4 +1,4 @@
-GoldScout-export 5^cu63e0lfti1t^3
+GoldScout-export 5^cu63e0lfti1t^4
 587^1^0^33^33^1434^0.2921^0.1997^1^Bloodscalp Warrior^2592:1:2^
 588^1^0^35^35^1434^0.2603^0.1145^1^Bloodscalp Scout^2734:1:1,3771:1:1,4306:1:2^
 597^5^0^36^37^1434^0.2137^0.1153^5^Bloodscalp Berserker^3771:1:1,4306:2:2^
@@ -9,7 +9,27 @@ GoldScout-export 5^cu63e0lfti1t^3
 698^1^0^34^35^1434^0.2631^0.1122^1^Bloodscalp Tiger^^
 699^1^0^34^35^1434^0.2631^0.1122^1^Bloodscalp Beastmaster^3915:1:1^
 701^3^0^34^35^1434^0.2558^0.1167^3^Bloodscalp Mystic^3915:2:2^
+1142^7^0^36^37^1434^0.3722^0.3126^7^Mosh'Ogg Brute^1679:1:1,2740:1:1,4306:1:2,4338:3:3,4421:1:1,8188:1:1^
+1144^5^0^36^37^1434^0.3677^0.3166^5^Mosh'Ogg Witch Doctor^3197:1:1,4306:2:3^
+2272^3^0^32^33^1416^0.2389^0.5849^3^Dalaran Theurgist^3714:1:1^
+2358^15^0^32^33^1416^0.2375^0.5750^15^Dalaran Summoner^1707:2:2,2290:1:1,2592:1:1,3714:9:9,3745:5:5,3816:1:1,3827:1:1,4306:7:13,10406:1:1^
+2359^7^0^32^33^1416^0.2458^0.5888^7^Elemental Slave^2838:1:1,4553:1:1,4784:3:3,5741:1:1,7067:1:1,8150:1:1^
+2559^1^0^30^31^1417^0.6587^0.3691^1^Highland Strider^3685:1:1,4512:1:1^
+2560^2^0^33^34^1417^0.4161^0.3571^2^Highland Thrasher^3685:2:2,4461:2:2^
+2563^4^0^32^33^1417^0.5218^0.3695^4^Plains Creeper^878:2:2,1074:1:1,1081:3:3,2251:4:4,3182:1:1,278225:1:1^
+2564^1^0^33^33^1417^0.3397^0.4451^1^Boulderfist Enforcer^213422:1:1^
+2565^1^0^35^35^1417^0.4174^0.3462^1^Giant Plains Creeper^878:1:1,1081:1:1,2251:1:1^
+2579^1^0^34^34^1417^0.3965^0.3749^1^Mesa Buzzard^1464:1:1,12037:1:1^
+2581^4^0^31^32^1417^0.5510^0.3751^4^Dabyrie Militia^1708:1:1,4306:2:2,213547:1:1^
+2582^15^0^30^31^1417^0.5546^0.3847^15^Dabyrie Laborer^4306:4:8^
+2623^3^0^32^32^1416^0.2402^0.5553^3^Spirit of Old^^
+2667^6^0^36^37^1434^0.3671^0.3177^6^Ward of Laze^^
 3560^4^0^37^37^1434^0.1996^0.1190^4^Healing Ward^^
+3984^1^0^33^33^1416^0.3226^0.3267^1^Nancy Vishas^5538:1:1^
+3985^1^0^34^34^1416^0.3119^0.3388^1^Grandpa Vishas^^
+4479^1^0^33^33^1417^0.5716^0.3959^1^Fardel Dabyrie^5831:1:1^
+4480^1^0^35^35^1417^0.5634^0.3608^1^Kenata Dabyrie^1707:1:1,5830:1:1^
+4481^1^0^34^34^1417^0.5412^0.3830^1^Marcel Dabyrie^5832:1:1^
 6206^3^0^0^0^0^0.0000^0.0000^0^^9308:3:3,9799:1:1^
 6207^8^0^0^0^0^0.0000^0.0000^0^^1705:1:1,1748:1:1,1782:1:1,2592:2:4,3770:1:1,4306:3:4,9308:2:2,15259:1:1^
 6211^3^0^0^0^0^0.0000^0.0000^0^^9308:2:2,15212:1:1^
@@ -35,39 +55,67 @@ GoldScout-export 5^cu63e0lfti1t^3
 262397^24^0^36^38^1434^0.2239^0.2676^24^Brinescale Skirmisher^1645:1:1,2740:1:1,2744:1:1,4603:2:6,5524:6:6,15233:1:1,17058:7:7,270305:10:10^
 275044^1^0^0^0^0^0.0000^0.0000^0^^4306:1:2^
 275046^1^0^0^0^0^0.0000^0.0000^0^^2592:1:2^
+@i^878^Fist-sized Spinneret
+@i^1074^Hard Spider Leg Tip
+@i^1081^Crisp Spider Meat
 @i^1205^Melon Juice
+@i^1464^Buzzard Talon
 @i^1520^Troll Sweat
 @i^1532^Shrunken Head
 @i^1645^Moonberry Juice
+@i^1679^Korg Bat
 @i^1697^Keen Raptor Tooth
 @i^1705^Lesser Moonstone
+@i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
 @i^1748^Linked Chain Bracers
 @i^1782^Cross-stitched Cloak
 @i^1827^Meat Cleaver
 @i^2251^Gooey Spider Leg
+@i^2290^Scroll of Intellect II
 @i^2592^Wool Cloth
 @i^2734^Green Hills of Stranglethorn - Page 10
 @i^2740^Green Hills of Stranglethorn - Page 16
 @i^2742^Green Hills of Stranglethorn - Page 18
 @i^2744^Green Hills of Stranglethorn - Page 20
+@i^2838^Heavy Stone
+@i^3182^Spider's Silk
+@i^3197^Stonecutter Claymore of the Bandit
 @i^3685^Raptor Egg
+@i^3714^Worn Stone Token
+@i^3745^Rune of Opening
 @i^3770^Mutton Chop
 @i^3771^Wild Hog Shank
+@i^3816^Reflective Heater
+@i^3827^Mana Potion
 @i^3915^Bloody Bone Necklace
 @i^4049^Emblazoned Bracers
 @i^4071^Glimmering Mail Breastplate
 @i^4306^Silk Cloth
+@i^4338^Mageweave Cloth
 @i^4364^Coarse Blasting Powder
+@i^4421^Scroll of Protection III
+@i^4461^Raptor Hide
+@i^4512^Highland Raptor Eye
 @i^4542^Moist Cornbread
+@i^4553^Jagged Piece of Stone
 @i^4555^Thick Scaly Tail
 @i^4603^Raw Spotted Yellowtail
+@i^4784^Lifeless Stone
 @i^5524^Thick-shelled Clam
+@i^5538^Vorrel's Wedding Ring
+@i^5741^Rock Chip
+@i^5830^Kenata's Head
+@i^5831^Fardel's Head
+@i^5832^Marcel's Head
 @i^6591^Battleforge Wristguards of the Eagle
 @i^6602^Dervish Bracers of the Prophet
 @i^6612^Sage's Boots of the Channeler
 @i^6614^Sage's Cloak of the Eagle
 @i^6893^Workshop Key
+@i^7067^Elemental Earth
+@i^8150^Deeprock Salt
+@i^8188^Explosive Shotgun
 @i^9299^Thermaplugg's Safe Combination
 @i^9308^Grime-Encrusted Object
 @i^9445^Grubbis Paws
@@ -75,47 +123,80 @@ GoldScout-export 5^cu63e0lfti1t^3
 @i^9459^Thermaplugg's Left Arm
 @i^9799^Ivycloth Sash of Spirit
 @i^9826^Durable Robe of Frost Protection
+@i^10406^Scaled Leather Headband of the Eagle
+@i^12037^Mystery Meat
 @i^15212^Fighter Broadsword of Agility
 @i^15233^Savage Axe of Strength
 @i^15259^Hefty Battlehammer of the Owl
 @i^17058^Fish Oil
+@i^213422^Illegible Recipe
+@i^213547^Scroll: THAW WORDS
 @i^270305^Brinescale Trident
 @i^273024^Glinteye Slippers
 @i^273026^Garb of Florid Feathers
 @i^273029^Golemsight Long Gun
+@i^278225^Surgical Spidersilk
+@q^878^0:7:0
+@q^1074^0:15:0
+@q^1081^1:7:1
 @q^1205^1:0:0
+@q^1464^0:15:0
 @q^1520^0:15:0
 @q^1532^1:12:0
 @q^1645^1:0:0
+@q^1679^2:2:0
 @q^1697^0:15:0
 @q^1705^2:7:1
+@q^1707^1:0:0
 @q^1708^1:0:0
 @q^1748^0:4:0
 @q^1782^0:4:0
 @q^1827^0:2:0
 @q^2251^1:7:1
+@q^2290^1:0:0
 @q^2592^1:7:1
 @q^2734^1:12:0
 @q^2740^1:12:0
 @q^2742^1:12:0
 @q^2744^1:12:0
+@q^2838^1:7:1
+@q^3182^1:7:1
+@q^3197^2:2:0
 @q^3685^1:7:1
+@q^3714^1:12:0
+@q^3745^1:12:0
 @q^3770^1:0:0
 @q^3771^1:0:0
+@q^3816^0:4:0
+@q^3827^1:0:0
 @q^3915^1:12:0
 @q^4049^2:4:0
 @q^4071^2:4:0
 @q^4306^1:7:1
+@q^4338^1:7:1
 @q^4364^1:7:1
+@q^4421^1:0:0
+@q^4461^1:7:1
+@q^4512^1:12:0
 @q^4542^1:0:0
+@q^4553^0:15:0
 @q^4555^0:15:0
 @q^4603^1:7:1
+@q^4784^0:15:0
 @q^5524^1:7:0
+@q^5538^1:12:0
+@q^5741^0:15:0
+@q^5830^1:12:0
+@q^5831^1:12:0
+@q^5832^1:12:0
 @q^6591^2:4:0
 @q^6602^2:4:0
 @q^6612^2:4:0
 @q^6614^2:4:0
 @q^6893^1:13:0
+@q^7067^1:7:1
+@q^8150^1:7:1
+@q^8188^2:2:0
 @q^9299^1:13:0
 @q^9308^1:12:0
 @q^9445^3:4:0
@@ -123,14 +204,21 @@ GoldScout-export 5^cu63e0lfti1t^3
 @q^9459^3:2:0
 @q^9799^2:4:0
 @q^9826^2:4:0
+@q^10406^2:4:0
+@q^12037^1:7:1
 @q^15212^2:2:0
 @q^15233^2:2:0
 @q^15259^2:2:0
 @q^17058^1:15:0
+@q^213422^1:12:0
+@q^213547^1:0:0
 @q^270305^1:12:0
 @q^273024^3:4:0
 @q^273026^3:4:0
 @q^273029^3:2:0
+@q^278225^1:12:0
+@m^1416^Alterac Mountains
+@m^1417^Arathi Highlands
 @m^1434^Stranglethorn Vale
 @c^2300^
 @c^2302^
@@ -1450,6 +1538,26 @@ GoldScout-export 5^cu63e0lfti1t^3
 @a^698^45:1
 @a^699^45:1
 @a^701^45:3
+@a^1142^127:7
+@a^1144^127:5
+@a^2272^224:3
+@a^2358^204:1,224:11,225:2,244:1
+@a^2359^224:3,225:2,245:2
+@a^2559^153:1
+@a^2560^128:1,147:1
+@a^2563^147:1,149:2,153:1
+@a^2564^166:1
+@a^2565^128:1
+@a^2579^147:1
+@a^2581^150:2,151:2
+@a^2582^150:7,151:8
+@a^2623^204:2,224:1
+@a^2667^127:6
 @a^3560^43:2,44:2
+@a^3984^126:1
+@a^3985^126:1
+@a^4479^151:1
+@a^4480^151:1
+@a^4481^150:1
 @a^262397^84:2,104:22
 @l^0^enUS

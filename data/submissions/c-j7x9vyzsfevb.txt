@@ -1,4 +1,4 @@
-GoldScout-export 5^j7x9vyzsfevb^29
+GoldScout-export 6^j7x9vyzsfevb^30
 203^1^0^22^22^1431^0.8182^0.6571^1^Skeletal Mage^^
 667^4^0^39^40^1434^0.4688^0.3984^4^Skullsplitter Warrior^1520:2:2,1524:1:1,2750:1:1,3771:2:2,4306:1:2,4725:1:1^
 669^7^0^41^42^1434^0.4583^0.4140^7^Skullsplitter Hunter^1520:4:4,1524:1:1,4024:1:1,4338:3:4,4599:2:2,8153:1:2^
@@ -40,6 +40,9 @@ GoldScout-export 5^j7x9vyzsfevb^29
 1564^6^0^42^43^1434^0.2863^0.8174^6^Bloodsail Warlock^2728:2:2,2750:1:1,3910:3:3,3927:1:1^
 1565^4^0^44^45^1434^0.3247^0.8849^4^Bloodsail Sea Dog^1645:1:1^
 1653^7^0^44^45^1434^0.3296^0.8846^7^Bloodsail Elder Magus^2730:1:1,2734:1:1,3928:1:1,4306:1:2,4338:1:2,9260:1:1^
+1783^14^0^50^51^1422^0.4582^0.7352^14^Skeletal Flayer^7972:2:2,12840:4:4,13446:1:1,14047:3:4^
+1784^1^0^51^51^1422^0.3681^0.5710^1^Skeletal Sorcerer^12840:1:1,14047:1:2^
+1791^10^0^50^52^1422^0.4869^0.7598^10^Slavering Ghoul^4001:1:1,6530:1:1,8948:1:1,12840:5:5,14047:5:6^
 1907^30^0^43^44^1434^0.2573^0.6264^30^Naga Explorer^1645:1:1,2751:1:1,3943:1:1,4002:1:1,4024:1:1,4029:10:10,4421:1:1,4603:1:2,7973:10:10,17058:7:7,248694:1:1^
 2521^2^0^50^50^1434^0.3970^0.8112^2^Skymane Gorilla^2799:1:1,8390:1:1^
 2522^1^0^50^50^1434^0.3758^0.7993^1^Jaguero Stalker^4580:1:1^
@@ -232,6 +235,7 @@ GoldScout-export 5^j7x9vyzsfevb^29
 10040^1^0^54^54^1449^0.4423^0.8171^1^Gorishi Hive Guard^6302:1:1^
 10041^1^0^56^56^1449^0.4404^0.8143^1^Gorishi Hive Queen^11835:1:1^
 10928^2^0^42^43^1434^0.2998^0.8170^2^Succubus Minion^^
+11075^1^0^53^53^1422^0.3638^0.5740^1^Cauldron Lord Bilemaw^13194:1:1^
 12046^1^0^49^49^1446^0.4126^0.5755^1^Gor'marok the Ravager^^
 12922^3^0^42^47^1447^0.2059^0.6138^2^Imp Minion^^
 14621^1^0^50^50^1427^0.4255^0.3567^1^Overseer Maltorius^18946:1:1^
@@ -338,6 +342,7 @@ GoldScout-export 5^j7x9vyzsfevb^29
 @i^3985^Monogrammed Sash
 @i^3989^Blocking Targe
 @i^4000^Overlinked Chain Belt
+@i^4001^Overlinked Chain Boots
 @i^4002^Overlinked Chain Bracers
 @i^4005^Overlinked Chain Pants
 @i^4006^Overlinked Chain Shoulderpads
@@ -423,6 +428,7 @@ GoldScout-export 5^j7x9vyzsfevb^29
 @i^7555^Regal Star of Shadow Protection
 @i^7909^Aquamarine
 @i^7912^Solid Stone
+@i^7972^Ichor of Undeath
 @i^7973^Big-mouth Clam
 @i^8146^Wicked Claw
 @i^8150^Deeprock Salt
@@ -517,8 +523,11 @@ GoldScout-export 5^j7x9vyzsfevb^29
 @i^12207^Giant Egg
 @i^12208^Tender Wolf Meat
 @i^12803^Living Essence
+@i^12840^Minion's Scourgestone
 @i^13089^Skibi's Pendant
+@i^13194^Felstone Field Cauldron Key
 @i^13443^Superior Mana Potion
+@i^13446^Major Healing Potion
 @i^14047^Runecloth
 @i^14255^Lunar Belt of the Channeler
 @i^14258^Bloodwoven Cord of Spirit
@@ -655,6 +664,7 @@ GoldScout-export 5^j7x9vyzsfevb^29
 @q^3985^2:4:0
 @q^3989^0:4:0
 @q^4000^0:4:0
+@q^4001^0:4:0
 @q^4002^0:4:0
 @q^4005^0:4:0
 @q^4006^0:4:0
@@ -740,6 +750,7 @@ GoldScout-export 5^j7x9vyzsfevb^29
 @q^7555^2:4:0
 @q^7909^2:7:1
 @q^7912^1:7:1
+@q^7972^1:7:1
 @q^7973^1:7:0
 @q^8146^1:7:1
 @q^8150^1:7:1
@@ -834,8 +845,11 @@ GoldScout-export 5^j7x9vyzsfevb^29
 @q^12207^1:7:1
 @q^12208^1:7:1
 @q^12803^2:7:1
+@q^12840^1:12:0
 @q^13089^3:4:0
+@q^13194^1:12:0
 @q^13443^1:0:0
+@q^13446^1:0:0
 @q^14047^1:7:1
 @q^14255^2:4:0
 @q^14258^2:4:0
@@ -909,6 +923,7 @@ GoldScout-export 5^j7x9vyzsfevb^29
 @q^281016^1:0:0
 @q^281018^1:0:0
 @m^1419^Blasted Lands
+@m^1422^Western Plaguelands
 @m^1425^The Hinterlands
 @m^1427^Searing Gorge
 @m^1431^Duskwood
@@ -1094,6 +1109,9 @@ GoldScout-export 5^j7x9vyzsfevb^29
 @a^1564^306:1,325:4,326:1
 @a^1565^345:1,346:3
 @a^1653^346:7
+@a^1783^227:4,309:2,310:2,329:5,330:1
+@a^1784^227:1
+@a^1791^227:1,310:6,329:3
 @a^1907^224:1,225:2,244:9,245:17,264:1
 @a^2521^327:2
 @a^2522^307:1
@@ -1271,6 +1289,7 @@ GoldScout-export 5^j7x9vyzsfevb^29
 @a^10040^328:1
 @a^10041^328:1
 @a^10928^325:1,326:1
+@a^11075^227:1
 @a^12046^228:1
 @a^12922^244:2
 @a^14621^148:1

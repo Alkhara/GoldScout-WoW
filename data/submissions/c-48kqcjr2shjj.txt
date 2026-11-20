@@ -1,16 +1,22 @@
-GoldScout-export 5^48kqcjr2shjj^2
+GoldScout-export 5^48kqcjr2shjj^3
 2959^8^0^7^8^1412^0.4171^0.4363^8^Prairie Stalker^2672:6:6,3299:2:2,3300:1:1^
 2972^1^0^7^7^1412^0.3960^0.4376^1^Kodo Calf^4779:1:1,5082:1:1^
 2978^12^0^8^9^1412^0.6053^0.4649^12^Venture Co. Worker^117:1:1,2589:6:9,2770:1:2^
 2979^6^0^9^10^1412^0.6040^0.4546^6^Venture Co. Supervisor^159:1:1,2589:1:2,2774:1:1,4671:1:1^
+3197^9^0^9^10^1411^0.5362^0.0909^9^Burning Blade Fanatic^727:1:1,2212:1:1,2589:3:6,3370:1:1,14544:1:1^
+3198^6^0^10^11^1411^0.5292^0.0824^6^Burning Blade Apprentice^159:1:1,2589:2:4^
+3204^1^0^14^14^1411^0.5148^0.0967^1^Gazz'uz^4903:1:1^
 3711^1^0^20^20^1440^0.0959^0.2768^1^Wrathtail Myrmidon^5523:1:1^
 3712^2^0^19^19^1440^0.1006^0.2875^2^Wrathtail Razortail^^
 3713^2^0^19^19^1440^0.0969^0.2774^2^Wrathtail Wave Rider^^
 3715^2^0^19^20^1440^0.1073^0.2980^2^Wrathtail Sea Witch^^
 3944^3^0^21^21^1440^0.1028^0.2885^3^Wrathtail Priestess^5523:1:1,16646:1:1,17057:1:1^
+8996^7^0^10^14^1411^0.5272^0.0846^7^Voidwalker Minion^^
 12940^2^0^22^22^1440^0.0931^0.2746^2^Vorsha the Lasher^3010:1:1,5569:1:1^
 @i^117^Tough Jerky
 @i^159^Refreshing Spring Water
+@i^727^Notched Shortsword of Intellect
+@i^2212^Cracked Buckler
 @i^2589^Linen Cloth
 @i^2672^Stringy Wolf Meat
 @i^2770^Copper Ore
@@ -18,15 +24,20 @@ GoldScout-export 5^48kqcjr2shjj^2
 @i^3010^Fine Sand
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
+@i^3370^Patchwork Belt
 @i^4671^Ancestral Cloak
 @i^4779^Dull Kodo Tooth
+@i^4903^Eye of Burning Shadow
 @i^5082^Thin Kodo Leather
 @i^5523^Small Barnacled Clam
 @i^5569^Seaweed
+@i^14544^Lieutenant's Insignia
 @i^16646^Shredder Operating Manual - Page 2
 @i^17057^Shiny Fish Scales
 @q^117^1:0:0
 @q^159^1:0:0
+@q^727^2:2:0
+@q^2212^0:4:0
 @q^2589^1:7:1
 @q^2672^1:7:1
 @q^2770^1:7:1
@@ -34,13 +45,17 @@ GoldScout-export 5^48kqcjr2shjj^2
 @q^3010^0:15:0
 @q^3299^0:15:0
 @q^3300^0:15:0
+@q^3370^0:4:0
 @q^4671^1:4:0
 @q^4779^0:15:0
+@q^4903^1:12:0
 @q^5082^1:7:1
 @q^5523^1:7:0
 @q^5569^0:15:0
+@q^14544^1:12:0
 @q^16646^1:12:0
 @q^17057^1:15:0
+@m^1411^Durotar
 @m^1412^Mulgore
 @m^1440^Ashenvale
 @c^118^
@@ -827,10 +842,14 @@ GoldScout-export 5^48kqcjr2shjj^2
 @a^2972^167:1
 @a^2978^171:1,191:3,192:8
 @a^2979^171:2,192:4
+@a^3197^30:7,31:2
+@a^3198^30:6
+@a^3204^30:1
 @a^3711^101:1
 @a^3712^101:1,102:1
 @a^3713^101:2
 @a^3715^101:1,122:1
 @a^3944^101:2,122:1
+@a^8996^30:7
 @a^12940^101:2
 @l^0^enUS
