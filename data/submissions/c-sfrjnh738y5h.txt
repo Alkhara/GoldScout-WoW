@@ -1,4 +1,4 @@
-GoldScout-export 6^sfrjnh738y5h^10
+GoldScout-export 6^sfrjnh738y5h^11
 590^1^0^14^14^1436^0.4542^0.7041^1^Defias Looter^^
 1120^1^0^8^8^1426^0.6980^0.4063^1^Frostmane Troll^^
 1922^2^0^7^7^1429^0.6074^0.7047^2^Gray Forest Wolf^2672:1:1,3300:1:1^
@@ -34,6 +34,15 @@ GoldScout-export 6^sfrjnh738y5h^10
 4860^3^0^0^0^0^0.0000^0.0000^0^^4552:2:2,4554:1:1,7912:1:1,9920:1:1^
 4861^2^0^0^0^0^0.0000^0.0000^0^^864:1:1,11391:1:1,11394:2:2^
 4872^2^0^38^38^1418^0.3877^0.1885^2^Obsidian Golem^4060:1:1^
+5286^1^0^40^40^1444^0.2968^0.4756^1^Longtooth Runner^4584:1:1^
+5292^23^0^43^44^1444^0.5507^0.5655^23^Feral Scar Yeti^3928:1:1,4017:1:1,8146:1:1,8973:7:7,15374:1:1^
+5293^1^0^45^46^1444^0.5275^0.5977^1^Hulking Feral Scar^^
+5295^6^0^44^45^1444^0.5350^0.5755^6^Enraged Feral Scar^4424:1:1,8973:4:4^
+5307^1^0^41^43^1444^0.5639^0.5596^1^Vale Screecher^6826:1:1^
+5331^9^0^42^43^1444^0.2805^0.5329^9^Hatecrest Warrior^7973:4:4,9247:5:5,17058:4:4^
+5332^3^0^41^42^1444^0.2729^0.5531^3^Hatecrest Wave Rider^9247:2:2,17058:2:2^
+5335^6^0^41^42^1444^0.2749^0.5387^6^Hatecrest Screamer^9247:3:3^
+5337^2^0^42^43^1444^0.2761^0.5551^2^Hatecrest Siren^^
 5425^1^0^42^42^1446^0.5095^0.2933^1^Starving Blisterpaw^^
 5601^1^0^42^42^1443^0.6650^0.8003^1^Khan Jehn^4306:1:3^
 7011^6^0^0^0^0^0.0000^0.0000^0^^8389:1:1,262889:1:1^
@@ -182,7 +191,9 @@ GoldScout-export 6^sfrjnh738y5h^10
 @i^3803^Hardened Cloak
 @i^3808^Double Mail Belt
 @i^3809^Double Mail Boots
+@i^3928^Superior Healing Potion
 @i^3939^Crochet Cloak
+@i^4017^Sharp Shortsword
 @i^4042^Aurora Gloves
 @i^4052^Insignia Cap
 @i^4060^Glyphed Leggings
@@ -191,6 +202,7 @@ GoldScout-export 6^sfrjnh738y5h^10
 @i^4338^Mageweave Cloth
 @i^4402^Small Flame Sac
 @i^4419^Scroll of Intellect III
+@i^4424^Scroll of Spirit III
 @i^4460^Ripped Wing Webbing
 @i^4480^Thundering Charm
 @i^4540^Tough Hunk of Bread
@@ -199,6 +211,7 @@ GoldScout-export 6^sfrjnh738y5h^10
 @i^4554^Shiny Polished Stone
 @i^4582^Soft Bushy Tail
 @i^4583^Thick Furry Mane
+@i^4584^Large Trophy Paw
 @i^4585^Dripping Spider Mandible
 @i^4599^Cured Ham Steak
 @i^4603^Raw Spotted Yellowtail
@@ -231,10 +244,14 @@ GoldScout-export 6^sfrjnh738y5h^10
 @i^7556^Twilight Orb of the Eagle
 @i^7666^Shattered Necklace
 @i^7912^Solid Stone
+@i^7973^Big-mouth Clam
 @i^8009^Dentrium Power Stone
 @i^8052^An'Alleum Power Stone
+@i^8146^Wicked Claw
 @i^8386^Pattern: Big Voodoo Robe
 @i^8389^Pattern: Big Voodoo Pants
+@i^8973^Thick Yeti Hide
+@i^9247^Hatecrest Naga Scale
 @i^9407^Stoneweaver Leggings
 @i^9412^Galgann's Fireblaster
 @i^9414^Oilskin Leggings
@@ -262,6 +279,7 @@ GoldScout-export 6^sfrjnh738y5h^10
 @i^14827^Symbolic Belt
 @i^14829^Symbolic Legplates
 @i^15213^Mercenary Blade of Nature Protection
+@i^15374^Wolf Rider's Leggings of the Wolf
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
 @i^19937^Small Scorpid Claw
@@ -369,7 +387,9 @@ GoldScout-export 6^sfrjnh738y5h^10
 @q^3803^0:4:0
 @q^3808^0:4:0
 @q^3809^0:4:0
+@q^3928^1:0:0
 @q^3939^0:4:0
+@q^4017^0:2:0
 @q^4042^2:4:0
 @q^4052^2:4:0
 @q^4060^2:4:0
@@ -378,6 +398,7 @@ GoldScout-export 6^sfrjnh738y5h^10
 @q^4338^1:7:1
 @q^4402^1:7:1
 @q^4419^1:0:0
+@q^4424^1:0:0
 @q^4460^0:15:0
 @q^4480^1:0:0
 @q^4540^1:0:0
@@ -386,6 +407,7 @@ GoldScout-export 6^sfrjnh738y5h^10
 @q^4554^0:15:0
 @q^4582^1:12:0
 @q^4583^0:15:0
+@q^4584^0:15:0
 @q^4585^0:15:0
 @q^4599^1:0:0
 @q^4603^1:7:1
@@ -418,10 +440,14 @@ GoldScout-export 6^sfrjnh738y5h^10
 @q^7556^2:4:0
 @q^7666^2:12:0
 @q^7912^1:7:1
+@q^7973^1:7:0
 @q^8009^1:12:0
 @q^8052^1:12:0
+@q^8146^1:7:1
 @q^8386^2:9:0
 @q^8389^2:9:0
+@q^8973^1:12:0
+@q^9247^1:12:0
 @q^9407^3:4:0
 @q^9412^3:2:0
 @q^9414^3:4:0
@@ -449,6 +475,7 @@ GoldScout-export 6^sfrjnh738y5h^10
 @q^14827^2:4:0
 @q^14829^2:4:0
 @q^15213^2:2:0
+@q^15374^2:4:0
 @q^17057^1:15:0
 @q^17058^1:15:0
 @q^19937^0:15:0
@@ -521,6 +548,7 @@ GoldScout-export 6^sfrjnh738y5h^10
 @m^1429^Elwynn Forest
 @m^1436^Westfall
 @m^1443^Desolace
+@m^1444^Feralas
 @m^1446^Tanaris
 @m^2521^Zephras Isle
 @m^2548^Riverglades
@@ -1296,6 +1324,15 @@ GoldScout-export 6^sfrjnh738y5h^10
 @a^4845^47:1
 @a^4846^49:1,67:1
 @a^4872^67:2
+@a^5286^185:1
+@a^5292^211:2,230:6,231:15
+@a^5293^230:1
+@a^5295^230:4,231:2
+@a^5307^231:1
+@a^5331^205:6,225:3
+@a^5332^205:2,225:1
+@a^5335^205:5,225:1
+@a^5337^205:1,225:1
 @a^5425^110:1
 @a^5601^333:1
 @a^11559^66:1,86:2

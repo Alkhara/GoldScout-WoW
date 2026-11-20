@@ -1,4 +1,4 @@
-GoldScout-export 6^d4zy07d6mv05^5
+GoldScout-export 6^d4zy07d6mv05^6
 667^1^0^39^40^1434^0.4597^0.3264^1^Skullsplitter Warrior^1477:1:1,4306:1:1^
 669^1^0^41^41^1434^0.4768^0.4111^1^Skullsplitter Hunter^4338:1:2^
 670^2^0^41^42^1434^0.4560^0.4072^2^Skullsplitter Witch Doctor^1520:1:1,4338:2:3^
@@ -43,6 +43,7 @@ GoldScout-export 6^d4zy07d6mv05^5
 4540^3^0^0^0^0^0.0000^0.0000^0^^^
 5477^1^0^39^39^1435^0.5069^0.3666^1^Noboru the Cudgel^4306:1:2,6196:1:1^
 5622^1^0^37^37^1435^0.6494^0.2114^1^Ongeku^6190:1:1^
+256952^4^0^39^40^2548^0.5091^0.5760^4^Twilight Raider^4306:2:3,266427:1:1^
 258792^8^0^0^0^0^0.0000^0.0000^0^^1708:1:1,1990:1:1,3795:1:1,4306:2:4,7086:1:1,270343:2:2^
 258797^2^0^0^0^0^0.0000^0.0000^0^^1477:1:1,3780:1:1,4306:1:2^
 258799^5^0^0^0^0^0.0000^0.0000^0^^537:1:1,4306:2:2,4338:1:1,9849:1:1^
@@ -57,11 +58,13 @@ GoldScout-export 6^d4zy07d6mv05^5
 260042^1^0^0^0^0^0.0000^0.0000^0^^274604:1:1^
 260202^1^0^0^0^0^0.0000^0.0000^0^^274614:1:1,276894:1:1^
 260353^1^0^0^0^0^0.0000^0.0000^0^^^
+262037^2^0^37^38^2548^0.6021^0.8499^2^Roosting Duskbat^11394:2:2^
 263196^10^0^0^0^0^0.0000^0.0000^0^^4306:3:4,15929:1:1,248693:1:1,270343:3:3^
 263886^1^0^0^0^0^0.0000^0.0000^0^^274615:1:1^
 263899^1^0^0^0^0^0.0000^0.0000^0^^3816:1:1^
 264172^1^0^0^0^0^0.0000^0.0000^0^^286662:1:1^
 268321^2^0^0^0^0^0.0000^0.0000^0^^3779:1:1,3810:1:1^
+272228^4^0^36^37^2548^0.5462^0.7611^4^Harvest Sentry^4306:3:5,4338:1:1,5567:1:1^
 @i^537^Dull Frenzy Scale
 @i^727^Notched Shortsword of the Gorilla
 @i^767^Long Bo Staff
@@ -114,6 +117,7 @@ GoldScout-export 6^d4zy07d6mv05^5
 @i^4878^Broken Bloodstained Bow
 @i^5213^Scorching Wand
 @i^5466^Scorpid Stinger
+@i^5567^Silver Hook
 @i^5637^Large Fang
 @i^5803^Speck of Dream Dust
 @i^6190^Draenethyst Shard
@@ -130,6 +134,7 @@ GoldScout-export 6^d4zy07d6mv05^5
 @i^9849^Conjurer's Hood of the Hierophant
 @i^9851^Conjurer's Breeches of the Owl
 @i^9885^Huntsman's Boots of the Beast
+@i^11394^Bat Heart
 @i^12037^Mystery Meat
 @i^12205^White Spider Meat
 @i^15003^Primal Belt
@@ -141,6 +146,7 @@ GoldScout-export 6^d4zy07d6mv05^5
 @i^248693^Waylaid Crate: Expert Textiles
 @i^248708^Waylaid Crate: Expert Fabrics
 @i^258530^Lucky Lure
+@i^266427^Field Marshal's Log
 @i^270333^Voodoo-Infused Artifact
 @i^270343^I'lalai Fetish
 @i^274598^Bloodslash Axe
@@ -203,6 +209,7 @@ GoldScout-export 6^d4zy07d6mv05^5
 @q^4878^0:15:0
 @q^5213^2:2:0
 @q^5466^1:7:1
+@q^5567^0:15:0
 @q^5637^1:7:1
 @q^5803^1:12:0
 @q^6190^1:12:0
@@ -219,6 +226,7 @@ GoldScout-export 6^d4zy07d6mv05^5
 @q^9849^2:4:0
 @q^9851^2:4:0
 @q^9885^2:4:0
+@q^11394^0:15:0
 @q^12037^1:7:1
 @q^12205^1:7:1
 @q^15003^1:4:0
@@ -230,6 +238,7 @@ GoldScout-export 6^d4zy07d6mv05^5
 @q^248693^1:0:1
 @q^248708^2:0:1
 @q^258530^1:12:0
+@q^266427^1:12:0
 @q^270333^1:12:0
 @q^270343^1:12:0
 @q^274598^3:2:0
@@ -243,6 +252,7 @@ GoldScout-export 6^d4zy07d6mv05^5
 @m^1411^Durotar
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
+@m^2548^Riverglades
 @c^118^
 @c^724^
 @c^733^
@@ -997,5 +1007,8 @@ GoldScout-export 6^d4zy07d6mv05^5
 @a^3560^169:2
 @a^5477^150:1
 @a^5622^92:1
+@a^256952^230:4
+@a^262037^332:1,352:1
+@a^272228^290:2,310:2
 @f^1434^0^3^179^4603:1:1,6358:1:1,6362:1:1^285:3
 @l^0^enUS

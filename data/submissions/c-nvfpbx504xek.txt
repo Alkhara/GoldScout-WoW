@@ -1,4 +1,4 @@
-GoldScout-export 6^nvfpbx504xek^24
+GoldScout-export 6^nvfpbx504xek^25
 3^16^0^24^25^1431^0.2377^0.3765^16^Flesh Eater^884:3:3,887:3:3,1129:4:4,2219:1:1,2592:2:3,2783:1:1,5529:3:3^
 48^19^0^21^22^1431^0.7925^0.7122^19^Skeletal Warrior^1818:1:1,2378:5:5,2589:2:6,2592:4:4,4306:3:3^
 157^6^0^14^15^1436^0.4932^0.5582^6^Goretusk^723:1:1,731:2:2,769:3:5,771:3:3,2677:2:2,3172:2:2^
@@ -127,9 +127,17 @@ GoldScout-export 6^nvfpbx504xek^24
 2091^1^0^32^32^1437^0.5311^0.5366^1^Chieftain Nek'rosh^1205:1:1,3625:1:1^
 2174^36^0^14^16^1439^0.3336^0.6923^36^Coastal Frenzy^537:18:18,3036:1:1,4874:3:3,5468:10:10,6361:7:9,15945:1:1,211787:1:1,248685:1:1^
 2185^1^0^12^14^1439^0.3362^0.5999^1^Darkshore Thresher^^
-2348^3^0^26^27^1424^0.5782^0.5491^3^Elder Moss Creeper^878:1:1,1074:2:2,1081:1:1,1288:1:1,2251:2:2^
+2348^4^0^26^27^1424^0.5781^0.5813^4^Elder Moss Creeper^878:1:1,1074:3:3,1081:1:1,1288:1:1,2251:2:2^
 2354^2^0^23^23^1424^0.5515^0.5229^2^Vicious Gray Bear^3730:1:1,5635:1:1,11406:1:1^
-2356^1^0^25^25^1424^0.6955^0.5006^1^Elder Gray Bear^2940:1:1^
+2356^1^0^25^26^1424^0.6955^0.5006^1^Elder Gray Bear^2940:1:1^
+2368^8^0^28^29^1424^0.6199^0.7638^8^Daggerspine Shorestalker^3770:2:2,5524:3:3,6394:1:1,17057:2:2,17058:1:1^
+2369^14^0^30^31^1424^0.5700^0.6832^14^Daggerspine Shorehunter^2766:1:1,5524:8:8,6308:1:3,6592:1:1,7072:1:1,17057:1:1,17058:1:1^
+2370^3^0^30^30^1424^0.6309^0.7700^3^Daggerspine Screamer^1205:1:1,5524:1:1,6386:1:1,7072:1:1,17057:2:2^
+2371^22^0^31^32^1424^0.5723^0.6684^22^Daggerspine Siren^1205:2:2,3780:1:1,7561:1:1,17057:7:7,17058:7:7^
+2374^3^0^28^28^1424^0.3476^0.6926^3^Torn Fin Muckdweller^2785:1:1,3716:1:1,17058:1:1^
+2375^1^0^29^29^1424^0.3385^0.6902^1^Torn Fin Coastrunner^1205:1:1,2766:1:1,17057:1:1^
+2376^20^0^30^31^1424^0.4201^0.6815^20^Torn Fin Oracle^929:1:1,3716:3:3,5524:5:5,5785:1:1,6308:2:5,11152:1:1,17057:4:4,17058:6:6^
+2377^25^0^31^32^1424^0.4144^0.6840^25^Torn Fin Tidehunter^929:1:1,1205:1:1,3716:6:6,3864:1:1,5524:13:13,6308:1:3,17057:9:9,17058:8:8^
 2384^1^0^24^24^1424^0.5579^0.5176^1^Starving Mountain Lion^5136:1:1^
 2385^3^0^27^28^1424^0.5893^0.5683^3^Feral Mountain Lion^3731:1:1,4712:1:1,5137:1:1^
 2408^7^0^30^31^1424^0.5711^0.4942^7^Snapjaw^3712:1:1,4555:2:2,4556:2:2,5524:5:5,6308:1:2^
@@ -249,8 +257,10 @@ GoldScout-export 6^nvfpbx504xek^24
 @i^2677^Boar Ribs
 @i^2702^Lightforge Ingot
 @i^2765^Hunting Knife
+@i^2766^Deft Stiletto
 @i^2782^Mishandled Recurve Bow
 @i^2783^Shoddy Blunderbuss
+@i^2785^Stiff Recurve Bow
 @i^2786^Oiled Blunderbuss
 @i^2794^An Old History Book
 @i^2799^Gorilla Fang
@@ -299,13 +309,16 @@ GoldScout-export 6^nvfpbx504xek^24
 @i^3685^Raptor Egg
 @i^3702^Bear Gall Bladder
 @i^3712^Turtle Meat
+@i^3716^Murloc Head
 @i^3730^Big Bear Meat
 @i^3731^Lion Meat
 @i^3740^Decapitating Sword of Agility
 @i^3770^Mutton Chop
 @i^3779^Hefty War Axe
+@i^3780^Long-barreled Musket
 @i^3800^Hardened Leather Belt
 @i^3809^Double Mail Boots
+@i^3864^Citrine
 @i^4096^Coarse Gorilla Hair
 @i^4306^Silk Cloth
 @i^4402^Small Flame Sac
@@ -332,6 +345,7 @@ GoldScout-export 6^nvfpbx504xek^24
 @i^5637^Large Fang
 @i^5669^Dust Devil Debris
 @i^5784^Slimy Murloc Scale
+@i^5785^Thick Murloc Scale
 @i^6211^Recipe: Elixir of Ogre's Strength
 @i^6289^Raw Longjaw Mud Snapper
 @i^6291^Raw Brilliant Smallfish
@@ -340,17 +354,22 @@ GoldScout-export 6^nvfpbx504xek^24
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
 @i^6361^Raw Rainbow Fin Albacore
+@i^6386^Glimmering Mail Legguards
 @i^6387^Glimmering Mail Bracers
 @i^6391^Pattern: Stylish Green Shirt
 @i^6393^Silver-thread Gloves
+@i^6394^Silver-thread Boots
 @i^6530^Nightcrawlers
 @i^6566^Shimmering Amice
+@i^6592^Battleforge Armor of Strength
 @i^6593^Battleforge Cloak of Strength
 @i^6603^Dervish Tunic of the Channeler
 @i^6604^Dervish Cape of the Monkey
 @i^6614^Sage's Cloak of the Bear
+@i^7072^Naga Scale
 @i^7354^Elder's Boots of the Channeler
 @i^7357^Elder's Hat of the Sorcerer
+@i^7561^Schematic: Goblin Jumper Cables
 @i^8146^Wicked Claw
 @i^9797^Ivycloth Pants of the Whale
 @i^9807^Superior Shoulders of the Owl
@@ -358,6 +377,7 @@ GoldScout-export 6^nvfpbx504xek^24
 @i^9818^Fortified Chain of the Eagle
 @i^9840^Banded Girdle of Spirit
 @i^10407^Raider's Shoulderpads
+@i^11152^Formula: Enchant Gloves - Fishing
 @i^11406^Rotting Bear Carcass
 @i^11407^Torn Bear Pelt
 @i^12052^Ring of the Moon
@@ -495,8 +515,10 @@ GoldScout-export 6^nvfpbx504xek^24
 @q^2677^1:7:1
 @q^2702^1:12:0
 @q^2765^0:2:0
+@q^2766^0:2:0
 @q^2782^0:2:0
 @q^2783^0:2:0
+@q^2785^0:2:0
 @q^2786^0:2:0
 @q^2794^1:12:0
 @q^2799^1:12:0
@@ -545,13 +567,16 @@ GoldScout-export 6^nvfpbx504xek^24
 @q^3685^1:7:1
 @q^3702^0:15:0
 @q^3712^1:7:1
+@q^3716^1:12:0
 @q^3730^1:7:1
 @q^3731^1:7:1
 @q^3740^2:2:0
 @q^3770^1:0:0
 @q^3779^0:2:0
+@q^3780^0:2:0
 @q^3800^0:4:0
 @q^3809^0:4:0
+@q^3864^2:7:1
 @q^4096^1:15:0
 @q^4306^1:7:1
 @q^4402^1:7:1
@@ -578,6 +603,7 @@ GoldScout-export 6^nvfpbx504xek^24
 @q^5637^1:7:1
 @q^5669^1:12:0
 @q^5784^1:7:1
+@q^5785^1:7:1
 @q^6211^1:9:0
 @q^6289^1:7:1
 @q^6291^1:7:1
@@ -586,17 +612,22 @@ GoldScout-export 6^nvfpbx504xek^24
 @q^6358^1:7:1
 @q^6359^1:7:1
 @q^6361^1:7:1
+@q^6386^2:4:0
 @q^6387^2:4:0
 @q^6391^2:9:0
 @q^6393^2:4:0
+@q^6394^2:4:0
 @q^6530^1:0:0
 @q^6566^1:4:0
+@q^6592^2:4:0
 @q^6593^2:4:0
 @q^6603^2:4:0
 @q^6604^2:4:0
 @q^6614^2:4:0
+@q^7072^1:7:1
 @q^7354^2:4:0
 @q^7357^2:4:0
+@q^7561^1:9:0
 @q^8146^1:7:1
 @q^9797^2:4:0
 @q^9807^2:4:0
@@ -604,6 +635,7 @@ GoldScout-export 6^nvfpbx504xek^24
 @q^9818^2:4:0
 @q^9840^2:4:0
 @q^10407^1:4:0
+@q^11152^2:9:0
 @q^11406^0:15:0
 @q^11407^1:12:0
 @q^12052^2:4:0
@@ -1620,9 +1652,17 @@ GoldScout-export 6^nvfpbx504xek^24
 @a^2091^210:1
 @a^2174^246:11,266:7,267:2,286:6,287:2,306:7,307:1
 @a^2185^226:1
-@a^2348^211:1,231:1,232:1
+@a^2348^211:1,231:1,232:1,271:1
 @a^2354^210:1,211:1
 @a^2356^213:1
+@a^2368^291:2,312:6
+@a^2369^250:2,251:2,271:4,291:6
+@a^2370^312:3
+@a^2371^250:1,251:3,271:14,291:4
+@a^2374^266:3
+@a^2375^266:1
+@a^2376^249:2,267:4,268:9,269:2,288:3
+@a^2377^249:2,267:7,268:11,269:1,287:2,288:2
 @a^2384^211:1
 @a^2385^231:3
 @a^2408^191:4,211:2,231:1
@@ -1653,6 +1693,7 @@ GoldScout-export 6^nvfpbx504xek^24
 @a^272284^292:1,309:1,310:1
 @a^272291^143:1
 @a^276009^171:2
+@f^1424^0^1^90^6359:1:1^268:1
 @f^1433^0^1^75^6308:1:1^255:1
 @f^1437^0^3^75^6358:1:1,6359:1:1,21113:1:1^242:3
 @f^1439^0^19^77^6303:1:1,6358:9:9,6361:3:3,12238:6:6^166:9,187:5,207:5

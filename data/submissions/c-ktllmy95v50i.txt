@@ -1,10 +1,11 @@
-GoldScout-export 5^ktllmy95v50i^7
+GoldScout-export 6^ktllmy95v50i^8
 2242^5^0^35^36^1416^0.5951^0.4336^5^Syndicate Spy^4306:2:3^
 2250^1^0^32^32^1416^0.3498^0.7129^1^Mountain Yeti^3771:1:1^
 2251^4^0^33^34^1416^0.3743^0.6774^4^Giant Yeti^1710:1:1,3800:1:1^
 2358^8^0^32^33^1416^0.2343^0.5534^8^Dalaran Summoner^3745:3:3,4306:3:4^
 2359^6^0^32^33^1416^0.2324^0.5422^6^Elemental Slave^3715:4:4,4553:1:1,4784:3:3,8150:3:3^
 2406^1^0^32^32^1416^0.3118^0.7245^1^Mountain Lion^1686:1:1,3731:1:1,5810:1:1,15285:1:1^
+2960^2^0^9^10^1412^0.4993^0.3130^2^Prairie Wolf Alpha^2672:2:2,3299:1:1^
 3098^6^0^1^2^1411^0.4369^0.6447^6^Mottled Boar^117:3:3,1376:1:1,4865:2:2,7098:3:3^
 3101^2^0^3^4^1411^0.4460^0.5494^2^Vile Familiar^1376:1:1^
 3102^5^0^3^4^1411^0.4422^0.5417^5^Felstalker^2653:1:1,4865:1:1,7073:3:3,7074:1:1^
@@ -28,7 +29,9 @@ GoldScout-export 5^ktllmy95v50i^7
 3205^1^0^10^10^1411^0.6732^0.8718^1^Zalazane^117:1:1,4866:1:1^
 3206^1^0^8^9^1411^0.6734^0.8720^1^Voodoo Troll^2589:1:1^
 3207^6^0^8^9^1411^0.6741^0.8761^6^Hexed Troll^118:1:1,1425:1:1,14090:1:1^
+3246^2^0^12^13^1413^0.5135^0.3704^2^Fleeting Plainstrider^5087:2:2,17056:1:1^
 3281^1^0^4^4^1411^0.4060^0.6664^1^Sarkoth^4905:1:1,7101:1:1^
+3566^6^0^9^9^1412^0.4911^0.2340^6^Flatland Prowler^4813:2:2,4814:4:4^
 4504^1^0^37^37^1416^0.3711^0.6842^1^Frostmaw^5811:1:1^
 266849^1^0^5^6^1411^0.5101^0.5509^1^Ridgeshade Lurker^2590:1:1,5465:1:1^
 266850^2^0^5^6^1411^0.5102^0.5441^2^Ridgeshade Creeper^1476:1:1,5465:1:2^
@@ -56,7 +59,9 @@ GoldScout-export 5^ktllmy95v50i^7
 @i^2590^Forest Spider Webbing
 @i^2652^Flimsy Chain Cloak
 @i^2653^Flimsy Chain Gloves
+@i^2672^Stringy Wolf Meat
 @i^2773^Cracked Shortbow
+@i^3299^Fractured Canine
 @i^3715^Bracers of Earth Binding
 @i^3731^Lion Meat
 @i^3745^Rune of Opening
@@ -68,6 +73,7 @@ GoldScout-export 5^ktllmy95v50i^7
 @i^4775^Cracked Bill
 @i^4776^Ruffled Feather
 @i^4784^Lifeless Stone
+@i^4813^Small Leather Collar
 @i^4814^Discolored Fang
 @i^4859^Burning Blade Medallion
 @i^4862^Scorpid Worker Tail
@@ -78,6 +84,7 @@ GoldScout-export 5^ktllmy95v50i^7
 @i^4882^Benedict's Key
 @i^4892^Durotar Tiger Fur
 @i^4905^Sarkoth's Mangled Claw
+@i^5087^Plainstrider Beak
 @i^5465^Small Spider Leg
 @i^5810^Fresh Carcass
 @i^5811^Frostmaw's Mane
@@ -118,7 +125,9 @@ GoldScout-export 5^ktllmy95v50i^7
 @q^2590^0:15:0
 @q^2652^0:4:0
 @q^2653^0:4:0
+@q^2672^1:7:1
 @q^2773^0:2:0
+@q^3299^0:15:0
 @q^3715^1:12:0
 @q^3731^1:7:1
 @q^3745^1:12:0
@@ -130,6 +139,7 @@ GoldScout-export 5^ktllmy95v50i^7
 @q^4775^0:15:0
 @q^4776^0:15:0
 @q^4784^0:15:0
+@q^4813^0:15:0
 @q^4814^0:15:0
 @q^4859^1:12:0
 @q^4862^1:12:0
@@ -140,6 +150,7 @@ GoldScout-export 5^ktllmy95v50i^7
 @q^4882^1:13:0
 @q^4892^1:12:0
 @q^4905^1:12:0
+@q^5087^1:12:0
 @q^5465^1:7:1
 @q^5810^1:12:0
 @q^5811^1:12:0
@@ -159,6 +170,8 @@ GoldScout-export 5^ktllmy95v50i^7
 @q^277128^1:12:0
 @q^277661^1:12:0
 @m^1411^Durotar
+@m^1412^Mulgore
+@m^1413^The Barrens
 @m^1416^Alterac Mountains
 @c^724^
 @c^733^
@@ -1637,6 +1650,7 @@ GoldScout-export 5^ktllmy95v50i^7
 @a^2358^203:1,204:3,224:1,225:2,244:1
 @a^2359^203:1,204:2,205:1,224:1,225:1
 @a^2406^286:1
+@a^2960^109:1,130:1
 @a^3098^248:5,268:1
 @a^3101^208:1,229:1
 @a^3102^208:4,228:1
@@ -1660,7 +1674,9 @@ GoldScout-export 5^ktllmy95v50i^7
 @a^3205^353:1
 @a^3206^353:1
 @a^3207^353:6
+@a^3246^150:2
 @a^3281^268:1
+@a^3566^89:4,90:1,110:1
 @a^4504^267:1
 @a^266849^230:1
 @a^266850^210:2
