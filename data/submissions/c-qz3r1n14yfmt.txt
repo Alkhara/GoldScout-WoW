@@ -1,4 +1,4 @@
-GoldScout-export 6^qz3r1n14yfmt^4
+GoldScout-export 6^qz3r1n14yfmt^5
 127^3^0^18^19^1436^0.3492^0.8559^3^Murloc Tidehunter^730:1:1,5523:1:1,5784:1:1^
 517^2^0^17^17^1436^0.3485^0.8540^2^Murloc Oracle^730:2:2^
 598^9^0^0^0^0^0.0000^0.0000^0^^1743:1:1,1744:1:1,2592:2:2,15926:1:1,248684:1:1^
@@ -28,10 +28,10 @@ GoldScout-export 6^qz3r1n14yfmt^4
 4114^1^0^27^27^1441^0.2518^0.4652^1^Gravelsnout Forager^1806:1:1^
 4116^1^0^29^29^1441^0.1243^0.1829^1^Gravelsnout Surveyor^2785:1:1,4306:1:1^
 4117^2^0^25^26^1441^0.3929^0.5534^2^Cloud Serpent^6826:1:1,17056:1:1,211854:1:1^
-4118^3^0^26^27^1441^0.3879^0.5594^3^Venomous Cloud Serpent^6444:1:1,6826:1:1^
-4124^4^0^27^28^1441^0.1919^0.3786^4^Needles Cougar^5137:3:3^
+4118^3^0^26^28^1441^0.3879^0.5594^3^Venomous Cloud Serpent^6444:1:1,6826:1:1^
+4124^5^0^27^28^1441^0.2852^0.4278^5^Needles Cougar^5137:4:4,5635:1:1^
 4126^1^0^25^26^1441^0.3960^0.5581^1^Crag Stalker^5137:1:1^
-4249^1^0^28^29^1441^0.1952^0.3930^1^Pesterhide Snarler^^
+4249^3^0^28^29^1441^0.4885^0.5397^3^Pesterhide Snarler^3402:1:1^
 4416^10^0^0^0^0^0.0000^0.0000^0^^414:1:1,1210:1:1,2589:2:4,6540:1:1^
 4417^3^0^0^0^0^0.0000^0.0000^0^^414:1:1,2589:1:2^
 4420^1^0^0^0^0^0.0000^0.0000^0^^6686:1:1^
@@ -64,6 +64,7 @@ GoldScout-export 6^qz3r1n14yfmt^4
 6168^1^0^0^0^0^0.0000^0.0000^0^^1756:1:1^
 10756^1^0^28^29^1441^0.3402^0.3300^1^Scalding Elemental^^
 10757^1^0^27^28^1441^0.3421^0.3274^1^Boiling Elemental^9451:1:2^
+270094^1^0^30^30^1441^0.5278^0.5427^1^Stormheart^5128:1:1,248689:1:1,279186:1:1^
 @i^414^Dalaran Sharp
 @i^730^Murloc Eye
 @i^814^Flask of Oil
@@ -99,6 +100,7 @@ GoldScout-export 6^qz3r1n14yfmt^4
 @i^3186^Viking Sword of the Beast
 @i^3205^Inscribed Leather Bracers
 @i^3377^Canvas Bracers
+@i^3402^Soft Patch of Fur
 @i^3403^Ivory Boar Tusk
 @i^3671^Lifeless Skull
 @i^3770^Mutton Chop
@@ -108,6 +110,7 @@ GoldScout-export 6^qz3r1n14yfmt^4
 @i^4633^Heavy Bronze Lockbox
 @i^5116^Long Tail Feather
 @i^5117^Vibrant Plume
+@i^5128^Shed Lizard Skin
 @i^5137^Bright Eyeball
 @i^5191^Cruel Barb
 @i^5194^Taskmaster Axe
@@ -144,11 +147,13 @@ GoldScout-export 6^qz3r1n14yfmt^4
 @i^211854^Scroll: OMIT KESA
 @i^248684^Waylaid Crate: Apprentice Textiles
 @i^248688^Waylaid Crate: Journeyman Textiles
+@i^248689^Waylaid Crate: Journeyman Curiosities
 @i^248705^Waylaid Crate: Journeyman Fabrics
 @i^253938^Pattern: Filigreed Pristine Leggings
 @i^262888^Sealed Journeyman's Writ
 @i^273103^Blueprint: Arcane Salvager
 @i^274158^Death Prophet Spine
+@i^279186^Stormheart's Still-beating Heart
 @q^414^1:0:0
 @q^730^1:7:1
 @q^814^1:7:1
@@ -184,6 +189,7 @@ GoldScout-export 6^qz3r1n14yfmt^4
 @q^3186^2:2:0
 @q^3205^2:4:0
 @q^3377^0:4:0
+@q^3402^0:15:0
 @q^3403^0:15:0
 @q^3671^0:15:0
 @q^3770^1:0:0
@@ -193,6 +199,7 @@ GoldScout-export 6^qz3r1n14yfmt^4
 @q^4633^2:15:0
 @q^5116^1:7:1
 @q^5117^1:12:0
+@q^5128^0:15:0
 @q^5137^0:15:0
 @q^5191^3:2:0
 @q^5194^3:2:0
@@ -229,11 +236,13 @@ GoldScout-export 6^qz3r1n14yfmt^4
 @q^211854^1:0:0
 @q^248684^1:0:1
 @q^248688^1:0:1
+@q^248689^1:0:1
 @q^248705^2:0:1
 @q^253938^3:9:0
 @q^262888^3:0:0
 @q^273103^2:9:0
 @q^274158^3:2:0
+@q^279186^1:12:0
 @m^1415^Eastern Kingdoms
 @m^1436^Westfall
 @m^1441^Thousand Needles
@@ -934,9 +943,10 @@ GoldScout-export 6^qz3r1n14yfmt^4
 @a^4116^62:1
 @a^4117^208:1,227:1
 @a^4118^227:3
-@a^4124^122:2,143:1,206:1
+@a^4124^122:2,143:1,206:1,253:1
 @a^4126^227:1
-@a^4249^143:1
+@a^4249^143:1,252:1,253:1
 @a^10756^126:1
 @a^10757^126:1
+@a^270094^210:1
 @l^0^enUS

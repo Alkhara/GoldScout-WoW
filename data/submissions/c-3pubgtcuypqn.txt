@@ -1,4 +1,4 @@
-GoldScout-export 5^3pubgtcuypqn^10
+GoldScout-export 5^3pubgtcuypqn^11
 6^12^0^1^2^1429^0.4830^0.3579^12^Kobold Vermin^159:1:1,755:4:4,1364:1:1,1369:1:1,2589:3:3,4536:2:2,247834:1:1,247839:2:2^
 30^1^0^5^5^1429^0.4272^0.7316^1^Forest Spider^2590:1:1^
 36^4^0^11^12^1436^0.5272^0.3347^4^Harvest Golem^732:2:2,814:3:3,1274:2:2,2214:1:1,255010:2:2^
@@ -81,6 +81,23 @@ GoldScout-export 5^3pubgtcuypqn^10
 248362^1^0^3^3^1429^0.4913^0.2795^1^Shinyfinder Narf^247886:1:1^
 248464^1^0^6^6^1429^0.4155^0.7999^1^Nimsy^248002:1:1^
 248474^1^0^7^7^1429^0.6134^0.4900^1^Geosculptor Yip^248003:1:1^
+250483^1^0^0^0^0^0.0000^0.0000^0^^271203:1:1^
+250484^2^0^0^0^0^0.0000^0.0000^0^^3167:1:1,6542:1:1^
+250618^7^0^0^0^0^0.0000^0.0000^0^^1210:1:1,4605:1:1,268540:4:4^
+250622^2^0^0^0^0^0.0000^0.0000^0^^4570:1:1^
+250623^1^0^0^0^0^0.0000^0.0000^0^^^
+250626^6^0^0^0^0^0.0000^0.0000^0^^818:1:1,2592:1:1,3645:1:1,4567:1:1,268535:2:2,268540:2:2^
+250627^3^0^0^0^0^0.0000^0.0000^0^^248702:1:1,286978:1:1^
+250630^1^0^0^0^0^0.0000^0.0000^0^^268540:1:1^
+250631^1^0^0^0^0^0.0000^0.0000^0^^271208:1:1^
+250656^1^0^0^0^0^0.0000^0.0000^0^^268540:1:1^
+250657^1^0^0^0^0^0.0000^0.0000^0^^271215:1:1^
+250660^1^0^0^0^0^0.0000^0.0000^0^^268518:1:1,271205:1:1^
+255109^1^0^0^0^0^0.0000^0.0000^0^^1737:1:1,2592:1:1^
+255964^1^0^0^0^0^0.0000^0.0000^0^^858:1:1,268540:1:1^
+256035^1^0^0^0^0^0.0000^0.0000^0^^271212:1:1^
+256040^4^0^0^0^0^0.0000^0.0000^0^^1210:1:1,3167:1:1,3931:1:1,15210:1:1^
+256097^1^0^0^0^0^0.0000^0.0000^0^^271217:1:1^
 261306^1^0^0^0^0^0.0000^0.0000^0^^271097:1:1^
 261311^1^0^0^0^0^0.0000^0.0000^0^^270228:1:1^
 261316^1^0^0^0^0^0.0000^0.0000^0^^270230:1:1^
@@ -158,6 +175,7 @@ GoldScout-export 5^3pubgtcuypqn^10
 @i^1732^Worn Mail Bracers
 @i^1733^Worn Cloak
 @i^1734^Worn Mail Gloves
+@i^1737^Worn Mail Vest
 @i^1811^Blunt Claymore
 @i^2065^Rockjaw Blade
 @i^2067^Frostbit Staff
@@ -207,6 +225,7 @@ GoldScout-export 5^3pubgtcuypqn^10
 @i^3000^Brood Mother Carapace
 @i^3013^Scroll of Protection
 @i^3110^Tunnel Rat Ear
+@i^3167^Thick Spider Hair
 @i^3169^Chipped Bear Tooth
 @i^3170^Large Bear Tooth
 @i^3171^Broken Boar Tusk
@@ -220,11 +239,14 @@ GoldScout-export 5^3pubgtcuypqn^10
 @i^3365^Frayed Bracers
 @i^3374^Calico Belt
 @i^3627^Fang of Vagash
+@i^3645^Seer's Cuffs
+@i^3931^Poisoned Spider Fang
 @i^4346^Pattern: Heavy Woolen Cloak
 @i^4361^Copper Tube
 @i^4536^Shiny Red Apple
 @i^4540^Tough Hunk of Bread
-@i^4567^Merc Sword of Stamina
+@i^4567^Merc Sword of the Gorilla
+@i^4570^Birchwood Maul of Healing
 @i^4577^Compact Shotgun
 @i^4605^Red-speckled Mushroom
 @i^4687^Barbaric Cloth Belt
@@ -255,6 +277,7 @@ GoldScout-export 5^3pubgtcuypqn^10
 @i^6518^Pioneer Boots
 @i^6519^Pioneer Bracers
 @i^6520^Pioneer Cloak
+@i^6542^Willow Cape of the Owl
 @i^6889^Small Egg
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
@@ -266,6 +289,7 @@ GoldScout-export 5^3pubgtcuypqn^10
 @i^9764^Cadet Shield of the Channeler
 @i^11406^Rotting Bear Carcass
 @i^15016^Lupine Handwraps of Arcane Wrath
+@i^15210^Raider Shortsword of the Monkey
 @i^17056^Light Feather
 @i^20709^Rumsey Rum Light
 @i^211780^Scroll: KWYJIBO
@@ -281,19 +305,30 @@ GoldScout-export 5^3pubgtcuypqn^10
 @i^248003^Geomancy for Curious Young Wizards
 @i^248004^Arcane Explainer: Magical Stuff in Simple Words
 @i^248684^Waylaid Crate: Apprentice Textiles
+@i^248702^Waylaid Crate: Apprentice Fabrics
 @i^254548^Longshore Murloc Gill
 @i^255007^Golem Isospring
 @i^255010^Harvester Gyrostabilizer
 @i^267415^Stolen Blasting Powder
+@i^268518^Head of the Baron
+@i^268535^Bloodied Insignia
+@i^268540^Bloodied Insignia
 @i^268548^Empty Powder Keg
 @i^270228^Golemheart Stave
 @i^270230^Kindlegem Girdle
 @i^270260^Direhammer Leggings
 @i^271097^Spiritwraith Drape
+@i^271203^Segmented Spider Leg
+@i^271205^Abomination Bones
+@i^271208^Grip of Fear
+@i^271212^Bloodied Chestwraps
+@i^271215^Coldspire Staff
+@i^271217^Corpse Chopper
 @i^274268^Dark Iron Map
 @i^274286^Durgen Dirgehammer's Head
 @i^275891^Dwarven Skull
 @i^281038^Feather of Jai'vhanel
+@i^286978^Rotmender's Garb
 @q^117^1:0:0
 @q^118^1:0:0
 @q^159^1:0:0
@@ -359,6 +394,7 @@ GoldScout-export 5^3pubgtcuypqn^10
 @q^1732^0:4:0
 @q^1733^0:4:0
 @q^1734^0:4:0
+@q^1737^0:4:0
 @q^1811^0:2:0
 @q^2065^1:2:0
 @q^2067^1:2:0
@@ -408,6 +444,7 @@ GoldScout-export 5^3pubgtcuypqn^10
 @q^3000^2:4:0
 @q^3013^1:0:0
 @q^3110^1:12:0
+@q^3167^0:15:0
 @q^3169^0:15:0
 @q^3170^0:15:0
 @q^3171^0:15:0
@@ -421,11 +458,14 @@ GoldScout-export 5^3pubgtcuypqn^10
 @q^3365^0:4:0
 @q^3374^0:4:0
 @q^3627^1:12:0
+@q^3645^2:4:0
+@q^3931^0:15:0
 @q^4346^2:9:0
 @q^4361^1:7:1
 @q^4536^1:0:0
 @q^4540^1:0:0
 @q^4567^2:2:0
+@q^4570^2:2:0
 @q^4577^2:2:0
 @q^4605^1:0:0
 @q^4687^1:4:0
@@ -456,6 +496,7 @@ GoldScout-export 5^3pubgtcuypqn^10
 @q^6518^1:4:0
 @q^6519^1:4:0
 @q^6520^1:4:0
+@q^6542^2:4:0
 @q^6889^1:7:1
 @q^7073^0:15:0
 @q^7074^0:15:0
@@ -467,6 +508,7 @@ GoldScout-export 5^3pubgtcuypqn^10
 @q^9764^2:4:0
 @q^11406^0:15:0
 @q^15016^2:4:0
+@q^15210^2:2:0
 @q^17056^1:15:1
 @q^20709^1:0:0
 @q^211780^1:0:0
@@ -482,19 +524,30 @@ GoldScout-export 5^3pubgtcuypqn^10
 @q^248003^1:12:0
 @q^248004^1:12:0
 @q^248684^1:0:1
+@q^248702^2:0:1
 @q^254548^1:12:0
 @q^255007^1:7:1
 @q^255010^1:12:0
 @q^267415^1:12:0
+@q^268518^1:12:0
+@q^268535^1:12:0
+@q^268540^1:12:0
 @q^268548^1:12:0
 @q^270228^3:2:0
 @q^270230^3:4:0
 @q^270260^3:4:0
 @q^271097^3:4:0
+@q^271203^3:2:0
+@q^271205^3:4:0
+@q^271208^3:4:0
+@q^271212^3:4:0
+@q^271215^3:2:0
+@q^271217^3:2:0
 @q^274268^1:12:0
 @q^274286^1:12:0
 @q^275891^0:15:0
 @q^281038^1:12:0
+@q^286978^3:4:0
 @m^1416^Alterac Mountains
 @m^1426^Dun Morogh
 @m^1429^Elwynn Forest
