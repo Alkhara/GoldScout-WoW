@@ -1,17 +1,19 @@
-GoldScout-export 5^c3frk5gzs9gr^4
+GoldScout-export 5^c3frk5gzs9gr^5
 3234^1^0^15^15^1413^0.5457^0.4499^1^Lost Barrens Kodo^4779:1:1,4896:1:1,5082:1:1^
 3241^10^0^15^16^1413^0.4479^0.1494^10^Savannah Patriarch^4813:2:2,5134:1:1,269715:6:6^
 3243^1^0^13^13^1413^0.5176^0.2639^1^Savannah Highmane^4893:1:1^
 3244^2^0^11^12^1413^0.5181^0.2099^2^Greater Plainstrider^4894:1:1,17056:1:1^
 3245^1^0^16^17^1413^0.4401^0.1611^1^Ornery Plainstrider^4776:1:1^
 3246^2^0^12^13^1413^0.5275^0.1819^2^Fleeting Plainstrider^4894:1:1,5469:2:2^
-3254^1^0^12^12^1413^0.5139^0.2246^1^Sunscale Lashtail^^
+3254^1^0^11^12^1413^0.5139^0.2246^1^Sunscale Lashtail^^
 3256^16^0^16^18^1413^0.5218^0.3768^16^Sunscale Scytheclaw^3180:4:4,5055:3:3,5124:5:5,5165:5:5^
 3257^1^0^19^19^1413^0.5959^0.3001^1^Ishamuhale^5101:1:1^
 3258^1^0^18^18^1413^0.5293^0.5455^1^Bristleback Hunter^858:1:1,2780:1:1,5075:1:2^
 3261^7^0^18^19^1413^0.5280^0.5380^7^Bristleback Thornweaver^2592:1:1,5075:2:3^
 3263^1^0^20^20^1413^0.5307^0.5434^1^Bristleback Geomancer^5075:1:2^
-3415^6^0^11^12^1413^0.5117^0.2420^6^Savannah Huntress^4893:4:4,5134:2:2^
+3267^2^0^11^11^1413^0.5406^0.2581^2^Razormane Water Seeker^2589:1:1,211780:1:1^
+3268^2^0^10^11^1413^0.5422^0.2586^2^Razormane Thornweaver^2589:1:3,4537:1:1^
+3415^7^0^11^12^1413^0.5152^0.2470^7^Savannah Huntress^4893:4:4,5134:3:3,15969:1:1^
 3426^2^0^17^18^1413^0.4892^0.3269^2^Zhevra Charger^10338:1:1^
 3474^1^0^22^22^1413^0.4557^0.5206^1^Lakota'mani^5099:1:1^
 3475^1^0^16^16^1413^0.5569^0.1724^1^Echeyakee^3731:1:1,5100:1:1^
@@ -34,6 +36,7 @@ GoldScout-export 5^c3frk5gzs9gr^4
 @i^3180^Flecked Raptor Scale
 @i^3301^Sharp Canine
 @i^3731^Lion Meat
+@i^4537^Tel'Abim Banana
 @i^4538^Snapvine Watermelon
 @i^4776^Ruffled Feather
 @i^4779^Dull Kodo Tooth
@@ -58,7 +61,9 @@ GoldScout-export 5^c3frk5gzs9gr^4
 @i^6645^Bloated Mud Snapper
 @i^10338^Fresh Zhevra Carcass
 @i^14370^Mystic's Woolies
+@i^15969^Beaded Orb of the Monkey
 @i^17056^Light Feather
+@i^211780^Scroll: KWYJIBO
 @i^269715^Savannah Lion Hide
 @i^270151^Benedict's Orders
 @i^276070^Chol'aruk's Head
@@ -74,6 +79,7 @@ GoldScout-export 5^c3frk5gzs9gr^4
 @q^3180^0:15:0
 @q^3301^0:15:0
 @q^3731^1:7:1
+@q^4537^1:0:0
 @q^4538^1:0:0
 @q^4776^0:15:0
 @q^4779^0:15:0
@@ -98,7 +104,9 @@ GoldScout-export 5^c3frk5gzs9gr^4
 @q^6645^2:15:0
 @q^10338^1:12:0
 @q^14370^2:4:0
+@q^15969^2:4:0
 @q^17056^1:15:1
+@q^211780^1:0:0
 @q^269715^1:12:0
 @q^270151^1:12:0
 @q^276070^1:12:0
@@ -1094,7 +1102,9 @@ GoldScout-export 5^c3frk5gzs9gr^4
 @a^3258^210:1
 @a^3261^210:7
 @a^3263^210:1
-@a^3415^90:4,110:2
+@a^3267^110:2
+@a^3268^110:2
+@a^3415^90:4,110:3
 @a^3426^49:1,210:1
 @a^3474^209:1
 @a^3475^71:1

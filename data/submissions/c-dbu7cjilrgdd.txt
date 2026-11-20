@@ -1,4 +1,4 @@
-GoldScout-export 6^dbu7cjilrgdd^2
+GoldScout-export 6^dbu7cjilrgdd^3
 2748^1^0^0^0^0^0.0000^0.0000^0^^11118:1:1,274432:1:1^
 4848^1^0^0^0^0^0.0000^0.0000^0^^3986:1:1,4306:1:3,8052:1:1^
 4849^2^0^0^0^0^0.0000^0.0000^0^^8009:1:1,8052:1:1^
@@ -27,6 +27,7 @@ GoldScout-export 6^dbu7cjilrgdd^2
 7396^5^0^0^0^0^0.0000^0.0000^0^^1994:1:1,4306:1:1,4338:1:2,4601:1:1,6149:1:1^
 7397^1^0^0^0^0^0.0000^0.0000^0^^4338:1:2^
 7405^2^0^0^0^0^0.0000^0.0000^0^^12037:1:1,19937:1:1^
+14123^48^0^42^43^1446^0.6742^0.2321^48^Steeljaw Snapper^3712:20:20,4555:17:17,4556:21:21,4603:9:9,7973:9:9,15578:1:1,248709:1:1^
 255770^1^0^37^37^2548^0.3056^0.6665^1^Redridge Mystic^4306:1:1^
 255772^2^0^36^37^2548^0.1755^0.7082^2^Redridge Trapper^^
 255774^2^0^35^36^2548^0.2051^0.7039^2^Redridge Scout^3782:1:1,7462:1:1^
@@ -35,6 +36,7 @@ GoldScout-export 6^dbu7cjilrgdd^2
 @i^1645^Moonberry Juice
 @i^1710^Greater Healing Potion
 @i^1994^Ebonclaw Reaver of the Bandit
+@i^3712^Turtle Meat
 @i^3782^Large War Club
 @i^3928^Superior Healing Potion
 @i^3968^Thick Leather Tunic
@@ -48,13 +50,17 @@ GoldScout-export 6^dbu7cjilrgdd^2
 @i^4460^Ripped Wing Webbing
 @i^4552^Smooth Stone Chip
 @i^4554^Shiny Polished Stone
+@i^4555^Thick Scaly Tail
+@i^4556^Speckled Shell Fragment
 @i^4599^Cured Ham Steak
 @i^4601^Soft Banana Bread
+@i^4603^Raw Spotted Yellowtail
 @i^4636^Strong Iron Lockbox
 @i^6149^Greater Mana Potion
 @i^6444^Forked Tongue
 @i^7462^Knight's Girdle of Power
 @i^7912^Solid Stone
+@i^7973^Big-mouth Clam
 @i^8009^Dentrium Power Stone
 @i^8052^An'Alleum Power Stone
 @i^8146^Wicked Claw
@@ -74,13 +80,16 @@ GoldScout-export 6^dbu7cjilrgdd^2
 @i^11118^Archaedic Stone of the Defender
 @i^11310^Flameseer Mantle
 @i^12037^Mystery Meat
+@i^15578^Sparkleshell Breastplate of Power
 @i^19937^Small Scorpid Claw
 @i^248690^Waylaid Crate: Earthly Expert Herbs
+@i^248709^Waylaid Crate: Expert Ingots
 @i^274428^Dark Golem Breastplate
 @i^274432^Stone Keeper Spire
 @q^1645^1:0:0
 @q^1710^1:0:0
 @q^1994^2:2:0
+@q^3712^1:7:1
 @q^3782^0:2:0
 @q^3928^1:0:0
 @q^3968^0:4:0
@@ -94,13 +103,17 @@ GoldScout-export 6^dbu7cjilrgdd^2
 @q^4460^0:15:0
 @q^4552^0:15:0
 @q^4554^0:15:0
+@q^4555^0:15:0
+@q^4556^0:15:0
 @q^4599^1:0:0
 @q^4601^1:0:0
+@q^4603^1:7:1
 @q^4636^2:15:0
 @q^6149^1:0:0
 @q^6444^0:15:0
 @q^7462^2:4:0
 @q^7912^1:7:1
+@q^7973^1:7:0
 @q^8009^1:12:0
 @q^8052^1:12:0
 @q^8146^1:7:1
@@ -120,10 +133,13 @@ GoldScout-export 6^dbu7cjilrgdd^2
 @q^11118^3:4:0
 @q^11310^3:4:0
 @q^12037^1:7:1
+@q^15578^2:4:0
 @q^19937^0:15:0
 @q^248690^1:0:1
+@q^248709^2:0:1
 @q^274428^3:4:0
 @q^274432^3:2:0
+@m^1446^Tanaris
 @m^2548^Riverglades
 @c^118^
 @c^724^
@@ -884,6 +900,7 @@ GoldScout-export 6^dbu7cjilrgdd^2
 @c^279981^
 @c^279982^
 @c^286152^
+@a^14123^73:17,93:13,113:17,133:1
 @a^255770^266:1
 @a^255772^283:2
 @a^255774^284:2

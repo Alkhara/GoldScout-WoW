@@ -1,6 +1,7 @@
-GoldScout-export 6^g3x2ax8hz43x^8
+GoldScout-export 6^g3x2ax8hz43x^9
 1142^4^0^36^37^1434^0.3711^0.3081^4^Mosh'Ogg Brute^4306:1:2^
 1144^4^0^36^37^1434^0.3628^0.3119^4^Mosh'Ogg Witch Doctor^3771:1:1,4338:1:1^
+1909^1^0^18^19^1421^0.6414^0.4170^1^Vile Fin Lakestalker^^
 2069^1^0^14^15^1439^0.3828^0.6814^1^Moonstalker^4813:1:1^
 2203^3^0^13^14^1439^0.3589^0.7111^3^Greymist Seer^730:1:1,6289:1:1^
 2204^9^0^14^15^1439^0.3619^0.7093^9^Greymist Netter^730:2:2,858:1:1,2215:1:1,5523:2:2,6289:2:3,248684:1:1^
@@ -43,6 +44,19 @@ GoldScout-export 6^g3x2ax8hz43x^8
 6489^1^0^0^0^0^0.0000^0.0000^0^^7688:1:1^
 9377^3^0^33^34^1441^0.7994^0.6460^3^Swirling Vortex^^
 10158^1^0^12^12^1439^0.4655^0.4688^1^Moonkin^6889:1:1,17056:1:1^
+246003^1^0^0^0^1416^0.0000^0.0000^0^^273039:1:1^
+246017^1^0^0^0^1416^0.0000^0.0000^0^^273048:1:1^
+246020^1^0^0^0^1416^0.0000^0.0000^0^^273052:1:1^
+246664^6^0^0^0^1416^0.0000^0.0000^0^^6438:1:1,275997:3:3,276158:1:1,276160:2:2^
+247001^1^0^0^0^1416^0.0000^0.0000^0^^2785:1:1,276160:1:1^
+247016^1^0^0^0^1416^0.0000^0.0000^0^^3656:1:1^
+247032^1^0^0^0^1416^0.0000^0.0000^0^^273055:1:1^
+247126^1^0^0^0^1416^0.0000^0.0000^0^^273036:1:1^
+255066^3^0^0^0^1416^0.0000^0.0000^0^^1827:1:1^
+255068^1^0^0^0^1416^0.0000^0.0000^0^^^
+255070^1^0^0^0^1416^0.0000^0.0000^0^^^
+255072^1^0^0^0^1416^0.0000^0.0000^0^^^
+269134^1^0^0^0^1416^0.0000^0.0000^0^^2592:1:1^
 @i^727^Notched Shortsword of the Monkey
 @i^730^Murloc Eye
 @i^770^Pointy Crocolisk Tooth
@@ -55,15 +69,18 @@ GoldScout-export 6^g3x2ax8hz43x^8
 @i^1705^Lesser Moonstone
 @i^1707^Stormwind Brie
 @i^1804^Tough Leather Boots
+@i^1827^Meat Cleaver
 @i^2215^Wooden Shield
 @i^2592^Wool Cloth
 @i^2632^Curved Dagger of Magic
 @i^2674^Crawler Meat
 @i^2675^Crawler Claw
+@i^2785^Stiff Recurve Bow
 @i^3010^Fine Sand
 @i^3282^Battle Chain Pants
 @i^3301^Sharp Canine
 @i^3402^Soft Patch of Fur
+@i^3656^Lambent Scale Shield
 @i^3667^Tender Crocolisk Meat
 @i^3688^Bloodstone Oval
 @i^3689^Bloodstone Marble
@@ -101,6 +118,7 @@ GoldScout-export 6^g3x2ax8hz43x^8
 @i^6361^Raw Rainbow Fin Albacore
 @i^6363^26 Pound Catfish
 @i^6389^Glimmering Mail Coif
+@i^6438^Dull Elemental Bracer
 @i^6470^Deviate Scale
 @i^6522^Deviate Fish
 @i^6889^Small Egg
@@ -124,7 +142,15 @@ GoldScout-export 6^g3x2ax8hz43x^8
 @i^248684^Waylaid Crate: Apprentice Textiles
 @i^248685^Waylaid Crate: Apprentice Curiosities
 @i^248687^Waylaid Crate: Journeyman Ore
+@i^273036^Graveweave Bindings
+@i^273039^Blightleaf Rope
+@i^273048^Refractory Scaleguards
+@i^273052^Ponderous Orb
+@i^273055^Bonepile Gaze
 @i^274290^Painwalker Buckler
+@i^275997^Cracked Sentry Core
+@i^276158^Crystallized Shard
+@i^276160^Mana Fragment
 @q^727^2:2:0
 @q^730^1:7:1
 @q^770^0:15:0
@@ -137,15 +163,18 @@ GoldScout-export 6^g3x2ax8hz43x^8
 @q^1705^2:7:1
 @q^1707^1:0:0
 @q^1804^0:4:0
+@q^1827^0:2:0
 @q^2215^0:4:0
 @q^2592^1:7:1
 @q^2632^2:2:0
 @q^2674^1:7:1
 @q^2675^1:7:1
+@q^2785^0:2:0
 @q^3010^0:15:0
 @q^3282^2:4:0
 @q^3301^0:15:0
 @q^3402^0:15:0
+@q^3656^2:4:0
 @q^3667^1:7:1
 @q^3688^1:12:0
 @q^3689^1:12:0
@@ -183,6 +212,7 @@ GoldScout-export 6^g3x2ax8hz43x^8
 @q^6361^1:7:1
 @q^6363^1:15:0
 @q^6389^2:4:0
+@q^6438^0:15:0
 @q^6470^1:7:1
 @q^6522^1:0:1
 @q^6889^1:7:1
@@ -206,10 +236,19 @@ GoldScout-export 6^g3x2ax8hz43x^8
 @q^248684^1:0:1
 @q^248685^1:0:1
 @q^248687^1:0:1
+@q^273036^3:4:0
+@q^273039^3:4:0
+@q^273048^3:4:0
+@q^273052^3:4:0
+@q^273055^3:4:0
 @q^274290^3:4:0
+@q^275997^1:12:0
+@q^276158^0:15:0
+@q^276160^0:15:0
 @m^1413^The Barrens
 @m^1416^Alterac Mountains
 @m^1420^Tirisfal Glades
+@m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
 @m^1434^Stranglethorn Vale
 @m^1439^Darkshore
@@ -911,6 +950,7 @@ GoldScout-export 6^g3x2ax8hz43x^8
 @c^286152^
 @a^1142^107:1,127:3
 @a^1144^107:1,127:3
+@a^1909^172:1
 @a^2069^267:1
 @a^2203^287:3
 @a^2204^287:9
