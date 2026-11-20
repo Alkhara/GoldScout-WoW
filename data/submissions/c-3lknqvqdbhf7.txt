@@ -1,5 +1,5 @@
-GoldScout-export 6^3lknqvqdbhf7^3
-1718^1^0^3^3^1426^0.3536^0.6461^1^Rockjaw Raider^^
+GoldScout-export 6^3lknqvqdbhf7^5
+1718^1^0^3^4^1426^0.3536^0.6461^1^Rockjaw Raider^^
 5308^2^0^44^46^1444^0.5702^0.4797^2^Rogue Vale Screecher^6826:2:2^
 5615^9^0^43^44^1446^0.6117^0.3603^9^Wastewander Rogue^4005:1:1,4023:1:1,4306:1:1,4338:3:5,8483:4:4^
 5616^10^0^40^41^1446^0.6352^0.3168^10^Wastewander Thief^1645:1:1,4306:1:2,4338:4:5,8483:4:4^
@@ -24,10 +24,14 @@ GoldScout-export 6^3lknqvqdbhf7^3
 7847^1^0^46^46^1446^0.6455^0.3262^1^Caliph Scorpidsting^8723:1:1^
 8120^1^0^0^0^0^0.0000^0.0000^0^^1608:1:1^
 8127^1^0^0^0^0^0.0000^0.0000^0^^9641:1:1^
+246993^1^0^0^0^1416^0.0000^0.0000^0^^262889:1:1^
+247001^1^0^0^0^1416^0.0000^0.0000^0^^6438:1:1^
+247003^1^0^0^0^1416^0.0000^0.0000^0^^1755:1:1,276160:1:1^
 260419^1^0^38^38^1446^0.6740^0.2395^1^Slugjaw^^
 @i^1520^Troll Sweat
 @i^1608^Skullcrusher Mace of Strength
 @i^1645^Moonberry Juice
+@i^1755^Reinforced Chain Boots
 @i^3927^Fine Aged Cheddar
 @i^3964^Thick Cloak
 @i^4005^Overlinked Chain Pants
@@ -36,6 +40,7 @@ GoldScout-export 6^3lknqvqdbhf7^3
 @i^4338^Mageweave Cloth
 @i^6300^Husk Fragment
 @i^6302^Delicate Insect Wing
+@i^6438^Dull Elemental Bracer
 @i^6826^Brilliant Scale
 @i^8483^Wastewander Water Pouch
 @i^8548^Divino-matic Rod
@@ -61,16 +66,19 @@ GoldScout-export 6^3lknqvqdbhf7^3
 @i^15178^Potent Belt of Healing
 @i^15270^Gigantic War Axe of Intellect
 @i^15608^Ancient Pauldrons of Stamina
+@i^262889^Sealed Expert's Writ
 @i^274638^Sandfury Pauldrons
 @i^274642^Blood Ritual Ring
 @i^274644^Undying Headdress
 @i^274648^The Desert Rose
 @i^274651^Zealot Plate
 @i^274655^Peacekeeper Wand
+@i^276160^Mana Fragment
 @i^277112^Zum'rah's Head
 @q^1520^0:15:0
 @q^1608^2:2:0
 @q^1645^1:0:0
+@q^1755^0:4:0
 @q^3927^1:0:0
 @q^3964^0:4:0
 @q^4005^0:4:0
@@ -79,6 +87,7 @@ GoldScout-export 6^3lknqvqdbhf7^3
 @q^4338^1:7:1
 @q^6300^0:15:0
 @q^6302^0:15:0
+@q^6438^0:15:0
 @q^6826^0:15:0
 @q^8483^1:12:0
 @q^8548^1:0:0
@@ -104,13 +113,16 @@ GoldScout-export 6^3lknqvqdbhf7^3
 @q^15178^2:4:0
 @q^15270^2:2:0
 @q^15608^2:4:0
+@q^262889^3:0:0
 @q^274638^3:4:0
 @q^274642^3:4:0
 @q^274644^3:4:0
 @q^274648^3:4:0
 @q^274651^3:4:0
 @q^274655^3:2:0
+@q^276160^0:15:0
 @q^277112^1:12:0
+@m^1416^Alterac Mountains
 @m^1426^Dun Morogh
 @m^1444^Feralas
 @m^1446^Tanaris

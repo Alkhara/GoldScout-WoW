@@ -1,4 +1,12 @@
-GoldScout-export 6^0cwlm857vamc^4
+GoldScout-export 6^0cwlm857vamc^5
+814^1^0^38^38^1434^0.4709^0.0553^1^Sergent Malthus^4338:1:1^
+937^7^0^32^33^1434^0.4440^0.1002^7^Guerrier de la jungle de Kurzen^1707:1:1,1710:1:1,4306:1:1,248692:1:1^
+938^3^0^34^35^1434^0.4501^0.0872^3^Commando de Kurzen^1711:1:1^
+939^6^0^36^37^1434^0.4813^0.0740^6^Troupe d'élite de Kurzen^2735:1:1,4306:2:6,216616:1:1^
+940^5^0^32^33^1434^0.4413^0.0934^5^Guérisseur de Kurzen^2592:1:3,2633:2:2,3357:1:1,4306:1:1^
+941^4^0^34^35^1434^0.4754^0.0783^4^Réducteur de tête de Kurzen^2592:1:3,2633:3:3,4306:3:4^
+942^11^0^36^37^1434^0.4806^0.0699^11^Sorcier-docteur de Kurzen^1708:1:1,1710:1:1,2633:4:4,4306:3:7,4338:3:3^
+978^1^0^38^38^1434^0.4942^0.0727^1^Lieutenant de Kurzen^^
 2240^12^0^32^33^1416^0.5448^0.7168^12^Détrousseuse du Syndicat^2592:1:2,3786:1:1,4306:4:7,5113:1:1,213544:1:1,262888:1:1^
 2241^9^0^33^34^1416^0.5778^0.6858^9^Larron du Syndicat^2592:1:1,4306:5:9^
 2242^22^0^35^36^1416^0.6120^0.4410^22^Espionne du Syndicat^1707:1:1,1708:1:1,1710:1:1,1726:1:1,3037:1:1,3505:6:6,4306:3:4,5113:5:5,6986:2:2^
@@ -33,8 +41,11 @@ GoldScout-export 6^0cwlm857vamc^4
 @i^1711^Parchemin d'Endurance II
 @i^1726^Lance en os empoisonnée
 @i^2592^Etoffe de laine
+@i^2633^Remède tropical
+@i^2735^Les vertes collines de Strangleronce - Page 11
 @i^2843^Articulation sale
 @i^3037^Arc courbe souple
+@i^3357^Vietérule
 @i^3385^Potion de mana inférieure
 @i^3505^Chevalière d'Alterac
 @i^3703^Bière d'Austrivage
@@ -63,8 +74,10 @@ GoldScout-export 6^0cwlm857vamc^4
 @i^213421^Note roussie
 @i^213544^Parchemin : ZOO ET DU KAFÊ
 @i^213547^Parchemin : ELLUQE PÉÉE
+@i^216616^Clé de cage de la base
 @i^248686^Caisse détournée : plantes de compagnon
 @i^248689^Caisse détournée : curiosités de compagnon
+@i^248692^Caisse détournée : minerai d'expert
 @i^249881^Recette : thé aux racines
 @i^255727^Manuel : cataplasme excellent
 @i^262888^Commission de compagnon scellée
@@ -77,8 +90,11 @@ GoldScout-export 6^0cwlm857vamc^4
 @q^1711^1:0:0
 @q^1726^3:2:0
 @q^2592^1:7:1
+@q^2633^1:0:0
+@q^2735^1:12:0
 @q^2843^1:12:0
 @q^3037^2:2:0
+@q^3357^1:7:1
 @q^3385^1:0:0
 @q^3505^1:12:0
 @q^3703^1:0:0
@@ -107,13 +123,16 @@ GoldScout-export 6^0cwlm857vamc^4
 @q^213421^1:15:0
 @q^213544^1:0:0
 @q^213547^1:0:0
+@q^216616^1:12:0
 @q^248686^1:0:1
 @q^248689^1:0:1
+@q^248692^1:0:1
 @q^249881^1:9:0
 @q^255727^2:9:0
 @q^262888^3:0:0
 @m^1416^Montagnes d'Alterac
 @m^1424^Contreforts de Hautebrande
+@m^1434^Vallée de Strangleronce
 @c^118^
 @c^724^
 @c^733^
@@ -770,6 +789,14 @@ GoldScout-export 6^0cwlm857vamc^4
 @c^279981^
 @c^279982^
 @c^286152^
+@a^814^29:1
+@a^937^28:5,48:2
+@a^938^28:2,29:1
+@a^939^29:6
+@a^940^28:4,29:1
+@a^941^29:4
+@a^942^29:11
+@a^978^29:1
 @a^2240^271:8,309:1,329:3
 @a^2241^271:7,291:1,329:1
 @a^2242^172:16,191:1,192:5

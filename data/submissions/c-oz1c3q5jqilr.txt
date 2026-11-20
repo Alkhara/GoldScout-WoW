@@ -1,5 +1,6 @@
-GoldScout-export 6^oz1c3q5jqilr^13
-2681^3^0^51^51^1425^0.6010^0.7598^3^Vilebranch Raiding Wolf^4583:3:3,12203:2:2,12208:1:1,248699:1:1^
+GoldScout-export 6^oz1c3q5jqilr^14
+2648^7^0^50^51^1425^0.5728^0.8326^7^Vilebranch Aman'zasi Guard^1520:2:2,3928:1:1,3938:1:1,8152:2:2,8253:1:1,9259:2:2^
+2681^4^0^51^51^1425^0.5983^0.7589^4^Vilebranch Raiding Wolf^4583:4:4,12203:2:2,12208:2:2,248699:1:1^
 5423^1^0^44^44^1446^0.5288^0.5269^1^Scorpid Tail Lasher^19936:1:1^
 5455^2^0^47^48^1446^0.3487^0.4765^2^Centipaar Wasp^8587:2:2^
 5456^5^0^48^49^1446^0.3417^0.4979^5^Centipaar Stinger^6302:1:1,8587:2:2^
@@ -38,7 +39,7 @@ GoldScout-export 6^oz1c3q5jqilr^13
 7899^2^0^44^45^1446^0.5405^0.9313^2^Treasure Hunting Pirate^9275:2:2^
 7901^1^0^44^44^1446^0.5404^0.9313^1^Treasure Hunting Swashbuckler^9275:1:1^
 7902^2^0^45^45^1446^0.5404^0.9313^2^Treasure Hunting Buccaneer^9275:2:2^
-7995^1^0^51^51^1425^0.5976^0.7677^1^Vile Priestess Hexx^9472:1:1^
+7995^2^0^51^51^1425^0.5931^0.7766^2^Vile Priestess Hexx^9259:1:1,9472:1:1^
 8675^1^0^51^51^1419^0.5829^0.4278^1^Felbeast^^
 8957^1^0^51^51^1448^0.6243^0.2417^1^Angerclaw Grizzly^11409:1:1,11410:1:1^
 8996^11^0^42^43^1446^0.6055^0.3666^11^Voidwalker Minion^^
@@ -99,6 +100,7 @@ GoldScout-export 6^oz1c3q5jqilr^13
 257016^1^0^0^0^0^0.0000^0.0000^0^^276740:1:1^
 @i^770^Pointy Crocolisk Tooth
 @i^1464^Buzzard Talon
+@i^1520^Troll Sweat
 @i^1645^Moonberry Juice
 @i^1701^Curved Basilisk Claw
 @i^1994^Ebonclaw Reaver of Spirit
@@ -110,6 +112,7 @@ GoldScout-export 6^oz1c3q5jqilr^13
 @i^3927^Fine Aged Cheddar
 @i^3928^Superior Healing Potion
 @i^3936^Crochet Belt
+@i^3938^Crochet Bracers
 @i^3941^Crochet Pants
 @i^3942^Crochet Shoulderpads
 @i^3965^Thick Leather Gloves
@@ -149,7 +152,9 @@ GoldScout-export 6^oz1c3q5jqilr^13
 @i^7973^Big-mouth Clam
 @i^8146^Wicked Claw
 @i^8150^Deeprock Salt
+@i^8152^Flask of Big Mojo
 @i^8168^Jet Black Feather
+@i^8253^Imperial Red Sash
 @i^8400^Pattern: Tough Scorpid Shoulders
 @i^8401^Pattern: Tough Scorpid Leggings
 @i^8428^Laden Dew Gland
@@ -161,6 +166,7 @@ GoldScout-export 6^oz1c3q5jqilr^13
 @i^8836^Arthas' Tears
 @i^8845^Ghost Mushroom
 @i^9246^Firebeard's Head
+@i^9259^Troll Tribal Necklace
 @i^9260^Volatile Rum
 @i^9275^Cuergo's Key
 @i^9276^Pirate's Footlocker
@@ -232,6 +238,7 @@ GoldScout-export 6^oz1c3q5jqilr^13
 @i^278186^Brilliantly Polished Bangle
 @q^770^0:15:0
 @q^1464^0:15:0
+@q^1520^0:15:0
 @q^1645^1:0:0
 @q^1701^0:15:0
 @q^1994^2:2:0
@@ -243,6 +250,7 @@ GoldScout-export 6^oz1c3q5jqilr^13
 @q^3927^1:0:0
 @q^3928^1:0:0
 @q^3936^0:4:0
+@q^3938^0:4:0
 @q^3941^0:4:0
 @q^3942^0:4:0
 @q^3965^0:4:0
@@ -282,7 +290,9 @@ GoldScout-export 6^oz1c3q5jqilr^13
 @q^7973^1:7:0
 @q^8146^1:7:1
 @q^8150^1:7:1
+@q^8152^1:7:1
 @q^8168^1:7:1
+@q^8253^2:4:0
 @q^8400^2:9:0
 @q^8401^2:9:0
 @q^8428^1:12:0
@@ -294,6 +304,7 @@ GoldScout-export 6^oz1c3q5jqilr^13
 @q^8836^1:7:1
 @q^8845^1:7:1
 @q^9246^1:12:0
+@q^9259^1:15:0
 @q^9260^1:0:0
 @q^9275^1:12:0
 @q^9276^1:15:0
@@ -1314,7 +1325,8 @@ GoldScout-export 6^oz1c3q5jqilr^13
 @c^285280^
 @c^285281^
 @c^286152^
-@a^2681^311:1,312:2
+@a^2648^331:6,351:1
+@a^2681^311:2,312:2
 @a^5423^210:1
 @a^5455^186:1,187:1
 @a^5456^186:4,187:1
@@ -1353,7 +1365,7 @@ GoldScout-export 6^oz1c3q5jqilr^13
 @a^7899^370:2
 @a^7901^370:1
 @a^7902^370:2
-@a^7995^311:1
+@a^7995^311:2
 @a^8675^171:1
 @a^8957^92:1
 @a^8996^132:3,151:2,152:6
