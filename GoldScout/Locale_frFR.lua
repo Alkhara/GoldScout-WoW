@@ -405,4 +405,7 @@ ns.AddLocale("frFR", {
   ["Working out the best farms..."] = "Recherche des meilleures zones de farm...",
   ["Show dungeon drops"] = "Afficher le butin des donjons",
   ["Also list farms on mobs inside dungeons and raids. You run those with a group and a lockout, so their gold per hour doesn't compare with farming on your own."] = "Afficher aussi les farms sur les monstres des donjons et des raids. Vous les faites en groupe et avec un verrouillage : leur or par heure ne se compare pas au farm en solo.",
+  ["Long shots"] = "Coups risqués",
+  ["Also list flips that sell here for over %d times the item's usual price in your region, after the others. Some are real gaps between the factions; many are one listing nobody will buy."] = "Afficher aussi, après les autres, les reventes à plus de %d fois le prix habituel de l'objet dans votre région. Certaines sont de vrais écarts entre les factions ; beaucoup ne sont qu'une annonce que personne n'achètera.",
+  ["Long shot: it usually sells for about %s in your region. A price far above that may never sell: check how many are listed before buying."] = "Coup risqué : il se vend d'habitude environ %s dans votre région. Un prix bien au-dessus peut ne jamais trouver preneur : regardez combien sont en vente avant d'acheter.",
 })

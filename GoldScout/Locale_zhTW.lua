@@ -406,4 +406,7 @@ ns.AddLocale("zhTW", {
   ["Working out the best farms..."] = "正在找出最佳的刷錢地點……",
   ["Show dungeon drops"] = "顯示地城掉落",
   ["Also list farms on mobs inside dungeons and raids. You run those with a group and a lockout, so their gold per hour doesn't compare with farming on your own."] = "也列出地城與團隊副本內怪物的刷錢地點。那些要組隊並有進度鎖定，所以每小時金幣無法和單刷相比。",
+  ["Long shots"] = "高風險",
+  ["Also list flips that sell here for over %d times the item's usual price in your region, after the others. Some are real gaps between the factions; many are one listing nobody will buy."] = "也在其他項目之後列出此處售價超過該物品在你地區平常價格 %d 倍的轉賣。有些是陣營之間真正的價差；許多只是一筆沒人會買的拍賣。",
+  ["Long shot: it usually sells for about %s in your region. A price far above that may never sell: check how many are listed before buying."] = "高風險：在你的地區通常約 %s 售出。遠高於此的價格可能永遠賣不掉：購買前先看看有多少在拍賣。",
 })

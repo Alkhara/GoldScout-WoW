@@ -41,12 +41,14 @@ class RuleTests(unittest.TestCase):
         self.assertEqual((flips.MIN_PROFIT, flips.MIN_MARGIN, flips.MAX_AGE, flips.AH_CUT, flips.PRICE_CAP),
                          (100, 0.15, 43200, 0.95, 3))
 
-    def test_a_price_nobody_pays_isnt_a_flip(self):
+    def test_far_above_the_usual_price_is_a_long_shot(self):
         # Simple Wildflowers: 3g 29s on Blackwater, one listed at 100g on the Horde auction house, 1g usually.
         buy, sell = {2589: (32900, 1)}, {2589: (1000600, 1)}
-        self.assertEqual(len(flips.flips(buy, sell)), 1)
-        self.assertEqual(flips.flips(buy, sell, {2589: 10000}), [])
-        self.assertEqual(len(flips.flips(buy, sell, {2589: 400000})), 1)   # 100g is under 3 x 40g
+        self.assertEqual(len(flips.flips(buy, sell)), 1)                    # no usual price known: a flip
+        rows, long_shots = flips.split(buy, sell, {2589: 10000})
+        self.assertEqual((rows, [(r["item"], r["usual"]) for r in long_shots]), ([], [(2589, 10000)]))
+        rows, long_shots = flips.split(buy, sell, {2589: 400000})          # 100g is under 3 x 40g
+        self.assertEqual((len(rows), long_shots), (1, []))
 
     def test_flips(self):
         rows = flips.flips(BUY, SELL)
@@ -67,20 +69,19 @@ class RuleTests(unittest.TestCase):
         sell = {"%d" % i: [150 + i * 53 % 1300, (i + 1) % 3] for i in range(1, 400)}
         reference = {"%d" % i: 100 + i % 300 for i in range(1, 400, 2)}
         script = ("const f = require(%s).flips; const [b, s, c, p, m, r, x] = JSON.parse(require('fs').readFileSync(0));"
-                  "process.stdout.write(JSON.stringify(f(b, s, c, p, m, r, x).map(r => [r.item, r.profit])));"
+                  "const got = f(b, s, c, p, m, r, x);"
+                  "process.stdout.write(JSON.stringify([got.flips, got.long].map(rows => rows.map(r => [r.item, r.profit]))));"
                   % json.dumps(str(ROOT / "site" / "flips.js")))
         done = subprocess.run(["node", "-e", script], input=json.dumps([buy, sell, flips.AH_CUT, flips.MIN_PROFIT,
                                                                        flips.MIN_MARGIN, reference, flips.PRICE_CAP]),
                               capture_output=True, text=True, check=True)
-        expected = flips.flips({int(k): tuple(v) for k, v in buy.items()}, {int(k): tuple(v) for k, v in sell.items()},
+        expected = flips.split({int(k): tuple(v) for k, v in buy.items()}, {int(k): tuple(v) for k, v in sell.items()},
                                {int(k): v for k, v in reference.items()})
-        self.assertLess(len(expected), len(flips.flips({int(k): tuple(v) for k, v in buy.items()},
-                                                       {int(k): tuple(v) for k, v in sell.items()})))   # the cap bit
-        self.assertTrue(expected)
-        got = json.loads(done.stdout)
-        self.assertEqual([r[0] for r in got], [r["item"] for r in expected])
-        for (_, profit), row in zip(got, expected):
-            self.assertAlmostEqual(profit, row["profit"])
+        self.assertTrue(expected[0] and expected[1])                        # both lists have rows
+        for got, rows in zip(json.loads(done.stdout), expected):
+            self.assertEqual([r[0] for r in got], [r["item"] for r in rows])
+            for (_, profit), row in zip(got, rows):
+                self.assertAlmostEqual(profit, row["profit"])
 
 
 def house(region, number, ruleset, faction, items=10):
@@ -155,6 +156,16 @@ class PageTests(unittest.TestCase):
         self.assertIn("<td class=num>20 / 40</td>", body)
         self.assertIn('href="/flips/us/normal-alliance"', body)                    # the other market
         self.assertIn('<script src="/flips.js" defer></script>', body)
+        self.assertIn("<details class=long-shots id=long-shots hidden>", body)    # no usual prices: no long shots
+
+    def test_long_shots_are_listed_apart(self):
+        # Runecloth usually 5s in the region: 20s on the Horde auction house is over 3 times that.
+        long_market = dict(market(), reference={14047: 500})
+        _, _, body = flips.market_page(FakeData(), NAMES, long_market, [long_market], self.LINKS, NOW)
+        self.assertIn("Nothing on the US Normal Blackwater auction house sells for enough more", body)
+        self.assertIn("<details class=long-shots id=long-shots><summary>Long shots: <span id=long-count>1</span>", body)
+        self.assertIn("<td class=num>20s</td><td class=num>5s</td><td class=num><b>9s</b></td>", body)
+        self.assertIn("<th class=num>Usual in US</th>", body)
 
     def test_old_prices_list_nothing(self):
         _, _, body = flips.market_page(FakeData(), NAMES, market(age=13 * HOUR), [market()], self.LINKS, NOW)

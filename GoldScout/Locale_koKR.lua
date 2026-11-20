@@ -406,4 +406,7 @@ ns.AddLocale("koKR", {
   ["Working out the best farms..."] = "최고의 파밍 장소를 찾는 중...",
   ["Show dungeon drops"] = "던전 전리품 표시",
   ["Also list farms on mobs inside dungeons and raids. You run those with a group and a lockout, so their gold per hour doesn't compare with farming on your own."] = "던전과 공격대 안의 몹 파밍도 표시합니다. 파티와 귀속 제한으로 도는 곳이라 시간당 골드를 혼자 하는 파밍과 비교할 수 없습니다.",
+  ["Long shots"] = "고위험",
+  ["Also list flips that sell here for over %d times the item's usual price in your region, after the others. Some are real gaps between the factions; many are one listing nobody will buy."] = "이곳 판매가가 지역 평소 가격의 %d배를 넘는 되팔기도 다른 항목 뒤에 표시합니다. 일부는 진영 간 실제 가격 차이지만, 대부분은 아무도 사지 않을 매물 하나입니다.",
+  ["Long shot: it usually sells for about %s in your region. A price far above that may never sell: check how many are listed before buying."] = "고위험: 지역에서 보통 약 %s에 팔립니다. 그보다 훨씬 높은 가격은 팔리지 않을 수 있으니, 사기 전에 등록된 수량을 확인하세요.",
 })

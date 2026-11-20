@@ -87,7 +87,12 @@ local TAB_OPTIONS = {
     { setting = "showTrivial", label = L["Gray recipes"], tip = L["Include recipes that no longer give skill-ups."] },
     { setting = "showBound", label = L["Soulbound results"], tip = L["Include recipes whose product can't be sold on the auction house."] },
   },
-  flip = {},
+  flip = {
+    { setting = "flipLongShots", label = L["Long shots"],
+      tip = (L["Also list flips that sell here for over %d times the item's usual price in your region, after the "
+        .. "others. Some are real gaps between the factions; many are one listing nobody will buy."]):format(
+        ns.OTHER_LOOT_PRICE_CAP or 3) },
+  },
 }
 
 -- Experience styling for the Lvl column (see Engine's XP check).
@@ -129,6 +134,9 @@ local function ItemText(row)
   end
   if row.quantity and row.quantity ~= 1 then
     text = text .. Gray((" x%g"):format(row.quantity))
+  end
+  if row.longShot then
+    text = text .. " |cffff8040!|r"
   end
   return text
 end
@@ -306,6 +314,11 @@ local function FlipTooltip(row)
     0.8, 0.8, 0.8, true)
   GameTooltip:AddLine((L["Only the cheapest auctions are at this price: check before buying many. Prices seen %s."])
     :format(ns.Age(row.age)), 0.6, 0.6, 0.6, true)
+  if row.longShot then
+    GameTooltip:AddLine(" ")
+    GameTooltip:AddLine((L["Long shot: it usually sells for about %s in your region. A price far above that may "
+      .. "never sell: check how many are listed before buying."]):format(ns.Money(row.usual)), 1, 0.5, 0.25, true)
+  end
 end
 
 local function CraftTooltip(row)
@@ -1220,7 +1233,7 @@ function UI:UpdateInfoText()
       info = L["Scan the auction house to price these farms."]
     end
   elseif self.tab == "flip" then
-    if best then
+    if best and not best.longShot then
       info = (L["Best flip: buy %s at Blackwater for %s, sell it here for %s: %s profit each."]):format(
         ns.ItemName(best.item), ns.Money(best.cost), ns.Money(best.sell), ns.Money(best.profit))
     end

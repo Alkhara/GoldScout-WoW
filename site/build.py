@@ -783,6 +783,8 @@ svg.area { display: block; width: 100%; height: auto; }
 .q4 { color: #c27cff; } .q5 { color: #ff9a2e; } .q6, .q7 { color: #e6cc80; }
 a.q0, a.q1, a.q2, a.q3, a.q4, a.q5, a.q6, a.q7 { text-decoration: underline; text-decoration-color: rgba(143,211,255,.5); }
 .flips td:first-child { white-space: nowrap; }
+.long-shots { border: 1px solid rgba(255,171,154,.35); border-radius: 12px; padding: 4px 16px; margin: 16px 0; }
+.long-shots summary { cursor: pointer; color: #ffab9a; font-weight: 600; padding: 8px 0; }
 /* Gold guides (site/guides.py): a card per farm, its details beside the zone map, stacked on phones. */
 .guide-farm { border: 1px solid var(--line); border-radius: 12px; background: var(--bg2); padding: 16px 18px; margin: 18px 0; }
 .guide-farm h3 { margin: 0 0 2px; }

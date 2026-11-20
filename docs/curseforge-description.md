@@ -32,7 +32,7 @@ Hovering a mob shows its best drops in the tooltip, how many times players have 
 Every recipe you know, ranked by profit per craft: auction house price after the cut, minus the cheapest cost of the materials. Vendor prices are learned automatically.
 
 ### Flip tab
-Items cheap on your realm's Blackwater (goblin) auction house that sell for more on your faction's: what one costs there, what it sells for here, your profit after the 5% cut and the margin, and how many are listed on each. Only flips worth at least 1 silver and 15% each, from prices of the last 12 hours, and never from a listing far above the item's usual price. The same flips for every realm type are on the GoldScout website (link below).
+Items cheap on your realm's Blackwater (goblin) auction house that sell for more on your faction's: what one costs there, what it sells for here, your profit after the 5% cut and the margin, and how many are listed on each. Only flips worth at least 1 silver and 15% each, from prices of the last 12 hours, and flips priced far above the item's usual price kept apart as long shots (tick **Long shots** to see them). The same flips for every realm type are on the GoldScout website (link below).
 
 ### Hunt mode
 Pick a farm and press **Hunt**:

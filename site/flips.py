@@ -7,10 +7,11 @@ after the faction auction house's cut of at least FLIP_MIN_PROFIT and FLIP_MIN_M
 both snapshots from the last FLIP_MAX_AGE, read from the add-on's code so the two can't drift apart. The flips
 at build time are in the page for search engines; site/flips.js then works them out again from the live prices.
 
-Unlike the add-on, a flip is also left out when the faction auction house's cheapest listing is more than
-OTHER_LOOT_PRICE_CAP (Core.lua) times the item's regional price, the median of the cheapest listings across the
-region's auction houses (tools/bundle_prices.py, as the add-on's regional estimates): one listing nobody will
-buy, say Simple Wildflowers at 100g, would otherwise top the list.
+A flip whose faction-side price is more than OTHER_LOOT_PRICE_CAP (Core.lua) times the item's regional price, the
+median of the cheapest listings across the region's auction houses (tools/bundle_prices.py, as the add-on's
+regional estimates), is a "long shot", listed apart under the main table, as the add-on's Long shots checkbox
+does: some are real gaps between the factions (recipes only one faction's vendors sell), many are one listing
+nobody will buy (Simple Wildflowers at 100g), and a snapshot can't tell which.
 
 Item names come from site/item_names.json (tools/item_names.py, Blizzard's Game Data API), since flips can be
 any item on the auction house, not only the ones players have looted. English for now, like the gold guides.
@@ -123,24 +124,30 @@ def fetch_markets(api=guides.API_URL, fetch=guides.get_json, known=(), sleep=tim
     return markets
 
 
-def flips(buy, sell, reference=None):
-    """The add-on's flips between two houses' prices, best profit first: [{item, cost, sell, profit, margin,
-    stock, listed}]. Buying costs no fee; selling loses the auction house's cut. reference: {itemID: the
-    region's median price}; a sell price over PRICE_CAP times it isn't a price anyone pays."""
+def split(buy, sell, reference=None):
+    """The add-on's flips between two houses' prices, best profit first, as (flips, long shots): [{item, cost,
+    sell, profit, margin, stock, listed, usual}]. Buying costs no fee; selling loses the auction house's cut.
+    reference: {itemID: the region's median price} (usual); a sell price over PRICE_CAP times it is a long shot."""
     reference = reference or {}
-    rows = []
+    rows, long_shots = [], []
     for item, (cost, stock) in buy.items():
         price, listed = sell.get(item, (0, 0))
         if cost <= 0 or stock <= 0 or listed <= 0 or price <= 0:
             continue
-        if item in reference and price > reference[item] * PRICE_CAP:
-            continue
         profit = price * AH_CUT - cost
         if profit >= MIN_PROFIT and profit >= cost * MIN_MARGIN:
-            rows.append({"item": item, "cost": cost, "sell": price, "profit": profit, "margin": profit / cost,
-                         "stock": stock, "listed": listed})
-    rows.sort(key=lambda row: (-row["profit"], row["item"]))
-    return rows
+            usual = reference.get(item)
+            row = {"item": item, "cost": cost, "sell": price, "profit": profit, "margin": profit / cost,
+                   "stock": stock, "listed": listed, "usual": usual}
+            (long_shots if usual and price > usual * PRICE_CAP else rows).append(row)
+    for found in (rows, long_shots):
+        found.sort(key=lambda row: (-row["profit"], row["item"]))
+    return rows, long_shots
+
+
+def flips(buy, sell, reference=None):
+    """split()'s flips, without the long shots."""
+    return split(buy, sell, reference)[0]
 
 
 def fresh(market, now):
@@ -174,6 +181,16 @@ def percent(fraction):
     return "%d%%" % round(fraction * 100)
 
 
+def long_rows(data, names, rows):
+    return "".join(
+        "<tr><td>%s</td><td class=num>%s</td><td class=num>%s</td><td class=num>%s</td><td class=num><b>%s</b></td>"
+        "<td class=num>%s / %s</td></tr>"
+        % (item_cell(data, names, row["item"]), guides.money(row["cost"]), guides.money(row["sell"]),
+           guides.money(row["usual"]), guides.money(row["profit"]), data_pages.num(row["stock"]),
+           data_pages.num(row["listed"]))
+        for row in rows)
+
+
 def flip_rows(data, names, rows):
     return "".join(
         "<tr><td>%s</td><td class=num>%s</td><td class=num>%s</td><td class=num><b>%s</b></td><td class=num>%s</td>"
@@ -194,10 +211,11 @@ def how_it_works(market=None):
         "<p>Only flips worth at least %s and %d%% of what you pay are listed, from auction house snapshots no more "
         "than %d hours old. A price is the cheapest auction: only the first few may be that cheap, so check how many "
         "are listed on each side (Blackwater / %s) before you buy a stack, and remember someone else may be flipping "
-        "the same item. A flip is left out when the price on %s's auction house is more than %d times the item's "
-        "usual price in the region: one listing nobody buys isn't a price you can sell at.</p>"
+        "the same item. Flips that sell for more than %d times the item's usual price on %s's auction house are "
+        "long shots, listed apart: one listing nobody buys isn't a price you can sell at, but a real gap between "
+        "the factions is.</p>"
         % (e(faction), e(faction), round((1 - AH_CUT) * 100), guides.money(MIN_PROFIT), round(MIN_MARGIN * 100),
-           MAX_AGE // 3600, e(faction), e(faction), PRICE_CAP))
+           MAX_AGE // 3600, e(faction), PRICE_CAP, e(faction)))
 
 
 def in_game(links):
@@ -210,7 +228,8 @@ def in_game(links):
 def market_page(data, names, market, markets, links, now):
     """(title, description, body) for one faction auction house's flips."""
     name, faction = market_name(market), market["faction"]
-    rows = flips(market["buy"]["prices"], market["sell"]["prices"], market.get("reference")) if fresh(market, now) else []
+    rows, long_shots = (split(market["buy"]["prices"], market["sell"]["prices"], market.get("reference"))
+                        if fresh(market, now) else ([], []))
     shown = rows[:TOP]
     if not fresh(market, now):
         summary = ("The auction house snapshots for %s were more than %d hours old when this page was built. "
@@ -239,6 +258,20 @@ def market_page(data, names, market, markets, links, now):
              % (status, attributes, e(faction), e(faction), flip_rows(data, names, shown) or
                 "<tr><td colspan=6 class=small>No flips right now.</td></tr>",
                 "The top %d of %s." % (TOP, data_pages.num(len(rows))) if len(rows) > TOP else ""))
+    region = REGIONS[market["region"]]
+    table += (
+        "<details class=long-shots id=long-shots%s><summary>Long shots: <span id=long-count>%s</span> more flips "
+        "priced far above usual. Check before buying.</summary><p class=small>These sell on %s's auction house for "
+        "more than %d times the item's usual price in %s (the middle of its cheapest prices across the region's "
+        "auction houses). Some are real gaps between the factions, like recipes only one faction's vendors sell; "
+        "many are one listing nobody will pay. One listed far above the usual price is the riskiest.</p>"
+        "<div class=scroll><table id=flips-long class=flips><thead><tr><th>Item</th><th class=num>Buy on Blackwater"
+        "</th><th class=num>Sell on %s</th><th class=num>Usual in %s</th><th class=num>Profit each</th>"
+        "<th class=num>Listed (Blackwater / %s)</th></tr></thead><tbody>%s</tbody></table></div>"
+        "<p class=small id=flips-long-more>%s</p></details>"
+        % ("" if long_shots else " hidden", data_pages.num(len(long_shots)), e(faction), PRICE_CAP, e(region),
+           e(faction), e(region), e(faction), long_rows(data, names, long_shots[:TOP]),
+           "The top %d of %s." % (TOP, data_pages.num(len(long_shots))) if len(long_shots) > TOP else ""))
     others = [other for other in markets if other is not market]
     related = ("<h2>Other realm types and factions</h2>" + data_pages.link_list(
         '<a href="%s">%s</a>' % (P("/flips/" + slug(other)), e(market_name(other))) for other in others)

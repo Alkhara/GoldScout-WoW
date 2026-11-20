@@ -641,6 +641,16 @@ class FlipTests(unittest.TestCase):
                              {1: (1000000, 1), 5: (300, 10), 7: (5000, 3)})
         self.assertEqual([row.item for row in rows], [7, 5])
 
+    def test_long_shots_come_after_the_rest_when_asked(self):
+        self.run_lua("local ns = ...; ns.Prices.Bundled = function() "
+                     "return { snapshot = 0, price = { [1] = 600, [5] = 200 } } end; "
+                     "ns.db.settings.flipLongShots = true")
+        rows, _ = self.flips({1: (32900, 1), 5: (100, 50), 7: (1000, 2)},
+                             {1: (1000000, 1), 5: (300, 10), 7: (5000, 3)})
+        self.assertEqual([row.item for row in rows], [7, 5, 1])          # the long shot last, despite its profit
+        self.assertEqual((rows[2].longShot, rows[2].usual), (True, 600))
+        self.assertIsNone(rows[0].longShot)
+
     def test_old_prices_dont_count(self):
         rows, _ = self.flips({1: (1000, 5)}, {1: (2000, 40)}, age=13 * 3600)
         self.assertEqual(rows, [])

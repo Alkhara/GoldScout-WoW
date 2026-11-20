@@ -405,6 +405,9 @@ local strings = {
   ["Working out the best farms..."] = "Calculando las mejores zonas de farmeo...",
   ["Show dungeon drops"] = "Mostrar botín de mazmorras",
   ["Also list farms on mobs inside dungeons and raids. You run those with a group and a lockout, so their gold per hour doesn't compare with farming on your own."] = "Mostrar también las zonas de farmeo con enemigos de mazmorras y bandas. Se hacen en grupo y con un bloqueo, así que su oro por hora no se compara con farmear en solitario.",
+  ["Long shots"] = "Arriesgadas",
+  ["Also list flips that sell here for over %d times the item's usual price in your region, after the others. Some are real gaps between the factions; many are one listing nobody will buy."] = "Mostrar también, después de las demás, las reventas que se venden aquí por más de %d veces el precio habitual del objeto en tu región. Algunas son diferencias reales entre facciones; muchas son un solo anuncio que nadie comprará.",
+  ["Long shot: it usually sells for about %s in your region. A price far above that may never sell: check how many are listed before buying."] = "Arriesgada: suele venderse por unos %s en tu región. Un precio muy por encima puede no venderse nunca: mira cuántos hay a la venta antes de comprar.",
 }
 ns.AddLocale("esES", strings)
 ns.AddLocale("esMX", strings)

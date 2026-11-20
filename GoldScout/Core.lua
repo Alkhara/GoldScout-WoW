@@ -58,6 +58,7 @@ local DEFAULT_SETTINGS = {
   unitTooltips = true,    -- add farm info to mob tooltips
   minimap = true,         -- show the minimap button
   showDungeons = false,   -- Farm list: include mobs inside dungeons and raids (Engine.InDungeon)
+  flipLongShots = false,  -- Flip tab: also list flips priced far above the item's regional estimate
   bagCoins = true,        -- a coin on bag items worth listing on the auction house (Bags.lua)
   minimapAngle = 200,     -- where the minimap button sits around the minimap, in degrees
   companionHint = true,   -- Farm tab companion tip: true until shared, "always", or false once hidden

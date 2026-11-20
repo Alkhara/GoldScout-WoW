@@ -3,18 +3,20 @@
 // The page carries the flips from when it was built. This works them out again from the latest auction prices:
 // table#flips names the two houses (data-region, data-buy: Blackwater, data-sell: the faction's) and the
 // add-on's rules (data-cut, data-min-profit, data-min-margin, data-max-age, data-top, data-cap),
-// /flips-names.json names the items, and /flips/reference-<region>.json has each item's regional price. Everything from the server is written with textContent, never as HTML. Without JavaScript,
-// or if the prices can't be loaded, the built table stays.
+// /flips-names.json names the items, and /flips/reference-<region>.json has each item's regional price; flips
+// priced over data-cap times that go in the long shots table (table#flips-long, inside details#long-shots).
+// Everything from the server is written with textContent, never as HTML. Without JavaScript, or if the prices
+// can't be loaded, the built tables stay.
 (function () {
   "use strict";
   var API = "https://api.wowgoldscout.com";
 
-  // The add-on's flips (GoldScout/Engine.lua Engine:Flips, site/flips.py flips()): buy and sell are
+  // The add-on's flips (GoldScout/Engine.lua Engine:Flips, site/flips.py split()): buy and sell are
   // {itemID: [lowest unit buyout in copper, quantity listed]}; a sell price over cap times reference[itemID]
-  // (the region's median price) isn't one anyone pays.
+  // (the region's median price, "usual") makes a long shot. Returns {flips: [...], long: [...]}, best profit first.
   function flips(buy, sell, cut, minProfit, minMargin, reference, cap) {
     reference = reference || {};
-    var rows = [];
+    var rows = [], long = [];
     Object.keys(buy).forEach(function (item) {
       var bought = buy[item], sold = sell[item];
       if (!sold) {
@@ -24,17 +26,17 @@
       if (cost <= 0 || stock <= 0 || listed <= 0 || price <= 0) {
         return;
       }
-      if (reference[item] && price > reference[item] * cap) {
-        return;
-      }
       var profit = price * cut - cost;
       if (profit >= minProfit && profit >= cost * minMargin) {
-        rows.push({ item: Number(item), cost: cost, sell: price, profit: profit, margin: profit / cost,
-          stock: stock, listed: listed });
+        var usual = reference[item] || null;
+        (usual && price > usual * cap ? long : rows).push({ item: Number(item), cost: cost, sell: price,
+          profit: profit, margin: profit / cost, stock: stock, listed: listed, usual: usual });
       }
     });
-    rows.sort(function (a, b) { return b.profit - a.profit || a.item - b.item; });
-    return rows;
+    function best(a, b) { return b.profit - a.profit || a.item - b.item; }
+    rows.sort(best);
+    long.sort(best);
+    return { flips: rows, long: long };
   }
 
   if (typeof module !== "undefined" && module.exports) {   // the tests run flips() in Node
@@ -102,8 +104,9 @@
     return el;
   }
 
-  function show(rows, names) {
-    var body = table.tBodies[0];
+  // Fills a table's rows: the flips table (Profit, Margin) or the long shots table (Usual price, Profit).
+  function fill(target, moreEl, rows, names, long) {
+    var body = target.tBodies[0];
     body.textContent = "";
     var top = Number(d.top) || 50;
     rows.slice(0, top).forEach(function (r) {
@@ -111,10 +114,15 @@
       cell(tr, itemName(names, r.item));
       cell(tr, money(r.cost), "num");
       cell(tr, money(r.sell), "num");
+      if (long) {
+        cell(tr, money(r.usual), "num");
+      }
       var b = document.createElement("b");
       b.textContent = money(r.profit);
       cell(tr, b, "num");
-      cell(tr, Math.round(r.margin * 100) + "%", "num");
+      if (!long) {
+        cell(tr, Math.round(r.margin * 100) + "%", "num");
+      }
       cell(tr, r.stock.toLocaleString("en-US") + " / " + r.listed.toLocaleString("en-US"), "num");
       body.appendChild(tr);
     });
@@ -123,8 +131,18 @@
       cell(empty, "No flips right now.", "small").colSpan = 6;
       body.appendChild(empty);
     }
-    if (more) {
-      more.textContent = rows.length > top ? "The top " + top + " of " + rows.length.toLocaleString("en-US") + "." : "";
+    if (moreEl) {
+      moreEl.textContent = rows.length > top ? "The top " + top + " of " + rows.length.toLocaleString("en-US") + "." : "";
+    }
+  }
+
+  function show(found, names) {
+    fill(table, more, found.flips, names, false);
+    var box = document.getElementById("long-shots"), longTable = document.getElementById("flips-long");
+    if (box && longTable) {
+      fill(longTable, document.getElementById("flips-long-more"), found.long, names, true);
+      document.getElementById("long-count").textContent = found.long.length.toLocaleString("en-US");
+      box.hidden = !found.long.length;
     }
   }
 
@@ -139,7 +157,7 @@
     if (Date.now() / 1000 - oldest > Number(d.maxAge)) {
       status.textContent = "The latest auction house snapshots are more than " + Math.round(Number(d.maxAge) / 3600) +
         " hours old, so there's nothing to flip safely right now.";
-      show([], got[2]);
+      show({ flips: [], long: [] }, got[2]);
       return;
     }
     show(flips(buy.prices || {}, sell.prices || {}, Number(d.cut), Number(d.minProfit), Number(d.minMargin), got[3],
