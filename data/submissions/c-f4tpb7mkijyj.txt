@@ -1,8 +1,14 @@
-GoldScout-export 5^f4tpb7mkijyj^4
+GoldScout-export 5^f4tpb7mkijyj^5
 80^12^0^3^4^1429^0.4874^0.2842^12^Kobold Laborer^159:1:1,755:4:4,2589:1:1^
 257^1^0^3^3^1429^0.4744^0.3600^1^Kobold Worker^^
 2246^1^0^39^39^1416^0.3721^0.1564^1^Syndicate Assassin^1707:1:1^
 2349^1^0^24^24^1421^0.7084^0.5881^1^Giant Moss Creeper^1081:1:1^
+4699^1^0^38^38^1443^0.3219^0.7853^1^Scorpashi Venomlash^12037:1:1^
+11562^28^0^33^34^1443^0.2130^0.7667^28^Drysnap Crawler^3785:1:1,6362:3:5,15571:1:1,17057:13:13^
+11563^3^0^34^35^1443^0.2045^0.7661^3^Drysnap Pincer^3804:1:1,17057:1:1^
+11576^2^0^33^34^1443^0.4916^0.5569^2^Whirlwind Ripper^^
+11577^1^0^37^37^1443^0.6316^0.6002^1^Whirlwind Stormwalker^7069:1:1^
+11578^1^0^34^34^1443^0.3212^0.7853^1^Whirlwind Shredder^7069:1:1^
 258792^2^0^0^0^0^0.0000^0.0000^0^^1990:1:1,262889:1:1^
 258797^1^0^0^0^0^0.0000^0.0000^0^^^
 258799^5^0^0^0^0^0.0000^0.0000^0^^864:1:1,11204:1:1,248691:1:1^
@@ -27,19 +33,29 @@ GoldScout-export 5^f4tpb7mkijyj^4
 @i^1990^Ballast Maul of Nature Protection
 @i^2589^Linen Cloth
 @i^3010^Fine Sand
+@i^3785^Keen Axe
+@i^3804^Hardened Leather Gloves
 @i^3808^Double Mail Belt
 @i^3820^Stranglekelp
 @i^4306^Silk Cloth
+@i^4603^Raw Spotted Yellowtail
 @i^5567^Silver Hook
 @i^6291^Raw Brilliant Smallfish
 @i^6308^Raw Bristle Whisker Catfish
+@i^6358^Oily Blackmouth
+@i^6359^Firefin Snapper
+@i^6362^Raw Rockscale Cod
 @i^6645^Bloated Mud Snapper
+@i^7069^Elemental Air
 @i^7474^Regal Cloak of Frozen Wrath
 @i^8365^Raw Mithril Head Trout
 @i^9848^Conjurer's Gloves of the Prophet
 @i^9892^Huntsman's Gloves of Spirit
 @i^11204^Formula: Enchant Bracer - Greater Spirit
+@i^12037^Mystery Meat
+@i^15571^Marauder's Belt of the Wolf
 @i^15918^Conjurer's Sphere of the Gorilla
+@i^17057^Shiny Fish Scales
 @i^21150^Iron Bound Trunk
 @i^21151^Rumsey Rum Black Label
 @i^21153^Raw Greater Sagefish
@@ -60,19 +76,29 @@ GoldScout-export 5^f4tpb7mkijyj^4
 @q^1990^2:2:0
 @q^2589^1:7:1
 @q^3010^0:15:0
+@q^3785^0:2:0
+@q^3804^0:4:0
 @q^3808^0:4:0
 @q^3820^1:7:1
 @q^4306^1:7:1
+@q^4603^1:7:1
 @q^5567^0:15:0
 @q^6291^1:7:1
 @q^6308^1:7:1
+@q^6358^1:7:1
+@q^6359^1:7:1
+@q^6362^1:7:1
 @q^6645^2:15:0
+@q^7069^1:7:1
 @q^7474^2:4:0
 @q^8365^1:7:1
 @q^9848^2:4:0
 @q^9892^2:4:0
 @q^11204^2:9:0
+@q^12037^1:7:1
+@q^15571^2:4:0
 @q^15918^2:4:0
+@q^17057^1:15:0
 @q^21150^1:15:0
 @q^21151^1:0:0
 @q^21153^1:7:1
@@ -87,6 +113,8 @@ GoldScout-export 5^f4tpb7mkijyj^4
 @m^1416^Alterac Mountains
 @m^1421^Silverpine Forest
 @m^1429^Elwynn Forest
+@m^1434^Stranglethorn Vale
+@m^1443^Desolace
 @c^118^
 @c^724^
 @c^733^
@@ -455,5 +483,12 @@ GoldScout-export 5^f4tpb7mkijyj^4
 @a^257^149:1
 @a^2246^67:1
 @a^2349^234:1
+@a^4699^306:1
+@a^11562^284:6,303:4,304:16,323:1,324:1
+@a^11563^303:1,304:2
+@a^11576^132:1,307:1
+@a^11577^252:1
+@a^11578^306:1
 @f^1416^0^109^227^3820:5:10,6291:1:1,6308:7:7,6645:1:1,8365:21:21,21150:11:11,21151:2:2,21153:62:62,21164:5:5^26:14,46:6,47:4,67:22,87:10,106:9,126:7,146:3,165:3,184:10,201:7,202:6,203:7,221:1
+@f^1434^0^18^243^4603:3:3,6358:3:3,6359:3:3,6362:9:9^285:18
 @l^0^enUS

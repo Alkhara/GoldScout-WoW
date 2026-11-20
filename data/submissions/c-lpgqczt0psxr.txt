@@ -1,7 +1,7 @@
-GoldScout-export 5^lpgqczt0psxr^4
+GoldScout-export 5^lpgqczt0psxr^5
 36^2^0^11^11^1436^0.4944^0.3366^2^Harvest Golem^814:2:2,1274:1:1,255007:1:1^
 117^21^0^11^12^1436^0.4454^0.1583^21^Riverpaw Gnoll^725:5:5,955:1:1,1179:1:1,1516:1:1,2589:3:4,2957:1:1,3192:1:1,6515:1:1,6521:1:1^
-205^1^0^28^29^1431^0.6726^0.7527^1^Nightbane Dark Runner^^
+205^4^0^28^29^1431^0.6573^0.6972^4^Nightbane Dark Runner^^
 206^4^0^29^30^1431^0.6907^0.7179^4^Nightbane Vile Fang^^
 210^4^0^26^27^1431^0.2430^0.3219^4^Bone Chewer^884:2:2,6530:1:1^
 213^1^0^20^20^1431^0.1311^0.2719^1^Starving Dire Wolf^3301:1:1^
@@ -20,19 +20,36 @@ GoldScout-export 5^lpgqczt0psxr^4
 920^4^0^30^31^1431^0.6003^0.7927^4^Nightbane Tainted One^^
 930^2^0^24^25^1431^0.3154^0.3950^2^Black Widow Hatchling^1081:1:1,2251:1:1,3174:2:2^
 948^7^0^25^26^1431^0.2430^0.3634^7^Rotted One^884:2:2,887:2:2,2592:2:3,6530:1:1,7307:2:2^
+1007^9^0^20^21^1437^0.6137^0.7128^9^Mosshide Gnoll^2592:1:2,3740:1:1,4306:1:1^
+1008^11^0^21^22^1437^0.6172^0.6759^11^Mosshide Mongrel^929:1:1,1205:1:1,2592:5:7,3770:1:1,6573:1:1^
+1051^2^0^27^28^1437^0.5437^0.2138^2^Dark Iron Dwarf^2592:1:1,4542:1:1^
+1052^4^0^28^29^1437^0.5013^0.1870^4^Dark Iron Saboteur^2592:1:3,4306:1:3^
+1053^6^0^29^30^1437^0.5125^0.2024^6^Dark Iron Tunneler^929:1:1,4306:2:4,9822:1:1^
+1054^1^0^30^31^1437^0.4751^0.1549^1^Dark Iron Demolitionist^^
+1180^3^0^19^19^1432^0.7539^0.1589^3^Mo'grosh Brute^2592:1:2^
+1183^2^0^19^19^1432^0.7697^0.1366^2^Mo'grosh Mystic^1206:1:1,1766:1:1^
 1251^1^0^28^28^1431^0.3712^0.8357^1^Splinter Fist Firemonger^^
 1270^2^0^29^30^1431^0.7720^0.3457^2^Fetid Corpse^6530:1:1^
+1364^1^0^34^34^1437^0.6025^0.2591^1^Balgaras the Foul^3639:1:1^
+1417^9^0^21^22^1437^0.1903^0.4703^9^Young Wetlands Crocolisk^770:3:3,3397:6:6,3667:3:3^
 2351^1^0^22^22^1424^0.6894^0.1667^1^Gray Bear^^
+4969^2^0^26^26^1453^0.7395^0.5899^2^Old Town Thug^4709:1:1^
+6523^1^0^27^28^1437^0.4793^0.1636^1^Dark Iron Rifleman^^
 272291^1^0^25^25^1431^0.2389^0.3340^1^Lost Knight^9802:1:1^
 @i^725^Gnoll Paw
+@i^770^Pointy Crocolisk Tooth
 @i^814^Flask of Oil
 @i^884^Ghoul Rib
 @i^887^Pound of Flesh
+@i^929^Healing Potion
 @i^955^Scroll of Intellect
 @i^1081^Crisp Spider Meat
 @i^1179^Ice Cold Milk
+@i^1205^Melon Juice
+@i^1206^Moss Agate
 @i^1274^Hops
 @i^1516^Worn Hatchet
+@i^1766^Canvas Cloak
 @i^1968^Ogre's Monocle
 @i^2072^Dwarven Magestaff of the Monkey
 @i^2251^Gooey Spider Leg
@@ -43,17 +60,26 @@ GoldScout-export 5^lpgqczt0psxr^4
 @i^3174^Spider Ichor
 @i^3192^Short Bastard Sword of the Monkey
 @i^3301^Sharp Canine
+@i^3397^Young Crocolisk Skin
 @i^3402^Soft Patch of Fur
 @i^3514^Mor'Ladim's Skull
 @i^3629^Mistmantle Family Ring
+@i^3639^Ear of Balgaras
+@i^3667^Tender Crocolisk Meat
+@i^3740^Decapitating Sword of Spirit
+@i^3770^Mutton Chop
 @i^3820^Stranglekelp
 @i^4306^Silk Cloth
+@i^4542^Moist Cornbread
+@i^4709^Forest Leather Mantle
 @i^6308^Raw Bristle Whisker Catfish
 @i^6515^Disciple's Gloves
 @i^6521^Pioneer Gloves
 @i^6530^Nightcrawlers
+@i^6573^Defender Boots of Stamina
 @i^7307^Flesh Eating Worm
 @i^9802^Superior Boots of the Elder
+@i^9822^Durable Cape of the Bandit
 @i^21071^Raw Sagefish
 @i^21113^Watertight Trunk
 @i^21114^Rumsey Rum Dark
@@ -62,14 +88,19 @@ GoldScout-export 5^lpgqczt0psxr^4
 @i^21153^Raw Greater Sagefish
 @i^255007^Golem Isospring
 @q^725^1:12:0
+@q^770^0:15:0
 @q^814^1:7:1
 @q^884^1:12:0
 @q^887^0:15:0
+@q^929^1:0:0
 @q^955^1:0:0
 @q^1081^1:7:1
 @q^1179^1:0:0
+@q^1205^1:0:0
+@q^1206^2:7:1
 @q^1274^1:12:0
 @q^1516^0:2:0
+@q^1766^0:4:0
 @q^1968^1:12:0
 @q^2072^2:2:0
 @q^2251^1:7:1
@@ -80,17 +111,26 @@ GoldScout-export 5^lpgqczt0psxr^4
 @q^3174^1:7:1
 @q^3192^2:2:0
 @q^3301^0:15:0
+@q^3397^1:12:0
 @q^3402^0:15:0
 @q^3514^1:12:0
 @q^3629^1:12:0
+@q^3639^1:12:0
+@q^3667^1:7:1
+@q^3740^2:2:0
+@q^3770^1:0:0
 @q^3820^1:7:1
 @q^4306^1:7:1
+@q^4542^1:0:0
+@q^4709^2:4:0
 @q^6308^1:7:1
 @q^6515^1:4:0
 @q^6521^1:4:0
 @q^6530^1:0:0
+@q^6573^2:4:0
 @q^7307^1:0:0
 @q^9802^2:4:0
+@q^9822^2:4:0
 @q^21071^1:7:1
 @q^21113^1:15:0
 @q^21114^1:0:0
@@ -101,7 +141,10 @@ GoldScout-export 5^lpgqczt0psxr^4
 @m^1416^Alterac Mountains
 @m^1424^Hillsbrad Foothills
 @m^1431^Duskwood
+@m^1432^Loch Modan
 @m^1436^Westfall
+@m^1437^Wetlands
+@m^1453^Stormwind City
 @c^118^
 @c^858^
 @c^929^
@@ -728,7 +771,7 @@ GoldScout-export 5^lpgqczt0psxr^4
 @c^279978^
 @a^36^129:2
 @a^117^48:3,68:13,69:5
-@a^205^313:1
+@a^205^272:1,273:2,313:1
 @a^206^274:2,294:1,331:1
 @a^210^105:1,124:2,144:1
 @a^213^102:1
@@ -747,9 +790,21 @@ GoldScout-export 5^lpgqczt0psxr^4
 @a^920^311:2,312:1,332:1
 @a^930^146:2
 @a^948^125:1,144:5,145:1
+@a^1007^272:2,292:7
+@a^1008^232:2,252:1,272:5,292:3
+@a^1051^69:1,112:1
+@a^1052^69:3,112:1
+@a^1053^69:4,112:2
+@a^1054^69:1
+@a^1180^75:3
+@a^1183^55:2
 @a^1251^327:1
 @a^1270^135:2
+@a^1364^112:1
+@a^1417^164:1,165:1,183:5,203:2
 @a^2351^73:1
+@a^4969^234:2
+@a^6523^69:1
 @a^272291^124:1
 @f^1416^0^77^194^3820:3:8,21150:7:7,21151:3:4,21153:64:64^26:19,46:4,47:7,67:17,87:1,106:13,146:6,165:4,184:2,203:4
 @f^1424^0^27^189^3820:2:4,6308:1:1,21071:20:20,21113:2:2,21114:2:2^54:6,73:9,172:4,211:8
