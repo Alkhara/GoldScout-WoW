@@ -7,9 +7,12 @@ releases add their own line automatically.
 
 ## Unreleased
 
+## v0.12.36
+
 - **Dungeon farms are hidden unless you want them:** a new setting, **Show dungeon drops** (Settings › Farm list, or `/gscout set dungeons on`), adds farms on mobs inside dungeons and raids to the Farm list. They're off by default: you run those with a group and a lockout, so their gold per hour doesn't compare with farming on your own.
 - **Long shots on the Flip tab:** one item listed far above its usual price (say Simple Wildflowers at 100g) could top the Flip tab as a huge flip you'd never sell. Flips that sell for over 3 times the item's regional price are now long shots: hidden unless you tick **Long shots** on the Flip tab, then listed after the others with an orange **!** and their usual price in the tooltip. Some are real gaps between the factions, so they're there when you want them. The same Blackwater flips, long shots included, are now on the website for every realm type: [wowgoldscout.com/flips](https://wowgoldscout.com/flips).
 - **Dungeon mobs get their zone:** inside dungeons the game gives addons no map position, so GoldScout recorded no zone either, and those farms said "where players loot it". GoldScout now records which dungeon they're in. Shared drop data fills in their zones as players run dungeons with this version.
+- Updated drop data from the community.
 
 ## v0.12.34
 
