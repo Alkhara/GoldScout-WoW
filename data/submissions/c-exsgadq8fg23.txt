@@ -1,4 +1,4 @@
-GoldScout-export 6^exsgadq8fg23^16
+GoldScout-export 6^exsgadq8fg23^17
 597^4^0^36^37^1434^0.2337^0.0965^4^Berserker Bloodscalp^^
 660^3^0^37^37^1434^0.2349^0.0920^3^Sorcier-docteur Bloodscalp^15260:1:1^
 669^5^0^41^42^1434^0.4517^0.4112^5^Chasseur Skullsplitter^1520:2:2^
@@ -101,6 +101,8 @@ GoldScout-export 6^exsgadq8fg23^16
 5490^5^0^48^49^1446^0.2862^0.6691^5^Chardonnier noueux^3820:1:1,4608:1:1^
 5955^1^0^45^45^1446^0.2980^0.7068^1^Tooga^^
 5982^55^0^46^48^1419^0.6153^0.2768^55^Pourfendeur noir^1464:30:30,3404:22:22,5117:1:1,5829:11:11,8146:1:1,8168:45:45,8396:24:24,10593:1:1,11417:3:3,11418:18:18,12037:21:21,12207:21:21,248699:1:1^
+5984^2^0^45^46^1419^0.4738^0.2197^2^Raillecroc affamée^8391:1:1,12203:2:2,12208:1:1^
+5988^2^0^50^51^1419^0.4980^0.1920^2^Aiguillonneur scorpok^8393:2:2,12037:1:1,19936:1:1^
 5990^53^0^47^48^1419^0.6135^0.2825^53^Basilic Rougepierre^4092:7:7,4093:14:14,8146:8:8,8394:20:20,11386:15:15,11387:10:10^
 5991^3^0^51^52^1419^0.5148^0.3600^3^Peau de cristal Rougepierre^8394:2:2^
 5992^56^0^48^49^1419^0.6141^0.2809^56^Sanglier cendré^2295:15:15,3403:18:18,8392:21:21,10593:1:1,213545:1:1^
@@ -228,7 +230,9 @@ GoldScout-export 6^exsgadq8fg23^16
 @i^8151^Flacon de mojo
 @i^8153^Sauvageonne
 @i^8168^Plume noire
+@i^8391^Joues de Raillecroc
 @i^8392^Poumon de sanglier éclaté
+@i^8393^Pince de scorpok
 @i^8394^Cerveau de basilic
 @i^8396^Gésier de vautour
 @i^8400^Patron : Epaulières armées du scorpide
@@ -273,6 +277,7 @@ GoldScout-export 6^exsgadq8fg23^16
 @i^19025^Plume de Seigneur du ciel
 @i^19034^Repas de Lard
 @i^19935^Glande à venin vide
+@i^19936^Carapace de scorpide desséchée
 @i^19937^Petite griffe de scorpide
 @i^20015^Plumes d'Ancien raptor
 @i^20519^Chapeau de pirate des Mers du sud
@@ -391,7 +396,9 @@ GoldScout-export 6^exsgadq8fg23^16
 @q^8151^1:7:1
 @q^8153^1:7:1
 @q^8168^1:7:1
+@q^8391^1:12:0
 @q^8392^1:12:0
+@q^8393^1:12:0
 @q^8394^1:12:0
 @q^8396^1:12:0
 @q^8400^2:9:0
@@ -436,6 +443,7 @@ GoldScout-export 6^exsgadq8fg23^16
 @q^19025^1:12:0
 @q^19034^1:12:0
 @q^19935^0:15:0
+@q^19936^0:15:0
 @q^19937^0:15:0
 @q^20015^0:15:0
 @q^20519^1:12:0
@@ -1156,6 +1164,8 @@ GoldScout-export 6^exsgadq8fg23^16
 @a^5490^265:5
 @a^5955^285:1
 @a^5982^111:4,112:47,131:1,150:1,151:2
+@a^5984^89:2
+@a^5988^70:1,89:1
 @a^5990^111:6,112:44,131:2,151:1
 @a^5991^129:1,150:2
 @a^5992^111:3,112:51,131:2

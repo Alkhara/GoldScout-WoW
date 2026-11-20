@@ -1,6 +1,11 @@
-GoldScout-export 6^ndxu3624fwqe^5
+GoldScout-export 6^ndxu3624fwqe^6
+14123^5^0^42^43^1446^0.6753^0.2239^5^Mordeuse mâchoire d'acier^3712:3:3,4555:3:3,4556:2:2,4603:1:1,7973:1:1,14230:1:1^
+@i^3712^Viande de tortue
 @i^3820^Etouffante
+@i^4555^Epaisse queue écailleuse
+@i^4556^Fragment de carapace moucheté
 @i^4603^Jaune-queue tacheté cru
+@i^6358^Bouche-noire huileux
 @i^6359^Lutjan de nagefeu
 @i^6362^Morue rochécaille crue
 @i^7973^Palourde à large bouche
@@ -12,10 +17,16 @@ GoldScout-export 6^ndxu3624fwqe^5
 @i^13876^Jaune-queue de 40 livres
 @i^13877^Jaune-queue de 47 livres
 @i^13879^Jaune-queue de 59 livres
+@i^14230^Tunique de braise-soie de sorcellerie
+@i^21113^Malle étanche
 @i^21151^Rhum de Rumsey label noir
 @i^21228^Malle cerclée de mithril
+@q^3712^1:7:1
 @q^3820^1:7:1
+@q^4555^0:15:0
+@q^4556^0:15:0
 @q^4603^1:7:1
+@q^6358^1:7:1
 @q^6359^1:7:1
 @q^6362^1:7:1
 @q^7973^1:7:0
@@ -27,8 +38,11 @@ GoldScout-export 6^ndxu3624fwqe^5
 @q^13876^1:15:0
 @q^13877^1:15:0
 @q^13879^1:15:0
+@q^14230^2:4:0
+@q^21113^1:15:0
 @q^21151^1:0:0
 @q^21228^1:15:0
+@m^1437^Les Paluns
 @m^1446^Tanaris
 @c^724^
 @c^733^
@@ -633,5 +647,7 @@ GoldScout-export 6^ndxu3624fwqe^5
 @c^279981^
 @c^279982^
 @c^286152^
-@f^1446^0^1286^245^3820:2:3,4603:527:527,6359:106:106,6362:127:127,7973:128:128,13422:99:199,13754:109:109,13755:172:172,13874:1:1,13875:4:4,13876:4:4,13877:2:2,13879:1:1,21151:1:2,21228:3:3^93:1286
+@a^14123^73:1,93:3,113:1
+@f^1437^0^2^300^6358:1:1,21113:1:1^241:2
+@f^1446^0^1480^245^3820:3:6,4603:593:593,6359:132:132,6362:150:150,7973:149:149,13422:120:238,13754:121:121,13755:192:192,13874:1:1,13875:4:4,13876:5:5,13877:2:2,13879:1:1,21151:2:4,21228:5:5^73:3,93:1469,113:8
 @l^0^frFR

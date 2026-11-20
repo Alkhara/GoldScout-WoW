@@ -1,4 +1,4 @@
-GoldScout-export 6^89481ig63s7d^13
+GoldScout-export 6^89481ig63s7d^15
 441^1^0^17^18^1433^0.6105^0.7508^1^Black Dragon Whelp^818:1:1^
 544^1^0^21^22^1433^0.7610^0.5873^1^Murloc Nightcrawler^^
 545^2^0^19^20^1433^0.7610^0.5873^2^Murloc Tidecaller^1468:1:1,5523:1:1,5784:1:1^
@@ -11,12 +11,21 @@ GoldScout-export 6^89481ig63s7d^13
 4818^1^0^0^0^0^0.0000^0.0000^0^^^
 4887^1^0^0^0^0^0.0000^0.0000^0^^6907:1:1^
 6243^1^0^0^0^0^0.0000^0.0000^0^^^
+11562^8^2^33^34^1443^0.2047^0.8096^8^Drysnap Crawler^6362:1:2,17057:2:2^
+260931^0^1^35^35^0^0.0000^0.0000^0^Clubtoe^^
+261711^6^5^38^39^2548^0.4752^0.5058^6^Empowered Brute^^3771:1:1,5427:1:1,16883:1:1
+262169^5^6^39^41^2548^0.4731^0.5136^5^Twilight Ritualist^4306:2:3,4338:1:2^4544:1:1,5427:1:1
 @i^770^Pointy Crocolisk Tooth
 @i^818^Tigerseye
 @i^929^Healing Potion
 @i^1468^Murloc Fin
+@i^3771^Wild Hog Shank
 @i^3820^Stranglekelp
+@i^4306^Silk Cloth
+@i^4338^Mageweave Cloth
+@i^4544^Mulgore Spice Bread
 @i^4603^Raw Spotted Yellowtail
+@i^5427^Crude Pocket Watch
 @i^5523^Small Barnacled Clam
 @i^5784^Slimy Murloc Scale
 @i^6289^Raw Longjaw Mud Snapper
@@ -36,10 +45,12 @@ GoldScout-export 6^89481ig63s7d^13
 @i^13758^Raw Redgill
 @i^13875^Ironbound Locked Chest
 @i^16882^Battered Junkbox
+@i^16883^Worn Junkbox
 @i^16967^Feralas Ahi
 @i^16968^Sar'theris Striker
 @i^16969^Savage Coast Blue Sailfin
 @i^16970^Misty Reed Mahi Mahi
+@i^17057^Shiny Fish Scales
 @i^17124^Syndicate Emblem
 @i^20708^Tightly Sealed Trunk
 @i^20709^Rumsey Rum Light
@@ -49,8 +60,13 @@ GoldScout-export 6^89481ig63s7d^13
 @q^818^2:7:1
 @q^929^1:0:0
 @q^1468^1:7:1
+@q^3771^1:0:0
 @q^3820^1:7:1
+@q^4306^1:7:1
+@q^4338^1:7:1
+@q^4544^1:0:0
 @q^4603^1:7:1
+@q^5427^0:15:0
 @q^5523^1:7:0
 @q^5784^1:7:1
 @q^6289^1:7:1
@@ -70,10 +86,12 @@ GoldScout-export 6^89481ig63s7d^13
 @q^13758^1:7:1
 @q^13875^1:15:0
 @q^16882^1:15:0
+@q^16883^1:15:0
 @q^16967^1:15:0
 @q^16968^1:12:0
 @q^16969^1:12:0
 @q^16970^1:12:0
+@q^17057^1:15:0
 @q^17124^1:12:0
 @q^20708^1:15:0
 @q^20709^1:0:0
@@ -89,6 +107,7 @@ GoldScout-export 6^89481ig63s7d^13
 @m^1445^Dustwallow Marsh
 @m^1446^Tanaris
 @m^1453^Stormwind City
+@m^2548^Riverglades
 @c^118^
 @c^724^
 @c^733^
@@ -1074,6 +1093,9 @@ GoldScout-export 6^89481ig63s7d^13
 @a^1087^97:1
 @a^2242^172:1
 @a^4401^171:1
+@a^11562^303:2,304:1,324:3,343:2
+@a^261711^189:1,209:5
+@a^262169^189:1,209:4
 @f^1429^0^49^28^6289:15:15,6291:33:33,6292:1:1^246:49
 @f^1433^0^145^93^929:1:1,6289:41:41,6308:100:100,20708:1:1,20709:1:3,251524:1:1^235:1,254:3,255:141
 @f^1434^0^9^225^4603:2:2,6355:1:1,6359:1:1,6362:5:5,16969:2:2^146:9

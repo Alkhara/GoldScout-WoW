@@ -1,4 +1,4 @@
-GoldScout-export 6^beaxopzua781^21
+GoldScout-export 6^beaxopzua781^22
 30^2^0^5^6^1429^0.3900^0.7698^2^Forest Spider^1476:1:1,2590:1:1,5465:2:4^
 36^1^0^11^12^1436^0.3288^0.3477^1^Harvest Golem^732:1:1^
 113^2^0^5^6^1429^0.4135^0.7546^2^Stonetusk Boar^769:1:1,3171:1:1^
@@ -57,7 +57,7 @@ GoldScout-export 6^beaxopzua781^21
 2384^3^0^23^24^1424^0.4503^0.4108^3^Starving Mountain Lion^5136:3:3,5635:1:1^
 2406^5^0^32^33^1416^0.3820^0.8119^5^Mountain Lion^1686:2:2,3731:4:4^
 2407^2^0^33^33^1416^0.3324^0.8459^2^Hulking Mountain Lion^1686:1:1,3731:2:2,5637:1:1^
-2408^6^0^30^31^1416^0.2634^0.4230^6^Snapjaw^3712:2:3,4556:2:2,5524:2:2,6308:2:2^
+2408^11^0^30^31^1416^0.2510^0.4422^11^Snapjaw^3712:4:7,4555:2:2,4556:4:4,5524:4:4,6308:2:2^
 2442^1^0^5^5^1429^0.3747^0.6346^1^Cow^^
 2529^2^0^0^0^0^0.0000^0.0000^0^^3202:1:1,7091:1:1^
 3100^1^0^8^9^1411^0.3711^0.5522^1^Elder Mottled Boar^769:1:1,3171:1:1^
@@ -133,6 +133,21 @@ GoldScout-export 6^beaxopzua781^21
 6243^2^0^0^0^0^0.0000^0.0000^0^^6906:1:1,14177:1:1,273840:1:1^
 8886^2^0^0^0^0^0.0000^0.0000^0^^6443:1:1,6444:1:1^
 12902^2^0^0^0^0^0.0000^0.0000^0^^252814:1:1,273841:1:1,273843:1:1^
+245999^1^0^0^0^1416^0.0000^0.0000^0^^273031:1:1^
+246008^1^0^0^0^1416^0.0000^0.0000^0^^273042:1:1^
+246016^1^0^0^0^1416^0.0000^0.0000^0^^273044:1:1^
+246020^1^0^0^0^1416^0.0000^0.0000^0^^251961:1:1,273051:1:1^
+246664^3^0^0^0^1416^0.0000^0.0000^0^^1827:1:1,1830:1:1,6438:1:1,276160:3:3^
+246888^1^0^0^0^1416^0.0000^0.0000^0^^276158:1:1^
+246890^1^0^0^0^1416^0.0000^0.0000^0^^4633:1:1^
+246990^1^0^0^0^1416^0.0000^0.0000^0^^6438:1:1^
+247001^1^0^0^0^1416^0.0000^0.0000^0^^6439:1:1^
+247003^1^0^0^0^1416^0.0000^0.0000^0^^1754:1:1,6438:1:1,276160:1:1^
+247016^1^0^0^0^1416^0.0000^0.0000^0^^4606:1:1^
+247032^1^0^0^0^1416^0.0000^0.0000^0^^273053:1:1^
+247126^1^0^0^0^1416^0.0000^0.0000^0^^273036:1:1^
+255066^2^0^0^0^1416^0.0000^0.0000^0^^3186:1:1^
+255068^1^0^0^0^1416^0.0000^0.0000^0^^^
 260322^1^0^0^0^0^0.0000^0.0000^0^^273024:1:1^
 260325^1^0^0^0^0^0.0000^0.0000^0^^273027:1:1^
 260326^1^0^0^0^0^0.0000^0.0000^0^^270865:1:1,273029:1:1^
@@ -146,6 +161,7 @@ GoldScout-export 6^beaxopzua781^21
 260804^1^0^0^0^0^0.0000^0.0000^0^^720:1:1^
 260808^1^0^0^0^0^0.0000^0.0000^0^^270180:1:1^
 260810^1^0^0^0^0^0.0000^0.0000^0^^9818:1:1^
+269134^3^0^0^0^1416^0.0000^0.0000^0^^1783:1:1,7356:1:1^
 271334^2^0^25^26^1437^0.6022^0.3492^2^Maddened Rotclaw^5635:1:1,11407:1:1^
 274715^2^0^0^0^0^0.0000^0.0000^0^^770:1:1,3667:2:2,12037:1:1^
 275046^1^0^0^0^0^0.0000^0.0000^0^^^
@@ -182,11 +198,13 @@ GoldScout-export 6^beaxopzua781^21
 @i^1705^Lesser Moonstone
 @i^1752^Linked Chain Shoulderpads
 @i^1753^Linked Chain Vest
+@i^1754^Reinforced Chain Belt
 @i^1768^Canvas Pants
 @i^1772^Brocade Shoes
 @i^1776^Brocade Pants
 @i^1778^Brocade Vest
 @i^1782^Cross-stitched Cloak
+@i^1783^Cross-stitched Gloves
 @i^1789^Patched Leather Bracers
 @i^1795^Rawhide Belt
 @i^1810^Tough Leather Armor
@@ -199,6 +217,7 @@ GoldScout-export 6^beaxopzua781^21
 @i^1824^Shiny War Axe
 @i^1827^Meat Cleaver
 @i^1829^Short Cutlass
+@i^1830^Long Bastard Sword
 @i^1875^Thistlenettle's Badge
 @i^1894^Miners' Union Card
 @i^2072^Dwarven Magestaff of the Falcon
@@ -236,6 +255,7 @@ GoldScout-export 6^beaxopzua781^21
 @i^3175^Ruined Dragonhide
 @i^3180^Flecked Raptor Scale
 @i^3181^Partially Digested Meat
+@i^3186^Viking Sword of Intellect
 @i^3191^Arced War Axe
 @i^3192^Short Bastard Sword of Arcane Protection
 @i^3196^Edged Bastard Sword of the Wolf
@@ -273,6 +293,8 @@ GoldScout-export 6^beaxopzua781^21
 @i^4556^Speckled Shell Fragment
 @i^4561^Scalping Tomahawk of Healing
 @i^4605^Red-speckled Mushroom
+@i^4606^Spongy Morel
+@i^4633^Heavy Bronze Lockbox
 @i^4671^Ancestral Cloak
 @i^4695^Burnished Cloak
 @i^4705^Lambent Scale Pauldrons
@@ -308,6 +330,8 @@ GoldScout-export 6^beaxopzua781^21
 @i^6361^Raw Rainbow Fin Albacore
 @i^6379^Inscribed Leather Belt
 @i^6386^Glimmering Mail Legguards
+@i^6438^Dull Elemental Bracer
+@i^6439^Broken Binding Bracer
 @i^6443^Deviate Hide
 @i^6444^Forked Tongue
 @i^6445^Brittle Molting
@@ -329,6 +353,7 @@ GoldScout-export 6^beaxopzua781^21
 @i^7090^Pattern: Green Silk Armor
 @i^7091^Pattern: Truefaith Gloves
 @i^7351^Disciple's Boots
+@i^7356^Elder's Cloak of the Knight
 @i^7366^Elder's Gloves of the Whale
 @i^8180^Hunting Bow
 @i^8181^Hunting Rifle
@@ -365,6 +390,7 @@ GoldScout-export 6^beaxopzua781^21
 @i^248703^Waylaid Crate: Apprentice Ingots
 @i^248706^Waylaid Crate: Journeyman Ingots
 @i^251346^Plans: Guard's Chain Leggings
+@i^251961^Arcane Mote
 @i^252814^Pattern: Brawler's Leather Helm
 @i^262888^Sealed Journeyman's Writ
 @i^270180^Horrible Rootcore
@@ -372,6 +398,12 @@ GoldScout-export 6^beaxopzua781^21
 @i^273024^Glinteye Slippers
 @i^273027^Raptor's Gaze
 @i^273029^Golemsight Long Gun
+@i^273031^Runemender's Seal
+@i^273036^Graveweave Bindings
+@i^273042^Manascale Treads
+@i^273044^Violet Sorcerer's Robes
+@i^273051^Violet Sorcerer's Mantle
+@i^273053^Tendonscraper Dagger
 @i^273105^Blueprint: Toxin Study
 @i^273456^Cell Keeper's Claws
 @i^273637^Blade of Silverlaine
@@ -384,6 +416,8 @@ GoldScout-export 6^beaxopzua781^21
 @i^273840^Cursed Murloc Eye
 @i^273841^Twilight Maul
 @i^273843^Fallenroot Longbow
+@i^276158^Crystallized Shard
+@i^276160^Mana Fragment
 @i^284845^Thicket Raptor Hide
 @q^422^1:0:0
 @q^555^0:15:0
@@ -418,11 +452,13 @@ GoldScout-export 6^beaxopzua781^21
 @q^1705^2:7:1
 @q^1752^0:4:0
 @q^1753^0:4:0
+@q^1754^0:4:0
 @q^1768^0:4:0
 @q^1772^0:4:0
 @q^1776^0:4:0
 @q^1778^0:4:0
 @q^1782^0:4:0
+@q^1783^0:4:0
 @q^1789^0:4:0
 @q^1795^0:4:0
 @q^1810^0:4:0
@@ -435,6 +471,7 @@ GoldScout-export 6^beaxopzua781^21
 @q^1824^0:2:0
 @q^1827^0:2:0
 @q^1829^0:2:0
+@q^1830^0:2:0
 @q^1875^1:12:0
 @q^1894^1:12:0
 @q^2072^2:2:0
@@ -472,6 +509,7 @@ GoldScout-export 6^beaxopzua781^21
 @q^3175^0:15:0
 @q^3180^0:15:0
 @q^3181^0:15:0
+@q^3186^2:2:0
 @q^3191^3:2:0
 @q^3192^2:2:0
 @q^3196^2:2:0
@@ -509,6 +547,8 @@ GoldScout-export 6^beaxopzua781^21
 @q^4556^0:15:0
 @q^4561^2:2:0
 @q^4605^1:0:0
+@q^4606^1:0:0
+@q^4633^2:15:0
 @q^4671^1:4:0
 @q^4695^2:4:0
 @q^4705^2:4:0
@@ -544,6 +584,8 @@ GoldScout-export 6^beaxopzua781^21
 @q^6361^1:7:1
 @q^6379^2:4:0
 @q^6386^2:4:0
+@q^6438^0:15:0
+@q^6439^0:15:0
 @q^6443^1:12:0
 @q^6444^0:15:0
 @q^6445^0:15:0
@@ -565,6 +607,7 @@ GoldScout-export 6^beaxopzua781^21
 @q^7090^2:9:0
 @q^7091^2:9:0
 @q^7351^1:4:0
+@q^7356^2:4:0
 @q^7366^2:4:0
 @q^8180^2:2:0
 @q^8181^1:2:0
@@ -601,6 +644,7 @@ GoldScout-export 6^beaxopzua781^21
 @q^248703^2:0:1
 @q^248706^2:0:1
 @q^251346^3:9:0
+@q^251961^1:12:0
 @q^252814^3:9:0
 @q^262888^3:0:0
 @q^270180^1:12:0
@@ -608,6 +652,12 @@ GoldScout-export 6^beaxopzua781^21
 @q^273024^3:4:0
 @q^273027^3:4:0
 @q^273029^3:2:0
+@q^273031^3:4:0
+@q^273036^3:4:0
+@q^273042^3:4:0
+@q^273044^3:4:0
+@q^273051^3:4:0
+@q^273053^3:2:0
 @q^273105^2:9:0
 @q^273456^3:2:0
 @q^273637^3:2:0
@@ -620,6 +670,8 @@ GoldScout-export 6^beaxopzua781^21
 @q^273840^3:4:0
 @q^273841^3:2:0
 @q^273843^3:2:0
+@q^276158^0:15:0
+@q^276160^0:15:0
 @q^284845^1:12:0
 @m^1411^Durotar
 @m^1413^The Barrens
@@ -1970,7 +2022,7 @@ GoldScout-export 6^beaxopzua781^21
 @a^2384^128:1,169:1,189:1
 @a^2406^308:1,309:1,326:1,346:2
 @a^2407^326:1,346:1
-@a^2408^126:1,146:1,165:2,184:1,203:1
+@a^2408^126:2,146:1,165:2,184:3,203:2,204:1
 @a^2442^247:1
 @a^3100^227:1
 @a^3122^188:1
