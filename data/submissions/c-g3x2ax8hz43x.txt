@@ -1,4 +1,4 @@
-GoldScout-export 6^g3x2ax8hz43x^13
+GoldScout-export 6^g3x2ax8hz43x^14
 1142^4^0^36^37^1434^0.3711^0.3081^4^Mosh'Ogg Brute^4306:1:2^
 1144^4^0^36^37^1434^0.3628^0.3119^4^Mosh'Ogg Witch Doctor^3771:1:1,4338:1:1^
 1909^1^0^18^19^1421^0.6414^0.4170^1^Vile Fin Lakestalker^^
@@ -24,8 +24,9 @@ GoldScout-export 6^g3x2ax8hz43x^13
 2414^1^0^33^33^1416^0.1671^0.8936^1^Kegan Darkmar^3688:1:1,4306:1:1^
 2415^1^0^33^33^1416^0.1648^0.8914^1^Warden Belamoore^3711:1:1,4306:1:2^
 2667^1^0^36^36^1434^0.3566^0.3148^1^Ward of Laze^^
-3098^10^0^1^2^1411^0.4406^0.6487^10^Mottled Boar^117:2:2,1380:1:1,4865:9:9,7098:4:4^
-3124^15^0^3^3^1411^0.4044^0.6308^15^Scorpid Worker^2654:1:1,4496:1:1,4862:10:10,4867:4:4,7099:4:4,7100:6:6,7101:3:3^
+3098^13^0^1^2^1411^0.4410^0.6412^13^Mottled Boar^117:2:2,1367:1:1,1380:1:1,4865:10:10,7098:6:6^
+3101^12^0^3^4^1411^0.4532^0.5759^12^Vile Familiar^117:1:1,159:1:1,1380:1:1,2589:5:5^
+3124^16^0^3^3^1411^0.4049^0.6339^16^Scorpid Worker^2654:1:1,4496:1:1,4862:10:10,4867:4:4,7099:4:4,7100:7:7,7101:3:3^
 3281^2^0^4^4^1411^0.4061^0.6667^2^Sarkoth^4905:1:1,7100:2:2^
 3816^1^0^18^18^1440^0.1779^0.3071^1^Wild Buck^5566:1:1^
 3823^1^0^19^20^1440^0.2172^0.3030^1^Ghostpaw Runner^1015:1:1^
@@ -76,6 +77,7 @@ GoldScout-export 6^g3x2ax8hz43x^13
 255072^1^0^0^0^1416^0.0000^0.0000^0^^^
 269134^1^0^0^0^1416^0.0000^0.0000^0^^2592:1:1^
 @i^117^Tough Jerky
+@i^159^Refreshing Spring Water
 @i^727^Notched Shortsword of the Monkey
 @i^730^Murloc Eye
 @i^770^Pointy Crocolisk Tooth
@@ -85,6 +87,7 @@ GoldScout-export 6^g3x2ax8hz43x^13
 @i^929^Healing Potion
 @i^1015^Lean Wolf Flank
 @i^1074^Hard Spider Leg Tip
+@i^1367^Ragged Leather Boots
 @i^1380^Frayed Robe
 @i^1477^Scroll of Agility II
 @i^1705^Lesser Moonstone
@@ -93,6 +96,7 @@ GoldScout-export 6^g3x2ax8hz43x^13
 @i^1804^Tough Leather Boots
 @i^1827^Meat Cleaver
 @i^2215^Wooden Shield
+@i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2632^Curved Dagger of Magic
 @i^2654^Flimsy Chain Pants
@@ -208,6 +212,7 @@ GoldScout-export 6^g3x2ax8hz43x^13
 @i^276158^Crystallized Shard
 @i^276160^Mana Fragment
 @q^117^1:0:0
+@q^159^1:0:0
 @q^727^2:2:0
 @q^730^1:7:1
 @q^770^0:15:0
@@ -217,6 +222,7 @@ GoldScout-export 6^g3x2ax8hz43x^13
 @q^929^1:0:0
 @q^1015^1:7:1
 @q^1074^0:15:0
+@q^1367^0:4:0
 @q^1380^0:4:0
 @q^1477^1:0:0
 @q^1705^2:7:1
@@ -225,6 +231,7 @@ GoldScout-export 6^g3x2ax8hz43x^13
 @q^1804^0:4:0
 @q^1827^0:2:0
 @q^2215^0:4:0
+@q^2589^1:7:1
 @q^2592^1:7:1
 @q^2632^2:2:0
 @q^2654^0:4:0
@@ -1069,8 +1076,9 @@ GoldScout-export 6^g3x2ax8hz43x^13
 @a^2414^343:1
 @a^2415^343:1
 @a^2667^127:1
-@a^3098^248:6,268:4
-@a^3124^247:5,248:9,268:1
+@a^3098^248:9,268:4
+@a^3101^228:4,229:8
+@a^3124^247:5,248:9,268:2
 @a^3281^268:2
 @a^3816^123:1
 @a^3823^124:1

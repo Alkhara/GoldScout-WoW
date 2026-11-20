@@ -1,4 +1,4 @@
-GoldScout-export 6^dtjki98w2qt2^10
+GoldScout-export 6^dtjki98w2qt2^11
 441^1^0^18^18^1433^0.1072^0.7272^1^Cría de dragón negro^^
 690^1^0^39^39^1434^0.3692^0.4249^1^Basilisco Ojogélido^1701:1:1,2476:1:1^
 755^6^0^34^35^1435^0.2531^0.4398^6^Rondafango perdido^3771:1:1,3792:1:1,4306:2:3,4338:1:1^
@@ -22,6 +22,10 @@ GoldScout-export 6^dtjki98w2qt2^10
 2022^4^0^5^6^1438^0.5670^0.6800^4^Brezomadera^^
 2042^3^0^5^6^1438^0.5408^0.6333^3^Sable de la Noche^4814:3:3^
 2580^1^0^38^38^1417^0.1499^0.6814^1^Águila ratonera Mesa^5116:1:1,11418:1:1,213544:1:1^
+4362^1^0^36^36^1445^0.5400^0.1236^1^Correcostas Mirefín^17058:1:1^
+4363^1^0^37^38^1445^0.6350^0.1737^1^Oráculo Ancalodo^^
+4396^7^0^36^37^1445^0.6193^0.1977^7^Tortuga Fangorroca^4555:2:2,4556:1:1,6362:1:2^
+4397^8^0^37^38^1445^0.6300^0.2468^8^Caparapico Fangorroca^3712:4:4,4555:5:5,4556:3:3,5883:3:3^
 5043^4^0^20^20^1453^0.5179^0.6888^4^Alborotador Defias^^
 6128^1^0^10^10^1438^0.4729^0.6361^1^Vorlus Pezuñavil^6805:1:1^
 251096^1^0^33^33^1417^0.1490^0.6806^1^Espíritu amargo^^
@@ -45,19 +49,24 @@ GoldScout-export 6^dtjki98w2qt2^10
 @i^2592^Paño de lana
 @i^2783^Trabuco de pésima calidad
 @i^3640^Cabeza de Furiahonda
+@i^3712^Carne de tortuga
 @i^3771^Pata de cero salvaje
 @i^3792^Cinturón entrelazado
 @i^3817^Rodela reforzada
 @i^4306^Paño de seda
 @i^4338^Tela de paño mágico
+@i^4555^Cola escamada espesa
+@i^4556^Fragmento de concha moteada
 @i^4585^Mandíbula de araña chorreando
 @i^4603^Serviola moteada cruda
 @i^4607^Moho de cueva delicado
 @i^4814^Colmillo descolorido
 @i^5116^Pluma de cola larga
 @i^5465^Pata de araña pequeña
+@i^5883^Lengua Fangorroca bípeda
 @i^6065^Ensayos sobre convergencia dimensional de Khadgar
 @i^6358^Bocanegra graso
+@i^6359^Pargo de Fuego
 @i^6362^Bacalao Piedrescama crudo
 @i^6586^Guantes de exploración del águila
 @i^6805^Cuerno de Vorlus
@@ -67,6 +76,8 @@ GoldScout-export 6^dtjki98w2qt2^10
 @i^10285^Seda de las Sombras
 @i^11418^Hueso hueco de ala
 @i^15269^Hacha de batalla maciza de protección Arcana
+@i^17058^Aceite de pescado
+@i^21150^Baúl recubierto de hierro
 @i^213544^Pergamino: OFELTA DE IKOZAS
 @i^248688^Cajón saqueado: textiles de oficial
 @i^248689^Cajón saqueado: curiosidades de oficial
@@ -97,19 +108,24 @@ GoldScout-export 6^dtjki98w2qt2^10
 @q^2592^1:7:1
 @q^2783^0:2:0
 @q^3640^1:12:0
+@q^3712^1:7:1
 @q^3771^1:0:0
 @q^3792^0:4:0
 @q^3817^0:4:0
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4555^0:15:0
+@q^4556^0:15:0
 @q^4585^0:15:0
 @q^4603^1:7:1
 @q^4607^1:0:0
 @q^4814^0:15:0
 @q^5116^1:7:1
 @q^5465^1:7:1
+@q^5883^1:12:0
 @q^6065^1:12:0
 @q^6358^1:7:1
+@q^6359^1:7:1
 @q^6362^1:7:1
 @q^6586^2:4:0
 @q^6805^1:12:0
@@ -119,6 +135,8 @@ GoldScout-export 6^dtjki98w2qt2^10
 @q^10285^1:7:1
 @q^11418^0:15:0
 @q^15269^2:2:0
+@q^17058^1:15:0
+@q^21150^1:15:0
 @q^213544^1:0:0
 @q^248688^1:0:1
 @q^248689^1:0:1
@@ -132,6 +150,7 @@ GoldScout-export 6^dtjki98w2qt2^10
 @q^274092^3:2:0
 @q^281023^1:12:0
 @q^286017^1:12:0
+@m^1413^Los Baldíos
 @m^1417^Tierras Altas de Arathi
 @m^1433^Montañas Crestagrana
 @m^1434^Vega de Tuercespina
@@ -1479,11 +1498,16 @@ GoldScout-export 6^dtjki98w2qt2^10
 @a^2022^270:1,271:2,291:1
 @a^2042^250:2,270:1
 @a^2580^262:1
+@a^4362^50:1
+@a^4363^72:1
+@a^4396^50:1,51:1,72:2,92:1,112:1,113:1
+@a^4397^50:1,72:1,92:1,112:1,113:3,152:1
 @a^5043^270:4
 @a^6128^249:1
 @a^251096^262:1
 @a^272096^169:1,189:2
 @a^272116^170:1
 @a^275703^271:1,291:1
-@f^1445^0^25^139^4603:5:5,6358:2:2,6362:18:18^213:5,233:20
+@f^1413^0^6^180^6358:5:5,21150:1:1^232:6
+@f^1445^0^161^139^4603:27:27,6358:23:23,6359:21:21,6362:90:90^213:141,233:20
 @l^0^esES

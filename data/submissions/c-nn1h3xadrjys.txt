@@ -1,4 +1,4 @@
-GoldScout-export 5^nn1h3xadrjys^17
+GoldScout-export 5^nn1h3xadrjys^18
 117^1^0^11^11^1436^0.4078^0.2213^1^Riverpaw Gnoll^2287:1:1,2589:1:2,9761:1:1^
 157^1^0^14^14^1436^0.3538^0.7987^1^Goretusk^731:1:1,769:1:2^
 232^2^0^23^23^1424^0.3360^0.3501^2^Farmer Ray^1485:1:1,4538:2:2^
@@ -45,11 +45,14 @@ GoldScout-export 5^nn1h3xadrjys^17
 3112^1^0^7^8^1411^0.4756^0.4831^1^Razormane Scout^^
 3122^1^0^7^7^1411^0.5471^0.3750^1^Bloodtalon Taillasher^4878:1:1^
 3125^2^0^5^6^1411^0.5421^0.5547^2^Clattering Scorpid^5466:1:1^
+3234^1^0^15^15^1413^0.4196^0.3022^1^Lost Barrens Kodo^4780:1:1^
 3235^1^0^24^24^1413^0.4494^0.7458^1^Greater Barrens Kodo^^
 3237^1^0^25^25^1413^0.4499^0.7458^1^Wooly Kodo^5122:1:1^
 3238^7^0^22^23^1413^0.4525^0.7640^7^Stormhide^5133:2:2,5470:1:1^
+3246^1^0^12^12^1413^0.4257^0.3017^1^Fleeting Plainstrider^17056:1:1^
 3249^3^0^23^24^1413^0.4564^0.7796^3^Greater Thunderhawk^^
 3252^2^0^21^22^1413^0.4450^0.7151^2^Silithid Swarmer^5268:2:2,5269:1:1^
+3255^3^0^13^15^1413^0.4089^0.3128^3^Sunscale Screecher^5123:1:1^
 3374^17^0^21^22^1413^0.4761^0.8491^17^Bael'dun Excavator^1818:1:1,2589:1:1,2592:1:1,2765:1:1,4542:1:1,9767:1:1^
 3375^5^0^22^23^1413^0.4784^0.8504^5^Bael'dun Foreman^1774:1:1,2589:1:2,2592:2:3,4306:1:1^
 3376^6^0^23^24^1413^0.4908^0.8385^6^Bael'dun Soldier^1819:1:1,4542:1:1,5017:1:1,5018:2:2,5019:4:4^
@@ -70,6 +73,7 @@ GoldScout-export 5^nn1h3xadrjys^17
 4006^2^0^19^20^1442^0.5412^0.7139^2^Deepmoss Webspinner^^
 4070^1^0^21^21^1442^0.6340^0.4071^1^Venture Co. Builder^210188:1:1^
 4073^1^0^23^23^1442^0.6535^0.4825^1^XT 4^4377:1:1^
+4127^1^0^15^15^1413^0.3958^0.3111^1^Hecklefang Hyena^^
 4128^7^0^22^23^1413^0.4607^0.7688^7^Hecklefang Stalker^3301:3:3,14567:1:1^
 4196^7^0^21^22^1413^0.4433^0.7130^7^Silithid Swarm^^
 4202^1^0^27^27^1442^0.6271^0.4014^1^Gerenzo Wrenchwhistle^5736:1:1^
@@ -133,6 +137,7 @@ GoldScout-export 5^nn1h3xadrjys^17
 @i^4538^Snapvine Watermelon
 @i^4542^Moist Cornbread
 @i^4775^Cracked Bill
+@i^4780^Kodo Horn Fragment
 @i^4878^Broken Bloodstained Bow
 @i^5006^Khazgorm's Journal
 @i^5017^Nitroglycerin
@@ -144,6 +149,7 @@ GoldScout-export 5^nn1h3xadrjys^17
 @i^5094^Razormane War Shield
 @i^5103^Washte Pawne's Feather
 @i^5122^Thick Kodo Hair
+@i^5123^Steel Arrowhead
 @i^5133^Seeping Gizzard
 @i^5135^Thin Black Claw
 @i^5136^Torn Furry Ear
@@ -166,6 +172,7 @@ GoldScout-export 5^nn1h3xadrjys^17
 @i^14567^Bristlebark Belt
 @i^15472^Charger's Belt
 @i^16192^Besseleth's Fang
+@i^17056^Light Feather
 @i^210188^Shredded Work Order
 @i^248688^Waylaid Crate: Journeyman Textiles
 @i^271343^Note Scrap
@@ -225,6 +232,7 @@ GoldScout-export 5^nn1h3xadrjys^17
 @q^4538^1:0:0
 @q^4542^1:0:0
 @q^4775^0:15:0
+@q^4780^0:15:0
 @q^4878^0:15:0
 @q^5006^1:12:0
 @q^5017^1:12:0
@@ -236,6 +244,7 @@ GoldScout-export 5^nn1h3xadrjys^17
 @q^5094^1:4:0
 @q^5103^1:12:0
 @q^5122^0:15:0
+@q^5123^0:15:0
 @q^5133^0:15:0
 @q^5135^0:15:0
 @q^5136^0:15:0
@@ -258,6 +267,7 @@ GoldScout-export 5^nn1h3xadrjys^17
 @q^14567^2:4:0
 @q^15472^1:4:0
 @q^16192^1:12:0
+@q^17056^1:15:1
 @q^210188^0:15:0
 @q^248688^1:0:1
 @q^271343^1:15:0
@@ -1121,11 +1131,14 @@ GoldScout-export 5^nn1h3xadrjys^17
 @a^3112^189:1
 @a^3122^150:1
 @a^3125^210:1,230:1
+@a^3234^128:1
 @a^3235^288:1
 @a^3237^288:1
 @a^3238^288:1,289:1,308:1,309:4
+@a^3246^128:1
 @a^3249^308:1,309:2
 @a^3252^288:1,289:1
+@a^3255^127:1,128:2
 @a^3374^329:9,349:8
 @a^3375^329:3,349:2
 @a^3376^329:6
@@ -1145,6 +1158,7 @@ GoldScout-export 5^nn1h3xadrjys^17
 @a^4006^290:2
 @a^4070^172:1
 @a^4073^193:1
+@a^4127^127:1
 @a^4128^288:1,309:6
 @a^4196^268:1,288:3,289:3
 @a^4202^172:1
