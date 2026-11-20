@@ -1,4 +1,4 @@
-GoldScout-export 6^uftyjoej44ul^27
+GoldScout-export 6^uftyjoej44ul^29
 1536^3^0^7^8^1420^0.5002^0.6730^3^Scarlet Missionary^2070:1:1,2589:1:2,2648:1:1,3013:1:1^
 1537^8^0^8^9^1420^0.5210^0.6734^8^Scarlet Zealot^2070:1:1,2140:1:1,2589:1:1^
 1545^1^0^10^10^1420^0.2690^0.4313^1^Vile Fin Muckdweller^^
@@ -12,10 +12,10 @@ GoldScout-export 6^uftyjoej44ul^27
 1770^3^0^11^12^1421^0.5067^0.2708^3^Moonrage Darkrunner^1179:1:1^
 1772^2^0^11^12^1421^0.4626^0.2137^2^Rot Hide Gladerunner^2589:1:2^
 1778^3^0^11^12^1421^0.5028^0.2300^3^Ferocious Grizzled Bear^3169:1:1,3173:1:1^
-1779^3^0^12^13^1421^0.5012^0.2200^3^Moonrage Glutton^1497:1:1,1510:1:1^
-1780^7^0^12^13^1421^0.3579^0.1468^7^Moss Stalker^3167:3:3,3174:2:2,3254:5:5,5465:4:5,9764:1:1^
-1782^1^0^14^14^1421^0.4629^0.2957^1^Moonrage Darksoul^^
-1797^8^0^12^13^1421^0.3955^0.1642^8^Giant Grizzled Bear^2940:1:1,3169:1:1,3170:1:1,3173:3:3,3253:2:2,5635:1:1^
+1779^10^0^12^13^1421^0.4309^0.2492^10^Moonrage Glutton^1497:1:1,1510:2:2,2287:1:1,3156:2:2^
+1780^13^0^12^13^1421^0.3569^0.1444^13^Moss Stalker^3167:3:3,3174:4:4,3254:6:6,5465:8:11,9764:1:1^
+1782^4^0^13^14^1421^0.4098^0.2746^4^Moonrage Darksoul^1515:1:1,3157:2:2,6539:1:1^
+1797^15^0^12^13^1421^0.3920^0.1622^15^Giant Grizzled Bear^2940:2:2,3169:4:4,3170:4:4,3173:7:7,3253:6:6,5635:1:1^
 1866^2^0^11^12^1421^0.5358^0.1346^2^Ravenclaw Slave^2589:1:1^
 1983^1^0^14^14^1421^0.4633^0.2199^1^Nightlash^3622:1:1^
 2267^4^0^24^25^1424^0.3050^0.4215^4^Hillsbrad Peasant^^
@@ -172,6 +172,7 @@ GoldScout-export 6^uftyjoej44ul^27
 @i^1510^Heavy Hammer
 @i^1511^Commoner's Sword
 @i^1513^Old Greatsword
+@i^1515^Rough Wooden Staff
 @i^1731^Worn Mail Boots
 @i^1734^Worn Mail Gloves
 @i^1751^Linked Chain Pants
@@ -201,6 +202,8 @@ GoldScout-export 6^uftyjoej44ul^27
 @i^2940^Bloody Bear Paw
 @i^2972^Spellbinder Gloves
 @i^3013^Scroll of Protection
+@i^3156^Glutton Shackle
+@i^3157^Darksoul Shackle
 @i^3164^Discolored Worg Heart
 @i^3167^Thick Spider Hair
 @i^3169^Chipped Bear Tooth
@@ -274,6 +277,7 @@ GoldScout-export 6^uftyjoej44ul^27
 @i^6308^Raw Bristle Whisker Catfish
 @i^6359^Firefin Snapper
 @i^6515^Disciple's Gloves
+@i^6539^Willow Belt of Magic
 @i^6573^Defender Boots of Spirit
 @i^6602^Dervish Bracers of the Owl
 @i^6611^Sage's Sash of Spirit
@@ -358,6 +362,7 @@ GoldScout-export 6^uftyjoej44ul^27
 @q^1510^0:2:0
 @q^1511^0:2:0
 @q^1513^0:2:0
+@q^1515^0:2:0
 @q^1731^0:4:0
 @q^1734^0:4:0
 @q^1751^0:4:0
@@ -387,6 +392,8 @@ GoldScout-export 6^uftyjoej44ul^27
 @q^2940^0:15:0
 @q^2972^1:4:0
 @q^3013^1:0:0
+@q^3156^1:12:0
+@q^3157^1:12:0
 @q^3164^1:12:0
 @q^3167^0:15:0
 @q^3169^0:15:0
@@ -460,6 +467,7 @@ GoldScout-export 6^uftyjoej44ul^27
 @q^6308^1:7:1
 @q^6359^1:7:1
 @q^6515^1:4:0
+@q^6539^2:4:0
 @q^6573^2:4:0
 @q^6602^2:4:0
 @q^6611^2:4:0
@@ -2372,10 +2380,10 @@ GoldScout-export 6^uftyjoej44ul^27
 @a^1770^109:1,110:2
 @a^1772^89:2
 @a^1778^70:1,89:1,109:1
-@a^1779^70:1,90:1,109:1
-@a^1780^46:1,47:4,67:2
-@a^1782^109:1
-@a^1797^46:1,47:2,67:1,68:4
+@a^1779^70:1,87:1,88:1,90:1,107:3,108:2,109:1
+@a^1780^46:1,47:10,67:2
+@a^1782^107:2,108:1,109:1
+@a^1797^46:1,47:6,67:3,68:5
 @a^1866^50:2
 @a^1983^89:1
 @a^2267^165:1,166:3
