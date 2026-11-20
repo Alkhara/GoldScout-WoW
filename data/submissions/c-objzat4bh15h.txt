@@ -1,4 +1,4 @@
-GoldScout-export 5^objzat4bh15h^10
+GoldScout-export 5^objzat4bh15h^11
 587^1^0^33^33^1434^0.3305^0.1594^1^Bloodscalp Warrior^^
 588^9^0^34^35^1434^0.2500^0.1190^9^Bloodscalp Scout^2735:1:1,3793:1:1,3795:1:1,3799:1:1,3915:2:2,4306:3:6^
 595^6^0^34^35^1434^0.2600^0.1221^6^Bloodscalp Hunter^2735:1:1,3805:1:1,3901:1:1,3915:2:2,4306:2:4^
@@ -37,6 +37,7 @@ GoldScout-export 5^objzat4bh15h^10
 2387^2^0^25^26^1424^0.2968^0.4218^2^Hillsbrad Councilman^2592:1:2^
 2406^2^0^32^33^1416^0.3008^0.7479^2^Mountain Lion^1686:1:1,3731:1:1^
 2411^1^0^33^33^1416^0.1958^0.8987^1^Ricter^4306:1:1^
+2955^10^0^1^2^1412^0.4724^0.7935^10^Plainstrider^1369:1:1,1378:1:1,4739:6:6,4740:6:6,4757:6:6,7096:4:4,7097:1:1^
 4420^1^0^0^0^0^0.0000^0.0000^0^^^
 4421^1^0^0^0^0^0.0000^0.0000^0^^^
 4424^1^0^0^0^0^0.0000^0.0000^0^^^
@@ -77,6 +78,8 @@ GoldScout-export 5^objzat4bh15h^10
 7800^1^0^0^0^0^0.0000^0.0000^0^^^
 @i^785^Mageroyal
 @i^929^Healing Potion
+@i^1369^Ragged Leather Belt
+@i^1378^Frayed Pants
 @i^1478^Scroll of Protection II
 @i^1519^Bloodscalp Ear
 @i^1520^Troll Sweat
@@ -132,8 +135,13 @@ GoldScout-export 5^objzat4bh15h^10
 @i^4461^Raptor Hide
 @i^4542^Moist Cornbread
 @i^4586^Smooth Raptor Skin
+@i^4739^Plainstrider Meat
+@i^4740^Plainstrider Feather
+@i^4757^Cracked Egg Shells
 @i^5113^Mark of the Syndicate
 @i^5637^Large Fang
+@i^7096^Plucked Feather
+@i^7097^Leg Meat
 @i^8146^Wicked Claw
 @i^9308^Grime-Encrusted Object
 @i^9451^Bubbling Water
@@ -147,6 +155,8 @@ GoldScout-export 5^objzat4bh15h^10
 @i^277957^Primitive Key
 @q^785^1:7:1
 @q^929^1:0:0
+@q^1369^0:4:0
+@q^1378^0:4:0
 @q^1478^1:0:0
 @q^1519^1:12:0
 @q^1520^0:15:0
@@ -202,8 +212,13 @@ GoldScout-export 5^objzat4bh15h^10
 @q^4461^1:7:1
 @q^4542^1:0:0
 @q^4586^0:15:0
+@q^4739^1:12:0
+@q^4740^1:12:0
+@q^4757^0:15:0
 @q^5113^0:15:0
 @q^5637^1:7:1
+@q^7096^0:15:0
+@q^7097^1:0:0
 @q^8146^1:7:1
 @q^9308^1:12:0
 @q^9451^1:0:0
@@ -215,6 +230,7 @@ GoldScout-export 5^objzat4bh15h^10
 @q^12202^1:7:1
 @q^248688^1:0:1
 @q^277957^1:12:0
+@m^1412^Mulgore
 @m^1413^The Barrens
 @m^1416^Alterac Mountains
 @m^1424^Hillsbrad Foothills
@@ -257,5 +273,6 @@ GoldScout-export 5^objzat4bh15h^10
 @a^2387^165:2
 @a^2406^265:1,306:1
 @a^2411^343:1
+@a^2955^309:9,329:1
 @a^6132^368:1
 @l^0^enUS
