@@ -1,4 +1,4 @@
-GoldScout-export 5^xmbtg5aos5ot^6
+GoldScout-export 5^xmbtg5aos5ot^7
 1913^1^0^16^16^1421^0.6351^0.6314^1^Garde de Dalaran^^
 7032^1^0^56^56^1428^0.3753^0.6437^1^Grand élémentaire d'obsidienne^4784:1:1,7076:1:1^
 8096^5^0^40^40^1436^0.5262^0.5359^5^Protecteur du Peuple^^
@@ -54,7 +54,9 @@ GoldScout-export 5^xmbtg5aos5ot^6
 269111^1^0^0^0^0^0.0000^0.0000^0^^280077:1:1^
 272307^1^0^55^55^1447^0.3595^0.2632^1^Satyre legashi^11990:1:1^
 @i^537^Ecaille de Furie terne
+@i^929^Potion de soins
 @i^1074^Patte d'araignée
+@i^2881^Plans : Cuirasse runique en cuivre
 @i^3951^Gilet sergé
 @i^3976^Armure en cuir lisse
 @i^3995^Cape en écailles laminées
@@ -67,6 +69,7 @@ GoldScout-export 5^xmbtg5aos5ot^6
 @i^6292^Lutjan de 10 livres
 @i^6294^Lutjan de 12 livres
 @i^6308^Poisson-chat moustachu cru
+@i^6309^Poisson-chat de 17 livres
 @i^6530^Asticots
 @i^7076^Essence de terre
 @i^7972^Ichor de non-mort
@@ -123,7 +126,9 @@ GoldScout-export 5^xmbtg5aos5ot^6
 @i^286415^Reliquaire de Tyr
 @i^287036^Toucher du satyre
 @q^537^0:15:0
+@q^929^1:0:0
 @q^1074^0:15:0
+@q^2881^2:9:0
 @q^3951^0:4:0
 @q^3976^0:4:0
 @q^3995^0:4:0
@@ -136,6 +141,7 @@ GoldScout-export 5^xmbtg5aos5ot^6
 @q^6292^1:15:0
 @q^6294^1:15:0
 @q^6308^1:7:1
+@q^6309^1:15:0
 @q^6530^1:0:0
 @q^7076^2:7:1
 @q^7972^1:7:1
@@ -905,6 +911,6 @@ GoldScout-export 5^xmbtg5aos5ot^6
 @a^255394^127:1
 @a^272307^107:1
 @f^1412^0^76^1^6289:32:32,6291:42:42,6292:1:1,6294:1:1^229:76
-@f^1442^0^56^130^6289:15:15,6308:41:41^229:48,249:8
+@f^1442^0^315^130^929:1:1,2881:1:1,6289:106:106,6308:205:205,6309:2:2^229:48,249:267
 @f^1456^0^108^75^6289:63:63,6291:16:16,6308:29:29^247:108
 @l^0^frFR

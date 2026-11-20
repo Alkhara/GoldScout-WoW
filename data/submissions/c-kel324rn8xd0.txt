@@ -1,6 +1,8 @@
-GoldScout-export 5^kel324rn8xd0^5
-833^10^0^11^12^1436^0.5679^0.2796^10^Coyote Packleader^2673:2:2,2698:1:1,3299:1:1,3300:3:3^
-834^41^0^10^11^1436^0.6002^0.2740^41^Coyote^2673:13:13,3299:14:14,3300:2:2,6518:1:1^
+GoldScout-export 5^kel324rn8xd0^6
+199^1^0^10^11^1436^0.6179^0.2886^1^Young Fleshripper^6889:1:1,7097:1:1,17056:1:1^
+428^8^0^18^19^1433^0.5213^0.7638^8^Dire Condor^1080:1:1,1464:1:1,4775:2:2,5115:2:2,6889:2:2,17056:2:2,250188:1:1^
+833^34^0^11^12^1436^0.6007^0.3223^34^Coyote Packleader^2673:10:10,2698:1:1,3299:9:9,3300:7:7,9765:1:1,211787:1:1^
+834^133^0^10^11^1436^0.6002^0.2716^133^Coyote^774:2:2,828:1:1,2140:1:1,2673:50:50,3299:42:42,3300:12:12,5635:1:1,6514:1:1,6518:1:1,7108:1:1,8180:1:1^
 1912^1^0^15^15^1421^0.6186^0.6335^1^Dalaran Protector^1514:1:1^
 2271^5^0^31^32^1416^0.1836^0.8832^5^Dalaran Shield Guard^1708:1:1^
 2272^1^0^32^33^1416^0.1856^0.8804^1^Dalaran Theurgist^4306:1:2^
@@ -45,6 +47,10 @@ GoldScout-export 5^kel324rn8xd0^5
 274715^1^0^0^0^0^0.0000^0.0000^0^^770:1:1,3667:1:1^
 275046^1^0^0^0^0^0.0000^0.0000^0^^284844:1:1^
 @i^770^Pointy Crocolisk Tooth
+@i^774^Malachite
+@i^828^Small Blue Pouch
+@i^1080^Tough Condor Meat
+@i^1464^Buzzard Talon
 @i^1514^Rusty Warhammer
 @i^1697^Keen Raptor Tooth
 @i^1708^Sweet Nectar
@@ -54,6 +60,7 @@ GoldScout-export 5^kel324rn8xd0^5
 @i^1827^Meat Cleaver
 @i^1829^Short Cutlass
 @i^1830^Long Bastard Sword
+@i^2140^Carving Knife of the Whale
 @i^2592^Wool Cloth
 @i^2673^Coyote Meat
 @i^2698^Recipe: Cooked Crab Claw
@@ -78,20 +85,32 @@ GoldScout-export 5^kel324rn8xd0^5
 @i^4711^Glimmering Cloak
 @i^4716^Combat Cloak
 @i^4722^Insignia Cloak
+@i^4775^Cracked Bill
 @i^4784^Lifeless Stone
 @i^5104^Heart of Isha Awak
+@i^5115^Broken Wishbone
 @i^5516^Threshadon Fang
+@i^5635^Sharp Claw
 @i^6395^Silver-thread Amice
 @i^6438^Dull Elemental Bracer
+@i^6514^Disciple's Cloak
 @i^6518^Pioneer Boots
+@i^6889^Small Egg
+@i^7097^Leg Meat
+@i^7108^Infantry Shield of the Owl
 @i^7419^Phalanx Cloak of the Whale
+@i^8180^Hunting Bow
 @i^8184^Firestarter
+@i^9765^Cadet Vest of Power
 @i^9800^Ivy Orb of the Owl
 @i^9822^Durable Cape of Agility
 @i^12037^Mystery Meat
 @i^15513^Grunt's Pauldrons of Fire Protection
+@i^17056^Light Feather
 @i^17057^Shiny Fish Scales
+@i^211787^Scroll: LOWER PING WHOMEVER
 @i^248705^Waylaid Crate: Journeyman Fabrics
+@i^250188^Recipe: Breakfast Omelette
 @i^251961^Arcane Mote
 @i^270866^Titan Relic
 @i^271100^Thicket Raptor Meat
@@ -111,6 +130,10 @@ GoldScout-export 5^kel324rn8xd0^5
 @i^284844^Dragonmaw Dispatch
 @i^286987^Violet Sorcerer's Sandals
 @q^770^0:15:0
+@q^774^2:7:1
+@q^828^1:1:0
+@q^1080^1:7:1
+@q^1464^0:15:0
 @q^1514^0:2:0
 @q^1697^0:15:0
 @q^1708^1:0:0
@@ -120,6 +143,7 @@ GoldScout-export 5^kel324rn8xd0^5
 @q^1827^0:2:0
 @q^1829^0:2:0
 @q^1830^0:2:0
+@q^2140^2:2:0
 @q^2592^1:7:1
 @q^2673^1:7:1
 @q^2698^1:9:0
@@ -144,20 +168,32 @@ GoldScout-export 5^kel324rn8xd0^5
 @q^4711^2:4:0
 @q^4716^2:4:0
 @q^4722^2:4:0
+@q^4775^0:15:0
 @q^4784^0:15:0
 @q^5104^1:12:0
+@q^5115^0:15:0
 @q^5516^0:2:0
+@q^5635^1:7:1
 @q^6395^2:4:0
 @q^6438^0:15:0
+@q^6514^1:4:0
 @q^6518^1:4:0
+@q^6889^1:7:1
+@q^7097^1:0:0
+@q^7108^2:4:0
 @q^7419^2:4:0
+@q^8180^2:2:0
 @q^8184^2:2:0
+@q^9765^2:4:0
 @q^9800^2:4:0
 @q^9822^2:4:0
 @q^12037^1:7:1
 @q^15513^2:4:0
+@q^17056^1:15:1
 @q^17057^1:15:0
+@q^211787^1:0:0
 @q^248705^2:0:1
+@q^250188^1:9:0
 @q^251961^1:12:0
 @q^270866^1:12:0
 @q^271100^1:12:0
@@ -179,6 +215,7 @@ GoldScout-export 5^kel324rn8xd0^5
 @m^1413^The Barrens
 @m^1416^Alterac Mountains
 @m^1421^Silverpine Forest
+@m^1433^Redridge Mountains
 @m^1436^Westfall
 @m^1441^Thousand Needles
 @c^118^
@@ -872,8 +909,10 @@ GoldScout-export 5^kel324rn8xd0^5
 @c^285280^
 @c^285281^
 @c^286152^
-@a^833^89:2,92:1,110:1,112:1,131:3,132:1,152:1
-@a^834^89:2,90:1,91:2,92:9,110:1,111:4,112:11,131:1,132:9,152:1
+@a^199^112:1
+@a^428^289:1,308:1,309:1,310:2,311:3
+@a^833^89:2,91:1,92:3,110:1,112:5,131:4,132:3,151:2,152:9,172:4
+@a^834^51:5,70:2,71:10,89:2,90:6,91:8,92:25,110:1,111:9,112:21,131:4,132:18,151:2,152:15,172:5
 @a^1912^252:1
 @a^2271^343:5
 @a^2272^343:1

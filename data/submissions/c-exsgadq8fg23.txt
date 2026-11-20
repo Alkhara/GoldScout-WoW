@@ -1,4 +1,4 @@
-GoldScout-export 5^exsgadq8fg23^10
+GoldScout-export 5^exsgadq8fg23^11
 597^4^0^36^37^1434^0.2337^0.0965^4^Berserker Bloodscalp^^
 660^3^0^37^37^1434^0.2349^0.0920^3^Sorcier-docteur Bloodscalp^15260:1:1^
 669^5^0^41^42^1434^0.4517^0.4112^5^Chasseur Skullsplitter^1520:2:2^
@@ -104,9 +104,12 @@ GoldScout-export 5^exsgadq8fg23^10
 5990^17^0^47^48^1419^0.6073^0.2891^17^Basilic Rougepierre^4092:5:5,4093:7:7,8146:3:3,8394:6:6,11386:6:6,11387:2:2^
 5991^3^0^51^52^1419^0.5148^0.3600^3^Peau de cristal Rougepierre^8394:2:2^
 5992^20^0^48^49^1419^0.6068^0.2851^20^Sanglier cendré^2295:5:5,3403:6:6,8392:8:8^
-6505^1^0^48^48^1449^0.6483^0.6269^1^Ravasaure^11018:1:1,11477:1:1,20015:1:1^
-6506^1^0^49^50^1449^0.6806^0.6671^1^Ravasaure coureur^^
+6505^10^0^48^49^1449^0.6424^0.6349^10^Ravasaure^4587:3:3,4588:1:1,8146:1:1,11018:1:1,11116:1:1,11477:4:4,12184:5:5,20015:1:1,280459:1:1^
+6506^2^0^49^50^1449^0.6678^0.6480^2^Ravasaure coureur^12184:1:1,20015:1:1^
+6507^5^0^49^50^1449^0.6327^0.5562^5^Ravasaure chasseur^4587:2:2,11018:3:3,11477:2:2,12184:1:1^
+6508^4^0^50^51^1449^0.6677^0.5509^4^Ravasaure peau-de-venin^4587:2:2,4588:1:1,11018:2:2,11477:2:2,12184:2:2^
 6519^1^0^53^54^1449^0.4633^0.1990^1^Seigneur du goudron^^
+6556^1^0^49^49^1449^0.7375^0.5510^1^Limon de mucus^^
 7584^3^0^44^45^1444^0.7541^0.3964^3^Marcheur des bois errant^9590:2:2^
 7725^1^0^42^42^1444^0.6819^0.4783^1^Ecumeur du Totem sinistre^4338:1:1^
 7765^1^0^45^45^1444^0.4235^0.2182^1^Croque-roc^^
@@ -200,6 +203,7 @@ GoldScout-export 5^exsgadq8fg23^10
 @i^4585^Mandibule d'araignée visqueuse
 @i^4586^Peau lisse de raptor
 @i^4587^Plumes de raptor tribales
+@i^4588^Crâne de raptor en parfait état
 @i^4589^Longue plume élégante
 @i^4590^Bec jaune incurvé
 @i^4591^Oeil d'aigle
@@ -246,6 +250,7 @@ GoldScout-export 5^exsgadq8fg23^10
 @i^10320^Patron : Bandeau rouge en tisse-mage
 @i^10593^Fragment de draenéthyste imparfait
 @i^11018^Humus d'Un'Goro
+@i^11116^Un journal abîmé
 @i^11386^Oeil spongieux de basilic
 @i^11387^Coeur de basilic
 @i^11410^Griffe d'ours sauvage
@@ -284,6 +289,7 @@ GoldScout-export 5^exsgadq8fg23^10
 @i^248713^Caisse détournée : composants d'artisan
 @i^278186^Bracelet brillamment poli
 @i^279913^Tête de Ti'ik
+@i^280459^Écaille imprégnée de cristaux
 @q^1464^0:15:0
 @q^1520^0:15:0
 @q^1532^1:12:0
@@ -359,6 +365,7 @@ GoldScout-export 5^exsgadq8fg23^10
 @q^4585^0:15:0
 @q^4586^0:15:0
 @q^4587^0:15:0
+@q^4588^0:15:0
 @q^4589^1:7:1
 @q^4590^0:15:0
 @q^4591^0:15:0
@@ -405,6 +412,7 @@ GoldScout-export 5^exsgadq8fg23^10
 @q^10320^2:9:0
 @q^10593^2:12:0
 @q^11018^1:12:0
+@q^11116^2:15:0
 @q^11386^0:15:0
 @q^11387^0:15:0
 @q^11410^0:15:0
@@ -443,6 +451,7 @@ GoldScout-export 5^exsgadq8fg23^10
 @q^248713^2:0:1
 @q^278186^1:12:0
 @q^279913^1:12:0
+@q^280459^1:12:0
 @m^1419^Terres foudroyées
 @m^1424^Contreforts de Hautebrande
 @m^1425^Les Hinterlands
@@ -1148,9 +1157,12 @@ GoldScout-export 5^exsgadq8fg23^10
 @a^5990^111:1,112:13,131:2,151:1
 @a^5991^129:1,150:2
 @a^5992^111:2,112:16,131:2
-@a^6505^252:1
-@a^6506^273:1
+@a^6505^252:3,253:4,272:3
+@a^6506^253:1,273:1
+@a^6507^212:3,232:2
+@a^6508^212:1,214:1,232:1,233:1
 @a^6519^69:1
+@a^6556^234:1
 @a^7584^154:1,155:1,175:1
 @a^7725^193:1
 @a^7765^88:1
