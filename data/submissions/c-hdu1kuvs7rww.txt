@@ -1,4 +1,6 @@
-GoldScout-export 5^hdu1kuvs7rww^5
+GoldScout-export 5^hdu1kuvs7rww^6
+30^1^0^6^6^1429^0.3659^0.5566^1^Forest Spider^^
+94^1^0^5^5^1429^0.3654^0.5543^1^Defias Cutpurse^1377:1:1,2589:1:1^
 2639^3^0^45^46^1425^0.4763^0.6260^3^Vilebranch Axe Thrower^1520:1:1,4306:1:1,4338:1:2^
 2649^8^0^40^41^1425^0.2308^0.5718^8^Witherbark Scalper^1520:2:2,4306:1:2,4338:1:2,8151:1:1,9259:1:1^
 2650^10^0^41^42^1425^0.2358^0.5726^10^Witherbark Zealot^1520:5:5,4338:3:5,4599:1:1,9259:4:4^
@@ -7,6 +9,8 @@ GoldScout-export 5^hdu1kuvs7rww^5
 2680^2^0^46^47^1425^0.4727^0.6489^2^Vilebranch Wolf Pup^4584:1:1,12208:1:1^
 2923^1^0^42^42^1425^0.2386^0.5223^1^Mangy Silvermane^4583:1:1,12203:1:1,12208:1:1^
 2928^1^0^44^45^1425^0.4393^0.4456^1^Primitive Owlbeast^^
+3474^1^0^22^22^1413^0.4607^0.4917^1^Lakota'mani^5099:1:1,5467:1:1^
+3986^1^0^25^25^1413^0.4827^0.1914^1^Sarilus Foulborne^2592:1:1^
 4196^19^0^49^50^1446^0.5597^0.6918^19^Silithid Swarm^^
 4390^1^0^43^45^1445^0.6705^0.1747^1^Elder Murk Thresher^5516:1:1,6362:1:1,7973:1:1^
 4466^1^0^46^47^1425^0.4741^0.6421^1^Vilebranch Scalper^9259:1:1^
@@ -53,10 +57,13 @@ GoldScout-export 5^hdu1kuvs7rww^5
 255997^1^0^0^0^0^0.0000^0.0000^0^^273883:1:1,276736:1:1^
 256236^1^0^0^0^0^0.0000^0.0000^0^^274029:1:1^
 257016^1^0^0^0^0^0.0000^0.0000^0^^276739:1:1^
+@i^1377^Frayed Gloves
 @i^1464^Buzzard Talon
 @i^1520^Troll Sweat
 @i^1645^Moonberry Juice
 @i^2450^Briarthorn
+@i^2589^Linen Cloth
+@i^2592^Wool Cloth
 @i^3404^Buzzard Wing
 @i^3671^Lifeless Skull
 @i^3676^Slimy Ichor
@@ -89,9 +96,11 @@ GoldScout-export 5^hdu1kuvs7rww^5
 @i^4602^Moon Harvest Pumpkin
 @i^4608^Raw Black Truffle
 @i^4787^Burning Pitch
+@i^5099^Hoof of Lakota'mani
 @i^5117^Vibrant Plume
 @i^5128^Shed Lizard Skin
 @i^5133^Seeping Gizzard
+@i^5467^Kodo Meat
 @i^5516^Threshadon Fang
 @i^5829^Razor-sharp Beak
 @i^6149^Greater Mana Potion
@@ -148,10 +157,13 @@ GoldScout-export 5^hdu1kuvs7rww^5
 @i^276890^Zarla's Journal
 @i^279225^Vilebranch Totem
 @i^280459^Crystal Infused Scale
+@q^1377^0:4:0
 @q^1464^0:15:0
 @q^1520^0:15:0
 @q^1645^1:0:0
 @q^2450^1:7:1
+@q^2589^1:7:1
+@q^2592^1:7:1
 @q^3404^1:7:1
 @q^3671^0:15:0
 @q^3676^0:15:0
@@ -184,9 +196,11 @@ GoldScout-export 5^hdu1kuvs7rww^5
 @q^4602^1:0:0
 @q^4608^1:0:0
 @q^4787^0:15:0
+@q^5099^1:12:0
 @q^5117^1:12:0
 @q^5128^0:15:0
 @q^5133^0:15:0
+@q^5467^1:7:1
 @q^5516^0:2:0
 @q^5829^0:15:0
 @q^6149^1:0:0
@@ -243,8 +257,10 @@ GoldScout-export 5^hdu1kuvs7rww^5
 @q^276890^1:12:0
 @q^279225^1:12:0
 @q^280459^1:12:0
+@m^1413^The Barrens
 @m^1425^The Hinterlands
 @m^1427^Searing Gorge
+@m^1429^Elwynn Forest
 @m^1445^Dustwallow Marsh
 @m^1446^Tanaris
 @m^1449^Un'Goro Crater
@@ -964,6 +980,8 @@ GoldScout-export 5^hdu1kuvs7rww^5
 @c^279985^
 @c^279987^
 @c^286152^
+@a^30^227:1
+@a^94^227:1
 @a^2639^249:3
 @a^2649^204:1,224:6,245:1
 @a^2650^224:9,225:1
@@ -972,6 +990,8 @@ GoldScout-export 5^hdu1kuvs7rww^5
 @a^2680^249:1,269:1
 @a^2923^204:1
 @a^2928^168:1
+@a^3474^189:1
+@a^3986^69:1
 @a^4196^271:19
 @a^4390^73:1
 @a^4466^249:1

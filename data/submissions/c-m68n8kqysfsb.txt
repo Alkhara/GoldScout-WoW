@@ -1,4 +1,4 @@
-GoldScout-export 6^m68n8kqysfsb^6
+GoldScout-export 6^m68n8kqysfsb^7
 1815^2^0^52^52^1422^0.3016^0.5765^2^Diseased Black Bear^8146:1:1,11408:1:1,11411:1:1,12695:1:1^
 4692^3^0^32^33^1443^0.4127^0.6668^3^Dread Swoop^1464:1:1,5116:1:1^
 4693^1^0^36^36^1443^0.4161^0.6578^1^Dread Flyer^1464:1:1^
@@ -18,6 +18,7 @@ GoldScout-export 6^m68n8kqysfsb^6
 7157^6^0^54^55^1448^0.6207^0.0917^6^Deadwood Avenger^8766:1:1,13824:1:1,14047:1:1,21377:1:1^
 7158^11^0^53^54^1448^0.6218^0.0991^11^Deadwood Shaman^14047:3:6,20741:1:1,21377:3:3^
 7444^2^0^53^54^1452^0.4572^0.3655^2^Shardtooth Bear^11408:1:1,11410:1:1,11411:1:1^
+7446^1^0^59^59^1452^0.6014^0.7132^1^Rabid Shardtooth^^
 7447^6^0^53^55^1452^0.4264^0.3864^6^Fledgling Chillwind^6444:1:1,6826:2:2,12444:4:4^
 7448^4^0^55^57^1452^0.5722^0.4487^4^Chillwind Chimaera^6826:1:1,12444:2:2,248698:1:1,281015:1:1^
 7450^8^0^53^55^1452^0.4301^0.3865^8^Ragged Owlbeast^13824:1:1,15420:3:8^
@@ -87,6 +88,10 @@ GoldScout-export 6^m68n8kqysfsb^6
 10596^1^0^0^0^0^0.0000^0.0000^0^^^
 11121^1^0^0^0^0^0.0000^0.0000^0^^276455:1:1^
 11577^1^0^36^36^1443^0.4232^0.5974^1^Whirlwind Stormwalker^^
+244525^2^0^55^56^2482^0.7638^0.7442^2^Hyjal Bear^^
+248041^2^0^56^57^2482^0.7916^0.7309^2^Hyjal Stag^5119:1:1,251641:2:2^
+248395^23^0^55^56^2482^0.6178^0.7102^23^Tainted Shrubbery^8766:1:1,10286:2:2,13444:1:1,13819:1:1,13823:1:1,247892:4:4,248711:1:1,256037:1:1^
+261914^1^0^55^55^2482^0.7258^0.7854^1^Tainted Hyjal Owl^248697:1:1^
 @i^1074^Hard Spider Leg Tip
 @i^1464^Buzzard Talon
 @i^2453^Bruiseweed
@@ -101,6 +106,7 @@ GoldScout-export 6^m68n8kqysfsb^6
 @i^4599^Cured Ham Steak
 @i^4791^Enchanted Water
 @i^5116^Long Tail Feather
+@i^5119^Fine Loose Hair
 @i^5759^Thorium Lockbox
 @i^6444^Forked Tongue
 @i^6530^Nightcrawlers
@@ -150,7 +156,9 @@ GoldScout-export 6^m68n8kqysfsb^6
 @i^13515^Ramstein's Lightning Bolts
 @i^13525^Darkbind Fingers
 @i^13817^Tapered Greatsword
+@i^13819^Balanced War Axe
 @i^13821^Bulky Maul
+@i^13823^Stout War Staff
 @i^13824^Recurve Long Bow
 @i^14047^Runecloth
 @i^14227^Ironweb Spider Silk
@@ -168,9 +176,14 @@ GoldScout-export 6^m68n8kqysfsb^6
 @i^21377^Deadwood Headdress Feather
 @i^22411^Helm of the Executioner
 @i^213543^Scroll: UPDOG
+@i^247892^Verdant Leaves
 @i^248695^Waylaid Crate: Earthly Artisan Herbs
+@i^248697^Waylaid Crate: Artisan Ore
 @i^248698^Waylaid Crate: Artisan Textiles
+@i^248711^Waylaid Crate: Artisan Fabrics
 @i^248713^Waylaid Crate: Artisan Parts
+@i^251641^Hyjal Venison Cut
+@i^256037^Grass Clippings
 @i^276455^Swordsmith Mitts
 @i^277958^Putrescent Bear Organs
 @i^277959^Putrescent Wolf Organs
@@ -189,6 +202,7 @@ GoldScout-export 6^m68n8kqysfsb^6
 @q^4599^1:0:0
 @q^4791^1:0:0
 @q^5116^1:7:1
+@q^5119^0:15:0
 @q^5759^2:15:0
 @q^6444^0:15:0
 @q^6530^1:0:0
@@ -238,7 +252,9 @@ GoldScout-export 6^m68n8kqysfsb^6
 @q^13515^3:4:0
 @q^13525^3:4:0
 @q^13817^0:2:0
+@q^13819^0:2:0
 @q^13821^0:2:0
+@q^13823^0:2:0
 @q^13824^0:2:0
 @q^14047^1:7:1
 @q^14227^1:7:1
@@ -256,9 +272,14 @@ GoldScout-export 6^m68n8kqysfsb^6
 @q^21377^1:12:0
 @q^22411^3:4:0
 @q^213543^1:0:0
+@q^247892^1:12:0
 @q^248695^1:0:1
+@q^248697^1:0:1
 @q^248698^1:0:1
+@q^248711^2:0:1
 @q^248713^2:0:1
+@q^251641^1:12:0
+@q^256037^0:15:0
 @q^276455^3:4:0
 @q^277958^1:12:0
 @q^277959^1:12:0
@@ -268,6 +289,7 @@ GoldScout-export 6^m68n8kqysfsb^6
 @m^1447^Azshara
 @m^1448^Felwood
 @m^1452^Winterspring
+@m^2482^Mount Hyjal
 @c^6218^
 @c^6339^
 @c^11130^
@@ -368,6 +390,7 @@ GoldScout-export 6^m68n8kqysfsb^6
 @a^7157^32:4,52:2
 @a^7158^32:6,52:5
 @a^7444^149:2
+@a^7446^292:1
 @a^7447^147:3,148:1,149:1,169:1
 @a^7448^171:2,191:2
 @a^7450^147:2,148:2,149:2,167:1,169:1
@@ -381,4 +404,8 @@ GoldScout-export 6^m68n8kqysfsb^6
 @a^9878^168:2
 @a^9879^168:2
 @a^11577^228:1
+@a^244525^295:1,315:1
+@a^248041^296:1,315:1
+@a^248395^271:1,272:13,291:2,292:1,293:2,311:2,331:2
+@a^261914^314:1
 @l^0^enUS

@@ -1,4 +1,4 @@
-GoldScout-export 6^7bj8ia0yhshh^12
+GoldScout-export 6^7bj8ia0yhshh^13
 681^2^0^30^31^1434^0.3490^0.1318^2^Junger Schlingendorntiger^5214:1:1,248688:1:1^
 682^8^0^32^33^1434^0.3923^0.1417^8^Schlingendorntiger^1686:2:2,1687:3:3,7367:1:1,12202:3:3,15250:1:1^
 683^1^0^30^31^1434^0.4030^0.1053^1^Junger Panther^^
@@ -16,8 +16,16 @@ GoldScout-export 6^7bj8ia0yhshh^12
 1986^13^0^3^4^1438^0.5685^0.2868^13^Waldweberspinne^1476:6:6,3365:1:1,7100:6:6,7101:4:4^
 1988^5^0^2^3^1438^0.5578^0.4537^5^Grell^117:1:1,1366:1:1,2589:1:1^
 1989^3^0^3^4^1438^0.5465^0.4364^3^Grellkin^1364:1:1,2589:1:1^
+1995^8^0^5^6^1438^0.6254^0.5554^8^Strigideule^3411:3:3,4757:1:1,4775:1:1,4776:1:1,6889:5:8,7097:1:1^
+1998^6^0^5^6^1438^0.5952^0.5581^6^Waldweberlauerer^1476:2:2,3412:3:3,5465:2:3^
+2000^2^0^8^9^1438^0.4723^0.4423^2^Waldweberseidenspinner^1476:2:2,5465:1:2^
+2006^2^0^5^6^1438^0.6627^0.5854^2^Ursa der Knarzklauen^2589:2:3,3013:1:1^
+2008^2^0^6^7^1438^0.6743^0.5513^2^Krieger der Knarzklauen^4536:1:1^
+2022^24^0^5^6^1438^0.5943^0.7127^24^Bäumling^765:1:1,1366:1:1,1376:1:1,1411:1:1,1421:1:1,2211:1:1,2447:1:1,2642:1:1,4604:1:1,5168:8:8^
 2031^9^0^1^1^1438^0.6145^0.4424^9^Junger Nachtsäbler^1376:1:1,4865:4:4,7073:4:4,7074:3:3^
 2032^2^0^2^2^1438^0.6139^0.3554^2^Räudiger Nachtsäbler^1376:1:1,7073:1:1,7074:1:1^
+2042^7^0^5^6^1438^0.6033^0.5375^7^Nachtsäbler^3409:3:3,4814:2:2,280087:2:2^
+2152^3^0^6^7^1438^0.4681^0.5361^3^Wegelagerer der Knarzklauen^2635:1:1^
 2248^16^0^30^31^1424^0.4331^0.3081^16^Höhlenyeti^2289:1:1,3720:6:6,3781:1:1,5637:1:1^
 2249^11^0^31^32^1424^0.4260^0.3040^11^Wilder Yeti^3720:4:4^
 4457^1^0^35^35^1434^0.3675^0.1997^1^Futterwühler der Düsterkiemen^3779:1:1,17057:1:1,17058:1:1^
@@ -66,9 +74,13 @@ GoldScout-export 6^7bj8ia0yhshh^12
 6235^1^0^0^0^0^0.0000^0.0000^0^^6893:1:1,9309:1:8,9446:1:1^
 6329^10^0^0^0^0^0.0000^0.0000^0^^1205:1:1,1751:1:1,1824:1:1,2592:3:6,3770:1:1,4306:1:3,4706:1:1,9308:3:3,9309:1:1^
 7079^1^0^0^0^0^0.0000^0.0000^0^^9452:1:1^
+7234^1^0^8^8^1438^0.6915^0.5344^1^Ferocitas der Traumfresser^8049:1:1^
+7235^3^0^6^7^1438^0.6905^0.5347^3^Mystiker der Knarzklauen^1418:1:1,2589:2:4^
 7603^22^0^0^0^0^0.0000^0.0000^0^^1806:1:1,3186:1:1,3201:1:1,4306:6:8,4542:1:1,6398:1:1,6612:1:1,9309:3:3,9838:1:1,248689:1:1^
 7800^1^0^0^0^0^0.0000^0.0000^0^^9458:1:1,9865:1:1^
+272096^1^0^10^11^1438^0.4889^0.5182^1^Besudelter Waldweber^1476:1:1,5465:1:1^
 @i^117^Zähes Stockfleisch
+@i^765^Silberblatt
 @i^805^Kleiner roter Beutel
 @i^1205^Melonensaft
 @i^1288^Großer Giftbeutel
@@ -77,6 +89,9 @@ GoldScout-export 6^7bj8ia0yhshh^12
 @i^1372^Struppiger Umhang
 @i^1374^Ausgefranste Schuhe
 @i^1376^Ausgefranster Umhang
+@i^1411^Verwitterter Stab
+@i^1418^Abgenutzter Ledergürtel
+@i^1421^Abgenutzter Balgumhang
 @i^1464^Bussardkralle
 @i^1476^Abgeknicktes Spinnengliedmaß
 @i^1520^Trollschweiß
@@ -102,9 +117,13 @@ GoldScout-export 6^7bj8ia0yhshh^12
 @i^2080^Hügelkämpferaxt des Bären
 @i^2211^Gebogener großer Schild
 @i^2289^Rolle der Stärke II
+@i^2447^Friedensblume
 @i^2589^Leinenstoff
 @i^2592^Wollstoff
+@i^2635^Lockerer Kettengürtel
+@i^2642^Lockere Kettenstiefel
 @i^2672^Sehniges Wolfsfleisch
+@i^3013^Rolle des Schutzes
 @i^3058^Waldlederhandschuhe
 @i^3186^Wikingerschwert des Adlers
 @i^3201^Barbarische Kriegsaxt des Schattenschutzes
@@ -113,6 +132,9 @@ GoldScout-export 6^7bj8ia0yhshh^12
 @i^3365^Ausgefranste Armschienen
 @i^3385^Geringer Manatrank
 @i^3404^Bussardflügel
+@i^3409^Nachtsäbler-Fangzahn
+@i^3411^Strigideulenfeder
+@i^3412^Waldweberspinnenseide
 @i^3671^Lebloser Schädel
 @i^3685^Raptorei
 @i^3720^Yetifell
@@ -127,16 +149,24 @@ GoldScout-export 6^7bj8ia0yhshh^12
 @i^4306^Seidenstoff
 @i^4377^Schweres Sprengpulver
 @i^4461^Raptorbalg
+@i^4536^Glänzender roter Apfel
 @i^4542^Saftiges Maisbrot
 @i^4583^Dicke fellige Mähne
 @i^4586^Glatte Raptorenhaut
 @i^4603^Roher Tüpfelgelbschwanz
+@i^4604^Waldpilzkappe
 @i^4706^Züngelnder Schuppenumhang
 @i^4712^Gleißender Panzergurt
+@i^4757^Gesprungene Eierschalen
+@i^4775^Gesprungener Schnabel
+@i^4776^Gesträubte Feder
+@i^4814^Verfärbter Fangzahn
 @i^4865^Verdorbener Pelz
 @i^5116^Lange Schwanzfeder
 @i^5133^Undichter Muskelmagen
+@i^5168^Bäumlingssamenkorn
 @i^5214^Zauberstab der Abendzeit
+@i^5465^Kleines Spinnenbein
 @i^5637^Großer Fangzahn
 @i^6067^Zentaurenohr
 @i^6079^Kunstloser Glücksbringer
@@ -155,14 +185,17 @@ GoldScout-export 6^7bj8ia0yhshh^12
 @i^6611^Weisenschärpe des Zauberers
 @i^6612^Weisenstiefel der Eule
 @i^6614^Weisenumhang des Schattenschutzes
+@i^6889^Kleines Ei
 @i^6893^Werkstattschlüssel
 @i^7073^Zerbrochener Fangzahn
 @i^7074^Gesplitterte Klaue
+@i^7097^Beinfleisch
 @i^7098^Abgesplitterter Hauer
 @i^7100^Klebriges Sekret
 @i^7101^Käferauge
 @i^7356^Ältestenumhang des Gorillas
 @i^7367^Ältestenmantel der Ausdauer
+@i^8049^Halskette der Knarzklauen
 @i^8385^Muster: Schildkrötenschuppenhandschuhe
 @i^9277^Techbots Speicherkern
 @i^9279^Weiße Lochkarte
@@ -198,7 +231,9 @@ GoldScout-export 6^7bj8ia0yhshh^12
 @i^248693^Abgefangene Kiste: Textilien des Experten
 @i^254432^Geschnitztes Zentaurentotem
 @i^262889^Versiegelte Verfügung des Experten
+@i^280087^Weicher Nachtsäblerpelz
 @q^117^1:0:0
+@q^765^1:7:1
 @q^805^1:1:0
 @q^1205^1:0:0
 @q^1288^1:7:1
@@ -207,6 +242,9 @@ GoldScout-export 6^7bj8ia0yhshh^12
 @q^1372^0:4:0
 @q^1374^0:4:0
 @q^1376^0:4:0
+@q^1411^0:2:0
+@q^1418^0:4:0
+@q^1421^0:4:0
 @q^1464^0:15:0
 @q^1476^0:15:0
 @q^1520^0:15:0
@@ -232,9 +270,13 @@ GoldScout-export 6^7bj8ia0yhshh^12
 @q^2080^2:2:0
 @q^2211^0:4:0
 @q^2289^1:0:0
+@q^2447^1:7:1
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2635^0:4:0
+@q^2642^0:4:0
 @q^2672^1:7:1
+@q^3013^1:0:0
 @q^3058^2:4:0
 @q^3186^2:2:0
 @q^3201^2:2:0
@@ -243,6 +285,9 @@ GoldScout-export 6^7bj8ia0yhshh^12
 @q^3365^0:4:0
 @q^3385^1:0:0
 @q^3404^1:7:1
+@q^3409^1:12:0
+@q^3411^1:12:0
+@q^3412^1:12:0
 @q^3671^0:15:0
 @q^3685^1:7:1
 @q^3720^1:12:0
@@ -257,16 +302,24 @@ GoldScout-export 6^7bj8ia0yhshh^12
 @q^4306^1:7:1
 @q^4377^1:7:1
 @q^4461^1:7:1
+@q^4536^1:0:0
 @q^4542^1:0:0
 @q^4583^0:15:0
 @q^4586^0:15:0
 @q^4603^1:7:1
+@q^4604^1:0:0
 @q^4706^2:4:0
 @q^4712^2:4:0
+@q^4757^0:15:0
+@q^4775^0:15:0
+@q^4776^0:15:0
+@q^4814^0:15:0
 @q^4865^0:15:0
 @q^5116^1:7:1
 @q^5133^0:15:0
+@q^5168^1:12:0
 @q^5214^2:2:0
+@q^5465^1:7:1
 @q^5637^1:7:1
 @q^6067^1:12:0
 @q^6079^1:12:0
@@ -285,14 +338,17 @@ GoldScout-export 6^7bj8ia0yhshh^12
 @q^6611^2:4:0
 @q^6612^2:4:0
 @q^6614^2:4:0
+@q^6889^1:7:1
 @q^6893^1:13:0
 @q^7073^0:15:0
 @q^7074^0:15:0
+@q^7097^1:0:0
 @q^7098^0:15:0
 @q^7100^0:15:0
 @q^7101^0:15:0
 @q^7356^2:4:0
 @q^7367^2:4:0
+@q^8049^1:12:0
 @q^8385^1:9:0
 @q^9277^1:12:0
 @q^9279^1:12:0
@@ -328,6 +384,7 @@ GoldScout-export 6^7bj8ia0yhshh^12
 @q^248693^1:0:1
 @q^254432^2:15:0
 @q^262889^3:0:0
+@q^280087^1:12:0
 @m^1415^Östliche Königreiche
 @m^1424^Vorgebirge von Hillsbrad
 @m^1426^Dun Morogh
@@ -1600,8 +1657,16 @@ GoldScout-export 6^7bj8ia0yhshh^12
 @a^1986^111:10,131:3
 @a^1988^171:1,191:4
 @a^1989^170:3
+@a^1995^212:1,213:4,231:2,251:1
+@a^1998^189:1,232:3,233:1,251:1
+@a^2000^169:1,189:1
+@a^2006^233:2
+@a^2008^213:1,233:1
+@a^2022^251:1,272:2,291:15,292:6
 @a^2031^172:6,191:1,192:2
 @a^2032^132:1,152:1
+@a^2042^209:2,213:2,231:1,232:1,233:1
+@a^2152^209:2,229:1
 @a^2248^108:4,128:9,129:3
 @a^2249^108:3,128:8
 @a^4457^67:1
@@ -1633,6 +1698,9 @@ GoldScout-export 6^7bj8ia0yhshh^12
 @a^4729^211:2
 @a^6221^208:2
 @a^6231^208:1
+@a^7234^213:1
+@a^7235^213:2,233:1
+@a^272096^209:1
 @f^1437^0^14^150^6358:6:6,6359:1:1,6361:7:7^240:3,241:11
 @f^1445^0^59^154^4603:13:13,6355:2:2,6358:5:5,6359:10:10,6362:29:29^214:59
 @l^0^deDE

@@ -1,4 +1,4 @@
-GoldScout-export 6^loze6zi6a63z^11
+GoldScout-export 6^loze6zi6a63z^12
 157^1^0^15^15^1436^0.3563^0.8051^1^Goretusk^723:1:1,731:1:1,769:1:1,2677:1:1^
 598^7^0^0^0^0^0.0000^0.0000^0^^2589:1:1,2592:1:2,3376:1:1^
 634^1^0^0^0^0^0.0000^0.0000^0^^955:1:1^
@@ -18,6 +18,9 @@ GoldScout-export 6^loze6zi6a63z^11
 2413^1^0^33^33^1416^0.1920^0.9192^1^Dermot^2592:1:2,3691:1:1^
 2414^1^0^33^33^1416^0.1676^0.8932^1^Kegan Darkmar^3688:1:1,4306:1:1^
 2415^3^0^33^33^1416^0.1653^0.8919^3^Warden Belamoore^1708:1:1,3711:3:3^
+2554^5^0^32^33^1417^0.7006^0.6374^5^Witherbark Axe Thrower^2289:1:1,3783:1:1,4306:2:3^
+2555^5^0^33^34^1417^0.7177^0.6411^5^Witherbark Witch Doctor^4306:3:5,15213:1:1^
+2556^6^0^34^35^1417^0.7023^0.6883^6^Witherbark Headhunter^4306:2:3,9848:1:1^
 2559^12^0^30^31^1417^0.6413^0.3667^12^Highland Strider^3685:5:5,4461:3:3,4512:5:5,5637:1:1,12184:2:2^
 2560^7^0^33^34^1417^0.3731^0.3283^7^Highland Thrasher^1696:1:1,3685:3:3,4461:2:2,4512:3:3,12184:2:2^
 2562^5^0^32^33^1417^0.3597^0.4335^5^Boulderfist Ogre^3771:1:1,4306:4:7,7413:1:1^
@@ -37,7 +40,7 @@ GoldScout-export 6^loze6zi6a63z^11
 3124^31^0^3^3^1411^0.4462^0.5949^31^Scorpid Worker^1364:1:1,1376:1:1,1378:1:1,2650:1:1,2651:1:1,2654:1:1,4862:10:10,4867:3:3,7099:7:7,7100:11:11,7101:11:11^
 3183^1^0^5^5^1411^0.4294^0.5328^1^Yarrog Baneshadow^4859:1:1^
 3281^3^0^4^4^1411^0.4056^0.6628^3^Sarkoth^2650:1:1,4905:2:2,7101:2:2^
-3560^2^0^26^27^1441^0.3775^0.3354^2^Healing Ward^^
+3560^2^0^26^34^1441^0.3775^0.3354^2^Healing Ward^^
 4114^1^0^28^28^1441^0.3358^0.5203^1^Gravelsnout Forager^2592:1:2^
 4118^1^0^28^28^1441^0.3357^0.5199^1^Venomous Cloud Serpent^17056:1:1^
 4124^2^0^27^28^1441^0.3119^0.4779^2^Needles Cougar^5136:1:1^
@@ -132,6 +135,7 @@ GoldScout-export 6^loze6zi6a63z^11
 @i^2210^Battered Buckler
 @i^2211^Bent Large Shield
 @i^2251^Gooey Spider Leg
+@i^2289^Scroll of Strength II
 @i^2295^Large Boar Tusk
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
@@ -164,6 +168,7 @@ GoldScout-export 6^loze6zi6a63z^11
 @i^3770^Mutton Chop
 @i^3771^Wild Hog Shank
 @i^3782^Large War Club
+@i^3783^Light Scimitar
 @i^3784^Metal Stave
 @i^3797^Interlaced Pants
 @i^3827^Mana Potion
@@ -219,6 +224,7 @@ GoldScout-export 6^loze6zi6a63z^11
 @i^8747^Hardened Leather Helm
 @i^9780^Bandit Gloves of the Boar
 @i^9806^Superior Gloves of the Physician
+@i^9848^Conjurer's Gloves of the Hierophant
 @i^11384^Broken Basilisk Teeth
 @i^11386^Squishy Basilisk Eye
 @i^11391^Spined Bat Wing
@@ -235,6 +241,7 @@ GoldScout-export 6^loze6zi6a63z^11
 @i^14590^Hawkeye's Bracers
 @i^14750^Slayer's Cuffs
 @i^14754^Slayer's Gloves
+@i^15213^Mercenary Blade of the Owl
 @i^15347^Pathfinder Belt of the Tiger
 @i^15568^Marauder's Cloak of the Physician
 @i^17008^Small Scroll
@@ -289,6 +296,7 @@ GoldScout-export 6^loze6zi6a63z^11
 @q^2210^0:4:0
 @q^2211^0:4:0
 @q^2251^1:7:1
+@q^2289^1:0:0
 @q^2295^0:15:0
 @q^2589^1:7:1
 @q^2592^1:7:1
@@ -321,6 +329,7 @@ GoldScout-export 6^loze6zi6a63z^11
 @q^3770^1:0:0
 @q^3771^1:0:0
 @q^3782^0:2:0
+@q^3783^0:2:0
 @q^3784^0:2:0
 @q^3797^0:4:0
 @q^3827^1:0:0
@@ -376,6 +385,7 @@ GoldScout-export 6^loze6zi6a63z^11
 @q^8747^0:4:0
 @q^9780^2:4:0
 @q^9806^2:4:0
+@q^9848^2:4:0
 @q^11384^0:15:0
 @q^11386^0:15:0
 @q^11391^0:15:0
@@ -392,6 +402,7 @@ GoldScout-export 6^loze6zi6a63z^11
 @q^14590^2:4:0
 @q^14750^2:4:0
 @q^14754^2:4:0
+@q^15213^2:2:0
 @q^15347^2:4:0
 @q^15568^2:4:0
 @q^17008^1:15:0
@@ -1157,6 +1168,9 @@ GoldScout-export 6^loze6zi6a63z^11
 @a^2413^363:1
 @a^2414^343:1
 @a^2415^343:3
+@a^2554^234:1,254:2,274:1,292:1
+@a^2555^254:2,273:1,274:2
+@a^2556^254:1,274:3,293:2
 @a^2559^133:1,134:3,153:5,170:3
 @a^2560^107:2,127:2,147:3
 @a^2562^167:4,187:1
