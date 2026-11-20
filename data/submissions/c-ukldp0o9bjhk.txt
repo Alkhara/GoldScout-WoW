@@ -1,4 +1,4 @@
-GoldScout-export 5^ukldp0o9bjhk^3
+GoldScout-export 6^ukldp0o9bjhk^4
 667^13^0^39^40^1434^0.4683^0.3970^13^Krieger der Skullsplitter^1520:4:4,1708:2:2,2732:1:1,2738:1:1,3916:2:2,4306:2:4,4338:1:1,8151:1:1,8153:2:4^
 669^16^0^41^42^1434^0.4567^0.4186^16^Jäger der Skullsplitter^866:1:1,1520:3:3,1524:4:4,1645:1:1,2730:1:1,2735:1:1,2745:1:1,3916:5:5,4025:1:1,4306:1:2,4338:2:2,8151:3:3,9880:1:1^
 670^8^0^41^42^1434^0.4585^0.4229^8^Hexendoktor der Skullsplitter^1520:2:2,1524:3:3,4306:2:3,4338:1:1^
@@ -41,6 +41,7 @@ GoldScout-export 5^ukldp0o9bjhk^3
 4665^12^0^31^32^1443^0.5504^0.2665^12^Adept der Burning Blade^1711:1:1,4306:2:3^
 4666^7^0^31^32^1443^0.5497^0.2711^7^Teufelsanbeter der Burning Blade^2592:1:1,4306:3:5,6986:1:1,20310:1:1^
 4667^1^0^33^33^1443^0.5559^0.2622^1^Schattenmagier der Burning Blade^4306:1:1^
+4668^1^0^38^38^1443^0.5295^0.8366^1^Beschwörer der Burning Blade^^
 4670^4^0^31^32^1443^0.7475^0.2385^4^Schurke der Zornsäer^3771:1:1,4306:2:2^
 4671^1^0^31^31^1443^0.7458^0.1162^1^Schwindler der Zornsäer^4306:1:1^
 4672^3^0^31^32^1443^0.7800^0.1726^3^Teufelsanbeter der Zornsäer^4338:1:1,5214:1:1^
@@ -82,10 +83,15 @@ GoldScout-export 5^ukldp0o9bjhk^3
 8217^1^0^52^52^1425^0.5991^0.7594^1^Mith'rethis der Verzauberer^8119:1:1,10075:1:1^
 8567^1^0^0^0^0^0.0000^0.0000^0^^10774:1:1^
 11521^5^0^37^38^1443^0.5005^0.5935^5^Kodoerscheinung^^
+11560^9^0^38^39^2652^0.3401^0.2563^9^Zentaurengeist^15849:8:8^
 11576^3^0^32^34^1443^0.5526^0.4777^3^Wirbelzerfetzer^^
 11577^2^0^35^37^1443^0.5881^0.5327^2^Wirbelsturmgänger^^
 11876^1^0^37^37^1443^0.5505^0.2658^1^Dämonengeist^13542:1:1^
+11937^6^0^38^38^1443^0.5207^0.8037^6^Dämonenportalwächter^3781:1:1,4306:2:3^
 12865^2^0^36^36^1413^0.4847^0.9513^2^Botschafter Malcin^17009:1:1^
+12922^1^0^38^38^1443^0.5296^0.8370^1^Wichteldiener^^
+252711^3^0^42^43^2652^0.4389^0.3399^3^Verfallener Pylonenbeschützer^^
+255561^2^0^40^40^1443^0.3606^0.8566^2^Wächter der Gelkis^3771:1:1,3815:1:1^
 @i^863^Düsterschneide des Affen
 @i^864^Ritterliches Langschwert des Naturschutzes
 @i^866^Mönchsstab der Macht
@@ -130,6 +136,7 @@ GoldScout-export 5^ukldp0o9bjhk^3
 @i^3808^Doppelpanzergürtel
 @i^3811^Doppelt genähter Umhang
 @i^3813^Doppelpanzerhose
+@i^3815^Doppelpanzerweste
 @i^3864^Citrin
 @i^3909^Zerbrochene Rüstung von Ana'thek
 @i^3916^Spaltknochenhalskette
@@ -167,6 +174,8 @@ GoldScout-export 5^ukldp0o9bjhk^3
 @i^8151^Fläschchen Mojo
 @i^8152^Fläschchen großes Mojo
 @i^8153^Wildranke
+@i^8365^Rohe Mithrilkopfforelle
+@i^8366^Aufgedunsene Mithrilkopfforelle
 @i^8704^OOX-09 HL-Notsignalgeber
 @i^9241^Hochheiliger Schlaghammer
 @i^9880^Zauberhexerhandschuhe des Adlers
@@ -187,6 +196,8 @@ GoldScout-export 5^ukldp0o9bjhk^3
 @i^15225^Mammutbaumhammer des Hierophanten
 @i^15544^Dickschuppensabatons des Verteidigers
 @i^15562^Plündererschulterstücke des Wolfs
+@i^15849^Geisterplasma
+@i^16968^Sar'theris-Barsch
 @i^17009^Kopf von Botschafter Malcin
 @i^20310^Geschundene Dämonenhaut
 @i^213127^Unvollständige mystische Notizen
@@ -240,6 +251,7 @@ GoldScout-export 5^ukldp0o9bjhk^3
 @q^3808^0:4:0
 @q^3811^0:4:0
 @q^3813^0:4:0
+@q^3815^0:4:0
 @q^3864^2:7:1
 @q^3909^1:12:0
 @q^3916^1:12:0
@@ -277,6 +289,8 @@ GoldScout-export 5^ukldp0o9bjhk^3
 @q^8151^1:7:1
 @q^8152^1:7:1
 @q^8153^1:7:1
+@q^8365^1:7:1
+@q^8366^2:15:0
 @q^8704^2:12:0
 @q^9241^1:12:0
 @q^9880^2:4:0
@@ -297,6 +311,8 @@ GoldScout-export 5^ukldp0o9bjhk^3
 @q^15225^2:2:0
 @q^15544^2:4:0
 @q^15562^2:4:0
+@q^15849^1:12:0
+@q^16968^1:12:0
 @q^17009^1:12:0
 @q^20310^1:12:0
 @q^213127^1:15:0
@@ -311,8 +327,11 @@ GoldScout-export 5^ukldp0o9bjhk^3
 @m^1425^Hinterland
 @m^1434^Schlingendorntal
 @m^1443^Desolace
+@m^1444^Feralas
+@m^1445^Marschen von Dustwallow
 @m^1446^Tanaris
 @m^1456^Thunder Bluff
+@m^2652^Shen'dralas
 @c^118^
 @c^724^
 @c^733^
@@ -1598,6 +1617,7 @@ GoldScout-export 5^ukldp0o9bjhk^3
 @a^4665^91:2,110:3,111:7
 @a^4666^90:1,110:1,111:4,130:1
 @a^4667^111:1
+@a^4668^330:1
 @a^4670^94:1,95:1,114:1,115:1
 @a^4671^54:1
 @a^4672^75:2,76:1
@@ -1618,10 +1638,18 @@ GoldScout-export 5^ukldp0o9bjhk^3
 @a^7996^269:1
 @a^8217^311:1
 @a^11521^229:2,230:2,249:1
+@a^11560^106:9
 @a^11576^150:1,151:1,271:1
 @a^11577^191:1,252:1
 @a^11876^111:1
+@a^11937^309:1,310:1,330:4
 @a^12865^369:1,389:1
+@a^12922^330:1
+@a^252711^128:3
+@a^255561^347:2
 @f^1434^0^9^206^6358:2:2,6359:1:1,6362:6:6^285:9
+@f^1443^0^5^225^6362:5:5,16968:1:1^305:5
+@f^1444^0^1^225^8365:1:1^212:1
+@f^1445^0^84^211^6308:29:29,8365:54:54,8366:1:1^127:84
 @f^1456^0^18^208^6289:8:8,6291:4:4,6308:6:6^228:18
 @l^0^deDE
