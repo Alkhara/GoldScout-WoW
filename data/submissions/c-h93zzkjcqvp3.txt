@@ -1,6 +1,17 @@
-GoldScout-export 5^h93zzkjcqvp3^6
+GoldScout-export 6^h93zzkjcqvp3^7
 440^2^0^20^20^1433^0.3217^0.4313^2^Blackrock Grunt^^
 485^1^0^20^20^1433^0.3398^0.4015^1^Blackrock Outrunner^3014:1:1^
+1010^3^0^23^23^1437^0.3095^0.3617^3^Mosshide Fenrunner^2592:1:2^
+1011^6^0^23^24^1437^0.3089^0.3215^6^Mosshide Trapper^2611:2:2,3770:1:1^
+1012^15^0^24^25^1437^0.3171^0.2960^15^Mosshide Brute^929:1:1,2592:4:7,2611:4:4,4306:1:1^
+1013^5^0^25^26^1437^0.3214^0.2977^5^Mosshide Mystic^1822:1:1,2592:2:2,2611:1:1,248686:1:1^
+1014^3^0^27^27^1437^0.3167^0.3076^3^Mosshide Alpha^2611:1:1,4306:1:1^
+1020^5^0^22^23^1437^0.2123^0.5200^5^Mottled Raptor^3685:4:4,250187:1:1^
+1024^1^0^20^21^1437^0.1366^0.4149^1^Bluegill Murloc^^
+1025^1^0^21^21^1437^0.1372^0.4149^1^Bluegill Puddlejumper^6308:1:3^
+1040^2^0^24^25^1437^0.2522^0.3230^2^Fen Creeper^^
+1400^2^0^23^24^1437^0.3101^0.3295^2^Wetlands Crocolisk^770:1:1^
+1417^5^0^21^22^1437^0.2815^0.4423^5^Young Wetlands Crocolisk^770:2:2,3667:2:2^
 1663^1^0^0^0^0^0.0000^0.0000^0^^3628:1:1,273817:1:1^
 1696^1^0^0^0^0^0.0000^0.0000^0^^3630:1:1^
 1706^7^0^0^0^0^0.0000^0.0000^0^^1824:1:1,2909:4:4^
@@ -35,7 +46,9 @@ GoldScout-export 5^h93zzkjcqvp3^6
 4887^2^0^0^0^0^0.0000^0.0000^0^^4555:1:1,4556:1:1,6907:1:1,273839:1:1^
 6243^2^0^0^0^0^0.0000^0.0000^0^^1468:1:1,1470:1:1,5784:1:1,17058:1:1,273141:1:1,273840:2:2^
 12902^1^0^0^0^0^0.0000^0.0000^0^^273842:1:1^
+270589^1^0^32^32^1437^0.2814^0.3113^1^Nightveiled Rotheap^279537:1:1^
 @i^730^Murloc Eye
+@i^770^Pointy Crocolisk Tooth
 @i^790^Forester's Axe of the Monkey
 @i^888^Naga Battle Gloves
 @i^929^Healing Potion
@@ -57,6 +70,7 @@ GoldScout-export 5^h93zzkjcqvp3^6
 @i^1824^Shiny War Axe
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2611^Crude Flint
 @i^2675^Crawler Claw
 @i^2783^Shoddy Blunderbuss
 @i^2909^Red Wool Bandana
@@ -66,6 +80,8 @@ GoldScout-export 5^h93zzkjcqvp3^6
 @i^3379^Brocade Bracers
 @i^3628^Hand of Dextren Ward
 @i^3630^Head of Targorr
+@i^3667^Tender Crocolisk Meat
+@i^3685^Raptor Egg
 @i^3712^Turtle Meat
 @i^3770^Mutton Chop
 @i^4306^Silk Cloth
@@ -97,7 +113,9 @@ GoldScout-export 5^h93zzkjcqvp3^6
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
 @i^248683^Waylaid Crate: Apprentice Ore
+@i^248686^Waylaid Crate: Journeyman Herbs
 @i^248703^Waylaid Crate: Apprentice Ingots
+@i^250187^Recipe: Tasty Raptor Bites
 @i^251350^Plans: Veteran's Chain Helm
 @i^252796^Pattern: Stormrider's Leather Pants
 @i^262888^Sealed Journeyman's Writ
@@ -107,7 +125,9 @@ GoldScout-export 5^h93zzkjcqvp3^6
 @i^273839^Spiked Shell Band
 @i^273840^Cursed Murloc Eye
 @i^273842^Treacherous Treads
+@i^279537^Rotheap Innards
 @q^730^1:7:1
+@q^770^0:15:0
 @q^790^2:2:0
 @q^888^3:4:0
 @q^929^1:0:0
@@ -129,6 +149,7 @@ GoldScout-export 5^h93zzkjcqvp3^6
 @q^1824^0:2:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2611^1:12:0
 @q^2675^1:7:1
 @q^2783^0:2:0
 @q^2909^1:12:0
@@ -138,6 +159,8 @@ GoldScout-export 5^h93zzkjcqvp3^6
 @q^3379^0:4:0
 @q^3628^1:12:0
 @q^3630^1:12:0
+@q^3667^1:7:1
+@q^3685^1:7:1
 @q^3712^1:7:1
 @q^3770^1:0:0
 @q^4306^1:7:1
@@ -169,7 +192,9 @@ GoldScout-export 5^h93zzkjcqvp3^6
 @q^17057^1:15:0
 @q^17058^1:15:0
 @q^248683^1:0:1
+@q^248686^1:0:1
 @q^248703^2:0:1
+@q^250187^1:9:0
 @q^251350^3:9:0
 @q^252796^3:9:0
 @q^262888^3:0:0
@@ -179,8 +204,10 @@ GoldScout-export 5^h93zzkjcqvp3^6
 @q^273839^3:4:0
 @q^273840^3:4:0
 @q^273842^3:4:0
+@q^279537^1:15:0
 @m^1414^Kalimdor
 @m^1433^Redridge Mountains
+@m^1437^Wetlands
 @m^1453^Stormwind City
 @c^2454^
 @c^2455^
@@ -1120,6 +1147,18 @@ GoldScout-export 5^h93zzkjcqvp3^6
 @c^285278^
 @a^440^166:2
 @a^485^166:1
+@a^1010^126:1,145:1,146:1
+@a^1011^106:1,125:1,126:3,145:1
+@a^1012^106:9,107:1,126:5
+@a^1013^106:1,107:1,126:3
+@a^1014^106:1,126:2
+@a^1020^184:1,204:4
+@a^1024^162:1
+@a^1025^162:1
+@a^1040^104:1,145:1
+@a^1400^125:1,126:1
+@a^1417^145:1,170:1,183:1,184:1,203:1
 @a^1755^154:1
 @a^4803^128:1
+@a^270589^125:1
 @l^0^enUS

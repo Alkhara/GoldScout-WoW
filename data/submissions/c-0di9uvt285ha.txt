@@ -1,4 +1,4 @@
-GoldScout-export 5^0di9uvt285ha^6
+GoldScout-export 5^0di9uvt285ha^7
 117^6^0^11^12^1436^0.5202^0.1380^6^Riverpaw Gnoll^725:1:1,2287:1:1,2589:2:3,4564:1:1^
 126^9^0^12^13^1436^0.5240^0.0997^9^Murloc Coastrunner^730:5:5,1515:1:1,1732:1:1,5523:4:4,6289:1:2,9760:1:1,254548:3:3^
 500^6^0^12^13^1436^0.5222^0.1419^6^Riverpaw Scout^725:3:3,858:1:1,2287:1:1,2589:3:6,211787:1:1^
@@ -55,7 +55,30 @@ GoldScout-export 5^0di9uvt285ha^6
 7361^1^0^0^0^0^0.0000^0.0000^0^^274043:1:1^
 7603^14^0^0^0^0^0.0000^0.0000^0^^1755:1:1,4306:3:4,4542:1:1,9309:2:2,9840:1:1^
 7800^1^0^0^0^0^0.0000^0.0000^0^^7437:1:1,9461:1:1^
+245999^1^0^0^0^0^0.0000^0.0000^0^^273034:1:1^
+246003^1^0^0^0^0^0.0000^0.0000^0^^273038:1:1^
+246008^1^0^0^0^0^0.0000^0.0000^0^^273040:1:1^
+246016^1^0^0^0^0^0.0000^0.0000^0^^273044:1:1^
+246017^1^0^0^0^0^0.0000^0.0000^0^^273047:1:1^
+246020^1^0^0^0^0^0.0000^0.0000^0^^251961:1:1,273052:1:1^
+246600^1^0^0^0^0^0.0000^0.0000^0^^6438:1:1^
+246602^2^0^0^0^0^0.0000^0.0000^0^^1756:1:1,1809:1:1^
+246664^4^0^0^0^0^0.0000^0.0000^0^^6398:1:1,6400:1:1,6439:1:1,276160:2:2^
+246683^1^0^0^0^0^0.0000^0.0000^0^^3380:1:1^
+246888^1^0^0^0^0^0.0000^0.0000^0^^2072:1:1^
+246890^1^0^0^0^0^0.0000^0.0000^0^^4705:1:1^
+246992^1^0^0^0^0^0.0000^0.0000^0^^276160:1:1^
+246993^2^0^0^0^0^0.0000^0.0000^0^^6439:1:1,276158:1:1^
+247001^1^0^0^0^0^0.0000^0.0000^0^^262888:1:1^
+247003^3^0^0^0^0^0.0000^0.0000^0^^9821:1:1,276158:2:2^
+247032^1^0^0^0^0^0.0000^0.0000^0^^273054:1:1^
+255066^2^0^0^0^0^0.0000^0.0000^0^^1809:1:1,1831:1:1^
+255069^1^0^0^0^0^0.0000^0.0000^0^^248706:1:1^
+255070^1^0^0^0^0^0.0000^0.0000^0^^2592:1:2^
+255071^1^0^0^0^0^0.0000^0.0000^0^^9794:1:1^
+255072^1^0^0^0^0^0.0000^0.0000^0^^^
 260425^2^0^36^37^1434^0.2979^0.7214^2^Venture Co. Mercenary^^
+269134^2^0^0^0^0^0.0000^0.0000^0^^2589:1:3,4711:1:1^
 @i^725^Gnoll Paw
 @i^730^Murloc Eye
 @i^858^Lesser Healing Potion
@@ -73,9 +96,13 @@ GoldScout-export 5^0di9uvt285ha^6
 @i^1711^Scroll of Stamina II
 @i^1732^Worn Mail Bracers
 @i^1755^Reinforced Chain Boots
+@i^1756^Reinforced Chain Bracers
 @i^1761^Reinforced Chain Vest
+@i^1809^Tough Leather Shoulderpads
 @i^1825^Bulky Bludgeon
 @i^1830^Long Bastard Sword
+@i^1831^Oaken War Staff
+@i^2072^Dwarven Magestaff of the Beast
 @i^2287^Haunch of Meat
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
@@ -94,6 +121,7 @@ GoldScout-export 5^0di9uvt285ha^6
 @i^3356^Kingsblood
 @i^3357^Liferoot
 @i^3374^Calico Belt
+@i^3380^Cross-stitched Belt
 @i^3385^Lesser Mana Potion
 @i^3667^Tender Crocolisk Meat
 @i^3671^Lifeless Skull
@@ -114,10 +142,16 @@ GoldScout-export 5^0di9uvt285ha^6
 @i^4564^Spiked Club of Agility
 @i^4586^Smooth Raptor Skin
 @i^4633^Heavy Bronze Lockbox
+@i^4705^Lambent Scale Pauldrons
 @i^4706^Lambent Scale Cloak
+@i^4711^Glimmering Cloak
 @i^5523^Small Barnacled Clam
 @i^5637^Large Fang
 @i^6289^Raw Longjaw Mud Snapper
+@i^6398^Emblazoned Belt
+@i^6400^Glimmering Shield
+@i^6438^Dull Elemental Bracer
+@i^6439^Broken Binding Bracer
 @i^6584^Scouting Tunic of the Eagle
 @i^6600^Dervish Belt of Spirit
 @i^6611^Sage's Sash of the Elder
@@ -135,6 +169,8 @@ GoldScout-export 5^0di9uvt285ha^6
 @i^9456^Glass Shooter
 @i^9461^Charged Gear of the Whale
 @i^9760^Cadet Bracers
+@i^9794^Ivycloth Cloak of the Whale
+@i^9821^Durable Bracers of the Whale
 @i^9840^Banded Girdle of Fire Protection
 @i^11995^Ivory Band of Intellect
 @i^12184^Raptor Flesh
@@ -148,10 +184,22 @@ GoldScout-export 5^0di9uvt285ha^6
 @i^248687^Waylaid Crate: Journeyman Ore
 @i^248690^Waylaid Crate: Earthly Expert Herbs
 @i^248692^Waylaid Crate: Expert Ore
+@i^248706^Waylaid Crate: Journeyman Ingots
+@i^251961^Arcane Mote
 @i^253982^Pattern: Filigreed Shadow Circlet
 @i^254018^Pattern: Earthen Silk Gloves
 @i^254548^Longshore Murloc Gill
+@i^262888^Sealed Journeyman's Writ
+@i^273034^Ephemeral Grips
+@i^273038^Garb of Fallen Felbark
+@i^273040^Spine of the Devourer
+@i^273044^Violet Sorcerer's Robes
+@i^273047^Unstable Crystalline Shoulderpads
+@i^273052^Ponderous Orb
+@i^273054^Cartilage Shapers
 @i^274043^Irradiated Shield
+@i^276158^Crystallized Shard
+@i^276160^Mana Fragment
 @i^277957^Primitive Key
 @i^278402^Unstudied Artifact
 @q^725^1:12:0
@@ -171,9 +219,13 @@ GoldScout-export 5^0di9uvt285ha^6
 @q^1711^1:0:0
 @q^1732^0:4:0
 @q^1755^0:4:0
+@q^1756^0:4:0
 @q^1761^0:4:0
+@q^1809^0:4:0
 @q^1825^0:2:0
 @q^1830^0:2:0
+@q^1831^0:2:0
+@q^2072^2:2:0
 @q^2287^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
@@ -192,6 +244,7 @@ GoldScout-export 5^0di9uvt285ha^6
 @q^3356^1:7:1
 @q^3357^1:7:1
 @q^3374^0:4:0
+@q^3380^0:4:0
 @q^3385^1:0:0
 @q^3667^1:7:1
 @q^3671^0:15:0
@@ -212,10 +265,16 @@ GoldScout-export 5^0di9uvt285ha^6
 @q^4564^2:2:0
 @q^4586^0:15:0
 @q^4633^2:15:0
+@q^4705^2:4:0
 @q^4706^2:4:0
+@q^4711^2:4:0
 @q^5523^1:7:0
 @q^5637^1:7:1
 @q^6289^1:7:1
+@q^6398^2:4:0
+@q^6400^2:4:0
+@q^6438^0:15:0
+@q^6439^0:15:0
 @q^6584^2:4:0
 @q^6600^2:4:0
 @q^6611^2:4:0
@@ -233,6 +292,8 @@ GoldScout-export 5^0di9uvt285ha^6
 @q^9456^3:2:0
 @q^9461^3:4:0
 @q^9760^1:4:0
+@q^9794^2:4:0
+@q^9821^2:4:0
 @q^9840^2:4:0
 @q^11995^2:4:0
 @q^12184^1:7:1
@@ -246,10 +307,22 @@ GoldScout-export 5^0di9uvt285ha^6
 @q^248687^1:0:1
 @q^248690^1:0:1
 @q^248692^1:0:1
+@q^248706^2:0:1
+@q^251961^1:12:0
 @q^253982^3:9:0
 @q^254018^2:9:0
 @q^254548^1:12:0
+@q^262888^3:0:0
+@q^273034^3:4:0
+@q^273038^3:4:0
+@q^273040^3:2:0
+@q^273044^3:4:0
+@q^273047^3:4:0
+@q^273052^3:4:0
+@q^273054^3:4:0
 @q^274043^3:4:0
+@q^276158^0:15:0
+@q^276160^0:15:0
 @q^277957^1:12:0
 @q^278402^1:12:0
 @m^1415^Eastern Kingdoms
