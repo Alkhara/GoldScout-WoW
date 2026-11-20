@@ -759,8 +759,10 @@ end
 -- Blackwater flips: items whose lowest buyout on your realm's Blackwater (neutral) auction house is low enough
 -- that buying them there and listing them on your faction's auction house earns at least FLIP_MIN_PROFIT and
 -- FLIP_MIN_MARGIN more, after the faction auction house's cut. Buying costs no fee. Both prices must be from
--- the last FLIP_MAX_AGE (GoldScout Companion's hourly snapshots, or your scans). Anything listed on an auction
--- house can be traded, so no bound items turn up. Returns rows (best profit first), or {} and why there are none:
+-- the last FLIP_MAX_AGE (GoldScout Companion's hourly snapshots, or your scans). A sell price over
+-- OTHER_LOOT_PRICE_CAP times the item's regional estimate doesn't count: that's one listing nobody buys (say
+-- Simple Wildflowers at 100g), not a price you can sell at; the website's flips (site/flips.py) use the same rule.
+-- Anything listed on an auction house can be traded, so no bound items turn up. Returns rows (best profit first), or {} and why there are none:
 -- "neutral" (your character has no faction to sell to) or "noprices" (no Blackwater prices yet).
 Engine.FLIP_MIN_PROFIT = 100        -- copper per item
 Engine.FLIP_MIN_MARGIN = 0.15       -- of the Blackwater price
@@ -776,6 +778,9 @@ function Engine:Flips()
   if not next(ids) then
     return {}, "noprices"
   end
+  local regional = prices.Bundled and prices:Bundled()
+  local estimates = regional and regional.price or {}
+  local cap = ns.OTHER_LOOT_PRICE_CAP or 3
   local rows = {}
   for itemID in pairs(ids) do
     local buy, stock, boughtAge = prices:GetFor(itemID, neutral)
@@ -783,7 +788,9 @@ function Engine:Flips()
     if buy and sell and buy > 0 and (stock or 0) > 0 and (listed or 0) > 0
         and (boughtAge or math.huge) <= self.FLIP_MAX_AGE and (soldAge or math.huge) <= self.FLIP_MAX_AGE then
       local profit = sell * ns.AH_CUT - buy
-      if profit >= self.FLIP_MIN_PROFIT and profit >= buy * self.FLIP_MIN_MARGIN then
+      local estimate = estimates[itemID]
+      if profit >= self.FLIP_MIN_PROFIT and profit >= buy * self.FLIP_MIN_MARGIN
+          and not (estimate and sell > estimate * cap) then
         rows[#rows + 1] = {
           kind = "flip", item = itemID, cost = buy, sell = sell, revenue = sell * ns.AH_CUT, profit = profit,
           margin = profit / buy, stock = stock, listed = listed, age = math.max(boughtAge, soldAge),

@@ -632,6 +632,15 @@ class FlipTests(unittest.TestCase):
         self.assertAlmostEqual(first.margin, 0.9)
         self.assertEqual((first.cost, first.sell, first.stock, first.listed), (1000, 2000, 5, 40))
 
+    def test_a_listing_nobody_buys_isnt_a_flip(self):
+        # Item 1 is usually 6s in the region (the shipped estimates): one listed here at 100g isn't a sale price.
+        # Item 5's 3s is under 3 times its 2s estimate, and item 7 has no estimate, so they stay.
+        self.run_lua("local ns = ...; ns.Prices.Bundled = function() "
+                     "return { snapshot = 0, price = { [1] = 600, [5] = 200 } } end")
+        rows, _ = self.flips({1: (32900, 1), 5: (100, 50), 7: (1000, 2)},
+                             {1: (1000000, 1), 5: (300, 10), 7: (5000, 3)})
+        self.assertEqual([row.item for row in rows], [7, 5])
+
     def test_old_prices_dont_count(self):
         rows, _ = self.flips({1: (1000, 5)}, {1: (2000, 40)}, age=13 * 3600)
         self.assertEqual(rows, [])

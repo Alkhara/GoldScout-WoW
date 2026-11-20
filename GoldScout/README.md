@@ -48,7 +48,10 @@ based on your level, class, faction and professions.
   shows the profit per item after the 5% cut and the margin, and how many are
   listed on each side. Only flips worth at least 1 silver and 15%, from prices
   of the last 12 hours (GoldScout Companion's hourly snapshots, or your scans
-  at both). Only the cheapest auctions are at the price shown.
+  at both), and selling for no more than 3 times the item's regional price
+  (a listing far above that is one nobody buys). Only the cheapest auctions
+  are at the price shown. The website lists them too, for every realm type:
+  [wowgoldscout.com/flips](https://wowgoldscout.com/flips).
 - **Item tooltips** show the last auction house price, how many were listed,
   the average daily low, and the vendor price when known.
 - **Prices without scanning:** with GoldScout Companion running (Windows or Mac),
