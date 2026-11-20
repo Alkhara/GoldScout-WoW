@@ -1,4 +1,4 @@
-GoldScout-export 6^f4tpb7mkijyj^8
+GoldScout-export 6^f4tpb7mkijyj^10
 40^6^0^6^7^1429^0.4007^0.8004^6^Kobold Miner^2589:2:4,4536:1:1^
 46^3^0^9^10^1429^0.7819^0.7605^3^Murloc Forager^779:1:1,2645:1:1^
 80^12^0^3^4^1429^0.4874^0.2842^12^Kobold Laborer^159:1:1,755:4:4,2589:1:1^
@@ -22,10 +22,10 @@ GoldScout-export 6^f4tpb7mkijyj^8
 2246^1^0^39^39^1416^0.3721^0.1564^1^Syndicate Assassin^1707:1:1^
 2349^1^0^24^24^1421^0.7084^0.5881^1^Giant Moss Creeper^1081:1:1^
 4699^1^0^38^38^1443^0.3219^0.7853^1^Scorpashi Venomlash^12037:1:1^
-11562^28^0^33^34^1443^0.2130^0.7667^28^Drysnap Crawler^3785:1:1,6362:3:5,15571:1:1,17057:13:13^
-11563^3^0^34^35^1443^0.2045^0.7661^3^Drysnap Pincer^3804:1:1,17057:1:1^
+11562^41^0^33^34^1443^0.2092^0.7623^41^Drysnap Crawler^1708:1:1,1710:1:1,3785:1:1,3827:1:1,6362:3:5,15149:1:1,15571:1:1,17057:18:18,248691:1:1^
+11563^5^0^34^35^1443^0.2149^0.7533^5^Drysnap Pincer^3804:1:1,17057:1:1^
 11576^2^0^33^34^1443^0.4916^0.5569^2^Whirlwind Ripper^^
-11577^1^0^37^37^1443^0.6316^0.6002^1^Whirlwind Stormwalker^7069:1:1^
+11577^1^0^35^37^1443^0.6316^0.6002^1^Whirlwind Stormwalker^7069:1:1^
 11578^1^0^34^34^1443^0.3212^0.7853^1^Whirlwind Shredder^7069:1:1^
 258792^2^0^0^0^0^0.0000^0.0000^0^^1990:1:1,262889:1:1^
 258797^1^0^0^0^0^0.0000^0.0000^0^^^
@@ -71,6 +71,7 @@ GoldScout-export 6^f4tpb7mkijyj^8
 @i^1433^Patchwork Armor
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
+@i^1710^Greater Healing Potion
 @i^1990^Ballast Maul of Nature Protection
 @i^2070^Darnassian Bleu
 @i^2138^Sharpened Letter Opener
@@ -91,6 +92,7 @@ GoldScout-export 6^f4tpb7mkijyj^8
 @i^3804^Hardened Leather Gloves
 @i^3808^Double Mail Belt
 @i^3820^Stranglekelp
+@i^3827^Mana Potion
 @i^4306^Silk Cloth
 @i^4536^Shiny Red Apple
 @i^4603^Raw Spotted Yellowtail
@@ -115,6 +117,7 @@ GoldScout-export 6^f4tpb7mkijyj^8
 @i^9892^Huntsman's Gloves of Spirit
 @i^11204^Formula: Enchant Bracer - Greater Spirit
 @i^12037^Mystery Meat
+@i^15149^Ghostwalker Gloves of Arcane Wrath
 @i^15571^Marauder's Belt of the Wolf
 @i^15918^Conjurer's Sphere of the Gorilla
 @i^17056^Light Feather
@@ -164,6 +167,7 @@ GoldScout-export 6^f4tpb7mkijyj^8
 @q^1433^0:4:0
 @q^1707^1:0:0
 @q^1708^1:0:0
+@q^1710^1:0:0
 @q^1990^2:2:0
 @q^2070^1:0:0
 @q^2138^0:2:0
@@ -184,6 +188,7 @@ GoldScout-export 6^f4tpb7mkijyj^8
 @q^3804^0:4:0
 @q^3808^0:4:0
 @q^3820^1:7:1
+@q^3827^1:0:0
 @q^4306^1:7:1
 @q^4536^1:0:0
 @q^4603^1:7:1
@@ -208,6 +213,7 @@ GoldScout-export 6^f4tpb7mkijyj^8
 @q^9892^2:4:0
 @q^11204^2:9:0
 @q^12037^1:7:1
+@q^15149^2:4:0
 @q^15571^2:4:0
 @q^15918^2:4:0
 @q^17056^1:15:1
@@ -1482,11 +1488,12 @@ GoldScout-export 6^f4tpb7mkijyj^8
 @a^2246^67:1
 @a^2349^234:1
 @a^4699^306:1
-@a^11562^284:6,303:4,304:16,323:1,324:1
-@a^11563^303:1,304:2
+@a^11562^284:11,303:8,304:20,323:1,324:1
+@a^11563^283:1,303:1,304:2,305:1
 @a^11576^132:1,307:1
 @a^11577^252:1
 @a^11578^306:1
 @f^1416^0^109^227^3820:5:10,6291:1:1,6308:7:7,6645:1:1,8365:21:21,21150:11:11,21151:2:2,21153:62:62,21164:5:5^26:14,46:6,47:4,67:22,87:10,106:9,126:7,146:3,165:3,184:10,201:7,202:6,203:7,221:1
 @f^1434^0^18^243^4603:3:3,6358:3:3,6359:3:3,6362:9:9^285:18
+@f^1443^0^3^246^21150:3:3,21151:1:2^305:3
 @l^0^enUS

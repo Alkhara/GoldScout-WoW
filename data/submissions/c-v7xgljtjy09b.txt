@@ -1,4 +1,4 @@
-GoldScout-export 5^v7xgljtjy09b^14
+GoldScout-export 5^v7xgljtjy09b^15
 3^3^0^24^25^1431^0.2317^0.3616^3^Flesh Eater^2592:1:1^
 30^2^0^5^6^1429^0.3449^0.5644^2^Forest Spider^1476:1:1,2590:1:1^
 94^3^0^5^6^1429^0.3518^0.5832^3^Defias Cutpurse^2649:1:1^
@@ -87,6 +87,10 @@ GoldScout-export 5^v7xgljtjy09b^14
 3739^4^4^19^20^1440^0.2060^0.4344^4^Saltspittle Warrior^730:2:2,954:1:1,3193:1:1,5463:1:1,5523:1:1,6308:1:1^
 3740^2^2^20^20^1440^0.2072^0.4407^2^Saltspittle Muckdweller^1468:1:1,1814:1:1,5784:1:1,6308:1:1^
 3742^1^1^20^20^1440^0.2009^0.4297^1^Saltspittle Oracle^730:1:1,17057:1:1^5371:1:1
+3743^2^0^23^24^1440^0.5396^0.6407^2^Foulweald Warrior^2592:1:1,14127:1:1,16882:1:1^
+3748^1^0^25^25^1440^0.4958^0.6016^1^Foulweald Shaman^2592:1:1^
+3749^2^1^24^24^1440^0.4987^0.6025^2^Foulweald Ursa^2592:1:2^
+3750^2^3^23^24^1440^0.4975^0.6128^2^Foulweald Totemic^2592:1:1^
 3772^4^2^23^24^1440^0.2710^0.6143^4^Lesser Felguard^1478:1:1,1818:1:1,1820:1:1^4606:1:1,5376:1:1
 3774^3^0^23^23^1440^0.2766^0.6146^3^Felslayer^3301:1:1,3402:1:1^
 3780^2^0^21^22^1440^0.4484^0.4547^2^Shadethicket Moss Eater^2449:1:1^
@@ -266,11 +270,13 @@ GoldScout-export 5^v7xgljtjy09b^14
 @i^9810^Fortified Boots of the Bear
 @i^11406^Rotting Bear Carcass
 @i^12237^Fine Crab Chunks
+@i^14127^Ritual Shroud of Frost Protection
 @i^14174^Buccaneer's Boots of Arcane Wrath
 @i^14374^Sanguine Sandals
 @i^14745^Hulking Cloak
 @i^15305^Feral Shoes of Nature's Wrath
 @i^15308^Feral Cord of Power
+@i^16882^Battered Junkbox
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
 @i^248683^Waylaid Crate: Apprentice Ore
@@ -428,11 +434,13 @@ GoldScout-export 5^v7xgljtjy09b^14
 @q^9810^2:4:0
 @q^11406^0:15:0
 @q^12237^1:12:0
+@q^14127^2:4:0
 @q^14174^2:4:0
 @q^14374^2:4:0
 @q^14745^2:4:0
 @q^15305^2:4:0
 @q^15308^2:4:0
+@q^16882^1:15:0
 @q^17056^1:15:1
 @q^17057^1:15:0
 @q^248683^1:0:1
@@ -1604,6 +1612,10 @@ GoldScout-export 5^v7xgljtjy09b^14
 @a^3739^163:2,164:2
 @a^3740^164:2
 @a^3742^164:1
+@a^3743^250:2
+@a^3748^249:1
+@a^3749^249:1,250:1
+@a^3750^249:1,250:1
 @a^3772^225:1,245:3
 @a^3774^245:3
 @a^3780^188:1,189:1

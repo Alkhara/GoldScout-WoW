@@ -1,4 +1,10 @@
-GoldScout-export 5^r60p4ujmnp9j^5
+GoldScout-export 5^r60p4ujmnp9j^6
+423^3^0^15^15^1433^0.1139^0.6845^3^Bastard der Rotkammgnolle^1212:1:1,1505:1:1,2287:1:1,2589:1:2^
+441^1^0^17^17^1433^0.1322^0.7317^1^Schwarzer Großdrachenwelpe^3177:1:1^
+442^9^0^15^16^1433^0.1372^0.6966^9^Tarantel^1081:1:1,3167:6:6,3174:3:3^
+547^2^0^17^17^1433^0.1416^0.6916^2^Großer Geiferzahn^723:1:1,769:2:3,2296:1:1,2677:2:2^
+550^1^0^15^15^1436^0.4437^0.6942^1^Bote der Defias^1381:1:1^
+712^1^0^15^15^1433^0.1371^0.6814^1^Hauer der Rotkammgnolle^^
 2253^1^0^35^35^1416^0.4837^0.5700^1^Crushridge-Schläger^^
 2337^2^0^28^28^1439^0.5633^0.2615^2^Leerruferin des dunklen Strangs^^
 3974^4^0^0^0^0^0.0000^0.0000^0^^1707:1:1,7710:1:1,7756:1:1,253984:1:1,274292:1:1^
@@ -41,13 +47,26 @@ GoldScout-export 5^r60p4ujmnp9j^5
 11559^1^0^39^40^2652^0.3561^0.1897^1^Ausgestoßener Totenbeschwörer^260347:1:1^
 11561^13^0^37^43^2652^0.3047^0.2612^13^Untoter Verheerer^4306:3:6^
 253272^1^0^43^43^2652^0.3486^0.3070^1^Totenbeschwörer der Magram^^
+@i^723^Geiferzahnleber
+@i^769^Brocken Eberfleisch
+@i^1081^Knuspriges Spinnenfleisch
 @i^1207^Zackenstreitkolben der Bestie
+@i^1212^Gnollspeichel
+@i^1381^Eine mysteriöse Nachricht
+@i^1505^Verformter Umhang
 @i^1701^Geschwungene Basiliskenklaue
 @i^1705^Geringer Mondstein
 @i^1707^Brie aus Stormwind
 @i^1708^Süßer Nektar
 @i^2080^Hügelkämpferaxt des Adlers
+@i^2287^Fleischschenkel
+@i^2296^Große Geiferzahnschnauze
+@i^2589^Leinenstoff
 @i^2592^Wollstoff
+@i^2677^Eberrippchen
+@i^3167^Dickes Spinnenhaar
+@i^3174^Spinnensekret
+@i^3177^Winziger Fangzahn
 @i^3402^Weicher Fellflicken
 @i^3771^Wildschweinschenkel
 @i^3778^Gespannter Kompaktbogen
@@ -113,13 +132,26 @@ GoldScout-export 5^r60p4ujmnp9j^5
 @i^274291^Polierte Schädelkappe
 @i^274292^Hundemeisterbumerang
 @i^274293^Zaubertrennerarmbrust
+@q^723^1:7:1
+@q^769^1:7:1
+@q^1081^1:7:1
 @q^1207^2:2:0
+@q^1212^0:15:0
+@q^1381^1:12:0
+@q^1505^0:4:0
 @q^1701^0:15:0
 @q^1705^2:7:1
 @q^1707^1:0:0
 @q^1708^1:0:0
 @q^2080^2:2:0
+@q^2287^1:0:0
+@q^2296^1:7:0
+@q^2589^1:7:1
 @q^2592^1:7:1
+@q^2677^1:7:1
+@q^3167^0:15:0
+@q^3174^1:7:1
+@q^3177^0:15:0
 @q^3402^0:15:0
 @q^3771^1:0:0
 @q^3778^0:2:0
@@ -186,6 +218,8 @@ GoldScout-export 5^r60p4ujmnp9j^5
 @q^274292^3:2:0
 @q^274293^3:2:0
 @m^1416^Alteracgebirge
+@m^1433^Rotkammgebirge
+@m^1436^Westfall
 @m^1439^Dunkelküste
 @m^1443^Desolace
 @m^2652^Shen'dralas
@@ -1330,6 +1364,12 @@ GoldScout-export 5^r60p4ujmnp9j^5
 @c^285280^
 @c^285281^
 @c^286152^
+@a^423^261:1,262:1,282:1
+@a^441^282:1
+@a^442^262:3,263:1,282:5
+@a^547^263:1,282:1
+@a^550^268:1
+@a^712^262:1
 @a^2253^229:1
 @a^2337^111:2
 @a^4663^110:1,111:1,130:1

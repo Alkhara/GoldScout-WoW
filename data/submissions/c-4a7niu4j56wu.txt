@@ -1,4 +1,4 @@
-GoldScout-export 6^4a7niu4j56wu^6
+GoldScout-export 6^4a7niu4j56wu^8
 1769^1^0^10^11^1421^0.5009^0.3929^1^Moonrage Whitescalp^^
 1779^27^0^12^13^1421^0.5582^0.4696^27^Moonrage Glutton^1179:1:1,1502:1:1,1732:1:1,2287:1:1,2455:1:1,3156:6:6,5635:1:1,7108:1:1,9751:1:1^
 1782^10^0^13^14^1421^0.5704^0.4628^10^Moonrage Darksoul^1501:1:1,3157:4:4,4684:1:1,5635:1:1,211780:1:1^
@@ -32,14 +32,27 @@ GoldScout-export 6^4a7niu4j56wu^6
 11913^17^0^15^16^1442^0.7638^0.8653^17^Grimtotem Sorcerer^1179:1:1,2589:5:10,3314:1:1^
 11914^2^0^17^17^1442^0.7751^0.8539^2^Gorehoof the Black^858:1:1,1812:1:1^
 11921^2^0^21^21^1442^0.5265^0.7167^2^Besseleth^3174:1:1,16192:1:1^
+250873^22^0^1^1^2521^0.4450^0.2552^22^Juvenile Vuldren^1370:1:1,1372:1:1,1376:1:1,1378:3:3,2211:1:1,2649:1:1,2650:1:1,2653:1:1,2672:7:7,3365:1:1,4865:12:12,7073:9:9,7074:7:7^
+250926^4^0^3^4^2521^0.4142^0.2604^4^Scrawny Ursera^7073:2:2,7074:2:2,251918:2:2^
+251143^4^0^2^3^2521^0.4640^0.2006^4^Roiling Winds^1366:1:1,251930:2:2,251931:2:2^
+251160^8^0^2^3^2521^0.4690^0.1914^8^Al'Aketh Convert^159:1:1,1366:1:1,1374:1:1,2589:3:3,251924:1:1^
+251169^8^0^1^1^2521^0.4611^0.2694^8^Pesky Cirrusfly^1366:1:1,1369:1:1,2210:1:1,2653:1:1,251927:1:1,251928:7:7^
 275767^1^0^11^11^1412^0.6054^0.5960^1^Herak the Pillager^118:1:1,286075:1:1^
 @i^117^Tough Jerky
 @i^118^Minor Healing Potion
+@i^159^Refreshing Spring Water
 @i^414^Dalaran Sharp
 @i^858^Lesser Healing Potion
 @i^929^Healing Potion
 @i^1081^Crisp Spider Meat
 @i^1179^Ice Cold Milk
+@i^1366^Ragged Leather Pants
+@i^1369^Ragged Leather Belt
+@i^1370^Ragged Leather Bracers
+@i^1372^Ragged Cloak
+@i^1374^Frayed Shoes
+@i^1376^Frayed Cloak
+@i^1378^Frayed Pants
 @i^1427^Patchwork Shoes
 @i^1475^Small Venom Sac
 @i^1498^Calico Gloves
@@ -53,10 +66,15 @@ GoldScout-export 6^4a7niu4j56wu^6
 @i^1741^Laced Cloak
 @i^1766^Canvas Cloak
 @i^1812^Short-handled Battle Axe
+@i^2210^Battered Buckler
+@i^2211^Bent Large Shield
 @i^2287^Haunch of Meat
 @i^2455^Minor Mana Potion
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2649^Flimsy Chain Belt
+@i^2650^Flimsy Chain Boots
+@i^2653^Flimsy Chain Gloves
 @i^2672^Stringy Wolf Meat
 @i^2777^Feeble Shortbow
 @i^2973^Hunting Tunic
@@ -70,6 +88,7 @@ GoldScout-export 6^4a7niu4j56wu^6
 @i^3300^Rabbit's Foot
 @i^3314^Ceremonial Leather Gloves
 @i^3354^Dalaran Pendant
+@i^3365^Frayed Bracers
 @i^3385^Lesser Mana Potion
 @i^3931^Poisoned Spider Fang
 @i^4564^Spiked Club of Magic
@@ -82,6 +101,7 @@ GoldScout-export 6^4a7niu4j56wu^6
 @i^4802^Cougar Claws
 @i^4813^Small Leather Collar
 @i^4814^Discolored Fang
+@i^4865^Ruined Pelt
 @i^5071^Shadow Wand
 @i^5087^Plainstrider Beak
 @i^5114^Severed Talon
@@ -93,6 +113,8 @@ GoldScout-export 6^4a7niu4j56wu^6
 @i^6391^Pattern: Stylish Green Shirt
 @i^6456^Acidic Slime
 @i^6546^Soldier's Leggings of the Eagle
+@i^7073^Broken Fang
+@i^7074^Chipped Claw
 @i^7097^Leg Meat
 @i^7108^Infantry Shield of the Hierophant
 @i^8179^Cadet's Bow
@@ -110,14 +132,28 @@ GoldScout-export 6^4a7niu4j56wu^6
 @i^211780^Scroll: KWYJIBO
 @i^248684^Waylaid Crate: Apprentice Textiles
 @i^248704^Waylaid Crate: Apprentice Parts
+@i^251918^Scrawny Ursera Claw
+@i^251924^Signet of Akir
+@i^251927^Chipped Cirrusfly Stinger
+@i^251928^Torn Insect Wing
+@i^251930^Minor Essence of the Four Winds
+@i^251931^Depleted Windstone
 @i^286075^Herak's Head
 @q^117^1:0:0
 @q^118^1:0:0
+@q^159^1:0:0
 @q^414^1:0:0
 @q^858^1:0:0
 @q^929^1:0:0
 @q^1081^1:7:1
 @q^1179^1:0:0
+@q^1366^0:4:0
+@q^1369^0:4:0
+@q^1370^0:4:0
+@q^1372^0:4:0
+@q^1374^0:4:0
+@q^1376^0:4:0
+@q^1378^0:4:0
 @q^1427^0:4:0
 @q^1475^1:7:1
 @q^1498^0:4:0
@@ -131,10 +167,15 @@ GoldScout-export 6^4a7niu4j56wu^6
 @q^1741^0:4:0
 @q^1766^0:4:0
 @q^1812^0:2:0
+@q^2210^0:4:0
+@q^2211^0:4:0
 @q^2287^1:0:0
 @q^2455^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2649^0:4:0
+@q^2650^0:4:0
+@q^2653^0:4:0
 @q^2672^1:7:1
 @q^2777^0:2:0
 @q^2973^2:4:0
@@ -148,6 +189,7 @@ GoldScout-export 6^4a7niu4j56wu^6
 @q^3300^0:15:0
 @q^3314^2:4:0
 @q^3354^1:12:0
+@q^3365^0:4:0
 @q^3385^1:0:0
 @q^3931^0:15:0
 @q^4564^2:2:0
@@ -160,6 +202,7 @@ GoldScout-export 6^4a7niu4j56wu^6
 @q^4802^1:12:0
 @q^4813^0:15:0
 @q^4814^0:15:0
+@q^4865^0:15:0
 @q^5071^2:2:0
 @q^5087^1:12:0
 @q^5114^0:15:0
@@ -171,6 +214,8 @@ GoldScout-export 6^4a7niu4j56wu^6
 @q^6391^2:9:0
 @q^6456^0:15:0
 @q^6546^2:4:0
+@q^7073^0:15:0
+@q^7074^0:15:0
 @q^7097^1:0:0
 @q^7108^2:4:0
 @q^8179^1:2:0
@@ -188,6 +233,12 @@ GoldScout-export 6^4a7niu4j56wu^6
 @q^211780^1:0:0
 @q^248684^1:0:1
 @q^248704^2:0:1
+@q^251918^1:12:0
+@q^251924^1:12:0
+@q^251927^0:15:0
+@q^251928^0:15:0
+@q^251930^0:15:0
+@q^251931^0:15:0
 @q^286075^1:12:0
 @m^1412^Mulgore
 @m^1413^The Barrens
@@ -195,6 +246,7 @@ GoldScout-export 6^4a7niu4j56wu^6
 @m^1440^Ashenvale
 @m^1442^Stonetalon Mountains
 @m^1454^Orgrimmar
+@m^2521^Zephras Isle
 @c^118^
 @c^724^
 @c^733^
@@ -416,6 +468,11 @@ GoldScout-export 6^4a7niu4j56wu^6
 @a^11913^354:5,355:10,356:1,375:1
 @a^11914^355:2
 @a^11921^290:2
+@a^250873^88:4,89:2,108:14,109:2
+@a^250926^108:4
+@a^251143^69:2,89:2
+@a^251160^69:6,89:2
+@a^251169^108:1,109:7
 @a^275767^232:1
 @f^1440^0^2^100^6308:2:2^278:2
 @f^1442^0^23^101^6289:1:1,6308:4:4,6359:11:11,6456:1:1,21113:5:5,21114:1:1^213:3,214:13,234:2,249:5
