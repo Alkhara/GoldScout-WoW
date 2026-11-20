@@ -1,5 +1,9 @@
-GoldScout-export 5^aouzn0e8e6ua^13
+GoldScout-export 5^aouzn0e8e6ua^14
 736^1^0^43^43^1434^0.4064^0.3447^1^Panther^^
+772^1^0^37^37^1434^0.5051^0.2039^1^Stranglethorn Tigress^^
+1094^2^0^34^35^1434^0.2876^0.0728^2^Venture Co. Miner^2728:1:1,4306:1:1^
+1096^5^0^35^36^1434^0.3421^0.1210^5^Venture Co. Geologist^2592:1:1,4306:3:6^
+1097^2^0^34^35^1434^0.3551^0.1331^2^Venture Co. Mechanic^2289:1:1,2748:1:1,4306:1:2,4377:1:1^
 1120^1^0^7^7^1426^0.7025^0.3916^1^Frostmane Troll^^
 1557^4^0^40^41^1434^0.3270^0.6605^4^Elder Mistvale Gorilla^3919:2:2,4096:1:1,4097:1:1^
 1562^4^0^40^41^1434^0.2774^0.6973^4^Bloodsail Mage^4306:1:2^
@@ -115,6 +119,7 @@ GoldScout-export 5^aouzn0e8e6ua^13
 259281^1^0^0^0^0^0.0000^0.0000^0^^275003:1:1^
 259801^1^0^41^41^2548^0.6232^0.3554^1^Mosh'gra^281676:1:1^
 260244^1^0^42^42^2548^0.7443^0.7217^1^Monstrous Threshadon^268633:1:1^
+260429^1^0^39^39^1434^0.4353^0.2033^1^Venture Co. Agent^268810:1:1^
 260968^7^0^41^42^2548^0.7559^0.2679^7^Twilight Mauler^3671:4:4,4306:1:1,4338:1:1,6438:1:1^
 260969^3^0^39^40^2548^0.7453^0.2578^3^Twilight Instigator^4306:1:1^
 260973^1^0^42^42^2548^0.7412^0.2691^1^Klunk^262889:1:1^
@@ -160,12 +165,14 @@ GoldScout-export 5^aouzn0e8e6ua^13
 @i^1732^Worn Mail Bracers
 @i^1770^Canvas Vest
 @i^2287^Haunch of Meat
+@i^2289^Scroll of Strength II
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2649^Flimsy Chain Belt
 @i^2728^Green Hills of Stranglethorn - Page 4
 @i^2732^Green Hills of Stranglethorn - Page 8
 @i^2745^Green Hills of Stranglethorn - Page 21
+@i^2748^Green Hills of Stranglethorn - Page 24
 @i^2749^Green Hills of Stranglethorn - Page 25
 @i^2773^Cracked Shortbow
 @i^2940^Bloody Bear Paw
@@ -202,6 +209,7 @@ GoldScout-export 5^aouzn0e8e6ua^13
 @i^4097^Chipped Gorilla Tooth
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
+@i^4377^Heavy Blasting Powder
 @i^4424^Scroll of Spirit III
 @i^4479^Burning Charm
 @i^4480^Thundering Charm
@@ -331,6 +339,7 @@ GoldScout-export 5^aouzn0e8e6ua^13
 @i^268632^Beast Entrails
 @i^268633^Sea Monster's Head
 @i^268796^Smuggled Goods
+@i^268810^Ruzzgot's Shipment
 @i^271425^Blademaster's Banner
 @i^271432^Coyote Pelt
 @i^271650^Crawler Spittle
@@ -375,12 +384,14 @@ GoldScout-export 5^aouzn0e8e6ua^13
 @q^1732^0:4:0
 @q^1770^0:4:0
 @q^2287^1:0:0
+@q^2289^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2649^0:4:0
 @q^2728^1:12:0
 @q^2732^1:12:0
 @q^2745^1:12:0
+@q^2748^1:12:0
 @q^2749^1:12:0
 @q^2773^0:2:0
 @q^2940^0:15:0
@@ -417,6 +428,7 @@ GoldScout-export 5^aouzn0e8e6ua^13
 @q^4097^0:15:0
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4377^1:7:1
 @q^4424^1:0:0
 @q^4479^1:0:0
 @q^4480^1:0:0
@@ -546,6 +558,7 @@ GoldScout-export 5^aouzn0e8e6ua^13
 @q^268632^1:12:0
 @q^268633^1:12:0
 @q^268796^1:15:0
+@q^268810^1:12:0
 @q^271425^1:12:0
 @q^271432^1:12:0
 @q^271650^1:12:0
@@ -2410,6 +2423,10 @@ GoldScout-export 5^aouzn0e8e6ua^13
 @c^285281^
 @c^286152^
 @a^736^128:1
+@a^772^90:1
+@a^1094^25:2
+@a^1096^25:3,68:2
+@a^1097^25:1,68:1
 @a^1120^154:1
 @a^1557^266:4
 @a^1562^265:2,285:2
@@ -2495,6 +2512,7 @@ GoldScout-export 5^aouzn0e8e6ua^13
 @a^259267^330:2,350:2,351:1
 @a^259801^152:1
 @a^260244^294:1
+@a^260429^88:1
 @a^260968^114:3,115:4
 @a^260969^94:1,114:2
 @a^260973^114:1
