@@ -1,4 +1,4 @@
-GoldScout-export 5^5anzma7ubzn2^14
+GoldScout-export 6^5anzma7ubzn2^16
 92^5^0^39^40^1418^0.3719^0.7504^5^Rock Elemental^4553:1:1,4627:3:3,4784:1:1,6420:1:1,7912:3:3,8150:2:2^
 769^10^0^40^41^1435^0.6945^0.7243^10^Deathstrike Tarantula^4585:6:6,4636:1:1,5637:2:2,12205:5:5,213529:10:10,213543:1:1^
 1084^1^0^35^35^1435^0.2938^0.3634^1^Young Sawtooth Crocolisk^770:1:1,3667:1:1^
@@ -64,6 +64,20 @@ GoldScout-export 5^5anzma7ubzn2^14
 4860^1^0^0^0^0^0.0000^0.0000^0^^^
 4861^1^0^0^0^0^0.0000^0.0000^0^^11391:1:1^
 4872^1^0^38^38^1418^0.3963^0.1986^1^Obsidian Golem^1529:1:1^
+5255^1^0^42^42^1444^0.4833^0.4482^1^Woodpaw Reaver^4338:1:1^
+5260^2^0^42^43^1444^0.5465^0.5160^2^Groddoc Ape^2799:1:1,4096:1:1^
+5268^3^0^41^42^1444^0.5629^0.5497^3^Ironfur Bear^11408:1:1,11409:1:1,11410:1:1^
+5286^14^0^40^41^1444^0.3274^0.4753^14^Longtooth Runner^4583:3:3,8146:1:1,12203:5:5,12208:4:4^
+5292^20^0^43^44^1444^0.5441^0.5630^20^Feral Scar Yeti^1645:1:1,4025:1:1,4599:2:2,8146:2:2,8973:4:4,13051:1:1^
+5293^29^0^45^46^1444^0.5186^0.5955^29^Hulking Feral Scar^3928:2:2,4002:1:1,4422:1:1,4599:1:1,8146:1:1,14781:1:1^
+5295^29^0^44^45^1444^0.5225^0.5828^29^Enraged Feral Scar^3928:1:1,4424:1:1,4599:2:2,8705:1:1^
+5331^6^0^42^43^1444^0.2880^0.5386^6^Hatecrest Warrior^7973:1:1,9247:2:2,17058:2:2^
+5332^1^0^41^42^1444^0.2659^0.5295^1^Hatecrest Wave Rider^14230:1:1^
+5333^7^0^44^45^1444^0.2720^0.6857^7^Hatecrest Serpent Guard^7973:3:3,17058:2:2^
+5334^3^0^43^44^1444^0.2563^0.6347^3^Hatecrest Myrmidon^7973:1:1,17058:1:1^
+5335^7^0^41^42^1444^0.2750^0.5413^7^Hatecrest Screamer^7973:1:1,9247:5:5,14828:1:1,17058:2:2^
+5336^16^0^43^44^1444^0.2672^0.6758^16^Hatecrest Sorceress^4637:1:1,7973:9:9,17058:6:6,249513:1:1^
+5337^5^0^42^43^1444^0.2745^0.5527^5^Hatecrest Siren^7973:2:2,9247:3:3,17058:1:1^
 5422^3^0^40^41^1446^0.6503^0.2726^3^Scorpid Hunter^12037:1:1,19935:2:2^
 5425^1^0^41^42^1446^0.6579^0.3008^1^Starving Blisterpaw^4583:1:1^
 5615^4^0^43^44^1446^0.6496^0.3614^4^Wastewander Rogue^4338:1:1^
@@ -101,9 +115,11 @@ GoldScout-export 5^5anzma7ubzn2^14
 7795^1^0^0^0^0^0.0000^0.0000^0^^9234:1:1,274651:1:1^
 7797^1^0^0^0^0^0.0000^0.0000^0^^9479:1:1^
 7847^1^0^46^46^1446^0.6425^0.3436^1^Caliph Scorpidsting^8723:1:1^
+7848^1^0^46^46^1444^0.5527^0.5402^1^Lurking Feral Scar^3928:1:1^
 7855^1^0^44^44^1446^0.7033^0.4289^1^Southsea Pirate^^
 8095^1^0^0^0^0^0.0000^0.0000^0^^1702:1:1,4092:1:1^
 8120^1^0^0^0^0^0.0000^0.0000^0^^15604:1:1^
+8136^1^0^47^47^1444^0.2844^0.7035^1^Lord Shalzaru^7973:1:1,9248:1:1^
 8996^1^0^42^43^1446^0.6626^0.3611^1^Voidwalker Minion^^
 10082^1^0^0^0^0^0.0000^0.0000^0^^12470:1:1^
 14123^1^0^42^42^1446^0.6711^0.3803^1^Steeljaw Snapper^4555:1:1^
@@ -215,6 +231,7 @@ GoldScout-export 5^5anzma7ubzn2^14
 @i^2652^Flimsy Chain Cloak
 @i^2654^Flimsy Chain Pants
 @i^2656^Flimsy Chain Vest
+@i^2799^Gorilla Fang
 @i^2825^Bow of Searing Arrows
 @i^2940^Bloody Bear Paw
 @i^3010^Fine Sand
@@ -241,16 +258,20 @@ GoldScout-export 5^5anzma7ubzn2^14
 @i^3928^Superior Healing Potion
 @i^3937^Crochet Boots
 @i^3938^Crochet Bracers
+@i^4002^Overlinked Chain Bracers
 @i^4004^Overlinked Chain Gloves
 @i^4005^Overlinked Chain Pants
 @i^4006^Overlinked Chain Shoulderpads
 @i^4019^Heavy Flint Axe
 @i^4021^Blunting Mace
 @i^4023^Fine Pointed Dagger
+@i^4025^Balanced Long Bow
 @i^4026^Sentinel Musket
 @i^4092^Prismatic Basilisk Scale
+@i^4096^Coarse Gorilla Hair
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
+@i^4422^Scroll of Stamina III
 @i^4424^Scroll of Spirit III
 @i^4460^Ripped Wing Webbing
 @i^4552^Smooth Stone Chip
@@ -335,12 +356,16 @@ GoldScout-export 5^5anzma7ubzn2^14
 @i^8397^Pattern: Tough Scorpid Bracers
 @i^8483^Wastewander Water Pouch
 @i^8548^Divino-matic Rod
+@i^8705^OOX-22 FE Distress Beacon
 @i^8707^Gahz'rilla's Electrified Scale
 @i^8723^Caliph Scorpidsting's Head
+@i^8973^Thick Yeti Hide
 @i^9234^Tiara of the Deep
 @i^9238^Uncracked Scarab Shell
 @i^9242^Ancient Tablet
 @i^9243^Shriveled Heart
+@i^9247^Hatecrest Naga Scale
+@i^9248^Mysterious Relic
 @i^9259^Troll Tribal Necklace
 @i^9294^Recipe: Wildvine Potion
 @i^9355^Hoop Earring
@@ -362,6 +387,9 @@ GoldScout-export 5^5anzma7ubzn2^14
 @i^11118^Archaedic Stone of Stamina
 @i^11204^Formula: Enchant Bracer - Greater Spirit
 @i^11391^Spined Bat Wing
+@i^11408^Bear Jaw
+@i^11409^Bear Flank
+@i^11410^Savage Bear Claw
 @i^11416^Delicate Ribcage
 @i^11418^Hollow Wing Bone
 @i^12037^Mystery Meat
@@ -373,8 +401,12 @@ GoldScout-export 5^5anzma7ubzn2^14
 @i^12208^Tender Wolf Meat
 @i^12238^Darkshore Grouper
 @i^12470^Sandstalker Ankleguards
+@i^13051^Witchfury
 @i^14172^Buccaneer's Robes of Magic
 @i^14224^Geomancer's Trousers of Spirit
+@i^14230^Embersilk Tunic of the Owl
+@i^14781^Khan's Cloak
+@i^14828^Symbolic Greaves
 @i^14833^Tyrant's Gauntlets
 @i^15215^Furious Falchion of the Eagle
 @i^15243^Deadly Kris of the Boar
@@ -384,6 +416,7 @@ GoldScout-export 5^5anzma7ubzn2^14
 @i^15624^Gryphon Cloak of Shadow Protection
 @i^15798^Chipped Ogre Teeth
 @i^17057^Shiny Fish Scales
+@i^17058^Fish Oil
 @i^18082^Zum'rah's Vexing Cane
 @i^19935^Empty Venom Sac
 @i^19936^Dried Scorpid Carapace
@@ -397,6 +430,7 @@ GoldScout-export 5^5anzma7ubzn2^14
 @i^248693^Waylaid Crate: Expert Textiles
 @i^248694^Waylaid Crate: Expert Curiosities
 @i^248695^Waylaid Crate: Earthly Artisan Herbs
+@i^249513^Formula: Enchant 2H Weapon - Lesser Strength
 @i^255726^Manual: Leather Tourniquet
 @i^262889^Sealed Expert's Writ
 @i^265357^Snargl's Snout
@@ -465,6 +499,7 @@ GoldScout-export 5^5anzma7ubzn2^14
 @q^2652^0:4:0
 @q^2654^0:4:0
 @q^2656^0:4:0
+@q^2799^1:12:0
 @q^2825^4:2:0
 @q^2940^0:15:0
 @q^3010^0:15:0
@@ -491,16 +526,20 @@ GoldScout-export 5^5anzma7ubzn2^14
 @q^3928^1:0:0
 @q^3937^0:4:0
 @q^3938^0:4:0
+@q^4002^0:4:0
 @q^4004^0:4:0
 @q^4005^0:4:0
 @q^4006^0:4:0
 @q^4019^0:2:0
 @q^4021^0:2:0
 @q^4023^0:2:0
+@q^4025^0:2:0
 @q^4026^0:2:0
 @q^4092^0:15:0
+@q^4096^1:15:0
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4422^1:0:0
 @q^4424^1:0:0
 @q^4460^0:15:0
 @q^4552^0:15:0
@@ -585,12 +624,16 @@ GoldScout-export 5^5anzma7ubzn2^14
 @q^8397^2:9:0
 @q^8483^1:12:0
 @q^8548^1:0:0
+@q^8705^2:12:0
 @q^8707^1:12:0
 @q^8723^1:12:0
+@q^8973^1:12:0
 @q^9234^1:12:0
 @q^9238^1:12:0
 @q^9242^0:15:0
 @q^9243^2:4:0
+@q^9247^1:12:0
+@q^9248^1:12:0
 @q^9259^1:15:0
 @q^9294^2:9:0
 @q^9355^0:15:0
@@ -612,6 +655,9 @@ GoldScout-export 5^5anzma7ubzn2^14
 @q^11118^3:4:0
 @q^11204^2:9:0
 @q^11391^0:15:0
+@q^11408^0:15:0
+@q^11409^0:15:0
+@q^11410^0:15:0
 @q^11416^0:15:0
 @q^11418^0:15:0
 @q^12037^1:7:1
@@ -623,8 +669,12 @@ GoldScout-export 5^5anzma7ubzn2^14
 @q^12208^1:7:1
 @q^12238^1:0:0
 @q^12470^3:4:0
+@q^13051^3:2:0
 @q^14172^2:4:0
 @q^14224^2:4:0
+@q^14230^2:4:0
+@q^14781^2:4:0
+@q^14828^2:4:0
 @q^14833^2:4:0
 @q^15215^2:2:0
 @q^15243^2:2:0
@@ -634,6 +684,7 @@ GoldScout-export 5^5anzma7ubzn2^14
 @q^15624^2:4:0
 @q^15798^0:15:0
 @q^17057^1:15:0
+@q^17058^1:15:0
 @q^18082^3:2:0
 @q^19935^0:15:0
 @q^19936^0:15:0
@@ -647,6 +698,7 @@ GoldScout-export 5^5anzma7ubzn2^14
 @q^248693^1:0:1
 @q^248694^1:0:1
 @q^248695^1:0:1
+@q^249513^2:9:0
 @q^255726^2:9:0
 @q^262889^3:0:0
 @q^265357^1:12:0
@@ -690,6 +742,7 @@ GoldScout-export 5^5anzma7ubzn2^14
 @m^1435^Swamp of Sorrows
 @m^1438^Teldrassil
 @m^1439^Darkshore
+@m^1444^Feralas
 @m^1445^Dustwallow Marsh
 @m^1446^Tanaris
 @m^2548^Riverglades
@@ -2060,6 +2113,20 @@ GoldScout-export 5^5anzma7ubzn2^14
 @a^4851^46:1,66:1,67:1
 @a^4856^46:1,87:1
 @a^4872^67:1
+@a^5255^169:1
+@a^5260^190:1,211:1
+@a^5268^211:2,231:1
+@a^5286^165:1,176:1,185:10,186:2
+@a^5292^211:2,230:9,231:9
+@a^5293^230:19,250:10
+@a^5295^230:27,231:2
+@a^5331^186:1,205:3,206:1,225:1
+@a^5332^205:1
+@a^5333^265:6,285:1
+@a^5334^245:3
+@a^5335^205:5,225:2
+@a^5336^245:2,265:14
+@a^5337^205:2,225:2,226:1
 @a^5422^112:1,113:2
 @a^5425^133:1
 @a^5615^132:2,153:2
@@ -2068,7 +2135,9 @@ GoldScout-export 5^5anzma7ubzn2^14
 @a^5618^91:1,112:2,132:9
 @a^5623^153:3
 @a^7847^132:1
+@a^7848^211:1
 @a^7855^174:1
+@a^8136^285:1
 @a^8996^153:1
 @a^14123^153:1
 @a^254560^169:1,189:11,190:1,209:2

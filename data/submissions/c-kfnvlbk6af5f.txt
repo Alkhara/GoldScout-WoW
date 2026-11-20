@@ -1,4 +1,4 @@
-GoldScout-export 5^kfnvlbk6af5f^15
+GoldScout-export 5^kfnvlbk6af5f^16
 232^1^0^23^23^1424^0.3330^0.3454^1^Farmer Ray^4538:1:1^
 2244^6^0^21^22^1424^0.7756^0.4205^6^Syndicate Shadow Mage^1205:2:2,1819:1:1,4306:2:2^
 2250^2^0^33^33^1416^0.4055^0.7347^2^Mountain Yeti^^
@@ -39,6 +39,7 @@ GoldScout-export 5^kfnvlbk6af5f^15
 2451^1^0^25^25^1424^0.3545^0.4548^1^Farmer Kalaba^4538:1:1^
 2503^1^0^28^28^1424^0.2862^0.5741^1^Hillsbrad Foreman^4306:1:2^
 2623^11^0^32^33^1416^0.1843^0.9033^6^Spirit of Old^^
+2955^14^0^1^2^1412^0.4792^0.8336^14^Plainstrider^1367:1:1,1368:1:1,1374:1:1,2211:1:1,2656:1:1,4739:7:7,4740:7:7,4757:8:8,7096:7:7,7097:1:1^
 2971^1^0^8^9^1412^0.4163^0.2159^1^Taloned Swoop^4776:1:1,6889:1:1^
 3560^2^0^27^27^1441^0.3432^0.3706^2^Healing Ward^^
 3566^1^0^9^9^1412^0.4069^0.2368^1^Flatland Prowler^4814:1:1^
@@ -79,6 +80,9 @@ GoldScout-export 5^kfnvlbk6af5f^15
 @i^929^Healing Potion
 @i^1081^Crisp Spider Meat
 @i^1205^Melon Juice
+@i^1367^Ragged Leather Boots
+@i^1368^Ragged Leather Gloves
+@i^1374^Frayed Shoes
 @i^1686^Bristly Whisker
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
@@ -87,9 +91,11 @@ GoldScout-export 5^kfnvlbk6af5f^15
 @i^1828^Stone War Axe
 @i^1830^Long Bastard Sword
 @i^1831^Oaken War Staff
+@i^2211^Bent Large Shield
 @i^2222^Tower Shield
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2656^Flimsy Chain Vest
 @i^2783^Shoddy Blunderbuss
 @i^2785^Stiff Recurve Bow
 @i^3167^Thick Spider Hair
@@ -113,6 +119,9 @@ GoldScout-export 5^kfnvlbk6af5f^15
 @i^4338^Mageweave Cloth
 @i^4538^Snapvine Watermelon
 @i^4553^Jagged Piece of Stone
+@i^4739^Plainstrider Meat
+@i^4740^Plainstrider Feather
+@i^4757^Cracked Egg Shells
 @i^4776^Ruffled Feather
 @i^4784^Lifeless Stone
 @i^4814^Discolored Fang
@@ -132,6 +141,8 @@ GoldScout-export 5^kfnvlbk6af5f^15
 @i^6568^Shimmering Trousers of the Owl
 @i^6826^Brilliant Scale
 @i^6889^Small Egg
+@i^7096^Plucked Feather
+@i^7097^Leg Meat
 @i^8150^Deeprock Salt
 @i^12564^Assassination Note
 @i^12884^Arnak's Hoof
@@ -147,6 +158,9 @@ GoldScout-export 5^kfnvlbk6af5f^15
 @q^929^1:0:0
 @q^1081^1:7:1
 @q^1205^1:0:0
+@q^1367^0:4:0
+@q^1368^0:4:0
+@q^1374^0:4:0
 @q^1686^0:15:0
 @q^1708^1:0:0
 @q^1710^1:0:0
@@ -155,9 +169,11 @@ GoldScout-export 5^kfnvlbk6af5f^15
 @q^1828^0:2:0
 @q^1830^0:2:0
 @q^1831^0:2:0
+@q^2211^0:4:0
 @q^2222^0:4:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2656^0:4:0
 @q^2783^0:2:0
 @q^2785^0:2:0
 @q^3167^0:15:0
@@ -181,6 +197,9 @@ GoldScout-export 5^kfnvlbk6af5f^15
 @q^4338^1:7:1
 @q^4538^1:0:0
 @q^4553^0:15:0
+@q^4739^1:12:0
+@q^4740^1:12:0
+@q^4757^0:15:0
 @q^4776^0:15:0
 @q^4784^0:15:0
 @q^4814^0:15:0
@@ -200,6 +219,8 @@ GoldScout-export 5^kfnvlbk6af5f^15
 @q^6568^2:4:0
 @q^6826^0:15:0
 @q^6889^1:7:1
+@q^7096^0:15:0
+@q^7097^1:0:0
 @q^8150^1:7:1
 @q^12564^1:12:0
 @q^12884^1:0:0
@@ -619,6 +640,7 @@ GoldScout-export 5^kfnvlbk6af5f^15
 @a^2451^187:1
 @a^2503^225:1
 @a^2623^363:6
+@a^2955^309:1,328:3,329:5,330:1,349:2,350:2
 @a^2971^88:1
 @a^3560^146:2
 @a^3566^88:1

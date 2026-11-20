@@ -1,4 +1,4 @@
-GoldScout-export 5^o4yaer1vs575^15
+GoldScout-export 6^o4yaer1vs575^16
 3^10^0^24^25^1431^0.2289^0.3653^10^Flesh Eater^887:1:1,929:1:1,1129:5:5,2589:1:1,2592:2:3,3048:1:1,4606:1:1,5529:1:1,6530:1:1^
 40^24^0^6^7^1429^0.6156^0.5278^24^Kobold Miner^118:1:1,772:8:8,773:8:8,1181:1:1,1389:1:1,1418:1:1,1419:1:1,1423:1:1,2589:7:12,2648:1:1,4536:4:4,248001:7:7^
 43^1^0^7^7^1429^0.6110^0.4724^1^Mine Spider^1476:1:1^
@@ -53,6 +53,12 @@ GoldScout-export 5^o4yaer1vs575^15
 948^9^0^25^26^1431^0.2295^0.3649^9^Rotted One^887:2:2,1129:2:2,2592:2:3,4606:1:1,5529:1:1,6530:2:2,7307:1:1^
 949^2^0^25^26^1431^0.2032^0.4333^2^Carrion Recluse^1288:1:1,2251:1:1,3174:1:1,4428:1:1^
 1110^13^0^27^28^1431^0.1661^0.3668^13^Skeletal Raider^1205:1:1,4306:4:7^
+1172^4^0^10^11^1432^0.2702^0.4181^4^Tunnel Rat Vermin^2589:1:1,2646:1:1,2967:1:1,3110:1:1^
+1173^3^0^10^11^1432^0.2706^0.4222^3^Tunnel Rat Scout^1415:1:1,2589:2:4,3110:2:2^
+1176^7^0^11^12^1432^0.2637^0.4244^7^Tunnel Rat Forager^2589:3:5,2957:1:1,3110:4:4^
+1186^1^0^12^12^1432^0.2678^0.4049^1^Elder Black Bear^3173:1:1^
+1195^4^0^10^11^1432^0.3003^0.4526^4^Forest Lurker^1081:1:1,1475:1:1,3167:1:1,5465:2:3^
+1202^2^0^11^11^1432^0.2585^0.4248^2^Tunnel Rat Kobold^3110:1:1^
 1251^3^0^28^29^1431^0.3764^0.8093^3^Splinter Fist Firemonger^2592:1:2,3770:1:1,248687:1:1^
 1270^1^0^30^30^1431^0.7657^0.3494^1^Fetid Corpse^3385:1:1^
 1922^2^0^7^8^1429^0.6363^0.6457^2^Gray Forest Wolf^2672:2:2,5572:1:1^
@@ -181,6 +187,7 @@ GoldScout-export 5^o4yaer1vs575^15
 @i^1411^Withered Staff
 @i^1413^Feeble Sword
 @i^1414^Cracked Sledge
+@i^1415^Carpenter's Mallet
 @i^1417^Beaten Battle Axe
 @i^1418^Worn Leather Belt
 @i^1419^Worn Leather Boots
@@ -219,6 +226,7 @@ GoldScout-export 5^o4yaer1vs575^15
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2643^Loose Chain Bracers
+@i^2646^Loose Chain Pants
 @i^2648^Loose Chain Vest
 @i^2672^Stringy Wolf Meat
 @i^2766^Deft Stiletto
@@ -226,14 +234,19 @@ GoldScout-export 5^o4yaer1vs575^15
 @i^2774^Rust-covered Blunderbuss
 @i^2794^An Old History Book
 @i^2835^Rough Stone
+@i^2957^Journeyman's Vest
 @i^2960^Journeyman's Gloves
 @i^2962^Burnt Leather Breeches
+@i^2967^Warrior's Boots
 @i^2969^Spellbinder Vest
 @i^3000^Brood Mother Carapace
 @i^3013^Scroll of Protection
 @i^3048^Lambent Scale Legguards
+@i^3110^Tunnel Rat Ear
+@i^3167^Thick Spider Hair
 @i^3170^Large Bear Tooth
 @i^3171^Broken Boar Tusk
+@i^3173^Bear Meat
 @i^3174^Spider Ichor
 @i^3182^Spider's Silk
 @i^3186^Viking Sword of Intellect
@@ -361,6 +374,7 @@ GoldScout-export 5^o4yaer1vs575^15
 @q^1411^0:2:0
 @q^1413^0:2:0
 @q^1414^0:2:0
+@q^1415^0:2:0
 @q^1417^0:2:0
 @q^1418^0:4:0
 @q^1419^0:4:0
@@ -399,6 +413,7 @@ GoldScout-export 5^o4yaer1vs575^15
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2643^0:4:0
+@q^2646^0:4:0
 @q^2648^0:4:0
 @q^2672^1:7:1
 @q^2766^0:2:0
@@ -406,14 +421,19 @@ GoldScout-export 5^o4yaer1vs575^15
 @q^2774^0:2:0
 @q^2794^1:12:0
 @q^2835^1:7:1
+@q^2957^2:4:0
 @q^2960^1:4:0
 @q^2962^2:4:0
+@q^2967^1:4:0
 @q^2969^2:4:0
 @q^3000^2:4:0
 @q^3013^1:0:0
 @q^3048^2:4:0
+@q^3110^1:12:0
+@q^3167^0:15:0
 @q^3170^0:15:0
 @q^3171^0:15:0
+@q^3173^1:7:1
 @q^3174^1:7:1
 @q^3182^1:7:1
 @q^3186^2:2:0
@@ -514,6 +534,7 @@ GoldScout-export 5^o4yaer1vs575^15
 @m^1413^The Barrens
 @m^1429^Elwynn Forest
 @m^1431^Duskwood
+@m^1432^Loch Modan
 @m^1433^Redridge Mountains
 @m^1439^Darkshore
 @m^1440^Ashenvale
@@ -1037,6 +1058,12 @@ GoldScout-export 5^o4yaer1vs575^15
 @a^948^124:3,144:5,145:1
 @a^949^163:1,164:1
 @a^1110^123:4,143:9
+@a^1172^165:4
+@a^1173^165:3
+@a^1176^165:7
+@a^1186^165:1
+@a^1195^165:1,166:1,185:2
+@a^1202^165:2
 @a^1251^307:2,327:1
 @a^1270^135:1
 @a^1922^252:2

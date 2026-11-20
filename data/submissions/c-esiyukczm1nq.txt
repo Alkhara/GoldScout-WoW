@@ -1,4 +1,4 @@
-GoldScout-export 6^esiyukczm1nq^7
+GoldScout-export 6^esiyukczm1nq^8
 1501^9^0^1^1^1420^0.3128^0.6346^9^Mindless Zombie^159:1:1,1364:1:1,2589:3:3,2650:1:1,3365:1:1,4604:2:2^
 1502^8^0^1^2^1420^0.3186^0.6248^8^Wretched Zombie^1364:1:1,2589:2:2,3365:1:1,4604:1:1^
 1504^10^0^2^3^1420^0.2849^0.5920^10^Young Night Web Spider^1364:1:1,1369:1:1,1374:1:1,1380:1:1,1476:5:5,2652:1:1,3363:1:1,7100:5:5,7101:1:1^
@@ -9,9 +9,16 @@ GoldScout-export 6^esiyukczm1nq^7
 1509^3^0^2^3^1420^0.3477^0.6504^3^Ragged Scavenger^1366:1:1,3265:2:2,7073:2:2^
 1512^2^0^1^2^1420^0.3398^0.6721^2^Duskbat^3264:2:2,7074:2:2^
 1513^4^0^3^4^1420^0.3475^0.6525^4^Mangy Duskbat^3264:4:4,4865:1:1,7073:2:2,7074:2:2^
+1525^1^0^6^6^1420^0.5137^0.5838^1^Rotting Dead^2589:1:1^
+1535^1^0^6^6^1420^0.3516^0.4947^1^Scarlet Warrior^2589:1:1^
+1547^2^0^5^6^1420^0.4719^0.5290^2^Decrepit Darkhound^2672:1:1^
+1548^1^0^8^8^1420^0.4932^0.6008^1^Cursed Darkhound^^
 1667^1^0^5^5^1420^0.3585^0.6840^1^Meven Korgal^1372:1:1,2885:1:1^
 1890^12^0^2^3^1420^0.3425^0.6445^12^Rattlecage Skeleton^159:1:1,1370:1:1,1372:2:2,2589:4:4,2656:1:1,4604:3:3^
 1919^1^0^5^5^1420^0.3655^0.6183^1^Samuel Fipps^159:1:1,16333:1:1^
+1934^2^0^6^7^1420^0.3548^0.5046^2^Tirisfal Farmer^118:1:1^
+1935^3^0^5^6^1420^0.3769^0.5129^3^Tirisfal Farmhand^2650:1:1,2773:1:1^
+1936^1^0^8^8^1420^0.3453^0.5154^1^Farmer Solliden^5571:1:1^
 3099^12^0^6^7^1411^0.4245^0.4536^12^Dire Mottled Boar^769:12:12,771:2:2,3171:6:6^
 3100^10^0^8^9^1411^0.3673^0.4811^10^Elder Mottled Boar^727:1:1,769:7:7,771:1:1,3171:5:5,211785:1:1,211787:1:1^
 3122^1^0^7^7^1411^0.3987^0.4827^1^Bloodtalon Taillasher^^
@@ -37,6 +44,7 @@ GoldScout-export 6^esiyukczm1nq^7
 267308^2^0^18^19^1413^0.5791^0.2554^2^Razormane Flesheater^2589:1:2^
 267314^2^0^18^19^1413^0.5795^0.2556^2^Razormane Berserker^2589:1:2^
 271961^6^0^2^3^1420^0.2495^0.6030^6^Webbed Forsaken^^
+@i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
 @i^414^Dalaran Sharp
 @i^727^Notched Shortsword of the Monkey
@@ -66,6 +74,8 @@ GoldScout-export 6^esiyukczm1nq^7
 @i^2652^Flimsy Chain Cloak
 @i^2653^Flimsy Chain Gloves
 @i^2656^Flimsy Chain Vest
+@i^2672^Stringy Wolf Meat
+@i^2773^Cracked Shortbow
 @i^2778^Cheap Blunderbuss
 @i^2885^Scarlet Crusade Documents
 @i^3171^Broken Boar Tusk
@@ -92,6 +102,7 @@ GoldScout-export 6^esiyukczm1nq^7
 @i^5124^Small Raptor Tooth
 @i^5134^Small Furry Paw
 @i^5165^Sunscale Feather
+@i^5571^Small Black Pouch
 @i^5635^Sharp Claw
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
@@ -104,6 +115,7 @@ GoldScout-export 6^esiyukczm1nq^7
 @i^211787^Scroll: LOWER PING WHOMEVER
 @i^248684^Waylaid Crate: Apprentice Textiles
 @i^250187^Recipe: Tasty Raptor Bites
+@q^118^1:0:0
 @q^159^1:0:0
 @q^414^1:0:0
 @q^727^2:2:0
@@ -133,6 +145,8 @@ GoldScout-export 6^esiyukczm1nq^7
 @q^2652^0:4:0
 @q^2653^0:4:0
 @q^2656^0:4:0
+@q^2672^1:7:1
+@q^2773^0:2:0
 @q^2778^0:2:0
 @q^2885^1:12:0
 @q^3171^0:15:0
@@ -159,6 +173,7 @@ GoldScout-export 6^esiyukczm1nq^7
 @q^5124^0:15:0
 @q^5134^1:12:0
 @q^5165^1:12:0
+@q^5571^1:1:0
 @q^5635^1:7:1
 @q^7073^0:15:0
 @q^7074^0:15:0
@@ -900,9 +915,16 @@ GoldScout-export 6^esiyukczm1nq^7
 @a^1509^246:1,266:1,267:1
 @a^1512^266:2
 @a^1513^246:1,266:1,267:2
+@a^1525^230:1
+@a^1535^187:1
+@a^1547^207:1,210:1
+@a^1548^249:1
 @a^1667^267:1
 @a^1890^246:9,266:3
 @a^1919^247:1
+@a^1934^187:1,207:1
+@a^1935^207:3
+@a^1936^206:1
 @a^3099^168:5,169:2,188:4,208:1
 @a^3100^167:2,187:6,207:2
 @a^3122^187:1
