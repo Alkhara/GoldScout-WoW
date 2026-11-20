@@ -1,4 +1,4 @@
-GoldScout-export 5^0dnmy33hd98r^13
+GoldScout-export 5^0dnmy33hd98r^14
 597^1^0^36^36^1434^0.2290^0.1125^1^Berserker Bloodscalp^^
 660^5^0^37^37^1434^0.2460^0.0991^5^Sorcier-docteur Bloodscalp^2732:1:1,2745:1:1,4306:3:7^
 667^8^0^39^40^1434^0.4597^0.3553^8^Guerrier Skullsplitter^1520:1:1,3771:1:1,4306:3:4,8153:1:2^
@@ -33,11 +33,18 @@ GoldScout-export 5^0dnmy33hd98r^13
 1114^1^0^37^38^1434^0.4757^0.3580^1^Foudroyeur de la Jungle^2799:1:1^
 1151^3^0^35^36^1434^0.2553^0.1905^3^Crocilisque marin^770:3:3,3667:1:1,12037:2:2^
 1152^1^0^36^36^1434^0.4318^0.1567^1^Crocilisque Gueule d'acier^3667:1:1^
+2242^1^0^36^36^1416^0.5804^0.4047^1^Espionne du Syndicat^4306:1:1^
+2243^4^0^36^36^1416^0.4616^0.2223^4^Sentinelle du Syndicat^4338:1:1,5113:1:1^
 2246^1^0^38^39^1416^0.3590^0.1537^1^Assassin du Syndicat^^
+2252^38^0^34^35^1416^0.5144^0.4416^38^Ogre Cassecrête^2592:4:11,3771:2:2,3779:1:1,3801:1:1,4306:8:11,8747:1:1^
+2253^52^0^35^36^1416^0.5015^0.4052^52^Brute Cassecrête^1708:2:2,1710:3:3,2592:2:4,3771:1:1,3778:1:1,4306:6:10^
+2318^1^0^36^36^1416^0.4771^0.1756^1^Mage de l'ombre d'Argus^4306:1:2^
 2349^1^0^24^25^1424^0.3565^0.5974^1^Rampemousse géante^1081:1:1,2251:1:1^
 2354^7^0^22^23^1424^0.4766^0.4465^7^Ours gris vicieux^2940:3:3,3702:3:3,3730:4:4,5635:1:1^
 2356^2^0^25^26^1424^0.3904^0.5411^2^Vieil ours gris^2940:1:1,3730:1:1,11406:1:1,11407:1:1^
 2384^4^0^23^24^1424^0.4581^0.4392^4^Lion des montagnes affamé^3731:3:3,5136:2:2^
+2407^1^0^34^34^1416^0.4526^0.2249^1^Lion des montagnes massif^^
+2453^1^0^39^39^1416^0.5148^0.4774^1^Lo'Grosh^^
 2635^1^0^38^38^1434^0.2210^0.1550^1^Ancien crocilisque marin^770:1:1,12037:1:1^
 3974^3^0^0^0^0^0.0000^0.0000^0^^3456:1:1,7710:1:1,7756:2:2^
 3975^3^0^0^0^0^0.0000^0.0000^0^^4306:1:1,7717:2:2,7718:1:1^
@@ -171,6 +178,7 @@ GoldScout-export 5^0dnmy33hd98r^13
 @i^3731^Viande de lion
 @i^3771^Jarret de cochon sauvage
 @i^3778^Arc composite de sarcasme
+@i^3779^Hache de guerre impitoyable
 @i^3780^Mousquet à canon long
 @i^3781^Claymore large
 @i^3783^Cimeterre léger
@@ -183,6 +191,7 @@ GoldScout-export 5^0dnmy33hd98r^13
 @i^3795^Cape entrelacée
 @i^3796^Gants entrelacés
 @i^3799^Gilet entrelacé
+@i^3801^Bottes en cuir durci
 @i^3803^Cape en cuir durci
 @i^3804^Gants en cuir durci
 @i^3807^Tunique en cuir durci
@@ -214,6 +223,7 @@ GoldScout-export 5^0dnmy33hd98r^13
 @i^4729^Mantelet de l'aurore
 @i^4732^Cape glyphée
 @i^5009^Anneau d'influence mentale
+@i^5113^Marque du Syndicat
 @i^5136^Oreille de fourrure déchirée
 @i^5214^Baguette d'Eventide
 @i^5215^Baguette de braise d'esprit
@@ -366,6 +376,7 @@ GoldScout-export 5^0dnmy33hd98r^13
 @q^3731^1:7:1
 @q^3771^1:0:0
 @q^3778^0:2:0
+@q^3779^0:2:0
 @q^3780^0:2:0
 @q^3781^0:2:0
 @q^3783^0:2:0
@@ -378,6 +389,7 @@ GoldScout-export 5^0dnmy33hd98r^13
 @q^3795^0:4:0
 @q^3796^0:4:0
 @q^3799^0:4:0
+@q^3801^0:4:0
 @q^3803^0:4:0
 @q^3804^0:4:0
 @q^3807^0:4:0
@@ -409,6 +421,7 @@ GoldScout-export 5^0dnmy33hd98r^13
 @q^4729^2:4:0
 @q^4732^2:4:0
 @q^5009^2:4:0
+@q^5113^0:15:0
 @q^5136^0:15:0
 @q^5214^2:2:0
 @q^5215^2:2:0
@@ -1010,11 +1023,18 @@ GoldScout-export 5^0dnmy33hd98r^13
 @a^1114^149:1
 @a^1151^64:1,85:2
 @a^1152^68:1
+@a^2242^171:1
+@a^2243^89:4
 @a^2246^67:1
+@a^2252^129:1,148:1,150:2,169:4,170:5,171:2,190:23
+@a^2253^129:18,149:2,150:1,169:4,170:11,189:1,190:15
+@a^2318^69:1
 @a^2349^227:1
 @a^2354^149:1,169:2,189:4
 @a^2356^208:1,226:1
 @a^2384^148:1,189:3
+@a^2407^89:1
+@a^2453^190:1
 @a^2635^64:1
 @a^4632^173:2,193:1,194:1
 @a^4633^173:1,174:1,194:1

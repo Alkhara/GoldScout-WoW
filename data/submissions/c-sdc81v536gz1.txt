@@ -1,4 +1,4 @@
-GoldScout-export 5^sdc81v536gz1^9
+GoldScout-export 5^sdc81v536gz1^10
 1121^7^0^8^9^1426^0.2524^0.5118^7^Frostmane Snowstrider^767:1:1,1413:1:1,2589:2:3^
 1122^6^0^9^10^1426^0.2171^0.5291^6^Frostmane Hideskinner^2138:1:1,2589:1:1^
 1123^8^0^8^9^1426^0.2568^0.5101^8^Frostmane Headhunter^159:1:1,1414:1:1,2589:3:3^
@@ -17,18 +17,26 @@ GoldScout-export 5^sdc81v536gz1^9
 1988^8^0^2^3^1438^0.5589^0.4496^8^Grell^117:1:1,159:2:2,1370:1:1,2589:4:4,3297:7:7,3363:1:1^
 1989^2^0^3^4^1438^0.5528^0.4461^2^Grellkin^117:1:1,2589:1:1,3297:1:1,3363:1:1^
 1994^6^0^5^5^1438^0.5674^0.2643^6^Githyiss the Vile^1476:3:3,2649:1:1,3363:1:1,3365:1:1,7100:1:1,7101:1:1,277190:3:3^
+1995^2^0^5^6^1438^0.6448^0.5817^2^Strigid Owl^3411:1:1,4757:1:1,6889:1:1,7097:1:1^
+2006^1^0^6^6^1438^0.6602^0.6047^1^Gnarlpine Ursa^118:1:1^
+2008^2^0^6^7^1438^0.6663^0.5856^2^Gnarlpine Warrior^^
+2022^16^0^5^6^1438^0.5872^0.7057^16^Timberling^785:1:1,1370:1:1,1377:1:1,1415:1:1,2210:1:1,2449:1:1,4604:2:2,5168:8:8^
 2031^8^0^1^1^1438^0.6133^0.4313^8^Young Nightsaber^2654:1:1,3363:2:2,4865:3:3,7073:2:2,7074:3:3^
 2032^7^0^2^2^1438^0.6086^0.3540^7^Mangy Nightsaber^1368:1:1,1372:1:1,1374:1:1,2211:1:1,4865:2:2,7073:2:2,7074:4:4^
+2042^1^0^6^6^1438^0.6400^0.5664^1^Nightsaber^4813:1:1^
 3809^2^0^21^21^1440^0.4272^0.6106^2^Ashenvale Bear^2940:1:1,3702:1:1,3730:2:2,5635:1:1,250182:1:1^
 4006^2^0^19^20^1442^0.7749^0.4323^2^Deepmoss Webspinner^1081:1:1,3174:1:1,3931:1:1,15248:1:1^
 4012^9^0^21^22^1442^0.5226^0.4408^9^Pridewing Wyvern^5135:1:1,5136:5:5,5808:4:4^
 4014^4^0^22^23^1442^0.5192^0.4445^4^Pridewing Consort^5136:2:2,5808:1:1^
+275703^1^0^6^6^1438^0.6063^0.6693^1^Lasher Sproutling^4604:1:1^
 @i^117^Tough Jerky
+@i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
 @i^727^Notched Shortsword of Agility
 @i^767^Long Bo Staff
 @i^769^Chunk of Boar Meat
 @i^771^Chipped Boar Tusk
+@i^785^Mageroyal
 @i^1081^Crisp Spider Meat
 @i^1368^Ragged Leather Gloves
 @i^1370^Ragged Leather Bracers
@@ -39,10 +47,12 @@ GoldScout-export 5^sdc81v536gz1^9
 @i^1380^Frayed Robe
 @i^1413^Feeble Sword
 @i^1414^Cracked Sledge
+@i^1415^Carpenter's Mallet
 @i^1476^Snapped Spider Limb
 @i^2138^Sharpened Letter Opener
 @i^2210^Battered Buckler
 @i^2211^Bent Large Shield
+@i^2449^Earthroot
 @i^2589^Linen Cloth
 @i^2649^Flimsy Chain Belt
 @i^2650^Flimsy Chain Boots
@@ -62,21 +72,27 @@ GoldScout-export 5^sdc81v536gz1^9
 @i^3300^Rabbit's Foot
 @i^3363^Frayed Belt
 @i^3365^Frayed Bracers
+@i^3411^Strigid Owl Feather
 @i^3627^Fang of Vagash
 @i^3702^Bear Gall Bladder
 @i^3730^Big Bear Meat
 @i^3931^Poisoned Spider Fang
+@i^4604^Forest Mushroom Cap
+@i^4757^Cracked Egg Shells
 @i^4813^Small Leather Collar
 @i^4814^Discolored Fang
 @i^4865^Ruined Pelt
 @i^5135^Thin Black Claw
 @i^5136^Torn Furry Ear
 @i^5166^Webwood Venom Sac
+@i^5168^Timberling Seed
 @i^5635^Sharp Claw
 @i^5808^Pridewing Venom Sac
 @i^6308^Raw Bristle Whisker Catfish
+@i^6889^Small Egg
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
+@i^7097^Leg Meat
 @i^7098^Splintered Tusk
 @i^7100^Sticky Ichor
 @i^7101^Bug Eye
@@ -86,11 +102,13 @@ GoldScout-export 5^sdc81v536gz1^9
 @i^250182^Recipe: Bear Brisket
 @i^277190^Fang of Githyiss
 @q^117^1:0:0
+@q^118^1:0:0
 @q^159^1:0:0
 @q^727^2:2:0
 @q^767^1:2:0
 @q^769^1:7:1
 @q^771^0:15:0
+@q^785^1:7:1
 @q^1081^1:7:1
 @q^1368^0:4:0
 @q^1370^0:4:0
@@ -101,10 +119,12 @@ GoldScout-export 5^sdc81v536gz1^9
 @q^1380^0:4:0
 @q^1413^0:2:0
 @q^1414^0:2:0
+@q^1415^0:2:0
 @q^1476^0:15:0
 @q^2138^0:2:0
 @q^2210^0:4:0
 @q^2211^0:4:0
+@q^2449^1:7:1
 @q^2589^1:7:1
 @q^2649^0:4:0
 @q^2650^0:4:0
@@ -124,21 +144,27 @@ GoldScout-export 5^sdc81v536gz1^9
 @q^3300^0:15:0
 @q^3363^0:4:0
 @q^3365^0:4:0
+@q^3411^1:12:0
 @q^3627^1:12:0
 @q^3702^0:15:0
 @q^3730^1:7:1
 @q^3931^0:15:0
+@q^4604^1:0:0
+@q^4757^0:15:0
 @q^4813^0:15:0
 @q^4814^0:15:0
 @q^4865^0:15:0
 @q^5135^0:15:0
 @q^5136^0:15:0
 @q^5166^1:12:0
+@q^5168^1:12:0
 @q^5635^1:7:1
 @q^5808^1:12:0
 @q^6308^1:7:1
+@q^6889^1:7:1
 @q^7073^0:15:0
 @q^7074^0:15:0
+@q^7097^1:0:0
 @q^7098^0:15:0
 @q^7100^0:15:0
 @q^7101^0:15:0
@@ -920,11 +946,17 @@ GoldScout-export 5^sdc81v536gz1^9
 @a^1988^171:3,191:5
 @a^1989^171:2
 @a^1994^111:6
+@a^1995^232:1,252:1
+@a^2006^253:1
+@a^2008^233:2
+@a^2022^271:5,272:1,291:7,292:3
 @a^2031^172:8
 @a^2032^131:1,132:1,151:2,152:3
+@a^2042^232:1
 @a^3809^228:1,248:1
 @a^4006^175:2
 @a^4012^169:1,170:6,190:2
 @a^4014^170:2,190:2
+@a^275703^272:1
 @f^1442^0^6^132^6308:1:1,21071:5:5^169:6
 @l^0^enUS

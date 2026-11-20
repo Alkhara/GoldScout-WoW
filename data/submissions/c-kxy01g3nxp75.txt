@@ -1,4 +1,4 @@
-GoldScout-export 5^kxy01g3nxp75^3
+GoldScout-export 5^kxy01g3nxp75^4
 667^24^0^39^40^1434^0.4596^0.3767^24^Skullsplitter Warrior^1520:7:7,1524:3:3,1710:1:1,3771:1:1,3779:1:1,3780:1:1,3799:1:1,3916:7:7,4306:7:14,4338:1:1,8151:2:2^
 669^20^0^41^42^1434^0.4549^0.4191^20^Skullsplitter Hunter^1520:7:7,1524:4:4,1645:3:3,2745:1:1,2749:1:1,3916:4:4,4306:1:1,4338:3:3,4599:1:1,8151:4:4,248693:1:1^
 670^7^0^41^42^1434^0.4555^0.4188^7^Skullsplitter Witch Doctor^1520:4:4,1524:2:2,3916:1:1,4338:3:6^
@@ -59,6 +59,7 @@ GoldScout-export 5^kxy01g3nxp75^3
 2676^1^0^40^41^1434^0.4095^0.4354^1^Compact Harvest Reaper^^
 2680^1^0^46^47^1425^0.6403^0.6893^1^Vilebranch Wolf Pup^4583:1:1^
 2681^2^0^50^51^1425^0.5871^0.6999^2^Vilebranch Raiding Wolf^4583:2:2,12203:1:1^
+2686^1^0^44^44^1425^0.3557^0.6740^1^Witherbark Broodguard^4585:1:1,9322:1:1^
 2691^8^0^43^44^1425^0.3309^0.5009^8^Highvale Outrunner^3928:1:1,4338:4:6,4736:1:1^
 2692^9^0^44^45^1425^0.3239^0.4812^9^Highvale Scout^4338:2:2,4421:1:1^
 2693^11^0^45^46^1425^0.3097^0.4614^11^Highvale Marksman^3928:1:1,3941:1:1,4306:3:5,4338:1:2,4602:1:1^
@@ -84,6 +85,7 @@ GoldScout-export 5^kxy01g3nxp75^3
 5475^3^0^47^48^1446^0.4620^0.6553^3^Dunemaul Warlock^1645:1:1,4338:1:2^
 5485^8^0^49^50^1446^0.2964^0.6602^8^Thistleshrub Rootshaper^1645:1:1,3964:1:1,4608:1:1^
 5490^8^0^48^49^1446^0.2898^0.6597^8^Gnarled Thistleshrub^1645:1:1,3821:1:1,10286:1:1^
+7768^4^0^25^25^1425^0.3570^0.6565^4^Witherbark Bloodling^^
 7808^3^0^46^46^1425^0.5794^0.5135^3^Marauding Owlbeast^^
 7809^3^0^47^47^1425^0.6920^0.6221^3^Vilebranch Ambusher^4338:1:3,8153:1:2,9259:1:1^
 7977^1^0^48^48^1425^0.8003^0.5737^1^Gammerita^4555:1:1,19023:1:1^
@@ -165,6 +167,7 @@ GoldScout-export 5^kxy01g3nxp75^3
 @i^4556^Speckled Shell Fragment
 @i^4583^Thick Furry Mane
 @i^4584^Large Trophy Paw
+@i^4585^Dripping Spider Mandible
 @i^4591^Eagle Eye
 @i^4599^Cured Ham Steak
 @i^4602^Moon Harvest Pumpkin
@@ -211,6 +214,7 @@ GoldScout-export 5^kxy01g3nxp75^3
 @i^9260^Volatile Rum
 @i^9294^Recipe: Wildvine Potion
 @i^9320^Witherbark Skull
+@i^9322^Undamaged Venom Sac
 @i^9907^Royal Boots of Shadow Protection
 @i^9953^Chieftain's Headdress of the Owl
 @i^10058^Duskwoven Sandals of Frost Protection
@@ -323,6 +327,7 @@ GoldScout-export 5^kxy01g3nxp75^3
 @q^4556^0:15:0
 @q^4583^0:15:0
 @q^4584^0:15:0
+@q^4585^0:15:0
 @q^4591^0:15:0
 @q^4599^1:0:0
 @q^4602^1:0:0
@@ -369,6 +374,7 @@ GoldScout-export 5^kxy01g3nxp75^3
 @q^9260^1:0:0
 @q^9294^2:9:0
 @q^9320^1:12:0
+@q^9322^1:12:0
 @q^9907^2:4:0
 @q^9953^2:4:0
 @q^10058^2:4:0
@@ -953,6 +959,7 @@ GoldScout-export 5^kxy01g3nxp75^3
 @a^2676^168:1
 @a^2680^272:1
 @a^2681^251:1,311:1
+@a^2686^267:1
 @a^2691^166:1,186:3,206:4
 @a^2692^166:1,185:2,186:5,206:1
 @a^2693^166:4,185:3,186:4
@@ -978,6 +985,7 @@ GoldScout-export 5^kxy01g3nxp75^3
 @a^5475^249:1,269:2
 @a^5485^245:2,265:4,266:2
 @a^5490^245:3,265:4,266:1
+@a^7768^247:2,267:2
 @a^7808^211:3
 @a^7809^253:3
 @a^7977^236:1

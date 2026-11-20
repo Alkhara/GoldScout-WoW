@@ -1,4 +1,4 @@
-GoldScout-export 5^snib5yqjl7jk^9
+GoldScout-export 5^snib5yqjl7jk^10
 205^14^0^28^29^1431^0.6263^0.7451^14^Nightbane Dark Runner^1755:1:1,1756:1:1,10408:1:1^
 533^10^0^27^28^1431^0.6503^0.7028^10^Nightbane Shadow Weaver^2794:1:1,3770:1:1^
 1018^2^0^27^28^1437^0.3557^0.1753^2^Highland Razormaw^1696:1:1,3685:1:1,280103:2:2^
@@ -22,8 +22,8 @@ GoldScout-export 5^snib5yqjl7jk^9
 2089^6^0^25^26^1437^0.2115^0.2379^6^Giant Wetlands Crocolisk^770:1:1,3348:6:6,3667:1:1^
 2240^10^0^32^33^1416^0.5771^0.6708^10^Syndicate Footpad^1707:1:1,3809:1:1,4306:3:4,5113:1:1,6986:1:1,213546:1:1^
 2241^3^0^33^33^1416^0.5844^0.6833^3^Syndicate Thief^^
-2248^52^0^30^31^1424^0.4442^0.2989^52^Cave Yeti^1710:1:1,2221:1:1,3385:1:1,3720:9:9,3771:3:3,3780:1:1,5637:2:2,8747:1:1,15231:2:2^
-2249^29^0^31^32^1424^0.4371^0.2975^29^Ferocious Yeti^3385:1:1,3720:4:4,3781:1:1,3806:1:1,3814:1:1,5637:2:2^
+2248^80^0^30^31^1424^0.4435^0.2996^80^Cave Yeti^1708:1:1,1710:2:2,1711:1:1,2221:1:1,3385:2:2,3720:9:9,3771:5:5,3780:1:1,5637:2:2,8747:1:1,15231:2:2,248692:1:1,248694:1:1^
+2249^50^0^31^32^1424^0.4371^0.2974^50^Ferocious Yeti^1477:1:1,3385:1:1,3720:4:4,3779:1:1,3781:1:1,3792:1:1,3806:1:1,3809:1:1,3814:1:1,5637:2:2^
 2348^1^0^27^27^1424^0.6781^0.7218^1^Elder Moss Creeper^1081:1:1,2251:1:1^
 2356^1^0^26^26^1424^0.3741^0.6618^1^Elder Gray Bear^3730:1:1,11406:1:1^
 2369^8^0^30^31^1424^0.5708^0.6823^8^Daggerspine Shorehunter^5524:3:3,17057:4:4,17058:1:1^
@@ -62,6 +62,7 @@ GoldScout-export 5^snib5yqjl7jk^9
 @i^1205^Melon Juice
 @i^1210^Shadowgem
 @i^1468^Murloc Fin
+@i^1477^Scroll of Agility II
 @i^1497^Calico Cloak
 @i^1514^Rusty Warhammer
 @i^1529^Jade
@@ -69,7 +70,9 @@ GoldScout-export 5^snib5yqjl7jk^9
 @i^1696^Curved Raptor Talon
 @i^1705^Lesser Moonstone
 @i^1707^Stormwind Brie
+@i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
+@i^1711^Scroll of Stamina II
 @i^1725^Large Knapsack
 @i^1730^Worn Mail Belt
 @i^1755^Reinforced Chain Boots
@@ -117,8 +120,10 @@ GoldScout-export 5^snib5yqjl7jk^9
 @i^3731^Lion Meat
 @i^3770^Mutton Chop
 @i^3771^Wild Hog Shank
+@i^3779^Hefty War Axe
 @i^3780^Long-barreled Musket
 @i^3781^Broad Claymore
+@i^3792^Interlaced Belt
 @i^3798^Interlaced Shoulderpads
 @i^3799^Interlaced Vest
 @i^3806^Hardened Leather Shoulderpads
@@ -169,6 +174,8 @@ GoldScout-export 5^snib5yqjl7jk^9
 @i^21228^Mithril Bound Trunk
 @i^211853^Scroll: VOCE WELL
 @i^213546^Scroll: SHOOBEEDOOP
+@i^248692^Waylaid Crate: Expert Ore
+@i^248694^Waylaid Crate: Expert Curiosities
 @i^248704^Waylaid Crate: Apprentice Parts
 @i^249881^Recipe: Root Tea
 @i^271097^Spiritwraith Drape
@@ -188,6 +195,7 @@ GoldScout-export 5^snib5yqjl7jk^9
 @q^1205^1:0:0
 @q^1210^2:7:1
 @q^1468^1:7:1
+@q^1477^1:0:0
 @q^1497^0:4:0
 @q^1514^0:2:0
 @q^1529^2:7:1
@@ -195,7 +203,9 @@ GoldScout-export 5^snib5yqjl7jk^9
 @q^1696^0:15:0
 @q^1705^2:7:1
 @q^1707^1:0:0
+@q^1708^1:0:0
 @q^1710^1:0:0
+@q^1711^1:0:0
 @q^1725^1:1:0
 @q^1730^0:4:0
 @q^1755^0:4:0
@@ -243,8 +253,10 @@ GoldScout-export 5^snib5yqjl7jk^9
 @q^3731^1:7:1
 @q^3770^1:0:0
 @q^3771^1:0:0
+@q^3779^0:2:0
 @q^3780^0:2:0
 @q^3781^0:2:0
+@q^3792^0:4:0
 @q^3798^0:4:0
 @q^3799^0:4:0
 @q^3806^0:4:0
@@ -295,6 +307,8 @@ GoldScout-export 5^snib5yqjl7jk^9
 @q^21228^1:15:0
 @q^211853^1:0:0
 @q^213546^1:0:0
+@q^248692^1:0:1
+@q^248694^1:0:1
 @q^248704^2:0:1
 @q^249881^1:9:0
 @q^271097^3:4:0
@@ -757,8 +771,8 @@ GoldScout-export 5^snib5yqjl7jk^9
 @a^2089^83:1,84:1,85:2,103:2
 @a^2240^271:10
 @a^2241^271:3
-@a^2248^88:1,108:21,109:5,128:14,129:11
-@a^2249^108:14,109:2,128:13
+@a^2248^88:1,108:28,109:9,128:26,129:16
+@a^2249^108:24,109:2,128:24
 @a^2348^293:1
 @a^2356^267:1
 @a^2369^250:1,251:2,271:1,291:4

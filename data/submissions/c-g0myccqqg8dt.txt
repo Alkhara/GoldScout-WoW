@@ -1,10 +1,10 @@
-GoldScout-export 5^g0myccqqg8dt^3
-259052^12^0^38^39^2548^0.5794^0.6044^12^Rog'mar Poacher^3783:1:1,4306:4:8^
+GoldScout-export 5^g0myccqqg8dt^4
+259052^13^0^38^39^2548^0.5839^0.6028^13^Rog'mar Poacher^3783:1:1,4306:4:8^
 259054^5^0^38^39^2548^0.5827^0.5626^5^Wildplains Patriarch^1688:4:4,266888:3:3^
 259055^11^0^38^39^2548^0.5842^0.5597^11^Wildplains Huntress^1686:1:1,1688:2:2,5637:1:1,266888:5:5^
-263307^144^0^37^38^2548^0.6187^0.5939^144^Glade Viper^1465:1:1,1990:1:1,6421:1:1,6444:51:51,6826:79:79,7084:1:1,7444:1:1,9872:1:1,15243:1:1,213543:1:1,213544:2:2,248692:1:1,248693:1:1^
-263343^9^0^37^38^2548^0.6156^0.5699^9^Low Plains Buzzard^1464:5:5,3404:3:3,4043:1:1,5636:1:1,5829:1:1,12037:3:3,213545:1:1^
-263348^7^0^37^38^2548^0.6165^0.5765^7^Roving Tallstrider^5116:1:1,5829:1:1,11416:4:4,11418:1:1,271778:1:1^
+263307^274^0^37^38^2548^0.6197^0.5923^274^Glade Viper^1465:1:1,1990:1:1,3864:1:1,6421:1:1,6444:101:101,6826:140:140,7084:1:1,7444:1:1,7454:1:1,9872:1:1,9890:1:1,15243:2:2,213543:1:1,213544:3:3,248691:1:1,248692:2:2,248693:2:2,262889:1:1^
+263343^11^0^37^38^2548^0.6222^0.5645^11^Low Plains Buzzard^1464:6:6,3404:5:5,4043:1:1,5636:1:1,5829:1:1,12037:4:4,213545:1:1^
+263348^8^0^37^38^2548^0.6146^0.5810^8^Roving Tallstrider^5116:1:1,5829:2:2,11416:4:4,11418:1:1,271778:1:1^
 @i^1464^Buzzard Talon
 @i^1465^Tigerbane
 @i^1686^Bristly Whisker
@@ -12,6 +12,7 @@ GoldScout-export 5^g0myccqqg8dt^3
 @i^1990^Ballast Maul of the Bear
 @i^3404^Buzzard Wing
 @i^3783^Light Scimitar
+@i^3864^Citrine
 @i^4043^Aurora Bracers
 @i^4306^Silk Cloth
 @i^5116^Long Tail Feather
@@ -23,16 +24,20 @@ GoldScout-export 5^g0myccqqg8dt^3
 @i^6826^Brilliant Scale
 @i^7084^Pattern: Crimson Silk Shoulders
 @i^7444^Sentinel Boots of the Falcon
+@i^7454^Knight's Breastplate of the Knight
 @i^9872^Renegade Pauldrons of the Champion
+@i^9890^Huntsman's Cape of Intellect
 @i^11416^Delicate Ribcage
 @i^11418^Hollow Wing Bone
 @i^12037^Mystery Meat
-@i^15243^Deadly Kris of the Bear
+@i^15243^Deadly Kris of the Wolf
 @i^213543^Scroll: UPDOG
 @i^213544^Scroll: TOPAZ YORAK
 @i^213545^Scroll: PEATCHY ATTAX
+@i^248691^Waylaid Crate: Flowering Expert Herbs
 @i^248692^Waylaid Crate: Expert Ore
 @i^248693^Waylaid Crate: Expert Textiles
+@i^262889^Sealed Expert's Writ
 @i^266888^Prized Lion Hide
 @i^271778^Intact Tallstrider Beak
 @q^1464^0:15:0
@@ -42,6 +47,7 @@ GoldScout-export 5^g0myccqqg8dt^3
 @q^1990^2:2:0
 @q^3404^1:7:1
 @q^3783^0:2:0
+@q^3864^2:7:1
 @q^4043^2:4:0
 @q^4306^1:7:1
 @q^5116^1:7:1
@@ -53,7 +59,9 @@ GoldScout-export 5^g0myccqqg8dt^3
 @q^6826^0:15:0
 @q^7084^2:9:0
 @q^7444^2:4:0
+@q^7454^2:4:0
 @q^9872^2:4:0
+@q^9890^2:4:0
 @q^11416^0:15:0
 @q^11418^0:15:0
 @q^12037^1:7:1
@@ -61,8 +69,10 @@ GoldScout-export 5^g0myccqqg8dt^3
 @q^213543^1:0:0
 @q^213544^1:0:0
 @q^213545^1:0:0
+@q^248691^1:0:1
 @q^248692^1:0:1
 @q^248693^1:0:1
+@q^262889^3:0:0
 @q^266888^1:12:0
 @q^271778^1:12:0
 @m^2548^Riverglades
@@ -420,6 +430,9 @@ GoldScout-export 5^g0myccqqg8dt^3
 @c^279961^
 @c^279962^
 @c^279964^
+@c^279965^
+@c^279966^
+@c^279967^
 @c^279968^
 @c^279970^
 @c^279974^
@@ -427,10 +440,10 @@ GoldScout-export 5^g0myccqqg8dt^3
 @c^279982^
 @c^279990^
 @c^286152^
-@a^259052^231:4,251:8
+@a^259052^231:4,232:1,251:8
 @a^259054^211:1,231:4
 @a^259055^211:2,231:9
-@a^263307^212:6,231:13,232:58,251:10,252:57
-@a^263343^212:2,231:4,232:3
-@a^263348^213:2,231:2,251:3
+@a^263307^212:16,231:21,232:121,251:13,252:103
+@a^263343^212:3,213:1,231:4,232:3
+@a^263348^213:2,231:2,251:3,252:1
 @l^0^enUS

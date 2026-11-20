@@ -1,4 +1,4 @@
-GoldScout-export 5^uftyjoej44ul^22
+GoldScout-export 5^uftyjoej44ul^23
 1536^3^0^7^8^1420^0.5002^0.6730^3^Scarlet Missionary^2070:1:1,2589:1:2,2648:1:1,3013:1:1^
 1537^8^0^8^9^1420^0.5210^0.6734^8^Scarlet Zealot^2070:1:1,2140:1:1,2589:1:1^
 1545^1^0^10^10^1420^0.2690^0.4313^1^Vile Fin Muckdweller^^
@@ -38,6 +38,11 @@ GoldScout-export 5^uftyjoej44ul^22
 2979^8^0^9^10^1412^0.5732^0.4556^8^Venture Co. Supervisor^117:2:2,1413:1:1,1431:1:1,2589:2:2^
 3051^1^0^12^12^1412^0.6108^0.4955^1^Supervisor Fizsprocket^4819:1:1,281031:1:1^
 3058^1^0^11^11^1412^0.4788^0.2699^1^Arra'chea^4841:1:1^
+3115^6^0^7^8^1411^0.4857^0.3088^6^Dustwind Harpy^117:1:1,1413:1:1,1429:1:1,2138:1:1,2589:4:7,2642:1:1,4775:3:3^
+3116^4^0^7^8^1411^0.4767^0.2973^4^Dustwind Pillager^767:1:1,1412:1:1,2589:2:4,4775:2:2^
+3117^10^0^9^10^1411^0.5310^0.2296^10^Dustwind Savage^117:1:1,1417:1:1,2589:4:8,2773:1:1,4775:2:2,4776:1:1,14093:1:1^
+3118^9^0^10^11^1411^0.5172^0.2176^9^Dustwind Storm Witch^117:1:1,2589:4:6,4775:1:1,4776:1:1,277661:2:2^
+3126^1^0^8^8^1411^0.4287^0.3186^1^Armored Scorpid^4867:1:1^
 3238^1^0^22^23^1413^0.4992^0.8001^1^Stormhide^5133:1:1,5470:1:1^
 3249^1^0^24^24^1413^0.4404^0.7645^1^Greater Thunderhawk^^
 3374^8^0^21^22^1413^0.4770^0.8506^8^Bael'dun Excavator^1205:1:1,1751:1:1,2589:1:1,2592:1:2,4306:1:1,211855:1:1^
@@ -109,11 +114,13 @@ GoldScout-export 5^uftyjoej44ul^22
 260430^6^0^10^12^1420^0.1026^0.6599^6^Shadowvale Mystic^2972:1:1^
 260431^1^0^11^11^1420^0.0961^0.6367^1^Shadowvale Lurcher^^
 275767^1^0^11^11^1412^0.6071^0.5921^1^Herak the Pillager^2589:1:1,286075:1:1^
+276194^1^0^12^12^1411^0.5108^0.2330^1^Dustwind Eggtender^4776:1:1,5571:1:1^
 277730^1^0^8^8^1420^0.1893^0.6080^1^Rabid Forest Wolf^2672:1:1^
 @i^117^Tough Jerky
 @i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
 @i^422^Dwarven Mild
+@i^767^Long Bo Staff
 @i^774^Malachite
 @i^779^Shiny Seashell
 @i^878^Fist-sized Spinneret
@@ -125,11 +132,13 @@ GoldScout-export 5^uftyjoej44ul^22
 @i^1205^Melon Juice
 @i^1288^Large Venom Sac
 @i^1411^Withered Staff
+@i^1412^Crude Bastard Sword
 @i^1413^Feeble Sword
 @i^1414^Cracked Sledge
 @i^1417^Beaten Battle Axe
 @i^1419^Worn Leather Boots
 @i^1423^Worn Leather Pants
+@i^1429^Patchwork Cloak
 @i^1430^Patchwork Gloves
 @i^1431^Patchwork Pants
 @i^1433^Patchwork Armor
@@ -155,6 +164,7 @@ GoldScout-export 5^uftyjoej44ul^22
 @i^2452^Swiftthistle
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2642^Loose Chain Boots
 @i^2648^Loose Chain Vest
 @i^2672^Stringy Wolf Meat
 @i^2773^Cracked Shortbow
@@ -196,6 +206,7 @@ GoldScout-export 5^uftyjoej44ul^22
 @i^4814^Discolored Fang
 @i^4819^Fizsprocket's Clipboard
 @i^4841^Horn of Arra'chea
+@i^4867^Broken Scorpid Leg
 @i^5093^Razormane Backstabber
 @i^5094^Razormane War Shield
 @i^5116^Long Tail Feather
@@ -211,6 +222,7 @@ GoldScout-export 5^uftyjoej44ul^22
 @i^5523^Small Barnacled Clam
 @i^5524^Thick-shelled Clam
 @i^5569^Seaweed
+@i^5571^Small Black Pouch
 @i^5635^Sharp Claw
 @i^5686^Ordanus' Head
 @i^5867^Etched Phial
@@ -229,6 +241,7 @@ GoldScout-export 5^uftyjoej44ul^22
 @i^11407^Torn Bear Pelt
 @i^13881^Bloated Redgill
 @i^14087^Beaded Cuffs
+@i^14093^Beaded Cord
 @i^14126^Ritual Amice
 @i^14179^Watcher's Cape of Defense
 @i^14743^Hulking Bands
@@ -260,12 +273,14 @@ GoldScout-export 5^uftyjoej44ul^22
 @i^250366^Recipe: Minor Cleric's Elixir
 @i^250368^Recipe: Cleric's Elixir
 @i^270435^Rudolph Gelhardt's Head
+@i^277661^Dull Storm Orb
 @i^281031^Mulgore Expansion Plans
 @i^286075^Herak's Head
 @q^117^1:0:0
 @q^118^1:0:0
 @q^159^1:0:0
 @q^422^1:0:0
+@q^767^1:2:0
 @q^774^2:7:1
 @q^779^0:15:0
 @q^878^0:7:0
@@ -277,11 +292,13 @@ GoldScout-export 5^uftyjoej44ul^22
 @q^1205^1:0:0
 @q^1288^1:7:1
 @q^1411^0:2:0
+@q^1412^0:2:0
 @q^1413^0:2:0
 @q^1414^0:2:0
 @q^1417^0:2:0
 @q^1419^0:4:0
 @q^1423^0:4:0
+@q^1429^0:4:0
 @q^1430^0:4:0
 @q^1431^0:4:0
 @q^1433^0:4:0
@@ -307,6 +324,7 @@ GoldScout-export 5^uftyjoej44ul^22
 @q^2452^1:7:1
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2642^0:4:0
 @q^2648^0:4:0
 @q^2672^1:7:1
 @q^2773^0:2:0
@@ -348,6 +366,7 @@ GoldScout-export 5^uftyjoej44ul^22
 @q^4814^0:15:0
 @q^4819^1:12:0
 @q^4841^1:12:0
+@q^4867^0:15:0
 @q^5093^1:2:0
 @q^5094^1:4:0
 @q^5116^1:7:1
@@ -363,6 +382,7 @@ GoldScout-export 5^uftyjoej44ul^22
 @q^5523^1:7:0
 @q^5524^1:7:0
 @q^5569^0:15:0
+@q^5571^1:1:0
 @q^5635^1:7:1
 @q^5686^1:12:0
 @q^5867^1:12:0
@@ -381,6 +401,7 @@ GoldScout-export 5^uftyjoej44ul^22
 @q^11407^1:12:0
 @q^13881^2:15:0
 @q^14087^1:4:0
+@q^14093^1:4:0
 @q^14126^1:4:0
 @q^14179^2:4:0
 @q^14743^2:4:0
@@ -412,8 +433,10 @@ GoldScout-export 5^uftyjoej44ul^22
 @q^250366^1:9:0
 @q^250368^1:9:0
 @q^270435^1:12:0
+@q^277661^1:12:0
 @q^281031^1:12:0
 @q^286075^1:12:0
+@m^1411^Durotar
 @m^1412^Mulgore
 @m^1413^The Barrens
 @m^1420^Tirisfal Glades
@@ -2151,6 +2174,7 @@ GoldScout-export 5^uftyjoej44ul^22
 @c^279943^
 @c^279944^
 @c^279945^
+@c^279947^
 @c^279948^
 @c^279951^
 @c^279952^
@@ -2159,6 +2183,8 @@ GoldScout-export 5^uftyjoej44ul^22
 @c^279959^
 @c^279960^
 @c^279961^
+@c^279962^
+@c^279964^
 @c^279965^
 @c^279966^
 @c^279967^
@@ -2215,6 +2241,11 @@ GoldScout-export 5^uftyjoej44ul^22
 @a^2979^88:1,191:4,192:2,211:1
 @a^3051^192:1
 @a^3058^109:1
+@a^3115^109:2,129:4
+@a^3116^110:1,129:3
+@a^3117^90:9,110:1
+@a^3118^70:2,90:7
+@a^3126^128:1
 @a^3238^329:1
 @a^3249^308:1
 @a^3374^329:3,349:5
@@ -2286,6 +2317,7 @@ GoldScout-export 5^uftyjoej44ul^22
 @a^260430^241:1,261:2,262:3
 @a^260431^241:1
 @a^275767^232:1
+@a^276194^90:1
 @a^277730^243:1
 @f^1424^0^12^132^6308:1:1,6359:2:2,13881:1:1,21071:8:8^131:3,191:4,211:3,251:2
 @l^0^enUS
