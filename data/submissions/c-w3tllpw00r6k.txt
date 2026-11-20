@@ -1,4 +1,4 @@
-GoldScout-export 5^w3tllpw00r6k^8
+GoldScout-export 5^w3tllpw00r6k^9
 232^1^0^23^23^1424^0.3274^0.3543^1^Farmer Ray^1485:1:1,2592:1:1^
 2244^3^0^21^22^1424^0.7870^0.4056^3^Syndicate Shadow Mage^1205:1:1,2592:1:2,211853:1:1^
 2260^7^0^21^22^1424^0.7857^0.4328^7^Syndicate Rogue^2589:1:1,2592:1:1^
@@ -27,6 +27,10 @@ GoldScout-export 5^w3tllpw00r6k^8
 3633^1^0^16^16^1414^0.5267^0.5505^1^Deviate Slayer^5124:1:1^
 3680^1^0^1^1^1414^0.5277^0.5460^1^Serpentbloom Snake^^
 3713^3^0^18^18^1440^0.1516^0.2186^3^Wrathtail Wave Rider^5523:1:1,16651:1:1^
+3762^3^0^25^26^1440^0.6877^0.5296^3^Felmusk Felsworn^3770:1:1,16652:1:1^
+3784^1^0^27^27^1440^0.7070^0.5594^1^Shadethicket Bark Ripper^16647:1:1^
+3820^1^0^24^24^1440^0.7246^0.5161^1^Wildthorn Venomspitter^878:1:1,3174:1:1^
+3825^1^0^28^28^1440^0.7039^0.6258^1^Ghostpaw Alpha^^
 4798^2^0^0^0^0^0.0000^0.0000^0^^^
 4799^1^0^0^0^0^0.0000^0.0000^0^^15230:1:1^
 4805^4^0^0^0^0^0.0000^0.0000^0^^1824:1:1,5524:1:1,15513:1:1,17057:1:1^
@@ -52,6 +56,7 @@ GoldScout-export 5^w3tllpw00r6k^8
 @i^769^Chunk of Boar Meat
 @i^771^Chipped Boar Tusk
 @i^818^Tigerseye
+@i^878^Fist-sized Spinneret
 @i^954^Scroll of Strength
 @i^1155^Rod of the Sleepwalker
 @i^1205^Melon Juice
@@ -69,6 +74,7 @@ GoldScout-export 5^w3tllpw00r6k^8
 @i^3010^Fine Sand
 @i^3078^Naga Heartpiercer
 @i^3171^Broken Boar Tusk
+@i^3174^Spider Ichor
 @i^3285^Tribal Bracers
 @i^3467^Dull Iron Key
 @i^3496^Mountain Lion Blood
@@ -76,6 +82,7 @@ GoldScout-export 5^w3tllpw00r6k^8
 @i^3650^Battle Shield
 @i^3730^Big Bear Meat
 @i^3731^Lion Meat
+@i^3770^Mutton Chop
 @i^4306^Silk Cloth
 @i^4409^Schematic: Small Seaforium Charge
 @i^4538^Snapvine Watermelon
@@ -113,7 +120,9 @@ GoldScout-export 5^w3tllpw00r6k^8
 @i^15241^Battle Knife of Nature Protection
 @i^15476^Charger's Handwraps
 @i^15513^Grunt's Pauldrons of Agility
+@i^16647^Shredder Operating Manual - Page 3
 @i^16651^Shredder Operating Manual - Page 7
+@i^16652^Shredder Operating Manual - Page 8
 @i^17057^Shiny Fish Scales
 @i^211780^Scroll: KWYJIBO
 @i^211784^Scroll: WUBBA WUBBA
@@ -132,6 +141,7 @@ GoldScout-export 5^w3tllpw00r6k^8
 @q^769^1:7:1
 @q^771^0:15:0
 @q^818^2:7:1
+@q^878^0:7:0
 @q^954^1:0:0
 @q^1155^3:2:0
 @q^1205^1:0:0
@@ -149,6 +159,7 @@ GoldScout-export 5^w3tllpw00r6k^8
 @q^3010^0:15:0
 @q^3078^3:2:0
 @q^3171^0:15:0
+@q^3174^1:7:1
 @q^3285^1:4:0
 @q^3467^1:13:0
 @q^3496^1:12:0
@@ -156,6 +167,7 @@ GoldScout-export 5^w3tllpw00r6k^8
 @q^3650^1:4:0
 @q^3730^1:7:1
 @q^3731^1:7:1
+@q^3770^1:0:0
 @q^4306^1:7:1
 @q^4409^2:9:0
 @q^4538^1:0:0
@@ -193,7 +205,9 @@ GoldScout-export 5^w3tllpw00r6k^8
 @q^15241^2:2:0
 @q^15476^1:4:0
 @q^15513^2:4:0
+@q^16647^1:12:0
 @q^16651^1:12:0
+@q^16652^1:12:0
 @q^17057^1:15:0
 @q^211780^1:0:0
 @q^211784^1:0:0
@@ -435,4 +449,8 @@ GoldScout-export 5^w3tllpw00r6k^8
 @a^3633^230:1
 @a^3680^210:1
 @a^3713^82:1,83:2
+@a^3762^213:3
+@a^3784^234:1
+@a^3820^214:1
+@a^3825^254:1
 @l^0^enUS

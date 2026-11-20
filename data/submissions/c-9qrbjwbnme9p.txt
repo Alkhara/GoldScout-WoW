@@ -1,4 +1,4 @@
-GoldScout-export 5^9qrbjwbnme9p^10
+GoldScout-export 5^9qrbjwbnme9p^11
 660^1^0^37^37^1434^0.2471^0.0968^1^Sorcier-docteur Bloodscalp^^
 667^2^0^39^40^1434^0.4833^0.3995^2^Guerrier Skullsplitter^4306:1:2,8153:1:1^
 694^1^0^34^34^1434^0.2987^0.1901^1^Lanceur de haches Bloodscalp^^
@@ -48,6 +48,7 @@ GoldScout-export 5^9qrbjwbnme9p^10
 2618^2^0^34^34^1417^0.6000^0.5741^2^Péon de Trépas-d'Orgrim^^
 2619^3^0^34^35^1417^0.6080^0.5508^3^Grunt de Trépas-d'Orgrim^4306:2:3^
 2714^1^0^35^35^1417^0.6058^0.5902^1^Messagère des Réprouvés^4482:1:1^
+2727^1^0^36^36^1418^0.4697^0.3544^1^Coyote des rochers^12203:1:1^
 2761^3^0^39^39^1417^0.6603^0.3022^3^Exilé grimpeur^4481:3:3,4791:1:3^
 4676^1^0^36^36^1443^0.5330^0.8680^1^Infernal mineur^4553:1:1,4784:1:1^
 4693^1^0^37^37^1443^0.6032^0.5639^1^Volant de l'effroi^1464:1:1,5116:1:1^
@@ -152,6 +153,7 @@ GoldScout-export 5^9qrbjwbnme9p^10
 @i^11164^Formule : Enchantement d'arme (Tueur de bête inférieur)
 @i^11166^Formule : Enchantement de gants (Dépeçage)
 @i^11386^Oeil spongieux de basilic
+@i^12203^Viande de loup rouge
 @i^15935^Bâtonnet solide de l'aigle
 @i^17057^Ecailles de poisson brillantes
 @i^17058^Huile de poisson
@@ -258,6 +260,7 @@ GoldScout-export 5^9qrbjwbnme9p^10
 @q^11164^2:9:0
 @q^11166^2:9:0
 @q^11386^0:15:0
+@q^12203^1:7:1
 @q^15935^2:4:0
 @q^17057^1:15:0
 @q^17058^1:15:0
@@ -272,6 +275,7 @@ GoldScout-export 5^9qrbjwbnme9p^10
 @q^262889^3:0:0
 @m^1416^Montagnes d'Alterac
 @m^1417^Hautes-terres d'Arathi
+@m^1418^Terres ingrates
 @m^1424^Contreforts de Hautebrande
 @m^1434^Vallée de Strangleronce
 @m^1443^Désolace
@@ -1052,6 +1056,7 @@ GoldScout-export 5^9qrbjwbnme9p^10
 @a^2618^231:1,232:1
 @a^2619^212:1,232:2
 @a^2714^232:1
+@a^2727^149:1
 @a^2761^112:1,133:2
 @a^4676^350:1
 @a^4693^232:1

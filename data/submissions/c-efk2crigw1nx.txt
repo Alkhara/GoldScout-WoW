@@ -1,7 +1,12 @@
-GoldScout-export 5^efk2crigw1nx^6
+GoldScout-export 5^efk2crigw1nx^8
+588^3^0^34^35^1434^0.2368^0.1276^3^Eclaireur Bloodscalp^1710:1:1^
+595^2^0^34^35^1434^0.2530^0.1178^2^Chasseur Bloodscalp^277957:1:1^
 597^10^0^36^37^1434^0.2044^0.1329^10^Berserker Bloodscalp^1519:4:4,4306:5:6^
-660^13^0^37^37^1434^0.2061^0.1299^13^Sorcier-docteur Bloodscalp^1519:5:5,2749:1:1,3771:1:1,3778:1:1,3803:1:1,4306:6:13,4338:1:1^
+660^14^0^37^37^1434^0.2097^0.1283^14^Sorcier-docteur Bloodscalp^1519:5:5,2749:1:1,3771:1:1,3778:1:1,3803:1:1,4306:6:13,4338:1:1^
 671^14^0^36^37^1434^0.2128^0.1249^14^Chasseur de tête Bloodscalp^1519:4:4,1522:1:1,1988:1:1,2735:1:1,2744:1:1,2751:1:1,3771:1:1,4306:5:9,213547:1:1^
+691^14^0^36^37^1434^0.2042^0.2218^14^Elémentaire d'eau mineur^1706:5:5,3923:6:6,4791:10:29^
+701^4^0^34^35^1434^0.2443^0.1263^4^Mystique Bloodscalp^4306:1:1,213547:1:1^
+767^1^0^37^37^1435^0.1064^0.5836^1^Jaguar du marécage^1688:1:1^
 4396^15^0^36^37^1445^0.6293^0.3376^15^Tortue Rochefange^3712:5:5,4555:6:6,4556:9:9,6362:2:4^
 4397^16^0^37^38^1445^0.6271^0.3294^16^Epineuse Rochefange^3712:5:5,4555:10:10,4556:3:3,6362:2:3^
 258792^4^0^0^0^0^0.0000^0.0000^0^^4306:1:1,4607:1:1,13129:1:1,248693:1:1,248708:1:1^
@@ -27,6 +32,9 @@ GoldScout-export 5^efk2crigw1nx^6
 @i^1465^Fléau des tigres
 @i^1519^Oreille de Bloodscalp
 @i^1522^Lance de chasseur de têtes
+@i^1688^Longue queue soyeuse
+@i^1706^Eclats de Profondazur
+@i^1710^Potion de soins supérieure
 @i^1988^Gantelets de général de brigade
 @i^2735^Les vertes collines de Strangleronce - Page 11
 @i^2744^Les vertes collines de Strangleronce - Page 20
@@ -38,12 +46,14 @@ GoldScout-export 5^efk2crigw1nx^6
 @i^3786^Miséricorde rutilante
 @i^3800^Ceinture en cuir durci
 @i^3803^Cape en cuir durci
+@i^3923^Bracelets d'élémentaire d'eau
 @i^4059^Brassards glyphés
 @i^4306^Etoffe de soie
 @i^4338^Etoffe de tisse-mage
 @i^4555^Epaisse queue écailleuse
 @i^4556^Fragment de carapace moucheté
 @i^4607^Délicieux humus des grottes
+@i^4791^Eau enchantée
 @i^5567^Crochet d'argent
 @i^6362^Morue rochécaille crue
 @i^7432^Capuche du crépuscule d'endurance
@@ -64,11 +74,15 @@ GoldScout-export 5^efk2crigw1nx^6
 @i^274613^Cape de prêtresse
 @i^274614^Anneau articulaire
 @i^276894^Idole antique des Gurubashi
+@i^277957^Clé primitive
 @i^279046^Pince de crabe craquelée
 @q^864^2:2:0
 @q^1465^2:2:0
 @q^1519^1:12:0
 @q^1522^2:2:0
+@q^1688^0:15:0
+@q^1706^0:15:0
+@q^1710^1:0:0
 @q^1988^2:4:0
 @q^2735^1:12:0
 @q^2744^1:12:0
@@ -80,12 +94,14 @@ GoldScout-export 5^efk2crigw1nx^6
 @q^3786^0:2:0
 @q^3800^0:4:0
 @q^3803^0:4:0
+@q^3923^1:12:0
 @q^4059^2:4:0
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4555^0:15:0
 @q^4556^0:15:0
 @q^4607^1:0:0
+@q^4791^1:0:0
 @q^5567^0:15:0
 @q^6362^1:7:1
 @q^7432^2:4:0
@@ -106,12 +122,19 @@ GoldScout-export 5^efk2crigw1nx^6
 @q^274613^3:4:0
 @q^274614^3:4:0
 @q^276894^1:12:0
+@q^277957^1:12:0
 @q^279046^0:15:0
 @m^1434^Vallée de Strangleronce
+@m^1435^Marais des Chagrins
 @m^1445^Marécage d'Âprefange
+@a^588^44:3
+@a^595^44:1,45:1
 @a^597^43:2,44:8
-@a^660^43:4,44:9
+@a^660^43:4,44:9,45:1
 @a^671^43:3,44:11
+@a^691^83:1,84:13
+@a^701^44:3,45:1
+@a^767^222:1
 @a^4396^92:1,112:4,132:3,152:6,172:1
 @a^4397^92:2,112:3,132:4,152:6,172:1
 @l^0^frFR
