@@ -1,4 +1,4 @@
-GoldScout-export 6^beaxopzua781^17
+GoldScout-export 6^beaxopzua781^18
 30^2^0^5^6^1429^0.3900^0.7698^2^Forest Spider^1476:1:1,2590:1:1,5465:2:4^
 113^2^0^5^6^1429^0.4135^0.7546^2^Stonetusk Boar^769:1:1,3171:1:1^
 154^1^0^17^17^1436^0.5819^0.5801^1^Greater Fleshripper^729:1:1,6889:1:1^
@@ -26,6 +26,9 @@ GoldScout-export 6^beaxopzua781^17
 1039^1^0^20^21^1437^0.1771^0.4565^1^Fen Dweller^^
 1040^14^0^24^25^1437^0.4246^0.3300^14^Fen Creeper^1205:2:2,1752:1:1,1824:1:1^
 1043^3^0^24^25^1437^0.6014^0.3890^3^Lost Whelp^3175:2:2^
+1051^3^0^27^28^1437^0.5617^0.2473^3^Dark Iron Dwarf^2592:1:1,4306:2:4,5108:1:1^
+1052^6^0^28^29^1437^0.5435^0.2195^6^Dark Iron Saboteur^1829:1:1,4306:1:2,4705:1:1,6599:1:1^
+1053^4^0^29^30^1437^0.5069^0.1922^4^Dark Iron Tunneler^6386:1:1,7366:1:1^
 1057^2^0^27^28^1437^0.5084^0.5121^2^Dragonmaw Bonewarder^7090:1:1^
 1069^1^0^25^25^1437^0.5921^0.3728^1^Crimson Whelp^^
 1109^1^0^13^14^1436^0.5540^0.5942^1^Fleshripper^555:1:1^
@@ -180,6 +183,7 @@ GoldScout-export 6^beaxopzua781^17
 @i^1823^Bludgeoning Cudgel
 @i^1824^Shiny War Axe
 @i^1827^Meat Cleaver
+@i^1829^Short Cutlass
 @i^1875^Thistlenettle's Badge
 @i^1894^Miners' Union Card
 @i^2072^Dwarven Magestaff of the Falcon
@@ -249,12 +253,14 @@ GoldScout-export 6^beaxopzua781^17
 @i^4605^Red-speckled Mushroom
 @i^4671^Ancestral Cloak
 @i^4695^Burnished Cloak
+@i^4705^Lambent Scale Pauldrons
 @i^4867^Broken Scorpid Leg
 @i^4872^Dry Scorpid Eye
 @i^4877^Stone Arrowhead
 @i^4878^Broken Bloodstained Bow
 @i^4998^Blood Ring
 @i^5084^Baron Longshore's Head
+@i^5108^Dark Iron Leather
 @i^5124^Small Raptor Tooth
 @i^5128^Shed Lizard Skin
 @i^5465^Small Spider Leg
@@ -278,6 +284,7 @@ GoldScout-export 6^beaxopzua781^17
 @i^6358^Oily Blackmouth
 @i^6361^Raw Rainbow Fin Albacore
 @i^6379^Inscribed Leather Belt
+@i^6386^Glimmering Mail Legguards
 @i^6443^Deviate Hide
 @i^6444^Forked Tongue
 @i^6445^Brittle Molting
@@ -286,6 +293,7 @@ GoldScout-export 6^beaxopzua781^17
 @i^6569^Shimmering Robe of the Boar
 @i^6583^Scouting Bracers of Agility
 @i^6584^Scouting Tunic of the Gorilla
+@i^6599^Battleforge Shield of Shadow Protection
 @i^6633^Butcher's Slicer
 @i^6889^Small Egg
 @i^6902^Bands of Serra'kis
@@ -298,6 +306,7 @@ GoldScout-export 6^beaxopzua781^17
 @i^7090^Pattern: Green Silk Armor
 @i^7091^Pattern: Truefaith Gloves
 @i^7351^Disciple's Boots
+@i^7366^Elder's Gloves of the Whale
 @i^8181^Hunting Rifle
 @i^9760^Cadet Bracers
 @i^9796^Ivycloth Mantle of Intellect
@@ -394,6 +403,7 @@ GoldScout-export 6^beaxopzua781^17
 @q^1823^0:2:0
 @q^1824^0:2:0
 @q^1827^0:2:0
+@q^1829^0:2:0
 @q^1875^1:12:0
 @q^1894^1:12:0
 @q^2072^2:2:0
@@ -463,12 +473,14 @@ GoldScout-export 6^beaxopzua781^17
 @q^4605^1:0:0
 @q^4671^1:4:0
 @q^4695^2:4:0
+@q^4705^2:4:0
 @q^4867^0:15:0
 @q^4872^0:15:0
 @q^4877^0:15:0
 @q^4878^0:15:0
 @q^4998^2:4:0
 @q^5084^1:12:0
+@q^5108^1:4:0
 @q^5124^0:15:0
 @q^5128^0:15:0
 @q^5465^1:7:1
@@ -492,6 +504,7 @@ GoldScout-export 6^beaxopzua781^17
 @q^6358^1:7:1
 @q^6361^1:7:1
 @q^6379^2:4:0
+@q^6386^2:4:0
 @q^6443^1:12:0
 @q^6444^0:15:0
 @q^6445^0:15:0
@@ -500,6 +513,7 @@ GoldScout-export 6^beaxopzua781^17
 @q^6569^2:4:0
 @q^6583^2:4:0
 @q^6584^2:4:0
+@q^6599^2:4:0
 @q^6633^3:2:0
 @q^6889^1:7:1
 @q^6902^3:4:0
@@ -512,6 +526,7 @@ GoldScout-export 6^beaxopzua781^17
 @q^7090^2:9:0
 @q^7091^2:9:0
 @q^7351^1:4:0
+@q^7366^2:4:0
 @q^8181^1:2:0
 @q^9760^1:4:0
 @q^9796^2:4:0
@@ -1854,6 +1869,9 @@ GoldScout-export 6^beaxopzua781^17
 @a^1039^183:1
 @a^1040^84:1,104:1,106:1,109:1,126:1,128:1,129:3,130:1,149:3,191:1
 @a^1043^132:1,151:1,212:1
+@a^1051^69:1,112:1,132:1
+@a^1052^69:3,112:3
+@a^1053^69:3,112:1
 @a^1057^210:2
 @a^1069^151:1
 @a^1109^231:1
