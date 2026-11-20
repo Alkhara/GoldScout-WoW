@@ -1,4 +1,4 @@
-GoldScout-export 5^zgqe7rit96a5^2
+GoldScout-export 6^zgqe7rit96a5^3
 2240^2^0^32^33^1416^0.5813^0.7050^2^Syndicate Footpad^4306:2:3,5113:1:1^
 2241^3^0^33^34^1416^0.5790^0.7082^3^Syndicate Thief^3601:1:1,4306:2:2,5113:1:1^
 2242^10^0^35^36^1416^0.6228^0.4298^10^Syndicate Spy^4306:6:9,5775:1:1,6986:1:1,248691:1:1^
@@ -19,15 +19,20 @@ GoldScout-export 5^zgqe7rit96a5^2
 2359^29^0^32^33^1416^0.2197^0.5457^29^Elemental Slave^2838:7:10,3715:4:4,4553:8:8,4784:16:16,5741:1:3,7067:1:1,8150:10:10^
 2407^1^0^33^34^1416^0.5597^0.3228^1^Hulking Mountain Lion^1686:1:1^
 2431^1^0^37^37^1416^0.6297^0.4497^1^Jailor Borhuin^3704:1:1^
+2565^1^0^36^36^1417^0.4554^0.7716^1^Giant Plains Creeper^878:1:1,1074:1:1,1081:1:1,3182:1:1^
 2623^12^0^32^33^1416^0.2214^0.5614^12^Spirit of Old^^
 2628^2^0^34^34^1416^0.2195^0.5586^2^Dalaran Worker^3714:1:1^
 3984^1^0^33^33^1416^0.3061^0.3314^1^Nancy Vishas^1707:1:1,5538:1:1^
 266357^1^0^36^36^1416^0.6125^0.5139^1^Barton^^
+@i^878^Fist-sized Spinneret
+@i^1074^Hard Spider Leg Tip
+@i^1081^Crisp Spider Meat
 @i^1686^Bristly Whisker
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
 @i^2838^Heavy Stone
+@i^3182^Spider's Silk
 @i^3601^Syndicate Missive
 @i^3626^Head of Baron Vardus
 @i^3704^Rusted Iron Key
@@ -59,11 +64,15 @@ GoldScout-export 5^zgqe7rit96a5^2
 @i^248691^Waylaid Crate: Flowering Expert Herbs
 @i^248694^Waylaid Crate: Expert Curiosities
 @i^255727^Manual: Superior Poultice
+@q^878^0:7:0
+@q^1074^0:15:0
+@q^1081^1:7:1
 @q^1686^0:15:0
 @q^1707^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
 @q^2838^1:7:1
+@q^3182^1:7:1
 @q^3601^1:12:0
 @q^3626^1:12:0
 @q^3704^1:13:0
@@ -96,6 +105,7 @@ GoldScout-export 5^zgqe7rit96a5^2
 @q^248694^1:0:1
 @q^255727^2:9:0
 @m^1416^Alterac Mountains
+@m^1417^Arathi Highlands
 @m^1424^Hillsbrad Foothills
 @c^118^
 @c^724^
@@ -478,6 +488,7 @@ GoldScout-export 5^zgqe7rit96a5^2
 @a^2359^204:18,224:10,225:1
 @a^2407^131:1
 @a^2431^172:1
+@a^2565^309:1
 @a^2623^184:1,224:11
 @a^2628^224:2
 @a^3984^126:1
