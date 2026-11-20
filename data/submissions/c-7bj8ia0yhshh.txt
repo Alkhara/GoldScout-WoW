@@ -1,8 +1,12 @@
-GoldScout-export 6^7bj8ia0yhshh^8
-682^3^0^32^33^1434^0.2982^0.1329^3^Schlingendorntiger^1686:1:1,1687:1:1,7367:1:1,12202:1:1^
-685^1^0^33^34^1434^0.2778^0.1621^1^Schlingendornraptor^4461:1:1^
-702^1^0^34^34^1434^0.3167^0.1291^1^Aasfresser der Bloodscalp^1520:1:1,3771:1:1,3784:1:1^
-736^6^0^32^33^1434^0.2919^0.1488^6^Panther^1529:1:1,1686:3:3,1687:2:2^
+GoldScout-export 6^7bj8ia0yhshh^9
+681^2^0^30^31^1434^0.3490^0.1318^2^Junger Schlingendorntiger^5214:1:1,248688:1:1^
+682^8^0^32^33^1434^0.3923^0.1417^8^Schlingendorntiger^1686:2:2,1687:3:3,7367:1:1,12202:3:3,15250:1:1^
+683^1^0^30^31^1434^0.4030^0.1053^1^Junger Panther^^
+685^8^0^33^34^1434^0.2585^0.1624^8^Schlingendornraptor^1696:2:2,3685:5:5,4461:4:4,4586:1:1,12184:4:4^
+702^1^0^33^34^1434^0.3167^0.1291^1^Aasfresser der Bloodscalp^1520:1:1,3771:1:1,3784:1:1^
+736^8^0^32^33^1434^0.2898^0.1492^8^Panther^1529:1:1,1686:5:5,1687:2:2^
+855^2^0^30^31^1434^0.2483^0.1581^2^Junger Schlingendornraptor^3685:1:1,4461:2:2^
+1085^8^0^34^35^1434^0.3172^0.1759^8^Alter Schlingendorntiger^1686:4:4,12202:6:6,248693:1:1^
 1131^2^0^7^8^1426^0.3406^0.4075^2^Winterwolf^2672:2:2,3300:1:1^
 1132^1^0^10^10^1426^0.3404^0.4119^1^Holzplanke^805:1:1,2672:1:1^
 1133^1^0^8^9^1426^0.3403^0.4089^1^Verhungernder Winterwolf^3299:1:1^
@@ -64,6 +68,7 @@ GoldScout-export 6^7bj8ia0yhshh^8
 @i^1529^Jade
 @i^1686^Gesträubtes Schnurrbarthaar
 @i^1687^Einziehbare Klaue
+@i^1696^Geschwungene Raptorkralle
 @i^1701^Geschwungene Basiliskenklaue
 @i^1702^Intaktes Basiliskenrückgrat
 @i^1705^Geringer Mondstein
@@ -91,6 +96,7 @@ GoldScout-export 6^7bj8ia0yhshh^8
 @i^3385^Geringer Manatrank
 @i^3404^Bussardflügel
 @i^3671^Lebloser Schädel
+@i^3685^Raptorei
 @i^3720^Yetifell
 @i^3770^Hammelkoteletts
 @i^3771^Wildschweinschenkel
@@ -105,10 +111,12 @@ GoldScout-export 6^7bj8ia0yhshh^8
 @i^4461^Raptorbalg
 @i^4542^Saftiges Maisbrot
 @i^4583^Dicke fellige Mähne
+@i^4586^Glatte Raptorenhaut
 @i^4706^Züngelnder Schuppenumhang
 @i^4712^Gleißender Panzergurt
 @i^5116^Lange Schwanzfeder
 @i^5133^Undichter Muskelmagen
+@i^5214^Zauberstab der Abendzeit
 @i^5637^Großer Fangzahn
 @i^6067^Zentaurenohr
 @i^6079^Kunstloser Glücksbringer
@@ -142,10 +150,12 @@ GoldScout-export 6^7bj8ia0yhshh^8
 @i^11386^Matschiges Basiliskenauge
 @i^11418^Hohler Flügelknochen
 @i^12037^Eigenartiges Fleisch
+@i^12184^Raptorfleisch
 @i^12202^Tigerfleisch
 @i^14199^Distelfellhandschuhe des Kanalisierers
 @i^15139^Halsabschneider-Hose des Wals
 @i^15249^Polierter Bidenhänder der Bestie
+@i^15250^Gleißender Flamberg der Beweglichkeit
 @i^17057^Glänzende Fischschuppen
 @i^17058^Fischöl
 @i^19937^Kleine Skorpidklaue
@@ -154,6 +164,7 @@ GoldScout-export 6^7bj8ia0yhshh^8
 @i^248688^Abgefangene Kiste: Textilien des Gesellen
 @i^248689^Abgefangene Kiste: Kuriositäten des Gesellen
 @i^248691^Abgefangene Kiste: Blühende Kräuter des Experten
+@i^248693^Abgefangene Kiste: Textilien des Experten
 @i^254432^Geschnitztes Zentaurentotem
 @i^262889^Versiegelte Verfügung des Experten
 @q^805^1:1:0
@@ -164,6 +175,7 @@ GoldScout-export 6^7bj8ia0yhshh^8
 @q^1529^2:7:1
 @q^1686^0:15:0
 @q^1687^0:15:0
+@q^1696^0:15:0
 @q^1701^0:15:0
 @q^1702^0:15:0
 @q^1705^2:7:1
@@ -191,6 +203,7 @@ GoldScout-export 6^7bj8ia0yhshh^8
 @q^3385^1:0:0
 @q^3404^1:7:1
 @q^3671^0:15:0
+@q^3685^1:7:1
 @q^3720^1:12:0
 @q^3770^1:0:0
 @q^3771^1:0:0
@@ -205,10 +218,12 @@ GoldScout-export 6^7bj8ia0yhshh^8
 @q^4461^1:7:1
 @q^4542^1:0:0
 @q^4583^0:15:0
+@q^4586^0:15:0
 @q^4706^2:4:0
 @q^4712^2:4:0
 @q^5116^1:7:1
 @q^5133^0:15:0
+@q^5214^2:2:0
 @q^5637^1:7:1
 @q^6067^1:12:0
 @q^6079^1:12:0
@@ -242,10 +257,12 @@ GoldScout-export 6^7bj8ia0yhshh^8
 @q^11386^0:15:0
 @q^11418^0:15:0
 @q^12037^1:7:1
+@q^12184^1:7:1
 @q^12202^1:7:1
 @q^14199^2:4:0
 @q^15139^2:4:0
 @q^15249^2:2:0
+@q^15250^2:2:0
 @q^17057^1:15:0
 @q^17058^1:15:0
 @q^19937^0:15:0
@@ -254,6 +271,7 @@ GoldScout-export 6^7bj8ia0yhshh^8
 @q^248688^1:0:1
 @q^248689^1:0:1
 @q^248691^1:0:1
+@q^248693^1:0:1
 @q^254432^2:15:0
 @q^262889^3:0:0
 @m^1415^Östliche Königreiche
@@ -1454,10 +1472,14 @@ GoldScout-export 6^7bj8ia0yhshh^8
 @c^279981^
 @c^279982^
 @c^286152^
-@a^682^45:1,46:2
-@a^685^65:1
+@a^681^46:1,47:1
+@a^682^45:1,46:2,48:2,49:2,69:1
+@a^683^48:1
+@a^685^64:4,65:4
 @a^702^46:1
-@a^736^45:3,65:3
+@a^736^45:4,65:4
+@a^855^64:1,65:1
+@a^1085^46:1,66:7
 @a^1131^166:2
 @a^1132^166:1
 @a^1133^166:1
