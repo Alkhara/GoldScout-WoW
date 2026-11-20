@@ -1,4 +1,4 @@
-GoldScout-export 5^ndx04gw2xxnn^12
+GoldScout-export 5^ndx04gw2xxnn^13
 587^20^0^33^34^1434^0.3291^0.1656^20^Bloodscalp Warrior^1519:3:3,1708:1:1,2730:1:1,2740:2:2,3771:1:1,3901:3:3,3915:4:4,4306:6:10,4338:1:1^
 588^7^0^34^35^1434^0.2529^0.1107^7^Bloodscalp Scout^2592:1:3,4306:1:1,4338:1:1^
 595^7^0^34^35^1434^0.2518^0.1171^7^Bloodscalp Hunter^1708:1:1,2592:1:1,2730:1:1,3771:1:1,4306:1:2^
@@ -79,7 +79,9 @@ GoldScout-export 5^ndx04gw2xxnn^12
 6115^1^0^30^30^1440^0.8071^0.6548^1^Felguard^4306:1:1^
 6487^1^0^0^0^0^0.0000^0.0000^0^^7714:1:1,274294:1:1^
 6575^6^0^0^0^0^0.0000^0.0000^0^^2592:1:1,4306:2:3,23192:1:1^
+11562^4^0^33^34^1443^0.2173^0.7854^4^Drysnap Crawler^1708:1:1,17057:2:2^
 12856^1^0^23^24^1440^0.7438^0.6922^1^Ashenvale Outrunner^^
+250187^1^0^0^0^0^0.0000^0.0000^0^^3037:1:1^
 250868^9^0^6^6^2521^0.4274^0.5008^9^Vuldren^1425:1:1,2672:3:3,3299:5:5,3300:2:2^
 250927^1^0^10^10^2521^0.6185^0.3821^1^Shadowgale Ursera^4775:1:1,6889:1:1^
 250928^1^0^8^8^2521^0.4727^0.5857^1^Highlands Ursera^117:1:1,4776:1:1^
@@ -104,7 +106,15 @@ GoldScout-export 5^ndx04gw2xxnn^12
 256996^1^0^8^8^2521^0.4156^0.6286^1^Al'Aketh Warrior^2589:1:1,4540:1:1^
 257521^4^0^5^6^2521^0.4666^0.3891^4^High Order Apprentice^2589:2:4,3013:1:1,4540:2:2^
 258443^1^0^10^10^2521^0.5381^0.6497^1^Ur'endra^4776:1:1,6889:1:1,17056:1:1^
+258792^2^0^0^0^0^0.0000^0.0000^0^^3796:1:1^
+258797^3^0^0^0^0^0.0000^0.0000^0^^3808:1:1,3816:1:1,4306:1:4,4421:1:1^
+258799^3^0^0^0^0^0.0000^0.0000^0^^3804:1:1,5567:1:1^
+258804^2^0^0^0^0^0.0000^0.0000^0^^^
+258818^2^0^0^0^0^0.0000^0.0000^0^^3864:1:1,279046:1:1^
+258905^1^0^0^0^0^0.0000^0.0000^0^^274600:1:1^
+258924^1^0^0^0^0^0.0000^0.0000^0^^274601:1:1^
 260429^1^0^39^39^1434^0.4340^0.2039^1^Venture Co. Agent^^
+263196^1^0^0^0^0^0.0000^0.0000^0^^^
 271712^3^0^6^6^2521^0.4444^0.5676^3^Cloudrunner^1433:1:1,4757:1:1,7097:1:1^
 @i^117^Tough Jerky
 @i^770^Pointy Crocolisk Tooth
@@ -161,6 +171,7 @@ GoldScout-export 5^ndx04gw2xxnn^12
 @i^2773^Cracked Shortbow
 @i^2799^Gorilla Fang
 @i^3013^Scroll of Protection
+@i^3037^Whipwood Recurve Bow
 @i^3172^Boar Intestines
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
@@ -173,11 +184,15 @@ GoldScout-export 5^ndx04gw2xxnn^12
 @i^3784^Metal Stave
 @i^3785^Keen Axe
 @i^3786^Shiny Dirk
+@i^3796^Interlaced Gloves
 @i^3797^Interlaced Pants
+@i^3804^Hardened Leather Gloves
+@i^3808^Double Mail Belt
 @i^3815^Double Mail Vest
 @i^3816^Reflective Heater
 @i^3817^Reinforced Buckler
 @i^3857^Coal
+@i^3864^Citrine
 @i^3879^Paw of Sin'Dall
 @i^3901^Bloodscalp Tusk
 @i^3915^Bloody Bone Necklace
@@ -192,6 +207,7 @@ GoldScout-export 5^ndx04gw2xxnn^12
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4387^Iron Strut
+@i^4421^Scroll of Protection III
 @i^4461^Raptor Hide
 @i^4538^Snapvine Watermelon
 @i^4540^Tough Hunk of Bread
@@ -203,6 +219,7 @@ GoldScout-export 5^ndx04gw2xxnn^12
 @i^4873^Dry Hardened Barnacle
 @i^4874^Clean Fishbones
 @i^5469^Strider Meat
+@i^5567^Silver Hook
 @i^5637^Large Fang
 @i^5805^Heart of Zeal
 @i^5848^Hollow Vulture Bone
@@ -263,6 +280,9 @@ GoldScout-export 5^ndx04gw2xxnn^12
 @i^265141^Bloody Heirloom
 @i^267474^Galeswept Forestshroom
 @i^274294^Library Walkers
+@i^274600^Berserker Shackles
+@i^274601^Harpoon of Command
+@i^279046^Cracked Crab Pincer
 @q^117^1:0:0
 @q^770^0:15:0
 @q^774^2:7:1
@@ -318,6 +338,7 @@ GoldScout-export 5^ndx04gw2xxnn^12
 @q^2773^0:2:0
 @q^2799^1:12:0
 @q^3013^1:0:0
+@q^3037^2:2:0
 @q^3172^1:7:1
 @q^3299^0:15:0
 @q^3300^0:15:0
@@ -330,11 +351,15 @@ GoldScout-export 5^ndx04gw2xxnn^12
 @q^3784^0:2:0
 @q^3785^0:2:0
 @q^3786^0:2:0
+@q^3796^0:4:0
 @q^3797^0:4:0
+@q^3804^0:4:0
+@q^3808^0:4:0
 @q^3815^0:4:0
 @q^3816^0:4:0
 @q^3817^0:4:0
 @q^3857^1:7:1
+@q^3864^2:7:1
 @q^3879^1:12:0
 @q^3901^1:12:0
 @q^3915^1:12:0
@@ -349,6 +374,7 @@ GoldScout-export 5^ndx04gw2xxnn^12
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4387^1:7:1
+@q^4421^1:0:0
 @q^4461^1:7:1
 @q^4538^1:0:0
 @q^4540^1:0:0
@@ -360,6 +386,7 @@ GoldScout-export 5^ndx04gw2xxnn^12
 @q^4873^0:15:0
 @q^4874^0:15:0
 @q^5469^1:7:1
+@q^5567^0:15:0
 @q^5637^1:7:1
 @q^5805^1:12:0
 @q^5848^1:12:0
@@ -420,6 +447,9 @@ GoldScout-export 5^ndx04gw2xxnn^12
 @q^265141^1:12:0
 @q^267474^1:0:0
 @q^274294^2:4:0
+@q^274600^3:4:0
+@q^274601^3:2:0
+@q^279046^0:15:0
 @m^1434^Stranglethorn Vale
 @m^1440^Ashenvale
 @m^1441^Thousand Needles
@@ -730,6 +760,7 @@ GoldScout-export 5^ndx04gw2xxnn^12
 @a^4723^68:1
 @a^6073^276:1
 @a^6115^276:1
+@a^11562^284:1,304:1,324:2
 @a^12856^274:1
 @a^250868^149:1,167:1,187:2,188:1,208:1,229:3
 @a^250927^152:1

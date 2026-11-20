@@ -1,6 +1,12 @@
-GoldScout-export 6^y10rt40sretu^2
+GoldScout-export 6^y10rt40sretu^3
+2265^4^0^24^25^1424^0.3261^0.4463^4^Hillsbrad Apprentice Blacksmith^1205:1:1,2592:2:3^
+2268^1^0^26^26^1424^0.3358^0.4435^1^Hillsbrad Footman^2592:1:2^
 2358^2^0^33^33^1416^0.2519^0.5289^2^Dalaran Summoner^4306:1:1^
 2359^7^0^32^33^1416^0.2504^0.5395^7^Elemental Slave^2838:2:2,3715:4:4,4553:1:1,4784:5:5,7414:1:1,8150:1:1^
+2376^1^0^30^31^1424^0.3518^0.6597^1^Torn Fin Oracle^6308:1:3^
+2377^2^0^32^32^1424^0.3549^0.6643^2^Torn Fin Tidehunter^5524:1:1,17057:1:1,17058:2:2^
+2384^2^0^23^24^1424^0.4688^0.3660^2^Starving Mountain Lion^3496:2:2,3731:2:2^
+2404^2^0^26^26^1424^0.3300^0.4458^2^Blacksmith Verringtan^4306:1:1^
 245999^1^0^0^0^1416^0.0000^0.0000^0^^273031:1:1^
 246016^1^0^0^0^1416^0.0000^0.0000^0^^273045:1:1^
 246017^1^0^0^0^1416^0.0000^0.0000^0^^273048:1:1^
@@ -15,42 +21,58 @@ GoldScout-export 6^y10rt40sretu^2
 255071^1^0^0^0^1416^0.0000^0.0000^0^^1808:1:1^
 255072^2^0^0^0^1416^0.0000^0.0000^0^^1825:1:1,211853:1:1^
 269134^1^0^0^0^1416^0.0000^0.0000^0^^^
+@i^1205^Melon Juice
 @i^1783^Cross-stitched Gloves
 @i^1807^Tough Leather Gloves
 @i^1808^Tough Leather Pants
 @i^1825^Bulky Bludgeon
 @i^2222^Tower Shield
+@i^2592^Wool Cloth
 @i^2786^Oiled Blunderbuss
 @i^2838^Heavy Stone
+@i^3496^Mountain Lion Blood
 @i^3715^Bracers of Earth Binding
+@i^3731^Lion Meat
 @i^4306^Silk Cloth
 @i^4553^Jagged Piece of Stone
 @i^4784^Lifeless Stone
+@i^5524^Thick-shelled Clam
+@i^6308^Raw Bristle Whisker Catfish
 @i^6438^Dull Elemental Bracer
 @i^6454^Manual: Strong Anti-Venom
 @i^7414^Infiltrator Pants of Agility
 @i^8150^Deeprock Salt
+@i^17057^Shiny Fish Scales
+@i^17058^Fish Oil
 @i^211853^Scroll: VOCE WELL
 @i^251961^Arcane Mote
 @i^273031^Runemender's Seal
 @i^273045^Drape of Shifting Energy
 @i^273048^Refractory Scaleguards
 @i^276160^Mana Fragment
+@q^1205^1:0:0
 @q^1783^0:4:0
 @q^1807^0:4:0
 @q^1808^0:4:0
 @q^1825^0:2:0
 @q^2222^0:4:0
+@q^2592^1:7:1
 @q^2786^0:2:0
 @q^2838^1:7:1
+@q^3496^1:12:0
 @q^3715^1:12:0
+@q^3731^1:7:1
 @q^4306^1:7:1
 @q^4553^0:15:0
 @q^4784^0:15:0
+@q^5524^1:7:0
+@q^6308^1:7:1
 @q^6438^0:15:0
 @q^6454^2:9:0
 @q^7414^2:4:0
 @q^8150^1:7:1
+@q^17057^1:15:0
+@q^17058^1:15:0
 @q^211853^1:0:0
 @q^251961^1:12:0
 @q^273031^3:4:0
@@ -58,6 +80,13 @@ GoldScout-export 6^y10rt40sretu^2
 @q^273048^3:4:0
 @q^276160^0:15:0
 @m^1416^Alterac Mountains
+@m^1424^Hillsbrad Foothills
+@a^2265^166:4
+@a^2268^166:1
 @a^2358^204:1,205:1
 @a^2359^204:1,205:4,224:1,245:1
+@a^2376^267:1
+@a^2377^266:1,267:1
+@a^2384^130:1,168:1
+@a^2404^166:2
 @l^0^enUS

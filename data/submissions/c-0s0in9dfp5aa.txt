@@ -1,4 +1,4 @@
-GoldScout-export 6^0s0in9dfp5aa^11
+GoldScout-export 6^0s0in9dfp5aa^12
 1973^9^0^20^21^1421^0.5809^0.7100^9^Ravenclaw Guardian^955:1:1,1179:1:1,1794:1:1,2589:3:5,271343:1:1,271350:1:1^
 1974^5^0^19^20^1421^0.5931^0.7119^5^Ravenclaw Drudger^4605:1:1,6530:2:2^
 2244^3^0^21^22^1424^0.7885^0.4353^3^Syndicate Shadow Mage^2592:1:1^
@@ -149,6 +149,10 @@ GoldScout-export 6^0s0in9dfp5aa^11
 260801^4^0^0^0^0^0.0000^0.0000^0^^1697:2:2,3180:1:1,3685:1:1,271100:1:1^
 260803^3^0^0^0^0^0.0000^0.0000^0^^1074:1:1,1825:1:1,15212:1:1,211854:1:1^
 260804^2^0^0^0^0^0.0000^0.0000^0^^2251:1:1,4352:1:1^
+264079^5^0^27^28^1412^0.3272^0.1154^5^Gloomrise Hatchling^3167:3:3^
+264081^7^0^28^28^1412^0.3290^0.1061^7^Gloomrise Spinner^878:2:2,1081:1:1,3182:2:2,3931:2:2,273181:3:3^
+264082^1^0^30^30^1412^0.3378^0.0675^1^Broodmother Valraxx^273658:1:1^
+264083^6^0^28^29^1412^0.3303^0.1093^6^Gloomrise Soldier^1081:3:3,3167:2:2,3174:1:1,5465:2:2,248707:1:1^
 271698^2^0^23^23^1450^0.7184^0.6360^2^Restless Spirit^^
 274715^1^0^0^0^0^0.0000^0.0000^0^^3667:1:1^
 275045^1^0^0^0^0^0.0000^0.0000^0^^4306:1:2,5108:1:1^
@@ -160,6 +164,7 @@ GoldScout-export 6^0s0in9dfp5aa^11
 @i^818^Tigerseye
 @i^857^Large Red Sack
 @i^858^Lesser Healing Potion
+@i^878^Fist-sized Spinneret
 @i^890^Twisted Chanter's Staff
 @i^929^Healing Potion
 @i^932^Fel Steed Saddlebags
@@ -225,8 +230,11 @@ GoldScout-export 6^0s0in9dfp5aa^11
 @i^2882^Plans: Silvered Bronze Shoulders
 @i^2940^Bloody Bear Paw
 @i^3078^Naga Heartpiercer
+@i^3167^Thick Spider Hair
+@i^3174^Spider Ichor
 @i^3180^Flecked Raptor Scale
 @i^3181^Partially Digested Meat
+@i^3182^Spider's Silk
 @i^3206^Cavalier Two-hander of Nature Protection
 @i^3301^Sharp Canine
 @i^3385^Lesser Mana Potion
@@ -249,6 +257,7 @@ GoldScout-export 6^0s0in9dfp5aa^11
 @i^3731^Lion Meat
 @i^3770^Mutton Chop
 @i^3928^Superior Healing Potion
+@i^3931^Poisoned Spider Fang
 @i^3989^Blocking Targe
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
@@ -276,6 +285,7 @@ GoldScout-export 6^0s0in9dfp5aa^11
 @i^5447^Damaged Elemental Bracer
 @i^5448^Fractured Elemental Bracer
 @i^5451^Crushed Elemental Bracer
+@i^5465^Small Spider Leg
 @i^5471^Stag Meat
 @i^5481^Satyr Horns
 @i^5498^Small Lustrous Pearl
@@ -381,6 +391,7 @@ GoldScout-export 6^0s0in9dfp5aa^11
 @i^211854^Scroll: OMIT KESA
 @i^211855^Scroll: STHENIC LUNATE
 @i^248682^Waylaid Crate: Apprentice Herbs
+@i^248707^Waylaid Crate: Journeyman Parts
 @i^248708^Waylaid Crate: Expert Fabrics
 @i^248710^Waylaid Crate: Expert Parts
 @i^251335^Plans: Sterling Silver Boots
@@ -396,6 +407,8 @@ GoldScout-export 6^0s0in9dfp5aa^11
 @i^273030^Ring of Power Regulation
 @i^273089^Slither Cord
 @i^273106^Blueprint: Greenhouse
+@i^273181^Crystalline Silk
+@i^273658^Bloody Parchment
 @i^273839^Spiked Shell Band
 @i^273841^Twilight Maul
 @i^274641^Theka's Last Breath
@@ -411,6 +424,7 @@ GoldScout-export 6^0s0in9dfp5aa^11
 @q^818^2:7:1
 @q^857^1:1:0
 @q^858^1:0:0
+@q^878^0:7:0
 @q^890^3:2:0
 @q^929^1:0:0
 @q^932^2:1:0
@@ -476,8 +490,11 @@ GoldScout-export 6^0s0in9dfp5aa^11
 @q^2882^2:9:0
 @q^2940^0:15:0
 @q^3078^3:2:0
+@q^3167^0:15:0
+@q^3174^1:7:1
 @q^3180^0:15:0
 @q^3181^0:15:0
+@q^3182^1:7:1
 @q^3206^2:2:0
 @q^3301^0:15:0
 @q^3385^1:0:0
@@ -500,6 +517,7 @@ GoldScout-export 6^0s0in9dfp5aa^11
 @q^3731^1:7:1
 @q^3770^1:0:0
 @q^3928^1:0:0
+@q^3931^0:15:0
 @q^3989^0:4:0
 @q^4306^1:7:1
 @q^4338^1:7:1
@@ -527,6 +545,7 @@ GoldScout-export 6^0s0in9dfp5aa^11
 @q^5447^0:15:0
 @q^5448^0:15:0
 @q^5451^0:15:0
+@q^5465^1:7:1
 @q^5471^1:7:1
 @q^5481^1:12:0
 @q^5498^2:7:1
@@ -632,6 +651,7 @@ GoldScout-export 6^0s0in9dfp5aa^11
 @q^211854^1:0:0
 @q^211855^1:0:0
 @q^248682^1:0:1
+@q^248707^2:0:1
 @q^248708^2:0:1
 @q^248710^2:0:1
 @q^251335^2:9:0
@@ -647,6 +667,8 @@ GoldScout-export 6^0s0in9dfp5aa^11
 @q^273030^3:4:0
 @q^273089^3:4:0
 @q^273106^2:9:0
+@q^273181^1:12:0
+@q^273658^1:15:0
 @q^273839^3:4:0
 @q^273841^3:2:0
 @q^274641^3:4:0
@@ -655,6 +677,7 @@ GoldScout-export 6^0s0in9dfp5aa^11
 @q^274654^3:2:0
 @q^277112^1:12:0
 @q^284844^1:12:0
+@m^1412^Mulgore
 @m^1413^The Barrens
 @m^1414^Kalimdor
 @m^1421^Silverpine Forest
@@ -1646,5 +1669,9 @@ GoldScout-export 6^0s0in9dfp5aa^11
 @a^12897^293:2,312:3
 @a^209797^153:1
 @a^212753^271:1
+@a^264079^26:1,46:4
+@a^264081^26:3,46:4
+@a^264082^26:1
+@a^264083^26:1,46:5
 @a^271698^254:1,274:1
 @l^0^enUS

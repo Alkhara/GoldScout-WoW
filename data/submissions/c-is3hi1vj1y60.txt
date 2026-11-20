@@ -1,4 +1,4 @@
-GoldScout-export 6^is3hi1vj1y60^5
+GoldScout-export 6^is3hi1vj1y60^8
 1913^3^0^16^17^1421^0.6217^0.6414^3^Dalaran Warder^858:1:1,2589:1:1,5110:1:1^
 2120^1^0^22^22^1421^0.6354^0.6389^1^Archmage Ataeric^858:1:1,2592:1:2^
 2252^1^0^34^35^1416^0.4792^0.6319^1^Crushridge Ogre^15213:1:1^
@@ -40,6 +40,10 @@ GoldScout-export 6^is3hi1vj1y60^5
 247016^4^0^0^0^1416^0.0000^0.0000^0^^929:1:1,1783:1:1,3381:1:1,3385:1:1,211854:1:1^
 247032^1^0^0^0^1416^0.0000^0.0000^0^^273054:1:1^
 247126^2^0^0^0^1416^0.0000^0.0000^0^^273032:1:1,273036:1:1^
+251245^2^0^5^6^2521^0.5008^0.5852^2^Prideclaw^3299:1:1,252671:1:1^
+251314^4^0^7^8^2521^0.6183^0.7551^4^Skyhopper^^
+251727^8^0^7^8^2521^0.6246^0.7684^8^Skyhopper^^
+254626^6^0^9^10^2521^0.5588^0.6038^6^Al'Aketh Assassin^2589:3:5,4672:1:1,252022:1:1,252031:2:3,252032:1:1,267474:2:2^
 255066^4^0^0^0^1416^0.0000^0.0000^0^^1827:1:1,6614:1:1,9821:1:1^
 255068^2^0^0^0^1416^0.0000^0.0000^0^^^
 255069^3^0^0^0^1416^0.0000^0.0000^0^^1757:1:1^
@@ -65,6 +69,7 @@ GoldScout-export 6^is3hi1vj1y60^5
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2838^Heavy Stone
+@i^3299^Fractured Canine
 @i^3380^Cross-stitched Belt
 @i^3381^Cross-stitched Bracers
 @i^3385^Lesser Mana Potion
@@ -85,6 +90,7 @@ GoldScout-export 6^is3hi1vj1y60^5
 @i^4553^Jagged Piece of Stone
 @i^4607^Delicious Cave Mold
 @i^4634^Iron Lockbox
+@i^4672^Ancestral Belt
 @i^4712^Glimmering Mail Girdle
 @i^4784^Lifeless Stone
 @i^5110^Dalaran Wizard's Robe
@@ -115,6 +121,11 @@ GoldScout-export 6^is3hi1vj1y60^5
 @i^213547^Scroll: THAW WORDS
 @i^216483^Witherbark Mallet
 @i^251961^Arcane Mote
+@i^252022^Galestrider Jerky
+@i^252031^Crisp Spring Water
+@i^252032^Red Delicious Stormapple
+@i^252671^Hoarder's Foot
+@i^267474^Galeswept Forestshroom
 @i^273032^Bonebinder's Signet
 @i^273035^Mana-Warped Chain Shirt
 @i^273036^Graveweave Bindings
@@ -146,6 +157,7 @@ GoldScout-export 6^is3hi1vj1y60^5
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2838^1:7:1
+@q^3299^0:15:0
 @q^3380^0:4:0
 @q^3381^0:4:0
 @q^3385^1:0:0
@@ -166,6 +178,7 @@ GoldScout-export 6^is3hi1vj1y60^5
 @q^4553^0:15:0
 @q^4607^1:0:0
 @q^4634^2:15:0
+@q^4672^1:4:0
 @q^4712^2:4:0
 @q^4784^0:15:0
 @q^5110^1:4:0
@@ -196,6 +209,11 @@ GoldScout-export 6^is3hi1vj1y60^5
 @q^213547^1:0:0
 @q^216483^1:0:0
 @q^251961^1:12:0
+@q^252022^1:0:0
+@q^252031^1:0:0
+@q^252032^1:0:0
+@q^252671^0:15:0
+@q^267474^1:0:0
 @q^273032^3:4:0
 @q^273035^3:4:0
 @q^273036^3:4:0
@@ -212,6 +230,7 @@ GoldScout-export 6^is3hi1vj1y60^5
 @m^1417^Arathi Highlands
 @m^1421^Silverpine Forest
 @m^1458^Undercity
+@m^2521^Zephras Isle
 @c^118^
 @c^724^
 @c^733^
@@ -1544,5 +1563,9 @@ GoldScout-export 6^is3hi1vj1y60^5
 @a^4480^151:1
 @a^4481^150:1
 @a^12922^167:1
+@a^251245^209:1,270:1
+@a^251314^291:1,311:1,312:1,313:1
+@a^251727^311:2,312:6
+@a^254626^231:2,251:4
 @f^1458^0^56^100^6289:27:27,6291:3:3,6297:11:11,6299:7:7,6301:2:2,6308:6:6^74:56
 @l^0^enUS
