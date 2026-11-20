@@ -1,4 +1,4 @@
-GoldScout-export 6^zwjn89lx28m0^6
+GoldScout-export 6^zwjn89lx28m0^7
 46^1^0^10^10^1429^0.7728^0.8437^1^Murlocfutterwühler^779:1:1^
 80^6^0^3^4^1429^0.4907^0.2850^6^Koboldhilfsarbeiter^755:1:1,1377:2:2,2656:1:1,4536:2:2^
 116^1^0^8^9^1429^0.4378^0.7423^1^Bandit der Defias^2589:1:1^
@@ -53,6 +53,11 @@ GoldScout-export 6^zwjn89lx28m0^6
 1732^5^0^0^0^0^0.0000^0.0000^0^^2589:2:7,2764:1:1,4345:1:1,248685:1:1^
 1763^1^0^0^0^0^0.0000^0.0000^0^^273297:1:1^
 1922^1^0^8^8^1429^0.5829^0.6260^1^Grauer Forstwolf^^
+2071^1^0^19^20^1439^0.6288^0.0785^1^Mondpirschermatriarchin^5135:1:1^
+2181^2^0^19^19^1439^0.6111^0.2043^2^Myrmidone der Sturmschuppen^^
+2182^1^0^20^20^1439^0.6133^0.1738^1^Zauberhexerin der Sturmschuppen^1787:1:1^
+2183^6^0^20^21^1439^0.6118^0.2038^6^Krieger der Sturmschuppen^5523:4:4,17057:3:3,279276:3:3^
+2237^1^0^18^18^1439^0.6180^0.0948^1^Mondpirscherpatriarch^5134:1:1^
 3245^1^0^17^17^1413^0.3707^0.2757^1^Störrischer Ebenenschreiter^5114:1:1,17056:1:1^
 3274^1^0^15^15^1413^0.5624^0.4538^1^Rudelläufer der Kolkar^^
 3947^3^0^0^0^0^0.0000^0.0000^0^^2217:1:1,2287:1:1,2589:1:5,2592:2:7^
@@ -98,6 +103,7 @@ GoldScout-export 6^zwjn89lx28m0^6
 @i^1743^Geschnürte Panzerhose
 @i^1768^Segeltuchhose
 @i^1772^Brokatschuhe
+@i^1787^Geflickter Ledergürtel
 @i^1790^Geflickter Umhang
 @i^1793^Geflickte Lederschulterstücke
 @i^1802^Rohledertunika
@@ -151,6 +157,8 @@ GoldScout-export 6^zwjn89lx28m0^6
 @i^4775^Gesprungener Schnabel
 @i^4776^Gesträubte Feder
 @i^5114^Abgespaltene Kralle
+@i^5134^Kleine pelzige Tatze
+@i^5135^Dünne schwarze Klaue
 @i^5194^Zuchtmeisteraxt
 @i^5196^Smites Häscher
 @i^5523^Kleine rankenfüßige Muschel
@@ -166,6 +174,7 @@ GoldScout-export 6^zwjn89lx28m0^6
 @i^15249^Polierter Bidenhänder des heiligen Zorns
 @i^15926^Zauberbinder-Kugel
 @i^17056^Leichte Feder
+@i^17057^Glänzende Fischschuppen
 @i^211855^Schriftrolle: STHENIC LUNATE
 @i^247862^Ulmpfotes Kopf
 @i^248685^Abgefangene Kiste: Kuriositäten des Lehrlings
@@ -174,6 +183,7 @@ GoldScout-export 6^zwjn89lx28m0^6
 @i^251338^Pläne: Sterlingsilberschulterstücke
 @i^273289^Ogerlendenschurz
 @i^273297^Goblinhammer
+@i^279276^Fragment des Amuletts von Mathystra
 @q^414^1:0:0
 @q^555^0:15:0
 @q^556^0:15:0
@@ -209,6 +219,7 @@ GoldScout-export 6^zwjn89lx28m0^6
 @q^1743^0:4:0
 @q^1768^0:4:0
 @q^1772^0:4:0
+@q^1787^0:4:0
 @q^1790^0:4:0
 @q^1793^0:4:0
 @q^1802^0:4:0
@@ -262,6 +273,8 @@ GoldScout-export 6^zwjn89lx28m0^6
 @q^4775^0:15:0
 @q^4776^0:15:0
 @q^5114^0:15:0
+@q^5134^1:12:0
+@q^5135^0:15:0
 @q^5194^3:2:0
 @q^5196^3:2:0
 @q^5523^1:7:0
@@ -277,6 +290,7 @@ GoldScout-export 6^zwjn89lx28m0^6
 @q^15249^2:2:0
 @q^15926^2:4:0
 @q^17056^1:15:1
+@q^17057^1:15:0
 @q^211855^1:0:0
 @q^247862^1:12:0
 @q^248685^1:0:1
@@ -285,11 +299,13 @@ GoldScout-export 6^zwjn89lx28m0^6
 @q^251338^2:9:0
 @q^273289^3:4:0
 @q^273297^3:2:0
+@q^279276^1:0:0
 @m^1413^Das Brachland
 @m^1415^Östliche Königreiche
 @m^1429^Wald von Elwynn
 @m^1433^Rotkammgebirge
 @m^1436^Westfall
+@m^1439^Dunkelküste
 @c^118^
 @c^724^
 @c^733^
@@ -1380,6 +1396,11 @@ GoldScout-export 6^zwjn89lx28m0^6
 @a^1726^308:1
 @a^1727^308:1
 @a^1922^251:1
+@a^2071^32:1
+@a^2181^72:1,92:1
+@a^2182^72:1
+@a^2183^72:4,92:2
+@a^2237^32:1
 @a^3245^107:1
 @a^3274^191:1
 @a^4064^192:2,211:1,232:1,251:1,271:1

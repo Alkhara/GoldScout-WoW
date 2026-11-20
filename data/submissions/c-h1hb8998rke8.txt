@@ -1,4 +1,4 @@
-GoldScout-export 6^h1hb8998rke8^4
+GoldScout-export 6^h1hb8998rke8^5
 2248^3^0^30^31^1424^0.4425^0.2963^3^Höhlenyeti^3771:1:1^
 2249^8^0^31^32^1424^0.4449^0.2971^8^Wilder Yeti^^
 2252^1^0^35^35^1416^0.5018^0.6094^1^Crushridge-Oger^^
@@ -8,6 +8,8 @@ GoldScout-export 6^h1hb8998rke8^4
 2271^21^0^31^32^1416^0.1948^0.8945^21^Schildwache von Dalaran^2290:1:1,3714:8:8,4306:5:5,4338:1:1,213543:1:1^
 2272^6^0^32^33^1416^0.1957^0.8963^5^Theurgin von Dalaran^3714:2:2,4306:2:4^
 2305^1^0^30^30^1424^0.3038^0.5585^1^Großknecht Bonds^3692:1:1^
+2358^6^0^32^33^1416^0.2484^0.5865^6^Beschwörerin von Dalaran^1710:1:1,3745:1:1,4306:3:3^
+2359^12^0^32^33^1416^0.2422^0.5727^12^Elementarsklave^2838:1:2,3042:1:1,3715:4:4,4553:1:1,4784:9:9,5214:1:1,5741:1:1,7067:2:2,8150:4:4^
 2372^2^0^26^27^1424^0.6394^0.6031^2^Gnoll der Morastschnauzen^^
 2373^1^0^28^28^1424^0.6320^0.6112^1^Schamane der Morastschnauzen^4306:1:2^
 2384^1^0^23^24^1424^0.3731^0.3485^1^Verhungernder Berglöwe^5136:1:1,5810:1:1^
@@ -49,6 +51,8 @@ GoldScout-export 6^h1hb8998rke8^4
 @i^2290^Rolle der Intelligenz II
 @i^2592^Wollstoff
 @i^2836^Grober Stein
+@i^2838^Schwerer Stein
+@i^3042^BKP Spatz Kleinkaliber
 @i^3182^Spinnenseide
 @i^3685^Raptorei
 @i^3688^Blutsteinoval
@@ -58,6 +62,8 @@ GoldScout-export 6^h1hb8998rke8^4
 @i^3692^Menschlicher Schädel aus Hillsbrad
 @i^3711^Belamoores Forschungstagebuch
 @i^3714^Abgenutzte Steinmarke
+@i^3715^Armschienen der Erdbindung
+@i^3745^Rune des Öffnens
 @i^3771^Wildschweinschenkel
 @i^3785^Beißende Axt
 @i^4306^Seidenstoff
@@ -66,15 +72,21 @@ GoldScout-export 6^h1hb8998rke8^4
 @i^4461^Raptorbalg
 @i^4495^Blutsteinamulett
 @i^4512^Hochlandraptorauge
+@i^4553^Gezacktes Steinstück
+@i^4784^Lebloser Stein
 @i^5113^Mal des Syndikats
 @i^5136^Zerrissenes pelziges Ohr
+@i^5214^Zauberstab der Abendzeit
 @i^5637^Großer Fangzahn
+@i^5741^Steinbruchstück
 @i^5810^Frisches Gerippe
 @i^5811^Frostrachens Mähne
 @i^5830^Kenatas Kopf
 @i^5831^Fardels Kopf
 @i^5832^Marcels Kopf
 @i^6986^Purpurroter Lotus
+@i^7067^Elementarerde
+@i^8150^Tiefsteinsalz
 @i^12184^Raptorfleisch
 @i^15250^Gleißender Flamberg der Eule
 @i^211853^Schriftrolle: VOCE WELL
@@ -97,6 +109,8 @@ GoldScout-export 6^h1hb8998rke8^4
 @q^2290^1:0:0
 @q^2592^1:7:1
 @q^2836^1:7:1
+@q^2838^1:7:1
+@q^3042^2:2:0
 @q^3182^1:7:1
 @q^3685^1:7:1
 @q^3688^1:12:0
@@ -106,6 +120,8 @@ GoldScout-export 6^h1hb8998rke8^4
 @q^3692^1:12:0
 @q^3711^1:12:0
 @q^3714^1:12:0
+@q^3715^1:12:0
+@q^3745^1:12:0
 @q^3771^1:0:0
 @q^3785^0:2:0
 @q^4306^1:7:1
@@ -114,15 +130,21 @@ GoldScout-export 6^h1hb8998rke8^4
 @q^4461^1:7:1
 @q^4495^1:12:0
 @q^4512^1:12:0
+@q^4553^0:15:0
+@q^4784^0:15:0
 @q^5113^0:15:0
 @q^5136^0:15:0
+@q^5214^2:2:0
 @q^5637^1:7:1
+@q^5741^0:15:0
 @q^5810^1:12:0
 @q^5811^1:12:0
 @q^5830^1:12:0
 @q^5831^1:12:0
 @q^5832^1:12:0
 @q^6986^0:15:0
+@q^7067^1:7:1
+@q^8150^1:7:1
 @q^12184^1:7:1
 @q^15250^2:2:0
 @q^211853^1:0:0
@@ -865,6 +887,8 @@ GoldScout-export 6^h1hb8998rke8^4
 @a^2271^343:9,344:6,363:2,364:4
 @a^2272^343:1,344:2,363:1,364:1
 @a^2305^226:1
+@a^2358^224:3,225:2,245:1
+@a^2359^204:3,224:4,225:3,245:2
 @a^2372^232:1,252:1
 @a^2373^252:1
 @a^2384^127:1

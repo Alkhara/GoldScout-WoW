@@ -1,4 +1,4 @@
-GoldScout-export 6^0iks21vj83hu^3
+GoldScout-export 6^0iks21vj83hu^4
 6^13^0^1^2^1429^0.4965^0.3626^13^Kobold Vermin^159:2:2,755:2:2,1367:1:1,1370:1:1,1372:1:1,2211:1:1,2589:4:4,4536:2:2,247834:1:1,247839:4:4^
 38^21^0^3^4^1429^0.5204^0.5031^21^Defias Thug^159:1:1,752:12:12,1367:1:1,1374:1:1,2070:4:4,2589:9:9,3365:1:1^
 69^5^0^2^2^1429^0.4639^0.3568^5^Timber Wolf^750:3:3,2650:1:1,2672:1:1,4865:1:1,7073:3:3,7074:2:2^
@@ -8,7 +8,18 @@ GoldScout-export 6^0iks21vj83hu^3
 1052^5^0^28^29^1437^0.4976^0.1960^5^Dark Iron Saboteur^2592:1:1,4306:2:5,6397:1:1^
 1053^5^0^29^30^1437^0.4709^0.1708^5^Dark Iron Tunneler^1782:1:1,2786:2:2,4306:1:3^
 1054^2^0^30^31^1437^0.4664^0.1849^2^Dark Iron Demolitionist^4306:1:3,7354:1:1^
+1663^1^0^0^0^0^0.0000^0.0000^0^^3628:1:1,273819:1:1^
+1666^1^0^0^0^0^0.0000^0.0000^0^^3640:1:1,273808:1:1^
+1696^1^0^0^0^0^0.0000^0.0000^0^^3630:1:1^
+1706^5^0^0^0^0^0.0000^0.0000^0^^2765:1:1,2909:1:1,4661:1:1^
+1707^5^0^0^0^0^0.0000^0.0000^0^^422:1:1,2589:1:4,2909:3:3^
+1708^5^0^0^0^0^0.0000^0.0000^0^^2909:3:3^
+1711^8^0^0^0^0^0.0000^0.0000^0^^1752:1:1,2589:1:4,2592:2:4,2909:2:2^
+1715^4^0^0^0^0^0.0000^0.0000^0^^422:1:1,2592:1:3,2909:1:1,4306:1:2,9802:1:1^
+1716^1^0^0^0^0^0.0000^0.0000^0^^2926:1:1,273824:1:1^
+1717^1^0^0^0^0^0.0000^0.0000^0^^273811:1:1^
 @i^159^Refreshing Spring Water
+@i^422^Dwarven Mild
 @i^750^Tough Wolf Meat
 @i^752^Red Burlap Bandana
 @i^755^Melted Candle
@@ -18,6 +29,7 @@ GoldScout-export 6^0iks21vj83hu^3
 @i^1372^Ragged Cloak
 @i^1374^Frayed Shoes
 @i^1377^Frayed Gloves
+@i^1752^Linked Chain Shoulderpads
 @i^1782^Cross-stitched Cloak
 @i^2070^Darnassian Bleu
 @i^2210^Battered Buckler
@@ -26,22 +38,35 @@ GoldScout-export 6^0iks21vj83hu^3
 @i^2592^Wool Cloth
 @i^2650^Flimsy Chain Boots
 @i^2672^Stringy Wolf Meat
+@i^2765^Hunting Knife
 @i^2786^Oiled Blunderbuss
+@i^2909^Red Wool Bandana
+@i^2926^Head of Bazil Thredd
 @i^3201^Barbarian War Axe of Intellect
 @i^3365^Frayed Bracers
+@i^3628^Hand of Dextren Ward
+@i^3630^Head of Targorr
+@i^3640^Head of Deepfury
 @i^4036^Silver-thread Cuffs
 @i^4306^Silk Cloth
 @i^4536^Shiny Red Apple
 @i^4542^Moist Cornbread
+@i^4661^Bright Mantle
 @i^4865^Ruined Pelt
 @i^6397^Emblazoned Gloves
 @i^6614^Sage's Cloak of Power
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
 @i^7354^Elder's Boots of Stamina
+@i^9802^Superior Boots of the Tiger
 @i^247834^Nibbled-On Book
 @i^247839^Stolen Book
+@i^273808^Bridgebreaker Bindings
+@i^273811^Repurposed Rack
+@i^273819^Boneslicer
+@i^273824^Defias Jailbreakers
 @q^159^1:0:0
+@q^422^1:0:0
 @q^750^1:12:0
 @q^752^1:12:0
 @q^755^0:15:0
@@ -51,6 +76,7 @@ GoldScout-export 6^0iks21vj83hu^3
 @q^1372^0:4:0
 @q^1374^0:4:0
 @q^1377^0:4:0
+@q^1752^0:4:0
 @q^1782^0:4:0
 @q^2070^1:0:0
 @q^2210^0:4:0
@@ -59,21 +85,33 @@ GoldScout-export 6^0iks21vj83hu^3
 @q^2592^1:7:1
 @q^2650^0:4:0
 @q^2672^1:7:1
+@q^2765^0:2:0
 @q^2786^0:2:0
+@q^2909^1:12:0
+@q^2926^1:12:0
 @q^3201^2:2:0
 @q^3365^0:4:0
+@q^3628^1:12:0
+@q^3630^1:12:0
+@q^3640^1:12:0
 @q^4036^2:4:0
 @q^4306^1:7:1
 @q^4536^1:0:0
 @q^4542^1:0:0
+@q^4661^2:4:0
 @q^4865^0:15:0
 @q^6397^2:4:0
 @q^6614^2:4:0
 @q^7073^0:15:0
 @q^7074^0:15:0
 @q^7354^2:4:0
+@q^9802^2:4:0
 @q^247834^1:15:0
 @q^247839^1:12:0
+@q^273808^3:4:0
+@q^273811^3:4:0
+@q^273819^3:2:0
+@q^273824^3:4:0
 @m^1429^Elwynn Forest
 @m^1437^Wetlands
 @c^118^
