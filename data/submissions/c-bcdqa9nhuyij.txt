@@ -1,6 +1,12 @@
-GoldScout-export 6^bcdqa9nhuyij^2
+GoldScout-export 6^bcdqa9nhuyij^3
+2643^3^0^47^48^1425^0.6503^0.7115^3^Vilebranch Berserker^1520:1:1,3962:1:1,4338:1:3,8152:1:1,8153:1:2,9259:1:1^
+2645^3^0^48^49^1425^0.6371^0.7062^3^Vilebranch Shadow Hunter^9259:1:1^
+2646^3^0^49^50^1425^0.6381^0.7790^3^Vilebranch Blood Drinker^1520:1:1,8153:1:1,9259:2:2^
+2647^6^0^49^50^1425^0.6174^0.7316^6^Vilebranch Soul Eater^1520:3:3,4023:1:1,4338:4:9,8153:1:2,9259:3:3^
+2648^2^0^50^51^1425^0.5792^0.8085^2^Vilebranch Aman'zasi Guard^1520:1:1,4338:1:1^
 2723^4^0^38^39^1418^0.4212^0.2867^4^Stone Golem^3799:1:1,7912:2:2,8150:1:1^
 2742^1^0^38^39^1418^0.4080^0.2902^1^Shadowforge Chanter^^
+3226^1^0^11^11^1411^0.5057^0.1330^1^Corrupted Scorpid^^
 3991^1^0^19^20^1442^0.7429^0.5951^1^Venture Co. Deforester^^
 3999^5^0^21^22^1442^0.7224^0.6211^5^Windshear Digger^2592:1:2^
 4003^3^0^20^21^1442^0.7387^0.6029^3^Windshear Geomancer^2592:1:2^
@@ -108,9 +114,11 @@ GoldScout-export 6^bcdqa9nhuyij^2
 @i^3943^Crochet Vest
 @i^3947^Twill Cloak
 @i^3949^Twill Pants
+@i^3962^Thick Leather Boots
 @i^3963^Thick Leather Bracers
 @i^3997^Laminated Scale Pants
 @i^4017^Sharp Shortsword
+@i^4023^Fine Pointed Dagger
 @i^4026^Sentinel Musket
 @i^4338^Mageweave Cloth
 @i^4552^Smooth Stone Chip
@@ -136,10 +144,12 @@ GoldScout-export 6^bcdqa9nhuyij^2
 @i^8146^Wicked Claw
 @i^8150^Deeprock Salt
 @i^8152^Flask of Big Mojo
+@i^8153^Wildvine
 @i^8272^Ebonhold Shoulderpads
 @i^8284^Arcane Boots
 @i^8766^Morning Glory Dew
 @i^8950^Homemade Cherry Pie
+@i^9259^Troll Tribal Necklace
 @i^9882^Sorcerer Sphere of the Whale
 @i^9939^Abjurer's Gloves of the Sorcerer
 @i^9964^Warmonger's Leggings of Nature's Wrath
@@ -238,9 +248,11 @@ GoldScout-export 6^bcdqa9nhuyij^2
 @q^3943^0:4:0
 @q^3947^0:4:0
 @q^3949^0:4:0
+@q^3962^0:4:0
 @q^3963^0:4:0
 @q^3997^0:4:0
 @q^4017^0:2:0
+@q^4023^0:2:0
 @q^4026^0:2:0
 @q^4338^1:7:1
 @q^4552^0:15:0
@@ -266,10 +278,12 @@ GoldScout-export 6^bcdqa9nhuyij^2
 @q^8146^1:7:1
 @q^8150^1:7:1
 @q^8152^1:7:1
+@q^8153^1:7:1
 @q^8272^2:4:0
 @q^8284^2:4:0
 @q^8766^1:0:0
 @q^8950^1:0:0
+@q^9259^1:15:0
 @q^9882^2:4:0
 @q^9939^2:4:0
 @q^9964^2:4:0
@@ -358,7 +372,9 @@ GoldScout-export 6^bcdqa9nhuyij^2
 @q^273127^2:15:1
 @q^278744^2:12:0
 @q^281016^1:0:0
+@m^1411^Durotar
 @m^1418^Badlands
+@m^1425^The Hinterlands
 @m^1427^Searing Gorge
 @m^1428^Burning Steppes
 @m^1435^Swamp of Sorrows
@@ -913,8 +929,14 @@ GoldScout-export 6^bcdqa9nhuyij^2
 @c^285279^
 @c^285280^
 @c^285281^
+@a^2643^272:1,292:1,293:1
+@a^2645^272:1,292:1,313:1
+@a^2646^292:1,313:1,332:1
+@a^2647^252:1,272:1,291:1,292:1,332:1,333:1
+@a^2648^331:2
 @a^2723^108:4
 @a^2742^108:1
+@a^3226^50:1
 @a^3991^234:1
 @a^3999^254:5
 @a^4003^234:2,254:1
