@@ -1,4 +1,4 @@
-GoldScout-export 6^rxojx7q9g1az^29
+GoldScout-export 6^rxojx7q9g1az^31
 92^6^0^39^40^1418^0.1353^0.3426^6^Rock Elemental^4553:4:4,4627:3:3,4784:2:2,7067:4:4,7848:1:1,7912:1:2,8150:2:2,213545:1:1^
 232^1^0^23^23^1424^0.3331^0.3459^1^Farmer Ray^^
 1532^1^0^10^11^1420^0.7400^0.6046^1^Wandering Spirit^^
@@ -96,7 +96,9 @@ GoldScout-export 6^rxojx7q9g1az^29
 2586^5^0^30^31^1417^0.3243^0.2971^5^Syndicate Highwayman^2290:1:1,4306:2:3,4495:2:2,211854:1:1^
 2587^5^0^32^33^1417^0.3269^0.3013^5^Syndicate Pathstalker^4306:1:1,4495:1:1^
 2589^11^0^31^32^1417^0.3269^0.2924^11^Syndicate Mercenary^4306:2:2,4495:2:2,5113:1:1,7609:1:1,213543:1:1,213544:1:1,213546:1:1,255723:2:2^
-2735^28^0^37^39^1418^0.1814^0.4384^28^Lesser Rock Elemental^4553:2:2,4626:5:5,4784:7:7,7067:2:2,7848:3:3,7912:1:1,8150:3:3,248709:1:1^
+2735^31^0^37^39^1418^0.1853^0.4425^31^Lesser Rock Elemental^4552:1:1,4553:2:2,4626:5:5,4784:8:8,7067:3:3,7848:3:3,7912:3:5,8150:3:3,213546:1:1,248709:1:1^
+2736^8^0^41^44^1418^0.0442^0.8009^8^Greater Rock Elemental^4552:2:2,4628:5:5,4784:2:2,7067:1:1,213546:1:1^
+2919^1^0^45^45^1418^0.2590^0.4643^1^Fam'retor Guardian^4784:1:1,4847:1:1^
 3111^4^0^6^7^1411^0.4892^0.4893^4^Razormane Quilboar^2213:1:1^
 3112^2^0^7^8^1411^0.4910^0.4914^2^Razormane Scout^2589:2:3^
 3113^1^0^8^9^1411^0.4302^0.3835^1^Razormane Dustrunner^2589:1:2,4536:1:1^
@@ -590,6 +592,7 @@ GoldScout-export 6^rxojx7q9g1az^29
 @i^4537^Tel'Abim Banana
 @i^4538^Snapvine Watermelon
 @i^4542^Moist Cornbread
+@i^4552^Smooth Stone Chip
 @i^4553^Jagged Piece of Stone
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
@@ -600,12 +603,14 @@ GoldScout-export 6^rxojx7q9g1az^29
 @i^4606^Spongy Morel
 @i^4626^Small Stone Shard
 @i^4627^Large Stone Slab
+@i^4628^Bracers of Rock Binding
 @i^4681^Brackwater Girdle
 @i^4687^Barbaric Cloth Belt
 @i^4775^Cracked Bill
 @i^4776^Ruffled Feather
 @i^4784^Lifeless Stone
 @i^4813^Small Leather Collar
+@i^4847^Lotwil's Shackles of Elemental Binding
 @i^4871^Searing Collar
 @i^4878^Broken Bloodstained Bow
 @i^4879^Squashed Rabbit Carcass
@@ -1057,6 +1062,7 @@ GoldScout-export 6^rxojx7q9g1az^29
 @q^4537^1:0:0
 @q^4538^1:0:0
 @q^4542^1:0:0
+@q^4552^0:15:0
 @q^4553^0:15:0
 @q^4555^0:15:0
 @q^4556^0:15:0
@@ -1067,12 +1073,14 @@ GoldScout-export 6^rxojx7q9g1az^29
 @q^4606^1:0:0
 @q^4626^1:12:0
 @q^4627^1:12:0
+@q^4628^1:12:0
 @q^4681^1:4:0
 @q^4687^1:4:0
 @q^4775^0:15:0
 @q^4776^0:15:0
 @q^4784^0:15:0
 @q^4813^0:15:0
+@q^4847^1:12:0
 @q^4871^1:12:0
 @q^4878^0:15:0
 @q^4879^0:15:0
@@ -2475,7 +2483,9 @@ GoldScout-export 6^rxojx7q9g1az^29
 @a^2586^106:3,126:2
 @a^2587^106:1,126:4
 @a^2589^106:6,126:5
-@a^2735^142:1,163:18,183:8,184:1
+@a^2735^142:1,163:18,183:8,184:4
+@a^2736^300:2,301:1,320:3,321:2
+@a^2919^185:1
 @a^3111^189:4
 @a^3112^189:1,190:1
 @a^3113^148:1

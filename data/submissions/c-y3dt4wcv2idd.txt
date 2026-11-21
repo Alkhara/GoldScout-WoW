@@ -1,13 +1,17 @@
-GoldScout-export 6^y3dt4wcv2idd^16
+GoldScout-export 6^y3dt4wcv2idd^17
 92^6^0^39^40^1418^0.4273^0.8297^6^Rock Elemental^4553:3:3,4784:4:4,7067:1:1,7848:4:4,7912:2:4,8150:2:2^
 871^3^0^35^36^1434^0.2530^0.2537^3^Saltscale Warrior^3827:1:1,5796:3:3,7465:1:1,17057:2:2^
 873^2^0^36^37^1434^0.2459^0.2490^2^Saltscale Oracle^5796:2:2,17058:1:1^
 875^1^0^37^37^1434^0.2466^0.2454^1^Saltscale Tide Lord^5796:1:1^
 877^1^0^35^35^1434^0.2689^0.2765^1^Saltscale Forager^5796:1:1^
 879^3^0^35^36^1434^0.2512^0.2518^3^Saltscale Hunter^3781:1:1,5796:3:3,17057:2:2^
+2242^2^0^35^36^1416^0.6103^0.4199^2^Syndicate Spy^5113:1:1^
 2254^1^0^36^37^1416^0.4036^0.4592^1^Crushridge Mauler^4306:1:4^
 2255^1^0^37^38^1416^0.4347^0.4802^1^Crushridge Mage^^
+2318^3^0^35^36^1416^0.6104^0.4342^3^Argus Shadow Mage^2290:1:1,2592:1:2,18239:1:1^
+2319^7^0^34^35^1416^0.6078^0.4305^7^Syndicate Wizard^1707:2:2,2592:1:1,4306:2:3,5113:2:2,213421:1:1^
 2420^1^0^41^41^1416^0.3970^0.5281^1^Targ^1708:1:1,4338:1:3^
+2431^1^0^37^37^1416^0.6182^0.4107^1^Jailor Borhuin^1477:1:1,3704:1:1,4306:1:2^
 2646^1^0^49^49^1425^0.5696^0.6595^1^Vilebranch Blood Drinker^3965:1:1,8153:1:3^
 2654^1^0^45^45^1425^0.3610^0.7308^1^Witherbark Caller^8153:1:1^
 2686^1^0^44^45^1425^0.3538^0.7084^1^Witherbark Broodguard^4585:1:1,10285:1:1,12205:1:1^
@@ -140,11 +144,14 @@ GoldScout-export 6^y3dt4wcv2idd^16
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
+@i^2290^Scroll of Intellect II
+@i^2592^Wool Cloth
 @i^2838^Heavy Stone
 @i^3010^Fine Sand
 @i^3404^Buzzard Wing
 @i^3667^Tender Crocolisk Meat
 @i^3671^Lifeless Skull
+@i^3704^Rusted Iron Key
 @i^3771^Wild Hog Shank
 @i^3778^Taut Compound Bow
 @i^3779^Hefty War Axe
@@ -185,6 +192,7 @@ GoldScout-export 6^y3dt4wcv2idd^16
 @i^4736^Mistscape Sash
 @i^4784^Lifeless Stone
 @i^4791^Enchanted Water
+@i^5113^Mark of the Syndicate
 @i^5116^Long Tail Feather
 @i^5133^Seeping Gizzard
 @i^5213^Scorching Wand
@@ -253,7 +261,9 @@ GoldScout-export 6^y3dt4wcv2idd^16
 @i^15935^Durable Rod of the Owl
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
+@i^18239^Pattern: Shadowskin Gloves
 @i^19509^Dusty Mail Boots
+@i^213421^Singed Note
 @i^213543^Scroll: UPDOG
 @i^213544^Scroll: TOPAZ YORAK
 @i^248690^Waylaid Crate: Earthly Expert Herbs
@@ -304,11 +314,14 @@ GoldScout-export 6^y3dt4wcv2idd^16
 @q^1707^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
+@q^2290^1:0:0
+@q^2592^1:7:1
 @q^2838^1:7:1
 @q^3010^0:15:0
 @q^3404^1:7:1
 @q^3667^1:7:1
 @q^3671^0:15:0
+@q^3704^1:13:0
 @q^3771^1:0:0
 @q^3778^0:2:0
 @q^3779^0:2:0
@@ -349,6 +362,7 @@ GoldScout-export 6^y3dt4wcv2idd^16
 @q^4736^2:4:0
 @q^4784^0:15:0
 @q^4791^1:0:0
+@q^5113^0:15:0
 @q^5116^1:7:1
 @q^5133^0:15:0
 @q^5213^2:2:0
@@ -417,7 +431,9 @@ GoldScout-export 6^y3dt4wcv2idd^16
 @q^15935^2:4:0
 @q^17057^1:15:0
 @q^17058^1:15:0
+@q^18239^1:9:0
 @q^19509^3:4:0
+@q^213421^1:15:0
 @q^213543^1:0:0
 @q^213544^1:0:0
 @q^248690^1:0:1
@@ -1161,9 +1177,13 @@ GoldScout-export 6^y3dt4wcv2idd^16
 @a^875^84:1
 @a^877^105:1
 @a^879^84:2,105:1
+@a^2242^172:2
 @a^2254^188:1
 @a^2255^188:1
+@a^2318^172:2,192:1
+@a^2319^172:6,192:1
 @a^2420^207:1
+@a^2431^172:1
 @a^2646^271:1
 @a^2654^287:1
 @a^2686^287:1
