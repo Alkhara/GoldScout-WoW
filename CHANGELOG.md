@@ -8,6 +8,7 @@ releases add their own line automatically.
 ## Unreleased
 
 - **Pickpocketing is recorded right, however you macro it:** GoldScout now sees your Pick Pocket cast itself, so pockets you pick without targeting the mob count as pickpockets, not kills. When Cheap Shot or Ambush closes the pickpocket window before you empty it, the pocket loot ends up on the corpse with the mob's own; that corpse is now left out of your drop rates instead of making the mob look like it drops junkboxes. Junkboxes already shared as kill loot are left out of the community data too.
+- **Fewer false error reports:** when another add-on's events loop until the game runs out of room ("C stack overflow"), GoldScout no longer logs it as its own error just because the last event in the loop was one GoldScout listens to.
 
 ## v0.12.39
 

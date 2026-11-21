@@ -305,6 +305,28 @@ class ErrorLogTests(FarmRulesTests.__bases__[0]):
         self.assertEqual(errors[1].n, 2)
         self.assertIn("attempt to index nil", errors[1].m)
 
+    def test_another_addons_event_loop_is_not_goldscouts_error(self):
+        # A player's report (v0.12.37): the C stack ran out while the game handed
+        # an event to GoldScout's dispatcher, with no GoldScout handler running.
+        handler = self.fake.errorhandler
+        dispatcher = ("Interface/AddOns/GoldScout/Core.lua:95: in function "
+                      "<Interface/AddOns/GoldScout/Core.lua:91>")
+        self.fake.stack = "[C]: in function `securecallfunction'\n" + dispatcher + "\n[C]: in function `Show'"
+        handler("C stack overflow")
+        self.fake.stack = ('[string "@Interface/AddOns/GoldScout/Core.lua"]:95: in function '
+                           '<[string "@Interface/AddOns/GoldScout/Core.lua"]:91>')
+        handler("C stack overflow")
+        self.assertEqual(len(self.ns.db.errors), 0)
+        # A loop through a GoldScout handler has the handler on the stack too.
+        self.fake.stack = ("Interface/AddOns/GoldScout/Learn.lua:840: in function <Interface/AddOns/GoldScout/Learn.lua:700>\n"
+                           "[C]: in function `securecallfunction'\n" + dispatcher)
+        handler("C stack overflow")
+        self.assertEqual(len(self.ns.db.errors), 1)
+        # Other errors with only the dispatcher on the stack are still recorded.
+        self.fake.stack = dispatcher
+        handler("attempt to call a nil value")
+        self.assertEqual(len(self.ns.db.errors), 2)
+
     def test_other_addons_errors_are_not_recorded_because_goldscout_caught_them(self):
         # Real stacks: Core.lua's handler is on the stack whenever it runs, so
         # only the frames below it may decide whose error it is.

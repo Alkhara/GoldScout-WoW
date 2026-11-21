@@ -575,6 +575,29 @@ local function MentionsGoldScout(text)
   return type(text) == "string" and text:find("AddOns[/\\]" .. ADDON_NAME .. "[/\\]") ~= nil
 end
 
+-- A stack overflow whose only GoldScout frame is the event dispatcher (the
+-- OnEvent function above, called by the game): another addon's or the game's
+-- own handlers kept firing events inside each other until the C stack ran out,
+-- and the event that tipped it over was one GoldScout listens to. None of
+-- GoldScout's code was running; a loop through a GoldScout handler would put
+-- that handler on the stack too.
+local function OnlyDispatching(message, stack)
+  if not tostring(message):find("stack overflow", 1, true) then
+    return false
+  end
+  local frames = 0
+  for line in stack:gmatch("[^\n]+") do
+    if MentionsGoldScout(line) then
+      frames = frames + 1
+      -- "Core.lua:95: in function <Core.lua:91>", or with each path as [string "@...Core.lua"]
+      if frames > 1 or not line:find('Core%.lua["%]]*:%d+:?%s*in function <[^>]*Core%.lua["%]]*:%d+>') then
+        return false
+      end
+    end
+  end
+  return frames == 1
+end
+
 -- Pass every error on to whatever handler was there (the default popup,
 -- BugSack...), but keep a copy of the ones that come from GoldScout.
 if geterrorhandler and seterrorhandler then
@@ -585,7 +608,8 @@ if geterrorhandler and seterrorhandler then
       -- handler. Starting any higher puts the handler itself in every stack,
       -- so every addon's errors looked like GoldScout's.
       local stack = debugstack and debugstack(4, 12, 0) or ""
-      if MentionsGoldScout(tostring(message)) or MentionsGoldScout(stack) then
+      if MentionsGoldScout(tostring(message))
+          or (MentionsGoldScout(stack) and not OnlyDispatching(message, stack)) then
         ns.RecordError(message, stack)
       end
     end)
