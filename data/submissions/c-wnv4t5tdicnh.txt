@@ -1,10 +1,15 @@
-GoldScout-export 6^wnv4t5tdicnh^6
+GoldScout-export 6^wnv4t5tdicnh^7
 705^11^0^1^1^1426^0.2884^0.7475^11^Jeune loup décharné^750:8:8,1370:1:1,2210:1:1,2653:1:1,4865:5:5,7073:4:4,7074:3:3^
 706^36^0^3^4^1426^0.2395^0.7818^36^Jeune troll Frostmane^117:1:1,159:2:2,1364:2:2,1378:1:1,1380:1:1,2210:1:1,2589:12:12,2651:1:1,3363:1:1,3365:2:2^
 707^6^0^1^2^1426^0.2233^0.7360^6^Trogg Mâcheroc^159:1:1,1374:1:1,2589:4:4,3363:1:1^
 708^11^0^3^3^1426^0.2297^0.7364^11^Petit sanglier des rochers^1366:1:1,1377:1:1,2211:1:1,2654:1:1,4865:8:8,7098:4:4^
 724^6^0^2^2^1426^0.2560^0.7183^6^Trogg Mâcheroc forcené^117:1:1,1374:1:1,2589:2:2,2654:1:1^
 808^1^0^5^5^1426^0.3027^0.7979^1^Grik'nir le Froid^2004:1:1^
+1125^15^0^5^6^1426^0.4201^0.5877^15^Sanglier des rochers^769:4:4,771:3:3,2886:7:7,3171:4:4^
+1128^3^0^5^6^1426^0.3999^0.6005^3^Jeune ours noir^3169:1:1,3170:1:1,6952:2:2,7073:2:2^
+1134^2^0^5^6^1426^0.4205^0.5567^2^Jeune wendigo^2671:1:1^
+1135^12^0^6^7^1426^0.4161^0.5008^12^Wendigo^117:1:1,1413:1:1,1431:1:1,1433:1:1,2635:1:1,2671:7:7,2773:1:1^
+1199^1^0^5^6^1426^0.4209^0.5656^1^Jeune Léopard des neiges^^
 1718^2^0^3^4^1426^0.3483^0.6946^2^Ecumeur Mâcheroc^159:1:1,3363:1:1^
 2240^3^0^32^33^1416^0.5106^0.7585^3^Détrousseuse du Syndicat^2592:1:3,5113:1:1^
 2241^5^0^33^34^1416^0.5174^0.7603^5^Larron du Syndicat^4306:1:1,5113:1:1^
@@ -28,9 +33,13 @@ GoldScout-export 6^wnv4t5tdicnh^6
 2421^1^0^40^40^1416^0.3857^0.4702^1^Fouilleboue^248709:1:1^
 4969^2^0^26^26^1453^0.7355^0.5934^2^Nervi de la vieille ville^^
 269075^1^0^6^6^1426^0.2767^0.6343^1^Léopard des neiges rôdeur^4814:1:1^
+271486^1^0^8^8^1426^0.4265^0.4994^1^Wendigo chaman^^
+271530^1^0^7^8^1426^0.4267^0.4999^1^Sage wendigo^1429:1:1^
 @i^117^Viande séchée coriace
 @i^159^Eau de source
 @i^750^Viande de loup coriace
+@i^769^Morceau de viande de sanglier
+@i^771^Défense ébréchée de sanglier
 @i^1081^Chair croustillante d'araignée
 @i^1205^Jus de melon
 @i^1288^Grande glande à venin
@@ -41,6 +50,10 @@ GoldScout-export 6^wnv4t5tdicnh^6
 @i^1377^Gants râpés
 @i^1378^Pantalon râpé
 @i^1380^Robe râpée
+@i^1413^Epée médiocre
+@i^1429^Cape en patchwork
+@i^1431^Pantalon en patchwork
+@i^1433^Armure en patchwork
 @i^1686^Moustache à poil dur
 @i^1687^Griffe rétractile
 @i^1708^Nectar sucré
@@ -50,10 +63,17 @@ GoldScout-export 6^wnv4t5tdicnh^6
 @i^2251^Patte d'araignée fondante
 @i^2589^Etoffe de lin
 @i^2592^Etoffe de laine
+@i^2635^Ceinture en anneaux distendus
 @i^2651^Brassards en anneaux fins
 @i^2653^Gants en anneaux fins
 @i^2654^Pantalon en anneaux fins
+@i^2671^Peau de wendigo
+@i^2773^Arc court craquelé
 @i^2843^Articulation sale
+@i^2886^Côtes de sanglier des rochers
+@i^3169^Dent d'ours abîmée
+@i^3170^Grand croc d'ours
+@i^3171^Défense de sanglier cassée
 @i^3363^Ceinture râpée
 @i^3365^Brassards râpés
 @i^3658^Tome retrouvé
@@ -75,6 +95,7 @@ GoldScout-export 6^wnv4t5tdicnh^6
 @i^6358^Bouche-noire huileux
 @i^6361^Thon arc-en-ciel cru
 @i^6416^Bottes de l'aurore
+@i^6952^Fourrure d'ours épaisse
 @i^7073^Croc brisé
 @i^7074^Griffes émoussées
 @i^7098^Défense brisée
@@ -89,6 +110,8 @@ GoldScout-export 6^wnv4t5tdicnh^6
 @q^117^1:0:0
 @q^159^1:0:0
 @q^750^1:12:0
+@q^769^1:7:1
+@q^771^0:15:0
 @q^1081^1:7:1
 @q^1205^1:0:0
 @q^1288^1:7:1
@@ -99,6 +122,10 @@ GoldScout-export 6^wnv4t5tdicnh^6
 @q^1377^0:4:0
 @q^1378^0:4:0
 @q^1380^0:4:0
+@q^1413^0:2:0
+@q^1429^0:4:0
+@q^1431^0:4:0
+@q^1433^0:4:0
 @q^1686^0:15:0
 @q^1687^0:15:0
 @q^1708^1:0:0
@@ -108,10 +135,17 @@ GoldScout-export 6^wnv4t5tdicnh^6
 @q^2251^1:7:1
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2635^0:4:0
 @q^2651^0:4:0
 @q^2653^0:4:0
 @q^2654^0:4:0
+@q^2671^1:12:0
+@q^2773^0:2:0
 @q^2843^1:12:0
+@q^2886^1:7:1
+@q^3169^0:15:0
+@q^3170^0:15:0
+@q^3171^0:15:0
 @q^3363^0:4:0
 @q^3365^0:4:0
 @q^3658^1:12:0
@@ -133,6 +167,7 @@ GoldScout-export 6^wnv4t5tdicnh^6
 @q^6358^1:7:1
 @q^6361^1:7:1
 @q^6416^2:4:0
+@q^6952^1:12:0
 @q^7073^0:15:0
 @q^7074^0:15:0
 @q^7098^0:15:0
@@ -518,6 +553,11 @@ GoldScout-export 6^wnv4t5tdicnh^6
 @a^708^264:4,284:2,304:5
 @a^724^284:2,285:4
 @a^808^306:1
+@a^1125^189:1,209:1,228:7,247:4,268:2
+@a^1128^227:1,228:1,247:1
+@a^1134^228:2
+@a^1135^188:8,208:4
+@a^1199^228:1
 @a^1718^267:1,286:1
 @a^2240^271:1,329:2
 @a^2241^271:2,329:3
@@ -541,5 +581,7 @@ GoldScout-export 6^wnv4t5tdicnh^6
 @a^2421^187:1
 @a^4969^234:2
 @a^269075^245:1
+@a^271486^188:1
+@a^271530^188:1
 @f^1424^0^8^175^6358:6:6,6361:1:1,21113:1:1^266:4,268:4
 @l^0^frFR
