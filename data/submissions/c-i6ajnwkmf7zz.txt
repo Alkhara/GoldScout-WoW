@@ -1,4 +1,4 @@
-GoldScout-export 6^i6ajnwkmf7zz^13
+GoldScout-export 6^i6ajnwkmf7zz^14
 40^10^0^6^7^1429^0.6092^0.5097^10^Kobold Miner^159:1:1,1415:1:1,1427:1:1,2589:3:4,2835:1:2,4565:1:1^
 46^6^0^9^10^1429^0.7721^0.7931^6^Murloc Forager^779:1:1,1413:1:1,2642:1:1,3373:1:1,6303:1:1^
 69^4^0^2^2^1429^0.5095^0.4462^4^Timber Wolf^2654:1:1,7073:2:2,7074:3:3^
@@ -114,9 +114,13 @@ GoldScout-export 6^i6ajnwkmf7zz^13
 3727^2^0^20^21^1440^0.3097^0.3119^2^Dark Strand Enforcer^4542:1:1^
 3728^4^0^18^19^1440^0.3057^0.3152^3^Dark Strand Adept^5366:1:1^
 3730^1^0^20^20^1440^0.3119^0.3120^1^Dark Strand Excavator^^
-3780^2^0^21^21^1440^0.4516^0.4656^2^Shadethicket Moss Eater^765:1:1,2449:1:1,4606:1:1^
+3772^3^0^23^24^1440^0.2711^0.6195^3^Lesser Felguard^2592:1:2^
+3774^1^0^22^23^1440^0.2574^0.6124^1^Felslayer^^
+3780^3^0^21^21^1440^0.4547^0.4647^3^Shadethicket Moss Eater^765:1:1,2449:1:1,4606:1:1^
+3781^4^0^23^24^1440^0.3317^0.6584^4^Shadethicket Wood Shaper^1210:1:1,1802:1:1,2219:1:1^
+3783^2^0^22^22^1440^0.3303^0.6506^2^Shadethicket Raincaller^^
 3809^2^0^22^22^1440^0.4286^0.4758^2^Ashenvale Bear^11406:1:1,250182:1:1^
-3819^1^0^20^20^1440^0.4262^0.4784^1^Wildthorn Stalker^3174:1:1^
+3819^2^0^20^20^1440^0.3824^0.5413^2^Wildthorn Stalker^878:1:1,3174:1:1^
 3947^5^0^0^0^0^0.0000^0.0000^0^^1816:1:1,2589:1:2,2592:1:1,2781:1:1^
 4416^10^0^0^0^0^0.0000^0.0000^0^^414:2:2,1179:1:1,1739:1:1,1816:1:1,2589:1:2,2592:2:4,7997:1:1^
 4417^3^0^0^0^0^0.0000^0.0000^0^^1813:1:1,2589:1:5,2592:1:2^
@@ -181,6 +185,7 @@ GoldScout-export 6^i6ajnwkmf7zz^13
 @i^818^Tigerseye
 @i^829^Red Leather Bandana
 @i^858^Lesser Healing Potion
+@i^878^Fist-sized Spinneret
 @i^915^Red Silk Bandana
 @i^955^Scroll of Intellect
 @i^1006^Brass Collar
@@ -188,6 +193,7 @@ GoldScout-export 6^i6ajnwkmf7zz^13
 @i^1081^Crisp Spider Meat
 @i^1179^Ice Cold Milk
 @i^1181^Scroll of Spirit
+@i^1210^Shadowgem
 @i^1256^Crystal Kelp Frond
 @i^1274^Hops
 @i^1381^A Mysterious Message
@@ -233,6 +239,7 @@ GoldScout-export 6^i6ajnwkmf7zz^13
 @i^1790^Patched Cloak
 @i^1793^Patched Leather Shoulderpads
 @i^1794^Patched Leather Jerkin
+@i^1802^Rawhide Tunic
 @i^1811^Blunt Claymore
 @i^1813^Chipped Quarterstaff
 @i^1815^Ornamental Mace
@@ -246,6 +253,7 @@ GoldScout-export 6^i6ajnwkmf7zz^13
 @i^2073^Dwarven Hatchet of Healing
 @i^2140^Carving Knife of Stamina
 @i^2214^Wooden Buckler
+@i^2219^Small Round Shield
 @i^2268^Stonesplinter Blade
 @i^2287^Haunch of Meat
 @i^2449^Earthroot
@@ -425,6 +433,7 @@ GoldScout-export 6^i6ajnwkmf7zz^13
 @q^818^2:7:1
 @q^829^1:12:0
 @q^858^1:0:0
+@q^878^0:7:0
 @q^915^1:12:0
 @q^955^1:0:0
 @q^1006^1:12:0
@@ -432,6 +441,7 @@ GoldScout-export 6^i6ajnwkmf7zz^13
 @q^1081^1:7:1
 @q^1179^1:0:0
 @q^1181^1:0:0
+@q^1210^2:7:1
 @q^1256^1:12:0
 @q^1274^1:12:0
 @q^1381^1:12:0
@@ -477,6 +487,7 @@ GoldScout-export 6^i6ajnwkmf7zz^13
 @q^1790^0:4:0
 @q^1793^0:4:0
 @q^1794^0:4:0
+@q^1802^0:4:0
 @q^1811^0:2:0
 @q^1813^0:2:0
 @q^1815^0:2:0
@@ -490,6 +501,7 @@ GoldScout-export 6^i6ajnwkmf7zz^13
 @q^2073^2:2:0
 @q^2140^2:2:0
 @q^2214^0:4:0
+@q^2219^0:4:0
 @q^2268^1:2:0
 @q^2287^1:0:0
 @q^2449^1:7:1
@@ -949,9 +961,13 @@ GoldScout-export 6^i6ajnwkmf7zz^13
 @a^3727^126:2
 @a^3728^126:3
 @a^3730^126:1
-@a^3780^189:2
+@a^3772^245:3
+@a^3774^245:1
+@a^3780^189:3
+@a^3781^266:4
+@a^3783^246:1,266:1
 @a^3809^188:2
-@a^3819^188:1
+@a^3819^188:1,246:1
 @a^6123^255:12
 @a^6669^51:1
 @a^6789^150:2

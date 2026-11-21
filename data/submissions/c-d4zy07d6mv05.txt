@@ -1,4 +1,4 @@
-GoldScout-export 6^d4zy07d6mv05^6
+GoldScout-export 6^d4zy07d6mv05^7
 667^1^0^39^40^1434^0.4597^0.3264^1^Skullsplitter Warrior^1477:1:1,4306:1:1^
 669^1^0^41^41^1434^0.4768^0.4111^1^Skullsplitter Hunter^4338:1:2^
 670^2^0^41^42^1434^0.4560^0.4072^2^Skullsplitter Witch Doctor^1520:1:1,4338:2:3^
@@ -43,7 +43,10 @@ GoldScout-export 6^d4zy07d6mv05^6
 4540^3^0^0^0^0^0.0000^0.0000^0^^^
 5477^1^0^39^39^1435^0.5069^0.3666^1^Noboru the Cudgel^4306:1:2,6196:1:1^
 5622^1^0^37^37^1435^0.6494^0.2114^1^Ongeku^6190:1:1^
-256952^4^0^39^40^2548^0.5091^0.5760^4^Twilight Raider^4306:2:3,266427:1:1^
+254560^7^0^39^40^2548^0.4641^0.4790^7^Twilight Shadowmancer^3671:1:1,4306:1:3,248694:1:1,266425:4:10,267073:1:3^
+256798^15^0^37^38^2548^0.4699^0.4791^15^Twilight Neophyte^3671:1:1,4306:4:10,4338:1:1,6438:1:1,266425:8:15,266427:1:1,267073:3:7^
+256952^27^0^39^40^2548^0.4853^0.5118^27^Twilight Raider^4306:9:13,5431:1:1,266148:5:5,266427:3:3,267073:5:11^
+257017^1^0^37^38^2548^0.4671^0.4792^1^Twilight Worg^4582:1:1^
 258792^8^0^0^0^0^0.0000^0.0000^0^^1708:1:1,1990:1:1,3795:1:1,4306:2:4,7086:1:1,270343:2:2^
 258797^2^0^0^0^0^0.0000^0.0000^0^^1477:1:1,3780:1:1,4306:1:2^
 258799^5^0^0^0^0^0.0000^0.0000^0^^537:1:1,4306:2:2,4338:1:1,9849:1:1^
@@ -52,6 +55,7 @@ GoldScout-export 6^d4zy07d6mv05^6
 258897^1^0^0^0^0^0.0000^0.0000^0^^7438:1:1^
 258905^2^0^0^0^0^0.0000^0.0000^0^^274598:1:1,274600:1:1^
 258924^1^0^0^0^0^0.0000^0.0000^0^^274601:1:1^
+259263^3^0^36^37^2548^0.5461^0.6857^3^Coyote Prowler^4582:1:1,4583:2:2^
 259979^7^0^0^0^0^0.0000^0.0000^0^^3783:1:1,4306:2:4,7457:1:1,270333:6:6^
 259981^3^0^0^0^0^0.0000^0.0000^0^^4306:1:3,9885:1:1,270333:1:1^
 259987^4^0^0^0^0^0.0000^0.0000^0^^4306:1:4,270333:3:3^
@@ -87,6 +91,7 @@ GoldScout-export 6^d4zy07d6mv05^6
 @i^2589^Linen Cloth
 @i^3171^Broken Boar Tusk
 @i^3667^Tender Crocolisk Meat
+@i^3671^Lifeless Skull
 @i^3771^Wild Hog Shank
 @i^3779^Hefty War Axe
 @i^3780^Long-barreled Musket
@@ -106,6 +111,8 @@ GoldScout-export 6^d4zy07d6mv05^6
 @i^4459^Brittle Dragon Bone
 @i^4562^Severing Axe of the Falcon
 @i^4565^Simple Dagger
+@i^4582^Soft Bushy Tail
+@i^4583^Thick Furry Mane
 @i^4585^Dripping Spider Mandible
 @i^4603^Raw Spotted Yellowtail
 @i^4717^Mail Combat Belt
@@ -116,6 +123,7 @@ GoldScout-export 6^d4zy07d6mv05^6
 @i^4877^Stone Arrowhead
 @i^4878^Broken Bloodstained Bow
 @i^5213^Scorching Wand
+@i^5431^Empty Hip Flask
 @i^5466^Scorpid Stinger
 @i^5567^Silver Hook
 @i^5637^Large Fang
@@ -126,6 +134,7 @@ GoldScout-export 6^d4zy07d6mv05^6
 @i^6358^Oily Blackmouth
 @i^6362^Raw Rockscale Cod
 @i^6400^Glimmering Shield
+@i^6438^Dull Elemental Bracer
 @i^7070^Elemental Water
 @i^7086^Pattern: Earthen Silk Belt
 @i^7438^Twilight Belt of Intellect
@@ -144,9 +153,13 @@ GoldScout-export 6^d4zy07d6mv05^6
 @i^211786^Scroll: CHAP BALK WELLES
 @i^211787^Scroll: LOWER PING WHOMEVER
 @i^248693^Waylaid Crate: Expert Textiles
+@i^248694^Waylaid Crate: Expert Curiosities
 @i^248708^Waylaid Crate: Expert Fabrics
 @i^258530^Lucky Lure
+@i^266148^Farmers' Mementos
+@i^266425^Twilight Charm
 @i^266427^Field Marshal's Log
+@i^267073^Twilight Finger Bone
 @i^270333^Voodoo-Infused Artifact
 @i^270343^I'lalai Fetish
 @i^274598^Bloodslash Axe
@@ -179,6 +192,7 @@ GoldScout-export 6^d4zy07d6mv05^6
 @q^2589^1:7:1
 @q^3171^0:15:0
 @q^3667^1:7:1
+@q^3671^0:15:0
 @q^3771^1:0:0
 @q^3779^0:2:0
 @q^3780^0:2:0
@@ -198,6 +212,8 @@ GoldScout-export 6^d4zy07d6mv05^6
 @q^4459^0:15:0
 @q^4562^2:2:0
 @q^4565^1:2:0
+@q^4582^1:12:0
+@q^4583^0:15:0
 @q^4585^0:15:0
 @q^4603^1:7:1
 @q^4717^2:4:0
@@ -208,6 +224,7 @@ GoldScout-export 6^d4zy07d6mv05^6
 @q^4877^0:15:0
 @q^4878^0:15:0
 @q^5213^2:2:0
+@q^5431^0:15:0
 @q^5466^1:7:1
 @q^5567^0:15:0
 @q^5637^1:7:1
@@ -218,6 +235,7 @@ GoldScout-export 6^d4zy07d6mv05^6
 @q^6358^1:7:1
 @q^6362^1:7:1
 @q^6400^2:4:0
+@q^6438^0:15:0
 @q^7070^1:7:1
 @q^7086^2:9:0
 @q^7438^2:4:0
@@ -236,9 +254,13 @@ GoldScout-export 6^d4zy07d6mv05^6
 @q^211786^1:0:0
 @q^211787^1:0:0
 @q^248693^1:0:1
+@q^248694^1:0:1
 @q^248708^2:0:1
 @q^258530^1:12:0
+@q^266148^1:12:0
+@q^266425^1:12:0
 @q^266427^1:12:0
+@q^267073^1:12:0
 @q^270333^1:12:0
 @q^270343^1:12:0
 @q^274598^3:2:0
@@ -1007,7 +1029,11 @@ GoldScout-export 6^d4zy07d6mv05^6
 @a^3560^169:2
 @a^5477^150:1
 @a^5622^92:1
-@a^256952^230:4
+@a^254560^189:6,209:1
+@a^256798^188:2,189:9,190:2,209:2
+@a^256952^188:4,189:10,190:3,209:1,210:1,230:8
+@a^257017^189:1
+@a^259263^270:2,291:1
 @a^262037^332:1,352:1
 @a^272228^290:2,310:2
 @f^1434^0^3^179^4603:1:1,6358:1:1,6362:1:1^285:3

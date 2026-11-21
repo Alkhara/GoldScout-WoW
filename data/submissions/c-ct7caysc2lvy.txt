@@ -1,29 +1,42 @@
-GoldScout-export 5^ct7caysc2lvy^1
+GoldScout-export 6^ct7caysc2lvy^2
 422^4^0^18^19^1433^0.4208^0.6488^4^Murloc Flesheater^730:2:2,1468:1:1,1741:1:1,5784:2:2^
+426^3^0^17^18^1433^0.3362^0.3366^3^Redridge Brute^9786:1:1,248682:1:1^
 428^7^0^18^19^1433^0.5050^0.7659^7^Dire Condor^1080:2:2,6889:5:5,17056:2:2^
+430^5^0^18^19^1433^0.3145^0.3035^5^Redridge Mystic^1212:1:1,2589:2:3,14168:1:1^
 441^9^0^17^18^1433^0.4868^0.7612^9^Black Dragon Whelp^1221:1:1^
+446^1^0^19^19^1433^0.3019^0.2795^1^Redridge Basher^^
 578^2^0^19^20^1433^0.3844^0.4813^2^Murloc Scout^730:1:1,1468:2:2,5784:1:1^
 1083^1^0^17^17^1433^0.4307^0.6919^1^Murloc Shorestriker^1467:1:1,5523:1:1^
 @i^730^Murloc Eye
 @i^1080^Tough Condor Meat
+@i^1212^Gnoll Spittle
 @i^1221^Underbelly Whelp Scale
 @i^1467^Spotted Sunfish
 @i^1468^Murloc Fin
 @i^1741^Laced Cloak
+@i^2589^Linen Cloth
 @i^5523^Small Barnacled Clam
 @i^5784^Slimy Murloc Scale
 @i^6889^Small Egg
+@i^9786^Raider's Cloak of the Whale
+@i^14168^Buccaneer's Gloves of the Whale
 @i^17056^Light Feather
+@i^248682^Waylaid Crate: Apprentice Herbs
 @q^730^1:7:1
 @q^1080^1:7:1
+@q^1212^0:15:0
 @q^1221^1:12:0
 @q^1467^1:12:0
 @q^1468^1:7:1
 @q^1741^0:4:0
+@q^2589^1:7:1
 @q^5523^1:7:0
 @q^5784^1:7:1
 @q^6889^1:7:1
+@q^9786^2:4:0
+@q^14168^2:4:0
 @q^17056^1:15:1
+@q^248682^1:0:1
 @m^1433^Redridge Mountains
 @c^724^
 @c^733^
@@ -682,8 +695,11 @@ GoldScout-export 5^ct7caysc2lvy^1
 @c^285281^
 @c^286152^
 @a^422^207:1,268:2,288:1
+@a^426^126:2,146:1
 @a^428^290:1,308:2,310:2,311:2
+@a^430^105:2,106:1,126:1,146:1
 @a^441^289:2,307:1,308:1,309:1,310:4
+@a^446^106:1
 @a^578^187:1,208:1
 @a^1083^268:1
 @l^0^enUS

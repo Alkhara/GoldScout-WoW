@@ -1,4 +1,4 @@
-GoldScout-export 6^6z2d2s72tspm^14
+GoldScout-export 6^6z2d2s72tspm^15
 6^13^0^1^2^1429^0.4798^0.3596^13^Kobold Vermin^755:6:6,1370:2:2,1374:1:1,2210:1:1,2589:3:3,2650:1:1,4536:1:1,247834:1:1,247839:3:3^
 38^20^0^3^4^1429^0.5384^0.4869^20^Defias Thug^159:1:1,752:12:12,1366:1:1,1367:1:1,1377:1:1,1380:1:1,2070:2:2,2589:6:6,3363:1:1^
 69^6^0^2^2^1429^0.4762^0.3599^6^Timber Wolf^750:5:5,1372:1:1,2672:2:2,7073:4:4,7074:2:2^
@@ -49,7 +49,9 @@ GoldScout-export 6^6z2d2s72tspm^14
 702^2^0^33^34^1434^0.3108^0.1192^2^Bloodscalp Scavenger^1519:1:1,4306:1:2^
 712^18^0^14^15^1433^0.2467^0.8046^18^Redridge Thrasher^1212:1:1,1502:1:1,1514:1:1,2589:1:3,2592:4:4,280911:5:5^
 736^2^0^32^33^1434^0.2917^0.1285^2^Panther^1686:1:1,1687:1:1^
+775^1^0^32^32^1434^0.4036^0.0828^1^Kurzen's Agent^4306:1:2^
 785^1^0^28^28^1431^0.1731^0.3352^1^Skeletal Warder^4306:1:2^
+813^1^0^40^40^1434^0.4976^0.0396^1^Colonel Kurzen^3615:1:1^
 832^1^0^19^19^1436^0.6884^0.7197^1^Dust Devil^248685:1:1^
 891^2^0^26^27^1431^0.3775^0.7328^2^Splinter Fist Fire Weaver^2226:1:1,4306:1:2^
 892^1^0^27^27^1431^0.3401^0.6896^1^Splinter Fist Taskmaster^^
@@ -57,9 +59,14 @@ GoldScout-export 6^6z2d2s72tspm^14
 909^6^0^25^26^1431^0.4935^0.7661^6^Defias Night Blade^422:1:1,1205:1:1,2592:2:3,11995:1:1^
 910^1^0^27^27^1431^0.4863^0.7735^1^Defias Enchanter^^
 920^6^0^30^31^1431^0.6058^0.8060^6^Nightbane Tainted One^3796:1:1,7110:1:1^
-937^11^0^32^33^1434^0.4483^0.1032^11^Kurzen Jungle Fighter^1707:1:1,2080:1:1,2732:1:1,2751:1:1,4306:6:11^
-938^2^0^34^35^1434^0.4442^0.0854^2^Kurzen Commando^2751:1:1,4306:1:2^
-940^21^0^32^33^1434^0.4426^0.1003^21^Kurzen Medicine Man^1477:1:1,1707:1:1,1710:1:1,2592:3:7,2633:7:7,2740:1:1,2751:1:1,3357:1:1,3779:1:1,3818:1:1,4306:4:6^
+937^13^0^32^33^1434^0.4470^0.1021^13^Kurzen Jungle Fighter^1707:1:1,2080:1:1,2732:1:1,2742:1:1,2751:1:1,4306:7:12^
+938^13^0^34^35^1434^0.4611^0.0774^13^Kurzen Commando^1708:1:1,2592:1:1,2730:1:1,2732:1:1,2738:1:1,2751:1:1,4306:2:3,5788:1:1^
+939^7^0^36^37^1434^0.4861^0.0804^7^Kurzen Elite^4306:1:1,7458:1:1,216616:1:1^
+940^22^0^32^33^1434^0.4426^0.1001^22^Kurzen Medicine Man^1477:1:1,1707:2:2,1710:1:1,2592:3:7,2633:7:7,2740:1:1,2751:1:1,3357:1:1,3779:1:1,3818:1:1,4306:4:6^
+941^3^0^34^35^1434^0.4651^0.0707^3^Kurzen Headshrinker^2633:1:1^
+942^2^0^36^37^1434^0.4767^0.0793^2^Kurzen Witch Doctor^2633:1:1^
+978^5^0^38^38^1434^0.4940^0.0507^5^Kurzen Subchief^4306:3:3^
+979^3^0^38^38^1434^0.4902^0.0610^3^Kurzen Shadow Hunter^4306:1:1,4338:1:1^
 1083^14^0^16^17^1433^0.4341^0.6944^14^Murloc Shorestriker^730:3:3,1467:1:1,1468:5:5,5523:5:5,5784:3:3^
 1110^2^0^28^28^1431^0.1743^0.3371^2^Skeletal Raider^2592:1:1^
 1150^9^0^30^31^1434^0.3562^0.1035^9^River Crocolisk^770:3:3,3667:4:4,4053:2:2,9800:1:1,12037:1:1,248707:1:1^
@@ -144,6 +151,7 @@ GoldScout-export 6^6z2d2s72tspm^14
 @i^1702^Intact Basilisk Spine
 @i^1703^Crystal Basilisk Spine
 @i^1707^Stormwind Brie
+@i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
 @i^1739^Laced Mail Boots
 @i^1746^Linked Chain Belt
@@ -173,8 +181,11 @@ GoldScout-export 6^6z2d2s72tspm^14
 @i^2650^Flimsy Chain Boots
 @i^2672^Stringy Wolf Meat
 @i^2677^Boar Ribs
+@i^2730^Green Hills of Stranglethorn - Page 6
 @i^2732^Green Hills of Stranglethorn - Page 8
+@i^2738^Green Hills of Stranglethorn - Page 14
 @i^2740^Green Hills of Stranglethorn - Page 16
+@i^2742^Green Hills of Stranglethorn - Page 18
 @i^2751^Green Hills of Stranglethorn - Page 27
 @i^2856^Iron Pike
 @i^2882^Plans: Silvered Bronze Shoulders
@@ -190,6 +201,7 @@ GoldScout-export 6^6z2d2s72tspm^14
 @i^3376^Canvas Belt
 @i^3385^Lesser Mana Potion
 @i^3514^Mor'Ladim's Skull
+@i^3615^Kurzen's Head
 @i^3629^Mistmantle Family Ring
 @i^3631^Bellygrub's Tusk
 @i^3636^Scale of Old Murk-Eye
@@ -234,6 +246,7 @@ GoldScout-export 6^6z2d2s72tspm^14
 @i^5637^Large Fang
 @i^5784^Slimy Murloc Scale
 @i^5785^Thick Murloc Scale
+@i^5788^Pattern: Thick Murloc Armor
 @i^6289^Raw Longjaw Mud Snapper
 @i^6308^Raw Bristle Whisker Catfish
 @i^6358^Oily Blackmouth
@@ -252,6 +265,7 @@ GoldScout-export 6^6z2d2s72tspm^14
 @i^7110^Silver-thread Armor
 @i^7289^Pattern: Black Whelp Cloak
 @i^7410^Infiltrator Bracers of the Knight
+@i^7458^Knight's Boots of the Beast
 @i^8747^Hardened Leather Helm
 @i^9788^Raider's Belt of Power
 @i^9800^Ivy Orb of the Sorcerer
@@ -272,6 +286,7 @@ GoldScout-export 6^6z2d2s72tspm^14
 @i^213544^Scroll: TOPAZ YORAK
 @i^213546^Scroll: SHOOBEEDOOP
 @i^213547^Scroll: THAW WORDS
+@i^216616^Compound Cage Key
 @i^247834^Nibbled-On Book
 @i^247839^Stolen Book
 @i^248683^Waylaid Crate: Apprentice Ore
@@ -332,6 +347,7 @@ GoldScout-export 6^6z2d2s72tspm^14
 @q^1702^0:15:0
 @q^1703^1:0:0
 @q^1707^1:0:0
+@q^1708^1:0:0
 @q^1710^1:0:0
 @q^1739^0:4:0
 @q^1746^0:4:0
@@ -361,8 +377,11 @@ GoldScout-export 6^6z2d2s72tspm^14
 @q^2650^0:4:0
 @q^2672^1:7:1
 @q^2677^1:7:1
+@q^2730^1:12:0
 @q^2732^1:12:0
+@q^2738^1:12:0
 @q^2740^1:12:0
+@q^2742^1:12:0
 @q^2751^1:12:0
 @q^2856^1:12:0
 @q^2882^2:9:0
@@ -378,6 +397,7 @@ GoldScout-export 6^6z2d2s72tspm^14
 @q^3376^0:4:0
 @q^3385^1:0:0
 @q^3514^1:12:0
+@q^3615^1:12:0
 @q^3629^1:12:0
 @q^3631^1:12:0
 @q^3636^1:12:0
@@ -422,6 +442,7 @@ GoldScout-export 6^6z2d2s72tspm^14
 @q^5637^1:7:1
 @q^5784^1:7:1
 @q^5785^1:7:1
+@q^5788^2:9:0
 @q^6289^1:7:1
 @q^6308^1:7:1
 @q^6358^1:7:1
@@ -440,6 +461,7 @@ GoldScout-export 6^6z2d2s72tspm^14
 @q^7110^2:4:0
 @q^7289^1:9:0
 @q^7410^2:4:0
+@q^7458^2:4:0
 @q^8747^0:4:0
 @q^9788^2:4:0
 @q^9800^2:4:0
@@ -460,6 +482,7 @@ GoldScout-export 6^6z2d2s72tspm^14
 @q^213544^1:0:0
 @q^213546^1:0:0
 @q^213547^1:0:0
+@q^216616^1:12:0
 @q^247834^1:15:0
 @q^247839^1:12:0
 @q^248683^1:0:1
@@ -2037,7 +2060,9 @@ GoldScout-export 6^6z2d2s72tspm^14
 @a^702^46:2
 @a^712^304:2,305:3,324:9,325:4
 @a^736^45:2
+@a^775^28:1
 @a^785^123:1
+@a^813^9:1
 @a^832^293:1
 @a^891^287:2
 @a^892^266:1
@@ -2045,9 +2070,14 @@ GoldScout-export 6^6z2d2s72tspm^14
 @a^909^309:5,310:1
 @a^910^309:1
 @a^920^311:2,332:4
-@a^937^28:4,29:1,48:4,49:2
-@a^938^28:2
-@a^940^28:14,48:5,49:2
+@a^937^28:6,29:1,48:4,49:2
+@a^938^28:2,29:11
+@a^939^29:7
+@a^940^28:15,48:5,49:2
+@a^941^29:3
+@a^942^29:2
+@a^978^9:3,29:2
+@a^979^29:3
 @a^1083^268:10,269:1,288:3
 @a^1110^123:2
 @a^1150^26:5,46:1,47:2,48:1

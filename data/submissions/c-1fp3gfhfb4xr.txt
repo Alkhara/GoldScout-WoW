@@ -1,4 +1,4 @@
-GoldScout-export 6^1fp3gfhfb4xr^4
+GoldScout-export 6^1fp3gfhfb4xr^5
 740^23^0^34^35^1435^0.1347^0.6218^23^Adolescent Whelp^1529:1:1,4402:1:1,4460:2:2,5637:1:1,5803:8:8,213545:1:1^
 741^20^0^35^36^1435^0.1399^0.6211^20^Dreaming Whelp^4402:1:1,4460:3:3,5803:2:2,248691:1:1^
 755^6^0^34^35^1435^0.2529^0.4358^6^Lost One Mudlurker^4306:2:2^
@@ -6,6 +6,7 @@ GoldScout-export 6^1fp3gfhfb4xr^4
 759^5^0^36^37^1435^0.5635^0.2751^5^Lost One Hunter^4306:2:4,4338:1:1^
 760^5^0^36^37^1435^0.5176^0.3333^5^Lost One Muckdweller^4057:1:1,4306:2:4,255728:1:1^
 767^13^0^36^37^1435^0.2660^0.5427^13^Swamp Jaguar^1686:1:1,1688:12:12^
+780^8^0^39^40^1434^0.4509^0.3353^8^Skullsplitter Mystic^1520:3:3,2466:4:4,2749:1:1,3771:1:1,4306:2:2,213127:1:1^
 858^8^0^36^37^1435^0.2506^0.5868^8^Sorrow Spinner^1074:1:1,4585:2:2,5637:1:1,12205:1:1^
 1084^8^0^35^36^1435^0.2865^0.5172^8^Young Sawtooth Crocolisk^770:5:5,3667:4:4,12037:6:6^
 5477^1^0^39^39^1435^0.3525^0.4399^1^Noboru the Cudgel^4306:1:2,6196:1:1^
@@ -13,10 +14,14 @@ GoldScout-export 6^1fp3gfhfb4xr^4
 272228^2^0^36^36^2548^0.5372^0.7622^2^Harvest Sentry^4306:1:1^
 @i^770^Pointy Crocolisk Tooth
 @i^1074^Hard Spider Leg Tip
+@i^1520^Troll Sweat
 @i^1529^Jade
 @i^1686^Bristly Whisker
 @i^1688^Long Soft Tail
+@i^2466^Skullsplitter Fetish
+@i^2749^Green Hills of Stranglethorn - Page 25
 @i^3667^Tender Crocolisk Meat
+@i^3771^Wild Hog Shank
 @i^4057^Insignia Chestguard
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
@@ -30,16 +35,21 @@ GoldScout-export 6^1fp3gfhfb4xr^4
 @i^11394^Bat Heart
 @i^12037^Mystery Meat
 @i^12205^White Spider Meat
+@i^213127^Partial Mystical Notes
 @i^213545^Scroll: PEATCHY ATTAX
 @i^248691^Waylaid Crate: Flowering Expert Herbs
 @i^255728^Manual: Potent Anti-Venom
 @i^258530^Lucky Lure
 @q^770^0:15:0
 @q^1074^0:15:0
+@q^1520^0:15:0
 @q^1529^2:7:1
 @q^1686^0:15:0
 @q^1688^0:15:0
+@q^2466^1:12:0
+@q^2749^1:12:0
 @q^3667^1:7:1
+@q^3771^1:0:0
 @q^4057^2:4:0
 @q^4306^1:7:1
 @q^4338^1:7:1
@@ -53,10 +63,12 @@ GoldScout-export 6^1fp3gfhfb4xr^4
 @q^11394^0:15:0
 @q^12037^1:7:1
 @q^12205^1:7:1
+@q^213127^1:15:0
 @q^213545^1:0:0
 @q^248691^1:0:1
 @q^255728^2:9:0
 @q^258530^1:12:0
+@m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
 @m^2548^Riverglades
 @c^118^
@@ -424,6 +436,7 @@ GoldScout-export 6^1fp3gfhfb4xr^4
 @a^759^111:4,131:1
 @a^760^92:1,131:2,149:1,167:1
 @a^767^145:2,165:1,185:1,206:1,224:2,225:1,244:2,245:3
+@a^780^128:2,129:5,148:1
 @a^858^165:1,225:1,244:4,245:2
 @a^1084^184:1,186:2,205:2,206:1,225:1,226:1
 @a^5477^167:1
