@@ -1,4 +1,4 @@
-GoldScout-export 6^h7cu5zxb77jc^2
+GoldScout-export 6^h7cu5zxb77jc^3
 587^1^0^33^33^1434^0.2892^0.1912^1^Bloodscalp Warrior^^
 682^1^0^33^33^1434^0.3511^0.1673^1^Stranglethorn Tiger^12202:1:1^
 684^2^0^37^38^1434^0.4814^0.2620^2^Shadowmaw Panther^1688:1:1,4057:1:1^
@@ -9,6 +9,16 @@ GoldScout-export 6^h7cu5zxb77jc^2
 1108^3^0^32^33^1434^0.3678^0.1656^3^Mistvale Gorilla^2799:1:1,4097:2:2^
 1114^1^0^38^38^1434^0.4370^0.2580^1^Jungle Thunderer^4096:1:1^
 1152^9^0^35^36^1434^0.3988^0.2758^9^Snapjaw Crocolisk^770:7:7,3667:4:4,4104:5:5,12037:4:4,248692:1:1^
+2242^1^0^36^36^1416^0.5879^0.4287^1^Syndicate Spy^^
+2243^3^0^36^37^1416^0.5238^0.2022^3^Syndicate Sentry^4306:1:1^
+2245^2^0^37^38^1416^0.5308^0.2090^2^Syndicate Saboteur^4306:2:4^
+2246^5^0^38^39^1416^0.3953^0.1586^5^Syndicate Assassin^4306:1:1,5113:1:1,6986:1:1^
+2247^2^0^39^39^1416^0.3925^0.1624^2^Syndicate Enforcer^^
+2252^1^0^35^35^1416^0.5486^0.4397^1^Crushridge Ogre^^
+2306^1^0^40^40^1416^0.5340^0.2022^1^Baron Vardus^3626:1:1^
+2318^1^0^35^35^1416^0.5320^0.2104^1^Argus Shadow Mage^4306:1:2^
+2320^1^0^40^40^1416^0.3925^0.1463^1^Nagaz^4306:1:3^
+2423^1^0^41^41^1416^0.3932^0.1498^1^Lord Aliden Perenolde^^
 4130^3^0^32^33^1441^0.7109^0.8541^3^Silithid Searcher^6300:1:1,6302:1:1,213547:1:1^
 4133^4^0^33^34^1441^0.7035^0.8681^4^Silithid Hive Drone^6300:1:1,6302:1:1,15213:1:1,262888:1:1^
 4458^1^0^36^36^1434^0.3642^0.2009^1^Murkgill Hunter^2745:1:1,17057:1:1^
@@ -17,6 +27,7 @@ GoldScout-export 6^h7cu5zxb77jc^2
 @i^1688^Long Soft Tail
 @i^2745^Green Hills of Stranglethorn - Page 21
 @i^2799^Gorilla Fang
+@i^3626^Head of Baron Vardus
 @i^3667^Tender Crocolisk Meat
 @i^3876^Fang of Bhag'thera
 @i^3879^Paw of Sin'Dall
@@ -25,8 +36,10 @@ GoldScout-export 6^h7cu5zxb77jc^2
 @i^4097^Chipped Gorilla Tooth
 @i^4104^Snapjaw Crocolisk Skin
 @i^4306^Silk Cloth
+@i^5113^Mark of the Syndicate
 @i^6300^Husk Fragment
 @i^6302^Delicate Insect Wing
+@i^6986^Crimson Lotus
 @i^7447^Sentinel Bracers of the Prophet
 @i^12037^Mystery Meat
 @i^12202^Tiger Meat
@@ -42,6 +55,7 @@ GoldScout-export 6^h7cu5zxb77jc^2
 @q^1688^0:15:0
 @q^2745^1:12:0
 @q^2799^1:12:0
+@q^3626^1:12:0
 @q^3667^1:7:1
 @q^3876^1:12:0
 @q^3879^1:12:0
@@ -50,8 +64,10 @@ GoldScout-export 6^h7cu5zxb77jc^2
 @q^4097^0:15:0
 @q^4104^1:12:0
 @q^4306^1:7:1
+@q^5113^0:15:0
 @q^6300^0:15:0
 @q^6302^0:15:0
+@q^6986^0:15:0
 @q^7447^2:4:0
 @q^12037^1:7:1
 @q^12202^1:7:1
@@ -62,6 +78,7 @@ GoldScout-export 6^h7cu5zxb77jc^2
 @q^213547^1:0:0
 @q^248692^1:0:1
 @q^262888^3:0:0
+@m^1416^Alterac Mountains
 @m^1434^Stranglethorn Vale
 @m^1441^Thousand Needles
 @c^118^
@@ -247,6 +264,16 @@ GoldScout-export 6^h7cu5zxb77jc^2
 @a^1108^67:3
 @a^1114^108:1
 @a^1152^88:3,107:1,108:2,127:3
+@a^2242^171:1
+@a^2243^70:1,90:2
+@a^2245^90:2
+@a^2246^67:5
+@a^2247^67:2
+@a^2252^170:1
+@a^2306^90:1
+@a^2318^90:1
+@a^2320^47:1
+@a^2423^47:1
 @a^4130^334:1,354:2
 @a^4133^353:2,354:2
 @a^4458^87:1

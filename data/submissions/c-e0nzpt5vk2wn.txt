@@ -1,4 +1,4 @@
-GoldScout-export 6^e0nzpt5vk2wn^4
+GoldScout-export 6^e0nzpt5vk2wn^5
 1527^2^0^7^7^1420^0.6923^0.4176^2^Hungering Dead^2589:1:1^
 1528^2^0^9^9^1420^0.6898^0.4223^2^Shambling Horror^1412:1:1^
 1529^1^0^9^9^1420^0.7657^0.5951^1^Bleeding Horror^^
@@ -22,11 +22,17 @@ GoldScout-export 6^e0nzpt5vk2wn^4
 1770^1^0^12^12^1421^0.4735^0.2492^1^Moonrage Darkrunner^^
 1778^3^0^11^12^1421^0.4909^0.2245^3^Ferocious Grizzled Bear^3170:3:3^
 1866^1^0^12^12^1421^0.5356^0.1363^1^Ravenclaw Slave^^
+3099^6^0^6^7^1411^0.4539^0.4293^6^Dire Mottled Boar^769:6:6,771:2:2,3171:1:1^
+3100^5^0^8^9^1411^0.4167^0.3405^5^Elder Mottled Boar^769:4:4,771:1:1,3171:1:1^
+3113^1^0^9^9^1411^0.4290^0.4163^1^Razormane Dustrunner^2589:1:1^
+3126^1^0^8^8^1411^0.4195^0.4177^1^Armored Scorpid^4867:1:1^
 267006^8^0^11^12^1420^0.6777^0.6446^8^Dark Neophyte^159:1:1,2589:2:4,275851:1:1^
 275437^2^0^10^12^1420^0.6784^0.6501^2^Dark Enforcer^2589:1:2,275851:2:2^
 276020^1^0^13^13^1420^0.8328^0.4348^1^Riptear^286326:1:1^
 @i^159^Refreshing Spring Water
 @i^730^Murloc Eye
+@i^769^Chunk of Boar Meat
+@i^771^Chipped Boar Tusk
 @i^779^Shiny Seashell
 @i^818^Tigerseye
 @i^955^Scroll of Intellect
@@ -44,10 +50,12 @@ GoldScout-export 6^e0nzpt5vk2wn^4
 @i^2872^Vicious Night Web Spider Venom
 @i^3164^Discolored Worg Heart
 @i^3170^Large Bear Tooth
+@i^3171^Broken Boar Tusk
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
 @i^3328^Spider Web Robe
 @i^4865^Ruined Pelt
+@i^4867^Broken Scorpid Leg
 @i^5465^Small Spider Leg
 @i^5523^Small Barnacled Clam
 @i^6289^Raw Longjaw Mud Snapper
@@ -65,6 +73,8 @@ GoldScout-export 6^e0nzpt5vk2wn^4
 @i^286326^Riptear's Heart
 @q^159^1:0:0
 @q^730^1:7:1
+@q^769^1:7:1
+@q^771^0:15:0
 @q^779^0:15:0
 @q^818^2:7:1
 @q^955^1:0:0
@@ -82,10 +92,12 @@ GoldScout-export 6^e0nzpt5vk2wn^4
 @q^2872^1:12:0
 @q^3164^1:12:0
 @q^3170^0:15:0
+@q^3171^0:15:0
 @q^3299^0:15:0
 @q^3300^0:15:0
 @q^3328^1:4:0
 @q^4865^0:15:0
+@q^4867^0:15:0
 @q^5465^1:7:1
 @q^5523^1:7:0
 @q^6289^1:7:1
@@ -101,6 +113,7 @@ GoldScout-export 6^e0nzpt5vk2wn^4
 @q^248703^2:0:1
 @q^275851^1:12:0
 @q^286326^1:12:0
+@m^1411^Durotar
 @m^1420^Tirisfal Glades
 @m^1421^Silverpine Forest
 @c^118^
@@ -814,6 +827,10 @@ GoldScout-export 6^e0nzpt5vk2wn^4
 @a^1770^89:1
 @a^1778^89:1,90:1,109:1
 @a^1866^50:1
+@a^3099^168:2,169:4
+@a^3100^69:1,89:1,167:3
+@a^3113^168:1
+@a^3126^168:1
 @a^267006^253:5,273:2,274:1
 @a^275437^253:1,273:1
 @a^276020^176:1

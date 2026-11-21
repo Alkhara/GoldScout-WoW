@@ -1,4 +1,4 @@
-GoldScout-export 5^1afqs540bi9q^12
+GoldScout-export 5^1afqs540bi9q^13
 205^12^0^28^29^1431^0.6422^0.4996^12^Nightbane Dark Runner^^
 206^8^0^29^30^1431^0.5860^0.7908^8^Nightbane Vile Fang^1783:2:2,5635:2:2^
 210^5^0^26^27^1431^0.2383^0.3302^5^Bone Chewer^1129:2:2,2592:1:2,3048:1:1,4306:1:2^
@@ -30,6 +30,8 @@ GoldScout-export 5^1afqs540bi9q^12
 1270^2^0^30^30^1431^0.7706^0.3630^2^Fetid Corpse^887:1:1,6530:1:1,248694:1:1^
 1871^3^0^31^31^1431^0.2792^0.3084^3^Eliza's Guard^^
 2044^1^0^26^26^1429^0.8558^0.6968^1^Forlorn Spirit^2592:1:2^
+2376^6^0^30^31^1424^0.3904^0.6899^6^Torn Fin Oracle^1827:1:1,5524:2:2,5785:1:1,17057:4:4,17058:4:4,249881:1:1^
+2377^9^0^31^32^1424^0.4040^0.6845^9^Torn Fin Tidehunter^865:1:1,5524:4:4,17057:1:1,17058:4:4,213545:1:1^
 2462^6^0^25^25^1431^0.2343^0.3590^6^Flesh Eating Worm^^
 4969^2^0^25^25^1453^0.7358^0.5947^2^Old Town Thug^^
 6206^5^0^0^0^0^0.0000^0.0000^0^^1748:1:1,1829:1:1,4306:1:2,6584:1:1,9309:1:1^
@@ -63,6 +65,7 @@ GoldScout-export 5^1afqs540bi9q^12
 @i^159^Refreshing Spring Water
 @i^422^Dwarven Mild
 @i^750^Tough Wolf Meat
+@i^865^Leaden Mace of the Eagle
 @i^884^Ghoul Rib
 @i^887^Pound of Flesh
 @i^929^Healing Potion
@@ -124,8 +127,10 @@ GoldScout-export 5^1afqs540bi9q^12
 @i^4606^Spongy Morel
 @i^4633^Heavy Bronze Lockbox
 @i^4865^Ruined Pelt
+@i^5524^Thick-shelled Clam
 @i^5529^Tomb Dust
 @i^5635^Sharp Claw
+@i^5785^Thick Murloc Scale
 @i^6530^Nightcrawlers
 @i^6584^Scouting Tunic of the Boar
 @i^6893^Workshop Key
@@ -140,15 +145,20 @@ GoldScout-export 5^1afqs540bi9q^12
 @i^9444^Techbot CPU Shell
 @i^12202^Tiger Meat
 @i^13127^Frostreaver Crown
+@i^17057^Shiny Fish Scales
+@i^17058^Fish Oil
+@i^213545^Scroll: PEATCHY ATTAX
 @i^213546^Scroll: SHOOBEEDOOP
 @i^248688^Waylaid Crate: Journeyman Textiles
 @i^248689^Waylaid Crate: Journeyman Curiosities
 @i^248694^Waylaid Crate: Expert Curiosities
+@i^249881^Recipe: Root Tea
 @i^264356^Iceclaw Bear Pendant
 @q^117^1:0:0
 @q^159^1:0:0
 @q^422^1:0:0
 @q^750^1:12:0
+@q^865^2:2:0
 @q^884^1:12:0
 @q^887^0:15:0
 @q^929^1:0:0
@@ -210,8 +220,10 @@ GoldScout-export 5^1afqs540bi9q^12
 @q^4606^1:0:0
 @q^4633^2:15:0
 @q^4865^0:15:0
+@q^5524^1:7:0
 @q^5529^0:15:0
 @q^5635^1:7:1
+@q^5785^1:7:1
 @q^6530^1:0:0
 @q^6584^2:4:0
 @q^6893^1:13:0
@@ -226,12 +238,17 @@ GoldScout-export 5^1afqs540bi9q^12
 @q^9444^1:4:0
 @q^12202^1:7:1
 @q^13127^3:4:0
+@q^17057^1:15:0
+@q^17058^1:15:0
+@q^213545^1:0:0
 @q^213546^1:0:0
 @q^248688^1:0:1
 @q^248689^1:0:1
 @q^248694^1:0:1
+@q^249881^1:9:0
 @q^264356^1:12:0
 @m^1415^Eastern Kingdoms
+@m^1424^Hillsbrad Foothills
 @m^1426^Dun Morogh
 @m^1429^Elwynn Forest
 @m^1431^Duskwood
@@ -1010,6 +1027,8 @@ GoldScout-export 5^1afqs540bi9q^12
 @a^1270^155:2
 @a^1871^125:3
 @a^2044^277:1
+@a^2376^267:3,268:2,288:1
+@a^2377^267:3,268:4,269:2
 @a^2462^124:2,144:4
 @a^4969^234:2
 @a^6208^208:1
