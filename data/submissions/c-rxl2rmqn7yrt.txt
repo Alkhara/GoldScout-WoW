@@ -1,4 +1,4 @@
-GoldScout-export 6^rxl2rmqn7yrt^18
+GoldScout-export 6^rxl2rmqn7yrt^19
 40^14^0^6^7^1429^0.4120^0.7870^14^Mineur kobold^118:1:1,1389:1:1,1420:1:1,1422:1:1,2589:5:8,2643:1:1,4536:1:1^
 206^9^0^29^30^1431^0.7240^0.7184^9^Croc noir Plaie-de-nuit^1759:1:1,3041:1:1,5635:1:1^
 475^12^0^5^6^1429^0.4021^0.8116^12^Tunnelier kobold^159:1:1,1366:1:1,1427:1:1,2589:4:6,2649:1:1,2652:1:1,2770:2:3,2835:1:3,4536:1:1^
@@ -55,7 +55,32 @@ GoldScout-export 6^rxl2rmqn7yrt^18
 2091^1^0^32^32^1437^0.5297^0.5473^1^Chef Nek'rosh^3625:1:1^
 4040^3^0^21^22^1437^0.5135^0.6250^3^Traqueuse des grottes^1081:2:2,2251:1:1,3174:1:1,4428:1:1,280319:1:1^
 6170^4^0^32^32^1431^0.7347^0.7527^4^Videssac^^
+6206^9^0^0^0^0^0.0000^0.0000^0^^1774:1:1,1800:1:1,1827:1:1,4306:1:1,4707:1:1,8186:1:1,9308:2:2,9309:1:1^
+6207^12^0^0^0^0^0.0000^0.0000^0^^1205:1:1,1806:1:1,1824:1:1,4306:4:5,9308:4:4,9309:3:3,15241:1:1^
+6208^1^0^25^26^1415^0.4335^0.5338^1^Envahisseur des Basses-cavernes^9308:1:1^
+6212^5^0^0^0^0^0.0000^0.0000^0^^1711:1:1,3778:1:1,3804:1:1,4306:2:3,8748:1:1,9308:1:1,9326:2:2^
+6213^1^0^24^24^1415^0.4337^0.5322^1^Envahisseur irradié^6382:1:1^
+6218^1^0^0^0^0^0.0000^0.0000^0^^^
+6219^1^0^0^0^0^0.0000^0.0000^0^^^
+6221^2^0^24^25^1415^0.4332^0.5282^2^Lépreux perturbé^790:1:1,1751:1:1,4306:1:1^
+6222^3^0^0^0^0^0.0000^0.0000^0^^9308:2:2^
+6223^1^0^0^0^0^0.0000^0.0000^0^^9309:1:1^
+6224^4^0^0^0^0^0.0000^0.0000^0^^9308:1:1,15285:1:1^
+6225^2^0^0^0^0^0.0000^0.0000^0^^4377:1:1,9309:1:1^
+6226^2^0^0^0^0^0.0000^0.0000^0^^4306:1:3^
+6227^1^0^0^0^0^0.0000^0.0000^0^^4306:1:2^
+6229^1^0^0^0^0^0.0000^0.0000^0^^9309:1:10,274068:1:1^
+6230^1^0^0^0^0^0.0000^0.0000^0^^^
+6231^1^0^26^26^1415^0.4317^0.5281^1^Techbot^9277:1:1,9444:1:1^
+6233^11^0^0^0^0^0.0000^0.0000^0^^929:1:1,1758:1:1,2592:2:2,4306:4:6,6611:1:1,9309:1:1,9327:1:1^
+6234^2^0^0^0^0^0.0000^0.0000^0^^2592:1:1^
+6235^1^0^0^0^0^0.0000^0.0000^0^^6893:1:1,9446:1:1^
 6240^6^0^26^27^1413^0.6863^0.4865^6^Combattant de la Dispute^^
+6329^6^0^0^0^0^0.0000^0.0000^0^^9308:2:2,9309:2:2,15241:1:1^
+7079^1^0^0^0^0^0.0000^0.0000^0^^9453:1:1^
+7361^1^0^0^0^0^0.0000^0.0000^0^^274042:1:1^
+7603^20^0^0^0^0^0.0000^0.0000^0^^929:1:1,1758:1:1,1830:1:1,2592:1:2,4306:3:4,4542:1:1,9309:6:6^
+7800^1^0^0^0^0^0.0000^0.0000^0^^9459:1:1^
 248463^1^0^6^6^1429^0.4112^0.7833^1^Grondeur^^
 270589^1^0^32^32^1437^0.5136^0.3722^1^Taspourri noctevoilé^279537:1:1^
 270892^1^0^32^32^1437^0.3504^0.5253^1^Gardien de Goaz^279993:1:1^
@@ -73,6 +98,7 @@ GoldScout-export 6^rxl2rmqn7yrt^18
 @i^422^Caprice des nains
 @i^765^Feuillargent
 @i^770^Croc pointu de crocilisque
+@i^790^Hache de forestier de guérison
 @i^814^Flasque d'huile
 @i^929^Potion de soins
 @i^1081^Chair croustillante d'araignée
@@ -86,16 +112,25 @@ GoldScout-export 6^rxl2rmqn7yrt^18
 @i^1696^Griffe de raptor
 @i^1697^Dent de raptor
 @i^1705^Pierre de lune inférieure
+@i^1711^Parchemin d'Endurance II
 @i^1712^Parchemin d'Esprit II
 @i^1748^Brassards en anneaux rivetés
+@i^1751^Pantalon en anneaux rivetés
 @i^1755^Bottes en anneaux renforcés
+@i^1758^Gants en anneaux renforcés
 @i^1759^Pantalon en anneaux renforcés
+@i^1774^Cape en brocart
 @i^1782^Cape à couture croisée
 @i^1790^Cape raccommodée
 @i^1795^Ceinture en cuir brut
+@i^1800^Pantalon en cuir brut
 @i^1805^Brassards en cuir armé
+@i^1806^Cape en cuir armé
 @i^1807^Gants en cuir armé
+@i^1824^Hache de guerre rutilante
+@i^1827^Fendoir à viande
 @i^1829^Coutelas court
+@i^1830^Bâtarde longue
 @i^2234^Armure de marcheur nocturne
 @i^2251^Patte d'araignée fondante
 @i^2449^Terrestrine
@@ -132,14 +167,19 @@ GoldScout-export 6^rxl2rmqn7yrt^18
 @i^3702^Vésicule biliaire d'ours
 @i^3730^Viande de grand ours
 @i^3770^Côtelette de mouton
+@i^3778^Arc composite de sarcasme
+@i^3804^Gants en cuir durci
 @i^3820^Etouffante
 @i^4299^Patron : Armure de gardien
 @i^4300^Patron : Brassards de gardien en cuir
 @i^4306^Etoffe de soie
+@i^4377^Poudre d'explosion majeure
 @i^4428^Palpe d'araignée
 @i^4463^Collier bosselé de raptor
 @i^4536^Pomme rouge brillante
+@i^4542^Pain de maïs moelleux
 @i^4553^Morceau de pierre délabré
+@i^4707^Ceinturon en écailles brillantes
 @i^5523^Petite palourde spiralée
 @i^5529^Poussière tombale
 @i^5635^Griffe aiguisée
@@ -150,6 +190,7 @@ GoldScout-export 6^rxl2rmqn7yrt^18
 @i^6358^Bouche-noire huileux
 @i^6359^Lutjan de nagefeu
 @i^6361^Thon arc-en-ciel cru
+@i^6382^Ceinture sylvestre en cuir
 @i^6387^Brassards en mailles rougeoyantes
 @i^6397^Gants blasonnés
 @i^6398^Ceinture blasonnée
@@ -157,13 +198,27 @@ GoldScout-export 6^rxl2rmqn7yrt^18
 @i^6570^Echarpe chatoyante d'intelligence
 @i^6579^Spallières de défenseur
 @i^6605^Gants de derviche du loup
+@i^6611^Echarpe de sage de canalisation
+@i^6893^Clé d'atelier
 @i^7355^Brassards de doyen d'intelligence
 @i^8186^Baguette redoutable
+@i^8748^Camail doublentin
+@i^9277^Mémoire de Techbot
+@i^9308^Objet sali
+@i^9309^Entrailles mécaniques de robot
+@i^9326^Anneau sali
+@i^9327^Carte d'accès aux données niveau DELTA
+@i^9444^Bouclier processeur de Techbot
+@i^9446^Jambe de l'électrocuteur
+@i^9453^Vengeresse empoisonnée
+@i^9459^Bras gauche de Thermojoncteur
 @i^9794^Cape en étoffe de lierre tressé du tigre
 @i^9802^Bottes excellente de chevalerie
 @i^9809^Tunique excellente de l'ours
 @i^12008^Anneau des savanes d'endurance
 @i^12184^Chair de raptor
+@i^15241^Couteau de combat de courroux sacré
+@i^15285^Arc long d'archer
 @i^20708^Malle soigneusement scellée
 @i^21114^Rhum brun de Rumsey
 @i^211784^Parchemin : WUBBA WUBBA
@@ -176,6 +231,8 @@ GoldScout-export 6^rxl2rmqn7yrt^18
 @i^251345^Plans : jambières de vétéran en anneaux
 @i^262888^Commission de compagnon scellée
 @i^273804^Mantelet d'exécution
+@i^274042^Ceinture d'arnaque
+@i^274068^Médaille d'honneur de Thermojoncteur
 @i^279385^Écaille cramoisie immaculée
 @i^279537^Entrailles de taspourri
 @i^279993^Pierre-clé titanesque
@@ -192,6 +249,7 @@ GoldScout-export 6^rxl2rmqn7yrt^18
 @q^422^1:0:0
 @q^765^1:7:1
 @q^770^0:15:0
+@q^790^2:2:0
 @q^814^1:7:1
 @q^929^1:0:0
 @q^1081^1:7:1
@@ -205,16 +263,25 @@ GoldScout-export 6^rxl2rmqn7yrt^18
 @q^1696^0:15:0
 @q^1697^0:15:0
 @q^1705^2:7:1
+@q^1711^1:0:0
 @q^1712^1:0:0
 @q^1748^0:4:0
+@q^1751^0:4:0
 @q^1755^0:4:0
+@q^1758^0:4:0
 @q^1759^0:4:0
+@q^1774^0:4:0
 @q^1782^0:4:0
 @q^1790^0:4:0
 @q^1795^0:4:0
+@q^1800^0:4:0
 @q^1805^0:4:0
+@q^1806^0:4:0
 @q^1807^0:4:0
+@q^1824^0:2:0
+@q^1827^0:2:0
 @q^1829^0:2:0
+@q^1830^0:2:0
 @q^2234^2:4:0
 @q^2251^1:7:1
 @q^2449^1:7:1
@@ -251,14 +318,19 @@ GoldScout-export 6^rxl2rmqn7yrt^18
 @q^3702^0:15:0
 @q^3730^1:7:1
 @q^3770^1:0:0
+@q^3778^0:2:0
+@q^3804^0:4:0
 @q^3820^1:7:1
 @q^4299^2:9:0
 @q^4300^2:9:0
 @q^4306^1:7:1
+@q^4377^1:7:1
 @q^4428^0:15:0
 @q^4463^2:4:0
 @q^4536^1:0:0
+@q^4542^1:0:0
 @q^4553^0:15:0
+@q^4707^2:4:0
 @q^5523^1:7:0
 @q^5529^0:15:0
 @q^5635^1:7:1
@@ -269,6 +341,7 @@ GoldScout-export 6^rxl2rmqn7yrt^18
 @q^6358^1:7:1
 @q^6359^1:7:1
 @q^6361^1:7:1
+@q^6382^2:4:0
 @q^6387^2:4:0
 @q^6397^2:4:0
 @q^6398^2:4:0
@@ -276,13 +349,27 @@ GoldScout-export 6^rxl2rmqn7yrt^18
 @q^6570^2:4:0
 @q^6579^1:4:0
 @q^6605^2:4:0
+@q^6611^2:4:0
+@q^6893^1:13:0
 @q^7355^2:4:0
 @q^8186^2:2:0
+@q^8748^0:4:0
+@q^9277^1:12:0
+@q^9308^1:12:0
+@q^9309^1:12:0
+@q^9326^1:12:0
+@q^9327^2:12:0
+@q^9444^1:4:0
+@q^9446^3:2:0
+@q^9453^3:2:0
+@q^9459^3:2:0
 @q^9794^2:4:0
 @q^9802^2:4:0
 @q^9809^2:4:0
 @q^12008^2:4:0
 @q^12184^1:7:1
+@q^15241^2:2:0
+@q^15285^2:2:0
 @q^20708^1:15:0
 @q^21114^1:0:0
 @q^211784^1:0:0
@@ -295,6 +382,8 @@ GoldScout-export 6^rxl2rmqn7yrt^18
 @q^251345^3:9:0
 @q^262888^3:0:0
 @q^273804^3:4:0
+@q^274042^3:4:0
+@q^274068^3:4:0
 @q^279385^1:12:0
 @q^279537^1:15:0
 @q^279993^1:12:0
@@ -307,6 +396,7 @@ GoldScout-export 6^rxl2rmqn7yrt^18
 @q^280397^1:12:0
 @q^280398^1:12:0
 @m^1413^Les Tarides
+@m^1415^Royaumes de l'est
 @m^1429^Forêt d'Elwynn
 @m^1431^Bois de la Pénombre
 @m^1437^Les Paluns
@@ -1516,6 +1606,10 @@ GoldScout-export 6^rxl2rmqn7yrt^18
 @a^2091^210:1
 @a^4040^250:3
 @a^6170^294:2,314:2
+@a^6208^208:1
+@a^6213^208:1
+@a^6221^208:2
+@a^6231^208:1
 @a^6240^193:6
 @a^248463^308:1
 @a^270589^150:1
