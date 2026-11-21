@@ -451,6 +451,25 @@ class LootCountingLuaTests(unittest.TestCase):
         self.assertEqual(self.picks(), (1, {self.JUNKBOX: 1, self.HIP_FLASK: 1}))
         self.assertEqual(self.bear(), (0, {}))
 
+    def test_a_pickpocket_window_closed_untouched_counts_once(self):
+        # It opens, Cheap Shot closes it, nothing taken: its loot counts as the pick, and its corpse not at all.
+        self.cast_pick(BEAR)
+        self.open_window(BEAR, self.JUNKBOX, self.HIP_FLASK)
+        self.game.now += 20
+        self.loot(BEAR, self.JUNKBOX, self.HIP_FLASK, self.HIDE)
+        self.assertEqual(self.picks(), (1, {self.JUNKBOX: 1, self.HIP_FLASK: 1}))
+        self.assertEqual(self.bear(), (0, {}))
+
+    def test_reopening_the_pockets_untargeted_isnt_a_kill(self):
+        # The second window has no fresh cast behind it and the mob isn't targeted; it still isn't counted twice.
+        self.cast_pick(BEAR)
+        self.open_window(BEAR, self.JUNKBOX, self.HIP_FLASK)
+        self.open_window(BEAR, self.JUNKBOX, self.HIP_FLASK, take=(1, 2))
+        self.game.now += 20
+        self.loot(BEAR, self.HIDE)
+        self.assertEqual(self.picks(), (1, {self.JUNKBOX: 1, self.HIP_FLASK: 1}))
+        self.assertEqual(self.bear(), (0, {}))
+
     def test_a_corpse_whose_pockets_were_emptied_counts(self):
         self.cast_pick(BEAR)
         self.loot(BEAR, self.JUNKBOX)
