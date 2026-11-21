@@ -7,7 +7,7 @@ releases add their own line automatically.
 
 ## Unreleased
 
-## v0.12.42
+## v0.12.43
 
 - **Shared drop data that was turned away now goes in:** a saved pickpocket count could be written as "-0", and the community data refused the whole share. GoldScout now writes it as 0, and shares already sent that way are accepted.
 - **Pocket loot left out of kill drops:** besides junkboxes, the pocket watches, Lucky Charms, Boot Knives, Intricate Baubles, Empty Sea Snail Shells and Syndicate Emblems that rogues' pickpockets put in kill loot no longer count as mob drops.
