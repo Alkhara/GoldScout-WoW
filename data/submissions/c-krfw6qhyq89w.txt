@@ -1,12 +1,16 @@
-GoldScout-export 5^krfw6qhyq89w^7
+GoldScout-export 5^krfw6qhyq89w^8
 6^11^0^1^2^1429^0.4773^0.3624^11^Kobold Vermin^755:3:3,1378:1:1,2589:7:7,2651:1:1,247834:2:2^
 38^24^0^3^4^1429^0.5299^0.4883^24^Defias Thug^752:12:12,1364:1:1,1370:1:1,1372:1:1,1374:1:1,2070:7:7,2589:16:16,2656:1:1,3365:1:1^
+40^1^0^6^7^1429^0.4098^0.8042^1^Kobold Miner^4536:1:1^
 69^7^0^2^2^1429^0.4623^0.3576^7^Timber Wolf^750:6:6,2672:2:2,4865:2:2,7073:4:4,7074:1:1^
 80^13^0^3^4^1429^0.4893^0.2793^13^Kobold Laborer^755:3:3,1370:1:1,1374:2:2,1377:1:1,2589:3:3,4536:1:1^
 103^1^0^5^5^1429^0.5743^0.4825^1^Garrick Padfoot^182:1:1,1370:1:1,2070:1:1,2589:1:1^
+113^9^0^5^6^1429^0.4173^0.8728^9^Stonetusk Boar^769:5:5,771:4:4,286215:6:6^
 257^11^0^3^3^1429^0.5033^0.3528^11^Kobold Worker^159:1:1,755:2:2,1369:1:1,1370:1:1,1377:1:1,1380:1:1,2589:3:3,3363:1:1,3365:1:1,4536:3:3^
-285^3^0^6^7^1429^0.5392^0.6642^3^Murloc^^
+285^9^0^6^7^1429^0.5250^0.6671^9^Murloc^159:1:1,1430:1:1,2138:1:1^
 299^2^0^1^1^1429^0.4841^0.3817^2^Young Wolf^750:2:2,4865:2:2^
+475^22^0^5^6^1429^0.3885^0.8277^22^Kobold Tunneler^159:1:1,772:8:8,773:7:7,1372:1:1,1376:1:1,1420:1:1,2589:9:14,3365:1:1,3370:1:1,4536:6:6^
+735^4^0^6^7^1429^0.5590^0.6431^4^Murloc Streamrunner^3013:1:1,3373:1:1^
 3197^2^0^10^10^1411^0.5455^0.0913^2^Burning Blade Fanatic^2589:1:1,8178:1:1^
 3198^1^0^10^10^1411^0.5473^0.0881^1^Burning Blade Apprentice^14544:1:1^
 3241^1^0^16^16^1413^0.4310^0.1447^1^Savannah Patriarch^4813:1:1^
@@ -62,6 +66,10 @@ GoldScout-export 5^krfw6qhyq89w^7
 @i^750^Tough Wolf Meat
 @i^752^Red Burlap Bandana
 @i^755^Melted Candle
+@i^769^Chunk of Boar Meat
+@i^771^Chipped Boar Tusk
+@i^772^Large Candle
+@i^773^Gold Dust
 @i^774^Malachite
 @i^818^Tigerseye
 @i^858^Lesser Healing Potion
@@ -77,7 +85,9 @@ GoldScout-export 5^krfw6qhyq89w^7
 @i^1377^Frayed Gloves
 @i^1378^Frayed Pants
 @i^1380^Frayed Robe
+@i^1420^Worn Leather Bracers
 @i^1423^Worn Leather Pants
+@i^1430^Patchwork Gloves
 @i^1495^Calico Shoes
 @i^1497^Calico Cloak
 @i^1499^Calico Pants
@@ -95,6 +105,7 @@ GoldScout-export 5^krfw6qhyq89w^7
 @i^1735^Worn Mail Pants
 @i^1815^Ornamental Mace
 @i^2070^Darnassian Bleu
+@i^2138^Sharpened Letter Opener
 @i^2215^Wooden Shield
 @i^2287^Haunch of Meat
 @i^2589^Linen Cloth
@@ -111,6 +122,8 @@ GoldScout-export 5^krfw6qhyq89w^7
 @i^3301^Sharp Canine
 @i^3363^Frayed Belt
 @i^3365^Frayed Bracers
+@i^3370^Patchwork Belt
+@i^3373^Patchwork Bracers
 @i^3374^Calico Belt
 @i^3653^Ceremonial Buckler
 @i^3654^Brackwater Shield
@@ -170,11 +183,16 @@ GoldScout-export 5^krfw6qhyq89w^7
 @i^248702^Waylaid Crate: Apprentice Fabrics
 @i^272996^Trogg Scepter
 @i^273003^Searing Dagger
+@i^286215^Vial of Animal Blood
 @q^159^1:0:0
 @q^182^1:12:0
 @q^750^1:12:0
 @q^752^1:12:0
 @q^755^0:15:0
+@q^769^1:7:1
+@q^771^0:15:0
+@q^772^1:12:0
+@q^773^1:12:0
 @q^774^2:7:1
 @q^818^2:7:1
 @q^858^1:0:0
@@ -190,7 +208,9 @@ GoldScout-export 5^krfw6qhyq89w^7
 @q^1377^0:4:0
 @q^1378^0:4:0
 @q^1380^0:4:0
+@q^1420^0:4:0
 @q^1423^0:4:0
+@q^1430^0:4:0
 @q^1495^0:4:0
 @q^1497^0:4:0
 @q^1499^0:4:0
@@ -208,6 +228,7 @@ GoldScout-export 5^krfw6qhyq89w^7
 @q^1735^0:4:0
 @q^1815^0:2:0
 @q^2070^1:0:0
+@q^2138^0:2:0
 @q^2215^0:4:0
 @q^2287^1:0:0
 @q^2589^1:7:1
@@ -224,6 +245,8 @@ GoldScout-export 5^krfw6qhyq89w^7
 @q^3301^0:15:0
 @q^3363^0:4:0
 @q^3365^0:4:0
+@q^3370^0:4:0
+@q^3373^0:4:0
 @q^3374^0:4:0
 @q^3653^2:4:0
 @q^3654^2:4:0
@@ -283,17 +306,22 @@ GoldScout-export 5^krfw6qhyq89w^7
 @q^248702^2:0:1
 @q^272996^3:2:0
 @q^273003^3:2:0
+@q^286215^1:12:0
 @m^1411^Durotar
 @m^1413^The Barrens
 @m^1429^Elwynn Forest
 @a^6^149:11
 @a^38^190:18,191:1,210:5
+@a^40^328:1
 @a^69^129:2,149:5
 @a^80^109:10,110:2,129:1
 @a^103^191:1
+@a^113^348:9
 @a^257^129:1,130:4,149:1,150:5
-@a^285^270:3
+@a^285^270:8,271:1
 @a^299^149:2
+@a^475^327:17,328:3,347:2
+@a^735^251:3,270:1
 @a^3197^30:2
 @a^3198^30:1
 @a^3241^48:1

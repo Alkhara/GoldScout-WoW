@@ -1,4 +1,4 @@
-GoldScout-export 6^sdc81v536gz1^16
+GoldScout-export 6^sdc81v536gz1^17
 1121^7^0^8^9^1426^0.2524^0.5118^7^Frostmane Snowstrider^767:1:1,1413:1:1,2589:2:3^
 1122^6^0^9^10^1426^0.2171^0.5291^6^Frostmane Hideskinner^2138:1:1,2589:1:1^
 1123^8^0^8^9^1426^0.2568^0.5101^8^Frostmane Headhunter^159:1:1,1414:1:1,2589:3:3^
@@ -32,8 +32,11 @@ GoldScout-export 6^sdc81v536gz1^16
 2020^2^0^9^10^1438^0.3296^0.3133^2^Bloodfeather Wind Witch^4775:1:1^
 2021^9^0^11^11^1438^0.3280^0.3072^9^Bloodfeather Matriarch^1181:1:1,1510:1:1,2589:3:5,4776:1:1,5114:2:2,5204:2:2,15010:1:1^
 2022^18^0^5^6^1438^0.5853^0.7003^18^Timberling^774:1:1,785:1:1,1370:1:1,1377:1:1,1415:1:1,1431:1:1,2210:1:1,2449:1:1,4604:2:2,5168:8:8^
+2027^6^0^8^9^1438^0.4246^0.3913^6^Timberling Trampler^1416:1:1,1422:1:1,2449:2:2,5170:5:5^
+2029^4^0^9^10^1438^0.4253^0.3629^4^Timberling Mire Beast^1181:1:1,2449:1:1,2645:1:1,7095:1:1^
 2031^8^0^1^1^1438^0.6133^0.4313^8^Young Nightsaber^2654:1:1,3363:2:2,4865:3:3,7073:2:2,7074:3:3^
 2032^7^0^2^2^1438^0.6086^0.3540^7^Mangy Nightsaber^1368:1:1,1372:1:1,1374:1:1,2211:1:1,4865:2:2,7073:2:2,7074:4:4^
+2033^1^0^9^9^1438^0.4029^0.3279^1^Elder Nightsaber^4813:1:1^
 2038^1^0^8^8^1438^0.5177^0.5178^1^Lord Melenas^5221:1:1^
 2042^12^0^5^6^1438^0.6168^0.5629^12^Nightsaber^3409:3:3,4813:3:3,4814:3:3,280087:3:3^
 2043^6^0^7^8^1438^0.4516^0.7352^6^Nightsaber Stalker^4814:2:2^
@@ -56,6 +59,7 @@ GoldScout-export 6^sdc81v536gz1^16
 4015^1^0^25^25^1442^0.5466^0.3947^1^Pridewing Patriarch^5136:1:1,5751:1:1,277917:1:1^
 7234^2^0^8^8^1438^0.6958^0.5375^2^Ferocitas the Dream Eater^8049:1:1^
 7235^4^0^6^7^1438^0.6948^0.5313^4^Gnarlpine Mystic^1416:1:1,1429:1:1,2589:1:2,211780:1:1^
+7319^1^0^12^12^1438^0.3870^0.2467^1^Lady Sathrah^1476:1:1,8344:1:1^
 272034^1^0^10^10^1438^0.3525^0.3888^1^Hatescreech^280831:1:1^
 272044^1^0^10^10^1438^0.3367^0.3554^1^Windmistress Gaedress^280832:1:1^
 272046^1^0^12^12^1438^0.3472^0.2834^1^Witchmother Arysa^2589:1:2,280834:1:1^
@@ -84,6 +88,7 @@ GoldScout-export 6^sdc81v536gz1^16
 @i^1414^Cracked Sledge
 @i^1415^Carpenter's Mallet
 @i^1416^Rusty Hatchet
+@i^1422^Worn Leather Gloves
 @i^1429^Patchwork Cloak
 @i^1431^Patchwork Pants
 @i^1476^Snapped Spider Limb
@@ -95,6 +100,7 @@ GoldScout-export 6^sdc81v536gz1^16
 @i^2449^Earthroot
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2645^Loose Chain Gloves
 @i^2649^Flimsy Chain Belt
 @i^2650^Flimsy Chain Boots
 @i^2651^Flimsy Chain Bracers
@@ -135,6 +141,7 @@ GoldScout-export 6^sdc81v536gz1^16
 @i^5136^Torn Furry Ear
 @i^5166^Webwood Venom Sac
 @i^5168^Timberling Seed
+@i^5170^Mossy Tumor
 @i^5204^Bloodfeather Belt
 @i^5206^Bogling Root
 @i^5221^Melenas' Head
@@ -151,6 +158,7 @@ GoldScout-export 6^sdc81v536gz1^16
 @i^7070^Elemental Water
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
+@i^7095^Bog Boots
 @i^7096^Plucked Feather
 @i^7097^Leg Meat
 @i^7098^Splintered Tusk
@@ -158,6 +166,7 @@ GoldScout-export 6^sdc81v536gz1^16
 @i^7101^Bug Eye
 @i^8049^Gnarlpine Necklace
 @i^8182^Pellet Rifle
+@i^8344^Silvery Spinnerets
 @i^9451^Bubbling Water
 @i^10640^Webwood Ichor
 @i^12220^Intact Elemental Bracer
@@ -202,6 +211,7 @@ GoldScout-export 6^sdc81v536gz1^16
 @q^1414^0:2:0
 @q^1415^0:2:0
 @q^1416^0:2:0
+@q^1422^0:4:0
 @q^1429^0:4:0
 @q^1431^0:4:0
 @q^1476^0:15:0
@@ -213,6 +223,7 @@ GoldScout-export 6^sdc81v536gz1^16
 @q^2449^1:7:1
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2645^0:4:0
 @q^2649^0:4:0
 @q^2650^0:4:0
 @q^2651^0:4:0
@@ -253,6 +264,7 @@ GoldScout-export 6^sdc81v536gz1^16
 @q^5136^0:15:0
 @q^5166^1:12:0
 @q^5168^1:12:0
+@q^5170^1:12:0
 @q^5204^1:12:0
 @q^5206^1:0:0
 @q^5221^1:12:0
@@ -269,6 +281,7 @@ GoldScout-export 6^sdc81v536gz1^16
 @q^7070^1:7:1
 @q^7073^0:15:0
 @q^7074^0:15:0
+@q^7095^1:4:0
 @q^7096^0:15:0
 @q^7097^1:0:0
 @q^7098^0:15:0
@@ -276,6 +289,7 @@ GoldScout-export 6^sdc81v536gz1^16
 @q^7101^0:15:0
 @q^8049^1:12:0
 @q^8182^1:2:0
+@q^8344^1:12:0
 @q^9451^1:0:0
 @q^10640^1:12:0
 @q^12220^1:12:0
@@ -1690,8 +1704,11 @@ GoldScout-export 6^sdc81v536gz1^16
 @a^2020^126:2
 @a^2021^106:3,126:6
 @a^2022^251:1,271:6,272:1,291:7,292:3
+@a^2027^148:5,168:1
+@a^2029^148:4
 @a^2031^172:8
 @a^2032^131:1,132:1,151:2,152:3
+@a^2033^128:1
 @a^2038^210:1
 @a^2042^211:1,213:4,231:2,232:4,250:1
 @a^2043^288:2,289:3,309:1
@@ -1714,6 +1731,7 @@ GoldScout-export 6^sdc81v536gz1^16
 @a^4015^150:1
 @a^7234^213:2
 @a^7235^213:3,214:1
+@a^7319^87:1
 @a^272034^147:1
 @a^272044^146:1
 @a^272046^106:1

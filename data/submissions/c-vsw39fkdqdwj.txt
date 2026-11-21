@@ -1,4 +1,4 @@
-GoldScout-export 6^vsw39fkdqdwj^25
+GoldScout-export 6^vsw39fkdqdwj^26
 3^14^0^24^25^1431^0.2312^0.3751^14^Flesh Eater^885:1:1,887:2:2,1129:4:4,2589:1:2,2592:3:4,3385:1:1,4606:1:1,6530:3:3^
 38^19^9^3^4^1429^0.5447^0.4875^19^Defias Thug^159:1:1,752:11:11,1364:1:1,1374:1:1,1376:1:1,2070:2:2,2589:8:8,2652:1:1,3363:1:1^4540:2:2,5363:1:1
 40^33^15^6^7^1429^0.5242^0.6686^33^Kobold Miner^118:1:1,159:1:1,772:4:4,773:6:6,1389:3:3,1412:1:1,1419:1:1,2589:8:13,2648:1:1,2773:1:1,4536:1:1,248001:6:6^117:1:1,5364:2:2
@@ -148,6 +148,9 @@ GoldScout-export 6^vsw39fkdqdwj^25
 3947^4^0^0^0^0^0.0000^0.0000^0^^2287:1:1,2592:1:2,9780:1:1^
 4016^1^0^24^24^1442^0.4112^0.1348^1^Fey Dragon^^
 4021^1^0^25^25^1442^0.4078^0.1483^1^Corrosive Sap Beast^1821:1:1,3670:1:1^
+4031^6^0^25^27^1442^0.3210^0.7128^6^Fledgling Chimaera^6444:1:1,6826:1:1,6839:6:6^
+4032^1^0^24^24^1442^0.2837^0.6711^1^Young Chimaera^6839:1:1^
+4041^1^0^27^28^1442^0.3297^0.7309^1^Scorched Basilisk^11384:1:1^
 4065^10^0^21^22^1433^0.6168^0.5571^10^Blackrock Sentry^1296:1:1,1746:1:1,1777:1:1,1801:1:1,2592:5:16,3770:2:2,6564:1:1,9780:1:1^
 4128^1^0^23^23^1413^0.4787^0.7640^1^Hecklefang Stalker^3402:1:1^
 4416^8^0^0^0^0^0.0000^0.0000^0^^915:3:3,1179:1:1,2216:1:1,2592:3:6,7997:1:1^
@@ -155,7 +158,9 @@ GoldScout-export 6^vsw39fkdqdwj^25
 4462^1^0^23^23^1433^0.6333^0.5476^1^Blackrock Hunter^1705:1:1^
 4463^1^0^22^23^1433^0.6884^0.7843^1^Blackrock Summoner^^
 4464^1^0^25^25^1433^0.6404^0.5673^1^Blackrock Gladiator^6614:1:1^
+4696^2^0^30^31^1443^0.5709^0.1092^2^Scorpashi Snapper^12037:1:1,248687:1:1^
 4969^2^0^25^26^1453^0.7358^0.5944^2^Old Town Thug^^
+6167^1^0^28^28^1442^0.3092^0.7398^1^Chimaera Matriarch^6444:1:1,6840:1:1^
 6170^3^0^32^32^1431^0.7344^0.7627^3^Gutspill^3817:1:1,4050:1:1^
 6238^1^0^33^33^1413^0.6860^0.4872^1^Big Will^3797:1:1^
 6240^6^0^26^27^1413^0.6861^0.4873^6^Affray Challenger^^
@@ -396,6 +401,7 @@ GoldScout-export 6^vsw39fkdqdwj^25
 @i^6303^Raw Slitherskin Mackerel
 @i^6308^Raw Bristle Whisker Catfish
 @i^6393^Silver-thread Gloves
+@i^6444^Forked Tongue
 @i^6520^Pioneer Cloak
 @i^6530^Nightcrawlers
 @i^6537^Willow Boots of Stamina
@@ -406,6 +412,9 @@ GoldScout-export 6^vsw39fkdqdwj^25
 @i^6565^Shimmering Gloves of Spirit
 @i^6567^Shimmering Armor of the Sorcerer
 @i^6614^Sage's Cloak of the Bandit
+@i^6826^Brilliant Scale
+@i^6839^Charred Horn
+@i^6840^Galvanized Horn
 @i^6889^Small Egg
 @i^6952^Thick Bear Fur
 @i^7073^Broken Fang
@@ -424,8 +433,10 @@ GoldScout-export 6^vsw39fkdqdwj^25
 @i^9799^Ivycloth Sash of the Channeler
 @i^9832^Scaled Leather Gloves of the Gorilla
 @i^10401^Blackened Defias Gloves
+@i^11384^Broken Basilisk Teeth
 @i^11407^Torn Bear Pelt
 @i^11994^Coral Band of Frost Protection
+@i^12037^Mystery Meat
 @i^14166^Buccaneer's Bracers of Stamina
 @i^14171^Buccaneer's Pants of Nature Protection
 @i^17056^Light Feather
@@ -439,6 +450,7 @@ GoldScout-export 6^vsw39fkdqdwj^25
 @i^248003^Geomancy for Curious Young Wizards
 @i^248004^Arcane Explainer: Magical Stuff in Simple Words
 @i^248684^Waylaid Crate: Apprentice Textiles
+@i^248687^Waylaid Crate: Journeyman Ore
 @i^248691^Waylaid Crate: Flowering Expert Herbs
 @i^248704^Waylaid Crate: Apprentice Parts
 @i^248707^Waylaid Crate: Journeyman Parts
@@ -678,6 +690,7 @@ GoldScout-export 6^vsw39fkdqdwj^25
 @q^6303^1:7:1
 @q^6308^1:7:1
 @q^6393^2:4:0
+@q^6444^0:15:0
 @q^6520^1:4:0
 @q^6530^1:0:0
 @q^6537^2:4:0
@@ -688,6 +701,9 @@ GoldScout-export 6^vsw39fkdqdwj^25
 @q^6565^2:4:0
 @q^6567^2:4:0
 @q^6614^2:4:0
+@q^6826^0:15:0
+@q^6839^1:12:0
+@q^6840^1:12:0
 @q^6889^1:7:1
 @q^6952^1:12:0
 @q^7073^0:15:0
@@ -706,8 +722,10 @@ GoldScout-export 6^vsw39fkdqdwj^25
 @q^9799^2:4:0
 @q^9832^2:4:0
 @q^10401^3:4:0
+@q^11384^0:15:0
 @q^11407^1:12:0
 @q^11994^2:4:0
+@q^12037^1:7:1
 @q^14166^2:4:0
 @q^14171^2:4:0
 @q^17056^1:15:1
@@ -721,6 +739,7 @@ GoldScout-export 6^vsw39fkdqdwj^25
 @q^248003^1:12:0
 @q^248004^1:12:0
 @q^248684^1:0:1
+@q^248687^1:0:1
 @q^248691^1:0:1
 @q^248704^2:0:1
 @q^248707^2:0:1
@@ -746,6 +765,7 @@ GoldScout-export 6^vsw39fkdqdwj^25
 @m^1436^Westfall
 @m^1437^Wetlands
 @m^1442^Stonetalon Mountains
+@m^1443^Desolace
 @m^1453^Stormwind City
 @c^118^
 @c^724^
@@ -2905,12 +2925,17 @@ GoldScout-export 6^vsw39fkdqdwj^25
 @a^3261^210:1
 @a^4016^48:1
 @a^4021^48:1
+@a^4031^286:6
+@a^4032^265:1
+@a^4041^286:1
 @a^4065^172:1,212:3,232:4,252:2
 @a^4128^309:1
 @a^4462^212:1
 @a^4463^313:1
 @a^4464^232:1
+@a^4696^51:2
 @a^4969^234:2
+@a^6167^286:1
 @a^6170^294:1,314:2
 @a^6238^193:1
 @a^6240^193:6

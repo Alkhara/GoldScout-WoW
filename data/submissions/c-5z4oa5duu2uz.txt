@@ -1,4 +1,4 @@
-GoldScout-export 6^5z4oa5duu2uz^8
+GoldScout-export 6^5z4oa5duu2uz^9
 1767^1^0^12^13^1421^0.5977^0.1706^1^Vile Fin Shredder^^
 1868^1^0^13^14^1421^0.5275^0.3591^1^Ravenclaw Servant^^
 1869^1^0^14^14^1421^0.5356^0.3509^1^Ravenclaw Champion^^
@@ -166,10 +166,15 @@ GoldScout-export 6^5z4oa5duu2uz^8
 @i^5848^Hollow Vulture Bone
 @i^6289^Raw Longjaw Mud Snapper
 @i^6291^Raw Brilliant Smallfish
+@i^6303^Raw Slitherskin Mackerel
 @i^6308^Raw Bristle Whisker Catfish
+@i^6358^Oily Blackmouth
+@i^6359^Firefin Snapper
+@i^6361^Raw Rainbow Fin Albacore
 @i^6362^Raw Rockscale Cod
 @i^6388^Glimmering Mail Pauldrons
 @i^6438^Dull Elemental Bracer
+@i^6522^Deviate Fish
 @i^6538^Willow Robe of Agility
 @i^6550^Soldier's Wristguards of the Boar
 @i^6552^Bard's Tunic of the Gorilla
@@ -313,10 +318,15 @@ GoldScout-export 6^5z4oa5duu2uz^8
 @q^5848^1:12:0
 @q^6289^1:7:1
 @q^6291^1:7:1
+@q^6303^1:7:1
 @q^6308^1:7:1
+@q^6358^1:7:1
+@q^6359^1:7:1
+@q^6361^1:7:1
 @q^6362^1:7:1
 @q^6388^2:4:0
 @q^6438^0:15:0
+@q^6522^1:0:1
 @q^6538^2:4:0
 @q^6550^2:4:0
 @q^6552^2:4:0
@@ -367,9 +377,11 @@ GoldScout-export 6^5z4oa5duu2uz^8
 @q^276158^0:15:0
 @q^276160^0:15:0
 @q^279186^1:12:0
+@m^1413^The Barrens
 @m^1416^Alterac Mountains
 @m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
+@m^1440^Ashenvale
 @m^1441^Thousand Needles
 @m^1443^Desolace
 @m^1454^Orgrimmar
@@ -1202,5 +1214,7 @@ GoldScout-export 6^5z4oa5duu2uz^8
 @a^11576^171:2
 @a^12922^93:1
 @a^270094^211:1
-@f^1454^0^15^1^6289:6:6,6291:6:6,6308:3:3^133:15
+@f^1413^0^68^18^6289:10:10,6291:5:5,6303:10:10,6308:8:8,6358:12:12,6361:12:12,6522:11:11^89:34,152:17,172:10,173:7
+@f^1440^0^17^75^6358:3:3,6359:1:1,6361:13:13^82:7,122:10
+@f^1454^0^17^1^6289:7:7,6291:6:6,6308:4:4^133:17
 @l^0^enUS

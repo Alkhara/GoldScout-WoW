@@ -1,4 +1,4 @@
-GoldScout-export 6^obir9khfkx5e^25
+GoldScout-export 6^obir9khfkx5e^26
 3^3^0^24^25^1431^0.2561^0.3715^3^Fleischfresser^887:1:1,1129:1:1,2592:1:1,4306:1:1^
 36^7^0^11^12^1436^0.4517^0.4434^7^Erntegolem^732:4:4,814:3:3,1274:2:2,1514:1:1,255007:4:4^
 48^8^0^21^22^1431^0.7882^0.6968^8^Skelettkrieger^929:1:1,1205:1:1,1775:1:1,2378:3:3,2592:2:3,4306:1:1^
@@ -130,7 +130,17 @@ GoldScout-export 6^obir9khfkx5e^25
 1400^1^0^23^23^1437^0.4207^0.3592^1^Sumpflandkrokilisk^^
 1417^17^0^21^22^1437^0.4985^0.4757^17^Junger Sumpflandkrokilisk^770:3:3,3199:1:1,3397:6:6,3667:6:6^
 1426^12^0^14^15^1436^0.3005^0.4787^12^Minenarbeiter der Flusspfoten^818:1:1,1502:1:1,2287:1:1,2589:4:10^
+1663^1^0^0^0^0^0.0000^0.0000^0^^3628:1:1,273817:1:1^
+1666^1^0^0^0^0^0.0000^0.0000^0^^273808:1:1^
 1689^3^0^9^10^1426^0.7373^0.5563^3^Vernarbter Klippeneber^769:3:3,771:1:1,2886:3:3,3171:1:1^
+1696^2^0^0^0^0^0.0000^0.0000^0^^3630:1:1,273804:1:1,273806:1:1^
+1706^8^0^0^0^0^0.0000^0.0000^0^^2592:3:6,2909:4:4,14175:1:1^
+1707^5^0^0^0^0^0.0000^0.0000^0^^929:1:1,2909:1:1,6381:1:1^
+1708^4^0^0^0^0^0.0000^0.0000^0^^2589:1:5,2783:1:1,6045:1:1^
+1711^4^0^0^0^0^0.0000^0.0000^0^^1777:1:1,2592:1:4,2909:2:2^
+1715^7^0^0^0^0^0.0000^0.0000^0^^2592:1:2,2909:1:1,15223:1:1,15259:1:1^
+1716^1^0^0^0^0^0.0000^0.0000^0^^2926:1:1,273824:1:1^
+1717^1^0^0^0^0^0.0000^0.0000^0^^273811:1:1^
 1725^1^0^17^17^1415^0.4116^0.7977^1^Wachmann der Defias^1767:1:1^
 1727^2^0^16^17^1415^0.4108^0.7965^2^Tagelöhner der Defias^915:1:1^
 1729^2^0^0^0^0^0.0000^0.0000^0^^2589:1:4^
@@ -405,6 +415,7 @@ GoldScout-export 6^obir9khfkx5e^25
 @i^1770^Segeltuchweste
 @i^1772^Brokatschuhe
 @i^1775^Brokathandschuhe
+@i^1777^Brokatschulterpolster
 @i^1778^Brokatweste
 @i^1787^Geflickter Ledergürtel
 @i^1792^Geflickte Lederhose
@@ -461,11 +472,14 @@ GoldScout-export 6^obir9khfkx5e^25
 @i^2778^Billige Donnerbüchse
 @i^2780^Leichter Jagdbogen
 @i^2782^Verschlissener Doppelbogen
+@i^2783^Schäbige Donnerbüchse
 @i^2838^Schwerer Stein
 @i^2856^Eisenspitze
 @i^2874^Ein nie abgeschickter Brief
 @i^2883^Pläne: Tödlicher Bronzepoignard
 @i^2886^Klippeneberrippchen
+@i^2909^Rotes Wollkopftuch
+@i^2926^Kopf von Bazil Thredd
 @i^2960^Gesellenhandschuhe
 @i^2970^Zauberbinder-Hose
 @i^2978^Veteranen-Gamaschen
@@ -509,6 +523,8 @@ GoldScout-export 6^obir9khfkx5e^25
 @i^3612^Pläne: Grüne Eisenstulpen
 @i^3618^Gobblers Kopf
 @i^3627^Fangzahn von Vagash
+@i^3628^Hand von Dextren Ward
+@i^3630^Targorrs Kopf
 @i^3631^Stopfwansts Hauer
 @i^3632^Fangors Tatze
 @i^3633^Garth'Ilzoggs Kopf
@@ -604,6 +620,7 @@ GoldScout-export 6^obir9khfkx5e^25
 @i^5575^Großer grüner Sack
 @i^5784^Schleimige Murlocschuppe
 @i^5787^Muster: Murlocschuppenbrustplatte
+@i^6045^Pläne: Eisengegengewicht
 @i^6149^Großer Manatrank
 @i^6266^Jüngerweste der Intelligenz
 @i^6269^Pionierbeinkleider des Ebers
@@ -614,6 +631,7 @@ GoldScout-export 6^obir9khfkx5e^25
 @i^6308^Roher Stoppelfühlerwels
 @i^6336^Infanterietunika des Falken
 @i^6362^Roher Steinschuppenkabeljau
+@i^6381^Heller Umhang
 @i^6444^Gespaltene Zunge
 @i^6514^Jüngerumhang
 @i^6539^Weidengürtel des Wals
@@ -693,6 +711,7 @@ GoldScout-export 6^obir9khfkx5e^25
 @i^14166^Bukanier-Armschienen des Naturschutzes
 @i^14167^Bukanier-Cape des Wolfs
 @i^14174^Bukanier-Stiefel des feurigen Zorns
+@i^14175^Bukanier-Weste des Zauberers
 @i^14227^Eisenweberseide
 @i^14240^Graunebelbänder des Hierophanten
 @i^14252^Lunarkronenreif des Naturschutzes
@@ -710,7 +729,9 @@ GoldScout-export 6^obir9khfkx5e^25
 @i^15166^Imposante Handschuhe der Ausdauer
 @i^15215^Wutschäumendes Krummschwert des Arkanschutzes
 @i^15222^Stachelige Keule der Magie
+@i^15223^Gezackter Stern des Gorillas
 @i^15235^Sichelschneide des Verteidigers
+@i^15259^Kräftiger Kampfhammer der Macht
 @i^15287^Kreuzfahrer-Bogen der Bestie
 @i^15374^Wolfreitergamaschen des Hierophanten
 @i^15591^Beständige Brustplatte des Banditen
@@ -785,6 +806,12 @@ GoldScout-export 6^obir9khfkx5e^25
 @i^273289^Ogerlendenschurz
 @i^273293^Bandsägen-Gelenkbänder
 @i^273297^Goblinhammer
+@i^273804^Henkermantel
+@i^273806^Ring der dunklen Horde
+@i^273808^Brückenbrecherbindungen
+@i^273811^Zweckentfremdeter Ständer
+@i^273817^Schaufel des Grabräubers
+@i^273824^Ausbrecher der Defias
 @i^273883^Ca'zass' Kopf
 @i^274029^Verzierter Fesselschlüssel
 @i^274268^Dunkeleisenkarte
@@ -923,6 +950,7 @@ GoldScout-export 6^obir9khfkx5e^25
 @q^1770^0:4:0
 @q^1772^0:4:0
 @q^1775^0:4:0
+@q^1777^0:4:0
 @q^1778^0:4:0
 @q^1787^0:4:0
 @q^1792^0:4:0
@@ -979,11 +1007,14 @@ GoldScout-export 6^obir9khfkx5e^25
 @q^2778^0:2:0
 @q^2780^0:2:0
 @q^2782^0:2:0
+@q^2783^0:2:0
 @q^2838^1:7:1
 @q^2856^1:12:0
 @q^2874^1:12:0
 @q^2883^2:9:0
 @q^2886^1:7:1
+@q^2909^1:12:0
+@q^2926^1:12:0
 @q^2960^1:4:0
 @q^2970^2:4:0
 @q^2978^2:4:0
@@ -1027,6 +1058,8 @@ GoldScout-export 6^obir9khfkx5e^25
 @q^3612^2:9:0
 @q^3618^1:12:0
 @q^3627^1:12:0
+@q^3628^1:12:0
+@q^3630^1:12:0
 @q^3631^1:12:0
 @q^3632^1:12:0
 @q^3633^1:12:0
@@ -1122,6 +1155,7 @@ GoldScout-export 6^obir9khfkx5e^25
 @q^5575^1:1:0
 @q^5784^1:7:1
 @q^5787^1:9:0
+@q^6045^2:9:0
 @q^6149^1:0:0
 @q^6266^2:4:0
 @q^6269^2:4:0
@@ -1132,6 +1166,7 @@ GoldScout-export 6^obir9khfkx5e^25
 @q^6308^1:7:1
 @q^6336^2:4:0
 @q^6362^1:7:1
+@q^6381^2:4:0
 @q^6444^0:15:0
 @q^6514^1:4:0
 @q^6539^2:4:0
@@ -1211,6 +1246,7 @@ GoldScout-export 6^obir9khfkx5e^25
 @q^14166^2:4:0
 @q^14167^2:4:0
 @q^14174^2:4:0
+@q^14175^2:4:0
 @q^14227^1:7:1
 @q^14240^2:4:0
 @q^14252^2:4:0
@@ -1228,7 +1264,9 @@ GoldScout-export 6^obir9khfkx5e^25
 @q^15166^2:4:0
 @q^15215^2:2:0
 @q^15222^2:2:0
+@q^15223^2:2:0
 @q^15235^2:2:0
+@q^15259^2:2:0
 @q^15287^2:2:0
 @q^15374^2:4:0
 @q^15591^2:4:0
@@ -1303,6 +1341,12 @@ GoldScout-export 6^obir9khfkx5e^25
 @q^273289^3:4:0
 @q^273293^3:4:0
 @q^273297^3:2:0
+@q^273804^3:4:0
+@q^273806^3:4:0
+@q^273808^3:4:0
+@q^273811^3:4:0
+@q^273817^3:2:0
+@q^273824^3:4:0
 @q^273883^1:12:0
 @q^274029^1:12:0
 @q^274268^1:12:0

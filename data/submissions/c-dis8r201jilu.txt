@@ -1,4 +1,4 @@
-GoldScout-export 6^dis8r201jilu^4
+GoldScout-export 6^dis8r201jilu^5
 587^4^0^33^34^1434^0.2960^0.1946^4^Krieger der Bloodscalp^1519:2:2,4306:2:3^
 588^11^0^34^35^1434^0.2381^0.1294^11^Späher der Bloodscalp^1519:1:1,2738:1:1,2744:1:1,3385:1:1,4306:2:3,7446:1:1^
 595^12^0^34^35^1434^0.2361^0.1241^12^Jäger der Bloodscalp^1519:2:2,1708:2:2,2592:1:2,2749:1:1,3781:1:1^
@@ -40,6 +40,8 @@ GoldScout-export 6^dis8r201jilu^4
 2320^1^0^40^40^1416^0.3933^0.1425^1^Nagaz^3672:1:1^
 2417^1^0^39^39^1416^0.3917^0.4768^1^Grel'borg der Horter^3684:1:1,6412:1:1^
 2572^34^0^35^36^1417^0.7791^0.3996^34^Kobold der Trockenstoppel^3803:1:1,3827:1:1,4306:11:15,4435:11:11,4539:1:1,11985:1:1,262889:1:1^
+2595^10^0^38^39^1417^0.2113^0.8522^10^Räuber der Säbelflossen^7072:9:9,17058:3:3^
+2596^3^0^39^40^1417^0.2241^0.8498^3^Zauberhexerin der Säbelflossen^7072:1:1,17057:2:2,17058:2:2,251393:1:1^
 2611^1^0^42^42^1417^0.2139^0.3850^1^Fozruk^4469:1:1,7912:1:2^
 2760^1^0^38^39^1417^0.2544^0.2962^1^Brennender Verbannter^4787:1:1^
 2764^1^0^40^40^1417^0.3002^0.5112^1^Sleeby^^
@@ -149,6 +151,7 @@ GoldScout-export 6^dis8r201jilu^4
 @i^6889^Kleines Ei
 @i^6986^Purpurroter Lotus
 @i^7070^Elementarwasser
+@i^7072^Nagaschuppe
 @i^7096^Ausgezupfte Feder
 @i^7097^Beinfleisch
 @i^7446^Schildwachenumhang des Banditen
@@ -159,10 +162,13 @@ GoldScout-export 6^dis8r201jilu^4
 @i^12037^Eigenartiges Fleisch
 @i^12184^Raptorfleisch
 @i^12205^Weißes Spinnenfleisch
+@i^17057^Glänzende Fischschuppen
+@i^17058^Fischöl
 @i^18239^Muster: Schattenhauthandschuhe
 @i^213421^Angesengte Notiz
 @i^248690^Abgefangene Kiste: Weltliche Kräuter des Experten
 @i^248691^Abgefangene Kiste: Blühende Kräuter des Experten
+@i^251393^Pläne: Glänzende Mithrilschulterstücke
 @i^262889^Versiegelte Verfügung des Experten
 @i^277957^Primitiver Schlüssel
 @q^770^0:15:0
@@ -264,6 +270,7 @@ GoldScout-export 6^dis8r201jilu^4
 @q^6889^1:7:1
 @q^6986^0:15:0
 @q^7070^1:7:1
+@q^7072^1:7:1
 @q^7096^0:15:0
 @q^7097^1:0:0
 @q^7446^2:4:0
@@ -274,10 +281,13 @@ GoldScout-export 6^dis8r201jilu^4
 @q^12037^1:7:1
 @q^12184^1:7:1
 @q^12205^1:7:1
+@q^17057^1:15:0
+@q^17058^1:15:0
 @q^18239^1:9:0
 @q^213421^1:15:0
 @q^248690^1:0:1
 @q^248691^1:0:1
+@q^251393^2:9:0
 @q^262889^3:0:0
 @q^277957^1:12:0
 @m^1416^Alteracgebirge
@@ -1039,6 +1049,8 @@ GoldScout-export 6^dis8r201jilu^4
 @a^2320^47:1
 @a^2417^187:1
 @a^2572^135:7,155:8,175:19
+@a^2595^323:1,324:3,343:2,344:4
+@a^2596^324:2,344:1
 @a^2611^144:1
 @a^2760^105:1
 @a^2764^206:1
