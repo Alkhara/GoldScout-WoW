@@ -1,4 +1,5 @@
-GoldScout-export 5^dc0ik4560mn9^5
+GoldScout-export 6^dc0ik4560mn9^6
+3098^18^0^1^2^1411^0.4385^0.6353^18^Mottled Boar^117:3:3,1367:1:1,1368:1:1,2650:1:1,2651:1:1,4865:6:6,7098:12:12^
 5425^1^0^42^42^1446^0.5162^0.2552^1^Starving Blisterpaw^^
 254560^4^0^39^40^2548^0.4736^0.4988^4^Twilight Shadowmancer^4306:1:3,265745:3:3^
 255851^7^0^38^39^2548^0.7065^0.3407^7^Mature Paletusk^769:2:2,2295:2:2,3403:1:1^
@@ -29,11 +30,16 @@ GoldScout-export 5^dc0ik4560mn9^5
 263343^5^0^38^38^2548^0.6025^0.5935^5^Low Plains Buzzard^1464:2:2,5829:1:1,12037:1:1,268632:3:3^
 263348^4^0^37^38^2548^0.6349^0.5988^4^Roving Tallstrider^5116:2:2,5829:2:2,11416:1:1,268632:2:2^
 268831^5^0^39^40^2548^0.7060^0.3672^5^Plains Prowler^4582:1:1,4583:1:1,12203:1:1^
+@i^117^Tough Jerky
 @i^769^Chunk of Boar Meat
 @i^770^Pointy Crocolisk Tooth
+@i^1367^Ragged Leather Boots
+@i^1368^Ragged Leather Gloves
 @i^1464^Buzzard Talon
 @i^1688^Long Soft Tail
 @i^2295^Large Boar Tusk
+@i^2650^Flimsy Chain Boots
+@i^2651^Flimsy Chain Bracers
 @i^3010^Fine Sand
 @i^3403^Ivory Boar Tusk
 @i^3671^Lifeless Skull
@@ -42,6 +48,7 @@ GoldScout-export 5^dc0ik4560mn9^5
 @i^4338^Mageweave Cloth
 @i^4582^Soft Bushy Tail
 @i^4583^Thick Furry Mane
+@i^4865^Ruined Pelt
 @i^5116^Long Tail Feather
 @i^5128^Shed Lizard Skin
 @i^5429^A Pretty Rock
@@ -53,6 +60,7 @@ GoldScout-export 5^dc0ik4560mn9^5
 @i^6438^Dull Elemental Bracer
 @i^6444^Forked Tongue
 @i^6826^Brilliant Scale
+@i^7098^Splintered Tusk
 @i^8748^Double Mail Coif
 @i^10312^Pattern: Red Mageweave Gloves
 @i^11416^Delicate Ribcage
@@ -71,11 +79,16 @@ GoldScout-export 5^dc0ik4560mn9^5
 @i^268632^Beast Entrails
 @i^268633^Sea Monster's Head
 @i^269257^Skullbasher
+@q^117^1:0:0
 @q^769^1:7:1
 @q^770^0:15:0
+@q^1367^0:4:0
+@q^1368^0:4:0
 @q^1464^0:15:0
 @q^1688^0:15:0
 @q^2295^0:15:0
+@q^2650^0:4:0
+@q^2651^0:4:0
 @q^3010^0:15:0
 @q^3403^0:15:0
 @q^3671^0:15:0
@@ -84,6 +97,7 @@ GoldScout-export 5^dc0ik4560mn9^5
 @q^4338^1:7:1
 @q^4582^1:12:0
 @q^4583^0:15:0
+@q^4865^0:15:0
 @q^5116^1:7:1
 @q^5128^0:15:0
 @q^5429^0:15:0
@@ -95,6 +109,7 @@ GoldScout-export 5^dc0ik4560mn9^5
 @q^6438^0:15:0
 @q^6444^0:15:0
 @q^6826^0:15:0
+@q^7098^0:15:0
 @q^8748^0:4:0
 @q^10312^2:9:0
 @q^11416^0:15:0
@@ -113,6 +128,7 @@ GoldScout-export 5^dc0ik4560mn9^5
 @q^268632^1:12:0
 @q^268633^1:12:0
 @q^269257^1:12:0
+@m^1411^Durotar
 @m^1446^Tanaris
 @m^2548^Riverglades
 @c^2840^
@@ -133,6 +149,7 @@ GoldScout-export 5^dc0ik4560mn9^5
 @c^279948^
 @c^279952^
 @c^279960^
+@a^3098^248:18
 @a^5425^110:1
 @a^254560^189:2,209:2
 @a^255851^114:1,133:3,134:2,194:1
