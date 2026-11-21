@@ -1,4 +1,4 @@
-GoldScout-export 6^h0pro64hrxs6^32
+GoldScout-export 6^h0pro64hrxs6^33
 704^2^0^2^2^1426^0.2661^0.7734^2^Ragged Timber Wolf^4865:1:1,7073:2:2^
 705^18^0^1^1^1426^0.2924^0.7422^18^Ragged Young Wolf^750:15:15,1367:2:2,1376:2:2,2211:2:2,2651:1:1,4865:7:7,7073:7:7,7074:6:6^
 706^14^4^3^4^1426^0.2377^0.7906^14^Frostmane Troll Whelp^117:2:2,1364:1:1,1377:1:1,2589:5:5,2649:1:1,2656:1:1,3365:1:1^
@@ -14,6 +14,9 @@ GoldScout-export 6^h0pro64hrxs6^32
 1135^15^0^6^7^1426^0.4178^0.5047^15^Wendigo^117:1:1,159:1:1,1429:1:1,2138:1:1,2635:2:2,2671:7:7,2773:2:2,3370:1:1^
 1196^1^0^7^7^1426^0.5032^0.5305^1^Ice Claw Bear^3170:1:1^
 1199^1^0^6^6^1426^0.4381^0.5818^1^Juvenile Snow Leopard^^
+1783^10^0^50^51^1422^0.5207^0.7885^10^Skeletal Flayer^7972:1:1,9296:1:1,14047:2:3^
+1784^17^0^51^52^1422^0.5399^0.8008^17^Skeletal Sorcerer^3973:1:1,4426:1:1,8948:3:3,14047:5:7,252930:1:1^
+1791^10^0^50^52^1422^0.5389^0.8024^10^Slavering Ghoul^6530:2:2,13443:1:1,14047:1:1^
 1984^2^0^1^2^1438^0.5853^0.4470^2^Young Thistle Boar^^
 1985^6^0^2^3^1438^0.5592^0.3707^6^Thistle Boar^117:1:1,1364:1:1,4865:1:1^
 1986^17^0^3^4^1438^0.5652^0.3133^17^Webwood Spider^1377:1:1,5166:5:5,7100:1:1,7101:3:3,10640:1:1^
@@ -136,7 +139,7 @@ GoldScout-export 6^h0pro64hrxs6^32
 7440^3^0^55^56^1452^0.3386^0.3862^3^Winterfall Den Watcher^12820:1:1,14047:1:2^
 7441^4^0^54^55^1452^0.3261^0.3686^4^Winterfall Totemic^3945:1:1^
 7442^6^0^53^54^1452^0.3200^0.3632^6^Winterfall Pathfinder^12771:1:1,12820:2:2,14047:2:2,20742:1:1^
-7444^1^0^53^53^1452^0.4365^0.4365^1^Shardtooth Bear^3730:1:1^
+7444^1^0^53^54^1452^0.4365^0.4365^1^Shardtooth Bear^3730:1:1^
 7447^20^0^53^55^1452^0.3725^0.4134^20^Fledgling Chillwind^6444:4:4,6826:9:9,12444:8:8,281241:5:5^
 7450^1^0^53^55^1452^0.3830^0.3885^1^Ragged Owlbeast^12207:1:1,15420:1:1^
 7455^5^0^54^56^1452^0.5387^0.3483^5^Winterspring Owl^5117:2:2,8146:1:1,11417:2:2,12207:3:3,15420:3:5,281242:2:2^
@@ -328,6 +331,7 @@ GoldScout-export 6^h0pro64hrxs6^32
 @i^3949^Twill Pants
 @i^3962^Thick Leather Boots
 @i^3972^Smooth Cloak
+@i^3973^Smooth Leather Gloves
 @i^3989^Blocking Targe
 @i^3992^Laminated Scale Belt
 @i^3995^Laminated Scale Cloak
@@ -391,6 +395,7 @@ GoldScout-export 6^h0pro64hrxs6^32
 @i^6259^Groddoc Liver
 @i^6308^Raw Bristle Whisker Catfish
 @i^6444^Forked Tongue
+@i^6530^Nightcrawlers
 @i^6826^Brilliant Scale
 @i^6901^Glowing Thresher Cape
 @i^6902^Bands of Serra'kis
@@ -412,6 +417,7 @@ GoldScout-export 6^h0pro64hrxs6^32
 @i^7100^Sticky Ichor
 @i^7101^Bug Eye
 @i^7912^Solid Stone
+@i^7972^Ichor of Undeath
 @i^7973^Big-mouth Clam
 @i^8146^Wicked Claw
 @i^8150^Deeprock Salt
@@ -425,9 +431,11 @@ GoldScout-export 6^h0pro64hrxs6^32
 @i^8766^Morning Glory Dew
 @i^8839^Blindweed
 @i^8846^Gromsblood
+@i^8948^Dried King Bolete
 @i^8950^Homemade Cherry Pie
 @i^8952^Roasted Quail
 @i^8953^Deep Fried Plantains
+@i^9296^Recipe: Gift of Arthas
 @i^9773^Greenweave Robe of the Elder
 @i^9957^Warmonger's Chestpiece of Stamina
 @i^10093^Revenant Deflector of the Falcon
@@ -558,6 +566,7 @@ GoldScout-export 6^h0pro64hrxs6^32
 @i^248711^Waylaid Crate: Artisan Fabrics
 @i^251467^Plans: Thorium Poleaxe
 @i^252920^Pattern: Skirmisher's Mail Gauntlets
+@i^252930^Pattern: Charged Scorpid Gauntlets
 @i^253948^Pattern: Filigreed Shining Leggings
 @i^262890^Sealed Artisan's Writ
 @i^263992^Overseer's Keyring
@@ -659,6 +668,7 @@ GoldScout-export 6^h0pro64hrxs6^32
 @q^3949^0:4:0
 @q^3962^0:4:0
 @q^3972^0:4:0
+@q^3973^0:4:0
 @q^3989^0:4:0
 @q^3992^0:4:0
 @q^3995^0:4:0
@@ -722,6 +732,7 @@ GoldScout-export 6^h0pro64hrxs6^32
 @q^6259^1:12:0
 @q^6308^1:7:1
 @q^6444^0:15:0
+@q^6530^1:0:0
 @q^6826^0:15:0
 @q^6901^3:4:0
 @q^6902^3:4:0
@@ -743,6 +754,7 @@ GoldScout-export 6^h0pro64hrxs6^32
 @q^7100^0:15:0
 @q^7101^0:15:0
 @q^7912^1:7:1
+@q^7972^1:7:1
 @q^7973^1:7:0
 @q^8146^1:7:1
 @q^8150^1:7:1
@@ -756,9 +768,11 @@ GoldScout-export 6^h0pro64hrxs6^32
 @q^8766^1:0:0
 @q^8839^1:7:1
 @q^8846^1:7:1
+@q^8948^1:0:0
 @q^8950^1:0:0
 @q^8952^1:0:0
 @q^8953^1:0:0
+@q^9296^2:9:0
 @q^9773^2:4:0
 @q^9957^2:4:0
 @q^10093^2:4:0
@@ -889,6 +903,7 @@ GoldScout-export 6^h0pro64hrxs6^32
 @q^248711^2:0:1
 @q^251467^3:9:0
 @q^252920^3:9:0
+@q^252930^2:9:0
 @q^253948^3:9:0
 @q^262890^3:0:0
 @q^263992^1:13:0
@@ -906,6 +921,7 @@ GoldScout-export 6^h0pro64hrxs6^32
 @q^281017^1:0:0
 @q^281241^1:12:0
 @q^281242^1:12:0
+@m^1422^Western Plaguelands
 @m^1425^The Hinterlands
 @m^1426^Dun Morogh
 @m^1427^Searing Gorge
@@ -1848,6 +1864,9 @@ GoldScout-export 6^h0pro64hrxs6^32
 @a^1135^188:7,208:8
 @a^1196^210:1
 @a^1199^228:1
+@a^1783^310:7,329:1,330:2
+@a^1784^310:8,330:9
+@a^1791^310:4,330:6
 @a^1984^171:1,191:1
 @a^1985^131:1,150:1,151:4
 @a^1986^91:1,111:3,131:13

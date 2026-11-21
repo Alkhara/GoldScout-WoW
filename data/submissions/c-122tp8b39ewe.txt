@@ -1,4 +1,4 @@
-GoldScout-export 6^122tp8b39ewe^5
+GoldScout-export 6^122tp8b39ewe^7
 5419^1^0^42^42^1446^0.3674^0.2816^1^Glasshide Basilisk^15370:1:1,248710:1:1^
 6116^7^0^45^46^1447^0.1638^0.7102^7^Highborne Apparition^1645:1:1,4024:1:1,4338:2:4^
 6117^2^0^46^47^1447^0.1564^0.7317^2^Highborne Lichling^4338:1:1^
@@ -20,6 +20,9 @@ GoldScout-export 6^122tp8b39ewe^5
 6377^1^0^48^50^1447^0.4301^0.3694^1^Thunderhead Stagwing^4590:1:1,10450:1:1^
 6378^1^0^51^52^1447^0.5211^0.3311^1^Thunderhead Skystormer^15420:1:1^
 6380^1^0^52^54^1447^0.7238^0.3281^1^Thunderhead Consort^11420:1:1^
+6510^13^0^51^52^1449^0.4534^0.4841^13^Bloodpetal Flayer^4606:2:2,4607:3:3,4608:2:2,10286:1:1,11018:6:6,11116:1:1,11316:7:7^
+6512^8^0^52^53^1449^0.4207^0.3380^8^Bloodpetal Trapper^2449:1:1,4608:3:3,11018:1:1,11316:2:2^
+6520^1^0^53^53^1449^0.4773^0.4380^1^Scorching Elemental^11829:1:1^
 7864^1^0^50^50^1447^0.3737^0.5622^1^Lingering Highborne^^
 8581^10^0^52^53^1447^0.6835^0.2779^10^Blood Elf Defender^14047:3:5,274966:3:3^
 8759^7^0^45^47^1447^0.2206^0.6303^7^Mosshoof Runner^5120:4:4,5471:3:3,5566:3:3,238463:4:4^
@@ -43,6 +46,7 @@ GoldScout-export 6^122tp8b39ewe^5
 271784^1^0^0^0^0^0.0000^0.0000^0^^^
 272374^1^0^54^54^1447^0.5614^0.7240^1^Enormous Crustacean^3010:1:1,7973:1:1,12206:1:1^
 @i^1645^Moonberry Juice
+@i^2449^Earthroot
 @i^3010^Fine Sand
 @i^3964^Thick Cloak
 @i^4006^Overlinked Chain Shoulderpads
@@ -52,14 +56,22 @@ GoldScout-export 6^122tp8b39ewe^5
 @i^4590^Curved Yellow Bill
 @i^4599^Cured Ham Steak
 @i^4603^Raw Spotted Yellowtail
+@i^4606^Spongy Morel
+@i^4607^Delicious Cave Mold
+@i^4608^Raw Black Truffle
 @i^5119^Fine Loose Hair
 @i^5120^Long Tail Hair
 @i^5471^Stag Meat
 @i^5566^Broken Antler
 @i^5569^Seaweed
 @i^7973^Big-mouth Clam
+@i^10286^Heart of the Wild
 @i^10450^Undamaged Hippogryph Feather
+@i^11018^Un'Goro Soil
+@i^11116^A Mangled Journal
+@i^11316^Bloodpetal
 @i^11420^Elegant Writing Tool
+@i^11829^Un'Goro Ash
 @i^12205^White Spider Meat
 @i^12206^Tender Crab Meat
 @i^13443^Superior Mana Potion
@@ -82,6 +94,7 @@ GoldScout-export 6^122tp8b39ewe^5
 @i^276890^Zarla's Journal
 @i^280608^Eldarath Relic
 @q^1645^1:0:0
+@q^2449^1:7:1
 @q^3010^0:15:0
 @q^3964^0:4:0
 @q^4006^0:4:0
@@ -91,14 +104,22 @@ GoldScout-export 6^122tp8b39ewe^5
 @q^4590^0:15:0
 @q^4599^1:0:0
 @q^4603^1:7:1
+@q^4606^1:0:0
+@q^4607^1:0:0
+@q^4608^1:0:0
 @q^5119^0:15:0
 @q^5120^0:15:0
 @q^5471^1:7:1
 @q^5566^0:15:0
 @q^5569^0:15:0
 @q^7973^1:7:0
+@q^10286^1:7:1
 @q^10450^1:12:0
+@q^11018^1:12:0
+@q^11116^2:15:0
+@q^11316^1:12:0
 @q^11420^0:15:0
+@q^11829^1:12:0
 @q^12205^1:7:1
 @q^12206^1:7:1
 @q^13443^1:0:0
@@ -122,6 +143,7 @@ GoldScout-export 6^122tp8b39ewe^5
 @q^280608^1:12:0
 @m^1446^Tanaris
 @m^1447^Azshara
+@m^1449^Un'Goro Crater
 @c^118^
 @c^724^
 @c^733^
@@ -599,6 +621,9 @@ GoldScout-export 6^122tp8b39ewe^5
 @a^6377^148:1
 @a^6378^130:1
 @a^6380^134:1
+@a^6510^89:1,108:4,228:1,229:2,248:2,249:2,269:1
+@a^6512^88:2,108:4,228:1,248:1
+@a^6520^169:1
 @a^7864^227:1
 @a^8581^113:7,114:2,133:1
 @a^8759^224:2,244:3,264:2

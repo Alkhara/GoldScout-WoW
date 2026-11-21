@@ -1,4 +1,4 @@
-GoldScout-export 6^c7dqcszibx4i^27
+GoldScout-export 6^c7dqcszibx4i^28
 3^11^0^24^25^1431^0.2441^0.3787^11^Comecarnes^884:1:1,885:1:1,887:2:2,1129:4:4,1205:1:1,1775:1:1,1798:1:1,2592:5:8,5529:3:3,6530:2:2^
 30^1^0^5^5^1429^0.3554^0.5398^1^Araña del bosque^^
 48^15^0^21^22^1431^0.7846^0.7172^15^Guerrero esquelético^1205:3:3,1746:1:1,1772:1:1,1802:1:1,1824:1:1,2378:5:5,2589:1:1,2592:5:8,4306:1:1^
@@ -144,6 +144,8 @@ GoldScout-export 6^c7dqcszibx4i^27
 2102^3^0^20^21^1437^0.4770^0.7626^3^Bruto Faucedraco^2592:1:2,4306:1:1^
 2103^5^0^19^20^1437^0.4875^0.7754^5^Explorador Faucedraco^1769:1:1,2592:2:4,4306:1:1,15222:1:1^
 2462^30^0^25^25^1431^0.2380^0.3559^30^Gusano carnívoro^^
+2559^4^0^30^31^1417^0.4565^0.4216^4^Zancudo de las Tierras Altas^3685:1:1,4461:1:1,5637:1:1,12184:4:4^
+2563^2^0^32^32^1417^0.4567^0.4181^2^Trepador de las llanuras^878:1:1,1081:2:2,2251:1:1^
 2575^2^0^31^32^1417^0.4562^0.8832^2^Suministrador Hierro Negro^4306:1:1^
 2577^2^0^32^32^1417^0.4546^0.8794^2^Nigromante Hierro Negro^4306:1:1^
 3417^1^0^17^17^1415^0.4100^0.7980^1^Llama viviente^^
@@ -407,6 +409,7 @@ GoldScout-export 6^c7dqcszibx4i^27
 @i^4359^Un puñado de tornillos de cobre
 @i^4410^Esquema: gafas de las Sombras
 @i^4428^Pulpa de araña
+@i^4461^Pellejo de raptor
 @i^4542^Pan de maíz húmedo
 @i^4553^Trozo de piedra dentado
 @i^4603^Serviola moteada cruda
@@ -475,6 +478,7 @@ GoldScout-export 6^c7dqcszibx4i^27
 @i^11981^Sortija de plomo del jabalí
 @i^11993^Anillo de terracota del oso
 @i^12037^Carne misteriosa
+@i^12184^Carne de raptor
 @i^12202^Carne de tigre
 @i^12978^Cinturón de creador de tormentas
 @i^13010^Musleras Cantasueños
@@ -711,6 +715,7 @@ GoldScout-export 6^c7dqcszibx4i^27
 @q^4359^1:7:1
 @q^4410^2:9:0
 @q^4428^0:15:0
+@q^4461^1:7:1
 @q^4542^1:0:0
 @q^4553^0:15:0
 @q^4603^1:7:1
@@ -779,6 +784,7 @@ GoldScout-export 6^c7dqcszibx4i^27
 @q^11981^2:4:0
 @q^11993^2:4:0
 @q^12037^1:7:1
+@q^12184^1:7:1
 @q^12202^1:7:1
 @q^12978^3:4:0
 @q^13010^3:4:0
@@ -1913,6 +1919,8 @@ GoldScout-export 6^c7dqcszibx4i^27
 @a^2102^309:3
 @a^2103^289:1,309:4
 @a^2462^124:10,125:2,144:8,145:10
+@a^2559^149:1,168:1,169:1,188:1
+@a^2563^168:1,169:1
 @a^2575^349:2
 @a^2577^349:2
 @a^3417^308:1

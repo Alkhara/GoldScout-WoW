@@ -1,4 +1,10 @@
-GoldScout-export 6^0a7rwgsfyimd^6
+GoldScout-export 6^0a7rwgsfyimd^7
+430^1^0^18^19^1433^0.2249^0.2179^1^Redridge Mystic^1212:1:1^
+435^13^0^24^25^1433^0.2357^0.1328^13^Blackrock Champion^1772:1:1,2592:3:4,3770:2:2^
+445^2^0^21^22^1433^0.2199^0.2026^2^Redridge Alpha^1218:1:1,4306:1:1^
+485^1^0^20^21^1433^0.3828^0.1820^1^Blackrock Outrunner^^
+518^1^0^25^25^1433^0.2224^0.1993^1^Yowler^3614:1:1^
+615^5^0^23^24^1433^0.2546^0.1209^5^Blackrock Tracker^929:1:1,2592:2:2^
 1009^3^0^22^22^1437^0.4582^0.3474^3^Mosshide Mistweaver^2592:2:4,2611:1:1^
 1010^13^0^22^23^1437^0.4524^0.3451^13^Mosshide Fenrunner^2589:2:4,2592:5:7,2611:7:7,15259:1:1^
 1011^2^0^23^23^1437^0.4400^0.3410^2^Mosshide Trapper^2592:1:2,2611:1:1^
@@ -29,8 +35,10 @@ GoldScout-export 6^0a7rwgsfyimd^6
 2089^6^0^25^26^1437^0.1696^0.2770^6^Giant Wetlands Crocolisk^770:1:1,3348:6:6,3667:2:2^
 2348^1^0^26^26^1424^0.5979^0.5553^1^Elder Moss Creeper^878:1:1,1288:1:1,2251:1:1,262888:1:1^
 2385^1^0^28^28^1424^0.5979^0.5553^1^Feral Mountain Lion^3731:1:1^
+4463^7^0^22^23^1433^0.2322^0.1295^7^Blackrock Summoner^1798:1:1,2592:3:4,4694:1:1^
 5894^1^0^22^22^1436^0.4603^0.6003^1^Corrupt Minor Manifestation of Water^7812:1:1^
 6412^1^0^24^25^1437^0.4788^0.4598^1^Skeleton^^
+12922^5^0^22^23^1433^0.2257^0.1338^5^Imp Minion^^
 270892^1^0^32^32^1437^0.3526^0.5082^1^Goaz Warder^4553:1:2,279993:1:1^
 271334^1^0^25^25^1437^0.6233^0.3512^1^Maddened Rotclaw^^
 @i^422^Dwarven Mild
@@ -41,10 +49,14 @@ GoldScout-export 6^0a7rwgsfyimd^6
 @i^878^Fist-sized Spinneret
 @i^929^Healing Potion
 @i^1205^Melon Juice
+@i^1212^Gnoll Spittle
+@i^1218^Heavy Gnoll War Club
 @i^1288^Large Venom Sac
 @i^1468^Murloc Fin
 @i^1696^Curved Raptor Talon
 @i^1697^Keen Raptor Tooth
+@i^1772^Brocade Shoes
+@i^1798^Rawhide Cloak
 @i^1809^Tough Leather Shoulderpads
 @i^2251^Gooey Spider Leg
 @i^2589^Linen Cloth
@@ -59,13 +71,16 @@ GoldScout-export 6^0a7rwgsfyimd^6
 @i^3176^Small Claw
 @i^3180^Flecked Raptor Scale
 @i^3348^Giant Crocolisk Skin
+@i^3614^Yowler's Paw
 @i^3619^Snellig's Snuffbox
 @i^3638^Sarltooth's Talon
 @i^3667^Tender Crocolisk Meat
 @i^3685^Raptor Egg
 @i^3731^Lion Meat
+@i^3770^Mutton Chop
 @i^4306^Silk Cloth
 @i^4553^Jagged Piece of Stone
+@i^4694^Burnished Pauldrons
 @i^4705^Lambent Scale Pauldrons
 @i^4707^Lambent Scale Girdle
 @i^5465^Small Spider Leg
@@ -95,10 +110,14 @@ GoldScout-export 6^0a7rwgsfyimd^6
 @q^878^0:7:0
 @q^929^1:0:0
 @q^1205^1:0:0
+@q^1212^0:15:0
+@q^1218^2:2:0
 @q^1288^1:7:1
 @q^1468^1:7:1
 @q^1696^0:15:0
 @q^1697^0:15:0
+@q^1772^0:4:0
+@q^1798^0:4:0
 @q^1809^0:4:0
 @q^2251^1:7:1
 @q^2589^1:7:1
@@ -113,13 +132,16 @@ GoldScout-export 6^0a7rwgsfyimd^6
 @q^3176^0:15:0
 @q^3180^0:15:0
 @q^3348^1:12:0
+@q^3614^1:12:0
 @q^3619^1:12:0
 @q^3638^1:12:0
 @q^3667^1:7:1
 @q^3685^1:7:1
 @q^3731^1:7:1
+@q^3770^1:0:0
 @q^4306^1:7:1
 @q^4553^0:15:0
+@q^4694^1:4:0
 @q^4705^2:4:0
 @q^4707^2:4:0
 @q^5465^1:7:1
@@ -143,6 +165,7 @@ GoldScout-export 6^0a7rwgsfyimd^6
 @q^280103^1:12:0
 @m^1424^Hillsbrad Foothills
 @m^1432^Loch Modan
+@m^1433^Redridge Mountains
 @m^1436^Westfall
 @m^1437^Wetlands
 @m^1453^Stormwind City
@@ -570,6 +593,12 @@ GoldScout-export 6^0a7rwgsfyimd^6
 @c^285277^
 @c^285278^
 @c^286152^
+@a^430^84:1
+@a^435^24:2,25:1,44:6,45:1,64:3
+@a^445^64:1,84:1
+@a^485^67:1
+@a^518^64:1
+@a^615^24:1,25:1,45:1,64:2
 @a^1009^129:2,149:1
 @a^1010^128:5,129:5,149:3
 @a^1011^128:2
@@ -600,8 +629,10 @@ GoldScout-export 6^0a7rwgsfyimd^6
 @a^2089^83:1,103:5
 @a^2348^231:1
 @a^2385^231:1
+@a^4463^24:1,25:1,44:3,64:1,65:1
 @a^5894^249:1
 @a^6412^189:1
+@a^12922^24:1,44:2,64:2
 @a^270892^207:1
 @a^271334^152:1
 @f^1424^0^22^85^6289:2:2,6308:5:5,21071:13:13,21113:2:2^172:12,191:4,231:6
