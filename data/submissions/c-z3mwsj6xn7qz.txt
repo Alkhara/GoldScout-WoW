@@ -1,4 +1,4 @@
-GoldScout-export 6^z3mwsj6xn7qz^10
+GoldScout-export 6^z3mwsj6xn7qz^11
 587^22^0^33^34^1434^0.3111^0.1773^22^Bloodscalp Warrior^1477:1:1,1519:3:3,1708:1:1,2730:1:1,2738:1:1,2745:1:1,3385:1:1,3771:1:1,3901:11:11,3915:7:7,4306:6:8,4338:2:2^
 597^4^0^36^37^1434^0.2158^0.1023^4^Bloodscalp Berserker^2732:1:1,4306:1:2^
 660^3^0^37^37^1434^0.2122^0.1254^3^Bloodscalp Witch Doctor^3771:1:1,3901:2:2^
@@ -26,7 +26,7 @@ GoldScout-export 6^z3mwsj6xn7qz^10
 938^5^0^34^35^1434^0.4466^0.0849^5^Kurzen Commando^2740:1:1,4306:1:1,213547:1:1^
 940^3^0^32^33^1434^0.4453^0.1038^3^Kurzen Medicine Man^2749:1:1,4306:1:2^
 1085^10^0^34^35^1434^0.3223^0.1763^10^Elder Stranglethorn Tiger^1686:3:3,1687:2:2,8146:1:1,12202:1:1^
-1096^6^0^35^36^1434^0.4350^0.1925^6^Venture Co. Geologist^1708:1:1,2592:1:2,2734:1:1,4106:3:3^
+1096^15^0^35^36^1434^0.4422^0.2042^15^Venture Co. Geologist^1630:1:1,1708:1:1,2592:1:2,2734:1:1,2748:1:1,3771:1:1,4106:8:8,4306:3:5^
 1097^1^0^35^35^1434^0.4233^0.1860^1^Venture Co. Mechanic^^
 1142^5^0^36^37^1434^0.3686^0.3073^5^Mosh'Ogg Brute^4306:3:3^
 1144^3^0^36^37^1434^0.3691^0.3078^3^Mosh'Ogg Witch Doctor^^
@@ -110,6 +110,7 @@ GoldScout-export 6^z3mwsj6xn7qz^10
 @i^1519^Bloodscalp Ear
 @i^1520^Troll Sweat
 @i^1532^Shrunken Head
+@i^1630^Broken Electro-lantern
 @i^1686^Bristly Whisker
 @i^1687^Retractable Claw
 @i^1688^Long Soft Tail
@@ -136,6 +137,7 @@ GoldScout-export 6^z3mwsj6xn7qz^10
 @i^2738^Green Hills of Stranglethorn - Page 14
 @i^2740^Green Hills of Stranglethorn - Page 16
 @i^2745^Green Hills of Stranglethorn - Page 21
+@i^2748^Green Hills of Stranglethorn - Page 24
 @i^2749^Green Hills of Stranglethorn - Page 25
 @i^2751^Green Hills of Stranglethorn - Page 27
 @i^2783^Shoddy Blunderbuss
@@ -249,6 +251,7 @@ GoldScout-export 6^z3mwsj6xn7qz^10
 @q^1519^1:12:0
 @q^1520^0:15:0
 @q^1532^1:12:0
+@q^1630^0:15:0
 @q^1686^0:15:0
 @q^1687^0:15:0
 @q^1688^0:15:0
@@ -275,6 +278,7 @@ GoldScout-export 6^z3mwsj6xn7qz^10
 @q^2738^1:12:0
 @q^2740^1:12:0
 @q^2745^1:12:0
+@q^2748^1:12:0
 @q^2749^1:12:0
 @q^2751^1:12:0
 @q^2783^0:2:0
@@ -1098,7 +1102,7 @@ GoldScout-export 6^z3mwsj6xn7qz^10
 @a^938^28:4,29:1
 @a^940^28:1,48:1,49:1
 @a^1085^46:1,66:8,86:1
-@a^1096^68:3,69:1,88:2
+@a^1096^68:4,69:2,88:6,89:3
 @a^1097^68:1
 @a^1142^127:5
 @a^1144^127:3

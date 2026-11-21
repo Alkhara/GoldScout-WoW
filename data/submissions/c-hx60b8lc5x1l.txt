@@ -1,5 +1,9 @@
-GoldScout-export 6^hx60b8lc5x1l^5
-1502^1^0^2^2^1420^0.3172^0.6545^1^Elender Zombie^^
+GoldScout-export 6^hx60b8lc5x1l^6
+1501^8^0^1^1^1420^0.3287^0.6392^8^Hirnloser Zombie^2589:3:3,2649:1:1,2656:1:1^
+1502^12^0^1^2^1420^0.3266^0.6394^12^Elender Zombie^159:1:1,1369:1:1,2652:1:1,3365:1:1,4604:1:1^
+1508^6^0^1^1^1420^0.3112^0.5960^6^Junger Aasfresser^3265:4:4,4865:3:3,7074:4:4^
+1512^5^0^1^2^1420^0.3039^0.6082^5^Nachtsauger^3264:4:4,3365:1:1,4865:2:2,7073:2:2,7074:1:1^
+1890^3^0^2^3^1420^0.3220^0.5999^3^Klapperndes Skelett^2589:2:2,3363:1:1^
 2350^5^0^20^21^1424^0.5778^0.1648^5^Waldmooskrabbler^1081:2:2,4428:3:3^
 2351^6^0^21^22^1424^0.5723^0.1792^6^Graubär^2940:1:1,3476:1:1,3730:1:1,11406:2:2^
 2563^6^0^32^33^1417^0.6989^0.4887^6^Ebenenkrabbler^1074:1:1,1081:1:1,2251:2:2,3864:1:1,4585:1:1,7084:1:1,278225:1:1^
@@ -22,13 +26,23 @@ GoldScout-export 6^hx60b8lc5x1l^5
 6427^2^0^0^0^0^0.0000^0.0000^0^^2592:1:2^
 6487^1^0^0^0^0^0.0000^0.0000^0^^7711:1:1,7713:1:1^
 6490^1^0^0^0^0^0.0000^0.0000^0^^7709:1:1^
+@i^159^Erfrischendes Quellwasser
 @i^1074^Harte Spinnenbeinspitze
 @i^1081^Knuspriges Spinnenfleisch
+@i^1369^Struppiger Ledergürtel
 @i^1464^Bussardkralle
 @i^1711^Rolle der Ausdauer II
 @i^2251^Klebriges Spinnenbein
+@i^2589^Leinenstoff
 @i^2592^Wollstoff
+@i^2649^Sehr leichter Kettengürtel
+@i^2652^Sehr leichter Kettenumhang
+@i^2656^Sehr leichte Kettenweste
 @i^2940^Blutige Bärentatze
+@i^3264^Nachtsaugerflügel
+@i^3265^Aasfressertatze
+@i^3363^Ausgefranster Gürtel
+@i^3365^Ausgefranste Armschienen
 @i^3402^Weicher Fellflicken
 @i^3476^Graubärenzunge
 @i^3730^Großbärenfleisch
@@ -40,7 +54,11 @@ GoldScout-export 6^hx60b8lc5x1l^5
 @i^4428^Spinnentaster
 @i^4582^Weicher buschiger Schweif
 @i^4585^Tropfender Spinnenunterkiefer
+@i^4604^Waldpilzkappe
 @i^4607^Köstlicher Höhlenschimmel
+@i^4865^Verdorbener Pelz
+@i^7073^Zerbrochener Fangzahn
+@i^7074^Gesplitterte Klaue
 @i^7084^Muster: Purpurrote Seidenschultern
 @i^7366^Ältestenhandschuhe der Intelligenz
 @i^7709^Verseuchte Gamaschen
@@ -56,13 +74,23 @@ GoldScout-export 6^hx60b8lc5x1l^5
 @i^274290^Rundschild des Schmerzschreiters
 @i^274291^Polierte Schädelkappe
 @i^278225^Chirurgische Spinnenseide
+@q^159^1:0:0
 @q^1074^0:15:0
 @q^1081^1:7:1
+@q^1369^0:4:0
 @q^1464^0:15:0
 @q^1711^1:0:0
 @q^2251^1:7:1
+@q^2589^1:7:1
 @q^2592^1:7:1
+@q^2649^0:4:0
+@q^2652^0:4:0
+@q^2656^0:4:0
 @q^2940^0:15:0
+@q^3264^1:12:0
+@q^3265^1:12:0
+@q^3363^0:4:0
+@q^3365^0:4:0
 @q^3402^0:15:0
 @q^3476^1:12:0
 @q^3730^1:7:1
@@ -74,7 +102,11 @@ GoldScout-export 6^hx60b8lc5x1l^5
 @q^4428^0:15:0
 @q^4582^1:12:0
 @q^4585^0:15:0
+@q^4604^1:0:0
 @q^4607^1:0:0
+@q^4865^0:15:0
+@q^7073^0:15:0
+@q^7074^0:15:0
 @q^7084^2:9:0
 @q^7366^2:4:0
 @q^7709^3:4:0
@@ -1270,7 +1302,11 @@ GoldScout-export 6^hx60b8lc5x1l^5
 @c^285279^
 @c^285280^
 @c^285281^
-@a^1502^266:1
+@a^1501^246:8
+@a^1502^246:11,266:1
+@a^1508^226:4,246:2
+@a^1512^226:2,245:2,246:1
+@a^1890^226:1,246:2
 @a^2350^50:1,51:2,52:1,91:1
 @a^2351^51:2,70:1,71:1,72:1,111:1
 @a^2563^193:2,194:2,213:2

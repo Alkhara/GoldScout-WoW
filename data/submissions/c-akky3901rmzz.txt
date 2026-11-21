@@ -1,4 +1,4 @@
-GoldScout-export 6^akky3901rmzz^9
+GoldScout-export 6^akky3901rmzz^10
 36^4^0^11^12^1436^0.5601^0.3515^4^Harvest Golem^732:2:2,1274:1:1,255007:1:1,255010:1:1^
 95^15^0^11^12^1436^0.4767^0.3480^15^Defias Smuggler^414:1:1,829:6:6,1502:1:1,1512:1:1,2589:2:3^
 114^21^0^14^15^1436^0.5219^0.2552^21^Harvest Watcher^732:8:8,814:4:4,1274:7:7,1507:1:1,4361:2:2,4363:1:1,9756:1:1,255007:9:9,255010:4:4^
@@ -28,6 +28,14 @@ GoldScout-export 6^akky3901rmzz^9
 647^1^0^0^0^0^0.0000^0.0000^0^^10403:1:1^
 657^5^0^0^0^0^0.0000^0.0000^0^^1951:1:1,2592:1:1^
 824^2^0^15^16^1415^0.4114^0.7951^1^Defias Digger^1499:1:1,2592:1:2,2771:1:2^
+1007^8^0^20^21^1437^0.6262^0.6858^8^Mosshide Gnoll^2592:6:9^
+1008^8^0^21^22^1437^0.6221^0.6911^8^Mosshide Mongrel^1821:1:1,2592:1:2,4306:3:3^
+1024^12^0^20^21^1437^0.1527^0.3997^12^Bluegill Murloc^730:8:8,929:1:1,1205:1:1,1468:6:6,1791:1:1,2219:1:1,5524:7:7,5784:3:3,17057:8:8^
+1025^2^0^22^22^1437^0.1464^0.4015^2^Bluegill Puddlejumper^730:1:1,1468:2:2,5784:1:1^
+1040^1^0^24^25^1437^0.1713^0.4222^1^Fen Creeper^^
+1111^2^0^21^22^1437^0.5372^0.6436^2^Leech Stalker^3174:1:1,280319:1:1^
+1259^1^0^22^22^1437^0.1499^0.4121^1^Gobbler^730:1:1,3618:1:1^
+1417^15^0^21^22^1437^0.3155^0.3962^15^Young Wetlands Crocolisk^770:5:5,3397:6:6,3667:7:7,14172:1:1^
 1727^3^0^16^17^1415^0.4109^0.7975^3^Defias Worker^915:1:1^
 1729^1^0^0^0^0^0.0000^0.0000^0^^915:1:1^
 1731^2^0^0^0^0^0.0000^0.0000^0^^814:1:1,1206:1:1^
@@ -128,6 +136,7 @@ GoldScout-export 6^akky3901rmzz^9
 @i^729^Stringy Vulture Meat
 @i^730^Murloc Eye
 @i^732^Okra
+@i^770^Pointy Crocolisk Tooth
 @i^814^Flask of Oil
 @i^818^Tigerseye
 @i^829^Red Leather Bandana
@@ -162,12 +171,14 @@ GoldScout-export 6^akky3901rmzz^9
 @i^1791^Patched Leather Gloves
 @i^1793^Patched Leather Shoulderpads
 @i^1816^Unbalanced Axe
+@i^1821^Warped Blade
 @i^1875^Thistlenettle's Badge
 @i^1894^Miners' Union Card
 @i^1930^Stonemason Cloak
 @i^1951^Blackwater Cutlass
 @i^1959^Cold Iron Pick
 @i^2073^Dwarven Hatchet of Strength
+@i^2219^Small Round Shield
 @i^2287^Haunch of Meat
 @i^2455^Minor Mana Potion
 @i^2589^Linen Cloth
@@ -194,10 +205,14 @@ GoldScout-export 6^akky3901rmzz^9
 @i^3169^Chipped Bear Tooth
 @i^3170^Large Bear Tooth
 @i^3173^Bear Meat
+@i^3174^Spider Ichor
 @i^3289^Ancestral Boots
 @i^3374^Calico Belt
+@i^3397^Young Crocolisk Skin
+@i^3618^Gobbler's Head
 @i^3636^Scale of Old Murk-Eye
 @i^3637^Head of VanCleef
+@i^3667^Tender Crocolisk Meat
 @i^3730^Big Bear Meat
 @i^3820^Stranglekelp
 @i^4306^Silk Cloth
@@ -233,6 +248,7 @@ GoldScout-export 6^akky3901rmzz^9
 @i^5490^Wrathtail Head
 @i^5506^Beady Eye Stalk
 @i^5523^Small Barnacled Clam
+@i^5524^Thick-shelled Clam
 @i^5533^Ilkrud Magthrull's Tome
 @i^5537^Sarilus Foulborne's Head
 @i^5544^Dal Bloodclaw's Skull
@@ -258,6 +274,7 @@ GoldScout-export 6^akky3901rmzz^9
 @i^6551^Soldier's Boots of Spirit
 @i^6552^Bard's Tunic of the Monkey
 @i^6559^Bard's Buckler of the Sorcerer
+@i^6647^Bloated Bristle Whisker Catfish
 @i^6889^Small Egg
 @i^7074^Chipped Claw
 @i^7096^Plucked Feather
@@ -282,6 +299,7 @@ GoldScout-export 6^akky3901rmzz^9
 @i^12220^Intact Elemental Bracer
 @i^14115^Aboriginal Bands
 @i^14160^Pagan Bands of the Whale
+@i^14172^Buccaneer's Robes of Spirit
 @i^15248^Gleaming Claymore of Healing
 @i^15305^Feral Shoes of the Monkey
 @i^15333^Wrangler's Cloak of Spirit
@@ -308,6 +326,7 @@ GoldScout-export 6^akky3901rmzz^9
 @i^275895^Fading Echo
 @i^277917^Stonetalon Supply Bundle
 @i^279279^Peerless Eye
+@i^280319^Unruptured Stalker Gland
 @i^281038^Feather of Jai'vhanel
 @i^284715^First Mate Band
 @i^285292^Dull Sawblade
@@ -315,6 +334,7 @@ GoldScout-export 6^akky3901rmzz^9
 @q^729^1:7:1
 @q^730^1:7:1
 @q^732^1:12:0
+@q^770^0:15:0
 @q^814^1:7:1
 @q^818^2:7:1
 @q^829^1:12:0
@@ -349,12 +369,14 @@ GoldScout-export 6^akky3901rmzz^9
 @q^1791^0:4:0
 @q^1793^0:4:0
 @q^1816^0:2:0
+@q^1821^0:2:0
 @q^1875^1:12:0
 @q^1894^1:12:0
 @q^1930^2:4:0
 @q^1951^3:2:0
 @q^1959^2:2:0
 @q^2073^2:2:0
+@q^2219^0:4:0
 @q^2287^1:0:0
 @q^2455^1:0:0
 @q^2589^1:7:1
@@ -381,10 +403,14 @@ GoldScout-export 6^akky3901rmzz^9
 @q^3169^0:15:0
 @q^3170^0:15:0
 @q^3173^1:7:1
+@q^3174^1:7:1
 @q^3289^1:4:0
 @q^3374^0:4:0
+@q^3397^1:12:0
+@q^3618^1:12:0
 @q^3636^1:12:0
 @q^3637^1:12:0
+@q^3667^1:7:1
 @q^3730^1:7:1
 @q^3820^1:7:1
 @q^4306^1:7:1
@@ -420,6 +446,7 @@ GoldScout-export 6^akky3901rmzz^9
 @q^5490^1:12:0
 @q^5506^0:15:0
 @q^5523^1:7:0
+@q^5524^1:7:0
 @q^5533^1:12:0
 @q^5537^1:12:0
 @q^5544^1:12:0
@@ -445,6 +472,7 @@ GoldScout-export 6^akky3901rmzz^9
 @q^6551^2:4:0
 @q^6552^2:4:0
 @q^6559^2:4:0
+@q^6647^2:15:0
 @q^6889^1:7:1
 @q^7074^0:15:0
 @q^7096^0:15:0
@@ -469,6 +497,7 @@ GoldScout-export 6^akky3901rmzz^9
 @q^12220^1:12:0
 @q^14115^1:4:0
 @q^14160^2:4:0
+@q^14172^2:4:0
 @q^15248^2:2:0
 @q^15305^2:4:0
 @q^15333^2:4:0
@@ -495,12 +524,14 @@ GoldScout-export 6^akky3901rmzz^9
 @q^275895^0:15:0
 @q^277917^1:12:0
 @q^279279^1:12:0
+@q^280319^1:12:0
 @q^281038^1:12:0
 @q^284715^3:4:0
 @q^285292^3:2:0
 @m^1413^The Barrens
 @m^1415^Eastern Kingdoms
 @m^1436^Westfall
+@m^1437^Wetlands
 @m^1439^Darkshore
 @m^1440^Ashenvale
 @m^1442^Stonetalon Mountains
@@ -1306,6 +1337,14 @@ GoldScout-export 6^akky3901rmzz^9
 @a^625^308:1,328:1
 @a^626^328:1
 @a^824^308:1
+@a^1007^252:3,272:1,292:4
+@a^1008^252:2,272:3,292:3
+@a^1024^142:3,143:2,162:3,163:4
+@a^1025^142:1,162:1
+@a^1040^163:1
+@a^1111^250:1,270:1
+@a^1259^162:1
+@a^1417^125:4,145:4,146:4,147:1,182:1,292:1
 @a^1727^308:3
 @a^2069^129:1,227:1,247:2
 @a^2156^347:1
@@ -1382,6 +1421,7 @@ GoldScout-export 6^akky3901rmzz^9
 @a^10373^130:1
 @a^12922^126:1
 @a^270196^228:1
+@f^1437^0^24^134^6289:11:11,6308:12:12,6647:1:1^292:16,293:8
 @f^1442^0^23^126^3820:1:3,6308:2:2,6359:10:10,6456:4:4,6457:2:2,6458:1:1,21113:3:3^213:9,214:14
 @f^1453^0^28^114^6289:16:16,6291:6:6,6308:5:5,6309:1:1^270:28
 @l^0^enUS

@@ -1,4 +1,4 @@
-GoldScout-export 6^t86ydjon7iyb^8
+GoldScout-export 6^t86ydjon7iyb^9
 123^3^0^13^14^1436^0.3695^0.3410^3^Riverpaw Mongrel^2589:2:3^
 171^3^0^16^16^1436^0.2753^0.3979^3^Murloc Warrior^730:2:2,5523:2:2^
 199^3^0^11^11^1436^0.4396^0.2406^3^Young Fleshripper^729:2:2,2962:1:1,6889:1:1,7096:1:1,17056:1:1^
@@ -27,12 +27,16 @@ GoldScout-export 6^t86ydjon7iyb^8
 3245^28^0^16^17^1413^0.5229^0.4853^28^Ornery Plainstrider^4775:10:10,4776:4:4,5114:8:8,5115:2:2,5469:9:9,17056:8:8^
 3255^1^0^13^13^1413^0.4783^0.3682^1^Sunscale Screecher^5165:1:1^
 3256^10^0^16^18^1413^0.5526^0.5047^10^Sunscale Scytheclaw^3180:1:1,5124:1:1,5165:4:4,14131:1:1^
+3382^1^0^13^13^1413^0.6287^0.4403^1^Southsea Cannoneer^2589:1:2^
 3426^4^0^18^18^1413^0.5051^0.4773^4^Zhevra Charger^5120:1:1^
 3461^1^0^16^16^1413^0.4829^0.4007^1^Oasis Snapjaw^^
+3630^1^0^16^16^1414^0.5191^0.5538^1^Deviate Coiler^6443:1:1^
 3633^2^0^16^16^1414^0.5232^0.5462^2^Deviate Slayer^5124:2:2,6470:1:1,15491:1:1^
 3641^1^0^17^17^1414^0.5208^0.5453^1^Deviate Lurker^2608:1:1,5523:1:1^
+4127^1^0^16^16^1413^0.6142^0.4158^1^Hecklefang Hyena^3301:1:1^
 4129^1^0^19^19^1413^0.4667^0.4677^1^Hecklefang Snarler^3299:1:1^
 6250^2^0^11^11^1436^0.2734^0.4017^2^Crawler^^
+7168^1^0^18^18^1413^0.6489^0.4547^1^Polly^7968:1:1^
 8996^4^0^10^11^1411^0.5346^0.0805^4^Voidwalker Minion^^
 11318^5^0^0^0^0^0.0000^0.0000^0^^1506:1:1,2589:3:11,6716:1:1^
 11319^1^0^0^0^0^0.0000^0.0000^0^^2589:1:2^
@@ -76,6 +80,7 @@ GoldScout-export 6^t86ydjon7iyb^8
 @i^3189^Wood Chopper
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
+@i^3301^Sharp Canine
 @i^3314^Ceremonial Leather Gloves
 @i^3370^Patchwork Belt
 @i^3643^Spellbinder Bracers
@@ -98,12 +103,14 @@ GoldScout-export 6^t86ydjon7iyb^8
 @i^5784^Slimy Murloc Scale
 @i^6296^Patch of Bat Hair
 @i^6344^Formula: Enchant Bracer - Minor Spirit
+@i^6443^Deviate Hide
 @i^6470^Deviate Scale
 @i^6716^Schematic: EZ-Thro Dynamite
 @i^6889^Small Egg
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
 @i^7096^Plucked Feather
+@i^7968^Southsea Treasure
 @i^9744^Simple Bands
 @i^9764^Cadet Shield of the Champion
 @i^12223^Meaty Bat Wing
@@ -151,6 +158,7 @@ GoldScout-export 6^t86ydjon7iyb^8
 @q^3189^1:2:0
 @q^3299^0:15:0
 @q^3300^0:15:0
+@q^3301^0:15:0
 @q^3314^2:4:0
 @q^3370^0:4:0
 @q^3643^1:4:0
@@ -173,12 +181,14 @@ GoldScout-export 6^t86ydjon7iyb^8
 @q^5784^1:7:1
 @q^6296^0:15:0
 @q^6344^2:9:0
+@q^6443^1:12:0
 @q^6470^1:7:1
 @q^6716^2:9:0
 @q^6889^1:7:1
 @q^7073^0:15:0
 @q^7074^0:15:0
 @q^7096^0:15:0
+@q^7968^1:12:0
 @q^9744^1:4:0
 @q^9764^2:4:0
 @q^12223^1:7:1
@@ -888,6 +898,7 @@ GoldScout-export 6^t86ydjon7iyb^8
 @c^273937^
 @c^273938^
 @c^273939^
+@c^274490^
 @c^274971^
 @c^274976^
 @c^275610^
@@ -992,11 +1003,15 @@ GoldScout-export 6^t86ydjon7iyb^8
 @a^3245^169:4,189:4,190:7,191:1,210:7,211:5
 @a^3255^149:1
 @a^3256^190:4,210:1,211:5
+@a^3382^172:1
 @a^3426^189:2,190:1,210:1
 @a^3461^169:1
+@a^3630^230:1
 @a^3633^210:2
 @a^3641^210:1
+@a^4127^172:1
 @a^4129^189:1
 @a^6250^165:2
+@a^7168^192:1
 @a^8996^30:4
 @l^0^enUS
