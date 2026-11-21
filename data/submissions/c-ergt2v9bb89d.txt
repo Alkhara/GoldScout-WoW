@@ -1,9 +1,17 @@
-GoldScout-export 6^ergt2v9bb89d^7
+GoldScout-export 6^ergt2v9bb89d^8
+587^2^0^33^34^1434^0.2854^0.1920^2^Bloodscalp Warrior^1519:2:2,4306:1:1,4338:1:1^
+660^2^0^37^37^1434^0.2156^0.1303^2^Bloodscalp Witch Doctor^1519:1:1,2734:1:1,4306:2:6^
+671^2^0^36^37^1434^0.2145^0.1032^2^Bloodscalp Headhunter^4306:1:3,248692:1:1^
+689^1^0^34^35^1434^0.2717^0.1842^1^Crystal Spine Basilisk^^
+697^2^0^33^34^1434^0.2973^0.2146^2^Bloodscalp Shaman^1519:2:2^
+905^1^0^31^32^1434^0.3983^0.2287^1^Sharptooth Frenzy^4860:1:1^
 938^2^0^34^35^1434^0.4620^0.0772^2^Kurzen Commando^4306:1:1^
 939^6^1^36^37^1434^0.4849^0.0764^6^Kurzen Elite^4306:1:3,15260:1:1^
 941^4^0^34^35^1434^0.4772^0.0740^4^Kurzen Headshrinker^2633:3:3,3779:1:1,4306:2:4^
 942^1^0^36^37^1434^0.4875^0.0869^1^Kurzen Witch Doctor^^
+1152^26^0^35^36^1434^0.4000^0.2700^26^Snapjaw Crocolisk^770:11:11,3667:16:16,4104:5:5,12037:6:6^
 1421^1^0^31^31^1434^0.3798^0.0391^1^Private Merle^2592:1:1^
+3560^1^0^37^37^1434^0.2160^0.1464^1^Healing Ward^^
 3974^1^0^0^0^0^0.0000^0.0000^0^^7710:1:1,251351:1:1^
 3975^1^0^0^0^0^0.0000^0.0000^0^^7717:1:1^
 3983^1^0^0^0^0^0.0000^0.0000^0^^7683:1:1^
@@ -76,8 +84,10 @@ GoldScout-export 6^ergt2v9bb89d^7
 11576^1^0^32^34^1443^0.4873^0.3070^1^Whirlwind Ripper^^
 12369^1^0^38^38^1443^0.2808^0.0610^1^Lord Kragaru^15803:1:1,17057:1:1^
 13019^1^0^33^33^1443^0.5511^0.3016^1^Burning Blade Seer^15750:1:1^
+@i^770^Pointy Crocolisk Tooth
 @i^1288^Large Venom Sac
 @i^1465^Tigerbane
+@i^1519^Bloodscalp Ear
 @i^1701^Curved Basilisk Claw
 @i^1702^Intact Basilisk Spine
 @i^1707^Stormwind Brie
@@ -89,7 +99,9 @@ GoldScout-export 6^ergt2v9bb89d^7
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2633^Jungle Remedy
+@i^2734^Green Hills of Stranglethorn - Page 10
 @i^3210^Brutal War Axe of Nature Protection
+@i^3667^Tender Crocolisk Meat
 @i^3771^Wild Hog Shank
 @i^3778^Taut Compound Bow
 @i^3779^Hefty War Axe
@@ -101,9 +113,11 @@ GoldScout-export 6^ergt2v9bb89d^7
 @i^3817^Reinforced Buckler
 @i^3827^Mana Potion
 @i^4093^Large Basilisk Tail
+@i^4104^Snapjaw Crocolisk Skin
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4636^Strong Iron Lockbox
+@i^4860^Glistening Frenzy Scale
 @i^5115^Broken Wishbone
 @i^5213^Scorching Wand
 @i^5431^Empty Hip Flask
@@ -154,13 +168,16 @@ GoldScout-export 6^ergt2v9bb89d^7
 @i^215373^Silver Hand Training Hammer
 @i^248689^Waylaid Crate: Journeyman Curiosities
 @i^248690^Waylaid Crate: Earthly Expert Herbs
+@i^248692^Waylaid Crate: Expert Ore
 @i^250370^Recipe: Elixir of Fortitude
 @i^251351^Plans: Guard's Chain Helm
 @i^254432^Carved Centaur Totem
 @i^262889^Sealed Expert's Writ
 @i^274294^Library Walkers
+@q^770^0:15:0
 @q^1288^1:7:1
 @q^1465^2:2:0
+@q^1519^1:12:0
 @q^1701^0:15:0
 @q^1702^0:15:0
 @q^1707^1:0:0
@@ -172,7 +189,9 @@ GoldScout-export 6^ergt2v9bb89d^7
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2633^1:0:0
+@q^2734^1:12:0
 @q^3210^2:2:0
+@q^3667^1:7:1
 @q^3771^1:0:0
 @q^3778^0:2:0
 @q^3779^0:2:0
@@ -184,9 +203,11 @@ GoldScout-export 6^ergt2v9bb89d^7
 @q^3817^0:4:0
 @q^3827^1:0:0
 @q^4093^0:15:0
+@q^4104^1:12:0
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4636^2:15:0
+@q^4860^0:15:0
 @q^5115^0:15:0
 @q^5213^2:2:0
 @q^5431^0:15:0
@@ -237,6 +258,7 @@ GoldScout-export 6^ergt2v9bb89d^7
 @q^215373^1:2:0
 @q^248689^1:0:1
 @q^248690^1:0:1
+@q^248692^1:0:1
 @q^250370^1:9:0
 @q^251351^3:9:0
 @q^254432^2:15:0
@@ -862,11 +884,19 @@ GoldScout-export 6^ergt2v9bb89d^7
 @c^279941^
 @c^279945^
 @c^279978^
+@a^587^65:2
+@a^660^44:2
+@a^671^44:2
+@a^689^65:1
+@a^697^85:2
+@a^905^87:1
 @a^938^29:2
 @a^939^29:6
 @a^941^29:4
 @a^942^29:1
+@a^1152^87:2,88:7,107:5,108:5,127:7
 @a^1421^7:1
+@a^3560^44:1
 @a^4632^153:1,154:1,173:2,193:1,213:2
 @a^4633^153:1,154:1,173:1,213:1
 @a^4635^153:2,173:1,193:2,194:1

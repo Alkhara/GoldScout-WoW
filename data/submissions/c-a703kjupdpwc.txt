@@ -1,23 +1,34 @@
-GoldScout-export 6^a703kjupdpwc^1
+GoldScout-export 6^a703kjupdpwc^2
 3758^9^0^25^26^1440^0.6745^0.5403^9^Felmusk Satyr^2236:1:1,2592:2:2,4306:1:1,5481:5:5,16647:1:1,16648:1:1^
 3759^3^0^26^27^1440^0.6728^0.5576^3^Felmusk Rogue^1829:1:1,5481:1:1^
 3762^9^0^25^26^1440^0.6691^0.5423^9^Felmusk Felsworn^2592:2:4,3385:1:1,5481:3:3,15118:1:1,16655:1:1,211855:1:1^
 3763^11^0^26^27^1440^0.6681^0.5540^11^Felmusk Shadowstalker^1783:1:1,2592:2:3,4306:4:6,5481:5:5,16648:1:1,16655:1:1^
 3917^7^0^23^25^1440^0.4759^0.7101^7^Befouled Water Elemental^5446:2:2,5451:1:1,9451:2:4,14162:1:1,16650:1:1^
 4054^2^0^24^25^1440^0.5849^0.5516^2^Laughing Sister^4306:1:1^
+10617^1^0^26^26^1441^0.3498^0.2827^1^Galak Messenger^4306:1:2,12564:1:1^
 12677^1^0^28^28^1440^0.5772^0.5565^1^Shadumbra^16304:1:1^
 12759^3^0^27^27^1440^0.4841^0.7047^3^Tideress^7070:1:1,9451:1:2,15343:1:1,16408:1:1,16645:1:1^
+264079^2^0^27^28^1412^0.3366^0.1043^2^Gloomrise Hatchling^^
+264081^10^0^28^28^1412^0.3313^0.0910^10^Gloomrise Spinner^878:4:4,1081:5:5,3931:4:4,273181:3:3^
+264082^1^0^30^30^1412^0.3370^0.0681^1^Broodmother Valraxx^273658:1:1^
+264083^3^0^28^29^1412^0.3257^0.1071^3^Gloomrise Soldier^1081:2:2,1475:1:1,5465:2:2^
+@i^878^Fist-sized Spinneret
+@i^1081^Crisp Spider Meat
+@i^1475^Small Venom Sac
 @i^1783^Cross-stitched Gloves
 @i^1829^Short Cutlass
 @i^2236^Blackfang
 @i^2592^Wool Cloth
 @i^3385^Lesser Mana Potion
+@i^3931^Poisoned Spider Fang
 @i^4306^Silk Cloth
 @i^5446^Broken Elemental Bracer
 @i^5451^Crushed Elemental Bracer
+@i^5465^Small Spider Leg
 @i^5481^Satyr Horns
 @i^7070^Elemental Water
 @i^9451^Bubbling Water
+@i^12564^Assassination Note
 @i^14162^Pagan Mitts of Spirit
 @i^15118^Rigid Tunic of the Eagle
 @i^15343^Pathfinder Gloves of Power
@@ -29,17 +40,25 @@ GoldScout-export 6^a703kjupdpwc^1
 @i^16650^Shredder Operating Manual - Page 6
 @i^16655^Shredder Operating Manual - Page 11
 @i^211855^Scroll: STHENIC LUNATE
+@i^273181^Crystalline Silk
+@i^273658^Bloody Parchment
+@q^878^0:7:0
+@q^1081^1:7:1
+@q^1475^1:7:1
 @q^1783^0:4:0
 @q^1829^0:2:0
 @q^2236^3:2:0
 @q^2592^1:7:1
 @q^3385^1:0:0
+@q^3931^0:15:0
 @q^4306^1:7:1
 @q^5446^0:15:0
 @q^5451^0:15:0
+@q^5465^1:7:1
 @q^5481^1:12:0
 @q^7070^1:7:1
 @q^9451^1:0:0
+@q^12564^1:12:0
 @q^14162^2:4:0
 @q^15118^2:4:0
 @q^15343^2:4:0
@@ -51,13 +70,22 @@ GoldScout-export 6^a703kjupdpwc^1
 @q^16650^1:12:0
 @q^16655^1:12:0
 @q^211855^1:0:0
+@q^273181^1:12:0
+@q^273658^1:15:0
+@m^1412^Mulgore
 @m^1440^Ashenvale
+@m^1441^Thousand Needles
 @a^3758^213:8,233:1
 @a^3759^213:1,233:2
 @a^3762^213:4,233:5
 @a^3763^213:5,233:6
 @a^3917^269:2,289:5
 @a^4054^231:2
+@a^10617^106:1
 @a^12677^231:1
 @a^12759^269:2,289:1
+@a^264079^46:2
+@a^264081^26:7,46:3
+@a^264082^26:1
+@a^264083^46:3
 @l^0^enUS

@@ -1,4 +1,4 @@
-GoldScout-export 6^1a9tx2uwj26a^23
+GoldScout-export 6^1a9tx2uwj26a^24
 92^18^0^39^40^1418^0.3237^0.6693^18^Rock Elemental^1529:1:1,4552:1:1,4553:8:8,4627:3:3,4784:12:12,7067:2:2,7848:5:5,7912:5:7,8150:4:4,9899:1:1^
 587^28^0^33^34^1434^0.3342^0.1522^28^Bloodscalp Warrior^1519:5:5,1520:1:1,2592:1:2,2735:2:2,2740:2:2,3771:2:2,3901:3:3,3915:7:7,4306:10:15,9857:1:1^
 588^3^0^34^35^1434^0.2315^0.1265^3^Bloodscalp Scout^3771:1:1,4306:1:1,248691:1:1^
@@ -74,6 +74,7 @@ GoldScout-export 6^1a9tx2uwj26a^23
 2831^18^0^39^41^1418^0.1752^0.6146^18^Giant Buzzard^1464:7:7,3404:4:4,5116:2:2,5829:1:1,7847:5:5,11416:6:6,11418:4:4,12037:8:8,15233:1:1,248692:1:1^
 2893^19^0^39^40^1418^0.4840^0.7123^19^Stonevault Bonesnapper^1710:1:1,3771:1:1,4306:6:11,5797:8:8,213544:1:1,251461:1:1^
 2894^6^0^40^41^1418^0.4820^0.6996^6^Stonevault Shaman^5797:2:2^
+3098^15^0^1^2^1411^0.4476^0.6677^15^Mottled Boar^117:2:2,1369:1:1,1372:1:1,1378:2:2,2652:1:1,4865:9:9,7098:6:6^
 3560^6^0^37^41^1418^0.4816^0.6967^4^Healing Ward^^
 3975^1^0^0^0^0^0.0000^0.0000^0^^274295:1:1^
 3976^1^0^0^0^0^0.0000^0.0000^0^^7724:1:1^
@@ -150,10 +151,14 @@ GoldScout-export 6^1a9tx2uwj26a^23
 263348^1^0^37^37^2548^0.6469^0.6305^1^Roving Tallstrider^11416:1:1,271778:1:1^
 266357^1^0^36^36^1416^0.6330^0.4509^1^Barton^5113:1:1^
 270667^6^0^38^39^2548^0.5135^0.6937^6^Farholde Priest^4306:2:6,4338:1:1^
+@i^117^Tough Jerky
 @i^770^Pointy Crocolisk Tooth
 @i^1074^Hard Spider Leg Tip
 @i^1081^Crisp Spider Meat
 @i^1207^Murphstar of the Defender
+@i^1369^Ragged Leather Belt
+@i^1372^Ragged Cloak
+@i^1378^Frayed Pants
 @i^1464^Buzzard Talon
 @i^1519^Bloodscalp Ear
 @i^1520^Troll Sweat
@@ -177,6 +182,7 @@ GoldScout-export 6^1a9tx2uwj26a^23
 @i^2251^Gooey Spider Leg
 @i^2289^Scroll of Strength II
 @i^2592^Wool Cloth
+@i^2652^Flimsy Chain Cloak
 @i^2725^Green Hills of Stranglethorn - Page 1
 @i^2728^Green Hills of Stranglethorn - Page 4
 @i^2730^Green Hills of Stranglethorn - Page 6
@@ -263,6 +269,7 @@ GoldScout-export 6^1a9tx2uwj26a^23
 @i^4636^Strong Iron Lockbox
 @i^4729^Aurora Mantle
 @i^4784^Lifeless Stone
+@i^4865^Ruined Pelt
 @i^5113^Mark of the Syndicate
 @i^5116^Long Tail Feather
 @i^5213^Scorching Wand
@@ -291,6 +298,7 @@ GoldScout-export 6^1a9tx2uwj26a^23
 @i^6826^Brilliant Scale
 @i^7067^Elemental Earth
 @i^7072^Naga Scale
+@i^7098^Splintered Tusk
 @i^7423^Phalanx Leggings of the Wolf
 @i^7431^Twilight Pants of the Prophet
 @i^7439^Sentinel Breastplate of the Champion
@@ -373,10 +381,14 @@ GoldScout-export 6^1a9tx2uwj26a^23
 @i^277957^Primitive Key
 @i^278515^Mus'hale's Stolen Supplies
 @i^281052^Ombassa's Hide
+@q^117^1:0:0
 @q^770^0:15:0
 @q^1074^0:15:0
 @q^1081^1:7:1
 @q^1207^2:2:0
+@q^1369^0:4:0
+@q^1372^0:4:0
+@q^1378^0:4:0
 @q^1464^0:15:0
 @q^1519^1:12:0
 @q^1520^0:15:0
@@ -400,6 +412,7 @@ GoldScout-export 6^1a9tx2uwj26a^23
 @q^2251^1:7:1
 @q^2289^1:0:0
 @q^2592^1:7:1
+@q^2652^0:4:0
 @q^2725^1:12:0
 @q^2728^1:12:0
 @q^2730^1:12:0
@@ -486,6 +499,7 @@ GoldScout-export 6^1a9tx2uwj26a^23
 @q^4636^2:15:0
 @q^4729^2:4:0
 @q^4784^0:15:0
+@q^4865^0:15:0
 @q^5113^0:15:0
 @q^5116^1:7:1
 @q^5213^2:2:0
@@ -514,6 +528,7 @@ GoldScout-export 6^1a9tx2uwj26a^23
 @q^6826^0:15:0
 @q^7067^1:7:1
 @q^7072^1:7:1
+@q^7098^0:15:0
 @q^7423^2:4:0
 @q^7431^2:4:0
 @q^7439^2:4:0
@@ -596,6 +611,7 @@ GoldScout-export 6^1a9tx2uwj26a^23
 @q^277957^1:12:0
 @q^278515^1:12:0
 @q^281052^1:12:0
+@m^1411^Durotar
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
 @m^1418^Badlands
@@ -1442,6 +1458,7 @@ GoldScout-export 6^1a9tx2uwj26a^23
 @a^2831^184:1,223:6,242:1,243:6,246:1,262:2,282:1
 @a^2893^269:3,289:14,290:2
 @a^2894^269:3,289:3
+@a^3098^249:6,268:3,288:6
 @a^3560^269:2,289:2
 @a^3984^126:1
 @a^4260^88:2
