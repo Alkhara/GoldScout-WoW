@@ -1,4 +1,4 @@
-GoldScout-export 6^e4qe43ouis8q^7
+GoldScout-export 6^e4qe43ouis8q^9
 587^11^0^33^34^1434^0.3112^0.1925^11^Bloodscalp Warrior^1477:1:1,1519:6:6,1520:1:1,1710:1:1,2734:1:1,3771:1:1,3901:6:6,3915:4:4,4306:5:6^
 595^2^0^34^35^1434^0.2935^0.1213^2^Bloodscalp Hunter^1519:1:1,3781:1:1,3915:2:2,4306:1:2^
 681^14^0^30^31^1434^0.3421^0.1207^14^Young Stranglethorn Tiger^1529:1:1,1686:1:1,1687:2:2,9847:1:1,12202:5:5^
@@ -46,6 +46,7 @@ GoldScout-export 6^e4qe43ouis8q^7
 2562^4^0^32^33^1417^0.3459^0.4101^4^Boulderfist Ogre^4306:3:4,248691:1:1^
 2578^2^0^32^32^1417^0.2973^0.3605^2^Young Mesa Buzzard^5829:1:1,11416:1:1^
 2667^2^0^37^37^1434^0.3845^0.3005^2^Ward of Laze^^
+2955^3^0^1^2^1412^0.4872^0.8143^3^Plainstrider^4739:1:1,4740:1:1,7096:1:1^
 3560^2^0^35^35^1443^0.3272^0.2397^2^Healing Ward^^
 4038^1^0^26^26^1442^0.3120^0.7354^1^Burning Destroyer^^
 4041^2^0^27^28^1442^0.3121^0.7237^2^Scorched Basilisk^11384:1:1^
@@ -210,6 +211,8 @@ GoldScout-export 6^e4qe43ouis8q^7
 @i^4604^Forest Mushroom Cap
 @i^4634^Iron Lockbox
 @i^4636^Strong Iron Lockbox
+@i^4739^Plainstrider Meat
+@i^4740^Plainstrider Feather
 @i^4784^Lifeless Stone
 @i^5114^Severed Talon
 @i^5116^Long Tail Feather
@@ -237,6 +240,7 @@ GoldScout-export 6^e4qe43ouis8q^7
 @i^6986^Crimson Lotus
 @i^7069^Elemental Air
 @i^7072^Naga Scale
+@i^7096^Plucked Feather
 @i^8746^Interlaced Cowl
 @i^9847^Conjurer's Cloak of the Knight
 @i^11384^Broken Basilisk Teeth
@@ -380,6 +384,8 @@ GoldScout-export 6^e4qe43ouis8q^7
 @q^4604^1:0:0
 @q^4634^2:15:0
 @q^4636^2:15:0
+@q^4739^1:12:0
+@q^4740^1:12:0
 @q^4784^0:15:0
 @q^5114^0:15:0
 @q^5116^1:7:1
@@ -407,6 +413,7 @@ GoldScout-export 6^e4qe43ouis8q^7
 @q^6986^0:15:0
 @q^7069^1:7:1
 @q^7072^1:7:1
+@q^7096^0:15:0
 @q^8746^0:4:0
 @q^9847^2:4:0
 @q^11384^0:15:0
@@ -458,6 +465,7 @@ GoldScout-export 6^e4qe43ouis8q^7
 @q^251457^2:9:0
 @q^254432^2:15:0
 @q^262889^3:0:0
+@m^1412^Mulgore
 @m^1413^The Barrens
 @m^1417^Arathi Highlands
 @m^1420^Tirisfal Glades
@@ -1119,6 +1127,7 @@ GoldScout-export 6^e4qe43ouis8q^7
 @a^2562^146:2,167:2
 @a^2578^125:1,146:1
 @a^2667^127:2
+@a^2955^329:3
 @a^3560^86:2
 @a^4038^286:1
 @a^4041^286:2
