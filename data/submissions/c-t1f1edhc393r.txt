@@ -1,10 +1,14 @@
-GoldScout-export 6^t1f1edhc393r^16
+GoldScout-export 6^t1f1edhc393r^17
 755^2^0^34^35^1435^0.5066^0.2775^2^Lost One Mudlurker^^
 757^1^0^35^35^1435^0.5251^0.3014^1^Lost One Fisherman^1708:1:1^
 759^6^0^36^37^1435^0.5695^0.2517^6^Lost One Hunter^4306:3:6,4338:1:1,274045:3:3^
 760^1^0^36^36^1435^0.6691^0.2138^1^Lost One Muckdweller^274045:1:1^
 762^1^0^37^37^1435^0.6478^0.2216^1^Lost One Riftseeker^4306:1:3,274045:1:1^
 862^1^0^38^38^1435^0.4957^0.2782^1^Stonard Explorer^4306:1:2^
+937^14^0^32^33^1434^0.4434^0.0978^14^Kurzen Jungle Fighter^1710:1:1,2592:1:3,2744:1:1,2750:1:1,3827:1:1,4306:7:9^
+938^1^0^34^35^1434^0.4438^0.0861^1^Kurzen Commando^^
+940^20^0^32^33^1434^0.4414^0.0961^20^Kurzen Medicine Man^1707:1:1,2592:3:5,2633:7:7,3357:1:1,3358:1:1,3781:1:1,3818:1:1,4306:4:8^
+941^2^0^34^35^1434^0.4394^0.0957^2^Kurzen Headshrinker^^
 1520^7^0^6^7^1420^0.4641^0.3942^7^Rattlecage Soldier^3162:4:4,4604:1:1^
 1522^4^0^7^8^1420^0.4611^0.4188^4^Darkeye Bonecaster^2589:2:3,3163:3:3^
 1523^1^0^9^9^1420^0.4728^0.3584^1^Cracked Skull Soldier^3162:1:1^
@@ -162,7 +166,10 @@ GoldScout-export 6^t1f1edhc393r^16
 @i^2290^Scroll of Intellect II
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2633^Jungle Remedy
 @i^2672^Stringy Wolf Meat
+@i^2744^Green Hills of Stranglethorn - Page 20
+@i^2750^Green Hills of Stranglethorn - Page 26
 @i^2785^Stiff Recurve Bow
 @i^2831^Devlin's Remains
 @i^2834^Embalming Ichor
@@ -177,6 +184,8 @@ GoldScout-export 6^t1f1edhc393r^16
 @i^3189^Wood Chopper
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
+@i^3357^Liferoot
+@i^3358^Khadgar's Whisker
 @i^3385^Lesser Mana Potion
 @i^3402^Soft Patch of Fur
 @i^3635^Maggot Eye's Paw
@@ -184,6 +193,7 @@ GoldScout-export 6^t1f1edhc393r^16
 @i^3720^Yeti Fur
 @i^3771^Wild Hog Shank
 @i^3778^Taut Compound Bow
+@i^3781^Broad Claymore
 @i^3783^Light Scimitar
 @i^3784^Metal Stave
 @i^3786^Shiny Dirk
@@ -192,6 +202,7 @@ GoldScout-export 6^t1f1edhc393r^16
 @i^3807^Hardened Leather Tunic
 @i^3809^Double Mail Boots
 @i^3813^Double Mail Pants
+@i^3818^Fadeleaf
 @i^3827^Mana Potion
 @i^3864^Citrine
 @i^3928^Superior Healing Potion
@@ -312,7 +323,10 @@ GoldScout-export 6^t1f1edhc393r^16
 @q^2290^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2633^1:0:0
 @q^2672^1:7:1
+@q^2744^1:12:0
+@q^2750^1:12:0
 @q^2785^0:2:0
 @q^2831^1:12:0
 @q^2834^1:12:0
@@ -327,6 +341,8 @@ GoldScout-export 6^t1f1edhc393r^16
 @q^3189^1:2:0
 @q^3299^0:15:0
 @q^3300^0:15:0
+@q^3357^1:7:1
+@q^3358^1:7:1
 @q^3385^1:0:0
 @q^3402^0:15:0
 @q^3635^1:12:0
@@ -334,6 +350,7 @@ GoldScout-export 6^t1f1edhc393r^16
 @q^3720^1:12:0
 @q^3771^1:0:0
 @q^3778^0:2:0
+@q^3781^0:2:0
 @q^3783^0:2:0
 @q^3784^0:2:0
 @q^3786^0:2:0
@@ -342,6 +359,7 @@ GoldScout-export 6^t1f1edhc393r^16
 @q^3807^0:4:0
 @q^3809^0:4:0
 @q^3813^0:4:0
+@q^3818^1:7:1
 @q^3827^1:0:0
 @q^3864^2:7:1
 @q^3928^1:0:0
@@ -437,6 +455,7 @@ GoldScout-export 6^t1f1edhc393r^16
 @m^1418^Badlands
 @m^1420^Tirisfal Glades
 @m^1424^Hillsbrad Foothills
+@m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
 @m^1441^Thousand Needles
 @m^1443^Desolace
@@ -1575,6 +1594,10 @@ GoldScout-export 6^t1f1edhc393r^16
 @a^760^93:1
 @a^762^92:1
 @a^862^109:1
+@a^937^28:12,49:2
+@a^938^28:1
+@a^940^28:19,48:1
+@a^941^28:2
 @a^1520^149:4,168:2,169:1
 @a^1522^169:4
 @a^1523^149:1

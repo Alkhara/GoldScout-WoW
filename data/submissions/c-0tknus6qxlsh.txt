@@ -1,4 +1,4 @@
-GoldScout-export 6^0tknus6qxlsh^12
+GoldScout-export 6^0tknus6qxlsh^13
 3^9^0^24^25^1431^0.2519^0.3817^9^Flesh Eater^884:4:4,929:1:1,2592:1:1,5529:2:2,6530:1:1^
 202^29^0^23^24^1431^0.2560^0.4711^29^Skeletal Horror^1205:1:1,1598:5:5,2589:1:2,2592:7:12,2782:1:1,3212:1:1,4306:2:2,4606:2:2,281146:1:1^
 205^12^0^28^29^1431^0.6482^0.5474^12^Nightbane Dark Runner^1829:1:1,5635:1:1^
@@ -53,6 +53,31 @@ GoldScout-export 6^0tknus6qxlsh^12
 6123^2^0^10^11^1426^0.7719^0.6123^2^Dark Iron Spy^2138:1:1,4540:1:1^
 6124^1^0^11^11^1426^0.7790^0.6238^1^Captain Beld^^
 6170^2^0^32^32^1431^0.7322^0.7603^2^Gutspill^^
+6206^8^0^0^0^0^0.0000^0.0000^0^^1819:1:1,3770:1:1,4306:1:3,9308:1:1,9309:4:4,15224:1:1,211853:1:1,211855:1:1,248686:1:1^
+6207^19^0^0^0^0^0.0000^0.0000^0^^1775:1:1,4306:3:4,4352:1:1,9308:3:3,9309:11:11,15230:1:1,211784:1:1,211853:1:1,211855:1:1^
+6208^2^0^25^26^1415^0.4324^0.5314^2^Caverndeep Invader^9309:1:1^
+6211^2^0^0^0^0^0.0000^0.0000^0^^9309:1:1^
+6212^5^0^0^0^0^0.0000^0.0000^0^^4306:1:2,9326:3:3^
+6213^1^0^25^25^1415^0.4311^0.5340^1^Irradiated Invader^9279:1:1,9308:1:1,211784:1:1^
+6218^1^0^0^0^0^0.0000^0.0000^0^^929:1:2^
+6219^1^0^0^0^0^0.0000^0.0000^0^^9309:1:1^
+6220^2^0^0^0^0^0.0000^0.0000^0^^9309:2:2,9451:1:4^
+6221^2^0^24^25^1415^0.4338^0.5281^2^Addled Leper^4306:2:2^
+6222^1^0^0^0^0^0.0000^0.0000^0^^2592:1:2^
+6223^2^0^0^0^0^0.0000^0.0000^0^^7421:1:1,211784:1:1^
+6224^2^0^0^0^0^0.0000^0.0000^0^^4306:1:1^
+6225^1^0^0^0^0^0.0000^0.0000^0^^4633:1:1^
+6227^1^0^0^0^0^0.0000^0.0000^0^^^
+6229^1^0^0^0^0^0.0000^0.0000^0^^274068:1:1^
+6230^1^0^0^0^0^0.0000^0.0000^0^^^
+6231^1^0^26^26^1415^0.4310^0.5278^1^Techbot^9277:1:1^
+6232^1^0^0^0^0^0.0000^0.0000^0^^7366:1:1^
+6233^5^0^0^0^0^0.0000^0.0000^0^^1205:1:1,2592:2:4,4306:1:3,4377:1:1,211784:1:1^
+6235^1^0^0^0^0^0.0000^0.0000^0^^6893:1:1,9448:1:1^
+6329^7^0^0^0^0^0.0000^0.0000^0^^1808:1:1,4306:2:3,9308:1:1,9309:4:4^
+7079^1^0^0^0^0^0.0000^0.0000^0^^9454:1:1^
+7361^1^0^0^0^0^0.0000^0.0000^0^^4306:1:1,9445:1:1^
+7603^7^0^0^0^0^0.0000^0.0000^0^^1205:1:1,1804:1:1,4306:2:4^
 12902^1^0^0^0^0^0.0000^0.0000^0^^273841:1:1^
 245999^1^0^0^0^0^0.0000^0.0000^0^^273034:1:1^
 246016^1^0^0^0^0^0.0000^0.0000^0^^273044:1:1^
@@ -94,8 +119,11 @@ GoldScout-export 6^0tknus6qxlsh^12
 @i^1734^Worn Mail Gloves
 @i^1754^Reinforced Chain Belt
 @i^1757^Reinforced Chain Cloak
+@i^1775^Brocade Gloves
 @i^1797^Rawhide Bracers
+@i^1804^Tough Leather Boots
 @i^1808^Tough Leather Pants
+@i^1819^Gouging Pick
 @i^1824^Shiny War Axe
 @i^1828^Stone War Axe
 @i^1829^Short Cutlass
@@ -136,6 +164,8 @@ GoldScout-export 6^0tknus6qxlsh^12
 @i^3770^Mutton Chop
 @i^3931^Poisoned Spider Fang
 @i^4306^Silk Cloth
+@i^4352^Pattern: Boots of the Enchanter
+@i^4377^Heavy Blasting Powder
 @i^4428^Spider Palp
 @i^4540^Tough Hunk of Bread
 @i^4555^Thick Scaly Tail
@@ -156,10 +186,24 @@ GoldScout-export 6^0tknus6qxlsh^12
 @i^6556^Bard's Bracers of the Boar
 @i^6612^Sage's Boots of the Whale
 @i^6889^Small Egg
+@i^6893^Workshop Key
 @i^6909^Strike of the Hydra
 @i^7267^Pristine Spider Silk
+@i^7366^Elder's Gloves of Stamina
+@i^7421^Phalanx Gauntlets of the Knight
+@i^9277^Techbot's Memory Core
+@i^9279^White Punch Card
+@i^9308^Grime-Encrusted Object
+@i^9309^Robo-mechanical Guts
+@i^9326^Grime-Encrusted Ring
+@i^9445^Grubbis Paws
+@i^9448^Spidertank Oilrag
+@i^9451^Bubbling Water
+@i^9454^Acidic Walkers
 @i^11969^Jacinth Circle of the Sorcerer
 @i^14574^Bristlebark Britches
+@i^15224^Battlesmasher of the Tiger
+@i^15230^Ridge Cleaver of Magic
 @i^15284^Long Battle Bow
 @i^15926^Spellbinder Orb
 @i^17057^Shiny Fish Scales
@@ -167,6 +211,7 @@ GoldScout-export 6^0tknus6qxlsh^12
 @i^211784^Scroll: WUBBA WUBBA
 @i^211853^Scroll: VOCE WELL
 @i^211855^Scroll: STHENIC LUNATE
+@i^248686^Waylaid Crate: Journeyman Herbs
 @i^248689^Waylaid Crate: Journeyman Curiosities
 @i^248704^Waylaid Crate: Apprentice Parts
 @i^250188^Recipe: Breakfast Omelette
@@ -175,6 +220,7 @@ GoldScout-export 6^0tknus6qxlsh^12
 @i^273034^Ephemeral Grips
 @i^273044^Violet Sorcerer's Robes
 @i^273841^Twilight Maul
+@i^274068^Thermaplugg Medal of Honor
 @i^275895^Fading Echo
 @i^276158^Crystallized Shard
 @i^276160^Mana Fragment
@@ -203,8 +249,11 @@ GoldScout-export 6^0tknus6qxlsh^12
 @q^1734^0:4:0
 @q^1754^0:4:0
 @q^1757^0:4:0
+@q^1775^0:4:0
 @q^1797^0:4:0
+@q^1804^0:4:0
 @q^1808^0:4:0
+@q^1819^0:2:0
 @q^1824^0:2:0
 @q^1828^0:2:0
 @q^1829^0:2:0
@@ -245,6 +294,8 @@ GoldScout-export 6^0tknus6qxlsh^12
 @q^3770^1:0:0
 @q^3931^0:15:0
 @q^4306^1:7:1
+@q^4352^2:9:0
+@q^4377^1:7:1
 @q^4428^0:15:0
 @q^4540^1:0:0
 @q^4555^0:15:0
@@ -265,10 +316,24 @@ GoldScout-export 6^0tknus6qxlsh^12
 @q^6556^2:4:0
 @q^6612^2:4:0
 @q^6889^1:7:1
+@q^6893^1:13:0
 @q^6909^3:2:0
 @q^7267^1:12:0
+@q^7366^2:4:0
+@q^7421^2:4:0
+@q^9277^1:12:0
+@q^9279^1:12:0
+@q^9308^1:12:0
+@q^9309^1:12:0
+@q^9326^1:12:0
+@q^9445^3:4:0
+@q^9448^3:4:0
+@q^9451^1:0:0
+@q^9454^3:4:0
 @q^11969^2:4:0
 @q^14574^2:4:0
+@q^15224^2:2:0
+@q^15230^2:2:0
 @q^15284^2:2:0
 @q^15926^2:4:0
 @q^17057^1:15:0
@@ -276,6 +341,7 @@ GoldScout-export 6^0tknus6qxlsh^12
 @q^211784^1:0:0
 @q^211853^1:0:0
 @q^211855^1:0:0
+@q^248686^1:0:1
 @q^248689^1:0:1
 @q^248704^2:0:1
 @q^250188^1:9:0
@@ -284,12 +350,14 @@ GoldScout-export 6^0tknus6qxlsh^12
 @q^273034^3:4:0
 @q^273044^3:4:0
 @q^273841^3:2:0
+@q^274068^3:4:0
 @q^275895^0:15:0
 @q^276158^0:15:0
 @q^276160^0:15:0
 @q^281146^1:12:0
 @q^281147^1:15:0
 @m^1413^The Barrens
+@m^1415^Eastern Kingdoms
 @m^1426^Dun Morogh
 @m^1429^Elwynn Forest
 @m^1431^Duskwood
@@ -1446,5 +1514,9 @@ GoldScout-export 6^0tknus6qxlsh^12
 @a^6123^255:2
 @a^6124^255:1
 @a^6170^314:2
+@a^6208^208:2
+@a^6213^208:1
+@a^6221^208:2
+@a^6231^208:1
 @a^272291^115:1
 @l^0^enUS

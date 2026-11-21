@@ -1,6 +1,6 @@
-GoldScout-export 6^sq936bsp94l7^3
-2573^5^0^37^38^1417^0.8487^0.3281^5^Drywhisker Surveyor^^
-2574^9^0^36^37^1417^0.8536^0.3212^9^Drywhisker Digger^1708:1:1,4306:5:8^
+GoldScout-export 6^sq936bsp94l7^4
+2573^11^0^37^38^1417^0.8512^0.3248^11^Drywhisker Surveyor^4306:4:7,4539:1:1^
+2574^25^0^36^37^1417^0.8526^0.3194^25^Drywhisker Digger^1708:1:1,3792:1:1,4306:13:27,4539:1:1,9886:1:1^
 3983^1^0^0^0^0^0.0000^0.0000^0^^1707:1:1,3779:1:1,274290:1:1^
 4281^1^0^29^29^1420^0.8234^0.3713^1^Scarlet Scout^4306:1:4^
 4283^2^0^0^0^0^0.0000^0.0000^0^^^
@@ -67,6 +67,7 @@ GoldScout-export 6^sq936bsp94l7^3
 @i^3779^Hefty War Axe
 @i^3781^Broad Claymore
 @i^3786^Shiny Dirk
+@i^3792^Interlaced Belt
 @i^3810^Double Mail Bracers
 @i^3817^Reinforced Buckler
 @i^3820^Stranglekelp
@@ -83,6 +84,7 @@ GoldScout-export 6^sq936bsp94l7^3
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4421^Scroll of Protection III
+@i^4539^Goldenbark Apple
 @i^4582^Soft Bushy Tail
 @i^4583^Thick Furry Mane
 @i^4584^Large Trophy Paw
@@ -103,6 +105,7 @@ GoldScout-export 6^sq936bsp94l7^3
 @i^8483^Wastewander Water Pouch
 @i^8751^Overlinked Coif
 @i^9839^Banded Gauntlets of Shadow Protection
+@i^9886^Huntsman's Bands of the Bear
 @i^9973^Embossed Plate Boots of Strength
 @i^10288^Sage's Circlet of the Whale
 @i^11204^Formula: Enchant Bracer - Greater Spirit
@@ -142,6 +145,7 @@ GoldScout-export 6^sq936bsp94l7^3
 @q^3779^0:2:0
 @q^3781^0:2:0
 @q^3786^0:2:0
+@q^3792^0:4:0
 @q^3810^0:4:0
 @q^3817^0:4:0
 @q^3820^1:7:1
@@ -158,6 +162,7 @@ GoldScout-export 6^sq936bsp94l7^3
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4421^1:0:0
+@q^4539^1:0:0
 @q^4582^1:12:0
 @q^4583^0:15:0
 @q^4584^0:15:0
@@ -178,6 +183,7 @@ GoldScout-export 6^sq936bsp94l7^3
 @q^8483^1:12:0
 @q^8751^0:4:0
 @q^9839^2:4:0
+@q^9886^2:4:0
 @q^9973^2:4:0
 @q^10288^2:4:0
 @q^11204^2:9:0
@@ -897,8 +903,8 @@ GoldScout-export 6^sq936bsp94l7^3
 @c^285280^
 @c^285281^
 @c^286152^
-@a^2573^136:2,137:3
-@a^2574^136:1,137:8
+@a^2573^136:5,137:6
+@a^2574^136:9,137:15,156:1
 @a^4281^156:1
 @a^5425^112:1
 @a^5616^112:1
