@@ -376,7 +376,9 @@ local function ExportBody()
   local lines, items, maps, areas = {}, {}, {}, {}
   for _, npcID in ipairs(SortedKeys(drops)) do
     local entry = drops[npcID]
-    local kills, picks = entry.k or 0, entry.p or 0
+    -- Written with %d: a count that's a negative zero would otherwise go out as "-0" (seen in one player's saved data).
+    local kills, picks = ("%d"):format(entry.k or 0), ("%d"):format(entry.p or 0)
+    kills, picks = tonumber(kills), tonumber(picks)
     if kills + picks > 0 then
       local map, count, x, y = entry.m or 0, math.min(entry.c or 0, kills), 0, 0
       if map > 0 and count > 0 then

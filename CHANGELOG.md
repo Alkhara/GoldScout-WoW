@@ -7,6 +7,9 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- **Shared drop data that was turned away now goes in:** a saved pickpocket count could be written as "-0", and the community data refused the whole share. GoldScout now writes it as 0, and shares already sent that way are accepted.
+- **Pocket loot left out of kill drops:** besides junkboxes, the pocket watches, Lucky Charms, Boot Knives, Intricate Baubles, Empty Sea Snail Shells and Syndicate Emblems that rogues' pickpockets put in kill loot no longer count as mob drops.
+
 ## v0.12.41
 
 - **No more "GoldScout was blocked" warning after loading:** v0.12.40 watched the combat log to spot your Pick Pocket casts, and the game only lets its own interface do that, so it warned that GoldScout had been blocked. GoldScout now spots the cast without the combat log, and pickpocketing is still recorded the same way.

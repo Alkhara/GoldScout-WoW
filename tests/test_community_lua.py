@@ -182,6 +182,14 @@ class SnapshotLuaTests(unittest.TestCase):
         self.assertNotIn(secret, learn.Snapshot(learn)[0])
         self.assertEqual(self.ns.db.recoverySecret, secret)  # kept for good
 
+    def test_a_negative_zero_count_exports_as_zero(self):
+        # One player's saved data had every pickpocket count as -0, which Lua writes as "-0".
+        self.lua.execute("for _, entry in pairs(...) do entry.p = -0.0 end", self.ns.db.drops)
+        learn = self.ns.Learn
+        text = learn.ExportString(learn)[0]
+        self.assertNotIn("^-0^", text)
+        self.assertEqual(submission.parse(text).errors, [])
+
     def test_snapshot_carries_names_and_crafted_items(self):
         self.ns.db.names["items"][3010] = "Crawler Meat"
         self.ns.db.names["items"][5569] = "Pattern: Hillman's Cloak, Belt"

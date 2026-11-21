@@ -134,6 +134,21 @@ class ValidatorTests(unittest.TestCase):
         self.assertEqual(mob.pi, {16883: (1, 1)})
         self.assertNotIn("16882", result.text())
 
+    def test_a_negative_zero_count_reads_as_zero(self):
+        # Lua writes a negative zero as "-0"; one player's every pickpocket count came out that way.
+        line = CLATTERING.replace("3812^11^0^", "3812^11^-0^")
+        result = submission.parse(GOOD.splitlines()[0] + "\n" + line + "\n")
+        self.assertEqual(result.errors, [])
+        self.assertEqual(result.mobs[0].p, 0)
+        self.assertIn("3812^11^0^", result.text())
+
+    def test_pocket_watches_in_kill_loot_are_dropped_too(self):
+        # A rogue whose pockets all ended up on corpses: the watches go, the mob's own loot stays.
+        line = CLATTERING.replace("4874:2:2", "4874:2:2,5374:3:3")
+        mob = submission.parse(GOOD.splitlines()[0] + "\n" + line + "\n").mobs[0]
+        self.assertNotIn(5374, mob.i)
+        self.assertIn(4874, mob.i)
+
     def test_unsafe_name_characters_are_removed_not_the_export(self):
         # Quotes, backslashes and the game's | codes become spaces: harmless, and the rest of the export counts.
         for name, kept in (('Spined" Crawler', "Spined Crawler"), ("|cffff0000Spined", "cffff0000Spined"),

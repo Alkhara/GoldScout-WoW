@@ -176,6 +176,8 @@ class Result:
 
 
 def _int(text, what, line_no, result, low=0, high=MAX_ID):
+    if text == "-0":
+        text = "0"   # Lua writes a negative zero this way; it's still zero (one player's exports had it)
     if not INT.match(text):
         result.errors.append("Line %d: %s is not a whole number." % (line_no, what))
         return None
@@ -499,10 +501,16 @@ def _z(drops_a, attempts_a, drops_b, attempts_b):
 
 QUEST_ITEM_CLASS = 12   # Blizzard's item class for quest items
 
-# Junkboxes come only from picking pockets. In a mob's kill loot they're a rogue's pickpocket recorded as a kill
+# Items that come only from picking pockets. In a mob's kill loot they're a rogue's pickpocket recorded as a kill
 # (GoldScout before v0.12.40 missed picks of a mob you hadn't targeted, and pockets a Cheap Shot macro left full
-# turn up on the corpse), so they're dropped from kill loot as an export is read.
-PICKPOCKET_ONLY = frozenset((16882, 16883, 16884, 16885))   # Battered, Worn, Sturdy and Heavy Junkbox
+# turn up on the corpse), so they're dropped from kill loot as an export is read. Besides the junkboxes, the
+# community data shows these: picked from mobs that players who never pickpocket killed 430 to 4,800 times
+# without one dropping, while every one in kill loot came from a rogue (checked 2026-11-21).
+PICKPOCKET_ONLY = frozenset((
+    16882, 16883, 16884, 16885,   # Battered, Worn, Sturdy and Heavy Junkbox
+    5373, 5374, 5379, 5430,       # Lucky Charm, Small Pocket Watch, Boot Knife, Intricate Bauble
+    10457, 17124,                 # Empty Sea Snail Shell, Syndicate Emblem (a rogue quest's pickpocket)
+))
 
 
 class Outlier:
