@@ -1,4 +1,4 @@
-GoldScout-export 6^uh8e7u0ockuo^5
+GoldScout-export 6^uh8e7u0ockuo^6
 36^4^0^11^12^1436^0.4913^0.3316^4^Harvest Golem^732:1:1,814:3:3,1274:1:1^
 95^11^0^11^12^1436^0.4762^0.3502^11^Defias Smuggler^829:3:3,1179:1:1,1516:1:1,1733:1:1,2589:1:3,3013:1:1,3375:1:1^
 114^29^0^14^15^1436^0.5024^0.2857^29^Harvest Watcher^732:10:10,814:11:11,1274:10:10,1506:1:1,1514:1:1,4359:3:3,4363:1:1,211785:1:1,211787:1:1,255007:7:7,255010:5:5^
@@ -25,6 +25,10 @@ GoldScout-export 6^uh8e7u0ockuo^5
 1190^1^0^11^11^1432^0.2911^0.2917^1^Mountain Boar^769:1:1,771:1:1,2677:1:1,3172:1:1^
 1195^1^0^10^11^1432^0.2841^0.4768^1^Forest Lurker^3167:1:1^
 1202^3^0^11^12^1432^0.2689^0.4322^3^Tunnel Rat Kobold^1505:1:1,2589:1:1,3110:2:2^
+2572^2^0^35^36^1417^0.8098^0.3488^2^Drywhisker Kobold^4306:1:1,4539:1:1^
+2573^20^0^37^38^1417^0.8494^0.3137^20^Drywhisker Surveyor^1708:1:1,3799:1:1,3827:1:1,4306:5:12,4435:6:6,4539:1:1^
+2574^23^0^36^37^1417^0.8487^0.3216^23^Drywhisker Digger^1708:1:1,1710:1:1,3814:1:1,4306:6:11,4435:6:6,4539:2:2^
+2761^1^0^38^38^1417^0.6683^0.3005^1^Cresting Exile^4481:1:1^
 3974^1^0^0^0^0^0.0000^0.0000^0^^7756:1:1^
 3975^1^0^0^0^0^0.0000^0.0000^0^^3864:1:1,274295:1:1^
 3976^1^0^0^0^0^0.0000^0.0000^0^^10330:1:1^
@@ -102,6 +106,8 @@ GoldScout-export 6^uh8e7u0ockuo^5
 @i^1514^Rusty Warhammer
 @i^1516^Worn Hatchet
 @i^1529^Jade
+@i^1708^Sweet Nectar
+@i^1710^Greater Healing Potion
 @i^1730^Worn Mail Belt
 @i^1733^Worn Cloak
 @i^1735^Worn Mail Pants
@@ -140,13 +146,18 @@ GoldScout-export 6^uh8e7u0ockuo^5
 @i^3793^Interlaced Boots
 @i^3799^Interlaced Vest
 @i^3808^Double Mail Belt
+@i^3814^Double Mail Shoulderpads
 @i^3817^Reinforced Buckler
+@i^3827^Mana Potion
 @i^3864^Citrine
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4359^Handful of Copper Bolts
 @i^4363^Copper Modulator
+@i^4435^Mote of Myzrael
+@i^4481^Cresting Charm
 @i^4537^Tel'Abim Banana
+@i^4539^Goldenbark Apple
 @i^4564^Spiked Club of Magic
 @i^4566^Sturdy Quarterstaff of the Bandit
 @i^4569^Staunch Hammer of the Wolf
@@ -243,6 +254,8 @@ GoldScout-export 6^uh8e7u0ockuo^5
 @q^1514^0:2:0
 @q^1516^0:2:0
 @q^1529^2:7:1
+@q^1708^1:0:0
+@q^1710^1:0:0
 @q^1730^0:4:0
 @q^1733^0:4:0
 @q^1735^0:4:0
@@ -281,13 +294,18 @@ GoldScout-export 6^uh8e7u0ockuo^5
 @q^3793^0:4:0
 @q^3799^0:4:0
 @q^3808^0:4:0
+@q^3814^0:4:0
 @q^3817^0:4:0
+@q^3827^1:0:0
 @q^3864^2:7:1
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4359^1:7:1
 @q^4363^1:7:1
+@q^4435^1:12:0
+@q^4481^1:0:0
 @q^4537^1:0:0
+@q^4539^1:0:0
 @q^4564^2:2:0
 @q^4566^2:2:0
 @q^4569^2:2:0
@@ -348,6 +366,7 @@ GoldScout-export 6^uh8e7u0ockuo^5
 @q^274286^1:12:0
 @q^274295^3:4:0
 @q^275895^0:15:0
+@m^1417^Arathi Highlands
 @m^1420^Tirisfal Glades
 @m^1424^Hillsbrad Foothills
 @m^1432^Loch Modan
@@ -551,6 +570,10 @@ GoldScout-export 6^uh8e7u0ockuo^5
 @a^1190^105:1
 @a^1195^185:1
 @a^1202^165:3
+@a^2572^135:1,156:1
+@a^2573^116:2,117:1,136:9,137:8
+@a^2574^116:3,136:8,137:11,156:1
+@a^2761^133:1
 @a^4284^136:2
 @a^4285^137:1
 @a^4692^253:1
