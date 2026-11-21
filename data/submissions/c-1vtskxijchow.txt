@@ -1,4 +1,4 @@
-GoldScout-export 6^1vtskxijchow^21
+GoldScout-export 6^1vtskxijchow^23
 6^17^0^1^2^1429^0.4974^0.3636^17^Kobold Daninho^755:5:5,1369:1:1,1372:1:1,1380:1:1,2589:7:7,2651:1:1,2656:1:1,4536:3:3,247834:1:1,247839:2:2^
 30^2^0^5^6^1429^0.4029^0.7131^2^Aranha da Floresta^5465:1:2^
 38^19^0^3^4^1429^0.5494^0.4385^19^Capanga Défias^752:12:12,1367:1:1,1374:1:1,1377:1:1,1378:1:1,2070:2:2,2210:1:1,2589:6:6,3365:1:1^
@@ -50,6 +50,10 @@ GoldScout-export 6^1vtskxijchow^21
 822^18^0^8^9^1429^0.6081^0.7350^18^Jovem Urso da Floresta^3169:3:3,3170:4:4,4663:1:1,4865:6:6,6521:1:1,7073:7:7,7074:5:5,286215:1:1^
 834^1^0^10^11^1436^0.5808^0.1610^1^Coiote^2673:1:1,3300:1:1^
 1020^1^0^22^22^1437^0.2874^0.4146^1^Raptor Mosqueado^3685:1:1^
+1024^13^4^20^21^1437^0.1474^0.3990^13^Murloc Guelrazul^730:5:5,1468:6:6,5371:1:1,5524:3:3,5784:1:1,6289:1:2,6308:1:1,17057:5:5^5371:2:2
+1025^3^1^21^22^1437^0.1503^0.3750^3^Saltapoças Guelrazul^730:3:3,5524:1:1,6308:1:2,17057:1:1^
+1026^1^0^22^22^1437^0.1458^0.3835^1^Colhedor Guelrazul^1468:1:1^
+1040^1^0^24^24^1437^0.1942^0.2822^1^Rastejante do Pântano^^
 1109^3^0^13^14^1436^0.5117^0.5242^3^Ripa-carne^729:2:2,3399:1:1,6889:3:3,17056:1:1^
 1117^1^0^10^10^1426^0.7779^0.6131^1^Quebraossos Pedraqueixo^^
 1118^1^0^11^11^1426^0.7804^0.5332^1^Quebradorso Pedraqueixo^^
@@ -57,6 +61,7 @@ GoldScout-export 6^1vtskxijchow^21
 1400^2^0^23^24^1437^0.1884^0.5576^2^Crocolisco do Pantanal^770:1:1,3667:1:1^
 1417^10^0^21^22^1437^0.1626^0.5065^10^Crocolisco do Pantanal Jovem^770:3:3,3397:6:6,3667:3:3,13136:1:1^
 1922^10^0^7^8^1429^0.6309^0.6661^10^Lobo Cinza da Floresta^2672:6:6,3299:3:3,3300:3:3,247877:2:2^
+2089^6^0^25^26^1437^0.2026^0.2566^6^Crocolisco do Pantanal Gigante^770:1:1,3348:6:6^
 2170^1^0^18^19^1439^0.4081^0.8824^1^Ursino Bosquenero^1787:1:1,14561:1:1^
 2171^1^0^19^19^1439^0.4083^0.8831^1^Xamã Bosquenero^2589:1:1^
 2734^1^0^41^41^1418^0.0852^0.6821^1^Patriarca Espreitador da Serra^12202:1:1,213544:1:1^
@@ -238,6 +243,7 @@ GoldScout-export 6^1vtskxijchow^21
 @i^3214^Braçadeiras do Guerreiro
 @i^3299^Canino Fraturado
 @i^3300^Pata de Coelho
+@i^3348^Pele de Crocolisco Gigante
 @i^3363^Cinto Puído
 @i^3365^Braçadeiras Puídas
 @i^3370^Cinto de Retalhos
@@ -287,8 +293,10 @@ GoldScout-export 6^1vtskxijchow^21
 @i^5465^Perna Pequena de Aranha
 @i^5490^Cabeça de Iracauda
 @i^5523^Marisquinho com Cracas
+@i^5524^Marisco de Casca Grossa
 @i^5734^Diagramas do Super Ceifador 6000
 @i^5771^Molde: Bolsa de Linho Vermelha
+@i^5784^Escama Viscosa de Murloc
 @i^5829^Bico Afiadíssimo
 @i^6147^Cinto Velho e Roto
 @i^6148^Botas Cobertas de Teia
@@ -296,6 +304,7 @@ GoldScout-export 6^1vtskxijchow^21
 @i^6289^Pargo-da-lama Bocalonga Cru
 @i^6291^Peixinho Brilhante Cru
 @i^6303^Cavala Deslizapele Crua
+@i^6308^Bagre de Bigode Cerdoso Cru
 @i^6337^Perneiras de Infantaria de Proteção contra a Natureza
 @i^6521^Luvas do Pioneiro
 @i^6558^Cinto do Bardo do Tigre
@@ -495,6 +504,7 @@ GoldScout-export 6^1vtskxijchow^21
 @q^3214^1:4:0
 @q^3299^0:15:0
 @q^3300^0:15:0
+@q^3348^1:12:0
 @q^3363^0:4:0
 @q^3365^0:4:0
 @q^3370^0:4:0
@@ -544,8 +554,10 @@ GoldScout-export 6^1vtskxijchow^21
 @q^5465^1:7:1
 @q^5490^1:12:0
 @q^5523^1:7:0
+@q^5524^1:7:0
 @q^5734^1:12:0
 @q^5771^1:9:0
+@q^5784^1:7:1
 @q^5829^0:15:0
 @q^6147^2:4:0
 @q^6148^1:4:0
@@ -553,6 +565,7 @@ GoldScout-export 6^1vtskxijchow^21
 @q^6289^1:7:1
 @q^6291^1:7:1
 @q^6303^1:7:1
+@q^6308^1:7:1
 @q^6337^2:4:0
 @q^6521^1:4:0
 @q^6558^2:4:0
@@ -1677,6 +1690,10 @@ GoldScout-export 6^1vtskxijchow^21
 @a^822^253:3,255:1,271:1,274:3,308:1,309:3,311:1,312:1,314:1,315:1,347:1,368:1
 @a^834^71:1
 @a^1020^165:1
+@a^1024^142:3,143:3,162:4,163:3
+@a^1025^142:1,143:2
+@a^1026^142:1
+@a^1040^103:1
 @a^1109^191:1,209:1,229:1
 @a^1117^255:1
 @a^1118^215:1
@@ -1684,6 +1701,7 @@ GoldScout-export 6^1vtskxijchow^21
 @a^1400^203:1,223:1
 @a^1417^182:1,183:3,202:3,203:3
 @a^1922^251:1,252:1,253:1,271:3,272:2,274:1,292:1
+@a^2089^84:3,103:3
 @a^2170^348:1
 @a^2171^348:1
 @a^2734^261:1

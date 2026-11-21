@@ -1,4 +1,4 @@
-GoldScout-export 6^yl1menqmz4ci^10
+GoldScout-export 6^yl1menqmz4ci^11
 3^3^0^24^25^1431^0.2595^0.3304^3^Flesh Eater^884:2:2,2592:1:1,4706:1:1,6530:1:1^
 202^11^0^23^24^1431^0.2191^0.4483^11^Skeletal Horror^2592:3:4,2782:1:1,4606:1:1,9782:1:1,281146:1:1^
 205^11^0^28^29^1431^0.6212^0.4254^11^Nightbane Dark Runner^929:1:1,5635:1:1^
@@ -69,6 +69,7 @@ GoldScout-export 6^yl1menqmz4ci^10
 2091^1^0^32^32^1437^0.5246^0.5412^1^Chieftain Nek'rosh^3625:1:1^
 2108^2^0^29^29^1437^0.4020^0.4585^2^Garneg Charskull^3392:2:2^
 2462^11^0^25^25^1431^0.2377^0.3483^11^Flesh Eating Worm^^
+3256^19^0^16^18^1413^0.5825^0.4727^19^Sunscale Scytheclaw^3180:2:2,5055:7:7,5124:7:7,5165:12:12,14559:1:1,211854:1:1^
 3381^1^0^12^13^1413^0.6351^0.4917^1^Southsea Brigand^2589:1:1,3290:1:1^
 3467^1^0^16^16^1413^0.6418^0.4714^1^Baron Longshore^2589:1:1^
 4040^3^0^21^22^1437^0.5239^0.6248^3^Cave Stalker^1081:1:1,1288:1:1,3174:2:2,280319:1:1^
@@ -211,6 +212,9 @@ GoldScout-export 6^yl1menqmz4ci^10
 @i^4708^Bright Belt
 @i^4710^Forest Cloak
 @i^4713^Silver-thread Cloak
+@i^5055^Intact Raptor Horn
+@i^5124^Small Raptor Tooth
+@i^5165^Sunscale Feather
 @i^5524^Thick-shelled Clam
 @i^5529^Tomb Dust
 @i^5635^Sharp Claw
@@ -238,6 +242,7 @@ GoldScout-export 6^yl1menqmz4ci^10
 @i^9827^Scaled Leather Belt of Agility
 @i^9869^Renegade Belt of the Knight
 @i^14172^Buccaneer's Robes of the Tiger
+@i^14559^Prospector's Sash
 @i^15212^Fighter Broadsword of Stamina
 @i^15259^Hefty Battlehammer of the Monkey
 @i^15927^Bright Sphere
@@ -376,6 +381,9 @@ GoldScout-export 6^yl1menqmz4ci^10
 @q^4708^2:4:0
 @q^4710^2:4:0
 @q^4713^2:4:0
+@q^5055^1:12:0
+@q^5124^0:15:0
+@q^5165^1:12:0
 @q^5524^1:7:0
 @q^5529^0:15:0
 @q^5635^1:7:1
@@ -403,6 +411,7 @@ GoldScout-export 6^yl1menqmz4ci^10
 @q^9827^2:4:0
 @q^9869^2:4:0
 @q^14172^2:4:0
+@q^14559^2:4:0
 @q^15212^2:2:0
 @q^15259^2:2:0
 @q^15927^2:4:0
@@ -1231,6 +1240,7 @@ GoldScout-export 6^yl1menqmz4ci^10
 @a^2091^210:1
 @a^2108^187:1,188:1
 @a^2462^124:6,144:5
+@a^3256^132:5,191:2,211:12
 @a^3381^192:1
 @a^3467^192:1
 @a^4040^250:3
