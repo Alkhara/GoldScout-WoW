@@ -1,4 +1,4 @@
-GoldScout-export 6^2utw21qcvdk7^4
+GoldScout-export 6^2utw21qcvdk7^5
 3^3^0^24^25^1431^0.2423^0.3461^3^Flesh Eater^884:1:1,4306:1:1,5529:1:1,6530:1:1^
 205^1^0^28^29^1431^0.6450^0.6902^1^Nightbane Dark Runner^^
 210^5^0^26^27^1431^0.2332^0.3101^5^Bone Chewer^884:1:1,4306:1:2,7419:1:1^
@@ -19,6 +19,9 @@ GoldScout-export 6^2utw21qcvdk7^4
 1200^1^1^32^32^1431^0.1740^0.3328^1^Morbent Fel^^
 1871^1^0^31^31^1431^0.2800^0.3271^1^Eliza's Guard^^
 2044^3^0^25^26^1429^0.8549^0.6971^2^Forlorn Spirit^2589:2:5^
+2375^1^0^29^29^1424^0.3526^0.6987^1^Torn Fin Coastrunner^5524:1:1,6592:1:1,17058:1:1^
+2376^9^1^30^31^1424^0.4020^0.6786^9^Torn Fin Oracle^4071:1:1,5524:3:3,6308:1:1,11152:1:1,17057:4:4,17058:5:5^6308:1:1
+2377^18^2^31^32^1424^0.4133^0.6891^18^Torn Fin Tidehunter^3716:4:4,5524:5:5,5785:1:1,6308:1:2,17057:4:4,17058:3:3,213547:1:1^10457:1:1
 2462^6^0^25^25^1431^0.2365^0.3484^6^Flesh Eating Worm^^
 4420^1^0^0^0^0^0.0000^0.0000^0^^6687:1:1^
 4421^1^0^0^0^0^0.0000^0.0000^0^^5792:1:1,6692:1:1^
@@ -135,11 +138,13 @@ GoldScout-export 6^2utw21qcvdk7^4
 @i^3629^Mistmantle Family Ring
 @i^3656^Lambent Scale Shield
 @i^3671^Lifeless Skull
+@i^3716^Murloc Head
 @i^3770^Mutton Chop
 @i^3779^Hefty War Axe
 @i^3784^Metal Stave
 @i^3807^Hardened Leather Tunic
 @i^3870^Plans: Green Iron Shoulders
+@i^4071^Glimmering Mail Breastplate
 @i^4306^Silk Cloth
 @i^4364^Coarse Blasting Powder
 @i^4377^Heavy Blasting Powder
@@ -153,14 +158,18 @@ GoldScout-export 6^2utw21qcvdk7^4
 @i^5374^Small Pocket Watch
 @i^5375^Scratching Stick
 @i^5376^Broken Mirror
+@i^5524^Thick-shelled Clam
 @i^5529^Tomb Dust
+@i^5785^Thick Murloc Scale
 @i^5792^Razorflank's Medallion
 @i^5825^Treshala's Pendant
+@i^6308^Raw Bristle Whisker Catfish
 @i^6387^Glimmering Mail Bracers
 @i^6438^Dull Elemental Bracer
 @i^6439^Broken Binding Bracer
 @i^6530^Nightcrawlers
 @i^6591^Battleforge Wristguards of Power
+@i^6592^Battleforge Armor of the Beast
 @i^6595^Battleforge Gauntlets of Stamina
 @i^6599^Battleforge Shield of Holy Wrath
 @i^6603^Dervish Tunic of Agility
@@ -188,6 +197,8 @@ GoldScout-export 6^2utw21qcvdk7^4
 @i^9867^Renegade Cloak of Agility
 @i^10404^Durable Belt of Intellect
 @i^10408^Banded Helm of the Owl
+@i^10457^Empty Sea Snail Shell
+@i^11152^Formula: Enchant Gloves - Fishing
 @i^11391^Spined Bat Wing
 @i^11392^Severed Bat Claw
 @i^11393^Small Bat Skull
@@ -199,7 +210,10 @@ GoldScout-export 6^2utw21qcvdk7^4
 @i^15521^Spiked Chain Leggings of the Tiger
 @i^16882^Battered Junkbox
 @i^16883^Worn Junkbox
+@i^17057^Shiny Fish Scales
+@i^17058^Fish Oil
 @i^211854^Scroll: OMIT KESA
+@i^213547^Scroll: THAW WORDS
 @i^248692^Waylaid Crate: Expert Ore
 @i^248707^Waylaid Crate: Journeyman Parts
 @i^251961^Arcane Mote
@@ -254,11 +268,13 @@ GoldScout-export 6^2utw21qcvdk7^4
 @q^3629^1:12:0
 @q^3656^2:4:0
 @q^3671^0:15:0
+@q^3716^1:12:0
 @q^3770^1:0:0
 @q^3779^0:2:0
 @q^3784^0:2:0
 @q^3807^0:4:0
 @q^3870^2:9:0
+@q^4071^2:4:0
 @q^4306^1:7:1
 @q^4364^1:7:1
 @q^4377^1:7:1
@@ -272,14 +288,18 @@ GoldScout-export 6^2utw21qcvdk7^4
 @q^5374^0:15:0
 @q^5375^0:15:0
 @q^5376^0:15:0
+@q^5524^1:7:0
 @q^5529^0:15:0
+@q^5785^1:7:1
 @q^5792^1:12:0
 @q^5825^1:12:0
+@q^6308^1:7:1
 @q^6387^2:4:0
 @q^6438^0:15:0
 @q^6439^0:15:0
 @q^6530^1:0:0
 @q^6591^2:4:0
+@q^6592^2:4:0
 @q^6595^2:4:0
 @q^6599^2:4:0
 @q^6603^2:4:0
@@ -307,6 +327,8 @@ GoldScout-export 6^2utw21qcvdk7^4
 @q^9867^2:4:0
 @q^10404^2:4:0
 @q^10408^2:4:0
+@q^10457^0:15:0
+@q^11152^2:9:0
 @q^11391^0:15:0
 @q^11392^0:15:0
 @q^11393^0:15:0
@@ -318,7 +340,10 @@ GoldScout-export 6^2utw21qcvdk7^4
 @q^15521^2:4:0
 @q^16882^1:15:0
 @q^16883^1:15:0
+@q^17057^1:15:0
+@q^17058^1:15:0
 @q^211854^1:0:0
+@q^213547^1:0:0
 @q^248692^1:0:1
 @q^248707^2:0:1
 @q^251961^1:12:0
@@ -341,55 +366,176 @@ GoldScout-export 6^2utw21qcvdk7^4
 @q^276160^0:15:0
 @m^1413^The Barrens
 @m^1416^Alterac Mountains
+@m^1424^Hillsbrad Foothills
 @m^1429^Elwynn Forest
 @m^1431^Duskwood
 @c^118^
+@c^724^
+@c^733^
+@c^787^
 @c^858^
 @c^929^
+@c^1017^
+@c^1082^
 @c^1251^
 @c^1710^
 @c^2581^
+@c^2679^
+@c^2680^
+@c^2681^
+@c^2682^
+@c^2683^
+@c^2684^
+@c^2685^
+@c^2687^
+@c^2888^
 @c^2892^
 @c^2893^
+@c^3220^
 @c^3530^
 @c^3531^
+@c^3662^
+@c^3663^
+@c^3664^
+@c^3665^
+@c^3666^
+@c^3726^
+@c^3727^
+@c^3728^
+@c^3729^
 @c^3775^
 @c^3776^
 @c^3928^
+@c^4457^
+@c^4592^
+@c^4593^
+@c^4594^
+@c^5095^
 @c^5237^
+@c^5472^
+@c^5473^
+@c^5474^
+@c^5476^
+@c^5477^
+@c^5478^
+@c^5479^
+@c^5480^
+@c^5525^
+@c^5526^
+@c^5527^
 @c^5530^
+@c^6038^
+@c^6290^
+@c^6316^
 @c^6450^
 @c^6451^
 @c^6452^
 @c^6453^
+@c^6657^
+@c^6887^
+@c^6888^
+@c^6890^
 @c^6947^
 @c^6949^
 @c^6950^
 @c^6951^
+@c^7676^
+@c^8364^
 @c^8544^
 @c^8545^
 @c^8926^
 @c^8927^
 @c^8928^
+@c^8957^
 @c^8984^
 @c^8985^
 @c^9186^
+@c^10841^
 @c^10918^
 @c^10920^
 @c^10921^
 @c^10922^
+@c^12209^
+@c^12210^
+@c^12212^
+@c^12213^
+@c^12214^
+@c^12215^
+@c^12216^
+@c^12217^
+@c^12218^
+@c^12224^
 @c^13446^
+@c^13851^
+@c^13927^
+@c^13928^
+@c^13929^
+@c^13930^
+@c^13931^
+@c^13932^
+@c^13933^
+@c^13934^
+@c^13935^
 @c^14529^
 @c^14530^
+@c^16766^
+@c^17197^
+@c^17198^
+@c^17222^
+@c^18045^
+@c^18254^
 @c^19440^
+@c^20074^
+@c^20452^
 @c^20844^
+@c^21023^
+@c^21072^
+@c^21217^
 @c^23684^
 @c^217345^
 @c^217346^
 @c^217347^
 @c^226374^
 @c^232433^
+@c^232436^
+@c^232438^
 @c^234444^
+@c^238637^
+@c^238638^
+@c^238639^
+@c^238641^
+@c^238642^
+@c^249865^
+@c^249866^
+@c^249867^
+@c^249868^
+@c^249869^
+@c^249870^
+@c^249871^
+@c^249872^
+@c^249873^
+@c^249874^
+@c^249875^
+@c^249876^
+@c^250065^
+@c^250066^
+@c^250067^
+@c^250068^
+@c^250069^
+@c^250070^
+@c^250071^
+@c^250072^
+@c^250073^
+@c^250074^
+@c^250075^
+@c^250076^
+@c^250077^
+@c^250078^
+@c^250079^
+@c^250080^
+@c^250081^
+@c^251525^
+@c^252683^
 @c^255715^
 @c^255716^
 @c^255717^
@@ -398,9 +544,21 @@ GoldScout-export 6^2utw21qcvdk7^4
 @c^255720^
 @c^255721^
 @c^255722^
+@c^263507^
+@c^263509^
+@c^263512^
+@c^267341^
+@c^274971^
+@c^274976^
 @c^279940^
 @c^279951^
+@c^279957^
+@c^279961^
 @c^279968^
+@c^279974^
+@c^279981^
+@c^279982^
+@c^286152^
 @a^3^124:1,125:1,145:1
 @a^205^272:1
 @a^210^104:2,124:2,125:1
@@ -420,6 +578,9 @@ GoldScout-export 6^2utw21qcvdk7^4
 @a^1200^123:1
 @a^1871^125:1
 @a^2044^277:2
+@a^2375^267:1
+@a^2376^267:3,268:4,269:1,287:1
+@a^2377^267:6,268:10,287:1,289:1
 @a^2462^124:2,144:2,145:2
 @a^6132^368:3
 @l^0^enUS

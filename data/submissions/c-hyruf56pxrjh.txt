@@ -1,4 +1,4 @@
-GoldScout-export 6^hyruf56pxrjh^2
+GoldScout-export 6^hyruf56pxrjh^3
 686^1^0^35^36^1434^0.3203^0.2800^1^Lashtail Raptor^1696:1:1,4461:1:1,5637:1:1^
 689^1^0^34^35^1434^0.2463^0.1701^1^Crystal Spine Basilisk^1702:1:1,4093:1:1^
 701^2^0^34^35^1434^0.2310^0.1259^2^Bloodscalp Mystic^3915:1:1,4306:1:2^
@@ -8,6 +8,9 @@ GoldScout-export 6^hyruf56pxrjh^2
 879^2^0^35^36^1434^0.2465^0.2438^2^Saltscale Hunter^5785:1:1,5796:1:1,17058:1:1^
 4342^1^0^37^37^1445^0.4186^0.3818^1^Drywallow Vicejaw^3667:1:1^
 4343^1^0^37^37^1445^0.4496^0.4573^1^Drywallow Snapper^3667:1:1^
+4386^1^0^37^37^1445^0.3938^0.3408^1^Withervine Bark Ripper^^
+11562^1^0^33^34^1443^0.1974^0.7580^1^Drysnap Crawler^^
+11563^2^0^34^35^1443^0.1919^0.7705^2^Drysnap Pincer^17057:1:1^
 @i^1696^Curved Raptor Talon
 @i^1702^Intact Basilisk Spine
 @i^1710^Greater Healing Potion
@@ -23,14 +26,21 @@ GoldScout-export 6^hyruf56pxrjh^2
 @i^5637^Large Fang
 @i^5785^Thick Murloc Scale
 @i^5796^Encrusted Tail Fin
+@i^6303^Raw Slitherskin Mackerel
+@i^6307^Message in a Bottle
 @i^6308^Raw Bristle Whisker Catfish
 @i^6309^17 Pound Catfish
 @i^6355^Sturdy Locked Chest
 @i^6357^Sealed Crate
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
+@i^6361^Raw Rainbow Fin Albacore
 @i^6362^Raw Rockscale Cod
 @i^8365^Raw Mithril Head Trout
+@i^13758^Raw Redgill
+@i^13759^Raw Nightfin Snapper
+@i^16967^Feralas Ahi
+@i^16968^Sar'theris Striker
 @i^16969^Savage Coast Blue Sailfin
 @i^16970^Misty Reed Mahi Mahi
 @i^17057^Shiny Fish Scales
@@ -50,26 +60,42 @@ GoldScout-export 6^hyruf56pxrjh^2
 @q^5637^1:7:1
 @q^5785^1:7:1
 @q^5796^1:12:0
+@q^6303^1:7:1
+@q^6307^1:15:0
 @q^6308^1:7:1
 @q^6309^1:15:0
 @q^6355^1:15:0
 @q^6357^1:15:0
 @q^6358^1:7:1
 @q^6359^1:7:1
+@q^6361^1:7:1
 @q^6362^1:7:1
 @q^8365^1:7:1
+@q^13758^1:7:1
+@q^13759^1:7:1
+@q^16967^1:15:0
+@q^16968^1:12:0
 @q^16969^1:12:0
 @q^16970^1:12:0
 @q^17057^1:15:0
 @q^17058^1:15:0
+@m^1413^The Barrens
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
+@m^1443^Desolace
+@m^1444^Feralas
 @m^1445^Dustwallow Marsh
+@c^118^
 @c^724^
 @c^733^
 @c^787^
+@c^858^
+@c^929^
 @c^1017^
 @c^1082^
+@c^1251^
+@c^1710^
+@c^2581^
 @c^2679^
 @c^2680^
 @c^2681^
@@ -83,6 +109,8 @@ GoldScout-export 6^hyruf56pxrjh^2
 @c^2842^
 @c^2888^
 @c^3220^
+@c^3530^
+@c^3531^
 @c^3575^
 @c^3576^
 @c^3577^
@@ -97,6 +125,7 @@ GoldScout-export 6^hyruf56pxrjh^2
 @c^3729^
 @c^3859^
 @c^3860^
+@c^3928^
 @c^4357^
 @c^4358^
 @c^4359^
@@ -168,6 +197,10 @@ GoldScout-export 6^hyruf56pxrjh^2
 @c^6219^
 @c^6290^
 @c^6316^
+@c^6450^
+@c^6451^
+@c^6452^
+@c^6453^
 @c^6533^
 @c^6657^
 @c^6712^
@@ -183,6 +216,8 @@ GoldScout-export 6^hyruf56pxrjh^2
 @c^8068^
 @c^8069^
 @c^8364^
+@c^8544^
+@c^8545^
 @c^8957^
 @c^9312^
 @c^9313^
@@ -250,6 +285,7 @@ GoldScout-export 6^hyruf56pxrjh^2
 @c^12218^
 @c^12224^
 @c^12359^
+@c^13446^
 @c^13851^
 @c^13927^
 @c^13928^
@@ -260,6 +296,8 @@ GoldScout-export 6^hyruf56pxrjh^2
 @c^13933^
 @c^13934^
 @c^13935^
+@c^14529^
+@c^14530^
 @c^15846^
 @c^15992^
 @c^15993^
@@ -304,6 +342,7 @@ GoldScout-export 6^hyruf56pxrjh^2
 @c^18984^
 @c^18986^
 @c^19026^
+@c^19440^
 @c^19998^
 @c^19999^
 @c^20074^
@@ -339,6 +378,7 @@ GoldScout-export 6^hyruf56pxrjh^2
 @c^21719^
 @c^21720^
 @c^22728^
+@c^23684^
 @c^210147^
 @c^211427^
 @c^213383^
@@ -350,6 +390,7 @@ GoldScout-export 6^hyruf56pxrjh^2
 @c^221026^
 @c^221027^
 @c^227849^
+@c^232433^
 @c^232436^
 @c^232438^
 @c^233984^
@@ -407,6 +448,14 @@ GoldScout-export 6^hyruf56pxrjh^2
 @c^251291^
 @c^251525^
 @c^252683^
+@c^255715^
+@c^255716^
+@c^255717^
+@c^255718^
+@c^255719^
+@c^255720^
+@c^255721^
+@c^255722^
 @c^260784^
 @c^260792^
 @c^260793^
@@ -461,9 +510,11 @@ GoldScout-export 6^hyruf56pxrjh^2
 @c^277132^
 @c^279272^
 @c^279273^
+@c^279940^
 @c^279948^
 @c^279949^
 @c^279950^
+@c^279951^
 @c^279952^
 @c^279957^
 @c^279960^
@@ -471,6 +522,7 @@ GoldScout-export 6^hyruf56pxrjh^2
 @c^279965^
 @c^279966^
 @c^279967^
+@c^279968^
 @c^279974^
 @c^279981^
 @c^279982^
@@ -498,7 +550,13 @@ GoldScout-export 6^hyruf56pxrjh^2
 @a^879^84:2
 @a^4342^148:1
 @a^4343^188:1
+@a^4386^127:1
+@a^11562^303:1
+@a^11563^303:1,304:1
+@f^1413^0^16^234^6303:2:2,6307:1:1,6358:6:6,6361:7:7^152:16
 @f^1434^0^17^225^4603:2:2,6358:2:2,6359:1:1,6362:12:12,16969:2:2^85:17
 @f^1435^0^12^225^4603:3:3,6355:1:1,6357:1:1,6359:2:2,6362:5:5,16970:1:1^14:3,15:8,35:1
+@f^1443^0^39^225^4603:12:12,6357:1:1,6358:5:5,6359:4:4,6362:17:17,16968:1:1^305:39
+@f^1444^0^73^225^6358:6:6,8365:12:12,13758:34:34,13759:21:21,16967:1:1^175:70,212:3
 @f^1445^0^18^222^6308:6:6,6309:1:1,8365:11:11^127:18
 @l^0^enUS
