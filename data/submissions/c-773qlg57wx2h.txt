@@ -1,4 +1,4 @@
-GoldScout-export 6^773qlg57wx2h^10
+GoldScout-export 6^773qlg57wx2h^12
 95^4^0^11^12^1436^0.4469^0.2249^4^Defias Smuggler^2589:1:3^
 121^2^0^15^16^1436^0.3932^0.7033^2^Defias Pathstalker^1513:1:1^
 124^1^0^16^16^1436^0.2931^0.5001^1^Riverpaw Brute^^
@@ -68,6 +68,8 @@ GoldScout-export 6^773qlg57wx2h^10
 2251^16^0^33^34^1416^0.3380^0.5405^16^Giant Yeti^1708:1:1,2289:1:1,3385:1:1,3720:5:5^
 2319^2^0^34^35^1416^0.5824^0.6776^2^Syndicate Wizard^4306:1:2,213421:1:1^
 2351^1^0^21^21^1424^0.6478^0.3594^1^Gray Bear^2940:1:1,3730:1:1^
+2376^4^0^30^31^1424^0.4256^0.6929^4^Torn Fin Oracle^1205:1:1,5524:2:2,17057:1:1,17058:2:2,249881:1:1^
+2377^7^0^31^32^1424^0.4247^0.6934^7^Torn Fin Tidehunter^3800:1:1,5524:2:2,6308:1:3,17057:1:1,17058:2:2^
 2406^1^0^32^33^1416^0.4508^0.7639^1^Mountain Lion^1687:1:1^
 2407^5^0^33^34^1416^0.4392^0.8337^5^Hulking Mountain Lion^1686:3:3,3731:2:2,5637:2:2^
 2408^15^0^30^31^1416^0.2974^0.3565^15^Snapjaw^3712:3:6,4555:6:6,4556:2:2,5524:7:7,6308:3:5^
@@ -218,6 +220,7 @@ GoldScout-export 6^773qlg57wx2h^10
 @i^3731^Lion Meat
 @i^3770^Mutton Chop
 @i^3780^Long-barreled Musket
+@i^3800^Hardened Leather Belt
 @i^3931^Poisoned Spider Fang
 @i^4299^Pattern: Guardian Armor
 @i^4306^Silk Cloth
@@ -240,7 +243,10 @@ GoldScout-export 6^773qlg57wx2h^10
 @i^5741^Rock Chip
 @i^5784^Slimy Murloc Scale
 @i^6289^Raw Longjaw Mud Snapper
+@i^6303^Raw Slitherskin Mackerel
 @i^6308^Raw Bristle Whisker Catfish
+@i^6359^Firefin Snapper
+@i^6361^Raw Rainbow Fin Albacore
 @i^6382^Forest Leather Belt
 @i^6398^Emblazoned Belt
 @i^6528^Spellbinder Robe
@@ -262,10 +268,13 @@ GoldScout-export 6^773qlg57wx2h^10
 @i^10402^Blackened Defias Boots
 @i^12202^Tiger Meat
 @i^12203^Red Wolf Meat
+@i^12238^Darkshore Grouper
 @i^14168^Buccaneer's Gloves of the Whale
 @i^15210^Raider Shortsword of Stamina
 @i^15211^Militant Shortsword of Magic
 @i^17056^Light Feather
+@i^17057^Shiny Fish Scales
+@i^17058^Fish Oil
 @i^211784^Scroll: WUBBA WUBBA
 @i^211785^Scroll: CWAL
 @i^211786^Scroll: CHAP BALK WELLES
@@ -278,6 +287,7 @@ GoldScout-export 6^773qlg57wx2h^10
 @i^248682^Waylaid Crate: Apprentice Herbs
 @i^248683^Waylaid Crate: Apprentice Ore
 @i^248703^Waylaid Crate: Apprentice Ingots
+@i^249881^Recipe: Root Tea
 @i^270180^Horrible Rootcore
 @i^270229^Treads of the Protector Golem
 @i^270231^Flamefist Grips
@@ -406,6 +416,7 @@ GoldScout-export 6^773qlg57wx2h^10
 @q^3731^1:7:1
 @q^3770^1:0:0
 @q^3780^0:2:0
+@q^3800^0:4:0
 @q^3931^0:15:0
 @q^4299^2:9:0
 @q^4306^1:7:1
@@ -428,7 +439,10 @@ GoldScout-export 6^773qlg57wx2h^10
 @q^5741^0:15:0
 @q^5784^1:7:1
 @q^6289^1:7:1
+@q^6303^1:7:1
 @q^6308^1:7:1
+@q^6359^1:7:1
+@q^6361^1:7:1
 @q^6382^2:4:0
 @q^6398^2:4:0
 @q^6528^2:4:0
@@ -450,10 +464,13 @@ GoldScout-export 6^773qlg57wx2h^10
 @q^10402^3:4:0
 @q^12202^1:7:1
 @q^12203^1:7:1
+@q^12238^1:0:0
 @q^14168^2:4:0
 @q^15210^2:2:0
 @q^15211^2:2:0
 @q^17056^1:15:1
+@q^17057^1:15:0
+@q^17058^1:15:0
 @q^211784^1:0:0
 @q^211785^1:0:0
 @q^211786^1:0:0
@@ -466,6 +483,7 @@ GoldScout-export 6^773qlg57wx2h^10
 @q^248682^1:0:1
 @q^248683^1:0:1
 @q^248703^2:0:1
+@q^249881^1:9:0
 @q^270180^1:12:0
 @q^270229^3:4:0
 @q^270231^3:4:0
@@ -490,6 +508,8 @@ GoldScout-export 6^773qlg57wx2h^10
 @m^1433^Redridge Mountains
 @m^1436^Westfall
 @m^1437^Wetlands
+@m^1439^Darkshore
+@m^1453^Stormwind City
 @c^118^
 @c^724^
 @c^733^
@@ -1781,6 +1801,8 @@ GoldScout-export 6^773qlg57wx2h^10
 @a^2251^147:2,166:1,186:4,205:1,206:2,245:1,267:4,287:1
 @a^2319^271:2
 @a^2351^152:1
+@a^2376^268:3,288:1
+@a^2377^268:6,288:1
 @a^2406^309:1
 @a^2407^309:2,347:2,349:1
 @a^2408^87:1,106:2,125:1,126:3,145:2,146:1,164:1,165:3,184:1
@@ -1797,4 +1819,7 @@ GoldScout-export 6^773qlg57wx2h^10
 @a^271348^195:4
 @a^271351^194:1
 @a^271898^149:2
+@f^1424^0^7^144^6359:4:4,6361:3:3^267:2,268:5
+@f^1439^0^20^147^6303:3:3,6361:7:7,12238:10:10^166:20
+@f^1453^0^1^146^6361:1:1^224:1
 @l^0^enUS

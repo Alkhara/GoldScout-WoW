@@ -1,4 +1,7 @@
-GoldScout-export 6^fnaeeez8y0xl^9
+GoldScout-export 6^fnaeeez8y0xl^10
+2269^29^0^26^27^1424^0.3009^0.5371^29^Hillsbrad Miner^422:5:5,1825:1:1,1826:1:1,2290:1:1,2592:4:6,2772:1:1,4306:7:10,7127:11:11,9799:1:1,262888:1:1^
+2270^3^0^27^28^1424^0.2785^0.5919^3^Hillsbrad Sentry^4306:2:4^
+2503^10^0^27^28^1424^0.2997^0.5358^10^Hillsbrad Foreman^929:2:2,1784:1:1,1810:1:1,2592:2:2,4306:3:5^
 2673^1^0^17^17^1442^0.7265^0.6021^1^Target Dummy^2589:1:1,2841:1:1,4359:1:1,4363:1:1^
 3251^2^0^20^20^1413^0.4506^0.6958^2^Silithid Grub^5268:1:1,7119:2:2^
 3252^3^0^21^22^1413^0.4488^0.6942^3^Silithid Swarmer^5269:1:1,7119:3:3^
@@ -55,6 +58,7 @@ GoldScout-export 6^fnaeeez8y0xl^9
 275044^1^0^0^0^0^0.0000^0.0000^0^^^
 275045^1^0^0^0^0^0.0000^0.0000^0^^4542:1:1^
 275046^1^0^0^0^0^0.0000^0.0000^0^^284844:1:1^
+@i^422^Dwarven Mild
 @i^730^Murloc Eye
 @i^770^Pointy Crocolisk Tooth
 @i^929^Healing Potion
@@ -77,8 +81,11 @@ GoldScout-export 6^fnaeeez8y0xl^9
 @i^1804^Tough Leather Boots
 @i^1806^Tough Cloak
 @i^1809^Tough Leather Shoulderpads
+@i^1810^Tough Leather Armor
 @i^1820^Wooden Maul
 @i^1823^Bludgeoning Cudgel
+@i^1825^Bulky Bludgeon
+@i^1826^Rock Maul
 @i^2251^Gooey Spider Leg
 @i^2287^Haunch of Meat
 @i^2290^Scroll of Intellect II
@@ -86,6 +93,7 @@ GoldScout-export 6^fnaeeez8y0xl^9
 @i^2592^Wool Cloth
 @i^2608^Threshadon Ambergris
 @i^2674^Crawler Meat
+@i^2772^Iron Ore
 @i^2782^Mishandled Recurve Bow
 @i^2783^Shoddy Blunderbuss
 @i^2841^Bronze Bar
@@ -121,6 +129,8 @@ GoldScout-export 6^fnaeeez8y0xl^9
 @i^6910^Leech Pants
 @i^7119^Twitching Antenna
 @i^7126^Smoky Iron Ingot
+@i^7127^Powdered Azurite
+@i^9799^Ivycloth Sash of Fire Protection
 @i^11081^Formula: Enchant Shield - Lesser Protection
 @i^12564^Assassination Note
 @i^12946^Hypercapacitor Gizmo
@@ -139,6 +149,7 @@ GoldScout-export 6^fnaeeez8y0xl^9
 @i^248689^Waylaid Crate: Journeyman Curiosities
 @i^251345^Plans: Veteran's Chain Leggings
 @i^252792^Pattern: Brawler's Leather Pants
+@i^262888^Sealed Journeyman's Writ
 @i^270866^Titan Relic
 @i^271100^Thicket Raptor Meat
 @i^273022^Supple Bellyskin Leggings
@@ -148,6 +159,7 @@ GoldScout-export 6^fnaeeez8y0xl^9
 @i^273840^Cursed Murloc Eye
 @i^273843^Fallenroot Longbow
 @i^284844^Dragonmaw Dispatch
+@q^422^1:0:0
 @q^730^1:7:1
 @q^770^0:15:0
 @q^929^1:0:0
@@ -170,8 +182,11 @@ GoldScout-export 6^fnaeeez8y0xl^9
 @q^1804^0:4:0
 @q^1806^0:4:0
 @q^1809^0:4:0
+@q^1810^0:4:0
 @q^1820^0:2:0
 @q^1823^0:2:0
+@q^1825^0:2:0
+@q^1826^0:2:0
 @q^2251^1:7:1
 @q^2287^1:0:0
 @q^2290^1:0:0
@@ -179,6 +194,7 @@ GoldScout-export 6^fnaeeez8y0xl^9
 @q^2592^1:7:1
 @q^2608^0:15:0
 @q^2674^1:7:1
+@q^2772^1:7:1
 @q^2782^0:2:0
 @q^2783^0:2:0
 @q^2841^1:7:1
@@ -214,6 +230,8 @@ GoldScout-export 6^fnaeeez8y0xl^9
 @q^6910^3:4:0
 @q^7119^1:12:0
 @q^7126^1:12:0
+@q^7127^1:0:0
+@q^9799^2:4:0
 @q^11081^2:9:0
 @q^12564^1:12:0
 @q^12946^1:12:0
@@ -232,6 +250,7 @@ GoldScout-export 6^fnaeeez8y0xl^9
 @q^248689^1:0:1
 @q^251345^3:9:0
 @q^252792^3:9:0
+@q^262888^3:0:0
 @q^270866^1:12:0
 @q^271100^1:12:0
 @q^273022^3:4:0
@@ -243,6 +262,7 @@ GoldScout-export 6^fnaeeez8y0xl^9
 @q^284844^1:12:0
 @m^1413^The Barrens
 @m^1414^Kalimdor
+@m^1424^Hillsbrad Foothills
 @m^1441^Thousand Needles
 @m^1442^Stonetalon Mountains
 @c^118^
@@ -896,6 +916,9 @@ GoldScout-export 6^fnaeeez8y0xl^9
 @c^285277^
 @c^285278^
 @c^286152^
+@a^2269^205:6,206:21,225:2
+@a^2270^225:1,245:2
+@a^2503^205:2,206:7,225:1
 @a^2673^254:1
 @a^3251^269:2
 @a^3252^268:2,269:1
