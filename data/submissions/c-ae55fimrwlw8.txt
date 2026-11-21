@@ -1,4 +1,4 @@
-GoldScout-export 6^ae55fimrwlw8^20
+GoldScout-export 6^ae55fimrwlw8^21
 114^1^0^14^15^1436^0.3786^0.5194^1^Gardien des moissons^^
 157^5^0^14^15^1436^0.3776^0.6714^5^Broche-tripes^723:1:1,731:2:2,769:5:7,3171:1:1,3172:1:1^
 449^1^0^16^16^1436^0.3617^0.7411^1^Truand défias^^
@@ -102,7 +102,7 @@ GoldScout-export 6^ae55fimrwlw8^20
 3989^15^0^18^19^1442^0.6381^0.5479^15^Déboiseur de la KapitalRisk^1787:1:1,2287:1:1,2589:2:3,2592:3:3,14725:1:1,15494:1:1^
 3991^1^0^19^20^1442^0.6062^0.5424^1^Défricheur de la KapitalRisk^2287:1:1,2589:1:3,2781:1:1^
 4005^11^0^16^17^1442^0.5850^0.7781^11^Rampant des mousses profondes^1081:5:5,3174:5:5,3931:4:4,15308:1:1^
-4006^1^0^19^19^1442^0.5421^0.7246^1^Tisseuse des mousses profondes^3174:1:1^
+4006^1^0^19^20^1442^0.5421^0.7246^1^Tisseuse des mousses profondes^3174:1:1^
 4007^12^0^17^18^1442^0.5616^0.6508^12^Venimeux des mousses profondes^1081:4:4,1475:3:3,3174:7:7,3182:1:1,3931:2:2^
 4008^1^0^17^17^1442^0.7600^0.9419^1^Lézard-tempête des falaises^14723:1:1^
 4011^1^0^20^20^1442^0.6026^0.6370^1^Jeune Aile-fière^5136:1:1^
@@ -328,8 +328,11 @@ GoldScout-export 6^ae55fimrwlw8^20
 @i^6323^Sceptre du baron
 @i^6344^Formule : Enchantement de bracelets (Esprit mineur)
 @i^6348^Formule : Enchantement d'arme (Tueur de bête mineur)
+@i^6362^Morue rochécaille crue
 @i^6375^Formule : Enchantement de bracelet (Esprit inférieur)
 @i^6438^Bracelet élémentaire terne
+@i^6457^Mécanismes rouillés
+@i^6458^Poisson huileux
 @i^6522^Poisson déviant
 @i^6550^Garde-poignets de soldat du sanglier
 @i^6556^Brassards de barde de puissance
@@ -341,6 +344,7 @@ GoldScout-export 6^ae55fimrwlw8^20
 @i^7073^Croc brisé
 @i^7074^Griffes émoussées
 @i^7608^Chope ornée de prophète
+@i^8365^Truite tête-mithril crue
 @i^9746^Gants simples
 @i^9748^Robe simple d'endurance
 @i^9775^Cordelière de bandit de l'épervier
@@ -558,8 +562,11 @@ GoldScout-export 6^ae55fimrwlw8^20
 @q^6323^3:2:0
 @q^6344^2:9:0
 @q^6348^2:9:0
+@q^6362^1:7:1
 @q^6375^2:9:0
 @q^6438^0:15:0
+@q^6457^0:15:0
+@q^6458^1:0:0
 @q^6522^1:0:1
 @q^6550^2:4:0
 @q^6556^2:4:0
@@ -571,6 +578,7 @@ GoldScout-export 6^ae55fimrwlw8^20
 @q^7073^0:15:0
 @q^7074^0:15:0
 @q^7608^2:4:0
+@q^8365^1:7:1
 @q^9746^1:4:0
 @q^9748^2:4:0
 @q^9775^2:4:0
@@ -621,6 +629,7 @@ GoldScout-export 6^ae55fimrwlw8^20
 @m^1420^Clairières de Tirisfal
 @m^1421^Forêt des Pins argentés
 @m^1424^Contreforts de Hautebrande
+@m^1434^Vallée de Strangleronce
 @m^1436^Marche de l'Ouest
 @m^1437^Les Paluns
 @m^1440^Orneval
@@ -934,6 +943,8 @@ GoldScout-export 6^ae55fimrwlw8^20
 @f^1420^0^56^75^6289:14:14,6291:30:30,6297:2:2,6299:10:10^213:56
 @f^1421^0^19^131^6289:9:9,6291:2:2,6308:3:3,21071:5:5^131:12,132:7
 @f^1424^0^7^139^3820:1:1,6289:1:1,6308:2:2,21071:2:2,21113:1:1^172:7
+@f^1434^0^14^146^6308:3:3,6362:2:2,8365:9:9^106:12,285:2
+@f^1442^0^15^142^6289:4:4,6308:4:4,6457:5:5,6458:2:2^192:15
 @f^1454^0^42^110^6289:23:23,6291:7:7,6308:10:10,6309:1:1,6645:1:1^113:8,133:34
 @f^1458^0^5^108^6289:2:2,6297:2:2,6308:1:1^273:5
 @l^0^frFR

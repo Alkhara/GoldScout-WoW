@@ -1,4 +1,4 @@
-GoldScout-export 5^e9mvsuzl083o^12
+GoldScout-export 5^e9mvsuzl083o^13
 36^2^0^11^11^1436^0.5655^0.3628^2^Harvest Golem^814:1:1^
 114^41^0^14^15^1436^0.5198^0.2360^41^Harvest Watcher^732:16:16,814:14:14,1274:10:10,1731:1:1,1734:1:1,2763:1:1,2777:1:1,3652:1:1,4359:2:2,4361:1:1,211785:1:1,211787:1:1,248683:1:1,248685:1:1,255007:19:19^
 199^3^0^10^11^1436^0.5295^0.2700^3^Young Fleshripper^555:1:1,4757:1:1,6889:1:1,7096:1:1,17056:2:2^
@@ -16,9 +16,15 @@ GoldScout-export 5^e9mvsuzl083o^12
 2319^9^0^34^35^1416^0.6199^0.4352^9^Syndicate Wizard^1707:1:1,2080:1:1,2592:1:3,3786:1:1,4306:5:7,5113:1:1,213421:1:1^
 2320^1^0^40^40^1416^0.4007^0.1562^1^Nagaz^^
 2431^1^0^37^37^1416^0.6180^0.4043^1^Jailor Borhuin^3704:1:1^
-2573^6^0^37^38^1417^0.8445^0.3005^6^Drywhisker Surveyor^4306:3:7,4338:1:1,4435:1:1^
-2574^11^0^36^37^1417^0.8505^0.3041^11^Drywhisker Digger^1708:2:2,1710:1:1,4306:4:11,4435:1:1,4481:1:1^
+2561^37^0^36^37^1417^0.4750^0.7584^37^Highland Fleshstalker^1696:7:7,3685:17:17,4461:15:15,4513:12:12,4586:3:3,5637:1:1,8146:1:1,12184:18:18,213544:1:1^
+2566^4^0^35^36^1417^0.5406^0.7459^4^Boulderfist Brute^4306:1:1,213422:1:1^
+2567^3^0^36^37^1417^0.5379^0.7728^3^Boulderfist Magus^4306:1:2,213544:1:1^
+2573^15^0^37^38^1417^0.8507^0.3028^15^Drywhisker Surveyor^3827:1:1,4306:7:16,4338:1:1,4435:5:5,4539:2:2^
+2574^28^0^36^37^1417^0.8563^0.3075^28^Drywhisker Digger^1708:2:2,1710:3:3,2289:1:1,4306:11:21,4421:1:1,4435:7:7,4481:1:1,4539:1:1^
+2611^1^0^42^42^1417^0.5319^0.4967^1^Fozruk^4469:1:1^
+2760^1^0^38^39^1417^0.2578^0.3261^1^Burning Exile^4479:1:1,7068:1:1^
 2762^9^0^38^39^1417^0.5110^0.5238^9^Thundering Exile^4480:7:7,7069:2:2,213546:1:1^
+2763^1^0^42^42^1417^0.3791^0.5890^1^Thenan^4017:1:1,213545:1:1^
 4341^1^0^36^36^1445^0.5135^0.2884^1^Drywallow Crocolisk^770:1:1,12037:1:1^
 4342^2^0^36^37^1445^0.4149^0.3688^2^Drywallow Vicejaw^770:1:2,3667:2:2^
 4343^6^0^37^38^1445^0.4123^0.3711^6^Drywallow Snapper^770:4:6,3667:5:5^
@@ -85,6 +91,7 @@ GoldScout-export 5^e9mvsuzl083o^12
 @i^1438^Warrior's Shield
 @i^1477^Scroll of Agility II
 @i^1529^Jade
+@i^1696^Curved Raptor Talon
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
@@ -92,6 +99,7 @@ GoldScout-export 5^e9mvsuzl083o^12
 @i^1734^Worn Mail Gloves
 @i^2080^Hillborne Axe of Strength
 @i^2213^Worn Large Shield
+@i^2289^Scroll of Strength II
 @i^2295^Large Boar Tusk
 @i^2592^Wool Cloth
 @i^2642^Loose Chain Boots
@@ -116,12 +124,14 @@ GoldScout-export 5^e9mvsuzl083o^12
 @i^3641^Journeyman's Bracers
 @i^3652^Hunting Buckler
 @i^3667^Tender Crocolisk Meat
+@i^3685^Raptor Egg
 @i^3704^Rusted Iron Key
 @i^3786^Shiny Dirk
 @i^3811^Double-Stitched Cloak
 @i^3817^Reinforced Buckler
 @i^3827^Mana Potion
 @i^3864^Citrine
+@i^4017^Sharp Shortsword
 @i^4079^Chief Brigadier Leggings
 @i^4306^Silk Cloth
 @i^4337^Thick Spider's Silk
@@ -132,10 +142,14 @@ GoldScout-export 5^e9mvsuzl083o^12
 @i^4421^Scroll of Protection III
 @i^4435^Mote of Myzrael
 @i^4461^Raptor Hide
+@i^4469^Rod of Order
+@i^4479^Burning Charm
 @i^4480^Thundering Charm
 @i^4481^Cresting Charm
+@i^4513^Raptor Heart
 @i^4539^Goldenbark Apple
 @i^4585^Dripping Spider Mandible
+@i^4586^Smooth Raptor Skin
 @i^4607^Delicious Cave Mold
 @i^4658^Warrior's Cloak
 @i^4666^Burnt Leather Belt
@@ -151,9 +165,11 @@ GoldScout-export 5^e9mvsuzl083o^12
 @i^6348^Formula: Enchant Weapon - Minor Beastslayer
 @i^6530^Nightcrawlers
 @i^6889^Small Egg
+@i^7068^Elemental Fire
 @i^7069^Elemental Air
 @i^7096^Plucked Feather
 @i^7109^Pioneer Buckler
+@i^8146^Wicked Claw
 @i^8181^Hunting Rifle
 @i^8389^Pattern: Big Voodoo Pants
 @i^8747^Hardened Leather Helm
@@ -163,6 +179,7 @@ GoldScout-export 5^e9mvsuzl083o^12
 @i^10767^Savage Boar's Guard
 @i^10772^Glutton's Cleaver
 @i^12037^Mystery Meat
+@i^12184^Raptor Flesh
 @i^12205^White Spider Meat
 @i^14418^Silksand Boots
 @i^17056^Light Feather
@@ -173,6 +190,7 @@ GoldScout-export 5^e9mvsuzl083o^12
 @i^211786^Scroll: CHAP BALK WELLES
 @i^211787^Scroll: LOWER PING WHOMEVER
 @i^213421^Singed Note
+@i^213422^Illegible Recipe
 @i^213543^Scroll: UPDOG
 @i^213544^Scroll: TOPAZ YORAK
 @i^213545^Scroll: PEATCHY ATTAX
@@ -211,6 +229,7 @@ GoldScout-export 5^e9mvsuzl083o^12
 @q^1438^1:4:0
 @q^1477^1:0:0
 @q^1529^2:7:1
+@q^1696^0:15:0
 @q^1707^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
@@ -218,6 +237,7 @@ GoldScout-export 5^e9mvsuzl083o^12
 @q^1734^0:4:0
 @q^2080^2:2:0
 @q^2213^0:4:0
+@q^2289^1:0:0
 @q^2295^0:15:0
 @q^2592^1:7:1
 @q^2642^0:4:0
@@ -242,12 +262,14 @@ GoldScout-export 5^e9mvsuzl083o^12
 @q^3641^1:4:0
 @q^3652^2:4:0
 @q^3667^1:7:1
+@q^3685^1:7:1
 @q^3704^1:13:0
 @q^3786^0:2:0
 @q^3811^0:4:0
 @q^3817^0:4:0
 @q^3827^1:0:0
 @q^3864^2:7:1
+@q^4017^0:2:0
 @q^4079^2:4:0
 @q^4306^1:7:1
 @q^4337^1:7:1
@@ -258,10 +280,14 @@ GoldScout-export 5^e9mvsuzl083o^12
 @q^4421^1:0:0
 @q^4435^1:12:0
 @q^4461^1:7:1
+@q^4469^1:12:0
+@q^4479^1:0:0
 @q^4480^1:0:0
 @q^4481^1:0:0
+@q^4513^1:12:0
 @q^4539^1:0:0
 @q^4585^0:15:0
+@q^4586^0:15:0
 @q^4607^1:0:0
 @q^4658^1:4:0
 @q^4666^1:4:0
@@ -277,9 +303,11 @@ GoldScout-export 5^e9mvsuzl083o^12
 @q^6348^2:9:0
 @q^6530^1:0:0
 @q^6889^1:7:1
+@q^7068^1:7:1
 @q^7069^1:7:1
 @q^7096^0:15:0
 @q^7109^1:4:0
+@q^8146^1:7:1
 @q^8181^1:2:0
 @q^8389^2:9:0
 @q^8747^0:4:0
@@ -289,6 +317,7 @@ GoldScout-export 5^e9mvsuzl083o^12
 @q^10767^3:4:0
 @q^10772^3:2:0
 @q^12037^1:7:1
+@q^12184^1:7:1
 @q^12205^1:7:1
 @q^14418^2:4:0
 @q^17056^1:15:1
@@ -299,6 +328,7 @@ GoldScout-export 5^e9mvsuzl083o^12
 @q^211786^1:0:0
 @q^211787^1:0:0
 @q^213421^1:15:0
+@q^213422^1:12:0
 @q^213543^1:0:0
 @q^213544^1:0:0
 @q^213545^1:0:0
@@ -1018,9 +1048,15 @@ GoldScout-export 5^e9mvsuzl083o^12
 @a^2319^172:9
 @a^2320^68:1
 @a^2431^172:1
-@a^2573^116:4,136:1,137:1
-@a^2574^116:2,117:2,136:4,137:3
+@a^2561^249:1,269:2,270:2,289:5,308:1,309:23,329:3
+@a^2566^290:2,291:1,310:1
+@a^2567^290:1,310:2
+@a^2573^116:7,117:1,136:2,137:5
+@a^2574^116:2,117:4,136:6,137:16
+@a^2611^190:1
+@a^2760^125:1
 @a^2762^210:9
+@a^2763^227:1
 @a^4341^110:1
 @a^4342^148:2
 @a^4343^128:1,147:1,148:4

@@ -1,4 +1,4 @@
-GoldScout-export 6^22tl5ep4u7dz^11
+GoldScout-export 6^22tl5ep4u7dz^12
 2240^3^0^33^33^1416^0.4844^0.7925^3^Syndicate Footpad^2592:1:2,3601:1:1,4306:1:2^
 2271^5^0^31^32^1416^0.2245^0.7763^5^Dalaran Shield Guard^1708:1:1,3714:1:1,4306:4:7^
 2272^3^0^33^33^1416^0.2421^0.5830^2^Dalaran Theurgist^3714:1:1,4306:1:2^
@@ -20,6 +20,9 @@ GoldScout-export 6^22tl5ep4u7dz^11
 2413^1^0^33^33^1416^0.1925^0.9169^1^Dermot^3691:1:1,262888:1:1^
 2414^1^0^33^33^1416^0.1682^0.8956^1^Kegan Darkmar^3688:1:1,4306:1:1^
 2415^1^0^33^33^1416^0.1647^0.8908^1^Warden Belamoore^3711:1:1^
+2559^11^0^30^31^1417^0.6297^0.4021^11^Highland Strider^1696:2:2,3210:1:1,3685:4:4,4461:2:2,4512:2:2,5637:1:1,12184:3:3^
+2563^4^0^32^33^1417^0.6772^0.3643^4^Plains Creeper^878:1:1,1074:2:2,1081:1:1,2251:4:4,4585:1:1,5637:1:1,278225:2:2^
+2581^1^0^31^31^1417^0.5798^0.4098^1^Dabyrie Militia^^
 2623^20^0^33^33^1424^0.2874^0.2848^7^Spirit of Old^^
 2628^1^0^33^33^1416^0.2209^0.5736^1^Dalaran Worker^3714:1:1^
 3560^2^0^26^26^1441^0.3782^0.3533^2^Healing Ward^^
@@ -138,12 +141,14 @@ GoldScout-export 6^22tl5ep4u7dz^11
 275046^2^0^0^0^0^0.0000^0.0000^0^^4306:1:1,284844:1:1^
 @i^770^Pointy Crocolisk Tooth
 @i^865^Leaden Mace of the Bandit
+@i^878^Fist-sized Spinneret
 @i^929^Healing Potion
 @i^1074^Hard Spider Leg Tip
 @i^1081^Crisp Spider Meat
 @i^1205^Melon Juice
 @i^1529^Jade
 @i^1686^Bristly Whisker
+@i^1696^Curved Raptor Talon
 @i^1697^Keen Raptor Tooth
 @i^1705^Lesser Moonstone
 @i^1707^Stormwind Brie
@@ -179,6 +184,7 @@ GoldScout-export 6^22tl5ep4u7dz^11
 @i^3174^Spider Ichor
 @i^3186^Viking Sword of the Hierophant
 @i^3201^Barbarian War Axe of Stamina
+@i^3210^Brutal War Axe of the Physician
 @i^3381^Cross-stitched Bracers
 @i^3385^Lesser Mana Potion
 @i^3402^Soft Patch of Fur
@@ -200,9 +206,12 @@ GoldScout-export 6^22tl5ep4u7dz^11
 @i^3802^Hardened Leather Bracers
 @i^4072^Glimmering Mail Gauntlets
 @i^4306^Silk Cloth
+@i^4461^Raptor Hide
+@i^4512^Highland Raptor Eye
 @i^4538^Snapvine Watermelon
 @i^4542^Moist Cornbread
 @i^4553^Jagged Piece of Stone
+@i^4585^Dripping Spider Mandible
 @i^4784^Lifeless Stone
 @i^5116^Long Tail Feather
 @i^5117^Vibrant Plume
@@ -243,6 +252,7 @@ GoldScout-export 6^22tl5ep4u7dz^11
 @i^11393^Small Bat Skull
 @i^11394^Bat Heart
 @i^12037^Mystery Meat
+@i^12184^Raptor Flesh
 @i^12564^Assassination Note
 @i^12884^Arnak's Hoof
 @i^12925^Arikara Serpent Skin
@@ -286,16 +296,19 @@ GoldScout-export 6^22tl5ep4u7dz^11
 @i^275997^Cracked Sentry Core
 @i^276158^Crystallized Shard
 @i^276160^Mana Fragment
+@i^278225^Surgical Spidersilk
 @i^279186^Stormheart's Still-beating Heart
 @i^284844^Dragonmaw Dispatch
 @q^770^0:15:0
 @q^865^2:2:0
+@q^878^0:7:0
 @q^929^1:0:0
 @q^1074^0:15:0
 @q^1081^1:7:1
 @q^1205^1:0:0
 @q^1529^2:7:1
 @q^1686^0:15:0
+@q^1696^0:15:0
 @q^1697^0:15:0
 @q^1705^2:7:1
 @q^1707^1:0:0
@@ -331,6 +344,7 @@ GoldScout-export 6^22tl5ep4u7dz^11
 @q^3174^1:7:1
 @q^3186^2:2:0
 @q^3201^2:2:0
+@q^3210^2:2:0
 @q^3381^0:4:0
 @q^3385^1:0:0
 @q^3402^0:15:0
@@ -352,9 +366,12 @@ GoldScout-export 6^22tl5ep4u7dz^11
 @q^3802^0:4:0
 @q^4072^2:4:0
 @q^4306^1:7:1
+@q^4461^1:7:1
+@q^4512^1:12:0
 @q^4538^1:0:0
 @q^4542^1:0:0
 @q^4553^0:15:0
+@q^4585^0:15:0
 @q^4784^0:15:0
 @q^5116^1:7:1
 @q^5117^1:12:0
@@ -395,6 +412,7 @@ GoldScout-export 6^22tl5ep4u7dz^11
 @q^11393^0:15:0
 @q^11394^0:15:0
 @q^12037^1:7:1
+@q^12184^1:7:1
 @q^12564^1:12:0
 @q^12884^1:0:0
 @q^12925^1:12:0
@@ -438,10 +456,12 @@ GoldScout-export 6^22tl5ep4u7dz^11
 @q^275997^1:12:0
 @q^276158^0:15:0
 @q^276160^0:15:0
+@q^278225^1:12:0
 @q^279186^1:12:0
 @q^284844^1:12:0
 @m^1412^Mulgore
 @m^1416^Alterac Mountains
+@m^1417^Arathi Highlands
 @m^1424^Hillsbrad Foothills
 @m^1441^Thousand Needles
 @m^1458^Undercity
@@ -908,6 +928,9 @@ GoldScout-export 6^22tl5ep4u7dz^11
 @a^2413^363:1
 @a^2414^343:1
 @a^2415^343:1
+@a^2559^152:1,153:2,154:1,171:1,172:6
+@a^2563^152:1,153:2,154:1
+@a^2581^171:1
 @a^2623^105:7
 @a^2628^224:1
 @a^3560^127:1,147:1
