@@ -1,4 +1,4 @@
-GoldScout-export 6^vca3bm0we4o4^22
+GoldScout-export 6^vca3bm0we4o4^23
 122^2^0^18^18^1436^0.3657^0.8050^2^Malandrin défias^2589:1:2^
 193^1^0^50^51^1447^0.3781^0.7359^1^Draconide bleu^^
 686^1^0^35^35^1434^0.2894^0.2195^1^Raptor flagellant^3685:1:1^
@@ -158,7 +158,12 @@ GoldScout-export 6^vca3bm0we4o4^22
 10041^1^0^56^56^1449^0.4377^0.8182^1^Reine Gorishi^11835:1:1^
 10082^1^0^0^0^0^0.0000^0.0000^0^^12470:1:1^
 10916^1^0^57^57^1448^0.6021^0.0597^1^Messager Tombe-hiver^^
+11685^1^0^42^42^1414^0.3832^0.5802^1^Prêtre maraudine^^
+11686^1^0^40^41^1414^0.3822^0.5803^1^Ecumeur fantomatique^^
+11688^1^0^43^43^1414^0.3834^0.5802^1^Centaure maudit^9874:1:1,17684:1:1^
 12046^1^0^49^49^1446^0.4140^0.5773^1^Gor'marok le Ravageur^^
+12240^1^0^43^43^1414^0.3849^0.5772^1^Kolk^17684:1:1,17761:1:1^
+13718^3^0^41^41^1414^0.3830^0.5806^3^Le Prophète sans nom^4306:1:3,17684:3:3,17757:1:1^
 14748^1^0^49^49^1425^0.8456^0.4124^1^Kidnappeuse Vilebranche^19034:1:1^
 236028^6^0^47^49^1447^0.1890^0.5482^6^Guêpe à miel^6300:1:1,6302:1:1,238503:4:5^
 236496^1^0^53^53^1447^0.6200^0.2571^1^Maître Trouilleffroi^14047:1:2^
@@ -169,6 +174,10 @@ GoldScout-export 6^vca3bm0we4o4^22
 247013^1^0^53^53^1447^0.6983^0.2922^1^Forestière Lydrea^14047:1:1,246722:1:1^
 247033^1^0^53^53^1447^0.6969^0.2898^1^Rapassang^^
 247470^4^0^50^51^1447^0.4702^0.5327^4^Fouisseur makrinni^7973:2:2,246684:1:1^
+252711^3^0^42^43^2652^0.5363^0.3046^3^Protecteur de pylône décrépit^213543:1:1,260349:1:1,260350:1:1,260353:1:1,286647:1:1^
+254566^4^0^41^42^2652^0.6611^0.7399^4^Rose rebelle^256036:2:2,256037:3:3,260352:1:1,260354:1:1^
+254567^4^0^41^42^2652^0.6595^0.7305^4^Tulipe terrible^2450:1:1,256037:2:2,260351:1:1^
+254572^20^0^41^42^2652^0.6647^0.6837^20^Souci sadique^^
 255262^2^0^0^0^0^0.0000^0.0000^0^^4018:1:1,4338:1:3,274028:1:1^
 255267^1^0^0^0^0^0.0000^0.0000^0^^287021:1:1^
 255271^2^0^0^0^0^0.0000^0.0000^0^^1645:1:1,274028:1:1^
@@ -200,10 +209,12 @@ GoldScout-export 6^vca3bm0we4o4^22
 264773^1^0^0^0^1415^0.0000^0.0000^0^^286428:1:1^
 271780^3^0^0^0^0^0.0000^0.0000^0^^13046:1:1,274028:2:2^
 271784^1^0^0^0^0^0.0000^0.0000^0^^3928:1:1^
+276401^1^0^43^43^2652^0.4604^0.5448^1^Protecteur de pylône naissant^260348:1:1^
 @i^785^Mage royal
 @i^1520^Sueur de troll
 @i^1645^Jus de baie lunaire
 @i^1701^Griffe de basilic
+@i^2450^Eglantine
 @i^2589^Etoffe de lin
 @i^2799^Croc de gorille
 @i^3667^Viande de crocilisque tendre
@@ -307,6 +318,7 @@ GoldScout-export 6^vca3bm0we4o4^22
 @i^9470^Masque du grand mojo
 @i^9478^Refendeuse
 @i^9523^Agent durcissant troll
+@i^9874^Drapé de sorcier d'intelligence
 @i^9901^Ceinture jazeran de la baleine
 @i^10286^Coeur de fauve
 @i^10320^Patron : Bandeau rouge en tisse-mage
@@ -381,6 +393,9 @@ GoldScout-export 6^vca3bm0we4o4^22
 @i^16045^Schéma : Lunettes de concentration extrême
 @i^16216^Formule : Enchantement de cape (Résistance supérieure)
 @i^17413^Codex : Prière de Robustesse
+@i^17684^Gravure de cristal théradrique
+@i^17757^Amulette des esprits
+@i^17761^Gemme du premier khan
 @i^19034^Repas de Lard
 @i^19935^Glande à venin vide
 @i^20015^Plumes d'Ancien raptor
@@ -412,6 +427,15 @@ GoldScout-export 6^vca3bm0we4o4^22
 @i^248713^Caisse détournée : composants d'artisan
 @i^251405^Plans : gants de grand gardien
 @i^252868^Patron : gantelets de furtivité en cuir
+@i^256036^Poignée de poussière
+@i^256037^Herbes coupées
+@i^260348^Extrait de journal à peine lisible, page I
+@i^260349^Extrait de journal à peine lisible, page II
+@i^260350^Extrait de journal à peine lisible, page III
+@i^260351^Extrait de journal à peine lisible, page IV
+@i^260352^Extrait de journal à peine lisible, page V
+@i^260353^Extrait de journal à peine lisible, page VI
+@i^260354^Extrait de journal à peine lisible, page VII
 @i^262890^Commission d'artisan scellée
 @i^263992^Porte-clés de surveillant
 @i^273883^Tête de Ca'zass
@@ -440,6 +464,7 @@ GoldScout-export 6^vca3bm0we4o4^22
 @i^281017^Parchemin : NAÉF CORCOINCH
 @i^286428^Bague du boss
 @i^286552^Mantelet d'invocateur des sables
+@i^286647^Cœur de cristal épuisé
 @i^287012^Gantelets de harnois de guerre krol'dok
 @i^287013^Cuissards de harnois de guerre krol'dok
 @i^287021^Rôdeuses de massacreur défias
@@ -447,6 +472,7 @@ GoldScout-export 6^vca3bm0we4o4^22
 @q^1520^0:15:0
 @q^1645^1:0:0
 @q^1701^0:15:0
+@q^2450^1:7:1
 @q^2589^1:7:1
 @q^2799^1:12:0
 @q^3667^1:7:1
@@ -550,6 +576,7 @@ GoldScout-export 6^vca3bm0we4o4^22
 @q^9470^3:4:0
 @q^9478^3:2:0
 @q^9523^1:12:0
+@q^9874^2:4:0
 @q^9901^2:4:0
 @q^10286^1:7:1
 @q^10320^2:9:0
@@ -624,6 +651,9 @@ GoldScout-export 6^vca3bm0we4o4^22
 @q^16045^2:9:0
 @q^16216^2:9:0
 @q^17413^3:9:0
+@q^17684^1:12:0
+@q^17757^1:12:0
+@q^17761^1:12:0
 @q^19034^1:12:0
 @q^19935^0:15:0
 @q^20015^0:15:0
@@ -655,6 +685,15 @@ GoldScout-export 6^vca3bm0we4o4^22
 @q^248713^2:0:1
 @q^251405^3:9:0
 @q^252868^3:9:0
+@q^256036^0:15:0
+@q^256037^0:15:0
+@q^260348^1:15:0
+@q^260349^1:15:0
+@q^260350^1:15:0
+@q^260351^1:15:0
+@q^260352^1:15:0
+@q^260353^1:15:0
+@q^260354^1:15:0
 @q^262890^3:0:0
 @q^263992^1:13:0
 @q^273883^1:12:0
@@ -683,10 +722,12 @@ GoldScout-export 6^vca3bm0we4o4^22
 @q^281017^1:0:0
 @q^286428^3:4:0
 @q^286552^3:4:0
+@q^286647^1:12:0
 @q^287012^3:4:0
 @q^287013^3:4:0
 @q^287021^3:4:0
 @m^1411^Durotar
+@m^1414^Kalimdor
 @m^1415^Royaumes de l'est
 @m^1417^Hautes-terres d'Arathi
 @m^1425^Les Hinterlands
@@ -699,6 +740,7 @@ GoldScout-export 6^vca3bm0we4o4^22
 @m^1447^Azshara
 @m^1448^Gangrebois
 @m^1449^Cratère d'Un'Goro
+@m^2652^Shen'dralas
 @c^118^
 @c^724^
 @c^733^
@@ -1977,7 +2019,12 @@ GoldScout-export 6^vca3bm0we4o4^22
 @a^9879^168:2
 @a^10041^328:1
 @a^10916^32:1
+@a^11685^227:1
+@a^11686^227:1
+@a^11688^227:1
 @a^12046^228:1
+@a^12240^227:1
+@a^13718^227:3
 @a^14748^176:1
 @a^236028^203:2,204:1,223:3
 @a^236496^112:1
@@ -1988,4 +2035,9 @@ GoldScout-export 6^vca3bm0we4o4^22
 @a^247013^113:1
 @a^247033^113:1
 @a^247470^209:3,229:1
+@a^252711^94:1,128:2
+@a^254566^292:2,293:1,313:1
+@a^254567^292:1,293:3
+@a^254572^273:20
+@a^276401^209:1
 @l^0^frFR

@@ -1,4 +1,4 @@
-GoldScout-export 6^55sa2lu6w1w8^6
+GoldScout-export 6^55sa2lu6w1w8^7
 95^27^0^11^12^1436^0.4696^0.2035^27^Defias Smuggler^829:10:10,1497:1:1,2215:1:1,2455:1:1,2589:14:30,2778:2:2,2975:1:1,3013:1:1,7997:1:1,9754:1:1^
 114^20^0^14^15^1436^0.5069^0.2241^20^Harvest Watcher^732:10:10,814:3:3,1274:5:5,1512:1:1,2763:1:1,4361:1:1,4363:2:2,255007:7:7^
 154^1^0^17^17^1436^0.5761^0.5356^1^Greater Fleshripper^6889:1:1^
@@ -56,7 +56,7 @@ GoldScout-export 6^55sa2lu6w1w8^6
 3780^3^0^21^22^1440^0.4525^0.4566^3^Shadethicket Moss Eater^765:1:1,2765:1:1,14179:1:1^
 3781^1^0^24^24^1440^0.3463^0.6594^1^Shadethicket Wood Shaper^^
 3783^2^0^22^23^1440^0.3375^0.6589^2^Shadethicket Raincaller^2449:1:1^
-3809^1^0^21^21^1440^0.4238^0.4662^1^Ashenvale Bear^3730:1:1^
+3809^1^0^21^22^1440^0.4238^0.4662^1^Ashenvale Bear^3730:1:1^
 3819^5^0^20^21^1440^0.2517^0.4849^5^Wildthorn Stalker^1081:2:2,1288:1:1,2251:1:1,3174:2:2,4428:1:1^
 3823^1^0^19^20^1440^0.1893^0.5012^1^Ghostpaw Runner^1015:1:1^
 3943^1^0^22^22^1439^0.2366^0.9292^1^Ruuzel^1796:1:1,5445:1:1,5523:1:1^
@@ -169,6 +169,8 @@ GoldScout-export 6^55sa2lu6w1w8^6
 @i^6289^Raw Longjaw Mud Snapper
 @i^6308^Raw Bristle Whisker Catfish
 @i^6344^Formula: Enchant Bracer - Minor Spirit
+@i^6359^Firefin Snapper
+@i^6458^Oil Covered Fish
 @i^6548^Soldier's Girdle of Holy Wrath
 @i^6560^Soldier's Shield of the Sorcerer
 @i^6889^Small Egg
@@ -185,6 +187,7 @@ GoldScout-export 6^55sa2lu6w1w8^6
 @i^15310^Feral Gloves of Agility
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
+@i^21113^Watertight Trunk
 @i^255007^Golem Isospring
 @i^279276^Mathystral Amulet Fragment
 @i^280911^Spiked Collar
@@ -289,6 +292,8 @@ GoldScout-export 6^55sa2lu6w1w8^6
 @q^6289^1:7:1
 @q^6308^1:7:1
 @q^6344^2:9:0
+@q^6359^1:7:1
+@q^6458^1:0:0
 @q^6548^2:4:0
 @q^6560^2:4:0
 @q^6889^1:7:1
@@ -305,6 +310,7 @@ GoldScout-export 6^55sa2lu6w1w8^6
 @q^15310^2:4:0
 @q^17056^1:15:1
 @q^17057^1:15:0
+@q^21113^1:15:0
 @q^255007^1:7:1
 @q^279276^1:0:0
 @q^280911^1:12:0
@@ -312,6 +318,7 @@ GoldScout-export 6^55sa2lu6w1w8^6
 @m^1436^Westfall
 @m^1439^Darkshore
 @m^1440^Ashenvale
+@m^1442^Stonetalon Mountains
 @c^118^
 @c^724^
 @c^733^
@@ -545,4 +552,5 @@ GoldScout-export 6^55sa2lu6w1w8^6
 @a^12922^106:7,126:1
 @a^14271^325:1
 @a^14272^127:1
+@f^1442^0^4^100^6359:2:2,6458:1:1,21113:1:1^213:4
 @l^0^enUS

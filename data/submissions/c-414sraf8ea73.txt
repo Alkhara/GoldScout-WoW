@@ -1,4 +1,4 @@
-GoldScout-export 6^414sraf8ea73^6
+GoldScout-export 6^414sraf8ea73^7
 587^1^0^34^34^1434^0.3450^0.1443^1^Bloodscalp Warrior^1519:1:1,2592:1:2,2742:1:1^
 588^37^0^34^35^1434^0.2494^0.1211^37^Bloodscalp Scout^1519:5:5,1708:2:2,1710:1:1,2592:2:4,2730:1:1,2734:1:1,2738:1:1,2745:1:1,2749:1:1,2750:1:1,3385:1:1,3771:2:2,3796:1:1,3805:1:1,3915:6:6,4306:10:12,7423:1:1^
 595^36^0^34^35^1434^0.2515^0.1220^36^Bloodscalp Hunter^1519:5:5,1708:2:2,1710:1:1,2592:1:1,2725:2:2,2738:1:1,2745:2:2,2748:1:1,3793:1:1,3901:1:1,3915:9:9,4306:11:18,8747:1:1,262889:1:1^
@@ -13,6 +13,7 @@ GoldScout-export 6^414sraf8ea73^6
 684^8^0^37^38^1434^0.3863^0.3766^8^Shadowmaw Panther^3838:8:8^
 685^3^0^33^34^1434^0.2542^0.1561^3^Stranglethorn Raptor^3685:1:1,4461:2:2,4586:1:1,12184:3:3^
 686^14^0^35^36^1434^0.3370^0.2453^14^Lashtail Raptor^1696:4:4,3685:7:7,4461:4:4,4586:2:2,5637:2:2,7353:1:1,12184:5:5,248693:1:1^
+687^3^0^40^41^1434^0.2354^0.5090^3^Jungle Stalker^3863:1:1,4461:1:1,4586:2:2,4587:1:1,12184:1:1^
 688^1^0^32^32^1434^0.3497^0.0701^1^Stone Maw Basilisk^1701:1:1^
 689^1^0^34^35^1434^0.2707^0.1849^1^Crystal Spine Basilisk^1701:1:1^
 690^19^0^39^40^1434^0.3447^0.4017^19^Cold Eye Basilisk^1701:3:3,1702:6:6,3918:10:10,4093:3:3,5637:1:1,11386:2:2^
@@ -45,9 +46,13 @@ GoldScout-export 6^414sraf8ea73^6
 1150^6^0^30^31^1434^0.3440^0.0950^6^River Crocolisk^770:2:2,3667:4:4,4053:2:2,12037:1:1^
 1152^11^0^35^36^1434^0.4041^0.2540^11^Snapjaw Crocolisk^770:6:6,3667:2:2,4104:5:5,12037:8:8^
 1557^8^0^40^41^1434^0.3352^0.6542^8^Elder Mistvale Gorilla^2799:4:4,3919:2:2,4096:4:4,4097:1:1^
-1562^1^0^40^41^1434^0.3248^0.7253^1^Bloodsail Mage^^
+1561^5^0^40^41^1434^0.2712^0.6885^5^Bloodsail Raider^2749:1:1,2751:1:1,3910:3:3,4338:1:1^
+1562^5^0^40^41^1434^0.2850^0.6988^5^Bloodsail Mage^3897:1:1,3910:4:4^
+1563^4^0^42^43^1434^0.2405^0.5433^4^Bloodsail Swashbuckler^3910:1:1,4338:1:1^
+1564^11^0^42^43^1434^0.2389^0.5442^11^Bloodsail Warlock^3910:7:7,4006:1:1,4338:2:4,9260:1:1,9290:1:1,217161:1:1,248690:1:1^
 1867^1^0^13^14^1421^0.5524^0.6314^1^Dalaran Apprentice^^
 1868^1^0^13^14^1421^0.5271^0.3422^1^Ravenclaw Servant^2589:1:2^
+1907^3^0^43^44^1434^0.2410^0.6148^3^Naga Explorer^4029:1:1,7973:1:1,17058:1:1^
 2246^1^0^38^38^1416^0.3886^0.1525^1^Syndicate Assassin^^
 2247^1^0^39^40^1416^0.3947^0.1591^1^Syndicate Enforcer^^
 2252^1^0^34^35^1416^0.4979^0.5889^1^Crushridge Ogre^4306:1:2^
@@ -114,15 +119,20 @@ GoldScout-export 6^414sraf8ea73^6
 @i^3827^Mana Potion
 @i^3838^Shadowmaw Claw
 @i^3839^Pristine Tigress Fang
+@i^3863^Jungle Stalker Feather
+@i^3897^Dizzy's Eye
 @i^3901^Bloodscalp Tusk
 @i^3904^Gan'zulah's Head
 @i^3905^Nezzliok's Head
 @i^3909^Broken Armor of Ana'thek
+@i^3910^Snuff
 @i^3915^Bloody Bone Necklace
 @i^3916^Split Bone Necklace
 @i^3918^Singing Crystal Shard
 @i^3919^Mistvale Giblets
 @i^3943^Crochet Vest
+@i^4006^Overlinked Chain Shoulderpads
+@i^4029^Akiris Reed
 @i^4053^Large River Crocolisk Skin
 @i^4060^Glyphed Leggings
 @i^4074^Mail Combat Armor
@@ -138,25 +148,32 @@ GoldScout-export 6^414sraf8ea73^6
 @i^4461^Raptor Hide
 @i^4551^Or'Kalar's Head
 @i^4586^Smooth Raptor Skin
+@i^4587^Tribal Raptor Feathers
 @i^4599^Cured Ham Steak
 @i^4636^Strong Iron Lockbox
 @i^5637^Large Fang
 @i^5851^Cozzle's Key
 @i^7353^Elder's Padded Armor of the Owl
 @i^7423^Phalanx Leggings of Strength
+@i^7973^Big-mouth Clam
 @i^8151^Flask of Mojo
 @i^8153^Wildvine
 @i^8157^Jouster's Chestplate
 @i^8747^Hardened Leather Helm
+@i^9260^Volatile Rum
+@i^9290^Field Plate Helmet of the Gorilla
 @i^11386^Squishy Basilisk Eye
 @i^12020^Thallium Choker of the Champion
 @i^12037^Mystery Meat
 @i^12184^Raptor Flesh
 @i^12202^Tiger Meat
 @i^15322^Smoothbore Gun
+@i^17058^Fish Oil
 @i^213127^Partial Mystical Notes
 @i^213544^Scroll: TOPAZ YORAK
 @i^213545^Scroll: PEATCHY ATTAX
+@i^217161^Torn Mystical Scroll
+@i^248690^Waylaid Crate: Earthly Expert Herbs
 @i^248691^Waylaid Crate: Flowering Expert Herbs
 @i^248693^Waylaid Crate: Expert Textiles
 @i^248709^Waylaid Crate: Expert Ingots
@@ -211,15 +228,20 @@ GoldScout-export 6^414sraf8ea73^6
 @q^3827^1:0:0
 @q^3838^1:12:0
 @q^3839^1:12:0
+@q^3863^1:12:0
+@q^3897^1:12:0
 @q^3901^1:12:0
 @q^3904^1:12:0
 @q^3905^1:12:0
 @q^3909^1:12:0
+@q^3910^1:12:0
 @q^3915^1:12:0
 @q^3916^1:12:0
 @q^3918^1:12:0
 @q^3919^1:12:0
 @q^3943^0:4:0
+@q^4006^0:4:0
+@q^4029^1:12:0
 @q^4053^1:12:0
 @q^4060^2:4:0
 @q^4074^2:4:0
@@ -235,25 +257,32 @@ GoldScout-export 6^414sraf8ea73^6
 @q^4461^1:7:1
 @q^4551^1:12:0
 @q^4586^0:15:0
+@q^4587^0:15:0
 @q^4599^1:0:0
 @q^4636^2:15:0
 @q^5637^1:7:1
 @q^5851^1:13:0
 @q^7353^2:4:0
 @q^7423^2:4:0
+@q^7973^1:7:0
 @q^8151^1:7:1
 @q^8153^1:7:1
 @q^8157^2:4:0
 @q^8747^0:4:0
+@q^9260^1:0:0
+@q^9290^2:4:0
 @q^11386^0:15:0
 @q^12020^2:4:0
 @q^12037^1:7:1
 @q^12184^1:7:1
 @q^12202^1:7:1
 @q^15322^2:2:0
+@q^17058^1:15:0
 @q^213127^1:15:0
 @q^213544^1:0:0
 @q^213545^1:0:0
+@q^217161^1:15:0
+@q^248690^1:0:1
 @q^248691^1:0:1
 @q^248693^1:0:1
 @q^248709^2:0:1
@@ -642,6 +671,7 @@ GoldScout-export 6^414sraf8ea73^6
 @a^684^127:1,147:5,148:2
 @a^685^45:1,64:2
 @a^686^86:7,106:3,107:4
+@a^687^204:3
 @a^688^26:1
 @a^689^65:1
 @a^690^145:4,146:2,147:1,167:12
@@ -674,9 +704,13 @@ GoldScout-export 6^414sraf8ea73^6
 @a^1150^26:4,46:1,47:1
 @a^1152^87:1,88:5,107:4,127:1
 @a^1557^246:3,266:5
-@a^1562^286:1
+@a^1561^265:4,285:1
+@a^1562^265:2,285:2,286:1
+@a^1563^204:3,224:1
+@a^1564^204:8,224:3
 @a^1867^251:1
 @a^1868^130:1
+@a^1907^224:1,244:2
 @a^2246^67:1
 @a^2247^67:1
 @a^2252^229:1

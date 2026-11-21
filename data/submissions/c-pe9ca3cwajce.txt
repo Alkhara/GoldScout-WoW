@@ -1,4 +1,4 @@
-GoldScout-export 5^pe9ca3cwajce^24
+GoldScout-export 5^pe9ca3cwajce^25
 92^3^0^39^40^1418^0.3990^0.8036^3^Rock Elemental^4552:3:3,4627:3:3,4784:2:2,7912:2:3^
 587^7^6^33^34^1434^0.3227^0.1579^7^Bloodscalp Warrior^1519:2:2,1520:1:1,2750:1:1,3796:1:1,3901:3:3,3915:3:3,4306:1:1^
 588^22^14^34^35^1434^0.2442^0.1151^22^Bloodscalp Scout^1519:1:1,1708:1:1,2592:1:1,3915:2:2,4306:4:4,9853:1:1^
@@ -110,6 +110,8 @@ GoldScout-export 5^pe9ca3cwajce^24
 2932^3^1^38^38^1418^0.3862^0.1621^3^Magregan Deepshadow^3803:1:1^
 2944^1^1^42^42^1418^0.2819^0.5782^1^Boss Tho'grun^4640:1:1^
 3560^14^0^37^41^1418^0.5010^0.6836^9^Healing Ward^^
+3712^1^0^19^20^1440^0.1117^0.2699^1^Wrathtail Razortail^5523:1:1^
+3713^1^0^18^19^1440^0.1316^0.2620^1^Wrathtail Wave Rider^5523:1:1,16648:1:1^
 3975^1^0^0^0^0^0.0000^0.0000^0^^^
 3976^1^0^0^0^0^0.0000^0.0000^0^^^
 4286^6^0^0^0^0^0.0000^0.0000^0^^^
@@ -522,6 +524,7 @@ GoldScout-export 5^pe9ca3cwajce^24
 @i^5429^A Pretty Rock
 @i^5431^Empty Hip Flask
 @i^5465^Small Spider Leg
+@i^5523^Small Barnacled Clam
 @i^5524^Thick-shelled Clam
 @i^5569^Seaweed
 @i^5636^Delicate Feather
@@ -593,6 +596,7 @@ GoldScout-export 5^pe9ca3cwajce^24
 @i^15874^Soft-shelled Clam
 @i^15878^Rackmore's Silver Key
 @i^15977^Vital Orb of Strength
+@i^16648^Shredder Operating Manual - Page 4
 @i^16883^Worn Junkbox
 @i^16884^Sturdy Junkbox
 @i^17057^Shiny Fish Scales
@@ -804,6 +808,7 @@ GoldScout-export 5^pe9ca3cwajce^24
 @q^5429^0:15:0
 @q^5431^0:15:0
 @q^5465^1:7:1
+@q^5523^1:7:0
 @q^5524^1:7:0
 @q^5569^0:15:0
 @q^5636^0:15:0
@@ -875,6 +880,7 @@ GoldScout-export 5^pe9ca3cwajce^24
 @q^15874^1:13:0
 @q^15878^1:12:0
 @q^15977^2:4:0
+@q^16648^1:12:0
 @q^16883^1:15:0
 @q^16884^1:15:0
 @q^17057^1:15:0
@@ -944,6 +950,7 @@ GoldScout-export 5^pe9ca3cwajce^24
 @m^1427^Searing Gorge
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
+@m^1440^Ashenvale
 @m^1443^Desolace
 @m^1445^Dustwallow Marsh
 @m^1446^Tanaris
@@ -1127,6 +1134,8 @@ GoldScout-export 5^pe9ca3cwajce^24
 @a^2932^47:1,67:2
 @a^2944^225:1
 @a^3560^269:4,270:5
+@a^3712^102:1
+@a^3713^102:1
 @a^4323^268:3,269:9,288:1,308:3,328:3,329:1
 @a^4324^268:2,269:8,288:3,289:2,308:3,309:2,328:2,329:2
 @a^4328^267:5
