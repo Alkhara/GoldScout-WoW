@@ -1,4 +1,4 @@
-GoldScout-export 6^cinxmrzev3b8^6
+GoldScout-export 6^cinxmrzev3b8^7
 1161^11^0^11^12^1432^0.3211^0.7634^11^Stonesplinter Trogg^2268:1:1,2536:3:3,2589:5:10^
 1162^12^0^11^12^1432^0.3214^0.7884^12^Stonesplinter Scout^2268:1:1,2536:2:2,2589:2:5,7288:1:1,9745:1:1^
 1163^34^0^13^14^1432^0.3523^0.7773^34^Stonesplinter Skullthumper^1507:1:1,1511:1:1,1734:1:1,2215:1:1,2287:1:1,2589:10:18,15268:1:1^
@@ -36,7 +36,13 @@ GoldScout-export 6^cinxmrzev3b8^6
 1693^15^0^14^15^1432^0.5703^0.3966^15^Loch Crocolisk^2924:6:6,2925:6:6,3181:3:3,3401:2:2,4569:1:1,248703:1:1^
 1961^1^0^11^11^1426^0.7880^0.3723^1^Mangeclaw^3183:1:1^
 1981^4^0^10^10^1432^0.5209^0.6997^4^Dark Iron Ambusher^^
+2069^1^0^14^14^1439^0.5235^0.2483^1^Moonstalker^5635:1:1^
 2149^3^0^14^14^1432^0.6318^0.6569^3^Dark Iron Raider^^
+2164^1^0^14^14^1439^0.5199^0.2585^1^Rabid Thistle Bear^3173:1:1^
+2181^6^0^18^19^1439^0.5979^0.1702^6^Stormscale Myrmidon^1816:1:1,5523:3:3,14745:1:1,279276:1:1^
+2182^2^0^19^20^1439^0.6149^0.1741^2^Stormscale Sorceress^2764:1:1^
+2183^1^0^20^21^1439^0.6149^0.1890^1^Stormscale Warrior^858:1:1^
+2323^1^0^17^17^1439^0.6116^0.1146^1^Giant Foreststrider^4776:1:1,5114:1:1^
 269185^1^0^16^16^1432^0.3078^0.8489^1^Headsplitter^^
 270693^1^0^15^15^1432^0.6132^0.4211^1^Daggerfang^2924:1:1,279591:1:1^
 @i^556^Buzzard Beak
@@ -60,6 +66,7 @@ GoldScout-export 6^cinxmrzev3b8^6
 @i^1734^Worn Mail Gloves
 @i^1744^Laced Mail Shoulderpads
 @i^1794^Patched Leather Jerkin
+@i^1816^Unbalanced Axe
 @i^2214^Wooden Buckler
 @i^2215^Wooden Shield
 @i^2268^Stonesplinter Blade
@@ -101,8 +108,12 @@ GoldScout-export 6^cinxmrzev3b8^6
 @i^4571^War Knife of the Tiger
 @i^4701^Inscribed Cloak
 @i^4775^Cracked Bill
+@i^4776^Ruffled Feather
 @i^5109^Stonesplinter Rags
+@i^5114^Severed Talon
 @i^5465^Small Spider Leg
+@i^5523^Small Barnacled Clam
+@i^5635^Sharp Claw
 @i^6267^Disciple's Pants of the Eagle
 @i^6889^Small Egg
 @i^7288^Pattern: Rugged Leather Pants
@@ -110,10 +121,12 @@ GoldScout-export 6^cinxmrzev3b8^6
 @i^9760^Cadet Bracers
 @i^9788^Raider's Belt of Agility
 @i^11406^Rotting Bear Carcass
+@i^14745^Hulking Cloak
 @i^15268^Twin-bladed Axe of Healing
 @i^17056^Light Feather
 @i^248683^Waylaid Crate: Apprentice Ore
 @i^248703^Waylaid Crate: Apprentice Ingots
+@i^279276^Mathystral Amulet Fragment
 @i^279591^Marek's Croc-Hunting Knife
 @q^556^0:15:0
 @q^769^1:7:1
@@ -136,6 +149,7 @@ GoldScout-export 6^cinxmrzev3b8^6
 @q^1734^0:4:0
 @q^1744^0:4:0
 @q^1794^0:4:0
+@q^1816^0:2:0
 @q^2214^0:4:0
 @q^2215^0:4:0
 @q^2268^1:2:0
@@ -177,8 +191,12 @@ GoldScout-export 6^cinxmrzev3b8^6
 @q^4571^2:2:0
 @q^4701^2:4:0
 @q^4775^0:15:0
+@q^4776^0:15:0
 @q^5109^1:4:0
+@q^5114^0:15:0
 @q^5465^1:7:1
+@q^5523^1:7:0
+@q^5635^1:7:1
 @q^6267^2:4:0
 @q^6889^1:7:1
 @q^7288^2:9:0
@@ -186,13 +204,16 @@ GoldScout-export 6^cinxmrzev3b8^6
 @q^9760^1:4:0
 @q^9788^2:4:0
 @q^11406^0:15:0
+@q^14745^2:4:0
 @q^15268^2:2:0
 @q^17056^1:15:1
 @q^248683^1:0:1
 @q^248703^2:0:1
+@q^279276^1:0:0
 @q^279591^1:12:0
 @m^1426^Dun Morogh
 @m^1432^Loch Modan
+@m^1439^Darkshore
 @c^724^
 @c^733^
 @c^787^
@@ -651,7 +672,13 @@ GoldScout-export 6^cinxmrzev3b8^6
 @a^1693^131:1,150:3,151:7,172:2,192:2
 @a^1961^155:1
 @a^1981^270:2,290:2
+@a^2069^90:1
 @a^2149^272:3
+@a^2164^110:1
+@a^2181^71:3,72:3
+@a^2182^72:2
+@a^2183^72:1
+@a^2323^52:1
 @a^269185^326:1
 @a^270693^172:1
 @l^0^enUS
