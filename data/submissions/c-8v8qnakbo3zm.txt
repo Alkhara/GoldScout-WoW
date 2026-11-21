@@ -1,4 +1,4 @@
-GoldScout-export 6^8v8qnakbo3zm^18
+GoldScout-export 6^8v8qnakbo3zm^19
 2555^17^0^33^34^1417^0.3171^0.4461^17^Witherbark Witch Doctor^1708:1:1,2290:1:1,3771:2:2,4306:6:6,216483:1:1,262889:1:1^
 2558^1^0^37^37^1417^0.2389^0.6576^1^Witherbark Berserker^^
 2559^2^0^30^31^1417^0.3985^0.4794^2^Highland Strider^12184:2:2^
@@ -74,10 +74,12 @@ GoldScout-export 6^8v8qnakbo3zm^18
 255899^24^0^37^38^2548^0.6774^0.7232^24^Murloc Tideskimmer^268344:9:9^
 255901^10^0^36^37^2548^0.6303^0.7810^10^Sand Crawler^3010:1:1,5524:5:5,5569:2:2,12206:3:3,17057:3:3,268345:6:6^
 256801^2^0^41^41^2548^0.6586^0.7135^2^Murloc Warrior^^
+258522^2^0^38^38^2548^0.5453^0.8538^2^Sootfur^4582:1:1,12203:1:1,213543:1:1,265738:1:1^
 258573^12^0^36^37^2548^0.4811^0.7294^12^Mudfin Oracle^5524:5:5,17058:3:3,267266:3:3^
 258574^16^0^37^38^2548^0.4617^0.6712^16^Mudfin Warrior^3797:1:1,3928:1:1,4424:1:1,4603:2:4,5524:5:5,17058:4:4,267266:5:5^
-258588^2^0^39^40^2548^0.4308^0.6328^2^Jumbo Crawfish^5524:1:1,266157:1:1^
+258588^5^0^38^40^2548^0.4962^0.7432^5^Jumbo Crawfish^5524:2:2,266157:3:3^
 258922^4^0^37^38^2548^0.4611^0.7086^4^Hungry Crocolisk^^
+259267^28^0^36^37^2548^0.5458^0.8516^28^Plains Coyote^4582:8:8,4583:4:4,7435:1:1,7441:1:1,8146:1:1,12203:18:18^
 262037^3^0^37^38^2548^0.6073^0.8470^3^Roosting Duskbat^11393:1:1,11394:2:2^
 264850^1^0^32^41^2548^0.6917^0.7130^1^Hawk^^
 272228^4^0^36^37^2548^0.5491^0.7416^4^Harvest Sentry^4306:4:5,5427:1:1^
@@ -133,6 +135,8 @@ GoldScout-export 6^8v8qnakbo3zm^18
 @i^4525^Trelane's Wand of Invocation
 @i^4538^Snapvine Watermelon
 @i^4555^Thick Scaly Tail
+@i^4582^Soft Bushy Tail
+@i^4583^Thick Furry Mane
 @i^4603^Raw Spotted Yellowtail
 @i^4605^Red-speckled Mushroom
 @i^4607^Delicious Cave Mold
@@ -167,8 +171,11 @@ GoldScout-export 6^8v8qnakbo3zm^18
 @i^6696^Nightstalker Bow
 @i^6986^Crimson Lotus
 @i^7407^Infiltrator Armor of the Eagle
+@i^7435^Twilight Mantle of the Whale
 @i^7438^Twilight Belt of the Owl
+@i^7441^Sentinel Cap of Nature's Wrath
 @i^7496^Field Plate Shield of Healing
+@i^8146^Wicked Claw
 @i^8747^Hardened Leather Helm
 @i^9863^Archer's Shoulderpads of the Bandit
 @i^9876^Sorcerer Slippers of the Elder
@@ -180,6 +187,7 @@ GoldScout-export 6^8v8qnakbo3zm^18
 @i^11418^Hollow Wing Bone
 @i^12037^Mystery Meat
 @i^12184^Raptor Flesh
+@i^12203^Red Wolf Meat
 @i^12206^Tender Crab Meat
 @i^14370^Mystic's Woolies
 @i^14376^Sanguine Cape
@@ -193,6 +201,7 @@ GoldScout-export 6^8v8qnakbo3zm^18
 @i^15918^Conjurer's Sphere of Power
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
+@i^213543^Scroll: UPDOG
 @i^213544^Scroll: TOPAZ YORAK
 @i^216483^Witherbark Mallet
 @i^248684^Waylaid Crate: Apprentice Textiles
@@ -200,6 +209,7 @@ GoldScout-export 6^8v8qnakbo3zm^18
 @i^253938^Pattern: Filigreed Pristine Leggings
 @i^253980^Pattern: Filigreed Flame Circlet
 @i^262889^Sealed Expert's Writ
+@i^265738^Sootfur's Pelt
 @i^266157^Jumbo Crawfish Shell
 @i^267266^Mudfin Murloc Head
 @i^268344^Saltwater Murloc Eye
@@ -259,6 +269,8 @@ GoldScout-export 6^8v8qnakbo3zm^18
 @q^4525^1:12:0
 @q^4538^1:0:0
 @q^4555^0:15:0
+@q^4582^1:12:0
+@q^4583^0:15:0
 @q^4603^1:7:1
 @q^4605^1:0:0
 @q^4607^1:0:0
@@ -293,8 +305,11 @@ GoldScout-export 6^8v8qnakbo3zm^18
 @q^6696^3:2:0
 @q^6986^0:15:0
 @q^7407^2:4:0
+@q^7435^2:4:0
 @q^7438^2:4:0
+@q^7441^2:4:0
 @q^7496^2:4:0
+@q^8146^1:7:1
 @q^8747^0:4:0
 @q^9863^2:4:0
 @q^9876^2:4:0
@@ -306,6 +321,7 @@ GoldScout-export 6^8v8qnakbo3zm^18
 @q^11418^0:15:0
 @q^12037^1:7:1
 @q^12184^1:7:1
+@q^12203^1:7:1
 @q^12206^1:7:1
 @q^14370^2:4:0
 @q^14376^2:4:0
@@ -319,6 +335,7 @@ GoldScout-export 6^8v8qnakbo3zm^18
 @q^15918^2:4:0
 @q^17057^1:15:0
 @q^17058^1:15:0
+@q^213543^1:0:0
 @q^213544^1:0:0
 @q^216483^1:0:0
 @q^248684^1:0:1
@@ -326,6 +343,7 @@ GoldScout-export 6^8v8qnakbo3zm^18
 @q^253938^3:9:0
 @q^253980^3:9:0
 @q^262889^3:0:0
+@q^265738^1:12:0
 @q^266157^1:12:0
 @q^267266^1:12:0
 @q^268344^1:12:0
@@ -1650,10 +1668,12 @@ GoldScout-export 6^8v8qnakbo3zm^18
 @a^255899^274:1,292:1,293:22
 @a^255901^274:1,293:3,312:2,331:2,351:2
 @a^256801^274:1,292:1
+@a^258522^350:2
 @a^258573^228:4,309:1,310:2,329:1,330:4
 @a^258574^228:8,229:1,248:1,309:1,329:2,330:3
-@a^258588^248:1,268:1
+@a^258588^248:1,268:1,330:2,331:1
 @a^258922^289:4
+@a^259267^330:13,331:1,350:9,351:5
 @a^262037^332:3
 @a^264850^293:1
 @a^272228^290:2,291:2

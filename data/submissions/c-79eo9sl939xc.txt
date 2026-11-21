@@ -1,8 +1,8 @@
-GoldScout-export 6^79eo9sl939xc^5
+GoldScout-export 6^79eo9sl939xc^6
 92^14^0^39^40^1418^0.4140^0.8034^14^Rock Elemental^4552:3:3,4553:4:4,4784:4:4,7848:5:5,7912:6:11,8150:3:3^
 2727^4^0^35^36^1418^0.5395^0.5003^4^Crag Coyote^7846:3:5,12203:2:2^
 2728^11^0^37^38^1418^0.5647^0.5582^11^Feral Crag Coyote^4582:2:2,4583:2:2,5637:1:1,7846:4:5,12203:7:7,248708:1:1^
-2729^1^0^40^40^1418^0.3182^0.6528^1^Elder Crag Coyote^4583:1:1^
+2729^1^0^39^40^1418^0.3182^0.6528^1^Elder Crag Coyote^4583:1:1^
 2734^1^0^40^40^1418^0.1891^0.6214^1^Ridge Stalker Patriarch^4580:1:1,12202:1:1^
 2829^1^0^37^37^1418^0.6038^0.4683^1^Starving Buzzard^1464:1:1,3404:1:1^
 2830^14^0^37^39^1418^0.5673^0.5987^14^Buzzard^1464:3:3,3404:4:4,5116:3:3,5829:2:2,7847:5:5,11416:6:6,11418:1:1,12037:2:2^
@@ -11,9 +11,11 @@ GoldScout-export 6^79eo9sl939xc^5
 4343^2^0^37^38^1445^0.3324^0.4196^2^Drywallow Snapper^770:1:1,3667:1:1^
 4387^1^0^37^37^1445^0.3354^0.4099^1^Withervine Mire Beast^^
 4391^1^0^38^38^1445^0.4504^0.5551^1^Swamp Ooze^^
-4844^2^0^35^35^1418^0.3974^0.1145^2^Shadowforge Surveyor^8009:1:1^
-4851^1^0^37^37^1418^0.3223^0.1569^1^Stonevault Rockchewer^^
-4856^7^0^36^37^1418^0.3301^0.1571^7^Stonevault Cave Hunter^3771:1:1,4306:2:7^
+4844^20^0^35^36^1418^0.4351^0.1080^20^Shadowforge Surveyor^1477:1:1,3780:1:1,4306:4:9,8009:4:4,8052:4:4,8188:1:1,248692:1:1^
+4845^3^0^36^37^1418^0.3643^0.1567^3^Shadowforge Ruffian^8009:1:1^
+4846^16^0^35^36^1418^0.4326^0.1067^16^Shadowforge Digger^4306:6:11,7448:1:1,8009:3:3,8052:4:4^
+4851^1^0^36^37^1418^0.3223^0.1569^1^Stonevault Rockchewer^^
+4856^8^0^36^37^1418^0.3331^0.1615^8^Stonevault Cave Hunter^3771:2:2,4306:2:7,7666:1:1^
 5422^1^0^40^41^1446^0.5386^0.3096^1^Scorpid Hunter^19937:1:1^
 5616^7^0^40^41^1446^0.6283^0.3101^7^Wastewander Thief^4338:5:9,4422:1:1,8483:1:1^
 5617^2^0^42^43^1446^0.5943^0.3124^2^Wastewander Shadow Mage^^
@@ -29,6 +31,7 @@ GoldScout-export 6^79eo9sl939xc^5
 7858^6^0^44^45^1446^0.7546^0.4581^6^Southsea Swashbuckler^4338:1:2,7909:1:1,9260:1:1^
 @i^770^Pointy Crocolisk Tooth
 @i^1464^Buzzard Talon
+@i^1477^Scroll of Agility II
 @i^1645^Moonberry Juice
 @i^1715^Polished Jazeraint Armor
 @i^1751^Linked Chain Pants
@@ -36,6 +39,7 @@ GoldScout-export 6^79eo9sl939xc^5
 @i^3404^Buzzard Wing
 @i^3667^Tender Crocolisk Meat
 @i^3771^Wild Hog Shank
+@i^3780^Long-barreled Musket
 @i^3927^Fine Aged Cheddar
 @i^4019^Heavy Flint Axe
 @i^4306^Silk Cloth
@@ -52,13 +56,17 @@ GoldScout-export 6^79eo9sl939xc^5
 @i^5637^Large Fang
 @i^5829^Razor-sharp Beak
 @i^6444^Forked Tongue
+@i^7448^Sentinel Girdle of the Boar
+@i^7666^Shattered Necklace
 @i^7846^Crag Coyote Fang
 @i^7847^Buzzard Gizzard
 @i^7848^Rock Elemental Shard
 @i^7909^Aquamarine
 @i^7912^Solid Stone
 @i^8009^Dentrium Power Stone
+@i^8052^An'Alleum Power Stone
 @i^8150^Deeprock Salt
+@i^8188^Explosive Shotgun
 @i^8483^Wastewander Water Pouch
 @i^9260^Volatile Rum
 @i^9813^Fortified Gauntlets of the Eagle
@@ -71,9 +79,11 @@ GoldScout-export 6^79eo9sl939xc^5
 @i^15526^Sentry's Cape of the Tiger
 @i^19937^Small Scorpid Claw
 @i^20519^Southsea Pirate Hat
+@i^248692^Waylaid Crate: Expert Ore
 @i^248708^Waylaid Crate: Expert Fabrics
 @q^770^0:15:0
 @q^1464^0:15:0
+@q^1477^1:0:0
 @q^1645^1:0:0
 @q^1715^3:4:0
 @q^1751^0:4:0
@@ -81,6 +91,7 @@ GoldScout-export 6^79eo9sl939xc^5
 @q^3404^1:7:1
 @q^3667^1:7:1
 @q^3771^1:0:0
+@q^3780^0:2:0
 @q^3927^1:0:0
 @q^4019^0:2:0
 @q^4306^1:7:1
@@ -97,13 +108,17 @@ GoldScout-export 6^79eo9sl939xc^5
 @q^5637^1:7:1
 @q^5829^0:15:0
 @q^6444^0:15:0
+@q^7448^2:4:0
+@q^7666^2:12:0
 @q^7846^1:12:0
 @q^7847^1:12:0
 @q^7848^1:12:0
 @q^7909^2:7:1
 @q^7912^1:7:1
 @q^8009^1:12:0
+@q^8052^1:12:0
 @q^8150^1:7:1
+@q^8188^2:2:0
 @q^8483^1:12:0
 @q^9260^1:0:0
 @q^9813^2:4:0
@@ -116,6 +131,7 @@ GoldScout-export 6^79eo9sl939xc^5
 @q^15526^2:4:0
 @q^19937^0:15:0
 @q^20519^1:12:0
+@q^248692^1:0:1
 @q^248708^2:0:1
 @m^1413^The Barrens
 @m^1418^Badlands
@@ -817,9 +833,11 @@ GoldScout-export 6^79eo9sl939xc^5
 @a^4343^166:2
 @a^4387^166:1
 @a^4391^229:1
-@a^4844^47:1,48:1
+@a^4844^28:1,29:7,46:1,47:1,48:4,49:4,67:2
+@a^4845^67:3
+@a^4846^29:9,47:3,49:2,66:1,67:1
 @a^4851^66:1
-@a^4856^46:3,66:4
+@a^4856^46:3,66:4,67:1
 @a^5422^130:1
 @a^5616^91:1,132:6
 @a^5617^91:1,151:1
