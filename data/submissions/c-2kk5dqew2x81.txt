@@ -1,4 +1,4 @@
-GoldScout-export 6^2kk5dqew2x81^3
+GoldScout-export 6^2kk5dqew2x81^5
 1015^1^0^23^24^1437^0.5573^0.2489^1^Highland Raptor^3685:1:1^
 1016^1^0^24^25^1437^0.5603^0.2490^1^Highland Lashtail^3685:1:1^
 1017^5^0^25^26^1437^0.3774^0.2118^5^Highland Scytheclaw^3180:1:1,3685:3:3^
@@ -24,6 +24,20 @@ GoldScout-export 6^2kk5dqew2x81^3
 1160^1^0^30^30^1437^0.1600^0.2347^1^Captain Halyndor^2629:1:1^
 1259^1^0^22^22^1437^0.1471^0.4073^1^Gobbler^730:1:1,5524:1:1^
 1400^1^0^24^24^1437^0.2332^0.4339^1^Wetlands Crocolisk^3667:1:1^
+1501^8^0^1^1^1420^0.3131^0.6286^8^Mindless Zombie^159:1:1,1369:1:1,2589:3:3,2654:1:1,3365:1:1^
+1502^6^0^1^2^1420^0.3175^0.6328^6^Wretched Zombie^1364:1:1,1366:1:1,2589:1:1^
+2240^10^0^32^33^1416^0.4773^0.7989^10^Syndicate Footpad^1477:1:1,1710:1:1,2592:2:5,3792:1:1,4306:4:7,5113:1:1,262888:1:1^
+2241^7^0^33^34^1416^0.4775^0.8142^7^Syndicate Thief^1707:2:2,1708:1:1,1710:1:1,2592:1:1,4306:1:2,213547:1:1^
+2242^3^0^35^36^1416^0.5660^0.4468^3^Syndicate Spy^^
+2243^2^0^36^37^1416^0.5629^0.3254^2^Syndicate Sentry^4306:1:3,5113:1:1^
+2250^1^0^32^32^1416^0.4060^0.7416^1^Mountain Yeti^^
+2252^8^0^34^35^1416^0.5092^0.5625^8^Crushridge Ogre^1708:1:1,2843:3:3,3658:3:3,3771:1:1,3783:1:1,4306:2:3,9860:1:1,15226:1:1^
+2253^4^0^35^36^1416^0.5086^0.5584^4^Crushridge Brute^2843:2:2,3658:2:2,4306:2:2^
+2354^1^0^22^22^1424^0.5148^0.3738^1^Vicious Gray Bear^3730:1:1^
+2384^1^0^23^23^1424^0.5101^0.4226^1^Starving Mountain Lion^5136:1:1,6382:1:1^
+2406^4^0^32^33^1416^0.4459^0.7923^4^Mountain Lion^3731:2:2,5637:1:1,262889:1:1^
+2407^8^0^33^34^1416^0.5025^0.6110^8^Hulking Mountain Lion^1686:2:2,3731:4:4,5637:1:1,7408:1:1^
+2408^1^0^30^31^1416^0.3052^0.3392^1^Snapjaw^5524:1:1^
 2559^1^0^30^31^1417^0.4365^0.6675^1^Highland Strider^1529:1:1,3685:1:1^
 2560^2^0^33^34^1417^0.3175^0.6291^2^Highland Thrasher^3685:1:1,12184:1:1^
 2563^2^0^32^33^1417^0.3741^0.6382^2^Plains Creeper^1081:1:1,4585:1:1^
@@ -34,14 +48,23 @@ GoldScout-export 6^2kk5dqew2x81^3
 260803^2^0^27^28^1437^0.5142^0.6314^2^Highland Spider^1074:1:1,2251:1:1,11995:1:1^
 270589^1^0^31^31^1437^0.1600^0.2347^1^Nightveiled Rotheap^279537:1:1^
 271334^3^0^25^26^1437^0.5794^0.3238^3^Maddened Rotclaw^3702:1:1,3730:1:1,11407:2:2^
+@i^159^Refreshing Spring Water
 @i^730^Murloc Eye
 @i^929^Healing Potion
 @i^1074^Hard Spider Leg Tip
 @i^1081^Crisp Spider Meat
 @i^1205^Melon Juice
+@i^1364^Ragged Leather Vest
+@i^1366^Ragged Leather Pants
+@i^1369^Ragged Leather Belt
 @i^1468^Murloc Fin
+@i^1477^Scroll of Agility II
 @i^1529^Jade
+@i^1686^Bristly Whisker
 @i^1697^Keen Raptor Tooth
+@i^1707^Stormwind Brie
+@i^1708^Sweet Nectar
+@i^1710^Greater Healing Potion
 @i^1755^Reinforced Chain Boots
 @i^1760^Reinforced Chain Shoulderpads
 @i^1785^Cross-stitched Shoulderpads
@@ -50,44 +73,72 @@ GoldScout-export 6^2kk5dqew2x81^3
 @i^1827^Meat Cleaver
 @i^1830^Long Bastard Sword
 @i^2251^Gooey Spider Leg
+@i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2629^Intrepid Strongbox Key
+@i^2654^Flimsy Chain Pants
 @i^2785^Stiff Recurve Bow
 @i^2786^Oiled Blunderbuss
+@i^2843^Dirty Knucklebones
 @i^3180^Flecked Raptor Scale
 @i^3182^Spider's Silk
 @i^3337^Dragonmaw War Banner
 @i^3349^Sida's Bag
+@i^3365^Frayed Bracers
 @i^3380^Cross-stitched Belt
+@i^3658^Recovered Tome
 @i^3667^Tender Crocolisk Meat
 @i^3685^Raptor Egg
 @i^3702^Bear Gall Bladder
 @i^3730^Big Bear Meat
+@i^3731^Lion Meat
 @i^3770^Mutton Chop
+@i^3771^Wild Hog Shank
+@i^3783^Light Scimitar
+@i^3792^Interlaced Belt
 @i^4306^Silk Cloth
 @i^4585^Dripping Spider Mandible
+@i^5113^Mark of the Syndicate
+@i^5136^Torn Furry Ear
 @i^5524^Thick-shelled Clam
+@i^5637^Large Fang
 @i^6308^Raw Bristle Whisker Catfish
 @i^6315^Steelarrow Crossbow
+@i^6382^Forest Leather Belt
+@i^7408^Infiltrator Shoulders of the Wolf
+@i^9860^Archer's Cloak of the Beast
 @i^11150^Formula: Enchant Gloves - Mining
 @i^11407^Torn Bear Pelt
 @i^11995^Ivory Band of Spirit
 @i^12184^Raptor Flesh
 @i^12238^Darkshore Grouper
+@i^15226^Giant Club of Arcane Protection
 @i^15249^Polished Zweihander of Healing
 @i^17057^Shiny Fish Scales
+@i^213547^Scroll: THAW WORDS
 @i^248688^Waylaid Crate: Journeyman Textiles
+@i^262888^Sealed Journeyman's Writ
+@i^262889^Sealed Expert's Writ
 @i^279385^Pristine Crimson Scale
 @i^279537^Rotheap Innards
 @i^280103^Razormaw Incisor
+@q^159^1:0:0
 @q^730^1:7:1
 @q^929^1:0:0
 @q^1074^0:15:0
 @q^1081^1:7:1
 @q^1205^1:0:0
+@q^1364^0:4:0
+@q^1366^0:4:0
+@q^1369^0:4:0
 @q^1468^1:7:1
+@q^1477^1:0:0
 @q^1529^2:7:1
+@q^1686^0:15:0
 @q^1697^0:15:0
+@q^1707^1:0:0
+@q^1708^1:0:0
+@q^1710^1:0:0
 @q^1755^0:4:0
 @q^1760^0:4:0
 @q^1785^0:4:0
@@ -96,37 +147,59 @@ GoldScout-export 6^2kk5dqew2x81^3
 @q^1827^0:2:0
 @q^1830^0:2:0
 @q^2251^1:7:1
+@q^2589^1:7:1
 @q^2592^1:7:1
 @q^2629^1:13:0
+@q^2654^0:4:0
 @q^2785^0:2:0
 @q^2786^0:2:0
+@q^2843^1:12:0
 @q^3180^0:15:0
 @q^3182^1:7:1
 @q^3337^1:12:0
 @q^3349^1:12:0
+@q^3365^0:4:0
 @q^3380^0:4:0
+@q^3658^1:12:0
 @q^3667^1:7:1
 @q^3685^1:7:1
 @q^3702^0:15:0
 @q^3730^1:7:1
+@q^3731^1:7:1
 @q^3770^1:0:0
+@q^3771^1:0:0
+@q^3783^0:2:0
+@q^3792^0:4:0
 @q^4306^1:7:1
 @q^4585^0:15:0
+@q^5113^0:15:0
+@q^5136^0:15:0
 @q^5524^1:7:0
+@q^5637^1:7:1
 @q^6308^1:7:1
 @q^6315^2:2:0
+@q^6382^2:4:0
+@q^7408^2:4:0
+@q^9860^2:4:0
 @q^11150^2:9:0
 @q^11407^1:12:0
 @q^11995^2:4:0
 @q^12184^1:7:1
 @q^12238^1:0:0
+@q^15226^2:2:0
 @q^15249^2:2:0
 @q^17057^1:15:0
+@q^213547^1:0:0
 @q^248688^1:0:1
+@q^262888^3:0:0
+@q^262889^3:0:0
 @q^279385^1:12:0
 @q^279537^1:15:0
 @q^280103^1:12:0
+@m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
+@m^1420^Tirisfal Glades
+@m^1424^Hillsbrad Foothills
 @m^1437^Wetlands
 @m^1439^Darkshore
 @c^118^
@@ -815,6 +888,7 @@ GoldScout-export 6^2kk5dqew2x81^3
 @c^273937^
 @c^273938^
 @c^273939^
+@c^274490^
 @c^274971^
 @c^274976^
 @c^275610^
@@ -916,6 +990,20 @@ GoldScout-export 6^2kk5dqew2x81^3
 @a^1160^83:1
 @a^1259^162:1
 @a^1400^164:1
+@a^1501^246:8
+@a^1502^246:6
+@a^2240^309:8,329:2
+@a^2241^309:1,329:6
+@a^2242^171:1,191:2
+@a^2243^131:2
+@a^2250^288:1
+@a^2252^209:1,210:2,229:1,230:3,249:1
+@a^2253^210:2,230:2
+@a^2354^150:1
+@a^2384^170:1
+@a^2406^308:2,309:1,328:1
+@a^2407^110:1,131:2,308:1,309:3,330:1
+@a^2408^126:1
 @a^2559^268:1
 @a^2560^246:2
 @a^2563^226:1,288:1

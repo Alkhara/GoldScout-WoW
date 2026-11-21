@@ -1,4 +1,4 @@
-GoldScout-export 6^i2g9e21l4rvu^4
+GoldScout-export 6^i2g9e21l4rvu^5
 2344^10^0^28^29^1424^0.7040^0.7952^10^Dun Garok Mountaineer^1205:1:1,1705:1:1,2592:1:2,3693:1:1,6389:1:1,6615:1:1,9823:1:1,11995:1:1^
 2345^4^0^29^30^1424^0.7030^0.7903^4^Dun Garok Rifleman^4633:1:1,6397:1:1,13019:1:1^
 2346^3^0^29^30^1424^0.7118^0.7995^3^Dun Garok Priest^1809:1:1,4306:2:3^
@@ -63,6 +63,10 @@ GoldScout-export 6^i2g9e21l4rvu^4
 7800^2^0^0^0^0^0.0000^0.0000^0^^7414:1:1,9299:1:1,9459:2:2,9826:1:1,253978:1:1^
 7843^1^0^25^25^1415^0.4340^0.5359^1^Gnomeregan Evacuee^1822:1:1^
 14275^1^0^28^28^1424^0.7076^0.7983^1^Tamra Stormpike^6591:1:1^
+254560^1^0^40^40^2548^0.4631^0.5113^1^Twilight Shadowmancer^^
+256798^1^0^37^38^2548^0.4632^0.5097^1^Twilight Neophyte^^
+256952^2^0^39^40^2548^0.4602^0.5066^2^Twilight Raider^^
+263307^4^0^37^38^2548^0.6214^0.5775^4^Glade Viper^6444:2:2,6826:2:2^
 @i^729^Stringy Vulture Meat
 @i^929^Healing Potion
 @i^1205^Melon Juice
@@ -132,12 +136,14 @@ GoldScout-export 6^i2g9e21l4rvu^4
 @i^6389^Glimmering Mail Coif
 @i^6393^Silver-thread Gloves
 @i^6397^Emblazoned Gloves
+@i^6444^Forked Tongue
 @i^6591^Battleforge Wristguards of the Owl
 @i^6597^Battleforge Shoulderguards of Frost Protection
 @i^6598^Dervish Buckler of Frost Protection
 @i^6607^Dervish Leggings of the Bandit
 @i^6614^Sage's Cloak of Shadow Wrath
 @i^6615^Sage's Gloves of the Eagle
+@i^6826^Brilliant Scale
 @i^6893^Workshop Key
 @i^7355^Elder's Bracers of Shadow Protection
 @i^7414^Infiltrator Pants of the Tiger
@@ -261,12 +267,14 @@ GoldScout-export 6^i2g9e21l4rvu^4
 @q^6389^2:4:0
 @q^6393^2:4:0
 @q^6397^2:4:0
+@q^6444^0:15:0
 @q^6591^2:4:0
 @q^6597^2:4:0
 @q^6598^2:4:0
 @q^6607^2:4:0
 @q^6614^2:4:0
 @q^6615^2:4:0
+@q^6826^0:15:0
 @q^6893^1:13:0
 @q^7355^2:4:0
 @q^7414^2:4:0
@@ -325,6 +333,7 @@ GoldScout-export 6^i2g9e21l4rvu^4
 @m^1416^Alterac Mountains
 @m^1424^Hillsbrad Foothills
 @m^1441^Thousand Needles
+@m^2548^Riverglades
 @c^118^
 @c^724^
 @c^733^
@@ -1660,4 +1669,8 @@ GoldScout-export 6^i2g9e21l4rvu^4
 @a^6208^208:1
 @a^7843^208:1
 @a^14275^314:1
+@a^254560^209:1
+@a^256798^209:1
+@a^256952^209:2
+@a^263307^212:1,232:2,252:1
 @l^0^enUS
