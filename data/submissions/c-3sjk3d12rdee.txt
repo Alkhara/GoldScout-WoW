@@ -1,4 +1,4 @@
-GoldScout-export 5^3sjk3d12rdee^7
+GoldScout-export 6^3sjk3d12rdee^9
 213^1^0^20^20^1431^0.4543^0.1753^1^Starving Dire Wolf^893:1:1,3301:1:1^
 681^1^0^31^31^1434^0.3347^0.1229^1^Young Stranglethorn Tiger^1686:1:1^
 682^9^0^32^33^1434^0.4643^0.1526^9^Stranglethorn Tiger^1686:2:2,1687:1:1,1705:1:1,12202:2:2^
@@ -24,16 +24,27 @@ GoldScout-export 5^3sjk3d12rdee^7
 4095^2^0^27^28^1441^0.4323^0.3316^2^Galak Mauler^^
 4097^1^0^26^27^1441^0.4304^0.3275^1^Galak Stormer^14574:1:1^
 4099^3^0^26^27^1441^0.4332^0.3373^3^Galak Marauder^2592:1:1,4306:1:1^
-4126^1^0^26^26^1441^0.3479^0.2652^1^Crag Stalker^5137:1:1^
+4126^1^0^25^26^1441^0.3479^0.2652^1^Crag Stalker^5137:1:1^
+4139^1^0^34^34^1441^0.8384^0.8103^1^Scorpid Terror^5794:1:1^
+4140^1^0^31^31^1441^0.8634^0.6030^1^Scorpid Reaver^19938:1:1^
+4143^1^0^35^35^1441^0.8664^0.5971^1^Sparkleshell Snapper^4556:1:1^
+4151^6^0^32^33^1441^0.8764^0.7333^6^Saltstone Crystalhide^1701:1:1,1702:3:3,4093:1:1,251457:1:1^
+4154^2^0^30^32^1441^0.8787^0.6638^2^Salt Flats Scavenger^3399:1:1,5116:1:1,5848:2:2,11416:1:1^
+4158^1^0^33^33^1441^0.8730^0.7516^1^Salt Flats Vulture^729:1:1,5116:1:1,5848:1:1,11418:1:1,213547:1:1^
 4619^1^0^32^32^1440^0.7819^0.4303^1^Geltharis^5461:1:1^
 6206^5^0^0^0^0^0.0000^0.0000^0^^9308:1:1,9309:2:2^
 6221^3^0^24^25^1415^0.4352^0.5382^3^Addled Leper^1712:1:1^
 6329^3^0^0^0^0^0.0000^0.0000^0^^929:1:1,3770:1:1,4306:1:3,9308:1:1,9309:1:1^
+10756^2^0^28^28^1441^0.3588^0.3509^2^Scalding Elemental^9451:2:2^
+10757^2^0^27^28^1441^0.3622^0.3703^2^Boiling Elemental^9451:1:3,15514:1:1^
+@i^729^Stringy Vulture Meat
 @i^893^Dire Wolf Fang
 @i^929^Healing Potion
 @i^1478^Scroll of Protection II
 @i^1686^Bristly Whisker
 @i^1687^Retractable Claw
+@i^1701^Curved Basilisk Claw
+@i^1702^Intact Basilisk Spine
 @i^1705^Lesser Moonstone
 @i^1707^Stormwind Brie
 @i^1712^Scroll of Spirit II
@@ -43,30 +54,46 @@ GoldScout-export 5^3sjk3d12rdee^7
 @i^2749^Green Hills of Stranglethorn - Page 25
 @i^2751^Green Hills of Stranglethorn - Page 27
 @i^3301^Sharp Canine
+@i^3399^Vulture Talon
 @i^3770^Mutton Chop
+@i^4093^Large Basilisk Tail
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
+@i^4556^Speckled Shell Fragment
 @i^4606^Spongy Morel
+@i^5116^Long Tail Feather
 @i^5137^Bright Eyeball
 @i^5461^Branch of Cenarius
 @i^5475^Wooden Key
 @i^5508^Fallen Moonstone
 @i^5635^Sharp Claw
 @i^5637^Large Fang
+@i^5794^Salty Scorpid Venom
+@i^5848^Hollow Vulture Bone
 @i^8146^Wicked Claw
 @i^8746^Interlaced Cowl
 @i^9308^Grime-Encrusted Object
 @i^9309^Robo-mechanical Guts
+@i^9451^Bubbling Water
 @i^11406^Rotting Bear Carcass
+@i^11416^Delicate Ribcage
+@i^11418^Hollow Wing Bone
 @i^12202^Tiger Meat
 @i^14574^Bristlebark Britches
 @i^14578^Dokebi Cord
 @i^15231^Splitting Hatchet of the Beast
+@i^15514^Grunt's Chestpiece of the Defender
+@i^19938^Heavy Scorpid Leg
+@i^213547^Scroll: THAW WORDS
+@i^251457^Plans: Steel Spear
+@q^729^1:7:1
 @q^893^0:15:0
 @q^929^1:0:0
 @q^1478^1:0:0
 @q^1686^0:15:0
 @q^1687^0:15:0
+@q^1701^0:15:0
+@q^1702^0:15:0
 @q^1705^2:7:1
 @q^1707^1:0:0
 @q^1712^1:0:0
@@ -76,25 +103,38 @@ GoldScout-export 5^3sjk3d12rdee^7
 @q^2749^1:12:0
 @q^2751^1:12:0
 @q^3301^0:15:0
+@q^3399^0:15:0
 @q^3770^1:0:0
+@q^4093^0:15:0
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4556^0:15:0
 @q^4606^1:0:0
+@q^5116^1:7:1
 @q^5137^0:15:0
 @q^5461^1:12:0
 @q^5475^1:13:0
 @q^5508^1:12:0
 @q^5635^1:7:1
 @q^5637^1:7:1
+@q^5794^1:12:0
+@q^5848^1:12:0
 @q^8146^1:7:1
 @q^8746^0:4:0
 @q^9308^1:12:0
 @q^9309^1:12:0
+@q^9451^1:0:0
 @q^11406^0:15:0
+@q^11416^0:15:0
+@q^11418^0:15:0
 @q^12202^1:7:1
 @q^14574^2:4:0
 @q^14578^2:4:0
 @q^15231^2:2:0
+@q^15514^2:4:0
+@q^19938^0:15:0
+@q^213547^1:0:0
+@q^251457^2:9:0
 @m^1415^Eastern Kingdoms
 @m^1431^Duskwood
 @m^1434^Stranglethorn Vale
@@ -678,6 +718,14 @@ GoldScout-export 5^3sjk3d12rdee^7
 @a^4097^128:1
 @a^4099^128:3
 @a^4126^106:1
+@a^4139^336:1
+@a^4140^257:1
+@a^4143^237:1
+@a^4151^237:1,297:2,317:3
+@a^4154^277:2
+@a^4158^317:1
 @a^4619^175:1
 @a^6221^208:3
+@a^10756^147:2
+@a^10757^147:2
 @l^0^enUS

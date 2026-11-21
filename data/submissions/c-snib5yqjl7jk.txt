@@ -1,4 +1,4 @@
-GoldScout-export 6^snib5yqjl7jk^19
+GoldScout-export 6^snib5yqjl7jk^20
 205^14^0^28^29^1431^0.6263^0.7451^14^Nightbane Dark Runner^1755:1:1,1756:1:1,10408:1:1^
 533^10^0^27^28^1431^0.6503^0.7028^10^Nightbane Shadow Weaver^2794:1:1,3770:1:1^
 570^1^0^29^29^1431^0.1732^0.3346^1^Brain Eater^^
@@ -78,6 +78,7 @@ GoldScout-export 6^snib5yqjl7jk^19
 4275^1^0^0^0^0^0.0000^0.0000^0^^3385:1:3,6324:1:1^
 4278^1^0^0^0^0^0.0000^0.0000^0^^3191:1:1^
 4279^1^0^0^0^0^0.0000^0.0000^0^^6319:1:1,252793:1:1^
+4725^1^0^37^37^1443^0.2473^0.8259^1^Crazed Sandstrider^5829:1:1^
 6523^1^0^27^27^1437^0.4806^0.1714^1^Dark Iron Rifleman^^
 250483^1^0^0^0^0^0.0000^0.0000^0^^271203:1:1^
 250484^8^0^0^0^0^0.0000^0.0000^0^^1503:2:2,1510:1:1,1737:1:1,2073:1:1,2777:1:1,2976:1:1,3167:1:1,3931:4:4^
@@ -270,6 +271,7 @@ GoldScout-export 6^snib5yqjl7jk^19
 @i^4564^Spiked Club of the Bear
 @i^4570^Birchwood Maul of Spirit
 @i^4585^Dripping Spider Mandible
+@i^4603^Raw Spotted Yellowtail
 @i^4605^Red-speckled Mushroom
 @i^4606^Spongy Morel
 @i^4714^Silver-thread Sash
@@ -282,6 +284,7 @@ GoldScout-export 6^snib5yqjl7jk^19
 @i^5637^Large Fang
 @i^5784^Slimy Murloc Scale
 @i^5785^Thick Murloc Scale
+@i^5829^Razor-sharp Beak
 @i^6044^Plans: Iron Shield Spike
 @i^6266^Disciple's Vest of Intellect
 @i^6303^Raw Slitherskin Mackerel
@@ -295,6 +298,7 @@ GoldScout-export 6^snib5yqjl7jk^19
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
 @i^6361^Raw Rainbow Fin Albacore
+@i^6362^Raw Rockscale Cod
 @i^6539^Willow Belt of the Whale
 @i^6540^Willow Pants of the Sorcerer
 @i^6543^Willow Bracers of Stamina
@@ -306,7 +310,9 @@ GoldScout-export 6^snib5yqjl7jk^19
 @i^6986^Crimson Lotus
 @i^7355^Elder's Bracers of the Prophet
 @i^7406^Infiltrator Cord of the Physician
+@i^7973^Big-mouth Clam
 @i^8365^Raw Mithril Head Trout
+@i^8366^Bloated Mithril Head Trout
 @i^8747^Hardened Leather Helm
 @i^9749^Simple Blouse of the Whale
 @i^9762^Cadet Gauntlets
@@ -324,15 +330,24 @@ GoldScout-export 6^snib5yqjl7jk^19
 @i^11406^Rotting Bear Carcass
 @i^12238^Darkshore Grouper
 @i^13422^Stonescale Eel
+@i^13754^Raw Glossy Mightfish
+@i^13755^Raw Winter Squid
 @i^13758^Raw Redgill
+@i^13875^Ironbound Locked Chest
+@i^13876^40 Pound Yellowtail
 @i^15231^Splitting Hatchet of Healing
 @i^15933^Simple Branch of the Eagle
 @i^16967^Feralas Ahi
+@i^16968^Sar'theris Striker
+@i^16969^Savage Coast Blue Sailfin
+@i^16970^Misty Reed Mahi Mahi
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
 @i^20708^Tightly Sealed Trunk
 @i^21113^Watertight Trunk
 @i^21114^Rumsey Rum Dark
+@i^21150^Iron Bound Trunk
+@i^21153^Raw Greater Sagefish
 @i^21228^Mithril Bound Trunk
 @i^211853^Scroll: VOCE WELL
 @i^213546^Scroll: SHOOBEEDOOP
@@ -509,6 +524,7 @@ GoldScout-export 6^snib5yqjl7jk^19
 @q^4564^2:2:0
 @q^4570^2:2:0
 @q^4585^0:15:0
+@q^4603^1:7:1
 @q^4605^1:0:0
 @q^4606^1:0:0
 @q^4714^2:4:0
@@ -521,6 +537,7 @@ GoldScout-export 6^snib5yqjl7jk^19
 @q^5637^1:7:1
 @q^5784^1:7:1
 @q^5785^1:7:1
+@q^5829^0:15:0
 @q^6044^2:9:0
 @q^6266^2:4:0
 @q^6303^1:7:1
@@ -534,6 +551,7 @@ GoldScout-export 6^snib5yqjl7jk^19
 @q^6358^1:7:1
 @q^6359^1:7:1
 @q^6361^1:7:1
+@q^6362^1:7:1
 @q^6539^2:4:0
 @q^6540^2:4:0
 @q^6543^2:4:0
@@ -545,7 +563,9 @@ GoldScout-export 6^snib5yqjl7jk^19
 @q^6986^0:15:0
 @q^7355^2:4:0
 @q^7406^2:4:0
+@q^7973^1:7:0
 @q^8365^1:7:1
+@q^8366^2:15:0
 @q^8747^0:4:0
 @q^9749^2:4:0
 @q^9762^1:4:0
@@ -563,15 +583,24 @@ GoldScout-export 6^snib5yqjl7jk^19
 @q^11406^0:15:0
 @q^12238^1:0:0
 @q^13422^1:7:1
+@q^13754^1:7:1
+@q^13755^1:0:1
 @q^13758^1:7:1
+@q^13875^1:15:0
+@q^13876^1:15:0
 @q^15231^2:2:0
 @q^15933^2:4:0
 @q^16967^1:15:0
+@q^16968^1:12:0
+@q^16969^1:12:0
+@q^16970^1:12:0
 @q^17057^1:15:0
 @q^17058^1:15:0
 @q^20708^1:15:0
 @q^21113^1:15:0
 @q^21114^1:0:0
+@q^21150^1:15:0
+@q^21153^1:7:1
 @q^21228^1:15:0
 @q^211853^1:0:0
 @q^213546^1:0:0
@@ -613,10 +642,14 @@ GoldScout-export 6^snib5yqjl7jk^19
 @m^1424^Hillsbrad Foothills
 @m^1431^Duskwood
 @m^1434^Stranglethorn Vale
+@m^1435^Swamp of Sorrows
 @m^1437^Wetlands
 @m^1439^Darkshore
+@m^1443^Desolace
 @m^1444^Feralas
 @m^1445^Dustwallow Marsh
+@m^1446^Tanaris
+@m^2548^Riverglades
 @c^724^
 @c^733^
 @c^787^
@@ -1101,14 +1134,19 @@ GoldScout-export 6^snib5yqjl7jk^19
 @a^2577^349:1
 @a^4040^249:1
 @a^4062^349:1
+@a^4725^324:1
 @a^6523^69:1
 @a^260809^229:4,230:3
 @a^271334^171:1
 @a^271351^171:1,191:1
 @f^1424^0^36^192^3820:5:9,6358:7:7,6359:6:6,6361:8:8,21113:7:7,21114:3:3^267:7,268:15,269:11,271:3
-@f^1434^0^7^191^6358:1:1,13422:5:8,21228:1:1^264:1,265:6
+@f^1434^0^30^191^4603:4:4,6358:6:6,6359:3:3,6362:11:11,13422:5:8,16969:1:1,21228:1:1^264:1,265:29
+@f^1435^0^9^225^4603:1:1,6358:1:1,6359:1:1,6362:6:6,16970:1:1^14:4,35:4,36:1
 @f^1437^0^13^195^6358:9:9,6361:4:4^221:2,241:11
 @f^1439^0^99^170^6303:16:16,6307:1:1,6358:12:12,6361:29:29,12238:40:40,20708:1:1^227:99
+@f^1443^0^1^225^6362:1:1,16968:1:1^324:1
 @f^1444^0^1^225^13758:1:1,16967:1:1^212:1
 @f^1445^0^150^201^6308:44:44,6309:1:1,6311:1:1,8365:104:104^151:150
+@f^1446^0^133^225^4603:49:49,6359:14:14,6362:7:7,7973:12:12,13422:13:24,13754:16:16,13755:20:20,13875:1:1,13876:1:1^73:70,133:63
+@f^2548^0^8^225^8365:1:1,8366:1:1,21150:1:1,21153:5:5^330:8
 @l^0^enUS
