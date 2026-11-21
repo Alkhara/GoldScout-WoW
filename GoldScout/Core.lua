@@ -598,6 +598,29 @@ local function OnlyDispatching(message, stack)
   return frames == 1
 end
 
+-- An error in another addon's file with the game's own code ([C]) between it
+-- and GoldScout: GoldScout called a game function (GameTooltip:Show()) and
+-- another addon's hook on it failed (Auctioneer's LibExtraTip, seen in a
+-- player's report). A GoldScout call straight into another addon's code has no
+-- [C] frame in between and is still recorded. Errors in Blizzard's own files
+-- are still recorded too.
+local function InAnotherAddOnsHook(message, stack)
+  local file = tostring(message):match("^(.-%.lua)[\"%]]*:%d+:")
+  if not file or file:find("GoldScout", 1, true)
+      or file:find("Blizzard_", 1, true) or file:find("FrameXML", 1, true) or file:find("SharedXML", 1, true) then
+    return false
+  end
+  for line in stack:gmatch("[^\n]+") do
+    if MentionsGoldScout(line) then
+      return false
+    end
+    if line:find("^%[C%]") then
+      return true
+    end
+  end
+  return false
+end
+
 -- Pass every error on to whatever handler was there (the default popup,
 -- BugSack...), but keep a copy of the ones that come from GoldScout.
 if geterrorhandler and seterrorhandler then
@@ -609,7 +632,8 @@ if geterrorhandler and seterrorhandler then
       -- so every addon's errors looked like GoldScout's.
       local stack = debugstack and debugstack(4, 12, 0) or ""
       if MentionsGoldScout(tostring(message))
-          or (MentionsGoldScout(stack) and not OnlyDispatching(message, stack)) then
+          or (MentionsGoldScout(stack) and not OnlyDispatching(message, stack)
+            and not InAnotherAddOnsHook(message, stack)) then
         ns.RecordError(message, stack)
       end
     end)

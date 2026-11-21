@@ -327,6 +327,26 @@ class ErrorLogTests(FarmRulesTests.__bases__[0]):
         handler("attempt to call a nil value")
         self.assertEqual(len(self.ns.db.errors), 2)
 
+    def test_another_addons_hook_on_a_game_function_is_not_goldscouts_error(self):
+        # A player's report: Auctioneer's LibExtraTip hooks the game tooltip, and
+        # its hook failed while GoldScout's row called GameTooltip:Show().
+        handler = self.fake.errorhandler
+        lib = "Interface/AddOns/Auc-Advanced/Libs/LibExtraTip/LibExtraTip.lua"
+        ours = "Interface/AddOns/GoldScout/UI.lua:531: in function <Interface/AddOns/GoldScout/UI.lua:479>"
+        self.fake.stack = lib + ":416: in function <" + lib + ":400>\n[C]: in function `Show'\n" + ours
+        handler("...dOns/Auc-Advanced/Libs/LibExtraTip/LibExtraTip.lua:416: attempt to call a nil value")
+        handler('[string "@' + lib + '"]:416: attempt to call a nil value')
+        self.assertEqual(len(self.ns.db.errors), 0)
+        # GoldScout calling into another addon directly: no game code between, so it may be ours.
+        self.fake.stack = lib + ":416: in function `Get'\n" + ours
+        handler(lib + ":416: bad argument #1 to 'Get'")
+        self.assertEqual(len(self.ns.db.errors), 1)
+        # Blizzard's own code failing under a game call is still recorded.
+        blizzard = "Interface/AddOns/Blizzard_SharedXML/Tooltip.lua"
+        self.fake.stack = blizzard + ":90: in function <" + blizzard + ":80>\n[C]: in function `Show'\n" + ours
+        handler(blizzard + ":90: attempt to index a nil value")
+        self.assertEqual(len(self.ns.db.errors), 2)
+
     def test_other_addons_errors_are_not_recorded_because_goldscout_caught_them(self):
         # Real stacks: Core.lua's handler is on the stack whenever it runs, so
         # only the frames below it may decide whose error it is.

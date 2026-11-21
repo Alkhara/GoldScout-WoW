@@ -9,6 +9,7 @@ releases add their own line automatically.
 
 - **Shared drop data that was turned away now goes in:** a saved pickpocket count could be written as "-0", and the community data refused the whole share. GoldScout now writes it as 0, and shares already sent that way are accepted.
 - **Pocket loot left out of kill drops:** besides junkboxes, the pocket watches, Lucky Charms, Boot Knives, Intricate Baubles, Empty Sea Snail Shells and Syndicate Emblems that rogues' pickpockets put in kill loot no longer count as mob drops.
+- **Fewer stray error reports:** an error in another add-on's tooltip hook (such as Auctioneer's) while a GoldScout tooltip opens is no longer saved as a GoldScout error.
 
 ## v0.12.41
 
