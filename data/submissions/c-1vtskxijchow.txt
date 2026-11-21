@@ -1,4 +1,4 @@
-GoldScout-export 6^1vtskxijchow^20
+GoldScout-export 6^1vtskxijchow^21
 6^17^0^1^2^1429^0.4974^0.3636^17^Kobold Daninho^755:5:5,1369:1:1,1372:1:1,1380:1:1,2589:7:7,2651:1:1,2656:1:1,4536:3:3,247834:1:1,247839:2:2^
 30^2^0^5^6^1429^0.4029^0.7131^2^Aranha da Floresta^5465:1:2^
 38^19^0^3^4^1429^0.5494^0.4385^19^Capanga Défias^752:12:12,1367:1:1,1374:1:1,1377:1:1,1378:1:1,2070:2:2,2210:1:1,2589:6:6,3365:1:1^
@@ -54,6 +54,8 @@ GoldScout-export 6^1vtskxijchow^20
 1117^1^0^10^10^1426^0.7779^0.6131^1^Quebraossos Pedraqueixo^^
 1118^1^0^11^11^1426^0.7804^0.5332^1^Quebradorso Pedraqueixo^^
 1201^1^0^7^7^1426^0.6292^0.5720^1^Leopardo da Neve^4814:1:1^
+1400^2^0^23^24^1437^0.1884^0.5576^2^Crocolisco do Pantanal^770:1:1,3667:1:1^
+1417^10^0^21^22^1437^0.1626^0.5065^10^Crocolisco do Pantanal Jovem^770:3:3,3397:6:6,3667:3:3,13136:1:1^
 1922^10^0^7^8^1429^0.6309^0.6661^10^Lobo Cinza da Floresta^2672:6:6,3299:3:3,3300:3:3,247877:2:2^
 2170^1^0^18^19^1439^0.4081^0.8824^1^Ursino Bosquenero^1787:1:1,14561:1:1^
 2171^1^0^19^19^1439^0.4083^0.8831^1^Xamã Bosquenero^2589:1:1^
@@ -128,6 +130,7 @@ GoldScout-export 6^1vtskxijchow^20
 @i^755^Vela Derretida
 @i^765^Folha-prata
 @i^769^Naco de Carne de Javali
+@i^770^Dente Pontudo de Crocolisco
 @i^771^Presa Lascada de Javali
 @i^772^Vela Grande
 @i^773^Pó de Ouro
@@ -241,9 +244,11 @@ GoldScout-export 6^1vtskxijchow^20
 @i^3373^Braçadeiras de Retalhos
 @i^3374^Cinto de Calico
 @i^3375^Braçadeiras de Calico
+@i^3397^Pele de Crocolisco Jovem
 @i^3399^Garra de Abutre
 @i^3403^Presa de Marfim de Javali
 @i^3404^Asa de Urubu
+@i^3667^Carne Tenra de Crocolisco
 @i^3685^Ovo de Raptor
 @i^3770^Costela de Carneiro
 @i^4092^Escama Prismática de Basilisco
@@ -331,6 +336,7 @@ GoldScout-export 6^1vtskxijchow^20
 @i^12205^Carne de Aranha Branca
 @i^12207^Ovo Gigantesco
 @i^12208^Carne Tenra de Lobo
+@i^13136^Cospe-fogo do Toninho
 @i^14238^Botas Névoa Negra do Feiticeiro
 @i^14561^Manilhas do Prospector
 @i^14726^Luvas de Pintura de Guerra
@@ -381,6 +387,7 @@ GoldScout-export 6^1vtskxijchow^20
 @q^755^0:15:0
 @q^765^1:7:1
 @q^769^1:7:1
+@q^770^0:15:0
 @q^771^0:15:0
 @q^772^1:12:0
 @q^773^1:12:0
@@ -494,9 +501,11 @@ GoldScout-export 6^1vtskxijchow^20
 @q^3373^0:4:0
 @q^3374^0:4:0
 @q^3375^0:4:0
+@q^3397^1:12:0
 @q^3399^0:15:0
 @q^3403^0:15:0
 @q^3404^1:7:1
+@q^3667^1:7:1
 @q^3685^1:7:1
 @q^3770^1:0:0
 @q^4092^0:15:0
@@ -584,6 +593,7 @@ GoldScout-export 6^1vtskxijchow^20
 @q^12205^1:7:1
 @q^12207^1:7:1
 @q^12208^1:7:1
+@q^13136^3:2:0
 @q^14238^2:4:0
 @q^14561^2:4:0
 @q^14726^2:4:0
@@ -1671,6 +1681,8 @@ GoldScout-export 6^1vtskxijchow^20
 @a^1117^255:1
 @a^1118^215:1
 @a^1201^232:1
+@a^1400^203:1,223:1
+@a^1417^182:1,183:3,202:3,203:3
 @a^1922^251:1,252:1,253:1,271:3,272:2,274:1,292:1
 @a^2170^348:1
 @a^2171^348:1
