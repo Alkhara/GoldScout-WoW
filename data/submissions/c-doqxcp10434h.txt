@@ -1,4 +1,4 @@
-GoldScout-export 6^doqxcp10434h^8
+GoldScout-export 6^doqxcp10434h^9
 2250^1^0^33^33^1416^0.3947^0.6877^1^Mountain Yeti^^
 2251^3^0^33^34^1416^0.4076^0.6542^3^Giant Yeti^1710:1:1^
 2256^1^0^38^38^1416^0.3802^0.5978^1^Crushridge Enforcer^^
@@ -33,8 +33,10 @@ GoldScout-export 6^doqxcp10434h^8
 11559^2^0^39^40^2652^0.3198^0.2604^2^Outcast Necromancer^260347:1:1^
 11561^23^0^37^38^2652^0.3298^0.2187^21^Undead Ravager^3780:1:1,4306:7:13,14235:1:1^
 255851^4^0^38^39^2548^0.7227^0.5000^4^Mature Paletusk^769:1:1,3403:1:1,268632:3:3^
+255898^3^0^38^39^2548^0.7024^0.7157^3^Murloc Oracle^5524:1:1,268344:1:1^
+255899^18^0^37^38^2548^0.6848^0.7240^18^Murloc Tideskimmer^6149:1:1,268344:6:6^
 255901^10^0^36^37^2548^0.6740^0.6916^10^Sand Crawler^3010:1:1,5524:3:3,5569:3:3,12206:3:3,17057:6:6,213547:1:1,268345:6:6^
-256801^1^0^41^41^2548^0.7247^0.6180^1^Murloc Warrior^^
+256801^5^0^40^41^2548^0.7020^0.7047^5^Murloc Warrior^5524:1:1,268344:2:2^
 258331^12^0^36^37^2548^0.7263^0.3929^12^Young Paletusk^2295:2:2,3403:3:3,8746:1:1,268632:2:2^
 258522^1^0^38^38^2548^0.5371^0.8626^1^Sootfur^265738:1:1^
 258573^8^0^36^37^2548^0.4975^0.8031^8^Mudfin Oracle^4603:2:4,5524:1:1,17058:1:1^
@@ -70,6 +72,7 @@ GoldScout-export 6^doqxcp10434h^8
 @i^3798^Interlaced Shoulderpads
 @i^3801^Hardened Leather Boots
 @i^3811^Double-Stitched Cloak
+@i^3820^Stranglekelp
 @i^3864^Citrine
 @i^4070^Jouster's Crest
 @i^4306^Silk Cloth
@@ -84,6 +87,8 @@ GoldScout-export 6^doqxcp10434h^8
 @i^5569^Seaweed
 @i^5637^Large Fang
 @i^5829^Razor-sharp Beak
+@i^6149^Greater Mana Potion
+@i^6359^Firefin Snapper
 @i^6362^Raw Rockscale Cod
 @i^6444^Forked Tongue
 @i^6826^Brilliant Scale
@@ -116,6 +121,7 @@ GoldScout-export 6^doqxcp10434h^8
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
 @i^19508^Branded Leather Bracers
+@i^21228^Mithril Bound Trunk
 @i^23192^Tabard of the Scarlet Crusade
 @i^213544^Scroll: TOPAZ YORAK
 @i^213546^Scroll: SHOOBEEDOOP
@@ -128,6 +134,7 @@ GoldScout-export 6^doqxcp10434h^8
 @i^262889^Sealed Expert's Writ
 @i^265738^Sootfur's Pelt
 @i^266888^Prized Lion Hide
+@i^268344^Saltwater Murloc Eye
 @i^268345^Sand Crawler Meat
 @i^268632^Beast Entrails
 @i^271778^Intact Tallstrider Beak
@@ -151,6 +158,7 @@ GoldScout-export 6^doqxcp10434h^8
 @q^3798^0:4:0
 @q^3801^0:4:0
 @q^3811^0:4:0
+@q^3820^1:7:1
 @q^3864^2:7:1
 @q^4070^2:4:0
 @q^4306^1:7:1
@@ -165,6 +173,8 @@ GoldScout-export 6^doqxcp10434h^8
 @q^5569^0:15:0
 @q^5637^1:7:1
 @q^5829^0:15:0
+@q^6149^1:0:0
+@q^6359^1:7:1
 @q^6362^1:7:1
 @q^6444^0:15:0
 @q^6826^0:15:0
@@ -197,6 +207,7 @@ GoldScout-export 6^doqxcp10434h^8
 @q^17057^1:15:0
 @q^17058^1:15:0
 @q^19508^3:4:0
+@q^21228^1:15:0
 @q^23192^1:4:0
 @q^213544^1:0:0
 @q^213546^1:0:0
@@ -209,6 +220,7 @@ GoldScout-export 6^doqxcp10434h^8
 @q^262889^3:0:0
 @q^265738^1:12:0
 @q^266888^1:12:0
+@q^268344^1:12:0
 @q^268345^1:12:0
 @q^268632^1:12:0
 @q^271778^1:12:0
@@ -358,8 +370,10 @@ GoldScout-export 6^doqxcp10434h^8
 @a^11559^86:1,106:1
 @a^11561^26:3,46:2,66:1,85:1,86:6,106:3,126:4,127:1
 @a^255851^194:2,214:2
+@a^255898^293:1,294:2
+@a^255899^293:11,294:7
 @a^255901^254:3,292:5,293:2
-@a^256801^254:1
+@a^256801^254:1,293:1,294:3
 @a^258331^153:2,154:5,155:2,174:2,175:1
 @a^258522^350:1
 @a^258573^309:2,310:1,329:4,330:1
@@ -377,4 +391,5 @@ GoldScout-export 6^doqxcp10434h^8
 @a^263348^172:1,193:2,230:1,231:3,251:1,252:2,253:1
 @a^268831^153:1,154:6,155:1,174:4,175:3
 @a^272228^291:2,310:1,311:1
+@f^2548^0^5^127^3820:1:1,6359:3:3,21228:1:1^292:5
 @l^0^enUS

@@ -1,13 +1,22 @@
-GoldScout-export 6^5iqttg2w39jo^7
+GoldScout-export 6^5iqttg2w39jo^8
 205^3^0^28^29^1431^0.6495^0.6977^3^Nightbane Dark Runner^^
 206^1^0^29^30^1431^0.7075^0.7206^1^Nightbane Vile Fang^5637:1:1^
 315^1^0^32^32^1431^0.7741^0.3625^1^Stalvan Mistmantle^3629:1:1,4306:1:1^
 522^1^0^35^35^1431^0.1838^0.3569^1^Mor'Ladim^3514:1:1^
 533^4^0^27^28^1431^0.6334^0.7078^4^Nightbane Shadow Weaver^^
 570^1^0^29^29^1431^0.1730^0.3351^1^Brain Eater^4306:1:1^
+681^4^0^30^31^1434^0.3225^0.1020^4^Young Stranglethorn Tiger^1686:1:1,1687:1:1,12202:2:2^
+682^4^0^32^33^1434^0.4703^0.1288^4^Stranglethorn Tiger^1686:3:3,8146:1:1,12202:1:1^
+683^2^0^30^31^1434^0.4176^0.1097^2^Young Panther^1686:1:1,7331:1:1^
 785^1^0^28^28^1431^0.1744^0.3338^1^Skeletal Warder^15242:1:1^
 920^1^0^31^31^1431^0.7423^0.7758^1^Nightbane Tainted One^^
 930^2^0^24^25^1431^0.3420^0.4942^2^Black Widow Hatchling^878:1:1,1081:2:2,1288:1:1,2251:1:1,3174:1:1,3182:1:1,4428:1:1^
+937^17^0^31^33^1434^0.4594^0.1150^17^Kurzen Jungle Fighter^1707:1:1,1710:1:1,2738:2:2,4306:4:8,6609:1:1^
+938^1^0^34^35^1434^0.4614^0.1009^1^Kurzen Commando^2732:1:1,4306:1:2^
+940^15^0^31^33^1434^0.4610^0.1069^15^Kurzen Medicine Man^1707:1:1,2592:1:1,2633:7:7,2725:1:1,3818:1:1,4306:4:6^
+943^2^0^34^34^1434^0.4630^0.1039^2^Kurzen Wrangler^4306:1:1,9865:1:1^
+976^1^0^33^33^1434^0.4620^0.1076^1^Kurzen War Tiger^1686:1:1^
+1096^2^0^35^36^1434^0.4474^0.1721^2^Venture Co. Geologist^^
 1200^1^0^32^32^1431^0.1739^0.3335^1^Morbent Fel^4306:1:1^
 1270^2^0^30^30^1431^0.7854^0.3605^2^Fetid Corpse^1831:1:1,4606:1:1,6530:1:1^
 2044^1^0^25^25^1429^0.8560^0.6961^1^Forlorn Spirit^^
@@ -85,8 +94,12 @@ GoldScout-export 6^5iqttg2w39jo^7
 @i^1477^Scroll of Agility II
 @i^1478^Scroll of Protection II
 @i^1529^Jade
+@i^1686^Bristly Whisker
+@i^1687^Retractable Claw
 @i^1705^Lesser Moonstone
+@i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
+@i^1710^Greater Healing Potion
 @i^1742^Laced Mail Gloves
 @i^1751^Linked Chain Pants
 @i^1772^Brocade Shoes
@@ -100,7 +113,11 @@ GoldScout-export 6^5iqttg2w39jo^7
 @i^2251^Gooey Spider Leg
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2633^Jungle Remedy
 @i^2644^Loose Chain Cloak
+@i^2725^Green Hills of Stranglethorn - Page 1
+@i^2732^Green Hills of Stranglethorn - Page 8
+@i^2738^Green Hills of Stranglethorn - Page 14
 @i^2765^Hunting Knife
 @i^2782^Mishandled Recurve Bow
 @i^2783^Shoddy Blunderbuss
@@ -124,6 +141,7 @@ GoldScout-export 6^5iqttg2w39jo^7
 @i^3712^Turtle Meat
 @i^3740^Decapitating Sword of Agility
 @i^3771^Wild Hog Shank
+@i^3818^Fadeleaf
 @i^4070^Jouster's Crest
 @i^4306^Silk Cloth
 @i^4428^Spider Palp
@@ -151,15 +169,20 @@ GoldScout-export 6^5iqttg2w39jo^7
 @i^6445^Brittle Molting
 @i^6470^Deviate Scale
 @i^6530^Nightcrawlers
+@i^6609^Sage's Cloth of the Whale
 @i^6905^Reef Axe
 @i^6906^Algae Fists
 @i^6907^Tortoise Armor
 @i^6911^Moss Cinch
 @i^7100^Sticky Ichor
 @i^7101^Bug Eye
+@i^7331^Phalanx Shield of the Champion
+@i^8146^Wicked Claw
 @i^8186^Dire Wand
 @i^8365^Raw Mithril Head Trout
 @i^9771^Greenweave Gloves of the Owl
+@i^9865^Renegade Bracers of the Gorilla
+@i^12202^Tiger Meat
 @i^12238^Darkshore Grouper
 @i^14129^Ritual Sandals of Spirit
 @i^14179^Watcher's Cape of the Bear
@@ -222,8 +245,12 @@ GoldScout-export 6^5iqttg2w39jo^7
 @q^1477^1:0:0
 @q^1478^1:0:0
 @q^1529^2:7:1
+@q^1686^0:15:0
+@q^1687^0:15:0
 @q^1705^2:7:1
+@q^1707^1:0:0
 @q^1708^1:0:0
+@q^1710^1:0:0
 @q^1742^0:4:0
 @q^1751^0:4:0
 @q^1772^0:4:0
@@ -237,7 +264,11 @@ GoldScout-export 6^5iqttg2w39jo^7
 @q^2251^1:7:1
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2633^1:0:0
 @q^2644^0:4:0
+@q^2725^1:12:0
+@q^2732^1:12:0
+@q^2738^1:12:0
 @q^2765^0:2:0
 @q^2782^0:2:0
 @q^2783^0:2:0
@@ -261,6 +292,7 @@ GoldScout-export 6^5iqttg2w39jo^7
 @q^3712^1:7:1
 @q^3740^2:2:0
 @q^3771^1:0:0
+@q^3818^1:7:1
 @q^4070^2:4:0
 @q^4306^1:7:1
 @q^4428^0:15:0
@@ -288,15 +320,20 @@ GoldScout-export 6^5iqttg2w39jo^7
 @q^6445^0:15:0
 @q^6470^1:7:1
 @q^6530^1:0:0
+@q^6609^2:4:0
 @q^6905^3:2:0
 @q^6906^3:4:0
 @q^6907^3:4:0
 @q^6911^3:4:0
 @q^7100^0:15:0
 @q^7101^0:15:0
+@q^7331^2:4:0
+@q^8146^1:7:1
 @q^8186^2:2:0
 @q^8365^1:7:1
 @q^9771^2:4:0
+@q^9865^2:4:0
+@q^12202^1:7:1
 @q^12238^1:0:0
 @q^14129^2:4:0
 @q^14179^2:4:0
@@ -346,6 +383,7 @@ GoldScout-export 6^5iqttg2w39jo^7
 @m^1424^Hillsbrad Foothills
 @m^1429^Elwynn Forest
 @m^1431^Duskwood
+@m^1434^Stranglethorn Vale
 @m^1439^Darkshore
 @m^2521^Zephras Isle
 @c^118^
@@ -1597,9 +1635,18 @@ GoldScout-export 6^5iqttg2w39jo^7
 @a^522^143:1
 @a^533^273:1,292:3
 @a^570^123:1
+@a^681^26:1,46:3
+@a^682^48:1,49:3
+@a^683^48:2
 @a^785^123:1
 @a^920^314:1
 @a^930^166:1,206:1
+@a^937^28:2,49:15
+@a^938^49:1
+@a^940^28:1,29:4,49:10
+@a^943^29:1,49:1
+@a^976^49:1
+@a^1096^68:2
 @a^1200^123:1
 @a^1270^155:2
 @a^2044^277:1
