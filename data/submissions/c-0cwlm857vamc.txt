@@ -1,4 +1,4 @@
-GoldScout-export 6^0cwlm857vamc^11
+GoldScout-export 6^0cwlm857vamc^12
 588^18^0^34^35^1434^0.2348^0.1249^18^Eclaireur Bloodscalp^1519:6:6,1710:1:1,2592:2:3,2725:1:1,2734:1:1,2738:1:1,2750:1:1,3814:1:1,4306:5:7^
 595^9^0^34^35^1434^0.2362^0.1222^9^Chasseur Bloodscalp^1519:2:2,2728:1:1,3771:2:2,4306:2:3^
 597^3^0^36^37^1434^0.2493^0.1054^3^Berserker Bloodscalp^4306:1:1^
@@ -66,7 +66,8 @@ GoldScout-export 6^0cwlm857vamc^11
 2408^16^0^30^31^1424^0.6326^0.3641^16^Gueule d'acier^3712:7:11,4555:3:3,4556:5:5,5524:7:7,6308:1:1^
 2431^3^0^37^37^1416^0.6154^0.4294^3^Geôlier Borhuin^^
 2440^1^0^32^32^1416^0.5946^0.6643^1^Détrousseur ivre^3703:1:1^
-2762^1^0^38^38^1417^0.5327^0.5111^1^Exilé foudroyant^^
+2761^4^0^38^39^1417^0.6678^0.2998^4^Exilé grimpeur^4481:2:2,4791:2:6,7070:2:2^
+2762^5^0^38^39^1417^0.5251^0.4984^5^Exilé foudroyant^4480:3:3,7069:1:1,248694:1:1^
 4260^1^0^37^37^1434^0.4668^0.2048^1^Déchiqueteur de la KapitalRisk^3771:1:1,4306:1:3^
 217305^1^0^34^35^1416^0.6100^0.4618^1^Elémentaire de feu antique^^
 258792^5^0^0^0^0^0.0000^0.0000^0^^3816:1:1,4306:1:4,9876:1:1,270343:2:2^
@@ -149,8 +150,11 @@ GoldScout-export 6^0cwlm857vamc^11
 @i^4338^Etoffe de tisse-mage
 @i^4421^Parchemin de Protection III
 @i^4461^Peau de raptor
+@i^4480^Charme de tonnerre
+@i^4481^Charme armorié
 @i^4555^Epaisse queue écailleuse
 @i^4556^Fragment de carapace moucheté
+@i^4791^Eau enchantée
 @i^5113^Marque du Syndicat
 @i^5524^Palourde à coque épaisse
 @i^5567^Crochet d'argent
@@ -159,6 +163,8 @@ GoldScout-export 6^0cwlm857vamc^11
 @i^6308^Poisson-chat moustachu cru
 @i^6397^Gants blasonnés
 @i^6986^Lotus cramoisi
+@i^7069^Air élémentaire
+@i^7070^Eau élémentaire
 @i^7072^Ecaille de naga
 @i^7440^Pantalon de sentinelle de puissance
 @i^8146^Serre cruelle
@@ -260,8 +266,11 @@ GoldScout-export 6^0cwlm857vamc^11
 @q^4338^1:7:1
 @q^4421^1:0:0
 @q^4461^1:7:1
+@q^4480^1:0:0
+@q^4481^1:0:0
 @q^4555^0:15:0
 @q^4556^0:15:0
+@q^4791^1:0:0
 @q^5113^0:15:0
 @q^5524^1:7:0
 @q^5567^0:15:0
@@ -270,6 +279,8 @@ GoldScout-export 6^0cwlm857vamc^11
 @q^6308^1:7:1
 @q^6397^2:4:0
 @q^6986^0:15:0
+@q^7069^1:7:1
+@q^7070^1:7:1
 @q^7072^1:7:1
 @q^7440^2:4:0
 @q^8146^1:7:1
@@ -1108,7 +1119,8 @@ GoldScout-export 6^0cwlm857vamc^11
 @a^2408^53:1,73:2,93:1,113:2,133:1,153:2,172:2,191:1,210:1,211:2,231:1
 @a^2431^172:3
 @a^2440^271:1
-@a^2762^210:1
+@a^2761^113:2,133:2
+@a^2762^190:3,210:2
 @a^4260^89:1
 @a^217305^192:1
 @l^0^frFR

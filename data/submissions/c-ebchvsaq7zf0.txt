@@ -1,4 +1,4 @@
-GoldScout-export 6^ebchvsaq7zf0^14
+GoldScout-export 6^ebchvsaq7zf0^15
 589^1^0^14^14^1436^0.4392^0.6823^1^Defias Pillager^1179:1:1^
 590^1^0^14^14^1436^0.4390^0.6823^1^Defias Looter^^
 669^15^0^41^42^1434^0.4548^0.4252^15^Skullsplitter Hunter^1520:3:3,2748:1:1,3916:6:6,4306:2:3,4338:3:5,4422:1:1,7533:1:1,8153:2:2,213543:1:1^
@@ -83,7 +83,7 @@ GoldScout-export 6^ebchvsaq7zf0^14
 5255^8^0^42^43^1444^0.6732^0.5455^8^Woodpaw Reaver^4338:2:3,7910:1:1^
 5258^5^0^43^44^1444^0.7057^0.5603^5^Woodpaw Alpha^4338:1:2^
 5260^2^0^42^43^1444^0.5016^0.4952^2^Groddoc Ape^2799:1:1,4099:1:1^
-5278^11^0^43^45^1444^0.6728^0.4758^11^Sprite Darter^4460:2:2,9369:7:11^
+5278^23^0^43^45^1444^0.6784^0.4760^23^Sprite Darter^4402:1:1,4460:3:3,6444:1:1,7909:1:1,9369:7:11,9589:6:6,11474:1:1,14777:1:1^
 5292^17^0^43^44^1444^0.5537^0.5690^17^Feral Scar Yeti^1645:1:1,8146:2:2,8973:7:7^
 5293^3^0^45^46^1444^0.5216^0.5860^3^Hulking Feral Scar^^
 5295^7^0^44^45^1444^0.5274^0.5761^7^Enraged Feral Scar^8973:1:1,15383:1:1^
@@ -148,6 +148,7 @@ GoldScout-export 6^ebchvsaq7zf0^14
 7858^12^0^44^45^1446^0.7352^0.4666^12^Southsea Swashbuckler^3927:1:1,4025:1:1,4338:2:2,9260:2:2,20519:5:5^
 7883^3^0^45^45^1446^0.7334^0.4696^3^Andre Firebeard^9246:1:1^
 7977^1^0^48^48^1425^0.8178^0.5181^1^Gammerita^4555:1:1,4556:1:2,4603:1:2,19023:1:1^
+7997^1^0^42^43^1444^0.6875^0.4803^1^Captured Sprite Darter^^
 8095^1^0^0^0^0^0.0000^0.0000^0^^1702:1:1,4092:1:1,8146:1:1^
 8120^1^0^0^0^0^0.0000^0.0000^0^^4093:1:1^
 8127^1^0^0^0^0^0.0000^0.0000^0^^9523:1:1,9639:1:1^
@@ -302,6 +303,7 @@ GoldScout-export 6^ebchvsaq7zf0^14
 @i^4099^Tuft of Gorilla Hair
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
+@i^4402^Small Flame Sac
 @i^4422^Scroll of Stamina III
 @i^4424^Scroll of Spirit III
 @i^4460^Ripped Wing Webbing
@@ -390,6 +392,7 @@ GoldScout-export 6^ebchvsaq7zf0^14
 @i^9467^Gahz'rilla Fang
 @i^9478^Ripsaw
 @i^9523^Troll Temper
+@i^9589^Encrusted Minerals
 @i^9590^Splintered Log
 @i^9591^Resilient Sinew
 @i^9592^Metallic Fragments
@@ -402,6 +405,7 @@ GoldScout-export 6^ebchvsaq7zf0^14
 @i^11386^Squishy Basilisk Eye
 @i^11417^Feathery Wing
 @i^11418^Hollow Wing Bone
+@i^11474^Sprite Darter Egg
 @i^12037^Mystery Meat
 @i^12184^Raptor Flesh
 @i^12202^Tiger Meat
@@ -418,6 +422,7 @@ GoldScout-export 6^ebchvsaq7zf0^14
 @i^14479^Pattern: Brightcloth Gloves
 @i^14655^Scorpashi Breastplate
 @i^14663^Keeper's Bindings
+@i^14777^Ravager's Shield
 @i^14949^Bloodforged Gauntlets of the Monkey
 @i^15165^Imposing Cape of Fire Protection
 @i^15244^Razor Blade of the Monkey
@@ -581,6 +586,7 @@ GoldScout-export 6^ebchvsaq7zf0^14
 @q^4099^0:15:0
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4402^1:7:1
 @q^4422^1:0:0
 @q^4424^1:0:0
 @q^4460^0:15:0
@@ -669,6 +675,7 @@ GoldScout-export 6^ebchvsaq7zf0^14
 @q^9467^3:2:0
 @q^9478^3:2:0
 @q^9523^1:12:0
+@q^9589^1:12:0
 @q^9590^1:12:0
 @q^9591^1:12:0
 @q^9592^1:12:0
@@ -681,6 +688,7 @@ GoldScout-export 6^ebchvsaq7zf0^14
 @q^11386^0:15:0
 @q^11417^0:15:0
 @q^11418^0:15:0
+@q^11474^1:15:0
 @q^12037^1:7:1
 @q^12184^1:7:1
 @q^12202^1:7:1
@@ -697,6 +705,7 @@ GoldScout-export 6^ebchvsaq7zf0^14
 @q^14479^2:9:0
 @q^14655^2:4:0
 @q^14663^2:4:0
+@q^14777^2:4:0
 @q^14949^2:4:0
 @q^15165^2:4:0
 @q^15244^2:2:0
@@ -1598,7 +1607,7 @@ GoldScout-export 6^ebchvsaq7zf0^14
 @a^5255^169:1,233:4,234:3
 @a^5258^233:2,234:3
 @a^5260^190:2
-@a^5278^192:2,193:6,194:3
+@a^5278^173:1,192:2,193:17,194:3
 @a^5292^230:4,231:13
 @a^5293^230:2,250:1
 @a^5295^230:7
@@ -1646,6 +1655,7 @@ GoldScout-export 6^ebchvsaq7zf0^14
 @a^7858^194:10,195:2
 @a^7883^194:3
 @a^7977^216:1
+@a^7997^193:1
 @a^8216^249:1
 @a^8996^151:8,152:2,171:1
 @a^10928^306:1,325:5,326:3

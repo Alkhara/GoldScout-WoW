@@ -1,4 +1,7 @@
-GoldScout-export 6^2kk5dqew2x81^5
+GoldScout-export 6^2kk5dqew2x81^7
+157^1^0^14^14^1436^0.5679^0.5802^1^Goretusk^769:1:2,3172:1:1^
+547^1^0^16^17^1436^0.5752^0.6094^1^Great Goretusk^723:1:1^
+682^7^0^32^33^1434^0.4487^0.1349^7^Stranglethorn Tiger^1686:2:2,5637:1:1,12202:5:5^
 1015^1^0^23^24^1437^0.5573^0.2489^1^Highland Raptor^3685:1:1^
 1016^1^0^24^25^1437^0.5603^0.2490^1^Highland Lashtail^3685:1:1^
 1017^5^0^25^26^1437^0.3774^0.2118^5^Highland Scytheclaw^3180:1:1,3685:3:3^
@@ -18,6 +21,7 @@ GoldScout-export 6^2kk5dqew2x81^5
 1054^1^0^30^31^1437^0.4783^0.1635^1^Dark Iron Demolitionist^^
 1057^5^0^27^28^1437^0.4664^0.4458^5^Dragonmaw Bonewarder^929:1:1,1755:1:1,2592:3:5,2786:1:1,3337:1:1,4306:1:1^
 1069^1^0^25^25^1437^0.6126^0.3158^1^Crimson Whelp^279385:1:1^
+1108^1^0^32^32^1434^0.3551^0.1713^1^Mistvale Gorilla^4096:1:1^
 1111^1^0^21^22^1437^0.5355^0.6530^1^Leech Stalker^3182:1:1^
 1157^1^0^26^27^1437^0.1516^0.2389^1^Cursed Sailor^2592:1:2^
 1158^4^0^27^28^1437^0.1490^0.2418^4^Cursed Marine^2592:1:1,4306:2:4^
@@ -49,7 +53,9 @@ GoldScout-export 6^2kk5dqew2x81^5
 270589^1^0^31^31^1437^0.1600^0.2347^1^Nightveiled Rotheap^279537:1:1^
 271334^3^0^25^26^1437^0.5794^0.3238^3^Maddened Rotclaw^3702:1:1,3730:1:1,11407:2:2^
 @i^159^Refreshing Spring Water
+@i^723^Goretusk Liver
 @i^730^Murloc Eye
+@i^769^Chunk of Boar Meat
 @i^929^Healing Potion
 @i^1074^Hard Spider Leg Tip
 @i^1081^Crisp Spider Meat
@@ -80,6 +86,7 @@ GoldScout-export 6^2kk5dqew2x81^5
 @i^2785^Stiff Recurve Bow
 @i^2786^Oiled Blunderbuss
 @i^2843^Dirty Knucklebones
+@i^3172^Boar Intestines
 @i^3180^Flecked Raptor Scale
 @i^3182^Spider's Silk
 @i^3337^Dragonmaw War Banner
@@ -96,6 +103,7 @@ GoldScout-export 6^2kk5dqew2x81^5
 @i^3771^Wild Hog Shank
 @i^3783^Light Scimitar
 @i^3792^Interlaced Belt
+@i^4096^Coarse Gorilla Hair
 @i^4306^Silk Cloth
 @i^4585^Dripping Spider Mandible
 @i^5113^Mark of the Syndicate
@@ -111,6 +119,7 @@ GoldScout-export 6^2kk5dqew2x81^5
 @i^11407^Torn Bear Pelt
 @i^11995^Ivory Band of Spirit
 @i^12184^Raptor Flesh
+@i^12202^Tiger Meat
 @i^12238^Darkshore Grouper
 @i^15226^Giant Club of Arcane Protection
 @i^15249^Polished Zweihander of Healing
@@ -123,7 +132,9 @@ GoldScout-export 6^2kk5dqew2x81^5
 @i^279537^Rotheap Innards
 @i^280103^Razormaw Incisor
 @q^159^1:0:0
+@q^723^1:7:1
 @q^730^1:7:1
+@q^769^1:7:1
 @q^929^1:0:0
 @q^1074^0:15:0
 @q^1081^1:7:1
@@ -154,6 +165,7 @@ GoldScout-export 6^2kk5dqew2x81^5
 @q^2785^0:2:0
 @q^2786^0:2:0
 @q^2843^1:12:0
+@q^3172^1:7:1
 @q^3180^0:15:0
 @q^3182^1:7:1
 @q^3337^1:12:0
@@ -170,6 +182,7 @@ GoldScout-export 6^2kk5dqew2x81^5
 @q^3771^1:0:0
 @q^3783^0:2:0
 @q^3792^0:4:0
+@q^4096^1:15:0
 @q^4306^1:7:1
 @q^4585^0:15:0
 @q^5113^0:15:0
@@ -185,6 +198,7 @@ GoldScout-export 6^2kk5dqew2x81^5
 @q^11407^1:12:0
 @q^11995^2:4:0
 @q^12184^1:7:1
+@q^12202^1:7:1
 @q^12238^1:0:0
 @q^15226^2:2:0
 @q^15249^2:2:0
@@ -200,6 +214,8 @@ GoldScout-export 6^2kk5dqew2x81^5
 @m^1417^Arathi Highlands
 @m^1420^Tirisfal Glades
 @m^1424^Hillsbrad Foothills
+@m^1434^Stranglethorn Vale
+@m^1436^Westfall
 @m^1437^Wetlands
 @m^1439^Darkshore
 @c^118^
@@ -965,6 +981,9 @@ GoldScout-export 6^2kk5dqew2x81^5
 @c^279981^
 @c^279982^
 @c^286152^
+@a^157^231:1
+@a^547^251:1
+@a^682^47:1,48:1,49:4,68:1
 @a^1015^91:1
 @a^1016^91:1
 @a^1017^87:5
@@ -984,6 +1003,7 @@ GoldScout-export 6^2kk5dqew2x81^5
 @a^1054^69:1
 @a^1057^168:1,169:2,189:2
 @a^1069^132:1
+@a^1108^67:1
 @a^1111^270:1
 @a^1157^83:1
 @a^1158^82:2,83:2

@@ -1,4 +1,4 @@
-GoldScout-export 6^1wepkgxp9h84^19
+GoldScout-export 6^1wepkgxp9h84^21
 1797^1^0^12^13^1421^0.5193^0.5875^1^Giant Grizzled Bear^^
 2254^2^0^36^37^1416^0.3963^0.4606^2^Crushridge Mauler^4306:1:3,248690:1:1^
 2256^1^0^39^39^1416^0.3928^0.5223^1^Crushridge Enforcer^^
@@ -123,6 +123,10 @@ GoldScout-export 6^1wepkgxp9h84^19
 11520^1^0^0^0^0^0.0000^0.0000^0^^14149:1:1,14540:1:1^
 12856^2^0^23^24^1440^0.7223^0.7371^2^Ashenvale Outrunner^^
 12865^2^0^36^36^1413^0.4811^0.9246^2^Ambassador Malcin^3784:1:1,4306:1:2,17009:1:1^
+250873^8^0^1^1^2521^0.4458^0.2571^8^Juvenile Vuldren^1374:1:1,2672:1:1,3365:1:1,4865:2:2,7073:3:3,7074:3:3^
+251143^7^0^2^3^2521^0.4759^0.2055^7^Roiling Winds^1374:2:2,1378:1:1,2652:1:1,3363:1:1,251930:4:4,251931:3:3^
+251160^7^0^2^2^2521^0.4813^0.2047^7^Al'Aketh Convert^1367:1:1,1376:1:1,2589:2:2,4540:2:2^
+251169^8^0^1^1^2521^0.4634^0.2613^8^Pesky Cirrusfly^1366:1:1,251927:1:1,251928:7:7^
 254560^18^0^39^40^2548^0.4794^0.4710^18^Twilight Shadowmancer^3801:1:1,4306:6:9,4338:2:2,265745:3:3,267073:1:3^
 255769^7^0^37^38^2548^0.2597^0.6522^7^Redridge Brute^4306:2:4,8188:1:1,9355:1:1,20763:1:1,265358:6:6^
 255770^14^0^36^37^2548^0.2261^0.6801^14^Redridge Mystic^4306:8:12,9355:1:1,20763:1:1,265358:8:8^
@@ -188,11 +192,15 @@ GoldScout-export 6^1wepkgxp9h84^19
 @i^1210^Shadowgem
 @i^1292^Butcher's Cleaver
 @i^1364^Ragged Leather Vest
+@i^1366^Ragged Leather Pants
+@i^1367^Ragged Leather Boots
 @i^1368^Ragged Leather Gloves
 @i^1369^Ragged Leather Belt
 @i^1370^Ragged Leather Bracers
 @i^1374^Frayed Shoes
+@i^1376^Frayed Cloak
 @i^1377^Frayed Gloves
+@i^1378^Frayed Pants
 @i^1380^Frayed Robe
 @i^1464^Buzzard Talon
 @i^1465^Tigerbane
@@ -250,7 +258,9 @@ GoldScout-export 6^1wepkgxp9h84^19
 @i^2592^Wool Cloth
 @i^2608^Threshadon Ambergris
 @i^2650^Flimsy Chain Boots
+@i^2652^Flimsy Chain Cloak
 @i^2654^Flimsy Chain Pants
+@i^2672^Stringy Wolf Meat
 @i^2674^Crawler Meat
 @i^2675^Crawler Claw
 @i^2677^Boar Ribs
@@ -308,6 +318,7 @@ GoldScout-export 6^1wepkgxp9h84^19
 @i^4536^Shiny Red Apple
 @i^4538^Snapvine Watermelon
 @i^4539^Goldenbark Apple
+@i^4540^Tough Hunk of Bread
 @i^4556^Speckled Shell Fragment
 @i^4566^Sturdy Quarterstaff of Intellect
 @i^4577^Compact Shotgun
@@ -467,6 +478,10 @@ GoldScout-export 6^1wepkgxp9h84^19
 @i^248692^Waylaid Crate: Expert Ore
 @i^248705^Waylaid Crate: Journeyman Fabrics
 @i^251342^Plans: Protector's Chain Shirt
+@i^251927^Chipped Cirrusfly Stinger
+@i^251928^Torn Insect Wing
+@i^251930^Minor Essence of the Four Winds
+@i^251931^Depleted Windstone
 @i^252775^Pattern: Stormrider's Leather Armor
 @i^252792^Pattern: Brawler's Leather Pants
 @i^252793^Pattern: Trapper's Leather Pants
@@ -524,11 +539,15 @@ GoldScout-export 6^1wepkgxp9h84^19
 @q^1210^2:7:1
 @q^1292^3:2:0
 @q^1364^0:4:0
+@q^1366^0:4:0
+@q^1367^0:4:0
 @q^1368^0:4:0
 @q^1369^0:4:0
 @q^1370^0:4:0
 @q^1374^0:4:0
+@q^1376^0:4:0
 @q^1377^0:4:0
+@q^1378^0:4:0
 @q^1380^0:4:0
 @q^1464^0:15:0
 @q^1465^2:2:0
@@ -586,7 +605,9 @@ GoldScout-export 6^1wepkgxp9h84^19
 @q^2592^1:7:1
 @q^2608^0:15:0
 @q^2650^0:4:0
+@q^2652^0:4:0
 @q^2654^0:4:0
+@q^2672^1:7:1
 @q^2674^1:7:1
 @q^2675^1:7:1
 @q^2677^1:7:1
@@ -644,6 +665,7 @@ GoldScout-export 6^1wepkgxp9h84^19
 @q^4536^1:0:0
 @q^4538^1:0:0
 @q^4539^1:0:0
+@q^4540^1:0:0
 @q^4556^0:15:0
 @q^4566^2:2:0
 @q^4577^2:2:0
@@ -803,6 +825,10 @@ GoldScout-export 6^1wepkgxp9h84^19
 @q^248692^1:0:1
 @q^248705^2:0:1
 @q^251342^3:9:0
+@q^251927^0:15:0
+@q^251928^0:15:0
+@q^251930^0:15:0
+@q^251931^0:15:0
 @q^252775^3:9:0
 @q^252792^3:9:0
 @q^252793^3:9:0
@@ -850,6 +876,7 @@ GoldScout-export 6^1wepkgxp9h84^19
 @m^1434^Stranglethorn Vale
 @m^1440^Ashenvale
 @m^1446^Tanaris
+@m^2521^Zephras Isle
 @m^2548^Riverglades
 @c^724^
 @c^733^
@@ -1945,6 +1972,7 @@ GoldScout-export 6^1wepkgxp9h84^19
 @c^273941^
 @c^273942^
 @c^273943^
+@c^274490^
 @c^274971^
 @c^274976^
 @c^275604^
@@ -2088,6 +2116,10 @@ GoldScout-export 6^1wepkgxp9h84^19
 @a^8554^312:1
 @a^12856^294:2
 @a^12865^369:2
+@a^250873^89:1,108:5,109:2
+@a^251143^69:1,89:6
+@a^251160^69:2,89:5
+@a^251169^109:8
 @a^254560^169:3,188:1,189:10,190:1,208:1,209:2
 @a^255769^226:1,246:3,263:1,283:2
 @a^255770^225:1,226:1,263:2,266:3,283:7

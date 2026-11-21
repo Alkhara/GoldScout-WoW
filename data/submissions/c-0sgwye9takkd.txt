@@ -1,4 +1,4 @@
-GoldScout-export 6^0sgwye9takkd^12
+GoldScout-export 6^0sgwye9takkd^13
 232^1^0^23^23^1424^0.3328^0.3861^1^Farmer Ray^1485:1:1,4538:1:1^
 2241^1^0^33^33^1416^0.5794^0.6756^1^Syndicate Thief^3601:1:1,4306:1:2^
 2248^5^0^30^31^1424^0.4413^0.3010^5^Cave Yeti^2785:1:1,3708:1:1,5637:1:1^
@@ -19,7 +19,7 @@ GoldScout-export 6^0sgwye9takkd^12
 2345^3^0^29^30^1424^0.7030^0.7846^3^Dun Garok Rifleman^3693:1:1,4306:1:2,12047:1:1^
 2346^3^0^29^30^1424^0.7187^0.8024^3^Dun Garok Priest^1826:1:1,2592:1:2,4306:1:1,4542:1:1^
 2349^1^0^24^25^1424^0.2843^0.3217^1^Giant Moss Creeper^1288:1:1,2251:1:1,4428:1:1^
-2356^1^0^25^25^1424^0.3379^0.3072^1^Elder Gray Bear^3702:1:1^
+2356^1^0^25^26^1424^0.3379^0.3072^1^Elder Gray Bear^3702:1:1^
 2360^2^0^22^23^1424^0.3582^0.3892^2^Hillsbrad Farmhand^3692:1:1^
 2384^1^0^23^23^1424^0.3797^0.4593^1^Starving Mountain Lion^5136:1:1,5810:1:1^
 2387^5^0^25^26^1424^0.3041^0.4287^5^Hillsbrad Councilman^2592:1:1,3692:3:3^
@@ -36,10 +36,17 @@ GoldScout-export 6^0sgwye9takkd^12
 2503^10^0^27^28^1424^0.3013^0.5511^10^Hillsbrad Foreman^422:1:1,1205:1:1,2592:1:1,3692:2:2,4306:1:1^
 2529^3^0^0^0^0^0.0000^0.0000^0^^^
 2555^1^0^34^34^1417^0.3276^0.4365^1^Witherbark Witch Doctor^4338:1:1,216483:1:1^
+2559^4^0^30^31^1417^0.4187^0.5278^4^Highland Strider^3685:3:3,4512:2:2,12184:1:1^
+2560^7^0^33^34^1417^0.3867^0.3445^7^Highland Thrasher^1696:1:1,3685:3:3,4461:2:2,4512:2:2,12184:2:2^
 2562^3^0^32^33^1417^0.3503^0.4350^3^Boulderfist Ogre^4306:1:1,213422:1:1^
+2563^6^0^32^33^1417^0.4197^0.5480^6^Plains Creeper^1074:1:1,1081:1:1,2251:1:1,4337:1:1,278225:3:3^
 2564^6^0^33^34^1417^0.3323^0.4501^6^Boulderfist Enforcer^1708:1:1,4306:3:5,262889:1:1^
+2565^3^0^35^36^1417^0.3968^0.3080^3^Giant Plains Creeper^878:3:3,1081:1:1,2251:1:1,4337:1:1,4585:1:1,278225:3:3^
 2581^2^0^31^32^1417^0.5616^0.3841^2^Dabyrie Militia^4306:2:2^
 2582^1^0^30^31^1417^0.5396^0.3920^1^Dabyrie Laborer^4306:1:2^
+2586^3^0^30^31^1417^0.3160^0.2706^3^Syndicate Highwayman^1756:1:1,2221:1:1,4495:2:2^
+2587^9^0^32^33^1417^0.3150^0.2768^9^Syndicate Pathstalker^3771:1:1,4306:5:6,4495:3:3,5113:3:3^
+2589^12^0^31^32^1417^0.3225^0.2782^12^Syndicate Mercenary^2290:1:1,2592:1:2,4306:3:4,4495:5:5,5113:1:1^
 2611^1^0^42^42^1417^0.2714^0.3575^1^Fozruk^8150:1:1^
 2623^5^0^33^33^1424^0.3079^0.2781^5^Spirit of Old^^
 2764^1^0^40^40^1417^0.2709^0.3567^1^Sleeby^^
@@ -176,19 +183,24 @@ GoldScout-export 6^0sgwye9takkd^12
 268623^1^0^23^23^1413^0.4914^0.7714^1^Outraged Pillager^^
 @i^422^Dwarven Mild
 @i^730^Murloc Eye
+@i^878^Fist-sized Spinneret
 @i^929^Healing Potion
 @i^954^Scroll of Strength
 @i^1015^Lean Wolf Flank
+@i^1074^Hard Spider Leg Tip
+@i^1081^Crisp Spider Meat
 @i^1205^Melon Juice
 @i^1288^Large Venom Sac
 @i^1468^Murloc Fin
 @i^1478^Scroll of Protection II
 @i^1485^Pitchfork
+@i^1696^Curved Raptor Talon
 @i^1705^Lesser Moonstone
 @i^1708^Sweet Nectar
 @i^1748^Linked Chain Bracers
 @i^1750^Linked Chain Gloves
 @i^1752^Linked Chain Shoulderpads
+@i^1756^Reinforced Chain Bracers
 @i^1759^Reinforced Chain Pants
 @i^1761^Reinforced Chain Vest
 @i^1774^Brocade Cloak
@@ -204,6 +216,7 @@ GoldScout-export 6^0sgwye9takkd^12
 @i^2221^Targe Shield
 @i^2222^Tower Shield
 @i^2251^Gooey Spider Leg
+@i^2290^Scroll of Intellect II
 @i^2295^Large Boar Tusk
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
@@ -222,6 +235,7 @@ GoldScout-export 6^0sgwye9takkd^12
 @i^3402^Soft Patch of Fur
 @i^3601^Syndicate Missive
 @i^3676^Slimy Ichor
+@i^3685^Raptor Egg
 @i^3688^Bloodstone Oval
 @i^3689^Bloodstone Marble
 @i^3690^Bloodstone Shard
@@ -238,11 +252,16 @@ GoldScout-export 6^0sgwye9takkd^12
 @i^3771^Wild Hog Shank
 @i^3808^Double Mail Belt
 @i^4306^Silk Cloth
+@i^4337^Thick Spider's Silk
 @i^4338^Mageweave Cloth
 @i^4428^Spider Palp
+@i^4461^Raptor Hide
+@i^4495^Bloodstone Amulet
+@i^4512^Highland Raptor Eye
 @i^4538^Snapvine Watermelon
 @i^4542^Moist Cornbread
 @i^4555^Thick Scaly Tail
+@i^4585^Dripping Spider Mandible
 @i^4633^Heavy Bronze Lockbox
 @i^4784^Lifeless Stone
 @i^5082^Thin Kodo Leather
@@ -250,6 +269,7 @@ GoldScout-export 6^0sgwye9takkd^12
 @i^5093^Razormane Backstabber
 @i^5094^Razormane War Shield
 @i^5102^Owatanka's Tailspike
+@i^5113^Mark of the Syndicate
 @i^5116^Long Tail Feather
 @i^5117^Vibrant Plume
 @i^5122^Thick Kodo Hair
@@ -294,6 +314,7 @@ GoldScout-export 6^0sgwye9takkd^12
 @i^11407^Torn Bear Pelt
 @i^11994^Coral Band of Agility
 @i^12047^Spectral Necklace of the Bandit
+@i^12184^Raptor Flesh
 @i^12884^Arnak's Hoof
 @i^12925^Arikara Serpent Skin
 @i^12946^Hypercapacitor Gizmo
@@ -336,21 +357,27 @@ GoldScout-export 6^0sgwye9takkd^12
 @i^252804^Pattern: Hillman's Leather Boots
 @i^262888^Sealed Journeyman's Writ
 @i^262889^Sealed Expert's Writ
+@i^278225^Surgical Spidersilk
 @q^422^1:0:0
 @q^730^1:7:1
+@q^878^0:7:0
 @q^929^1:0:0
 @q^954^1:0:0
 @q^1015^1:7:1
+@q^1074^0:15:0
+@q^1081^1:7:1
 @q^1205^1:0:0
 @q^1288^1:7:1
 @q^1468^1:7:1
 @q^1478^1:0:0
 @q^1485^0:2:0
+@q^1696^0:15:0
 @q^1705^2:7:1
 @q^1708^1:0:0
 @q^1748^0:4:0
 @q^1750^0:4:0
 @q^1752^0:4:0
+@q^1756^0:4:0
 @q^1759^0:4:0
 @q^1761^0:4:0
 @q^1774^0:4:0
@@ -366,6 +393,7 @@ GoldScout-export 6^0sgwye9takkd^12
 @q^2221^0:4:0
 @q^2222^0:4:0
 @q^2251^1:7:1
+@q^2290^1:0:0
 @q^2295^0:15:0
 @q^2589^1:7:1
 @q^2592^1:7:1
@@ -384,6 +412,7 @@ GoldScout-export 6^0sgwye9takkd^12
 @q^3402^0:15:0
 @q^3601^1:12:0
 @q^3676^0:15:0
+@q^3685^1:7:1
 @q^3688^1:12:0
 @q^3689^1:12:0
 @q^3690^1:12:0
@@ -400,11 +429,16 @@ GoldScout-export 6^0sgwye9takkd^12
 @q^3771^1:0:0
 @q^3808^0:4:0
 @q^4306^1:7:1
+@q^4337^1:7:1
 @q^4338^1:7:1
 @q^4428^0:15:0
+@q^4461^1:7:1
+@q^4495^1:12:0
+@q^4512^1:12:0
 @q^4538^1:0:0
 @q^4542^1:0:0
 @q^4555^0:15:0
+@q^4585^0:15:0
 @q^4633^2:15:0
 @q^4784^0:15:0
 @q^5082^1:7:1
@@ -412,6 +446,7 @@ GoldScout-export 6^0sgwye9takkd^12
 @q^5093^1:2:0
 @q^5094^1:4:0
 @q^5102^1:12:0
+@q^5113^0:15:0
 @q^5116^1:7:1
 @q^5117^1:12:0
 @q^5122^0:15:0
@@ -456,6 +491,7 @@ GoldScout-export 6^0sgwye9takkd^12
 @q^11407^1:12:0
 @q^11994^2:4:0
 @q^12047^2:4:0
+@q^12184^1:7:1
 @q^12884^1:0:0
 @q^12925^1:12:0
 @q^12946^1:12:0
@@ -498,6 +534,7 @@ GoldScout-export 6^0sgwye9takkd^12
 @q^252804^2:9:0
 @q^262888^3:0:0
 @q^262889^3:0:0
+@q^278225^1:12:0
 @m^1413^The Barrens
 @m^1414^Kalimdor
 @m^1416^Alterac Mountains
@@ -694,10 +731,17 @@ GoldScout-export 6^0sgwye9takkd^12
 @a^2451^187:1
 @a^2503^205:1,206:5,225:2,226:1,245:1
 @a^2555^166:1
+@a^2559^168:2,188:1,308:1
+@a^2560^107:1,127:2,128:1,147:3
 @a^2562^166:1,167:1,187:1
+@a^2563^148:1,188:1,228:2,248:2
 @a^2564^166:3,186:3
+@a^2565^107:2,128:1
 @a^2581^151:1,171:1
 @a^2582^150:1
+@a^2586^106:2,126:1
+@a^2587^106:9
+@a^2589^106:12
 @a^2611^145:1
 @a^2623^106:5
 @a^2764^145:1
