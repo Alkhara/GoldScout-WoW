@@ -1,4 +1,4 @@
-GoldScout-export 6^lqai6pd19792^18
+GoldScout-export 6^lqai6pd19792^19
 36^5^0^11^12^1436^0.4850^0.4002^5^Harvest Golem^732:2:2,1274:2:2,4359:1:1,255007:2:2^
 46^1^0^9^10^1429^0.6108^0.8237^1^Murloc Forager^^
 95^35^0^11^12^1436^0.4652^0.3405^35^Defias Smuggler^414:2:2,829:6:6,858:1:1,1179:4:4,1181:1:1,1506:1:1,1507:1:1,1510:1:1,1735:1:1,2455:1:1,2589:15:30,3643:1:1^
@@ -33,6 +33,10 @@ GoldScout-export 6^lqai6pd19792^18
 1032^1^0^24^24^1437^0.2113^0.4779^1^Black Ooze^814:1:1^
 1109^3^0^13^14^1436^0.4587^0.3847^3^Fleshripper^555:1:1,729:3:3,4775:1:1,6889:1:1,17056:1:1^
 1118^1^0^12^12^1426^0.7940^0.5459^1^Rockjaw Backbreaker^^
+1125^5^0^5^6^1426^0.4422^0.5463^5^Crag Boar^769:1:1,771:1:1,2886:1:1^
+1128^2^0^5^6^1426^0.4469^0.5302^2^Young Black Bear^4865:1:1,6952:1:1,7074:1:1^
+1134^12^0^5^6^1426^0.4223^0.5417^12^Young Wendigo^117:1:1,159:1:1,1372:1:1,2210:1:1,2211:1:1,2671:2:2^
+1135^13^0^6^7^1426^0.4175^0.5071^13^Wendigo^117:1:1,1412:2:2,1414:1:1,2671:4:4^
 1172^8^0^10^11^1432^0.3824^0.1204^8^Tunnel Rat Vermin^1433:1:1,2589:2:4,3110:2:2,3609:1:1^
 1176^4^0^11^12^1432^0.3952^0.1146^4^Tunnel Rat Forager^2215:1:1,2589:2:4,3110:1:1,4537:1:1,4677:1:1^
 1181^1^0^19^19^1432^0.7488^0.2987^1^Mo'grosh Shaman^^
@@ -40,6 +44,7 @@ GoldScout-export 6^lqai6pd19792^18
 1188^1^0^13^13^1432^0.6739^0.4508^1^Grizzled Black Bear^3169:1:1,3173:1:1^
 1189^2^0^17^17^1432^0.7094^0.3723^2^Black Bear Patriarch^3173:1:1,11406:1:1^
 1191^1^0^15^15^1432^0.6406^0.4700^1^Mangy Mountain Boar^^
+1199^2^0^5^6^1426^0.4428^0.5791^2^Juvenile Snow Leopard^4814:1:1^
 1202^6^0^11^12^1432^0.3892^0.1261^6^Tunnel Rat Kobold^3110:1:1,211786:1:1^
 1236^12^0^12^13^1436^0.4539^0.2015^12^Kobold Digger^1179:1:1,2589:6:13,6266:1:1^
 1400^1^0^24^24^1437^0.1386^0.5648^1^Wetlands Crocolisk^770:1:1^
@@ -137,7 +142,11 @@ GoldScout-export 6^lqai6pd19792^18
 270196^2^0^12^12^1439^0.4513^0.5851^2^Jai'vhanel^3290:1:1,5115:2:2,6889:2:2,281038:2:2^
 270298^3^0^10^12^1439^0.4423^0.5920^3^Child of Jai'vhanel^4775:2:2,17056:1:1^
 270693^1^0^15^15^1432^0.6315^0.5119^1^Daggerfang^3401:1:1^
+271486^1^0^6^8^1426^0.4258^0.4915^1^Wendigo Shaman^159:1:1,2671:1:1^
+271530^2^0^7^8^1426^0.4219^0.4898^2^Elder Wendigo^117:1:1,1419:1:1,2671:1:1^
 274902^3^0^55^55^1453^0.7967^0.3836^3^Stormwind City Defender^^
+@i^117^Tough Jerky
+@i^159^Refreshing Spring Water
 @i^414^Dalaran Sharp
 @i^555^Rough Vulture Feathers
 @i^725^Gnoll Paw
@@ -147,6 +156,7 @@ GoldScout-export 6^lqai6pd19792^18
 @i^732^Okra
 @i^769^Chunk of Boar Meat
 @i^770^Pointy Crocolisk Tooth
+@i^771^Chipped Boar Tusk
 @i^774^Malachite
 @i^814^Flask of Oil
 @i^818^Tigerseye
@@ -163,8 +173,12 @@ GoldScout-export 6^lqai6pd19792^18
 @i^1206^Moss Agate
 @i^1210^Shadowgem
 @i^1274^Hops
+@i^1372^Ragged Cloak
 @i^1411^Withered Staff
+@i^1412^Crude Bastard Sword
+@i^1414^Cracked Sledge
 @i^1416^Rusty Hatchet
+@i^1419^Worn Leather Boots
 @i^1431^Patchwork Pants
 @i^1433^Patchwork Armor
 @i^1467^Spotted Sunfish
@@ -194,6 +208,8 @@ GoldScout-export 6^lqai6pd19792^18
 @i^1816^Unbalanced Axe
 @i^2073^Dwarven Hatchet of the Falcon
 @i^2075^Priest's Mace of Stamina
+@i^2210^Battered Buckler
+@i^2211^Bent Large Shield
 @i^2212^Cracked Buckler
 @i^2214^Wooden Buckler
 @i^2215^Wooden Shield
@@ -207,6 +223,7 @@ GoldScout-export 6^lqai6pd19792^18
 @i^2608^Threshadon Ambergris
 @i^2635^Loose Chain Belt
 @i^2657^Red Leather Bag
+@i^2671^Wendigo Mane
 @i^2672^Stringy Wolf Meat
 @i^2673^Coyote Meat
 @i^2674^Crawler Meat
@@ -214,6 +231,7 @@ GoldScout-export 6^lqai6pd19792^18
 @i^2763^Fisherman Knife
 @i^2777^Feeble Shortbow
 @i^2780^Light Hunting Bow
+@i^2886^Crag Boar Rib
 @i^2940^Bloody Bear Paw
 @i^3010^Fine Sand
 @i^3110^Tunnel Rat Ear
@@ -264,6 +282,7 @@ GoldScout-export 6^lqai6pd19792^18
 @i^4775^Cracked Bill
 @i^4776^Ruffled Feather
 @i^4813^Small Leather Collar
+@i^4814^Discolored Fang
 @i^4865^Ruined Pelt
 @i^4874^Clean Fishbones
 @i^5071^Shadow Wand
@@ -316,6 +335,8 @@ GoldScout-export 6^lqai6pd19792^18
 @i^6556^Bard's Bracers of Agility
 @i^6718^Electropeller
 @i^6889^Small Egg
+@i^6952^Thick Bear Fur
+@i^7074^Chipped Claw
 @i^7498^Top of Gelkak's Key
 @i^7499^Middle of Gelkak's Key
 @i^7500^Bottom of Gelkak's Key
@@ -367,6 +388,8 @@ GoldScout-export 6^lqai6pd19792^18
 @i^279276^Mathystral Amulet Fragment
 @i^279279^Peerless Eye
 @i^281038^Feather of Jai'vhanel
+@q^117^1:0:0
+@q^159^1:0:0
 @q^414^1:0:0
 @q^555^0:15:0
 @q^725^1:12:0
@@ -376,6 +399,7 @@ GoldScout-export 6^lqai6pd19792^18
 @q^732^1:12:0
 @q^769^1:7:1
 @q^770^0:15:0
+@q^771^0:15:0
 @q^774^2:7:1
 @q^814^1:7:1
 @q^818^2:7:1
@@ -392,8 +416,12 @@ GoldScout-export 6^lqai6pd19792^18
 @q^1206^2:7:1
 @q^1210^2:7:1
 @q^1274^1:12:0
+@q^1372^0:4:0
 @q^1411^0:2:0
+@q^1412^0:2:0
+@q^1414^0:2:0
 @q^1416^0:2:0
+@q^1419^0:4:0
 @q^1431^0:4:0
 @q^1433^0:4:0
 @q^1467^1:12:0
@@ -423,6 +451,8 @@ GoldScout-export 6^lqai6pd19792^18
 @q^1816^0:2:0
 @q^2073^2:2:0
 @q^2075^2:2:0
+@q^2210^0:4:0
+@q^2211^0:4:0
 @q^2212^0:4:0
 @q^2214^0:4:0
 @q^2215^0:4:0
@@ -436,6 +466,7 @@ GoldScout-export 6^lqai6pd19792^18
 @q^2608^0:15:0
 @q^2635^0:4:0
 @q^2657^1:1:0
+@q^2671^1:12:0
 @q^2672^1:7:1
 @q^2673^1:7:1
 @q^2674^1:7:1
@@ -443,6 +474,7 @@ GoldScout-export 6^lqai6pd19792^18
 @q^2763^0:2:0
 @q^2777^0:2:0
 @q^2780^0:2:0
+@q^2886^1:7:1
 @q^2940^0:15:0
 @q^3010^0:15:0
 @q^3110^1:12:0
@@ -493,6 +525,7 @@ GoldScout-export 6^lqai6pd19792^18
 @q^4775^0:15:0
 @q^4776^0:15:0
 @q^4813^0:15:0
+@q^4814^0:15:0
 @q^4865^0:15:0
 @q^4874^0:15:0
 @q^5071^2:2:0
@@ -545,6 +578,8 @@ GoldScout-export 6^lqai6pd19792^18
 @q^6556^2:4:0
 @q^6718^1:12:0
 @q^6889^1:7:1
+@q^6952^1:12:0
+@q^7074^0:15:0
 @q^7498^1:12:0
 @q^7499^1:12:0
 @q^7500^1:12:0
@@ -2009,6 +2044,10 @@ GoldScout-export 6^lqai6pd19792^18
 @a^1032^184:1
 @a^1109^88:1,169:1,189:1
 @a^1118^215:1
+@a^1125^208:1,209:1,228:3
+@a^1128^208:1,229:1
+@a^1134^208:6,228:6
+@a^1135^188:5,208:8
 @a^1172^46:1,47:5,48:2
 @a^1176^47:3,48:1
 @a^1181^114:1
@@ -2016,6 +2055,7 @@ GoldScout-export 6^lqai6pd19792^18
 @a^1188^193:1
 @a^1189^154:2
 @a^1191^192:1
+@a^1199^228:2
 @a^1202^47:6
 @a^1236^68:1,69:5,88:4,89:2
 @a^1400^222:1
@@ -2113,6 +2153,8 @@ GoldScout-export 6^lqai6pd19792^18
 @a^270196^229:2
 @a^270298^228:3
 @a^270693^212:1
+@a^271486^188:1
+@a^271530^188:2
 @a^274902^156:2,175:1
 @f^1432^0^19^200^3820:2:4,6291:1:1,6308:2:2,6317:2:2,20708:4:4,20709:1:1,21071:7:7^192:3,251:9,270:7
 @f^1433^0^46^204^1467:10:10,3827:1:1,6289:16:16,6308:28:28,6311:1:1^204:46

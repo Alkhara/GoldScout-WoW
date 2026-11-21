@@ -1,8 +1,20 @@
-GoldScout-export 6^ktllmy95v50i^12
+GoldScout-export 6^ktllmy95v50i^13
 1502^1^0^1^2^1420^0.3222^0.6564^1^Wretched Zombie^^
 1504^10^0^2^3^1420^0.2913^0.5703^10^Young Night Web Spider^1368:2:2,1372:1:1,1476:2:2,7100:4:4,7101:7:7^
 1505^7^0^3^4^1420^0.2403^0.5946^7^Night Web Spider^1476:3:3,2654:1:1,7100:2:2,7101:4:4^
+1525^6^0^5^6^1420^0.5418^0.4961^6^Rotting Dead^1364:1:1,2855:4:4,4604:1:1^
+1526^5^0^6^7^1420^0.5313^0.4812^5^Ravaged Corpse^2589:2:2,2855:3:3,4604:1:1^
+1535^6^0^6^7^1420^0.3321^0.4795^6^Scarlet Warrior^118:1:1,159:1:1,1413:1:1,2589:3:3^
+1547^8^0^5^6^1420^0.5683^0.4407^8^Decrepit Darkhound^2672:6:6,2858:4:4,3299:2:2^
+1548^1^0^7^7^1420^0.6327^0.3568^1^Cursed Darkhound^2858:1:1^
+1553^12^0^6^7^1420^0.6265^0.4437^12^Greater Duskbat^2876:5:5,4865:5:5,6293:2:2,7073:2:2,7074:2:2,12223:3:3^
+1674^4^0^6^7^1420^0.5702^0.3501^4^Rot Hide Gnoll^118:1:1,1429:1:1,2589:2:2^
+1675^8^0^7^8^1420^0.5826^0.3202^8^Rot Hide Mongrel^2589:2:3,3013:1:1,211787:1:1^
+1753^1^0^10^10^1420^0.5826^0.3126^1^Maggot Eye^3635:1:1^
 1919^1^0^5^5^1420^0.3662^0.6151^1^Samuel Fipps^2589:1:1,16333:1:1^
+1934^1^0^7^7^1420^0.3541^0.4958^1^Tirisfal Farmer^2589:1:1,2774:1:1^
+1935^2^0^5^6^1420^0.3744^0.4915^2^Tirisfal Farmhand^118:1:1,2589:1:2^
+1941^21^0^6^7^1420^0.5515^0.4211^21^Rot Hide Graverobber^159:4:4,1412:1:1,1431:1:1,2589:9:13,2834:8:8,4604:1:1^
 2242^5^0^35^36^1416^0.5951^0.4336^5^Syndicate Spy^4306:2:3^
 2250^1^0^32^33^1416^0.3498^0.7129^1^Mountain Yeti^3771:1:1^
 2251^4^0^33^34^1416^0.3743^0.6774^4^Giant Yeti^1710:1:1,3800:1:1^
@@ -75,9 +87,11 @@ GoldScout-export 6^ktllmy95v50i^12
 266851^1^0^8^8^1411^0.5082^0.5628^1^Ukorsbane^1476:1:1,5465:1:1,211780:1:1,275722:1:1^
 268530^1^0^9^9^1411^0.6918^0.7129^1^Bloodtalon Matriarch^4878:1:1,277128:1:1^
 271961^6^0^2^3^1420^0.2478^0.6014^6^Webbed Forsaken^^
+276089^1^0^11^11^1420^0.6565^0.4362^1^The Condemned One^805:1:1,2589:1:1^
 @i^117^Tough Jerky
 @i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
+@i^805^Small Red Pouch
 @i^858^Lesser Healing Potion
 @i^878^Fist-sized Spinneret
 @i^1074^Hard Spider Leg Tip
@@ -85,15 +99,20 @@ GoldScout-export 6^ktllmy95v50i^12
 @i^1181^Scroll of Spirit
 @i^1205^Melon Juice
 @i^1210^Shadowgem
+@i^1364^Ragged Leather Vest
 @i^1368^Ragged Leather Gloves
 @i^1369^Ragged Leather Belt
 @i^1372^Ragged Cloak
 @i^1374^Frayed Shoes
 @i^1376^Frayed Cloak
 @i^1377^Frayed Gloves
+@i^1412^Crude Bastard Sword
+@i^1413^Feeble Sword
 @i^1418^Worn Leather Belt
 @i^1420^Worn Leather Bracers
 @i^1425^Worn Leather Vest
+@i^1429^Patchwork Cloak
+@i^1431^Patchwork Pants
 @i^1433^Patchwork Armor
 @i^1464^Buzzard Talon
 @i^1476^Snapped Spider Limb
@@ -116,14 +135,21 @@ GoldScout-export 6^ktllmy95v50i^12
 @i^2672^Stringy Wolf Meat
 @i^2677^Boar Ribs
 @i^2773^Cracked Shortbow
+@i^2774^Rust-covered Blunderbuss
 @i^2777^Feeble Shortbow
+@i^2834^Embalming Ichor
+@i^2855^Putrid Claw
+@i^2858^Darkhound Blood
+@i^2876^Duskbat Pelt
 @i^2974^Hunting Pants
+@i^3013^Scroll of Protection
 @i^3172^Boar Intestines
 @i^3182^Spider's Silk
 @i^3299^Fractured Canine
 @i^3385^Lesser Mana Potion
 @i^3403^Ivory Boar Tusk
 @i^3404^Buzzard Wing
+@i^3635^Maggot Eye's Paw
 @i^3685^Raptor Egg
 @i^3715^Bracers of Earth Binding
 @i^3731^Lion Meat
@@ -139,6 +165,7 @@ GoldScout-export 6^ktllmy95v50i^12
 @i^4553^Jagged Piece of Stone
 @i^4585^Dripping Spider Mandible
 @i^4586^Smooth Raptor Skin
+@i^4604^Forest Mushroom Cap
 @i^4775^Cracked Bill
 @i^4776^Ruffled Feather
 @i^4784^Lifeless Stone
@@ -159,6 +186,7 @@ GoldScout-export 6^ktllmy95v50i^12
 @i^5801^Kraul Guano
 @i^5810^Fresh Carcass
 @i^5811^Frostmaw's Mane
+@i^6293^Dried Bat Blood
 @i^6694^Heart of Agamaggan
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
@@ -171,12 +199,14 @@ GoldScout-export 6^ktllmy95v50i^12
 @i^11391^Spined Bat Wing
 @i^11393^Small Bat Skull
 @i^12184^Raptor Flesh
+@i^12223^Meaty Bat Wing
 @i^14090^Beaded Britches of the Eagle
 @i^15285^Archer's Longbow
 @i^16333^Samuel's Remains
 @i^17008^Small Scroll
 @i^17056^Light Feather
 @i^211780^Scroll: KWYJIBO
+@i^211787^Scroll: LOWER PING WHOMEVER
 @i^253982^Pattern: Filigreed Shadow Circlet
 @i^271204^Meathook Slicer
 @i^271206^Leftover Abomination Skin
@@ -192,6 +222,7 @@ GoldScout-export 6^ktllmy95v50i^12
 @q^117^1:0:0
 @q^118^1:0:0
 @q^159^1:0:0
+@q^805^1:1:0
 @q^858^1:0:0
 @q^878^0:7:0
 @q^1074^0:15:0
@@ -199,15 +230,20 @@ GoldScout-export 6^ktllmy95v50i^12
 @q^1181^1:0:0
 @q^1205^1:0:0
 @q^1210^2:7:1
+@q^1364^0:4:0
 @q^1368^0:4:0
 @q^1369^0:4:0
 @q^1372^0:4:0
 @q^1374^0:4:0
 @q^1376^0:4:0
 @q^1377^0:4:0
+@q^1412^0:2:0
+@q^1413^0:2:0
 @q^1418^0:4:0
 @q^1420^0:4:0
 @q^1425^0:4:0
+@q^1429^0:4:0
+@q^1431^0:4:0
 @q^1433^0:4:0
 @q^1464^0:15:0
 @q^1476^0:15:0
@@ -230,14 +266,21 @@ GoldScout-export 6^ktllmy95v50i^12
 @q^2672^1:7:1
 @q^2677^1:7:1
 @q^2773^0:2:0
+@q^2774^0:2:0
 @q^2777^0:2:0
+@q^2834^1:12:0
+@q^2855^1:12:0
+@q^2858^1:12:0
+@q^2876^1:12:0
 @q^2974^2:4:0
+@q^3013^1:0:0
 @q^3172^1:7:1
 @q^3182^1:7:1
 @q^3299^0:15:0
 @q^3385^1:0:0
 @q^3403^0:15:0
 @q^3404^1:7:1
+@q^3635^1:12:0
 @q^3685^1:7:1
 @q^3715^1:12:0
 @q^3731^1:7:1
@@ -253,6 +296,7 @@ GoldScout-export 6^ktllmy95v50i^12
 @q^4553^0:15:0
 @q^4585^0:15:0
 @q^4586^0:15:0
+@q^4604^1:0:0
 @q^4775^0:15:0
 @q^4776^0:15:0
 @q^4784^0:15:0
@@ -273,6 +317,7 @@ GoldScout-export 6^ktllmy95v50i^12
 @q^5801^1:12:0
 @q^5810^1:12:0
 @q^5811^1:12:0
+@q^6293^0:15:0
 @q^6694^3:4:0
 @q^7073^0:15:0
 @q^7074^0:15:0
@@ -285,12 +330,14 @@ GoldScout-export 6^ktllmy95v50i^12
 @q^11391^0:15:0
 @q^11393^0:15:0
 @q^12184^1:7:1
+@q^12223^1:7:1
 @q^14090^2:4:0
 @q^15285^2:2:0
 @q^16333^1:12:0
 @q^17008^1:15:0
 @q^17056^1:15:1
 @q^211780^1:0:0
+@q^211787^1:0:0
 @q^253982^3:9:0
 @q^271204^3:2:0
 @q^271206^3:4:0
@@ -2054,7 +2101,19 @@ GoldScout-export 6^ktllmy95v50i^12
 @a^1502^266:1
 @a^1504^225:9,226:1
 @a^1505^224:4,225:1,244:2
+@a^1525^190:3,210:2,211:1
+@a^1526^190:4,210:1
+@a^1535^186:6
+@a^1547^152:2,172:3,187:2,212:1
+@a^1548^152:1
+@a^1553^152:1,171:1,172:7,192:1,212:2
+@a^1674^131:3,151:1
+@a^1675^131:8
+@a^1753^131:1
 @a^1919^247:1
+@a^1934^187:1
+@a^1935^187:2
+@a^1941^151:2,170:6,171:12,191:1
 @a^2242^171:1,172:2,191:2
 @a^2250^286:1
 @a^2251^267:4
@@ -2103,4 +2162,5 @@ GoldScout-export 6^ktllmy95v50i^12
 @a^266851^230:1
 @a^268530^293:1
 @a^271961^225:2,244:4
+@a^276089^173:1
 @l^0^enUS

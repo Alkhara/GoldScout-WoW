@@ -1,10 +1,12 @@
-GoldScout-export 6^ngrkzmldgqnr^13
+GoldScout-export 6^ngrkzmldgqnr^14
 760^6^0^36^37^1435^0.5891^0.2670^6^Lost One Muckdweller^4306:2:2,4338:1:1,274045:5:5^
 2350^4^0^20^21^1424^0.6715^0.0813^4^Forest Moss Creeper^1081:1:1,1288:1:1,2251:2:2,4428:1:1^
 2351^4^0^21^22^1416^0.7252^0.6537^1^Gray Bear^3730:1:1,11406:4:4^
 2529^4^0^0^0^0^0.0000^0.0000^0^^1818:1:1,248707:2:2^
 2893^4^0^39^40^1418^0.4862^0.7212^4^Stonevault Bonesnapper^3771:1:1,3794:1:1,4338:1:1,211269:1:1,274044:4:4^
 2894^2^0^40^41^1418^0.4866^0.7094^2^Stonevault Shaman^274044:1:1^
+3382^1^0^14^14^1413^0.6435^0.4729^1^Southsea Cannoneer^2589:1:2^
+3476^1^0^27^27^1413^0.6344^0.5361^1^Isha Awak^5104:1:1,5516:1:1^
 3758^14^0^25^26^1440^0.6760^0.5478^14^Felmusk Satyr^2592:6:6,3385:2:2,4306:1:1,5481:6:6,6390:1:1,16655:1:1^
 3759^20^0^26^27^1440^0.6701^0.5583^20^Felmusk Rogue^1827:1:1,2592:2:4,4306:6:8,5481:5:5,16655:1:1^
 3762^11^0^25^26^1440^0.6757^0.5426^11^Felmusk Felsworn^2592:2:3,3770:2:2,5481:4:4,248687:1:1^
@@ -98,6 +100,7 @@ GoldScout-export 6^ngrkzmldgqnr^13
 4656^4^0^38^39^1443^0.3230^0.5543^4^Maraudine Mauler^254432:1:1,274047:3:3^
 4657^2^0^38^39^1443^0.3078^0.5611^2^Maraudine Windchaser^274047:1:1^
 5894^1^0^22^22^1421^0.3834^0.4450^1^Corrupt Minor Manifestation of Water^7812:1:1^
+6020^2^0^18^19^1413^0.6487^0.4867^2^Slimeshell Makrura^3010:1:1^
 6035^1^0^0^0^0^0.0000^0.0000^0^^2592:1:1^
 6168^1^0^0^0^0^0.0000^0.0000^0^^274152:1:1^
 7404^1^0^30^30^1441^0.4205^0.3185^1^Galak Flame Guard^4306:1:1^
@@ -149,6 +152,7 @@ GoldScout-export 6^ngrkzmldgqnr^13
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2677^Boar Ribs
+@i^3010^Fine Sand
 @i^3039^Short Ash Bow
 @i^3040^Hunter's Muzzle Loader
 @i^3172^Boar Intestines
@@ -171,6 +175,7 @@ GoldScout-export 6^ngrkzmldgqnr^13
 @i^4428^Spider Palp
 @i^4538^Snapvine Watermelon
 @i^4784^Lifeless Stone
+@i^5104^Heart of Isha Awak
 @i^5116^Long Tail Feather
 @i^5117^Vibrant Plume
 @i^5136^Torn Furry Ear
@@ -180,6 +185,7 @@ GoldScout-export 6^ngrkzmldgqnr^13
 @i^5448^Fractured Elemental Bracer
 @i^5451^Crushed Elemental Bracer
 @i^5481^Satyr Horns
+@i^5516^Threshadon Fang
 @i^5635^Sharp Claw
 @i^5636^Delicate Feather
 @i^5686^Ordanus' Head
@@ -299,6 +305,7 @@ GoldScout-export 6^ngrkzmldgqnr^13
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2677^1:7:1
+@q^3010^0:15:0
 @q^3039^2:2:0
 @q^3040^2:2:0
 @q^3172^1:7:1
@@ -321,6 +328,7 @@ GoldScout-export 6^ngrkzmldgqnr^13
 @q^4428^0:15:0
 @q^4538^1:0:0
 @q^4784^0:15:0
+@q^5104^1:12:0
 @q^5116^1:7:1
 @q^5117^1:12:0
 @q^5136^0:15:0
@@ -330,6 +338,7 @@ GoldScout-export 6^ngrkzmldgqnr^13
 @q^5448^0:15:0
 @q^5451^0:15:0
 @q^5481^1:12:0
+@q^5516^0:2:0
 @q^5635^1:7:1
 @q^5636^0:15:0
 @q^5686^1:12:0
@@ -418,6 +427,7 @@ GoldScout-export 6^ngrkzmldgqnr^13
 @q^274152^3:4:0
 @q^274159^3:4:0
 @q^274463^1:12:0
+@m^1413^The Barrens
 @m^1416^Alterac Mountains
 @m^1418^Badlands
 @m^1421^Silverpine Forest
@@ -1530,6 +1540,8 @@ GoldScout-export 6^ngrkzmldgqnr^13
 @a^2351^274:1
 @a^2893^289:4
 @a^2894^289:2
+@a^3382^192:1
+@a^3476^212:1
 @a^3758^213:6,233:8
 @a^3759^213:4,233:16
 @a^3762^213:7,233:4
@@ -1576,6 +1588,7 @@ GoldScout-export 6^ngrkzmldgqnr^13
 @a^4656^206:2,226:2
 @a^4657^206:1,226:1
 @a^5894^167:1
+@a^6020^192:1,193:1
 @a^7404^128:1
 @a^10617^83:1
 @a^10720^124:3
