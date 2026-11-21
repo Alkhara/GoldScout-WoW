@@ -1,4 +1,4 @@
-GoldScout-export 5^zbm9unaf3lp9^14
+GoldScout-export 5^zbm9unaf3lp9^15
 3^7^0^24^25^1431^0.2454^0.3691^7^Flesh Eater^884:1:1,887:1:1,929:1:1,4606:1:1,6530:1:1,12990:1:1^
 36^4^0^11^12^1436^0.3210^0.3459^4^Harvest Golem^732:1:1,814:1:1,1274:1:1,255007:2:2^
 117^3^0^11^12^1436^0.4143^0.2064^3^Riverpaw Gnoll^2589:1:1^
@@ -31,8 +31,8 @@ GoldScout-export 5^zbm9unaf3lp9^14
 846^2^0^15^15^1436^0.4134^0.2841^2^Ghoul^2085:2:2,4605:1:1^
 923^1^0^23^24^1431^0.4790^0.6247^1^Young Black Ravager^1015:1:1^
 930^1^0^24^25^1431^0.3629^0.6076^1^Black Widow Hatchling^3174:1:1^
-937^4^0^32^33^1434^0.4426^0.0970^4^Kurzen Jungle Fighter^1707:1:1,2592:1:1,4306:1:1^
-940^1^0^32^33^1434^0.4365^0.1033^1^Kurzen Medicine Man^^
+937^15^0^32^33^1434^0.4426^0.1013^15^Kurzen Jungle Fighter^1707:1:1,2592:1:1,4306:7:10,213545:1:1^
+940^17^0^32^33^1434^0.4435^0.1018^17^Kurzen Medicine Man^1707:2:2,1710:1:1,2592:2:3,2633:7:7,2732:1:1,2744:1:1,2749:1:1,3357:2:2,3358:1:1,3818:3:3,4306:1:1,9861:1:1,213544:1:1^
 948^11^0^25^26^1431^0.2436^0.3635^11^Rotted One^884:3:3,887:5:5,1129:1:1,1758:1:1,2592:3:3,5529:1:1,211854:1:1^
 1065^1^0^12^12^1436^0.4151^0.2056^1^Riverpaw Shaman^2589:1:1^
 1085^5^0^34^35^1434^0.3218^0.1641^5^Elder Stranglethorn Tiger^1686:1:1,12202:3:3^
@@ -40,9 +40,20 @@ GoldScout-export 5^zbm9unaf3lp9^14
 1109^1^0^13^14^1436^0.3765^0.2827^1^Fleshripper^555:1:1^
 1150^8^0^30^31^1434^0.3788^0.1106^8^River Crocolisk^770:3:3,3667:3:3,4053:2:2,12037:4:4^
 1251^1^0^28^28^1431^0.3472^0.7456^1^Splinter Fist Firemonger^^
-1860^5^0^0^0^1440^0.2561^0.6143^5^Hathkrast^^
+1860^5^0^0^0^1440^0.2561^0.6143^5^Zag'garth^^
+2240^12^0^32^33^1416^0.5752^0.6592^12^Syndicate Footpad^2592:1:1,3801:1:1,4306:1:1,5113:2:2,6986:1:1,248689:1:1^
+2241^10^0^33^34^1416^0.5768^0.6580^10^Syndicate Thief^4306:2:3,5113:3:3^
+2248^2^0^30^31^1424^0.4829^0.3151^2^Cave Yeti^^
 2336^24^0^16^17^1439^0.5591^0.2697^24^Dark Strand Fanatic^414:1:1,858:1:1,954:1:1,1179:1:1,2589:7:17,2592:5:9,5348:4:4,14723:1:1,211854:1:1,248703:1:1^
+2354^1^0^22^23^1424^0.5477^0.5260^1^Vicious Gray Bear^11406:1:1^
+2376^4^0^30^31^1424^0.4485^0.6610^4^Torn Fin Oracle^3385:1:1,5524:2:2^
+2377^4^0^31^32^1424^0.4349^0.6726^4^Torn Fin Tidehunter^5524:2:2,17057:1:1,213543:1:1^
+2384^2^0^23^24^1424^0.5203^0.4123^2^Starving Mountain Lion^3731:2:2,5136:1:1^
+2406^4^0^32^33^1416^0.3420^0.8443^4^Mountain Lion^1687:1:1,3731:1:1^
+2407^9^0^33^34^1416^0.5155^0.2626^9^Hulking Mountain Lion^1686:2:2,1687:2:2,3731:5:5^
+2408^8^0^30^31^1424^0.5608^0.5099^8^Snapjaw^3712:2:3,4555:3:3,5524:4:4^
 2462^18^0^25^25^1431^0.2456^0.3644^18^Flesh Eating Worm^^
+2946^1^0^44^44^1424^0.5488^0.5627^1^Puppet of Helcular^^
 3664^1^0^24^24^1440^0.2534^0.6064^1^Ilkrud Magthrull^2592:1:1,5533:1:1^
 3725^1^0^18^18^1440^0.3147^0.2931^1^Dark Strand Cultist^^
 3727^5^0^20^21^1440^0.3130^0.3137^5^Dark Strand Enforcer^2592:2:4,4306:1:1^
@@ -135,10 +146,14 @@ GoldScout-export 5^zbm9unaf3lp9^14
 @i^2455^Minor Mana Potion
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2633^Jungle Remedy
 @i^2673^Coyote Meat
 @i^2677^Boar Ribs
 @i^2698^Recipe: Cooked Crab Claw
 @i^2728^Green Hills of Stranglethorn - Page 4
+@i^2732^Green Hills of Stranglethorn - Page 8
+@i^2744^Green Hills of Stranglethorn - Page 20
+@i^2749^Green Hills of Stranglethorn - Page 25
 @i^2765^Hunting Knife
 @i^2961^Burnt Leather Vest
 @i^2965^Warrior's Tunic
@@ -150,6 +165,8 @@ GoldScout-export 5^zbm9unaf3lp9^14
 @i^3198^Battering Hammer of Magic
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
+@i^3357^Liferoot
+@i^3358^Khadgar's Whisker
 @i^3375^Calico Bracers
 @i^3385^Lesser Mana Potion
 @i^3404^Buzzard Wing
@@ -159,10 +176,14 @@ GoldScout-export 5^zbm9unaf3lp9^14
 @i^3674^Decomposed Boot
 @i^3676^Slimy Ichor
 @i^3685^Raptor Egg
+@i^3712^Turtle Meat
 @i^3730^Big Bear Meat
+@i^3731^Lion Meat
 @i^3770^Mutton Chop
+@i^3801^Hardened Leather Boots
 @i^3802^Hardened Leather Bracers
 @i^3807^Hardened Leather Tunic
+@i^3818^Fadeleaf
 @i^4053^Large River Crocolisk Skin
 @i^4097^Chipped Gorilla Tooth
 @i^4306^Silk Cloth
@@ -171,13 +192,17 @@ GoldScout-export 5^zbm9unaf3lp9^14
 @i^4461^Raptor Hide
 @i^4538^Snapvine Watermelon
 @i^4542^Moist Cornbread
+@i^4555^Thick Scaly Tail
 @i^4605^Red-speckled Mushroom
 @i^4606^Spongy Morel
 @i^4694^Burnished Pauldrons
 @i^4757^Cracked Egg Shells
+@i^5113^Mark of the Syndicate
+@i^5136^Torn Furry Ear
 @i^5348^Worn Parchment
 @i^5366^Glowing Soul Gem
 @i^5475^Wooden Key
+@i^5524^Thick-shelled Clam
 @i^5529^Tomb Dust
 @i^5533^Ilkrud Magthrull's Tome
 @i^5573^Green Leather Bag
@@ -191,12 +216,15 @@ GoldScout-export 5^zbm9unaf3lp9^14
 @i^6581^Scouting Belt of the Owl
 @i^6767^Tyranis' Pendant
 @i^6889^Small Egg
+@i^6986^Crimson Lotus
 @i^7412^Infiltrator Gloves of Defense
 @i^8146^Wicked Claw
 @i^9753^Nomad Buckler of Agility
 @i^9758^Cadet Belt
+@i^9861^Archer's Gloves of Agility
 @i^11164^Formula: Enchant Weapon - Lesser Beastslayer
 @i^11386^Squishy Basilisk Eye
+@i^11406^Rotting Bear Carcass
 @i^11407^Torn Bear Pelt
 @i^12037^Mystery Meat
 @i^12184^Raptor Flesh
@@ -218,8 +246,11 @@ GoldScout-export 5^zbm9unaf3lp9^14
 @i^211853^Scroll: VOCE WELL
 @i^211854^Scroll: OMIT KESA
 @i^211855^Scroll: STHENIC LUNATE
+@i^213543^Scroll: UPDOG
 @i^213544^Scroll: TOPAZ YORAK
+@i^213545^Scroll: PEATCHY ATTAX
 @i^248683^Waylaid Crate: Apprentice Ore
+@i^248689^Waylaid Crate: Journeyman Curiosities
 @i^248703^Waylaid Crate: Apprentice Ingots
 @i^248707^Waylaid Crate: Journeyman Parts
 @i^254432^Carved Centaur Totem
@@ -270,10 +301,14 @@ GoldScout-export 5^zbm9unaf3lp9^14
 @q^2455^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2633^1:0:0
 @q^2673^1:7:1
 @q^2677^1:7:1
 @q^2698^1:9:0
 @q^2728^1:12:0
+@q^2732^1:12:0
+@q^2744^1:12:0
+@q^2749^1:12:0
 @q^2765^0:2:0
 @q^2961^2:4:0
 @q^2965^2:4:0
@@ -285,6 +320,8 @@ GoldScout-export 5^zbm9unaf3lp9^14
 @q^3198^2:2:0
 @q^3299^0:15:0
 @q^3300^0:15:0
+@q^3357^1:7:1
+@q^3358^1:7:1
 @q^3375^0:4:0
 @q^3385^1:0:0
 @q^3404^1:7:1
@@ -294,10 +331,14 @@ GoldScout-export 5^zbm9unaf3lp9^14
 @q^3674^0:15:0
 @q^3676^0:15:0
 @q^3685^1:7:1
+@q^3712^1:7:1
 @q^3730^1:7:1
+@q^3731^1:7:1
 @q^3770^1:0:0
+@q^3801^0:4:0
 @q^3802^0:4:0
 @q^3807^0:4:0
+@q^3818^1:7:1
 @q^4053^1:12:0
 @q^4097^0:15:0
 @q^4306^1:7:1
@@ -306,13 +347,17 @@ GoldScout-export 5^zbm9unaf3lp9^14
 @q^4461^1:7:1
 @q^4538^1:0:0
 @q^4542^1:0:0
+@q^4555^0:15:0
 @q^4605^1:0:0
 @q^4606^1:0:0
 @q^4694^1:4:0
 @q^4757^0:15:0
+@q^5113^0:15:0
+@q^5136^0:15:0
 @q^5348^1:12:0
 @q^5366^1:12:0
 @q^5475^1:13:0
+@q^5524^1:7:0
 @q^5529^0:15:0
 @q^5533^1:12:0
 @q^5573^1:1:0
@@ -326,12 +371,15 @@ GoldScout-export 5^zbm9unaf3lp9^14
 @q^6581^2:4:0
 @q^6767^1:12:0
 @q^6889^1:7:1
+@q^6986^0:15:0
 @q^7412^2:4:0
 @q^8146^1:7:1
 @q^9753^2:4:0
 @q^9758^1:4:0
+@q^9861^2:4:0
 @q^11164^2:9:0
 @q^11386^0:15:0
+@q^11406^0:15:0
 @q^11407^1:12:0
 @q^12037^1:7:1
 @q^12184^1:7:1
@@ -353,12 +401,17 @@ GoldScout-export 5^zbm9unaf3lp9^14
 @q^211853^1:0:0
 @q^211854^1:0:0
 @q^211855^1:0:0
+@q^213543^1:0:0
 @q^213544^1:0:0
+@q^213545^1:0:0
 @q^248683^1:0:1
+@q^248689^1:0:1
 @q^248703^2:0:1
 @q^248707^2:0:1
 @q^254432^2:15:0
 @q^255007^1:7:1
+@m^1416^Alterac Mountains
+@m^1424^Hillsbrad Foothills
 @m^1431^Duskwood
 @m^1434^Stranglethorn Vale
 @m^1436^Westfall
@@ -1006,8 +1059,8 @@ GoldScout-export 5^zbm9unaf3lp9^14
 @a^846^108:2
 @a^923^249:1
 @a^930^247:1
-@a^937^28:1,48:3
-@a^940^48:1
+@a^937^28:4,29:1,48:10
+@a^940^28:4,29:1,48:9,49:3
 @a^948^125:2,144:6,145:3
 @a^1065^88:1
 @a^1085^66:5
@@ -1016,8 +1069,19 @@ GoldScout-export 5^zbm9unaf3lp9^14
 @a^1150^26:1,27:1,46:1,47:2,48:3
 @a^1251^286:1
 @a^1860^245:5
+@a^2240^251:2,271:10
+@a^2241^251:4,271:6
+@a^2248^129:2
 @a^2336^111:24
+@a^2354^210:1
+@a^2376^249:1,268:3
+@a^2377^268:4
+@a^2384^129:1,211:1
+@a^2406^326:3,346:1
+@a^2407^89:1,90:3,110:4,130:1
+@a^2408^191:4,210:1,211:1,230:2
 @a^2462^125:4,144:8,145:6
+@a^2946^230:1
 @a^3664^245:1
 @a^3725^106:1
 @a^3727^126:5

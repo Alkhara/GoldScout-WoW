@@ -1,4 +1,4 @@
-GoldScout-export 6^seedhykaa5zj^28
+GoldScout-export 6^seedhykaa5zj^29
 6^10^0^1^2^1429^0.4820^0.3614^10^Koboldgezücht^755:4:4,1377:1:1,1380:1:1,2211:1:1,2589:4:4,4536:2:2,247834:2:2^
 69^1^0^2^2^1429^0.4689^0.3939^1^Wilder Waldwolf^750:1:1,7073:1:1^
 299^7^0^1^1^1429^0.4762^0.3951^7^Junger Wolf^750:7:7,1370:1:1,1380:1:1,2656:1:1,2672:1:1,7073:4:4,7074:3:3^
@@ -147,7 +147,7 @@ GoldScout-export 6^seedhykaa5zj^28
 255769^12^0^37^38^2548^0.2425^0.6533^12^Redridge Brute^3785:1:1,3799:1:1,4306:4:10,9355:2:2^
 255770^11^0^36^37^2548^0.2235^0.6709^11^Redridge Mystic^3802:1:1,4306:2:5,213545:1:1^
 255772^13^0^36^37^2548^0.2338^0.6457^13^Redridge Trapper^3402:1:1,3805:1:1,4306:7:12,8747:1:1,20763:5:5^
-255774^1^0^36^36^2548^0.2116^0.6577^1^Redridge Scout^213545:1:1^
+255774^1^0^35^36^2548^0.2116^0.6577^1^Redridge Scout^213545:1:1^
 255849^2^0^40^41^2548^0.6726^0.1664^2^Bolder'ok Magus^4338:1:2^
 255850^6^0^42^44^2548^0.6677^0.1971^6^Bolder'ok Brute^4306:1:2^
 255851^4^0^38^39^2548^0.7340^0.5086^4^Mature Paletusk^769:1:1,2295:1:1,3801:1:1,3816:1:1,268632:3:3^
@@ -193,6 +193,8 @@ GoldScout-export 6^seedhykaa5zj^28
 261497^2^0^40^41^2548^0.7572^0.2621^2^Twilight Firecaller^4306:2:4^
 262037^3^0^37^38^2548^0.6032^0.8485^3^Roosting Duskbat^11393:1:1,11394:2:2^
 262397^10^0^36^38^1434^0.2289^0.2660^10^Brinescale Skirmisher^2751:1:1,4603:1:1,5524:4:4,7331:1:1,7455:1:1,17058:4:4^
+262473^38^0^39^40^2548^0.2976^0.7319^38^Cinderscale Whelp^4402:5:5,4460:18:18,5215:1:1,6444:12:12,8146:1:1,213544:1:1^
+262477^16^0^41^42^2548^0.2972^0.7345^16^Cinderscale Warrior^1645:1:1,3936:1:1^
 263071^1^0^42^42^2548^0.5850^0.3950^1^Blademaster Kaijo^271425:1:1^
 263196^4^0^0^0^0^0.0000^0.0000^0^^3800:1:1,270343:3:3^
 263307^7^0^37^38^2548^0.6182^0.5901^7^Glade Viper^6444:2:2,6826:3:3,213543:1:1,268632:1:1^
@@ -310,6 +312,7 @@ GoldScout-export 6^seedhykaa5zj^28
 @i^3926^Chucky's Huge Ring
 @i^3927^Fine Aged Cheddar
 @i^3928^Superior Healing Potion
+@i^3936^Crochet Belt
 @i^3942^Crochet Shoulderpads
 @i^3961^Thick Leather Belt
 @i^3964^Thick Cloak
@@ -331,9 +334,11 @@ GoldScout-export 6^seedhykaa5zj^28
 @i^4106^Tumbled Crystal
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
+@i^4402^Small Flame Sac
 @i^4421^Scroll of Protection III
 @i^4422^Scroll of Stamina III
 @i^4424^Scroll of Spirit III
+@i^4460^Ripped Wing Webbing
 @i^4461^Raptor Hide
 @i^4482^Sealed Folder
 @i^4536^Glänzender roter Apfel
@@ -348,6 +353,7 @@ GoldScout-export 6^seedhykaa5zj^28
 @i^4634^Iron Lockbox
 @i^5009^Mindbender Loop
 @i^5116^Long Tail Feather
+@i^5215^Ember Wand of Spirit
 @i^5429^A Pretty Rock
 @i^5524^Thick-shelled Clam
 @i^5569^Seaweed
@@ -581,6 +587,7 @@ GoldScout-export 6^seedhykaa5zj^28
 @q^3926^1:12:0
 @q^3927^1:0:0
 @q^3928^1:0:0
+@q^3936^0:4:0
 @q^3942^0:4:0
 @q^3961^0:4:0
 @q^3964^0:4:0
@@ -602,9 +609,11 @@ GoldScout-export 6^seedhykaa5zj^28
 @q^4106^1:12:0
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4402^1:7:1
 @q^4421^1:0:0
 @q^4422^1:0:0
 @q^4424^1:0:0
+@q^4460^0:15:0
 @q^4461^1:7:1
 @q^4482^1:12:0
 @q^4536^1:0:0
@@ -619,6 +628,7 @@ GoldScout-export 6^seedhykaa5zj^28
 @q^4634^2:15:0
 @q^5009^2:4:0
 @q^5116^1:7:1
+@q^5215^2:2:0
 @q^5429^0:15:0
 @q^5524^1:7:0
 @q^5569^0:15:0
@@ -1609,6 +1619,8 @@ GoldScout-export 6^seedhykaa5zj^28
 @a^261497^114:1,115:1
 @a^262037^332:2,352:1
 @a^262397^104:10
+@a^262473^285:17,286:15,305:3,306:3
+@a^262477^285:12,286:4
 @a^263071^151:1
 @a^263307^232:5,252:2
 @a^263315^211:1
