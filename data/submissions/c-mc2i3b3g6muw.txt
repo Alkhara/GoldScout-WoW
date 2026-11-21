@@ -1,4 +1,4 @@
-GoldScout-export 6^mc2i3b3g6muw^11
+GoldScout-export 6^mc2i3b3g6muw^12
 213^2^0^19^20^1431^0.1035^0.4464^2^Starving Dire Wolf^893:1:1,3301:1:1^
 217^84^0^19^20^1431^0.1162^0.5256^84^Venom Web Spider^878:9:9,899:1:1,1081:35:35,1475:9:9,2251:33:33,2992:1:1,3174:37:37,3182:6:6,4428:16:16,211855:1:1,248702:1:1^
 539^48^0^18^19^1431^0.1047^0.5185^48^Pygmy Venom Web Spider^878:3:3,1081:17:17,1475:4:4,2020:1:1,2251:19:19,2969:1:1,3174:11:11,3182:1:1,4428:10:10^
@@ -21,6 +21,11 @@ GoldScout-export 6^mc2i3b3g6muw^11
 1715^5^0^0^0^0^0.0000^0.0000^0^^422:2:2,1705:1:1,2592:2:4,4709:1:1^
 1716^1^0^0^0^0^0.0000^0.0000^0^^252816:1:1,273827:1:1^
 1717^1^0^0^0^0^0.0000^0.0000^0^^273811:1:1^
+2368^2^0^29^29^1424^0.6277^0.7687^2^Daggerspine Shorestalker^17057:1:1,17058:1:1^
+2369^5^0^30^31^1424^0.5714^0.6984^5^Daggerspine Shorehunter^5524:2:2,17057:1:1,17058:1:1^
+2371^5^0^31^32^1424^0.5628^0.6549^5^Daggerspine Siren^929:1:1,3816:1:1,7072:1:1,17057:1:1,17058:3:3^
+2376^13^0^30^31^1424^0.4407^0.6702^13^Torn Fin Oracle^1205:1:1,2221:1:1,3716:6:6,5524:5:5,5785:1:1,7356:1:1,17057:1:1,17058:3:3,249881:1:1^
+2377^19^0^31^32^1424^0.4402^0.6673^19^Torn Fin Tidehunter^3716:4:4,3787:1:1,3798:1:1,3803:1:1,3808:1:1,5524:8:8,17057:3:3,17058:3:3^
 2408^5^0^30^31^1424^0.6516^0.3833^5^Snapjaw^3712:2:3,4555:1:1,5524:3:3,6308:3:5^
 3974^2^0^0^0^0^0.0000^0.0000^0^^7756:1:1,15935:1:1,273109:1:1,274292:1:1^
 3975^1^0^0^0^0^0.0000^0.0000^0^^274295:1:1^
@@ -80,6 +85,7 @@ GoldScout-export 6^mc2i3b3g6muw^11
 @i^878^Fist-sized Spinneret
 @i^893^Dire Wolf Fang
 @i^899^Venom Web Fang
+@i^929^Healing Potion
 @i^1015^Lean Wolf Flank
 @i^1081^Crisp Spider Meat
 @i^1205^Melon Juice
@@ -117,11 +123,17 @@ GoldScout-export 6^mc2i3b3g6muw^11
 @i^3619^Snellig's Snuffbox
 @i^3640^Head of Deepfury
 @i^3712^Turtle Meat
+@i^3716^Murloc Head
 @i^3778^Taut Compound Bow
 @i^3781^Broad Claymore
 @i^3786^Shiny Dirk
+@i^3787^Stone Club
 @i^3792^Interlaced Belt
+@i^3798^Interlaced Shoulderpads
+@i^3803^Hardened Cloak
 @i^3807^Hardened Leather Tunic
+@i^3808^Double Mail Belt
+@i^3816^Reflective Heater
 @i^3817^Reinforced Buckler
 @i^4039^Nightsky Cowl
 @i^4075^Mail Combat Gauntlets
@@ -134,6 +146,7 @@ GoldScout-export 6^mc2i3b3g6muw^11
 @i^4633^Heavy Bronze Lockbox
 @i^4709^Forest Leather Mantle
 @i^5524^Thick-shelled Clam
+@i^5785^Thick Murloc Scale
 @i^5883^Forked Mudrock Tongue
 @i^6308^Raw Bristle Whisker Catfish
 @i^6362^Raw Rockscale Cod
@@ -144,7 +157,9 @@ GoldScout-export 6^mc2i3b3g6muw^11
 @i^6572^Defender Shield of Power
 @i^6573^Defender Boots of Stamina
 @i^6893^Workshop Key
+@i^7072^Naga Scale
 @i^7331^Phalanx Shield of Healing
+@i^7356^Elder's Cloak of the Beast
 @i^7419^Phalanx Cloak of the Gorilla
 @i^7422^Phalanx Girdle of Nature Protection
 @i^7448^Sentinel Girdle of the Knight
@@ -168,6 +183,8 @@ GoldScout-export 6^mc2i3b3g6muw^11
 @i^15249^Polished Zweihander of the Bandit
 @i^15365^Trickster's Handwraps of the Bandit
 @i^15935^Durable Rod of Arcane Protection
+@i^17057^Shiny Fish Scales
+@i^17058^Fish Oil
 @i^211853^Scroll: VOCE WELL
 @i^211855^Scroll: STHENIC LUNATE
 @i^215373^Silver Hand Training Hammer
@@ -176,6 +193,7 @@ GoldScout-export 6^mc2i3b3g6muw^11
 @i^248702^Waylaid Crate: Apprentice Fabrics
 @i^248708^Waylaid Crate: Expert Fabrics
 @i^248710^Waylaid Crate: Expert Parts
+@i^249881^Recipe: Root Tea
 @i^252814^Pattern: Brawler's Leather Helm
 @i^252816^Pattern: Defender's Leather Helm
 @i^273032^Bonebinder's Signet
@@ -195,6 +213,7 @@ GoldScout-export 6^mc2i3b3g6muw^11
 @q^878^0:7:0
 @q^893^0:15:0
 @q^899^2:2:0
+@q^929^1:0:0
 @q^1015^1:7:1
 @q^1081^1:7:1
 @q^1205^1:0:0
@@ -232,11 +251,17 @@ GoldScout-export 6^mc2i3b3g6muw^11
 @q^3619^1:12:0
 @q^3640^1:12:0
 @q^3712^1:7:1
+@q^3716^1:12:0
 @q^3778^0:2:0
 @q^3781^0:2:0
 @q^3786^0:2:0
+@q^3787^0:2:0
 @q^3792^0:4:0
+@q^3798^0:4:0
+@q^3803^0:4:0
 @q^3807^0:4:0
+@q^3808^0:4:0
+@q^3816^0:4:0
 @q^3817^0:4:0
 @q^4039^2:4:0
 @q^4075^2:4:0
@@ -249,6 +274,7 @@ GoldScout-export 6^mc2i3b3g6muw^11
 @q^4633^2:15:0
 @q^4709^2:4:0
 @q^5524^1:7:0
+@q^5785^1:7:1
 @q^5883^1:12:0
 @q^6308^1:7:1
 @q^6362^1:7:1
@@ -259,7 +285,9 @@ GoldScout-export 6^mc2i3b3g6muw^11
 @q^6572^2:4:0
 @q^6573^2:4:0
 @q^6893^1:13:0
+@q^7072^1:7:1
 @q^7331^2:4:0
+@q^7356^2:4:0
 @q^7419^2:4:0
 @q^7422^2:4:0
 @q^7448^2:4:0
@@ -283,6 +311,8 @@ GoldScout-export 6^mc2i3b3g6muw^11
 @q^15249^2:2:0
 @q^15365^2:4:0
 @q^15935^2:4:0
+@q^17057^1:15:0
+@q^17058^1:15:0
 @q^211853^1:0:0
 @q^211855^1:0:0
 @q^215373^1:2:0
@@ -291,6 +321,7 @@ GoldScout-export 6^mc2i3b3g6muw^11
 @q^248702^2:0:1
 @q^248708^2:0:1
 @q^248710^2:0:1
+@q^249881^1:9:0
 @q^252814^3:9:0
 @q^252816^3:9:0
 @q^273032^3:4:0
@@ -929,6 +960,11 @@ GoldScout-export 6^mc2i3b3g6muw^11
 @a^1157^82:1,102:1,122:3
 @a^1158^82:6,122:1
 @a^1159^102:1
+@a^2368^292:1,312:1
+@a^2369^250:1,271:2,291:1,311:1
+@a^2371^250:1,251:1,271:3
+@a^2376^268:9,269:3,288:1
+@a^2377^249:2,268:14,269:3
 @a^2408^133:1,153:2,172:2
 @a^4284^137:1
 @a^4396^71:1,92:1,112:3,132:4,152:4,172:2

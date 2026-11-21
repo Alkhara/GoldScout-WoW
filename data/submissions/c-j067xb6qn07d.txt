@@ -1,8 +1,9 @@
-GoldScout-export 6^j067xb6qn07d^19
-6^5^0^1^2^1429^0.4779^0.3591^5^Kobold Vermin^755:1:1,2650:1:1,247834:1:1,247839:1:1^
+GoldScout-export 6^j067xb6qn07d^20
+6^9^0^1^2^1429^0.4785^0.3567^9^Kobold Vermin^755:2:2,2589:1:1,2650:1:1,2652:1:1,247834:1:1,247839:3:3^
+38^19^0^3^4^1429^0.5405^0.4753^19^Defias Thug^159:1:1,752:12:12,1372:3:3,1378:1:1,2070:3:3,2211:1:1,2589:6:6,2649:1:1,2656:1:1^
 69^3^0^2^2^1429^0.4705^0.3823^3^Timber Wolf^750:2:2,2210:1:1,4865:1:1,7073:2:2,7074:1:1^
-257^3^0^3^3^1429^0.4871^0.3616^3^Kobold Worker^755:1:1,1378:1:1,2589:1:1,4536:1:1,247839:1:1^
-299^9^0^1^1^1429^0.4726^0.3946^9^Young Wolf^750:6:6,1366:1:1,1368:1:1,1377:2:2,2653:1:1,2654:1:1,2672:1:1,4865:5:5,7073:5:5,7074:2:2^
+257^13^0^3^3^1429^0.4767^0.3425^13^Kobold Worker^755:7:7,1364:1:1,1366:1:1,1378:2:2,2589:6:6,2651:1:1,3365:1:1,4536:4:4,247839:5:5^
+299^11^0^1^1^1429^0.4731^0.3942^11^Young Wolf^750:6:6,1366:1:1,1368:1:1,1377:2:2,2653:1:1,2654:1:1,2672:1:1,4865:7:7,7073:6:6,7074:2:2^
 423^14^0^15^16^1433^0.1063^0.6346^14^Redridge Mongrel^1179:1:1,1211:1:1,1501:1:1,2589:3:6,2592:2:2^
 441^1^0^18^18^1433^0.2370^0.6475^1^Black Dragon Whelp^1206:1:1^
 442^19^0^15^16^1433^0.0761^0.7589^19^Tarantula^1081:5:5,1475:2:2,3167:3:3,3174:11:11^
@@ -97,9 +98,11 @@ GoldScout-export 6^j067xb6qn07d^19
 12922^1^0^19^19^1440^0.3058^0.3212^1^Imp Minion^^
 260429^1^0^39^39^1434^0.4374^0.2051^1^Venture Co. Agent^2589:1:1^
 263389^1^0^0^0^0^0.0000^0.0000^0^^^
+@i^159^Refreshing Spring Water
 @i^729^Stringy Vulture Meat
 @i^730^Murloc Eye
 @i^750^Tough Wolf Meat
+@i^752^Red Burlap Bandana
 @i^755^Melted Candle
 @i^769^Chunk of Boar Meat
 @i^770^Pointy Crocolisk Tooth
@@ -112,8 +115,10 @@ GoldScout-export 6^j067xb6qn07d^19
 @i^1212^Gnoll Spittle
 @i^1213^Gnoll Kindred Bracers
 @i^1288^Large Venom Sac
+@i^1364^Ragged Leather Vest
 @i^1366^Ragged Leather Pants
 @i^1368^Ragged Leather Gloves
+@i^1372^Ragged Cloak
 @i^1377^Frayed Gloves
 @i^1378^Frayed Pants
 @i^1475^Small Venom Sac
@@ -136,7 +141,9 @@ GoldScout-export 6^j067xb6qn07d^19
 @i^1820^Wooden Maul
 @i^1821^Warped Blade
 @i^1831^Oaken War Staff
+@i^2070^Darnassian Bleu
 @i^2210^Battered Buckler
+@i^2211^Bent Large Shield
 @i^2216^Simple Buckler
 @i^2221^Targe Shield
 @i^2290^Scroll of Intellect II
@@ -144,9 +151,13 @@ GoldScout-export 6^j067xb6qn07d^19
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2633^Jungle Remedy
+@i^2649^Flimsy Chain Belt
 @i^2650^Flimsy Chain Boots
+@i^2651^Flimsy Chain Bracers
+@i^2652^Flimsy Chain Cloak
 @i^2653^Flimsy Chain Gloves
 @i^2654^Flimsy Chain Pants
+@i^2656^Flimsy Chain Vest
 @i^2672^Stringy Wolf Meat
 @i^2674^Crawler Meat
 @i^2675^Crawler Claw
@@ -164,6 +175,7 @@ GoldScout-export 6^j067xb6qn07d^19
 @i^3174^Spider Ichor
 @i^3300^Rabbit's Foot
 @i^3357^Liferoot
+@i^3365^Frayed Bracers
 @i^3385^Lesser Mana Potion
 @i^3611^Plans: Green Iron Boots
 @i^3643^Spellbinder Bracers
@@ -263,9 +275,11 @@ GoldScout-export 6^j067xb6qn07d^19
 @i^274043^Irradiated Shield
 @i^279276^Mathystral Amulet Fragment
 @i^280911^Spiked Collar
+@q^159^1:0:0
 @q^729^1:7:1
 @q^730^1:7:1
 @q^750^1:12:0
+@q^752^1:12:0
 @q^755^0:15:0
 @q^769^1:7:1
 @q^770^0:15:0
@@ -278,8 +292,10 @@ GoldScout-export 6^j067xb6qn07d^19
 @q^1212^0:15:0
 @q^1213^1:4:0
 @q^1288^1:7:1
+@q^1364^0:4:0
 @q^1366^0:4:0
 @q^1368^0:4:0
+@q^1372^0:4:0
 @q^1377^0:4:0
 @q^1378^0:4:0
 @q^1475^1:7:1
@@ -302,7 +318,9 @@ GoldScout-export 6^j067xb6qn07d^19
 @q^1820^0:2:0
 @q^1821^0:2:0
 @q^1831^0:2:0
+@q^2070^1:0:0
 @q^2210^0:4:0
+@q^2211^0:4:0
 @q^2216^0:4:0
 @q^2221^0:4:0
 @q^2290^1:0:0
@@ -310,9 +328,13 @@ GoldScout-export 6^j067xb6qn07d^19
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2633^1:0:0
+@q^2649^0:4:0
 @q^2650^0:4:0
+@q^2651^0:4:0
+@q^2652^0:4:0
 @q^2653^0:4:0
 @q^2654^0:4:0
+@q^2656^0:4:0
 @q^2672^1:7:1
 @q^2674^1:7:1
 @q^2675^1:7:1
@@ -330,6 +352,7 @@ GoldScout-export 6^j067xb6qn07d^19
 @q^3174^1:7:1
 @q^3300^0:15:0
 @q^3357^1:7:1
+@q^3365^0:4:0
 @q^3385^1:0:0
 @q^3611^2:9:0
 @q^3643^1:4:0
@@ -2703,10 +2726,11 @@ GoldScout-export 6^j067xb6qn07d^19
 @c^285280^
 @c^285281^
 @c^286152^
-@a^6^149:5
+@a^6^129:1,149:8
+@a^38^190:15,191:4
 @a^69^149:3
-@a^257^149:3
-@a^299^149:7,169:2
+@a^257^129:7,149:6
+@a^299^149:9,169:2
 @a^423^221:1,241:3,242:4,262:6
 @a^441^244:1
 @a^442^262:2,263:1,280:3,282:1,300:3,301:6,320:1,321:2

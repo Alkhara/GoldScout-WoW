@@ -1,4 +1,4 @@
-GoldScout-export 6^h3h9oz6x9nby^12
+GoldScout-export 6^h3h9oz6x9nby^13
 587^5^0^33^34^1434^0.3053^0.1815^5^Bloodscalp Warrior^1519:2:2,1520:1:1,1710:1:1,2732:1:1,3901:3:3,3915:1:1,4306:3:6,7367:1:1^
 588^8^0^34^35^1434^0.2449^0.1193^8^Bloodscalp Scout^1519:2:2,2749:1:1,3784:1:1,3795:1:1,3796:1:1,3915:2:2,4306:4:7^
 595^10^0^34^35^1434^0.2481^0.1221^10^Bloodscalp Hunter^1519:3:3,1725:1:1,2592:1:1,2740:1:1,3795:1:1,3915:1:1,4306:3:4,4338:1:1,277957:1:1^
@@ -52,8 +52,9 @@ GoldScout-export 6^h3h9oz6x9nby^12
 2251^4^0^33^34^1416^0.3740^0.6710^4^Giant Yeti^1710:1:1^
 2269^12^0^26^27^1424^0.2907^0.5687^12^Hillsbrad Miner^1205:1:1,1827:1:1,1830:1:1,4306:2:3,248706:1:1^
 2305^1^0^30^30^1424^0.3114^0.5624^1^Foreman Bonds^422:1:1,4306:1:2^
-2344^2^0^28^29^1424^0.7022^0.7340^2^Dun Garok Mountaineer^2786:1:1^
-2345^1^0^29^29^1424^0.7011^0.7240^1^Dun Garok Rifleman^6611:1:1^
+2344^19^0^28^29^1424^0.7025^0.7550^19^Dun Garok Mountaineer^1757:1:1,1759:1:1,1825:1:1,1827:1:1,2592:1:2,2786:1:1,4306:4:9,4542:1:1^
+2345^14^0^29^30^1424^0.6997^0.7607^14^Dun Garok Rifleman^929:1:1,1205:1:1,1831:1:1,4306:4:10,4542:1:1,4724:1:1,6397:1:1,6597:1:1,6611:1:1^
+2346^2^0^29^30^1424^0.7089^0.7497^2^Dun Garok Priest^1804:1:1,3693:1:1,12008:1:1^
 2372^1^0^27^27^1424^0.6461^0.6167^1^Mudsnout Gnoll^^
 2373^1^0^27^27^1424^0.6503^0.6042^1^Mudsnout Shaman^2221:1:1,4306:1:1^
 2406^3^0^33^33^1416^0.3090^0.7257^3^Mountain Lion^3731:1:1,5810:1:1,7412:1:1,248707:1:1^
@@ -168,6 +169,7 @@ GoldScout-export 6^h3h9oz6x9nby^12
 @i^729^Stringy Vulture Meat
 @i^770^Pointy Crocolisk Tooth
 @i^878^Fist-sized Spinneret
+@i^929^Healing Potion
 @i^1074^Hard Spider Leg Tip
 @i^1081^Crisp Spider Meat
 @i^1205^Melon Juice
@@ -190,8 +192,11 @@ GoldScout-export 6^h3h9oz6x9nby^12
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
 @i^1725^Large Knapsack
+@i^1757^Reinforced Chain Cloak
+@i^1759^Reinforced Chain Pants
 @i^1761^Reinforced Chain Vest
 @i^1780^Cross-stitched Sandals
+@i^1804^Tough Leather Boots
 @i^1807^Tough Leather Gloves
 @i^1810^Tough Leather Armor
 @i^1825^Bulky Bludgeon
@@ -199,6 +204,7 @@ GoldScout-export 6^h3h9oz6x9nby^12
 @i^1828^Stone War Axe
 @i^1829^Short Cutlass
 @i^1830^Long Bastard Sword
+@i^1831^Oaken War Staff
 @i^1990^Ballast Maul of the Prophet
 @i^2221^Targe Shield
 @i^2251^Gooey Spider Leg
@@ -229,6 +235,7 @@ GoldScout-export 6^h3h9oz6x9nby^12
 @i^3399^Vulture Talon
 @i^3667^Tender Crocolisk Meat
 @i^3685^Raptor Egg
+@i^3693^Humbert's Sword
 @i^3708^Helcular's Rod
 @i^3712^Turtle Meat
 @i^3731^Lion Meat
@@ -279,6 +286,7 @@ GoldScout-export 6^h3h9oz6x9nby^12
 @i^4585^Dripping Spider Mandible
 @i^4586^Smooth Raptor Skin
 @i^4607^Delicious Cave Mold
+@i^4724^Humbert's Helm
 @i^4726^Chief Brigadier Cloak
 @i^5113^Mark of the Syndicate
 @i^5114^Severed Talon
@@ -309,7 +317,9 @@ GoldScout-export 6^h3h9oz6x9nby^12
 @i^6362^Raw Rockscale Cod
 @i^6386^Glimmering Mail Legguards
 @i^6388^Glimmering Mail Pauldrons
+@i^6397^Emblazoned Gloves
 @i^6438^Dull Elemental Bracer
+@i^6597^Battleforge Shoulderguards of the Beast
 @i^6611^Sage's Sash of the Channeler
 @i^6616^Sage's Pants of the Elder
 @i^6893^Workshop Key
@@ -335,6 +345,7 @@ GoldScout-export 6^h3h9oz6x9nby^12
 @i^11384^Broken Basilisk Teeth
 @i^11386^Squishy Basilisk Eye
 @i^11416^Delicate Ribcage
+@i^12008^Savannah Ring of Intellect
 @i^12037^Mystery Meat
 @i^12184^Raptor Flesh
 @i^12202^Tiger Meat
@@ -387,6 +398,7 @@ GoldScout-export 6^h3h9oz6x9nby^12
 @q^729^1:7:1
 @q^770^0:15:0
 @q^878^0:7:0
+@q^929^1:0:0
 @q^1074^0:15:0
 @q^1081^1:7:1
 @q^1205^1:0:0
@@ -409,8 +421,11 @@ GoldScout-export 6^h3h9oz6x9nby^12
 @q^1708^1:0:0
 @q^1710^1:0:0
 @q^1725^1:1:0
+@q^1757^0:4:0
+@q^1759^0:4:0
 @q^1761^0:4:0
 @q^1780^0:4:0
+@q^1804^0:4:0
 @q^1807^0:4:0
 @q^1810^0:4:0
 @q^1825^0:2:0
@@ -418,6 +433,7 @@ GoldScout-export 6^h3h9oz6x9nby^12
 @q^1828^0:2:0
 @q^1829^0:2:0
 @q^1830^0:2:0
+@q^1831^0:2:0
 @q^1990^2:2:0
 @q^2221^0:4:0
 @q^2251^1:7:1
@@ -448,6 +464,7 @@ GoldScout-export 6^h3h9oz6x9nby^12
 @q^3399^0:15:0
 @q^3667^1:7:1
 @q^3685^1:7:1
+@q^3693^1:12:0
 @q^3708^1:12:0
 @q^3712^1:7:1
 @q^3731^1:7:1
@@ -498,6 +515,7 @@ GoldScout-export 6^h3h9oz6x9nby^12
 @q^4585^0:15:0
 @q^4586^0:15:0
 @q^4607^1:0:0
+@q^4724^2:4:0
 @q^4726^2:4:0
 @q^5113^0:15:0
 @q^5114^0:15:0
@@ -528,7 +546,9 @@ GoldScout-export 6^h3h9oz6x9nby^12
 @q^6362^1:7:1
 @q^6386^2:4:0
 @q^6388^2:4:0
+@q^6397^2:4:0
 @q^6438^0:15:0
+@q^6597^2:4:0
 @q^6611^2:4:0
 @q^6616^2:4:0
 @q^6893^1:13:0
@@ -554,6 +574,7 @@ GoldScout-export 6^h3h9oz6x9nby^12
 @q^11384^0:15:0
 @q^11386^0:15:0
 @q^11416^0:15:0
+@q^12008^2:4:0
 @q^12037^1:7:1
 @q^12184^1:7:1
 @q^12202^1:7:1
@@ -1419,8 +1440,9 @@ GoldScout-export 6^h3h9oz6x9nby^12
 @a^2251^267:4
 @a^2269^205:1,206:2,225:8,226:1
 @a^2305^226:1
-@a^2344^294:2
-@a^2345^294:1
+@a^2344^294:9,313:8,314:2
+@a^2345^293:1,294:4,313:4,314:5
+@a^2346^294:1,314:1
 @a^2372^252:1
 @a^2373^253:1
 @a^2406^266:1,286:1,305:1

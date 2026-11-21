@@ -1,8 +1,9 @@
-GoldScout-export 6^ndxu3624fwqe^10
+GoldScout-export 6^ndxu3624fwqe^11
 667^9^0^39^40^1434^0.4746^0.3966^9^Guerrier Skullsplitter^1477:1:1,1520:2:2,1524:4:4,2735:1:1,3786:1:1,4306:2:4^
 669^10^0^41^42^1434^0.4602^0.4117^10^Chasseur Skullsplitter^1520:4:4,1524:5:5,2734:1:1,4018:1:1,4306:1:1,4338:4:8,8153:1:3^
 670^9^0^41^42^1434^0.4577^0.4177^9^Sorcier-docteur Skullsplitter^1520:2:2,1524:1:1,1625:1:1,2466:2:2,4338:3:5,8151:1:1^
 672^1^0^44^44^1434^0.4771^0.4201^1^Chasseur d'esprit Skullsplitter^1520:1:1^
+691^7^0^36^37^1434^0.2160^0.2408^7^Elémentaire d'eau mineur^1706:2:2,3923:3:3,4791:3:11,7070:2:2^
 696^10^0^39^40^1434^0.4667^0.3955^10^Lanceur de haches Skullsplitter^1520:3:3,1524:2:2,1710:1:1,2735:1:1,2749:1:1,3771:1:1,4306:4:10^
 780^10^0^39^40^1434^0.4622^0.3976^10^Mystique Skullsplitter^1520:3:3,1524:3:3,1710:1:1,2466:2:2,2735:1:1,4043:1:1,4306:1:1,4338:1:1,8151:1:1,8153:1:1,8156:1:1,213127:1:1^
 782^8^0^41^42^1434^0.4621^0.4138^8^Eclaireur Skullsplitter^1520:1:1,1524:3:3,2738:1:1,2750:1:1,4025:1:1,4306:2:3,4338:2:2,4599:1:1,15244:1:1^
@@ -15,6 +16,7 @@ GoldScout-export 6^ndxu3624fwqe^10
 2586^4^0^30^31^1417^0.3217^0.2947^4^Malandrin du Syndicat^262888:1:1^
 2587^1^0^32^33^1417^0.3247^0.3113^1^Eclaireur du Syndicat^^
 2589^5^0^31^32^1417^0.3307^0.3074^5^Mercenaire du Syndicat^2592:1:2,4306:1:1,5113:1:1^
+2635^1^0^38^38^1434^0.2537^0.1971^1^Ancien crocilisque marin^770:1:1,3667:1:1,4105:1:1^
 3975^1^0^0^0^0^0.0000^0.0000^0^^7718:1:1^
 3976^1^0^0^0^0^0.0000^0.0000^0^^7723:1:1^
 3977^2^0^0^0^0^0.0000^0.0000^0^^7720:1:1,7722:1:1^
@@ -58,11 +60,27 @@ GoldScout-export 6^ndxu3624fwqe^10
 5184^1^0^35^36^1445^0.4522^0.2442^1^Sentinelle de Theramore^^
 6575^4^0^0^0^0^0.0000^0.0000^0^^4306:1:2^
 14123^5^0^42^43^1446^0.6753^0.2239^5^Mordeuse mâchoire d'acier^3712:3:3,4555:3:3,4556:2:2,4603:1:1,7973:1:1,14230:1:1^
+258792^7^0^0^0^0^0.0000^0.0000^0^^3787:1:1,4306:2:4,11986:1:1,270343:2:2^
+258797^3^0^0^0^0^0.0000^0.0000^0^^1710:1:1,3786:1:1,4306:2:4,248693:1:1^
+258799^4^0^0^0^0^0.0000^0.0000^0^^4306:1:3,213545:1:1^
+258804^1^0^0^0^0^0.0000^0.0000^0^^^
+258818^1^0^0^0^0^0.0000^0.0000^0^^5569:1:1^
+258905^1^0^0^0^0^0.0000^0.0000^0^^274600:1:1^
+258924^1^0^0^0^0^0.0000^0.0000^0^^274602:1:1^
+259979^7^0^0^0^0^0.0000^0.0000^0^^3814:1:1,270333:4:4^
+259981^3^0^0^0^0^0.0000^0.0000^0^^4338:1:3,270333:1:1^
+259987^5^0^0^0^0^0.0000^0.0000^0^^3778:1:1,4306:3:3^
+260042^1^0^0^0^0^0.0000^0.0000^0^^274605:1:1^
+260202^1^0^0^0^0^0.0000^0.0000^0^^274606:1:1,276894:1:1^
+260243^1^0^0^0^0^0.0000^0.0000^0^^271718:1:1,274609:1:1^
+260353^1^0^0^0^0^0.0000^0.0000^0^^4306:1:3^
+263196^5^0^0^0^0^0.0000^0.0000^0^^3786:1:1,4059:1:1,4306:2:5,270343:3:3^
 @i^770^Croc pointu de crocilisque
 @i^1477^Parchemin d'Agilité II
 @i^1520^Sueur de troll
 @i^1524^Défense de Skullsplitter
 @i^1625^Flamberge exquise de la baleine
+@i^1706^Eclats de Profondazur
 @i^1707^Brie de Hurlevent
 @i^1710^Potion de soins supérieure
 @i^1990^Maillet lesté d'hiérophante
@@ -77,18 +95,24 @@ GoldScout-export 6^ndxu3624fwqe^10
 @i^3667^Viande de crocilisque tendre
 @i^3712^Viande de tortue
 @i^3771^Jarret de cochon sauvage
+@i^3778^Arc composite de sarcasme
 @i^3780^Mousquet à canon long
 @i^3782^Grand gourdin de guerre
 @i^3786^Miséricorde rutilante
+@i^3787^Gourdin en pierre
 @i^3796^Gants entrelacés
 @i^3807^Tunique en cuir durci
+@i^3814^Protège-épaules doublentins
 @i^3820^Etouffante
+@i^3923^Bracelets d'élémentaire d'eau
 @i^4018^Claymore affûtée
 @i^4024^Bâton de guerre lourd
 @i^4025^Arc long équilibré
 @i^4038^Robe nocturne
 @i^4043^Brassards de l'aurore
+@i^4059^Brassards glyphés
 @i^4096^Poil de gorille grossier
+@i^4105^Peau d'ancien crocilisque
 @i^4306^Etoffe de soie
 @i^4338^Etoffe de tisse-mage
 @i^4424^Parchemin d'Esprit III
@@ -101,7 +125,9 @@ GoldScout-export 6^ndxu3624fwqe^10
 @i^4587^Plumes de raptor tribales
 @i^4599^Jambonneau traité
 @i^4603^Jaune-queue tacheté cru
+@i^4791^Eau enchantée
 @i^5113^Marque du Syndicat
+@i^5569^Algue
 @i^5785^Ecailles de murloc épaisses
 @i^5847^Tête d'Aileron boueux
 @i^5883^Langue fourchue de Rochefange
@@ -109,6 +135,7 @@ GoldScout-export 6^ndxu3624fwqe^10
 @i^6359^Lutjan de nagefeu
 @i^6362^Morue rochécaille crue
 @i^6415^Robe de l'aurore
+@i^7070^Eau élémentaire
 @i^7437^Crispins du crépuscule de protection contre le givre
 @i^7454^Cuirasse de chevalier de la baleine
 @i^7718^Epaulière d'Herod
@@ -123,6 +150,7 @@ GoldScout-export 6^ndxu3624fwqe^10
 @i^8365^Truite tête-mithril crue
 @i^9898^Cape jazeran d'ancienneté
 @i^10331^Gantelets écarlates
+@i^11986^Anneau de thallium de régénération
 @i^12184^Chair de raptor
 @i^13422^Anguille pierre-écaille
 @i^13754^Barracuda luisant cru
@@ -146,13 +174,24 @@ GoldScout-export 6^ndxu3624fwqe^10
 @i^213546^Parchemin : TAGADAAA
 @i^216483^Massette fânécorce
 @i^248692^Caisse détournée : minerai d'expert
+@i^248693^Caisse détournée : textiles d'expert
 @i^262888^Commission de compagnon scellée
+@i^270333^Artéfact imprégné de magie vaudoue
+@i^270343^Fétiche d'I'lalai
+@i^271718^Bottes de fer de Linken
+@i^274600^Entraves de berserk
+@i^274602^Jambières de pansaumâtre
+@i^274605^Écharpe saumâtre
+@i^274606^Bâton ensanglantéchine
+@i^274609^Couronne de fléau des serpents
+@i^276894^Idole antique des Gurubashi
 @i^280203^Épée d'entraînement de Jameson
 @q^770^0:15:0
 @q^1477^1:0:0
 @q^1520^0:15:0
 @q^1524^1:12:0
 @q^1625^2:2:0
+@q^1706^0:15:0
 @q^1707^1:0:0
 @q^1710^1:0:0
 @q^1990^2:2:0
@@ -167,18 +206,24 @@ GoldScout-export 6^ndxu3624fwqe^10
 @q^3667^1:7:1
 @q^3712^1:7:1
 @q^3771^1:0:0
+@q^3778^0:2:0
 @q^3780^0:2:0
 @q^3782^0:2:0
 @q^3786^0:2:0
+@q^3787^0:2:0
 @q^3796^0:4:0
 @q^3807^0:4:0
+@q^3814^0:4:0
 @q^3820^1:7:1
+@q^3923^1:12:0
 @q^4018^0:2:0
 @q^4024^0:2:0
 @q^4025^0:2:0
 @q^4038^2:4:0
 @q^4043^2:4:0
+@q^4059^2:4:0
 @q^4096^1:15:0
+@q^4105^1:12:0
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4424^1:0:0
@@ -191,7 +236,9 @@ GoldScout-export 6^ndxu3624fwqe^10
 @q^4587^0:15:0
 @q^4599^1:0:0
 @q^4603^1:7:1
+@q^4791^1:0:0
 @q^5113^0:15:0
+@q^5569^0:15:0
 @q^5785^1:7:1
 @q^5847^1:12:0
 @q^5883^1:12:0
@@ -199,6 +246,7 @@ GoldScout-export 6^ndxu3624fwqe^10
 @q^6359^1:7:1
 @q^6362^1:7:1
 @q^6415^2:4:0
+@q^7070^1:7:1
 @q^7437^2:4:0
 @q^7454^2:4:0
 @q^7718^3:4:0
@@ -213,6 +261,7 @@ GoldScout-export 6^ndxu3624fwqe^10
 @q^8365^1:7:1
 @q^9898^2:4:0
 @q^10331^3:4:0
+@q^11986^2:4:0
 @q^12184^1:7:1
 @q^13422^1:7:1
 @q^13754^1:7:1
@@ -236,7 +285,17 @@ GoldScout-export 6^ndxu3624fwqe^10
 @q^213546^1:0:0
 @q^216483^1:0:0
 @q^248692^1:0:1
+@q^248693^1:0:1
 @q^262888^3:0:0
+@q^270333^1:12:0
+@q^270343^1:12:0
+@q^271718^3:4:0
+@q^274600^3:4:0
+@q^274602^3:4:0
+@q^274605^3:4:0
+@q^274606^3:2:0
+@q^274609^3:4:0
+@q^276894^1:12:0
 @q^280203^1:12:0
 @m^1416^Montagnes d'Alterac
 @m^1417^Hautes-terres d'Arathi
@@ -933,6 +992,7 @@ GoldScout-export 6^ndxu3624fwqe^10
 @a^669^149:3,169:7
 @a^670^169:9
 @a^672^169:1
+@a^691^84:7
 @a^696^148:1,149:5,169:4
 @a^780^148:1,149:5,169:4
 @a^782^149:1,169:7
@@ -945,6 +1005,7 @@ GoldScout-export 6^ndxu3624fwqe^10
 @a^2586^106:2,126:2
 @a^2587^126:1
 @a^2589^106:1,126:4
+@a^2635^65:1
 @a^4281^156:1
 @a^4342^89:1
 @a^4343^166:1,167:1

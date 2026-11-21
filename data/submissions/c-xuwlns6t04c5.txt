@@ -1,4 +1,4 @@
-GoldScout-export 5^xuwlns6t04c5^5
+GoldScout-export 6^xuwlns6t04c5^6
 92^2^0^39^40^1418^0.4225^0.8220^2^Rock Elemental^4552:1:1,4553:1:1,4784:1:1,8150:1:1^
 674^2^0^41^41^1434^0.4138^0.4312^2^Venture Co. Strip Miner^1630:1:1^
 678^2^0^44^44^1434^0.5132^0.2802^2^Mosh'Ogg Mauler^4338:1:4^
@@ -26,6 +26,9 @@ GoldScout-export 5^xuwlns6t04c5^5
 2736^2^0^42^44^1418^0.1404^0.8663^2^Greater Rock Elemental^4554:1:1,4784:2:2,7912:1:1,8150:2:2^
 2739^1^0^35^36^1418^0.5310^0.3030^1^Shadowforge Tunneler^^
 2740^3^0^36^37^1418^0.5195^0.3302^3^Shadowforge Darkweaver^^
+2742^2^0^39^39^1418^0.4157^0.2829^2^Shadowforge Chanter^4306:1:2^
+2743^6^0^38^39^1418^0.4276^0.2982^6^Shadowforge Warrior^4306:1:3,4544:1:1,6412:1:1^
+2745^1^0^42^42^1418^0.4150^0.2825^1^Ambassador Infernus^4621:1:1^
 2752^1^0^45^45^1418^0.1556^0.9118^1^Rumbler^9966:1:1^
 2829^8^0^35^37^1418^0.6080^0.3416^8^Starving Buzzard^1464:2:2,3404:4:4,5116:1:1,5636:1:1,5829:1:1,7847:2:2,11416:1:1,11418:1:1,12037:6:6^
 2830^5^0^37^39^1418^0.5569^0.5771^5^Buzzard^1464:2:2,3404:1:1,5116:2:2,7847:2:2,12037:4:4^
@@ -123,12 +126,14 @@ GoldScout-export 5^xuwlns6t04c5^5
 @i^4338^Mageweave Cloth
 @i^4419^Scroll of Intellect III
 @i^4539^Goldenbark Apple
+@i^4544^Mulgore Spice Bread
 @i^4552^Smooth Stone Chip
 @i^4553^Jagged Piece of Stone
 @i^4554^Shiny Polished Stone
 @i^4582^Soft Bushy Tail
 @i^4583^Thick Furry Mane
 @i^4608^Raw Black Truffle
+@i^4621^Ambassador Infernus' Bracer
 @i^4634^Iron Lockbox
 @i^4635^Hammertoe's Amulet
 @i^4784^Lifeless Stone
@@ -136,6 +141,7 @@ GoldScout-export 5^xuwlns6t04c5^5
 @i^5636^Delicate Feather
 @i^5637^Large Fang
 @i^5829^Razor-sharp Beak
+@i^6412^Chief Brigadier Boots
 @i^6420^Glyphed Boots
 @i^6431^Imperial Leather Boots
 @i^6530^Nightcrawlers
@@ -247,12 +253,14 @@ GoldScout-export 5^xuwlns6t04c5^5
 @q^4338^1:7:1
 @q^4419^1:0:0
 @q^4539^1:0:0
+@q^4544^1:0:0
 @q^4552^0:15:0
 @q^4553^0:15:0
 @q^4554^0:15:0
 @q^4582^1:12:0
 @q^4583^0:15:0
 @q^4608^1:0:0
+@q^4621^1:12:0
 @q^4634^2:15:0
 @q^4635^1:12:0
 @q^4784^0:15:0
@@ -260,6 +268,7 @@ GoldScout-export 5^xuwlns6t04c5^5
 @q^5636^0:15:0
 @q^5637^1:7:1
 @q^5829^0:15:0
+@q^6412^2:4:0
 @q^6420^2:4:0
 @q^6431^2:4:0
 @q^6530^1:0:0
@@ -1046,6 +1055,9 @@ GoldScout-export 5^xuwlns6t04c5^5
 @a^2736^342:2
 @a^2739^130:1
 @a^2740^130:3
+@a^2742^108:2
+@a^2743^108:3,128:3
+@a^2745^108:1
 @a^2752^363:1
 @a^2829^110:1,111:1,132:4,172:2
 @a^2830^210:2,212:1,250:1,271:1

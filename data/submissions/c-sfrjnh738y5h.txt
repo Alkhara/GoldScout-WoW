@@ -1,12 +1,14 @@
-GoldScout-export 6^sfrjnh738y5h^12
+GoldScout-export 6^sfrjnh738y5h^13
 590^1^0^14^14^1436^0.4542^0.7041^1^Defias Looter^^
 1120^1^0^8^8^1426^0.6980^0.4063^1^Frostmane Troll^^
+1121^1^0^9^9^1426^0.7012^0.3955^1^Frostmane Snowstrider^^
 1922^2^0^7^7^1429^0.6074^0.7047^2^Gray Forest Wolf^2672:1:1,3300:1:1^
 2347^1^0^40^40^1424^0.8121^0.3448^1^Wild Gryphon^213526:1:1^
 2408^1^0^30^31^1416^0.3071^0.3664^1^Snapjaw^5524:1:1^
 2592^6^0^38^39^1417^0.3698^0.5956^6^Rumbling Exile^4552:2:2,4553:2:2,4784:3:3,7067:1:1,7912:3:3,12030:1:1^
+2611^1^0^42^42^1417^0.4470^0.5626^1^Fozruk^7909:1:1^
 2748^1^0^0^0^0^0.0000^0.0000^0^^11118:1:1,274432:1:1^
-2762^10^0^38^39^1417^0.5179^0.5070^10^Thundering Exile^4070:1:1,4480:7:7,7069:1:1,7556:1:1^
+2762^36^0^38^39^1417^0.5186^0.5075^36^Thundering Exile^4070:1:1,4480:18:18,7069:4:4,7556:1:1,248691:1:1^
 4640^3^0^33^34^1443^0.6888^0.8166^3^Magram Wrangler^6067:1:1^
 4642^3^0^34^35^1443^0.6902^0.7955^3^Magram Stormer^4306:2:2,6067:2:2^
 4644^1^0^36^36^1443^0.6679^0.7994^1^Magram Marauder^^
@@ -249,6 +251,7 @@ GoldScout-export 6^sfrjnh738y5h^12
 @i^7483^Ranger Cloak of the Bandit
 @i^7556^Twilight Orb of the Eagle
 @i^7666^Shattered Necklace
+@i^7909^Aquamarine
 @i^7912^Solid Stone
 @i^7973^Big-mouth Clam
 @i^8009^Dentrium Power Stone
@@ -300,6 +303,7 @@ GoldScout-export 6^sfrjnh738y5h^12
 @i^213545^Scroll: PEATCHY ATTAX
 @i^216956^Torn Letter
 @i^248690^Waylaid Crate: Earthly Expert Herbs
+@i^248691^Waylaid Crate: Flowering Expert Herbs
 @i^248692^Waylaid Crate: Expert Ore
 @i^248693^Waylaid Crate: Expert Textiles
 @i^248707^Waylaid Crate: Journeyman Parts
@@ -451,6 +455,7 @@ GoldScout-export 6^sfrjnh738y5h^12
 @q^7483^2:4:0
 @q^7556^2:4:0
 @q^7666^2:12:0
+@q^7909^2:7:1
 @q^7912^1:7:1
 @q^7973^1:7:0
 @q^8009^1:12:0
@@ -502,6 +507,7 @@ GoldScout-export 6^sfrjnh738y5h^12
 @q^213545^1:0:0
 @q^216956^1:12:0
 @q^248690^1:0:1
+@q^248691^1:0:1
 @q^248692^1:0:1
 @q^248693^1:0:1
 @q^248707^2:0:1
@@ -1317,11 +1323,13 @@ GoldScout-export 6^sfrjnh738y5h^12
 @c^279990^
 @a^590^289:1
 @a^1120^173:1
+@a^1121^154:1
 @a^1922^292:2
 @a^2347^136:1
 @a^2408^146:1
 @a^2592^227:4,247:2
-@a^2762^190:3,210:7
+@a^2611^228:1
+@a^2762^190:9,210:27
 @a^4640^333:2,334:1
 @a^4642^313:1,333:2
 @a^4644^313:1

@@ -1,4 +1,4 @@
-GoldScout-export 6^2qeegg8yhff6^10
+GoldScout-export 6^2qeegg8yhff6^11
 3^3^0^24^25^1431^0.2483^0.3319^3^Flesh Eater^1772:1:1,2592:1:1^
 48^8^0^21^22^1431^0.7956^0.7226^8^Skeletal Warrior^1205:2:2,1819:1:1,2378:3:3,2589:1:1,2592:3:5,2794:1:1,3385:1:1,4306:1:1,4606:1:1^
 202^39^0^23^24^1431^0.2306^0.4465^39^Skeletal Horror^929:1:1,1205:1:1,1598:6:6,2378:3:3,2589:1:2,2592:9:12,4606:1:1,4998:1:1,211784:1:1,211854:1:1^
@@ -270,6 +270,7 @@ GoldScout-export 6^2qeegg8yhff6^10
 @i^4542^Moist Cornbread
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
+@i^4603^Raw Spotted Yellowtail
 @i^4604^Forest Mushroom Cap
 @i^4606^Spongy Morel
 @i^4632^Ornate Bronze Lockbox
@@ -292,8 +293,11 @@ GoldScout-export 6^2qeegg8yhff6^10
 @i^6303^Raw Slitherskin Mackerel
 @i^6308^Raw Bristle Whisker Catfish
 @i^6353^Small Chest
+@i^6355^Sturdy Locked Chest
 @i^6358^Oily Blackmouth
+@i^6359^Firefin Snapper
 @i^6361^Raw Rainbow Fin Albacore
+@i^6362^Raw Rockscale Cod
 @i^6395^Silver-thread Amice
 @i^6438^Dull Elemental Bracer
 @i^6443^Deviate Hide
@@ -471,6 +475,7 @@ GoldScout-export 6^2qeegg8yhff6^10
 @q^4542^1:0:0
 @q^4555^0:15:0
 @q^4556^0:15:0
+@q^4603^1:7:1
 @q^4604^1:0:0
 @q^4606^1:0:0
 @q^4632^2:15:0
@@ -493,8 +498,11 @@ GoldScout-export 6^2qeegg8yhff6^10
 @q^6303^1:7:1
 @q^6308^1:7:1
 @q^6353^1:15:0
+@q^6355^1:15:0
 @q^6358^1:7:1
+@q^6359^1:7:1
 @q^6361^1:7:1
+@q^6362^1:7:1
 @q^6395^2:4:0
 @q^6438^0:15:0
 @q^6443^1:12:0
@@ -576,6 +584,7 @@ GoldScout-export 6^2qeegg8yhff6^10
 @m^1429^Elwynn Forest
 @m^1431^Duskwood
 @m^1433^Redridge Mountains
+@m^1434^Stranglethorn Vale
 @m^1439^Darkshore
 @m^1440^Ashenvale
 @m^1442^Stonetalon Mountains
@@ -916,6 +925,7 @@ GoldScout-export 6^2qeegg8yhff6^10
 @a^272291^164:1
 @f^1413^0^23^81^3820:3:7,6289:7:7,6291:1:1,6308:2:2,6522:9:9,20709:1:2^149:19,152:4
 @f^1433^0^7^101^251524:7:7^234:4,235:3
+@f^1434^0^23^115^3820:1:1,4603:3:3,6355:1:1,6358:4:4,6359:2:2,6362:12:12^305:23
 @f^1439^0^13^70^6303:4:4,6358:1:1,6361:6:6,12238:2:2^166:13
 @f^1440^0^14^108^21071:14:14^186:7,187:7
 @f^1453^0^19^95^6303:9:9,6353:1:1,6358:3:3,6361:6:6^224:19
