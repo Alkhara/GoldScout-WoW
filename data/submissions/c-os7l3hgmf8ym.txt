@@ -1,4 +1,4 @@
-GoldScout-export 5^os7l3hgmf8ym^7
+GoldScout-export 6^os7l3hgmf8ym^8
 428^1^0^18^19^1433^0.4573^0.3329^1^Terrorkondor^1080:1:1,4776:1:1,6889:1:1^
 430^1^0^19^19^1433^0.2260^0.2134^1^Mystiker der Rotkammgnolle^^
 435^16^0^24^25^1433^0.2371^0.1245^16^Held der Blackrock^929:1:1,1205:1:1,1820:1:1,2592:6:8,3014:4:4^
@@ -8,11 +8,20 @@ GoldScout-export 5^os7l3hgmf8ym^7
 547^6^0^16^17^1433^0.3278^0.3128^6^Großer Geiferzahn^723:3:3,769:4:7,771:2:2,2677:2:2,3172:2:2^
 580^1^0^20^21^1433^0.1564^0.2873^1^Zwangsarbeiter der Rotkammgnolle^^
 615^8^0^23^24^1433^0.2852^0.1011^8^Fährtenleser der Blackrock^1445:1:1,2589:1:2,2592:2:3,3014:4:4,3770:1:1^
+1009^1^0^23^23^1437^0.3883^0.3439^1^Nebelwirker der Moosfelle^^
+1010^3^0^22^23^1437^0.3883^0.3434^3^Moorläufer der Moosfelle^^
+1011^1^0^24^24^1437^0.3887^0.3440^1^Fallensteller der Moosfelle^^
+1020^10^0^22^23^1437^0.2978^0.4563^10^Scheckiger Raptor^1697:1:1,3685:2:2,5635:2:2,14171:1:1,250187:1:1,262888:1:1^
+1021^8^0^24^25^1437^0.2605^0.4737^8^Scheckiger Kreischer^1697:5:5,3180:1:1,3685:3:3^
+1022^1^0^25^26^1437^0.3470^0.4898^1^Scheckige Sensenklaue^^
+1023^5^0^26^27^1437^0.3440^0.4805^5^Scheckiger Scharfzahn^1696:1:1,3685:2:2^
 1172^5^0^10^11^1432^0.3836^0.1454^5^Gezücht der Tunnelratten^2138:1:1^
 1176^1^0^11^12^1432^0.3651^0.2382^1^Futterwühler der Tunnelratten^2214:1:1^
 1186^1^0^11^11^1432^0.2728^0.1089^1^Alter Schwarzbär^3173:1:1^
 1195^1^0^10^11^1432^0.3184^0.1753^1^Waldlauerer^3174:1:1^
 1202^1^0^11^12^1432^0.3642^0.2351^1^Kobold der Tunnelratten^2589:1:2^
+1400^2^0^24^24^1437^0.4204^0.3182^2^Sumpflandkrokilisk^3667:1:1^
+1417^2^0^21^22^1437^0.3291^0.3670^2^Junger Sumpflandkrokilisk^3667:1:1^
 1909^2^0^18^19^1421^0.6670^0.4539^2^Seepirscher der Finsterflossen^^
 2349^4^0^24^25^1424^0.8004^0.4756^4^Riesiger Mooskrabbler^878:1:1,1081:3:3,2251:1:1,4428:1:1^
 2350^1^0^20^21^1424^0.7883^0.4934^1^Waldmooskrabbler^2251:1:1,3182:1:1^
@@ -47,6 +56,7 @@ GoldScout-export 5^os7l3hgmf8ym^7
 4021^1^0^25^25^1442^0.3922^0.1935^1^Ätzblutsaftbestie^1823:1:1^
 4022^2^0^23^23^1442^0.3770^0.4473^2^Harpyie der Blutfurien^2592:1:2^
 4044^2^0^24^24^1442^0.3727^0.4960^2^Geschwärzter Basilisk^11385:1:1^
+4062^1^0^31^31^1417^0.4920^0.8872^1^Bombenschütze der Dunkeleisenzwerge^4306:1:2^
 4128^1^0^22^22^1413^0.4701^0.7489^1^Fleischreißerpirscher^^
 4463^9^0^22^23^1433^0.2607^0.1287^9^Beschwörer der Blackrock^1205:1:1,1799:1:1,2592:3:5,3014:1:1^
 5048^1^0^0^0^0^0.0000^0.0000^0^^6445:1:1^
@@ -93,6 +103,8 @@ GoldScout-export 5^os7l3hgmf8ym^7
 @i^1445^Blackrockschulterstücke
 @i^1509^Verformte Lederweste
 @i^1511^Schwert der Bürgerlichen
+@i^1696^Geschwungene Raptorkralle
+@i^1697^Beißender Raptorzahn
 @i^1764^Segeltuchschuhe
 @i^1769^Segeltuchschulterpolster
 @i^1790^Geflickter Umhang
@@ -134,9 +146,11 @@ GoldScout-export 5^os7l3hgmf8ym^7
 @i^3401^Raue Krokiliskenschuppe
 @i^3614^Jaulers Tatze
 @i^3654^Brackwasserschild
+@i^3667^Zartes Krokiliskenfleisch
 @i^3669^Gelatineartige Schmiere
 @i^3670^Großer schleimiger Knochen
 @i^3674^Verrotteter Stiefel
+@i^3685^Raptorei
 @i^3702^Bärengallenblase
 @i^3730^Großbärenfleisch
 @i^3770^Hammelkoteletts
@@ -188,6 +202,7 @@ GoldScout-export 5^os7l3hgmf8ym^7
 @i^11406^Faulendes Bärengerippe
 @i^11407^Zerrissener Bärenpelz
 @i^13245^Kreshs Rücken
+@i^14171^Bukanier-Hose des Zauberers
 @i^14364^Mystikerschuhe
 @i^15211^Militantes Kurzschwert der Beweglichkeit
 @i^15487^Gebrauchte Tunika des heiligen Zorns
@@ -196,6 +211,7 @@ GoldScout-export 5^os7l3hgmf8ym^7
 @i^211786^Schriftrolle: CHAP BALK WELLES
 @i^248683^Abgefangene Kiste: Erz des Lehrlings
 @i^248685^Abgefangene Kiste: Kuriositäten des Lehrlings
+@i^250187^Rezept: Schmackhafte Raptorenhappen
 @i^262888^Versiegelte Verfügung des Gesellen
 @i^268518^Kopf des Barons
 @i^268535^Blutverschmiertes Insigne
@@ -222,6 +238,8 @@ GoldScout-export 5^os7l3hgmf8ym^7
 @q^1445^1:4:0
 @q^1509^0:4:0
 @q^1511^0:2:0
+@q^1696^0:15:0
+@q^1697^0:15:0
 @q^1764^0:4:0
 @q^1769^0:4:0
 @q^1790^0:4:0
@@ -263,9 +281,11 @@ GoldScout-export 5^os7l3hgmf8ym^7
 @q^3401^0:15:0
 @q^3614^1:12:0
 @q^3654^2:4:0
+@q^3667^1:7:1
 @q^3669^0:15:0
 @q^3670^0:15:0
 @q^3674^0:15:0
+@q^3685^1:7:1
 @q^3702^0:15:0
 @q^3730^1:7:1
 @q^3770^1:0:0
@@ -317,6 +337,7 @@ GoldScout-export 5^os7l3hgmf8ym^7
 @q^11406^0:15:0
 @q^11407^1:12:0
 @q^13245^3:4:0
+@q^14171^2:4:0
 @q^14364^2:4:0
 @q^15211^2:2:0
 @q^15487^2:4:0
@@ -325,6 +346,7 @@ GoldScout-export 5^os7l3hgmf8ym^7
 @q^211786^1:0:0
 @q^248683^1:0:1
 @q^248685^1:0:1
+@q^250187^1:9:0
 @q^262888^3:0:0
 @q^268518^1:12:0
 @q^268535^1:12:0
@@ -338,10 +360,12 @@ GoldScout-export 5^os7l3hgmf8ym^7
 @q^286977^3:2:0
 @m^1413^Das Brachland
 @m^1414^Kalimdor
+@m^1417^Arathihochland
 @m^1421^Silberwald
 @m^1424^Vorgebirge von Hillsbrad
 @m^1432^Loch Modan
 @m^1433^Rotkammgebirge
+@m^1437^Sumpfland
 @m^1440^Ashenvale
 @m^1442^Steinkrallengebirge
 @c^118^
@@ -1593,11 +1617,20 @@ GoldScout-export 5^os7l3hgmf8ym^7
 @a^547^88:2,108:1,128:1,162:1,163:1
 @a^580^103:1
 @a^615^24:2,26:3,44:1,46:2
+@a^1009^127:1
+@a^1010^127:3
+@a^1011^127:1
+@a^1020^165:3,167:1,185:1,186:3,187:1,204:1
+@a^1021^165:3,185:1,204:4
+@a^1022^186:1
+@a^1023^186:3,187:2
 @a^1172^47:2,48:1,67:1,87:1
 @a^1176^87:1
 @a^1186^45:1
 @a^1195^66:1
 @a^1202^87:1
+@a^1400^109:1,127:1
+@a^1417^127:1,145:1
 @a^1909^193:2
 @a^2349^192:1,197:2,216:1
 @a^2350^195:1
@@ -1622,6 +1655,7 @@ GoldScout-export 5^os7l3hgmf8ym^7
 @a^4021^67:1
 @a^4022^167:1,187:1
 @a^4044^187:1,207:1
+@a^4062^349:1
 @a^4128^289:1
 @a^4463^24:1,26:1,44:3,45:1,46:2,64:1
 @a^12922^24:1,26:1,44:3,45:1,46:2,64:1

@@ -1,4 +1,4 @@
-GoldScout-export 6^6m4tv8a5tcr3^11
+GoldScout-export 6^6m4tv8a5tcr3^12
 40^2^0^6^7^1429^0.6113^0.5141^2^Mineur kobold^^
 95^1^0^11^12^1436^0.4985^0.1968^1^Contrebandière défias^^
 114^5^0^14^15^1436^0.5135^0.2328^5^Gardien des moissons^732:2:2,814:3:3,1274:3:3,1503:1:1,6379:1:1,248702:1:1,255007:1:1^
@@ -92,7 +92,9 @@ GoldScout-export 6^6m4tv8a5tcr3^11
 4119^1^0^29^29^1441^0.5516^0.5255^1^Ancien serpent-nuage^6826:1:1,17056:1:1^
 4124^1^0^28^28^1441^0.5216^0.4423^1^Puma des pointes^^
 4128^2^0^22^23^1413^0.4859^0.7633^2^Traqueuse Jappecroc^^
-4249^1^0^29^29^1441^0.5404^0.4454^1^Grogneuse Pestepoil^^
+4249^1^0^28^29^1441^0.5404^0.4454^1^Grogneuse Pestepoil^^
+4664^2^0^31^31^1443^0.5634^0.2947^2^Saccageur de la Lame ardente^4306:1:2,20310:1:1^
+4666^2^0^31^32^1443^0.5630^0.2918^2^Lige de la corruption de la Lame ardente^^
 4798^6^0^0^0^0^0.0000^0.0000^0^^1818:1:1,2592:2:8,14162:1:1,248683:1:1^
 4805^7^0^0^0^0^0.0000^0.0000^0^^5524:4:4,12007:1:1,15503:1:1,248707:1:1^
 4807^5^0^0^0^0^0.0000^0.0000^0^^1205:1:1,1746:1:1,5524:1:1,17057:1:1^
@@ -368,6 +370,7 @@ GoldScout-export 6^6m4tv8a5tcr3^11
 @i^17056^Plume légère
 @i^17057^Ecailles de poisson brillantes
 @i^17058^Huile de poisson
+@i^20310^Peau de démon écorché
 @i^211784^Parchemin : WUBBA WUBBA
 @i^211853^Parchemin : VOCE WELL
 @i^211854^Parchemin : OMIT KESA
@@ -619,6 +622,7 @@ GoldScout-export 6^6m4tv8a5tcr3^11
 @q^17056^1:15:1
 @q^17057^1:15:0
 @q^17058^1:15:0
+@q^20310^1:12:0
 @q^211784^1:0:0
 @q^211853^1:0:0
 @q^211854^1:0:0
@@ -671,6 +675,7 @@ GoldScout-export 6^6m4tv8a5tcr3^11
 @m^1437^Les Paluns
 @m^1440^Orneval
 @m^1441^Mille pointes
+@m^1443^Désolace
 @c^118^
 @c^724^
 @c^733^
@@ -1842,6 +1847,7 @@ GoldScout-export 6^6m4tv8a5tcr3^11
 @c^273949^
 @c^273950^
 @c^273951^
+@c^274490^
 @c^274971^
 @c^274976^
 @c^275610^
@@ -2051,6 +2057,8 @@ GoldScout-export 6^6m4tv8a5tcr3^11
 @a^4124^170:1
 @a^4128^309:2
 @a^4249^170:1
+@a^4664^111:2
+@a^4666^111:2
 @a^5797^269:1
 @a^5800^269:1
 @a^7360^226:2
