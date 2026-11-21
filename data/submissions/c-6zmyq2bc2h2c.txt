@@ -1,4 +1,4 @@
-GoldScout-export 6^6zmyq2bc2h2c^7
+GoldScout-export 6^6zmyq2bc2h2c^8
 95^1^0^11^12^1436^0.4638^0.1922^1^Defias Smuggler^^
 114^1^0^14^15^1436^0.3744^0.5086^1^Harvest Watcher^1274:1:1,4361:1:1^
 121^1^0^15^15^1436^0.3621^0.7335^1^Defias Pathstalker^2589:1:1^
@@ -65,6 +65,18 @@ GoldScout-export 6^6zmyq2bc2h2c^7
 3947^2^0^0^0^0^0.0000^0.0000^0^^1179:1:1,1943:1:1^
 4416^9^0^0^0^0^0.0000^0.0000^0^^915:2:2,1179:1:1,1767:1:1,2589:1:3,2592:2:3,2836:1:4^
 4417^1^0^0^0^0^0.0000^0.0000^0^^915:1:1,9789:1:1^
+245999^1^0^0^0^1416^0.0000^0.0000^0^^273035:1:1^
+246003^1^0^0^0^1416^0.0000^0.0000^0^^273039:1:1^
+246008^1^0^0^0^1416^0.0000^0.0000^0^^273040:1:1^
+246020^1^0^0^0^1416^0.0000^0.0000^0^^251961:1:1,273049:1:1^
+246600^2^0^0^0^1416^0.0000^0.0000^0^^6438:1:1,6439:1:1^
+246664^2^0^0^0^1416^0.0000^0.0000^0^^276160:2:2^
+247001^2^0^0^0^1416^0.0000^0.0000^0^^6438:1:1,276160:1:1^
+247003^1^0^0^0^1416^0.0000^0.0000^0^^1805:1:1,6439:1:1,276160:1:1^
+247126^1^0^0^0^1416^0.0000^0.0000^0^^273032:1:1^
+255066^1^0^0^0^1416^0.0000^0.0000^0^^^
+255069^3^0^0^0^1416^0.0000^0.0000^0^^9837:1:1^
+269134^3^0^0^0^1416^0.0000^0.0000^0^^1205:1:1^
 @i^414^Dalaran Sharp
 @i^422^Dwarven Mild
 @i^730^Murloc Eye
@@ -92,6 +104,7 @@ GoldScout-export 6^6zmyq2bc2h2c^7
 @i^1768^Canvas Pants
 @i^1794^Patched Leather Jerkin
 @i^1800^Rawhide Pants
+@i^1805^Tough Leather Bracers
 @i^1809^Tough Leather Shoulderpads
 @i^1815^Ornamental Mace
 @i^1817^Stock Shortsword
@@ -154,6 +167,8 @@ GoldScout-export 6^6zmyq2bc2h2c^7
 @i^5785^Thick Murloc Scale
 @i^6289^Raw Longjaw Mud Snapper
 @i^6308^Raw Bristle Whisker Catfish
+@i^6438^Dull Elemental Bracer
+@i^6439^Broken Binding Bracer
 @i^6518^Pioneer Boots
 @i^6541^Willow Gloves of the Eagle
 @i^6551^Soldier's Boots of the Owl
@@ -170,6 +185,7 @@ GoldScout-export 6^6zmyq2bc2h2c^7
 @i^9789^Raider's Legguards of the Boar
 @i^9814^Fortified Belt of Holy Wrath
 @i^9836^Banded Armor of Agility
+@i^9837^Banded Bracers of the Owl
 @i^10403^Blackened Defias Belt
 @i^10407^Raider's Shoulderpads
 @i^17057^Shiny Fish Scales
@@ -181,10 +197,17 @@ GoldScout-export 6^6zmyq2bc2h2c^7
 @i^248692^Waylaid Crate: Expert Ore
 @i^248706^Waylaid Crate: Journeyman Ingots
 @i^249881^Recipe: Root Tea
+@i^251961^Arcane Mote
 @i^254548^Longshore Murloc Gill
+@i^273032^Bonebinder's Signet
+@i^273035^Mana-Warped Chain Shirt
+@i^273039^Blightleaf Rope
+@i^273040^Spine of the Devourer
+@i^273049^Archmagister's Faceted Pendant
 @i^273289^Ogre Loincloth
 @i^273804^Executioner Mantle
 @i^273819^Boneslicer
+@i^276160^Mana Fragment
 @q^414^1:0:0
 @q^422^1:0:0
 @q^730^1:7:1
@@ -212,6 +235,7 @@ GoldScout-export 6^6zmyq2bc2h2c^7
 @q^1768^0:4:0
 @q^1794^0:4:0
 @q^1800^0:4:0
+@q^1805^0:4:0
 @q^1809^0:4:0
 @q^1815^0:2:0
 @q^1817^0:2:0
@@ -274,6 +298,8 @@ GoldScout-export 6^6zmyq2bc2h2c^7
 @q^5785^1:7:1
 @q^6289^1:7:1
 @q^6308^1:7:1
+@q^6438^0:15:0
+@q^6439^0:15:0
 @q^6518^1:4:0
 @q^6541^2:4:0
 @q^6551^2:4:0
@@ -290,6 +316,7 @@ GoldScout-export 6^6zmyq2bc2h2c^7
 @q^9789^2:4:0
 @q^9814^2:4:0
 @q^9836^2:4:0
+@q^9837^2:4:0
 @q^10403^3:4:0
 @q^10407^1:4:0
 @q^17057^1:15:0
@@ -301,10 +328,17 @@ GoldScout-export 6^6zmyq2bc2h2c^7
 @q^248692^1:0:1
 @q^248706^2:0:1
 @q^249881^1:9:0
+@q^251961^1:12:0
 @q^254548^1:12:0
+@q^273032^3:4:0
+@q^273035^3:4:0
+@q^273039^3:4:0
+@q^273040^3:2:0
+@q^273049^3:4:0
 @q^273289^3:4:0
 @q^273804^3:4:0
 @q^273819^3:2:0
+@q^276160^0:15:0
 @m^1415^Eastern Kingdoms
 @m^1416^Alterac Mountains
 @m^1424^Hillsbrad Foothills

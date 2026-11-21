@@ -1,8 +1,9 @@
-GoldScout-export 6^i03jpvvl5t5n^11
+GoldScout-export 6^i03jpvvl5t5n^12
 757^1^0^36^36^1435^0.5666^0.3130^1^Pescador Perdido^4338:1:1^
 760^1^0^36^36^1435^0.5583^0.3186^1^Habitabosta Perdido^4306:1:3^
 767^2^0^36^36^1435^0.4486^0.4384^2^Jaguar del pantano^1686:1:1,1688:1:1^
 1082^5^0^38^39^1435^0.5507^0.3585^5^Crocolisco Denteserra^770:5:5,3667:2:2,12037:1:1,262889:1:1^
+2258^1^0^37^37^1416^0.7966^0.4488^1^Furia pétrea^4553:1:1,4784:1:1,7067:1:1,283254:1:1^
 2336^11^0^16^17^1439^0.5679^0.2683^11^Fanática de la Facción Oscura^2589:4:7,2592:4:7^
 2337^8^0^28^29^1439^0.5621^0.2601^8^Clamavacío de la Facción Oscura^2592:1:2,4306:2:3^
 3636^7^0^0^0^0^0.0000^0.0000^0^^3180:1:1,5124:5:5^
@@ -108,10 +109,12 @@ GoldScout-export 6^i03jpvvl5t5n^11
 @i^4424^Pergamino de espíritu III
 @i^4460^Ala rasgada
 @i^4537^Banana Tel'Abim
+@i^4553^Trozo de piedra dentado
 @i^4582^Cola tupida suave
 @i^4583^Melena espesa
 @i^4599^Filete de jamón curado
 @i^4603^Serviola moteada cruda
+@i^4784^Piedra inerte
 @i^5116^Pluma de cola larga
 @i^5124^Diente de raptor pequeño
 @i^5524^Almeja gruesa
@@ -120,12 +123,14 @@ GoldScout-export 6^i03jpvvl5t5n^11
 @i^6308^Siluro mostacherizo crudo
 @i^6358^Bocanegra graso
 @i^6359^Pargo de fuego
+@i^6361^Atún blanco arco iris crudo
 @i^6362^Bacalao piedrescama crudo
 @i^6438^Brazal elemental mate
 @i^6444^Lengua bífida
 @i^6588^Bufas de exploración
 @i^6826^Escama luminosa
 @i^6906^Puños de algas
+@i^7067^Tierra elemental
 @i^7556^Orbe Crepuscular del hierofante
 @i^7975^Diseño: pantalones de mitril pesado
 @i^8365^Trucha cabeza de mitril cruda
@@ -172,6 +177,7 @@ GoldScout-export 6^i03jpvvl5t5n^11
 @i^271828^Colmillo de Faucespíritu
 @i^273839^Sortija de caparazón con púas
 @i^281052^Piel de Ombassa
+@i^283254^Corazón de Alterac
 @q^730^1:7:1
 @q^769^1:7:1
 @q^770^0:15:0
@@ -210,10 +216,12 @@ GoldScout-export 6^i03jpvvl5t5n^11
 @q^4424^1:0:0
 @q^4460^0:15:0
 @q^4537^1:0:0
+@q^4553^0:15:0
 @q^4582^1:12:0
 @q^4583^0:15:0
 @q^4599^1:0:0
 @q^4603^1:7:1
+@q^4784^0:15:0
 @q^5116^1:7:1
 @q^5124^0:15:0
 @q^5524^1:7:0
@@ -222,12 +230,14 @@ GoldScout-export 6^i03jpvvl5t5n^11
 @q^6308^1:7:1
 @q^6358^1:7:1
 @q^6359^1:7:1
+@q^6361^1:7:1
 @q^6362^1:7:1
 @q^6438^0:15:0
 @q^6444^0:15:0
 @q^6588^1:4:0
 @q^6826^0:15:0
 @q^6906^3:4:0
+@q^7067^1:7:1
 @q^7556^2:4:0
 @q^7975^2:9:0
 @q^8365^1:7:1
@@ -274,7 +284,10 @@ GoldScout-export 6^i03jpvvl5t5n^11
 @q^271828^1:12:0
 @q^273839^3:4:0
 @q^281052^1:12:0
+@q^283254^2:4:0
+@m^1416^Montañas de Alterac
 @m^1435^Pantano de las Penas
+@m^1437^Los Humedales
 @m^1439^Costa Oscura
 @m^1443^Desolace
 @m^1444^Feralas
@@ -965,6 +978,7 @@ GoldScout-export 6^i03jpvvl5t5n^11
 @c^273937^
 @c^273938^
 @c^273939^
+@c^274490^
 @c^274971^
 @c^274976^
 @c^275610^
@@ -1039,6 +1053,7 @@ GoldScout-export 6^i03jpvvl5t5n^11
 @a^760^131:1
 @a^767^169:1,188:1
 @a^1082^132:2,150:2,169:1
+@a^2258^175:1
 @a^2336^111:11
 @a^2337^111:8
 @a^3660^111:1
@@ -1092,6 +1107,7 @@ GoldScout-export 6^i03jpvvl5t5n^11
 @a^272228^290:1
 @a^272313^254:1,294:1
 @f^1435^0^5^225^6359:2:2,6362:3:3,16970:1:1^98:5
+@f^1437^0^4^230^6361:4:4^240:4
 @f^1443^0^13^225^4603:1:1,6308:2:2,6358:1:1,6359:1:1,6362:1:1,8365:7:7,16968:1:1^127:13
 @f^1444^0^21^225^6358:2:2,8365:1:1,13758:14:14,13759:2:2,13760:2:2,16967:1:1^212:21
 @f^2548^0^32^225^4603:5:5,6358:3:3,6359:3:3,6362:17:17,13422:3:6,21228:1:1^215:10,294:9,295:4,312:9

@@ -1,4 +1,4 @@
-GoldScout-export 6^dvi14wyr5fe4^14
+GoldScout-export 6^dvi14wyr5fe4^15
 4654^1^0^37^38^1443^0.3006^0.6251^1^Maraudine Scout^^
 4655^1^0^37^37^1443^0.3014^0.6266^1^Maraudine Wrangler^^
 4656^5^0^38^39^1443^0.3009^0.5343^5^Maraudine Mauler^4306:1:3,254432:2:2,274047:3:3^
@@ -44,6 +44,9 @@ GoldScout-export 6^dvi14wyr5fe4^14
 6202^4^0^52^53^1447^0.5825^0.2174^4^Legashi Hellcaller^14047:1:1,235256:2:2^
 6378^1^0^51^52^1447^0.5023^0.2550^1^Thunderhead Skystormer^10450:1:1^
 6379^1^0^54^54^1447^0.7394^0.3050^1^Thunderhead Patriarch^15420:1:3^
+6510^1^0^51^51^1449^0.4673^0.2166^1^Bloodpetal Flayer^10286:1:1^
+6518^1^0^52^52^1449^0.4751^0.2006^1^Tar Lurker^4426:1:1,11018:1:1^
+6519^1^0^54^54^1449^0.4984^0.2789^1^Tar Lord^8839:1:1^
 7100^7^0^52^53^1448^0.5668^0.1843^7^Warpwood Moss Flayer^3987:1:1,8948:1:1,11503:7:7,13820:1:1^
 7101^8^0^53^54^1448^0.5752^0.1926^8^Warpwood Shredder^785:1:1,3357:1:1,10286:1:1,11503:8:8,13819:1:1^
 7112^9^0^51^52^1448^0.3781^0.6140^9^Jaedenar Cultist^8952:1:1,14047:2:3^
@@ -159,6 +162,7 @@ GoldScout-export 6^dvi14wyr5fe4^14
 @i^4338^Mageweave Cloth
 @i^4419^Scroll of Intellect III
 @i^4422^Scroll of Stamina III
+@i^4426^Scroll of Strength III
 @i^4552^Smooth Stone Chip
 @i^4553^Jagged Piece of Stone
 @i^4554^Shiny Polished Stone
@@ -203,6 +207,7 @@ GoldScout-export 6^dvi14wyr5fe4^14
 @i^8396^Vulture Gizzard
 @i^8746^Interlaced Cowl
 @i^8766^Morning Glory Dew
+@i^8839^Blindweed
 @i^8948^Dried King Bolete
 @i^8952^Roasted Quail
 @i^8953^Deep Fried Plantains
@@ -213,6 +218,7 @@ GoldScout-export 6^dvi14wyr5fe4^14
 @i^10450^Undamaged Hippogryph Feather
 @i^10505^Solid Blasting Powder
 @i^10597^Head of Magus Rimtori
+@i^11018^Un'Goro Soil
 @i^11408^Bear Jaw
 @i^11409^Bear Flank
 @i^11410^Savage Bear Claw
@@ -326,6 +332,7 @@ GoldScout-export 6^dvi14wyr5fe4^14
 @q^4338^1:7:1
 @q^4419^1:0:0
 @q^4422^1:0:0
+@q^4426^1:0:0
 @q^4552^0:15:0
 @q^4553^0:15:0
 @q^4554^0:15:0
@@ -370,6 +377,7 @@ GoldScout-export 6^dvi14wyr5fe4^14
 @q^8396^1:12:0
 @q^8746^0:4:0
 @q^8766^1:0:0
+@q^8839^1:7:1
 @q^8948^1:0:0
 @q^8952^1:0:0
 @q^8953^1:0:0
@@ -380,6 +388,7 @@ GoldScout-export 6^dvi14wyr5fe4^14
 @q^10450^1:12:0
 @q^10505^1:7:1
 @q^10597^1:12:0
+@q^11018^1:12:0
 @q^11408^0:15:0
 @q^11409^0:15:0
 @q^11410^0:15:0
@@ -465,6 +474,7 @@ GoldScout-export 6^dvi14wyr5fe4^14
 @m^1444^Feralas
 @m^1447^Azshara
 @m^1448^Felwood
+@m^1449^Un'Goro Crater
 @m^2652^Shen'dralas
 @c^724^
 @c^733^
@@ -935,6 +945,9 @@ GoldScout-export 6^dvi14wyr5fe4^14
 @a^6202^71:1,91:3
 @a^6378^110:1
 @a^6379^134:1
+@a^6510^89:1
+@a^6518^89:1
+@a^6519^109:1
 @a^7100^70:1,71:5,91:1
 @a^7101^71:5,91:3
 @a^7112^247:9
