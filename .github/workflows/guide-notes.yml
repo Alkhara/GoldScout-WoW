@@ -45,8 +45,13 @@ jobs:
         if: env.HAS_KEY != 'true'
         run: echo "**Skipped:** add the ANTHROPIC_API_KEY secret to write the guides' farm notes." | tee -a "$GITHUB_STEP_SUMMARY"
 
+      # main as it is now, not the commit the run was started from: a run that
+      # waited behind another (concurrency) would otherwise build its branch on
+      # main from before that run's merge, and its pull request can't merge.
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         if: env.HAS_KEY == 'true'
+        with:
+          ref: main
 
       - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
         if: env.HAS_KEY == 'true'
