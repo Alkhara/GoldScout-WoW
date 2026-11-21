@@ -1,4 +1,4 @@
-GoldScout-export 6^wta93vhbb3yp^14
+GoldScout-export 6^wta93vhbb3yp^15
 587^5^0^33^34^1434^0.3006^0.1874^5^Bloodscalp Warrior^1519:1:1,2592:1:1,2744:1:1,3915:3:3,4306:2:3^
 588^7^0^34^35^1434^0.2518^0.1069^7^Bloodscalp Scout^1519:2:2,2735:1:1,3771:1:1,3901:1:1,4306:2:3^
 595^12^0^34^35^1434^0.2495^0.1097^12^Bloodscalp Hunter^1519:3:3,2290:1:1,2738:1:1,3771:2:2,3901:1:1,3915:4:4,4306:1:1,4338:1:1^
@@ -48,6 +48,8 @@ GoldScout-export 6^wta93vhbb3yp^14
 2729^24^0^39^40^1418^0.2952^0.6293^24^Elder Crag Coyote^4042:1:1,4582:2:2,4583:3:3,5637:1:1,12203:12:12,248694:1:1^
 2732^25^0^38^39^1418^0.4283^0.6177^25^Ridge Huntress^1686:1:1,1688:3:3,12202:8:8^
 2734^4^0^40^41^1418^0.2670^0.7213^4^Ridge Stalker Patriarch^4580:2:2,12202:3:3^
+2760^3^0^38^39^1417^0.2436^0.2950^3^Burning Exile^4479:1:1,4787:1:1^
+2762^8^0^38^39^1417^0.5176^0.5135^8^Thundering Exile^4480:2:2,7069:2:2^
 2831^1^0^40^41^1418^0.3234^0.7087^1^Giant Buzzard^12037:1:1^
 3560^1^0^34^37^1434^0.2418^0.1040^1^Healing Ward^^
 3630^1^0^15^16^1414^0.5192^0.5489^1^Deviate Coiler^6470:1:1,15011:1:1^
@@ -185,6 +187,8 @@ GoldScout-export 6^wta93vhbb3yp^14
 11561^2^0^37^38^2652^0.3416^0.2651^2^Undead Ravager^4306:1:1^
 11562^2^0^33^34^1443^0.3303^0.2853^2^Drysnap Crawler^6362:1:2,15878:1:1,17057:1:1^
 11563^1^0^35^35^1443^0.3519^0.3472^1^Drysnap Pincer^^
+11576^1^0^34^34^1443^0.3897^0.7673^1^Whirlwind Ripper^^
+11578^2^0^32^34^1443^0.3094^0.7872^2^Whirlwind Shredder^^
 11876^1^0^37^37^1443^0.5499^0.2661^1^Demon Spirit^13542:1:1^
 11937^5^0^38^38^1443^0.5078^0.7645^5^Demon Portal Guardian^4306:1:3^
 12277^1^0^39^39^1443^0.3464^0.5697^1^Melizza Brimbuzzle^^
@@ -374,6 +378,8 @@ GoldScout-export 6^wta93vhbb3yp^14
 @i^4377^Heavy Blasting Powder
 @i^4424^Scroll of Spirit III
 @i^4461^Raptor Hide
+@i^4479^Burning Charm
+@i^4480^Thundering Charm
 @i^4537^Tel'Abim Banana
 @i^4538^Snapvine Watermelon
 @i^4567^Merc Sword of Intellect
@@ -393,6 +399,7 @@ GoldScout-export 6^wta93vhbb3yp^14
 @i^4725^Chief Brigadier Pauldrons
 @i^4727^Chief Brigadier Girdle
 @i^4784^Lifeless Stone
+@i^4787^Burning Pitch
 @i^5113^Mark of the Syndicate
 @i^5124^Small Raptor Tooth
 @i^5136^Torn Furry Ear
@@ -435,6 +442,7 @@ GoldScout-export 6^wta93vhbb3yp^14
 @i^6687^Corpsemaker
 @i^6692^Pronged Reaver
 @i^6893^Workshop Key
+@i^7069^Elemental Air
 @i^7070^Elemental Water
 @i^7072^Naga Scale
 @i^7355^Elder's Bracers of Spirit
@@ -710,6 +718,8 @@ GoldScout-export 6^wta93vhbb3yp^14
 @q^4377^1:7:1
 @q^4424^1:0:0
 @q^4461^1:7:1
+@q^4479^1:0:0
+@q^4480^1:0:0
 @q^4537^1:0:0
 @q^4538^1:0:0
 @q^4567^2:2:0
@@ -729,6 +739,7 @@ GoldScout-export 6^wta93vhbb3yp^14
 @q^4725^2:4:0
 @q^4727^2:4:0
 @q^4784^0:15:0
+@q^4787^0:15:0
 @q^5113^0:15:0
 @q^5124^0:15:0
 @q^5136^0:15:0
@@ -771,6 +782,7 @@ GoldScout-export 6^wta93vhbb3yp^14
 @q^6687^3:2:0
 @q^6692^3:2:0
 @q^6893^1:13:0
+@q^7069^1:7:1
 @q^7070^1:7:1
 @q^7072^1:7:1
 @q^7355^2:4:0
@@ -1574,6 +1586,8 @@ GoldScout-export 6^wta93vhbb3yp^14
 @a^2729^185:1,204:4,205:3,224:1,225:1,265:4,266:1,267:2,268:1,285:2,286:3,288:1
 @a^2732^205:1,209:6,228:2,229:1,230:1,247:7,268:1,288:4,309:2
 @a^2734^285:4
+@a^2760^104:2,124:1
+@a^2762^210:8
 @a^2831^286:1
 @a^3560^44:1
 @a^3630^210:1
@@ -1624,6 +1638,8 @@ GoldScout-export 6^wta93vhbb3yp^14
 @a^11561^106:2
 @a^11562^106:2
 @a^11563^127:1
+@a^11576^307:1
+@a^11578^305:1,306:1
 @a^11876^110:1
 @a^11937^290:2,309:1,330:2
 @a^12277^226:1

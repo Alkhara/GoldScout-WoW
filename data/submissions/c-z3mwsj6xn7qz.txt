@@ -1,4 +1,4 @@
-GoldScout-export 6^z3mwsj6xn7qz^15
+GoldScout-export 6^z3mwsj6xn7qz^16
 587^22^0^33^34^1434^0.3111^0.1773^22^Bloodscalp Warrior^1477:1:1,1519:3:3,1708:1:1,2730:1:1,2738:1:1,2745:1:1,3385:1:1,3771:1:1,3901:11:11,3915:7:7,4306:6:8,4338:2:2^
 597^4^0^36^37^1434^0.2158^0.1023^4^Bloodscalp Berserker^2732:1:1,4306:1:2^
 660^3^0^37^37^1434^0.2122^0.1254^3^Bloodscalp Witch Doctor^3771:1:1,3901:2:2^
@@ -44,11 +44,14 @@ GoldScout-export 6^z3mwsj6xn7qz^15
 4006^2^0^19^20^1442^0.7658^0.4639^2^Deepmoss Webspinner^1081:1:1,3931:1:1^
 4007^2^0^17^18^1442^0.5784^0.6131^2^Deepmoss Venomspitter^1475:1:1,3931:1:1^
 4041^1^0^28^28^1442^0.3068^0.7393^1^Scorched Basilisk^1702:1:1,3857:1:1,5637:1:1,11385:1:1^
-4342^1^0^36^36^1445^0.4854^0.2155^1^Drywallow Vicejaw^770:1:2,3667:1:1^
-4352^7^0^36^37^1445^0.4716^0.1921^7^Bloodfen Screecher^4461:2:2,4587:1:1,5637:1:1,12184:4:4^
-4386^1^0^36^36^1445^0.4832^0.2161^1^Withervine Bark Ripper^^
-4411^2^0^36^37^1445^0.3766^0.3780^2^Darkfang Lurker^1074:1:1,5959:1:1,12205:1:1^
-4413^1^0^35^35^1445^0.4186^0.2622^1^Darkfang Spider^12205:1:1^
+4341^1^0^35^36^1445^0.4851^0.2146^1^Drywallow Crocolisk^770:1:1^
+4342^1^0^36^37^1445^0.4854^0.2155^1^Drywallow Vicejaw^770:1:2,3667:1:1^
+4352^10^0^36^37^1445^0.4715^0.1908^10^Bloodfen Screecher^4461:3:3,4587:1:1,5637:2:2,12184:5:5^
+4358^11^0^35^36^1445^0.5715^0.2193^11^Mirefin Puddlejumper^1708:1:1,5785:1:1,5847:5:5,17057:1:1,17058:4:4^
+4359^18^0^35^36^1445^0.5737^0.2147^18^Mirefin Murloc^3795:1:1,5785:4:4,5847:6:6,17057:7:7,17058:3:3^
+4386^2^0^36^37^1445^0.4909^0.2208^2^Withervine Bark Ripper^^
+4411^11^0^36^37^1445^0.4292^0.2343^11^Darkfang Lurker^1074:1:1,4337:2:2,4585:4:4,5959:2:2,10285:1:1,12205:4:4^
+4413^18^0^35^36^1445^0.4634^0.2048^18^Darkfang Spider^1074:3:3,4337:1:1,4585:4:4,5637:2:2,5959:4:4,12205:3:3^
 4414^1^0^37^37^1445^0.3740^0.3838^1^Darkfang Venomspitter^12205:1:1^
 4499^1^0^30^30^1441^0.2655^0.4138^1^Rok'Alim the Pounder^4784:1:1,5741:1:1,5844:1:1^
 4636^1^0^32^33^1443^0.7411^0.4717^1^Kolkar Battle Lord^4306:1:2^
@@ -186,6 +189,7 @@ GoldScout-export 6^z3mwsj6xn7qz^15
 @i^3781^Broad Claymore
 @i^3783^Light Scimitar
 @i^3784^Metal Stave
+@i^3795^Interlaced Cloak
 @i^3798^Interlaced Shoulderpads
 @i^3813^Double Mail Pants
 @i^3818^Fadeleaf
@@ -207,11 +211,13 @@ GoldScout-export 6^z3mwsj6xn7qz^15
 @i^4093^Large Basilisk Tail
 @i^4106^Tumbled Crystal
 @i^4306^Silk Cloth
+@i^4337^Thick Spider's Silk
 @i^4338^Mageweave Cloth
 @i^4371^Bronze Tube
 @i^4377^Heavy Blasting Powder
 @i^4461^Raptor Hide
 @i^4496^Small Brown Pouch
+@i^4585^Dripping Spider Mandible
 @i^4586^Smooth Raptor Skin
 @i^4587^Tribal Raptor Feathers
 @i^4603^Raw Spotted Yellowtail
@@ -226,8 +232,10 @@ GoldScout-export 6^z3mwsj6xn7qz^15
 @i^5133^Seeping Gizzard
 @i^5637^Large Fang
 @i^5741^Rock Chip
+@i^5785^Thick Murloc Scale
 @i^5829^Razor-sharp Beak
 @i^5844^Fragments of Rok'Alim
+@i^5847^Mirefin Head
 @i^5851^Cozzle's Key
 @i^5959^Acidic Venom Sac
 @i^6066^Khan Dez'hepah's Head
@@ -265,6 +273,7 @@ GoldScout-export 6^z3mwsj6xn7qz^15
 @i^9818^Fortified Chain of the Boar
 @i^9828^Scaled Leather Boots of Nature's Wrath
 @i^9835^Scaled Leather Tunic of the Bandit
+@i^10285^Shadow Silk
 @i^11385^Basilisk Scale
 @i^11386^Squishy Basilisk Eye
 @i^12028^Basalt Necklace of the Gorilla
@@ -360,6 +369,7 @@ GoldScout-export 6^z3mwsj6xn7qz^15
 @q^3781^0:2:0
 @q^3783^0:2:0
 @q^3784^0:2:0
+@q^3795^0:4:0
 @q^3798^0:4:0
 @q^3813^0:4:0
 @q^3818^1:7:1
@@ -381,11 +391,13 @@ GoldScout-export 6^z3mwsj6xn7qz^15
 @q^4093^0:15:0
 @q^4106^1:12:0
 @q^4306^1:7:1
+@q^4337^1:7:1
 @q^4338^1:7:1
 @q^4371^1:7:1
 @q^4377^1:7:1
 @q^4461^1:7:1
 @q^4496^1:1:0
+@q^4585^0:15:0
 @q^4586^0:15:0
 @q^4587^0:15:0
 @q^4603^1:7:1
@@ -400,8 +412,10 @@ GoldScout-export 6^z3mwsj6xn7qz^15
 @q^5133^0:15:0
 @q^5637^1:7:1
 @q^5741^0:15:0
+@q^5785^1:7:1
 @q^5829^0:15:0
 @q^5844^1:12:0
+@q^5847^1:12:0
 @q^5851^1:13:0
 @q^5959^1:12:0
 @q^6066^1:12:0
@@ -439,6 +453,7 @@ GoldScout-export 6^z3mwsj6xn7qz^15
 @q^9818^2:4:0
 @q^9828^2:4:0
 @q^9835^2:4:0
+@q^10285^1:7:1
 @q^11385^0:15:0
 @q^11386^0:15:0
 @q^12028^2:4:0
@@ -1204,11 +1219,14 @@ GoldScout-export 6^z3mwsj6xn7qz^15
 @a^4006^175:1,195:1
 @a^4007^250:1,252:1
 @a^4041^286:1
+@a^4341^89:1
 @a^4342^89:1
-@a^4352^69:5,89:2
-@a^4386^89:1
-@a^4411^147:2
-@a^4413^108:1
+@a^4352^69:7,89:3
+@a^4358^91:11
+@a^4359^91:18
+@a^4386^89:2
+@a^4411^47:2,48:2,88:1,90:1,108:1,109:1,131:1,147:2
+@a^4413^28:1,47:1,48:2,67:4,90:4,91:2,108:1,109:1,130:1,131:1
 @a^4414^147:1
 @a^4499^165:1
 @a^4636^194:1

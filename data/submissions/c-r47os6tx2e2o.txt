@@ -1,4 +1,4 @@
-GoldScout-export 6^r47os6tx2e2o^12
+GoldScout-export 6^r47os6tx2e2o^13
 122^2^0^17^18^1436^0.3729^0.8149^2^Defias Highwayman^^
 154^1^0^16^16^1436^0.6258^0.5042^1^Greater Fleshripper^4775:1:1^
 171^3^0^15^16^1436^0.2812^0.3372^3^Murloc Warrior^730:1:1,1506:1:1,5523:1:1,211855:1:1^
@@ -36,12 +36,19 @@ GoldScout-export 6^r47os6tx2e2o^12
 3560^2^0^17^18^1439^0.4078^0.8847^2^Healing Ward^^
 3725^5^0^18^19^1440^0.3124^0.3043^3^Dark Strand Cultist^1205:1:1^
 3727^2^0^20^21^1440^0.3081^0.3213^2^Dark Strand Enforcer^248684:1:1^
-3728^3^0^18^19^1440^0.3082^0.3108^3^Dark Strand Adept^^
+3728^5^0^18^19^1440^0.3125^0.3025^5^Dark Strand Adept^2592:1:1,5366:1:1^
 3730^5^0^19^20^1440^0.3097^0.3128^3^Dark Strand Excavator^929:1:1,2592:2:3^
-3816^2^0^18^19^1440^0.3072^0.2539^2^Wild Buck^5566:1:1^
+3732^10^0^18^19^1440^0.3176^0.2218^10^Forsaken Seeker^1206:1:1,2592:1:1,4606:3:3,248684:1:1^
+3733^2^0^18^19^1440^0.3202^0.2273^2^Forsaken Herbalist^^
+3734^4^0^20^20^1440^0.3247^0.2308^4^Forsaken Thug^4606:1:1^
+3780^6^0^21^23^1440^0.4570^0.4483^6^Shadethicket Moss Eater^2447:1:1,3021:1:1,4606:1:1^
+3809^1^0^22^22^1440^0.4260^0.4346^1^Ashenvale Bear^3730:1:1,11406:1:1^
+3816^3^0^18^19^1440^0.2915^0.2878^3^Wild Buck^5471:1:1,5566:1:1^
+3819^4^0^20^21^1440^0.4073^0.4276^4^Wildthorn Stalker^1081:1:1,2251:2:2,3174:2:2,248684:1:1^
 3823^3^0^19^20^1440^0.3040^0.3837^3^Ghostpaw Runner^1015:3:3,3402:1:1^
+3925^1^0^23^23^1440^0.3179^0.4423^1^Thistlefur Avenger^^
 4416^3^0^0^0^0^0.0000^0.0000^0^^^
-8996^3^0^18^19^1440^0.3082^0.3108^3^Voidwalker Minion^^
+8996^5^0^18^19^1440^0.3125^0.3016^5^Voidwalker Minion^^
 12922^3^0^18^19^1440^0.3122^0.3041^3^Imp Minion^^
 270196^1^0^12^12^1439^0.4485^0.5885^1^Jai'vhanel^4776:1:1^
 271903^1^0^19^19^1439^0.4989^0.1135^1^Stormscale Beastmistress^5523:1:1,17057:1:1,280686:1:1^
@@ -52,8 +59,10 @@ GoldScout-export 6^r47os6tx2e2o^12
 @i^858^Lesser Healing Potion
 @i^929^Healing Potion
 @i^1015^Lean Wolf Flank
+@i^1081^Crisp Spider Meat
 @i^1179^Ice Cold Milk
 @i^1205^Melon Juice
+@i^1206^Moss Agate
 @i^1210^Shadowgem
 @i^1506^Warped Leather Gloves
 @i^1507^Warped Leather Pants
@@ -61,6 +70,8 @@ GoldScout-export 6^r47os6tx2e2o^12
 @i^1789^Patched Leather Bracers
 @i^1815^Ornamental Mace
 @i^1824^Shiny War Axe
+@i^2251^Gooey Spider Leg
+@i^2447^Peacebloom
 @i^2455^Minor Mana Potion
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
@@ -70,16 +81,22 @@ GoldScout-export 6^r47os6tx2e2o^12
 @i^2874^An Unsent Letter
 @i^2940^Bloody Bear Paw
 @i^2988^Inscribed Leather Gloves
+@i^3021^Ranger Bow
 @i^3169^Chipped Bear Tooth
 @i^3170^Large Bear Tooth
 @i^3172^Boar Intestines
 @i^3173^Bear Meat
+@i^3174^Spider Ichor
 @i^3402^Soft Patch of Fur
+@i^3730^Big Bear Meat
+@i^4606^Spongy Morel
 @i^4775^Cracked Bill
 @i^4776^Ruffled Feather
 @i^5191^Cruel Barb
 @i^5195^Gold-flecked Gloves
+@i^5366^Glowing Soul Gem
 @i^5414^Grizzled Scalp
+@i^5471^Stag Meat
 @i^5523^Small Barnacled Clam
 @i^5566^Broken Antler
 @i^5635^Sharp Claw
@@ -107,8 +124,10 @@ GoldScout-export 6^r47os6tx2e2o^12
 @q^858^1:0:0
 @q^929^1:0:0
 @q^1015^1:7:1
+@q^1081^1:7:1
 @q^1179^1:0:0
 @q^1205^1:0:0
+@q^1206^2:7:1
 @q^1210^2:7:1
 @q^1506^0:4:0
 @q^1507^0:4:0
@@ -116,6 +135,8 @@ GoldScout-export 6^r47os6tx2e2o^12
 @q^1789^0:4:0
 @q^1815^0:2:0
 @q^1824^0:2:0
+@q^2251^1:7:1
+@q^2447^1:7:1
 @q^2455^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
@@ -125,16 +146,22 @@ GoldScout-export 6^r47os6tx2e2o^12
 @q^2874^1:12:0
 @q^2940^0:15:0
 @q^2988^2:4:0
+@q^3021^3:2:0
 @q^3169^0:15:0
 @q^3170^0:15:0
 @q^3172^1:7:1
 @q^3173^1:7:1
+@q^3174^1:7:1
 @q^3402^0:15:0
+@q^3730^1:7:1
+@q^4606^1:0:0
 @q^4775^0:15:0
 @q^4776^0:15:0
 @q^5191^3:2:0
 @q^5195^3:4:0
+@q^5366^1:12:0
 @q^5414^1:12:0
+@q^5471^1:7:1
 @q^5523^1:7:0
 @q^5566^0:15:0
 @q^5635^1:7:1
@@ -547,11 +574,18 @@ GoldScout-export 6^r47os6tx2e2o^12
 @a^3560^348:2
 @a^3725^106:1,126:2
 @a^3727^126:2
-@a^3728^106:1,126:2
+@a^3728^106:3,126:2
 @a^3730^106:1,126:2
-@a^3816^85:1,106:1
+@a^3732^85:1,86:9
+@a^3733^86:2
+@a^3734^86:4
+@a^3780^169:3,188:2,189:1
+@a^3809^168:1
+@a^3816^85:1,106:1,145:1
+@a^3819^147:1,167:1,168:1,188:1
 @a^3823^65:1,186:2
-@a^8996^106:1,126:2
+@a^3925^166:1
+@a^8996^106:3,126:2
 @a^12922^106:1,126:2
 @a^270196^228:1
 @a^271903^49:1

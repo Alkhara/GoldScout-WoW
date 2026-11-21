@@ -1,4 +1,4 @@
-GoldScout-export 6^k2vetg68mduz^19
+GoldScout-export 6^k2vetg68mduz^20
 69^8^0^2^2^1429^0.4676^0.3935^8^Timber Wolf^1372:1:1,2652:1:1,2672:1:1,4865:1:1,7073:3:3,7074:1:1^
 299^53^0^1^1^1429^0.4657^0.3955^53^Young Wolf^1368:2:2,1369:1:1,1370:2:2,1374:2:2,1377:1:1,2211:1:1,2650:1:1,2651:1:1,2654:1:1,2672:11:11,4865:18:18,7073:16:16,7074:16:16^
 587^2^1^33^34^1434^0.2959^0.1910^2^Bloodscalp Warrior^4306:1:1^16883:1:1
@@ -131,6 +131,7 @@ GoldScout-export 6^k2vetg68mduz^19
 272228^3^0^36^37^2548^0.5466^0.7533^3^Harvest Sentry^4338:1:1,5567:1:1^
 @i^537^Dull Frenzy Scale
 @i^770^Pointy Crocolisk Tooth
+@i^858^Lesser Healing Potion
 @i^863^Gloom Reaper of Healing
 @i^1074^Hard Spider Leg Tip
 @i^1288^Large Venom Sac
@@ -238,7 +239,14 @@ GoldScout-export 6^k2vetg68mduz^19
 @i^6249^Aged Kodo Hide
 @i^6289^Raw Longjaw Mud Snapper
 @i^6291^Raw Brilliant Smallfish
+@i^6303^Raw Slitherskin Mackerel
+@i^6307^Message in a Bottle
 @i^6308^Raw Bristle Whisker Catfish
+@i^6309^17 Pound Catfish
+@i^6351^Dented Crate
+@i^6353^Small Chest
+@i^6358^Oily Blackmouth
+@i^6361^Raw Rainbow Fin Albacore
 @i^6362^Raw Rockscale Cod
 @i^6438^Dull Elemental Bracer
 @i^6515^Disciple's Gloves
@@ -318,6 +326,7 @@ GoldScout-export 6^k2vetg68mduz^19
 @i^286651^Flamestarter's Signet
 @q^537^0:15:0
 @q^770^0:15:0
+@q^858^1:0:0
 @q^863^2:2:0
 @q^1074^0:15:0
 @q^1288^1:7:1
@@ -425,7 +434,14 @@ GoldScout-export 6^k2vetg68mduz^19
 @q^6249^1:12:0
 @q^6289^1:7:1
 @q^6291^1:7:1
+@q^6303^1:7:1
+@q^6307^1:15:0
 @q^6308^1:7:1
+@q^6309^1:15:0
+@q^6351^1:15:0
+@q^6353^1:15:0
+@q^6358^1:7:1
+@q^6361^1:7:1
 @q^6362^1:7:1
 @q^6438^0:15:0
 @q^6515^1:4:0
@@ -506,6 +522,7 @@ GoldScout-export 6^k2vetg68mduz^19
 @m^1429^Elwynn Forest
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
+@m^1436^Westfall
 @m^1443^Desolace
 @m^1453^Stormwind City
 @m^2548^Riverglades
@@ -1333,5 +1350,6 @@ GoldScout-export 6^k2vetg68mduz^19
 @a^262169^189:3,209:1
 @a^262397^105:1
 @a^272228^290:2,310:1
-@f^1453^0^24^1^6289:15:15,6291:5:5,6308:3:3,6515:1:1^355:24
+@f^1436^0^98^115^6303:38:38,6307:2:2,6351:1:1,6353:1:1,6358:21:21,6361:35:35^225:98
+@f^1453^0^146^1^858:1:1,3385:2:2,6289:93:93,6291:19:19,6308:29:29,6309:1:1,6515:1:1^271:75,355:71
 @l^0^enUS
