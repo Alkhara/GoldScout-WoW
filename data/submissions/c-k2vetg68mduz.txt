@@ -1,4 +1,6 @@
-GoldScout-export 6^k2vetg68mduz^14
+GoldScout-export 6^k2vetg68mduz^16
+69^5^0^2^2^1429^0.4693^0.3900^5^Timber Wolf^1372:1:1,2672:1:1,4865:1:1,7073:1:1^
+299^35^0^1^1^1429^0.4663^0.3967^35^Young Wolf^1368:2:2,1369:1:1,1370:1:1,1374:2:2,1377:1:1,2211:1:1,2650:1:1,2654:1:1,2672:8:8,4865:12:12,7073:10:10,7074:13:13^
 587^2^1^33^34^1434^0.2959^0.1910^2^Bloodscalp Warrior^4306:1:1^16883:1:1
 588^7^3^34^35^1434^0.2419^0.1231^7^Bloodscalp Scout^3771:2:2,4306:1:2^3771:1:1
 595^9^6^34^35^1434^0.2376^0.1209^9^Bloodscalp Hunter^2592:1:1,2738:1:1,4306:2:4,4338:2:2,4634:1:1,213543:1:1,277957:1:1^4544:1:1,5427:1:1
@@ -132,6 +134,12 @@ GoldScout-export 6^k2vetg68mduz^14
 @i^863^Gloom Reaper of Healing
 @i^1074^Hard Spider Leg Tip
 @i^1288^Large Venom Sac
+@i^1368^Ragged Leather Gloves
+@i^1369^Ragged Leather Belt
+@i^1370^Ragged Leather Bracers
+@i^1372^Ragged Cloak
+@i^1374^Frayed Shoes
+@i^1377^Frayed Gloves
 @i^1464^Buzzard Talon
 @i^1477^Scroll of Agility II
 @i^1529^Jade
@@ -146,10 +154,14 @@ GoldScout-export 6^k2vetg68mduz^14
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
+@i^2211^Bent Large Shield
 @i^2221^Targe Shield
 @i^2289^Scroll of Strength II
 @i^2592^Wool Cloth
 @i^2633^Jungle Remedy
+@i^2650^Flimsy Chain Boots
+@i^2654^Flimsy Chain Pants
+@i^2672^Stringy Wolf Meat
 @i^2738^Green Hills of Stranglethorn - Page 14
 @i^2745^Green Hills of Stranglethorn - Page 21
 @i^2748^Green Hills of Stranglethorn - Page 24
@@ -201,6 +213,7 @@ GoldScout-export 6^k2vetg68mduz^14
 @i^4634^Iron Lockbox
 @i^4636^Strong Iron Lockbox
 @i^4791^Enchanted Water
+@i^4865^Ruined Pelt
 @i^5114^Severed Talon
 @i^5116^Long Tail Feather
 @i^5122^Thick Kodo Hair
@@ -227,6 +240,8 @@ GoldScout-export 6^k2vetg68mduz^14
 @i^6986^Crimson Lotus
 @i^7070^Elemental Water
 @i^7072^Naga Scale
+@i^7073^Broken Fang
+@i^7074^Chipped Claw
 @i^7085^Pattern: Azure Shoulders
 @i^7438^Twilight Belt of the Eagle
 @i^7492^Captain's Cloak of the Wolf
@@ -300,6 +315,12 @@ GoldScout-export 6^k2vetg68mduz^14
 @q^863^2:2:0
 @q^1074^0:15:0
 @q^1288^1:7:1
+@q^1368^0:4:0
+@q^1369^0:4:0
+@q^1370^0:4:0
+@q^1372^0:4:0
+@q^1374^0:4:0
+@q^1377^0:4:0
 @q^1464^0:15:0
 @q^1477^1:0:0
 @q^1529^2:7:1
@@ -314,10 +335,14 @@ GoldScout-export 6^k2vetg68mduz^14
 @q^1707^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
+@q^2211^0:4:0
 @q^2221^0:4:0
 @q^2289^1:0:0
 @q^2592^1:7:1
 @q^2633^1:0:0
+@q^2650^0:4:0
+@q^2654^0:4:0
+@q^2672^1:7:1
 @q^2738^1:12:0
 @q^2745^1:12:0
 @q^2748^1:12:0
@@ -369,6 +394,7 @@ GoldScout-export 6^k2vetg68mduz^14
 @q^4634^2:15:0
 @q^4636^2:15:0
 @q^4791^1:0:0
+@q^4865^0:15:0
 @q^5114^0:15:0
 @q^5116^1:7:1
 @q^5122^0:15:0
@@ -395,6 +421,8 @@ GoldScout-export 6^k2vetg68mduz^14
 @q^6986^0:15:0
 @q^7070^1:7:1
 @q^7072^1:7:1
+@q^7073^0:15:0
+@q^7074^0:15:0
 @q^7085^2:9:0
 @q^7438^2:4:0
 @q^7492^2:4:0
@@ -463,6 +491,7 @@ GoldScout-export 6^k2vetg68mduz^14
 @q^279046^0:15:0
 @q^286646^3:4:0
 @q^286651^3:4:0
+@m^1429^Elwynn Forest
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
 @m^1443^Desolace
@@ -1184,6 +1213,8 @@ GoldScout-export 6^k2vetg68mduz^14
 @c^285280^
 @c^285281^
 @c^286152^
+@a^69^149:4,169:1
+@a^299^149:19,169:16
 @a^587^65:2
 @a^588^44:5,45:2
 @a^595^44:7,45:2
