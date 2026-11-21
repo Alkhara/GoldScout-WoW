@@ -275,6 +275,8 @@ def _parse_line(line, line_no, result):
     pick_drops = _items(fields[11], "pickpocket items", picks, line_no, result)
     if name is None or drops is None or pick_drops is None:
         return None
+    for item in PICKPOCKET_ONLY & set(drops):
+        del drops[item]
     if kills == 0 and drops:
         result.errors.append("Line %d: drops listed with no kills." % line_no)
         return None
@@ -496,6 +498,11 @@ def _z(drops_a, attempts_a, drops_b, attempts_b):
 
 
 QUEST_ITEM_CLASS = 12   # Blizzard's item class for quest items
+
+# Junkboxes come only from picking pockets. In a mob's kill loot they're a rogue's pickpocket recorded as a kill
+# (GoldScout before v0.12.40 missed picks of a mob you hadn't targeted, and pockets a Cheap Shot macro left full
+# turn up on the corpse), so they're dropped from kill loot as an export is read.
+PICKPOCKET_ONLY = frozenset((16882, 16883, 16884, 16885))   # Battered, Worn, Sturdy and Heavy Junkbox
 
 
 class Outlier:

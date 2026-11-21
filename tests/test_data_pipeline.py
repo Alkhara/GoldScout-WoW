@@ -124,6 +124,16 @@ class ValidatorTests(unittest.TestCase):
         # Lord Roccor drops Rockshard Pellets 200 at a time: 3 kills, 3 drops, 600 pellets.
         self.assertEqual(errors(GOOD.replace("4874:2:2", "4874:2:400")), [])
 
+    def test_junkboxes_in_kill_loot_are_dropped(self):
+        # Only pickpockets give junkboxes: in kill loot they're a pick recorded as a kill. Picked, they stay.
+        line = CLATTERING.replace("3812^11^0^", "3812^11^4^").replace("4874:2:2", "4874:2:2,16882:3:3") + "16883:1:1"
+        result = submission.parse(GOOD.splitlines()[0] + "\n" + line + "\n")
+        self.assertEqual(result.errors, [])
+        mob = result.mobs[0]
+        self.assertNotIn(16882, mob.i)
+        self.assertEqual(mob.pi, {16883: (1, 1)})
+        self.assertNotIn("16882", result.text())
+
     def test_unsafe_name_characters_are_removed_not_the_export(self):
         # Quotes, backslashes and the game's | codes become spaces: harmless, and the rest of the export counts.
         for name, kept in (('Spined" Crawler', "Spined Crawler"), ("|cffff0000Spined", "cffff0000Spined"),

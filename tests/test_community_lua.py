@@ -393,6 +393,96 @@ class LootCountingLuaTests(unittest.TestCase):
         fired = list(self.ns.fired.values())
         self.assertEqual((fired.count("LOOT_GAINED"), fired.count("LOOT_DROP")), (1, 1))
 
+    # Pick Pocket, as rogues play it: often macroed with Cheap Shot or Ambush, at a mob that isn't the target.
+    JUNKBOX, HIP_FLASK, HIDE = 16882, 5431, 3730
+
+    def cast_pick(self, guid, spell_id=921, name="Pick Pocket"):
+        g = self.lua.globals()
+        g.GetSpellInfo = lambda spell: "Pick Pocket" if spell == 921 else None
+        g.UnitClass = lambda unit: ("Rogue", "ROGUE")
+        self.game.units["player"] = self.lua.table_from({"guid": "Player-1-00000001"})
+        g.CombatLogGetCurrentEventInfo = lambda: (1.0, "SPELL_CAST_SUCCESS", False, "Player-1-00000001", "Me", 0, 0,
+                                                  guid, "Bear", 0, 0, spell_id, name)
+        self.ns.events["COMBAT_LOG_EVENT_UNFILTERED"]()
+
+    def picks(self):
+        entry = self.ns.db.drops[3809]
+        return (entry.p, {item: stat.d for item, stat in entry.pi.items()}) if entry else (None, {})
+
+    def test_a_pickpocket_window_from_a_mob_you_didnt_target_is_a_pickpocket(self):
+        self.cast_pick(BEAR)
+        self.loot(BEAR, self.JUNKBOX)                   # no target: a mouseover macro
+        self.assertEqual(self.picks(), (1, {self.JUNKBOX: 1}))
+        self.assertEqual(self.bear(), (0, {}))
+        self.game.now += 20
+        self.loot(BEAR, self.HIDE)                      # its corpse later: its own loot, counted as a kill
+        self.assertEqual(self.bear(), (1, {self.HIDE: 1}))
+
+    def test_classic_combat_logs_without_a_spell_id_still_count(self):
+        self.cast_pick(BEAR, spell_id=0)
+        self.loot(BEAR, self.JUNKBOX)
+        self.assertEqual(self.picks(), (1, {self.JUNKBOX: 1}))
+
+    def test_only_rogues_read_the_combat_log(self):
+        self.lua.globals().UnitClass = lambda unit: ("Warrior", "WARRIOR")
+        self.lua.globals().CombatLogGetCurrentEventInfo = lambda: self.fail("read the combat log")
+        self.ns.events["COMBAT_LOG_EVENT_UNFILTERED"]()
+
+    def test_other_casts_dont_count_as_pickpocketing(self):
+        self.cast_pick(BEAR, spell_id=1833, name="Cheap Shot")
+        self.loot(BEAR, self.HIDE)
+        self.assertEqual((self.bear(), self.picks()[0]), ((1, {self.HIDE: 1}), 0))
+
+    def test_a_corpse_whose_pockets_were_never_opened_isnt_recorded(self):
+        # Cheap Shot closed the pickpocket window before it opened: its loot is on the corpse with the mob's own.
+        self.cast_pick(BEAR)
+        self.game.now += 20
+        self.loot(BEAR, self.JUNKBOX, self.HIDE)
+        self.assertEqual((self.bear(), self.picks()), ((None, {}), (None, {})))
+        self.assertIn("LOOT_ACTION", list(self.ns.fired.values()))   # the hunt panel still counts the kill
+        self.loot(BEAR, self.HIDE)                                    # and reopening it doesn't count it either
+        self.assertEqual(self.bear(), (None, {}))
+
+    def test_a_corpse_with_pickpocket_loot_left_in_it_isnt_recorded(self):
+        self.cast_pick(BEAR)
+        self.open_window(BEAR, self.JUNKBOX, self.HIP_FLASK, take=(1,))   # bags full: the flask stays
+        self.game.now += 20
+        self.loot(BEAR, self.HIP_FLASK, self.HIDE)
+        self.assertEqual(self.picks(), (1, {self.JUNKBOX: 1, self.HIP_FLASK: 1}))
+        self.assertEqual(self.bear(), (0, {}))
+
+    def test_a_corpse_whose_pockets_were_emptied_counts(self):
+        self.cast_pick(BEAR)
+        self.loot(BEAR, self.JUNKBOX)
+        self.game.now += 20
+        self.loot(BEAR, self.HIDE)
+        self.assertEqual(self.bear(), (1, {self.HIDE: 1}))
+
+    def test_the_old_targeted_pickpocket_still_counts_and_guards_its_corpse(self):
+        self.game.units["target"] = self.lua.table_from({"guid": BEAR, "dead": False})
+        self.open_window(BEAR, self.JUNKBOX, self.HIP_FLASK, take=(1,))
+        self.game.units["target"] = self.lua.table_from({"guid": BEAR, "dead": True})
+        self.loot(BEAR, self.HIP_FLASK, self.HIDE)
+        self.assertEqual(self.picks(), (1, {self.JUNKBOX: 1, self.HIP_FLASK: 1}))
+        self.assertEqual(self.bear(), (0, {}))
+
+    def test_a_kill_counted_at_death_is_taken_back_when_its_corpse_is_mixed(self):
+        # Without CanLootUnit every solo kill counts at death.
+        self.cast_pick(BEAR)
+        self.game.now += 20
+        self.dies(BEAR)
+        self.assertEqual(self.bear(), (1, {}))
+        self.loot(BEAR, self.JUNKBOX, self.HIDE)
+        self.assertEqual(self.bear(), (0, {}))
+
+    def test_a_pick_cast_doesnt_make_its_corpse_a_pickpocket(self):
+        # Killed within seconds of the cast, as your dead target: the corpse, not its pockets.
+        self.cast_pick(BEAR)
+        self.game.units["target"] = self.lua.table_from({"guid": BEAR, "dead": True})
+        self.loot(BEAR, self.JUNKBOX, self.HIDE)
+        self.assertEqual(self.picks(), (None, {}))
+        self.assertEqual(self.bear(), (None, {}))   # pockets never emptied: not recorded
+
     def test_a_death_is_judged_once(self):
         self.dies(BEAR)
         self.dies(BEAR, unit="nameplate3")

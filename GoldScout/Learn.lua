@@ -77,6 +77,16 @@ local GATHER_SPELLS = {
 local GATHER_SECONDS = 3
 local lastGatherCast = -math.huge
 
+-- Pick Pocket, cast at a mob: [guid] = { at = GetTime() of the cast, window = a pickpocket loot window was
+-- read, leftover = that window closed with loot still in it }. Rogues often macro Pick Pocket with Cheap Shot
+-- or Ambush, so the pickpocket window only flashes or never opens, the mob needn't be the target, and loot
+-- left in its pockets turns up on its corpse. A loot window from that mob within PICK_SECONDS of the cast is
+-- the pickpocket; a corpse whose pockets were never emptied holds both, can't be told apart, and isn't
+-- recorded at all (the kill still counts for the hunt panel).
+local PICK_POCKET = 921
+local PICK_SECONDS = 3
+local picked = {}
+
 -- What gathering gives: leather, hides and scraps, herbs, ore and stone. A
 -- creature loot window with nothing else in it is gathering, even if the cast
 -- went unseen.
@@ -676,6 +686,12 @@ local function SourceRole(kind, guid, targetGUID, targetAlive, fishing, gatherin
     if targetAlive and guid == targetGUID then
       return "pick"
     end
+    -- So does looting a mob you just cast Pick Pocket at, targeted or not, unless it's your target and dead.
+    local pick = picked[guid]
+    if pick and not pick.window and GetTime() - pick.at <= PICK_SECONDS
+        and not (guid == targetGUID and not targetAlive) then
+      return "pick"
+    end
     if gathering then
       return "gather"
     end
@@ -760,7 +776,26 @@ local function OnLootReady()
     return
   end
   for guid, source in pairs(window.sources) do
-    if source.pending then
+    local pick = picked[guid]
+    if source.role == "pick" then
+      picked[guid] = pick or { at = GetTime() }
+      picked[guid].window = true
+    end
+    if source.role == "kill" and pick and (not pick.window or pick.leftover) and (source.new or source.pending) then
+      -- Its pockets' loot is on the corpse too: record neither, and take back the kill counted at its death.
+      picked[guid] = nil
+      counted[source.key] = true
+      source.mixed = true
+      if source.pending then
+        pendingDrops[guid] = nil
+        local entry = source.id and Entry(source.id, false)
+        if entry and learn and entry.k > 0 then
+          entry.k = entry.k - 1
+        end
+      else
+        ns.Fire("LOOT_ACTION", source.role, source.id)
+      end
+    elseif source.pending then
       -- Counted when it died; its drops still count now.
       pendingDrops[guid] = nil
       source.records = true
@@ -800,7 +835,7 @@ local function OnSlotCleared(slot)
   ns.Fire("LOOT_GAINED", slotInfo.item, slotInfo.quantity)
   for _, slotSource in ipairs(slotInfo.sources) do
     local source = window.sources[slotSource.guid]
-    if source and source.records and source.id and (source.role == "kill" or source.role == "pick") then
+    if source and (source.records or source.mixed) and source.id and (source.role == "kill" or source.role == "pick") then
       ns.Fire("LOOT_DROP", source.role, source.id, slotInfo.item, slotSource.quantity or slotInfo.quantity)
     end
   end
@@ -810,6 +845,17 @@ ns.On("LOOT_READY", OnLootReady)
 ns.On("LOOT_OPENED", OnLootReady)
 ns.On("LOOT_SLOT_CLEARED", OnSlotCleared)
 ns.On("LOOT_CLOSED", function()
+  -- Pickpocket loot you didn't take stays in its pockets and turns up on the corpse.
+  for _, slotInfo in pairs(window and window.slots or {}) do
+    if slotInfo.item and not slotInfo.cleared then
+      for _, slotSource in ipairs(slotInfo.sources) do
+        local source = window.sources[slotSource.guid]
+        if source and source.role == "pick" and picked[slotSource.guid] then
+          picked[slotSource.guid].leftover = true
+        end
+      end
+    end
+  end
   window = nil
   ns.Debounce("lootLearned", 2, function()
     ns.Fire("LOOT_LEARNED")
@@ -846,6 +892,27 @@ local function IsGatherSpell(spellID)
   local name = SpellName(spellID)
   return type(name) == "string" and gatherNames[name] == true
 end
+
+-- Pick Pocket casts, from the combat log: it names the mob, targeted or not. Classic's combat log may give
+-- no spell ID, so the spell's name (in this client's language) counts too.
+local pickName, isRogue
+ns.On("COMBAT_LOG_EVENT_UNFILTERED", function()
+  if isRogue == nil and UnitClass then
+    isRogue = select(2, UnitClass("player")) == "ROGUE"
+  end
+  if not isRogue or not CombatLogGetCurrentEventInfo then
+    return   -- it fires for every hit in sight: only rogues pick pockets
+  end
+  local _, subevent, _, sourceGUID, _, _, _, destGUID, _, _, _, spellID, spellName = CombatLogGetCurrentEventInfo()
+  if subevent ~= "SPELL_CAST_SUCCESS" or ns.Plain(sourceGUID) ~= ns.Plain(UnitGUID("player")) then
+    return
+  end
+  pickName = pickName or SpellName(PICK_POCKET)
+  spellID, spellName, destGUID = ns.Plain(spellID), ns.Plain(spellName), ns.Plain(destGUID)
+  if (spellID == PICK_POCKET or (spellName ~= nil and spellName == pickName)) and type(destGUID) == "string" then
+    picked[destGUID] = { at = GetTime() }
+  end
+end)
 
 ns.On("UNIT_SPELLCAST_SUCCEEDED", function(unit, _, spellID)
   if unit ~= "player" then
