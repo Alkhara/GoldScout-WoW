@@ -1,4 +1,4 @@
-GoldScout-export 6^ql4tc40kn032^5
+GoldScout-export 6^ql4tc40kn032^6
 4688^2^0^33^34^1443^0.5375^0.3889^2^Bonepaw Hyena^4582:1:1,12203:1:1^
 4690^4^0^36^38^1443^0.4602^0.5069^4^Rabid Bonepaw^4583:3:3,5637:1:1,12203:3:3^
 4728^1^0^31^32^1443^0.5441^0.3899^1^Gritjaw Basilisk^1701:1:1^
@@ -19,6 +19,7 @@ GoldScout-export 6^ql4tc40kn032^5
 @i^4603^Raw Spotted Yellowtail
 @i^5524^Thick-shelled Clam
 @i^5637^Large Fang
+@i^6357^Sealed Crate
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
 @i^6362^Raw Rockscale Cod
@@ -28,6 +29,7 @@ GoldScout-export 6^ql4tc40kn032^5
 @i^13422^Stonescale Eel
 @i^13755^Raw Winter Squid
 @i^17057^Shiny Fish Scales
+@i^21151^Rumsey Rum Black Label
 @i^21228^Mithril Bound Trunk
 @i^21243^Bloated Glossy Mightfish
 @i^213544^Scroll: TOPAZ YORAK
@@ -43,6 +45,7 @@ GoldScout-export 6^ql4tc40kn032^5
 @q^4603^1:7:1
 @q^5524^1:7:0
 @q^5637^1:7:1
+@q^6357^1:15:0
 @q^6358^1:7:1
 @q^6359^1:7:1
 @q^6362^1:7:1
@@ -52,10 +55,12 @@ GoldScout-export 6^ql4tc40kn032^5
 @q^13422^1:7:1
 @q^13755^1:0:1
 @q^17057^1:15:0
+@q^21151^1:0:0
 @q^21228^1:15:0
 @q^21243^2:15:0
 @q^213544^1:0:0
 @q^213545^1:0:0
+@m^1434^Stranglethorn Vale
 @m^1443^Desolace
 @m^1446^Tanaris
 @m^2548^Riverglades
@@ -787,6 +792,7 @@ GoldScout-export 6^ql4tc40kn032^5
 @a^11577^168:1,188:1,190:1,191:3,208:7,228:1
 @a^11578^306:1
 @a^256801^293:1
+@f^1434^0^92^288^3820:1:1,4603:14:14,6357:1:1,6358:12:12,6359:8:8,6362:47:47,13422:4:8,21151:2:4,21228:3:3^165:77,185:7,244:8
 @f^1446^0^28^285^4603:10:10,6359:4:4,6362:4:4,7973:2:2,13422:4:5,13755:4:4^73:27,252:1
 @f^2548^0^125^271^3820:3:6,4603:7:7,6358:19:19,6359:29:29,6362:32:32,13422:26:44,21228:9:9,21243:1:1^75:11,96:10,117:11,137:2,157:6,196:8,255:1,292:10,294:62,353:4
 @l^0^enUS

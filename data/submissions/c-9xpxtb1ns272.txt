@@ -1,4 +1,4 @@
-GoldScout-export 6^9xpxtb1ns272^5
+GoldScout-export 6^9xpxtb1ns272^6
 667^1^0^39^39^1434^0.4845^0.4114^1^Guerrier Skullsplitter^3864:1:1^
 669^8^0^41^42^1434^0.4554^0.4217^8^Chasseur Skullsplitter^1520:1:1,2730:1:1,4338:2:2,4599:1:1,8151:1:1,8153:2:5,248690:1:1^
 670^1^0^41^42^1434^0.4582^0.4178^1^Sorcier-docteur Skullsplitter^1520:1:1,4338:1:1,8153:1:1^
@@ -24,7 +24,7 @@ GoldScout-export 6^9xpxtb1ns272^5
 1563^3^0^42^43^1434^0.2996^0.8722^3^Bretteur de la Voile sanglante^3910:1:1,4338:1:2^
 1565^9^0^44^45^1434^0.2978^0.8950^9^Louve de mer de la Voile sanglante^2732:1:1,2751:1:1,3910:1:1,4306:1:1,4338:1:1,7909:1:1,8194:1:1,9260:1:1^
 1653^18^0^44^45^1434^0.3023^0.8902^18^Ancien magus de la Voile sanglante^3910:4:4,3927:1:1,4306:1:1,4338:3:3,4422:1:1,213543:1:1^
-1907^1^0^44^44^1434^0.2399^0.6273^1^Explorateur naga^^
+1907^23^0^43^44^1434^0.2666^0.6271^23^Explorateur naga^1645:2:2,2730:1:1,2735:1:1,3928:1:1,4025:1:1,4029:10:10,4421:1:1,4603:1:1,7973:5:5,17058:5:5,248690:1:1^
 2535^1^0^44^44^1434^0.3488^0.5068^1^Maury Pied bot Wilkins^^
 2536^1^0^44^44^1434^0.3461^0.5092^1^Jon-Jon le Corbeau^3925:1:1^
 2537^1^0^43^43^1434^0.4006^0.5809^1^Chucky Dix pouces^3926:1:1^
@@ -59,6 +59,7 @@ GoldScout-export 6^9xpxtb1ns272^5
 @i^2728^Les vertes collines de Strangleronce - Page 4
 @i^2730^Les vertes collines de Strangleronce - Page 6
 @i^2732^Les vertes collines de Strangleronce - Page 8
+@i^2735^Les vertes collines de Strangleronce - Page 11
 @i^2742^Les vertes collines de Strangleronce - Page 18
 @i^2744^Les vertes collines de Strangleronce - Page 20
 @i^2748^Les vertes collines de Strangleronce - Page 24
@@ -78,17 +79,21 @@ GoldScout-export 6^9xpxtb1ns272^5
 @i^3925^Longue-vue dorée de Jon-Jon
 @i^3926^Grand anneau de Chucky
 @i^3927^Cheddar affiné
+@i^3928^Potion de soins excellente
 @i^3932^Coffre de Smotts
 @i^4003^Cape en anneaux doubliers
 @i^4016^Mixture de Zanzil
 @i^4022^Maillet fracassant
 @i^4024^Bâton de guerre lourd
+@i^4025^Arc long équilibré
+@i^4029^Roseau akiris
 @i^4093^Grande queue de basilic
 @i^4096^Poil de gorille grossier
 @i^4097^Croc de gorille ébréché
 @i^4103^Clé de chaîne
 @i^4306^Etoffe de soie
 @i^4338^Etoffe de tisse-mage
+@i^4421^Parchemin de Protection III
 @i^4422^Parchemin d'Endurance III
 @i^4424^Parchemin d'Esprit III
 @i^4558^Tonneau vide
@@ -130,6 +135,7 @@ GoldScout-export 6^9xpxtb1ns272^5
 @q^2728^1:12:0
 @q^2730^1:12:0
 @q^2732^1:12:0
+@q^2735^1:12:0
 @q^2742^1:12:0
 @q^2744^1:12:0
 @q^2748^1:12:0
@@ -149,17 +155,21 @@ GoldScout-export 6^9xpxtb1ns272^5
 @q^3925^1:12:0
 @q^3926^1:12:0
 @q^3927^1:0:0
+@q^3928^1:0:0
 @q^3932^1:12:0
 @q^4003^0:4:0
 @q^4016^1:12:0
 @q^4022^0:2:0
 @q^4024^0:2:0
+@q^4025^0:2:0
+@q^4029^1:12:0
 @q^4093^0:15:0
 @q^4096^1:15:0
 @q^4097^0:15:0
 @q^4103^1:13:0
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4421^1:0:0
 @q^4422^1:0:0
 @q^4424^1:0:0
 @q^4558^0:15:0
@@ -554,7 +564,7 @@ GoldScout-export 6^9xpxtb1ns272^5
 @a^1563^345:1,346:2
 @a^1565^345:6,346:1,366:2
 @a^1653^345:12,346:6
-@a^1907^244:1
+@a^1907^244:6,245:17
 @a^2535^206:1
 @a^2536^206:1
 @a^2537^228:1

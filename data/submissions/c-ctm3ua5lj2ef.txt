@@ -1,4 +1,4 @@
-GoldScout-export 6^ctm3ua5lj2ef^33
+GoldScout-export 6^ctm3ua5lj2ef^34
 30^1^0^5^5^1429^0.3447^0.5313^1^Araignée forestière^^
 40^9^0^6^7^1429^0.5774^0.5922^9^Mineur kobold^159:1:1,772:1:1,773:1:1,1389:1:1,2212:1:1,2589:2:4,3189:1:1,4536:2:2^
 43^2^0^7^7^1429^0.6160^0.4774^2^Araignée minière^1476:2:2,5465:2:3^
@@ -55,9 +55,14 @@ GoldScout-export 6^ctm3ua5lj2ef^33
 1986^17^0^3^4^1438^0.5718^0.3046^17^Araignée Tissebois^1378:1:1,1476:9:9,2210:1:1,2211:1:1,3365:1:1,5166:10:10,7100:6:6,7101:4:4,10640:1:1^
 1988^8^0^2^3^1438^0.5689^0.4568^8^Grell^117:2:2,1367:1:1,1374:1:1,1377:1:1,1380:1:1,2589:4:4,3297:8:8^
 1994^2^0^5^5^1438^0.5670^0.2602^2^Githyiss la Vile^7101:1:1,277190:1:1^
-1995^1^0^5^5^1438^0.5902^0.5710^1^Hibou Strigid^4757:1:1,6889:1:2^
+1995^6^0^5^6^1438^0.5523^0.5929^6^Hibou Strigid^3411:3:3,4757:1:1,4775:1:1,4776:1:1,5572:1:1,6889:5:6,7096:1:1^
+1998^10^0^5^6^1438^0.5386^0.6211^10^Rôdeuse Tissebois^774:1:1,818:1:1,1476:5:5,3412:3:3,5465:6:11^
+2008^2^0^6^7^1438^0.6754^0.5942^2^Guerrier Pin-tordu^^
+2022^22^0^5^6^1438^0.5902^0.7064^22^Sylvain^159:1:1,765:1:1,785:1:1,1420:1:1,2652:1:1,5168:8:8,6716:1:1^
 2031^7^0^1^1^1438^0.6011^0.4529^7^Jeune sabre-de-nuit^1366:1:1,1367:1:1,3365:1:1,4865:4:4,7073:1:1,7074:3:3^
 2032^7^0^2^2^1438^0.6237^0.3729^7^Sabre-de-nuit galeux^1370:1:1,1372:1:1,1374:1:1,2652:1:1,4865:3:3,7073:2:2,7074:4:4^
+2042^11^0^5^6^1438^0.5320^0.5948^11^Sabre-de-nuit sauvage^3409:3:3,4813:1:1,4814:4:4,280087:6:6^
+2152^6^0^6^7^1438^0.4766^0.5382^6^Embusqué Pin-tordu^159:1:1,774:1:1,2589:5:10^
 2253^1^0^35^36^1416^0.4837^0.5722^1^Brute Cassecrête^3771:1:1^
 2406^1^0^32^32^1416^0.3871^0.8591^1^Lion des montagnes^1686:1:1,3731:1:1^
 2407^1^0^33^34^1416^0.3841^0.8748^1^Lion des montagnes massif^1686:1:1^
@@ -223,11 +228,15 @@ GoldScout-export 6^ctm3ua5lj2ef^33
 @i^159^Eau de source
 @i^750^Viande de loup coriace
 @i^755^Bougie fondue
+@i^765^Feuillargent
 @i^769^Morceau de viande de sanglier
 @i^771^Défense ébréchée de sanglier
 @i^772^Grande bougie
 @i^773^Poussière d'or
+@i^774^Malachite
 @i^779^Coquillage luisant
+@i^785^Mage royal
+@i^818^Oeil de tigre
 @i^955^Parchemin d'intelligence
 @i^981^Collier de Bernice
 @i^1006^Collier de cuivre
@@ -255,6 +264,7 @@ GoldScout-export 6^ctm3ua5lj2ef^33
 @i^1415^Marteau de charpentier
 @i^1416^Hachette rouillée
 @i^1417^Hache de guerre oxydée
+@i^1420^Brassards usés en cuir
 @i^1464^Serre de busard
 @i^1476^Patte d'araignée brisée
 @i^1520^Sueur de troll
@@ -321,6 +331,9 @@ GoldScout-export 6^ctm3ua5lj2ef^33
 @i^3385^Potion de mana inférieure
 @i^3402^Touffe de fourrure douce
 @i^3404^Aile de busard
+@i^3409^Croc de Sabre-de-nuit
+@i^3411^Plume de Hibou Strigid
+@i^3412^Soie d'araignée Tissebois
 @i^3641^Brassards de compagnon
 @i^3667^Viande de crocilisque tendre
 @i^3669^Bave gélatineuse
@@ -360,6 +373,8 @@ GoldScout-export 6^ctm3ua5lj2ef^33
 @i^4606^Morilles spongieuses
 @i^4636^Solide coffret en fer
 @i^4757^Coquilles d'oeuf brisées
+@i^4775^Bec craquelé
+@i^4776^Plume ébouriffée
 @i^4784^Pierre morte
 @i^4813^Petit collier en cuir
 @i^4814^Croc décoloré
@@ -370,6 +385,7 @@ GoldScout-export 6^ctm3ua5lj2ef^33
 @i^5128^Peau de lézard dépouillée
 @i^5133^Gésier suintant
 @i^5166^Glande à venin Tissebois
+@i^5168^Graine de sylvain
 @i^5404^Epaulières ophidiennes
 @i^5429^Un joli caillou
 @i^5431^Flasque vide
@@ -407,6 +423,7 @@ GoldScout-export 6^ctm3ua5lj2ef^33
 @i^6576^Ceinturon de défenseur de force
 @i^6627^Cuirasse d'écailles du mutant
 @i^6630^Targe de Seedcloud
+@i^6716^Schéma : Dynamite Ev-Lan
 @i^6826^Ecaille brillante
 @i^6889^Petit oeuf
 @i^6952^Fourrure d'ours épaisse
@@ -415,6 +432,7 @@ GoldScout-export 6^ctm3ua5lj2ef^33
 @i^7070^Eau élémentaire
 @i^7073^Croc brisé
 @i^7074^Griffes émoussées
+@i^7096^Plume arrachée
 @i^7098^Défense brisée
 @i^7100^Ichor gluant
 @i^7101^Oeil de bestiole
@@ -521,6 +539,7 @@ GoldScout-export 6^ctm3ua5lj2ef^33
 @i^276894^Idole antique des Gurubashi
 @i^277190^Crochet de Githyiss
 @i^279046^Pince de crabe craquelée
+@i^280087^Fourrure soyeuse de sabre-de-nuit
 @i^280426^Sac de poissons
 @i^281052^Peau d'Ombassa
 @i^286215^Fiole de sang d'animal
@@ -529,11 +548,15 @@ GoldScout-export 6^ctm3ua5lj2ef^33
 @q^159^1:0:0
 @q^750^1:12:0
 @q^755^0:15:0
+@q^765^1:7:1
 @q^769^1:7:1
 @q^771^0:15:0
 @q^772^1:12:0
 @q^773^1:12:0
+@q^774^2:7:1
 @q^779^0:15:0
+@q^785^1:7:1
+@q^818^2:7:1
 @q^955^1:0:0
 @q^981^1:12:0
 @q^1006^1:12:0
@@ -561,6 +584,7 @@ GoldScout-export 6^ctm3ua5lj2ef^33
 @q^1415^0:2:0
 @q^1416^0:2:0
 @q^1417^0:2:0
+@q^1420^0:4:0
 @q^1464^0:15:0
 @q^1476^0:15:0
 @q^1520^0:15:0
@@ -627,6 +651,9 @@ GoldScout-export 6^ctm3ua5lj2ef^33
 @q^3385^1:0:0
 @q^3402^0:15:0
 @q^3404^1:7:1
+@q^3409^1:12:0
+@q^3411^1:12:0
+@q^3412^1:12:0
 @q^3641^1:4:0
 @q^3667^1:7:1
 @q^3669^0:15:0
@@ -666,6 +693,8 @@ GoldScout-export 6^ctm3ua5lj2ef^33
 @q^4606^1:0:0
 @q^4636^2:15:0
 @q^4757^0:15:0
+@q^4775^0:15:0
+@q^4776^0:15:0
 @q^4784^0:15:0
 @q^4813^0:15:0
 @q^4814^0:15:0
@@ -676,6 +705,7 @@ GoldScout-export 6^ctm3ua5lj2ef^33
 @q^5128^0:15:0
 @q^5133^0:15:0
 @q^5166^1:12:0
+@q^5168^1:12:0
 @q^5404^3:4:0
 @q^5429^0:15:0
 @q^5431^0:15:0
@@ -713,6 +743,7 @@ GoldScout-export 6^ctm3ua5lj2ef^33
 @q^6576^2:4:0
 @q^6627^3:4:0
 @q^6630^3:4:0
+@q^6716^2:9:0
 @q^6826^0:15:0
 @q^6889^1:7:1
 @q^6952^1:12:0
@@ -721,6 +752,7 @@ GoldScout-export 6^ctm3ua5lj2ef^33
 @q^7070^1:7:1
 @q^7073^0:15:0
 @q^7074^0:15:0
+@q^7096^0:15:0
 @q^7098^0:15:0
 @q^7100^0:15:0
 @q^7101^0:15:0
@@ -827,6 +859,7 @@ GoldScout-export 6^ctm3ua5lj2ef^33
 @q^276894^1:12:0
 @q^277190^1:12:0
 @q^279046^0:15:0
+@q^280087^1:12:0
 @q^280426^1:12:0
 @q^281052^1:12:0
 @q^286215^1:12:0
@@ -2936,9 +2969,14 @@ GoldScout-export 6^ctm3ua5lj2ef^33
 @a^1986^91:1,111:5,131:11
 @a^1988^191:7,192:1
 @a^1994^111:2
-@a^1995^231:1
+@a^1995^230:2,231:1,250:1,251:2
+@a^1998^230:1,231:2,250:4,270:3
+@a^2008^233:2
+@a^2022^271:1,272:5,291:15,292:1
 @a^2031^172:2,191:2,192:3
 @a^2032^152:7
+@a^2042^209:1,230:2,231:1,232:1,250:6
+@a^2152^209:5,229:1
 @a^2253^229:1
 @a^2406^347:1
 @a^2407^347:1

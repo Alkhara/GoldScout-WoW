@@ -1,4 +1,4 @@
-GoldScout-export 6^sgxuglm6xo8h^17
+GoldScout-export 6^sgxuglm6xo8h^18
 36^10^0^11^12^1436^0.3626^0.4862^10^Harvest Golem^732:3:3,814:3:3,1274:1:1,3374:1:1,7350:1:1,9745:1:1,255007:4:4^
 94^2^0^5^5^1429^0.4293^0.5175^2^Defias Cutpurse^1369:1:1,1377:1:1^
 95^20^0^11^12^1436^0.4806^0.3773^20^Defias Smuggler^829:3:3,2589:10:15,2965:1:1,3374:1:1,4564:1:1,4678:1:1^
@@ -120,9 +120,22 @@ GoldScout-export 6^sgxuglm6xo8h^17
 10373^2^0^19^19^1439^0.5240^0.3353^2^Xabraxxis^2589:1:1^
 11713^8^0^14^15^1439^0.4586^0.9042^8^Blackwood Tracker^^
 11714^2^0^16^16^1439^0.4577^0.9062^2^Marosh the Devious^2592:1:2^
+250873^27^0^1^1^2521^0.4522^0.2448^27^Juvenile Vuldren^1368:1:1,1369:1:1,1377:1:1,1378:1:1,1380:1:1,2649:2:2,2652:1:1,2672:6:6,4865:14:14,7073:9:9,7074:11:11^
+250926^18^0^3^4^2521^0.3990^0.2707^18^Scrawny Ursera^1376:2:2,2652:1:1,2654:1:1,7073:10:10,7074:8:8,251918:6:6,251925:7:7^
+250937^8^0^4^4^2521^0.3721^0.2492^8^Ursera Scavenger^7073:3:3,7074:1:1,251925:5:5^
+251115^1^0^5^5^2521^0.3570^0.2515^1^Urs'anah^7073:1:1,252665:1:1^
+251143^6^0^2^3^2521^0.4673^0.1898^6^Roiling Winds^2211:1:1,251930:4:4,251931:2:2^
+251145^9^0^4^4^2521^0.3725^0.3405^9^Al'Aketh Brute^159:3:3,1376:1:1,2589:3:3,2654:1:1,4540:6:6^
+251160^12^0^2^3^2521^0.4693^0.1835^12^Al'Aketh Convert^1366:2:2,1367:1:1,1377:1:1,1378:1:1,2057:1:1,2589:5:5,3365:1:1,4540:1:1^
+251169^8^0^1^1^2521^0.4639^0.2625^8^Pesky Cirrusfly^1372:2:2,2650:1:1,251927:3:3,251928:5:5^
+251402^1^0^2^2^2521^0.4823^0.2786^1^Cirrusfly Soldier^251928:1:1^
+251404^1^0^3^3^2521^0.4830^0.2837^1^Cirrusfly Queen^251928:1:1^
+251448^5^0^4^4^2521^0.3740^0.3377^5^Al'Aketh Neophyte^159:2:2,1372:1:1,1378:1:1,2589:1:1,2656:1:1,4540:3:3^
+256935^1^0^5^5^2521^0.3610^0.3352^1^Malduko Cloudcrush^^
 270196^1^0^12^12^1439^0.4515^0.5820^1^Jai'vhanel^17056:1:1,281038:1:1^
 270294^1^0^21^21^1439^0.5930^0.2275^1^Baron Marinous^279275:1:1^
 271903^1^0^20^20^1439^0.4976^0.1119^1^Stormscale Beastmistress^279276:1:1,280686:1:1^
+@i^159^Refreshing Spring Water
 @i^414^Dalaran Sharp
 @i^537^Dull Frenzy Scale
 @i^555^Rough Vulture Feathers
@@ -147,8 +160,15 @@ GoldScout-export 6^sgxuglm6xo8h^17
 @i^1205^Melon Juice
 @i^1210^Shadowgem
 @i^1274^Hops
+@i^1366^Ragged Leather Pants
+@i^1367^Ragged Leather Boots
+@i^1368^Ragged Leather Gloves
 @i^1369^Ragged Leather Belt
+@i^1372^Ragged Cloak
+@i^1376^Frayed Cloak
 @i^1377^Frayed Gloves
+@i^1378^Frayed Pants
+@i^1380^Frayed Robe
 @i^1381^A Mysterious Message
 @i^1401^Green Tea Leaf
 @i^1411^Withered Staff
@@ -181,9 +201,11 @@ GoldScout-export 6^sgxuglm6xo8h^17
 @i^1875^Thistlenettle's Badge
 @i^1894^Miners' Union Card
 @i^1927^Deadmines Cleaver
+@i^2057^Pitted Defias Shortsword
 @i^2073^Dwarven Hatchet of the Wolf
 @i^2091^Magic Dust
 @i^2138^Sharpened Letter Opener
+@i^2211^Bent Large Shield
 @i^2215^Wooden Shield
 @i^2216^Simple Buckler
 @i^2217^Rectangular Shield
@@ -194,6 +216,11 @@ GoldScout-export 6^sgxuglm6xo8h^17
 @i^2592^Wool Cloth
 @i^2608^Threshadon Ambergris
 @i^2632^Curved Dagger of Magic
+@i^2649^Flimsy Chain Belt
+@i^2650^Flimsy Chain Boots
+@i^2652^Flimsy Chain Cloak
+@i^2654^Flimsy Chain Pants
+@i^2656^Flimsy Chain Vest
 @i^2672^Stringy Wolf Meat
 @i^2673^Coyote Meat
 @i^2674^Crawler Meat
@@ -225,6 +252,7 @@ GoldScout-export 6^sgxuglm6xo8h^17
 @i^3290^Ancestral Gloves
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
+@i^3365^Frayed Bracers
 @i^3374^Calico Belt
 @i^3376^Canvas Belt
 @i^3377^Canvas Bracers
@@ -234,6 +262,7 @@ GoldScout-export 6^sgxuglm6xo8h^17
 @i^4359^Handful of Copper Bolts
 @i^4361^Copper Tube
 @i^4363^Copper Modulator
+@i^4540^Tough Hunk of Bread
 @i^4564^Spiked Club of Magic
 @i^4567^Merc Sword of the Wolf
 @i^4571^War Knife of the Gorilla
@@ -324,6 +353,13 @@ GoldScout-export 6^sgxuglm6xo8h^17
 @i^248683^Waylaid Crate: Apprentice Ore
 @i^248684^Waylaid Crate: Apprentice Textiles
 @i^248702^Waylaid Crate: Apprentice Fabrics
+@i^251918^Scrawny Ursera Claw
+@i^251925^Tattered Ursera Feather
+@i^251927^Chipped Cirrusfly Stinger
+@i^251928^Torn Insect Wing
+@i^251930^Minor Essence of the Four Winds
+@i^251931^Depleted Windstone
+@i^252665^Head of Urs'anah
 @i^254548^Longshore Murloc Gill
 @i^255007^Golem Isospring
 @i^255010^Harvester Gyrostabilizer
@@ -334,6 +370,7 @@ GoldScout-export 6^sgxuglm6xo8h^17
 @i^280686^Rod of Deep Dominion
 @i^281038^Feather of Jai'vhanel
 @i^284715^First Mate Band
+@q^159^1:0:0
 @q^414^1:0:0
 @q^537^0:15:0
 @q^555^0:15:0
@@ -358,8 +395,15 @@ GoldScout-export 6^sgxuglm6xo8h^17
 @q^1205^1:0:0
 @q^1210^2:7:1
 @q^1274^1:12:0
+@q^1366^0:4:0
+@q^1367^0:4:0
+@q^1368^0:4:0
 @q^1369^0:4:0
+@q^1372^0:4:0
+@q^1376^0:4:0
 @q^1377^0:4:0
+@q^1378^0:4:0
+@q^1380^0:4:0
 @q^1381^1:12:0
 @q^1401^1:0:0
 @q^1411^0:2:0
@@ -392,9 +436,11 @@ GoldScout-export 6^sgxuglm6xo8h^17
 @q^1875^1:12:0
 @q^1894^1:12:0
 @q^1927^2:2:0
+@q^2057^1:2:0
 @q^2073^2:2:0
 @q^2091^1:0:0
 @q^2138^0:2:0
+@q^2211^0:4:0
 @q^2215^0:4:0
 @q^2216^0:4:0
 @q^2217^0:4:0
@@ -405,6 +451,11 @@ GoldScout-export 6^sgxuglm6xo8h^17
 @q^2592^1:7:1
 @q^2608^0:15:0
 @q^2632^2:2:0
+@q^2649^0:4:0
+@q^2650^0:4:0
+@q^2652^0:4:0
+@q^2654^0:4:0
+@q^2656^0:4:0
 @q^2672^1:7:1
 @q^2673^1:7:1
 @q^2674^1:7:1
@@ -436,6 +487,7 @@ GoldScout-export 6^sgxuglm6xo8h^17
 @q^3290^1:4:0
 @q^3299^0:15:0
 @q^3300^0:15:0
+@q^3365^0:4:0
 @q^3374^0:4:0
 @q^3376^0:4:0
 @q^3377^0:4:0
@@ -445,6 +497,7 @@ GoldScout-export 6^sgxuglm6xo8h^17
 @q^4359^1:7:1
 @q^4361^1:7:1
 @q^4363^1:7:1
+@q^4540^1:0:0
 @q^4564^2:2:0
 @q^4567^2:2:0
 @q^4571^2:2:0
@@ -535,6 +588,13 @@ GoldScout-export 6^sgxuglm6xo8h^17
 @q^248683^1:0:1
 @q^248684^1:0:1
 @q^248702^2:0:1
+@q^251918^1:12:0
+@q^251925^0:15:0
+@q^251927^0:15:0
+@q^251928^0:15:0
+@q^251930^0:15:0
+@q^251931^0:15:0
+@q^252665^1:12:0
 @q^254548^1:12:0
 @q^255007^1:7:1
 @q^255010^1:12:0
@@ -555,6 +615,7 @@ GoldScout-export 6^sgxuglm6xo8h^17
 @m^1450^Moonglade
 @m^1455^Ironforge
 @m^1457^Darnassus
+@m^2521^Zephras Isle
 @c^118^
 @c^724^
 @c^733^
@@ -1270,6 +1331,7 @@ GoldScout-export 6^sgxuglm6xo8h^17
 @c^279269^
 @c^279270^
 @c^279271^
+@c^279938^
 @c^279940^
 @c^279943^
 @c^279947^
@@ -1286,10 +1348,12 @@ GoldScout-export 6^sgxuglm6xo8h^17
 @c^279966^
 @c^279967^
 @c^279968^
+@c^279969^
 @c^279972^
 @c^279973^
 @c^279974^
 @c^279976^
+@c^279979^
 @c^279981^
 @c^279982^
 @c^279985^
@@ -1400,6 +1464,18 @@ GoldScout-export 6^sgxuglm6xo8h^17
 @a^10373^130:2
 @a^11713^369:8
 @a^11714^369:2
+@a^250873^88:4,89:9,108:6,109:8
+@a^250926^107:7,108:10,127:1
+@a^250937^87:5,107:3
+@a^251115^107:1
+@a^251143^69:5,89:1
+@a^251145^127:9
+@a^251160^69:12
+@a^251169^109:8
+@a^251402^109:1
+@a^251404^109:1
+@a^251448^127:5
+@a^256935^127:1
 @a^270196^229:1
 @a^270294^91:1
 @a^271903^49:1

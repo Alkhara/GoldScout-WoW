@@ -1,4 +1,4 @@
-GoldScout-export 6^w8d9jwgbmanj^16
+GoldScout-export 6^w8d9jwgbmanj^17
 1565^2^0^44^45^1434^0.2946^0.8917^2^Bloodsail Sea Dog^4306:1:2,7555:1:1^
 1653^1^0^44^44^1434^0.3067^0.9000^1^Bloodsail Elder Magus^9260:1:1^
 2546^1^0^48^48^1434^0.3066^0.8990^1^Fleet Master Firallon^4338:1:1,7520:1:1^
@@ -17,8 +17,9 @@ GoldScout-export 6^w8d9jwgbmanj^16
 3560^1^0^40^40^1418^0.4797^0.7509^1^Healing Ward^^
 4505^5^0^43^44^1434^0.3003^0.8940^5^Bloodsail Deckhand^2751:1:1,4306:1:1,9260:1:1^
 4506^3^0^43^44^1434^0.3019^0.8969^3^Bloodsail Swabby^3927:1:1,4306:1:2,262889:1:1^
-4844^1^0^36^36^1418^0.3849^0.1336^1^Shadowforge Surveyor^4338:1:2^
-4845^2^0^37^37^1418^0.4037^0.1089^2^Shadowforge Ruffian^3864:1:1,4306:2:5^
+4844^3^0^35^36^1418^0.3745^0.1232^3^Shadowforge Surveyor^4338:1:2,4544:1:1,8052:1:1^
+4845^3^0^36^37^1418^0.4051^0.1242^3^Shadowforge Ruffian^3864:1:1,4306:2:5^
+4846^2^0^35^35^1418^0.3921^0.1539^2^Shadowforge Digger^4306:1:1,8009:1:1,8052:1:1^
 5422^1^0^40^41^1446^0.5795^0.2814^1^Scorpid Hunter^19935:1:1^
 254560^6^0^39^40^2548^0.4748^0.4811^6^Twilight Shadowmancer^5429:1:1,266425:3:7^
 255769^7^0^37^38^2548^0.3012^0.6091^7^Redridge Brute^3402:1:1,4306:2:4,20763:1:1^
@@ -124,6 +125,7 @@ GoldScout-export 6^w8d9jwgbmanj^16
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4460^Ripped Wing Webbing
+@i^4544^Mulgore Spice Bread
 @i^4582^Soft Bushy Tail
 @i^4583^Thick Furry Mane
 @i^4601^Soft Banana Bread
@@ -150,6 +152,8 @@ GoldScout-export 6^w8d9jwgbmanj^16
 @i^7524^Gossamer Cape of the Bandit
 @i^7555^Regal Star of the Eagle
 @i^7973^Big-mouth Clam
+@i^8009^Dentrium Power Stone
+@i^8052^An'Alleum Power Stone
 @i^8146^Wicked Claw
 @i^9260^Volatile Rum
 @i^9285^Field Plate Vambraces of the Knight
@@ -238,6 +242,7 @@ GoldScout-export 6^w8d9jwgbmanj^16
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4460^0:15:0
+@q^4544^1:0:0
 @q^4582^1:12:0
 @q^4583^0:15:0
 @q^4601^1:0:0
@@ -264,6 +269,8 @@ GoldScout-export 6^w8d9jwgbmanj^16
 @q^7524^2:4:0
 @q^7555^2:4:0
 @q^7973^1:7:0
+@q^8009^1:12:0
+@q^8052^1:12:0
 @q^8146^1:7:1
 @q^9260^1:0:0
 @q^9285^2:4:0
@@ -1034,8 +1041,9 @@ GoldScout-export 6^w8d9jwgbmanj^16
 @a^3560^309:1
 @a^4505^345:2,346:3
 @a^4506^345:1,346:1,366:1
-@a^4844^47:1
-@a^4845^47:1,48:1
+@a^4844^47:3
+@a^4845^47:1,48:1,68:1
+@a^4846^67:2
 @a^5422^111:1
 @a^254560^189:6
 @a^255769^225:4,246:2,266:1
