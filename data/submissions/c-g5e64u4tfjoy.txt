@@ -1,4 +1,4 @@
-GoldScout-export 6^g5e64u4tfjoy^9
+GoldScout-export 6^g5e64u4tfjoy^10
 48^5^0^21^22^1431^0.7855^0.7016^5^Skeletal Warrior^2592:1:2^
 202^17^0^23^24^1431^0.6036^0.5389^17^Skeletal Horror^929:1:1,1205:1:1,2589:1:1,2592:5:6^
 203^2^0^22^22^1431^0.7862^0.6957^2^Skeletal Mage^^
@@ -82,6 +82,14 @@ GoldScout-export 6^g5e64u4tfjoy^9
 4788^2^0^21^21^1414^0.4387^0.3506^2^Fallenroot Satyr^1818:1:1,4306:1:3^
 4802^2^0^20^21^1414^0.4388^0.3507^2^Blackfathom Tide Priestess^5524:1:1,17057:1:1^
 5429^1^0^45^45^1446^0.5369^0.4244^1^Fire Roc^11418:1:1^
+5430^1^0^47^47^1446^0.3316^0.6109^1^Searing Roc^3404:1:1,3914:1:1,5829:1:1^
+5455^3^0^47^48^1446^0.3420^0.4564^3^Centipaar Wasp^6302:2:2,8587:3:3^
+5456^5^0^48^49^1446^0.3568^0.4588^5^Centipaar Stinger^6300:2:2,6302:2:2,8587:1:1^
+5459^2^0^47^47^1446^0.3599^0.4417^2^Centipaar Tunneler^6302:1:1,8587:1:1^
+5471^4^0^45^46^1446^0.4000^0.7197^4^Dunemaul Ogre^4338:2:4^
+5472^7^0^46^47^1446^0.4086^0.7151^7^Dunemaul Enforcer^4338:1:3,4422:1:1,4599:1:1^
+5473^1^0^47^47^1446^0.4157^0.7175^1^Dunemaul Ogre Mage^3928:1:1^
+5475^3^0^47^48^1446^0.4195^0.7225^3^Dunemaul Warlock^14793:1:1^
 5615^10^0^43^44^1446^0.6230^0.3633^10^Wastewander Rogue^3927:1:1,4338:4:8,8483:4:4,248692:1:1^
 5616^10^0^40^41^1446^0.6020^0.2326^10^Wastewander Thief^3927:3:3,4306:3:4,4338:1:1,8398:1:1,8483:6:6^
 5617^4^0^42^43^1446^0.5980^0.3676^4^Wastewander Shadow Mage^3927:1:1,4306:1:1,4338:1:2,8483:2:2^
@@ -185,6 +193,7 @@ GoldScout-export 6^g5e64u4tfjoy^9
 @i^3385^Lesser Mana Potion
 @i^3402^Soft Patch of Fur
 @i^3403^Ivory Boar Tusk
+@i^3404^Buzzard Wing
 @i^3667^Tender Crocolisk Meat
 @i^3671^Lifeless Skull
 @i^3685^Raptor Egg
@@ -200,6 +209,7 @@ GoldScout-export 6^g5e64u4tfjoy^9
 @i^3820^Stranglekelp
 @i^3864^Citrine
 @i^3897^Dizzy's Eye
+@i^3914^Journeyman's Backpack
 @i^3927^Fine Aged Cheddar
 @i^3928^Superior Healing Potion
 @i^3938^Crochet Bracers
@@ -209,6 +219,7 @@ GoldScout-export 6^g5e64u4tfjoy^9
 @i^4097^Chipped Gorilla Tooth
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
+@i^4422^Scroll of Stamina III
 @i^4424^Scroll of Spirit III
 @i^4428^Spider Palp
 @i^4539^Goldenbark Apple
@@ -216,6 +227,7 @@ GoldScout-export 6^g5e64u4tfjoy^9
 @i^4556^Speckled Shell Fragment
 @i^4582^Soft Bushy Tail
 @i^4583^Thick Furry Mane
+@i^4599^Cured Ham Steak
 @i^4601^Soft Banana Bread
 @i^4603^Raw Spotted Yellowtail
 @i^4606^Spongy Morel
@@ -229,7 +241,10 @@ GoldScout-export 6^g5e64u4tfjoy^9
 @i^5569^Seaweed
 @i^5635^Sharp Claw
 @i^5637^Large Fang
+@i^5829^Razor-sharp Beak
 @i^6149^Greater Mana Potion
+@i^6300^Husk Fragment
+@i^6302^Delicate Insect Wing
 @i^6307^Message in a Bottle
 @i^6308^Raw Bristle Whisker Catfish
 @i^6358^Oily Blackmouth
@@ -249,6 +264,7 @@ GoldScout-export 6^g5e64u4tfjoy^9
 @i^8137^Chromite Bracers
 @i^8398^Pattern: Tough Scorpid Gloves
 @i^8483^Wastewander Water Pouch
+@i^8587^Centipaar Insect Parts
 @i^8723^Caliph Scorpidsting's Head
 @i^9246^Firebeard's Head
 @i^9260^Volatile Rum
@@ -264,10 +280,12 @@ GoldScout-export 6^g5e64u4tfjoy^9
 @i^13754^Raw Glossy Mightfish
 @i^13755^Raw Winter Squid
 @i^13874^Heavy Crate
+@i^13875^Ironbound Locked Chest
 @i^13876^40 Pound Yellowtail
 @i^13877^47 Pound Yellowtail
 @i^13879^59 Pound Yellowtail
 @i^14239^Darkmist Cape of Power
+@i^14793^Protector Waistband
 @i^15140^Cutthroat's Mantle of Agility
 @i^15242^Honed Stiletto of Healing
 @i^15259^Hefty Battlehammer of the Monkey
@@ -353,6 +371,7 @@ GoldScout-export 6^g5e64u4tfjoy^9
 @q^3385^1:0:0
 @q^3402^0:15:0
 @q^3403^0:15:0
+@q^3404^1:7:1
 @q^3667^1:7:1
 @q^3671^0:15:0
 @q^3685^1:7:1
@@ -368,6 +387,7 @@ GoldScout-export 6^g5e64u4tfjoy^9
 @q^3820^1:7:1
 @q^3864^2:7:1
 @q^3897^1:12:0
+@q^3914^1:1:0
 @q^3927^1:0:0
 @q^3928^1:0:0
 @q^3938^0:4:0
@@ -377,6 +397,7 @@ GoldScout-export 6^g5e64u4tfjoy^9
 @q^4097^0:15:0
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4422^1:0:0
 @q^4424^1:0:0
 @q^4428^0:15:0
 @q^4539^1:0:0
@@ -384,6 +405,7 @@ GoldScout-export 6^g5e64u4tfjoy^9
 @q^4556^0:15:0
 @q^4582^1:12:0
 @q^4583^0:15:0
+@q^4599^1:0:0
 @q^4601^1:0:0
 @q^4603^1:7:1
 @q^4606^1:0:0
@@ -397,7 +419,10 @@ GoldScout-export 6^g5e64u4tfjoy^9
 @q^5569^0:15:0
 @q^5635^1:7:1
 @q^5637^1:7:1
+@q^5829^0:15:0
 @q^6149^1:0:0
+@q^6300^0:15:0
+@q^6302^0:15:0
 @q^6307^1:15:0
 @q^6308^1:7:1
 @q^6358^1:7:1
@@ -417,6 +442,7 @@ GoldScout-export 6^g5e64u4tfjoy^9
 @q^8137^2:4:0
 @q^8398^2:9:0
 @q^8483^1:12:0
+@q^8587^1:12:0
 @q^8723^1:12:0
 @q^9246^1:12:0
 @q^9260^1:0:0
@@ -432,10 +458,12 @@ GoldScout-export 6^g5e64u4tfjoy^9
 @q^13754^1:7:1
 @q^13755^1:0:1
 @q^13874^1:15:0
+@q^13875^1:15:0
 @q^13876^1:15:0
 @q^13877^1:15:0
 @q^13879^1:15:0
 @q^14239^2:4:0
+@q^14793^2:4:0
 @q^15140^2:4:0
 @q^15242^2:2:0
 @q^15259^2:2:0
@@ -902,6 +930,14 @@ GoldScout-export 6^g5e64u4tfjoy^9
 @a^4788^148:2
 @a^4802^128:1,148:1
 @a^5429^170:1
+@a^5430^246:1
+@a^5455^167:1,186:1,187:1
+@a^5456^166:1,167:1,186:1,187:2
+@a^5459^167:1,187:1
+@a^5471^287:2,288:1,308:1
+@a^5472^268:1,287:3,288:3
+@a^5473^288:1
+@a^5475^288:3
 @a^5615^132:2,151:1,152:6,153:1
 @a^5616^91:4,92:6
 @a^5617^132:1,151:2,152:1
@@ -933,6 +969,6 @@ GoldScout-export 6^g5e64u4tfjoy^9
 @f^1434^0^12^297^6358:3:3,13422:4:6,21228:5:5^265:4,306:3,325:5
 @f^1437^0^15^252^6307:1:1,6358:2:2,6359:2:2,6361:10:10^240:6,241:9
 @f^1439^0^1^300^6358:1:1^247:1
-@f^1446^0^407^252^3820:3:5,4603:153:153,6358:12:12,6359:47:47,6362:39:39,7973:37:37,13422:33:63,13754:23:23,13755:50:50,13874:1:1,13876:1:1,13877:1:1,13879:1:1,21228:6:6^73:51,93:1,113:329,133:4,153:20,174:2
-@f^2548^0^16^276^3820:1:3,4603:1:1,13422:7:11,21150:1:1,21151:2:2,21153:3:3,21228:1:1^195:5,196:4,207:3,208:3,236:1
+@f^1446^0^558^252^3820:3:5,4603:216:216,6358:12:12,6359:64:64,6362:49:49,7973:48:48,13422:55:112,13754:41:41,13755:56:56,13874:1:1,13875:1:1,13876:3:3,13877:1:1,13879:1:1,21228:7:7^73:51,93:1,113:329,133:4,153:20,174:152,214:1
+@f^2548^0^58^276^3820:1:3,4603:3:3,6358:3:3,6359:4:4,6362:4:4,13422:27:53,21150:1:1,21151:3:4,21153:3:3,21228:9:9^75:10,76:5,96:10,117:6,137:7,195:5,196:8,207:3,208:3,236:1
 @l^0^enUS

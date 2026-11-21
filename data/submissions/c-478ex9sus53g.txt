@@ -1,7 +1,13 @@
-GoldScout-export 6^478ex9sus53g^3
+GoldScout-export 6^478ex9sus53g^5
 206^13^0^29^30^1431^0.7217^0.6937^13^Faulreißer der Nachtheuler^1780:1:1,1784:1:1,2221:1:1,2222:1:1,3770:1:1,5635:3:3^
+212^3^0^29^30^1431^0.3395^0.7618^3^Krieger der Splitterfäuste^211854:1:1^
+300^1^0^30^30^1431^0.3696^0.8253^1^Zzarc'Vul^1968:1:1,3770:1:1,4306:1:2^
 511^1^0^26^26^1431^0.8054^0.7128^1^Irrsinniger Ghul^1946:1:1,4306:1:1^
+892^1^0^28^28^1431^0.3628^0.7614^1^Zuchtmeister der Splitterfäuste^^
 920^6^0^30^31^1431^0.7341^0.7570^6^Besudelter Nachtheuler^3770:1:1,9843:1:1^
+1251^2^0^28^29^1431^0.3707^0.7825^2^Feuertreiber der Splitterfäuste^2592:1:1^
+1258^1^0^25^25^1431^0.6703^0.3658^1^Schwarzer Verheerermastiff^^
+1487^1^0^30^30^1431^0.3816^0.8077^1^Versklaver der Splitterfäuste^^
 1663^2^0^0^0^0^0.0000^0.0000^0^^273817:1:1,273819:1:1^
 1666^1^0^0^0^0^0.0000^0.0000^0^^2280:1:1,3640:1:1^
 1706^9^0^0^0^0^0.0000^0.0000^0^^1205:1:1,1206:1:1,2589:1:2,2592:1:2,2909:1:1,3069:1:1,15223:1:1,211784:1:1,274092:1:1^
@@ -31,6 +37,7 @@ GoldScout-export 6^478ex9sus53g^3
 @i^1801^Rohlederschulterpolster
 @i^1827^Fleischerbeil
 @i^1946^Marys Handspiegel
+@i^1968^Ogermonokel
 @i^2221^Tartschenschild
 @i^2222^Turmschild
 @i^2280^Kams Wanderstecken
@@ -58,6 +65,7 @@ GoldScout-export 6^478ex9sus53g^3
 @i^15223^Gezackter Stern der Magie
 @i^211784^Schriftrolle: WUBBA WUBBA
 @i^211853^Schriftrolle: VOCE WELL
+@i^211854^Schriftrolle: OMIT KESA
 @i^211855^Schriftrolle: STHENIC LUNATE
 @i^248686^Abgefangene Kiste: Kräuter des Gesellen
 @i^251961^Arkanpartikel
@@ -79,6 +87,7 @@ GoldScout-export 6^478ex9sus53g^3
 @q^1801^0:4:0
 @q^1827^0:2:0
 @q^1946^1:12:0
+@q^1968^1:12:0
 @q^2221^0:4:0
 @q^2222^0:4:0
 @q^2280^3:2:0
@@ -106,6 +115,7 @@ GoldScout-export 6^478ex9sus53g^3
 @q^15223^2:2:0
 @q^211784^1:0:0
 @q^211853^1:0:0
+@q^211854^1:0:0
 @q^211855^1:0:0
 @q^248686^1:0:1
 @q^251961^1:12:0
@@ -840,8 +850,14 @@ GoldScout-export 6^478ex9sus53g^3
 @c^279987^
 @c^286152^
 @a^206^254:1,274:5,294:7
+@a^212^286:1,306:1,307:1
+@a^300^327:1
 @a^511^296:1
+@a^892^307:1
 @a^920^294:2,314:4
+@a^1251^307:2
+@a^1258^153:1
+@a^1487^327:1
 @a^6170^294:1,314:1
 @f^1437^0^2^127^6358:1:1,6361:1:1^220:2
 @l^0^deDE
