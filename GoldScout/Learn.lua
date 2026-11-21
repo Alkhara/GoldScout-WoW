@@ -893,28 +893,50 @@ local function IsGatherSpell(spellID)
   return type(name) == "string" and gatherNames[name] == true
 end
 
--- Pick Pocket casts, from the combat log: it names the mob, targeted or not. Classic's combat log may give
--- no spell ID, so the spell's name (in this client's language) counts too.
-local pickName, isRogue
-ns.On("COMBAT_LOG_EVENT_UNFILTERED", function()
-  if isRogue == nil and UnitClass then
-    isRogue = select(2, UnitClass("player")) == "ROGUE"
-  end
-  if not isRogue or not CombatLogGetCurrentEventInfo then
-    return   -- it fires for every hit in sight: only rogues pick pockets
-  end
-  local _, subevent, _, sourceGUID, _, _, _, destGUID, _, _, _, spellID, spellName = CombatLogGetCurrentEventInfo()
-  if subevent ~= "SPELL_CAST_SUCCESS" or ns.Plain(sourceGUID) ~= ns.Plain(UnitGUID("player")) then
-    return
+-- Pick Pocket casts. The cast names its mob only by name (UNIT_SPELLCAST_SENT), so the mob is whichever unit
+-- you could have cast it at with that name: your target, mouseover or soft target, or focus. (The combat log
+-- names the mob outright, but on Midnight-era clients only Blizzard's own interface may listen to it:
+-- registering it brings up the game's "blocked" warning for GoldScout.)
+local PICK_UNITS = { "target", "mouseover", "softenemy", "softinteract", "focus" }
+local pickName
+local pickCast -- { cast = cast GUID, guid = the mob's GUID }, from sending the cast until it goes off
+
+local function IsPickPocket(spellID)
+  if spellID == PICK_POCKET then
+    return true
   end
   pickName = pickName or SpellName(PICK_POCKET)
-  spellID, spellName, destGUID = ns.Plain(spellID), ns.Plain(spellName), ns.Plain(destGUID)
-  if (spellID == PICK_POCKET or (spellName ~= nil and spellName == pickName)) and type(destGUID) == "string" then
-    picked[destGUID] = { at = GetTime() }
+  return pickName ~= nil and SpellName(spellID) == pickName
+end
+
+local function PickTarget(name)
+  for _, unit in ipairs(PICK_UNITS) do
+    local ok, guid = pcall(UnitGUID, unit)
+    guid = ok and ns.Plain(guid) or nil
+    if type(guid) == "string" and not ns.Plain(UnitIsDead(unit))
+        and (name == nil or ns.Plain(UnitName(unit)) == name) then
+      return guid
+    end
   end
+end
+
+ns.On("UNIT_SPELLCAST_SENT", function(unit, target, castGUID, spellID)
+  if unit ~= "player" then
+    return
+  end
+  spellID = ns.Plain(spellID)
+  if type(spellID) ~= "number" or not IsPickPocket(spellID) then
+    pickCast = nil
+    return
+  end
+  local name = ns.Plain(target)
+  if name == "" then
+    name = nil
+  end
+  pickCast = { cast = ns.Plain(castGUID), guid = PickTarget(name) }
 end)
 
-ns.On("UNIT_SPELLCAST_SUCCEEDED", function(unit, _, spellID)
+ns.On("UNIT_SPELLCAST_SUCCEEDED", function(unit, castGUID, spellID)
   if unit ~= "player" then
     return
   end
@@ -924,6 +946,11 @@ ns.On("UNIT_SPELLCAST_SUCCEEDED", function(unit, _, spellID)
   end
   if IsGatherSpell(spellID) then
     lastGatherCast = GetTime()
+  end
+  local cast = ns.Plain(castGUID)
+  if pickCast and pickCast.guid and (pickCast.cast == nil or pickCast.cast == cast) and IsPickPocket(spellID) then
+    picked[pickCast.guid] = { at = GetTime() }
+    pickCast = nil
   end
 end)
 

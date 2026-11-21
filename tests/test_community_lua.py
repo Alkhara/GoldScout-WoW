@@ -396,14 +396,16 @@ class LootCountingLuaTests(unittest.TestCase):
     # Pick Pocket, as rogues play it: often macroed with Cheap Shot or Ambush, at a mob that isn't the target.
     JUNKBOX, HIP_FLASK, HIDE = 16882, 5431, 3730
 
-    def cast_pick(self, guid, spell_id=921, name="Pick Pocket"):
+    def cast_pick(self, guid, spell_id=921, unit="mouseover", name="Ashenvale Bear", succeed=True):
+        # The cast names its mob by name only; the mob is the unit with that name (a mouseover macro here).
         g = self.lua.globals()
-        g.GetSpellInfo = lambda spell: "Pick Pocket" if spell == 921 else None
-        g.UnitClass = lambda unit: ("Rogue", "ROGUE")
-        self.game.units["player"] = self.lua.table_from({"guid": "Player-1-00000001"})
-        g.CombatLogGetCurrentEventInfo = lambda: (1.0, "SPELL_CAST_SUCCESS", False, "Player-1-00000001", "Me", 0, 0,
-                                                  guid, "Bear", 0, 0, spell_id, name)
-        self.ns.events["COMBAT_LOG_EVENT_UNFILTERED"]()
+        g.GetSpellInfo = lambda spell: "Pick Pocket" if spell in (921, 99921) else None
+        g.UnitName = lambda u: (self.game.units[u].name or "Ashenvale Bear") if self.game.units[u] else None
+        if unit:
+            self.game.units[unit] = self.lua.table_from({"guid": guid, "dead": False, "name": "Ashenvale Bear"})
+        self.ns.events["UNIT_SPELLCAST_SENT"]("player", name, "Cast-1", spell_id)
+        if succeed:
+            self.ns.events["UNIT_SPELLCAST_SUCCEEDED"]("player", "Cast-1", spell_id)
 
     def picks(self):
         entry = self.ns.db.drops[3809]
@@ -418,18 +420,39 @@ class LootCountingLuaTests(unittest.TestCase):
         self.loot(BEAR, self.HIDE)                      # its corpse later: its own loot, counted as a kill
         self.assertEqual(self.bear(), (1, {self.HIDE: 1}))
 
-    def test_classic_combat_logs_without_a_spell_id_still_count(self):
-        self.cast_pick(BEAR, spell_id=0)
+    def test_this_clients_own_pick_pocket_spell_id_counts_by_its_name(self):
+        self.cast_pick(BEAR, spell_id=99921)
         self.loot(BEAR, self.JUNKBOX)
         self.assertEqual(self.picks(), (1, {self.JUNKBOX: 1}))
 
-    def test_only_rogues_read_the_combat_log(self):
-        self.lua.globals().UnitClass = lambda unit: ("Warrior", "WARRIOR")
-        self.lua.globals().CombatLogGetCurrentEventInfo = lambda: self.fail("read the combat log")
-        self.ns.events["COMBAT_LOG_EVENT_UNFILTERED"]()
+    def test_goldscout_never_listens_to_the_combat_log(self):
+        # On Midnight-era clients only Blizzard's interface may register it: an add-on that does gets the
+        # game's "blocked from an action only available to the Blizzard UI" warning at every load.
+        for path in (ROOT / "GoldScout").rglob("*.lua"):
+            self.assertNotIn("COMBAT_LOG_EVENT", path.read_text(encoding="utf-8"), path.name)
+
+    def test_the_pick_is_the_unit_the_cast_names_not_just_the_target(self):
+        wolf = "Creature-0-1-1-1-525-0000000002"
+        self.game.units["target"] = self.lua.table_from({"guid": wolf, "dead": False, "name": "Mangy Wolf"})
+        self.cast_pick(BEAR)
+        self.game.units["target"] = None
+        self.loot(BEAR, self.JUNKBOX)
+        self.assertEqual(self.picks(), (1, {self.JUNKBOX: 1}))
+
+    def test_a_cast_at_no_unit_you_can_see_records_nothing(self):
+        self.cast_pick(BEAR, unit=None, name="Someone Else")
+        self.game.now += 20
+        self.loot(BEAR, self.HIDE)
+        self.assertEqual(self.bear(), (1, {self.HIDE: 1}))
+
+    def test_a_pick_pocket_that_never_goes_off_records_nothing(self):
+        self.cast_pick(BEAR, succeed=False)
+        self.game.now += 20
+        self.loot(BEAR, self.HIDE)
+        self.assertEqual(self.bear(), (1, {self.HIDE: 1}))
 
     def test_other_casts_dont_count_as_pickpocketing(self):
-        self.cast_pick(BEAR, spell_id=1833, name="Cheap Shot")
+        self.cast_pick(BEAR, spell_id=1833)
         self.loot(BEAR, self.HIDE)
         self.assertEqual((self.bear(), self.picks()[0]), ((1, {self.HIDE: 1}), 0))
 

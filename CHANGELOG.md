@@ -7,6 +7,8 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- **No more "GoldScout was blocked" warning after loading:** v0.12.40 watched the combat log to spot your Pick Pocket casts, and the game only lets its own interface do that, so it warned that GoldScout had been blocked. GoldScout now spots the cast without the combat log, and pickpocketing is still recorded the same way.
+
 ## v0.12.40
 
 - **Pickpocketing is recorded right, however you macro it:** GoldScout now sees your Pick Pocket cast itself, so pockets you pick without targeting the mob count as pickpockets, not kills. When Cheap Shot or Ambush closes the pickpocket window before you empty it, the pocket loot ends up on the corpse with the mob's own; that corpse is now left out of your drop rates instead of making the mob look like it drops junkboxes. Junkboxes already shared as kill loot are left out of the community data too.
