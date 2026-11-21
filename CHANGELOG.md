@@ -7,7 +7,10 @@ releases add their own line automatically.
 
 ## Unreleased
 
+## v0.12.41
+
 - **No more "GoldScout was blocked" warning after loading:** v0.12.40 watched the combat log to spot your Pick Pocket casts, and the game only lets its own interface do that, so it warned that GoldScout had been blocked. GoldScout now spots the cast without the combat log, and pickpocketing is still recorded the same way.
+- Updated drop data from the community.
 
 ## v0.12.40
 
