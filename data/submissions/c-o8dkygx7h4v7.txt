@@ -1,4 +1,4 @@
-GoldScout-export 6^o8dkygx7h4v7^4
+GoldScout-export 6^o8dkygx7h4v7^5
 3^1^0^25^25^1431^0.2240^0.3235^1^Flesh Eater^887:1:1,4306:1:1^
 117^1^0^11^12^1436^0.4075^0.2225^1^Riverpaw Gnoll^2589:1:2^
 157^2^0^14^15^1436^0.4166^0.3096^2^Goretusk^731:1:1,769:2:4,2677:1:1,9763:1:1^
@@ -37,8 +37,14 @@ GoldScout-export 6^o8dkygx7h4v7^4
 930^12^0^24^25^1431^0.3249^0.4557^12^Black Widow Hatchling^878:2:2,1081:6:6,1130:4:4,2251:7:7,3174:7:7,4428:2:2^
 948^1^0^26^26^1431^0.2271^0.3278^1^Rotted One^887:1:1,1129:1:1,2589:1:2^
 949^2^0^25^26^1431^0.1634^0.3975^2^Carrion Recluse^1288:1:1,2251:1:1,3174:2:2,3182:1:1,4428:1:1^
+1024^1^0^20^20^1437^0.1428^0.3749^1^Bluegill Murloc^2764:1:1,5524:1:1^
+1025^4^0^21^22^1437^0.1381^0.3775^4^Bluegill Puddlejumper^730:3:3,5784:1:1,17057:1:1^
+1026^1^0^23^23^1437^0.1368^0.3801^1^Bluegill Forager^5524:1:1,17057:1:1^
+1027^2^0^24^25^1437^0.1424^0.3518^2^Bluegill Warrior^730:1:1,1468:1:1,1774:1:1,5784:1:1,17057:2:2^
 1109^1^0^14^14^1436^0.3069^0.3809^1^Fleshripper^6889:1:1^
 1110^12^0^27^28^1431^0.1643^0.3595^12^Skeletal Raider^2592:2:3,4306:3:4,4606:2:2^
+1157^9^0^26^27^1437^0.1384^0.3003^9^Cursed Sailor^2592:2:3,4306:1:2,248686:1:1^
+1158^3^0^27^28^1437^0.1405^0.2961^3^Cursed Marine^4306:1:1^
 2462^2^0^25^25^1431^0.2268^0.3290^2^Flesh Eating Worm^^
 4065^3^0^21^22^1433^0.6113^0.5337^3^Blackrock Sentry^1819:1:1,3199:1:1^
 4462^1^0^23^24^1433^0.6397^0.5572^1^Blackrock Hunter^2589:1:2,9802:1:1^
@@ -48,6 +54,7 @@ GoldScout-export 6^o8dkygx7h4v7^4
 @i^422^Dwarven Mild
 @i^556^Buzzard Beak
 @i^727^Notched Shortsword of Healing
+@i^730^Murloc Eye
 @i^731^Goretusk Snout
 @i^769^Chunk of Boar Meat
 @i^771^Chipped Boar Tusk
@@ -69,11 +76,13 @@ GoldScout-export 6^o8dkygx7h4v7^4
 @i^1288^Large Venom Sac
 @i^1445^Blackrock Pauldrons
 @i^1464^Buzzard Talon
+@i^1468^Murloc Fin
 @i^1475^Small Venom Sac
 @i^1598^Rot Blossom
 @i^1746^Linked Chain Belt
 @i^1753^Linked Chain Vest
 @i^1758^Reinforced Chain Gloves
+@i^1774^Brocade Cloak
 @i^1775^Brocade Gloves
 @i^1777^Brocade Shoulderpads
 @i^1819^Gouging Pick
@@ -87,6 +96,7 @@ GoldScout-export 6^o8dkygx7h4v7^4
 @i^2673^Coyote Meat
 @i^2677^Boar Ribs
 @i^2698^Recipe: Cooked Crab Claw
+@i^2764^Small Dagger
 @i^2794^An Old History Book
 @i^2964^Burnt Leather Gloves
 @i^2966^Warrior's Pants
@@ -117,9 +127,11 @@ GoldScout-export 6^o8dkygx7h4v7^4
 @i^4775^Cracked Bill
 @i^4776^Ruffled Feather
 @i^5114^Severed Talon
+@i^5524^Thick-shelled Clam
 @i^5571^Small Black Pouch
 @i^5573^Green Leather Bag
 @i^5635^Sharp Claw
+@i^5784^Slimy Murloc Scale
 @i^6344^Formula: Enchant Bracer - Minor Spirit
 @i^6507^Infantry Bracers
 @i^6508^Infantry Cloak
@@ -139,15 +151,18 @@ GoldScout-export 6^o8dkygx7h4v7^4
 @i^9818^Fortified Chain of Frost Protection
 @i^14170^Buccaneer's Mantle
 @i^17056^Light Feather
+@i^17057^Shiny Fish Scales
 @i^211780^Scroll: KWYJIBO
 @i^211784^Scroll: WUBBA WUBBA
 @i^211786^Scroll: CHAP BALK WELLES
 @i^211787^Scroll: LOWER PING WHOMEVER
+@i^248686^Waylaid Crate: Journeyman Herbs
 @i^248687^Waylaid Crate: Journeyman Ore
 @i^281142^Merrick's Bow
 @q^422^1:0:0
 @q^556^0:15:0
 @q^727^2:2:0
+@q^730^1:7:1
 @q^731^1:7:1
 @q^769^1:7:1
 @q^771^0:15:0
@@ -169,11 +184,13 @@ GoldScout-export 6^o8dkygx7h4v7^4
 @q^1288^1:7:1
 @q^1445^1:4:0
 @q^1464^0:15:0
+@q^1468^1:7:1
 @q^1475^1:7:1
 @q^1598^1:12:0
 @q^1746^0:4:0
 @q^1753^0:4:0
 @q^1758^0:4:0
+@q^1774^0:4:0
 @q^1775^0:4:0
 @q^1777^0:4:0
 @q^1819^0:2:0
@@ -187,6 +204,7 @@ GoldScout-export 6^o8dkygx7h4v7^4
 @q^2673^1:7:1
 @q^2677^1:7:1
 @q^2698^1:9:0
+@q^2764^0:2:0
 @q^2794^1:12:0
 @q^2964^1:4:0
 @q^2966^2:4:0
@@ -217,9 +235,11 @@ GoldScout-export 6^o8dkygx7h4v7^4
 @q^4775^0:15:0
 @q^4776^0:15:0
 @q^5114^0:15:0
+@q^5524^1:7:0
 @q^5571^1:1:0
 @q^5573^1:1:0
 @q^5635^1:7:1
+@q^5784^1:7:1
 @q^6344^2:9:0
 @q^6507^1:4:0
 @q^6508^1:4:0
@@ -239,15 +259,18 @@ GoldScout-export 6^o8dkygx7h4v7^4
 @q^9818^2:4:0
 @q^14170^1:4:0
 @q^17056^1:15:1
+@q^17057^1:15:0
 @q^211780^1:0:0
 @q^211784^1:0:0
 @q^211786^1:0:0
 @q^211787^1:0:0
+@q^248686^1:0:1
 @q^248687^1:0:1
 @q^281142^1:15:0
 @m^1431^Duskwood
 @m^1433^Redridge Mountains
 @m^1436^Westfall
+@m^1437^Wetlands
 @c^2840^
 @c^2841^
 @c^2842^
@@ -304,8 +327,14 @@ GoldScout-export 6^o8dkygx7h4v7^4
 @a^930^146:2,166:4,186:3,206:2,226:1
 @a^948^124:1
 @a^949^143:1,163:1
+@a^1024^142:1
+@a^1025^142:4
+@a^1026^142:1
+@a^1027^142:2
 @a^1109^146:1
 @a^1110^123:6,142:1,143:5
+@a^1157^102:4,122:5
+@a^1158^102:2,122:1
 @a^2462^124:2
 @a^4065^191:1,232:2
 @a^4462^232:1

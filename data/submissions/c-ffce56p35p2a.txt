@@ -1,7 +1,7 @@
-GoldScout-export 5^ffce56p35p2a^7
+GoldScout-export 5^ffce56p35p2a^8
 2241^1^0^33^33^1416^0.4812^0.8644^1^Syndicate Thief^3601:1:1^
-2248^7^0^30^31^1424^0.4358^0.3233^7^Cave Yeti^3385:1:1,3771:1:1^
-2249^7^0^31^32^1424^0.4270^0.3215^7^Ferocious Yeti^^
+2248^39^0^30^31^1424^0.4594^0.3157^39^Cave Yeti^1708:1:1,1710:1:1,3385:1:1,3771:2:2,5637:2:2,15231:2:2^
+2249^26^0^31^32^1424^0.4418^0.3007^26^Ferocious Yeti^1708:1:1,3786:1:1,3816:1:1,7110:1:1^
 2264^2^0^24^24^1424^0.3641^0.4464^2^Hillsbrad Tailor^2592:1:2^
 2265^2^0^24^25^1424^0.3268^0.4450^2^Hillsbrad Apprentice Blacksmith^2592:1:1^
 2266^6^0^23^24^1424^0.3533^0.4563^6^Hillsbrad Farmer^2592:3:6,3039:1:1,4538:1:1,262888:1:1^
@@ -45,6 +45,8 @@ GoldScout-export 5^ffce56p35p2a^7
 @i^1206^Moss Agate
 @i^1470^Murloc Skin Bag
 @i^1478^Scroll of Protection II
+@i^1708^Sweet Nectar
+@i^1710^Greater Healing Potion
 @i^1775^Brocade Gloves
 @i^1776^Brocade Pants
 @i^1800^Rawhide Pants
@@ -67,6 +69,8 @@ GoldScout-export 5^ffce56p35p2a^7
 @i^3712^Turtle Meat
 @i^3730^Big Bear Meat
 @i^3771^Wild Hog Shank
+@i^3786^Shiny Dirk
+@i^3816^Reflective Heater
 @i^3820^Stranglekelp
 @i^4306^Silk Cloth
 @i^4428^Spider Palp
@@ -77,6 +81,7 @@ GoldScout-export 5^ffce56p35p2a^7
 @i^5524^Thick-shelled Clam
 @i^5569^Seaweed
 @i^5635^Sharp Claw
+@i^5637^Large Fang
 @i^5785^Thick Murloc Scale
 @i^5810^Fresh Carcass
 @i^6308^Raw Bristle Whisker Catfish
@@ -85,11 +90,13 @@ GoldScout-export 5^ffce56p35p2a^7
 @i^6903^Gaze Dreamer Pants
 @i^6909^Strike of the Hydra
 @i^7072^Naga Scale
+@i^7110^Silver-thread Armor
 @i^7561^Schematic: Goblin Jumper Cables
 @i^11121^Darkwater Talwar
 @i^11152^Formula: Enchant Gloves - Fishing
 @i^11407^Torn Bear Pelt
 @i^14742^Hulking Boots
+@i^15231^Splitting Hatchet of Healing
 @i^15250^Glimmering Flamberge of Holy Wrath
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
@@ -107,6 +114,8 @@ GoldScout-export 5^ffce56p35p2a^7
 @q^1206^2:7:1
 @q^1470^1:1:0
 @q^1478^1:0:0
+@q^1708^1:0:0
+@q^1710^1:0:0
 @q^1775^0:4:0
 @q^1776^0:4:0
 @q^1800^0:4:0
@@ -129,6 +138,8 @@ GoldScout-export 5^ffce56p35p2a^7
 @q^3712^1:7:1
 @q^3730^1:7:1
 @q^3771^1:0:0
+@q^3786^0:2:0
+@q^3816^0:4:0
 @q^3820^1:7:1
 @q^4306^1:7:1
 @q^4428^0:15:0
@@ -139,6 +150,7 @@ GoldScout-export 5^ffce56p35p2a^7
 @q^5524^1:7:0
 @q^5569^0:15:0
 @q^5635^1:7:1
+@q^5637^1:7:1
 @q^5785^1:7:1
 @q^5810^1:12:0
 @q^6308^1:7:1
@@ -147,11 +159,13 @@ GoldScout-export 5^ffce56p35p2a^7
 @q^6903^3:4:0
 @q^6909^3:2:0
 @q^7072^1:7:1
+@q^7110^2:4:0
 @q^7561^1:9:0
 @q^11121^3:2:0
 @q^11152^2:9:0
 @q^11407^1:12:0
 @q^14742^2:4:0
+@q^15231^2:2:0
 @q^15250^2:2:0
 @q^17057^1:15:0
 @q^17058^1:15:0
@@ -621,8 +635,8 @@ GoldScout-export 5^ffce56p35p2a^7
 @c^285278^
 @c^286152^
 @a^2241^349:1
-@a^2248^128:6,129:1
-@a^2249^128:7
+@a^2248^108:3,109:3,128:7,129:26
+@a^2249^108:9,109:4,128:10,129:3
 @a^2264^167:1,187:1
 @a^2265^166:2
 @a^2266^166:1,167:2,186:1,187:2

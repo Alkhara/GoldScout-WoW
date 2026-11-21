@@ -1,4 +1,4 @@
-GoldScout-export 6^qtzr3pesrdlg^12
+GoldScout-export 6^qtzr3pesrdlg^13
 1025^3^0^21^22^1437^0.1499^0.3381^3^Bluegill Puddlejumper^730:1:1,1468:1:1,5524:2:2,17057:1:1^
 1026^1^0^22^22^1437^0.1493^0.3425^1^Bluegill Forager^1468:1:1,5784:1:1,6308:1:3^
 1027^9^0^24^25^1437^0.1440^0.3355^9^Bluegill Warrior^730:2:2,929:1:1,1468:1:1,5784:2:2,17057:2:2,211853:1:1^
@@ -63,8 +63,14 @@ GoldScout-export 6^qtzr3pesrdlg^12
 7396^9^0^0^0^0^0.0000^0.0000^0^^4306:1:2,4338:2:2,4601:1:1,9933:1:1^
 7397^1^0^0^0^0^0.0000^0.0000^0^^^
 7405^2^0^0^0^0^0.0000^0.0000^0^^12037:1:1,19937:1:1^
+7847^1^0^46^46^1446^0.6294^0.3543^1^Caliph Scorpidsting^8723:1:1^
+7855^3^0^44^45^1446^0.7264^0.4603^3^Southsea Pirate^4338:1:2,9260:1:1,14269:1:1,20519:1:1^
+7856^7^0^44^45^1446^0.7528^0.4519^7^Southsea Freebooter^4306:1:2,4338:1:1,9260:1:1,20519:2:2^
+7857^7^0^44^45^1446^0.7397^0.4697^7^Southsea Dock Worker^4338:2:2,9260:1:1,20519:2:2^
+7858^6^0^44^45^1446^0.7536^0.4565^6^Southsea Swashbuckler^4338:2:2,9260:1:1,20519:2:2^
 7872^1^0^34^34^1413^0.4688^0.9174^1^Death's Head Cultist^^
 7873^1^0^33^33^1413^0.4586^0.9001^1^Razorfen Battleguard^^
+7883^1^0^45^45^1446^0.7347^0.4714^1^Andre Firebeard^9246:1:1,20519:1:1^
 8567^1^0^0^0^0^0.0000^0.0000^0^^274385:1:1^
 8996^7^0^42^43^1446^0.6267^0.3556^7^Voidwalker Minion^^
 9377^1^0^33^34^1441^0.7186^0.7024^1^Swirling Vortex^^
@@ -181,7 +187,10 @@ GoldScout-export 6^qtzr3pesrdlg^12
 @i^8401^Pattern: Tough Scorpid Leggings
 @i^8402^Pattern: Tough Scorpid Helm
 @i^8483^Wastewander Water Pouch
+@i^8723^Caliph Scorpidsting's Head
 @i^8746^Interlaced Cowl
+@i^9246^Firebeard's Head
+@i^9260^Volatile Rum
 @i^9355^Hoop Earring
 @i^9389^Revelosh's Spaulders of the Beast
 @i^9398^Worn Running Boots
@@ -203,6 +212,7 @@ GoldScout-export 6^qtzr3pesrdlg^12
 @i^12037^Mystery Meat
 @i^12206^Tender Crab Meat
 @i^14221^Geomancer's Bracers of Spirit
+@i^14269^Gaea's Slippers of the Hierophant
 @i^14590^Hawkeye's Bracers
 @i^15157^Nocturnal Leggings of the Bandit
 @i^15365^Trickster's Handwraps of the Elder
@@ -210,6 +220,7 @@ GoldScout-export 6^qtzr3pesrdlg^12
 @i^17057^Shiny Fish Scales
 @i^19937^Small Scorpid Claw
 @i^19938^Heavy Scorpid Leg
+@i^20519^Southsea Pirate Hat
 @i^20763^Broken Weapon
 @i^211853^Scroll: VOCE WELL
 @i^248690^Waylaid Crate: Earthly Expert Herbs
@@ -308,7 +319,10 @@ GoldScout-export 6^qtzr3pesrdlg^12
 @q^8401^2:9:0
 @q^8402^2:9:0
 @q^8483^1:12:0
+@q^8723^1:12:0
 @q^8746^0:4:0
+@q^9246^1:12:0
+@q^9260^1:0:0
 @q^9355^0:15:0
 @q^9389^3:4:0
 @q^9398^3:4:0
@@ -330,6 +344,7 @@ GoldScout-export 6^qtzr3pesrdlg^12
 @q^12037^1:7:1
 @q^12206^1:7:1
 @q^14221^2:4:0
+@q^14269^2:4:0
 @q^14590^2:4:0
 @q^15157^2:4:0
 @q^15365^2:4:0
@@ -337,6 +352,7 @@ GoldScout-export 6^qtzr3pesrdlg^12
 @q^17057^1:15:0
 @q^19937^0:15:0
 @q^19938^0:15:0
+@q^20519^1:12:0
 @q^20763^0:15:0
 @q^211853^1:0:0
 @q^248690^1:0:1
@@ -1070,8 +1086,14 @@ GoldScout-export 6^qtzr3pesrdlg^12
 @a^5618^91:1,112:2,132:7
 @a^5623^131:1,132:2,151:1,152:2
 @a^5646^108:1
+@a^7847^152:1
+@a^7855^174:1,194:2
+@a^7856^174:1,195:6
+@a^7857^194:7
+@a^7858^194:1,195:5
 @a^7872^369:1
 @a^7873^369:1
+@a^7883^194:1
 @a^8996^92:1,151:1,152:4,153:1
 @a^9377^294:1
 @a^9396^109:1
