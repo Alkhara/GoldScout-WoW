@@ -1,5 +1,6 @@
-GoldScout-export 6^4beqixncmtle^4
+GoldScout-export 6^4beqixncmtle^5
 2105^1^0^30^30^1432^0.2550^0.0598^1^Mountaineer Dokkin^^
+2351^1^0^21^22^1424^0.5995^0.3097^1^Gray Bear^2940:1:1^
 6206^1^0^0^0^0^0.0000^0.0000^0^^^
 6207^2^0^0^0^0^0.0000^0.0000^0^^^
 6211^3^0^0^0^0^0.0000^0.0000^0^^3770:1:1,4306:1:2,9308:1:1^
@@ -21,9 +22,11 @@ GoldScout-export 6^4beqixncmtle^4
 7079^1^0^0^0^0^0.0000^0.0000^0^^9453:1:1,9823:1:1^
 7603^11^0^0^0^0^0.0000^0.0000^0^^2592:2:2,4306:2:2,4542:1:1,7415:1:1^
 7800^1^0^0^0^0^0.0000^0.0000^0^^7192:1:1,9299:1:1,9461:1:1,9864:1:1^
+@i^929^Healing Potion
 @i^1783^Cross-stitched Gloves
 @i^2220^Box Shield
 @i^2592^Wool Cloth
+@i^2940^Bloody Bear Paw
 @i^3385^Lesser Mana Potion
 @i^3770^Mutton Chop
 @i^3827^Mana Potion
@@ -33,6 +36,7 @@ GoldScout-export 6^4beqixncmtle^4
 @i^6289^Raw Longjaw Mud Snapper
 @i^6291^Raw Brilliant Smallfish
 @i^6308^Raw Bristle Whisker Catfish
+@i^6309^17 Pound Catfish
 @i^6310^19 Pound Catfish
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
@@ -53,9 +57,13 @@ GoldScout-export 6^4beqixncmtle^4
 @i^9864^Renegade Boots of Intellect
 @i^10406^Scaled Leather Headband of the Sorcerer
 @i^21071^Raw Sagefish
+@i^21113^Watertight Trunk
+@i^21114^Rumsey Rum Dark
+@q^929^1:0:0
 @q^1783^0:4:0
 @q^2220^0:4:0
 @q^2592^1:7:1
+@q^2940^0:15:0
 @q^3385^1:0:0
 @q^3770^1:0:0
 @q^3827^1:0:0
@@ -65,6 +73,7 @@ GoldScout-export 6^4beqixncmtle^4
 @q^6289^1:7:1
 @q^6291^1:7:1
 @q^6308^1:7:1
+@q^6309^1:15:0
 @q^6310^1:15:0
 @q^6358^1:7:1
 @q^6359^1:7:1
@@ -85,6 +94,8 @@ GoldScout-export 6^4beqixncmtle^4
 @q^9864^2:4:0
 @q^10406^2:4:0
 @q^21071^1:7:1
+@q^21113^1:15:0
+@q^21114^1:0:0
 @m^1424^Hillsbrad Foothills
 @m^1432^Loch Modan
 @m^1434^Stranglethorn Vale
@@ -809,7 +820,8 @@ GoldScout-export 6^4beqixncmtle^4
 @c^279987^
 @c^286152^
 @a^2105^25:1
-@f^1424^0^19^150^3827:1:1,6289:2:2,6308:11:11,21071:5:5^112:19
+@a^2351^131:1
+@f^1424^0^185^150^929:1:1,3827:1:1,6289:25:25,6308:55:55,6309:1:1,21071:94:94,21113:6:6,21114:2:4^112:55,131:46,132:84
 @f^1434^0^3^150^6358:1:1,6359:1:1,6362:1:1^305:3
 @f^1454^0^216^31^6289:140:140,6291:37:37,6308:38:38,6310:1:1^113:197,133:1,134:18
 @l^0^enUS

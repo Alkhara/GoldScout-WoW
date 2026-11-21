@@ -1,4 +1,4 @@
-GoldScout-export 6^q9i5774k0ea5^16
+GoldScout-export 6^q9i5774k0ea5^17
 588^3^0^34^34^1434^0.2332^0.1193^3^Bloodscalp Scout^^
 595^1^0^34^35^1434^0.2299^0.1262^1^Bloodscalp Hunter^^
 597^2^0^36^36^1434^0.2369^0.1056^2^Bloodscalp Berserker^^
@@ -67,6 +67,7 @@ GoldScout-export 6^q9i5774k0ea5^16
 1941^8^0^6^7^1420^0.5611^0.4162^8^Rot Hide Graverobber^159:1:1,1416:1:1,2589:3:4,2773:1:1,2834:1:1^
 1971^1^0^13^13^1421^0.5163^0.1400^1^Ivar the Foul^3621:1:1^
 1983^1^0^14^14^1421^0.4542^0.2124^1^Nightlash^1179:1:1,2589:1:2,3622:1:1^
+3098^10^0^1^2^1411^0.4366^0.6441^10^Mottled Boar^117:2:2,1369:1:1,1374:1:1,4865:3:3,7098:6:6^
 3125^1^0^6^6^1411^0.5635^0.7380^1^Clattering Scorpid^^
 3197^3^0^9^10^1411^0.5268^0.1081^3^Burning Blade Fanatic^14544:1:1^
 3198^2^0^10^11^1411^0.5273^0.1100^2^Burning Blade Apprentice^^
@@ -88,6 +89,7 @@ GoldScout-export 6^q9i5774k0ea5^16
 3271^1^0^13^14^1413^0.5866^0.2731^1^Razormane Mystic^2589:1:2^
 3272^17^0^12^13^1413^0.4443^0.2442^17^Kolkar Wrangler^2287:3:3,2589:8:14,5020:2:2,5030:4:4^
 3273^21^0^13^14^1413^0.4467^0.2386^21^Kolkar Stormer^1179:1:1,1510:3:3,2287:1:1,2589:5:9,4686:1:1,5030:10:10^
+3281^1^0^4^4^1411^0.4056^0.6668^1^Sarkoth^4905:1:1,7099:1:1,7100:1:1^
 3282^3^0^15^16^1413^0.5593^0.0766^3^Venture Co. Mercenary^2589:1:2^
 3283^1^0^17^17^1413^0.6179^0.0479^1^Venture Co. Enforcer^5097:1:1^
 3284^5^0^14^15^1413^0.5459^0.0961^5^Venture Co. Drudger^1511:1:1,2589:2:4^
@@ -202,6 +204,7 @@ GoldScout-export 6^q9i5774k0ea5^16
 268321^1^0^0^0^0^0.0000^0.0000^0^^3805:1:1,4791:1:1^
 271961^7^0^2^3^1420^0.2552^0.6011^7^Webbed Forsaken^^
 276020^1^0^13^13^1420^0.8342^0.4262^1^Riptear^286326:1:1^
+@i^117^Tough Jerky
 @i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
 @i^414^Dalaran Sharp
@@ -391,6 +394,7 @@ GoldScout-export 6^q9i5774k0ea5^16
 @i^4893^Savannah Lion Tusk
 @i^4894^Plainstrider Kidney
 @i^4895^Thunder Lizard Horn
+@i^4905^Sarkoth's Mangled Claw
 @i^5020^Kolkar Booty Key
 @i^5022^Kodobane's Head
 @i^5023^Verog's Head
@@ -445,6 +449,8 @@ GoldScout-export 6^q9i5774k0ea5^16
 @i^6661^Recipe: Savory Deviate Delight
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
+@i^7098^Splintered Tusk
+@i^7099^Severed Pincer
 @i^7100^Sticky Ichor
 @i^7101^Bug Eye
 @i^8151^Flask of Mojo
@@ -529,6 +535,7 @@ GoldScout-export 6^q9i5774k0ea5^16
 @i^286326^Riptear's Heart
 @i^286978^Rotmender's Garb
 @i^286979^Rotmender's Gloves
+@q^117^1:0:0
 @q^118^1:0:0
 @q^159^1:0:0
 @q^414^1:0:0
@@ -718,6 +725,7 @@ GoldScout-export 6^q9i5774k0ea5^16
 @q^4893^1:12:0
 @q^4894^1:12:0
 @q^4895^1:12:0
+@q^4905^1:12:0
 @q^5020^1:13:0
 @q^5022^1:12:0
 @q^5023^1:12:0
@@ -772,6 +780,8 @@ GoldScout-export 6^q9i5774k0ea5^16
 @q^6661^2:9:0
 @q^7073^0:15:0
 @q^7074^0:15:0
+@q^7098^0:15:0
+@q^7099^0:15:0
 @q^7100^0:15:0
 @q^7101^0:15:0
 @q^8151^1:7:1
@@ -2217,6 +2227,7 @@ GoldScout-export 6^q9i5774k0ea5^16
 @a^1941^170:2,171:6
 @a^1971^50:1
 @a^1983^89:1
+@a^3098^248:7,268:3
 @a^3125^291:1
 @a^3197^50:3
 @a^3198^50:2
@@ -2238,6 +2249,7 @@ GoldScout-export 6^q9i5774k0ea5^16
 @a^3271^111:1
 @a^3272^88:6,89:3,108:4,109:4
 @a^3273^88:13,89:6,108:1,150:1
+@a^3281^268:1
 @a^3282^31:3
 @a^3283^12:1
 @a^3284^31:3,50:2

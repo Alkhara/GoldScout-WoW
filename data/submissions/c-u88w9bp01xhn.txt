@@ -1,5 +1,9 @@
-GoldScout-export 5^u88w9bp01xhn^14
-1150^2^0^30^31^1434^0.3568^0.0920^2^River Crocolisk^770:1:1,3667:1:1^
+GoldScout-export 6^u88w9bp01xhn^16
+681^4^0^30^31^1434^0.3247^0.0887^4^Young Stranglethorn Tiger^1686:2:2,12202:4:4^
+683^4^0^30^31^1434^0.4012^0.1138^4^Young Panther^1686:1:1,1687:2:2^
+688^2^0^31^32^1434^0.3428^0.0656^2^Stone Maw Basilisk^1702:2:2^
+1094^4^0^34^35^1434^0.2929^0.0726^4^Venture Co. Miner^1710:1:1,2592:2:5,4306:1:1^
+1150^7^0^30^31^1434^0.3498^0.0877^7^River Crocolisk^770:3:3,3667:4:4,4053:2:2,12037:3:3^
 2246^2^0^39^39^1416^0.3702^0.1593^2^Syndicate Assassin^3814:1:1^
 2408^3^0^30^31^1416^0.2743^0.3310^3^Snapjaw^3712:1:1,4556:1:1,5524:2:2^
 4634^1^0^32^32^1443^0.7197^0.4057^1^Kolkar Mauler^^
@@ -35,7 +39,11 @@ GoldScout-export 5^u88w9bp01xhn^14
 255560^4^0^39^41^1443^0.6821^0.7880^4^Magram Guardian^4306:1:2,6067:1:1,254432:1:1^
 272389^15^0^34^36^1416^0.3077^0.1959^14^Marsh Owl^3832:1:1,5116:4:4,5829:3:3,11416:2:2,11418:1:1,11996:1:1,12207:5:5,17056:7:7^
 @i^770^Pointy Crocolisk Tooth
+@i^1686^Bristly Whisker
+@i^1687^Retractable Claw
+@i^1702^Intact Basilisk Spine
 @i^1708^Sweet Nectar
+@i^1710^Greater Healing Potion
 @i^2592^Wool Cloth
 @i^3385^Lesser Mana Potion
 @i^3404^Buzzard Wing
@@ -47,6 +55,7 @@ GoldScout-export 5^u88w9bp01xhn^14
 @i^3814^Double Mail Shoulderpads
 @i^3820^Stranglekelp
 @i^3832^Recipe: Elixir of Detect Lesser Invisibility
+@i^4053^Large River Crocolisk Skin
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4556^Speckled Shell Fragment
@@ -70,6 +79,7 @@ GoldScout-export 5^u88w9bp01xhn^14
 @i^11418^Hollow Wing Bone
 @i^11996^Basalt Ring of the Boar
 @i^12037^Mystery Meat
+@i^12202^Tiger Meat
 @i^12207^Giant Egg
 @i^13422^Stonescale Eel
 @i^13758^Raw Redgill
@@ -89,7 +99,11 @@ GoldScout-export 5^u88w9bp01xhn^14
 @i^248691^Waylaid Crate: Flowering Expert Herbs
 @i^254432^Carved Centaur Totem
 @q^770^0:15:0
+@q^1686^0:15:0
+@q^1687^0:15:0
+@q^1702^0:15:0
 @q^1708^1:0:0
+@q^1710^1:0:0
 @q^2592^1:7:1
 @q^3385^1:0:0
 @q^3404^1:7:1
@@ -101,6 +115,7 @@ GoldScout-export 5^u88w9bp01xhn^14
 @q^3814^0:4:0
 @q^3820^1:7:1
 @q^3832^2:9:0
+@q^4053^1:12:0
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4556^0:15:0
@@ -124,6 +139,7 @@ GoldScout-export 5^u88w9bp01xhn^14
 @q^11418^0:15:0
 @q^11996^2:4:0
 @q^12037^1:7:1
+@q^12202^1:7:1
 @q^12207^1:7:1
 @q^13422^1:7:1
 @q^13758^1:7:1
@@ -907,7 +923,11 @@ GoldScout-export 5^u88w9bp01xhn^14
 @c^279981^
 @c^279982^
 @c^286152^
-@a^1150^27:1,47:1
+@a^681^26:4
+@a^683^27:1,48:3
+@a^688^26:2
+@a^1094^25:4
+@a^1150^26:3,27:3,47:1
 @a^2246^67:2
 @a^2408^26:1,165:1,184:1
 @a^4634^174:1

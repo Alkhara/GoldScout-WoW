@@ -1,4 +1,4 @@
-GoldScout-export 6^ndxu3624fwqe^8
+GoldScout-export 6^ndxu3624fwqe^9
 2552^2^0^30^31^1417^0.3664^0.4443^2^Trollesse Fânécorce^4503:1:1,216483:1:1^
 2558^1^0^36^36^1417^0.2436^0.6210^1^Berserker Witherbark^^
 2569^1^0^38^38^1417^0.2436^0.6070^1^Marteleur Rochepoing^^
@@ -21,10 +21,16 @@ GoldScout-export 6^ndxu3624fwqe^8
 4301^7^0^0^0^0^0.0000^0.0000^0^^4306:2:5,4338:1:1,6415:1:1,10331:1:1^
 4302^4^0^0^0^0^0.0000^0.0000^0^^4306:3:10^
 4303^1^0^0^0^0^0.0000^0.0000^0^^^
+4351^1^0^36^36^1445^0.6005^0.2377^1^Raptor Rougefange^4461:1:1,8146:1:1^
+4358^4^0^35^36^1445^0.5660^0.2136^4^Bondisseur Aileron boueux^5785:1:1,17057:1:1,17058:2:2^
+4359^5^0^35^36^1445^0.5638^0.2093^5^Murloc Aileron boueux^1477:1:1^
+4396^1^0^36^37^1445^0.6297^0.3519^1^Tortue Rochefange^4556:1:1^
+4397^4^0^37^38^1445^0.6382^0.3794^4^Epineuse Rochefange^3712:1:1,4555:1:1,4556:2:2,5883:2:2,6362:2:3^
 4540^5^0^0^0^0^0.0000^0.0000^0^^4306:1:1,7437:1:1^
 4542^1^0^0^0^0^0.0000^0.0000^0^^19509:1:1^
 6575^4^0^0^0^0^0.0000^0.0000^0^^4306:1:2^
 14123^5^0^42^43^1446^0.6753^0.2239^5^Mordeuse mâchoire d'acier^3712:3:3,4555:3:3,4556:2:2,4603:1:1,7973:1:1,14230:1:1^
+@i^1477^Parchemin d'Agilité II
 @i^1707^Brie de Hurlevent
 @i^1990^Maillet lesté d'hiérophante
 @i^2080^Hache des collines de médecine
@@ -38,11 +44,14 @@ GoldScout-export 6^ndxu3624fwqe^8
 @i^4306^Etoffe de soie
 @i^4338^Etoffe de tisse-mage
 @i^4424^Parchemin d'Esprit III
+@i^4461^Peau de raptor
 @i^4503^Défense de Witherbark
 @i^4555^Epaisse queue écailleuse
 @i^4556^Fragment de carapace moucheté
 @i^4603^Jaune-queue tacheté cru
 @i^5113^Marque du Syndicat
+@i^5785^Ecailles de murloc épaisses
+@i^5883^Langue fourchue de Rochefange
 @i^6358^Bouche-noire huileux
 @i^6359^Lutjan de nagefeu
 @i^6362^Morue rochécaille crue
@@ -54,6 +63,7 @@ GoldScout-export 6^ndxu3624fwqe^8
 @i^7722^Amulette de Triune
 @i^7723^Puissance de Mograine
 @i^7973^Palourde à large bouche
+@i^8146^Serre cruelle
 @i^8365^Truite tête-mithril crue
 @i^9898^Cape jazeran d'ancienneté
 @i^10331^Gantelets écarlates
@@ -66,6 +76,8 @@ GoldScout-export 6^ndxu3624fwqe^8
 @i^13877^Jaune-queue de 47 livres
 @i^13879^Jaune-queue de 59 livres
 @i^14230^Tunique de braise-soie de sorcellerie
+@i^17057^Ecailles de poisson brillantes
+@i^17058^Huile de poisson
 @i^19509^Bottes poussiéreuses en mailles
 @i^21113^Malle étanche
 @i^21150^Malle cerclée de fer
@@ -75,6 +87,7 @@ GoldScout-export 6^ndxu3624fwqe^8
 @i^216483^Massette fânécorce
 @i^248692^Caisse détournée : minerai d'expert
 @i^262888^Commission de compagnon scellée
+@q^1477^1:0:0
 @q^1707^1:0:0
 @q^1990^2:2:0
 @q^2080^2:2:0
@@ -88,11 +101,14 @@ GoldScout-export 6^ndxu3624fwqe^8
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4424^1:0:0
+@q^4461^1:7:1
 @q^4503^1:12:0
 @q^4555^0:15:0
 @q^4556^0:15:0
 @q^4603^1:7:1
 @q^5113^0:15:0
+@q^5785^1:7:1
+@q^5883^1:12:0
 @q^6358^1:7:1
 @q^6359^1:7:1
 @q^6362^1:7:1
@@ -104,6 +120,7 @@ GoldScout-export 6^ndxu3624fwqe^8
 @q^7722^3:4:0
 @q^7723^3:2:0
 @q^7973^1:7:0
+@q^8146^1:7:1
 @q^8365^1:7:1
 @q^9898^2:4:0
 @q^10331^3:4:0
@@ -116,6 +133,8 @@ GoldScout-export 6^ndxu3624fwqe^8
 @q^13877^1:15:0
 @q^13879^1:15:0
 @q^14230^2:4:0
+@q^17057^1:15:0
+@q^17058^1:15:0
 @q^19509^3:4:0
 @q^21113^1:15:0
 @q^21150^1:15:0
@@ -129,6 +148,7 @@ GoldScout-export 6^ndxu3624fwqe^8
 @m^1417^Hautes-terres d'Arathi
 @m^1420^Clairières de Tirisfal
 @m^1437^Les Paluns
+@m^1445^Marécage d'Âprefange
 @m^1446^Tanaris
 @c^724^
 @c^733^
@@ -740,8 +760,14 @@ GoldScout-export 6^ndxu3624fwqe^8
 @a^2587^126:1
 @a^2589^106:1,126:4
 @a^4281^156:1
+@a^4351^92:1
+@a^4358^91:4
+@a^4359^91:5
+@a^4396^152:1
+@a^4397^132:1,152:2,172:1
 @a^14123^73:1,93:3,113:1
 @f^1416^0^4^300^3820:1:1,8365:1:1,21150:1:1,21151:1:1^67:4
 @f^1437^0^2^300^6358:1:1,21113:1:1^241:2
+@f^1445^0^2^300^3820:1:2,21150:1:1^152:2
 @f^1446^0^1480^245^3820:3:6,4603:593:593,6359:132:132,6362:150:150,7973:149:149,13422:120:238,13754:121:121,13755:192:192,13874:1:1,13875:4:4,13876:5:5,13877:2:2,13879:1:1,21151:2:4,21228:5:5^73:3,93:1469,113:8
 @l^0^frFR

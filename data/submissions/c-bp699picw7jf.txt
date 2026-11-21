@@ -1,5 +1,12 @@
-GoldScout-export 6^bp699picw7jf^1
+GoldScout-export 6^bp699picw7jf^2
+4323^26^0^41^42^1445^0.4344^0.7372^26^Searing Hatchling^4402:10:10,4460:7:7,5840:6:6,5841:6:6,6444:6:6,279934:4:4^
+4324^36^0^42^43^1445^0.4415^0.7274^36^Searing Whelp^4402:2:2,4460:11:11,5840:9:9,5841:8:8,6444:6:6,8146:2:2,14228:1:1,279934:3:3^
+4328^5^0^43^44^1445^0.3750^0.6796^5^Firemane Scalebane^3928:1:1,4599:1:1^
+4329^12^0^41^42^1445^0.4064^0.6910^12^Firemane Scout^14656:1:1,279934:1:1^
+4331^10^0^42^43^1445^0.4146^0.7054^10^Firemane Ash Tail^4599:1:1^
+4345^2^0^40^41^1445^0.5143^0.7129^2^Drywallow Daggermaw^770:1:1^
 4727^2^0^37^38^1443^0.4672^0.8744^2^Elder Thunder Lizard^5133:2:2^
+4841^1^0^45^45^1445^0.4675^0.5910^1^Deadmire^770:1:2,5945:1:1^
 5419^1^0^42^43^1446^0.5525^0.3022^1^Glasshide Basilisk^9437:1:1^
 5615^2^0^43^44^1446^0.6039^0.3672^2^Wastewander Rogue^4338:1:2,8483:1:1^
 5616^12^0^40^41^1446^0.6400^0.3190^12^Wastewander Thief^3927:2:2,4306:1:2,4338:5:7,8483:5:5^
@@ -60,6 +67,7 @@ GoldScout-export 6^bp699picw7jf^1
 13601^1^0^0^0^0^0.0000^0.0000^0^^17719:1:1^
 13696^1^0^0^0^0^0.0000^0.0000^0^^8199:1:1,248709:1:1^
 13718^1^0^41^41^1414^0.3822^0.5803^1^The Nameless Prophet^17757:1:1^
+@i^770^Pointy Crocolisk Tooth
 @i^1520^Troll Sweat
 @i^1645^Moonberry Juice
 @i^1701^Curved Basilisk Claw
@@ -71,14 +79,18 @@ GoldScout-export 6^bp699picw7jf^1
 @i^3676^Slimy Ichor
 @i^3914^Journeyman's Backpack
 @i^3927^Fine Aged Cheddar
+@i^3928^Superior Healing Potion
 @i^3943^Crochet Vest
 @i^3986^Protective Pavise
 @i^4024^Heavy War Staff
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
+@i^4402^Small Flame Sac
+@i^4460^Ripped Wing Webbing
 @i^4552^Smooth Stone Chip
 @i^4554^Shiny Polished Stone
 @i^4555^Thick Scaly Tail
+@i^4599^Cured Ham Steak
 @i^4606^Spongy Morel
 @i^4607^Delicious Cave Mold
 @i^4608^Raw Black Truffle
@@ -86,6 +98,10 @@ GoldScout-export 6^bp699picw7jf^1
 @i^4784^Lifeless Stone
 @i^5128^Shed Lizard Skin
 @i^5133^Seeping Gizzard
+@i^5840^Searing Tongue
+@i^5841^Searing Heart
+@i^5945^Deadmire's Tooth
+@i^6444^Forked Tongue
 @i^7067^Elemental Earth
 @i^7912^Solid Stone
 @i^8146^Wicked Claw
@@ -110,10 +126,12 @@ GoldScout-export 6^bp699picw7jf^1
 @i^11386^Squishy Basilisk Eye
 @i^11387^Basilisk Heart
 @i^13074^Golem Shard Leggings
+@i^14228^Embersilk Coronet of the Elder
 @i^14247^Lunar Mantle of Intellect
 @i^14255^Lunar Belt of Fire Protection
 @i^14259^Bloodwoven Boots of Spirit
 @i^14273^Gaea's Amice of the Sorcerer
+@i^14656^Scorpashi Cape
 @i^14778^Khan's Bindings
 @i^14835^Tyrant's Chestpiece
 @i^14914^Jade Bracers of Holy Wrath
@@ -151,6 +169,8 @@ GoldScout-export 6^bp699picw7jf^1
 @i^274645^Desert Ziggurat Drape
 @i^274648^The Desert Rose
 @i^274651^Zealot Plate
+@i^279934^Shed Dark Dragonscale
+@q^770^0:15:0
 @q^1520^0:15:0
 @q^1645^1:0:0
 @q^1701^0:15:0
@@ -162,14 +182,18 @@ GoldScout-export 6^bp699picw7jf^1
 @q^3676^0:15:0
 @q^3914^1:1:0
 @q^3927^1:0:0
+@q^3928^1:0:0
 @q^3943^0:4:0
 @q^3986^0:4:0
 @q^4024^0:2:0
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4402^1:7:1
+@q^4460^0:15:0
 @q^4552^0:15:0
 @q^4554^0:15:0
 @q^4555^0:15:0
+@q^4599^1:0:0
 @q^4606^1:0:0
 @q^4607^1:0:0
 @q^4608^1:0:0
@@ -177,6 +201,10 @@ GoldScout-export 6^bp699picw7jf^1
 @q^4784^0:15:0
 @q^5128^0:15:0
 @q^5133^0:15:0
+@q^5840^1:12:0
+@q^5841^1:12:0
+@q^5945^1:12:0
+@q^6444^0:15:0
 @q^7067^1:7:1
 @q^7912^1:7:1
 @q^8146^1:7:1
@@ -201,10 +229,12 @@ GoldScout-export 6^bp699picw7jf^1
 @q^11386^0:15:0
 @q^11387^0:15:0
 @q^13074^3:4:0
+@q^14228^2:4:0
 @q^14247^2:4:0
 @q^14255^2:4:0
 @q^14259^2:4:0
 @q^14273^2:4:0
+@q^14656^2:4:0
 @q^14778^2:4:0
 @q^14835^2:4:0
 @q^14914^2:4:0
@@ -242,8 +272,10 @@ GoldScout-export 6^bp699picw7jf^1
 @q^274645^3:4:0
 @q^274648^3:4:0
 @q^274651^3:4:0
+@q^279934^1:12:0
 @m^1414^Kalimdor
 @m^1443^Desolace
+@m^1445^Dustwallow Marsh
 @m^1446^Tanaris
 @c^118^
 @c^724^
@@ -409,7 +441,14 @@ GoldScout-export 6^bp699picw7jf^1
 @c^279981^
 @c^279982^
 @c^286152^
+@a^4323^248:1,269:1,287:5,288:6,289:2,290:3,307:1,308:4,309:3
+@a^4324^268:1,269:7,287:6,288:9,289:3,290:2,308:6,309:2
+@a^4328^267:5
+@a^4329^248:1,267:5,268:2,269:1,287:2,309:1
+@a^4331^248:1,267:3,268:1,269:1,287:2,308:1,309:1
+@a^4345^289:1,290:1
 @a^4727^349:2
+@a^4841^229:1
 @a^5419^131:1
 @a^5615^151:1,152:1
 @a^5616^112:2,132:8,133:2
