@@ -1,4 +1,4 @@
-GoldScout-export 5^ocbm794nnm07^19
+GoldScout-export 6^ocbm794nnm07^20
 1529^2^0^9^10^1420^0.7570^0.6011^2^Bleeding Horror^818:1:1,2589:1:1,2646:1:1^
 1532^2^0^10^11^1420^0.7593^0.5960^2^Wandering Spirit^1420:1:1,2589:1:2,4604:1:1^
 1544^1^0^8^8^1420^0.6705^0.2649^1^Vile Fin Minor Oracle^278244:1:1^
@@ -96,6 +96,10 @@ GoldScout-export 5^ocbm794nnm07^19
 4099^8^0^26^27^1441^0.4087^0.3268^8^Galak Marauder^1755:1:1,1830:1:1,4306:2:3,15532:1:1^
 4107^1^0^29^29^1441^0.1604^0.4158^1^Highperch Wyvern^5137:1:1^
 4109^1^0^28^28^1441^0.1139^0.3997^1^Highperch Consort^5137:1:1^
+4124^1^0^28^28^1441^0.5898^0.4972^1^Needles Cougar^5136:1:1^
+4130^5^0^32^33^1441^0.6843^0.8295^5^Silithid Searcher^5853:1:1,5854:2:2,5855:1:1,6300:1:1,6302:1:1,213547:1:1^
+4131^2^0^34^35^1441^0.6486^0.8572^2^Silithid Invader^5854:1:1,6302:1:1^
+4133^11^0^33^34^1441^0.6836^0.8527^11^Silithid Hive Drone^5853:2:2,5854:2:2,5877:2:2,6300:3:3,6302:4:4^
 4139^3^0^33^34^1441^0.7536^0.7957^3^Scorpid Terror^1288:1:1,5794:2:2,19937:1:1^
 4140^14^0^31^32^1441^0.7637^0.6636^14^Scorpid Reaver^1288:2:2,5794:3:3,12037:7:7,19938:4:4^
 4142^9^0^30^31^1441^0.7563^0.5900^9^Sparkleshell Tortoise^3712:4:4,4555:2:2,4556:2:2,5795:1:1,6308:1:1^
@@ -439,6 +443,7 @@ GoldScout-export 5^ocbm794nnm07^19
 @i^5113^Mark of the Syndicate
 @i^5114^Severed Talon
 @i^5116^Long Tail Feather
+@i^5136^Torn Furry Ear
 @i^5137^Bright Eyeball
 @i^5203^Flatland Prowler Claw
 @i^5465^Small Spider Leg
@@ -453,12 +458,18 @@ GoldScout-export 5^ocbm794nnm07^19
 @i^5795^Hardened Tortoise Shell
 @i^5801^Kraul Guano
 @i^5848^Hollow Vulture Bone
+@i^5853^Intact Silithid Carapace
+@i^5854^Silithid Talon
+@i^5855^Silithid Heart
+@i^5877^Cracked Silithid Carapace
 @i^6268^Pioneer Tunic of the Gorilla
 @i^6269^Pioneer Trousers of the Bear
 @i^6289^Raw Longjaw Mud Snapper
 @i^6293^Dried Bat Blood
 @i^6296^Patch of Bat Hair
 @i^6297^Old Skull
+@i^6300^Husk Fragment
+@i^6302^Delicate Insect Wing
 @i^6308^Raw Bristle Whisker Catfish
 @i^6375^Formula: Enchant Bracer - Lesser Spirit
 @i^6393^Silver-thread Gloves
@@ -527,6 +538,7 @@ GoldScout-export 5^ocbm794nnm07^19
 @i^19937^Small Scorpid Claw
 @i^19938^Heavy Scorpid Leg
 @i^211787^Scroll: LOWER PING WHOMEVER
+@i^213547^Scroll: THAW WORDS
 @i^248682^Waylaid Crate: Apprentice Herbs
 @i^248688^Waylaid Crate: Journeyman Textiles
 @i^248702^Waylaid Crate: Apprentice Fabrics
@@ -802,6 +814,7 @@ GoldScout-export 5^ocbm794nnm07^19
 @q^5113^0:15:0
 @q^5114^0:15:0
 @q^5116^1:7:1
+@q^5136^0:15:0
 @q^5137^0:15:0
 @q^5203^1:12:0
 @q^5465^1:7:1
@@ -816,12 +829,18 @@ GoldScout-export 5^ocbm794nnm07^19
 @q^5795^1:12:0
 @q^5801^1:12:0
 @q^5848^1:12:0
+@q^5853^1:12:0
+@q^5854^1:12:0
+@q^5855^1:12:0
+@q^5877^1:12:0
 @q^6268^2:4:0
 @q^6269^2:4:0
 @q^6289^1:7:1
 @q^6293^0:15:0
 @q^6296^0:15:0
 @q^6297^0:15:0
+@q^6300^0:15:0
+@q^6302^0:15:0
 @q^6308^1:7:1
 @q^6375^2:9:0
 @q^6393^2:4:0
@@ -890,6 +909,7 @@ GoldScout-export 5^ocbm794nnm07^19
 @q^19937^0:15:0
 @q^19938^0:15:0
 @q^211787^1:0:0
+@q^213547^1:0:0
 @q^248682^1:0:1
 @q^248688^1:0:1
 @q^248702^2:0:1
@@ -2885,6 +2905,10 @@ GoldScout-export 5^ocbm794nnm07^19
 @a^4099^83:1,128:4,148:3
 @a^4107^163:1
 @a^4109^142:1
+@a^4124^191:1
+@a^4130^333:4,353:1
+@a^4131^352:1,353:1
+@a^4133^333:3,334:2,352:1,353:5
 @a^4139^294:1,314:1,356:1
 @a^4140^233:1,234:1,254:2,255:1,274:1,275:3,276:3,294:1,295:1
 @a^4142^216:1,234:3,235:1,236:1,253:1,255:1,275:1
