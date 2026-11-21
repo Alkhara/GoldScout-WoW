@@ -1,4 +1,4 @@
-GoldScout-export 6^7atrsyvhifjr^22
+GoldScout-export 6^7atrsyvhifjr^24
 116^1^0^9^9^1429^0.8892^0.7802^1^Defias Bandit^8180:1:1^
 442^1^0^15^15^1433^0.0922^0.7114^1^Tarantula^^
 486^1^0^24^24^1433^0.6418^0.5973^1^Tharil'zun^2589:1:5^
@@ -24,6 +24,8 @@ GoldScout-export 6^7atrsyvhifjr^22
 2089^7^0^25^26^1437^0.2118^0.2323^7^Giant Wetlands Crocolisk^770:3:3,3348:6:6,3667:3:3^
 2091^1^0^32^32^1437^0.5319^0.5490^1^Chieftain Nek'rosh^3625:1:1^
 2462^2^0^25^25^1431^0.2623^0.3625^2^Flesh Eating Worm^^
+3258^1^0^17^18^1413^0.5088^0.5746^1^Bristleback Hunter^2589:1:2^
+4034^1^0^24^24^1442^0.3417^0.6537^1^Enraged Stone Spirit^5741:1:1^
 4463^1^0^22^23^1433^0.3278^0.1374^1^Blackrock Summoner^3385:1:1^
 5419^1^0^42^43^1446^0.4742^0.3848^1^Glasshide Basilisk^11387:1:1^
 5420^2^0^45^46^1446^0.3752^0.6117^2^Glasshide Gazer^3187:1:1,11386:2:2^
@@ -202,6 +204,7 @@ GoldScout-export 6^7atrsyvhifjr^22
 @i^5571^Small Black Pouch
 @i^5635^Sharp Claw
 @i^5637^Large Fang
+@i^5741^Rock Chip
 @i^5829^Razor-sharp Beak
 @i^6302^Delicate Insect Wing
 @i^6308^Raw Bristle Whisker Catfish
@@ -413,6 +416,7 @@ GoldScout-export 6^7atrsyvhifjr^22
 @q^5571^1:1:0
 @q^5635^1:7:1
 @q^5637^1:7:1
+@q^5741^0:15:0
 @q^5829^0:15:0
 @q^6302^0:15:0
 @q^6308^1:7:1
@@ -525,10 +529,12 @@ GoldScout-export 6^7atrsyvhifjr^22
 @q^280103^1:12:0
 @q^280330^1:12:0
 @q^280331^1:12:0
+@m^1413^The Barrens
 @m^1429^Elwynn Forest
 @m^1431^Duskwood
 @m^1433^Redridge Mountains
 @m^1437^Wetlands
+@m^1442^Stonetalon Mountains
 @m^1446^Tanaris
 @m^1449^Un'Goro Crater
 @m^1453^Stormwind City
@@ -1704,6 +1710,7 @@ GoldScout-export 6^7atrsyvhifjr^22
 @c^273949^
 @c^273950^
 @c^273951^
+@c^274490^
 @c^274971^
 @c^274976^
 @c^275610^
@@ -1841,6 +1848,8 @@ GoldScout-export 6^7atrsyvhifjr^22
 @a^2089^83:3,84:2,85:1,103:1
 @a^2091^210:1
 @a^2462^145:2
+@a^3258^230:1
+@a^4034^266:1
 @a^4463^46:1
 @a^5419^149:1
 @a^5420^227:1,267:1

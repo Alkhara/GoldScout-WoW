@@ -1,4 +1,4 @@
-GoldScout-export 6^9xpxtb1ns272^2
+GoldScout-export 6^9xpxtb1ns272^3
 667^1^0^39^39^1434^0.4845^0.4114^1^Guerrier Skullsplitter^3864:1:1^
 669^8^0^41^42^1434^0.4554^0.4217^8^Chasseur Skullsplitter^1520:1:1,2730:1:1,4338:2:2,4599:1:1,8151:1:1,8153:2:5,248690:1:1^
 670^1^0^41^42^1434^0.4582^0.4178^1^Sorcier-docteur Skullsplitter^1520:1:1,4338:1:1,8153:1:1^
@@ -11,14 +11,21 @@ GoldScout-export 6^9xpxtb1ns272^2
 783^7^0^43^44^1434^0.4768^0.4292^7^Berserker Skullsplitter^2728:1:1,4022:1:1,4338:3:6,4599:2:2,6149:1:1,8153:1:2^
 784^1^0^41^41^1434^0.4783^0.4245^1^Belluaire Skullsplitter^1520:1:1^
 1059^1^0^45^45^1434^0.4487^0.4436^1^Ana'thek le Cruel^1520:1:1,3909:1:1,4338:1:2^
+1488^5^0^43^44^1434^0.3451^0.5104^5^Zombie Zanzil^4016:1:1,4306:1:2,4338:1:2^
+1489^3^0^43^44^1434^0.3482^0.5133^3^Chasseur Zanzil^4016:2:2,4338:1:1,6530:1:1^
+1490^7^0^44^44^1434^0.3465^0.5110^7^Sorcier-docteur Zanzil^4016:4:4,4306:1:2,4338:1:2,8152:1:1^
+1491^5^0^44^44^1434^0.3456^0.5104^5^Naga Zanzil^1645:1:1,2742:1:1,2744:1:1,4016:2:2,7973:4:4^
 1492^1^0^47^47^1434^0.3613^0.7001^1^Gorlash^3932:1:1^
 1514^1^0^44^44^1434^0.3470^0.6212^1^Mokk le Sauvage^2797:1:1^
+1551^7^0^43^44^1434^0.4211^0.4975^7^Basilic gueule de fer^3911:3:3,4093:2:2,8146:1:1^
 1557^19^0^40^41^1434^0.3359^0.6541^19^Ancien gorille de Valbrume^2799:11:11,3862:1:1,3919:5:5,4096:11:11,4097:2:2,5637:2:2^
 1559^1^0^51^51^1434^0.3982^0.8157^1^Roi Mukla^4103:1:1,4558:1:1^
 1562^1^0^40^41^1434^0.3350^0.7358^1^Mage de la Voile sanglante^4306:1:2^
 1563^3^0^42^43^1434^0.2996^0.8722^3^Bretteur de la Voile sanglante^3910:1:1,4338:1:2^
 1565^6^0^44^45^1434^0.2999^0.8961^6^Loup de mer de la Voile sanglante^2751:1:1,3910:1:1,4306:1:1,7909:1:1,8194:1:1,9260:1:1^
 1653^13^0^44^45^1434^0.3054^0.8891^13^Ancien magus de la Voile sanglante^3910:4:4,3927:1:1,4306:1:1,4338:3:3,4422:1:1,213543:1:1^
+2535^1^0^44^44^1434^0.3488^0.5068^1^Maury Pied bot Wilkins^^
+2536^1^0^44^44^1434^0.3461^0.5092^1^Jon-Jon le Corbeau^3925:1:1^
 2546^1^0^48^48^1434^0.3062^0.9059^1^Amiral Firallon^9260:1:1^
 2547^1^0^43^43^1434^0.3070^0.9027^1^Oeil de fer^^
 2549^2^0^43^43^1434^0.2931^0.8895^2^Garr Salthoof^3910:2:2^
@@ -48,6 +55,8 @@ GoldScout-export 6^9xpxtb1ns272^2
 @i^1645^Jus de baie lunaire
 @i^2728^Les vertes collines de Strangleronce - Page 4
 @i^2730^Les vertes collines de Strangleronce - Page 6
+@i^2742^Les vertes collines de Strangleronce - Page 18
+@i^2744^Les vertes collines de Strangleronce - Page 20
 @i^2748^Les vertes collines de Strangleronce - Page 24
 @i^2751^Les vertes collines de Strangleronce - Page 27
 @i^2797^Coeur de Mokk
@@ -60,12 +69,16 @@ GoldScout-export 6^9xpxtb1ns272^2
 @i^3897^Oeil de Dizzy
 @i^3909^Armure brisée d'Ana'thek
 @i^3910^Tabac à priser
+@i^3911^Eclat bleu vibrant
 @i^3919^Abats de Valbrume
+@i^3925^Longue-vue dorée de Jon-Jon
 @i^3927^Cheddar affiné
 @i^3932^Coffre de Smotts
 @i^4003^Cape en anneaux doubliers
+@i^4016^Mixture de Zanzil
 @i^4022^Maillet fracassant
 @i^4024^Bâton de guerre lourd
+@i^4093^Grande queue de basilic
 @i^4096^Poil de gorille grossier
 @i^4097^Croc de gorille ébréché
 @i^4103^Clé de chaîne
@@ -81,11 +94,14 @@ GoldScout-export 6^9xpxtb1ns272^2
 @i^5637^Grand croc
 @i^5829^Bec acéré
 @i^6149^Potion de mana supérieure
+@i^6530^Asticots
 @i^6826^Ecaille brillante
 @i^7909^Aigue-marine
+@i^7973^Palourde à large bouche
 @i^8139^Gantelets chromites
 @i^8146^Serre cruelle
 @i^8151^Flacon de mojo
+@i^8152^Flacon de grand mojo
 @i^8153^Sauvageonne
 @i^8194^Casse-noisettes gobelin de héraut
 @i^8705^Balise de détresse OOX-22 FE
@@ -104,6 +120,8 @@ GoldScout-export 6^9xpxtb1ns272^2
 @q^1645^1:0:0
 @q^2728^1:12:0
 @q^2730^1:12:0
+@q^2742^1:12:0
+@q^2744^1:12:0
 @q^2748^1:12:0
 @q^2751^1:12:0
 @q^2797^1:12:0
@@ -116,12 +134,16 @@ GoldScout-export 6^9xpxtb1ns272^2
 @q^3897^1:12:0
 @q^3909^1:12:0
 @q^3910^1:12:0
+@q^3911^1:12:0
 @q^3919^1:12:0
+@q^3925^1:12:0
 @q^3927^1:0:0
 @q^3932^1:12:0
 @q^4003^0:4:0
+@q^4016^1:12:0
 @q^4022^0:2:0
 @q^4024^0:2:0
+@q^4093^0:15:0
 @q^4096^1:15:0
 @q^4097^0:15:0
 @q^4103^1:13:0
@@ -137,11 +159,14 @@ GoldScout-export 6^9xpxtb1ns272^2
 @q^5637^1:7:1
 @q^5829^0:15:0
 @q^6149^1:0:0
+@q^6530^1:0:0
 @q^6826^0:15:0
 @q^7909^2:7:1
+@q^7973^1:7:0
 @q^8139^2:4:0
 @q^8146^1:7:1
 @q^8151^1:7:1
+@q^8152^1:7:1
 @q^8153^1:7:1
 @q^8194^2:2:0
 @q^8705^2:12:0
@@ -502,14 +527,21 @@ GoldScout-export 6^9xpxtb1ns272^2
 @a^783^169:7
 @a^784^169:1
 @a^1059^168:1
+@a^1488^206:5
+@a^1489^206:2,207:1
+@a^1490^206:7
+@a^1491^206:5
 @a^1492^287:1
 @a^1514^246:1
+@a^1551^188:6,208:1
 @a^1557^246:9,266:10
 @a^1559^327:1
 @a^1562^286:1
 @a^1563^345:1,346:2
 @a^1565^345:3,346:1,366:2
 @a^1653^345:7,346:6
+@a^2535^206:1
+@a^2536^206:1
 @a^2546^366:1
 @a^2547^366:1
 @a^2549^345:2
