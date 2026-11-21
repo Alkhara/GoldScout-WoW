@@ -1,5 +1,8 @@
-GoldScout-export 6^g207amt243gq^10
+GoldScout-export 6^g207amt243gq^11
+6^5^0^1^2^1429^0.4750^0.3662^5^Kobold Vermin^159:1:1,755:4:4,2210:1:1,2589:1:1,2649:2:2,247834:1:1^
+69^1^0^2^2^1429^0.4710^0.3957^1^Timber Wolf^750:1:1,2672:1:1,4865:1:1^
 92^63^0^39^40^1418^0.4189^0.8081^63^Rock Elemental^4552:11:11,4553:24:24,4784:35:35,7067:10:10,7912:18:23,8150:17:17,8158:1:1,213543:3:3,213544:1:1,213545:1:1,262889:1:1^
+299^7^0^1^1^1429^0.4678^0.4106^7^Young Wolf^750:7:7,1370:1:1,2210:1:1,2211:1:1,2672:4:4,3363:1:1,4865:1:1,7073:5:5,7074:3:3^
 587^1^0^33^34^1434^0.3014^0.1914^1^Bloodscalp Warrior^1519:1:1^
 588^7^0^34^35^1434^0.2446^0.1268^7^Bloodscalp Scout^1519:1:1,1708:2:2,2592:1:1,3771:1:1,3811:1:1,4306:3:6,4720:1:1^
 595^18^0^34^35^1434^0.2384^0.1263^18^Bloodscalp Hunter^1519:4:4,1708:1:1,2730:1:1,2732:1:1,2748:1:1,3385:1:1,4306:10:16,4338:1:1,9870:1:1,213546:1:1,277957:1:1^
@@ -59,8 +62,12 @@ GoldScout-export 6^g207amt243gq^10
 11578^4^0^32^34^1443^0.6156^0.7303^4^Whirlwind Shredder^7069:1:1^
 12369^1^0^38^38^1443^0.2795^0.0621^1^Lord Kragaru^1708:1:1,7072:1:1,15803:1:1,17058:1:1^
 13019^1^0^33^33^1443^0.5534^0.3018^1^Burning Blade Seer^15750:1:1^
+@i^159^Refreshing Spring Water
+@i^750^Tough Wolf Meat
+@i^755^Melted Candle
 @i^770^Pointy Crocolisk Tooth
 @i^1074^Hard Spider Leg Tip
+@i^1370^Ragged Leather Bracers
 @i^1519^Bloodscalp Ear
 @i^1686^Bristly Whisker
 @i^1688^Long Soft Tail
@@ -68,11 +75,16 @@ GoldScout-export 6^g207amt243gq^10
 @i^1706^Azuredeep Shards
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
+@i^2210^Battered Buckler
+@i^2211^Bent Large Shield
 @i^2290^Scroll of Intellect II
 @i^2449^Earthroot
 @i^2450^Briarthorn
+@i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2633^Jungle Remedy
+@i^2649^Flimsy Chain Belt
+@i^2672^Stringy Wolf Meat
 @i^2728^Green Hills of Stranglethorn - Page 4
 @i^2730^Green Hills of Stranglethorn - Page 6
 @i^2732^Green Hills of Stranglethorn - Page 8
@@ -80,6 +92,7 @@ GoldScout-export 6^g207amt243gq^10
 @i^2742^Green Hills of Stranglethorn - Page 18
 @i^2748^Green Hills of Stranglethorn - Page 24
 @i^3037^Whipwood Recurve Bow
+@i^3363^Frayed Belt
 @i^3385^Lesser Mana Potion
 @i^3404^Buzzard Wing
 @i^3667^Tender Crocolisk Meat
@@ -110,6 +123,7 @@ GoldScout-export 6^g207amt243gq^10
 @i^4720^Nightsky Sash
 @i^4784^Lifeless Stone
 @i^4791^Enchanted Water
+@i^4865^Ruined Pelt
 @i^5637^Large Fang
 @i^5803^Speck of Dream Dust
 @i^5829^Razor-sharp Beak
@@ -127,6 +141,8 @@ GoldScout-export 6^g207amt243gq^10
 @i^7067^Elemental Earth
 @i^7069^Elemental Air
 @i^7072^Naga Scale
+@i^7073^Broken Fang
+@i^7074^Chipped Claw
 @i^7435^Twilight Mantle of the Owl
 @i^7912^Solid Stone
 @i^8146^Wicked Claw
@@ -155,6 +171,7 @@ GoldScout-export 6^g207amt243gq^10
 @i^213546^Scroll: SHOOBEEDOOP
 @i^213547^Scroll: THAW WORDS
 @i^216616^Compound Cage Key
+@i^247834^Nibbled-On Book
 @i^248690^Waylaid Crate: Earthly Expert Herbs
 @i^248692^Waylaid Crate: Expert Ore
 @i^248693^Waylaid Crate: Expert Textiles
@@ -162,8 +179,12 @@ GoldScout-export 6^g207amt243gq^10
 @i^254432^Carved Centaur Totem
 @i^262889^Sealed Expert's Writ
 @i^277957^Primitive Key
+@q^159^1:0:0
+@q^750^1:12:0
+@q^755^0:15:0
 @q^770^0:15:0
 @q^1074^0:15:0
+@q^1370^0:4:0
 @q^1519^1:12:0
 @q^1686^0:15:0
 @q^1688^0:15:0
@@ -171,11 +192,16 @@ GoldScout-export 6^g207amt243gq^10
 @q^1706^0:15:0
 @q^1708^1:0:0
 @q^1710^1:0:0
+@q^2210^0:4:0
+@q^2211^0:4:0
 @q^2290^1:0:0
 @q^2449^1:7:1
 @q^2450^1:7:1
+@q^2589^1:7:1
 @q^2592^1:7:1
 @q^2633^1:0:0
+@q^2649^0:4:0
+@q^2672^1:7:1
 @q^2728^1:12:0
 @q^2730^1:12:0
 @q^2732^1:12:0
@@ -183,6 +209,7 @@ GoldScout-export 6^g207amt243gq^10
 @q^2742^1:12:0
 @q^2748^1:12:0
 @q^3037^2:2:0
+@q^3363^0:4:0
 @q^3385^1:0:0
 @q^3404^1:7:1
 @q^3667^1:7:1
@@ -213,6 +240,7 @@ GoldScout-export 6^g207amt243gq^10
 @q^4720^2:4:0
 @q^4784^0:15:0
 @q^4791^1:0:0
+@q^4865^0:15:0
 @q^5637^1:7:1
 @q^5803^1:12:0
 @q^5829^0:15:0
@@ -230,6 +258,8 @@ GoldScout-export 6^g207amt243gq^10
 @q^7067^1:7:1
 @q^7069^1:7:1
 @q^7072^1:7:1
+@q^7073^0:15:0
+@q^7074^0:15:0
 @q^7435^2:4:0
 @q^7912^1:7:1
 @q^8146^1:7:1
@@ -258,6 +288,7 @@ GoldScout-export 6^g207amt243gq^10
 @q^213546^1:0:0
 @q^213547^1:0:0
 @q^216616^1:12:0
+@q^247834^1:15:0
 @q^248690^1:0:1
 @q^248692^1:0:1
 @q^248693^1:0:1
@@ -267,6 +298,7 @@ GoldScout-export 6^g207amt243gq^10
 @q^277957^1:12:0
 @m^1413^The Barrens
 @m^1418^Badlands
+@m^1429^Elwynn Forest
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
 @m^1443^Desolace
@@ -990,7 +1022,10 @@ GoldScout-export 6^g207amt243gq^10
 @c^279985^
 @c^279987^
 @c^286152^
+@a^6^149:5
+@a^69^149:1
 @a^92^287:2,307:10,308:8,309:4,328:33,329:1,348:5
+@a^299^149:1,169:6
 @a^587^66:1
 @a^588^44:5,45:2
 @a^595^44:14,45:4

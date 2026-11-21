@@ -1,4 +1,4 @@
-GoldScout-export 6^22tl5ep4u7dz^14
+GoldScout-export 6^22tl5ep4u7dz^15
 2240^3^0^33^33^1416^0.4844^0.7925^3^Syndicate Footpad^2592:1:2,3601:1:1,4306:1:2^
 2271^5^0^31^32^1416^0.2245^0.7763^5^Dalaran Shield Guard^1708:1:1,3714:1:1,4306:4:7^
 2272^3^0^33^33^1416^0.2421^0.5830^2^Dalaran Theurgist^3714:1:1,4306:1:2^
@@ -53,6 +53,10 @@ GoldScout-export 6^22tl5ep4u7dz^14
 4117^1^0^25^26^1441^0.4025^0.3486^1^Cloud Serpent^6826:1:1^
 4120^1^0^28^29^1441^0.6799^0.5966^1^Thundering Boulderkin^^
 4124^1^0^27^28^1441^0.1478^0.3293^1^Needles Cougar^^
+4130^5^0^32^33^1441^0.7007^0.8415^5^Silithid Searcher^5854:2:2,5855:1:1,5877:1:1,6300:1:1^
+4133^7^0^33^34^1441^0.7006^0.8342^7^Silithid Hive Drone^5853:3:3,5854:3:3,6302:3:3^
+4139^1^0^34^34^1441^0.7270^0.8852^1^Scorpid Terror^5794:1:1,12037:1:1^
+4150^2^0^35^35^1441^0.7410^0.8942^2^Saltstone Gazer^1701:1:1^
 4249^1^0^28^29^1441^0.1389^0.2598^1^Pesterhide Snarler^3402:1:1^
 4420^1^0^0^0^0^0.0000^0.0000^0^^274161:1:1^
 4421^1^0^0^0^0^0.0000^0.0000^0^^5793:1:1,6693:1:1,17008:1:1^
@@ -94,6 +98,8 @@ GoldScout-export 6^22tl5ep4u7dz^14
 4823^2^0^0^0^0^0.0000^0.0000^0^^3010:1:1^
 4832^1^0^0^0^0^0.0000^0.0000^0^^5881:1:1^
 4978^1^0^0^0^0^0.0000^0.0000^0^^9451:1:1^
+5680^1^0^5^5^1458^0.4720^0.1918^1^Male Human Captive^^
+5681^1^0^7^7^1458^0.4732^0.1908^1^Female Human Captive^^
 5934^1^0^32^32^1441^0.1575^0.4029^1^Heartrazor^1686:1:1,9824:1:1^
 6035^2^0^0^0^0^0.0000^0.0000^0^^1830:1:1,4306:1:1^
 6168^1^0^0^0^0^0.0000^0.0000^0^^4306:1:3^
@@ -165,6 +171,7 @@ GoldScout-export 6^22tl5ep4u7dz^14
 @i^1686^Bristly Whisker
 @i^1696^Curved Raptor Talon
 @i^1697^Keen Raptor Tooth
+@i^1701^Curved Basilisk Claw
 @i^1705^Lesser Moonstone
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
@@ -254,6 +261,7 @@ GoldScout-export 6^22tl5ep4u7dz^14
 @i^5741^Rock Chip
 @i^5785^Thick Murloc Scale
 @i^5793^Razorflank's Heart
+@i^5794^Salty Scorpid Venom
 @i^5801^Kraul Guano
 @i^5810^Fresh Carcass
 @i^5830^Kenata's Head
@@ -263,7 +271,13 @@ GoldScout-export 6^22tl5ep4u7dz^14
 @i^5842^Unrefined Ore Sample
 @i^5843^Grenka's Claw
 @i^5844^Fragments of Rok'Alim
+@i^5853^Intact Silithid Carapace
+@i^5854^Silithid Talon
+@i^5855^Silithid Heart
+@i^5877^Cracked Silithid Carapace
 @i^5881^Head of Kelris
+@i^6300^Husk Fragment
+@i^6302^Delicate Insect Wing
 @i^6308^Raw Bristle Whisker Catfish
 @i^6438^Dull Elemental Bracer
 @i^6439^Broken Binding Bracer
@@ -345,6 +359,7 @@ GoldScout-export 6^22tl5ep4u7dz^14
 @q^1686^0:15:0
 @q^1696^0:15:0
 @q^1697^0:15:0
+@q^1701^0:15:0
 @q^1705^2:7:1
 @q^1707^1:0:0
 @q^1708^1:0:0
@@ -434,6 +449,7 @@ GoldScout-export 6^22tl5ep4u7dz^14
 @q^5741^0:15:0
 @q^5785^1:7:1
 @q^5793^1:12:0
+@q^5794^1:12:0
 @q^5801^1:12:0
 @q^5810^1:12:0
 @q^5830^1:12:0
@@ -443,7 +459,13 @@ GoldScout-export 6^22tl5ep4u7dz^14
 @q^5842^1:12:0
 @q^5843^1:12:0
 @q^5844^1:12:0
+@q^5853^1:12:0
+@q^5854^1:12:0
+@q^5855^1:12:0
+@q^5877^1:12:0
 @q^5881^1:12:0
+@q^6300^0:15:0
+@q^6302^0:15:0
 @q^6308^1:7:1
 @q^6438^0:15:0
 @q^6439^0:15:0
@@ -1016,6 +1038,10 @@ GoldScout-export 6^22tl5ep4u7dz^14
 @a^4117^128:1
 @a^4120^233:1
 @a^4124^122:1
+@a^4130^333:2,334:2,354:1
+@a^4133^333:1,334:5,353:1
+@a^4139^354:1
+@a^4150^354:1,375:1
 @a^4249^102:1
 @a^4479^171:1
 @a^4480^151:1
@@ -1023,6 +1049,8 @@ GoldScout-export 6^22tl5ep4u7dz^14
 @a^4490^205:1
 @a^4499^143:1
 @a^4548^102:1
+@a^5680^69:1
+@a^5681^69:1
 @a^5934^163:1
 @a^8393^289:1
 @a^10617^84:1
