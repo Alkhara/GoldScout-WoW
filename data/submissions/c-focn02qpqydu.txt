@@ -1,4 +1,4 @@
-GoldScout-export 6^focn02qpqydu^2
+GoldScout-export 6^focn02qpqydu^3
 669^1^0^41^41^1434^0.4595^0.4095^1^Skullsplitter Hunter^^
 672^3^0^44^44^1434^0.4740^0.4371^3^Skullsplitter Spiritchaser^1520:2:2,3916:1:1,4001:1:1,4306:1:2,8151:1:1,8153:1:1^
 687^38^0^40^41^1434^0.2897^0.4506^38^Jungle Stalker^3863:12:12,4079:1:1,4461:17:17,4586:10:10,4587:2:2,5637:3:3,8146:1:1,12184:16:16,248690:1:1^
@@ -10,6 +10,11 @@ GoldScout-export 6^focn02qpqydu^2
 783^3^0^43^44^1434^0.4778^0.4318^3^Skullsplitter Berserker^3916:3:3,8151:1:1,8153:1:3^
 854^6^0^36^37^1434^0.3128^0.4322^6^Young Jungle Stalker^3685:2:2,4461:3:3,5637:1:1,12184:2:2,213543:1:1,248690:1:1^
 1059^1^0^45^45^1434^0.4430^0.4501^1^Ana'thek the Cruel^3909:1:1^
+2649^4^0^40^41^1425^0.2254^0.5780^4^Witherbark Scalper^1520:1:1,8151:1:1,9259:1:1,9320:4:4^
+2650^2^0^41^42^1425^0.2191^0.5722^2^Witherbark Zealot^4338:1:1,8151:1:1,9259:1:1,9320:2:2^
+2653^1^0^44^44^1425^0.3785^0.6743^1^Witherbark Sadist^9259:1:1,9320:1:1^
+2686^1^0^45^45^1425^0.3777^0.6762^1^Witherbark Broodguard^9322:1:1^
+2927^2^0^42^43^1425^0.2702^0.5632^2^Vicious Owlbeast^262889:1:1^
 5234^2^0^43^44^1444^0.5950^0.6371^2^Gordunni Mauler^4338:1:1,4421:1:1^
 5236^8^0^44^45^1444^0.6037^0.6726^8^Gordunni Shaman^4306:1:1,4338:6:9,255725:1:1^
 5238^1^0^45^46^1444^0.5851^0.6919^1^Gordunni Battlemaster^4338:1:2^
@@ -28,6 +33,7 @@ GoldScout-export 6^focn02qpqydu^2
 5300^25^0^43^44^1444^0.5604^0.6229^25^Frayfeather Hippogryph^4589:11:11,4590:4:4,5117:3:3,5829:5:5,11417:3:3,11418:8:8^
 5305^1^0^45^46^1444^0.5595^0.7573^1^Frayfeather Skystormer^5117:1:1,5829:1:1^
 5306^1^0^46^47^1444^0.5595^0.7574^1^Frayfeather Patriarch^11418:1:1^
+5308^2^0^44^45^1444^0.5944^0.5048^2^Rogue Vale Screecher^6444:1:1,6826:1:1^
 5426^1^0^44^44^1446^0.4844^0.4458^1^Blisterpaw Hyena^12037:1:1,12203:1:1,12208:1:1^
 5441^2^0^47^48^1446^0.5670^0.6963^2^Hazzali Wasp^6300:1:1,6302:1:1^
 5453^1^0^48^49^1446^0.5758^0.7047^1^Hazzali Tunneler^6300:1:1^
@@ -81,6 +87,8 @@ GoldScout-export 6^focn02qpqydu^2
 @i^6149^Greater Mana Potion
 @i^6300^Husk Fragment
 @i^6302^Delicate Insect Wing
+@i^6444^Forked Tongue
+@i^6826^Brilliant Scale
 @i^8146^Wicked Claw
 @i^8151^Flask of Mojo
 @i^8153^Wildvine
@@ -90,6 +98,9 @@ GoldScout-export 6^focn02qpqydu^2
 @i^8705^OOX-22 FE Distress Beacon
 @i^8973^Thick Yeti Hide
 @i^9246^Firebeard's Head
+@i^9259^Troll Tribal Necklace
+@i^9320^Witherbark Skull
+@i^9322^Undamaged Venom Sac
 @i^9371^Gordunni Orb
 @i^9953^Chieftain's Headdress of Agility
 @i^11417^Feathery Wing
@@ -107,6 +118,7 @@ GoldScout-export 6^focn02qpqydu^2
 @i^248690^Waylaid Crate: Earthly Expert Herbs
 @i^248697^Waylaid Crate: Artisan Ore
 @i^255725^Manual: Superior Healing Potion
+@i^262889^Sealed Expert's Writ
 @i^264219^Schematic: Tru-Trigger Frag Bomb
 @q^1520^0:15:0
 @q^1645^1:0:0
@@ -139,6 +151,8 @@ GoldScout-export 6^focn02qpqydu^2
 @q^6149^1:0:0
 @q^6300^0:15:0
 @q^6302^0:15:0
+@q^6444^0:15:0
+@q^6826^0:15:0
 @q^8146^1:7:1
 @q^8151^1:7:1
 @q^8153^1:7:1
@@ -148,6 +162,9 @@ GoldScout-export 6^focn02qpqydu^2
 @q^8705^2:12:0
 @q^8973^1:12:0
 @q^9246^1:12:0
+@q^9259^1:15:0
+@q^9320^1:12:0
+@q^9322^1:12:0
 @q^9371^1:12:0
 @q^9953^2:4:0
 @q^11417^0:15:0
@@ -165,7 +182,9 @@ GoldScout-export 6^focn02qpqydu^2
 @q^248690^1:0:1
 @q^248697^1:0:1
 @q^255725^2:9:0
+@q^262889^3:0:0
 @q^264219^1:9:0
+@m^1425^The Hinterlands
 @m^1434^Stranglethorn Vale
 @m^1444^Feralas
 @m^1446^Tanaris
@@ -870,6 +889,11 @@ GoldScout-export 6^focn02qpqydu^2
 @a^783^169:3
 @a^854^166:6
 @a^1059^188:1
+@a^2649^224:4
+@a^2650^224:2
+@a^2653^267:1
+@a^2686^267:1
+@a^2927^225:2
 @a^5234^251:2
 @a^5236^271:1,272:6,291:1
 @a^5238^271:1
@@ -888,6 +912,7 @@ GoldScout-export 6^focn02qpqydu^2
 @a^5300^251:25
 @a^5305^311:1
 @a^5306^311:1
+@a^5308^191:1,211:1
 @a^5426^169:1
 @a^5441^271:1,291:1
 @a^5453^291:1

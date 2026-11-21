@@ -1,4 +1,4 @@
-GoldScout-export 6^p8963o7a67q0^16
+GoldScout-export 6^p8963o7a67q0^17
 587^4^0^33^34^1434^0.3388^0.1613^4^Guerrier Bloodscalp^1519:1:1,2592:1:1,3901:2:2,3915:1:1,4306:1:1^
 588^14^0^34^35^1434^0.2499^0.1132^14^Eclaireur Bloodscalp^1519:5:5,1708:1:1,2732:1:1,2734:1:1,2738:1:1,2748:1:1,3915:5:5,4306:4:6^
 595^9^0^34^35^1434^0.2570^0.1094^9^Chasseur Bloodscalp^1519:1:1,3771:1:1,3915:3:3,4306:4:7,262889:1:1^
@@ -50,6 +50,7 @@ GoldScout-export 6^p8963o7a67q0^16
 1550^1^0^41^41^1434^0.3867^0.4534^1^Basilic flagelleur^11386:1:1^
 1769^1^0^10^11^1421^0.4770^0.3319^1^Poil-blanc Ragelune^^
 2529^1^0^0^0^0^0.0000^0.0000^0^^1823:1:1,3770:1:1^
+2572^20^0^35^36^1417^0.7799^0.3751^20^Kobold Sèche-moustache^863:1:1,1710:1:1,2592:1:1,3800:1:1,4306:6:8,4435:10:10,4479:1:1^
 2635^1^0^38^38^1434^0.2923^0.2325^1^Ancien crocilisque marin^770:1:1,3667:1:1,4105:1:1^
 2667^8^0^36^37^1434^0.3770^0.2972^8^Garde de Laze^^
 3238^13^0^22^23^1413^0.4667^0.7736^13^Orageux^4898:5:5,5128:2:2,5133:3:3,5470:5:5^
@@ -148,6 +149,7 @@ GoldScout-export 6^p8963o7a67q0^16
 269175^1^0^36^38^1434^0.3527^0.2930^1^Herbe carnivore^1708:1:1^
 @i^729^Viande filandreuse de vautour
 @i^770^Croc pointu de crocilisque
+@i^863^Faucheuse sombre de brigandage
 @i^929^Potion de soins
 @i^1015^Steak de loup
 @i^1179^Lait glacé
@@ -248,7 +250,9 @@ GoldScout-export 6^p8963o7a67q0^16
 @i^4410^Schéma : Lunettes des ombres
 @i^4422^Parchemin d'Endurance III
 @i^4428^Palpe d'araignée
+@i^4435^Poussières de Myzrael
 @i^4461^Peau de raptor
+@i^4479^Charme ardent
 @i^4537^Banane de Tel'Abim
 @i^4538^Pastèque claquevigne
 @i^4542^Pain de maïs moelleux
@@ -362,6 +366,7 @@ GoldScout-export 6^p8963o7a67q0^16
 @i^277277^Parure d'Olgra
 @q^729^1:7:1
 @q^770^0:15:0
+@q^863^2:2:0
 @q^929^1:0:0
 @q^1015^1:7:1
 @q^1179^1:0:0
@@ -462,7 +467,9 @@ GoldScout-export 6^p8963o7a67q0^16
 @q^4410^2:9:0
 @q^4422^1:0:0
 @q^4428^0:15:0
+@q^4435^1:12:0
 @q^4461^1:7:1
+@q^4479^1:0:0
 @q^4537^1:0:0
 @q^4538^1:0:0
 @q^4542^1:0:0
@@ -575,6 +582,7 @@ GoldScout-export 6^p8963o7a67q0^16
 @q^273645^3:4:0
 @q^277277^1:12:0
 @m^1413^Les Tarides
+@m^1417^Hautes-terres d'Arathi
 @m^1420^Clairières de Tirisfal
 @m^1421^Forêt des Pins argentés
 @m^1434^Vallée de Strangleronce
@@ -630,6 +638,7 @@ GoldScout-export 6^p8963o7a67q0^16
 @a^1152^87:2,88:3,107:6,108:5,127:6
 @a^1550^187:1
 @a^1769^129:1
+@a^2572^135:5,155:11,175:4
 @a^2635^85:1
 @a^2667^107:5,127:3
 @a^3238^288:1,289:1,308:2,309:5,310:1,329:3

@@ -1,4 +1,4 @@
-GoldScout-export 5^czgu1yzi5zdt^17
+GoldScout-export 5^czgu1yzi5zdt^18
 232^1^0^23^23^1424^0.3310^0.3627^1^Farmer Ray^4538:1:1^
 1867^2^0^13^13^1421^0.5051^0.6528^2^Dalaran Apprentice^^
 1888^9^0^18^19^1421^0.6168^0.7750^9^Dalaran Watcher^1179:1:1,1210:1:1,2592:2:3^
@@ -115,8 +115,12 @@ GoldScout-export 5^czgu1yzi5zdt^17
 4006^3^0^19^20^1442^0.5372^0.7173^3^Deepmoss Webspinner^1081:1:1,1475:1:1,2078:1:1,3931:1:1^
 4007^13^0^17^18^1442^0.5367^0.7082^13^Deepmoss Venomspitter^1081:5:5,1475:1:1,3174:7:7,3182:2:2,3931:4:4^
 4011^1^0^19^19^1442^0.6093^0.6037^1^Young Pridewing^248684:1:1^
-4020^1^0^22^22^1442^0.4690^0.3770^1^Sap Beast^^
-4036^2^0^24^24^1442^0.4395^0.4047^2^Rogue Flame Spirit^16312:2:2^
+4012^1^0^22^22^1442^0.4549^0.4350^1^Pridewing Wyvern^5136:1:1^
+4018^11^0^22^23^1442^0.4598^0.2650^11^Antlered Courser^5471:3:3,5566:3:3,5585:11:22,5871:3:3^
+4020^4^0^22^23^1442^0.4750^0.3495^4^Sap Beast^3676:1:1^
+4022^1^0^23^24^1442^0.3703^0.4598^1^Bloodfury Harpy^1205:1:1,277936:1:1^
+4036^10^0^23^24^1442^0.3858^0.5024^10^Rogue Flame Spirit^16312:8:8,211853:1:1^
+4044^2^0^23^24^1442^0.3617^0.5419^2^Blackened Basilisk^11385:1:1,248683:1:1^
 4070^2^0^20^20^1442^0.6409^0.3935^2^Venture Co. Builder^^
 4073^1^0^23^23^1442^0.6903^0.4755^1^XT 4^1205:1:1^
 4074^1^0^23^23^1442^0.6914^0.5600^1^XT 9^2592:1:2,3012:1:1^
@@ -263,14 +267,18 @@ GoldScout-export 5^czgu1yzi5zdt^17
 @i^5269^Silithid Ichor
 @i^5442^Head of Arugal
 @i^5470^Thunder Lizard Tail
+@i^5471^Stag Meat
 @i^5490^Wrathtail Head
 @i^5516^Threshadon Fang
 @i^5523^Small Barnacled Clam
 @i^5524^Thick-shelled Clam
+@i^5566^Broken Antler
+@i^5585^Courser Eye
 @i^5620^Vial of Innocent Blood
 @i^5635^Sharp Claw
 @i^5734^Super Reaper 6000 Blueprints
 @i^5736^Gerenzo's Mechanical Arm
+@i^5871^Large Hoof
 @i^6308^Raw Bristle Whisker Catfish
 @i^6314^Wolfmaster Cape
 @i^6320^Commander's Crest
@@ -293,6 +301,7 @@ GoldScout-export 5^czgu1yzi5zdt^17
 @i^10316^Pattern: Colorful Kilt
 @i^10338^Fresh Zhevra Carcass
 @i^10441^Glowing Shard
+@i^11385^Basilisk Scale
 @i^11406^Rotting Bear Carcass
 @i^11407^Torn Bear Pelt
 @i^11981^Lead Band of Frost Protection
@@ -314,6 +323,7 @@ GoldScout-export 5^czgu1yzi5zdt^17
 @i^211784^Scroll: WUBBA WUBBA
 @i^211853^Scroll: VOCE WELL
 @i^211855^Scroll: STHENIC LUNATE
+@i^248683^Waylaid Crate: Apprentice Ore
 @i^248684^Waylaid Crate: Apprentice Textiles
 @i^248689^Waylaid Crate: Journeyman Curiosities
 @i^248704^Waylaid Crate: Apprentice Parts
@@ -322,6 +332,7 @@ GoldScout-export 5^czgu1yzi5zdt^17
 @i^271343^Note Scrap
 @i^271350^Tortured Soul
 @i^277277^Olgra's Adornments
+@i^277936^Glittering Sunstone
 @q^422^1:0:0
 @q^814^1:7:1
 @q^878^0:7:0
@@ -443,14 +454,18 @@ GoldScout-export 5^czgu1yzi5zdt^17
 @q^5269^0:15:0
 @q^5442^1:12:0
 @q^5470^1:7:1
+@q^5471^1:7:1
 @q^5490^1:12:0
 @q^5516^0:2:0
 @q^5523^1:7:0
 @q^5524^1:7:0
+@q^5566^0:15:0
+@q^5585^1:12:0
 @q^5620^1:12:0
 @q^5635^1:7:1
 @q^5734^1:12:0
 @q^5736^1:12:0
+@q^5871^0:15:0
 @q^6308^1:7:1
 @q^6314^3:4:0
 @q^6320^3:4:0
@@ -473,6 +488,7 @@ GoldScout-export 5^czgu1yzi5zdt^17
 @q^10316^2:9:0
 @q^10338^1:12:0
 @q^10441^1:12:0
+@q^11385^0:15:0
 @q^11406^0:15:0
 @q^11407^1:12:0
 @q^11981^2:4:0
@@ -494,6 +510,7 @@ GoldScout-export 5^czgu1yzi5zdt^17
 @q^211784^1:0:0
 @q^211853^1:0:0
 @q^211855^1:0:0
+@q^248683^1:0:1
 @q^248684^1:0:1
 @q^248689^1:0:1
 @q^248704^2:0:1
@@ -502,6 +519,7 @@ GoldScout-export 5^czgu1yzi5zdt^17
 @q^271343^1:15:0
 @q^271350^1:12:0
 @q^277277^1:12:0
+@q^277936^1:12:0
 @m^1413^The Barrens
 @m^1414^Kalimdor
 @m^1416^Alterac Mountains
@@ -1191,8 +1209,12 @@ GoldScout-export 5^czgu1yzi5zdt^17
 @a^4006^290:3
 @a^4007^232:1,250:2,290:9,310:1
 @a^4011^252:1
-@a^4020^149:1
-@a^4036^148:1,168:1
+@a^4012^169:1
+@a^4018^88:1,89:4,108:1,109:2,129:2,149:1
+@a^4020^109:1,149:3
+@a^4022^187:1
+@a^4036^148:1,168:1,169:1,187:2,207:3,226:1,246:1
+@a^4044^187:1,226:1
 @a^4070^152:2
 @a^4073^193:1
 @a^4074^233:1

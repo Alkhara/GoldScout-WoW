@@ -1,4 +1,4 @@
-GoldScout-export 6^ukldp0o9bjhk^8
+GoldScout-export 6^ukldp0o9bjhk^9
 667^13^0^39^40^1434^0.4683^0.3970^13^Krieger der Skullsplitter^1520:4:4,1708:2:2,2732:1:1,2738:1:1,3916:2:2,4306:2:4,4338:1:1,8151:1:1,8153:2:4^
 669^16^0^41^42^1434^0.4567^0.4186^16^Jäger der Skullsplitter^866:1:1,1520:3:3,1524:4:4,1645:1:1,2730:1:1,2735:1:1,2745:1:1,3916:5:5,4025:1:1,4306:1:2,4338:2:2,8151:3:3,9880:1:1^
 670^8^0^41^42^1434^0.4585^0.4229^8^Hexendoktor der Skullsplitter^1520:2:2,1524:3:3,4306:2:3,4338:1:1^
@@ -123,6 +123,14 @@ GoldScout-export 6^ukldp0o9bjhk^8
 14356^4^0^39^40^1435^0.6979^0.5452^4^Sägeflossenfrenzy^^
 252711^3^0^42^43^2652^0.4389^0.3399^3^Verfallener Pylonenbeschützer^^
 255561^2^0^40^40^1443^0.3606^0.8566^2^Wächter der Gelkis^3771:1:1,3815:1:1^
+255851^1^0^38^38^2548^0.7114^0.3116^1^Ausgewachsener Bleichhauer^769:1:1^
+256807^11^0^39^40^2548^0.8569^0.3797^11^Küstenkriecher^3010:1:1,5524:4:4,5569:4:4,12206:2:2,17057:3:3,268345:5:5^
+257901^5^0^41^42^2548^0.8698^0.3919^5^Bukanier der östlichen See^7479:1:1^
+257910^5^0^42^43^2548^0.8741^0.3764^5^Musketier der östlichen See^4306:1:2,4338:2:3^
+257916^1^0^43^43^2548^0.8975^0.3936^1^Bombenschützin der östlichen See^^
+260235^1^0^42^42^2548^0.8558^0.5042^1^Fallenklaue^12206:1:1,17057:1:1,268586:1:1^
+268831^1^0^39^39^2548^0.7158^0.3989^1^Ebenenstreuner^12203:1:1^
+@i^769^Brocken Eberfleisch
 @i^770^Spitzer Krokiliskenzahn
 @i^863^Düsterschneide des Affen
 @i^864^Ritterliches Langschwert des Naturschutzes
@@ -205,6 +213,7 @@ GoldScout-export 6^ukldp0o9bjhk^8
 @i^5133^Undichter Muskelmagen
 @i^5213^Zauberstab des Versengens
 @i^5214^Zauberstab der Abendzeit
+@i^5524^Dickschalige Muschel
 @i^5569^Seetang
 @i^5637^Großer Fangzahn
 @i^5840^Sengende Zunge
@@ -231,6 +240,7 @@ GoldScout-export 6^ukldp0o9bjhk^8
 @i^7445^Schildwachenschultern der Beweglichkeit
 @i^7473^Königlicher Mantel des Zauberers
 @i^7478^Waldläufergamaschen des Hierophanten
+@i^7479^Waldläuferhelm des Banditen
 @i^7552^Falkenhaken
 @i^7973^Großmaulmuschel
 @i^8119^Heraldische Brustplatte
@@ -256,8 +266,10 @@ GoldScout-export 6^ukldp0o9bjhk^8
 @i^12037^Eigenartiges Fleisch
 @i^12184^Raptorfleisch
 @i^12202^Tigerfleisch
+@i^12203^Rotes Wolfsfleisch
 @i^12206^Zartes Krebsfleisch
 @i^13137^Eisenwirker
+@i^13422^Steinschuppenaal
 @i^13542^Dämonenkasten
 @i^14196^Distelfellsandalen der Ausdauer
 @i^14600^Aufsehergelenkbänder
@@ -271,11 +283,13 @@ GoldScout-export 6^ukldp0o9bjhk^8
 @i^16969^Blauwimpel von der ungezähmten Küste
 @i^16970^Nebelschilf-Mahi-Mahi
 @i^17009^Kopf von Botschafter Malcin
+@i^17057^Glänzende Fischschuppen
 @i^17058^Fischöl
 @i^20310^Geschundene Dämonenhaut
 @i^20763^Beschädigte Waffe
 @i^21150^Eisenbeschlagener Koffer
 @i^21151^Schwarzer Rumsey Rum
+@i^21228^Mithrilbeschlagener Koffer
 @i^213127^Unvollständige mystische Notizen
 @i^213545^Schriftrolle: ZAEHLEZ STARKDEUTIEN
 @i^248690^Abgefangene Kiste: Weltliche Kräuter des Experten
@@ -284,10 +298,13 @@ GoldScout-export 6^ukldp0o9bjhk^8
 @i^254432^Geschnitztes Zentaurentotem
 @i^255728^Handbuch: Wirksames Gegengift
 @i^258530^Glücksköder
+@i^268345^Sandkriecherfleisch
+@i^268586^Fallenklaues Zange
 @i^274380^Verwesende Fleischbänder
 @i^279601^Intakter Raptorbalg
 @i^279934^Abgeworfene dunkle Drachenschuppe
 @i^285101^Fäulnisverschmolzene Schienbeinschützer
+@q^769^1:7:1
 @q^770^0:15:0
 @q^863^2:2:0
 @q^864^2:2:0
@@ -370,6 +387,7 @@ GoldScout-export 6^ukldp0o9bjhk^8
 @q^5133^0:15:0
 @q^5213^2:2:0
 @q^5214^2:2:0
+@q^5524^1:7:0
 @q^5569^0:15:0
 @q^5637^1:7:1
 @q^5840^1:12:0
@@ -396,6 +414,7 @@ GoldScout-export 6^ukldp0o9bjhk^8
 @q^7445^2:4:0
 @q^7473^2:4:0
 @q^7478^2:4:0
+@q^7479^2:4:0
 @q^7552^2:4:0
 @q^7973^1:7:0
 @q^8119^2:4:0
@@ -421,8 +440,10 @@ GoldScout-export 6^ukldp0o9bjhk^8
 @q^12037^1:7:1
 @q^12184^1:7:1
 @q^12202^1:7:1
+@q^12203^1:7:1
 @q^12206^1:7:1
 @q^13137^3:2:0
+@q^13422^1:7:1
 @q^13542^1:12:0
 @q^14196^2:4:0
 @q^14600^2:4:0
@@ -436,11 +457,13 @@ GoldScout-export 6^ukldp0o9bjhk^8
 @q^16969^1:12:0
 @q^16970^1:12:0
 @q^17009^1:12:0
+@q^17057^1:15:0
 @q^17058^1:15:0
 @q^20310^1:12:0
 @q^20763^0:15:0
 @q^21150^1:15:0
 @q^21151^1:0:0
+@q^21228^1:15:0
 @q^213127^1:15:0
 @q^213545^1:0:0
 @q^248690^1:0:1
@@ -449,6 +472,8 @@ GoldScout-export 6^ukldp0o9bjhk^8
 @q^254432^2:15:0
 @q^255728^2:9:0
 @q^258530^1:12:0
+@q^268345^1:12:0
+@q^268586^1:12:0
 @q^274380^3:4:0
 @q^279601^1:12:0
 @q^279934^1:12:0
@@ -463,6 +488,7 @@ GoldScout-export 6^ukldp0o9bjhk^8
 @m^1445^Marschen von Dustwallow
 @m^1446^Tanaris
 @m^1456^Thunder Bluff
+@m^2548^Flusslande
 @m^2652^Shen'dralas
 @c^118^
 @c^724^
@@ -1810,10 +1836,18 @@ GoldScout-export 6^ukldp0o9bjhk^8
 @a^14356^193:1,215:1,233:1,253:1
 @a^252711^128:3
 @a^255561^347:2
+@a^255851^134:1
+@a^256807^116:2,137:3,157:1,177:2,196:3
+@a^257901^156:1,157:3,177:1
+@a^257910^137:1,157:4
+@a^257916^157:1
+@a^260235^217:1
+@a^268831^154:1
 @f^1434^0^53^206^3820:1:3,4603:3:3,6308:10:10,6358:7:7,6359:3:3,6362:11:11,8365:15:15,16969:1:1,21150:2:2,21151:1:1^105:3,106:41,285:9
 @f^1435^0^3^225^4603:2:2,6362:1:1,16970:1:1^57:3
 @f^1443^0^5^225^6362:5:5,16968:1:1^305:5
 @f^1444^0^2^225^6358:1:1,8365:1:1,16967:1:1^212:2
 @f^1445^0^84^211^6308:29:29,8365:54:54,8366:1:1^127:84
 @f^1456^0^18^208^6289:8:8,6291:4:4,6308:6:6^228:18
+@f^2548^0^10^226^3820:3:6,13422:4:9,21151:1:2,21228:2:2^137:5,196:5
 @l^0^deDE

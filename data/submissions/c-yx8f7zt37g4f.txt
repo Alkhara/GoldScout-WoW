@@ -1,4 +1,4 @@
-GoldScout-export 5^yx8f7zt37g4f^6
+GoldScout-export 5^yx8f7zt37g4f^7
 1015^1^0^23^24^1437^0.5349^0.2396^1^Highland Raptor^3685:1:1^
 1017^1^0^25^25^1437^0.5919^0.2893^1^Highland Scytheclaw^3685:1:1^
 1069^3^0^25^26^1437^0.6116^0.3244^3^Crimson Whelp^3175:1:1,4402:1:1^
@@ -22,6 +22,8 @@ GoldScout-export 5^yx8f7zt37g4f^6
 2413^1^0^33^33^1416^0.1885^0.9116^1^Dermot^3691:1:1^
 2414^1^0^33^33^1416^0.1657^0.8877^1^Kegan Darkmar^3688:1:1^
 2415^1^0^33^33^1416^0.1652^0.8906^1^Warden Belamoore^3711:1:1^
+3098^23^0^1^2^1411^0.4328^0.6430^23^Mottled Boar^117:4:4,1364:2:2,1374:1:1,2653:1:1,2656:2:2,3363:1:1,4865:11:11,7098:12:12^
+3124^5^0^3^3^1411^0.4107^0.6385^5^Scorpid Worker^2656:1:1,3363:1:1,4867:1:1,7100:2:2,7101:2:2^
 3743^1^0^23^24^1440^0.5369^0.6336^1^Foulweald Warrior^^
 3745^1^0^23^24^1440^0.5390^0.6362^1^Foulweald Pathfinder^^
 3746^1^0^24^25^1440^0.5514^0.6212^1^Foulweald Den Watcher^^
@@ -64,6 +66,7 @@ GoldScout-export 5^yx8f7zt37g4f^6
 271732^1^0^0^0^0^0.0000^0.0000^0^^3685:1:1^
 275044^2^0^0^0^0^0.0000^0.0000^0^^4306:1:2,13131:1:1^
 275046^1^0^0^0^0^0.0000^0.0000^0^^284844:1:1^
+@i^117^Tough Jerky
 @i^770^Pointy Crocolisk Tooth
 @i^804^Large Blue Sack
 @i^878^Fist-sized Spinneret
@@ -71,6 +74,8 @@ GoldScout-export 5^yx8f7zt37g4f^6
 @i^1081^Crisp Spider Meat
 @i^1206^Moss Agate
 @i^1288^Large Venom Sac
+@i^1364^Ragged Leather Vest
+@i^1374^Frayed Shoes
 @i^1477^Scroll of Agility II
 @i^1697^Keen Raptor Tooth
 @i^1705^Lesser Moonstone
@@ -84,6 +89,8 @@ GoldScout-export 5^yx8f7zt37g4f^6
 @i^2077^Magician Staff of the Owl
 @i^2251^Gooey Spider Leg
 @i^2592^Wool Cloth
+@i^2653^Flimsy Chain Gloves
+@i^2656^Flimsy Chain Vest
 @i^2766^Deft Stiletto
 @i^2785^Stiff Recurve Bow
 @i^2786^Oiled Blunderbuss
@@ -97,6 +104,7 @@ GoldScout-export 5^yx8f7zt37g4f^6
 @i^3182^Spider's Silk
 @i^3193^Oak Mallet of Stamina
 @i^3301^Sharp Canine
+@i^3363^Frayed Belt
 @i^3385^Lesser Mana Potion
 @i^3402^Soft Patch of Fur
 @i^3667^Tender Crocolisk Meat
@@ -123,6 +131,8 @@ GoldScout-export 5^yx8f7zt37g4f^6
 @i^4713^Silver-thread Cloak
 @i^4715^Emblazoned Cloak
 @i^4784^Lifeless Stone
+@i^4865^Ruined Pelt
+@i^4867^Broken Scorpid Leg
 @i^5001^Heart Ring
 @i^5120^Long Tail Hair
 @i^5136^Torn Furry Ear
@@ -139,6 +149,9 @@ GoldScout-export 5^yx8f7zt37g4f^6
 @i^6599^Battleforge Shield of the Elder
 @i^6613^Sage's Bracers of the Hierophant
 @i^7067^Elemental Earth
+@i^7098^Splintered Tusk
+@i^7100^Sticky Ichor
+@i^7101^Bug Eye
 @i^7415^Dervish Spaulders of the Owl
 @i^8150^Deeprock Salt
 @i^8184^Firestarter
@@ -184,6 +197,7 @@ GoldScout-export 5^yx8f7zt37g4f^6
 @i^276158^Crystallized Shard
 @i^276160^Mana Fragment
 @i^284844^Dragonmaw Dispatch
+@q^117^1:0:0
 @q^770^0:15:0
 @q^804^1:1:0
 @q^878^0:7:0
@@ -191,6 +205,8 @@ GoldScout-export 5^yx8f7zt37g4f^6
 @q^1081^1:7:1
 @q^1206^2:7:1
 @q^1288^1:7:1
+@q^1364^0:4:0
+@q^1374^0:4:0
 @q^1477^1:0:0
 @q^1697^0:15:0
 @q^1705^2:7:1
@@ -204,6 +220,8 @@ GoldScout-export 5^yx8f7zt37g4f^6
 @q^2077^2:2:0
 @q^2251^1:7:1
 @q^2592^1:7:1
+@q^2653^0:4:0
+@q^2656^0:4:0
 @q^2766^0:2:0
 @q^2785^0:2:0
 @q^2786^0:2:0
@@ -217,6 +235,7 @@ GoldScout-export 5^yx8f7zt37g4f^6
 @q^3182^1:7:1
 @q^3193^2:2:0
 @q^3301^0:15:0
+@q^3363^0:4:0
 @q^3385^1:0:0
 @q^3402^0:15:0
 @q^3667^1:7:1
@@ -243,6 +262,8 @@ GoldScout-export 5^yx8f7zt37g4f^6
 @q^4713^2:4:0
 @q^4715^2:4:0
 @q^4784^0:15:0
+@q^4865^0:15:0
+@q^4867^0:15:0
 @q^5001^2:4:0
 @q^5120^0:15:0
 @q^5136^0:15:0
@@ -259,6 +280,9 @@ GoldScout-export 5^yx8f7zt37g4f^6
 @q^6599^2:4:0
 @q^6613^2:4:0
 @q^7067^1:7:1
+@q^7098^0:15:0
+@q^7100^0:15:0
+@q^7101^0:15:0
 @q^7415^2:4:0
 @q^8150^1:7:1
 @q^8184^2:2:0
@@ -304,6 +328,7 @@ GoldScout-export 5^yx8f7zt37g4f^6
 @q^276158^0:15:0
 @q^276160^0:15:0
 @q^284844^1:12:0
+@m^1411^Durotar
 @m^1416^Alterac Mountains
 @m^1424^Hillsbrad Foothills
 @m^1437^Wetlands
@@ -802,6 +827,8 @@ GoldScout-export 5^yx8f7zt37g4f^6
 @a^2413^363:1
 @a^2414^343:1
 @a^2415^343:1
+@a^3098^248:20,268:1,269:2
+@a^3124^248:5
 @a^3743^250:1
 @a^3745^250:1
 @a^3746^251:1
