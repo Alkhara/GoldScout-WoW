@@ -1,4 +1,6 @@
-GoldScout-export 6^b0eqez9rqeni^6
+GoldScout-export 6^b0eqez9rqeni^7
+3238^2^0^22^22^1413^0.4674^0.7551^2^Stormhide^4898:1:1,5143:1:1,5470:2:2^
+3239^6^0^20^21^1413^0.4563^0.6386^6^Thunderhead^5125:1:1,5128:2:2,5143:2:2,5470:1:1,6661:1:1^
 3240^11^0^18^19^1413^0.4953^0.5290^11^Stormsnout^3199:1:1,4895:2:2,5128:4:4,5470:6:6^
 3241^3^0^15^16^1413^0.6172^0.3256^3^Savannah Patriarch^4893:2:2,5134:2:2^
 3242^4^0^13^14^1413^0.5432^0.3651^4^Zhevra Runner^5118:3:3,5119:1:1^
@@ -31,6 +33,7 @@ GoldScout-export 6^b0eqez9rqeni^6
 3397^5^0^14^15^1413^0.5221^0.4187^5^Kolkar Bloodcharger^2589:2:4^
 3415^1^0^11^12^1413^0.5592^0.1709^1^Savannah Huntress^4813:1:1^
 3416^6^0^17^18^1413^0.6162^0.3257^6^Savannah Matriarch^4893:2:2,5134:1:1,5135:5:5^
+3424^3^0^20^22^1413^0.4589^0.6187^3^Thunderhawk Cloudscraper^5164:1:1,6444:1:1^
 3425^3^0^14^15^1413^0.5928^0.3642^3^Savannah Prowler^4893:1:1,5134:2:2,6663:1:1^
 3426^4^0^17^18^1413^0.5717^0.3579^4^Zhevra Charger^5119:1:1,10338:2:2,211855:1:1^
 3445^1^0^18^18^1413^0.5627^0.0853^1^Supervisor Lugwizzle^2589:1:1,5050:1:1^
@@ -46,6 +49,7 @@ GoldScout-export 6^b0eqez9rqeni^6
 4007^6^0^17^18^1442^0.5578^0.6802^6^Deepmoss Venomspitter^1081:4:4,3174:3:3,3931:2:2^
 4073^2^0^23^23^1442^0.6599^0.4570^2^XT 4^2592:2:4^
 4127^1^0^15^15^1413^0.5939^0.3806^1^Hecklefang Hyena^5635:1:1^
+4128^1^0^22^22^1413^0.4685^0.7463^1^Hecklefang Stalker^3402:1:1^
 4129^5^0^18^19^1413^0.4703^0.5190^5^Hecklefang Snarler^3299:1:1,3301:4:4^
 4263^6^0^14^14^1442^0.6218^0.5233^6^Deepmoss Hatchling^^
 4316^2^0^13^13^1413^0.5244^0.4626^2^Kolkar Packhound^3300:1:1^
@@ -99,6 +103,7 @@ GoldScout-export 6^b0eqez9rqeni^6
 @i^3303^Brackwater Bracers
 @i^3307^Barbaric Cloth Boots
 @i^3375^Calico Bracers
+@i^3402^Soft Patch of Fur
 @i^3931^Poisoned Spider Fang
 @i^4537^Tel'Abim Banana
 @i^4555^Thick Scaly Tail
@@ -109,6 +114,7 @@ GoldScout-export 6^b0eqez9rqeni^6
 @i^4893^Savannah Lion Tusk
 @i^4894^Plainstrider Kidney
 @i^4895^Thunder Lizard Horn
+@i^4898^Lightning Gland
 @i^5023^Verog's Head
 @i^5025^Hezrul's Head
 @i^5050^Ignition Key
@@ -129,9 +135,12 @@ GoldScout-export 6^b0eqez9rqeni^6
 @i^5119^Fine Loose Hair
 @i^5123^Steel Arrowhead
 @i^5124^Small Raptor Tooth
+@i^5125^Charged Scale
 @i^5128^Shed Lizard Skin
 @i^5134^Small Furry Paw
 @i^5135^Thin Black Claw
+@i^5143^Thunder Lizard Blood
+@i^5164^Thunderhawk Wings
 @i^5165^Sunscale Feather
 @i^5212^Blazing Wand
 @i^5469^Strider Meat
@@ -143,6 +152,7 @@ GoldScout-export 6^b0eqez9rqeni^6
 @i^5734^Super Reaper 6000 Blueprints
 @i^6361^Raw Rainbow Fin Albacore
 @i^6444^Forked Tongue
+@i^6661^Recipe: Savory Deviate Delight
 @i^6663^Recipe: Elixir of Giant Growth
 @i^10338^Fresh Zhevra Carcass
 @i^14117^Aboriginal Gloves of Fiery Wrath
@@ -191,6 +201,7 @@ GoldScout-export 6^b0eqez9rqeni^6
 @q^3303^1:4:0
 @q^3307^2:4:0
 @q^3375^0:4:0
+@q^3402^0:15:0
 @q^3931^0:15:0
 @q^4537^1:0:0
 @q^4555^0:15:0
@@ -201,6 +212,7 @@ GoldScout-export 6^b0eqez9rqeni^6
 @q^4893^1:12:0
 @q^4894^1:12:0
 @q^4895^1:12:0
+@q^4898^1:12:0
 @q^5023^1:12:0
 @q^5025^1:12:0
 @q^5050^1:13:0
@@ -221,9 +233,12 @@ GoldScout-export 6^b0eqez9rqeni^6
 @q^5119^0:15:0
 @q^5123^0:15:0
 @q^5124^0:15:0
+@q^5125^0:15:0
 @q^5128^0:15:0
 @q^5134^1:12:0
 @q^5135^0:15:0
+@q^5143^1:12:0
+@q^5164^1:12:0
 @q^5165^1:12:0
 @q^5212^2:2:0
 @q^5469^1:7:1
@@ -235,6 +250,7 @@ GoldScout-export 6^b0eqez9rqeni^6
 @q^5734^1:12:0
 @q^6361^1:7:1
 @q^6444^0:15:0
+@q^6661^2:9:0
 @q^6663^2:9:0
 @q^10338^1:12:0
 @q^14117^2:4:0
@@ -1011,6 +1027,8 @@ GoldScout-export 6^b0eqez9rqeni^6
 @c^279981^
 @c^279982^
 @c^286152^
+@a^3238^289:1,309:1
+@a^3239^248:1,249:2,269:3
 @a^3240^189:3,209:2,210:2,230:4
 @a^3241^132:3
 @a^3242^131:1,150:3
@@ -1043,6 +1061,7 @@ GoldScout-export 6^b0eqez9rqeni^6
 @a^3397^169:2,170:2,171:1
 @a^3415^71:1
 @a^3416^132:6
+@a^3424^248:1,249:2
 @a^3425^131:1,151:2
 @a^3426^131:2,132:1,189:1
 @a^3445^31:1
@@ -1058,6 +1077,7 @@ GoldScout-export 6^b0eqez9rqeni^6
 @a^4007^250:1,252:2,290:1,310:2
 @a^4073^193:2
 @a^4127^151:1
+@a^4128^289:1
 @a^4129^189:1,208:1,209:2,210:1
 @a^4263^191:1,192:2,193:1,252:2
 @a^4316^190:2

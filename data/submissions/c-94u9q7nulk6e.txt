@@ -1,4 +1,4 @@
-GoldScout-export 6^94u9q7nulk6e^7
+GoldScout-export 6^94u9q7nulk6e^8
 2240^4^0^32^33^1416^0.4805^0.8155^4^Asaltante de caminos de la Hermandad^3794:1:1,4306:2:2,5113:1:1^
 2241^7^0^33^34^1416^0.4960^0.7993^7^Ladrona de la Hermandad^4306:3:5,5113:1:1^
 2354^1^0^23^23^1424^0.5450^0.5276^1^Oso gris feroz^3730:1:1^
@@ -14,6 +14,9 @@ GoldScout-export 6^94u9q7nulk6e^7
 2721^1^0^35^35^1417^0.5855^0.6090^1^Guardaespaldas Renegada^4306:1:2^
 2733^1^0^36^36^1417^0.6009^0.5929^1^Boticario Jorell^^
 2946^18^0^44^44^1424^0.5018^0.5702^18^Títere de Helcular^^
+4107^2^0^28^29^1441^0.1123^0.3643^2^Dracoleón Nido Alto^5809:2:2^
+4109^6^0^28^29^1441^0.1164^0.3622^6^Consorte Nido Alto^5136:2:2,5137:4:4^
+4110^1^0^30^30^1441^0.1097^0.3503^1^Patriarca Nido Alto^5136:1:1^
 5184^1^0^35^36^1445^0.4521^0.2329^1^Argos de Theramore^1707:1:1^
 14222^1^0^35^35^1416^0.3844^0.8902^1^Araga^283253:1:1^
 245999^1^0^0^0^1416^0.0000^0.0000^0^^273031:1:1^
@@ -54,7 +57,10 @@ GoldScout-export 6^94u9q7nulk6e^7
 @i^4607^Moho de cueva delicado
 @i^4633^Arcón de bronce pesado
 @i^5113^Marca de la Hermandad
+@i^5136^Oreja peluda rasgada
+@i^5137^Ojo brillante
 @i^5637^Colmillo grande
+@i^5809^Glándula de veneno de Pico Alto
 @i^6439^Brazal de vínculo roto
 @i^6584^Túnica de exploración de protección contra la Naturaleza
 @i^6605^Guantes Derviche del médico
@@ -93,7 +99,10 @@ GoldScout-export 6^94u9q7nulk6e^7
 @q^4607^1:0:0
 @q^4633^2:15:0
 @q^5113^0:15:0
+@q^5136^0:15:0
+@q^5137^0:15:0
 @q^5637^1:7:1
+@q^5809^1:12:0
 @q^6439^0:15:0
 @q^6584^2:4:0
 @q^6605^2:4:0
@@ -115,6 +124,7 @@ GoldScout-export 6^94u9q7nulk6e^7
 @m^1416^Montañas de Alterac
 @m^1417^Tierras Altas de Arathi
 @m^1424^Laderas de Trabalomas
+@m^1441^Las Mil Agujas
 @m^1445^Marjal Revolcafango
 @a^2240^329:4
 @a^2241^271:1,309:1,329:5
@@ -131,6 +141,9 @@ GoldScout-export 6^94u9q7nulk6e^7
 @a^2721^251:1
 @a^2733^232:1
 @a^2946^210:1,229:6,230:11
+@a^4107^122:1,142:1
+@a^4109^122:2,142:4
+@a^4110^142:1
 @a^5184^89:1
 @a^14222^347:1
 @l^0^esES
