@@ -1,4 +1,4 @@
-GoldScout-export 6^2nwjht3mhj3q^11
+GoldScout-export 6^2nwjht3mhj3q^12
 1783^16^0^50^51^1422^0.4872^0.7779^16^Skeletal Flayer^7972:1:1,8948:2:2,10126:1:1,12840:5:5,14047:4:7^
 1784^2^0^51^51^1422^0.3809^0.5676^2^Skeletal Sorcerer^12840:1:1^
 1791^6^0^50^52^1422^0.4976^0.7870^6^Slavering Ghoul^6530:2:2,10305:1:1,12840:2:2,14047:2:3^
@@ -95,6 +95,9 @@ GoldScout-export 6^2nwjht3mhj3q^11
 7440^8^0^55^56^1452^0.3157^0.3656^8^Winterfall Den Watcher^8766:1:1,8953:1:1,12820:1:1,14047:2:2,20742:1:1^
 7441^5^0^54^55^1452^0.3101^0.3639^5^Winterfall Totemic^8766:1:1^
 7442^8^0^53^54^1452^0.3126^0.3594^8^Winterfall Pathfinder^12771:1:1^
+7452^8^0^56^57^1452^0.6508^0.6054^8^Crazed Owlbeast^11419:1:1,12207:3:3,15420:4:8^
+7453^5^0^57^58^1452^0.6487^0.5999^5^Moontouched Owlbeast^8766:1:1,11419:2:2,12207:1:1,13816:1:1,15420:3:6^
+7454^8^0^58^59^1452^0.6461^0.5970^8^Berserk Owlbeast^8146:1:1,8766:1:1,8952:1:1,11419:1:1,12207:3:3,12524:1:1,15420:5:12^
 7795^1^0^0^0^0^0.0000^0.0000^0^^10661:1:1^
 8095^1^0^0^0^0^0.0000^0.0000^0^^4092:1:1^
 8120^1^0^0^0^0^0.0000^0.0000^0^^4092:1:1,4093:1:1^
@@ -257,6 +260,7 @@ GoldScout-export 6^2nwjht3mhj3q^11
 @i^11408^Bear Jaw
 @i^11410^Savage Bear Claw
 @i^11418^Hollow Wing Bone
+@i^11419^Mysterious Unhatched Egg
 @i^11476^U'cha's Pelt
 @i^11478^Un'Goro Gorilla Pelt
 @i^11479^Un'Goro Stomper Pelt
@@ -273,7 +277,9 @@ GoldScout-export 6^2nwjht3mhj3q^11
 @i^11987^Iridium Circle of Strength
 @i^12037^Mystery Meat
 @i^12203^Red Wolf Meat
+@i^12207^Giant Egg
 @i^12208^Tender Wolf Meat
+@i^12524^Blue-feathered Amulet
 @i^12662^Demonic Rune
 @i^12771^Empty Firewater Flask
 @i^12803^Living Essence
@@ -285,6 +291,7 @@ GoldScout-export 6^2nwjht3mhj3q^11
 @i^13446^Major Healing Potion
 @i^13463^Dreamfoil
 @i^13815^Some Rune
+@i^13816^Fine Longsword
 @i^14047^Runecloth
 @i^14256^Felcloth
 @i^14268^Gaea's Cuffs of the Eagle
@@ -301,6 +308,7 @@ GoldScout-export 6^2nwjht3mhj3q^11
 @i^15369^Wolf Rider's Belt of the Tiger
 @i^15379^Rageclaw Boots of the Whale
 @i^15382^Rageclaw Cloak of the Beast
+@i^15420^Ironfeather
 @i^15619^Gryphon Mail Belt of the Bandit
 @i^15661^Impenetrable Cloak of Strength
 @i^17684^Theradric Crystal Carving
@@ -443,6 +451,7 @@ GoldScout-export 6^2nwjht3mhj3q^11
 @q^11408^0:15:0
 @q^11410^0:15:0
 @q^11418^0:15:0
+@q^11419^0:15:0
 @q^11476^1:12:0
 @q^11478^1:12:0
 @q^11479^1:12:0
@@ -459,7 +468,9 @@ GoldScout-export 6^2nwjht3mhj3q^11
 @q^11987^2:4:0
 @q^12037^1:7:1
 @q^12203^1:7:1
+@q^12207^1:7:1
 @q^12208^1:7:1
+@q^12524^1:12:0
 @q^12662^2:7:1
 @q^12771^1:12:0
 @q^12803^2:7:1
@@ -471,6 +482,7 @@ GoldScout-export 6^2nwjht3mhj3q^11
 @q^13446^1:0:0
 @q^13463^1:7:1
 @q^13815^1:12:0
+@q^13816^0:2:0
 @q^14047^1:7:1
 @q^14256^1:7:1
 @q^14268^2:4:0
@@ -487,6 +499,7 @@ GoldScout-export 6^2nwjht3mhj3q^11
 @q^15369^2:4:0
 @q^15379^2:4:0
 @q^15382^2:4:0
+@q^15420^1:7:1
 @q^15619^2:4:0
 @q^15661^2:4:0
 @q^17684^1:12:0
@@ -619,6 +632,9 @@ GoldScout-export 6^2nwjht3mhj3q^11
 @a^7440^146:8
 @a^7441^145:1,146:4
 @a^7442^126:1,146:7
+@a^7452^232:1,252:4,253:3
+@a^7453^232:2,233:1,252:1,253:1
+@a^7454^231:1,232:1,233:3,252:1,253:2
 @a^8337^173:1,193:3,212:2
 @a^8566^226:1,230:10,247:1,249:1,250:1
 @a^8637^252:3,272:1

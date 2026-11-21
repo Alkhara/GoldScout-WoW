@@ -1,4 +1,4 @@
-GoldScout-export 6^ngrkzmldgqnr^12
+GoldScout-export 6^ngrkzmldgqnr^13
 760^6^0^36^37^1435^0.5891^0.2670^6^Lost One Muckdweller^4306:2:2,4338:1:1,274045:5:5^
 2350^4^0^20^21^1424^0.6715^0.0813^4^Forest Moss Creeper^1081:1:1,1288:1:1,2251:2:2,4428:1:1^
 2351^4^0^21^22^1416^0.7252^0.6537^1^Gray Bear^3730:1:1,11406:4:4^
@@ -51,7 +51,7 @@ GoldScout-export 6^ngrkzmldgqnr^12
 4117^1^0^26^26^1441^0.4019^0.4856^1^Cloud Serpent^17056:1:1^
 4118^2^0^26^28^1441^0.3533^0.5126^2^Venomous Cloud Serpent^6444:1:1,6826:1:1^
 4124^3^0^27^28^1441^0.3340^0.5143^3^Needles Cougar^5136:2:2,5137:1:1^
-4126^2^0^26^26^1441^0.3638^0.3752^2^Crag Stalker^5136:1:1^
+4126^2^0^25^26^1441^0.3638^0.3752^2^Crag Stalker^5136:1:1^
 4248^6^0^26^27^1441^0.3509^0.5087^6^Pesterhide Hyena^3301:1:1,3402:4:4,5635:1:1^
 4249^1^0^28^29^1441^0.1633^0.1715^1^Pesterhide Snarler^^
 4273^1^0^29^29^1440^0.6215^0.5075^1^Keeper Ordanus^5686:1:1^
@@ -74,6 +74,7 @@ GoldScout-export 6^ngrkzmldgqnr^12
 4440^1^0^0^0^0^0.0000^0.0000^0^^2592:1:3^
 4442^9^0^0^0^0^0.0000^0.0000^0^^929:2:2,1529:1:1,1758:1:1,2592:2:3,4306:1:2,8183:1:1^
 4490^1^0^31^31^1441^0.2715^0.5465^1^Grenka Bloodscreech^5843:1:1^
+4499^1^0^30^30^1441^0.1796^0.3727^1^Rok'Alim the Pounder^4784:1:1,5741:1:1,5844:1:1^
 4511^5^0^0^0^0^0.0000^0.0000^0^^2295:2:2,2677:1:1,3403:3:3^
 4512^1^0^0^0^0^0.0000^0.0000^0^^15521:1:1^
 4514^7^0^0^0^0^0.0000^0.0000^0^^1705:1:1,2295:5:5,3172:1:1,14377:1:1^
@@ -104,6 +105,12 @@ GoldScout-export 6^ngrkzmldgqnr^12
 10720^3^0^27^28^1441^0.2132^0.3195^3^Galak Assassin^^
 10756^1^0^29^29^1441^0.3525^0.3322^1^Scalding Elemental^9451:1:3^
 10757^1^0^27^27^1441^0.3498^0.3488^1^Boiling Elemental^9451:1:2^
+10758^9^0^25^26^1441^0.3571^0.3317^9^Grimtotem Bandit^1777:1:1,4306:1:2,15527:1:1,251339:1:1^
+10759^1^0^26^26^1441^0.3832^0.4044^1^Grimtotem Stomper^1711:1:1^
+10760^3^0^25^27^1441^0.3640^0.3278^3^Grimtotem Geomancer^4306:1:2^
+10761^2^0^28^28^1441^0.3652^0.4076^2^Grimtotem Reaver^^
+10882^1^0^28^28^1441^0.3811^0.3564^1^Arikara^12925:1:1^
+10896^3^0^29^29^1441^0.3809^0.2684^3^Arnak Grimtotem^4306:1:1,12884:1:1^
 10992^1^0^30^30^1441^0.2281^0.2410^1^Enraged Panther^12946:1:1^
 12677^1^0^28^28^1440^0.6124^0.5022^1^Shadumbra^3731:1:1,5137:1:1,16304:1:1^
 12678^1^0^25^25^1440^0.4282^0.6367^1^Ursangous^16303:1:1^
@@ -119,12 +126,14 @@ GoldScout-export 6^ngrkzmldgqnr^12
 @i^1288^Large Venom Sac
 @i^1529^Jade
 @i^1705^Lesser Moonstone
+@i^1711^Scroll of Stamina II
 @i^1747^Linked Chain Boots
 @i^1748^Linked Chain Bracers
 @i^1752^Linked Chain Shoulderpads
 @i^1758^Reinforced Chain Gloves
 @i^1772^Brocade Shoes
 @i^1776^Brocade Pants
+@i^1777^Brocade Shoulderpads
 @i^1778^Brocade Vest
 @i^1785^Cross-stitched Shoulderpads
 @i^1786^Cross-stitched Vest
@@ -161,6 +170,7 @@ GoldScout-export 6^ngrkzmldgqnr^12
 @i^4338^Mageweave Cloth
 @i^4428^Spider Palp
 @i^4538^Snapvine Watermelon
+@i^4784^Lifeless Stone
 @i^5116^Long Tail Feather
 @i^5117^Vibrant Plume
 @i^5136^Torn Furry Ear
@@ -173,11 +183,13 @@ GoldScout-export 6^ngrkzmldgqnr^12
 @i^5635^Sharp Claw
 @i^5636^Delicate Feather
 @i^5686^Ordanus' Head
+@i^5741^Rock Chip
 @i^5793^Razorflank's Heart
 @i^5801^Kraul Guano
 @i^5837^Steelsnap's Rib
 @i^5842^Unrefined Ore Sample
 @i^5843^Grenka's Claw
+@i^5844^Fragments of Rok'Alim
 @i^5867^Etched Phial
 @i^6320^Commander's Crest
 @i^6340^Fenrus' Hide
@@ -206,6 +218,8 @@ GoldScout-export 6^ngrkzmldgqnr^12
 @i^12030^Jet Chain of Arcane Protection
 @i^12203^Red Wolf Meat
 @i^12564^Assassination Note
+@i^12884^Arnak's Hoof
+@i^12925^Arikara Serpent Skin
 @i^12946^Hypercapacitor Gizmo
 @i^14167^Buccaneer's Cape of Holy Wrath
 @i^14377^Sanguine Handwraps
@@ -213,6 +227,7 @@ GoldScout-export 6^ngrkzmldgqnr^12
 @i^15212^Fighter Broadsword of the Bandit
 @i^15241^Battle Knife of the Bandit
 @i^15521^Spiked Chain Leggings of the Hierophant
+@i^15527^Sentry's Gloves of Holy Wrath
 @i^15528^Sentry's Sash of the Gorilla
 @i^16303^Ursangous's Paw
 @i^16304^Shadumbra's Head
@@ -238,6 +253,7 @@ GoldScout-export 6^ngrkzmldgqnr^12
 @i^248692^Waylaid Crate: Expert Ore
 @i^248707^Waylaid Crate: Journeyman Parts
 @i^248710^Waylaid Crate: Expert Parts
+@i^251339^Plans: Sterling Silver Breastplate
 @i^251349^Plans: Crusader's Chain Leggings
 @i^253942^Pattern: Filigreed Flame Leggings
 @i^254432^Carved Centaur Totem
@@ -260,12 +276,14 @@ GoldScout-export 6^ngrkzmldgqnr^12
 @q^1288^1:7:1
 @q^1529^2:7:1
 @q^1705^2:7:1
+@q^1711^1:0:0
 @q^1747^0:4:0
 @q^1748^0:4:0
 @q^1752^0:4:0
 @q^1758^0:4:0
 @q^1772^0:4:0
 @q^1776^0:4:0
+@q^1777^0:4:0
 @q^1778^0:4:0
 @q^1785^0:4:0
 @q^1786^0:4:0
@@ -302,6 +320,7 @@ GoldScout-export 6^ngrkzmldgqnr^12
 @q^4338^1:7:1
 @q^4428^0:15:0
 @q^4538^1:0:0
+@q^4784^0:15:0
 @q^5116^1:7:1
 @q^5117^1:12:0
 @q^5136^0:15:0
@@ -314,11 +333,13 @@ GoldScout-export 6^ngrkzmldgqnr^12
 @q^5635^1:7:1
 @q^5636^0:15:0
 @q^5686^1:12:0
+@q^5741^0:15:0
 @q^5793^1:12:0
 @q^5801^1:12:0
 @q^5837^1:12:0
 @q^5842^1:12:0
 @q^5843^1:12:0
+@q^5844^1:12:0
 @q^5867^1:12:0
 @q^6320^3:4:0
 @q^6340^3:4:0
@@ -347,6 +368,8 @@ GoldScout-export 6^ngrkzmldgqnr^12
 @q^12030^2:4:0
 @q^12203^1:7:1
 @q^12564^1:12:0
+@q^12884^1:0:0
+@q^12925^1:12:0
 @q^12946^1:12:0
 @q^14167^2:4:0
 @q^14377^2:4:0
@@ -354,6 +377,7 @@ GoldScout-export 6^ngrkzmldgqnr^12
 @q^15212^2:2:0
 @q^15241^2:2:0
 @q^15521^2:4:0
+@q^15527^2:4:0
 @q^15528^2:4:0
 @q^16303^2:12:0
 @q^16304^2:12:0
@@ -379,6 +403,7 @@ GoldScout-export 6^ngrkzmldgqnr^12
 @q^248692^1:0:1
 @q^248707^2:0:1
 @q^248710^2:0:1
+@q^251339^2:9:0
 @q^251349^3:9:0
 @q^253942^3:9:0
 @q^254432^2:15:0
@@ -403,6 +428,11 @@ GoldScout-export 6^ngrkzmldgqnr^12
 @m^1443^Desolace
 @m^1445^Dustwallow Marsh
 @m^2548^Riverglades
+@c^118^
+@c^858^
+@c^929^
+@c^1251^
+@c^1710^
 @c^2300^
 @c^2302^
 @c^2303^
@@ -430,6 +460,7 @@ GoldScout-export 6^ngrkzmldgqnr^12
 @c^2578^
 @c^2579^
 @c^2580^
+@c^2581^
 @c^2582^
 @c^2583^
 @c^2584^
@@ -437,7 +468,10 @@ GoldScout-export 6^ngrkzmldgqnr^12
 @c^2587^
 @c^2996^
 @c^2997^
+@c^3530^
+@c^3531^
 @c^3719^
+@c^3928^
 @c^4231^
 @c^4233^
 @c^4234^
@@ -537,6 +571,10 @@ GoldScout-export 6^ngrkzmldgqnr^12
 @c^6264^
 @c^6384^
 @c^6385^
+@c^6450^
+@c^6451^
+@c^6452^
+@c^6453^
 @c^6466^
 @c^6467^
 @c^6468^
@@ -633,6 +671,8 @@ GoldScout-export 6^ngrkzmldgqnr^12
 @c^8348^
 @c^8349^
 @c^8367^
+@c^8544^
+@c^8545^
 @c^9998^
 @c^9999^
 @c^10001^
@@ -683,6 +723,7 @@ GoldScout-export 6^ngrkzmldgqnr^12
 @c^12632^
 @c^12636^
 @c^12641^
+@c^13446^
 @c^13856^
 @c^13857^
 @c^13858^
@@ -731,6 +772,8 @@ GoldScout-export 6^ngrkzmldgqnr^12
 @c^14155^
 @c^14156^
 @c^14342^
+@c^14529^
+@c^14530^
 @c^15045^
 @c^15046^
 @c^15047^
@@ -828,6 +871,7 @@ GoldScout-export 6^ngrkzmldgqnr^12
 @c^19162^
 @c^19163^
 @c^19165^
+@c^19440^
 @c^19682^
 @c^19683^
 @c^19684^
@@ -877,6 +921,7 @@ GoldScout-export 6^ngrkzmldgqnr^12
 @c^22759^
 @c^22760^
 @c^22761^
+@c^23684^
 @c^34085^
 @c^34086^
 @c^34087^
@@ -946,6 +991,7 @@ GoldScout-export 6^ngrkzmldgqnr^12
 @c^227883^
 @c^228476^
 @c^228994^
+@c^232433^
 @c^233802^
 @c^233803^
 @c^233804^
@@ -1325,6 +1371,14 @@ GoldScout-export 6^ngrkzmldgqnr^12
 @c^254135^
 @c^254137^
 @c^254139^
+@c^255715^
+@c^255716^
+@c^255717^
+@c^255718^
+@c^255719^
+@c^255720^
+@c^255721^
+@c^255722^
 @c^273884^
 @c^273885^
 @c^273886^
@@ -1373,6 +1427,7 @@ GoldScout-export 6^ngrkzmldgqnr^12
 @c^273941^
 @c^273942^
 @c^273943^
+@c^274490^
 @c^275604^
 @c^275605^
 @c^275606^
@@ -1458,10 +1513,13 @@ GoldScout-export 6^ngrkzmldgqnr^12
 @c^279270^
 @c^279271^
 @c^279938^
+@c^279940^
 @c^279941^
 @c^279943^
 @c^279945^
+@c^279951^
 @c^279959^
+@c^279968^
 @c^279969^
 @c^279972^
 @c^279973^
@@ -1511,6 +1569,7 @@ GoldScout-export 6^ngrkzmldgqnr^12
 @a^4359^91:4
 @a^4362^91:1
 @a^4490^205:1
+@a^4499^143:1
 @a^4548^63:1
 @a^4654^226:2
 @a^4655^226:1
@@ -1522,6 +1581,12 @@ GoldScout-export 6^ngrkzmldgqnr^12
 @a^10720^124:3
 @a^10756^127:1
 @a^10757^126:1
+@a^10758^106:2,127:3,146:2,147:2
+@a^10759^167:1
+@a^10760^107:1,127:1,146:1
+@a^10761^146:1,167:1
+@a^10882^147:1
+@a^10896^107:3
 @a^10992^84:1
 @a^12677^212:1
 @a^12678^248:1

@@ -1,4 +1,4 @@
-GoldScout-export 6^7n0hiaav0k9g^11
+GoldScout-export 6^7n0hiaav0k9g^12
 94^1^0^6^6^1429^0.3697^0.5589^1^Defias Cutpurse^2589:1:2^
 583^1^0^8^8^1429^0.3460^0.5522^1^Defias Ambusher^^
 735^2^0^6^7^1429^0.5400^0.6959^2^Murloc Streamrunner^779:1:1^
@@ -7,8 +7,9 @@ GoldScout-export 6^7n0hiaav0k9g^11
 1166^1^0^13^13^1432^0.2745^0.8558^1^Stonesplinter Seer^^
 1188^1^0^13^13^1432^0.4205^0.6397^1^Grizzled Black Bear^3169:1:1^
 1195^2^0^10^10^1432^0.3868^0.7376^2^Forest Lurker^3174:2:2,5465:2:3^
-1860^2^0^0^0^1440^0.2547^0.6072^2^Kraknuz^^
+1860^2^0^0^0^1440^0.2547^0.6072^2^Kal'kath^^
 1922^1^0^7^7^1429^0.6315^0.6916^1^Gray Forest Wolf^3300:1:1^
+2354^1^0^22^22^1424^0.5192^0.5302^1^Vicious Gray Bear^^
 3240^3^0^18^19^1413^0.4882^0.5184^3^Stormsnout^5128:1:1,5470:2:2^
 3245^1^0^16^17^1413^0.3604^0.2888^1^Ornery Plainstrider^4775:1:1^
 3256^1^0^16^18^1413^0.3719^0.2860^1^Sunscale Scytheclaw^5124:1:1^
@@ -104,13 +105,16 @@ GoldScout-export 6^7n0hiaav0k9g^11
 @i^5808^Pridewing Venom Sac
 @i^6289^Raw Longjaw Mud Snapper
 @i^6308^Raw Bristle Whisker Catfish
+@i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
+@i^6361^Raw Rainbow Fin Albacore
 @i^9758^Cadet Belt
 @i^9801^Superior Belt of the Owl
 @i^9802^Superior Boots of the Bandit
 @i^9811^Fortified Bracers of the Bear
 @i^10424^Plans: Silvered Bronze Leggings
 @i^11406^Rotting Bear Carcass
+@i^12238^Darkshore Grouper
 @i^14126^Ritual Amice
 @i^15310^Feral Gloves of the Boar
 @i^15972^Ritual Stein of the Falcon
@@ -176,13 +180,16 @@ GoldScout-export 6^7n0hiaav0k9g^11
 @q^5808^1:12:0
 @q^6289^1:7:1
 @q^6308^1:7:1
+@q^6358^1:7:1
 @q^6359^1:7:1
+@q^6361^1:7:1
 @q^9758^1:4:0
 @q^9801^2:4:0
 @q^9802^2:4:0
 @q^9811^2:4:0
 @q^10424^2:9:0
 @q^11406^0:15:0
+@q^12238^1:0:0
 @q^14126^1:4:0
 @q^15310^2:4:0
 @q^15972^2:4:0
@@ -194,8 +201,10 @@ GoldScout-export 6^7n0hiaav0k9g^11
 @q^250182^1:9:0
 @q^277917^1:12:0
 @m^1413^The Barrens
+@m^1424^Hillsbrad Foothills
 @m^1429^Elwynn Forest
 @m^1432^Loch Modan
+@m^1439^Darkshore
 @m^1440^Ashenvale
 @m^1442^Stonetalon Mountains
 @c^724^
@@ -895,6 +904,7 @@ GoldScout-export 6^7n0hiaav0k9g^11
 @a^1195^287:2
 @a^1860^245:2
 @a^1922^272:1
+@a^2354^210:1
 @a^3240^209:2,210:1
 @a^3245^107:1
 @a^3256^107:1
@@ -935,6 +945,7 @@ GoldScout-export 6^7n0hiaav0k9g^11
 @a^4020^129:1
 @a^10928^245:1
 @a^268624^209:1,210:1
+@f^1439^0^9^150^6358:7:7,6361:1:1,12238:1:1^166:9
 @f^1440^0^11^150^3820:1:1,6289:2:2,6308:2:2,21071:5:5,21114:1:2^207:11
 @f^1442^0^4^150^6359:3:3,21113:1:1^214:4
 @l^0^enUS

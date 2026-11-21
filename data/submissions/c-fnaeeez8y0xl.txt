@@ -1,4 +1,11 @@
-GoldScout-export 6^fnaeeez8y0xl^8
+GoldScout-export 6^fnaeeez8y0xl^9
+2673^1^0^17^17^1442^0.7265^0.6021^1^Target Dummy^2589:1:1,2841:1:1,4359:1:1,4363:1:1^
+3251^2^0^20^20^1413^0.4506^0.6958^2^Silithid Grub^5268:1:1,7119:2:2^
+3252^3^0^21^22^1413^0.4488^0.6942^3^Silithid Swarmer^5269:1:1,7119:3:3^
+3991^3^0^19^20^1442^0.7437^0.5985^3^Venture Co. Deforester^2287:1:1^
+3999^44^0^21^22^1442^0.7269^0.6096^44^Windshear Digger^929:1:1,1205:1:1,1820:2:2,2589:3:6,2592:14:19,2782:1:1,2783:1:1,4306:2:2,4538:1:1,7126:10:10^
+4003^10^0^20^21^1442^0.7342^0.6013^10^Windshear Geomancer^1768:1:1,2592:1:1,7126:5:5^
+4004^5^0^21^22^1442^0.7264^0.6062^5^Windshear Overlord^2592:1:1,7126:1:1,12982:1:1^
 4093^9^0^25^26^1441^0.4182^0.3774^9^Galak Wrangler^1478:1:1,3770:1:1,4306:3:5^
 4094^12^0^24^25^1441^0.4269^0.3775^12^Galak Scout^1772:1:1,2290:1:1,2592:1:1,4306:2:3^
 4096^3^0^24^25^1441^0.4226^0.3970^3^Galak Windchaser^929:1:1^
@@ -62,6 +69,7 @@ GoldScout-export 6^fnaeeez8y0xl^8
 @i^1705^Lesser Moonstone
 @i^1712^Scroll of Spirit II
 @i^1761^Reinforced Chain Vest
+@i^1768^Canvas Pants
 @i^1772^Brocade Shoes
 @i^1776^Brocade Pants
 @i^1784^Cross-stitched Pants
@@ -69,13 +77,18 @@ GoldScout-export 6^fnaeeez8y0xl^8
 @i^1804^Tough Leather Boots
 @i^1806^Tough Cloak
 @i^1809^Tough Leather Shoulderpads
+@i^1820^Wooden Maul
 @i^1823^Bludgeoning Cudgel
 @i^2251^Gooey Spider Leg
+@i^2287^Haunch of Meat
 @i^2290^Scroll of Intellect II
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2608^Threshadon Ambergris
 @i^2674^Crawler Meat
+@i^2782^Mishandled Recurve Bow
+@i^2783^Shoddy Blunderbuss
+@i^2841^Bronze Bar
 @i^3039^Short Ash Bow
 @i^3078^Naga Heartpiercer
 @i^3180^Flecked Raptor Scale
@@ -85,10 +98,15 @@ GoldScout-export 6^fnaeeez8y0xl^8
 @i^3685^Raptor Egg
 @i^3770^Mutton Chop
 @i^4306^Silk Cloth
+@i^4359^Handful of Copper Bolts
+@i^4363^Copper Modulator
+@i^4538^Snapvine Watermelon
 @i^4542^Moist Cornbread
 @i^5116^Long Tail Feather
 @i^5117^Vibrant Plume
 @i^5137^Bright Eyeball
+@i^5268^Cracked Silithid Shell
+@i^5269^Silithid Ichor
 @i^5516^Threshadon Fang
 @i^5524^Thick-shelled Clam
 @i^5569^Seaweed
@@ -101,9 +119,12 @@ GoldScout-export 6^fnaeeez8y0xl^8
 @i^6903^Gaze Dreamer Pants
 @i^6908^Ghamoo-ra's Bind
 @i^6910^Leech Pants
+@i^7119^Twitching Antenna
+@i^7126^Smoky Iron Ingot
 @i^11081^Formula: Enchant Shield - Lesser Protection
 @i^12564^Assassination Note
 @i^12946^Hypercapacitor Gizmo
+@i^12982^Silver-linked Footguards
 @i^14755^Slayer's Sash
 @i^15111^Rigid Moccasins of Spirit
 @i^15259^Hefty Battlehammer of the Monkey
@@ -141,6 +162,7 @@ GoldScout-export 6^fnaeeez8y0xl^8
 @q^1705^2:7:1
 @q^1712^1:0:0
 @q^1761^0:4:0
+@q^1768^0:4:0
 @q^1772^0:4:0
 @q^1776^0:4:0
 @q^1784^0:4:0
@@ -148,13 +170,18 @@ GoldScout-export 6^fnaeeez8y0xl^8
 @q^1804^0:4:0
 @q^1806^0:4:0
 @q^1809^0:4:0
+@q^1820^0:2:0
 @q^1823^0:2:0
 @q^2251^1:7:1
+@q^2287^1:0:0
 @q^2290^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2608^0:15:0
 @q^2674^1:7:1
+@q^2782^0:2:0
+@q^2783^0:2:0
+@q^2841^1:7:1
 @q^3039^2:2:0
 @q^3078^3:2:0
 @q^3180^0:15:0
@@ -164,10 +191,15 @@ GoldScout-export 6^fnaeeez8y0xl^8
 @q^3685^1:7:1
 @q^3770^1:0:0
 @q^4306^1:7:1
+@q^4359^1:7:1
+@q^4363^1:7:1
+@q^4538^1:0:0
 @q^4542^1:0:0
 @q^5116^1:7:1
 @q^5117^1:12:0
 @q^5137^0:15:0
+@q^5268^0:15:0
+@q^5269^0:15:0
 @q^5516^0:2:0
 @q^5524^1:7:0
 @q^5569^0:15:0
@@ -180,9 +212,12 @@ GoldScout-export 6^fnaeeez8y0xl^8
 @q^6903^3:4:0
 @q^6908^3:4:0
 @q^6910^3:4:0
+@q^7119^1:12:0
+@q^7126^1:12:0
 @q^11081^2:9:0
 @q^12564^1:12:0
 @q^12946^1:12:0
+@q^12982^3:4:0
 @q^14755^2:4:0
 @q^15111^2:4:0
 @q^15259^2:2:0
@@ -206,8 +241,10 @@ GoldScout-export 6^fnaeeez8y0xl^8
 @q^273840^3:4:0
 @q^273843^3:2:0
 @q^284844^1:12:0
+@m^1413^The Barrens
 @m^1414^Kalimdor
 @m^1441^Thousand Needles
+@m^1442^Stonetalon Mountains
 @c^118^
 @c^724^
 @c^733^
@@ -859,6 +896,13 @@ GoldScout-export 6^fnaeeez8y0xl^8
 @c^285277^
 @c^285278^
 @c^286152^
+@a^2673^254:1
+@a^3251^269:2
+@a^3252^268:2,269:1
+@a^3991^234:3
+@a^3999^234:9,254:35
+@a^4003^234:5,254:5
+@a^4004^234:1,254:4
 @a^4093^147:3,148:5,169:1
 @a^4094^127:2,128:1,147:1,148:4,149:1,169:3
 @a^4096^147:1,148:1,169:1
