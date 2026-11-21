@@ -1,4 +1,4 @@
-GoldScout-export 6^ugi1bhjxbs31^19
+GoldScout-export 6^ugi1bhjxbs31^20
 636^1^0^0^0^0^0.0000^0.0000^0^^2589:1:3,5573:1:1^
 639^1^0^0^0^0^0.0000^0.0000^0^^5193:1:1^
 645^1^0^0^0^0^0.0000^0.0000^0^^273298:1:1^
@@ -85,12 +85,17 @@ GoldScout-export 6^ugi1bhjxbs31^19
 3106^10^0^5^6^1411^0.5900^0.7418^10^Pygmy Surf Crawler^4873:5:5,4874:1:1,4888:8:8^
 3119^13^0^6^7^1411^0.4966^0.7979^13^Kolkar Drudge^117:1:1,1412:1:1,1422:1:1,1427:1:1,2589:4:7,3370:1:1,4870:4:4^
 3120^11^0^7^8^1411^0.4823^0.7937^11^Kolkar Outrunner^159:1:1,774:1:1,2589:7:11,4870:4:4,6716:1:1^
+3121^5^0^7^8^1411^0.6771^0.7813^5^Durotar Tiger^2598:1:1,4813:1:1,4814:2:2,4892:4:4^
+3122^1^0^6^8^1411^0.6966^0.7090^1^Bloodtalon Taillasher^4877:1:1^
 3124^19^0^3^3^1411^0.4318^0.6010^19^Scorpid Worker^1366:1:1,1372:1:1,1374:1:1,1378:1:1,2211:1:1,2649:1:1,2656:1:1,4862:10:10,4867:6:6,7099:6:6,7100:4:4,7101:5:5^
 3125^2^0^5^6^1411^0.5303^0.6632^2^Clattering Scorpid^4872:1:1^
 3128^14^0^5^6^1411^0.5770^0.5723^14^Kul Tiras Sailor^159:1:1,1364:1:1,1417:1:1,2589:6:11,2645:1:1,4293:1:1^
 3129^19^0^6^7^1411^0.5899^0.5723^19^Kul Tiras Marine^118:1:1,1415:1:1,1416:1:1,2070:2:2,2589:5:9,211786:1:1^
 3183^1^0^5^5^1411^0.4272^0.5304^1^Yarrog Baneshadow^4859:1:1^
 3192^2^0^8^8^1411^0.5929^0.5817^2^Lieutenant Benedict^2589:1:1,4882:2:2^
+3205^2^0^10^10^1411^0.6741^0.8666^2^Zalazane^2589:1:2,4866:1:1^
+3206^7^0^8^9^1411^0.6765^0.8589^7^Voodoo Troll^117:1:1,1430:1:1,2589:2:2,14087:1:1^
+3207^7^0^8^9^1411^0.6743^0.8543^7^Hexed Troll^117:3:3,1414:1:1,1420:1:1,1429:1:1,2589:1:1,275724:2:2^
 3281^1^0^4^4^1411^0.4060^0.6693^1^Sarkoth^4905:1:1,7100:1:1^
 3374^1^0^21^22^1413^0.4797^0.8487^1^Bael'dun Excavator^^
 3375^1^0^23^23^1413^0.4730^0.8457^1^Bael'dun Foreman^2592:1:2^
@@ -270,6 +275,7 @@ GoldScout-export 6^ugi1bhjxbs31^19
 266849^3^0^5^6^1411^0.5171^0.5991^3^Ridgeshade Lurker^2590:1:1,5465:1:2^
 266850^4^0^5^6^1411^0.5120^0.5517^4^Ridgeshade Creeper^1476:2:2,2590:2:2,5465:3:4^
 266851^1^0^8^8^1411^0.5104^0.5646^1^Ukorsbane^1476:1:1,5465:1:1,275722:1:1^
+268530^1^0^9^9^1411^0.6875^0.7101^1^Bloodtalon Matriarch^4877:1:1,277128:1:1^
 269134^3^0^0^0^1416^0.0000^0.0000^0^^9824:1:1^
 270094^1^0^30^30^1441^0.5377^0.4505^1^Stormheart^5133:1:1,279186:1:1^
 @i^117^Tough Jerky
@@ -306,11 +312,14 @@ GoldScout-export 6^ugi1bhjxbs31^19
 @i^1378^Frayed Pants
 @i^1380^Frayed Robe
 @i^1412^Crude Bastard Sword
+@i^1414^Cracked Sledge
 @i^1415^Carpenter's Mallet
 @i^1416^Rusty Hatchet
 @i^1417^Beaten Battle Axe
+@i^1420^Worn Leather Bracers
 @i^1422^Worn Leather Gloves
 @i^1427^Patchwork Shoes
+@i^1429^Patchwork Cloak
 @i^1430^Patchwork Gloves
 @i^1468^Murloc Fin
 @i^1476^Snapped Spider Limb
@@ -366,6 +375,7 @@ GoldScout-export 6^ugi1bhjxbs31^19
 @i^2589^Linen Cloth
 @i^2590^Forest Spider Webbing
 @i^2592^Wool Cloth
+@i^2598^Pattern: Red Linen Robe
 @i^2645^Loose Chain Gloves
 @i^2649^Flimsy Chain Belt
 @i^2650^Flimsy Chain Boots
@@ -445,17 +455,22 @@ GoldScout-export 6^ugi1bhjxbs31^19
 @i^4711^Glimmering Cloak
 @i^4712^Glimmering Mail Girdle
 @i^4784^Lifeless Stone
+@i^4813^Small Leather Collar
+@i^4814^Discolored Fang
 @i^4859^Burning Blade Medallion
 @i^4862^Scorpid Worker Tail
 @i^4865^Ruined Pelt
+@i^4866^Zalazane's Head
 @i^4867^Broken Scorpid Leg
 @i^4870^Canvas Scraps
 @i^4872^Dry Scorpid Eye
 @i^4873^Dry Hardened Barnacle
 @i^4874^Clean Fishbones
+@i^4877^Stone Arrowhead
 @i^4882^Benedict's Key
 @i^4887^Intact Makrura Eye
 @i^4888^Crawler Mucus
+@i^4892^Durotar Tiger Fur
 @i^4905^Sarkoth's Mangled Claw
 @i^5002^Glowing Green Talisman
 @i^5117^Vibrant Plume
@@ -558,6 +573,7 @@ GoldScout-export 6^ugi1bhjxbs31^19
 @i^12925^Arikara Serpent Skin
 @i^12946^Hypercapacitor Gizmo
 @i^13032^Sword of Corruption
+@i^14087^Beaded Cuffs
 @i^14179^Watcher's Cape of Intellect
 @i^14185^Watcher's Cinch of Spirit
 @i^14187^Raincaller Cuffs of Arcane Wrath
@@ -632,8 +648,10 @@ GoldScout-export 6^ugi1bhjxbs31^19
 @i^274158^Death Prophet Spine
 @i^274463^Tattered Note
 @i^275722^Ukor's Lost Pack
+@i^275724^Hexed Pendant
 @i^275997^Cracked Sentry Core
 @i^276160^Mana Fragment
+@i^277128^Bloodtalon Matriarch Eggs
 @i^279186^Stormheart's Still-beating Heart
 @i^286988^Violet Sorcerer's Leggings
 @q^117^1:0:0
@@ -670,11 +688,14 @@ GoldScout-export 6^ugi1bhjxbs31^19
 @q^1378^0:4:0
 @q^1380^0:4:0
 @q^1412^0:2:0
+@q^1414^0:2:0
 @q^1415^0:2:0
 @q^1416^0:2:0
 @q^1417^0:2:0
+@q^1420^0:4:0
 @q^1422^0:4:0
 @q^1427^0:4:0
+@q^1429^0:4:0
 @q^1430^0:4:0
 @q^1468^1:7:1
 @q^1476^0:15:0
@@ -730,6 +751,7 @@ GoldScout-export 6^ugi1bhjxbs31^19
 @q^2589^1:7:1
 @q^2590^0:15:0
 @q^2592^1:7:1
+@q^2598^2:9:0
 @q^2645^0:4:0
 @q^2649^0:4:0
 @q^2650^0:4:0
@@ -809,17 +831,22 @@ GoldScout-export 6^ugi1bhjxbs31^19
 @q^4711^2:4:0
 @q^4712^2:4:0
 @q^4784^0:15:0
+@q^4813^0:15:0
+@q^4814^0:15:0
 @q^4859^1:12:0
 @q^4862^1:12:0
 @q^4865^0:15:0
+@q^4866^1:12:0
 @q^4867^0:15:0
 @q^4870^1:12:0
 @q^4872^0:15:0
 @q^4873^0:15:0
 @q^4874^0:15:0
+@q^4877^0:15:0
 @q^4882^1:13:0
 @q^4887^1:12:0
 @q^4888^1:12:0
+@q^4892^1:12:0
 @q^4905^1:12:0
 @q^5002^2:4:0
 @q^5117^1:12:0
@@ -922,6 +949,7 @@ GoldScout-export 6^ugi1bhjxbs31^19
 @q^12925^1:12:0
 @q^12946^1:12:0
 @q^13032^3:2:0
+@q^14087^1:4:0
 @q^14179^2:4:0
 @q^14185^2:4:0
 @q^14187^2:4:0
@@ -996,8 +1024,10 @@ GoldScout-export 6^ugi1bhjxbs31^19
 @q^274158^3:2:0
 @q^274463^1:12:0
 @q^275722^1:12:0
+@q^275724^2:7:0
 @q^275997^1:12:0
 @q^276160^0:15:0
+@q^277128^1:12:0
 @q^279186^1:12:0
 @q^286988^3:4:0
 @m^1411^Durotar
@@ -1540,12 +1570,17 @@ GoldScout-export 6^ugi1bhjxbs31^19
 @a^3106^291:8,311:2
 @a^3119^309:5,310:3,329:3,330:2
 @a^3120^309:8,329:1,330:2
+@a^3121^293:3,353:2
+@a^3122^293:1
 @a^3124^228:8,229:2,248:6,249:3
 @a^3125^230:1,310:1
 @a^3128^211:1,231:13
 @a^3129^231:19
 @a^3183^208:1
 @a^3192^231:2
+@a^3205^353:2
+@a^3206^333:2,353:5
+@a^3207^333:3,353:4
 @a^3281^268:1
 @a^3374^329:1
 @a^3375^329:1
@@ -1639,6 +1674,7 @@ GoldScout-export 6^ugi1bhjxbs31^19
 @a^266849^230:2,250:1
 @a^266850^210:2,230:2
 @a^266851^230:1
+@a^268530^293:1
 @a^270094^190:1
 @f^1413^0^6^129^6303:2:2,6361:4:4^152:6
 @f^1414^0^19^122^6289:8:8,6291:2:2,6297:4:4,6299:3:3,6308:2:2^148:19

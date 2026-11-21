@@ -1,9 +1,12 @@
-GoldScout-export 6^hx60b8lc5x1l^6
+GoldScout-export 6^hx60b8lc5x1l^7
 1501^8^0^1^1^1420^0.3287^0.6392^8^Hirnloser Zombie^2589:3:3,2649:1:1,2656:1:1^
 1502^12^0^1^2^1420^0.3266^0.6394^12^Elender Zombie^159:1:1,1369:1:1,2652:1:1,3365:1:1,4604:1:1^
-1508^6^0^1^1^1420^0.3112^0.5960^6^Junger Aasfresser^3265:4:4,4865:3:3,7074:4:4^
-1512^5^0^1^2^1420^0.3039^0.6082^5^Nachtsauger^3264:4:4,3365:1:1,4865:2:2,7073:2:2,7074:1:1^
-1890^3^0^2^3^1420^0.3220^0.5999^3^Klapperndes Skelett^2589:2:2,3363:1:1^
+1504^10^0^2^3^1420^0.2907^0.5649^10^Junger Nachtweber^1367:1:1,1369:1:1,1476:1:1,2649:1:1,2654:2:2,7100:6:6,7101:3:3^
+1505^9^0^3^4^1420^0.2608^0.5957^9^Nachtweber^1372:1:1,1476:4:4,3263:1:1,3365:1:1,7100:5:5,7101:1:1^
+1508^8^0^1^1^1420^0.3124^0.5930^8^Junger Aasfresser^2651:1:1,2656:1:1,3265:6:6,4865:5:5,7073:1:1,7074:5:5^
+1512^7^0^1^2^1420^0.3071^0.5990^7^Nachtsauger^3264:6:6,3365:1:1,4865:3:3,7073:3:3,7074:1:1^
+1890^12^0^2^3^1420^0.3233^0.6004^12^Klapperndes Skelett^1380:1:1,2211:1:1,2589:4:4,3363:1:1,4604:3:3^
+1919^1^0^5^5^1420^0.3597^0.6153^1^Samuel Fipps^4604:1:1,16333:1:1^
 2350^5^0^20^21^1424^0.5778^0.1648^5^Waldmooskrabbler^1081:2:2,4428:3:3^
 2351^6^0^21^22^1424^0.5723^0.1792^6^Graubär^2940:1:1,3476:1:1,3730:1:1,11406:2:2^
 2563^6^0^32^33^1417^0.6989^0.4887^6^Ebenenkrabbler^1074:1:1,1081:1:1,2251:2:2,3864:1:1,4585:1:1,7084:1:1,278225:1:1^
@@ -26,19 +29,28 @@ GoldScout-export 6^hx60b8lc5x1l^6
 6427^2^0^0^0^0^0.0000^0.0000^0^^2592:1:2^
 6487^1^0^0^0^0^0.0000^0.0000^0^^7711:1:1,7713:1:1^
 6490^1^0^0^0^0^0.0000^0.0000^0^^7709:1:1^
+271961^6^0^2^3^1420^0.2613^0.5962^6^Eingesponnener Verlassener^^
 @i^159^Erfrischendes Quellwasser
 @i^1074^Harte Spinnenbeinspitze
 @i^1081^Knuspriges Spinnenfleisch
+@i^1367^Struppige Lederstiefel
 @i^1369^Struppiger Ledergürtel
+@i^1372^Struppiger Umhang
+@i^1380^Ausgefranste Robe
 @i^1464^Bussardkralle
+@i^1476^Abgeknicktes Spinnengliedmaß
 @i^1711^Rolle der Ausdauer II
+@i^2211^Gebogener großer Schild
 @i^2251^Klebriges Spinnenbein
 @i^2589^Leinenstoff
 @i^2592^Wollstoff
 @i^2649^Sehr leichter Kettengürtel
+@i^2651^Sehr leichte Kettenarmschienen
 @i^2652^Sehr leichter Kettenumhang
+@i^2654^Sehr leichte Kettenhose
 @i^2656^Sehr leichte Kettenweste
 @i^2940^Blutige Bärentatze
+@i^3263^Eingesponnene Hose
 @i^3264^Nachtsaugerflügel
 @i^3265^Aasfressertatze
 @i^3363^Ausgefranster Gürtel
@@ -60,6 +72,8 @@ GoldScout-export 6^hx60b8lc5x1l^6
 @i^7073^Zerbrochener Fangzahn
 @i^7074^Gesplitterte Klaue
 @i^7084^Muster: Purpurrote Seidenschultern
+@i^7100^Klebriges Sekret
+@i^7101^Käferauge
 @i^7366^Ältestenhandschuhe der Intelligenz
 @i^7709^Verseuchte Gamaschen
 @i^7711^Robe von Doan
@@ -68,6 +82,7 @@ GoldScout-export 6^hx60b8lc5x1l^6
 @i^11406^Faulendes Bärengerippe
 @i^12203^Rotes Wolfsfleisch
 @i^15934^Weisenstock der Eule
+@i^16333^Samuels sterbliche Überreste
 @i^213422^Unleserliches Rezept
 @i^213547^Schriftrolle: WELCH SCHWESTER
 @i^248689^Abgefangene Kiste: Kuriositäten des Gesellen
@@ -77,16 +92,24 @@ GoldScout-export 6^hx60b8lc5x1l^6
 @q^159^1:0:0
 @q^1074^0:15:0
 @q^1081^1:7:1
+@q^1367^0:4:0
 @q^1369^0:4:0
+@q^1372^0:4:0
+@q^1380^0:4:0
 @q^1464^0:15:0
+@q^1476^0:15:0
 @q^1711^1:0:0
+@q^2211^0:4:0
 @q^2251^1:7:1
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2649^0:4:0
+@q^2651^0:4:0
 @q^2652^0:4:0
+@q^2654^0:4:0
 @q^2656^0:4:0
 @q^2940^0:15:0
+@q^3263^1:4:0
 @q^3264^1:12:0
 @q^3265^1:12:0
 @q^3363^0:4:0
@@ -108,6 +131,8 @@ GoldScout-export 6^hx60b8lc5x1l^6
 @q^7073^0:15:0
 @q^7074^0:15:0
 @q^7084^2:9:0
+@q^7100^0:15:0
+@q^7101^0:15:0
 @q^7366^2:4:0
 @q^7709^3:4:0
 @q^7711^2:4:0
@@ -116,6 +141,7 @@ GoldScout-export 6^hx60b8lc5x1l^6
 @q^11406^0:15:0
 @q^12203^1:7:1
 @q^15934^2:4:0
+@q^16333^1:12:0
 @q^213422^1:12:0
 @q^213547^1:0:0
 @q^248689^1:0:1
@@ -1304,9 +1330,12 @@ GoldScout-export 6^hx60b8lc5x1l^6
 @c^285281^
 @a^1501^246:8
 @a^1502^246:11,266:1
-@a^1508^226:4,246:2
-@a^1512^226:2,245:2,246:1
-@a^1890^226:1,246:2
+@a^1504^225:8,226:2
+@a^1505^225:9
+@a^1508^226:6,246:2
+@a^1512^226:4,245:2,246:1
+@a^1890^226:4,246:8
+@a^1919^247:1
 @a^2350^50:1,51:2,52:1,91:1
 @a^2351^51:2,70:1,71:1,72:1,111:1
 @a^2563^193:2,194:2,213:2
@@ -1315,4 +1344,5 @@ GoldScout-export 6^hx60b8lc5x1l^6
 @a^2567^310:2
 @a^2579^272:1
 @a^4282^156:1
+@a^271961^225:6
 @l^0^deDE

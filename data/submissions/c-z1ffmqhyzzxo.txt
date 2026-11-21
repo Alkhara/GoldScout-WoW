@@ -1,4 +1,4 @@
-GoldScout-export 6^z1ffmqhyzzxo^34
+GoldScout-export 6^z1ffmqhyzzxo^35
 449^1^0^17^17^1436^0.3600^0.7755^1^Defias Knuckleduster^1770:1:1,2589:1:1^
 595^1^0^35^35^1434^0.2629^0.1125^1^Bloodscalp Hunter^3771:1:1^
 598^9^0^0^0^0^0.0000^0.0000^0^^1930:1:1,2589:1:2,2592:2:3,2771:1:2,248702:1:1^
@@ -11,6 +11,11 @@ GoldScout-export 6^z1ffmqhyzzxo^34
 646^1^0^0^0^0^0.0000^0.0000^0^^7230:1:1^
 647^1^0^0^0^0^0.0000^0.0000^0^^7608:1:1^
 657^3^0^0^0^0^0.0000^0.0000^0^^954:1:1,2589:1:5,2592:1:2,248685:1:1^
+674^20^0^40^41^1434^0.4138^0.4363^20^Venture Co. Strip Miner^1630:6:6,2725:1:1,3917:7:7,4306:5:10,4338:2:2^
+675^2^0^42^42^1434^0.4160^0.4439^2^Venture Co. Foreman^^
+676^3^0^41^42^1434^0.4090^0.4338^3^Venture Co. Surveyor^1630:1:1,2734:1:1,3917:1:1,4019:1:1,4025:1:1^
+677^2^0^40^41^1434^0.4156^0.4449^2^Venture Co. Tinkerer^1630:2:2^
+684^1^0^37^37^1434^0.3994^0.4289^1^Shadowmaw Panther^1688:1:1,5637:1:1^
 685^1^0^33^34^1434^0.2388^0.1567^1^Stranglethorn Raptor^3685:1:1,4461:1:1^
 689^13^0^34^35^1434^0.2572^0.1786^13^Crystal Spine Basilisk^1701:2:2,1702:6:6,1703:5:5,4093:1:1,4634:2:2,5637:1:1^
 701^3^0^35^35^1434^0.2593^0.1088^3^Bloodscalp Mystic^1477:1:1,2592:1:1^
@@ -50,6 +55,7 @@ GoldScout-export 6^z1ffmqhyzzxo^34
 2350^1^0^20^20^1424^0.1810^0.5208^1^Forest Moss Creeper^1081:1:1,1288:1:1,2251:1:1,4428:1:1^
 2540^3^0^14^15^1421^0.5827^0.6057^3^Dalaran Serpent^^
 2635^1^0^38^38^1434^0.2300^0.1837^1^Elder Saltwater Crocolisk^770:1:1,4105:1:1^
+2676^1^0^40^41^1434^0.4144^0.4438^1^Compact Harvest Reaper^^
 3197^8^0^9^10^1411^0.5392^0.1006^8^Burning Blade Fanatic^159:1:1,1414:1:1,2589:2:4,15004:1:1^
 3198^6^0^10^11^1411^0.5373^0.0958^6^Burning Blade Apprentice^1181:1:1,2589:1:1,14544:1:1^
 3245^1^0^16^17^1413^0.3987^0.2489^1^Ornery Plainstrider^5469:1:1,248682:1:1^
@@ -272,6 +278,8 @@ GoldScout-export 6^z1ffmqhyzzxo^34
 @i^1515^Rough Wooden Staff
 @i^1516^Worn Hatchet
 @i^1529^Jade
+@i^1630^Broken Electro-lantern
+@i^1688^Long Soft Tail
 @i^1701^Curved Basilisk Claw
 @i^1702^Intact Basilisk Spine
 @i^1703^Crystal Basilisk Spine
@@ -314,6 +322,8 @@ GoldScout-export 6^z1ffmqhyzzxo^34
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2674^Crawler Meat
+@i^2725^Green Hills of Stranglethorn - Page 1
+@i^2734^Green Hills of Stranglethorn - Page 10
 @i^2742^Green Hills of Stranglethorn - Page 18
 @i^2763^Fisherman Knife
 @i^2764^Small Dagger
@@ -354,12 +364,16 @@ GoldScout-export 6^z1ffmqhyzzxo^34
 @i^3781^Broad Claymore
 @i^3811^Double-Stitched Cloak
 @i^3857^Coal
+@i^3917^Singing Blue Crystal
 @i^3931^Poisoned Spider Fang
 @i^3940^Crochet Gloves
+@i^4019^Heavy Flint Axe
+@i^4025^Balanced Long Bow
 @i^4043^Aurora Bracers
 @i^4093^Large Basilisk Tail
 @i^4105^Elder Crocolisk Skin
 @i^4306^Silk Cloth
+@i^4338^Mageweave Cloth
 @i^4377^Heavy Blasting Powder
 @i^4428^Spider Palp
 @i^4461^Raptor Hide
@@ -564,6 +578,8 @@ GoldScout-export 6^z1ffmqhyzzxo^34
 @q^1515^0:2:0
 @q^1516^0:2:0
 @q^1529^2:7:1
+@q^1630^0:15:0
+@q^1688^0:15:0
 @q^1701^0:15:0
 @q^1702^0:15:0
 @q^1703^1:0:0
@@ -606,6 +622,8 @@ GoldScout-export 6^z1ffmqhyzzxo^34
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2674^1:7:1
+@q^2725^1:12:0
+@q^2734^1:12:0
 @q^2742^1:12:0
 @q^2763^0:2:0
 @q^2764^0:2:0
@@ -646,12 +664,16 @@ GoldScout-export 6^z1ffmqhyzzxo^34
 @q^3781^0:2:0
 @q^3811^0:4:0
 @q^3857^1:7:1
+@q^3917^1:12:0
 @q^3931^0:15:0
 @q^3940^0:4:0
+@q^4019^0:2:0
+@q^4025^0:2:0
 @q^4043^2:4:0
 @q^4093^0:15:0
 @q^4105^1:12:0
 @q^4306^1:7:1
+@q^4338^1:7:1
 @q^4377^1:7:1
 @q^4428^0:15:0
 @q^4461^1:7:1
@@ -1604,6 +1626,11 @@ GoldScout-export 6^z1ffmqhyzzxo^34
 @c^286152^
 @a^449^307:1
 @a^595^45:1
+@a^674^168:18,188:2
+@a^675^168:2
+@a^676^168:3
+@a^677^168:2
+@a^684^167:1
 @a^685^64:1
 @a^689^64:4,65:9
 @a^701^45:3
@@ -1639,6 +1666,7 @@ GoldScout-export 6^z1ffmqhyzzxo^34
 @a^2350^203:1
 @a^2540^231:1,251:2
 @a^2635^64:1
+@a^2676^168:1
 @a^3197^30:4,31:1,50:3
 @a^3198^30:4,50:2
 @a^3245^87:1
