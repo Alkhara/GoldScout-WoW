@@ -1,4 +1,4 @@
-GoldScout-export 6^wusrkz5fplp1^6
+GoldScout-export 6^wusrkz5fplp1^7
 587^6^2^33^34^1434^0.3273^0.1648^6^Bloodscalp Warrior^1520:1:1,2592:1:1,4306:3:3^16883:1:1
 667^8^0^39^40^1434^0.4509^0.3669^8^Skullsplitter Warrior^1520:2:2,1524:3:3,4306:3:7,8151:2:2^
 669^2^0^41^42^1434^0.4652^0.3868^2^Skullsplitter Hunter^1524:1:1,4306:1:2^
@@ -23,9 +23,18 @@ GoldScout-export 6^wusrkz5fplp1^6
 979^1^0^38^38^1434^0.4925^0.0639^1^Kurzen Shadow Hunter^3827:1:1,4338:1:1^
 1114^2^0^37^38^1434^0.4302^0.2937^2^Jungle Thunderer^2799:2:2,4096:1:1^
 1151^1^0^36^36^1434^0.2663^0.1938^1^Saltwater Crocolisk^770:1:1,3667:1:1^
+2246^3^0^38^39^1416^0.4055^0.1743^3^Syndicate Assassin^5113:1:1^
 2248^5^0^30^31^1424^0.4662^0.3199^5^Cave Yeti^3720:3:3^
 2250^14^0^32^33^1416^0.3722^0.7029^14^Mountain Yeti^1708:1:1,3720:4:4,3771:1:1,3784:1:1,3800:1:1,3807:1:1,248690:1:1^
 2251^12^0^33^34^1416^0.4026^0.6629^12^Giant Yeti^3720:3:3^
+2253^1^0^36^36^1416^0.4769^0.4018^1^Crushridge Brute^^
+3976^1^0^0^0^0^0.0000^0.0000^0^^7726:1:1^
+4295^1^0^0^0^0^0.0000^0.0000^0^^^
+4298^2^0^0^0^0^0.0000^0.0000^0^^3807:1:1,4338:1:3^
+4299^3^0^0^0^0^0.0000^0.0000^0^^4306:2:7,9835:1:1^
+4300^4^0^0^0^0^0.0000^0.0000^0^^3799:1:1,3810:1:1,4306:2:6,4539:1:1,248709:1:1^
+4301^3^0^0^0^0^0.0000^0.0000^0^^9896:1:1^
+4542^1^0^0^0^0^0.0000^0.0000^0^^9285:1:1,19509:1:1^
 14272^1^0^18^18^1433^0.4445^0.3361^1^Snarlflare^9785:1:1^
 250187^2^0^0^0^0^0.0000^0.0000^0^^4039:1:1,249695:1:1^
 254560^12^2^39^40^2548^0.4755^0.4824^12^Twilight Shadowmancer^4306:3:4,4544:1:1,6438:1:1,7909:1:1,266425:8:16,266427:3:3,267073:4:8^5427:1:1
@@ -96,18 +105,22 @@ GoldScout-export 6^wusrkz5fplp1^6
 @i^3786^Shiny Dirk
 @i^3787^Stone Club
 @i^3793^Interlaced Boots
+@i^3799^Interlaced Vest
 @i^3800^Hardened Leather Belt
 @i^3807^Hardened Leather Tunic
+@i^3810^Double Mail Bracers
 @i^3827^Mana Potion
 @i^4039^Nightsky Cowl
 @i^4078^Chief Brigadier Coif
 @i^4096^Coarse Gorilla Hair
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
+@i^4539^Goldenbark Apple
 @i^4544^Mulgore Spice Bread
 @i^4583^Thick Furry Mane
 @i^4603^Raw Spotted Yellowtail
 @i^4607^Delicious Cave Mold
+@i^5113^Mark of the Syndicate
 @i^5128^Shed Lizard Skin
 @i^5427^Crude Pocket Watch
 @i^5428^An Exotic Cookbook
@@ -119,12 +132,16 @@ GoldScout-export 6^wusrkz5fplp1^6
 @i^6149^Greater Mana Potion
 @i^6438^Dull Elemental Bracer
 @i^7447^Sentinel Bracers of the Bandit
+@i^7726^Aegis of the Scarlet Commander
 @i^7909^Aquamarine
 @i^7989^Plans: Mithril Spurs
 @i^8151^Flask of Mojo
 @i^8153^Wildvine
 @i^8188^Explosive Shotgun
+@i^9285^Field Plate Vambraces of the Wolf
 @i^9785^Raider's Bracers of Nature Protection
+@i^9835^Scaled Leather Tunic of the Whale
+@i^9896^Jazeraint Bracers of the Bear
 @i^11393^Small Bat Skull
 @i^11394^Bat Heart
 @i^11996^Basalt Ring of the Owl
@@ -134,12 +151,14 @@ GoldScout-export 6^wusrkz5fplp1^6
 @i^15234^Greater Scythe of the Bandit
 @i^16883^Worn Junkbox
 @i^17058^Fish Oil
+@i^19509^Dusty Mail Boots
 @i^213127^Partial Mystical Notes
 @i^213543^Scroll: UPDOG
 @i^216616^Compound Cage Key
 @i^248690^Waylaid Crate: Earthly Expert Herbs
 @i^248692^Waylaid Crate: Expert Ore
 @i^248693^Waylaid Crate: Expert Textiles
+@i^248709^Waylaid Crate: Expert Ingots
 @i^248710^Waylaid Crate: Expert Parts
 @i^249695^Fel-Tainted Flesh
 @i^265738^Sootfur's Pelt
@@ -194,18 +213,22 @@ GoldScout-export 6^wusrkz5fplp1^6
 @q^3786^0:2:0
 @q^3787^0:2:0
 @q^3793^0:4:0
+@q^3799^0:4:0
 @q^3800^0:4:0
 @q^3807^0:4:0
+@q^3810^0:4:0
 @q^3827^1:0:0
 @q^4039^2:4:0
 @q^4078^2:4:0
 @q^4096^1:15:0
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4539^1:0:0
 @q^4544^1:0:0
 @q^4583^0:15:0
 @q^4603^1:7:1
 @q^4607^1:0:0
+@q^5113^0:15:0
 @q^5128^0:15:0
 @q^5427^0:15:0
 @q^5428^0:15:0
@@ -217,12 +240,16 @@ GoldScout-export 6^wusrkz5fplp1^6
 @q^6149^1:0:0
 @q^6438^0:15:0
 @q^7447^2:4:0
+@q^7726^3:4:0
 @q^7909^2:7:1
 @q^7989^2:9:0
 @q^8151^1:7:1
 @q^8153^1:7:1
 @q^8188^2:2:0
+@q^9285^2:4:0
 @q^9785^2:4:0
+@q^9835^2:4:0
+@q^9896^2:4:0
 @q^11393^0:15:0
 @q^11394^0:15:0
 @q^11996^2:4:0
@@ -232,12 +259,14 @@ GoldScout-export 6^wusrkz5fplp1^6
 @q^15234^2:2:0
 @q^16883^1:15:0
 @q^17058^1:15:0
+@q^19509^3:4:0
 @q^213127^1:15:0
 @q^213543^1:0:0
 @q^216616^1:12:0
 @q^248690^1:0:1
 @q^248692^1:0:1
 @q^248693^1:0:1
+@q^248709^2:0:1
 @q^248710^2:0:1
 @q^249695^1:12:0
 @q^265738^1:12:0
@@ -1080,9 +1109,11 @@ GoldScout-export 6^wusrkz5fplp1^6
 @a^979^29:1
 @a^1114^108:1,128:1
 @a^1151^65:1
+@a^2246^67:2,68:1
 @a^2248^129:5
 @a^2250^266:3,267:2,286:2,287:4,288:3
 @a^2251^248:2,267:3,268:6,287:1
+@a^2253^169:1
 @a^14272^128:1
 @a^254560^169:2,188:1,189:3,209:6
 @a^256749^132:2,151:2

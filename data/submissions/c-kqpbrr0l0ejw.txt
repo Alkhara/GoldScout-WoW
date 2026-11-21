@@ -1,4 +1,4 @@
-GoldScout-export 6^kqpbrr0l0ejw^12
+GoldScout-export 6^kqpbrr0l0ejw^13
 691^1^0^36^36^1434^0.2259^0.2264^1^Lesser Water Elemental^^
 921^2^0^34^35^1434^0.4402^0.1915^2^Venture Co. Lumberjack^4306:2:2,6405:1:1^
 1096^13^0^35^36^1434^0.4551^0.2026^13^Venture Co. Geologist^2592:1:1,2730:1:1,3037:1:1,3771:1:1,4106:4:4,4306:2:4^
@@ -29,9 +29,16 @@ GoldScout-export 6^kqpbrr0l0ejw^12
 2408^5^0^30^31^1416^0.8242^0.5413^3^Snapjaw^3712:3:5,4556:1:1,5524:3:3,6308:1:1,211853:1:1^
 2440^1^0^33^33^1416^0.5961^0.6498^1^Drunken Footpad^3703:1:1^
 2552^1^0^30^30^1417^0.3785^0.4203^1^Witherbark Troll^4503:1:1^
-2586^5^0^30^31^1417^0.3480^0.2801^5^Syndicate Highwayman^2592:1:3,4306:2:2,5113:1:1^
+2554^7^0^32^33^1417^0.6209^0.7249^7^Witherbark Axe Thrower^3771:1:1,4306:1:1,4503:3:3,216483:3:3^
+2555^5^0^33^34^1417^0.6590^0.7199^5^Witherbark Witch Doctor^4306:2:3,4503:2:2,4522:4:4,7273:2:2^
+2556^20^0^34^35^1417^0.6792^0.7502^20^Witherbark Headhunter^3385:1:1,3771:2:2,3812:1:1,4306:7:11,4503:2:2,7273:7:7,7436:1:1,8747:1:1^
+2557^6^0^35^36^1417^0.6983^0.7805^6^Witherbark Shadow Hunter^1708:1:1,4306:4:5,4503:2:2,5040:1:1,7273:1:1,216483:1:1^
+2586^10^0^30^31^1417^0.3333^0.2839^10^Syndicate Highwayman^1707:1:1,2592:1:3,4306:3:4,4338:1:1,5113:1:1^
 2587^1^0^33^33^1417^0.3352^0.2767^1^Syndicate Pathstalker^4306:1:2^
-2589^2^0^32^32^1417^0.3454^0.2781^2^Syndicate Mercenary^1708:1:1,4306:1:1^
+2589^6^0^31^32^1417^0.3258^0.2893^6^Syndicate Mercenary^1708:2:2,3778:1:1,4306:3:5,255723:1:1^
+2619^1^0^34^35^1417^0.5978^0.5325^1^Hammerfall Grunt^^
+2760^2^0^38^39^1417^0.2405^0.2857^2^Burning Exile^864:1:1,4787:1:1^
+3560^5^0^33^34^1417^0.6517^0.7237^5^Healing Ward^^
 4260^1^0^37^37^1434^0.4691^0.2008^1^Venture Co. Shredder^4377:1:1^
 217305^1^0^35^35^1416^0.6001^0.4572^1^Ancient Fire Elemental^3857:1:1^
 245999^1^0^0^0^0^0.0000^0.0000^0^^273035:1:1^
@@ -55,6 +62,7 @@ GoldScout-export 6^kqpbrr0l0ejw^12
 269134^1^0^0^0^0^0.0000^0.0000^0^^^
 @i^770^Pointy Crocolisk Tooth
 @i^858^Lesser Healing Potion
+@i^864^Knightly Longsword of Intellect
 @i^1686^Bristly Whisker
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
@@ -75,19 +83,25 @@ GoldScout-export 6^kqpbrr0l0ejw^12
 @i^3720^Yeti Fur
 @i^3731^Lion Meat
 @i^3771^Wild Hog Shank
+@i^3778^Taut Compound Bow
 @i^3798^Interlaced Shoulderpads
 @i^3803^Hardened Cloak
+@i^3812^Double Mail Gloves
 @i^3820^Stranglekelp
 @i^3857^Coal
 @i^4106^Tumbled Crystal
 @i^4306^Silk Cloth
+@i^4338^Mageweave Cloth
 @i^4377^Heavy Blasting Powder
 @i^4503^Witherbark Tusk
+@i^4522^Witherbark Medicine Pouch
 @i^4556^Speckled Shell Fragment
 @i^4603^Raw Spotted Yellowtail
 @i^4606^Spongy Morel
 @i^4633^Heavy Bronze Lockbox
 @i^4634^Iron Lockbox
+@i^4787^Burning Pitch
+@i^5040^Shadow Hunter Knife
 @i^5113^Mark of the Syndicate
 @i^5524^Thick-shelled Clam
 @i^5637^Large Fang
@@ -101,6 +115,9 @@ GoldScout-export 6^kqpbrr0l0ejw^12
 @i^6611^Sage's Sash of the Elder
 @i^6986^Crimson Lotus
 @i^7072^Naga Scale
+@i^7273^Witherbark Totem Stick
+@i^7436^Twilight Cape of Strength
+@i^8747^Hardened Leather Helm
 @i^9829^Scaled Leather Bracers of the Eagle
 @i^9860^Archer's Cloak of the Gorilla
 @i^9869^Renegade Belt of the Owl
@@ -118,8 +135,10 @@ GoldScout-export 6^kqpbrr0l0ejw^12
 @i^213543^Scroll: UPDOG
 @i^213544^Scroll: TOPAZ YORAK
 @i^213547^Scroll: THAW WORDS
+@i^216483^Witherbark Mallet
 @i^248687^Waylaid Crate: Journeyman Ore
 @i^248693^Waylaid Crate: Expert Textiles
+@i^255723^Manual: Greater Healing Potion
 @i^273033^Gravespike Repeater
 @i^273035^Mana-Warped Chain Shirt
 @i^273038^Garb of Fallen Felbark
@@ -131,6 +150,7 @@ GoldScout-export 6^kqpbrr0l0ejw^12
 @i^276160^Mana Fragment
 @q^770^0:15:0
 @q^858^1:0:0
+@q^864^2:2:0
 @q^1686^0:15:0
 @q^1707^1:0:0
 @q^1708^1:0:0
@@ -151,19 +171,25 @@ GoldScout-export 6^kqpbrr0l0ejw^12
 @q^3720^1:12:0
 @q^3731^1:7:1
 @q^3771^1:0:0
+@q^3778^0:2:0
 @q^3798^0:4:0
 @q^3803^0:4:0
+@q^3812^0:4:0
 @q^3820^1:7:1
 @q^3857^1:7:1
 @q^4106^1:12:0
 @q^4306^1:7:1
+@q^4338^1:7:1
 @q^4377^1:7:1
 @q^4503^1:12:0
+@q^4522^1:12:0
 @q^4556^0:15:0
 @q^4603^1:7:1
 @q^4606^1:0:0
 @q^4633^2:15:0
 @q^4634^2:15:0
+@q^4787^0:15:0
+@q^5040^1:2:0
 @q^5113^0:15:0
 @q^5524^1:7:0
 @q^5637^1:7:1
@@ -177,6 +203,9 @@ GoldScout-export 6^kqpbrr0l0ejw^12
 @q^6611^2:4:0
 @q^6986^0:15:0
 @q^7072^1:7:1
+@q^7273^1:12:0
+@q^7436^2:4:0
+@q^8747^0:4:0
 @q^9829^2:4:0
 @q^9860^2:4:0
 @q^9869^2:4:0
@@ -194,8 +223,10 @@ GoldScout-export 6^kqpbrr0l0ejw^12
 @q^213543^1:0:0
 @q^213544^1:0:0
 @q^213547^1:0:0
+@q^216483^1:0:0
 @q^248687^1:0:1
 @q^248693^1:0:1
+@q^255723^2:9:0
 @q^273033^3:2:0
 @q^273035^3:4:0
 @q^273038^3:4:0
@@ -692,9 +723,16 @@ GoldScout-export 6^kqpbrr0l0ejw^12
 @a^2408^197:1,216:1,236:1
 @a^2440^251:1
 @a^2552^167:1
-@a^2586^106:2,107:2,126:1
+@a^2554^272:1,291:1,292:4,293:1
+@a^2555^291:1,293:4
+@a^2556^291:1,292:1,293:7,313:8,314:3
+@a^2557^313:3,314:3
+@a^2586^105:1,106:4,107:2,126:3
 @a^2587^106:1
-@a^2589^106:2
+@a^2589^106:5,126:1
+@a^2619^211:1
+@a^2760^104:1,124:1
+@a^3560^292:2,293:3
 @a^4260^89:1
 @a^217305^192:1
 @a^260429^88:1

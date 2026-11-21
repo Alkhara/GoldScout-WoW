@@ -1,4 +1,7 @@
-GoldScout-export 6^i6zjnlxe0519^3
+GoldScout-export 6^i6zjnlxe0519^4
+412^1^0^35^35^1431^0.4545^0.6602^1^Stitches^3360:1:1,4306:1:2^
+688^1^0^31^31^1434^0.3580^0.0685^1^Stone Maw Basilisk^1702:1:1^
+1150^6^0^30^31^1434^0.3452^0.0989^6^River Crocolisk^770:2:2,3667:2:2,4053:2:2^
 11783^11^0^0^0^0^0.0000^0.0000^0^^4552:3:3,4784:10:10,7067:1:1,7912:3:5,8150:1:1,8389:1:1^
 11784^2^0^0^0^0^0.0000^0.0000^0^^4554:1:1,4784:2:2^
 11789^6^0^0^0^0^0.0000^0.0000^0^^3669:6:6,3676:1:1^
@@ -32,10 +35,15 @@ GoldScout-export 6^i6zjnlxe0519^3
 13596^2^0^0^0^0^0.0000^0.0000^0^^17728:1:1,17730:1:1^
 13601^1^0^0^0^0^0.0000^0.0000^0^^17717:1:1^
 13696^2^0^0^0^0^0.0000^0.0000^0^^17684:2:2^
+@i^770^Pointy Crocolisk Tooth
 @i^1613^Spiritchaser Staff of the Falcon
+@i^1702^Intact Basilisk Spine
+@i^3360^Stitches' Femur
+@i^3667^Tender Crocolisk Meat
 @i^3669^Gelatinous Goo
 @i^3676^Slimy Ichor
 @i^3942^Crochet Shoulderpads
+@i^4053^Large River Crocolisk Skin
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4552^Smooth Stone Chip
@@ -86,10 +94,15 @@ GoldScout-export 6^i6zjnlxe0519^3
 @i^252869^Pattern: Warden's Leather Gauntlets
 @i^262889^Sealed Expert's Writ
 @i^275864^Putridus Wall
+@q^770^0:15:0
 @q^1613^2:2:0
+@q^1702^0:15:0
+@q^3360^1:4:0
+@q^3667^1:7:1
 @q^3669^0:15:0
 @q^3676^0:15:0
 @q^3942^0:4:0
+@q^4053^1:12:0
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4552^0:15:0
@@ -140,7 +153,12 @@ GoldScout-export 6^i6zjnlxe0519^3
 @q^252869^3:9:0
 @q^262889^3:0:0
 @q^275864^3:4:0
+@m^1431^Duskwood
+@m^1434^Stranglethorn Vale
 @c^279965^
 @c^279966^
 @c^279967^
+@a^412^269:1
+@a^688^27:1
+@a^1150^26:3,46:1,47:2
 @l^0^enUS

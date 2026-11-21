@@ -1,4 +1,9 @@
-GoldScout-export 6^h1hb8998rke8^7
+GoldScout-export 6^h1hb8998rke8^8
+681^10^0^30^31^1434^0.3614^0.1195^10^Junger Schlingendorntiger^1686:1:1,7356:1:1,12202:2:2^
+682^7^0^32^33^1434^0.3065^0.1026^7^Schlingendorntiger^1686:2:2,12202:3:3^
+683^10^0^30^31^1434^0.4111^0.1173^10^Junger Panther^1686:2:2,5637:1:1^
+736^4^0^32^32^1434^0.2957^0.1000^4^Panther^1686:2:2,4052:1:1,5637:1:1,248690:1:1^
+1150^7^0^30^31^1434^0.3781^0.1199^7^Flusskrokilisk^770:2:2,3667:1:1,4053:2:2,12037:2:2^
 1908^1^0^19^19^1421^0.6729^0.4519^1^Orakel der Finsterflossen^730:1:1,5523:1:1,5784:1:1,211784:1:1^
 1909^1^0^18^19^1421^0.6728^0.4517^1^Seepirscher der Finsterflossen^1179:1:1^
 2248^3^0^30^31^1424^0.4425^0.2963^3^Höhlenyeti^3771:1:1^
@@ -72,12 +77,14 @@ GoldScout-export 6^h1hb8998rke8^7
 270094^1^0^30^30^1441^0.5535^0.5501^1^Sturmherz^279186:1:1^
 @i^729^Sehniges Geierfleisch
 @i^730^Murlocauge
+@i^770^Spitzer Krokiliskenzahn
 @i^865^Bleistreitkolben der Ausdauer
 @i^878^Faustgroße Spinndrüse
 @i^1074^Harte Spinnenbeinspitze
 @i^1081^Knuspriges Spinnenfleisch
 @i^1179^Eiskalte Milch
 @i^1288^Großer Giftbeutel
+@i^1686^Gesträubtes Schnurrbarthaar
 @i^1696^Geschwungene Raptorkralle
 @i^1701^Geschwungene Basiliskenklaue
 @i^1702^Intaktes Basiliskenrückgrat
@@ -94,6 +101,7 @@ GoldScout-export 6^h1hb8998rke8^7
 @i^3042^BKP Spatz Kleinkaliber
 @i^3182^Spinnenseide
 @i^3399^Geierkralle
+@i^3667^Zartes Krokiliskenfleisch
 @i^3685^Raptorei
 @i^3688^Blutsteinoval
 @i^3689^Blutsteinmarmor
@@ -107,6 +115,8 @@ GoldScout-export 6^h1hb8998rke8^7
 @i^3745^Rune des Öffnens
 @i^3771^Wildschweinschenkel
 @i^3785^Beißende Axt
+@i^4052^Insignien-Kappe
+@i^4053^Große Flusskrokiliskenhaut
 @i^4093^Großer Basiliskenschwanz
 @i^4306^Seidenstoff
 @i^4337^Dicke Spinnenseide
@@ -149,6 +159,7 @@ GoldScout-export 6^h1hb8998rke8^7
 @i^6607^Derwischgamaschen des Bären
 @i^6986^Purpurroter Lotus
 @i^7067^Elementarerde
+@i^7356^Ältestenumhang des Wolfs
 @i^7453^Muster: Hurtige Stiefel
 @i^8150^Tiefsteinsalz
 @i^9817^Befestigte Schiftung des Adlers
@@ -157,6 +168,7 @@ GoldScout-export 6^h1hb8998rke8^7
 @i^11416^Zierlicher Brustkorb
 @i^12037^Eigenartiges Fleisch
 @i^12184^Raptorfleisch
+@i^12202^Tigerfleisch
 @i^14196^Distelfellsandalen des Ältesten
 @i^15242^Gewetztes Stilett des Bären
 @i^15250^Gleißender Flamberg der Eule
@@ -172,6 +184,7 @@ GoldScout-export 6^h1hb8998rke8^7
 @i^213547^Schriftrolle: WELCH SCHWESTER
 @i^216483^Schlaghammer der Witherbark
 @i^248687^Abgefangene Kiste: Erz des Gesellen
+@i^248690^Abgefangene Kiste: Weltliche Kräuter des Experten
 @i^248709^Abgefangene Kiste: Barren des Experten
 @i^251961^Arkanpartikel
 @i^273041^Schlitterwickelgurt
@@ -187,12 +200,14 @@ GoldScout-export 6^h1hb8998rke8^7
 @i^286987^Sandalen des Violetten Zauberers
 @q^729^1:7:1
 @q^730^1:7:1
+@q^770^0:15:0
 @q^865^2:2:0
 @q^878^0:7:0
 @q^1074^0:15:0
 @q^1081^1:7:1
 @q^1179^1:0:0
 @q^1288^1:7:1
+@q^1686^0:15:0
 @q^1696^0:15:0
 @q^1701^0:15:0
 @q^1702^0:15:0
@@ -209,6 +224,7 @@ GoldScout-export 6^h1hb8998rke8^7
 @q^3042^2:2:0
 @q^3182^1:7:1
 @q^3399^0:15:0
+@q^3667^1:7:1
 @q^3685^1:7:1
 @q^3688^1:12:0
 @q^3689^1:12:0
@@ -222,6 +238,8 @@ GoldScout-export 6^h1hb8998rke8^7
 @q^3745^1:12:0
 @q^3771^1:0:0
 @q^3785^0:2:0
+@q^4052^2:4:0
+@q^4053^1:12:0
 @q^4093^0:15:0
 @q^4306^1:7:1
 @q^4337^1:7:1
@@ -264,6 +282,7 @@ GoldScout-export 6^h1hb8998rke8^7
 @q^6607^2:4:0
 @q^6986^0:15:0
 @q^7067^1:7:1
+@q^7356^2:4:0
 @q^7453^2:9:0
 @q^8150^1:7:1
 @q^9817^2:4:0
@@ -272,6 +291,7 @@ GoldScout-export 6^h1hb8998rke8^7
 @q^11416^0:15:0
 @q^12037^1:7:1
 @q^12184^1:7:1
+@q^12202^1:7:1
 @q^14196^2:4:0
 @q^15242^2:2:0
 @q^15250^2:2:0
@@ -287,6 +307,7 @@ GoldScout-export 6^h1hb8998rke8^7
 @q^213547^1:0:0
 @q^216483^1:0:0
 @q^248687^1:0:1
+@q^248690^1:0:1
 @q^248709^2:0:1
 @q^251961^1:12:0
 @q^273041^3:4:0
@@ -304,6 +325,7 @@ GoldScout-export 6^h1hb8998rke8^7
 @m^1417^Arathihochland
 @m^1421^Silberwald
 @m^1424^Vorgebirge von Hillsbrad
+@m^1434^Schlingendorntal
 @m^1441^Tausend Nadeln
 @c^118^
 @c^724^
@@ -1024,6 +1046,11 @@ GoldScout-export 6^h1hb8998rke8^7
 @c^279985^
 @c^279987^
 @c^286152^
+@a^681^28:1,46:5,47:3,48:1
+@a^682^25:1,26:2,45:3,47:1
+@a^683^28:3,47:2,48:5
+@a^736^25:2,45:2
+@a^1150^26:1,27:1,46:1,47:2,48:2
 @a^1908^193:1
 @a^1909^193:1
 @a^2248^108:2,128:1
