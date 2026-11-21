@@ -1,4 +1,4 @@
-GoldScout-export 6^0sgwye9takkd^13
+GoldScout-export 6^0sgwye9takkd^15
 232^1^0^23^23^1424^0.3328^0.3861^1^Farmer Ray^1485:1:1,4538:1:1^
 2241^1^0^33^33^1416^0.5794^0.6756^1^Syndicate Thief^3601:1:1,4306:1:2^
 2248^5^0^30^31^1424^0.4413^0.3010^5^Cave Yeti^2785:1:1,3708:1:1,5637:1:1^
@@ -179,10 +179,20 @@ GoldScout-export 6^0sgwye9takkd^13
 12897^2^0^21^22^1440^0.6437^0.7536^2^Silverwing Warrior^2592:2:3^
 12902^1^0^0^0^0^0.0000^0.0000^0^^^
 14427^1^0^28^28^1441^0.5577^0.4947^1^Gibblesnik^3206:1:1,5842:1:1^
+260322^1^0^0^0^0^0.0000^0.0000^0^^273023:1:1^
+260325^1^0^0^0^0^0.0000^0.0000^0^^271100:1:3^
+260797^2^0^0^0^0^0.0000^0.0000^0^^770:1:1,3667:2:2,12037:1:1^
+260798^2^0^0^0^0^0.0000^0.0000^0^^770:1:1,3667:2:2,12037:1:1^
+260799^2^0^0^0^0^0.0000^0.0000^0^^1697:1:1,3180:1:1,5635:1:1,211854:1:1^
+260800^4^0^0^0^0^0.0000^0.0000^0^^1697:2:2,3685:1:1,248688:1:1,271100:1:1^
+260801^2^0^0^0^0^0.0000^0.0000^0^^1697:2:2,3685:1:1,248688:1:1^
+260802^1^0^0^0^0^0.0000^0.0000^0^^3685:1:1,5635:1:1^
 268622^1^0^22^22^1413^0.4913^0.7711^1^Encroaching Soldier^^
 268623^1^0^23^23^1413^0.4914^0.7714^1^Outraged Pillager^^
+275044^1^0^0^0^0^0.0000^0.0000^0^^2592:1:2^
 @i^422^Dwarven Mild
 @i^730^Murloc Eye
+@i^770^Pointy Crocolisk Tooth
 @i^878^Fist-sized Spinneret
 @i^929^Healing Potion
 @i^954^Scroll of Strength
@@ -195,6 +205,7 @@ GoldScout-export 6^0sgwye9takkd^13
 @i^1478^Scroll of Protection II
 @i^1485^Pitchfork
 @i^1696^Curved Raptor Talon
+@i^1697^Keen Raptor Tooth
 @i^1705^Lesser Moonstone
 @i^1708^Sweet Nectar
 @i^1748^Linked Chain Bracers
@@ -229,11 +240,13 @@ GoldScout-export 6^0sgwye9takkd^13
 @i^2838^Heavy Stone
 @i^2981^Seer's Robe
 @i^3172^Boar Intestines
+@i^3180^Flecked Raptor Scale
 @i^3206^Cavalier Two-hander of the Wolf
 @i^3301^Sharp Canine
 @i^3385^Lesser Mana Potion
 @i^3402^Soft Patch of Fur
 @i^3601^Syndicate Missive
+@i^3667^Tender Crocolisk Meat
 @i^3676^Slimy Ichor
 @i^3685^Raptor Egg
 @i^3688^Bloodstone Oval
@@ -313,6 +326,7 @@ GoldScout-export 6^0sgwye9takkd^13
 @i^11406^Rotting Bear Carcass
 @i^11407^Torn Bear Pelt
 @i^11994^Coral Band of Agility
+@i^12037^Mystery Meat
 @i^12047^Spectral Necklace of the Bandit
 @i^12184^Raptor Flesh
 @i^12884^Arnak's Hoof
@@ -346,6 +360,7 @@ GoldScout-export 6^0sgwye9takkd^13
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
 @i^211853^Scroll: VOCE WELL
+@i^211854^Scroll: OMIT KESA
 @i^211855^Scroll: STHENIC LUNATE
 @i^213422^Illegible Recipe
 @i^213543^Scroll: UPDOG
@@ -353,13 +368,17 @@ GoldScout-export 6^0sgwye9takkd^13
 @i^248685^Waylaid Crate: Apprentice Curiosities
 @i^248686^Waylaid Crate: Journeyman Herbs
 @i^248687^Waylaid Crate: Journeyman Ore
+@i^248688^Waylaid Crate: Journeyman Textiles
 @i^248689^Waylaid Crate: Journeyman Curiosities
 @i^252804^Pattern: Hillman's Leather Boots
 @i^262888^Sealed Journeyman's Writ
 @i^262889^Sealed Expert's Writ
+@i^271100^Thicket Raptor Meat
+@i^273023^Saltscale Girdle
 @i^278225^Surgical Spidersilk
 @q^422^1:0:0
 @q^730^1:7:1
+@q^770^0:15:0
 @q^878^0:7:0
 @q^929^1:0:0
 @q^954^1:0:0
@@ -372,6 +391,7 @@ GoldScout-export 6^0sgwye9takkd^13
 @q^1478^1:0:0
 @q^1485^0:2:0
 @q^1696^0:15:0
+@q^1697^0:15:0
 @q^1705^2:7:1
 @q^1708^1:0:0
 @q^1748^0:4:0
@@ -406,11 +426,13 @@ GoldScout-export 6^0sgwye9takkd^13
 @q^2838^1:7:1
 @q^2981^2:4:0
 @q^3172^1:7:1
+@q^3180^0:15:0
 @q^3206^2:2:0
 @q^3301^0:15:0
 @q^3385^1:0:0
 @q^3402^0:15:0
 @q^3601^1:12:0
+@q^3667^1:7:1
 @q^3676^0:15:0
 @q^3685^1:7:1
 @q^3688^1:12:0
@@ -490,6 +512,7 @@ GoldScout-export 6^0sgwye9takkd^13
 @q^11406^0:15:0
 @q^11407^1:12:0
 @q^11994^2:4:0
+@q^12037^1:7:1
 @q^12047^2:4:0
 @q^12184^1:7:1
 @q^12884^1:0:0
@@ -523,6 +546,7 @@ GoldScout-export 6^0sgwye9takkd^13
 @q^17056^1:15:1
 @q^17057^1:15:0
 @q^211853^1:0:0
+@q^211854^1:0:0
 @q^211855^1:0:0
 @q^213422^1:12:0
 @q^213543^1:0:0
@@ -530,10 +554,13 @@ GoldScout-export 6^0sgwye9takkd^13
 @q^248685^1:0:1
 @q^248686^1:0:1
 @q^248687^1:0:1
+@q^248688^1:0:1
 @q^248689^1:0:1
 @q^252804^2:9:0
 @q^262888^3:0:0
 @q^262889^3:0:0
+@q^271100^1:12:0
+@q^273023^3:4:0
 @q^278225^1:12:0
 @m^1413^The Barrens
 @m^1414^Kalimdor

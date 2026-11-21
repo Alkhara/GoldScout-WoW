@@ -1,4 +1,4 @@
-GoldScout-export 6^otli460mthfa^9
+GoldScout-export 6^otli460mthfa^11
 206^6^0^29^30^1431^0.6878^0.7162^6^Nightbane Vile Fang^5637:1:1^
 212^6^0^29^30^1431^0.3395^0.7332^6^Splinter Fist Warrior^4306:1:2^
 215^1^0^24^24^1431^0.2127^0.6260^1^Defias Night Runner^^
@@ -59,6 +59,10 @@ GoldScout-export 6^otli460mthfa^9
 2010^1^0^7^8^1438^0.4355^0.6000^1^Gnarlpine Defender^2589:1:2^
 2089^8^0^25^26^1437^0.2296^0.2307^8^Giant Wetlands Crocolisk^770:2:2,3348:6:6,3667:5:5^
 2091^1^0^32^32^1437^0.5295^0.5416^1^Chieftain Nek'rosh^3625:1:1^
+2349^1^0^24^24^1424^0.6659^0.3870^1^Giant Moss Creeper^248707:1:1^
+2376^6^0^30^31^1424^0.4119^0.6820^6^Torn Fin Oracle^5524:3:3,17057:1:1,17058:1:1,249881:2:2^
+2377^7^0^31^32^1424^0.3967^0.6866^7^Torn Fin Tidehunter^5524:1:1,17057:2:2,17058:1:1^
+2408^8^0^30^31^1416^0.7635^0.6247^5^Snapjaw^3712:2:2,4555:3:3,4556:2:2,5214:1:1,5524:4:4^
 3758^1^0^25^25^1440^0.6656^0.5095^1^Felmusk Satyr^^
 3784^1^0^26^26^1440^0.6393^0.6766^1^Shadethicket Bark Ripper^1205:1:1,1754:1:1^
 3809^1^0^22^22^1440^0.5682^0.5560^1^Ashenvale Bear^11406:1:1^
@@ -145,6 +149,7 @@ GoldScout-export 6^otli460mthfa^9
 @i^3667^Tender Crocolisk Meat
 @i^3685^Raptor Egg
 @i^3702^Bear Gall Bladder
+@i^3712^Turtle Meat
 @i^3730^Big Bear Meat
 @i^3770^Mutton Chop
 @i^3802^Hardened Leather Bracers
@@ -153,7 +158,10 @@ GoldScout-export 6^otli460mthfa^9
 @i^4428^Spider Palp
 @i^4542^Moist Cornbread
 @i^4553^Jagged Piece of Stone
+@i^4555^Thick Scaly Tail
+@i^4556^Speckled Shell Fragment
 @i^4633^Heavy Bronze Lockbox
+@i^5214^Wand of Eventide
 @i^5233^Stone of Relu
 @i^5524^Thick-shelled Clam
 @i^5635^Sharp Claw
@@ -182,6 +190,8 @@ GoldScout-export 6^otli460mthfa^9
 @i^211855^Scroll: STHENIC LUNATE
 @i^248688^Waylaid Crate: Journeyman Textiles
 @i^248689^Waylaid Crate: Journeyman Curiosities
+@i^248707^Waylaid Crate: Journeyman Parts
+@i^249881^Recipe: Root Tea
 @i^275894^Ghastly Cloth
 @i^279385^Pristine Crimson Scale
 @i^279993^Titanic Keystone
@@ -261,6 +271,7 @@ GoldScout-export 6^otli460mthfa^9
 @q^3667^1:7:1
 @q^3685^1:7:1
 @q^3702^0:15:0
+@q^3712^1:7:1
 @q^3730^1:7:1
 @q^3770^1:0:0
 @q^3802^0:4:0
@@ -269,7 +280,10 @@ GoldScout-export 6^otli460mthfa^9
 @q^4428^0:15:0
 @q^4542^1:0:0
 @q^4553^0:15:0
+@q^4555^0:15:0
+@q^4556^0:15:0
 @q^4633^2:15:0
+@q^5214^2:2:0
 @q^5233^1:12:0
 @q^5524^1:7:0
 @q^5635^1:7:1
@@ -298,6 +312,8 @@ GoldScout-export 6^otli460mthfa^9
 @q^211855^1:0:0
 @q^248688^1:0:1
 @q^248689^1:0:1
+@q^248707^2:0:1
+@q^249881^1:9:0
 @q^275894^0:15:0
 @q^279385^1:12:0
 @q^279993^1:12:0
@@ -312,6 +328,8 @@ GoldScout-export 6^otli460mthfa^9
 @q^281142^1:15:0
 @q^281143^1:15:0
 @m^1413^The Barrens
+@m^1416^Alterac Mountains
+@m^1424^Hillsbrad Foothills
 @m^1429^Elwynn Forest
 @m^1431^Duskwood
 @m^1437^Wetlands
@@ -1143,6 +1161,10 @@ GoldScout-export 6^otli460mthfa^9
 @a^2010^228:1
 @a^2089^65:1,84:3,85:2,103:2
 @a^2091^210:1
+@a^2349^153:1
+@a^2376^249:1,267:2,268:3
+@a^2377^267:4,268:2,288:1
+@a^2408^236:1,254:1,255:2,274:1
 @a^3758^213:1
 @a^3784^272:1
 @a^3809^231:1

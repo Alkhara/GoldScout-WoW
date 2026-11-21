@@ -1,4 +1,4 @@
-GoldScout-export 6^ugi1bhjxbs31^21
+GoldScout-export 6^ugi1bhjxbs31^22
 636^1^0^0^0^0^0.0000^0.0000^0^^2589:1:3,5573:1:1^
 639^1^0^0^0^0^0.0000^0.0000^0^^5193:1:1^
 645^1^0^0^0^0^0.0000^0.0000^0^^273298:1:1^
@@ -70,6 +70,10 @@ GoldScout-export 6^ugi1bhjxbs31^21
 2450^1^0^29^29^1424^0.3014^0.5357^1^Miner Hackett^422:1:1,3692:1:1^
 2503^9^0^27^28^1424^0.3011^0.5511^9^Hillsbrad Foreman^929:1:1,2592:1:1,3692:2:2,4306:4:5^
 2552^1^0^31^31^1417^0.3789^0.4050^1^Witherbark Troll^^
+2554^6^0^32^33^1417^0.7247^0.6328^6^Witherbark Axe Thrower^3807:1:1,4306:3:4,248688:1:1,248709:1:1^
+2555^4^0^33^34^1417^0.7282^0.6429^4^Witherbark Witch Doctor^3771:1:1,4306:1:2^
+2556^10^0^34^35^1417^0.6864^0.7549^10^Witherbark Headhunter^1708:1:1,2592:2:5,3771:1:1,4306:1:1,216483:2:2^
+2557^4^0^35^36^1417^0.6847^0.8036^4^Witherbark Shadow Hunter^4306:2:4,216483:1:1^
 2559^10^0^30^31^1417^0.5228^0.3788^10^Highland Strider^1696:1:1,3685:3:3,4461:1:1,4512:6:6,4586:1:1,12184:3:3^
 2560^10^0^33^34^1417^0.4147^0.3526^10^Highland Thrasher^1696:1:1,3685:2:2,4461:2:2,4512:4:4,4586:1:1,5637:1:1,12184:4:4^
 2562^8^0^32^33^1417^0.3304^0.4179^8^Boulderfist Ogre^2592:1:3,3795:1:1,4338:1:1,213422:1:1^
@@ -446,6 +450,7 @@ GoldScout-export 6^ugi1bhjxbs31^21
 @i^3795^Interlaced Cloak
 @i^3796^Interlaced Gloves
 @i^3802^Hardened Leather Bracers
+@i^3807^Hardened Leather Tunic
 @i^3808^Double Mail Belt
 @i^3809^Double Mail Boots
 @i^3827^Mana Potion
@@ -636,11 +641,13 @@ GoldScout-export 6^ugi1bhjxbs31^21
 @i^213422^Illegible Recipe
 @i^213543^Scroll: UPDOG
 @i^213545^Scroll: PEATCHY ATTAX
+@i^216483^Witherbark Mallet
 @i^248684^Waylaid Crate: Apprentice Textiles
 @i^248686^Waylaid Crate: Journeyman Herbs
 @i^248688^Waylaid Crate: Journeyman Textiles
 @i^248689^Waylaid Crate: Journeyman Curiosities
 @i^248706^Waylaid Crate: Journeyman Ingots
+@i^248709^Waylaid Crate: Expert Ingots
 @i^251353^Plans: Acolyte's Chain Helm
 @i^251961^Arcane Mote
 @i^254432^Carved Centaur Totem
@@ -836,6 +843,7 @@ GoldScout-export 6^ugi1bhjxbs31^21
 @q^3795^0:4:0
 @q^3796^0:4:0
 @q^3802^0:4:0
+@q^3807^0:4:0
 @q^3808^0:4:0
 @q^3809^0:4:0
 @q^3827^1:0:0
@@ -1026,11 +1034,13 @@ GoldScout-export 6^ugi1bhjxbs31^21
 @q^213422^1:12:0
 @q^213543^1:0:0
 @q^213545^1:0:0
+@q^216483^1:0:0
 @q^248684^1:0:1
 @q^248686^1:0:1
 @q^248688^1:0:1
 @q^248689^1:0:1
 @q^248706^2:0:1
+@q^248709^2:0:1
 @q^251353^3:9:0
 @q^251961^1:12:0
 @q^254432^2:15:0
@@ -1590,6 +1600,10 @@ GoldScout-export 6^ugi1bhjxbs31^21
 @a^2450^206:1
 @a^2503^205:2,206:2,225:1,226:4
 @a^2552^167:1
+@a^2554^254:6
+@a^2555^254:4
+@a^2556^254:1,274:1,293:1,313:6,333:1
+@a^2557^313:1,333:3
 @a^2559^130:1,133:1,149:2,153:1,154:1,167:1,168:3
 @a^2560^107:2,128:2,147:2,148:1,149:2,168:1
 @a^2562^166:5,167:2,186:1

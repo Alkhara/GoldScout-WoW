@@ -1,4 +1,10 @@
-GoldScout-export 6^g0myccqqg8dt^7
+GoldScout-export 6^g0myccqqg8dt^8
+1120^1^0^8^8^1426^0.7010^0.3962^1^Frostmane Troll^^
+2252^25^0^34^35^1416^0.5003^0.5719^25^Crushridge Ogre^2843:5:5,3658:3:3,3771:3:3,3782:1:1,4306:8:12,4414:1:1,248690:1:1^
+2253^13^0^35^36^1416^0.4959^0.5692^13^Crushridge Brute^2592:2:6,2843:4:4,3658:2:2,3771:1:1,4306:4:5,248694:1:1^
+2588^3^0^36^37^1417^0.2596^0.6236^3^Syndicate Prowler^4506:2:3,248710:1:1^
+2597^1^0^40^40^1417^0.2612^0.6498^1^Lord Falconcrest^4517:1:1^
+2599^1^0^38^38^1417^0.2612^0.6498^1^Otto^3784:1:1,4516:1:1^
 245999^2^0^0^0^1416^0.0000^0.0000^0^^273031:1:1,273035:1:1^
 246008^1^0^0^0^1416^0.0000^0.0000^0^^273040:1:1^
 246016^1^0^0^0^1416^0.0000^0.0000^0^^273044:1:1^
@@ -32,12 +38,21 @@ GoldScout-export 6^g0myccqqg8dt^7
 @i^1759^Reinforced Chain Pants
 @i^1990^Ballast Maul of the Bear
 @i^2592^Wool Cloth
+@i^2843^Dirty Knucklebones
 @i^3404^Buzzard Wing
+@i^3658^Recovered Tome
+@i^3771^Wild Hog Shank
+@i^3782^Large War Club
 @i^3783^Light Scimitar
+@i^3784^Metal Stave
 @i^3864^Citrine
 @i^3867^Plans: Golden Iron Destroyer
 @i^4043^Aurora Bracers
 @i^4306^Silk Cloth
+@i^4414^Schematic: Portable Bronze Mortar
+@i^4506^Stromgarde Badge
+@i^4516^Otto's Head
+@i^4517^Falconcrest's Head
 @i^5116^Long Tail Feather
 @i^5636^Delicate Feather
 @i^5637^Large Fang
@@ -65,9 +80,12 @@ GoldScout-export 6^g0myccqqg8dt^7
 @i^213544^Scroll: TOPAZ YORAK
 @i^213545^Scroll: PEATCHY ATTAX
 @i^248686^Waylaid Crate: Journeyman Herbs
+@i^248690^Waylaid Crate: Earthly Expert Herbs
 @i^248691^Waylaid Crate: Flowering Expert Herbs
 @i^248692^Waylaid Crate: Expert Ore
 @i^248693^Waylaid Crate: Expert Textiles
+@i^248694^Waylaid Crate: Expert Curiosities
+@i^248710^Waylaid Crate: Expert Parts
 @i^251961^Arcane Mote
 @i^262888^Sealed Journeyman's Writ
 @i^262889^Sealed Expert's Writ
@@ -90,12 +108,21 @@ GoldScout-export 6^g0myccqqg8dt^7
 @q^1759^0:4:0
 @q^1990^2:2:0
 @q^2592^1:7:1
+@q^2843^1:12:0
 @q^3404^1:7:1
+@q^3658^1:12:0
+@q^3771^1:0:0
+@q^3782^0:2:0
 @q^3783^0:2:0
+@q^3784^0:2:0
 @q^3864^2:7:1
 @q^3867^2:9:0
 @q^4043^2:4:0
 @q^4306^1:7:1
+@q^4414^2:9:0
+@q^4506^1:12:0
+@q^4516^1:12:0
+@q^4517^1:12:0
 @q^5116^1:7:1
 @q^5636^0:15:0
 @q^5637^1:7:1
@@ -123,9 +150,12 @@ GoldScout-export 6^g0myccqqg8dt^7
 @q^213544^1:0:0
 @q^213545^1:0:0
 @q^248686^1:0:1
+@q^248690^1:0:1
 @q^248691^1:0:1
 @q^248692^1:0:1
 @q^248693^1:0:1
+@q^248694^1:0:1
+@q^248710^2:0:1
 @q^251961^1:12:0
 @q^262888^3:0:0
 @q^262889^3:0:0
@@ -141,6 +171,8 @@ GoldScout-export 6^g0myccqqg8dt^7
 @q^276158^0:15:0
 @q^276160^0:15:0
 @m^1416^Alterac Mountains
+@m^1417^Arathi Highlands
+@m^1426^Dun Morogh
 @m^2548^Riverglades
 @c^118^
 @c^724^
@@ -506,6 +538,12 @@ GoldScout-export 6^g0myccqqg8dt^7
 @c^279982^
 @c^279990^
 @c^286152^
+@a^1120^154:1
+@a^2252^209:2,210:8,229:5,230:3,249:7
+@a^2253^209:2,210:3,229:1,230:4,249:3
+@a^2588^245:3
+@a^2597^245:1
+@a^2599^245:1
 @a^259052^231:4,232:1,251:8
 @a^259054^211:1,231:4
 @a^259055^211:2,231:9

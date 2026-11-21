@@ -1,4 +1,4 @@
-GoldScout-export 6^01brebf605sh^7
+GoldScout-export 6^01brebf605sh^8
 1527^2^0^8^8^1420^0.6781^0.4174^2^Hungering Dead^^
 1528^4^0^8^9^1420^0.6782^0.4243^4^Shambling Horror^2589:2:3^
 1543^1^0^7^7^1420^0.2924^0.4475^1^Vile Fin Puddlejumper^^
@@ -26,6 +26,9 @@ GoldScout-export 6^01brebf605sh^7
 2967^1^0^9^9^1412^0.6189^0.6264^1^Galak Centaur^^
 2968^1^0^10^10^1412^0.6202^0.6326^1^Galak Outrunner^2589:1:2^
 3115^1^0^7^7^1411^0.4998^0.2750^1^Dustwind Harpy^2589:1:2^
+3197^6^0^9^10^1411^0.5344^0.1014^6^Burning Blade Fanatic^2589:1:2,3280:1:1,4668:1:1^
+3198^4^0^10^11^1411^0.5340^0.0958^4^Burning Blade Apprentice^1429:1:1,2589:2:2^
+8996^3^0^10^11^1411^0.5342^0.1019^3^Voidwalker Minion^^
 250282^10^0^9^10^1420^0.1630^0.5300^10^Vile Fin Seer^779:1:1,1418:1:1,1431:1:1,1433:1:1,2648:1:1,3327:1:1,9754:1:1^
 250283^8^0^9^11^1420^0.1616^0.5721^8^Vile Fin Attacker^779:1:1,1429:1:1,6303:1:1^
 259431^1^0^12^12^1420^0.1159^0.6415^1^Rudolph Gelhardt^270435:1:1^
@@ -82,6 +85,7 @@ GoldScout-export 6^01brebf605sh^7
 @i^3174^Spider Ichor
 @i^3253^Grizzled Bear Heart
 @i^3254^Skittering Blood
+@i^3280^Battle Chain Bracers
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
 @i^3327^Vile Fin Oracle Staff
@@ -90,6 +94,7 @@ GoldScout-export 6^01brebf605sh^7
 @i^3622^Essence of Nightlash
 @i^4604^Forest Mushroom Cap
 @i^4605^Red-speckled Mushroom
+@i^4668^Battle Chain Cloak
 @i^5465^Small Spider Leg
 @i^5523^Small Barnacled Clam
 @i^5572^Small Green Pouch
@@ -151,6 +156,7 @@ GoldScout-export 6^01brebf605sh^7
 @q^3174^1:7:1
 @q^3253^1:12:0
 @q^3254^1:12:0
+@q^3280^1:4:0
 @q^3299^0:15:0
 @q^3300^0:15:0
 @q^3327^1:2:0
@@ -159,6 +165,7 @@ GoldScout-export 6^01brebf605sh^7
 @q^3622^1:12:0
 @q^4604^1:0:0
 @q^4605^1:0:0
+@q^4668^1:4:0
 @q^5465^1:7:1
 @q^5523^1:7:0
 @q^5572^1:1:0
@@ -570,6 +577,9 @@ GoldScout-export 6^01brebf605sh^7
 @a^2967^252:1
 @a^2968^252:1
 @a^3115^109:1
+@a^3197^30:3,50:3
+@a^3198^30:2,50:2
+@a^8996^30:1,50:2
 @a^250282^203:8,223:2
 @a^250283^202:1,223:6,243:1
 @a^259431^242:1
