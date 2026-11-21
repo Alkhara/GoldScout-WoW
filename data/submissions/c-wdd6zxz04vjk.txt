@@ -1,5 +1,7 @@
-GoldScout-export 6^wdd6zxz04vjk^14
+GoldScout-export 6^wdd6zxz04vjk^15
 3560^1^0^57^57^2482^0.2742^0.6128^1^Gardien Guérisseur^^
+6146^1^0^54^55^1447^0.4443^0.8490^1^Brise-falaises^7912:1:2,11405:1:2^
+6148^5^0^52^53^1447^0.4819^0.8265^5^Marcheur des falaises^4552:2:2,7912:4:8,8150:2:2,11405:5:9,15291:1:1,243203:1:1^
 7025^4^0^55^56^1428^0.4391^0.5588^4^Soldat rochenoire^14047:1:2^
 7026^5^0^55^56^1428^0.4250^0.5610^5^Sorcier rochenoire^3987:1:1,11467:4:31^
 7027^7^0^56^57^1428^0.4259^0.5582^7^Pourfendeur rochenoire^8952:1:1,11467:2:10,14047:2:5^
@@ -11,6 +13,9 @@ GoldScout-export 6^wdd6zxz04vjk^14
 7047^8^0^51^52^1428^0.8685^0.5246^8^Rejeton noir^4460:1:1,4557:2:2,8146:1:1,281017:1:1^
 7055^2^0^54^55^1428^0.4216^0.5619^2^Worg rochenoire^11467:2:11^
 7432^1^0^59^60^1452^0.4904^0.1711^1^Traqueur sabre-de-givre^1688:1:1,4580:1:1^
+7443^2^0^55^56^1452^0.6000^0.3388^2^Marteleur Crocs acérés^3730:2:2,11408:1:1,21928:1:1^
+7455^1^0^56^56^1452^0.5686^0.3466^1^Chouette du Berceau-de-l'Hiver^11417:1:1,15420:1:1^
+7457^1^0^53^53^1452^0.5406^0.3725^1^Chardon de glace insoumis^^
 8889^2^0^0^0^0^0.0000^0.0000^0^^14047:1:2,213546:1:1,274964:1:1^
 8890^4^0^0^0^0^0.0000^0.0000^0^^8248:1:1^
 8891^17^0^0^0^0^0.0000^0.0000^0^^4426:1:1,7910:1:1,8274:1:1,8766:1:1,11078:1:1,11468:5:5,11734:1:1,12549:1:1,13052:1:1,13818:1:1,14047:1:2,18945:1:4^
@@ -100,6 +105,7 @@ GoldScout-export 6^wdd6zxz04vjk^14
 @i^1688^Longue queue soyeuse
 @i^2447^Pacifique
 @i^3712^Viande de tortue
+@i^3730^Viande de grand ours
 @i^3857^Charbon
 @i^3945^Bottes sergées
 @i^3946^Brassards sergés
@@ -130,6 +136,7 @@ GoldScout-export 6^wdd6zxz04vjk^14
 @i^6826^Ecaille brillante
 @i^7077^Coeur de feu
 @i^7910^Rubis étoilé
+@i^7912^Pierre solide
 @i^7972^Ichor de non-mort
 @i^8146^Serre cruelle
 @i^8150^Sel de Fonderoc
@@ -147,6 +154,9 @@ GoldScout-export 6^wdd6zxz04vjk^14
 @i^11080^Tête coupée de Gor'tesh
 @i^11312^Recette perdue de la Thunderbrew
 @i^11313^Tête de Ribbly
+@i^11405^Veine d'argent de géant
+@i^11408^Mâchoire d'ours
+@i^11417^Aile douce
 @i^11419^Oeuf mystérieux non-éclos
 @i^11420^Outil élégant d'écriture
 @i^11467^Médaillon de Rochenoire
@@ -179,6 +189,7 @@ GoldScout-export 6^wdd6zxz04vjk^14
 @i^14457^Crispins élunariens
 @i^14806^Epaulettes sanguinaires
 @i^14844^Corselet solécaille
+@i^15291^Arc foudroyant de brigandage
 @i^15420^Plumacier
 @i^18222^Vigne épineuse
 @i^18224^Racine flagellante
@@ -196,12 +207,14 @@ GoldScout-export 6^wdd6zxz04vjk^14
 @i^19933^Sang de scorpide luminescent
 @i^19934^Grande griffe de scorpide
 @i^19936^Carapace de scorpide desséchée
+@i^21928^Echantillon de sang de Berceau-de-l'Hiver
 @i^22207^Echarpe de la Grande chasse
 @i^22223^Protège-tête de contremaître
 @i^22240^Grèves du désespoir cinglant
 @i^22275^Bottes Mousse-de-feu
 @i^213546^Parchemin : TAGADAAA
 @i^213547^Parchemin : ELLUQE PÉÉE
+@i^243203^Cristal colossal
 @i^248695^Caisse détournée : plantes terreuses d'artisan
 @i^253341^Plume de chouette d'Hyjal
 @i^263028^Amulette enchantée de harpie
@@ -222,6 +235,7 @@ GoldScout-export 6^wdd6zxz04vjk^14
 @q^1688^0:15:0
 @q^2447^1:7:1
 @q^3712^1:7:1
+@q^3730^1:7:1
 @q^3857^1:7:1
 @q^3945^0:4:0
 @q^3946^0:4:0
@@ -252,6 +266,7 @@ GoldScout-export 6^wdd6zxz04vjk^14
 @q^6826^0:15:0
 @q^7077^1:7:1
 @q^7910^2:7:1
+@q^7912^1:7:1
 @q^7972^1:7:1
 @q^8146^1:7:1
 @q^8150^1:7:1
@@ -269,6 +284,9 @@ GoldScout-export 6^wdd6zxz04vjk^14
 @q^11080^1:12:0
 @q^11312^1:12:0
 @q^11313^1:12:0
+@q^11405^1:0:0
+@q^11408^0:15:0
+@q^11417^0:15:0
 @q^11419^0:15:0
 @q^11420^0:15:0
 @q^11467^1:12:0
@@ -301,6 +319,7 @@ GoldScout-export 6^wdd6zxz04vjk^14
 @q^14457^2:4:0
 @q^14806^2:4:0
 @q^14844^2:4:0
+@q^15291^2:2:0
 @q^15420^1:7:1
 @q^18222^0:15:0
 @q^18224^0:15:0
@@ -318,12 +337,14 @@ GoldScout-export 6^wdd6zxz04vjk^14
 @q^19933^1:15:0
 @q^19934^0:15:0
 @q^19936^0:15:0
+@q^21928^1:12:0
 @q^22207^3:4:0
 @q^22223^3:4:0
 @q^22240^3:4:0
 @q^22275^3:4:0
 @q^213546^1:0:0
 @q^213547^1:0:0
+@q^243203^1:15:0
 @q^248695^1:0:1
 @q^253341^1:12:0
 @q^263028^1:12:0
@@ -342,6 +363,7 @@ GoldScout-export 6^wdd6zxz04vjk^14
 @q^281017^1:0:0
 @q^281018^1:0:0
 @m^1428^Steppes ardentes
+@m^1447^Azshara
 @m^1452^Berceau-de-l'Hiver
 @m^2482^Mont Hyjal
 @c^118^
@@ -571,6 +593,8 @@ GoldScout-export 6^wdd6zxz04vjk^14
 @c^279970^
 @c^279990^
 @a^3560^245:1
+@a^6146^328:1
+@a^6148^310:1,328:1,329:3
 @a^7025^228:4
 @a^7026^227:1,228:4
 @a^7027^227:1,228:5,229:1
@@ -582,6 +606,9 @@ GoldScout-export 6^wdd6zxz04vjk^14
 @a^7047^136:1,178:1,217:1,237:4,256:1
 @a^7055^227:1,228:1
 @a^7432^69:1
+@a^7443^131:1,132:1
+@a^7455^131:1
+@a^7457^150:1
 @a^9176^227:1,228:2
 @a^9691^137:1,177:1
 @a^9777^216:2
