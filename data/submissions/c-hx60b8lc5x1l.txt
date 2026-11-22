@@ -1,4 +1,4 @@
-GoldScout-export 6^hx60b8lc5x1l^12
+GoldScout-export 6^hx60b8lc5x1l^13
 587^15^0^33^34^1434^0.2980^0.1946^15^Krieger der Bloodscalp^1520:1:1,2725:1:1,3771:1:1,3901:3:3,3915:1:1,4306:3:5,13137:1:1,262889:1:1^
 588^6^0^34^35^1434^0.2517^0.1093^6^Späher der Bloodscalp^2080:1:1,2744:1:1,2748:1:1,3915:1:1,4306:2:3^
 595^14^0^34^35^1434^0.2581^0.1115^14^Jäger der Bloodscalp^2732:1:1,2735:1:1,3771:1:1,3915:5:5,4306:8:11^
@@ -25,12 +25,16 @@ GoldScout-export 6^hx60b8lc5x1l^12
 1890^12^0^2^3^1420^0.3233^0.6004^12^Klapperndes Skelett^1380:1:1,2211:1:1,2589:4:4,3363:1:1,4604:3:3^
 1919^1^0^5^5^1420^0.3597^0.6153^1^Samuel Fipps^4604:1:1,16333:1:1^
 1934^3^0^7^7^1420^0.3644^0.5134^3^Bauer von Tirisfal^1433:1:1^
-2261^8^0^20^21^1424^0.7549^0.4611^8^Wachmann des Syndikats^1812:1:1,2592:1:2^
+2244^3^0^21^22^1424^0.7861^0.4096^3^Schattenmagier des Syndikats^2589:1:3^
+2260^5^0^21^22^1424^0.7729^0.4256^5^Schurke des Syndikats^^
+2261^19^0^20^21^1424^0.7655^0.4490^19^Wachmann des Syndikats^929:1:1,1205:1:1,1789:1:1,1812:1:1,1818:1:1,2589:1:2,2592:2:4^
 2349^1^0^24^24^1424^0.6027^0.4815^1^Riesiger Mooskrabbler^1081:1:1,2251:1:1^
 2350^7^0^20^21^1424^0.6023^0.1856^7^Waldmooskrabbler^1081:4:4,3477:1:1,4428:4:4^
 2351^16^0^21^22^1424^0.6035^0.2505^16^Graubär^2940:6:6,3476:5:5,3702:1:1,3730:4:4,11406:3:3^
 2354^9^0^22^23^1424^0.5196^0.3675^9^Heimtückischer Graubär^2940:4:4,3476:5:5,3702:2:2,3730:2:2,5635:1:1,11407:1:1^
 2384^1^0^23^23^1424^0.5324^0.3883^1^Verhungernder Berglöwe^5136:1:1^
+2427^1^0^24^24^1424^0.7548^0.4232^1^Kerkermeister Eston^2592:1:1,3467:1:1^
+2428^1^0^24^24^1424^0.7793^0.4108^1^Kerkermeister Marlgen^3499:1:1^
 2563^6^0^32^33^1417^0.6989^0.4887^6^Ebenenkrabbler^1074:1:1,1081:1:1,2251:2:2,3864:1:1,4585:1:1,7084:1:1,278225:1:1^
 2565^11^0^35^36^1417^0.5857^0.6785^11^Riesiger Ebenenkrabbler^1074:2:2,1081:5:5,2251:5:5,4337:2:2,4585:1:1,278225:5:5^
 2566^6^0^35^36^1417^0.5395^0.7480^6^Schläger der Felsfäuste^4306:4:7,213422:1:1,213547:1:1^
@@ -53,8 +57,10 @@ GoldScout-export 6^hx60b8lc5x1l^12
 6490^1^0^0^0^0^0.0000^0.0000^0^^7709:1:1^
 271961^6^0^2^3^1420^0.2613^0.5962^6^Eingesponnener Verlassener^^
 @i^159^Erfrischendes Quellwasser
+@i^929^Heiltrank
 @i^1074^Harte Spinnenbeinspitze
 @i^1081^Knuspriges Spinnenfleisch
+@i^1205^Melonensaft
 @i^1364^Struppige Lederweste
 @i^1366^Struppige Lederhose
 @i^1367^Struppige Lederstiefel
@@ -70,7 +76,9 @@ GoldScout-export 6^hx60b8lc5x1l^12
 @i^1686^Gesträubtes Schnurrbarthaar
 @i^1696^Geschwungene Raptorkralle
 @i^1711^Rolle der Ausdauer II
+@i^1789^Geflickte Lederarmschienen
 @i^1812^Kurzstielige Streitaxt
+@i^1818^Standard-Claymore
 @i^1996^Voodooband
 @i^2070^Darnassischer Blauschimmelkäse
 @i^2080^Hügelkämpferaxt des Champions
@@ -103,8 +111,10 @@ GoldScout-export 6^hx60b8lc5x1l^12
 @i^3365^Ausgefranste Armschienen
 @i^3385^Geringer Manatrank
 @i^3402^Weicher Fellflicken
+@i^3467^Glanzloser Eisenschlüssel
 @i^3476^Graubärenzunge
 @i^3477^Krabblersekret
+@i^3499^Polierter goldener Schlüssel
 @i^3685^Raptorei
 @i^3702^Bärengallenblase
 @i^3730^Großbärenfleisch
@@ -156,8 +166,10 @@ GoldScout-export 6^hx60b8lc5x1l^12
 @i^274291^Polierte Schädelkappe
 @i^278225^Chirurgische Spinnenseide
 @q^159^1:0:0
+@q^929^1:0:0
 @q^1074^0:15:0
 @q^1081^1:7:1
+@q^1205^1:0:0
 @q^1364^0:4:0
 @q^1366^0:4:0
 @q^1367^0:4:0
@@ -173,7 +185,9 @@ GoldScout-export 6^hx60b8lc5x1l^12
 @q^1686^0:15:0
 @q^1696^0:15:0
 @q^1711^1:0:0
+@q^1789^0:4:0
 @q^1812^0:2:0
+@q^1818^0:2:0
 @q^1996^2:4:0
 @q^2070^1:0:0
 @q^2080^2:2:0
@@ -206,8 +220,10 @@ GoldScout-export 6^hx60b8lc5x1l^12
 @q^3365^0:4:0
 @q^3385^1:0:0
 @q^3402^0:15:0
+@q^3467^1:13:0
 @q^3476^1:12:0
 @q^3477^1:12:0
+@q^3499^1:13:0
 @q^3685^1:7:1
 @q^3702^0:15:0
 @q^3730^1:7:1
@@ -2019,12 +2035,16 @@ GoldScout-export 6^hx60b8lc5x1l^12
 @a^1890^226:4,246:8
 @a^1919^247:1
 @a^1934^207:3
-@a^2261^175:2,193:1,195:5
+@a^2244^156:1,175:2
+@a^2260^175:4,176:1
+@a^2261^175:10,193:1,195:8
 @a^2349^192:1
 @a^2350^50:1,51:2,52:1,91:1,93:1,113:1
 @a^2351^51:2,70:1,71:1,72:1,91:1,93:2,111:2,113:1,131:3,132:1,133:1
 @a^2354^129:1,130:3,149:1,150:1,170:2,171:1
 @a^2384^150:1
+@a^2427^175:1
+@a^2428^175:1
 @a^2563^193:2,194:2,213:2
 @a^2565^251:1,252:2,271:3,272:4,309:1
 @a^2566^290:3,310:3

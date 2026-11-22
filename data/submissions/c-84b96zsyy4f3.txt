@@ -1,4 +1,5 @@
-GoldScout-export 6^84b96zsyy4f3^3
+GoldScout-export 6^84b96zsyy4f3^4
+3560^1^0^26^26^1441^0.3217^0.3266^1^Guarda de sanación^^
 3743^1^0^24^24^1440^0.5567^0.6318^1^Guerrero Maderiza^^
 3748^1^0^24^24^1440^0.5631^0.6352^1^Chamán Maderiza^2592:1:2,4538:1:1^
 3758^28^0^25^26^1440^0.6755^0.5348^28^Sátiro Putredor^1205:1:1,2290:1:1,2589:1:2,2592:7:11,3770:3:3,4306:2:2,5481:9:9,16653:1:1^
@@ -8,6 +9,19 @@ GoldScout-export 6^84b96zsyy4f3^3
 3809^2^0^21^22^1440^0.4278^0.6365^2^Oso de Vallefresno^2940:2:2,3730:1:1^
 3810^1^0^26^26^1440^0.6903^0.5186^1^Oso viejo de Vallefresno^^
 3917^12^0^23^25^1440^0.4702^0.6895^12^Elemental de agua podrida^5447:2:2,5448:4:4,9451:5:12^
+4093^13^0^25^26^1441^0.4464^0.3968^13^Vaquero Galak^3770:1:1,4306:5:8,8186:1:1^
+4094^12^0^24^25^1441^0.4318^0.3905^12^Explorador Galak^2592:3:4,4306:5:7,262888:1:1^
+4096^10^0^24^25^1441^0.4493^0.3953^10^Cazavientos Galak^1205:2:2,2592:1:2,4306:3:5^
+4114^1^0^28^28^1441^0.5399^0.4512^1^Batidor Gravamorro^1783:1:1,4538:1:1^
+4117^3^0^25^26^1441^0.4324^0.3934^3^Serpiente nubosa^17056:2:2^
+4119^4^0^27^29^1441^0.5582^0.5126^4^Serpiente nubosa viejo^17056:3:3^
+4124^1^0^28^28^1441^0.5087^0.4428^1^Puma de las Agujas^5136:1:1^
+10617^1^0^26^26^1441^0.3916^0.3263^1^Mensajero Galak^12564:1:1^
+10758^2^0^25^26^1441^0.3649^0.3321^2^Bandida Tótem Siniestro^4306:1:2^
+10759^2^0^26^27^1441^0.3535^0.3658^2^Vapuleadora Tótem Siniestro^1478:1:1,2592:1:1^
+10760^7^0^25^27^1441^0.3592^0.3391^7^Geomántica Tótem Siniestro^3770:1:1,4306:1:2^
+10761^3^0^28^28^1441^0.3697^0.3591^3^Atracador Tótem Siniestro^2592:2:2^
+10896^1^0^29^29^1441^0.3809^0.2668^1^Arnak Tótem Siniestro^12884:1:1^
 12677^1^0^28^28^1440^0.6109^0.5128^1^Shadumbra^16304:1:1^
 12678^1^0^25^25^1440^0.3987^0.6530^1^Ursangous^11406:1:1,16303:1:1^
 12759^1^0^27^27^1440^0.4661^0.7077^1^Tideress^16408:1:1^
@@ -22,6 +36,7 @@ GoldScout-export 6^84b96zsyy4f3^3
 @i^1081^Carne de araña crujiente
 @i^1205^Zumo de melón
 @i^1475^Glándula de veneno pequeña
+@i^1478^Pergamino de Protección II
 @i^1783^Guantes a punto de cruz
 @i^1807^Guantes de cuero fuerte
 @i^2290^Pergamino de Intelecto II
@@ -39,13 +54,17 @@ GoldScout-export 6^84b96zsyy4f3^3
 @i^4306^Paño de seda
 @i^4538^Sandía Vidrota
 @i^4633^Arcón de bronce pesado
+@i^5136^Oreja peluda rasgada
 @i^5447^Brazal elemental dañado
 @i^5448^Brazal elemental fracturado
 @i^5465^Pata de araña pequeña
 @i^5481^Cuernos de sátiro
 @i^6530^Reptadores nocturnos
+@i^8186^Varita funesta
 @i^9451^Agua burbujeante
 @i^11406^Cadáver de oso en descomposición
+@i^12564^Nota de asesinato
+@i^12884^Pezuña de Arnak
 @i^16303^Pata de Ursangous
 @i^16304^Cabeza de Shadumbra
 @i^16408^Globo de agua contaminada
@@ -57,6 +76,8 @@ GoldScout-export 6^84b96zsyy4f3^3
 @i^16653^Manual de instrucciones de trituradora: Página 9
 @i^16654^Manual de instrucciones de trituradora: Página 10
 @i^16656^Manual de instrucciones de trituradora: Página 12
+@i^17056^Pluma ligera
+@i^262888^Libranza del oficial sellada
 @i^273001^Muestra de toxina de altopenumbra
 @i^273181^Seda cristalina
 @q^804^1:1:0
@@ -64,6 +85,7 @@ GoldScout-export 6^84b96zsyy4f3^3
 @q^1081^1:7:1
 @q^1205^1:0:0
 @q^1475^1:7:1
+@q^1478^1:0:0
 @q^1783^0:4:0
 @q^1807^0:4:0
 @q^2290^1:0:0
@@ -81,13 +103,17 @@ GoldScout-export 6^84b96zsyy4f3^3
 @q^4306^1:7:1
 @q^4538^1:0:0
 @q^4633^2:15:0
+@q^5136^0:15:0
 @q^5447^0:15:0
 @q^5448^0:15:0
 @q^5465^1:7:1
 @q^5481^1:12:0
 @q^6530^1:0:0
+@q^8186^2:2:0
 @q^9451^1:0:0
 @q^11406^0:15:0
+@q^12564^1:12:0
+@q^12884^1:0:0
 @q^16303^2:12:0
 @q^16304^2:12:0
 @q^16408^2:12:0
@@ -99,10 +125,13 @@ GoldScout-export 6^84b96zsyy4f3^3
 @q^16653^1:12:0
 @q^16654^1:12:0
 @q^16656^1:12:0
+@q^17056^1:15:1
+@q^262888^3:0:0
 @q^273001^1:12:0
 @q^273181^1:12:0
 @m^1412^Mulgore
 @m^1440^Vallefresno
+@m^1441^Las Mil Agujas
 @c^118^
 @c^724^
 @c^733^
@@ -791,6 +820,7 @@ GoldScout-export 6^84b96zsyy4f3^3
 @c^285280^
 @c^285281^
 @c^286152^
+@a^3560^126:1
 @a^3743^251:1
 @a^3748^251:1
 @a^3758^213:23,233:5
@@ -800,6 +830,19 @@ GoldScout-export 6^84b96zsyy4f3^3
 @a^3809^248:2
 @a^3810^213:1
 @a^3917^269:10,289:2
+@a^4093^127:1,147:1,148:4,168:1,169:6
+@a^4094^127:1,148:6,168:2,169:3
+@a^4096^147:1,148:3,169:6
+@a^4114^190:1
+@a^4117^127:2,210:1
+@a^4119^211:4
+@a^4124^170:1
+@a^10617^127:1
+@a^10758^107:1,146:1
+@a^10759^126:1,167:1
+@a^10760^107:3,146:3,147:1
+@a^10761^107:1,146:1,167:1
+@a^10896^107:1
 @a^12677^212:1
 @a^12678^267:1
 @a^12759^289:1

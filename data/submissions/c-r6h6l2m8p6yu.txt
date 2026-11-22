@@ -1,4 +1,4 @@
-GoldScout-export 6^r6h6l2m8p6yu^6
+GoldScout-export 6^r6h6l2m8p6yu^7
 36^13^0^11^12^1436^0.5612^0.3452^13^Harvest Golem^732:1:1,814:3:3,1274:1:1,2763:1:1,2976:1:1,3374:1:1,4359:1:1,9752:1:1,211786:1:1,255007:1:1,255010:1:1^
 95^1^0^11^11^1436^0.5169^0.4654^1^Defias Smuggler^1179:1:1^
 114^34^0^14^15^1436^0.5408^0.3271^34^Harvest Watcher^732:12:12,814:11:11,1274:10:10,1735:1:1,1737:1:1,4359:2:2,4361:4:4,248685:1:1,255007:12:12,255010:4:4^
@@ -32,6 +32,15 @@ GoldScout-export 6^r6h6l2m8p6yu^6
 3467^1^0^16^16^1413^0.6404^0.4690^1^Baron Longshore^5084:1:1^
 4127^2^0^16^16^1413^0.5245^0.4375^2^Hecklefang Hyena^3301:2:2^
 4316^2^0^13^13^1413^0.5356^0.4336^2^Kolkar Packhound^3299:1:1,3300:1:1,15485:1:1^
+11318^8^0^0^0^0^0.0000^0.0000^0^^1505:1:1,2589:3:8,2763:1:1,2778:1:1,4569:1:1^
+11319^3^0^0^0^0^0.0000^0.0000^0^^1506:1:1,1511:1:1,2589:2:3,2632:1:1,4681:1:1^
+11320^1^0^0^0^0^0.0000^0.0000^0^^3676:1:1^
+11321^1^0^0^0^0^0.0000^0.0000^0^^4687:1:1^
+11322^3^0^0^0^0^0.0000^0.0000^0^^1510:1:1,15011:1:1,15304:1:1^
+11323^5^0^0^0^0^0.0000^0.0000^0^^1179:1:1,1502:1:1,1515:2:2,2287:1:1,2589:1:5^
+11324^3^0^0^0^0^0.0000^0.0000^0^^2589:2:6,2778:1:1^
+11519^1^0^0^0^0^0.0000^0.0000^0^^273005:1:1^
+11520^1^0^0^0^0^0.0000^0.0000^0^^14540:1:1^
 @i^555^Rough Vulture Feathers
 @i^723^Goretusk Liver
 @i^729^Stringy Vulture Meat
@@ -46,8 +55,11 @@ GoldScout-export 6^r6h6l2m8p6yu^6
 @i^858^Lesser Healing Potion
 @i^1179^Ice Cold Milk
 @i^1274^Hops
+@i^1502^Warped Leather Belt
 @i^1505^Warped Cloak
+@i^1506^Warped Leather Gloves
 @i^1510^Heavy Hammer
+@i^1511^Commoner's Sword
 @i^1513^Old Greatsword
 @i^1515^Rough Wooden Staff
 @i^1732^Worn Mail Bracers
@@ -58,7 +70,7 @@ GoldScout-export 6^r6h6l2m8p6yu^6
 @i^2140^Carving Knife of Arcane Protection
 @i^2287^Haunch of Meat
 @i^2589^Linen Cloth
-@i^2632^Curved Dagger of the Eagle
+@i^2632^Curved Dagger of Magic
 @i^2673^Coyote Meat
 @i^2677^Boar Ribs
 @i^2763^Fisherman Knife
@@ -74,11 +86,15 @@ GoldScout-export 6^r6h6l2m8p6yu^6
 @i^3301^Sharp Canine
 @i^3374^Calico Belt
 @i^3399^Vulture Talon
+@i^3676^Slimy Ichor
 @i^4359^Handful of Copper Bolts
 @i^4361^Copper Tube
 @i^4555^Thick Scaly Tail
 @i^4562^Severing Axe of the Monkey
+@i^4569^Staunch Hammer of Healing
+@i^4681^Brackwater Girdle
 @i^4683^Spellbinder Cloak
+@i^4687^Barbaric Cloth Belt
 @i^4757^Cracked Egg Shells
 @i^4775^Cracked Bill
 @i^5030^Centaur Bracers
@@ -100,6 +116,9 @@ GoldScout-export 6^r6h6l2m8p6yu^6
 @i^7097^Leg Meat
 @i^7350^Disciple's Bracers
 @i^9752^Nomad Bands
+@i^14540^Taragaman the Hungerer's Heart
+@i^15011^Lupine Cord of Fire Protection
+@i^15304^Grizzly Jerkin of the Monkey
 @i^15485^War Torn Pants of Arcane Protection
 @i^17056^Light Feather
 @i^211780^Scroll: KWYJIBO
@@ -110,6 +129,7 @@ GoldScout-export 6^r6h6l2m8p6yu^6
 @i^254548^Longshore Murloc Gill
 @i^255007^Golem Isospring
 @i^255010^Harvester Gyrostabilizer
+@i^273005^Satyrskin Cloak
 @q^555^0:15:0
 @q^723^1:7:1
 @q^729^1:7:1
@@ -124,8 +144,11 @@ GoldScout-export 6^r6h6l2m8p6yu^6
 @q^858^1:0:0
 @q^1179^1:0:0
 @q^1274^1:12:0
+@q^1502^0:4:0
 @q^1505^0:4:0
+@q^1506^0:4:0
 @q^1510^0:2:0
+@q^1511^0:2:0
 @q^1513^0:2:0
 @q^1515^0:2:0
 @q^1732^0:4:0
@@ -152,11 +175,15 @@ GoldScout-export 6^r6h6l2m8p6yu^6
 @q^3301^0:15:0
 @q^3374^0:4:0
 @q^3399^0:15:0
+@q^3676^0:15:0
 @q^4359^1:7:1
 @q^4361^1:7:1
 @q^4555^0:15:0
 @q^4562^2:2:0
+@q^4569^2:2:0
+@q^4681^1:4:0
 @q^4683^1:4:0
+@q^4687^1:4:0
 @q^4757^0:15:0
 @q^4775^0:15:0
 @q^5030^1:12:0
@@ -178,6 +205,9 @@ GoldScout-export 6^r6h6l2m8p6yu^6
 @q^7097^1:0:0
 @q^7350^1:4:0
 @q^9752^1:4:0
+@q^14540^1:12:0
+@q^15011^2:4:0
+@q^15304^2:4:0
 @q^15485^2:4:0
 @q^17056^1:15:1
 @q^211780^1:0:0
@@ -188,6 +218,7 @@ GoldScout-export 6^r6h6l2m8p6yu^6
 @q^254548^1:12:0
 @q^255007^1:7:1
 @q^255010^1:12:0
+@q^273005^3:4:0
 @m^1413^The Barrens
 @m^1436^Westfall
 @c^118^
