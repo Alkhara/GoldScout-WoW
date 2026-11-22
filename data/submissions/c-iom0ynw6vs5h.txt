@@ -1,4 +1,4 @@
-GoldScout-export 6^iom0ynw6vs5h^12
+GoldScout-export 6^iom0ynw6vs5h^13
 92^3^0^39^40^1418^0.3776^0.7456^3^Rock Elemental^4784:2:2,7848:1:1^
 157^42^0^14^15^1436^0.4057^0.5524^42^Goretusk^723:16:16,731:14:14,769:34:53,771:13:13,2677:8:8,3171:6:6,3172:14:14,211786:1:1^
 454^9^0^12^13^1436^0.3803^0.3034^9^Young Goretusk^723:3:3,731:3:3,769:7:7,771:1:1,2677:4:4,3171:2:2,3172:3:3,6267:1:1^
@@ -32,6 +32,10 @@ GoldScout-export 6^iom0ynw6vs5h^12
 2831^15^0^39^41^1418^0.1709^0.6227^15^Giant Buzzard^1464:4:4,3404:4:4,5116:3:3,5636:1:1,5829:1:1,7847:5:5,11416:4:4,11418:1:1,12037:4:4^
 2931^1^0^56^56^1418^0.3532^0.6767^1^Zaricotl^10235:1:1^
 2944^1^0^42^42^1418^0.2710^0.5659^1^Boss Tho'grun^4640:1:1^
+3099^41^0^6^7^1411^0.5001^0.4666^41^Dire Mottled Boar^769:41:41,771:4:4,774:2:2,3171:6:6,211785:1:1^
+3100^26^0^8^9^1411^0.4741^0.2181^26^Elder Mottled Boar^769:22:22,771:3:3,3171:9:9,8182:1:1^
+3125^4^0^5^6^1411^0.5783^0.4605^4^Clattering Scorpid^4867:2:2,5466:3:3^
+3126^3^0^7^8^1411^0.4366^0.3309^3^Armored Scorpid^4867:1:1,4872:1:1,5466:1:1^
 3947^2^0^0^0^0^0.0000^0.0000^0^^2287:1:1,2592:1:2^
 3976^1^0^0^0^0^0.0000^0.0000^0^^10330:1:1^
 3977^1^0^0^0^0^0.0000^0.0000^0^^7721:1:1^
@@ -157,6 +161,8 @@ GoldScout-export 6^iom0ynw6vs5h^12
 262473^14^0^39^40^2548^0.2996^0.7142^14^Cinderscale Whelp^4402:2:2,4460:7:7,6444:4:4,8146:1:1^
 262477^10^0^41^42^2548^0.2984^0.7244^10^Cinderscale Warrior^1645:1:1,4024:1:1,14606:1:1^
 263681^4^0^41^42^2652^0.5573^0.6829^4^Bear^8146:1:1,11408:1:1,260348:1:1,260349:1:1,260350:1:1,260352:1:1^
+266849^2^0^5^6^1411^0.5204^0.5547^2^Ridgeshade Lurker^1476:1:1,2590:1:1,5465:1:2^
+266850^1^0^6^6^1411^0.5272^0.6086^1^Ridgeshade Creeper^2590:1:1,5465:1:2^
 268831^2^0^39^40^2548^0.7583^0.3785^2^Plains Prowler^4582:2:2,5637:1:1^
 269756^1^0^42^42^1418^0.3120^0.7545^1^Malevolent Mirage^278744:1:1^
 271732^1^0^0^0^0^0.0000^0.0000^0^^1697:1:1^
@@ -171,6 +177,7 @@ GoldScout-export 6^iom0ynw6vs5h^12
 @i^769^Chunk of Boar Meat
 @i^770^Pointy Crocolisk Tooth
 @i^771^Chipped Boar Tusk
+@i^774^Malachite
 @i^814^Flask of Oil
 @i^863^Gloom Reaper of Strength
 @i^864^Knightly Longsword of the Whale
@@ -179,6 +186,7 @@ GoldScout-export 6^iom0ynw6vs5h^12
 @i^1205^Melon Juice
 @i^1207^Murphstar of the Gorilla
 @i^1464^Buzzard Talon
+@i^1476^Snapped Spider Limb
 @i^1477^Scroll of Agility II
 @i^1645^Moonberry Juice
 @i^1686^Bristly Whisker
@@ -205,6 +213,7 @@ GoldScout-export 6^iom0ynw6vs5h^12
 @i^2295^Large Boar Tusk
 @i^2455^Minor Mana Potion
 @i^2589^Linen Cloth
+@i^2590^Forest Spider Webbing
 @i^2592^Wool Cloth
 @i^2672^Stringy Wolf Meat
 @i^2673^Coyote Meat
@@ -272,12 +281,16 @@ GoldScout-export 6^iom0ynw6vs5h^12
 @i^4735^Mistscape Cloak
 @i^4775^Cracked Bill
 @i^4784^Lifeless Stone
+@i^4867^Broken Scorpid Leg
+@i^4872^Dry Scorpid Eye
 @i^5116^Long Tail Feather
 @i^5121^Dirty Kodo Scale
 @i^5122^Thick Kodo Hair
 @i^5133^Seeping Gizzard
 @i^5202^Corsair's Overshirt
 @i^5429^A Pretty Rock
+@i^5465^Small Spider Leg
+@i^5466^Scorpid Stinger
 @i^5524^Thick-shelled Clam
 @i^5569^Seaweed
 @i^5635^Sharp Claw
@@ -309,6 +322,7 @@ GoldScout-export 6^iom0ynw6vs5h^12
 @i^8141^Chromite Greaves
 @i^8146^Wicked Claw
 @i^8150^Deeprock Salt
+@i^8182^Pellet Rifle
 @i^8365^Raw Mithril Head Trout
 @i^9260^Volatile Rum
 @i^9285^Field Plate Vambraces of the Defender
@@ -366,6 +380,7 @@ GoldScout-export 6^iom0ynw6vs5h^12
 @i^21151^Rumsey Rum Black Label
 @i^21153^Raw Greater Sagefish
 @i^21228^Mithril Bound Trunk
+@i^211785^Scroll: CWAL
 @i^211786^Scroll: CHAP BALK WELLES
 @i^213543^Scroll: UPDOG
 @i^213544^Scroll: TOPAZ YORAK
@@ -400,6 +415,7 @@ GoldScout-export 6^iom0ynw6vs5h^12
 @q^769^1:7:1
 @q^770^0:15:0
 @q^771^0:15:0
+@q^774^2:7:1
 @q^814^1:7:1
 @q^863^2:2:0
 @q^864^2:2:0
@@ -408,6 +424,7 @@ GoldScout-export 6^iom0ynw6vs5h^12
 @q^1205^1:0:0
 @q^1207^2:2:0
 @q^1464^0:15:0
+@q^1476^0:15:0
 @q^1477^1:0:0
 @q^1645^1:0:0
 @q^1686^0:15:0
@@ -434,6 +451,7 @@ GoldScout-export 6^iom0ynw6vs5h^12
 @q^2295^0:15:0
 @q^2455^1:0:0
 @q^2589^1:7:1
+@q^2590^0:15:0
 @q^2592^1:7:1
 @q^2672^1:7:1
 @q^2673^1:7:1
@@ -501,12 +519,16 @@ GoldScout-export 6^iom0ynw6vs5h^12
 @q^4735^2:4:0
 @q^4775^0:15:0
 @q^4784^0:15:0
+@q^4867^0:15:0
+@q^4872^0:15:0
 @q^5116^1:7:1
 @q^5121^0:15:0
 @q^5122^0:15:0
 @q^5133^0:15:0
 @q^5202^3:4:0
 @q^5429^0:15:0
+@q^5465^1:7:1
+@q^5466^1:7:1
 @q^5524^1:7:0
 @q^5569^0:15:0
 @q^5635^1:7:1
@@ -538,6 +560,7 @@ GoldScout-export 6^iom0ynw6vs5h^12
 @q^8141^2:4:0
 @q^8146^1:7:1
 @q^8150^1:7:1
+@q^8182^1:2:0
 @q^8365^1:7:1
 @q^9260^1:0:0
 @q^9285^2:4:0
@@ -595,6 +618,7 @@ GoldScout-export 6^iom0ynw6vs5h^12
 @q^21151^1:0:0
 @q^21153^1:7:1
 @q^21228^1:15:0
+@q^211785^1:0:0
 @q^211786^1:0:0
 @q^213543^1:0:0
 @q^213544^1:0:0
@@ -621,6 +645,7 @@ GoldScout-export 6^iom0ynw6vs5h^12
 @q^271100^1:12:0
 @q^278744^2:12:0
 @q^279934^1:12:0
+@m^1411^Durotar
 @m^1413^The Barrens
 @m^1414^Kalimdor
 @m^1418^Badlands
@@ -1372,6 +1397,10 @@ GoldScout-export 6^iom0ynw6vs5h^12
 @a^2831^223:6,242:1,243:6,287:1,303:1
 @a^2931^267:1
 @a^2944^225:1
+@a^3099^128:1,130:5,148:1,150:1,168:5,169:4,171:2,188:3,189:2,190:4,191:1,210:1,230:5,231:2,250:3,270:1
+@a^3100^50:1,68:2,69:2,70:5,88:5,89:2,108:6,110:1,111:2
+@a^3125^171:1,191:3
+@a^3126^108:2,168:1
 @a^4323^271:1,308:2,309:1,328:8
 @a^4324^288:3,290:1,307:1,308:4,309:1,328:6,329:1
 @a^4329^287:1,309:1,328:2
@@ -1450,6 +1479,8 @@ GoldScout-export 6^iom0ynw6vs5h^12
 @a^262473^266:1,285:6,286:7
 @a^262477^285:7,286:3
 @a^263681^249:1,251:1,292:1,311:1
+@a^266849^210:1,250:1
+@a^266850^250:1
 @a^268831^154:1,155:1
 @a^269756^306:1
 @a^272315^158:1

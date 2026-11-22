@@ -1,4 +1,4 @@
-GoldScout-export 6^og1klawpp445^44
+GoldScout-export 6^og1klawpp445^45
 3^2^0^24^25^1431^0.2190^0.3446^2^Flesh Eater^887:1:1,1129:1:1^
 48^23^0^21^22^1431^0.7894^0.7114^23^Skeletal Warrior^929:1:1,1748:1:1,1820:1:1,2378:3:3,2592:5:10,4306:1:1,4606:1:1,248685:1:1,251336:1:1^
 202^17^0^23^24^1431^0.3909^0.5063^17^Skeletal Horror^2589:2:3,2592:3:4,4306:2:2,4606:1:1^
@@ -29,6 +29,7 @@ GoldScout-export 6^og1klawpp445^44
 644^1^0^0^0^0^0.0000^0.0000^0^^1210:1:1,2589:1:1,273289:1:1^
 646^1^0^0^0^0^0.0000^0.0000^0^^6585:1:1^
 657^13^0^0^0^0^0.0000^0.0000^0^^935:1:1,2078:1:1,2589:1:1,2592:4:14,8492:1:1^
+682^1^0^32^32^1434^0.4256^0.1516^1^Stranglethorn Tiger^1686:1:1,12202:1:1^
 785^4^0^28^29^1431^0.1573^0.3591^4^Skeletal Warder^1478:1:1,4306:1:1^
 787^2^0^26^27^1431^0.1651^0.3448^2^Skeletal Healer^4306:1:1^
 824^13^0^15^16^1415^0.4108^0.7952^13^Defias Digger^414:2:2,1739:1:1,2073:1:1,2589:1:2,2592:3:4,2838:1:1,7997:1:1^
@@ -38,6 +39,9 @@ GoldScout-export 6^og1klawpp445^44
 920^2^0^30^31^1431^0.5530^0.7927^2^Nightbane Tainted One^1809:1:1^
 923^7^0^23^24^1431^0.5545^0.5796^7^Young Black Ravager^1015:4:4,3301:3:3,5635:1:1^
 930^1^0^24^25^1431^0.8035^0.5174^1^Black Widow Hatchling^2251:1:1,3174:1:1,4428:1:1^
+937^5^0^32^33^1434^0.4526^0.1060^5^Kurzen Jungle Fighter^3815:1:1,4306:1:1^
+938^2^0^34^35^1434^0.4441^0.0840^2^Kurzen Commando^^
+940^2^0^32^33^1434^0.4502^0.1177^2^Kurzen Medicine Man^2633:1:1,3818:1:1,4306:1:1,213545:1:1^
 949^2^0^26^26^1431^0.2042^0.4016^2^Carrion Recluse^878:1:1,2251:2:2,3174:1:1^
 1007^9^0^20^21^1437^0.6335^0.6817^9^Mosshide Gnoll^2589:1:2,2592:5:7,4306:1:1^
 1008^1^0^21^22^1437^0.6262^0.6850^1^Mosshide Mongrel^^
@@ -61,7 +65,11 @@ GoldScout-export 6^og1klawpp445^44
 1053^11^0^29^30^1437^0.5623^0.2303^11^Dark Iron Tunneler^929:1:1,1205:2:2,1756:1:1,1829:1:1,2077:1:1,2221:1:1,2592:2:3,3385:1:1,4306:2:3,211854:1:1^
 1054^4^0^30^31^1437^0.6188^0.2655^4^Dark Iron Demolitionist^4306:2:3,248693:1:1^
 1057^7^0^27^28^1437^0.4709^0.4578^7^Dragonmaw Bonewarder^3041:1:1,3337:2:2,3770:2:2,4306:1:2^
+1095^1^0^36^36^1434^0.4348^0.1837^1^Venture Co. Workboss^^
+1096^5^0^35^36^1434^0.4361^0.1781^5^Venture Co. Geologist^1630:2:2,3771:1:1,4106:1:1,4306:1:1^
+1097^2^0^34^35^1434^0.4338^0.1858^2^Venture Co. Mechanic^1630:1:1,4306:1:1,8746:1:1^
 1111^3^0^21^22^1437^0.5401^0.6395^3^Leech Stalker^2251:2:2,3174:2:2,4428:1:1,280319:1:1^
+1150^1^0^31^31^1434^0.3997^0.1152^1^River Crocolisk^4053:1:1,12037:1:1^
 1157^8^0^26^27^1437^0.1393^0.3005^8^Cursed Sailor^1712:1:1,2592:1:2,4306:3:4^
 1158^4^0^27^28^1437^0.1400^0.3007^4^Cursed Marine^2592:2:4^
 1159^1^0^29^29^1437^0.1410^0.3069^1^First Mate Snellig^3619:1:1^
@@ -325,6 +333,8 @@ GoldScout-export 6^og1klawpp445^44
 @i^1504^Warped Leather Bracers
 @i^1511^Commoner's Sword
 @i^1529^Jade
+@i^1630^Broken Electro-lantern
+@i^1686^Bristly Whisker
 @i^1696^Curved Raptor Talon
 @i^1697^Keen Raptor Tooth
 @i^1701^Curved Basilisk Claw
@@ -411,6 +421,7 @@ GoldScout-export 6^og1klawpp445^44
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2608^Threshadon Ambergris
+@i^2633^Jungle Remedy
 @i^2657^Red Leather Bag
 @i^2674^Crawler Meat
 @i^2764^Small Dagger
@@ -482,8 +493,11 @@ GoldScout-export 6^og1klawpp445^44
 @i^3804^Hardened Leather Gloves
 @i^3815^Double Mail Vest
 @i^3817^Reinforced Buckler
+@i^3818^Fadeleaf
 @i^3857^Coal
+@i^4053^Large River Crocolisk Skin
 @i^4093^Large Basilisk Tail
+@i^4106^Tumbled Crystal
 @i^4294^Pattern: Hillman's Belt
 @i^4300^Pattern: Guardian Leather Bracers
 @i^4306^Silk Cloth
@@ -596,6 +610,7 @@ GoldScout-export 6^og1klawpp445^44
 @i^7997^Red Defias Mask
 @i^8181^Hunting Rifle
 @i^8492^Parrot Cage (Green Wing Macaw)
+@i^8746^Interlaced Cowl
 @i^9451^Bubbling Water
 @i^9766^Greenweave Sash of the Whale
 @i^9768^Greenweave Bracers of Intellect
@@ -622,6 +637,7 @@ GoldScout-export 6^og1klawpp445^44
 @i^12008^Savannah Ring of Regeneration
 @i^12037^Mystery Meat
 @i^12054^Demon Band
+@i^12202^Tiger Meat
 @i^12203^Red Wolf Meat
 @i^12204^Heavy Kodo Meat
 @i^13041^Guardian Blade
@@ -669,6 +685,7 @@ GoldScout-export 6^og1klawpp445^44
 @i^21071^Raw Sagefish
 @i^21113^Watertight Trunk
 @i^211854^Scroll: OMIT KESA
+@i^213545^Scroll: PEATCHY ATTAX
 @i^213546^Scroll: SHOOBEEDOOP
 @i^248683^Waylaid Crate: Apprentice Ore
 @i^248684^Waylaid Crate: Apprentice Textiles
@@ -748,6 +765,8 @@ GoldScout-export 6^og1klawpp445^44
 @q^1504^0:4:0
 @q^1511^0:2:0
 @q^1529^2:7:1
+@q^1630^0:15:0
+@q^1686^0:15:0
 @q^1696^0:15:0
 @q^1697^0:15:0
 @q^1701^0:15:0
@@ -834,6 +853,7 @@ GoldScout-export 6^og1klawpp445^44
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2608^0:15:0
+@q^2633^1:0:0
 @q^2657^1:1:0
 @q^2674^1:7:1
 @q^2764^0:2:0
@@ -905,8 +925,11 @@ GoldScout-export 6^og1klawpp445^44
 @q^3804^0:4:0
 @q^3815^0:4:0
 @q^3817^0:4:0
+@q^3818^1:7:1
 @q^3857^1:7:1
+@q^4053^1:12:0
 @q^4093^0:15:0
+@q^4106^1:12:0
 @q^4294^2:9:0
 @q^4300^2:9:0
 @q^4306^1:7:1
@@ -1019,6 +1042,7 @@ GoldScout-export 6^og1klawpp445^44
 @q^7997^0:4:0
 @q^8181^1:2:0
 @q^8492^1:15:0
+@q^8746^0:4:0
 @q^9451^1:0:0
 @q^9766^2:4:0
 @q^9768^2:4:0
@@ -1045,6 +1069,7 @@ GoldScout-export 6^og1klawpp445^44
 @q^12008^2:4:0
 @q^12037^1:7:1
 @q^12054^2:4:0
+@q^12202^1:7:1
 @q^12203^1:7:1
 @q^12204^1:7:1
 @q^13041^3:2:0
@@ -1092,6 +1117,7 @@ GoldScout-export 6^og1klawpp445^44
 @q^21071^1:7:1
 @q^21113^1:15:0
 @q^211854^1:0:0
+@q^213545^1:0:0
 @q^213546^1:0:0
 @q^248683^1:0:1
 @q^248684^1:0:1
@@ -2224,6 +2250,7 @@ GoldScout-export 6^og1klawpp445^44
 @a^594^308:2
 @a^604^104:4,105:1,122:1,123:2,124:2,125:5,144:6
 @a^628^112:2,113:1,251:1
+@a^682^68:1
 @a^785^123:1,143:3
 @a^787^123:1,143:1
 @a^824^308:13
@@ -2233,6 +2260,9 @@ GoldScout-export 6^og1klawpp445^44
 @a^920^311:2
 @a^923^113:1,231:1,249:1,250:3,251:1
 @a^930^216:1
+@a^937^29:1,48:1,49:3
+@a^938^28:2
+@a^940^48:1,49:1
 @a^949^144:1,163:1
 @a^1007^252:3,273:2,292:4
 @a^1008^272:1
@@ -2256,7 +2286,11 @@ GoldScout-export 6^og1klawpp445^44
 @a^1053^49:1,69:3,112:7
 @a^1054^112:4
 @a^1057^169:1,189:6
+@a^1095^68:1
+@a^1096^68:5
+@a^1097^68:2
 @a^1111^250:2,271:1
+@a^1150^47:1
 @a^1157^102:5,122:3
 @a^1158^102:2,122:2
 @a^1159^122:1

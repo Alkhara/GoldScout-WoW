@@ -1,4 +1,4 @@
-GoldScout-export 6^7xy7oeygltkz^12
+GoldScout-export 6^7xy7oeygltkz^13
 587^8^10^33^34^1434^0.3182^0.1756^8^Guerrier Bloodscalp^1519:2:2,2290:1:1,2730:1:1,3771:2:2,3901:2:2,3915:5:5,4306:2:4^1710:1:1,3771:1:1,5427:2:2
 588^4^4^34^35^1434^0.2314^0.1301^4^Eclaireur Bloodscalp^2592:1:3,4306:1:1^
 595^5^9^34^35^1434^0.2437^0.1227^5^Chasseur Bloodscalp^1708:1:1,2725:1:1,3771:1:1,3915:2:2,4306:2:3^5427:1:1
@@ -49,6 +49,10 @@ GoldScout-export 6^7xy7oeygltkz^12
 3099^7^0^6^7^1411^0.5157^0.5239^7^Sanglier tacheté redoutable^769:7:7,771:2:2,3171:1:1,211785:1:1^
 3125^1^0^5^5^1411^0.5566^0.7015^1^Scorpide cliquetant^4867:1:1^
 3560^2^0^34^37^1434^0.2439^0.1000^1^Gardien Guérisseur^^
+3653^1^0^0^0^0^0.0000^0.0000^0^^5523:1:1,6361:1:2,13245:1:1,253904:1:1^
+3669^1^0^0^0^0^0.0000^0.0000^0^^10410:1:1,252774:1:1^
+3674^1^0^0^0^0^0.0000^0.0000^0^^5125:1:1,5470:1:1,6448:1:1,14125:1:1^
+3840^16^0^0^0^0^0.0000^0.0000^0^^1179:1:1,1767:2:2,1794:1:1,2589:2:4,2592:2:2,2764:1:1,4537:2:2,9770:1:1,211855:1:1,248684:1:1^
 4113^0^4^28^29^0^0.0000^0.0000^0^Mineur Mufle-de-gravier^^3770:2:2,5375:1:1,16882:1:1
 4116^0^1^29^29^0^0.0000^0.0000^0^Géomètre Mufle-de-gravier^^16882:1:1
 4130^4^0^32^33^1441^0.6916^0.8179^4^Chercheur silithide^5853:1:1,5855:1:1,5877:2:2,6300:2:2^
@@ -87,7 +91,14 @@ GoldScout-export 6^7xy7oeygltkz^12
 4637^3^6^32^33^1443^0.7372^0.4735^3^Destructeur kolkar^254432:1:1^
 4670^3^0^31^32^1443^0.7466^0.1745^3^Voleur Fielfurie^3771:1:1,4306:1:2^
 4834^4^1^35^36^1445^0.4018^0.2629^4^Infiltrateur de Theramore^3786:1:1,4306:1:1^5431:1:1
+5053^4^0^0^0^0^0.0000^0.0000^0^^2924:2:2,3181:3:4,3401:3:6^
+5055^5^0^0^0^0^0.0000^0.0000^0^^4604:2:2,4605:2:2,4606:1:1^
+5056^1^0^0^0^0^0.0000^0.0000^0^^6444:1:1^
 5600^1^1^35^35^1443^0.7446^0.4891^1^Khan Dez'hepah^4306:1:2,6066:1:1^
+5755^2^0^0^0^0^0.0000^0.0000^0^^6444:2:2^
+5761^8^0^0^0^0^0.0000^0.0000^0^^1745:1:1,1770:1:1,6471:1:1,248703:1:1^
+5775^1^0^0^0^0^0.0000^0.0000^0^^1179:1:1,6631:1:1^
+8886^3^0^0^0^0^0.0000^0.0000^0^^6444:3:3,6470:1:1^
 11562^3^0^33^34^1443^0.2213^0.7552^3^Rampant Claquesec^3806:1:1,6362:2:4,248691:1:1^
 11563^1^0^34^34^1443^0.2119^0.7608^1^Pinceur Claquesec^^
 14230^1^0^38^38^1445^0.5745^0.1691^1^Pique-les-yeux^5847:1:1,7441:1:1,17058:1:1^
@@ -114,6 +125,7 @@ GoldScout-export 6^7xy7oeygltkz^12
 @i^864^Epée longue des chevaliers de protection contre les arcanes
 @i^1074^Patte d'araignée
 @i^1081^Chair croustillante d'araignée
+@i^1179^Lait glacé
 @i^1206^Agate mousse
 @i^1519^Oreille de Bloodscalp
 @i^1520^Sueur de troll
@@ -131,10 +143,14 @@ GoldScout-export 6^7xy7oeygltkz^12
 @i^1708^Nectar sucré
 @i^1710^Potion de soins supérieure
 @i^1734^Gants usés en mailles
+@i^1745^Haubergeon entrelacé
 @i^1758^Gants en anneaux renforcés
+@i^1767^Gants en canevas
+@i^1770^Gilet en canevas
 @i^1782^Cape à couture croisée
 @i^1785^Protège-épaules à couture croisée
 @i^1786^Gilet à couture croisée
+@i^1794^Pourpoint raccommodé en cuir
 @i^2251^Patte d'araignée fondante
 @i^2290^Parchemin d'Intelligence II
 @i^2589^Etoffe de lin
@@ -146,10 +162,14 @@ GoldScout-export 6^7xy7oeygltkz^12
 @i^2732^Les vertes collines de Strangleronce - Page 8
 @i^2738^Les vertes collines de Strangleronce - Page 14
 @i^2744^Les vertes collines de Strangleronce - Page 20
+@i^2764^Petite dague
 @i^2766^Stylet rapide
+@i^2924^Viande de crocilisque
 @i^3037^Arc courbe souple
 @i^3171^Défense de sanglier cassée
+@i^3181^Viande partiellement digérée
 @i^3182^Soie d'araignée
+@i^3401^Ecaille de crocilisque grossière
 @i^3601^Missive du Syndicat
 @i^3667^Viande de crocilisque tendre
 @i^3685^Oeuf de raptor
@@ -177,21 +197,28 @@ GoldScout-export 6^7xy7oeygltkz^12
 @i^4337^Soie d'araignée épaisse
 @i^4338^Etoffe de tisse-mage
 @i^4461^Peau de raptor
+@i^4537^Banane de Tel'Abim
 @i^4544^Pain épicé de Mulgore
 @i^4555^Epaisse queue écailleuse
 @i^4585^Mandibule d'araignée visqueuse
 @i^4586^Peau lisse de raptor
 @i^4587^Plumes de raptor tribales
+@i^4604^Tête de champignon sylvestre
+@i^4605^Champignon à pois rouges
+@i^4606^Morilles spongieuses
 @i^4633^Coffret lourd en bronze
 @i^4707^Ceinturon en écailles brillantes
 @i^4867^Patte de scorpide brisée
 @i^4999^Volonté d'Azora
+@i^5125^Ecaille chargée
 @i^5373^Charme de chance
 @i^5374^Petite montre gousset
 @i^5375^Bâton piquant
 @i^5427^Montre gousset grossière
 @i^5429^Un joli caillou
 @i^5431^Flasque vide
+@i^5470^Queue de lézard-tonnerre
+@i^5523^Petite palourde spiralée
 @i^5635^Griffe aiguisée
 @i^5637^Grand croc
 @i^5785^Ecailles de murloc épaisses
@@ -211,16 +238,24 @@ GoldScout-export 6^7xy7oeygltkz^12
 @i^6311^Poisson-chat de 22 livres
 @i^6358^Bouche-noire huileux
 @i^6359^Lutjan de nagefeu
+@i^6361^Thon arc-en-ciel cru
 @i^6362^Morue rochécaille crue
+@i^6444^Langue fourchue
+@i^6448^Dard
+@i^6470^Ecaille de déviant
+@i^6471^Ecaille de déviant parfaite
+@i^6631^Racine vivante
 @i^7441^Coiffe de sentinelle d'intelligence
 @i^8146^Serre cruelle
 @i^8365^Truite tête-mithril crue
 @i^8746^Capuche entrelacée
 @i^9760^Brassards de cadet
+@i^9770^Cape en tisse-vert du tigre
 @i^9801^Ceinture excellente du tigre
 @i^9809^Tunique excellente du singe
 @i^9811^Brassards fortifiés de protection contre la nature
 @i^10285^Soie des ténèbres
+@i^10410^Jambières du Croc
 @i^10457^Coquille d'Escargot de mer vide
 @i^11386^Oeil spongieux de basilic
 @i^12037^Viande mystère
@@ -228,6 +263,8 @@ GoldScout-export 6^7xy7oeygltkz^12
 @i^12202^Viande de tigre
 @i^12205^Viande d'araignée blanche
 @i^13005^Couverture d'Amy
+@i^13245^Carapace de Kresh
+@i^14125^Jambières rituelles d'endurance
 @i^14191^Mitaines d'invocateur de pluie d'endurance
 @i^14411^Gants en étoffe de pierre
 @i^15546^Cuirasse en écailles épaisses de la chouette
@@ -242,9 +279,14 @@ GoldScout-export 6^7xy7oeygltkz^12
 @i^210963^Clé de clairvoyant
 @i^211785^Parchemin : FIGERF
 @i^211854^Parchemin : OMIT KESA
+@i^211855^Parchemin : STHENIC LUNATE
+@i^248684^Caisse détournée : textiles d'apprenti
 @i^248691^Caisse détournée : plantes à fleurs d'expert
 @i^248694^Caisse détournée : curiosités d'expert
+@i^248703^Caisse détournée : lingots d'apprenti
 @i^251457^Plans : lance en acier
+@i^252774^Patron : armure totémique en cuir
+@i^253904^Patron : robe soyeuse filigranée
 @i^254432^Totem centaure sculpté
 @i^262889^Commission d'expert scellée
 @i^270866^Relique des Titans
@@ -262,6 +304,7 @@ GoldScout-export 6^7xy7oeygltkz^12
 @q^864^2:2:0
 @q^1074^0:15:0
 @q^1081^1:7:1
+@q^1179^1:0:0
 @q^1206^2:7:1
 @q^1519^1:12:0
 @q^1520^0:15:0
@@ -279,10 +322,14 @@ GoldScout-export 6^7xy7oeygltkz^12
 @q^1708^1:0:0
 @q^1710^1:0:0
 @q^1734^0:4:0
+@q^1745^0:4:0
 @q^1758^0:4:0
+@q^1767^0:4:0
+@q^1770^0:4:0
 @q^1782^0:4:0
 @q^1785^0:4:0
 @q^1786^0:4:0
+@q^1794^0:4:0
 @q^2251^1:7:1
 @q^2290^1:0:0
 @q^2589^1:7:1
@@ -294,10 +341,14 @@ GoldScout-export 6^7xy7oeygltkz^12
 @q^2732^1:12:0
 @q^2738^1:12:0
 @q^2744^1:12:0
+@q^2764^0:2:0
 @q^2766^0:2:0
+@q^2924^1:7:1
 @q^3037^2:2:0
 @q^3171^0:15:0
+@q^3181^0:15:0
 @q^3182^1:7:1
+@q^3401^0:15:0
 @q^3601^1:12:0
 @q^3667^1:7:1
 @q^3685^1:7:1
@@ -325,21 +376,28 @@ GoldScout-export 6^7xy7oeygltkz^12
 @q^4337^1:7:1
 @q^4338^1:7:1
 @q^4461^1:7:1
+@q^4537^1:0:0
 @q^4544^1:0:0
 @q^4555^0:15:0
 @q^4585^0:15:0
 @q^4586^0:15:0
 @q^4587^0:15:0
+@q^4604^1:0:0
+@q^4605^1:0:0
+@q^4606^1:0:0
 @q^4633^2:15:0
 @q^4707^2:4:0
 @q^4867^0:15:0
 @q^4999^2:4:0
+@q^5125^0:15:0
 @q^5373^1:15:1
 @q^5374^0:15:0
 @q^5375^0:15:0
 @q^5427^0:15:0
 @q^5429^0:15:0
 @q^5431^0:15:0
+@q^5470^1:7:1
+@q^5523^1:7:0
 @q^5635^1:7:1
 @q^5637^1:7:1
 @q^5785^1:7:1
@@ -359,16 +417,24 @@ GoldScout-export 6^7xy7oeygltkz^12
 @q^6311^1:15:0
 @q^6358^1:7:1
 @q^6359^1:7:1
+@q^6361^1:7:1
 @q^6362^1:7:1
+@q^6444^0:15:0
+@q^6448^3:2:0
+@q^6470^1:7:1
+@q^6471^1:7:1
+@q^6631^3:2:0
 @q^7441^2:4:0
 @q^8146^1:7:1
 @q^8365^1:7:1
 @q^8746^0:4:0
 @q^9760^1:4:0
+@q^9770^2:4:0
 @q^9801^2:4:0
 @q^9809^2:4:0
 @q^9811^2:4:0
 @q^10285^1:7:1
+@q^10410^3:4:0
 @q^10457^0:15:0
 @q^11386^0:15:0
 @q^12037^1:7:1
@@ -376,6 +442,8 @@ GoldScout-export 6^7xy7oeygltkz^12
 @q^12202^1:7:1
 @q^12205^1:7:1
 @q^13005^3:4:0
+@q^13245^3:4:0
+@q^14125^2:4:0
 @q^14191^2:4:0
 @q^14411^2:4:0
 @q^15546^2:4:0
@@ -390,9 +458,14 @@ GoldScout-export 6^7xy7oeygltkz^12
 @q^210963^1:13:0
 @q^211785^1:0:0
 @q^211854^1:0:0
+@q^211855^1:0:0
+@q^248684^1:0:1
 @q^248691^1:0:1
 @q^248694^1:0:1
+@q^248703^2:0:1
 @q^251457^2:9:0
+@q^252774^3:9:0
+@q^253904^3:9:0
 @q^254432^2:15:0
 @q^262889^3:0:0
 @q^270866^1:12:0

@@ -1,4 +1,6 @@
-GoldScout-export 6^kmz1k2bi5s0o^7
+GoldScout-export 6^kmz1k2bi5s0o^8
+2959^1^0^8^8^1412^0.5331^0.5288^1^Prairie Stalker^2672:1:1,4801:1:1^
+2976^1^0^7^7^1412^0.5201^0.5362^1^Venture Co. Laborer^117:1:1,1416:1:1^
 4632^2^0^30^31^1443^0.7133^0.3913^2^Kolkar Centaur^1708:1:1,4306:1:2^
 4681^1^0^38^38^1443^0.5589^0.7259^1^Mage Hunter^4582:1:1^
 4688^3^0^33^34^1443^0.4891^0.3473^3^Bonepaw Hyena^4582:2:2^
@@ -23,10 +25,13 @@ GoldScout-export 6^kmz1k2bi5s0o^7
 11577^11^0^35^37^1443^0.4267^0.5030^11^Whirlwind Stormwalker^7069:4:4,213543:1:1,248708:1:1^
 11578^4^0^32^33^1443^0.4516^0.7683^4^Whirlwind Shredder^7069:1:1^
 14123^41^0^42^43^1446^0.6786^0.3067^41^Steeljaw Snapper^3712:17:17,4555:21:21,4556:23:23,4603:3:3,7973:11:11,213547:1:1^
+@i^117^Tough Jerky
+@i^1416^Rusty Hatchet
 @i^1464^Buzzard Talon
 @i^1701^Curved Basilisk Claw
 @i^1702^Intact Basilisk Spine
 @i^1708^Sweet Nectar
+@i^2672^Stringy Wolf Meat
 @i^3712^Turtle Meat
 @i^3820^Stranglekelp
 @i^4093^Large Basilisk Tail
@@ -36,6 +41,7 @@ GoldScout-export 6^kmz1k2bi5s0o^7
 @i^4582^Soft Bushy Tail
 @i^4583^Thick Furry Mane
 @i^4603^Raw Spotted Yellowtail
+@i^4801^Stalker Claws
 @i^5116^Long Tail Feather
 @i^5122^Thick Kodo Hair
 @i^5128^Shed Lizard Skin
@@ -68,10 +74,13 @@ GoldScout-export 6^kmz1k2bi5s0o^7
 @i^213547^Scroll: THAW WORDS
 @i^248692^Waylaid Crate: Expert Ore
 @i^248708^Waylaid Crate: Expert Fabrics
+@q^117^1:0:0
+@q^1416^0:2:0
 @q^1464^0:15:0
 @q^1701^0:15:0
 @q^1702^0:15:0
 @q^1708^1:0:0
+@q^2672^1:7:1
 @q^3712^1:7:1
 @q^3820^1:7:1
 @q^4093^0:15:0
@@ -81,6 +90,7 @@ GoldScout-export 6^kmz1k2bi5s0o^7
 @q^4582^1:12:0
 @q^4583^0:15:0
 @q^4603^1:7:1
+@q^4801^1:12:0
 @q^5116^1:7:1
 @q^5122^0:15:0
 @q^5128^0:15:0
@@ -113,6 +123,7 @@ GoldScout-export 6^kmz1k2bi5s0o^7
 @q^213547^1:0:0
 @q^248692^1:0:1
 @q^248708^2:0:1
+@m^1412^Mulgore
 @m^1443^Desolace
 @m^1446^Tanaris
 @c^118^
@@ -806,6 +817,8 @@ GoldScout-export 6^kmz1k2bi5s0o^7
 @c^285280^
 @c^285281^
 @c^286152^
+@a^2959^210:1
+@a^2976^210:1
 @a^4632^154:1,174:1
 @a^4681^291:1
 @a^4688^129:3
