@@ -1,4 +1,4 @@
-GoldScout-export 6^gx7046mlka7n^15
+GoldScout-export 6^gx7046mlka7n^18
 92^3^0^39^40^1418^0.4222^0.7768^3^Rock Elemental^4552:1:1,4627:3:3,7912:1:1,8150:1:1^
 2701^3^0^38^39^1418^0.2836^0.6128^3^Dustbelcher Ogre^248694:1:1^
 2715^2^0^39^40^1418^0.3010^0.6029^2^Dustbelcher Brute^211269:1:1,278515:1:1^
@@ -12,6 +12,7 @@ GoldScout-export 6^gx7046mlka7n^15
 2944^1^0^41^41^1418^0.1516^0.6404^1^Boss Tho'grun^4640:1:1^
 2945^1^0^42^42^1418^0.5208^0.6886^1^Murdaloc^^
 3560^2^0^40^41^1418^0.5109^0.6579^2^Healing Ward^^
+5431^38^0^48^50^1446^0.6789^0.5739^38^Surf Glider^3712:16:16,4555:25:25,4556:23:23,4603:3:5,7973:14:14^
 254560^12^0^39^40^2548^0.4788^0.4791^12^Twilight Shadowmancer^3671:1:1,4306:2:2,4725:1:1,265745:1:1,267073:5:9^
 255851^3^0^38^39^2548^0.7686^0.5892^3^Mature Paletusk^769:2:2,268632:1:1^
 255898^11^0^38^39^2548^0.7556^0.6586^11^Murloc Oracle^5524:5:5,268344:3:3^
@@ -55,6 +56,7 @@ GoldScout-export 6^gx7046mlka7n^15
 @i^2592^Wool Cloth
 @i^3404^Buzzard Wing
 @i^3671^Lifeless Skull
+@i^3712^Turtle Meat
 @i^3771^Wild Hog Shank
 @i^3784^Metal Stave
 @i^3786^Shiny Dirk
@@ -71,10 +73,13 @@ GoldScout-export 6^gx7046mlka7n^15
 @i^4460^Ripped Wing Webbing
 @i^4552^Smooth Stone Chip
 @i^4553^Jagged Piece of Stone
+@i^4555^Thick Scaly Tail
+@i^4556^Speckled Shell Fragment
 @i^4582^Soft Bushy Tail
 @i^4583^Thick Furry Mane
 @i^4585^Dripping Spider Mandible
 @i^4599^Cured Ham Steak
+@i^4603^Raw Spotted Yellowtail
 @i^4626^Small Stone Shard
 @i^4627^Large Stone Slab
 @i^4636^Strong Iron Lockbox
@@ -103,6 +108,7 @@ GoldScout-export 6^gx7046mlka7n^15
 @i^7847^Buzzard Gizzard
 @i^7848^Rock Elemental Shard
 @i^7912^Solid Stone
+@i^7973^Big-mouth Clam
 @i^8146^Wicked Claw
 @i^8150^Deeprock Salt
 @i^8746^Interlaced Cowl
@@ -149,6 +155,7 @@ GoldScout-export 6^gx7046mlka7n^15
 @q^2592^1:7:1
 @q^3404^1:7:1
 @q^3671^0:15:0
+@q^3712^1:7:1
 @q^3771^1:0:0
 @q^3784^0:2:0
 @q^3786^0:2:0
@@ -165,10 +172,13 @@ GoldScout-export 6^gx7046mlka7n^15
 @q^4460^0:15:0
 @q^4552^0:15:0
 @q^4553^0:15:0
+@q^4555^0:15:0
+@q^4556^0:15:0
 @q^4582^1:12:0
 @q^4583^0:15:0
 @q^4585^0:15:0
 @q^4599^1:0:0
+@q^4603^1:7:1
 @q^4626^1:12:0
 @q^4627^1:12:0
 @q^4636^2:15:0
@@ -197,6 +207,7 @@ GoldScout-export 6^gx7046mlka7n^15
 @q^7847^1:12:0
 @q^7848^1:12:0
 @q^7912^1:7:1
+@q^7973^1:7:0
 @q^8146^1:7:1
 @q^8150^1:7:1
 @q^8746^0:4:0
@@ -234,6 +245,7 @@ GoldScout-export 6^gx7046mlka7n^15
 @q^278515^1:12:0
 @q^281052^1:12:0
 @m^1418^Badlands
+@m^1446^Tanaris
 @m^2548^Riverglades
 @c^118^
 @c^858^
@@ -367,6 +379,7 @@ GoldScout-export 6^gx7046mlka7n^15
 @a^2944^243:1
 @a^2945^270:1
 @a^3560^270:2
+@a^5431^214:8,233:19,234:1,252:9,253:1
 @a^254560^170:1,188:1,189:6,190:1,209:3
 @a^255851^235:2,254:1
 @a^255898^254:3,255:2,274:3,295:3
@@ -400,5 +413,6 @@ GoldScout-export 6^gx7046mlka7n^15
 @a^263380^269:1
 @a^270664^227:1,267:1
 @a^270667^249:2,268:3,269:2,290:1
+@f^1446^0^2^208^6358:1:1,6359:1:1^195:1,252:1
 @f^2548^0^14^205^6358:5:5,6359:2:2,21153:6:6,21228:1:1^171:6,215:3,217:3,254:2
 @l^0^enUS

@@ -1,4 +1,4 @@
-GoldScout-export 6^kyhniq1dmajc^23
+GoldScout-export 6^kyhniq1dmajc^24
 36^7^0^11^12^1436^0.5573^0.3521^7^Harvest Golem^732:1:1,814:2:2,1274:3:3,255007:5:5,255010:1:1^
 40^23^0^6^7^1429^0.4946^0.7088^23^Kobold Miner^1389:1:1,1411:1:1,1420:1:1,2589:6:8^
 95^4^0^11^12^1436^0.4472^0.2247^4^Defias Smuggler^^
@@ -13,6 +13,9 @@ GoldScout-export 6^kyhniq1dmajc^23
 299^3^0^1^1^1429^0.4303^0.6127^3^Young Wolf^1372:1:1,1376:1:1,2652:1:1,4865:2:2,7073:1:1,7074:1:1^
 327^1^0^8^8^1429^0.4076^0.7847^1^Goldtooth^981:1:1,2555:1:1,3373:1:1^
 391^1^0^20^20^1436^0.3281^0.8369^1^Old Murk-Eye^730:1:1,3376:1:1,3636:1:1,5523:1:1^
+423^17^0^15^16^1433^0.1637^0.7186^17^Redridge Mongrel^774:1:1,1179:1:1,1212:3:3,1504:1:1,2287:2:2,2589:3:6,2592:2:4,211780:1:1^
+424^7^0^16^17^1433^0.2579^0.8210^7^Redridge Poacher^858:1:1,1210:1:1,1212:1:1,1768:1:1,1788:1:1,2589:2:2,211854:1:1^
+441^1^0^18^18^1433^0.2248^0.7634^1^Black Dragon Whelp^^
 449^7^0^16^17^1436^0.5040^0.6693^7^Defias Knuckleduster^2589:2:6,211784:1:1,211855:1:1^
 452^2^0^16^16^1436^0.4789^0.6333^2^Riverpaw Bandit^2592:1:2^
 458^1^0^17^17^1436^0.2695^0.4831^1^Murloc Hunter^^
@@ -22,8 +25,10 @@ GoldScout-export 6^kyhniq1dmajc^23
 504^2^0^12^12^1436^0.4440^0.2343^2^Defias Trapper^^
 517^1^0^17^17^1436^0.3372^0.8442^1^Murloc Oracle^1790:1:1,5784:1:1^
 525^13^0^5^6^1429^0.5057^0.6348^13^Mangy Wolf^774:1:1,2672:5:5,3299:1:1,3300:4:4^
+547^1^0^16^16^1433^0.2286^0.7704^1^Great Goretusk^723:1:1,769:1:1,3172:1:1^
 589^14^0^14^15^1436^0.3027^0.4713^14^Defias Pillager^414:2:2,1501:1:1,1730:1:1,2589:5:10,2976:1:1,211787:1:1,248685:1:1^
 590^15^0^13^14^1436^0.3067^0.4572^15^Defias Looter^1180:1:1,2589:6:13,2979:1:1,6560:1:1,9762:1:1^
+712^9^0^14^15^1433^0.1061^0.6589^9^Redridge Thrasher^1733:1:1,2592:3:3,5212:1:1,280911:5:5^
 735^6^0^6^7^1429^0.5331^0.6496^6^Murloc Streamrunner^118:1:1,159:1:1,779:2:2,1256:1:1,1417:1:1^
 757^13^0^35^36^1435^0.5646^0.2756^13^Lost One Fisherman^1708:1:1,3385:1:1,3799:1:1,4306:5:9,4338:1:1^
 759^103^0^36^37^1435^0.5750^0.2526^103^Lost One Hunter^1477:2:2,1708:3:3,1990:1:1,3771:6:6,3794:2:2,3797:1:1,3814:1:1,4306:26:50,4338:7:7,8746:1:1,248694:1:1,262889:1:1^
@@ -200,6 +205,7 @@ GoldScout-export 6^kyhniq1dmajc^23
 @i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
 @i^414^Dalaran Sharp
+@i^723^Goretusk Liver
 @i^729^Stringy Vulture Meat
 @i^730^Murloc Eye
 @i^732^Okra
@@ -222,6 +228,7 @@ GoldScout-export 6^kyhniq1dmajc^23
 @i^1195^Kobold Mining Shovel
 @i^1205^Melon Juice
 @i^1210^Shadowgem
+@i^1212^Gnoll Spittle
 @i^1256^Crystal Kelp Frond
 @i^1265^Scorpion Sting
 @i^1274^Hops
@@ -259,11 +266,14 @@ GoldScout-export 6^kyhniq1dmajc^23
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
 @i^1730^Worn Mail Belt
+@i^1733^Worn Cloak
 @i^1738^Laced Mail Belt
 @i^1744^Laced Mail Shoulderpads
 @i^1754^Reinforced Chain Belt
 @i^1767^Canvas Gloves
+@i^1768^Canvas Pants
 @i^1782^Cross-stitched Cloak
+@i^1788^Patched Leather Boots
 @i^1790^Patched Cloak
 @i^1791^Patched Leather Gloves
 @i^1793^Patched Leather Shoulderpads
@@ -302,6 +312,7 @@ GoldScout-export 6^kyhniq1dmajc^23
 @i^3110^Tunnel Rat Ear
 @i^3169^Chipped Bear Tooth
 @i^3171^Broken Boar Tusk
+@i^3172^Boar Intestines
 @i^3192^Short Bastard Sword of the Bear
 @i^3195^Barbaric Battle Axe of Healing
 @i^3207^Hunting Bracers
@@ -393,6 +404,7 @@ GoldScout-export 6^kyhniq1dmajc^23
 @i^5113^Mark of the Syndicate
 @i^5116^Long Tail Feather
 @i^5137^Bright Eyeball
+@i^5212^Blazing Wand
 @i^5429^A Pretty Rock
 @i^5431^Empty Hip Flask
 @i^5465^Small Spider Leg
@@ -489,6 +501,7 @@ GoldScout-export 6^kyhniq1dmajc^23
 @i^211785^Scroll: CWAL
 @i^211786^Scroll: CHAP BALK WELLES
 @i^211787^Scroll: LOWER PING WHOMEVER
+@i^211854^Scroll: OMIT KESA
 @i^211855^Scroll: STHENIC LUNATE
 @i^213421^Singed Note
 @i^213543^Scroll: UPDOG
@@ -530,9 +543,11 @@ GoldScout-export 6^kyhniq1dmajc^23
 @i^280395^Heart of Ados
 @i^280397^Heart of Golm
 @i^280398^Heart of Neru
+@i^280911^Spiked Collar
 @q^118^1:0:0
 @q^159^1:0:0
 @q^414^1:0:0
+@q^723^1:7:1
 @q^729^1:7:1
 @q^730^1:7:1
 @q^732^1:12:0
@@ -555,6 +570,7 @@ GoldScout-export 6^kyhniq1dmajc^23
 @q^1195^1:2:0
 @q^1205^1:0:0
 @q^1210^2:7:1
+@q^1212^0:15:0
 @q^1256^1:12:0
 @q^1265^3:2:0
 @q^1274^1:12:0
@@ -592,11 +608,14 @@ GoldScout-export 6^kyhniq1dmajc^23
 @q^1708^1:0:0
 @q^1710^1:0:0
 @q^1730^0:4:0
+@q^1733^0:4:0
 @q^1738^0:4:0
 @q^1744^0:4:0
 @q^1754^0:4:0
 @q^1767^0:4:0
+@q^1768^0:4:0
 @q^1782^0:4:0
+@q^1788^0:4:0
 @q^1790^0:4:0
 @q^1791^0:4:0
 @q^1793^0:4:0
@@ -635,6 +654,7 @@ GoldScout-export 6^kyhniq1dmajc^23
 @q^3110^1:12:0
 @q^3169^0:15:0
 @q^3171^0:15:0
+@q^3172^1:7:1
 @q^3192^2:2:0
 @q^3195^2:2:0
 @q^3207^1:4:0
@@ -726,6 +746,7 @@ GoldScout-export 6^kyhniq1dmajc^23
 @q^5113^0:15:0
 @q^5116^1:7:1
 @q^5137^0:15:0
+@q^5212^2:2:0
 @q^5429^0:15:0
 @q^5431^0:15:0
 @q^5465^1:7:1
@@ -822,6 +843,7 @@ GoldScout-export 6^kyhniq1dmajc^23
 @q^211785^1:0:0
 @q^211786^1:0:0
 @q^211787^1:0:0
+@q^211854^1:0:0
 @q^211855^1:0:0
 @q^213421^1:15:0
 @q^213543^1:0:0
@@ -863,6 +885,7 @@ GoldScout-export 6^kyhniq1dmajc^23
 @q^280395^1:12:0
 @q^280397^1:12:0
 @q^280398^1:12:0
+@q^280911^1:12:0
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
 @m^1418^Badlands
@@ -870,6 +893,7 @@ GoldScout-export 6^kyhniq1dmajc^23
 @m^1426^Dun Morogh
 @m^1429^Elwynn Forest
 @m^1432^Loch Modan
+@m^1433^Redridge Mountains
 @m^1435^Swamp of Sorrows
 @m^1436^Westfall
 @m^1437^Wetlands
@@ -2727,6 +2751,9 @@ GoldScout-export 6^kyhniq1dmajc^23
 @a^299^248:3
 @a^327^308:1
 @a^391^326:1
+@a^423^242:2,261:3,262:6,325:6
+@a^424^324:2,325:5
+@a^441^304:1
 @a^449^232:4,307:2,327:1
 @a^452^249:2
 @a^458^185:1
@@ -2736,8 +2763,10 @@ GoldScout-export 6^kyhniq1dmajc^23
 @a^504^88:2
 @a^517^326:1
 @a^525^248:1,249:2,250:8,269:1,271:1
+@a^547^304:1
 @a^589^166:3,185:6,186:4,205:1
 @a^590^166:6,185:6,186:3
+@a^712^242:1,261:3,262:5
 @a^735^250:3,270:1,271:2
 @a^757^110:3,111:10
 @a^759^91:38,92:7,111:57,130:1

@@ -1,4 +1,4 @@
-GoldScout-export 6^focn02qpqydu^9
+GoldScout-export 6^focn02qpqydu^11
 669^1^0^41^41^1434^0.4595^0.4095^1^Skullsplitter Hunter^^
 672^3^0^44^44^1434^0.4740^0.4371^3^Skullsplitter Spiritchaser^1520:2:2,3916:1:1,4001:1:1,4306:1:2,8151:1:1,8153:1:1^
 687^38^0^40^41^1434^0.2897^0.4506^38^Jungle Stalker^3863:12:12,4079:1:1,4461:17:17,4586:10:10,4587:2:2,5637:3:3,8146:1:1,12184:16:16,248690:1:1^
@@ -125,8 +125,17 @@ GoldScout-export 6^focn02qpqydu^9
 8217^1^0^52^52^1425^0.6104^0.8208^1^Mith'rethis the Enchanter^1520:1:1,8752:1:1,9259:1:1^
 10081^1^0^0^0^0^0.0000^0.0000^0^^12471:1:1^
 10802^1^0^51^51^1425^0.5757^0.8634^1^Hitah'ya the Keeper^19064:1:1^
+11686^1^0^40^40^1414^0.3854^0.5797^1^Ghostly Raider^4306:1:3^
+11687^2^0^41^42^1414^0.3840^0.5804^2^Ghostly Marauder^^
+11777^1^0^40^41^1414^0.3845^0.5726^1^Shadowshard Rumbler^4552:1:1,7912:1:1,8150:1:1,17756:1:1^
+11778^1^0^41^41^1414^0.3821^0.5738^1^Shadowshard Smasher^4552:1:1,4784:1:1,17756:1:1^
+11781^1^0^41^41^1414^0.3926^0.5811^1^Ambershard Crusher^4784:1:1^
+11786^1^0^41^42^1414^0.3926^0.5815^1^Ambereye Reaver^11387:1:1^
+13718^3^0^41^41^1414^0.3835^0.5807^3^The Nameless Prophet^4338:1:1,4599:1:1,17684:3:3,17757:1:1^
 14661^1^0^47^47^1444^0.7486^0.6248^1^Stinglasher^18962:1:1^
 14748^1^0^49^49^1425^0.8446^0.4144^1^Vilebranch Kidnapper^19034:1:1^
+253526^1^0^42^42^2652^0.7021^0.2453^1^Bristleback Skullcrusher^^
+255560^2^0^40^41^1443^0.6792^0.7878^2^Magram Guardian^4306:2:4^
 270772^1^0^49^49^1425^0.2586^0.6588^1^Witch Doctor Ti'ik^279913:1:1^
 @i^1464^Buzzard Talon
 @i^1520^Troll Sweat
@@ -168,6 +177,7 @@ GoldScout-export 6^focn02qpqydu^9
 @i^4422^Scroll of Stamina III
 @i^4426^Scroll of Strength III
 @i^4461^Raptor Hide
+@i^4552^Smooth Stone Chip
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
 @i^4583^Thick Furry Mane
@@ -190,10 +200,12 @@ GoldScout-export 6^focn02qpqydu^9
 @i^6444^Forked Tongue
 @i^6826^Brilliant Scale
 @i^7910^Star Ruby
+@i^7912^Solid Stone
 @i^7973^Big-mouth Clam
 @i^7989^Plans: Mithril Spurs
 @i^8129^Myrmidon's Girdle
 @i^8146^Wicked Claw
+@i^8150^Deeprock Salt
 @i^8151^Flask of Mojo
 @i^8152^Flask of Big Mojo
 @i^8153^Wildvine
@@ -259,6 +271,9 @@ GoldScout-export 6^focn02qpqydu^9
 @i^15167^Imposing Bandana of the Owl
 @i^15178^Potent Belt of Nature's Wrath
 @i^15964^Silksand Star
+@i^17684^Theradric Crystal Carving
+@i^17756^Shadowshard Fragment
+@i^17757^Amulet of Spirits
 @i^18961^Zukk'ash Carapace
 @i^18962^Stinglasher's Glands
 @i^19023^Katoom's Best Lure
@@ -337,6 +352,7 @@ GoldScout-export 6^focn02qpqydu^9
 @q^4422^1:0:0
 @q^4426^1:0:0
 @q^4461^1:7:1
+@q^4552^0:15:0
 @q^4555^0:15:0
 @q^4556^0:15:0
 @q^4583^0:15:0
@@ -359,10 +375,12 @@ GoldScout-export 6^focn02qpqydu^9
 @q^6444^0:15:0
 @q^6826^0:15:0
 @q^7910^2:7:1
+@q^7912^1:7:1
 @q^7973^1:7:0
 @q^7989^2:9:0
 @q^8129^2:4:0
 @q^8146^1:7:1
+@q^8150^1:7:1
 @q^8151^1:7:1
 @q^8152^1:7:1
 @q^8153^1:7:1
@@ -428,6 +446,9 @@ GoldScout-export 6^focn02qpqydu^9
 @q^15167^2:4:0
 @q^15178^2:4:0
 @q^15964^2:4:0
+@q^17684^1:12:0
+@q^17756^1:12:0
+@q^17757^1:12:0
 @q^18961^1:12:0
 @q^18962^1:12:0
 @q^19023^1:12:0
@@ -466,10 +487,13 @@ GoldScout-export 6^focn02qpqydu^9
 @q^274657^3:4:0
 @q^277112^1:12:0
 @q^279913^1:12:0
+@m^1414^Kalimdor
 @m^1425^The Hinterlands
 @m^1434^Stranglethorn Vale
+@m^1443^Desolace
 @m^1444^Feralas
 @m^1446^Tanaris
+@m^2652^Shen'dralas
 @c^724^
 @c^733^
 @c^787^
@@ -2554,7 +2578,16 @@ GoldScout-export 6^focn02qpqydu^9
 @a^8205^271:1
 @a^8217^332:1
 @a^10802^351:1
+@a^11686^227:1
+@a^11687^227:2
+@a^11777^227:1
+@a^11778^227:1
+@a^11781^227:1
+@a^11786^227:1
+@a^13718^227:3
 @a^14661^254:1
 @a^14748^176:1
+@a^253526^94:1
+@a^255560^313:2
 @a^270772^265:1
 @l^0^enUS

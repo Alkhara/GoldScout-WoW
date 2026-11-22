@@ -1,4 +1,4 @@
-GoldScout-export 6^0dnmy33hd98r^31
+GoldScout-export 6^0dnmy33hd98r^33
 429^5^0^25^26^1433^0.7385^0.4317^5^Tisseur d'ombre Sombrepoil^2592:1:2,3770:1:1^
 431^2^0^25^26^1433^0.7490^0.4123^2^Pourfendeur Sombrepoil^1205:1:1^
 432^32^0^23^24^1433^0.7210^0.4202^32^Brute Sombrepoil^929:2:2,2589:1:1,2592:4:7,2765:1:1,3770:1:1,4306:1:1,6454:1:1^
@@ -381,6 +381,7 @@ GoldScout-export 6^0dnmy33hd98r^31
 @i^7724^Gantelets de divinité
 @i^7726^Egide du commandant écarlate
 @i^7756^Gants de dressage de chien
+@i^7973^Palourde à large bouche
 @i^7992^Plans : Hache lumineuse bleue
 @i^8029^Plans : Lame corrompue en mithril
 @i^8146^Serre cruelle
@@ -424,6 +425,8 @@ GoldScout-export 6^0dnmy33hd98r^31
 @i^12206^Viande de crabe tendre
 @i^13054^Découpeuse sinistre
 @i^13422^Anguille pierre-écaille
+@i^13754^Barracuda luisant cru
+@i^13755^Calmar hivernal cru
 @i^14761^Ceinture endurcie
 @i^15213^Epée des mercenaires de brigandage
 @i^15226^Gourdin géant de guérison
@@ -437,6 +440,7 @@ GoldScout-export 6^0dnmy33hd98r^31
 @i^19507^Châle d'inquisiteur
 @i^19508^Brassards en cuir marqué
 @i^19509^Bottes poussiéreuses en mailles
+@i^19807^Courbine
 @i^19937^Petite griffe de scorpide
 @i^19938^Patte de scorpide épaisse
 @i^20763^Arme brisée
@@ -444,6 +448,7 @@ GoldScout-export 6^0dnmy33hd98r^31
 @i^21151^Rhum de Rumsey label noir
 @i^21153^Grande sagerelle crue
 @i^21228^Malle cerclée de mithril
+@i^21243^Barracuda luisant boursouflé
 @i^211853^Parchemin : VOCE WELL
 @i^213127^Notes mystiques partielles
 @i^213544^Parchemin : ZOO ET DU KAFÊ
@@ -697,6 +702,7 @@ GoldScout-export 6^0dnmy33hd98r^31
 @q^7724^3:4:0
 @q^7726^3:4:0
 @q^7756^3:4:0
+@q^7973^1:7:0
 @q^7992^2:9:0
 @q^8029^2:9:0
 @q^8146^1:7:1
@@ -740,6 +746,8 @@ GoldScout-export 6^0dnmy33hd98r^31
 @q^12206^1:7:1
 @q^13054^3:2:0
 @q^13422^1:7:1
+@q^13754^1:7:1
+@q^13755^1:0:1
 @q^14761^2:4:0
 @q^15213^2:2:0
 @q^15226^2:2:0
@@ -753,6 +761,7 @@ GoldScout-export 6^0dnmy33hd98r^31
 @q^19507^3:4:0
 @q^19508^3:4:0
 @q^19509^3:4:0
+@q^19807^1:15:0
 @q^19937^0:15:0
 @q^19938^0:15:0
 @q^20763^0:15:0
@@ -760,6 +769,7 @@ GoldScout-export 6^0dnmy33hd98r^31
 @q^21151^1:0:0
 @q^21153^1:7:1
 @q^21228^1:15:0
+@q^21243^2:15:0
 @q^211853^1:0:0
 @q^213127^1:15:0
 @q^213544^1:0:0
@@ -1984,9 +1994,9 @@ GoldScout-export 6^0dnmy33hd98r^31
 @a^270664^227:1
 @a^272228^290:1,310:6
 @f^1416^0^6^225^3820:1:3,21150:5:5^67:6
-@f^1434^0^55^225^6308:17:17,6359:6:6,8365:32:32^47:49,65:6
+@f^1434^0^171^225^3820:3:5,4603:4:4,6308:17:17,6358:24:25,6359:30:32,6362:8:10,8365:32:32,13422:22:44,19807:36:36,21150:3:3,21151:2:4,21228:11:13,21243:1:1^47:49,65:6,85:7,126:5,145:25,146:8,185:4,247:3,265:2,267:10,285:3,286:2,306:16,325:8,326:23
 @f^1437^0^7^225^6352:1:1,6358:1:1,6359:1:1,6361:4:4^240:2,241:5
 @f^1443^0^3^225^6308:1:1,8365:2:2^71:1,331:2
-@f^1446^0^12^225^4603:4:4,6362:1:1,13422:6:12,21151:1:1^153:6,174:6
+@f^1446^0^236^225^3820:4:9,4603:109:122,6358:3:4,6359:28:34,6362:42:43,7973:36:36,13422:34:78,13754:23:23,13755:28:28,21151:4:7,21228:8:8^93:1,113:201,133:2,153:12,174:11,194:7,214:2
 @f^2548^0^68^225^3820:4:8,4603:2:2,6308:3:3,6358:12:12,6359:8:8,6362:6:6,8365:3:3,13422:5:8,21150:1:1,21153:17:17,21228:7:7^157:2,190:5,195:4,196:13,210:8,215:12,229:4,274:6,292:2,294:4,331:8
 @l^0^frFR

@@ -1,4 +1,4 @@
-GoldScout-export 6^89481ig63s7d^39
+GoldScout-export 6^89481ig63s7d^40
 92^3^0^39^40^1418^0.1393^0.3483^3^Rock Elemental^4553:1:1,4627:3:3,4784:2:2,7912:1:1,8150:2:2^
 441^1^0^17^18^1433^0.6105^0.7508^1^Black Dragon Whelp^818:1:1^
 544^1^0^21^22^1433^0.7610^0.5873^1^Murloc Nightcrawler^^
@@ -8,6 +8,8 @@ GoldScout-export 6^89481ig63s7d^39
 762^1^0^38^38^1435^0.6445^0.2394^1^Lost One Riftseeker^^
 1082^2^0^38^38^1435^0.6365^0.2518^2^Sawtooth Crocolisk^770:1:1,3667:1:1,12037:2:2^
 1087^1^0^41^41^1435^0.8612^0.2037^1^Sawtooth Snapper^770:1:1^
+1557^13^0^40^41^1434^0.3273^0.6278^13^Elder Mistvale Gorilla^2799:4:4,3919:5:5,4096:7:7,4097:2:2,5637:1:1^
+1562^0^1^40^40^0^0.0000^0.0000^0^Bloodsail Mage^^3927:1:1
 1666^1^0^0^0^0^0.0000^0.0000^0^^4306:1:2,273807:1:1^
 1713^1^0^43^43^1434^0.3535^0.5761^1^Elder Shadowmaw Panther^1688:1:1^
 1715^2^0^0^0^0^0.0000^0.0000^0^^4306:1:1^
@@ -15,6 +17,7 @@ GoldScout-export 6^89481ig63s7d^39
 1717^1^0^0^0^0^0.0000^0.0000^0^^^
 2242^1^0^36^36^1416^0.6224^0.4340^1^Syndicate Spy^^
 2319^0^1^34^34^0^0.0000^0.0000^0^Syndicate Wizard^^17124:1:1
+2545^0^1^39^39^0^0.0000^0.0000^0^Pretty Boy Duncan^^
 2554^6^7^32^33^1417^0.6275^0.6991^6^Witherbark Axe Thrower^4306:1:2,4503:3:3^4544:1:1,16883:2:2
 2555^18^17^33^34^1417^0.6701^0.7106^18^Witherbark Witch Doctor^1708:2:2,3783:1:1,4306:6:10,4503:6:6,4522:3:3,4634:1:1^1710:1:1,4544:1:1,5427:2:2,16883:2:2
 2556^3^4^34^35^1417^0.6827^0.7520^3^Witherbark Headhunter^4306:1:2,4503:1:1^16883:1:1
@@ -80,6 +83,7 @@ GoldScout-export 6^89481ig63s7d^39
 @i^1988^Chief Brigadier Gauntlets
 @i^2592^Wool Cloth
 @i^2783^Shoddy Blunderbuss
+@i^2799^Gorilla Fang
 @i^3402^Soft Patch of Fur
 @i^3404^Buzzard Wing
 @i^3667^Tender Crocolisk Meat
@@ -89,9 +93,13 @@ GoldScout-export 6^89481ig63s7d^39
 @i^3820^Stranglekelp
 @i^3827^Mana Potion
 @i^3864^Citrine
+@i^3919^Mistvale Giblets
+@i^3927^Fine Aged Cheddar
 @i^3928^Superior Healing Potion
 @i^4025^Balanced Long Bow
 @i^4058^Glyphed Breastplate
+@i^4096^Coarse Gorilla Hair
+@i^4097^Chipped Gorilla Tooth
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4435^Mote of Myzrael
@@ -222,6 +230,7 @@ GoldScout-export 6^89481ig63s7d^39
 @q^1988^2:4:0
 @q^2592^1:7:1
 @q^2783^0:2:0
+@q^2799^1:12:0
 @q^3402^0:15:0
 @q^3404^1:7:1
 @q^3667^1:7:1
@@ -231,9 +240,13 @@ GoldScout-export 6^89481ig63s7d^39
 @q^3820^1:7:1
 @q^3827^1:0:0
 @q^3864^2:7:1
+@q^3919^1:12:0
+@q^3927^1:0:0
 @q^3928^1:0:0
 @q^4025^0:2:0
 @q^4058^2:4:0
+@q^4096^1:15:0
+@q^4097^0:15:0
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4435^1:12:0
@@ -1349,6 +1362,7 @@ GoldScout-export 6^89481ig63s7d^39
 @a^762^92:1
 @a^1082^92:1,112:1
 @a^1087^97:1
+@a^1557^226:2,246:8,266:3
 @a^1713^227:1
 @a^2242^172:1
 @a^2554^272:3,292:3
