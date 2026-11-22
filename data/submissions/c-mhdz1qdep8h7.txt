@@ -1,4 +1,4 @@
-GoldScout-export 6^mhdz1qdep8h7^18
+GoldScout-export 6^mhdz1qdep8h7^19
 1783^15^0^50^51^1422^0.3701^0.5683^15^Ecorcheur Squelette^8948:1:1,12840:4:4,13446:1:1,14047:7:10,14619:4:4^
 1784^15^0^51^52^1422^0.3711^0.5621^15^Ensorceleur Squelette^7910:1:1,12840:4:4,14047:3:3,14619:6:6^
 1785^1^0^52^53^1422^0.4777^0.5074^1^Terreur Squelette^^
@@ -162,6 +162,7 @@ GoldScout-export 6^mhdz1qdep8h7^18
 12922^3^0^46^47^1447^0.1997^0.6108^3^Diablotin serviteur^^
 14661^1^0^47^47^1444^0.7661^0.6137^1^Fouet-cuisant^18962:1:1^
 236028^3^0^47^49^1447^0.2060^0.5218^3^Guêpe à miel^6300:2:2,6302:1:1,238503:3:5^
+244525^3^0^55^56^2482^0.7118^0.7334^3^Ours d'Hyjal^11408:1:1,11409:1:1^
 246920^5^0^52^53^1447^0.6732^0.2847^5^Arcaniste elfe de sang^8953:1:1,14047:1:2,246680:1:1^
 246991^1^0^53^53^1447^0.5684^0.2731^1^Magistrice Falcoiffe^14047:1:2,246721:1:1^
 247006^1^0^53^53^1447^0.6690^0.2892^1^Lieutenant Solcrête^246725:1:1^
@@ -169,6 +170,10 @@ GoldScout-export 6^mhdz1qdep8h7^18
 247033^1^0^53^53^1447^0.6886^0.2877^1^Rapassang^^
 247470^4^0^50^50^1447^0.4724^0.5704^4^Fouisseur makrinni^7973:3:3,246684:2:2^
 247972^1^0^54^54^1447^0.4048^0.7976^1^Célégosa^246938:1:1^
+248395^17^0^55^56^2482^0.6453^0.7223^17^Massif corrompu^3994:1:1,12803:1:1,13444:1:1,13820:1:1,247892:12:12^
+249051^1^0^57^57^2482^0.6568^0.7432^1^Celastrus l'Amer^282028:1:1^
+261914^2^0^55^55^2482^0.7318^0.7677^2^Chouette d'Hyjal corrompue^12207:2:2,15420:1:1^
+278137^4^0^55^56^2482^0.6597^0.7460^4^Floraison fongique^^
 @i^1074^Patte d'araignée
 @i^1520^Sueur de troll
 @i^1639^Hache dévorante d'endurance
@@ -185,6 +190,7 @@ GoldScout-export 6^mhdz1qdep8h7^18
 @i^3972^Cape lisse
 @i^3973^Gants en cuir lisse
 @i^3986^Pavois protecteur
+@i^3994^Brassards en écailles laminées
 @i^4024^Bâton de guerre lourd
 @i^4096^Poil de gorille grossier
 @i^4099^Touffe de poils de gorille
@@ -287,11 +293,13 @@ GoldScout-export 6^mhdz1qdep8h7^18
 @i^12056^Anneau céleste
 @i^12184^Chair de raptor
 @i^12203^Viande de loup rouge
+@i^12207^Oeuf géant
 @i^12208^Viande de loup tendre
 @i^12223^Aile de chauve-souris charnue
 @i^12662^Rune démoniaque
 @i^12738^Clé des toilettes de Dalson
 @i^12739^Clé du cabinet de Dalson
+@i^12803^Essence de vie
 @i^12840^Pierre du Fléau des serviteurs
 @i^12841^Pierre du Fléau des envahisseurs
 @i^13194^Clé du chaudron du Champ de Felstone
@@ -299,6 +307,7 @@ GoldScout-export 6^mhdz1qdep8h7^18
 @i^13196^Clé du chaudron de la Flétrissure de Gahrron
 @i^13197^Clé du chaudron du Repaire putride
 @i^13443^Potion de mana excellente
+@i^13444^Potion de mana majeure
 @i^13446^Potion de soins majeure
 @i^13815^Une rune
 @i^13820^Masse récalcitrante
@@ -331,6 +340,7 @@ GoldScout-export 6^mhdz1qdep8h7^18
 @i^246722^Sceau des Forestiers
 @i^246725^Sceau des gardiens
 @i^246938^Larme de Mennar
+@i^247892^Feuilles verdoyantes
 @i^248695^Caisse détournée : plantes terreuses d'artisan
 @i^248699^Caisse détournée : curiosités d'artisan
 @i^248711^Caisse détournée : étoffes d'artisan
@@ -343,6 +353,7 @@ GoldScout-export 6^mhdz1qdep8h7^18
 @i^280459^Écaille imprégnée de cristaux
 @i^281017^Parchemin : NAÉF CORCOINCH
 @i^281018^Parchemin : RANSTOR TEULÀ TRES
+@i^282028^Fronde brisée de Celastrus
 @q^1074^0:15:0
 @q^1520^0:15:0
 @q^1639^2:2:0
@@ -359,6 +370,7 @@ GoldScout-export 6^mhdz1qdep8h7^18
 @q^3972^0:4:0
 @q^3973^0:4:0
 @q^3986^0:4:0
+@q^3994^0:4:0
 @q^4024^0:2:0
 @q^4096^1:15:0
 @q^4099^0:15:0
@@ -461,11 +473,13 @@ GoldScout-export 6^mhdz1qdep8h7^18
 @q^12056^2:4:0
 @q^12184^1:7:1
 @q^12203^1:7:1
+@q^12207^1:7:1
 @q^12208^1:7:1
 @q^12223^1:7:1
 @q^12662^2:7:1
 @q^12738^1:12:0
 @q^12739^1:12:0
+@q^12803^2:7:1
 @q^12840^1:12:0
 @q^12841^1:12:0
 @q^13194^1:12:0
@@ -473,6 +487,7 @@ GoldScout-export 6^mhdz1qdep8h7^18
 @q^13196^1:12:0
 @q^13197^1:12:0
 @q^13443^1:0:0
+@q^13444^1:0:0
 @q^13446^1:0:0
 @q^13815^1:12:0
 @q^13820^0:2:0
@@ -505,6 +520,7 @@ GoldScout-export 6^mhdz1qdep8h7^18
 @q^246722^1:12:0
 @q^246725^1:12:0
 @q^246938^1:12:0
+@q^247892^1:12:0
 @q^248695^1:0:1
 @q^248699^1:0:1
 @q^248711^2:0:1
@@ -517,6 +533,7 @@ GoldScout-export 6^mhdz1qdep8h7^18
 @q^280459^1:12:0
 @q^281017^1:0:0
 @q^281018^1:0:0
+@q^282028^1:12:0
 @m^1422^Maleterres de l'ouest
 @m^1423^Maleterres de l'est
 @m^1435^Marais des Chagrins
@@ -524,6 +541,7 @@ GoldScout-export 6^mhdz1qdep8h7^18
 @m^1447^Azshara
 @m^1448^Gangrebois
 @m^1449^Cratère d'Un'Goro
+@m^2482^Mont Hyjal
 @c^4357^
 @c^4358^
 @c^4359^
@@ -932,6 +950,7 @@ GoldScout-export 6^mhdz1qdep8h7^18
 @a^12922^243:2,244:1
 @a^14661^255:1
 @a^236028^183:1,204:1,224:1
+@a^244525^293:1,294:1,315:1
 @a^246920^113:5
 @a^246991^111:1
 @a^247006^113:1
@@ -939,4 +958,8 @@ GoldScout-export 6^mhdz1qdep8h7^18
 @a^247033^113:1
 @a^247470^188:1,229:3
 @a^247972^308:1
+@a^248395^272:4,273:1,291:1,293:3,294:4,311:4
+@a^249051^293:1
+@a^261914^314:2
+@a^278137^293:4
 @l^0^frFR

@@ -1,4 +1,4 @@
-GoldScout-export 6^frkmwvxujppy^26
+GoldScout-export 6^frkmwvxujppy^27
 121^2^0^15^16^1436^0.3879^0.7000^2^Defias Pathstalker^1499:1:1,2589:1:2^
 345^1^0^24^24^1433^0.1083^0.4951^1^Bellygrub^723:1:1,2677:1:1,3172:1:1^
 423^1^0^15^16^1433^0.1349^0.6163^1^Redridge Mongrel^1789:1:1,2287:1:1,2592:1:2,2984:1:1^
@@ -144,6 +144,8 @@ GoldScout-export 6^frkmwvxujppy^26
 10617^1^0^26^26^1441^0.1855^0.2221^1^Galak Messenger^^
 10757^2^0^27^28^1441^0.3546^0.3561^2^Boiling Elemental^9451:2:3^
 11521^1^0^37^38^1443^0.5447^0.6328^1^Kodo Apparition^^
+11559^1^0^39^40^2652^0.2527^0.2351^1^Outcast Necromancer^260347:1:1^
+11561^8^0^37^43^2652^0.3190^0.2351^8^Undead Ravager^4306:2:5,4607:1:1^
 11562^4^0^33^34^1443^0.3305^0.3432^4^Drysnap Crawler^7090:1:1,15346:1:1,15878:1:1,17057:1:1^
 11563^1^0^35^35^1443^0.3172^0.3514^1^Drysnap Pincer^17057:1:1^
 11576^1^0^32^34^1443^0.5076^0.2593^1^Whirlwind Ripper^^
@@ -261,6 +263,7 @@ GoldScout-export 6^frkmwvxujppy^26
 @i^4556^Speckled Shell Fragment
 @i^4585^Dripping Spider Mandible
 @i^4586^Smooth Raptor Skin
+@i^4607^Delicious Cave Mold
 @i^4614^Pendant of Myzrael
 @i^4634^Iron Lockbox
 @i^4718^Nightsky Mantle
@@ -367,6 +370,7 @@ GoldScout-export 6^frkmwvxujppy^26
 @i^248708^Waylaid Crate: Expert Fabrics
 @i^251457^Plans: Steel Spear
 @i^254432^Carved Centaur Totem
+@i^260347^Tattered Journal
 @i^262888^Sealed Journeyman's Writ
 @i^262889^Sealed Expert's Writ
 @q^723^1:7:1
@@ -476,6 +480,7 @@ GoldScout-export 6^frkmwvxujppy^26
 @q^4556^0:15:0
 @q^4585^0:15:0
 @q^4586^0:15:0
+@q^4607^1:0:0
 @q^4614^2:4:0
 @q^4634^2:15:0
 @q^4718^2:4:0
@@ -582,6 +587,7 @@ GoldScout-export 6^frkmwvxujppy^26
 @q^248708^2:0:1
 @q^251457^2:9:0
 @q^254432^2:15:0
+@q^260347^1:15:0
 @q^262888^3:0:0
 @q^262889^3:0:0
 @m^1417^Arathi Highlands
@@ -594,6 +600,7 @@ GoldScout-export 6^frkmwvxujppy^26
 @m^1443^Desolace
 @m^1445^Dustwallow Marsh
 @m^2548^Riverglades
+@m^2652^Shen'dralas
 @c^118^
 @c^724^
 @c^733^
@@ -1982,6 +1989,8 @@ GoldScout-export 6^frkmwvxujppy^26
 @a^10617^83:1
 @a^10757^126:1,147:1
 @a^11521^250:1
+@a^11559^85:1
+@a^11561^46:1,66:1,86:2,105:2,106:2
 @a^11562^126:3,127:1
 @a^11563^146:1
 @a^11576^110:1
