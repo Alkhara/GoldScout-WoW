@@ -1,7 +1,8 @@
-GoldScout-export 6^jm1lxu436psy^7
-6^4^0^1^2^1429^0.4740^0.3628^4^Kobold Daninho^755:4:4,2589:1:1,2651:1:1,3363:1:1,4536:1:1^
+GoldScout-export 6^jm1lxu436psy^8
+6^14^0^1^2^1429^0.4751^0.3623^14^Kobold Daninho^755:6:6,1380:1:1,2589:2:2,2651:1:1,3363:1:1,4536:3:3,247834:1:1,247839:1:1^
 69^1^0^2^2^1429^0.4629^0.4040^1^Lobo Silvestre^750:1:1,4865:1:1^
 217^1^0^19^19^1431^0.1275^0.6161^1^Venaracna^2251:1:1,3174:1:1^
+257^10^0^3^3^1429^0.4691^0.3368^10^Trabalhador Kobold^159:1:1,755:5:5,1368:1:1,1370:1:1,1374:1:1,1377:1:1,2211:1:1,2589:3:3,2650:2:2,4536:1:1,247839:3:3^
 299^10^0^1^1^1429^0.4756^0.3900^10^Lobo Jovem^750:7:7,1372:1:1,1377:1:1,2672:1:1,3363:1:1,4865:4:4,7073:5:5,7074:2:2^
 569^1^0^21^21^1431^0.1272^0.6174^1^Reclusa Verde^1081:1:1,2251:1:1^
 832^5^0^18^19^1436^0.4626^0.4382^5^Redemoinho de Poeira^2091:3:3,2988:1:1,7069:2:2^
@@ -13,19 +14,26 @@ GoldScout-export 6^jm1lxu436psy^7
 3261^17^0^18^19^1413^0.4605^0.5303^17^Tecespinho Costagulha^955:1:1,1179:1:1,2216:1:1,2589:4:6,2592:2:4,5075:6:10,5085:12:18,14559:1:1^
 3263^12^0^19^20^1413^0.5156^0.5680^12^Geomante Costagulha^2589:5:11,2592:1:2,4537:1:1,5075:5:9^
 4129^1^0^18^19^1413^0.4389^0.5344^1^Rosnador Presavaia^3301:1:1^
+@i^159^Água Refrescante da Fonte
 @i^750^Carne Dura de Lobo
 @i^755^Vela Derretida
 @i^955^Pergaminho do Intelecto
 @i^1081^Carne Crocante de Aranha
 @i^1179^Leite Gelado
+@i^1368^Luvas de Couro Roto
+@i^1370^Braçadeiras de Couro Roto
 @i^1372^Manto Roto
+@i^1374^Sapatos Puídos
 @i^1377^Luvas Puídas
+@i^1380^Veste Puída
 @i^1745^Colete de Malha com Rendas
 @i^2091^Pó Mágico
+@i^2211^Escudo Grande Amassado
 @i^2216^Broquel Simples
 @i^2251^Perna de Aranha Pegajosa
 @i^2589^Linho
 @i^2592^Lã
+@i^2650^Botas Frágeis Encadeadas
 @i^2651^Braçadeiras Frágeis Encadeadas
 @i^2672^Acém de Lobo
 @i^2673^Carne de Coiote
@@ -48,19 +56,28 @@ GoldScout-export 6^jm1lxu436psy^7
 @i^14559^Faixa do Prospector
 @i^211853^Pergaminho: POÇO VOCE
 @i^211854^Pergaminho: OMITIR KESA
+@i^247834^Livro Mordiscado
+@i^247839^Livro Roubado
+@q^159^1:0:0
 @q^750^1:12:0
 @q^755^0:15:0
 @q^955^1:0:0
 @q^1081^1:7:1
 @q^1179^1:0:0
+@q^1368^0:4:0
+@q^1370^0:4:0
 @q^1372^0:4:0
+@q^1374^0:4:0
 @q^1377^0:4:0
+@q^1380^0:4:0
 @q^1745^0:4:0
 @q^2091^1:0:0
+@q^2211^0:4:0
 @q^2216^0:4:0
 @q^2251^1:7:1
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2650^0:4:0
 @q^2651^0:4:0
 @q^2672^1:7:1
 @q^2673^1:7:1
@@ -83,6 +100,8 @@ GoldScout-export 6^jm1lxu436psy^7
 @q^14559^2:4:0
 @q^211853^1:0:0
 @q^211854^1:0:0
+@q^247834^1:15:0
+@q^247839^1:12:0
 @m^1413^Sertões
 @m^1429^Floresta de Elwynn
 @m^1431^Floresta do Crepúsculo
@@ -1284,9 +1303,10 @@ GoldScout-export 6^jm1lxu436psy^7
 @c^279981^
 @c^279982^
 @c^286152^
-@a^6^149:4
+@a^6^149:14
 @a^69^169:1
 @a^217^242:1
+@a^257^129:7,149:3
 @a^299^149:8,169:2
 @a^569^242:1
 @a^832^87:1,147:1,168:1,189:1,293:1

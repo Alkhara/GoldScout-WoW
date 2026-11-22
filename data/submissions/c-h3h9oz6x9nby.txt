@@ -1,4 +1,4 @@
-GoldScout-export 6^h3h9oz6x9nby^15
+GoldScout-export 6^h3h9oz6x9nby^16
 587^5^0^33^34^1434^0.3053^0.1815^5^Bloodscalp Warrior^1519:2:2,1520:1:1,1710:1:1,2732:1:1,3901:3:3,3915:1:1,4306:3:6,7367:1:1^
 588^8^0^34^35^1434^0.2449^0.1193^8^Bloodscalp Scout^1519:2:2,2749:1:1,3784:1:1,3795:1:1,3796:1:1,3915:2:2,4306:4:7^
 595^10^0^34^35^1434^0.2481^0.1221^10^Bloodscalp Hunter^1519:3:3,1725:1:1,2592:1:1,2740:1:1,3795:1:1,3915:1:1,4306:3:4,4338:1:1,277957:1:1^
@@ -295,6 +295,7 @@ GoldScout-export 6^h3h9oz6x9nby^15
 @i^4556^Speckled Shell Fragment
 @i^4585^Dripping Spider Mandible
 @i^4586^Smooth Raptor Skin
+@i^4603^Raw Spotted Yellowtail
 @i^4607^Delicious Cave Mold
 @i^4724^Humbert's Helm
 @i^4726^Chief Brigadier Cloak
@@ -327,6 +328,8 @@ GoldScout-export 6^h3h9oz6x9nby^15
 @i^6300^Husk Fragment
 @i^6302^Delicate Insect Wing
 @i^6308^Raw Bristle Whisker Catfish
+@i^6358^Oily Blackmouth
+@i^6359^Firefin Snapper
 @i^6362^Raw Rockscale Cod
 @i^6386^Glimmering Mail Legguards
 @i^6388^Glimmering Mail Pauldrons
@@ -345,6 +348,7 @@ GoldScout-export 6^h3h9oz6x9nby^15
 @i^7711^Robe of Doan
 @i^7718^Herod's Shoulder
 @i^7756^Dog Training Gloves
+@i^8365^Raw Mithril Head Trout
 @i^9299^Thermaplugg's Safe Combination
 @i^9308^Grime-Encrusted Object
 @i^9446^Electrocutioner Leg
@@ -376,6 +380,7 @@ GoldScout-export 6^h3h9oz6x9nby^15
 @i^19937^Small Scorpid Claw
 @i^19938^Heavy Scorpid Leg
 @i^21150^Iron Bound Trunk
+@i^21151^Rumsey Rum Black Label
 @i^21228^Mithril Bound Trunk
 @i^213422^Illegible Recipe
 @i^213545^Scroll: PEATCHY ATTAX
@@ -535,6 +540,7 @@ GoldScout-export 6^h3h9oz6x9nby^15
 @q^4556^0:15:0
 @q^4585^0:15:0
 @q^4586^0:15:0
+@q^4603^1:7:1
 @q^4607^1:0:0
 @q^4724^2:4:0
 @q^4726^2:4:0
@@ -567,6 +573,8 @@ GoldScout-export 6^h3h9oz6x9nby^15
 @q^6300^0:15:0
 @q^6302^0:15:0
 @q^6308^1:7:1
+@q^6358^1:7:1
+@q^6359^1:7:1
 @q^6362^1:7:1
 @q^6386^2:4:0
 @q^6388^2:4:0
@@ -585,6 +593,7 @@ GoldScout-export 6^h3h9oz6x9nby^15
 @q^7711^2:4:0
 @q^7718^3:4:0
 @q^7756^3:4:0
+@q^8365^1:7:1
 @q^9299^1:13:0
 @q^9308^1:12:0
 @q^9446^3:2:0
@@ -616,6 +625,7 @@ GoldScout-export 6^h3h9oz6x9nby^15
 @q^19937^0:15:0
 @q^19938^0:15:0
 @q^21150^1:15:0
+@q^21151^1:0:0
 @q^21228^1:15:0
 @q^213422^1:12:0
 @q^213545^1:0:0
@@ -659,6 +669,7 @@ GoldScout-export 6^h3h9oz6x9nby^15
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
 @m^1441^Thousand Needles
+@m^1443^Desolace
 @m^1445^Dustwallow Marsh
 @c^118^
 @c^724^
@@ -1557,4 +1568,5 @@ GoldScout-export 6^h3h9oz6x9nby^15
 @a^260429^88:1
 @a^269175^106:2,107:1
 @f^1434^0^7^225^3820:3:5,21150:3:3,21228:2:2^127:4,305:3
+@f^1443^0^20^225^3820:2:4,4603:2:2,6358:2:3,6359:5:6,6362:5:5,8365:1:1,21150:5:8,21151:2:3^284:15,305:5
 @l^0^enUS

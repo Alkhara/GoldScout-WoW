@@ -1,4 +1,4 @@
-GoldScout-export 6^o8dkygx7h4v7^9
+GoldScout-export 6^o8dkygx7h4v7^10
 3^1^0^25^25^1431^0.2240^0.3235^1^Flesh Eater^887:1:1,4306:1:1^
 117^1^0^11^12^1436^0.4075^0.2225^1^Riverpaw Gnoll^2589:1:2^
 157^2^0^14^15^1436^0.4166^0.3096^2^Goretusk^731:1:1,769:2:4,2677:1:1,9763:1:1^
@@ -60,8 +60,11 @@ GoldScout-export 6^o8dkygx7h4v7^9
 1042^2^0^23^24^1437^0.5859^0.3918^2^Red Whelp^3176:2:2,5635:1:1^
 1043^7^0^24^25^1437^0.6152^0.3733^7^Lost Whelp^3175:2:2,3176:2:2,6568:1:1,279385:4:4^
 1044^2^0^26^27^1437^0.6347^0.3303^2^Flamesnorting Whelp^279385:1:1^
+1051^4^0^27^28^1437^0.6116^0.2674^4^Dark Iron Dwarf^1205:1:1,2785:1:1,3210:1:1,4306:1:3^
+1053^3^0^29^30^1437^0.6129^0.2886^3^Dark Iron Tunneler^4306:1:3,5108:1:1^
+1054^2^0^30^31^1437^0.6158^0.2912^2^Dark Iron Demolitionist^2592:1:2^
 1057^7^0^27^28^1437^0.4775^0.4573^7^Dragonmaw Bonewarder^1205:1:1,2222:1:1,4306:2:4^
-1069^6^0^25^26^1437^0.6321^0.3477^6^Crimson Whelp^3175:1:1,279385:3:3^
+1069^7^0^25^26^1437^0.6298^0.3426^7^Crimson Whelp^3175:1:1,279385:3:3^
 1109^1^0^14^14^1436^0.3069^0.3809^1^Fleshripper^6889:1:1^
 1110^12^0^27^28^1431^0.1643^0.3595^12^Skeletal Raider^2592:2:3,4306:3:4,4606:2:2^
 1157^16^0^26^27^1437^0.1394^0.2984^16^Cursed Sailor^2592:2:3,4306:1:2,248686:1:1^
@@ -69,6 +72,7 @@ GoldScout-export 6^o8dkygx7h4v7^9
 1159^1^0^29^29^1437^0.1415^0.2963^1^First Mate Snellig^3619:1:1^
 1160^1^0^30^30^1437^0.1447^0.2332^1^Captain Halyndor^2629:1:1^
 1353^1^0^29^29^1437^0.3318^0.5164^1^Sarltooth^3638:1:1,3685:1:1,4461:1:1^
+1364^1^0^34^34^1437^0.6168^0.2734^1^Balgaras the Foul^3639:1:1^
 1400^1^0^23^24^1437^0.3927^0.3026^1^Wetlands Crocolisk^770:1:1^
 2089^6^0^25^26^1437^0.1979^0.2550^6^Giant Wetlands Crocolisk^770:3:3,3348:6:6,3667:2:2^
 2091^1^0^32^32^1437^0.5218^0.5347^1^Chieftain Nek'rosh^3625:1:1^
@@ -151,6 +155,7 @@ GoldScout-export 6^o8dkygx7h4v7^9
 @i^2698^Recipe: Cooked Crab Claw
 @i^2764^Small Dagger
 @i^2782^Mishandled Recurve Bow
+@i^2785^Stiff Recurve Bow
 @i^2794^An Old History Book
 @i^2964^Burnt Leather Gloves
 @i^2966^Warrior's Pants
@@ -166,6 +171,7 @@ GoldScout-export 6^o8dkygx7h4v7^9
 @i^3182^Spider's Silk
 @i^3192^Short Bastard Sword of the Falcon
 @i^3199^Battle Slayer of the Gorilla
+@i^3210^Brutal War Axe of the Bandit
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
 @i^3337^Dragonmaw War Banner
@@ -179,6 +185,7 @@ GoldScout-export 6^o8dkygx7h4v7^9
 @i^3632^Fangore's Paw
 @i^3633^Head of Gath'Ilzogg
 @i^3638^Sarltooth's Talon
+@i^3639^Ear of Balgaras
 @i^3667^Tender Crocolisk Meat
 @i^3685^Raptor Egg
 @i^3730^Big Bear Meat
@@ -198,6 +205,7 @@ GoldScout-export 6^o8dkygx7h4v7^9
 @i^4707^Lambent Scale Girdle
 @i^4775^Cracked Bill
 @i^4776^Ruffled Feather
+@i^5108^Dark Iron Leather
 @i^5114^Severed Talon
 @i^5233^Stone of Relu
 @i^5524^Thick-shelled Clam
@@ -309,6 +317,7 @@ GoldScout-export 6^o8dkygx7h4v7^9
 @q^2698^1:9:0
 @q^2764^0:2:0
 @q^2782^0:2:0
+@q^2785^0:2:0
 @q^2794^1:12:0
 @q^2964^1:4:0
 @q^2966^2:4:0
@@ -324,6 +333,7 @@ GoldScout-export 6^o8dkygx7h4v7^9
 @q^3182^1:7:1
 @q^3192^2:2:0
 @q^3199^2:2:0
+@q^3210^2:2:0
 @q^3299^0:15:0
 @q^3300^0:15:0
 @q^3337^1:12:0
@@ -337,6 +347,7 @@ GoldScout-export 6^o8dkygx7h4v7^9
 @q^3632^1:12:0
 @q^3633^1:12:0
 @q^3638^1:12:0
+@q^3639^1:12:0
 @q^3667^1:7:1
 @q^3685^1:7:1
 @q^3730^1:7:1
@@ -356,6 +367,7 @@ GoldScout-export 6^o8dkygx7h4v7^9
 @q^4707^2:4:0
 @q^4775^0:15:0
 @q^4776^0:15:0
+@q^5108^1:4:0
 @q^5114^0:15:0
 @q^5233^1:12:0
 @q^5524^1:7:0
@@ -623,8 +635,11 @@ GoldScout-export 6^o8dkygx7h4v7^9
 @a^1042^151:2
 @a^1043^131:1,132:2,151:2,152:1,213:1
 @a^1044^132:2
+@a^1051^92:2,112:1,132:1
+@a^1053^112:3
+@a^1054^112:2
 @a^1057^169:2,188:1,189:3,210:1
-@a^1069^132:5,173:1
+@a^1069^132:6,173:1
 @a^1109^146:1
 @a^1110^123:6,142:1,143:5
 @a^1157^102:9,122:7
@@ -632,6 +647,7 @@ GoldScout-export 6^o8dkygx7h4v7^9
 @a^1159^102:1
 @a^1160^82:1
 @a^1353^206:1
+@a^1364^112:1
 @a^1400^127:1
 @a^2089^84:3,103:3
 @a^2091^210:1

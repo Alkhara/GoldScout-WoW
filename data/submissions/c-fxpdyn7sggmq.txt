@@ -1,4 +1,4 @@
-GoldScout-export 6^fxpdyn7sggmq^67
+GoldScout-export 6^fxpdyn7sggmq^68
 667^8^0^39^40^1434^0.4521^0.3318^8^Skullsplitter Warrior^1520:1:1,1524:3:3,3815:1:1,3916:4:4,4306:3:6,8153:1:1^
 669^8^0^41^42^1434^0.4482^0.4330^8^Skullsplitter Hunter^1520:2:2,1645:1:1,2732:2:2,2751:1:1,3916:2:2,4306:2:4,4338:1:2^
 670^1^0^41^41^1434^0.4519^0.4328^1^Skullsplitter Witch Doctor^3916:1:1,8151:1:1^
@@ -455,6 +455,8 @@ GoldScout-export 6^fxpdyn7sggmq^67
 9041^2^0^0^0^0^0.0000^0.0000^0^^22241:2:2^
 9042^2^0^0^0^0^0.0000^0.0000^0^^11755:1:1,22242:1:1^
 9056^2^0^0^0^0^0.0000^0.0000^0^^10999:1:1,11842:1:1,251404:1:1^
+9097^4^0^0^0^0^0.0000^0.0000^0^^9944:1:1^
+9098^1^0^0^0^0^0.0000^0.0000^0^^14047:1:3^
 9156^2^0^0^0^0^0.0000^0.0000^0^^11129:1:5,11809:1:1^
 9157^1^0^40^40^1449^0.4371^0.0961^1^Bloodpetal Pest^^
 9162^7^0^49^50^1449^0.6836^0.3043^7^Young Diemetradon^5128:1:1,5133:2:2,11018:2:2,11114:3:3,11830:3:3,248695:1:1^
@@ -463,9 +465,12 @@ GoldScout-export 6^fxpdyn7sggmq^67
 9165^4^0^48^50^1449^0.7329^0.4431^4^Fledgling Pterrordax^5133:2:2,11018:1:1,280459:1:1^
 9166^12^0^50^52^1449^0.5658^0.7769^12^Pterrordax^5133:5:5,8146:1:1,11018:4:4,11831:3:3,280459:2:2^
 9167^25^0^52^54^1449^0.3208^0.4772^25^Frenzied Pterrordax^5128:2:2,5133:16:16,8146:4:4,11018:8:8,11831:5:5,280459:4:4^
+9201^1^0^0^0^0^0.0000^0.0000^0^^8952:1:1^
+9258^2^0^0^0^0^0.0000^0.0000^0^^14047:1:1,16680:1:1,16716:1:1^
 9318^6^0^47^49^1427^0.4658^0.2401^6^Incendosaur^5128:2:2,5133:4:4^
 9319^1^0^0^0^0^0.0000^0.0000^0^^11628:1:1^
 9376^1^0^56^56^1449^0.4870^0.4911^1^Blazerunner^4787:1:1^
+9416^3^0^0^0^0^0.0000^0.0000^0^^12203:2:2,15253:1:1^
 9453^1^0^54^54^1446^0.7046^0.4996^1^Aquementas^^
 9464^1^0^51^51^1448^0.4842^0.9333^1^Overlord Ror^15879:1:1^
 9502^1^0^0^0^0^0.0000^0.0000^0^^11745:1:1^
@@ -838,6 +843,7 @@ GoldScout-export 6^fxpdyn7sggmq^67
 @i^9795^Ivycloth Gloves of the Sorcerer
 @i^9855^Archer's Belt of the Monkey
 @i^9941^Abjurer's Mantle of Intellect
+@i^9944^Abjurer's Crystal of the Tiger
 @i^9953^Chieftain's Headdress of Nature's Wrath
 @i^10076^Lord's Armguards of Agility
 @i^10119^Ornate Greaves of the Monkey
@@ -993,6 +999,7 @@ GoldScout-export 6^fxpdyn7sggmq^67
 @i^15237^Corpse Harvester of the Bandit
 @i^15245^Vorpal Dagger of the Sorcerer
 @i^15251^Headstriker Sword of the Bandit
+@i^15253^Beheading Blade of the Bandit
 @i^15260^Stone Hammer of the Bear
 @i^15264^Backbreaker of the Eagle
 @i^15420^Ironfeather
@@ -1004,6 +1011,8 @@ GoldScout-export 6^fxpdyn7sggmq^67
 @i^15767^Hameya's Key
 @i^15785^Zaeldarr's Head
 @i^15879^Overlord Ror's Claw
+@i^16680^Beaststalker's Belt
+@i^16716^Wildheart Belt
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
@@ -1350,6 +1359,7 @@ GoldScout-export 6^fxpdyn7sggmq^67
 @q^9795^2:4:0
 @q^9855^2:4:0
 @q^9941^2:4:0
+@q^9944^2:4:0
 @q^9953^2:4:0
 @q^10076^2:4:0
 @q^10119^2:4:0
@@ -1505,6 +1515,7 @@ GoldScout-export 6^fxpdyn7sggmq^67
 @q^15237^2:2:0
 @q^15245^2:2:0
 @q^15251^2:2:0
+@q^15253^2:2:0
 @q^15260^2:2:0
 @q^15264^2:2:0
 @q^15420^1:7:1
@@ -1516,6 +1527,8 @@ GoldScout-export 6^fxpdyn7sggmq^67
 @q^15767^1:12:0
 @q^15785^1:12:0
 @q^15879^1:12:0
+@q^16680^3:4:0
+@q^16716^3:4:0
 @q^17056^1:15:1
 @q^17057^1:15:0
 @q^17058^1:15:0
