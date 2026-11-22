@@ -1,4 +1,4 @@
-GoldScout-export 5^r2ulpeec7gk4^10
+GoldScout-export 5^r2ulpeec7gk4^11
 1529^6^0^9^10^1420^0.7586^0.6026^6^Bleeding Horror^1420:1:1,1429:1:1,2589:1:1,4604:1:1^
 1532^4^0^10^11^1420^0.7567^0.5970^4^Wandering Spirit^2968:1:1^
 1889^1^0^20^20^1421^0.6197^0.6883^1^Dalaran Wizard^2589:1:1^
@@ -37,6 +37,10 @@ GoldScout-export 5^r2ulpeec7gk4^10
 3671^1^0^0^0^0^0.0000^0.0000^0^^9739:1:1^
 3673^1^0^0^0^0^0.0000^0.0000^0^^9741:1:1^
 3674^1^0^0^0^0^0.0000^0.0000^0^^^
+3765^12^0^26^27^1440^0.8068^0.4985^12^Bleakheart Satyr^1205:1:1,1757:1:1,1786:1:1,3770:1:1,4306:1:1,5481:4:4,16654:1:1,211854:1:1^
+3767^14^0^27^28^1440^0.8116^0.4970^14^Bleakheart Trickster^1760:1:1,1828:1:1,2592:3:4,3770:1:1,4306:1:1,5481:4:4,16647:2:2,211855:1:1^
+3770^20^0^27^28^1440^0.8103^0.4940^20^Bleakheart Shadowstalker^1712:1:1,3770:2:2,4306:3:4,5481:4:4,16645:1:1,16647:1:1,16651:1:1,16653:1:1^
+3771^15^0^26^27^1440^0.8056^0.5033^15^Bleakheart Hellcaller^1828:1:1,2592:1:1,3770:2:2,4306:4:6,5481:4:4,16656:1:1^
 3840^16^0^0^0^0^0.0000^0.0000^0^^2589:4:8,2592:2:4,211784:1:1^
 3851^2^0^0^0^0^0.0000^0.0000^0^^^
 3853^6^0^0^0^0^0.0000^0.0000^0^^1770:1:1,3012:1:1,248684:1:1^
@@ -109,18 +113,23 @@ GoldScout-export 5^r2ulpeec7gk4^10
 @i^1506^Warped Leather Gloves
 @i^1512^Crude Battle Axe
 @i^1516^Worn Hatchet
+@i^1712^Scroll of Spirit II
 @i^1735^Worn Mail Pants
 @i^1741^Laced Cloak
 @i^1747^Linked Chain Boots
+@i^1757^Reinforced Chain Cloak
+@i^1760^Reinforced Chain Shoulderpads
 @i^1766^Canvas Cloak
 @i^1767^Canvas Gloves
 @i^1769^Canvas Shoulderpads
 @i^1770^Canvas Vest
 @i^1775^Brocade Gloves
 @i^1776^Brocade Pants
+@i^1786^Cross-stitched Vest
 @i^1790^Patched Cloak
 @i^1811^Blunt Claymore
 @i^1817^Stock Shortsword
+@i^1828^Stone War Axe
 @i^2215^Wooden Shield
 @i^2219^Small Round Shield
 @i^2251^Gooey Spider Leg
@@ -157,6 +166,7 @@ GoldScout-export 5^r2ulpeec7gk4^10
 @i^3702^Bear Gall Bladder
 @i^3730^Big Bear Meat
 @i^3731^Lion Meat
+@i^3770^Mutton Chop
 @i^3820^Stranglekelp
 @i^3931^Poisoned Spider Fang
 @i^4306^Silk Cloth
@@ -178,6 +188,7 @@ GoldScout-export 5^r2ulpeec7gk4^10
 @i^5269^Silithid Ichor
 @i^5442^Head of Arugal
 @i^5467^Kodo Meat
+@i^5481^Satyr Horns
 @i^5635^Sharp Claw
 @i^5734^Super Reaper 6000 Blueprints
 @i^6308^Raw Bristle Whisker Catfish
@@ -210,6 +221,12 @@ GoldScout-export 5^r2ulpeec7gk4^10
 @i^14161^Pagan Cape of the Boar
 @i^14396^Incantations from the Nether
 @i^15011^Lupine Cord of Power
+@i^16645^Shredder Operating Manual - Page 1
+@i^16647^Shredder Operating Manual - Page 3
+@i^16651^Shredder Operating Manual - Page 7
+@i^16653^Shredder Operating Manual - Page 9
+@i^16654^Shredder Operating Manual - Page 10
+@i^16656^Shredder Operating Manual - Page 12
 @i^17056^Light Feather
 @i^20708^Tightly Sealed Trunk
 @i^21071^Raw Sagefish
@@ -245,18 +262,23 @@ GoldScout-export 5^r2ulpeec7gk4^10
 @q^1506^0:4:0
 @q^1512^0:2:0
 @q^1516^0:2:0
+@q^1712^1:0:0
 @q^1735^0:4:0
 @q^1741^0:4:0
 @q^1747^0:4:0
+@q^1757^0:4:0
+@q^1760^0:4:0
 @q^1766^0:4:0
 @q^1767^0:4:0
 @q^1769^0:4:0
 @q^1770^0:4:0
 @q^1775^0:4:0
 @q^1776^0:4:0
+@q^1786^0:4:0
 @q^1790^0:4:0
 @q^1811^0:2:0
 @q^1817^0:2:0
+@q^1828^0:2:0
 @q^2215^0:4:0
 @q^2219^0:4:0
 @q^2251^1:7:1
@@ -293,6 +315,7 @@ GoldScout-export 5^r2ulpeec7gk4^10
 @q^3702^0:15:0
 @q^3730^1:7:1
 @q^3731^1:7:1
+@q^3770^1:0:0
 @q^3820^1:7:1
 @q^3931^0:15:0
 @q^4306^1:7:1
@@ -314,6 +337,7 @@ GoldScout-export 5^r2ulpeec7gk4^10
 @q^5269^0:15:0
 @q^5442^1:12:0
 @q^5467^1:7:1
+@q^5481^1:12:0
 @q^5635^1:7:1
 @q^5734^1:12:0
 @q^6308^1:7:1
@@ -346,6 +370,12 @@ GoldScout-export 5^r2ulpeec7gk4^10
 @q^14161^2:4:0
 @q^14396^1:12:0
 @q^15011^2:4:0
+@q^16645^1:12:0
+@q^16647^1:12:0
+@q^16651^1:12:0
+@q^16653^1:12:0
+@q^16654^1:12:0
+@q^16656^1:12:0
 @q^17056^1:15:1
 @q^20708^1:15:0
 @q^21071^1:7:1
@@ -369,6 +399,7 @@ GoldScout-export 5^r2ulpeec7gk4^10
 @m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
 @m^1437^Wetlands
+@m^1440^Ashenvale
 @m^1442^Stonetalon Mountains
 @c^118^
 @c^724^
@@ -1117,6 +1148,10 @@ GoldScout-export 5^r2ulpeec7gk4^10
 @a^3263^168:1,188:6
 @a^3503^288:1
 @a^3630^210:1
+@a^3765^195:1,196:4,215:2,216:5
+@a^3767^196:9,216:5
+@a^3770^196:18,216:2
+@a^3771^195:4,196:1,215:2,216:8
 @a^3988^212:3,213:3,233:1
 @a^3989^212:1,213:7,214:1,232:2,233:6
 @a^3991^213:2,233:1

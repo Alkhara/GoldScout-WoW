@@ -1,30 +1,60 @@
-GoldScout-export 6^37dfqf16vx2u^2
+GoldScout-export 6^37dfqf16vx2u^3
 2384^1^0^23^23^1424^0.3932^0.3724^1^Verhungernder Berglöwe^3731:1:1,5135:1:1^
+2554^3^0^32^33^1417^0.6943^0.6306^3^Axtwerferin der Bleichborken^3385:1:1,4306:2:3^
+2555^8^0^33^34^1417^0.6769^0.7078^8^Hexendoktorin der Bleichborken^3771:1:1,4306:2:3,4522:4:4,216483:1:1^
+2556^26^0^34^35^1417^0.6802^0.7849^26^Kopfjäger der Witherbark^1710:1:1,3771:1:1,3786:1:1,4306:7:11,4338:1:1,4503:8:8,7443:1:1,15286:1:1,216483:2:2^
+2557^9^0^35^36^1417^0.6803^0.8011^9^Schattenjägerin der Bleichborken^4306:2:4,4503:2:2,5040:1:1,216483:2:2^
 2572^6^0^35^36^1417^0.8169^0.3768^6^Kobold der Trockenstoppel^2592:1:1,4306:2:2,4435:3:3,4539:1:1^
 2573^15^0^37^38^1417^0.8428^0.3167^15^Feldvermesser der Trockenstoppel^1708:1:1,1710:1:1,3782:1:1,4306:3:6,4435:4:4,4480:1:1,4539:1:1^
 2574^19^0^36^37^1417^0.8434^0.3276^19^Buddler der Trockenstoppel^4306:5:12,4338:2:2,4435:5:5,4539:2:2^
+2761^5^0^38^39^1417^0.6733^0.3019^5^Schäumender Verbannter^4481:3:3,4791:2:7,7070:1:1^
+3560^5^0^34^34^1417^0.6983^0.6834^5^Heilungszauberschutz^^
 @i^1708^Süßer Nektar
 @i^1710^Großer Heiltrank
 @i^2592^Wollstoff
+@i^3385^Geringer Manatrank
 @i^3731^Löwenfleisch
+@i^3771^Wildschweinschenkel
 @i^3782^Große Kriegskeule
+@i^3786^Glänzender Langdolch
 @i^4306^Seidenstoff
 @i^4338^Magiestoff
 @i^4435^Korn von Myzrael
 @i^4480^Donnernder Glücksbringer
+@i^4481^Schäumender Glücksbringer
+@i^4503^Hauer der Witherbark
+@i^4522^Medizinbeutel der Witherbark
 @i^4539^Goldrindenapfel
+@i^4791^Verzaubertes Wasser
+@i^5040^Schattenjägermesser
 @i^5135^Dünne schwarze Klaue
+@i^7070^Elementarwasser
+@i^7443^Schildwachenhandschuhe des Wolfs
+@i^15286^Rotholz-Langbogen
+@i^216483^Schlaghammer der Witherbark
 @q^1708^1:0:0
 @q^1710^1:0:0
 @q^2592^1:7:1
+@q^3385^1:0:0
 @q^3731^1:7:1
+@q^3771^1:0:0
 @q^3782^0:2:0
+@q^3786^0:2:0
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4435^1:12:0
 @q^4480^1:0:0
+@q^4481^1:0:0
+@q^4503^1:12:0
+@q^4522^1:12:0
 @q^4539^1:0:0
+@q^4791^1:0:0
+@q^5040^1:2:0
 @q^5135^0:15:0
+@q^7070^1:7:1
+@q^7443^2:4:0
+@q^15286^2:2:0
+@q^216483^1:0:0
 @m^1417^Arathihochland
 @m^1424^Vorgebirge von Hillsbrad
 @c^118^
@@ -1250,7 +1280,13 @@ GoldScout-export 6^37dfqf16vx2u^2
 @c^285281^
 @c^286152^
 @a^2384^147:1
+@a^2554^253:2,254:1
+@a^2555^253:1,254:1,272:1,293:4,313:1
+@a^2556^293:2,313:15,333:9
+@a^2557^313:4,333:5
 @a^2572^155:1,156:5
 @a^2573^116:2,136:9,137:3,156:1
 @a^2574^136:11,137:5,156:3
+@a^2761^113:3,133:2
+@a^3560^253:1,254:2,293:1,313:1
 @l^0^deDE

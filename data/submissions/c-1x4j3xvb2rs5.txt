@@ -1,4 +1,4 @@
-GoldScout-export 6^1x4j3xvb2rs5^18
+GoldScout-export 6^1x4j3xvb2rs5^19
 1035^1^0^27^28^1437^0.4910^0.4447^1^Arpenteur Dragonmaw^^
 1525^9^0^5^6^1420^0.5333^0.4989^9^Mort pourrissant^1181:1:1,2589:2:3,2855:2:2^
 1526^8^0^6^7^1420^0.5280^0.4985^8^Cadavre décomposé^^
@@ -16,12 +16,14 @@ GoldScout-export 6^1x4j3xvb2rs5^18
 2268^4^0^25^26^1424^0.3094^0.4194^4^Fantassin d'Hillsbrad^^
 2269^11^0^26^27^1424^0.2889^0.5548^11^Mineur d'Hillsbrad^422:1:1,1785:1:1,4306:1:1,262888:1:1^
 2270^4^0^27^28^1424^0.2839^0.5809^4^Sentinelle d'Hillsbrad^^
-2271^30^0^31^32^1416^0.1929^0.9026^27^Défenseur de Dalaran^1710:1:1,3714:2:2,4306:1:1^
+2271^31^0^31^32^1416^0.1955^0.8923^28^Défenseur de Dalaran^1710:1:1,3714:2:2,4306:2:3^
 2272^4^0^32^33^1416^0.1949^0.8990^4^Théurge de Dalaran^1708:1:1,3714:1:1,4306:1:1^
 2305^1^0^30^30^1424^0.3102^0.5539^1^Contremaître Bonds^^
 2333^1^0^30^30^1416^0.5657^0.6953^1^Valik le malfrat^^
 2335^1^0^30^30^1424^0.2985^0.4172^1^Magistrat Burnside^^
-2356^2^0^26^26^1424^0.3571^0.4973^2^Vieil ours gris^^
+2356^3^0^25^26^1424^0.3442^0.4152^3^Vieil ours gris^2940:1:1^
+2358^3^0^32^33^1416^0.2290^0.5576^3^Invocatrice de Dalaran^3780:1:1,4306:1:1^
+2359^6^0^32^33^1416^0.2372^0.5621^6^Elémentaire asservi^2838:3:5,3715:4:4,4553:1:1,4784:2:2,7408:1:1^
 2387^2^0^25^26^1424^0.2983^0.4258^2^Conseiller d'Hillsbrad^^
 2406^2^0^32^33^1416^0.3056^0.7588^2^Lion des montagnes^5810:1:1^
 2411^1^0^33^33^1416^0.1847^0.9080^1^Ricter^3689:1:1^
@@ -183,8 +185,10 @@ GoldScout-export 6^1x4j3xvb2rs5^18
 @i^2677^Côtes de sanglier
 @i^2763^Couteau de pêcheur
 @i^2780^Arc de chasse léger
+@i^2838^Pierre lourde
 @i^2855^Griffe putride
 @i^2858^Sang de sombredogue
+@i^2940^Patte d'ours sanglante
 @i^3172^Tripes de sanglier
 @i^3180^Ecaille de raptor tacheté
 @i^3181^Viande partiellement digérée
@@ -207,8 +211,10 @@ GoldScout-export 6^1x4j3xvb2rs5^18
 @i^3708^Bâtonnet d'Helcular
 @i^3712^Viande de tortue
 @i^3714^Rune gravée usée
+@i^3715^Brassards de liaison de terre
 @i^3740^Tranche-tête de guérison
 @i^3771^Jarret de cochon sauvage
+@i^3780^Mousquet à canon long
 @i^4306^Etoffe de soie
 @i^4337^Soie d'araignée épaisse
 @i^4338^Etoffe de tisse-mage
@@ -216,6 +222,7 @@ GoldScout-export 6^1x4j3xvb2rs5^18
 @i^4495^Amulette de pierre de sang
 @i^4512^Oeil de raptor des hautes-terres
 @i^4537^Banane de Tel'Abim
+@i^4553^Morceau de pierre délabré
 @i^4568^Hache de grunt de magie
 @i^4585^Mandibule d'araignée visqueuse
 @i^4586^Peau lisse de raptor
@@ -223,6 +230,7 @@ GoldScout-export 6^1x4j3xvb2rs5^18
 @i^4605^Champignon à pois rouges
 @i^4606^Morilles spongieuses
 @i^4634^Coffret en fer
+@i^4784^Pierre morte
 @i^5025^Tête d'Hezrul
 @i^5075^Joyau de sang
 @i^5085^Défense de huran Dos-hirsute
@@ -252,6 +260,7 @@ GoldScout-export 6^1x4j3xvb2rs5^18
 @i^6564^Cape chatoyante de l'aigle
 @i^6986^Lotus cramoisi
 @i^7073^Croc brisé
+@i^7408^Epaulières d'infiltrateur d'agilité
 @i^9299^Combinaison du coffre de Thermaplugg
 @i^9308^Objet sali
 @i^9738^Gemme de Cobrahn
@@ -316,8 +325,10 @@ GoldScout-export 6^1x4j3xvb2rs5^18
 @q^2677^1:7:1
 @q^2763^0:2:0
 @q^2780^0:2:0
+@q^2838^1:7:1
 @q^2855^1:12:0
 @q^2858^1:12:0
+@q^2940^0:15:0
 @q^3172^1:7:1
 @q^3180^0:15:0
 @q^3181^0:15:0
@@ -340,8 +351,10 @@ GoldScout-export 6^1x4j3xvb2rs5^18
 @q^3708^1:12:0
 @q^3712^1:7:1
 @q^3714^1:12:0
+@q^3715^1:12:0
 @q^3740^2:2:0
 @q^3771^1:0:0
+@q^3780^0:2:0
 @q^4306^1:7:1
 @q^4337^1:7:1
 @q^4338^1:7:1
@@ -349,6 +362,7 @@ GoldScout-export 6^1x4j3xvb2rs5^18
 @q^4495^1:12:0
 @q^4512^1:12:0
 @q^4537^1:0:0
+@q^4553^0:15:0
 @q^4568^2:2:0
 @q^4585^0:15:0
 @q^4586^0:15:0
@@ -356,6 +370,7 @@ GoldScout-export 6^1x4j3xvb2rs5^18
 @q^4605^1:0:0
 @q^4606^1:0:0
 @q^4634^2:15:0
+@q^4784^0:15:0
 @q^5025^1:12:0
 @q^5075^1:12:0
 @q^5085^1:12:0
@@ -385,6 +400,7 @@ GoldScout-export 6^1x4j3xvb2rs5^18
 @q^6564^2:4:0
 @q^6986^0:15:0
 @q^7073^0:15:0
+@q^7408^2:4:0
 @q^9299^1:13:0
 @q^9308^1:12:0
 @q^9738^1:12:0
@@ -1774,12 +1790,14 @@ GoldScout-export 6^1x4j3xvb2rs5^18
 @a^2268^165:1,166:3
 @a^2269^205:3,206:2,225:5,226:1
 @a^2270^205:1,225:3
-@a^2271^343:15,363:9,364:3
+@a^2271^245:1,343:15,363:9,364:3
 @a^2272^343:1,344:1,363:1,364:1
 @a^2305^226:1
 @a^2333^271:1
 @a^2335^165:1
-@a^2356^188:1,205:1
+@a^2356^106:1,188:1,205:1
+@a^2358^204:1,224:2
+@a^2359^204:2,224:2,225:2
 @a^2387^165:1,166:1
 @a^2406^286:1,306:1
 @a^2411^363:1
