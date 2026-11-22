@@ -1,4 +1,8 @@
-GoldScout-export 6^i2g9e21l4rvu^11
+GoldScout-export 6^i2g9e21l4rvu^12
+871^3^0^35^36^1434^0.2712^0.2354^3^Saltscale Warrior^5796:3:3,17057:1:1,17058:1:1^
+873^1^0^36^37^1434^0.2512^0.2292^1^Saltscale Oracle^17058:1:1^
+877^4^0^35^36^1434^0.2654^0.2573^4^Saltscale Forager^2725:1:1,5796:4:4,6362:1:2,9870:1:1,17058:3:3^
+879^3^0^35^36^1434^0.2672^0.2539^3^Saltscale Hunter^2740:1:1,5796:2:2,17057:2:2^
 1527^1^0^8^8^1420^0.6738^0.4190^1^Hungering Dead^2643:1:1^
 1529^8^0^9^10^1420^0.7646^0.6113^8^Bleeding Horror^2589:3:5,3214:1:1,4604:1:1^
 1530^8^0^10^11^1420^0.5271^0.2732^8^Rotting Ancestor^2589:1:2,4604:2:2,211786:1:1^
@@ -152,6 +156,8 @@ GoldScout-export 6^i2g9e21l4rvu^11
 @i^2643^Loose Chain Bracers
 @i^2645^Loose Chain Gloves
 @i^2672^Stringy Wolf Meat
+@i^2725^Green Hills of Stranglethorn - Page 1
+@i^2740^Green Hills of Stranglethorn - Page 16
 @i^2765^Hunting Knife
 @i^2785^Stiff Recurve Bow
 @i^2872^Vicious Night Web Spider Venom
@@ -211,6 +217,7 @@ GoldScout-export 6^i2g9e21l4rvu^11
 @i^5637^Large Fang
 @i^5794^Salty Scorpid Venom
 @i^5795^Hardened Tortoise Shell
+@i^5796^Encrusted Tail Fin
 @i^5805^Heart of Zeal
 @i^5810^Fresh Carcass
 @i^5848^Hollow Vulture Bone
@@ -269,6 +276,7 @@ GoldScout-export 6^i2g9e21l4rvu^11
 @i^9826^Durable Robe of Spirit
 @i^9839^Banded Gauntlets of Magic
 @i^9852^Conjurer's Robe of Spirit
+@i^9870^Renegade Circlet of the Beast
 @i^9904^Jazeraint Pauldrons of the Owl
 @i^11384^Broken Basilisk Teeth
 @i^11385^Basilisk Scale
@@ -351,6 +359,8 @@ GoldScout-export 6^i2g9e21l4rvu^11
 @q^2643^0:4:0
 @q^2645^0:4:0
 @q^2672^1:7:1
+@q^2725^1:12:0
+@q^2740^1:12:0
 @q^2765^0:2:0
 @q^2785^0:2:0
 @q^2872^1:12:0
@@ -410,6 +420,7 @@ GoldScout-export 6^i2g9e21l4rvu^11
 @q^5637^1:7:1
 @q^5794^1:12:0
 @q^5795^1:12:0
+@q^5796^1:12:0
 @q^5805^1:12:0
 @q^5810^1:12:0
 @q^5848^1:12:0
@@ -468,6 +479,7 @@ GoldScout-export 6^i2g9e21l4rvu^11
 @q^9826^2:4:0
 @q^9839^2:4:0
 @q^9852^2:4:0
+@q^9870^2:4:0
 @q^9904^2:4:0
 @q^11384^0:15:0
 @q^11385^0:15:0
@@ -1828,6 +1840,10 @@ GoldScout-export 6^i2g9e21l4rvu^11
 @c^279985^
 @c^279987^
 @c^286152^
+@a^871^85:3
+@a^873^85:1
+@a^877^85:1,105:3
+@a^879^85:1,105:2
 @a^1527^173:1
 @a^1529^235:1,255:7
 @a^1530^110:6,130:2

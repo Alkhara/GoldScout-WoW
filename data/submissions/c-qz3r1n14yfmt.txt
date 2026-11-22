@@ -1,4 +1,4 @@
-GoldScout-export 6^qz3r1n14yfmt^9
+GoldScout-export 6^qz3r1n14yfmt^10
 127^3^0^18^19^1436^0.3492^0.8559^3^Murloc Tidehunter^730:1:1,5523:1:1,5784:1:1^
 517^2^0^17^17^1436^0.3485^0.8540^2^Murloc Oracle^730:2:2^
 598^9^0^0^0^0^0.0000^0.0000^0^^1743:1:1,1744:1:1,2592:2:2,15926:1:1,248684:1:1^
@@ -85,7 +85,28 @@ GoldScout-export 6^qz3r1n14yfmt^9
 4725^1^0^37^38^1443^0.2597^0.7844^1^Crazed Sandstrider^^
 6035^3^0^0^0^0^0.0000^0.0000^0^^2592:1:3,4306:1:2,248705:1:1^
 6168^1^0^0^0^0^0.0000^0.0000^0^^1756:1:1^
+6206^4^0^0^0^0^0.0000^0.0000^0^^2592:1:3,6591:1:1,9308:1:1^
+6207^3^0^0^0^0^0.0000^0.0000^0^^9308:1:1,15224:1:1^
+6211^2^0^0^0^0^0.0000^0.0000^0^^1829:1:1,6602:1:1^
+6212^5^0^0^0^0^0.0000^0.0000^0^^3778:1:1,3812:1:1,4306:1:1,9326:1:1^
+6218^1^0^0^0^0^0.0000^0.0000^0^^^
+6220^1^0^0^0^0^0.0000^0.0000^0^^9451:1:2^
+6222^3^0^0^0^0^0.0000^0.0000^0^^4306:1:2^
+6223^1^0^0^0^0^0.0000^0.0000^0^^2592:1:2,9308:1:1^
+6224^5^0^0^0^0^0.0000^0.0000^0^^4306:2:3,4542:1:1,9308:1:1,248710:1:1^
+6226^2^0^0^0^0^0.0000^0.0000^0^^1829:1:1^
+6230^1^0^0^0^0^0.0000^0.0000^0^^^
+6232^1^0^0^0^0^0.0000^0.0000^0^^9842:1:1^
+6233^3^0^0^0^0^0.0000^0.0000^0^^2592:1:3,4542:1:1^
+6234^2^0^0^0^0^0.0000^0.0000^0^^4300:1:1,213543:1:1^
+6235^1^0^0^0^0^0.0000^0.0000^0^^6893:1:1,9446:1:1^
+6329^5^0^0^0^0^0.0000^0.0000^0^^3048:1:1,9308:2:2^
+6391^2^0^0^0^0^0.0000^0.0000^0^^2077:1:1,2592:1:1,4542:1:1^
+6407^1^0^0^0^0^0.0000^0.0000^0^^^
 6426^3^0^0^0^0^0.0000^0.0000^0^^3803:1:1,4306:3:5,6530:1:1^
+7079^1^0^0^0^0^0.0000^0.0000^0^^9453:1:1^
+7603^3^0^0^0^0^0.0000^0.0000^0^^4306:1:1^
+7800^1^0^0^0^0^0.0000^0.0000^0^^9299:1:1,9458:1:1,9867:1:1^
 10756^1^0^28^29^1441^0.3402^0.3300^1^Scalding Elemental^^
 10757^1^0^27^28^1441^0.3421^0.3274^1^Boiling Elemental^9451:1:2^
 11563^5^0^34^35^1443^0.2566^0.7951^5^Drysnap Pincer^1711:1:1,17057:2:2^
@@ -129,6 +150,8 @@ GoldScout-export 6^qz3r1n14yfmt^9
 @i^1815^Ornamental Mace
 @i^1816^Unbalanced Axe
 @i^1826^Rock Maul
+@i^1829^Short Cutlass
+@i^2077^Magician Staff of the Beast
 @i^2080^Hillborne Axe of the Beast
 @i^2221^Targe Shield
 @i^2295^Large Boar Tusk
@@ -142,6 +165,7 @@ GoldScout-export 6^qz3r1n14yfmt^9
 @i^2781^Dirty Blunderbuss
 @i^2785^Stiff Recurve Bow
 @i^2786^Oiled Blunderbuss
+@i^3048^Lambent Scale Legguards
 @i^3172^Boar Intestines
 @i^3186^Viking Sword of the Beast
 @i^3205^Inscribed Leather Bracers
@@ -156,10 +180,13 @@ GoldScout-export 6^qz3r1n14yfmt^9
 @i^3797^Interlaced Pants
 @i^3803^Hardened Cloak
 @i^3804^Hardened Leather Gloves
+@i^3812^Double Mail Gloves
 @i^3820^Stranglekelp
+@i^4300^Pattern: Guardian Leather Bracers
 @i^4306^Silk Cloth
 @i^4364^Coarse Blasting Powder
 @i^4541^Freshly Baked Bread
+@i^4542^Moist Cornbread
 @i^4603^Raw Spotted Yellowtail
 @i^4606^Spongy Morel
 @i^4607^Delicious Cave Mold
@@ -190,27 +217,39 @@ GoldScout-export 6^qz3r1n14yfmt^9
 @i^6530^Nightcrawlers
 @i^6540^Willow Pants of Spirit
 @i^6559^Bard's Buckler of the Defender
+@i^6591^Battleforge Wristguards of the Wolf
 @i^6596^Battleforge Legguards of Nature Protection
 @i^6597^Battleforge Shoulderguards of the Physician
+@i^6602^Dervish Bracers of Intellect
 @i^6685^Death Speaker Mantle
 @i^6686^Tusken Helm
 @i^6691^Swinetusk Shank
 @i^6826^Brilliant Scale
+@i^6893^Workshop Key
 @i^6990^Lesser Infernal Stone
 @i^7446^Sentinel Cloak of the Wolf
 @i^7558^Shimmering Stave of the Bear
 @i^7682^Torturing Poker
 @i^8365^Raw Mithril Head Trout
+@i^9299^Thermaplugg's Safe Combination
+@i^9308^Grime-Encrusted Object
+@i^9326^Grime-Encrusted Ring
+@i^9446^Electrocutioner Leg
 @i^9451^Bubbling Water
+@i^9453^Toxic Revenger
+@i^9458^Thermaplugg's Central Core
 @i^9835^Scaled Leather Tunic of the Channeler
 @i^9840^Banded Girdle of the Knight
+@i^9842^Banded Pauldrons of Stamina
 @i^9860^Archer's Cloak of the Eagle
 @i^9862^Archer's Trousers of the Monkey
+@i^9867^Renegade Cloak of the Champion
 @i^11391^Spined Bat Wing
 @i^11393^Small Bat Skull
 @i^11394^Bat Heart
 @i^11965^Quartz Ring of Eluding
 @i^14174^Buccaneer's Boots of Stamina
+@i^15224^Battlesmasher of the Gorilla
 @i^15230^Ridge Cleaver of Intellect
 @i^15242^Honed Stiletto of Frost Protection
 @i^15522^Spiked Chain Shield of the Defender
@@ -226,6 +265,7 @@ GoldScout-export 6^qz3r1n14yfmt^9
 @i^21153^Raw Greater Sagefish
 @i^211853^Scroll: VOCE WELL
 @i^211854^Scroll: OMIT KESA
+@i^213543^Scroll: UPDOG
 @i^213547^Scroll: THAW WORDS
 @i^215375^Tactician's Staff
 @i^248684^Waylaid Crate: Apprentice Textiles
@@ -234,6 +274,7 @@ GoldScout-export 6^qz3r1n14yfmt^9
 @i^248689^Waylaid Crate: Journeyman Curiosities
 @i^248690^Waylaid Crate: Earthly Expert Herbs
 @i^248705^Waylaid Crate: Journeyman Fabrics
+@i^248710^Waylaid Crate: Expert Parts
 @i^253938^Pattern: Filigreed Pristine Leggings
 @i^262888^Sealed Journeyman's Writ
 @i^273032^Bonebinder's Signet
@@ -274,6 +315,8 @@ GoldScout-export 6^qz3r1n14yfmt^9
 @q^1815^0:2:0
 @q^1816^0:2:0
 @q^1826^0:2:0
+@q^1829^0:2:0
+@q^2077^2:2:0
 @q^2080^2:2:0
 @q^2221^0:4:0
 @q^2295^0:15:0
@@ -287,6 +330,7 @@ GoldScout-export 6^qz3r1n14yfmt^9
 @q^2781^0:2:0
 @q^2785^0:2:0
 @q^2786^0:2:0
+@q^3048^2:4:0
 @q^3172^1:7:1
 @q^3186^2:2:0
 @q^3205^2:4:0
@@ -301,10 +345,13 @@ GoldScout-export 6^qz3r1n14yfmt^9
 @q^3797^0:4:0
 @q^3803^0:4:0
 @q^3804^0:4:0
+@q^3812^0:4:0
 @q^3820^1:7:1
+@q^4300^2:9:0
 @q^4306^1:7:1
 @q^4364^1:7:1
 @q^4541^1:0:0
+@q^4542^1:0:0
 @q^4603^1:7:1
 @q^4606^1:0:0
 @q^4607^1:0:0
@@ -335,27 +382,39 @@ GoldScout-export 6^qz3r1n14yfmt^9
 @q^6530^1:0:0
 @q^6540^2:4:0
 @q^6559^2:4:0
+@q^6591^2:4:0
 @q^6596^2:4:0
 @q^6597^2:4:0
+@q^6602^2:4:0
 @q^6685^3:4:0
 @q^6686^3:4:0
 @q^6691^3:2:0
 @q^6826^0:15:0
+@q^6893^1:13:0
 @q^6990^1:12:0
 @q^7446^2:4:0
 @q^7558^2:4:0
 @q^7682^3:2:0
 @q^8365^1:7:1
+@q^9299^1:13:0
+@q^9308^1:12:0
+@q^9326^1:12:0
+@q^9446^3:2:0
 @q^9451^1:0:0
+@q^9453^3:2:0
+@q^9458^3:4:0
 @q^9835^2:4:0
 @q^9840^2:4:0
+@q^9842^2:4:0
 @q^9860^2:4:0
 @q^9862^2:4:0
+@q^9867^2:4:0
 @q^11391^0:15:0
 @q^11393^0:15:0
 @q^11394^0:15:0
 @q^11965^2:4:0
 @q^14174^2:4:0
+@q^15224^2:2:0
 @q^15230^2:2:0
 @q^15242^2:2:0
 @q^15522^2:4:0
@@ -371,6 +430,7 @@ GoldScout-export 6^qz3r1n14yfmt^9
 @q^21153^1:7:1
 @q^211853^1:0:0
 @q^211854^1:0:0
+@q^213543^1:0:0
 @q^213547^1:0:0
 @q^215375^1:2:0
 @q^248684^1:0:1
@@ -379,6 +439,7 @@ GoldScout-export 6^qz3r1n14yfmt^9
 @q^248689^1:0:1
 @q^248690^1:0:1
 @q^248705^2:0:1
+@q^248710^2:0:1
 @q^253938^3:9:0
 @q^262888^3:0:0
 @q^273032^3:4:0

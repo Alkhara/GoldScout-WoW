@@ -1,4 +1,9 @@
-GoldScout-export 6^r551jaiwej7i^1
+GoldScout-export 6^r551jaiwej7i^2
+1765^2^0^10^11^1421^0.6341^0.0984^2^Worg^2672:2:2^
+1766^7^0^11^12^1421^0.5782^0.1338^7^Mottled Worg^2672:6:6,3164:3:3,3299:1:1,9747:1:1^
+1767^2^0^12^12^1421^0.6164^0.1262^2^Vile Fin Shredder^^
+1769^1^0^10^11^1421^0.4772^0.3405^1^Moonrage Whitescalp^^
+1778^1^0^11^11^1421^0.4939^0.1763^1^Ferocious Grizzled Bear^3170:1:1,11406:1:1^
 3988^2^0^19^20^1442^0.6652^0.4567^2^Venture Co. Operator^^
 3989^2^0^18^19^1442^0.6645^0.4586^2^Venture Co. Logger^2589:1:1^
 3992^5^0^20^21^1442^0.6386^0.3967^5^Venture Co. Engineer^814:1:1,2589:2:3,4359:1:2^
@@ -7,29 +12,79 @@ GoldScout-export 6^r551jaiwej7i^1
 4007^1^0^18^18^1442^0.6029^0.6004^1^Deepmoss Venomspitter^1081:1:1,14366:1:1^
 4070^4^0^20^21^1442^0.6403^0.3937^4^Venture Co. Builder^2589:2:3^
 4202^1^0^27^27^1442^0.6284^0.4070^1^Gerenzo Wrenchwhistle^4306:1:2,5736:1:1^
+259433^2^0^10^11^1420^0.1397^0.6468^2^Tarnished Zealot^774:1:1,2589:1:1^
+259434^1^0^10^10^1420^0.1311^0.6585^1^Tarnished Drudge^8178:1:1^
+260396^1^0^13^13^1420^0.0925^0.5983^1^Whispering Horror^268812:1:1^
+260428^15^0^10^12^1420^0.0940^0.6630^15^Shadowvale Lurcher^118:1:1,2589:2:4,4604:2:2,286259:3:3^
+260430^6^0^10^12^1420^0.0965^0.6662^6^Shadowvale Mystic^2589:2:2,3373:1:1,3375:1:1,286259:3:3^
+260431^3^0^11^12^1420^0.0943^0.6177^3^Shadowvale Lurcher^2589:1:1,4604:1:1^
+260432^1^0^11^11^1420^0.0915^0.6145^1^Shadowvale Mystic^159:1:1,1734:1:1^
+277730^1^0^8^8^1420^0.1889^0.6197^1^Rabid Forest Wolf^2672:1:1^
+277882^1^0^12^12^1421^0.5597^0.1654^1^Foothills Duskbat^6296:1:1^
+@i^118^Minor Healing Potion
+@i^159^Refreshing Spring Water
+@i^774^Malachite
 @i^814^Flask of Oil
 @i^1081^Crisp Spider Meat
+@i^1734^Worn Mail Gloves
 @i^1802^Rawhide Tunic
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2672^Stringy Wolf Meat
+@i^3164^Discolored Worg Heart
+@i^3170^Large Bear Tooth
 @i^3182^Spider's Silk
+@i^3299^Fractured Canine
+@i^3373^Patchwork Bracers
+@i^3375^Calico Bracers
 @i^4306^Silk Cloth
 @i^4359^Handful of Copper Bolts
 @i^4377^Heavy Blasting Powder
+@i^4604^Forest Mushroom Cap
 @i^5736^Gerenzo's Mechanical Arm
+@i^6296^Patch of Bat Hair
+@i^8178^Training Sword of the Monkey
+@i^9747^Simple Britches of Shadow Wrath
+@i^11406^Rotting Bear Carcass
 @i^14366^Mystic's Bracelets
+@i^268812^Whispering Horror Residue
+@i^286259^Faintly Glowing Bone
+@q^118^1:0:0
+@q^159^1:0:0
+@q^774^2:7:1
 @q^814^1:7:1
 @q^1081^1:7:1
+@q^1734^0:4:0
 @q^1802^0:4:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2672^1:7:1
+@q^3164^1:12:0
+@q^3170^0:15:0
 @q^3182^1:7:1
+@q^3299^0:15:0
+@q^3373^0:4:0
+@q^3375^0:4:0
 @q^4306^1:7:1
 @q^4359^1:7:1
 @q^4377^1:7:1
+@q^4604^1:0:0
 @q^5736^1:12:0
+@q^6296^0:15:0
+@q^8178^2:2:0
+@q^9747^2:4:0
+@q^11406^0:15:0
 @q^14366^2:4:0
+@q^268812^1:12:0
+@q^286259^1:12:0
+@m^1420^Tirisfal Glades
+@m^1421^Silverpine Forest
 @m^1442^Stonetalon Mountains
+@a^1765^32:1,52:1
+@a^1766^32:2,51:2,70:1,71:2
+@a^1767^52:2
+@a^1769^129:1
+@a^1778^69:1
 @a^3988^193:2
 @a^3989^193:2
 @a^3992^152:3,172:2
@@ -38,4 +93,13 @@ GoldScout-export 6^r551jaiwej7i^1
 @a^4007^252:1
 @a^4070^152:3,172:1
 @a^4202^172:1
+@a^259433^242:2
+@a^259434^262:1
+@a^260396^221:1
+@a^260428^241:1,261:11,262:3
+@a^260430^241:1,261:4,262:1
+@a^260431^241:3
+@a^260432^241:1
+@a^277730^243:1
+@a^277882^71:1
 @l^0^enUS

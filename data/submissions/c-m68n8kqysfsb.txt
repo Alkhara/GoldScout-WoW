@@ -1,4 +1,4 @@
-GoldScout-export 6^m68n8kqysfsb^16
+GoldScout-export 6^m68n8kqysfsb^17
 1501^10^0^1^1^1420^0.3239^0.6403^10^Mindless Zombie^2211:1:1,2653:1:1,4604:1:1^
 1502^10^0^1^2^1420^0.3204^0.6383^10^Wretched Zombie^2589:2:2,4604:2:2^
 1504^9^0^2^3^1420^0.2897^0.5919^9^Young Night Web Spider^1364:1:1,1372:1:1,1476:1:1,2653:1:1,3363:1:1,7100:6:6,7101:2:2^
@@ -18,8 +18,11 @@ GoldScout-export 6^m68n8kqysfsb^16
 2953^6^0^3^4^1412^0.6063^0.8047^6^Bristleback Shaman^159:1:1,1366:1:1,4536:1:1,4770:4:4^
 2954^3^0^4^5^1412^0.5965^0.7787^3^Bristleback Battleboar^117:2:2,4865:2:2^
 2955^14^0^1^2^1412^0.4550^0.8230^14^Plainstrider^1367:1:1,3365:1:1,4739:4:4,4740:4:4,4757:5:5,7096:3:3,7097:2:2^
+2956^1^0^6^7^1412^0.5037^0.7027^1^Adult Plainstrider^7097:1:1,287505:1:1^
+2958^10^0^5^6^1412^0.4914^0.6925^10^Prairie Wolf^2672:3:3,3300:2:2,4758:6:6^
 2961^16^0^3^3^1412^0.4531^0.8800^16^Mountain Cougar^2654:1:1,4742:7:7,4865:6:6,7073:3:3,7074:5:5^
 2966^18^0^3^4^1412^0.5505^0.8627^18^Battleboar^117:3:3,1374:1:1,2210:1:1,2651:1:1,4848:6:6,4849:5:5,4865:9:9,7098:6:6^
+2969^2^0^5^7^1412^0.4985^0.7004^2^Wiry Swoop^4769:2:2,4807:1:1,6889:2:2,7096:1:1^
 3229^1^0^5^5^1412^0.5999^0.8156^1^Squealer Thornmantle^4951:1:1^
 3560^12^0^56^57^2482^0.3497^0.6807^12^Healing Ward^^
 4692^3^0^32^33^1443^0.4127^0.6668^3^Dread Swoop^1464:1:1,5116:1:1^
@@ -217,6 +220,7 @@ GoldScout-export 6^m68n8kqysfsb^16
 @i^2652^Flimsy Chain Cloak
 @i^2653^Flimsy Chain Gloves
 @i^2654^Flimsy Chain Pants
+@i^2672^Stringy Wolf Meat
 @i^3262^Putrid Wooden Hammer
 @i^3264^Duskbat Wing
 @i^3265^Scavenger Paw
@@ -253,10 +257,13 @@ GoldScout-export 6^m68n8kqysfsb^16
 @i^4740^Plainstrider Feather
 @i^4742^Mountain Cougar Pelt
 @i^4757^Cracked Egg Shells
+@i^4758^Prairie Wolf Paw
+@i^4769^Trophy Swoop Quill
 @i^4770^Bristleback Belt
 @i^4784^Lifeless Stone
 @i^4787^Burning Pitch
 @i^4791^Enchanted Water
+@i^4807^Swoop Gizzard
 @i^4848^Battleboar Snout
 @i^4849^Battleboar Flank
 @i^4865^Ruined Pelt
@@ -273,6 +280,7 @@ GoldScout-export 6^m68n8kqysfsb^16
 @i^6444^Forked Tongue
 @i^6530^Nightcrawlers
 @i^6826^Brilliant Scale
+@i^6889^Small Egg
 @i^7068^Elemental Fire
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
@@ -464,6 +472,7 @@ GoldScout-export 6^m68n8kqysfsb^16
 @i^281016^Scroll: FORGOT HOOF THUD
 @i^281018^Scroll: RARE SERVICHI RADAR
 @i^282028^Broken Frond of Celastrus
+@i^287505^Tender Strider Meat
 @q^117^1:0:0
 @q^159^1:0:0
 @q^1074^0:15:0
@@ -489,6 +498,7 @@ GoldScout-export 6^m68n8kqysfsb^16
 @q^2652^0:4:0
 @q^2653^0:4:0
 @q^2654^0:4:0
+@q^2672^1:7:1
 @q^3262^1:2:0
 @q^3264^1:12:0
 @q^3265^1:12:0
@@ -525,10 +535,13 @@ GoldScout-export 6^m68n8kqysfsb^16
 @q^4740^1:12:0
 @q^4742^1:12:0
 @q^4757^0:15:0
+@q^4758^1:12:0
+@q^4769^1:12:0
 @q^4770^1:12:0
 @q^4784^0:15:0
 @q^4787^0:15:0
 @q^4791^1:0:0
+@q^4807^1:12:0
 @q^4848^1:12:0
 @q^4849^1:12:0
 @q^4865^0:15:0
@@ -545,6 +558,7 @@ GoldScout-export 6^m68n8kqysfsb^16
 @q^6444^0:15:0
 @q^6530^1:0:0
 @q^6826^0:15:0
+@q^6889^1:7:1
 @q^7068^1:7:1
 @q^7073^0:15:0
 @q^7074^0:15:0
@@ -736,6 +750,7 @@ GoldScout-export 6^m68n8kqysfsb^16
 @q^281016^1:0:0
 @q^281018^1:0:0
 @q^282028^1:12:0
+@q^287505^1:12:0
 @m^1412^Mulgore
 @m^1414^Kalimdor
 @m^1420^Tirisfal Glades
@@ -1452,8 +1467,11 @@ GoldScout-export 6^m68n8kqysfsb^16
 @a^2953^312:2,331:3,332:1
 @a^2954^311:2,312:1
 @a^2955^309:1,328:4,329:7,349:2
+@a^2956^290:1
+@a^2958^269:5,289:4,290:1
 @a^2961^348:6,349:10
 @a^2966^310:1,331:1,350:5,351:11
+@a^2969^289:1,290:1
 @a^3229^331:1
 @a^3560^226:2,266:2,267:3,286:2,287:3
 @a^4692^268:3
