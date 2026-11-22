@@ -1,4 +1,4 @@
-GoldScout-export 6^q28cqhjjek6c^4
+GoldScout-export 6^q28cqhjjek6c^5
 588^18^0^34^35^1434^0.2564^0.1047^18^Späher der Bloodscalp^1708:1:1,2592:1:2,3771:1:1,3784:1:1,3793:1:1,3915:5:5,4306:2:3^
 595^8^0^34^35^1434^0.2519^0.1021^8^Jäger der Bloodscalp^1708:1:1,2730:1:1,2749:1:1,3786:1:1,3915:1:1,4306:2:4,4338:1:1^
 597^17^0^36^37^1434^0.2401^0.0980^17^Berserker der Bloodscalp^2734:1:1,2738:1:1,3771:1:1,3785:1:1,3915:6:6,4306:3:8,15260:1:1^
@@ -14,7 +14,9 @@ GoldScout-export 6^q28cqhjjek6c^4
 2248^3^0^30^31^1424^0.4596^0.3176^3^Höhlenyeti^2289:1:1^
 2358^2^0^32^32^1416^0.2450^0.5682^2^Beschwörer von Dalaran^3745:2:2^
 2406^1^0^32^33^1416^0.3066^0.8201^1^Berglöwe^1686:1:1^
+2592^5^0^38^39^1417^0.3706^0.5991^5^Rumpelnder Verbannter^4552:1:1,4553:2:2,4784:2:2,7912:1:2,8150:1:1^
 2628^1^0^34^34^1416^0.2189^0.5699^1^Tagelöhner von Dalaran^3800:1:1^
+2762^71^0^38^39^1417^0.5184^0.5053^71^Donnernder Verbannter^4480:23:23,7069:12:12,7475:1:1,9886:1:1,12030:1:1^
 4458^2^0^36^36^1434^0.3345^0.2083^2^Jäger der Düsterkiemen^5785:1:1,6362:1:2,17057:1:1,17058:2:2^
 4461^3^0^35^35^1434^0.3358^0.2077^3^Krieger der Düsterkiemen^1708:1:1,5785:1:1,17057:1:1,17058:1:1^
 245999^2^0^0^0^1416^0.0000^0.0000^0^^273031:1:1,273035:1:1^
@@ -135,10 +137,14 @@ GoldScout-export 6^q28cqhjjek6c^4
 @i^4402^Kleiner Flammenbeutel
 @i^4460^Zerfetztes Flügelnetz
 @i^4461^Raptorbalg
+@i^4480^Donnernder Glücksbringer
+@i^4552^Glattes Steinbruchstück
+@i^4553^Gezacktes Steinstück
 @i^4603^Roher Tüpfelgelbschwanz
 @i^4606^Schwammerl
 @i^4636^Starke Eisenschließkassette
 @i^4732^Glyphenverzierter Umhang
+@i^4784^Lebloser Stein
 @i^5524^Dickschalige Muschel
 @i^5569^Seetang
 @i^5785^Dicke Murlocschuppe
@@ -151,15 +157,21 @@ GoldScout-export 6^q28cqhjjek6c^4
 @i^6439^Zerbrochene Bindungsarmschiene
 @i^6444^Gespaltene Zunge
 @i^6826^Blitzende Schuppe
+@i^7069^Elementarluft
 @i^7435^Twilightmantel des frostigen Zorns
+@i^7475^Königliche Manschetten des Wals
 @i^7556^Twilightkugel des Tigers
 @i^7909^Aquamarin
+@i^7912^Robuster Stein
+@i^8150^Tiefsteinsalz
 @i^8188^Explosive Schrotflinte
 @i^9355^Kreolen-Ohrring
 @i^9851^Herbeizauberer-Bundhosen des Adlers
 @i^9880^Zauberhexerhandschuhe des Zauberers
+@i^9886^Jägersmann-Bänder des Ritters
 @i^11969^Hyazinth-Reif der Intelligenz
 @i^12010^Moorring des Banditen
+@i^12030^Jettkette der Konzentration
 @i^12206^Zartes Krebsfleisch
 @i^15213^Söldnerklinge des Tigers
 @i^15214^Adelsmarke des Ebers
@@ -262,10 +274,14 @@ GoldScout-export 6^q28cqhjjek6c^4
 @q^4402^1:7:1
 @q^4460^0:15:0
 @q^4461^1:7:1
+@q^4480^1:0:0
+@q^4552^0:15:0
+@q^4553^0:15:0
 @q^4603^1:7:1
 @q^4606^1:0:0
 @q^4636^2:15:0
 @q^4732^2:4:0
+@q^4784^0:15:0
 @q^5524^1:7:0
 @q^5569^0:15:0
 @q^5785^1:7:1
@@ -278,15 +294,21 @@ GoldScout-export 6^q28cqhjjek6c^4
 @q^6439^0:15:0
 @q^6444^0:15:0
 @q^6826^0:15:0
+@q^7069^1:7:1
 @q^7435^2:4:0
+@q^7475^2:4:0
 @q^7556^2:4:0
 @q^7909^2:7:1
+@q^7912^1:7:1
+@q^8150^1:7:1
 @q^8188^2:2:0
 @q^9355^0:15:0
 @q^9851^2:4:0
 @q^9880^2:4:0
+@q^9886^2:4:0
 @q^11969^2:4:0
 @q^12010^2:4:0
+@q^12030^2:4:0
 @q^12206^1:7:1
 @q^15213^2:2:0
 @q^15214^2:2:0
@@ -333,6 +355,7 @@ GoldScout-export 6^q28cqhjjek6c^4
 @q^276894^1:12:0
 @q^279046^0:15:0
 @m^1416^Alteracgebirge
+@m^1417^Arathihochland
 @m^1424^Vorgebirge von Hillsbrad
 @m^1434^Schlingendorntal
 @m^2548^Flusslande
@@ -507,7 +530,9 @@ GoldScout-export 6^q28cqhjjek6c^4
 @a^2248^129:3
 @a^2358^224:1,225:1
 @a^2406^326:1
+@a^2592^227:2,247:3
 @a^2628^224:1
+@a^2762^190:24,210:47
 @a^4458^86:2
 @a^4461^86:3
 @a^255769^225:1,226:1,245:1,246:1,266:1

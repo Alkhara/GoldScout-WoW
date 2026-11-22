@@ -1,4 +1,4 @@
-GoldScout-export 6^8da123r7nqfj^7
+GoldScout-export 6^8da123r7nqfj^8
 36^1^0^12^12^1436^0.3260^0.3518^1^Harvest Golem^1274:1:1^
 117^5^0^11^12^1436^0.5676^0.1313^5^Riverpaw Gnoll^1501:1:1,2589:1:3^
 157^30^0^14^15^1436^0.3865^0.5037^30^Goretusk^723:9:9,731:10:10,769:24:36,771:6:6,2406:1:1,2677:9:9,3171:5:5,3172:8:8,6537:1:1,211787:2:2^
@@ -33,6 +33,15 @@ GoldScout-export 6^8da123r7nqfj^7
 2442^1^0^5^5^1436^0.5990^0.1489^1^Cow^^
 3226^1^0^10^10^1411^0.5073^0.1316^1^Corrupted Scorpid^^
 6250^1^0^11^11^1436^0.3077^0.3525^1^Crawler^^
+11318^7^0^0^0^0^0.0000^0.0000^0^^818:2:2,1511:1:1,1516:1:1,14097:1:1,211787:1:1^
+11319^2^0^0^0^0^0.0000^0.0000^0^^1505:1:1,2589:1:2^
+11321^1^0^0^0^0^0.0000^0.0000^0^^4784:1:1^
+11322^7^0^0^0^0^0.0000^0.0000^0^^1180:1:1,1510:1:1,1511:1:1,2589:1:4,3374:1:1,3375:1:1,4564:1:1,14097:1:1,14395:1:1^
+11323^4^0^0^0^0^0.0000^0.0000^0^^4680:1:1,4681:1:1^
+11324^1^0^0^0^0^0.0000^0.0000^0^^14396:1:1^
+11518^1^0^0^0^0^0.0000^0.0000^0^^14151:1:1^
+11519^1^0^0^0^0^0.0000^0.0000^0^^273007:1:1^
+11520^1^0^0^0^0^0.0000^0.0000^0^^14148:1:1,14540:1:1^
 250282^1^0^10^10^1420^0.2594^0.4542^1^Vile Fin Seer^6303:1:1^
 250283^1^0^10^10^1420^0.2616^0.4798^1^Vile Fin Attacker^779:1:1^
 @i^118^Minor Healing Potion
@@ -48,12 +57,17 @@ GoldScout-export 6^8da123r7nqfj^7
 @i^779^Shiny Seashell
 @i^818^Tigerseye
 @i^1179^Ice Cold Milk
+@i^1180^Scroll of Stamina
 @i^1274^Hops
 @i^1411^Withered Staff
 @i^1413^Feeble Sword
 @i^1416^Rusty Hatchet
 @i^1430^Patchwork Gloves
 @i^1501^Calico Tunic
+@i^1505^Warped Cloak
+@i^1510^Heavy Hammer
+@i^1511^Commoner's Sword
+@i^1516^Worn Hatchet
 @i^1791^Patched Leather Gloves
 @i^2140^Carving Knife of Healing
 @i^2406^Pattern: Fine Leather Boots
@@ -74,12 +88,18 @@ GoldScout-export 6^8da123r7nqfj^7
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
 @i^3322^Wispy Cloak
+@i^3374^Calico Belt
+@i^3375^Calico Bracers
 @i^4346^Pattern: Heavy Woolen Cloak
+@i^4564^Spiked Club of the Monkey
 @i^4570^Birchwood Maul of Magic
 @i^4677^Veteran Cloak
+@i^4680^Brackwater Cloak
+@i^4681^Brackwater Girdle
 @i^4684^Spellbinder Belt
 @i^4689^Hunting Cloak
 @i^4757^Cracked Egg Shells
+@i^4784^Lifeless Stone
 @i^4874^Clean Fishbones
 @i^5523^Small Barnacled Clam
 @i^5635^Sharp Claw
@@ -98,6 +118,12 @@ GoldScout-export 6^8da123r7nqfj^7
 @i^9752^Nomad Bands
 @i^9761^Cadet Cloak
 @i^12223^Meaty Bat Wing
+@i^14097^Native Pants of Frost Protection
+@i^14148^Crystalline Cuffs
+@i^14151^Chanting Blade
+@i^14395^Spells of Shadow
+@i^14396^Incantations from the Nether
+@i^14540^Taragaman the Hungerer's Heart
 @i^15268^Twin-bladed Axe of Healing
 @i^15932^Disciple's Stein of the Owl
 @i^17056^Light Feather
@@ -105,6 +131,7 @@ GoldScout-export 6^8da123r7nqfj^7
 @i^211784^Scroll: WUBBA WUBBA
 @i^211785^Scroll: CWAL
 @i^211787^Scroll: LOWER PING WHOMEVER
+@i^273007^Chasm Walkers
 @q^118^1:0:0
 @q^159^1:0:0
 @q^414^1:0:0
@@ -118,12 +145,17 @@ GoldScout-export 6^8da123r7nqfj^7
 @q^779^0:15:0
 @q^818^2:7:1
 @q^1179^1:0:0
+@q^1180^1:0:0
 @q^1274^1:12:0
 @q^1411^0:2:0
 @q^1413^0:2:0
 @q^1416^0:2:0
 @q^1430^0:4:0
 @q^1501^0:4:0
+@q^1505^0:4:0
+@q^1510^0:2:0
+@q^1511^0:2:0
+@q^1516^0:2:0
 @q^1791^0:4:0
 @q^2140^2:2:0
 @q^2406^2:9:0
@@ -144,12 +176,18 @@ GoldScout-export 6^8da123r7nqfj^7
 @q^3299^0:15:0
 @q^3300^0:15:0
 @q^3322^2:4:0
+@q^3374^0:4:0
+@q^3375^0:4:0
 @q^4346^2:9:0
+@q^4564^2:2:0
 @q^4570^2:2:0
 @q^4677^1:4:0
+@q^4680^1:4:0
+@q^4681^1:4:0
 @q^4684^1:4:0
 @q^4689^1:4:0
 @q^4757^0:15:0
+@q^4784^0:15:0
 @q^4874^0:15:0
 @q^5523^1:7:0
 @q^5635^1:7:1
@@ -168,6 +206,12 @@ GoldScout-export 6^8da123r7nqfj^7
 @q^9752^1:4:0
 @q^9761^1:4:0
 @q^12223^1:7:1
+@q^14097^2:4:0
+@q^14148^3:4:0
+@q^14151^3:2:0
+@q^14395^1:12:0
+@q^14396^1:12:0
+@q^14540^1:12:0
 @q^15268^2:2:0
 @q^15932^2:4:0
 @q^17056^1:15:1
@@ -175,6 +219,7 @@ GoldScout-export 6^8da123r7nqfj^7
 @q^211784^1:0:0
 @q^211785^1:0:0
 @q^211787^1:0:0
+@q^273007^3:4:0
 @m^1411^Durotar
 @m^1420^Tirisfal Glades
 @m^1436^Westfall
