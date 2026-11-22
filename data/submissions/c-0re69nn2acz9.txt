@@ -1,4 +1,4 @@
-GoldScout-export 6^0re69nn2acz9^18
+GoldScout-export 6^0re69nn2acz9^20
 114^3^0^15^15^1436^0.5355^0.3276^3^Harvest Watcher^732:2:2,814:2:2,6542:1:1,255007:3:3^
 121^6^0^15^16^1436^0.4445^0.7625^6^Defias Pathstalker^2589:2:4^
 122^15^0^17^18^1436^0.4154^0.8048^15^Defias Highwayman^1179:1:1,1742:1:1,1794:1:1,2589:1:2,2592:6:10,7997:1:1,248684:1:1^
@@ -27,6 +27,16 @@ GoldScout-export 6^0re69nn2acz9^18
 594^2^0^15^15^1415^0.4117^0.7933^2^Defias Henchman^^
 619^1^0^16^16^1415^0.4113^0.7913^1^Defias Conjurer^^
 824^3^0^15^16^1415^0.4113^0.7923^3^Defias Digger^2589:1:3^
+2156^2^0^18^19^1439^0.3581^0.8510^2^Cracked Golem^2836:1:2,5568:2:16^
+2157^1^0^19^20^1439^0.3553^0.8516^1^Stone Behemoth^^
+2158^1^0^19^19^1439^0.3519^0.8461^1^Gravelflint Scout^^
+2159^1^0^20^20^1439^0.3628^0.8635^1^Gravelflint Bonesnapper^2589:1:1^
+2177^1^0^12^12^1439^0.4287^0.5955^1^Writhing Highborne^^
+2207^4^0^18^18^1439^0.3115^0.8702^4^Greymist Oracle^730:1:1,1179:1:1,5523:1:1,5784:1:1^
+2208^6^0^19^20^1439^0.3129^0.8658^6^Greymist Tidehunter^730:3:3^
+2237^8^0^17^18^1439^0.4224^0.8088^8^Moonstalker Sire^2078:1:1,5135:3:3,5386:5:5^
+2338^23^0^16^17^1439^0.3857^0.8685^23^Twilight Disciple^1179:1:1,2287:2:2,2589:4:5,2592:1:2,5352:1:1,279279:1:1^
+2339^14^0^17^18^1439^0.3875^0.8695^14^Twilight Thug^1179:1:1,2589:2:3,2592:4:8,15012:1:1^
 4463^1^0^22^22^1433^0.6924^0.7850^1^Blackrock Summoner^^
 12922^2^0^22^23^1433^0.7104^0.8104^2^Imp Minion^^
 214519^1^0^23^23^1433^0.7133^0.7902^1^Incinerator Gar'im^1823:1:1,271872:1:1^
@@ -50,12 +60,14 @@ GoldScout-export 6^0re69nn2acz9^18
 @i^1794^Patched Leather Jerkin
 @i^1812^Short-handled Battle Axe
 @i^1823^Bludgeoning Cudgel
+@i^2078^Northern Shortsword of Stamina
 @i^2216^Simple Buckler
 @i^2219^Small Round Shield
 @i^2287^Haunch of Meat
 @i^2455^Minor Mana Potion
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2836^Coarse Stone
 @i^2856^Iron Pike
 @i^3014^Battleworn Axe
 @i^3172^Boar Intestines
@@ -66,8 +78,12 @@ GoldScout-export 6^0re69nn2acz9^18
 @i^4306^Silk Cloth
 @i^4775^Cracked Bill
 @i^5114^Severed Talon
+@i^5135^Thin Black Claw
 @i^5207^Opaque Wand
+@i^5352^Book: The Powers Below
+@i^5386^Fine Moonstalker Pelt
 @i^5523^Small Barnacled Clam
+@i^5568^Smooth Pebble
 @i^5784^Slimy Murloc Scale
 @i^6542^Willow Cape of the Monkey
 @i^6559^Bard's Buckler of the Champion
@@ -75,12 +91,14 @@ GoldScout-export 6^0re69nn2acz9^18
 @i^6889^Small Egg
 @i^7997^Red Defias Mask
 @i^9781^Bandit Pants of the Owl
+@i^15012^Lupine Slippers of Nature Protection
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
 @i^248684^Waylaid Crate: Apprentice Textiles
 @i^248702^Waylaid Crate: Apprentice Fabrics
 @i^255007^Golem Isospring
 @i^271872^Broken Staff of Incinerator Gar'im
+@i^279279^Peerless Eye
 @q^730^1:7:1
 @q^732^1:12:0
 @q^814^1:7:1
@@ -101,12 +119,14 @@ GoldScout-export 6^0re69nn2acz9^18
 @q^1794^0:4:0
 @q^1812^0:2:0
 @q^1823^0:2:0
+@q^2078^2:2:0
 @q^2216^0:4:0
 @q^2219^0:4:0
 @q^2287^1:0:0
 @q^2455^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2836^1:7:1
 @q^2856^1:12:0
 @q^3014^1:12:0
 @q^3172^1:7:1
@@ -117,8 +137,12 @@ GoldScout-export 6^0re69nn2acz9^18
 @q^4306^1:7:1
 @q^4775^0:15:0
 @q^5114^0:15:0
+@q^5135^0:15:0
 @q^5207^2:2:0
+@q^5352^1:12:0
+@q^5386^1:12:0
 @q^5523^1:7:0
+@q^5568^1:6:0
 @q^5784^1:7:1
 @q^6542^2:4:0
 @q^6559^2:4:0
@@ -126,15 +150,18 @@ GoldScout-export 6^0re69nn2acz9^18
 @q^6889^1:7:1
 @q^7997^0:4:0
 @q^9781^2:4:0
+@q^15012^2:4:0
 @q^17056^1:15:1
 @q^17057^1:15:0
 @q^248684^1:0:1
 @q^248702^2:0:1
 @q^255007^1:7:1
 @q^271872^1:12:0
+@q^279279^1:12:0
 @m^1415^Eastern Kingdoms
 @m^1433^Redridge Mountains
 @m^1436^Westfall
+@m^1439^Darkshore
 @a^114^130:3
 @a^121^287:2,309:3,310:1
 @a^122^308:2,309:2,327:6,328:4,329:1
@@ -163,6 +190,16 @@ GoldScout-export 6^0re69nn2acz9^18
 @a^594^308:2
 @a^619^308:1
 @a^824^308:3
+@a^2156^327:1,347:1
+@a^2157^347:1
+@a^2158^327:1
+@a^2159^347:1
+@a^2177^228:1
+@a^2207^346:4
+@a^2208^346:6
+@a^2237^308:2,328:6
+@a^2338^347:23
+@a^2339^347:14
 @a^4463^313:1
 @a^12922^314:1,334:1
 @a^214519^314:1

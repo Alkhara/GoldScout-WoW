@@ -1,4 +1,4 @@
-GoldScout-export 5^v7xgljtjy09b^20
+GoldScout-export 5^v7xgljtjy09b^21
 3^3^0^24^25^1431^0.2317^0.3616^3^Flesh Eater^2592:1:1^
 30^2^0^5^6^1429^0.3449^0.5644^2^Forest Spider^1476:1:1,2590:1:1^
 94^3^0^5^6^1429^0.3518^0.5832^3^Defias Cutpurse^2649:1:1^
@@ -128,6 +128,7 @@ GoldScout-export 5^v7xgljtjy09b^20
 2235^2^0^16^17^1439^0.3603^0.7742^2^Reef Crawler^12237:2:2,15305:1:1^
 2237^1^0^18^18^1439^0.4417^0.9349^1^Moonstalker Sire^^
 2462^16^0^25^25^1431^0.2256^0.3533^16^Flesh Eating Worm^^
+2575^1^0^32^32^1417^0.4901^0.8816^1^Dark Iron Supplier^^
 3664^1^0^24^24^1440^0.2529^0.6056^1^Ilkrud Magthrull^^
 3725^6^5^18^19^1440^0.3121^0.3071^6^Dark Strand Cultist^1205:1:1,2589:1:1,2592:2:3^
 3727^3^2^20^21^1440^0.3163^0.3138^3^Dark Strand Enforcer^2589:1:2,2782:1:1,5366:1:1^
@@ -173,7 +174,7 @@ GoldScout-export 5^v7xgljtjy09b^20
 4012^7^0^21^22^1442^0.5131^0.4421^7^Pridewing Wyvern^5135:1:1,5136:3:3,277917:4:4^
 4014^2^0^22^23^1442^0.5143^0.4375^2^Pridewing Consort^5135:1:1^
 4018^1^0^22^22^1442^0.4423^0.2571^1^Antlered Courser^5471:1:1^
-4062^3^0^30^31^1417^0.4985^0.8899^1^Dark Iron Bombardier^4306:1:1,4338:1:1,9820:1:1^
+4062^8^0^30^31^1417^0.4962^0.8867^6^Dark Iron Bombardier^3792:1:1,4306:2:3,4338:1:1,4544:1:1,9820:1:1^
 4263^2^0^14^14^1442^0.6242^0.6131^2^Deepmoss Hatchling^^
 4264^1^0^22^22^1442^0.6242^0.6131^1^Deepmoss Matriarch^3174:1:1,4428:1:1^
 4463^13^1^22^23^1433^0.3474^0.2377^13^Blackrock Summoner^1206:1:1,1478:1:1,2220:1:1,2589:1:3,2592:2:3^
@@ -335,6 +336,7 @@ GoldScout-export 5^v7xgljtjy09b^20
 @i^3725^Familiar Horn
 @i^3730^Big Bear Meat
 @i^3770^Mutton Chop
+@i^3792^Interlaced Belt
 @i^3931^Poisoned Spider Fang
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
@@ -343,6 +345,7 @@ GoldScout-export 5^v7xgljtjy09b^20
 @i^4461^Raptor Hide
 @i^4537^Tel'Abim Banana
 @i^4538^Snapvine Watermelon
+@i^4544^Mulgore Spice Bread
 @i^4605^Red-speckled Mushroom
 @i^4606^Spongy Morel
 @i^4709^Forest Leather Mantle
@@ -574,6 +577,7 @@ GoldScout-export 5^v7xgljtjy09b^20
 @q^3725^0:15:0
 @q^3730^1:7:1
 @q^3770^1:0:0
+@q^3792^0:4:0
 @q^3931^0:15:0
 @q^4306^1:7:1
 @q^4338^1:7:1
@@ -582,6 +586,7 @@ GoldScout-export 5^v7xgljtjy09b^20
 @q^4461^1:7:1
 @q^4537^1:0:0
 @q^4538^1:0:0
+@q^4544^1:0:0
 @q^4605^1:0:0
 @q^4606^1:0:0
 @q^4709^2:4:0
@@ -2395,6 +2400,7 @@ GoldScout-export 5^v7xgljtjy09b^20
 @a^2235^307:2
 @a^2237^368:1
 @a^2462^124:8,144:8
+@a^2575^349:1
 @a^3664^245:1
 @a^3725^106:1,126:5
 @a^3727^126:3
@@ -2440,7 +2446,7 @@ GoldScout-export 5^v7xgljtjy09b^20
 @a^4012^170:6,190:1
 @a^4014^170:2
 @a^4018^108:1
-@a^4062^349:1
+@a^4062^349:4,350:2
 @a^4263^252:2
 @a^4264^252:1
 @a^4463^25:1,44:1,46:3,47:1,64:4,67:1,313:2

@@ -1,4 +1,4 @@
-GoldScout-export 6^22tl5ep4u7dz^16
+GoldScout-export 6^22tl5ep4u7dz^17
 2240^3^0^33^33^1416^0.4844^0.7925^3^Syndicate Footpad^2592:1:2,3601:1:1,4306:1:2^
 2271^5^0^31^32^1416^0.2245^0.7763^5^Dalaran Shield Guard^1708:1:1,3714:1:1,4306:4:7^
 2272^3^0^33^33^1416^0.2421^0.5830^2^Dalaran Theurgist^3714:1:1,4306:1:2^
@@ -54,9 +54,18 @@ GoldScout-export 6^22tl5ep4u7dz^16
 4120^1^0^28^29^1441^0.6799^0.5966^1^Thundering Boulderkin^^
 4124^1^0^27^28^1441^0.1478^0.3293^1^Needles Cougar^^
 4130^5^0^32^33^1441^0.7007^0.8415^5^Silithid Searcher^5854:2:2,5855:1:1,5877:1:1,6300:1:1^
+4131^3^0^34^35^1441^0.6564^0.8593^3^Silithid Invader^6300:1:1,6302:2:2^
 4133^7^0^33^34^1441^0.7006^0.8342^7^Silithid Hive Drone^5853:3:3,5854:3:3,6302:3:3^
-4139^1^0^34^34^1441^0.7270^0.8852^1^Scorpid Terror^5794:1:1,12037:1:1^
-4150^2^0^35^35^1441^0.7410^0.8942^2^Saltstone Gazer^1701:1:1^
+4139^4^0^33^34^1441^0.7106^0.7868^4^Scorpid Terror^1288:1:1,5794:3:3,12037:1:1,19938:1:1^
+4140^14^0^31^32^1441^0.7413^0.6446^14^Scorpid Reaver^5794:3:3,12037:7:7,19937:1:1,19938:2:2^
+4142^8^0^30^31^1441^0.7134^0.6140^8^Sparkleshell Tortoise^4555:2:2,4556:1:1,5795:4:4^
+4143^14^0^34^35^1441^0.8309^0.6785^14^Sparkleshell Snapper^3712:5:5,4555:6:6,4556:4:4,5795:4:4^
+4144^4^0^32^33^1441^0.8039^0.8618^4^Sparkleshell Borer^3712:1:1,4555:3:3,4556:1:1,5795:1:1^
+4147^9^0^30^31^1441^0.7388^0.5835^9^Saltstone Basilisk^1701:2:2,1702:3:3,5637:1:1,11384:3:3^
+4150^6^0^34^35^1441^0.7986^0.8763^6^Saltstone Gazer^1701:3:3,1702:1:1,5637:1:1^
+4151^9^0^32^33^1441^0.7837^0.6341^9^Saltstone Crystalhide^1701:3:3,1702:4:4,1725:1:1,4093:2:2,5637:1:1,11386:1:1^
+4154^8^0^30^32^1441^0.8463^0.6476^8^Salt Flats Scavenger^729:4:4,3399:2:2,5114:1:1,5115:1:1,5116:1:1,5848:8:8,11416:2:2,12037:2:2,17056:4:4^
+4158^2^0^32^34^1441^0.8095^0.7879^2^Salt Flats Vulture^729:2:2,3399:1:1,5116:1:1,5848:2:2,12037:1:1^
 4249^1^0^28^29^1441^0.1389^0.2598^1^Pesterhide Snarler^3402:1:1^
 4420^1^0^0^0^0^0.0000^0.0000^0^^274161:1:1^
 4421^1^0^0^0^0^0.0000^0.0000^0^^5793:1:1,6693:1:1,17008:1:1^
@@ -181,6 +190,7 @@ GoldScout-export 6^22tl5ep4u7dz^16
 274715^2^0^0^0^0^0.0000^0.0000^0^^770:2:2,1809:1:1,3667:1:1^
 275044^1^0^0^0^0^0.0000^0.0000^0^^^
 275046^2^0^0^0^0^0.0000^0.0000^0^^4306:1:1,284844:1:1^
+@i^729^Stringy Vulture Meat
 @i^770^Pointy Crocolisk Tooth
 @i^865^Leaden Mace of the Bandit
 @i^878^Fist-sized Spinneret
@@ -188,16 +198,19 @@ GoldScout-export 6^22tl5ep4u7dz^16
 @i^1074^Hard Spider Leg Tip
 @i^1081^Crisp Spider Meat
 @i^1205^Melon Juice
+@i^1288^Large Venom Sac
 @i^1529^Jade
 @i^1686^Bristly Whisker
 @i^1696^Curved Raptor Talon
 @i^1697^Keen Raptor Tooth
 @i^1701^Curved Basilisk Claw
+@i^1702^Intact Basilisk Spine
 @i^1705^Lesser Moonstone
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
 @i^1711^Scroll of Stamina II
+@i^1725^Large Knapsack
 @i^1747^Linked Chain Boots
 @i^1749^Linked Chain Cloak
 @i^1750^Linked Chain Gloves
@@ -234,6 +247,7 @@ GoldScout-export 6^22tl5ep4u7dz^16
 @i^3210^Brutal War Axe of the Physician
 @i^3381^Cross-stitched Bracers
 @i^3385^Lesser Mana Potion
+@i^3399^Vulture Talon
 @i^3402^Soft Patch of Fur
 @i^3509^Daggerspine Scale
 @i^3510^Torn Fin Eye
@@ -247,6 +261,7 @@ GoldScout-export 6^22tl5ep4u7dz^16
 @i^3691^Bloodstone Wedge
 @i^3693^Humbert's Sword
 @i^3711^Belamoore's Research Journal
+@i^3712^Turtle Meat
 @i^3714^Worn Stone Token
 @i^3715^Bracers of Earth Binding
 @i^3745^Rune of Opening
@@ -259,6 +274,7 @@ GoldScout-export 6^22tl5ep4u7dz^16
 @i^3866^Plans: Jade Serpentblade
 @i^4055^Insignia Boots
 @i^4072^Glimmering Mail Gauntlets
+@i^4093^Large Basilisk Tail
 @i^4306^Silk Cloth
 @i^4337^Thick Spider's Silk
 @i^4338^Mageweave Cloth
@@ -269,10 +285,14 @@ GoldScout-export 6^22tl5ep4u7dz^16
 @i^4538^Snapvine Watermelon
 @i^4542^Moist Cornbread
 @i^4553^Jagged Piece of Stone
+@i^4555^Thick Scaly Tail
+@i^4556^Speckled Shell Fragment
 @i^4585^Dripping Spider Mandible
 @i^4722^Insignia Cloak
 @i^4784^Lifeless Stone
 @i^5113^Mark of the Syndicate
+@i^5114^Severed Talon
+@i^5115^Broken Wishbone
 @i^5116^Long Tail Feather
 @i^5117^Vibrant Plume
 @i^5135^Thin Black Claw
@@ -288,6 +308,7 @@ GoldScout-export 6^22tl5ep4u7dz^16
 @i^5785^Thick Murloc Scale
 @i^5793^Razorflank's Heart
 @i^5794^Salty Scorpid Venom
+@i^5795^Hardened Tortoise Shell
 @i^5801^Kraul Guano
 @i^5810^Fresh Carcass
 @i^5830^Kenata's Head
@@ -297,6 +318,7 @@ GoldScout-export 6^22tl5ep4u7dz^16
 @i^5842^Unrefined Ore Sample
 @i^5843^Grenka's Claw
 @i^5844^Fragments of Rok'Alim
+@i^5848^Hollow Vulture Bone
 @i^5853^Intact Silithid Carapace
 @i^5854^Silithid Talon
 @i^5855^Silithid Heart
@@ -335,9 +357,12 @@ GoldScout-export 6^22tl5ep4u7dz^16
 @i^9824^Durable Shoulders of Spirit
 @i^9831^Scaled Cloak of the Wolf
 @i^9847^Conjurer's Cloak of the Owl
+@i^11384^Broken Basilisk Teeth
+@i^11386^Squishy Basilisk Eye
 @i^11391^Spined Bat Wing
 @i^11393^Small Bat Skull
 @i^11394^Bat Heart
+@i^11416^Delicate Ribcage
 @i^11969^Jacinth Circle of Concentration
 @i^12037^Mystery Meat
 @i^12184^Raptor Flesh
@@ -358,6 +383,8 @@ GoldScout-export 6^22tl5ep4u7dz^16
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
+@i^19937^Small Scorpid Claw
+@i^19938^Heavy Scorpid Leg
 @i^211853^Scroll: VOCE WELL
 @i^213422^Illegible Recipe
 @i^213545^Scroll: PEATCHY ATTAX
@@ -391,6 +418,7 @@ GoldScout-export 6^22tl5ep4u7dz^16
 @i^278225^Surgical Spidersilk
 @i^279186^Stormheart's Still-beating Heart
 @i^284844^Dragonmaw Dispatch
+@q^729^1:7:1
 @q^770^0:15:0
 @q^865^2:2:0
 @q^878^0:7:0
@@ -398,16 +426,19 @@ GoldScout-export 6^22tl5ep4u7dz^16
 @q^1074^0:15:0
 @q^1081^1:7:1
 @q^1205^1:0:0
+@q^1288^1:7:1
 @q^1529^2:7:1
 @q^1686^0:15:0
 @q^1696^0:15:0
 @q^1697^0:15:0
 @q^1701^0:15:0
+@q^1702^0:15:0
 @q^1705^2:7:1
 @q^1707^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
 @q^1711^1:0:0
+@q^1725^1:1:0
 @q^1747^0:4:0
 @q^1749^0:4:0
 @q^1750^0:4:0
@@ -444,6 +475,7 @@ GoldScout-export 6^22tl5ep4u7dz^16
 @q^3210^2:2:0
 @q^3381^0:4:0
 @q^3385^1:0:0
+@q^3399^0:15:0
 @q^3402^0:15:0
 @q^3509^1:12:0
 @q^3510^1:12:0
@@ -457,6 +489,7 @@ GoldScout-export 6^22tl5ep4u7dz^16
 @q^3691^1:12:0
 @q^3693^1:12:0
 @q^3711^1:12:0
+@q^3712^1:7:1
 @q^3714^1:12:0
 @q^3715^1:12:0
 @q^3745^1:12:0
@@ -469,6 +502,7 @@ GoldScout-export 6^22tl5ep4u7dz^16
 @q^3866^2:9:0
 @q^4055^2:4:0
 @q^4072^2:4:0
+@q^4093^0:15:0
 @q^4306^1:7:1
 @q^4337^1:7:1
 @q^4338^1:7:1
@@ -479,10 +513,14 @@ GoldScout-export 6^22tl5ep4u7dz^16
 @q^4538^1:0:0
 @q^4542^1:0:0
 @q^4553^0:15:0
+@q^4555^0:15:0
+@q^4556^0:15:0
 @q^4585^0:15:0
 @q^4722^2:4:0
 @q^4784^0:15:0
 @q^5113^0:15:0
+@q^5114^0:15:0
+@q^5115^0:15:0
 @q^5116^1:7:1
 @q^5117^1:12:0
 @q^5135^0:15:0
@@ -498,6 +536,7 @@ GoldScout-export 6^22tl5ep4u7dz^16
 @q^5785^1:7:1
 @q^5793^1:12:0
 @q^5794^1:12:0
+@q^5795^1:12:0
 @q^5801^1:12:0
 @q^5810^1:12:0
 @q^5830^1:12:0
@@ -507,6 +546,7 @@ GoldScout-export 6^22tl5ep4u7dz^16
 @q^5842^1:12:0
 @q^5843^1:12:0
 @q^5844^1:12:0
+@q^5848^1:12:0
 @q^5853^1:12:0
 @q^5854^1:12:0
 @q^5855^1:12:0
@@ -545,9 +585,12 @@ GoldScout-export 6^22tl5ep4u7dz^16
 @q^9824^2:4:0
 @q^9831^2:4:0
 @q^9847^2:4:0
+@q^11384^0:15:0
+@q^11386^0:15:0
 @q^11391^0:15:0
 @q^11393^0:15:0
 @q^11394^0:15:0
+@q^11416^0:15:0
 @q^11969^2:4:0
 @q^12037^1:7:1
 @q^12184^1:7:1
@@ -568,6 +611,8 @@ GoldScout-export 6^22tl5ep4u7dz^16
 @q^17056^1:15:1
 @q^17057^1:15:0
 @q^17058^1:15:0
+@q^19937^0:15:0
+@q^19938^0:15:0
 @q^211853^1:0:0
 @q^213422^1:12:0
 @q^213545^1:0:0
@@ -1104,9 +1149,18 @@ GoldScout-export 6^22tl5ep4u7dz^16
 @a^4120^233:1
 @a^4124^122:1
 @a^4130^333:2,334:2,354:1
+@a^4131^353:3
 @a^4133^333:1,334:5,353:1
-@a^4139^354:1
-@a^4150^354:1,375:1
+@a^4139^294:2,313:1,354:1
+@a^4140^215:3,235:2,254:3,273:1,294:5
+@a^4142^234:3,253:1,254:1,273:1,274:2
+@a^4143^216:4,237:1,275:1,296:4,314:1,317:3
+@a^4144^336:1,354:1,356:2
+@a^4147^215:1,234:3,235:3,253:1,294:1
+@a^4150^354:1,356:4,375:1
+@a^4151^215:1,235:2,255:1,256:1,275:3,314:1
+@a^4154^235:1,254:1,277:6
+@a^4158^317:1,334:1
 @a^4249^102:1
 @a^4479^171:1
 @a^4480^151:1
