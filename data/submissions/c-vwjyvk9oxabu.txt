@@ -1,4 +1,4 @@
-GoldScout-export 6^vwjyvk9oxabu^27
+GoldScout-export 6^vwjyvk9oxabu^28
 232^1^0^23^23^1424^0.3282^0.3531^1^Farmer Ray^2592:1:2^
 1520^11^0^6^7^1420^0.4679^0.3807^11^Rattlecage Soldier^1413:1:1,2213:1:1,2589:4:5,3162:1:1,4604:2:2^
 1522^23^0^7^8^1420^0.4733^0.3535^23^Darkeye Bonecaster^159:1:1,1181:1:1,1412:1:1,2589:6:12,2646:1:1,2773:1:1,3163:3:3,4604:1:1,8180:1:1^
@@ -146,6 +146,19 @@ GoldScout-export 6^vwjyvk9oxabu^27
 246890^1^0^0^0^0^0.0000^0.0000^0^^1828:1:1^
 247001^1^0^0^0^0^0.0000^0.0000^0^^276158:1:1^
 247003^2^0^0^0^0^0.0000^0.0000^0^^276160:2:2^
+250868^1^0^6^6^2521^0.4199^0.3553^1^Vuldren^3300:1:1^
+250873^19^0^1^1^2521^0.4500^0.2610^19^Juvenile Vuldren^1366:1:1,1367:1:1,1374:2:2,1376:2:2,1377:1:1,2211:1:1,2651:1:1,2653:1:1,2672:5:5,3363:1:1,4865:6:6,7073:8:8,7074:7:7^
+250926^15^0^3^4^2521^0.3983^0.2758^15^Scrawny Ursera^1364:1:1,2211:1:1,2651:1:1,2653:3:3,4496:1:1,7073:6:6,7074:5:5,251918:6:6,251925:4:4^
+250937^8^0^4^4^2521^0.3709^0.2511^8^Ursera Scavenger^1374:2:2,2651:1:1,7073:3:3,7074:4:4,251925:2:2^
+251115^1^0^5^5^2521^0.3552^0.2542^1^Urs'anah^7074:1:1,251925:1:1,252665:1:1^
+251143^7^0^2^3^2521^0.4700^0.2034^7^Roiling Winds^1364:1:1,2211:1:1,2650:1:1,251930:3:3,251931:4:4^
+251145^6^0^4^4^2521^0.3731^0.3256^6^Al'Aketh Brute^159:2:2,3363:1:1,3365:1:1,4540:4:4^
+251160^7^0^2^3^2521^0.4727^0.2007^7^Al'Aketh Convert^1367:1:1,2589:2:2,4540:1:1^
+251169^13^0^1^1^2521^0.4635^0.2692^13^Pesky Cirrusfly^828:1:1,1374:1:1,2211:1:1,2651:1:1,251927:9:9,251928:4:4^
+251402^2^0^2^2^2521^0.4790^0.2726^2^Cirrusfly Soldier^251928:2:2^
+251404^1^0^3^3^2521^0.4819^0.2788^1^Cirrusfly Queen^251928:1:1^
+251448^7^0^4^4^2521^0.3727^0.3290^7^Al'Aketh Neophyte^159:4:4,1368:1:1,1377:1:1,2589:3:3,2650:1:1,4540:3:3^
+251451^2^0^5^5^2521^0.4009^0.3449^2^Al'Aketh Ambusher^159:2:2,1378:1:1,2210:1:1^
 255065^1^0^0^0^0^0.0000^0.0000^0^^1829:1:1^
 255066^4^0^0^0^0^0.0000^0.0000^0^^1205:1:1,1827:1:1,4606:1:1^
 255069^2^0^0^0^0^0.0000^0.0000^0^^^
@@ -180,6 +193,7 @@ GoldScout-export 6^vwjyvk9oxabu^27
 @i^774^Malachite
 @i^779^Shiny Seashell
 @i^805^Small Red Pouch
+@i^828^Small Blue Pouch
 @i^857^Large Red Sack
 @i^858^Lesser Healing Potion
 @i^878^Fist-sized Spinneret
@@ -192,9 +206,14 @@ GoldScout-export 6^vwjyvk9oxabu^27
 @i^1181^Scroll of Spirit
 @i^1205^Melon Juice
 @i^1210^Shadowgem
+@i^1364^Ragged Leather Vest
+@i^1366^Ragged Leather Pants
+@i^1367^Ragged Leather Boots
 @i^1368^Ragged Leather Gloves
 @i^1374^Frayed Shoes
+@i^1376^Frayed Cloak
 @i^1377^Frayed Gloves
+@i^1378^Frayed Pants
 @i^1380^Frayed Robe
 @i^1411^Withered Staff
 @i^1412^Crude Bastard Sword
@@ -254,6 +273,8 @@ GoldScout-export 6^vwjyvk9oxabu^27
 @i^2643^Loose Chain Bracers
 @i^2644^Loose Chain Cloak
 @i^2646^Loose Chain Pants
+@i^2650^Flimsy Chain Boots
+@i^2651^Flimsy Chain Bracers
 @i^2653^Flimsy Chain Gloves
 @i^2672^Stringy Wolf Meat
 @i^2677^Boar Ribs
@@ -316,6 +337,7 @@ GoldScout-export 6^vwjyvk9oxabu^27
 @i^4496^Small Brown Pouch
 @i^4536^Shiny Red Apple
 @i^4538^Snapvine Watermelon
+@i^4540^Tough Hunk of Bread
 @i^4555^Thick Scaly Tail
 @i^4561^Scalping Tomahawk of the Eagle
 @i^4562^Severing Axe of the Tiger
@@ -408,7 +430,14 @@ GoldScout-export 6^vwjyvk9oxabu^27
 @i^211787^Scroll: LOWER PING WHOMEVER
 @i^211855^Scroll: STHENIC LUNATE
 @i^248692^Waylaid Crate: Expert Ore
+@i^251918^Scrawny Ursera Claw
+@i^251925^Tattered Ursera Feather
+@i^251927^Chipped Cirrusfly Stinger
+@i^251928^Torn Insect Wing
+@i^251930^Minor Essence of the Four Winds
+@i^251931^Depleted Windstone
 @i^251961^Arcane Mote
+@i^252665^Head of Urs'anah
 @i^262888^Sealed Journeyman's Writ
 @i^270866^Titan Relic
 @i^271100^Thicket Raptor Meat
@@ -434,6 +463,7 @@ GoldScout-export 6^vwjyvk9oxabu^27
 @q^774^2:7:1
 @q^779^0:15:0
 @q^805^1:1:0
+@q^828^1:1:0
 @q^857^1:1:0
 @q^858^1:0:0
 @q^878^0:7:0
@@ -446,9 +476,14 @@ GoldScout-export 6^vwjyvk9oxabu^27
 @q^1181^1:0:0
 @q^1205^1:0:0
 @q^1210^2:7:1
+@q^1364^0:4:0
+@q^1366^0:4:0
+@q^1367^0:4:0
 @q^1368^0:4:0
 @q^1374^0:4:0
+@q^1376^0:4:0
 @q^1377^0:4:0
+@q^1378^0:4:0
 @q^1380^0:4:0
 @q^1411^0:2:0
 @q^1412^0:2:0
@@ -508,6 +543,8 @@ GoldScout-export 6^vwjyvk9oxabu^27
 @q^2643^0:4:0
 @q^2644^0:4:0
 @q^2646^0:4:0
+@q^2650^0:4:0
+@q^2651^0:4:0
 @q^2653^0:4:0
 @q^2672^1:7:1
 @q^2677^1:7:1
@@ -570,6 +607,7 @@ GoldScout-export 6^vwjyvk9oxabu^27
 @q^4496^1:1:0
 @q^4536^1:0:0
 @q^4538^1:0:0
+@q^4540^1:0:0
 @q^4555^0:15:0
 @q^4561^2:2:0
 @q^4562^2:2:0
@@ -662,7 +700,14 @@ GoldScout-export 6^vwjyvk9oxabu^27
 @q^211787^1:0:0
 @q^211855^1:0:0
 @q^248692^1:0:1
+@q^251918^1:12:0
+@q^251925^0:15:0
+@q^251927^0:15:0
+@q^251928^0:15:0
+@q^251930^0:15:0
+@q^251931^0:15:0
 @q^251961^1:12:0
+@q^252665^1:12:0
 @q^262888^3:0:0
 @q^270866^1:12:0
 @q^271100^1:12:0
@@ -688,6 +733,7 @@ GoldScout-export 6^vwjyvk9oxabu^27
 @m^1424^Hillsbrad Foothills
 @m^1434^Stranglethorn Vale
 @m^1440^Ashenvale
+@m^2521^Zephras Isle
 @c^118^
 @c^724^
 @c^733^
@@ -2050,6 +2096,19 @@ GoldScout-export 6^vwjyvk9oxabu^27
 @a^8996^30:11,50:4
 @a^12918^251:1
 @a^12921^251:11
+@a^250868^148:1
+@a^250873^89:2,108:7,109:10
+@a^250926^107:5,108:8,127:2
+@a^250937^87:4,107:4
+@a^251115^107:1
+@a^251143^69:1,89:6
+@a^251145^127:6
+@a^251160^69:1,89:6
+@a^251169^109:13
+@a^251402^109:2
+@a^251404^109:1
+@a^251448^127:7
+@a^251451^127:1,148:1
 @a^264079^46:4
 @a^264081^26:1
 @a^264082^26:2

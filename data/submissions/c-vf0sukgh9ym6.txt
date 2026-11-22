@@ -1,4 +1,4 @@
-GoldScout-export 6^vf0sukgh9ym6^23
+GoldScout-export 6^vf0sukgh9ym6^24
 667^12^8^39^40^1434^0.4360^0.3617^12^Skullsplitter Warrior^1520:3:3,1524:4:4,2749:1:1,3771:1:1,3916:5:5,4306:5:8,4338:1:1,5427:1:1,8151:2:2^5427:1:1
 669^5^4^41^42^1434^0.4483^0.4289^5^Skullsplitter Hunter^1520:1:1,3916:2:2,4338:1:1,8151:1:1,8153:1:3^4599:1:1
 670^1^1^42^42^1434^0.4495^0.4269^1^Skullsplitter Witch Doctor^^
@@ -124,11 +124,12 @@ GoldScout-export 6^vf0sukgh9ym6^23
 5255^2^0^42^43^1444^0.5881^0.4879^2^Woodpaw Reaver^^
 5258^5^5^43^44^1444^0.7113^0.5542^5^Woodpaw Alpha^4338:3:4,4599:1:1^5430:1:1
 5260^2^0^42^43^1444^0.5528^0.5513^2^Groddoc Ape^2799:1:1,4096:1:1^
+5268^3^0^41^42^1444^0.5593^0.6072^3^Ironfur Bear^11408:3:3,11411:1:1^
 5272^1^0^44^45^1444^0.7252^0.5961^1^Grizzled Ironfur Bear^8146:1:1^
 5278^7^0^44^45^1444^0.6848^0.4783^7^Sprite Darter^4402:1:1,9369:6:10^
 5293^1^0^45^46^1444^0.5289^0.5990^1^Hulking Feral Scar^8973:1:1^
 5295^2^0^44^45^1444^0.5242^0.5755^2^Enraged Feral Scar^8973:1:1^
-5300^15^0^43^44^1444^0.5615^0.6214^15^Frayfeather Hippogryph^4589:10:10,4590:2:2,5117:1:1,5829:1:1,11418:5:5^
+5300^56^0^43^44^1444^0.5592^0.6209^56^Frayfeather Hippogryph^4589:21:21,4590:8:8,5117:6:6,5829:7:7,11417:5:5,11418:13:13,14261:1:1,248693:1:1,248710:1:1^
 5307^2^0^42^43^1444^0.5963^0.6204^2^Vale Screecher^6826:2:2,262889:1:1^
 5308^1^0^45^46^1444^0.4697^0.4857^1^Rogue Vale Screecher^6444:1:1^
 5419^1^0^42^43^1446^0.6568^0.2895^1^Glasshide Basilisk^8146:1:1,9437:1:1^
@@ -429,7 +430,10 @@ GoldScout-export 6^vf0sukgh9ym6^23
 @i^11204^Formula: Enchant Bracer - Greater Spirit
 @i^11386^Squishy Basilisk Eye
 @i^11387^Basilisk Heart
+@i^11408^Bear Jaw
+@i^11411^Large Bear Bone
 @i^11416^Delicate Ribcage
+@i^11417^Feathery Wing
 @i^11418^Hollow Wing Bone
 @i^12037^Mystery Meat
 @i^12184^Raptor Flesh
@@ -439,6 +443,7 @@ GoldScout-export 6^vf0sukgh9ym6^23
 @i^12208^Tender Wolf Meat
 @i^14234^Embersilk Robes of the Elder
 @i^14238^Darkmist Boots of the Whale
+@i^14261^Bloodwoven Cloak of the Champion
 @i^14422^Silksand Gloves
 @i^14467^Pattern: Frostweave Robe
 @i^14656^Scorpashi Cape
@@ -710,7 +715,10 @@ GoldScout-export 6^vf0sukgh9ym6^23
 @q^11204^2:9:0
 @q^11386^0:15:0
 @q^11387^0:15:0
+@q^11408^0:15:0
+@q^11411^0:2:0
 @q^11416^0:15:0
+@q^11417^0:15:0
 @q^11418^0:15:0
 @q^12037^1:7:1
 @q^12184^1:7:1
@@ -720,6 +728,7 @@ GoldScout-export 6^vf0sukgh9ym6^23
 @q^12208^1:7:1
 @q^14234^2:4:0
 @q^14238^2:4:0
+@q^14261^2:4:0
 @q^14422^2:4:0
 @q^14467^2:9:0
 @q^14656^2:4:0
@@ -1682,11 +1691,12 @@ GoldScout-export 6^vf0sukgh9ym6^23
 @a^5255^169:1,213:1
 @a^5258^213:1,233:1,234:3
 @a^5260^190:1,252:1
+@a^5268^251:3
 @a^5272^234:1
 @a^5278^193:7
 @a^5293^230:1
 @a^5295^230:2
-@a^5300^251:15
+@a^5300^250:3,251:53
 @a^5307^251:1,252:1
 @a^5308^189:1
 @a^5419^113:1

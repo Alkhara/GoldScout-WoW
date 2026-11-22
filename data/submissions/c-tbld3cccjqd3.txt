@@ -1,4 +1,4 @@
-GoldScout-export 6^tbld3cccjqd3^9
+GoldScout-export 6^tbld3cccjqd3^10
 2242^1^0^36^36^1416^0.6258^0.4524^1^Espion du Syndicat^^
 2252^20^0^34^35^1416^0.4891^0.3987^20^Ogre Cassecrête^1708:2:2,2592:4:6,3771:1:1,3782:1:1,3864:1:1,4306:4:6,4338:1:1^
 2253^13^0^35^36^1416^0.4835^0.4114^13^Brute Cassecrête^1708:1:1,2592:2:4,3778:1:1,4306:7:13^
@@ -56,9 +56,9 @@ GoldScout-export 6^tbld3cccjqd3^9
 7356^1^0^0^0^0^0.0000^0.0000^0^^10766:1:1,251401:1:1^
 7357^1^0^0^0^0^0.0000^0.0000^0^^10770:1:1^
 7358^1^0^0^0^0^0.0000^0.0000^0^^10420:1:1,10761:1:1,10765:1:1^
-7872^1^0^33^34^1413^0.4670^0.9192^1^Sectateur de la Tête de Mort^248688:1:1^
-7873^7^0^33^34^1413^0.4731^0.9233^7^Garde de guerre de Tranchebauge^1710:1:1,4306:1:3,4338:1:1,4539:1:1,15962:1:1^
-7874^1^0^33^34^1413^0.4812^0.9469^1^Tisseur d'épines de Tranchebauge^2592:1:1^
+7872^3^0^33^34^1413^0.4731^0.9124^3^Sectateur de la Tête de Mort^2080:1:1,3787:1:1,248688:1:1^
+7873^11^0^33^34^1413^0.4748^0.9185^11^Garde de guerre de Tranchebauge^1710:1:1,4306:3:6,4338:1:1,4539:1:1,7976:1:1,15962:1:1^
+7874^2^0^33^34^1413^0.4830^0.9226^2^Tisseur d'épines de Tranchebauge^2592:1:1,7453:1:1^
 8567^1^0^0^0^0^0.0000^0.0000^0^^10774:1:1,254040:1:1^
 12865^1^0^36^36^1413^0.4612^0.9037^1^Ambassadeur Malcin^17009:1:1^
 266357^1^0^36^36^1416^0.6276^0.4517^1^Barton^5113:1:1^
@@ -69,6 +69,7 @@ GoldScout-export 6^tbld3cccjqd3^9
 @i^1707^Brie de Hurlevent
 @i^1708^Nectar sucré
 @i^1710^Potion de soins supérieure
+@i^2080^Hache des collines d'esprit
 @i^2251^Patte d'araignée fondante
 @i^2592^Etoffe de laine
 @i^2677^Côtes de sanglier
@@ -87,6 +88,7 @@ GoldScout-export 6^tbld3cccjqd3^9
 @i^3783^Cimeterre léger
 @i^3785^Hache funèbre
 @i^3786^Miséricorde rutilante
+@i^3787^Gourdin en pierre
 @i^3792^Ceinture entrelacée
 @i^3799^Gilet entrelacé
 @i^3805^Pantalon en cuir durci
@@ -111,11 +113,13 @@ GoldScout-export 6^tbld3cccjqd3^9
 @i^6417^Cape de l'aurore
 @i^6421^Ceinture glyphée
 @i^7445^Epaulières de sentinelle de défense
+@i^7453^Patron : Bottes de rapidité
 @i^7458^Bottes de chevalier de héraut
 @i^7719^Heaume du berserker enragé
 @i^7723^Puissance de Mograine
 @i^7726^Egide du commandant écarlate
 @i^7786^Casse-tête
+@i^7976^Plans : Pointe de bouclier en mithril
 @i^9287^Gantelets de guerre en plaques d'esprit
 @i^10329^Ceinture écarlate
 @i^10420^Crâne du Porte-froid
@@ -155,6 +159,7 @@ GoldScout-export 6^tbld3cccjqd3^9
 @q^1707^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
+@q^2080^2:2:0
 @q^2251^1:7:1
 @q^2592^1:7:1
 @q^2677^1:7:1
@@ -173,6 +178,7 @@ GoldScout-export 6^tbld3cccjqd3^9
 @q^3783^0:2:0
 @q^3785^0:2:0
 @q^3786^0:2:0
+@q^3787^0:2:0
 @q^3792^0:4:0
 @q^3799^0:4:0
 @q^3805^0:4:0
@@ -197,11 +203,13 @@ GoldScout-export 6^tbld3cccjqd3^9
 @q^6417^2:4:0
 @q^6421^2:4:0
 @q^7445^2:4:0
+@q^7453^2:9:0
 @q^7458^2:4:0
 @q^7719^3:4:0
 @q^7723^3:2:0
 @q^7726^3:4:0
 @q^7786^3:2:0
+@q^7976^3:9:0
 @q^9287^2:4:0
 @q^10329^3:4:0
 @q^10420^1:12:0
@@ -530,9 +538,9 @@ GoldScout-export 6^tbld3cccjqd3^9
 @a^3821^277:1
 @a^7327^290:1
 @a^7335^290:2
-@a^7872^369:1
-@a^7873^349:1,369:6
-@a^7874^369:1
+@a^7872^349:1,369:2
+@a^7873^349:3,369:8
+@a^7874^349:1,369:1
 @a^12865^369:1
 @a^266357^192:1
 @l^0^frFR
