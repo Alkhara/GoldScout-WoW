@@ -1,4 +1,4 @@
-GoldScout-export 6^zu3iawxa1t64^11
+GoldScout-export 6^zu3iawxa1t64^12
 429^3^0^25^26^1433^0.7430^0.4699^3^Dunkelwirker der Schattenfelle^211855:1:1^
 431^3^0^25^26^1433^0.7600^0.4964^3^Töter der Schattenfelle^1205:1:1,2592:2:3,4633:1:1^
 819^1^0^25^25^1433^0.7504^0.4766^1^Diener von Ilgalar^3724:1:1,3725:1:1^
@@ -46,6 +46,7 @@ GoldScout-export 6^zu3iawxa1t64^11
 4696^1^0^31^31^1443^0.6171^0.1318^1^Skorpashischnapper^19937:1:1^
 5766^7^0^4^5^1413^0.6176^0.3299^7^Savannenjunges^^
 14433^1^0^30^30^1437^0.1460^0.6739^1^Schlicker^3676:1:1,9829:1:1^
+250873^5^0^1^1^2521^0.4484^0.2502^5^Junger Vuldren^1367:1:1,2656:1:1,2672:2:2,3365:1:1,4865:3:3,7074:3:3^
 260322^2^0^0^0^0^0.0000^0.0000^0^^^
 260325^2^0^0^0^0^0.0000^0.0000^0^^^
 260326^2^0^0^0^0^0.0000^0.0000^0^^270865:1:1^
@@ -74,6 +75,7 @@ GoldScout-export 6^zu3iawxa1t64^11
 @i^1081^Knuspriges Spinnenfleisch
 @i^1205^Melonensaft
 @i^1288^Großer Giftbeutel
+@i^1367^Struppige Lederstiefel
 @i^1468^Murlocflosse
 @i^1478^Rolle des Schutzes II
 @i^1697^Beißender Raptorzahn
@@ -95,6 +97,8 @@ GoldScout-export 6^zu3iawxa1t64^11
 @i^2592^Wollstoff
 @i^2611^Kunstloser Feuerstein
 @i^2629^Geldkassettenschlüssel der INTREPID
+@i^2656^Sehr leichte Kettenweste
+@i^2672^Sehniges Wolfsfleisch
 @i^3174^Spinnensekret
 @i^3175^Verdorbener Drachenbalg
 @i^3176^Kleine Klaue
@@ -103,6 +107,7 @@ GoldScout-export 6^zu3iawxa1t64^11
 @i^3337^Kriegsflagge der Dragonmaw
 @i^3348^Riesige Krokiliskenhaut
 @i^3349^Sidas Tasche
+@i^3365^Ausgefranste Armschienen
 @i^3380^Kreuznahtgürtel
 @i^3385^Geringer Manatrank
 @i^3397^Haut eines jungen Krokilisken
@@ -126,6 +131,7 @@ GoldScout-export 6^zu3iawxa1t64^11
 @i^4428^Spinnentaster
 @i^4542^Saftiges Maisbrot
 @i^4633^Schwere bronzene Schließkassette
+@i^4865^Verdorbener Pelz
 @i^5136^Zerrissenes pelziges Ohr
 @i^5524^Dickschalige Muschel
 @i^5635^Scharfe Klaue
@@ -137,6 +143,7 @@ GoldScout-export 6^zu3iawxa1t64^11
 @i^6308^Roher Stoppelfühlerwels
 @i^6310^19-pfündiger Wels
 @i^6571^Späherrundschild des Champions
+@i^7074^Gesplitterte Klaue
 @i^8748^Doppelpanzerhelmkappe
 @i^9787^Räuber-Stulpen der Beweglichkeit
 @i^9829^Lederschuppenarmschienen des Ritters
@@ -169,6 +176,7 @@ GoldScout-export 6^zu3iawxa1t64^11
 @q^1081^1:7:1
 @q^1205^1:0:0
 @q^1288^1:7:1
+@q^1367^0:4:0
 @q^1468^1:7:1
 @q^1478^1:0:0
 @q^1697^0:15:0
@@ -190,6 +198,8 @@ GoldScout-export 6^zu3iawxa1t64^11
 @q^2592^1:7:1
 @q^2611^1:12:0
 @q^2629^1:13:0
+@q^2656^0:4:0
+@q^2672^1:7:1
 @q^3174^1:7:1
 @q^3175^0:15:0
 @q^3176^0:15:0
@@ -198,6 +208,7 @@ GoldScout-export 6^zu3iawxa1t64^11
 @q^3337^1:12:0
 @q^3348^1:12:0
 @q^3349^1:12:0
+@q^3365^0:4:0
 @q^3380^0:4:0
 @q^3385^1:0:0
 @q^3397^1:12:0
@@ -221,6 +232,7 @@ GoldScout-export 6^zu3iawxa1t64^11
 @q^4428^0:15:0
 @q^4542^1:0:0
 @q^4633^2:15:0
+@q^4865^0:15:0
 @q^5136^0:15:0
 @q^5524^1:7:0
 @q^5635^1:7:1
@@ -232,6 +244,7 @@ GoldScout-export 6^zu3iawxa1t64^11
 @q^6308^1:7:1
 @q^6310^1:15:0
 @q^6571^2:4:0
+@q^7074^0:15:0
 @q^8748^0:4:0
 @q^9787^2:4:0
 @q^9829^2:4:0
@@ -260,6 +273,7 @@ GoldScout-export 6^zu3iawxa1t64^11
 @m^1442^Steinkrallengebirge
 @m^1443^Desolace
 @m^1453^Stormwind
+@m^2521^Insel Zephras
 @c^118^
 @c^724^
 @c^733^
@@ -826,6 +840,7 @@ GoldScout-export 6^zu3iawxa1t64^11
 @a^4696^52:1
 @a^5766^132:7
 @a^14433^262:1
+@a^250873^89:2,108:3
 @a^270892^206:1
 @a^271458^92:1
 @a^271460^70:1

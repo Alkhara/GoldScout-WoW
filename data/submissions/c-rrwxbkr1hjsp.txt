@@ -1,4 +1,4 @@
-GoldScout-export 6^rrwxbkr1hjsp^20
+GoldScout-export 6^rrwxbkr1hjsp^21
 1489^1^0^43^43^1434^0.3881^0.5948^1^Zanzil Hunter^^
 1490^3^0^44^44^1434^0.3900^0.5843^3^Zanzil Witch Doctor^1645:1:1,4016:2:2,4306:1:2,8153:1:1,9906:1:1^
 1514^1^0^44^44^1434^0.3442^0.6296^1^Mokk the Savage^2797:1:1^
@@ -10,6 +10,9 @@ GoldScout-export 6^rrwxbkr1hjsp^20
 1564^9^0^42^43^1434^0.3002^0.8174^9^Bloodsail Warlock^3910:3:3,4306:1:2,4338:3:5,9260:1:1,217161:1:1^
 1565^3^0^44^45^1434^0.3001^0.8937^3^Bloodsail Sea Dog^2728:1:1,2742:1:1,3910:2:2^
 1653^2^0^44^45^1434^0.3060^0.9003^2^Bloodsail Elder Magus^2728:1:1,3910:1:1^
+1984^2^0^1^2^1438^0.5641^0.4482^2^Young Thistle Boar^4865:1:1,7098:1:1^
+1988^2^0^2^3^1438^0.5625^0.4502^2^Grell^117:1:1,3297:1:1^
+2031^1^0^1^1^1438^0.5699^0.4480^1^Young Nightsaber^4865:1:1^
 2545^2^0^39^39^1434^0.2777^0.6961^2^Pretty Boy Duncan^3794:1:1,4306:1:3^
 2547^2^0^43^43^1434^0.3060^0.9020^2^Ironpatch^3910:1:1^
 2639^1^0^45^46^1425^0.4907^0.6305^1^Vilebranch Axe Thrower^^
@@ -162,6 +165,7 @@ GoldScout-export 6^rrwxbkr1hjsp^20
 271784^1^0^0^0^0^0.0000^0.0000^0^^4338:1:2^
 272228^1^0^36^37^2548^0.5397^0.7702^1^Harvest Sentry^5567:1:1^
 276401^1^0^43^43^2652^0.4596^0.5531^1^Nascent Pylon Protector^260353:1:1^
+@i^117^Tough Jerky
 @i^785^Mageroyal
 @i^866^Monk's Staff of the Hierophant
 @i^1074^Hard Spider Leg Tip
@@ -181,6 +185,7 @@ GoldScout-export 6^rrwxbkr1hjsp^20
 @i^2797^Heart of Mokk
 @i^2799^Gorilla Fang
 @i^2815^Curve-bladed Ripper
+@i^3297^Fel Moss
 @i^3357^Liferoot
 @i^3402^Soft Patch of Fur
 @i^3404^Buzzard Wing
@@ -229,6 +234,7 @@ GoldScout-export 6^rrwxbkr1hjsp^20
 @i^4603^Raw Spotted Yellowtail
 @i^4608^Raw Black Truffle
 @i^4736^Mistscape Sash
+@i^4865^Ruined Pelt
 @i^5128^Shed Lizard Skin
 @i^5429^A Pretty Rock
 @i^5431^Empty Hip Flask
@@ -242,6 +248,7 @@ GoldScout-export 6^rrwxbkr1hjsp^20
 @i^6438^Dull Elemental Bracer
 @i^6444^Forked Tongue
 @i^7081^Breath of Wind
+@i^7098^Splintered Tusk
 @i^7429^Twilight Armor of the Whale
 @i^7479^Ranger Helm of the Sorcerer
 @i^7491^Captain's Shoulderguards of the Falcon
@@ -381,6 +388,7 @@ GoldScout-export 6^rrwxbkr1hjsp^20
 @i^281665^Twilight Forgehammer
 @i^286429^Big-Belly Belt
 @i^286647^Depleted Crystal Heart
+@q^117^1:0:0
 @q^785^1:7:1
 @q^866^2:2:0
 @q^1074^0:15:0
@@ -400,6 +408,7 @@ GoldScout-export 6^rrwxbkr1hjsp^20
 @q^2797^1:12:0
 @q^2799^1:12:0
 @q^2815^3:2:0
+@q^3297^1:12:0
 @q^3357^1:7:1
 @q^3402^0:15:0
 @q^3404^1:7:1
@@ -448,6 +457,7 @@ GoldScout-export 6^rrwxbkr1hjsp^20
 @q^4603^1:7:1
 @q^4608^1:0:0
 @q^4736^2:4:0
+@q^4865^0:15:0
 @q^5128^0:15:0
 @q^5429^0:15:0
 @q^5431^0:15:0
@@ -461,6 +471,7 @@ GoldScout-export 6^rrwxbkr1hjsp^20
 @q^6438^0:15:0
 @q^6444^0:15:0
 @q^7081^1:7:1
+@q^7098^0:15:0
 @q^7429^2:4:0
 @q^7479^2:4:0
 @q^7491^2:4:0
@@ -603,6 +614,7 @@ GoldScout-export 6^rrwxbkr1hjsp^20
 @m^1414^Kalimdor
 @m^1425^The Hinterlands
 @m^1434^Stranglethorn Vale
+@m^1438^Teldrassil
 @m^1443^Desolace
 @m^1446^Tanaris
 @m^2548^Riverglades
@@ -844,6 +856,9 @@ GoldScout-export 6^rrwxbkr1hjsp^20
 @a^1564^306:2,325:4,326:2,346:1
 @a^1565^345:2,346:1
 @a^1653^366:2
+@a^1984^171:2
+@a^1988^171:1,191:1
+@a^2031^171:1
 @a^2545^265:2
 @a^2547^366:2
 @a^2639^249:1

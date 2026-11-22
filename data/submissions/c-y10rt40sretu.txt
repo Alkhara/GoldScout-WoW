@@ -1,4 +1,4 @@
-GoldScout-export 6^y10rt40sretu^10
+GoldScout-export 6^y10rt40sretu^11
 2240^1^0^33^33^1416^0.5856^0.6570^1^Syndicate Footpad^^
 2241^1^0^33^33^1416^0.5764^0.6236^1^Syndicate Thief^5113:1:1^
 2248^1^0^30^30^1424^0.4639^0.3552^1^Cave Yeti^^
@@ -19,6 +19,18 @@ GoldScout-export 6^y10rt40sretu^10
 2406^1^0^32^33^1416^0.3990^0.9273^1^Mountain Lion^1686:1:1,3731:1:1^
 2408^14^0^30^31^1424^0.6825^0.2014^14^Snapjaw^3712:6:10,4555:2:2,4556:4:4,5524:8:8,6308:2:4,211854:1:1,248694:1:1^
 2529^2^0^0^0^0^0.0000^0.0000^0^^^
+3099^20^0^6^7^1411^0.4852^0.3463^20^Dire Mottled Boar^769:20:20,3171:5:5^
+3100^29^0^8^9^1411^0.4249^0.2178^29^Elder Mottled Boar^767:1:1,769:24:24,771:1:1,774:2:2,805:1:1,818:1:1,3171:11:11,4563:2:2^
+3122^2^0^8^8^1411^0.4659^0.3539^2^Bloodtalon Taillasher^211785:1:1^
+3123^1^0^10^10^1411^0.3651^0.2577^1^Bloodtalon Scythemaw^727:1:1^
+3126^1^0^7^8^1411^0.4565^0.3662^1^Armored Scorpid^4867:1:1,5466:1:1^
+3127^4^0^9^10^1411^0.4133^0.2147^4^Venomtail Scorpid^4867:2:2,4872:1:1,5466:2:2^
+3130^14^0^9^10^1411^0.3998^0.2879^14^Thunder Lizard^774:1:1,4674:1:1,4879:5:5,4880:5:5,277665:2:2^
+3131^7^0^10^11^1411^0.4069^0.2405^7^Lightning Hide^768:1:1,4879:2:2,277665:3:3^
+3197^2^0^10^10^1411^0.4182^0.2618^2^Burning Blade Fanatic^4871:2:2^
+3198^1^0^10^11^1411^0.4284^0.2642^1^Burning Blade Apprentice^4871:1:1,14544:1:1^
+3203^2^0^12^12^1411^0.4215^0.2664^2^Fizzle Darkstorm^117:1:1,2589:1:1^
+3225^1^0^10^10^1411^0.3873^0.2319^1^Corrupted Mottled Boar^769:1:1,3171:1:1^
 3631^2^0^16^16^1414^0.5235^0.5482^2^Deviate Stinglash^6443:1:1,6444:1:1^
 3633^4^0^16^17^1414^0.5256^0.5491^4^Deviate Slayer^3180:1:1,5124:3:3^
 3634^1^0^17^17^1414^0.5273^0.5488^1^Deviate Stalker^5124:1:1,6470:1:1^
@@ -56,6 +68,7 @@ GoldScout-export 6^y10rt40sretu^10
 4627^1^0^0^0^0^0.0000^0.0000^0^^6438:1:1^
 8518^2^0^29^29^1442^0.2964^0.1669^2^Rynthariel the Keymaster^1807:1:1^
 12677^1^0^28^28^1440^0.6093^0.5099^1^Shadumbra^3731:1:1,5137:1:1^
+12922^2^0^12^12^1411^0.4213^0.2666^2^Imp Minion^^
 245999^1^0^0^0^1416^0.0000^0.0000^0^^273031:1:1^
 246016^1^0^0^0^1416^0.0000^0.0000^0^^273045:1:1^
 246017^1^0^0^0^1416^0.0000^0.0000^0^^273048:1:1^
@@ -70,7 +83,16 @@ GoldScout-export 6^y10rt40sretu^10
 255071^1^0^0^0^1416^0.0000^0.0000^0^^1808:1:1^
 255072^2^0^0^0^1416^0.0000^0.0000^0^^1825:1:1,211853:1:1^
 269134^1^0^0^0^1416^0.0000^0.0000^0^^^
+@i^117^Tough Jerky
+@i^727^Notched Shortsword of the Boar
+@i^767^Long Bo Staff
+@i^768^Lumberjack Axe
+@i^769^Chunk of Boar Meat
+@i^771^Chipped Boar Tusk
+@i^774^Malachite
 @i^790^Forester's Axe of the Monkey
+@i^805^Small Red Pouch
+@i^818^Tigerseye
 @i^1081^Crisp Spider Meat
 @i^1205^Melon Juice
 @i^1206^Moss Agate
@@ -94,6 +116,7 @@ GoldScout-export 6^y10rt40sretu^10
 @i^2782^Mishandled Recurve Bow
 @i^2786^Oiled Blunderbuss
 @i^2838^Heavy Stone
+@i^3171^Broken Boar Tusk
 @i^3180^Flecked Raptor Scale
 @i^3377^Canvas Bracers
 @i^3402^Soft Patch of Fur
@@ -113,13 +136,21 @@ GoldScout-export 6^y10rt40sretu^10
 @i^4553^Jagged Piece of Stone
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
+@i^4563^Billy Club
 @i^4571^War Knife of the Whale
+@i^4674^Tribal Cloak
 @i^4784^Lifeless Stone
+@i^4867^Broken Scorpid Leg
+@i^4871^Searing Collar
+@i^4872^Dry Scorpid Eye
+@i^4879^Squashed Rabbit Carcass
+@i^4880^Broken Spear
 @i^5113^Mark of the Syndicate
 @i^5124^Small Raptor Tooth
 @i^5135^Thin Black Claw
 @i^5136^Torn Furry Ear
 @i^5137^Bright Eyeball
+@i^5466^Scorpid Stinger
 @i^5516^Threshadon Fang
 @i^5523^Small Barnacled Clam
 @i^5524^Thick-shelled Clam
@@ -150,11 +181,13 @@ GoldScout-export 6^y10rt40sretu^10
 @i^11391^Spined Bat Wing
 @i^11982^Viridian Band of the Bear
 @i^14377^Sanguine Handwraps
+@i^14544^Lieutenant's Insignia
 @i^15124^Robust Cloak of Arcane Wrath
 @i^16648^Shredder Operating Manual - Page 4
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
 @i^211784^Scroll: WUBBA WUBBA
+@i^211785^Scroll: CWAL
 @i^211853^Scroll: VOCE WELL
 @i^211854^Scroll: OMIT KESA
 @i^211855^Scroll: STHENIC LUNATE
@@ -166,7 +199,17 @@ GoldScout-export 6^y10rt40sretu^10
 @i^273048^Refractory Scaleguards
 @i^273457^Sorcerer Collar
 @i^276160^Mana Fragment
+@i^277665^Charged Thunder Lizard Organ
+@q^117^1:0:0
+@q^727^2:2:0
+@q^767^1:2:0
+@q^768^1:2:0
+@q^769^1:7:1
+@q^771^0:15:0
+@q^774^2:7:1
 @q^790^2:2:0
+@q^805^1:1:0
+@q^818^2:7:1
 @q^1081^1:7:1
 @q^1205^1:0:0
 @q^1206^2:7:1
@@ -190,6 +233,7 @@ GoldScout-export 6^y10rt40sretu^10
 @q^2782^0:2:0
 @q^2786^0:2:0
 @q^2838^1:7:1
+@q^3171^0:15:0
 @q^3180^0:15:0
 @q^3377^0:4:0
 @q^3402^0:15:0
@@ -209,13 +253,21 @@ GoldScout-export 6^y10rt40sretu^10
 @q^4553^0:15:0
 @q^4555^0:15:0
 @q^4556^0:15:0
+@q^4563^1:2:0
 @q^4571^2:2:0
+@q^4674^1:4:0
 @q^4784^0:15:0
+@q^4867^0:15:0
+@q^4871^1:12:0
+@q^4872^0:15:0
+@q^4879^0:15:0
+@q^4880^0:15:0
 @q^5113^0:15:0
 @q^5124^0:15:0
 @q^5135^0:15:0
 @q^5136^0:15:0
 @q^5137^0:15:0
+@q^5466^1:7:1
 @q^5516^0:2:0
 @q^5523^1:7:0
 @q^5524^1:7:0
@@ -246,11 +298,13 @@ GoldScout-export 6^y10rt40sretu^10
 @q^11391^0:15:0
 @q^11982^2:4:0
 @q^14377^2:4:0
+@q^14544^1:12:0
 @q^15124^2:4:0
 @q^16648^1:12:0
 @q^17057^1:15:0
 @q^17058^1:15:0
 @q^211784^1:0:0
+@q^211785^1:0:0
 @q^211853^1:0:0
 @q^211854^1:0:0
 @q^211855^1:0:0
@@ -262,6 +316,8 @@ GoldScout-export 6^y10rt40sretu^10
 @q^273048^3:4:0
 @q^273457^3:4:0
 @q^276160^0:15:0
+@q^277665^1:12:0
+@m^1411^Durotar
 @m^1414^Kalimdor
 @m^1416^Alterac Mountains
 @m^1424^Hillsbrad Foothills
@@ -1005,6 +1061,18 @@ GoldScout-export 6^y10rt40sretu^10
 @a^2404^166:2
 @a^2406^367:1
 @a^2408^53:1,54:1,73:6,93:4,113:1,133:1
+@a^3099^127:1,128:4,129:1,130:6,149:4,150:4
+@a^3100^49:1,67:3,68:2,69:4,87:3,88:8,89:4,107:2,127:2
+@a^3122^128:1,149:1
+@a^3123^107:1
+@a^3126^149:1
+@a^3127^68:1,87:1,88:2
+@a^3130^107:3,108:8,127:2,128:1
+@a^3131^87:2,88:5
+@a^3197^108:2
+@a^3198^108:1
+@a^3203^108:2
+@a^3225^87:1
 @a^3631^210:1,230:1
 @a^3633^210:3,230:1
 @a^3634^210:1
@@ -1020,4 +1088,5 @@ GoldScout-export 6^y10rt40sretu^10
 @a^4409^65:1
 @a^8518^65:2
 @a^12677^212:1
+@a^12922^108:2
 @l^0^enUS

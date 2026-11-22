@@ -1,4 +1,4 @@
-GoldScout-export 6^w3tlpxe9u9gg^6
+GoldScout-export 6^w3tlpxe9u9gg^7
 7086^15^0^49^50^1448^0.3979^0.7118^15^Cursed Ooze^3671:1:1,3676:2:2,20763:4:4,20767:2:2^
 7092^12^0^51^52^1448^0.3995^0.5536^12^Tainted Ooze^20763:2:2,20768:1:1,281017:1:1^
 7100^7^0^52^53^1448^0.5490^0.1705^7^Warpwood Moss Flayer^2453:1:1,8836:1:1,10286:2:2,11503:7:7,13464:1:1^
@@ -36,6 +36,7 @@ GoldScout-export 6^w3tlpxe9u9gg^6
 9878^2^0^51^52^1448^0.4177^0.4243^2^Entropic Beast^^
 9879^2^0^53^54^1448^0.4091^0.4147^2^Entropic Horror^^
 10648^1^0^55^55^1448^0.3907^0.2165^1^Xavaric^11668:1:1^
+243509^22^0^56^57^2482^0.4972^0.7803^22^Noxious Slime^3671:4:4,3970:1:1,3993:1:1,20763:4:4,20768:1:1,20770:8:8,273008:8:8,281016:1:1^
 248041^2^0^56^57^2482^0.5959^0.8558^2^Hyjal Stag^5119:1:1,5471:1:1,5566:1:1,251641:2:2^
 248395^20^0^55^56^2482^0.6007^0.7185^20^Tainted Shrubbery^3987:1:1,8766:1:1,8948:1:1,10286:2:2,13444:1:1,247892:12:12,256037:1:1,281016:1:1,281017:1:1,281018:1:1^
 249051^1^0^57^57^2482^0.6567^0.7059^1^Celastrus the Bitter^282028:1:1^
@@ -46,16 +47,26 @@ GoldScout-export 6^w3tlpxe9u9gg^6
 255391^1^0^0^0^0^0.0000^0.0000^0^^276734:1:1^
 255995^1^0^0^0^0^0.0000^0.0000^0^^4338:1:4,14266:1:1^
 256236^1^0^0^0^0^0.0000^0.0000^0^^276743:1:1^
+260422^20^0^56^57^2482^0.4891^0.7413^20^Ashen Acolyte^8766:2:2,8952:1:1,13824:1:1,14047:3:4,274396:12:12^
+260439^2^0^56^56^2482^0.4832^0.7024^2^Subjugated Assistant^^
+260440^1^0^58^58^2482^0.4871^0.7034^1^Brashann Grimdark^^
+260443^1^0^58^58^2482^0.4517^0.7018^1^Dazka Shadowsleep^14047:1:1,273292:1:1^
+260444^1^0^58^58^2482^0.4662^0.6855^1^Tyaeha Darkoath^14047:1:1,273291:1:1^
+260818^1^0^58^58^2482^0.4321^0.7217^1^Frezzlie Popwhiz^14047:1:1,273290:1:1^
 261914^1^0^55^55^2482^0.7353^0.7871^1^Tainted Hyjal Owl^15420:1:2^
+264306^1^0^58^58^2482^0.4265^0.7809^1^Awakened Fel Ash Slime^^
 271780^1^0^0^0^0^0.0000^0.0000^0^^^
+276138^2^0^56^57^2482^0.4992^0.7351^2^Subjugated Assistant^^
 @i^1645^Moonberry Juice
 @i^2453^Bruiseweed
 @i^3671^Lifeless Skull
 @i^3676^Slimy Ichor
 @i^3928^Superior Healing Potion
 @i^3962^Thick Leather Boots
+@i^3970^Smooth Leather Boots
 @i^3973^Smooth Leather Gloves
 @i^3987^Deflecting Tower
+@i^3993^Laminated Scale Boots
 @i^4089^Ricochet Blunderbuss of Spirit
 @i^4338^Mageweave Cloth
 @i^4583^Thick Furry Mane
@@ -105,6 +116,7 @@ GoldScout-export 6^w3tlpxe9u9gg^6
 @i^13464^Golden Sansam
 @i^13818^Jagged Axe
 @i^13823^Stout War Staff
+@i^13824^Recurve Long Bow
 @i^14047^Runecloth
 @i^14256^Felcloth
 @i^14266^Bloodwoven Pads of the Whale
@@ -117,6 +129,7 @@ GoldScout-export 6^w3tlpxe9u9gg^6
 @i^20763^Broken Weapon
 @i^20767^Scum Covered Bag
 @i^20768^Oozing Bag
+@i^20770^Bubbling Green Ichor
 @i^21377^Deadwood Headdress Feather
 @i^213544^Scroll: TOPAZ YORAK
 @i^213545^Scroll: PEATCHY ATTAX
@@ -127,6 +140,11 @@ GoldScout-export 6^w3tlpxe9u9gg^6
 @i^251641^Hyjal Venison Cut
 @i^252866^Pattern: Blue Suede Gloves
 @i^256037^Grass Clippings
+@i^273008^Fel-Slime Ooze
+@i^273290^Bones of Frezzlie Popwhiz
+@i^273291^Bones of Tyaeha Darkoath
+@i^273292^Bones of Dazka Shadowsleep
+@i^274396^Fel Ash Experimentation Notes
 @i^276734^Wrex's Pinky Ring
 @i^276743^Fingerbreaker Stamp
 @i^277958^Putrescent Bear Organs
@@ -143,8 +161,10 @@ GoldScout-export 6^w3tlpxe9u9gg^6
 @q^3676^0:15:0
 @q^3928^1:0:0
 @q^3962^0:4:0
+@q^3970^0:4:0
 @q^3973^0:4:0
 @q^3987^0:4:0
+@q^3993^0:4:0
 @q^4089^2:2:0
 @q^4338^1:7:1
 @q^4583^0:15:0
@@ -194,6 +214,7 @@ GoldScout-export 6^w3tlpxe9u9gg^6
 @q^13464^1:7:1
 @q^13818^0:2:0
 @q^13823^0:2:0
+@q^13824^0:2:0
 @q^14047^1:7:1
 @q^14256^1:7:1
 @q^14266^2:4:0
@@ -206,6 +227,7 @@ GoldScout-export 6^w3tlpxe9u9gg^6
 @q^20763^0:15:0
 @q^20767^1:15:0
 @q^20768^1:15:0
+@q^20770^0:15:0
 @q^21377^1:12:0
 @q^213544^1:0:0
 @q^213545^1:0:0
@@ -216,6 +238,11 @@ GoldScout-export 6^w3tlpxe9u9gg^6
 @q^251641^1:12:0
 @q^252866^2:9:0
 @q^256037^0:15:0
+@q^273008^1:12:0
+@q^273290^1:12:0
+@q^273291^1:12:0
+@q^273292^1:12:0
+@q^274396^1:12:0
 @q^276734^3:4:0
 @q^276743^3:4:0
 @q^277958^1:12:0
@@ -737,8 +764,17 @@ GoldScout-export 6^w3tlpxe9u9gg^6
 @a^9878^168:2
 @a^9879^168:2
 @a^10648^87:1
+@a^243509^288:2,289:1,292:3,308:2,309:2,312:1,328:1,329:9,330:1
 @a^248041^332:1,351:1
 @a^248395^271:1,272:10,291:3,292:1,311:4,331:1
 @a^249051^293:1
+@a^260422^269:1,289:9,290:4,309:3,310:3
+@a^260439^269:1,289:1
+@a^260440^289:1
+@a^260443^289:1
+@a^260444^269:1
+@a^260818^288:1
 @a^261914^314:1
+@a^264306^308:1
+@a^276138^289:1,290:1
 @l^0^enUS

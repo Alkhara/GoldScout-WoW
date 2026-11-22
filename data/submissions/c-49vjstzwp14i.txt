@@ -1,5 +1,10 @@
-GoldScout-export 6^49vjstzwp14i^19
+GoldScout-export 6^49vjstzwp14i^20
 232^1^0^23^23^1424^0.3289^0.3468^1^Farmer Ray^4538:1:1^
+1501^8^0^1^1^1420^0.3156^0.6329^8^Mindless Zombie^159:1:1,1370:1:1,1380:1:1,2589:1:1,2649:1:1^
+1502^9^0^1^2^1420^0.3206^0.6296^9^Wretched Zombie^1366:1:1,1374:1:1,1380:1:1,2589:1:1,2651:1:1,4604:2:2^
+1508^1^0^1^1^1420^0.3102^0.6274^1^Young Scavenger^4865:1:1^
+1513^1^0^3^3^1420^0.3394^0.6469^1^Mangy Duskbat^3264:1:1,7073:1:1,7074:1:1^
+1890^1^0^2^2^1420^0.3394^0.6469^1^Rattlecage Skeleton^1377:1:1,2589:1:1^
 2182^1^0^20^20^1439^0.5865^0.2212^1^Stormscale Sorceress^3377:1:1^
 2266^6^0^23^24^1424^0.3386^0.4297^6^Hillsbrad Farmer^1485:2:2,1774:1:1,1775:1:1,2592:3:5,4538:2:2^
 2267^2^0^24^25^1424^0.3549^0.4832^2^Hillsbrad Peasant^2592:1:2^
@@ -57,8 +62,14 @@ GoldScout-export 6^49vjstzwp14i^19
 5931^2^0^24^24^1442^0.6589^0.4817^2^Foreman Rigger^2592:2:5,6586:1:1,284400:1:1^
 10758^1^0^25^26^1441^0.3387^0.3612^1^Grimtotem Bandit^2592:1:1,3770:1:1^
 10760^1^0^25^25^1441^0.3370^0.3656^1^Grimtotem Geomancer^3608:1:1^
+@i^159^Refreshing Spring Water
 @i^954^Scroll of Strength
 @i^1205^Melon Juice
+@i^1366^Ragged Leather Pants
+@i^1370^Ragged Leather Bracers
+@i^1374^Frayed Shoes
+@i^1377^Frayed Gloves
+@i^1380^Frayed Robe
 @i^1485^Pitchfork
 @i^1750^Linked Chain Gloves
 @i^1774^Brocade Cloak
@@ -70,11 +81,14 @@ GoldScout-export 6^49vjstzwp14i^19
 @i^2447^Peacebloom
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2649^Flimsy Chain Belt
+@i^2651^Flimsy Chain Bracers
 @i^2765^Hunting Knife
 @i^2782^Mishandled Recurve Bow
 @i^2786^Oiled Blunderbuss
 @i^2836^Coarse Stone
 @i^3199^Battle Slayer of the Whale
+@i^3264^Duskbat Wing
 @i^3377^Canvas Bracers
 @i^3378^Brocade Belt
 @i^3385^Lesser Mana Potion
@@ -86,6 +100,8 @@ GoldScout-export 6^49vjstzwp14i^19
 @i^3931^Poisoned Spider Fang
 @i^4306^Silk Cloth
 @i^4538^Snapvine Watermelon
+@i^4604^Forest Mushroom Cap
+@i^4865^Ruined Pelt
 @i^5115^Broken Wishbone
 @i^5116^Long Tail Feather
 @i^5118^Large Flat Tooth
@@ -109,6 +125,8 @@ GoldScout-export 6^49vjstzwp14i^19
 @i^6522^Deviate Fish
 @i^6586^Scouting Gloves of Arcane Wrath
 @i^7068^Elemental Fire
+@i^7073^Broken Fang
+@i^7074^Chipped Claw
 @i^7812^Corrupt Manifestation's Bracers
 @i^9795^Ivycloth Gloves of the Whale
 @i^9807^Superior Shoulders of the Knight
@@ -130,8 +148,14 @@ GoldScout-export 6^49vjstzwp14i^19
 @i^248687^Waylaid Crate: Journeyman Ore
 @i^277936^Glittering Sunstone
 @i^284400^Foreman's Helm
+@q^159^1:0:0
 @q^954^1:0:0
 @q^1205^1:0:0
+@q^1366^0:4:0
+@q^1370^0:4:0
+@q^1374^0:4:0
+@q^1377^0:4:0
+@q^1380^0:4:0
 @q^1485^0:2:0
 @q^1750^0:4:0
 @q^1774^0:4:0
@@ -143,11 +167,14 @@ GoldScout-export 6^49vjstzwp14i^19
 @q^2447^1:7:1
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2649^0:4:0
+@q^2651^0:4:0
 @q^2765^0:2:0
 @q^2782^0:2:0
 @q^2786^0:2:0
 @q^2836^1:7:1
 @q^3199^2:2:0
+@q^3264^1:12:0
 @q^3377^0:4:0
 @q^3378^0:4:0
 @q^3385^1:0:0
@@ -159,6 +186,8 @@ GoldScout-export 6^49vjstzwp14i^19
 @q^3931^0:15:0
 @q^4306^1:7:1
 @q^4538^1:0:0
+@q^4604^1:0:0
+@q^4865^0:15:0
 @q^5115^0:15:0
 @q^5116^1:7:1
 @q^5118^0:15:0
@@ -182,6 +211,8 @@ GoldScout-export 6^49vjstzwp14i^19
 @q^6522^1:0:1
 @q^6586^2:4:0
 @q^7068^1:7:1
+@q^7073^0:15:0
+@q^7074^0:15:0
 @q^7812^1:12:0
 @q^9795^2:4:0
 @q^9807^2:4:0
@@ -204,6 +235,7 @@ GoldScout-export 6^49vjstzwp14i^19
 @q^277936^1:12:0
 @q^284400^3:4:0
 @m^1413^The Barrens
+@m^1420^Tirisfal Glades
 @m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
 @m^1439^Darkshore
@@ -1165,6 +1197,11 @@ GoldScout-export 6^49vjstzwp14i^19
 @c^279990^
 @c^286152^
 @a^232^126:1
+@a^1501^246:8
+@a^1502^246:9
+@a^1508^246:1
+@a^1513^246:1
+@a^1890^246:1
 @a^2182^91:1
 @a^2266^147:1,166:3,187:2
 @a^2267^187:2
