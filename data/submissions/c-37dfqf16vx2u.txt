@@ -1,4 +1,7 @@
-GoldScout-export 6^37dfqf16vx2u^3
+GoldScout-export 6^37dfqf16vx2u^4
+1115^2^0^8^9^1426^0.7041^0.5700^2^Schädelhauer der Felsenkiefer^2212:1:1^
+1116^14^0^9^10^1426^0.7494^0.5685^14^Wegelagerer der Felsenkiefer^818:1:1,1413:1:1,2065:2:2,2589:2:4,2591:3:3,2645:1:1,4689:1:1,267415:9:17^
+1117^6^0^9^10^1426^0.7268^0.5474^6^Knochenknacker der Felsenkiefer^1416:1:1,2589:2:3,2591:2:2,268548:1:1^
 2384^1^0^23^23^1424^0.3932^0.3724^1^Verhungernder Berglöwe^3731:1:1,5135:1:1^
 2554^3^0^32^33^1417^0.6943^0.6306^3^Axtwerferin der Bleichborken^3385:1:1,4306:2:3^
 2555^8^0^33^34^1417^0.6769^0.7078^8^Hexendoktorin der Bleichborken^3771:1:1,4306:2:3,4522:4:4,216483:1:1^
@@ -9,9 +12,21 @@ GoldScout-export 6^37dfqf16vx2u^3
 2574^19^0^36^37^1417^0.8434^0.3276^19^Buddler der Trockenstoppel^4306:5:12,4338:2:2,4435:5:5,4539:2:2^
 2761^5^0^38^39^1417^0.6733^0.3019^5^Schäumender Verbannter^4481:3:3,4791:2:7,7070:1:1^
 3560^5^0^34^34^1417^0.6983^0.6834^5^Heilungszauberschutz^^
+6123^10^0^10^11^1426^0.7752^0.6029^10^Spion der Dunkeleisenzwerge^159:1:1,2138:1:1,2589:6:9,3013:1:1,274268:1:1^
+@i^159^Erfrischendes Quellwasser
+@i^818^Tigerauge
+@i^1413^Schwächliches Schwert
+@i^1416^Rostiges Kriegsbeil
 @i^1708^Süßer Nektar
 @i^1710^Großer Heiltrank
+@i^2065^Klinge der Felsenkiefer
+@i^2138^Geschärfter Brieföffner
+@i^2212^Gesprungener Rundschild
+@i^2589^Leinenstoff
+@i^2591^Schmutziger Trogg-Stoff
 @i^2592^Wollstoff
+@i^2645^Lockere Kettenhandschuhe
+@i^3013^Rolle des Schutzes
 @i^3385^Geringer Manatrank
 @i^3731^Löwenfleisch
 @i^3771^Wildschweinschenkel
@@ -25,6 +40,7 @@ GoldScout-export 6^37dfqf16vx2u^3
 @i^4503^Hauer der Witherbark
 @i^4522^Medizinbeutel der Witherbark
 @i^4539^Goldrindenapfel
+@i^4689^Jagdumhang
 @i^4791^Verzaubertes Wasser
 @i^5040^Schattenjägermesser
 @i^5135^Dünne schwarze Klaue
@@ -32,9 +48,23 @@ GoldScout-export 6^37dfqf16vx2u^3
 @i^7443^Schildwachenhandschuhe des Wolfs
 @i^15286^Rotholz-Langbogen
 @i^216483^Schlaghammer der Witherbark
+@i^267415^Gestohlenes Sprengpulver
+@i^268548^Leeres Pulverfass
+@i^274268^Dunkeleisenkarte
+@q^159^1:0:0
+@q^818^2:7:1
+@q^1413^0:2:0
+@q^1416^0:2:0
 @q^1708^1:0:0
 @q^1710^1:0:0
+@q^2065^1:2:0
+@q^2138^0:2:0
+@q^2212^0:4:0
+@q^2589^1:7:1
+@q^2591^0:15:0
 @q^2592^1:7:1
+@q^2645^0:4:0
+@q^3013^1:0:0
 @q^3385^1:0:0
 @q^3731^1:7:1
 @q^3771^1:0:0
@@ -48,6 +78,7 @@ GoldScout-export 6^37dfqf16vx2u^3
 @q^4503^1:12:0
 @q^4522^1:12:0
 @q^4539^1:0:0
+@q^4689^1:4:0
 @q^4791^1:0:0
 @q^5040^1:2:0
 @q^5135^0:15:0
@@ -55,8 +86,12 @@ GoldScout-export 6^37dfqf16vx2u^3
 @q^7443^2:4:0
 @q^15286^2:2:0
 @q^216483^1:0:0
+@q^267415^1:12:0
+@q^268548^1:12:0
+@q^274268^1:12:0
 @m^1417^Arathihochland
 @m^1424^Vorgebirge von Hillsbrad
+@m^1426^Dun Morogh
 @c^118^
 @c^724^
 @c^733^
@@ -1279,6 +1314,9 @@ GoldScout-export 6^37dfqf16vx2u^3
 @c^285280^
 @c^285281^
 @c^286152^
+@a^1115^234:2
+@a^1116^213:1,214:2,234:1,235:10
+@a^1117^214:3,234:1,235:2
 @a^2384^147:1
 @a^2554^253:2,254:1
 @a^2555^253:1,254:1,272:1,293:4,313:1
@@ -1289,4 +1327,5 @@ GoldScout-export 6^37dfqf16vx2u^3
 @a^2574^136:11,137:5,156:3
 @a^2761^113:3,133:2
 @a^3560^253:1,254:2,293:1,313:1
+@a^6123^235:4,255:6
 @l^0^deDE

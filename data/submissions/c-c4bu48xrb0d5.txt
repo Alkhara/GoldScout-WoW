@@ -1,4 +1,4 @@
-GoldScout-export 6^c4bu48xrb0d5^10
+GoldScout-export 6^c4bu48xrb0d5^11
 92^15^0^39^40^1418^0.4068^0.7859^15^Rock Elemental^4552:3:3,4553:7:7,4784:8:8,7067:4:4,7848:5:5,7912:4:5,8150:4:4,248691:1:1^
 678^2^0^43^44^1434^0.5063^0.2691^2^Mosh'Ogg Mauler^^
 679^1^0^43^43^1434^0.5105^0.2662^1^Mosh'Ogg Shaman^4422:1:1^
@@ -97,6 +97,12 @@ GoldScout-export 6^c4bu48xrb0d5^10
 5615^1^0^44^44^1446^0.6563^0.3664^1^Wastewander Rogue^8483:1:1^
 5617^2^0^43^43^1446^0.6594^0.3615^2^Wastewander Shadow Mage^4306:1:1^
 5623^1^0^45^45^1446^0.6629^0.3514^1^Wastewander Assassin^8483:1:1^
+5982^3^0^45^48^1419^0.5145^0.2376^3^Black Slayer^1464:2:2,3404:2:2,4638:1:1,5829:2:2,8168:3:3,12037:1:1,12207:2:2^
+5984^5^0^45^46^1419^0.4762^0.1949^5^Starving Snickerfang^4584:2:2,8146:1:1,8391:4:4,12037:1:1,12203:2:2,12208:1:1^
+5988^9^0^50^51^1419^0.5056^0.2587^9^Scorpok Stinger^8393:4:4,12037:5:5,19934:3:3,19935:2:2^
+5990^3^0^47^48^1419^0.5892^0.3053^3^Redstone Basilisk^4093:2:2,8394:1:1^
+5992^4^0^48^49^1419^0.5806^0.2941^4^Ashmane Boar^2295:1:1,3403:2:2,8392:2:2^
+5993^1^0^53^53^1419^0.5371^0.3765^1^Helboar^^
 7725^20^0^42^43^1444^0.6703^0.4684^20^Grimtotem Raider^3928:1:1,4020:1:1,4021:1:1,4306:1:2,4338:5:6^
 7726^15^0^41^42^1444^0.6702^0.4672^15^Grimtotem Naturalist^4023:1:1,4306:2:4,4338:3:5,4421:1:1^
 7727^6^0^43^44^1444^0.6686^0.4690^6^Grimtotem Shaman^4306:1:2,4338:2:4,4601:1:1^
@@ -120,9 +126,11 @@ GoldScout-export 6^c4bu48xrb0d5^10
 @i^1645^Moonberry Juice
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
+@i^2295^Large Boar Tusk
 @i^2728^Green Hills of Stranglethorn - Page 4
 @i^2799^Gorilla Fang
 @i^3385^Lesser Mana Potion
+@i^3403^Ivory Boar Tusk
 @i^3404^Buzzard Wing
 @i^3616^Mind's Eye
 @i^3671^Lifeless Skull
@@ -174,6 +182,7 @@ GoldScout-export 6^c4bu48xrb0d5^10
 @i^4608^Raw Black Truffle
 @i^4615^Blacklash's Bindings
 @i^4637^Steel Lockbox
+@i^4638^Reinforced Steel Lockbox
 @i^4639^Enchanted Sea Kelp
 @i^4641^Hand of Dagun
 @i^4644^The Legacy Heart
@@ -207,6 +216,11 @@ GoldScout-export 6^c4bu48xrb0d5^10
 @i^8150^Deeprock Salt
 @i^8151^Flask of Mojo
 @i^8153^Wildvine
+@i^8168^Jet Black Feather
+@i^8391^Snickerfang Jowl
+@i^8392^Blasted Boar Lung
+@i^8393^Scorpok Pincer
+@i^8394^Basilisk Brain
 @i^8428^Laden Dew Gland
 @i^8429^Punctured Dew Gland
 @i^8430^Empty Dew Gland
@@ -229,9 +243,11 @@ GoldScout-export 6^c4bu48xrb0d5^10
 @i^12037^Mystery Meat
 @i^12202^Tiger Meat
 @i^12203^Red Wolf Meat
+@i^12207^Giant Egg
 @i^12208^Tender Wolf Meat
 @i^13422^Stonescale Eel
 @i^13443^Superior Mana Potion
+@i^13446^Major Healing Potion
 @i^13754^Raw Glossy Mightfish
 @i^13757^Lightning Eel
 @i^13758^Raw Redgill
@@ -246,6 +262,7 @@ GoldScout-export 6^c4bu48xrb0d5^10
 @i^18947^Rage Scar Yeti Hide
 @i^18956^Miniaturization Residue
 @i^18958^Water Elemental Core
+@i^19934^Large Scorpid Claw
 @i^19935^Empty Venom Sac
 @i^19936^Dried Scorpid Carapace
 @i^20709^Rumsey Rum Light
@@ -271,9 +288,11 @@ GoldScout-export 6^c4bu48xrb0d5^10
 @q^1645^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
+@q^2295^0:15:0
 @q^2728^1:12:0
 @q^2799^1:12:0
 @q^3385^1:0:0
+@q^3403^0:15:0
 @q^3404^1:7:1
 @q^3616^1:12:0
 @q^3671^0:15:0
@@ -325,6 +344,7 @@ GoldScout-export 6^c4bu48xrb0d5^10
 @q^4608^1:0:0
 @q^4615^1:12:0
 @q^4637^2:15:0
+@q^4638^2:15:0
 @q^4639^1:12:0
 @q^4641^1:12:0
 @q^4644^1:12:0
@@ -358,6 +378,11 @@ GoldScout-export 6^c4bu48xrb0d5^10
 @q^8150^1:7:1
 @q^8151^1:7:1
 @q^8153^1:7:1
+@q^8168^1:7:1
+@q^8391^1:12:0
+@q^8392^1:12:0
+@q^8393^1:12:0
+@q^8394^1:12:0
 @q^8428^1:12:0
 @q^8429^0:15:0
 @q^8430^0:15:0
@@ -380,9 +405,11 @@ GoldScout-export 6^c4bu48xrb0d5^10
 @q^12037^1:7:1
 @q^12202^1:7:1
 @q^12203^1:7:1
+@q^12207^1:7:1
 @q^12208^1:7:1
 @q^13422^1:7:1
 @q^13443^1:0:0
+@q^13446^1:0:0
 @q^13754^1:7:1
 @q^13757^1:7:1
 @q^13758^1:7:1
@@ -397,6 +424,7 @@ GoldScout-export 6^c4bu48xrb0d5^10
 @q^18947^1:12:0
 @q^18956^1:12:0
 @q^18958^1:12:0
+@q^19934^0:15:0
 @q^19935^0:15:0
 @q^19936^0:15:0
 @q^20709^1:0:0
@@ -419,6 +447,7 @@ GoldScout-export 6^c4bu48xrb0d5^10
 @m^1413^The Barrens
 @m^1416^Alterac Mountains
 @m^1418^Badlands
+@m^1419^Blasted Lands
 @m^1425^The Hinterlands
 @m^1434^Stranglethorn Vale
 @m^1437^Wetlands
@@ -1449,6 +1478,12 @@ GoldScout-export 6^c4bu48xrb0d5^10
 @a^5615^153:1
 @a^5617^153:2
 @a^5623^153:1
+@a^5982^69:2,150:1
+@a^5984^68:1,69:3,89:1
+@a^5988^69:2,89:3,110:3,171:1
+@a^5990^112:1,131:2
+@a^5992^111:2,112:1,131:1
+@a^5993^150:1
 @a^7725^193:20
 @a^7726^193:15
 @a^7727^193:6
@@ -1472,5 +1507,5 @@ GoldScout-export 6^c4bu48xrb0d5^10
 @f^1444^0^11^259^4603:1:1,6358:5:5,6359:1:1,7973:1:1,13422:2:5,21228:1:1^168:4,188:5,208:2
 @f^1445^0^5^263^3820:1:1,6359:4:4^50:5
 @f^1446^0^37^251^4603:18:20,6359:2:2,6362:3:3,13422:5:10,13754:8:8,13879:1:1,21228:3:4^93:4,113:33
-@f^2482^0^22^274^6359:3:3,13443:1:1,13757:1:1,13758:2:2,13760:8:9,13889:10:12,13890:1:1,21151:1:2^264:22
+@f^2482^0^241^274^6359:3:3,13443:4:4,13446:1:1,13757:54:60,13758:24:24,13760:99:112,13889:112:126,13890:20:20,21151:1:2^264:241
 @l^0^enUS

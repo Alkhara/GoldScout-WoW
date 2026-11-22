@@ -1,5 +1,7 @@
-GoldScout-export 6^lpgqczt0psxr^14
+GoldScout-export 6^lpgqczt0psxr^15
+6^6^0^1^2^1429^0.4943^0.3582^6^Kobold Vermin^159:1:1,2210:1:1,2589:4:4,4536:1:1,247834:1:1^
 36^9^0^11^12^1436^0.5472^0.3525^9^Harvest Golem^732:5:5,774:1:1,814:6:6,1274:4:4,1732:1:1,255007:3:3^
+69^2^0^2^2^1429^0.4645^0.4000^2^Timber Wolf^750:2:2,4865:1:1,7073:1:1^
 95^6^0^11^12^1436^0.4488^0.2266^6^Defias Smuggler^^
 114^9^0^14^15^1436^0.4063^0.4889^9^Harvest Watcher^732:1:1,814:5:5,1274:6:6,255007:2:2,255010:4:4^
 117^21^0^11^12^1436^0.4454^0.1583^21^Riverpaw Gnoll^725:5:5,955:1:1,1179:1:1,1516:1:1,2589:3:4,2957:1:1,3192:1:1,6515:1:1,6521:1:1^
@@ -8,6 +10,8 @@ GoldScout-export 6^lpgqczt0psxr^14
 206^4^0^29^30^1431^0.6907^0.7179^4^Nightbane Vile Fang^^
 210^4^0^26^27^1431^0.2430^0.3219^4^Bone Chewer^884:2:2,6530:1:1^
 213^1^0^20^20^1431^0.1311^0.2719^1^Starving Dire Wolf^3301:1:1^
+257^1^0^3^3^1429^0.4976^0.3476^1^Kobold Worker^^
+299^7^0^1^1^1429^0.4705^0.4014^7^Young Wolf^750:6:6,1374:1:1,1378:1:1,1380:1:1,2656:1:1,4865:4:4,7073:3:3,7074:1:1^
 300^1^0^30^30^1431^0.3674^0.8168^1^Zzarc' Vul^1968:1:1^
 314^1^0^31^31^1431^0.2892^0.3122^1^Eliza^2382:1:1^
 315^1^0^32^32^1431^0.7741^0.3573^1^Stalvan Mistmantle^3629:1:1^
@@ -155,6 +159,7 @@ GoldScout-export 6^lpgqczt0psxr^14
 @i^725^Gnoll Paw
 @i^730^Murloc Eye
 @i^732^Okra
+@i^750^Tough Wolf Meat
 @i^765^Silverleaf
 @i^770^Pointy Crocolisk Tooth
 @i^774^Malachite
@@ -179,8 +184,10 @@ GoldScout-export 6^lpgqczt0psxr^14
 @i^1364^Ragged Leather Vest
 @i^1366^Ragged Leather Pants
 @i^1370^Ragged Leather Bracers
+@i^1374^Frayed Shoes
 @i^1376^Frayed Cloak
 @i^1377^Frayed Gloves
+@i^1378^Frayed Pants
 @i^1380^Frayed Robe
 @i^1431^Patchwork Pants
 @i^1476^Snapped Spider Limb
@@ -210,6 +217,7 @@ GoldScout-export 6^lpgqczt0psxr^14
 @i^1968^Ogre's Monocle
 @i^2072^Dwarven Magestaff of the Monkey
 @i^2078^Northern Shortsword of Intellect
+@i^2210^Battered Buckler
 @i^2215^Wooden Shield
 @i^2220^Box Shield
 @i^2222^Tower Shield
@@ -278,6 +286,7 @@ GoldScout-export 6^lpgqczt0psxr^14
 @i^4402^Small Flame Sac
 @i^4409^Schematic: Small Seaforium Charge
 @i^4496^Small Brown Pouch
+@i^4536^Shiny Red Apple
 @i^4542^Moist Cornbread
 @i^4555^Thick Scaly Tail
 @i^4575^Medicine Staff of the Owl
@@ -370,6 +379,7 @@ GoldScout-export 6^lpgqczt0psxr^14
 @i^21153^Raw Greater Sagefish
 @i^21164^Bloated Rockscale Cod
 @i^211854^Scroll: OMIT KESA
+@i^247834^Nibbled-On Book
 @i^248686^Waylaid Crate: Journeyman Herbs
 @i^248704^Waylaid Crate: Apprentice Parts
 @i^249881^Recipe: Root Tea
@@ -404,6 +414,7 @@ GoldScout-export 6^lpgqczt0psxr^14
 @q^725^1:12:0
 @q^730^1:7:1
 @q^732^1:12:0
+@q^750^1:12:0
 @q^765^1:7:1
 @q^770^0:15:0
 @q^774^2:7:1
@@ -428,8 +439,10 @@ GoldScout-export 6^lpgqczt0psxr^14
 @q^1364^0:4:0
 @q^1366^0:4:0
 @q^1370^0:4:0
+@q^1374^0:4:0
 @q^1376^0:4:0
 @q^1377^0:4:0
+@q^1378^0:4:0
 @q^1380^0:4:0
 @q^1431^0:4:0
 @q^1476^0:15:0
@@ -459,6 +472,7 @@ GoldScout-export 6^lpgqczt0psxr^14
 @q^1968^1:12:0
 @q^2072^2:2:0
 @q^2078^2:2:0
+@q^2210^0:4:0
 @q^2215^0:4:0
 @q^2220^0:4:0
 @q^2222^0:4:0
@@ -527,6 +541,7 @@ GoldScout-export 6^lpgqczt0psxr^14
 @q^4402^1:7:1
 @q^4409^2:9:0
 @q^4496^1:1:0
+@q^4536^1:0:0
 @q^4542^1:0:0
 @q^4555^0:15:0
 @q^4575^2:2:0
@@ -619,6 +634,7 @@ GoldScout-export 6^lpgqczt0psxr^14
 @q^21153^1:7:1
 @q^21164^2:15:0
 @q^211854^1:0:0
+@q^247834^1:15:0
 @q^248686^1:0:1
 @q^248704^2:0:1
 @q^249881^1:9:0
@@ -650,6 +666,7 @@ GoldScout-export 6^lpgqczt0psxr^14
 @m^1416^Alterac Mountains
 @m^1424^Hillsbrad Foothills
 @m^1426^Dun Morogh
+@m^1429^Elwynn Forest
 @m^1431^Duskwood
 @m^1432^Loch Modan
 @m^1434^Stranglethorn Vale
@@ -1615,7 +1632,9 @@ GoldScout-export 6^lpgqczt0psxr^14
 @c^279982^
 @c^279990^
 @c^286152^
+@a^6^149:6
 @a^36^129:2,151:7
+@a^69^149:1,169:1
 @a^95^68:1,88:2,89:2,108:1
 @a^114^130:1,187:1,207:6,208:1
 @a^117^48:3,68:13,69:5
@@ -1624,6 +1643,8 @@ GoldScout-export 6^lpgqczt0psxr^14
 @a^206^274:2,294:1,331:1
 @a^210^105:1,124:2,144:1
 @a^213^102:1
+@a^257^129:1
+@a^299^149:3,169:4
 @a^300^327:1
 @a^314^125:1
 @a^315^155:1

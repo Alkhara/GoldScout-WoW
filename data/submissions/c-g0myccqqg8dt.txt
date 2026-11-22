@@ -1,10 +1,13 @@
-GoldScout-export 6^g0myccqqg8dt^8
+GoldScout-export 6^g0myccqqg8dt^9
+92^35^0^39^40^1418^0.4221^0.8071^35^Rock Elemental^4552:7:7,4553:5:5,4784:15:15,7067:1:1,7475:1:1,7912:11:16,8150:3:3,9292:1:1,213547:1:1^
 1120^1^0^8^8^1426^0.7010^0.3962^1^Frostmane Troll^^
 2252^25^0^34^35^1416^0.5003^0.5719^25^Crushridge Ogre^2843:5:5,3658:3:3,3771:3:3,3782:1:1,4306:8:12,4414:1:1,248690:1:1^
 2253^13^0^35^36^1416^0.4959^0.5692^13^Crushridge Brute^2592:2:6,2843:4:4,3658:2:2,3771:1:1,4306:4:5,248694:1:1^
 2588^3^0^36^37^1417^0.2596^0.6236^3^Syndicate Prowler^4506:2:3,248710:1:1^
 2597^1^0^40^40^1417^0.2612^0.6498^1^Lord Falconcrest^4517:1:1^
 2599^1^0^38^38^1417^0.2612^0.6498^1^Otto^3784:1:1,4516:1:1^
+2732^2^0^38^39^1418^0.4295^0.7399^2^Ridge Huntress^^
+2893^1^0^39^40^1418^0.4948^0.7304^1^Stonevault Bonesnapper^^
 245999^2^0^0^0^1416^0.0000^0.0000^0^^273031:1:1,273035:1:1^
 246008^1^0^0^0^1416^0.0000^0.0000^0^^273040:1:1^
 246016^1^0^0^0^1416^0.0000^0.0000^0^^273044:1:1^
@@ -26,6 +29,7 @@ GoldScout-export 6^g0myccqqg8dt^8
 259052^13^0^38^39^2548^0.5839^0.6028^13^Rog'mar Poacher^3783:1:1,4306:4:8^
 259054^5^0^38^39^2548^0.5827^0.5626^5^Wildplains Patriarch^1688:4:4,266888:3:3^
 259055^11^0^38^39^2548^0.5842^0.5597^11^Wildplains Huntress^1686:1:1,1688:2:2,5637:1:1,266888:5:5^
+259269^2^0^38^38^2548^0.3036^0.3744^2^High Plains Buzzard^3784:1:1,11418:1:1^
 263307^303^0^37^38^2548^0.6200^0.5919^303^Glade Viper^1465:1:1,1990:1:1,3864:1:1,6421:1:1,6444:108:108,6826:158:158,7084:1:1,7435:1:1,7444:1:1,7454:1:1,9872:1:1,9890:1:1,15243:2:2,15260:1:1,213543:1:1,213544:3:3,248691:1:1,248692:2:2,248693:2:2,262889:1:1^
 263343^11^0^37^38^2548^0.6222^0.5645^11^Low Plains Buzzard^1464:6:6,3404:5:5,4043:1:1,5636:1:1,5829:1:1,12037:4:4,213545:1:1^
 263348^9^0^37^38^2548^0.6118^0.5810^9^Roving Tallstrider^5116:1:1,5829:2:2,11416:4:4,11418:1:1,271778:1:1^
@@ -53,6 +57,9 @@ GoldScout-export 6^g0myccqqg8dt^8
 @i^4506^Stromgarde Badge
 @i^4516^Otto's Head
 @i^4517^Falconcrest's Head
+@i^4552^Smooth Stone Chip
+@i^4553^Jagged Piece of Stone
+@i^4784^Lifeless Stone
 @i^5116^Long Tail Feather
 @i^5636^Delicate Feather
 @i^5637^Large Fang
@@ -61,11 +68,16 @@ GoldScout-export 6^g0myccqqg8dt^8
 @i^6439^Broken Binding Bracer
 @i^6444^Forked Tongue
 @i^6826^Brilliant Scale
+@i^7067^Elemental Earth
 @i^7084^Pattern: Crimson Silk Shoulders
 @i^7419^Phalanx Cloak of the Sorcerer
 @i^7435^Twilight Mantle of Holy Wrath
 @i^7444^Sentinel Boots of the Falcon
 @i^7454^Knight's Breastplate of the Knight
+@i^7475^Regal Cuffs of Stamina
+@i^7912^Solid Stone
+@i^8150^Deeprock Salt
+@i^9292^Field Plate Pauldrons of Strength
 @i^9815^Fortified Leggings of the Boar
 @i^9831^Scaled Cloak of the Eagle
 @i^9872^Renegade Pauldrons of the Champion
@@ -79,6 +91,7 @@ GoldScout-export 6^g0myccqqg8dt^8
 @i^213543^Scroll: UPDOG
 @i^213544^Scroll: TOPAZ YORAK
 @i^213545^Scroll: PEATCHY ATTAX
+@i^213547^Scroll: THAW WORDS
 @i^248686^Waylaid Crate: Journeyman Herbs
 @i^248690^Waylaid Crate: Earthly Expert Herbs
 @i^248691^Waylaid Crate: Flowering Expert Herbs
@@ -123,6 +136,9 @@ GoldScout-export 6^g0myccqqg8dt^8
 @q^4506^1:12:0
 @q^4516^1:12:0
 @q^4517^1:12:0
+@q^4552^0:15:0
+@q^4553^0:15:0
+@q^4784^0:15:0
 @q^5116^1:7:1
 @q^5636^0:15:0
 @q^5637^1:7:1
@@ -131,11 +147,16 @@ GoldScout-export 6^g0myccqqg8dt^8
 @q^6439^0:15:0
 @q^6444^0:15:0
 @q^6826^0:15:0
+@q^7067^1:7:1
 @q^7084^2:9:0
 @q^7419^2:4:0
 @q^7435^2:4:0
 @q^7444^2:4:0
 @q^7454^2:4:0
+@q^7475^2:4:0
+@q^7912^1:7:1
+@q^8150^1:7:1
+@q^9292^2:4:0
 @q^9815^2:4:0
 @q^9831^2:4:0
 @q^9872^2:4:0
@@ -149,6 +170,7 @@ GoldScout-export 6^g0myccqqg8dt^8
 @q^213543^1:0:0
 @q^213544^1:0:0
 @q^213545^1:0:0
+@q^213547^1:0:0
 @q^248686^1:0:1
 @q^248690^1:0:1
 @q^248691^1:0:1
@@ -172,6 +194,7 @@ GoldScout-export 6^g0myccqqg8dt^8
 @q^276160^0:15:0
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
+@m^1418^Badlands
 @m^1426^Dun Morogh
 @m^2548^Riverglades
 @c^118^
@@ -538,15 +561,19 @@ GoldScout-export 6^g0myccqqg8dt^8
 @c^279982^
 @c^279990^
 @c^286152^
+@a^92^307:4,308:10,328:19,348:2
 @a^1120^154:1
 @a^2252^209:2,210:8,229:5,230:3,249:7
 @a^2253^209:2,210:3,229:1,230:4,249:3
 @a^2588^245:3
 @a^2597^245:1
 @a^2599^245:1
+@a^2732^288:1,308:1
+@a^2893^289:1
 @a^259052^231:4,232:1,251:8
 @a^259054^211:1,231:4
 @a^259055^211:2,231:9
+@a^259269^145:1,146:1
 @a^263307^212:21,231:23,232:131,251:14,252:114
 @a^263343^212:3,213:1,231:4,232:3
 @a^263348^213:2,231:3,251:3,252:1
