@@ -1,4 +1,4 @@
-GoldScout-export 6^aouzn0e8e6ua^23
+GoldScout-export 6^aouzn0e8e6ua^24
 736^1^0^43^43^1434^0.4064^0.3447^1^Panther^^
 772^1^0^37^37^1434^0.5051^0.2039^1^Stranglethorn Tigress^^
 1094^2^0^34^35^1434^0.2876^0.0728^2^Venture Co. Miner^2728:1:1,4306:1:1^
@@ -118,6 +118,11 @@ GoldScout-export 6^aouzn0e8e6ua^23
 7030^3^0^0^0^0^0.0000^0.0000^0^^7909:1:1^
 7076^1^0^0^0^0^0.0000^0.0000^0^^4338:1:2^
 7078^4^0^0^0^0^0.0000^0.0000^0^^12037:3:3,19938:2:2^
+7105^7^0^49^50^1448^0.4171^0.8537^7^Jadefire Satyr^1645:1:1,4338:4:8,12662:1:1^
+7109^5^0^50^51^1448^0.4175^0.8490^5^Jadefire Felsworn^4338:2:4,4419:1:1,12662:3:3^
+7153^9^0^48^49^1448^0.4780^0.9126^9^Deadwood Warrior^1645:1:1,4338:5:11,4426:1:1,248698:1:1^
+7154^5^0^48^49^1448^0.4809^0.9061^5^Deadwood Gardener^^
+7155^3^0^49^50^1448^0.4792^0.9001^3^Deadwood Pathfinder^4338:1:3^
 7175^5^0^0^0^0^0.0000^0.0000^0^^2289:1:1,3792:1:1^
 7206^2^0^0^0^0^0.0000^0.0000^0^^9410:1:1,9411:1:1^
 7228^2^0^0^0^0^0.0000^0.0000^0^^9407:1:1,9409:1:1^
@@ -160,6 +165,9 @@ GoldScout-export 6^aouzn0e8e6ua^23
 7996^1^0^50^50^1425^0.4832^0.6761^1^Qiaga the Keeper^9241:1:1^
 8095^4^0^0^0^0^0.0000^0.0000^0^^1701:2:2,1702:1:1,4092:1:1,11387:1:1^
 8127^1^0^0^0^0^0.0000^0.0000^0^^4338:1:1,9639:1:1^
+8956^1^0^47^48^1448^0.4558^0.8706^1^Angerclaw Bear^11409:1:1,11410:1:1^
+8959^1^0^48^48^1448^0.5123^0.8575^1^Felpaw Wolf^4583:1:1^
+9464^1^0^51^51^1448^0.4834^0.9361^1^Overlord Ror^^
 10082^1^0^0^0^0^0.0000^0.0000^0^^12470:1:1^
 11218^1^0^20^20^1439^0.4142^0.8104^1^Kerlonian Evershade^^
 251245^10^0^5^6^2521^0.4108^0.4739^10^Prideclaw^1380:1:1,1420:1:1,2649:1:1,3299:4:4,252670:9:9,252671:6:6^
@@ -345,7 +353,9 @@ GoldScout-export 6^aouzn0e8e6ua^23
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4377^Heavy Blasting Powder
+@i^4419^Scroll of Intellect III
 @i^4424^Scroll of Spirit III
+@i^4426^Scroll of Strength III
 @i^4479^Burning Charm
 @i^4480^Thundering Charm
 @i^4481^Cresting Charm
@@ -508,6 +518,8 @@ GoldScout-export 6^aouzn0e8e6ua^23
 @i^11393^Small Bat Skull
 @i^11394^Bat Heart
 @i^11406^Rotting Bear Carcass
+@i^11409^Bear Flank
+@i^11410^Savage Bear Claw
 @i^11416^Delicate Ribcage
 @i^11418^Hollow Wing Bone
 @i^12010^Fen Ring of Nature Protection
@@ -519,6 +531,7 @@ GoldScout-export 6^aouzn0e8e6ua^23
 @i^12206^Tender Crab Meat
 @i^12208^Tender Wolf Meat
 @i^12470^Sandstalker Ankleguards
+@i^12662^Demonic Rune
 @i^13095^Assault Band
 @i^14242^Darkmist Pants of Frost Protection
 @i^14246^Darkmist Wizard Hat of the Prophet
@@ -557,6 +570,7 @@ GoldScout-export 6^aouzn0e8e6ua^23
 @i^248692^Waylaid Crate: Expert Ore
 @i^248693^Waylaid Crate: Expert Textiles
 @i^248694^Waylaid Crate: Expert Curiosities
+@i^248698^Waylaid Crate: Artisan Textiles
 @i^248708^Waylaid Crate: Expert Fabrics
 @i^251461^Plans: Mithril Claws
 @i^252022^Galestrider Jerky
@@ -727,7 +741,9 @@ GoldScout-export 6^aouzn0e8e6ua^23
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4377^1:7:1
+@q^4419^1:0:0
 @q^4424^1:0:0
+@q^4426^1:0:0
 @q^4479^1:0:0
 @q^4480^1:0:0
 @q^4481^1:0:0
@@ -890,6 +906,8 @@ GoldScout-export 6^aouzn0e8e6ua^23
 @q^11393^0:15:0
 @q^11394^0:15:0
 @q^11406^0:15:0
+@q^11409^0:15:0
+@q^11410^0:15:0
 @q^11416^0:15:0
 @q^11418^0:15:0
 @q^12010^2:4:0
@@ -901,6 +919,7 @@ GoldScout-export 6^aouzn0e8e6ua^23
 @q^12206^1:7:1
 @q^12208^1:7:1
 @q^12470^3:4:0
+@q^12662^2:7:1
 @q^13095^3:4:0
 @q^14242^2:4:0
 @q^14246^2:4:0
@@ -939,6 +958,7 @@ GoldScout-export 6^aouzn0e8e6ua^23
 @q^248692^1:0:1
 @q^248693^1:0:1
 @q^248694^1:0:1
+@q^248698^1:0:1
 @q^248708^2:0:1
 @q^251461^2:9:0
 @q^252022^1:0:0
@@ -1023,6 +1043,7 @@ GoldScout-export 6^aouzn0e8e6ua^23
 @m^1439^Darkshore
 @m^1445^Dustwallow Marsh
 @m^1446^Tanaris
+@m^1448^Felwood
 @m^2521^Zephras Isle
 @m^2548^Riverglades
 @c^118^
@@ -2939,6 +2960,11 @@ GoldScout-export 6^aouzn0e8e6ua^23
 @a^5618^132:5,133:2
 @a^5831^132:1
 @a^6239^256:1
+@a^7105^328:3,348:4
+@a^7109^328:3,348:2
+@a^7153^349:1,369:8
+@a^7154^349:2,369:3
+@a^7155^349:1,369:2
 @a^7847^151:1
 @a^7855^174:1,194:14
 @a^7856^174:1,194:14
@@ -2950,6 +2976,9 @@ GoldScout-export 6^aouzn0e8e6ua^23
 @a^7902^390:1
 @a^7995^311:1
 @a^7996^269:1
+@a^8956^349:1
+@a^8959^350:1
+@a^9464^369:1
 @a^11218^328:1
 @a^251245^187:2,188:6,208:2
 @a^251261^207:1

@@ -1,4 +1,4 @@
-GoldScout-export 6^sf56cc7mmwz0^10
+GoldScout-export 6^sf56cc7mmwz0^12
 232^1^0^23^23^1424^0.3471^0.3501^1^Farmer Ray^2592:1:2^
 1501^8^0^1^1^1420^0.3139^0.6252^8^Mindless Zombie^1366:1:1,1378:1:1,1380:1:1,2589:2:2,2654:1:1,3363:1:1^
 1502^8^0^1^2^1420^0.3204^0.6163^8^Wretched Zombie^159:1:1,2589:3:3,2649:1:1,2650:1:1,4604:1:1^
@@ -20,13 +20,14 @@ GoldScout-export 6^sf56cc7mmwz0^10
 1772^1^0^11^11^1421^0.4649^0.2269^1^Rot Hide Gladerunner^2589:1:3^
 1773^1^0^13^13^1421^0.4587^0.2239^1^Rot Hide Mystic^2589:1:3^
 1778^1^0^11^12^1421^0.4843^0.1976^1^Ferocious Grizzled Bear^3169:1:1,11406:1:1^
-1866^2^0^11^12^1421^0.5189^0.1537^2^Ravenclaw Slave^2589:1:3^
+1866^9^0^11^12^1421^0.5219^0.1367^9^Ravenclaw Slave^2589:3:7,4605:1:1^
 1867^1^0^13^13^1421^0.5050^0.5972^1^Dalaran Apprentice^^
 1869^1^0^14^14^1421^0.5662^0.3202^1^Ravenclaw Champion^2589:1:3^
 1890^12^0^2^3^1420^0.3297^0.6121^12^Rattlecage Skeleton^159:1:1,1368:1:1,1369:1:1,1380:1:1,2211:1:1,2589:4:4,2650:1:1,2651:1:1,3365:1:1,4604:2:2^
 1919^1^0^5^5^1420^0.3672^0.6165^1^Samuel Fipps^16333:1:1^
 1934^1^0^6^6^1420^0.3637^0.4957^1^Tirisfal Farmer^^
 1935^3^0^5^6^1420^0.3565^0.5005^3^Tirisfal Farmhand^118:1:1^
+1971^1^0^13^13^1421^0.5195^0.1367^1^Ivar the Foul^2589:1:3,3621:1:1^
 1983^1^0^14^14^1421^0.4584^0.2187^1^Nightlash^3622:1:1^
 2260^1^0^22^22^1424^0.6556^0.4539^1^Syndicate Rogue^2592:1:1^
 2266^7^0^23^24^1424^0.3440^0.3800^7^Hillsbrad Farmer^1820:1:1,1824:1:1,2589:1:2,2592:2:3,3379:1:1,4538:5:5,12996:1:1^
@@ -46,6 +47,14 @@ GoldScout-export 6^sf56cc7mmwz0^10
 2449^1^0^25^25^1424^0.3296^0.4245^1^Citizen Wilkes^4306:1:1^
 2451^1^0^25^25^1424^0.3455^0.4603^1^Farmer Kalaba^1485:1:1^
 2503^1^0^27^28^1424^0.2985^0.5358^1^Hillsbrad Foreman^^
+3244^11^0^11^12^1413^0.5350^0.2681^11^Greater Plainstrider^4775:1:1,5087:7:7,5469:2:2,17056:4:4^
+3265^3^0^11^12^1413^0.5619^0.2574^3^Razormane Hunter^2589:2:3^
+3266^3^0^12^13^1413^0.5882^0.2631^3^Razormane Defender^818:1:1^
+3267^7^0^10^11^1413^0.5511^0.2646^7^Razormane Water Seeker^2589:4:8,4537:1:1,15010:1:1,15300:1:1,15481:1:1^
+3268^8^0^10^11^1413^0.5501^0.2628^8^Razormane Thornweaver^774:1:1,858:1:1,2215:1:1,2589:2:5,3291:1:1^
+3271^3^0^13^13^1413^0.5854^0.2666^3^Razormane Mystic^2589:2:6,3013:1:1^
+3438^1^0^15^15^1413^0.5854^0.2684^1^Kreenig Snarlsnout^1179:1:1,2589:1:2^
+3939^1^0^7^8^1413^0.5444^0.2561^1^Razormane Wolf^^
 260428^6^0^10^12^1420^0.0991^0.6664^6^Shadowvale Lurcher^1514:1:1,2589:2:4,286259:4:4^
 260430^3^0^10^11^1420^0.0925^0.6647^3^Shadowvale Mystic^2644:1:1,286259:2:2^
 260431^2^0^11^12^1420^0.0953^0.6409^2^Shadowvale Lurcher^2589:1:1,211780:1:1^
@@ -55,7 +64,10 @@ GoldScout-export 6^sf56cc7mmwz0^10
 @i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
 @i^730^Murloc Eye
+@i^774^Malachite
+@i^818^Tigerseye
 @i^857^Large Red Sack
+@i^858^Lesser Healing Potion
 @i^878^Fist-sized Spinneret
 @i^929^Healing Potion
 @i^1081^Crisp Spider Meat
@@ -81,6 +93,7 @@ GoldScout-export 6^sf56cc7mmwz0^10
 @i^1824^Shiny War Axe
 @i^2070^Darnassian Bleu
 @i^2211^Bent Large Shield
+@i^2215^Wooden Shield
 @i^2251^Gooey Spider Leg
 @i^2287^Haunch of Meat
 @i^2589^Linen Cloth
@@ -100,6 +113,7 @@ GoldScout-export 6^sf56cc7mmwz0^10
 @i^3264^Duskbat Wing
 @i^3265^Scavenger Paw
 @i^3266^Scarlet Armband
+@i^3291^Ancestral Woollies
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
 @i^3363^Frayed Belt
@@ -108,6 +122,7 @@ GoldScout-export 6^sf56cc7mmwz0^10
 @i^3476^Gray Bear Tongue
 @i^3477^Creeper Ichor
 @i^3496^Mountain Lion Blood
+@i^3621^Ivar's Head
 @i^3622^Essence of Nightlash
 @i^3702^Bear Gall Bladder
 @i^3730^Big Bear Meat
@@ -115,13 +130,18 @@ GoldScout-export 6^sf56cc7mmwz0^10
 @i^4306^Silk Cloth
 @i^4428^Spider Palp
 @i^4496^Small Brown Pouch
+@i^4537^Tel'Abim Banana
 @i^4538^Snapvine Watermelon
 @i^4604^Forest Mushroom Cap
+@i^4605^Red-speckled Mushroom
 @i^4684^Spellbinder Belt
 @i^4708^Bright Belt
+@i^4775^Cracked Bill
 @i^4865^Ruined Pelt
+@i^5087^Plainstrider Beak
 @i^5135^Thin Black Claw
 @i^5136^Torn Furry Ear
+@i^5469^Strider Meat
 @i^5523^Small Barnacled Clam
 @i^5635^Sharp Claw
 @i^6293^Dried Bat Blood
@@ -133,14 +153,21 @@ GoldScout-export 6^sf56cc7mmwz0^10
 @i^11406^Rotting Bear Carcass
 @i^11407^Torn Bear Pelt
 @i^12996^Band of Purification
+@i^15010^Primal Wraps of Arcane Wrath
+@i^15300^Grizzly Gloves
+@i^15481^War Torn Greaves
 @i^16333^Samuel's Remains
+@i^17056^Light Feather
 @i^211780^Scroll: KWYJIBO
 @i^211854^Scroll: OMIT KESA
 @i^286259^Faintly Glowing Bone
 @q^118^1:0:0
 @q^159^1:0:0
 @q^730^1:7:1
+@q^774^2:7:1
+@q^818^2:7:1
 @q^857^1:1:0
+@q^858^1:0:0
 @q^878^0:7:0
 @q^929^1:0:0
 @q^1081^1:7:1
@@ -166,6 +193,7 @@ GoldScout-export 6^sf56cc7mmwz0^10
 @q^1824^0:2:0
 @q^2070^1:0:0
 @q^2211^0:4:0
+@q^2215^0:4:0
 @q^2251^1:7:1
 @q^2287^1:0:0
 @q^2589^1:7:1
@@ -185,6 +213,7 @@ GoldScout-export 6^sf56cc7mmwz0^10
 @q^3264^1:12:0
 @q^3265^1:12:0
 @q^3266^1:12:0
+@q^3291^2:4:0
 @q^3299^0:15:0
 @q^3300^0:15:0
 @q^3363^0:4:0
@@ -193,6 +222,7 @@ GoldScout-export 6^sf56cc7mmwz0^10
 @q^3476^1:12:0
 @q^3477^1:12:0
 @q^3496^1:12:0
+@q^3621^1:12:0
 @q^3622^1:12:0
 @q^3702^0:15:0
 @q^3730^1:7:1
@@ -200,13 +230,18 @@ GoldScout-export 6^sf56cc7mmwz0^10
 @q^4306^1:7:1
 @q^4428^0:15:0
 @q^4496^1:1:0
+@q^4537^1:0:0
 @q^4538^1:0:0
 @q^4604^1:0:0
+@q^4605^1:0:0
 @q^4684^1:4:0
 @q^4708^2:4:0
+@q^4775^0:15:0
 @q^4865^0:15:0
+@q^5087^1:12:0
 @q^5135^0:15:0
 @q^5136^0:15:0
+@q^5469^1:7:1
 @q^5523^1:7:0
 @q^5635^1:7:1
 @q^6293^0:15:0
@@ -218,10 +253,15 @@ GoldScout-export 6^sf56cc7mmwz0^10
 @q^11406^0:15:0
 @q^11407^1:12:0
 @q^12996^3:4:0
+@q^15010^2:4:0
+@q^15300^1:4:0
+@q^15481^1:4:0
 @q^16333^1:12:0
+@q^17056^1:15:1
 @q^211780^1:0:0
 @q^211854^1:0:0
 @q^286259^1:12:0
+@m^1413^The Barrens
 @m^1420^Tirisfal Glades
 @m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
@@ -1043,13 +1083,14 @@ GoldScout-export 6^sf56cc7mmwz0^10
 @a^1772^89:1
 @a^1773^89:1
 @a^1778^69:1
-@a^1866^70:2
+@a^1866^50:7,70:2
 @a^1867^230:1
 @a^1869^131:1
 @a^1890^226:1,246:10,266:1
 @a^1919^247:1
 @a^1934^187:1
 @a^1935^186:1,187:1,207:1
+@a^1971^50:1
 @a^1983^89:1
 @a^2260^193:1
 @a^2266^126:1,146:4,147:1,167:1
@@ -1069,6 +1110,14 @@ GoldScout-export 6^sf56cc7mmwz0^10
 @a^2449^166:1
 @a^2451^186:1
 @a^2503^205:1
+@a^3244^91:3,110:8
+@a^3265^91:1,110:1,111:1
+@a^3266^111:3
+@a^3267^110:3,111:4
+@a^3268^90:1,110:3,111:4
+@a^3271^111:3
+@a^3438^111:1
+@a^3939^110:1
 @a^260428^261:4,262:2
 @a^260430^241:1,261:2
 @a^260431^241:2
