@@ -1,4 +1,4 @@
-GoldScout-export 6^22tl5ep4u7dz^15
+GoldScout-export 6^22tl5ep4u7dz^16
 2240^3^0^33^33^1416^0.4844^0.7925^3^Syndicate Footpad^2592:1:2,3601:1:1,4306:1:2^
 2271^5^0^31^32^1416^0.2245^0.7763^5^Dalaran Shield Guard^1708:1:1,3714:1:1,4306:4:7^
 2272^3^0^33^33^1416^0.2421^0.5830^2^Dalaran Theurgist^3714:1:1,4306:1:2^
@@ -103,7 +103,28 @@ GoldScout-export 6^22tl5ep4u7dz^15
 5934^1^0^32^32^1441^0.1575^0.4029^1^Heartrazor^1686:1:1,9824:1:1^
 6035^2^0^0^0^0^0.0000^0.0000^0^^1830:1:1,4306:1:1^
 6168^1^0^0^0^0^0.0000^0.0000^0^^4306:1:3^
+6206^2^0^0^0^0^0.0000^0.0000^0^^4306:1:1,6395:1:1^
+6207^8^0^0^0^0^0.0000^0.0000^0^^1828:1:1,3866:1:1,4306:2:2,6394:1:1,9308:1:1^
+6211^2^0^0^0^0^0.0000^0.0000^0^^1829:1:1,2592:2:4,9308:2:2^
+6212^2^0^0^0^0^0.0000^0.0000^0^^9326:1:1^
+6219^1^0^0^0^0^0.0000^0.0000^0^^3674:1:1^
+6222^1^0^0^0^0^0.0000^0.0000^0^^9308:1:1^
+6223^3^0^0^0^0^0.0000^0.0000^0^^4306:1:3,9308:1:1^
+6224^3^0^0^0^0^0.0000^0.0000^0^^1754:1:1,4306:1:1^
+6225^1^0^0^0^0^0.0000^0.0000^0^^^
+6226^1^0^0^0^0^0.0000^0.0000^0^^^
+6229^1^0^0^0^0^0.0000^0.0000^0^^274068:1:1^
+6232^1^0^0^0^0^0.0000^0.0000^0^^3781:1:1^
+6233^6^0^0^0^0^0.0000^0.0000^0^^2592:2:4,9327:1:1,9831:1:1,11969:1:1,15212:1:1^
+6234^2^0^0^0^0^0.0000^0.0000^0^^4306:1:3^
+6235^1^0^0^0^0^0.0000^0.0000^0^^6893:1:1,9447:1:1^
 6243^1^0^0^0^0^0.0000^0.0000^0^^^
+6329^7^0^0^0^0^0.0000^0.0000^0^^1747:1:1,2592:1:3,4306:1:3,6605:1:1,9308:2:2^
+6391^1^0^0^0^0^0.0000^0.0000^0^^9308:1:1^
+7079^1^0^0^0^0^0.0000^0.0000^0^^9452:1:1^
+7361^1^0^0^0^0^0.0000^0.0000^0^^9445:1:1^
+7603^9^0^0^0^0^0.0000^0.0000^0^^1828:1:1,2222:1:1,2592:1:1,6399:1:1^
+7800^1^0^0^0^0^0.0000^0.0000^0^^9299:1:1,9459:1:1,9847:1:1^
 8393^1^0^45^45^1458^0.4670^0.7434^1^Thersa Windsong^^
 10617^1^0^26^26^1441^0.2325^0.2413^1^Galak Messenger^4306:1:1,12564:1:1^
 10720^3^0^27^28^1441^0.2139^0.3211^3^Galak Assassin^^
@@ -177,8 +198,10 @@ GoldScout-export 6^22tl5ep4u7dz^15
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
 @i^1711^Scroll of Stamina II
+@i^1747^Linked Chain Boots
 @i^1749^Linked Chain Cloak
 @i^1750^Linked Chain Gloves
+@i^1754^Reinforced Chain Belt
 @i^1755^Reinforced Chain Boots
 @i^1761^Reinforced Chain Vest
 @i^1776^Brocade Pants
@@ -216,6 +239,7 @@ GoldScout-export 6^22tl5ep4u7dz^15
 @i^3510^Torn Fin Eye
 @i^3601^Syndicate Missive
 @i^3667^Tender Crocolisk Meat
+@i^3674^Decomposed Boot
 @i^3685^Raptor Egg
 @i^3688^Bloodstone Oval
 @i^3689^Bloodstone Marble
@@ -228,9 +252,11 @@ GoldScout-export 6^22tl5ep4u7dz^15
 @i^3745^Rune of Opening
 @i^3770^Mutton Chop
 @i^3771^Wild Hog Shank
+@i^3781^Broad Claymore
 @i^3802^Hardened Leather Bracers
 @i^3816^Reflective Heater
 @i^3827^Mana Potion
+@i^3866^Plans: Jade Serpentblade
 @i^4055^Insignia Boots
 @i^4072^Glimmering Mail Gauntlets
 @i^4306^Silk Cloth
@@ -279,24 +305,40 @@ GoldScout-export 6^22tl5ep4u7dz^15
 @i^6300^Husk Fragment
 @i^6302^Delicate Insect Wing
 @i^6308^Raw Bristle Whisker Catfish
+@i^6394^Silver-thread Boots
+@i^6395^Silver-thread Amice
+@i^6399^Emblazoned Shoulders
 @i^6438^Dull Elemental Bracer
 @i^6439^Broken Binding Bracer
+@i^6605^Dervish Gloves of the Falcon
 @i^6615^Sage's Gloves of the Eagle
 @i^6617^Sage's Mantle of Holy Wrath
 @i^6679^Armor Piercer
 @i^6693^Agamaggan's Clutch
 @i^6826^Brilliant Scale
+@i^6893^Workshop Key
 @i^6986^Crimson Lotus
 @i^7067^Elemental Earth
 @i^7072^Naga Scale
 @i^7414^Infiltrator Pants of Nature's Wrath
 @i^8150^Deeprock Salt
+@i^9299^Thermaplugg's Safe Combination
+@i^9308^Grime-Encrusted Object
+@i^9326^Grime-Encrusted Ring
+@i^9327^Security DELTA Data Access Card
+@i^9445^Grubbis Paws
+@i^9447^Electrocutioner Lagnut
 @i^9451^Bubbling Water
+@i^9452^Hydrocane
+@i^9459^Thermaplugg's Left Arm
 @i^9797^Ivycloth Pants of the Owl
 @i^9824^Durable Shoulders of Spirit
+@i^9831^Scaled Cloak of the Wolf
+@i^9847^Conjurer's Cloak of the Owl
 @i^11391^Spined Bat Wing
 @i^11393^Small Bat Skull
 @i^11394^Bat Heart
+@i^11969^Jacinth Circle of Concentration
 @i^12037^Mystery Meat
 @i^12184^Raptor Flesh
 @i^12564^Assassination Note
@@ -305,7 +347,7 @@ GoldScout-export 6^22tl5ep4u7dz^15
 @i^12946^Hypercapacitor Gizmo
 @i^14566^Prospector's Pads
 @i^15120^Robust Girdle of Strength
-@i^15212^Fighter Broadsword of Agility
+@i^15212^Fighter Broadsword of Stamina
 @i^15224^Battlesmasher of Healing
 @i^15242^Honed Stiletto of Shadow Protection
 @i^15250^Glimmering Flamberge of the Bandit
@@ -340,6 +382,7 @@ GoldScout-export 6^22tl5ep4u7dz^15
 @i^273053^Tendonscraper Dagger
 @i^273181^Crystalline Silk
 @i^273658^Bloody Parchment
+@i^274068^Thermaplugg Medal of Honor
 @i^274160^Quilrager Throwing Axe
 @i^274161^Quillord Mail Leggings
 @i^275997^Cracked Sentry Core
@@ -365,8 +408,10 @@ GoldScout-export 6^22tl5ep4u7dz^15
 @q^1708^1:0:0
 @q^1710^1:0:0
 @q^1711^1:0:0
+@q^1747^0:4:0
 @q^1749^0:4:0
 @q^1750^0:4:0
+@q^1754^0:4:0
 @q^1755^0:4:0
 @q^1761^0:4:0
 @q^1776^0:4:0
@@ -404,6 +449,7 @@ GoldScout-export 6^22tl5ep4u7dz^15
 @q^3510^1:12:0
 @q^3601^1:12:0
 @q^3667^1:7:1
+@q^3674^0:15:0
 @q^3685^1:7:1
 @q^3688^1:12:0
 @q^3689^1:12:0
@@ -416,9 +462,11 @@ GoldScout-export 6^22tl5ep4u7dz^15
 @q^3745^1:12:0
 @q^3770^1:0:0
 @q^3771^1:0:0
+@q^3781^0:2:0
 @q^3802^0:4:0
 @q^3816^0:4:0
 @q^3827^1:0:0
+@q^3866^2:9:0
 @q^4055^2:4:0
 @q^4072^2:4:0
 @q^4306^1:7:1
@@ -467,24 +515,40 @@ GoldScout-export 6^22tl5ep4u7dz^15
 @q^6300^0:15:0
 @q^6302^0:15:0
 @q^6308^1:7:1
+@q^6394^2:4:0
+@q^6395^2:4:0
+@q^6399^2:4:0
 @q^6438^0:15:0
 @q^6439^0:15:0
+@q^6605^2:4:0
 @q^6615^2:4:0
 @q^6617^2:4:0
 @q^6679^2:2:0
 @q^6693^3:4:0
 @q^6826^0:15:0
+@q^6893^1:13:0
 @q^6986^0:15:0
 @q^7067^1:7:1
 @q^7072^1:7:1
 @q^7414^2:4:0
 @q^8150^1:7:1
+@q^9299^1:13:0
+@q^9308^1:12:0
+@q^9326^1:12:0
+@q^9327^2:12:0
+@q^9445^3:4:0
+@q^9447^3:4:0
 @q^9451^1:0:0
+@q^9452^3:2:0
+@q^9459^3:2:0
 @q^9797^2:4:0
 @q^9824^2:4:0
+@q^9831^2:4:0
+@q^9847^2:4:0
 @q^11391^0:15:0
 @q^11393^0:15:0
 @q^11394^0:15:0
+@q^11969^2:4:0
 @q^12037^1:7:1
 @q^12184^1:7:1
 @q^12564^1:12:0
@@ -528,6 +592,7 @@ GoldScout-export 6^22tl5ep4u7dz^15
 @q^273053^3:2:0
 @q^273181^1:12:0
 @q^273658^1:15:0
+@q^274068^3:4:0
 @q^274160^3:2:0
 @q^274161^3:4:0
 @q^275997^1:12:0
