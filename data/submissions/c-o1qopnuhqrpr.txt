@@ -1,4 +1,4 @@
-GoldScout-export 6^o1qopnuhqrpr^7
+GoldScout-export 6^o1qopnuhqrpr^8
 213^19^0^19^20^1431^0.3505^0.2176^19^Starving Dire Wolf^893:5:5,1015:10:10,3301:3:3,3402:4:4,9789:1:1,15926:1:1^
 217^10^0^19^20^1431^0.3926^0.2828^10^Venom Web Spider^899:1:1,1081:3:3,1130:3:3,1475:1:1,2251:3:3,3174:6:6,4428:2:2^
 334^1^0^26^26^1433^0.6451^0.5602^1^Gath'Ilzogg^3633:1:1^
@@ -70,9 +70,22 @@ GoldScout-export 6^o1qopnuhqrpr^7
 4462^2^0^23^24^1433^0.6326^0.5492^2^Blackrock Hunter^3379:1:1,3770:1:1,248705:1:1^
 4463^8^0^22^23^1433^0.2743^0.1050^8^Blackrock Summoner^1775:1:1,3770:2:2,11993:2:2,248702:1:1^
 4464^1^0^24^25^1433^0.6231^0.5607^1^Blackrock Gladiator^2592:1:4^
+250873^17^0^1^1^2521^0.4409^0.2697^17^Juvenile Vuldren^1380:1:1,2210:1:1,2656:1:1,2672:5:5,3365:1:1,4865:9:9,7073:8:8,7074:5:5^
+250926^28^0^3^4^2521^0.4003^0.2639^28^Scrawny Ursera^1368:1:1,1372:1:1,1378:1:1,2651:1:1,2656:3:3,3363:2:2,7073:10:10,7074:11:11,251918:6:6,251925:13:13^
+250937^18^0^4^4^2521^0.3654^0.2492^18^Ursera Scavenger^1374:1:1,2210:1:1,2650:1:1,7073:5:5,7074:7:7,251925:11:11^
+251115^1^0^5^5^2521^0.3577^0.2552^1^Urs'anah^251925:1:1,252665:1:1^
+251143^6^0^2^3^2521^0.4734^0.2044^6^Roiling Winds^2650:1:1,251930:2:2,251931:4:4^
+251145^6^0^4^4^2521^0.3719^0.3316^6^Al'Aketh Brute^159:2:2,1368:1:1,1369:1:1,1370:1:1,2651:1:1,4540:4:4^
+251160^13^0^2^3^2521^0.4788^0.2001^13^Al'Aketh Convert^159:1:1,1380:1:1,2210:1:1,2589:7:7,3365:1:1,4540:1:1^
+251169^15^0^1^1^2521^0.4507^0.2777^15^Pesky Cirrusfly^1368:1:1,2652:1:1,2653:1:1,2654:1:1,251927:6:6,251928:9:9^
+251402^2^0^2^2^2521^0.4733^0.2755^2^Cirrusfly Soldier^251928:2:2^
+251404^1^0^3^3^2521^0.4782^0.2798^1^Cirrusfly Queen^251928:1:1^
+251448^5^0^4^4^2521^0.3658^0.3193^5^Al'Aketh Neophyte^159:3:3,2589:1:1,2654:1:1,4540:2:2^
+256935^1^0^5^5^2521^0.3639^0.3336^1^Malduko Cloudcrush^^
 272273^1^0^24^24^1431^0.7596^0.2317^1^Lost Watcher^281142:1:1^
 272291^1^0^25^25^1431^0.8135^0.5926^1^Lost Knight^281147:1:1^
 277645^1^0^23^23^1431^0.1607^0.5374^1^Gray Fox^1206:1:1,5635:1:1^
+@i^159^Refreshing Spring Water
 @i^556^Buzzard Beak
 @i^730^Murloc Eye
 @i^769^Chunk of Boar Meat
@@ -97,6 +110,13 @@ GoldScout-export 6^o1qopnuhqrpr^7
 @i^1220^Lupine Axe
 @i^1260^Tharil'zun's Head
 @i^1261^Midnight Orb
+@i^1368^Ragged Leather Gloves
+@i^1369^Ragged Leather Belt
+@i^1370^Ragged Leather Bracers
+@i^1372^Ragged Cloak
+@i^1374^Frayed Shoes
+@i^1378^Frayed Pants
+@i^1380^Frayed Robe
 @i^1455^Blackrock Champion's Axe
 @i^1464^Buzzard Talon
 @i^1468^Murloc Fin
@@ -123,12 +143,19 @@ GoldScout-export 6^o1qopnuhqrpr^7
 @i^2078^Northern Shortsword of Agility
 @i^2079^Sergeant's Warhammer of Magic
 @i^2169^Buzzer Blade
+@i^2210^Battered Buckler
 @i^2216^Simple Buckler
 @i^2217^Rectangular Shield
 @i^2220^Box Shield
 @i^2251^Gooey Spider Leg
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2650^Flimsy Chain Boots
+@i^2651^Flimsy Chain Bracers
+@i^2652^Flimsy Chain Cloak
+@i^2653^Flimsy Chain Gloves
+@i^2654^Flimsy Chain Pants
+@i^2656^Flimsy Chain Vest
 @i^2672^Stringy Wolf Meat
 @i^2677^Boar Ribs
 @i^2770^Copper Ore
@@ -148,6 +175,8 @@ GoldScout-export 6^o1qopnuhqrpr^7
 @i^3199^Battle Slayer of Fire Protection
 @i^3205^Inscribed Leather Bracers
 @i^3301^Sharp Canine
+@i^3363^Frayed Belt
+@i^3365^Frayed Bracers
 @i^3377^Canvas Bracers
 @i^3379^Brocade Bracers
 @i^3402^Soft Patch of Fur
@@ -163,6 +192,7 @@ GoldScout-export 6^o1qopnuhqrpr^7
 @i^4349^Pattern: Phoenix Pants
 @i^4359^Handful of Copper Bolts
 @i^4428^Spider Palp
+@i^4540^Tough Hunk of Bread
 @i^4567^Merc Sword of the Monkey
 @i^4571^War Knife of Nature Protection
 @i^4575^Medicine Staff of Healing
@@ -171,6 +201,7 @@ GoldScout-export 6^o1qopnuhqrpr^7
 @i^4699^Seer's Belt
 @i^4775^Cracked Bill
 @i^4776^Ruffled Feather
+@i^4865^Ruined Pelt
 @i^5114^Severed Talon
 @i^5115^Broken Wishbone
 @i^5187^Rhahk'Zor's Hammer
@@ -190,6 +221,8 @@ GoldScout-export 6^o1qopnuhqrpr^7
 @i^6581^Scouting Belt of the Boar
 @i^6604^Dervish Cape of the Boar
 @i^6889^Small Egg
+@i^7073^Broken Fang
+@i^7074^Chipped Claw
 @i^7365^Gnoam Sprecklesprocket
 @i^7997^Red Defias Mask
 @i^9775^Bandit Cinch of Fire Protection
@@ -219,11 +252,19 @@ GoldScout-export 6^o1qopnuhqrpr^7
 @i^248705^Waylaid Crate: Journeyman Fabrics
 @i^250188^Recipe: Breakfast Omelette
 @i^251338^Plans: Sterling Silver Shoulders
+@i^251918^Scrawny Ursera Claw
+@i^251925^Tattered Ursera Feather
+@i^251927^Chipped Cirrusfly Stinger
+@i^251928^Torn Insect Wing
+@i^251930^Minor Essence of the Four Winds
+@i^251931^Depleted Windstone
+@i^252665^Head of Urs'anah
 @i^273293^Bandsaw Wristbands
 @i^273297^Goblin Hammer
 @i^281142^Merrick's Bow
 @i^281147^Grant's Shield
 @i^284715^First Mate Band
+@q^159^1:0:0
 @q^556^0:15:0
 @q^730^1:7:1
 @q^769^1:7:1
@@ -248,6 +289,13 @@ GoldScout-export 6^o1qopnuhqrpr^7
 @q^1220^2:2:0
 @q^1260^1:12:0
 @q^1261^1:12:0
+@q^1368^0:4:0
+@q^1369^0:4:0
+@q^1370^0:4:0
+@q^1372^0:4:0
+@q^1374^0:4:0
+@q^1378^0:4:0
+@q^1380^0:4:0
 @q^1455^2:2:0
 @q^1464^0:15:0
 @q^1468^1:7:1
@@ -274,12 +322,19 @@ GoldScout-export 6^o1qopnuhqrpr^7
 @q^2078^2:2:0
 @q^2079^2:2:0
 @q^2169^3:2:0
+@q^2210^0:4:0
 @q^2216^0:4:0
 @q^2217^0:4:0
 @q^2220^0:4:0
 @q^2251^1:7:1
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2650^0:4:0
+@q^2651^0:4:0
+@q^2652^0:4:0
+@q^2653^0:4:0
+@q^2654^0:4:0
+@q^2656^0:4:0
 @q^2672^1:7:1
 @q^2677^1:7:1
 @q^2770^1:7:1
@@ -299,6 +354,8 @@ GoldScout-export 6^o1qopnuhqrpr^7
 @q^3199^2:2:0
 @q^3205^2:4:0
 @q^3301^0:15:0
+@q^3363^0:4:0
+@q^3365^0:4:0
 @q^3377^0:4:0
 @q^3379^0:4:0
 @q^3402^0:15:0
@@ -314,6 +371,7 @@ GoldScout-export 6^o1qopnuhqrpr^7
 @q^4349^2:9:0
 @q^4359^1:7:1
 @q^4428^0:15:0
+@q^4540^1:0:0
 @q^4567^2:2:0
 @q^4571^2:2:0
 @q^4575^2:2:0
@@ -322,6 +380,7 @@ GoldScout-export 6^o1qopnuhqrpr^7
 @q^4699^2:4:0
 @q^4775^0:15:0
 @q^4776^0:15:0
+@q^4865^0:15:0
 @q^5114^0:15:0
 @q^5115^0:15:0
 @q^5187^3:2:0
@@ -341,6 +400,8 @@ GoldScout-export 6^o1qopnuhqrpr^7
 @q^6581^2:4:0
 @q^6604^2:4:0
 @q^6889^1:7:1
+@q^7073^0:15:0
+@q^7074^0:15:0
 @q^7365^1:12:0
 @q^7997^0:4:0
 @q^9775^2:4:0
@@ -370,6 +431,13 @@ GoldScout-export 6^o1qopnuhqrpr^7
 @q^248705^2:0:1
 @q^250188^1:9:0
 @q^251338^2:9:0
+@q^251918^1:12:0
+@q^251925^0:15:0
+@q^251927^0:15:0
+@q^251928^0:15:0
+@q^251930^0:15:0
+@q^251931^0:15:0
+@q^252665^1:12:0
 @q^273293^3:4:0
 @q^273297^3:2:0
 @q^281142^1:15:0
@@ -380,6 +448,7 @@ GoldScout-export 6^o1qopnuhqrpr^7
 @m^1431^Duskwood
 @m^1433^Redridge Mountains
 @m^1436^Westfall
+@m^2521^Zephras Isle
 @c^2300^
 @c^2302^
 @c^2303^
@@ -1744,6 +1813,18 @@ GoldScout-export 6^o1qopnuhqrpr^7
 @a^4462^212:1,232:1
 @a^4463^25:2,26:2,44:1,45:1,46:1,64:1
 @a^4464^232:1
+@a^250873^108:17
+@a^250926^87:1,88:1,107:10,108:15,127:1
+@a^250937^87:8,107:10
+@a^251115^107:1
+@a^251143^69:1,89:5
+@a^251145^127:6
+@a^251160^69:5,89:8
+@a^251169^108:9,109:6
+@a^251402^109:2
+@a^251404^109:1
+@a^251448^127:5
+@a^256935^127:1
 @a^272273^95:1
 @a^272291^236:1
 @a^277645^203:1

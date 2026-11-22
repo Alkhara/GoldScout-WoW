@@ -1,4 +1,4 @@
-GoldScout-export 6^tbld3cccjqd3^10
+GoldScout-export 6^tbld3cccjqd3^12
 2242^1^0^36^36^1416^0.6258^0.4524^1^Espion du Syndicat^^
 2252^20^0^34^35^1416^0.4891^0.3987^20^Ogre Cassecrête^1708:2:2,2592:4:6,3771:1:1,3782:1:1,3864:1:1,4306:4:6,4338:1:1^
 2253^13^0^35^36^1416^0.4835^0.4114^13^Brute Cassecrête^1708:1:1,2592:2:4,3778:1:1,4306:7:13^
@@ -12,6 +12,7 @@ GoldScout-export 6^tbld3cccjqd3^10
 2563^1^0^32^33^1417^0.7146^0.3415^1^Rampant des plaines^878:1:1,2251:1:1^
 3811^1^0^29^30^1440^0.9117^0.6381^1^Ours d'Ashenvale géant^3730:1:1^
 3821^1^0^28^28^1440^0.8972^0.6863^1^Rôdeuse Ronce-sauvage^3174:1:1^
+3928^4^0^21^22^1440^0.7418^0.7120^4^Gelée pourrissante^3669:1:1,3670:3:3,3676:1:1,16655:1:1^
 3974^1^0^0^0^0^0.0000^0.0000^0^^274292:1:1^
 3975^2^0^0^0^0^0.0000^0.0000^0^^7719:2:2,9287:1:1^
 3976^2^0^0^0^0^0.0000^0.0000^0^^7723:1:1,7726:1:1^
@@ -60,7 +61,15 @@ GoldScout-export 6^tbld3cccjqd3^10
 7873^11^0^33^34^1413^0.4748^0.9185^11^Garde de guerre de Tranchebauge^1710:1:1,4306:3:6,4338:1:1,4539:1:1,7976:1:1,15962:1:1^
 7874^2^0^33^34^1413^0.4830^0.9226^2^Tisseur d'épines de Tranchebauge^2592:1:1,7453:1:1^
 8567^1^0^0^0^0^0.0000^0.0000^0^^10774:1:1,254040:1:1^
+12676^1^0^31^31^1440^0.7601^0.7055^1^Serres-tranchantes^3404:1:1,5116:1:1,16305:1:1^
+12856^9^0^23^24^1440^0.7413^0.7114^9^Estafette d'Ashenvale^1753:1:1,2592:5:7,16656:1:1^
 12865^1^0^36^36^1413^0.4612^0.9037^1^Ambassadeur Malcin^17009:1:1^
+255898^8^0^38^39^2548^0.7454^0.6916^8^Oracle murloc^5524:2:2,7475:1:1,7476:1:1,213544:1:1,268344:1:1^
+255899^11^0^37^38^2548^0.6966^0.6821^11^Frôle-marée murloc^268344:7:7^
+255901^9^0^36^37^2548^0.7149^0.6574^9^Clampant des sables^5524:2:2,5569:2:2,12206:5:5,17057:7:7,268345:6:6^
+256801^13^0^40^41^2548^0.7308^0.6776^13^Guerrier murloc^3928:1:1,5524:2:2,268344:2:4^
+257001^1^0^42^42^2548^0.7734^0.7387^1^Vieil Appât-Pourri^268341:1:1^
+263343^1^0^38^38^2548^0.6928^0.4986^1^Busard des basses plaines^3404:1:1,271793:1:1^
 266357^1^0^36^36^1416^0.6276^0.4517^1^Barton^5113:1:1^
 @i^878^Petite filière
 @i^1465^Fléau des tigres
@@ -69,6 +78,7 @@ GoldScout-export 6^tbld3cccjqd3^10
 @i^1707^Brie de Hurlevent
 @i^1708^Nectar sucré
 @i^1710^Potion de soins supérieure
+@i^1753^Lorica rivetée
 @i^2080^Hache des collines d'esprit
 @i^2251^Patte d'araignée fondante
 @i^2592^Etoffe de laine
@@ -79,6 +89,10 @@ GoldScout-export 6^tbld3cccjqd3^10
 @i^3385^Potion de mana inférieure
 @i^3402^Touffe de fourrure douce
 @i^3403^Défense de sanglier en ivoire
+@i^3404^Aile de busard
+@i^3669^Bave gélatineuse
+@i^3670^Grand os visqueux
+@i^3676^Ichor visqueux
 @i^3730^Viande de grand ours
 @i^3771^Jarret de cochon sauvage
 @i^3778^Arc composite de sarcasme
@@ -95,6 +109,7 @@ GoldScout-export 6^tbld3cccjqd3^10
 @i^3815^Haubergeon doublentin
 @i^3827^Potion de mana
 @i^3864^Citrine
+@i^3928^Potion de soins excellente
 @i^4038^Robe nocturne
 @i^4040^Gants nocturnes
 @i^4077^Protège-front de guerre en mailles
@@ -110,11 +125,16 @@ GoldScout-export 6^tbld3cccjqd3^10
 @i^4636^Solide coffret en fer
 @i^4731^Epaulettes glyphées
 @i^5113^Marque du Syndicat
+@i^5116^Longue plume de queue
+@i^5524^Palourde à coque épaisse
+@i^5569^Algue
 @i^6417^Cape de l'aurore
 @i^6421^Ceinture glyphée
 @i^7445^Epaulières de sentinelle de défense
 @i^7453^Patron : Bottes de rapidité
 @i^7458^Bottes de chevalier de héraut
+@i^7475^Crispins régaliens de sorcellerie
+@i^7476^Echarpe régalienne d'ancienneté
 @i^7719^Heaume du berserker enragé
 @i^7723^Puissance de Mograine
 @i^7726^Egide du commandant écarlate
@@ -132,15 +152,21 @@ GoldScout-export 6^tbld3cccjqd3^10
 @i^10776^Cape d'araignée soyeuse
 @i^11167^Formule : Enchantement de bottes (Esprit inférieur)
 @i^12020^Pendentif de thallium d'endurance
+@i^12206^Viande de crabe tendre
 @i^14216^Pourpoint de géomancien de canalisation
 @i^14420^Cape en soie de sable
 @i^14591^Casque oeil-de-faucon
 @i^14595^Hauts-de-chausses oeil-de-faucon
 @i^15226^Gourdin géant de la chouette
 @i^15962^Bâtonnet du satyre
+@i^16305^Griffe de Serres-tranchantes
+@i^16655^Manuel d'utilisation du Déchiqueteur - Page 11
+@i^16656^Manuel d'utilisation du Déchiqueteur - Page 12
 @i^17009^Tête de l'Ambassadeur Malcin
+@i^17057^Ecailles de poisson brillantes
 @i^19507^Châle d'inquisiteur
 @i^19508^Brassards en cuir marqué
+@i^213544^Parchemin : ZOO ET DU KAFÊ
 @i^215376^Masse de croisé
 @i^248688^Caisse détournée : textiles de compagnon
 @i^248690^Caisse détournée : plantes terreuses d'expert
@@ -151,6 +177,10 @@ GoldScout-export 6^tbld3cccjqd3^10
 @i^252845^Patron : chaussures de garde en cuir
 @i^254040^Patron : corde écumeuse
 @i^262889^Commission d'expert scellée
+@i^268341^Harpon couvert de pourriture
+@i^268344^Œil de Murloc d'eau de mer
+@i^268345^Chair de clampant des sables
+@i^271793^Plume de busard des plaines
 @i^274292^Boomerang de maître-chien
 @q^878^0:7:0
 @q^1465^2:2:0
@@ -159,6 +189,7 @@ GoldScout-export 6^tbld3cccjqd3^10
 @q^1707^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
+@q^1753^0:4:0
 @q^2080^2:2:0
 @q^2251^1:7:1
 @q^2592^1:7:1
@@ -169,6 +200,10 @@ GoldScout-export 6^tbld3cccjqd3^10
 @q^3385^1:0:0
 @q^3402^0:15:0
 @q^3403^0:15:0
+@q^3404^1:7:1
+@q^3669^0:15:0
+@q^3670^0:15:0
+@q^3676^0:15:0
 @q^3730^1:7:1
 @q^3771^1:0:0
 @q^3778^0:2:0
@@ -185,6 +220,7 @@ GoldScout-export 6^tbld3cccjqd3^10
 @q^3815^0:4:0
 @q^3827^1:0:0
 @q^3864^2:7:1
+@q^3928^1:0:0
 @q^4038^2:4:0
 @q^4040^2:4:0
 @q^4077^2:4:0
@@ -200,11 +236,16 @@ GoldScout-export 6^tbld3cccjqd3^10
 @q^4636^2:15:0
 @q^4731^2:4:0
 @q^5113^0:15:0
+@q^5116^1:7:1
+@q^5524^1:7:0
+@q^5569^0:15:0
 @q^6417^2:4:0
 @q^6421^2:4:0
 @q^7445^2:4:0
 @q^7453^2:9:0
 @q^7458^2:4:0
+@q^7475^2:4:0
+@q^7476^2:4:0
 @q^7719^3:4:0
 @q^7723^3:2:0
 @q^7726^3:4:0
@@ -222,15 +263,21 @@ GoldScout-export 6^tbld3cccjqd3^10
 @q^10776^3:4:0
 @q^11167^2:9:0
 @q^12020^2:4:0
+@q^12206^1:7:1
 @q^14216^2:4:0
 @q^14420^2:4:0
 @q^14591^2:4:0
 @q^14595^2:4:0
 @q^15226^2:2:0
 @q^15962^2:4:0
+@q^16305^2:12:0
+@q^16655^1:12:0
+@q^16656^1:12:0
 @q^17009^1:12:0
+@q^17057^1:15:0
 @q^19507^3:4:0
 @q^19508^3:4:0
+@q^213544^1:0:0
 @q^215376^1:2:0
 @q^248688^1:0:1
 @q^248690^1:0:1
@@ -241,6 +288,10 @@ GoldScout-export 6^tbld3cccjqd3^10
 @q^252845^3:9:0
 @q^254040^3:9:0
 @q^262889^3:0:0
+@q^268341^1:12:0
+@q^268344^1:12:0
+@q^268345^1:12:0
+@q^271793^1:12:0
 @q^274292^3:2:0
 @m^1413^Les Tarides
 @m^1414^Kalimdor
@@ -248,6 +299,7 @@ GoldScout-export 6^tbld3cccjqd3^10
 @m^1417^Hautes-terres d'Arathi
 @m^1424^Contreforts de Hautebrande
 @m^1440^Orneval
+@m^2548^Rives Claires
 @c^2454^
 @c^2455^
 @c^2456^
@@ -536,11 +588,20 @@ GoldScout-export 6^tbld3cccjqd3^10
 @a^2563^134:1
 @a^3811^258:1
 @a^3821^277:1
+@a^3928^294:2,295:2
 @a^7327^290:1
 @a^7335^290:2
 @a^7872^349:1,369:2
 @a^7873^349:3,369:8
 @a^7874^349:1,369:1
+@a^12676^295:1
+@a^12856^274:1,275:1,294:5,295:2
 @a^12865^369:1
+@a^255898^254:2,274:2,295:4
+@a^255899^254:4,274:1,293:6
+@a^255901^254:4,273:1,274:3,293:1
+@a^256801^254:5,274:3,293:1,294:1,295:3
+@a^257001^295:1
+@a^263343^193:1
 @a^266357^192:1
 @l^0^frFR

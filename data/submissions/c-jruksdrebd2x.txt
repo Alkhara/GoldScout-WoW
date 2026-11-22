@@ -1,4 +1,8 @@
-GoldScout-export 6^jruksdrebd2x^1
+GoldScout-export 6^jruksdrebd2x^2
+729^1^0^37^37^1434^0.3252^0.1803^1^Sin'Dall^3879:1:1,12202:1:1^
+772^1^0^38^38^1434^0.3824^0.3197^1^Stranglethorn Tigress^1688:1:1^
+1144^2^0^37^37^1434^0.3598^0.3234^2^Mosh'Ogg Witch Doctor^^
+1152^35^0^35^36^1434^0.3952^0.2885^35^Snapjaw Crocolisk^770:25:25,3667:18:18,12037:13:13^
 1520^7^0^6^7^1420^0.4613^0.3797^7^Rattlecage Soldier^1417:1:1,1422:1:1,2589:2:3,3162:1:1,4604:2:2^
 1522^11^0^7^8^1420^0.4584^0.3647^11^Darkeye Bonecaster^2589:2:4,3013:1:1,3163:3:3,3189:1:1^
 1523^6^0^8^9^1420^0.4596^0.3283^6^Cracked Skull Soldier^2589:1:2,3162:4:4^
@@ -6,8 +10,12 @@ GoldScout-export 6^jruksdrebd2x^1
 1654^1^0^10^10^1420^0.4604^0.2915^1^Gregor Agamand^2829:1:1^
 1655^1^0^10^10^1420^0.4918^0.3597^1^Nissa Agamand^2828:1:1^
 1656^1^0^10^10^1420^0.4313^0.3201^1^Thurman Agamand^2830:1:1,211787:1:1^
+269175^2^0^36^38^1434^0.3496^0.3016^2^Carnivorous Weed^785:1:1,6421:1:1,256037:1:1^
+@i^770^Pointy Crocolisk Tooth
+@i^785^Mageroyal
 @i^1417^Beaten Battle Axe
 @i^1422^Worn Leather Gloves
+@i^1688^Long Soft Tail
 @i^2589^Linen Cloth
 @i^2828^Nissa's Remains
 @i^2829^Gregor's Remains
@@ -16,12 +24,21 @@ GoldScout-export 6^jruksdrebd2x^1
 @i^3162^Notched Rib
 @i^3163^Blackened Skull
 @i^3189^Wood Chopper
+@i^3667^Tender Crocolisk Meat
+@i^3879^Paw of Sin'Dall
 @i^4604^Forest Mushroom Cap
+@i^6421^Glyphed Belt
 @i^7073^Broken Fang
+@i^12037^Mystery Meat
+@i^12202^Tiger Meat
 @i^12223^Meaty Bat Wing
 @i^211787^Scroll: LOWER PING WHOMEVER
+@i^256037^Grass Clippings
+@q^770^0:15:0
+@q^785^1:7:1
 @q^1417^0:2:0
 @q^1422^0:4:0
+@q^1688^0:15:0
 @q^2589^1:7:1
 @q^2828^1:12:0
 @q^2829^1:12:0
@@ -30,11 +47,18 @@ GoldScout-export 6^jruksdrebd2x^1
 @q^3162^1:12:0
 @q^3163^1:12:0
 @q^3189^1:2:0
+@q^3667^1:7:1
+@q^3879^1:12:0
 @q^4604^1:0:0
+@q^6421^2:4:0
 @q^7073^0:15:0
+@q^12037^1:7:1
+@q^12202^1:7:1
 @q^12223^1:7:1
 @q^211787^1:0:0
+@q^256037^0:15:0
 @m^1420^Tirisfal Glades
+@m^1434^Stranglethorn Vale
 @c^118^
 @c^724^
 @c^733^
@@ -491,6 +515,10 @@ GoldScout-export 6^jruksdrebd2x^1
 @c^285277^
 @c^285278^
 @c^286152^
+@a^729^66:1
+@a^772^127:1
+@a^1144^127:2
+@a^1152^87:3,88:2,107:8,108:11,127:11
 @a^1520^129:1,149:4,169:2
 @a^1522^109:1,128:2,129:1,148:2,149:2,169:3
 @a^1523^109:1,128:2,129:2,149:1
@@ -498,4 +526,5 @@ GoldScout-export 6^jruksdrebd2x^1
 @a^1654^109:1
 @a^1655^149:1
 @a^1656^128:1
+@a^269175^106:1,127:1
 @l^0^enUS

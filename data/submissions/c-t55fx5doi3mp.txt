@@ -1,9 +1,14 @@
-GoldScout-export 6^t55fx5doi3mp^10
+GoldScout-export 6^t55fx5doi3mp^11
 46^8^0^9^10^1429^0.7834^0.7072^8^Murloc Forager^159:2:2,779:3:3,1416:1:1,1431:1:1,2642:1:1,6517:1:1^
+95^3^0^11^12^1436^0.4955^0.1887^3^Defias Smuggler^829:1:1,858:1:1,2589:1:3^
+114^5^0^14^15^1436^0.5094^0.2418^5^Harvest Watcher^732:3:3,814:1:1,1274:1:1,6553:1:1,255007:3:3^
 118^8^0^9^10^1429^0.8122^0.7084^8^Prowler^2672:7:7,2966:1:1,3299:1:1,3300:1:1,211786:1:1^
+126^7^0^12^13^1436^0.5442^0.0960^7^Murloc Coastrunner^730:1:1,1513:1:1,5523:3:3,254548:2:2^
 330^1^0^9^9^1429^0.6904^0.7976^1^Princess^769:1:1,1006:1:1^
 390^2^0^7^7^1429^0.6890^0.8008^2^Porcine Entourage^769:1:1,3171:1:1^
 442^1^0^15^15^1433^0.1388^0.6481^1^Tarantula^1475:1:1^
+502^1^0^15^15^1436^0.4889^0.1925^1^Benny Blaanco^829:1:1^
+515^14^0^11^12^1436^0.5465^0.1004^14^Murloc Raider^730:4:4,818:1:1,858:1:1,1179:2:2,1180:1:1,1181:1:1,5523:3:3,254548:5:5^
 705^16^0^1^1^1426^0.2913^0.7436^16^Ragged Young Wolf^750:8:8,1366:1:1,1370:1:1,1372:1:1,1378:1:1,2650:1:1,2656:1:1,4865:2:2,7073:6:6,7074:4:4^
 706^22^0^3^4^1426^0.2830^0.8051^22^Frostmane Troll Whelp^117:2:2,159:1:1,1377:1:1,1378:1:1,1380:1:1,2211:2:2,2589:6:6,3365:1:1^
 708^7^0^3^3^1426^0.2137^0.7199^7^Small Crag Boar^117:2:2,1368:1:1,2650:1:1,4865:2:2,7098:4:4^
@@ -74,6 +79,8 @@ GoldScout-export 6^t55fx5doi3mp^10
 @i^117^Tough Jerky
 @i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
+@i^730^Murloc Eye
+@i^732^Okra
 @i^750^Tough Wolf Meat
 @i^768^Lumberjack Axe
 @i^769^Chunk of Boar Meat
@@ -81,8 +88,15 @@ GoldScout-export 6^t55fx5doi3mp^10
 @i^774^Malachite
 @i^779^Shiny Seashell
 @i^805^Small Red Pouch
+@i^814^Flask of Oil
+@i^818^Tigerseye
+@i^829^Red Leather Bandana
 @i^858^Lesser Healing Potion
 @i^1006^Brass Collar
+@i^1179^Ice Cold Milk
+@i^1180^Scroll of Stamina
+@i^1181^Scroll of Spirit
+@i^1274^Hops
 @i^1364^Ragged Leather Vest
 @i^1366^Ragged Leather Pants
 @i^1367^Ragged Leather Boots
@@ -106,6 +120,7 @@ GoldScout-export 6^t55fx5doi3mp^10
 @i^1501^Calico Tunic
 @i^1504^Warped Leather Bracers
 @i^1510^Heavy Hammer
+@i^1513^Old Greatsword
 @i^1515^Rough Wooden Staff
 @i^1730^Worn Mail Belt
 @i^1768^Canvas Pants
@@ -164,6 +179,7 @@ GoldScout-export 6^t55fx5doi3mp^10
 @i^4813^Small Leather Collar
 @i^4814^Discolored Fang
 @i^4865^Ruined Pelt
+@i^5523^Small Barnacled Clam
 @i^5572^Small Green Pouch
 @i^5741^Rock Chip
 @i^6296^Patch of Bat Hair
@@ -171,6 +187,7 @@ GoldScout-export 6^t55fx5doi3mp^10
 @i^6513^Disciple's Sash
 @i^6517^Pioneer Belt
 @i^6520^Pioneer Cloak
+@i^6553^Bard's Trousers of Fire Protection
 @i^6952^Thick Bear Fur
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
@@ -190,6 +207,8 @@ GoldScout-export 6^t55fx5doi3mp^10
 @i^247826^Croaky's Head
 @i^248683^Waylaid Crate: Apprentice Ore
 @i^248703^Waylaid Crate: Apprentice Ingots
+@i^254548^Longshore Murloc Gill
+@i^255007^Golem Isospring
 @i^267414^Pristine Leopard Pelt
 @i^267415^Stolen Blasting Powder
 @i^268548^Empty Powder Keg
@@ -200,6 +219,8 @@ GoldScout-export 6^t55fx5doi3mp^10
 @q^117^1:0:0
 @q^118^1:0:0
 @q^159^1:0:0
+@q^730^1:7:1
+@q^732^1:12:0
 @q^750^1:12:0
 @q^768^1:2:0
 @q^769^1:7:1
@@ -207,8 +228,15 @@ GoldScout-export 6^t55fx5doi3mp^10
 @q^774^2:7:1
 @q^779^0:15:0
 @q^805^1:1:0
+@q^814^1:7:1
+@q^818^2:7:1
+@q^829^1:12:0
 @q^858^1:0:0
 @q^1006^1:12:0
+@q^1179^1:0:0
+@q^1180^1:0:0
+@q^1181^1:0:0
+@q^1274^1:12:0
 @q^1364^0:4:0
 @q^1366^0:4:0
 @q^1367^0:4:0
@@ -232,6 +260,7 @@ GoldScout-export 6^t55fx5doi3mp^10
 @q^1501^0:4:0
 @q^1504^0:4:0
 @q^1510^0:2:0
+@q^1513^0:2:0
 @q^1515^0:2:0
 @q^1730^0:4:0
 @q^1768^0:4:0
@@ -290,6 +319,7 @@ GoldScout-export 6^t55fx5doi3mp^10
 @q^4813^0:15:0
 @q^4814^0:15:0
 @q^4865^0:15:0
+@q^5523^1:7:0
 @q^5572^1:1:0
 @q^5741^0:15:0
 @q^6296^0:15:0
@@ -297,6 +327,7 @@ GoldScout-export 6^t55fx5doi3mp^10
 @q^6513^1:4:0
 @q^6517^1:4:0
 @q^6520^1:4:0
+@q^6553^2:4:0
 @q^6952^1:12:0
 @q^7073^0:15:0
 @q^7074^0:15:0
@@ -316,6 +347,8 @@ GoldScout-export 6^t55fx5doi3mp^10
 @q^247826^1:12:0
 @q^248683^1:0:1
 @q^248703^2:0:1
+@q^254548^1:12:0
+@q^255007^1:7:1
 @q^267414^1:12:0
 @q^267415^1:12:0
 @q^268548^1:12:0
@@ -329,6 +362,7 @@ GoldScout-export 6^t55fx5doi3mp^10
 @m^1429^Elwynn Forest
 @m^1432^Loch Modan
 @m^1433^Redridge Mountains
+@m^1436^Westfall
 @m^1438^Teldrassil
 @c^118^
 @c^724^
@@ -1190,10 +1224,15 @@ GoldScout-export 6^t55fx5doi3mp^10
 @c^279987^
 @c^286152^
 @a^46^235:2,236:2,335:1,355:3
+@a^95^69:2,70:1
+@a^114^89:2,90:1,110:1,130:1
 @a^118^235:1,256:2,315:4,317:1
+@a^126^30:3,31:2,50:2
 @a^330^313:1
 @a^390^333:2
 @a^442^242:1
+@a^502^69:1
+@a^515^30:2,31:4,50:6,51:2
 @a^705^285:12,286:1,305:3
 @a^706^305:4,306:1,325:15,326:2
 @a^708^284:7
