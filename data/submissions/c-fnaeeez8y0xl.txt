@@ -1,4 +1,4 @@
-GoldScout-export 6^fnaeeez8y0xl^11
+GoldScout-export 6^fnaeeez8y0xl^12
 2269^29^0^26^27^1424^0.3009^0.5371^29^Hillsbrad Miner^422:5:5,1825:1:1,1826:1:1,2290:1:1,2592:4:6,2772:1:1,4306:7:10,7127:11:11,9799:1:1,262888:1:1^
 2270^3^0^27^28^1424^0.2785^0.5919^3^Hillsbrad Sentry^4306:2:4^
 2503^10^0^27^28^1424^0.2997^0.5358^10^Hillsbrad Foreman^929:2:2,1784:1:1,1810:1:1,2592:2:2,4306:3:5^
@@ -54,6 +54,11 @@ GoldScout-export 6^fnaeeez8y0xl^11
 260801^4^0^0^0^0^0.0000^0.0000^0^^1697:1:1,1806:1:1,3685:3:3,271100:2:2^
 260802^1^0^0^0^0^0.0000^0.0000^0^^3656:1:1^
 260803^2^0^0^0^0^0.0000^0.0000^0^^1074:2:2,1809:1:1,2251:1:1^
+264079^4^0^27^28^1412^0.3288^0.0915^4^Gloomrise Hatchling^3167:3:3^
+264081^9^0^28^28^1412^0.3258^0.0980^9^Gloomrise Spinner^878:3:3,1081:4:4,3182:1:1,3866:1:1,3931:3:3,273181:3:3^
+264082^1^0^30^30^1412^0.3383^0.0679^1^Broodmother Valraxx^4306:1:4,273658:1:1^
+264083^5^0^28^29^1412^0.3353^0.0947^5^Gloomrise Soldier^1081:2:2,1475:1:1,3174:2:2,5465:2:2^
+264096^4^0^28^29^1412^0.3317^0.0826^4^Gnawed Corpse^273001:2:2^
 274715^1^0^0^0^0^0.0000^0.0000^0^^1529:1:1^
 275044^1^0^0^0^0^0.0000^0.0000^0^^^
 275045^1^0^0^0^0^0.0000^0.0000^0^^4542:1:1^
@@ -61,12 +66,15 @@ GoldScout-export 6^fnaeeez8y0xl^11
 @i^422^Dwarven Mild
 @i^730^Murloc Eye
 @i^770^Pointy Crocolisk Tooth
+@i^878^Fist-sized Spinneret
 @i^929^Healing Potion
 @i^954^Scroll of Strength
 @i^1074^Hard Spider Leg Tip
+@i^1081^Crisp Spider Meat
 @i^1205^Melon Juice
 @i^1206^Moss Agate
 @i^1468^Murloc Fin
+@i^1475^Small Venom Sac
 @i^1478^Scroll of Protection II
 @i^1529^Jade
 @i^1697^Keen Raptor Tooth
@@ -99,13 +107,18 @@ GoldScout-export 6^fnaeeez8y0xl^11
 @i^2841^Bronze Bar
 @i^3039^Short Ash Bow
 @i^3078^Naga Heartpiercer
+@i^3167^Thick Spider Hair
+@i^3174^Spider Ichor
 @i^3180^Flecked Raptor Scale
+@i^3182^Spider's Silk
 @i^3381^Cross-stitched Bracers
 @i^3656^Lambent Scale Shield
 @i^3667^Tender Crocolisk Meat
 @i^3685^Raptor Egg
 @i^3770^Mutton Chop
+@i^3866^Plans: Jade Serpentblade
 @i^3928^Superior Healing Potion
+@i^3931^Poisoned Spider Fang
 @i^4306^Silk Cloth
 @i^4359^Handful of Copper Bolts
 @i^4363^Copper Modulator
@@ -116,6 +129,7 @@ GoldScout-export 6^fnaeeez8y0xl^11
 @i^5137^Bright Eyeball
 @i^5268^Cracked Silithid Shell
 @i^5269^Silithid Ichor
+@i^5465^Small Spider Leg
 @i^5516^Threshadon Fang
 @i^5524^Thick-shelled Clam
 @i^5569^Seaweed
@@ -161,22 +175,28 @@ GoldScout-export 6^fnaeeez8y0xl^11
 @i^262888^Sealed Journeyman's Writ
 @i^270866^Titan Relic
 @i^271100^Thicket Raptor Meat
+@i^273001^Gloomrise Toxin Sample
 @i^273022^Supple Bellyskin Leggings
 @i^273025^Raptorclaw Greaves
 @i^273029^Golemsight Long Gun
 @i^273141^Blueprint: Fishing Rack
+@i^273181^Crystalline Silk
+@i^273658^Bloody Parchment
 @i^273840^Cursed Murloc Eye
 @i^273843^Fallenroot Longbow
 @i^284844^Dragonmaw Dispatch
 @q^422^1:0:0
 @q^730^1:7:1
 @q^770^0:15:0
+@q^878^0:7:0
 @q^929^1:0:0
 @q^954^1:0:0
 @q^1074^0:15:0
+@q^1081^1:7:1
 @q^1205^1:0:0
 @q^1206^2:7:1
 @q^1468^1:7:1
+@q^1475^1:7:1
 @q^1478^1:0:0
 @q^1529^2:7:1
 @q^1697^0:15:0
@@ -209,13 +229,18 @@ GoldScout-export 6^fnaeeez8y0xl^11
 @q^2841^1:7:1
 @q^3039^2:2:0
 @q^3078^3:2:0
+@q^3167^0:15:0
+@q^3174^1:7:1
 @q^3180^0:15:0
+@q^3182^1:7:1
 @q^3381^0:4:0
 @q^3656^2:4:0
 @q^3667^1:7:1
 @q^3685^1:7:1
 @q^3770^1:0:0
+@q^3866^2:9:0
 @q^3928^1:0:0
+@q^3931^0:15:0
 @q^4306^1:7:1
 @q^4359^1:7:1
 @q^4363^1:7:1
@@ -226,6 +251,7 @@ GoldScout-export 6^fnaeeez8y0xl^11
 @q^5137^0:15:0
 @q^5268^0:15:0
 @q^5269^0:15:0
+@q^5465^1:7:1
 @q^5516^0:2:0
 @q^5524^1:7:0
 @q^5569^0:15:0
@@ -271,13 +297,17 @@ GoldScout-export 6^fnaeeez8y0xl^11
 @q^262888^3:0:0
 @q^270866^1:12:0
 @q^271100^1:12:0
+@q^273001^1:12:0
 @q^273022^3:4:0
 @q^273025^3:4:0
 @q^273029^3:2:0
 @q^273141^2:9:0
+@q^273181^1:12:0
+@q^273658^1:15:0
 @q^273840^3:4:0
 @q^273843^3:2:0
 @q^284844^1:12:0
+@m^1412^Mulgore
 @m^1413^The Barrens
 @m^1414^Kalimdor
 @m^1424^Hillsbrad Foothills
@@ -959,5 +989,10 @@ GoldScout-export 6^fnaeeez8y0xl^11
 @a^10617^106:1
 @a^10720^124:3
 @a^10992^84:1
+@a^264079^26:3,46:1
+@a^264081^26:6,46:3
+@a^264082^26:1
+@a^264083^26:2,27:1,46:2
+@a^264096^26:4
 @f^1450^0^296^162^3928:1:1,6358:41:41,8365:25:25,13757:26:26,13758:115:115,13759:1:1,13760:86:86,13881:9:9,13885:1:1^130:22,150:231,170:43
 @l^0^enUS

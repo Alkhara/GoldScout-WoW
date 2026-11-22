@@ -1,5 +1,6 @@
-GoldScout-export 6^vcfh3tpx139b^10
-205^4^0^28^29^1431^0.5928^0.3950^4^Nightbane Dark Runner^1830:1:1^
+GoldScout-export 6^vcfh3tpx139b^11
+205^12^0^28^29^1431^0.6107^0.4195^12^Nightbane Dark Runner^1825:1:1,1830:1:1,5635:2:2^
+206^9^0^29^30^1431^0.7162^0.6841^9^Nightbane Vile Fang^865:1:1,3770:1:1,5637:1:1,7416:1:1^
 212^8^0^29^30^1431^0.3305^0.7382^8^Splinter Fist Warrior^2592:2:3,3770:1:1,4306:1:2^
 423^4^0^15^16^1433^0.2520^0.8015^4^Redridge Mongrel^858:1:1,2589:1:2,2592:2:2,248685:1:1^
 424^1^0^16^17^1433^0.2613^0.7994^1^Redridge Poacher^2589:1:1^
@@ -17,6 +18,7 @@ GoldScout-export 6^vcfh3tpx139b^10
 891^3^0^26^27^1431^0.3583^0.7165^3^Splinter Fist Fire Weaver^4306:1:2,9817:1:1^
 892^4^0^27^28^1431^0.3423^0.6979^4^Splinter Fist Taskmaster^4306:3:4^
 898^3^0^26^27^1431^0.6553^0.3629^3^Nightbane Worgen^1205:1:1,3048:1:1^
+920^8^0^30^31^1431^0.5858^0.7603^8^Nightbane Tainted One^1205:1:1,1831:1:1,9840:1:1^
 1020^2^0^22^23^1437^0.2798^0.4423^2^Mottled Raptor^3685:1:1,6573:1:1,250187:1:1^
 1032^1^0^24^24^1437^0.2769^0.4605^1^Black Ooze^3670:1:1^
 1034^7^0^26^27^1437^0.4817^0.4334^7^Dragonmaw Raider^1785:1:1,3337:4:4,3385:1:1,4306:3:5^
@@ -66,6 +68,7 @@ GoldScout-export 6^vcfh3tpx139b^10
 @i^771^Chipped Boar Tusk
 @i^774^Malachite
 @i^858^Lesser Healing Potion
+@i^865^Leaden Mace of Magic
 @i^887^Pound of Flesh
 @i^929^Healing Potion
 @i^1080^Tough Condor Meat
@@ -88,7 +91,9 @@ GoldScout-export 6^vcfh3tpx139b^10
 @i^1785^Cross-stitched Shoulderpads
 @i^1796^Rawhide Boots
 @i^1821^Warped Blade
+@i^1825^Bulky Bludgeon
 @i^1830^Long Bastard Sword
+@i^1831^Oaken War Staff
 @i^2066^Skull Hatchet
 @i^2138^Sharpened Letter Opener
 @i^2287^Haunch of Meat
@@ -133,6 +138,7 @@ GoldScout-export 6^vcfh3tpx139b^10
 @i^4306^Silk Cloth
 @i^4561^Scalping Tomahawk of Defense
 @i^4577^Compact Shotgun
+@i^4603^Raw Spotted Yellowtail
 @i^4699^Seer's Belt
 @i^4775^Cracked Bill
 @i^4776^Ruffled Feather
@@ -144,28 +150,35 @@ GoldScout-export 6^vcfh3tpx139b^10
 @i^5524^Thick-shelled Clam
 @i^5571^Small Black Pouch
 @i^5635^Sharp Claw
+@i^5637^Large Fang
 @i^6269^Pioneer Trousers of the Monkey
 @i^6308^Raw Bristle Whisker Catfish
 @i^6354^Small Locked Chest
+@i^6357^Sealed Crate
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
 @i^6361^Raw Rainbow Fin Albacore
+@i^6362^Raw Rockscale Cod
 @i^6509^Infantry Belt
 @i^6530^Nightcrawlers
 @i^6573^Defender Boots of the Falcon
 @i^6889^Small Egg
 @i^7074^Chipped Claw
 @i^7109^Pioneer Buckler
+@i^7416^Phalanx Bracers of the Falcon
 @i^8177^Practice Sword
+@i^8365^Raw Mithril Head Trout
 @i^9788^Raider's Belt of the Gorilla
 @i^9809^Superior Tunic of Agility
 @i^9817^Fortified Spaulders of Power
+@i^9840^Banded Girdle of the Boar
 @i^11407^Torn Bear Pelt
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
 @i^21113^Watertight Trunk
 @i^21114^Rumsey Rum Dark
+@i^21228^Mithril Bound Trunk
 @i^211780^Scroll: KWYJIBO
 @i^211784^Scroll: WUBBA WUBBA
 @i^211785^Scroll: CWAL
@@ -192,6 +205,7 @@ GoldScout-export 6^vcfh3tpx139b^10
 @q^771^0:15:0
 @q^774^2:7:1
 @q^858^1:0:0
+@q^865^2:2:0
 @q^887^0:15:0
 @q^929^1:0:0
 @q^1080^1:7:1
@@ -214,7 +228,9 @@ GoldScout-export 6^vcfh3tpx139b^10
 @q^1785^0:4:0
 @q^1796^0:4:0
 @q^1821^0:2:0
+@q^1825^0:2:0
 @q^1830^0:2:0
+@q^1831^0:2:0
 @q^2066^1:2:0
 @q^2138^0:2:0
 @q^2287^1:0:0
@@ -259,6 +275,7 @@ GoldScout-export 6^vcfh3tpx139b^10
 @q^4306^1:7:1
 @q^4561^2:2:0
 @q^4577^2:2:0
+@q^4603^1:7:1
 @q^4699^2:4:0
 @q^4775^0:15:0
 @q^4776^0:15:0
@@ -270,28 +287,35 @@ GoldScout-export 6^vcfh3tpx139b^10
 @q^5524^1:7:0
 @q^5571^1:1:0
 @q^5635^1:7:1
+@q^5637^1:7:1
 @q^6269^2:4:0
 @q^6308^1:7:1
 @q^6354^1:15:0
+@q^6357^1:15:0
 @q^6358^1:7:1
 @q^6359^1:7:1
 @q^6361^1:7:1
+@q^6362^1:7:1
 @q^6509^1:4:0
 @q^6530^1:0:0
 @q^6573^2:4:0
 @q^6889^1:7:1
 @q^7074^0:15:0
 @q^7109^1:4:0
+@q^7416^2:4:0
 @q^8177^1:2:0
+@q^8365^1:7:1
 @q^9788^2:4:0
 @q^9809^2:4:0
 @q^9817^2:4:0
+@q^9840^2:4:0
 @q^11407^1:12:0
 @q^17056^1:15:1
 @q^17057^1:15:0
 @q^17058^1:15:0
 @q^21113^1:15:0
 @q^21114^1:0:0
+@q^21228^1:15:0
 @q^211780^1:0:0
 @q^211784^1:0:0
 @q^211785^1:0:0
@@ -313,6 +337,7 @@ GoldScout-export 6^vcfh3tpx139b^10
 @m^1426^Dun Morogh
 @m^1431^Duskwood
 @m^1433^Redridge Mountains
+@m^1434^Stranglethorn Vale
 @m^1437^Wetlands
 @c^724^
 @c^733^
@@ -1511,7 +1536,8 @@ GoldScout-export 6^vcfh3tpx139b^10
 @c^279981^
 @c^279982^
 @c^286152^
-@a^205^151:1,152:1,171:2
+@a^205^151:2,152:1,171:5,172:1,192:2,193:1
+@a^206^274:6,291:1,294:2
 @a^212^286:6,306:2
 @a^423^305:2,324:2
 @a^424^305:1
@@ -1529,6 +1555,7 @@ GoldScout-export 6^vcfh3tpx139b^10
 @a^891^287:3
 @a^892^266:3,286:1
 @a^898^132:2,153:1
+@a^920^291:2,294:1,311:5
 @a^1020^165:2
 @a^1032^185:1
 @a^1034^148:2,170:1,188:1,190:3
@@ -1562,5 +1589,6 @@ GoldScout-export 6^vcfh3tpx139b^10
 @a^214519^334:1
 @a^260157^214:4,234:3
 @a^271334^213:1
+@f^1434^0^157^171^4603:29:29,6308:2:2,6357:4:4,6358:23:23,6359:22:22,6362:63:63,8365:8:8,21228:6:6^264:12,265:3,285:118,305:24
 @f^1437^0^82^150^3820:1:1,6354:1:1,6358:28:28,6359:7:7,6361:41:41,21113:3:3,21114:1:1^201:4,221:78
 @l^0^enUS
