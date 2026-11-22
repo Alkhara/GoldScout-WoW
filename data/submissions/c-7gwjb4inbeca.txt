@@ -1,4 +1,4 @@
-GoldScout-export 6^7gwjb4inbeca^6
+GoldScout-export 6^7gwjb4inbeca^7
 2473^1^0^40^40^1424^0.8289^0.3261^1^Granistad^4589:1:1^
 2651^2^0^42^43^1425^0.2805^0.5984^2^Witherbark Hideskinner^4338:1:2,4589:1:1,8151:1:1^
 2658^1^0^43^45^1425^0.3313^0.6221^1^Razorbeak Gryphon^4590:1:1^
@@ -6,6 +6,11 @@ GoldScout-export 6^7gwjb4inbeca^6
 2924^6^0^43^44^1425^0.2941^0.6108^6^Silvermane Wolf^4583:2:2,4584:2:2,8146:1:1,12203:3:3,12208:4:4^
 2927^29^0^42^43^1425^0.2890^0.5829^29^Vicious Owlbeast^1645:1:1,3928:2:2,4599:1:1,5117:1:1,5636:2:2,7480:1:1,8146:1:1,9591:18:18,9592:25:25,11417:2:2,12207:5:5^
 2928^20^0^44^45^1425^0.4008^0.5147^20^Primitive Owlbeast^4599:1:1,5117:3:3,9592:14:14,11417:2:2,12207:9:9,213546:1:1^
+5278^10^0^43^45^1444^0.6940^0.4736^10^Sprite Darter^8146:1:1,9589:6:6^
+5304^1^0^45^45^1444^0.5418^0.6792^1^Frayfeather Stagwing^11418:1:1^
+5305^2^0^45^46^1444^0.5433^0.7104^2^Frayfeather Skystormer^4590:1:1,5829:1:1,11417:1:1^
+5306^2^0^47^47^1444^0.5435^0.7181^2^Frayfeather Patriarch^4590:1:1,5829:2:2^
+7584^2^0^44^46^1444^0.5575^0.7087^2^Wandering Forest Walker^4625:1:1,9590:2:2^
 @i^1645^Moonberry Juice
 @i^3928^Superior Healing Potion
 @i^4338^Mageweave Cloth
@@ -14,15 +19,20 @@ GoldScout-export 6^7gwjb4inbeca^6
 @i^4589^Long Elegant Feather
 @i^4590^Curved Yellow Bill
 @i^4599^Cured Ham Steak
+@i^4625^Firebloom
 @i^5117^Vibrant Plume
 @i^5636^Delicate Feather
+@i^5829^Razor-sharp Beak
 @i^7480^Ranger Gloves of the Elder
 @i^8146^Wicked Claw
 @i^8151^Flask of Mojo
 @i^9324^Shadra's Venom
+@i^9589^Encrusted Minerals
+@i^9590^Splintered Log
 @i^9591^Resilient Sinew
 @i^9592^Metallic Fragments
 @i^11417^Feathery Wing
+@i^11418^Hollow Wing Bone
 @i^12203^Red Wolf Meat
 @i^12207^Giant Egg
 @i^12208^Tender Wolf Meat
@@ -35,21 +45,27 @@ GoldScout-export 6^7gwjb4inbeca^6
 @q^4589^1:7:1
 @q^4590^0:15:0
 @q^4599^1:0:0
+@q^4625^1:7:1
 @q^5117^1:12:0
 @q^5636^0:15:0
+@q^5829^0:15:0
 @q^7480^2:4:0
 @q^8146^1:7:1
 @q^8151^1:7:1
 @q^9324^1:12:0
+@q^9589^1:12:0
+@q^9590^1:12:0
 @q^9591^1:12:0
 @q^9592^1:12:0
 @q^11417^0:15:0
+@q^11418^0:15:0
 @q^12203^1:7:1
 @q^12207^1:7:1
 @q^12208^1:7:1
 @q^213546^1:0:0
 @m^1424^Hillsbrad Foothills
 @m^1425^The Hinterlands
+@m^1444^Feralas
 @c^118^
 @c^724^
 @c^733^
@@ -820,4 +836,9 @@ GoldScout-export 6^7gwjb4inbeca^6
 @a^2924^205:1,225:2,246:2,265:1
 @a^2927^204:2,205:8,206:2,207:2,225:1,226:1,245:6,246:3,265:3,266:1
 @a^2928^168:2,188:7,207:3,208:2,227:4,247:2
+@a^5278^173:1,193:6,194:3
+@a^5304^270:1
+@a^5305^270:1,290:1
+@a^5306^290:2
+@a^7584^270:1,291:1
 @l^0^enUS

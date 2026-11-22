@@ -1,4 +1,4 @@
-GoldScout-export 6^aflnkruqxfzo^17
+GoldScout-export 6^aflnkruqxfzo^18
 157^1^0^15^15^1436^0.3561^0.5731^1^Goretusk^723:1:1,731:1:1^
 449^1^0^17^17^1436^0.3688^0.7589^1^Defias Knuckleduster^^
 587^14^0^33^34^1434^0.3083^0.1853^14^Bloodscalp Warrior^1519:7:7,1520:2:2,2592:1:1,2742:1:1,3783:1:1,4306:4:7,15286:1:1^
@@ -34,10 +34,13 @@ GoldScout-export 6^aflnkruqxfzo^17
 1152^8^0^35^36^1434^0.3931^0.3064^8^Snapjaw Crocolisk^770:6:6,3667:2:2,4104:4:4,12037:4:4^
 2271^4^0^31^32^1416^0.1948^0.8077^4^Dalaran Shield Guard^^
 2272^1^0^32^32^1416^0.2405^0.5694^1^Dalaran Theurgist^3786:1:1^
+2349^1^0^24^24^1424^0.8266^0.5347^1^Giant Moss Creeper^1081:1:1^
 2358^4^0^32^33^1416^0.2370^0.5767^4^Dalaran Summoner^1710:1:1,3745:2:2,4306:1:1^
 2359^11^0^32^33^1416^0.2327^0.5623^11^Elemental Slave^2838:4:5,3715:4:4,4553:1:1,4784:6:6,5741:1:3,6616:1:1,8150:4:4^
+2563^1^0^33^33^1417^0.4175^0.6230^1^Plains Creeper^4337:1:1^
 2623^1^0^32^32^1416^0.2409^0.5701^1^Spirit of Old^^
 2667^9^0^36^37^1434^0.3755^0.2905^9^Ward of Laze^^
+2728^1^0^37^37^1418^0.5326^0.5501^1^Feral Crag Coyote^4582:1:1,12203:1:1^
 3560^2^0^37^37^1434^0.2433^0.0982^2^Healing Ward^^
 3630^4^0^15^16^1414^0.5197^0.5489^4^Deviate Coiler^6443:2:2,6444:1:1,6445:1:1,17056:1:1^
 3631^7^0^16^17^1414^0.5254^0.5469^7^Deviate Stinglash^6443:2:2,6444:5:5,6445:2:2^
@@ -234,6 +237,7 @@ GoldScout-export 6^aflnkruqxfzo^17
 @i^4104^Snapjaw Crocolisk Skin
 @i^4106^Tumbled Crystal
 @i^4306^Silk Cloth
+@i^4337^Thick Spider's Silk
 @i^4338^Mageweave Cloth
 @i^4461^Raptor Hide
 @i^4553^Jagged Piece of Stone
@@ -432,6 +436,7 @@ GoldScout-export 6^aflnkruqxfzo^17
 @q^4104^1:12:0
 @q^4106^1:12:0
 @q^4306^1:7:1
+@q^4337^1:7:1
 @q^4338^1:7:1
 @q^4461^1:7:1
 @q^4553^0:15:0
@@ -540,6 +545,9 @@ GoldScout-export 6^aflnkruqxfzo^17
 @m^1412^Mulgore
 @m^1414^Kalimdor
 @m^1416^Alterac Mountains
+@m^1417^Arathi Highlands
+@m^1418^Badlands
+@m^1424^Hillsbrad Foothills
 @m^1434^Stranglethorn Vale
 @m^1436^Westfall
 @m^1440^Ashenvale
@@ -1342,10 +1350,13 @@ GoldScout-export 6^aflnkruqxfzo^17
 @a^1152^108:3,127:5
 @a^2271^204:1,343:1,344:1,363:1
 @a^2272^224:1
+@a^2349^216:1
 @a^2358^204:1,224:1,225:1,244:1
 @a^2359^204:4,224:4,225:2,245:1
+@a^2563^248:1
 @a^2623^224:1
 @a^2667^107:9
+@a^2728^230:1
 @a^3560^24:1,44:1
 @a^3630^210:2,230:2
 @a^3631^210:5,230:2

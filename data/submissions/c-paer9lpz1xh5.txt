@@ -1,4 +1,4 @@
-GoldScout-export 6^paer9lpz1xh5^6
+GoldScout-export 6^paer9lpz1xh5^7
 667^1^0^40^40^1434^0.4684^0.4140^1^Skullsplitter Warrior^1520:1:1,2734:1:1,4338:1:1^
 669^5^0^41^42^1434^0.4592^0.4257^5^Skullsplitter Hunter^1520:2:2,2750:1:1^
 672^1^0^44^44^1434^0.4727^0.4309^1^Skullsplitter Spiritchaser^4338:1:1^
@@ -70,8 +70,18 @@ GoldScout-export 6^paer9lpz1xh5^6
 5425^5^0^41^42^1446^0.5028^0.3367^5^Starving Blisterpaw^9439:3:3,12037:2:2,12208:2:2^
 5426^25^0^44^45^1446^0.4541^0.4018^25^Blisterpaw Hyena^4583:3:3,4584:3:3,9439:18:18,12037:6:6,12203:6:6,12208:7:7,14956:1:1^
 5429^1^0^43^45^1446^0.4579^0.3388^1^Fire Roc^5829:1:1^
-5455^6^0^47^48^1446^0.3576^0.4229^6^Centipaar Wasp^6302:4:4,8587:3:3^
+5455^8^0^47^48^1446^0.3531^0.4307^8^Centipaar Wasp^6302:6:6,8587:3:3^
+5457^2^0^49^50^1446^0.3400^0.4688^2^Centipaar Swarmer^8587:1:1,248698:1:1^
+5458^1^0^48^48^1446^0.3418^0.4794^1^Centipaar Worker^8587:1:1^
 5459^3^0^47^48^1446^0.3777^0.3317^3^Centipaar Tunneler^6300:3:3^
+5471^3^0^45^46^1446^0.4207^0.5953^3^Dunemaul Ogre^4338:1:3^
+5472^6^0^46^47^1446^0.4088^0.5761^6^Dunemaul Enforcer^4338:2:4,4599:1:1^
+5473^2^0^46^47^1446^0.4736^0.6411^2^Dunemaul Ogre Mage^4338:1:3^
+5474^5^0^47^48^1446^0.3953^0.5669^5^Dunemaul Brute^3928:1:1,4338:1:1^
+5475^1^0^48^48^1446^0.4771^0.6540^1^Dunemaul Warlock^4338:1:2^
+5481^4^0^47^48^1446^0.3005^0.6516^4^Thistleshrub Dew Collector^8428:1:1,8430:1:1^
+5485^4^0^49^50^1446^0.2920^0.6541^4^Thistleshrub Rootshaper^8845:1:1,10286:2:2^
+5490^4^0^48^49^1446^0.2886^0.6693^4^Gnarled Thistleshrub^10286:1:1^
 5615^7^0^43^44^1446^0.5991^0.3869^7^Wastewander Rogue^3927:1:1,4306:1:2,4338:1:1,8483:3:3^
 5617^7^0^42^43^1446^0.6014^0.3761^7^Wastewander Shadow Mage^4338:2:3,8483:3:3,14430:1:1^
 5623^2^0^44^45^1446^0.5988^0.3887^2^Wastewander Assassin^3927:1:1,4306:1:2,8483:2:2^
@@ -177,6 +187,8 @@ GoldScout-export 6^paer9lpz1xh5^6
 @i^8151^Flask of Mojo
 @i^8152^Flask of Big Mojo
 @i^8194^Goblin Nutcracker of the Bandit
+@i^8428^Laden Dew Gland
+@i^8430^Empty Dew Gland
 @i^8463^Warchief's Orders
 @i^8483^Wastewander Water Pouch
 @i^8548^Divino-matic Rod
@@ -186,6 +198,7 @@ GoldScout-export 6^paer9lpz1xh5^6
 @i^8707^Gahz'rilla's Electrified Scale
 @i^8723^Caliph Scorpidsting's Head
 @i^8750^Thick Leather Hat
+@i^8845^Ghost Mushroom
 @i^9234^Tiara of the Deep
 @i^9237^Woodpaw Gnoll Mane
 @i^9238^Uncracked Scarab Shell
@@ -202,6 +215,7 @@ GoldScout-export 6^paer9lpz1xh5^6
 @i^9639^The Hand of Antu'sul
 @i^9926^Brigade Boots of the Bandit
 @i^9967^Embossed Plate Gauntlets of the Beast
+@i^10286^Heart of the Wild
 @i^11386^Squishy Basilisk Eye
 @i^11387^Basilisk Heart
 @i^11408^Bear Jaw
@@ -234,6 +248,7 @@ GoldScout-export 6^paer9lpz1xh5^6
 @i^248692^Waylaid Crate: Expert Ore
 @i^248693^Waylaid Crate: Expert Textiles
 @i^248694^Waylaid Crate: Expert Curiosities
+@i^248698^Waylaid Crate: Artisan Textiles
 @i^251464^Plans: Charged Mithril Battleaxe
 @i^252868^Pattern: Skulker's Leather Gauntlets
 @i^255645^Swollen Venom Sac
@@ -315,6 +330,8 @@ GoldScout-export 6^paer9lpz1xh5^6
 @q^8151^1:7:1
 @q^8152^1:7:1
 @q^8194^2:2:0
+@q^8428^1:12:0
+@q^8430^0:15:0
 @q^8463^1:12:0
 @q^8483^1:12:0
 @q^8548^1:0:0
@@ -324,6 +341,7 @@ GoldScout-export 6^paer9lpz1xh5^6
 @q^8707^1:12:0
 @q^8723^1:12:0
 @q^8750^0:4:0
+@q^8845^1:7:1
 @q^9234^1:12:0
 @q^9237^1:12:0
 @q^9238^1:12:0
@@ -340,6 +358,7 @@ GoldScout-export 6^paer9lpz1xh5^6
 @q^9639^3:2:0
 @q^9926^2:4:0
 @q^9967^2:4:0
+@q^10286^1:7:1
 @q^11386^0:15:0
 @q^11387^0:15:0
 @q^11408^0:15:0
@@ -372,6 +391,7 @@ GoldScout-export 6^paer9lpz1xh5^6
 @q^248692^1:0:1
 @q^248693^1:0:1
 @q^248694^1:0:1
+@q^248698^1:0:1
 @q^251464^2:9:0
 @q^252868^3:9:0
 @q^255645^1:7:1
@@ -1327,8 +1347,18 @@ GoldScout-export 6^paer9lpz1xh5^6
 @a^5425^129:1,130:3,149:1
 @a^5426^129:1,148:6,149:7,168:5,169:4,189:2
 @a^5429^129:1
-@a^5455^166:1,167:5
+@a^5455^166:2,167:5,186:1
+@a^5457^186:2
+@a^5458^186:1
 @a^5459^107:2,167:1
+@a^5471^227:1,228:1,269:1
+@a^5472^208:1,227:2,228:2,249:1
+@a^5473^249:2
+@a^5474^227:2,228:3
+@a^5475^269:1
+@a^5481^246:2,265:1,266:1
+@a^5485^245:1,265:2,266:1
+@a^5490^265:3,266:1
 @a^5615^151:5,152:2
 @a^5617^151:3,152:4
 @a^5623^151:1,152:1

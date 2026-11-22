@@ -1,6 +1,9 @@
-GoldScout-export 6^dffcmgqfevu3^4
+GoldScout-export 6^dffcmgqfevu3^5
 94^1^0^5^5^1429^0.4364^0.5708^1^Defias Cutpurse^1369:1:1^
 1853^1^0^0^0^0^0.0000^0.0000^0^^^
+7443^6^0^55^56^1452^0.6151^0.4497^6^Shardtooth Mauler^3730:2:2,11409:2:2,11410:3:3,21928:3:3^
+7444^1^0^54^54^1452^0.5068^0.3917^1^Shardtooth Bear^11411:1:1^
+7445^6^0^57^58^1452^0.5899^0.2302^6^Elder Shardtooth^3730:2:2,8146:1:1,11408:2:2,11409:1:1,11410:1:1,11411:1:1,21928:2:2^
 7451^2^0^55^56^1452^0.5723^0.2858^2^Raging Owlbeast^11420:1:1,13819:1:1,15420:2:5^
 7458^9^0^55^56^1452^0.5761^0.2959^9^Ice Thistle Yeti^8766:2:2,258323:4:4^
 10432^1^0^0^0^0^0.0000^0.0000^0^^12843:1:1,273130:1:2^
@@ -42,6 +45,7 @@ GoldScout-export 6^dffcmgqfevu3^4
 264570^11^0^60^60^2482^0.7303^0.3882^11^Blackthorne Adept^8766:1:1,14047:3:9,273828:1:1^
 @i^1369^Ragged Leather Belt
 @i^1688^Long Soft Tail
+@i^3730^Big Bear Meat
 @i^4557^Fiery Gland
 @i^4580^Sabertooth Fang
 @i^4581^Patch of Fine Fur
@@ -62,6 +66,10 @@ GoldScout-export 6^dffcmgqfevu3^4
 @i^10147^Mighty Armsplints of Nature Protection
 @i^10307^Scroll of Stamina IV
 @i^10369^Imbued Plate Gauntlets
+@i^11408^Bear Jaw
+@i^11409^Bear Flank
+@i^11410^Savage Bear Claw
+@i^11411^Large Bear Bone
 @i^11420^Elegant Writing Tool
 @i^12202^Tiger Meat
 @i^12753^Skin of Shadow
@@ -85,6 +93,7 @@ GoldScout-export 6^dffcmgqfevu3^4
 @i^17683^Book: Gift of the Wild II
 @i^18695^Spellbound Tome
 @i^20520^Dark Rune
+@i^21928^Winterspring Blood Sample
 @i^248695^Waylaid Crate: Earthly Artisan Herbs
 @i^258323^Missing Mail
 @i^273125^Lich's Index Finger
@@ -96,6 +105,7 @@ GoldScout-export 6^dffcmgqfevu3^4
 @i^281018^Scroll: RARE SERVICHI RADAR
 @q^1369^0:4:0
 @q^1688^0:15:0
+@q^3730^1:7:1
 @q^4557^0:15:0
 @q^4580^0:15:0
 @q^4581^0:15:0
@@ -116,6 +126,10 @@ GoldScout-export 6^dffcmgqfevu3^4
 @q^10147^2:4:0
 @q^10307^1:0:0
 @q^10369^2:4:0
+@q^11408^0:15:0
+@q^11409^0:15:0
+@q^11410^0:15:0
+@q^11411^0:2:0
 @q^11420^0:15:0
 @q^12202^1:7:1
 @q^12753^2:12:0
@@ -139,6 +153,7 @@ GoldScout-export 6^dffcmgqfevu3^4
 @q^17683^3:9:0
 @q^18695^3:4:0
 @q^20520^2:7:1
+@q^21928^1:12:0
 @q^248695^1:0:1
 @q^258323^1:12:0
 @q^273125^2:15:1
@@ -641,6 +656,9 @@ GoldScout-export 6^dffcmgqfevu3^4
 @c^279972^
 @c^279973^
 @a^94^228:1
+@a^7443^131:1,192:5
+@a^7444^150:1
+@a^7445^71:1,91:4,92:1
 @a^7451^111:2
 @a^7458^111:4,131:5
 @a^249490^207:1,243:1,263:1
