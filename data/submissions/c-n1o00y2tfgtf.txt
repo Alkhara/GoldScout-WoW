@@ -1,4 +1,4 @@
-GoldScout-export 6^n1o00y2tfgtf^10
+GoldScout-export 6^n1o00y2tfgtf^11
 3100^15^0^8^9^1411^0.5426^0.1402^15^Elder Mottled Boar^769:13:13,771:5:5,3171:4:4,15005:1:1^
 3108^1^0^10^10^1411^0.5735^0.1515^1^Encrusted Surf Crawler^4873:1:1^
 3123^7^0^8^10^1411^0.5481^0.1436^7^Bloodtalon Scythemaw^4563:1:1,4877:5:5^
@@ -43,6 +43,10 @@ GoldScout-export 6^n1o00y2tfgtf^10
 6494^1^0^13^13^1413^0.6371^0.4507^1^Tazan^^
 6606^1^0^16^16^1413^0.5635^0.0750^1^Overseer Glibby^^
 209797^1^0^20^20^1413^0.6514^0.3940^1^Bruuz^5567:1:1,253710:1:1^
+267006^10^0^11^12^1420^0.6893^0.6470^10^Dark Neophyte^2589:4:6,2777:1:1,275851:5:5^
+275437^10^0^10^12^1420^0.6941^0.6430^10^Dark Enforcer^118:1:1,159:1:1,1502:1:1,1514:1:1,2589:3:7,2961:1:1,275851:2:2^
+@i^118^Minor Healing Potion
+@i^159^Refreshing Spring Water
 @i^414^Dalaran Sharp
 @i^769^Chunk of Boar Meat
 @i^771^Chipped Boar Tusk
@@ -52,6 +56,7 @@ GoldScout-export 6^n1o00y2tfgtf^10
 @i^1179^Ice Cold Milk
 @i^1206^Moss Agate
 @i^1210^Shadowgem
+@i^1502^Warped Leather Belt
 @i^1504^Warped Leather Bracers
 @i^1509^Warped Leather Vest
 @i^1514^Rusty Warhammer
@@ -65,6 +70,7 @@ GoldScout-export 6^n1o00y2tfgtf^10
 @i^2592^Wool Cloth
 @i^2777^Feeble Shortbow
 @i^2778^Cheap Blunderbuss
+@i^2961^Burnt Leather Vest
 @i^3171^Broken Boar Tusk
 @i^3180^Flecked Raptor Scale
 @i^3282^Battle Chain Pants
@@ -135,7 +141,10 @@ GoldScout-export 6^n1o00y2tfgtf^10
 @i^248683^Waylaid Crate: Apprentice Ore
 @i^248684^Waylaid Crate: Apprentice Textiles
 @i^253710^Bruuz's Dorsal Fin
+@i^275851^Necrotic Crystal Fragment
 @i^285351^Foreman's Enforcers
+@q^118^1:0:0
+@q^159^1:0:0
 @q^414^1:0:0
 @q^769^1:7:1
 @q^771^0:15:0
@@ -145,6 +154,7 @@ GoldScout-export 6^n1o00y2tfgtf^10
 @q^1179^1:0:0
 @q^1206^2:7:1
 @q^1210^2:7:1
+@q^1502^0:4:0
 @q^1504^0:4:0
 @q^1509^0:4:0
 @q^1514^0:2:0
@@ -158,6 +168,7 @@ GoldScout-export 6^n1o00y2tfgtf^10
 @q^2592^1:7:1
 @q^2777^0:2:0
 @q^2778^0:2:0
+@q^2961^2:4:0
 @q^3171^0:15:0
 @q^3180^0:15:0
 @q^3282^2:4:0
@@ -228,9 +239,11 @@ GoldScout-export 6^n1o00y2tfgtf^10
 @q^248683^1:0:1
 @q^248684^1:0:1
 @q^253710^1:12:0
+@q^275851^1:12:0
 @q^285351^2:4:0
 @m^1411^Durotar
 @m^1413^The Barrens
+@m^1420^Tirisfal Glades
 @m^1454^Orgrimmar
 @c^724^
 @c^733^
@@ -1556,6 +1569,8 @@ GoldScout-export 6^n1o00y2tfgtf^10
 @a^6494^192:1
 @a^6606^31:1
 @a^209797^153:1
+@a^267006^253:6,273:3,274:1
+@a^275437^253:6,254:1,273:2,274:1
 @f^1413^0^4^30^6303:1:1,6358:1:1,20708:2:2^152:2,192:2
 @f^1454^0^109^75^858:1:1,6289:73:73,6291:14:14,6308:20:20,6310:1:1^113:109
 @l^0^enUS
