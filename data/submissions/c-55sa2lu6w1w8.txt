@@ -1,7 +1,9 @@
-GoldScout-export 6^55sa2lu6w1w8^12
+GoldScout-export 6^55sa2lu6w1w8^13
+48^7^0^21^22^1431^0.7949^0.7111^7^Skeletal Warrior^2592:2:3,2794:1:1^
 95^27^0^11^12^1436^0.4696^0.2035^27^Defias Smuggler^829:10:10,1497:1:1,2215:1:1,2455:1:1,2589:14:30,2778:2:2,2975:1:1,3013:1:1,7997:1:1,9754:1:1^
 114^20^0^14^15^1436^0.5069^0.2241^20^Harvest Watcher^732:10:10,814:3:3,1274:5:5,1512:1:1,2763:1:1,4361:1:1,4363:2:2,255007:7:7^
 154^1^0^17^17^1436^0.5761^0.5356^1^Greater Fleshripper^6889:1:1^
+203^7^0^22^23^1431^0.8057^0.7092^7^Skeletal Mage^1751:1:1,1795:1:1,2378:3:3,2589:1:2,2592:1:1,4306:1:1,9818:1:1^
 345^1^0^24^24^1433^0.1300^0.4715^1^Bellygrub^2296:1:1,3172:1:1,3631:1:1^
 422^5^0^18^19^1433^0.4289^0.6767^5^Murloc Flesheater^730:1:1,954:1:1,1467:1:1,1468:1:1,5523:4:4^
 423^11^0^15^16^1433^0.2135^0.7704^11^Redridge Mongrel^1212:2:2,1741:1:1,2589:1:1,2592:1:2^
@@ -15,6 +17,7 @@ GoldScout-export 6^55sa2lu6w1w8^12
 485^5^0^20^21^1433^0.6961^0.8122^5^Blackrock Outrunner^2287:1:1,2589:1:2,3014:2:2^
 502^5^0^15^15^1436^0.4959^0.1943^5^Benny Blaanco^829:2:2,2589:2:3^
 504^21^0^12^13^1436^0.4675^0.2175^21^Defias Trapper^414:1:1,829:3:3,1179:1:1,1734:1:1,2215:1:1,2589:7:18,3013:2:2,6344:1:1^
+511^1^0^26^26^1431^0.8031^0.7078^1^Insane Ghoul^1946:1:1^
 547^8^0^16^17^1433^0.1351^0.5170^8^Great Goretusk^723:3:3,769:8:15,2296:4:4,3172:2:2^
 548^12^0^17^18^1433^0.4423^0.7076^12^Murloc Minor Tidecaller^730:5:5,1467:4:4,1468:7:7,5523:1:1,5784:1:1^
 590^1^0^13^13^1436^0.4937^0.2089^1^Defias Looter^^
@@ -134,11 +137,13 @@ GoldScout-export 6^55sa2lu6w1w8^12
 @i^1739^Laced Mail Boots
 @i^1741^Laced Cloak
 @i^1749^Linked Chain Cloak
+@i^1751^Linked Chain Pants
 @i^1767^Canvas Gloves
 @i^1787^Patched Leather Belt
 @i^1788^Patched Leather Boots
 @i^1790^Patched Cloak
 @i^1791^Patched Leather Gloves
+@i^1795^Rawhide Belt
 @i^1796^Rawhide Boots
 @i^1800^Rawhide Pants
 @i^1811^Blunt Claymore
@@ -147,11 +152,13 @@ GoldScout-export 6^55sa2lu6w1w8^12
 @i^1818^Standard Claymore
 @i^1821^Warped Blade
 @i^1823^Bludgeoning Cudgel
+@i^1946^Mary's Looking Glass
 @i^2215^Wooden Shield
 @i^2216^Simple Buckler
 @i^2251^Gooey Spider Leg
 @i^2287^Haunch of Meat
 @i^2296^Great Goretusk Snout
+@i^2378^Skeleton Finger
 @i^2449^Earthroot
 @i^2455^Minor Mana Potion
 @i^2589^Linen Cloth
@@ -162,6 +169,7 @@ GoldScout-export 6^55sa2lu6w1w8^12
 @i^2764^Small Dagger
 @i^2765^Hunting Knife
 @i^2778^Cheap Blunderbuss
+@i^2794^An Old History Book
 @i^2835^Rough Stone
 @i^2836^Coarse Stone
 @i^2856^Iron Pike
@@ -238,6 +246,7 @@ GoldScout-export 6^55sa2lu6w1w8^12
 @i^9451^Bubbling Water
 @i^9754^Nomad Cloak
 @i^9779^Bandit Cloak of Spirit
+@i^9818^Fortified Chain of the Whale
 @i^11406^Rotting Bear Carcass
 @i^12220^Intact Elemental Bracer
 @i^14157^Pagan Mantle
@@ -295,11 +304,13 @@ GoldScout-export 6^55sa2lu6w1w8^12
 @q^1739^0:4:0
 @q^1741^0:4:0
 @q^1749^0:4:0
+@q^1751^0:4:0
 @q^1767^0:4:0
 @q^1787^0:4:0
 @q^1788^0:4:0
 @q^1790^0:4:0
 @q^1791^0:4:0
+@q^1795^0:4:0
 @q^1796^0:4:0
 @q^1800^0:4:0
 @q^1811^0:2:0
@@ -308,11 +319,13 @@ GoldScout-export 6^55sa2lu6w1w8^12
 @q^1818^0:2:0
 @q^1821^0:2:0
 @q^1823^0:2:0
+@q^1946^1:12:0
 @q^2215^0:4:0
 @q^2216^0:4:0
 @q^2251^1:7:1
 @q^2287^1:0:0
 @q^2296^1:7:0
+@q^2378^1:12:0
 @q^2449^1:7:1
 @q^2455^1:0:0
 @q^2589^1:7:1
@@ -323,6 +336,7 @@ GoldScout-export 6^55sa2lu6w1w8^12
 @q^2764^0:2:0
 @q^2765^0:2:0
 @q^2778^0:2:0
+@q^2794^1:12:0
 @q^2835^1:7:1
 @q^2836^1:7:1
 @q^2856^1:12:0
@@ -399,6 +413,7 @@ GoldScout-export 6^55sa2lu6w1w8^12
 @q^9451^1:0:0
 @q^9754^1:4:0
 @q^9779^2:4:0
+@q^9818^2:4:0
 @q^11406^0:15:0
 @q^12220^1:12:0
 @q^14157^1:4:0
@@ -421,6 +436,7 @@ GoldScout-export 6^55sa2lu6w1w8^12
 @q^277917^1:12:0
 @q^279276^1:0:0
 @q^280911^1:12:0
+@m^1431^Duskwood
 @m^1432^Loch Modan
 @m^1433^Redridge Mountains
 @m^1436^Westfall
@@ -593,9 +609,11 @@ GoldScout-export 6^55sa2lu6w1w8^12
 @c^279981^
 @c^279982^
 @c^286152^
+@a^48^276:3,295:3,296:1
 @a^95^68:2,69:17,70:1,88:2,89:2,108:3
 @a^114^69:1,89:4,90:13,110:1,130:1
 @a^154^211:1
+@a^203^275:2,276:1,295:1,296:3
 @a^345^182:1
 @a^422^207:1,288:2,289:2
 @a^423^242:1,261:1,262:1,304:1,305:2,324:2,325:3
@@ -609,6 +627,7 @@ GoldScout-export 6^55sa2lu6w1w8^12
 @a^485^313:1,314:1,333:1,334:2
 @a^502^69:5
 @a^504^68:1,69:8,88:3,89:5,90:1,108:1,109:1,169:1
+@a^511^296:1
 @a^547^182:3,202:2,222:2,223:1
 @a^548^268:1,269:1,288:6,289:4
 @a^590^89:1

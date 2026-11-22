@@ -1,30 +1,83 @@
-GoldScout-export 6^4ow70gl8crzf^3
+GoldScout-export 6^4ow70gl8crzf^4
+740^15^0^34^35^1435^0.1346^0.6218^15^Adolescent Whelp^4402:1:1^
+741^11^0^35^36^1435^0.1327^0.6417^11^Dreaming Whelp^4402:1:1,5637:1:1^
+767^11^0^36^37^1435^0.2437^0.5283^11^Swamp Jaguar^1686:2:2,1688:9:9,5637:1:1^
+832^1^0^19^19^1436^0.4263^0.4210^1^Dust Devil^4576:1:1,7069:1:1^
+858^10^0^36^37^1435^0.2447^0.5661^10^Sorrow Spinner^1074:1:1,4337:1:1,4585:3:3,10285:1:1,12205:5:5^
+1084^9^0^35^36^1435^0.2693^0.5230^9^Young Sawtooth Crocolisk^770:6:6,3667:2:2,12037:4:4^
 4113^1^0^28^29^1441^0.0924^0.2107^1^Gravelsnout Digger^4306:1:2,4538:1:1^
 4119^1^0^29^29^1441^0.1931^0.3931^1^Elder Cloud Serpent^6826:1:1,17056:1:1^
 4124^2^0^27^27^1441^0.1692^0.3377^2^Needles Cougar^5136:1:1,5137:1:1^
+4140^1^0^31^31^1441^0.7659^0.5478^1^Scorpid Reaver^^
+4142^9^0^30^31^1441^0.7693^0.5522^9^Sparkleshell Tortoise^3712:3:3,4555:1:1,4556:4:4,6308:2:3^
+4143^6^0^34^35^1441^0.8225^0.5448^6^Sparkleshell Snapper^3712:1:1,4555:1:1,4556:4:4,6362:1:2,8188:1:1^
+4147^2^0^30^30^1441^0.7595^0.5487^2^Saltstone Basilisk^^
 4249^3^0^28^29^1441^0.1251^0.2662^3^Pesterhide Snarler^3402:2:2,279472:2:2^
+9377^1^0^33^33^1441^0.7506^0.5523^1^Swirling Vortex^^
+@i^770^Pointy Crocolisk Tooth
+@i^1074^Hard Spider Leg Tip
+@i^1686^Bristly Whisker
+@i^1688^Long Soft Tail
 @i^3402^Soft Patch of Fur
+@i^3667^Tender Crocolisk Meat
+@i^3712^Turtle Meat
 @i^4306^Silk Cloth
+@i^4337^Thick Spider's Silk
+@i^4402^Small Flame Sac
 @i^4538^Snapvine Watermelon
+@i^4555^Thick Scaly Tail
+@i^4556^Speckled Shell Fragment
+@i^4576^Light Bow
+@i^4585^Dripping Spider Mandible
 @i^5136^Torn Furry Ear
 @i^5137^Bright Eyeball
+@i^5637^Large Fang
+@i^6308^Raw Bristle Whisker Catfish
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
 @i^6361^Raw Rainbow Fin Albacore
+@i^6362^Raw Rockscale Cod
 @i^6826^Brilliant Scale
+@i^7069^Elemental Air
+@i^8188^Explosive Shotgun
+@i^10285^Shadow Silk
+@i^12037^Mystery Meat
+@i^12205^White Spider Meat
 @i^17056^Light Feather
 @i^279472^Pristine Pesterhide Pelt
+@q^770^0:15:0
+@q^1074^0:15:0
+@q^1686^0:15:0
+@q^1688^0:15:0
 @q^3402^0:15:0
+@q^3667^1:7:1
+@q^3712^1:7:1
 @q^4306^1:7:1
+@q^4337^1:7:1
+@q^4402^1:7:1
 @q^4538^1:0:0
+@q^4555^0:15:0
+@q^4556^0:15:0
+@q^4576^2:2:0
+@q^4585^0:15:0
 @q^5136^0:15:0
 @q^5137^0:15:0
+@q^5637^1:7:1
+@q^6308^1:7:1
 @q^6358^1:7:1
 @q^6359^1:7:1
 @q^6361^1:7:1
+@q^6362^1:7:1
 @q^6826^0:15:0
+@q^7069^1:7:1
+@q^8188^2:2:0
+@q^10285^1:7:1
+@q^12037^1:7:1
+@q^12205^1:7:1
 @q^17056^1:15:1
 @q^279472^1:12:0
+@m^1435^Swamp of Sorrows
+@m^1436^Westfall
 @m^1437^Wetlands
 @m^1441^Thousand Needles
 @c^2840^
@@ -48,9 +101,20 @@ GoldScout-export 6^4ow70gl8crzf^3
 @c^279965^
 @c^279966^
 @c^279967^
+@a^740^222:2,223:1,242:10,262:2
+@a^741^222:1,242:4,243:1,262:4,263:1
+@a^767^144:1,164:2,165:1,224:3,225:1,244:1,245:2
+@a^832^168:1
+@a^858^164:1,185:1,224:4,225:2,245:2
+@a^1084^184:1,186:1,204:2,205:3,225:2
 @a^4113^81:1
 @a^4119^143:1
 @a^4124^102:1,143:1
+@a^4140^215:1
+@a^4142^214:1,215:3,216:1,234:1,235:2,236:1
+@a^4143^216:4,236:2
+@a^4147^215:1,235:1
 @a^4249^81:1,102:1,122:1
+@a^9377^235:1
 @f^1437^0^3^98^6358:1:1,6359:1:1,6361:1:1^241:3
 @l^0^enUS

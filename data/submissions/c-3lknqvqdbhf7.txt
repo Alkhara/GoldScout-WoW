@@ -1,5 +1,10 @@
-GoldScout-export 6^3lknqvqdbhf7^7
+GoldScout-export 6^3lknqvqdbhf7^8
 1718^1^0^3^4^1426^0.3536^0.6461^1^Rockjaw Raider^^
+5272^1^0^45^45^1444^0.5347^0.4775^1^Grizzled Ironfur Bear^^
+5287^1^0^43^44^1444^0.5347^0.4775^1^Longtooth Howler^12208:1:1^
+5292^8^0^43^44^1444^0.5301^0.5706^8^Feral Scar Yeti^8973:1:1^
+5293^20^0^45^46^1444^0.5204^0.5998^20^Hulking Feral Scar^1645:1:1,4599:1:1,8146:1:1^
+5295^11^0^44^45^1444^0.5202^0.5891^11^Enraged Feral Scar^1645:1:1,3942:1:1,8973:1:1,11973:1:1^
 5308^2^0^44^46^1444^0.5702^0.4797^2^Rogue Vale Screecher^6826:2:2^
 5331^9^0^42^43^1444^0.2789^0.5273^9^Hatecrest Warrior^7973:2:2,9247:3:3,12042:1:1,17058:1:1^
 5332^1^0^41^41^1444^0.2921^0.5520^1^Hatecrest Wave Rider^9247:1:1^
@@ -7,6 +12,7 @@ GoldScout-export 6^3lknqvqdbhf7^7
 5335^11^0^41^42^1444^0.2846^0.5262^11^Hatecrest Screamer^7973:3:3,9247:6:6,17058:6:6^
 5336^2^1^43^44^1444^0.2797^0.7008^2^Hatecrest Sorceress^4603:2:4,17058:1:1^
 5337^2^0^42^43^1444^0.2943^0.5586^2^Hatecrest Siren^17058:2:2^
+5346^1^0^48^48^1444^0.5182^0.6069^1^Bloodroar the Stalker^7528:1:1^
 5615^9^0^43^44^1446^0.6117^0.3603^9^Wastewander Rogue^4005:1:1,4023:1:1,4306:1:1,4338:3:5,8483:4:4^
 5616^10^0^40^41^1446^0.6352^0.3168^10^Wastewander Thief^1645:1:1,4306:1:2,4338:4:5,8483:4:4^
 5617^8^0^42^43^1446^0.6063^0.3495^8^Wastewander Shadow Mage^3927:2:2,3964:1:1,8483:2:2^
@@ -36,6 +42,8 @@ GoldScout-export 6^3lknqvqdbhf7^7
 8120^1^0^0^0^0^0.0000^0.0000^0^^1608:1:1^
 8127^1^0^0^0^0^0.0000^0.0000^0^^9641:1:1^
 8136^1^0^47^47^1444^0.2858^0.7065^1^Lord Shalzaru^4020:1:1,7973:1:1,9248:1:1^
+11440^0^2^53^54^0^0.0000^0.0000^0^Gordok Enforcer^^
+11443^0^1^52^53^0^0.0000^0.0000^0^Gordok Ogre-Mage^^
 246993^1^0^0^0^1416^0.0000^0.0000^0^^262889:1:1^
 247001^1^0^0^0^1416^0.0000^0.0000^0^^6438:1:1^
 247003^1^0^0^0^1416^0.0000^0.0000^0^^1755:1:1,276160:1:1^
@@ -46,6 +54,7 @@ GoldScout-export 6^3lknqvqdbhf7^7
 @i^1755^Reinforced Chain Boots
 @i^3927^Fine Aged Cheddar
 @i^3941^Crochet Pants
+@i^3942^Crochet Shoulderpads
 @i^3964^Thick Cloak
 @i^3967^Thick Leather Shoulderpads
 @i^4005^Overlinked Chain Pants
@@ -53,17 +62,21 @@ GoldScout-export 6^3lknqvqdbhf7^7
 @i^4023^Fine Pointed Dagger
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
+@i^4599^Cured Ham Steak
 @i^4603^Raw Spotted Yellowtail
 @i^6300^Husk Fragment
 @i^6302^Delicate Insect Wing
 @i^6438^Dull Elemental Bracer
 @i^6826^Brilliant Scale
+@i^7528^Cabalist Leggings of the Eagle
 @i^7973^Big-mouth Clam
+@i^8146^Wicked Claw
 @i^8483^Wastewander Water Pouch
 @i^8548^Divino-matic Rod
 @i^8707^Gahz'rilla's Electrified Scale
 @i^8723^Caliph Scorpidsting's Head
 @i^8750^Thick Leather Hat
+@i^8973^Thick Yeti Hide
 @i^9234^Tiara of the Deep
 @i^9238^Uncracked Scarab Shell
 @i^9242^Ancient Tablet
@@ -81,7 +94,9 @@ GoldScout-export 6^3lknqvqdbhf7^7
 @i^9641^Lifeblood Amulet
 @i^10660^First Mosh'aru Tablet
 @i^10661^Second Mosh'aru Tablet
+@i^11973^Hematite Link of Concentration
 @i^12042^Marsh Chain of the Prophet
+@i^12208^Tender Wolf Meat
 @i^12693^Plans: Thorium Boots
 @i^14257^Lunar Leggings of the Physician
 @i^14432^Windchaser Amice
@@ -107,6 +122,7 @@ GoldScout-export 6^3lknqvqdbhf7^7
 @q^1755^0:4:0
 @q^3927^1:0:0
 @q^3941^0:4:0
+@q^3942^0:4:0
 @q^3964^0:4:0
 @q^3967^0:4:0
 @q^4005^0:4:0
@@ -114,17 +130,21 @@ GoldScout-export 6^3lknqvqdbhf7^7
 @q^4023^0:2:0
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4599^1:0:0
 @q^4603^1:7:1
 @q^6300^0:15:0
 @q^6302^0:15:0
 @q^6438^0:15:0
 @q^6826^0:15:0
+@q^7528^2:4:0
 @q^7973^1:7:0
+@q^8146^1:7:1
 @q^8483^1:12:0
 @q^8548^1:0:0
 @q^8707^1:12:0
 @q^8723^1:12:0
 @q^8750^0:4:0
+@q^8973^1:12:0
 @q^9234^1:12:0
 @q^9238^1:12:0
 @q^9242^0:15:0
@@ -142,7 +162,9 @@ GoldScout-export 6^3lknqvqdbhf7^7
 @q^9641^3:4:0
 @q^10660^1:12:0
 @q^10661^1:12:0
+@q^11973^2:4:0
 @q^12042^2:4:0
+@q^12208^1:7:1
 @q^12693^2:9:0
 @q^14257^2:4:0
 @q^14432^2:4:0
@@ -378,6 +400,11 @@ GoldScout-export 6^3lknqvqdbhf7^7
 @c^279982^
 @c^286152^
 @a^1718^247:1
+@a^5272^190:1
+@a^5287^190:1
+@a^5292^230:7,231:1
+@a^5293^230:8,250:12
+@a^5295^230:11
 @a^5308^190:1,192:1
 @a^5331^185:2,205:5,225:1,226:1
 @a^5332^225:1
@@ -385,6 +412,7 @@ GoldScout-export 6^3lknqvqdbhf7^7
 @a^5335^205:11
 @a^5336^265:1,285:1
 @a^5337^225:2
+@a^5346^250:1
 @a^5615^132:3,151:4,152:2
 @a^5616^112:3,132:7
 @a^5617^112:1,132:2,151:3,152:2

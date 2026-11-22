@@ -1,4 +1,4 @@
-GoldScout-export 6^ct7wyp240v8u^18
+GoldScout-export 6^ct7wyp240v8u^19
 232^1^0^23^23^1424^0.3331^0.3470^1^Farmer Ray^929:1:1,2592:1:1,4538:1:1^
 1111^5^0^21^22^1437^0.4995^0.6075^5^Leech Stalker^878:2:2,1081:2:2,2251:1:1,3174:1:1,6585:1:1^
 1527^1^0^8^8^1420^0.6818^0.4211^1^Hungering Dead^2589:1:1^
@@ -52,6 +52,10 @@ GoldScout-export 6^ct7wyp240v8u^18
 2451^1^0^25^25^1424^0.3564^0.4688^1^Farmer Kalaba^1485:1:1,4538:1:1^
 2503^5^0^27^28^1424^0.2942^0.5488^5^Hillsbrad Foreman^2592:2:4,11983:1:1^
 2559^1^0^30^31^1417^0.6324^0.4650^1^Highland Strider^1696:1:1,4461:1:1,4512:1:1,12184:1:1^
+2562^2^0^32^33^1417^0.3299^0.4559^2^Boulderfist Ogre^4306:1:1^
+2563^14^0^32^33^1417^0.4500^0.5799^14^Plains Creeper^878:2:2,1074:5:5,1081:7:7,2251:3:3,3182:3:3,4337:1:1,4585:2:2,278225:7:7^
+2564^1^0^33^34^1417^0.3277^0.4312^1^Boulderfist Enforcer^^
+2592^4^0^38^39^1417^0.3644^0.6068^4^Rumbling Exile^4553:3:3,4784:2:2,7067:1:1,7912:3:5,8150:2:2^
 2623^3^0^32^33^1416^0.1954^0.8971^3^Spirit of Old^^
 2628^2^0^33^33^1416^0.2269^0.5743^2^Dalaran Worker^4306:2:4^
 2762^1^0^38^38^1417^0.5309^0.5057^1^Thundering Exile^4480:1:1^
@@ -440,6 +444,7 @@ GoldScout-export 6^ct7wyp240v8u^18
 @i^4075^Mail Combat Gauntlets
 @i^4093^Large Basilisk Tail
 @i^4306^Silk Cloth
+@i^4337^Thick Spider's Silk
 @i^4338^Mageweave Cloth
 @i^4346^Pattern: Heavy Woolen Cloak
 @i^4377^Heavy Blasting Powder
@@ -541,6 +546,7 @@ GoldScout-export 6^ct7wyp240v8u^18
 @i^7710^Loksey's Training Stick
 @i^7711^Robe of Doan
 @i^7713^Illusionary Rod
+@i^7912^Solid Stone
 @i^7990^Plans: Heavy Mithril Helm
 @i^8150^Deeprock Salt
 @i^8178^Training Sword of the Wolf
@@ -664,6 +670,7 @@ GoldScout-export 6^ct7wyp240v8u^18
 @i^275997^Cracked Sentry Core
 @i^276158^Crystallized Shard
 @i^276160^Mana Fragment
+@i^278225^Surgical Spidersilk
 @i^279186^Stormheart's Still-beating Heart
 @i^284844^Dragonmaw Dispatch
 @i^286259^Faintly Glowing Bone
@@ -825,6 +832,7 @@ GoldScout-export 6^ct7wyp240v8u^18
 @q^4075^2:4:0
 @q^4093^0:15:0
 @q^4306^1:7:1
+@q^4337^1:7:1
 @q^4338^1:7:1
 @q^4346^2:9:0
 @q^4377^1:7:1
@@ -926,6 +934,7 @@ GoldScout-export 6^ct7wyp240v8u^18
 @q^7710^3:2:0
 @q^7711^2:4:0
 @q^7713^3:2:0
+@q^7912^1:7:1
 @q^7990^2:9:0
 @q^8150^1:7:1
 @q^8178^2:2:0
@@ -1049,6 +1058,7 @@ GoldScout-export 6^ct7wyp240v8u^18
 @q^275997^1:12:0
 @q^276158^0:15:0
 @q^276160^0:15:0
+@q^278225^1:12:0
 @q^279186^1:12:0
 @q^284844^1:12:0
 @q^286259^1:12:0
@@ -2958,6 +2968,10 @@ GoldScout-export 6^ct7wyp240v8u^18
 @a^2451^187:1
 @a^2503^205:1,206:3,225:1
 @a^2559^192:1
+@a^2562^166:1,186:1
+@a^2563^187:1,188:1,191:1,206:1,211:1,247:1,248:4,249:3,250:1
+@a^2564^166:1
+@a^2592^247:4
 @a^2623^343:2,364:1
 @a^2628^224:2
 @a^2762^210:1
