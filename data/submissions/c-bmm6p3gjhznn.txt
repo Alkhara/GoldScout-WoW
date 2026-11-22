@@ -1,4 +1,4 @@
-GoldScout-export 6^bmm6p3gjhznn^25
+GoldScout-export 6^bmm6p3gjhznn^26
 232^1^0^23^23^1424^0.3456^0.3496^1^Ray le fermier^3692:1:1^
 588^7^0^34^35^1434^0.2354^0.1298^7^Eclaireur Bloodscalp^2725:1:1,2742:1:1,3771:1:1,3915:1:1,4306:4:5^
 595^7^0^34^35^1434^0.2431^0.1338^7^Chasseur Bloodscalp^2592:1:2,2732:1:1,3771:1:1,3915:2:2,4306:1:2^
@@ -215,7 +215,19 @@ GoldScout-export 6^bmm6p3gjhznn^25
 12876^1^0^0^0^0^0.0000^0.0000^0^^16782:1:1,251354:1:1^
 185333^1^0^22^22^1421^0.6352^0.6541^1^Avelina Lilly^^
 259897^1^0^25^25^1421^0.4910^0.8690^1^Vieil Oeil-de-feu^^
+260322^1^0^0^0^0^0.0000^0.0000^0^^273022:1:1^
+260325^1^0^0^0^0^0.0000^0.0000^0^^271100:1:2^
+260326^1^0^0^0^0^0.0000^0.0000^0^^270866:1:1,273029:1:1^
+260797^3^0^0^0^0^0.0000^0.0000^0^^770:2:2,1705:1:1,12037:1:1^
+260800^3^0^0^0^0^0.0000^0.0000^0^^2221:1:1,271100:2:2^
+260801^1^0^0^0^0^0.0000^0.0000^0^^1697:1:1,3685:1:1^
+260802^1^0^0^0^0^0.0000^0.0000^0^^1697:1:1^
+260803^1^0^27^27^1437^0.5083^0.6118^1^Araignée des hautes-terres^2251:1:1^
+260804^1^0^0^0^0^0.0000^0.0000^0^^4633:1:1^
 268623^1^0^23^23^1413^0.4889^0.7728^1^Pilleur indigné^2219:1:1^
+274715^1^0^0^0^0^0.0000^0.0000^0^^770:1:1,3667:1:1^
+275044^2^0^0^0^0^0.0000^0.0000^0^^^
+275046^1^0^0^0^0^0.0000^0.0000^0^^284844:1:1^
 @i^414^Dalaran piquant
 @i^422^Caprice des nains
 @i^730^Oeil de murloc
@@ -245,9 +257,11 @@ GoldScout-export 6^bmm6p3gjhznn^25
 @i^1687^Griffe rétractile
 @i^1688^Longue queue soyeuse
 @i^1696^Griffe de raptor
+@i^1697^Dent de raptor
 @i^1701^Griffe de basilic
 @i^1702^Epine dorsale intacte de basilic
 @i^1703^Queue de basilic de cristal
+@i^1705^Pierre de lune inférieure
 @i^1708^Nectar sucré
 @i^1740^Brassards en mailles entrelacées
 @i^1742^Gants en mailles entrelacées
@@ -276,7 +290,9 @@ GoldScout-export 6^bmm6p3gjhznn^25
 @i^2215^Bouclier en bois
 @i^2217^Bouclier rectangulaire
 @i^2219^Petit bouclier rond
+@i^2221^Petite targe
 @i^2222^Pavois
+@i^2251^Patte d'araignée fondante
 @i^2287^Cuissot
 @i^2449^Terrestrine
 @i^2452^Chardonnier
@@ -365,6 +381,7 @@ GoldScout-export 6^bmm6p3gjhznn^25
 @i^4604^Tête de champignon sylvestre
 @i^4605^Champignon à pois rouges
 @i^4606^Morilles spongieuses
+@i^4633^Coffret lourd en bronze
 @i^4710^Cape forestière
 @i^4722^Cape à insigne
 @i^4776^Plume ébouriffée
@@ -529,13 +546,18 @@ GoldScout-export 6^bmm6p3gjhznn^25
 @i^253938^Patron : jambières immaculées filigranées
 @i^262888^Commission de compagnon scellée
 @i^267412^Clé de l'île de Fenris
+@i^270866^Relique des Titans
+@i^271100^Viande de raptor des fourrés
 @i^271343^Bout de note
 @i^271350^Âme torturée
+@i^273022^Jambières en peau de panse souple
+@i^273029^Arme d'épaule mire-de-golem
 @i^273086^Plan : enclume
 @i^273839^Bague à carapace d'épines
 @i^273840^Œil de Murloc maudit
 @i^277936^Héliolite lumineuse
 @i^277957^Clé primitive
+@i^284844^Couperet gueule-de-dragon
 @q^414^1:0:0
 @q^422^1:0:0
 @q^730^1:7:1
@@ -565,9 +587,11 @@ GoldScout-export 6^bmm6p3gjhznn^25
 @q^1687^0:15:0
 @q^1688^0:15:0
 @q^1696^0:15:0
+@q^1697^0:15:0
 @q^1701^0:15:0
 @q^1702^0:15:0
 @q^1703^1:0:0
+@q^1705^2:7:1
 @q^1708^1:0:0
 @q^1740^0:4:0
 @q^1742^0:4:0
@@ -596,7 +620,9 @@ GoldScout-export 6^bmm6p3gjhznn^25
 @q^2215^0:4:0
 @q^2217^0:4:0
 @q^2219^0:4:0
+@q^2221^0:4:0
 @q^2222^0:4:0
+@q^2251^1:7:1
 @q^2287^1:0:0
 @q^2449^1:7:1
 @q^2452^1:7:1
@@ -685,6 +711,7 @@ GoldScout-export 6^bmm6p3gjhznn^25
 @q^4604^1:0:0
 @q^4605^1:0:0
 @q^4606^1:0:0
+@q^4633^2:15:0
 @q^4710^2:4:0
 @q^4722^2:4:0
 @q^4776^0:15:0
@@ -849,13 +876,18 @@ GoldScout-export 6^bmm6p3gjhznn^25
 @q^253938^3:9:0
 @q^262888^3:0:0
 @q^267412^1:13:0
+@q^270866^1:12:0
+@q^271100^1:12:0
 @q^271343^1:15:0
 @q^271350^1:12:0
+@q^273022^3:4:0
+@q^273029^3:2:0
 @q^273086^2:9:0
 @q^273839^3:4:0
 @q^273840^3:4:0
 @q^277936^1:12:0
 @q^277957^1:12:0
+@q^284844^1:12:0
 @m^1412^Mulgore
 @m^1413^Les Tarides
 @m^1414^Kalimdor
@@ -863,6 +895,7 @@ GoldScout-export 6^bmm6p3gjhznn^25
 @m^1421^Forêt des Pins argentés
 @m^1424^Contreforts de Hautebrande
 @m^1434^Vallée de Strangleronce
+@m^1437^Les Paluns
 @m^1439^Sombrivage
 @m^1440^Orneval
 @m^1442^Les Serres-Rocheuses
@@ -1574,5 +1607,6 @@ GoldScout-export 6^bmm6p3gjhznn^25
 @a^12678^268:2
 @a^185333^272:1
 @a^259897^349:1
+@a^260803^250:1
 @a^268623^309:1
 @l^0^frFR

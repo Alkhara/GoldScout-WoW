@@ -1,5 +1,6 @@
-GoldScout-export 6^ffce56p35p2a^12
+GoldScout-export 6^ffce56p35p2a^13
 1037^1^0^30^30^1437^0.5111^0.5185^1^Dragonmaw Battlemaster^10408:1:1^
+1989^11^0^3^4^1438^0.5415^0.3849^11^Grellkin^117:3:3,1378:1:1,2589:3:3,2651:1:1,2656:1:1,3297:8:8^
 2241^1^0^33^33^1416^0.4812^0.8644^1^Syndicate Thief^3601:1:1^
 2248^51^0^30^31^1424^0.4589^0.3109^51^Cave Yeti^1708:1:1,1710:1:1,2785:1:1,3385:1:1,3708:1:1,3771:3:3,3798:1:1,5637:2:2,15231:2:2^
 2249^34^0^31^32^1424^0.4432^0.2982^34^Ferocious Yeti^1708:1:1,1710:1:1,3786:1:1,3816:1:1,5637:1:1,7110:1:1^
@@ -96,11 +97,13 @@ GoldScout-export 6^ffce56p35p2a^12
 255069^3^0^0^0^1416^0.0000^0.0000^0^^1760:1:1,1827:1:1,2589:1:1^
 255070^1^0^0^0^1416^0.0000^0.0000^0^^^
 269134^1^0^0^0^1416^0.0000^0.0000^0^^^
+@i^117^Tough Jerky
 @i^422^Dwarven Mild
 @i^730^Murloc Eye
 @i^789^Stout Battlehammer of Arcane Protection
 @i^1205^Melon Juice
 @i^1206^Moss Agate
+@i^1378^Frayed Pants
 @i^1470^Murloc Skin Bag
 @i^1478^Scroll of Protection II
 @i^1707^Stormwind Brie
@@ -122,6 +125,8 @@ GoldScout-export 6^ffce56p35p2a^12
 @i^2295^Large Boar Tusk
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2651^Flimsy Chain Bracers
+@i^2656^Flimsy Chain Vest
 @i^2674^Crawler Meat
 @i^2675^Crawler Claw
 @i^2677^Boar Ribs
@@ -132,6 +137,7 @@ GoldScout-export 6^ffce56p35p2a^12
 @i^3039^Short Ash Bow
 @i^3058^Forest Leather Gloves
 @i^3172^Boar Intestines
+@i^3297^Fel Moss
 @i^3385^Lesser Mana Potion
 @i^3403^Ivory Boar Tusk
 @i^3509^Daggerspine Scale
@@ -224,11 +230,13 @@ GoldScout-export 6^ffce56p35p2a^12
 @i^274149^Thornweaver Drape
 @i^275997^Cracked Sentry Core
 @i^276160^Mana Fragment
+@q^117^1:0:0
 @q^422^1:0:0
 @q^730^1:7:1
 @q^789^2:2:0
 @q^1205^1:0:0
 @q^1206^2:7:1
+@q^1378^0:4:0
 @q^1470^1:1:0
 @q^1478^1:0:0
 @q^1707^1:0:0
@@ -250,6 +258,8 @@ GoldScout-export 6^ffce56p35p2a^12
 @q^2295^0:15:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2651^0:4:0
+@q^2656^0:4:0
 @q^2674^1:7:1
 @q^2675^1:7:1
 @q^2677^1:7:1
@@ -260,6 +270,7 @@ GoldScout-export 6^ffce56p35p2a^12
 @q^3039^2:2:0
 @q^3058^2:4:0
 @q^3172^1:7:1
+@q^3297^1:12:0
 @q^3385^1:0:0
 @q^3403^0:15:0
 @q^3509^1:12:0
@@ -355,6 +366,7 @@ GoldScout-export 6^ffce56p35p2a^12
 @m^1416^Alterac Mountains
 @m^1424^Hillsbrad Foothills
 @m^1437^Wetlands
+@m^1438^Teldrassil
 @c^118^
 @c^724^
 @c^733^
@@ -812,6 +824,7 @@ GoldScout-export 6^ffce56p35p2a^12
 @c^285278^
 @c^286152^
 @a^1037^210:1
+@a^1989^150:11
 @a^2241^349:1
 @a^2248^108:6,109:7,128:8,129:30
 @a^2249^108:13,109:5,128:12,129:4
