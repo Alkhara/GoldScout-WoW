@@ -1,4 +1,4 @@
-GoldScout-export 6^2npa8x37jm7y^18
+GoldScout-export 6^2npa8x37jm7y^19
 232^1^0^23^23^1424^0.3308^0.3604^1^Farmer Ray^4538:1:1^
 769^1^0^40^41^1435^0.7608^0.7705^1^Deathstrike Tarantula^213529:1:1^
 1561^10^8^40^41^1434^0.3056^0.7191^10^Bloodsail Raider^1707:2:2,2745:1:1,2748:1:1,3827:1:1,4306:4:6^5432:2:2,16884:2:2
@@ -59,6 +59,7 @@ GoldScout-export 6^2npa8x37jm7y^18
 3886^1^0^0^0^0^0.0000^0.0000^0^^6226:1:1^
 3887^1^0^0^0^0^0.0000^0.0000^0^^6323:1:1^
 3914^1^0^0^0^0^0.0000^0.0000^0^^1816:1:1,273457:1:1^
+3917^11^0^23^25^1440^0.4769^0.7037^11^Befouled Water Elemental^5446:1:1,5447:1:1,5448:2:2,5451:2:2,9451:7:14^
 3927^1^0^0^0^0^0.0000^0.0000^0^^6314:1:1^
 4128^6^0^22^23^1413^0.4592^0.8174^6^Hecklefang Stalker^3301:2:2^
 4196^6^0^21^22^1413^0.4362^0.6990^6^Silithid Swarm^^
@@ -72,7 +73,12 @@ GoldScout-export 6^2npa8x37jm7y^18
 6073^1^0^29^29^1440^0.7888^0.6811^1^Searing Infernal^^
 6668^2^0^23^23^1413^0.4705^0.8582^2^Lord Cyrik Blackforge^2592:1:1^
 12676^1^0^31^31^1440^0.7515^0.7061^1^Sharptalon^3404:1:1,11416:1:1,16305:1:1^
-12856^4^0^23^24^1440^0.7346^0.7054^4^Ashenvale Outrunner^2592:1:1,4538:1:1^
+12678^1^0^25^25^1440^0.3967^0.6430^1^Ursangous^16303:1:1^
+12759^1^0^27^27^1440^0.4639^0.7034^1^Tideress^16408:1:1^
+12856^8^0^23^24^1440^0.7378^0.7152^8^Ashenvale Outrunner^2592:1:1,4538:1:1,16647:1:1^
+12860^1^0^24^24^1440^0.6480^0.7539^1^Duriel Moonfire^16645:1:1^
+12896^5^0^22^23^1440^0.6550^0.7511^5^Silverwing Sentinel^1206:1:1,1478:1:1^
+12897^6^0^21^22^1440^0.6493^0.7527^6^Silverwing Warrior^2592:1:1,4306:1:1,4538:1:1,16650:1:1^
 254560^0^29^39^40^0^0.0000^0.0000^0^Twilight Shadowmancer^^1710:2:2,4544:2:2,5427:1:1,16883:3:3
 256795^5^1^42^43^2548^0.2858^0.4027^5^Twilight Fanatic^4306:3:4,5429:2:2,213544:1:1^5428:1:1
 256797^6^0^42^43^2548^0.2746^0.4083^6^Twilight Corrupter^4338:1:2,5431:1:1^
@@ -116,6 +122,8 @@ GoldScout-export 6^2npa8x37jm7y^18
 @i^770^Pointy Crocolisk Tooth
 @i^1015^Lean Wolf Flank
 @i^1081^Crisp Spider Meat
+@i^1206^Moss Agate
+@i^1478^Scroll of Protection II
 @i^1485^Pitchfork
 @i^1625^Exquisite Flamberge of the Wolf
 @i^1707^Stormwind Brie
@@ -195,6 +203,10 @@ GoldScout-export 6^2npa8x37jm7y^18
 @i^5431^Empty Hip Flask
 @i^5432^Hickory Pipe
 @i^5442^Head of Arugal
+@i^5446^Broken Elemental Bracer
+@i^5447^Damaged Elemental Bracer
+@i^5448^Fractured Elemental Bracer
+@i^5451^Crushed Elemental Bracer
 @i^5470^Thunder Lizard Tail
 @i^5569^Seaweed
 @i^5635^Sharp Claw
@@ -222,6 +234,7 @@ GoldScout-export 6^2npa8x37jm7y^18
 @i^7973^Big-mouth Clam
 @i^8157^Jouster's Chestplate
 @i^8365^Raw Mithril Head Trout
+@i^9451^Bubbling Water
 @i^9776^Bandit Boots of Fire Protection
 @i^9782^Bandit Jerkin of the Tiger
 @i^9788^Raider's Belt of the Monkey
@@ -245,7 +258,12 @@ GoldScout-export 6^2npa8x37jm7y^18
 @i^14171^Buccaneer's Pants of Frost Protection
 @i^15798^Chipped Ogre Teeth
 @i^15893^Prospector's Buckler
+@i^16303^Ursangous's Paw
 @i^16305^Sharptalon's Claw
+@i^16408^Befouled Water Globe
+@i^16645^Shredder Operating Manual - Page 1
+@i^16647^Shredder Operating Manual - Page 3
+@i^16650^Shredder Operating Manual - Page 6
 @i^16883^Worn Junkbox
 @i^16884^Sturdy Junkbox
 @i^16967^Feralas Ahi
@@ -285,6 +303,8 @@ GoldScout-export 6^2npa8x37jm7y^18
 @q^770^0:15:0
 @q^1015^1:7:1
 @q^1081^1:7:1
+@q^1206^2:7:1
+@q^1478^1:0:0
 @q^1485^0:2:0
 @q^1625^2:2:0
 @q^1707^1:0:0
@@ -364,6 +384,10 @@ GoldScout-export 6^2npa8x37jm7y^18
 @q^5431^0:15:0
 @q^5432^0:15:0
 @q^5442^1:12:0
+@q^5446^0:15:0
+@q^5447^0:15:0
+@q^5448^0:15:0
+@q^5451^0:15:0
 @q^5470^1:7:1
 @q^5569^0:15:0
 @q^5635^1:7:1
@@ -391,6 +415,7 @@ GoldScout-export 6^2npa8x37jm7y^18
 @q^7973^1:7:0
 @q^8157^2:4:0
 @q^8365^1:7:1
+@q^9451^1:0:0
 @q^9776^2:4:0
 @q^9782^2:4:0
 @q^9788^2:4:0
@@ -414,7 +439,12 @@ GoldScout-export 6^2npa8x37jm7y^18
 @q^14171^2:4:0
 @q^15798^0:15:0
 @q^15893^2:4:0
+@q^16303^2:12:0
 @q^16305^2:12:0
+@q^16408^2:12:0
+@q^16645^1:12:0
+@q^16647^1:12:0
+@q^16650^1:12:0
 @q^16883^1:15:0
 @q^16884^1:15:0
 @q^16967^1:15:0
@@ -1820,6 +1850,7 @@ GoldScout-export 6^2npa8x37jm7y^18
 @a^3472^308:1
 @a^3503^268:1
 @a^3821^277:1
+@a^3917^269:3,289:6,290:2
 @a^4128^309:2,329:4
 @a^4196^268:5,288:1
 @a^5268^192:1,194:1
@@ -1828,7 +1859,12 @@ GoldScout-export 6^2npa8x37jm7y^18
 @a^6073^275:1
 @a^6668^349:2
 @a^12676^295:1
-@a^12856^294:3,295:1
+@a^12678^247:1
+@a^12759^289:1
+@a^12856^294:5,295:3
+@a^12860^312:1
+@a^12896^293:2,312:1,313:2
+@a^12897^293:1,312:5
 @a^256795^145:2,165:3
 @a^256797^145:2,165:4
 @a^256799^145:3,165:6

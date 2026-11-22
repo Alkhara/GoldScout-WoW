@@ -1,8 +1,11 @@
-GoldScout-export 6^i6zjnlxe0519^5
+GoldScout-export 6^i6zjnlxe0519^6
 412^1^0^35^35^1431^0.4545^0.6602^1^Stitches^3360:1:1,4306:1:2^
+687^1^0^40^41^1434^0.2687^0.4126^1^Jungle Stalker^4586:1:1^
 688^1^0^31^31^1434^0.3580^0.0685^1^Stone Maw Basilisk^1702:1:1^
 729^1^0^37^37^1434^0.3200^0.1748^1^Sin'Dall^1688:1:1,3879:1:1^
+730^1^0^43^43^1434^0.2796^0.4409^1^Tethis^3877:1:1,4587:1:1,8146:1:1,12184:1:1^
 1150^6^0^30^31^1434^0.3452^0.0989^6^River Crocolisk^770:2:2,3667:2:2,4053:2:2^
+1561^1^0^40^40^1434^0.2691^0.6992^1^Bloodsail Raider^4306:1:1^
 11783^11^0^0^0^0^0.0000^0.0000^0^^4552:3:3,4784:10:10,7067:1:1,7912:3:5,8150:1:1,8389:1:1^
 11784^2^0^0^0^0^0.0000^0.0000^0^^4554:1:1,4784:2:2^
 11789^6^0^0^0^0^0.0000^0.0000^0^^3669:6:6,3676:1:1^
@@ -44,6 +47,7 @@ GoldScout-export 6^i6zjnlxe0519^5
 @i^3667^Tender Crocolisk Meat
 @i^3669^Gelatinous Goo
 @i^3676^Slimy Ichor
+@i^3877^Talon of Tethis
 @i^3879^Paw of Sin'Dall
 @i^3942^Crochet Shoulderpads
 @i^4053^Large River Crocolisk Skin
@@ -51,6 +55,8 @@ GoldScout-export 6^i6zjnlxe0519^5
 @i^4338^Mageweave Cloth
 @i^4552^Smooth Stone Chip
 @i^4554^Shiny Polished Stone
+@i^4586^Smooth Raptor Skin
+@i^4587^Tribal Raptor Feathers
 @i^4599^Cured Ham Steak
 @i^4607^Delicious Cave Mold
 @i^4784^Lifeless Stone
@@ -62,9 +68,11 @@ GoldScout-export 6^i6zjnlxe0519^5
 @i^7909^Aquamarine
 @i^7912^Solid Stone
 @i^7973^Big-mouth Clam
+@i^8146^Wicked Claw
 @i^8150^Deeprock Salt
 @i^8389^Pattern: Big Voodoo Pants
 @i^10286^Heart of the Wild
+@i^12184^Raptor Flesh
 @i^14242^Darkmist Pants of Arcane Wrath
 @i^14250^Lunar Slippers of Intellect
 @i^14599^Warden's Footpads
@@ -105,6 +113,7 @@ GoldScout-export 6^i6zjnlxe0519^5
 @q^3667^1:7:1
 @q^3669^0:15:0
 @q^3676^0:15:0
+@q^3877^1:12:0
 @q^3879^1:12:0
 @q^3942^0:4:0
 @q^4053^1:12:0
@@ -112,6 +121,8 @@ GoldScout-export 6^i6zjnlxe0519^5
 @q^4338^1:7:1
 @q^4552^0:15:0
 @q^4554^0:15:0
+@q^4586^0:15:0
+@q^4587^0:15:0
 @q^4599^1:0:0
 @q^4607^1:0:0
 @q^4784^0:15:0
@@ -123,9 +134,11 @@ GoldScout-export 6^i6zjnlxe0519^5
 @q^7909^2:7:1
 @q^7912^1:7:1
 @q^7973^1:7:0
+@q^8146^1:7:1
 @q^8150^1:7:1
 @q^8389^2:9:0
 @q^10286^1:7:1
+@q^12184^1:7:1
 @q^14242^2:4:0
 @q^14250^2:4:0
 @q^14599^2:4:0
@@ -164,7 +177,10 @@ GoldScout-export 6^i6zjnlxe0519^5
 @c^279966^
 @c^279967^
 @a^412^269:1
+@a^687^165:1
 @a^688^27:1
 @a^729^66:1
+@a^730^165:1
 @a^1150^26:3,46:1,47:2
+@a^1561^265:1
 @l^0^enUS

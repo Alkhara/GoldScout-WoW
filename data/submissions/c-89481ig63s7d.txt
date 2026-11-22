@@ -1,10 +1,11 @@
-GoldScout-export 6^89481ig63s7d^31
+GoldScout-export 6^89481ig63s7d^33
 92^3^0^39^40^1418^0.1393^0.3483^3^Rock Elemental^4553:1:1,4627:3:3,4784:2:2,7912:1:1,8150:2:2^
 441^1^0^17^18^1433^0.6105^0.7508^1^Black Dragon Whelp^818:1:1^
 544^1^0^21^22^1433^0.7610^0.5873^1^Murloc Nightcrawler^^
 545^2^0^19^20^1433^0.7610^0.5873^2^Murloc Tidecaller^1468:1:1,5523:1:1,5784:1:1^
 1087^1^0^41^41^1435^0.8612^0.2037^1^Sawtooth Snapper^770:1:1^
 1666^1^0^0^0^0^0.0000^0.0000^0^^4306:1:2,273807:1:1^
+1713^1^0^43^43^1434^0.3535^0.5761^1^Elder Shadowmaw Panther^1688:1:1^
 1715^2^0^0^0^0^0.0000^0.0000^0^^4306:1:1^
 1716^2^0^0^0^0^0.0000^0.0000^0^^^
 1717^1^0^0^0^0^0.0000^0.0000^0^^^
@@ -34,6 +35,10 @@ GoldScout-export 6^89481ig63s7d^31
 2906^0^1^35^37^0^0.0000^0.0000^0^Dustbelcher Warrior^^16883:1:1
 2919^1^0^45^45^1418^0.2624^0.4604^1^Fam'retor Guardian^4784:1:1,4847:1:1,7912:1:2^
 3560^5^0^33^40^1418^0.4960^0.6991^1^Healing Ward^^
+3861^2^0^0^0^0^0.0000^0.0000^0^^1015:1:1,3402:1:1,4699:1:1^
+3875^3^0^0^0^0^0.0000^0.0000^0^^2592:2:4^
+3886^1^0^0^0^0^0.0000^0.0000^0^^2783:1:1,6226:1:1^
+3914^1^0^0^0^0^0.0000^0.0000^0^^1744:1:1,5254:1:1^
 4401^1^0^40^40^1445^0.5607^0.4334^1^Muckshell Clacker^^
 4805^4^0^0^0^0^0.0000^0.0000^0^^^
 4815^1^0^0^0^0^0.0000^0.0000^0^^^
@@ -53,14 +58,19 @@ GoldScout-export 6^89481ig63s7d^31
 @i^770^Pointy Crocolisk Tooth
 @i^818^Tigerseye
 @i^929^Healing Potion
+@i^1015^Lean Wolf Flank
 @i^1464^Buzzard Talon
 @i^1468^Murloc Fin
 @i^1529^Jade
+@i^1688^Long Soft Tail
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
+@i^1744^Laced Mail Shoulderpads
 @i^1988^Chief Brigadier Gauntlets
 @i^2592^Wool Cloth
+@i^2783^Shoddy Blunderbuss
+@i^3402^Soft Patch of Fur
 @i^3404^Buzzard Wing
 @i^3771^Wild Hog Shank
 @i^3783^Light Scimitar
@@ -92,11 +102,13 @@ GoldScout-export 6^89481ig63s7d^31
 @i^4630^Scrap Metal
 @i^4634^Iron Lockbox
 @i^4636^Strong Iron Lockbox
+@i^4699^Seer's Belt
 @i^4784^Lifeless Stone
 @i^4791^Enchanted Water
 @i^4847^Lotwil's Shackles of Elemental Binding
 @i^5040^Shadow Hunter Knife
 @i^5116^Long Tail Feather
+@i^5254^Rugged Spaulders
 @i^5373^Lucky Charm
 @i^5374^Small Pocket Watch
 @i^5427^Crude Pocket Watch
@@ -111,6 +123,7 @@ GoldScout-export 6^89481ig63s7d^31
 @i^5637^Large Fang
 @i^5784^Slimy Murloc Scale
 @i^5829^Razor-sharp Beak
+@i^6226^Bloody Apron
 @i^6289^Raw Longjaw Mud Snapper
 @i^6291^Raw Brilliant Smallfish
 @i^6292^10 Pound Mud Snapper
@@ -178,14 +191,19 @@ GoldScout-export 6^89481ig63s7d^31
 @q^770^0:15:0
 @q^818^2:7:1
 @q^929^1:0:0
+@q^1015^1:7:1
 @q^1464^0:15:0
 @q^1468^1:7:1
 @q^1529^2:7:1
+@q^1688^0:15:0
 @q^1707^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
+@q^1744^0:4:0
 @q^1988^2:4:0
 @q^2592^1:7:1
+@q^2783^0:2:0
+@q^3402^0:15:0
 @q^3404^1:7:1
 @q^3771^1:0:0
 @q^3783^0:2:0
@@ -217,11 +235,13 @@ GoldScout-export 6^89481ig63s7d^31
 @q^4630^1:12:0
 @q^4634^2:15:0
 @q^4636^2:15:0
+@q^4699^2:4:0
 @q^4784^0:15:0
 @q^4791^1:0:0
 @q^4847^1:12:0
 @q^5040^1:2:0
 @q^5116^1:7:1
+@q^5254^3:4:0
 @q^5373^1:15:1
 @q^5374^0:15:0
 @q^5427^0:15:0
@@ -236,6 +256,7 @@ GoldScout-export 6^89481ig63s7d^31
 @q^5637^1:7:1
 @q^5784^1:7:1
 @q^5829^0:15:0
+@q^6226^3:4:0
 @q^6289^1:7:1
 @q^6291^1:7:1
 @q^6292^1:15:0
@@ -1297,6 +1318,7 @@ GoldScout-export 6^89481ig63s7d^31
 @a^544^235:1
 @a^545^235:2
 @a^1087^97:1
+@a^1713^227:1
 @a^2242^172:1
 @a^2554^272:3,292:3
 @a^2555^272:1,273:3,274:1,292:3,293:9,294:1

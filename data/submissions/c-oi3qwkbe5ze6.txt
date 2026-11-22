@@ -1,4 +1,4 @@
-GoldScout-export 6^oi3qwkbe5ze6^7
+GoldScout-export 6^oi3qwkbe5ze6^8
 1020^6^0^22^23^1437^0.2350^0.5018^6^Mottled Raptor^1697:2:2,3685:2:2,5635:1:1,7090:1:1,211854:1:1^
 1021^7^0^24^25^1437^0.2330^0.5131^7^Mottled Screecher^1697:1:1,3685:5:5^
 1022^10^0^25^26^1437^0.3257^0.4874^10^Mottled Scytheclaw^1697:3:3,3685:5:5,4714:1:1,5637:1:1^
@@ -12,6 +12,9 @@ GoldScout-export 6^oi3qwkbe5ze6^7
 2044^1^0^25^25^1436^0.4150^0.6752^1^Forlorn Spirit^2592:1:2^
 2102^5^0^20^21^1437^0.4739^0.7713^5^Dragonmaw Grunt^929:1:1,2592:1:1,3770:1:1^
 2103^8^0^19^20^1437^0.4871^0.7835^8^Dragonmaw Scout^2592:3:3,15248:1:1^
+4788^1^0^21^21^1414^0.4386^0.3504^1^Fallenroot Satyr^2592:1:4^
+4789^2^0^21^22^1414^0.4418^0.3471^2^Fallenroot Rogue^4306:1:3,5952:1:1^
+4802^2^0^20^21^1414^0.4391^0.3479^2^Blackfathom Tide Priestess^5524:1:1,5952:1:1^
 270892^1^0^32^32^1437^0.3482^0.5270^1^Goaz Warder^279993:1:1^
 @i^770^Pointy Crocolisk Tooth
 @i^814^Flask of Oil
@@ -30,12 +33,14 @@ GoldScout-export 6^oi3qwkbe5ze6^7
 @i^3676^Slimy Ichor
 @i^3685^Raptor Egg
 @i^3770^Mutton Chop
+@i^4306^Silk Cloth
 @i^4710^Forest Cloak
 @i^4714^Silver-thread Sash
 @i^5524^Thick-shelled Clam
 @i^5635^Sharp Claw
 @i^5637^Large Fang
 @i^5784^Slimy Murloc Scale
+@i^5952^Corrupted Brain Stem
 @i^7090^Pattern: Green Silk Armor
 @i^15248^Gleaming Claymore of Holy Wrath
 @i^17057^Shiny Fish Scales
@@ -61,12 +66,14 @@ GoldScout-export 6^oi3qwkbe5ze6^7
 @q^3676^0:15:0
 @q^3685^1:7:1
 @q^3770^1:0:0
+@q^4306^1:7:1
 @q^4710^2:4:0
 @q^4714^2:4:0
 @q^5524^1:7:0
 @q^5635^1:7:1
 @q^5637^1:7:1
 @q^5784^1:7:1
+@q^5952^1:12:0
 @q^7090^2:9:0
 @q^15248^2:2:0
 @q^17057^1:15:0
@@ -75,6 +82,7 @@ GoldScout-export 6^oi3qwkbe5ze6^7
 @q^248688^1:0:1
 @q^262888^3:0:0
 @q^279993^1:12:0
+@m^1414^Kalimdor
 @m^1436^Westfall
 @m^1437^Wetlands
 @c^118^
@@ -783,6 +791,9 @@ GoldScout-export 6^oi3qwkbe5ze6^7
 @c^279957^
 @c^279959^
 @c^279961^
+@c^279965^
+@c^279966^
+@c^279967^
 @c^279968^
 @c^279972^
 @c^279973^
@@ -806,5 +817,8 @@ GoldScout-export 6^oi3qwkbe5ze6^7
 @a^2044^268:1
 @a^2102^309:5
 @a^2103^309:8
+@a^4788^148:1
+@a^4789^128:2
+@a^4802^128:1,148:1
 @a^270892^206:1
 @l^0^enUS

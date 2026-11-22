@@ -1,4 +1,4 @@
-GoldScout-export 6^04mw8c0ykeyy^12
+GoldScout-export 6^04mw8c0ykeyy^14
 36^3^0^11^12^1436^0.5134^0.3308^3^Harvest Golem^732:1:1,1274:2:2,1497:1:1,4359:1:1,255007:2:2,255010:1:1^
 95^28^0^11^12^1436^0.4708^0.2794^28^Defias Smuggler^414:1:1,829:7:7,858:1:1,2455:1:1,2589:9:15,211786:1:1^
 114^31^0^14^15^1436^0.4990^0.2642^31^Harvest Watcher^732:13:13,814:6:6,1274:4:4,1512:1:1,2632:1:1,3375:1:1,3645:1:1,4361:1:1,4570:1:1,211786:2:2,255007:7:7,255010:4:4^
@@ -27,6 +27,10 @@ GoldScout-export 6^04mw8c0ykeyy^12
 550^1^0^14^14^1436^0.4422^0.6348^1^Defias Messenger^1381:1:1^
 589^10^0^14^15^1436^0.3995^0.6270^10^Defias Pillager^2214:1:1,2589:3:8,2777:1:1^
 590^10^0^13^14^1436^0.3642^0.5869^10^Defias Looter^858:1:1,1495:1:1,1504:1:1,2589:2:5,2763:1:1^
+705^11^0^1^1^1426^0.2980^0.7407^11^Ragged Young Wolf^750:7:7,1366:1:1,2654:1:1,4865:3:3,7073:3:3,7074:2:2^
+707^2^0^1^2^1426^0.2879^0.7645^2^Rockjaw Trogg^117:1:1^
+708^4^0^3^3^1426^0.2190^0.7159^4^Small Crag Boar^117:2:2,2649:1:1,7098:3:3^
+724^6^0^2^2^1426^0.2608^0.7310^6^Burly Rockjaw Trogg^117:1:1,2211:1:1,2589:2:2^
 822^1^0^9^9^1429^0.5303^0.8387^1^Young Forest Bear^4865:1:1^
 830^1^0^13^14^1436^0.5134^0.0969^1^Sand Crawler^5523:1:1^
 831^2^0^15^16^1436^0.3547^0.1910^2^Sea Crawler^2675:2:2,5506:1:1,5523:1:1^
@@ -63,6 +67,7 @@ GoldScout-export 6^04mw8c0ykeyy^12
 11913^2^0^15^16^1442^0.7305^0.8652^2^Grimtotem Sorcerer^^
 209797^1^0^20^20^1413^0.6446^0.3938^1^Bruuz^537:1:1,253710:1:1^
 267314^1^0^19^19^1413^0.5810^0.2515^1^Razormane Berserker^^
+@i^117^Tough Jerky
 @i^414^Dalaran Sharp
 @i^537^Dull Frenzy Scale
 @i^555^Rough Vulture Feathers
@@ -72,6 +77,7 @@ GoldScout-export 6^04mw8c0ykeyy^12
 @i^730^Murloc Eye
 @i^731^Goretusk Snout
 @i^732^Okra
+@i^750^Tough Wolf Meat
 @i^769^Chunk of Boar Meat
 @i^771^Chipped Boar Tusk
 @i^814^Flask of Oil
@@ -80,6 +86,7 @@ GoldScout-export 6^04mw8c0ykeyy^12
 @i^1179^Ice Cold Milk
 @i^1181^Scroll of Spirit
 @i^1274^Hops
+@i^1366^Ragged Leather Pants
 @i^1381^A Mysterious Message
 @i^1467^Spotted Sunfish
 @i^1495^Calico Shoes
@@ -90,6 +97,7 @@ GoldScout-export 6^04mw8c0ykeyy^12
 @i^1512^Crude Battle Axe
 @i^1794^Patched Leather Jerkin
 @i^1813^Chipped Quarterstaff
+@i^2211^Bent Large Shield
 @i^2214^Wooden Buckler
 @i^2251^Gooey Spider Leg
 @i^2287^Haunch of Meat
@@ -98,6 +106,8 @@ GoldScout-export 6^04mw8c0ykeyy^12
 @i^2592^Wool Cloth
 @i^2608^Threshadon Ambergris
 @i^2632^Curved Dagger of Agility
+@i^2649^Flimsy Chain Belt
+@i^2654^Flimsy Chain Pants
 @i^2673^Coyote Meat
 @i^2675^Crawler Claw
 @i^2677^Boar Ribs
@@ -147,6 +157,9 @@ GoldScout-export 6^04mw8c0ykeyy^12
 @i^6537^Willow Boots of Intellect
 @i^6541^Willow Gloves of the Eagle
 @i^6889^Small Egg
+@i^7073^Broken Fang
+@i^7074^Chipped Claw
+@i^7098^Splintered Tusk
 @i^9742^Simple Cord
 @i^14725^War Paint Waistband
 @i^15925^Journeyman's Stave
@@ -160,6 +173,7 @@ GoldScout-export 6^04mw8c0ykeyy^12
 @i^254548^Longshore Murloc Gill
 @i^255007^Golem Isospring
 @i^255010^Harvester Gyrostabilizer
+@q^117^1:0:0
 @q^414^1:0:0
 @q^537^0:15:0
 @q^555^0:15:0
@@ -169,6 +183,7 @@ GoldScout-export 6^04mw8c0ykeyy^12
 @q^730^1:7:1
 @q^731^1:7:1
 @q^732^1:12:0
+@q^750^1:12:0
 @q^769^1:7:1
 @q^771^0:15:0
 @q^814^1:7:1
@@ -177,6 +192,7 @@ GoldScout-export 6^04mw8c0ykeyy^12
 @q^1179^1:0:0
 @q^1181^1:0:0
 @q^1274^1:12:0
+@q^1366^0:4:0
 @q^1381^1:12:0
 @q^1467^1:12:0
 @q^1495^0:4:0
@@ -187,6 +203,7 @@ GoldScout-export 6^04mw8c0ykeyy^12
 @q^1512^0:2:0
 @q^1794^0:4:0
 @q^1813^0:2:0
+@q^2211^0:4:0
 @q^2214^0:4:0
 @q^2251^1:7:1
 @q^2287^1:0:0
@@ -195,6 +212,8 @@ GoldScout-export 6^04mw8c0ykeyy^12
 @q^2592^1:7:1
 @q^2608^0:15:0
 @q^2632^2:2:0
+@q^2649^0:4:0
+@q^2654^0:4:0
 @q^2673^1:7:1
 @q^2675^1:7:1
 @q^2677^1:7:1
@@ -244,6 +263,9 @@ GoldScout-export 6^04mw8c0ykeyy^12
 @q^6537^2:4:0
 @q^6541^2:4:0
 @q^6889^1:7:1
+@q^7073^0:15:0
+@q^7074^0:15:0
+@q^7098^0:15:0
 @q^9742^1:4:0
 @q^14725^2:4:0
 @q^15925^2:4:0
@@ -259,6 +281,7 @@ GoldScout-export 6^04mw8c0ykeyy^12
 @q^255010^1:12:0
 @m^1413^The Barrens
 @m^1414^Kalimdor
+@m^1426^Dun Morogh
 @m^1429^Elwynn Forest
 @m^1431^Duskwood
 @m^1433^Redridge Mountains
@@ -477,6 +500,10 @@ GoldScout-export 6^04mw8c0ykeyy^12
 @a^550^248:1
 @a^589^186:1,207:2,227:1,268:5,288:1
 @a^590^185:2,186:1,207:1,226:1,227:1,268:4
+@a^705^285:7,286:4
+@a^707^305:2
+@a^708^284:4
+@a^724^284:1,285:5
 @a^822^330:1
 @a^830^30:1
 @a^831^67:1,86:1
