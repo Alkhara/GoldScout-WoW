@@ -1,4 +1,4 @@
-GoldScout-export 6^q9i5774k0ea5^20
+GoldScout-export 6^q9i5774k0ea5^21
 232^1^0^23^23^1424^0.3381^0.3480^1^Farmer Ray^2592:1:1^
 588^3^0^34^34^1434^0.2332^0.1193^3^Bloodscalp Scout^^
 595^1^0^34^35^1434^0.2299^0.1262^1^Bloodscalp Hunter^^
@@ -95,7 +95,11 @@ GoldScout-export 6^q9i5774k0ea5^20
 2451^1^0^25^25^1424^0.3598^0.4658^1^Farmer Kalaba^^
 2529^11^0^0^0^0^0.0000^0.0000^0^^1752:1:1,1800:1:1,2782:1:1,3058:1:1,3066:1:1,3396:1:1,3770:1:1,5635:1:1,15224:1:1^
 3098^10^0^1^2^1411^0.4366^0.6441^10^Mottled Boar^117:2:2,1369:1:1,1374:1:1,4865:3:3,7098:6:6^
-3125^1^0^6^6^1411^0.5635^0.7380^1^Clattering Scorpid^^
+3101^15^0^3^4^1411^0.4463^0.5682^15^Vile Familiar^117:1:1,1364:1:1,1369:1:1,1372:1:1,1376:3:3,2210:1:1,2211:1:1,2589:7:7,2649:1:2,2651:1:1,3363:1:1,3365:1:1^
+3102^2^0^3^4^1411^0.4418^0.5410^2^Felstalker^7073:2:2,7074:1:1^
+3124^17^0^3^3^1411^0.4647^0.6098^17^Scorpid Worker^1378:1:1,2211:2:2,2649:2:2,4862:10:10,4867:2:2,7099:6:6,7100:5:5,7101:6:6^
+3125^1^0^5^6^1411^0.5635^0.7380^1^Clattering Scorpid^^
+3183^1^0^5^5^1411^0.4272^0.5303^1^Yarrog Baneshadow^2589:1:1,4859:1:1^
 3197^3^0^9^10^1411^0.5268^0.1081^3^Burning Blade Fanatic^14544:1:1^
 3198^2^0^10^11^1411^0.5273^0.1100^2^Burning Blade Apprentice^^
 3240^5^0^18^19^1413^0.4794^0.5005^5^Stormsnout^4895:1:1,5128:1:1,15114:1:1^
@@ -257,6 +261,9 @@ GoldScout-export 6^q9i5774k0ea5^20
 262397^16^0^36^38^1434^0.2309^0.2788^16^Brinescale Skirmisher^1645:1:1,2738:1:1,2748:1:1,3928:1:1,5524:4:4,17058:3:3,270305:3:3^
 263196^2^0^0^0^0^0.0000^0.0000^0^^4306:1:2^
 263899^2^0^0^0^0^0.0000^0.0000^0^^3783:1:1,4306:1:3^
+266849^7^0^5^6^1411^0.5136^0.6180^7^Ridgeshade Lurker^1476:5:5,2590:1:1,5465:5:7^
+266850^6^0^5^6^1411^0.5188^0.6000^6^Ridgeshade Creeper^774:1:1,1476:1:1,2590:2:2,5465:4:5^
+266851^1^0^8^8^1411^0.4933^0.5678^1^Ukorsbane^275722:1:1^
 268321^1^0^0^0^0^0.0000^0.0000^0^^3805:1:1,4791:1:1^
 271961^7^0^2^3^1420^0.2552^0.6011^7^Webbed Forsaken^^
 276020^1^0^13^13^1420^0.8342^0.4262^1^Riptear^286326:1:1^
@@ -365,6 +372,7 @@ GoldScout-export 6^q9i5774k0ea5^20
 @i^2409^Pattern: Dark Leather Tunic
 @i^2455^Minor Mana Potion
 @i^2589^Linen Cloth
+@i^2590^Forest Spider Webbing
 @i^2592^Wool Cloth
 @i^2598^Pattern: Red Linen Robe
 @i^2601^Pattern: Gray Woolen Robe
@@ -374,6 +382,7 @@ GoldScout-export 6^q9i5774k0ea5^20
 @i^2648^Loose Chain Vest
 @i^2649^Flimsy Chain Belt
 @i^2650^Flimsy Chain Boots
+@i^2651^Flimsy Chain Bracers
 @i^2652^Flimsy Chain Cloak
 @i^2653^Flimsy Chain Gloves
 @i^2656^Flimsy Chain Vest
@@ -438,6 +447,7 @@ GoldScout-export 6^q9i5774k0ea5^20
 @i^3309^Barbaric Loincloth
 @i^3314^Ceremonial Leather Gloves
 @i^3363^Frayed Belt
+@i^3365^Frayed Bracers
 @i^3370^Patchwork Belt
 @i^3375^Calico Bracers
 @i^3396^Recipe: Elixir of Lesser Agility
@@ -507,7 +517,10 @@ GoldScout-export 6^q9i5774k0ea5^20
 @i^4776^Ruffled Feather
 @i^4791^Enchanted Water
 @i^4813^Small Leather Collar
+@i^4859^Burning Blade Medallion
+@i^4862^Scorpid Worker Tail
 @i^4865^Ruined Pelt
+@i^4867^Broken Scorpid Leg
 @i^4878^Broken Bloodstained Bow
 @i^4893^Savannah Lion Tusk
 @i^4894^Plainstrider Kidney
@@ -704,6 +717,7 @@ GoldScout-export 6^q9i5774k0ea5^20
 @i^273637^Blade of Silverlaine
 @i^273643^Worgenbane Talisman
 @i^273646^Half-Eaten Boots
+@i^275722^Ukor's Lost Pack
 @i^275895^Fading Echo
 @i^280438^Abominable Head
 @i^286326^Riptear's Heart
@@ -816,6 +830,7 @@ GoldScout-export 6^q9i5774k0ea5^20
 @q^2409^2:9:0
 @q^2455^1:0:0
 @q^2589^1:7:1
+@q^2590^0:15:0
 @q^2592^1:7:1
 @q^2598^2:9:0
 @q^2601^2:9:0
@@ -825,6 +840,7 @@ GoldScout-export 6^q9i5774k0ea5^20
 @q^2648^0:4:0
 @q^2649^0:4:0
 @q^2650^0:4:0
+@q^2651^0:4:0
 @q^2652^0:4:0
 @q^2653^0:4:0
 @q^2656^0:4:0
@@ -889,6 +905,7 @@ GoldScout-export 6^q9i5774k0ea5^20
 @q^3309^2:4:0
 @q^3314^2:4:0
 @q^3363^0:4:0
+@q^3365^0:4:0
 @q^3370^0:4:0
 @q^3375^0:4:0
 @q^3396^2:9:0
@@ -958,7 +975,10 @@ GoldScout-export 6^q9i5774k0ea5^20
 @q^4776^0:15:0
 @q^4791^1:0:0
 @q^4813^0:15:0
+@q^4859^1:12:0
+@q^4862^1:12:0
 @q^4865^0:15:0
+@q^4867^0:15:0
 @q^4878^0:15:0
 @q^4893^1:12:0
 @q^4894^1:12:0
@@ -1155,6 +1175,7 @@ GoldScout-export 6^q9i5774k0ea5^20
 @q^273637^3:2:0
 @q^273643^3:4:0
 @q^273646^3:4:0
+@q^275722^1:12:0
 @q^275895^0:15:0
 @q^280438^1:15:0
 @q^286326^1:12:0
@@ -2551,7 +2572,11 @@ GoldScout-export 6^q9i5774k0ea5^20
 @a^2449^147:1
 @a^2451^187:1
 @a^3098^248:7,268:3
+@a^3101^208:3,228:10,229:2
+@a^3102^208:2
+@a^3124^228:1,229:4,249:12
 @a^3125^291:1
+@a^3183^208:1
 @a^3197^50:3
 @a^3198^50:2
 @a^3240^189:2,209:3
@@ -2622,6 +2647,9 @@ GoldScout-export 6^q9i5774k0ea5^20
 @a^212753^271:1
 @a^246143^245:1
 @a^262397^104:16
+@a^266849^229:1,230:2,250:3,270:1
+@a^266850^210:1,230:1,250:4
+@a^266851^229:1
 @a^271961^225:3,244:3,245:1
 @a^276020^176:1
 @l^0^enUS

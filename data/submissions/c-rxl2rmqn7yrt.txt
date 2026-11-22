@@ -1,4 +1,4 @@
-GoldScout-export 6^rxl2rmqn7yrt^22
+GoldScout-export 6^rxl2rmqn7yrt^23
 40^14^0^6^7^1429^0.4120^0.7870^14^Mineur kobold^118:1:1,1389:1:1,1420:1:1,1422:1:1,2589:5:8,2643:1:1,4536:1:1^
 206^9^0^29^30^1431^0.7240^0.7184^9^Croc noir Plaie-de-nuit^1759:1:1,3041:1:1,5635:1:1^
 475^12^0^5^6^1429^0.4021^0.8116^12^Tunnelier kobold^159:1:1,1366:1:1,1427:1:1,2589:4:6,2649:1:1,2652:1:1,2770:2:3,2835:1:3,4536:1:1^
@@ -53,6 +53,8 @@ GoldScout-export 6^rxl2rmqn7yrt^22
 1715^4^0^0^0^0^0.0000^0.0000^0^^1755:1:1,1782:1:1,2909:1:1^
 1763^1^0^0^0^0^0.0000^0.0000^0^^1156:1:1^
 2091^1^0^32^32^1437^0.5297^0.5473^1^Chef Nek'rosh^3625:1:1^
+2248^55^0^30^31^1424^0.4424^0.2927^55^Yéti des grottes^1710:1:1,3385:1:1,3771:2:2,3782:1:1,4064:1:1,4614:1:1,5637:1:1,211854:1:1,248692:1:1^
+2249^32^0^31^32^1424^0.4444^0.2945^32^Yéti féroce^1710:2:2,5637:1:1^
 2356^1^0^26^26^1424^0.3415^0.3158^1^Vieil ours gris^11406:1:1,262888:1:1^
 4040^3^0^21^22^1437^0.5135^0.6250^3^Traqueuse des grottes^1081:2:2,2251:1:1,3174:1:1,4428:1:1,280319:1:1^
 6170^4^0^32^32^1431^0.7347^0.7527^4^Videssac^^
@@ -134,6 +136,7 @@ GoldScout-export 6^rxl2rmqn7yrt^22
 @i^1696^Griffe de raptor
 @i^1697^Dent de raptor
 @i^1705^Pierre de lune inférieure
+@i^1710^Potion de soins supérieure
 @i^1711^Parchemin d'Endurance II
 @i^1712^Parchemin d'Esprit II
 @i^1748^Brassards en anneaux rivetés
@@ -181,6 +184,7 @@ GoldScout-export 6^rxl2rmqn7yrt^22
 @i^3180^Ecaille de raptor tacheté
 @i^3337^Etendard de guerre Dragonmaw
 @i^3349^Sac de Sidonie
+@i^3385^Potion de mana inférieure
 @i^3625^Tête de Nek'rosh
 @i^3638^Serre de Grondecroc
 @i^3639^Oreille de Balgaras
@@ -193,9 +197,12 @@ GoldScout-export 6^rxl2rmqn7yrt^22
 @i^3702^Vésicule biliaire d'ours
 @i^3730^Viande de grand ours
 @i^3770^Côtelette de mouton
+@i^3771^Jarret de cochon sauvage
 @i^3778^Arc composite de sarcasme
+@i^3782^Grand gourdin de guerre
 @i^3804^Gants en cuir durci
 @i^3820^Etouffante
+@i^4064^Targe blasonnée
 @i^4299^Patron : Armure de gardien
 @i^4300^Patron : Brassards de gardien en cuir
 @i^4306^Etoffe de soie
@@ -206,6 +213,7 @@ GoldScout-export 6^rxl2rmqn7yrt^22
 @i^4542^Pain de maïs moelleux
 @i^4553^Morceau de pierre délabré
 @i^4606^Morilles spongieuses
+@i^4614^Pendentif de Myzrael
 @i^4707^Ceinturon en écailles brillantes
 @i^4716^Cape de combat
 @i^5523^Petite palourde spiralée
@@ -256,9 +264,11 @@ GoldScout-export 6^rxl2rmqn7yrt^22
 @i^20708^Malle soigneusement scellée
 @i^21114^Rhum brun de Rumsey
 @i^211784^Parchemin : WUBBA WUBBA
+@i^211854^Parchemin : OMIT KESA
 @i^211855^Parchemin : STHENIC LUNATE
 @i^248686^Caisse détournée : plantes de compagnon
 @i^248689^Caisse détournée : curiosités de compagnon
+@i^248692^Caisse détournée : minerai d'expert
 @i^248706^Caisse détournée : lingots de compagnon
 @i^248707^Caisse détournée : composants de compagnon
 @i^250187^Recette : délicieuses bouchées au raptor
@@ -308,6 +318,7 @@ GoldScout-export 6^rxl2rmqn7yrt^22
 @q^1696^0:15:0
 @q^1697^0:15:0
 @q^1705^2:7:1
+@q^1710^1:0:0
 @q^1711^1:0:0
 @q^1712^1:0:0
 @q^1748^0:4:0
@@ -355,6 +366,7 @@ GoldScout-export 6^rxl2rmqn7yrt^22
 @q^3180^0:15:0
 @q^3337^1:12:0
 @q^3349^1:12:0
+@q^3385^1:0:0
 @q^3625^1:12:0
 @q^3638^1:12:0
 @q^3639^1:12:0
@@ -367,9 +379,12 @@ GoldScout-export 6^rxl2rmqn7yrt^22
 @q^3702^0:15:0
 @q^3730^1:7:1
 @q^3770^1:0:0
+@q^3771^1:0:0
 @q^3778^0:2:0
+@q^3782^0:2:0
 @q^3804^0:4:0
 @q^3820^1:7:1
+@q^4064^2:4:0
 @q^4299^2:9:0
 @q^4300^2:9:0
 @q^4306^1:7:1
@@ -380,6 +395,7 @@ GoldScout-export 6^rxl2rmqn7yrt^22
 @q^4542^1:0:0
 @q^4553^0:15:0
 @q^4606^1:0:0
+@q^4614^2:4:0
 @q^4707^2:4:0
 @q^4716^2:4:0
 @q^5523^1:7:0
@@ -430,9 +446,11 @@ GoldScout-export 6^rxl2rmqn7yrt^22
 @q^20708^1:15:0
 @q^21114^1:0:0
 @q^211784^1:0:0
+@q^211854^1:0:0
 @q^211855^1:0:0
 @q^248686^1:0:1
 @q^248689^1:0:1
+@q^248692^1:0:1
 @q^248706^2:0:1
 @q^248707^2:0:1
 @q^250187^1:9:0
@@ -1619,6 +1637,9 @@ GoldScout-export 6^rxl2rmqn7yrt^22
 @c^279959^
 @c^279960^
 @c^279961^
+@c^279965^
+@c^279966^
+@c^279967^
 @c^279968^
 @c^279972^
 @c^279973^
@@ -1674,6 +1695,8 @@ GoldScout-export 6^rxl2rmqn7yrt^22
 @a^1400^148:1
 @a^1417^147:1
 @a^2091^210:1
+@a^2248^88:3,108:21,109:5,128:16,129:10
+@a^2249^88:1,108:8,109:9,128:10,129:4
 @a^2356^126:1
 @a^4040^250:3
 @a^6170^294:2,314:2
