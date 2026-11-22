@@ -1,4 +1,4 @@
-GoldScout-export 6^fd43ssjyfcyu^51
+GoldScout-export 6^fd43ssjyfcyu^52
 1501^9^0^1^1^1420^0.3210^0.6376^9^Mindless Zombie^159:1:1,1367:1:1,1369:1:1,2589:3:3,2652:1:1,4604:2:2^
 1502^9^3^1^2^1420^0.3238^0.6324^9^Wretched Zombie^159:1:1,1366:1:1,1380:1:1,2589:3:3,2650:1:1,2656:1:1,4604:1:1^5362:1:1
 1504^10^0^2^3^1420^0.2814^0.5686^10^Young Night Web Spider^1476:3:3,2654:1:1,7100:6:6,7101:2:2^
@@ -149,10 +149,10 @@ GoldScout-export 6^fd43ssjyfcyu^51
 3810^1^0^25^25^1440^0.6652^0.7110^1^Elder Ashenvale Bear^11407:1:1^
 3988^2^0^19^20^1442^0.6255^0.5227^2^Venture Co. Operator^2287:1:1,2592:1:1,5734:1:1^
 3989^17^0^18^19^1442^0.6475^0.5471^17^Venture Co. Logger^1179:1:1,1210:1:1,1764:1:1,1792:1:1,2589:4:7,2592:3:5,3376:1:1^
-3991^14^0^19^20^1442^0.6877^0.5497^14^Venture Co. Deforester^858:1:1,2287:1:1,2589:2:3,2592:1:2,3377:1:1^
-3999^8^0^21^22^1442^0.7430^0.5954^8^Windshear Digger^2592:3:5^
-4003^3^0^20^21^1442^0.7486^0.5922^3^Windshear Geomancer^4537:1:1^
-4004^2^0^21^22^1442^0.7366^0.5950^2^Windshear Overlord^4538:1:1^
+3991^16^0^19^20^1442^0.6956^0.5547^16^Venture Co. Deforester^858:1:1,2287:1:1,2589:2:3,2592:1:2,3377:1:1^
+3999^25^0^21^22^1442^0.7332^0.6064^25^Windshear Digger^1205:1:1,1750:1:1,1821:1:1,1823:1:1,2592:6:10,4306:1:1,4538:1:1^
+4003^4^0^20^21^1442^0.7493^0.5895^4^Windshear Geomancer^4537:1:1^
+4004^3^0^21^22^1442^0.7353^0.6017^3^Windshear Overlord^4538:1:1^
 4005^4^0^16^17^1442^0.6386^0.8481^4^Deepmoss Creeper^1081:1:1,1475:1:1,3174:2:2,3931:1:1^
 4006^2^0^19^20^1442^0.7653^0.5271^2^Deepmoss Webspinner^1081:1:1,3174:1:1^
 4007^5^0^17^18^1442^0.6112^0.6383^5^Deepmoss Venomspitter^1081:1:1,3174:3:3,3931:2:2,14725:1:1^
@@ -208,6 +208,7 @@ GoldScout-export 6^fd43ssjyfcyu^51
 @i^1179^Ice Cold Milk
 @i^1180^Scroll of Stamina
 @i^1181^Scroll of Spirit
+@i^1205^Melon Juice
 @i^1210^Shadowgem
 @i^1364^Ragged Leather Vest
 @i^1366^Ragged Leather Pants
@@ -244,12 +245,15 @@ GoldScout-export 6^fd43ssjyfcyu^51
 @i^1733^Worn Cloak
 @i^1737^Worn Mail Vest
 @i^1743^Laced Mail Pants
+@i^1750^Linked Chain Gloves
 @i^1764^Canvas Shoes
 @i^1788^Patched Leather Boots
 @i^1792^Patched Leather Pants
 @i^1814^Battered Mallet
 @i^1816^Unbalanced Axe
 @i^1817^Stock Shortsword
+@i^1821^Warped Blade
+@i^1823^Bludgeoning Cudgel
 @i^2070^Darnassian Bleu
 @i^2138^Sharpened Letter Opener
 @i^2210^Battered Buckler
@@ -313,6 +317,7 @@ GoldScout-export 6^fd43ssjyfcyu^51
 @i^3931^Poisoned Spider Fang
 @i^4296^Pattern: Dark Leather Shoulders
 @i^4297^Pattern: Barbaric Gloves
+@i^4306^Silk Cloth
 @i^4377^Heavy Blasting Powder
 @i^4536^Shiny Red Apple
 @i^4537^Tel'Abim Banana
@@ -523,6 +528,7 @@ GoldScout-export 6^fd43ssjyfcyu^51
 @q^1179^1:0:0
 @q^1180^1:0:0
 @q^1181^1:0:0
+@q^1205^1:0:0
 @q^1210^2:7:1
 @q^1364^0:4:0
 @q^1366^0:4:0
@@ -559,12 +565,15 @@ GoldScout-export 6^fd43ssjyfcyu^51
 @q^1733^0:4:0
 @q^1737^0:4:0
 @q^1743^0:4:0
+@q^1750^0:4:0
 @q^1764^0:4:0
 @q^1788^0:4:0
 @q^1792^0:4:0
 @q^1814^0:2:0
 @q^1816^0:2:0
 @q^1817^0:2:0
+@q^1821^0:2:0
+@q^1823^0:2:0
 @q^2070^1:0:0
 @q^2138^0:2:0
 @q^2210^0:4:0
@@ -628,6 +637,7 @@ GoldScout-export 6^fd43ssjyfcyu^51
 @q^3931^0:15:0
 @q^4296^2:9:0
 @q^4297^2:9:0
+@q^4306^1:7:1
 @q^4377^1:7:1
 @q^4536^1:0:0
 @q^4537^1:0:0
@@ -1166,10 +1176,10 @@ GoldScout-export 6^fd43ssjyfcyu^51
 @a^3810^293:1
 @a^3988^212:2
 @a^3989^211:3,212:5,213:2,232:3,234:2,235:2
-@a^3991^193:1,212:3,213:4,234:4,235:2
-@a^3999^234:5,235:1,254:2
-@a^4003^234:1,235:2
-@a^4004^234:2
+@a^3991^193:1,212:3,213:4,234:5,235:3
+@a^3999^234:7,235:1,254:17
+@a^4003^234:1,235:3
+@a^4004^234:2,254:1
 @a^4005^292:1,332:1,373:2
 @a^4006^215:2
 @a^4007^251:1,252:3,272:1

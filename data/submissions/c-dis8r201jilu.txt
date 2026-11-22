@@ -1,4 +1,4 @@
-GoldScout-export 6^dis8r201jilu^7
+GoldScout-export 6^dis8r201jilu^8
 587^4^0^33^34^1434^0.2960^0.1946^4^Krieger der Bloodscalp^1519:2:2,4306:2:3^
 588^11^0^34^35^1434^0.2381^0.1294^11^Späher der Bloodscalp^1519:1:1,2738:1:1,2744:1:1,3385:1:1,4306:2:3,7446:1:1^
 595^12^0^34^35^1434^0.2361^0.1241^12^Jäger der Bloodscalp^1519:2:2,1708:2:2,2592:1:2,2749:1:1,3781:1:1^
@@ -48,6 +48,14 @@ GoldScout-export 6^dis8r201jilu^7
 2765^1^0^39^39^1417^0.2994^0.5060^1^Znort^4306:1:1^
 2776^2^0^40^40^1417^0.3571^0.7960^2^Rachsüchtige Woge^^
 2783^1^0^40^40^1417^0.2899^0.6110^1^Marez Cowl^4306:1:4,4515:1:1^
+4680^10^0^38^39^1443^0.5137^0.8326^10^Captain der Verdammniswächter^4306:3:4,6252:10:10^
+4681^5^0^38^38^1443^0.5349^0.7804^5^Magierjäger^4582:1:1,4583:1:1,6250:5:5^
+4682^4^0^38^39^1443^0.5375^0.7932^4^Netherschwester^4306:1:2,6251:4:4^
+4684^6^0^39^40^1443^0.5153^0.8328^6^Netherzauberhexerin^6251:6:6^
+4685^5^0^39^39^1443^0.5117^0.8375^5^Leyjäger^4582:3:3,4583:2:2,5637:1:1,6250:5:5^
+4696^12^0^30^31^1443^0.6545^0.2829^12^Skorpashischnapper^1288:3:3,6248:5:5,12037:6:6,19937:4:4,19938:4:4,211853:1:1^
+4697^3^0^34^35^1443^0.5991^0.4946^3^Skorpashipeitscher^6248:2:2,12037:1:1,19938:2:2^
+4700^3^0^34^34^1443^0.4975^0.5671^3^Gealterter Kodo^5122:2:2,6249:3:3,12204:1:1^
 5477^1^0^39^39^1435^0.3744^0.4437^1^Noboru der Knüppler^6196:1:1^
 5622^1^0^37^37^1435^0.6132^0.2235^1^Ongeku^6190:1:1^
 7327^1^0^0^0^0^0.0000^0.0000^0^^^
@@ -73,11 +81,14 @@ GoldScout-export 6^dis8r201jilu^7
 7874^2^0^33^34^1413^0.4721^0.9042^2^Dornenwirker von Razorfen^3817:1:1,3827:1:1,4306:1:2,4338:1:2^
 7895^1^0^36^36^1413^0.4774^0.9074^1^Botschafter Blutzorn^7369:1:1^
 8567^1^0^0^0^0^0.0000^0.0000^0^^10772:1:1^
+11560^9^0^38^39^2652^0.2982^0.2735^9^Zentaurengeist^15849:7:7^
+11561^24^0^37^42^2652^0.3262^0.2459^23^Untoter Verheerer^1710:1:1,4306:2:5,4607:1:1,14239:1:1,15365:1:1^
 14222^1^0^35^35^1416^0.2958^0.7235^1^Araga^9868:1:1^
 251661^213^0^5^6^2521^0.4077^0.4154^213^Windschreiter^774:1:1,805:3:3,1364:3:3,1366:3:3,1367:3:3,1368:2:2,1370:1:1,1372:3:3,1374:1:1,1376:1:1,1377:3:3,1378:3:3,1380:2:2,1411:3:3,1414:2:2,1418:2:2,1419:1:1,1427:1:1,1429:3:3,1431:1:1,1433:1:1,2210:2:2,2212:1:1,2645:1:1,2652:1:1,2653:1:1,2654:3:3,2773:1:1,2774:1:1,3365:1:1,3370:1:1,3373:1:1,4408:1:1,4409:1:1,4757:86:86,5469:140:140,6889:38:38,7096:95:95,7097:32:32^
 @i^770^Spitzer Krokiliskenzahn
 @i^774^Malachit
 @i^805^Kleiner roter Beutel
+@i^1288^Großer Giftbeutel
 @i^1364^Struppige Lederweste
 @i^1366^Struppige Lederhose
 @i^1367^Struppige Lederstiefel
@@ -105,6 +116,7 @@ GoldScout-export 6^dis8r201jilu^7
 @i^1706^Azuredeep-Splitter
 @i^1707^Brie aus Stormwind
 @i^1708^Süßer Nektar
+@i^1710^Großer Heiltrank
 @i^1711^Rolle der Ausdauer II
 @i^2210^Ramponierter Rundschild
 @i^2212^Gesprungener Rundschild
@@ -166,18 +178,27 @@ GoldScout-export 6^dis8r201jilu^7
 @i^4469^Rute der Ordnung
 @i^4515^Marez' Kopf
 @i^4539^Goldrindenapfel
+@i^4582^Weicher buschiger Schweif
+@i^4583^Dicke fellige Mähne
 @i^4585^Tropfender Spinnenunterkiefer
+@i^4607^Köstlicher Höhlenschimmel
 @i^4721^Insignien-Mantel
 @i^4729^Auroramantel
 @i^4757^Gesprungene Eierschalen
 @i^4787^Brennendes Pech
 @i^4791^Verzaubertes Wasser
 @i^5113^Mal des Syndikats
+@i^5122^Dickes Kodohaar
 @i^5469^Schreiterfleisch
 @i^5637^Großer Fangzahn
 @i^5803^Körnchen Traumstaub
 @i^6190^Draenethystsplitter
 @i^6196^Noborus Knüppel
+@i^6248^Skorpashigift
+@i^6249^Gealterter Kodobalg
+@i^6250^Teufelshundgehirn
+@i^6251^Netherflügel
+@i^6252^Verdammniswächterblut
 @i^6412^Oberbrigadierstiefel
 @i^6530^Nachtkriecher
 @i^6889^Kleines Ei
@@ -200,14 +221,21 @@ GoldScout-export 6^dis8r201jilu^7
 @i^11985^Himmelblauer Ring des Banditen
 @i^12037^Eigenartiges Fleisch
 @i^12184^Raptorfleisch
+@i^12204^Schweres Kodofleisch
 @i^12205^Weißes Spinnenfleisch
 @i^14200^Distelfellkappe der Eule
 @i^14222^Geomantenhandschuhe des Hierophanten
+@i^14239^Graunebelcape des Adlers
 @i^14413^Steinstoffrobe
 @i^15225^Mammutbaumhammer des Bären
+@i^15365^Schwindlerhandlappen des Banditen
+@i^15849^Geisterplasma
 @i^17057^Glänzende Fischschuppen
 @i^17058^Fischöl
 @i^18239^Muster: Schattenhauthandschuhe
+@i^19937^Kleine Skorpidklaue
+@i^19938^Schweres Skorpidbein
+@i^211853^Schriftrolle: VOCE WELL
 @i^213421^Angesengte Notiz
 @i^248690^Abgefangene Kiste: Weltliche Kräuter des Experten
 @i^248691^Abgefangene Kiste: Blühende Kräuter des Experten
@@ -218,6 +246,7 @@ GoldScout-export 6^dis8r201jilu^7
 @q^770^0:15:0
 @q^774^2:7:1
 @q^805^1:1:0
+@q^1288^1:7:1
 @q^1364^0:4:0
 @q^1366^0:4:0
 @q^1367^0:4:0
@@ -245,6 +274,7 @@ GoldScout-export 6^dis8r201jilu^7
 @q^1706^0:15:0
 @q^1707^1:0:0
 @q^1708^1:0:0
+@q^1710^1:0:0
 @q^1711^1:0:0
 @q^2210^0:4:0
 @q^2212^0:4:0
@@ -306,18 +336,27 @@ GoldScout-export 6^dis8r201jilu^7
 @q^4469^1:12:0
 @q^4515^1:12:0
 @q^4539^1:0:0
+@q^4582^1:12:0
+@q^4583^0:15:0
 @q^4585^0:15:0
+@q^4607^1:0:0
 @q^4721^2:4:0
 @q^4729^2:4:0
 @q^4757^0:15:0
 @q^4787^0:15:0
 @q^4791^1:0:0
 @q^5113^0:15:0
+@q^5122^0:15:0
 @q^5469^1:7:1
 @q^5637^1:7:1
 @q^5803^1:12:0
 @q^6190^1:12:0
 @q^6196^0:2:0
+@q^6248^1:12:0
+@q^6249^1:12:0
+@q^6250^1:12:0
+@q^6251^1:12:0
+@q^6252^1:12:0
 @q^6412^2:4:0
 @q^6530^1:0:0
 @q^6889^1:7:1
@@ -340,14 +379,21 @@ GoldScout-export 6^dis8r201jilu^7
 @q^11985^2:4:0
 @q^12037^1:7:1
 @q^12184^1:7:1
+@q^12204^1:7:1
 @q^12205^1:7:1
 @q^14200^2:4:0
 @q^14222^2:4:0
+@q^14239^2:4:0
 @q^14413^2:4:0
 @q^15225^2:2:0
+@q^15365^2:4:0
+@q^15849^1:12:0
 @q^17057^1:15:0
 @q^17058^1:15:0
 @q^18239^1:9:0
+@q^19937^0:15:0
+@q^19938^0:15:0
+@q^211853^1:0:0
 @q^213421^1:15:0
 @q^248690^1:0:1
 @q^248691^1:0:1
@@ -360,7 +406,9 @@ GoldScout-export 6^dis8r201jilu^7
 @m^1417^Arathihochland
 @m^1434^Schlingendorntal
 @m^1435^Sümpfe des Elends
+@m^1443^Desolace
 @m^2521^Insel Zephras
+@m^2652^Shen'dralas
 @c^118^
 @c^724^
 @c^733^
@@ -1123,12 +1171,22 @@ GoldScout-export 6^dis8r201jilu^7
 @a^2765^205:1
 @a^2776^307:2
 @a^2783^245:1
+@a^4680^330:10
+@a^4681^310:4,311:1
+@a^4682^310:3,330:1
+@a^4684^330:6
+@a^4685^330:3,350:2
+@a^4696^93:3,112:1,113:5,132:1,152:2
+@a^4697^191:1,192:1,231:1
+@a^4700^229:1,230:2
 @a^5477^167:1
 @a^5622^92:1
 @a^7872^369:1
 @a^7873^349:4,369:2
 @a^7874^349:1,369:1
 @a^7895^369:1
+@a^11560^105:5,106:4
+@a^11561^26:1,46:1,84:2,86:6,105:2,106:6,126:2,127:1,128:2
 @a^14222^285:1
 @a^251661^148:57,149:12,167:81,168:24,169:6,187:20,188:13
 @l^0^deDE

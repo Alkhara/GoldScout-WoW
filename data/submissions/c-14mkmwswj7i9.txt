@@ -1,4 +1,4 @@
-GoldScout-export 6^14mkmwswj7i9^22
+GoldScout-export 6^14mkmwswj7i9^23
 574^1^0^27^27^1431^0.8637^0.4792^1^Naraxis^1074:1:1,1081:1:1,3174:1:1,6607:1:1^
 587^11^0^33^34^1434^0.3142^0.1828^11^Krieger der Bloodscalp^1519:1:1,1520:1:1,2751:1:1,3771:1:1,3786:1:1,3915:1:1,4306:3:5^
 597^46^0^36^37^1434^0.2051^0.1271^46^Berserker der Bloodscalp^1519:4:4,1523:1:1,1710:2:2,2290:1:1,2725:1:1,2728:1:1,2732:1:1,2735:2:2,2745:1:1,2748:1:1,2749:1:1,2751:1:1,3771:2:2,3793:1:1,3901:2:2,3915:11:11,4306:12:22,4338:4:4,9294:1:1,10300:1:1,248690:1:1,248710:1:1^
@@ -132,6 +132,11 @@ GoldScout-export 6^14mkmwswj7i9^22
 6487^2^0^0^0^0^0.0000^0.0000^0^^7711:1:1,274293:1:1,274294:1:1^
 6575^7^0^0^0^0^0.0000^0.0000^0^^1711:1:1,4306:1:1^
 9377^1^0^33^34^1441^0.7579^0.6626^1^Wirbelvortex^^
+11318^4^0^0^0^0^0.0000^0.0000^0^^1497:1:1,1512:1:1,2589:2:8,3036:1:1,3291:1:1,4577:1:1^
+11319^1^0^0^0^0^0.0000^0.0000^0^^2589:1:2^
+11320^6^0^0^0^0^0.0000^0.0000^0^^2075:1:1,3669:5:5,3676:4:4,14114:1:1,15481:1:1^
+11323^1^0^0^0^0^0.0000^0.0000^0^^2589:1:2^
+11520^1^0^0^0^0^0.0000^0.0000^0^^2589:1:2,14148:1:1^
 11521^1^0^37^37^1443^0.5412^0.6086^1^Kodoerscheinung^^
 11562^14^0^33^34^1443^0.1983^0.7919^14^Kaltschnappkriecher^1710:1:1,14408:1:1,17057:4:4^
 11563^1^0^34^34^1443^0.1973^0.8548^1^Kaltschnappzange^^
@@ -175,6 +180,8 @@ GoldScout-export 6^14mkmwswj7i9^22
 @i^1074^Harte Spinnenbeinspitze
 @i^1081^Knuspriges Spinnenfleisch
 @i^1464^Bussardkralle
+@i^1497^Kattunumhang
+@i^1512^Kunstlose Streitaxt
 @i^1519^Ohr der Bloodscalp
 @i^1520^Trollschweiß
 @i^1522^Kopfjägerspeer
@@ -197,10 +204,12 @@ GoldScout-export 6^14mkmwswj7i9^22
 @i^1807^Feste Lederhandschuhe
 @i^1996^Voodooband
 @i^1998^Kanalisierungsstab der Bloodscalp
+@i^2075^Priesterstreitkolben der Ausdauer
 @i^2080^Hügelkämpferaxt der Beweglichkeit
 @i^2251^Klebriges Spinnenbein
 @i^2289^Rolle der Stärke II
 @i^2290^Rolle der Intelligenz II
+@i^2589^Leinenstoff
 @i^2592^Wollstoff
 @i^2725^Die Grünen Hügel des Schlingendorntals - Seite 1
 @i^2728^Die Grünen Hügel des Schlingendorntals - Seite 4
@@ -215,13 +224,17 @@ GoldScout-export 6^14mkmwswj7i9^22
 @i^2748^Die Grünen Hügel des Schlingendorntals - Seite 24
 @i^2749^Die Grünen Hügel des Schlingendorntals - Seite 25
 @i^2751^Die Grünen Hügel des Schlingendorntals - Seite 27
+@i^3036^Schwerer Kurzbogen
 @i^3042^BKP Spatz Kleinkaliber
 @i^3174^Spinnensekret
 @i^3182^Spinnenseide
+@i^3291^Vorfahren-Wollwäsche
 @i^3385^Geringer Manatrank
 @i^3402^Weicher Fellflicken
 @i^3404^Bussardflügel
 @i^3667^Zartes Krokiliskenfleisch
+@i^3669^Gelatineartige Schmiere
+@i^3676^Schleimiges Sekret
 @i^3685^Raptorei
 @i^3771^Wildschweinschenkel
 @i^3778^Gespannter Kompaktbogen
@@ -266,6 +279,7 @@ GoldScout-export 6^14mkmwswj7i9^22
 @i^4495^Blutsteinamulett
 @i^4512^Hochlandraptorauge
 @i^4513^Raptorherz
+@i^4577^Kompakte Schrotflinte
 @i^4582^Weicher buschiger Schweif
 @i^4585^Tropfender Spinnenunterkiefer
 @i^4586^Glatte Raptorenhaut
@@ -351,9 +365,12 @@ GoldScout-export 6^14mkmwswj7i9^22
 @i^13114^Gamaschen des Trollfluchs
 @i^13422^Steinschuppenaal
 @i^13542^Dämonenkasten
+@i^14114^Ureinwohnerfußlappen der Willenskraft
+@i^14148^Kristallene Manschetten
 @i^14408^Steinstoffstiefel
 @i^15133^Halsabschneider-Rundschild der Heilung
 @i^15225^Mammutbaumhammer des Gorillas
+@i^15481^Gebrauchter Schienbeinschützer
 @i^15555^Plündererstiefel des Wals
 @i^15566^Marodeursarmschienen der Macht
 @i^15750^Szepter des Lichts
@@ -405,6 +422,8 @@ GoldScout-export 6^14mkmwswj7i9^22
 @q^1074^0:15:0
 @q^1081^1:7:1
 @q^1464^0:15:0
+@q^1497^0:4:0
+@q^1512^0:2:0
 @q^1519^1:12:0
 @q^1520^0:15:0
 @q^1522^2:2:0
@@ -427,10 +446,12 @@ GoldScout-export 6^14mkmwswj7i9^22
 @q^1807^0:4:0
 @q^1996^2:4:0
 @q^1998^2:2:0
+@q^2075^2:2:0
 @q^2080^2:2:0
 @q^2251^1:7:1
 @q^2289^1:0:0
 @q^2290^1:0:0
+@q^2589^1:7:1
 @q^2592^1:7:1
 @q^2725^1:12:0
 @q^2728^1:12:0
@@ -445,13 +466,17 @@ GoldScout-export 6^14mkmwswj7i9^22
 @q^2748^1:12:0
 @q^2749^1:12:0
 @q^2751^1:12:0
+@q^3036^2:2:0
 @q^3042^2:2:0
 @q^3174^1:7:1
 @q^3182^1:7:1
+@q^3291^2:4:0
 @q^3385^1:0:0
 @q^3402^0:15:0
 @q^3404^1:7:1
 @q^3667^1:7:1
+@q^3669^0:15:0
+@q^3676^0:15:0
 @q^3685^1:7:1
 @q^3771^1:0:0
 @q^3778^0:2:0
@@ -496,6 +521,7 @@ GoldScout-export 6^14mkmwswj7i9^22
 @q^4495^1:12:0
 @q^4512^1:12:0
 @q^4513^1:12:0
+@q^4577^2:2:0
 @q^4582^1:12:0
 @q^4585^0:15:0
 @q^4586^0:15:0
@@ -581,9 +607,12 @@ GoldScout-export 6^14mkmwswj7i9^22
 @q^13114^3:4:0
 @q^13422^1:7:1
 @q^13542^1:12:0
+@q^14114^2:4:0
+@q^14148^3:4:0
 @q^14408^2:4:0
 @q^15133^2:4:0
 @q^15225^2:2:0
+@q^15481^1:4:0
 @q^15555^2:4:0
 @q^15566^2:4:0
 @q^15750^1:12:0

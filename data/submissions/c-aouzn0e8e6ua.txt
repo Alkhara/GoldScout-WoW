@@ -1,4 +1,4 @@
-GoldScout-export 6^aouzn0e8e6ua^26
+GoldScout-export 6^aouzn0e8e6ua^27
 736^1^0^43^43^1434^0.4064^0.3447^1^Panther^^
 772^1^0^37^37^1434^0.5051^0.2039^1^Stranglethorn Tigress^^
 1094^2^0^34^35^1434^0.2876^0.0728^2^Venture Co. Miner^2728:1:1,4306:1:1^
@@ -424,6 +424,9 @@ GoldScout-export 6^aouzn0e8e6ua^26
 @i^6149^Greater Mana Potion
 @i^6300^Husk Fragment
 @i^6302^Delicate Insect Wing
+@i^6303^Raw Slitherskin Mackerel
+@i^6358^Oily Blackmouth
+@i^6361^Raw Rainbow Fin Albacore
 @i^6362^Raw Rockscale Cod
 @i^6416^Aurora Boots
 @i^6438^Dull Elemental Bracer
@@ -552,6 +555,7 @@ GoldScout-export 6^aouzn0e8e6ua^26
 @i^12205^White Spider Meat
 @i^12206^Tender Crab Meat
 @i^12208^Tender Wolf Meat
+@i^12238^Darkshore Grouper
 @i^12470^Sandstalker Ankleguards
 @i^12662^Demonic Rune
 @i^13095^Assault Band
@@ -829,6 +833,9 @@ GoldScout-export 6^aouzn0e8e6ua^26
 @q^6149^1:0:0
 @q^6300^0:15:0
 @q^6302^0:15:0
+@q^6303^1:7:1
+@q^6358^1:7:1
+@q^6361^1:7:1
 @q^6362^1:7:1
 @q^6416^2:4:0
 @q^6438^0:15:0
@@ -957,6 +964,7 @@ GoldScout-export 6^aouzn0e8e6ua^26
 @q^12205^1:7:1
 @q^12206^1:7:1
 @q^12208^1:7:1
+@q^12238^1:0:0
 @q^12470^3:4:0
 @q^12662^2:7:1
 @q^13095^3:4:0
@@ -1087,6 +1095,7 @@ GoldScout-export 6^aouzn0e8e6ua^26
 @m^1425^The Hinterlands
 @m^1426^Dun Morogh
 @m^1434^Stranglethorn Vale
+@m^1437^Wetlands
 @m^1438^Teldrassil
 @m^1439^Darkshore
 @m^1445^Dustwallow Marsh
@@ -3110,4 +3119,6 @@ GoldScout-export 6^aouzn0e8e6ua^26
 @a^263615^111:1
 @a^263749^73:1
 @a^272228^310:1
+@f^1437^0^4^199^6361:4:4^240:4
+@f^1439^0^10^197^6303:2:2,6358:1:1,6361:2:2,12238:5:5^166:10
 @l^0^enUS
