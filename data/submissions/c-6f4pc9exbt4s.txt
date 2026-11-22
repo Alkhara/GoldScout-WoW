@@ -1,4 +1,4 @@
-GoldScout-export 6^6f4pc9exbt4s^19
+GoldScout-export 6^6f4pc9exbt4s^21
 48^2^1^21^22^1431^0.7816^0.7202^2^Skeletal Warrior^2592:1:1^5376:1:1
 202^7^0^23^24^1431^0.5565^0.5360^7^Skeletal Horror^929:1:1,1205:1:1,1820:1:1,2592:3:4^
 203^1^1^22^23^1431^0.7838^0.6746^1^Skeletal Mage^^
@@ -176,6 +176,7 @@ GoldScout-export 6^6f4pc9exbt4s^19
 @i^3627^Fang of Vagash
 @i^3770^Mutton Chop
 @i^3793^Interlaced Boots
+@i^3820^Stranglekelp
 @i^4073^Glimmering Mail Greaves
 @i^4306^Silk Cloth
 @i^4364^Coarse Blasting Powder
@@ -205,6 +206,8 @@ GoldScout-export 6^6f4pc9exbt4s^19
 @i^6309^17 Pound Catfish
 @i^6321^Silverlaine's Family Seal
 @i^6323^Baron's Scepter
+@i^6358^Oily Blackmouth
+@i^6359^Firefin Snapper
 @i^6375^Formula: Enchant Bracer - Lesser Spirit
 @i^6393^Silver-thread Gloves
 @i^6528^Spellbinder Robe
@@ -231,6 +234,7 @@ GoldScout-export 6^6f4pc9exbt4s^19
 @i^9454^Acidic Walkers
 @i^9786^Raider's Cloak of Arcane Protection
 @i^9789^Raider's Legguards of Defense
+@i^13422^Stonescale Eel
 @i^15223^Jagged Star of Healing
 @i^15269^Massive Battle Axe of Fire Protection
 @i^16882^Battered Junkbox
@@ -337,6 +341,7 @@ GoldScout-export 6^6f4pc9exbt4s^19
 @q^3627^1:12:0
 @q^3770^1:0:0
 @q^3793^0:4:0
+@q^3820^1:7:1
 @q^4073^2:4:0
 @q^4306^1:7:1
 @q^4364^1:7:1
@@ -366,6 +371,8 @@ GoldScout-export 6^6f4pc9exbt4s^19
 @q^6309^1:15:0
 @q^6321^3:4:0
 @q^6323^3:2:0
+@q^6358^1:7:1
+@q^6359^1:7:1
 @q^6375^2:9:0
 @q^6393^2:4:0
 @q^6528^2:4:0
@@ -392,6 +399,7 @@ GoldScout-export 6^6f4pc9exbt4s^19
 @q^9454^3:4:0
 @q^9786^2:4:0
 @q^9789^2:4:0
+@q^13422^1:7:1
 @q^15223^2:2:0
 @q^15269^2:2:0
 @q^16882^1:15:0
@@ -2188,6 +2196,6 @@ GoldScout-export 6^6f4pc9exbt4s^19
 @a^269075^245:1
 @a^271486^188:2
 @a^271530^188:2
-@f^1434^0^2^150^21151:1:1,21228:1:1^305:2
+@f^1434^0^27^150^3820:3:5,6358:7:10,6359:12:16,13422:2:6,21151:3:4,21228:6:7^204:6,225:2,265:3,285:2,305:2,325:10,326:2
 @f^1453^0^59^131^6289:34:34,6291:12:12,6308:12:12,6309:1:1^270:58,271:1
 @l^0^enUS

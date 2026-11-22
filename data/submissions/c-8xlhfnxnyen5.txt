@@ -1,4 +1,4 @@
-GoldScout-export 6^8xlhfnxnyen5^13
+GoldScout-export 6^8xlhfnxnyen5^14
 742^6^0^41^42^1435^0.6136^0.5563^6^Green Wyrmkin^3928:1:1,5803:2:2,248690:1:1^
 743^2^0^42^43^1435^0.7259^0.6768^2^Wyrmkin Dreamwalker^^
 744^15^0^42^43^1435^0.7021^0.4873^15^Green Scalebane^1645:2:2,5803:4:4^
@@ -71,10 +71,13 @@ GoldScout-export 6^8xlhfnxnyen5^13
 5990^1^0^47^48^1419^0.5723^0.3518^1^Redstone Basilisk^4092:1:1,8394:1:1^
 5991^1^0^51^51^1419^0.4596^0.3696^1^Redstone Crystalhide^11388:1:1^
 6388^1^0^46^46^1434^0.3997^0.5881^1^Zanzil Skeleton^^
+6505^4^0^48^49^1449^0.6760^0.7116^4^Ravasaur^4587:2:2,11018:2:2,11477:3:3,12184:2:2^
+6506^5^0^49^50^1449^0.6696^0.7080^5^Ravasaur Runner^4587:1:1,4588:2:2,11018:3:3,11477:5:5,12184:2:2^
+6508^1^0^51^51^1449^0.6113^0.4980^1^Venomhide Ravasaur^4587:1:1^
 7034^1^0^51^52^1428^0.7387^0.3832^1^Firegut Ogre Mage^^
 7035^2^0^52^53^1428^0.7765^0.3856^2^Firegut Brute^^
 7038^1^0^54^54^1428^0.5394^0.4069^1^Thaurissan Agent^14047:1:2^
-7047^2^0^52^52^1428^0.8971^0.4652^2^Black Broodling^4557:1:1^
+7047^8^0^52^52^1428^0.9099^0.4030^8^Black Broodling^4460:1:1,4557:1:1^
 7246^16^0^0^0^0^0.0000^0.0000^0^^1520:7:7,4306:1:3,4338:3:7,8151:1:1,9242:1:1,9523:3:3,14839:1:1,15614:1:1^
 7247^1^0^0^0^0^0.0000^0.0000^0^^4306:1:1,8151:1:1^
 7267^1^0^0^0^0^0.0000^0.0000^0^^9477:1:1,252921:1:1^
@@ -197,6 +200,7 @@ GoldScout-export 6^8xlhfnxnyen5^13
 @i^4419^Scroll of Intellect III
 @i^4421^Scroll of Protection III
 @i^4422^Scroll of Stamina III
+@i^4460^Ripped Wing Webbing
 @i^4552^Smooth Stone Chip
 @i^4554^Shiny Polished Stone
 @i^4555^Thick Scaly Tail
@@ -205,6 +209,8 @@ GoldScout-export 6^8xlhfnxnyen5^13
 @i^4583^Thick Furry Mane
 @i^4584^Large Trophy Paw
 @i^4585^Dripping Spider Mandible
+@i^4587^Tribal Raptor Feathers
+@i^4588^Pristine Raptor Skull
 @i^4599^Cured Ham Steak
 @i^4601^Soft Banana Bread
 @i^4602^Moon Harvest Pumpkin
@@ -286,14 +292,17 @@ GoldScout-export 6^8xlhfnxnyen5^13
 @i^10552^Symbol of Ragnaros
 @i^10660^First Mosh'aru Tablet
 @i^10661^Second Mosh'aru Tablet
+@i^11018^Un'Goro Soil
 @i^11386^Squishy Basilisk Eye
 @i^11387^Basilisk Heart
 @i^11388^Basilisk Venom
 @i^11417^Feathery Wing
 @i^11418^Hollow Wing Bone
+@i^11477^White Ravasaur Claw
 @i^11818^Grimesilt Outhouse Key
 @i^11988^Tellurium Band of the Champion
 @i^12037^Mystery Meat
+@i^12184^Raptor Flesh
 @i^12203^Red Wolf Meat
 @i^12205^White Spider Meat
 @i^12207^Giant Egg
@@ -423,6 +432,7 @@ GoldScout-export 6^8xlhfnxnyen5^13
 @q^4419^1:0:0
 @q^4421^1:0:0
 @q^4422^1:0:0
+@q^4460^0:15:0
 @q^4552^0:15:0
 @q^4554^0:15:0
 @q^4555^0:15:0
@@ -431,6 +441,8 @@ GoldScout-export 6^8xlhfnxnyen5^13
 @q^4583^0:15:0
 @q^4584^0:15:0
 @q^4585^0:15:0
+@q^4587^0:15:0
+@q^4588^0:15:0
 @q^4599^1:0:0
 @q^4601^1:0:0
 @q^4602^1:0:0
@@ -512,14 +524,17 @@ GoldScout-export 6^8xlhfnxnyen5^13
 @q^10552^1:12:0
 @q^10660^1:12:0
 @q^10661^1:12:0
+@q^11018^1:12:0
 @q^11386^0:15:0
 @q^11387^0:15:0
 @q^11388^0:15:0
 @q^11417^0:15:0
 @q^11418^0:15:0
+@q^11477^1:12:0
 @q^11818^1:12:0
 @q^11988^2:4:0
 @q^12037^1:7:1
+@q^12184^1:7:1
 @q^12203^1:7:1
 @q^12205^1:7:1
 @q^12207^1:7:1
@@ -608,6 +623,7 @@ GoldScout-export 6^8xlhfnxnyen5^13
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
 @m^1446^Tanaris
+@m^1449^Un'Goro Crater
 @a^742^211:1,212:2,232:2,253:1
 @a^743^274:2
 @a^744^152:1,153:2,154:1,155:2,171:1,172:2,192:1,235:1,255:1,275:2,295:1
@@ -677,10 +693,13 @@ GoldScout-export 6^8xlhfnxnyen5^13
 @a^5990^151:1
 @a^5991^149:1
 @a^6388^227:1
+@a^6505^273:2,293:1,313:1
+@a^6506^273:2,293:3
+@a^6508^192:1
 @a^7034^154:1
 @a^7035^155:2
 @a^7038^170:1
-@a^7047^178:1,197:1
+@a^7047^137:1,138:1,158:2,178:2,197:1,198:1
 @a^7768^246:2
 @a^7769^251:4,271:12,291:12
 @a^7805^133:1
