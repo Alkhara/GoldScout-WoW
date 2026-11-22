@@ -1,4 +1,4 @@
-GoldScout-export 6^ywwtjpu7fn2y^3
+GoldScout-export 6^ywwtjpu7fn2y^4
 1787^1^0^54^54^1422^0.4265^0.7147^1^Skeletal Executioner^14047:1:1^
 1794^2^0^54^55^1422^0.4148^0.7110^2^Soulless Ghoul^6530:1:1,7972:1:1^
 1853^1^0^0^0^0^0.0000^0.0000^0^^12843:1:1,13951:1:1,16698:1:1^
@@ -25,6 +25,9 @@ GoldScout-export 6^ywwtjpu7fn2y^3
 5974^2^0^45^46^1419^0.4338^0.1594^2^Dreadmaul Ogre^4599:1:1^
 6426^3^0^0^0^0^0.0000^0.0000^0^^4306:1:1,6530:1:1,9830:1:1^
 6427^1^0^0^0^0^0.0000^0.0000^0^^4306:1:1^
+7132^46^0^53^54^1448^0.4979^0.2456^46^Toxic Horror^4791:23:72,7070:7:7,7079:10:10,7080:5:5,281017:1:1^
+7138^4^0^52^53^1448^0.4775^0.2300^4^Irontree Wanderer^2452:1:1,8948:1:1^
+7139^25^0^52^53^1448^0.4972^0.2378^25^Irontree Stomper^8948:2:2,10286:7:7,15190:1:1,281015:1:1^
 8555^3^0^53^54^1423^0.0785^0.2870^3^Crypt Fiend^10285:3:3^
 8556^1^0^55^55^1423^0.1038^0.2617^1^Crypt Walker^1074:1:1,4337:1:1^
 8557^1^0^57^57^1423^0.0878^0.2713^1^Crypt Horror^4585:1:1^
@@ -100,6 +103,7 @@ GoldScout-export 6^ywwtjpu7fn2y^3
 @i^1787^Patched Leather Belt
 @i^1788^Patched Leather Boots
 @i^1813^Chipped Quarterstaff
+@i^2452^Swiftthistle
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2765^Hunting Knife
@@ -129,6 +133,7 @@ GoldScout-export 6^ywwtjpu7fn2y^3
 @i^4599^Cured Ham Steak
 @i^4636^Strong Iron Lockbox
 @i^4710^Forest Cloak
+@i^4791^Enchanted Water
 @i^5113^Mark of the Syndicate
 @i^5119^Fine Loose Hair
 @i^5120^Long Tail Hair
@@ -138,6 +143,9 @@ GoldScout-export 6^ywwtjpu7fn2y^3
 @i^6438^Dull Elemental Bracer
 @i^6530^Nightcrawlers
 @i^6986^Crimson Lotus
+@i^7070^Elemental Water
+@i^7079^Globe of Water
+@i^7080^Essence of Water
 @i^7972^Ichor of Undeath
 @i^7973^Big-mouth Clam
 @i^8086^Light Plate Shoulderpads
@@ -149,6 +157,7 @@ GoldScout-export 6^ywwtjpu7fn2y^3
 @i^10138^High Councillor's Cloak of the Gorilla
 @i^10144^High Councillor's Sash of the Owl
 @i^10285^Shadow Silk
+@i^10286^Heart of the Wild
 @i^10305^Scroll of Protection IV
 @i^10306^Scroll of Spirit IV
 @i^10373^Imbued Plate Leggings
@@ -178,6 +187,7 @@ GoldScout-export 6^ywwtjpu7fn2y^3
 @i^14548^Royal Cap Spaulders
 @i^14615^Bloodmail Gauntlets
 @i^14626^Necropile Robe
+@i^15190^Grand Cloak of Shadow Protection
 @i^15250^Glimmering Flamberge of Shadow Protection
 @i^16698^Dreadmist Mask
 @i^16717^Wildheart Gloves
@@ -201,6 +211,8 @@ GoldScout-export 6^ywwtjpu7fn2y^3
 @i^273130^Undeath Engine
 @i^276399^Plate of the Scarlet Bastion
 @i^276419^Lightcrest Hammer
+@i^281015^Scroll: DOST OREM
+@i^281017^Scroll: KEEP CLEF FOCI
 @q^811^4:2:0
 @q^818^2:7:1
 @q^929^1:0:0
@@ -212,6 +224,7 @@ GoldScout-export 6^ywwtjpu7fn2y^3
 @q^1787^0:4:0
 @q^1788^0:4:0
 @q^1813^0:2:0
+@q^2452^1:7:1
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2765^0:2:0
@@ -241,6 +254,7 @@ GoldScout-export 6^ywwtjpu7fn2y^3
 @q^4599^1:0:0
 @q^4636^2:15:0
 @q^4710^2:4:0
+@q^4791^1:0:0
 @q^5113^0:15:0
 @q^5119^0:15:0
 @q^5120^0:15:0
@@ -250,6 +264,9 @@ GoldScout-export 6^ywwtjpu7fn2y^3
 @q^6438^0:15:0
 @q^6530^1:0:0
 @q^6986^0:15:0
+@q^7070^1:7:1
+@q^7079^1:7:1
+@q^7080^2:7:1
 @q^7972^1:7:1
 @q^7973^1:7:0
 @q^8086^0:4:0
@@ -261,6 +278,7 @@ GoldScout-export 6^ywwtjpu7fn2y^3
 @q^10138^2:4:0
 @q^10144^2:4:0
 @q^10285^1:7:1
+@q^10286^1:7:1
 @q^10305^1:0:0
 @q^10306^1:0:0
 @q^10373^2:4:0
@@ -290,6 +308,7 @@ GoldScout-export 6^ywwtjpu7fn2y^3
 @q^14548^3:4:0
 @q^14615^3:4:0
 @q^14626^3:4:0
+@q^15190^2:4:0
 @q^15250^2:2:0
 @q^16698^3:4:0
 @q^16717^3:4:0
@@ -313,10 +332,13 @@ GoldScout-export 6^ywwtjpu7fn2y^3
 @q^273130^2:15:1
 @q^276399^3:4:0
 @q^276419^3:2:0
+@q^281015^1:0:0
+@q^281017^1:0:0
 @m^1417^Arathi Highlands
 @m^1419^Blasted Lands
 @m^1422^Western Plaguelands
 @m^1423^Eastern Plaguelands
+@m^1448^Felwood
 @m^2482^Mount Hyjal
 @c^118^
 @c^724^
@@ -781,6 +803,9 @@ GoldScout-export 6^ywwtjpu7fn2y^3
 @a^2590^245:1
 @a^2591^245:2
 @a^5974^68:2
+@a^7132^89:14,90:17,109:10,110:5
+@a^7138^89:4
+@a^7139^89:5,90:15,109:4,110:1
 @a^8555^101:2,121:1
 @a^8556^102:1
 @a^8557^101:1

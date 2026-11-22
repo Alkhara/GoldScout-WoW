@@ -1,7 +1,26 @@
-GoldScout-export 6^59ad3jlocm9m^1
+GoldScout-export 6^59ad3jlocm9m^2
+3467^1^0^16^16^1413^0.6415^0.4705^1^Baron Longshore^2592:1:2,5084:1:1^
+@i^2592^Wool Cloth
+@i^5084^Baron Longshore's Head
+@i^6289^Raw Longjaw Mud Snapper
+@i^6291^Raw Brilliant Smallfish
+@i^6303^Raw Slitherskin Mackerel
+@i^6308^Raw Bristle Whisker Catfish
+@i^6309^17 Pound Catfish
+@i^6358^Oily Blackmouth
 @i^6361^Raw Rainbow Fin Albacore
+@q^2592^1:7:1
+@q^5084^1:12:0
+@q^6289^1:7:1
+@q^6291^1:7:1
+@q^6303^1:7:1
+@q^6308^1:7:1
+@q^6309^1:15:0
+@q^6358^1:7:1
 @q^6361^1:7:1
+@m^1413^The Barrens
 @m^1440^Ashenvale
+@m^1454^Orgrimmar
 @c^724^
 @c^733^
 @c^787^
@@ -134,5 +153,8 @@ GoldScout-export 6^59ad3jlocm9m^1
 @c^279981^
 @c^279982^
 @c^286152^
-@f^1440^0^3^75^6361:3:3^122:3
+@a^3467^192:1
+@f^1413^0^6^150^6303:2:2,6358:2:2,6361:2:2^152:6
+@f^1440^0^5^75^6358:1:1,6361:4:4^122:5
+@f^1454^0^163^79^6289:98:98,6291:29:29,6308:34:34,6309:2:2^307:1,327:162
 @l^0^enUS

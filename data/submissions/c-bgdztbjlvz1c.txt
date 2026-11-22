@@ -1,4 +1,4 @@
-GoldScout-export 5^bgdztbjlvz1c^12
+GoldScout-export 5^bgdztbjlvz1c^13
 232^1^0^23^23^1424^0.3319^0.3484^1^Farmer Ray^4538:1:1^
 2244^12^0^21^22^1424^0.7096^0.4556^12^Syndicate Shadow Mage^422:1:1,1205:1:1,1801:1:1,2592:2:3,4306:2:2^
 2260^14^0^21^22^1424^0.7220^0.4545^14^Syndicate Rogue^1819:1:1,2589:3:7,2592:2:2,9804:1:1^
@@ -111,6 +111,10 @@ GoldScout-export 5^bgdztbjlvz1c^12
 3991^4^0^19^20^1442^0.6698^0.5194^4^Venture Co. Deforester^1743:1:1,2287:1:1^
 4005^3^0^16^17^1442^0.5525^0.7616^3^Deepmoss Creeper^1081:2:2,3931:1:1^
 4007^4^0^17^18^1442^0.5346^0.7413^4^Deepmoss Venomspitter^3174:3:3,3931:1:1^
+4009^1^0^18^19^1442^0.4883^0.3483^1^Raging Cliff Stormer^^
+4012^1^0^22^22^1442^0.5445^0.4235^1^Pridewing Wyvern^^
+4018^4^0^22^23^1442^0.4834^0.3354^4^Antlered Courser^5120:1:1,5471:2:2,5566:1:1,5585:4:8,5871:1:1^
+4020^5^0^22^23^1442^0.4957^0.3513^5^Sap Beast^1818:1:1,3670:2:2,3671:1:1,3674:1:1,5582:2:2^
 4093^6^0^25^26^1441^0.4266^0.3849^6^Galak Wrangler^3770:1:1,4306:3:5^
 4094^6^0^24^25^1441^0.4512^0.3947^6^Galak Scout^2592:1:2,4306:2:4^
 4096^4^0^24^25^1441^0.4308^0.3821^4^Galak Windchaser^2592:1:2,3770:1:1^
@@ -233,6 +237,7 @@ GoldScout-export 5^bgdztbjlvz1c^12
 @i^1813^Chipped Quarterstaff
 @i^1816^Unbalanced Axe
 @i^1817^Stock Shortsword
+@i^1818^Standard Claymore
 @i^1819^Gouging Pick
 @i^1820^Wooden Maul
 @i^1821^Warped Blade
@@ -275,6 +280,7 @@ GoldScout-export 5^bgdztbjlvz1c^12
 @i^3510^Torn Fin Eye
 @i^3650^Battle Shield
 @i^3670^Large Slimy Bone
+@i^3671^Lifeless Skull
 @i^3674^Decomposed Boot
 @i^3676^Slimy Ichor
 @i^3692^Hillsbrad Human Skull
@@ -312,6 +318,7 @@ GoldScout-export 5^bgdztbjlvz1c^12
 @i^5094^Razormane War Shield
 @i^5101^Ishamuhale's Fang
 @i^5117^Vibrant Plume
+@i^5120^Long Tail Hair
 @i^5124^Small Raptor Tooth
 @i^5125^Charged Scale
 @i^5128^Shed Lizard Skin
@@ -324,14 +331,18 @@ GoldScout-export 5^bgdztbjlvz1c^12
 @i^5269^Silithid Ichor
 @i^5469^Strider Meat
 @i^5470^Thunder Lizard Tail
+@i^5471^Stag Meat
 @i^5481^Satyr Horns
 @i^5490^Wrathtail Head
 @i^5523^Small Barnacled Clam
 @i^5524^Thick-shelled Clam
 @i^5566^Broken Antler
 @i^5569^Seaweed
+@i^5582^Stonetalon Sap
+@i^5585^Courser Eye
 @i^5635^Sharp Claw
 @i^5734^Super Reaper 6000 Blueprints
+@i^5871^Large Hoof
 @i^5881^Head of Kelris
 @i^5972^Pattern: Fine Leather Pants
 @i^6308^Raw Bristle Whisker Catfish
@@ -479,6 +490,7 @@ GoldScout-export 5^bgdztbjlvz1c^12
 @q^1813^0:2:0
 @q^1816^0:2:0
 @q^1817^0:2:0
+@q^1818^0:2:0
 @q^1819^0:2:0
 @q^1820^0:2:0
 @q^1821^0:2:0
@@ -521,6 +533,7 @@ GoldScout-export 5^bgdztbjlvz1c^12
 @q^3510^1:12:0
 @q^3650^1:4:0
 @q^3670^0:15:0
+@q^3671^0:15:0
 @q^3674^0:15:0
 @q^3676^0:15:0
 @q^3692^1:12:0
@@ -558,6 +571,7 @@ GoldScout-export 5^bgdztbjlvz1c^12
 @q^5094^1:4:0
 @q^5101^1:12:0
 @q^5117^1:12:0
+@q^5120^0:15:0
 @q^5124^0:15:0
 @q^5125^0:15:0
 @q^5128^0:15:0
@@ -570,14 +584,18 @@ GoldScout-export 5^bgdztbjlvz1c^12
 @q^5269^0:15:0
 @q^5469^1:7:1
 @q^5470^1:7:1
+@q^5471^1:7:1
 @q^5481^1:12:0
 @q^5490^1:12:0
 @q^5523^1:7:0
 @q^5524^1:7:0
 @q^5566^0:15:0
 @q^5569^0:15:0
+@q^5582^1:12:0
+@q^5585^1:12:0
 @q^5635^1:7:1
 @q^5734^1:12:0
+@q^5871^0:15:0
 @q^5881^1:12:0
 @q^5972^2:9:0
 @q^6308^1:7:1
@@ -1924,6 +1942,10 @@ GoldScout-export 5^bgdztbjlvz1c^12
 @a^3991^213:4
 @a^4005^310:1,311:2
 @a^4007^290:3,310:1
+@a^4009^129:1
+@a^4012^170:1
+@a^4018^129:2,149:1,150:1
+@a^4020^129:1,130:1,149:2,150:1
 @a^4093^148:5,169:1
 @a^4094^127:1,148:1,168:1,169:3
 @a^4096^148:3,169:1

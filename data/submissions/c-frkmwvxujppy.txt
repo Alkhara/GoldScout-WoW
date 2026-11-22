@@ -1,4 +1,4 @@
-GoldScout-export 6^frkmwvxujppy^18
+GoldScout-export 6^frkmwvxujppy^21
 121^2^0^15^16^1436^0.3879^0.7000^2^Defias Pathstalker^1499:1:1,2589:1:2^
 345^1^0^24^24^1433^0.1083^0.4951^1^Bellygrub^723:1:1,2677:1:1,3172:1:1^
 423^1^0^15^16^1433^0.1349^0.6163^1^Redridge Mongrel^1789:1:1,2287:1:1,2592:1:2,2984:1:1^
@@ -102,7 +102,15 @@ GoldScout-export 6^frkmwvxujppy^18
 4397^1^0^37^38^1445^0.6386^0.3834^1^Mudrock Spikeshell^4555:1:1,4556:1:1^
 4413^1^0^35^35^1445^0.5414^0.3484^1^Darkfang Spider^12205:1:1^
 4463^2^0^22^23^1433^0.2868^0.1285^2^Blackrock Summoner^2592:1:1^
+4671^4^0^31^32^1443^0.7564^0.1843^4^Hatefury Trickster^3771:2:2,4306:2:3,6246:2:2,6247:1:1,8747:1:1^
+4672^3^0^31^32^1443^0.7657^0.1875^3^Hatefury Felsworn^1708:1:1,4306:1:1,6246:1:1,6247:1:1^
+4673^3^0^32^33^1443^0.7548^0.1819^3^Hatefury Betrayer^1477:1:1,2592:1:2,4306:1:2,6246:3:3,6247:1:1^
+4674^9^0^32^33^1443^0.7493^0.1792^9^Hatefury Shadowstalker^1708:1:1,1710:1:1,2290:1:1,2592:1:3,3784:1:1,3787:1:1,4306:4:6,6246:1:1,6247:2:2,262888:1:1^
+4675^4^0^32^33^1443^0.7461^0.1744^4^Hatefury Hellcaller^4306:2:3,6246:3:3,6247:1:1^
+4692^1^0^32^32^1443^0.6440^0.1834^1^Dread Swoop^5116:1:1^
 4723^1^0^38^38^1434^0.4259^0.1837^1^Foreman Cozzle^5851:1:1^
+4727^1^0^38^38^1443^0.7925^0.1630^1^Elder Thunder Lizard^^
+4728^2^0^31^32^1443^0.6571^0.1814^2^Gritjaw Basilisk^1701:1:1^
 9377^6^0^33^34^1441^0.7894^0.6194^6^Swirling Vortex^7069:2:2^
 10079^2^0^30^30^1441^0.3236^0.2281^2^Brave Moonhorn^^
 10617^1^0^26^26^1441^0.1855^0.2221^1^Galak Messenger^^
@@ -141,6 +149,7 @@ GoldScout-export 6^frkmwvxujppy^18
 @i^1703^Crystal Basilisk Spine
 @i^1706^Azuredeep Shards
 @i^1708^Sweet Nectar
+@i^1710^Greater Healing Potion
 @i^1744^Laced Mail Shoulderpads
 @i^1751^Linked Chain Pants
 @i^1764^Canvas Shoes
@@ -156,6 +165,7 @@ GoldScout-export 6^frkmwvxujppy^18
 @i^2251^Gooey Spider Leg
 @i^2287^Haunch of Meat
 @i^2289^Scroll of Strength II
+@i^2290^Scroll of Intellect II
 @i^2455^Minor Mana Potion
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
@@ -233,6 +243,8 @@ GoldScout-export 6^frkmwvxujppy^18
 @i^5847^Mirefin Head
 @i^5848^Hollow Vulture Bone
 @i^5851^Cozzle's Key
+@i^6246^Hatefury Claw
+@i^6247^Hatefury Horn
 @i^6308^Raw Bristle Whisker Catfish
 @i^6359^Firefin Snapper
 @i^6362^Raw Rockscale Cod
@@ -255,6 +267,7 @@ GoldScout-export 6^frkmwvxujppy^18
 @i^8150^Deeprock Salt
 @i^8184^Firestarter
 @i^8746^Interlaced Cowl
+@i^8747^Hardened Leather Helm
 @i^8748^Double Mail Coif
 @i^9451^Bubbling Water
 @i^9823^Durable Gloves of Holy Wrath
@@ -301,6 +314,7 @@ GoldScout-export 6^frkmwvxujppy^18
 @i^248694^Waylaid Crate: Expert Curiosities
 @i^248708^Waylaid Crate: Expert Fabrics
 @i^251457^Plans: Steel Spear
+@i^262888^Sealed Journeyman's Writ
 @i^262889^Sealed Expert's Writ
 @q^723^1:7:1
 @q^729^1:7:1
@@ -329,6 +343,7 @@ GoldScout-export 6^frkmwvxujppy^18
 @q^1703^1:0:0
 @q^1706^0:15:0
 @q^1708^1:0:0
+@q^1710^1:0:0
 @q^1744^0:4:0
 @q^1751^0:4:0
 @q^1764^0:4:0
@@ -344,6 +359,7 @@ GoldScout-export 6^frkmwvxujppy^18
 @q^2251^1:7:1
 @q^2287^1:0:0
 @q^2289^1:0:0
+@q^2290^1:0:0
 @q^2455^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
@@ -421,6 +437,8 @@ GoldScout-export 6^frkmwvxujppy^18
 @q^5847^1:12:0
 @q^5848^1:12:0
 @q^5851^1:13:0
+@q^6246^1:12:0
+@q^6247^1:12:0
 @q^6308^1:7:1
 @q^6359^1:7:1
 @q^6362^1:7:1
@@ -443,6 +461,7 @@ GoldScout-export 6^frkmwvxujppy^18
 @q^8150^1:7:1
 @q^8184^2:2:0
 @q^8746^0:4:0
+@q^8747^0:4:0
 @q^8748^0:4:0
 @q^9451^1:0:0
 @q^9823^2:4:0
@@ -489,6 +508,7 @@ GoldScout-export 6^frkmwvxujppy^18
 @q^248694^1:0:1
 @q^248708^2:0:1
 @q^251457^2:9:0
+@q^262888^3:0:0
 @q^262889^3:0:0
 @m^1417^Arathi Highlands
 @m^1424^Hillsbrad Foothills
@@ -497,6 +517,7 @@ GoldScout-export 6^frkmwvxujppy^18
 @m^1436^Westfall
 @m^1441^Thousand Needles
 @m^1442^Stonetalon Mountains
+@m^1443^Desolace
 @m^1445^Dustwallow Marsh
 @m^2548^Riverglades
 @c^118^
@@ -1845,7 +1866,15 @@ GoldScout-export 6^frkmwvxujppy^18
 @a^4397^152:1
 @a^4413^130:1
 @a^4463^44:1,47:1
+@a^4671^74:1,75:2,94:1
+@a^4672^75:1,76:1,94:1
+@a^4673^74:2,76:1
+@a^4674^74:5,75:4
+@a^4675^74:3,75:1
+@a^4692^72:1
 @a^4723^68:1
+@a^4727^75:1
+@a^4728^72:1,73:1
 @a^9377^214:1,235:1,236:1,256:1,277:1,294:1
 @a^10079^86:2
 @a^10617^83:1
