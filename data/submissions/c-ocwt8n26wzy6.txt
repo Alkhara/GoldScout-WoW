@@ -1,4 +1,4 @@
-GoldScout-export 6^ocwt8n26wzy6^40
+GoldScout-export 6^ocwt8n26wzy6^41
 48^19^0^21^22^1431^0.7908^0.7078^19^Skeletal Warrior^1772:1:1,1799:1:1,1802:1:1,2378:7:7,2592:5:7,2794:1:1,3198:1:1,4698:1:1^
 202^2^0^23^24^1431^0.4917^0.5446^2^Skeletal Horror^^
 203^13^0^22^23^1431^0.7968^0.7141^13^Skeletal Mage^2378:3:3,2589:1:2,2592:5:9,4306:2:2,5576:1:1^
@@ -125,6 +125,15 @@ GoldScout-export 6^ocwt8n26wzy6^40
 4667^1^0^32^33^1443^0.5283^0.2891^1^Burning Blade Shadowmage^4306:1:1^
 4689^2^0^30^32^1443^0.6111^0.2913^2^Starving Bonepaw^3402:1:1,12203:2:2^
 4695^3^0^36^37^1443^0.5292^0.6056^3^Carrion Horror^1464:3:3,3404:2:2,5116:1:1,5636:1:1,5829:2:2,11416:1:1^
+4798^7^0^0^0^0^0.0000^0.0000^0^^1205:1:1,1797:1:1,1820:1:1,2592:1:3,5952:3:3^
+4799^1^0^0^0^0^0.0000^0.0000^0^^5952:1:1^
+4805^10^0^0^0^0^0.0000^0.0000^0^^929:1:1,1753:1:1,1775:1:1,1822:1:1,3379:1:1,5524:2:2,6308:2:3,15517:1:1,17057:3:3^
+4807^5^0^0^0^0^0.0000^0.0000^0^^5952:1:1,6308:1:1,15118:1:1,17057:1:1^
+4812^1^0^0^0^0^0.0000^0.0000^0^^5879:1:1^
+4815^2^0^0^0^0^0.0000^0.0000^0^^3379:1:1,15211:1:1^
+4818^5^0^0^0^0^0.0000^0.0000^0^^730:5:5,929:1:1,1468:1:1,1820:1:1,5524:1:1,17057:2:2^
+4819^2^0^0^0^0^0.0000^0.0000^0^^14194:1:1^
+4820^1^0^0^0^0^0.0000^0.0000^0^^15332:1:1^
 5048^5^0^0^0^0^0.0000^0.0000^0^^6443:1:1,6444:4:4^
 5053^8^0^0^0^0^0.0000^0.0000^0^^2924:3:3,3181:5:10,3401:5:7,6443:3:3^
 5055^13^0^0^0^0^0.0000^0.0000^0^^2452:1:1,4604:12:12,4605:6:6,4606:1:1^
@@ -143,6 +152,7 @@ GoldScout-export 6^ocwt8n26wzy6^40
 272260^1^0^24^24^1431^0.6766^0.3005^1^Lost Stalker^281143:1:1^
 @i^422^Dwarven Mild
 @i^729^Stringy Vulture Meat
+@i^730^Murloc Eye
 @i^814^Flask of Oil
 @i^858^Lesser Healing Potion
 @i^878^Fist-sized Spinneret
@@ -157,6 +167,7 @@ GoldScout-export 6^ocwt8n26wzy6^40
 @i^1210^Shadowgem
 @i^1288^Large Venom Sac
 @i^1464^Buzzard Talon
+@i^1468^Murloc Fin
 @i^1696^Curved Raptor Talon
 @i^1697^Keen Raptor Tooth
 @i^1708^Sweet Nectar
@@ -165,6 +176,7 @@ GoldScout-export 6^ocwt8n26wzy6^40
 @i^1744^Laced Mail Shoulderpads
 @i^1745^Laced Mail Vest
 @i^1746^Linked Chain Belt
+@i^1753^Linked Chain Vest
 @i^1756^Reinforced Chain Bracers
 @i^1764^Canvas Shoes
 @i^1766^Canvas Cloak
@@ -172,11 +184,13 @@ GoldScout-export 6^ocwt8n26wzy6^40
 @i^1768^Canvas Pants
 @i^1769^Canvas Shoulderpads
 @i^1772^Brocade Shoes
+@i^1775^Brocade Gloves
 @i^1782^Cross-stitched Cloak
 @i^1788^Patched Leather Boots
 @i^1791^Patched Leather Gloves
 @i^1792^Patched Leather Pants
 @i^1796^Rawhide Boots
+@i^1797^Rawhide Bracers
 @i^1799^Rawhide Gloves
 @i^1802^Rawhide Tunic
 @i^1803^Tough Leather Belt
@@ -184,6 +198,8 @@ GoldScout-export 6^ocwt8n26wzy6^40
 @i^1811^Blunt Claymore
 @i^1815^Ornamental Mace
 @i^1817^Stock Shortsword
+@i^1820^Wooden Maul
+@i^1822^Cedar Walking Stick
 @i^1828^Stone War Axe
 @i^1829^Short Cutlass
 @i^1831^Oaken War Staff
@@ -220,6 +236,7 @@ GoldScout-export 6^ocwt8n26wzy6^40
 @i^3211^Burnished Bracers
 @i^3337^Dragonmaw War Banner
 @i^3349^Sida's Bag
+@i^3379^Brocade Bracers
 @i^3385^Lesser Mana Potion
 @i^3399^Vulture Talon
 @i^3401^Rough Crocolisk Scale
@@ -295,8 +312,11 @@ GoldScout-export 6^ocwt8n26wzy6^40
 @i^5808^Pridewing Venom Sac
 @i^5829^Razor-sharp Beak
 @i^5848^Hollow Vulture Bone
+@i^5879^Twilight Pendant
+@i^5952^Corrupted Brain Stem
 @i^6067^Centaur Ear
 @i^6303^Raw Slitherskin Mackerel
+@i^6308^Raw Bristle Whisker Catfish
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
 @i^6361^Raw Rainbow Fin Albacore
@@ -328,14 +348,19 @@ GoldScout-export 6^ocwt8n26wzy6^40
 @i^12220^Intact Elemental Bracer
 @i^14129^Ritual Sandals of the Eagle
 @i^14131^Ritual Belt of the Eagle
+@i^14194^Raincaller Cord of the Prophet
 @i^14210^Vital Cape of the Prophet
 @i^14569^Bristlebark Bindings
 @i^15016^Lupine Handwraps of the Gorilla
+@i^15118^Rigid Tunic of the Gorilla
+@i^15211^Militant Shortsword of Fire Protection
 @i^15310^Feral Gloves of Agility
+@i^15332^Wrangler's Buckler of Agility
 @i^15473^Charger's Boots
 @i^15493^Bloodspattered Loincloth of Arcane Protection
 @i^15497^Outrunner's Cord of the Bear
 @i^15509^Grunt's Handwraps of the Bear
+@i^15517^Spiked Chain Wristbands of the Falcon
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
@@ -359,6 +384,7 @@ GoldScout-export 6^ocwt8n26wzy6^40
 @i^281143^Ira's Dagger
 @q^422^1:0:0
 @q^729^1:7:1
+@q^730^1:7:1
 @q^814^1:7:1
 @q^858^1:0:0
 @q^878^0:7:0
@@ -373,6 +399,7 @@ GoldScout-export 6^ocwt8n26wzy6^40
 @q^1210^2:7:1
 @q^1288^1:7:1
 @q^1464^0:15:0
+@q^1468^1:7:1
 @q^1696^0:15:0
 @q^1697^0:15:0
 @q^1708^1:0:0
@@ -381,6 +408,7 @@ GoldScout-export 6^ocwt8n26wzy6^40
 @q^1744^0:4:0
 @q^1745^0:4:0
 @q^1746^0:4:0
+@q^1753^0:4:0
 @q^1756^0:4:0
 @q^1764^0:4:0
 @q^1766^0:4:0
@@ -388,11 +416,13 @@ GoldScout-export 6^ocwt8n26wzy6^40
 @q^1768^0:4:0
 @q^1769^0:4:0
 @q^1772^0:4:0
+@q^1775^0:4:0
 @q^1782^0:4:0
 @q^1788^0:4:0
 @q^1791^0:4:0
 @q^1792^0:4:0
 @q^1796^0:4:0
+@q^1797^0:4:0
 @q^1799^0:4:0
 @q^1802^0:4:0
 @q^1803^0:4:0
@@ -400,6 +430,8 @@ GoldScout-export 6^ocwt8n26wzy6^40
 @q^1811^0:2:0
 @q^1815^0:2:0
 @q^1817^0:2:0
+@q^1820^0:2:0
+@q^1822^0:2:0
 @q^1828^0:2:0
 @q^1829^0:2:0
 @q^1831^0:2:0
@@ -436,6 +468,7 @@ GoldScout-export 6^ocwt8n26wzy6^40
 @q^3211^2:4:0
 @q^3337^1:12:0
 @q^3349^1:12:0
+@q^3379^0:4:0
 @q^3385^1:0:0
 @q^3399^0:15:0
 @q^3401^0:15:0
@@ -511,8 +544,11 @@ GoldScout-export 6^ocwt8n26wzy6^40
 @q^5808^1:12:0
 @q^5829^0:15:0
 @q^5848^1:12:0
+@q^5879^1:12:0
+@q^5952^1:12:0
 @q^6067^1:12:0
 @q^6303^1:7:1
+@q^6308^1:7:1
 @q^6358^1:7:1
 @q^6359^1:7:1
 @q^6361^1:7:1
@@ -544,14 +580,19 @@ GoldScout-export 6^ocwt8n26wzy6^40
 @q^12220^1:12:0
 @q^14129^2:4:0
 @q^14131^2:4:0
+@q^14194^2:4:0
 @q^14210^2:4:0
 @q^14569^2:4:0
 @q^15016^2:4:0
+@q^15118^2:4:0
+@q^15211^2:2:0
 @q^15310^2:4:0
+@q^15332^2:4:0
 @q^15473^1:4:0
 @q^15493^2:4:0
 @q^15497^2:4:0
 @q^15509^2:4:0
+@q^15517^2:4:0
 @q^17056^1:15:1
 @q^17057^1:15:0
 @q^17058^1:15:0

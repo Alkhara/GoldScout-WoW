@@ -1,4 +1,4 @@
-GoldScout-export 6^04mw8c0ykeyy^17
+GoldScout-export 6^04mw8c0ykeyy^18
 36^3^0^11^12^1436^0.5134^0.3308^3^Harvest Golem^732:1:1,1274:2:2,1497:1:1,4359:1:1,255007:2:2,255010:1:1^
 95^28^0^11^12^1436^0.4708^0.2794^28^Defias Smuggler^414:1:1,829:7:7,858:1:1,2455:1:1,2589:9:15,211786:1:1^
 114^31^0^14^15^1436^0.4990^0.2642^31^Harvest Watcher^732:13:13,814:6:6,1274:4:4,1512:1:1,2632:1:1,3375:1:1,3645:1:1,4361:1:1,4570:1:1,211786:2:2,255007:7:7,255010:4:4^
@@ -41,6 +41,13 @@ GoldScout-export 6^04mw8c0ykeyy^17
 834^12^0^10^11^1436^0.4669^0.3232^12^Coyote^2673:5:5,2698:1:1,3299:5:5,3300:1:1,4562:1:1,211780:1:1,211786:1:1^
 946^1^0^3^4^1426^0.2874^0.8312^1^Frostmane Novice^3365:1:1^
 1109^8^0^13^14^1436^0.5526^0.4584^8^Fleshripper^555:2:2,729:4:4,4775:1:1,6889:5:5,17056:2:2^
+1125^17^0^5^6^1426^0.4370^0.5965^17^Crag Boar^769:12:12,771:3:3,2555:1:1,2886:7:7,3171:4:4^
+1127^1^0^8^8^1426^0.4087^0.4716^1^Elder Crag Boar^771:1:1,3172:1:1^
+1128^6^0^5^6^1426^0.4362^0.5831^6^Young Black Bear^3169:1:1,4865:4:4,6952:2:2,7073:1:1,7074:1:1^
+1134^15^0^5^6^1426^0.4238^0.5411^15^Young Wendigo^117:1:1,159:1:1,1368:1:1,2671:4:4^
+1135^5^0^6^7^1426^0.4212^0.5133^5^Wendigo^1419:1:1,2642:1:1,2671:3:3,3373:1:1^
+1196^1^0^7^7^1426^0.3710^0.4429^1^Ice Claw Bear^3169:1:1,7073:1:1^
+1199^3^0^5^6^1426^0.4206^0.5899^3^Juvenile Snow Leopard^4813:1:1,4814:2:2^
 1236^8^0^12^13^1436^0.4538^0.1967^8^Kobold Digger^1511:1:1,2589:4:7,2770:1:2^
 1426^4^0^14^15^1436^0.2977^0.4854^4^Riverpaw Miner^2287:1:1^
 1718^2^0^3^4^1426^0.3531^0.6824^2^Rockjaw Raider^2589:1:1,2654:1:1^
@@ -72,7 +79,9 @@ GoldScout-export 6^04mw8c0ykeyy^17
 11913^2^0^15^16^1442^0.7305^0.8652^2^Grimtotem Sorcerer^^
 209797^1^0^20^20^1413^0.6446^0.3938^1^Bruuz^537:1:1,253710:1:1^
 267314^1^0^19^19^1413^0.5810^0.2515^1^Razormane Berserker^^
+271530^3^0^7^8^1426^0.4269^0.5006^3^Elder Wendigo^1423:1:1,2598:1:1,2671:1:1^
 @i^117^Tough Jerky
+@i^159^Refreshing Spring Water
 @i^414^Dalaran Sharp
 @i^537^Dull Frenzy Scale
 @i^555^Rough Vulture Feathers
@@ -94,9 +103,12 @@ GoldScout-export 6^04mw8c0ykeyy^17
 @i^1274^Hops
 @i^1366^Ragged Leather Pants
 @i^1367^Ragged Leather Boots
+@i^1368^Ragged Leather Gloves
 @i^1369^Ragged Leather Belt
 @i^1376^Frayed Cloak
 @i^1381^A Mysterious Message
+@i^1419^Worn Leather Boots
+@i^1423^Worn Leather Pants
 @i^1467^Spotted Sunfish
 @i^1495^Calico Shoes
 @i^1497^Calico Cloak
@@ -113,14 +125,18 @@ GoldScout-export 6^04mw8c0ykeyy^17
 @i^2251^Gooey Spider Leg
 @i^2287^Haunch of Meat
 @i^2455^Minor Mana Potion
+@i^2555^Recipe: Swiftness Potion
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2598^Pattern: Red Linen Robe
 @i^2608^Threshadon Ambergris
 @i^2632^Curved Dagger of Agility
+@i^2642^Loose Chain Boots
 @i^2649^Flimsy Chain Belt
 @i^2650^Flimsy Chain Boots
 @i^2651^Flimsy Chain Bracers
 @i^2654^Flimsy Chain Pants
+@i^2671^Wendigo Mane
 @i^2673^Coyote Meat
 @i^2675^Crawler Claw
 @i^2677^Boar Ribs
@@ -128,6 +144,8 @@ GoldScout-export 6^04mw8c0ykeyy^17
 @i^2763^Fisherman Knife
 @i^2770^Copper Ore
 @i^2777^Feeble Shortbow
+@i^2886^Crag Boar Rib
+@i^3169^Chipped Bear Tooth
 @i^3171^Broken Boar Tusk
 @i^3172^Boar Intestines
 @i^3180^Flecked Raptor Scale
@@ -135,6 +153,7 @@ GoldScout-export 6^04mw8c0ykeyy^17
 @i^3300^Rabbit's Foot
 @i^3301^Sharp Canine
 @i^3365^Frayed Bracers
+@i^3373^Patchwork Bracers
 @i^3375^Calico Bracers
 @i^3399^Vulture Talon
 @i^3645^Seer's Cuffs
@@ -147,6 +166,8 @@ GoldScout-export 6^04mw8c0ykeyy^17
 @i^4562^Severing Axe of Stamina
 @i^4570^Birchwood Maul of the Bear
 @i^4775^Cracked Bill
+@i^4813^Small Leather Collar
+@i^4814^Discolored Fang
 @i^4865^Ruined Pelt
 @i^5055^Intact Raptor Horn
 @i^5084^Baron Longshore's Head
@@ -171,6 +192,7 @@ GoldScout-export 6^04mw8c0ykeyy^17
 @i^6537^Willow Boots of Intellect
 @i^6541^Willow Gloves of the Eagle
 @i^6889^Small Egg
+@i^6952^Thick Bear Fur
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
 @i^7098^Splintered Tusk
@@ -189,6 +211,7 @@ GoldScout-export 6^04mw8c0ykeyy^17
 @i^255010^Harvester Gyrostabilizer
 @i^264356^Iceclaw Bear Pendant
 @q^117^1:0:0
+@q^159^1:0:0
 @q^414^1:0:0
 @q^537^0:15:0
 @q^555^0:15:0
@@ -210,9 +233,12 @@ GoldScout-export 6^04mw8c0ykeyy^17
 @q^1274^1:12:0
 @q^1366^0:4:0
 @q^1367^0:4:0
+@q^1368^0:4:0
 @q^1369^0:4:0
 @q^1376^0:4:0
 @q^1381^1:12:0
+@q^1419^0:4:0
+@q^1423^0:4:0
 @q^1467^1:12:0
 @q^1495^0:4:0
 @q^1497^0:4:0
@@ -229,14 +255,18 @@ GoldScout-export 6^04mw8c0ykeyy^17
 @q^2251^1:7:1
 @q^2287^1:0:0
 @q^2455^1:0:0
+@q^2555^2:9:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2598^2:9:0
 @q^2608^0:15:0
 @q^2632^2:2:0
+@q^2642^0:4:0
 @q^2649^0:4:0
 @q^2650^0:4:0
 @q^2651^0:4:0
 @q^2654^0:4:0
+@q^2671^1:12:0
 @q^2673^1:7:1
 @q^2675^1:7:1
 @q^2677^1:7:1
@@ -244,6 +274,8 @@ GoldScout-export 6^04mw8c0ykeyy^17
 @q^2763^0:2:0
 @q^2770^1:7:1
 @q^2777^0:2:0
+@q^2886^1:7:1
+@q^3169^0:15:0
 @q^3171^0:15:0
 @q^3172^1:7:1
 @q^3180^0:15:0
@@ -251,6 +283,7 @@ GoldScout-export 6^04mw8c0ykeyy^17
 @q^3300^0:15:0
 @q^3301^0:15:0
 @q^3365^0:4:0
+@q^3373^0:4:0
 @q^3375^0:4:0
 @q^3399^0:15:0
 @q^3645^2:4:0
@@ -263,6 +296,8 @@ GoldScout-export 6^04mw8c0ykeyy^17
 @q^4562^2:2:0
 @q^4570^2:2:0
 @q^4775^0:15:0
+@q^4813^0:15:0
+@q^4814^0:15:0
 @q^4865^0:15:0
 @q^5055^1:12:0
 @q^5084^1:12:0
@@ -287,6 +322,7 @@ GoldScout-export 6^04mw8c0ykeyy^17
 @q^6537^2:4:0
 @q^6541^2:4:0
 @q^6889^1:7:1
+@q^6952^1:12:0
 @q^7073^0:15:0
 @q^7074^0:15:0
 @q^7098^0:15:0
@@ -484,12 +520,15 @@ GoldScout-export 6^04mw8c0ykeyy^17
 @c^274976^
 @c^279938^
 @c^279940^
+@c^279947^
 @c^279948^
 @c^279951^
 @c^279952^
 @c^279957^
 @c^279960^
 @c^279961^
+@c^279962^
+@c^279964^
 @c^279968^
 @c^279969^
 @c^279974^
@@ -539,6 +578,13 @@ GoldScout-export 6^04mw8c0ykeyy^17
 @a^834^70:1,108:6,128:1,152:1,171:1,190:2
 @a^946^325:1
 @a^1109^108:1,171:2,172:2,191:1,229:1,230:1
+@a^1125^228:10,229:1,247:1,248:3,249:1,268:1
+@a^1127^188:1
+@a^1128^228:3,229:1,248:2
+@a^1134^208:11,228:4
+@a^1135^188:2,208:3
+@a^1196^167:1
+@a^1199^228:2,248:1
 @a^1236^68:1,69:4,88:2,89:1
 @a^1426^185:1,186:2,205:1
 @a^1718^267:2
@@ -570,6 +616,7 @@ GoldScout-export 6^04mw8c0ykeyy^17
 @a^11913^354:2
 @a^209797^152:1
 @a^267314^111:1
+@a^271530^188:2,208:1
 @f^1413^0^10^150^3820:4:8,6358:2:2,6522:3:3,20709:1:2^149:5,152:2,212:3
 @f^1433^0^82^150^1467:10:10,6289:30:30,6308:50:50,6309:1:1,6311:1:1^184:82
 @l^0^enUS
