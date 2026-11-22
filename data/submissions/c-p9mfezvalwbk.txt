@@ -1,4 +1,4 @@
-GoldScout-export 6^p9mfezvalwbk^20
+GoldScout-export 6^p9mfezvalwbk^22
 40^5^0^6^7^1429^0.4069^0.8015^5^Koboldminenarbeiter^118:1:1,772:1:1,2589:1:2^
 113^24^0^5^6^1429^0.3860^0.8626^24^Steinhauereber^769:16:16,771:2:2,3171:8:8,286215:3:3^
 116^9^0^8^9^1429^0.7025^0.7795^9^Bandit der Defias^1019:6:6,2589:4:8^
@@ -12,7 +12,7 @@ GoldScout-export 6^p9mfezvalwbk^20
 595^4^0^34^35^1434^0.2404^0.1177^4^Jäger der Bloodscalp^2735:1:1,3793:1:1,4306:1:1^
 597^1^0^36^36^1434^0.2483^0.0990^1^Berserker der Bloodscalp^^
 660^3^0^37^37^1434^0.2454^0.1027^3^Hexendoktor der Bloodscalp^2738:1:1,4306:2:4^
-667^1^0^39^39^1434^0.4334^0.3447^1^Krieger der Skullsplitter^4306:1:3^
+667^3^0^39^40^1434^0.4625^0.3816^3^Krieger der Skullsplitter^1520:1:1,4306:1:3,8153:2:3^
 671^1^0^36^37^1434^0.2474^0.1052^1^Kopfjäger der Bloodscalp^^
 694^2^0^33^34^1434^0.2945^0.1956^2^Axtwerfer der Bloodscalp^3771:2:2^
 696^2^0^39^40^1434^0.4363^0.3703^2^Axtwerfer der Skullsplitter^3385:1:1,4306:1:2^
@@ -20,7 +20,7 @@ GoldScout-export 6^p9mfezvalwbk^20
 701^2^0^34^35^1434^0.2545^0.1047^2^Mystiker der Bloodscalp^1710:1:1,2592:1:3,4338:1:1^
 735^4^0^6^7^1429^0.5718^0.6756^4^Murlocbachläufer^779:1:1^
 775^2^0^32^32^1434^0.4035^0.0837^2^Kurzens Agent^1710:1:1,4306:1:1^
-780^3^0^39^40^1434^0.4483^0.3870^3^Mystiker der Skullsplitter^2732:1:1,4338:1:1,15214:1:1,213127:1:1^
+780^9^0^39^40^1434^0.4633^0.3938^9^Mystiker der Skullsplitter^1520:2:2,2732:1:1,4306:3:5,4338:1:1,4424:1:1,8153:1:3,15214:1:1,213127:1:1^
 822^9^0^8^9^1429^0.7166^0.6727^9^Junger Waldbär^774:1:1,805:1:1,3169:1:1,3170:3:3,4865:5:5,7073:1:1,7074:3:3^
 937^13^0^32^33^1434^0.4442^0.1004^13^Kurzens Dschungelkämpfer^2592:1:2,3807:1:1,4306:3:3^
 938^5^0^34^35^1434^0.4466^0.0890^5^Kurzens Kommandosoldat^1707:1:1,2592:1:3,2725:1:1^
@@ -37,12 +37,15 @@ GoldScout-export 6^p9mfezvalwbk^20
 1421^1^0^31^31^1434^0.3813^0.0411^1^Gefreiter Merle^4306:1:1^
 1922^6^0^7^8^1429^0.5919^0.6675^6^Grauer Forstwolf^2672:5:5,3300:2:2^
 2091^1^0^32^32^1437^0.5350^0.5451^1^Häuptling Nek'rosh^3625:1:1^
+2250^2^0^33^33^1416^0.3643^0.7092^2^Bergyeti^1710:1:1^
+2251^4^0^33^34^1416^0.3735^0.6670^4^Riesenyeti^^
 2253^1^0^35^35^1416^0.5984^0.4723^1^Crushridge-Schläger^2843:1:1^
 2255^2^0^38^38^1416^0.4119^0.4800^2^Crushridge-Magier^2843:1:1,3771:1:1^
 2256^5^0^38^39^1416^0.3777^0.5148^5^Crushridge-Vollstrecker^2843:3:3,4306:1:1^
 2287^3^0^39^40^1416^0.3796^0.5251^3^Crushridge-Kriegstreiber^3786:1:1^
 2369^1^0^30^31^1424^0.5778^0.6928^1^Küstenjäger der Säbelflossen^5524:1:1^
 2371^1^0^31^32^1424^0.5670^0.6662^1^Sirene der Säbelflossen^17058:1:1^
+2406^1^0^33^33^1416^0.3150^0.7045^1^Berglöwe^^
 2417^2^0^39^39^1416^0.3892^0.5030^2^Grel'borg der Horter^3684:1:1,4306:1:4^
 2559^1^0^31^31^1417^0.2687^0.2188^1^Hochlandschreiter^213547:1:1^
 2560^1^0^33^34^1417^0.3151^0.6174^1^Hochlandhauer^12184:1:1^
@@ -205,6 +208,7 @@ GoldScout-export 6^p9mfezvalwbk^20
 @i^1416^Rostiges Kriegsbeil
 @i^1419^Abgenutzte Lederstiefel
 @i^1478^Rolle des Schutzes II
+@i^1520^Trollschweiß
 @i^1705^Geringer Mondstein
 @i^1707^Brie aus Stormwind
 @i^1708^Süßer Nektar
@@ -290,6 +294,7 @@ GoldScout-export 6^p9mfezvalwbk^20
 @i^4096^Grobes Gorillahaar
 @i^4306^Seidenstoff
 @i^4338^Magiestoff
+@i^4424^Rolle der Willenskraft III
 @i^4428^Spinnentaster
 @i^4496^Kleiner brauner Beutel
 @i^4536^Glänzender roter Apfel
@@ -347,6 +352,7 @@ GoldScout-export 6^p9mfezvalwbk^20
 @i^7456^Ritterkopfschutz des Tigers
 @i^7756^Handschuhe zur Hundeausbildung
 @i^7909^Aquamarin
+@i^8153^Wildranke
 @i^8365^Rohe Mithrilkopfforelle
 @i^8746^Geflochtene Kutte
 @i^9277^Techbots Speicherkern
@@ -463,6 +469,7 @@ GoldScout-export 6^p9mfezvalwbk^20
 @q^1416^0:2:0
 @q^1419^0:4:0
 @q^1478^1:0:0
+@q^1520^0:15:0
 @q^1705^2:7:1
 @q^1707^1:0:0
 @q^1708^1:0:0
@@ -548,6 +555,7 @@ GoldScout-export 6^p9mfezvalwbk^20
 @q^4096^1:15:0
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4424^1:0:0
 @q^4428^0:15:0
 @q^4496^1:1:0
 @q^4536^1:0:0
@@ -605,6 +613,7 @@ GoldScout-export 6^p9mfezvalwbk^20
 @q^7456^2:4:0
 @q^7756^3:4:0
 @q^7909^2:7:1
+@q^8153^1:7:1
 @q^8365^1:7:1
 @q^8746^0:4:0
 @q^9277^1:12:0
@@ -1881,7 +1890,7 @@ GoldScout-export 6^p9mfezvalwbk^20
 @a^595^44:3,45:1
 @a^597^24:1
 @a^660^24:1,44:2
-@a^667^128:1
+@a^667^128:1,149:1,169:1
 @a^671^44:1
 @a^694^66:1,85:1
 @a^696^128:1,148:1
@@ -1889,7 +1898,7 @@ GoldScout-export 6^p9mfezvalwbk^20
 @a^701^25:1,45:1
 @a^735^251:1,271:3
 @a^775^28:2
-@a^780^148:1,149:1,168:1
+@a^780^148:1,149:6,168:1,169:1
 @a^822^236:2,255:2,257:1,271:1,308:1,313:1,314:1
 @a^937^28:9,29:1,48:2,49:1
 @a^938^28:4,29:1
@@ -1906,12 +1915,15 @@ GoldScout-export 6^p9mfezvalwbk^20
 @a^1421^7:1
 @a^1922^271:5,272:1
 @a^2091^210:1
+@a^2250^286:1,288:1
+@a^2251^267:4
 @a^2253^191:1
 @a^2255^188:2
 @a^2256^187:3,207:1,227:1
 @a^2287^187:1,207:1,227:1
 @a^2369^271:1
 @a^2371^271:1
+@a^2406^286:1
 @a^2417^187:1,207:1
 @a^2559^85:1
 @a^2560^246:1

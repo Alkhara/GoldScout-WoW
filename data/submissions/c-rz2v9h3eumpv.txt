@@ -1,5 +1,9 @@
-GoldScout-export 6^rz2v9h3eumpv^3
+GoldScout-export 6^rz2v9h3eumpv^4
 1853^1^0^0^0^0^0.0000^0.0000^0^^12843:1:1,13964:1:1,16727:1:1^
+3101^15^0^3^4^1411^0.4449^0.5638^15^Vile Familiar^117:4:4,1369:1:1,1370:1:1,1378:1:1,2589:2:2,2649:1:1,2651:1:1,3363:1:1,3365:1:1^
+3102^2^0^3^3^1411^0.4321^0.5198^2^Felstalker^1364:1:1,1374:1:1,4865:1:1,7073:1:1^
+3124^10^0^3^3^1411^0.4671^0.6025^10^Scorpid Worker^1370:1:1,1377:1:1,2650:1:1,3363:1:1,4862:9:9,4867:1:1,7099:4:4,7100:2:2,7101:3:3^
+3183^1^0^5^5^1411^0.4274^0.5294^1^Yarrog Baneshadow^4859:1:1^
 6010^24^0^54^55^1419^0.5796^0.5293^24^Felhound^4583:9:9,4584:1:1,8146:1:1^
 6011^36^0^54^55^1419^0.5812^0.5279^36^Felguard Sentry^8766:1:1,8948:1:1,11732:1:1,12662:5:5,14047:11:16,14256:3:7,248699:1:1^
 7026^4^0^55^56^1428^0.4116^0.3501^4^Blackrock Sorcerer^8952:1:1^
@@ -148,7 +152,20 @@ GoldScout-export 6^rz2v9h3eumpv^3
 16059^1^0^0^0^0^0.0000^0.0000^0^^22047:1:1^
 222525^1^0^0^0^0^0.0000^0.0000^0^^14047:1:2,221314:1:1^
 278644^1^0^0^0^0^0.0000^0.0000^0^^11370:1:1^
+@i^117^Tough Jerky
 @i^1203^Aegis of Stormwind
+@i^1364^Ragged Leather Vest
+@i^1369^Ragged Leather Belt
+@i^1370^Ragged Leather Bracers
+@i^1374^Frayed Shoes
+@i^1377^Frayed Gloves
+@i^1378^Frayed Pants
+@i^2589^Linen Cloth
+@i^2649^Flimsy Chain Belt
+@i^2650^Flimsy Chain Boots
+@i^2651^Flimsy Chain Bracers
+@i^3363^Frayed Belt
+@i^3365^Frayed Bracers
 @i^3676^Slimy Ichor
 @i^3857^Coal
 @i^3945^Twill Boots
@@ -167,11 +184,19 @@ GoldScout-export 6^rz2v9h3eumpv^3
 @i^4584^Large Trophy Paw
 @i^4585^Dripping Spider Mandible
 @i^4787^Burning Pitch
+@i^4859^Burning Blade Medallion
+@i^4862^Scorpid Worker Tail
+@i^4865^Ruined Pelt
+@i^4867^Broken Scorpid Leg
 @i^5758^Mithril Lockbox
 @i^6302^Delicate Insect Wing
 @i^6530^Nightcrawlers
 @i^7068^Elemental Fire
+@i^7073^Broken Fang
 @i^7078^Essence of Fire
+@i^7099^Severed Pincer
+@i^7100^Sticky Ichor
+@i^7101^Bug Eye
 @i^7909^Aquamarine
 @i^7912^Solid Stone
 @i^7972^Ichor of Undeath
@@ -327,7 +352,20 @@ GoldScout-export 6^rz2v9h3eumpv^3
 @i^273131^Bottled Screams
 @i^274964^Mote of Unstable Magic
 @i^281015^Scroll: DOST OREM
+@q^117^1:0:0
 @q^1203^3:4:0
+@q^1364^0:4:0
+@q^1369^0:4:0
+@q^1370^0:4:0
+@q^1374^0:4:0
+@q^1377^0:4:0
+@q^1378^0:4:0
+@q^2589^1:7:1
+@q^2649^0:4:0
+@q^2650^0:4:0
+@q^2651^0:4:0
+@q^3363^0:4:0
+@q^3365^0:4:0
 @q^3676^0:15:0
 @q^3857^1:7:1
 @q^3945^0:4:0
@@ -346,11 +384,19 @@ GoldScout-export 6^rz2v9h3eumpv^3
 @q^4584^0:15:0
 @q^4585^0:15:0
 @q^4787^0:15:0
+@q^4859^1:12:0
+@q^4862^1:12:0
+@q^4865^0:15:0
+@q^4867^0:15:0
 @q^5758^2:15:0
 @q^6302^0:15:0
 @q^6530^1:0:0
 @q^7068^1:7:1
+@q^7073^0:15:0
 @q^7078^2:7:1
+@q^7099^0:15:0
+@q^7100^0:15:0
+@q^7101^0:15:0
 @q^7909^2:7:1
 @q^7912^1:7:1
 @q^7972^1:7:1
@@ -506,6 +552,7 @@ GoldScout-export 6^rz2v9h3eumpv^3
 @q^273131^2:15:1
 @q^274964^1:15:0
 @q^281015^1:0:0
+@m^1411^Durotar
 @m^1419^Blasted Lands
 @m^1423^Eastern Plaguelands
 @m^1428^Burning Steppes
@@ -1065,6 +1112,10 @@ GoldScout-export 6^rz2v9h3eumpv^3
 @c^285279^
 @c^285280^
 @c^285281^
+@a^3101^208:3,228:7,229:5
+@a^3102^208:2
+@a^3124^229:3,249:7
+@a^3183^208:1
 @a^6010^191:4,210:6,211:4,212:8,230:1,232:1
 @a^6011^191:6,210:7,211:7,212:13,230:2,232:1
 @a^7026^128:1,148:3
