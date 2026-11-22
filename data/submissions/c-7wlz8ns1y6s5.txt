@@ -1,4 +1,6 @@
-GoldScout-export 6^7wlz8ns1y6s5^8
+GoldScout-export 6^7wlz8ns1y6s5^9
+1973^21^0^20^21^1421^0.5839^0.7116^21^Wächter von Rabenklaue^1179:2:2,1741:1:1,1744:1:1,1747:1:1,2589:3:4,2592:7:11,4605:3:3,9784:1:1,12979:1:1,271350:1:1^
+1974^12^0^19^20^1421^0.5904^0.7190^12^Zwangsarbeiter von Rabenklaue^1792:1:1,1811:1:1,2589:2:4,2592:1:1,4605:3:3,271343:1:1^
 2350^1^0^21^21^1424^0.5857^0.3376^1^Waldmooskrabbler^1081:1:1^
 3241^2^0^15^16^1413^0.4509^0.1432^2^Savannenpatriarch^4813:1:1,269715:1:1^
 3242^7^0^13^14^1413^0.5104^0.1888^7^Zhevra-Läufer^5086:4:4,5118:2:2,15016:1:1,248684:1:1^
@@ -42,6 +44,7 @@ GoldScout-export 6^7wlz8ns1y6s5^8
 5838^1^0^17^17^1413^0.5299^0.4415^1^Bruchspeer^285282:1:1^
 9523^2^0^15^16^1413^0.4464^0.2654^2^Sturmseher der Kolkar^2455:1:1^
 9524^5^0^16^17^1413^0.4483^0.2643^5^Eindringling der Kolkar^2287:1:1,2592:2:4,5030:1:1^
+212753^2^0^20^20^1421^0.5788^0.6979^2^Gequälte Seele^^
 267307^1^0^20^20^1413^0.5752^0.2715^1^Chol'aruk^276070:1:1^
 267308^2^0^18^19^1413^0.5820^0.2523^2^Fleischfresser der Grimmhauer^^
 @i^774^Malachit
@@ -59,7 +62,12 @@ GoldScout-export 6^7wlz8ns1y6s5^8
 @i^1513^Altes Großschwert
 @i^1516^Abgenutztes Kriegsbeil
 @i^1734^Abgenutzte Panzerhandschuhe
+@i^1741^Geschnürter Umhang
+@i^1744^Geschnürte Panzerschulterpolster
+@i^1747^Gekettelte Stiefel
 @i^1790^Geflickter Umhang
+@i^1792^Geflickte Lederhose
+@i^1811^Stumpfes Claymore
 @i^1817^Stämmiges Kurzschwert
 @i^2251^Klebriges Spinnenbein
 @i^2287^Fleischschenkel
@@ -79,6 +87,7 @@ GoldScout-export 6^7wlz8ns1y6s5^8
 @i^4537^Tel'Abim-Banane
 @i^4561^Skalpiertomahawk der Eule
 @i^4569^Zuverlässiger Hammer des Schattenschutzes
+@i^4605^Rotgetupfter Pilz
 @i^4775^Gesprungener Schnabel
 @i^4776^Gesträubte Feder
 @i^4813^Kleiner Lederkragen
@@ -103,12 +112,16 @@ GoldScout-export 6^7wlz8ns1y6s5^8
 @i^5165^Bluthornfeder
 @i^5469^Schreiterfleisch
 @i^5635^Scharfe Klaue
+@i^9784^Räuber-Stiefel des Affen
+@i^12979^Flammenfluchumhang
 @i^15016^Werwolf-Handlappen der Eule
 @i^17056^Leichte Feder
 @i^211786^Schriftrolle: CHAP BALK WELLES
 @i^248684^Abgefangene Kiste: Textilien des Lehrlings
 @i^248703^Abgefangene Kiste: Barren des Lehrlings
 @i^269715^Savannenlöwenbalg
+@i^271343^Fetzen einer Notiz
+@i^271350^Gequälte Seele
 @i^276070^Chol'aruks Kopf
 @i^285282^Gezackte Messer der Macht
 @q^774^2:7:1
@@ -126,7 +139,12 @@ GoldScout-export 6^7wlz8ns1y6s5^8
 @q^1513^0:2:0
 @q^1516^0:2:0
 @q^1734^0:4:0
+@q^1741^0:4:0
+@q^1744^0:4:0
+@q^1747^0:4:0
 @q^1790^0:4:0
+@q^1792^0:4:0
+@q^1811^0:2:0
 @q^1817^0:2:0
 @q^2251^1:7:1
 @q^2287^1:0:0
@@ -146,6 +164,7 @@ GoldScout-export 6^7wlz8ns1y6s5^8
 @q^4537^1:0:0
 @q^4561^2:2:0
 @q^4569^2:2:0
+@q^4605^1:0:0
 @q^4775^0:15:0
 @q^4776^0:15:0
 @q^4813^0:15:0
@@ -170,15 +189,20 @@ GoldScout-export 6^7wlz8ns1y6s5^8
 @q^5165^1:12:0
 @q^5469^1:7:1
 @q^5635^1:7:1
+@q^9784^2:4:0
+@q^12979^3:4:0
 @q^15016^2:4:0
 @q^17056^1:15:1
 @q^211786^1:0:0
 @q^248684^1:0:1
 @q^248703^2:0:1
 @q^269715^1:12:0
+@q^271343^1:15:0
+@q^271350^1:12:0
 @q^276070^1:12:0
 @q^285282^2:2:0
 @m^1413^Das Brachland
+@m^1421^Silberwald
 @m^1424^Vorgebirge von Hillsbrad
 @m^1440^Ashenvale
 @c^118^
@@ -2286,6 +2310,8 @@ GoldScout-export 6^7wlz8ns1y6s5^8
 @c^285280^
 @c^285281^
 @c^286152^
+@a^1973^271:2,291:19
+@a^1974^271:3,291:4,292:5
 @a^2350^131:1
 @a^3241^49:1,68:1
 @a^3242^50:1,70:3,88:1,90:2
@@ -2329,6 +2355,7 @@ GoldScout-export 6^7wlz8ns1y6s5^8
 @a^5838^170:1
 @a^9523^108:2
 @a^9524^108:5
+@a^212753^271:2
 @a^267307^111:1
 @a^267308^111:2
 @l^0^deDE

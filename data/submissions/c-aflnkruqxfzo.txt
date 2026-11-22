@@ -1,4 +1,4 @@
-GoldScout-export 6^aflnkruqxfzo^16
+GoldScout-export 6^aflnkruqxfzo^17
 157^1^0^15^15^1436^0.3561^0.5731^1^Goretusk^723:1:1,731:1:1^
 449^1^0^17^17^1436^0.3688^0.7589^1^Defias Knuckleduster^^
 587^14^0^33^34^1434^0.3083^0.1853^14^Bloodscalp Warrior^1519:7:7,1520:2:2,2592:1:1,2742:1:1,3783:1:1,4306:4:7,15286:1:1^
@@ -59,6 +59,11 @@ GoldScout-export 6^aflnkruqxfzo^16
 3799^1^0^29^29^1440^0.7561^0.7528^1^Severed Druid^1712:1:1,4306:1:2^
 3801^1^0^29^29^1440^0.7541^0.7527^1^Severed Sleeper^4306:1:1^
 3840^18^0^0^0^0^0.0000^0.0000^0^^954:1:1,1210:1:1,1768:1:1,2589:2:2,2592:3:6,2780:1:1,14129:1:1,14164:1:1,14560:1:1,14729:2:2,15115:1:1,15310:1:1^
+4343^3^0^37^38^1445^0.3897^0.5409^3^Drywallow Snapper^770:2:3,3667:1:1,14240:1:1^
+4344^1^0^39^39^1445^0.3906^0.5593^1^Mottled Drywallow Crocolisk^3667:1:1^
+4387^1^0^38^38^1445^0.3722^0.5021^1^Withervine Mire Beast^^
+4391^2^0^37^38^1445^0.4191^0.5414^2^Swamp Ooze^20763:2:2^
+4414^1^0^38^38^1445^0.3887^0.5580^1^Darkfang Venomspitter^4585:1:1,10285:1:1^
 4420^1^0^0^0^0^0.0000^0.0000^0^^274161:1:1^
 4421^1^0^0^0^0^0.0000^0.0000^0^^6693:1:1,17008:1:1,274463:1:1^
 4422^1^0^0^0^0^0.0000^0.0000^0^^6690:1:1^
@@ -235,6 +240,7 @@ GoldScout-export 6^aflnkruqxfzo^16
 @i^4567^Merc Sword of Agility
 @i^4571^War Knife of Healing
 @i^4582^Soft Bushy Tail
+@i^4585^Dripping Spider Mandible
 @i^4586^Smooth Raptor Skin
 @i^4604^Forest Mushroom Cap
 @i^4605^Red-speckled Mushroom
@@ -274,6 +280,7 @@ GoldScout-export 6^aflnkruqxfzo^16
 @i^9740^Gem of Pythas
 @i^9741^Gem of Serpentis
 @i^9855^Archer's Belt of the Falcon
+@i^10285^Shadow Silk
 @i^10410^Leggings of the Fang
 @i^11386^Squishy Basilisk Eye
 @i^11392^Severed Bat Claw
@@ -290,6 +297,7 @@ GoldScout-export 6^aflnkruqxfzo^16
 @i^14129^Ritual Sandals of Spirit
 @i^14164^Pagan Belt of the Owl
 @i^14186^Raincaller Mantle of Spirit
+@i^14240^Darkmist Bands of Fire Protection
 @i^14560^Prospector's Boots
 @i^14564^Prospector's Mitts
 @i^14565^Prospector's Woolies
@@ -319,6 +327,7 @@ GoldScout-export 6^aflnkruqxfzo^16
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
 @i^20310^Flayed Demon Skin
+@i^20763^Broken Weapon
 @i^213543^Scroll: UPDOG
 @i^248687^Waylaid Crate: Journeyman Ore
 @i^248689^Waylaid Crate: Journeyman Curiosities
@@ -429,6 +438,7 @@ GoldScout-export 6^aflnkruqxfzo^16
 @q^4567^2:2:0
 @q^4571^2:2:0
 @q^4582^1:12:0
+@q^4585^0:15:0
 @q^4586^0:15:0
 @q^4604^1:0:0
 @q^4605^1:0:0
@@ -468,6 +478,7 @@ GoldScout-export 6^aflnkruqxfzo^16
 @q^9740^1:12:0
 @q^9741^1:12:0
 @q^9855^2:4:0
+@q^10285^1:7:1
 @q^10410^3:4:0
 @q^11386^0:15:0
 @q^11392^0:15:0
@@ -484,6 +495,7 @@ GoldScout-export 6^aflnkruqxfzo^16
 @q^14129^2:4:0
 @q^14164^2:4:0
 @q^14186^2:4:0
+@q^14240^2:4:0
 @q^14560^2:4:0
 @q^14564^2:4:0
 @q^14565^2:4:0
@@ -513,6 +525,7 @@ GoldScout-export 6^aflnkruqxfzo^16
 @q^17057^1:15:0
 @q^17058^1:15:0
 @q^20310^1:12:0
+@q^20763^0:15:0
 @q^213543^1:0:0
 @q^248687^1:0:1
 @q^248689^1:0:1
@@ -531,6 +544,7 @@ GoldScout-export 6^aflnkruqxfzo^16
 @m^1436^Westfall
 @m^1440^Ashenvale
 @m^1443^Desolace
+@m^1445^Dustwallow Marsh
 @c^118^
 @c^724^
 @c^733^
@@ -1343,6 +1357,11 @@ GoldScout-export 6^aflnkruqxfzo^16
 @a^3655^230:1
 @a^3799^315:1
 @a^3801^315:1
+@a^4343^207:1,227:1,228:1
+@a^4344^227:1
+@a^4387^207:1
+@a^4391^187:1,249:1
+@a^4414^227:1
 @a^4458^87:1
 @a^4632^194:1
 @a^4633^194:2

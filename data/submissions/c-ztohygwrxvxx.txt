@@ -1,6 +1,6 @@
-GoldScout-export 6^ztohygwrxvxx^2
-2252^1^0^34^34^1416^0.5335^0.4814^1^Crushridge Ogre^3037:1:1,4306:1:2^
-2253^2^0^35^36^1416^0.5249^0.4578^2^Crushridge Brute^^
+GoldScout-export 6^ztohygwrxvxx^3
+2252^3^0^34^35^1416^0.5209^0.4710^3^Crushridge Ogre^3037:1:1,3781:1:1,4306:2:4^
+2253^6^0^35^36^1416^0.5037^0.4263^6^Crushridge Brute^3771:1:1,4306:1:1,262889:1:1^
 2725^3^0^41^43^1418^0.7842^0.3598^3^Scalding Whelp^4460:1:1,6444:2:2^
 2730^1^0^42^42^1418^0.7120^0.3521^1^Rabid Crag Coyote^12208:1:1^
 2731^1^0^36^36^1418^0.5470^0.1567^1^Ridge Stalker^12202:1:1^
@@ -8,6 +8,8 @@ GoldScout-export 6^ztohygwrxvxx^2
 11578^2^0^32^32^1443^0.6106^0.7469^2^Whirlwind Shredder^7069:1:1^
 14226^1^0^40^40^1443^0.5688^0.7448^1^Kaskk^4306:1:2,9895:1:1^
 @i^3037^Whipwood Recurve Bow
+@i^3771^Wild Hog Shank
+@i^3781^Broad Claymore
 @i^4306^Silk Cloth
 @i^4460^Ripped Wing Webbing
 @i^6444^Forked Tongue
@@ -16,7 +18,10 @@ GoldScout-export 6^ztohygwrxvxx^2
 @i^12202^Tiger Meat
 @i^12208^Tender Wolf Meat
 @i^15567^Marauder's Tunic of Arcane Protection
+@i^262889^Sealed Expert's Writ
 @q^3037^2:2:0
+@q^3771^1:0:0
+@q^3781^0:2:0
 @q^4306^1:7:1
 @q^4460^0:15:0
 @q^6444^0:15:0
@@ -25,11 +30,12 @@ GoldScout-export 6^ztohygwrxvxx^2
 @q^12202^1:7:1
 @q^12208^1:7:1
 @q^15567^2:4:0
+@q^262889^3:0:0
 @m^1416^Alterac Mountains
 @m^1418^Badlands
 @m^1443^Desolace
-@a^2252^190:1
-@a^2253^190:2
+@a^2252^169:1,190:2
+@a^2253^129:2,189:1,190:3
 @a^2725^135:1,155:1,156:1
 @a^2730^154:1
 @a^2731^70:1

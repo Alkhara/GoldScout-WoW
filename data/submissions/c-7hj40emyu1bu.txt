@@ -1,4 +1,4 @@
-GoldScout-export 6^7hj40emyu1bu^15
+GoldScout-export 6^7hj40emyu1bu^16
 232^1^0^23^23^1424^0.3296^0.3496^1^Farmer Ray^1205:1:1,2592:1:1^
 2240^2^0^32^33^1416^0.4760^0.8117^2^Syndicate Footpad^1707:1:1,3601:1:1,4306:1:2,5113:1:1^
 2241^1^0^33^34^1416^0.4626^0.7927^1^Syndicate Thief^^
@@ -49,6 +49,7 @@ GoldScout-export 6^7hj40emyu1bu^15
 3374^3^0^21^22^1413^0.4680^0.8554^3^Bael'dun Excavator^2592:1:2,4306:1:1^
 3974^1^0^0^0^0^0.0000^0.0000^0^^274292:1:1^
 3983^1^0^0^0^0^0.0000^0.0000^0^^274290:1:1^
+4054^1^0^24^24^1440^0.5809^0.5989^1^Laughing Sister^5867:1:1^
 4093^11^0^25^26^1441^0.4478^0.4077^11^Galak Wrangler^3385:2:2,4306:1:1^
 4094^13^0^24^25^1441^0.4341^0.3921^13^Galak Scout^1205:2:2,1746:1:1,2592:1:1,3770:1:1,4306:2:4^
 4095^5^0^27^28^1441^0.4355^0.3459^5^Galak Mauler^2592:1:1,4306:2:3^
@@ -127,11 +128,13 @@ GoldScout-export 6^7hj40emyu1bu^15
 7603^8^0^0^0^0^0.0000^0.0000^0^^1805:1:1,4306:2:2,6400:1:1^
 7800^1^0^0^0^0^0.0000^0.0000^0^^9299:1:1,9459:1:1^
 7843^4^0^25^25^1415^0.4321^0.5345^4^Gnomeregan Evacuee^1772:1:1,2592:2:2,4306:1:1^
+9377^1^0^33^33^1441^0.7749^0.8218^1^Swirling Vortex^4634:1:1^
 255065^1^0^0^0^0^0.0000^0.0000^0^^6612:1:1^
 255066^1^0^0^0^0^0.0000^0.0000^0^^^
 255069^2^0^0^0^0^0.0000^0.0000^0^^^
 266357^1^0^36^36^1416^0.6250^0.4524^1^Barton^4306:1:2^
 269134^4^0^0^0^0^0.0000^0.0000^0^^1478:1:1,8184:1:1^
+270094^1^0^30^30^1441^0.5155^0.5340^1^Stormheart^5133:1:1,279186:1:1^
 @i^422^Dwarven Mild
 @i^865^Leaden Mace of Strength
 @i^878^Fist-sized Spinneret
@@ -219,12 +222,14 @@ GoldScout-export 6^7hj40emyu1bu^15
 @i^4556^Speckled Shell Fragment
 @i^4614^Pendant of Myzrael
 @i^4633^Heavy Bronze Lockbox
+@i^4634^Iron Lockbox
 @i^4706^Lambent Scale Cloak
 @i^4720^Nightsky Sash
 @i^4784^Lifeless Stone
 @i^5113^Mark of the Syndicate
 @i^5116^Long Tail Feather
 @i^5117^Vibrant Plume
+@i^5133^Seeping Gizzard
 @i^5137^Bright Eyeball
 @i^5213^Scorching Wand
 @i^5524^Thick-shelled Clam
@@ -232,6 +237,7 @@ GoldScout-export 6^7hj40emyu1bu^15
 @i^5637^Large Fang
 @i^5793^Razorflank's Heart
 @i^5801^Kraul Guano
+@i^5867^Etched Phial
 @i^6308^Raw Bristle Whisker Catfish
 @i^6400^Glimmering Shield
 @i^6444^Forked Tongue
@@ -302,6 +308,7 @@ GoldScout-export 6^7hj40emyu1bu^15
 @i^274291^Polished Skullcap
 @i^274292^Houndmaster Boomerang
 @i^274293^Spellsever Crossbow
+@i^279186^Stormheart's Still-beating Heart
 @q^422^1:0:0
 @q^865^2:2:0
 @q^878^0:7:0
@@ -389,12 +396,14 @@ GoldScout-export 6^7hj40emyu1bu^15
 @q^4556^0:15:0
 @q^4614^2:4:0
 @q^4633^2:15:0
+@q^4634^2:15:0
 @q^4706^2:4:0
 @q^4720^2:4:0
 @q^4784^0:15:0
 @q^5113^0:15:0
 @q^5116^1:7:1
 @q^5117^1:12:0
+@q^5133^0:15:0
 @q^5137^0:15:0
 @q^5213^2:2:0
 @q^5524^1:7:0
@@ -402,6 +411,7 @@ GoldScout-export 6^7hj40emyu1bu^15
 @q^5637^1:7:1
 @q^5793^1:12:0
 @q^5801^1:12:0
+@q^5867^1:12:0
 @q^6308^1:7:1
 @q^6400^2:4:0
 @q^6444^0:15:0
@@ -472,12 +482,14 @@ GoldScout-export 6^7hj40emyu1bu^15
 @q^274291^3:4:0
 @q^274292^3:2:0
 @q^274293^3:2:0
+@q^279186^1:12:0
 @m^1413^The Barrens
 @m^1415^Eastern Kingdoms
 @m^1416^Alterac Mountains
 @m^1420^Tirisfal Glades
 @m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
+@m^1440^Ashenvale
 @m^1441^Thousand Needles
 @c^118^
 @c^858^
@@ -1051,6 +1063,7 @@ GoldScout-export 6^7hj40emyu1bu^15
 @a^2451^186:1
 @a^2503^205:1,206:1,226:1
 @a^3374^349:3
+@a^4054^231:1
 @a^4093^148:1,168:5,169:5
 @a^4094^127:1,128:1,147:1,148:2,168:2,169:6
 @a^4095^128:5
@@ -1073,5 +1086,7 @@ GoldScout-export 6^7hj40emyu1bu^15
 @a^6221^208:2
 @a^6668^349:1
 @a^7843^208:4
+@a^9377^335:1
 @a^266357^192:1
+@a^270094^210:1
 @l^0^enUS

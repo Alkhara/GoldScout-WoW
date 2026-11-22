@@ -1,4 +1,4 @@
-GoldScout-export 5^4aymx994lcjf^8
+GoldScout-export 5^4aymx994lcjf^9
 545^1^0^19^19^1433^0.7553^0.6259^1^Murloc Tidecaller^1468:1:1,1788:1:1^
 550^1^0^14^14^1436^0.4102^0.4917^1^Defias Messenger^1381:1:1,1512:1:1^
 589^1^0^14^15^1436^0.4546^0.7022^1^Defias Pillager^^
@@ -38,7 +38,7 @@ GoldScout-export 5^4aymx994lcjf^8
 1035^5^0^27^28^1437^0.4541^0.4576^5^Dragonmaw Swamprunner^1205:2:2,1705:1:1,3337:2:2^
 1036^3^0^28^29^1437^0.5219^0.5291^3^Dragonmaw Centurion^753:1:1,2592:1:2,4306:1:2^
 1038^1^0^28^29^1437^0.5295^0.5551^1^Dragonmaw Shadowwarder^^
-1040^1^0^25^25^1437^0.4738^0.3412^1^Fen Creeper^2452:1:1^
+1040^13^0^24^25^1437^0.3119^0.3001^13^Fen Creeper^2452:2:2,3356:1:1,12007:1:1^
 1057^4^0^27^28^1437^0.4813^0.4770^4^Dragonmaw Bonewarder^929:1:1,2592:2:3,3337:1:1,4306:1:2,262888:1:1^
 1157^19^0^26^27^1437^0.1408^0.2876^19^Cursed Sailor^1755:1:1,1831:1:1,2592:4:5,4306:4:8,6600:1:1^
 1158^9^0^27^28^1437^0.1459^0.2577^9^Cursed Marine^2592:1:1,4306:3:4^
@@ -150,6 +150,7 @@ GoldScout-export 5^4aymx994lcjf^8
 @i^3205^Inscribed Leather Bracers
 @i^3337^Dragonmaw War Banner
 @i^3348^Giant Crocolisk Skin
+@i^3356^Kingsblood
 @i^3385^Lesser Mana Potion
 @i^3619^Snellig's Snuffbox
 @i^3625^Nek'rosh's Head
@@ -191,6 +192,7 @@ GoldScout-export 5^4aymx994lcjf^8
 @i^9843^Banded Shield of the Owl
 @i^10316^Pattern: Colorful Kilt
 @i^10403^Blackened Defias Belt
+@i^12007^Prairie Ring of Concentration
 @i^14166^Buccaneer's Bracers of Stamina
 @i^15250^Glimmering Flamberge of Stamina
 @i^15927^Bright Sphere
@@ -280,6 +282,7 @@ GoldScout-export 5^4aymx994lcjf^8
 @q^3205^2:4:0
 @q^3337^1:12:0
 @q^3348^1:12:0
+@q^3356^1:7:1
 @q^3385^1:0:0
 @q^3619^1:12:0
 @q^3625^1:12:0
@@ -321,6 +324,7 @@ GoldScout-export 5^4aymx994lcjf^8
 @q^9843^2:4:0
 @q^10316^2:9:0
 @q^10403^3:4:0
+@q^12007^2:4:0
 @q^14166^2:4:0
 @q^15250^2:2:0
 @q^15927^2:4:0
@@ -1214,7 +1218,7 @@ GoldScout-export 5^4aymx994lcjf^8
 @a^1035^169:1,187:1,189:3
 @a^1036^189:1,230:2
 @a^1038^230:1
-@a^1040^129:1
+@a^1040^86:4,106:3,107:1,125:2,129:1,183:1,184:1
 @a^1057^168:1,169:1,189:1,230:1
 @a^1157^82:2,83:2,102:6,122:9
 @a^1158^82:4,83:1,102:2,103:1,122:1

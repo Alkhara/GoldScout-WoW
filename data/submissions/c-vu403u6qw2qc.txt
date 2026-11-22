@@ -1,4 +1,4 @@
-GoldScout-export 6^vu403u6qw2qc^8
+GoldScout-export 6^vu403u6qw2qc^9
 590^1^0^13^14^1436^0.4390^0.6770^1^Defias Looter^^
 1069^1^0^25^25^1437^0.6769^0.4565^1^Crimson Whelp^^
 1492^1^0^47^47^1434^0.3667^0.6928^1^Gorlash^3932:1:1^
@@ -90,6 +90,10 @@ GoldScout-export 6^vu403u6qw2qc^8
 5858^16^0^47^49^1427^0.3013^0.6051^16^Searing Lava Spider^4337:1:1,4585:10:10,10079:1:1,12205:7:7,14227:4:7,15252:1:1^
 5860^1^0^48^48^1427^0.2569^0.3041^1^Twilight Dark Shaman^10092:1:1^
 5862^5^0^49^50^1427^0.2790^0.2607^5^Twilight Geomancer^4024:1:1,4338:2:4,9944:1:1^
+5979^2^0^45^46^1419^0.4478^0.2438^2^Wretched Lost One^4024:1:1^
+5984^5^0^45^46^1419^0.4598^0.2255^5^Starving Snickerfang^4583:1:1,4584:1:1,8391:2:2,12037:1:1,12203:3:3,12208:3:3^
+5988^2^0^50^50^1419^0.4393^0.2735^2^Scorpok Stinger^12037:1:1,19933:1:1^
+5991^2^0^51^52^1419^0.5019^0.3797^2^Redstone Crystalhide^4092:1:1,11389:1:1,280181:1:1^
 6116^6^0^45^46^1447^0.1613^0.7028^6^Highborne Apparition^4338:2:6^
 6117^7^0^46^47^1447^0.1561^0.7149^7^Highborne Lichling^4338:1:1,4608:1:1,7972:1:1^
 6125^6^0^45^46^1447^0.2013^0.6192^6^Haldarr Satyr^3968:1:1,4338:3:7,4599:1:1^
@@ -242,6 +246,7 @@ GoldScout-export 6^vu403u6qw2qc^8
 @i^4557^Fiery Gland
 @i^4580^Sabertooth Fang
 @i^4583^Thick Furry Mane
+@i^4584^Large Trophy Paw
 @i^4585^Dripping Spider Mandible
 @i^4587^Tribal Raptor Feathers
 @i^4588^Pristine Raptor Skull
@@ -292,6 +297,7 @@ GoldScout-export 6^vu403u6qw2qc^8
 @i^8152^Flask of Big Mojo
 @i^8153^Wildvine
 @i^8184^Firestarter
+@i^8391^Snickerfang Jowl
 @i^8428^Laden Dew Gland
 @i^8429^Punctured Dew Gland
 @i^8430^Empty Dew Gland
@@ -350,6 +356,7 @@ GoldScout-export 6^vu403u6qw2qc^8
 @i^11318^Atal'ai Haze
 @i^11386^Squishy Basilisk Eye
 @i^11387^Basilisk Heart
+@i^11389^Shimmering Basilisk Skin
 @i^11408^Bear Jaw
 @i^11409^Bear Flank
 @i^11410^Savage Bear Claw
@@ -394,6 +401,7 @@ GoldScout-export 6^vu403u6qw2qc^8
 @i^18946^Head of Overseer Maltorius
 @i^18959^Smithing Tuyere
 @i^18960^Lookout's Spyglass
+@i^19933^Glowing Scorpid Blood
 @i^19935^Empty Venom Sac
 @i^19936^Dried Scorpid Carapace
 @i^19937^Small Scorpid Claw
@@ -428,6 +436,7 @@ GoldScout-export 6^vu403u6qw2qc^8
 @i^276741^Defias Enforcer's Shoulderpads
 @i^276745^Beastbond Robe
 @i^276890^Zarla's Journal
+@i^280181^Redstone Basilisk Scale
 @i^280459^Crystal Infused Scale
 @i^280608^Eldarath Relic
 @i^280610^Lord Sarthiss' Head
@@ -494,6 +503,7 @@ GoldScout-export 6^vu403u6qw2qc^8
 @q^4557^0:15:0
 @q^4580^0:15:0
 @q^4583^0:15:0
+@q^4584^0:15:0
 @q^4585^0:15:0
 @q^4587^0:15:0
 @q^4588^0:15:0
@@ -544,6 +554,7 @@ GoldScout-export 6^vu403u6qw2qc^8
 @q^8152^1:7:1
 @q^8153^1:7:1
 @q^8184^2:2:0
+@q^8391^1:12:0
 @q^8428^1:12:0
 @q^8429^0:15:0
 @q^8430^0:15:0
@@ -602,6 +613,7 @@ GoldScout-export 6^vu403u6qw2qc^8
 @q^11318^1:12:0
 @q^11386^0:15:0
 @q^11387^0:15:0
+@q^11389^0:15:0
 @q^11408^0:15:0
 @q^11409^0:15:0
 @q^11410^0:15:0
@@ -646,6 +658,7 @@ GoldScout-export 6^vu403u6qw2qc^8
 @q^18946^1:12:0
 @q^18959^1:12:0
 @q^18960^1:12:0
+@q^19933^1:15:0
 @q^19935^0:15:0
 @q^19936^0:15:0
 @q^19937^0:15:0
@@ -680,11 +693,13 @@ GoldScout-export 6^vu403u6qw2qc^8
 @q^276741^3:4:0
 @q^276745^3:4:0
 @q^276890^1:12:0
+@q^280181^1:12:0
 @q^280459^1:12:0
 @q^280608^1:12:0
 @q^280610^1:12:0
 @q^281017^1:0:0
 @q^282632^2:2:0
+@m^1419^Blasted Lands
 @m^1422^Western Plaguelands
 @m^1424^Hillsbrad Foothills
 @m^1425^The Hinterlands
@@ -1222,6 +1237,10 @@ GoldScout-export 6^vu403u6qw2qc^8
 @a^5858^145:1,165:1,166:2,225:2,226:2,265:1,266:1,268:1,285:2,305:3
 @a^5860^125:1
 @a^5862^105:5
+@a^5979^88:1,108:1
+@a^5984^68:1,69:1,88:1,89:1,108:1
+@a^5988^108:2
+@a^5991^149:1,150:1
 @a^6116^263:3,282:1,283:2
 @a^6117^263:2,282:3,283:2
 @a^6125^243:3,244:3

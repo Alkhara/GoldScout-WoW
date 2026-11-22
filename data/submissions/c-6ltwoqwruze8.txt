@@ -1,14 +1,19 @@
-GoldScout-export 6^6ltwoqwruze8^5
+GoldScout-export 6^6ltwoqwruze8^6
 2579^1^0^34^34^1417^0.5784^0.6149^1^Mesa Buzzard^1464:1:1,5116:1:1,12037:1:1^
-2619^1^0^34^35^1417^0.6027^0.5770^1^Hammerfall Grunt^^
+2586^2^0^30^31^1417^0.3224^0.2596^2^Syndicate Highwayman^4306:1:1^
+2589^2^0^31^32^1417^0.3254^0.2899^2^Syndicate Mercenary^4306:1:1,6986:1:1^
+2618^2^0^33^34^1417^0.6030^0.5776^2^Hammerfall Peon^^
+2619^3^0^34^35^1417^0.6022^0.5732^3^Hammerfall Grunt^3771:1:1,6405:1:1^
 2714^1^0^35^35^1417^0.6050^0.5888^1^Forsaken Courier^4482:1:1^
 2721^2^0^35^35^1417^0.6060^0.5898^2^Forsaken Bodyguard^4306:1:2^
 3809^5^0^21^22^1440^0.4088^0.6749^5^Ashenvale Bear^2940:1:1,3702:1:1,3730:1:1,4296:1:1,11406:2:2^
 3817^236^0^22^23^1440^0.4060^0.6601^236^Shadowhorn Stag^5120:24:24,5471:103:103,5566:111:111,5871:33:33,14159:1:1,14162:1:1,15116:1:1,15329:1:1,15946:1:1,211853:1:1,248706:1:1,252804:6:6,262888:1:1^
+12576^1^0^25^25^1441^0.3200^0.2178^1^Grish Longrunner^^
 @i^1464^Buzzard Talon
 @i^2940^Bloody Bear Paw
 @i^3702^Bear Gall Bladder
 @i^3730^Big Bear Meat
+@i^3771^Wild Hog Shank
 @i^3928^Superior Healing Potion
 @i^4296^Pattern: Dark Leather Shoulders
 @i^4306^Silk Cloth
@@ -19,6 +24,8 @@ GoldScout-export 6^6ltwoqwruze8^5
 @i^5566^Broken Antler
 @i^5871^Large Hoof
 @i^6358^Oily Blackmouth
+@i^6405^Nightsky Trousers
+@i^6986^Crimson Lotus
 @i^8365^Raw Mithril Head Trout
 @i^11406^Rotting Bear Carcass
 @i^12037^Mystery Meat
@@ -39,6 +46,7 @@ GoldScout-export 6^6ltwoqwruze8^5
 @q^2940^0:15:0
 @q^3702^0:15:0
 @q^3730^1:7:1
+@q^3771^1:0:0
 @q^3928^1:0:0
 @q^4296^2:9:0
 @q^4306^1:7:1
@@ -49,6 +57,8 @@ GoldScout-export 6^6ltwoqwruze8^5
 @q^5566^0:15:0
 @q^5871^0:15:0
 @q^6358^1:7:1
+@q^6405^2:4:0
+@q^6986^0:15:0
 @q^8365^1:7:1
 @q^11406^0:15:0
 @q^12037^1:7:1
@@ -67,6 +77,7 @@ GoldScout-export 6^6ltwoqwruze8^5
 @q^262888^3:0:0
 @m^1417^Arathi Highlands
 @m^1440^Ashenvale
+@m^1441^Thousand Needles
 @m^1450^Moonglade
 @c^118^
 @c^724^
@@ -757,10 +768,14 @@ GoldScout-export 6^6ltwoqwruze8^5
 @c^285281^
 @c^286152^
 @a^2579^251:1
-@a^2619^232:1
+@a^2586^106:2
+@a^2589^106:1,126:1
+@a^2618^232:2
+@a^2619^232:3
 @a^2714^232:1
 @a^2721^232:2
 @a^3809^249:1,268:2,287:2
 @a^3817^228:6,247:44,248:24,249:31,267:56,268:25,269:3,287:25,288:22
+@a^12576^86:1
 @f^1450^0^309^266^3928:1:1,6358:26:26,8365:34:34,13757:6:6,13758:175:175,13759:25:25,13760:42:42^229:309
 @l^0^enUS

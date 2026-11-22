@@ -1,9 +1,16 @@
-GoldScout-export 6^3nul6bf3fa1l^4
+GoldScout-export 6^3nul6bf3fa1l^5
 2256^1^0^38^39^1416^0.3666^0.5585^1^Crushridge Enforcer^1708:1:1^
 3560^6^0^56^57^2482^0.2607^0.6529^6^Healing Ward^^
+6506^1^0^50^50^1449^0.6043^0.7389^1^Ravasaur Runner^4587:1:1^
 7443^1^0^55^56^1452^0.5605^0.3809^1^Shardtooth Mauler^3730:1:1,11409:1:1,11410:1:1^
 7448^2^0^55^56^1452^0.5673^0.3841^2^Chillwind Chimaera^6826:1:1,12444:1:1^
+8523^2^0^53^54^1423^0.1246^0.2453^2^Scourge Soldier^14047:1:1^
+8540^2^0^55^55^1423^0.1215^0.2466^2^Torn Screamer^14047:1:1,281016:1:1^
+8598^1^0^57^57^1423^0.1837^0.2878^1^Frenzied Plaguehound^12208:1:1^
+9164^12^0^54^55^1449^0.3331^0.6967^12^Elder Diemetradon^5128:1:1,5133:3:3,11018:2:2,264360:5:5^
+9167^7^0^52^54^1449^0.2891^0.6143^7^Frenzied Pterrordax^5128:1:1,5133:3:3,8146:1:1,11018:2:2,264361:5:5^
 10806^1^0^56^56^1452^0.5781^0.3276^1^Ursius^3730:1:1,11408:1:1,11411:1:1^
+14564^19^0^59^60^1423^0.1426^0.2690^19^Terrordale Spirit^3969:1:1,7972:1:1,8766:1:1,8948:2:2,10387:1:1,13820:1:1,14047:8:18^
 249228^12^0^57^58^2482^0.2410^0.5224^12^Fleshflay Ravener^6530:3:3,8766:1:1,8948:3:3,12808:1:1,14047:2:3,272973:1:1^
 249237^1^0^58^58^2482^0.2555^0.5286^1^Eternal Sentry^^
 249247^4^0^57^58^2482^0.2300^0.4954^4^Forgotten Soldier^6530:1:1,7972:1:1,14047:2:5^
@@ -28,8 +35,12 @@ GoldScout-export 6^3nul6bf3fa1l^4
 @i^1708^Sweet Nectar
 @i^3730^Big Bear Meat
 @i^3944^Twill Belt
+@i^3969^Smooth Leather Belt
 @i^4580^Sabertooth Fang
+@i^4587^Tribal Raptor Feathers
 @i^5120^Long Tail Hair
+@i^5128^Shed Lizard Skin
+@i^5133^Seeping Gizzard
 @i^5471^Stag Meat
 @i^6530^Nightcrawlers
 @i^6826^Brilliant Scale
@@ -37,14 +48,18 @@ GoldScout-export 6^3nul6bf3fa1l^4
 @i^7079^Globe of Water
 @i^7909^Aquamarine
 @i^7972^Ichor of Undeath
+@i^8146^Wicked Claw
 @i^8766^Morning Glory Dew
 @i^8948^Dried King Bolete
 @i^8952^Roasted Quail
+@i^10387^Hyperion Girdle of the Whale
+@i^11018^Un'Goro Soil
 @i^11408^Bear Jaw
 @i^11409^Bear Flank
 @i^11410^Savage Bear Claw
 @i^11411^Large Bear Bone
 @i^11420^Elegant Writing Tool
+@i^12208^Tender Wolf Meat
 @i^12444^Uncracked Chillwind Horn
 @i^12808^Essence of Undeath
 @i^13446^Major Healing Potion
@@ -56,16 +71,23 @@ GoldScout-export 6^3nul6bf3fa1l^4
 @i^14047^Runecloth
 @i^19934^Large Scorpid Claw
 @i^263439^Deadwood Tribal Beads
+@i^264360^Diemetradon Meat
+@i^264361^Pterrordax Meat
 @i^272973^Drop of Stolen Life
 @i^273772^Blackthorne Intelligence
 @i^274151^Tender Nightsaber Haunch
 @i^274162^Venom-dripping Heart
 @i^278091^Hailspite Frostmoss
+@i^281016^Scroll: FORGOT HOOF THUD
 @q^1708^1:0:0
 @q^3730^1:7:1
 @q^3944^0:4:0
+@q^3969^0:4:0
 @q^4580^0:15:0
+@q^4587^0:15:0
 @q^5120^0:15:0
+@q^5128^0:15:0
+@q^5133^0:15:0
 @q^5471^1:7:1
 @q^6530^1:0:0
 @q^6826^0:15:0
@@ -73,14 +95,18 @@ GoldScout-export 6^3nul6bf3fa1l^4
 @q^7079^1:7:1
 @q^7909^2:7:1
 @q^7972^1:7:1
+@q^8146^1:7:1
 @q^8766^1:0:0
 @q^8948^1:0:0
 @q^8952^1:0:0
+@q^10387^2:4:0
+@q^11018^1:12:0
 @q^11408^0:15:0
 @q^11409^0:15:0
 @q^11410^0:15:0
 @q^11411^0:2:0
 @q^11420^0:15:0
+@q^12208^1:7:1
 @q^12444^1:12:0
 @q^12808^2:7:1
 @q^13446^1:0:0
@@ -92,12 +118,17 @@ GoldScout-export 6^3nul6bf3fa1l^4
 @q^14047^1:7:1
 @q^19934^0:15:0
 @q^263439^1:12:0
+@q^264360^1:12:0
+@q^264361^1:12:0
 @q^272973^1:12:0
 @q^273772^1:12:0
 @q^274151^1:12:0
 @q^274162^1:12:0
 @q^278091^1:12:0
+@q^281016^1:0:0
 @m^1416^Alterac Mountains
+@m^1423^Eastern Plaguelands
+@m^1449^Un'Goro Crater
 @m^1452^Winterspring
 @m^2482^Mount Hyjal
 @c^118^
@@ -466,9 +497,16 @@ GoldScout-export 6^3nul6bf3fa1l^4
 @c^286152^
 @a^2256^227:1
 @a^3560^244:2,245:2,264:1,285:1
+@a^6506^292:1
 @a^7443^151:1
 @a^7448^151:2
+@a^8523^82:1,102:1
+@a^8540^82:1,102:1
+@a^8598^103:1
+@a^9164^225:2,245:2,266:1,286:2,287:1,307:2,327:1,328:1
+@a^9167^185:1,205:1,225:1,244:1,245:1,286:1,307:1
 @a^10806^131:1
+@a^14564^82:2,102:10,103:5,123:2
 @a^249228^184:1,204:8,205:3
 @a^249237^205:1
 @a^249247^184:2,204:2

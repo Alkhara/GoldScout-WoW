@@ -1,4 +1,4 @@
-GoldScout-export 6^rrwxbkr1hjsp^23
+GoldScout-export 6^rrwxbkr1hjsp^24
 1489^1^0^43^43^1434^0.3881^0.5948^1^Zanzil Hunter^^
 1490^3^0^44^44^1434^0.3900^0.5843^3^Zanzil Witch Doctor^1645:1:1,4016:2:2,4306:1:2,8153:1:1,9906:1:1^
 1514^1^0^44^44^1434^0.3442^0.6296^1^Mokk the Savage^2797:1:1^
@@ -33,6 +33,9 @@ GoldScout-export 6^rrwxbkr1hjsp^23
 4467^4^0^46^47^1425^0.4883^0.6553^4^Vilebranch Soothsayer^1520:1:1,4338:3:3,8153:2:4,279225:2:2^
 4505^4^0^43^44^1434^0.2978^0.8917^4^Bloodsail Deckhand^3910:1:1,4019:1:1,4306:1:2,4338:2:3^
 4506^4^0^43^44^1434^0.2984^0.8959^4^Bloodsail Swabby^3910:1:1,4306:1:2,9260:1:1^
+5260^7^0^42^43^1444^0.5905^0.5812^7^Groddoc Ape^2799:6:6,4096:1:1,4099:2:2^
+5268^7^0^41^42^1444^0.8243^0.3863^7^Ironfur Bear^6258:3:3,11408:3:3,11409:1:1,11411:2:2^
+5356^1^0^42^42^1444^0.7880^0.3838^1^Snarler^7481:1:1^
 5426^2^0^44^45^1446^0.4571^0.3796^2^Blisterpaw Hyena^4583:1:1,12037:1:1,12203:2:2,12208:1:1^
 5429^1^0^43^45^1446^0.4571^0.3798^1^Fire Roc^12207:1:1^
 5452^1^0^47^47^1446^0.5759^0.7083^1^Hazzali Worker^6300:1:1^
@@ -232,6 +235,7 @@ GoldScout-export 6^rrwxbkr1hjsp^23
 @i^4092^Prismatic Basilisk Scale
 @i^4096^Coarse Gorilla Hair
 @i^4097^Chipped Gorilla Tooth
+@i^4099^Tuft of Gorilla Hair
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4422^Scroll of Stamina III
@@ -252,6 +256,7 @@ GoldScout-export 6^rrwxbkr1hjsp^23
 @i^5567^Silver Hook
 @i^5637^Large Fang
 @i^6149^Greater Mana Potion
+@i^6258^Ironfur Liver
 @i^6300^Husk Fragment
 @i^6302^Delicate Insect Wing
 @i^6432^Imperial Cloak
@@ -265,6 +270,7 @@ GoldScout-export 6^rrwxbkr1hjsp^23
 @i^7101^Bug Eye
 @i^7429^Twilight Armor of the Whale
 @i^7479^Ranger Helm of the Sorcerer
+@i^7481^Ranger Boots of the Eagle
 @i^7491^Captain's Shoulderguards of the Falcon
 @i^7909^Aquamarine
 @i^8151^Flask of Mojo
@@ -312,6 +318,9 @@ GoldScout-export 6^rrwxbkr1hjsp^23
 @i^11386^Squishy Basilisk Eye
 @i^11387^Basilisk Heart
 @i^11394^Bat Heart
+@i^11408^Bear Jaw
+@i^11409^Bear Flank
+@i^11411^Large Bear Bone
 @i^12037^Mystery Meat
 @i^12203^Red Wolf Meat
 @i^12207^Giant Egg
@@ -464,6 +473,7 @@ GoldScout-export 6^rrwxbkr1hjsp^23
 @q^4092^0:15:0
 @q^4096^1:15:0
 @q^4097^0:15:0
+@q^4099^0:15:0
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4422^1:0:0
@@ -484,6 +494,7 @@ GoldScout-export 6^rrwxbkr1hjsp^23
 @q^5567^0:15:0
 @q^5637^1:7:1
 @q^6149^1:0:0
+@q^6258^1:12:0
 @q^6300^0:15:0
 @q^6302^0:15:0
 @q^6432^2:4:0
@@ -497,6 +508,7 @@ GoldScout-export 6^rrwxbkr1hjsp^23
 @q^7101^0:15:0
 @q^7429^2:4:0
 @q^7479^2:4:0
+@q^7481^2:4:0
 @q^7491^2:4:0
 @q^7909^2:7:1
 @q^8151^1:7:1
@@ -544,6 +556,9 @@ GoldScout-export 6^rrwxbkr1hjsp^23
 @q^11386^0:15:0
 @q^11387^0:15:0
 @q^11394^0:15:0
+@q^11408^0:15:0
+@q^11409^0:15:0
+@q^11411^0:2:0
 @q^12037^1:7:1
 @q^12203^1:7:1
 @q^12207^1:7:1
@@ -639,6 +654,7 @@ GoldScout-export 6^rrwxbkr1hjsp^23
 @m^1434^Stranglethorn Vale
 @m^1438^Teldrassil
 @m^1443^Desolace
+@m^1444^Feralas
 @m^1446^Tanaris
 @m^2548^Riverglades
 @m^2652^Shen'dralas
@@ -902,6 +918,9 @@ GoldScout-export 6^rrwxbkr1hjsp^23
 @a^4467^249:2,269:2
 @a^4505^345:2,346:2
 @a^4506^345:3,366:1
+@a^5260^231:5,252:2
+@a^5268^155:1,156:3,157:2,175:1
+@a^5356^155:1
 @a^5426^149:2
 @a^5429^149:1
 @a^5452^291:1

@@ -1,4 +1,4 @@
-GoldScout-export 6^5su0xxfwyjyr^8
+GoldScout-export 6^5su0xxfwyjyr^9
 6499^1^0^55^56^1449^0.3928^0.5649^1^Diablosaure Cuiracier^4587:1:1^
 7031^1^0^52^52^1428^0.7010^0.5940^1^Elémentaire d'obsidienne^4784:1:1^
 7032^3^0^55^57^1428^0.6265^0.3735^3^Grand élémentaire d'obsidienne^4784:3:3,8150:1:1^
@@ -29,11 +29,14 @@ GoldScout-export 6^5su0xxfwyjyr^8
 11741^17^0^57^58^1451^0.3821^0.5852^17^Ecraseur térébrant^3669:9:9,3676:7:7,13044:1:1,20424:6:6^
 11744^2^0^55^57^1451^0.3668^0.2624^2^Tempétueux de poussière^7081:1:1^
 11746^1^0^58^58^1451^0.3900^0.5467^1^Grondeur du désert^4784:1:1,7075:1:1^
+11803^1^0^60^60^1451^0.1602^0.8720^1^Gardien du crépuscule Exeter^20395:1:1^
 11804^1^0^60^60^1451^0.4071^0.4158^1^Gardien du crépuscule Havunth^20396:1:1^
-11881^11^0^59^60^1451^0.3346^0.3871^11^Géoseigneur du crépuscule^8952:2:2,13444:1:1,13823:1:1,14047:3:7^
+11880^4^0^58^59^1451^0.3856^0.4203^4^Vengeresse du crépuscule^14047:2:4^
+11881^19^0^59^60^1451^0.3543^0.4145^19^Géoseigneur du crépuscule^8952:2:2,13444:1:1,13823:1:1,14047:7:15^
 12179^1^0^56^57^1451^0.6383^0.5168^1^Sentinelle torturée^^
 13136^1^0^58^58^1451^0.6389^0.5168^1^Bourdon de la Ruche'Ashi^6302:1:1^
 15196^1^0^59^59^1451^0.4486^0.9092^1^Poigne-de-mort^20385:1:1^
+15200^1^0^60^60^1451^0.2639^0.3755^1^Gardienne du crépuscule Mayna^20394:1:1^
 15201^2^0^60^60^1451^0.7175^0.1326^2^Flamme ravageuse du crépuscule^14047:1:1^
 15202^1^0^61^61^1451^0.7248^0.1567^1^Vyral le Vil^20466:1:1^
 15213^1^0^60^60^1451^0.7257^0.1540^1^Suzeraine du crépuscule^^
@@ -140,6 +143,8 @@ GoldScout-export 6^5su0xxfwyjyr^8
 @i^20376^Croc de Glisseuse du sable
 @i^20377^Croc de traqueuse des rochers
 @i^20385^Pince de Poigne-de-mort
+@i^20394^Lexique du crépuscule - Chapitre 1
+@i^20395^Lexique du crépuscule - Chapitre 2
 @i^20396^Lexique du crépuscule - Chapitre 3
 @i^20424^Chair de ver des sables
 @i^20466^Chevalière de Vyral
@@ -236,6 +241,8 @@ GoldScout-export 6^5su0xxfwyjyr^8
 @q^20376^1:12:0
 @q^20377^1:12:0
 @q^20385^1:12:0
+@q^20394^1:12:0
+@q^20395^1:12:0
 @q^20396^1:12:0
 @q^20424^1:7:1
 @q^20466^1:12:0
@@ -1019,11 +1026,14 @@ GoldScout-export 6^5su0xxfwyjyr^8
 @a^11741^207:2,208:1,227:7,228:1,247:4,267:2
 @a^11744^83:1,130:1
 @a^11746^207:1
+@a^11803^343:1
 @a^11804^168:1
-@a^11881^124:2,125:1,145:2,167:2,168:3,187:1
+@a^11880^167:4
+@a^11881^124:2,125:1,145:2,167:5,168:3,187:6
 @a^12179^212:1
 @a^13136^212:1
 @a^15196^368:1
+@a^15200^145:1
 @a^15201^54:2
 @a^15202^74:1
 @a^15213^74:1

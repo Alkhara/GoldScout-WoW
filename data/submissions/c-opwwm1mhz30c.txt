@@ -1,4 +1,4 @@
-GoldScout-export 6^opwwm1mhz30c^9
+GoldScout-export 6^opwwm1mhz30c^10
 2526^1^0^30^30^1432^0.4701^0.1431^1^Mountaineer Morlic^^
 2563^1^0^32^33^1417^0.4430^0.7045^1^Plains Creeper^878:1:1,1081:1:1,2251:1:1^
 2640^2^0^46^47^1425^0.6533^0.6933^2^Vilebranch Witch Doctor^4338:1:1,8151:1:1,9259:1:1^
@@ -129,6 +129,19 @@ GoldScout-export 6^opwwm1mhz30c^9
 255066^2^0^0^0^1416^0.0000^0.0000^0^^1786:1:1,4606:1:1^
 255069^1^0^0^0^1416^0.0000^0.0000^0^^^
 255070^1^0^0^0^1416^0.0000^0.0000^0^^^
+255262^1^0^0^0^0^0.0000^0.0000^0^^^
+255271^1^0^0^0^0^0.0000^0.0000^0^^^
+255276^3^0^0^0^0^0.0000^0.0000^0^^3938:1:1,274028:1:1^
+255364^2^0^0^0^0^0.0000^0.0000^0^^14279:1:1,16044:1:1,274028:1:1^
+255373^1^0^0^0^0^0.0000^0.0000^0^^^
+255377^8^0^0^0^0^0.0000^0.0000^0^^4338:1:4,274028:4:4^
+255391^1^0^0^0^0^0.0000^0.0000^0^^276734:1:1^
+255702^1^0^0^0^0^0.0000^0.0000^0^^276744:1:1^
+255995^4^0^0^0^0^0.0000^0.0000^0^^4419:1:1,262890:1:1^
+255997^1^0^0^0^0^0.0000^0.0000^0^^273883:1:1,276737:1:1^
+256236^1^0^0^0^0^0.0000^0.0000^0^^274029:1:1,276742:1:1^
+271780^3^0^0^0^0^0.0000^0.0000^0^^4021:1:1,4338:2:8,274028:1:1^
+271784^1^0^0^0^0^0.0000^0.0000^0^^274028:1:1^
 @i^863^Gloom Reaper of Intellect
 @i^878^Fist-sized Spinneret
 @i^1081^Crisp Spider Meat
@@ -158,6 +171,7 @@ GoldScout-export 6^opwwm1mhz30c^9
 @i^3803^Hardened Cloak
 @i^3827^Mana Potion
 @i^3928^Superior Healing Potion
+@i^3938^Crochet Bracers
 @i^3939^Crochet Cloak
 @i^3943^Crochet Vest
 @i^3949^Twill Pants
@@ -287,12 +301,14 @@ GoldScout-export 6^opwwm1mhz30c^9
 @i^12208^Tender Wolf Meat
 @i^12470^Sandstalker Ankleguards
 @i^13088^Gazlowe's Charm
+@i^14279^Opulent Bracers of Shadow Protection
 @i^14774^Ravager's Crown
 @i^15233^Savage Axe of Frost Protection
 @i^15245^Vorpal Dagger of the Bandit
 @i^15249^Polished Zweihander of Holy Wrath
 @i^15596^Steadfast Legplates of the Bandit
 @i^15760^Pattern: Ironfeather Breastplate
+@i^16044^Schematic: Lifelike Mechanical Toad
 @i^19025^Skylord Plume
 @i^19064^Shackle Key
 @i^19507^Inquisitor's Shawl
@@ -314,6 +330,9 @@ GoldScout-export 6^opwwm1mhz30c^9
 @i^262889^Sealed Expert's Writ
 @i^262890^Sealed Artisan's Writ
 @i^273049^Archmagister's Faceted Pendant
+@i^273883^Ca'zass's Head
+@i^274028^Blood Red Bandana
+@i^274029^Ornate Shackle Key
 @i^274431^Sandstorm Staff
 @i^274484^Axe of Inevitable Ruin
 @i^274641^Theka's Last Breath
@@ -323,6 +342,10 @@ GoldScout-export 6^opwwm1mhz30c^9
 @i^274655^Peacekeeper Wand
 @i^276158^Crystallized Shard
 @i^276160^Mana Fragment
+@i^276734^Wrex's Pinky Ring
+@i^276737^Cloak of the Tidemistress
+@i^276742^Girdle of Extracted Answers
+@i^276744^Zarla's Snack Pouch
 @i^277112^Zum'rah's Head
 @q^863^2:2:0
 @q^878^0:7:0
@@ -353,6 +376,7 @@ GoldScout-export 6^opwwm1mhz30c^9
 @q^3803^0:4:0
 @q^3827^1:0:0
 @q^3928^1:0:0
+@q^3938^0:4:0
 @q^3939^0:4:0
 @q^3943^0:4:0
 @q^3949^0:4:0
@@ -482,12 +506,14 @@ GoldScout-export 6^opwwm1mhz30c^9
 @q^12208^1:7:1
 @q^12470^3:4:0
 @q^13088^3:4:0
+@q^14279^2:4:0
 @q^14774^2:4:0
 @q^15233^2:2:0
 @q^15245^2:2:0
 @q^15249^2:2:0
 @q^15596^2:4:0
 @q^15760^3:9:0
+@q^16044^2:9:0
 @q^19025^1:12:0
 @q^19064^1:12:0
 @q^19507^3:4:0
@@ -509,6 +535,9 @@ GoldScout-export 6^opwwm1mhz30c^9
 @q^262889^3:0:0
 @q^262890^3:0:0
 @q^273049^3:4:0
+@q^273883^1:12:0
+@q^274028^1:12:0
+@q^274029^1:12:0
 @q^274431^3:2:0
 @q^274484^3:2:0
 @q^274641^3:4:0
@@ -518,6 +547,10 @@ GoldScout-export 6^opwwm1mhz30c^9
 @q^274655^3:2:0
 @q^276158^0:15:0
 @q^276160^0:15:0
+@q^276734^3:4:0
+@q^276737^3:4:0
+@q^276742^3:4:0
+@q^276744^3:4:0
 @q^277112^1:12:0
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
