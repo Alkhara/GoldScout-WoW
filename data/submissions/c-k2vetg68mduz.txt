@@ -1,4 +1,4 @@
-GoldScout-export 6^k2vetg68mduz^22
+GoldScout-export 6^k2vetg68mduz^23
 69^8^0^2^2^1429^0.4676^0.3935^8^Timber Wolf^1372:1:1,2652:1:1,2672:1:1,4865:1:1,7073:3:3,7074:1:1^
 299^53^0^1^1^1429^0.4657^0.3955^53^Young Wolf^1368:2:2,1369:1:1,1370:2:2,1374:2:2,1377:1:1,2211:1:1,2650:1:1,2651:1:1,2654:1:1,2672:11:11,4865:18:18,7073:16:16,7074:16:16^
 587^2^1^33^34^1434^0.2959^0.1910^2^Bloodscalp Warrior^4306:1:1^16883:1:1
@@ -58,6 +58,8 @@ GoldScout-export 6^k2vetg68mduz^22
 2477^1^0^19^19^1432^0.7378^0.3982^1^Gradok^2589:1:2,3377:1:1^
 2478^1^0^19^19^1432^0.7361^0.4011^1^Haren Swifthoof^5319:1:1^
 2992^1^0^37^37^1435^0.6319^0.1887^1^Healing Ward V^^
+4382^4^0^35^36^1445^0.5515^0.2769^4^Withervine Creeper^^
+4386^4^0^36^36^1445^0.5515^0.2773^4^Withervine Bark Ripper^3827:1:1^
 4632^2^2^31^31^1443^0.7175^0.4393^2^Kolkar Centaur^4306:2:2,6079:1:1^
 4634^1^1^32^32^1443^0.7231^0.4020^1^Kolkar Mauler^6079:1:1,248690:1:1^
 4635^10^9^31^32^1443^0.7235^0.4199^10^Kolkar Windchaser^2592:1:1,3771:1:1,4306:4:5,6079:2:2,254432:1:1^1710:1:1,3771:1:1,5429:1:1,16883:1:1
@@ -222,6 +224,7 @@ GoldScout-export 6^k2vetg68mduz^22
 @i^3813^Double Mail Pants
 @i^3816^Reflective Heater
 @i^3817^Reinforced Buckler
+@i^3827^Mana Potion
 @i^3864^Citrine
 @i^3879^Paw of Sin'Dall
 @i^3918^Singing Crystal Shard
@@ -298,6 +301,8 @@ GoldScout-export 6^k2vetg68mduz^22
 @i^7609^Elder's Amber Stave of Shadow Protection
 @i^8146^Wicked Claw
 @i^8188^Explosive Shotgun
+@i^8365^Raw Mithril Head Trout
+@i^8366^Bloated Mithril Head Trout
 @i^8746^Interlaced Cowl
 @i^9784^Raider's Boots of the Tiger
 @i^9863^Archer's Shoulderpads of Arcane Protection
@@ -448,6 +453,7 @@ GoldScout-export 6^k2vetg68mduz^22
 @q^3813^0:4:0
 @q^3816^0:4:0
 @q^3817^0:4:0
+@q^3827^1:0:0
 @q^3864^2:7:1
 @q^3879^1:12:0
 @q^3918^1:12:0
@@ -524,6 +530,8 @@ GoldScout-export 6^k2vetg68mduz^22
 @q^7609^2:4:0
 @q^8146^1:7:1
 @q^8188^2:2:0
+@q^8365^1:7:1
+@q^8366^2:15:0
 @q^8746^0:4:0
 @q^9784^2:4:0
 @q^9863^2:4:0
@@ -597,6 +605,7 @@ GoldScout-export 6^k2vetg68mduz^22
 @m^1436^Westfall
 @m^1437^Wetlands
 @m^1443^Desolace
+@m^1445^Dustwallow Marsh
 @m^1453^Stormwind City
 @m^2548^Riverglades
 @c^118^
@@ -1374,6 +1383,8 @@ GoldScout-export 6^k2vetg68mduz^22
 @a^2477^154:1
 @a^2478^174:1
 @a^2992^72:1
+@a^4382^111:4
+@a^4386^111:4
 @a^4632^174:1,194:1
 @a^4634^174:1
 @a^4635^154:1,174:9
@@ -1434,5 +1445,6 @@ GoldScout-export 6^k2vetg68mduz^22
 @a^272228^290:2,310:1
 @f^1436^0^98^115^6303:38:38,6307:2:2,6351:1:1,6353:1:1,6358:21:21,6361:35:35^225:98
 @f^1437^0^9^150^6307:1:1,6361:8:8^240:4,241:5
+@f^1445^0^215^152^6308:93:93,8365:122:122,8366:3:3^111:215
 @f^1453^0^146^1^858:1:1,3385:2:2,6289:93:93,6291:19:19,6308:29:29,6309:1:1,6515:1:1^271:75,355:71
 @l^0^enUS

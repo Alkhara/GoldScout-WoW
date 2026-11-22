@@ -1,4 +1,4 @@
-GoldScout-export 5^pe9ca3cwajce^25
+GoldScout-export 5^pe9ca3cwajce^26
 92^3^0^39^40^1418^0.3990^0.8036^3^Rock Elemental^4552:3:3,4627:3:3,4784:2:2,7912:2:3^
 587^7^6^33^34^1434^0.3227^0.1579^7^Bloodscalp Warrior^1519:2:2,1520:1:1,2750:1:1,3796:1:1,3901:3:3,3915:3:3,4306:1:1^
 588^22^14^34^35^1434^0.2442^0.1151^22^Bloodscalp Scout^1519:1:1,1708:1:1,2592:1:1,3915:2:2,4306:4:4,9853:1:1^
@@ -112,8 +112,13 @@ GoldScout-export 5^pe9ca3cwajce^25
 3560^14^0^37^41^1418^0.5010^0.6836^9^Healing Ward^^
 3712^1^0^19^20^1440^0.1117^0.2699^1^Wrathtail Razortail^5523:1:1^
 3713^1^0^18^19^1440^0.1316^0.2620^1^Wrathtail Wave Rider^5523:1:1,16648:1:1^
+3846^1^0^17^17^1440^0.1487^0.3119^1^Talen^^
 3975^1^0^0^0^0^0.0000^0.0000^0^^^
 3976^1^0^0^0^0^0.0000^0.0000^0^^^
+3989^2^0^18^19^1442^0.7333^0.5381^2^Venture Co. Logger^2592:1:2^
+3999^4^5^21^22^1442^0.7213^0.6088^4^Windshear Digger^2592:1:2^3770:1:1
+4004^2^1^21^22^1442^0.7212^0.6119^2^Windshear Overlord^4538:1:1^
+4073^1^0^23^23^1442^0.6615^0.4906^1^XT 4^^
 4286^6^0^0^0^0^0.0000^0.0000^0^^^
 4289^1^0^0^0^0^0.0000^0.0000^0^^^
 4290^7^0^0^0^0^0.0000^0.0000^0^^5431:1:1^
@@ -213,6 +218,7 @@ GoldScout-export 5^pe9ca3cwajce^25
 5616^13^8^40^41^1446^0.6254^0.3023^13^Wastewander Thief^3928:2:2,4306:1:2,4338:1:2,8483:4:4,264215:1:1^
 5618^11^6^41^42^1446^0.6299^0.2875^11^Wastewander Bandit^4338:2:4,8483:1:1^
 5855^1^0^47^47^1427^0.5642^0.5506^1^Magma Elemental^4787:1:1^
+5932^1^0^22^22^1442^0.6455^0.5428^1^Taskmaster Whipfang^9772:1:1^
 6013^1^0^36^37^1418^0.4298^0.5237^1^Wayward Buzzard^^
 6575^5^0^0^0^0^0.0000^0.0000^0^^^
 6906^1^0^0^0^0^0.0000^0.0000^0^^^
@@ -428,6 +434,7 @@ GoldScout-export 5^pe9ca3cwajce^25
 @i^3685^Raptor Egg
 @i^3704^Rusted Iron Key
 @i^3712^Turtle Meat
+@i^3770^Mutton Chop
 @i^3771^Wild Hog Shank
 @i^3778^Taut Compound Bow
 @i^3779^Hefty War Axe
@@ -490,6 +497,7 @@ GoldScout-export 5^pe9ca3cwajce^25
 @i^4469^Rod of Order
 @i^4510^Befouled Bloodstone Orb
 @i^4513^Raptor Heart
+@i^4538^Snapvine Watermelon
 @i^4539^Goldenbark Apple
 @i^4544^Mulgore Spice Bread
 @i^4551^Or'Kalar's Head
@@ -571,6 +579,7 @@ GoldScout-export 5^pe9ca3cwajce^25
 @i^8161^Jouster's Visor
 @i^8483^Wastewander Water Pouch
 @i^9294^Recipe: Wildvine Potion
+@i^9772^Greenweave Leggings of the Whale
 @i^9853^Conjurer's Cinch of Stamina
 @i^10285^Shadow Silk
 @i^10457^Empty Sea Snail Shell
@@ -712,6 +721,7 @@ GoldScout-export 5^pe9ca3cwajce^25
 @q^3685^1:7:1
 @q^3704^1:13:0
 @q^3712^1:7:1
+@q^3770^1:0:0
 @q^3771^1:0:0
 @q^3778^0:2:0
 @q^3779^0:2:0
@@ -774,6 +784,7 @@ GoldScout-export 5^pe9ca3cwajce^25
 @q^4469^1:12:0
 @q^4510^1:12:0
 @q^4513^1:12:0
+@q^4538^1:0:0
 @q^4539^1:0:0
 @q^4544^1:0:0
 @q^4551^1:12:0
@@ -855,6 +866,7 @@ GoldScout-export 5^pe9ca3cwajce^25
 @q^8161^2:4:0
 @q^8483^1:12:0
 @q^9294^2:9:0
+@q^9772^2:4:0
 @q^9853^2:4:0
 @q^10285^1:7:1
 @q^10457^0:15:0
@@ -951,6 +963,7 @@ GoldScout-export 5^pe9ca3cwajce^25
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
 @m^1440^Ashenvale
+@m^1442^Stonetalon Mountains
 @m^1443^Desolace
 @m^1445^Dustwallow Marsh
 @m^1446^Tanaris
@@ -1136,6 +1149,11 @@ GoldScout-export 5^pe9ca3cwajce^25
 @a^3560^269:4,270:5
 @a^3712^102:1
 @a^3713^102:1
+@a^3846^122:1
+@a^3989^214:1,234:1
+@a^3999^234:1,254:3
+@a^4004^254:2
+@a^4073^193:1
 @a^4323^268:3,269:9,288:1,308:3,328:3,329:1
 @a^4324^268:2,269:8,288:3,289:2,308:3,309:2,328:2,329:2
 @a^4328^267:5
@@ -1210,6 +1228,7 @@ GoldScout-export 5^pe9ca3cwajce^25
 @a^5616^91:2,112:2,132:9
 @a^5618^92:2,112:6,132:3
 @a^5855^231:1
+@a^5932^212:1
 @a^6013^208:1
 @a^7327^369:1
 @a^7332^290:1
