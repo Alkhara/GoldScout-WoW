@@ -1,19 +1,21 @@
-GoldScout-export 5^0fux42a0v8jk^17
+GoldScout-export 5^0fux42a0v8jk^18
 1867^1^0^14^14^1421^0.5299^0.6997^1^Dalaran Apprentice^2589:1:3^
 2964^18^0^9^10^1412^0.3278^0.3168^18^Windfury Sorceress^117:2:2,118:1:1,1411:1:1,1423:1:1,2589:4:8,3283:1:1,4752:6:6,4775:3:3,4776:1:1,15009:1:1,15302:1:1^
 2965^16^0^10^11^1412^0.3281^0.3193^15^Windfury Matriarch^117:2:2,118:1:1,1730:1:1,2589:7:11,3013:1:1,4753:6:6,4775:6:6,4776:1:1,17056:5:5^
 2978^1^0^8^8^1412^0.4267^0.2546^1^Venture Co. Worker^^
 2979^1^0^9^9^1412^0.4267^0.2546^1^Venture Co. Supervisor^118:1:1^
 3099^6^0^6^7^1411^0.4582^0.4377^6^Dire Mottled Boar^769:6:6,3171:1:1^
-3100^2^0^8^9^1411^0.3901^0.5233^2^Elder Mottled Boar^769:2:2^
+3100^5^0^8^9^1411^0.4756^0.3405^5^Elder Mottled Boar^769:5:5,771:1:1,3171:1:1,15003:1:1^
 3111^8^0^6^7^1411^0.4809^0.4886^8^Razormane Quilboar^1411:2:2,2138:1:1,2589:4:7^
 3112^14^0^7^8^1411^0.4791^0.4852^14^Razormane Scout^118:1:1,1425:1:1,1430:1:1,2589:6:9,4536:1:1,8178:1:1^
 3113^11^0^8^9^1411^0.3943^0.5063^11^Razormane Dustrunner^118:1:1,159:1:1,1422:1:1,1431:1:1,2589:3:4,4536:1:1^
 3114^13^0^9^10^1411^0.4085^0.4692^13^Razormane Battleguard^118:1:1,768:1:1,1417:1:1,2589:1:1,2648:1:1,2774:1:1,4536:2:2^
+3117^8^0^9^10^1411^0.5285^0.2296^8^Dustwind Savage^159:1:1,2589:2:3,4775:1:1,4776:1:1,15479:1:1^
+3118^8^0^10^11^1411^0.5156^0.2062^8^Dustwind Storm Witch^1416:1:1,2589:3:5,4564:1:1,4775:3:3,17056:3:3,277661:1:1^
 3125^2^0^5^6^1411^0.5719^0.4403^2^Clattering Scorpid^5466:1:1^
 3126^2^0^7^8^1411^0.4404^0.4435^2^Armored Scorpid^4867:1:1,5466:1:1^
 3127^1^0^9^10^1411^0.4462^0.1861^1^Venomtail Scorpid^^
-3195^1^0^9^9^1411^0.5300^0.2787^1^Burning Blade Thug^^
+3195^4^0^8^9^1411^0.5286^0.2853^4^Burning Blade Thug^117:1:1,2589:1:2^
 3196^4^0^9^10^1411^0.5191^0.2628^4^Burning Blade Neophyte^117:1:1,1414:1:1^
 3197^13^0^9^10^1411^0.5255^0.0909^13^Burning Blade Fanatic^117:2:2,1420:1:1,1423:1:1,2589:6:9,3013:1:1,14090:1:1^
 3198^9^0^10^11^1411^0.5250^0.0909^9^Burning Blade Apprentice^118:1:1,2589:3:4,2644:1:1,2648:1:1,3013:1:1,14544:1:1^
@@ -78,20 +80,25 @@ GoldScout-export 5^0fux42a0v8jk^17
 251661^10^0^5^6^2521^0.4232^0.4095^10^Galestrider^2653:1:1,4757:3:3,5469:6:6,6889:2:2,7096:5:5,7097:2:2^
 251918^3^0^7^7^2521^0.4744^0.3697^3^Highlands Bandit^2589:1:1,252028:1:1,252030:1:1,252031:1:2,257945:2:2^
 254589^1^0^8^8^2521^0.4261^0.5207^1^Vulgara the Insatiable^257942:1:1^
+275662^11^0^9^10^1411^0.5933^0.2304^11^Spitelash Scout^118:1:1,774:1:1,1430:1:1,286008:6:6^
+275663^10^0^10^11^1411^0.5932^0.2339^10^Spitelash Attendant^1181:1:1,1420:1:1,1507:1:1,1731:1:1,2589:2:4,286008:3:3^
 @i^117^Tough Jerky
 @i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
 @i^768^Lumberjack Axe
 @i^769^Chunk of Boar Meat
+@i^771^Chipped Boar Tusk
 @i^774^Malachite
 @i^785^Mageroyal
 @i^818^Tigerseye
 @i^858^Lesser Healing Potion
 @i^1179^Ice Cold Milk
+@i^1181^Scroll of Spirit
 @i^1210^Shadowgem
 @i^1411^Withered Staff
 @i^1412^Crude Bastard Sword
 @i^1414^Cracked Sledge
+@i^1416^Rusty Hatchet
 @i^1417^Beaten Battle Axe
 @i^1420^Worn Leather Bracers
 @i^1421^Worn Hide Cloak
@@ -104,9 +111,11 @@ GoldScout-export 5^0fux42a0v8jk^17
 @i^1501^Calico Tunic
 @i^1503^Warped Leather Boots
 @i^1506^Warped Leather Gloves
+@i^1507^Warped Leather Pants
 @i^1512^Crude Battle Axe
 @i^1515^Rough Wooden Staff
 @i^1730^Worn Mail Belt
+@i^1731^Worn Mail Boots
 @i^1737^Worn Mail Vest
 @i^1745^Laced Mail Vest
 @i^1791^Patched Leather Gloves
@@ -143,6 +152,7 @@ GoldScout-export 5^0fux42a0v8jk^17
 @i^3676^Slimy Ichor
 @i^4536^Shiny Red Apple
 @i^4537^Tel'Abim Banana
+@i^4564^Spiked Club of Magic
 @i^4566^Sturdy Quarterstaff of the Gorilla
 @i^4577^Compact Shotgun
 @i^4604^Forest Mushroom Cap
@@ -209,6 +219,7 @@ GoldScout-export 5^0fux42a0v8jk^17
 @i^14376^Sanguine Cape
 @i^14540^Taragaman the Hungerer's Heart
 @i^14544^Lieutenant's Insignia
+@i^15003^Primal Belt
 @i^15009^Primal Leggings of the Monkey
 @i^15011^Lupine Cord of Power
 @i^15110^Rigid Belt of Intellect
@@ -218,6 +229,7 @@ GoldScout-export 5^0fux42a0v8jk^17
 @i^15301^Grizzly Slippers
 @i^15302^Grizzly Belt
 @i^15306^Feral Bindings of Agility
+@i^15479^Charger's Armor of Stamina
 @i^15480^War Torn Girdle
 @i^15501^Outrunner's Cloak of Intellect
 @i^17056^Light Feather
@@ -234,20 +246,25 @@ GoldScout-export 5^0fux42a0v8jk^17
 @i^272998^Bone Knuckles
 @i^272999^Barbaric Crossbow
 @i^273003^Searing Dagger
+@i^277661^Dull Storm Orb
+@i^286008^Naga Spinefin
 @q^117^1:0:0
 @q^118^1:0:0
 @q^159^1:0:0
 @q^768^1:2:0
 @q^769^1:7:1
+@q^771^0:15:0
 @q^774^2:7:1
 @q^785^1:7:1
 @q^818^2:7:1
 @q^858^1:0:0
 @q^1179^1:0:0
+@q^1181^1:0:0
 @q^1210^2:7:1
 @q^1411^0:2:0
 @q^1412^0:2:0
 @q^1414^0:2:0
+@q^1416^0:2:0
 @q^1417^0:2:0
 @q^1420^0:4:0
 @q^1421^0:4:0
@@ -260,9 +277,11 @@ GoldScout-export 5^0fux42a0v8jk^17
 @q^1501^0:4:0
 @q^1503^0:4:0
 @q^1506^0:4:0
+@q^1507^0:4:0
 @q^1512^0:2:0
 @q^1515^0:2:0
 @q^1730^0:4:0
+@q^1731^0:4:0
 @q^1737^0:4:0
 @q^1745^0:4:0
 @q^1791^0:4:0
@@ -299,6 +318,7 @@ GoldScout-export 5^0fux42a0v8jk^17
 @q^3676^0:15:0
 @q^4536^1:0:0
 @q^4537^1:0:0
+@q^4564^2:2:0
 @q^4566^2:2:0
 @q^4577^2:2:0
 @q^4604^1:0:0
@@ -365,6 +385,7 @@ GoldScout-export 5^0fux42a0v8jk^17
 @q^14376^2:4:0
 @q^14540^1:12:0
 @q^14544^1:12:0
+@q^15003^1:4:0
 @q^15009^2:4:0
 @q^15011^2:4:0
 @q^15110^2:4:0
@@ -374,6 +395,7 @@ GoldScout-export 5^0fux42a0v8jk^17
 @q^15301^1:4:0
 @q^15302^1:4:0
 @q^15306^2:4:0
+@q^15479^2:4:0
 @q^15480^1:4:0
 @q^15501^2:4:0
 @q^17056^1:15:1
@@ -390,6 +412,8 @@ GoldScout-export 5^0fux42a0v8jk^17
 @q^272998^3:2:0
 @q^272999^3:2:0
 @q^273003^3:2:0
+@q^277661^1:12:0
+@q^286008^1:12:0
 @m^1411^Durotar
 @m^1412^Mulgore
 @m^1413^The Barrens
@@ -455,15 +479,17 @@ GoldScout-export 5^0fux42a0v8jk^17
 @a^2978^108:1
 @a^2979^108:1
 @a^3099^168:2,169:4
-@a^3100^207:2
+@a^3100^89:1,91:2,207:2
 @a^3111^188:1,189:3,190:2,208:1,210:1
 @a^3112^188:2,189:9,190:2,208:1
 @a^3113^148:2,207:9
 @a^3114^148:4,168:2,207:7
+@a^3117^90:7,110:1
+@a^3118^70:1,90:7
 @a^3125^171:2
 @a^3126^168:1,188:1
 @a^3127^68:1
-@a^3195^110:1
+@a^3195^110:4
 @a^3196^110:4
 @a^3197^30:12,50:1
 @a^3198^30:7,50:2
@@ -497,4 +523,6 @@ GoldScout-export 5^0fux42a0v8jk^17
 @a^251661^148:2,149:2,167:3,168:2,169:1
 @a^251918^149:3
 @a^254589^208:1
+@a^275662^91:11
+@a^275663^91:10
 @l^0^enUS
