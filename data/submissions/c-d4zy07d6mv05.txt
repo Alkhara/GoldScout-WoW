@@ -1,4 +1,4 @@
-GoldScout-export 6^d4zy07d6mv05^9
+GoldScout-export 6^d4zy07d6mv05^10
 667^1^0^39^40^1434^0.4597^0.3264^1^Skullsplitter Warrior^1477:1:1,4306:1:1^
 669^1^0^41^41^1434^0.4768^0.4111^1^Skullsplitter Hunter^4338:1:2^
 670^2^0^41^42^1434^0.4560^0.4072^2^Skullsplitter Witch Doctor^1520:1:1,4338:2:3^
@@ -20,6 +20,9 @@ GoldScout-export 6^d4zy07d6mv05^9
 861^1^0^36^37^1435^0.1697^0.4992^1^Stonard Scout^^
 1082^2^0^38^39^1435^0.6336^0.2524^2^Sawtooth Crocolisk^770:1:1,3667:1:1,12037:1:1^
 1084^7^0^35^36^1435^0.2530^0.4246^7^Young Sawtooth Crocolisk^770:4:4,3667:3:3,12037:3:3^
+2572^5^0^35^36^1417^0.8208^0.3799^5^Drywhisker Kobold^4306:1:1,4435:2:2^
+2573^7^0^37^38^1417^0.8515^0.3228^7^Drywhisker Surveyor^4306:3:6,4338:2:2,4435:1:1,4539:1:1,9863:1:1^
+2574^13^0^36^37^1417^0.8472^0.3279^13^Drywhisker Digger^4306:3:6,4338:2:2,4435:4:4^
 3099^10^0^6^7^1411^0.4252^0.4668^10^Dire Mottled Boar^769:10:10,771:1:1,3171:2:2^
 3100^15^0^8^9^1411^0.3711^0.4957^15^Elder Mottled Boar^769:11:11,771:3:3,774:1:1,3171:5:5,6348:1:1^
 3110^1^0^10^11^1411^0.3571^0.5241^1^Dreadmaw Crocolisk^4875:1:1^
@@ -144,8 +147,10 @@ GoldScout-export 6^d4zy07d6mv05^9
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4402^Small Flame Sac
+@i^4435^Mote of Myzrael
 @i^4459^Brittle Dragon Bone
 @i^4460^Ripped Wing Webbing
+@i^4539^Goldenbark Apple
 @i^4562^Severing Axe of the Falcon
 @i^4565^Simple Dagger
 @i^4582^Soft Bushy Tail
@@ -192,6 +197,7 @@ GoldScout-export 6^d4zy07d6mv05^9
 @i^9355^Hoop Earring
 @i^9849^Conjurer's Hood of the Hierophant
 @i^9851^Conjurer's Breeches of the Owl
+@i^9863^Archer's Shoulderpads of the Tiger
 @i^9885^Huntsman's Boots of the Beast
 @i^9886^Huntsman's Bands of the Bandit
 @i^11394^Bat Heart
@@ -289,8 +295,10 @@ GoldScout-export 6^d4zy07d6mv05^9
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4402^1:7:1
+@q^4435^1:12:0
 @q^4459^0:15:0
 @q^4460^0:15:0
+@q^4539^1:0:0
 @q^4562^2:2:0
 @q^4565^1:2:0
 @q^4582^1:12:0
@@ -337,6 +345,7 @@ GoldScout-export 6^d4zy07d6mv05^9
 @q^9355^0:15:0
 @q^9849^2:4:0
 @q^9851^2:4:0
+@q^9863^2:4:0
 @q^9885^2:4:0
 @q^9886^2:4:0
 @q^11394^0:15:0
@@ -388,6 +397,7 @@ GoldScout-export 6^d4zy07d6mv05^9
 @q^281650^3:4:0
 @q^286662^3:4:0
 @m^1411^Durotar
+@m^1417^Arathi Highlands
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
 @m^2548^Riverglades
@@ -1131,6 +1141,9 @@ GoldScout-export 6^d4zy07d6mv05^9
 @a^861^183:1
 @a^1082^92:1,112:1
 @a^1084^145:3,164:1,165:1,184:1,204:1
+@a^2572^156:5
+@a^2573^116:1,136:1,137:4,156:1
+@a^2574^116:1,136:2,137:7,156:3
 @a^3099^168:2,188:8
 @a^3100^167:1,168:1,187:8,207:2,227:3
 @a^3110^207:1

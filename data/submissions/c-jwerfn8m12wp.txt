@@ -1,4 +1,5 @@
-GoldScout-export 5^jwerfn8m12wp^2
+GoldScout-export 5^jwerfn8m12wp^3
+2955^8^0^1^2^1412^0.4657^0.7703^8^Plainstrider^1372:1:1,2653:1:1,4739:7:7,4740:7:7,4757:6:6,7096:3:3,7097:1:1^
 3247^1^0^19^19^1413^0.4347^0.5710^1^Thunderhawk Hatchling^5164:1:1^
 3256^3^0^17^18^1413^0.5771^0.5360^3^Sunscale Scytheclaw^5165:2:2^
 3258^1^0^17^18^1413^0.4340^0.5527^1^Bristleback Hunter^5075:1:2^
@@ -13,15 +14,20 @@ GoldScout-export 5^jwerfn8m12wp^2
 @i^858^Lesser Healing Potion
 @i^1179^Ice Cold Milk
 @i^1180^Scroll of Stamina
+@i^1372^Ragged Cloak
 @i^1768^Canvas Pants
 @i^1770^Canvas Vest
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2653^Flimsy Chain Gloves
 @i^3301^Sharp Canine
 @i^3827^Mana Potion
 @i^4537^Tel'Abim Banana
 @i^4570^Birchwood Maul of the Monkey
 @i^4603^Raw Spotted Yellowtail
+@i^4739^Plainstrider Meat
+@i^4740^Plainstrider Feather
+@i^4757^Cracked Egg Shells
 @i^5075^Blood Shard
 @i^5078^Theramore Medal
 @i^5164^Thunderhawk Wings
@@ -33,6 +39,8 @@ GoldScout-export 5^jwerfn8m12wp^2
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
 @i^6362^Raw Rockscale Cod
+@i^7096^Plucked Feather
+@i^7097^Leg Meat
 @i^8365^Raw Mithril Head Trout
 @i^15011^Lupine Cord of Fire Protection
 @i^15304^Grizzly Jerkin of the Gorilla
@@ -40,15 +48,20 @@ GoldScout-export 5^jwerfn8m12wp^2
 @q^858^1:0:0
 @q^1179^1:0:0
 @q^1180^1:0:0
+@q^1372^0:4:0
 @q^1768^0:4:0
 @q^1770^0:4:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2653^0:4:0
 @q^3301^0:15:0
 @q^3827^1:0:0
 @q^4537^1:0:0
 @q^4570^2:2:0
 @q^4603^1:7:1
+@q^4739^1:12:0
+@q^4740^1:12:0
+@q^4757^0:15:0
 @q^5075^1:12:0
 @q^5078^1:12:0
 @q^5164^1:12:0
@@ -60,9 +73,12 @@ GoldScout-export 5^jwerfn8m12wp^2
 @q^6358^1:7:1
 @q^6359^1:7:1
 @q^6362^1:7:1
+@q^7096^0:15:0
+@q^7097^1:0:0
 @q^8365^1:7:1
 @q^15011^2:4:0
 @q^15304^2:4:0
+@m^1412^Mulgore
 @m^1413^The Barrens
 @m^1434^Stranglethorn Vale
 @c^118^
@@ -706,6 +722,7 @@ GoldScout-export 5^jwerfn8m12wp^2
 @c^279981^
 @c^279982^
 @c^286152^
+@a^2955^309:8
 @a^3247^228:1
 @a^3256^211:3
 @a^3258^228:1

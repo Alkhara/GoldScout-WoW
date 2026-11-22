@@ -1,4 +1,4 @@
-GoldScout-export 6^vw9x3lt2f899^15
+GoldScout-export 6^vw9x3lt2f899^16
 3236^1^0^19^19^1413^0.4617^0.7345^1^Barrens Kodo^5467:1:1^
 3237^1^0^25^26^1413^0.4618^0.7352^1^Wooly Kodo^^
 3238^8^0^22^23^1413^0.4807^0.7834^8^Stormhide^4898:5:5,5133:1:1,5470:3:3^
@@ -78,6 +78,13 @@ GoldScout-export 6^vw9x3lt2f899^15
 4124^4^0^27^28^1441^0.2086^0.3161^4^Needles Cougar^5137:3:3^
 4126^1^0^26^26^1441^0.5149^0.4874^1^Crag Stalker^5137:1:1,248687:1:1^
 4128^3^0^22^23^1413^0.4703^0.8016^3^Hecklefang Stalker^3301:1:1,3402:1:1,5635:1:1^
+4139^1^0^33^33^1441^0.7259^0.7360^1^Scorpid Terror^3831:1:1,19938:1:1,248692:1:1^
+4140^17^0^31^32^1441^0.7479^0.6642^17^Scorpid Reaver^1288:2:2,5794:6:6,12037:8:8,19937:5:5,19938:2:2^
+4142^8^0^30^31^1441^0.7541^0.5885^8^Sparkleshell Tortoise^3712:6:6,4555:2:2,4556:2:2,5795:2:2^
+4147^4^0^30^31^1441^0.7421^0.5998^4^Saltstone Basilisk^1701:1:1,5003:1:1,11385:1:1,14183:1:1,15553:1:1^
+4150^2^0^34^35^1441^0.8207^0.8782^2^Saltstone Gazer^1701:2:2,4093:1:1^
+4151^3^0^32^33^1441^0.7498^0.6954^3^Saltstone Crystalhide^1701:3:3^
+4154^1^0^30^31^1441^0.7715^0.6893^1^Salt Flats Scavenger^3399:1:1,5114:1:1^
 4202^1^0^27^27^1442^0.6354^0.3985^1^Gerenzo Wrenchwhistle^5736:1:1^
 4248^4^0^26^27^1441^0.3093^0.4595^4^Pesterhide Hyena^3201:1:1,3402:3:3^
 4249^3^0^28^29^1441^0.6359^0.5339^3^Pesterhide Snarler^3402:2:2^
@@ -140,6 +147,7 @@ GoldScout-export 6^vw9x3lt2f899^15
 @i^1205^Melon Juice
 @i^1206^Moss Agate
 @i^1210^Shadowgem
+@i^1288^Large Venom Sac
 @i^1475^Small Venom Sac
 @i^1497^Calico Cloak
 @i^1510^Heavy Hammer
@@ -185,17 +193,23 @@ GoldScout-export 6^vw9x3lt2f899^15
 @i^3376^Canvas Belt
 @i^3379^Brocade Bracers
 @i^3385^Lesser Mana Potion
+@i^3399^Vulture Talon
 @i^3402^Soft Patch of Fur
 @i^3670^Large Slimy Bone
 @i^3671^Lifeless Skull
 @i^3674^Decomposed Boot
 @i^3676^Slimy Ichor
+@i^3712^Turtle Meat
 @i^3770^Mutton Chop
+@i^3831^Recipe: Troll's Blood Elixir
 @i^3857^Coal
 @i^3931^Poisoned Spider Fang
+@i^4093^Large Basilisk Tail
 @i^4306^Silk Cloth
 @i^4428^Spider Palp
 @i^4542^Moist Cornbread
+@i^4555^Thick Scaly Tail
+@i^4556^Speckled Shell Fragment
 @i^4568^Grunt Axe of Spirit
 @i^4570^Birchwood Maul of the Bear
 @i^4605^Red-speckled Mushroom
@@ -204,6 +218,7 @@ GoldScout-export 6^vw9x3lt2f899^15
 @i^4784^Lifeless Stone
 @i^4897^Thunderhawk Saliva Gland
 @i^4898^Lightning Gland
+@i^5003^Crystal Starfire Medallion
 @i^5017^Nitroglycerin
 @i^5018^Wood Pulp
 @i^5019^Sodium Nitrate
@@ -216,6 +231,7 @@ GoldScout-export 6^vw9x3lt2f899^15
 @i^5094^Razormane War Shield
 @i^5103^Washte Pawne's Feather
 @i^5104^Heart of Isha Awak
+@i^5114^Severed Talon
 @i^5116^Long Tail Feather
 @i^5133^Seeping Gizzard
 @i^5135^Thin Black Claw
@@ -240,6 +256,8 @@ GoldScout-export 6^vw9x3lt2f899^15
 @i^5734^Super Reaper 6000 Blueprints
 @i^5736^Gerenzo's Mechanical Arm
 @i^5741^Rock Chip
+@i^5794^Salty Scorpid Venom
+@i^5795^Hardened Tortoise Shell
 @i^5842^Unrefined Ore Sample
 @i^5843^Grenka's Claw
 @i^5871^Large Hoof
@@ -258,11 +276,14 @@ GoldScout-export 6^vw9x3lt2f899^15
 @i^9451^Bubbling Water
 @i^9764^Cadet Shield of the Prophet
 @i^9805^Superior Cloak of Shadow Wrath
+@i^11385^Basilisk Scale
+@i^12037^Mystery Meat
 @i^12564^Assassination Note
 @i^12925^Arikara Serpent Skin
 @i^12946^Hypercapacitor Gizmo
 @i^13031^Orb of Mistmantle
 @i^14176^Watcher's Boots of the Channeler
+@i^14183^Watcher's Leggings of the Whale
 @i^14561^Prospector's Cuffs
 @i^14566^Prospector's Pads
 @i^15210^Raider Shortsword of the Tiger
@@ -272,15 +293,19 @@ GoldScout-export 6^vw9x3lt2f899^15
 @i^15509^Grunt's Handwraps of Intellect
 @i^15527^Sentry's Gloves of Spirit
 @i^15545^Thick Scale Bracelets of Frost Protection
+@i^15553^Thick Scale Shoulder Pads of the Beast
 @i^16192^Besseleth's Fang
 @i^16312^Incendrites
 @i^17056^Light Feather
+@i^19937^Small Scorpid Claw
+@i^19938^Heavy Scorpid Leg
 @i^20708^Tightly Sealed Trunk
 @i^211784^Scroll: WUBBA WUBBA
 @i^211854^Scroll: OMIT KESA
 @i^211855^Scroll: STHENIC LUNATE
 @i^248685^Waylaid Crate: Apprentice Curiosities
 @i^248687^Waylaid Crate: Journeyman Ore
+@i^248692^Waylaid Crate: Expert Ore
 @i^268580^Intact Limbs
 @i^271203^Segmented Spider Leg
 @i^271205^Abomination Bones
@@ -304,6 +329,7 @@ GoldScout-export 6^vw9x3lt2f899^15
 @q^1205^1:0:0
 @q^1206^2:7:1
 @q^1210^2:7:1
+@q^1288^1:7:1
 @q^1475^1:7:1
 @q^1497^0:4:0
 @q^1510^0:2:0
@@ -349,17 +375,23 @@ GoldScout-export 6^vw9x3lt2f899^15
 @q^3376^0:4:0
 @q^3379^0:4:0
 @q^3385^1:0:0
+@q^3399^0:15:0
 @q^3402^0:15:0
 @q^3670^0:15:0
 @q^3671^0:15:0
 @q^3674^0:15:0
 @q^3676^0:15:0
+@q^3712^1:7:1
 @q^3770^1:0:0
+@q^3831^1:9:0
 @q^3857^1:7:1
 @q^3931^0:15:0
+@q^4093^0:15:0
 @q^4306^1:7:1
 @q^4428^0:15:0
 @q^4542^1:0:0
+@q^4555^0:15:0
+@q^4556^0:15:0
 @q^4568^2:2:0
 @q^4570^2:2:0
 @q^4605^1:0:0
@@ -368,6 +400,7 @@ GoldScout-export 6^vw9x3lt2f899^15
 @q^4784^0:15:0
 @q^4897^1:12:0
 @q^4898^1:12:0
+@q^5003^2:4:0
 @q^5017^1:12:0
 @q^5018^1:12:0
 @q^5019^1:12:0
@@ -380,6 +413,7 @@ GoldScout-export 6^vw9x3lt2f899^15
 @q^5094^1:4:0
 @q^5103^1:12:0
 @q^5104^1:12:0
+@q^5114^0:15:0
 @q^5116^1:7:1
 @q^5133^0:15:0
 @q^5135^0:15:0
@@ -404,6 +438,8 @@ GoldScout-export 6^vw9x3lt2f899^15
 @q^5734^1:12:0
 @q^5736^1:12:0
 @q^5741^0:15:0
+@q^5794^1:12:0
+@q^5795^1:12:0
 @q^5842^1:12:0
 @q^5843^1:12:0
 @q^5871^0:15:0
@@ -422,11 +458,14 @@ GoldScout-export 6^vw9x3lt2f899^15
 @q^9451^1:0:0
 @q^9764^2:4:0
 @q^9805^2:4:0
+@q^11385^0:15:0
+@q^12037^1:7:1
 @q^12564^1:12:0
 @q^12925^1:12:0
 @q^12946^1:12:0
 @q^13031^3:4:0
 @q^14176^2:4:0
+@q^14183^2:4:0
 @q^14561^2:4:0
 @q^14566^2:4:0
 @q^15210^2:2:0
@@ -436,15 +475,19 @@ GoldScout-export 6^vw9x3lt2f899^15
 @q^15509^2:4:0
 @q^15527^2:4:0
 @q^15545^2:4:0
+@q^15553^2:4:0
 @q^16192^1:12:0
 @q^16312^1:12:0
 @q^17056^1:15:1
+@q^19937^0:15:0
+@q^19938^0:15:0
 @q^20708^1:15:0
 @q^211784^1:0:0
 @q^211854^1:0:0
 @q^211855^1:0:0
 @q^248685^1:0:1
 @q^248687^1:0:1
+@q^248692^1:0:1
 @q^268580^1:12:0
 @q^271203^3:2:0
 @q^271205^3:4:0
@@ -905,6 +948,13 @@ GoldScout-export 6^vw9x3lt2f899^15
 @a^4124^62:1,81:1,145:1,207:1
 @a^4126^190:1
 @a^4128^309:1,329:2
+@a^4139^294:1
+@a^4140^234:1,235:2,254:3,255:1,274:1,275:3,294:3,295:3
+@a^4142^215:2,234:1,235:2,254:1,255:2
+@a^4147^235:2,254:2
+@a^4150^356:2
+@a^4151^274:1,275:1,314:1
+@a^4154^275:1
 @a^4202^152:1
 @a^4248^144:1,186:2,207:1
 @a^4249^192:1,212:1,232:1
