@@ -1,4 +1,4 @@
-GoldScout-export 6^rueird6c5u9f^30
+GoldScout-export 6^rueird6c5u9f^31
 2253^1^0^36^36^1416^0.4844^0.5757^1^Tosco Aplastacresta^7441:1:1^
 2254^17^0^36^37^1416^0.4344^0.4679^17^Aplastador Aplastacresta^3771:1:1,3785:1:1,3864:1:1,4306:6:18,6413:1:1^
 2255^2^0^37^37^1416^0.4562^0.4672^2^Mago Aplastacresta^4338:1:3^
@@ -30,7 +30,7 @@ GoldScout-export 6^rueird6c5u9f^30
 2694^14^0^46^47^1425^0.2989^0.4587^14^Forestal Vallealto^1645:1:1,3928:1:1,4338:3:7,4602:1:1,6149:1:1,15731:1:1^
 2727^2^0^35^35^1418^0.5144^0.1483^2^Coyote del risco^12203:2:2^
 2748^1^0^0^0^0^0.0000^0.0000^0^^4552:1:1,9413:1:1^
-2829^1^0^35^35^1418^0.5686^0.2428^1^Águila ratonera famélica^^
+2829^1^0^35^36^1418^0.5686^0.2428^1^Águila ratonera famélica^^
 2923^1^0^42^42^1425^0.2209^0.4779^1^Melenargenta sarnoso^12203:1:1,12208:1:1^
 2925^1^0^46^46^1425^0.5264^0.4400^1^Aullador melenargenta^12203:1:1^
 2926^18^0^47^48^1425^0.6687^0.5310^18^Acechador melenargenta^4583:3:3,12203:9:9,12208:6:6,248695:2:2^
@@ -121,6 +121,8 @@ GoldScout-export 6^rueird6c5u9f^30
 5854^39^0^47^49^1427^0.3937^0.4686^39^Gólem de guerra pesado^4552:8:8,4554:7:7,7912:13:19,8150:12:12,10511:4:4^
 5855^9^0^46^48^1427^0.4581^0.5244^9^Elemental de magma^3857:3:3,4787:2:2,10509:2:2^
 5858^17^0^47^49^1427^0.2948^0.5215^17^Araña de lava abrasadora^1074:2:2,4337:1:1,4585:10:10,12205:5:5,213545:1:1,213546:1:1^
+5984^7^0^45^46^1419^0.4609^0.1983^7^Hiena risitas famélica^4583:2:2,4584:1:1,8146:1:1,8391:3:3,12037:2:2,12203:1:1,12208:2:2^
+5988^1^0^50^51^1419^0.4574^0.2070^1^Aguijonero Scorpok^12037:1:1,19441:1:1^
 6505^37^0^48^49^1449^0.6264^0.7460^37^Ravasaurio^4587:15:15,4588:3:3,4638:2:2,11018:2:2,11116:9:9,12184:14:14,20015:7:7,280459:1:1^
 6506^12^0^49^50^1449^0.6200^0.7653^12^Corredor ravasaurio^4587:3:3,4588:1:1,8146:1:1,11018:2:2,11116:4:4,12184:4:4,248697:1:1^
 6508^1^0^50^51^1449^0.6913^0.5900^1^Ravasaurio Pellejo Venenoso^12184:1:1^
@@ -316,6 +318,7 @@ GoldScout-export 6^rueird6c5u9f^30
 @i^8152^Frasco de gran mojo
 @i^8153^Atriplex salvaje
 @i^8365^Trucha cabeza de mitril cruda
+@i^8391^Papada de hiena risitas
 @i^8397^Patrón: brazales de escórpido resistentes
 @i^8398^Patrón: guantes de escórpido resistentes
 @i^8428^Glándula cargada de rocío
@@ -408,6 +411,7 @@ GoldScout-export 6^rueird6c5u9f^30
 @i^19025^Péndola de Señor del Cielo
 @i^19034^Almuerzo de Lard
 @i^19064^Llave de grillete
+@i^19441^Glándula de veneno enorme
 @i^19936^Caparazón de escórpido seco
 @i^19938^Pata de escórpido pesada
 @i^20015^Plumas de raptor viejo
@@ -557,6 +561,7 @@ GoldScout-export 6^rueird6c5u9f^30
 @q^8152^1:7:1
 @q^8153^1:7:1
 @q^8365^1:7:1
+@q^8391^1:12:0
 @q^8397^2:9:0
 @q^8398^2:9:0
 @q^8428^1:12:0
@@ -649,6 +654,7 @@ GoldScout-export 6^rueird6c5u9f^30
 @q^19025^1:12:0
 @q^19034^1:12:0
 @q^19064^1:12:0
+@q^19441^1:7:1
 @q^19936^0:15:0
 @q^19938^0:15:0
 @q^20015^0:15:0
@@ -689,6 +695,7 @@ GoldScout-export 6^rueird6c5u9f^30
 @q^285047^2:4:0
 @m^1416^Montañas de Alterac
 @m^1418^Tierras Inhóspitas
+@m^1419^Las Tierras Devastadas
 @m^1425^Tierras del Interior
 @m^1427^La Garganta de Fuego
 @m^1443^Desolace
@@ -971,6 +978,8 @@ GoldScout-export 6^rueird6c5u9f^30
 @a^5854^167:7,168:3,169:6,170:1,186:7,187:7,188:1,206:1,208:3,209:1,227:1,247:1
 @a^5855^148:1,171:1,190:1,191:1,211:1,231:1,246:3
 @a^5858^145:1,147:1,165:4,166:2,185:2,225:1,246:1,265:3,268:1,284:1
+@a^5984^68:3,69:3,89:1
+@a^5988^89:1
 @a^6505^252:4,253:5,311:5,312:10,313:5,331:3,332:5
 @a^6506^253:1,311:2,312:8,332:1
 @a^6508^233:1

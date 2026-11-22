@@ -1,4 +1,4 @@
-GoldScout-export 6^wvv7ltmc3m2s^17
+GoldScout-export 6^wvv7ltmc3m2s^18
 36^1^0^11^12^1436^0.3304^0.3546^1^Harvest Golem^^
 117^1^0^11^12^1436^0.4183^0.2095^1^Riverpaw Gnoll^2287:1:1^
 123^7^0^13^14^1436^0.3163^0.5530^7^Riverpaw Mongrel^4683:1:1^
@@ -215,8 +215,10 @@ GoldScout-export 6^wvv7ltmc3m2s^17
 10882^1^0^28^28^1441^0.3827^0.3543^1^Arikara^12925:1:1^
 10896^5^0^29^29^1441^0.3808^0.2687^5^Arnak Grimtotem^4306:2:3,12884:1:1^
 10992^1^0^30^30^1441^0.2220^0.2407^1^Enraged Panther^5137:1:1,12946:1:1^
+11563^1^0^34^35^1443^0.2616^0.7649^1^Drysnap Pincer^^
 11576^1^0^32^34^1443^0.4078^0.6700^1^Whirlwind Ripper^^
 11577^1^0^36^36^1443^0.5511^0.4933^1^Whirlwind Stormwalker^^
+11578^1^0^34^34^1443^0.3013^0.7348^1^Whirlwind Shredder^^
 12677^1^0^28^28^1440^0.6117^0.5223^1^Shadumbra^16304:1:1^
 12876^1^0^0^0^0^0.0000^0.0000^0^^16782:1:1,253984:1:1^
 12902^1^0^0^0^0^0.0000^0.0000^0^^273843:1:1^
@@ -375,6 +377,7 @@ GoldScout-export 6^wvv7ltmc3m2s^17
 @i^4575^Medicine Staff of Magic
 @i^4576^Light Bow
 @i^4585^Dripping Spider Mandible
+@i^4603^Raw Spotted Yellowtail
 @i^4633^Heavy Bronze Lockbox
 @i^4683^Spellbinder Cloak
 @i^4690^Hunting Belt
@@ -443,6 +446,7 @@ GoldScout-export 6^wvv7ltmc3m2s^17
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
 @i^6361^Raw Rainbow Fin Albacore
+@i^6362^Raw Rockscale Cod
 @i^6392^Belt of Arugal
 @i^6506^Infantry Boots
 @i^6511^Journeyman's Robe
@@ -540,6 +544,7 @@ GoldScout-export 6^wvv7ltmc3m2s^17
 @i^21071^Raw Sagefish
 @i^21113^Watertight Trunk
 @i^21114^Rumsey Rum Dark
+@i^21150^Iron Bound Trunk
 @i^211780^Scroll: KWYJIBO
 @i^211784^Scroll: WUBBA WUBBA
 @i^211787^Scroll: LOWER PING WHOMEVER
@@ -697,6 +702,7 @@ GoldScout-export 6^wvv7ltmc3m2s^17
 @q^4575^2:2:0
 @q^4576^2:2:0
 @q^4585^0:15:0
+@q^4603^1:7:1
 @q^4633^2:15:0
 @q^4683^1:4:0
 @q^4690^1:4:0
@@ -765,6 +771,7 @@ GoldScout-export 6^wvv7ltmc3m2s^17
 @q^6358^1:7:1
 @q^6359^1:7:1
 @q^6361^1:7:1
+@q^6362^1:7:1
 @q^6392^3:4:0
 @q^6506^1:4:0
 @q^6511^2:4:0
@@ -862,6 +869,7 @@ GoldScout-export 6^wvv7ltmc3m2s^17
 @q^21071^1:7:1
 @q^21113^1:15:0
 @q^21114^1:0:0
+@q^21150^1:15:0
 @q^211780^1:0:0
 @q^211784^1:0:0
 @q^211787^1:0:0
@@ -2374,8 +2382,10 @@ GoldScout-export 6^wvv7ltmc3m2s^17
 @a^10882^147:1
 @a^10896^107:5
 @a^10992^84:1
+@a^11563^305:1
 @a^11576^268:1
 @a^11577^191:1
+@a^11578^286:1
 @a^12677^212:1
 @a^12921^251:6
 @a^12940^101:1
@@ -2392,5 +2402,6 @@ GoldScout-export 6^wvv7ltmc3m2s^17
 @f^1424^0^4^100^6358:1:1,6359:2:2,6361:1:1^285:4
 @f^1436^0^17^102^3820:1:2,6303:3:3,6358:6:6,6361:7:7^285:17
 @f^1442^0^16^91^6289:2:2,6308:3:3,21071:9:9,21113:1:1,21114:1:2^149:8,169:8
+@f^1443^0^23^110^4603:7:7,6358:4:4,6362:11:11,21150:1:1^305:23
 @f^1454^0^99^1^6289:70:70,6291:17:17,6308:12:12^133:45,153:54
 @l^0^enUS

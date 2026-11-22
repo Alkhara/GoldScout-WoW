@@ -1,4 +1,4 @@
-GoldScout-export 5^4aymx994lcjf^6
+GoldScout-export 5^4aymx994lcjf^7
 545^1^0^19^19^1433^0.7553^0.6259^1^Murloc Tidecaller^1468:1:1,1788:1:1^
 550^1^0^14^14^1436^0.4102^0.4917^1^Defias Messenger^1381:1:1,1512:1:1^
 589^1^0^14^15^1436^0.4546^0.7022^1^Defias Pillager^^
@@ -20,12 +20,25 @@ GoldScout-export 5^4aymx994lcjf^6
 647^1^0^0^0^0^0.0000^0.0000^0^^10403:1:1^
 657^6^0^0^0^0^0.0000^0.0000^0^^915:2:2,2217:1:1,2592:1:1,7997:1:1,8492:1:1,9787:1:1^
 824^1^0^15^16^1415^0.4112^0.7938^1^Defias Digger^915:1:1,1926:1:1^
+1012^5^0^24^25^1437^0.3597^0.2739^5^Mosshide Brute^929:1:1,2592:2:2,2611:2:2^
+1013^1^0^25^26^1437^0.3522^0.2782^1^Mosshide Mystic^2611:1:1^
+1014^1^0^27^27^1437^0.3576^0.2476^1^Mosshide Alpha^3770:1:1,4306:1:2^
+1024^2^0^20^21^1437^0.1326^0.4012^2^Bluegill Murloc^1812:1:1,5524:1:1,5784:1:1,17057:1:1^
+1025^1^0^21^22^1437^0.1333^0.4146^1^Bluegill Puddlejumper^^
+1027^2^0^25^25^1437^0.1542^0.3674^2^Bluegill Warrior^730:1:1,1468:1:1,1819:1:1,5524:1:1,5784:1:1,211853:1:1^
+1028^1^0^24^24^1437^0.1390^0.3147^1^Bluegill Muckdweller^730:1:1,1205:1:1,5524:1:1,5784:1:1^
+1157^15^0^26^27^1437^0.1390^0.3001^15^Cursed Sailor^1755:1:1,1831:1:1,2592:4:5,4306:4:8,6600:1:1^
+1158^2^0^27^28^1437^0.1381^0.3000^2^Cursed Marine^4306:1:1^
+1159^2^0^29^29^1437^0.1406^0.2959^2^First Mate Snellig^3619:1:1,4306:1:1^
+1400^2^0^23^24^1437^0.2762^0.2600^2^Wetlands Crocolisk^770:1:1^
+1418^3^0^28^29^1437^0.2518^0.1808^3^Bluegill Raider^730:1:1,1205:1:1,1468:2:2,2702:1:1,5524:1:1,17057:1:1,17058:1:1^
 1725^1^0^0^0^0^0.0000^0.0000^0^^2589:1:3,2764:1:1^
 1727^1^0^16^17^1415^0.4089^0.7965^1^Defias Worker^2589:1:2,2771:1:2^
 1729^2^0^0^0^0^0.0000^0.0000^0^^915:1:1,2589:1:5^
 1731^2^0^0^0^0^0.0000^0.0000^0^^814:1:1,2989:1:1^
 1732^5^0^0^0^0^0.0000^0.0000^0^^915:1:1,1768:1:1,2589:2:6^
 1763^1^0^0^0^0^0.0000^0.0000^0^^273086:1:1,273297:1:1^
+2089^6^0^25^26^1437^0.2160^0.2310^6^Giant Wetlands Crocolisk^770:2:2,3348:5:5,3667:1:1^
 4416^5^0^0^0^0^0.0000^0.0000^0^^1793:1:1,2592:1:1,4568:1:1,7608:1:1^
 4418^1^0^0^0^0^0.0000^0.0000^0^^915:1:1,6538:1:1^
 5894^1^0^22^22^1436^0.4619^0.6010^1^Corrupt Minor Manifestation of Water^7812:1:1^
@@ -46,44 +59,79 @@ GoldScout-export 5^4aymx994lcjf^6
 255964^3^0^0^0^0^0.0000^0.0000^0^^818:1:1,858:1:1,248703:1:1^
 256035^1^0^0^0^0^0.0000^0.0000^0^^271218:1:1^
 256097^1^0^0^0^0^0.0000^0.0000^0^^271209:1:1^
+260325^1^0^0^0^0^0.0000^0.0000^0^^273027:1:1^
+260326^1^0^0^0^0^0.0000^0.0000^0^^270865:1:1^
+260796^2^0^0^0^0^0.0000^0.0000^0^^770:1:1,1826:1:1,3667:1:1^
+260797^1^0^0^0^0^0.0000^0.0000^0^^3667:1:1^
+260799^2^0^0^0^0^0.0000^0.0000^0^^1697:1:1,1803:1:1,3685:1:1,6398:1:1^
+260800^2^0^0^0^0^0.0000^0.0000^0^^9795:1:1,284845:1:1^
+260801^4^0^0^0^0^0.0000^0.0000^0^^1697:1:1,3056:1:1,284845:2:2^
+260802^2^0^0^0^0^0.0000^0.0000^0^^3685:1:1,284845:1:1^
+260803^2^0^27^27^1437^0.5077^0.6110^1^Highland Spider^1074:2:2,2251:1:1,3182:1:1^
+260804^1^0^28^28^1437^0.4861^0.5636^1^Highland Lurker^1074:1:1^
+260809^1^0^26^26^1437^0.5036^0.5902^1^Highland Tortoise^15927:1:1^
+275044^2^0^0^0^0^0.0000^0.0000^0^^1205:1:1^
+@i^730^Murloc Eye
+@i^770^Pointy Crocolisk Tooth
 @i^814^Flask of Oil
 @i^818^Tigerseye
 @i^858^Lesser Healing Potion
 @i^915^Red Silk Bandana
+@i^929^Healing Potion
 @i^955^Scroll of Intellect
+@i^1074^Hard Spider Leg Tip
 @i^1179^Ice Cold Milk
+@i^1205^Melon Juice
 @i^1210^Shadowgem
 @i^1381^A Mysterious Message
 @i^1468^Murloc Fin
 @i^1505^Warped Cloak
 @i^1512^Crude Battle Axe
+@i^1697^Keen Raptor Tooth
 @i^1740^Laced Mail Bracers
 @i^1743^Laced Mail Pants
+@i^1755^Reinforced Chain Boots
 @i^1768^Canvas Pants
 @i^1788^Patched Leather Boots
 @i^1793^Patched Leather Shoulderpads
+@i^1803^Tough Leather Belt
 @i^1811^Blunt Claymore
+@i^1812^Short-handled Battle Axe
 @i^1813^Chipped Quarterstaff
 @i^1814^Battered Mallet
+@i^1819^Gouging Pick
+@i^1826^Rock Maul
+@i^1831^Oaken War Staff
 @i^1875^Thistlenettle's Badge
 @i^1894^Miners' Union Card
 @i^1926^Weighted Sap
 @i^1930^Stonemason Cloak
 @i^1945^Woodworking Gloves
 @i^2217^Rectangular Shield
+@i^2251^Gooey Spider Leg
 @i^2287^Haunch of Meat
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2611^Crude Flint
+@i^2702^Lightforge Ingot
 @i^2764^Small Dagger
 @i^2771^Tin Ore
 @i^2874^An Unsent Letter
 @i^2881^Plans: Runed Copper Breastplate
 @i^2989^Burnished Tunic
+@i^3056^Forest Leather Pants
 @i^3167^Thick Spider Hair
+@i^3182^Spider's Silk
 @i^3195^Barbaric Battle Axe of the Whale
 @i^3205^Inscribed Leather Bracers
+@i^3348^Giant Crocolisk Skin
+@i^3619^Snellig's Snuffbox
 @i^3637^Head of VanCleef
+@i^3667^Tender Crocolisk Meat
+@i^3685^Raptor Egg
+@i^3770^Mutton Chop
 @i^3931^Poisoned Spider Fang
+@i^4306^Silk Cloth
 @i^4568^Grunt Axe of Spirit
 @i^4570^Birchwood Maul of the Tiger
 @i^4605^Red-speckled Mushroom
@@ -91,74 +139,109 @@ GoldScout-export 5^4aymx994lcjf^6
 @i^5196^Smite's Reaver
 @i^5198^Cookie's Stirring Rod
 @i^5202^Corsair's Overshirt
+@i^5524^Thick-shelled Clam
+@i^5784^Slimy Murloc Scale
 @i^6378^Seer's Cape
+@i^6398^Emblazoned Belt
 @i^6538^Willow Robe of the Bear
 @i^6539^Willow Belt of Spirit
 @i^6554^Bard's Gloves of the Gorilla
+@i^6600^Dervish Belt of the Bear
 @i^7365^Gnoam Sprecklesprocket
 @i^7608^Seer's Fine Stein
 @i^7812^Corrupt Manifestation's Bracers
 @i^7997^Red Defias Mask
 @i^8492^Parrot Cage (Green Wing Macaw)
 @i^9787^Raider's Gauntlets of the Whale
+@i^9795^Ivycloth Gloves of the Whale
 @i^10316^Pattern: Colorful Kilt
 @i^10403^Blackened Defias Belt
 @i^14166^Buccaneer's Bracers of Stamina
+@i^15927^Bright Sphere
+@i^17057^Shiny Fish Scales
+@i^17058^Fish Oil
+@i^211853^Scroll: VOCE WELL
 @i^248702^Waylaid Crate: Apprentice Fabrics
 @i^248703^Waylaid Crate: Apprentice Ingots
 @i^252796^Pattern: Stormrider's Leather Pants
+@i^270865^Titan Relic
 @i^271203^Segmented Spider Leg
 @i^271205^Abomination Bones
 @i^271208^Grip of Fear
 @i^271209^Bonerust Leggings
 @i^271213^Mirror of Rath'mael
 @i^271218^Vileblood Scimitar
+@i^273027^Raptor's Gaze
 @i^273085^Blueprint: Fermenter
 @i^273086^Blueprint: Anvil
 @i^273289^Ogre Loincloth
 @i^273297^Goblin Hammer
+@i^284845^Thicket Raptor Hide
 @i^285292^Dull Sawblade
 @i^286977^Sword of the Fallen
 @i^286979^Rotmender's Gloves
 @i^286980^Rotmender's Sash
+@q^730^1:7:1
+@q^770^0:15:0
 @q^814^1:7:1
 @q^818^2:7:1
 @q^858^1:0:0
 @q^915^1:12:0
+@q^929^1:0:0
 @q^955^1:0:0
+@q^1074^0:15:0
 @q^1179^1:0:0
+@q^1205^1:0:0
 @q^1210^2:7:1
 @q^1381^1:12:0
 @q^1468^1:7:1
 @q^1505^0:4:0
 @q^1512^0:2:0
+@q^1697^0:15:0
 @q^1740^0:4:0
 @q^1743^0:4:0
+@q^1755^0:4:0
 @q^1768^0:4:0
 @q^1788^0:4:0
 @q^1793^0:4:0
+@q^1803^0:4:0
 @q^1811^0:2:0
+@q^1812^0:2:0
 @q^1813^0:2:0
 @q^1814^0:2:0
+@q^1819^0:2:0
+@q^1826^0:2:0
+@q^1831^0:2:0
 @q^1875^1:12:0
 @q^1894^1:12:0
 @q^1926^2:2:0
 @q^1930^2:4:0
 @q^1945^2:4:0
 @q^2217^0:4:0
+@q^2251^1:7:1
 @q^2287^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2611^1:12:0
+@q^2702^1:12:0
 @q^2764^0:2:0
 @q^2771^1:7:1
 @q^2874^1:12:0
 @q^2881^2:9:0
 @q^2989^2:4:0
+@q^3056^2:4:0
 @q^3167^0:15:0
+@q^3182^1:7:1
 @q^3195^2:2:0
 @q^3205^2:4:0
+@q^3348^1:12:0
+@q^3619^1:12:0
 @q^3637^1:12:0
+@q^3667^1:7:1
+@q^3685^1:7:1
+@q^3770^1:0:0
 @q^3931^0:15:0
+@q^4306^1:7:1
 @q^4568^2:2:0
 @q^4570^2:2:0
 @q^4605^1:0:0
@@ -166,32 +249,44 @@ GoldScout-export 5^4aymx994lcjf^6
 @q^5196^3:2:0
 @q^5198^3:2:0
 @q^5202^3:4:0
+@q^5524^1:7:0
+@q^5784^1:7:1
 @q^6378^2:4:0
+@q^6398^2:4:0
 @q^6538^2:4:0
 @q^6539^2:4:0
 @q^6554^2:4:0
+@q^6600^2:4:0
 @q^7365^1:12:0
 @q^7608^2:4:0
 @q^7812^1:12:0
 @q^7997^0:4:0
 @q^8492^1:15:0
 @q^9787^2:4:0
+@q^9795^2:4:0
 @q^10316^2:9:0
 @q^10403^3:4:0
 @q^14166^2:4:0
+@q^15927^2:4:0
+@q^17057^1:15:0
+@q^17058^1:15:0
+@q^211853^1:0:0
 @q^248702^2:0:1
 @q^248703^2:0:1
 @q^252796^3:9:0
+@q^270865^1:12:0
 @q^271203^3:2:0
 @q^271205^3:4:0
 @q^271208^3:4:0
 @q^271209^3:4:0
 @q^271213^3:4:0
 @q^271218^3:2:0
+@q^273027^3:4:0
 @q^273085^2:9:0
 @q^273086^2:9:0
 @q^273289^3:4:0
 @q^273297^3:2:0
+@q^284845^1:12:0
 @q^285292^3:2:0
 @q^286977^3:2:0
 @q^286979^3:4:0
@@ -199,6 +294,7 @@ GoldScout-export 5^4aymx994lcjf^6
 @m^1415^Eastern Kingdoms
 @m^1433^Redridge Mountains
 @m^1436^Westfall
+@m^1437^Wetlands
 @c^118^
 @c^724^
 @c^733^
@@ -1042,6 +1138,22 @@ GoldScout-export 5^4aymx994lcjf^6
 @a^625^308:2,328:3
 @a^626^328:1
 @a^824^308:1
+@a^1012^87:1,107:3,127:1
+@a^1013^107:1
+@a^1014^87:1
+@a^1024^142:1,162:1
+@a^1025^162:1
+@a^1027^142:1,143:1
+@a^1028^122:1
+@a^1157^102:6,122:9
+@a^1158^102:1,122:1
+@a^1159^102:2
+@a^1400^104:1,107:1
+@a^1418^64:1,65:2
 @a^1727^308:1
+@a^2089^65:1,84:3,103:2
 @a^5894^249:1
+@a^260803^250:1
+@a^260804^229:1
+@a^260809^230:1
 @l^0^enUS

@@ -1,4 +1,4 @@
-GoldScout-export 5^s6rp1k1h5i82^15
+GoldScout-export 5^s6rp1k1h5i82^16
 3^6^0^24^25^1431^0.2271^0.3711^6^Flesh Eater^1129:3:3,4306:1:1^
 48^7^0^21^22^1431^0.8003^0.6860^7^Skeletal Warrior^2378:1:1,2592:2:3,4306:1:1,4606:1:1^
 171^4^0^15^16^1436^0.2921^0.3099^4^Murloc Warrior^1179:1:1,5523:3:3,6558:1:1^
@@ -117,6 +117,10 @@ GoldScout-export 5^s6rp1k1h5i82^15
 1732^3^0^0^0^0^0.0000^0.0000^0^^1790:1:1,2592:1:1^
 1755^1^0^30^30^1453^0.7235^0.3562^1^Marzon the Silent Blade^^
 1763^1^0^0^0^0^0.0000^0.0000^0^^5199:1:1^
+1995^4^0^5^6^1438^0.5717^0.5796^4^Strigid Owl^4757:1:1,6889:3:5,7096:1:1^
+1996^6^0^7^8^1438^0.4098^0.5201^6^Strigid Screecher^727:1:1,4757:1:1,4775:2:2,4776:1:1,6889:3:4,7096:1:1,7097:1:1^
+1998^6^0^5^6^1438^0.6023^0.5934^6^Webwood Lurker^1476:3:3,5465:4:7^
+2042^5^0^5^6^1438^0.5171^0.5474^5^Nightsaber^4813:1:1,4814:4:4^
 2044^1^0^26^26^1436^0.4146^0.6706^1^Forlorn Spirit^^
 2089^1^0^25^26^1437^0.1881^0.2777^1^Giant Wetlands Crocolisk^770:1:1,3667:1:1^
 2102^1^0^20^20^1437^0.5013^0.7021^1^Dragonmaw Grunt^^
@@ -177,6 +181,7 @@ GoldScout-export 5^s6rp1k1h5i82^15
 @i^422^Dwarven Mild
 @i^555^Rough Vulture Feathers
 @i^723^Goretusk Liver
+@i^727^Notched Shortsword of the Tiger
 @i^730^Murloc Eye
 @i^767^Long Bo Staff
 @i^769^Chunk of Boar Meat
@@ -211,6 +216,7 @@ GoldScout-export 5^s6rp1k1h5i82^15
 @i^1464^Buzzard Talon
 @i^1468^Murloc Fin
 @i^1475^Small Venom Sac
+@i^1476^Snapped Spider Limb
 @i^1515^Rough Wooden Staff
 @i^1598^Rot Blossom
 @i^1696^Curved Raptor Talon
@@ -329,8 +335,11 @@ GoldScout-export 5^s6rp1k1h5i82^15
 @i^4606^Spongy Morel
 @i^4695^Burnished Cloak
 @i^4715^Emblazoned Cloak
+@i^4757^Cracked Egg Shells
 @i^4775^Cracked Bill
 @i^4776^Ruffled Feather
+@i^4813^Small Leather Collar
+@i^4814^Discolored Fang
 @i^4867^Broken Scorpid Leg
 @i^4872^Dry Scorpid Eye
 @i^5075^Blood Shard
@@ -345,6 +354,7 @@ GoldScout-export 5^s6rp1k1h5i82^15
 @i^5197^Cookie's Tenderizer
 @i^5199^Smelting Pants
 @i^5202^Corsair's Overshirt
+@i^5465^Small Spider Leg
 @i^5466^Scorpid Stinger
 @i^5469^Strider Meat
 @i^5470^Thunder Lizard Tail
@@ -368,6 +378,8 @@ GoldScout-export 5^s6rp1k1h5i82^15
 @i^6614^Sage's Cloak of Arcane Protection
 @i^6889^Small Egg
 @i^7074^Chipped Claw
+@i^7096^Plucked Feather
+@i^7097^Leg Meat
 @i^7997^Red Defias Mask
 @i^8183^Precision Bow
 @i^8365^Raw Mithril Head Trout
@@ -422,6 +434,7 @@ GoldScout-export 5^s6rp1k1h5i82^15
 @q^422^1:0:0
 @q^555^0:15:0
 @q^723^1:7:1
+@q^727^2:2:0
 @q^730^1:7:1
 @q^767^1:2:0
 @q^769^1:7:1
@@ -456,6 +469,7 @@ GoldScout-export 5^s6rp1k1h5i82^15
 @q^1464^0:15:0
 @q^1468^1:7:1
 @q^1475^1:7:1
+@q^1476^0:15:0
 @q^1515^0:2:0
 @q^1598^1:12:0
 @q^1696^0:15:0
@@ -574,8 +588,11 @@ GoldScout-export 5^s6rp1k1h5i82^15
 @q^4606^1:0:0
 @q^4695^2:4:0
 @q^4715^2:4:0
+@q^4757^0:15:0
 @q^4775^0:15:0
 @q^4776^0:15:0
+@q^4813^0:15:0
+@q^4814^0:15:0
 @q^4867^0:15:0
 @q^4872^0:15:0
 @q^5075^1:12:0
@@ -590,6 +607,7 @@ GoldScout-export 5^s6rp1k1h5i82^15
 @q^5197^3:2:0
 @q^5199^3:4:0
 @q^5202^3:4:0
+@q^5465^1:7:1
 @q^5466^1:7:1
 @q^5469^1:7:1
 @q^5470^1:7:1
@@ -613,6 +631,8 @@ GoldScout-export 5^s6rp1k1h5i82^15
 @q^6614^2:4:0
 @q^6889^1:7:1
 @q^7074^0:15:0
+@q^7096^0:15:0
+@q^7097^1:0:0
 @q^7997^0:4:0
 @q^8183^2:2:0
 @q^8365^1:7:1
@@ -674,6 +694,7 @@ GoldScout-export 5^s6rp1k1h5i82^15
 @m^1434^Stranglethorn Vale
 @m^1436^Westfall
 @m^1437^Wetlands
+@m^1438^Teldrassil
 @m^1439^Darkshore
 @m^1442^Stonetalon Mountains
 @m^1453^Stormwind City
@@ -1500,6 +1521,10 @@ GoldScout-export 5^s6rp1k1h5i82^15
 @a^1417^145:1,146:2,191:3,211:1,232:1,252:1
 @a^1725^308:1
 @a^1755^154:1
+@a^1995^230:1,231:2,251:1
+@a^1996^207:3,208:3
+@a^1998^231:1,232:3,251:1,252:1
+@a^2042^209:3,230:1,251:1
 @a^2044^268:1
 @a^2089^103:1
 @a^2102^290:1
@@ -1542,5 +1567,5 @@ GoldScout-export 5^s6rp1k1h5i82^15
 @f^1424^0^21^147^6358:3:3,6359:2:2,6361:13:13,21071:3:3^172:3,270:15,290:3
 @f^1434^0^3^146^6358:1:1,6362:2:2^285:3
 @f^1436^0^40^132^3820:1:1,6303:10:10,6358:9:9,6361:18:18,20709:2:4^65:12,106:6,125:22
-@f^1439^0^15^153^6303:1:1,6307:1:1,6358:1:1,6361:6:6,12238:6:6^167:15
+@f^1439^0^20^153^6303:3:3,6307:1:1,6358:1:1,6361:8:8,12238:7:7^146:2,166:3,167:15
 @l^0^enUS
