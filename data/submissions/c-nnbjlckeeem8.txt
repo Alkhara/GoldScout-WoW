@@ -1,4 +1,15 @@
-GoldScout-export 6^nnbjlckeeem8^1
+GoldScout-export 6^nnbjlckeeem8^2
+3^1^0^24^24^1431^0.2432^0.3996^1^Flesh Eater^1801:1:1^
+202^19^0^23^24^1431^0.6093^0.5534^19^Skeletal Horror^929:1:1,2378:3:3,2589:2:6,2592:2:2,4306:1:1,4708:1:1,6577:1:1,12054:1:1^
+218^2^0^24^25^1431^0.1488^0.4511^2^Grave Robber^^
+531^15^0^24^25^1431^0.1872^0.4541^15^Skeletal Fiend^1205:1:1,2378:4:4,2589:2:3,2592:2:2^
+533^2^0^28^28^1431^0.6235^0.4355^2^Nightbane Shadow Weaver^^
+949^1^0^25^25^1431^0.1738^0.4491^1^Carrion Recluse^3174:1:1^
+1024^5^0^20^21^1437^0.1470^0.3927^5^Bluegill Murloc^730:3:3,1468:2:2,5524:1:1,17057:1:1^
+1259^1^0^22^22^1437^0.1546^0.4181^1^Gobbler^3618:1:1,5524:1:1,5784:1:1^
+1400^2^0^23^24^1437^0.1567^0.5856^2^Wetlands Crocolisk^770:2:2,3667:1:1^
+1417^6^0^21^22^1437^0.1635^0.5226^6^Young Wetlands Crocolisk^770:3:3,3397:3:3,3667:2:2^
+2089^2^0^25^26^1437^0.1760^0.5800^2^Giant Wetlands Crocolisk^3667:2:2^
 2645^1^0^49^49^1425^0.5824^0.6993^1^Vilebranch Shadow Hunter^^
 2649^2^0^40^41^1425^0.2326^0.5498^2^Witherbark Scalper^1520:1:1,4338:1:2,4599:1:1,262889:1:1^
 2651^4^0^42^43^1425^0.3228^0.5826^4^Witherbark Hideskinner^1520:1:1,4306:1:1,4338:1:1,9259:1:1^
@@ -32,9 +43,22 @@ GoldScout-export 6^nnbjlckeeem8^1
 8636^1^0^50^50^1425^0.4848^0.6806^1^Morta'gya the Keeper^^
 10081^1^0^0^0^0^0.0000^0.0000^0^^12469:1:1^
 10082^1^0^0^0^0^0.0000^0.0000^0^^12470:1:1^
+@i^730^Murloc Eye
+@i^770^Pointy Crocolisk Tooth
+@i^929^Healing Potion
+@i^1205^Melon Juice
+@i^1468^Murloc Fin
 @i^1520^Troll Sweat
 @i^1645^Moonberry Juice
 @i^1701^Curved Basilisk Claw
+@i^1801^Rawhide Shoulderpads
+@i^2378^Skeleton Finger
+@i^2589^Linen Cloth
+@i^2592^Wool Cloth
+@i^3174^Spider Ichor
+@i^3397^Young Crocolisk Skin
+@i^3618^Gobbler's Head
+@i^3667^Tender Crocolisk Meat
 @i^3671^Lifeless Skull
 @i^3676^Slimy Ichor
 @i^3927^Fine Aged Cheddar
@@ -54,13 +78,17 @@ GoldScout-export 6^nnbjlckeeem8^1
 @i^4583^Thick Furry Mane
 @i^4599^Cured Ham Steak
 @i^4603^Raw Spotted Yellowtail
+@i^4708^Bright Belt
 @i^5216^Umbral Wand of the Sorcerer
+@i^5524^Thick-shelled Clam
+@i^5784^Slimy Murloc Scale
 @i^6149^Greater Mana Potion
 @i^6300^Husk Fragment
 @i^6302^Delicate Insect Wing
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
 @i^6362^Raw Rockscale Cod
+@i^6577^Defender Gauntlets of Fire Protection
 @i^7909^Aquamarine
 @i^8151^Flask of Mojo
 @i^8365^Raw Mithril Head Trout
@@ -82,6 +110,7 @@ GoldScout-export 6^nnbjlckeeem8^1
 @i^9523^Troll Temper
 @i^10660^First Mosh'aru Tablet
 @i^10661^Second Mosh'aru Tablet
+@i^12054^Demon Band
 @i^12203^Red Wolf Meat
 @i^12208^Tender Wolf Meat
 @i^12469^Mutilator
@@ -100,6 +129,7 @@ GoldScout-export 6^nnbjlckeeem8^1
 @i^14657^Scorpashi Gloves
 @i^14778^Khan's Bindings
 @i^15376^Wolf Rider's Padded Armor of the Bandit
+@i^17057^Shiny Fish Scales
 @i^20519^Southsea Pirate Hat
 @i^20763^Broken Weapon
 @i^20767^Scum Covered Bag
@@ -112,9 +142,22 @@ GoldScout-export 6^nnbjlckeeem8^1
 @i^274652^Wall of Water
 @i^274657^Hydra Leather Legs
 @i^277112^Zum'rah's Head
+@q^730^1:7:1
+@q^770^0:15:0
+@q^929^1:0:0
+@q^1205^1:0:0
+@q^1468^1:7:1
 @q^1520^0:15:0
 @q^1645^1:0:0
 @q^1701^0:15:0
+@q^1801^0:4:0
+@q^2378^1:12:0
+@q^2589^1:7:1
+@q^2592^1:7:1
+@q^3174^1:7:1
+@q^3397^1:12:0
+@q^3618^1:12:0
+@q^3667^1:7:1
 @q^3671^0:15:0
 @q^3676^0:15:0
 @q^3927^1:0:0
@@ -134,13 +177,17 @@ GoldScout-export 6^nnbjlckeeem8^1
 @q^4583^0:15:0
 @q^4599^1:0:0
 @q^4603^1:7:1
+@q^4708^2:4:0
 @q^5216^2:2:0
+@q^5524^1:7:0
+@q^5784^1:7:1
 @q^6149^1:0:0
 @q^6300^0:15:0
 @q^6302^0:15:0
 @q^6358^1:7:1
 @q^6359^1:7:1
 @q^6362^1:7:1
+@q^6577^2:4:0
 @q^7909^2:7:1
 @q^8151^1:7:1
 @q^8365^1:7:1
@@ -162,6 +209,7 @@ GoldScout-export 6^nnbjlckeeem8^1
 @q^9523^1:12:0
 @q^10660^1:12:0
 @q^10661^1:12:0
+@q^12054^2:4:0
 @q^12203^1:7:1
 @q^12208^1:7:1
 @q^12469^3:2:0
@@ -180,6 +228,7 @@ GoldScout-export 6^nnbjlckeeem8^1
 @q^14657^2:4:0
 @q^14778^2:4:0
 @q^15376^2:4:0
+@q^17057^1:15:0
 @q^20519^1:12:0
 @q^20763^0:15:0
 @q^20767^1:15:0
@@ -193,6 +242,8 @@ GoldScout-export 6^nnbjlckeeem8^1
 @q^274657^3:4:0
 @q^277112^1:12:0
 @m^1425^The Hinterlands
+@m^1431^Duskwood
+@m^1437^Wetlands
 @m^1446^Tanaris
 @m^2548^Riverglades
 @c^2840^
@@ -719,6 +770,17 @@ GoldScout-export 6^nnbjlckeeem8^1
 @c^285279^
 @c^285280^
 @c^285281^
+@a^3^144:1
+@a^202^182:1,183:3,184:2,236:9,255:1,256:3
+@a^218^182:2
+@a^531^162:1,163:2,164:3,183:6,184:3
+@a^533^152:1,192:1
+@a^949^163:1
+@a^1024^142:4,163:1
+@a^1259^163:1
+@a^1400^203:1,243:1
+@a^1417^183:1,202:1,203:4
+@a^2089^223:2
 @a^2645^271:1
 @a^2649^204:1,224:1
 @a^2651^226:4

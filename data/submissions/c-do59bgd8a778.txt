@@ -1,4 +1,4 @@
-GoldScout-export 6^do59bgd8a778^12
+GoldScout-export 6^do59bgd8a778^13
 1501^11^0^1^1^1420^0.3156^0.6370^11^Hirnloser Zombie^1366:1:1,1372:1:1,2210:1:1,2589:1:1,2649:1:1,3363:2:2,4604:1:1^
 1502^7^0^1^2^1420^0.3136^0.6313^7^Elender Zombie^159:2:2,2589:3:3,2654:1:1,2656:1:1^
 1508^4^0^1^1^1420^0.3009^0.6434^4^Junger Aasfresser^2650:1:1,3265:2:2,4865:1:1,7073:1:1,7074:3:3^
@@ -43,6 +43,8 @@ GoldScout-export 6^do59bgd8a778^12
 4158^4^0^32^34^1441^0.7506^0.7715^4^Salzwüstengeier^729:3:3,3399:2:2,5116:3:3,5848:3:3,11416:1:1,12037:3:3^
 4248^1^0^26^26^1441^0.2867^0.4111^1^Pestfleckenhyäne^5635:1:1^
 4249^6^0^28^29^1441^0.5760^0.4881^6^Pestfleckenkläffer^3301:1:1,3402:3:3,5635:1:1,14195:1:1^
+4392^2^0^38^40^1445^0.5314^0.5587^2^Ätzender Sumpfbrühschlammer^3671:1:1^
+4393^1^0^40^40^1445^0.5435^0.5522^1^Säurehaltiger Sumpfbrühschlammer^20763:1:1^
 4499^1^0^30^30^1441^0.2608^0.4201^1^Rok'Alim der Trommler^4784:1:1,5741:1:1,5844:1:1^
 4633^2^0^31^31^1443^0.6965^0.4771^2^Späher der Kolkar^254432:1:1^
 4634^3^0^31^32^1443^0.7161^0.4262^3^Raufer der Kolkar^1710:1:1,4306:2:2,254432:1:1^
@@ -168,6 +170,7 @@ GoldScout-export 6^do59bgd8a778^12
 @i^3476^Graubärenzunge
 @i^3499^Polierter goldener Schlüssel
 @i^3612^Pläne: Grüne Eisenstulpen
+@i^3671^Lebloser Schädel
 @i^3688^Blutsteinoval
 @i^3689^Blutsteinmarmor
 @i^3690^Blutsteinsplitter
@@ -258,6 +261,7 @@ GoldScout-export 6^do59bgd8a778^12
 @i^19937^Kleine Skorpidklaue
 @i^19938^Schweres Skorpidbein
 @i^20310^Geschundene Dämonenhaut
+@i^20763^Beschädigte Waffe
 @i^211855^Schriftrolle: STHENIC LUNATE
 @i^213543^Schriftrolle: UPDOG
 @i^213546^Schriftrolle: SCHUBIDU
@@ -342,6 +346,7 @@ GoldScout-export 6^do59bgd8a778^12
 @q^3476^1:12:0
 @q^3499^1:13:0
 @q^3612^2:9:0
+@q^3671^0:15:0
 @q^3688^1:12:0
 @q^3689^1:12:0
 @q^3690^1:12:0
@@ -432,6 +437,7 @@ GoldScout-export 6^do59bgd8a778^12
 @q^19937^0:15:0
 @q^19938^0:15:0
 @q^20310^1:12:0
+@q^20763^0:15:0
 @q^211855^1:0:0
 @q^213543^1:0:0
 @q^213546^1:0:0
@@ -466,6 +472,7 @@ GoldScout-export 6^do59bgd8a778^12
 @m^1424^Vorgebirge von Hillsbrad
 @m^1441^Tausend Nadeln
 @m^1443^Desolace
+@m^1445^Marschen von Dustwallow
 @c^118^
 @c^724^
 @c^733^
@@ -1351,6 +1358,8 @@ GoldScout-export 6^do59bgd8a778^12
 @a^4158^294:1,296:1,313:1,355:1
 @a^4248^165:1
 @a^4249^124:1,192:1,193:1,212:1,213:1,253:1
+@a^4392^230:2
+@a^4393^230:1
 @a^4499^165:1
 @a^4633^193:1,194:1
 @a^4634^174:3
