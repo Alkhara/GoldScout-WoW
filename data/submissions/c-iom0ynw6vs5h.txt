@@ -1,4 +1,4 @@
-GoldScout-export 6^iom0ynw6vs5h^11
+GoldScout-export 6^iom0ynw6vs5h^12
 92^3^0^39^40^1418^0.3776^0.7456^3^Rock Elemental^4784:2:2,7848:1:1^
 157^42^0^14^15^1436^0.4057^0.5524^42^Goretusk^723:16:16,731:14:14,769:34:53,771:13:13,2677:8:8,3171:6:6,3172:14:14,211786:1:1^
 454^9^0^12^13^1436^0.3803^0.3034^9^Young Goretusk^723:3:3,731:3:3,769:7:7,771:1:1,2677:4:4,3171:2:2,3172:3:3,6267:1:1^
@@ -72,6 +72,10 @@ GoldScout-export 6^iom0ynw6vs5h^11
 4851^3^0^36^37^1418^0.3324^0.1689^1^Stonevault Rockchewer^4306:1:3^
 4852^2^0^0^0^0^0.0000^0.0000^0^^4306:1:1,262889:1:1^
 4856^3^0^36^37^1418^0.3643^0.1474^3^Stonevault Cave Hunter^248709:1:1^
+5797^1^0^25^25^1413^0.4748^0.7448^1^Aean Swiftriver^9771:1:1,10621:1:1^
+5798^1^0^25^25^1413^0.4742^0.7436^1^Thora Feathermoon^6591:1:1^
+5799^1^0^24^24^1413^0.4747^0.7447^1^Hannah Bladeleaf^1205:1:1^
+5800^1^0^24^24^1413^0.4751^0.7523^1^Marcus Bel^2592:1:4^
 7327^9^0^34^35^0^0.0000^0.0000^0^Withered Warrior^2592:1:1,3808:1:1,4306:3:8,4539:3:3,4634:1:1,14416:1:1,248693:1:1^
 7328^8^0^0^0^0^0.0000^0.0000^0^^3808:1:1,4306:1:4,15573:1:1^
 7329^29^0^0^0^0^0.0000^0.0000^0^^864:1:1,1708:1:1,3806:1:1,4306:14:38,4539:2:2,14201:1:1,15134:1:1,15562:1:1^
@@ -172,6 +176,7 @@ GoldScout-export 6^iom0ynw6vs5h^11
 @i^864^Knightly Longsword of the Whale
 @i^1074^Hard Spider Leg Tip
 @i^1156^Lavishly Jeweled Ring
+@i^1205^Melon Juice
 @i^1207^Murphstar of the Gorilla
 @i^1464^Buzzard Talon
 @i^1477^Scroll of Agility II
@@ -288,6 +293,7 @@ GoldScout-export 6^iom0ynw6vs5h^11
 @i^6444^Forked Tongue
 @i^6530^Nightcrawlers
 @i^6552^Bard's Tunic of the Boar
+@i^6591^Battleforge Wristguards of the Beast
 @i^6889^Small Egg
 @i^7067^Elemental Earth
 @i^7069^Elemental Air
@@ -307,12 +313,14 @@ GoldScout-export 6^iom0ynw6vs5h^11
 @i^9260^Volatile Rum
 @i^9285^Field Plate Vambraces of the Defender
 @i^9355^Hoop Earring
+@i^9771^Greenweave Gloves of the Whale
 @i^9859^Archer's Cap of Intellect
 @i^10235^Engraved Helm of Stamina
 @i^10285^Shadow Silk
 @i^10330^Scarlet Leggings
 @i^10403^Blackened Defias Belt
 @i^10420^Skull of the Coldbringer
+@i^10621^Runed Scroll
 @i^10764^Deathchill Armor
 @i^10766^Plaguerot Sprig
 @i^10771^Deathmage Sash
@@ -397,6 +405,7 @@ GoldScout-export 6^iom0ynw6vs5h^11
 @q^864^2:2:0
 @q^1074^0:15:0
 @q^1156^3:4:0
+@q^1205^1:0:0
 @q^1207^2:2:0
 @q^1464^0:15:0
 @q^1477^1:0:0
@@ -513,6 +522,7 @@ GoldScout-export 6^iom0ynw6vs5h^11
 @q^6444^0:15:0
 @q^6530^1:0:0
 @q^6552^2:4:0
+@q^6591^2:4:0
 @q^6889^1:7:1
 @q^7067^1:7:1
 @q^7069^1:7:1
@@ -532,12 +542,14 @@ GoldScout-export 6^iom0ynw6vs5h^11
 @q^9260^1:0:0
 @q^9285^2:4:0
 @q^9355^0:15:0
+@q^9771^2:4:0
 @q^9859^2:4:0
 @q^10235^2:4:0
 @q^10285^1:7:1
 @q^10330^3:4:0
 @q^10403^3:4:0
 @q^10420^1:12:0
+@q^10621^1:0:0
 @q^10764^3:4:0
 @q^10766^3:2:0
 @q^10771^3:4:0
@@ -1386,6 +1398,10 @@ GoldScout-export 6^iom0ynw6vs5h^11
 @a^4846^67:2
 @a^4851^66:1
 @a^4856^46:1,48:1,66:1
+@a^5797^289:1
+@a^5798^289:1
+@a^5799^289:1
+@a^5800^309:1
 @a^7332^290:1
 @a^7872^369:4
 @a^7873^349:4,369:9,389:1
