@@ -1,4 +1,4 @@
-GoldScout-export 6^t55fx5doi3mp^14
+GoldScout-export 6^t55fx5doi3mp^15
 36^9^0^11^12^1436^0.4816^0.3366^9^Harvest Golem^732:6:6,814:5:5,1274:2:2,6336:1:1,255007:8:8,255010:1:1^
 46^8^0^9^10^1429^0.7834^0.7072^8^Murloc Forager^159:2:2,779:3:3,1416:1:1,1431:1:1,2642:1:1,6517:1:1^
 95^21^0^11^12^1436^0.4852^0.4262^21^Defias Smuggler^829:11:11,858:1:1,1506:1:1,2589:6:12,3375:1:1,6510:1:1,6518:1:1,9744:1:1^
@@ -87,6 +87,15 @@ GoldScout-export 6^t55fx5doi3mp^14
 11520^1^0^0^0^0^0.0000^0.0000^0^^1768:1:1^
 248278^2^0^11^11^1429^0.7668^0.8579^2^Croaky^247826:2:2^
 260157^7^0^9^10^1426^0.7459^0.5656^7^Elder Snow Leopard^774:1:1,4813:1:1,4814:4:4,7350:1:1,267414:2:2^
+261311^1^0^0^0^0^0.0000^0.0000^0^^270228:1:1^
+261316^1^0^0^0^0^0.0000^0.0000^0^^271095:1:1^
+261319^1^0^0^0^0^0.0000^0.0000^0^^274286:1:1^
+263389^8^0^0^0^0^0.0000^0.0000^0^^1495:1:1,1503:1:1,1513:1:1,2589:2:8,2970:1:1,4577:1:1,6337:1:1,275895:1:1^
+263390^4^0^0^0^0^0.0000^0.0000^0^^1513:1:1,2589:1:3,2632:1:1,275895:1:1^
+263396^7^0^0^0^0^0.0000^0.0000^0^^1179:1:1,1499:1:1,2589:1:5,2763:1:1,5071:1:1,211780:1:1^
+263438^2^0^0^0^0^0.0000^0.0000^0^^211786:1:1^
+263466^1^0^0^0^0^0.0000^0.0000^0^^1499:1:1^
+263470^3^0^0^0^0^0.0000^0.0000^0^^1503:1:1,3299:1:1,3300:1:1,6378:1:1^
 269075^5^0^6^6^1426^0.2747^0.6271^5^Snow Leopard Prowler^4813:1:1,4814:3:3,211780:1:1,211785:1:1^
 270196^1^0^12^12^1439^0.4461^0.5859^1^Jai'vhanel^4775:1:1,6889:1:1,281038:1:1^
 271486^1^0^6^8^1426^0.4250^0.4917^1^Wendigo Shaman^2671:1:1^
@@ -134,7 +143,10 @@ GoldScout-export 6^t55fx5doi3mp^14
 @i^1431^Patchwork Pants
 @i^1475^Small Venom Sac
 @i^1476^Snapped Spider Limb
+@i^1495^Calico Shoes
+@i^1499^Calico Pants
 @i^1501^Calico Tunic
+@i^1503^Warped Leather Boots
 @i^1504^Warped Leather Bracers
 @i^1506^Warped Leather Gloves
 @i^1507^Warped Leather Pants
@@ -158,6 +170,7 @@ GoldScout-export 6^t55fx5doi3mp^14
 @i^2591^Dirty Trogg Cloth
 @i^2592^Wool Cloth
 @i^2608^Threshadon Ambergris
+@i^2632^Curved Dagger of the Monkey
 @i^2642^Loose Chain Boots
 @i^2644^Loose Chain Cloak
 @i^2645^Loose Chain Gloves
@@ -178,6 +191,7 @@ GoldScout-export 6^t55fx5doi3mp^14
 @i^2957^Journeyman's Vest
 @i^2960^Journeyman's Gloves
 @i^2966^Warrior's Pants
+@i^2970^Spellbinder Pants
 @i^2972^Spellbinder Gloves
 @i^2976^Hunting Gloves
 @i^3012^Scroll of Agility
@@ -210,6 +224,7 @@ GoldScout-export 6^t55fx5doi3mp^14
 @i^4540^Tough Hunk of Bread
 @i^4566^Sturdy Quarterstaff of Agility
 @i^4567^Merc Sword of the Eagle
+@i^4577^Compact Shotgun
 @i^4604^Forest Mushroom Cap
 @i^4674^Tribal Cloak
 @i^4693^Ceremonial Leather Belt
@@ -218,6 +233,7 @@ GoldScout-export 6^t55fx5doi3mp^14
 @i^4814^Discolored Fang
 @i^4865^Ruined Pelt
 @i^4874^Clean Fishbones
+@i^5071^Shadow Wand
 @i^5382^Anaya's Pendant
 @i^5385^Crawler Leg
 @i^5412^Thresher Eye
@@ -232,8 +248,10 @@ GoldScout-export 6^t55fx5doi3mp^14
 @i^6303^Raw Slitherskin Mackerel
 @i^6308^Raw Bristle Whisker Catfish
 @i^6336^Infantry Tunic of Stamina
+@i^6337^Infantry Leggings of the Monkey
 @i^6358^Oily Blackmouth
 @i^6361^Raw Rainbow Fin Albacore
+@i^6378^Seer's Cape
 @i^6510^Infantry Gauntlets
 @i^6513^Disciple's Sash
 @i^6517^Pioneer Belt
@@ -270,9 +288,13 @@ GoldScout-export 6^t55fx5doi3mp^14
 @i^267414^Pristine Leopard Pelt
 @i^267415^Stolen Blasting Powder
 @i^268548^Empty Powder Keg
+@i^270228^Golemheart Stave
+@i^271095^Fang of Magmatus
 @i^272998^Bone Knuckles
 @i^273005^Satyrskin Cloak
 @i^274268^Dark Iron Map
+@i^274286^Durgen Dirgehammer's Head
+@i^275895^Fading Echo
 @i^281038^Feather of Jai'vhanel
 @i^286326^Riptear's Heart
 @q^117^1:0:0
@@ -317,7 +339,10 @@ GoldScout-export 6^t55fx5doi3mp^14
 @q^1431^0:4:0
 @q^1475^1:7:1
 @q^1476^0:15:0
+@q^1495^0:4:0
+@q^1499^0:4:0
 @q^1501^0:4:0
+@q^1503^0:4:0
 @q^1504^0:4:0
 @q^1506^0:4:0
 @q^1507^0:4:0
@@ -341,6 +366,7 @@ GoldScout-export 6^t55fx5doi3mp^14
 @q^2591^0:15:0
 @q^2592^1:7:1
 @q^2608^0:15:0
+@q^2632^2:2:0
 @q^2642^0:4:0
 @q^2644^0:4:0
 @q^2645^0:4:0
@@ -361,6 +387,7 @@ GoldScout-export 6^t55fx5doi3mp^14
 @q^2957^2:4:0
 @q^2960^1:4:0
 @q^2966^2:4:0
+@q^2970^2:4:0
 @q^2972^1:4:0
 @q^2976^2:4:0
 @q^3012^1:0:0
@@ -393,6 +420,7 @@ GoldScout-export 6^t55fx5doi3mp^14
 @q^4540^1:0:0
 @q^4566^2:2:0
 @q^4567^2:2:0
+@q^4577^2:2:0
 @q^4604^1:0:0
 @q^4674^1:4:0
 @q^4693^1:4:0
@@ -401,6 +429,7 @@ GoldScout-export 6^t55fx5doi3mp^14
 @q^4814^0:15:0
 @q^4865^0:15:0
 @q^4874^0:15:0
+@q^5071^2:2:0
 @q^5382^1:12:0
 @q^5385^1:12:0
 @q^5412^1:12:0
@@ -415,8 +444,10 @@ GoldScout-export 6^t55fx5doi3mp^14
 @q^6303^1:7:1
 @q^6308^1:7:1
 @q^6336^2:4:0
+@q^6337^2:4:0
 @q^6358^1:7:1
 @q^6361^1:7:1
+@q^6378^2:4:0
 @q^6510^1:4:0
 @q^6513^1:4:0
 @q^6517^1:4:0
@@ -453,9 +484,13 @@ GoldScout-export 6^t55fx5doi3mp^14
 @q^267414^1:12:0
 @q^267415^1:12:0
 @q^268548^1:12:0
+@q^270228^3:2:0
+@q^271095^3:2:0
 @q^272998^3:2:0
 @q^273005^3:4:0
 @q^274268^1:12:0
+@q^274286^1:12:0
+@q^275895^0:15:0
 @q^281038^1:12:0
 @q^286326^1:12:0
 @m^1420^Tirisfal Glades

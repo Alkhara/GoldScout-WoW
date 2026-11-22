@@ -1,4 +1,4 @@
-GoldScout-export 6^opwwm1mhz30c^10
+GoldScout-export 6^opwwm1mhz30c^11
 2526^1^0^30^30^1432^0.4701^0.1431^1^Mountaineer Morlic^^
 2563^1^0^32^33^1417^0.4430^0.7045^1^Plains Creeper^878:1:1,1081:1:1,2251:1:1^
 2640^2^0^46^47^1425^0.6533^0.6933^2^Vilebranch Witch Doctor^4338:1:1,8151:1:1,9259:1:1^
@@ -81,6 +81,8 @@ GoldScout-export 6^opwwm1mhz30c^10
 5648^2^0^0^0^0^0.0000^0.0000^0^^1520:1:1,4306:1:4,9523:1:1^
 5649^6^0^0^0^0^0.0000^0.0000^0^^4338:1:4,8151:2:2,9523:2:2^
 5650^4^0^0^0^0^0.0000^0.0000^0^^8623:1:1,9523:4:4^
+6509^4^0^48^49^1449^0.6647^0.2840^4^Bloodpetal Lasher^3820:1:1,4606:3:3,4607:1:1,4608:2:2,11018:1:1,11116:1:1^
+6510^3^0^51^52^1449^0.5333^0.1524^3^Bloodpetal Flayer^2453:1:1,4607:1:1^
 6575^10^0^0^0^0^0.0000^0.0000^0^^1707:1:1,2592:1:1,4306:1:1,6395:1:1^
 6906^2^0^0^0^0^0.0000^0.0000^0^^9399:2:361,9400:2:2,252896:1:1^
 6907^2^0^0^0^0^0.0000^0.0000^0^^2459:1:1,9398:1:1^
@@ -158,6 +160,7 @@ GoldScout-export 6^opwwm1mhz30c^10
 @i^1786^Cross-stitched Vest
 @i^1994^Ebonclaw Reaver of the Defender
 @i^2251^Gooey Spider Leg
+@i^2453^Bruiseweed
 @i^2459^Swiftness Potion
 @i^2592^Wool Cloth
 @i^2771^Tin Ore
@@ -169,6 +172,7 @@ GoldScout-export 6^opwwm1mhz30c^10
 @i^3787^Stone Club
 @i^3801^Hardened Leather Boots
 @i^3803^Hardened Cloak
+@i^3820^Stranglekelp
 @i^3827^Mana Potion
 @i^3928^Superior Healing Potion
 @i^3938^Crochet Bracers
@@ -206,6 +210,8 @@ GoldScout-export 6^opwwm1mhz30c^10
 @i^4599^Cured Ham Steak
 @i^4601^Soft Banana Bread
 @i^4606^Spongy Morel
+@i^4607^Delicious Cave Mold
+@i^4608^Raw Black Truffle
 @i^4637^Steel Lockbox
 @i^4638^Reinforced Steel Lockbox
 @i^4784^Lifeless Stone
@@ -288,6 +294,8 @@ GoldScout-export 6^opwwm1mhz30c^10
 @i^10083^Lord's Crown of the Bandit
 @i^10660^First Mosh'aru Tablet
 @i^10661^Second Mosh'aru Tablet
+@i^11018^Un'Goro Soil
+@i^11116^A Mangled Journal
 @i^11118^Archaedic Stone of the Physician
 @i^11310^Flameseer Mantle
 @i^11386^Squishy Basilisk Eye
@@ -363,6 +371,7 @@ GoldScout-export 6^opwwm1mhz30c^10
 @q^1786^0:4:0
 @q^1994^2:2:0
 @q^2251^1:7:1
+@q^2453^1:7:1
 @q^2459^1:0:0
 @q^2592^1:7:1
 @q^2771^1:7:1
@@ -374,6 +383,7 @@ GoldScout-export 6^opwwm1mhz30c^10
 @q^3787^0:2:0
 @q^3801^0:4:0
 @q^3803^0:4:0
+@q^3820^1:7:1
 @q^3827^1:0:0
 @q^3928^1:0:0
 @q^3938^0:4:0
@@ -411,6 +421,8 @@ GoldScout-export 6^opwwm1mhz30c^10
 @q^4599^1:0:0
 @q^4601^1:0:0
 @q^4606^1:0:0
+@q^4607^1:0:0
+@q^4608^1:0:0
 @q^4637^2:15:0
 @q^4638^2:15:0
 @q^4784^0:15:0
@@ -493,6 +505,8 @@ GoldScout-export 6^opwwm1mhz30c^10
 @q^10083^2:4:0
 @q^10660^1:12:0
 @q^10661^1:12:0
+@q^11018^1:12:0
+@q^11116^2:15:0
 @q^11118^3:4:0
 @q^11310^3:4:0
 @q^11386^0:15:0
@@ -558,6 +572,7 @@ GoldScout-export 6^opwwm1mhz30c^10
 @m^1425^The Hinterlands
 @m^1432^Loch Modan
 @m^1446^Tanaris
+@m^1449^Un'Goro Crater
 @m^1458^Undercity
 @c^118^
 @c^724^
@@ -972,6 +987,8 @@ GoldScout-export 6^opwwm1mhz30c^10
 @a^5615^132:4,151:1,152:3,153:1
 @a^5617^152:10,172:1
 @a^5623^132:1,151:2,152:1,153:2
+@a^6509^113:4
+@a^6510^50:2,70:1
 @a^7995^311:1
 @a^7996^269:1
 @a^8667^170:1

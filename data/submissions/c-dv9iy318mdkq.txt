@@ -1,4 +1,4 @@
-GoldScout-export 6^dv9iy318mdkq^36
+GoldScout-export 6^dv9iy318mdkq^40
 587^25^0^33^34^1434^0.3089^0.1823^25^Guerrier Bloodscalp^1519:5:5,1520:1:1,2592:3:8,3771:1:1,3794:1:1,3901:4:4,3915:2:2,4306:8:12^
 588^12^0^34^35^1434^0.2453^0.1204^12^Eclaireur Bloodscalp^1519:1:1,1708:1:1,2732:1:1,2748:1:1,3817:1:1,3901:1:1,4306:3:4^
 595^13^0^34^35^1434^0.2480^0.1196^13^Chasseur Bloodscalp^1708:1:1,1710:1:1,2730:1:1,2732:2:2,3915:2:2,4306:3:3^
@@ -26,7 +26,7 @@ GoldScout-export 6^dv9iy318mdkq^36
 856^1^0^34^34^1434^0.3024^0.2250^1^Jeune raptor flagellant^3685:1:1,12184:1:1^
 1061^1^0^41^41^1434^0.2358^0.0905^1^Gan'zulah^4338:1:1^
 1062^1^0^40^40^1434^0.2360^0.1028^1^Nezzliok le Redoutable^^
-1085^372^0^34^35^1434^0.3338^0.1872^372^Ancien tigre de Strangleronce^1529:1:1,1686:147:147,1687:51:51,1725:1:1,3864:1:1,4634:1:1,5213:1:1,5637:18:18,6400:1:1,6407:1:1,6408:1:1,7424:1:1,7460:1:1,7609:1:1,8146:9:9,9865:1:1,9869:1:1,11996:1:1,12202:186:186,15225:1:1,213543:1:1,213544:2:2,213546:1:1,248691:2:2,248692:1:1,248693:2:2,248694:2:2,262889:2:2^
+1085^398^0^34^35^1434^0.3340^0.1873^398^Ancien tigre de Strangleronce^1529:1:1,1686:160:160,1687:55:55,1725:1:1,3864:1:1,4634:1:1,5213:1:1,5637:20:20,6400:1:1,6407:1:1,6408:1:1,7424:1:1,7460:1:1,7609:2:2,8146:10:10,9865:1:1,9869:1:1,11996:1:1,12202:199:199,15225:1:1,15243:1:1,213543:1:1,213544:2:2,213546:1:1,248691:2:2,248692:1:1,248693:2:2,248694:2:2,248709:1:1,262889:3:3^
 1096^15^0^35^36^1434^0.4447^0.1680^15^Géologue de la KapitalRisk^1708:1:1,2592:1:1,2740:1:1,2744:1:1,3771:2:2,3794:1:1,4106:8:8,4306:7:11,4338:1:1^
 1142^6^0^36^37^1434^0.3696^0.3088^6^Brute Mosh'Ogg^4306:2:3^
 1144^3^0^36^37^1434^0.3691^0.3046^3^Sorcier-docteur Mosh'Ogg^4306:1:1^
@@ -216,7 +216,7 @@ GoldScout-export 6^dv9iy318mdkq^36
 @i^7424^Spallières de la phalange de la bête
 @i^7460^Cape de chevalier de protection contre l'ombre
 @i^7493^Brassards de capitaine de chevalerie
-@i^7609^Bâton d'ambre de doyen de l'ours
+@i^7609^Bâton d'ambre de doyen de canalisation
 @i^7846^Croc de coyote des rochers
 @i^8146^Serre cruelle
 @i^8387^Patron : Masque du grand vaudou
@@ -242,6 +242,7 @@ GoldScout-export 6^dv9iy318mdkq^36
 @i^15008^Mitaines primordiales
 @i^15150^Ailettes d'âme errante de brigandage
 @i^15225^Marteau séquoia de protection contre le givre
+@i^15243^Kris mortel de protection contre le givre
 @i^15346^Gilet de guide de l'aigle
 @i^15492^Echarpe maculée de sang du tigre
 @i^15750^Sceptre de lumière
@@ -262,6 +263,7 @@ GoldScout-export 6^dv9iy318mdkq^36
 @i^248692^Caisse détournée : minerai d'expert
 @i^248693^Caisse détournée : textiles d'expert
 @i^248694^Caisse détournée : curiosités d'expert
+@i^248709^Caisse détournée : lingots d'expert
 @i^254432^Totem centaure sculpté
 @i^262889^Commission d'expert scellée
 @i^273089^Corde serpentine
@@ -413,6 +415,7 @@ GoldScout-export 6^dv9iy318mdkq^36
 @q^15008^1:4:0
 @q^15150^2:4:0
 @q^15225^2:2:0
+@q^15243^2:2:0
 @q^15346^2:4:0
 @q^15492^2:4:0
 @q^15750^1:12:0
@@ -433,6 +436,7 @@ GoldScout-export 6^dv9iy318mdkq^36
 @q^248692^1:0:1
 @q^248693^1:0:1
 @q^248694^1:0:1
+@q^248709^2:0:1
 @q^254432^2:15:0
 @q^262889^3:0:0
 @q^273089^3:4:0
@@ -1230,7 +1234,7 @@ GoldScout-export 6^dv9iy318mdkq^36
 @a^856^86:1
 @a^1061^24:1
 @a^1062^44:1
-@a^1085^46:4,66:302,67:55,86:7,87:4
+@a^1085^46:4,66:322,67:61,86:7,87:4
 @a^1096^68:13,69:2
 @a^1142^127:6
 @a^1144^107:1,127:2
