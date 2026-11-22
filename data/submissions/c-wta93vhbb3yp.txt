@@ -1,4 +1,4 @@
-GoldScout-export 6^wta93vhbb3yp^30
+GoldScout-export 6^wta93vhbb3yp^31
 587^5^0^33^34^1434^0.3006^0.1874^5^Bloodscalp Warrior^1519:1:1,2592:1:1,2744:1:1,3915:3:3,4306:2:3^
 588^7^0^34^35^1434^0.2518^0.1069^7^Bloodscalp Scout^1519:2:2,2735:1:1,3771:1:1,3901:1:1,4306:2:3^
 595^12^0^34^35^1434^0.2495^0.1097^12^Bloodscalp Hunter^1519:3:3,2290:1:1,2738:1:1,3771:2:2,3901:1:1,3915:4:4,4306:1:1,4338:1:1^
@@ -53,6 +53,7 @@ GoldScout-export 6^wta93vhbb3yp^30
 2760^3^0^38^39^1417^0.2436^0.2950^3^Burning Exile^4479:1:1,4787:1:1^
 2762^24^0^38^39^1417^0.5181^0.5104^24^Thundering Exile^4480:6:6,7069:2:2^
 2831^1^0^40^41^1418^0.3234^0.7087^1^Giant Buzzard^12037:1:1^
+3056^1^0^12^12^1412^0.4002^0.2169^1^Ghost Howl^3299:1:1,4854:1:1^
 3560^1^0^34^37^1434^0.2418^0.1040^1^Healing Ward^^
 3630^1^0^15^16^1414^0.5192^0.5489^1^Deviate Coiler^6470:1:1,15011:1:1^
 3632^1^0^15^16^1414^0.5208^0.5503^1^Deviate Creeper^5124:1:1^
@@ -398,6 +399,7 @@ GoldScout-export 6^wta93vhbb3yp^30
 @i^3180^Flecked Raptor Scale
 @i^3186^Viking Sword of the Whale
 @i^3201^Barbarian War Axe of the Bear
+@i^3299^Fractured Canine
 @i^3313^Ceremonial Leather Harness
 @i^3374^Calico Belt
 @i^3385^Lesser Mana Potion
@@ -492,6 +494,7 @@ GoldScout-export 6^wta93vhbb3yp^30
 @i^4727^Chief Brigadier Girdle
 @i^4784^Lifeless Stone
 @i^4787^Burning Pitch
+@i^4854^Demon Scarred Cloak
 @i^5113^Mark of the Syndicate
 @i^5124^Small Raptor Tooth
 @i^5136^Torn Furry Ear
@@ -835,6 +838,7 @@ GoldScout-export 6^wta93vhbb3yp^30
 @q^3180^0:15:0
 @q^3186^2:2:0
 @q^3201^2:2:0
+@q^3299^0:15:0
 @q^3313^2:4:0
 @q^3374^0:4:0
 @q^3385^1:0:0
@@ -929,6 +933,7 @@ GoldScout-export 6^wta93vhbb3yp^30
 @q^4727^2:4:0
 @q^4784^0:15:0
 @q^4787^0:15:0
+@q^4854^1:4:0
 @q^5113^0:15:0
 @q^5124^0:15:0
 @q^5136^0:15:0
@@ -1193,6 +1198,7 @@ GoldScout-export 6^wta93vhbb3yp^30
 @q^286429^3:4:0
 @q^286980^3:4:0
 @q^287009^3:4:0
+@m^1412^Mulgore
 @m^1413^The Barrens
 @m^1414^Kalimdor
 @m^1415^Eastern Kingdoms
@@ -1859,6 +1865,7 @@ GoldScout-export 6^wta93vhbb3yp^30
 @a^2760^104:2,124:1
 @a^2762^190:4,210:20
 @a^2831^286:1
+@a^3056^88:1
 @a^3560^44:1
 @a^3630^210:1
 @a^3632^230:1

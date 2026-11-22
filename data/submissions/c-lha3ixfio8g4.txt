@@ -1,4 +1,4 @@
-GoldScout-export 6^lha3ixfio8g4^16
+GoldScout-export 6^lha3ixfio8g4^17
 92^26^0^39^40^1418^0.4182^0.8140^26^Rock Elemental^4553:2:2,7067:7:7,7848:5:5,8150:4:4,248692:1:1^
 937^16^0^32^33^1434^0.4468^0.0958^16^Kurzen Jungle Fighter^1710:1:1,4306:4:5,13106:1:1^
 938^2^0^34^35^1434^0.4482^0.0894^2^Kurzen Commando^2732:1:1,4306:2:3^
@@ -32,6 +32,9 @@ GoldScout-export 6^lha3ixfio8g4^16
 2592^1^0^38^39^1417^0.3645^0.5745^1^Rumbling Exile^4553:1:1,4784:1:1^
 2597^2^0^40^40^1417^0.2603^0.6505^2^Lord Falconcrest^4517:2:2^
 2599^2^0^38^38^1417^0.2615^0.6493^2^Otto^3781:1:1,4338:1:3,4516:1:1,213545:1:1^
+2649^2^0^41^41^1425^0.2197^0.5770^2^Witherbark Scalper^1520:1:1,8151:1:1^
+2650^2^0^41^41^1425^0.2216^0.5850^2^Witherbark Zealot^4338:1:1^
+2651^2^0^42^43^1425^0.3266^0.5775^2^Witherbark Hideskinner^1520:1:1,4004:1:1,4338:1:2,4589:1:1,9259:2:2^
 2727^3^0^35^36^1418^0.5075^0.4247^3^Crag Coyote^4582:1:1^
 2728^1^0^37^38^1418^0.5851^0.5635^1^Feral Crag Coyote^^
 2735^17^0^37^39^1418^0.2150^0.4397^17^Lesser Rock Elemental^4552:4:4,4553:5:5,4626:4:4,4784:11:11,7912:7:9,8150:4:4^
@@ -198,6 +201,7 @@ GoldScout-export 6^lha3ixfio8g4^16
 @i^878^Fist-sized Spinneret
 @i^1464^Buzzard Talon
 @i^1477^Scroll of Agility II
+@i^1520^Troll Sweat
 @i^1625^Exquisite Flamberge of the Owl
 @i^1645^Moonberry Juice
 @i^1686^Bristly Whisker
@@ -243,6 +247,7 @@ GoldScout-export 6^lha3ixfio8g4^16
 @i^3939^Crochet Cloak
 @i^3965^Thick Leather Gloves
 @i^3968^Thick Leather Tunic
+@i^4004^Overlinked Chain Gloves
 @i^4006^Overlinked Chain Shoulderpads
 @i^4024^Heavy War Staff
 @i^4047^Mistscape Boots
@@ -264,6 +269,7 @@ GoldScout-export 6^lha3ixfio8g4^16
 @i^4582^Soft Bushy Tail
 @i^4583^Thick Furry Mane
 @i^4585^Dripping Spider Mandible
+@i^4589^Long Elegant Feather
 @i^4603^Raw Spotted Yellowtail
 @i^4626^Small Stone Shard
 @i^4636^Strong Iron Lockbox
@@ -300,12 +306,14 @@ GoldScout-export 6^lha3ixfio8g4^16
 @i^8052^An'Alleum Power Stone
 @i^8146^Wicked Claw
 @i^8150^Deeprock Salt
+@i^8151^Flask of Mojo
 @i^8188^Explosive Shotgun
 @i^8398^Pattern: Tough Scorpid Gloves
 @i^8483^Wastewander Water Pouch
 @i^8723^Caliph Scorpidsting's Head
 @i^8746^Interlaced Cowl
 @i^8749^Crochet Hat
+@i^9259^Troll Tribal Necklace
 @i^9291^Field Plate Leggings of the Owl
 @i^9408^Ironshod Bludgeon
 @i^9414^Oilskin Leggings
@@ -408,6 +416,7 @@ GoldScout-export 6^lha3ixfio8g4^16
 @q^878^0:7:0
 @q^1464^0:15:0
 @q^1477^1:0:0
+@q^1520^0:15:0
 @q^1625^2:2:0
 @q^1645^1:0:0
 @q^1686^0:15:0
@@ -453,6 +462,7 @@ GoldScout-export 6^lha3ixfio8g4^16
 @q^3939^0:4:0
 @q^3965^0:4:0
 @q^3968^0:4:0
+@q^4004^0:4:0
 @q^4006^0:4:0
 @q^4024^0:2:0
 @q^4047^2:4:0
@@ -474,6 +484,7 @@ GoldScout-export 6^lha3ixfio8g4^16
 @q^4582^1:12:0
 @q^4583^0:15:0
 @q^4585^0:15:0
+@q^4589^1:7:1
 @q^4603^1:7:1
 @q^4626^1:12:0
 @q^4636^2:15:0
@@ -510,12 +521,14 @@ GoldScout-export 6^lha3ixfio8g4^16
 @q^8052^1:12:0
 @q^8146^1:7:1
 @q^8150^1:7:1
+@q^8151^1:7:1
 @q^8188^2:2:0
 @q^8398^2:9:0
 @q^8483^1:12:0
 @q^8723^1:12:0
 @q^8746^0:4:0
 @q^8749^0:4:0
+@q^9259^1:15:0
 @q^9291^2:4:0
 @q^9408^3:2:0
 @q^9414^3:4:0
@@ -619,6 +632,7 @@ GoldScout-export 6^lha3ixfio8g4^16
 @m^1417^Arathi Highlands
 @m^1418^Badlands
 @m^1424^Hillsbrad Foothills
+@m^1425^The Hinterlands
 @m^1434^Stranglethorn Vale
 @m^1443^Desolace
 @m^1444^Feralas
@@ -990,6 +1004,9 @@ GoldScout-export 6^lha3ixfio8g4^16
 @a^2592^227:1
 @a^2597^245:1,265:1
 @a^2599^245:1,265:1
+@a^2649^224:2
+@a^2650^224:2
+@a^2651^226:2
 @a^2727^170:2,189:1
 @a^2728^231:1
 @a^2735^163:3,164:11,184:3

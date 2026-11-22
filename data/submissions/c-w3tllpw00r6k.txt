@@ -1,4 +1,4 @@
-GoldScout-export 5^w3tllpw00r6k^14
+GoldScout-export 5^w3tllpw00r6k^15
 232^1^0^23^23^1424^0.3274^0.3543^1^Farmer Ray^1485:1:1,2592:1:1^
 1769^1^0^11^11^1421^0.4905^0.4022^1^Moonrage Whitescalp^^
 1778^1^0^12^12^1421^0.5000^0.4208^1^Ferocious Grizzled Bear^^
@@ -59,10 +59,15 @@ GoldScout-export 5^w3tllpw00r6k^14
 3638^1^0^16^16^1414^0.5197^0.5519^1^Devouring Ectoplasm^1794:1:1,3674:1:1^
 3680^1^0^1^1^1414^0.5277^0.5460^1^Serpentbloom Snake^^
 3713^3^0^18^18^1440^0.1516^0.2186^3^Wrathtail Wave Rider^5523:1:1,16651:1:1^
-3762^3^0^25^26^1440^0.6877^0.5296^3^Felmusk Felsworn^3770:1:1,16652:1:1^
+3758^15^0^25^26^1440^0.6793^0.5399^15^Felmusk Satyr^1205:1:1,1712:1:1,2592:3:3,5481:1:1,15249:1:1,16648:1:1,16654:1:1,16655:1:1^
+3759^12^0^26^27^1440^0.6778^0.5488^12^Felmusk Rogue^1205:1:1,1806:1:1,2592:3:6,3770:1:1,5481:5:5,16648:1:1^
+3762^14^0^25^26^1440^0.6809^0.5388^14^Felmusk Felsworn^2589:1:3,2592:3:4,3770:2:2,5481:6:6,14181:1:1,16652:1:1,16654:1:1^
+3763^7^0^26^27^1440^0.6794^0.5436^7^Felmusk Shadowstalker^1712:1:1,2592:1:1,4306:3:4,5481:4:4,262888:1:1^
 3784^3^0^26^27^1440^0.7403^0.4924^3^Shadethicket Bark Ripper^1831:1:1,16647:1:1^
+3797^3^0^25^26^1440^0.6188^0.5125^3^Cenarion Protector^1746:1:1,1754:1:1,2592:2:2^
+3810^5^0^25^26^1440^0.7091^0.5288^5^Elder Ashenvale Bear^2940:1:1,3730:2:2,11407:1:1^
 3819^1^0^20^21^1440^0.7626^0.6660^1^Wildthorn Stalker^4428:1:1^
-3820^1^0^24^24^1440^0.7246^0.5161^1^Wildthorn Venomspitter^878:1:1,3174:1:1^
+3820^3^0^24^24^1440^0.7132^0.5242^3^Wildthorn Venomspitter^878:2:2,1081:2:2,1288:1:1,2251:1:1,3174:2:2^
 3824^2^0^23^24^1440^0.5637^0.7450^2^Ghostpaw Howler^3402:1:1^
 3825^2^0^27^28^1440^0.7370^0.5865^2^Ghostpaw Alpha^^
 3844^11^0^23^24^1413^0.4267^0.8148^11^Healing Ward IV^^
@@ -122,14 +127,19 @@ GoldScout-export 5^w3tllpw00r6k^14
 @i^929^Healing Potion
 @i^954^Scroll of Strength
 @i^1015^Lean Wolf Flank
+@i^1081^Crisp Spider Meat
 @i^1155^Rod of the Sleepwalker
 @i^1205^Melon Juice
 @i^1206^Moss Agate
+@i^1288^Large Venom Sac
 @i^1292^Butcher's Cleaver
 @i^1478^Scroll of Protection II
 @i^1485^Pitchfork
 @i^1705^Lesser Moonstone
+@i^1712^Scroll of Spirit II
+@i^1746^Linked Chain Belt
 @i^1752^Linked Chain Shoulderpads
+@i^1754^Reinforced Chain Belt
 @i^1774^Brocade Cloak
 @i^1776^Brocade Pants
 @i^1778^Brocade Vest
@@ -137,6 +147,7 @@ GoldScout-export 5^w3tllpw00r6k^14
 @i^1795^Rawhide Belt
 @i^1798^Rawhide Cloak
 @i^1802^Rawhide Tunic
+@i^1806^Tough Cloak
 @i^1813^Chipped Quarterstaff
 @i^1816^Unbalanced Axe
 @i^1819^Gouging Pick
@@ -145,6 +156,7 @@ GoldScout-export 5^w3tllpw00r6k^14
 @i^2216^Simple Buckler
 @i^2219^Small Round Shield
 @i^2221^Targe Shield
+@i^2251^Gooey Spider Leg
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2674^Crawler Meat
@@ -210,6 +222,7 @@ GoldScout-export 5^w3tllpw00r6k^14
 @i^5442^Head of Arugal
 @i^5466^Scorpid Stinger
 @i^5470^Thunder Lizard Tail
+@i^5481^Satyr Horns
 @i^5516^Threshadon Fang
 @i^5523^Small Barnacled Clam
 @i^5524^Thick-shelled Clam
@@ -240,20 +253,24 @@ GoldScout-export 5^w3tllpw00r6k^14
 @i^14089^Beaded Gloves
 @i^14122^Ritual Bands of the Eagle
 @i^14126^Ritual Amice
+@i^14181^Watcher's Handwraps of the Elder
 @i^14744^Hulking Chestguard
 @i^15113^Rigid Buckler of Nature's Wrath
 @i^15230^Ridge Cleaver of Stamina
 @i^15241^Battle Knife of Nature Protection
+@i^15249^Polished Zweihander of the Bandit
 @i^15330^Wrangler's Boots of the Gorilla
 @i^15476^Charger's Handwraps
 @i^15506^Grunt's AnkleWraps of the Falcon
 @i^15513^Grunt's Pauldrons of Agility
 @i^16647^Shredder Operating Manual - Page 3
+@i^16648^Shredder Operating Manual - Page 4
 @i^16650^Shredder Operating Manual - Page 6
 @i^16651^Shredder Operating Manual - Page 7
 @i^16652^Shredder Operating Manual - Page 8
 @i^16653^Shredder Operating Manual - Page 9
 @i^16654^Shredder Operating Manual - Page 10
+@i^16655^Shredder Operating Manual - Page 11
 @i^17057^Shiny Fish Scales
 @i^20708^Tightly Sealed Trunk
 @i^211780^Scroll: KWYJIBO
@@ -271,6 +288,7 @@ GoldScout-export 5^w3tllpw00r6k^14
 @i^251335^Plans: Sterling Silver Boots
 @i^251346^Plans: Guard's Chain Leggings
 @i^251354^Plans: Crusader's Chain Helm
+@i^262888^Sealed Journeyman's Writ
 @i^273457^Sorcerer Collar
 @i^273645^Blindwatcher's Sight
 @i^273839^Spiked Shell Band
@@ -285,14 +303,19 @@ GoldScout-export 5^w3tllpw00r6k^14
 @q^929^1:0:0
 @q^954^1:0:0
 @q^1015^1:7:1
+@q^1081^1:7:1
 @q^1155^3:2:0
 @q^1205^1:0:0
 @q^1206^2:7:1
+@q^1288^1:7:1
 @q^1292^3:2:0
 @q^1478^1:0:0
 @q^1485^0:2:0
 @q^1705^2:7:1
+@q^1712^1:0:0
+@q^1746^0:4:0
 @q^1752^0:4:0
+@q^1754^0:4:0
 @q^1774^0:4:0
 @q^1776^0:4:0
 @q^1778^0:4:0
@@ -300,6 +323,7 @@ GoldScout-export 5^w3tllpw00r6k^14
 @q^1795^0:4:0
 @q^1798^0:4:0
 @q^1802^0:4:0
+@q^1806^0:4:0
 @q^1813^0:2:0
 @q^1816^0:2:0
 @q^1819^0:2:0
@@ -308,6 +332,7 @@ GoldScout-export 5^w3tllpw00r6k^14
 @q^2216^0:4:0
 @q^2219^0:4:0
 @q^2221^0:4:0
+@q^2251^1:7:1
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2674^1:7:1
@@ -373,6 +398,7 @@ GoldScout-export 5^w3tllpw00r6k^14
 @q^5442^1:12:0
 @q^5466^1:7:1
 @q^5470^1:7:1
+@q^5481^1:12:0
 @q^5516^0:2:0
 @q^5523^1:7:0
 @q^5524^1:7:0
@@ -403,20 +429,24 @@ GoldScout-export 5^w3tllpw00r6k^14
 @q^14089^1:4:0
 @q^14122^2:4:0
 @q^14126^1:4:0
+@q^14181^2:4:0
 @q^14744^2:4:0
 @q^15113^2:4:0
 @q^15230^2:2:0
 @q^15241^2:2:0
+@q^15249^2:2:0
 @q^15330^2:4:0
 @q^15476^1:4:0
 @q^15506^2:4:0
 @q^15513^2:4:0
 @q^16647^1:12:0
+@q^16648^1:12:0
 @q^16650^1:12:0
 @q^16651^1:12:0
 @q^16652^1:12:0
 @q^16653^1:12:0
 @q^16654^1:12:0
+@q^16655^1:12:0
 @q^17057^1:15:0
 @q^20708^1:15:0
 @q^211780^1:0:0
@@ -434,6 +464,7 @@ GoldScout-export 5^w3tllpw00r6k^14
 @q^251335^2:9:0
 @q^251346^3:9:0
 @q^251354^3:9:0
+@q^262888^3:0:0
 @q^273457^3:4:0
 @q^273645^3:4:0
 @q^273839^3:4:0
@@ -831,10 +862,15 @@ GoldScout-export 5^w3tllpw00r6k^14
 @a^3638^230:1
 @a^3680^210:1
 @a^3713^82:1,83:2
-@a^3762^213:3
+@a^3758^213:13,233:2
+@a^3759^213:8,233:4
+@a^3762^213:13,233:1
+@a^3763^213:6,233:1
 @a^3784^195:2,234:1
+@a^3797^212:3
+@a^3810^194:2,214:2,233:1
 @a^3819^275:1
-@a^3820^214:1
+@a^3820^194:1,214:1,234:1
 @a^3824^291:1,311:1
 @a^3825^215:1,254:1
 @a^3844^308:3,328:8
