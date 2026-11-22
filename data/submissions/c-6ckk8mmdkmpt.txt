@@ -1,4 +1,4 @@
-GoldScout-export 6^6ckk8mmdkmpt^9
+GoldScout-export 6^6ckk8mmdkmpt^10
 95^1^0^11^12^1436^0.4291^0.4239^1^Schmugglerin der Defias^^
 123^2^0^13^14^1436^0.3564^0.3305^2^Bastard der Flusspfoten^2589:1:3^
 157^4^0^14^15^1436^0.3662^0.5663^4^Geiferzahn^731:2:2,769:4:6,771:1:1,3171:1:1,3172:1:1^
@@ -17,7 +17,9 @@ GoldScout-export 6^6ckk8mmdkmpt^9
 4100^10^0^28^29^1441^0.2702^0.5491^10^Kreischende Harpyie^1478:1:1,2592:1:1,4306:4:6,17056:2:2,248689:1:1^
 4101^5^0^29^30^1441^0.2699^0.5524^5^Kreischende Wildfeder^1711:1:1,5116:1:1,17056:2:2^
 4104^1^0^30^30^1441^0.2700^0.5524^1^Kreischende Windruferin^^
+4113^5^0^28^29^1441^0.6090^0.5855^5^Buddler der Bruchschnauzen^929:1:1,1205:1:1,2077:1:1,4306:3:6^
 4114^3^0^27^28^1441^0.4067^0.4893^3^Futterwühler der Bruchschnauzen^4306:1:2,248689:1:1^
+4116^4^0^29^30^1441^0.6232^0.5633^4^Feldmesser der Bruchschnauzen^1783:1:1,4538:1:1^
 4139^3^0^33^34^1441^0.7970^0.8258^3^Skorpidschrecker^5794:3:3,12037:1:1^
 4140^13^0^31^32^1441^0.8024^0.6427^13^Skorpidhäscher^1288:1:1,5794:3:3,12037:6:6,19937:2:2,19938:3:3^
 4142^9^0^30^31^1441^0.8028^0.5681^9^Spiegelpanzerschildkröte^3712:3:3,4555:1:1,4556:3:3,5795:4:4,6308:2:2^
@@ -61,6 +63,7 @@ GoldScout-export 6^6ckk8mmdkmpt^9
 11323^4^0^0^0^0^0.0000^0.0000^0^^1511:1:1,2589:1:1,2778:1:1,4293:1:1,4567:1:1^
 11324^1^0^0^0^0^0.0000^0.0000^0^^1513:1:1^
 11520^1^0^0^0^0^0.0000^0.0000^0^^14149:1:1,14540:1:1^
+270094^1^0^30^30^1441^0.5983^0.5690^1^Sturmherz^279186:1:1^
 @i^555^Raue Geierfedern
 @i^556^Bussardschnabel
 @i^729^Sehniges Geierfleisch
@@ -69,7 +72,9 @@ GoldScout-export 6^6ckk8mmdkmpt^9
 @i^771^Gesplitterter Eberhauer
 @i^865^Bleistreitkolben der Bestie
 @i^920^Heimtückischer Stachelstreitkolben
+@i^929^Heiltrank
 @i^1080^Zähes Kondorfleisch
+@i^1205^Melonensaft
 @i^1210^Schattenedelstein
 @i^1288^Großer Giftbeutel
 @i^1464^Bussardkralle
@@ -80,7 +85,9 @@ GoldScout-export 6^6ckk8mmdkmpt^9
 @i^1702^Intaktes Basiliskenrückgrat
 @i^1711^Rolle der Ausdauer II
 @i^1751^Gekettelte Hose
+@i^1783^Kreuznahthandschuhe
 @i^1820^Hölzerner Schlägel
+@i^2077^Magicusstab des Ältesten
 @i^2091^Magischer Staub
 @i^2203^Geiferkralles Hackbeil
 @i^2287^Fleischschenkel
@@ -181,6 +188,7 @@ GoldScout-export 6^6ckk8mmdkmpt^9
 @i^250188^Rezept: Frühstücksomelett
 @i^274149^Dornenwirkertuch
 @i^274159^Dornverfluchter Handschutz
+@i^279186^Das noch schlagende Herz von Sturmherz
 @q^555^0:15:0
 @q^556^0:15:0
 @q^729^1:7:1
@@ -189,7 +197,9 @@ GoldScout-export 6^6ckk8mmdkmpt^9
 @q^771^0:15:0
 @q^865^2:2:0
 @q^920^2:2:0
+@q^929^1:0:0
 @q^1080^1:7:1
+@q^1205^1:0:0
 @q^1210^2:7:1
 @q^1288^1:7:1
 @q^1464^0:15:0
@@ -200,7 +210,9 @@ GoldScout-export 6^6ckk8mmdkmpt^9
 @q^1702^0:15:0
 @q^1711^1:0:0
 @q^1751^0:4:0
+@q^1783^0:4:0
 @q^1820^0:2:0
+@q^2077^2:2:0
 @q^2091^1:0:0
 @q^2203^2:2:0
 @q^2287^1:0:0
@@ -301,6 +313,7 @@ GoldScout-export 6^6ckk8mmdkmpt^9
 @q^250188^1:9:0
 @q^274149^3:4:0
 @q^274159^3:4:0
+@q^279186^1:12:0
 @m^1413^Das Brachland
 @m^1417^Arathihochland
 @m^1431^Dämmerwald
@@ -1568,7 +1581,9 @@ GoldScout-export 6^6ckk8mmdkmpt^9
 @a^4100^205:4,225:6
 @a^4101^225:5
 @a^4104^225:1
+@a^4113^231:3,252:2
 @a^4114^187:1,190:1,206:1
+@a^4116^213:1,231:1,232:1,252:1
 @a^4139^334:1,336:1,356:1
 @a^4140^215:2,237:1,256:1,257:1,275:4,276:3,294:1
 @a^4142^216:2,234:1,236:5,274:1
@@ -1581,5 +1596,6 @@ GoldScout-export 6^6ckk8mmdkmpt^9
 @a^4158^356:1
 @a^4499^144:1
 @a^6132^368:2
+@a^270094^231:1
 @f^1417^0^144^200^3827:1:1,6308:52:52,6310:1:1,8365:90:90^204:144
 @l^0^deDE

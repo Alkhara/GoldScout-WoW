@@ -1,4 +1,4 @@
-GoldScout-export 6^0eoomd273f3k^18
+GoldScout-export 6^0eoomd273f3k^19
 92^5^0^39^40^1418^0.2926^0.6134^5^Elémentaire de roche^4553:2:2,4627:3:3,4784:3:3,7067:1:1,8150:1:1^
 597^2^0^36^37^1434^0.2364^0.0923^2^Berserker Bloodscalp^4306:1:3^
 660^4^0^37^37^1434^0.2339^0.0926^4^Sorcier-docteur Bloodscalp^4306:1:2^
@@ -67,6 +67,8 @@ GoldScout-export 6^0eoomd273f3k^18
 5229^11^0^40^41^1444^0.7656^0.3124^11^Ogre Gordunni^4306:1:1,4338:3:4,4599:1:1^
 5232^10^0^42^43^1444^0.7648^0.3039^10^Brute Gordunni^4306:1:2,4338:5:9,4599:1:1,13042:1:1,14778:1:1^
 5237^18^0^41^42^1444^0.7625^0.3054^18^Ogre-mage Gordunni^4306:1:1,4338:4:7,248690:1:1^
+5245^9^0^44^45^1444^0.7397^0.6194^9^Guêpe Zukk'ash^6300:2:2,6302:2:2,16215:1:1,18961:9:9^
+5246^10^0^44^45^1444^0.7442^0.6103^10^Ouvrière Zukk'ash^6300:2:2,6302:2:2,18961:10:10^
 5249^8^0^40^41^1444^0.7258^0.3799^8^Bâtard Griffebois^4306:1:2,4338:1:1,4599:1:1,9237:5:5^
 5251^15^0^41^42^1444^0.7237^0.4129^15^Trappeur Griffebois^4019:1:1,4306:2:4,4338:3:5,4599:1:1,9237:2:2,14902:1:1^
 5253^6^0^41^42^1444^0.7214^0.4037^6^Brute Griffebois^1645:1:1,4338:1:2,4424:1:1,9237:3:3^
@@ -109,6 +111,7 @@ GoldScout-export 6^0eoomd273f3k^18
 7883^2^0^45^45^1446^0.7345^0.4708^2^Andre Barbe-en-feu^4338:1:2,9246:1:1^
 8996^7^0^42^43^1446^0.6226^0.3726^7^Sbire marcheur du Vide^^
 14123^1^0^43^43^1446^0.6784^0.3968^1^Mordeuse mâchoire d'acier^3712:1:1^
+14661^1^0^47^47^1444^0.7470^0.6251^1^Fouet-cuisant^18961:1:1,18962:1:1^
 222233^1^0^43^43^1444^0.7498^0.2513^1^Ohk'zi^3187:1:1,3961:1:1^
 260425^1^0^37^37^1434^0.2938^0.7194^1^Mercenaire de la KapitalRisk^^
 @i^117^Viande séchée coriace
@@ -208,6 +211,8 @@ GoldScout-export 6^0eoomd273f3k^18
 @i^6166^Mâchoire de coyote
 @i^6289^Lutjan à longue mâchoire cru
 @i^6291^Goujon brillant cru
+@i^6300^Fragment de peau
+@i^6302^Aile d'insecte délicate
 @i^6308^Poisson-chat moustachu cru
 @i^6358^Bouche-noire huileux
 @i^6411^Armure de général de brigade
@@ -264,6 +269,9 @@ GoldScout-export 6^0eoomd273f3k^18
 @i^14778^Manchettes de khan
 @i^14902^Bouclier du sel gemme du sanglier
 @i^15287^Arc du Croisé du gorille
+@i^16215^Formule : Enchantement de bottes (Endurance supérieure)
+@i^18961^Carapace de Zukk'ash
+@i^18962^Glandes de Fouet-cuisant
 @i^19937^Petite griffe de scorpide
 @i^20519^Chapeau de pirate des Mers du sud
 @i^21150^Malle cerclée de fer
@@ -374,6 +382,8 @@ GoldScout-export 6^0eoomd273f3k^18
 @q^6166^1:12:0
 @q^6289^1:7:1
 @q^6291^1:7:1
+@q^6300^0:15:0
+@q^6302^0:15:0
 @q^6308^1:7:1
 @q^6358^1:7:1
 @q^6411^2:4:0
@@ -430,6 +440,9 @@ GoldScout-export 6^0eoomd273f3k^18
 @q^14778^2:4:0
 @q^14902^2:4:0
 @q^15287^2:2:0
+@q^16215^2:9:0
+@q^18961^1:12:0
+@q^18962^1:12:0
 @q^19937^0:15:0
 @q^20519^1:12:0
 @q^21150^1:15:0
@@ -1269,6 +1282,8 @@ GoldScout-export 6^0eoomd273f3k^18
 @a^5229^114:1,115:4,135:5,136:1
 @a^5232^114:4,115:1,135:3,136:1,156:1
 @a^5237^94:1,114:5,115:3,135:8,156:1
+@a^5245^234:1,254:7,255:1
+@a^5246^234:2,235:1,254:6,255:1
 @a^5249^154:8
 @a^5251^154:12,234:3
 @a^5253^154:5,234:1
@@ -1293,6 +1308,7 @@ GoldScout-export 6^0eoomd273f3k^18
 @a^7883^194:2
 @a^8996^132:1,151:1,152:4,153:1
 @a^14123^153:1
+@a^14661^254:1
 @a^222233^114:1
 @a^260425^285:1
 @f^1434^0^3^150^6308:1:1,6358:1:1,21150:1:1^87:2,286:1

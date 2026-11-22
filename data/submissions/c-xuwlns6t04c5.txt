@@ -1,4 +1,4 @@
-GoldScout-export 6^xuwlns6t04c5^7
+GoldScout-export 6^xuwlns6t04c5^9
 92^2^0^39^40^1418^0.4225^0.8220^2^Rock Elemental^4552:1:1,4553:1:1,4784:1:1,8150:1:1^
 674^2^0^41^41^1434^0.4138^0.4312^2^Venture Co. Strip Miner^1630:1:1^
 678^2^0^44^44^1434^0.5132^0.2802^2^Mosh'Ogg Mauler^4338:1:4^
@@ -36,6 +36,8 @@ GoldScout-export 6^xuwlns6t04c5^7
 2893^8^0^39^40^1418^0.5067^0.6729^8^Stonevault Bonesnapper^4306:4:9,211269:3:3,251461:1:1^
 2894^1^0^40^41^1418^0.5102^0.6960^1^Stonevault Shaman^4338:1:1^
 2932^1^0^38^38^1418^0.3902^0.1952^1^Magregan Deepshadow^4306:1:2,4635:1:1^
+4663^1^0^30^31^1443^0.5615^0.2221^1^Burning Blade Augur^^
+4664^1^0^30^30^1443^0.5646^0.2147^1^Burning Blade Reaver^1803:1:1,4306:1:1^
 4845^1^0^37^37^1418^0.3988^0.1562^1^Shadowforge Ruffian^4306:1:4,8052:1:1,15213:1:1^
 4846^2^0^35^36^1418^0.4368^0.1164^2^Shadowforge Digger^3780:1:1,8009:2:2^
 4856^2^0^36^37^1418^0.3641^0.1612^2^Stonevault Cave Hunter^^
@@ -88,9 +90,17 @@ GoldScout-export 6^xuwlns6t04c5^7
 253525^1^0^42^42^2652^0.7223^0.3197^1^Bristleback Thornweaver^^
 254566^1^0^41^42^2652^0.6879^0.7637^1^Rowdy Rose^15596:1:1,256037:1:1^
 254567^1^0^41^42^2652^0.6422^0.7483^1^Terrible Tulip^3358:1:1,256037:1:1^
+255898^6^0^38^39^2548^0.7402^0.7003^6^Murloc Oracle^5524:2:2,268344:1:2^
+255899^13^0^37^38^2548^0.7377^0.6716^13^Murloc Tideskimmer^268344:6:6^
+255901^11^0^36^37^2548^0.7384^0.6528^11^Sand Crawler^863:1:1,5524:3:3,5569:2:2,12206:4:4,17057:3:3,248709:1:1,268345:5:5^
+256801^8^0^40^41^2548^0.7562^0.7101^8^Murloc Warrior^1640:1:1,5524:2:2,15261:1:1,268344:3:4^
+256807^2^0^39^40^2548^0.8673^0.3571^2^Shore Crawler^17057:1:1,268345:1:1^
+257001^1^0^42^42^2548^0.7764^0.7239^1^Old Rot-Chum^268341:1:1^
 257885^2^0^0^0^0^0.0000^0.0000^0^^3965:1:1,4338:1:2,7909:1:1^
 257888^1^0^0^0^0^0.0000^0.0000^0^^248694:1:1^
 257900^2^0^0^0^0^0.0000^0.0000^0^^4306:1:3^
+257901^8^0^41^42^2548^0.8656^0.3589^8^Eastsea Buccaneer^4338:2:2^
+257910^4^0^42^43^2548^0.8709^0.3584^4^Eastsea Musketeer^4306:2:3,4338:2:4^
 258038^1^0^0^0^0^0.0000^0.0000^0^^^
 258040^1^0^0^0^0^0.0000^0.0000^0^^6431:1:1^
 258042^13^0^0^0^0^0.0000^0.0000^0^^3928:1:1,6420:1:1,248692:1:1,248694:1:1,267234:7:7^
@@ -103,18 +113,21 @@ GoldScout-export 6^xuwlns6t04c5^7
 258968^1^0^0^0^0^0.0000^0.0000^0^^267086:1:1,275008:1:1^
 258972^1^0^0^0^0^0.0000^0.0000^0^^274998:1:1^
 259281^1^0^0^0^0^0.0000^0.0000^0^^275003:1:1^
+260235^1^0^42^42^2548^0.8244^0.5169^1^Trapclaw^268586:1:1^
 264773^1^0^0^0^0^0.0000^0.0000^0^^286428:1:1^
+@i^863^Gloom Reaper of Frost Protection
 @i^1464^Buzzard Talon
 @i^1465^Tigerbane
 @i^1477^Scroll of Agility II
 @i^1520^Troll Sweat
 @i^1529^Jade
 @i^1630^Broken Electro-lantern
-@i^1640^Monstrous War Axe of the Physician
+@i^1640^Monstrous War Axe of Healing
 @i^1645^Moonberry Juice
 @i^1688^Long Soft Tail
 @i^1702^Intact Basilisk Spine
 @i^1708^Sweet Nectar
+@i^1803^Tough Leather Belt
 @i^2080^Hillborne Axe of the Tiger
 @i^2295^Large Boar Tusk
 @i^2592^Wool Cloth
@@ -168,6 +181,8 @@ GoldScout-export 6^xuwlns6t04c5^7
 @i^4635^Hammertoe's Amulet
 @i^4784^Lifeless Stone
 @i^5116^Long Tail Feather
+@i^5524^Thick-shelled Clam
+@i^5569^Seaweed
 @i^5616^Gutwrencher
 @i^5636^Delicate Feather
 @i^5637^Large Fang
@@ -219,6 +234,7 @@ GoldScout-export 6^xuwlns6t04c5^7
 @i^12037^Mystery Meat
 @i^12202^Tiger Meat
 @i^12203^Red Wolf Meat
+@i^12206^Tender Crab Meat
 @i^13422^Stonescale Eel
 @i^14212^Vital Shoulders of Healing
 @i^14239^Darkmist Cape of Agility
@@ -229,12 +245,14 @@ GoldScout-export 6^xuwlns6t04c5^7
 @i^15162^Imposing Boots of Agility
 @i^15213^Mercenary Blade of Intellect
 @i^15232^Hacking Cleaver of the Bandit
+@i^15261^Sequoia Branch of Holy Wrath
 @i^15262^Greater Maul of the Eagle
 @i^15374^Wolf Rider's Leggings of Healing
 @i^15552^Thick Scale Shield of Intellect
 @i^15563^Pillager's Shield of Strength
 @i^15596^Steadfast Legplates of the Falcon
 @i^15798^Chipped Ogre Teeth
+@i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
 @i^21228^Mithril Bound Trunk
 @i^211269^Primitive Drawing
@@ -253,6 +271,10 @@ GoldScout-export 6^xuwlns6t04c5^7
 @i^267086^Eye of Mugg
 @i^267104^Tome of Twilight
 @i^267234^Twilight Bangle
+@i^268341^Rot-Covered Harpoon
+@i^268344^Saltwater Murloc Eye
+@i^268345^Sand Crawler Meat
+@i^268586^Trapclaw's Pincer
 @i^274381^Coldbringer Spine
 @i^274641^Theka's Last Breath
 @i^274642^Blood Ritual Ring
@@ -267,6 +289,7 @@ GoldScout-export 6^xuwlns6t04c5^7
 @i^275008^Mugg's Crosser
 @i^286428^Band of Bossman
 @i^286647^Depleted Crystal Heart
+@q^863^2:2:0
 @q^1464^0:15:0
 @q^1465^2:2:0
 @q^1477^1:0:0
@@ -278,6 +301,7 @@ GoldScout-export 6^xuwlns6t04c5^7
 @q^1688^0:15:0
 @q^1702^0:15:0
 @q^1708^1:0:0
+@q^1803^0:4:0
 @q^2080^2:2:0
 @q^2295^0:15:0
 @q^2592^1:7:1
@@ -331,6 +355,8 @@ GoldScout-export 6^xuwlns6t04c5^7
 @q^4635^1:12:0
 @q^4784^0:15:0
 @q^5116^1:7:1
+@q^5524^1:7:0
+@q^5569^0:15:0
 @q^5616^3:2:0
 @q^5636^0:15:0
 @q^5637^1:7:1
@@ -382,6 +408,7 @@ GoldScout-export 6^xuwlns6t04c5^7
 @q^12037^1:7:1
 @q^12202^1:7:1
 @q^12203^1:7:1
+@q^12206^1:7:1
 @q^13422^1:7:1
 @q^14212^2:4:0
 @q^14239^2:4:0
@@ -392,12 +419,14 @@ GoldScout-export 6^xuwlns6t04c5^7
 @q^15162^2:4:0
 @q^15213^2:2:0
 @q^15232^2:2:0
+@q^15261^2:2:0
 @q^15262^2:2:0
 @q^15374^2:4:0
 @q^15552^2:4:0
 @q^15563^2:4:0
 @q^15596^2:4:0
 @q^15798^0:15:0
+@q^17057^1:15:0
 @q^17058^1:15:0
 @q^21228^1:15:0
 @q^211269^1:12:0
@@ -416,6 +445,10 @@ GoldScout-export 6^xuwlns6t04c5^7
 @q^267086^1:12:0
 @q^267104^1:12:0
 @q^267234^1:12:0
+@q^268341^1:12:0
+@q^268344^1:12:0
+@q^268345^1:12:0
+@q^268586^1:12:0
 @q^274381^3:2:0
 @q^274641^3:4:0
 @q^274642^3:4:0
@@ -433,7 +466,9 @@ GoldScout-export 6^xuwlns6t04c5^7
 @m^1413^The Barrens
 @m^1418^Badlands
 @m^1434^Stranglethorn Vale
+@m^1443^Desolace
 @m^1446^Tanaris
+@m^2548^Riverglades
 @m^2652^Shen'dralas
 @c^118^
 @c^724^
@@ -1163,6 +1198,8 @@ GoldScout-export 6^xuwlns6t04c5^7
 @a^2893^249:1,250:2,269:1,270:4
 @a^2894^270:1
 @a^2932^67:1
+@a^4663^91:1
+@a^4664^91:1
 @a^4845^67:1
 @a^4846^48:2
 @a^4856^46:1,67:1
@@ -1177,6 +1214,15 @@ GoldScout-export 6^xuwlns6t04c5^7
 @a^253525^134:1
 @a^254566^313:1
 @a^254567^292:1
+@a^255898^254:2,295:2,313:1,314:1
+@a^255899^255:7,275:2,293:3,313:1
+@a^255901^235:1,254:2,255:4,274:2,293:2
+@a^256801^254:1,274:2,295:5
+@a^256807^137:1,157:1
+@a^257001^295:1
+@a^257901^137:4,157:3,176:1
+@a^257910^137:2,157:2
+@a^260235^216:1
 @f^1434^0^14^225^3820:3:4,13422:2:3,21228:9:9^184:3,204:4,224:3,267:2,325:2
 @f^1446^0^1^227^21228:1:1^194:1
 @l^0^enUS

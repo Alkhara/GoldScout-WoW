@@ -1,4 +1,4 @@
-GoldScout-export 6^6pfw5ohsmbc9^15
+GoldScout-export 6^6pfw5ohsmbc9^17
 587^12^0^33^34^1434^0.3092^0.1834^12^Guerrier Bloodscalp^1520:1:1,2290:1:1,2592:1:2,3771:1:1,3795:1:1,3901:4:4,3915:2:2,4306:4:7,213547:1:1^
 588^22^0^34^35^1434^0.2536^0.1150^22^Eclaireur Bloodscalp^2592:1:3,2721:1:1,2734:1:1,2735:1:1,3771:1:1,3901:4:4,3915:6:6,4306:7:9,4338:1:1^
 595^17^0^34^35^1434^0.2476^0.1096^17^Chasseur Bloodscalp^2592:2:4,2742:1:1,3771:2:2,3901:4:4,3915:2:2,4306:5:9,248706:1:1,277957:1:1^
@@ -47,10 +47,10 @@ GoldScout-export 6^6pfw5ohsmbc9^15
 2359^1^0^32^32^1416^0.2566^0.5286^1^Elémentaire asservi^^
 2384^1^0^24^24^1424^0.5663^0.4254^1^Lion des montagnes affamé^5136:1:1^
 2559^7^0^30^31^1417^0.6194^0.4628^7^Arpenteur des hautes-terres^1696:1:1,3685:4:4,4461:1:1,4512:2:2,12184:5:5^
-2560^2^0^33^34^1417^0.5455^0.6490^2^Vandale des hautes-terres^4461:1:1,4512:1:1^
-2563^4^0^32^33^1417^0.6018^0.4931^4^Rampant des plaines^1074:1:1,1081:2:2,2251:3:3,3182:1:1,278225:2:2^
-2565^1^0^35^35^1417^0.5632^0.6048^1^Rampant des plaines géant^1074:1:1,1081:1:1^
-2578^2^0^31^31^1417^0.6512^0.4784^2^Jeune busard des mésas^1464:1:1,3041:1:1,3404:1:1,5829:1:1^
+2560^3^0^33^34^1417^0.5456^0.6362^3^Vandale des hautes-terres^3685:1:1,4461:1:1,4512:1:1^
+2563^11^0^32^33^1417^0.6216^0.4840^11^Rampant des plaines^1074:4:4,1081:6:6,2251:7:7,3182:1:1,4337:1:1,278225:7:7^
+2565^7^0^35^36^1417^0.5562^0.5818^7^Rampant des plaines géant^878:1:1,1074:4:4,1081:6:6,1725:1:1,2251:3:3,3182:4:4,278225:4:4^
+2578^3^0^31^31^1417^0.6699^0.4730^3^Jeune busard des mésas^1464:2:2,3041:1:1,3404:2:2,5829:1:1^
 2667^8^0^36^37^1434^0.3618^0.3106^8^Garde de Laze^^
 3560^4^0^37^37^1434^0.2291^0.1079^4^Gardien Guérisseur^^
 3767^6^0^27^28^1440^0.8105^0.4981^6^Entourloupeur Mornecoeur^4306:1:2,7128:5:5,248687:1:1^
@@ -145,6 +145,7 @@ GoldScout-export 6^6pfw5ohsmbc9^15
 @i^789^Marteau de guerre de magie
 @i^818^Oeil de tigre
 @i^864^Epée longue des chevaliers d'esprit
+@i^878^Petite filière
 @i^929^Potion de soins
 @i^954^Parchemin de force
 @i^1015^Steak de loup
@@ -175,6 +176,7 @@ GoldScout-export 6^6pfw5ohsmbc9^15
 @i^1703^Queue de basilic de cristal
 @i^1708^Nectar sucré
 @i^1710^Potion de soins supérieure
+@i^1725^Grand sac à dos
 @i^1730^Ceinture usée en mailles
 @i^1732^Brassards usés en mailles
 @i^1733^Cape usée
@@ -252,6 +254,7 @@ GoldScout-export 6^6pfw5ohsmbc9^15
 @i^4104^Peau de Gueule d'acier
 @i^4106^Cristal réduit
 @i^4306^Etoffe de soie
+@i^4337^Soie d'araignée épaisse
 @i^4338^Etoffe de tisse-mage
 @i^4461^Peau de raptor
 @i^4512^Oeil de raptor des hautes-terres
@@ -391,6 +394,7 @@ GoldScout-export 6^6pfw5ohsmbc9^15
 @q^789^2:2:0
 @q^818^2:7:1
 @q^864^2:2:0
+@q^878^0:7:0
 @q^929^1:0:0
 @q^954^1:0:0
 @q^1015^1:7:1
@@ -421,6 +425,7 @@ GoldScout-export 6^6pfw5ohsmbc9^15
 @q^1703^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
+@q^1725^1:1:0
 @q^1730^0:4:0
 @q^1732^0:4:0
 @q^1733^0:4:0
@@ -498,6 +503,7 @@ GoldScout-export 6^6pfw5ohsmbc9^15
 @q^4104^1:12:0
 @q^4106^1:12:0
 @q^4306^1:7:1
+@q^4337^1:7:1
 @q^4338^1:7:1
 @q^4461^1:7:1
 @q^4512^1:12:0
@@ -1386,10 +1392,10 @@ GoldScout-export 6^6pfw5ohsmbc9^15
 @a^2359^205:1
 @a^2384^171:1
 @a^2559^153:3,172:1,173:1,192:1,308:1
-@a^2560^250:1,271:1
-@a^2563^191:1,192:2,211:1
-@a^2565^251:1
-@a^2578^172:1,213:1
+@a^2560^250:2,271:1
+@a^2563^172:1,191:2,192:3,193:2,211:2,212:1
+@a^2565^211:1,230:1,231:2,251:3
+@a^2578^172:1,194:1,213:1
 @a^2667^127:8
 @a^3560^24:2,44:1,64:1
 @a^3767^196:4,216:2

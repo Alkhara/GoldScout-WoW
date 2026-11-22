@@ -1,4 +1,4 @@
-GoldScout-export 6^48kqcjr2shjj^6
+GoldScout-export 6^48kqcjr2shjj^7
 2529^2^0^0^0^0^0.0000^0.0000^0^^3378:1:1,9808:1:1^
 2959^8^0^7^8^1412^0.4171^0.4363^8^Prairie Stalker^2672:6:6,3299:2:2,3300:1:1^
 2972^1^0^7^7^1412^0.3960^0.4376^1^Kodo Calf^4779:1:1,5082:1:1^
@@ -28,6 +28,7 @@ GoldScout-export 6^48kqcjr2shjj^6
 3887^1^0^0^0^0^0.0000^0.0000^0^^273637:1:1^
 3944^3^0^21^21^1440^0.1028^0.2885^3^Wrathtail Priestess^5523:1:1,16646:1:1,17057:1:1^
 4275^1^0^0^0^0^0.0000^0.0000^0^^3385:1:1,5442:1:1^
+5894^1^0^22^22^1421^0.3859^0.4456^1^Corrupt Minor Manifestation of Water^7812:1:1^
 8996^7^0^10^14^1411^0.5272^0.0846^7^Voidwalker Minion^^
 11318^5^0^0^0^0^0.0000^0.0000^0^^774:2:2,2455:1:1,2763:1:1,3282:1:1,5071:1:1^
 11319^1^0^0^0^0^0.0000^0.0000^0^^2589:1:4^
@@ -40,6 +41,7 @@ GoldScout-export 6^48kqcjr2shjj^6
 11519^1^0^0^0^0^0.0000^0.0000^0^^273003:1:1^
 11520^1^0^0^0^0^0.0000^0.0000^0^^14540:1:1^
 12940^2^0^22^22^1440^0.0931^0.2746^2^Vorsha the Lasher^3010:1:1,5569:1:1^
+203139^1^0^24^24^1421^0.4707^0.3362^1^Son of Arugal^^
 @i^117^Tough Jerky
 @i^159^Refreshing Spring Water
 @i^727^Notched Shortsword of Intellect
@@ -86,11 +88,13 @@ GoldScout-export 6^48kqcjr2shjj^6
 @i^5442^Head of Arugal
 @i^5523^Small Barnacled Clam
 @i^5569^Seaweed
+@i^6303^Raw Slitherskin Mackerel
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
 @i^6362^Raw Rockscale Cod
 @i^6633^Butcher's Slicer
 @i^6641^Haunting Blade
+@i^7812^Corrupt Manifestation's Bracers
 @i^7973^Big-mouth Clam
 @i^9808^Superior Leggings of the Knight
 @i^13422^Stonescale Eel
@@ -105,6 +109,8 @@ GoldScout-export 6^48kqcjr2shjj^6
 @i^15970^Native Branch of Intellect
 @i^16646^Shredder Operating Manual - Page 2
 @i^17057^Shiny Fish Scales
+@i^19807^Speckled Tastyfish
+@i^20708^Tightly Sealed Trunk
 @i^20709^Rumsey Rum Light
 @i^211784^Scroll: WUBBA WUBBA
 @i^248704^Waylaid Crate: Apprentice Parts
@@ -157,11 +163,13 @@ GoldScout-export 6^48kqcjr2shjj^6
 @q^5442^1:12:0
 @q^5523^1:7:0
 @q^5569^0:15:0
+@q^6303^1:7:1
 @q^6358^1:7:1
 @q^6359^1:7:1
 @q^6362^1:7:1
 @q^6633^3:2:0
 @q^6641^3:2:0
+@q^7812^1:12:0
 @q^7973^1:7:0
 @q^9808^2:4:0
 @q^13422^1:7:1
@@ -176,6 +184,8 @@ GoldScout-export 6^48kqcjr2shjj^6
 @q^15970^2:4:0
 @q^16646^1:12:0
 @q^17057^1:15:0
+@q^19807^1:15:0
+@q^20708^1:15:0
 @q^20709^1:0:0
 @q^211784^1:0:0
 @q^248704^2:0:1
@@ -185,6 +195,8 @@ GoldScout-export 6^48kqcjr2shjj^6
 @m^1411^Durotar
 @m^1412^Mulgore
 @m^1413^The Barrens
+@m^1421^Silverpine Forest
+@m^1434^Stranglethorn Vale
 @m^1440^Ashenvale
 @m^1446^Tanaris
 @c^118^
@@ -980,8 +992,12 @@ GoldScout-export 6^48kqcjr2shjj^6
 @a^3713^101:2
 @a^3715^101:1,122:1
 @a^3944^101:2,122:1
+@a^5894^167:1
 @a^8996^30:7
 @a^12940^101:2
+@a^203139^129:1
 @f^1413^0^11^225^3820:1:1,6358:9:9,20709:1:1^172:11
+@f^1421^0^9^225^3820:1:3,6303:1:1,20708:4:4,20709:3:5^127:6,147:3
+@f^1434^0^33^225^3820:1:1,6358:2:2,6359:1:1,13422:1:1,19807:28:28^306:1,325:31,326:1
 @f^1446^0^122^225^4603:52:52,6359:15:15,6362:10:10,7973:10:10,13422:10:18,13754:14:14,13755:11:11^73:122
 @l^0^enUS
