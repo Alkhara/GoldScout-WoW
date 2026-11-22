@@ -1,4 +1,4 @@
-GoldScout-export 6^jkad7dnu457i^26
+GoldScout-export 6^jkad7dnu457i^27
 46^3^0^9^10^1429^0.7092^0.8530^3^Murloc Forager^779:1:1^
 118^7^0^9^10^1429^0.7870^0.6622^7^Prowler^777:1:1,2672:7:7,3299:2:2,3300:1:1,6511:1:1^
 330^1^0^9^9^1429^0.6905^0.7819^1^Princess^771:1:1,1006:1:1^
@@ -109,6 +109,19 @@ GoldScout-export 6^jkad7dnu457i^26
 8127^2^0^0^0^0^0.0000^0.0000^0^^9379:1:1,9641:1:1^
 8636^1^0^50^50^1425^0.4873^0.6831^1^Morta'gya the Keeper^1520:1:1,4007:1:1,9259:1:1^
 8759^7^0^45^47^1447^0.2154^0.5603^7^Mosshoof Runner^5119:1:1,5120:2:2,5471:2:2,5566:4:4,238463:5:5^
+11685^2^0^40^42^1414^0.3850^0.5797^2^Maraudine Priest^4306:1:2^
+11686^5^0^40^41^1414^0.3831^0.5805^5^Ghostly Raider^1708:1:1,3771:1:1,4306:1:2^
+11687^2^0^41^42^1414^0.3847^0.5789^2^Ghostly Marauder^4024:1:1,248693:1:1^
+11777^6^0^40^41^1414^0.3825^0.5718^6^Shadowshard Rumbler^4553:2:2,4784:4:4,7067:1:1,7075:1:1,7912:2:3,8150:2:2,17756:4:4^
+11778^8^0^41^42^1414^0.3826^0.5732^8^Shadowshard Smasher^4552:3:3,4554:1:1,4784:4:4,7912:2:3,14241:1:1,17756:6:6^
+11782^2^0^43^43^1414^0.3883^0.5798^2^Ambershard Destroyer^4552:1:1,4554:1:1,4784:2:2,7912:1:1^
+11785^4^0^40^41^1414^0.3893^0.5789^4^Ambereye Basilisk^1701:2:2,1702:2:2,4093:2:2,11386:1:1^
+11787^4^0^40^41^1414^0.3833^0.5718^4^Rock Borer^3669:1:1,3676:2:2,14253:1:1^
+11788^1^0^42^42^1414^0.3848^0.5711^1^Rock Worm^3669:1:1,3676:1:1^
+12239^1^0^42^42^1414^0.3837^0.5740^1^Gelk^17762:1:1^
+12240^1^0^43^43^1414^0.3851^0.5770^1^Kolk^17684:1:1,17761:1:1^
+12241^1^0^43^43^1414^0.3919^0.5769^1^Magra^17763:1:1^
+13718^2^0^41^41^1414^0.3836^0.5805^2^The Nameless Prophet^4306:1:4,15574:1:1,17684:2:2,17757:1:1^
 236028^7^0^47^49^1447^0.1826^0.5525^7^Honey Wasp^6300:2:2,6302:2:2,238503:4:5^
 248278^1^0^11^11^1429^0.7645^0.8552^1^Croaky^247826:1:1^
 254560^13^0^39^40^2548^0.4758^0.4901^13^Twilight Shadowmancer^3671:1:1,4306:3:5,5429:1:1,266425:3:7,267073:1:2^
@@ -199,6 +212,7 @@ GoldScout-export 6^jkad7dnu457i^26
 @i^1520^Troll Sweat
 @i^1645^Moonberry Juice
 @i^1701^Curved Basilisk Claw
+@i^1702^Intact Basilisk Spine
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
 @i^1735^Worn Mail Pants
@@ -251,10 +265,12 @@ GoldScout-export 6^jkad7dnu457i^26
 @i^3403^Ivory Boar Tusk
 @i^3404^Buzzard Wing
 @i^3627^Fang of Vagash
+@i^3669^Gelatinous Goo
 @i^3671^Lifeless Skull
 @i^3676^Slimy Ichor
 @i^3712^Turtle Meat
 @i^3730^Big Bear Meat
+@i^3771^Wild Hog Shank
 @i^3781^Broad Claymore
 @i^3784^Metal Stave
 @i^3786^Shiny Dirk
@@ -275,6 +291,9 @@ GoldScout-export 6^jkad7dnu457i^26
 @i^4422^Scroll of Stamina III
 @i^4496^Small Brown Pouch
 @i^4540^Tough Hunk of Bread
+@i^4552^Smooth Stone Chip
+@i^4553^Jagged Piece of Stone
+@i^4554^Shiny Polished Stone
 @i^4556^Speckled Shell Fragment
 @i^4566^Sturdy Quarterstaff of Nature Protection
 @i^4582^Soft Bushy Tail
@@ -282,6 +301,7 @@ GoldScout-export 6^jkad7dnu457i^26
 @i^4589^Long Elegant Feather
 @i^4599^Cured Ham Steak
 @i^4601^Soft Banana Bread
+@i^4784^Lifeless Stone
 @i^4813^Small Leather Collar
 @i^4814^Discolored Fang
 @i^4865^Ruined Pelt
@@ -306,10 +326,13 @@ GoldScout-export 6^jkad7dnu457i^26
 @i^6513^Disciple's Sash
 @i^6826^Brilliant Scale
 @i^6952^Thick Bear Fur
+@i^7067^Elemental Earth
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
+@i^7075^Core of Earth
 @i^7098^Splintered Tusk
 @i^7909^Aquamarine
+@i^7912^Solid Stone
 @i^7973^Big-mouth Clam
 @i^8117^Heraldic Boots
 @i^8150^Deeprock Salt
@@ -340,10 +363,19 @@ GoldScout-export 6^jkad7dnu457i^26
 @i^12203^Red Wolf Meat
 @i^12207^Giant Egg
 @i^14165^Pagan Britches of the Whale
+@i^14241^Darkmist Handguards of Fire Protection
+@i^14253^Lunar Handwraps of the Elder
 @i^14428^Windchaser Footpads
 @i^14951^Bloodforged Sabatons of Power
+@i^15574^Marauder's Shoulder Pads of the Sorcerer
 @i^15798^Chipped Ogre Teeth
 @i^17058^Fish Oil
+@i^17684^Theradric Crystal Carving
+@i^17756^Shadowshard Fragment
+@i^17757^Amulet of Spirits
+@i^17761^Gem of the First Khan
+@i^17762^Gem of the Second Khan
+@i^17763^Gem of the Third Khan
 @i^18082^Zum'rah's Vexing Cane
 @i^19935^Empty Venom Sac
 @i^19936^Dried Scorpid Carapace
@@ -431,6 +463,7 @@ GoldScout-export 6^jkad7dnu457i^26
 @q^1520^0:15:0
 @q^1645^1:0:0
 @q^1701^0:15:0
+@q^1702^0:15:0
 @q^1707^1:0:0
 @q^1708^1:0:0
 @q^1735^0:4:0
@@ -483,10 +516,12 @@ GoldScout-export 6^jkad7dnu457i^26
 @q^3403^0:15:0
 @q^3404^1:7:1
 @q^3627^1:12:0
+@q^3669^0:15:0
 @q^3671^0:15:0
 @q^3676^0:15:0
 @q^3712^1:7:1
 @q^3730^1:7:1
+@q^3771^1:0:0
 @q^3781^0:2:0
 @q^3784^0:2:0
 @q^3786^0:2:0
@@ -507,6 +542,9 @@ GoldScout-export 6^jkad7dnu457i^26
 @q^4422^1:0:0
 @q^4496^1:1:0
 @q^4540^1:0:0
+@q^4552^0:15:0
+@q^4553^0:15:0
+@q^4554^0:15:0
 @q^4556^0:15:0
 @q^4566^2:2:0
 @q^4582^1:12:0
@@ -514,6 +552,7 @@ GoldScout-export 6^jkad7dnu457i^26
 @q^4589^1:7:1
 @q^4599^1:0:0
 @q^4601^1:0:0
+@q^4784^0:15:0
 @q^4813^0:15:0
 @q^4814^0:15:0
 @q^4865^0:15:0
@@ -538,10 +577,13 @@ GoldScout-export 6^jkad7dnu457i^26
 @q^6513^1:4:0
 @q^6826^0:15:0
 @q^6952^1:12:0
+@q^7067^1:7:1
 @q^7073^0:15:0
 @q^7074^0:15:0
+@q^7075^1:7:1
 @q^7098^0:15:0
 @q^7909^2:7:1
+@q^7912^1:7:1
 @q^7973^1:7:0
 @q^8117^2:4:0
 @q^8150^1:7:1
@@ -572,10 +614,19 @@ GoldScout-export 6^jkad7dnu457i^26
 @q^12203^1:7:1
 @q^12207^1:7:1
 @q^14165^2:4:0
+@q^14241^2:4:0
+@q^14253^2:4:0
 @q^14428^2:4:0
 @q^14951^2:4:0
+@q^15574^2:4:0
 @q^15798^0:15:0
 @q^17058^1:15:0
+@q^17684^1:12:0
+@q^17756^1:12:0
+@q^17757^1:12:0
+@q^17761^1:12:0
+@q^17762^1:12:0
+@q^17763^1:12:0
 @q^18082^3:2:0
 @q^19935^0:15:0
 @q^19936^0:15:0
@@ -625,6 +676,7 @@ GoldScout-export 6^jkad7dnu457i^26
 @q^274651^3:4:0
 @q^274655^3:2:0
 @q^277112^1:12:0
+@m^1414^Kalimdor
 @m^1424^Hillsbrad Foothills
 @m^1425^The Hinterlands
 @m^1426^Dun Morogh
@@ -1418,6 +1470,19 @@ GoldScout-export 6^jkad7dnu457i^26
 @a^7996^269:1
 @a^8636^269:1
 @a^8759^203:1,204:1,224:5
+@a^11685^227:2
+@a^11686^227:5
+@a^11687^227:2
+@a^11777^227:6
+@a^11778^227:8
+@a^11782^227:2
+@a^11785^227:4
+@a^11787^227:4
+@a^11788^227:1
+@a^12239^227:1
+@a^12240^227:1
+@a^12241^227:1
+@a^13718^227:2
 @a^236028^203:2,204:1,223:4
 @a^248278^355:1
 @a^254560^189:9,209:3,229:1

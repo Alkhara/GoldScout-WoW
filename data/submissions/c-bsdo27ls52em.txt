@@ -1,4 +1,4 @@
-GoldScout-export 6^bsdo27ls52em^5
+GoldScout-export 6^bsdo27ls52em^6
 1007^14^0^20^21^1437^0.5820^0.7239^14^Mosshide Gnoll^1764:1:1,1823:1:1,2589:3:6,2592:4:6,3385:1:1^
 1008^16^0^21^22^1437^0.6106^0.6810^16^Mosshide Mongrel^1746:1:1,1819:1:1,2589:2:6,2592:3:6,2765:1:1,3770:1:1,6383:1:1^
 1010^3^2^22^23^1437^0.3451^0.3421^3^Mosshide Fenrunner^2592:1:1^
@@ -43,6 +43,7 @@ GoldScout-export 6^bsdo27ls52em^5
 2032^3^0^2^2^1438^0.6128^0.3795^3^Mangy Nightsaber^3365:1:1,4865:2:2,7073:2:2,7074:2:2^
 2089^6^0^25^26^1437^0.2246^0.2308^6^Giant Wetlands Crocolisk^3348:6:6,3667:2:2^
 2261^1^0^21^21^1424^0.7917^0.4645^1^Syndicate Watchman^^
+2559^1^0^30^30^1417^0.3840^0.5354^1^Highland Strider^10404:1:1,12184:1:1^
 3099^2^0^6^7^1411^0.4791^0.4385^2^Dire Mottled Boar^769:2:2^
 3101^11^0^3^4^1411^0.4386^0.5422^11^Vile Familiar^117:1:1,1366:1:1,1370:2:2,1374:1:1,1377:1:1,1378:1:1,2589:3:3,2652:1:1,3363:1:1^
 3102^6^0^3^4^1411^0.4417^0.5369^6^Felstalker^1374:1:1,2651:1:1,4865:5:5,7073:2:2,7074:1:1^
@@ -190,9 +191,11 @@ GoldScout-export 6^bsdo27ls52em^5
 @i^8186^Dire Wand
 @i^9805^Superior Cloak of Agility
 @i^9814^Fortified Belt of Magic
+@i^10404^Durable Belt of the Sorcerer
 @i^10640^Webwood Ichor
 @i^11150^Formula: Enchant Gloves - Mining
 @i^12006^Meadow Ring of Stamina
+@i^12184^Raptor Flesh
 @i^248688^Waylaid Crate: Journeyman Textiles
 @i^248707^Waylaid Crate: Journeyman Parts
 @i^250187^Recipe: Tasty Raptor Bites
@@ -326,9 +329,11 @@ GoldScout-export 6^bsdo27ls52em^5
 @q^8186^2:2:0
 @q^9805^2:4:0
 @q^9814^2:4:0
+@q^10404^2:4:0
 @q^10640^1:12:0
 @q^11150^2:9:0
 @q^12006^2:4:0
+@q^12184^1:7:1
 @q^248688^1:0:1
 @q^248707^2:0:1
 @q^250187^1:9:0
@@ -349,6 +354,7 @@ GoldScout-export 6^bsdo27ls52em^5
 @q^280397^1:12:0
 @q^280398^1:12:0
 @m^1411^Durotar
+@m^1417^Arathi Highlands
 @m^1424^Hillsbrad Foothills
 @m^1437^Wetlands
 @m^1438^Teldrassil
@@ -1723,6 +1729,7 @@ GoldScout-export 6^bsdo27ls52em^5
 @a^2032^151:1,152:2
 @a^2089^65:1,83:1,84:2,85:1,104:1
 @a^2261^195:1
+@a^2559^207:1
 @a^3099^169:2
 @a^3101^208:6,209:1,228:3,229:1
 @a^3102^208:6
