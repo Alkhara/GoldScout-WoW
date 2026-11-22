@@ -1,4 +1,4 @@
-GoldScout-export 6^rueird6c5u9f^32
+GoldScout-export 6^rueird6c5u9f^34
 2253^1^0^36^36^1416^0.4844^0.5757^1^Tosco Aplastacresta^7441:1:1^
 2254^17^0^36^37^1416^0.4344^0.4679^17^Aplastador Aplastacresta^3771:1:1,3785:1:1,3864:1:1,4306:6:18,6413:1:1^
 2255^2^0^37^37^1416^0.4562^0.4672^2^Mago Aplastacresta^4338:1:3^
@@ -126,6 +126,10 @@ GoldScout-export 6^rueird6c5u9f^32
 6505^37^0^48^49^1449^0.6264^0.7460^37^Ravasaurio^4587:15:15,4588:3:3,4638:2:2,11018:2:2,11116:9:9,12184:14:14,20015:7:7,280459:1:1^
 6506^12^0^49^50^1449^0.6200^0.7653^12^Corredor ravasaurio^4587:3:3,4588:1:1,8146:1:1,11018:2:2,11116:4:4,12184:4:4,248697:1:1^
 6508^1^0^50^51^1449^0.6913^0.5900^1^Ravasaurio Pellejo Venenoso^12184:1:1^
+6509^4^0^48^49^1449^0.6470^0.2976^4^Azotador Sangrepétalo^4607:1:1,11018:1:1,213547:1:1^
+6510^4^0^51^52^1449^0.5353^0.1546^4^Despellejador Sangrepétalo^4607:1:1,10286:1:1,11116:1:1^
+6511^4^0^49^50^1449^0.6476^0.3335^4^Trillador Sangrepétalo^4607:2:2,8838:1:1,10286:1:1,11018:2:2^
+6557^1^0^50^50^1449^0.5604^0.1853^1^Moco primigenio^3676:1:1,20763:1:1^
 6906^1^0^0^0^0^0.0000^0.0000^0^^^
 6907^2^0^0^0^0^0.0000^0.0000^0^^2459:1:1,4544:1:1,9394:1:1^
 6908^1^0^0^0^0^0.0000^0.0000^0^^9404:1:1^
@@ -175,7 +179,12 @@ GoldScout-export 6^rueird6c5u9f^32
 8637^14^0^44^45^1427^0.6518^0.5097^14^Velador Hierro Negro^4306:3:6,4338:4:6,6149:1:1,21547:1:1^
 8996^11^0^42^48^1446^0.6013^0.3611^11^Esbirro abisario^^
 9157^6^0^40^40^1449^0.4430^0.0887^6^Peste Sangrepétalo^^
+9162^14^0^49^50^1449^0.6603^0.3284^14^Diemetradón joven^5128:4:4,5133:7:7,11018:5:5,11114:5:5,11830:4:4,15384:1:1^
+9163^3^0^51^52^1449^0.5330^0.1864^3^Diemetradón^5128:1:1,5133:2:2,11114:3:3,11830:1:1^
+9165^6^0^48^50^1449^0.6722^0.3036^6^Pterrordáctilo volantón^5128:2:2,5133:1:1,8146:1:1,11018:2:2,11831:2:2^
+9166^5^0^50^52^1449^0.5915^0.1528^5^Pterrordáctilo^5128:2:2,5133:1:1,8146:1:1,11018:2:2,11831:4:4^
 9318^6^0^47^49^1427^0.4623^0.2356^6^Incendosaurio^5128:4:4,5133:2:2^
+9477^1^0^50^50^1449^0.5604^0.1853^1^Moco clonado^^
 10802^1^0^51^51^1425^0.5770^0.8653^1^Hitah'ya la Guardiana^19064:1:1^
 11686^1^0^40^41^1414^0.3843^0.5797^1^Asaltante fantasmal^^
 11687^2^0^41^42^1414^0.3849^0.5798^2^Maleante fantasmal^4338:2:2^
@@ -384,6 +393,7 @@ GoldScout-export 6^rueird6c5u9f^32
 @i^8749^Sombrero de ganchillo
 @i^8751^Almófar superpuesto
 @i^8831^Loto cárdeno
+@i^8838^Solea
 @i^8973^Pellejo de yeti grueso
 @i^9234^Tiara de las profundidades
 @i^9238^Caparazón de escarabajo sin rajar
@@ -414,6 +424,7 @@ GoldScout-export 6^rueird6c5u9f^32
 @i^10511^Aceite gólem
 @i^10551^Daga bañada en torio
 @i^11018^Tierra de Un'Goro
+@i^11114^Hueso de dinosaurio
 @i^11116^Un diario destrozado
 @i^11386^Ojo de basilisco fangoso
 @i^11387^Corazón de basilisco
@@ -426,6 +437,8 @@ GoldScout-export 6^rueird6c5u9f^32
 @i^11417^Ala emplumada
 @i^11418^Hueso hueco de ala
 @i^11818^Llave de la letrina de Limugre
+@i^11830^Escama de diemetradón palmeada
+@i^11831^Escama de pterrordáctilo palmeada
 @i^11973^Eslabón de hematites de la bestia
 @i^11974^Anillo de aguamarina del búho
 @i^12011^Aro de bosque de espíritu
@@ -459,6 +472,7 @@ GoldScout-export 6^rueird6c5u9f^32
 @i^15287^Arco de cruzado de defensa
 @i^15374^Leotardos de Caballero Lobo del oso
 @i^15379^Botas Garrafuria del gorila
+@i^15384^Yelmo Garrafuria del bandido
 @i^15610^Brazales de vínculo de huesos del canalizador
 @i^15614^Escarpes de vínculo de huesos del bandido
 @i^15731^Patrón: guanteletes de cuero rúnico
@@ -665,6 +679,7 @@ GoldScout-export 6^rueird6c5u9f^32
 @q^8749^0:4:0
 @q^8751^0:4:0
 @q^8831^1:7:1
+@q^8838^1:7:1
 @q^8973^1:12:0
 @q^9234^1:12:0
 @q^9238^1:12:0
@@ -695,6 +710,7 @@ GoldScout-export 6^rueird6c5u9f^32
 @q^10511^1:12:0
 @q^10551^1:12:0
 @q^11018^1:12:0
+@q^11114^1:12:0
 @q^11116^2:15:0
 @q^11386^0:15:0
 @q^11387^0:15:0
@@ -707,6 +723,8 @@ GoldScout-export 6^rueird6c5u9f^32
 @q^11417^0:15:0
 @q^11418^0:15:0
 @q^11818^1:12:0
+@q^11830^1:12:0
+@q^11831^1:12:0
 @q^11973^2:4:0
 @q^11974^2:4:0
 @q^12011^2:4:0
@@ -740,6 +758,7 @@ GoldScout-export 6^rueird6c5u9f^32
 @q^15287^2:2:0
 @q^15374^2:4:0
 @q^15379^2:4:0
+@q^15384^2:4:0
 @q^15610^2:4:0
 @q^15614^2:4:0
 @q^15731^2:9:0
@@ -1100,6 +1119,10 @@ GoldScout-export 6^rueird6c5u9f^32
 @a^6505^252:4,253:5,311:5,312:10,313:5,331:3,332:5
 @a^6506^253:1,311:2,312:8,332:1
 @a^6508^233:1
+@a^6509^112:2,132:2
+@a^6510^50:2,70:1,71:1
+@a^6511^112:1,132:1,152:2
+@a^6557^71:1
 @a^7725^153:6,193:10
 @a^7726^153:4,193:3
 @a^7727^153:1,193:5
@@ -1116,7 +1139,12 @@ GoldScout-export 6^rueird6c5u9f^32
 @a^8637^133:5,232:4,252:5
 @a^8996^92:1,151:3,152:7
 @a^9157^28:6
+@a^9162^112:1,113:2,132:2,133:1,134:1,152:5,153:1,154:1
+@a^9163^70:2,71:1
+@a^9165^113:2,114:1,132:1,133:2
+@a^9166^31:2,51:2,153:1
 @a^9318^88:1,89:4,108:1
+@a^9477^71:1
 @a^10802^351:1
 @a^11686^227:1
 @a^11687^227:2

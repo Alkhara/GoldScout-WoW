@@ -1,4 +1,4 @@
-GoldScout-export 6^3dv3cedstu3r^2
+GoldScout-export 6^3dv3cedstu3r^3
 92^3^0^39^40^1418^0.4041^0.7864^3^Rock Elemental^4552:1:1,4553:1:1,4627:3:3,4784:2:2,8150:1:1^
 588^1^0^35^35^1434^0.2310^0.1360^1^Bloodscalp Scout^^
 701^1^0^34^34^1434^0.2299^0.1263^1^Bloodscalp Mystic^^
@@ -31,14 +31,21 @@ GoldScout-export 6^3dv3cedstu3r^2
 2907^1^0^37^37^1418^0.2921^0.5877^1^Dustbelcher Mystic^^
 2919^1^0^45^45^1418^0.2617^0.4574^1^Fam'retor Guardian^4552:1:1,4784:1:1,4847:1:1,8150:1:1^
 3560^7^0^40^41^1418^0.5027^0.6947^7^Healing Ward^^
+262397^18^0^36^38^1434^0.2221^0.2803^18^Brinescale Skirmisher^1645:1:1,2734:1:1,2738:1:1,2745:1:1,2750:1:1,3784:1:1,5524:5:5,6149:1:1,17058:5:5,270305:9:9^
 @i^864^Knightly Longsword of Defense
 @i^1464^Buzzard Talon
 @i^1477^Scroll of Agility II
+@i^1645^Moonberry Juice
 @i^1688^Long Soft Tail
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
+@i^2734^Green Hills of Stranglethorn - Page 10
+@i^2738^Green Hills of Stranglethorn - Page 14
+@i^2745^Green Hills of Stranglethorn - Page 21
+@i^2750^Green Hills of Stranglethorn - Page 26
 @i^3404^Buzzard Wing
 @i^3771^Wild Hog Shank
+@i^3784^Metal Stave
 @i^3785^Keen Axe
 @i^3787^Stone Club
 @i^4306^Silk Cloth
@@ -57,10 +64,12 @@ GoldScout-export 6^3dv3cedstu3r^2
 @i^4784^Lifeless Stone
 @i^4847^Lotwil's Shackles of Elemental Binding
 @i^5116^Long Tail Feather
+@i^5524^Thick-shelled Clam
 @i^5636^Delicate Feather
 @i^5637^Large Fang
 @i^5797^Indurium Flake
 @i^5829^Razor-sharp Beak
+@i^6149^Greater Mana Potion
 @i^6166^Coyote Jawbone
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
@@ -86,15 +95,22 @@ GoldScout-export 6^3dv3cedstu3r^2
 @i^17058^Fish Oil
 @i^211269^Primitive Drawing
 @i^248692^Waylaid Crate: Expert Ore
+@i^270305^Brinescale Trident
 @i^278515^Mus'hale's Stolen Supplies
 @q^864^2:2:0
 @q^1464^0:15:0
 @q^1477^1:0:0
+@q^1645^1:0:0
 @q^1688^0:15:0
 @q^1708^1:0:0
 @q^1710^1:0:0
+@q^2734^1:12:0
+@q^2738^1:12:0
+@q^2745^1:12:0
+@q^2750^1:12:0
 @q^3404^1:7:1
 @q^3771^1:0:0
+@q^3784^0:2:0
 @q^3785^0:2:0
 @q^3787^0:2:0
 @q^4306^1:7:1
@@ -113,10 +129,12 @@ GoldScout-export 6^3dv3cedstu3r^2
 @q^4784^0:15:0
 @q^4847^1:12:0
 @q^5116^1:7:1
+@q^5524^1:7:0
 @q^5636^0:15:0
 @q^5637^1:7:1
 @q^5797^1:12:0
 @q^5829^0:15:0
+@q^6149^1:0:0
 @q^6166^1:12:0
 @q^6358^1:7:1
 @q^6359^1:7:1
@@ -142,6 +160,7 @@ GoldScout-export 6^3dv3cedstu3r^2
 @q^17058^1:15:0
 @q^211269^1:12:0
 @q^248692^1:0:1
+@q^270305^1:12:0
 @q^278515^1:12:0
 @m^1417^Arathi Highlands
 @m^1418^Badlands
@@ -634,5 +653,6 @@ GoldScout-export 6^3dv3cedstu3r^2
 @a^2907^225:1
 @a^2919^185:1
 @a^3560^269:2,270:2,290:3
+@a^262397^104:18
 @f^1417^0^6^155^6358:4:4,6359:1:1,6362:1:1^326:5,345:1
 @l^0^enUS
