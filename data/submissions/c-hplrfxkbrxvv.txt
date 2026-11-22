@@ -1,4 +1,4 @@
-GoldScout-export 6^hplrfxkbrxvv^21
+GoldScout-export 6^hplrfxkbrxvv^22
 588^3^0^34^35^1434^0.2655^0.1153^3^Eclaireur Bloodscalp^1708:1:1,2592:1:2,4338:1:1^
 595^2^0^34^35^1434^0.2338^0.1240^2^Chasseur Bloodscalp^^
 660^2^0^37^37^1434^0.2468^0.0945^2^Sorcier-docteur Bloodscalp^2730:1:1,4306:1:2^
@@ -14,6 +14,8 @@ GoldScout-export 6^hplrfxkbrxvv^21
 696^5^0^39^40^1434^0.4482^0.3571^5^Lanceur de haches Skullsplitter^1520:1:1,2730:1:1,2750:1:1,4306:2:6,8151:1:1^
 697^1^0^34^34^1434^0.2965^0.1936^1^Chaman Bloodscalp^4306:1:2^
 699^1^0^35^35^1434^0.2254^0.0842^1^Belluaire Bloodscalp^^
+705^2^0^1^1^1426^0.2676^0.6979^2^Jeune loup décharné^7073:2:2^
+708^3^0^3^3^1426^0.2666^0.6857^3^Petit sanglier des rochers^7098:3:3^
 780^24^0^39^40^1434^0.4390^0.3565^24^Mystique Skullsplitter^1207:1:1,1520:1:1,2466:4:4,2740:1:1,3771:1:1,4306:10:22,7440:1:1,8151:1:1,213127:1:1^
 782^1^0^41^42^1434^0.4738^0.3951^1^Eclaireur Skullsplitter^1520:1:1^
 784^1^0^41^41^1434^0.4592^0.4004^1^Belluaire Skullsplitter^^
@@ -29,7 +31,13 @@ GoldScout-export 6^hplrfxkbrxvv^21
 979^3^0^38^38^1434^0.4939^0.0637^3^Chasseur des ombres de Kurzen^4306:1:1^
 1085^1^0^35^35^1434^0.3330^0.1884^1^Ancien tigre de Strangleronce^1686:1:1^
 1114^6^0^37^38^1434^0.4636^0.3479^6^Foudroyeur de la Jungle^2799:2:2,4096:2:2,4097:1:1,5637:1:1,248710:1:1^
+1125^7^0^5^6^1426^0.4903^0.5164^7^Sanglier des rochers^769:2:2,771:1:1,2886:4:4^
+1126^1^0^7^7^1426^0.5139^0.5056^1^Grand sanglier des rochers^2886:1:1^
+1128^2^0^5^6^1426^0.4911^0.5060^2^Jeune ours noir^7073:2:2^
+1134^12^0^5^6^1426^0.4241^0.5467^12^Jeune wendigo^117:3:3,1430:1:1,2651:1:1,2671:4:4^
+1135^10^0^6^7^1426^0.4178^0.5146^10^Wendigo^1415:1:1,2671:4:4,2774:1:1^
 1151^1^0^36^36^1434^0.2590^0.1949^1^Crocilisque marin^12037:1:1^
+1718^4^0^3^4^1426^0.3487^0.6842^4^Ecumeur Mâcheroc^1377:1:1,2589:1:1^
 2354^1^0^22^23^1424^0.5480^0.5226^1^Ours gris vicieux^2940:1:1,3702:1:1^
 2384^1^0^23^24^1424^0.5637^0.5191^1^Lion des montagnes affamé^5136:1:1^
 2385^1^0^27^27^1424^0.5780^0.5050^1^Lion des montagnes farouche^262888:1:1^
@@ -120,13 +128,20 @@ GoldScout-export 6^hplrfxkbrxvv^21
 263899^2^0^0^0^0^0.0000^0.0000^0^^3801:1:1,4306:1:1^
 264172^1^0^0^0^0^0.0000^0.0000^0^^286662:1:1^
 268321^1^0^0^0^0^0.0000^0.0000^0^^7070:1:1^
+269075^1^0^6^6^1426^0.2760^0.6350^1^Léopard des neiges rôdeur^4814:1:1^
 272228^5^0^36^37^2548^0.5493^0.7514^5^Factionnaire de la moisson^3814:1:1,4306:4:7,5427:1:1,5567:1:1^
+@i^117^Viande séchée coriace
+@i^769^Morceau de viande de sanglier
 @i^770^Croc pointu de crocilisque
+@i^771^Défense ébréchée de sanglier
 @i^863^Faucheuse sombre de médecine
 @i^878^Petite filière
 @i^936^Masse de minuit
 @i^1081^Chair croustillante d'araignée
 @i^1207^Murphstar de héraut
+@i^1377^Gants râpés
+@i^1415^Marteau de charpentier
+@i^1430^Gants en patchwork
 @i^1464^Serre de busard
 @i^1465^Fléau des tigres
 @i^1520^Sueur de troll
@@ -142,8 +157,11 @@ GoldScout-export 6^hplrfxkbrxvv^21
 @i^1988^Gantelets de général de brigade
 @i^2290^Parchemin d'Intelligence II
 @i^2466^Fétiche Skullsplitter
+@i^2589^Etoffe de lin
 @i^2592^Etoffe de laine
 @i^2633^Remède tropical
+@i^2651^Brassards en anneaux fins
+@i^2671^Peau de wendigo
 @i^2725^Les vertes collines de Strangleronce - Page 1
 @i^2730^Les vertes collines de Strangleronce - Page 6
 @i^2738^Les vertes collines de Strangleronce - Page 14
@@ -152,7 +170,9 @@ GoldScout-export 6^hplrfxkbrxvv^21
 @i^2745^Les vertes collines de Strangleronce - Page 21
 @i^2748^Les vertes collines de Strangleronce - Page 24
 @i^2750^Les vertes collines de Strangleronce - Page 26
+@i^2774^Tromblon couvert de rouille
 @i^2799^Croc de gorille
+@i^2886^Côtes de sanglier des rochers
 @i^2940^Patte d'ours sanglante
 @i^3668^Contrat de l'assassin
 @i^3671^Crâne pourrissant
@@ -191,6 +211,7 @@ GoldScout-export 6^hplrfxkbrxvv^21
 @i^4636^Solide coffret en fer
 @i^4709^Mantelet sylvestre en cuir
 @i^4729^Mantelet de l'aurore
+@i^4814^Croc décoloré
 @i^5128^Peau de lézard dépouillée
 @i^5133^Gésier suintant
 @i^5136^Oreille de fourrure déchirée
@@ -209,6 +230,8 @@ GoldScout-export 6^hplrfxkbrxvv^21
 @i^6362^Morue rochécaille crue
 @i^6530^Asticots
 @i^7070^Eau élémentaire
+@i^7073^Croc brisé
+@i^7098^Défense brisée
 @i^7409^Bottes d'infiltrateur de brigandage
 @i^7440^Pantalon de sentinelle de l'ours
 @i^7444^Bottes de sentinelle de brigandage
@@ -296,12 +319,18 @@ GoldScout-export 6^hplrfxkbrxvv^21
 @i^279046^Pince de crabe craquelée
 @i^282720^Essaim d'araignées
 @i^286662^Poignes d'habitant des profondeurs
+@q^117^1:0:0
+@q^769^1:7:1
 @q^770^0:15:0
+@q^771^0:15:0
 @q^863^2:2:0
 @q^878^0:7:0
 @q^936^3:2:0
 @q^1081^1:7:1
 @q^1207^2:2:0
+@q^1377^0:4:0
+@q^1415^0:2:0
+@q^1430^0:4:0
 @q^1464^0:15:0
 @q^1465^2:2:0
 @q^1520^0:15:0
@@ -317,8 +346,11 @@ GoldScout-export 6^hplrfxkbrxvv^21
 @q^1988^2:4:0
 @q^2290^1:0:0
 @q^2466^1:12:0
+@q^2589^1:7:1
 @q^2592^1:7:1
 @q^2633^1:0:0
+@q^2651^0:4:0
+@q^2671^1:12:0
 @q^2725^1:12:0
 @q^2730^1:12:0
 @q^2738^1:12:0
@@ -327,7 +359,9 @@ GoldScout-export 6^hplrfxkbrxvv^21
 @q^2745^1:12:0
 @q^2748^1:12:0
 @q^2750^1:12:0
+@q^2774^0:2:0
 @q^2799^1:12:0
+@q^2886^1:7:1
 @q^2940^0:15:0
 @q^3668^1:12:0
 @q^3671^0:15:0
@@ -366,6 +400,7 @@ GoldScout-export 6^hplrfxkbrxvv^21
 @q^4636^2:15:0
 @q^4709^2:4:0
 @q^4729^2:4:0
+@q^4814^0:15:0
 @q^5128^0:15:0
 @q^5133^0:15:0
 @q^5136^0:15:0
@@ -384,6 +419,8 @@ GoldScout-export 6^hplrfxkbrxvv^21
 @q^6362^1:7:1
 @q^6530^1:0:0
 @q^7070^1:7:1
+@q^7073^0:15:0
+@q^7098^0:15:0
 @q^7409^2:4:0
 @q^7440^2:4:0
 @q^7444^2:4:0
@@ -474,6 +511,7 @@ GoldScout-export 6^hplrfxkbrxvv^21
 @m^1413^Les Tarides
 @m^1418^Terres ingrates
 @m^1424^Contreforts de Hautebrande
+@m^1426^Dun Morogh
 @m^1434^Vallée de Strangleronce
 @m^1443^Désolace
 @m^1445^Marécage d'Âprefange
@@ -1281,6 +1319,8 @@ GoldScout-export 6^hplrfxkbrxvv^21
 @a^696^128:1,129:1,148:2,149:1
 @a^697^65:1
 @a^699^24:1
+@a^705^265:1,285:1
+@a^708^265:2,285:1
 @a^780^128:5,129:3,148:13,149:3
 @a^782^149:1
 @a^784^169:1
@@ -1296,7 +1336,13 @@ GoldScout-export 6^hplrfxkbrxvv^21
 @a^979^29:3
 @a^1085^66:1
 @a^1114^108:1,149:5
+@a^1125^189:1,209:1,210:4,228:1
+@a^1126^210:1
+@a^1128^209:2
+@a^1134^208:6,228:6
+@a^1135^188:2,208:8
 @a^1151^65:1
+@a^1718^266:1,267:2,286:1
 @a^2354^210:1
 @a^2384^211:1
 @a^2385^211:1
@@ -1341,6 +1387,7 @@ GoldScout-export 6^hplrfxkbrxvv^21
 @a^259258^170:4,190:1
 @a^259263^270:1
 @a^262037^332:3
+@a^269075^245:1
 @a^272228^290:3,310:1,311:1
 @f^1413^0^2^165^6358:2:2^152:2
 @f^1424^0^65^170^3820:3:8,6289:11:11,6308:38:38,6359:3:3,21071:8:8,21113:2:2^191:6,211:47,231:8,269:4

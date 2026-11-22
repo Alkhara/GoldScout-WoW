@@ -1,4 +1,4 @@
-GoldScout-export 6^0re69nn2acz9^24
+GoldScout-export 6^0re69nn2acz9^25
 114^3^0^15^15^1436^0.5355^0.3276^3^Harvest Watcher^732:2:2,814:2:2,6542:1:1,255007:3:3^
 121^6^0^15^16^1436^0.4445^0.7625^6^Defias Pathstalker^2589:2:4^
 122^15^0^17^18^1436^0.4154^0.8048^15^Defias Highwayman^1179:1:1,1742:1:1,1794:1:1,2589:1:2,2592:6:10,7997:1:1,248684:1:1^
@@ -32,12 +32,16 @@ GoldScout-export 6^0re69nn2acz9^24
 2158^1^0^19^19^1439^0.3519^0.8461^1^Gravelflint Scout^^
 2159^1^0^20^20^1439^0.3628^0.8635^1^Gravelflint Bonesnapper^2589:1:1^
 2177^1^0^12^12^1439^0.4287^0.5955^1^Writhing Highborne^^
+2181^7^0^18^19^1439^0.5897^0.2371^7^Stormscale Myrmidon^1791:1:1,5523:1:1,6289:3:3,15945:1:1,279276:3:3^
+2182^5^0^19^20^1439^0.5980^0.2207^5^Stormscale Sorceress^5523:1:1,279276:2:2^
+2183^4^0^20^21^1439^0.6019^0.1992^4^Stormscale Warrior^5523:1:1,248684:1:1,279276:2:2^
 2202^4^0^12^13^1439^0.3652^0.7669^4^Greymist Coastrunner^730:1:1,1495:1:1,3654:1:1^
 2205^10^0^15^16^1439^0.3649^0.7676^10^Greymist Warrior^730:4:4,1179:1:1,5523:7:7,5784:1:1,6289:1:1,14722:1:1^
 2206^12^0^16^17^1439^0.3546^0.7780^12^Greymist Hunter^730:5:5,1770:1:1,4571:1:1,5523:5:5,5784:1:1^
 2207^8^0^18^19^1439^0.3134^0.8550^8^Greymist Oracle^730:1:1,1179:1:1,5523:2:2,5784:1:1^
 2208^10^0^19^20^1439^0.3142^0.8557^10^Greymist Tidehunter^730:5:5,5523:1:1,5784:1:1^
 2237^8^0^17^18^1439^0.4224^0.8088^8^Moonstalker Sire^2078:1:1,5135:3:3,5386:5:5^
+2336^4^0^16^17^1439^0.5714^0.2650^4^Dark Strand Fanatic^1794:1:1,2592:1:2,4575:1:1^
 2338^23^0^16^17^1439^0.3857^0.8685^23^Twilight Disciple^1179:1:1,2287:2:2,2589:4:5,2592:1:2,5352:1:1,279279:1:1^
 2339^14^0^17^18^1439^0.3875^0.8695^14^Twilight Thug^1179:1:1,2589:2:3,2592:4:8,15012:1:1^
 4463^1^0^22^22^1433^0.6924^0.7850^1^Blackrock Summoner^^
@@ -62,6 +66,7 @@ GoldScout-export 6^0re69nn2acz9^24
 @i^1770^Canvas Vest
 @i^1776^Brocade Pants
 @i^1789^Patched Leather Bracers
+@i^1791^Patched Leather Gloves
 @i^1794^Patched Leather Jerkin
 @i^1812^Short-handled Battle Axe
 @i^1823^Bludgeoning Cudgel
@@ -83,6 +88,7 @@ GoldScout-export 6^0re69nn2acz9^24
 @i^3654^Brackwater Shield
 @i^4306^Silk Cloth
 @i^4571^War Knife of Agility
+@i^4575^Medicine Staff of the Wolf
 @i^4775^Cracked Bill
 @i^5114^Severed Talon
 @i^5135^Thin Black Claw
@@ -101,12 +107,14 @@ GoldScout-export 6^0re69nn2acz9^24
 @i^9781^Bandit Pants of the Owl
 @i^14722^War Paint Anklewraps
 @i^15012^Lupine Slippers of Nature Protection
+@i^15945^Runic Stave
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
 @i^248684^Waylaid Crate: Apprentice Textiles
 @i^248702^Waylaid Crate: Apprentice Fabrics
 @i^255007^Golem Isospring
 @i^271872^Broken Staff of Incinerator Gar'im
+@i^279276^Mathystral Amulet Fragment
 @i^279279^Peerless Eye
 @q^730^1:7:1
 @q^732^1:12:0
@@ -127,6 +135,7 @@ GoldScout-export 6^0re69nn2acz9^24
 @q^1770^0:4:0
 @q^1776^0:4:0
 @q^1789^0:4:0
+@q^1791^0:4:0
 @q^1794^0:4:0
 @q^1812^0:2:0
 @q^1823^0:2:0
@@ -148,6 +157,7 @@ GoldScout-export 6^0re69nn2acz9^24
 @q^3654^2:4:0
 @q^4306^1:7:1
 @q^4571^2:2:0
+@q^4575^2:2:0
 @q^4775^0:15:0
 @q^5114^0:15:0
 @q^5135^0:15:0
@@ -166,12 +176,14 @@ GoldScout-export 6^0re69nn2acz9^24
 @q^9781^2:4:0
 @q^14722^2:4:0
 @q^15012^2:4:0
+@q^15945^2:4:0
 @q^17056^1:15:1
 @q^17057^1:15:0
 @q^248684^1:0:1
 @q^248702^2:0:1
 @q^255007^1:7:1
 @q^271872^1:12:0
+@q^279276^1:0:0
 @q^279279^1:12:0
 @m^1415^Eastern Kingdoms
 @m^1433^Redridge Mountains
@@ -210,12 +222,16 @@ GoldScout-export 6^0re69nn2acz9^24
 @a^2158^327:1
 @a^2159^347:1
 @a^2177^228:1
+@a^2181^91:5,92:1,111:1
+@a^2182^72:1,91:2,92:2
+@a^2183^72:2,92:2
 @a^2202^307:4
 @a^2205^307:10
 @a^2206^307:9,326:3
 @a^2207^326:3,346:5
 @a^2208^326:4,346:6
 @a^2237^308:2,328:6
+@a^2336^111:4
 @a^2338^347:23
 @a^2339^347:14
 @a^4463^313:1
