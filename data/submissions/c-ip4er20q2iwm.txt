@@ -1,5 +1,14 @@
-GoldScout-export 6^ip4er20q2iwm^8
+GoldScout-export 6^ip4er20q2iwm^9
+1891^3^0^13^14^1421^0.4615^0.7274^3^Pyrewood Watcher^2589:3:9^
+1894^4^0^14^15^1421^0.4418^0.7316^4^Pyrewood Sentry^1181:1:1,2589:1:4^
+1895^2^0^14^15^1421^0.4577^0.7376^2^Pyrewood Elder^1501:1:1,1733:1:1^
+2054^2^0^19^20^1421^0.4524^0.8296^2^Sickly Refugee^414:1:1,1815:1:1,2589:1:3^
+2066^1^0^13^13^1421^0.4651^0.7383^1^Councilman Higarth^^
+2067^1^0^13^13^1421^0.4651^0.7410^1^Councilman Brunswick^1515:1:1^
+2068^1^0^15^15^1421^0.4659^0.7442^1^Lord Mayor Morrison^2589:1:5^
+2332^3^0^21^21^1421^0.4508^0.8445^3^Valdred Moray^414:1:1^
 2964^1^0^10^10^1412^0.3943^0.2064^1^Windfury Sorceress^2589:1:1^
+3530^1^0^15^15^1421^0.4615^0.7305^1^Pyrewood Tailor^3036:1:1^
 11318^10^0^0^0^0^0.0000^0.0000^0^^1512:1:1,2073:1:1,2589:3:11,2763:1:1,2778:1:1,3375:1:1,4566:1:1^
 11319^4^0^0^0^0^0.0000^0.0000^0^^818:1:1,2589:1:4,248684:1:1^
 11320^7^0^0^0^0^0.0000^0.0000^0^^818:1:1,2073:1:1,3312:1:1,3669:2:2,3676:2:2,14563:1:1,15298:1:1^
@@ -35,10 +44,12 @@ GoldScout-export 6^ip4er20q2iwm^8
 256092^18^0^10^11^2521^0.5713^0.3922^18^Shadowgale Shriekling^1515:1:1,2645:1:1,3299:9:9,252671:8:8,265140:8:23^
 256250^2^0^9^9^2521^0.5991^0.5688^2^Living Storm^^
 270201^9^0^8^10^2521^0.6551^0.6650^9^Al'Aketh Brawler^1414:1:1,1430:1:1,2589:2:4,4674:1:1,252030:1:1,252031:5:9,252032:2:3,255663:2:2,258771:5:5^
+@i^414^Dalaran Sharp
 @i^727^Notched Shortsword of Frost Protection
 @i^767^Long Bo Staff
 @i^774^Malachite
 @i^818^Tigerseye
+@i^1181^Scroll of Spirit
 @i^1210^Shadowgem
 @i^1411^Withered Staff
 @i^1412^Crude Bastard Sword
@@ -53,6 +64,7 @@ GoldScout-export 6^ip4er20q2iwm^8
 @i^1430^Patchwork Gloves
 @i^1497^Calico Cloak
 @i^1499^Calico Pants
+@i^1501^Calico Tunic
 @i^1506^Warped Leather Gloves
 @i^1512^Crude Battle Axe
 @i^1513^Old Greatsword
@@ -60,7 +72,9 @@ GoldScout-export 6^ip4er20q2iwm^8
 @i^1515^Rough Wooden Staff
 @i^1731^Worn Mail Boots
 @i^1732^Worn Mail Bracers
+@i^1733^Worn Cloak
 @i^1734^Worn Mail Gloves
+@i^1815^Ornamental Mace
 @i^2073^Dwarven Hatchet of the Owl
 @i^2138^Sharpened Letter Opener
 @i^2215^Wooden Shield
@@ -137,10 +151,12 @@ GoldScout-export 6^ip4er20q2iwm^8
 @i^272999^Barbaric Crossbow
 @i^273005^Satyrskin Cloak
 @i^273007^Chasm Walkers
+@q^414^1:0:0
 @q^727^2:2:0
 @q^767^1:2:0
 @q^774^2:7:1
 @q^818^2:7:1
+@q^1181^1:0:0
 @q^1210^2:7:1
 @q^1411^0:2:0
 @q^1412^0:2:0
@@ -155,6 +171,7 @@ GoldScout-export 6^ip4er20q2iwm^8
 @q^1430^0:4:0
 @q^1497^0:4:0
 @q^1499^0:4:0
+@q^1501^0:4:0
 @q^1506^0:4:0
 @q^1512^0:2:0
 @q^1513^0:2:0
@@ -162,7 +179,9 @@ GoldScout-export 6^ip4er20q2iwm^8
 @q^1515^0:2:0
 @q^1731^0:4:0
 @q^1732^0:4:0
+@q^1733^0:4:0
 @q^1734^0:4:0
+@q^1815^0:2:0
 @q^2073^2:2:0
 @q^2138^0:2:0
 @q^2215^0:4:0
@@ -240,6 +259,7 @@ GoldScout-export 6^ip4er20q2iwm^8
 @q^273005^3:4:0
 @q^273007^3:4:0
 @m^1412^Mulgore
+@m^1421^Silverpine Forest
 @m^2521^Zephras Isle
 @c^118^
 @c^724^
@@ -605,7 +625,16 @@ GoldScout-export 6^ip4er20q2iwm^8
 @c^279982^
 @c^279990^
 @c^286152^
+@a^1891^288:1,289:2
+@a^1894^288:4
+@a^1895^289:2
+@a^2054^329:2
+@a^2066^289:1
+@a^2067^289:1
+@a^2068^289:1
+@a^2332^328:1,329:2
 @a^2964^87:1
+@a^3530^289:1
 @a^250868^251:1
 @a^250927^151:1
 @a^251622^309:1

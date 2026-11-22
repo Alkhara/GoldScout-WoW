@@ -1,4 +1,4 @@
-GoldScout-export 6^18u8ijta5j4x^18
+GoldScout-export 6^18u8ijta5j4x^19
 587^10^0^33^34^1434^0.3027^0.1885^10^Krieger der Bloodscalp^1519:5:5,1520:2:2,2592:1:2,2732:1:1,3786:1:1,3901:2:2,4306:5:7,7420:1:1^
 588^21^0^34^35^1434^0.2550^0.1143^21^Späher der Bloodscalp^2750:1:1,3812:1:1,3901:8:8,4306:3:4,6402:1:1^
 595^8^0^34^35^1434^0.2551^0.1179^8^Jäger der Bloodscalp^2592:1:3,2740:1:1,3901:5:5,4306:2:2,7462:1:1^
@@ -9,7 +9,14 @@ GoldScout-export 6^18u8ijta5j4x^18
 702^6^0^33^34^1434^0.3194^0.1309^6^Aasfresser der Bloodscalp^1519:1:1,2750:1:1,3901:1:1,4052:1:1,4306:2:3^
 736^1^0^32^33^1434^0.3110^0.1111^1^Panther^1686:1:1^
 1151^1^0^35^36^1434^0.2884^0.2189^1^Salzwasserkrokilisk^770:1:1^
-1501^1^0^1^1^1420^0.3148^0.6392^1^Hirnloser Zombie^^
+1501^12^0^1^1^1420^0.3120^0.6367^12^Hirnloser Zombie^159:1:1,1376:1:1,1378:2:2,1380:1:1,2589:2:2,3365:1:1^
+1502^10^0^1^2^1420^0.3194^0.6267^10^Elender Zombie^1364:1:1,2589:6:6,2656:1:1,4604:2:2^
+1504^10^0^2^3^1420^0.2868^0.5884^10^Junger Nachtweber^1380:2:2,1476:4:4,2651:1:1,2656:1:1,3365:2:2,7100:4:4,7101:3:3^
+1505^7^0^3^4^1420^0.2633^0.5952^7^Nachtweber^1376:1:1,1476:2:2,7100:2:2,7101:3:3^
+1506^8^0^3^3^1420^0.3680^0.6646^8^Scharlachrote Konvertitin^159:2:2,1376:1:1,2070:1:1,2652:1:1,3266:7:7^
+1508^9^0^1^1^1420^0.2992^0.6496^9^Junger Aasfresser^3265:6:6,3363:1:1,4865:2:2,7073:3:3,7074:4:4^
+1512^11^0^1^2^1420^0.2973^0.6543^11^Nachtsauger^1376:1:1,2656:1:1,3264:6:6,4865:2:2,7073:5:5,7074:5:5^
+1890^12^0^2^3^1420^0.3245^0.6052^12^Klapperndes Skelett^159:1:1,1367:1:1,1378:1:1,2589:4:4,4604:2:2^
 2240^1^0^33^33^1416^0.4768^0.7911^1^Schleicherin des Syndikats^4306:1:2,6986:1:1^
 2241^2^0^33^34^1416^0.4750^0.8016^2^Diebin des Syndikats^1707:1:1,3601:1:1,9867:1:1^
 2248^27^0^30^31^1424^0.4513^0.3059^27^Höhlenyeti^1760:1:1,1786:1:1,1826:1:1,3708:1:1,3771:2:2,5637:2:2,7370:1:1,211784:1:1^
@@ -197,10 +204,12 @@ GoldScout-export 6^18u8ijta5j4x^18
 260810^1^0^0^0^0^0.0000^0.0000^0^^3712:1:1^
 268622^2^0^22^23^1413^0.4919^0.7728^2^Eindringende Soldatin^14562:1:1^
 270094^2^0^30^30^1441^0.5480^0.5105^2^Sturmherz^5133:1:1,279186:1:1^
+271961^2^0^2^3^1420^0.2664^0.5964^2^Eingesponnener Verlassener^^
 275044^2^0^0^0^0^0.0000^0.0000^0^^1756:1:1,4306:1:2,13062:1:1^
 275045^1^0^0^0^0^0.0000^0.0000^0^^4306:1:2^
 275046^1^0^0^0^0^0.0000^0.0000^0^^284844:1:1^
 @i^117^Zähes Stockfleisch
+@i^159^Erfrischendes Quellwasser
 @i^422^Zwergenmild
 @i^729^Sehniges Geierfleisch
 @i^769^Brocken Eberfleisch
@@ -212,8 +221,13 @@ GoldScout-export 6^18u8ijta5j4x^18
 @i^1081^Knuspriges Spinnenfleisch
 @i^1205^Melonensaft
 @i^1288^Großer Giftbeutel
+@i^1364^Struppige Lederweste
+@i^1367^Struppige Lederstiefel
 @i^1372^Struppiger Umhang
+@i^1376^Ausgefranster Umhang
 @i^1378^Ausgefranste Hose
+@i^1380^Ausgefranste Robe
+@i^1476^Abgeknicktes Spinnengliedmaß
 @i^1477^Rolle der Beweglichkeit II
 @i^1478^Rolle des Schutzes II
 @i^1519^Ohr der Bloodscalp
@@ -247,6 +261,7 @@ GoldScout-export 6^18u8ijta5j4x^18
 @i^1826^Steinschlägel
 @i^1827^Fleischerbeil
 @i^1828^Steinkriegsaxt
+@i^2070^Darnassischer Blauschimmelkäse
 @i^2072^Zwergischer Magierstab der Ausdauer
 @i^2219^Kleiner runder Schild
 @i^2251^Klebriges Spinnenbein
@@ -255,6 +270,9 @@ GoldScout-export 6^18u8ijta5j4x^18
 @i^2608^Dreschadonambra
 @i^2649^Sehr leichter Kettengürtel
 @i^2650^Sehr leichte Kettenstiefel
+@i^2651^Sehr leichte Kettenarmschienen
+@i^2652^Sehr leichter Kettenumhang
+@i^2656^Sehr leichte Kettenweste
 @i^2725^Die Grünen Hügel des Schlingendorntals - Seite 1
 @i^2728^Die Grünen Hügel des Schlingendorntals - Seite 4
 @i^2732^Die Grünen Hügel des Schlingendorntals - Seite 8
@@ -274,7 +292,12 @@ GoldScout-export 6^18u8ijta5j4x^18
 @i^3174^Spinnensekret
 @i^3180^Gesprenkelte Raptorschuppe
 @i^3182^Spinnenseide
+@i^3264^Nachtsaugerflügel
+@i^3265^Aasfressertatze
+@i^3266^Scharlachrote Armbinde
 @i^3301^Scharfer Eckzahn
+@i^3363^Ausgefranster Gürtel
+@i^3365^Ausgefranste Armschienen
 @i^3385^Geringer Manatrank
 @i^3399^Geierkralle
 @i^3402^Weicher Fellflicken
@@ -325,6 +348,7 @@ GoldScout-export 6^18u8ijta5j4x^18
 @i^4556^Getupftes Muschelschalenfragment
 @i^4585^Tropfender Spinnenunterkiefer
 @i^4586^Glatte Raptorenhaut
+@i^4604^Waldpilzkappe
 @i^4607^Köstlicher Höhlenschimmel
 @i^4715^Geschmückter Umhang
 @i^4784^Lebloser Stein
@@ -386,8 +410,12 @@ GoldScout-export 6^18u8ijta5j4x^18
 @i^6826^Blitzende Schuppe
 @i^6894^Wirbelherz
 @i^6986^Purpurroter Lotus
+@i^7073^Zerbrochener Fangzahn
+@i^7074^Gesplitterte Klaue
 @i^7081^Odem des Windes
 @i^7098^Abgesplitterter Hauer
+@i^7100^Klebriges Sekret
+@i^7101^Käferauge
 @i^7119^Zuckender Fühler
 @i^7127^Pulverisierter Azurit
 @i^7368^Ältestenhose des Hierophanten
@@ -474,6 +502,7 @@ GoldScout-export 6^18u8ijta5j4x^18
 @i^284844^Dragonmaw-Bericht
 @i^285344^Barriere des Wachbefehlshabers
 @q^117^1:0:0
+@q^159^1:0:0
 @q^422^1:0:0
 @q^729^1:7:1
 @q^769^1:7:1
@@ -485,8 +514,13 @@ GoldScout-export 6^18u8ijta5j4x^18
 @q^1081^1:7:1
 @q^1205^1:0:0
 @q^1288^1:7:1
+@q^1364^0:4:0
+@q^1367^0:4:0
 @q^1372^0:4:0
+@q^1376^0:4:0
 @q^1378^0:4:0
+@q^1380^0:4:0
+@q^1476^0:15:0
 @q^1477^1:0:0
 @q^1478^1:0:0
 @q^1519^1:12:0
@@ -520,6 +554,7 @@ GoldScout-export 6^18u8ijta5j4x^18
 @q^1826^0:2:0
 @q^1827^0:2:0
 @q^1828^0:2:0
+@q^2070^1:0:0
 @q^2072^2:2:0
 @q^2219^0:4:0
 @q^2251^1:7:1
@@ -528,6 +563,9 @@ GoldScout-export 6^18u8ijta5j4x^18
 @q^2608^0:15:0
 @q^2649^0:4:0
 @q^2650^0:4:0
+@q^2651^0:4:0
+@q^2652^0:4:0
+@q^2656^0:4:0
 @q^2725^1:12:0
 @q^2728^1:12:0
 @q^2732^1:12:0
@@ -547,7 +585,12 @@ GoldScout-export 6^18u8ijta5j4x^18
 @q^3174^1:7:1
 @q^3180^0:15:0
 @q^3182^1:7:1
+@q^3264^1:12:0
+@q^3265^1:12:0
+@q^3266^1:12:0
 @q^3301^0:15:0
+@q^3363^0:4:0
+@q^3365^0:4:0
 @q^3385^1:0:0
 @q^3399^0:15:0
 @q^3402^0:15:0
@@ -598,6 +641,7 @@ GoldScout-export 6^18u8ijta5j4x^18
 @q^4556^0:15:0
 @q^4585^0:15:0
 @q^4586^0:15:0
+@q^4604^1:0:0
 @q^4607^1:0:0
 @q^4715^2:4:0
 @q^4784^0:15:0
@@ -659,8 +703,12 @@ GoldScout-export 6^18u8ijta5j4x^18
 @q^6826^0:15:0
 @q^6894^1:12:0
 @q^6986^0:15:0
+@q^7073^0:15:0
+@q^7074^0:15:0
 @q^7081^1:7:1
 @q^7098^0:15:0
+@q^7100^0:15:0
+@q^7101^0:15:0
 @q^7119^1:12:0
 @q^7127^1:0:0
 @q^7368^2:4:0
@@ -1648,7 +1696,14 @@ GoldScout-export 6^18u8ijta5j4x^18
 @a^702^46:6
 @a^736^46:1
 @a^1151^85:1
-@a^1501^246:1
+@a^1501^246:12
+@a^1502^246:9,266:1
+@a^1504^225:10
+@a^1505^225:7
+@a^1506^267:8
+@a^1508^245:1,246:3,265:5
+@a^1512^245:3,246:1,265:6,266:1
+@a^1890^226:4,246:8
 @a^2240^309:1
 @a^2241^309:1,329:1
 @a^2248^108:6,109:3,128:7,129:10,149:1
@@ -1809,4 +1864,5 @@ GoldScout-export 6^18u8ijta5j4x^18
 @a^12921^251:3
 @a^268622^309:2
 @a^270094^190:1,231:1
+@a^271961^225:2
 @l^0^deDE
