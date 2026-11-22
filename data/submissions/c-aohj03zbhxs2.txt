@@ -1,4 +1,4 @@
-GoldScout-export 6^aohj03zbhxs2^14
+GoldScout-export 6^aohj03zbhxs2^15
 6^16^0^1^2^1429^0.4870^0.3654^16^Vermine kobold^159:1:1,755:5:5,1368:1:1,1372:1:1,1378:1:1,2589:5:5,2649:1:1,2650:1:1,2651:1:1,4536:1:1,247834:1:1,247839:1:1^
 30^1^0^6^6^1429^0.3764^0.7623^1^Araignée forestière^2590:1:1^
 38^20^0^3^4^1429^0.5369^0.4960^20^Nervi défias^159:2:2,752:12:12,1372:2:2,1377:1:1,2057:1:1,2070:2:2,2210:1:1,2589:4:4,2654:2:2^
@@ -19,6 +19,7 @@ GoldScout-export 6^aohj03zbhxs2^14
 475^18^0^5^6^1429^0.3945^0.8116^18^Tunnelier kobold^118:1:1,159:2:2,772:6:6,773:7:7,1181:1:1,1195:1:1,2589:7:9,2649:1:1,2651:1:1,3363:1:1,3365:1:1,248001:6:6^
 504^16^0^12^13^1436^0.3818^0.3532^16^Trappeuse défias^1511:1:1,2214:1:1,2455:1:1,2589:2:4^
 525^2^0^6^6^1429^0.5132^0.6441^2^Loup galeux^^
+691^19^0^36^37^1434^0.2088^0.2302^19^Elémentaire d'eau mineur^863:1:1,1706:9:9,4791:12:40,7070:1:1^
 732^1^0^10^10^1429^0.7633^0.8611^1^Rôdeur murloc^^
 832^2^0^18^19^1436^0.4770^0.4954^2^Diable de poussière^^
 880^1^0^8^8^1429^0.7085^0.8014^1^Erlan Drudgemoor^2070:1:1^
@@ -29,6 +30,10 @@ GoldScout-export 6^aohj03zbhxs2^14
 1540^9^0^10^11^1420^0.7881^0.3001^9^Avant-garde écarlate^2589:6:10^
 1660^2^0^8^8^1420^0.7942^0.2515^2^Garde du corps écarlate^159:1:1,2589:2:4^
 1665^1^0^12^12^1420^0.7942^0.2515^1^Capitaine Melrache^2589:1:2^
+2349^1^0^24^24^1424^0.2909^0.3208^1^Rampemousse géante^1081:1:1^
+2354^3^0^22^22^1424^0.4482^0.3665^3^Ours gris vicieux^3702:1:1,3730:1:1,11406:2:2^
+2356^1^0^26^26^1424^0.2911^0.3179^1^Vieil ours gris^3702:1:1,11406:1:1^
+2384^2^0^23^24^1424^0.4430^0.3957^2^Lion des montagnes affamé^3731:1:1,5136:1:1^
 2433^1^0^44^44^1424^0.5042^0.6246^1^Cadavre d'Helcular^4338:1:4,9887:1:1^
 2649^2^0^40^41^1425^0.2203^0.5723^2^Scalpeur Witherbark^1520:1:1,4306:1:1,4338:1:1,9259:2:2^
 2650^1^0^41^41^1425^0.2169^0.5676^1^Zélote Witherbark^9294:1:1^
@@ -183,6 +188,8 @@ GoldScout-export 6^aohj03zbhxs2^14
 @i^779^Coquillage luisant
 @i^818^Oeil de tigre
 @i^858^Potion de soins inférieure
+@i^863^Faucheuse sombre du sanglier
+@i^1081^Chair croustillante d'araignée
 @i^1180^Parchemin d'endurance
 @i^1181^Parchemin d'esprit
 @i^1195^Pelle de kobold
@@ -210,6 +217,7 @@ GoldScout-export 6^aohj03zbhxs2^14
 @i^1645^Jus de baie lunaire
 @i^1686^Moustache à poil dur
 @i^1688^Longue queue soyeuse
+@i^1706^Eclats de Profondazur
 @i^1707^Brie de Hurlevent
 @i^1708^Nectar sucré
 @i^1767^Gants en canevas
@@ -254,7 +262,10 @@ GoldScout-export 6^aohj03zbhxs2^14
 @i^3669^Bave gélatineuse
 @i^3670^Grand os visqueux
 @i^3676^Ichor visqueux
+@i^3702^Vésicule biliaire d'ours
 @i^3712^Viande de tortue
+@i^3730^Viande de grand ours
+@i^3731^Viande de lion
 @i^3771^Jarret de cochon sauvage
 @i^3778^Arc composite de sarcasme
 @i^3781^Claymore large
@@ -308,9 +319,11 @@ GoldScout-export 6^aohj03zbhxs2^14
 @i^4640^Signe de la Terre
 @i^4729^Mantelet de l'aurore
 @i^4784^Pierre morte
+@i^4791^Eau enchantée
 @i^4865^Peau détruite
 @i^5116^Longue plume de queue
 @i^5124^Petite dent de raptor
+@i^5136^Oreille de fourrure déchirée
 @i^5429^Un joli caillou
 @i^5431^Flasque vide
 @i^5523^Petite palourde spiralée
@@ -325,6 +338,7 @@ GoldScout-export 6^aohj03zbhxs2^14
 @i^6470^Ecaille de déviant
 @i^6471^Ecaille de déviant parfaite
 @i^7067^Terre élémentaire
+@i^7070^Eau élémentaire
 @i^7073^Croc brisé
 @i^7074^Griffes émoussées
 @i^7474^Cape régalienne de courroux de la nature
@@ -362,6 +376,7 @@ GoldScout-export 6^aohj03zbhxs2^14
 @i^9899^Bouclier jazeran d'hiérophante
 @i^9930^Gantelets de la brigade de la chouette
 @i^10410^Jambières du Croc
+@i^11406^Carcasse pourrie d'ours
 @i^11417^Aile douce
 @i^11418^Os creux d'aile
 @i^11998^Anneau fusant d'agilité
@@ -447,6 +462,8 @@ GoldScout-export 6^aohj03zbhxs2^14
 @q^779^0:15:0
 @q^818^2:7:1
 @q^858^1:0:0
+@q^863^2:2:0
+@q^1081^1:7:1
 @q^1180^1:0:0
 @q^1181^1:0:0
 @q^1195^1:2:0
@@ -474,6 +491,7 @@ GoldScout-export 6^aohj03zbhxs2^14
 @q^1645^1:0:0
 @q^1686^0:15:0
 @q^1688^0:15:0
+@q^1706^0:15:0
 @q^1707^1:0:0
 @q^1708^1:0:0
 @q^1767^0:4:0
@@ -518,7 +536,10 @@ GoldScout-export 6^aohj03zbhxs2^14
 @q^3669^0:15:0
 @q^3670^0:15:0
 @q^3676^0:15:0
+@q^3702^0:15:0
 @q^3712^1:7:1
+@q^3730^1:7:1
+@q^3731^1:7:1
 @q^3771^1:0:0
 @q^3778^0:2:0
 @q^3781^0:2:0
@@ -572,9 +593,11 @@ GoldScout-export 6^aohj03zbhxs2^14
 @q^4640^1:12:0
 @q^4729^2:4:0
 @q^4784^0:15:0
+@q^4791^1:0:0
 @q^4865^0:15:0
 @q^5116^1:7:1
 @q^5124^0:15:0
+@q^5136^0:15:0
 @q^5429^0:15:0
 @q^5431^0:15:0
 @q^5523^1:7:0
@@ -589,6 +612,7 @@ GoldScout-export 6^aohj03zbhxs2^14
 @q^6470^1:7:1
 @q^6471^1:7:1
 @q^7067^1:7:1
+@q^7070^1:7:1
 @q^7073^0:15:0
 @q^7074^0:15:0
 @q^7474^2:4:0
@@ -626,6 +650,7 @@ GoldScout-export 6^aohj03zbhxs2^14
 @q^9899^2:4:0
 @q^9930^2:4:0
 @q^10410^3:4:0
+@q^11406^0:15:0
 @q^11417^0:15:0
 @q^11418^0:15:0
 @q^11998^2:4:0
@@ -702,6 +727,7 @@ GoldScout-export 6^aohj03zbhxs2^14
 @m^1425^Les Hinterlands
 @m^1426^Dun Morogh
 @m^1429^Forêt d'Elwynn
+@m^1434^Vallée de Strangleronce
 @m^1436^Marche de l'Ouest
 @m^2548^Rives Claires
 @c^724^
@@ -1621,6 +1647,7 @@ GoldScout-export 6^aohj03zbhxs2^14
 @a^475^308:3,327:12,328:3
 @a^504^108:1,126:8,148:1,149:5,168:1
 @a^525^229:1,291:1
+@a^691^83:2,84:17
 @a^732^355:1
 @a^832^150:1,228:1
 @a^880^334:1
@@ -1631,6 +1658,10 @@ GoldScout-export 6^aohj03zbhxs2^14
 @a^1540^95:3,115:1,135:3,155:2
 @a^1660^115:2
 @a^1665^115:1
+@a^2349^125:1
+@a^2354^148:2,149:1
+@a^2356^125:1
+@a^2384^148:2
 @a^2433^250:1
 @a^2649^224:2
 @a^2650^224:1

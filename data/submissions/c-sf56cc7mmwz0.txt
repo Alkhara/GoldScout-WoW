@@ -1,4 +1,4 @@
-GoldScout-export 6^sf56cc7mmwz0^12
+GoldScout-export 6^sf56cc7mmwz0^14
 232^1^0^23^23^1424^0.3471^0.3501^1^Farmer Ray^2592:1:2^
 1501^8^0^1^1^1420^0.3139^0.6252^8^Mindless Zombie^1366:1:1,1378:1:1,1380:1:1,2589:2:2,2654:1:1,3363:1:1^
 1502^8^0^1^2^1420^0.3204^0.6163^8^Wretched Zombie^159:1:1,2589:3:3,2649:1:1,2650:1:1,4604:1:1^
@@ -47,7 +47,9 @@ GoldScout-export 6^sf56cc7mmwz0^12
 2449^1^0^25^25^1424^0.3296^0.4245^1^Citizen Wilkes^4306:1:1^
 2451^1^0^25^25^1424^0.3455^0.4603^1^Farmer Kalaba^1485:1:1^
 2503^1^0^27^28^1424^0.2985^0.5358^1^Hillsbrad Foreman^^
+3242^5^0^13^14^1413^0.5419^0.3449^5^Zhevra Runner^5086:4:4,15485:1:1^
 3244^11^0^11^12^1413^0.5350^0.2681^11^Greater Plainstrider^4775:1:1,5087:7:7,5469:2:2,17056:4:4^
+3255^1^0^14^14^1413^0.5451^0.3512^1^Sunscale Screecher^5062:1:1^
 3265^3^0^11^12^1413^0.5619^0.2574^3^Razormane Hunter^2589:2:3^
 3266^3^0^12^13^1413^0.5882^0.2631^3^Razormane Defender^818:1:1^
 3267^7^0^10^11^1413^0.5511^0.2646^7^Razormane Water Seeker^2589:4:8,4537:1:1,15010:1:1,15300:1:1,15481:1:1^
@@ -138,6 +140,8 @@ GoldScout-export 6^sf56cc7mmwz0^12
 @i^4708^Bright Belt
 @i^4775^Cracked Bill
 @i^4865^Ruined Pelt
+@i^5062^Raptor Head
+@i^5086^Zhevra Hooves
 @i^5087^Plainstrider Beak
 @i^5135^Thin Black Claw
 @i^5136^Torn Furry Ear
@@ -156,6 +160,7 @@ GoldScout-export 6^sf56cc7mmwz0^12
 @i^15010^Primal Wraps of Arcane Wrath
 @i^15300^Grizzly Gloves
 @i^15481^War Torn Greaves
+@i^15485^War Torn Pants of Spirit
 @i^16333^Samuel's Remains
 @i^17056^Light Feather
 @i^211780^Scroll: KWYJIBO
@@ -238,6 +243,8 @@ GoldScout-export 6^sf56cc7mmwz0^12
 @q^4708^2:4:0
 @q^4775^0:15:0
 @q^4865^0:15:0
+@q^5062^1:12:0
+@q^5086^1:12:0
 @q^5087^1:12:0
 @q^5135^0:15:0
 @q^5136^0:15:0
@@ -256,6 +263,7 @@ GoldScout-export 6^sf56cc7mmwz0^12
 @q^15010^2:4:0
 @q^15300^1:4:0
 @q^15481^1:4:0
+@q^15485^2:4:0
 @q^16333^1:12:0
 @q^17056^1:15:1
 @q^211780^1:0:0
@@ -1110,7 +1118,9 @@ GoldScout-export 6^sf56cc7mmwz0^12
 @a^2449^166:1
 @a^2451^186:1
 @a^2503^205:1
+@a^3242^130:4,150:1
 @a^3244^91:3,110:8
+@a^3255^150:1
 @a^3265^91:1,110:1,111:1
 @a^3266^111:3
 @a^3267^110:3,111:4

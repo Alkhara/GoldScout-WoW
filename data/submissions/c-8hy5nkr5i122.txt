@@ -1,4 +1,4 @@
-GoldScout-export 6^8hy5nkr5i122^9
+GoldScout-export 6^8hy5nkr5i122^10
 412^1^0^35^35^1431^0.5751^0.6644^1^Stitches^3360:1:1,3781:1:1^
 681^1^0^30^30^1434^0.3660^0.1192^1^Young Stranglethorn Tiger^^
 682^1^0^32^33^1434^0.2939^0.1042^1^Stranglethorn Tiger^1686:1:1^
@@ -29,8 +29,14 @@ GoldScout-export 6^8hy5nkr5i122^9
 2557^1^0^36^36^1417^0.6738^0.7829^1^Witherbark Shadow Hunter^5040:1:1,9854:1:1^
 2566^4^0^35^36^1417^0.5463^0.7940^4^Boulderfist Brute^4306:3:5^
 2567^2^0^36^37^1417^0.5439^0.7944^2^Boulderfist Magus^4306:2:5^
+2588^14^0^36^37^1417^0.2604^0.6299^14^Syndicate Prowler^1707:1:1,3864:1:1,4306:4:10,4338:2:5,4506:2:3,6986:1:1,7448:1:1^
+2590^1^0^35^36^1417^0.2556^0.6514^1^Syndicate Conjuror^3794:1:1,6986:1:1^
+2591^3^0^37^38^1417^0.2787^0.6279^3^Syndicate Magus^4306:1:1,4506:2:3^
+2597^1^0^40^40^1417^0.2619^0.6545^1^Lord Falconcrest^4517:1:1^
+2599^2^0^38^38^1417^0.2612^0.6499^2^Otto^4306:1:4,4516:1:1^
 2731^1^0^36^36^1418^0.4438^0.4020^1^Ridge Stalker^^
 2732^1^0^38^39^1418^0.5058^0.5564^1^Ridge Huntress^12202:1:1^
+2783^2^0^40^40^1417^0.2689^0.6163^2^Marez Cowl^4515:1:1,9892:1:1^
 2793^1^0^39^39^1417^0.5462^0.8133^1^Kor'gresh Coldrage^4338:1:1,4525:1:1^
 2893^12^0^39^40^1418^0.5172^0.6533^12^Stonevault Bonesnapper^4306:2:4,211269:1:1,251461:1:1^
 2894^1^0^40^40^1418^0.5108^0.6756^1^Stonevault Shaman^^
@@ -172,6 +178,7 @@ GoldScout-export 6^8hy5nkr5i122^9
 @i^3809^Double Mail Boots
 @i^3817^Reinforced Buckler
 @i^3827^Mana Potion
+@i^3864^Citrine
 @i^3874^Plans: Polished Steel Boots
 @i^3876^Fang of Bhag'thera
 @i^3879^Paw of Sin'Dall
@@ -186,6 +193,10 @@ GoldScout-export 6^8hy5nkr5i122^9
 @i^4419^Scroll of Intellect III
 @i^4461^Raptor Hide
 @i^4503^Witherbark Tusk
+@i^4506^Stromgarde Badge
+@i^4515^Marez's Head
+@i^4516^Otto's Head
+@i^4517^Falconcrest's Head
 @i^4522^Witherbark Medicine Pouch
 @i^4525^Trelane's Wand of Invocation
 @i^4553^Jagged Piece of Stone
@@ -226,6 +237,7 @@ GoldScout-export 6^8hy5nkr5i122^9
 @i^7407^Infiltrator Armor of the Falcon
 @i^7422^Phalanx Girdle of Power
 @i^7434^Twilight Boots of the Hierophant
+@i^7448^Sentinel Girdle of Strength
 @i^7609^Elder's Amber Stave of Spirit
 @i^7683^Bloody Brass Knuckles
 @i^7710^Loksey's Training Stick
@@ -245,6 +257,7 @@ GoldScout-export 6^8hy5nkr5i122^9
 @i^9873^Renegade Shield of the Falcon
 @i^9875^Sorcerer Sash of the Owl
 @i^9889^Huntsman's Cap of the Whale
+@i^9892^Huntsman's Gloves of Fire Protection
 @i^9901^Jazeraint Belt of the Tiger
 @i^10329^Scarlet Belt
 @i^11416^Delicate Ribcage
@@ -339,6 +352,7 @@ GoldScout-export 6^8hy5nkr5i122^9
 @q^3809^0:4:0
 @q^3817^0:4:0
 @q^3827^1:0:0
+@q^3864^2:7:1
 @q^3874^2:9:0
 @q^3876^1:12:0
 @q^3879^1:12:0
@@ -353,6 +367,10 @@ GoldScout-export 6^8hy5nkr5i122^9
 @q^4419^1:0:0
 @q^4461^1:7:1
 @q^4503^1:12:0
+@q^4506^1:12:0
+@q^4515^1:12:0
+@q^4516^1:12:0
+@q^4517^1:12:0
 @q^4522^1:12:0
 @q^4525^1:12:0
 @q^4553^0:15:0
@@ -393,6 +411,7 @@ GoldScout-export 6^8hy5nkr5i122^9
 @q^7407^2:4:0
 @q^7422^2:4:0
 @q^7434^2:4:0
+@q^7448^2:4:0
 @q^7609^2:4:0
 @q^7683^3:2:0
 @q^7710^3:2:0
@@ -412,6 +431,7 @@ GoldScout-export 6^8hy5nkr5i122^9
 @q^9873^2:4:0
 @q^9875^2:4:0
 @q^9889^2:4:0
+@q^9892^2:4:0
 @q^9901^2:4:0
 @q^10329^3:4:0
 @q^11416^0:15:0
@@ -502,8 +522,14 @@ GoldScout-export 6^8hy5nkr5i122^9
 @a^2557^313:1
 @a^2566^310:3,330:1
 @a^2567^310:1,330:1
+@a^2588^225:1,245:11,265:2
+@a^2590^265:1
+@a^2591^245:2,265:1
+@a^2597^265:1
+@a^2599^245:1,265:1
 @a^2731^168:1
 @a^2732^230:1
+@a^2783^245:2
 @a^2793^330:1
 @a^2893^250:5,270:7
 @a^2894^270:1

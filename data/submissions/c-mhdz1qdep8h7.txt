@@ -1,4 +1,4 @@
-GoldScout-export 6^mhdz1qdep8h7^21
+GoldScout-export 6^mhdz1qdep8h7^22
 1783^15^0^50^51^1422^0.3701^0.5683^15^Ecorcheur Squelette^8948:1:1,12840:4:4,13446:1:1,14047:7:10,14619:4:4^
 1784^15^0^51^52^1422^0.3711^0.5621^15^Ensorceleur Squelette^7910:1:1,12840:4:4,14047:3:3,14619:6:6^
 1785^1^0^52^53^1422^0.4777^0.5074^1^Terreur Squelette^^
@@ -20,6 +20,7 @@ GoldScout-export 6^mhdz1qdep8h7^21
 1831^3^0^52^52^1422^0.4062^0.5279^3^Chasseur écarlate^^
 1833^10^0^54^55^1422^0.5032^0.4046^10^Chevalier écarlate^8766:1:1,13443:1:1,14047:3:5^
 1835^2^0^53^54^1422^0.4023^0.5265^2^Conjureur écarlate^^
+3560^15^0^56^57^2482^0.3189^0.7119^15^Gardien Guérisseur^^
 4472^4^0^57^58^1422^0.6201^0.5903^4^Vision cauchemardesque^12841:2:2,14047:2:6^
 4474^3^0^53^54^1422^0.4745^0.5079^3^Cadavre pourrissant^12840:1:1,14047:1:1^
 4475^3^0^52^53^1422^0.4739^0.5106^3^Zombie corrompu^6530:1:1^
@@ -175,6 +176,14 @@ GoldScout-export 6^mhdz1qdep8h7^21
 248395^24^0^55^56^2482^0.6414^0.7138^24^Massif corrompu^2447:1:1,2452:1:1,3994:1:1,8766:1:1,10286:3:3,12803:1:1,13444:1:1,13820:1:1,247892:12:12,256036:1:1^
 248709^1^0^56^56^2482^0.6402^0.7516^1^Fracécorce^^
 249051^1^0^57^57^2482^0.6568^0.7432^1^Celastrus l'Amer^282028:1:1^
+249053^6^0^56^57^2482^0.2885^0.7467^6^Chouette d'Hyjal^5636:2:2,11420:1:1,12207:3:3,15420:5:10,253341:2:2,262890:1:1^
+249228^4^0^57^58^2482^0.2500^0.5486^4^Vorace écorcheur^6530:2:2,14047:4:9^
+249237^1^0^57^57^2482^0.2695^0.5765^1^Factionnaire éternel^6530:1:1,273322:1:2^
+249247^3^0^57^58^2482^0.2112^0.5804^3^Soldat oublié^6530:1:1,8948:1:1,14047:2:6^
+252063^14^0^56^57^2482^0.3067^0.7091^14^Garde-tanière mort-bois^8766:1:1,13446:1:1,14047:10:21,263439:10:10^
+252096^6^0^56^57^2482^0.3640^0.6891^6^Soigne-gangrène mort-bois^13444:1:1,13446:1:1,14047:4:6,263439:5:5^
+252116^14^0^56^57^2482^0.3319^0.7099^14^Totémique mort-bois^3997:1:1,8952:1:1,14047:3:5,263439:6:6^
+260148^1^0^60^60^2482^0.2735^0.5745^1^Réanimateur du Fléau^13446:1:1,268573:1:1^
 260422^21^0^56^57^2482^0.4899^0.7399^21^Acolyte des cendres^3914:1:1,8952:2:2,10305:1:1,13446:1:1,14047:9:19,274396:12:12^
 260440^1^0^58^58^2482^0.4948^0.6960^1^Brashann Mornesombre^13822:1:1^
 260443^1^0^58^58^2482^0.4445^0.6821^1^Dazka Noirsommeil^273292:1:1^
@@ -205,6 +214,7 @@ GoldScout-export 6^mhdz1qdep8h7^21
 @i^3973^Gants en cuir lisse
 @i^3986^Pavois protecteur
 @i^3994^Brassards en écailles laminées
+@i^3997^Pantalon en écailles laminées
 @i^4024^Bâton de guerre lourd
 @i^4096^Poil de gorille grossier
 @i^4099^Touffe de poils de gorille
@@ -236,6 +246,7 @@ GoldScout-export 6^mhdz1qdep8h7^21
 @i^5471^Viande de cerf
 @i^5566^Ramure brisée
 @i^5569^Algue
+@i^5636^Plume délicate
 @i^5758^Coffret en mithril
 @i^5829^Bec acéré
 @i^6212^Tête de Jammal'an
@@ -291,6 +302,7 @@ GoldScout-export 6^mhdz1qdep8h7^21
 @i^11411^Grand os d'ours
 @i^11417^Aile douce
 @i^11418^Os creux d'aile
+@i^11420^Outil élégant d'écriture
 @i^11476^Peau d'U'cha
 @i^11477^Griffe blanche de ravasaure
 @i^11478^Peau de gorille d'Un'Goro
@@ -367,12 +379,16 @@ GoldScout-export 6^mhdz1qdep8h7^21
 @i^252885^Patron : brassards ouvragés en cuir
 @i^252918^Patron : gantelets de traqueur en mailles
 @i^252919^Patron : gantelets de mande-ciel en mailles
+@i^253341^Plume de chouette d'Hyjal
 @i^256036^Poignée de poussière
 @i^262890^Commission d'artisan scellée
+@i^263439^Perles tribales mort-bois
+@i^268573^Amulette de réanimation
 @i^273008^Limon de gelée gangrenée
 @i^273290^Ossements de Frezzlie Popsiffle
 @i^273291^Ossements de Tyaeha Noirserment
 @i^273292^Ossements de Dazka Noirsommeil
+@i^273322^Œil guetteur
 @i^274396^Notes d'expérience sur les cendres gangrenées
 @i^277958^Organes d'ours putrides
 @i^277959^Organes de loup putrides
@@ -402,6 +418,7 @@ GoldScout-export 6^mhdz1qdep8h7^21
 @q^3973^0:4:0
 @q^3986^0:4:0
 @q^3994^0:4:0
+@q^3997^0:4:0
 @q^4024^0:2:0
 @q^4096^1:15:0
 @q^4099^0:15:0
@@ -433,6 +450,7 @@ GoldScout-export 6^mhdz1qdep8h7^21
 @q^5471^1:7:1
 @q^5566^0:15:0
 @q^5569^0:15:0
+@q^5636^0:15:0
 @q^5758^2:15:0
 @q^5829^0:15:0
 @q^6212^1:12:0
@@ -488,6 +506,7 @@ GoldScout-export 6^mhdz1qdep8h7^21
 @q^11411^0:2:0
 @q^11417^0:15:0
 @q^11418^0:15:0
+@q^11420^0:15:0
 @q^11476^1:12:0
 @q^11477^1:12:0
 @q^11478^1:12:0
@@ -564,12 +583,16 @@ GoldScout-export 6^mhdz1qdep8h7^21
 @q^252885^2:9:0
 @q^252918^3:9:0
 @q^252919^3:9:0
+@q^253341^1:12:0
 @q^256036^0:15:0
 @q^262890^3:0:0
+@q^263439^1:12:0
+@q^268573^1:12:0
 @q^273008^1:12:0
 @q^273290^1:12:0
 @q^273291^1:12:0
 @q^273292^1:12:0
+@q^273322^1:12:0
 @q^274396^1:12:0
 @q^277958^1:12:0
 @q^277959^1:12:0
@@ -877,6 +900,7 @@ GoldScout-export 6^mhdz1qdep8h7^21
 @a^1831^208:3
 @a^1833^129:1,150:1,169:3,170:5
 @a^1835^208:2
+@a^3560^264:1,266:3,267:2,285:3,286:4,306:2
 @a^4472^232:4
 @a^4474^189:1,209:2
 @a^4475^189:1,209:2
@@ -1006,6 +1030,14 @@ GoldScout-export 6^mhdz1qdep8h7^21
 @a^248395^272:8,273:2,291:2,292:1,293:3,294:4,311:4
 @a^248709^312:1
 @a^249051^293:1
+@a^249053^263:1,264:1,285:1,307:2,326:1
+@a^249228^205:2,224:1,225:1
+@a^249237^225:1
+@a^249247^224:2,243:1
+@a^252063^244:1,264:3,266:1,267:2,285:1,286:4,287:1,326:1
+@a^252096^266:2,267:2,287:2
+@a^252116^266:3,267:4,285:3,286:3,287:1
+@a^260148^225:1
 @a^260422^269:2,289:6,290:4,309:6,310:3
 @a^260440^269:1
 @a^260443^268:1
