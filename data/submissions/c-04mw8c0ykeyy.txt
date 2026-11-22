@@ -1,4 +1,4 @@
-GoldScout-export 6^04mw8c0ykeyy^14
+GoldScout-export 6^04mw8c0ykeyy^15
 36^3^0^11^12^1436^0.5134^0.3308^3^Harvest Golem^732:1:1,1274:2:2,1497:1:1,4359:1:1,255007:2:2,255010:1:1^
 95^28^0^11^12^1436^0.4708^0.2794^28^Defias Smuggler^414:1:1,829:7:7,858:1:1,2455:1:1,2589:9:15,211786:1:1^
 114^31^0^14^15^1436^0.4990^0.2642^31^Harvest Watcher^732:13:13,814:6:6,1274:4:4,1512:1:1,2632:1:1,3375:1:1,3645:1:1,4361:1:1,4570:1:1,211786:2:2,255007:7:7,255010:4:4^
@@ -27,9 +27,11 @@ GoldScout-export 6^04mw8c0ykeyy^14
 550^1^0^14^14^1436^0.4422^0.6348^1^Defias Messenger^1381:1:1^
 589^10^0^14^15^1436^0.3995^0.6270^10^Defias Pillager^2214:1:1,2589:3:8,2777:1:1^
 590^10^0^13^14^1436^0.3642^0.5869^10^Defias Looter^858:1:1,1495:1:1,1504:1:1,2589:2:5,2763:1:1^
-705^11^0^1^1^1426^0.2980^0.7407^11^Ragged Young Wolf^750:7:7,1366:1:1,2654:1:1,4865:3:3,7073:3:3,7074:2:2^
-707^2^0^1^2^1426^0.2879^0.7645^2^Rockjaw Trogg^117:1:1^
-708^4^0^3^3^1426^0.2190^0.7159^4^Small Crag Boar^117:2:2,2649:1:1,7098:3:3^
+704^1^0^2^2^1426^0.2673^0.7868^1^Ragged Timber Wolf^7073:1:1^
+705^14^0^1^1^1426^0.2981^0.7445^14^Ragged Young Wolf^750:7:7,1366:1:1,2650:1:1,2654:1:1,4865:4:4,7073:5:5,7074:3:3^
+706^6^0^3^4^1426^0.2647^0.7912^6^Frostmane Troll Whelp^117:1:1,1369:1:1,2210:1:1,2589:2:2,264356:2:2^
+707^4^0^1^2^1426^0.2965^0.7564^4^Rockjaw Trogg^117:1:1,2589:1:1,2654:1:1^
+708^9^0^3^3^1426^0.2242^0.7119^9^Small Crag Boar^117:5:5,2649:1:1,2651:1:1,4865:2:2,7098:4:4^
 724^6^0^2^2^1426^0.2608^0.7310^6^Burly Rockjaw Trogg^117:1:1,2211:1:1,2589:2:2^
 822^1^0^9^9^1429^0.5303^0.8387^1^Young Forest Bear^4865:1:1^
 830^1^0^13^14^1436^0.5134^0.0969^1^Sand Crawler^5523:1:1^
@@ -87,6 +89,7 @@ GoldScout-export 6^04mw8c0ykeyy^14
 @i^1181^Scroll of Spirit
 @i^1274^Hops
 @i^1366^Ragged Leather Pants
+@i^1369^Ragged Leather Belt
 @i^1381^A Mysterious Message
 @i^1467^Spotted Sunfish
 @i^1495^Calico Shoes
@@ -97,6 +100,7 @@ GoldScout-export 6^04mw8c0ykeyy^14
 @i^1512^Crude Battle Axe
 @i^1794^Patched Leather Jerkin
 @i^1813^Chipped Quarterstaff
+@i^2210^Battered Buckler
 @i^2211^Bent Large Shield
 @i^2214^Wooden Buckler
 @i^2251^Gooey Spider Leg
@@ -107,6 +111,8 @@ GoldScout-export 6^04mw8c0ykeyy^14
 @i^2608^Threshadon Ambergris
 @i^2632^Curved Dagger of Agility
 @i^2649^Flimsy Chain Belt
+@i^2650^Flimsy Chain Boots
+@i^2651^Flimsy Chain Bracers
 @i^2654^Flimsy Chain Pants
 @i^2673^Coyote Meat
 @i^2675^Crawler Claw
@@ -173,6 +179,7 @@ GoldScout-export 6^04mw8c0ykeyy^14
 @i^254548^Longshore Murloc Gill
 @i^255007^Golem Isospring
 @i^255010^Harvester Gyrostabilizer
+@i^264356^Iceclaw Bear Pendant
 @q^117^1:0:0
 @q^414^1:0:0
 @q^537^0:15:0
@@ -193,6 +200,7 @@ GoldScout-export 6^04mw8c0ykeyy^14
 @q^1181^1:0:0
 @q^1274^1:12:0
 @q^1366^0:4:0
+@q^1369^0:4:0
 @q^1381^1:12:0
 @q^1467^1:12:0
 @q^1495^0:4:0
@@ -203,6 +211,7 @@ GoldScout-export 6^04mw8c0ykeyy^14
 @q^1512^0:2:0
 @q^1794^0:4:0
 @q^1813^0:2:0
+@q^2210^0:4:0
 @q^2211^0:4:0
 @q^2214^0:4:0
 @q^2251^1:7:1
@@ -213,6 +222,8 @@ GoldScout-export 6^04mw8c0ykeyy^14
 @q^2608^0:15:0
 @q^2632^2:2:0
 @q^2649^0:4:0
+@q^2650^0:4:0
+@q^2651^0:4:0
 @q^2654^0:4:0
 @q^2673^1:7:1
 @q^2675^1:7:1
@@ -279,6 +290,7 @@ GoldScout-export 6^04mw8c0ykeyy^14
 @q^254548^1:12:0
 @q^255007^1:7:1
 @q^255010^1:12:0
+@q^264356^1:12:0
 @m^1413^The Barrens
 @m^1414^Kalimdor
 @m^1426^Dun Morogh
@@ -500,9 +512,11 @@ GoldScout-export 6^04mw8c0ykeyy^14
 @a^550^248:1
 @a^589^186:1,207:2,227:1,268:5,288:1
 @a^590^185:2,186:1,207:1,226:1,227:1,268:4
-@a^705^285:7,286:4
-@a^707^305:2
-@a^708^284:4
+@a^704^305:1
+@a^705^285:7,286:5,305:2
+@a^706^305:5,325:1
+@a^707^286:1,305:2,306:1
+@a^708^284:8,285:1
 @a^724^284:1,285:5
 @a^822^330:1
 @a^830^30:1

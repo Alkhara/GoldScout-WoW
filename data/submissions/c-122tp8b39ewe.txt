@@ -1,8 +1,9 @@
-GoldScout-export 6^122tp8b39ewe^11
+GoldScout-export 6^122tp8b39ewe^12
 5260^1^0^42^42^1444^0.5778^0.5858^1^Groddoc Ape^2799:1:1,4096:1:1^
 5262^6^0^49^50^1444^0.4352^0.2346^6^Groddoc Thunderer^2799:3:3,4096:4:4,4099:1:1,6259:3:3^
 5268^5^0^41^42^1444^0.7050^0.4372^5^Ironfur Bear^6258:3:3,8146:1:1,11408:2:2,11410:1:1^
-5419^1^0^42^42^1446^0.3674^0.2816^1^Glasshide Basilisk^15370:1:1,248710:1:1^
+5419^1^0^42^43^1446^0.3674^0.2816^1^Glasshide Basilisk^15370:1:1,248710:1:1^
+5429^12^0^43^45^1446^0.4452^0.3931^12^Fire Roc^1464:4:4,3404:4:4,5829:3:3,6257:3:3,11417:2:2,11418:5:5,12207:4:4^
 6116^7^0^45^46^1447^0.1638^0.7102^7^Highborne Apparition^1645:1:1,4024:1:1,4338:2:4^
 6117^2^0^46^47^1447^0.1564^0.7317^2^Highborne Lichling^4338:1:1^
 6125^8^0^45^46^1447^0.1987^0.6203^8^Haldarr Satyr^4338:3:4,4599:1:1^
@@ -51,10 +52,12 @@ GoldScout-export 6^122tp8b39ewe^11
 256236^1^0^0^0^0^0.0000^0.0000^0^^274029:1:1,276743:1:1^
 271784^1^0^0^0^0^0.0000^0.0000^0^^^
 272374^1^0^54^54^1447^0.5614^0.7240^1^Enormous Crustacean^3010:1:1,7973:1:1,12206:1:1^
+@i^1464^Buzzard Talon
 @i^1645^Moonberry Juice
 @i^2449^Earthroot
 @i^2799^Gorilla Fang
 @i^3010^Fine Sand
+@i^3404^Buzzard Wing
 @i^3671^Lifeless Skull
 @i^3676^Slimy Ichor
 @i^3964^Thick Cloak
@@ -76,6 +79,8 @@ GoldScout-export 6^122tp8b39ewe^11
 @i^5471^Stag Meat
 @i^5566^Broken Antler
 @i^5569^Seaweed
+@i^5829^Razor-sharp Beak
+@i^6257^Roc Gizzard
 @i^6258^Ironfur Liver
 @i^6259^Groddoc Liver
 @i^7973^Big-mouth Clam
@@ -88,10 +93,13 @@ GoldScout-export 6^122tp8b39ewe^11
 @i^11316^Bloodpetal
 @i^11408^Bear Jaw
 @i^11410^Savage Bear Claw
+@i^11417^Feathery Wing
+@i^11418^Hollow Wing Bone
 @i^11420^Elegant Writing Tool
 @i^11829^Un'Goro Ash
 @i^12205^White Spider Meat
 @i^12206^Tender Crab Meat
+@i^12207^Giant Egg
 @i^13443^Superior Mana Potion
 @i^14047^Runecloth
 @i^14274^Gaea's Leggings of the Eagle
@@ -113,10 +121,12 @@ GoldScout-export 6^122tp8b39ewe^11
 @i^276743^Fingerbreaker Stamp
 @i^276890^Zarla's Journal
 @i^280608^Eldarath Relic
+@q^1464^0:15:0
 @q^1645^1:0:0
 @q^2449^1:7:1
 @q^2799^1:12:0
 @q^3010^0:15:0
+@q^3404^1:7:1
 @q^3671^0:15:0
 @q^3676^0:15:0
 @q^3964^0:4:0
@@ -138,6 +148,8 @@ GoldScout-export 6^122tp8b39ewe^11
 @q^5471^1:7:1
 @q^5566^0:15:0
 @q^5569^0:15:0
+@q^5829^0:15:0
+@q^6257^1:12:0
 @q^6258^1:12:0
 @q^6259^1:12:0
 @q^7973^1:7:0
@@ -150,10 +162,13 @@ GoldScout-export 6^122tp8b39ewe^11
 @q^11316^1:12:0
 @q^11408^0:15:0
 @q^11410^0:15:0
+@q^11417^0:15:0
+@q^11418^0:15:0
 @q^11420^0:15:0
 @q^11829^1:12:0
 @q^12205^1:7:1
 @q^12206^1:7:1
+@q^12207^1:7:1
 @q^13443^1:0:0
 @q^14047^1:7:1
 @q^14274^2:4:0
@@ -639,6 +654,7 @@ GoldScout-export 6^122tp8b39ewe^11
 @a^5262^88:5,89:1
 @a^5268^174:4,194:1
 @a^5419^107:1
+@a^5429^148:5,149:4,168:3
 @a^6116^263:2,282:1,283:4
 @a^6117^282:1,283:1
 @a^6125^243:5,244:3

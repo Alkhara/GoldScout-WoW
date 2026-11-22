@@ -1,4 +1,4 @@
-GoldScout-export 6^beaxopzua781^27
+GoldScout-export 6^beaxopzua781^28
 30^2^0^5^6^1429^0.3900^0.7698^2^Forest Spider^1476:1:1,2590:1:1,5465:2:4^
 36^1^0^11^12^1436^0.3288^0.3477^1^Harvest Golem^732:1:1^
 113^2^0^5^6^1429^0.4135^0.7546^2^Stonetusk Boar^769:1:1,3171:1:1^
@@ -25,6 +25,7 @@ GoldScout-export 6^beaxopzua781^27
 683^1^0^30^31^1434^0.3981^0.0814^1^Young Panther^1686:1:1^
 685^5^0^33^34^1434^0.2755^0.1549^5^Stranglethorn Raptor^3685:1:1,4461:4:4,4586:2:2,5637:1:1,12184:2:2^
 686^2^0^35^36^1434^0.3216^0.2211^2^Lashtail Raptor^1696:1:1,3685:2:2,4461:2:2^
+689^11^0^34^35^1434^0.2539^0.1834^11^Crystal Spine Basilisk^1701:5:5,1702:2:2,1703:5:5,3918:3:3,4093:2:2,5637:2:2^
 694^2^0^33^33^1434^0.2929^0.1934^2^Bloodscalp Axe Thrower^15213:1:1^
 697^2^0^33^34^1434^0.3212^0.1787^2^Bloodscalp Shaman^1519:2:2^
 699^3^0^34^35^1434^0.2637^0.1220^3^Bloodscalp Beastmaster^1519:1:1,4306:1:2^
@@ -63,6 +64,7 @@ GoldScout-export 6^beaxopzua781^27
 1057^2^0^27^28^1437^0.5084^0.5121^2^Dragonmaw Bonewarder^7090:1:1^
 1069^1^0^25^25^1437^0.5921^0.3728^1^Crimson Whelp^^
 1085^3^0^34^35^1434^0.3223^0.1559^3^Elder Stranglethorn Tiger^1686:1:1,12202:1:1,262889:1:1^
+1096^1^0^36^36^1434^0.2741^0.0796^1^Venture Co. Geologist^2289:1:1,4106:1:1,4306:1:2^
 1109^1^0^13^14^1436^0.5540^0.5942^1^Fleshripper^555:1:1^
 1150^11^0^30^31^1434^0.3611^0.1020^11^River Crocolisk^770:2:2,3667:5:5,4053:1:1,4071:1:1,12037:6:6^
 1211^1^0^8^8^1415^0.4373^0.5391^1^Leper Gnome^^
@@ -256,6 +258,9 @@ GoldScout-export 6^beaxopzua781^27
 @i^1686^Bristly Whisker
 @i^1696^Curved Raptor Talon
 @i^1697^Keen Raptor Tooth
+@i^1701^Curved Basilisk Claw
+@i^1702^Intact Basilisk Spine
+@i^1703^Crystal Basilisk Spine
 @i^1705^Lesser Moonstone
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
@@ -299,6 +304,7 @@ GoldScout-export 6^beaxopzua781^27
 @i^2221^Targe Shield
 @i^2251^Gooey Spider Leg
 @i^2287^Haunch of Meat
+@i^2289^Scroll of Strength II
 @i^2290^Scroll of Intellect II
 @i^2452^Swiftthistle
 @i^2455^Minor Mana Potion
@@ -374,8 +380,11 @@ GoldScout-export 6^beaxopzua781^27
 @i^3820^Stranglekelp
 @i^3827^Mana Potion
 @i^3867^Plans: Golden Iron Destroyer
+@i^3918^Singing Crystal Shard
 @i^4053^Large River Crocolisk Skin
 @i^4071^Glimmering Mail Breastplate
+@i^4093^Large Basilisk Tail
+@i^4106^Tumbled Crystal
 @i^4294^Pattern: Hillman's Belt
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
@@ -587,6 +596,9 @@ GoldScout-export 6^beaxopzua781^27
 @q^1686^0:15:0
 @q^1696^0:15:0
 @q^1697^0:15:0
+@q^1701^0:15:0
+@q^1702^0:15:0
+@q^1703^1:0:0
 @q^1705^2:7:1
 @q^1707^1:0:0
 @q^1708^1:0:0
@@ -630,6 +642,7 @@ GoldScout-export 6^beaxopzua781^27
 @q^2221^0:4:0
 @q^2251^1:7:1
 @q^2287^1:0:0
+@q^2289^1:0:0
 @q^2290^1:0:0
 @q^2452^1:7:1
 @q^2455^1:0:0
@@ -705,8 +718,11 @@ GoldScout-export 6^beaxopzua781^27
 @q^3820^1:7:1
 @q^3827^1:0:0
 @q^3867^2:9:0
+@q^3918^1:12:0
 @q^4053^1:12:0
 @q^4071^2:4:0
+@q^4093^0:15:0
+@q^4106^1:12:0
 @q^4294^2:9:0
 @q^4306^1:7:1
 @q^4338^1:7:1
@@ -2212,6 +2228,7 @@ GoldScout-export 6^beaxopzua781^27
 @a^683^27:1
 @a^685^45:2,65:3
 @a^686^86:2
+@a^689^64:4,65:7
 @a^694^65:2
 @a^697^65:1,66:1
 @a^699^44:1,45:2
@@ -2250,6 +2267,7 @@ GoldScout-export 6^beaxopzua781^27
 @a^1057^210:2
 @a^1069^151:1
 @a^1085^46:1,66:2
+@a^1096^25:1
 @a^1109^231:1
 @a^1150^26:2,27:2,46:3,47:2,48:2
 @a^1211^208:1
