@@ -1,4 +1,8 @@
-GoldScout-export 6^do59bgd8a778^4
+GoldScout-export 6^do59bgd8a778^6
+1501^11^0^1^1^1420^0.3156^0.6370^11^Hirnloser Zombie^1366:1:1,1372:1:1,2210:1:1,2589:1:1,2649:1:1,3363:2:2,4604:1:1^
+1502^7^0^1^2^1420^0.3136^0.6313^7^Elender Zombie^159:2:2,2589:3:3,2654:1:1,2656:1:1^
+1508^4^0^1^1^1420^0.3009^0.6434^4^Junger Aasfresser^2650:1:1,3265:2:2,4865:1:1,7073:1:1,7074:3:3^
+1512^9^0^1^2^1420^0.2969^0.6469^9^Nachtsauger^1367:1:1,1377:1:1,2650:1:1,3264:6:6,4865:3:3,7073:4:4,7074:2:2^
 2244^13^0^21^22^1424^0.7331^0.4436^13^Schattenmagier des Syndikats^1820:1:1,2589:1:2,2592:2:4,4306:1:1,5620:5:5,12053:1:1^
 2260^12^0^21^22^1424^0.6823^0.4682^12^Schurke des Syndikats^1772:1:1,1820:1:1,1824:1:1,2592:3:4,4306:1:1,5207:1:1^
 2261^21^0^20^21^1424^0.7296^0.4518^21^Wachmann des Syndikats^422:2:2,954:1:1,1205:1:1,1812:1:1,2592:5:8^
@@ -48,6 +52,7 @@ GoldScout-export 6^do59bgd8a778^4
 10882^1^0^28^28^1441^0.3769^0.3491^1^Arikara^12925:1:1^
 10896^8^0^29^29^1441^0.3831^0.2719^8^Arnak Grimmtotem^3385:1:1,3770:2:2,4306:3:5,12884:1:1^
 11577^1^0^35^37^1443^0.5304^0.4496^1^Wirbelsturmgänger^^
+@i^159^Erfrischendes Quellwasser
 @i^422^Zwergenmild
 @i^729^Sehniges Geierfleisch
 @i^878^Faustgroße Spinndrüse
@@ -58,6 +63,10 @@ GoldScout-export 6^do59bgd8a778^4
 @i^1205^Melonensaft
 @i^1206^Moosachat
 @i^1288^Großer Giftbeutel
+@i^1366^Struppige Lederhose
+@i^1367^Struppige Lederstiefel
+@i^1372^Struppiger Umhang
+@i^1377^Ausgefranste Handschuhe
 @i^1464^Bussardkralle
 @i^1529^Jade
 @i^1701^Geschwungene Basiliskenklaue
@@ -70,12 +79,20 @@ GoldScout-export 6^do59bgd8a778^4
 @i^1820^Hölzerner Schlägel
 @i^1824^Glänzende Kriegsaxt
 @i^1828^Steinkriegsaxt
+@i^2210^Ramponierter Rundschild
 @i^2251^Klebriges Spinnenbein
 @i^2589^Leinenstoff
 @i^2592^Wollstoff
+@i^2649^Sehr leichter Kettengürtel
+@i^2650^Sehr leichte Kettenstiefel
+@i^2654^Sehr leichte Kettenhose
+@i^2656^Sehr leichte Kettenweste
 @i^2940^Blutige Bärentatze
 @i^3182^Spinnenseide
+@i^3264^Nachtsaugerflügel
+@i^3265^Aasfressertatze
 @i^3301^Scharfer Eckzahn
+@i^3363^Ausgefranster Gürtel
 @i^3385^Geringer Manatrank
 @i^3399^Geierkralle
 @i^3402^Weicher Fellflicken
@@ -91,8 +108,10 @@ GoldScout-export 6^do59bgd8a778^4
 @i^4428^Spinnentaster
 @i^4555^Dicker geschuppter Schwanz
 @i^4556^Getupftes Muschelschalenfragment
+@i^4604^Waldpilzkappe
 @i^4636^Starke Eisenschließkassette
 @i^4784^Lebloser Stein
+@i^4865^Verdorbener Pelz
 @i^5114^Abgespaltene Kralle
 @i^5115^Zerbrochenes Gabelbein
 @i^5116^Lange Schwanzfeder
@@ -110,6 +129,8 @@ GoldScout-export 6^do59bgd8a778^4
 @i^5844^Fragmente von Rok'Alim
 @i^5848^Hohler Geierknochen
 @i^6308^Roher Stoppelfühlerwels
+@i^7073^Zerbrochener Fangzahn
+@i^7074^Gesplitterte Klaue
 @i^9451^Blubberwasser
 @i^11384^Zerbrochene Basiliskenzähne
 @i^11385^Basiliskenschuppe
@@ -137,6 +158,7 @@ GoldScout-export 6^do59bgd8a778^4
 @i^248693^Abgefangene Kiste: Textilien des Experten
 @i^248708^Abgefangene Kiste: Stoffe des Experten
 @i^262889^Versiegelte Verfügung des Experten
+@q^159^1:0:0
 @q^422^1:0:0
 @q^729^1:7:1
 @q^878^0:7:0
@@ -147,6 +169,10 @@ GoldScout-export 6^do59bgd8a778^4
 @q^1205^1:0:0
 @q^1206^2:7:1
 @q^1288^1:7:1
+@q^1366^0:4:0
+@q^1367^0:4:0
+@q^1372^0:4:0
+@q^1377^0:4:0
 @q^1464^0:15:0
 @q^1529^2:7:1
 @q^1701^0:15:0
@@ -159,12 +185,20 @@ GoldScout-export 6^do59bgd8a778^4
 @q^1820^0:2:0
 @q^1824^0:2:0
 @q^1828^0:2:0
+@q^2210^0:4:0
 @q^2251^1:7:1
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2649^0:4:0
+@q^2650^0:4:0
+@q^2654^0:4:0
+@q^2656^0:4:0
 @q^2940^0:15:0
 @q^3182^1:7:1
+@q^3264^1:12:0
+@q^3265^1:12:0
 @q^3301^0:15:0
+@q^3363^0:4:0
 @q^3385^1:0:0
 @q^3399^0:15:0
 @q^3402^0:15:0
@@ -180,8 +214,10 @@ GoldScout-export 6^do59bgd8a778^4
 @q^4428^0:15:0
 @q^4555^0:15:0
 @q^4556^0:15:0
+@q^4604^1:0:0
 @q^4636^2:15:0
 @q^4784^0:15:0
+@q^4865^0:15:0
 @q^5114^0:15:0
 @q^5115^0:15:0
 @q^5116^1:7:1
@@ -199,6 +235,8 @@ GoldScout-export 6^do59bgd8a778^4
 @q^5844^1:12:0
 @q^5848^1:12:0
 @q^6308^1:7:1
+@q^7073^0:15:0
+@q^7074^0:15:0
 @q^9451^1:0:0
 @q^11384^0:15:0
 @q^11385^0:15:0
@@ -226,6 +264,7 @@ GoldScout-export 6^do59bgd8a778^4
 @q^248693^1:0:1
 @q^248708^2:0:1
 @q^262889^3:0:0
+@m^1420^Tirisfal
 @m^1424^Vorgebirge von Hillsbrad
 @m^1441^Tausend Nadeln
 @m^1443^Desolace
@@ -1070,6 +1109,10 @@ GoldScout-export 6^do59bgd8a778^4
 @c^279985^
 @c^279987^
 @c^286152^
+@a^1501^246:11
+@a^1502^245:1,246:6
+@a^1508^246:3,265:1
+@a^1512^245:7,265:1,286:1
 @a^2244^156:1,175:6,192:1,193:4,213:1
 @a^2260^175:2,193:9,213:1
 @a^2261^175:8,176:1,193:9,195:2,213:1

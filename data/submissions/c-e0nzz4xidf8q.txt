@@ -1,4 +1,4 @@
-GoldScout-export 6^e0nzz4xidf8q^8
+GoldScout-export 6^e0nzz4xidf8q^9
 3^4^0^24^25^1431^0.2311^0.3728^4^Flesh Eater^884:3:3,885:1:1,929:1:1,1129:2:2,5529:1:1,6530:1:1,211784:1:1^
 205^12^0^28^29^1431^0.6418^0.4513^12^Nightbane Dark Runner^1804:1:1,3770:1:1,5635:1:1^
 206^8^0^29^30^1431^0.5698^0.7850^8^Nightbane Vile Fang^929:1:1,1758:1:1,5635:1:1^
@@ -49,6 +49,8 @@ GoldScout-export 6^e0nzz4xidf8q^8
 2376^20^0^30^31^1424^0.4333^0.6705^20^Torn Fin Oracle^929:2:2,1205:1:1,3716:3:3,5524:8:8,6308:2:4,17057:3:3,17058:7:7,211854:2:2,249881:3:3^
 2377^24^0^31^32^1424^0.4400^0.6665^24^Torn Fin Tidehunter^1205:1:1,1712:1:1,3716:6:6,5524:7:7,5785:4:4,6308:2:5,11152:1:1,17057:10:10,17058:6:6^
 2462^5^0^25^25^1431^0.2334^0.3709^5^Flesh Eating Worm^^
+3851^5^0^0^0^0^0.0000^0.0000^0^^2217:1:1,3377:1:1,3770:1:1,248704:1:1^
+3861^2^0^0^0^0^0.0000^0.0000^0^^1015:1:1,3301:1:1,248682:1:1^
 4040^1^0^21^22^1437^0.4578^0.6095^1^Cave Stalker^1081:1:1,4428:1:1^
 4798^5^0^0^0^0^0.0000^0.0000^0^^1798:1:1,5952:2:2,211784:1:1,211855:1:1^
 4799^3^0^0^0^0^0.0000^0.0000^0^^2589:1:2^
@@ -132,6 +134,7 @@ GoldScout-export 6^e0nzz4xidf8q^8
 @i^887^Pound of Flesh
 @i^888^Naga Battle Gloves
 @i^929^Healing Potion
+@i^1015^Lean Wolf Flank
 @i^1081^Crisp Spider Meat
 @i^1129^Ghoul Fang
 @i^1205^Melon Juice
@@ -160,6 +163,7 @@ GoldScout-export 6^e0nzz4xidf8q^8
 @i^1827^Meat Cleaver
 @i^1829^Short Cutlass
 @i^1968^Ogre's Monocle
+@i^2217^Rectangular Shield
 @i^2251^Gooey Spider Leg
 @i^2278^Forest Tracker Epaulets
 @i^2382^The Embalmer's Heart
@@ -177,6 +181,8 @@ GoldScout-export 6^e0nzz4xidf8q^8
 @i^3010^Fine Sand
 @i^3055^Forest Leather Chestpiece
 @i^3175^Ruined Dragonhide
+@i^3301^Sharp Canine
+@i^3377^Canvas Bracers
 @i^3385^Lesser Mana Potion
 @i^3514^Mor'Ladim's Skull
 @i^3625^Nek'rosh's Head
@@ -246,7 +252,9 @@ GoldScout-export 6^e0nzz4xidf8q^8
 @i^211855^Scroll: STHENIC LUNATE
 @i^213544^Scroll: TOPAZ YORAK
 @i^213545^Scroll: PEATCHY ATTAX
+@i^248682^Waylaid Crate: Apprentice Herbs
 @i^248686^Waylaid Crate: Journeyman Herbs
+@i^248704^Waylaid Crate: Apprentice Parts
 @i^248706^Waylaid Crate: Journeyman Ingots
 @i^249881^Recipe: Root Tea
 @i^270180^Horrible Rootcore
@@ -269,6 +277,7 @@ GoldScout-export 6^e0nzz4xidf8q^8
 @q^887^0:15:0
 @q^888^3:4:0
 @q^929^1:0:0
+@q^1015^1:7:1
 @q^1081^1:7:1
 @q^1129^1:12:0
 @q^1205^1:0:0
@@ -297,6 +306,7 @@ GoldScout-export 6^e0nzz4xidf8q^8
 @q^1827^0:2:0
 @q^1829^0:2:0
 @q^1968^1:12:0
+@q^2217^0:4:0
 @q^2251^1:7:1
 @q^2278^3:4:0
 @q^2382^1:12:0
@@ -314,6 +324,8 @@ GoldScout-export 6^e0nzz4xidf8q^8
 @q^3010^0:15:0
 @q^3055^2:4:0
 @q^3175^0:15:0
+@q^3301^0:15:0
+@q^3377^0:4:0
 @q^3385^1:0:0
 @q^3514^1:12:0
 @q^3625^1:12:0
@@ -383,7 +395,9 @@ GoldScout-export 6^e0nzz4xidf8q^8
 @q^211855^1:0:0
 @q^213544^1:0:0
 @q^213545^1:0:0
+@q^248682^1:0:1
 @q^248686^1:0:1
+@q^248704^2:0:1
 @q^248706^2:0:1
 @q^249881^1:9:0
 @q^270180^1:12:0

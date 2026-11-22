@@ -1,4 +1,4 @@
-GoldScout-export 6^b6k7u7rxvbh5^17
+GoldScout-export 6^b6k7u7rxvbh5^18
 30^1^0^5^5^1429^0.3668^0.5630^1^Forest Spider^5465:1:1^
 36^1^0^11^11^1436^0.5650^0.3720^1^Harvest Golem^1274:1:1,255007:1:1^
 46^5^0^9^10^1429^0.7960^0.6159^5^Murloc Forager^779:2:2,1431:1:1,2213:1:1^
@@ -106,6 +106,8 @@ GoldScout-export 6^b6k7u7rxvbh5^17
 4023^6^0^25^26^1442^0.3617^0.6929^6^Bloodfury Roguefeather^1205:1:1,1825:1:1,2592:1:2,4306:1:1,17056:2:2^
 4024^6^0^25^26^1442^0.3554^0.6953^6^Bloodfury Slayer^1205:1:1,1782:1:1,2592:2:2,17056:1:1^
 4025^6^0^23^24^1442^0.3328^0.6391^6^Bloodfury Ambusher^1824:1:1,2592:2:2,3770:1:1,5116:1:1,17056:2:2^
+4113^3^0^28^29^1441^0.1359^0.1535^3^Gravelsnout Digger^2772:1:1,4306:1:2,15284:1:1^
+4124^1^0^28^28^1441^0.1365^0.1527^1^Needles Cougar^5137:1:1^
 4463^18^0^22^23^1433^0.2401^0.1309^18^Blackrock Summoner^1205:1:1,1820:1:1,2592:4:6,3770:3:3,4306:1:1^
 4619^1^0^32^32^1440^0.7794^0.4245^1^Geltharis^5461:1:1^
 4788^1^0^20^20^1414^0.4386^0.3503^1^Fallenroot Satyr^818:1:1^
@@ -294,6 +296,7 @@ GoldScout-export 6^b6k7u7rxvbh5^17
 @i^2675^Crawler Claw
 @i^2676^Shimmerweed
 @i^2677^Boar Ribs
+@i^2772^Iron Ore
 @i^2778^Cheap Blunderbuss
 @i^2782^Mishandled Recurve Bow
 @i^2886^Crag Boar Rib
@@ -357,6 +360,7 @@ GoldScout-export 6^b6k7u7rxvbh5^17
 @i^5116^Long Tail Feather
 @i^5135^Thin Black Claw
 @i^5136^Torn Furry Ear
+@i^5137^Bright Eyeball
 @i^5204^Bloodfeather Belt
 @i^5221^Melenas' Head
 @i^5336^Grell Earring
@@ -421,6 +425,7 @@ GoldScout-export 6^b6k7u7rxvbh5^17
 @i^12976^Ironpatch Blade
 @i^14194^Raincaller Cord of Intellect
 @i^15121^Robust Boots of the Bandit
+@i^15284^Long Battle Bow
 @i^15330^Wrangler's Boots of Stamina
 @i^15334^Wrangler's Gloves of Spirit
 @i^15944^Ancestral Orb
@@ -562,6 +567,7 @@ GoldScout-export 6^b6k7u7rxvbh5^17
 @q^2675^1:7:1
 @q^2676^1:12:0
 @q^2677^1:7:1
+@q^2772^1:7:1
 @q^2778^0:2:0
 @q^2782^0:2:0
 @q^2886^1:7:1
@@ -625,6 +631,7 @@ GoldScout-export 6^b6k7u7rxvbh5^17
 @q^5116^1:7:1
 @q^5135^0:15:0
 @q^5136^0:15:0
+@q^5137^0:15:0
 @q^5204^1:12:0
 @q^5221^1:12:0
 @q^5336^1:12:0
@@ -689,6 +696,7 @@ GoldScout-export 6^b6k7u7rxvbh5^17
 @q^12976^3:2:0
 @q^14194^2:4:0
 @q^15121^2:4:0
+@q^15284^2:2:0
 @q^15330^2:4:0
 @q^15334^2:4:0
 @q^15944^2:4:0
@@ -737,6 +745,7 @@ GoldScout-export 6^b6k7u7rxvbh5^17
 @m^1438^Teldrassil
 @m^1439^Darkshore
 @m^1440^Ashenvale
+@m^1441^Thousand Needles
 @m^1442^Stonetalon Mountains
 @c^118^
 @c^724^
@@ -1030,6 +1039,8 @@ GoldScout-export 6^b6k7u7rxvbh5^17
 @a^4023^267:6
 @a^4024^266:2,267:2,286:2
 @a^4025^246:5,266:1
+@a^4113^62:3
+@a^4124^62:1
 @a^4463^24:1,25:3,44:3,45:3,64:8
 @a^4619^175:1
 @a^4788^148:1

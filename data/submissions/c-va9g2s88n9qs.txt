@@ -1,4 +1,4 @@
-GoldScout-export 5^va9g2s88n9qs^5
+GoldScout-export 5^va9g2s88n9qs^6
 587^4^0^33^34^1434^0.3168^0.1766^4^Bloodscalp Warrior^3802:1:1,3901:1:1,3915:3:3,4306:1:2^
 681^12^0^30^31^1434^0.3660^0.1255^12^Young Stranglethorn Tiger^1686:1:1,1687:1:1,5637:1:1,12202:2:2^
 682^7^0^32^33^1434^0.2903^0.0987^7^Stranglethorn Tiger^1686:3:3,8146:1:1,12202:3:3^
@@ -17,23 +17,29 @@ GoldScout-export 5^va9g2s88n9qs^5
 1150^1^0^30^31^1434^0.4103^0.1379^1^River Crocolisk^3667:1:1^
 1172^1^0^10^10^1432^0.4065^0.2319^1^Tunnel Rat Vermin^2589:1:3^
 1186^1^0^12^12^1432^0.3443^0.2829^1^Elder Black Bear^^
+2559^5^0^30^31^1417^0.6882^0.5138^5^Highland Strider^3685:1:1,4461:1:1,4512:3:3,5637:1:1,12184:2:2^
 2562^6^0^32^33^1417^0.3490^0.4541^6^Boulderfist Ogre^213422:1:1^
-2563^3^0^32^33^1417^0.4981^0.4471^3^Plains Creeper^1081:1:1,3182:1:1^
+2563^18^0^32^33^1417^0.6699^0.4981^18^Plains Creeper^878:4:4,1074:4:4,1081:7:7,2251:4:4,3182:3:3,4337:1:1,4585:2:2,5637:2:2,278225:12:12^
 2564^5^0^33^34^1417^0.3321^0.4499^5^Boulderfist Enforcer^3341:1:1,4306:2:3,213422:2:2^
+2578^2^0^31^32^1417^0.7243^0.4948^2^Young Mesa Buzzard^3404:1:1,11416:1:1,11418:1:1,12037:1:1^
 4026^1^0^24^25^1442^0.3057^0.6186^1^Bloodfury Windcaller^5116:1:1,14176:1:1^
 11577^1^0^35^37^1443^0.5794^0.5204^1^Whirlwind Stormwalker^^
 12579^1^0^26^26^1442^0.3091^0.6191^1^Bloodfury Ripper^5117:1:1,16190:1:1,17056:1:1^
+@i^878^Fist-sized Spinneret
+@i^1074^Hard Spider Leg Tip
 @i^1081^Crisp Spider Meat
 @i^1520^Troll Sweat
 @i^1686^Bristly Whisker
 @i^1687^Retractable Claw
 @i^1696^Curved Raptor Talon
+@i^2251^Gooey Spider Leg
 @i^2589^Linen Cloth
 @i^2742^Green Hills of Stranglethorn - Page 18
 @i^2744^Green Hills of Stranglethorn - Page 20
 @i^2750^Green Hills of Stranglethorn - Page 26
 @i^3182^Spider's Silk
 @i^3341^Gauntlets of Ogre Strength
+@i^3404^Buzzard Wing
 @i^3667^Tender Crocolisk Meat
 @i^3685^Raptor Egg
 @i^3771^Wild Hog Shank
@@ -41,7 +47,10 @@ GoldScout-export 5^va9g2s88n9qs^5
 @i^3901^Bloodscalp Tusk
 @i^3915^Bloody Bone Necklace
 @i^4306^Silk Cloth
+@i^4337^Thick Spider's Silk
 @i^4461^Raptor Hide
+@i^4512^Highland Raptor Eye
+@i^4585^Dripping Spider Mandible
 @i^5116^Long Tail Feather
 @i^5117^Vibrant Plume
 @i^5637^Large Fang
@@ -49,6 +58,9 @@ GoldScout-export 5^va9g2s88n9qs^5
 @i^7131^Dragonmaw Shinbone
 @i^8146^Wicked Claw
 @i^8365^Raw Mithril Head Trout
+@i^11416^Delicate Ribcage
+@i^11418^Hollow Wing Bone
+@i^12037^Mystery Meat
 @i^12184^Raptor Flesh
 @i^12202^Tiger Meat
 @i^14176^Watcher's Boots of the Channeler
@@ -56,17 +68,22 @@ GoldScout-export 5^va9g2s88n9qs^5
 @i^16190^Bloodfury Ripper's Remains
 @i^17056^Light Feather
 @i^213422^Illegible Recipe
+@i^278225^Surgical Spidersilk
+@q^878^0:7:0
+@q^1074^0:15:0
 @q^1081^1:7:1
 @q^1520^0:15:0
 @q^1686^0:15:0
 @q^1687^0:15:0
 @q^1696^0:15:0
+@q^2251^1:7:1
 @q^2589^1:7:1
 @q^2742^1:12:0
 @q^2744^1:12:0
 @q^2750^1:12:0
 @q^3182^1:7:1
 @q^3341^2:4:0
+@q^3404^1:7:1
 @q^3667^1:7:1
 @q^3685^1:7:1
 @q^3771^1:0:0
@@ -74,7 +91,10 @@ GoldScout-export 5^va9g2s88n9qs^5
 @q^3901^1:12:0
 @q^3915^1:12:0
 @q^4306^1:7:1
+@q^4337^1:7:1
 @q^4461^1:7:1
+@q^4512^1:12:0
+@q^4585^0:15:0
 @q^5116^1:7:1
 @q^5117^1:12:0
 @q^5637^1:7:1
@@ -82,6 +102,9 @@ GoldScout-export 5^va9g2s88n9qs^5
 @q^7131^1:12:0
 @q^8146^1:7:1
 @q^8365^1:7:1
+@q^11416^0:15:0
+@q^11418^0:15:0
+@q^12037^1:7:1
 @q^12184^1:7:1
 @q^12202^1:7:1
 @q^14176^2:4:0
@@ -89,6 +112,7 @@ GoldScout-export 5^va9g2s88n9qs^5
 @q^16190^1:12:0
 @q^17056^1:15:1
 @q^213422^1:12:0
+@q^278225^1:12:0
 @m^1417^Arathi Highlands
 @m^1432^Loch Modan
 @m^1434^Stranglethorn Vale
@@ -804,9 +828,11 @@ GoldScout-export 5^va9g2s88n9qs^5
 @a^1150^48:1
 @a^1172^88:1
 @a^1186^106:1
+@a^2559^212:1,213:2,214:2
 @a^2562^166:1,167:2,186:2,187:1
-@a^2563^105:1,194:1,249:1
+@a^2563^105:1,194:7,213:5,214:3,233:1,249:1
 @a^2564^166:4,186:1
+@a^2578^194:1,214:1
 @a^4026^246:1
 @a^11577^211:1
 @a^12579^246:1

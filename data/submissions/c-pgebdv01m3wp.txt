@@ -1,4 +1,4 @@
-GoldScout-export 6^pgebdv01m3wp^10
+GoldScout-export 6^pgebdv01m3wp^11
 1474^1^0^15^15^1432^0.3603^0.4673^1^Rann Flamespinner^^
 1963^1^0^10^10^1432^0.3471^0.4904^1^Vidra Hearthstove^^
 2347^17^0^40^40^1424^0.8304^0.3645^17^Wild Gryphon^4589:5:5,4590:6:6,4591:2:3^
@@ -28,6 +28,12 @@ GoldScout-export 6^pgebdv01m3wp^10
 4467^1^0^46^47^1425^0.4701^0.6767^1^Vilebranch Soothsayer^1520:1:1,4338:1:3^
 4468^1^0^47^48^1425^0.6218^0.7512^1^Jade Sludge^3671:1:1^
 4469^2^0^46^46^1425^0.6517^0.6579^2^Emerald Ooze^9922:1:1^
+5839^6^0^43^44^1427^0.6337^0.6036^6^Dark Iron Geologist^4306:1:1,4338:2:4,13029:1:1^
+5843^5^0^45^47^1427^0.4056^0.4455^5^Slave Worker^4338:1:2^
+5844^1^0^46^46^1427^0.3895^0.5074^1^Dark Iron Slaver^^
+5846^1^0^47^47^1427^0.4162^0.5464^1^Dark Iron Taskmaster^^
+5853^1^0^45^45^1427^0.6305^0.5986^1^Tempered War Golem^4554:1:1^
+5854^1^0^47^49^1427^0.4511^0.6434^1^Heavy War Golem^4554:1:1^
 6127^1^0^47^47^1447^0.2095^0.6186^1^Haldarr Felsworn^^
 6194^3^0^48^49^1447^0.3722^0.5057^3^Spitelash Serpent Guard^7973:1:1^
 6195^6^0^51^52^1447^0.3796^0.4915^6^Spitelash Siren^7973:3:3,13819:1:1^
@@ -38,6 +44,7 @@ GoldScout-export 6^pgebdv01m3wp^10
 7864^1^0^48^49^1447^0.3978^0.4714^1^Lingering Highborne^4338:1:1^
 8055^7^0^40^40^1432^0.3513^0.4910^7^Thelsamar Mountaineer^^
 8216^1^0^48^48^1425^0.4608^0.6848^1^Retherokk the Berserker^3928:1:1,8153:1:1,9259:1:1,284061:1:1^
+8637^1^0^44^44^1427^0.6233^0.6130^1^Dark Iron Watchman^4422:1:1^
 8762^1^0^47^47^1447^0.2520^0.4954^1^Timberweb Recluse^7532:1:1^
 12922^1^0^47^47^1447^0.2082^0.6195^1^Imp Minion^^
 14280^1^0^27^27^1424^0.8638^0.3875^1^Big Samras^9837:1:1^
@@ -91,7 +98,9 @@ GoldScout-export 6^pgebdv01m3wp^10
 @i^4306^Silk Cloth
 @i^4337^Thick Spider's Silk
 @i^4338^Mageweave Cloth
+@i^4422^Scroll of Stamina III
 @i^4428^Spider Palp
+@i^4554^Shiny Polished Stone
 @i^4555^Thick Scaly Tail
 @i^4583^Thick Furry Mane
 @i^4585^Dripping Spider Mandible
@@ -134,6 +143,7 @@ GoldScout-export 6^pgebdv01m3wp^10
 @i^12205^White Spider Meat
 @i^12207^Giant Egg
 @i^12208^Tender Wolf Meat
+@i^13029^Umbral Crystal
 @i^13819^Balanced War Axe
 @i^14047^Runecloth
 @i^15249^Polished Zweihander of the Tiger
@@ -184,7 +194,9 @@ GoldScout-export 6^pgebdv01m3wp^10
 @q^4306^1:7:1
 @q^4337^1:7:1
 @q^4338^1:7:1
+@q^4422^1:0:0
 @q^4428^0:15:0
+@q^4554^0:15:0
 @q^4555^0:15:0
 @q^4583^0:15:0
 @q^4585^0:15:0
@@ -227,6 +239,7 @@ GoldScout-export 6^pgebdv01m3wp^10
 @q^12205^1:7:1
 @q^12207^1:7:1
 @q^12208^1:7:1
+@q^13029^3:4:0
 @q^13819^0:2:0
 @q^14047^1:7:1
 @q^15249^2:2:0
@@ -249,6 +262,7 @@ GoldScout-export 6^pgebdv01m3wp^10
 @m^1416^Alterac Mountains
 @m^1424^Hillsbrad Foothills
 @m^1425^The Hinterlands
+@m^1427^Searing Gorge
 @m^1432^Loch Modan
 @m^1440^Ashenvale
 @m^1447^Azshara
@@ -972,6 +986,12 @@ GoldScout-export 6^pgebdv01m3wp^10
 @a^4467^269:1
 @a^4468^312:1
 @a^4469^253:1,273:1
+@a^5839^232:3,252:3
+@a^5843^167:1,168:3,207:1
+@a^5844^207:1
+@a^5846^208:1
+@a^5853^232:1
+@a^5854^249:1
 @a^6127^244:1
 @a^6194^187:1,207:2
 @a^6195^187:4,207:2
@@ -982,6 +1002,7 @@ GoldScout-export 6^pgebdv01m3wp^10
 @a^7864^187:1
 @a^8055^186:5,187:2
 @a^8216^269:1
+@a^8637^252:1
 @a^8762^185:1
 @a^12922^244:1
 @a^14280^157:1

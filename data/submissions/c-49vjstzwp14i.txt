@@ -1,4 +1,4 @@
-GoldScout-export 6^49vjstzwp14i^22
+GoldScout-export 6^49vjstzwp14i^24
 232^1^0^23^23^1424^0.3289^0.3468^1^Farmer Ray^4538:1:1^
 1501^8^0^1^1^1420^0.3156^0.6329^8^Mindless Zombie^159:1:1,1370:1:1,1380:1:1,2589:1:1,2649:1:1^
 1502^9^0^1^2^1420^0.3206^0.6296^9^Wretched Zombie^1366:1:1,1374:1:1,1380:1:1,2589:1:1,2651:1:1,4604:2:2^
@@ -7,8 +7,13 @@ GoldScout-export 6^49vjstzwp14i^22
 1508^1^0^1^1^1420^0.3102^0.6274^1^Young Scavenger^4865:1:1^
 1509^6^0^2^3^1420^0.3506^0.6290^6^Ragged Scavenger^1364:1:1,1374:1:1,1376:1:1,2651:1:1,3265:6:6,7073:3:3^
 1513^6^0^3^4^1420^0.3485^0.6275^6^Mangy Duskbat^1364:1:1,1377:1:1,3264:6:6,4865:4:4,7073:3:3,7074:3:3^
+1525^3^0^5^6^1420^0.5240^0.5265^3^Rotting Dead^2589:1:1,2855:2:2^
+1526^4^0^6^7^1420^0.5173^0.5313^4^Ravaged Corpse^2589:1:1,2855:2:2^
+1535^11^0^6^7^1420^0.3314^0.4907^11^Scarlet Warrior^118:1:1,1417:1:1,2070:2:2,2589:1:2,211787:1:1^
+1547^1^0^6^6^1420^0.5707^0.5283^1^Decrepit Darkhound^2858:1:1^
 1890^12^0^2^3^1420^0.3394^0.6325^12^Rattlecage Skeleton^159:1:1,1377:1:1,2211:1:1,2589:2:2,2651:1:1,4604:2:2^
 1919^1^0^5^5^1420^0.3636^0.6130^1^Samuel Fipps^16333:1:1^
+1934^1^0^6^7^1420^0.3570^0.4989^1^Tirisfal Farmer^1421:1:1,250988:1:1^
 2182^1^0^20^20^1439^0.5865^0.2212^1^Stormscale Sorceress^3377:1:1^
 2266^6^0^23^24^1424^0.3386^0.4297^6^Hillsbrad Farmer^1485:2:2,1774:1:1,1775:1:1,2592:3:5,4538:2:2^
 2267^2^0^24^25^1424^0.3549^0.4832^2^Hillsbrad Peasant^2592:1:2^
@@ -67,6 +72,7 @@ GoldScout-export 6^49vjstzwp14i^22
 10758^1^0^25^26^1441^0.3387^0.3612^1^Grimtotem Bandit^2592:1:1,3770:1:1^
 10760^1^0^25^25^1441^0.3370^0.3656^1^Grimtotem Geomancer^3608:1:1^
 271961^6^0^2^3^1420^0.2533^0.6010^6^Webbed Forsaken^^
+@i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
 @i^954^Scroll of Strength
 @i^1205^Melon Juice
@@ -78,6 +84,8 @@ GoldScout-export 6^49vjstzwp14i^22
 @i^1377^Frayed Gloves
 @i^1378^Frayed Pants
 @i^1380^Frayed Robe
+@i^1417^Beaten Battle Axe
+@i^1421^Worn Hide Cloak
 @i^1476^Snapped Spider Limb
 @i^1485^Pitchfork
 @i^1750^Linked Chain Gloves
@@ -86,6 +94,7 @@ GoldScout-export 6^49vjstzwp14i^22
 @i^1798^Rawhide Cloak
 @i^1818^Standard Claymore
 @i^1821^Warped Blade
+@i^2070^Darnassian Bleu
 @i^2211^Bent Large Shield
 @i^2287^Haunch of Meat
 @i^2447^Peacebloom
@@ -97,6 +106,8 @@ GoldScout-export 6^49vjstzwp14i^22
 @i^2782^Mishandled Recurve Bow
 @i^2786^Oiled Blunderbuss
 @i^2836^Coarse Stone
+@i^2855^Putrid Claw
+@i^2858^Darkhound Blood
 @i^3199^Battle Slayer of the Whale
 @i^3264^Duskbat Wing
 @i^3265^Scavenger Paw
@@ -158,10 +169,13 @@ GoldScout-export 6^49vjstzwp14i^22
 @i^21113^Watertight Trunk
 @i^21114^Rumsey Rum Dark
 @i^211784^Scroll: WUBBA WUBBA
+@i^211787^Scroll: LOWER PING WHOMEVER
 @i^248686^Waylaid Crate: Journeyman Herbs
 @i^248687^Waylaid Crate: Journeyman Ore
+@i^250988^Recipe: Minor Mender's Potion
 @i^277936^Glittering Sunstone
 @i^284400^Foreman's Helm
+@q^118^1:0:0
 @q^159^1:0:0
 @q^954^1:0:0
 @q^1205^1:0:0
@@ -173,6 +187,8 @@ GoldScout-export 6^49vjstzwp14i^22
 @q^1377^0:4:0
 @q^1378^0:4:0
 @q^1380^0:4:0
+@q^1417^0:2:0
+@q^1421^0:4:0
 @q^1476^0:15:0
 @q^1485^0:2:0
 @q^1750^0:4:0
@@ -181,6 +197,7 @@ GoldScout-export 6^49vjstzwp14i^22
 @q^1798^0:4:0
 @q^1818^0:2:0
 @q^1821^0:2:0
+@q^2070^1:0:0
 @q^2211^0:4:0
 @q^2287^1:0:0
 @q^2447^1:7:1
@@ -192,6 +209,8 @@ GoldScout-export 6^49vjstzwp14i^22
 @q^2782^0:2:0
 @q^2786^0:2:0
 @q^2836^1:7:1
+@q^2855^1:12:0
+@q^2858^1:12:0
 @q^3199^2:2:0
 @q^3264^1:12:0
 @q^3265^1:12:0
@@ -253,8 +272,10 @@ GoldScout-export 6^49vjstzwp14i^22
 @q^21113^1:15:0
 @q^21114^1:0:0
 @q^211784^1:0:0
+@q^211787^1:0:0
 @q^248686^1:0:1
 @q^248687^1:0:1
+@q^250988^1:9:0
 @q^277936^1:12:0
 @q^284400^3:4:0
 @m^1413^The Barrens
@@ -1777,8 +1798,13 @@ GoldScout-export 6^49vjstzwp14i^22
 @a^1508^246:1
 @a^1509^246:3,247:3
 @a^1513^246:3,247:3
+@a^1525^210:3
+@a^1526^210:3,229:1
+@a^1535^186:9,206:2
+@a^1547^211:1
 @a^1890^246:12
 @a^1919^247:1
+@a^1934^187:1
 @a^2182^91:1
 @a^2266^147:1,166:3,187:2
 @a^2267^187:2

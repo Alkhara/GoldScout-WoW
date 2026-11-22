@@ -1,4 +1,4 @@
-GoldScout-export 6^5su0xxfwyjyr^6
+GoldScout-export 6^5su0xxfwyjyr^7
 7031^1^0^52^52^1428^0.7010^0.5940^1^Elémentaire d'obsidienne^4784:1:1^
 7032^3^0^55^57^1428^0.6265^0.3735^3^Grand élémentaire d'obsidienne^4784:3:3,8150:1:1^
 7047^2^0^51^52^1428^0.8175^0.6123^2^Rejeton noir^4557:1:1^
@@ -28,10 +28,14 @@ GoldScout-export 6^5su0xxfwyjyr^6
 11741^17^0^57^58^1451^0.3821^0.5852^17^Ecraseur térébrant^3669:9:9,3676:7:7,13044:1:1,20424:6:6^
 11744^2^0^55^57^1451^0.3668^0.2624^2^Tempétueux de poussière^7081:1:1^
 11746^1^0^58^58^1451^0.3900^0.5467^1^Grondeur du désert^4784:1:1,7075:1:1^
-11881^10^0^59^60^1451^0.3406^0.3890^10^Géodame du crépuscule^8952:2:2,13444:1:1,13823:1:1,14047:2:5^
+11804^1^0^60^60^1451^0.4071^0.4158^1^Gardien du crépuscule Havunth^20396:1:1^
+11881^11^0^59^60^1451^0.3346^0.3871^11^Géoseigneur du crépuscule^8952:2:2,13444:1:1,13823:1:1,14047:3:7^
 12179^1^0^56^57^1451^0.6383^0.5168^1^Sentinelle torturée^^
 13136^1^0^58^58^1451^0.6389^0.5168^1^Bourdon de la Ruche'Ashi^6302:1:1^
 15196^1^0^59^59^1451^0.4486^0.9092^1^Poigne-de-mort^20385:1:1^
+15201^2^0^60^60^1451^0.7175^0.1326^2^Flamme ravageuse du crépuscule^14047:1:1^
+15202^1^0^61^61^1451^0.7248^0.1567^1^Vyral le Vil^20466:1:1^
+15213^1^0^60^60^1451^0.7257^0.1540^1^Suzeraine du crépuscule^^
 @i^1074^Patte d'araignée
 @i^1688^Longue queue soyeuse
 @i^3669^Bave gélatineuse
@@ -88,7 +92,9 @@ GoldScout-export 6^5su0xxfwyjyr^6
 @i^20376^Croc de Glisseuse du sable
 @i^20377^Croc de traqueuse des rochers
 @i^20385^Pince de Poigne-de-mort
+@i^20396^Lexique du crépuscule - Chapitre 3
 @i^20424^Chair de ver des sables
+@i^20466^Chevalière de Vyral
 @i^248698^Caisse détournée : textiles d'artisan
 @i^262890^Commission d'artisan scellée
 @q^1074^0:15:0
@@ -147,7 +153,9 @@ GoldScout-export 6^5su0xxfwyjyr^6
 @q^20376^1:12:0
 @q^20377^1:12:0
 @q^20385^1:12:0
+@q^20396^1:12:0
 @q^20424^1:7:1
+@q^20466^1:12:0
 @q^248698^1:0:1
 @q^262890^3:0:0
 @m^1423^Maleterres de l'est
@@ -909,8 +917,12 @@ GoldScout-export 6^5su0xxfwyjyr^6
 @a^11741^207:2,208:1,227:7,228:1,247:4,267:2
 @a^11744^83:1,130:1
 @a^11746^207:1
-@a^11881^124:2,125:1,145:1,167:2,168:3,187:1
+@a^11804^168:1
+@a^11881^124:2,125:1,145:2,167:2,168:3,187:1
 @a^12179^212:1
 @a^13136^212:1
 @a^15196^368:1
+@a^15201^54:2
+@a^15202^74:1
+@a^15213^74:1
 @l^0^frFR
