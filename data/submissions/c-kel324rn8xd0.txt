@@ -1,4 +1,4 @@
-GoldScout-export 6^kel324rn8xd0^19
+GoldScout-export 6^kel324rn8xd0^20
 199^1^0^10^11^1436^0.6179^0.2886^1^Young Fleshripper^6889:1:1,7097:1:1,17056:1:1^
 428^8^0^18^19^1433^0.5213^0.7638^8^Dire Condor^1080:1:1,1464:1:1,4775:2:2,5115:2:2,6889:2:2,17056:2:2,250188:1:1^
 833^34^0^11^12^1436^0.6007^0.3223^34^Coyote Packleader^2673:10:10,2698:1:1,3299:9:9,3300:7:7,9765:1:1,211787:1:1^
@@ -26,6 +26,9 @@ GoldScout-export 6^kel324rn8xd0^19
 2450^1^0^29^29^1424^0.3086^0.5384^1^Miner Hackett^1785:1:1^
 2451^1^0^25^25^1424^0.3583^0.4635^1^Farmer Kalaba^1485:1:1^
 2503^5^0^27^28^1424^0.2947^0.5510^5^Hillsbrad Foreman^2592:1:2,4306:2:2^
+2559^2^0^31^31^1417^0.6890^0.3845^2^Highland Strider^4461:1:1,12184:1:1^
+2563^2^0^32^33^1417^0.6925^0.3728^2^Plains Creeper^1074:2:2,1081:2:2,2251:1:1,5637:1:1^
+2578^1^0^32^32^1417^0.6786^0.3573^1^Young Mesa Buzzard^1464:1:1,5116:1:1^
 2623^11^0^32^33^1416^0.2402^0.6578^11^Spirit of Old^^
 3100^4^0^8^9^1411^0.5532^0.1362^4^Elder Mottled Boar^769:3:3,3171:1:1^
 3108^3^0^9^10^1411^0.5799^0.1307^3^Encrusted Surf Crawler^4675:1:1,4873:1:1,4874:1:1^
@@ -156,7 +159,9 @@ GoldScout-export 6^kel324rn8xd0^19
 @i^828^Small Blue Pouch
 @i^890^Twisted Chanter's Staff
 @i^929^Healing Potion
+@i^1074^Hard Spider Leg Tip
 @i^1080^Tough Condor Meat
+@i^1081^Crisp Spider Meat
 @i^1205^Melon Juice
 @i^1206^Moss Agate
 @i^1464^Buzzard Talon
@@ -181,6 +186,7 @@ GoldScout-export 6^kel324rn8xd0^19
 @i^1829^Short Cutlass
 @i^1830^Long Bastard Sword
 @i^2140^Carving Knife of the Whale
+@i^2251^Gooey Spider Leg
 @i^2295^Large Boar Tusk
 @i^2592^Wool Cloth
 @i^2673^Coyote Meat
@@ -217,6 +223,7 @@ GoldScout-export 6^kel324rn8xd0^19
 @i^4093^Large Basilisk Tail
 @i^4306^Silk Cloth
 @i^4428^Spider Palp
+@i^4461^Raptor Hide
 @i^4538^Snapvine Watermelon
 @i^4553^Jagged Piece of Stone
 @i^4555^Thick Scaly Tail
@@ -243,6 +250,7 @@ GoldScout-export 6^kel324rn8xd0^19
 @i^5538^Vorrel's Wedding Ring
 @i^5635^Sharp Claw
 @i^5636^Delicate Feather
+@i^5637^Large Fang
 @i^5741^Rock Chip
 @i^5793^Razorflank's Heart
 @i^5794^Salty Scorpid Venom
@@ -296,6 +304,7 @@ GoldScout-export 6^kel324rn8xd0^19
 @i^11416^Delicate Ribcage
 @i^11418^Hollow Wing Bone
 @i^12037^Mystery Meat
+@i^12184^Raptor Flesh
 @i^12203^Red Wolf Meat
 @i^12564^Assassination Note
 @i^12884^Arnak's Hoof
@@ -352,7 +361,9 @@ GoldScout-export 6^kel324rn8xd0^19
 @q^828^1:1:0
 @q^890^3:2:0
 @q^929^1:0:0
+@q^1074^0:15:0
 @q^1080^1:7:1
+@q^1081^1:7:1
 @q^1205^1:0:0
 @q^1206^2:7:1
 @q^1464^0:15:0
@@ -377,6 +388,7 @@ GoldScout-export 6^kel324rn8xd0^19
 @q^1829^0:2:0
 @q^1830^0:2:0
 @q^2140^2:2:0
+@q^2251^1:7:1
 @q^2295^0:15:0
 @q^2592^1:7:1
 @q^2673^1:7:1
@@ -413,6 +425,7 @@ GoldScout-export 6^kel324rn8xd0^19
 @q^4093^0:15:0
 @q^4306^1:7:1
 @q^4428^0:15:0
+@q^4461^1:7:1
 @q^4538^1:0:0
 @q^4553^0:15:0
 @q^4555^0:15:0
@@ -439,6 +452,7 @@ GoldScout-export 6^kel324rn8xd0^19
 @q^5538^1:12:0
 @q^5635^1:7:1
 @q^5636^0:15:0
+@q^5637^1:7:1
 @q^5741^0:15:0
 @q^5793^1:12:0
 @q^5794^1:12:0
@@ -492,6 +506,7 @@ GoldScout-export 6^kel324rn8xd0^19
 @q^11416^0:15:0
 @q^11418^0:15:0
 @q^12037^1:7:1
+@q^12184^1:7:1
 @q^12203^1:7:1
 @q^12564^1:12:0
 @q^12884^1:0:0
@@ -543,6 +558,7 @@ GoldScout-export 6^kel324rn8xd0^19
 @m^1411^Durotar
 @m^1413^The Barrens
 @m^1416^Alterac Mountains
+@m^1417^Arathi Highlands
 @m^1420^Tirisfal Glades
 @m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
@@ -1269,6 +1285,9 @@ GoldScout-export 6^kel324rn8xd0^19
 @a^2450^206:1
 @a^2451^187:1
 @a^2503^205:1,206:1,225:3
+@a^2559^153:2
+@a^2563^153:1,154:1
+@a^2578^153:1
 @a^2623^224:1,225:2,244:6,343:1,344:1
 @a^3100^50:2,51:1,71:1
 @a^3108^51:3

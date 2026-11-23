@@ -1,4 +1,4 @@
-GoldScout-export 6^xvg8i1wbkm6q^28
+GoldScout-export 6^xvg8i1wbkm6q^29
 48^11^0^21^22^1431^0.7912^0.7144^11^Skeletal Warrior^2378:5:5,2589:1:3,2592:4:6^
 95^3^0^11^12^1436^0.4434^0.3856^3^Defias Smuggler^1179:1:1,2589:1:1^
 97^5^0^8^9^1429^0.2629^0.8983^5^Riverpaw Runt^768:1:1,1411:1:1,1412:1:1,1427:1:1,2589:2:4,3370:1:1^
@@ -208,6 +208,7 @@ GoldScout-export 6^xvg8i1wbkm6q^28
 272284^1^0^24^24^1431^0.5063^0.7288^1^Lost Defender^275895:1:1,281145:1:1^
 272291^1^0^25^25^1431^0.7844^0.3408^1^Lost Knight^6602:1:1,275895:1:1,281147:1:1^
 @i^117^Tough Jerky
+@i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
 @i^414^Dalaran Sharp
 @i^422^Dwarven Mild
@@ -418,6 +419,10 @@ GoldScout-export 6^xvg8i1wbkm6q^28
 @i^6226^Bloody Apron
 @i^6267^Disciple's Pants of the Eagle
 @i^6289^Raw Longjaw Mud Snapper
+@i^6291^Raw Brilliant Smallfish
+@i^6292^10 Pound Mud Snapper
+@i^6308^Raw Bristle Whisker Catfish
+@i^6309^17 Pound Catfish
 @i^6314^Wolfmaster Cape
 @i^6321^Silverlaine's Family Seal
 @i^6324^Robes of Arugal
@@ -530,6 +535,7 @@ GoldScout-export 6^xvg8i1wbkm6q^28
 @i^285292^Dull Sawblade
 @i^286980^Rotmender's Sash
 @q^117^1:0:0
+@q^118^1:0:0
 @q^159^1:0:0
 @q^414^1:0:0
 @q^422^1:0:0
@@ -740,6 +746,10 @@ GoldScout-export 6^xvg8i1wbkm6q^28
 @q^6226^3:4:0
 @q^6267^2:4:0
 @q^6289^1:7:1
+@q^6291^1:7:1
+@q^6292^1:15:0
+@q^6308^1:7:1
+@q^6309^1:15:0
 @q^6314^3:4:0
 @q^6321^3:4:0
 @q^6324^3:4:0
@@ -2208,4 +2218,6 @@ GoldScout-export 6^xvg8i1wbkm6q^28
 @a^272260^113:1
 @a^272284^290:1
 @a^272291^135:1
+@f^1429^0^62^1^118:1:1,6289:27:27,6291:33:33,6292:1:1^249:62
+@f^1453^0^101^63^6289:47:47,6291:27:27,6308:26:26,6309:1:1^270:101
 @l^0^enUS
