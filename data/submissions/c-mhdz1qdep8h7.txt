@@ -1,4 +1,4 @@
-GoldScout-export 6^mhdz1qdep8h7^31
+GoldScout-export 6^mhdz1qdep8h7^33
 1783^15^0^50^51^1422^0.3701^0.5683^15^Ecorcheur Squelette^8948:1:1,12840:4:4,13446:1:1,14047:7:10,14619:4:4^
 1784^15^0^51^52^1422^0.3711^0.5621^15^Ensorceleur Squelette^7910:1:1,12840:4:4,14047:3:3,14619:6:6^
 1785^1^0^52^53^1422^0.4777^0.5074^1^Terreur Squelette^^
@@ -20,7 +20,13 @@ GoldScout-export 6^mhdz1qdep8h7^31
 1831^3^0^52^52^1422^0.4062^0.5279^3^Chasseur écarlate^^
 1833^10^0^54^55^1422^0.5032^0.4046^10^Chevalier écarlate^8766:1:1,13443:1:1,14047:3:5^
 1835^2^0^53^54^1422^0.4023^0.5265^2^Conjureur écarlate^^
+3246^4^0^12^13^1413^0.5582^0.3378^4^Fleeting Plainstrider^2075:1:1,4775:1:1,5087:2:2,5469:1:1,17056:3:3^
+3255^2^0^14^15^1413^0.5600^0.3416^2^Sunscale Screecher^4878:1:1,5062:2:2,5165:1:1,15970:1:1^
+3265^3^0^11^11^1413^0.5536^0.2633^3^Razormane Hunter^1516:1:1,2589:2:3^
+3267^8^0^10^11^1413^0.5550^0.2700^8^Razormane Water Seeker^2455:1:1,2589:2:2,3290:1:1,4537:1:1^
+3268^10^0^10^11^1413^0.5546^0.2681^10^Razormane Thornweaver^2589:4:10,2763:1:1^
 3560^17^0^56^57^2482^0.3081^0.7047^17^Healing Ward^^
+3939^3^0^7^7^1413^0.5535^0.2635^3^Razormane Wolf^^
 4472^4^0^57^58^1422^0.6201^0.5903^4^Vision cauchemardesque^12841:2:2,14047:2:6^
 4474^3^0^53^54^1422^0.4745^0.5079^3^Cadavre pourrissant^12840:1:1,14047:1:1^
 4475^3^0^52^53^1422^0.4739^0.5106^3^Zombie corrompu^6530:1:1^
@@ -231,16 +237,21 @@ GoldScout-export 6^mhdz1qdep8h7^31
 @i^1505^Warped Cloak
 @i^1509^Warped Leather Vest
 @i^1511^Commoner's Sword
+@i^1516^Worn Hatchet
 @i^1520^Sueur de troll
 @i^1639^Hache dévorante d'endurance
 @i^1645^Jus de baie lunaire
 @i^1688^Long Soft Tail
 @i^1735^Worn Mail Pants
+@i^2075^Priest's Mace of the Owl
 @i^2287^Haunch of Meat
 @i^2447^Pacifique
 @i^2452^Chardonnier
+@i^2455^Minor Mana Potion
 @i^2589^Linen Cloth
+@i^2763^Fisherman Knife
 @i^2799^Croc de gorille
+@i^3290^Ancestral Gloves
 @i^3291^Ancestral Woollies
 @i^3669^Gelatinous Goo
 @i^3671^Crâne pourrissant
@@ -269,6 +280,7 @@ GoldScout-export 6^mhdz1qdep8h7^31
 @i^4425^Parchemin d'Agilité III
 @i^4426^Parchemin de force III
 @i^4460^Palmure d'aile arrachée
+@i^4537^Tel'Abim Banana
 @i^4552^Fragment de pierre lisse
 @i^4558^Tonneau vide
 @i^4567^Merc Sword of Stamina
@@ -287,13 +299,19 @@ GoldScout-export 6^mhdz1qdep8h7^31
 @i^4608^Truffe noire brute
 @i^4638^Coffret d'acier renforcé
 @i^4693^Ceremonial Leather Belt
+@i^4775^Cracked Bill
 @i^4787^Poix ardente
+@i^4878^Broken Bloodstained Bow
+@i^5062^Raptor Head
+@i^5087^Plainstrider Beak
 @i^5116^Longue plume de queue
 @i^5117^Plume vibrante
 @i^5119^Fin cheveu flottant
 @i^5120^Long Tail Hair
 @i^5128^Peau de lézard dépouillée
 @i^5133^Gésier suintant
+@i^5165^Sunscale Feather
+@i^5469^Strider Meat
 @i^5471^Viande de cerf
 @i^5566^Broken Antler
 @i^5569^Algue
@@ -415,7 +433,8 @@ GoldScout-export 6^mhdz1qdep8h7^31
 @i^15731^Patron : Gantelets runiques en cuir
 @i^15767^Clé d'Hameya
 @i^15879^Griffe du Seigneur Ror
-@i^15970^Native Branch of Shadow Protection
+@i^15970^Native Branch of the Monkey
+@i^17056^Light Feather
 @i^17413^Codex : Prière de Robustesse
 @i^18512^Acide de larve
 @i^18947^Peau de yéti Griffe féroce
@@ -491,16 +510,21 @@ GoldScout-export 6^mhdz1qdep8h7^31
 @q^1505^0:4:0
 @q^1509^0:4:0
 @q^1511^0:2:0
+@q^1516^0:2:0
 @q^1520^0:15:0
 @q^1639^2:2:0
 @q^1645^1:0:0
 @q^1688^0:15:0
 @q^1735^0:4:0
+@q^2075^2:2:0
 @q^2287^1:0:0
 @q^2447^1:7:1
 @q^2452^1:7:1
+@q^2455^1:0:0
 @q^2589^1:7:1
+@q^2763^0:2:0
 @q^2799^1:12:0
+@q^3290^1:4:0
 @q^3291^2:4:0
 @q^3669^0:15:0
 @q^3671^0:15:0
@@ -529,6 +553,7 @@ GoldScout-export 6^mhdz1qdep8h7^31
 @q^4425^1:0:0
 @q^4426^1:0:0
 @q^4460^0:15:0
+@q^4537^1:0:0
 @q^4552^0:15:0
 @q^4558^0:15:0
 @q^4567^2:2:0
@@ -547,13 +572,19 @@ GoldScout-export 6^mhdz1qdep8h7^31
 @q^4608^1:0:0
 @q^4638^2:15:0
 @q^4693^1:4:0
+@q^4775^0:15:0
 @q^4787^0:15:0
+@q^4878^0:15:0
+@q^5062^1:12:0
+@q^5087^1:12:0
 @q^5116^1:7:1
 @q^5117^1:12:0
 @q^5119^0:15:0
 @q^5120^0:15:0
 @q^5128^0:15:0
 @q^5133^0:15:0
+@q^5165^1:12:0
+@q^5469^1:7:1
 @q^5471^1:7:1
 @q^5566^0:15:0
 @q^5569^0:15:0
@@ -676,6 +707,7 @@ GoldScout-export 6^mhdz1qdep8h7^31
 @q^15767^1:12:0
 @q^15879^1:12:0
 @q^15970^2:4:0
+@q^17056^1:15:1
 @q^17413^3:9:0
 @q^18512^1:7:1
 @q^18947^1:12:0
@@ -744,6 +776,7 @@ GoldScout-export 6^mhdz1qdep8h7^31
 @q^281017^1:0:0
 @q^281018^1:0:0
 @q^282028^1:12:0
+@m^1413^The Barrens
 @m^1422^Maleterres de l'ouest
 @m^1423^Maleterres de l'est
 @m^1435^Marais des Chagrins
@@ -1239,7 +1272,13 @@ GoldScout-export 6^mhdz1qdep8h7^31
 @a^1831^208:3
 @a^1833^129:1,150:1,169:3,170:5
 @a^1835^208:2
+@a^3246^131:3,151:1
+@a^3255^131:1,151:1
+@a^3265^111:3
+@a^3267^111:8
+@a^3268^110:1,111:9
 @a^3560^244:1,264:2,266:3,267:2,285:3,286:4,306:2
+@a^3939^111:3
 @a^4472^232:4
 @a^4474^189:1,209:2
 @a^4475^189:1,209:2

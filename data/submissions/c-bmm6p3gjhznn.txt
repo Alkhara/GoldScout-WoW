@@ -1,4 +1,4 @@
-GoldScout-export 6^bmm6p3gjhznn^26
+GoldScout-export 6^bmm6p3gjhznn^27
 232^1^0^23^23^1424^0.3456^0.3496^1^Ray le fermier^3692:1:1^
 588^7^0^34^35^1434^0.2354^0.1298^7^Eclaireur Bloodscalp^2725:1:1,2742:1:1,3771:1:1,3915:1:1,4306:4:5^
 595^7^0^34^35^1434^0.2431^0.1338^7^Chasseur Bloodscalp^2592:1:2,2732:1:1,3771:1:1,3915:2:2,4306:1:2^
@@ -58,6 +58,9 @@ GoldScout-export 6^bmm6p3gjhznn^26
 2269^9^0^26^27^1424^0.3113^0.5447^9^Mineur d'Hillsbrad^422:1:1,1205:1:1,2592:1:1,2772:1:2,4306:2:4^
 2305^1^0^30^30^1424^0.3139^0.5612^1^Contremaître Bonds^^
 2335^3^0^30^30^1424^0.2970^0.4169^3^Magistrat Burnside^422:1:1,3692:1:1,4306:1:2^
+2344^6^0^28^29^1424^0.7013^0.7766^6^Montagnarde de Dun Garok^1205:2:2,1826:1:1,1830:1:1,4306:3:3^
+2345^2^0^29^30^1424^0.7076^0.7712^2^Fusilier de Dun Garok^1826:1:1,3693:1:1,4542:1:1^
+2346^2^0^29^30^1424^0.7217^0.8055^2^Prêtresse de Dun Garok^6590:1:1^
 2349^1^0^25^25^1424^0.8638^0.4585^1^Rampemousse géante^3182:1:1^
 2350^2^0^20^21^1424^0.6181^0.1370^2^Rampemousse forestière^1081:1:1,3477:1:1^
 2351^5^0^21^22^1424^0.6044^0.1675^5^Ours gris^2940:1:1,3476:2:2,3730:2:2,11406:1:1^
@@ -170,12 +173,16 @@ GoldScout-export 6^bmm6p3gjhznn^26
 4051^2^0^23^24^1442^0.3580^0.1262^2^Botaniste cénarien^1823:1:1,2592:1:2^
 4057^1^0^24^25^1442^0.3696^0.1364^1^Fils de Cénarius^^
 4067^13^0^23^24^1442^0.3302^0.1042^13^Coureur crépusculaire^5135:3:3,5136:6:6,5584:5:5^
+4100^4^0^28^29^1441^0.2619^0.5446^4^Harpie hurlante^3186:1:1,4306:1:1^
+4101^4^0^29^30^1441^0.2783^0.5201^4^Volplume hurlante^3770:1:1,4306:1:2,5117:2:2,5636:1:1,17056:2:2^
+4104^1^0^30^30^1441^0.2670^0.5599^1^Imploratrice céleste hurlante^5117:1:1^
 4128^1^0^22^23^1413^0.4644^0.7697^1^Traqueuse Jappecroc^3301:1:1^
 4274^1^0^0^0^0^0.0000^0.0000^0^^3230:1:1^
 4275^1^0^0^0^0^0.0000^0.0000^0^^929:1:1,3385:1:1,5442:1:1,6392:1:1^
 4278^1^0^0^0^0^0.0000^0.0000^0^^3191:1:1^
 4279^1^0^0^0^0^0.0000^0.0000^0^^929:1:1,6319:1:1^
 4416^8^0^0^0^0^0.0000^0.0000^0^^1180:1:1,1764:1:1,2781:1:1,10402:1:1^
+4490^1^0^31^31^1441^0.2696^0.5532^1^Grenka Hurlesang^5843:1:1^
 4627^1^0^0^0^0^0.0000^0.0000^0^^6438:1:1^
 4788^2^0^20^21^1414^0.4402^0.3485^2^Satyre Sans-racines^1777:1:1^
 4798^3^0^0^0^0^0.0000^0.0000^0^^1819:1:1,2592:1:2,4998:1:1^
@@ -286,6 +293,8 @@ GoldScout-export 6^bmm6p3gjhznn^26
 @i^1822^Bâton de marche
 @i^1823^Gourdin fracassant
 @i^1824^Hache de guerre rutilante
+@i^1826^Brise-roc
+@i^1830^Bâtarde longue
 @i^2072^Bâton des mages nains d'esprit
 @i^2215^Bouclier en bois
 @i^2217^Bouclier rectangulaire
@@ -324,6 +333,7 @@ GoldScout-export 6^bmm6p3gjhznn^26
 @i^3180^Ecaille de raptor tacheté
 @i^3182^Soie d'araignée
 @i^3184^Dague crochet de guérison
+@i^3186^Epée viking de canalisation
 @i^3191^Hache de guerre du croissant
 @i^3195^Hache de bataille barbare de guérison
 @i^3230^Brassards du loup noir
@@ -350,6 +360,7 @@ GoldScout-export 6^bmm6p3gjhznn^26
 @i^3676^Ichor visqueux
 @i^3685^Oeuf de raptor
 @i^3692^Crâne d'humain d'Hillsbrad
+@i^3693^Epée d'Humbert
 @i^3702^Vésicule biliaire d'ours
 @i^3708^Bâtonnet d'Helcular
 @i^3712^Viande de tortue
@@ -403,6 +414,7 @@ GoldScout-export 6^bmm6p3gjhznn^26
 @i^5098^Carapace de Gueule d'acier altérée
 @i^5114^Griffe abîmée
 @i^5116^Longue plume de queue
+@i^5117^Plume vibrante
 @i^5124^Petite dent de raptor
 @i^5133^Gésier suintant
 @i^5134^Petite patte en fourrure
@@ -429,8 +441,10 @@ GoldScout-export 6^bmm6p3gjhznn^26
 @i^5584^Moustache crépusculaire
 @i^5585^Oeil de coursier
 @i^5635^Griffe aiguisée
+@i^5636^Plume délicate
 @i^5637^Grand croc
 @i^5784^Ecailles de murloc visqueuses
+@i^5843^Griffes de Grenka
 @i^5871^Grand sabot
 @i^5881^Tête de Kelris
 @i^6308^Poisson-chat moustachu cru
@@ -458,6 +472,7 @@ GoldScout-export 6^bmm6p3gjhznn^26
 @i^6569^Robe chatoyante du loup
 @i^6576^Ceinturon de défenseur de la baleine
 @i^6578^Jambières de défenseur de l'épervier
+@i^6590^Bottes de forgeguerre de protection contre les arcanes
 @i^6597^Garde-épaules de forgeguerre d'esprit
 @i^6631^Racine vivante
 @i^6633^Hachoir du boucher
@@ -616,6 +631,8 @@ GoldScout-export 6^bmm6p3gjhznn^26
 @q^1822^0:2:0
 @q^1823^0:2:0
 @q^1824^0:2:0
+@q^1826^0:2:0
+@q^1830^0:2:0
 @q^2072^2:2:0
 @q^2215^0:4:0
 @q^2217^0:4:0
@@ -654,6 +671,7 @@ GoldScout-export 6^bmm6p3gjhznn^26
 @q^3180^0:15:0
 @q^3182^1:7:1
 @q^3184^2:2:0
+@q^3186^2:2:0
 @q^3191^3:2:0
 @q^3195^2:2:0
 @q^3230^3:4:0
@@ -680,6 +698,7 @@ GoldScout-export 6^bmm6p3gjhznn^26
 @q^3676^0:15:0
 @q^3685^1:7:1
 @q^3692^1:12:0
+@q^3693^1:12:0
 @q^3702^0:15:0
 @q^3708^1:12:0
 @q^3712^1:7:1
@@ -733,6 +752,7 @@ GoldScout-export 6^bmm6p3gjhznn^26
 @q^5098^1:12:0
 @q^5114^0:15:0
 @q^5116^1:7:1
+@q^5117^1:12:0
 @q^5124^0:15:0
 @q^5133^0:15:0
 @q^5134^1:12:0
@@ -759,8 +779,10 @@ GoldScout-export 6^bmm6p3gjhznn^26
 @q^5584^1:12:0
 @q^5585^1:12:0
 @q^5635^1:7:1
+@q^5636^0:15:0
 @q^5637^1:7:1
 @q^5784^1:7:1
+@q^5843^1:12:0
 @q^5871^0:15:0
 @q^5881^1:12:0
 @q^6308^1:7:1
@@ -788,6 +810,7 @@ GoldScout-export 6^bmm6p3gjhznn^26
 @q^6569^2:4:0
 @q^6576^2:4:0
 @q^6578^2:4:0
+@q^6590^2:4:0
 @q^6597^2:4:0
 @q^6631^3:2:0
 @q^6633^3:2:0
@@ -898,6 +921,7 @@ GoldScout-export 6^bmm6p3gjhznn^26
 @m^1437^Les Paluns
 @m^1439^Sombrivage
 @m^1440^Orneval
+@m^1441^Mille pointes
 @m^1442^Les Serres-Rocheuses
 @c^2568^
 @c^2569^
@@ -1514,6 +1538,9 @@ GoldScout-export 6^bmm6p3gjhznn^26
 @a^2269^205:1,206:7,226:1
 @a^2305^226:1
 @a^2335^165:3
+@a^2344^293:1,313:2,314:2,334:1
+@a^2345^314:2
+@a^2346^334:2
 @a^2349^197:1
 @a^2350^52:1,72:1
 @a^2351^32:2,52:1,111:2
@@ -1600,7 +1627,11 @@ GoldScout-export 6^bmm6p3gjhznn^26
 @a^4051^47:2
 @a^4057^47:1
 @a^4067^26:6,46:7
+@a^4100^205:2,225:2
+@a^4101^185:1,205:2,225:1
+@a^4104^225:1
 @a^4128^309:1
+@a^4490^225:1
 @a^4788^128:2
 @a^4802^128:1
 @a^6668^349:1
