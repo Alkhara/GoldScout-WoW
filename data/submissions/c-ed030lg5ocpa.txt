@@ -1,4 +1,4 @@
-GoldScout-export 6^ed030lg5ocpa^8
+GoldScout-export 6^ed030lg5ocpa^9
 94^2^0^5^6^1429^0.3601^0.6569^2^Defias Cutpurse^^
 704^7^0^2^2^1426^0.2635^0.7626^7^Ragged Timber Wolf^1372:1:1,2652:1:1,4865:3:3,7073:1:1,7074:4:4^
 705^24^0^1^1^1426^0.2874^0.7356^24^Ragged Young Wolf^750:8:8,1368:1:1,1372:1:1,1374:1:1,1376:1:1,1377:1:1,1380:1:1,2650:2:2,2656:1:1,4865:9:9,7073:10:10,7074:9:9^
@@ -7,11 +7,16 @@ GoldScout-export 6^ed030lg5ocpa^8
 708^19^0^3^3^1426^0.2345^0.7035^19^Small Crag Boar^117:2:2,1366:1:1,2211:1:1,2649:1:1,4865:8:8,7098:11:11^
 724^6^0^2^2^1426^0.3096^0.7558^6^Burly Rockjaw Trogg^117:2:2,159:1:1,2589:3:3^
 808^1^0^5^5^1426^0.3028^0.7944^1^Grik'nir the Cold^117:1:1,2004:1:1,2589:1:1^
-1121^2^0^9^9^1426^0.3324^0.4704^2^Frostmane Snowstrider^1430:1:1^
+1115^6^0^8^9^1426^0.6941^0.5774^6^Rockjaw Skullthumper^159:1:1,2589:1:2,4496:1:1,268548:1:1^
+1120^1^0^8^8^1426^0.2667^0.5037^1^Frostmane Troll^2589:1:1^
+1121^5^0^8^9^1426^0.2739^0.4909^5^Frostmane Snowstrider^1430:1:1,2259:1:1,2589:1:2,2642:1:1,2645:1:1^
+1122^3^0^9^10^1426^0.2142^0.5132^3^Frostmane Hideskinner^2589:1:2^
+1123^8^0^8^9^1426^0.2324^0.5091^8^Frostmane Headhunter^117:1:1,159:1:1,767:1:1,2589:2:2^
+1124^1^0^9^9^1426^0.2108^0.5430^1^Frostmane Shadowcaster^^
 1125^6^0^5^6^1426^0.4596^0.5573^6^Crag Boar^769:5:5,2886:3:3,3171:2:2^
 1126^8^0^6^7^1426^0.5397^0.4781^8^Large Crag Boar^769:5:5,2886:4:4^
 1127^8^0^7^8^1426^0.3337^0.3761^8^Elder Crag Boar^769:2:2,771:1:1,2886:3:3,3171:1:1,3172:4:4^
-1128^5^0^5^6^1426^0.4353^0.5617^5^Young Black Bear^6952:2:2,7074:1:1^
+1128^6^0^5^6^1426^0.4363^0.5537^6^Young Black Bear^6952:2:2,7074:1:1^
 1131^3^0^7^8^1426^0.4903^0.4672^3^Winter Wolf^2672:1:1,3300:1:1^
 1134^6^0^5^6^1426^0.4256^0.5450^6^Young Wendigo^118:2:2,159:1:1,1377:1:1,2671:6:6,5572:1:1^
 1135^4^0^6^7^1426^0.4250^0.5096^4^Wendigo^1412:1:1,1429:1:1,2642:1:1,2671:1:1^
@@ -19,6 +24,7 @@ GoldScout-export 6^ed030lg5ocpa^8
 1196^6^0^7^8^1426^0.3406^0.3901^6^Ice Claw Bear^3169:2:2,7073:2:2,7074:1:1^
 1199^1^0^6^6^1426^0.4073^0.6056^1^Juvenile Snow Leopard^^
 1201^7^0^7^8^1426^0.3787^0.3983^7^Snow Leopard^4814:5:5,8177:1:1,8179:1:1^
+1211^16^0^8^10^1426^0.2519^0.4172^16^Leper Gnome^118:2:2,768:1:1,1427:1:1,2589:5:7,3083:8:8,3084:8:8,4540:1:1,6521:1:1^
 1397^3^0^8^9^1426^0.4130^0.4401^3^Frostmane Seer^117:1:1,2676:1:1^
 1718^6^0^3^4^1426^0.3513^0.6816^6^Rockjaw Raider^1364:1:1,1380:1:1,2589:2:2^
 2727^3^0^35^36^1418^0.5293^0.1860^3^Crag Coyote^4582:2:2,12203:1:1^
@@ -173,6 +179,8 @@ GoldScout-export 6^ed030lg5ocpa^8
 @i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
 @i^750^Tough Wolf Meat
+@i^767^Long Bo Staff
+@i^768^Lumberjack Axe
 @i^769^Chunk of Boar Meat
 @i^771^Chipped Boar Tusk
 @i^1074^Hard Spider Leg Tip
@@ -195,8 +203,10 @@ GoldScout-export 6^ed030lg5ocpa^8
 @i^1430^Patchwork Gloves
 @i^2004^Grelin Whitebeard's Journal
 @i^2211^Bent Large Shield
+@i^2259^Frostmane Club
 @i^2589^Linen Cloth
 @i^2642^Loose Chain Boots
+@i^2645^Loose Chain Gloves
 @i^2649^Flimsy Chain Belt
 @i^2650^Flimsy Chain Boots
 @i^2652^Flimsy Chain Cloak
@@ -205,6 +215,8 @@ GoldScout-export 6^ed030lg5ocpa^8
 @i^2672^Stringy Wolf Meat
 @i^2676^Shimmerweed
 @i^2886^Crag Boar Rib
+@i^3083^Restabilization Cog
+@i^3084^Gyromechanic Gear
 @i^3169^Chipped Bear Tooth
 @i^3171^Broken Boar Tusk
 @i^3172^Boar Intestines
@@ -223,7 +235,9 @@ GoldScout-export 6^ed030lg5ocpa^8
 @i^4020^Splintering Battle Axe
 @i^4337^Thick Spider's Silk
 @i^4425^Scroll of Agility III
+@i^4496^Small Brown Pouch
 @i^4500^Traveler's Backpack
+@i^4540^Tough Hunk of Bread
 @i^4552^Smooth Stone Chip
 @i^4582^Soft Bushy Tail
 @i^4583^Thick Furry Mane
@@ -242,6 +256,7 @@ GoldScout-export 6^ed030lg5ocpa^8
 @i^5572^Small Green Pouch
 @i^5759^Thorium Lockbox
 @i^6302^Delicate Insect Wing
+@i^6521^Pioneer Gloves
 @i^6530^Nightcrawlers
 @i^6952^Thick Bear Fur
 @i^7067^Elemental Earth
@@ -411,6 +426,7 @@ GoldScout-export 6^ed030lg5ocpa^8
 @i^262890^Sealed Artisan's Writ
 @i^263028^Enchanted Harpy Amulet
 @i^264356^Iceclaw Bear Pendant
+@i^268548^Empty Powder Keg
 @i^268997^Wormwing Pinfeather
 @i^268998^Omnuron's Spear
 @i^271220^Ephemeral Essence
@@ -424,6 +440,8 @@ GoldScout-export 6^ed030lg5ocpa^8
 @q^118^1:0:0
 @q^159^1:0:0
 @q^750^1:12:0
+@q^767^1:2:0
+@q^768^1:2:0
 @q^769^1:7:1
 @q^771^0:15:0
 @q^1074^0:15:0
@@ -446,8 +464,10 @@ GoldScout-export 6^ed030lg5ocpa^8
 @q^1430^0:4:0
 @q^2004^1:12:0
 @q^2211^0:4:0
+@q^2259^1:2:0
 @q^2589^1:7:1
 @q^2642^0:4:0
+@q^2645^0:4:0
 @q^2649^0:4:0
 @q^2650^0:4:0
 @q^2652^0:4:0
@@ -456,6 +476,8 @@ GoldScout-export 6^ed030lg5ocpa^8
 @q^2672^1:7:1
 @q^2676^1:12:0
 @q^2886^1:7:1
+@q^3083^1:12:0
+@q^3084^1:12:0
 @q^3169^0:15:0
 @q^3171^0:15:0
 @q^3172^1:7:1
@@ -474,7 +496,9 @@ GoldScout-export 6^ed030lg5ocpa^8
 @q^4020^0:2:0
 @q^4337^1:7:1
 @q^4425^1:0:0
+@q^4496^1:1:0
 @q^4500^2:1:0
+@q^4540^1:0:0
 @q^4552^0:15:0
 @q^4582^1:12:0
 @q^4583^0:15:0
@@ -493,6 +517,7 @@ GoldScout-export 6^ed030lg5ocpa^8
 @q^5572^1:1:0
 @q^5759^2:15:0
 @q^6302^0:15:0
+@q^6521^1:4:0
 @q^6530^1:0:0
 @q^6952^1:12:0
 @q^7067^1:7:1
@@ -662,6 +687,7 @@ GoldScout-export 6^ed030lg5ocpa^8
 @q^262890^3:0:0
 @q^263028^1:12:0
 @q^264356^1:12:0
+@q^268548^1:12:0
 @q^268997^1:12:0
 @q^268998^1:12:0
 @q^271220^1:12:0
@@ -1020,11 +1046,16 @@ GoldScout-export 6^ed030lg5ocpa^8
 @a^708^264:10,265:1,284:4,285:3,286:1
 @a^724^286:1,306:5
 @a^808^306:1
-@a^1121^168:1,185:1
+@a^1115^233:6
+@a^1120^205:1
+@a^1121^168:1,185:1,204:2,205:1
+@a^1122^204:3
+@a^1123^204:6,205:2
+@a^1124^204:1
 @a^1125^209:1,210:2,228:1,229:1,247:1
 @a^1126^190:5,191:2,210:1
 @a^1127^126:1,146:3,147:3,165:1
-@a^1128^189:1,209:1,228:1,247:2
+@a^1128^189:1,208:1,209:1,228:1,247:2
 @a^1131^188:1,190:2
 @a^1134^208:2,228:4
 @a^1135^188:2,208:2
@@ -1032,6 +1063,7 @@ GoldScout-export 6^ed030lg5ocpa^8
 @a^1196^146:4,167:1,187:1
 @a^1199^248:1
 @a^1201^146:3,147:3,211:1
+@a^1211^144:1,145:2,164:5,165:8
 @a^1397^168:3
 @a^1718^266:1,267:4,286:1
 @a^2727^70:2,90:1
