@@ -1,4 +1,4 @@
-GoldScout-export 6^csf2ksjh74e4^2
+GoldScout-export 6^csf2ksjh74e4^3
 3743^8^0^23^24^1440^0.5192^0.6160^8^Foulweald Warrior^2592:2:4,4306:1:1,4538:1:1,16655:1:1^
 3745^2^0^23^23^1440^0.5085^0.6072^2^Foulweald Pathfinder^4306:1:1,16655:1:1,16656:1:1^
 3746^3^0^24^25^1440^0.5315^0.6184^3^Foulweald Den Watcher^929:1:1,2592:1:2,2765:1:1^
@@ -7,21 +7,22 @@ GoldScout-export 6^csf2ksjh74e4^2
 3750^2^0^24^24^1440^0.5052^0.6084^2^Foulweald Totemic^2592:1:1^
 3782^2^0^25^26^1440^0.7256^0.6373^2^Shadethicket Stone Mover^^
 3784^2^0^26^27^1440^0.7105^0.6550^2^Shadethicket Bark Ripper^^
-3809^1^0^22^22^1440^0.4943^0.6287^1^Ashenvale Bear^11406:1:1^
+3809^1^0^21^22^1440^0.4943^0.6287^1^Ashenvale Bear^11406:1:1^
 3810^5^0^25^26^1440^0.6654^0.6294^5^Elder Ashenvale Bear^3730:1:1,5635:1:1,5637:1:1,11406:2:2,11407:3:3^
 3818^1^0^26^26^1440^0.6909^0.6968^1^Elder Shadowhorn Stag^5471:1:1^
-3819^2^0^20^20^1440^0.7238^0.7650^2^Wildthorn Stalker^1081:1:1,2251:1:1,4428:1:1^
+3819^2^0^20^21^1440^0.7238^0.7650^2^Wildthorn Stalker^1081:1:1,2251:1:1,4428:1:1^
 3820^4^0^24^25^1440^0.6262^0.6600^4^Wildthorn Venomspitter^1081:1:1,1288:1:1,2251:1:1,3174:2:2,4428:1:1,211854:1:1^
-3823^1^0^20^20^1440^0.7136^0.8171^1^Ghostpaw Runner^1015:1:1^
+3823^1^0^19^20^1440^0.7136^0.8171^1^Ghostpaw Runner^1015:1:1^
 3824^1^0^23^24^1440^0.5758^0.7398^1^Ghostpaw Howler^1015:1:1^
 3825^2^0^27^28^1440^0.6748^0.6759^2^Ghostpaw Alpha^1015:2:2,5635:1:1^
-3928^11^0^20^22^1440^0.7203^0.7423^11^Rotting Slime^2782:1:1,3669:4:4,3670:1:1,3674:4:4,3676:2:2,14571:1:1,16645:1:1^
-12856^3^0^23^24^1440^0.7205^0.7385^3^Ashenvale Outrunner^16645:1:1^
+3928^15^0^20^22^1440^0.7216^0.7364^15^Rotting Slime^2782:2:2,3669:5:5,3670:1:1,3674:5:5,3676:3:3,14571:1:1,16645:1:1,16648:1:1,16654:1:1^
+12856^6^0^23^24^1440^0.7248^0.7283^6^Ashenvale Outrunner^2589:1:2,2592:1:2,16645:1:1,16647:1:1^
 @i^929^Healing Potion
 @i^1015^Lean Wolf Flank
 @i^1081^Crisp Spider Meat
 @i^1288^Large Venom Sac
 @i^2251^Gooey Spider Leg
+@i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2765^Hunting Knife
 @i^2782^Mishandled Recurve Bow
@@ -43,6 +44,9 @@ GoldScout-export 6^csf2ksjh74e4^2
 @i^11407^Torn Bear Pelt
 @i^14571^Bristlebark Cape
 @i^16645^Shredder Operating Manual - Page 1
+@i^16647^Shredder Operating Manual - Page 3
+@i^16648^Shredder Operating Manual - Page 4
+@i^16654^Shredder Operating Manual - Page 10
 @i^16655^Shredder Operating Manual - Page 11
 @i^16656^Shredder Operating Manual - Page 12
 @i^16743^Logging Rope
@@ -52,6 +56,7 @@ GoldScout-export 6^csf2ksjh74e4^2
 @q^1081^1:7:1
 @q^1288^1:7:1
 @q^2251^1:7:1
+@q^2589^1:7:1
 @q^2592^1:7:1
 @q^2765^0:2:0
 @q^2782^0:2:0
@@ -73,6 +78,9 @@ GoldScout-export 6^csf2ksjh74e4^2
 @q^11407^1:12:0
 @q^14571^2:4:0
 @q^16645^1:12:0
+@q^16647^1:12:0
+@q^16648^1:12:0
+@q^16654^1:12:0
 @q^16655^1:12:0
 @q^16656^1:12:0
 @q^16743^1:12:0
@@ -550,7 +558,7 @@ GoldScout-export 6^csf2ksjh74e4^2
 @a^3823^334:1
 @a^3824^291:1
 @a^3825^273:2
-@a^3928^294:6,314:5
-@a^12856^294:2,314:1
+@a^3928^274:2,294:7,314:6
+@a^12856^274:1,294:3,314:2
 @f^1440^0^31^96^6289:15:15,6308:16:16^255:31
 @l^0^enUS

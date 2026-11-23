@@ -1,4 +1,4 @@
-GoldScout-export 6^hr6hu2uqty5d^13
+GoldScout-export 6^hr6hu2uqty5d^14
 92^4^0^39^40^1418^0.3350^0.6738^4^Felselementar^4552:1:1,4553:2:2,4627:3:3,7912:1:2,8150:1:1^
 588^1^0^35^35^1434^0.2272^0.1194^1^Späher der Bloodscalp^^
 597^3^0^36^37^1434^0.2333^0.0946^3^Berserker der Bloodscalp^4306:1:3^
@@ -18,6 +18,8 @@ GoldScout-export 6^hr6hu2uqty5d^13
 696^17^0^39^40^1434^0.4730^0.3924^17^Axtwerfer der Skullsplitter^1520:7:7,1524:5:5,2742:1:1,3812:1:1,3916:4:4,4306:6:11,4338:1:1,8153:1:3^
 701^1^0^35^35^1434^0.2297^0.1222^1^Mystiker der Bloodscalp^^
 728^1^0^40^40^1434^0.4901^0.2509^1^Bhag'thera^1688:1:1,3876:1:1,12202:1:1^
+740^12^0^34^35^1435^0.1380^0.6326^12^Halbwüchsiger Welpe^4402:2:2,4459:1:1,5637:1:1,5803:5:5,8146:1:1^
+741^15^0^35^36^1435^0.1425^0.6226^15^Träumender Welpe^4459:1:1,5803:5:5,8146:1:1,9857:1:1^
 756^4^0^41^42^1434^0.4660^0.4265^4^Panther der Skullsplitter^^
 772^1^0^37^38^1434^0.5003^0.2031^1^Schlingendorntigerin^1686:1:1,12202:1:1^
 780^11^0^39^40^1434^0.4732^0.3973^11^Mystiker der Skullsplitter^1520:6:6,2740:1:1,3916:5:5,4306:3:5,8153:1:2,213127:1:1,213543:1:1^
@@ -85,7 +87,9 @@ GoldScout-export 6^hr6hu2uqty5d^13
 @i^4105^Haut eines alten Krokilisken
 @i^4306^Seidenstoff
 @i^4338^Magiestoff
+@i^4402^Kleiner Flammenbeutel
 @i^4424^Rolle der Willenskraft III
+@i^4459^Spröder Großdrachenknochen
 @i^4461^Raptorbalg
 @i^4552^Glattes Steinbruchstück
 @i^4553^Gezacktes Steinstück
@@ -105,6 +109,7 @@ GoldScout-export 6^hr6hu2uqty5d^13
 @i^5636^Zierliche Feder
 @i^5637^Großer Fangzahn
 @i^5797^Induriumspäne
+@i^5803^Körnchen Traumstaub
 @i^5829^Rasiermesserscharfer Schnabel
 @i^6166^Kojotenkieferknochen
 @i^7072^Nagaschuppe
@@ -119,6 +124,7 @@ GoldScout-export 6^hr6hu2uqty5d^13
 @i^8151^Fläschchen Mojo
 @i^8153^Wildranke
 @i^9288^Feldplattengurt der Bestie
+@i^9857^Bogenschützen-Armschienen des Banditen
 @i^9901^Jazeraintgürtel des Falken
 @i^11416^Zierlicher Brustkorb
 @i^11418^Hohler Flügelknochen
@@ -175,7 +181,9 @@ GoldScout-export 6^hr6hu2uqty5d^13
 @q^4105^1:12:0
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4402^1:7:1
 @q^4424^1:0:0
+@q^4459^0:15:0
 @q^4461^1:7:1
 @q^4552^0:15:0
 @q^4553^0:15:0
@@ -195,6 +203,7 @@ GoldScout-export 6^hr6hu2uqty5d^13
 @q^5636^0:15:0
 @q^5637^1:7:1
 @q^5797^1:12:0
+@q^5803^1:12:0
 @q^5829^0:15:0
 @q^6166^1:12:0
 @q^7072^1:7:1
@@ -209,6 +218,7 @@ GoldScout-export 6^hr6hu2uqty5d^13
 @q^8151^1:7:1
 @q^8153^1:7:1
 @q^9288^2:4:0
+@q^9857^2:4:0
 @q^9901^2:4:0
 @q^11416^0:15:0
 @q^11418^0:15:0
@@ -229,6 +239,7 @@ GoldScout-export 6^hr6hu2uqty5d^13
 @m^1417^Arathihochland
 @m^1418^Ödland
 @m^1434^Schlingendorntal
+@m^1435^Sümpfe des Elends
 @c^2454^
 @c^2455^
 @c^2456^
@@ -444,6 +455,8 @@ GoldScout-export 6^hr6hu2uqty5d^13
 @a^696^128:2,129:1,149:5,169:9
 @a^701^44:1
 @a^728^109:1
+@a^740^222:2,223:1,242:3,243:2,262:4
+@a^741^222:1,223:2,242:8,243:2,262:1,263:1
 @a^756^169:4
 @a^772^90:1
 @a^780^129:1,149:4,169:6

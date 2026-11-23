@@ -1,14 +1,19 @@
-GoldScout-export 6^7nxautiy1uor^2
+GoldScout-export 6^7nxautiy1uor^3
 3^5^0^24^25^1431^0.2218^0.3556^5^Flesh Eater^884:1:1,887:1:1,1819:1:1,2592:3:4,3378:1:1,4412:1:1,4606:1:1,5529:2:2,6530:2:2^
 205^12^0^28^29^1431^0.6269^0.4473^12^Nightbane Dark Runner^1205:1:1,1755:1:1,1758:1:1,248686:1:1^
+206^7^0^29^30^1431^0.7255^0.6938^7^Nightbane Vile Fang^1808:1:1,1831:1:1,4064:1:1,248687:1:1^
 210^7^0^26^27^1431^0.2396^0.3454^7^Bone Chewer^884:1:1,929:1:1,2592:3:5,4306:2:3,5529:1:1,6530:1:1^
 212^2^0^29^30^1431^0.3384^0.7592^2^Splinter Fist Warrior^4306:1:2^
 213^1^0^19^20^1431^0.1328^0.2709^1^Starving Dire Wolf^1015:1:1^
 300^1^0^30^30^1431^0.3701^0.8311^1^Zzarc' Vul^1968:1:1,4306:1:2^
+315^1^0^32^32^1431^0.7734^0.3554^1^Stalvan Mistmantle^3629:1:1^
 507^1^0^32^32^1431^0.6084^0.3741^1^Fenros^4474:1:1^
 533^6^0^27^28^1431^0.6284^0.4316^6^Nightbane Shadow Weaver^1760:1:1^
 570^1^0^28^28^1431^0.2551^0.3301^1^Brain Eater^2592:1:2^
 604^20^0^27^28^1431^0.2455^0.3445^20^Plague Spreader^884:3:3,887:3:3,1205:1:1,1825:1:1,2592:3:4,3385:1:1,4306:2:3,5529:2:2,6530:1:1,9838:1:1^
+909^1^0^25^25^1431^0.4961^0.7649^1^Defias Night Blade^422:1:1^
+910^1^0^27^27^1431^0.4961^0.7649^1^Defias Enchanter^2592:1:1,255724:1:1^
+920^7^0^30^31^1431^0.7385^0.7795^7^Nightbane Tainted One^1205:1:1,1782:1:1,3385:1:1^
 948^5^0^25^26^1431^0.2259^0.3659^5^Rotted One^884:2:2,887:1:1,2592:2:2^
 949^2^0^25^26^1431^0.2393^0.3644^2^Carrion Recluse^1081:1:1,2251:1:1,3174:1:1,4428:1:1^
 1251^1^0^28^29^1431^0.3710^0.8308^1^Splinter Fist Firemonger^^
@@ -24,6 +29,7 @@ GoldScout-export 6^7nxautiy1uor^2
 1717^1^0^0^0^0^0.0000^0.0000^0^^273811:1:1^
 2044^1^0^25^25^1429^0.8559^0.6962^1^Forlorn Spirit^2592:1:1^
 2462^14^0^25^25^1431^0.2302^0.3609^14^Flesh Eating Worm^^
+6170^4^0^32^32^1431^0.7364^0.7705^4^Gutspill^^
 @i^422^Dwarven Mild
 @i^884^Ghoul Rib
 @i^887^Pound of Flesh
@@ -35,8 +41,11 @@ GoldScout-export 6^7nxautiy1uor^2
 @i^1755^Reinforced Chain Boots
 @i^1758^Reinforced Chain Gloves
 @i^1760^Reinforced Chain Shoulderpads
+@i^1782^Cross-stitched Cloak
+@i^1808^Tough Leather Pants
 @i^1819^Gouging Pick
 @i^1825^Bulky Bludgeon
+@i^1831^Oaken War Staff
 @i^1968^Ogre's Monocle
 @i^2251^Gooey Spider Leg
 @i^2589^Linen Cloth
@@ -49,7 +58,9 @@ GoldScout-export 6^7nxautiy1uor^2
 @i^3379^Brocade Bracers
 @i^3385^Lesser Mana Potion
 @i^3628^Hand of Dextren Ward
+@i^3629^Mistmantle Family Ring
 @i^3630^Head of Targorr
+@i^4064^Emblazoned Buckler
 @i^4306^Silk Cloth
 @i^4412^Schematic: Moonsight Rifle
 @i^4428^Spider Palp
@@ -61,7 +72,9 @@ GoldScout-export 6^7nxautiy1uor^2
 @i^9838^Banded Cloak of the Elder
 @i^15223^Jagged Star of the Falcon
 @i^248686^Waylaid Crate: Journeyman Herbs
+@i^248687^Waylaid Crate: Journeyman Ore
 @i^252817^Pattern: Totemic Leather Helm
+@i^255724^Manual: Clever Poultice
 @i^273806^Dark Horde Band
 @i^273807^Demolition Girdle
 @i^273811^Repurposed Rack
@@ -79,8 +92,11 @@ GoldScout-export 6^7nxautiy1uor^2
 @q^1755^0:4:0
 @q^1758^0:4:0
 @q^1760^0:4:0
+@q^1782^0:4:0
+@q^1808^0:4:0
 @q^1819^0:2:0
 @q^1825^0:2:0
+@q^1831^0:2:0
 @q^1968^1:12:0
 @q^2251^1:7:1
 @q^2589^1:7:1
@@ -93,7 +109,9 @@ GoldScout-export 6^7nxautiy1uor^2
 @q^3379^0:4:0
 @q^3385^1:0:0
 @q^3628^1:12:0
+@q^3629^1:12:0
 @q^3630^1:12:0
+@q^4064^2:4:0
 @q^4306^1:7:1
 @q^4412^2:9:0
 @q^4428^0:15:0
@@ -105,7 +123,9 @@ GoldScout-export 6^7nxautiy1uor^2
 @q^9838^2:4:0
 @q^15223^2:2:0
 @q^248686^1:0:1
+@q^248687^1:0:1
 @q^252817^3:9:0
+@q^255724^2:9:0
 @q^273806^3:4:0
 @q^273807^3:4:0
 @q^273811^3:4:0
@@ -148,17 +168,23 @@ GoldScout-export 6^7nxautiy1uor^2
 @c^279968^
 @a^3^124:3,144:2
 @a^205^172:7,193:2,212:3
+@a^206^274:4,294:3
 @a^210^124:4,125:1,144:1,145:1
 @a^212^306:2
 @a^213^102:1
 @a^300^327:1
+@a^315^155:1
 @a^507^152:1
 @a^533^152:2,172:2,192:1,212:1
 @a^570^125:1
 @a^604^124:2,125:9,144:8,145:1
+@a^909^309:1
+@a^910^309:1
+@a^920^314:7
 @a^948^144:5
 @a^949^144:2
 @a^1251^327:1
 @a^2044^277:1
 @a^2462^124:2,144:12
+@a^6170^314:4
 @l^0^enUS
