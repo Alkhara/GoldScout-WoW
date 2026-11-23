@@ -1,4 +1,4 @@
-GoldScout-export 6^84b96zsyy4f3^9
+GoldScout-export 6^84b96zsyy4f3^10
 2248^12^0^30^31^1424^0.4628^0.3183^12^Yeti de cuevas^3708:1:1,3771:1:1,213545:1:1^
 2249^1^0^31^31^1424^0.4485^0.3124^1^Yeti feroz^^
 2265^4^0^24^25^1424^0.3215^0.4552^4^Herrero aprendiz de Trabalomas^2592:1:2^
@@ -57,6 +57,11 @@ GoldScout-export 6^84b96zsyy4f3^9
 4249^6^0^28^29^1441^0.2320^0.3532^6^Gruñidor Irriculto^3402:4:4,5635:2:2^
 4490^1^0^31^31^1441^0.2665^0.5589^1^Grenka Aullasangre^5843:1:1^
 4548^1^0^30^30^1441^0.1575^0.3082^1^Metaleador^5837:1:1^
+4663^5^0^30^31^1443^0.5574^0.2762^5^Augur Filo Ardiente^^
+4664^3^0^30^31^1443^0.5394^0.3140^3^Atracadora Filo Ardiente^^
+4665^2^0^31^32^1443^0.5547^0.2572^2^Adepta Filo Ardiente^^
+4666^7^0^31^32^1443^0.5522^0.2786^7^Jurapenas Filo Ardiente^3771:2:2,3780:1:1,4306:2:3^
+4692^2^0^32^32^1443^0.4586^0.3208^2^Aguilón aterrador^1464:2:2,3404:1:1,5636:1:1,11416:1:1^
 4788^3^0^20^21^1414^0.4390^0.3491^3^Sátiro Malarraíz^2592:2:4^
 4789^2^0^21^22^1414^0.4400^0.3495^2^Pícaro Malarraíz^2592:1:3,3385:1:1,14125:1:1^
 4798^1^0^0^0^0^0.0000^0.0000^0^^1747:1:1^
@@ -92,12 +97,14 @@ GoldScout-export 6^84b96zsyy4f3^9
 10760^10^0^25^27^1441^0.3605^0.3193^10^Geomántica Tótem Siniestro^3770:1:1,4306:2:3^
 10761^4^0^28^28^1441^0.3717^0.3355^4^Atracador Tótem Siniestro^1205:1:1,2592:2:2^
 10896^1^0^29^29^1441^0.3809^0.2668^1^Arnak Tótem Siniestro^12884:1:1^
+11576^1^0^34^34^1443^0.4641^0.3266^1^Desgarrador espirálico^^
 12677^1^0^28^28^1440^0.6109^0.5128^1^Shadumbra^16304:1:1^
 12678^1^0^25^25^1440^0.3987^0.6530^1^Ursangous^11406:1:1,16303:1:1^
 12759^1^0^27^27^1440^0.4661^0.7077^1^Tideress^16408:1:1^
 12856^9^0^23^24^1440^0.7384^0.7213^9^Avanzado de Vallefresno^804:1:1,1205:1:1,2589:1:1,2592:1:1,4538:2:2,16650:1:1^
 12876^1^0^0^0^0^0.0000^0.0000^0^^16782:1:1^
 12921^3^0^23^24^1440^0.5577^0.6327^3^Hedioserra enfurecido^^
+13019^1^0^33^33^1443^0.5529^0.3028^1^Profeta Filo Ardiente^1708:1:1,4306:1:2,15750:1:1^
 14278^1^0^28^28^1424^0.6497^0.6288^1^Ro'Bark^4306:1:2,9806:1:1^
 264079^2^0^27^28^1412^0.3351^0.0780^2^Prole altopenumbra^3167:2:2^
 264081^11^0^28^28^1412^0.3263^0.0948^11^Tejedora altopenumbra^878:3:3,1081:3:3,3182:1:1,3931:2:2,273181:3:3^
@@ -112,11 +119,13 @@ GoldScout-export 6^84b96zsyy4f3^9
 @i^1081^Carne de araña crujiente
 @i^1205^Zumo de melón
 @i^1288^Glándula de veneno grande
+@i^1464^Talón de águila ratonera
 @i^1475^Glándula de veneno pequeña
 @i^1478^Pergamino de Protección II
 @i^1686^Bigote de cerdas
 @i^1701^Garra de basilisco curva
 @i^1702^Espina de basilisco intacta
+@i^1708^Néctar dulce
 @i^1746^Cinturón de eslabones
 @i^1747^Botas de eslabones
 @i^1753^Jubón de eslabones
@@ -146,11 +155,13 @@ GoldScout-export 6^84b96zsyy4f3^9
 @i^3385^Poción de maná inferior
 @i^3399^Talón de buitre
 @i^3402^Parche de pelaje suave
+@i^3404^Ala de águila ratonera
 @i^3708^Vara de Helcular
 @i^3712^Carne de tortuga
 @i^3730^Carne de oso grande
 @i^3770^Pata de cordero
 @i^3771^Pata de cero salvaje
+@i^3780^Mosquete de cañón largo
 @i^3931^Colmillo de araña envenenado
 @i^4306^Paño de seda
 @i^4538^Sandía Vidrota
@@ -170,6 +181,7 @@ GoldScout-export 6^84b96zsyy4f3^9
 @i^5524^Almeja de concha espesa
 @i^5569^Algas
 @i^5635^Garra afilada
+@i^5636^Pluma delicada
 @i^5637^Colmillo grande
 @i^5741^Trozo de roca
 @i^5794^Veneno de escórpido salado
@@ -218,6 +230,7 @@ GoldScout-export 6^84b96zsyy4f3^9
 @i^15231^Hachuela seccionadora de agilidad
 @i^15342^Integumento de abrecaminos del jabalí
 @i^15522^Escudo de anillas con pinchos del oso
+@i^15750^Cetro de Luz
 @i^16303^Pata de Ursangous
 @i^16304^Cabeza de Shadumbra
 @i^16408^Globo de agua contaminada
@@ -254,11 +267,13 @@ GoldScout-export 6^84b96zsyy4f3^9
 @q^1081^1:7:1
 @q^1205^1:0:0
 @q^1288^1:7:1
+@q^1464^0:15:0
 @q^1475^1:7:1
 @q^1478^1:0:0
 @q^1686^0:15:0
 @q^1701^0:15:0
 @q^1702^0:15:0
+@q^1708^1:0:0
 @q^1746^0:4:0
 @q^1747^0:4:0
 @q^1753^0:4:0
@@ -288,11 +303,13 @@ GoldScout-export 6^84b96zsyy4f3^9
 @q^3385^1:0:0
 @q^3399^0:15:0
 @q^3402^0:15:0
+@q^3404^1:7:1
 @q^3708^1:12:0
 @q^3712^1:7:1
 @q^3730^1:7:1
 @q^3770^1:0:0
 @q^3771^1:0:0
+@q^3780^0:2:0
 @q^3931^0:15:0
 @q^4306^1:7:1
 @q^4538^1:0:0
@@ -312,6 +329,7 @@ GoldScout-export 6^84b96zsyy4f3^9
 @q^5524^1:7:0
 @q^5569^0:15:0
 @q^5635^1:7:1
+@q^5636^0:15:0
 @q^5637^1:7:1
 @q^5741^0:15:0
 @q^5794^1:12:0
@@ -360,6 +378,7 @@ GoldScout-export 6^84b96zsyy4f3^9
 @q^15231^2:2:0
 @q^15342^2:4:0
 @q^15522^2:4:0
+@q^15750^1:12:0
 @q^16303^2:12:0
 @q^16304^2:12:0
 @q^16408^2:12:0
@@ -392,6 +411,7 @@ GoldScout-export 6^84b96zsyy4f3^9
 @m^1424^Laderas de Trabalomas
 @m^1440^Vallefresno
 @m^1441^Las Mil Agujas
+@m^1443^Desolace
 @c^118^
 @c^724^
 @c^733^
@@ -1138,6 +1158,11 @@ GoldScout-export 6^84b96zsyy4f3^9
 @a^4249^122:1,123:3,143:1,191:1
 @a^4490^225:1
 @a^4548^123:1
+@a^4663^111:5
+@a^4664^111:1,130:2
+@a^4665^111:2
+@a^4666^110:2,111:5
+@a^4692^128:1,129:1
 @a^4788^128:2,148:1
 @a^4789^128:1,148:1
 @a^4802^148:2
@@ -1153,11 +1178,13 @@ GoldScout-export 6^84b96zsyy4f3^9
 @a^10760^106:1,107:5,146:3,147:1
 @a^10761^107:2,146:1,167:1
 @a^10896^107:1
+@a^11576^129:1
 @a^12677^212:1
 @a^12678^267:1
 @a^12759^289:1
 @a^12856^274:1,275:1,294:4,295:2,314:1
 @a^12921^251:3
+@a^13019^131:1
 @a^14278^252:1
 @a^264079^26:2
 @a^264081^26:7,46:4

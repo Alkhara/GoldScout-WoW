@@ -1,17 +1,19 @@
-GoldScout-export 6^ivu4g57h4vty^3
+GoldScout-export 6^ivu4g57h4vty^4
 199^2^0^10^11^1436^0.6099^0.3004^2^Desgarrador joven^555:1:1,6889:1:1,7097:1:1^
 506^1^0^18^18^1436^0.3697^0.3023^1^Sargento Garravil^6536:1:1^
-587^1^0^33^33^1434^0.3263^0.1410^1^Guerrero Sangrapellejo^1519:1:1,3915:1:1^
-686^1^0^36^36^1434^0.3377^0.2625^1^Raptor colazote^3685:1:1,4052:1:1,4461:1:1^
+587^1^0^33^34^1434^0.3263^0.1410^1^Guerrero Sangrapellejo^1519:1:1,3915:1:1^
+686^8^0^35^36^1434^0.3189^0.2477^8^Raptor colazote^1696:2:2,3685:7:7,4052:1:1,4461:5:5,4586:1:1,12184:4:4^
 697^2^0^33^34^1434^0.3297^0.1678^2^Chamán Sangrapellejo^3901:1:1^
 702^2^0^33^34^1434^0.3204^0.1291^2^Carroñero Sangrapellejo^1519:2:2,3771:1:1,3915:1:1^
 833^35^0^11^12^1436^0.4400^0.2983^35^Coyote líder^2673:17:17,3299:14:14,3300:6:6,5635:1:1^
 834^72^0^10^11^1436^0.5014^0.2638^72^Coyote^727:1:1,2673:37:37,2959:1:1,2965:1:1,3299:21:21,3300:12:12,4663:1:1,5635:2:2,6517:1:1^
 1109^1^0^13^14^1436^0.3100^0.3723^1^Desgarrador^729:1:1^
+4461^1^0^35^36^1434^0.3486^0.2198^1^Guerrero Ancaniebla^6362:1:1,17057:1:1^
 @i^555^Plumas de buitre férreas
 @i^727^Espada corta despuntada de magia
 @i^729^Carne fibrosa de buitre
 @i^1519^Oreja Sangrapellejo
+@i^1696^Garfa de raptor curva
 @i^2673^Carne de coyote
 @i^2959^Botas de oficial
 @i^2965^Guerrera de guerrero
@@ -23,16 +25,21 @@ GoldScout-export 6^ivu4g57h4vty^3
 @i^3915^Collar de huesos sangrientos
 @i^4052^Gorro de insignia
 @i^4461^Pellejo de raptor
+@i^4586^Piel de raptor lisa
 @i^4663^Cinturón de oficial
 @i^5635^Garra afilada
+@i^6362^Bacalao piedrescama crudo
 @i^6517^Cinturón de pionero
 @i^6536^Jubón de sauce de aguante
 @i^6889^Huevo pequeño
 @i^7097^Carne de pata
+@i^12184^Carne de raptor
+@i^17057^Escamas de pez lustrosas
 @q^555^0:15:0
 @q^727^2:2:0
 @q^729^1:7:1
 @q^1519^1:12:0
+@q^1696^0:15:0
 @q^2673^1:7:1
 @q^2959^1:4:0
 @q^2965^2:4:0
@@ -44,12 +51,16 @@ GoldScout-export 6^ivu4g57h4vty^3
 @q^3915^1:12:0
 @q^4052^2:4:0
 @q^4461^1:7:1
+@q^4586^0:15:0
 @q^4663^1:4:0
 @q^5635^1:7:1
+@q^6362^1:7:1
 @q^6517^1:4:0
 @q^6536^2:4:0
 @q^6889^1:7:1
 @q^7097^1:0:0
+@q^12184^1:7:1
+@q^17057^1:15:0
 @m^1434^Vega de Tuercespina
 @m^1436^Páramos de Poniente
 @c^724^
@@ -742,10 +753,11 @@ GoldScout-export 6^ivu4g57h4vty^3
 @a^199^112:1,132:1
 @a^506^127:1
 @a^587^46:1
-@a^686^106:1
+@a^686^86:3,106:5
 @a^697^66:2
 @a^702^46:2
 @a^833^68:1,69:5,87:2,92:1,107:3,108:4,112:3,126:1,128:2,146:5,147:1,151:2,152:1,166:3,172:1
 @a^834^51:4,68:1,69:4,70:3,71:2,72:1,87:2,89:1,90:7,91:1,92:1,107:9,108:6,109:1,111:4,112:4,128:3,131:1,132:7,146:1,147:1,151:2,152:3,166:3
 @a^1109^146:1
+@a^4461^86:1
 @l^0^esMX

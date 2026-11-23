@@ -1,4 +1,4 @@
-GoldScout-export 6^kquytwtpz408^5
+GoldScout-export 6^kquytwtpz408^6
 2272^2^0^33^33^1416^0.2594^0.5944^2^Dalaran Theurgist^^
 2358^7^0^32^33^1416^0.2518^0.5887^7^Dalaran Summoner^2592:3:5,3745:2:2,4306:1:2^
 2359^10^0^32^33^1416^0.2426^0.5623^10^Elemental Slave^2838:2:2,3715:3:3,4553:2:2,4784:5:5,7067:1:1,8150:1:1^
@@ -48,7 +48,9 @@ GoldScout-export 6^kquytwtpz408^5
 5260^1^0^42^43^1444^0.4998^0.4918^1^Groddoc Ape^4096:1:1^
 5268^2^0^41^42^1444^0.5948^0.6054^2^Ironfur Bear^11408:1:1,11410:1:1^
 5278^9^0^43^45^1444^0.6910^0.4793^9^Sprite Darter^4402:1:1,4460:1:1,9369:5:8^
-5292^3^0^43^44^1444^0.5520^0.5560^3^Feral Scar Yeti^^
+5292^9^0^43^44^1444^0.5356^0.5657^9^Feral Scar Yeti^4599:1:1^
+5293^5^0^45^46^1444^0.5113^0.5822^5^Hulking Feral Scar^4599:1:1^
+5295^8^0^44^45^1444^0.5229^0.5739^8^Enraged Feral Scar^1645:1:1,3940:1:1,4023:2:2,4421:1:1,8973:2:2^
 5300^34^0^43^44^1444^0.5609^0.6211^34^Frayfeather Hippogryph^4589:5:5,4590:3:3,5117:2:2,5829:4:4,11418:4:4^
 5304^1^0^44^45^1444^0.5505^0.6816^1^Frayfeather Stagwing^8705:1:1,11418:1:1^
 5307^3^0^41^43^1444^0.5757^0.5887^3^Vale Screecher^6826:1:1^
@@ -98,13 +100,16 @@ GoldScout-export 6^kquytwtpz408^5
 @i^3745^Rune of Opening
 @i^3914^Journeyman's Backpack
 @i^3927^Fine Aged Cheddar
+@i^3940^Crochet Gloves
 @i^3989^Blocking Targe
+@i^4023^Fine Pointed Dagger
 @i^4036^Silver-thread Cuffs
 @i^4093^Large Basilisk Tail
 @i^4096^Coarse Gorilla Hair
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4402^Small Flame Sac
+@i^4421^Scroll of Protection III
 @i^4422^Scroll of Stamina III
 @i^4460^Ripped Wing Webbing
 @i^4461^Raptor Hide
@@ -115,6 +120,7 @@ GoldScout-export 6^kquytwtpz408^5
 @i^4587^Tribal Raptor Feathers
 @i^4589^Long Elegant Feather
 @i^4590^Curved Yellow Bill
+@i^4599^Cured Ham Steak
 @i^4601^Soft Banana Bread
 @i^4784^Lifeless Stone
 @i^5115^Broken Wishbone
@@ -143,6 +149,7 @@ GoldScout-export 6^kquytwtpz408^5
 @i^8483^Wastewander Water Pouch
 @i^8705^OOX-22 FE Distress Beacon
 @i^8751^Overlinked Coif
+@i^8973^Thick Yeti Hide
 @i^9237^Woodpaw Gnoll Mane
 @i^9369^Iridescent Sprite Darter Wing
 @i^9371^Gordunni Orb
@@ -200,13 +207,16 @@ GoldScout-export 6^kquytwtpz408^5
 @q^3745^1:12:0
 @q^3914^1:1:0
 @q^3927^1:0:0
+@q^3940^0:4:0
 @q^3989^0:4:0
+@q^4023^0:2:0
 @q^4036^2:4:0
 @q^4093^0:15:0
 @q^4096^1:15:0
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4402^1:7:1
+@q^4421^1:0:0
 @q^4422^1:0:0
 @q^4460^0:15:0
 @q^4461^1:7:1
@@ -217,6 +227,7 @@ GoldScout-export 6^kquytwtpz408^5
 @q^4587^0:15:0
 @q^4589^1:7:1
 @q^4590^0:15:0
+@q^4599^1:0:0
 @q^4601^1:0:0
 @q^4784^0:15:0
 @q^5115^0:15:0
@@ -245,6 +256,7 @@ GoldScout-export 6^kquytwtpz408^5
 @q^8483^1:12:0
 @q^8705^2:12:0
 @q^8751^0:4:0
+@q^8973^1:12:0
 @q^9237^1:12:0
 @q^9369^1:12:0
 @q^9371^1:12:0
@@ -1447,7 +1459,9 @@ GoldScout-export 6^kquytwtpz408^5
 @a^5260^189:1
 @a^5268^231:1,252:1
 @a^5278^193:8,194:1
-@a^5292^231:3
+@a^5292^230:6,231:3
+@a^5293^230:5
+@a^5295^230:8
 @a^5300^250:1,251:33
 @a^5304^271:1
 @a^5307^231:2,251:1

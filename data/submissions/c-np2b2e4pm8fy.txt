@@ -1,4 +1,4 @@
-GoldScout-export 6^np2b2e4pm8fy^30
+GoldScout-export 6^np2b2e4pm8fy^31
 95^14^0^11^12^1436^0.4900^0.4259^14^Defias Smuggler^829:4:4,1503:1:1,2589:7:13,7997:1:1^
 114^1^0^14^15^1436^0.5512^0.3427^1^Harvest Watcher^^
 157^7^0^14^15^1436^0.4484^0.4642^7^Goretusk^723:1:1,731:7:7,769:5:9,2677:4:4,3172:2:2^
@@ -7,6 +7,12 @@ GoldScout-export 6^np2b2e4pm8fy^30
 504^23^0^12^13^1436^0.4908^0.4450^23^Defias Trapper^414:1:1,829:7:7,858:1:1,1513:1:1,1732:1:1,1734:1:1,2455:2:2,2589:6:13,2763:1:1,2777:1:1,6518:1:1^
 834^2^0^10^11^1436^0.5549^0.3730^2^Coyote^2673:2:2,5635:1:1^
 1109^5^0^13^14^1436^0.4532^0.4725^5^Fleshripper^555:1:1,729:1:1,818:1:1,5071:1:1,6889:2:2,17056:2:2^
+3123^1^0^8^8^1411^0.5393^0.1185^1^Bloodtalon Scythemaw^4877:1:1^
+3127^1^0^10^10^1411^0.5385^0.1646^1^Venomtail Scorpid^5466:1:1^
+3197^10^0^9^10^1411^0.5256^0.0922^10^Burning Blade Fanatic^117:2:2,1181:1:1,1421:1:1,2589:4:6,3370:1:1,3373:1:1^
+3198^7^0^10^11^1411^0.5256^0.0897^7^Burning Blade Apprentice^117:2:2,14098:1:1^
+3204^1^0^14^14^1411^0.5153^0.0964^1^Gazz'uz^4903:1:1,15485:1:1^
+8996^9^0^10^14^1411^0.5260^0.0903^9^Voidwalker Minion^^
 250868^11^0^6^6^2521^0.4519^0.4020^11^Vuldren^1420:1:1,2672:7:7,3299:7:7,3300:4:4,3370:1:1^
 250873^34^0^1^1^2521^0.4515^0.2669^34^Juvenile Vuldren^1366:1:1,1368:1:1,1369:1:1,1372:1:1,1374:1:1,1376:1:1,2211:1:1,2672:9:9,4865:12:12,7073:11:11,7074:15:15^
 250874^5^0^10^10^2521^0.5613^0.7421^5^Vuldren Alpha^2672:3:3,3299:1:1,3300:4:4^
@@ -50,6 +56,7 @@ GoldScout-export 6^np2b2e4pm8fy^30
 257196^1^0^10^10^2521^0.5668^0.5037^1^Zaal Stormshield^2648:1:1,252031:1:2^
 257532^28^20^5^6^2521^0.3876^0.4842^28^Windshaper Novice Seer^118:6:6,159:7:7,1181:2:2,1367:1:1,1415:1:1,1419:1:1,1425:1:1,2589:11:16,2649:1:1,3013:3:3,3365:1:1,4540:10:10,255663:2:2^118:4:4,5363:4:4
 268602^2^0^10^10^2521^0.6443^0.6381^2^Skypriest Faladiel^^
+@i^117^Tough Jerky
 @i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
 @i^414^Dalaran Sharp
@@ -87,6 +94,7 @@ GoldScout-export 6^np2b2e4pm8fy^30
 @i^1417^Beaten Battle Axe
 @i^1419^Worn Leather Boots
 @i^1420^Worn Leather Bracers
+@i^1421^Worn Hide Cloak
 @i^1422^Worn Leather Gloves
 @i^1423^Worn Leather Pants
 @i^1425^Worn Leather Vest
@@ -149,8 +157,11 @@ GoldScout-export 6^np2b2e4pm8fy^30
 @i^4775^Cracked Bill
 @i^4776^Ruffled Feather
 @i^4865^Ruined Pelt
+@i^4877^Stone Arrowhead
+@i^4903^Eye of Burning Shadow
 @i^5071^Shadow Wand
 @i^5363^Folded Handkerchief
+@i^5466^Scorpid Stinger
 @i^5469^Strider Meat
 @i^5635^Sharp Claw
 @i^6289^Raw Longjaw Mud Snapper
@@ -166,8 +177,10 @@ GoldScout-export 6^np2b2e4pm8fy^30
 @i^7100^Sticky Ichor
 @i^7101^Bug Eye
 @i^7997^Red Defias Mask
+@i^14098^Native Cloak
 @i^15005^Primal Bands
 @i^15472^Charger's Belt
+@i^15485^War Torn Pants of the Wolf
 @i^17056^Light Feather
 @i^211786^Scroll: CHAP BALK WELLES
 @i^211787^Scroll: LOWER PING WHOMEVER
@@ -199,6 +212,7 @@ GoldScout-export 6^np2b2e4pm8fy^30
 @i^265140^Pristine Shriekling Feather
 @i^265141^Bloody Heirloom
 @i^267474^Galeswept Forestshroom
+@q^117^1:0:0
 @q^118^1:0:0
 @q^159^1:0:0
 @q^414^1:0:0
@@ -236,6 +250,7 @@ GoldScout-export 6^np2b2e4pm8fy^30
 @q^1417^0:2:0
 @q^1419^0:4:0
 @q^1420^0:4:0
+@q^1421^0:4:0
 @q^1422^0:4:0
 @q^1423^0:4:0
 @q^1425^0:4:0
@@ -298,8 +313,11 @@ GoldScout-export 6^np2b2e4pm8fy^30
 @q^4775^0:15:0
 @q^4776^0:15:0
 @q^4865^0:15:0
+@q^4877^0:15:0
+@q^4903^1:12:0
 @q^5071^2:2:0
 @q^5363^0:15:0
+@q^5466^1:7:1
 @q^5469^1:7:1
 @q^5635^1:7:1
 @q^6289^1:7:1
@@ -315,8 +333,10 @@ GoldScout-export 6^np2b2e4pm8fy^30
 @q^7100^0:15:0
 @q^7101^0:15:0
 @q^7997^0:4:0
+@q^14098^1:4:0
 @q^15005^1:4:0
 @q^15472^1:4:0
+@q^15485^2:4:0
 @q^17056^1:15:1
 @q^211786^1:0:0
 @q^211787^1:0:0
@@ -348,6 +368,7 @@ GoldScout-export 6^np2b2e4pm8fy^30
 @q^265140^1:12:0
 @q^265141^1:12:0
 @q^267474^1:0:0
+@m^1411^Durotar
 @m^1436^Westfall
 @m^2521^Zephras Isle
 @c^118^
@@ -1840,6 +1861,12 @@ GoldScout-export 6^np2b2e4pm8fy^30
 @a^504^149:2,150:1,169:1,170:4,189:12,190:3
 @a^834^111:1,190:1
 @a^1109^169:1,188:3,209:1
+@a^3123^50:1
+@a^3127^70:1
+@a^3197^30:8,50:2
+@a^3198^30:5,50:2
+@a^3204^30:1
+@a^8996^30:7,50:2
 @a^250868^148:7,149:1,168:1,169:1,251:1
 @a^250873^89:4,108:12,109:18
 @a^250874^271:1,272:2,329:1,330:1

@@ -1,4 +1,4 @@
-GoldScout-export 6^4d6x5dtla4se^40
+GoldScout-export 6^4d6x5dtla4se^41
 587^1^0^33^33^1434^0.3276^0.1612^1^Bloodscalp Warrior^1520:1:1,3901:1:1,3915:1:1,4306:1:2^
 681^9^0^30^31^1434^0.3641^0.1217^9^Young Stranglethorn Tiger^1686:2:2,12202:6:6^
 682^9^0^32^33^1434^0.3034^0.1082^9^Stranglethorn Tiger^1686:4:4,5637:1:1,12202:5:5^
@@ -46,6 +46,10 @@ GoldScout-export 6^4d6x5dtla4se^40
 1674^4^0^6^7^1420^0.5911^0.3475^4^Rot Hide Gnoll^2589:1:1,2834:1:1^
 1675^6^0^7^8^1420^0.5882^0.3220^6^Rot Hide Mongrel^159:1:1,2589:4:5,2773:1:1,2834:3:3,8182:1:1^
 1753^1^0^10^10^1420^0.5871^0.3161^1^Maggot Eye^3635:1:1^
+1779^1^0^12^12^1421^0.4134^0.2163^1^Moonrage Glutton^^
+1780^18^0^12^13^1421^0.3560^0.1549^18^Moss Stalker^1475:1:1,3167:5:5,3174:6:6,3254:7:7,5465:14:19^
+1782^1^0^13^13^1421^0.4372^0.3020^1^Moonrage Darksoul^^
+1797^19^0^12^13^1421^0.3874^0.1661^19^Giant Grizzled Bear^2940:1:1,2971:1:1,3169:3:3,3170:6:6,3173:10:10,3253:6:6,11406:1:1^
 1890^8^0^2^3^1420^0.3324^0.6294^8^Rattlecage Skeleton^1364:1:1,1366:1:1,2589:4:4^
 1911^1^0^12^12^1420^0.6246^0.2878^1^Deeb^828:1:1^
 1919^1^0^5^5^1420^0.3704^0.6208^1^Samuel Fipps^16333:1:1^
@@ -491,16 +495,22 @@ GoldScout-export 6^4d6x5dtla4se^40
 @i^2876^Duskbat Pelt
 @i^2885^Scarlet Crusade Documents
 @i^2940^Bloody Bear Paw
+@i^2971^Spellbinder Boots
 @i^3010^Fine Sand
 @i^3013^Scroll of Protection
 @i^3162^Notched Rib
 @i^3163^Blackened Skull
 @i^3167^Thick Spider Hair
+@i^3169^Chipped Bear Tooth
+@i^3170^Large Bear Tooth
 @i^3171^Broken Boar Tusk
 @i^3172^Boar Intestines
+@i^3173^Bear Meat
 @i^3174^Spider Ichor
 @i^3180^Flecked Raptor Scale
 @i^3182^Spider's Silk
+@i^3253^Grizzled Bear Heart
+@i^3254^Skittering Blood
 @i^3264^Duskbat Wing
 @i^3265^Scavenger Paw
 @i^3266^Scarlet Armband
@@ -719,6 +729,7 @@ GoldScout-export 6^4d6x5dtla4se^40
 @i^11391^Spined Bat Wing
 @i^11393^Small Bat Skull
 @i^11394^Bat Heart
+@i^11406^Rotting Bear Carcass
 @i^11407^Torn Bear Pelt
 @i^11416^Delicate Ribcage
 @i^12037^Mystery Meat
@@ -989,16 +1000,22 @@ GoldScout-export 6^4d6x5dtla4se^40
 @q^2876^1:12:0
 @q^2885^1:12:0
 @q^2940^0:15:0
+@q^2971^1:4:0
 @q^3010^0:15:0
 @q^3013^1:0:0
 @q^3162^1:12:0
 @q^3163^1:12:0
 @q^3167^0:15:0
+@q^3169^0:15:0
+@q^3170^0:15:0
 @q^3171^0:15:0
 @q^3172^1:7:1
+@q^3173^1:7:1
 @q^3174^1:7:1
 @q^3180^0:15:0
 @q^3182^1:7:1
+@q^3253^1:12:0
+@q^3254^1:12:0
 @q^3264^1:12:0
 @q^3265^1:12:0
 @q^3266^1:12:0
@@ -1217,6 +1234,7 @@ GoldScout-export 6^4d6x5dtla4se^40
 @q^11391^0:15:0
 @q^11393^0:15:0
 @q^11394^0:15:0
+@q^11406^0:15:0
 @q^11407^1:12:0
 @q^11416^0:15:0
 @q^12037^1:7:1
@@ -1358,6 +1376,7 @@ GoldScout-export 6^4d6x5dtla4se^40
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
 @m^1420^Tirisfal Glades
+@m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
 @m^1434^Stranglethorn Vale
 @m^1437^Wetlands
@@ -2723,6 +2742,10 @@ GoldScout-export 6^4d6x5dtla4se^40
 @a^1674^131:4
 @a^1675^131:6
 @a^1753^131:1
+@a^1779^88:1
+@a^1780^47:3,66:2,67:13
+@a^1782^128:1
+@a^1797^47:2,67:13,68:3,88:1
 @a^1890^246:8
 @a^1911^112:1
 @a^1919^247:1
