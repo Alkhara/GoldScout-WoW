@@ -1,4 +1,4 @@
-GoldScout-export 6^0eoomd273f3k^19
+GoldScout-export 6^0eoomd273f3k^20
 92^5^0^39^40^1418^0.2926^0.6134^5^Elémentaire de roche^4553:2:2,4627:3:3,4784:3:3,7067:1:1,8150:1:1^
 597^2^0^36^37^1434^0.2364^0.0923^2^Berserker Bloodscalp^4306:1:3^
 660^4^0^37^37^1434^0.2339^0.0926^4^Sorcier-docteur Bloodscalp^4306:1:2^
@@ -65,8 +65,13 @@ GoldScout-export 6^0eoomd273f3k^19
 4861^1^0^0^0^0^0.0000^0.0000^0^^11392:1:1,11394:1:1^
 4863^3^0^0^0^0^0.0000^0.0000^0^^1701:3:3,4093:2:2,7474:1:1^
 5229^11^0^40^41^1444^0.7656^0.3124^11^Ogre Gordunni^4306:1:1,4338:3:4,4599:1:1^
-5232^10^0^42^43^1444^0.7648^0.3039^10^Brute Gordunni^4306:1:2,4338:5:9,4599:1:1,13042:1:1,14778:1:1^
+5232^19^0^42^43^1444^0.6914^0.4254^19^Brute Gordunni^3939:1:1,4306:2:4,4338:6:10,4599:1:1,8705:1:1,13042:1:1,14778:1:1,213547:1:1^
+5234^8^0^43^44^1444^0.6112^0.5609^8^Marteleur Gordunni^4338:1:1,4599:1:1^
+5236^9^0^44^45^1444^0.6020^0.6781^9^Chaman Gordunni^3968:1:1,4338:4:6,255725:3:3^
 5237^18^0^41^42^1444^0.7625^0.3054^18^Ogre-mage Gordunni^4306:1:1,4338:4:7,248690:1:1^
+5238^6^0^45^46^1444^0.5941^0.6874^6^Maître de guerre Gordunni^4338:2:3^
+5239^6^0^45^46^1444^0.5961^0.6922^6^Seigneur-mage Gordunni^3928:1:1,4306:2:2,4338:1:1,9371:1:1^
+5240^12^0^43^44^1444^0.6070^0.5825^12^Démoniste Gordunni^1645:1:1,4019:1:1,4338:2:4,14243:1:1,14946:1:1^
 5245^9^0^44^45^1444^0.7397^0.6194^9^Guêpe Zukk'ash^6300:2:2,6302:2:2,16215:1:1,18961:9:9^
 5246^10^0^44^45^1444^0.7442^0.6103^10^Ouvrière Zukk'ash^6300:2:2,6302:2:2,18961:10:10^
 5249^8^0^40^41^1444^0.7258^0.3799^8^Bâtard Griffebois^4306:1:2,4338:1:1,4599:1:1,9237:5:5^
@@ -172,8 +177,10 @@ GoldScout-export 6^0eoomd273f3k^19
 @i^3927^Cheddar affiné
 @i^3928^Potion de soins excellente
 @i^3938^Brassards en crochet
+@i^3939^Cape en crochet
 @i^3961^Ceinture en cuir épais
 @i^3962^Bottes en cuir épais
+@i^3968^Tunique en cuir épais
 @i^3986^Pavois protecteur
 @i^3989^Targe de blocage
 @i^4018^Claymore affûtée
@@ -237,12 +244,14 @@ GoldScout-export 6^0eoomd273f3k^19
 @i^8401^Patron : Jambières armées du scorpide
 @i^8483^Outre de Bat-le-désert
 @i^8623^Balise de détresse OOX-17 TN
+@i^8705^Balise de détresse OOX-22 FE
 @i^8723^Tête de Caliph Dard-de-scorpide
 @i^9237^Crinière de gnoll Griffebois
 @i^9246^Tête de Barbe-en-feu
 @i^9260^Rhum explosif
 @i^9276^Coffre de pirate
 @i^9369^Aile iridescente de fée fléchetteuse
+@i^9371^Orbe Gordunni
 @i^9399^Flèche de précision
 @i^9400^Arc court de Baelog
 @i^9403^Bouclier viking endommagé
@@ -265,9 +274,11 @@ GoldScout-export 6^0eoomd273f3k^19
 @i^12203^Viande de loup rouge
 @i^13042^Epée du Magistrat
 @i^13064^Boute-flammes de Jaina
+@i^14243^Mantelet de Sombrebrume d'endurance
 @i^14266^Ailettes tissées de sang d'endurance
 @i^14778^Manchettes de khan
 @i^14902^Bouclier du sel gemme du sanglier
+@i^14946^Spallières de porteguerre du loup
 @i^15287^Arc du Croisé du gorille
 @i^16215^Formule : Enchantement de bottes (Endurance supérieure)
 @i^18961^Carapace de Zukk'ash
@@ -283,6 +294,7 @@ GoldScout-export 6^0eoomd273f3k^19
 @i^248690^Caisse détournée : plantes terreuses d'expert
 @i^248692^Caisse détournée : minerai d'expert
 @i^249882^Recette : thé de triage
+@i^255725^Manuel : potion de soins excellente
 @i^262889^Commission d'expert scellée
 @i^264215^Schéma : bombe SUR-T
 @q^117^1:0:0
@@ -343,8 +355,10 @@ GoldScout-export 6^0eoomd273f3k^19
 @q^3927^1:0:0
 @q^3928^1:0:0
 @q^3938^0:4:0
+@q^3939^0:4:0
 @q^3961^0:4:0
 @q^3962^0:4:0
+@q^3968^0:4:0
 @q^3986^0:4:0
 @q^3989^0:4:0
 @q^4018^0:2:0
@@ -408,12 +422,14 @@ GoldScout-export 6^0eoomd273f3k^19
 @q^8401^2:9:0
 @q^8483^1:12:0
 @q^8623^2:12:0
+@q^8705^2:12:0
 @q^8723^1:12:0
 @q^9237^1:12:0
 @q^9246^1:12:0
 @q^9260^1:0:0
 @q^9276^1:15:0
 @q^9369^1:12:0
+@q^9371^1:12:0
 @q^9399^2:6:0
 @q^9400^3:2:0
 @q^9403^3:4:0
@@ -436,9 +452,11 @@ GoldScout-export 6^0eoomd273f3k^19
 @q^12203^1:7:1
 @q^13042^3:2:0
 @q^13064^3:2:0
+@q^14243^2:4:0
 @q^14266^2:4:0
 @q^14778^2:4:0
 @q^14902^2:4:0
+@q^14946^2:4:0
 @q^15287^2:2:0
 @q^16215^2:9:0
 @q^18961^1:12:0
@@ -454,6 +472,7 @@ GoldScout-export 6^0eoomd273f3k^19
 @q^248690^1:0:1
 @q^248692^1:0:1
 @q^249882^1:9:0
+@q^255725^2:9:0
 @q^262889^3:0:0
 @q^264215^1:9:0
 @m^1411^Durotar
@@ -1280,8 +1299,13 @@ GoldScout-export 6^0eoomd273f3k^19
 @a^4845^47:1
 @a^4846^28:1,29:9,48:2,49:7,67:2
 @a^5229^114:1,115:4,135:5,136:1
-@a^5232^114:4,115:1,135:3,136:1,156:1
+@a^5232^114:4,115:1,135:3,136:1,156:1,212:1,231:2,232:6
+@a^5234^212:1,232:7
+@a^5236^252:1,271:2,272:4,291:1,292:1
 @a^5237^94:1,114:5,115:3,135:8,156:1
+@a^5238^271:4,272:1,291:1
+@a^5239^271:3,272:1,291:1,292:1
+@a^5240^231:2,232:8,252:1,272:1
 @a^5245^234:1,254:7,255:1
 @a^5246^234:2,235:1,254:6,255:1
 @a^5249^154:8
