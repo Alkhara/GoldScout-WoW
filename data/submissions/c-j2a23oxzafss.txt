@@ -1,4 +1,4 @@
-GoldScout-export 6^j2a23oxzafss^6
+GoldScout-export 6^j2a23oxzafss^7
 434^2^0^22^22^1433^0.6949^0.5055^2^Gnoll Pielsombra rabioso^2592:1:1,3770:1:1^
 667^10^0^39^40^1434^0.4596^0.4027^10^Guerrero Machacacráneos^1520:5:5,1524:3:3,1708:1:1,3771:1:1,4306:1:2,8151:2:2^
 670^3^0^41^41^1434^0.4577^0.4211^3^Médico Brujo Machacacráneos^2466:3:3,4002:1:1,4338:1:2,4599:1:1^
@@ -50,15 +50,28 @@ GoldScout-export 6^j2a23oxzafss^6
 4505^1^0^44^44^1434^0.3017^0.8911^1^Marinera de cubierta Velasangre^^
 10928^7^0^42^43^1434^0.2518^0.6755^7^Esbirro súcubo^^
 12922^14^0^42^43^1434^0.2569^0.6310^14^Esbirro Diablillo^^
+254560^8^0^39^40^2548^0.4762^0.4796^8^Sombramántico Crepuscular^3807:1:1,4306:3:6,5431:1:1,266425:7:16,266427:1:1^
+256798^7^0^37^38^2548^0.4772^0.4838^7^Neófito Crepuscular^4306:1:1,248693:1:1,266425:6:13^
+256952^10^0^39^40^2548^0.5028^0.5542^10^Asaltante Crepuscular^4306:1:3,4338:2:2^
+259046^2^0^38^39^2548^0.5528^0.4699^2^Crocolisco de agua dulce^770:1:1^
+259052^12^0^38^39^2548^0.5593^0.5781^12^Furtivo de Rog'mar^3784:1:1,4306:8:19^
+259054^5^0^38^39^2548^0.5808^0.5281^5^Patriarca de las llanuras salvajes^1686:1:1,1688:3:3^
+259055^5^0^38^39^2548^0.5841^0.5401^5^Cazadora de las llanuras salvajes^1686:1:1,1688:3:3,266888:2:2^
+263343^3^0^37^37^2548^0.5938^0.5779^3^Águila ratonera de las llanuras bajas^1464:2:2,3404:2:2,11418:1:1,12037:1:1^
+263348^3^0^37^38^2548^0.5763^0.5833^3^Zancaalta itinerante^5116:1:1,11416:1:1,11418:2:2^
+263380^1^0^42^42^2548^0.5465^0.4812^1^Faucespectral^770:1:1,5128:1:1,271828:1:1^
 266357^1^0^36^36^1416^0.6284^0.4511^1^Barton^5113:1:1^
 272389^25^0^34^36^1416^0.3008^0.3771^25^Búho de marisma^5116:3:3,5829:5:5,11416:3:3,11418:4:4,12207:9:9,17056:10:10,213543:1:1,248694:1:1^
 @i^770^Diente de crocolisco puntiagudo
 @i^1081^Carne de araña crujiente
+@i^1464^Talón de águila ratonera
 @i^1520^Sudor trol
 @i^1524^Colmillo Machacacráneos
 @i^1630^Electro-linterna rota
 @i^1645^Zumo de baya lunar
 @i^1659^Guantes de ingeniería
+@i^1686^Bigote de cerdas
+@i^1688^Cola blanda larga
 @i^1707^Brie de Ventormenta
 @i^1708^Néctar dulce
 @i^1710^Poción de curación superior
@@ -75,6 +88,7 @@ GoldScout-export 6^j2a23oxzafss^6
 @i^2749^Las verdes colinas de Tuercespina: Página 25
 @i^2750^Las verdes colinas de Tuercespina: Página 26
 @i^2751^Las verdes colinas de Tuercespina: Página 27
+@i^3404^Ala de águila ratonera
 @i^3505^Sello de Alterac
 @i^3667^Carne de crocolisco tierna
 @i^3672^Cabeza de Nagaz
@@ -83,6 +97,8 @@ GoldScout-export 6^j2a23oxzafss^6
 @i^3771^Pata de cero salvaje
 @i^3780^Mosquete de cañón largo
 @i^3783^Cimitarra ligera
+@i^3784^Bastón de metal
+@i^3807^Túnica de cuero endurecido
 @i^3897^Ojo de Dizzy
 @i^3910^Barril de tabaco
 @i^3917^Cristal canto azul
@@ -112,6 +128,8 @@ GoldScout-export 6^j2a23oxzafss^6
 @i^4636^Arcón de hierro fuerte
 @i^5113^Marca de la Hermandad
 @i^5116^Pluma de cola larga
+@i^5128^Muda de piel de lagarto
+@i^5431^Petaca vacía
 @i^5524^Almeja de concha espesa
 @i^5829^Pico afilado
 @i^6149^Poción de maná superior
@@ -141,13 +159,20 @@ GoldScout-export 6^j2a23oxzafss^6
 @i^248693^Cajón saqueado: textiles de experto
 @i^248694^Cajón saqueado: curiosidades de experto
 @i^262889^Libranza del experto sellada
+@i^266425^Talismán Crepuscular
+@i^266427^Registro de Mariscal de campo
+@i^266888^Piel de león preciada
+@i^271828^Colmillo de faucespectral
 @q^770^0:15:0
 @q^1081^1:7:1
+@q^1464^0:15:0
 @q^1520^0:15:0
 @q^1524^1:12:0
 @q^1630^0:15:0
 @q^1645^1:0:0
 @q^1659^2:4:0
+@q^1686^0:15:0
+@q^1688^0:15:0
 @q^1707^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
@@ -164,6 +189,7 @@ GoldScout-export 6^j2a23oxzafss^6
 @q^2749^1:12:0
 @q^2750^1:12:0
 @q^2751^1:12:0
+@q^3404^1:7:1
 @q^3505^1:12:0
 @q^3667^1:7:1
 @q^3672^1:12:0
@@ -172,6 +198,8 @@ GoldScout-export 6^j2a23oxzafss^6
 @q^3771^1:0:0
 @q^3780^0:2:0
 @q^3783^0:2:0
+@q^3784^0:2:0
+@q^3807^0:4:0
 @q^3897^1:12:0
 @q^3910^1:12:0
 @q^3917^1:12:0
@@ -201,6 +229,8 @@ GoldScout-export 6^j2a23oxzafss^6
 @q^4636^2:15:0
 @q^5113^0:15:0
 @q^5116^1:7:1
+@q^5128^0:15:0
+@q^5431^0:15:0
 @q^5524^1:7:0
 @q^5829^0:15:0
 @q^6149^1:0:0
@@ -230,10 +260,15 @@ GoldScout-export 6^j2a23oxzafss^6
 @q^248693^1:0:1
 @q^248694^1:0:1
 @q^262889^3:0:0
+@q^266425^1:12:0
+@q^266427^1:12:0
+@q^266888^1:12:0
+@q^271828^1:12:0
 @m^1416^Montañas de Alterac
 @m^1426^Dun Morogh
 @m^1433^Montañas Crestagrana
 @m^1434^Vega de Tuercespina
+@m^2548^Clarofluvial
 @c^724^
 @c^733^
 @c^787^
@@ -972,6 +1007,16 @@ GoldScout-export 6^j2a23oxzafss^6
 @a^4505^346:1
 @a^10928^204:2,224:2,325:2,345:1
 @a^12922^204:4,224:6,306:1,326:1,345:2
+@a^254560^189:6,190:1,209:1
+@a^256798^189:4,190:2,209:1
+@a^256952^189:1,190:1,230:8
+@a^259046^171:1,191:1
+@a^259052^230:7,231:1,251:4
+@a^259054^211:5
+@a^259055^211:3,231:2
+@a^263343^231:1,232:2
+@a^263348^231:3
+@a^263380^190:1
 @a^266357^192:1
 @a^272389^106:4,107:2,145:5,146:5,165:6,185:3
 @l^0^esES

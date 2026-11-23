@@ -1,4 +1,4 @@
-GoldScout-export 6^ql4tc40kn032^15
+GoldScout-export 6^ql4tc40kn032^16
 36^5^0^11^12^1436^0.4955^0.3290^5^Harvest Golem^732:2:2,814:3:3,1274:1:1,255007:1:1,255010:1:1^
 46^2^0^10^10^1429^0.7822^0.8574^2^Murloc Forager^6303:1:2^
 97^1^0^9^9^1429^0.6864^0.4481^1^Riverpaw Runt^6337:1:1^
@@ -36,6 +36,8 @@ GoldScout-export 6^ql4tc40kn032^15
 1152^26^0^35^36^1434^0.4071^0.1829^26^Snapjaw Crocolisk^770:15:15,3667:9:9,4104:5:5,12037:10:10,213544:1:1^
 2240^12^0^32^33^1416^0.4812^0.8193^12^Syndicate Footpad^4306:5:8,5113:1:1,8746:1:1^
 2241^8^0^33^34^1416^0.4852^0.8273^8^Syndicate Thief^2592:2:4,3816:1:1,4306:2:3^
+2354^2^0^22^23^1424^0.5001^0.4523^2^Vicious Gray Bear^2940:1:1,3702:1:1,3730:2:2,11406:1:1^
+2384^1^0^24^24^1424^0.4901^0.4485^1^Starving Mountain Lion^1206:1:1,5136:1:1^
 2553^1^0^31^31^1417^0.3514^0.4570^1^Witherbark Shadowcaster^2592:1:3^
 2554^24^0^32^33^1417^0.7202^0.6118^24^Witherbark Axe Thrower^2592:1:3,3771:2:2,4306:12:20,4503:5:5^
 2555^12^0^33^34^1417^0.6478^0.6147^12^Witherbark Witch Doctor^1708:1:1,3771:2:2,4306:5:8,4503:2:2,4522:4:4,213545:1:1,216483:1:1^
@@ -113,6 +115,7 @@ GoldScout-export 6^ql4tc40kn032^15
 @i^1019^Red Linen Bandana
 @i^1074^Hard Spider Leg Tip
 @i^1205^Melon Juice
+@i^1206^Moss Agate
 @i^1274^Hops
 @i^1414^Cracked Sledge
 @i^1415^Carpenter's Mallet
@@ -141,6 +144,7 @@ GoldScout-export 6^ql4tc40kn032^15
 @i^2735^Green Hills of Stranglethorn - Page 11
 @i^2742^Green Hills of Stranglethorn - Page 18
 @i^2773^Cracked Shortbow
+@i^2940^Bloody Bear Paw
 @i^2959^Journeyman's Boots
 @i^2963^Burnt Leather Boots
 @i^2968^Warrior's Gloves
@@ -157,6 +161,8 @@ GoldScout-export 6^ql4tc40kn032^15
 @i^3385^Lesser Mana Potion
 @i^3403^Ivory Boar Tusk
 @i^3667^Tender Crocolisk Meat
+@i^3702^Bear Gall Bladder
+@i^3730^Big Bear Meat
 @i^3771^Wild Hog Shank
 @i^3782^Large War Club
 @i^3783^Light Scimitar
@@ -189,6 +195,7 @@ GoldScout-export 6^ql4tc40kn032^15
 @i^5040^Shadow Hunter Knife
 @i^5071^Shadow Wand
 @i^5113^Mark of the Syndicate
+@i^5136^Torn Furry Ear
 @i^5524^Thick-shelled Clam
 @i^5637^Large Fang
 @i^5792^Razorflank's Medallion
@@ -221,6 +228,7 @@ GoldScout-export 6^ql4tc40kn032^15
 @i^11391^Spined Bat Wing
 @i^11393^Small Bat Skull
 @i^11394^Bat Heart
+@i^11406^Rotting Bear Carcass
 @i^11971^Amethyst Band of the Bandit
 @i^12037^Mystery Meat
 @i^12203^Red Wolf Meat
@@ -275,6 +283,7 @@ GoldScout-export 6^ql4tc40kn032^15
 @q^1019^1:12:0
 @q^1074^0:15:0
 @q^1205^1:0:0
+@q^1206^2:7:1
 @q^1274^1:12:0
 @q^1414^0:2:0
 @q^1415^0:2:0
@@ -303,6 +312,7 @@ GoldScout-export 6^ql4tc40kn032^15
 @q^2735^1:12:0
 @q^2742^1:12:0
 @q^2773^0:2:0
+@q^2940^0:15:0
 @q^2959^1:4:0
 @q^2963^1:4:0
 @q^2968^1:4:0
@@ -319,6 +329,8 @@ GoldScout-export 6^ql4tc40kn032^15
 @q^3385^1:0:0
 @q^3403^0:15:0
 @q^3667^1:7:1
+@q^3702^0:15:0
+@q^3730^1:7:1
 @q^3771^1:0:0
 @q^3782^0:2:0
 @q^3783^0:2:0
@@ -351,6 +363,7 @@ GoldScout-export 6^ql4tc40kn032^15
 @q^5040^1:2:0
 @q^5071^2:2:0
 @q^5113^0:15:0
+@q^5136^0:15:0
 @q^5524^1:7:0
 @q^5637^1:7:1
 @q^5792^1:12:0
@@ -383,6 +396,7 @@ GoldScout-export 6^ql4tc40kn032^15
 @q^11391^0:15:0
 @q^11393^0:15:0
 @q^11394^0:15:0
+@q^11406^0:15:0
 @q^11971^2:4:0
 @q^12037^1:7:1
 @q^12203^1:7:1
@@ -424,6 +438,7 @@ GoldScout-export 6^ql4tc40kn032^15
 @q^277957^1:12:0
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
+@m^1424^Hillsbrad Foothills
 @m^1429^Elwynn Forest
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
@@ -1188,6 +1203,8 @@ GoldScout-export 6^ql4tc40kn032^15
 @a^1152^48:1,67:8,68:8,87:3,88:6
 @a^2240^309:2,329:10
 @a^2241^329:8
+@a^2354^170:1,189:1
+@a^2384^169:1
 @a^2553^187:1
 @a^2554^234:9,254:11,274:4
 @a^2555^166:1,186:1,254:5,274:5

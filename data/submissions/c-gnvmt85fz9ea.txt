@@ -1,7 +1,11 @@
-GoldScout-export 6^gnvmt85fz9ea^7
+GoldScout-export 6^gnvmt85fz9ea^8
+667^5^0^39^40^1434^0.4792^0.3993^5^Skullsplitter Warrior^1520:1:1,1524:2:2,4338:1:1,8151:1:1^
+669^1^0^42^42^1434^0.4676^0.4142^1^Skullsplitter Hunter^8151:1:1^
 687^10^0^40^41^1434^0.2778^0.4766^10^Jungle Stalker^4461:5:5,4586:3:3,5637:1:1,12184:2:2^
-780^1^0^39^39^1434^0.4722^0.4180^1^Skullsplitter Mystic^4306:1:3^
-783^1^0^43^43^1434^0.4757^0.4176^1^Skullsplitter Berserker^1524:1:1^
+696^10^0^39^40^1434^0.4779^0.3964^10^Skullsplitter Axe Thrower^1520:3:3,1524:3:3,2728:1:1,2740:1:1,3771:1:1,4306:1:1,8151:1:1,8153:1:2^
+756^1^0^42^42^1434^0.4682^0.4161^1^Skullsplitter Panther^^
+780^7^0^39^40^1434^0.4764^0.3847^7^Skullsplitter Mystic^1520:2:2,2466:3:3,2725:1:1,2742:1:1,2749:1:1,4306:3:7,213127:1:1^
+783^1^0^43^44^1434^0.4757^0.4176^1^Skullsplitter Berserker^1524:1:1^
 1195^1^0^10^11^1432^0.3267^0.5044^1^Forest Lurker^^
 1557^5^0^40^41^1434^0.3199^0.6389^5^Elder Mistvale Gorilla^2799:1:1,3919:2:2,4097:1:1^
 1561^1^0^40^40^1434^0.2917^0.7157^1^Bloodsail Raider^4306:1:1^
@@ -86,14 +90,21 @@ GoldScout-export 6^gnvmt85fz9ea^7
 @i^863^Gloom Reaper of the Owl
 @i^1074^Hard Spider Leg Tip
 @i^1464^Buzzard Talon
+@i^1520^Troll Sweat
 @i^1524^Skullsplitter Tusk
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
 @i^2080^Hillborne Axe of the Defender
 @i^2290^Scroll of Intellect II
+@i^2466^Skullsplitter Fetish
 @i^2592^Wool Cloth
+@i^2725^Green Hills of Stranglethorn - Page 1
+@i^2728^Green Hills of Stranglethorn - Page 4
 @i^2734^Green Hills of Stranglethorn - Page 10
+@i^2740^Green Hills of Stranglethorn - Page 16
+@i^2742^Green Hills of Stranglethorn - Page 18
+@i^2749^Green Hills of Stranglethorn - Page 25
 @i^2799^Gorilla Fang
 @i^3402^Soft Patch of Fur
 @i^3404^Buzzard Wing
@@ -155,6 +166,8 @@ GoldScout-export 6^gnvmt85fz9ea^7
 @i^7848^Rock Elemental Shard
 @i^7912^Solid Stone
 @i^8150^Deeprock Salt
+@i^8151^Flask of Mojo
+@i^8153^Wildvine
 @i^9849^Conjurer's Hood of the Eagle
 @i^9864^Renegade Boots of the Boar
 @i^9875^Sorcerer Sash of the Eagle
@@ -171,6 +184,7 @@ GoldScout-export 6^gnvmt85fz9ea^7
 @i^17057^Shiny Fish Scales
 @i^19509^Dusty Mail Boots
 @i^211269^Primitive Drawing
+@i^213127^Partial Mystical Notes
 @i^213547^Scroll: THAW WORDS
 @i^215375^Tactician's Staff
 @i^215376^Crusader's Mace
@@ -196,14 +210,21 @@ GoldScout-export 6^gnvmt85fz9ea^7
 @q^863^2:2:0
 @q^1074^0:15:0
 @q^1464^0:15:0
+@q^1520^0:15:0
 @q^1524^1:12:0
 @q^1707^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
 @q^2080^2:2:0
 @q^2290^1:0:0
+@q^2466^1:12:0
 @q^2592^1:7:1
+@q^2725^1:12:0
+@q^2728^1:12:0
 @q^2734^1:12:0
+@q^2740^1:12:0
+@q^2742^1:12:0
+@q^2749^1:12:0
 @q^2799^1:12:0
 @q^3402^0:15:0
 @q^3404^1:7:1
@@ -265,6 +286,8 @@ GoldScout-export 6^gnvmt85fz9ea^7
 @q^7848^1:12:0
 @q^7912^1:7:1
 @q^8150^1:7:1
+@q^8151^1:7:1
+@q^8153^1:7:1
 @q^9849^2:4:0
 @q^9864^2:4:0
 @q^9875^2:4:0
@@ -281,6 +304,7 @@ GoldScout-export 6^gnvmt85fz9ea^7
 @q^17057^1:15:0
 @q^19509^3:4:0
 @q^211269^1:12:0
+@q^213127^1:15:0
 @q^213547^1:0:0
 @q^215375^1:2:0
 @q^215376^1:2:0
@@ -934,8 +958,12 @@ GoldScout-export 6^gnvmt85fz9ea^7
 @c^279951^
 @c^279968^
 @c^279978^
+@a^667^129:1,169:4
+@a^669^169:1
 @a^687^165:1,185:7,205:2
-@a^780^169:1
+@a^696^129:1,149:5,169:4
+@a^756^169:1
+@a^780^129:2,149:1,169:4
 @a^783^169:1
 @a^1195^206:1
 @a^1557^226:2,266:3

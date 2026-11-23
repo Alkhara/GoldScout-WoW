@@ -1,4 +1,4 @@
-GoldScout-export 6^axf0wk3imksc^29
+GoldScout-export 6^axf0wk3imksc^30
 587^3^0^33^34^1434^0.2993^0.1920^3^Bloodscalp Warrior^1520:1:1,2735:1:1,4306:1:2^
 597^1^0^36^37^1434^0.2277^0.0865^1^Bloodscalp Berserker^^
 660^2^0^37^37^1434^0.2446^0.1031^2^Bloodscalp Witch Doctor^2750:1:1,4338:1:1^
@@ -110,10 +110,11 @@ GoldScout-export 6^axf0wk3imksc^29
 6575^1^0^0^0^0^0.0000^0.0000^0^^1707:1:1^
 6733^2^0^39^40^1418^0.6391^0.4506^2^Stonevault Basher^3771:1:1,3816:1:1^
 7847^1^0^46^46^1446^0.5928^0.3750^1^Caliph Scorpidsting^8723:1:1^
-7855^9^0^44^45^1446^0.7139^0.4514^9^Southsea Pirate^3927:1:1,4306:1:2,4338:5:7,9260:1:1,9276:1:1,20519:2:2,248708:1:1^
-7856^4^0^44^45^1446^0.7180^0.4770^4^Southsea Freebooter^4338:1:1,20519:2:2^
-7857^1^0^44^45^1446^0.7337^0.4786^1^Southsea Dock Worker^4338:1:2^
-7858^2^0^44^45^1446^0.7283^0.4803^2^Southsea Swashbuckler^4338:2:3^
+7855^12^0^44^45^1446^0.7164^0.4573^12^Southsea Pirate^3927:1:1,4306:1:2,4338:5:7,9260:1:1,9276:1:1,15168:1:1,20519:5:5,248708:1:1^
+7856^6^0^44^45^1446^0.7211^0.4794^6^Southsea Freebooter^4338:1:1,9276:1:1,20519:3:3^
+7857^11^0^44^45^1446^0.7377^0.4751^11^Southsea Dock Worker^3927:1:1,4306:2:4,4338:3:6,9260:1:1,9276:1:1,20519:2:2,262890:1:1^
+7858^10^0^44^45^1446^0.7404^0.4675^10^Southsea Swashbuckler^3927:2:2,4306:1:1,4338:5:7,4422:1:1,9260:1:1,20519:2:2^
+7883^2^0^45^45^1446^0.7324^0.4723^2^Andre Firebeard^3927:1:1,4338:1:2,9246:1:1,20519:2:2^
 8996^1^0^42^43^1446^0.6174^0.3487^1^Voidwalker Minion^^
 10761^1^0^28^28^1441^0.3438^0.3994^1^Grimtotem Reaver^^
 213795^1^0^40^40^1418^0.2215^0.6802^1^Gharrik^211293:1:1^
@@ -298,6 +299,7 @@ GoldScout-export 6^axf0wk3imksc^29
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4402^Small Flame Sac
+@i^4422^Scroll of Stamina III
 @i^4460^Ripped Wing Webbing
 @i^4480^Thundering Charm
 @i^4482^Sealed Folder
@@ -347,6 +349,7 @@ GoldScout-export 6^axf0wk3imksc^29
 @i^8483^Wastewander Water Pouch
 @i^8623^OOX-17 TN Distress Beacon
 @i^8723^Caliph Scorpidsting's Head
+@i^9246^Firebeard's Head
 @i^9260^Volatile Rum
 @i^9276^Pirate's Footlocker
 @i^9871^Renegade Leggings of the Knight
@@ -372,6 +375,7 @@ GoldScout-export 6^axf0wk3imksc^29
 @i^12208^Tender Wolf Meat
 @i^14775^Ravager's Woolies
 @i^14943^Warbringer's Belt of the Boar
+@i^15168^Imposing Pants of Agility
 @i^15213^Mercenary Blade of Defense
 @i^15226^Giant Club of Holy Wrath
 @i^15584^Sparkleshell Shield of the Defender
@@ -395,6 +399,7 @@ GoldScout-export 6^axf0wk3imksc^29
 @i^248707^Waylaid Crate: Journeyman Parts
 @i^248708^Waylaid Crate: Expert Fabrics
 @i^262889^Sealed Expert's Writ
+@i^262890^Sealed Artisan's Writ
 @i^265357^Snargl's Snout
 @i^265750^Chogg's Head
 @i^265751^Zac's Head
@@ -525,6 +530,7 @@ GoldScout-export 6^axf0wk3imksc^29
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4402^1:7:1
+@q^4422^1:0:0
 @q^4460^0:15:0
 @q^4480^1:0:0
 @q^4482^1:12:0
@@ -574,6 +580,7 @@ GoldScout-export 6^axf0wk3imksc^29
 @q^8483^1:12:0
 @q^8623^2:12:0
 @q^8723^1:12:0
+@q^9246^1:12:0
 @q^9260^1:0:0
 @q^9276^1:15:0
 @q^9871^2:4:0
@@ -599,6 +606,7 @@ GoldScout-export 6^axf0wk3imksc^29
 @q^12208^1:7:1
 @q^14775^2:4:0
 @q^14943^2:4:0
+@q^15168^2:4:0
 @q^15213^2:2:0
 @q^15226^2:2:0
 @q^15584^2:4:0
@@ -622,6 +630,7 @@ GoldScout-export 6^axf0wk3imksc^29
 @q^248707^2:0:1
 @q^248708^2:0:1
 @q^262889^3:0:0
+@q^262890^3:0:0
 @q^265357^1:12:0
 @q^265750^1:12:0
 @q^265751^1:12:0
@@ -937,10 +946,11 @@ GoldScout-export 6^axf0wk3imksc^29
 @a^5623^151:2
 @a^6733^172:1,192:1
 @a^7847^151:1
-@a^7855^174:4,194:5
-@a^7856^194:4
-@a^7857^194:1
-@a^7858^194:2
+@a^7855^174:4,194:8
+@a^7856^194:6
+@a^7857^194:11
+@a^7858^194:7,195:3
+@a^7883^194:2
 @a^8996^132:1
 @a^10761^146:1
 @a^213795^264:1

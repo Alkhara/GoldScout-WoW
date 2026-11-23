@@ -1,11 +1,15 @@
-GoldScout-export 6^w2plus47spqv^7
+GoldScout-export 6^w2plus47spqv^8
 2554^4^0^32^33^1417^0.7176^0.6418^4^Witherbark Axe Thrower^1708:1:1,3771:1:1,4306:2:2^
 2555^6^0^33^34^1417^0.7145^0.6599^6^Witherbark Witch Doctor^4306:2:2,216483:1:1^
 2556^5^0^34^35^1417^0.6836^0.7660^5^Witherbark Headhunter^2592:1:1,3771:1:1,4306:1:2^
 2557^2^0^36^36^1417^0.6738^0.8147^2^Witherbark Shadow Hunter^4306:1:2^
+3245^2^0^16^17^1413^0.5799^0.5191^2^Ornery Plainstrider^4775:2:2,5114:1:1,5469:2:2,17056:1:1^
+3256^6^0^16^18^1413^0.5759^0.5260^6^Sunscale Scytheclaw^3180:1:1,5055:2:2,5165:2:2,15506:1:1^
 3381^2^0^12^13^1413^0.6385^0.4533^2^Southsea Brigand^2589:1:1^
 3382^1^0^13^13^1413^0.6384^0.4623^1^Southsea Cannoneer^^
 3385^1^0^15^16^1413^0.6190^0.5164^1^Theramore Marine^^
+3397^1^0^14^14^1413^0.5478^0.4281^1^Kolkar Bloodcharger^^
+3461^2^0^15^16^1413^0.5572^0.4369^2^Oasis Snapjaw^4555:1:1,5523:1:1^
 3560^3^0^33^33^1417^0.7234^0.6611^3^Healing Ward^^
 4113^1^0^29^29^1441^0.6527^0.6076^1^Gravelsnout Digger^^
 4130^3^0^32^33^1441^0.6961^0.8504^3^Silithid Searcher^5854:1:1,6302:2:2^
@@ -47,6 +51,7 @@ GoldScout-export 6^w2plus47spqv^7
 @i^2643^Loose Chain Bracers
 @i^2675^Crawler Claw
 @i^2773^Cracked Shortbow
+@i^3180^Flecked Raptor Scale
 @i^3299^Fractured Canine
 @i^3373^Patchwork Bracers
 @i^3399^Vulture Talon
@@ -56,11 +61,16 @@ GoldScout-export 6^w2plus47spqv^7
 @i^4306^Silk Cloth
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
+@i^4775^Cracked Bill
 @i^4776^Ruffled Feather
 @i^4873^Dry Hardened Barnacle
 @i^4874^Clean Fishbones
+@i^5055^Intact Raptor Horn
 @i^5114^Severed Talon
 @i^5116^Long Tail Feather
+@i^5165^Sunscale Feather
+@i^5469^Strider Meat
+@i^5523^Small Barnacled Clam
 @i^5636^Delicate Feather
 @i^5795^Hardened Tortoise Shell
 @i^5848^Hollow Vulture Bone
@@ -81,6 +91,7 @@ GoldScout-export 6^w2plus47spqv^7
 @i^12020^Thallium Choker of the Bandit
 @i^12037^Mystery Meat
 @i^14608^Dokebi Buckler
+@i^15506^Grunt's AnkleWraps of Magic
 @i^17056^Light Feather
 @i^211786^Scroll: CHAP BALK WELLES
 @i^216483^Witherbark Mallet
@@ -114,6 +125,7 @@ GoldScout-export 6^w2plus47spqv^7
 @q^2643^0:4:0
 @q^2675^1:7:1
 @q^2773^0:2:0
+@q^3180^0:15:0
 @q^3299^0:15:0
 @q^3373^0:4:0
 @q^3399^0:15:0
@@ -123,11 +135,16 @@ GoldScout-export 6^w2plus47spqv^7
 @q^4306^1:7:1
 @q^4555^0:15:0
 @q^4556^0:15:0
+@q^4775^0:15:0
 @q^4776^0:15:0
 @q^4873^0:15:0
 @q^4874^0:15:0
+@q^5055^1:12:0
 @q^5114^0:15:0
 @q^5116^1:7:1
+@q^5165^1:12:0
+@q^5469^1:7:1
+@q^5523^1:7:0
 @q^5636^0:15:0
 @q^5795^1:12:0
 @q^5848^1:12:0
@@ -148,6 +165,7 @@ GoldScout-export 6^w2plus47spqv^7
 @q^12020^2:4:0
 @q^12037^1:7:1
 @q^14608^2:4:0
+@q^15506^2:4:0
 @q^17056^1:15:1
 @q^211786^1:0:0
 @q^216483^1:0:0
@@ -1093,9 +1111,13 @@ GoldScout-export 6^w2plus47spqv^7
 @a^2555^254:2,273:2,274:2
 @a^2556^274:1,313:2,333:2
 @a^2557^333:2
+@a^3245^211:2
+@a^3256^211:6
 @a^3381^172:1,192:1
 @a^3382^192:1
 @a^3385^212:1
+@a^3397^170:1
+@a^3461^171:2
 @a^3560^254:1,274:2
 @a^4113^253:1
 @a^4130^334:1,353:2

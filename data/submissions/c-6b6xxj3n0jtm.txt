@@ -1,4 +1,4 @@
-GoldScout-export 6^6b6xxj3n0jtm^4
+GoldScout-export 6^6b6xxj3n0jtm^5
 4632^1^0^31^31^1443^0.6808^0.5066^1^Kolkar Centaur^^
 4633^2^0^30^31^1443^0.6836^0.4894^2^Kolkar Scout^6067:1:1,254432:1:1^
 4638^4^0^32^33^1443^0.6768^0.7333^4^Magram Scout^1708:1:1,6067:1:1^
@@ -11,8 +11,10 @@ GoldScout-export 6^6b6xxj3n0jtm^4
 4664^5^0^30^31^1443^0.5590^0.2853^5^Burning Blade Reaver^1708:1:1,4306:5:7^
 4665^5^0^31^32^1443^0.5530^0.2684^5^Burning Blade Adept^1708:1:1,4306:1:1^
 4666^14^0^31^32^1443^0.5508^0.2797^14^Burning Blade Felsworn^1708:1:1,3779:1:1,3780:1:1,4306:5:9,6986:1:1^
+4693^1^0^36^36^1443^0.6167^0.6243^1^Dread Flyer^3404:1:1^
 4697^1^0^34^34^1443^0.6758^0.6629^1^Scorpashi Lasher^6248:1:1^
-4701^1^0^36^36^1443^0.5295^0.3483^1^Dying Kodo^12204:1:1^
+4700^2^0^34^35^1443^0.6147^0.6139^2^Aged Kodo^6249:2:2,12204:1:1^
+4701^1^0^35^36^1443^0.5295^0.3483^1^Tamed Kodo^12204:1:1^
 4726^1^0^34^34^1443^0.6882^0.7224^1^Raging Thunder Lizard^5133:1:1^
 5643^1^0^36^36^1443^0.5325^0.2886^1^Tyranis Malem^2290:1:1,4306:1:1,6767:1:1^
 11562^1^0^34^34^1443^0.3483^0.3127^1^Drysnap Crawler^15878:1:1^
@@ -25,6 +27,7 @@ GoldScout-export 6^6b6xxj3n0jtm^4
 @i^2211^Bent Large Shield
 @i^2290^Scroll of Intellect II
 @i^2672^Stringy Wolf Meat
+@i^3404^Buzzard Wing
 @i^3771^Wild Hog Shank
 @i^3779^Hefty War Axe
 @i^3780^Long-barreled Musket
@@ -35,6 +38,7 @@ GoldScout-export 6^6b6xxj3n0jtm^4
 @i^5133^Seeping Gizzard
 @i^6067^Centaur Ear
 @i^6248^Scorpashi Venom
+@i^6249^Aged Kodo Hide
 @i^6767^Tyranis' Pendant
 @i^6986^Crimson Lotus
 @i^7073^Broken Fang
@@ -51,6 +55,7 @@ GoldScout-export 6^6b6xxj3n0jtm^4
 @q^2211^0:4:0
 @q^2290^1:0:0
 @q^2672^1:7:1
+@q^3404^1:7:1
 @q^3771^1:0:0
 @q^3779^0:2:0
 @q^3780^0:2:0
@@ -61,6 +66,7 @@ GoldScout-export 6^6b6xxj3n0jtm^4
 @q^5133^0:15:0
 @q^6067^1:12:0
 @q^6248^1:12:0
+@q^6249^1:12:0
 @q^6767^1:12:0
 @q^6986^0:15:0
 @q^7073^0:15:0
@@ -87,7 +93,9 @@ GoldScout-export 6^6b6xxj3n0jtm^4
 @a^4664^110:1,111:4
 @a^4665^110:3,111:2
 @a^4666^110:5,111:6,131:3
+@a^4693^252:1
 @a^4697^273:1
+@a^4700^252:2
 @a^4701^130:1
 @a^4726^293:1
 @a^5643^110:1
