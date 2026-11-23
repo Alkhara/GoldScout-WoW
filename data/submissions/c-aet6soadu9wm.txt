@@ -1,4 +1,4 @@
-GoldScout-export 6^aet6soadu9wm^5
+GoldScout-export 6^aet6soadu9wm^6
 587^24^0^33^34^1434^0.2926^0.1969^24^Guerrier Bloodscalp^1519:3:3,1520:3:3,2592:2:3,2742:1:1,3771:4:4,3783:1:1,3901:4:4,3915:10:10,4306:11:17^
 588^5^0^34^35^1434^0.2577^0.1016^5^Eclaireur Bloodscalp^2592:1:2,3800:1:1,4306:2:3^
 595^6^0^34^35^1434^0.2585^0.1039^6^Chasseur Bloodscalp^2732:1:1,4306:1:2,213545:1:1^
@@ -45,6 +45,12 @@ GoldScout-export 6^aet6soadu9wm^5
 4540^9^0^0^0^0^0.0000^0.0000^0^^1708:1:1,3781:1:1,4306:3:7,8747:1:1,9856:1:1,262889:1:1^
 4723^1^0^38^38^1434^0.4225^0.1863^1^Contremaître Cozzle^1630:1:1,1708:1:1,5851:1:1^
 6487^2^0^0^0^0^0.0000^0.0000^0^^7712:1:1,274293:2:2,274294:1:1^
+255898^9^0^38^39^2548^0.7207^0.6189^9^Oracle murloc^5524:4:4,268344:6:8^
+255899^5^0^37^38^2548^0.7687^0.6293^5^Frôle-marée murloc^268344:3:3^
+255901^6^0^36^37^2548^0.7674^0.6151^6^Clampant des sables^5524:2:2,5569:4:4,12206:1:1,13105:1:1,17057:1:1,268345:2:2^
+256801^3^0^40^41^2548^0.7196^0.6185^3^Guerrier murloc^268344:2:2^
+256807^9^0^39^40^2548^0.8325^0.4653^9^Clampant du rivage^3010:2:2,5524:2:2,5569:4:4,12206:1:1,17057:3:3,268345:3:3^
+257901^1^0^41^42^2548^0.8618^0.4058^1^Boucanière des mers de l'Est^^
 260429^1^0^39^39^1434^0.4355^0.2031^1^Agent de la KapitalRisk^^
 269175^5^0^36^38^1434^0.3394^0.2813^5^Herbe carnivore^256036:1:1,256037:3:3^
 @i^770^Croc pointu de crocilisque
@@ -72,6 +78,7 @@ GoldScout-export 6^aet6soadu9wm^5
 @i^2749^Les vertes collines de Strangleronce - Page 25
 @i^2751^Les vertes collines de Strangleronce - Page 27
 @i^2799^Croc de gorille
+@i^3010^Sable fin
 @i^3385^Potion de mana inférieure
 @i^3667^Viande de crocilisque tendre
 @i^3685^Oeuf de raptor
@@ -113,6 +120,8 @@ GoldScout-export 6^aet6soadu9wm^5
 @i^4539^Pomme dorette
 @i^4586^Peau lisse de raptor
 @i^5079^Oeil de basilic Oeil-de-glace
+@i^5524^Palourde à coque épaisse
+@i^5569^Algue
 @i^5637^Grand croc
 @i^5785^Ecailles de murloc épaisses
 @i^5796^Nageoire incrustée
@@ -130,6 +139,8 @@ GoldScout-export 6^aet6soadu9wm^5
 @i^12037^Viande mystère
 @i^12184^Chair de raptor
 @i^12202^Viande de tigre
+@i^12206^Viande de crabe tendre
+@i^13105^Ceinture de Sutarn
 @i^15935^Bâtonnet solide de canalisation
 @i^17057^Ecailles de poisson brillantes
 @i^17058^Huile de poisson
@@ -141,6 +152,8 @@ GoldScout-export 6^aet6soadu9wm^5
 @i^256036^Poignée de poussière
 @i^256037^Herbes coupées
 @i^262889^Commission d'expert scellée
+@i^268344^Œil de Murloc d'eau de mer
+@i^268345^Chair de clampant des sables
 @i^274293^Arbalète de tranchesort
 @i^274294^Brodequins de bibliothèque
 @q^770^0:15:0
@@ -168,6 +181,7 @@ GoldScout-export 6^aet6soadu9wm^5
 @q^2749^1:12:0
 @q^2751^1:12:0
 @q^2799^1:12:0
+@q^3010^0:15:0
 @q^3385^1:0:0
 @q^3667^1:7:1
 @q^3685^1:7:1
@@ -209,6 +223,8 @@ GoldScout-export 6^aet6soadu9wm^5
 @q^4539^1:0:0
 @q^4586^0:15:0
 @q^5079^2:4:0
+@q^5524^1:7:0
+@q^5569^0:15:0
 @q^5637^1:7:1
 @q^5785^1:7:1
 @q^5796^1:12:0
@@ -226,6 +242,8 @@ GoldScout-export 6^aet6soadu9wm^5
 @q^12037^1:7:1
 @q^12184^1:7:1
 @q^12202^1:7:1
+@q^12206^1:7:1
+@q^13105^3:4:0
 @q^15935^2:4:0
 @q^17057^1:15:0
 @q^17058^1:15:0
@@ -237,12 +255,15 @@ GoldScout-export 6^aet6soadu9wm^5
 @q^256036^0:15:0
 @q^256037^0:15:0
 @q^262889^3:0:0
+@q^268344^1:12:0
+@q^268345^1:12:0
 @q^274293^3:2:0
 @q^274294^2:4:0
 @m^1417^Hautes-terres d'Arathi
 @m^1434^Vallée de Strangleronce
 @m^1437^Les Paluns
 @m^1442^Les Serres-Rocheuses
+@m^2548^Rives Claires
 @c^724^
 @c^733^
 @c^787^
@@ -968,6 +989,12 @@ GoldScout-export 6^aet6soadu9wm^5
 @a^2667^127:2
 @a^4022^167:1
 @a^4723^68:1
+@a^255898^254:9
+@a^255899^255:5
+@a^255901^235:1,254:1,255:4
+@a^256801^254:3
+@a^256807^177:3,195:1,196:4,215:1
+@a^257901^177:1
 @a^260429^88:1
 @a^269175^106:5
 @f^1434^0^6^177^3820:3:7,6358:1:1,6362:1:1,21228:1:1^85:1,145:3,146:2

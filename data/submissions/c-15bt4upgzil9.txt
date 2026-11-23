@@ -1,4 +1,4 @@
-GoldScout-export 6^15bt4upgzil9^5
+GoldScout-export 6^15bt4upgzil9^6
 2242^8^0^35^36^1416^0.6139^0.4385^8^Espía de la Hermandad^1710:2:2,4306:3:6,5113:3:3^
 2246^11^0^38^39^1416^0.3973^0.1697^11^Asesino de la Hermandad^1477:1:1,1707:1:1,3505:4:4,4306:2:3,4338:1:1,6421:1:1,7431:1:1^
 2247^15^0^39^40^1416^0.4024^0.1810^15^Déspota de la Hermandad^1707:1:1,1710:1:1,3505:3:3,4306:3:8,4338:1:1,5113:1:1,6986:1:1^
@@ -50,7 +50,18 @@ GoldScout-export 6^15bt4upgzil9^5
 4392^2^0^38^39^1445^0.5103^0.5541^2^Moco del pantano corrosivo^3792:1:1,20763:2:2,280203:1:1^
 4396^13^0^36^37^1445^0.6297^0.3096^13^Tortuga Fangorroca^4555:1:1,4556:7:7,5883:4:4,6362:3:4^
 4397^11^0^37^38^1445^0.6228^0.2746^11^Caparapico Fangorroca^3712:3:3,4555:8:8,4556:2:2,5883:4:4,6362:2:3^
+4668^1^0^38^38^1443^0.5191^0.8455^1^Invocador Filo Ardiente^^
+4680^10^0^38^39^1443^0.5161^0.8333^10^Capitán guardiavil^4306:2:4,6252:10:10^
+4681^2^0^38^38^1443^0.5315^0.7830^2^Cazador de magos^4582:1:1,6250:2:2^
+4682^1^0^38^38^1443^0.5240^0.8496^1^Hermana abisal^6251:1:1^
+4684^9^0^39^40^1443^0.5174^0.8353^9^Hechicera abisal^4306:3:5,4338:1:1,6251:9:9^
+4685^8^0^39^40^1443^0.5164^0.8361^8^Cazador Ley^4582:6:6,4583:2:2,6250:8:8^
+11559^11^0^39^40^2652^0.2854^0.2714^11^Nigromante marginada^4306:1:1,213546:1:1,251392:1:1,255875:1:1^
+11560^9^0^38^39^2652^0.3159^0.3022^9^Espectro centauro^15849:8:8^
+11561^7^0^37^43^2652^0.2950^0.2853^7^Devastador no-muerto^4306:2:2^
+12922^1^0^38^38^1443^0.5199^0.8451^1^Esbirro diablillo^^
 218029^1^0^34^34^1417^0.6926^0.8197^1^Campeón Secacorteza^1477:1:1,4306:1:2^
+253272^2^0^42^43^2652^0.3083^0.2903^2^Nigromante Magram^3385:1:1,4338:1:1^
 255851^1^0^38^39^2548^0.7045^0.6311^1^Palidente maduro^^
 255898^12^0^38^39^2548^0.7319^0.6357^12^Oráculo múrloc^1645:3:3,5524:3:3,248692:1:1,268344:5:8^
 255899^19^0^37^38^2548^0.7466^0.6593^19^Robamareas múrloc^268344:5:5^
@@ -77,6 +88,7 @@ GoldScout-export 6^15bt4upgzil9^5
 @i^2592^Paño de lana
 @i^2843^Nudillos sucios
 @i^3010^Arena fina
+@i^3385^Poción de maná inferior
 @i^3505^Sello de Alterac
 @i^3667^Carne de crocolisco tierna
 @i^3672^Cabeza de Nagaz
@@ -121,6 +133,9 @@ GoldScout-export 6^15bt4upgzil9^5
 @i^5847^Cabeza de Ancalodo
 @i^5883^Lengua Fangorroca bífida
 @i^5884^Ojo de Niebla Negra sin reventar
+@i^6250^Cerebro de can manáfago
+@i^6251^Ala Abisal
+@i^6252^Sangre de guardiavil
 @i^6362^Bacalao piedrescama crudo
 @i^6419^Mitones con inscripciones
 @i^6421^Cinturón con inscripciones
@@ -144,6 +159,7 @@ GoldScout-export 6^15bt4upgzil9^5
 @i^12208^Carne de lobo tierna
 @i^14239^Manteo Niebla Negra de la bestia
 @i^15358^Prendas de lana de rebanacabezas del tigre
+@i^15849^Ectoplasma
 @i^17057^Escamas de pez lustrosas
 @i^17058^Aceite de pescado
 @i^20763^Arma rota
@@ -153,6 +169,8 @@ GoldScout-export 6^15bt4upgzil9^5
 @i^248692^Cajón arrebatado: Mena de experto
 @i^248693^Cajón arrebatado: Textiles de experto
 @i^248694^Cajón arrebatado: Curiosidades de experto
+@i^251392^Diseño: coraza de mitril brillante
+@i^255875^Atuendo nigromántico
 @i^265738^Pelambre de pelihollín
 @i^268344^Ojo de múrloc marino
 @i^268345^Carne de reptador de arena
@@ -175,6 +193,7 @@ GoldScout-export 6^15bt4upgzil9^5
 @q^2592^1:7:1
 @q^2843^1:12:0
 @q^3010^0:15:0
+@q^3385^1:0:0
 @q^3505^1:12:0
 @q^3667^1:7:1
 @q^3672^1:12:0
@@ -219,6 +238,9 @@ GoldScout-export 6^15bt4upgzil9^5
 @q^5847^1:12:0
 @q^5883^1:12:0
 @q^5884^1:12:0
+@q^6250^1:12:0
+@q^6251^1:12:0
+@q^6252^1:12:0
 @q^6362^1:7:1
 @q^6419^2:4:0
 @q^6421^2:4:0
@@ -242,6 +264,7 @@ GoldScout-export 6^15bt4upgzil9^5
 @q^12208^1:7:1
 @q^14239^2:4:0
 @q^15358^2:4:0
+@q^15849^1:12:0
 @q^17057^1:15:0
 @q^17058^1:15:0
 @q^20763^0:15:0
@@ -251,6 +274,8 @@ GoldScout-export 6^15bt4upgzil9^5
 @q^248692^1:0:1
 @q^248693^1:0:1
 @q^248694^1:0:1
+@q^251392^2:9:0
+@q^255875^1:12:0
 @q^265738^1:12:0
 @q^268344^1:12:0
 @q^268345^1:12:0
@@ -259,8 +284,10 @@ GoldScout-export 6^15bt4upgzil9^5
 @m^1416^Montañas de Alterac
 @m^1417^Tierras Altas de Arathi
 @m^1425^Tierras del Interior
+@m^1443^Desolace
 @m^1445^Marjal Revolcafango
 @m^2548^Claros del Río
+@m^2652^Shen'dralas
 @c^118^
 @c^724^
 @c^733^
@@ -1095,7 +1122,18 @@ GoldScout-export 6^15bt4upgzil9^5
 @a^4392^209:1,230:1
 @a^4396^72:1,112:5,132:4,152:3
 @a^4397^71:1,92:1,112:4,113:1,132:3,152:1
+@a^4668^330:1
+@a^4680^330:10
+@a^4681^310:2
+@a^4682^330:1
+@a^4684^330:9
+@a^4685^329:2,330:4,350:2
+@a^11559^85:1,86:1,105:6,106:2,126:1
+@a^11560^106:2,126:7
+@a^11561^105:5,126:2
+@a^12922^330:1
 @a^218029^333:1
+@a^253272^105:1,126:1
 @a^255851^254:1
 @a^255898^254:9,274:2,275:1
 @a^255899^254:6,255:5,275:4,294:4

@@ -1,4 +1,4 @@
-GoldScout-export 6^yeqak4pqsl9i^27
+GoldScout-export 6^yeqak4pqsl9i^28
 92^32^0^39^40^1418^0.4225^0.8047^32^Elémentaire de roche^4041:1:1,4552:1:1,4553:17:17,4784:21:21,7067:4:4,7848:5:5,7912:6:8,8150:7:7,248710:1:1^
 94^1^0^5^6^1429^0.3662^0.5362^1^Vide-gousset défias^^
 116^1^0^9^9^1429^0.5206^0.5945^1^Bandit défias^^
@@ -45,6 +45,8 @@ GoldScout-export 6^yeqak4pqsl9i^27
 2729^6^0^39^40^1418^0.3586^0.6900^6^Ancien coyote des rochers^4582:2:2,5637:2:2,7846:1:1,12203:5:5^
 2732^3^0^38^39^1418^0.4191^0.5188^3^Chasseresse des récifs^1688:1:1,12202:2:2^
 2739^1^0^36^36^1418^0.5276^0.2935^1^Tunnelier Ombreforge^^
+2743^2^0^38^39^1418^0.4320^0.3153^2^Guerrier Ombreforge^^
+2745^1^0^42^42^1418^0.4112^0.2764^1^Ambassadeur Infernus^4621:1:1^
 2760^5^0^38^39^1417^0.2514^0.3130^5^Exilé ardent^3857:2:2,4479:2:2,4787:2:2^
 2761^19^0^38^39^1417^0.6622^0.3013^19^Exilé grimpeur^4481:4:4,4791:10:31,7070:1:1^
 2762^125^0^38^39^1417^0.5188^0.5075^125^Exilé foudroyant^4480:64:64,4729:1:1,7069:25:25,7439:1:1,7441:1:1,7445:1:1,9892:1:1,248692:1:1^
@@ -454,6 +456,7 @@ GoldScout-export 6^yeqak4pqsl9i^27
 @i^4604^Tête de champignon sylvestre
 @i^4605^Champignon à pois rouges
 @i^4607^Délicieux humus des grottes
+@i^4621^Bracelets de l'ambassadeur Infernus
 @i^4635^Amulette de Hammertoe
 @i^4729^Mantelet de l'aurore
 @i^4775^Bec craquelé
@@ -836,6 +839,7 @@ GoldScout-export 6^yeqak4pqsl9i^27
 @q^4604^1:0:0
 @q^4605^1:0:0
 @q^4607^1:0:0
+@q^4621^1:12:0
 @q^4635^1:12:0
 @q^4729^2:4:0
 @q^4775^0:15:0
@@ -1846,6 +1850,8 @@ GoldScout-export 6^yeqak4pqsl9i^27
 @a^2729^243:1,267:3,288:2
 @a^2732^170:1,206:1,228:1
 @a^2739^110:1
+@a^2743^128:2
+@a^2745^108:1
 @a^2760^105:1,124:2,125:2
 @a^2761^113:7,132:2,133:10
 @a^2762^190:32,210:93

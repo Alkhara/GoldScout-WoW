@@ -1,6 +1,9 @@
-GoldScout-export 6^sigvda6wxpxp^14
+GoldScout-export 6^sigvda6wxpxp^15
 1765^2^0^10^11^1421^0.5817^0.0872^2^Worg^2672:2:2^
 1766^12^0^11^12^1421^0.5749^0.0984^12^Mottled Worg^1210:1:1,2672:10:10,3164:3:3^
+1769^5^0^10^11^1421^0.5194^0.4270^5^Moonrage Whitescalp^^
+1770^6^0^11^12^1421^0.5234^0.2790^6^Moonrage Darkrunner^2287:1:1^
+1778^11^0^11^12^1421^0.5166^0.4143^11^Ferocious Grizzled Bear^2940:1:1,3169:1:1,3170:1:1,3173:2:2,3253:6:6,15925:1:1^
 2265^3^0^24^25^1424^0.3194^0.4739^3^Hillsbrad Apprentice Blacksmith^929:1:1,3692:2:2^
 2266^4^0^23^24^1424^0.3405^0.4712^4^Hillsbrad Farmer^1485:1:1,3692:1:1,4306:1:1^
 2267^10^0^24^25^1424^0.3474^0.4670^10^Hillsbrad Peasant^1205:1:1,2589:2:4,2592:1:2,3692:4:4,4306:1:1^
@@ -178,6 +181,7 @@ GoldScout-export 6^sigvda6wxpxp^14
 @i^2210^Battered Buckler
 @i^2211^Bent Large Shield
 @i^2212^Cracked Buckler
+@i^2287^Haunch of Meat
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2608^Threshadon Ambergris
@@ -196,8 +200,12 @@ GoldScout-export 6^sigvda6wxpxp^14
 @i^2965^Warrior's Tunic
 @i^3013^Scroll of Protection
 @i^3164^Discolored Worg Heart
+@i^3169^Chipped Bear Tooth
+@i^3170^Large Bear Tooth
+@i^3173^Bear Meat
 @i^3190^Beatstick
 @i^3199^Battle Slayer of Holy Wrath
+@i^3253^Grizzled Bear Heart
 @i^3285^Tribal Bracers
 @i^3290^Ancestral Gloves
 @i^3299^Fractured Canine
@@ -281,6 +289,7 @@ GoldScout-export 6^sigvda6wxpxp^14
 @i^14086^Beaded Sandals
 @i^15115^Rigid Gloves of the Eagle
 @i^15515^Spiked Chain Belt of Spirit
+@i^15925^Journeyman's Stave
 @i^16312^Incendrites
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
@@ -371,6 +380,7 @@ GoldScout-export 6^sigvda6wxpxp^14
 @q^2210^0:4:0
 @q^2211^0:4:0
 @q^2212^0:4:0
+@q^2287^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2608^0:15:0
@@ -389,8 +399,12 @@ GoldScout-export 6^sigvda6wxpxp^14
 @q^2965^2:4:0
 @q^3013^1:0:0
 @q^3164^1:12:0
+@q^3169^0:15:0
+@q^3170^0:15:0
+@q^3173^1:7:1
 @q^3190^1:2:0
 @q^3199^2:2:0
+@q^3253^1:12:0
 @q^3285^1:4:0
 @q^3290^1:4:0
 @q^3299^0:15:0
@@ -474,6 +488,7 @@ GoldScout-export 6^sigvda6wxpxp^14
 @q^14086^1:4:0
 @q^15115^2:4:0
 @q^15515^2:4:0
+@q^15925^2:4:0
 @q^16312^1:12:0
 @q^17056^1:15:1
 @q^17057^1:15:0
@@ -1572,6 +1587,9 @@ GoldScout-export 6^sigvda6wxpxp^14
 @c^286152^
 @a^1765^31:2
 @a^1766^31:7,51:5
+@a^1769^150:2,170:1,190:2
+@a^1770^110:6
+@a^1778^150:5,170:4,190:2
 @a^2265^186:3
 @a^2266^166:1,186:2,187:1
 @a^2267^167:2,186:5,187:3
