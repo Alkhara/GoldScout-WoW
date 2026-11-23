@@ -1,5 +1,15 @@
-GoldScout-export 6^1x4j3xvb2rs5^24
+GoldScout-export 6^1x4j3xvb2rs5^25
+681^8^0^30^31^1434^0.3498^0.1149^8^Jeune tigre de Strangleronce^1686:3:3,3042:1:1,12202:7:7^
+683^6^0^30^31^1434^0.4123^0.1187^6^Jeune panthère^1686:3:3,1687:1:1,9824:1:1^
+685^2^0^33^34^1434^0.2802^0.1620^2^Raptor de Strangleronce^1696:1:1,3685:1:1,4461:1:1^
+686^2^0^35^36^1434^0.3274^0.2325^2^Raptor flagellant^4461:1:1,4586:1:1,12184:1:1^
+698^1^0^34^34^1434^0.2903^0.1116^1^Tigre Bloodscalp^^
+699^1^0^34^35^1434^0.2879^0.1140^1^Belluaire Bloodscalp^3901:1:1^
+702^2^0^33^34^1434^0.3118^0.1209^2^Charognard Bloodscalp^1477:1:1,1519:1:1,1520:1:1,3901:1:1,4306:1:2^
+736^2^0^32^33^1434^0.2846^0.1235^2^Panthère^1686:1:1,5637:1:1^
 1035^1^0^27^28^1437^0.4910^0.4447^1^Arpenteur Dragonmaw^^
+1150^6^0^30^31^1434^0.3849^0.1209^6^Crocilisque des rivières^770:4:4,3667:3:3,4053:2:2,12037:1:1^
+1152^1^0^35^36^1434^0.4140^0.1533^1^Crocilisque Gueule d'acier^770:1:1^
 1525^9^0^5^6^1420^0.5333^0.4989^9^Mort pourrissant^1181:1:1,2589:2:3,2855:2:2^
 1526^8^0^6^7^1420^0.5280^0.4985^8^Cadavre décomposé^^
 1535^10^0^6^7^1420^0.3348^0.4823^10^Guerrière écarlate^^
@@ -203,8 +213,14 @@ GoldScout-export 6^1x4j3xvb2rs5^24
 @i^1210^Oeil ténébreux
 @i^1417^Hache de guerre oxydée
 @i^1468^Aileron de murloc
+@i^1477^Parchemin d'Agilité II
 @i^1501^Tunique en calicot
+@i^1519^Oreille de Bloodscalp
+@i^1520^Sueur de troll
 @i^1529^Jade
+@i^1686^Moustache à poil dur
+@i^1687^Griffe rétractile
+@i^1696^Griffe de raptor
 @i^1697^Dent de raptor
 @i^1701^Griffe de basilic
 @i^1702^Epine dorsale intacte de basilic
@@ -234,6 +250,7 @@ GoldScout-export 6^1x4j3xvb2rs5^24
 @i^2858^Sang de sombredogue
 @i^2859^Ecaille d'Aileron noir
 @i^2940^Patte d'ours sanglante
+@i^3042^BKP petit calibre Moineau
 @i^3172^Tripes de sanglier
 @i^3180^Ecaille de raptor tacheté
 @i^3181^Viande partiellement digérée
@@ -249,6 +266,7 @@ GoldScout-export 6^1x4j3xvb2rs5^24
 @i^3403^Défense de sanglier en ivoire
 @i^3601^Missive du Syndicat
 @i^3635^Patte d'Oeil-de-ver
+@i^3667^Viande de crocilisque tendre
 @i^3669^Bave gélatineuse
 @i^3670^Grand os visqueux
 @i^3674^Botte décomposée
@@ -263,6 +281,8 @@ GoldScout-export 6^1x4j3xvb2rs5^24
 @i^3740^Tranche-tête de guérison
 @i^3771^Jarret de cochon sauvage
 @i^3780^Mousquet à canon long
+@i^3901^Défense de Bloodscalp
+@i^4053^Grande peau de crocilisque des rivières
 @i^4093^Grande queue de basilic
 @i^4306^Etoffe de soie
 @i^4337^Soie d'araignée épaisse
@@ -340,6 +360,7 @@ GoldScout-export 6^1x4j3xvb2rs5^24
 @i^9740^Gemme de Pythas
 @i^9741^Gemme de Serpentis
 @i^9770^Cape en tisse-vert d'agilité
+@i^9824^Epaulières solides de l'aigle
 @i^10338^Carcasse de zhévra fraîche
 @i^10413^Gants du Croc
 @i^10441^Eclat luminescent
@@ -347,6 +368,7 @@ GoldScout-export 6^1x4j3xvb2rs5^24
 @i^11416^Cage thoracique délicate
 @i^12037^Viande mystère
 @i^12184^Chair de raptor
+@i^12202^Viande de tigre
 @i^12223^Aile de chauve-souris charnue
 @i^14122^Poignets rituels d'esprit
 @i^14367^Gants de mystique
@@ -393,8 +415,14 @@ GoldScout-export 6^1x4j3xvb2rs5^24
 @q^1210^2:7:1
 @q^1417^0:2:0
 @q^1468^1:7:1
+@q^1477^1:0:0
 @q^1501^0:4:0
+@q^1519^1:12:0
+@q^1520^0:15:0
 @q^1529^2:7:1
+@q^1686^0:15:0
+@q^1687^0:15:0
+@q^1696^0:15:0
 @q^1697^0:15:0
 @q^1701^0:15:0
 @q^1702^0:15:0
@@ -424,6 +452,7 @@ GoldScout-export 6^1x4j3xvb2rs5^24
 @q^2858^1:12:0
 @q^2859^1:12:0
 @q^2940^0:15:0
+@q^3042^2:2:0
 @q^3172^1:7:1
 @q^3180^0:15:0
 @q^3181^0:15:0
@@ -439,6 +468,7 @@ GoldScout-export 6^1x4j3xvb2rs5^24
 @q^3403^0:15:0
 @q^3601^1:12:0
 @q^3635^1:12:0
+@q^3667^1:7:1
 @q^3669^0:15:0
 @q^3670^0:15:0
 @q^3674^0:15:0
@@ -453,6 +483,8 @@ GoldScout-export 6^1x4j3xvb2rs5^24
 @q^3740^2:2:0
 @q^3771^1:0:0
 @q^3780^0:2:0
+@q^3901^1:12:0
+@q^4053^1:12:0
 @q^4093^0:15:0
 @q^4306^1:7:1
 @q^4337^1:7:1
@@ -530,6 +562,7 @@ GoldScout-export 6^1x4j3xvb2rs5^24
 @q^9740^1:12:0
 @q^9741^1:12:0
 @q^9770^2:4:0
+@q^9824^2:4:0
 @q^10338^1:12:0
 @q^10413^3:4:0
 @q^10441^1:12:0
@@ -537,6 +570,7 @@ GoldScout-export 6^1x4j3xvb2rs5^24
 @q^11416^0:15:0
 @q^12037^1:7:1
 @q^12184^1:7:1
+@q^12202^1:7:1
 @q^12223^1:7:1
 @q^14122^2:4:0
 @q^14367^2:4:0
@@ -572,6 +606,7 @@ GoldScout-export 6^1x4j3xvb2rs5^24
 @m^1417^Hautes-terres d'Arathi
 @m^1420^Clairières de Tirisfal
 @m^1424^Contreforts de Hautebrande
+@m^1434^Vallée de Strangleronce
 @m^1437^Les Paluns
 @m^1441^Mille pointes
 @c^118^
@@ -1931,7 +1966,17 @@ GoldScout-export 6^1x4j3xvb2rs5^24
 @c^279985^
 @c^279987^
 @c^286152^
+@a^681^26:3,46:2,47:3
+@a^683^47:1,48:5
+@a^685^65:2
+@a^686^86:2
+@a^698^45:1
+@a^699^45:1
+@a^702^46:2
+@a^736^45:2
 @a^1035^169:1
+@a^1150^26:1,46:1,48:4
+@a^1152^68:1
 @a^1525^190:4,210:5
 @a^1526^190:5,210:2,230:1
 @a^1535^186:8,187:1,206:1

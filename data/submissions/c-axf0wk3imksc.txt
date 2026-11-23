@@ -1,4 +1,4 @@
-GoldScout-export 6^axf0wk3imksc^25
+GoldScout-export 6^axf0wk3imksc^26
 587^3^0^33^34^1434^0.2993^0.1920^3^Bloodscalp Warrior^1520:1:1,2735:1:1,4306:1:2^
 597^1^0^36^37^1434^0.2277^0.0865^1^Bloodscalp Berserker^^
 660^2^0^37^37^1434^0.2446^0.1031^2^Bloodscalp Witch Doctor^2750:1:1,4338:1:1^
@@ -65,9 +65,13 @@ GoldScout-export 6^axf0wk3imksc^25
 2619^6^0^34^35^1417^0.6028^0.5536^6^Hammerfall Grunt^3780:1:1^
 2714^1^0^35^35^1417^0.4577^0.5734^1^Forsaken Courier^4482:1:1^
 2721^2^0^35^35^1417^0.4562^0.5736^2^Forsaken Bodyguard^4306:2:3^
+2725^2^0^41^43^1418^0.6949^0.5212^2^Scalding Whelp^4460:1:1,6444:1:1^
 2733^1^0^36^36^1417^0.6033^0.5868^1^Apothecary Jorell^4607:1:1^
 2762^4^0^38^39^1417^0.5124^0.5092^4^Thundering Exile^4480:2:2,248690:1:1^
 2783^1^0^40^40^1417^0.2872^0.6116^1^Marez Cowl^4515:1:1^
+2829^1^0^35^37^1418^0.6412^0.4513^1^Starving Buzzard^12037:1:1^
+2906^6^0^36^37^1418^0.6649^0.2361^6^Dustbelcher Warrior^4306:3:8,4630:2:2^
+2907^6^0^36^37^1418^0.6604^0.2410^6^Dustbelcher Mystic^4306:3:6,4338:1:1,4630:5:5^
 2946^4^0^44^44^1424^0.4872^0.5214^4^Puppet of Helcular^^
 3560^1^0^27^27^1441^0.3202^0.3232^1^Healing Ward^^
 3974^1^0^0^0^0^0.0000^0.0000^0^^1708:1:1^
@@ -97,6 +101,7 @@ GoldScout-export 6^axf0wk3imksc^25
 5286^8^0^40^41^1444^0.6257^0.4561^8^Longtooth Runner^4583:2:2,4584:2:2,12203:5:5,12208:1:1^
 5292^1^0^43^44^1444^0.5538^0.5474^1^Feral Scar Yeti^^
 6575^1^0^0^0^0^0.0000^0.0000^0^^1707:1:1^
+6733^2^0^39^40^1418^0.6391^0.4506^2^Stonevault Basher^3771:1:1,3816:1:1^
 7857^1^0^44^45^1446^0.7337^0.4786^1^Southsea Dock Worker^4338:1:2^
 7858^2^0^44^45^1446^0.7283^0.4803^2^Southsea Swashbuckler^4338:2:3^
 10761^1^0^28^28^1441^0.3438^0.3994^1^Grimtotem Reaver^^
@@ -261,6 +266,7 @@ GoldScout-export 6^axf0wk3imksc^25
 @i^3810^Double Mail Bracers
 @i^3811^Double-Stitched Cloak
 @i^3815^Double Mail Vest
+@i^3816^Reflective Heater
 @i^3817^Reinforced Buckler
 @i^3818^Fadeleaf
 @i^3827^Mana Potion
@@ -289,6 +295,7 @@ GoldScout-export 6^axf0wk3imksc^25
 @i^4584^Large Trophy Paw
 @i^4603^Raw Spotted Yellowtail
 @i^4607^Delicious Cave Mold
+@i^4630^Scrap Metal
 @i^4634^Iron Lockbox
 @i^4636^Strong Iron Lockbox
 @i^4729^Aurora Mantle
@@ -471,6 +478,7 @@ GoldScout-export 6^axf0wk3imksc^25
 @q^3810^0:4:0
 @q^3811^0:4:0
 @q^3815^0:4:0
+@q^3816^0:4:0
 @q^3817^0:4:0
 @q^3818^1:7:1
 @q^3827^1:0:0
@@ -499,6 +507,7 @@ GoldScout-export 6^axf0wk3imksc^25
 @q^4584^0:15:0
 @q^4603^1:7:1
 @q^4607^1:0:0
+@q^4630^1:12:0
 @q^4634^2:15:0
 @q^4636^2:15:0
 @q^4729^2:4:0
@@ -616,6 +625,7 @@ GoldScout-export 6^axf0wk3imksc^25
 @m^1415^Eastern Kingdoms
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
+@m^1418^Badlands
 @m^1424^Hillsbrad Foothills
 @m^1434^Stranglethorn Vale
 @m^1441^Thousand Needles
@@ -859,9 +869,13 @@ GoldScout-export 6^axf0wk3imksc^25
 @a^2619^211:1,212:1,232:4
 @a^2714^229:1
 @a^2721^229:2
+@a^2725^213:2
 @a^2733^232:1
 @a^2762^190:1,210:3
 @a^2783^245:1
+@a^2829^192:1
+@a^2906^93:6
+@a^2907^93:4,112:2
 @a^2946^209:4
 @a^3560^126:1
 @a^5232^231:1
@@ -871,6 +885,7 @@ GoldScout-export 6^axf0wk3imksc^25
 @a^5268^211:3
 @a^5286^176:2,185:3,195:1,197:2
 @a^5292^211:1
+@a^6733^172:1,192:1
 @a^7857^194:1
 @a^7858^194:2
 @a^10761^146:1

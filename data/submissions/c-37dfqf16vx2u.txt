@@ -1,4 +1,4 @@
-GoldScout-export 6^37dfqf16vx2u^8
+GoldScout-export 6^37dfqf16vx2u^9
 46^5^0^9^10^1429^0.7889^0.6705^5^Murlocfutterwühler^779:1:1,1425:1:1^
 94^1^0^6^6^1429^0.3805^0.5849^1^Taschendieb der Defias^2070:1:1^
 118^9^0^9^10^1429^0.8127^0.6468^9^Streuner^2672:7:7,3300:3:3^
@@ -21,6 +21,7 @@ GoldScout-export 6^37dfqf16vx2u^8
 1195^1^0^10^11^1432^0.3171^0.1780^1^Waldlauerer^5465:1:1^
 1202^1^0^11^11^1432^0.2679^0.4023^1^Kobold der Tunnelratten^2589:1:1^
 1961^1^0^11^11^1426^0.7861^0.3741^1^Marterklaue^3169:1:1,3183:1:1^
+2032^6^0^2^2^1438^0.6003^0.3493^6^Räudiger Nachtsäbler^1366:1:1,1374:1:1,2652:1:1,3363:1:1,4865:2:2,7073:2:2,7074:4:4^
 2384^1^0^23^23^1424^0.3932^0.3724^1^Verhungernder Berglöwe^3731:1:1,5135:1:1^
 2554^3^0^32^33^1417^0.6943^0.6306^3^Axtwerferin der Bleichborken^3385:1:1,4306:2:3^
 2555^8^0^33^34^1417^0.6769^0.7078^8^Hexendoktorin der Bleichborken^3771:1:1,4306:2:3,4522:4:4,216483:1:1^
@@ -46,6 +47,8 @@ GoldScout-export 6^37dfqf16vx2u^8
 @i^1006^Messinghalsband
 @i^1179^Eiskalte Milch
 @i^1180^Rolle der Ausdauer
+@i^1366^Struppige Lederhose
+@i^1374^Ausgefranste Schuhe
 @i^1413^Schwächliches Schwert
 @i^1416^Rostiges Kriegsbeil
 @i^1425^Abgenutzte Lederweste
@@ -66,6 +69,7 @@ GoldScout-export 6^37dfqf16vx2u^8
 @i^2592^Wollstoff
 @i^2645^Lockere Kettenhandschuhe
 @i^2648^Lockere Kettenweste
+@i^2652^Sehr leichter Kettenumhang
 @i^2672^Sehniges Wolfsfleisch
 @i^2698^Rezept: Gekochte Krebsschere
 @i^2777^Schwächlicher Kurzbogen
@@ -77,6 +81,7 @@ GoldScout-export 6^37dfqf16vx2u^8
 @i^3183^Räudige Klaue
 @i^3299^Gerissener Eckzahn
 @i^3300^Hasenpfote
+@i^3363^Ausgefranster Gürtel
 @i^3374^Kattungürtel
 @i^3385^Geringer Manatrank
 @i^3610^Pläne: Edelsteinbesetzte Kupferstulpen
@@ -120,6 +125,8 @@ GoldScout-export 6^37dfqf16vx2u^8
 @q^1006^1:12:0
 @q^1179^1:0:0
 @q^1180^1:0:0
+@q^1366^0:4:0
+@q^1374^0:4:0
 @q^1413^0:2:0
 @q^1416^0:2:0
 @q^1425^0:4:0
@@ -140,6 +147,7 @@ GoldScout-export 6^37dfqf16vx2u^8
 @q^2592^1:7:1
 @q^2645^0:4:0
 @q^2648^0:4:0
+@q^2652^0:4:0
 @q^2672^1:7:1
 @q^2698^1:9:0
 @q^2777^0:2:0
@@ -151,6 +159,7 @@ GoldScout-export 6^37dfqf16vx2u^8
 @q^3183^1:12:0
 @q^3299^0:15:0
 @q^3300^0:15:0
+@q^3363^0:4:0
 @q^3374^0:4:0
 @q^3385^1:0:0
 @q^3610^2:9:0
@@ -192,6 +201,7 @@ GoldScout-export 6^37dfqf16vx2u^8
 @m^1429^Wald von Elwynn
 @m^1432^Loch Modan
 @m^1436^Westfall
+@m^1438^Teldrassil
 @c^118^
 @c^724^
 @c^733^
@@ -1630,6 +1640,7 @@ GoldScout-export 6^37dfqf16vx2u^8
 @a^1195^66:1
 @a^1202^165:1
 @a^1961^155:1
+@a^2032^131:1,132:2,151:3
 @a^2384^147:1
 @a^2554^253:2,254:1
 @a^2555^253:1,254:1,272:1,293:4,313:1
