@@ -1,4 +1,4 @@
-GoldScout-export 6^p8963o7a67q0^22
+GoldScout-export 6^p8963o7a67q0^23
 587^4^0^33^34^1434^0.3388^0.1613^4^Guerrier Bloodscalp^1519:1:1,2592:1:1,3901:2:2,3915:1:1,4306:1:1^
 588^14^0^34^35^1434^0.2499^0.1132^14^Eclaireur Bloodscalp^1519:5:5,1708:1:1,2732:1:1,2734:1:1,2738:1:1,2748:1:1,3915:5:5,4306:4:6^
 595^9^0^34^35^1434^0.2570^0.1094^9^Chasseur Bloodscalp^1519:1:1,3771:1:1,3915:3:3,4306:4:7,262889:1:1^
@@ -178,15 +178,20 @@ GoldScout-export 6^p8963o7a67q0^22
 256807^30^0^39^40^2548^0.8413^0.3662^30^Clampant du rivage^3010:3:3,5524:5:5,5569:10:10,9866:1:1,12206:8:8,17057:6:6,248693:1:1,268632:13:13^
 257901^9^0^41^42^2548^0.8744^0.3580^9^Boucanier des mers de l'Est^4306:1:2,4338:3:5^
 257910^6^0^42^43^2548^0.8664^0.3519^6^Mousquetaire des mers de l'Est^4338:1:2^
-260023^1^0^38^40^2548^0.7549^0.3416^1^Embusqué de Fort-Lointain^^
+257915^10^0^44^45^2548^0.7855^0.3795^10^Ecumeuse des mers de l'Est^4026:1:1,4306:2:3,4338:2:2^
+257916^8^0^43^44^2548^0.7836^0.3692^8^Bombardier des mers de l'Est^4306:5:8^
+259054^1^0^38^39^2548^0.5995^0.5369^1^Patriarche des plaines sauvages^1688:1:1^
+259055^11^0^38^39^2548^0.5866^0.5394^11^Chasseresse des plaines sauvages^1686:3:3,1688:3:3,262889:1:1,266888:6:6^
+260023^2^0^38^40^2548^0.7595^0.3480^2^Embusqué de Fort-Lointain^3817:1:1^
 260211^1^0^42^42^2548^0.7550^0.3421^1^Maître-éclaireur Vargas^4338:1:2,268581:1:1^
 260235^1^0^42^42^2548^0.8198^0.5434^1^Traquepince^3010:1:1,268586:1:1^
 260429^1^0^39^39^1434^0.4338^0.2042^1^Agent de la KapitalRisk^^
 262397^34^0^36^38^1434^0.2275^0.2697^34^Tirailleur écaille-de-mer^1645:1:1,2740:1:1,2744:1:1,3800:1:1,4422:1:1,4603:1:1,5524:12:12,17058:13:13,248690:1:1,270305:10:10^
-263307^3^0^37^38^2548^0.6129^0.5866^3^Vipère de la clairière^6826:3:3^
+263307^8^0^37^38^2548^0.6135^0.5868^8^Vipère de la clairière^6444:4:4,6826:4:4,271776:4:4^
 263343^19^0^37^38^2548^0.6612^0.5785^19^Busard des basses plaines^1464:10:10,3404:2:2,11418:2:2,12037:11:11,271793:6:6^
 268623^1^0^23^23^1413^0.4978^0.7799^1^Pilleur indigné^15223:1:1^
 268624^7^0^16^19^1413^0.5002^0.5223^7^Pillard tranchecrin^929:1:1,2589:1:1,2592:1:2,4306:1:1,248702:1:1,277277:4:4^
+268831^4^0^39^40^2548^0.7817^0.3919^4^Rôdeur des vallées^4583:1:1,12203:3:3^
 269175^1^0^36^38^1434^0.3527^0.2930^1^Herbe carnivore^1708:1:1^
 @i^729^Viande filandreuse de vautour
 @i^769^Morceau de viande de sanglier
@@ -289,6 +294,7 @@ GoldScout-export 6^p8963o7a67q0^22
 @i^3916^Collier d'os brisés
 @i^3918^Eclat de cristal chantant
 @i^4022^Maillet fracassant
+@i^4026^Mousquet de sentinelle
 @i^4053^Grande peau de crocilisque des rivières
 @i^4093^Grande queue de basilic
 @i^4096^Poil de gorille grossier
@@ -317,6 +323,7 @@ GoldScout-export 6^p8963o7a67q0^22
 @i^4553^Morceau de pierre délabré
 @i^4555^Epaisse queue écailleuse
 @i^4556^Fragment de carapace moucheté
+@i^4583^Epaisse crinière
 @i^4586^Peau lisse de raptor
 @i^4587^Plumes de raptor tribales
 @i^4599^Jambonneau traité
@@ -408,6 +415,7 @@ GoldScout-export 6^p8963o7a67q0^22
 @i^12039^Collier de la toundra de défense
 @i^12184^Chair de raptor
 @i^12202^Viande de tigre
+@i^12203^Viande de loup rouge
 @i^12206^Viande de crabe tendre
 @i^13105^Ceinture de Sutarn
 @i^14409^Cape en étoffe de pierre
@@ -445,12 +453,14 @@ GoldScout-export 6^p8963o7a67q0^22
 @i^248709^Caisse détournée : lingots d'expert
 @i^251457^Plans : lance en acier
 @i^262889^Commission d'expert scellée
+@i^266888^Peau de lion prisée
 @i^268344^Œil de Murloc d'eau de mer
 @i^268345^Chair de clampant des sables
 @i^268581^Œil du maître-éclaireur
 @i^268586^Pince de Traquepince
 @i^268632^Entrailles de bête
 @i^270305^Trident d'écaille-de-mer
+@i^271776^Venin de vipère de la clairière
 @i^271793^Plume de busard des plaines
 @i^273456^Griffes du gardien de cellule
 @i^273645^Vision d'aveugle
@@ -556,6 +566,7 @@ GoldScout-export 6^p8963o7a67q0^22
 @q^3916^1:12:0
 @q^3918^1:12:0
 @q^4022^0:2:0
+@q^4026^0:2:0
 @q^4053^1:12:0
 @q^4093^0:15:0
 @q^4096^1:15:0
@@ -584,6 +595,7 @@ GoldScout-export 6^p8963o7a67q0^22
 @q^4553^0:15:0
 @q^4555^0:15:0
 @q^4556^0:15:0
+@q^4583^0:15:0
 @q^4586^0:15:0
 @q^4587^0:15:0
 @q^4599^1:0:0
@@ -675,6 +687,7 @@ GoldScout-export 6^p8963o7a67q0^22
 @q^12039^2:4:0
 @q^12184^1:7:1
 @q^12202^1:7:1
+@q^12203^1:7:1
 @q^12206^1:7:1
 @q^13105^3:4:0
 @q^14409^2:4:0
@@ -712,12 +725,14 @@ GoldScout-export 6^p8963o7a67q0^22
 @q^248709^2:0:1
 @q^251457^2:9:0
 @q^262889^3:0:0
+@q^266888^1:12:0
 @q^268344^1:12:0
 @q^268345^1:12:0
 @q^268581^1:12:0
 @q^268586^1:12:0
 @q^268632^1:12:0
 @q^270305^1:12:0
+@q^271776^1:12:0
 @q^271793^1:12:0
 @q^273456^3:2:0
 @q^273645^3:4:0
@@ -875,14 +890,19 @@ GoldScout-export 6^p8963o7a67q0^22
 @a^256807^76:1,96:4,116:5,117:1,137:2,157:2,177:7,195:3,196:5
 @a^257901^137:6,157:2,177:1
 @a^257910^137:1,157:5
-@a^260023^135:1
+@a^257915^135:1,155:8,156:1
+@a^257916^135:1,155:7
+@a^259054^211:1
+@a^259055^211:7,212:1,231:3
+@a^260023^135:1,155:1
 @a^260211^135:1
 @a^260235^216:1
 @a^260429^88:1
 @a^262397^84:1,104:32,105:1
-@a^263307^212:1,252:2
+@a^263307^212:1,231:1,232:3,252:3
 @a^263343^212:3,213:4,232:2,233:3,253:5,272:1,273:1
 @a^268623^309:1
 @a^268624^209:2,210:4,230:1
+@a^268831^155:3,175:1
 @a^269175^107:1
 @l^0^frFR
