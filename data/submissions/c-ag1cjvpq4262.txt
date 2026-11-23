@@ -1,6 +1,10 @@
-GoldScout-export 6^ag1cjvpq4262^9
-587^1^0^33^33^1434^0.2874^0.2105^1^Bloodscalp Warrior^1520:1:1^
+GoldScout-export 6^ag1cjvpq4262^10
+587^1^0^33^34^1434^0.2874^0.2105^1^Bloodscalp Warrior^1520:1:1^
+681^5^0^30^31^1434^0.3377^0.0973^5^Young Stranglethorn Tiger^1686:3:3,12202:2:2^
+682^6^0^32^33^1434^0.4423^0.1553^6^Stranglethorn Tiger^1686:6:6,12202:5:5,213545:1:1^
+683^3^0^30^31^1434^0.3702^0.1477^3^Young Panther^1686:1:1,211853:1:1^
 697^1^0^33^34^1434^0.2981^0.2102^1^Bloodscalp Shaman^4306:1:2^
+702^3^0^33^34^1434^0.3160^0.1320^3^Bloodscalp Scavenger^3901:1:1,4306:1:1^
 2240^2^0^32^33^1416^0.5765^0.6692^2^Syndicate Footpad^3601:1:1^
 2241^1^0^33^33^1416^0.5683^0.6920^1^Syndicate Thief^^
 2267^1^0^25^25^1424^0.3030^0.4124^1^Hillsbrad Peasant^4306:1:1^
@@ -34,6 +38,7 @@ GoldScout-export 6^ag1cjvpq4262^9
 @i^1205^Melon Juice
 @i^1288^Large Venom Sac
 @i^1520^Troll Sweat
+@i^1686^Bristly Whisker
 @i^1707^Stormwind Brie
 @i^2251^Gooey Spider Leg
 @i^2289^Scroll of Strength II
@@ -55,6 +60,7 @@ GoldScout-export 6^ag1cjvpq4262^9
 @i^3811^Double-Stitched Cloak
 @i^3812^Double Mail Gloves
 @i^3814^Double Mail Shoulderpads
+@i^3901^Bloodscalp Tusk
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4553^Jagged Piece of Stone
@@ -67,16 +73,20 @@ GoldScout-export 6^ag1cjvpq4262^9
 @i^5469^Strider Meat
 @i^6308^Raw Bristle Whisker Catfish
 @i^6986^Crimson Lotus
+@i^12202^Tiger Meat
 @i^17056^Light Feather
 @i^211784^Scroll: WUBBA WUBBA
+@i^211853^Scroll: VOCE WELL
 @i^211855^Scroll: STHENIC LUNATE
 @i^213543^Scroll: UPDOG
+@i^213545^Scroll: PEATCHY ATTAX
 @q^878^0:7:0
 @q^1074^0:15:0
 @q^1081^1:7:1
 @q^1205^1:0:0
 @q^1288^1:7:1
 @q^1520^0:15:0
+@q^1686^0:15:0
 @q^1707^1:0:0
 @q^2251^1:7:1
 @q^2289^1:0:0
@@ -98,6 +108,7 @@ GoldScout-export 6^ag1cjvpq4262^9
 @q^3811^0:4:0
 @q^3812^0:4:0
 @q^3814^0:4:0
+@q^3901^1:12:0
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4553^0:15:0
@@ -110,10 +121,13 @@ GoldScout-export 6^ag1cjvpq4262^9
 @q^5469^1:7:1
 @q^6308^1:7:1
 @q^6986^0:15:0
+@q^12202^1:7:1
 @q^17056^1:15:1
 @q^211784^1:0:0
+@q^211853^1:0:0
 @q^211855^1:0:0
 @q^213543^1:0:0
+@q^213545^1:0:0
 @m^1413^The Barrens
 @m^1416^Alterac Mountains
 @m^1424^Hillsbrad Foothills
@@ -838,7 +852,11 @@ GoldScout-export 6^ag1cjvpq4262^9
 @c^279987^
 @c^286152^
 @a^587^85:1
+@a^681^26:3,46:1,48:1
+@a^682^49:3,67:1,68:1,69:1
+@a^683^28:1,66:2
 @a^697^85:1
+@a^702^46:3
 @a^2240^271:2
 @a^2241^271:1
 @a^2267^166:1

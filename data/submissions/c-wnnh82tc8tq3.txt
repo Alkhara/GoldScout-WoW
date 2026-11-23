@@ -1,4 +1,4 @@
-GoldScout-export 6^wnnh82tc8tq3^2
+GoldScout-export 6^wnnh82tc8tq3^3
 2505^14^0^49^50^1425^0.7647^0.6915^14^Quijaforte Aguasalada^3712:5:5,4555:9:9,4556:9:9,4603:1:2,7973:8:8^
 2651^14^0^42^43^1425^0.3140^0.5824^14^Desollador Secacorteza^1520:5:5,3430:1:1,3928:1:1,4019:1:1,4306:1:1,4338:3:5,4589:1:1,4599:1:1,8151:2:2,9259:5:5,9320:14:14^
 2652^6^0^43^43^1425^0.3132^0.5854^6^Sangreveneno Secacorteza^1520:3:3,4338:1:2,9259:1:1,9320:6:6^
@@ -17,12 +17,30 @@ GoldScout-export 6^wnnh82tc8tq3^2
 4466^4^0^46^47^1425^0.5599^0.4120^4^Arrancacabelleras Vilrama^1520:1:1,4338:1:3,8151:2:2,8153:1:2,9259:2:2^
 4467^2^0^46^46^1425^0.5302^0.3893^2^Veritas Vilrama^1520:1:1,3928:1:1,9259:1:1,213545:1:1^
 5287^1^0^44^44^1444^0.6827^0.5864^1^Aullador Dientelargo^4583:1:1,8146:1:1,12208:1:1^
+5300^5^0^43^44^1444^0.5636^0.6353^5^Hipogrifo Plumavieja^4589:1:1,4590:2:2,11418:2:2,15611:1:1^
+5304^3^0^44^45^1444^0.5584^0.6427^3^Alacervo Rozapluma^5829:2:2^
+5425^1^0^42^42^1446^0.5212^0.3077^1^Llagapata hambrienta^4584:1:1^
+5461^6^0^48^49^1444^0.4870^0.5090^6^Elemental marino^4791:2:7,18958:4:4^
+5462^1^0^48^48^1444^0.5024^0.5262^1^Rocío marino^4791:1:5,18958:1:1^
+5982^3^0^46^48^1419^0.6032^0.3212^3^Destripador negro^1464:1:1,3404:3:3,8168:3:3,12037:2:2^
+5984^3^0^45^46^1419^0.4658^0.2126^3^Hiena risitas hambrienta^12203:2:2,12208:3:3^
+5988^3^0^50^51^1419^0.4904^0.2351^3^Aguijonero Scorpok^8393:1:1,19934:2:2,19935:1:1^
+5990^1^0^47^47^1419^0.5907^0.2885^1^Basilisco Rocarroja^8394:1:1^
+5992^2^0^48^49^1419^0.6052^0.2768^2^Jabalí Cenicrín^^
+5993^2^0^52^53^1419^0.5557^0.3942^2^Jabinferno^^
 7584^2^0^44^45^1444^0.7422^0.5302^2^Caminabosques deambulante^9590:2:2^
+7848^1^0^46^46^1444^0.5550^0.5424^1^Fierescara acechante^^
 7977^1^0^48^48^1425^0.7986^0.5713^1^Gammerita^7973:1:1,19023:1:1^
 14748^1^0^49^49^1425^0.8456^0.4115^1^Secuestrador Vilrama^19034:1:1^
+222243^1^0^43^43^1446^0.5210^0.3647^1^Zopilote^9973:1:1^
+256434^1^0^38^38^2548^0.4199^0.6782^1^Leñador del Molino de Turner^4306:1:1^
+262477^2^0^41^42^2548^0.2968^0.7375^2^Guerrero Escamagris^1645:1:1^
 270772^1^0^49^49^1425^0.2486^0.6576^1^Médico brujo Ti'ik^279913:1:1^
 270807^3^0^45^46^1425^0.2454^0.6539^3^Larva embrujada^^
+@i^1464^Talón de águila ratonera
 @i^1520^Sudor trol
+@i^1645^Zumo de baya lunar
+@i^3404^Ala de águila ratonera
 @i^3430^Rifle de francotirador del oso
 @i^3676^Icor baboso
 @i^3712^Carne de tortuga
@@ -41,7 +59,9 @@ GoldScout-export 6^wnnh82tc8tq3^2
 @i^4591^Ojo de águila
 @i^4599^Filete de jamón curado
 @i^4603^Serviola moteada cruda
+@i^4791^Agua encantada
 @i^5117^Pluma vibrante
+@i^5829^Pico afilado
 @i^6149^Poción de maná superior
 @i^6429^Sombrero de zahorí escapabruma
 @i^7973^Almeja de boca grande
@@ -49,6 +69,9 @@ GoldScout-export 6^wnnh82tc8tq3^2
 @i^8146^Garra maligna
 @i^8151^Frasco de mojo
 @i^8153^Atriplex salvaje
+@i^8168^Pluma negro azabache
+@i^8393^Pinza de scorpok
+@i^8394^Cerebro de basilisco
 @i^9259^Collar tribal trol
 @i^9320^Cráneo Secacorteza
 @i^9590^Tronco astillado
@@ -56,20 +79,30 @@ GoldScout-export 6^wnnh82tc8tq3^2
 @i^9592^Fragmentos metálicos
 @i^9910^Guantes reales de aguante
 @i^9912^Hombrera real del médico
+@i^9973^Botas de placas en relieve del defensor
 @i^11417^Ala emplumada
+@i^11418^Hueso hueco de ala
+@i^12037^Carne misteriosa
 @i^12203^Carne de lobo rojo
 @i^12207^Huevo gigante
 @i^12208^Carne de lobo tierna
+@i^15611^Manteo de vínculo de huesos del hierofante
+@i^18958^Núcleo elemental de Agua
 @i^19023^Cebo más preciado de Katoom
 @i^19025^Penacho de Señor del Cielo
 @i^19034^Almuerzo de Lard
+@i^19934^Garra de escórpido grande
+@i^19935^Glándula de veneno vacía
 @i^20763^Arma rota
 @i^20767^Bolsa cubierta de suciedad
 @i^213545^Pergamino: NIMIPU SETOFELO
 @i^213547^Pergamino: QÉU PESADA
 @i^262889^Libranza del experto sellada
 @i^279913^Cabeza de Ti'ik
+@q^1464^0:15:0
 @q^1520^0:15:0
+@q^1645^1:0:0
+@q^3404^1:7:1
 @q^3430^2:2:0
 @q^3676^0:15:0
 @q^3712^1:7:1
@@ -88,7 +121,9 @@ GoldScout-export 6^wnnh82tc8tq3^2
 @q^4591^0:15:0
 @q^4599^1:0:0
 @q^4603^1:7:1
+@q^4791^1:0:0
 @q^5117^1:12:0
+@q^5829^0:15:0
 @q^6149^1:0:0
 @q^6429^2:4:0
 @q^7973^1:7:0
@@ -96,6 +131,9 @@ GoldScout-export 6^wnnh82tc8tq3^2
 @q^8146^1:7:1
 @q^8151^1:7:1
 @q^8153^1:7:1
+@q^8168^1:7:1
+@q^8393^1:12:0
+@q^8394^1:12:0
 @q^9259^1:15:0
 @q^9320^1:12:0
 @q^9590^1:12:0
@@ -103,21 +141,31 @@ GoldScout-export 6^wnnh82tc8tq3^2
 @q^9592^1:12:0
 @q^9910^2:4:0
 @q^9912^2:4:0
+@q^9973^2:4:0
 @q^11417^0:15:0
+@q^11418^0:15:0
+@q^12037^1:7:1
 @q^12203^1:7:1
 @q^12207^1:7:1
 @q^12208^1:7:1
+@q^15611^2:4:0
+@q^18958^1:12:0
 @q^19023^1:12:0
 @q^19025^1:12:0
 @q^19034^1:12:0
+@q^19934^0:15:0
+@q^19935^0:15:0
 @q^20763^0:15:0
 @q^20767^1:15:0
 @q^213545^1:0:0
 @q^213547^1:0:0
 @q^262889^3:0:0
 @q^279913^1:12:0
+@m^1419^Las Tierras Devastadas
 @m^1425^Tierras del Interior
 @m^1444^Feralas
+@m^1446^Tanaris
+@m^2548^Clarofluvial
 @c^724^
 @c^733^
 @c^787^
@@ -820,9 +868,24 @@ GoldScout-export 6^wnnh82tc8tq3^2
 @a^4466^170:3,172:1
 @a^4467^150:2
 @a^5287^233:1
+@a^5300^251:5
+@a^5304^251:3
+@a^5425^130:1
+@a^5461^189:1,209:5
+@a^5462^210:1
+@a^5982^112:2,171:1
+@a^5984^69:1,89:2
+@a^5988^69:1,89:1,130:1
+@a^5990^111:1
+@a^5992^111:1,112:1
+@a^5993^151:1,171:1
 @a^7584^214:2
+@a^7848^211:1
 @a^7977^235:1
 @a^14748^176:1
+@a^222243^150:1
+@a^256434^268:1
+@a^262477^285:2
 @a^270772^264:1
 @a^270807^264:3
 @l^0^esES
