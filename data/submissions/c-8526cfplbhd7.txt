@@ -1,4 +1,4 @@
-GoldScout-export 6^8526cfplbhd7^58
+GoldScout-export 6^8526cfplbhd7^61
 6^27^0^1^2^1429^0.4855^0.3610^27^Kobold Vermin^159:2:2,755:6:6,1376:1:1,1377:1:1,1380:1:1,2589:5:5,2653:1:1,2654:1:1,3363:2:2,3365:2:2,4536:4:4,247834:4:4,247839:6:6^
 38^39^0^3^4^1429^0.5282^0.4902^39^Defias Thug^159:1:1,752:24:24,1366:1:1,1367:1:1,1370:1:1,2057:1:1,2070:10:10,2211:1:1,2589:12:12,2651:1:1,2652:1:1,3363:1:1^
 40^60^0^6^7^1429^0.4535^0.7320^60^Kobold Miner^118:1:1,159:2:2,766:1:1,772:5:5,773:4:4,1181:2:2,1389:1:1,1412:1:1,1413:1:1,1415:1:1,1418:1:1,1420:1:1,1433:1:1,2212:1:1,2213:1:1,2589:24:36,2635:1:1,2648:1:1,2773:1:1,2774:2:2,2835:1:2,3013:1:1,4536:6:6,248001:5:5^
@@ -117,6 +117,13 @@ GoldScout-export 6^8526cfplbhd7^58
 1161^1^0^12^12^1432^0.2919^0.6088^1^Stonesplinter Trogg^5069:1:1^
 1172^1^0^10^10^1432^0.3987^0.2011^1^Tunnel Rat Vermin^^
 1388^1^0^11^11^1426^0.6250^0.4612^1^Vagash^3627:1:1^
+1501^9^0^1^1^1420^0.3243^0.6315^9^Mindless Zombie^1368:1:1,2589:4:4,2651:1:1,2656:1:1,4604:3:3^
+1502^9^0^1^2^1420^0.3232^0.6262^9^Wretched Zombie^1378:1:1,2589:4:4,2649:2:2,3363:1:1,4604:1:1^
+1508^1^0^1^1^1420^0.3083^0.6120^1^Young Scavenger^3265:1:1,7073:1:1^
+1512^10^0^1^2^1420^0.3032^0.6973^10^Duskbat^1368:1:1,2650:1:1,3363:1:1,4865:4:4,7073:3:3,7074:4:4^
+1557^12^0^40^41^1434^0.3263^0.6617^12^Elder Mistvale Gorilla^2799:6:6,3919:2:2,4096:5:5,4097:2:2,5637:1:1,248694:1:1^
+1561^1^0^40^40^1434^0.2766^0.7037^1^Bloodsail Raider^^
+1562^1^0^40^40^1434^0.2750^0.6920^1^Bloodsail Mage^^
 1663^1^0^0^0^0^0.0000^0.0000^0^^3628:1:1,273817:1:1^
 1666^1^0^0^0^0^0.0000^0.0000^0^^273807:1:1^
 1696^2^0^0^0^0^0.0000^0.0000^0^^3630:1:1,273804:1:1^
@@ -135,7 +142,8 @@ GoldScout-export 6^8526cfplbhd7^58
 1732^4^0^0^0^0^0.0000^0.0000^0^^414:2:2,15222:1:1^
 1755^2^0^30^30^1453^0.7267^0.3559^2^Marzon the Silent Blade^2592:2:2^
 1763^1^0^0^0^0^0.0000^0.0000^0^^1156:1:1,2589:1:2^
-1860^1^0^0^0^1440^0.2555^0.6069^1^Mezztast^^
+1860^1^0^0^0^1440^0.2555^0.6069^1^Hukkrit^^
+1890^2^0^3^3^1420^0.3226^0.6232^2^Rattlecage Skeleton^1377:1:1^
 1961^1^0^11^11^1426^0.7909^0.3691^1^Mangeclaw^3169:1:1,3173:1:1,3183:1:1,9744:1:1,11406:1:1^
 2185^3^0^12^14^1439^0.3258^0.4513^3^Darkshore Thresher^2608:2:2,5412:3:3,5523:1:1^
 2201^1^0^11^11^1439^0.3638^0.5050^1^Greymist Raider^^
@@ -531,6 +539,7 @@ GoldScout-export 6^8526cfplbhd7^58
 @i^2635^Loose Chain Belt
 @i^2646^Loose Chain Pants
 @i^2648^Loose Chain Vest
+@i^2649^Flimsy Chain Belt
 @i^2650^Flimsy Chain Boots
 @i^2651^Flimsy Chain Bracers
 @i^2652^Flimsy Chain Cloak
@@ -580,6 +589,7 @@ GoldScout-export 6^8526cfplbhd7^58
 @i^3195^Barbaric Battle Axe of Stamina
 @i^3196^Edged Bastard Sword of Intellect
 @i^3200^Burnt Leather Bracers
+@i^3265^Scavenger Paw
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
 @i^3301^Sharp Canine
@@ -629,11 +639,14 @@ GoldScout-export 6^8526cfplbhd7^58
 @i^3864^Citrine
 @i^3879^Paw of Sin'Dall
 @i^3918^Singing Crystal Shard
+@i^3919^Mistvale Giblets
 @i^3923^Water Elemental Bracers
 @i^4043^Aurora Bracers
 @i^4053^Large River Crocolisk Skin
 @i^4057^Insignia Chestguard
 @i^4093^Large Basilisk Tail
+@i^4096^Coarse Gorilla Hair
+@i^4097^Chipped Gorilla Tooth
 @i^4104^Snapjaw Crocolisk Skin
 @i^4106^Tumbled Crystal
 @i^4306^Silk Cloth
@@ -661,6 +674,7 @@ GoldScout-export 6^8526cfplbhd7^58
 @i^4582^Soft Bushy Tail
 @i^4583^Thick Furry Mane
 @i^4603^Raw Spotted Yellowtail
+@i^4604^Forest Mushroom Cap
 @i^4605^Red-speckled Mushroom
 @i^4606^Spongy Morel
 @i^4607^Delicious Cave Mold
@@ -869,6 +883,7 @@ GoldScout-export 6^8526cfplbhd7^58
 @i^248691^Waylaid Crate: Flowering Expert Herbs
 @i^248692^Waylaid Crate: Expert Ore
 @i^248693^Waylaid Crate: Expert Textiles
+@i^248694^Waylaid Crate: Expert Curiosities
 @i^248707^Waylaid Crate: Journeyman Parts
 @i^248708^Waylaid Crate: Expert Fabrics
 @i^248709^Waylaid Crate: Expert Ingots
@@ -1116,6 +1131,7 @@ GoldScout-export 6^8526cfplbhd7^58
 @q^2635^0:4:0
 @q^2646^0:4:0
 @q^2648^0:4:0
+@q^2649^0:4:0
 @q^2650^0:4:0
 @q^2651^0:4:0
 @q^2652^0:4:0
@@ -1165,6 +1181,7 @@ GoldScout-export 6^8526cfplbhd7^58
 @q^3195^2:2:0
 @q^3196^2:2:0
 @q^3200^1:4:0
+@q^3265^1:12:0
 @q^3299^0:15:0
 @q^3300^0:15:0
 @q^3301^0:15:0
@@ -1214,11 +1231,14 @@ GoldScout-export 6^8526cfplbhd7^58
 @q^3864^2:7:1
 @q^3879^1:12:0
 @q^3918^1:12:0
+@q^3919^1:12:0
 @q^3923^1:12:0
 @q^4043^2:4:0
 @q^4053^1:12:0
 @q^4057^2:4:0
 @q^4093^0:15:0
+@q^4096^1:15:0
+@q^4097^0:15:0
 @q^4104^1:12:0
 @q^4106^1:12:0
 @q^4306^1:7:1
@@ -1246,6 +1266,7 @@ GoldScout-export 6^8526cfplbhd7^58
 @q^4582^1:12:0
 @q^4583^0:15:0
 @q^4603^1:7:1
+@q^4604^1:0:0
 @q^4605^1:0:0
 @q^4606^1:0:0
 @q^4607^1:0:0
@@ -1454,6 +1475,7 @@ GoldScout-export 6^8526cfplbhd7^58
 @q^248691^1:0:1
 @q^248692^1:0:1
 @q^248693^1:0:1
+@q^248694^1:0:1
 @q^248707^2:0:1
 @q^248708^2:0:1
 @q^248709^2:0:1
@@ -1533,6 +1555,7 @@ GoldScout-export 6^8526cfplbhd7^58
 @m^1415^Eastern Kingdoms
 @m^1416^Alterac Mountains
 @m^1418^Badlands
+@m^1420^Tirisfal Glades
 @m^1424^Hillsbrad Foothills
 @m^1426^Dun Morogh
 @m^1429^Elwynn Forest
@@ -3495,11 +3518,19 @@ GoldScout-export 6^8526cfplbhd7^58
 @a^1161^245:1
 @a^1172^87:1
 @a^1388^192:1
+@a^1501^246:9
+@a^1502^246:9
+@a^1508^246:1
+@a^1512^265:2,266:5,285:2,286:1
+@a^1557^246:5,266:7
+@a^1561^285:1
+@a^1562^265:1
 @a^1725^308:1
 @a^1726^308:3
 @a^1727^308:9
 @a^1755^134:1,154:1
 @a^1860^245:1
+@a^1890^246:2
 @a^1961^155:1
 @a^2185^166:2,186:1
 @a^2201^207:1

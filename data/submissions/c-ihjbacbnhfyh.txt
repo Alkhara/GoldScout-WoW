@@ -1,5 +1,7 @@
-GoldScout-export 6^ihjbacbnhfyh^14
+GoldScout-export 6^ihjbacbnhfyh^15
 705^1^0^1^1^1426^0.2867^0.7251^1^Ragged Young Wolf^750:1:1,4865:1:1^
+1783^8^0^50^51^1422^0.4991^0.8101^8^Skeletal Flayer^7972:2:2,14047:2:3^
+1791^4^0^50^52^1422^0.5004^0.8067^4^Slavering Ghoul^6530:1:1,8766:1:1,213546:1:1^
 2639^1^0^45^46^1425^0.4706^0.6588^1^Vilebranch Axe Thrower^4338:1:1,8151:1:1^
 2641^2^0^46^47^1425^0.6657^0.6985^2^Vilebranch Headhunter^4338:1:2,4599:1:1,9259:1:1^
 2643^2^0^47^48^1425^0.6549^0.7176^2^Vilebranch Berserker^1520:1:1,9938:1:1^
@@ -155,10 +157,12 @@ GoldScout-export 6^ihjbacbnhfyh^14
 @i^5829^Razor-sharp Beak
 @i^6300^Husk Fragment
 @i^6302^Delicate Insect Wing
+@i^6530^Nightcrawlers
 @i^7075^Core of Earth
 @i^7909^Aquamarine
 @i^7910^Star Ruby
 @i^7912^Solid Stone
+@i^7972^Ichor of Undeath
 @i^7973^Big-mouth Clam
 @i^7990^Plans: Heavy Mithril Helm
 @i^8146^Wicked Claw
@@ -179,6 +183,7 @@ GoldScout-export 6^ihjbacbnhfyh^14
 @i^8707^Gahz'rilla's Electrified Scale
 @i^8723^Caliph Scorpidsting's Head
 @i^8751^Overlinked Coif
+@i^8766^Morning Glory Dew
 @i^9234^Tiara of the Deep
 @i^9238^Uncracked Scarab Shell
 @i^9241^Sacred Mallet
@@ -254,6 +259,7 @@ GoldScout-export 6^ihjbacbnhfyh^14
 @i^20519^Southsea Pirate Hat
 @i^20763^Broken Weapon
 @i^20767^Scum Covered Bag
+@i^213546^Scroll: SHOOBEEDOOP
 @i^248708^Waylaid Crate: Expert Fabrics
 @i^248709^Waylaid Crate: Expert Ingots
 @i^251397^Plans: Shining Mithril Gauntlet
@@ -324,10 +330,12 @@ GoldScout-export 6^ihjbacbnhfyh^14
 @q^5829^0:15:0
 @q^6300^0:15:0
 @q^6302^0:15:0
+@q^6530^1:0:0
 @q^7075^1:7:1
 @q^7909^2:7:1
 @q^7910^2:7:1
 @q^7912^1:7:1
+@q^7972^1:7:1
 @q^7973^1:7:0
 @q^7990^2:9:0
 @q^8146^1:7:1
@@ -348,6 +356,7 @@ GoldScout-export 6^ihjbacbnhfyh^14
 @q^8707^1:12:0
 @q^8723^1:12:0
 @q^8751^0:4:0
+@q^8766^1:0:0
 @q^9234^1:12:0
 @q^9238^1:12:0
 @q^9241^1:12:0
@@ -423,6 +432,7 @@ GoldScout-export 6^ihjbacbnhfyh^14
 @q^20519^1:12:0
 @q^20763^0:15:0
 @q^20767^1:15:0
+@q^213546^1:0:0
 @q^248708^2:0:1
 @q^248709^2:0:1
 @q^251397^2:9:0
@@ -444,6 +454,7 @@ GoldScout-export 6^ihjbacbnhfyh^14
 @q^279225^1:12:0
 @m^1414^Kalimdor
 @m^1419^Blasted Lands
+@m^1422^Western Plaguelands
 @m^1425^The Hinterlands
 @m^1426^Dun Morogh
 @m^1427^Searing Gorge
@@ -1142,6 +1153,8 @@ GoldScout-export 6^ihjbacbnhfyh^14
 @c^285281^
 @c^286152^
 @a^705^285:1
+@a^1783^310:1,329:2,330:5
+@a^1791^310:1,329:1,330:2
 @a^2639^269:1
 @a^2641^273:1,293:1
 @a^2643^292:1,293:1

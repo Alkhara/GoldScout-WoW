@@ -1,4 +1,4 @@
-GoldScout-export 6^49t6eh2wqz1i^17
+GoldScout-export 6^49t6eh2wqz1i^18
 667^21^0^39^40^1434^0.4306^0.3526^21^Guerrero Machacacráneos^1520:5:5,1524:6:6,2744:1:1,2749:1:1,2751:1:1,4306:6:12,4338:1:1,8151:4:4,8153:2:5,248691:1:1^
 684^4^0^37^38^1434^0.3672^0.3741^4^Pantera Faucesombría^863:1:1,1688:2:2^
 687^8^0^40^41^1434^0.2694^0.4980^8^Acechador de la selva^4461:5:5,4586:4:4,12184:3:3^
@@ -22,11 +22,15 @@ GoldScout-export 6^49t6eh2wqz1i^17
 1984^3^0^1^2^1438^0.5585^0.4280^3^Jabalí cardo joven^117:1:1,2211:1:1,4865:3:3^
 1985^10^0^2^3^1438^0.5637^0.3761^10^Jabalí Cardo^117:4:4,1377:1:1,2649:2:2,4865:3:3,7098:5:5^
 1989^1^0^3^3^1438^0.5670^0.3587^1^Grellín^1370:1:1,3297:1:1^
+2555^1^0^34^34^1417^0.3185^0.4595^1^Médico brujo Secacorteza^^
+2559^2^0^30^31^1417^0.4411^0.3279^2^Zancudo de las Tierras Altas^3685:1:1,248686:1:1^
 2560^1^0^34^34^1417^0.4493^0.3972^1^Descarnador de las Tierras Altas^3685:1:1,4586:1:1^
+2563^1^0^32^32^1417^0.3792^0.3457^1^Trepador de las llanuras^878:1:1,2251:1:1,3182:1:1^
+2564^8^0^33^34^1417^0.3362^0.4522^8^Déspota Puño de Roca^3780:1:1,3785:1:1,3796:1:1,4306:4:6^
 2624^1^0^40^40^1434^0.2479^0.2350^1^Gazban^4034:1:1^
 2760^71^0^38^39^1417^0.2560^0.3043^71^Exiliado ardiente^3857:11:11,4479:36:36,4787:27:27,6413:1:1,6419:1:1,7068:9:9^
 4040^11^0^21^22^1437^0.4908^0.6159^11^Acechador de cuevas^878:2:2,1081:3:3,1288:1:1,2251:6:6,3174:4:4,4428:3:3^
-12922^3^0^42^42^1434^0.3269^0.7774^3^Esbirro diablillo^^
+12922^3^0^32^42^1434^0.3269^0.7774^3^Esbirro diablillo^^
 254560^6^0^39^40^2548^0.4821^0.4740^6^Sombramante Crepuscular^4306:1:1,266425:3:7^
 255769^10^0^37^38^2548^0.2784^0.6343^10^Tosco de Crestagrana^3402:1:1,4306:2:4,4338:1:1,20763:2:2,248690:1:1^
 255770^9^0^36^37^2548^0.2976^0.6250^9^Místico de Crestagrana^4074:1:1,4306:2:3,20763:1:1^
@@ -99,6 +103,7 @@ GoldScout-export 6^49t6eh2wqz1i^17
 @i^2783^Trabuco de pésima calidad
 @i^2799^Colmillo de gorila
 @i^3174^Icor de araña
+@i^3182^Seda de araña
 @i^3297^Musgovil
 @i^3385^Poción de maná inferior
 @i^3402^Parche de pelaje suave
@@ -106,9 +111,11 @@ GoldScout-export 6^49t6eh2wqz1i^17
 @i^3685^Huevo de raptor
 @i^3771^Pata de marrano salvaje
 @i^3778^Arco compuesto tenso
+@i^3780^Mosquete de cañón largo
 @i^3785^Hacha cortante
 @i^3786^Puntilla lustrosa
 @i^3794^Brazales entrelazados
+@i^3796^Guantes entrelazados
 @i^3799^Jubón entrelazado
 @i^3857^Carbón
 @i^3879^Garra de Sin'Dall
@@ -174,6 +181,7 @@ GoldScout-export 6^49t6eh2wqz1i^17
 @i^20763^Arma rota
 @i^213127^Notas místicas incompletas
 @i^217161^Pergamino místico roto
+@i^248686^Cajón arrebatado: Hierbas de oficial
 @i^248690^Cajón arrebatado: Hierbas de experto terrenal
 @i^248691^Cajón arrebatado: Hierbas de experto en floración
 @i^248693^Cajón arrebatado: Textiles de experto
@@ -230,6 +238,7 @@ GoldScout-export 6^49t6eh2wqz1i^17
 @q^2783^0:2:0
 @q^2799^1:12:0
 @q^3174^1:7:1
+@q^3182^1:7:1
 @q^3297^1:12:0
 @q^3385^1:0:0
 @q^3402^0:15:0
@@ -237,9 +246,11 @@ GoldScout-export 6^49t6eh2wqz1i^17
 @q^3685^1:7:1
 @q^3771^1:0:0
 @q^3778^0:2:0
+@q^3780^0:2:0
 @q^3785^0:2:0
 @q^3786^0:2:0
 @q^3794^0:4:0
+@q^3796^0:4:0
 @q^3799^0:4:0
 @q^3857^1:7:1
 @q^3879^1:12:0
@@ -305,6 +316,7 @@ GoldScout-export 6^49t6eh2wqz1i^17
 @q^20763^0:15:0
 @q^213127^1:15:0
 @q^217161^1:15:0
+@q^248686^1:0:1
 @q^248690^1:0:1
 @q^248691^1:0:1
 @q^248693^1:0:1
@@ -374,7 +386,11 @@ GoldScout-export 6^49t6eh2wqz1i^17
 @a^1984^171:3
 @a^1985^151:9,171:1
 @a^1989^151:1
+@a^2555^186:1
+@a^2559^66:1,191:1
 @a^2560^148:1
+@a^2563^127:1
+@a^2564^166:4,186:4
 @a^2624^84:1
 @a^2760^104:12,105:20,124:14,125:25
 @a^4040^229:1,230:1,249:8,250:1

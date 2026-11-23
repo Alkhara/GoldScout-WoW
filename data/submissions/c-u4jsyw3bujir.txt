@@ -1,4 +1,5 @@
-GoldScout-export 6^u4jsyw3bujir^13
+GoldScout-export 6^u4jsyw3bujir^14
+92^1^0^39^39^1418^0.4099^0.8065^1^Rock Elemental^4553:1:1^
 588^22^0^34^35^1434^0.2541^0.1131^22^Bloodscalp Scout^1519:5:5,1708:1:1,2740:2:2,2745:1:1,2749:1:1,3771:2:2,3901:2:2,3915:6:6,4306:6:9,248691:1:1^
 595^15^0^34^35^1434^0.2514^0.1139^15^Bloodscalp Hunter^1519:2:2,1708:1:1,2592:1:1,2744:1:1,2745:1:1,3809:1:1,3901:2:2,3915:3:3,4306:7:11^
 597^12^0^36^37^1434^0.2316^0.1042^12^Bloodscalp Berserker^2725:1:1,3915:3:3,4306:6:10^
@@ -65,8 +66,13 @@ GoldScout-export 6^u4jsyw3bujir^13
 2581^1^0^31^32^1417^0.5662^0.4049^1^Dabyrie Militia^4306:1:2^
 2582^2^0^30^31^1417^0.5640^0.3758^2^Dabyrie Laborer^1710:1:1^
 2635^2^0^38^38^1434^0.2730^0.2247^2^Elder Saltwater Crocolisk^770:2:2,3667:2:2,4105:1:1,12037:1:1^
-2725^3^0^41^43^1418^0.7983^0.4295^3^Scalding Whelp^4402:1:1,6444:3:3^
+2725^30^0^41^43^1418^0.7787^0.5092^30^Scalding Whelp^1714:1:1,3864:1:1,4402:5:5,4460:16:16,6444:10:10^
+2729^1^0^40^40^1418^0.1084^0.6658^1^Elder Crag Coyote^5637:1:1,6166:1:1^
+2730^2^0^42^43^1418^0.7137^0.3499^2^Rabid Crag Coyote^4583:1:1,6166:2:2,12203:1:1,12208:1:1^
+2731^1^0^36^36^1418^0.6628^0.3579^1^Ridge Stalker^12202:1:1^
+2734^1^0^41^41^1418^0.1076^0.6651^1^Ridge Stalker Patriarch^12202:1:1^
 2736^2^0^43^44^1418^0.0586^0.7718^2^Greater Rock Elemental^4552:1:1,4784:1:1,7075:1:1,7909:1:1,7912:1:1^
+2892^1^0^39^39^1418^0.6240^0.4184^1^Stonevault Seer^7476:1:1^
 3100^1^0^8^9^1411^0.5205^0.1204^1^Elder Mottled Boar^769:1:1,771:1:1^
 3123^2^0^8^10^1411^0.5226^0.1168^2^Bloodtalon Scythemaw^4877:1:1,4878:1:1^
 3197^14^0^9^10^1411^0.5318^0.0993^14^Burning Blade Fanatic^1416:1:1,1427:1:1,2589:2:3,14094:1:1,14544:1:1^
@@ -190,6 +196,7 @@ GoldScout-export 6^u4jsyw3bujir^13
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
+@i^1714^Necklace of Calisea
 @i^1732^Worn Mail Bracers
 @i^1738^Laced Mail Belt
 @i^1742^Laced Mail Gloves
@@ -265,6 +272,7 @@ GoldScout-export 6^u4jsyw3bujir^13
 @i^4460^Ripped Wing Webbing
 @i^4461^Raptor Hide
 @i^4552^Smooth Stone Chip
+@i^4553^Jagged Piece of Stone
 @i^4582^Soft Bushy Tail
 @i^4583^Thick Furry Mane
 @i^4585^Dripping Spider Mandible
@@ -294,6 +302,7 @@ GoldScout-export 6^u4jsyw3bujir^13
 @i^5831^Fardel's Head
 @i^5832^Marcel's Head
 @i^5851^Cozzle's Key
+@i^6166^Coyote Jawbone
 @i^6419^Glyphed Mitts
 @i^6438^Dull Elemental Bracer
 @i^6444^Forked Tongue
@@ -307,6 +316,7 @@ GoldScout-export 6^u4jsyw3bujir^13
 @i^7431^Twilight Pants of Healing
 @i^7445^Sentinel Shoulders of Power
 @i^7465^Knight's Crest of the Monkey
+@i^7476^Regal Sash of Fire Protection
 @i^7909^Aquamarine
 @i^7912^Solid Stone
 @i^7997^Red Defias Mask
@@ -329,6 +339,7 @@ GoldScout-export 6^u4jsyw3bujir^13
 @i^12203^Red Wolf Meat
 @i^12205^White Spider Meat
 @i^12206^Tender Crab Meat
+@i^12208^Tender Wolf Meat
 @i^14094^Beaded Wraps of the Owl
 @i^14150^Robe of Evocation
 @i^14164^Pagan Belt of Healing
@@ -409,6 +420,7 @@ GoldScout-export 6^u4jsyw3bujir^13
 @q^1707^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
+@q^1714^3:4:0
 @q^1732^0:4:0
 @q^1738^0:4:0
 @q^1742^0:4:0
@@ -484,6 +496,7 @@ GoldScout-export 6^u4jsyw3bujir^13
 @q^4460^0:15:0
 @q^4461^1:7:1
 @q^4552^0:15:0
+@q^4553^0:15:0
 @q^4582^1:12:0
 @q^4583^0:15:0
 @q^4585^0:15:0
@@ -513,6 +526,7 @@ GoldScout-export 6^u4jsyw3bujir^13
 @q^5831^1:12:0
 @q^5832^1:12:0
 @q^5851^1:13:0
+@q^6166^1:12:0
 @q^6419^2:4:0
 @q^6438^0:15:0
 @q^6444^0:15:0
@@ -526,6 +540,7 @@ GoldScout-export 6^u4jsyw3bujir^13
 @q^7431^2:4:0
 @q^7445^2:4:0
 @q^7465^2:4:0
+@q^7476^2:4:0
 @q^7909^2:7:1
 @q^7912^1:7:1
 @q^7997^0:4:0
@@ -548,6 +563,7 @@ GoldScout-export 6^u4jsyw3bujir^13
 @q^12203^1:7:1
 @q^12205^1:7:1
 @q^12206^1:7:1
+@q^12208^1:7:1
 @q^14094^2:4:0
 @q^14150^3:4:0
 @q^14164^2:4:0
@@ -2117,6 +2133,7 @@ GoldScout-export 6^u4jsyw3bujir^13
 @c^285280^
 @c^285281^
 @c^286152^
+@a^92^328:1
 @a^588^25:6,44:5,45:11
 @a^595^25:4,44:6,45:5
 @a^597^24:5,44:6,45:1
@@ -2168,8 +2185,13 @@ GoldScout-export 6^u4jsyw3bujir^13
 @a^2581^171:1
 @a^2582^151:2
 @a^2635^64:1,105:1
-@a^2725^136:2,234:1
+@a^2725^135:1,136:3,155:2,156:6,213:1,214:1,234:3,236:3,254:2,255:3,256:1,274:3,275:1
+@a^2729^262:1
+@a^2730^134:1,154:1
+@a^2731^153:1
+@a^2734^262:1
 @a^2736^281:1,321:1
+@a^2892^172:1
 @a^3100^50:1
 @a^3123^50:2
 @a^3197^30:8,31:1,50:5

@@ -1,4 +1,4 @@
-GoldScout-export 6^4bsd73u6aty9^20
+GoldScout-export 6^4bsd73u6aty9^21
 92^3^0^39^40^1418^0.1472^0.3488^3^Rock Elemental^4627:3:3,4784:2:2,8150:1:1^
 667^16^0^39^40^1434^0.4505^0.3632^16^Skullsplitter Warrior^1520:6:6,1524:5:5,2748:1:1,3385:1:1,4306:6:12,4338:1:1,7439:1:1,8151:1:1,15234:1:1^
 669^7^0^41^42^1434^0.4495^0.4209^7^Skullsplitter Hunter^1520:1:1,1524:1:1,2740:1:1,4599:1:1,248708:1:1^
@@ -44,6 +44,9 @@ GoldScout-export 6^4bsd73u6aty9^20
 1565^3^0^45^45^1434^0.3059^0.8933^3^Bloodsail Sea Dog^3897:1:1,3910:1:1,4306:1:2,4338:1:2^
 1653^1^0^44^45^1434^0.3059^0.8961^1^Bloodsail Elder Magus^3910:1:1^
 1713^1^0^42^43^1434^0.3190^0.5899^1^Elder Shadowmaw Panther^^
+1783^9^0^50^51^1422^0.4944^0.7897^9^Skeletal Flayer^3944:1:1,8948:1:1,12840:1:1,14047:3:4^
+1784^1^0^51^52^1422^0.3686^0.5707^1^Skeletal Sorcerer^^
+1791^11^0^50^52^1422^0.4929^0.7602^11^Slavering Ghoul^3998:1:1,6530:3:3,8766:1:1,12840:4:4^
 1907^43^0^43^44^1434^0.2583^0.6159^43^Naga Explorer^1645:1:1,2742:1:1,2744:1:1,2749:1:1,3940:1:1,4029:10:10,4422:2:2,4603:2:4,6149:1:1,7973:13:13,17058:13:13,251395:2:2^
 2529^2^0^0^0^0^0.0000^0.0000^0^^^
 2535^1^0^44^44^1434^0.3524^0.5127^1^Maury Club Foot Wilkins^3924:1:1,4016:1:1,4306:1:2^
@@ -268,6 +271,7 @@ GoldScout-export 6^4bsd73u6aty9^20
 9318^6^0^47^49^1427^0.4782^0.2560^6^Incendosaur^5128:3:3,5133:2:2^
 9683^2^0^49^50^1449^0.6370^0.7104^2^Lar'korwi Mate^4587:1:1,11509:2:2^
 10928^8^0^42^43^1434^0.2875^0.8379^8^Succubus Minion^^
+11075^1^0^53^53^1422^0.3686^0.5707^1^Cauldron Lord Bilemaw^13194:1:1^
 11687^1^0^41^41^1414^0.3824^0.5801^1^Ghostly Marauder^4306:1:2^
 11777^2^0^40^41^1414^0.3829^0.5735^2^Shadowshard Rumbler^4784:1:1,17756:1:1^
 11782^1^0^42^42^1414^0.3861^0.5819^1^Ambershard Destroyer^4784:1:1^
@@ -483,11 +487,13 @@ GoldScout-export 6^4bsd73u6aty9^20
 @i^3939^Crochet Cloak
 @i^3940^Crochet Gloves
 @i^3942^Crochet Shoulderpads
+@i^3944^Twill Belt
 @i^3962^Thick Leather Boots
 @i^3965^Thick Leather Gloves
 @i^3968^Thick Leather Tunic
 @i^3985^Monogrammed Sash
 @i^3989^Blocking Targe
+@i^3998^Laminated Scale Shoulderpads
 @i^4001^Overlinked Chain Boots
 @i^4003^Overlinked Chain Cloak
 @i^4005^Overlinked Chain Pants
@@ -622,8 +628,10 @@ GoldScout-export 6^4bsd73u6aty9^20
 @i^8707^Gahz'rilla's Electrified Scale
 @i^8723^Caliph Scorpidsting's Head
 @i^8750^Thick Leather Hat
+@i^8766^Morning Glory Dew
 @i^8838^Sungrass
 @i^8845^Ghost Mushroom
+@i^8948^Dried King Bolete
 @i^8973^Thick Yeti Hide
 @i^9234^Tiara of the Deep
 @i^9238^Uncracked Scarab Shell
@@ -691,7 +699,10 @@ GoldScout-export 6^4bsd73u6aty9^20
 @i^12207^Giant Egg
 @i^12208^Tender Wolf Meat
 @i^12684^Plans: Thorium Bracers
+@i^12840^Minion's Scourgestone
 @i^13138^The Silencer
+@i^13194^Felstone Field Cauldron Key
+@i^14047^Runecloth
 @i^14227^Ironweb Spider Silk
 @i^14228^Embersilk Coronet of Arcane Wrath
 @i^14262^Bloodwoven Mitts of Spirit
@@ -904,11 +915,13 @@ GoldScout-export 6^4bsd73u6aty9^20
 @q^3939^0:4:0
 @q^3940^0:4:0
 @q^3942^0:4:0
+@q^3944^0:4:0
 @q^3962^0:4:0
 @q^3965^0:4:0
 @q^3968^0:4:0
 @q^3985^2:4:0
 @q^3989^0:4:0
+@q^3998^0:4:0
 @q^4001^0:4:0
 @q^4003^0:4:0
 @q^4005^0:4:0
@@ -1043,8 +1056,10 @@ GoldScout-export 6^4bsd73u6aty9^20
 @q^8707^1:12:0
 @q^8723^1:12:0
 @q^8750^0:4:0
+@q^8766^1:0:0
 @q^8838^1:7:1
 @q^8845^1:7:1
+@q^8948^1:0:0
 @q^8973^1:12:0
 @q^9234^1:12:0
 @q^9238^1:12:0
@@ -1112,7 +1127,10 @@ GoldScout-export 6^4bsd73u6aty9^20
 @q^12207^1:7:1
 @q^12208^1:7:1
 @q^12684^2:9:0
+@q^12840^1:12:0
 @q^13138^3:2:0
+@q^13194^1:12:0
+@q^14047^1:7:1
 @q^14227^1:7:1
 @q^14228^2:4:0
 @q^14262^2:4:0
@@ -1244,6 +1262,7 @@ GoldScout-export 6^4bsd73u6aty9^20
 @m^1415^Eastern Kingdoms
 @m^1418^Badlands
 @m^1419^Blasted Lands
+@m^1422^Western Plaguelands
 @m^1425^The Hinterlands
 @m^1427^Searing Gorge
 @m^1434^Stranglethorn Vale
@@ -1983,6 +2002,9 @@ GoldScout-export 6^4bsd73u6aty9^20
 @a^1565^346:3
 @a^1653^346:1
 @a^1713^226:1
+@a^1783^309:3,310:2,329:4
+@a^1784^227:1
+@a^1791^207:1,310:9,329:1
 @a^1907^224:2,225:9,244:9,245:23
 @a^2535^207:1
 @a^2536^207:1
@@ -2126,6 +2148,7 @@ GoldScout-export 6^4bsd73u6aty9^20
 @a^9318^89:1,108:1,109:2,110:2
 @a^9683^252:1,312:1
 @a^10928^325:6,345:1,346:1
+@a^11075^227:1
 @a^11687^227:1
 @a^11777^227:2
 @a^11782^227:1

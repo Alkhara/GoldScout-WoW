@@ -1,4 +1,4 @@
-GoldScout-export 6^37dfqf16vx2u^15
+GoldScout-export 6^37dfqf16vx2u^16
 46^5^0^9^10^1429^0.7889^0.6705^5^Murlocfutterwühler^779:1:1,1425:1:1^
 48^1^0^21^21^1431^0.8199^0.6861^1^Skelettkrieger^^
 94^1^0^6^6^1429^0.3805^0.5849^1^Taschendieb der Defias^2070:1:1^
@@ -46,6 +46,9 @@ GoldScout-export 6^37dfqf16vx2u^15
 2042^13^0^5^6^1438^0.5988^0.5947^13^Nachtsäbler^3409:1:1,4813:3:3,4814:5:5,280087:6:6^
 2043^10^0^7^8^1438^0.5046^0.7228^10^Pirschender Nachtsäbler^3189:1:1,3409:2:2,4813:2:2,4814:4:4^
 2152^6^0^6^7^1438^0.4668^0.5314^6^Wegelagerer der Knarzklauen^1421:1:1,4536:2:2^
+2185^5^0^12^13^1439^0.3298^0.4945^5^Dunkelküstendrescher^2608:3:3,5412:3:3,5523:4:4^
+2201^2^0^11^12^1439^0.3698^0.5054^2^Räuber der Grauflossen^^
+2231^9^0^9^10^1439^0.3609^0.4621^9^Zwerggezeitenkriecher^2674:2:2,2675:2:2,4874:2:2,5385:6:6,5506:1:1,5523:2:2^
 2384^1^0^23^23^1424^0.3932^0.3724^1^Verhungernder Berglöwe^3731:1:1,5135:1:1^
 2554^3^0^32^33^1417^0.6943^0.6306^3^Axtwerferin der Bleichborken^3385:1:1,4306:2:3^
 2555^8^0^33^34^1417^0.6769^0.7078^8^Hexendoktorin der Bleichborken^3771:1:1,4306:2:3,4522:4:4,216483:1:1^
@@ -116,12 +119,15 @@ GoldScout-export 6^37dfqf16vx2u^15
 @i^2589^Leinenstoff
 @i^2591^Schmutziger Trogg-Stoff
 @i^2592^Wollstoff
+@i^2608^Dreschadonambra
 @i^2645^Lockere Kettenhandschuhe
 @i^2648^Lockere Kettenweste
 @i^2651^Sehr leichte Kettenarmschienen
 @i^2652^Sehr leichter Kettenumhang
 @i^2656^Sehr leichte Kettenweste
 @i^2672^Sehniges Wolfsfleisch
+@i^2674^Kriecherfleisch
+@i^2675^Kriecherklaue
 @i^2698^Rezept: Gekochte Krebsschere
 @i^2777^Schwächlicher Kurzbogen
 @i^3013^Rolle des Schutzes
@@ -167,6 +173,7 @@ GoldScout-export 6^37dfqf16vx2u^15
 @i^4813^Kleiner Lederkragen
 @i^4814^Verfärbter Fangzahn
 @i^4865^Verdorbener Pelz
+@i^4874^Abgenagte Gräten
 @i^5026^Feuerteer
 @i^5040^Schattenjägermesser
 @i^5116^Lange Schwanzfeder
@@ -175,7 +182,11 @@ GoldScout-export 6^37dfqf16vx2u^15
 @i^5170^Moosartiger Tumor
 @i^5204^Blutfedergürtel
 @i^5221^Melenas Kopf
+@i^5385^Kriecherbein
+@i^5412^Drescherauge
 @i^5465^Kleines Spinnenbein
+@i^5506^Knopfaugenstängel
+@i^5523^Kleine rankenfüßige Muschel
 @i^5637^Großer Fangzahn
 @i^6652^Reagenzienbeutel
 @i^6655^Leuchtendes Holzscheit
@@ -245,12 +256,15 @@ GoldScout-export 6^37dfqf16vx2u^15
 @q^2589^1:7:1
 @q^2591^0:15:0
 @q^2592^1:7:1
+@q^2608^0:15:0
 @q^2645^0:4:0
 @q^2648^0:4:0
 @q^2651^0:4:0
 @q^2652^0:4:0
 @q^2656^0:4:0
 @q^2672^1:7:1
+@q^2674^1:7:1
+@q^2675^1:7:1
 @q^2698^1:9:0
 @q^2777^0:2:0
 @q^3013^1:0:0
@@ -296,6 +310,7 @@ GoldScout-export 6^37dfqf16vx2u^15
 @q^4813^0:15:0
 @q^4814^0:15:0
 @q^4865^0:15:0
+@q^4874^0:15:0
 @q^5026^1:12:0
 @q^5040^1:2:0
 @q^5116^1:7:1
@@ -304,7 +319,11 @@ GoldScout-export 6^37dfqf16vx2u^15
 @q^5170^1:12:0
 @q^5204^1:12:0
 @q^5221^1:12:0
+@q^5385^1:12:0
+@q^5412^1:12:0
 @q^5465^1:7:1
+@q^5506^0:15:0
+@q^5523^1:7:0
 @q^5637^1:7:1
 @q^6652^1:12:0
 @q^6655^1:12:0
@@ -340,6 +359,7 @@ GoldScout-export 6^37dfqf16vx2u^15
 @m^1432^Loch Modan
 @m^1436^Westfall
 @m^1438^Teldrassil
+@m^1439^Dunkelküste
 @c^118^
 @c^724^
 @c^733^
@@ -1803,6 +1823,9 @@ GoldScout-export 6^37dfqf16vx2u^15
 @a^2042^213:3,230:1,232:1,250:2,251:2,252:3,271:1
 @a^2043^288:4,289:3,292:3
 @a^2152^209:6
+@a^2185^186:2,206:3
+@a^2201^207:2
+@a^2231^187:9
 @a^2384^147:1
 @a^2554^253:2,254:1
 @a^2555^253:1,254:1,272:1,293:4,313:1

@@ -1,4 +1,4 @@
-GoldScout-export 6^7bj8ia0yhshh^22
+GoldScout-export 6^7bj8ia0yhshh^23
 681^2^0^30^31^1434^0.3490^0.1318^2^Junger Schlingendorntiger^5214:1:1,248688:1:1^
 682^8^0^32^33^1434^0.3923^0.1417^8^Schlingendorntiger^1686:2:2,1687:3:3,7367:1:1,12202:3:3,15250:1:1^
 683^1^0^30^31^1434^0.4030^0.1053^1^Junger Panther^^
@@ -7,7 +7,11 @@ GoldScout-export 6^7bj8ia0yhshh^22
 702^1^0^33^34^1434^0.3167^0.1291^1^Aasfresser der Bloodscalp^1520:1:1,3771:1:1,3784:1:1^
 729^1^0^37^37^1434^0.3272^0.1819^1^Sin'Dall^1686:1:1,3879:1:1^
 736^8^0^32^33^1434^0.2898^0.1492^8^Panther^1529:1:1,1686:5:5,1687:2:2^
+740^28^0^34^35^1435^0.1407^0.6170^28^Halbwüchsiger Welpe^4402:5:5,4459:3:3,4460:1:1^
+741^35^0^35^36^1435^0.1381^0.6160^35^Träumender Welpe^4402:2:2,4459:1:1,4460:1:1,5637:1:1,213543:1:1,262889:2:2^
+767^3^0^36^37^1435^0.1382^0.5980^3^Sumpfjaguar^1686:1:1,1688:2:2^
 855^2^0^30^31^1434^0.2483^0.1581^2^Junger Schlingendornraptor^3685:1:1,4461:2:2^
+858^1^0^36^37^1435^0.1676^0.5491^1^Trauerspinner^7433:1:1,12205:1:1^
 910^1^0^26^27^1431^0.2385^0.7157^1^Verzauberin der Defias^11968:1:1^
 1085^8^0^34^35^1434^0.3172^0.1759^8^Alter Schlingendorntiger^1686:4:4,12202:6:6,248693:1:1^
 1120^1^0^7^7^1426^0.7028^0.3906^1^Troll der Frostmane^^
@@ -153,6 +157,7 @@ GoldScout-export 6^7bj8ia0yhshh^22
 @i^1529^Jade
 @i^1686^Gesträubtes Schnurrbarthaar
 @i^1687^Einziehbare Klaue
+@i^1688^Langer weicher Schwanz
 @i^1696^Geschwungene Raptorkralle
 @i^1701^Geschwungene Basiliskenklaue
 @i^1702^Intaktes Basiliskenrückgrat
@@ -211,6 +216,9 @@ GoldScout-export 6^7bj8ia0yhshh^22
 @i^3879^Tatze von Sin'Dall
 @i^4306^Seidenstoff
 @i^4377^Schweres Sprengpulver
+@i^4402^Kleiner Flammenbeutel
+@i^4459^Spröder Großdrachenknochen
+@i^4460^Zerfetztes Flügelnetz
 @i^4461^Raptorbalg
 @i^4536^Glänzender roter Apfel
 @i^4542^Saftiges Maisbrot
@@ -270,6 +278,7 @@ GoldScout-export 6^7bj8ia0yhshh^22
 @i^7101^Käferauge
 @i^7356^Ältestenumhang des Gorillas
 @i^7367^Ältestenmantel der Ausdauer
+@i^7433^Twilighthandschuhe der Eule
 @i^8049^Halskette der Knarzklauen
 @i^8182^Schrotgewehr
 @i^8344^Silbrige Spinndrüsen
@@ -295,6 +304,7 @@ GoldScout-export 6^7bj8ia0yhshh^22
 @i^12037^Eigenartiges Fleisch
 @i^12184^Raptorfleisch
 @i^12202^Tigerfleisch
+@i^12205^Weißes Spinnenfleisch
 @i^14089^Perlenhandschuhe
 @i^14093^Perlenkordel
 @i^14199^Distelfellhandschuhe des Kanalisierers
@@ -309,6 +319,7 @@ GoldScout-export 6^7bj8ia0yhshh^22
 @i^19937^Kleine Skorpidklaue
 @i^19938^Schweres Skorpidbein
 @i^211854^Schriftrolle: OMIT KESA
+@i^213543^Schriftrolle: UPDOG
 @i^248686^Abgefangene Kiste: Kräuter des Gesellen
 @i^248688^Abgefangene Kiste: Textilien des Gesellen
 @i^248689^Abgefangene Kiste: Kuriositäten des Gesellen
@@ -353,6 +364,7 @@ GoldScout-export 6^7bj8ia0yhshh^22
 @q^1529^2:7:1
 @q^1686^0:15:0
 @q^1687^0:15:0
+@q^1688^0:15:0
 @q^1696^0:15:0
 @q^1701^0:15:0
 @q^1702^0:15:0
@@ -411,6 +423,9 @@ GoldScout-export 6^7bj8ia0yhshh^22
 @q^3879^1:12:0
 @q^4306^1:7:1
 @q^4377^1:7:1
+@q^4402^1:7:1
+@q^4459^0:15:0
+@q^4460^0:15:0
 @q^4461^1:7:1
 @q^4536^1:0:0
 @q^4542^1:0:0
@@ -470,6 +485,7 @@ GoldScout-export 6^7bj8ia0yhshh^22
 @q^7101^0:15:0
 @q^7356^2:4:0
 @q^7367^2:4:0
+@q^7433^2:4:0
 @q^8049^1:12:0
 @q^8182^1:2:0
 @q^8344^1:12:0
@@ -495,6 +511,7 @@ GoldScout-export 6^7bj8ia0yhshh^22
 @q^12037^1:7:1
 @q^12184^1:7:1
 @q^12202^1:7:1
+@q^12205^1:7:1
 @q^14089^1:4:0
 @q^14093^1:4:0
 @q^14199^2:4:0
@@ -509,6 +526,7 @@ GoldScout-export 6^7bj8ia0yhshh^22
 @q^19937^0:15:0
 @q^19938^0:15:0
 @q^211854^1:0:0
+@q^213543^1:0:0
 @q^248686^1:0:1
 @q^248688^1:0:1
 @q^248689^1:0:1
@@ -529,6 +547,7 @@ GoldScout-export 6^7bj8ia0yhshh^22
 @m^1426^Dun Morogh
 @m^1431^Dämmerwald
 @m^1434^Schlingendorntal
+@m^1435^Sümpfe des Elends
 @m^1437^Sumpfland
 @m^1438^Teldrassil
 @m^1443^Desolace
@@ -2294,7 +2313,11 @@ GoldScout-export 6^7bj8ia0yhshh^22
 @a^702^46:1
 @a^729^66:1
 @a^736^45:4,65:4
+@a^740^222:7,223:3,242:9,243:4,262:2,263:3
+@a^741^222:7,223:5,242:13,243:5,262:4,263:1
+@a^767^222:2,243:1
 @a^855^64:1,65:1
+@a^858^203:1
 @a^910^284:1
 @a^1085^46:1,66:7
 @a^1120^154:1
