@@ -1,4 +1,4 @@
-GoldScout-export 6^hfifij351o6x^22
+GoldScout-export 6^hfifij351o6x^23
 587^8^0^33^34^1434^0.3057^0.1886^8^Bloodscalp Warrior^1519:1:1,1520:1:1,2749:1:1,3901:2:2,3915:5:5,4306:4:5^
 588^8^0^34^35^1434^0.2457^0.1184^8^Bloodscalp Scout^3771:1:1,3786:1:1,3809:1:1,3901:2:2,3915:3:3,4306:3:5^
 595^12^0^34^35^1434^0.2442^0.1219^12^Bloodscalp Hunter^1710:1:1,3901:6:6,3915:1:1,4306:4:5^
@@ -85,12 +85,15 @@ GoldScout-export 6^hfifij351o6x^22
 2588^18^0^36^37^1417^0.2661^0.6223^18^Syndicate Prowler^1707:1:1,1708:2:2,3787:1:1,3793:1:1,3827:1:1,4306:6:13,4440:1:1,5113:3:3,15260:1:1^
 2590^9^0^35^36^1417^0.2711^0.6281^9^Syndicate Conjuror^3785:1:1,4306:2:6,5113:2:2,10302:1:1^
 2592^2^0^38^39^1417^0.3675^0.5637^2^Rumbling Exile^1529:1:1,4553:1:1,4784:1:1,7912:1:2,8150:2:2^
+2595^7^0^38^39^1417^0.2341^0.8547^7^Daggerspine Raider^4068:1:1,7072:5:5,9854:1:1,17057:2:2,17058:2:2^
+2596^2^0^39^40^1417^0.2220^0.8502^2^Daggerspine Sorceress^7072:1:1,17057:1:1^
 2611^1^0^42^42^1417^0.5407^0.4758^1^Fozruk^4469:1:1^
 2667^11^0^36^37^1434^0.3669^0.3044^11^Ward of Laze^^
 2760^2^0^38^39^1417^0.2543^0.3028^2^Burning Exile^3857:1:1,4479:1:1,4787:1:1^
 2763^1^0^42^42^1417^0.3608^0.5752^1^Thenan^^
 2765^1^0^39^39^1417^0.5398^0.4766^1^Znort^4539:1:1^
 2773^1^0^40^40^1417^0.1981^0.6587^1^Or'Kalar^4551:1:1^
+2776^2^0^40^40^1417^0.3560^0.7979^2^Vengeful Surge^^
 2783^1^0^40^40^1417^0.2922^0.6175^1^Marez Cowl^1710:1:1,4510:1:1^
 2992^1^0^37^37^1435^0.6395^0.2321^1^Healing Ward V^^
 4063^1^0^39^39^1417^0.5328^0.4721^1^Feeboz^^
@@ -275,6 +278,7 @@ GoldScout-export 6^hfifij351o6x^22
 @i^4041^Aurora Cowl
 @i^4053^Large River Crocolisk Skin
 @i^4059^Glyphed Bracers
+@i^4068^Chief Brigadier Shield
 @i^4093^Large Basilisk Tail
 @i^4104^Snapjaw Crocolisk Skin
 @i^4106^Tumbled Crystal
@@ -341,6 +345,7 @@ GoldScout-export 6^hfifij351o6x^22
 @i^6894^Whirlwind Heart
 @i^6986^Crimson Lotus
 @i^7067^Elemental Earth
+@i^7072^Naga Scale
 @i^7330^Infiltrator Buckler of the Wolf
 @i^7433^Twilight Gloves of the Owl
 @i^7447^Sentinel Bracers of the Whale
@@ -350,6 +355,7 @@ GoldScout-export 6^hfifij351o6x^22
 @i^8150^Deeprock Salt
 @i^8385^Pattern: Turtle Scale Gloves
 @i^9849^Conjurer's Hood of the Physician
+@i^9854^Archer's Jerkin of the Bandit
 @i^10302^Pattern: Red Mageweave Pants
 @i^10420^Skull of the Coldbringer
 @i^10573^Boneslasher
@@ -373,6 +379,7 @@ GoldScout-export 6^hfifij351o6x^22
 @i^15286^Long Redwood Bow
 @i^17009^Ambassador Malcin's Head
 @i^17056^Light Feather
+@i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
 @i^19938^Heavy Scorpid Leg
 @i^213421^Singed Note
@@ -501,6 +508,7 @@ GoldScout-export 6^hfifij351o6x^22
 @q^4041^2:4:0
 @q^4053^1:12:0
 @q^4059^2:4:0
+@q^4068^2:4:0
 @q^4093^0:15:0
 @q^4104^1:12:0
 @q^4106^1:12:0
@@ -567,6 +575,7 @@ GoldScout-export 6^hfifij351o6x^22
 @q^6894^1:12:0
 @q^6986^0:15:0
 @q^7067^1:7:1
+@q^7072^1:7:1
 @q^7330^2:4:0
 @q^7433^2:4:0
 @q^7447^2:4:0
@@ -576,6 +585,7 @@ GoldScout-export 6^hfifij351o6x^22
 @q^8150^1:7:1
 @q^8385^1:9:0
 @q^9849^2:4:0
+@q^9854^2:4:0
 @q^10302^2:9:0
 @q^10420^1:12:0
 @q^10573^3:2:0
@@ -599,6 +609,7 @@ GoldScout-export 6^hfifij351o6x^22
 @q^15286^2:2:0
 @q^17009^1:12:0
 @q^17056^1:15:1
+@q^17057^1:15:0
 @q^17058^1:15:0
 @q^19938^0:15:0
 @q^213421^1:15:0
@@ -841,12 +852,15 @@ GoldScout-export 6^hfifij351o6x^22
 @a^2588^244:1,245:16,265:1
 @a^2590^225:1,245:7,265:1
 @a^2592^227:2
+@a^2595^324:4,344:2,345:1
+@a^2596^324:1,344:1
 @a^2611^190:1
 @a^2667^127:11
 @a^2760^125:2
 @a^2763^227:1
 @a^2765^190:1
 @a^2773^263:1
+@a^2776^307:2
 @a^2783^245:1
 @a^2992^92:1
 @a^4063^190:1

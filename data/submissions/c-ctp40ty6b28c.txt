@@ -1,4 +1,6 @@
-GoldScout-export 6^ctp40ty6b28c^6
+GoldScout-export 6^ctp40ty6b28c^7
+587^1^0^34^34^1434^0.3011^0.1888^1^Bloodscalp Warrior^3771:1:1^
+588^1^0^34^34^1434^0.3022^0.1340^1^Bloodscalp Scout^3771:1:1,3915:1:1,4306:1:2^
 598^9^0^0^0^0^0.0000^0.0000^0^^414:1:1,2589:1:3,2592:2:3,2770:1:5^
 634^1^0^0^0^0^0.0000^0.0000^0^^3377:1:1,10401:1:1^
 636^4^0^0^0^0^0.0000^0.0000^0^^2216:1:1,7997:1:1^
@@ -10,7 +12,17 @@ GoldScout-export 6^ctp40ty6b28c^6
 647^1^0^0^0^0^0.0000^0.0000^0^^5200:1:1^
 657^8^0^0^0^0^0.0000^0.0000^0^^1787:1:1,2217:1:1,2589:2:3,2592:2:5,3377:1:1,6586:1:1,8492:1:1,12989:1:1^
 681^4^0^30^31^1434^0.3623^0.1161^4^Young Stranglethorn Tiger^1686:2:2,12202:3:3^
+682^1^0^32^33^1434^0.4636^0.1290^1^Stranglethorn Tiger^12202:1:1^
 683^3^0^30^31^1434^0.4135^0.1037^3^Young Panther^1686:2:2,4634:1:1^
+685^2^0^33^34^1434^0.2464^0.1609^2^Stranglethorn Raptor^4461:2:2,5637:1:1^
+686^2^0^35^36^1434^0.3074^0.2407^2^Lashtail Raptor^3685:1:1,4461:1:1,4586:2:2,12184:2:2^
+689^2^0^34^35^1434^0.2476^0.1824^2^Crystal Spine Basilisk^1701:1:1,3918:1:1^
+697^2^0^33^34^1434^0.3010^0.1885^2^Bloodscalp Shaman^1519:1:1,2730:1:1,3771:1:1,3901:1:1^
+701^1^0^34^34^1434^0.3022^0.1340^1^Bloodscalp Mystic^1519:1:1^
+702^3^0^33^34^1434^0.3142^0.1143^3^Bloodscalp Scavenger^1519:1:1,1520:1:1,2748:1:1,3901:1:1,3915:2:2,4306:1:2^
+772^1^0^37^38^1434^0.4925^0.2000^1^Stranglethorn Tigress^1688:1:1,3839:1:1,5637:1:1^
+905^1^0^31^31^1434^0.3552^0.0935^1^Sharptooth Frenzy^4860:1:1^
+1096^2^0^35^36^1434^0.4510^0.1982^2^Venture Co. Geologist^1630:1:1,4106:2:2^
 1150^4^0^30^31^1434^0.3601^0.1042^4^River Crocolisk^770:1:1,1725:1:1,3667:2:2,4053:2:2,12037:1:1^
 1729^1^0^0^0^0^0.0000^0.0000^0^^^
 1732^3^0^0^0^0^0.0000^0.0000^0^^1789:1:1,2589:1:5,2592:1:3,4699:1:1^
@@ -70,6 +82,7 @@ GoldScout-export 6^ctp40ty6b28c^6
 4480^1^0^35^35^1417^0.5637^0.3606^1^Kenata Dabyrie^5830:1:1^
 4481^1^0^34^34^1417^0.5482^0.3767^1^Marcel Dabyrie^1710:1:1,5832:1:1^
 4504^1^0^37^37^1416^0.3740^0.6847^1^Frostmaw^5811:1:1^
+4723^1^0^38^38^1434^0.4265^0.1832^1^Foreman Cozzle^4306:1:2,5851:1:1^
 5937^2^0^35^35^1441^0.7007^0.7011^2^Vile Sting^9819:1:1,19937:1:1,285177:1:1^
 6206^6^0^0^0^0^0.0000^0.0000^0^^1807:1:1,1809:1:1,2592:1:1,3770:1:1,4306:1:1,9308:2:2^
 6207^6^0^0^0^0^0.0000^0.0000^0^^1705:1:1,1711:1:1,4306:1:1,9308:2:2^
@@ -130,8 +143,12 @@ GoldScout-export 6^ctp40ty6b28c^6
 @i^1180^Scroll of Stamina
 @i^1205^Melon Juice
 @i^1288^Large Venom Sac
+@i^1519^Bloodscalp Ear
+@i^1520^Troll Sweat
 @i^1529^Jade
+@i^1630^Broken Electro-lantern
 @i^1686^Bristly Whisker
+@i^1688^Long Soft Tail
 @i^1697^Keen Raptor Tooth
 @i^1701^Curved Basilisk Claw
 @i^1702^Intact Basilisk Spine
@@ -169,6 +186,8 @@ GoldScout-export 6^ctp40ty6b28c^6
 @i^2289^Scroll of Strength II
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2730^Green Hills of Stranglethorn - Page 6
+@i^2748^Green Hills of Stranglethorn - Page 24
 @i^2764^Small Dagger
 @i^2770^Copper Ore
 @i^2781^Dirty Blunderbuss
@@ -210,22 +229,30 @@ GoldScout-export 6^ctp40ty6b28c^6
 @i^3805^Hardened Leather Pants
 @i^3814^Double Mail Shoulderpads
 @i^3815^Double Mail Vest
+@i^3839^Pristine Tigress Fang
+@i^3901^Bloodscalp Tusk
+@i^3915^Bloody Bone Necklace
+@i^3918^Singing Crystal Shard
 @i^4037^Silver-thread Pants
 @i^4048^Emblazoned Hat
 @i^4053^Large River Crocolisk Skin
 @i^4076^Mail Combat Boots
 @i^4093^Large Basilisk Tail
+@i^4106^Tumbled Crystal
 @i^4306^Silk Cloth
 @i^4352^Pattern: Boots of the Enchanter
 @i^4416^Schematic: Goblin Land Mine
+@i^4461^Raptor Hide
 @i^4542^Moist Cornbread
 @i^4553^Jagged Piece of Stone
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
+@i^4586^Smooth Raptor Skin
 @i^4606^Spongy Morel
 @i^4634^Iron Lockbox
 @i^4699^Seer's Belt
 @i^4784^Lifeless Stone
+@i^4860^Glistening Frenzy Scale
 @i^4999^Azora's Will
 @i^5113^Mark of the Syndicate
 @i^5114^Severed Talon
@@ -244,6 +271,7 @@ GoldScout-export 6^ctp40ty6b28c^6
 @i^5831^Fardel's Head
 @i^5832^Marcel's Head
 @i^5848^Hollow Vulture Bone
+@i^5851^Cozzle's Key
 @i^5853^Intact Silithid Carapace
 @i^5854^Silithid Talon
 @i^5855^Silithid Heart
@@ -283,6 +311,7 @@ GoldScout-export 6^ctp40ty6b28c^6
 @i^11386^Squishy Basilisk Eye
 @i^11416^Delicate Ribcage
 @i^12037^Mystery Meat
+@i^12184^Raptor Flesh
 @i^12202^Tiger Meat
 @i^12989^Gargoyle's Bite
 @i^13033^Zealot Blade
@@ -321,8 +350,12 @@ GoldScout-export 6^ctp40ty6b28c^6
 @q^1180^1:0:0
 @q^1205^1:0:0
 @q^1288^1:7:1
+@q^1519^1:12:0
+@q^1520^0:15:0
 @q^1529^2:7:1
+@q^1630^0:15:0
 @q^1686^0:15:0
+@q^1688^0:15:0
 @q^1697^0:15:0
 @q^1701^0:15:0
 @q^1702^0:15:0
@@ -360,6 +393,8 @@ GoldScout-export 6^ctp40ty6b28c^6
 @q^2289^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2730^1:12:0
+@q^2748^1:12:0
 @q^2764^0:2:0
 @q^2770^1:7:1
 @q^2781^0:2:0
@@ -401,22 +436,30 @@ GoldScout-export 6^ctp40ty6b28c^6
 @q^3805^0:4:0
 @q^3814^0:4:0
 @q^3815^0:4:0
+@q^3839^1:12:0
+@q^3901^1:12:0
+@q^3915^1:12:0
+@q^3918^1:12:0
 @q^4037^2:4:0
 @q^4048^2:4:0
 @q^4053^1:12:0
 @q^4076^2:4:0
 @q^4093^0:15:0
+@q^4106^1:12:0
 @q^4306^1:7:1
 @q^4352^2:9:0
 @q^4416^2:9:0
+@q^4461^1:7:1
 @q^4542^1:0:0
 @q^4553^0:15:0
 @q^4555^0:15:0
 @q^4556^0:15:0
+@q^4586^0:15:0
 @q^4606^1:0:0
 @q^4634^2:15:0
 @q^4699^2:4:0
 @q^4784^0:15:0
+@q^4860^0:15:0
 @q^4999^2:4:0
 @q^5113^0:15:0
 @q^5114^0:15:0
@@ -435,6 +478,7 @@ GoldScout-export 6^ctp40ty6b28c^6
 @q^5831^1:12:0
 @q^5832^1:12:0
 @q^5848^1:12:0
+@q^5851^1:13:0
 @q^5853^1:12:0
 @q^5854^1:12:0
 @q^5855^1:12:0
@@ -474,6 +518,7 @@ GoldScout-export 6^ctp40ty6b28c^6
 @q^11386^0:15:0
 @q^11416^0:15:0
 @q^12037^1:7:1
+@q^12184^1:7:1
 @q^12202^1:7:1
 @q^12989^3:2:0
 @q^13033^3:2:0
@@ -694,8 +739,20 @@ GoldScout-export 6^ctp40ty6b28c^6
 @c^279981^
 @c^279982^
 @c^286152^
+@a^587^66:1
+@a^588^46:1
 @a^681^26:1,47:3
+@a^682^49:1
 @a^683^28:2,48:1
+@a^685^64:2
+@a^686^86:2
+@a^689^64:1,65:1
+@a^697^66:2
+@a^701^46:1
+@a^702^46:3
+@a^772^89:1
+@a^905^27:1
+@a^1096^69:1,88:1
 @a^1150^26:1,27:1,46:1,48:1
 @a^2240^271:3,291:1
 @a^2241^271:2
@@ -748,6 +805,7 @@ GoldScout-export 6^ctp40ty6b28c^6
 @a^4480^151:1
 @a^4481^150:1
 @a^4504^267:1
+@a^4723^68:1
 @a^5937^273:1,294:1
 @a^14278^232:1
 @a^264082^26:1
