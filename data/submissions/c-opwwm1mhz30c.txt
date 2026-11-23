@@ -1,4 +1,9 @@
-GoldScout-export 6^opwwm1mhz30c^17
+GoldScout-export 6^opwwm1mhz30c^18
+1783^1^0^50^50^1422^0.3839^0.5465^1^Skeletal Flayer^12840:1:1,14047:1:1^
+1784^2^0^51^51^1422^0.3837^0.5503^2^Skeletal Sorcerer^12840:2:2^
+1791^2^0^50^52^1422^0.3843^0.5459^2^Slavering Ghoul^6530:1:1,13443:1:1^
+1831^1^0^52^53^1422^0.4095^0.5193^1^Scarlet Hunter^^
+1835^5^0^53^54^1422^0.4056^0.5230^5^Scarlet Invoker^^
 2505^13^0^49^50^1425^0.7777^0.6716^13^Saltwater Snapjaw^3712:6:6,4555:11:11,4556:8:8,4603:1:2,7973:6:6,262890:1:1^
 2526^1^0^30^30^1432^0.4701^0.1431^1^Mountaineer Morlic^^
 2563^1^0^32^33^1417^0.4430^0.7045^1^Plains Creeper^878:1:1,1081:1:1,2251:1:1^
@@ -142,6 +147,7 @@ GoldScout-export 6^opwwm1mhz30c^17
 9396^1^0^41^41^1446^0.5667^0.3544^1^Ground Pounder^4784:1:1,7075:1:1^
 10082^1^0^0^0^0^0.0000^0.0000^0^^12470:1:1^
 10120^1^0^0^0^0^0.0000^0.0000^0^^4007:1:1^
+10605^3^0^53^54^1422^0.4068^0.5245^3^Scarlet Medic^^
 10802^2^0^51^51^1425^0.5740^0.8663^2^Hitah'ya the Keeper^4338:1:1,9259:1:1,19064:1:1^
 246020^1^0^0^0^1416^0.0000^0.0000^0^^273049:1:1^
 246664^1^0^0^0^1416^0.0000^0.0000^0^^276160:1:1^
@@ -280,6 +286,7 @@ GoldScout-export 6^opwwm1mhz30c^17
 @i^6421^Glyphed Belt
 @i^6438^Dull Elemental Bracer
 @i^6444^Forked Tongue
+@i^6530^Nightcrawlers
 @i^6593^Battleforge Cloak of the Sorcerer
 @i^6826^Brilliant Scale
 @i^7067^Elemental Earth
@@ -368,7 +375,10 @@ GoldScout-export 6^opwwm1mhz30c^17
 @i^12207^Giant Egg
 @i^12208^Tender Wolf Meat
 @i^12470^Sandstalker Ankleguards
+@i^12840^Minion's Scourgestone
 @i^13088^Gazlowe's Charm
+@i^13443^Superior Mana Potion
+@i^14047^Runecloth
 @i^14279^Opulent Bracers of Shadow Protection
 @i^14496^Pattern: Felcloth Hood
 @i^14774^Ravager's Crown
@@ -537,6 +547,7 @@ GoldScout-export 6^opwwm1mhz30c^17
 @q^6421^2:4:0
 @q^6438^0:15:0
 @q^6444^0:15:0
+@q^6530^1:0:0
 @q^6593^2:4:0
 @q^6826^0:15:0
 @q^7067^1:7:1
@@ -625,7 +636,10 @@ GoldScout-export 6^opwwm1mhz30c^17
 @q^12207^1:7:1
 @q^12208^1:7:1
 @q^12470^3:4:0
+@q^12840^1:12:0
 @q^13088^3:4:0
+@q^13443^1:0:0
+@q^14047^1:7:1
 @q^14279^2:4:0
 @q^14496^2:9:0
 @q^14774^2:4:0
@@ -682,6 +696,7 @@ GoldScout-export 6^opwwm1mhz30c^17
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
 @m^1418^Badlands
+@m^1422^Western Plaguelands
 @m^1425^The Hinterlands
 @m^1432^Loch Modan
 @m^1446^Tanaris
@@ -1048,6 +1063,11 @@ GoldScout-export 6^opwwm1mhz30c^17
 @c^279982^
 @c^279990^
 @c^286152^
+@a^1783^207:1
+@a^1784^227:2
+@a^1791^207:1,227:1
+@a^1831^208:1
+@a^1835^207:1,208:4
 @a^2505^235:1,255:2,256:1,275:7,295:2
 @a^2526^49:1
 @a^2563^288:1
@@ -1120,6 +1140,7 @@ GoldScout-export 6^opwwm1mhz30c^17
 @a^8667^170:1
 @a^8996^152:10,172:1
 @a^9396^151:1
+@a^10605^207:1,208:2
 @a^10802^351:2
 @a^270772^264:1
 @f^1458^0^100^26^6289:44:44,6291:11:11,6297:12:12,6299:15:15,6301:1:1,6308:17:17^136:75,193:25

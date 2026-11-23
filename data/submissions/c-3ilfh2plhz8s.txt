@@ -1,4 +1,4 @@
-GoldScout-export 6^3ilfh2plhz8s^21
+GoldScout-export 6^3ilfh2plhz8s^22
 92^3^0^39^40^1418^0.3722^0.7544^3^Rock Elemental^4553:1:1,4627:3:3,4784:1:1,7912:1:2,8150:2:2^
 597^3^0^36^37^1434^0.2350^0.0858^3^Bloodscalp Berserker^2750:1:1,4306:1:3,8746:1:1^
 660^7^1^37^37^1434^0.2348^0.0894^7^Bloodscalp Witch Doctor^1710:1:1,4306:3:4,4338:1:1^
@@ -51,8 +51,14 @@ GoldScout-export 6^3ilfh2plhz8s^21
 4405^11^0^43^44^1445^0.5524^0.6357^11^Muckshell Razorclaw^1645:2:2,3936:1:1,4603:1:3,7973:3:3,8749:1:1^
 4841^1^0^45^45^1445^0.5023^0.5241^1^Deadmire^770:1:3,5945:1:1^
 5229^11^0^40^41^1444^0.7657^0.3080^11^Gordunni Ogre^3964:1:1,4019:1:1,4306:1:2,4338:1:1^
-5232^7^0^42^43^1444^0.7601^0.3093^7^Gordunni Brute^4020:1:1,4338:2:2^
+5232^8^0^42^43^1444^0.7405^0.3388^8^Gordunni Brute^4020:1:1,4338:2:2,248693:1:1^
+5234^2^3^43^44^1444^0.6055^0.5466^2^Gordunni Mauler^4338:1:1^
 5237^8^0^41^42^1444^0.7677^0.3109^8^Gordunni Ogre Mage^4306:2:3,4338:3:5,4599:1:1,8705:1:1^
+5240^0^1^44^44^0^0.0000^0.0000^0^Gordunni Warlock^^
+5244^3^0^45^46^1444^0.7461^0.6248^3^Zukk'ash Stinger^6302:1:1,18961:2:2^
+5245^7^0^44^45^1444^0.7355^0.6260^7^Zukk'ash Wasp^6300:1:1,6302:2:2,18961:7:7^
+5246^10^0^44^45^1444^0.7386^0.6236^10^Zukk'ash Worker^6300:2:2,6302:3:3,14260:1:1,18961:10:10^
+5247^1^0^46^46^1444^0.7666^0.6138^1^Zukk'ash Tunneler^18961:1:1^
 5249^4^0^40^41^1444^0.7266^0.3851^4^Woodpaw Mongrel^4338:1:2,4421:1:1,9237:2:2^
 5251^9^0^41^42^1444^0.7239^0.3853^9^Woodpaw Trapper^9237:4:4^
 5253^8^0^41^42^1444^0.7254^0.3844^8^Woodpaw Brute^1645:1:1,4338:3:5,9237:5:5^
@@ -79,6 +85,7 @@ GoldScout-export 6^3ilfh2plhz8s^21
 8996^6^0^42^43^1446^0.6036^0.3664^6^Voidwalker Minion^^
 12922^5^0^37^37^1435^0.6445^0.2231^5^Imp Minion^^
 14356^7^0^38^40^1435^0.6979^0.5441^7^Sawfin Frenzy^^
+14661^1^0^47^47^1444^0.7550^0.6069^1^Stinglasher^18962:1:1^
 @i^770^Pointy Crocolisk Tooth
 @i^1464^Buzzard Talon
 @i^1520^Troll Sweat
@@ -154,6 +161,8 @@ GoldScout-export 6^3ilfh2plhz8s^21
 @i^6166^Coyote Jawbone
 @i^6169^Unprepared Sawtooth Flank
 @i^6196^Noboru's Cudgel
+@i^6300^Husk Fragment
+@i^6302^Delicate Insect Wing
 @i^6421^Glyphed Belt
 @i^6444^Forked Tongue
 @i^7474^Regal Cloak of the Tiger
@@ -187,10 +196,13 @@ GoldScout-export 6^3ilfh2plhz8s^21
 @i^12203^Red Wolf Meat
 @i^12205^White Spider Meat
 @i^12208^Tender Wolf Meat
+@i^14260^Bloodwoven Bracers of the Sorcerer
 @i^14423^Silksand Shoulder Pads
 @i^15163^Imposing Bracers of the Bandit
 @i^15578^Sparkleshell Breastplate of the Bandit
 @i^15593^Steadfast Coronet of the Bandit
+@i^18961^Zukk'ash Carapace
+@i^18962^Stinglasher's Glands
 @i^19935^Empty Venom Sac
 @i^19936^Dried Scorpid Carapace
 @i^19937^Small Scorpid Claw
@@ -283,6 +295,8 @@ GoldScout-export 6^3ilfh2plhz8s^21
 @q^6166^1:12:0
 @q^6169^1:12:0
 @q^6196^0:2:0
+@q^6300^0:15:0
+@q^6302^0:15:0
 @q^6421^2:4:0
 @q^6444^0:15:0
 @q^7474^2:4:0
@@ -316,10 +330,13 @@ GoldScout-export 6^3ilfh2plhz8s^21
 @q^12203^1:7:1
 @q^12205^1:7:1
 @q^12208^1:7:1
+@q^14260^2:4:0
 @q^14423^2:4:0
 @q^15163^2:4:0
 @q^15578^2:4:0
 @q^15593^2:4:0
+@q^18961^1:12:0
+@q^18962^1:12:0
 @q^19935^0:15:0
 @q^19936^0:15:0
 @q^19937^0:15:0
@@ -1049,8 +1066,13 @@ GoldScout-export 6^3ilfh2plhz8s^21
 @a^4405^250:3,251:7,271:1
 @a^4841^210:1
 @a^5229^114:4,115:2,135:4,136:1
-@a^5232^114:1,115:2,135:4
+@a^5232^114:1,115:2,135:4,212:1
+@a^5234^212:2
 @a^5237^114:2,115:2,135:3,155:1
+@a^5244^254:2,255:1
+@a^5245^254:7
+@a^5246^234:1,254:9
+@a^5247^255:1
 @a^5249^154:4
 @a^5251^154:9
 @a^5253^154:8
@@ -1077,4 +1099,5 @@ GoldScout-export 6^3ilfh2plhz8s^21
 @a^8996^132:1,151:4,153:1
 @a^12922^92:4,93:1
 @a^14356^193:2,214:1,233:2,234:1,254:1
+@a^14661^255:1
 @l^0^enUS

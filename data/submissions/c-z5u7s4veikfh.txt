@@ -1,4 +1,4 @@
-GoldScout-export 6^z5u7s4veikfh^8
+GoldScout-export 6^z5u7s4veikfh^9
 1766^14^0^11^12^1421^0.5575^0.1574^14^Mottled Worg^2672:12:12,3164:3:3,3299:1:1,3300:1:1^
 1767^13^0^12^13^1421^0.6082^0.1468^13^Vile Fin Shredder^730:2:2,818:1:1,858:1:1,1179:1:1,3192:1:1,5069:1:1,5523:5:5^
 1768^4^0^13^14^1421^0.6012^0.1671^4^Vile Fin Tidehunter^730:1:1,1179:1:1,1495:1:1,2977:1:1,5523:1:1^
@@ -117,6 +117,15 @@ GoldScout-export 6^z5u7s4veikfh^8
 11121^1^0^0^0^0^0.0000^0.0000^0^^276434:1:1^
 11257^1^0^0^0^0^0.0000^0.0000^0^^^
 11261^1^0^0^0^0^0.0000^0.0000^0^^12843:1:1,14626:1:1^
+11318^4^0^0^0^0^0.0000^0.0000^0^^1507:1:1,1512:1:1,1513:1:1,2589:1:3,4687:1:1^
+11319^4^0^0^0^0^0.0000^0.0000^0^^818:1:1,1495:1:1,2589:1:5^
+11321^2^0^0^0^0^0.0000^0.0000^0^^5741:1:1,211787:1:1^
+11322^6^0^0^0^0^0.0000^0.0000^0^^818:1:1,1503:1:1,1505:1:1,2214:1:1,14395:1:1,15494:1:1^
+11323^3^0^0^0^0^0.0000^0.0000^0^^818:1:1,2589:1:4,15210:1:1^
+11324^3^0^0^0^0^0.0000^0.0000^0^^1502:1:1,14396:1:1^
+11518^1^0^0^0^0^0.0000^0.0000^0^^1742:1:1^
+11519^1^0^0^0^0^0.0000^0.0000^0^^273007:1:1^
+11520^1^0^0^0^0^0.0000^0.0000^0^^14145:1:1,14540:1:1^
 11551^1^0^0^0^0^0.0000^0.0000^0^^4585:1:1,248699:1:1^
 11582^1^0^0^0^0^0.0000^0.0000^0^^^
 11622^1^0^0^0^0^0.0000^0.0000^0^^14537:1:1^
@@ -168,9 +177,17 @@ GoldScout-export 6^z5u7s4veikfh^8
 @i^1429^Patchwork Cloak
 @i^1475^Small Venom Sac
 @i^1495^Calico Shoes
+@i^1502^Warped Leather Belt
+@i^1503^Warped Leather Boots
+@i^1505^Warped Cloak
+@i^1507^Warped Leather Pants
+@i^1512^Crude Battle Axe
+@i^1513^Old Greatsword
 @i^1515^Rough Wooden Staff
 @i^1516^Worn Hatchet
 @i^1732^Worn Mail Bracers
+@i^1742^Laced Mail Gloves
+@i^2214^Wooden Buckler
 @i^2287^Haunch of Meat
 @i^2409^Pattern: Dark Leather Tunic
 @i^2589^Linen Cloth
@@ -213,6 +230,7 @@ GoldScout-export 6^z5u7s4veikfh^8
 @i^4552^Smooth Stone Chip
 @i^4585^Dripping Spider Mandible
 @i^4605^Red-speckled Mushroom
+@i^4687^Barbaric Cloth Belt
 @i^4775^Cracked Bill
 @i^4776^Ruffled Feather
 @i^4867^Broken Scorpid Leg
@@ -226,6 +244,7 @@ GoldScout-export 6^z5u7s4veikfh^8
 @i^5465^Small Spider Leg
 @i^5466^Scorpid Stinger
 @i^5523^Small Barnacled Clam
+@i^5741^Rock Chip
 @i^5759^Thorium Lockbox
 @i^6293^Dried Bat Blood
 @i^6296^Patch of Bat Hair
@@ -288,20 +307,26 @@ GoldScout-export 6^z5u7s4veikfh^8
 @i^13825^Primed Musket
 @i^13967^Windreaver Greaves
 @i^14047^Runecloth
+@i^14145^Cursed Felblade
 @i^14227^Ironweb Spider Silk
 @i^14340^Freezing Lich Robes
+@i^14395^Spells of Shadow
+@i^14396^Incantations from the Nether
 @i^14514^Pattern: Robe of the Void
 @i^14537^Corpselight Greaves
+@i^14540^Taragaman the Hungerer's Heart
 @i^14544^Lieutenant's Insignia
 @i^14615^Bloodmail Gauntlets
 @i^14626^Necropile Robe
 @i^14641^Cadaverous Walkers
 @i^15003^Primal Belt
+@i^15210^Raider Shortsword of the Owl
 @i^15266^Fierce Mauler of the Physician
 @i^15276^Magus Long Staff of Agility
 @i^15299^Grizzly Cape
 @i^15420^Ironfeather
 @i^15426^Peerless Boots of the Tiger
+@i^15494^Bloodspattered Shield of Shadow Protection
 @i^15672^Magnificent Gauntlets of the Bandit
 @i^15694^Merciless Greaves of the Bear
 @i^15936^Duskwoven Branch of the Elder
@@ -340,6 +365,7 @@ GoldScout-export 6^z5u7s4veikfh^8
 @i^249695^Fel-Tainted Flesh
 @i^249696^Tusks of the Unbroken
 @i^249697^Claws of the Great Bear
+@i^273007^Chasm Walkers
 @i^273050^Blackmaw Pouch
 @i^273125^Lich's Index Finger
 @i^273129^Essence of Anarchy
@@ -382,9 +408,17 @@ GoldScout-export 6^z5u7s4veikfh^8
 @q^1429^0:4:0
 @q^1475^1:7:1
 @q^1495^0:4:0
+@q^1502^0:4:0
+@q^1503^0:4:0
+@q^1505^0:4:0
+@q^1507^0:4:0
+@q^1512^0:2:0
+@q^1513^0:2:0
 @q^1515^0:2:0
 @q^1516^0:2:0
 @q^1732^0:4:0
+@q^1742^0:4:0
+@q^2214^0:4:0
 @q^2287^1:0:0
 @q^2409^2:9:0
 @q^2589^1:7:1
@@ -427,6 +461,7 @@ GoldScout-export 6^z5u7s4veikfh^8
 @q^4552^0:15:0
 @q^4585^0:15:0
 @q^4605^1:0:0
+@q^4687^1:4:0
 @q^4775^0:15:0
 @q^4776^0:15:0
 @q^4867^0:15:0
@@ -440,6 +475,7 @@ GoldScout-export 6^z5u7s4veikfh^8
 @q^5465^1:7:1
 @q^5466^1:7:1
 @q^5523^1:7:0
+@q^5741^0:15:0
 @q^5759^2:15:0
 @q^6293^0:15:0
 @q^6296^0:15:0
@@ -502,20 +538,26 @@ GoldScout-export 6^z5u7s4veikfh^8
 @q^13825^0:2:0
 @q^13967^3:4:0
 @q^14047^1:7:1
+@q^14145^3:2:0
 @q^14227^1:7:1
 @q^14340^3:4:0
+@q^14395^1:12:0
+@q^14396^1:12:0
 @q^14514^4:9:0
 @q^14537^3:4:0
+@q^14540^1:12:0
 @q^14544^1:12:0
 @q^14615^3:4:0
 @q^14626^3:4:0
 @q^14641^3:4:0
 @q^15003^1:4:0
+@q^15210^2:2:0
 @q^15266^2:2:0
 @q^15276^2:2:0
 @q^15299^1:4:0
 @q^15420^1:7:1
 @q^15426^2:4:0
+@q^15494^2:4:0
 @q^15672^2:4:0
 @q^15694^2:4:0
 @q^15936^2:4:0
@@ -554,6 +596,7 @@ GoldScout-export 6^z5u7s4veikfh^8
 @q^249695^1:12:0
 @q^249696^1:12:0
 @q^249697^1:12:0
+@q^273007^3:4:0
 @q^273050^1:15:0
 @q^273125^2:15:1
 @q^273129^2:15:1

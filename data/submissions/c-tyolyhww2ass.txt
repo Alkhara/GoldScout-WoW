@@ -1,4 +1,4 @@
-GoldScout-export 6^tyolyhww2ass^54
+GoldScout-export 6^tyolyhww2ass^55
 92^3^0^39^40^1418^0.3737^0.7446^3^Rock Elemental^4627:3:3,4784:3:3,7067:1:1,7912:2:4^
 1151^5^0^35^36^1434^0.2901^0.2377^5^Saltwater Crocolisk^770:3:3,3667:2:2,12037:2:2^
 1525^1^0^5^5^1420^0.5207^0.4641^1^Rotting Dead^2589:1:1^
@@ -77,8 +77,14 @@ GoldScout-export 6^tyolyhww2ass^54
 3197^16^0^9^10^1411^0.5166^0.0899^16^Burning Blade Fanatic^117:3:3,159:1:1,727:1:1,1417:1:1,2589:7:11,3610:1:1,14098:1:1,14544:1:1,15005:1:1^
 3198^3^0^10^11^1411^0.5252^0.0801^3^Burning Blade Apprentice^118:1:1^
 3204^1^0^14^14^1411^0.5188^0.0961^1^Gazz'uz^4903:1:1^
-3244^13^0^11^12^1413^0.5276^0.2976^13^Greater Plainstrider^4775:2:2,5087:7:7,5114:3:3,5469:4:4,17056:7:7^
+3244^15^0^11^12^1413^0.5276^0.2987^15^Greater Plainstrider^4775:2:2,5087:7:7,5114:3:3,5469:6:6,17056:7:7^
 3254^1^0^13^13^1413^0.5288^0.3228^1^Sunscale Lashtail^5062:1:1^
+3255^1^0^13^15^1413^0.5832^0.3414^1^Sunscale Screecher^5062:1:1^
+3381^12^0^12^13^1413^0.6388^0.4616^12^Southsea Brigand^858:1:1,2589:4:6,5107:1:1,14099:1:1^
+3382^7^0^13^14^1413^0.6373^0.4646^7^Southsea Cannoneer^414:2:2,2589:3:8^
+3383^2^0^15^15^1413^0.6214^0.4456^2^Southsea Cutthroat^2778:1:1^
+3384^1^0^14^14^1413^0.6211^0.4409^1^Southsea Privateer^2589:1:2,211787:1:1^
+3467^1^0^16^16^1413^0.6400^0.4718^1^Baron Longshore^5084:1:1^
 3560^6^0^40^41^1418^0.4859^0.6977^6^Healing Ward^^
 3851^3^0^0^0^0^0.0000^0.0000^0^^2992:1:1^
 3853^3^0^0^0^0^0.0000^0.0000^0^^^
@@ -264,6 +270,7 @@ GoldScout-export 6^tyolyhww2ass^54
 @i^779^Shiny Seashell
 @i^818^Tigerseye
 @i^828^Small Blue Pouch
+@i^858^Lesser Healing Potion
 @i^878^Fist-sized Spinneret
 @i^929^Healing Potion
 @i^1015^Lean Wolf Flank
@@ -331,6 +338,7 @@ GoldScout-export 6^tyolyhww2ass^54
 @i^2675^Crawler Claw
 @i^2677^Boar Ribs
 @i^2777^Feeble Shortbow
+@i^2778^Cheap Blunderbuss
 @i^2782^Mishandled Recurve Bow
 @i^2786^Oiled Blunderbuss
 @i^2872^Vicious Night Web Spider Venom
@@ -434,7 +442,9 @@ GoldScout-export 6^tyolyhww2ass^54
 @i^4874^Clean Fishbones
 @i^4903^Eye of Burning Shadow
 @i^5062^Raptor Head
+@i^5084^Baron Longshore's Head
 @i^5087^Plainstrider Beak
+@i^5107^Deckhand's Shirt
 @i^5114^Severed Talon
 @i^5116^Long Tail Feather
 @i^5117^Vibrant Plume
@@ -547,6 +557,7 @@ GoldScout-export 6^tyolyhww2ass^54
 @i^13758^Raw Redgill
 @i^13759^Raw Nightfin Snapper
 @i^14098^Native Cloak
+@i^14099^Native Sash
 @i^14544^Lieutenant's Insignia
 @i^14965^High Chief's Bindings of the Defender
 @i^15005^Primal Bands
@@ -572,6 +583,7 @@ GoldScout-export 6^tyolyhww2ass^54
 @i^21150^Iron Bound Trunk
 @i^21151^Rumsey Rum Black Label
 @i^211269^Primitive Drawing
+@i^211787^Scroll: LOWER PING WHOMEVER
 @i^213526^Hybrid Haunch
 @i^213544^Scroll: TOPAZ YORAK
 @i^213545^Scroll: PEATCHY ATTAX
@@ -633,6 +645,7 @@ GoldScout-export 6^tyolyhww2ass^54
 @q^779^0:15:0
 @q^818^2:7:1
 @q^828^1:1:0
+@q^858^1:0:0
 @q^878^0:7:0
 @q^929^1:0:0
 @q^1015^1:7:1
@@ -700,6 +713,7 @@ GoldScout-export 6^tyolyhww2ass^54
 @q^2675^1:7:1
 @q^2677^1:7:1
 @q^2777^0:2:0
+@q^2778^0:2:0
 @q^2782^0:2:0
 @q^2786^0:2:0
 @q^2872^1:12:0
@@ -803,7 +817,9 @@ GoldScout-export 6^tyolyhww2ass^54
 @q^4874^0:15:0
 @q^4903^1:12:0
 @q^5062^1:12:0
+@q^5084^1:12:0
 @q^5087^1:12:0
+@q^5107^1:4:0
 @q^5114^0:15:0
 @q^5116^1:7:1
 @q^5117^1:12:0
@@ -916,6 +932,7 @@ GoldScout-export 6^tyolyhww2ass^54
 @q^13758^1:7:1
 @q^13759^1:7:1
 @q^14098^1:4:0
+@q^14099^1:4:0
 @q^14544^1:12:0
 @q^14965^2:4:0
 @q^15005^1:4:0
@@ -941,6 +958,7 @@ GoldScout-export 6^tyolyhww2ass^54
 @q^21150^1:15:0
 @q^21151^1:0:0
 @q^211269^1:12:0
+@q^211787^1:0:0
 @q^213526^1:12:0
 @q^213544^1:0:0
 @q^213545^1:0:0
@@ -3119,8 +3137,14 @@ GoldScout-export 6^tyolyhww2ass^54
 @a^3197^30:15,50:1
 @a^3198^30:3
 @a^3204^30:1
-@a^3244^110:6,130:7
+@a^3244^110:6,130:9
 @a^3254^130:1
+@a^3255^131:1
+@a^3381^172:2,192:10
+@a^3382^172:2,192:5
+@a^3383^172:1,192:1
+@a^3384^172:1
+@a^3467^192:1
 @a^3560^269:4,289:2
 @a^3984^126:1
 @a^3985^126:1
