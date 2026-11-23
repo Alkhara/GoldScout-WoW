@@ -1,4 +1,4 @@
-GoldScout-export 6^lt1x62n5va7r^13
+GoldScout-export 6^lt1x62n5va7r^14
 1548^1^0^7^8^1420^0.5486^0.6383^1^Cursed Darkhound^2672:1:1,3299:1:1^
 1769^1^0^10^11^1421^0.5181^0.4651^1^Moonrage Whitescalp^1495:1:1^
 1888^9^0^18^19^1421^0.6346^0.6028^9^Dalaran Watcher^414:1:1,2589:1:1,2592:1:2,4695:1:1,248685:1:1^
@@ -122,6 +122,9 @@ GoldScout-export 6^lt1x62n5va7r^13
 260800^2^0^0^0^0^0.0000^0.0000^0^^1697:1:1,271100:1:1^
 260801^3^0^0^0^0^0.0000^0.0000^0^^3180:1:1,3685:2:2,5635:1:1,271100:1:1^
 260804^1^0^0^0^0^0.0000^0.0000^0^^1074:1:1,3182:1:1^
+264079^1^0^27^28^1412^0.3391^0.1250^1^Gloomrise Hatchling^^
+264081^1^0^28^28^1412^0.3237^0.1196^1^Gloomrise Spinner^878:1:1,3182:1:1^
+264083^2^0^28^28^1412^0.3329^0.1261^2^Gloomrise Soldier^3167:1:1,3206:1:1,5465:1:1^
 274715^2^0^0^0^0^0.0000^0.0000^0^^1705:1:1,3667:1:1^
 @i^414^Dalaran Sharp
 @i^422^Dwarven Mild
@@ -185,10 +188,12 @@ GoldScout-export 6^lt1x62n5va7r^13
 @i^3010^Fine Sand
 @i^3012^Scroll of Agility
 @i^3078^Naga Heartpiercer
+@i^3167^Thick Spider Hair
 @i^3180^Flecked Raptor Scale
 @i^3181^Partially Digested Meat
 @i^3182^Spider's Silk
 @i^3195^Barbaric Battle Axe of Magic
+@i^3206^Cavalier Two-hander of the Bandit
 @i^3211^Burnished Bracers
 @i^3299^Fractured Canine
 @i^3301^Sharp Canine
@@ -228,6 +233,7 @@ GoldScout-export 6^lt1x62n5va7r^13
 @i^5254^Rugged Spaulders
 @i^5446^Broken Elemental Bracer
 @i^5448^Fractured Elemental Bracer
+@i^5465^Small Spider Leg
 @i^5481^Satyr Horns
 @i^5490^Wrathtail Head
 @i^5516^Threshadon Fang
@@ -375,10 +381,12 @@ GoldScout-export 6^lt1x62n5va7r^13
 @q^3010^0:15:0
 @q^3012^1:0:0
 @q^3078^3:2:0
+@q^3167^0:15:0
 @q^3180^0:15:0
 @q^3181^0:15:0
 @q^3182^1:7:1
 @q^3195^2:2:0
+@q^3206^2:2:0
 @q^3211^2:4:0
 @q^3299^0:15:0
 @q^3301^0:15:0
@@ -418,6 +426,7 @@ GoldScout-export 6^lt1x62n5va7r^13
 @q^5254^3:4:0
 @q^5446^0:15:0
 @q^5448^0:15:0
+@q^5465^1:7:1
 @q^5481^1:12:0
 @q^5490^1:12:0
 @q^5516^0:2:0
@@ -503,6 +512,7 @@ GoldScout-export 6^lt1x62n5va7r^13
 @q^273839^3:4:0
 @q^273842^3:4:0
 @q^273843^3:2:0
+@m^1412^Mulgore
 @m^1414^Kalimdor
 @m^1420^Tirisfal Glades
 @m^1421^Silverpine Forest
@@ -1123,4 +1133,7 @@ GoldScout-export 6^lt1x62n5va7r^13
 @a^12897^312:1
 @a^12918^251:1
 @a^12940^101:1
+@a^264079^46:1
+@a^264081^46:1
+@a^264083^46:2
 @l^0^enUS

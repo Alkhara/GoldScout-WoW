@@ -1,4 +1,4 @@
-GoldScout-export 6^gy33xe0xheep^11
+GoldScout-export 6^gy33xe0xheep^12
 1493^1^0^50^50^1434^0.2368^0.7170^1^Mok'rash^3985:1:1,7973:1:1^
 2505^5^0^49^50^1425^0.8038^0.5602^5^Saltwater Snapjaw^3712:1:1,4555:2:2,4556:2:2,7973:4:4^
 2640^1^0^46^46^1425^0.6583^0.7002^1^Vilebranch Witch Doctor^9259:1:1^
@@ -90,6 +90,11 @@ GoldScout-export 6^gy33xe0xheep^11
 7153^5^0^48^49^1448^0.4696^0.8805^5^Deadwood Warrior^1645:1:1,4021:1:1,4338:1:1,4602:1:1^
 7154^5^0^48^49^1448^0.4766^0.9151^5^Deadwood Gardener^4338:3:4,4602:1:1^
 7155^6^0^49^50^1448^0.4806^0.9142^6^Deadwood Pathfinder^4004:1:1,4338:2:4,4602:1:1^
+7440^5^0^55^56^1452^0.4014^0.4307^5^Winterfall Den Watcher^8953:1:1,14047:3:5^
+7441^6^0^54^55^1452^0.3762^0.4149^6^Winterfall Totemic^12820:1:1,20742:1:1^
+7442^13^0^53^54^1452^0.3779^0.4099^13^Winterfall Pathfinder^8953:1:1,12771:1:1,12820:2:2,14047:2:2^
+7450^1^0^54^54^1452^0.4758^0.4258^1^Ragged Owlbeast^15420:1:1^
+7524^1^0^55^55^1452^0.5429^0.3975^1^Anguished Highborne^^
 7768^4^0^25^25^1425^0.3509^0.6315^4^Witherbark Bloodling^^
 7864^1^0^48^50^1447^0.3845^0.5628^1^Lingering Highborne^^
 7977^1^0^48^48^1425^0.8147^0.5359^1^Gammerita^19023:1:1^
@@ -116,7 +121,7 @@ GoldScout-export 6^gy33xe0xheep^11
 9879^1^0^53^54^1448^0.4095^0.3884^1^Entropic Horror^4787:1:1,7068:1:1^
 10802^1^0^51^51^1425^0.5732^0.8633^1^Hitah'ya the Keeper^19064:1:1^
 11516^2^0^53^54^1448^0.6509^0.0700^2^Timbermaw Warder^14047:1:2^
-11552^1^0^53^53^1450^0.3471^0.7087^1^Timbermaw Mystic^14047:1:1^
+11552^2^0^53^53^1450^0.3489^0.7099^2^Timbermaw Mystic^13822:1:1,14047:1:1^
 11686^2^0^40^41^1414^0.3829^0.5803^2^Ghostly Raider^4338:1:1^
 11778^1^0^42^42^1414^0.3845^0.5716^1^Shadowshard Smasher^4784:1:1,8150:1:1^
 11783^9^0^0^0^0^0.0000^0.0000^0^^4552:3:3,4784:5:5,7912:2:3,8150:4:4,15635:1:1^
@@ -243,6 +248,7 @@ GoldScout-export 6^gy33xe0xheep^11
 @i^8766^Morning Glory Dew
 @i^8948^Dried King Bolete
 @i^8952^Roasted Quail
+@i^8953^Deep Fried Plantains
 @i^8959^Raw Spinefin Halibut
 @i^9241^Sacred Mallet
 @i^9259^Troll Tribal Necklace
@@ -281,12 +287,16 @@ GoldScout-export 6^gy33xe0xheep^11
 @i^12205^White Spider Meat
 @i^12207^Giant Egg
 @i^12208^Tender Wolf Meat
+@i^12771^Empty Firewater Flask
+@i^12820^Winterfall Firewater
 @i^13443^Superior Mana Potion
 @i^13815^Some Rune
+@i^13822^Spiked Dagger
 @i^14047^Runecloth
 @i^14271^Gaea's Circlet of the Eagle
 @i^14833^Tyrant's Gauntlets
 @i^15227^Diamond-Tip Bludgeon of the Bandit
+@i^15420^Ironfeather
 @i^15635^Formidable Gauntlets of the Bandit
 @i^15757^Pattern: Wicked Leather Pants
 @i^15879^Overlord Ror's Claw
@@ -316,6 +326,7 @@ GoldScout-export 6^gy33xe0xheep^11
 @i^20608^Green Voodoo Feather
 @i^20613^Rotting Wood
 @i^20614^Bloodvenom Essence
+@i^20742^Winterfall Ritual Totem
 @i^20763^Broken Weapon
 @i^20767^Scum Covered Bag
 @i^20770^Bubbling Green Ichor
@@ -422,6 +433,7 @@ GoldScout-export 6^gy33xe0xheep^11
 @q^8766^1:0:0
 @q^8948^1:0:0
 @q^8952^1:0:0
+@q^8953^1:0:0
 @q^8959^1:7:1
 @q^9241^1:12:0
 @q^9259^1:15:0
@@ -460,12 +472,16 @@ GoldScout-export 6^gy33xe0xheep^11
 @q^12205^1:7:1
 @q^12207^1:7:1
 @q^12208^1:7:1
+@q^12771^1:12:0
+@q^12820^1:0:0
 @q^13443^1:0:0
 @q^13815^1:12:0
+@q^13822^0:2:0
 @q^14047^1:7:1
 @q^14271^2:4:0
 @q^14833^2:4:0
 @q^15227^2:2:0
+@q^15420^1:7:1
 @q^15635^2:4:0
 @q^15757^2:9:0
 @q^15879^1:12:0
@@ -495,6 +511,7 @@ GoldScout-export 6^gy33xe0xheep^11
 @q^20608^1:15:0
 @q^20613^1:15:0
 @q^20614^1:15:0
+@q^20742^1:15:0
 @q^20763^0:15:0
 @q^20767^1:15:0
 @q^20770^0:15:0
@@ -522,6 +539,7 @@ GoldScout-export 6^gy33xe0xheep^11
 @m^1448^Felwood
 @m^1449^Un'Goro Crater
 @m^1450^Moonglade
+@m^1452^Winterspring
 @c^2568^
 @c^2569^
 @c^2570^
@@ -1060,6 +1078,11 @@ GoldScout-export 6^gy33xe0xheep^11
 @a^7153^349:5
 @a^7154^349:1,369:4
 @a^7155^349:2,369:4
+@a^7440^167:1,168:4
+@a^7441^146:2,167:3,168:1
+@a^7442^146:5,167:1,168:7
+@a^7450^169:1
+@a^7524^150:1
 @a^7768^246:2,247:2
 @a^7864^227:1
 @a^7977^216:1
@@ -1077,7 +1100,7 @@ GoldScout-export 6^gy33xe0xheep^11
 @a^9879^148:1
 @a^10802^351:1
 @a^11516^33:2
-@a^11552^286:1
+@a^11552^286:1,287:1
 @a^11686^227:2
 @a^11778^227:1
 @a^12240^227:1
