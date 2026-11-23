@@ -1,4 +1,4 @@
-GoldScout-export 6^kel324rn8xd0^18
+GoldScout-export 6^kel324rn8xd0^19
 199^1^0^10^11^1436^0.6179^0.2886^1^Young Fleshripper^6889:1:1,7097:1:1,17056:1:1^
 428^8^0^18^19^1433^0.5213^0.7638^8^Dire Condor^1080:1:1,1464:1:1,4775:2:2,5115:2:2,6889:2:2,17056:2:2,250188:1:1^
 833^34^0^11^12^1436^0.6007^0.3223^34^Coyote Packleader^2673:10:10,2698:1:1,3299:9:9,3300:7:7,9765:1:1,211787:1:1^
@@ -9,6 +9,8 @@ GoldScout-export 6^kel324rn8xd0^18
 2251^1^0^33^34^1416^0.3753^0.6699^1^Giant Yeti^^
 2266^1^0^24^24^1424^0.3254^0.3625^1^Hillsbrad Farmer^^
 2268^1^0^25^26^1424^0.3006^0.4266^1^Hillsbrad Footman^^
+2269^5^0^26^27^1424^0.2996^0.5412^5^Hillsbrad Miner^422:1:1,2592:2:2^
+2270^2^0^28^28^1424^0.2771^0.5932^2^Hillsbrad Sentry^2592:1:1,3872:1:1^
 2271^9^0^31^32^1416^0.1914^0.8078^9^Dalaran Shield Guard^1708:1:1,3714:1:1^
 2272^5^0^32^33^1416^0.2258^0.7132^5^Dalaran Theurgist^3714:2:2,4306:1:2^
 2349^1^0^24^24^1421^0.6858^0.5074^1^Giant Moss Creeper^4428:1:1^
@@ -21,7 +23,9 @@ GoldScout-export 6^kel324rn8xd0^18
 2414^1^0^33^33^1416^0.1689^0.8861^1^Kegan Darkmar^3688:1:1^
 2415^1^0^33^33^1416^0.1656^0.8992^1^Warden Belamoore^3711:1:1^
 2449^1^0^25^25^1424^0.3254^0.3625^1^Citizen Wilkes^^
+2450^1^0^29^29^1424^0.3086^0.5384^1^Miner Hackett^1785:1:1^
 2451^1^0^25^25^1424^0.3583^0.4635^1^Farmer Kalaba^1485:1:1^
+2503^5^0^27^28^1424^0.2947^0.5510^5^Hillsbrad Foreman^2592:1:2,4306:2:2^
 2623^11^0^32^33^1416^0.2402^0.6578^11^Spirit of Old^^
 3100^4^0^8^9^1411^0.5532^0.1362^4^Elder Mottled Boar^769:3:3,3171:1:1^
 3108^3^0^9^10^1411^0.5799^0.1307^3^Encrusted Surf Crawler^4675:1:1,4873:1:1,4874:1:1^
@@ -144,6 +148,7 @@ GoldScout-export 6^kel324rn8xd0^18
 271732^1^0^0^0^0^0.0000^0.0000^0^^271100:1:1^
 274715^1^0^0^0^0^0.0000^0.0000^0^^770:1:1,3667:1:1^
 275046^1^0^0^0^0^0.0000^0.0000^0^^284844:1:1^
+@i^422^Dwarven Mild
 @i^729^Stringy Vulture Meat
 @i^769^Chunk of Boar Meat
 @i^770^Pointy Crocolisk Tooth
@@ -167,6 +172,7 @@ GoldScout-export 6^kel324rn8xd0^18
 @i^1758^Reinforced Chain Gloves
 @i^1759^Reinforced Chain Pants
 @i^1780^Cross-stitched Sandals
+@i^1785^Cross-stitched Shoulderpads
 @i^1808^Tough Leather Pants
 @i^1819^Gouging Pick
 @i^1825^Bulky Bludgeon
@@ -207,6 +213,7 @@ GoldScout-export 6^kel324rn8xd0^18
 @i^3787^Stone Club
 @i^3799^Interlaced Vest
 @i^3827^Mana Potion
+@i^3872^Plans: Golden Scale Leggings
 @i^4093^Large Basilisk Tail
 @i^4306^Silk Cloth
 @i^4428^Spider Palp
@@ -337,6 +344,7 @@ GoldScout-export 6^kel324rn8xd0^18
 @i^279186^Stormheart's Still-beating Heart
 @i^284844^Dragonmaw Dispatch
 @i^286987^Violet Sorcerer's Sandals
+@q^422^1:0:0
 @q^729^1:7:1
 @q^769^1:7:1
 @q^770^0:15:0
@@ -360,6 +368,7 @@ GoldScout-export 6^kel324rn8xd0^18
 @q^1758^0:4:0
 @q^1759^0:4:0
 @q^1780^0:4:0
+@q^1785^0:4:0
 @q^1808^0:4:0
 @q^1819^0:2:0
 @q^1825^0:2:0
@@ -400,6 +409,7 @@ GoldScout-export 6^kel324rn8xd0^18
 @q^3787^0:2:0
 @q^3799^0:4:0
 @q^3827^1:0:0
+@q^3872^2:9:0
 @q^4093^0:15:0
 @q^4306^1:7:1
 @q^4428^0:15:0
@@ -1242,6 +1252,8 @@ GoldScout-export 6^kel324rn8xd0^18
 @a^2251^267:1
 @a^2266^146:1
 @a^2268^166:1
+@a^2269^205:1,206:2,225:2
+@a^2270^225:2
 @a^2271^204:2,343:5,344:1,363:1
 @a^2272^224:1,225:1,244:1,343:2
 @a^2349^213:1
@@ -1254,7 +1266,9 @@ GoldScout-export 6^kel324rn8xd0^18
 @a^2414^343:1
 @a^2415^343:1
 @a^2449^146:1
+@a^2450^206:1
 @a^2451^187:1
+@a^2503^205:1,206:1,225:3
 @a^2623^224:1,225:2,244:6,343:1,344:1
 @a^3100^50:2,51:1,71:1
 @a^3108^51:3

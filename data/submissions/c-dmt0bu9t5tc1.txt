@@ -1,4 +1,4 @@
-GoldScout-export 6^dmt0bu9t5tc1^7
+GoldScout-export 6^dmt0bu9t5tc1^8
 345^1^0^24^24^1433^0.1482^0.4876^1^Bellygrub^723:1:1,3172:1:1,3631:1:1^
 423^1^0^15^15^1433^0.2644^0.7927^1^Redridge Mongrel^858:1:1,1212:1:1^
 424^2^0^16^17^1433^0.2644^0.7923^2^Redridge Poacher^2592:1:1^
@@ -20,6 +20,7 @@ GoldScout-export 6^dmt0bu9t5tc1^7
 780^3^0^39^40^1434^0.4477^0.3975^3^Skullsplitter Mystic^1520:1:1,4306:1:1,213127:1:1^
 782^1^0^42^42^1434^0.4540^0.3860^1^Skullsplitter Scout^^
 871^1^0^36^36^1434^0.2468^0.2305^1^Saltscale Warrior^5785:1:1,17057:1:1,17058:1:1^
+1120^1^0^8^8^1426^0.7021^0.3929^1^Frostmane Troll^^
 1151^1^0^35^35^1434^0.2200^0.1928^1^Saltwater Crocolisk^770:1:1,12037:1:1^
 1162^1^0^12^12^1432^0.2904^0.5946^1^Stonesplinter Scout^2589:1:2^
 1163^5^0^13^14^1432^0.4857^0.2398^5^Stonesplinter Skullthumper^2589:2:5,211780:1:1^
@@ -124,6 +125,7 @@ GoldScout-export 6^dmt0bu9t5tc1^7
 @i^3782^Large War Club
 @i^3820^Stranglekelp
 @i^3872^Plans: Golden Scale Leggings
+@i^3928^Superior Healing Potion
 @i^4306^Silk Cloth
 @i^4542^Moist Cornbread
 @i^4555^Thick Scaly Tail
@@ -158,6 +160,9 @@ GoldScout-export 6^dmt0bu9t5tc1^7
 @i^9825^Durable Pants of the Whale
 @i^12037^Mystery Meat
 @i^13422^Stonescale Eel
+@i^13758^Raw Redgill
+@i^13759^Raw Nightfin Snapper
+@i^13885^34 Pound Redgill
 @i^14162^Pagan Mitts of the Sorcerer
 @i^14371^Mystic's Robe
 @i^14567^Bristlebark Belt
@@ -180,6 +185,7 @@ GoldScout-export 6^dmt0bu9t5tc1^7
 @i^20709^Rumsey Rum Light
 @i^21150^Iron Bound Trunk
 @i^21151^Rumsey Rum Black Label
+@i^21228^Mithril Bound Trunk
 @i^211780^Scroll: KWYJIBO
 @i^211784^Scroll: WUBBA WUBBA
 @i^211855^Scroll: STHENIC LUNATE
@@ -253,6 +259,7 @@ GoldScout-export 6^dmt0bu9t5tc1^7
 @q^3782^0:2:0
 @q^3820^1:7:1
 @q^3872^2:9:0
+@q^3928^1:0:0
 @q^4306^1:7:1
 @q^4542^1:0:0
 @q^4555^0:15:0
@@ -287,6 +294,9 @@ GoldScout-export 6^dmt0bu9t5tc1^7
 @q^9825^2:4:0
 @q^12037^1:7:1
 @q^13422^1:7:1
+@q^13758^1:7:1
+@q^13759^1:7:1
+@q^13885^1:15:0
 @q^14162^2:4:0
 @q^14371^2:4:0
 @q^14567^2:4:0
@@ -309,6 +319,7 @@ GoldScout-export 6^dmt0bu9t5tc1^7
 @q^20709^1:0:0
 @q^21150^1:15:0
 @q^21151^1:0:0
+@q^21228^1:15:0
 @q^211780^1:0:0
 @q^211784^1:0:0
 @q^211855^1:0:0
@@ -322,12 +333,14 @@ GoldScout-export 6^dmt0bu9t5tc1^7
 @q^273846^3:4:0
 @q^277957^1:12:0
 @m^1414^Kalimdor
+@m^1426^Dun Morogh
 @m^1432^Loch Modan
 @m^1433^Redridge Mountains
 @m^1434^Stranglethorn Vale
 @m^1439^Darkshore
 @m^1440^Ashenvale
 @m^1443^Desolace
+@m^1444^Feralas
 @c^118^
 @c^724^
 @c^733^
@@ -1859,6 +1872,7 @@ GoldScout-export 6^dmt0bu9t5tc1^7
 @a^780^148:2,149:1
 @a^782^149:1
 @a^871^84:1
+@a^1120^154:1
 @a^1151^64:1
 @a^1162^225:1
 @a^1163^89:4,109:1
@@ -1879,4 +1893,5 @@ GoldScout-export 6^dmt0bu9t5tc1^7
 @f^1434^0^101^235^3820:7:15,4603:9:9,6355:1:1,6357:1:1,6358:13:14,6359:17:17,6362:27:28,8365:1:1,13422:2:5,19807:31:31,21150:10:12,21151:2:2^43:5,44:3,64:37,84:16,85:9,104:31
 @f^1439^0^25^248^3820:2:5,6358:21:25,20708:2:2,20709:1:2^247:4,267:5,287:5,326:11
 @f^1440^0^97^252^6307:1:1,6352:2:2,6358:22:22,6359:7:7,6361:65:65^62:97
+@f^1444^0^227^264^3820:5:9,3928:1:1,6358:37:42,6359:3:4,8365:28:29,13422:7:22,13758:127:143,13759:83:90,13885:1:1,21151:1:2,21228:4:5^148:10,168:13,212:204
 @l^0^enUS

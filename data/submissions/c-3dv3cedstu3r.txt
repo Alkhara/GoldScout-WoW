@@ -1,4 +1,4 @@
-GoldScout-export 6^3dv3cedstu3r^6
+GoldScout-export 6^3dv3cedstu3r^7
 92^3^0^39^40^1418^0.4041^0.7864^3^Rock Elemental^4552:1:1,4553:1:1,4627:3:3,4784:2:2,8150:1:1^
 588^1^0^35^35^1434^0.2310^0.1360^1^Bloodscalp Scout^^
 701^1^0^34^34^1434^0.2299^0.1263^1^Bloodscalp Mystic^^
@@ -40,6 +40,8 @@ GoldScout-export 6^3dv3cedstu3r^6
 2919^1^0^45^45^1418^0.2617^0.4574^1^Fam'retor Guardian^4552:1:1,4784:1:1,4847:1:1,8150:1:1^
 3560^7^0^40^41^1418^0.5027^0.6947^7^Healing Ward^^
 250187^3^0^0^0^0^0.0000^0.0000^0^^4078:1:1,5567:1:1,262889:1:1^
+255898^7^0^38^39^2548^0.7450^0.6635^7^Murloc Oracle^3928:1:1,5524:3:3^
+256801^6^0^40^41^2548^0.7548^0.6880^6^Murloc Warrior^3801:1:1,4603:1:2,5524:1:1^
 258792^5^0^0^0^0^0.0000^0.0000^0^^1465:1:1,3787:1:1,3792:1:1,4607:1:1,15214:1:1,248692:1:1^
 258797^6^0^0^0^0^0.0000^0.0000^0^^3806:1:1,4306:2:4,4607:1:1,7435:1:1,248692:1:1^
 258799^8^0^0^0^0^0.0000^0.0000^0^^3780:1:1,3810:1:1,3864:1:1,4065:1:1,6417:1:1,9896:1:1^
@@ -59,6 +61,7 @@ GoldScout-export 6^3dv3cedstu3r^6
 263196^1^0^0^0^0^0.0000^0.0000^0^^4306:1:2,287003:1:1^
 263886^1^0^0^0^0^0.0000^0.0000^0^^274615:1:1^
 263899^2^0^0^0^0^0.0000^0.0000^0^^248709:1:1^
+272313^1^0^39^39^2548^0.7877^0.5861^1^Brineshell Clacker^^
 @i^864^Knightly Longsword of Defense
 @i^1464^Buzzard Talon
 @i^1465^Tigerbane
@@ -79,10 +82,12 @@ GoldScout-export 6^3dv3cedstu3r^6
 @i^3787^Stone Club
 @i^3792^Interlaced Belt
 @i^3796^Interlaced Gloves
+@i^3801^Hardened Leather Boots
 @i^3806^Hardened Leather Shoulderpads
 @i^3807^Hardened Leather Tunic
 @i^3810^Double Mail Bracers
 @i^3864^Citrine
+@i^3928^Superior Healing Potion
 @i^4065^Combat Shield
 @i^4078^Chief Brigadier Coif
 @i^4306^Silk Cloth
@@ -95,6 +100,7 @@ GoldScout-export 6^3dv3cedstu3r^6
 @i^4554^Shiny Polished Stone
 @i^4582^Soft Bushy Tail
 @i^4583^Thick Furry Mane
+@i^4603^Raw Spotted Yellowtail
 @i^4607^Delicious Cave Mold
 @i^4626^Small Stone Shard
 @i^4627^Large Stone Slab
@@ -137,10 +143,12 @@ GoldScout-export 6^3dv3cedstu3r^6
 @i^12037^Mystery Meat
 @i^12202^Tiger Meat
 @i^12203^Red Wolf Meat
+@i^13422^Stonescale Eel
 @i^15214^Nobles Brand of the Monkey
 @i^15244^Razor Blade of Healing
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
+@i^21228^Mithril Bound Trunk
 @i^211269^Primitive Drawing
 @i^248692^Waylaid Crate: Expert Ore
 @i^248693^Waylaid Crate: Expert Textiles
@@ -181,10 +189,12 @@ GoldScout-export 6^3dv3cedstu3r^6
 @q^3787^0:2:0
 @q^3792^0:4:0
 @q^3796^0:4:0
+@q^3801^0:4:0
 @q^3806^0:4:0
 @q^3807^0:4:0
 @q^3810^0:4:0
 @q^3864^2:7:1
+@q^3928^1:0:0
 @q^4065^2:4:0
 @q^4078^2:4:0
 @q^4306^1:7:1
@@ -197,6 +207,7 @@ GoldScout-export 6^3dv3cedstu3r^6
 @q^4554^0:15:0
 @q^4582^1:12:0
 @q^4583^0:15:0
+@q^4603^1:7:1
 @q^4607^1:0:0
 @q^4626^1:12:0
 @q^4627^1:12:0
@@ -239,10 +250,12 @@ GoldScout-export 6^3dv3cedstu3r^6
 @q^12037^1:7:1
 @q^12202^1:7:1
 @q^12203^1:7:1
+@q^13422^1:7:1
 @q^15214^2:2:0
 @q^15244^2:2:0
 @q^17057^1:15:0
 @q^17058^1:15:0
+@q^21228^1:15:0
 @q^211269^1:12:0
 @q^248692^1:0:1
 @q^248693^1:0:1
@@ -267,6 +280,7 @@ GoldScout-export 6^3dv3cedstu3r^6
 @m^1417^Arathi Highlands
 @m^1418^Badlands
 @m^1434^Stranglethorn Vale
+@m^2548^Riverglades
 @c^118^
 @c^724^
 @c^733^
@@ -763,6 +777,10 @@ GoldScout-export 6^3dv3cedstu3r^6
 @a^2907^225:1
 @a^2919^185:1
 @a^3560^269:2,270:2,290:3
+@a^255898^254:3,274:2,295:2
+@a^256801^254:1,274:2,295:3
 @a^262397^104:18
+@a^272313^235:1
 @f^1417^0^6^155^6358:4:4,6359:1:1,6362:1:1^326:5,345:1
+@f^2548^0^5^178^6359:3:3,13422:1:2,21228:1:1^215:1,295:4
 @l^0^enUS
