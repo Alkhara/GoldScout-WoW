@@ -1,10 +1,15 @@
-GoldScout-export 6^4zc54zdarxsl^8
+GoldScout-export 6^4zc54zdarxsl^9
 92^8^0^39^40^1418^0.3968^0.7672^8^Rock Elemental^4552:2:2,4553:1:1,4784:3:3,7848:4:4,7912:1:1^
 682^2^0^32^33^1434^0.4667^0.1626^2^Stranglethorn Tiger^^
 685^10^0^33^34^1434^0.2709^0.1608^10^Stranglethorn Raptor^3685:3:3,4461:5:5,4586:2:2,12184:8:8^
 686^2^0^35^36^1434^0.3810^0.2259^2^Lashtail Raptor^4461:1:1^
 689^22^0^34^35^1434^0.4797^0.0804^22^Crystal Spine Basilisk^1701:9:9,1702:2:2,1703:2:2,3918:10:10,4093:3:3,8146:1:1,11386:1:1^
 701^1^0^35^35^1434^0.2390^0.1325^1^Bloodscalp Mystic^3771:1:1,4306:1:2^
+705^10^0^1^1^1426^0.3023^0.7415^10^Ragged Young Wolf^750:8:8,1380:1:1,2211:1:1,4865:6:6,7073:1:1,7074:4:4^
+706^7^0^3^4^1426^0.2103^0.7572^7^Frostmane Troll Whelp^117:1:1,1364:1:1,1376:1:1,1377:1:1^
+707^3^0^1^2^1426^0.2334^0.7407^3^Rockjaw Trogg^117:1:1,1366:1:1,2211:1:1^
+708^7^0^3^3^1426^0.2503^0.6987^7^Small Crag Boar^2649:1:1,2656:1:1,4865:3:3,7098:4:4^
+724^5^0^2^2^1426^0.2733^0.7230^5^Burly Rockjaw Trogg^159:1:1,2589:1:1,2656:1:1^
 755^5^0^34^35^1435^0.4702^0.3145^5^Lost One Mudlurker^4306:3:7,274045:2:2^
 757^4^0^35^36^1435^0.4929^0.3176^4^Lost One Fisherman^4306:2:5,274045:1:1^
 759^2^0^36^37^1435^0.5502^0.3001^2^Lost One Hunter^4306:1:2,274045:2:2^
@@ -90,13 +95,20 @@ GoldScout-export 6^4zc54zdarxsl^8
 10757^1^0^27^27^1441^0.3666^0.3913^1^Boiling Elemental^^
 216474^1^0^40^40^1441^0.3655^0.3883^1^Ravaging Tempest^212792:1:1^
 268624^1^0^18^18^1413^0.4764^0.5293^1^Razormane Raider^2592:1:1^
+@i^117^Tough Jerky
 @i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
+@i^750^Tough Wolf Meat
 @i^774^Malachite
 @i^818^Tigerseye
 @i^864^Knightly Longsword of the Owl
 @i^1179^Ice Cold Milk
 @i^1181^Scroll of Spirit
+@i^1364^Ragged Leather Vest
+@i^1366^Ragged Leather Pants
+@i^1376^Frayed Cloak
+@i^1377^Frayed Gloves
+@i^1380^Frayed Robe
 @i^1412^Crude Bastard Sword
 @i^1413^Feeble Sword
 @i^1417^Beaten Battle Axe
@@ -116,11 +128,14 @@ GoldScout-export 6^4zc54zdarxsl^8
 @i^1790^Patched Cloak
 @i^1815^Ornamental Mace
 @i^2070^Darnassian Bleu
+@i^2211^Bent Large Shield
 @i^2213^Worn Large Shield
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2635^Loose Chain Belt
 @i^2644^Loose Chain Cloak
+@i^2649^Flimsy Chain Belt
+@i^2656^Flimsy Chain Vest
 @i^2725^Green Hills of Stranglethorn - Page 1
 @i^2740^Green Hills of Stranglethorn - Page 16
 @i^3301^Sharp Canine
@@ -152,6 +167,7 @@ GoldScout-export 6^4zc54zdarxsl^8
 @i^4784^Lifeless Stone
 @i^4814^Discolored Fang
 @i^4860^Glistening Frenzy Scale
+@i^4865^Ruined Pelt
 @i^4870^Canvas Scraps
 @i^4882^Benedict's Key
 @i^5011^Welken Ring
@@ -168,6 +184,9 @@ GoldScout-export 6^4zc54zdarxsl^8
 @i^6358^Oily Blackmouth
 @i^6361^Raw Rainbow Fin Albacore
 @i^6444^Forked Tongue
+@i^7073^Broken Fang
+@i^7074^Chipped Claw
+@i^7098^Splintered Tusk
 @i^7457^Knight's Gauntlets of the Boar
 @i^7710^Loksey's Training Stick
 @i^7711^Robe of Doan
@@ -205,13 +224,20 @@ GoldScout-export 6^4zc54zdarxsl^8
 @i^248692^Waylaid Crate: Expert Ore
 @i^274045^Twisted Earth Totem
 @i^278515^Mus'hale's Stolen Supplies
+@q^117^1:0:0
 @q^118^1:0:0
 @q^159^1:0:0
+@q^750^1:12:0
 @q^774^2:7:1
 @q^818^2:7:1
 @q^864^2:2:0
 @q^1179^1:0:0
 @q^1181^1:0:0
+@q^1364^0:4:0
+@q^1366^0:4:0
+@q^1376^0:4:0
+@q^1377^0:4:0
+@q^1380^0:4:0
 @q^1412^0:2:0
 @q^1413^0:2:0
 @q^1417^0:2:0
@@ -231,11 +257,14 @@ GoldScout-export 6^4zc54zdarxsl^8
 @q^1790^0:4:0
 @q^1815^0:2:0
 @q^2070^1:0:0
+@q^2211^0:4:0
 @q^2213^0:4:0
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2635^0:4:0
 @q^2644^0:4:0
+@q^2649^0:4:0
+@q^2656^0:4:0
 @q^2725^1:12:0
 @q^2740^1:12:0
 @q^3301^0:15:0
@@ -267,6 +296,7 @@ GoldScout-export 6^4zc54zdarxsl^8
 @q^4784^0:15:0
 @q^4814^0:15:0
 @q^4860^0:15:0
+@q^4865^0:15:0
 @q^4870^1:12:0
 @q^4882^1:13:0
 @q^5011^2:4:0
@@ -283,6 +313,9 @@ GoldScout-export 6^4zc54zdarxsl^8
 @q^6358^1:7:1
 @q^6361^1:7:1
 @q^6444^0:15:0
+@q^7073^0:15:0
+@q^7074^0:15:0
+@q^7098^0:15:0
 @q^7457^2:4:0
 @q^7710^3:2:0
 @q^7711^2:4:0
@@ -326,6 +359,7 @@ GoldScout-export 6^4zc54zdarxsl^8
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
 @m^1418^Badlands
+@m^1426^Dun Morogh
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
 @m^1441^Thousand Needles
@@ -974,6 +1008,11 @@ GoldScout-export 6^4zc54zdarxsl^8
 @a^686^87:2
 @a^689^29:18,49:4
 @a^701^44:1
+@a^705^285:2,286:8
+@a^706^304:7
+@a^707^284:3
+@a^708^265:4,284:1,285:2
+@a^724^285:5
 @a^755^109:1,110:1,128:1,129:1,148:1
 @a^757^128:1,129:1,130:2
 @a^759^111:1,130:1

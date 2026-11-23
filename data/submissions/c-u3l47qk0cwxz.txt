@@ -1,4 +1,4 @@
-GoldScout-export 6^u3l47qk0cwxz^29
+GoldScout-export 6^u3l47qk0cwxz^31
 36^38^0^11^12^1436^0.4876^0.3328^38^Harvest Golem^727:1:1,732:20:20,814:15:15,818:1:1,1274:13:13,1503:1:1,1511:1:1,1512:1:1,1735:1:1,2777:1:1,3375:1:1,4361:2:2,4363:3:3,255007:11:11^
 114^81^0^14^15^1436^0.4502^0.3525^81^Harvest Watcher^732:27:27,814:34:34,818:1:1,1274:26:26,1505:1:1,1507:1:1,1512:1:1,2214:1:1,2632:1:1,2778:1:1,2970:1:1,4359:4:4,4361:5:5,4363:2:2,6379:1:1,6542:1:1,6555:2:2,9764:1:1,211785:1:1,248684:1:1,255007:25:25^
 587^25^21^33^34^1434^0.2965^0.1946^25^Bloodscalp Warrior^1519:5:5,1520:2:2,2730:1:1,2734:1:1,2750:1:1,3771:1:1,3778:1:1,3901:1:1,3915:7:7,4306:7:9,4338:1:1^4544:1:1,5427:2:2,16883:2:2
@@ -54,8 +54,11 @@ GoldScout-export 6^u3l47qk0cwxz^29
 2415^2^0^33^33^1416^0.1645^0.8939^2^Warden Belamoore^1707:1:1,3711:2:2^
 2635^1^0^38^38^1434^0.2495^0.1962^1^Elder Saltwater Crocolisk^770:1:1,3667:1:1,12037:1:1^
 2667^1^0^37^37^1434^0.3702^0.3196^1^Ward of Laze^^
+3098^10^0^1^2^1411^0.4289^0.6443^10^Mottled Boar^117:2:2,828:1:1,1374:1:1,4865:5:5,7098:4:4^
 3099^21^0^6^7^1411^0.5263^0.5586^21^Dire Mottled Boar^769:21:21,771:3:3,3171:1:1,8182:1:1,211780:1:1^
 3100^20^0^8^9^1411^0.4546^0.1759^20^Elder Mottled Boar^769:15:15,771:4:4,3171:6:6^
+3124^1^0^3^3^1411^0.4480^0.7063^1^Scorpid Worker^4862:1:1,7101:1:1^
+3281^1^0^4^4^1411^0.4055^0.6591^1^Sarkoth^4905:1:1,7100:1:1^
 3560^1^0^37^37^1434^0.2053^0.1563^1^Healing Ward^^
 3566^1^0^9^9^1412^0.3660^0.2669^1^Flatland Prowler^^
 3713^2^0^18^19^1440^0.1435^0.2425^2^Wrathtail Wave Rider^5523:2:2,16649:1:1^
@@ -214,6 +217,7 @@ GoldScout-export 6^u3l47qk0cwxz^29
 269134^11^0^0^0^0^0.0000^0.0000^0^^929:1:1,1808:1:1,2592:1:1,6388:1:1,6601:1:1,15284:1:1^
 269175^6^0^36^38^1434^0.3382^0.2930^6^Carnivorous Weed^256037:3:3^
 270094^1^0^30^30^1441^0.5584^0.5538^1^Stormheart^5133:1:1^
+@i^117^Tough Jerky
 @i^727^Notched Shortsword of the Falcon
 @i^729^Stringy Vulture Meat
 @i^732^Okra
@@ -222,6 +226,7 @@ GoldScout-export 6^u3l47qk0cwxz^29
 @i^771^Chipped Boar Tusk
 @i^814^Flask of Oil
 @i^818^Tigerseye
+@i^828^Small Blue Pouch
 @i^865^Leaden Mace of Shadow Protection
 @i^929^Healing Potion
 @i^1081^Crisp Spider Meat
@@ -229,6 +234,7 @@ GoldScout-export 6^u3l47qk0cwxz^29
 @i^1206^Moss Agate
 @i^1274^Hops
 @i^1288^Large Venom Sac
+@i^1374^Frayed Shoes
 @i^1503^Warped Leather Boots
 @i^1505^Warped Cloak
 @i^1507^Warped Leather Pants
@@ -353,6 +359,9 @@ GoldScout-export 6^u3l47qk0cwxz^29
 @i^4636^Strong Iron Lockbox
 @i^4705^Lambent Scale Pauldrons
 @i^4784^Lifeless Stone
+@i^4862^Scorpid Worker Tail
+@i^4865^Ruined Pelt
+@i^4905^Sarkoth's Mangled Claw
 @i^5009^Mindbender Loop
 @i^5079^Cold Basilisk Eye
 @i^5113^Mark of the Syndicate
@@ -415,6 +424,9 @@ GoldScout-export 6^u3l47qk0cwxz^29
 @i^6695^Stygian Bone Amulet
 @i^6893^Workshop Key
 @i^6986^Crimson Lotus
+@i^7098^Splintered Tusk
+@i^7100^Sticky Ichor
+@i^7101^Bug Eye
 @i^7354^Elder's Boots of the Sorcerer
 @i^7406^Infiltrator Cord of Spirit
 @i^7409^Infiltrator Boots of the Elder
@@ -550,6 +562,7 @@ GoldScout-export 6^u3l47qk0cwxz^29
 @i^276160^Mana Fragment
 @i^276894^Ancient Gurubashi Idol
 @i^287000^Skin-Flayed Footguards
+@q^117^1:0:0
 @q^727^2:2:0
 @q^729^1:7:1
 @q^732^1:12:0
@@ -558,6 +571,7 @@ GoldScout-export 6^u3l47qk0cwxz^29
 @q^771^0:15:0
 @q^814^1:7:1
 @q^818^2:7:1
+@q^828^1:1:0
 @q^865^2:2:0
 @q^929^1:0:0
 @q^1081^1:7:1
@@ -565,6 +579,7 @@ GoldScout-export 6^u3l47qk0cwxz^29
 @q^1206^2:7:1
 @q^1274^1:12:0
 @q^1288^1:7:1
+@q^1374^0:4:0
 @q^1503^0:4:0
 @q^1505^0:4:0
 @q^1507^0:4:0
@@ -689,6 +704,9 @@ GoldScout-export 6^u3l47qk0cwxz^29
 @q^4636^2:15:0
 @q^4705^2:4:0
 @q^4784^0:15:0
+@q^4862^1:12:0
+@q^4865^0:15:0
+@q^4905^1:12:0
 @q^5009^2:4:0
 @q^5079^2:4:0
 @q^5113^0:15:0
@@ -751,6 +769,9 @@ GoldScout-export 6^u3l47qk0cwxz^29
 @q^6695^3:4:0
 @q^6893^1:13:0
 @q^6986^0:15:0
+@q^7098^0:15:0
+@q^7100^0:15:0
+@q^7101^0:15:0
 @q^7354^2:4:0
 @q^7406^2:4:0
 @q^7409^2:4:0
@@ -1737,8 +1758,11 @@ GoldScout-export 6^u3l47qk0cwxz^29
 @a^2415^343:2
 @a^2635^64:1
 @a^2667^127:1
+@a^3098^248:8,268:2
 @a^3099^190:8,210:2,230:5,250:1,270:3,290:1,291:1
 @a^3100^48:2,49:1,68:8,69:5,89:4
+@a^3124^288:1
+@a^3281^268:1
 @a^3560^64:1
 @a^3566^107:1
 @a^3713^83:1,102:1

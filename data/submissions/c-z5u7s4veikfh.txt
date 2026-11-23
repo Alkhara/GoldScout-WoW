@@ -1,4 +1,4 @@
-GoldScout-export 6^z5u7s4veikfh^5
+GoldScout-export 6^z5u7s4veikfh^6
 1853^1^0^0^0^0^0.0000^0.0000^0^^12843:1:1,14514:1:1,16731:1:1,22433:1:1^
 3100^2^0^8^9^1411^0.4437^0.1921^2^Elder Mottled Boar^769:2:2,771:1:1^
 10381^6^0^0^0^0^0.0000^0.0000^0^^6530:2:2,8297:1:1,10204:1:1,14047:1:4,15276:1:1^
@@ -76,6 +76,11 @@ GoldScout-export 6^z5u7s4veikfh^5
 11551^1^0^0^0^0^0.0000^0.0000^0^^4585:1:1,248699:1:1^
 11582^1^0^0^0^0^0.0000^0.0000^0^^^
 11622^1^0^0^0^0^0.0000^0.0000^0^^14537:1:1^
+11735^3^0^54^55^1451^0.6468^0.4076^3^Stonelash Scorpid^12037:2:2,19934:1:1^
+11736^23^0^56^56^1451^0.5375^0.6020^23^Stonelash Pincer^12037:12:12,19933:7:7,19934:7:7,22381:14:14^
+11738^2^0^56^56^1451^0.6691^0.3857^2^Sand Skitterer^4585:1:1,12205:2:2,14227:1:1,22381:1:1^
+11741^3^0^57^58^1451^0.5377^0.6233^3^Dredge Crusher^3669:2:2,3676:1:1,20424:2:2^
+11746^1^0^56^58^1451^0.5463^0.5863^1^Desert Rumbler^^
 247195^1^0^0^0^0^0.0000^0.0000^0^^249697:1:1,280063:1:1^
 247198^1^0^0^0^0^0.0000^0.0000^0^^249696:1:1,280059:1:1^
 247206^1^0^0^0^0^0.0000^0.0000^0^^280057:1:1^
@@ -97,6 +102,8 @@ GoldScout-export 6^z5u7s4veikfh^5
 272307^1^0^55^55^1447^0.4233^0.4271^1^Legashi Satyr^^
 @i^769^Chunk of Boar Meat
 @i^771^Chipped Boar Tusk
+@i^3669^Gelatinous Goo
+@i^3676^Slimy Ichor
 @i^3973^Smooth Leather Gloves
 @i^3975^Smooth Leather Shoulderpads
 @i^3976^Smooth Leather Armor
@@ -134,6 +141,8 @@ GoldScout-export 6^z5u7s4veikfh^5
 @i^10260^Adventurer's Gloves of the Tiger
 @i^10285^Shadow Silk
 @i^11420^Elegant Writing Tool
+@i^12037^Mystery Meat
+@i^12205^White Spider Meat
 @i^12382^Key to the City
 @i^12662^Demonic Rune
 @i^12735^Frayed Abomination Stitching
@@ -162,6 +171,7 @@ GoldScout-export 6^z5u7s4veikfh^5
 @i^13825^Primed Musket
 @i^13967^Windreaver Greaves
 @i^14047^Runecloth
+@i^14227^Ironweb Spider Silk
 @i^14340^Freezing Lich Robes
 @i^14514^Pattern: Robe of the Void
 @i^14537^Corpselight Greaves
@@ -191,7 +201,11 @@ GoldScout-export 6^z5u7s4veikfh^5
 @i^18730^Shadowy Laced Handwraps
 @i^18734^Pale Moon Cloak
 @i^18740^Thuzadin Sash
+@i^19933^Glowing Scorpid Blood
+@i^19934^Large Scorpid Claw
+@i^20424^Sandworm Meat
 @i^20520^Dark Rune
+@i^22381^Silithus Venom Sample
 @i^22407^Helm of the New Moon
 @i^22412^Thuzadin Mantle
 @i^22433^Don Mauricio's Band of Domination
@@ -222,6 +236,8 @@ GoldScout-export 6^z5u7s4veikfh^5
 @i^280083^Truesight Rifle
 @q^769^1:7:1
 @q^771^0:15:0
+@q^3669^0:15:0
+@q^3676^0:15:0
 @q^3973^0:4:0
 @q^3975^0:4:0
 @q^3976^0:4:0
@@ -259,6 +275,8 @@ GoldScout-export 6^z5u7s4veikfh^5
 @q^10260^2:4:0
 @q^10285^1:7:1
 @q^11420^0:15:0
+@q^12037^1:7:1
+@q^12205^1:7:1
 @q^12382^2:13:0
 @q^12662^2:7:1
 @q^12735^2:12:0
@@ -287,6 +305,7 @@ GoldScout-export 6^z5u7s4veikfh^5
 @q^13825^0:2:0
 @q^13967^3:4:0
 @q^14047^1:7:1
+@q^14227^1:7:1
 @q^14340^3:4:0
 @q^14514^4:9:0
 @q^14537^3:4:0
@@ -316,7 +335,11 @@ GoldScout-export 6^z5u7s4veikfh^5
 @q^18730^3:4:0
 @q^18734^3:4:0
 @q^18740^3:4:0
+@q^19933^1:15:0
+@q^19934^0:15:0
+@q^20424^1:7:1
 @q^20520^2:7:1
+@q^22381^1:12:0
 @q^22407^3:4:0
 @q^22412^3:4:0
 @q^22433^3:4:0
@@ -347,6 +370,7 @@ GoldScout-export 6^z5u7s4veikfh^5
 @q^280083^3:2:0
 @m^1411^Durotar
 @m^1447^Azshara
+@m^1451^Silithus
 @c^724^
 @c^733^
 @c^787^
@@ -1912,6 +1936,11 @@ GoldScout-export 6^z5u7s4veikfh^5
 @c^285278^
 @c^286152^
 @a^3100^68:1,88:1
+@a^11735^153:1,172:1,173:1
+@a^11736^229:3,230:7,231:2,249:1,250:4,251:6
+@a^11738^133:1,172:1
+@a^11741^250:2,251:1
+@a^11746^230:1
 @a^250023^86:1,127:2
 @a^250027^107:1
 @a^255394^107:1

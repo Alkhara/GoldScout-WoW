@@ -1,4 +1,4 @@
-GoldScout-export 6^luf980s3kmb8^10
+GoldScout-export 6^luf980s3kmb8^12
 6^10^0^1^2^1429^0.4823^0.3648^10^Kobold Vermin^159:2:2,755:2:2,2211:1:1,2589:3:3,2649:1:1,4536:1:1,247834:1:1,247839:2:2^
 38^20^0^3^4^1429^0.5384^0.4767^20^Defias Thug^752:12:12,1374:1:1,1378:1:1,2070:4:4,2211:2:2,2589:6:6,2649:1:1,2651:1:1,2654:1:1,2656:1:1^
 40^22^0^6^7^1429^0.4303^0.7543^22^Kobold Miner^118:2:2,159:1:1,772:5:5,773:3:3,1389:2:2,1414:1:1,1418:1:1,1433:1:1,2138:1:1,2589:3:6,2644:1:1,4536:1:1,248001:3:3^
@@ -24,6 +24,12 @@ GoldScout-export 6^luf980s3kmb8^10
 822^5^0^8^9^1429^0.8020^0.6731^5^Young Forest Bear^3169:1:1,3170:1:1,7073:2:2,7074:3:3,211780:1:1^
 880^1^0^8^8^1429^0.7090^0.8041^1^Erlan Drudgemoor^1019:1:1,2589:1:2^
 1922^6^0^7^8^1429^0.6653^0.6298^6^Gray Forest Wolf^2672:3:3,3299:1:1,3300:1:1^
+4844^1^0^35^35^1418^0.3462^0.1496^1^Shadowforge Surveyor^^
+4845^1^0^37^37^1418^0.3542^0.1568^1^Shadowforge Ruffian^8009:1:1^
+4846^1^0^36^36^1418^0.3588^0.1354^1^Shadowforge Digger^7666:1:1^
+4851^5^0^0^0^0^0.0000^0.0000^0^^3385:1:1,3814:1:1,4306:3:10^
+4852^4^0^0^0^0^0.0000^0.0000^0^^3809:1:1,4306:2:5^
+6910^1^0^0^0^0^0.0000^0.0000^0^^9387:1:1,9904:1:1^
 248278^1^0^11^11^1429^0.7684^0.8579^1^Croaky^247826:1:1^
 248362^1^0^3^3^1429^0.4926^0.2795^1^Shinyfinder Narf^755:1:1,1364:1:1,247886:1:1^
 248463^2^0^7^7^1429^0.6061^0.4983^2^Rumbler^^
@@ -149,11 +155,14 @@ GoldScout-export 6^luf980s3kmb8^10
 @i^3300^Rabbit's Foot
 @i^3365^Frayed Bracers
 @i^3370^Patchwork Belt
+@i^3385^Lesser Mana Potion
 @i^3402^Soft Patch of Fur
 @i^3671^Lifeless Skull
 @i^3778^Taut Compound Bow
 @i^3781^Broad Claymore
 @i^3802^Hardened Leather Bracers
+@i^3809^Double Mail Boots
+@i^3814^Double Mail Shoulderpads
 @i^3928^Superior Healing Potion
 @i^3937^Crochet Boots
 @i^3940^Crochet Gloves
@@ -191,13 +200,17 @@ GoldScout-export 6^luf980s3kmb8^10
 @i^7074^Chipped Claw
 @i^7434^Twilight Boots of the Sorcerer
 @i^7525^Gossamer Bracers of the Whale
+@i^7666^Shattered Necklace
 @i^7973^Big-mouth Clam
+@i^8009^Dentrium Power Stone
 @i^8146^Wicked Claw
 @i^8177^Practice Sword
 @i^8194^Goblin Nutcracker of the Prophet
 @i^8386^Pattern: Big Voodoo Robe
 @i^9355^Hoop Earring
+@i^9387^Revelosh's Boots of Agility
 @i^9901^Jazeraint Belt of the Bear
+@i^9904^Jazeraint Pauldrons of the Eagle
 @i^9926^Brigade Boots of Frost Protection
 @i^9936^Abjurer's Boots of Spirit
 @i^9972^Embossed Plate Bracers of Defense
@@ -305,11 +318,14 @@ GoldScout-export 6^luf980s3kmb8^10
 @q^3300^0:15:0
 @q^3365^0:4:0
 @q^3370^0:4:0
+@q^3385^1:0:0
 @q^3402^0:15:0
 @q^3671^0:15:0
 @q^3778^0:2:0
 @q^3781^0:2:0
 @q^3802^0:4:0
+@q^3809^0:4:0
+@q^3814^0:4:0
 @q^3928^1:0:0
 @q^3937^0:4:0
 @q^3940^0:4:0
@@ -347,13 +363,17 @@ GoldScout-export 6^luf980s3kmb8^10
 @q^7074^0:15:0
 @q^7434^2:4:0
 @q^7525^2:4:0
+@q^7666^2:12:0
 @q^7973^1:7:0
+@q^8009^1:12:0
 @q^8146^1:7:1
 @q^8177^1:2:0
 @q^8194^2:2:0
 @q^8386^2:9:0
 @q^9355^0:15:0
+@q^9387^3:4:0
 @q^9901^2:4:0
+@q^9904^2:4:0
 @q^9926^2:4:0
 @q^9936^2:4:0
 @q^9972^2:4:0
@@ -406,6 +426,7 @@ GoldScout-export 6^luf980s3kmb8^10
 @q^287012^3:4:0
 @q^287016^3:4:0
 @m^1415^Eastern Kingdoms
+@m^1418^Badlands
 @m^1429^Elwynn Forest
 @m^2548^Riverglades
 @c^118^
@@ -1746,6 +1767,9 @@ GoldScout-export 6^luf980s3kmb8^10
 @a^822^236:2,255:1,315:1,316:1
 @a^880^334:1
 @a^1922^232:1,253:4,274:1
+@a^4844^46:1
+@a^4845^67:1
+@a^4846^47:1
 @a^248278^355:1
 @a^248362^109:1
 @a^248463^192:2

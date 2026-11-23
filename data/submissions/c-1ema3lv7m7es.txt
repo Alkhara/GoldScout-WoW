@@ -1,4 +1,4 @@
-GoldScout-export 6^1ema3lv7m7es^13
+GoldScout-export 6^1ema3lv7m7es^14
 205^17^0^28^29^1431^0.6391^0.5525^17^Nightbane Dark Runner^1759:1:1,2222:1:1,3770:1:1,5003:1:1,5635:1:1,6591:1:1^
 206^14^0^29^30^1431^0.6785^0.7075^14^Nightbane Vile Fang^929:1:1,1784:1:1,2290:1:1,3770:1:1^
 210^4^0^26^27^1431^0.2468^0.3093^4^Bone Chewer^887:1:1,6530:2:2^
@@ -26,7 +26,8 @@ GoldScout-export 6^1ema3lv7m7es^13
 948^2^0^25^26^1431^0.2384^0.3409^2^Rotted One^2592:2:3,7307:1:1^
 949^1^0^25^26^1431^0.2028^0.4258^1^Carrion Recluse^2251:1:1,3174:1:1^
 1251^3^0^28^29^1431^0.3680^0.8050^3^Splinter Fist Firemonger^^
-1417^5^0^21^22^1437^0.0780^0.5021^5^Young Wetlands Crocolisk^770:2:2,3397:3:3,3667:4:4^
+1417^11^0^21^22^1437^0.0789^0.4942^11^Young Wetlands Crocolisk^770:4:4,3397:6:6,3667:7:7^
+1418^23^0^28^29^1437^0.1065^0.6889^23^Bluegill Raider^730:13:13,1205:1:1,1468:6:6,1759:1:1,2290:1:1,2702:4:4,3385:1:1,5524:8:8,17057:7:7,17058:9:9^
 1487^1^0^30^31^1431^0.3516^0.8104^1^Splinter Fist Enslaver^^
 2462^2^0^25^25^1431^0.2503^0.3383^2^Flesh Eating Worm^^
 3240^4^0^18^19^1413^0.5217^0.5424^4^Stormsnout^5125:1:1,5470:3:3^
@@ -39,12 +40,14 @@ GoldScout-export 6^1ema3lv7m7es^13
 272260^1^0^24^24^1431^0.3268^0.4352^1^Lost Stalker^275895:1:1^
 272273^1^0^24^24^1431^0.6275^0.6549^1^Lost Watcher^281142:1:1^
 272291^1^0^25^25^1431^0.1992^0.3347^1^Lost Knight^275895:1:1^
+@i^730^Murloc Eye
 @i^770^Pointy Crocolisk Tooth
 @i^884^Ghoul Rib
 @i^887^Pound of Flesh
 @i^929^Healing Potion
 @i^1015^Lean Wolf Flank
 @i^1205^Melon Juice
+@i^1468^Murloc Fin
 @i^1705^Lesser Moonstone
 @i^1712^Scroll of Spirit II
 @i^1759^Reinforced Chain Pants
@@ -57,6 +60,7 @@ GoldScout-export 6^1ema3lv7m7es^13
 @i^2290^Scroll of Intellect II
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2702^Lightforge Ingot
 @i^3012^Scroll of Agility
 @i^3174^Spider Ichor
 @i^3385^Lesser Mana Potion
@@ -70,6 +74,7 @@ GoldScout-export 6^1ema3lv7m7es^13
 @i^5003^Crystal Starfire Medallion
 @i^5125^Charged Scale
 @i^5470^Thunder Lizard Tail
+@i^5524^Thick-shelled Clam
 @i^5529^Tomb Dust
 @i^5635^Sharp Claw
 @i^6289^Raw Longjaw Mud Snapper
@@ -82,17 +87,21 @@ GoldScout-export 6^1ema3lv7m7es^13
 @i^8365^Raw Mithril Head Trout
 @i^9810^Fortified Boots of Arcane Protection
 @i^14172^Buccaneer's Robes of Frost Protection
+@i^17057^Shiny Fish Scales
+@i^17058^Fish Oil
 @i^248688^Waylaid Crate: Journeyman Textiles
 @i^251524^Whimsyfin
 @i^271872^Broken Staff of Incinerator Gar'im
 @i^275895^Fading Echo
 @i^281142^Merrick's Bow
+@q^730^1:7:1
 @q^770^0:15:0
 @q^884^1:12:0
 @q^887^0:15:0
 @q^929^1:0:0
 @q^1015^1:7:1
 @q^1205^1:0:0
+@q^1468^1:7:1
 @q^1705^2:7:1
 @q^1712^1:0:0
 @q^1759^0:4:0
@@ -105,6 +114,7 @@ GoldScout-export 6^1ema3lv7m7es^13
 @q^2290^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2702^1:12:0
 @q^3012^1:0:0
 @q^3174^1:7:1
 @q^3385^1:0:0
@@ -118,6 +128,7 @@ GoldScout-export 6^1ema3lv7m7es^13
 @q^5003^2:4:0
 @q^5125^0:15:0
 @q^5470^1:7:1
+@q^5524^1:7:0
 @q^5529^0:15:0
 @q^5635^1:7:1
 @q^6289^1:7:1
@@ -130,6 +141,8 @@ GoldScout-export 6^1ema3lv7m7es^13
 @q^8365^1:7:1
 @q^9810^2:4:0
 @q^14172^2:4:0
+@q^17057^1:15:0
+@q^17058^1:15:0
 @q^248688^1:0:1
 @q^251524^1:7:1
 @q^271872^1:12:0
@@ -887,7 +900,8 @@ GoldScout-export 6^1ema3lv7m7es^13
 @a^948^124:1,125:1
 @a^949^164:1
 @a^1251^307:1,327:2
-@a^1417^181:2,201:3
+@a^1417^181:5,182:1,201:5
+@a^1418^242:1,261:4,262:7,281:5,282:6
 @a^1487^327:1
 @a^2462^125:2
 @a^3240^210:4
