@@ -1,7 +1,11 @@
-GoldScout-export 6^j5imdw0805s9^2
-1529^1^0^9^9^1420^0.7497^0.6173^1^Bleeding Horror^^
-1532^1^0^11^11^1420^0.7547^0.6148^1^Wandering Spirit^^
+GoldScout-export 6^j5imdw0805s9^3
+1529^2^0^9^10^1420^0.7583^0.6095^2^Bleeding Horror^^
+1532^2^0^10^11^1420^0.7527^0.6136^2^Wandering Spirit^^
+1537^8^0^8^9^1420^0.8022^0.5552^8^Scarlet Zealot^828:1:1,1427:1:1,2070:2:2,2589:2:4,2875:4:4^
+1538^5^0^9^10^1420^0.7954^0.5609^5^Scarlet Friar^2589:1:1,2875:4:4^
 1548^1^0^8^8^1420^0.7440^0.6466^1^Cursed Darkhound^2672:1:1^
+1555^9^0^9^10^1420^0.8433^0.5383^9^Vicious Night Web Spider^1475:1:1,1476:6:6,2872:4:4,3190:1:1,15925:1:1^
+1664^3^0^11^11^1420^0.7920^0.5600^3^Captain Vachon^2875:2:2^
 2266^2^0^23^23^1424^0.3332^0.3594^2^Hillsbrad Farmer^1485:1:1,2592:1:2^
 2267^1^0^25^25^1424^0.3007^0.4204^1^Hillsbrad Peasant^2592:1:2^
 2268^6^0^25^26^1424^0.3107^0.4172^6^Hillsbrad Footman^422:2:2,2589:1:1,2592:2:3^
@@ -44,8 +48,12 @@ GoldScout-export 6^j5imdw0805s9^2
 @i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
 @i^422^Dwarven Mild
+@i^828^Small Blue Pouch
 @i^954^Scroll of Strength
 @i^1411^Withered Staff
+@i^1427^Patchwork Shoes
+@i^1475^Small Venom Sac
+@i^1476^Snapped Spider Limb
 @i^1485^Pitchfork
 @i^1499^Calico Pants
 @i^1503^Warped Leather Boots
@@ -55,12 +63,16 @@ GoldScout-export 6^j5imdw0805s9^2
 @i^1808^Tough Leather Pants
 @i^1810^Tough Leather Armor
 @i^1818^Standard Claymore
+@i^2070^Darnassian Bleu
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2672^Stringy Wolf Meat
 @i^2786^Oiled Blunderbuss
 @i^2819^Cross Dagger of the Sorcerer
 @i^2838^Heavy Stone
+@i^2872^Vicious Night Web Spider Venom
+@i^2875^Scarlet Insignia Ring
+@i^3190^Beatstick
 @i^3381^Cross-stitched Bracers
 @i^3688^Bloodstone Oval
 @i^3689^Bloodstone Marble
@@ -85,6 +97,7 @@ GoldScout-export 6^j5imdw0805s9^2
 @i^8150^Deeprock Salt
 @i^9798^Ivycloth Robe of Intellect
 @i^13048^Looming Gavel
+@i^15925^Journeyman's Stave
 @i^211787^Scroll: LOWER PING WHOMEVER
 @i^211854^Scroll: OMIT KESA
 @i^251961^Arcane Mote
@@ -106,8 +119,12 @@ GoldScout-export 6^j5imdw0805s9^2
 @q^118^1:0:0
 @q^159^1:0:0
 @q^422^1:0:0
+@q^828^1:1:0
 @q^954^1:0:0
 @q^1411^0:2:0
+@q^1427^0:4:0
+@q^1475^1:7:1
+@q^1476^0:15:0
 @q^1485^0:2:0
 @q^1499^0:4:0
 @q^1503^0:4:0
@@ -117,12 +134,16 @@ GoldScout-export 6^j5imdw0805s9^2
 @q^1808^0:4:0
 @q^1810^0:4:0
 @q^1818^0:2:0
+@q^2070^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2672^1:7:1
 @q^2786^0:2:0
 @q^2819^2:2:0
 @q^2838^1:7:1
+@q^2872^1:12:0
+@q^2875^1:12:0
+@q^3190^1:2:0
 @q^3381^0:4:0
 @q^3688^1:12:0
 @q^3689^1:12:0
@@ -147,6 +168,7 @@ GoldScout-export 6^j5imdw0805s9^2
 @q^8150^1:7:1
 @q^9798^2:4:0
 @q^13048^3:2:0
+@q^15925^2:4:0
 @q^211787^1:0:0
 @q^211854^1:0:0
 @q^251961^1:12:0
@@ -1036,9 +1058,13 @@ GoldScout-export 6^j5imdw0805s9^2
 @c^279985^
 @c^279987^
 @c^279990^
-@a^1529^254:1
-@a^1532^255:1
+@a^1529^254:1,255:1
+@a^1532^255:2
+@a^1537^216:2,235:4,236:2
+@a^1538^235:5
 @a^1548^254:1
+@a^1555^216:5,217:3,236:1
+@a^1664^235:3
 @a^2266^146:2
 @a^2267^166:1
 @a^2268^146:1,165:1,166:4

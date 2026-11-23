@@ -1,4 +1,4 @@
-GoldScout-export 5^objzat4bh15h^11
+GoldScout-export 6^objzat4bh15h^12
 587^1^0^33^33^1434^0.3305^0.1594^1^Bloodscalp Warrior^^
 588^9^0^34^35^1434^0.2500^0.1190^9^Bloodscalp Scout^2735:1:1,3793:1:1,3795:1:1,3799:1:1,3915:2:2,4306:3:6^
 595^6^0^34^35^1434^0.2600^0.1221^6^Bloodscalp Hunter^2735:1:1,3805:1:1,3901:1:1,3915:2:2,4306:2:4^
@@ -37,6 +37,13 @@ GoldScout-export 5^objzat4bh15h^11
 2387^2^0^25^26^1424^0.2968^0.4218^2^Hillsbrad Councilman^2592:1:2^
 2406^2^0^32^33^1416^0.3008^0.7479^2^Mountain Lion^1686:1:1,3731:1:1^
 2411^1^0^33^33^1416^0.1958^0.8987^1^Ricter^4306:1:1^
+2561^25^0^36^37^1417^0.5268^0.6615^25^Highland Fleshstalker^1696:6:6,3685:15:15,4052:1:1,4461:10:10,4513:12:12,4586:2:2,5637:2:2,12184:7:7^
+2565^1^0^35^36^1417^0.5259^0.6698^1^Giant Plains Creeper^1074:1:1,2251:1:1^
+2566^9^0^35^36^1417^0.5212^0.7460^9^Boulderfist Brute^2592:1:3,3816:1:1^
+2567^4^0^36^37^1417^0.5168^0.7607^4^Boulderfist Magus^4338:1:1^
+2595^12^0^38^39^1417^0.2292^0.8558^12^Daggerspine Raider^7072:12:12,17057:3:3,17058:2:2,213546:1:1^
+2596^4^0^39^40^1417^0.2209^0.8595^4^Daggerspine Sorceress^6362:1:1,7072:1:1,17057:2:2^
+2762^1^0^38^39^1417^0.5052^0.5121^1^Thundering Exile^4480:1:1^
 2955^10^0^1^2^1412^0.4724^0.7935^10^Plainstrider^1369:1:1,1378:1:1,4739:6:6,4740:6:6,4757:6:6,7096:4:4,7097:1:1^
 4420^1^0^0^0^0^0.0000^0.0000^0^^^
 4421^1^0^0^0^0^0.0000^0.0000^0^^^
@@ -78,6 +85,7 @@ GoldScout-export 5^objzat4bh15h^11
 7800^1^0^0^0^0^0.0000^0.0000^0^^^
 @i^785^Mageroyal
 @i^929^Healing Potion
+@i^1074^Hard Spider Leg Tip
 @i^1369^Ragged Leather Belt
 @i^1378^Frayed Pants
 @i^1478^Scroll of Protection II
@@ -101,6 +109,7 @@ GoldScout-export 5^objzat4bh15h^11
 @i^1827^Meat Cleaver
 @i^1831^Oaken War Staff
 @i^1988^Chief Brigadier Gauntlets
+@i^2251^Gooey Spider Leg
 @i^2592^Wool Cloth
 @i^2677^Boar Ribs
 @i^2735^Green Hills of Stranglethorn - Page 11
@@ -126,13 +135,17 @@ GoldScout-export 5^objzat4bh15h^11
 @i^3801^Hardened Leather Boots
 @i^3805^Hardened Leather Pants
 @i^3807^Hardened Leather Tunic
+@i^3816^Reflective Heater
 @i^3901^Bloodscalp Tusk
 @i^3915^Bloody Bone Necklace
 @i^3918^Singing Crystal Shard
+@i^4052^Insignia Cap
 @i^4093^Large Basilisk Tail
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4461^Raptor Hide
+@i^4480^Thundering Charm
+@i^4513^Raptor Heart
 @i^4542^Moist Cornbread
 @i^4586^Smooth Raptor Skin
 @i^4739^Plainstrider Meat
@@ -140,6 +153,8 @@ GoldScout-export 5^objzat4bh15h^11
 @i^4757^Cracked Egg Shells
 @i^5113^Mark of the Syndicate
 @i^5637^Large Fang
+@i^6362^Raw Rockscale Cod
+@i^7072^Naga Scale
 @i^7096^Plucked Feather
 @i^7097^Leg Meat
 @i^8146^Wicked Claw
@@ -151,10 +166,14 @@ GoldScout-export 5^objzat4bh15h^11
 @i^11407^Torn Bear Pelt
 @i^12184^Raptor Flesh
 @i^12202^Tiger Meat
+@i^17057^Shiny Fish Scales
+@i^17058^Fish Oil
+@i^213546^Scroll: SHOOBEEDOOP
 @i^248688^Waylaid Crate: Journeyman Textiles
 @i^277957^Primitive Key
 @q^785^1:7:1
 @q^929^1:0:0
+@q^1074^0:15:0
 @q^1369^0:4:0
 @q^1378^0:4:0
 @q^1478^1:0:0
@@ -178,6 +197,7 @@ GoldScout-export 5^objzat4bh15h^11
 @q^1827^0:2:0
 @q^1831^0:2:0
 @q^1988^2:4:0
+@q^2251^1:7:1
 @q^2592^1:7:1
 @q^2677^1:7:1
 @q^2735^1:12:0
@@ -203,13 +223,17 @@ GoldScout-export 5^objzat4bh15h^11
 @q^3801^0:4:0
 @q^3805^0:4:0
 @q^3807^0:4:0
+@q^3816^0:4:0
 @q^3901^1:12:0
 @q^3915^1:12:0
 @q^3918^1:12:0
+@q^4052^2:4:0
 @q^4093^0:15:0
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4461^1:7:1
+@q^4480^1:0:0
+@q^4513^1:12:0
 @q^4542^1:0:0
 @q^4586^0:15:0
 @q^4739^1:12:0
@@ -217,6 +241,8 @@ GoldScout-export 5^objzat4bh15h^11
 @q^4757^0:15:0
 @q^5113^0:15:0
 @q^5637^1:7:1
+@q^6362^1:7:1
+@q^7072^1:7:1
 @q^7096^0:15:0
 @q^7097^1:0:0
 @q^8146^1:7:1
@@ -228,11 +254,15 @@ GoldScout-export 5^objzat4bh15h^11
 @q^11407^1:12:0
 @q^12184^1:7:1
 @q^12202^1:7:1
+@q^17057^1:15:0
+@q^17058^1:15:0
+@q^213546^1:0:0
 @q^248688^1:0:1
 @q^277957^1:12:0
 @m^1412^Mulgore
 @m^1413^The Barrens
 @m^1416^Alterac Mountains
+@m^1417^Arathi Highlands
 @m^1424^Hillsbrad Foothills
 @m^1434^Stranglethorn Vale
 @a^587^66:1
@@ -273,6 +303,13 @@ GoldScout-export 5^objzat4bh15h^11
 @a^2387^165:2
 @a^2406^265:1,306:1
 @a^2411^343:1
+@a^2561^250:8,269:1,270:13,271:3
+@a^2565^270:1
+@a^2566^290:4,291:1,309:1,310:3
+@a^2567^290:2,310:2
+@a^2595^324:5,344:7
+@a^2596^324:2,344:2
+@a^2762^210:1
 @a^2955^309:9,329:1
 @a^6132^368:1
 @l^0^enUS
