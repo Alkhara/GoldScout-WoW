@@ -1,10 +1,16 @@
-GoldScout-export 6^aes0sk2o8ooi^20
+GoldScout-export 6^aes0sk2o8ooi^21
+1783^1^0^51^51^1422^0.3819^0.5457^1^Skeletal Flayer^^
+1784^1^0^51^52^1422^0.3819^0.5457^1^Skeletal Sorcerer^^
+1785^3^0^52^54^1422^0.4785^0.5059^3^Skeletal Terror^12840:1:1,14047:1:1^
+1791^2^0^50^51^1422^0.3819^0.5457^2^Slavering Ghoul^4425:1:1,6530:1:1^
 2648^6^0^50^51^1425^0.5546^0.8480^6^Vilebranch Aman'zasi Guard^1520:2:2,4338:1:1,9259:4:4^
 2937^1^0^43^43^1445^0.6043^0.1042^1^Dagun the Ravenous^4641:1:1^
 4196^10^0^49^50^1446^0.3592^0.4497^10^Silithid Swarm^^
 4360^9^0^37^38^1445^0.5924^0.1024^9^Mirefin Warrior^2289:1:1,6362:1:2,17057:3:3,17058:2:2^
 4363^34^0^37^38^1445^0.5962^0.0953^34^Mirefin Oracle^4639:1:1,5785:4:4,6362:3:6,14233:1:1,17057:6:6,17058:3:3,248693:1:1^
 4392^2^0^39^40^1445^0.5386^0.5799^2^Corrosive Swamp Ooze^280203:1:1^
+4474^2^0^54^54^1422^0.4797^0.5058^2^Rotting Cadaver^3946:1:1,12840:1:1,14047:2:3^
+4475^1^0^53^53^1422^0.4797^0.5058^1^Blighted Zombie^^
 5226^4^0^0^0^0^0.0000^0.0000^0^^6826:3:3,11318:1:1,248699:1:1^
 5228^3^0^0^0^0^0.0000^0.0000^0^^3676:1:1,11318:3:3,20763:1:1^
 5232^10^0^42^43^1444^0.6360^0.5009^10^Gordunni Brute^3928:2:2,4306:3:5^
@@ -174,6 +180,8 @@ GoldScout-export 6^aes0sk2o8ooi^20
 9938^1^0^0^0^0^0.0000^0.0000^0^^11935:1:1^
 9956^1^0^0^0^0^0.0000^0.0000^0^^11885:1:1,14047:1:2^
 10043^1^0^0^0^0^0.0000^0.0000^0^^14047:1:2^
+10925^8^0^50^50^1422^0.4793^0.5059^8^Rotting Worm^^
+14711^1^0^57^57^1423^0.0428^0.3391^1^Plague Eater^^
 222233^1^0^43^43^1444^0.7493^0.2495^1^Ohk'zi^254692:1:1^
 222525^1^0^0^0^0^0.0000^0.0000^0^^11468:1:1^
 255262^3^0^0^0^0^0.0000^0.0000^0^^15980:1:1^
@@ -213,6 +221,7 @@ GoldScout-export 6^aes0sk2o8ooi^20
 @i^3928^Superior Healing Potion
 @i^3938^Crochet Bracers
 @i^3939^Crochet Cloak
+@i^3946^Twill Bracers
 @i^3967^Thick Leather Shoulderpads
 @i^3971^Smooth Leather Bracers
 @i^3975^Smooth Leather Shoulderpads
@@ -233,6 +242,7 @@ GoldScout-export 6^aes0sk2o8ooi^20
 @i^4338^Mageweave Cloth
 @i^4421^Scroll of Protection III
 @i^4422^Scroll of Stamina III
+@i^4425^Scroll of Agility III
 @i^4552^Smooth Stone Chip
 @i^4554^Shiny Polished Stone
 @i^4558^Empty Barrel
@@ -262,6 +272,7 @@ GoldScout-export 6^aes0sk2o8ooi^20
 @i^6300^Husk Fragment
 @i^6302^Delicate Insect Wing
 @i^6362^Raw Rockscale Cod
+@i^6530^Nightcrawlers
 @i^6826^Brilliant Scale
 @i^7068^Elemental Fire
 @i^7070^Elemental Water
@@ -375,6 +386,7 @@ GoldScout-export 6^aes0sk2o8ooi^20
 @i^12771^Empty Firewater Flask
 @i^12803^Living Essence
 @i^12820^Winterfall Firewater
+@i^12840^Minion's Scourgestone
 @i^13446^Major Healing Potion
 @i^13820^Clout Mace
 @i^14047^Runecloth
@@ -458,6 +470,7 @@ GoldScout-export 6^aes0sk2o8ooi^20
 @q^3928^1:0:0
 @q^3938^0:4:0
 @q^3939^0:4:0
+@q^3946^0:4:0
 @q^3967^0:4:0
 @q^3971^0:4:0
 @q^3975^0:4:0
@@ -478,6 +491,7 @@ GoldScout-export 6^aes0sk2o8ooi^20
 @q^4338^1:7:1
 @q^4421^1:0:0
 @q^4422^1:0:0
+@q^4425^1:0:0
 @q^4552^0:15:0
 @q^4554^0:15:0
 @q^4558^0:15:0
@@ -507,6 +521,7 @@ GoldScout-export 6^aes0sk2o8ooi^20
 @q^6300^0:15:0
 @q^6302^0:15:0
 @q^6362^1:7:1
+@q^6530^1:0:0
 @q^6826^0:15:0
 @q^7068^1:7:1
 @q^7070^1:7:1
@@ -620,6 +635,7 @@ GoldScout-export 6^aes0sk2o8ooi^20
 @q^12771^1:12:0
 @q^12803^2:7:1
 @q^12820^1:0:0
+@q^12840^1:12:0
 @q^13446^1:0:0
 @q^13820^0:2:0
 @q^14047^1:7:1
@@ -684,6 +700,8 @@ GoldScout-export 6^aes0sk2o8ooi^20
 @q^280203^1:12:0
 @q^280459^1:12:0
 @m^1419^Blasted Lands
+@m^1422^Western Plaguelands
+@m^1423^Eastern Plaguelands
 @m^1425^The Hinterlands
 @m^1427^Searing Gorge
 @m^1444^Feralas
@@ -1216,12 +1234,18 @@ GoldScout-export 6^aes0sk2o8ooi^20
 @c^285279^
 @c^285280^
 @c^285281^
+@a^1783^207:1
+@a^1784^207:1
+@a^1785^209:3
+@a^1791^207:2
 @a^2648^330:2,331:2,351:2
 @a^2937^52:1
 @a^4196^167:6,187:4
 @a^4360^31:1,32:1,51:6,52:1
 @a^4363^31:14,32:6,51:12,52:2
 @a^4392^230:2
+@a^4474^209:2
+@a^4475^209:1
 @a^5232^94:2,212:3,232:5
 @a^5234^212:4,232:3,271:2
 @a^5236^271:3,272:2,291:2
@@ -1317,5 +1341,7 @@ GoldScout-export 6^aes0sk2o8ooi^20
 @a^9622^53:1
 @a^9683^214:1,272:1
 @a^9684^195:1
+@a^10925^209:8
+@a^14711^120:1
 @a^222233^94:1
 @l^0^enUS
