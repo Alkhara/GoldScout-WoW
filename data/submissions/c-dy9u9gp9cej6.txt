@@ -1,4 +1,4 @@
-GoldScout-export 6^dy9u9gp9cej6^3
+GoldScout-export 6^dy9u9gp9cej6^4
 597^3^0^36^37^1434^0.2379^0.0950^3^Bloodscalp Berserker^4306:1:1^
 660^2^0^37^37^1434^0.2402^0.1038^2^Bloodscalp Witch Doctor^2289:1:1,4306:1:2^
 667^2^0^39^40^1434^0.4412^0.3532^2^Skullsplitter Warrior^^
@@ -16,6 +16,10 @@ GoldScout-export 6^dy9u9gp9cej6^3
 977^1^0^32^32^1434^0.4555^0.0948^1^Kurzen War Panther^^
 1561^1^0^40^41^1434^0.3172^0.7137^1^Bloodsail Raider^^
 3560^2^0^37^37^1434^0.2402^0.1038^2^Healing Ward^^
+4358^4^0^35^36^1445^0.5694^0.2084^4^Mirefin Puddlejumper^17057:1:1,17058:1:1^
+4359^8^0^35^36^1445^0.5632^0.2097^8^Mirefin Murloc^5785:1:1,8747:1:1,17057:3:3,17058:1:1,254020:1:1^
+4411^8^0^36^37^1445^0.5264^0.2537^8^Darkfang Lurker^1074:1:1,4585:2:2,12205:2:2^
+4413^7^0^35^36^1445^0.5397^0.2648^7^Darkfang Spider^4585:5:5,10285:3:3,12205:2:2^
 258792^6^0^0^0^0^0.0000^0.0000^0^^4306:1:4,8188:1:1,9877:1:1,270343:2:2^
 258797^1^0^0^0^0^0.0000^0.0000^0^^3783:1:1^
 258799^3^0^0^0^0^0.0000^0.0000^0^^4306:1:4,4636:1:1,7475:1:1^
@@ -29,6 +33,7 @@ GoldScout-export 6^dy9u9gp9cej6^3
 263196^3^0^0^0^0^0.0000^0.0000^0^^270343:3:3^
 268300^1^0^0^0^0^0.0000^0.0000^0^^15322:1:1^
 @i^537^Dull Frenzy Scale
+@i^1074^Hard Spider Leg Tip
 @i^1520^Troll Sweat
 @i^1686^Bristly Whisker
 @i^1706^Azuredeep Shards
@@ -48,31 +53,43 @@ GoldScout-export 6^dy9u9gp9cej6^3
 @i^3806^Hardened Leather Shoulderpads
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
+@i^4585^Dripping Spider Mandible
 @i^4603^Raw Spotted Yellowtail
 @i^4636^Strong Iron Lockbox
 @i^4791^Enchanted Water
 @i^5569^Seaweed
+@i^5785^Thick Murloc Scale
+@i^6354^Small Locked Chest
 @i^6355^Sturdy Locked Chest
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
+@i^6361^Raw Rainbow Fin Albacore
 @i^6362^Raw Rockscale Cod
 @i^6411^Chief Brigadier Armor
 @i^7475^Regal Cuffs of the Elder
 @i^8151^Flask of Mojo
 @i^8188^Explosive Shotgun
+@i^8747^Hardened Leather Helm
 @i^9294^Recipe: Wildvine Potion
 @i^9851^Conjurer's Breeches of the Channeler
 @i^9877^Sorcerer Cloak of Spirit
+@i^10285^Shadow Silk
 @i^12202^Tiger Meat
+@i^12205^White Spider Meat
 @i^13422^Stonescale Eel
+@i^13755^Raw Winter Squid
 @i^15233^Savage Axe of the Tiger
 @i^15322^Smoothbore Gun
+@i^17057^Shiny Fish Scales
+@i^17058^Fish Oil
 @i^213127^Partial Mystical Notes
+@i^254020^Pattern: Earthen Silk Cuffs
 @i^270333^Voodoo-Infused Artifact
 @i^270343^I'lalai Fetish
 @i^274600^Berserker Shackles
 @i^274602^Brinebelly Leggings
 @q^537^0:15:0
+@q^1074^0:15:0
 @q^1520^0:15:0
 @q^1686^0:15:0
 @q^1706^0:15:0
@@ -92,32 +109,46 @@ GoldScout-export 6^dy9u9gp9cej6^3
 @q^3806^0:4:0
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4585^0:15:0
 @q^4603^1:7:1
 @q^4636^2:15:0
 @q^4791^1:0:0
 @q^5569^0:15:0
+@q^5785^1:7:1
+@q^6354^1:15:0
 @q^6355^1:15:0
 @q^6358^1:7:1
 @q^6359^1:7:1
+@q^6361^1:7:1
 @q^6362^1:7:1
 @q^6411^2:4:0
 @q^7475^2:4:0
 @q^8151^1:7:1
 @q^8188^2:2:0
+@q^8747^0:4:0
 @q^9294^2:9:0
 @q^9851^2:4:0
 @q^9877^2:4:0
+@q^10285^1:7:1
 @q^12202^1:7:1
+@q^12205^1:7:1
 @q^13422^1:7:1
+@q^13755^1:0:1
 @q^15233^2:2:0
 @q^15322^2:2:0
+@q^17057^1:15:0
+@q^17058^1:15:0
 @q^213127^1:15:0
+@q^254020^2:9:0
 @q^270333^1:12:0
 @q^270343^1:12:0
 @q^274600^3:4:0
 @q^274602^3:4:0
+@m^1424^Hillsbrad Foothills
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
+@m^1445^Dustwallow Marsh
+@m^1447^Azshara
 @c^118^
 @c^858^
 @c^929^
@@ -694,5 +725,11 @@ GoldScout-export 6^dy9u9gp9cej6^3
 @a^977^29:1
 @a^1561^286:1
 @a^3560^44:2
+@a^4358^91:4
+@a^4359^91:8
+@a^4411^88:1,90:2,91:1,108:1,111:2,152:1
+@a^4413^88:1,89:1,90:1,91:1,111:2,151:1
+@f^1424^0^19^158^6354:1:1,6358:8:8,6359:3:3,6361:7:7^270:16,290:3
 @f^1434^0^25^151^4603:5:5,6355:1:1,6358:1:1,6359:2:2,6362:11:11,13422:5:8^305:20,325:5
+@f^1447^0^3^157^4603:2:2,13755:1:1^190:3
 @l^0^enUS

@@ -1,4 +1,4 @@
-GoldScout-export 6^wbog1god5pqb^38
+GoldScout-export 6^wbog1god5pqb^39
 412^1^0^35^35^1431^0.5850^0.6501^1^Stitches^929:1:1,2592:1:1,3360:1:1,3806:1:1^
 587^2^0^34^34^1434^0.3183^0.1691^2^Bloodscalp Warrior^^
 588^1^0^35^35^1434^0.2481^0.1130^1^Bloodscalp Scout^2744:1:1^
@@ -148,6 +148,9 @@ GoldScout-export 6^wbog1god5pqb^38
 4693^1^0^36^37^1443^0.5895^0.4849^1^Dread Flyer^1464:1:1,12037:1:1^
 4723^1^0^38^38^1434^0.4266^0.1835^1^Foreman Cozzle^^
 4842^1^0^0^0^0^0.0000^0.0000^0^^6688:1:1^
+5422^1^0^40^40^1446^0.4913^0.2772^1^Scorpid Hunter^19936:1:1^
+5425^3^0^41^41^1446^0.4824^0.2885^3^Starving Blisterpaw^4583:1:1,12037:2:2,12208:2:2^
+5428^1^0^41^41^1446^0.4876^0.2815^1^Roc^1464:1:1,11417:1:1^
 6035^2^0^0^0^0^0.0000^0.0000^0^^^
 6132^5^0^23^24^1413^0.4311^0.9021^5^Razorfen Servitor^2592:2:7,4306:1:1^
 6168^1^0^0^0^0^0.0000^0.0000^0^^274149:1:1^
@@ -470,6 +473,7 @@ GoldScout-export 6^wbog1god5pqb^38
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
 @i^4582^Soft Bushy Tail
+@i^4583^Thick Furry Mane
 @i^4585^Dripping Spider Mandible
 @i^4586^Smooth Raptor Skin
 @i^4599^Cured Ham Steak
@@ -503,7 +507,10 @@ GoldScout-export 6^wbog1god5pqb^38
 @i^5825^Treshala's Pendant
 @i^5829^Razor-sharp Beak
 @i^6149^Greater Mana Potion
+@i^6303^Raw Slitherskin Mackerel
 @i^6308^Raw Bristle Whisker Catfish
+@i^6358^Oily Blackmouth
+@i^6361^Raw Rainbow Fin Albacore
 @i^6406^Nightsky Boots
 @i^6438^Dull Elemental Bracer
 @i^6439^Broken Binding Bracer
@@ -567,6 +574,7 @@ GoldScout-export 6^wbog1god5pqb^38
 @i^11391^Spined Bat Wing
 @i^11392^Severed Bat Claw
 @i^11393^Small Bat Skull
+@i^11417^Feathery Wing
 @i^11418^Hollow Wing Bone
 @i^11972^Carnelian Loop of the Champion
 @i^12019^Cerulean Talisman of the Defender
@@ -576,6 +584,7 @@ GoldScout-export 6^wbog1god5pqb^38
 @i^12202^Tiger Meat
 @i^12203^Red Wolf Meat
 @i^12206^Tender Crab Meat
+@i^12208^Tender Wolf Meat
 @i^13199^Crushridge Bindings
 @i^14182^Watcher's Mantle of the Elder
 @i^15226^Giant Club of the Whale
@@ -587,6 +596,7 @@ GoldScout-export 6^wbog1god5pqb^38
 @i^17058^Fish Oil
 @i^19507^Inquisitor's Shawl
 @i^19508^Branded Leather Bracers
+@i^19936^Dried Scorpid Carapace
 @i^20763^Broken Weapon
 @i^21150^Iron Bound Trunk
 @i^21153^Raw Greater Sagefish
@@ -834,6 +844,7 @@ GoldScout-export 6^wbog1god5pqb^38
 @q^4555^0:15:0
 @q^4556^0:15:0
 @q^4582^1:12:0
+@q^4583^0:15:0
 @q^4585^0:15:0
 @q^4586^0:15:0
 @q^4599^1:0:0
@@ -867,7 +878,10 @@ GoldScout-export 6^wbog1god5pqb^38
 @q^5825^1:12:0
 @q^5829^0:15:0
 @q^6149^1:0:0
+@q^6303^1:7:1
 @q^6308^1:7:1
+@q^6358^1:7:1
+@q^6361^1:7:1
 @q^6406^2:4:0
 @q^6438^0:15:0
 @q^6439^0:15:0
@@ -931,6 +945,7 @@ GoldScout-export 6^wbog1god5pqb^38
 @q^11391^0:15:0
 @q^11392^0:15:0
 @q^11393^0:15:0
+@q^11417^0:15:0
 @q^11418^0:15:0
 @q^11972^2:4:0
 @q^12019^2:4:0
@@ -940,6 +955,7 @@ GoldScout-export 6^wbog1god5pqb^38
 @q^12202^1:7:1
 @q^12203^1:7:1
 @q^12206^1:7:1
+@q^12208^1:7:1
 @q^13199^3:4:0
 @q^14182^2:4:0
 @q^15226^2:2:0
@@ -951,6 +967,7 @@ GoldScout-export 6^wbog1god5pqb^38
 @q^17058^1:15:0
 @q^19507^3:4:0
 @q^19508^3:4:0
+@q^19936^0:15:0
 @q^20763^0:15:0
 @q^21150^1:15:0
 @q^21153^1:7:1
@@ -1041,6 +1058,7 @@ GoldScout-export 6^wbog1god5pqb^38
 @m^1441^Thousand Needles
 @m^1443^Desolace
 @m^1445^Dustwallow Marsh
+@m^1446^Tanaris
 @m^1453^Stormwind City
 @m^2548^Riverglades
 @m^2652^Shen'dralas
@@ -2722,6 +2740,9 @@ GoldScout-export 6^wbog1god5pqb^38
 @a^4458^87:1
 @a^4693^191:1
 @a^4723^68:1
+@a^5422^109:1
+@a^5425^109:3
+@a^5428^109:1
 @a^6132^368:5
 @a^6208^208:1
 @a^6210^208:5
@@ -2804,4 +2825,5 @@ GoldScout-export 6^wbog1god5pqb^38
 @a^276003^190:2
 @a^276009^171:1
 @f^1434^0^8^150^3820:1:3,6308:1:1,8365:1:1,21150:4:4,21153:1:1^27:3,47:1,88:3,146:1
+@f^1453^0^3^150^6303:1:1,6358:1:1,6361:1:1^224:3
 @l^0^enUS

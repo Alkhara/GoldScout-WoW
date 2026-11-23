@@ -1,4 +1,4 @@
-GoldScout-export 6^v73c30110738^20
+GoldScout-export 6^v73c30110738^21
 92^4^0^39^40^1418^0.1408^0.3494^4^Rock Elemental^4552:2:2,4784:2:2,7067:1:1,7912:1:2^
 587^3^0^33^34^1434^0.2996^0.1955^3^Bloodscalp Warrior^1519:1:1,3793:1:1,3915:1:1,4306:3:5^
 588^3^0^34^35^1434^0.2554^0.1084^3^Bloodscalp Scout^3901:1:1,3915:1:1^
@@ -260,6 +260,7 @@ GoldScout-export 6^v73c30110738^20
 @i^6294^12 Pound Mud Snapper
 @i^6297^Old Skull
 @i^6303^Raw Slitherskin Mackerel
+@i^6308^Raw Bristle Whisker Catfish
 @i^6358^Oily Blackmouth
 @i^6361^Raw Rainbow Fin Albacore
 @i^6362^Raw Rockscale Cod
@@ -279,6 +280,8 @@ GoldScout-export 6^v73c30110738^20
 @i^8150^Deeprock Salt
 @i^8178^Training Sword of the Eagle
 @i^8182^Pellet Rifle
+@i^8365^Raw Mithril Head Trout
+@i^8366^Bloated Mithril Head Trout
 @i^8390^Pattern: Big Voodoo Cloak
 @i^8747^Hardened Leather Helm
 @i^11416^Delicate Ribcage
@@ -462,6 +465,7 @@ GoldScout-export 6^v73c30110738^20
 @q^6294^1:15:0
 @q^6297^0:15:0
 @q^6303^1:7:1
+@q^6308^1:7:1
 @q^6358^1:7:1
 @q^6361^1:7:1
 @q^6362^1:7:1
@@ -481,6 +485,8 @@ GoldScout-export 6^v73c30110738^20
 @q^8150^1:7:1
 @q^8178^2:2:0
 @q^8182^1:2:0
+@q^8365^1:7:1
+@q^8366^2:15:0
 @q^8390^2:9:0
 @q^8747^0:4:0
 @q^11416^0:15:0
@@ -1926,5 +1932,6 @@ GoldScout-export 6^v73c30110738^20
 @a^269175^106:5
 @a^270201^273:10
 @f^1413^0^4^151^6303:2:2,6358:1:1,6361:1:1^152:4
+@f^1445^0^94^152^6308:43:43,8365:50:50,8366:1:1^127:94
 @f^2521^0^55^1^6289:19:19,6291:35:35,6294:1:1^189:19,312:36
 @l^0^enUS

@@ -1,4 +1,4 @@
-GoldScout-export 6^0cwlm857vamc^25
+GoldScout-export 6^0cwlm857vamc^27
 588^18^0^34^35^1434^0.2348^0.1249^18^Eclaireur Bloodscalp^1519:6:6,1710:1:1,2592:2:3,2725:1:1,2734:1:1,2738:1:1,2750:1:1,3814:1:1,4306:5:7^
 595^9^0^34^35^1434^0.2362^0.1222^9^Chasseur Bloodscalp^1519:2:2,2728:1:1,3771:2:2,4306:2:3^
 597^3^0^36^37^1434^0.2493^0.1054^3^Berserker Bloodscalp^4306:1:1^
@@ -69,7 +69,9 @@ GoldScout-export 6^0cwlm857vamc^25
 2003^1^0^5^5^1438^0.5299^0.5201^1^Fée des ombres^^
 2004^1^0^7^7^1438^0.5132^0.5130^1^Fée sombre^^
 2008^4^0^6^7^1438^0.5931^0.5952^4^Guerrier Pin-tordu^159:1:1,2589:1:2,5220:1:1,211785:1:1^
-2010^2^0^7^8^1438^0.4973^0.6662^2^Défenseur Pin-tordu^2589:2:3^
+2009^24^0^7^8^1438^0.4435^0.5966^24^Chaman Pin-tordu^118:1:1,1411:1:1,2589:4:5,5220:5:5^
+2010^22^0^7^8^1438^0.4465^0.6059^22^Défenseur Pin-tordu^159:3:3,2589:6:10,2648:1:1,4536:1:1,5220:8:8,5572:1:1^
+2011^8^0^8^9^1438^0.4554^0.5865^8^Augure Pin-tordu^1416:1:1,1425:1:1,2589:2:4,2774:1:1,3373:1:1,4536:1:1^
 2015^1^0^9^9^1438^0.3518^0.3474^1^Harpie Plumesang^5204:1:1^
 2018^2^0^9^9^1438^0.3534^0.3525^2^Ensorceleuse Plumesang^4775:1:1,4776:1:1,5204:1:1^
 2019^3^0^9^10^1438^0.3254^0.3214^3^Furie Plumesang^2589:1:1,2646:1:1,4775:1:1,5204:2:2^
@@ -81,7 +83,7 @@ GoldScout-export 6^0cwlm857vamc^25
 2032^7^0^2^2^1438^0.6148^0.3811^7^Sabre-de-nuit galeux^1380:1:1,4865:3:3,7073:2:2,7074:3:3^
 2038^1^0^8^8^1438^0.5165^0.5087^1^Seigneur Melenas^5221:1:1^
 2042^16^0^5^6^1438^0.5890^0.5710^16^Sabre-de-nuit sauvage^818:1:1,3409:3:3,4814:8:8,280087:6:6^
-2152^6^0^6^7^1438^0.4799^0.5417^6^Embusqué Pin-tordu^2589:2:3,2774:1:1,4536:1:1^
+2152^9^0^6^7^1438^0.4763^0.5431^9^Embusqué Pin-tordu^805:1:1,2589:4:6,2642:1:1,2774:1:1,4536:1:1,5220:1:1^
 2240^12^0^32^33^1416^0.5448^0.7168^12^Détrousseuse du Syndicat^2592:1:2,3786:1:1,4306:4:7,5113:1:1,213544:1:1,262888:1:1^
 2241^9^0^33^34^1416^0.5778^0.6858^9^Larron du Syndicat^2592:1:1,4306:5:9^
 2242^22^0^35^36^1416^0.6120^0.4410^22^Espionne du Syndicat^1707:1:1,1708:1:1,1710:1:1,1726:1:1,3037:1:1,3505:6:6,4306:3:4,5113:5:5,6986:2:2^
@@ -136,6 +138,7 @@ GoldScout-export 6^0cwlm857vamc^25
 6549^1^0^40^40^1445^0.4573^0.5714^1^Démon de l'Orbe^^
 7234^1^0^8^8^1438^0.6911^0.5346^1^Ferocitas le Mangeur de rêves^1421:1:1,8049:1:1^
 7235^7^0^6^7^1438^0.6822^0.5193^7^Mystique Pin-tordu^159:1:1,2589:1:1^
+7318^1^0^10^10^1438^0.4471^0.5881^1^Grifferage^774:1:1^
 7855^1^0^44^45^1446^0.7051^0.4231^1^Pirate des Mers du sud^4338:1:2^
 11576^1^0^33^34^1443^0.5572^0.6359^1^Tourbillon éventreur^248692:1:1^
 11577^3^0^35^37^1443^0.6082^0.5907^3^Tourbillon Marchetempête^7069:1:1^
@@ -165,6 +168,8 @@ GoldScout-export 6^0cwlm857vamc^25
 @i^118^Potion de soins mineure
 @i^159^Eau de source
 @i^770^Croc pointu de crocilisque
+@i^774^Malachite
+@i^805^Petite bourse rouge
 @i^818^Oeil de tigre
 @i^929^Potion de soins
 @i^1205^Jus de melon
@@ -179,7 +184,10 @@ GoldScout-export 6^0cwlm857vamc^25
 @i^1377^Gants râpés
 @i^1378^Pantalon râpé
 @i^1380^Robe râpée
+@i^1411^Vieux bâton usé
+@i^1416^Hachette rouillée
 @i^1421^Cape usée en peau
+@i^1425^Gilet usé en cuir
 @i^1465^Fléau des tigres
 @i^1476^Patte d'araignée brisée
 @i^1519^Oreille de Bloodscalp
@@ -206,7 +214,9 @@ GoldScout-export 6^0cwlm857vamc^25
 @i^2589^Etoffe de lin
 @i^2592^Etoffe de laine
 @i^2633^Remède tropical
+@i^2642^Bottes en anneaux distendus
 @i^2646^Pantalon en anneaux distendus
+@i^2648^Lorica distendue
 @i^2651^Brassards en anneaux fins
 @i^2653^Gants en anneaux fins
 @i^2654^Pantalon en anneaux fins
@@ -233,6 +243,7 @@ GoldScout-export 6^0cwlm857vamc^25
 @i^3167^Poil d'araignée épais
 @i^3297^Gangremousse
 @i^3357^Vietérule
+@i^3373^Brassards en patchwork
 @i^3385^Potion de mana inférieure
 @i^3404^Aile de busard
 @i^3409^Croc de Sabre-de-nuit
@@ -329,6 +340,7 @@ GoldScout-export 6^0cwlm857vamc^25
 @i^5524^Palourde à coque épaisse
 @i^5567^Crochet d'argent
 @i^5569^Algue
+@i^5572^Petite bourse verte
 @i^5636^Plume délicate
 @i^5637^Grand croc
 @i^5785^Ecailles de murloc épaisses
@@ -410,6 +422,8 @@ GoldScout-export 6^0cwlm857vamc^25
 @q^118^1:0:0
 @q^159^1:0:0
 @q^770^0:15:0
+@q^774^2:7:1
+@q^805^1:1:0
 @q^818^2:7:1
 @q^929^1:0:0
 @q^1205^1:0:0
@@ -424,7 +438,10 @@ GoldScout-export 6^0cwlm857vamc^25
 @q^1377^0:4:0
 @q^1378^0:4:0
 @q^1380^0:4:0
+@q^1411^0:2:0
+@q^1416^0:2:0
 @q^1421^0:4:0
+@q^1425^0:4:0
 @q^1465^2:2:0
 @q^1476^0:15:0
 @q^1519^1:12:0
@@ -451,7 +468,9 @@ GoldScout-export 6^0cwlm857vamc^25
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2633^1:0:0
+@q^2642^0:4:0
 @q^2646^0:4:0
+@q^2648^0:4:0
 @q^2651^0:4:0
 @q^2653^0:4:0
 @q^2654^0:4:0
@@ -478,6 +497,7 @@ GoldScout-export 6^0cwlm857vamc^25
 @q^3167^0:15:0
 @q^3297^1:12:0
 @q^3357^1:7:1
+@q^3373^0:4:0
 @q^3385^1:0:0
 @q^3404^1:7:1
 @q^3409^1:12:0
@@ -574,6 +594,7 @@ GoldScout-export 6^0cwlm857vamc^25
 @q^5524^1:7:0
 @q^5567^0:15:0
 @q^5569^0:15:0
+@q^5572^1:1:0
 @q^5636^0:15:0
 @q^5637^1:7:1
 @q^5785^1:7:1
@@ -2062,7 +2083,9 @@ GoldScout-export 6^0cwlm857vamc^25
 @a^2003^210:1
 @a^2004^210:1
 @a^2008^213:2,269:1,270:1
-@a^2010^269:2
+@a^2009^228:8,229:2,248:14
+@a^2010^228:3,229:4,248:13,269:2
+@a^2011^228:1,229:6,248:1
 @a^2015^127:1
 @a^2018^127:1,147:1
 @a^2019^126:3
@@ -2074,7 +2097,7 @@ GoldScout-export 6^0cwlm857vamc^25
 @a^2032^151:1,152:6
 @a^2038^210:1
 @a^2042^209:2,213:5,230:2,231:2,250:2,251:3
-@a^2152^209:5,229:1
+@a^2152^209:8,229:1
 @a^2240^271:8,309:1,329:3
 @a^2241^271:7,291:1,329:1
 @a^2242^172:16,191:1,192:5
@@ -2129,6 +2152,7 @@ GoldScout-export 6^0cwlm857vamc^25
 @a^6549^229:1
 @a^7234^213:1
 @a^7235^213:7
+@a^7318^228:1
 @a^7855^174:1
 @a^11576^251:1
 @a^11577^231:2,252:1

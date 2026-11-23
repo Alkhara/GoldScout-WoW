@@ -1,4 +1,4 @@
-GoldScout-export 6^nnbjlckeeem8^4
+GoldScout-export 6^nnbjlckeeem8^5
 3^1^0^24^24^1431^0.2432^0.3996^1^Flesh Eater^1801:1:1^
 202^19^0^23^24^1431^0.6093^0.5534^19^Skeletal Horror^929:1:1,2378:3:3,2589:2:6,2592:2:2,4306:1:1,4708:1:1,6577:1:1,12054:1:1^
 218^2^0^24^25^1431^0.1488^0.4511^2^Grave Robber^^
@@ -44,6 +44,7 @@ GoldScout-export 6^nnbjlckeeem8^4
 8095^1^0^0^0^0^0.0000^0.0000^0^^1701:1:1^
 8120^1^0^0^0^0^0.0000^0.0000^0^^4092:1:1,4093:1:1^
 8636^1^0^50^50^1425^0.4848^0.6806^1^Morta'gya the Keeper^^
+8959^2^0^47^47^1448^0.5164^0.8222^2^Felpaw Wolf^4583:1:1,4584:1:1,12203:1:1,12208:1:1,248694:1:1^
 10081^1^0^0^0^0^0.0000^0.0000^0^^12469:1:1^
 10082^1^0^0^0^0^0.0000^0.0000^0^^12470:1:1^
 257885^2^0^0^0^1415^0.0000^0.0000^0^^15798:1:1,248694:1:1^
@@ -95,6 +96,7 @@ GoldScout-export 6^nnbjlckeeem8^4
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4583^Thick Furry Mane
+@i^4584^Large Trophy Paw
 @i^4599^Cured Ham Steak
 @i^4603^Raw Spotted Yellowtail
 @i^4708^Bright Belt
@@ -104,8 +106,10 @@ GoldScout-export 6^nnbjlckeeem8^4
 @i^6149^Greater Mana Potion
 @i^6300^Husk Fragment
 @i^6302^Delicate Insect Wing
+@i^6303^Raw Slitherskin Mackerel
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
+@i^6361^Raw Rainbow Fin Albacore
 @i^6362^Raw Rockscale Cod
 @i^6577^Defender Gauntlets of Fire Protection
 @i^7474^Regal Cloak of the Whale
@@ -209,6 +213,7 @@ GoldScout-export 6^nnbjlckeeem8^4
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4583^0:15:0
+@q^4584^0:15:0
 @q^4599^1:0:0
 @q^4603^1:7:1
 @q^4708^2:4:0
@@ -218,8 +223,10 @@ GoldScout-export 6^nnbjlckeeem8^4
 @q^6149^1:0:0
 @q^6300^0:15:0
 @q^6302^0:15:0
+@q^6303^1:7:1
 @q^6358^1:7:1
 @q^6359^1:7:1
+@q^6361^1:7:1
 @q^6362^1:7:1
 @q^6577^2:4:0
 @q^7474^2:4:0
@@ -294,6 +301,8 @@ GoldScout-export 6^nnbjlckeeem8^4
 @m^1431^Duskwood
 @m^1437^Wetlands
 @m^1446^Tanaris
+@m^1448^Felwood
+@m^1453^Stormwind City
 @m^2548^Riverglades
 @c^2840^
 @c^2841^
@@ -815,6 +824,9 @@ GoldScout-export 6^nnbjlckeeem8^4
 @c^279952^
 @c^279955^
 @c^279960^
+@c^279965^
+@c^279966^
+@c^279967^
 @c^279988^
 @c^285279^
 @c^285280^
@@ -848,7 +860,9 @@ GoldScout-export 6^nnbjlckeeem8^4
 @a^7883^194:1
 @a^7996^269:1
 @a^8636^269:1
+@a^8959^330:2
 @f^1425^0^39^273^6149:1:1,6358:2:2,8365:6:6,13757:1:1,13758:17:17,13760:12:12^231:39
 @f^1446^0^1^278^21228:1:1^174:1
+@f^1453^0^5^281^6303:1:1,6361:4:4^224:5
 @f^2548^0^39^277^4603:9:9,6358:3:3,6359:3:3,6362:24:24^216:39
 @l^0^enUS
