@@ -1,4 +1,4 @@
-GoldScout-export 6^j2a23oxzafss^1
+GoldScout-export 6^j2a23oxzafss^2
 667^10^0^39^40^1434^0.4596^0.4027^10^Guerrero Machacacráneos^1520:5:5,1524:3:3,1708:1:1,3771:1:1,4306:1:2,8151:2:2^
 670^3^0^41^41^1434^0.4577^0.4211^3^Médico Brujo Machacacráneos^2466:3:3,4002:1:1,4338:1:2,4599:1:1^
 672^1^0^44^44^1434^0.4650^0.4484^1^Cazaespíritus Machacacráneos^4599:1:1^
@@ -22,6 +22,7 @@ GoldScout-export 6^j2a23oxzafss^1
 1563^3^0^42^43^1434^0.2732^0.8330^3^Aventurero Velasangre^4338:3:4^
 1564^4^0^42^43^1434^0.2748^0.8415^4^Bruja Velasangre^3910:3:3,4338:1:1^
 1565^1^0^44^44^1434^0.3068^0.8987^1^Perro de mar Velasangre^^
+1907^28^0^43^44^1434^0.2587^0.6200^28^Expedicionario Naga^2730:1:1,2751:1:1,3928:1:1,4029:10:10,4603:1:2,6149:1:1,7496:1:1,7973:10:10,17058:13:13^
 2530^1^0^41^41^1434^0.3918^0.5788^1^Yenniku^^
 2534^1^0^46^46^1434^0.3916^0.5814^1^Zanzil el Desarraigado^^
 2535^1^0^43^43^1434^0.3483^0.5125^1^Maury Patón Wilkins^3924:1:1^
@@ -41,6 +42,7 @@ GoldScout-export 6^j2a23oxzafss^1
 @i^1710^Poción de curación superior
 @i^2466^Fetiche Machacacráneos
 @i^2725^Las verdes colinas de Tuercespina: Página 1
+@i^2730^Las verdes colinas de Tuercespina: Página 6
 @i^2732^Las verdes colinas de Tuercespina: Página 8
 @i^2735^Las verdes colinas de Tuercespina: Página 11
 @i^2740^Las verdes colinas de Tuercespina: Página 16
@@ -56,21 +58,26 @@ GoldScout-export 6^j2a23oxzafss^1
 @i^3924^Pie deforme de Maury
 @i^3925^Telescopio dorado de Jon-Jon
 @i^3926^Anillo enorme de Chucky
+@i^3928^Poción de curación excelente
 @i^3932^Cofre de Smotts
 @i^3943^Jubón de ganchillo
 @i^3963^Brazales de cuero grueso
 @i^3965^Guantes de cuero grueso
 @i^4002^Brazales de anillas superpuestas
 @i^4016^Mezcla de Zanzil
+@i^4029^Junco akiris
 @i^4097^Diente de gorila astillado
 @i^4306^Paño de seda
 @i^4338^Tela de paño mágico
 @i^4387^Tornapunta de hierro
 @i^4421^Pergamino de Protección III
 @i^4599^Filete de jamón curado
+@i^4603^Serviola moteada cruda
 @i^4636^Arcón de hierro fuerte
+@i^6149^Poción de maná superior
 @i^6412^Botas de jefe de brigada
 @i^6530^Reptadores nocturnos
+@i^7496^Escudo de placas de campo del hierofante
 @i^7910^Rubí estrella
 @i^7973^Almeja de boca grande
 @i^8151^Frasco de mojo
@@ -93,6 +100,7 @@ GoldScout-export 6^j2a23oxzafss^1
 @q^1710^1:0:0
 @q^2466^1:12:0
 @q^2725^1:12:0
+@q^2730^1:12:0
 @q^2732^1:12:0
 @q^2735^1:12:0
 @q^2740^1:12:0
@@ -108,21 +116,26 @@ GoldScout-export 6^j2a23oxzafss^1
 @q^3924^1:12:0
 @q^3925^1:12:0
 @q^3926^1:12:0
+@q^3928^1:0:0
 @q^3932^1:12:0
 @q^3943^0:4:0
 @q^3963^0:4:0
 @q^3965^0:4:0
 @q^4002^0:4:0
 @q^4016^1:12:0
+@q^4029^1:12:0
 @q^4097^0:15:0
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4387^1:7:1
 @q^4421^1:0:0
 @q^4599^1:0:0
+@q^4603^1:7:1
 @q^4636^2:15:0
+@q^6149^1:0:0
 @q^6412^2:4:0
 @q^6530^1:0:0
+@q^7496^2:4:0
 @q^7910^2:7:1
 @q^7973^1:7:0
 @q^8151^1:7:1
@@ -847,6 +860,7 @@ GoldScout-export 6^j2a23oxzafss^1
 @a^1563^325:3
 @a^1564^325:3,345:1
 @a^1565^346:1
+@a^1907^224:2,225:4,244:7,245:15
 @a^2530^227:1
 @a^2534^227:1
 @a^2535^206:1

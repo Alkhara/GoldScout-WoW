@@ -1,4 +1,4 @@
-GoldScout-export 6^1x4j3xvb2rs5^22
+GoldScout-export 6^1x4j3xvb2rs5^23
 1035^1^0^27^28^1437^0.4910^0.4447^1^Arpenteur Dragonmaw^^
 1525^9^0^5^6^1420^0.5333^0.4989^9^Mort pourrissant^1181:1:1,2589:2:3,2855:2:2^
 1526^8^0^6^7^1420^0.5280^0.4985^8^Cadavre décomposé^^
@@ -90,8 +90,19 @@ GoldScout-export 6^1x4j3xvb2rs5^22
 3674^1^0^0^0^0^0.0000^0.0000^0^^6448:1:1^
 3680^1^0^1^1^1414^0.5193^0.5458^1^Reptile Fleur de serpent^^
 3840^18^0^0^0^0^0.0000^0.0000^0^^858:1:1,955:1:1,1179:1:1,1741:1:1,1742:1:1,1744:1:1,1789:1:1,2589:2:5,2592:5:9,3199:1:1,4537:1:1,4568:1:1,9770:1:1,10413:2:2^
-4140^1^0^32^32^1441^0.7615^0.7182^1^Scorpide ravageur^12037:1:1^
-4151^1^0^32^32^1441^0.7700^0.8357^1^Peau de cristal du sel gemme^^
+4120^1^0^28^29^1441^0.6348^0.5635^1^Eboulide fulminant^4784:1:1^
+4130^2^0^32^33^1441^0.7175^0.8453^2^Chercheur silithide^5855:1:1,5877:1:1,6300:1:1,6302:1:1^
+4131^2^0^34^35^1441^0.6480^0.8552^2^Envahisseur silithide^5854:1:1,6302:2:2^
+4133^10^0^33^34^1441^0.6925^0.8654^10^Bourdon silithide^5853:3:3,5854:3:3,6300:4:4,6302:2:2,14404:1:1^
+4139^1^0^33^34^1441^0.7098^0.7778^1^Scorpide terrifiant^5794:1:1,12037:1:1^
+4140^10^0^31^32^1441^0.7715^0.6479^10^Scorpide ravageur^5794:5:5,12037:4:4,19937:1:1^
+4142^10^0^30^31^1441^0.7401^0.6123^10^Tortue nacrétoile^3712:4:4,4555:1:1,4556:3:3,5795:6:6,6308:2:4,248687:1:1^
+4143^4^0^34^35^1441^0.8103^0.5579^4^Mordeuse nacrétoile^3712:2:2,4555:2:2,5795:2:2^
+4147^6^0^30^31^1441^0.7181^0.6284^6^Basilic du sel gemme^1701:1:1,1702:3:3,11384:4:4^
+4151^6^0^32^33^1441^0.7880^0.6653^6^Peau de cristal du sel gemme^1701:4:4,4093:1:1^
+4154^1^0^30^32^1441^0.7909^0.5556^1^Charognard des Salines^729:1:1,5848:1:1,11416:1:1^
+4158^1^0^34^34^1441^0.7117^0.7723^1^Vautour des Salines^5116:1:1,5848:1:1^
+4249^2^0^28^29^1441^0.6381^0.5956^2^Grogneuse Pestepoil^3402:2:2^
 4316^1^0^13^13^1413^0.5534^0.4608^1^Chien de meute kolkar^^
 4421^1^0^0^0^0^0.0000^0.0000^0^^5793:1:1,17008:1:1^
 4428^1^0^0^0^0^0.0000^0.0000^0^^^
@@ -150,6 +161,7 @@ GoldScout-export 6^1x4j3xvb2rs5^22
 7603^12^0^0^0^0^0.0000^0.0000^0^^^
 7800^1^0^0^0^0^0.0000^0.0000^0^^9299:1:1^
 8886^4^0^0^0^0^0.0000^0.0000^0^^6443:2:2,6444:2:2,6445:1:1^
+9377^1^0^33^34^1441^0.7241^0.5947^1^Vortex tourbillonnant^^
 218032^1^0^35^35^1417^0.6903^0.8103^1^Goliath fânécorce^253711:1:1^
 246602^1^0^0^0^1416^0.0000^0.0000^0^^1705:1:1^
 246664^6^0^0^0^1416^0.0000^0.0000^0^^275997:5:5,276160:2:2^
@@ -177,6 +189,7 @@ GoldScout-export 6^1x4j3xvb2rs5^22
 @i^118^Potion de soins mineure
 @i^159^Eau de source
 @i^422^Caprice des nains
+@i^729^Viande filandreuse de vautour
 @i^770^Croc pointu de crocilisque
 @i^774^Malachite
 @i^779^Coquillage luisant
@@ -193,6 +206,8 @@ GoldScout-export 6^1x4j3xvb2rs5^22
 @i^1501^Tunique en calicot
 @i^1529^Jade
 @i^1697^Dent de raptor
+@i^1701^Griffe de basilic
+@i^1702^Epine dorsale intacte de basilic
 @i^1705^Pierre de lune inférieure
 @i^1708^Nectar sucré
 @i^1710^Potion de soins supérieure
@@ -229,6 +244,7 @@ GoldScout-export 6^1x4j3xvb2rs5^22
 @i^3377^Brassards en canevas
 @i^3385^Potion de mana inférieure
 @i^3401^Ecaille de crocilisque grossière
+@i^3402^Touffe de fourrure douce
 @i^3403^Défense de sanglier en ivoire
 @i^3601^Missive du Syndicat
 @i^3635^Patte d'Oeil-de-ver
@@ -246,6 +262,7 @@ GoldScout-export 6^1x4j3xvb2rs5^22
 @i^3740^Tranche-tête de guérison
 @i^3771^Jarret de cochon sauvage
 @i^3780^Mousquet à canon long
+@i^4093^Grande queue de basilic
 @i^4306^Etoffe de soie
 @i^4337^Soie d'araignée épaisse
 @i^4338^Etoffe de tisse-mage
@@ -255,6 +272,8 @@ GoldScout-export 6^1x4j3xvb2rs5^22
 @i^4512^Oeil de raptor des hautes-terres
 @i^4537^Banane de Tel'Abim
 @i^4553^Morceau de pierre délabré
+@i^4555^Epaisse queue écailleuse
+@i^4556^Fragment de carapace moucheté
 @i^4560^Cimeterre fin
 @i^4568^Hache de grunt de magie
 @i^4585^Mandibule d'araignée visqueuse
@@ -271,17 +290,28 @@ GoldScout-export 6^1x4j3xvb2rs5^22
 @i^5099^Sabot de Lakota'mani
 @i^5101^Croc d'Ishamuhale
 @i^5113^Marque du Syndicat
+@i^5116^Longue plume de queue
 @i^5123^Tête de flèche en acier
 @i^5124^Petite dent de raptor
 @i^5637^Grand croc
 @i^5793^Coeur de Trancheflanc
+@i^5794^Venin de scorpide acide
+@i^5795^Carapace de tortue durcie
 @i^5801^Guano du kraal
 @i^5810^Carcasse fraîche
 @i^5811^Crinière de Gueule-glacée
 @i^5830^Tête de Kenata
 @i^5831^Tête de Fardel
 @i^5832^Tête de Marcel
+@i^5848^Os creux de vautour
+@i^5853^Carapace de silithide intacte
+@i^5854^Serre de silithide
+@i^5855^Coeur de silithide
+@i^5877^Carapace de silithide craquelée
+@i^6300^Fragment de peau
+@i^6302^Aile d'insecte délicate
 @i^6303^Maquereau ombré cru
+@i^6308^Poisson-chat moustachu cru
 @i^6438^Bracelet élémentaire terne
 @i^6443^Peau de déviant
 @i^6444^Langue fourchue
@@ -308,11 +338,14 @@ GoldScout-export 6^1x4j3xvb2rs5^22
 @i^10338^Carcasse de zhévra fraîche
 @i^10413^Gants du Croc
 @i^10441^Eclat luminescent
+@i^11384^Dents de basilic cassées
+@i^11416^Cage thoracique délicate
 @i^12037^Viande mystère
 @i^12184^Chair de raptor
 @i^12223^Aile de chauve-souris charnue
 @i^14122^Poignets rituels d'esprit
 @i^14367^Gants de mystique
+@i^14404^Jambières résistantes
 @i^14560^Bottes de prospecteur
 @i^14722^Bottines aux peintures de guerre
 @i^15308^Corde farouche de l'aigle
@@ -320,8 +353,10 @@ GoldScout-export 6^1x4j3xvb2rs5^22
 @i^17008^Petit parchemin
 @i^17056^Plume légère
 @i^17057^Ecailles de poisson brillantes
+@i^19937^Petite griffe de scorpide
 @i^213422^Recette illisible
 @i^248684^Caisse détournée : textiles d'apprenti
+@i^248687^Caisse détournée : minerai de compagnon
 @i^248688^Caisse détournée : textiles de compagnon
 @i^248702^Caisse détournée : étoffes d'apprenti
 @i^253711^Garde-poignets de goliath
@@ -339,6 +374,7 @@ GoldScout-export 6^1x4j3xvb2rs5^22
 @q^118^1:0:0
 @q^159^1:0:0
 @q^422^1:0:0
+@q^729^1:7:1
 @q^770^0:15:0
 @q^774^2:7:1
 @q^779^0:15:0
@@ -355,6 +391,8 @@ GoldScout-export 6^1x4j3xvb2rs5^22
 @q^1501^0:4:0
 @q^1529^2:7:1
 @q^1697^0:15:0
+@q^1701^0:15:0
+@q^1702^0:15:0
 @q^1705^2:7:1
 @q^1708^1:0:0
 @q^1710^1:0:0
@@ -391,6 +429,7 @@ GoldScout-export 6^1x4j3xvb2rs5^22
 @q^3377^0:4:0
 @q^3385^1:0:0
 @q^3401^0:15:0
+@q^3402^0:15:0
 @q^3403^0:15:0
 @q^3601^1:12:0
 @q^3635^1:12:0
@@ -408,6 +447,7 @@ GoldScout-export 6^1x4j3xvb2rs5^22
 @q^3740^2:2:0
 @q^3771^1:0:0
 @q^3780^0:2:0
+@q^4093^0:15:0
 @q^4306^1:7:1
 @q^4337^1:7:1
 @q^4338^1:7:1
@@ -417,6 +457,8 @@ GoldScout-export 6^1x4j3xvb2rs5^22
 @q^4512^1:12:0
 @q^4537^1:0:0
 @q^4553^0:15:0
+@q^4555^0:15:0
+@q^4556^0:15:0
 @q^4560^1:2:0
 @q^4568^2:2:0
 @q^4585^0:15:0
@@ -433,17 +475,28 @@ GoldScout-export 6^1x4j3xvb2rs5^22
 @q^5099^1:12:0
 @q^5101^1:12:0
 @q^5113^0:15:0
+@q^5116^1:7:1
 @q^5123^0:15:0
 @q^5124^0:15:0
 @q^5637^1:7:1
 @q^5793^1:12:0
+@q^5794^1:12:0
+@q^5795^1:12:0
 @q^5801^1:12:0
 @q^5810^1:12:0
 @q^5811^1:12:0
 @q^5830^1:12:0
 @q^5831^1:12:0
 @q^5832^1:12:0
+@q^5848^1:12:0
+@q^5853^1:12:0
+@q^5854^1:12:0
+@q^5855^1:12:0
+@q^5877^1:12:0
+@q^6300^0:15:0
+@q^6302^0:15:0
 @q^6303^1:7:1
+@q^6308^1:7:1
 @q^6438^0:15:0
 @q^6443^1:12:0
 @q^6444^0:15:0
@@ -470,11 +523,14 @@ GoldScout-export 6^1x4j3xvb2rs5^22
 @q^10338^1:12:0
 @q^10413^3:4:0
 @q^10441^1:12:0
+@q^11384^0:15:0
+@q^11416^0:15:0
 @q^12037^1:7:1
 @q^12184^1:7:1
 @q^12223^1:7:1
 @q^14122^2:4:0
 @q^14367^2:4:0
+@q^14404^2:4:0
 @q^14560^2:4:0
 @q^14722^2:4:0
 @q^15308^2:4:0
@@ -482,8 +538,10 @@ GoldScout-export 6^1x4j3xvb2rs5^22
 @q^17008^1:15:0
 @q^17056^1:15:1
 @q^17057^1:15:0
+@q^19937^0:15:0
 @q^213422^1:12:0
 @q^248684^1:0:1
+@q^248687^1:0:1
 @q^248688^1:0:1
 @q^248702^2:0:1
 @q^253711^1:12:0
@@ -1944,8 +2002,19 @@ GoldScout-export 6^1x4j3xvb2rs5^22
 @a^3633^210:5
 @a^3634^210:1,230:1
 @a^3680^210:1
-@a^4140^295:1
-@a^4151^335:1
+@a^4120^232:1
+@a^4130^334:1,354:1
+@a^4131^352:1,353:1
+@a^4133^333:1,334:1,352:1,353:2,354:5
+@a^4139^314:1
+@a^4140^235:2,254:2,257:2,274:2,294:1,295:1
+@a^4142^234:2,236:1,253:1,254:2,255:2,273:1,274:1
+@a^4143^235:1,236:3
+@a^4147^234:2,254:1,273:1,274:2
+@a^4151^235:2,237:1,256:1,314:1,335:1
+@a^4154^235:1
+@a^4158^314:1
+@a^4249^232:1,252:1
 @a^4316^191:1
 @a^4479^150:1
 @a^4480^151:1
@@ -1956,6 +2025,7 @@ GoldScout-export 6^1x4j3xvb2rs5^22
 @a^7287^30:1
 @a^7288^30:1
 @a^7310^30:2
+@a^9377^234:1
 @a^218032^333:1
 @a^260803^250:1,270:1
 @a^260804^229:1

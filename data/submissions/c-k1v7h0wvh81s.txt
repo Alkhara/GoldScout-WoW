@@ -1,4 +1,4 @@
-GoldScout-export 6^k1v7h0wvh81s^44
+GoldScout-export 6^k1v7h0wvh81s^45
 598^1^0^0^0^0^0.0000^0.0000^0^^2592:1:2^
 622^1^0^0^0^0^0.0000^0.0000^0^^^
 634^1^0^0^0^0^0.0000^0.0000^0^^10400:1:1^
@@ -23,6 +23,9 @@ GoldScout-export 6^k1v7h0wvh81s^44
 1667^1^0^5^5^1420^0.3600^0.6862^1^Meven Korgal^1367:1:1,2885:1:1^
 1729^2^0^0^0^0^0.0000^0.0000^0^^414:1:1,2589:1:4^
 1732^2^0^0^0^0^0.0000^0.0000^0^^1210:1:1,2589:1:3^
+1765^1^0^10^10^1421^0.5763^0.0905^1^Worg^^
+1766^9^0^11^12^1421^0.5802^0.1001^9^Mottled Worg^2672:9:9,3164:3:3,3299:1:1,3300:2:2^
+1778^6^0^11^12^1421^0.4677^0.4597^6^Ferocious Grizzled Bear^3169:3:3,3173:4:4,3253:2:2^
 1783^1^0^50^51^1422^0.3882^0.5526^1^Skeletal Flayer^^
 1784^2^0^52^52^1422^0.3783^0.5626^2^Skeletal Sorcerer^14047:1:1^
 1785^1^0^54^54^1422^0.4616^0.5217^1^Skeletal Terror^^
@@ -462,6 +465,7 @@ GoldScout-export 6^k1v7h0wvh81s^44
 272391^1^0^56^57^1450^0.3999^0.5364^1^Moonstrider^17056:1:1^
 275767^1^0^11^11^1412^0.6057^0.5956^1^Herak the Pillager^2589:1:2,286075:1:1^
 276138^3^0^56^57^2482^0.4689^0.7129^3^Subjugated Assistant^^
+277882^1^0^13^13^1421^0.5381^0.1916^1^Foothills Duskbat^6293:1:1^
 @i^117^Tough Jerky
 @i^159^Refreshing Spring Water
 @i^414^Dalaran Sharp
@@ -518,7 +522,11 @@ GoldScout-export 6^k1v7h0wvh81s^44
 @i^2799^Gorilla Fang
 @i^2855^Putrid Claw
 @i^2885^Scarlet Crusade Documents
+@i^3164^Discolored Worg Heart
+@i^3169^Chipped Bear Tooth
+@i^3173^Bear Meat
 @i^3190^Beatstick
+@i^3253^Grizzled Bear Heart
 @i^3266^Scarlet Armband
 @i^3295^Deadman Blade
 @i^3299^Fractured Canine
@@ -613,6 +621,7 @@ GoldScout-export 6^k1v7h0wvh81s^44
 @i^5636^Delicate Feather
 @i^5758^Mithril Lockbox
 @i^5759^Thorium Lockbox
+@i^6293^Dried Bat Blood
 @i^6300^Husk Fragment
 @i^6302^Delicate Insect Wing
 @i^6417^Aurora Cloak
@@ -1039,7 +1048,11 @@ GoldScout-export 6^k1v7h0wvh81s^44
 @q^2799^1:12:0
 @q^2855^1:12:0
 @q^2885^1:12:0
+@q^3164^1:12:0
+@q^3169^0:15:0
+@q^3173^1:7:1
 @q^3190^1:2:0
+@q^3253^1:12:0
 @q^3266^1:12:0
 @q^3295^1:2:0
 @q^3299^0:15:0
@@ -1134,6 +1147,7 @@ GoldScout-export 6^k1v7h0wvh81s^44
 @q^5636^0:15:0
 @q^5758^2:15:0
 @q^5759^2:15:0
+@q^6293^0:15:0
 @q^6300^0:15:0
 @q^6302^0:15:0
 @q^6417^2:4:0
@@ -1506,6 +1520,7 @@ GoldScout-export 6^k1v7h0wvh81s^44
 @q^287505^1:12:0
 @m^1412^Mulgore
 @m^1420^Tirisfal Glades
+@m^1421^Silverpine Forest
 @m^1422^Western Plaguelands
 @m^1423^Eastern Plaguelands
 @m^1427^Searing Gorge
@@ -3035,6 +3050,9 @@ GoldScout-export 6^k1v7h0wvh81s^44
 @a^1547^211:1,252:1
 @a^1553^252:1
 @a^1667^267:1
+@a^1765^31:1
+@a^1766^31:4,51:5
+@a^1778^169:1,170:1,188:1,189:2,208:1
 @a^1783^227:1
 @a^1784^227:2
 @a^1785^209:1
@@ -3232,4 +3250,5 @@ GoldScout-export 6^k1v7h0wvh81s^44
 @a^272391^207:1
 @a^275767^232:1
 @a^276138^269:1,289:1,290:1
+@a^277882^70:1
 @l^0^enUS

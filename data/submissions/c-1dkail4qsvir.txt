@@ -1,4 +1,4 @@
-GoldScout-export 6^1dkail4qsvir^20
+GoldScout-export 6^1dkail4qsvir^22
 205^6^0^28^29^1431^0.6366^0.4773^6^Nightbane Dark Runner^1803:1:1,6615:1:1^
 206^14^0^29^30^1431^0.6020^0.8006^14^Nightbane Vile Fang^2221:1:1,4072:1:1,9842:1:1^
 210^6^0^26^27^1431^0.2175^0.2921^6^Bone Chewer^884:1:1,1129:2:2,4306:1:1,4606:1:1^
@@ -90,6 +90,12 @@ GoldScout-export 6^1dkail4qsvir^20
 1418^13^0^28^29^1437^0.1234^0.6497^13^Bluegill Raider^730:5:5,1468:6:6,1783:1:1,2702:4:4,5524:3:3,6308:1:3,17057:5:5,17058:2:2^
 1718^8^0^3^4^1426^0.3492^0.6893^8^Rockjaw Raider^117:2:2,1364:1:1,1370:1:1,1380:1:1,2589:2:2,2650:1:1^
 1756^2^0^60^60^1453^0.7938^0.3895^2^Stormwind Royal Guard^^
+1984^4^0^1^2^1438^0.6074^0.4302^4^Young Thistle Boar^4865:3:3,7098:1:1^
+1985^13^0^2^3^1438^0.5965^0.3586^13^Thistle Boar^117:1:1,1372:1:1,2210:1:1,4865:6:6,7098:7:7^
+1986^5^0^3^4^1438^0.5683^0.3267^5^Webwood Spider^1367:1:1,1368:1:1,1476:1:1,5166:3:3,7100:1:1,7101:3:3,10640:1:1^
+1989^4^0^3^3^1438^0.6017^0.3532^4^Grellkin^117:1:1,1367:1:1,1374:1:1,2589:1:1,3363:1:1^
+2031^7^0^1^1^1438^0.6113^0.4308^7^Young Nightsaber^1372:1:1,4865:3:3,7073:3:3,7074:2:2^
+2032^15^0^2^2^1438^0.6000^0.3504^15^Mangy Nightsaber^1364:1:1,1366:1:1,1380:1:1,2651:2:2,4865:6:6,7073:5:5,7074:7:7^
 2044^1^0^26^26^1429^0.8561^0.6982^1^Forlorn Spirit^^
 2070^3^0^16^17^1439^0.6008^0.1079^3^Moonstalker Runt^^
 2071^3^0^19^20^1439^0.6005^0.1084^3^Moonstalker Matriarch^5135:2:2^
@@ -182,6 +188,7 @@ GoldScout-export 6^1dkail4qsvir^20
 @i^1206^Moss Agate
 @i^1364^Ragged Leather Vest
 @i^1366^Ragged Leather Pants
+@i^1367^Ragged Leather Boots
 @i^1368^Ragged Leather Gloves
 @i^1369^Ragged Leather Belt
 @i^1370^Ragged Leather Bracers
@@ -198,6 +205,7 @@ GoldScout-export 6^1dkail4qsvir^20
 @i^1445^Blackrock Pauldrons
 @i^1460^Shadowhide Two-handed Sword
 @i^1468^Murloc Fin
+@i^1476^Snapped Spider Limb
 @i^1686^Bristly Whisker
 @i^1687^Retractable Claw
 @i^1696^Curved Raptor Talon
@@ -304,6 +312,7 @@ GoldScout-export 6^1dkail4qsvir^20
 @i^5114^Severed Talon
 @i^5134^Small Furry Paw
 @i^5135^Thin Black Claw
+@i^5166^Webwood Venom Sac
 @i^5233^Stone of Relu
 @i^5386^Fine Moonstalker Pelt
 @i^5523^Small Barnacled Clam
@@ -337,6 +346,8 @@ GoldScout-export 6^1dkail4qsvir^20
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
 @i^7098^Splintered Tusk
+@i^7100^Sticky Ichor
+@i^7101^Bug Eye
 @i^7498^Top of Gelkak's Key
 @i^7499^Middle of Gelkak's Key
 @i^7500^Bottom of Gelkak's Key
@@ -348,6 +359,7 @@ GoldScout-export 6^1dkail4qsvir^20
 @i^9837^Banded Bracers of the Hierophant
 @i^9842^Banded Pauldrons of the Beast
 @i^9847^Conjurer's Cloak of the Bandit
+@i^10640^Webwood Ichor
 @i^12202^Tiger Meat
 @i^14162^Pagan Mitts of Shadow Wrath
 @i^14182^Watcher's Mantle of Spirit
@@ -407,6 +419,7 @@ GoldScout-export 6^1dkail4qsvir^20
 @q^1206^2:7:1
 @q^1364^0:4:0
 @q^1366^0:4:0
+@q^1367^0:4:0
 @q^1368^0:4:0
 @q^1369^0:4:0
 @q^1370^0:4:0
@@ -423,6 +436,7 @@ GoldScout-export 6^1dkail4qsvir^20
 @q^1445^1:4:0
 @q^1460^2:2:0
 @q^1468^1:7:1
+@q^1476^0:15:0
 @q^1686^0:15:0
 @q^1687^0:15:0
 @q^1696^0:15:0
@@ -529,6 +543,7 @@ GoldScout-export 6^1dkail4qsvir^20
 @q^5114^0:15:0
 @q^5134^1:12:0
 @q^5135^0:15:0
+@q^5166^1:12:0
 @q^5233^1:12:0
 @q^5386^1:12:0
 @q^5523^1:7:0
@@ -562,6 +577,8 @@ GoldScout-export 6^1dkail4qsvir^20
 @q^7073^0:15:0
 @q^7074^0:15:0
 @q^7098^0:15:0
+@q^7100^0:15:0
+@q^7101^0:15:0
 @q^7498^1:12:0
 @q^7499^1:12:0
 @q^7500^1:12:0
@@ -573,6 +590,7 @@ GoldScout-export 6^1dkail4qsvir^20
 @q^9837^2:4:0
 @q^9842^2:4:0
 @q^9847^2:4:0
+@q^10640^1:12:0
 @q^12202^1:7:1
 @q^14162^2:4:0
 @q^14182^2:4:0
@@ -620,6 +638,7 @@ GoldScout-export 6^1dkail4qsvir^20
 @m^1433^Redridge Mountains
 @m^1434^Stranglethorn Vale
 @m^1437^Wetlands
+@m^1438^Teldrassil
 @m^1439^Darkshore
 @m^1453^Stormwind City
 @c^724^
@@ -1613,6 +1632,12 @@ GoldScout-export 6^1dkail4qsvir^20
 @a^1418^242:6,262:7
 @a^1718^266:4,267:3,286:1
 @a^1756^155:2
+@a^1984^171:1,172:3
+@a^1985^131:2,132:2,151:9
+@a^1986^131:4,151:1
+@a^1989^132:2,151:2
+@a^2031^172:7
+@a^2032^131:3,132:5,151:7
 @a^2044^277:1
 @a^2070^32:1,51:1,52:1
 @a^2071^32:1,51:1,52:1
