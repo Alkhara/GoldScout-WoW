@@ -1,4 +1,4 @@
-GoldScout-export 6^lrqg90totyno^10
+GoldScout-export 6^lrqg90totyno^11
 678^5^0^43^44^1434^0.5129^0.2757^5^Mosh'Ogg Mauler^2728:1:1,2749:1:1,4005:1:1,4338:1:1,7909:1:1^
 679^2^0^43^44^1434^0.5159^0.2761^2^Mosh'Ogg Shaman^^
 680^2^0^45^45^1434^0.5239^0.2731^2^Mosh'Ogg Lord^4338:1:1,4599:1:1^
@@ -15,17 +15,17 @@ GoldScout-export 6^lrqg90totyno^10
 1095^1^0^36^36^1434^0.4317^0.1950^1^Venture Co. Workboss^4306:1:2^
 1096^2^0^35^36^1434^0.4254^0.1880^2^Venture Co. Geologist^2751:1:1^
 1097^4^0^34^35^1434^0.4276^0.1917^4^Venture Co. Mechanic^2592:1:2,4306:2:3,4377:1:1^
-1125^6^0^5^6^1426^0.4268^0.5747^6^Crag Boar^769:2:2,771:1:1,2886:3:3,3171:1:1^
-1126^3^0^6^7^1426^0.5399^0.4701^3^Large Crag Boar^771:1:1,2886:1:1^
+1125^12^0^5^6^1426^0.4496^0.5858^12^Crag Boar^769:4:4,771:3:3,2886:8:8,3171:3:3^
+1126^4^0^6^7^1426^0.5266^0.4955^4^Large Crag Boar^769:1:1,771:1:1,2886:1:1^
 1127^1^0^7^7^1426^0.5458^0.4759^1^Elder Crag Boar^771:1:1,2886:1:1,3172:1:1^
-1128^3^0^5^6^1426^0.4435^0.5643^3^Young Black Bear^6952:1:1,7073:1:1,7074:2:2^
+1128^5^0^5^6^1426^0.4229^0.5779^5^Young Black Bear^4865:1:1,6952:2:2,7073:1:1,7074:2:2^
 1131^1^0^7^8^1426^0.5052^0.5093^1^Winter Wolf^2672:1:1^
 1134^1^0^5^5^1426^0.4305^0.5495^1^Young Wendigo^^
-1135^1^0^6^7^1426^0.4107^0.4996^1^Wendigo^^
+1135^8^0^6^7^1426^0.4155^0.4919^8^Wendigo^2138:1:1,2213:1:1,2646:1:1,2671:3:3,2773:1:1^
 1138^1^0^6^6^1426^0.5149^0.4547^1^Snow Tracker Wolf^^
 1196^1^0^7^8^1426^0.4644^0.6328^1^Ice Claw Bear^2898:1:1^
 1199^3^0^5^6^1426^0.4306^0.5927^3^Juvenile Snow Leopard^4813:2:2,4814:1:1^
-1201^1^0^7^7^1426^0.4723^0.6309^1^Snow Leopard^4813:1:1^
+1201^3^0^7^8^1426^0.4817^0.5963^3^Snow Leopard^4813:1:1,4814:1:1^
 1488^9^0^43^44^1434^0.3484^0.5147^9^Zanzil Zombie^3928:1:1,4016:1:1,4338:1:1,213546:1:1^
 1489^6^0^43^44^1434^0.3557^0.5257^6^Zanzil Hunter^4608:1:1,6530:2:2^
 1490^12^0^44^44^1434^0.3483^0.5145^12^Zanzil Witch Doctor^4016:7:7,4306:1:2,4338:2:4,4424:1:1,8152:2:2,8153:2:5^
@@ -85,6 +85,8 @@ GoldScout-export 6^lrqg90totyno^10
 260425^2^0^37^37^1434^0.2995^0.7105^2^Venture Co. Mercenary^^
 260429^1^0^39^39^1434^0.4350^0.2031^1^Venture Co. Agent^2589:1:2,268810:1:1^
 269075^1^0^6^6^1426^0.2755^0.6353^1^Snow Leopard Prowler^4813:1:1^
+271486^2^0^6^8^1426^0.4134^0.4757^2^Wendigo Shaman^1418:1:1,2671:1:1^
+271530^5^0^7^8^1426^0.4147^0.4804^5^Elder Wendigo^2635:1:1,2671:4:4^
 @i^117^Tough Jerky
 @i^159^Refreshing Spring Water
 @i^750^Tough Wolf Meat
@@ -98,6 +100,7 @@ GoldScout-export 6^lrqg90totyno^10
 @i^1376^Frayed Cloak
 @i^1378^Frayed Pants
 @i^1380^Frayed Robe
+@i^1418^Worn Leather Belt
 @i^1464^Buzzard Talon
 @i^1630^Broken Electro-lantern
 @i^1645^Moonberry Juice
@@ -106,12 +109,17 @@ GoldScout-export 6^lrqg90totyno^10
 @i^1708^Sweet Nectar
 @i^2004^Grelin Whitebeard's Journal
 @i^2108^Frostmane Leather Vest
+@i^2138^Sharpened Letter Opener
 @i^2210^Battered Buckler
+@i^2213^Worn Large Shield
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2635^Loose Chain Belt
+@i^2646^Loose Chain Pants
 @i^2649^Flimsy Chain Belt
 @i^2650^Flimsy Chain Boots
 @i^2653^Flimsy Chain Gloves
+@i^2671^Wendigo Mane
 @i^2672^Stringy Wolf Meat
 @i^2725^Green Hills of Stranglethorn - Page 1
 @i^2728^Green Hills of Stranglethorn - Page 4
@@ -124,6 +132,7 @@ GoldScout-export 6^lrqg90totyno^10
 @i^2748^Green Hills of Stranglethorn - Page 24
 @i^2749^Green Hills of Stranglethorn - Page 25
 @i^2751^Green Hills of Stranglethorn - Page 27
+@i^2773^Cracked Shortbow
 @i^2797^Heart of Mokk
 @i^2799^Gorilla Fang
 @i^2886^Crag Boar Rib
@@ -224,6 +233,7 @@ GoldScout-export 6^lrqg90totyno^10
 @q^1376^0:4:0
 @q^1378^0:4:0
 @q^1380^0:4:0
+@q^1418^0:4:0
 @q^1464^0:15:0
 @q^1630^0:15:0
 @q^1645^1:0:0
@@ -232,12 +242,17 @@ GoldScout-export 6^lrqg90totyno^10
 @q^1708^1:0:0
 @q^2004^1:12:0
 @q^2108^1:4:0
+@q^2138^0:2:0
 @q^2210^0:4:0
+@q^2213^0:4:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2635^0:4:0
+@q^2646^0:4:0
 @q^2649^0:4:0
 @q^2650^0:4:0
 @q^2653^0:4:0
+@q^2671^1:12:0
 @q^2672^1:7:1
 @q^2725^1:12:0
 @q^2728^1:12:0
@@ -250,6 +265,7 @@ GoldScout-export 6^lrqg90totyno^10
 @q^2748^1:12:0
 @q^2749^1:12:0
 @q^2751^1:12:0
+@q^2773^0:2:0
 @q^2797^1:12:0
 @q^2799^1:12:0
 @q^2886^1:7:1
@@ -1049,17 +1065,17 @@ GoldScout-export 6^lrqg90totyno^10
 @a^1095^68:1
 @a^1096^68:2
 @a^1097^68:4
-@a^1125^210:1,228:3,247:1,248:1
-@a^1126^190:3
+@a^1125^210:1,228:4,229:3,247:1,248:1,249:2
+@a^1126^190:3,229:1
 @a^1127^190:1
-@a^1128^189:1,229:1,247:1
+@a^1128^189:1,227:1,229:1,247:2
 @a^1131^210:1
 @a^1134^208:1
-@a^1135^188:1
+@a^1135^188:6,208:2
 @a^1138^190:1
 @a^1196^249:1
 @a^1199^228:1,229:1,248:1
-@a^1201^249:1
+@a^1201^229:2,249:1
 @a^1488^206:6,207:3
 @a^1489^206:2,207:3,227:1
 @a^1490^206:10,207:2
@@ -1119,4 +1135,6 @@ GoldScout-export 6^lrqg90totyno^10
 @a^260425^285:1,286:1
 @a^260429^88:1
 @a^269075^245:1
+@a^271486^188:2
+@a^271530^188:4,208:1
 @l^0^enUS

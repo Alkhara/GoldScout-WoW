@@ -1,4 +1,4 @@
-GoldScout-export 6^0pjgxbjovwbd^22
+GoldScout-export 6^0pjgxbjovwbd^24
 92^3^0^39^40^1418^0.1248^0.3431^3^Rock Elemental^4553:1:1,4627:3:3,4784:3:3,8150:1:1^
 473^1^0^10^10^1429^0.7060^0.7983^1^Morgan the Collector^2589:1:2^
 667^21^0^39^40^1434^0.4568^0.3865^21^Skullsplitter Warrior^1520:12:12,1524:7:7,2744:1:1,3771:1:1,3805:1:1,4306:4:7,4338:1:1,8153:2:3^
@@ -30,7 +30,8 @@ GoldScout-export 6^0pjgxbjovwbd^22
 946^3^0^3^4^1426^0.2890^0.8248^3^Frostmane Novice^6753:3:3^
 978^23^0^38^38^1434^0.4910^0.0523^23^Kurzen Subchief^1707:1:1,2744:1:1,2745:2:2,4306:3:6,4338:1:1,213547:1:1^
 979^7^0^38^38^1434^0.4906^0.0589^7^Kurzen Shadow Hunter^1708:1:1,2735:1:1,4306:3:6^
-1138^1^0^6^6^1426^0.4533^0.4730^1^Snow Tracker Wolf^2672:1:1,3299:1:1^
+1125^1^0^6^6^1426^0.4547^0.5027^1^Crag Boar^769:1:1,2886:1:1^
+1138^2^0^6^7^1426^0.4491^0.4726^2^Snow Tracker Wolf^2672:2:2,3299:1:1^
 1557^15^0^40^41^1434^0.3258^0.6371^15^Elder Mistvale Gorilla^866:1:1,2799:6:6,3919:5:5,4096:8:8,4097:4:4^
 1561^21^0^40^41^1434^0.2839^0.6996^21^Bloodsail Raider^1707:4:4,2732:1:1,2735:1:1,2751:1:1,3910:6:6,4306:7:11,4338:1:1,9260:1:1^
 1562^14^0^40^41^1434^0.2850^0.6991^14^Bloodsail Mage^1710:1:1,2730:1:1,2742:1:1,3897:1:1,3910:1:1,4306:6:12,4338:2:2,6426:1:1,9260:2:2,11986:1:1,15214:1:1^
@@ -185,6 +186,7 @@ GoldScout-export 6^0pjgxbjovwbd^22
 @i^117^Tough Jerky
 @i^159^Refreshing Spring Water
 @i^750^Tough Wolf Meat
+@i^769^Chunk of Boar Meat
 @i^770^Pointy Crocolisk Tooth
 @i^864^Knightly Longsword of Spirit
 @i^866^Monk's Staff of Holy Wrath
@@ -247,6 +249,7 @@ GoldScout-export 6^0pjgxbjovwbd^22
 @i^2751^Green Hills of Stranglethorn - Page 27
 @i^2799^Gorilla Fang
 @i^2843^Dirty Knucklebones
+@i^2886^Crag Boar Rib
 @i^3299^Fractured Canine
 @i^3385^Lesser Mana Potion
 @i^3404^Buzzard Wing
@@ -461,6 +464,7 @@ GoldScout-export 6^0pjgxbjovwbd^22
 @q^117^1:0:0
 @q^159^1:0:0
 @q^750^1:12:0
+@q^769^1:7:1
 @q^770^0:15:0
 @q^864^2:2:0
 @q^866^2:2:0
@@ -523,6 +527,7 @@ GoldScout-export 6^0pjgxbjovwbd^22
 @q^2751^1:12:0
 @q^2799^1:12:0
 @q^2843^1:12:0
+@q^2886^1:7:1
 @q^3299^0:15:0
 @q^3385^1:0:0
 @q^3404^1:7:1
@@ -2058,6 +2063,7 @@ GoldScout-export 6^0pjgxbjovwbd^22
 @c^274274^
 @c^274275^
 @c^274276^
+@c^274490^
 @c^274971^
 @c^274976^
 @c^275604^
@@ -2200,7 +2206,8 @@ GoldScout-export 6^0pjgxbjovwbd^22
 @a^946^325:3
 @a^978^9:12,29:11
 @a^979^9:1,29:6
-@a^1138^189:1
+@a^1125^209:1
+@a^1138^188:1,189:1
 @a^1557^226:1,246:10,266:4
 @a^1561^265:9,285:9,286:3
 @a^1562^265:6,285:6,286:2

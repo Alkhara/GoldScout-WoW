@@ -1,11 +1,17 @@
-GoldScout-export 6^sy9oojr66j7q^2
+GoldScout-export 6^sy9oojr66j7q^4
 1057^3^0^28^28^1437^0.4911^0.4846^3^Dragonmaw Bonewarder^2592:1:1,6930:3:3^
 4099^1^0^26^27^1441^0.4343^0.3322^1^Galak Marauder^929:1:1^
 6268^1^0^30^30^1413^0.6262^0.3524^1^Summoned Felhunter^^
 6412^3^0^25^25^1437^0.4918^0.4874^3^Skeleton^^
+12201^2^0^0^0^0^0.0000^0.0000^0^^13822:1:1,17713:1:1,17714:1:1,17715:1:1,17766:1:1,254098:1:1^
+12207^1^0^0^0^0^0.0000^0.0000^0^^5569:1:1,7973:1:1^
+13596^1^0^0^0^0^0.0000^0.0000^0^^17732:1:1^
+13601^2^0^0^0^0^0.0000^0.0000^0^^4338:1:3,17718:2:2^
 @i^929^Healing Potion
 @i^2592^Wool Cloth
+@i^4338^Mageweave Cloth
 @i^4603^Raw Spotted Yellowtail
+@i^5569^Seaweed
 @i^6359^Firefin Snapper
 @i^6362^Raw Rockscale Cod
 @i^6930^Rod of Channeling
@@ -13,10 +19,20 @@ GoldScout-export 6^sy9oojr66j7q^2
 @i^13422^Stonescale Eel
 @i^13754^Raw Glossy Mightfish
 @i^13755^Raw Winter Squid
+@i^13822^Spiked Dagger
 @i^13874^Heavy Crate
+@i^17713^Blackstone Ring
+@i^17714^Bracers of the Stone Princess
+@i^17715^Eye of Theradras
+@i^17718^Gizlock's Hypertech Buckler
+@i^17732^Rotgrip Mantle
+@i^17766^Princess Theradras' Scepter
+@i^254098^Pattern: Frothing Gloves
 @q^929^1:0:0
 @q^2592^1:7:1
+@q^4338^1:7:1
 @q^4603^1:7:1
+@q^5569^0:15:0
 @q^6359^1:7:1
 @q^6362^1:7:1
 @q^6930^1:12:0
@@ -24,7 +40,15 @@ GoldScout-export 6^sy9oojr66j7q^2
 @q^13422^1:7:1
 @q^13754^1:7:1
 @q^13755^1:0:1
+@q^13822^0:2:0
 @q^13874^1:15:0
+@q^17713^3:4:0
+@q^17714^3:4:0
+@q^17715^3:4:0
+@q^17718^3:4:0
+@q^17732^3:4:0
+@q^17766^3:2:0
+@q^254098^3:9:0
 @m^1413^The Barrens
 @m^1425^The Hinterlands
 @m^1437^Wetlands
@@ -753,4 +777,4 @@ GoldScout-export 6^sy9oojr66j7q^2
 @a^6268^152:1
 @a^6412^189:2,210:1
 @f^1425^0^43^225^4603:29:33,6359:5:5,6362:7:7,7973:6:7,13422:5:9,13754:3:3,13755:1:1,13874:1:1^336:43
-@l^0^koKR
+@l^0^enUS
