@@ -1,4 +1,4 @@
-GoldScout-export 6^90wmxs6anthw^45
+GoldScout-export 6^90wmxs6anthw^46
 92^11^0^39^40^1418^0.1409^0.3509^11^Rock Elemental^4552:1:1,4553:3:3,4627:1:1,4784:7:7,7912:1:1,8150:3:3^
 587^16^0^33^34^1434^0.3066^0.1858^16^Bloodscalp Warrior^1519:4:4,1520:1:1,2750:1:1,2751:1:1,3771:1:1,3901:2:2,3915:4:4,4306:3:4,248688:1:1^
 588^6^0^34^35^1434^0.2359^0.1214^6^Bloodscalp Scout^2592:1:2^
@@ -108,6 +108,8 @@ GoldScout-export 6^90wmxs6anthw^45
 1674^4^0^6^7^1420^0.5837^0.3934^4^Rot Hide Gnoll^2589:4:6,2834:1:1^
 1675^9^0^7^8^1420^0.5858^0.3358^9^Rot Hide Mongrel^118:1:1,818:1:1,2589:3:4,2774:1:1,2834:4:4,3190:1:1,211786:1:1^
 1753^1^0^10^10^1420^0.5852^0.3166^1^Maggot Eye^3635:1:1^
+1766^2^0^11^12^1421^0.5640^0.1057^2^Mottled Worg^2672:2:2^
+1866^1^0^11^12^1421^0.5349^0.1392^1^Ravenclaw Slave^4605:1:1^
 1890^12^0^2^3^1420^0.3275^0.6173^12^Rattlecage Skeleton^159:1:1,1368:1:1,1380:1:1,2589:5:5,2652:1:1,3365:1:1,4604:1:1^
 1919^1^0^5^5^1420^0.3682^0.6066^1^Samuel Fipps^16333:1:1^
 1934^2^0^6^7^1420^0.3656^0.5017^2^Tirisfal Farmer^2070:1:1,2589:1:2,4536:1:2^
@@ -645,6 +647,7 @@ GoldScout-export 6^90wmxs6anthw^45
 @i^4599^Cured Ham Steak
 @i^4603^Raw Spotted Yellowtail
 @i^4604^Forest Mushroom Cap
+@i^4605^Red-speckled Mushroom
 @i^4607^Delicious Cave Mold
 @i^4626^Small Stone Shard
 @i^4627^Large Stone Slab
@@ -1104,6 +1107,7 @@ GoldScout-export 6^90wmxs6anthw^45
 @q^4599^1:0:0
 @q^4603^1:7:1
 @q^4604^1:0:0
+@q^4605^1:0:0
 @q^4607^1:0:0
 @q^4626^1:12:0
 @q^4627^1:12:0
@@ -1359,6 +1363,7 @@ GoldScout-export 6^90wmxs6anthw^45
 @m^1417^Arathi Highlands
 @m^1418^Badlands
 @m^1420^Tirisfal Glades
+@m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
 @m^1425^The Hinterlands
 @m^1432^Loch Modan
@@ -1935,6 +1940,8 @@ GoldScout-export 6^90wmxs6anthw^45
 @a^1674^151:3,171:1
 @a^1675^131:6,151:2,152:1
 @a^1753^131:1
+@a^1766^31:1,51:1
+@a^1866^50:1
 @a^1890^246:12
 @a^1919^247:1
 @a^1934^187:1,207:1
