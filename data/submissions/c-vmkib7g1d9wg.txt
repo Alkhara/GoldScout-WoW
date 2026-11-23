@@ -1,4 +1,4 @@
-GoldScout-export 6^vmkib7g1d9wg^25
+GoldScout-export 6^vmkib7g1d9wg^26
 442^1^0^16^16^1433^0.1044^0.7172^1^Tarantula^^
 587^1^0^34^34^1434^0.3005^0.1895^1^Bloodscalp Warrior^^
 588^11^1^34^35^1434^0.2493^0.1217^11^Bloodscalp Scout^2749:1:1,4067:1:1,4306:3:4,7090:1:1^
@@ -217,10 +217,17 @@ GoldScout-export 6^vmkib7g1d9wg^25
 255238^1^0^40^41^2652^0.4228^0.5511^1^Magram Outrunner^^
 255560^11^2^39^41^1443^0.6805^0.7920^11^Magram Guardian^4306:3:3,6067:3:3,254432:1:1^
 255587^2^0^38^38^2652^0.4423^0.2918^2^Bothered Bone Worm^^
+255898^8^0^38^39^2548^0.7425^0.6998^8^Murloc Oracle^5524:4:4,7434:1:1,213546:1:1,268344:3:4^
+255899^27^0^37^38^2548^0.7298^0.6708^27^Murloc Tideskimmer^268344:7:7^
 256492^1^0^10^10^2521^0.5362^0.7882^1^Fernfeather^4775:1:1,285273:1:1^
 256798^3^6^37^38^2548^0.4655^0.4768^3^Twilight Neophyte^4306:2:4^5427:1:1
+256801^8^0^40^41^2548^0.7315^0.6622^8^Murloc Warrior^1645:1:1,4603:1:2,5524:1:1,268344:1:1^
+256807^9^0^39^40^2548^0.8542^0.3703^9^Shore Crawler^3010:2:2,3864:1:1,5524:2:2,5569:2:2,12206:4:4,268345:6:6^
 256952^5^5^39^40^2548^0.4619^0.4793^5^Twilight Raider^3671:1:1,4306:1:2,4636:1:1^4601:1:1,5428:2:2
+257001^1^0^42^42^2548^0.7738^0.7310^1^Old Rot-Chum^268341:1:1^
 257017^1^0^37^37^2548^0.4676^0.4807^1^Twilight Worg^^
+257901^6^0^41^42^2548^0.8542^0.3608^6^Eastsea Buccaneer^4002:1:1,4306:1:1,4338:1:2,4637:1:1^
+257910^6^1^42^43^2548^0.8577^0.3744^6^Eastsea Musketeer^4306:1:1,4338:2:4,7470:1:1^5432:1:1
 258331^4^0^36^37^2548^0.5359^0.7667^4^Young Paletusk^2295:1:1,3403:1:1^
 258522^1^0^38^38^2548^0.5369^0.8626^1^Sootfur^265738:1:1^
 258573^9^8^36^37^2548^0.5028^0.8028^9^Mudfin Oracle^1645:2:2,4603:1:1,5524:3:3,17058:3:3^
@@ -356,6 +363,7 @@ GoldScout-export 6^vmkib7g1d9wg^25
 @i^3827^Mana Potion
 @i^3864^Citrine
 @i^3928^Superior Healing Potion
+@i^4002^Overlinked Chain Bracers
 @i^4067^Glyphed Buckler
 @i^4077^Mail Combat Headguard
 @i^4087^Trueshot Bow of the Whale
@@ -390,6 +398,7 @@ GoldScout-export 6^vmkib7g1d9wg^25
 @i^4603^Raw Spotted Yellowtail
 @i^4607^Delicious Cave Mold
 @i^4636^Strong Iron Lockbox
+@i^4637^Steel Lockbox
 @i^4731^Glyphed Epaulets
 @i^4735^Mistscape Cloak
 @i^4775^Cracked Bill
@@ -405,6 +414,7 @@ GoldScout-export 6^vmkib7g1d9wg^25
 @i^5429^A Pretty Rock
 @i^5430^Intricate Bauble
 @i^5431^Empty Hip Flask
+@i^5432^Hickory Pipe
 @i^5433^Rag Doll
 @i^5524^Thick-shelled Clam
 @i^5569^Seaweed
@@ -436,10 +446,12 @@ GoldScout-export 6^vmkib7g1d9wg^25
 @i^7090^Pattern: Green Silk Armor
 @i^7111^Nightsky Armor
 @i^7433^Twilight Gloves of Spirit
+@i^7434^Twilight Boots of the Sorcerer
 @i^7443^Sentinel Gloves of the Channeler
 @i^7444^Sentinel Boots of Nature Protection
 @i^7448^Sentinel Girdle of the Physician
 @i^7458^Knight's Boots of Power
+@i^7470^Regal Wizard Hat of the Eagle
 @i^7684^Bloodmage Mantle
 @i^7720^Whitemane's Chapeau
 @i^7848^Rock Elemental Shard
@@ -475,6 +487,7 @@ GoldScout-export 6^vmkib7g1d9wg^25
 @i^12184^Raptor Flesh
 @i^12202^Tiger Meat
 @i^12203^Red Wolf Meat
+@i^12206^Tender Crab Meat
 @i^14193^Raincaller Pants of the Hierophant
 @i^14196^Thistlefur Sandals of the Whale
 @i^14600^Warden's Wristbands
@@ -509,6 +522,7 @@ GoldScout-export 6^vmkib7g1d9wg^25
 @i^213526^Hybrid Haunch
 @i^213543^Scroll: UPDOG
 @i^213544^Scroll: TOPAZ YORAK
+@i^213546^Scroll: SHOOBEEDOOP
 @i^215373^Silver Hand Training Hammer
 @i^216616^Compound Cage Key
 @i^248686^Waylaid Crate: Journeyman Herbs
@@ -538,6 +552,9 @@ GoldScout-export 6^vmkib7g1d9wg^25
 @i^262889^Sealed Expert's Writ
 @i^265738^Sootfur's Pelt
 @i^266157^Jumbo Crawfish Shell
+@i^268341^Rot-Covered Harpoon
+@i^268344^Saltwater Murloc Eye
+@i^268345^Sand Crawler Meat
 @i^268586^Trapclaw's Pincer
 @i^270333^Voodoo-Infused Artifact
 @i^270343^I'lalai Fetish
@@ -650,6 +667,7 @@ GoldScout-export 6^vmkib7g1d9wg^25
 @q^3827^1:0:0
 @q^3864^2:7:1
 @q^3928^1:0:0
+@q^4002^0:4:0
 @q^4067^2:4:0
 @q^4077^2:4:0
 @q^4087^2:2:0
@@ -684,6 +702,7 @@ GoldScout-export 6^vmkib7g1d9wg^25
 @q^4603^1:7:1
 @q^4607^1:0:0
 @q^4636^2:15:0
+@q^4637^2:15:0
 @q^4731^2:4:0
 @q^4735^2:4:0
 @q^4775^0:15:0
@@ -699,6 +718,7 @@ GoldScout-export 6^vmkib7g1d9wg^25
 @q^5429^0:15:0
 @q^5430^0:15:0
 @q^5431^0:15:0
+@q^5432^0:15:0
 @q^5433^0:15:0
 @q^5524^1:7:0
 @q^5569^0:15:0
@@ -730,10 +750,12 @@ GoldScout-export 6^vmkib7g1d9wg^25
 @q^7090^2:9:0
 @q^7111^2:4:0
 @q^7433^2:4:0
+@q^7434^2:4:0
 @q^7443^2:4:0
 @q^7444^2:4:0
 @q^7448^2:4:0
 @q^7458^2:4:0
+@q^7470^2:4:0
 @q^7684^3:4:0
 @q^7720^3:4:0
 @q^7848^1:12:0
@@ -769,6 +791,7 @@ GoldScout-export 6^vmkib7g1d9wg^25
 @q^12184^1:7:1
 @q^12202^1:7:1
 @q^12203^1:7:1
+@q^12206^1:7:1
 @q^14193^2:4:0
 @q^14196^2:4:0
 @q^14600^2:4:0
@@ -803,6 +826,7 @@ GoldScout-export 6^vmkib7g1d9wg^25
 @q^213526^1:12:0
 @q^213543^1:0:0
 @q^213544^1:0:0
+@q^213546^1:0:0
 @q^215373^1:2:0
 @q^216616^1:12:0
 @q^248686^1:0:1
@@ -832,6 +856,9 @@ GoldScout-export 6^vmkib7g1d9wg^25
 @q^262889^3:0:0
 @q^265738^1:12:0
 @q^266157^1:12:0
+@q^268341^1:12:0
+@q^268344^1:12:0
+@q^268345^1:12:0
 @q^268586^1:12:0
 @q^270333^1:12:0
 @q^270343^1:12:0
@@ -2299,10 +2326,17 @@ GoldScout-export 6^vmkib7g1d9wg^25
 @a^255238^228:1
 @a^255560^313:11
 @a^255587^109:1,127:1
+@a^255898^254:2,294:2,295:3,315:1
+@a^255899^254:1,255:7,274:9,294:7,295:3
 @a^256492^310:1
 @a^256798^189:3
+@a^256801^254:2,255:2,274:2,294:2
+@a^256807^116:2,117:1,137:1,157:2,196:3
 @a^256952^189:5
+@a^257001^295:1
 @a^257017^189:1
+@a^257901^117:1,137:2,157:1,176:2
+@a^257910^117:1,137:1,156:1,157:2,176:1
 @a^258331^290:1,310:3
 @a^258522^350:1
 @a^258573^309:2,310:2,329:2,330:3
