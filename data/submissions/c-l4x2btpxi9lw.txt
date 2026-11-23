@@ -1,4 +1,4 @@
-GoldScout-export 6^l4x2btpxi9lw^9
+GoldScout-export 6^l4x2btpxi9lw^10
 92^3^0^40^40^1418^0.4097^0.7699^3^Rock Elemental^3864:1:1,4553:2:2,4627:3:3,7912:2:4^
 587^5^0^33^34^1434^0.3310^0.1551^5^Bloodscalp Warrior^1519:2:2,1520:1:1,3800:1:1,3901:2:2,3915:2:2,4306:1:1^
 588^17^0^34^35^1434^0.2438^0.1209^17^Bloodscalp Scout^1519:2:2,2289:1:1,2592:1:2,3385:1:1,3771:1:1,3915:2:2,4306:5:7,4338:1:1^
@@ -158,6 +158,10 @@ GoldScout-export 6^l4x2btpxi9lw^9
 13019^1^0^33^33^1443^0.5530^0.3013^1^Burning Blade Seer^2592:1:3,15750:1:1^
 255560^1^0^41^41^1443^0.6785^0.7864^1^Magram Guardian^4306:1:2,6067:1:1^
 255851^1^0^38^39^2548^0.7175^0.5042^1^Mature Paletusk^769:1:1^
+255898^10^0^38^39^2548^0.7325^0.6819^10^Murloc Oracle^5524:5:5,262889:1:1^
+255899^6^0^37^38^2548^0.7215^0.6641^6^Murloc Tideskimmer^268344:3:3^
+255901^12^0^36^37^2548^0.7262^0.6859^12^Sand Crawler^3010:1:1,5524:3:3,5569:6:6,12206:7:7,17057:4:4,268345:4:4^
+256801^4^0^40^41^2548^0.7361^0.7402^4^Murloc Warrior^4603:1:3,5524:3:3^
 257885^3^0^0^0^1415^0.0000^0.0000^0^^248693:1:1^
 257888^2^0^0^0^1415^0.0000^0.0000^0^^4306:1:4^
 257900^1^0^0^0^1415^0.0000^0.0000^0^^^
@@ -173,6 +177,7 @@ GoldScout-export 6^l4x2btpxi9lw^9
 262065^1^0^0^0^1415^0.0000^0.0000^0^^248708:1:1^
 262716^1^0^0^0^1415^0.0000^0.0000^0^^279863:1:1^
 263343^5^0^37^38^2548^0.6847^0.5572^5^Low Plains Buzzard^1464:4:4,3404:2:2,11418:1:1,12037:1:1,271793:3:3^
+263380^1^0^42^42^2548^0.5517^0.4546^1^Ghostmaw^271828:1:1^
 269175^3^0^36^38^1434^0.3460^0.2951^3^Carnivorous Weed^863:1:1,4607:1:1,7438:1:1,256037:1:1^
 @i^159^Refreshing Spring Water
 @i^769^Chunk of Boar Meat
@@ -220,6 +225,7 @@ GoldScout-export 6^l4x2btpxi9lw^9
 @i^2751^Green Hills of Stranglethorn - Page 27
 @i^2766^Deft Stiletto
 @i^2799^Gorilla Fang
+@i^3010^Fine Sand
 @i^3172^Boar Intestines
 @i^3264^Duskbat Wing
 @i^3265^Scavenger Paw
@@ -275,6 +281,7 @@ GoldScout-export 6^l4x2btpxi9lw^9
 @i^4583^Thick Furry Mane
 @i^4586^Smooth Raptor Skin
 @i^4587^Tribal Raptor Feathers
+@i^4603^Raw Spotted Yellowtail
 @i^4604^Forest Mushroom Cap
 @i^4607^Delicious Cave Mold
 @i^4626^Small Stone Shard
@@ -285,6 +292,7 @@ GoldScout-export 6^l4x2btpxi9lw^9
 @i^4865^Ruined Pelt
 @i^5116^Long Tail Feather
 @i^5128^Shed Lizard Skin
+@i^5524^Thick-shelled Clam
 @i^5569^Seaweed
 @i^5637^Large Fang
 @i^5797^Indurium Flake
@@ -347,6 +355,7 @@ GoldScout-export 6^l4x2btpxi9lw^9
 @i^12184^Raptor Flesh
 @i^12202^Tiger Meat
 @i^12203^Red Wolf Meat
+@i^12206^Tender Crab Meat
 @i^13138^The Silencer
 @i^13542^Demon Box
 @i^14414^Stonecloth Belt
@@ -382,7 +391,10 @@ GoldScout-export 6^l4x2btpxi9lw^9
 @i^256037^Grass Clippings
 @i^262889^Sealed Expert's Writ
 @i^267137^Krol'dok Moulding
+@i^268344^Saltwater Murloc Eye
+@i^268345^Sand Crawler Meat
 @i^271793^Plains Buzzard Feather
+@i^271828^Ghostmaw's Fang
 @i^274290^Painwalker Buckler
 @i^274995^Slavecrusher Scepter
 @i^275000^Zarmok's Plated Signet
@@ -434,6 +446,7 @@ GoldScout-export 6^l4x2btpxi9lw^9
 @q^2751^1:12:0
 @q^2766^0:2:0
 @q^2799^1:12:0
+@q^3010^0:15:0
 @q^3172^1:7:1
 @q^3264^1:12:0
 @q^3265^1:12:0
@@ -489,6 +502,7 @@ GoldScout-export 6^l4x2btpxi9lw^9
 @q^4583^0:15:0
 @q^4586^0:15:0
 @q^4587^0:15:0
+@q^4603^1:7:1
 @q^4604^1:0:0
 @q^4607^1:0:0
 @q^4626^1:12:0
@@ -499,6 +513,7 @@ GoldScout-export 6^l4x2btpxi9lw^9
 @q^4865^0:15:0
 @q^5116^1:7:1
 @q^5128^0:15:0
+@q^5524^1:7:0
 @q^5569^0:15:0
 @q^5637^1:7:1
 @q^5797^1:12:0
@@ -561,6 +576,7 @@ GoldScout-export 6^l4x2btpxi9lw^9
 @q^12184^1:7:1
 @q^12202^1:7:1
 @q^12203^1:7:1
+@q^12206^1:7:1
 @q^13138^3:2:0
 @q^13542^1:12:0
 @q^14414^2:4:0
@@ -596,7 +612,10 @@ GoldScout-export 6^l4x2btpxi9lw^9
 @q^256037^0:15:0
 @q^262889^3:0:0
 @q^267137^1:12:0
+@q^268344^1:12:0
+@q^268345^1:12:0
 @q^271793^1:12:0
+@q^271828^1:12:0
 @q^274290^3:4:0
 @q^274995^3:2:0
 @q^275000^3:4:0
@@ -725,6 +744,11 @@ GoldScout-export 6^l4x2btpxi9lw^9
 @a^13019^131:1
 @a^255560^313:1
 @a^255851^214:1
+@a^255898^254:5,274:1,294:1,314:3
+@a^255899^254:3,274:2,294:1
+@a^255901^254:4,274:4,294:2,314:2
+@a^256801^274:1,314:3
 @a^263343^193:1,213:1,233:1,234:1,253:1
+@a^263380^191:1
 @a^269175^106:1,107:1,126:1
 @l^0^enUS

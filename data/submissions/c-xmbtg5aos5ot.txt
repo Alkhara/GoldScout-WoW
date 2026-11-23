@@ -1,4 +1,4 @@
-GoldScout-export 6^xmbtg5aos5ot^14
+GoldScout-export 6^xmbtg5aos5ot^15
 1913^1^0^16^16^1421^0.6351^0.6314^1^Garde de Dalaran^^
 3975^2^0^0^0^0^0.0000^0.0000^0^^1529:1:1,7718:1:1,7719:1:1^
 4286^32^0^0^0^0^0.0000^0.0000^0^^1707:5:5,1708:1:1,2592:2:8,3197:1:1,3784:1:1,3803:1:1,3812:1:1,3813:2:2,4306:10:24,9868:1:1^
@@ -229,6 +229,7 @@ GoldScout-export 6^xmbtg5aos5ot^14
 @i^3812^Gants doublentins
 @i^3813^Pantalon doublentin
 @i^3857^Charbon
+@i^3928^Potion de soins excellente
 @i^3945^Bottes sergées
 @i^3947^Cape sergée
 @i^3948^Gants sergés
@@ -258,6 +259,7 @@ GoldScout-export 6^xmbtg5aos5ot^14
 @i^5758^Coffret en mithril
 @i^5759^Coffret de thorium
 @i^5784^Ecailles de murloc visqueuses
+@i^6149^Potion de mana supérieure
 @i^6289^Lutjan à longue mâchoire cru
 @i^6291^Goujon brillant cru
 @i^6292^Lutjan de 10 livres
@@ -413,6 +415,7 @@ GoldScout-export 6^xmbtg5aos5ot^14
 @i^13539^Toucher de la banshee
 @i^13757^Anguille électrique
 @i^13758^Rouget cru
+@i^13759^Lutjan nagenuit cru
 @i^13760^Saumon solécaille cru
 @i^13816^Epée longue fine
 @i^13817^Grande épée effilée
@@ -421,6 +424,7 @@ GoldScout-export 6^xmbtg5aos5ot^14
 @i^13821^Maillet massif
 @i^13823^Bâton de guerre massacreur
 @i^13825^Mousquet chargé
+@i^13886^Rouget de 37 livres
 @i^14047^Etoffe runique
 @i^14126^Amict rituel
 @i^14227^Soie d'araignée toilacier
@@ -540,6 +544,7 @@ GoldScout-export 6^xmbtg5aos5ot^14
 @q^3812^0:4:0
 @q^3813^0:4:0
 @q^3857^1:7:1
+@q^3928^1:0:0
 @q^3945^0:4:0
 @q^3947^0:4:0
 @q^3948^0:4:0
@@ -569,6 +574,7 @@ GoldScout-export 6^xmbtg5aos5ot^14
 @q^5758^2:15:0
 @q^5759^2:15:0
 @q^5784^1:7:1
+@q^6149^1:0:0
 @q^6289^1:7:1
 @q^6291^1:7:1
 @q^6292^1:15:0
@@ -724,6 +730,7 @@ GoldScout-export 6^xmbtg5aos5ot^14
 @q^13539^3:4:0
 @q^13757^1:7:1
 @q^13758^1:7:1
+@q^13759^1:7:1
 @q^13760^1:7:1
 @q^13816^0:2:0
 @q^13817^0:2:0
@@ -732,6 +739,7 @@ GoldScout-export 6^xmbtg5aos5ot^14
 @q^13821^0:2:0
 @q^13823^0:2:0
 @q^13825^0:2:0
+@q^13886^1:15:0
 @q^14047^1:7:1
 @q^14126^1:4:0
 @q^14227^1:7:1
@@ -1558,7 +1566,7 @@ GoldScout-export 6^xmbtg5aos5ot^14
 @f^1435^0^12^225^6358:1:1,6359:2:2,6362:9:9,16970:1:1^158:12
 @f^1442^0^315^130^929:1:1,2881:1:1,6289:106:106,6308:205:205,6309:2:2^229:48,249:267
 @f^1443^0^7^225^4603:2:2,6358:1:1,6359:2:2,6362:2:2,16968:1:1^305:7
-@f^1444^0^28^225^6358:2:2,8365:5:5,13757:3:3,13758:7:7,13760:11:11,16967:1:1^175:4,194:19,212:5
+@f^1444^0^274^225^3928:1:1,6149:1:1,6358:31:31,8365:38:38,13757:3:3,13758:125:125,13759:58:58,13760:16:16,13886:1:1,16967:1:1^175:4,194:265,212:5
 @f^1445^0^345^205^1710:1:1,6308:137:137,6363:1:1,8365:206:206,8366:5:5^107:22,127:124,148:199
 @f^1456^0^108^75^6289:63:63,6291:16:16,6308:29:29^247:108
 @l^0^frFR
