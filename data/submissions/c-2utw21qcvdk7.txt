@@ -1,4 +1,4 @@
-GoldScout-export 6^2utw21qcvdk7^12
+GoldScout-export 6^2utw21qcvdk7^13
 3^3^0^24^25^1431^0.2423^0.3461^3^Flesh Eater^884:1:1,4306:1:1,5529:1:1,6530:1:1^
 205^1^0^28^29^1431^0.6450^0.6902^1^Nightbane Dark Runner^^
 210^5^0^26^27^1431^0.2332^0.3101^5^Bone Chewer^884:1:1,4306:1:2,7419:1:1^
@@ -37,6 +37,11 @@ GoldScout-export 6^2utw21qcvdk7^12
 2407^9^0^33^34^1416^0.4871^0.5805^9^Hulking Mountain Lion^1686:3:3,3731:6:6,5637:1:1,213543:1:1^
 2408^4^0^30^31^1424^0.6203^0.4320^4^Snapjaw^3712:1:1,4555:2:2,4556:2:2^
 2462^6^0^25^25^1431^0.2365^0.3484^6^Flesh Eating Worm^^
+2562^0^1^33^33^0^0.0000^0.0000^0^Boulderfist Ogre^^
+2564^2^0^33^34^1417^0.3361^0.4563^2^Boulderfist Enforcer^3812:1:1^
+2586^2^0^30^31^1417^0.3300^0.2648^2^Syndicate Highwayman^5113:2:2^
+2587^2^1^32^33^1417^0.3308^0.2947^2^Syndicate Pathstalker^^5431:1:1,17124:1:1
+2589^1^0^31^32^1417^0.3343^0.2836^1^Syndicate Mercenary^^
 4420^1^0^0^0^0^0.0000^0.0000^0^^6687:1:1^
 4421^1^0^0^0^0^0.0000^0.0000^0^^5792:1:1,6692:1:1^
 4422^1^0^0^0^0^0.0000^0.0000^0^^274160:1:1^
@@ -182,6 +187,7 @@ GoldScout-export 6^2utw21qcvdk7^12
 @i^3784^Metal Stave
 @i^3805^Hardened Leather Pants
 @i^3807^Hardened Leather Tunic
+@i^3812^Double Mail Gloves
 @i^3870^Plans: Green Iron Shoulders
 @i^4071^Glimmering Mail Breastplate
 @i^4306^Silk Cloth
@@ -363,6 +369,7 @@ GoldScout-export 6^2utw21qcvdk7^12
 @q^3784^0:2:0
 @q^3805^0:4:0
 @q^3807^0:4:0
+@q^3812^0:4:0
 @q^3870^2:9:0
 @q^4071^2:4:0
 @q^4306^1:7:1
@@ -492,6 +499,7 @@ GoldScout-export 6^2utw21qcvdk7^12
 @m^1413^The Barrens
 @m^1415^Eastern Kingdoms
 @m^1416^Alterac Mountains
+@m^1417^Arathi Highlands
 @m^1424^Hillsbrad Foothills
 @m^1429^Elwynn Forest
 @m^1431^Duskwood
@@ -729,6 +737,10 @@ GoldScout-export 6^2utw21qcvdk7^12
 @a^2407^110:2,130:1,131:1,308:1,309:3,367:1
 @a^2408^153:1,172:2,211:1
 @a^2462^124:2,144:2,145:2
+@a^2564^166:1,186:1
+@a^2586^106:2
+@a^2587^106:1,126:1
+@a^2589^106:1
 @a^6132^368:3
 @a^6210^208:2
 @a^6213^208:1

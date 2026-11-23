@@ -1,4 +1,4 @@
-GoldScout-export 6^4xrx7rria12u^29
+GoldScout-export 6^4xrx7rria12u^30
 3^9^0^24^25^1431^0.2428^0.3563^9^Dévoreur^885:1:1,887:2:2,1129:3:3,1205:1:1,2589:1:1,2592:2:3,2783:1:1,6530:2:2^
 48^12^0^21^22^1431^0.7991^0.6958^12^Guerrier squelette^929:1:1,1747:1:1,1751:1:1,1798:1:1,1824:1:1,2378:6:6,2592:4:5,3012:1:1^
 121^5^0^15^16^1436^0.5003^0.7668^5^Eclaireuse défias^1766:1:1,2217:1:1,2589:1:1,7997:1:1^
@@ -100,9 +100,10 @@ GoldScout-export 6^4xrx7rria12u^29
 1069^6^0^25^26^1437^0.6170^0.3599^6^Dragonnet cramoisi^3175:2:2,279385:2:2^
 1110^15^0^27^28^1431^0.1545^0.3742^15^Ecumeur squelette^2592:1:2,4306:6:11,4606:1:1^
 1111^9^0^21^22^1437^0.5503^0.6384^9^Traqueuse sanguine^878:1:1,1081:6:6,1288:1:1,2251:2:2,3174:2:2,4428:4:4,280319:1:1^
-1157^6^0^26^27^1437^0.1421^0.2872^6^Marin maudit^422:1:1,4306:3:6^
+1157^7^0^26^27^1437^0.1438^0.2798^7^Marin maudit^422:1:1,3381:1:1,4306:3:6^
 1158^5^0^27^28^1437^0.1471^0.2596^5^Soldat de marine maudit^2290:1:1^
 1159^1^0^29^29^1437^0.1401^0.3083^1^Premier officier Snellig^3619:1:1^
+1160^1^0^30^30^1437^0.1535^0.2354^1^Capitaine Halyndor^2592:1:2,2629:1:1^
 1161^2^0^11^12^1432^0.3086^0.7926^2^Trogg Brisepierre^^
 1162^1^0^11^12^1432^0.3164^0.8602^1^Eclaireur Brisepierre^^
 1163^1^0^13^13^1432^0.3158^0.8580^1^Brise-crâne Brisepierre^^
@@ -312,6 +313,7 @@ GoldScout-export 6^4xrx7rria12u^29
 @i^2592^Etoffe de laine
 @i^2608^Ambre gris de battrodon
 @i^2611^Silex brut
+@i^2629^Clé du coffre de l'Intrépide
 @i^2636^Idole de pierre sculptée
 @i^2674^Chair de clampant
 @i^2675^Pince de clampant
@@ -356,6 +358,7 @@ GoldScout-export 6^4xrx7rria12u^29
 @i^3348^Peau de crocilisque géant
 @i^3349^Sac de Sidonie
 @i^3378^Ceinture en brocart
+@i^3381^Brassards à couture croisée
 @i^3385^Potion de mana inférieure
 @i^3397^Peau de jeune crocilisque
 @i^3401^Ecaille de crocilisque grossière
@@ -586,6 +589,7 @@ GoldScout-export 6^4xrx7rria12u^29
 @q^2592^1:7:1
 @q^2608^0:15:0
 @q^2611^1:12:0
+@q^2629^1:13:0
 @q^2636^1:12:0
 @q^2674^1:7:1
 @q^2675^1:7:1
@@ -630,6 +634,7 @@ GoldScout-export 6^4xrx7rria12u^29
 @q^3348^1:12:0
 @q^3349^1:12:0
 @q^3378^0:4:0
+@q^3381^0:4:0
 @q^3385^1:0:0
 @q^3397^1:12:0
 @q^3401^0:15:0
@@ -1617,9 +1622,10 @@ GoldScout-export 6^4xrx7rria12u^29
 @a^1069^152:6
 @a^1110^123:1,142:5,143:7,163:2
 @a^1111^250:2,251:5,270:2
-@a^1157^102:6
+@a^1157^83:1,102:6
 @a^1158^83:1,102:4
 @a^1159^122:1
+@a^1160^83:1
 @a^1161^306:1,326:1
 @a^1162^346:1
 @a^1163^346:1

@@ -1,4 +1,4 @@
-GoldScout-export 6^j2a23oxzafss^3
+GoldScout-export 6^j2a23oxzafss^4
 667^10^0^39^40^1434^0.4596^0.4027^10^Guerrero Machacacráneos^1520:5:5,1524:3:3,1708:1:1,3771:1:1,4306:1:2,8151:2:2^
 670^3^0^41^41^1434^0.4577^0.4211^3^Médico Brujo Machacacráneos^2466:3:3,4002:1:1,4338:1:2,4599:1:1^
 672^1^0^44^44^1434^0.4650^0.4484^1^Cazaespíritus Machacacráneos^4599:1:1^
@@ -18,9 +18,9 @@ GoldScout-export 6^j2a23oxzafss^3
 1492^1^0^47^47^1434^0.3687^0.6896^1^Gorlash^3932:1:1^
 1550^1^0^42^42^1434^0.3852^0.4679^1^Basilisco Colastador^11386:1:1^
 1557^1^0^41^41^1434^0.3434^0.6308^1^Gorila del Valle Velo de Bruma viejo^4097:1:1^
-1561^2^0^40^41^1434^0.2695^0.6923^2^Asaltante Velasangre^2725:1:1,3897:1:1,3910:1:1,3963:1:1^
-1563^10^0^42^43^1434^0.2449^0.6294^10^Aventurero Velasangre^3910:1:1,4338:5:6,9260:1:1^
-1564^8^0^42^43^1434^0.2560^0.6915^8^Brujo Velasangre^3910:5:5,4338:5:6,4419:1:1^
+1561^5^0^40^41^1434^0.2754^0.6882^5^Asaltante Velasangre^1708:1:1,2725:1:1,3897:1:1,3910:2:2,3963:1:1,4306:1:3^
+1563^19^0^42^43^1434^0.2455^0.6167^19^Aventurero Velasangre^2740:1:1,2745:1:1,3910:4:4,4007:1:1,4338:10:12,9260:2:2^
+1564^20^0^42^43^1434^0.2583^0.6638^20^Bruja Velasangre^2750:2:2,3910:8:8,4306:1:2,4338:6:8,4419:1:1,9260:2:2^
 1565^1^0^44^44^1434^0.3068^0.8987^1^Perro de mar Velasangre^^
 1907^28^0^43^44^1434^0.2587^0.6200^28^Expedicionario Naga^2730:1:1,2751:1:1,3928:1:1,4029:10:10,4603:1:2,6149:1:1,7496:1:1,7973:10:10,17058:13:13^
 2530^1^0^41^41^1434^0.3918^0.5788^1^Yenniku^^
@@ -32,8 +32,8 @@ GoldScout-export 6^j2a23oxzafss^3
 2676^4^0^40^41^1434^0.4127^0.4361^4^Segador de la cosecha compacto^^
 3560^2^0^41^41^1434^0.4572^0.4242^2^Guarda de sanación^^
 4505^1^0^44^44^1434^0.3017^0.8911^1^Marinera de cubierta Velasangre^^
-10928^4^0^42^43^1434^0.2653^0.7667^4^Esbirro súcubo^^
-12922^3^0^42^43^1434^0.2360^0.5454^3^Esbirro Diablillo^^
+10928^7^0^42^43^1434^0.2518^0.6755^7^Esbirro súcubo^^
+12922^14^0^42^43^1434^0.2569^0.6310^14^Esbirro Diablillo^^
 @i^1520^Sudor trol
 @i^1524^Colmillo Machacacráneos
 @i^1630^Electro-linterna rota
@@ -48,6 +48,7 @@ GoldScout-export 6^j2a23oxzafss^3
 @i^2735^Las verdes colinas de Tuercespina: Página 11
 @i^2740^Las verdes colinas de Tuercespina: Página 16
 @i^2744^Las verdes colinas de Tuercespina: Página 20
+@i^2745^Las verdes colinas de Tuercespina: Página 21
 @i^2749^Las verdes colinas de Tuercespina: Página 25
 @i^2750^Las verdes colinas de Tuercespina: Página 26
 @i^2751^Las verdes colinas de Tuercespina: Página 27
@@ -65,6 +66,7 @@ GoldScout-export 6^j2a23oxzafss^3
 @i^3963^Brazales de cuero grueso
 @i^3965^Guantes de cuero grueso
 @i^4002^Brazales de anillas superpuestas
+@i^4007^Armadura de anillas superpuestas
 @i^4016^Mezcla de Zanzil
 @i^4029^Junco akiris
 @i^4097^Diente de gorila astillado
@@ -108,6 +110,7 @@ GoldScout-export 6^j2a23oxzafss^3
 @q^2735^1:12:0
 @q^2740^1:12:0
 @q^2744^1:12:0
+@q^2745^1:12:0
 @q^2749^1:12:0
 @q^2750^1:12:0
 @q^2751^1:12:0
@@ -125,6 +128,7 @@ GoldScout-export 6^j2a23oxzafss^3
 @q^3963^0:4:0
 @q^3965^0:4:0
 @q^4002^0:4:0
+@q^4007^0:4:0
 @q^4016^1:12:0
 @q^4029^1:12:0
 @q^4097^0:15:0
@@ -861,9 +865,9 @@ GoldScout-export 6^j2a23oxzafss^3
 @a^1492^267:1
 @a^1550^187:1
 @a^1557^246:1
-@a^1561^265:2
-@a^1563^204:6,224:1,325:3
-@a^1564^204:3,224:1,325:3,345:1
+@a^1561^265:4,286:1
+@a^1563^204:12,224:2,325:3,326:2
+@a^1564^204:6,224:6,306:1,325:3,326:1,345:3
 @a^1565^346:1
 @a^1907^224:2,225:4,244:7,245:15
 @a^2530^227:1
@@ -875,6 +879,6 @@ GoldScout-export 6^j2a23oxzafss^3
 @a^2676^168:4
 @a^3560^169:2
 @a^4505^346:1
-@a^10928^204:1,325:2,345:1
-@a^12922^204:2,224:1
+@a^10928^204:2,224:2,325:2,345:1
+@a^12922^204:4,224:6,306:1,326:1,345:2
 @l^0^esES

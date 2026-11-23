@@ -1,4 +1,4 @@
-GoldScout-export 6^gxlima1ru1g4^3
+GoldScout-export 6^gxlima1ru1g4^4
 2729^1^0^39^40^1418^0.0997^0.6501^1^Elder Crag Coyote^12203:1:1^
 2734^1^0^41^41^1418^0.1111^0.6957^1^Ridge Stalker Patriarch^^
 6146^1^0^54^54^1447^0.4591^0.8003^1^Cliff Breaker^4552:1:1,7912:1:2,11405:1:2^
@@ -12,6 +12,13 @@ GoldScout-export 6^gxlima1ru1g4^3
 6507^8^0^49^50^1449^0.6550^0.5212^8^Ravasaur Hunter^4587:4:4,8146:1:1,11018:1:1,11477:2:2,12184:3:3,20015:2:2^
 6508^9^0^50^51^1449^0.6499^0.5166^9^Venomhide Ravasaur^4587:4:4,4588:1:1,11018:2:2,11477:2:2,12184:4:4,15177:1:1,248699:1:1^
 6559^1^0^52^52^1449^0.2817^0.3407^1^Glutinous Ooze^13073:1:1^
+7112^3^0^51^52^1448^0.3745^0.6133^3^Jaedenar Cultist^8766:1:1^
+7113^4^0^50^51^1448^0.3704^0.6043^4^Jaedenar Guardian^4019:1:1,4338:2:4,14801:1:1^
+7115^3^0^51^52^1448^0.3606^0.6010^3^Jaedenar Adept^^
+7153^20^0^48^49^1448^0.4802^0.9175^20^Deadwood Warrior^4018:1:1,4338:5:10^
+7154^8^0^48^49^1448^0.4832^0.9134^8^Deadwood Gardener^4338:3:5^
+7155^6^0^49^50^1448^0.4805^0.9047^6^Deadwood Pathfinder^4338:3:4,4602:1:1,251440:1:1^
+8959^2^0^47^48^1448^0.5084^0.8687^2^Felpaw Wolf^12203:1:1,213545:1:1^
 9097^3^0^0^0^0^0.0000^0.0000^0^^10103:1:1,12697:1:1,13446:1:1,14047:1:4^
 9098^5^0^0^0^0^0.0000^0.0000^0^^10109:1:1,14047:2:5,274964:4:4^
 9196^1^0^0^0^0^0.0000^0.0000^0^^12534:1:1,13166:1:1^
@@ -32,6 +39,7 @@ GoldScout-export 6^gxlima1ru1g4^3
 9267^4^0^0^0^0^0.0000^0.0000^0^^3975:1:1,8766:1:1,12045:1:1,14047:1:1^
 9268^1^0^0^0^0^0.0000^0.0000^0^^7910:1:1^
 9416^2^0^0^0^0^0.0000^0.0000^0^^8261:1:1,12203:1:1,12208:1:1^
+9464^1^0^51^51^1448^0.4780^0.9435^1^Overlord Ror^14047:1:2^
 9568^1^0^0^0^0^0.0000^0.0000^0^^10248:1:1,16679:1:1,274964:1:1^
 9583^1^0^0^0^0^0.0000^0.0000^0^^8952:1:1,14047:1:3^
 9692^2^0^0^0^0^0.0000^0.0000^0^^10097:1:1,14047:1:3^
@@ -51,12 +59,16 @@ GoldScout-export 6^gxlima1ru1g4^3
 @i^3945^Twill Boots
 @i^3970^Smooth Leather Boots
 @i^3975^Smooth Leather Shoulderpads
+@i^4018^Whetted Claymore
+@i^4019^Heavy Flint Axe
 @i^4337^Thick Spider's Silk
+@i^4338^Mageweave Cloth
 @i^4552^Smooth Stone Chip
 @i^4584^Large Trophy Paw
 @i^4585^Dripping Spider Mandible
 @i^4587^Tribal Raptor Feathers
 @i^4588^Pristine Raptor Skull
+@i^4602^Moon Harvest Pumpkin
 @i^7910^Star Ruby
 @i^7912^Solid Stone
 @i^7973^Big-mouth Clam
@@ -94,6 +106,7 @@ GoldScout-export 6^gxlima1ru1g4^3
 @i^13446^Major Healing Potion
 @i^14047^Runecloth
 @i^14227^Ironweb Spider Silk
+@i^14801^Bloodlust Cape
 @i^15177^Potent Shoulders of the Physician
 @i^15227^Diamond-Tip Bludgeon of Fire Protection
 @i^16679^Beaststalker's Mantle
@@ -102,22 +115,28 @@ GoldScout-export 6^gxlima1ru1g4^3
 @i^16712^Shadowcraft Gloves
 @i^16718^Wildheart Spaulders
 @i^20015^Elder Raptor Feathers
+@i^213545^Scroll: PEATCHY ATTAX
 @i^246684^Highborne Treasure Fragment
 @i^246888^Humongous Crystal
 @i^248696^Waylaid Crate: Flowering Artisan Herbs
 @i^248699^Waylaid Crate: Artisan Curiosities
 @i^249521^Formula: Dormant Heart of the Mountain
+@i^251440^Plans: Blessed Plate Gauntlet
 @i^274964^Mote of Unstable Magic
 @q^1074^0:15:0
 @q^3945^0:4:0
 @q^3970^0:4:0
 @q^3975^0:4:0
+@q^4018^0:2:0
+@q^4019^0:2:0
 @q^4337^1:7:1
+@q^4338^1:7:1
 @q^4552^0:15:0
 @q^4584^0:15:0
 @q^4585^0:15:0
 @q^4587^0:15:0
 @q^4588^0:15:0
+@q^4602^1:0:0
 @q^7910^2:7:1
 @q^7912^1:7:1
 @q^7973^1:7:0
@@ -155,6 +174,7 @@ GoldScout-export 6^gxlima1ru1g4^3
 @q^13446^1:0:0
 @q^14047^1:7:1
 @q^14227^1:7:1
+@q^14801^2:4:0
 @q^15177^2:4:0
 @q^15227^2:2:0
 @q^16679^3:4:0
@@ -163,14 +183,17 @@ GoldScout-export 6^gxlima1ru1g4^3
 @q^16712^3:4:0
 @q^16718^3:4:0
 @q^20015^0:15:0
+@q^213545^1:0:0
 @q^246684^1:12:0
 @q^246888^1:15:0
 @q^248696^1:0:1
 @q^248699^1:0:1
 @q^249521^3:9:0
+@q^251440^2:9:0
 @q^274964^1:15:0
 @m^1418^Badlands
 @m^1447^Azshara
+@m^1448^Felwood
 @m^1449^Un'Goro Crater
 @m^1451^Silithus
 @c^118^
@@ -1030,6 +1053,14 @@ GoldScout-export 6^gxlima1ru1g4^3
 @a^6507^192:2,193:1,212:1,213:3,232:1
 @a^6508^192:2,193:2,212:2,213:2,232:1
 @a^6559^125:1
+@a^7112^247:3
+@a^7113^227:1,247:3
+@a^7115^226:2,247:1
+@a^7153^349:6,369:14
+@a^7154^349:3,369:5
+@a^7155^349:4,369:2
+@a^8959^350:2
+@a^9464^369:1
 @a^12179^212:1
 @a^13136^212:1
 @a^247470^229:1,249:3,269:1
