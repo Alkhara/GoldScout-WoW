@@ -1,4 +1,4 @@
-GoldScout-export 6^j5c3kzpnjzpt^34
+GoldScout-export 6^j5c3kzpnjzpt^35
 95^17^0^11^12^1436^0.4832^0.4665^17^Defias Smuggler^829:2:2,1514:1:1,2589:2:4^
 114^21^0^14^15^1436^0.3850^0.5059^21^Harvest Watcher^732:7:7,814:4:4,1274:6:6,1509:1:1,4359:1:1,4678:1:1,255007:5:5^
 126^9^0^12^13^1436^0.5299^0.1101^9^Murloc Coastrunner^730:1:1,1179:1:1,5523:2:2,6521:1:1,9755:1:1,254548:5:5^
@@ -62,6 +62,9 @@ GoldScout-export 6^j5c3kzpnjzpt^34
 2406^3^0^32^33^1416^0.4338^0.8051^3^Mountain Lion^1686:2:2,3731:1:1^
 2407^6^0^33^34^1416^0.4077^0.8281^6^Hulking Mountain Lion^1686:2:2,1687:2:2,3731:4:4^
 2440^3^0^32^33^1416^0.5669^0.6604^3^Drunken Footpad^2592:1:3,3703:3:3^
+2586^10^0^30^31^1417^0.3150^0.2839^10^Syndicate Highwayman^1707:1:1,1831:1:1,4306:2:3,4338:1:1,5113:1:1,15242:1:1^
+2587^3^0^32^33^1417^0.3188^0.2799^3^Syndicate Pathstalker^4306:2:4,4634:1:1,7422:1:1^
+2589^6^0^31^32^1417^0.3257^0.2858^6^Syndicate Mercenary^2290:1:1,4306:2:3,5113:1:1,255723:2:2^
 3098^18^0^1^2^1411^0.4309^0.6456^18^Mottled Boar^117:2:2,1369:1:1,2650:1:1,2656:1:1,4865:8:8,7098:8:8^
 3245^5^0^16^17^1413^0.5040^0.4930^5^Ornery Plainstrider^3036:1:1,4775:2:2,4776:2:2,5114:2:2,5115:2:2,5469:1:1,17056:2:2^
 3281^1^0^4^4^1411^0.4063^0.6636^1^Sarkoth^4905:1:1,7100:1:1^
@@ -137,12 +140,14 @@ GoldScout-export 6^j5c3kzpnjzpt^34
 @i^1708^Sweet Nectar
 @i^1755^Reinforced Chain Boots
 @i^1784^Cross-stitched Pants
+@i^1831^Oaken War Staff
 @i^2138^Sharpened Letter Opener
 @i^2222^Tower Shield
 @i^2251^Gooey Spider Leg
 @i^2268^Stonesplinter Blade
 @i^2282^Rodentia Shortsword
 @i^2287^Haunch of Meat
+@i^2290^Scroll of Intellect II
 @i^2536^Trogg Stone Tooth
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
@@ -185,10 +190,12 @@ GoldScout-export 6^j5c3kzpnjzpt^34
 @i^3827^Mana Potion
 @i^4093^Large Basilisk Tail
 @i^4306^Silk Cloth
+@i^4338^Mageweave Cloth
 @i^4359^Handful of Copper Bolts
 @i^4537^Tel'Abim Banana
 @i^4555^Thick Scaly Tail
 @i^4604^Forest Mushroom Cap
+@i^4634^Iron Lockbox
 @i^4678^Veteran Girdle
 @i^4775^Cracked Bill
 @i^4776^Ruffled Feather
@@ -234,6 +241,7 @@ GoldScout-export 6^j5c3kzpnjzpt^34
 @i^7100^Sticky Ichor
 @i^7108^Infantry Shield of the Physician
 @i^7231^Astor's Letter of Introduction
+@i^7422^Phalanx Girdle of Agility
 @i^8180^Hunting Bow
 @i^9755^Nomad Gloves
 @i^9765^Cadet Vest of Spirit
@@ -244,6 +252,7 @@ GoldScout-export 6^j5c3kzpnjzpt^34
 @i^11385^Basilisk Scale
 @i^12037^Mystery Meat
 @i^15003^Primal Belt
+@i^15242^Honed Stiletto of Magic
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
@@ -257,6 +266,7 @@ GoldScout-export 6^j5c3kzpnjzpt^34
 @i^251961^Arcane Mote
 @i^254548^Longshore Murloc Gill
 @i^255007^Golem Isospring
+@i^255723^Manual: Greater Healing Potion
 @i^255724^Manual: Clever Poultice
 @i^262888^Sealed Journeyman's Writ
 @i^273031^Runemender's Seal
@@ -314,12 +324,14 @@ GoldScout-export 6^j5c3kzpnjzpt^34
 @q^1708^1:0:0
 @q^1755^0:4:0
 @q^1784^0:4:0
+@q^1831^0:2:0
 @q^2138^0:2:0
 @q^2222^0:4:0
 @q^2251^1:7:1
 @q^2268^1:2:0
 @q^2282^1:2:0
 @q^2287^1:0:0
+@q^2290^1:0:0
 @q^2536^1:12:0
 @q^2589^1:7:1
 @q^2592^1:7:1
@@ -362,10 +374,12 @@ GoldScout-export 6^j5c3kzpnjzpt^34
 @q^3827^1:0:0
 @q^4093^0:15:0
 @q^4306^1:7:1
+@q^4338^1:7:1
 @q^4359^1:7:1
 @q^4537^1:0:0
 @q^4555^0:15:0
 @q^4604^1:0:0
+@q^4634^2:15:0
 @q^4678^1:4:0
 @q^4775^0:15:0
 @q^4776^0:15:0
@@ -411,6 +425,7 @@ GoldScout-export 6^j5c3kzpnjzpt^34
 @q^7100^0:15:0
 @q^7108^2:4:0
 @q^7231^1:12:0
+@q^7422^2:4:0
 @q^8180^2:2:0
 @q^9755^1:4:0
 @q^9765^2:4:0
@@ -421,6 +436,7 @@ GoldScout-export 6^j5c3kzpnjzpt^34
 @q^11385^0:15:0
 @q^12037^1:7:1
 @q^15003^1:4:0
+@q^15242^2:2:0
 @q^17056^1:15:1
 @q^17057^1:15:0
 @q^17058^1:15:0
@@ -434,6 +450,7 @@ GoldScout-export 6^j5c3kzpnjzpt^34
 @q^251961^1:12:0
 @q^254548^1:12:0
 @q^255007^1:7:1
+@q^255723^2:9:0
 @q^255724^2:9:0
 @q^262888^3:0:0
 @q^273031^3:4:0
@@ -454,6 +471,7 @@ GoldScout-export 6^j5c3kzpnjzpt^34
 @m^1411^Durotar
 @m^1413^The Barrens
 @m^1416^Alterac Mountains
+@m^1417^Arathi Highlands
 @m^1420^Tirisfal Glades
 @m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
@@ -2365,6 +2383,9 @@ GoldScout-export 6^j5c3kzpnjzpt^34
 @a^2406^308:1,309:1,347:1
 @a^2407^309:2,326:1,347:3
 @a^2440^251:1,271:2
+@a^2586^105:1,106:7,126:2
+@a^2587^106:3
+@a^2589^106:5,126:1
 @a^3098^248:13,268:5
 @a^3245^190:2,209:1,210:2
 @a^3281^268:1

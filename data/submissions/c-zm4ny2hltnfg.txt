@@ -1,4 +1,4 @@
-GoldScout-export 6^zm4ny2hltnfg^20
+GoldScout-export 6^zm4ny2hltnfg^21
 232^2^0^23^23^1424^0.3333^0.3537^2^Farmer Ray^1485:1:1,4538:1:1^
 1034^2^0^27^27^1437^0.5243^0.4569^2^Dragonmaw Raider^4306:1:1^
 2266^8^0^23^24^1424^0.3529^0.3947^8^Hillsbrad Farmer^422:1:1,1746:1:1,2219:1:1,2592:4:7,4306:1:1,4538:4:4^
@@ -22,7 +22,7 @@ GoldScout-export 6^zm4ny2hltnfg^20
 2503^7^0^27^28^1424^0.2950^0.5367^7^Hillsbrad Foreman^3692:3:3,4306:1:2^
 3197^8^0^9^10^1411^0.5312^0.0978^8^Burning Blade Fanatic^117:1:1,1413:1:1,2589:3:4,2643:1:1,2645:1:1,15297:1:1,211780:1:1^
 3198^6^0^10^11^1411^0.5263^0.1006^6^Burning Blade Apprentice^159:1:1,818:1:1,1413:1:1,1495:1:1,1734:1:1,2589:1:1,14544:1:1^
-3234^2^0^14^14^1413^0.5354^0.2722^2^Lost Barrens Kodo^4780:1:1,4896:1:1,5082:1:1,5467:1:1^
+3234^2^0^14^15^1413^0.5354^0.2722^2^Lost Barrens Kodo^4780:1:1,4896:1:1,5082:1:1,5467:1:1^
 3235^2^0^24^25^1413^0.4484^0.7702^2^Greater Barrens Kodo^5122:2:2,5467:1:1^
 3236^1^0^19^19^1413^0.4484^0.7702^1^Barrens Kodo^5082:1:1^
 3237^1^0^25^26^1413^0.4484^0.7702^1^Wooly Kodo^5121:1:1,5467:1:1^
@@ -131,7 +131,12 @@ GoldScout-export 6^zm4ny2hltnfg^20
 11318^4^0^0^0^0^0.0000^0.0000^0^^1180:1:1,1495:1:1,1499:1:1,2589:2:4,211786:1:1^
 11319^2^0^0^0^0^0.0000^0.0000^0^^1501:1:1^
 11321^1^0^0^0^0^0.0000^0.0000^0^^4784:1:1^
+11322^9^0^0^0^0^0.0000^0.0000^0^^2287:2:2,2589:4:11,2632:1:1,2777:1:1,4571:1:1,14395:1:1,14396:1:1^
+11323^4^0^0^0^0^0.0000^0.0000^0^^211786:1:1^
+11324^1^0^0^0^0^0.0000^0.0000^0^^1504:1:1^
 11517^1^0^0^0^0^0.0000^0.0000^0^^272998:1:1^
+11519^1^0^0^0^0^0.0000^0.0000^0^^273007:1:1^
+11520^1^0^0^0^0^0.0000^0.0000^0^^14540:1:1^
 12759^2^0^27^27^1440^0.4821^0.7012^2^Tideress^5448:1:1,9451:2:5,16408:1:1^
 12940^1^0^22^22^1440^0.0956^0.2772^1^Vorsha the Lasher^5569:1:1^
 245999^1^0^0^0^1416^0.0000^0.0000^0^^273031:1:1^
@@ -175,6 +180,7 @@ GoldScout-export 6^zm4ny2hltnfg^20
 @i^1495^Calico Shoes
 @i^1499^Calico Pants
 @i^1501^Calico Tunic
+@i^1504^Warped Leather Bracers
 @i^1510^Heavy Hammer
 @i^1513^Old Greatsword
 @i^1697^Keen Raptor Tooth
@@ -206,10 +212,12 @@ GoldScout-export 6^zm4ny2hltnfg^20
 @i^2290^Scroll of Intellect II
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2632^Curved Dagger of the Whale
 @i^2643^Loose Chain Bracers
 @i^2645^Loose Chain Gloves
 @i^2675^Crawler Claw
 @i^2772^Iron Ore
+@i^2777^Feeble Shortbow
 @i^2782^Mishandled Recurve Bow
 @i^2785^Stiff Recurve Bow
 @i^2836^Coarse Stone
@@ -249,6 +257,7 @@ GoldScout-export 6^zm4ny2hltnfg^20
 @i^4538^Snapvine Watermelon
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
+@i^4571^War Knife of Nature Protection
 @i^4576^Light Bow
 @i^4604^Forest Mushroom Cap
 @i^4606^Spongy Morel
@@ -336,6 +345,9 @@ GoldScout-export 6^zm4ny2hltnfg^20
 @i^14159^Pagan Shoes of the Whale
 @i^14364^Mystic's Slippers
 @i^14373^Sanguine Belt
+@i^14395^Spells of Shadow
+@i^14396^Incantations from the Nether
+@i^14540^Taragaman the Hungerer's Heart
 @i^14544^Lieutenant's Insignia
 @i^14564^Prospector's Mitts
 @i^14567^Bristlebark Belt
@@ -368,6 +380,7 @@ GoldScout-export 6^zm4ny2hltnfg^20
 @i^270866^Titan Relic
 @i^271100^Thicket Raptor Meat
 @i^272998^Bone Knuckles
+@i^273007^Chasm Walkers
 @i^273025^Raptorclaw Greaves
 @i^273029^Golemsight Long Gun
 @i^273031^Runemender's Seal
@@ -398,6 +411,7 @@ GoldScout-export 6^zm4ny2hltnfg^20
 @q^1495^0:4:0
 @q^1499^0:4:0
 @q^1501^0:4:0
+@q^1504^0:4:0
 @q^1510^0:2:0
 @q^1513^0:2:0
 @q^1697^0:15:0
@@ -429,10 +443,12 @@ GoldScout-export 6^zm4ny2hltnfg^20
 @q^2290^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2632^2:2:0
 @q^2643^0:4:0
 @q^2645^0:4:0
 @q^2675^1:7:1
 @q^2772^1:7:1
+@q^2777^0:2:0
 @q^2782^0:2:0
 @q^2785^0:2:0
 @q^2836^1:7:1
@@ -472,6 +488,7 @@ GoldScout-export 6^zm4ny2hltnfg^20
 @q^4538^1:0:0
 @q^4555^0:15:0
 @q^4556^0:15:0
+@q^4571^2:2:0
 @q^4576^2:2:0
 @q^4604^1:0:0
 @q^4606^1:0:0
@@ -559,6 +576,9 @@ GoldScout-export 6^zm4ny2hltnfg^20
 @q^14159^2:4:0
 @q^14364^2:4:0
 @q^14373^2:4:0
+@q^14395^1:12:0
+@q^14396^1:12:0
+@q^14540^1:12:0
 @q^14544^1:12:0
 @q^14564^2:4:0
 @q^14567^2:4:0
@@ -591,6 +611,7 @@ GoldScout-export 6^zm4ny2hltnfg^20
 @q^270866^1:12:0
 @q^271100^1:12:0
 @q^272998^3:2:0
+@q^273007^3:4:0
 @q^273025^3:4:0
 @q^273029^3:2:0
 @q^273031^3:4:0

@@ -1,4 +1,4 @@
-GoldScout-export 6^gexvbq21x4ub^11
+GoldScout-export 6^gexvbq21x4ub^12
 587^4^0^33^34^1434^0.2886^0.2009^4^Bloodscalp Warrior^1519:3:3,2592:1:3,4306:1:1,213543:1:1^
 588^3^0^34^35^1434^0.2484^0.1298^3^Bloodscalp Scout^4306:1:2^
 595^3^0^34^35^1434^0.2483^0.1253^3^Bloodscalp Hunter^1708:1:1,1710:1:1^
@@ -14,6 +14,13 @@ GoldScout-export 6^gexvbq21x4ub^11
 699^1^0^34^35^1434^0.2623^0.1345^1^Bloodscalp Beastmaster^3915:1:1,4306:1:1^
 701^2^0^34^35^1434^0.2390^0.1172^2^Bloodscalp Mystic^3385:1:1,4306:1:1^
 736^7^0^32^33^1434^0.2888^0.1375^7^Panther^1686:3:3,1687:1:1^
+757^2^0^35^35^1435^0.5104^0.2887^2^Lost One Fisherman^4306:1:1,258530:1:1^
+759^5^0^36^37^1435^0.5829^0.2524^5^Lost One Hunter^3771:1:1,4306:1:2,7446:1:1^
+760^3^0^36^37^1435^0.6262^0.2319^3^Lost One Muckdweller^3803:1:1,4306:1:3^
+761^2^0^37^38^1435^0.6171^0.2548^2^Lost One Seer^^
+767^6^0^36^37^1435^0.3811^0.4097^6^Swamp Jaguar^1686:1:1,1688:5:5,8146:1:1^
+858^1^0^37^37^1435^0.4461^0.3137^1^Sorrow Spinner^1074:1:1^
+1084^2^0^35^36^1435^0.2951^0.5461^2^Young Sawtooth Crocolisk^770:2:2,12037:1:1^
 1094^1^0^34^35^1434^0.2888^0.0921^1^Venture Co. Miner^^
 1095^1^0^36^36^1434^0.2906^0.0949^1^Venture Co. Workboss^4306:1:1^
 1096^21^0^35^36^1434^0.4475^0.1936^21^Venture Co. Geologist^1630:3:3,2592:4:8,2740:1:1,3771:2:2,3816:1:1,4106:8:8,4306:7:9,248690:1:1^
@@ -63,6 +70,7 @@ GoldScout-export 6^gexvbq21x4ub^11
 2590^1^0^35^35^1417^0.2603^0.5798^1^Syndicate Conjuror^^
 2623^1^0^32^32^1416^0.1863^0.9019^1^Spirit of Old^^
 2667^3^0^36^37^1434^0.3710^0.2999^3^Ward of Laze^^
+2992^1^0^38^38^1435^0.6079^0.2571^1^Healing Ward V^^
 3560^6^0^33^37^1434^0.2349^0.1064^3^Healing Ward^^
 3984^1^0^33^33^1416^0.3192^0.3197^1^Nancy Vishas^4306:1:2,5538:1:1^
 4130^8^0^32^33^1441^0.7044^0.8502^8^Silithid Searcher^5853:1:1,5854:4:4,5855:1:1,6300:3:3,6302:1:1,248691:1:1^
@@ -179,6 +187,7 @@ GoldScout-export 6^gexvbq21x4ub^11
 @i^1630^Broken Electro-lantern
 @i^1686^Bristly Whisker
 @i^1687^Retractable Claw
+@i^1688^Long Soft Tail
 @i^1696^Curved Raptor Talon
 @i^1701^Curved Basilisk Claw
 @i^1702^Intact Basilisk Spine
@@ -236,6 +245,7 @@ GoldScout-export 6^gexvbq21x4ub^11
 @i^3795^Interlaced Cloak
 @i^3796^Interlaced Gloves
 @i^3802^Hardened Leather Bracers
+@i^3803^Hardened Cloak
 @i^3816^Reflective Heater
 @i^3827^Mana Potion
 @i^3901^Bloodscalp Tusk
@@ -298,9 +308,11 @@ GoldScout-export 6^gexvbq21x4ub^11
 @i^7356^Elder's Cloak of the Wolf
 @i^7443^Sentinel Gloves of the Bandit
 @i^7444^Sentinel Boots of the Knight
+@i^7446^Sentinel Cloak of the Bandit
 @i^7447^Sentinel Bracers of the Boar
 @i^7685^Orb of the Forgotten Seer
 @i^7713^Illusionary Rod
+@i^8146^Wicked Claw
 @i^8150^Deeprock Salt
 @i^9294^Recipe: Wildvine Potion
 @i^9772^Greenweave Leggings of the Whale
@@ -345,6 +357,7 @@ GoldScout-export 6^gexvbq21x4ub^11
 @i^248707^Waylaid Crate: Journeyman Parts
 @i^251961^Arcane Mote
 @i^256037^Grass Clippings
+@i^258530^Lucky Lure
 @i^262889^Sealed Expert's Writ
 @i^273033^Gravespike Repeater
 @i^273037^Felbough Arm
@@ -375,6 +388,7 @@ GoldScout-export 6^gexvbq21x4ub^11
 @q^1630^0:15:0
 @q^1686^0:15:0
 @q^1687^0:15:0
+@q^1688^0:15:0
 @q^1696^0:15:0
 @q^1701^0:15:0
 @q^1702^0:15:0
@@ -432,6 +446,7 @@ GoldScout-export 6^gexvbq21x4ub^11
 @q^3795^0:4:0
 @q^3796^0:4:0
 @q^3802^0:4:0
+@q^3803^0:4:0
 @q^3816^0:4:0
 @q^3827^1:0:0
 @q^3901^1:12:0
@@ -494,9 +509,11 @@ GoldScout-export 6^gexvbq21x4ub^11
 @q^7356^2:4:0
 @q^7443^2:4:0
 @q^7444^2:4:0
+@q^7446^2:4:0
 @q^7447^2:4:0
 @q^7685^3:4:0
 @q^7713^3:2:0
+@q^8146^1:7:1
 @q^8150^1:7:1
 @q^9294^2:9:0
 @q^9772^2:4:0
@@ -541,6 +558,7 @@ GoldScout-export 6^gexvbq21x4ub^11
 @q^248707^2:0:1
 @q^251961^1:12:0
 @q^256037^0:15:0
+@q^258530^1:12:0
 @q^262889^3:0:0
 @q^273033^3:2:0
 @q^273037^3:2:0
@@ -562,6 +580,7 @@ GoldScout-export 6^gexvbq21x4ub^11
 @m^1417^Arathi Highlands
 @m^1424^Hillsbrad Foothills
 @m^1434^Stranglethorn Vale
+@m^1435^Swamp of Sorrows
 @m^1441^Thousand Needles
 @m^1443^Desolace
 @m^1445^Dustwallow Marsh
@@ -1264,6 +1283,13 @@ GoldScout-export 6^gexvbq21x4ub^11
 @a^699^45:1
 @a^701^44:2
 @a^736^25:1,45:2,46:1,65:3
+@a^757^111:1,128:1
+@a^759^91:1,92:1,110:1,111:2
+@a^760^73:1,112:2
+@a^761^92:1,112:1
+@a^767^147:3,167:2,168:1
+@a^858^128:1
+@a^1084^205:2
 @a^1094^25:1
 @a^1095^25:1
 @a^1096^68:7,69:7,88:5,89:2
@@ -1313,6 +1339,7 @@ GoldScout-export 6^gexvbq21x4ub^11
 @a^2590^225:1
 @a^2623^363:1
 @a^2667^107:1,127:2
+@a^2992^112:1
 @a^3560^44:3
 @a^3984^126:1
 @a^4130^333:1,334:3,353:2,354:2

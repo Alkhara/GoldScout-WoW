@@ -1,4 +1,4 @@
-GoldScout-export 6^j067xb6qn07d^27
+GoldScout-export 6^j067xb6qn07d^28
 6^9^0^1^2^1429^0.4785^0.3567^9^Kobold Vermin^755:2:2,2589:1:1,2650:1:1,2652:1:1,247834:1:1,247839:3:3^
 38^21^0^3^4^1429^0.5419^0.4713^21^Defias Thug^159:2:2,752:12:12,1372:3:3,1378:1:1,2070:3:3,2211:1:1,2589:6:6,2649:1:1,2656:2:2^
 40^3^0^6^7^1429^0.4011^0.7954^3^Kobold Miner^773:2:2,2589:2:2,4536:1:1^
@@ -54,6 +54,9 @@ GoldScout-export 6^j067xb6qn07d^27
 2336^17^0^16^17^1439^0.5623^0.2674^17^Dark Strand Fanatic^1179:1:1,2589:2:4,2592:4:7,5348:1:1^
 2338^3^0^17^17^1439^0.3852^0.8596^3^Twilight Disciple^2216:1:1,2592:1:1^
 2339^6^0^17^18^1439^0.3831^0.8635^6^Twilight Thug^1764:1:1,2589:2:2,5352:1:1^
+2356^1^0^26^26^1424^0.3756^0.6658^1^Elder Gray Bear^3730:1:1,11406:1:1^
+2376^17^0^30^31^1424^0.4311^0.6747^17^Torn Fin Oracle^1205:1:1,1761:1:1,1805:1:1,3716:2:2,5524:5:5,5785:1:1,17057:3:3,17058:6:6,248692:1:1,249881:2:2^
+2377^21^0^31^32^1424^0.4217^0.6863^21^Torn Fin Tidehunter^1205:1:1,1712:1:1,3716:3:3,5524:5:5,5785:1:1,17057:5:5,17058:9:9,248710:1:1^
 3725^1^0^19^19^1440^0.3077^0.3171^1^Dark Strand Cultist^^
 4139^2^0^34^34^1441^0.8663^0.7638^2^Scorpid Terror^12037:1:1,19938:1:1^
 4140^4^0^31^32^1441^0.7939^0.6994^4^Scorpid Reaver^1288:1:1,5794:3:3,19938:1:1^
@@ -74,6 +77,7 @@ GoldScout-export 6^j067xb6qn07d^27
 4413^4^0^35^36^1445^0.5625^0.2575^4^Darkfang Spider^4585:2:2,12205:2:2^
 4458^1^0^35^36^1434^0.3364^0.2033^1^Murkgill Hunter^^
 4723^1^0^38^38^1434^0.4263^0.1833^1^Foreman Cozzle^1630:1:1,2738:1:1,5851:1:1^
+4969^1^0^25^26^1453^0.7373^0.5932^1^Old Town Thug^^
 6206^4^0^0^0^0^0.0000^0.0000^0^^1821:1:1,2592:1:3,4306:1:3,9308:1:1,9309:1:1^
 6207^9^0^0^0^0^0.0000^0.0000^0^^1749:1:1,1820:1:1,1831:1:1,3611:1:1,4306:1:1,9308:2:2,9309:3:3,248686:1:1^
 6210^1^0^25^25^1415^0.4342^0.5315^1^Caverndeep Pillager^^
@@ -147,10 +151,13 @@ GoldScout-export 6^j067xb6qn07d^27
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
+@i^1712^Scroll of Spirit II
 @i^1749^Linked Chain Cloak
 @i^1755^Reinforced Chain Boots
+@i^1761^Reinforced Chain Vest
 @i^1764^Canvas Shoes
 @i^1792^Patched Leather Pants
+@i^1805^Tough Leather Bracers
 @i^1820^Wooden Maul
 @i^1821^Warped Blade
 @i^1831^Oaken War Staff
@@ -199,6 +206,8 @@ GoldScout-export 6^j067xb6qn07d^27
 @i^3667^Tender Crocolisk Meat
 @i^3685^Raptor Egg
 @i^3712^Turtle Meat
+@i^3716^Murloc Head
+@i^3730^Big Bear Meat
 @i^3770^Mutton Chop
 @i^3771^Wild Hog Shank
 @i^3799^Interlaced Vest
@@ -235,6 +244,7 @@ GoldScout-export 6^j067xb6qn07d^27
 @i^5414^Grizzled Scalp
 @i^5469^Strider Meat
 @i^5523^Small Barnacled Clam
+@i^5524^Thick-shelled Clam
 @i^5637^Large Fang
 @i^5784^Slimy Murloc Scale
 @i^5785^Thick Murloc Scale
@@ -291,6 +301,9 @@ GoldScout-export 6^j067xb6qn07d^27
 @i^248686^Waylaid Crate: Journeyman Herbs
 @i^248689^Waylaid Crate: Journeyman Curiosities
 @i^248690^Waylaid Crate: Earthly Expert Herbs
+@i^248692^Waylaid Crate: Expert Ore
+@i^248710^Waylaid Crate: Expert Parts
+@i^249881^Recipe: Root Tea
 @i^251354^Plans: Crusader's Chain Helm
 @i^253982^Pattern: Filigreed Shadow Circlet
 @i^262889^Sealed Expert's Writ
@@ -340,10 +353,13 @@ GoldScout-export 6^j067xb6qn07d^27
 @q^1707^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
+@q^1712^1:0:0
 @q^1749^0:4:0
 @q^1755^0:4:0
+@q^1761^0:4:0
 @q^1764^0:4:0
 @q^1792^0:4:0
+@q^1805^0:4:0
 @q^1820^0:2:0
 @q^1821^0:2:0
 @q^1831^0:2:0
@@ -392,6 +408,8 @@ GoldScout-export 6^j067xb6qn07d^27
 @q^3667^1:7:1
 @q^3685^1:7:1
 @q^3712^1:7:1
+@q^3716^1:12:0
+@q^3730^1:7:1
 @q^3770^1:0:0
 @q^3771^1:0:0
 @q^3799^0:4:0
@@ -428,6 +446,7 @@ GoldScout-export 6^j067xb6qn07d^27
 @q^5414^1:12:0
 @q^5469^1:7:1
 @q^5523^1:7:0
+@q^5524^1:7:0
 @q^5637^1:7:1
 @q^5784^1:7:1
 @q^5785^1:7:1
@@ -484,6 +503,9 @@ GoldScout-export 6^j067xb6qn07d^27
 @q^248686^1:0:1
 @q^248689^1:0:1
 @q^248690^1:0:1
+@q^248692^1:0:1
+@q^248710^2:0:1
+@q^249881^1:9:0
 @q^251354^3:9:0
 @q^253982^3:9:0
 @q^262889^3:0:0
@@ -491,6 +513,7 @@ GoldScout-export 6^j067xb6qn07d^27
 @q^279276^1:0:0
 @q^280911^1:12:0
 @m^1415^Eastern Kingdoms
+@m^1424^Hillsbrad Foothills
 @m^1426^Dun Morogh
 @m^1429^Elwynn Forest
 @m^1433^Redridge Mountains
@@ -499,6 +522,7 @@ GoldScout-export 6^j067xb6qn07d^27
 @m^1440^Ashenvale
 @m^1441^Thousand Needles
 @m^1445^Dustwallow Marsh
+@m^1453^Stormwind City
 @c^724^
 @c^733^
 @c^787^
@@ -2819,6 +2843,9 @@ GoldScout-export 6^j067xb6qn07d^27
 @a^2336^111:17
 @a^2338^347:3
 @a^2339^347:6
+@a^2356^267:1
+@a^2376^249:3,267:2,268:11,269:1
+@a^2377^267:2,268:16,269:1,287:1,288:1
 @a^3725^126:1
 @a^4139^317:2
 @a^4140^256:1,295:3
@@ -2839,6 +2866,7 @@ GoldScout-export 6^j067xb6qn07d^27
 @a^4413^70:1,91:2,151:1
 @a^4458^86:1
 @a^4723^68:1
+@a^4969^234:1
 @a^6210^208:1
 @a^6213^208:1
 @a^6221^208:5
