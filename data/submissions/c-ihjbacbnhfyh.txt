@@ -1,7 +1,7 @@
-GoldScout-export 6^ihjbacbnhfyh^15
+GoldScout-export 6^ihjbacbnhfyh^16
 705^1^0^1^1^1426^0.2867^0.7251^1^Ragged Young Wolf^750:1:1,4865:1:1^
-1783^8^0^50^51^1422^0.4991^0.8101^8^Skeletal Flayer^7972:2:2,14047:2:3^
-1791^4^0^50^52^1422^0.5004^0.8067^4^Slavering Ghoul^6530:1:1,8766:1:1,213546:1:1^
+1783^29^0^50^51^1422^0.4962^0.8044^29^Skeletal Flayer^7972:3:3,8766:4:4,8948:1:1,14047:8:13^
+1791^13^0^50^52^1422^0.4990^0.8032^13^Slavering Ghoul^6530:2:2,8084:1:1,8755:1:1,8766:1:1,14047:3:4,213546:1:1^
 2639^1^0^45^46^1425^0.4706^0.6588^1^Vilebranch Axe Thrower^4338:1:1,8151:1:1^
 2641^2^0^46^47^1425^0.6657^0.6985^2^Vilebranch Headhunter^4338:1:2,4599:1:1,9259:1:1^
 2643^2^0^47^48^1425^0.6549^0.7176^2^Vilebranch Berserker^1520:1:1,9938:1:1^
@@ -165,6 +165,7 @@ GoldScout-export 6^ihjbacbnhfyh^15
 @i^7972^Ichor of Undeath
 @i^7973^Big-mouth Clam
 @i^7990^Plans: Heavy Mithril Helm
+@i^8084^Light Plate Gloves
 @i^8146^Wicked Claw
 @i^8150^Deeprock Salt
 @i^8151^Flask of Mojo
@@ -183,7 +184,9 @@ GoldScout-export 6^ihjbacbnhfyh^15
 @i^8707^Gahz'rilla's Electrified Scale
 @i^8723^Caliph Scorpidsting's Head
 @i^8751^Overlinked Coif
+@i^8755^Light Plate Helmet
 @i^8766^Morning Glory Dew
+@i^8948^Dried King Bolete
 @i^9234^Tiara of the Deep
 @i^9238^Uncracked Scarab Shell
 @i^9241^Sacred Mallet
@@ -338,6 +341,7 @@ GoldScout-export 6^ihjbacbnhfyh^15
 @q^7972^1:7:1
 @q^7973^1:7:0
 @q^7990^2:9:0
+@q^8084^0:4:0
 @q^8146^1:7:1
 @q^8150^1:7:1
 @q^8151^1:7:1
@@ -356,7 +360,9 @@ GoldScout-export 6^ihjbacbnhfyh^15
 @q^8707^1:12:0
 @q^8723^1:12:0
 @q^8751^0:4:0
+@q^8755^0:4:0
 @q^8766^1:0:0
+@q^8948^1:0:0
 @q^9234^1:12:0
 @q^9238^1:12:0
 @q^9241^1:12:0
@@ -1153,8 +1159,8 @@ GoldScout-export 6^ihjbacbnhfyh^15
 @c^285281^
 @c^286152^
 @a^705^285:1
-@a^1783^310:1,329:2,330:5
-@a^1791^310:1,329:1,330:2
+@a^1783^309:5,310:1,329:8,330:15
+@a^1791^309:2,310:1,329:1,330:9
 @a^2639^269:1
 @a^2641^273:1,293:1
 @a^2643^292:1,293:1

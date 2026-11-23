@@ -1,4 +1,4 @@
-GoldScout-export 6^ocwt8n26wzy6^45
+GoldScout-export 6^ocwt8n26wzy6^46
 48^19^0^21^22^1431^0.7908^0.7078^19^Skeletal Warrior^1772:1:1,1799:1:1,1802:1:1,2378:7:7,2592:5:7,2794:1:1,3198:1:1,4698:1:1^
 202^2^0^23^24^1431^0.4917^0.5446^2^Skeletal Horror^^
 203^13^0^22^23^1431^0.7968^0.7141^13^Skeletal Mage^2378:3:3,2589:1:2,2592:5:9,4306:2:2,5576:1:1^
@@ -9,6 +9,9 @@ GoldScout-export 6^ocwt8n26wzy6^45
 539^1^0^18^19^1431^0.6670^0.1763^1^Pygmy Venom Web Spider^1130:1:1^
 570^6^0^28^29^1431^0.2504^0.2997^6^Brain Eater^929:1:1,1129:2:2,4306:1:2,4606:2:2^
 587^1^0^34^34^1434^0.3311^0.1388^1^Bloodscalp Warrior^2592:1:1^
+588^9^0^34^35^1434^0.2547^0.1062^9^Bloodscalp Scout^1519:4:4,1708:1:1,3771:1:1,3782:1:1,4306:2:2^
+595^3^0^34^35^1434^0.2526^0.1014^3^Bloodscalp Hunter^1519:2:2,2744:1:1,4306:1:2,248694:1:1^
+597^5^0^36^37^1434^0.2447^0.0999^5^Bloodscalp Berserker^1519:1:1,1710:1:1,2750:1:1,4306:1:3^
 598^21^0^0^0^0^0.0000^0.0000^0^^1179:1:1,1815:1:1,1817:1:1,1930:1:1,2589:3:5,2592:3:5,2838:1:1,7997:1:1^
 604^14^0^27^28^1431^0.2455^0.2919^14^Plague Spreader^887:1:1,1129:4:4,1831:1:1,4306:3:5,4606:1:1,5529:1:1,6530:1:1^
 622^1^0^0^0^0^0.0000^0.0000^0^^2592:1:4^
@@ -21,8 +24,13 @@ GoldScout-export 6^ocwt8n26wzy6^45
 646^1^0^0^0^0^0.0000^0.0000^0^^5196:1:1^
 647^1^0^0^0^0^0.0000^0.0000^0^^10403:1:1^
 657^4^0^0^0^0^0.0000^0.0000^0^^2592:2:7^
+660^9^0^37^37^1434^0.2454^0.0973^9^Bloodscalp Witch Doctor^1519:4:4,2745:1:1,2749:1:1,3385:1:1,4306:1:1,4338:1:1,213547:1:1^
+671^14^0^36^37^1434^0.2429^0.1013^14^Bloodscalp Headhunter^1519:2:2,2725:1:1,2730:1:1,2734:1:1,3771:2:2,4306:6:13,248693:1:1^
 683^1^0^30^31^1434^0.4122^0.0822^1^Young Panther^1686:1:1^
 689^3^0^34^34^1434^0.4888^0.0944^3^Crystal Spine Basilisk^1701:2:2,1702:1:1,1703:1:1,11386:1:1^
+694^1^0^33^33^1434^0.3035^0.1674^1^Bloodscalp Axe Thrower^^
+699^3^0^34^35^1434^0.2558^0.1166^3^Bloodscalp Beastmaster^^
+701^4^0^34^35^1434^0.2517^0.1134^4^Bloodscalp Mystic^1519:1:1,3809:1:1,4306:2:3,277957:1:1^
 702^1^0^34^34^1434^0.3254^0.1207^1^Bloodscalp Scavenger^1519:1:1,4306:1:2^
 815^1^0^35^35^1434^0.4484^0.0862^1^Bookie Herod^^
 937^19^0^32^33^1434^0.4487^0.1024^19^Kurzen Jungle Fighter^1707:1:1,1708:1:1,2592:1:2,2749:1:1,2750:1:1,4306:8:11^
@@ -51,6 +59,7 @@ GoldScout-export 6^ocwt8n26wzy6^45
 1096^4^0^35^36^1434^0.4393^0.1693^4^Venture Co. Geologist^1630:1:1,4306:4:5^
 1111^3^0^21^22^1437^0.5510^0.6405^3^Leech Stalker^878:1:1,1081:2:2,2251:1:1,4428:1:1,280319:1:1^
 1150^4^0^30^31^1434^0.3680^0.1032^4^River Crocolisk^770:1:1,3667:1:1,4053:2:2,7356:1:1,12037:1:1^
+1152^1^0^35^35^1434^0.3891^0.2888^1^Snapjaw Crocolisk^770:1:1,12037:1:1^
 1157^5^0^26^27^1437^0.1378^0.3040^5^Cursed Sailor^422:1:1,4306:2:2^
 1158^1^0^27^28^1437^0.1390^0.2999^1^Cursed Marine^4306:1:1^
 1159^1^0^29^29^1437^0.1411^0.3067^1^First Mate Snellig^3619:1:1^
@@ -253,7 +262,11 @@ GoldScout-export 6^ocwt8n26wzy6^45
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2633^Jungle Remedy
+@i^2725^Green Hills of Stranglethorn - Page 1
+@i^2730^Green Hills of Stranglethorn - Page 6
+@i^2734^Green Hills of Stranglethorn - Page 10
 @i^2744^Green Hills of Stranglethorn - Page 20
+@i^2745^Green Hills of Stranglethorn - Page 21
 @i^2749^Green Hills of Stranglethorn - Page 25
 @i^2750^Green Hills of Stranglethorn - Page 26
 @i^2764^Small Dagger
@@ -303,8 +316,10 @@ GoldScout-export 6^ocwt8n26wzy6^45
 @i^3770^Mutton Chop
 @i^3771^Wild Hog Shank
 @i^3778^Taut Compound Bow
+@i^3782^Large War Club
 @i^3786^Shiny Dirk
 @i^3804^Hardened Leather Gloves
+@i^3809^Double Mail Boots
 @i^3814^Double Mail Shoulderpads
 @i^3931^Poisoned Spider Fang
 @i^4053^Large River Crocolisk Skin
@@ -423,11 +438,14 @@ GoldScout-export 6^ocwt8n26wzy6^45
 @i^211784^Scroll: WUBBA WUBBA
 @i^211854^Scroll: OMIT KESA
 @i^211855^Scroll: STHENIC LUNATE
+@i^213547^Scroll: THAW WORDS
 @i^216616^Compound Cage Key
 @i^248683^Waylaid Crate: Apprentice Ore
 @i^248685^Waylaid Crate: Apprentice Curiosities
 @i^248687^Waylaid Crate: Journeyman Ore
 @i^248688^Waylaid Crate: Journeyman Textiles
+@i^248693^Waylaid Crate: Expert Textiles
+@i^248694^Waylaid Crate: Expert Curiosities
 @i^248703^Waylaid Crate: Apprentice Ingots
 @i^251346^Plans: Guard's Chain Leggings
 @i^252022^Galestrider Jerky
@@ -438,6 +456,7 @@ GoldScout-export 6^ocwt8n26wzy6^45
 @i^273293^Bandsaw Wristbands
 @i^273457^Sorcerer Collar
 @i^277917^Stonetalon Supply Bundle
+@i^277957^Primitive Key
 @i^279505^Jagged Orcish Sword
 @i^279507^Curved Orcish Dagger
 @i^280103^Razormaw Incisor
@@ -523,7 +542,11 @@ GoldScout-export 6^ocwt8n26wzy6^45
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2633^1:0:0
+@q^2725^1:12:0
+@q^2730^1:12:0
+@q^2734^1:12:0
 @q^2744^1:12:0
+@q^2745^1:12:0
 @q^2749^1:12:0
 @q^2750^1:12:0
 @q^2764^0:2:0
@@ -573,8 +596,10 @@ GoldScout-export 6^ocwt8n26wzy6^45
 @q^3770^1:0:0
 @q^3771^1:0:0
 @q^3778^0:2:0
+@q^3782^0:2:0
 @q^3786^0:2:0
 @q^3804^0:4:0
+@q^3809^0:4:0
 @q^3814^0:4:0
 @q^3931^0:15:0
 @q^4053^1:12:0
@@ -693,11 +718,14 @@ GoldScout-export 6^ocwt8n26wzy6^45
 @q^211784^1:0:0
 @q^211854^1:0:0
 @q^211855^1:0:0
+@q^213547^1:0:0
 @q^216616^1:12:0
 @q^248683^1:0:1
 @q^248685^1:0:1
 @q^248687^1:0:1
 @q^248688^1:0:1
+@q^248693^1:0:1
+@q^248694^1:0:1
 @q^248703^2:0:1
 @q^251346^3:9:0
 @q^252022^1:0:0
@@ -708,6 +736,7 @@ GoldScout-export 6^ocwt8n26wzy6^45
 @q^273293^3:4:0
 @q^273457^3:4:0
 @q^277917^1:12:0
+@q^277957^1:12:0
 @q^279505^1:2:0
 @q^279507^1:2:0
 @q^280103^1:12:0
@@ -1454,9 +1483,17 @@ GoldScout-export 6^ocwt8n26wzy6^45
 @a^539^73:1
 @a^570^104:1,105:2,125:3
 @a^587^46:1
+@a^588^25:3,44:1,45:5
+@a^595^25:2,45:1
+@a^597^24:2,44:3
 @a^604^104:3,105:5,124:1,125:5
+@a^660^24:5,44:4
+@a^671^24:5,44:9
 @a^683^28:1
 @a^689^29:3
+@a^694^66:1
+@a^699^44:1,45:2
+@a^701^25:1,44:2,45:1
 @a^702^46:1
 @a^815^28:1
 @a^937^28:6,29:2,48:8,49:3
@@ -1485,6 +1522,7 @@ GoldScout-export 6^ocwt8n26wzy6^45
 @a^1096^68:4
 @a^1111^250:1,251:2
 @a^1150^26:1,27:1,47:2
+@a^1152^107:1
 @a^1157^102:2,122:3
 @a^1158^102:1
 @a^1159^122:1

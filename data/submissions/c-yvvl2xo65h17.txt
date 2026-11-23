@@ -1,4 +1,4 @@
-GoldScout-export 5^yvvl2xo65h17^5
+GoldScout-export 5^yvvl2xo65h17^6
 587^8^0^33^34^1434^0.3032^0.1961^8^Bloodscalp Warrior^1520:2:2,2738:1:1,3814:1:1,4306:3:3,12029:1:1^
 588^1^0^34^35^1434^0.2507^0.1133^1^Bloodscalp Scout^1710:1:1^
 595^4^0^34^35^1434^0.2358^0.1202^4^Bloodscalp Hunter^4306:2:3^
@@ -37,7 +37,21 @@ GoldScout-export 5^yvvl2xo65h17^5
 1151^5^0^35^36^1434^0.2644^0.2015^5^Saltwater Crocolisk^770:2:2,3667:3:3,12037:1:1,248694:1:1^
 1152^16^0^35^36^1434^0.3987^0.2242^16^Snapjaw Crocolisk^770:10:10,3667:7:7,4104:5:5,12037:4:4^
 1421^1^0^31^31^1434^0.3811^0.0462^1^Private Merle^^
+2240^13^0^32^33^1416^0.5329^0.7290^13^Syndicate Footpad^1708:1:1,2592:2:2,3803:1:1,4306:5:6,5113:4:4,6986:1:1,213545:1:1^
+2241^4^0^33^34^1416^0.5274^0.7380^4^Syndicate Thief^2592:1:2,3799:1:1,4306:1:1,5113:1:1^
+2248^17^0^30^31^1424^0.4466^0.2968^17^Cave Yeti^1708:2:2,1754:1:1,3385:1:1,3720:5:5,3816:1:1^
+2249^12^0^31^32^1424^0.4411^0.2818^12^Ferocious Yeti^1710:1:1,3720:5:5,3810:1:1,4719:1:1^
+2319^2^0^34^35^1416^0.5813^0.6799^2^Syndicate Wizard^1707:1:1,213421:1:1^
+2374^4^0^28^29^1424^0.2927^0.7174^4^Torn Fin Muckdweller^5524:2:2,6308:2:3,17057:1:1,17058:1:1^
+2375^5^0^29^30^1424^0.2867^0.7196^5^Torn Fin Coastrunner^5524:3:3,5785:1:1,17058:1:1^
+2376^10^0^30^31^1424^0.3847^0.6678^10^Torn Fin Oracle^5524:3:3,6308:1:2,17057:3:3,17058:1:1,211853:1:1^
+2377^13^0^31^32^1424^0.3916^0.6681^13^Torn Fin Tidehunter^3786:1:1,5524:5:5,5785:1:1,8746:1:1,17057:3:3,17058:3:3^
+2406^4^0^32^33^1416^0.4654^0.7984^4^Mountain Lion^1686:2:2,3731:3:3^
+2407^4^0^33^34^1416^0.4370^0.8053^4^Hulking Mountain Lion^1686:1:1,3731:3:3^
+2408^2^0^30^31^1424^0.6890^0.1371^2^Snapjaw^4555:1:1,4556:1:1,5524:1:1^
+2440^1^0^33^33^1416^0.5802^0.6564^1^Drunken Footpad^1708:1:1,3703:1:1^
 2635^1^0^38^38^1434^0.2262^0.1965^1^Elder Saltwater Crocolisk^770:1:1,4105:1:1^
+2946^2^0^44^44^1424^0.5033^0.5271^2^Puppet of Helcular^^
 3560^2^0^37^37^1434^0.2473^0.0953^2^Healing Ward^^
 4260^1^0^37^37^1434^0.4411^0.1761^1^Venture Co. Shredder^1477:1:1,4306:1:3^
 250868^1^0^6^6^2521^0.4299^0.5188^1^Vuldren^2672:1:1,3300:1:1^
@@ -93,6 +107,7 @@ GoldScout-export 5^yvvl2xo65h17^5
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
+@i^1754^Reinforced Chain Belt
 @i^2210^Battered Buckler
 @i^2211^Bent Large Shield
 @i^2589^Linen Cloth
@@ -127,18 +142,25 @@ GoldScout-export 5^yvvl2xo65h17^5
 @i^3357^Liferoot
 @i^3363^Frayed Belt
 @i^3365^Frayed Bracers
+@i^3385^Lesser Mana Potion
 @i^3615^Kurzen's Head
 @i^3667^Tender Crocolisk Meat
 @i^3685^Raptor Egg
+@i^3703^Southshore Stout
+@i^3720^Yeti Fur
+@i^3731^Lion Meat
 @i^3771^Wild Hog Shank
 @i^3778^Taut Compound Bow
 @i^3785^Keen Axe
 @i^3786^Shiny Dirk
 @i^3787^Stone Club
+@i^3799^Interlaced Vest
 @i^3803^Hardened Cloak
 @i^3809^Double Mail Boots
+@i^3810^Double Mail Bracers
 @i^3813^Double Mail Pants
 @i^3814^Double Mail Shoulderpads
+@i^3816^Reflective Heater
 @i^3818^Fadeleaf
 @i^3827^Mana Potion
 @i^3879^Paw of Sin'Dall
@@ -151,8 +173,11 @@ GoldScout-export 5^yvvl2xo65h17^5
 @i^4338^Mageweave Cloth
 @i^4461^Raptor Hide
 @i^4540^Tough Hunk of Bread
+@i^4555^Thick Scaly Tail
+@i^4556^Speckled Shell Fragment
 @i^4586^Smooth Raptor Skin
 @i^4668^Battle Chain Cloak
+@i^4719^Nightsky Cloak
 @i^4757^Cracked Egg Shells
 @i^4775^Cracked Bill
 @i^4776^Ruffled Feather
@@ -160,15 +185,21 @@ GoldScout-export 5^yvvl2xo65h17^5
 @i^4860^Glistening Frenzy Scale
 @i^4865^Ruined Pelt
 @i^4873^Dry Hardened Barnacle
+@i^5113^Mark of the Syndicate
 @i^5469^Strider Meat
+@i^5524^Thick-shelled Clam
 @i^5637^Large Fang
+@i^5785^Thick Murloc Scale
+@i^6308^Raw Bristle Whisker Catfish
 @i^6889^Small Egg
+@i^6986^Crimson Lotus
 @i^7070^Elemental Water
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
 @i^7096^Plucked Feather
 @i^7097^Leg Meat
 @i^8146^Wicked Claw
+@i^8746^Interlaced Cowl
 @i^9848^Conjurer's Gloves of the Eagle
 @i^11386^Squishy Basilisk Eye
 @i^12029^Greenstone Talisman of the Falcon
@@ -176,8 +207,13 @@ GoldScout-export 5^yvvl2xo65h17^5
 @i^12184^Raptor Flesh
 @i^12202^Tiger Meat
 @i^15226^Giant Club of Stamina
+@i^17057^Shiny Fish Scales
+@i^17058^Fish Oil
 @i^211780^Scroll: KWYJIBO
 @i^211785^Scroll: CWAL
+@i^211853^Scroll: VOCE WELL
+@i^213421^Singed Note
+@i^213545^Scroll: PEATCHY ATTAX
 @i^216616^Compound Cage Key
 @i^248692^Waylaid Crate: Expert Ore
 @i^248694^Waylaid Crate: Expert Curiosities
@@ -225,6 +261,7 @@ GoldScout-export 5^yvvl2xo65h17^5
 @q^1707^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
+@q^1754^0:4:0
 @q^2210^0:4:0
 @q^2211^0:4:0
 @q^2589^1:7:1
@@ -259,18 +296,25 @@ GoldScout-export 5^yvvl2xo65h17^5
 @q^3357^1:7:1
 @q^3363^0:4:0
 @q^3365^0:4:0
+@q^3385^1:0:0
 @q^3615^1:12:0
 @q^3667^1:7:1
 @q^3685^1:7:1
+@q^3703^1:0:0
+@q^3720^1:12:0
+@q^3731^1:7:1
 @q^3771^1:0:0
 @q^3778^0:2:0
 @q^3785^0:2:0
 @q^3786^0:2:0
 @q^3787^0:2:0
+@q^3799^0:4:0
 @q^3803^0:4:0
 @q^3809^0:4:0
+@q^3810^0:4:0
 @q^3813^0:4:0
 @q^3814^0:4:0
+@q^3816^0:4:0
 @q^3818^1:7:1
 @q^3827^1:0:0
 @q^3879^1:12:0
@@ -283,8 +327,11 @@ GoldScout-export 5^yvvl2xo65h17^5
 @q^4338^1:7:1
 @q^4461^1:7:1
 @q^4540^1:0:0
+@q^4555^0:15:0
+@q^4556^0:15:0
 @q^4586^0:15:0
 @q^4668^1:4:0
+@q^4719^2:4:0
 @q^4757^0:15:0
 @q^4775^0:15:0
 @q^4776^0:15:0
@@ -292,15 +339,21 @@ GoldScout-export 5^yvvl2xo65h17^5
 @q^4860^0:15:0
 @q^4865^0:15:0
 @q^4873^0:15:0
+@q^5113^0:15:0
 @q^5469^1:7:1
+@q^5524^1:7:0
 @q^5637^1:7:1
+@q^5785^1:7:1
+@q^6308^1:7:1
 @q^6889^1:7:1
+@q^6986^0:15:0
 @q^7070^1:7:1
 @q^7073^0:15:0
 @q^7074^0:15:0
 @q^7096^0:15:0
 @q^7097^1:0:0
 @q^8146^1:7:1
+@q^8746^0:4:0
 @q^9848^2:4:0
 @q^11386^0:15:0
 @q^12029^2:4:0
@@ -308,8 +361,13 @@ GoldScout-export 5^yvvl2xo65h17^5
 @q^12184^1:7:1
 @q^12202^1:7:1
 @q^15226^2:2:0
+@q^17057^1:15:0
+@q^17058^1:15:0
 @q^211780^1:0:0
 @q^211785^1:0:0
+@q^211853^1:0:0
+@q^213421^1:15:0
+@q^213545^1:0:0
 @q^216616^1:12:0
 @q^248692^1:0:1
 @q^248694^1:0:1
@@ -329,6 +387,8 @@ GoldScout-export 5^yvvl2xo65h17^5
 @q^257942^1:12:0
 @q^267474^1:0:0
 @q^277957^1:12:0
+@m^1416^Alterac Mountains
+@m^1424^Hillsbrad Foothills
 @m^1434^Stranglethorn Vale
 @m^2521^Zephras Isle
 @c^118^
@@ -1201,7 +1261,21 @@ GoldScout-export 5^yvvl2xo65h17^5
 @a^1151^64:1,65:2,85:2
 @a^1152^67:5,87:4,88:3,107:4
 @a^1421^7:1
+@a^2240^251:1,271:6,309:3,329:3
+@a^2241^271:2,329:2
+@a^2248^108:8,109:1,128:3,129:5
+@a^2249^108:5,109:4,128:3
+@a^2319^271:2
+@a^2374^285:3,286:1
+@a^2375^285:4,286:1
+@a^2376^249:1,266:2,267:5,268:1,269:1
+@a^2377^249:1,266:2,267:6,268:1,269:3
+@a^2406^309:3,329:1
+@a^2407^309:2,327:1,329:1
+@a^2408^53:2
+@a^2440^271:1
 @a^2635^64:1
+@a^2946^210:2
 @a^3560^24:1,44:1
 @a^4260^68:1
 @a^250868^208:1

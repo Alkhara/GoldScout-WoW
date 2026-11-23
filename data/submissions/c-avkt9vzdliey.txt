@@ -1,4 +1,4 @@
-GoldScout-export 6^avkt9vzdliey^20
+GoldScout-export 6^avkt9vzdliey^21
 587^11^0^33^34^1434^0.2902^0.1962^11^Bloodscalp Warrior^1519:3:3,1520:1:1,2732:1:1,2738:1:1,4306:4:6,262889:1:1^
 588^10^0^34^35^1434^0.2387^0.1206^10^Bloodscalp Scout^2592:2:3,2738:1:1,3783:1:1,4306:3:5,277957:1:1^
 595^10^0^34^35^1434^0.2402^0.1212^10^Bloodscalp Hunter^2732:1:1,2744:1:1,2745:1:1,2749:1:1,3799:1:1,4306:2:4^
@@ -188,6 +188,7 @@ GoldScout-export 6^avkt9vzdliey^20
 @i^3804^Hardened Leather Gloves
 @i^3813^Double Mail Pants
 @i^3818^Fadeleaf
+@i^3820^Stranglekelp
 @i^3864^Citrine
 @i^3879^Paw of Sin'Dall
 @i^3918^Singing Crystal Shard
@@ -204,6 +205,7 @@ GoldScout-export 6^avkt9vzdliey^20
 @i^4461^Raptor Hide
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
+@i^4603^Raw Spotted Yellowtail
 @i^4634^Iron Lockbox
 @i^4721^Insignia Mantle
 @i^4791^Enchanted Water
@@ -233,6 +235,8 @@ GoldScout-export 6^avkt9vzdliey^20
 @i^6291^Raw Brilliant Smallfish
 @i^6308^Raw Bristle Whisker Catfish
 @i^6310^19 Pound Catfish
+@i^6358^Oily Blackmouth
+@i^6359^Firefin Snapper
 @i^6362^Raw Rockscale Cod
 @i^6682^Death Speaker Robes
 @i^6687^Corpsemaker
@@ -256,6 +260,7 @@ GoldScout-export 6^avkt9vzdliey^20
 @i^12184^Raptor Flesh
 @i^12202^Tiger Meat
 @i^12205^White Spider Meat
+@i^13422^Stonescale Eel
 @i^14177^Watcher's Cuffs of Magic
 @i^14185^Watcher's Cinch of Stamina
 @i^14399^Resilient Boots
@@ -274,6 +279,8 @@ GoldScout-export 6^avkt9vzdliey^20
 @i^17058^Fish Oil
 @i^19937^Small Scorpid Claw
 @i^19938^Heavy Scorpid Leg
+@i^21151^Rumsey Rum Black Label
+@i^21228^Mithril Bound Trunk
 @i^211784^Scroll: WUBBA WUBBA
 @i^211853^Scroll: VOCE WELL
 @i^211854^Scroll: OMIT KESA
@@ -357,6 +364,7 @@ GoldScout-export 6^avkt9vzdliey^20
 @q^3804^0:4:0
 @q^3813^0:4:0
 @q^3818^1:7:1
+@q^3820^1:7:1
 @q^3864^2:7:1
 @q^3879^1:12:0
 @q^3918^1:12:0
@@ -373,6 +381,7 @@ GoldScout-export 6^avkt9vzdliey^20
 @q^4461^1:7:1
 @q^4555^0:15:0
 @q^4556^0:15:0
+@q^4603^1:7:1
 @q^4634^2:15:0
 @q^4721^2:4:0
 @q^4791^1:0:0
@@ -402,6 +411,8 @@ GoldScout-export 6^avkt9vzdliey^20
 @q^6291^1:7:1
 @q^6308^1:7:1
 @q^6310^1:15:0
+@q^6358^1:7:1
+@q^6359^1:7:1
 @q^6362^1:7:1
 @q^6682^3:4:0
 @q^6687^3:2:0
@@ -425,6 +436,7 @@ GoldScout-export 6^avkt9vzdliey^20
 @q^12184^1:7:1
 @q^12202^1:7:1
 @q^12205^1:7:1
+@q^13422^1:7:1
 @q^14177^2:4:0
 @q^14185^2:4:0
 @q^14399^2:4:0
@@ -443,6 +455,8 @@ GoldScout-export 6^avkt9vzdliey^20
 @q^17058^1:15:0
 @q^19937^0:15:0
 @q^19938^0:15:0
+@q^21151^1:0:0
+@q^21228^1:15:0
 @q^211784^1:0:0
 @q^211853^1:0:0
 @q^211854^1:0:0
@@ -738,5 +752,6 @@ GoldScout-export 6^avkt9vzdliey^20
 @a^13019^131:1
 @a^255560^313:1,333:1
 @a^272273^268:1
+@f^1434^0^130^150^3820:10:20,4603:1:1,6358:26:26,6359:33:33,6362:5:5,13422:27:52,21151:4:7,21228:24:24^145:12,146:13,165:21,184:25,185:5,204:15,224:8,225:6,244:16,264:4,265:5
 @f^1453^0^245^1^6289:157:157,6291:44:44,6308:43:43,6310:1:1^270:245
 @l^0^enUS

@@ -1,4 +1,4 @@
-GoldScout-export 6^j03rbk855jpr^28
+GoldScout-export 6^j03rbk855jpr^29
 38^15^0^3^4^1429^0.5316^0.4835^15^Nervi défias^159:3:3,752:12:12,1372:1:1,1376:1:1,2070:5:5,2211:1:1,2589:3:3,2652:1:1,2654:1:1,2656:1:1^
 40^24^0^6^7^1429^0.5004^0.6734^24^Mineur kobold^159:1:1,772:4:4,773:5:5,1181:1:1,1417:1:1,1431:1:1,2589:3:4,2635:1:1,4536:2:2,248001:3:3^
 46^1^0^10^10^1429^0.8059^0.5349^1^Fourrageur murloc^780:1:1^
@@ -103,6 +103,13 @@ GoldScout-export 6^j03rbk855jpr^28
 2091^1^0^32^32^1437^0.5422^0.5549^1^Chef Nek'rosh^3625:1:1^
 2102^1^0^20^21^1437^0.5000^0.6974^1^Grunt Dragonmaw^^
 2149^2^0^14^14^1432^0.6302^0.6600^2^Ecumeur Sombrefer^2589:2:3^
+2156^5^0^18^19^1439^0.3567^0.8512^5^Golem lézardé^1812:2:2,5568:3:38^
+2157^1^0^19^19^1439^0.3568^0.8568^1^Béhémoth de pierre^2836:1:1^
+2158^2^0^18^19^1439^0.3510^0.8485^2^Eclaireur des Gravières^2589:1:3^
+2159^1^0^20^20^1439^0.3622^0.8638^1^Briseur d'os des Gravières^2592:1:2^
+2165^1^0^17^17^1439^0.4116^0.8255^1^Vieil ours des chardons^3170:1:1,3173:1:1^
+2338^4^0^16^17^1439^0.3912^0.8721^4^Disciple du crépuscule^1738:1:1,2592:1:2,248702:1:1^
+2339^1^0^18^18^1439^0.3926^0.8597^1^Nervi du crépuscule^^
 2529^2^0^0^0^0^0.0000^0.0000^0^^3378:1:1,248705:1:1^
 3632^1^0^15^16^1414^0.5200^0.5526^1^Rampant déviant^15210:1:1^
 3633^1^0^16^17^1414^0.5262^0.5494^1^Tueur déviant^14025:1:1^
@@ -269,6 +276,7 @@ GoldScout-export 6^j03rbk855jpr^28
 @i^1697^Dent de raptor
 @i^1705^Pierre de lune inférieure
 @i^1712^Parchemin d'Esprit II
+@i^1738^Ceinture en mailles entrelacées
 @i^1742^Gants en mailles entrelacées
 @i^1744^Protège-épaules en mailles entrelacées
 @i^1745^Haubergeon entrelacé
@@ -344,6 +352,7 @@ GoldScout-export 6^j03rbk855jpr^28
 @i^2785^Arc à double courbure rigide
 @i^2794^Un vieux livre d'histoire
 @i^2835^Pierre brute
+@i^2836^Pierre grossière
 @i^2856^Clou en fer
 @i^2939^Larme de crocilisque
 @i^2966^Pantalon de guerrier
@@ -426,6 +435,7 @@ GoldScout-export 6^j03rbk855jpr^28
 @i^5523^Petite palourde spiralée
 @i^5524^Palourde à coque épaisse
 @i^5543^Plans : Marteau iridescent
+@i^5568^Caillou lisse
 @i^5569^Algue
 @i^5635^Griffe aiguisée
 @i^5784^Ecailles de murloc visqueuses
@@ -528,6 +538,7 @@ GoldScout-export 6^j03rbk855jpr^28
 @i^248682^Caisse détournée : plantes d'apprenti
 @i^248683^Caisse détournée : minerai d'apprenti
 @i^248685^Caisse détournée : curiosités d'apprenti
+@i^248702^Caisse détournée : étoffes d'apprenti
 @i^248703^Caisse détournée : lingots d'apprenti
 @i^248704^Caisse détournée : composants d'apprenti
 @i^248705^Caisse détournée : étoffes de compagnon
@@ -628,6 +639,7 @@ GoldScout-export 6^j03rbk855jpr^28
 @q^1697^0:15:0
 @q^1705^2:7:1
 @q^1712^1:0:0
+@q^1738^0:4:0
 @q^1742^0:4:0
 @q^1744^0:4:0
 @q^1745^0:4:0
@@ -703,6 +715,7 @@ GoldScout-export 6^j03rbk855jpr^28
 @q^2785^0:2:0
 @q^2794^1:12:0
 @q^2835^1:7:1
+@q^2836^1:7:1
 @q^2856^1:12:0
 @q^2939^1:12:0
 @q^2966^2:4:0
@@ -785,6 +798,7 @@ GoldScout-export 6^j03rbk855jpr^28
 @q^5523^1:7:0
 @q^5524^1:7:0
 @q^5543^2:9:0
+@q^5568^1:6:0
 @q^5569^0:15:0
 @q^5635^1:7:1
 @q^5784^1:7:1
@@ -887,6 +901,7 @@ GoldScout-export 6^j03rbk855jpr^28
 @q^248682^1:0:1
 @q^248683^1:0:1
 @q^248685^1:0:1
+@q^248702^2:0:1
 @q^248703^2:0:1
 @q^248704^2:0:1
 @q^248705^2:0:1
@@ -926,6 +941,7 @@ GoldScout-export 6^j03rbk855jpr^28
 @m^1433^Les Carmines
 @m^1436^Marche de l'Ouest
 @m^1437^Les Paluns
+@m^1439^Sombrivage
 @m^1450^Reflet-de-Lune
 @c^118^
 @c^724^
@@ -2862,6 +2878,13 @@ GoldScout-export 6^j03rbk855jpr^28
 @a^2091^230:1
 @a^2102^270:1
 @a^2149^272:2
+@a^2156^327:3,347:2
+@a^2157^347:1
+@a^2158^326:1,327:1
+@a^2159^347:1
+@a^2165^328:1
+@a^2338^347:4
+@a^2339^347:1
 @a^3632^230:1
 @a^3633^210:1
 @a^3634^230:1
