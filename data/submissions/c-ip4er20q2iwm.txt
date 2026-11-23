@@ -1,4 +1,4 @@
-GoldScout-export 6^ip4er20q2iwm^9
+GoldScout-export 6^ip4er20q2iwm^10
 1891^3^0^13^14^1421^0.4615^0.7274^3^Pyrewood Watcher^2589:3:9^
 1894^4^0^14^15^1421^0.4418^0.7316^4^Pyrewood Sentry^1181:1:1,2589:1:4^
 1895^2^0^14^15^1421^0.4577^0.7376^2^Pyrewood Elder^1501:1:1,1733:1:1^
@@ -7,8 +7,14 @@ GoldScout-export 6^ip4er20q2iwm^9
 2067^1^0^13^13^1421^0.4651^0.7410^1^Councilman Brunswick^1515:1:1^
 2068^1^0^15^15^1421^0.4659^0.7442^1^Lord Mayor Morrison^2589:1:5^
 2332^3^0^21^21^1421^0.4508^0.8445^3^Valdred Moray^414:1:1^
+2960^1^0^9^10^1412^0.4776^0.2307^1^Prairie Wolf Alpha^2672:1:1^
 2964^1^0^10^10^1412^0.3943^0.2064^1^Windfury Sorceress^2589:1:1^
+3234^5^0^14^15^1413^0.5496^0.1465^5^Lost Barrens Kodo^4780:3:3,5082:2:2,5467:1:1,14025:1:1,15852:5:5^
+3379^4^0^10^10^1413^0.4782^0.1916^4^Burning Blade Bruiser^955:1:1,2589:1:2^
+3380^7^0^11^12^1413^0.4772^0.1917^7^Burning Blade Acolyte^2589:4:7,5071:1:1^
 3530^1^0^15^15^1421^0.4615^0.7305^1^Pyrewood Tailor^3036:1:1^
+3566^2^0^9^9^1412^0.4881^0.2324^2^Flatland Prowler^4814:2:2^
+4127^1^0^15^16^1413^0.5394^0.1247^1^Hecklefang Hyena^3301:1:1^
 11318^10^0^0^0^0^0.0000^0.0000^0^^1512:1:1,2073:1:1,2589:3:11,2763:1:1,2778:1:1,3375:1:1,4566:1:1^
 11319^4^0^0^0^0^0.0000^0.0000^0^^818:1:1,2589:1:4,248684:1:1^
 11320^7^0^0^0^0^0.0000^0.0000^0^^818:1:1,2073:1:1,3312:1:1,3669:2:2,3676:2:2,14563:1:1,15298:1:1^
@@ -49,6 +55,7 @@ GoldScout-export 6^ip4er20q2iwm^9
 @i^767^Long Bo Staff
 @i^774^Malachite
 @i^818^Tigerseye
+@i^955^Scroll of Intellect
 @i^1181^Scroll of Spirit
 @i^1210^Shadowgem
 @i^1411^Withered Staff
@@ -91,6 +98,7 @@ GoldScout-export 6^ip4er20q2iwm^9
 @i^3288^Tribal Vest
 @i^3289^Ancestral Boots
 @i^3299^Fractured Canine
+@i^3301^Sharp Canine
 @i^3312^Ceremonial Leather Bracers
 @i^3314^Ceremonial Leather Gloves
 @i^3370^Patchwork Belt
@@ -105,15 +113,20 @@ GoldScout-export 6^ip4er20q2iwm^9
 @i^4674^Tribal Cloak
 @i^4681^Brackwater Girdle
 @i^4775^Cracked Bill
+@i^4780^Kodo Horn Fragment
 @i^4784^Lifeless Stone
+@i^4814^Discolored Fang
 @i^5069^Fire Wand
 @i^5071^Shadow Wand
+@i^5082^Thin Kodo Leather
+@i^5467^Kodo Meat
 @i^5741^Rock Chip
 @i^6289^Raw Longjaw Mud Snapper
 @i^6291^Raw Brilliant Smallfish
 @i^6297^Old Skull
 @i^7100^Sticky Ichor
 @i^8178^Training Sword of Intellect
+@i^14025^Mystic's Belt
 @i^14119^Aboriginal Loincloth of Fire Protection
 @i^14145^Cursed Felblade
 @i^14151^Chanting Blade
@@ -128,6 +141,7 @@ GoldScout-export 6^ip4er20q2iwm^9
 @i^15477^Charger's Pants of Holy Wrath
 @i^15485^War Torn Pants of the Gorilla
 @i^15492^Bloodspattered Sash of Power
+@i^15852^Kodo Horn
 @i^15970^Native Branch of the Boar
 @i^248684^Waylaid Crate: Apprentice Textiles
 @i^252022^Galestrider Jerky
@@ -156,6 +170,7 @@ GoldScout-export 6^ip4er20q2iwm^9
 @q^767^1:2:0
 @q^774^2:7:1
 @q^818^2:7:1
+@q^955^1:0:0
 @q^1181^1:0:0
 @q^1210^2:7:1
 @q^1411^0:2:0
@@ -198,6 +213,7 @@ GoldScout-export 6^ip4er20q2iwm^9
 @q^3288^2:4:0
 @q^3289^1:4:0
 @q^3299^0:15:0
+@q^3301^0:15:0
 @q^3312^1:4:0
 @q^3314^2:4:0
 @q^3370^0:4:0
@@ -212,15 +228,20 @@ GoldScout-export 6^ip4er20q2iwm^9
 @q^4674^1:4:0
 @q^4681^1:4:0
 @q^4775^0:15:0
+@q^4780^0:15:0
 @q^4784^0:15:0
+@q^4814^0:15:0
 @q^5069^2:2:0
 @q^5071^2:2:0
+@q^5082^1:7:1
+@q^5467^1:7:1
 @q^5741^0:15:0
 @q^6289^1:7:1
 @q^6291^1:7:1
 @q^6297^0:15:0
 @q^7100^0:15:0
 @q^8178^2:2:0
+@q^14025^2:4:0
 @q^14119^2:4:0
 @q^14145^3:2:0
 @q^14151^3:2:0
@@ -235,6 +256,7 @@ GoldScout-export 6^ip4er20q2iwm^9
 @q^15477^2:4:0
 @q^15485^2:4:0
 @q^15492^2:4:0
+@q^15852^1:12:0
 @q^15970^2:4:0
 @q^248684^1:0:1
 @q^252022^1:0:0
@@ -259,6 +281,7 @@ GoldScout-export 6^ip4er20q2iwm^9
 @q^273005^3:4:0
 @q^273007^3:4:0
 @m^1412^Mulgore
+@m^1413^The Barrens
 @m^1421^Silverpine Forest
 @m^2521^Zephras Isle
 @c^118^
@@ -633,8 +656,14 @@ GoldScout-export 6^ip4er20q2iwm^9
 @a^2067^289:1
 @a^2068^289:1
 @a^2332^328:1,329:2
+@a^2960^89:1
 @a^2964^87:1
+@a^3234^50:3,71:2
+@a^3379^69:4
+@a^3380^69:7
 @a^3530^289:1
+@a^3566^89:2
+@a^4127^50:1
 @a^250868^251:1
 @a^250927^151:1
 @a^251622^309:1
