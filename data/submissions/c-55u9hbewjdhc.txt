@@ -1,7 +1,8 @@
-GoldScout-export 6^55u9hbewjdhc^3
+GoldScout-export 6^55u9hbewjdhc^4
+2240^1^0^33^33^1416^0.5470^0.6629^1^Syndicate Footpad^3601:1:1,248694:1:1^
 2244^8^0^21^22^1424^0.7815^0.4355^8^Syndicate Shadow Mage^2589:3:6,2592:1:1,3012:1:1,12989:1:1^
-2248^16^0^30^31^1424^0.4589^0.3184^16^Cave Yeti^1784:1:1,3771:1:1,3778:1:1^
-2249^5^0^31^32^1424^0.4433^0.3067^5^Ferocious Yeti^1708:1:1,248689:1:1^
+2248^23^0^30^31^1424^0.4538^0.3128^23^Cave Yeti^1784:1:1,1829:1:1,3771:2:2,3778:1:1^
+2249^7^0^31^32^1424^0.4410^0.3063^7^Ferocious Yeti^1708:1:1,248689:1:1^
 2260^7^0^21^22^1424^0.7973^0.4428^7^Syndicate Rogue^422:1:1,2592:1:1^
 2261^19^0^20^21^1424^0.7856^0.4365^19^Syndicate Watchman^422:1:1,2216:1:1,2589:2:4,2592:4:7,4576:1:1,14173:1:1^
 2349^3^0^24^25^1424^0.6760^0.3337^3^Giant Moss Creeper^878:1:1,2251:2:2,3182:1:1,3477:1:1^
@@ -76,6 +77,7 @@ GoldScout-export 6^55u9hbewjdhc^3
 @i^1708^Sweet Nectar
 @i^1784^Cross-stitched Pants
 @i^1826^Rock Maul
+@i^1829^Short Cutlass
 @i^2070^Darnassian Bleu
 @i^2210^Battered Buckler
 @i^2211^Bent Large Shield
@@ -97,6 +99,7 @@ GoldScout-export 6^55u9hbewjdhc^3
 @i^3476^Gray Bear Tongue
 @i^3477^Creeper Ichor
 @i^3499^Burnished Gold Key
+@i^3601^Syndicate Missive
 @i^3712^Turtle Meat
 @i^3730^Big Bear Meat
 @i^3771^Wild Hog Shank
@@ -142,6 +145,7 @@ GoldScout-export 6^55u9hbewjdhc^3
 @i^19938^Heavy Scorpid Leg
 @i^20310^Flayed Demon Skin
 @i^248689^Waylaid Crate: Journeyman Curiosities
+@i^248694^Waylaid Crate: Expert Curiosities
 @i^254432^Carved Centaur Totem
 @i^275722^Ukor's Lost Pack
 @i^277128^Bloodtalon Matriarch Eggs
@@ -168,6 +172,7 @@ GoldScout-export 6^55u9hbewjdhc^3
 @q^1708^1:0:0
 @q^1784^0:4:0
 @q^1826^0:2:0
+@q^1829^0:2:0
 @q^2070^1:0:0
 @q^2210^0:4:0
 @q^2211^0:4:0
@@ -189,6 +194,7 @@ GoldScout-export 6^55u9hbewjdhc^3
 @q^3476^1:12:0
 @q^3477^1:12:0
 @q^3499^1:13:0
+@q^3601^1:12:0
 @q^3712^1:7:1
 @q^3730^1:7:1
 @q^3771^1:0:0
@@ -234,10 +240,12 @@ GoldScout-export 6^55u9hbewjdhc^3
 @q^19938^0:15:0
 @q^20310^1:12:0
 @q^248689^1:0:1
+@q^248694^1:0:1
 @q^254432^2:15:0
 @q^275722^1:12:0
 @q^277128^1:12:0
 @m^1411^Durotar
+@m^1416^Alterac Mountains
 @m^1424^Hillsbrad Foothills
 @m^1443^Desolace
 @m^1454^Orgrimmar
@@ -925,9 +933,10 @@ GoldScout-export 6^55u9hbewjdhc^3
 @c^279985^
 @c^279987^
 @c^286152^
+@a^2240^270:1
 @a^2244^175:5,195:2,196:1
-@a^2248^108:1,109:1,128:3,129:11
-@a^2249^108:1,128:2,129:2
+@a^2248^108:2,109:3,128:7,129:11
+@a^2249^108:2,128:3,129:2
 @a^2260^175:2,176:2,196:3
 @a^2261^155:1,175:11,176:3,195:1,196:3
 @a^2349^93:1,153:2
