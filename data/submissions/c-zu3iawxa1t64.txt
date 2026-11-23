@@ -1,4 +1,4 @@
-GoldScout-export 6^zu3iawxa1t64^14
+GoldScout-export 6^zu3iawxa1t64^15
 429^3^0^25^26^1433^0.7430^0.4699^3^Dunkelwirker der Schattenfelle^211855:1:1^
 431^3^0^25^26^1433^0.7600^0.4964^3^Töter der Schattenfelle^1205:1:1,2592:2:3,4633:1:1^
 819^1^0^25^25^1433^0.7504^0.4766^1^Diener von Ilgalar^3724:1:1,3725:1:1^
@@ -47,7 +47,9 @@ GoldScout-export 6^zu3iawxa1t64^14
 4696^1^0^31^31^1443^0.6171^0.1318^1^Skorpashischnapper^19937:1:1^
 5766^7^0^4^5^1413^0.6176^0.3299^7^Savannenjunges^^
 14433^1^0^30^30^1437^0.1460^0.6739^1^Schlicker^3676:1:1,9829:1:1^
-250873^5^0^1^1^2521^0.4484^0.2502^5^Junger Vuldren^1367:1:1,2656:1:1,2672:2:2,3365:1:1,4865:3:3,7074:3:3^
+250873^6^0^1^1^2521^0.4431^0.2558^6^Junger Vuldren^1367:1:1,2656:1:1,2672:2:2,3365:1:1,4865:4:4,7074:3:3^
+251143^1^0^2^2^2521^0.4712^0.2180^1^Aufgewühlte Winde^1374:1:1,251930:1:1^
+251169^7^0^1^1^2521^0.4611^0.2779^7^Lästige Zirrusfliege^2211:1:1,251927:5:5,251928:2:2^
 260322^2^0^0^0^0^0.0000^0.0000^0^^^
 260325^2^0^0^0^0^0.0000^0.0000^0^^^
 260326^2^0^0^0^0^0.0000^0.0000^0^^270865:1:1^
@@ -77,6 +79,7 @@ GoldScout-export 6^zu3iawxa1t64^14
 @i^1205^Melonensaft
 @i^1288^Großer Giftbeutel
 @i^1367^Struppige Lederstiefel
+@i^1374^Ausgefranste Schuhe
 @i^1468^Murlocflosse
 @i^1478^Rolle des Schutzes II
 @i^1697^Beißender Raptorzahn
@@ -94,6 +97,7 @@ GoldScout-export 6^zu3iawxa1t64^14
 @i^1828^Steinkriegsaxt
 @i^1829^Kurzer Entersäbel
 @i^1831^Eichener Kriegsstab
+@i^2211^Gebogener großer Schild
 @i^2251^Klebriges Spinnenbein
 @i^2449^Erdwurzel
 @i^2592^Wollstoff
@@ -161,6 +165,9 @@ GoldScout-export 6^zu3iawxa1t64^14
 @i^248687^Abgefangene Kiste: Erz des Gesellen
 @i^248689^Abgefangene Kiste: Kuriositäten des Gesellen
 @i^248707^Abgefangene Kiste: Bauteile des Gesellen
+@i^251927^Abgesplitterter Zirrusfliegenstachel
+@i^251928^Zerrissener Insektenflügel
+@i^251930^Schwache Essenz der Vier Winde
 @i^270865^Relikt der Titanen
 @i^279385^Makellose Purpurschuppe
 @i^279993^Titanischer Schlüsselstein
@@ -180,6 +187,7 @@ GoldScout-export 6^zu3iawxa1t64^14
 @q^1205^1:0:0
 @q^1288^1:7:1
 @q^1367^0:4:0
+@q^1374^0:4:0
 @q^1468^1:7:1
 @q^1478^1:0:0
 @q^1697^0:15:0
@@ -197,6 +205,7 @@ GoldScout-export 6^zu3iawxa1t64^14
 @q^1828^0:2:0
 @q^1829^0:2:0
 @q^1831^0:2:0
+@q^2211^0:4:0
 @q^2251^1:7:1
 @q^2449^1:7:1
 @q^2592^1:7:1
@@ -264,6 +273,9 @@ GoldScout-export 6^zu3iawxa1t64^14
 @q^248687^1:0:1
 @q^248689^1:0:1
 @q^248707^2:0:1
+@q^251927^0:15:0
+@q^251928^0:15:0
+@q^251930^0:15:0
 @q^270865^1:12:0
 @q^279385^1:12:0
 @q^279993^1:12:0
@@ -298,10 +310,16 @@ GoldScout-export 6^zu3iawxa1t64^14
 @c^2684^
 @c^2685^
 @c^2687^
+@c^2840^
+@c^2841^
+@c^2842^
 @c^2888^
 @c^3220^
 @c^3530^
 @c^3531^
+@c^3575^
+@c^3576^
+@c^3577^
 @c^3662^
 @c^3663^
 @c^3664^
@@ -311,6 +329,8 @@ GoldScout-export 6^zu3iawxa1t64^14
 @c^3727^
 @c^3728^
 @c^3729^
+@c^3859^
+@c^3860^
 @c^3928^
 @c^4357^
 @c^4358^
@@ -378,6 +398,7 @@ GoldScout-export 6^zu3iawxa1t64^14
 @c^5525^
 @c^5526^
 @c^5527^
+@c^6037^
 @c^6038^
 @c^6218^
 @c^6219^
@@ -462,6 +483,7 @@ GoldScout-export 6^zu3iawxa1t64^14
 @c^11287^
 @c^11288^
 @c^11289^
+@c^11371^
 @c^11590^
 @c^11811^
 @c^11825^
@@ -476,6 +498,7 @@ GoldScout-export 6^zu3iawxa1t64^14
 @c^12217^
 @c^12218^
 @c^12224^
+@c^12359^
 @c^12655^
 @c^12810^
 @c^13446^
@@ -515,6 +538,7 @@ GoldScout-export 6^zu3iawxa1t64^14
 @c^17198^
 @c^17222^
 @c^17716^
+@c^17771^
 @c^18045^
 @c^18168^
 @c^18232^
@@ -619,6 +643,7 @@ GoldScout-export 6^zu3iawxa1t64^14
 @c^234000^
 @c^234001^
 @c^234002^
+@c^234003^
 @c^234005^
 @c^234434^
 @c^234468^
@@ -668,6 +693,7 @@ GoldScout-export 6^zu3iawxa1t64^14
 @c^249469^
 @c^249470^
 @c^249473^
+@c^249726^
 @c^249865^
 @c^249866^
 @c^249867^
@@ -697,6 +723,7 @@ GoldScout-export 6^zu3iawxa1t64^14
 @c^250079^
 @c^250080^
 @c^250081^
+@c^251291^
 @c^251525^
 @c^252683^
 @c^255715^
@@ -768,11 +795,17 @@ GoldScout-export 6^zu3iawxa1t64^14
 @c^279272^
 @c^279273^
 @c^279940^
+@c^279947^
+@c^279948^
 @c^279949^
 @c^279950^
 @c^279951^
+@c^279952^
 @c^279957^
+@c^279960^
 @c^279961^
+@c^279962^
+@c^279964^
 @c^279965^
 @c^279966^
 @c^279967^
@@ -846,7 +879,9 @@ GoldScout-export 6^zu3iawxa1t64^14
 @a^4696^52:1
 @a^5766^132:7
 @a^14433^262:1
-@a^250873^89:2,108:3
+@a^250873^89:2,108:4
+@a^251143^89:1
+@a^251169^108:1,109:6
 @a^270892^206:1
 @a^271458^92:1
 @a^271460^70:1

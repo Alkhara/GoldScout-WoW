@@ -1,4 +1,4 @@
-GoldScout-export 5^7rllyxq1qdpb^24
+GoldScout-export 6^7rllyxq1qdpb^25
 589^1^0^14^15^1436^0.4537^0.7027^1^Defias Pillager^^
 590^1^0^14^14^1436^0.4545^0.7020^1^Defias Looter^^
 679^5^0^43^44^1434^0.5070^0.2797^5^Mosh'Ogg Shaman^1645:1:1,2735:1:1,4306:1:1,8110:1:1^
@@ -37,6 +37,7 @@ GoldScout-export 5^7rllyxq1qdpb^24
 2893^12^0^39^40^1418^0.5016^0.7044^12^Stonevault Bonesnapper^1710:1:1,3782:1:1,3802:1:1,3806:1:1,4306:3:5,4338:1:1,211269:1:1,213546:1:1,251461:2:2^
 2932^1^0^38^38^1418^0.4008^0.1542^1^Magregan Deepshadow^4635:1:1^
 2945^1^0^42^42^1418^0.4962^0.6644^1^Murdaloc^248709:1:1^
+2955^9^0^1^2^1412^0.4727^0.7852^9^Plainstrider^1366:1:1,2652:1:1,4739:7:7,4740:7:7,4757:7:7,7096:3:3^
 4798^6^0^0^0^0^0.0000^0.0000^0^^929:1:1,1750:1:1,1795:1:1,2589:1:3,2592:3:8,3385:1:1^
 4807^1^0^0^0^0^0.0000^0.0000^0^^5524:1:1^
 4818^1^0^0^0^0^0.0000^0.0000^0^^730:1:1,1772:1:1,17057:1:1^
@@ -127,6 +128,7 @@ GoldScout-export 5^7rllyxq1qdpb^24
 @i^866^Monk's Staff of the Beast
 @i^929^Healing Potion
 @i^1205^Melon Juice
+@i^1366^Ragged Leather Pants
 @i^1464^Buzzard Talon
 @i^1468^Murloc Fin
 @i^1470^Murloc Skin Bag
@@ -148,6 +150,7 @@ GoldScout-export 5^7rllyxq1qdpb^24
 @i^2589^Linen Cloth
 @i^2591^Dirty Trogg Cloth
 @i^2592^Wool Cloth
+@i^2652^Flimsy Chain Cloak
 @i^2734^Green Hills of Stranglethorn - Page 10
 @i^2735^Green Hills of Stranglethorn - Page 11
 @i^2748^Green Hills of Stranglethorn - Page 24
@@ -215,6 +218,9 @@ GoldScout-export 5^7rllyxq1qdpb^24
 @i^4608^Raw Black Truffle
 @i^4635^Hammertoe's Amulet
 @i^4726^Chief Brigadier Cloak
+@i^4739^Plainstrider Meat
+@i^4740^Plainstrider Feather
+@i^4757^Cracked Egg Shells
 @i^4784^Lifeless Stone
 @i^4814^Discolored Fang
 @i^5116^Long Tail Feather
@@ -237,6 +243,7 @@ GoldScout-export 5^7rllyxq1qdpb^24
 @i^6906^Algae Fists
 @i^6907^Tortoise Armor
 @i^7067^Elemental Earth
+@i^7096^Plucked Feather
 @i^7418^Phalanx Breastplate of the Falcon
 @i^7458^Knight's Boots of the Monkey
 @i^7480^Ranger Gloves of the Bandit
@@ -333,6 +340,7 @@ GoldScout-export 5^7rllyxq1qdpb^24
 @q^866^2:2:0
 @q^929^1:0:0
 @q^1205^1:0:0
+@q^1366^0:4:0
 @q^1464^0:15:0
 @q^1468^1:7:1
 @q^1470^1:1:0
@@ -354,6 +362,7 @@ GoldScout-export 5^7rllyxq1qdpb^24
 @q^2589^1:7:1
 @q^2591^0:15:0
 @q^2592^1:7:1
+@q^2652^0:4:0
 @q^2734^1:12:0
 @q^2735^1:12:0
 @q^2748^1:12:0
@@ -421,6 +430,9 @@ GoldScout-export 5^7rllyxq1qdpb^24
 @q^4608^1:0:0
 @q^4635^1:12:0
 @q^4726^2:4:0
+@q^4739^1:12:0
+@q^4740^1:12:0
+@q^4757^0:15:0
 @q^4784^0:15:0
 @q^4814^0:15:0
 @q^5116^1:7:1
@@ -443,6 +455,7 @@ GoldScout-export 5^7rllyxq1qdpb^24
 @q^6906^3:4:0
 @q^6907^3:4:0
 @q^7067^1:7:1
+@q^7096^0:15:0
 @q^7418^2:4:0
 @q^7458^2:4:0
 @q^7480^2:4:0
@@ -529,6 +542,7 @@ GoldScout-export 5^7rllyxq1qdpb^24
 @q^286428^3:4:0
 @q^287012^3:4:0
 @q^287014^3:4:0
+@m^1412^Mulgore
 @m^1418^Badlands
 @m^1426^Dun Morogh
 @m^1434^Stranglethorn Vale
@@ -1409,6 +1423,7 @@ GoldScout-export 5^7rllyxq1qdpb^24
 @a^2893^270:3,289:6,290:3
 @a^2932^68:1
 @a^2945^269:1
+@a^2955^309:9
 @a^4844^47:4,48:2,66:1
 @a^4845^47:1,48:1,67:3,68:2
 @a^4846^47:6,48:2,67:4
