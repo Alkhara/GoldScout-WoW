@@ -1,4 +1,4 @@
-GoldScout-export 6^fgnmonidzc90^32
+GoldScout-export 6^fgnmonidzc90^33
 92^7^0^39^40^1418^0.1394^0.3415^7^Rock Elemental^4552:2:2,4553:3:3,4627:3:3,4784:2:2,6422:1:1,7912:1:2,8150:5:5^
 433^1^1^22^23^1433^0.6627^0.5899^1^Shadowhide Gnoll^2592:1:2^
 434^0^2^21^22^0^0.0000^0.0000^0^Rabid Shadowhide Gnoll^^
@@ -17,6 +17,7 @@ GoldScout-export 6^fgnmonidzc90^32
 684^3^0^37^38^1434^0.4560^0.2658^3^Shadowmaw Panther^1688:1:1,9875:1:1,9898:1:1^
 685^4^0^33^34^1434^0.2495^0.1646^4^Stranglethorn Raptor^4461:1:1,5637:1:1,12019:1:1,12184:1:1^
 686^8^0^35^36^1434^0.3731^0.2595^8^Lashtail Raptor^1696:3:3,3685:5:5,4461:1:1,8146:1:1,12184:3:3^
+687^3^0^40^41^1434^0.3412^0.3860^3^Jungle Stalker^4461:2:2,4586:1:1,5637:1:1,12184:1:1^
 688^1^0^32^32^1434^0.3069^0.0269^1^Stone Maw Basilisk^3918:1:1^
 689^25^0^34^35^1434^0.2466^0.1766^25^Crystal Spine Basilisk^1701:8:8,1702:8:8,1703:7:7,3918:9:9,4093:1:1,5637:1:1,11386:3:3^
 691^8^0^36^37^1434^0.2022^0.2265^8^Lesser Water Elemental^1706:2:2,3923:6:6,4791:2:8,7070:1:1,213546:1:1^
@@ -64,6 +65,7 @@ GoldScout-export 6^fgnmonidzc90^32
 1162^1^0^12^12^1432^0.3369^0.7843^1^Stonesplinter Scout^^
 1184^1^0^13^14^1432^0.4660^0.7367^1^Cliff Lurker^3167:1:1,5465:1:2^
 1197^3^0^15^15^1432^0.3780^0.8700^3^Stonesplinter Shaman^2267:1:1,2589:3:5^
+1557^7^0^40^41^1434^0.3307^0.6448^7^Elder Mistvale Gorilla^2799:1:1,3919:5:5,4096:2:2,4097:1:1,5637:2:2^
 1561^2^1^41^41^1434^0.2847^0.7039^2^Bloodsail Raider^1710:1:1,2725:1:1^
 1562^5^4^40^41^1434^0.2785^0.6997^5^Bloodsail Mage^1707:1:1,4306:1:2^7910:1:1
 1663^5^0^0^0^0^0.0000^0.0000^0^^4538:1:1^
@@ -421,6 +423,7 @@ GoldScout-export 6^fgnmonidzc90^32
 @i^2751^Green Hills of Stranglethorn - Page 27
 @i^2783^Shoddy Blunderbuss
 @i^2786^Oiled Blunderbuss
+@i^2799^Gorilla Fang
 @i^2843^Dirty Knucklebones
 @i^2940^Bloody Bear Paw
 @i^3037^Whipwood Recurve Bow
@@ -481,6 +484,7 @@ GoldScout-export 6^fgnmonidzc90^32
 @i^3874^Plans: Polished Steel Boots
 @i^3879^Paw of Sin'Dall
 @i^3918^Singing Crystal Shard
+@i^3919^Mistvale Giblets
 @i^3923^Water Elemental Bracers
 @i^3928^Superior Healing Potion
 @i^3943^Crochet Vest
@@ -491,6 +495,8 @@ GoldScout-export 6^fgnmonidzc90^32
 @i^4059^Glyphed Bracers
 @i^4067^Glyphed Buckler
 @i^4093^Large Basilisk Tail
+@i^4096^Coarse Gorilla Hair
+@i^4097^Chipped Gorilla Tooth
 @i^4104^Snapjaw Crocolisk Skin
 @i^4106^Tumbled Crystal
 @i^4306^Silk Cloth
@@ -804,6 +810,7 @@ GoldScout-export 6^fgnmonidzc90^32
 @q^2751^1:12:0
 @q^2783^0:2:0
 @q^2786^0:2:0
+@q^2799^1:12:0
 @q^2843^1:12:0
 @q^2940^0:15:0
 @q^3037^2:2:0
@@ -864,6 +871,7 @@ GoldScout-export 6^fgnmonidzc90^32
 @q^3874^2:9:0
 @q^3879^1:12:0
 @q^3918^1:12:0
+@q^3919^1:12:0
 @q^3923^1:12:0
 @q^3928^1:0:0
 @q^3943^0:4:0
@@ -874,6 +882,8 @@ GoldScout-export 6^fgnmonidzc90^32
 @q^4059^2:4:0
 @q^4067^2:4:0
 @q^4093^0:15:0
+@q^4096^1:15:0
+@q^4097^0:15:0
 @q^4104^1:12:0
 @q^4106^1:12:0
 @q^4306^1:7:1
@@ -1243,6 +1253,7 @@ GoldScout-export 6^fgnmonidzc90^32
 @a^684^89:2,127:1
 @a^685^64:3,65:1
 @a^686^87:1,107:7
+@a^687^146:3
 @a^688^6:1
 @a^689^64:20,65:5
 @a^691^83:2,84:6
@@ -1290,6 +1301,7 @@ GoldScout-export 6^fgnmonidzc90^32
 @a^1162^306:1
 @a^1184^289:1
 @a^1197^347:3
+@a^1557^246:4,266:3
 @a^1561^265:1,285:1
 @a^1562^265:4,285:1
 @a^2238^155:1
