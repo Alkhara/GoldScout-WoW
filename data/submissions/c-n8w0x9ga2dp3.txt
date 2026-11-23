@@ -1,4 +1,4 @@
-GoldScout-export 6^n8w0x9ga2dp3^2
+GoldScout-export 6^n8w0x9ga2dp3^3
 667^10^0^39^40^1434^0.4587^0.3558^10^Guerrero Machacacráneos^1520:2:2,2289:1:1,2749:1:1,3810:1:1,3916:4:4,4306:4:6,8153:2:2^
 669^9^0^41^42^1434^0.4535^0.4168^9^Cazador Machacacráneos^1520:3:3,2748:1:1,2751:1:1,4306:3:4,4338:1:2,4421:1:1^
 670^1^0^41^42^1434^0.4446^0.4172^1^Médico Brujo Machacacráneos^^
@@ -22,9 +22,19 @@ GoldScout-export 6^n8w0x9ga2dp3^2
 5618^12^0^41^42^1446^0.6179^0.2671^12^Bandida Deambuladora^4306:2:3,4338:3:4,8483:1:1,8623:1:1^
 7855^2^0^44^45^1446^0.7127^0.4428^2^Pirata del Mar del Sur^20519:1:1^
 7856^2^0^44^45^1446^0.7213^0.4555^2^Filibustero del Mar del Sur^1645:1:1^
+256795^6^0^42^43^2548^0.2841^0.4131^6^Fanática Crepuscular^3671:2:2,4338:3:5^
+256797^5^0^42^43^2548^0.2756^0.4046^5^Corruptora Crepuscular^4338:1:1,5429:1:1,213547:1:1^
+256799^13^0^43^44^2548^0.2801^0.4019^13^Campeona Crepuscular^4338:5:7,5431:2:2,265821:5:5^
+256800^2^0^45^45^2548^0.2760^0.4081^2^Déspota Crepuscular^248690:1:1^
+256881^1^0^46^46^2548^0.2571^0.4355^1^Señor supremo Kilgar^265837:1:1^
+256891^1^0^46^46^2548^0.2983^0.4101^1^Verdugo Morg^269351:1:1^
 256899^1^0^41^41^2548^0.4480^0.5123^1^Chogg'Zac^4306:1:1,265750:1:1,265751:1:1^
 260419^1^0^38^38^1446^0.6739^0.2389^1^Babaquijada^^
 260429^1^0^39^39^1434^0.4337^0.2043^1^Agente de Ventura y Cía.^2589:1:2,268810:1:1^
+260968^9^0^41^42^2548^0.7617^0.2616^9^Aplastador Crepuscular^3671:1:1,4023:1:1,4338:1:2^
+260973^1^0^42^42^2548^0.7383^0.2655^1^Klunk^4306:1:2,269257:1:1^
+260996^3^0^41^42^2548^0.2691^0.3560^3^Subyugador Crepuscular^4306:1:1,4338:1:1,5429:1:1^
+261497^5^0^40^41^2548^0.7527^0.2575^5^Clamafuegos Crepuscular^4306:1:3,4338:1:2,5429:1:1^
 261710^1^0^40^40^2548^0.5037^0.4924^1^Tosco Crepuscular^4306:1:2^
 261711^8^0^38^39^2548^0.4808^0.4987^8^Bruto potenciado^6438:1:1^
 262169^13^0^39^41^2548^0.4850^0.4922^13^Ritualista Crepuscular^3671:1:1,4306:5:11,4338:2:2^
@@ -47,15 +57,20 @@ GoldScout-export 6^n8w0x9ga2dp3^2
 @i^3771^Pata de cero salvaje
 @i^3781^Espada claymore ancha
 @i^3810^Brazales de malla doble
+@i^3820^Alga estranguladora
 @i^3838^Garra Faucesombrías
 @i^3839^Colmillo de tigre prístino
 @i^3909^Armadura de Ana'thek rota
 @i^3916^Collar de hueso partido
+@i^4023^Daga puntiaguda refinada
 @i^4306^Paño de seda
 @i^4338^Tela de paño mágico
 @i^4421^Pergamino de Protección III
 @i^4599^Filete de jamón curado
+@i^5429^Una bonita roca
+@i^5431^Petaca vacía
 @i^6149^Poción de maná superior
+@i^6362^Bacalao Piedrescama crudo
 @i^6438^Brazal elemental mate
 @i^8151^Frasco de mojo
 @i^8153^Atriplex salvaje
@@ -64,12 +79,19 @@ GoldScout-export 6^n8w0x9ga2dp3^2
 @i^8483^Faltriquera de agua de Deambulador
 @i^8623^Localizador de emergencia OOX-17 TN
 @i^12202^Carne de tigre
+@i^13422^Anguila Escama Tormentosa
 @i^20519^Sombrero pirata de los Mares del Sur
 @i^21153^Sabiola cruda superior
 @i^213127^Notas místicas parciales
+@i^213547^Pergamino: QÉU PESADA
+@i^248690^Cajón saqueado: hierbas de experto terrenales
 @i^265750^Cabeza de Chogg
 @i^265751^Cabeza de Zac
+@i^265821^Llave Crepuscular
+@i^265837^Cabeza de Kilgar
 @i^268810^Envío de Ruzzgot
+@i^269257^Partecráneos
+@i^269351^Maza de verdugo
 @q^1520^0:15:0
 @q^1645^1:0:0
 @q^1686^0:15:0
@@ -89,15 +111,20 @@ GoldScout-export 6^n8w0x9ga2dp3^2
 @q^3771^1:0:0
 @q^3781^0:2:0
 @q^3810^0:4:0
+@q^3820^1:7:1
 @q^3838^1:12:0
 @q^3839^1:12:0
 @q^3909^1:12:0
 @q^3916^1:12:0
+@q^4023^0:2:0
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4421^1:0:0
 @q^4599^1:0:0
+@q^5429^0:15:0
+@q^5431^0:15:0
 @q^6149^1:0:0
+@q^6362^1:7:1
 @q^6438^0:15:0
 @q^8151^1:7:1
 @q^8153^1:7:1
@@ -106,12 +133,19 @@ GoldScout-export 6^n8w0x9ga2dp3^2
 @q^8483^1:12:0
 @q^8623^2:12:0
 @q^12202^1:7:1
+@q^13422^1:7:1
 @q^20519^1:12:0
 @q^21153^1:7:1
 @q^213127^1:15:0
+@q^213547^1:0:0
+@q^248690^1:0:1
 @q^265750^1:12:0
 @q^265751^1:12:0
+@q^265821^1:12:0
+@q^265837^1:12:0
 @q^268810^1:12:0
+@q^269257^1:12:0
+@q^269351^1:12:0
 @m^1434^Vega de Tuercespina
 @m^1446^Tanaris
 @m^2548^Clarofluvial
@@ -270,11 +304,22 @@ GoldScout-export 6^n8w0x9ga2dp3^2
 @a^5618^91:3,92:4,112:3,132:1,133:1
 @a^7855^174:1,194:1
 @a^7856^194:2
+@a^256795^145:1,165:5
+@a^256797^145:2,165:3
+@a^256799^145:8,165:5
+@a^256800^145:1,165:1
+@a^256881^165:1
+@a^256891^165:1
 @a^256899^208:1
 @a^260419^93:1
 @a^260429^88:1
+@a^260968^114:1,115:8
+@a^260973^114:1
+@a^260996^145:3
+@a^261497^95:1,114:2,115:2
 @a^261710^190:1
 @a^261711^189:6,209:2
 @a^262169^189:9,190:3,209:1
 @f^1434^0^3^300^8365:1:1,21153:2:2^46:3
+@f^2548^0^4^300^3820:1:3,6362:1:1,13422:2:4^195:4
 @l^0^esES

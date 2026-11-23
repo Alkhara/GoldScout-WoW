@@ -1,4 +1,4 @@
-GoldScout-export 6^j8mx3gwf9sy6^14
+GoldScout-export 6^j8mx3gwf9sy6^15
 121^1^0^16^16^1436^0.3645^0.7388^1^Defias Pathstalker^^
 127^3^0^18^19^1436^0.3521^0.8612^3^Murloc Tidehunter^730:1:1,5523:2:2^
 517^1^0^18^18^1436^0.3418^0.8515^1^Murloc Oracle^^
@@ -23,6 +23,10 @@ GoldScout-export 6^j8mx3gwf9sy6^14
 1729^1^0^0^0^0^0.0000^0.0000^0^^1929:1:1^
 1731^2^0^0^0^0^0.0000^0.0000^0^^1744:1:1^
 1732^3^0^0^0^0^0.0000^0.0000^0^^2589:2:10^
+2350^3^0^20^21^1424^0.5967^0.3139^3^Forest Moss Creeper^1081:1:1,1288:1:1,2991:1:1^
+2351^1^0^21^21^1424^0.6097^0.3644^1^Gray Bear^2940:1:1,3730:1:1,11407:1:1^
+2354^1^0^23^23^1424^0.6853^0.4633^1^Vicious Gray Bear^2940:1:1^
+2356^1^0^25^25^1424^0.7688^0.5264^1^Elder Gray Bear^3730:1:1^
 2676^1^0^19^19^1413^0.5621^0.0835^1^Compact Harvest Reaper^^
 2960^3^0^9^10^1412^0.5124^0.2720^3^Prairie Wolf Alpha^2672:3:3,3299:1:1^
 3099^1^0^6^6^1411^0.3857^0.3623^1^Dire Mottled Boar^769:1:1^
@@ -117,6 +121,7 @@ GoldScout-export 6^j8mx3gwf9sy6^14
 @i^1179^Ice Cold Milk
 @i^1180^Scroll of Stamina
 @i^1210^Shadowgem
+@i^1288^Large Venom Sac
 @i^1420^Worn Leather Bracers
 @i^1495^Calico Shoes
 @i^1498^Calico Gloves
@@ -141,6 +146,8 @@ GoldScout-export 6^j8mx3gwf9sy6^14
 @i^2672^Stringy Wolf Meat
 @i^2674^Crawler Meat
 @i^2781^Dirty Blunderbuss
+@i^2940^Bloody Bear Paw
+@i^2991^Burnished Boots
 @i^3013^Scroll of Protection
 @i^3171^Broken Boar Tusk
 @i^3174^Spider Ichor
@@ -159,6 +166,7 @@ GoldScout-export 6^j8mx3gwf9sy6^14
 @i^3654^Brackwater Shield
 @i^3669^Gelatinous Goo
 @i^3676^Slimy Ichor
+@i^3730^Big Bear Meat
 @i^3820^Stranglekelp
 @i^4306^Silk Cloth
 @i^4364^Coarse Blasting Powder
@@ -222,6 +230,7 @@ GoldScout-export 6^j8mx3gwf9sy6^14
 @i^9776^Bandit Boots of Defense
 @i^9787^Raider's Gauntlets of the Whale
 @i^10403^Blackened Defias Belt
+@i^11407^Torn Bear Pelt
 @i^14093^Beaded Cord
 @i^14113^Aboriginal Sash of Stamina
 @i^14114^Aboriginal Footwraps of the Sorcerer
@@ -238,6 +247,9 @@ GoldScout-export 6^j8mx3gwf9sy6^14
 @i^17056^Light Feather
 @i^20708^Tightly Sealed Trunk
 @i^20709^Rumsey Rum Light
+@i^21071^Raw Sagefish
+@i^21113^Watertight Trunk
+@i^21114^Rumsey Rum Dark
 @i^211780^Scroll: KWYJIBO
 @i^211853^Scroll: VOCE WELL
 @i^248682^Waylaid Crate: Apprentice Herbs
@@ -262,6 +274,7 @@ GoldScout-export 6^j8mx3gwf9sy6^14
 @q^1179^1:0:0
 @q^1180^1:0:0
 @q^1210^2:7:1
+@q^1288^1:7:1
 @q^1420^0:4:0
 @q^1495^0:4:0
 @q^1498^0:4:0
@@ -286,6 +299,8 @@ GoldScout-export 6^j8mx3gwf9sy6^14
 @q^2672^1:7:1
 @q^2674^1:7:1
 @q^2781^0:2:0
+@q^2940^0:15:0
+@q^2991^2:4:0
 @q^3013^1:0:0
 @q^3171^0:15:0
 @q^3174^1:7:1
@@ -304,6 +319,7 @@ GoldScout-export 6^j8mx3gwf9sy6^14
 @q^3654^2:4:0
 @q^3669^0:15:0
 @q^3676^0:15:0
+@q^3730^1:7:1
 @q^3820^1:7:1
 @q^4306^1:7:1
 @q^4364^1:7:1
@@ -367,6 +383,7 @@ GoldScout-export 6^j8mx3gwf9sy6^14
 @q^9776^2:4:0
 @q^9787^2:4:0
 @q^10403^3:4:0
+@q^11407^1:12:0
 @q^14093^1:4:0
 @q^14113^2:4:0
 @q^14114^2:4:0
@@ -383,6 +400,9 @@ GoldScout-export 6^j8mx3gwf9sy6^14
 @q^17056^1:15:1
 @q^20708^1:15:0
 @q^20709^1:0:0
+@q^21071^1:7:1
+@q^21113^1:15:0
+@q^21114^1:0:0
 @q^211780^1:0:0
 @q^211853^1:0:0
 @q^248682^1:0:1
@@ -399,6 +419,7 @@ GoldScout-export 6^j8mx3gwf9sy6^14
 @m^1413^The Barrens
 @m^1414^Kalimdor
 @m^1415^Eastern Kingdoms
+@m^1424^Hillsbrad Foothills
 @m^1431^Duskwood
 @m^1432^Loch Modan
 @m^1436^Westfall
@@ -1145,6 +1166,10 @@ GoldScout-export 6^j8mx3gwf9sy6^14
 @a^1172^87:1
 @a^1195^126:1
 @a^1216^326:1
+@a^2350^111:2,152:1
+@a^2351^152:1
+@a^2354^193:1
+@a^2356^215:1
 @a^2676^31:1
 @a^2960^110:3
 @a^3099^147:1
@@ -1216,6 +1241,7 @@ GoldScout-export 6^j8mx3gwf9sy6^14
 @a^267314^111:3
 @a^268624^209:1
 @f^1413^0^135^107^3820:1:1,6289:41:41,6291:9:9,6303:6:6,6308:14:14,6309:1:1,6358:13:13,6361:2:2,6470:1:1,6522:45:45,20708:1:1,20709:1:3^89:113,152:22
+@f^1424^0^8^150^21071:6:6,21113:1:1,21114:1:1^132:8
 @f^1436^0^6^104^6358:6:6^346:6
 @f^1442^0^2^150^6289:1:1,6308:1:1^229:2
 @l^0^enUS

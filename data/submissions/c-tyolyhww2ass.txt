@@ -1,4 +1,4 @@
-GoldScout-export 6^tyolyhww2ass^51
+GoldScout-export 6^tyolyhww2ass^52
 92^3^0^39^40^1418^0.3737^0.7446^3^Rock Elemental^4627:3:3,4784:3:3,7067:1:1,7912:2:4^
 1151^5^0^35^36^1434^0.2901^0.2377^5^Saltwater Crocolisk^770:3:3,3667:2:2,12037:2:2^
 1525^1^0^5^5^1420^0.5207^0.4641^1^Rotting Dead^2589:1:1^
@@ -68,6 +68,11 @@ GoldScout-export 6^tyolyhww2ass^51
 2925^2^0^45^46^1425^0.4786^0.4311^2^Silvermane Howler^12203:1:1,12208:1:1^
 2926^12^0^47^48^1425^0.6692^0.5362^12^Silvermane Stalker^4583:7:7,4584:1:1,8704:1:1,12203:6:6,12208:6:6^
 2928^3^0^44^45^1425^0.4865^0.4245^3^Primitive Owlbeast^12207:3:3^
+3197^16^0^9^10^1411^0.5166^0.0899^16^Burning Blade Fanatic^117:3:3,159:1:1,727:1:1,1417:1:1,2589:7:11,3610:1:1,14098:1:1,14544:1:1,15005:1:1^
+3198^3^0^10^11^1411^0.5252^0.0801^3^Burning Blade Apprentice^118:1:1^
+3204^1^0^14^14^1411^0.5188^0.0961^1^Gazz'uz^4903:1:1^
+3244^13^0^11^12^1413^0.5276^0.2976^13^Greater Plainstrider^4775:2:2,5087:7:7,5114:3:3,5469:4:4,17056:7:7^
+3254^1^0^13^13^1413^0.5288^0.3228^1^Sunscale Lashtail^5062:1:1^
 3560^6^0^40^41^1418^0.4859^0.6977^6^Healing Ward^^
 3851^3^0^0^0^0^0.0000^0.0000^0^^2992:1:1^
 3853^3^0^0^0^0^0.0000^0.0000^0^^^
@@ -164,6 +169,7 @@ GoldScout-export 6^tyolyhww2ass^51
 6490^2^0^0^0^0^0.0000^0.0000^0^^3787:1:1^
 7769^12^0^45^45^1446^0.5632^0.7114^12^Hazzali Parasite^^
 7977^1^0^48^48^1425^0.8195^0.5414^1^Gammerita^4555:1:1,4556:1:2,19023:1:1^
+8996^3^0^10^14^1411^0.5314^0.0794^3^Voidwalker Minion^^
 10358^1^0^12^12^1420^0.7608^0.5947^1^Fellicent's Shade^118:1:1,5571:1:1^
 10359^1^0^13^13^1420^0.8964^0.4647^1^Sri'skulk^828:1:1,1476:1:1^
 11562^64^0^33^34^1443^0.2001^0.7866^64^Drysnap Crawler^1708:1:1,3812:1:1,6362:3:6,17057:15:15,213545:1:1^
@@ -242,7 +248,7 @@ GoldScout-export 6^tyolyhww2ass^51
 @i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
 @i^414^Dalaran Sharp
-@i^727^Notched Shortsword of Nature Protection
+@i^727^Notched Shortsword of the Tiger
 @i^729^Stringy Vulture Meat
 @i^770^Pointy Crocolisk Tooth
 @i^774^Malachite
@@ -351,6 +357,7 @@ GoldScout-export 6^tyolyhww2ass^51
 @i^3402^Soft Patch of Fur
 @i^3403^Ivory Boar Tusk
 @i^3404^Buzzard Wing
+@i^3610^Plans: Gemmed Copper Gauntlets
 @i^3621^Ivar's Head
 @i^3622^Essence of Nightlash
 @i^3634^Head of Grimson
@@ -407,9 +414,13 @@ GoldScout-export 6^tyolyhww2ass^51
 @i^4627^Large Stone Slab
 @i^4638^Reinforced Steel Lockbox
 @i^4662^Journeyman's Cloak
+@i^4775^Cracked Bill
 @i^4784^Lifeless Stone
 @i^4865^Ruined Pelt
 @i^4874^Clean Fishbones
+@i^4903^Eye of Burning Shadow
+@i^5062^Raptor Head
+@i^5087^Plainstrider Beak
 @i^5114^Severed Talon
 @i^5116^Long Tail Feather
 @i^5128^Shed Lizard Skin
@@ -419,6 +430,7 @@ GoldScout-export 6^tyolyhww2ass^51
 @i^5429^A Pretty Rock
 @i^5431^Empty Hip Flask
 @i^5465^Small Spider Leg
+@i^5469^Strider Meat
 @i^5506^Beady Eye Stalk
 @i^5523^Small Barnacled Clam
 @i^5524^Thick-shelled Clam
@@ -514,7 +526,10 @@ GoldScout-export 6^tyolyhww2ass^51
 @i^12223^Meaty Bat Wing
 @i^13758^Raw Redgill
 @i^13759^Raw Nightfin Snapper
+@i^14098^Native Cloak
+@i^14544^Lieutenant's Insignia
 @i^14965^High Chief's Bindings of the Defender
+@i^15005^Primal Bands
 @i^15233^Savage Axe of the Defender
 @i^15234^Greater Scythe of Spirit
 @i^16967^Feralas Ahi
@@ -698,6 +713,7 @@ GoldScout-export 6^tyolyhww2ass^51
 @q^3402^0:15:0
 @q^3403^0:15:0
 @q^3404^1:7:1
+@q^3610^2:9:0
 @q^3621^1:12:0
 @q^3622^1:12:0
 @q^3634^1:12:0
@@ -754,9 +770,13 @@ GoldScout-export 6^tyolyhww2ass^51
 @q^4627^1:12:0
 @q^4638^2:15:0
 @q^4662^1:4:0
+@q^4775^0:15:0
 @q^4784^0:15:0
 @q^4865^0:15:0
 @q^4874^0:15:0
+@q^4903^1:12:0
+@q^5062^1:12:0
+@q^5087^1:12:0
 @q^5114^0:15:0
 @q^5116^1:7:1
 @q^5128^0:15:0
@@ -766,6 +786,7 @@ GoldScout-export 6^tyolyhww2ass^51
 @q^5429^0:15:0
 @q^5431^0:15:0
 @q^5465^1:7:1
+@q^5469^1:7:1
 @q^5506^0:15:0
 @q^5523^1:7:0
 @q^5524^1:7:0
@@ -861,7 +882,10 @@ GoldScout-export 6^tyolyhww2ass^51
 @q^12223^1:7:1
 @q^13758^1:7:1
 @q^13759^1:7:1
+@q^14098^1:4:0
+@q^14544^1:12:0
 @q^14965^2:4:0
+@q^15005^1:4:0
 @q^15233^2:2:0
 @q^15234^2:2:0
 @q^16967^1:15:0
@@ -932,6 +956,7 @@ GoldScout-export 6^tyolyhww2ass^51
 @q^281052^1:12:0
 @q^286259^1:12:0
 @q^286326^1:12:0
+@m^1411^Durotar
 @m^1412^Mulgore
 @m^1413^The Barrens
 @m^1416^Alterac Mountains
@@ -3050,6 +3075,11 @@ GoldScout-export 6^tyolyhww2ass^51
 @a^2925^168:1,170:1
 @a^2926^172:1,190:2,193:2,214:2,234:2,253:2,274:1
 @a^2928^168:1,170:2
+@a^3197^30:15,50:1
+@a^3198^30:3
+@a^3204^30:1
+@a^3244^110:6,130:7
+@a^3254^130:1
 @a^3560^269:4,289:2
 @a^3984^126:1
 @a^3985^126:1
@@ -3095,6 +3125,7 @@ GoldScout-export 6^tyolyhww2ass^51
 @a^5685^69:1
 @a^7769^271:4,291:8
 @a^7977^216:1
+@a^8996^30:3
 @a^10358^235:1
 @a^10359^197:1
 @a^11562^283:5,284:1,303:16,304:18,323:4,324:19,343:1
