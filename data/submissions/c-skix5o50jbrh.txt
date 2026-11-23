@@ -1,10 +1,16 @@
-GoldScout-export 6^skix5o50jbrh^3
+GoldScout-export 6^skix5o50jbrh^4
+157^1^0^15^15^1436^0.3476^0.3498^1^Goretusk^769:1:2,771:1:1^
+199^1^0^10^10^1436^0.6060^0.3693^1^Young Fleshripper^6889:1:1,7097:1:1^
+500^1^0^13^13^1436^0.4579^0.1647^1^Riverpaw Scout^1498:1:1^
+833^21^0^11^12^1436^0.3992^0.3159^21^Coyote Packleader^2673:6:6,3299:8:8,3300:5:5^
+834^50^0^10^11^1436^0.4837^0.2704^50^Coyote^2673:26:26,2957:1:1,3299:17:17,3300:5:5,5071:1:1,6513:1:1,211787:1:1^
 1015^1^0^24^24^1437^0.5184^0.2492^1^Highland Raptor^3685:1:1^
 1029^1^0^25^25^1437^0.1614^0.3085^1^Bluegill Oracle^1798:1:1,5524:1:1,17057:1:1^
 1051^7^0^27^28^1437^0.4756^0.1670^7^Dark Iron Dwarf^1705:1:1,1828:1:1,2592:1:2,4306:1:2,15242:1:1,262888:1:1^
 1052^1^0^28^29^1437^0.4617^0.1717^1^Dark Iron Saboteur^^
 1053^3^0^29^30^1437^0.4672^0.1711^3^Dark Iron Tunneler^1826:1:1,2592:1:3^
 1054^3^0^30^31^1437^0.4690^0.1821^3^Dark Iron Demolitionist^3186:1:1,4306:1:3^
+1109^2^0^13^14^1436^0.6056^0.4556^2^Fleshripper^555:1:1,729:1:1,6889:1:1^
 1157^9^0^26^27^1437^0.1394^0.2997^9^Cursed Sailor^2592:1:2,4306:2:2^
 1158^1^0^27^28^1437^0.1395^0.2997^1^Cursed Marine^4306:1:1^
 1159^1^0^29^29^1437^0.1414^0.3006^1^First Mate Snellig^3380:1:1,3619:1:1,4306:1:1^
@@ -28,8 +34,13 @@ GoldScout-export 6^skix5o50jbrh^3
 4062^3^0^30^30^1417^0.4924^0.8829^3^Dark Iron Bombardier^2592:1:3,3827:1:1^
 6523^1^0^28^28^1437^0.4820^0.1736^1^Dark Iron Rifleman^^
 @i^422^Dwarven Mild
+@i^555^Rough Vulture Feathers
+@i^729^Stringy Vulture Meat
+@i^769^Chunk of Boar Meat
+@i^771^Chipped Boar Tusk
 @i^929^Healing Potion
 @i^1205^Melon Juice
+@i^1498^Calico Gloves
 @i^1529^Jade
 @i^1705^Lesser Moonstone
 @i^1798^Rawhide Cloak
@@ -39,7 +50,11 @@ GoldScout-export 6^skix5o50jbrh^3
 @i^2280^Kam's Walking Stick
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2673^Coyote Meat
+@i^2957^Journeyman's Vest
 @i^3186^Viking Sword of the Bandit
+@i^3299^Fractured Canine
+@i^3300^Rabbit's Foot
 @i^3380^Cross-stitched Belt
 @i^3619^Snellig's Snuffbox
 @i^3639^Ear of Balgaras
@@ -51,23 +66,33 @@ GoldScout-export 6^skix5o50jbrh^3
 @i^3827^Mana Potion
 @i^4306^Silk Cloth
 @i^4544^Mulgore Spice Bread
+@i^5071^Shadow Wand
 @i^5524^Thick-shelled Clam
 @i^5785^Thick Murloc Scale
 @i^6308^Raw Bristle Whisker Catfish
 @i^6400^Glimmering Shield
+@i^6513^Disciple's Sash
 @i^6577^Defender Gauntlets of Strength
+@i^6889^Small Egg
+@i^7097^Leg Meat
 @i^12996^Band of Purification
 @i^15242^Honed Stiletto of the Bandit
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
+@i^211787^Scroll: LOWER PING WHOMEVER
 @i^262888^Sealed Journeyman's Writ
 @i^273805^Blackrock Harness
 @i^273811^Repurposed Rack
 @i^273817^Graverobber's Shovel
 @i^273827^Debt Collector
 @q^422^1:0:0
+@q^555^0:15:0
+@q^729^1:7:1
+@q^769^1:7:1
+@q^771^0:15:0
 @q^929^1:0:0
 @q^1205^1:0:0
+@q^1498^0:4:0
 @q^1529^2:7:1
 @q^1705^2:7:1
 @q^1798^0:4:0
@@ -77,7 +102,11 @@ GoldScout-export 6^skix5o50jbrh^3
 @q^2280^3:2:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2673^1:7:1
+@q^2957^2:4:0
 @q^3186^2:2:0
+@q^3299^0:15:0
+@q^3300^0:15:0
 @q^3380^0:4:0
 @q^3619^1:12:0
 @q^3639^1:12:0
@@ -89,15 +118,20 @@ GoldScout-export 6^skix5o50jbrh^3
 @q^3827^1:0:0
 @q^4306^1:7:1
 @q^4544^1:0:0
+@q^5071^2:2:0
 @q^5524^1:7:0
 @q^5785^1:7:1
 @q^6308^1:7:1
 @q^6400^2:4:0
+@q^6513^1:4:0
 @q^6577^2:4:0
+@q^6889^1:7:1
+@q^7097^1:0:0
 @q^12996^3:4:0
 @q^15242^2:2:0
 @q^17057^1:15:0
 @q^17058^1:15:0
+@q^211787^1:0:0
 @q^262888^3:0:0
 @q^273805^3:4:0
 @q^273811^3:4:0
@@ -105,6 +139,7 @@ GoldScout-export 6^skix5o50jbrh^3
 @q^273827^3:2:0
 @m^1417^Arathi Highlands
 @m^1424^Hillsbrad Foothills
+@m^1436^Westfall
 @m^1437^Wetlands
 @c^2300^
 @c^2302^
@@ -702,12 +737,18 @@ GoldScout-export 6^skix5o50jbrh^3
 @c^279969^
 @c^279978^
 @c^279979^
+@a^157^126:1
+@a^199^152:1
+@a^500^69:1
+@a^833^68:1,69:2,87:1,107:1,108:2,110:1,126:2,127:1,146:3,147:3,152:2,166:2
+@a^834^68:2,69:2,70:3,87:3,88:3,90:2,91:3,92:4,107:7,108:3,111:2,112:3,128:1,132:3,146:2,152:3,166:3,172:1
 @a^1015^90:1
 @a^1029^123:1
 @a^1051^69:7
 @a^1052^69:1
 @a^1053^69:3
 @a^1054^69:3
+@a^1109^192:2
 @a^1157^102:4,122:5
 @a^1158^102:1
 @a^1159^122:1

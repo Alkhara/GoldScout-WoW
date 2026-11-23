@@ -1,4 +1,4 @@
-GoldScout-export 6^z1ffmqhyzzxo^56
+GoldScout-export 6^z1ffmqhyzzxo^57
 449^1^0^17^17^1436^0.3600^0.7755^1^Defias Knuckleduster^1770:1:1,2589:1:1^
 595^1^0^35^35^1434^0.2629^0.1125^1^Bloodscalp Hunter^3771:1:1^
 598^9^0^0^0^0^0.0000^0.0000^0^^1930:1:1,2589:1:2,2592:2:3,2771:1:2,248702:1:1^
@@ -195,6 +195,9 @@ GoldScout-export 6^z1ffmqhyzzxo^56
 4825^1^0^0^0^0^0.0000^0.0000^0^^5524:1:1^
 4831^1^0^0^0^0^0.0000^0.0000^0^^3078:1:1^
 4832^1^0^0^0^0^0.0000^0.0000^0^^5881:1:1,273846:1:1^
+4844^13^0^35^36^1418^0.4580^0.1041^13^Shadowforge Surveyor^1708:1:1,2836:1:3,4306:3:4,7666:1:1,8009:2:2,8052:3:3,9295:1:1,9406:1:1,9851:1:1^
+4846^10^0^35^36^1418^0.4693^0.1104^10^Shadowforge Digger^1705:1:1,3827:1:1,4075:1:1,4306:2:7,4338:1:2,8009:3:3,8052:1:1^
+4851^3^0^36^37^1418^0.3824^0.1543^3^Stonevault Rockchewer^4338:1:1,262889:1:1^
 4887^1^0^0^0^0^0.0000^0.0000^0^^4555:1:1,6908:1:1,15313:1:1^
 6206^3^0^0^0^0^0.0000^0.0000^0^^2592:1:1,9800:1:1,262888:1:1^
 6207^6^0^0^0^0^0.0000^0.0000^0^^1529:1:1,4306:1:1,9308:4:4^
@@ -385,6 +388,7 @@ GoldScout-export 6^z1ffmqhyzzxo^56
 @i^1701^Curved Basilisk Claw
 @i^1702^Intact Basilisk Spine
 @i^1703^Crystal Basilisk Spine
+@i^1705^Lesser Moonstone
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
@@ -439,6 +443,7 @@ GoldScout-export 6^z1ffmqhyzzxo^56
 @i^2777^Feeble Shortbow
 @i^2780^Light Hunting Bow
 @i^2781^Dirty Blunderbuss
+@i^2836^Coarse Stone
 @i^2838^Heavy Stone
 @i^2882^Plans: Silvered Bronze Shoulders
 @i^2940^Bloody Bear Paw
@@ -483,6 +488,7 @@ GoldScout-export 6^z1ffmqhyzzxo^56
 @i^3812^Double Mail Gloves
 @i^3813^Double Mail Pants
 @i^3817^Reinforced Buckler
+@i^3827^Mana Potion
 @i^3857^Coal
 @i^3863^Jungle Stalker Feather
 @i^3864^Citrine
@@ -496,6 +502,7 @@ GoldScout-export 6^z1ffmqhyzzxo^56
 @i^4019^Heavy Flint Axe
 @i^4025^Balanced Long Bow
 @i^4043^Aurora Bracers
+@i^4075^Mail Combat Gauntlets
 @i^4093^Large Basilisk Tail
 @i^4105^Elder Crocolisk Skin
 @i^4306^Silk Cloth
@@ -580,19 +587,24 @@ GoldScout-export 6^z1ffmqhyzzxo^56
 @i^7230^Smite's Mighty Hammer
 @i^7473^Regal Mantle of the Elder
 @i^7608^Seer's Fine Stein
+@i^7666^Shattered Necklace
 @i^7710^Loksey's Training Stick
 @i^7711^Robe of Doan
 @i^7720^Whitemane's Chapeau
 @i^7909^Aquamarine
 @i^7910^Star Ruby
+@i^8009^Dentrium Power Stone
+@i^8052^An'Alleum Power Stone
 @i^8146^Wicked Claw
 @i^8159^Jouster's Girdle
 @i^8183^Precision Bow
 @i^8751^Overlinked Coif
+@i^9295^Recipe: Invisibility Potion
 @i^9299^Thermaplugg's Safe Combination
 @i^9308^Grime-Encrusted Object
 @i^9326^Grime-Encrusted Ring
 @i^9355^Hoop Earring
+@i^9406^Spirewind Fetter
 @i^9446^Electrocutioner Leg
 @i^9451^Bubbling Water
 @i^9748^Simple Robe of Agility
@@ -604,6 +616,7 @@ GoldScout-export 6^z1ffmqhyzzxo^56
 @i^9787^Raider's Gauntlets of Intellect
 @i^9800^Ivy Orb of Arcane Protection
 @i^9849^Conjurer's Hood of the Whale
+@i^9851^Conjurer's Breeches of Intellect
 @i^9893^Huntsman's Leggings of the Bandit
 @i^10316^Pattern: Colorful Kilt
 @i^10402^Blackened Defias Boots
@@ -780,6 +793,7 @@ GoldScout-export 6^z1ffmqhyzzxo^56
 @q^1701^0:15:0
 @q^1702^0:15:0
 @q^1703^1:0:0
+@q^1705^2:7:1
 @q^1707^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
@@ -834,6 +848,7 @@ GoldScout-export 6^z1ffmqhyzzxo^56
 @q^2777^0:2:0
 @q^2780^0:2:0
 @q^2781^0:2:0
+@q^2836^1:7:1
 @q^2838^1:7:1
 @q^2882^2:9:0
 @q^2940^0:15:0
@@ -878,6 +893,7 @@ GoldScout-export 6^z1ffmqhyzzxo^56
 @q^3812^0:4:0
 @q^3813^0:4:0
 @q^3817^0:4:0
+@q^3827^1:0:0
 @q^3857^1:7:1
 @q^3863^1:12:0
 @q^3864^2:7:1
@@ -891,6 +907,7 @@ GoldScout-export 6^z1ffmqhyzzxo^56
 @q^4019^0:2:0
 @q^4025^0:2:0
 @q^4043^2:4:0
+@q^4075^2:4:0
 @q^4093^0:15:0
 @q^4105^1:12:0
 @q^4306^1:7:1
@@ -975,19 +992,24 @@ GoldScout-export 6^z1ffmqhyzzxo^56
 @q^7230^3:2:0
 @q^7473^2:4:0
 @q^7608^2:4:0
+@q^7666^2:12:0
 @q^7710^3:2:0
 @q^7711^2:4:0
 @q^7720^3:4:0
 @q^7909^2:7:1
 @q^7910^2:7:1
+@q^8009^1:12:0
+@q^8052^1:12:0
 @q^8146^1:7:1
 @q^8159^2:4:0
 @q^8183^2:2:0
 @q^8751^0:4:0
+@q^9295^2:9:0
 @q^9299^1:13:0
 @q^9308^1:12:0
 @q^9326^1:12:0
 @q^9355^0:15:0
+@q^9406^3:4:0
 @q^9446^3:2:0
 @q^9451^1:0:0
 @q^9748^2:4:0
@@ -999,6 +1021,7 @@ GoldScout-export 6^z1ffmqhyzzxo^56
 @q^9787^2:4:0
 @q^9800^2:4:0
 @q^9849^2:4:0
+@q^9851^2:4:0
 @q^9893^2:4:0
 @q^10316^2:9:0
 @q^10402^3:4:0
@@ -1132,6 +1155,7 @@ GoldScout-export 6^z1ffmqhyzzxo^56
 @m^1413^The Barrens
 @m^1414^Kalimdor
 @m^1415^Eastern Kingdoms
+@m^1418^Badlands
 @m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
 @m^1433^Redridge Mountains
@@ -1913,6 +1937,9 @@ GoldScout-export 6^z1ffmqhyzzxo^56
 @c^279957^
 @c^279960^
 @c^279961^
+@c^279965^
+@c^279966^
+@c^279967^
 @c^279968^
 @c^279969^
 @c^279974^
@@ -2047,6 +2074,9 @@ GoldScout-export 6^z1ffmqhyzzxo^56
 @a^4702^229:3,230:1,249:1,250:1
 @a^4788^128:1
 @a^4802^128:2
+@a^4844^28:1,29:5,48:3,49:4
+@a^4846^29:3,49:7
+@a^4851^47:1,67:2
 @a^8996^30:4,50:2
 @a^11521^249:1
 @a^11858^354:2
