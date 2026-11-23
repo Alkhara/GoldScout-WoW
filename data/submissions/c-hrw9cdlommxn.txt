@@ -1,13 +1,29 @@
-GoldScout-export 6^hrw9cdlommxn^10
+GoldScout-export 6^hrw9cdlommxn^11
 428^99^0^18^19^1433^0.5219^0.7607^99^Dire Condor^556:9:9,1080:35:35,1464:10:10,4775:33:33,4776:11:11,5114:4:4,5115:2:2,6545:1:1,6889:66:66,14170:1:1,17056:25:25,211855:1:1,248683:1:1,248685:1:1,250188:4:4^
 441^15^0^17^18^1433^0.5340^0.7536^15^Black Dragon Whelp^3177:4:4,5635:1:1^
 505^4^0^19^20^1433^0.6174^0.7531^4^Greater Tarantula^1081:1:1,3174:3:3,3182:1:1,3931:1:1^
 1126^2^0^6^7^1426^0.4458^0.4162^2^Large Crag Boar^769:2:2,771:1:1,2886:2:2^
 1756^4^0^60^60^1453^0.8025^0.4042^4^Stormwind Royal Guard^^
+2242^1^0^36^36^1416^0.6131^0.4438^1^Syndicate Spy^^
+2243^6^0^36^37^1416^0.5078^0.2260^6^Syndicate Sentry^3505:3:3,4306:1:2,5113:1:1^
+2245^3^0^37^38^1416^0.4989^0.2035^3^Syndicate Saboteur^^
+2246^6^0^38^39^1416^0.3923^0.1659^6^Syndicate Assassin^1708:1:1,3505:2:2,3786:1:1,3805:1:1,4306:2:6,4338:1:1,8748:1:1^
+2247^4^0^39^40^1416^0.4009^0.1790^4^Syndicate Enforcer^1708:1:1,3505:2:2,4306:1:2,5113:1:1^
+2252^13^0^34^35^1416^0.5038^0.3986^13^Crushridge Ogre^1708:1:1,2592:2:2,2843:5:5,3385:1:1,3658:2:2,3771:1:1,4306:2:2,4338:1:1^
+2253^8^0^35^36^1416^0.4835^0.3963^8^Crushridge Brute^2592:1:1,2843:4:4,3658:3:3,4306:2:3^
+2318^4^0^35^36^1416^0.5441^0.2952^4^Argus Shadow Mage^4306:1:1,213421:1:1^
+2319^2^0^34^35^1416^0.6212^0.4131^2^Syndicate Wizard^4306:1:2^
+2320^1^0^40^40^1416^0.3922^0.1460^1^Nagaz^3672:1:1^
+2417^1^0^39^39^1416^0.3935^0.4779^1^Grel'borg the Miser^3684:1:1,4306:1:3^
 2572^1^0^35^35^1417^0.8242^0.3886^1^Drywhisker Kobold^4306:1:2,4435:1:1^
 2573^1^0^38^38^1417^0.8434^0.2994^1^Drywhisker Surveyor^4435:1:1^
 2574^5^0^36^37^1417^0.8393^0.3294^5^Drywhisker Digger^1477:1:1,3813:1:1,4306:1:1,4435:1:1^
+2595^10^0^38^39^1417^0.2204^0.8711^10^Daggerspine Raider^3779:1:1,6362:1:1,7072:9:9,17057:4:4,17058:2:2^
+2596^3^0^39^39^1417^0.2136^0.8629^3^Daggerspine Sorceress^7072:1:1,8747:1:1,17057:1:1^
+2760^1^0^39^39^1417^0.2434^0.2941^1^Burning Exile^^
+2776^2^0^40^40^1417^0.3559^0.7981^2^Vengeful Surge^^
 12580^1^0^0^0^1453^0.8017^0.4128^1^Reginald Windsor^^
+14222^1^0^35^35^1416^0.3009^0.7213^1^Araga^1686:1:1,9868:1:1^
 250868^2^0^6^6^2521^0.4209^0.5475^2^Vuldren^2672:2:2,3299:1:1,3300:1:1^
 250873^8^0^1^1^2521^0.4534^0.2702^8^Juvenile Vuldren^1374:1:1,2652:2:2,2672:1:1,4865:3:3,7073:5:5,7074:3:3^
 250874^1^0^10^10^2521^0.5399^0.6979^1^Vuldren Alpha^1412:1:1,2672:1:1,3299:1:1^
@@ -94,12 +110,15 @@ GoldScout-export 6^hrw9cdlommxn^10
 @i^1498^Calico Gloves
 @i^1504^Warped Leather Bracers
 @i^1515^Rough Wooden Staff
+@i^1686^Bristly Whisker
+@i^1708^Sweet Nectar
 @i^1735^Worn Mail Pants
 @i^2138^Sharpened Letter Opener
 @i^2210^Battered Buckler
 @i^2211^Bent Large Shield
 @i^2213^Worn Large Shield
 @i^2589^Linen Cloth
+@i^2592^Wool Cloth
 @i^2646^Loose Chain Pants
 @i^2652^Flimsy Chain Cloak
 @i^2653^Flimsy Chain Gloves
@@ -108,6 +127,7 @@ GoldScout-export 6^hrw9cdlommxn^10
 @i^2672^Stringy Wolf Meat
 @i^2675^Crawler Claw
 @i^2773^Cracked Shortbow
+@i^2843^Dirty Knucklebones
 @i^2886^Crag Boar Rib
 @i^3013^Scroll of Protection
 @i^3174^Spider Ichor
@@ -119,9 +139,19 @@ GoldScout-export 6^hrw9cdlommxn^10
 @i^3365^Frayed Bracers
 @i^3370^Patchwork Belt
 @i^3373^Patchwork Bracers
+@i^3385^Lesser Mana Potion
+@i^3505^Alterac Signet Ring
+@i^3658^Recovered Tome
+@i^3672^Head of Nagaz
+@i^3684^Perenolde Tiara
+@i^3771^Wild Hog Shank
+@i^3779^Hefty War Axe
+@i^3786^Shiny Dirk
+@i^3805^Hardened Leather Pants
 @i^3813^Double Mail Pants
 @i^3931^Poisoned Spider Fang
 @i^4306^Silk Cloth
+@i^4338^Mageweave Cloth
 @i^4435^Mote of Myzrael
 @i^4496^Small Brown Pouch
 @i^4540^Tough Hunk of Bread
@@ -131,26 +161,35 @@ GoldScout-export 6^hrw9cdlommxn^10
 @i^4865^Ruined Pelt
 @i^4873^Dry Hardened Barnacle
 @i^4874^Clean Fishbones
+@i^5113^Mark of the Syndicate
 @i^5114^Severed Talon
 @i^5115^Broken Wishbone
 @i^5469^Strider Meat
 @i^5635^Sharp Claw
 @i^6297^Old Skull
+@i^6362^Raw Rockscale Cod
 @i^6545^Soldier's Armor of the Owl
 @i^6889^Small Egg
+@i^7072^Naga Scale
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
 @i^7096^Plucked Feather
 @i^7097^Leg Meat
 @i^7100^Sticky Ichor
 @i^8181^Hunting Rifle
+@i^8747^Hardened Leather Helm
+@i^8748^Double Mail Coif
+@i^9868^Renegade Gauntlets of Intellect
 @i^14099^Native Sash
 @i^14170^Buccaneer's Mantle
 @i^15473^Charger's Boots
 @i^15478^Charger's Shield
 @i^15482^War Torn Bands
 @i^17056^Light Feather
+@i^17057^Shiny Fish Scales
+@i^17058^Fish Oil
 @i^211855^Scroll: STHENIC LUNATE
+@i^213421^Singed Note
 @i^248683^Waylaid Crate: Apprentice Ore
 @i^248685^Waylaid Crate: Apprentice Curiosities
 @i^250188^Recipe: Breakfast Omelette
@@ -218,12 +257,15 @@ GoldScout-export 6^hrw9cdlommxn^10
 @q^1498^0:4:0
 @q^1504^0:4:0
 @q^1515^0:2:0
+@q^1686^0:15:0
+@q^1708^1:0:0
 @q^1735^0:4:0
 @q^2138^0:2:0
 @q^2210^0:4:0
 @q^2211^0:4:0
 @q^2213^0:4:0
 @q^2589^1:7:1
+@q^2592^1:7:1
 @q^2646^0:4:0
 @q^2652^0:4:0
 @q^2653^0:4:0
@@ -232,6 +274,7 @@ GoldScout-export 6^hrw9cdlommxn^10
 @q^2672^1:7:1
 @q^2675^1:7:1
 @q^2773^0:2:0
+@q^2843^1:12:0
 @q^2886^1:7:1
 @q^3013^1:0:0
 @q^3174^1:7:1
@@ -243,9 +286,19 @@ GoldScout-export 6^hrw9cdlommxn^10
 @q^3365^0:4:0
 @q^3370^0:4:0
 @q^3373^0:4:0
+@q^3385^1:0:0
+@q^3505^1:12:0
+@q^3658^1:12:0
+@q^3672^1:12:0
+@q^3684^1:12:0
+@q^3771^1:0:0
+@q^3779^0:2:0
+@q^3786^0:2:0
+@q^3805^0:4:0
 @q^3813^0:4:0
 @q^3931^0:15:0
 @q^4306^1:7:1
+@q^4338^1:7:1
 @q^4435^1:12:0
 @q^4496^1:1:0
 @q^4540^1:0:0
@@ -255,26 +308,35 @@ GoldScout-export 6^hrw9cdlommxn^10
 @q^4865^0:15:0
 @q^4873^0:15:0
 @q^4874^0:15:0
+@q^5113^0:15:0
 @q^5114^0:15:0
 @q^5115^0:15:0
 @q^5469^1:7:1
 @q^5635^1:7:1
 @q^6297^0:15:0
+@q^6362^1:7:1
 @q^6545^2:4:0
 @q^6889^1:7:1
+@q^7072^1:7:1
 @q^7073^0:15:0
 @q^7074^0:15:0
 @q^7096^0:15:0
 @q^7097^1:0:0
 @q^7100^0:15:0
 @q^8181^1:2:0
+@q^8747^0:4:0
+@q^8748^0:4:0
+@q^9868^2:4:0
 @q^14099^1:4:0
 @q^14170^1:4:0
 @q^15473^1:4:0
 @q^15478^1:4:0
 @q^15482^1:4:0
 @q^17056^1:15:1
+@q^17057^1:15:0
+@q^17058^1:15:0
 @q^211855^1:0:0
+@q^213421^1:15:0
 @q^248683^1:0:1
 @q^248685^1:0:1
 @q^250188^1:9:0
@@ -310,6 +372,7 @@ GoldScout-export 6^hrw9cdlommxn^10
 @q^265475^1:12:0
 @q^265476^1:12:0
 @q^267474^1:0:0
+@m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
 @m^1426^Dun Morogh
 @m^1433^Redridge Mountains
@@ -1276,10 +1339,26 @@ GoldScout-export 6^hrw9cdlommxn^10
 @a^505^312:4
 @a^1126^168:2
 @a^1756^156:1,176:3
+@a^2242^172:1
+@a^2243^69:3,90:2,131:1
+@a^2245^69:1,89:1,90:1
+@a^2246^47:1,67:4,87:1
+@a^2247^47:1,67:1,68:1,87:1
+@a^2252^129:1,149:3,150:1,169:3,170:5
+@a^2253^149:3,150:1,169:4
+@a^2318^69:1,90:1,131:1,191:1
+@a^2319^172:2
+@a^2320^47:1
+@a^2417^187:1
 @a^2572^156:1
 @a^2573^116:1
 @a^2574^136:3,137:1,156:1
+@a^2595^324:3,343:2,344:3,364:1,365:1
+@a^2596^324:2,344:1
+@a^2760^104:1
+@a^2776^307:2
 @a^12580^176:1
+@a^14222^286:1
 @a^250868^188:1,248:1
 @a^250873^108:2,109:6
 @a^250874^270:1

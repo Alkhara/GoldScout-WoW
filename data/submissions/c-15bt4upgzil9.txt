@@ -1,4 +1,4 @@
-GoldScout-export 6^15bt4upgzil9^3
+GoldScout-export 6^15bt4upgzil9^4
 2242^8^0^35^36^1416^0.6139^0.4385^8^Espía de la Hermandad^1710:2:2,4306:3:6,5113:3:3^
 2246^11^0^38^39^1416^0.3973^0.1697^11^Asesino de la Hermandad^1477:1:1,1707:1:1,3505:4:4,4306:2:3,4338:1:1,6421:1:1,7431:1:1^
 2247^15^0^39^40^1416^0.4024^0.1810^15^Déspota de la Hermandad^1707:1:1,1710:1:1,3505:3:3,4306:3:8,4338:1:1,5113:1:1,6986:1:1^
@@ -24,9 +24,12 @@ GoldScout-export 6^15bt4upgzil9^3
 2590^9^0^35^36^1417^0.2684^0.6262^9^Conjurador de la Hermandad^1707:1:1,3801:1:1,4039:1:1,4306:3:8,4506:2:4,5113:1:1,213546:1:1^
 2591^2^0^37^38^1417^0.2718^0.6290^2^Magus de la Hermandad^1707:1:1,1708:1:1^
 2592^1^0^39^39^1417^0.3465^0.6020^1^Exiliado resonador^^
+2595^15^0^38^39^1417^0.2281^0.8743^15^Asaltante Espinadaga^1708:1:1,3781:1:1,4727:1:1,6362:2:5,6432:1:1,7072:13:13,17057:2:2,17058:2:2^
+2596^4^0^39^40^1417^0.2229^0.8613^4^Hechicera Espinadaga^17057:2:2,17058:2:2^
 2597^1^0^40^40^1417^0.2613^0.6548^1^Lord Falconcrest^4306:1:3,4517:1:1^
 2599^1^0^38^38^1417^0.2602^0.6539^1^Otto^4516:1:1^
 2760^1^0^38^39^1417^0.2525^0.3102^1^Exiliado ardiente^7068:1:1^
+2776^2^0^40^40^1417^0.3565^0.7967^2^Marea vengativa^^
 2783^1^0^40^40^1417^0.2926^0.6171^1^Marez Cogulla^4515:1:1^
 2793^1^0^39^39^1417^0.5483^0.8188^1^Kor'gresh Ira Helada^4525:1:1^
 2923^1^0^41^41^1425^0.1992^0.4827^1^Melenargenta sarnoso^4583:1:1,12208:1:1^
@@ -58,6 +61,7 @@ GoldScout-export 6^15bt4upgzil9^3
 @i^3505^Sello de Alterac
 @i^3672^Cabeza de Nagaz
 @i^3771^Pata de marrano salvaje
+@i^3781^Mandoble ancho
 @i^3794^Brazales entrelazados
 @i^3799^Jubón entrelazado
 @i^3801^Botas de cuero endurecido
@@ -80,16 +84,20 @@ GoldScout-export 6^15bt4upgzil9^3
 @i^4539^Manzana de Corteza de oro
 @i^4582^Cola tupida suave
 @i^4583^Melena espesa
+@i^4727^Faja de brigadier
 @i^5040^Cuchillo de cazador de las Sombras
 @i^5113^Marca de la Hermandad
 @i^5524^Almeja gruesa
 @i^5569^Algas
 @i^5829^Pico afilado
+@i^6362^Bacalao piedrescama crudo
 @i^6419^Mitones con inscripciones
 @i^6421^Cinturón con inscripciones
+@i^6432^Capa imperial
 @i^6444^Lengua bífida
 @i^6986^Loto carmesí
 @i^7068^Fuego elemental
+@i^7072^Escama naga
 @i^7367^Manto de anciano de la ballena
 @i^7431^Pantalones Crepusculares del hechicero
 @i^7447^Brazales de centinela de la bestia
@@ -101,6 +109,7 @@ GoldScout-export 6^15bt4upgzil9^3
 @i^12206^Carne de cangrejo tierna
 @i^12208^Carne de lobo tierna
 @i^17057^Escamas de pez lustrosas
+@i^17058^Aceite de pescado
 @i^213421^Nota incinerada
 @i^213546^Pergamino: CUCAMONGA
 @i^216483^Mazo Secacorteza
@@ -128,6 +137,7 @@ GoldScout-export 6^15bt4upgzil9^3
 @q^3505^1:12:0
 @q^3672^1:12:0
 @q^3771^1:0:0
+@q^3781^0:2:0
 @q^3794^0:4:0
 @q^3799^0:4:0
 @q^3801^0:4:0
@@ -150,16 +160,20 @@ GoldScout-export 6^15bt4upgzil9^3
 @q^4539^1:0:0
 @q^4582^1:12:0
 @q^4583^0:15:0
+@q^4727^2:4:0
 @q^5040^1:2:0
 @q^5113^0:15:0
 @q^5524^1:7:0
 @q^5569^0:15:0
 @q^5829^0:15:0
+@q^6362^1:7:1
 @q^6419^2:4:0
 @q^6421^2:4:0
+@q^6432^2:4:0
 @q^6444^0:15:0
 @q^6986^0:15:0
 @q^7068^1:7:1
+@q^7072^1:7:1
 @q^7367^2:4:0
 @q^7431^2:4:0
 @q^7447^2:4:0
@@ -171,6 +185,7 @@ GoldScout-export 6^15bt4upgzil9^3
 @q^12206^1:7:1
 @q^12208^1:7:1
 @q^17057^1:15:0
+@q^17058^1:15:0
 @q^213421^1:15:0
 @q^213546^1:0:0
 @q^216483^1:0:0
@@ -861,9 +876,12 @@ GoldScout-export 6^15bt4upgzil9^3
 @a^2590^225:1,245:6,265:2
 @a^2591^245:2
 @a^2592^246:1
+@a^2595^324:4,344:6,345:1,363:1,364:3
+@a^2596^324:2,344:1,364:1
 @a^2597^265:1
 @a^2599^265:1
 @a^2760^125:1
+@a^2776^307:2
 @a^2783^245:1
 @a^2793^330:1
 @a^2923^183:1

@@ -1,4 +1,4 @@
-GoldScout-export 6^mhdz1qdep8h7^33
+GoldScout-export 6^mhdz1qdep8h7^35
 1783^15^0^50^51^1422^0.3701^0.5683^15^Ecorcheur Squelette^8948:1:1,12840:4:4,13446:1:1,14047:7:10,14619:4:4^
 1784^15^0^51^52^1422^0.3711^0.5621^15^Ensorceleur Squelette^7910:1:1,12840:4:4,14047:3:3,14619:6:6^
 1785^1^0^52^53^1422^0.4777^0.5074^1^Terreur Squelette^^
@@ -218,10 +218,13 @@ GoldScout-export 6^mhdz1qdep8h7^33
 252457^1^0^60^60^2482^0.5011^0.3938^1^Mazzotripe le Faible^8948:1:2^
 256809^5^0^57^58^2482^0.3368^0.4677^5^Predatory Hyjal Stag^5120:1:1,5471:3:3,5566:3:3^
 260148^1^0^60^60^2482^0.2735^0.5745^1^Réanimateur du Fléau^13446:1:1,268573:1:1^
+260322^1^0^0^0^0^0.0000^0.0000^0^^273023:1:1^
+260326^1^0^0^0^0^0.0000^0.0000^0^^270866:1:1,273028:1:1^
 260422^21^0^56^57^2482^0.4899^0.7399^21^Acolyte des cendres^3914:1:1,8952:2:2,10305:1:1,13446:1:1,14047:9:19,274396:12:12^
 260440^1^0^58^58^2482^0.4948^0.6960^1^Brashann Mornesombre^13822:1:1^
 260443^1^0^58^58^2482^0.4445^0.6821^1^Dazka Noirsommeil^273292:1:1^
 260444^1^0^58^58^2482^0.4673^0.6810^1^Tyaeha Noirserment^273291:1:1^
+260797^1^0^0^0^0^0.0000^0.0000^0^^770:1:1,2785:1:1^
 260818^1^0^58^58^2482^0.4234^0.7289^1^Frezzlie Popsiffle^273290:1:1^
 260826^1^0^59^59^2482^0.5348^0.5837^1^Zarrat Aile-de-ver^5117:1:1,268998:1:1^
 261914^2^0^55^55^2482^0.7318^0.7677^2^Chouette d'Hyjal corrompue^12207:2:2,15420:1:1^
@@ -230,6 +233,7 @@ GoldScout-export 6^mhdz1qdep8h7^33
 264867^1^0^61^61^2482^0.6927^0.2236^1^Ghansurok^274162:1:1^
 276138^1^0^56^56^2482^0.5023^0.7078^1^Assistant subjugué^^
 278137^4^0^55^56^2482^0.6597^0.7460^4^Floraison fongique^^
+@i^770^Croc pointu de crocilisque
 @i^818^Tigerseye
 @i^858^Lesser Healing Potion
 @i^1074^Patte d'araignée
@@ -250,6 +254,7 @@ GoldScout-export 6^mhdz1qdep8h7^33
 @i^2455^Minor Mana Potion
 @i^2589^Linen Cloth
 @i^2763^Fisherman Knife
+@i^2785^Arc à double courbure rigide
 @i^2799^Croc de gorille
 @i^3290^Ancestral Gloves
 @i^3291^Ancestral Woollies
@@ -478,11 +483,14 @@ GoldScout-export 6^mhdz1qdep8h7^33
 @i^268573^Amulette de réanimation
 @i^268997^Plumule aile-de-ver
 @i^268998^Lance d'Omnuron
+@i^270866^Relique des Titans
 @i^271220^Essence éphémère
 @i^272973^Goutte de vie volée
 @i^272996^Trogg Scepter
 @i^273005^Satyrskin Cloak
 @i^273008^Limon de gelée gangrenée
+@i^273023^Ceinturon selécaille
+@i^273028^Mantelet de reliquaire
 @i^273290^Ossements de Frezzlie Popsiffle
 @i^273291^Ossements de Tyaeha Noirserment
 @i^273292^Ossements de Dazka Noirsommeil
@@ -503,6 +511,7 @@ GoldScout-export 6^mhdz1qdep8h7^33
 @i^281017^Parchemin : NAÉF CORCOINCH
 @i^281018^Parchemin : RANSTOR TEULÀ TRES
 @i^282028^Fronde brisée de Celastrus
+@q^770^0:15:0
 @q^818^2:7:1
 @q^858^1:0:0
 @q^1074^0:15:0
@@ -523,6 +532,7 @@ GoldScout-export 6^mhdz1qdep8h7^33
 @q^2455^1:0:0
 @q^2589^1:7:1
 @q^2763^0:2:0
+@q^2785^0:2:0
 @q^2799^1:12:0
 @q^3290^1:4:0
 @q^3291^2:4:0
@@ -751,11 +761,14 @@ GoldScout-export 6^mhdz1qdep8h7^33
 @q^268573^1:12:0
 @q^268997^1:12:0
 @q^268998^1:12:0
+@q^270866^1:12:0
 @q^271220^1:12:0
 @q^272973^1:12:0
 @q^272996^3:2:0
 @q^273005^3:4:0
 @q^273008^1:12:0
+@q^273023^3:4:0
+@q^273028^3:4:0
 @q^273290^1:12:0
 @q^273291^1:12:0
 @q^273292^1:12:0
@@ -1446,4 +1459,4 @@ GoldScout-export 6^mhdz1qdep8h7^33
 @a^264867^93:1
 @a^276138^290:1
 @a^278137^293:4
-@l^0^enUS
+@l^0^frFR

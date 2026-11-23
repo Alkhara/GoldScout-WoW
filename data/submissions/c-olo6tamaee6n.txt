@@ -1,4 +1,4 @@
-GoldScout-export 6^olo6tamaee6n^30
+GoldScout-export 6^olo6tamaee6n^32
 3^7^0^24^25^1431^0.2381^0.3817^7^Flesh Eater^1205:1:1,2592:2:4,2794:1:1,4306:1:1,6530:1:1^
 205^30^0^28^29^1431^0.6394^0.5935^30^Nightbane Dark Runner^1759:2:2,2766:1:1,3380:1:1,3770:1:1,5635:4:4,211854:1:1^
 206^10^0^29^30^1431^0.7378^0.6991^10^Nightbane Vile Fang^1205:1:1^
@@ -285,6 +285,12 @@ GoldScout-export 6^olo6tamaee6n^30
 4154^8^0^30^32^1441^0.7912^0.6235^8^Salt Flats Scavenger^729:1:1,3399:3:3,5114:4:4,5115:1:1,5116:4:4,5848:8:8,11416:2:2,12037:1:1,17056:4:4^
 4158^2^0^32^33^1441^0.8570^0.7501^2^Salt Flats Vulture^729:1:1,5116:1:1,5636:1:1,5848:2:2,12037:1:1^
 4260^1^0^37^37^1434^0.4452^0.1833^1^Venture Co. Shredder^^
+4323^31^0^41^42^1445^0.4618^0.6635^31^Searing Hatchling^4402:6:6,4460:10:10,6444:6:6,7993:1:1,8146:1:1,15156:1:1^
+4324^24^0^42^43^1445^0.4621^0.6647^24^Searing Whelp^4402:1:1,4460:4:4,6444:3:3,213547:1:1^
+4329^10^0^41^42^1445^0.4537^0.6592^10^Firemane Scout^1645:1:1,249511:1:1^
+4331^12^0^42^43^1445^0.4497^0.6601^12^Firemane Ash Tail^4599:1:1,8750:1:1,14424:1:1,14826:1:1,15979:1:1^
+4345^2^0^40^41^1445^0.4791^0.6808^2^Drywallow Daggermaw^770:2:4^
+4415^1^0^40^40^1445^0.5341^0.6686^1^Giant Darkfang Spider^^
 4416^5^0^0^0^0^0.0000^0.0000^0^^955:1:1,2592:1:1,7997:1:1^
 4417^2^0^0^0^0^0.0000^0.0000^0^^10400:1:1^
 4420^1^0^0^0^0^0.0000^0.0000^0^^274161:1:1^
@@ -671,6 +677,7 @@ GoldScout-export 6^olo6tamaee6n^30
 @i^4582^Soft Bushy Tail
 @i^4583^Thick Furry Mane
 @i^4585^Dripping Spider Mandible
+@i^4599^Cured Ham Steak
 @i^4603^Raw Spotted Yellowtail
 @i^4605^Red-speckled Mushroom
 @i^4606^Spongy Morel
@@ -782,6 +789,7 @@ GoldScout-export 6^olo6tamaee6n^30
 @i^7993^Plans: Dazzling Mithril Rapier
 @i^7997^Red Defias Mask
 @i^8146^Wicked Claw
+@i^8750^Thick Leather Hat
 @i^9293^Recipe: Magic Resistance Potion
 @i^9355^Hoop Earring
 @i^9451^Bubbling Water
@@ -826,9 +834,12 @@ GoldScout-export 6^olo6tamaee6n^30
 @i^14377^Sanguine Handwraps
 @i^14378^Sanguine Mantle
 @i^14408^Stonecloth Boots
+@i^14424^Silksand Legwraps
 @i^14560^Prospector's Boots
 @i^14565^Prospector's Woolies
 @i^14749^Hulking Spaulders
+@i^14826^Symbolic Gauntlets
+@i^15156^Nocturnal Cap of the Tiger
 @i^15210^Raider Shortsword of the Tiger
 @i^15241^Battle Knife of the Sorcerer
 @i^15248^Gleaming Claymore of Shadow Protection
@@ -847,6 +858,7 @@ GoldScout-export 6^olo6tamaee6n^30
 @i^15803^Book of the Ancients
 @i^15878^Rackmore's Silver Key
 @i^15881^Rackmore's Golden Key
+@i^15979^Embersilk Stave of the Channeler
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
@@ -875,6 +887,7 @@ GoldScout-export 6^olo6tamaee6n^30
 @i^248703^Waylaid Crate: Apprentice Ingots
 @i^248705^Waylaid Crate: Journeyman Fabrics
 @i^248709^Waylaid Crate: Expert Ingots
+@i^249511^Formula: Enchant 2H Weapon - Lesser Agility
 @i^250188^Recipe: Breakfast Omelette
 @i^254432^Carved Centaur Totem
 @i^255723^Manual: Greater Healing Potion
@@ -1148,6 +1161,7 @@ GoldScout-export 6^olo6tamaee6n^30
 @q^4582^1:12:0
 @q^4583^0:15:0
 @q^4585^0:15:0
+@q^4599^1:0:0
 @q^4603^1:7:1
 @q^4605^1:0:0
 @q^4606^1:0:0
@@ -1259,6 +1273,7 @@ GoldScout-export 6^olo6tamaee6n^30
 @q^7993^2:9:0
 @q^7997^0:4:0
 @q^8146^1:7:1
+@q^8750^0:4:0
 @q^9293^2:9:0
 @q^9355^0:15:0
 @q^9451^1:0:0
@@ -1303,9 +1318,12 @@ GoldScout-export 6^olo6tamaee6n^30
 @q^14377^2:4:0
 @q^14378^2:4:0
 @q^14408^2:4:0
+@q^14424^2:4:0
 @q^14560^2:4:0
 @q^14565^2:4:0
 @q^14749^2:4:0
+@q^14826^2:4:0
+@q^15156^2:4:0
 @q^15210^2:2:0
 @q^15241^2:2:0
 @q^15248^2:2:0
@@ -1324,6 +1342,7 @@ GoldScout-export 6^olo6tamaee6n^30
 @q^15803^1:12:0
 @q^15878^1:12:0
 @q^15881^1:12:0
+@q^15979^2:4:0
 @q^17056^1:15:1
 @q^17057^1:15:0
 @q^17058^1:15:0
@@ -1352,6 +1371,7 @@ GoldScout-export 6^olo6tamaee6n^30
 @q^248703^2:0:1
 @q^248705^2:0:1
 @q^248709^2:0:1
+@q^249511^2:9:0
 @q^250188^1:9:0
 @q^254432^2:15:0
 @q^255723^2:9:0
@@ -1404,6 +1424,7 @@ GoldScout-export 6^olo6tamaee6n^30
 @m^1441^Thousand Needles
 @m^1442^Stonetalon Mountains
 @m^1443^Desolace
+@m^1445^Dustwallow Marsh
 @m^1453^Stormwind City
 @m^2548^Riverglades
 @c^118^
@@ -2908,6 +2929,12 @@ GoldScout-export 6^olo6tamaee6n^30
 @a^4154^234:2,236:2,254:1,275:1,277:2
 @a^4158^296:1,317:1
 @a^4260^68:1
+@a^4323^248:3,249:3,268:3,269:21,270:1
+@a^4324^248:3,249:3,268:3,269:14,270:1
+@a^4329^248:2,249:1,268:1,269:6
+@a^4331^248:2,249:1,268:2,269:7
+@a^4345^268:1,270:1
+@a^4415^270:1
 @a^4619^175:1
 @a^4633^174:1
 @a^4634^174:2,194:2

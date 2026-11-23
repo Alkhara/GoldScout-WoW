@@ -1,4 +1,4 @@
-GoldScout-export 6^j5c3kzpnjzpt^28
+GoldScout-export 6^j5c3kzpnjzpt^29
 95^17^0^11^12^1436^0.4832^0.4665^17^Defias Smuggler^829:2:2,1514:1:1,2589:2:4^
 114^21^0^14^15^1436^0.3850^0.5059^21^Harvest Watcher^732:7:7,814:4:4,1274:6:6,1509:1:1,4359:1:1,4678:1:1,255007:5:5^
 126^9^0^12^13^1436^0.5299^0.1101^9^Murloc Coastrunner^730:1:1,1179:1:1,5523:2:2,6521:1:1,9755:1:1,254548:5:5^
@@ -15,6 +15,9 @@ GoldScout-export 6^j5c3kzpnjzpt^28
 590^4^0^13^14^1436^0.3591^0.5335^4^Defias Looter^^
 604^10^0^27^28^1431^0.2463^0.3255^10^Plague Spreader^884:1:1,1205:1:1^
 705^11^0^1^1^1426^0.2880^0.7362^11^Ragged Young Wolf^750:8:8,1366:1:1,4865:4:4,7073:4:4,7074:5:5^
+707^6^0^1^2^1426^0.2239^0.7306^6^Rockjaw Trogg^1364:1:1^
+708^13^0^3^3^1426^0.2144^0.7269^13^Small Crag Boar^117:3:3,1366:1:1,1368:2:2,1369:1:1,1378:1:1,2649:1:1,2650:1:1,4865:7:7,7098:5:5^
+724^6^0^2^2^1426^0.2646^0.7203^6^Burly Rockjaw Trogg^1366:1:1,1380:1:1,2589:2:2^
 909^12^0^25^26^1431^0.2213^0.7191^12^Defias Night Blade^2592:1:2^
 910^4^0^26^27^1431^0.2212^0.7216^4^Defias Enchanter^255724:1:1^
 1109^2^0^14^14^1436^0.4422^0.5217^2^Fleshripper^^
@@ -99,8 +102,12 @@ GoldScout-export 6^j5c3kzpnjzpt^28
 @i^1205^Melon Juice
 @i^1274^Hops
 @i^1288^Large Venom Sac
+@i^1364^Ragged Leather Vest
 @i^1366^Ragged Leather Pants
+@i^1368^Ragged Leather Gloves
 @i^1369^Ragged Leather Belt
+@i^1378^Frayed Pants
+@i^1380^Frayed Robe
 @i^1433^Patchwork Armor
 @i^1499^Calico Pants
 @i^1509^Warped Leather Vest
@@ -118,6 +125,7 @@ GoldScout-export 6^j5c3kzpnjzpt^28
 @i^2536^Trogg Stone Tooth
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2649^Flimsy Chain Belt
 @i^2650^Flimsy Chain Boots
 @i^2656^Flimsy Chain Vest
 @i^2672^Stringy Wolf Meat
@@ -250,8 +258,12 @@ GoldScout-export 6^j5c3kzpnjzpt^28
 @q^1205^1:0:0
 @q^1274^1:12:0
 @q^1288^1:7:1
+@q^1364^0:4:0
 @q^1366^0:4:0
+@q^1368^0:4:0
 @q^1369^0:4:0
+@q^1378^0:4:0
+@q^1380^0:4:0
 @q^1433^0:4:0
 @q^1499^0:4:0
 @q^1509^0:4:0
@@ -269,6 +281,7 @@ GoldScout-export 6^j5c3kzpnjzpt^28
 @q^2536^1:12:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2649^0:4:0
 @q^2650^0:4:0
 @q^2656^0:4:0
 @q^2672^1:7:1
@@ -2250,6 +2263,9 @@ GoldScout-export 6^j5c3kzpnjzpt^28
 @a^590^207:4
 @a^604^104:3,124:1,125:5,145:1
 @a^705^285:11
+@a^707^284:6
+@a^708^284:12,304:1
+@a^724^285:6
 @a^909^283:1,284:11
 @a^910^284:4
 @a^1109^208:1,209:1
