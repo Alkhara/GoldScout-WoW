@@ -1,4 +1,4 @@
-GoldScout-export 6^skix5o50jbrh^2
+GoldScout-export 6^skix5o50jbrh^3
 1015^1^0^24^24^1437^0.5184^0.2492^1^Highland Raptor^3685:1:1^
 1029^1^0^25^25^1437^0.1614^0.3085^1^Bluegill Oracle^1798:1:1,5524:1:1,17057:1:1^
 1051^7^0^27^28^1437^0.4756^0.1670^7^Dark Iron Dwarf^1705:1:1,1828:1:1,2592:1:2,4306:1:2,15242:1:1,262888:1:1^
@@ -18,6 +18,11 @@ GoldScout-export 6^skix5o50jbrh^2
 1715^2^0^0^0^0^0.0000^0.0000^0^^^
 1716^1^0^0^0^0^0.0000^0.0000^0^^273827:1:1^
 1717^1^0^0^0^0^0.0000^0.0000^0^^273811:1:1^
+2369^10^0^30^31^1424^0.5572^0.6462^10^Daggerspine Shorehunter^5524:3:3,17057:5:5,17058:3:3^
+2371^10^0^31^32^1424^0.5618^0.6436^10^Daggerspine Siren^3786:1:1,17057:2:2,17058:4:4^
+2376^9^0^30^31^1424^0.4440^0.6610^9^Torn Fin Oracle^1529:1:1,3716:5:5,5524:3:3,5785:1:1,6308:1:3,17057:2:2,17058:2:2^
+2377^22^0^31^32^1424^0.4398^0.6632^22^Torn Fin Tidehunter^3716:5:5,5524:10:10,5785:1:1,6308:1:1,6400:1:1,17057:5:5,17058:10:10^
+2408^1^0^31^31^1424^0.5518^0.5364^1^Snapjaw^3712:1:2,5524:1:1^
 2575^1^0^31^31^1417^0.4876^0.8833^1^Dark Iron Supplier^2592:1:3,4544:1:1^
 2577^1^0^32^32^1417^0.4908^0.8854^1^Dark Iron Shadowcaster^^
 4062^3^0^30^30^1417^0.4924^0.8829^3^Dark Iron Bombardier^2592:1:3,3827:1:1^
@@ -25,6 +30,7 @@ GoldScout-export 6^skix5o50jbrh^2
 @i^422^Dwarven Mild
 @i^929^Healing Potion
 @i^1205^Melon Juice
+@i^1529^Jade
 @i^1705^Lesser Moonstone
 @i^1798^Rawhide Cloak
 @i^1820^Wooden Maul
@@ -39,14 +45,21 @@ GoldScout-export 6^skix5o50jbrh^2
 @i^3639^Ear of Balgaras
 @i^3640^Head of Deepfury
 @i^3685^Raptor Egg
+@i^3712^Turtle Meat
+@i^3716^Murloc Head
+@i^3786^Shiny Dirk
 @i^3827^Mana Potion
 @i^4306^Silk Cloth
 @i^4544^Mulgore Spice Bread
 @i^5524^Thick-shelled Clam
+@i^5785^Thick Murloc Scale
+@i^6308^Raw Bristle Whisker Catfish
+@i^6400^Glimmering Shield
 @i^6577^Defender Gauntlets of Strength
 @i^12996^Band of Purification
 @i^15242^Honed Stiletto of the Bandit
 @i^17057^Shiny Fish Scales
+@i^17058^Fish Oil
 @i^262888^Sealed Journeyman's Writ
 @i^273805^Blackrock Harness
 @i^273811^Repurposed Rack
@@ -55,6 +68,7 @@ GoldScout-export 6^skix5o50jbrh^2
 @q^422^1:0:0
 @q^929^1:0:0
 @q^1205^1:0:0
+@q^1529^2:7:1
 @q^1705^2:7:1
 @q^1798^0:4:0
 @q^1820^0:2:0
@@ -69,20 +83,28 @@ GoldScout-export 6^skix5o50jbrh^2
 @q^3639^1:12:0
 @q^3640^1:12:0
 @q^3685^1:7:1
+@q^3712^1:7:1
+@q^3716^1:12:0
+@q^3786^0:2:0
 @q^3827^1:0:0
 @q^4306^1:7:1
 @q^4544^1:0:0
 @q^5524^1:7:0
+@q^5785^1:7:1
+@q^6308^1:7:1
+@q^6400^2:4:0
 @q^6577^2:4:0
 @q^12996^3:4:0
 @q^15242^2:2:0
 @q^17057^1:15:0
+@q^17058^1:15:0
 @q^262888^3:0:0
 @q^273805^3:4:0
 @q^273811^3:4:0
 @q^273817^3:2:0
 @q^273827^3:2:0
 @m^1417^Arathi Highlands
+@m^1424^Hillsbrad Foothills
 @m^1437^Wetlands
 @c^2300^
 @c^2302^
@@ -690,6 +712,11 @@ GoldScout-export 6^skix5o50jbrh^2
 @a^1158^102:1
 @a^1159^122:1
 @a^1364^69:1
+@a^2369^250:2,251:3,271:5
+@a^2371^250:1,251:5,271:4
+@a^2376^249:3,268:5,288:1
+@a^2377^249:4,268:17,287:1
+@a^2408^211:1
 @a^2575^349:1
 @a^2577^349:1
 @a^4062^349:3

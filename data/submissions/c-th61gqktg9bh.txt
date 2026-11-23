@@ -1,4 +1,4 @@
-GoldScout-export 5^th61gqktg9bh^18
+GoldScout-export 5^th61gqktg9bh^19
 3^20^0^24^25^1431^0.2410^0.3684^20^Fleischfresser^887:1:1,1129:5:5,1822:1:1,2589:2:3,2592:8:11,2794:1:1,4606:1:1,5001:1:1,5529:3:3,6530:3:3,211853:1:1^
 48^5^0^21^22^1431^0.7835^0.7144^5^Skelettkrieger^2592:3:4^
 123^1^0^14^14^1436^0.3549^0.3037^1^Bastard der Flusspfoten^1497:1:1^
@@ -54,6 +54,8 @@ GoldScout-export 5^th61gqktg9bh^18
 1995^1^0^6^6^1438^0.5258^0.5670^1^Strigideule^7096:1:1^
 2044^1^0^25^25^1429^0.8555^0.6965^1^Unglückseliger Geist^2589:1:2^
 2462^17^0^25^25^1431^0.2268^0.3450^17^Fleischfressender Wurm^^
+3809^1^0^21^21^1440^0.4104^0.6933^1^Ashenvalebär^2940:1:1,3730:1:1^
+4006^1^0^20^20^1442^0.7486^0.4417^1^Kluftmoosnetzweber^1081:1:1^
 4064^2^0^20^21^1433^0.6200^0.5158^2^Späher der Blackrock^2592:1:4^
 4065^4^0^21^22^1433^0.6241^0.5629^4^Wachposten der Blackrock^1796:1:1,2589:1:3,2592:1:3,3770:1:1,11982:1:1^
 4462^3^0^23^24^1433^0.6395^0.5602^3^Jäger der Blackrock^3647:1:1^
@@ -109,6 +111,7 @@ GoldScout-export 5^th61gqktg9bh^18
 @i^2881^Pläne: Runenverzierte Kupferbrustplatte
 @i^2886^Klippeneberrippchen
 @i^2898^Gebirgsjägerbrustharnisch
+@i^2940^Blutige Bärentatze
 @i^3013^Rolle des Schutzes
 @i^3065^Helle Stiefel
 @i^3171^Zerbrochener Eberhauer
@@ -125,7 +128,9 @@ GoldScout-export 5^th61gqktg9bh^18
 @i^3614^Jaulers Tatze
 @i^3633^Garth'Ilzoggs Kopf
 @i^3647^Helle Armschienen
+@i^3730^Großbärenfleisch
 @i^3770^Hammelkoteletts
+@i^3820^Würgetang
 @i^4306^Seidenstoff
 @i^4428^Spinnentaster
 @i^4603^Roher Tüpfelgelbschwanz
@@ -142,6 +147,7 @@ GoldScout-export 5^th61gqktg9bh^18
 @i^6358^Öliges Schwarzmaul
 @i^6359^Feuerflossenschnapper
 @i^6362^Roher Steinschuppenkabeljau
+@i^6457^Verrostete Ingenieurskunstbauteile
 @i^6511^Gesellenrobe
 @i^6517^Pioniergürtel
 @i^6520^Pionierumhang
@@ -213,6 +219,7 @@ GoldScout-export 5^th61gqktg9bh^18
 @q^2881^2:9:0
 @q^2886^1:7:1
 @q^2898^1:4:0
+@q^2940^0:15:0
 @q^3013^1:0:0
 @q^3065^2:4:0
 @q^3171^0:15:0
@@ -229,7 +236,9 @@ GoldScout-export 5^th61gqktg9bh^18
 @q^3614^1:12:0
 @q^3633^1:12:0
 @q^3647^2:4:0
+@q^3730^1:7:1
 @q^3770^1:0:0
+@q^3820^1:7:1
 @q^4306^1:7:1
 @q^4428^0:15:0
 @q^4603^1:7:1
@@ -246,6 +255,7 @@ GoldScout-export 5^th61gqktg9bh^18
 @q^6358^1:7:1
 @q^6359^1:7:1
 @q^6362^1:7:1
+@q^6457^0:15:0
 @q^6511^2:4:0
 @q^6517^1:4:0
 @q^6520^1:4:0
@@ -275,6 +285,8 @@ GoldScout-export 5^th61gqktg9bh^18
 @m^1434^Schlingendorntal
 @m^1436^Westfall
 @m^1438^Teldrassil
+@m^1440^Ashenvale
+@m^1442^Steinkrallengebirge
 @m^1445^Marschen von Dustwallow
 @c^724^
 @c^733^
@@ -472,6 +484,8 @@ GoldScout-export 5^th61gqktg9bh^18
 @a^1995^230:1
 @a^2044^277:1
 @a^2462^124:11,125:1,144:4,145:1
+@a^3809^268:1
+@a^4006^174:1
 @a^4064^212:2
 @a^4065^232:4
 @a^4462^212:1,232:2
@@ -481,5 +495,6 @@ GoldScout-export 5^th61gqktg9bh^18
 @f^1431^0^10^155^6289:6:6,6291:3:3,6308:1:1^76:7,77:3
 @f^1433^0^7^152^6289:2:2,6308:5:5^204:7
 @f^1434^0^18^150^4603:3:3,6358:6:6,6359:1:1,6362:8:8^305:18
+@f^1442^0^3^196^3820:2:4,6457:1:1^214:3
 @f^1445^0^174^159^1710:1:1,6308:63:63,8365:110:110^151:174
 @l^0^deDE

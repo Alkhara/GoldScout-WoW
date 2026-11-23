@@ -1,4 +1,4 @@
-GoldScout-export 6^a7bqejsmx1rx^19
+GoldScout-export 6^a7bqejsmx1rx^20
 1492^1^0^47^47^1434^0.3579^0.7130^1^Gorlash^3932:1:1^
 1514^1^0^44^44^1434^0.3465^0.6194^1^Mokk the Savage^2797:1:1^
 1559^1^0^51^51^1434^0.4107^0.8299^1^King Mukla^4103:1:1^
@@ -177,7 +177,9 @@ GoldScout-export 6^a7bqejsmx1rx^19
 11075^1^0^53^53^1422^0.3701^0.5725^1^Cauldron Lord Bilemaw^12841:1:1,13194:1:1^
 12046^1^0^49^49^1446^0.4146^0.5777^1^Gor'marok the Ravager^^
 12922^2^0^46^47^1447^0.1963^0.6117^2^Imp Minion^^
+252711^3^0^42^43^2652^0.5321^0.3025^3^Decrepit Pylon Protector^260348:1:1,260349:2:2,286647:1:1^
 253272^1^0^42^43^2652^0.4253^0.3186^1^Magram Necromancer^4306:1:3^
+255207^1^0^41^41^2652^0.4616^0.5843^1^Prowler^1688:1:1,12202:1:1,259461:1:1,260352:1:1^
 255898^8^0^38^39^2548^0.7675^0.7280^8^Murloc Oracle^^
 255899^5^0^37^38^2548^0.7546^0.7290^5^Murloc Tideskimmer^^
 256795^1^0^43^43^2548^0.2911^0.4397^1^Twilight Fanatic^^
@@ -199,9 +201,11 @@ GoldScout-export 6^a7bqejsmx1rx^19
 259281^1^0^0^0^0^0.0000^0.0000^0^^^
 260244^1^0^42^42^2548^0.7452^0.7281^1^Monstrous Threshadon^268633:1:1^
 264773^1^0^0^0^0^0.0000^0.0000^0^^^
+276401^1^0^43^43^2652^0.3759^0.5305^1^Nascent Pylon Protector^260353:1:1^
 @i^1074^Hard Spider Leg Tip
 @i^1520^Troll Sweat
 @i^1645^Moonberry Juice
+@i^1688^Long Soft Tail
 @i^1701^Curved Basilisk Claw
 @i^1702^Intact Basilisk Spine
 @i^1994^Ebonclaw Reaver of Stamina
@@ -325,6 +329,7 @@ GoldScout-export 6^a7bqejsmx1rx^19
 @i^11818^Grimesilt Outhouse Key
 @i^12037^Mystery Meat
 @i^12184^Raptor Flesh
+@i^12202^Tiger Meat
 @i^12203^Red Wolf Meat
 @i^12205^White Spider Meat
 @i^12207^Giant Egg
@@ -370,6 +375,11 @@ GoldScout-export 6^a7bqejsmx1rx^19
 @i^251405^Plans: Warder's Gloves
 @i^252869^Pattern: Warden's Leather Gauntlets
 @i^254040^Pattern: Frothing Cord
+@i^259461^Partially Digested Collar
+@i^260348^Barely Legible Journal Entry, Page I
+@i^260349^Barely Legible Journal Entry, Page II
+@i^260352^Barely Legible Journal Entry, Page V
+@i^260353^Barely Legible Journal Entry, Page VI
 @i^262889^Sealed Expert's Writ
 @i^264219^Schematic: Tru-Trigger Frag Bomb
 @i^267086^Eye of Mugg
@@ -391,9 +401,11 @@ GoldScout-export 6^a7bqejsmx1rx^19
 @i^274658^Dune Hacker
 @i^277112^Zum'rah's Head
 @i^280459^Crystal Infused Scale
+@i^286647^Depleted Crystal Heart
 @q^1074^0:15:0
 @q^1520^0:15:0
 @q^1645^1:0:0
+@q^1688^0:15:0
 @q^1701^0:15:0
 @q^1702^0:15:0
 @q^1994^2:2:0
@@ -517,6 +529,7 @@ GoldScout-export 6^a7bqejsmx1rx^19
 @q^11818^1:12:0
 @q^12037^1:7:1
 @q^12184^1:7:1
+@q^12202^1:7:1
 @q^12203^1:7:1
 @q^12205^1:7:1
 @q^12207^1:7:1
@@ -562,6 +575,11 @@ GoldScout-export 6^a7bqejsmx1rx^19
 @q^251405^3:9:0
 @q^252869^3:9:0
 @q^254040^3:9:0
+@q^259461^1:15:0
+@q^260348^1:15:0
+@q^260349^1:15:0
+@q^260352^1:15:0
+@q^260353^1:15:0
 @q^262889^3:0:0
 @q^264219^1:9:0
 @q^267086^1:12:0
@@ -583,6 +601,7 @@ GoldScout-export 6^a7bqejsmx1rx^19
 @q^274658^3:2:0
 @q^277112^1:12:0
 @q^280459^1:12:0
+@q^286647^1:12:0
 @m^1422^Western Plaguelands
 @m^1425^The Hinterlands
 @m^1427^Searing Gorge
@@ -2014,11 +2033,14 @@ GoldScout-export 6^a7bqejsmx1rx^19
 @a^11075^227:1
 @a^12046^228:1
 @a^12922^243:2
+@a^252711^94:1,128:2
 @a^253272^128:1
+@a^255207^229:1
 @a^255898^295:7,315:1
 @a^255899^295:5
 @a^256795^165:1
 @a^256801^295:6,314:1,315:2
 @a^257001^295:1
 @a^260244^294:1
+@a^276401^207:1
 @l^0^enUS

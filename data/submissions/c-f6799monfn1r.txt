@@ -1,4 +1,4 @@
-GoldScout-export 6^f6799monfn1r^16
+GoldScout-export 6^f6799monfn1r^17
 755^9^0^34^35^1435^0.3529^0.3826^9^Lost One Mudlurker^1710:1:1,3771:1:1,4306:4:6,4338:1:1^
 757^4^0^35^36^1435^0.4764^0.3216^4^Lost One Fisherman^8747:1:1,258530:1:1^
 759^14^0^36^37^1435^0.6011^0.2517^14^Lost One Hunter^1708:1:1,4306:3:6,4338:2:2^
@@ -97,6 +97,14 @@ GoldScout-export 6^f6799monfn1r^16
 10759^1^0^26^26^1441^0.3368^0.2928^1^Grimtotem Stomper^^
 10761^1^0^28^28^1441^0.3439^0.4000^1^Grimtotem Reaver^4306:1:1^
 12922^2^0^37^38^1435^0.5926^0.2299^2^Imp Minion^^
+245999^1^0^0^0^1416^0.0000^0.0000^0^^273034:1:1^
+246003^1^0^0^0^1416^0.0000^0.0000^0^^273037:1:1^
+246008^1^0^0^0^1416^0.0000^0.0000^0^^273041:1:1^
+246020^1^0^0^0^1416^0.0000^0.0000^0^^251961:1:1,273049:1:1^
+246888^1^0^0^0^1416^0.0000^0.0000^0^^8183:1:1^
+246890^1^0^0^0^1416^0.0000^0.0000^0^^1809:1:1^
+247003^3^0^0^0^1416^0.0000^0.0000^0^^1830:1:1,6439:1:1,262888:1:1,276158:2:2^
+255071^1^0^0^0^1416^0.0000^0.0000^0^^8183:1:1^
 255851^8^0^38^39^2548^0.7254^0.5023^8^Mature Paletusk^769:3:3,2295:3:3,3784:1:1^
 258331^5^0^36^36^2548^0.4198^0.7479^5^Young Paletusk^2295:1:1^
 259046^2^0^38^39^2548^0.5324^0.8231^2^Freshwater Crocolisk^770:1:1^
@@ -109,6 +117,7 @@ GoldScout-export 6^f6799monfn1r^16
 260801^1^0^0^0^0^0.0000^0.0000^0^^1697:1:1^
 260804^1^0^28^28^0^0.0000^0.0000^0^Highland Lurker^1074:1:1,2251:1:1^
 263348^1^0^37^38^2548^0.6888^0.5516^1^Roving Tallstrider^^
+269134^1^0^0^0^1416^0.0000^0.0000^0^^^
 274715^1^0^0^0^0^0.0000^0.0000^0^^770:1:1,3667:1:1^
 275044^1^0^0^0^0^0.0000^0.0000^0^^^
 @i^769^Chunk of Boar Meat
@@ -133,6 +142,7 @@ GoldScout-export 6^f6799monfn1r^16
 @i^1758^Reinforced Chain Gloves
 @i^1809^Tough Leather Shoulderpads
 @i^1828^Stone War Axe
+@i^1830^Long Bastard Sword
 @i^2220^Box Shield
 @i^2251^Gooey Spider Leg
 @i^2295^Large Boar Tusk
@@ -210,6 +220,7 @@ GoldScout-export 6^f6799monfn1r^16
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
 @i^6362^Raw Rockscale Cod
+@i^6439^Broken Binding Bracer
 @i^6460^Cobrahn's Grasp
 @i^6472^Stinging Viper
 @i^6604^Dervish Cape of the Gorilla
@@ -226,6 +237,7 @@ GoldScout-export 6^f6799monfn1r^16
 @i^7912^Solid Stone
 @i^7973^Big-mouth Clam
 @i^8150^Deeprock Salt
+@i^8183^Precision Bow
 @i^8188^Explosive Shotgun
 @i^8747^Hardened Leather Helm
 @i^9818^Fortified Chain of Magic
@@ -271,13 +283,20 @@ GoldScout-export 6^f6799monfn1r^16
 @i^248709^Waylaid Crate: Expert Ingots
 @i^249881^Recipe: Root Tea
 @i^251346^Plans: Guard's Chain Leggings
+@i^251961^Arcane Mote
 @i^253906^Pattern: Filigreed Flame Gown
 @i^255728^Manual: Potent Anti-Venom
 @i^258530^Lucky Lure
+@i^262888^Sealed Journeyman's Writ
 @i^262889^Sealed Expert's Writ
 @i^273022^Supple Bellyskin Leggings
 @i^273028^Reliquary Mantle
+@i^273034^Ephemeral Grips
+@i^273037^Felbough Arm
+@i^273041^Slitherwrap Girdle
+@i^273049^Archmagister's Faceted Pendant
 @i^273137^Skum's Bucket
+@i^276158^Crystallized Shard
 @i^280203^Jameson's Training Sword
 @q^769^1:7:1
 @q^770^0:15:0
@@ -301,6 +320,7 @@ GoldScout-export 6^f6799monfn1r^16
 @q^1758^0:4:0
 @q^1809^0:4:0
 @q^1828^0:2:0
+@q^1830^0:2:0
 @q^2220^0:4:0
 @q^2251^1:7:1
 @q^2295^0:15:0
@@ -378,6 +398,7 @@ GoldScout-export 6^f6799monfn1r^16
 @q^6358^1:7:1
 @q^6359^1:7:1
 @q^6362^1:7:1
+@q^6439^0:15:0
 @q^6460^3:4:0
 @q^6472^3:2:0
 @q^6604^2:4:0
@@ -394,6 +415,7 @@ GoldScout-export 6^f6799monfn1r^16
 @q^7912^1:7:1
 @q^7973^1:7:0
 @q^8150^1:7:1
+@q^8183^2:2:0
 @q^8188^2:2:0
 @q^8747^0:4:0
 @q^9818^2:4:0
@@ -439,13 +461,20 @@ GoldScout-export 6^f6799monfn1r^16
 @q^248709^2:0:1
 @q^249881^1:9:0
 @q^251346^3:9:0
+@q^251961^1:12:0
 @q^253906^3:9:0
 @q^255728^2:9:0
 @q^258530^1:12:0
+@q^262888^3:0:0
 @q^262889^3:0:0
 @q^273022^3:4:0
 @q^273028^3:4:0
+@q^273034^3:4:0
+@q^273037^3:2:0
+@q^273041^3:4:0
+@q^273049^3:4:0
 @q^273137^3:4:0
+@q^276158^0:15:0
 @q^280203^1:12:0
 @m^1414^Kalimdor
 @m^1416^Alterac Mountains
