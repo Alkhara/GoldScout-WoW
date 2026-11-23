@@ -1,4 +1,4 @@
-GoldScout-export 6^s69s0bh1knt7^15
+GoldScout-export 6^s69s0bh1knt7^16
 704^1^0^2^2^1426^0.2963^0.7475^1^Ragged Timber Wolf^750:1:1,4865:1:1,7073:1:1^
 705^2^0^1^1^1426^0.2994^0.7450^2^Ragged Young Wolf^750:2:2,2654:1:1,7073:2:2,7074:1:1^
 730^1^0^43^43^1434^0.2841^0.4255^1^Tethis^3877:1:1,4461:1:1,12184:1:1^
@@ -28,7 +28,12 @@ GoldScout-export 6^s69s0bh1knt7^15
 2537^1^0^44^44^1434^0.4051^0.5775^1^Chucky Ten Thumbs^3926:1:1,4016:1:1^
 2624^1^0^40^40^1434^0.2486^0.2343^1^Gazban^4034:1:1^
 2635^1^0^38^38^1434^0.2267^0.1889^1^Elder Saltwater Crocolisk^770:1:1,3667:1:1,4105:1:1^
+2652^1^0^43^43^1425^0.3198^0.5775^1^Witherbark Venomblood^4306:1:1^
+2655^12^0^46^47^1425^0.4781^0.4424^12^Green Sludge^3671:2:2,3676:3:3,20763:3:3^
+2656^10^0^47^48^1425^0.4776^0.4152^10^Jade Ooze^3671:1:1,3676:1:1,20763:3:3,20767:1:1^
+2924^2^0^43^44^1425^0.2855^0.5182^2^Silvermane Wolf^12203:2:2,12208:1:1^
 4150^2^0^34^35^1441^0.7598^0.8956^2^Saltstone Gazer^1702:1:1^
+4466^1^0^47^47^1425^0.5177^0.6532^1^Vilebranch Scalper^^
 5232^5^0^42^43^1444^0.6108^0.5623^5^Gordunni Brute^4338:2:3^
 5234^2^0^43^44^1444^0.5960^0.6258^2^Gordunni Mauler^1714:1:1^
 5236^6^0^44^45^1444^0.5968^0.6627^6^Gordunni Shaman^4338:2:3,4599:1:1,255725:1:1^
@@ -181,6 +186,7 @@ GoldScout-export 6^s69s0bh1knt7^15
 @i^3404^Buzzard Wing
 @i^3667^Tender Crocolisk Meat
 @i^3671^Lifeless Skull
+@i^3676^Slimy Ichor
 @i^3712^Turtle Meat
 @i^3778^Taut Compound Bow
 @i^3794^Interlaced Bracers
@@ -305,6 +311,7 @@ GoldScout-export 6^s69s0bh1knt7^15
 @i^12205^White Spider Meat
 @i^12206^Tender Crab Meat
 @i^12207^Giant Egg
+@i^12208^Tender Wolf Meat
 @i^14248^Lunar Bindings of the Sorcerer
 @i^14424^Silksand Legwraps
 @i^14778^Khan's Bindings
@@ -317,6 +324,7 @@ GoldScout-export 6^s69s0bh1knt7^15
 @i^17058^Fish Oil
 @i^19936^Dried Scorpid Carapace
 @i^20763^Broken Weapon
+@i^20767^Scum Covered Bag
 @i^213543^Scroll: UPDOG
 @i^213544^Scroll: TOPAZ YORAK
 @i^213545^Scroll: PEATCHY ATTAX
@@ -398,6 +406,7 @@ GoldScout-export 6^s69s0bh1knt7^15
 @q^3404^1:7:1
 @q^3667^1:7:1
 @q^3671^0:15:0
+@q^3676^0:15:0
 @q^3712^1:7:1
 @q^3778^0:2:0
 @q^3794^0:4:0
@@ -522,6 +531,7 @@ GoldScout-export 6^s69s0bh1knt7^15
 @q^12205^1:7:1
 @q^12206^1:7:1
 @q^12207^1:7:1
+@q^12208^1:7:1
 @q^14248^2:4:0
 @q^14424^2:4:0
 @q^14778^2:4:0
@@ -534,6 +544,7 @@ GoldScout-export 6^s69s0bh1knt7^15
 @q^17058^1:15:0
 @q^19936^0:15:0
 @q^20763^0:15:0
+@q^20767^1:15:0
 @q^213543^1:0:0
 @q^213544^1:0:0
 @q^213545^1:0:0
@@ -582,6 +593,7 @@ GoldScout-export 6^s69s0bh1knt7^15
 @q^272190^1:12:0
 @q^281052^1:12:0
 @q^281650^3:4:0
+@m^1425^The Hinterlands
 @m^1426^Dun Morogh
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
@@ -1376,7 +1388,12 @@ GoldScout-export 6^s69s0bh1knt7^15
 @a^2537^228:1
 @a^2624^84:1
 @a^2635^64:1
+@a^2652^226:1
+@a^2655^149:1,169:6,189:5
+@a^2656^149:5,169:2,171:1,189:2
+@a^2924^204:1,206:1
 @a^4150^355:1,375:1
+@a^4466^270:1
 @a^5232^232:5
 @a^5234^232:1,271:1
 @a^5236^252:2,271:3,272:1
