@@ -1,4 +1,4 @@
-GoldScout-export 6^6f4pc9exbt4s^22
+GoldScout-export 6^6f4pc9exbt4s^23
 48^2^1^21^22^1431^0.7816^0.7202^2^Skeletal Warrior^2592:1:1^5376:1:1
 202^7^0^23^24^1431^0.5565^0.5360^7^Skeletal Horror^929:1:1,1205:1:1,1820:1:1,2592:3:4^
 203^1^1^22^23^1431^0.7838^0.6746^1^Skeletal Mage^^
@@ -59,6 +59,10 @@ GoldScout-export 6^6f4pc9exbt4s^22
 3887^21^0^0^0^0^0.0000^0.0000^0^^1205:1:1,1801:1:1,2589:1:5,2592:4:14,3378:1:1,6321:4:4,6323:10:10,15223:1:1,15269:1:1,251348:1:1,252797:1:1,253938:1:1,273637:7:7^
 3914^19^0^0^0^0^0.0000^0.0000^0^^1741:1:1,1768:1:1,1812:1:1,1816:1:1,2217:1:1,3770:1:1,5254:5:5,5573:1:1,5635:1:1,9789:1:1,248683:1:1,273456:6:6,273457:8:8^
 3947^1^0^0^0^0^0.0000^0.0000^0^^1769:1:1^
+4139^1^0^34^34^1441^0.8253^0.7279^1^Scorpid Terror^12037:1:1,19938:1:1^
+4150^2^0^34^34^1441^0.8383^0.7921^2^Saltstone Gazer^4093:2:2^
+4151^3^0^32^33^1441^0.8815^0.7833^3^Saltstone Crystalhide^1701:1:1^
+4158^1^0^33^33^1441^0.8227^0.7332^1^Salt Flats Vulture^729:1:1,5116:1:1,5848:1:1^
 4416^4^0^0^0^0^0.0000^0.0000^0^^858:1:1,2592:1:2,2984:1:1^
 6123^2^0^10^11^1426^0.7730^0.6191^2^Dark Iron Spy^274268:1:1^
 6206^3^0^0^0^0^0.0000^0.0000^0^^929:1:1,9309:1:1^
@@ -94,6 +98,7 @@ GoldScout-export 6^6f4pc9exbt4s^22
 271530^2^0^7^7^1426^0.4222^0.4936^2^Elder Wendigo^5572:1:1^
 @i^117^Tough Jerky
 @i^159^Refreshing Spring Water
+@i^729^Stringy Vulture Meat
 @i^750^Tough Wolf Meat
 @i^769^Chunk of Boar Meat
 @i^814^Flask of Oil
@@ -115,6 +120,7 @@ GoldScout-export 6^6f4pc9exbt4s^22
 @i^1419^Worn Leather Boots
 @i^1421^Worn Hide Cloak
 @i^1423^Worn Leather Pants
+@i^1701^Curved Basilisk Claw
 @i^1705^Lesser Moonstone
 @i^1712^Scroll of Spirit II
 @i^1741^Laced Cloak
@@ -178,6 +184,7 @@ GoldScout-export 6^6f4pc9exbt4s^22
 @i^3793^Interlaced Boots
 @i^3820^Stranglekelp
 @i^4073^Glimmering Mail Greaves
+@i^4093^Large Basilisk Tail
 @i^4306^Silk Cloth
 @i^4364^Coarse Blasting Powder
 @i^4575^Medicine Staff of the Eagle
@@ -188,6 +195,7 @@ GoldScout-export 6^6f4pc9exbt4s^22
 @i^4814^Discolored Fang
 @i^4865^Ruined Pelt
 @i^5007^Band of Thorns
+@i^5116^Long Tail Feather
 @i^5193^Cape of the Brotherhood
 @i^5194^Taskmaster Axe
 @i^5197^Cookie's Tenderizer
@@ -199,6 +207,7 @@ GoldScout-export 6^6f4pc9exbt4s^22
 @i^5573^Green Leather Bag
 @i^5635^Sharp Claw
 @i^5637^Large Fang
+@i^5848^Hollow Vulture Bone
 @i^6226^Bloody Apron
 @i^6289^Raw Longjaw Mud Snapper
 @i^6291^Raw Brilliant Smallfish
@@ -234,11 +243,13 @@ GoldScout-export 6^6f4pc9exbt4s^22
 @i^9454^Acidic Walkers
 @i^9786^Raider's Cloak of Arcane Protection
 @i^9789^Raider's Legguards of Defense
+@i^12037^Mystery Meat
 @i^13422^Stonescale Eel
 @i^15223^Jagged Star of Healing
 @i^15269^Massive Battle Axe of Fire Protection
 @i^16882^Battered Junkbox
 @i^16883^Worn Junkbox
+@i^19938^Heavy Scorpid Leg
 @i^21151^Rumsey Rum Black Label
 @i^21228^Mithril Bound Trunk
 @i^211853^Scroll: VOCE WELL
@@ -259,6 +270,7 @@ GoldScout-export 6^6f4pc9exbt4s^22
 @i^274268^Dark Iron Map
 @q^117^1:0:0
 @q^159^1:0:0
+@q^729^1:7:1
 @q^750^1:12:0
 @q^769^1:7:1
 @q^814^1:7:1
@@ -280,6 +292,7 @@ GoldScout-export 6^6f4pc9exbt4s^22
 @q^1419^0:4:0
 @q^1421^0:4:0
 @q^1423^0:4:0
+@q^1701^0:15:0
 @q^1705^2:7:1
 @q^1712^1:0:0
 @q^1741^0:4:0
@@ -343,6 +356,7 @@ GoldScout-export 6^6f4pc9exbt4s^22
 @q^3793^0:4:0
 @q^3820^1:7:1
 @q^4073^2:4:0
+@q^4093^0:15:0
 @q^4306^1:7:1
 @q^4364^1:7:1
 @q^4575^2:2:0
@@ -353,6 +367,7 @@ GoldScout-export 6^6f4pc9exbt4s^22
 @q^4814^0:15:0
 @q^4865^0:15:0
 @q^5007^2:4:0
+@q^5116^1:7:1
 @q^5193^3:4:0
 @q^5194^3:2:0
 @q^5197^3:2:0
@@ -364,6 +379,7 @@ GoldScout-export 6^6f4pc9exbt4s^22
 @q^5573^1:1:0
 @q^5635^1:7:1
 @q^5637^1:7:1
+@q^5848^1:12:0
 @q^6226^3:4:0
 @q^6289^1:7:1
 @q^6291^1:7:1
@@ -399,11 +415,13 @@ GoldScout-export 6^6f4pc9exbt4s^22
 @q^9454^3:4:0
 @q^9786^2:4:0
 @q^9789^2:4:0
+@q^12037^1:7:1
 @q^13422^1:7:1
 @q^15223^2:2:0
 @q^15269^2:2:0
 @q^16882^1:15:0
 @q^16883^1:15:0
+@q^19938^0:15:0
 @q^21151^1:0:0
 @q^21228^1:15:0
 @q^211853^1:0:0
@@ -428,6 +446,7 @@ GoldScout-export 6^6f4pc9exbt4s^22
 @m^1431^Duskwood
 @m^1434^Stranglethorn Vale
 @m^1436^Westfall
+@m^1441^Thousand Needles
 @m^1453^Stormwind City
 @c^118^
 @c^724^
@@ -2189,6 +2208,10 @@ GoldScout-export 6^6f4pc9exbt4s^22
 @a^1397^148:1,168:1
 @a^1754^134:1
 @a^2044^277:1
+@a^4139^296:1
+@a^4150^316:1,336:1
+@a^4151^317:3
+@a^4158^296:1
 @a^6123^255:2
 @a^6213^208:1
 @a^6221^208:4
