@@ -1,4 +1,4 @@
-GoldScout-export 6^dffcmgqfevu3^9
+GoldScout-export 6^dffcmgqfevu3^10
 94^1^0^5^6^1429^0.4364^0.5708^1^Defias Cutpurse^1369:1:1^
 1853^1^0^0^0^0^0.0000^0.0000^0^^^
 7430^2^0^55^56^1452^0.5009^0.1772^2^Frostsaber Cub^4580:2:2,12202:1:1,15645:1:1,21928:1:1^
@@ -51,7 +51,9 @@ GoldScout-export 6^dffcmgqfevu3^9
 264570^11^0^60^60^2482^0.7303^0.3882^11^Blackthorne Adept^8766:1:1,14047:3:9,273828:1:1^
 @i^1369^Ragged Leather Belt
 @i^1688^Long Soft Tail
+@i^1710^Greater Healing Potion
 @i^3730^Big Bear Meat
+@i^3827^Mana Potion
 @i^4557^Fiery Gland
 @i^4580^Sabertooth Fang
 @i^4581^Patch of Fine Fur
@@ -59,6 +61,8 @@ GoldScout-export 6^dffcmgqfevu3^9
 @i^6289^Raw Longjaw Mud Snapper
 @i^6291^Raw Brilliant Smallfish
 @i^6308^Raw Bristle Whisker Catfish
+@i^6309^17 Pound Catfish
+@i^6311^22 Pound Catfish
 @i^6444^Forked Tongue
 @i^6826^Brilliant Scale
 @i^7909^Aquamarine
@@ -68,6 +72,8 @@ GoldScout-export 6^dffcmgqfevu3^9
 @i^8146^Wicked Claw
 @i^8284^Arcane Boots
 @i^8288^Arcane Pads
+@i^8365^Raw Mithril Head Trout
+@i^8366^Bloated Mithril Head Trout
 @i^8766^Morning Glory Dew
 @i^8948^Dried King Bolete
 @i^8952^Roasted Quail
@@ -116,7 +122,9 @@ GoldScout-export 6^dffcmgqfevu3^9
 @i^281018^Scroll: RARE SERVICHI RADAR
 @q^1369^0:4:0
 @q^1688^0:15:0
+@q^1710^1:0:0
 @q^3730^1:7:1
+@q^3827^1:0:0
 @q^4557^0:15:0
 @q^4580^0:15:0
 @q^4581^0:15:0
@@ -124,6 +132,8 @@ GoldScout-export 6^dffcmgqfevu3^9
 @q^6289^1:7:1
 @q^6291^1:7:1
 @q^6308^1:7:1
+@q^6309^1:15:0
+@q^6311^1:15:0
 @q^6444^0:15:0
 @q^6826^0:15:0
 @q^7909^2:7:1
@@ -133,6 +143,8 @@ GoldScout-export 6^dffcmgqfevu3^9
 @q^8146^1:7:1
 @q^8284^2:4:0
 @q^8288^2:4:0
+@q^8365^1:7:1
+@q^8366^2:15:0
 @q^8766^1:0:0
 @q^8948^1:0:0
 @q^8952^1:0:0
@@ -179,6 +191,7 @@ GoldScout-export 6^dffcmgqfevu3^9
 @q^274287^1:12:0
 @q^274288^1:12:0
 @q^281018^1:0:0
+@m^1417^Arathi Highlands
 @m^1429^Elwynn Forest
 @m^1434^Stranglethorn Vale
 @m^1452^Winterspring
@@ -823,6 +836,7 @@ GoldScout-export 6^dffcmgqfevu3^9
 @a^249551^93:1,133:2,154:5,174:2
 @a^256809^166:1
 @a^264570^93:1,133:1,154:5,174:1,175:1,195:2
+@f^1417^0^287^150^1710:2:2,3827:2:2,6308:117:131,6309:1:1,6311:1:1,8365:220:285,8366:1:1^204:287
 @f^1434^0^1^150^13422:1:2^305:1
 @f^1455^0^243^1^6289:173:214,6291:66:71,6308:75:79^49:169,69:74
 @l^0^enUS

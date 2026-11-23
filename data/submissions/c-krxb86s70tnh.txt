@@ -1,4 +1,4 @@
-GoldScout-export 6^krxb86s70tnh^17
+GoldScout-export 6^krxb86s70tnh^18
 3^3^0^24^25^1431^0.2264^0.3632^3^Comecarnes^884:2:2,929:1:1,2592:1:2^
 113^13^0^5^6^1429^0.3906^0.8831^13^Jabalí colmillopétreo^769:7:7,771:3:3,3171:4:4,286215:3:3^
 202^20^0^23^24^1431^0.7457^0.5778^20^Horror esquelético^929:1:1,1598:8:8,1712:1:1,1778:1:1,2592:4:6,4306:1:1,4606:1:1^
@@ -118,6 +118,15 @@ GoldScout-export 6^krxb86s70tnh^17
 4065^3^0^21^22^1433^0.5923^0.5156^3^Argos Roca Negra^954:1:1,1821:1:1^
 4416^1^0^0^0^0^0.0000^0.0000^0^^1816:1:1^
 6123^7^0^10^11^1426^0.7746^0.6087^7^Espía Hierro Negro^4540:2:2,15932:1:1,274268:2:2^
+246016^1^0^0^0^1416^0.0000^0.0000^0^^273043:1:1^
+246020^1^0^0^0^1416^0.0000^0.0000^0^^273049:1:1^
+246888^1^0^0^0^1416^0.0000^0.0000^0^^276160:1:1^
+246990^1^0^0^0^1416^0.0000^0.0000^0^^6438:1:1^
+247001^1^0^0^0^1416^0.0000^0.0000^0^^276160:1:1^
+247126^1^0^0^0^1416^0.0000^0.0000^0^^273033:1:1^
+255066^2^0^0^0^1416^0.0000^0.0000^0^^^
+255070^1^0^0^0^1416^0.0000^0.0000^0^^^
+255072^1^0^0^0^1416^0.0000^0.0000^0^^^
 260157^1^0^10^10^1426^0.7168^0.5384^1^Leopardo de la nieve anciano^4814:1:1^
 260325^1^0^0^0^0^0.0000^0.0000^0^^273027:1:1^
 260326^1^0^0^0^0^0.0000^0.0000^0^^270865:1:1^
@@ -129,6 +138,7 @@ GoldScout-export 6^krxb86s70tnh^17
 260803^1^0^27^28^1437^0.5108^0.6253^1^Araña de las Tierras Altas^1827:1:1,3182:1:1^
 260804^1^0^29^29^0^0.0000^0.0000^0^Rondador de las Tierras Altas^2251:1:1^
 260808^1^0^28^28^0^0.0000^0.0000^0^Horror de las Tierras Altas^270180:1:1^
+269134^1^0^0^0^1416^0.0000^0.0000^0^^2592:1:2,3210:1:1^
 271334^3^0^25^26^1437^0.5957^0.3245^3^Garrapútrea enajenado^3730:1:1,11407:2:2,280331:1:1^
 271346^1^0^30^30^1437^0.5808^0.4478^1^Infiltrado Faucedraco^4306:1:1^
 271351^2^0^29^30^1437^0.5968^0.4554^2^Reivindicador Faucedraco^1827:1:1,4306:1:1,9829:1:1^
@@ -253,6 +263,7 @@ GoldScout-export 6^krxb86s70tnh^17
 @i^3183^Garra sarnosa
 @i^3198^Martillo de paliza del tigre
 @i^3202^Brazales de cuero de bosque
+@i^3210^Hacha de guerra brutal de protección Arcana
 @i^3337^Estandarte de guerra Faucedraco
 @i^3349^Bolsa de Shida
 @i^3365^Brazales deshilachados
@@ -308,6 +319,7 @@ GoldScout-export 6^krxb86s70tnh^17
 @i^6394^Botas de hilo de plata
 @i^6397^Guantes blasonados
 @i^6403^Guardabrazos de combate de malla
+@i^6438^Brazal elemental mate
 @i^6530^Reptadores nocturnos
 @i^6586^Guantes de exploración del mono
 @i^6952^Pelaje de oso grueso
@@ -341,6 +353,9 @@ GoldScout-export 6^krxb86s70tnh^17
 @i^270180^Núcleo raigal horrible
 @i^270865^Reliquia titánica
 @i^273027^Mirada de raptor
+@i^273033^Repetidora de púas sepulcral
+@i^273043^Varita de concentración de maná
+@i^273049^Colgante con facetas de archimagister
 @i^273297^Martillo goblin
 @i^273805^Arnés de Roca Negra
 @i^273809^Cuchilla de Hamhock
@@ -349,6 +364,7 @@ GoldScout-export 6^krxb86s70tnh^17
 @i^273829^Ballesta de mano oculta
 @i^274092^Cubertería afilada
 @i^274268^Mapa Hierro Negro
+@i^276160^Fragmento de maná
 @i^280319^Glándula de acechador sin grietas
 @i^280331^Carne de garrapútrea maligno
 @i^280426^Saco de peces
@@ -468,6 +484,7 @@ GoldScout-export 6^krxb86s70tnh^17
 @q^3183^1:12:0
 @q^3198^2:2:0
 @q^3202^2:4:0
+@q^3210^2:2:0
 @q^3337^1:12:0
 @q^3349^1:12:0
 @q^3365^0:4:0
@@ -523,6 +540,7 @@ GoldScout-export 6^krxb86s70tnh^17
 @q^6394^2:4:0
 @q^6397^2:4:0
 @q^6403^2:4:0
+@q^6438^0:15:0
 @q^6530^1:0:0
 @q^6586^2:4:0
 @q^6952^1:12:0
@@ -556,6 +574,9 @@ GoldScout-export 6^krxb86s70tnh^17
 @q^270180^1:12:0
 @q^270865^1:12:0
 @q^273027^3:4:0
+@q^273033^3:2:0
+@q^273043^3:2:0
+@q^273049^3:4:0
 @q^273297^3:2:0
 @q^273805^3:4:0
 @q^273809^3:2:0
@@ -564,6 +585,7 @@ GoldScout-export 6^krxb86s70tnh^17
 @q^273829^3:2:0
 @q^274092^3:2:0
 @q^274268^1:12:0
+@q^276160^0:15:0
 @q^280319^1:12:0
 @q^280331^1:12:0
 @q^280426^1:12:0
@@ -571,6 +593,7 @@ GoldScout-export 6^krxb86s70tnh^17
 @q^286215^1:12:0
 @q^286325^1:12:0
 @m^1415^Reinos del Este
+@m^1416^Montañas de Alterac
 @m^1426^Dun Morogh
 @m^1429^Bosque de Elwynn
 @m^1431^Bosque del Ocaso

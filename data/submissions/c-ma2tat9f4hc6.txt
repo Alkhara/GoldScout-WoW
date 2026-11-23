@@ -1,4 +1,4 @@
-GoldScout-export 6^ma2tat9f4hc6^22
+GoldScout-export 6^ma2tat9f4hc6^23
 95^1^0^11^12^1436^0.4142^0.4094^1^Defias Smuggler^^
 122^2^0^17^18^1436^0.3651^0.8184^2^Defias Highwayman^827:1:1,1812:1:1,2592:1:2,9788:1:1^
 123^1^0^14^14^1436^0.3508^0.3227^1^Riverpaw Mongrel^^
@@ -10,6 +10,11 @@ GoldScout-export 6^ma2tat9f4hc6^22
 441^8^0^17^18^1433^0.5512^0.7614^8^Black Dragon Whelp^3177:2:2^
 454^7^0^12^13^1436^0.4215^0.2950^7^Young Goretusk^723:1:1,731:2:2,769:5:5,771:3:3,2677:1:1,3172:2:2^
 504^2^0^12^13^1436^0.4148^0.4114^2^Defias Trapper^^
+704^1^0^2^2^1426^0.2973^0.7371^1^Ragged Timber Wolf^750:1:1,7074:1:1^
+705^8^0^1^1^1426^0.2902^0.7362^8^Ragged Young Wolf^750:7:7,4865:1:1,7073:5:5,7074:3:3^
+707^5^0^1^2^1426^0.3075^0.7536^5^Rockjaw Trogg^117:1:1,1366:1:1^
+708^12^0^3^3^1426^0.2191^0.7063^12^Small Crag Boar^117:3:3,1368:1:1,1372:1:1,4865:6:6,7098:6:6^
+724^6^0^2^2^1426^0.2843^0.7359^6^Burly Rockjaw Trogg^159:2:2,1372:1:1,2589:1:1^
 832^8^0^18^19^1436^0.3920^0.4920^8^Dust Devil^2091:2:2,7069:1:1,9775:1:1,211855:1:1^
 833^18^0^11^12^1436^0.3701^0.3067^18^Coyote Packleader^2140:1:1,2673:8:8,2958:1:1,3213:1:1,3299:5:5,3300:3:3,4570:1:1^
 834^24^0^10^11^1436^0.4075^0.2713^24^Coyote^2673:17:17,2958:1:1,3299:4:4,3300:7:7^
@@ -173,6 +178,7 @@ GoldScout-export 6^ma2tat9f4hc6^22
 @i^729^Stringy Vulture Meat
 @i^730^Murloc Eye
 @i^731^Goretusk Snout
+@i^750^Tough Wolf Meat
 @i^769^Chunk of Boar Meat
 @i^770^Pointy Crocolisk Tooth
 @i^771^Chipped Boar Tusk
@@ -188,6 +194,9 @@ GoldScout-export 6^ma2tat9f4hc6^22
 @i^1181^Scroll of Spirit
 @i^1205^Melon Juice
 @i^1288^Large Venom Sac
+@i^1366^Ragged Leather Pants
+@i^1368^Ragged Leather Gloves
+@i^1372^Ragged Cloak
 @i^1415^Carpenter's Mallet
 @i^1416^Rusty Hatchet
 @i^1419^Worn Leather Boots
@@ -298,6 +307,7 @@ GoldScout-export 6^ma2tat9f4hc6^22
 @i^4813^Small Leather Collar
 @i^4814^Discolored Fang
 @i^4819^Fizsprocket's Clipboard
+@i^4865^Ruined Pelt
 @i^5062^Raptor Head
 @i^5063^Kreenig Snarlsnout's Tusk
 @i^5064^Witchwing Talon
@@ -354,8 +364,11 @@ GoldScout-export 6^ma2tat9f4hc6^22
 @i^6911^Moss Cinch
 @i^6914^Soran'ruk Fragment
 @i^7069^Elemental Air
+@i^7073^Broken Fang
+@i^7074^Chipped Claw
 @i^7096^Plucked Feather
 @i^7097^Leg Meat
+@i^7098^Splintered Tusk
 @i^7288^Pattern: Rugged Leather Pants
 @i^7360^Pattern: Dark Leather Gloves
 @i^7366^Elder's Gloves of Spirit
@@ -425,6 +438,7 @@ GoldScout-export 6^ma2tat9f4hc6^22
 @q^729^1:7:1
 @q^730^1:7:1
 @q^731^1:7:1
+@q^750^1:12:0
 @q^769^1:7:1
 @q^770^0:15:0
 @q^771^0:15:0
@@ -440,6 +454,9 @@ GoldScout-export 6^ma2tat9f4hc6^22
 @q^1181^1:0:0
 @q^1205^1:0:0
 @q^1288^1:7:1
+@q^1366^0:4:0
+@q^1368^0:4:0
+@q^1372^0:4:0
 @q^1415^0:2:0
 @q^1416^0:2:0
 @q^1419^0:4:0
@@ -550,6 +567,7 @@ GoldScout-export 6^ma2tat9f4hc6^22
 @q^4813^0:15:0
 @q^4814^0:15:0
 @q^4819^1:12:0
+@q^4865^0:15:0
 @q^5062^1:12:0
 @q^5063^1:12:0
 @q^5064^1:12:0
@@ -606,8 +624,11 @@ GoldScout-export 6^ma2tat9f4hc6^22
 @q^6911^3:4:0
 @q^6914^1:12:0
 @q^7069^1:7:1
+@q^7073^0:15:0
+@q^7074^0:15:0
 @q^7096^0:15:0
 @q^7097^1:0:0
+@q^7098^0:15:0
 @q^7288^2:9:0
 @q^7360^2:9:0
 @q^7366^2:4:0
@@ -674,6 +695,7 @@ GoldScout-export 6^ma2tat9f4hc6^22
 @m^1417^Arathi Highlands
 @m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
+@m^1426^Dun Morogh
 @m^1431^Duskwood
 @m^1433^Redridge Mountains
 @m^1434^Stranglethorn Vale
@@ -2218,6 +2240,11 @@ GoldScout-export 6^ma2tat9f4hc6^22
 @a^441^290:1,310:5,312:2
 @a^454^70:1,88:1,107:1,126:2,132:1,147:1
 @a^504^168:2
+@a^704^285:1
+@a^705^285:7,286:1
+@a^707^286:1,305:1,306:3
+@a^708^284:12
+@a^724^285:5,305:1
 @a^832^87:1,126:1,168:2,228:1,247:2,267:1
 @a^833^68:2,69:1,87:1,88:1,107:2,126:2,127:1,146:2,147:4,166:2
 @a^834^68:2,70:1,87:3,88:1,107:5,108:6,109:1,111:1,128:1,146:1,147:1,166:1

@@ -1,4 +1,9 @@
-GoldScout-export 6^84b96zsyy4f3^11
+GoldScout-export 6^84b96zsyy4f3^12
+705^8^0^1^1^1426^0.2931^0.7374^8^Lobo joven andrajoso^750:8:8,1367:1:1,2649:1:1,3365:1:1,4865:3:3,7074:5:5^
+706^14^0^3^4^1426^0.2315^0.7730^14^Cría de trol Peloescarcha^117:2:2,159:2:2,1374:1:1,1378:1:1,2589:4:4,5571:1:1^
+707^6^0^1^2^1426^0.2752^0.7540^6^Trogg Mentueso^117:1:1,159:1:1,1374:1:1^
+708^12^0^3^3^1426^0.2131^0.7276^12^Jabalí del risco pequeño^117:2:2,3363:1:1,4865:5:5,7098:8:8^
+724^6^0^2^2^1426^0.2721^0.7277^6^Trogg Comepiedras fornido^1370:1:1,2589:2:2,2651:1:1^
 2248^12^0^30^31^1424^0.4628^0.3183^12^Yeti de cuevas^3708:1:1,3771:1:1,213545:1:1^
 2249^1^0^31^31^1424^0.4485^0.3124^1^Yeti feroz^^
 2265^4^0^24^25^1424^0.3215^0.4552^4^Herrero aprendiz de Trabalomas^2592:1:2^
@@ -121,15 +126,22 @@ GoldScout-export 6^84b96zsyy4f3^11
 264081^11^0^28^28^1412^0.3263^0.0948^11^Tejedora altopenumbra^878:3:3,1081:3:3,3182:1:1,3931:2:2,273181:3:3^
 264083^5^0^28^29^1412^0.3234^0.1059^5^Soldado altopenumbra^1081:4:4,1475:1:1,3174:2:2,5465:2:2^
 264096^3^0^28^29^1412^0.3286^0.0941^3^Cadáver mordisqueado^6530:1:1,273001:1:1^
+@i^117^Cecina dura
+@i^159^Agua de manantial refrescante
 @i^422^Cerveza enana
 @i^729^Carne fibrosa de buitre
 @i^730^Ojo de múrloc
+@i^750^Carne de lobo dura
 @i^804^Costal azul grande
 @i^865^Maza plomiza del campeón
 @i^878^Espireneta tamaño de puño
 @i^1081^Carne de araña crujiente
 @i^1205^Zumo de melón
 @i^1288^Glándula de veneno grande
+@i^1367^Botas de cuero harapiento
+@i^1370^Brazales de cuero harapiento
+@i^1374^Zapatos deshilachados
+@i^1378^Pantalones deshilachados
 @i^1464^Talón de águila ratonera
 @i^1475^Glándula de veneno pequeña
 @i^1478^Pergamino de Protección II
@@ -152,6 +164,8 @@ GoldScout-export 6^84b96zsyy4f3^11
 @i^2290^Pergamino de Intelecto II
 @i^2589^Paño de lino
 @i^2592^Paño de lana
+@i^2649^Cinturón de anillas endeble
+@i^2651^Brazales de anillas endebles
 @i^2675^Garra de reptador
 @i^2783^Trabuco de pésima calidad
 @i^2786^Trabuco engrasado
@@ -162,6 +176,8 @@ GoldScout-export 6^84b96zsyy4f3^11
 @i^3167^Cerda de araña espesa
 @i^3174^Icor de araña
 @i^3182^Seda de araña
+@i^3363^Cinturón deshilachado
+@i^3365^Brazales deshilachados
 @i^3381^Brazales a punto de cruz
 @i^3385^Poción de maná inferior
 @i^3399^Talón de buitre
@@ -184,6 +200,7 @@ GoldScout-export 6^84b96zsyy4f3^11
 @i^4633^Arcón de bronce pesado
 @i^4634^Arcón de hierro
 @i^4784^Piedra inerte
+@i^4865^Pelambre estropeada
 @i^5114^Espolón cortado
 @i^5116^Pluma de cola larga
 @i^5136^Oreja peluda rasgada
@@ -194,6 +211,7 @@ GoldScout-export 6^84b96zsyy4f3^11
 @i^5481^Cuernos de sátiro
 @i^5524^Almeja de concha espesa
 @i^5569^Algas
+@i^5571^Faltriquera negra pequeña
 @i^5635^Garra afilada
 @i^5636^Pluma delicada
 @i^5637^Colmillo grande
@@ -221,6 +239,8 @@ GoldScout-export 6^84b96zsyy4f3^11
 @i^6905^Hacha arrecife
 @i^6908^Vínculo de Ghamoo-ra
 @i^7069^Elemental de aire
+@i^7074^Garra astillada
+@i^7098^Colmillo astillado
 @i^8186^Varita funesta
 @i^9451^Agua burbujeante
 @i^9767^Sandalias de tejido verde de cólera de las Sombras
@@ -275,15 +295,22 @@ GoldScout-export 6^84b96zsyy4f3^11
 @i^262888^Libranza del oficial sellada
 @i^273001^Muestra de toxina de altopenumbra
 @i^273181^Seda cristalina
+@q^117^1:0:0
+@q^159^1:0:0
 @q^422^1:0:0
 @q^729^1:7:1
 @q^730^1:7:1
+@q^750^1:12:0
 @q^804^1:1:0
 @q^865^2:2:0
 @q^878^0:7:0
 @q^1081^1:7:1
 @q^1205^1:0:0
 @q^1288^1:7:1
+@q^1367^0:4:0
+@q^1370^0:4:0
+@q^1374^0:4:0
+@q^1378^0:4:0
 @q^1464^0:15:0
 @q^1475^1:7:1
 @q^1478^1:0:0
@@ -306,6 +333,8 @@ GoldScout-export 6^84b96zsyy4f3^11
 @q^2290^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2649^0:4:0
+@q^2651^0:4:0
 @q^2675^1:7:1
 @q^2783^0:2:0
 @q^2786^0:2:0
@@ -316,6 +345,8 @@ GoldScout-export 6^84b96zsyy4f3^11
 @q^3167^0:15:0
 @q^3174^1:7:1
 @q^3182^1:7:1
+@q^3363^0:4:0
+@q^3365^0:4:0
 @q^3381^0:4:0
 @q^3385^1:0:0
 @q^3399^0:15:0
@@ -338,6 +369,7 @@ GoldScout-export 6^84b96zsyy4f3^11
 @q^4633^2:15:0
 @q^4634^2:15:0
 @q^4784^0:15:0
+@q^4865^0:15:0
 @q^5114^0:15:0
 @q^5116^1:7:1
 @q^5136^0:15:0
@@ -348,6 +380,7 @@ GoldScout-export 6^84b96zsyy4f3^11
 @q^5481^1:12:0
 @q^5524^1:7:0
 @q^5569^0:15:0
+@q^5571^1:1:0
 @q^5635^1:7:1
 @q^5636^0:15:0
 @q^5637^1:7:1
@@ -375,6 +408,8 @@ GoldScout-export 6^84b96zsyy4f3^11
 @q^6905^3:2:0
 @q^6908^3:4:0
 @q^7069^1:7:1
+@q^7074^0:15:0
+@q^7098^0:15:0
 @q^8186^2:2:0
 @q^9451^1:0:0
 @q^9767^2:4:0
@@ -432,6 +467,7 @@ GoldScout-export 6^84b96zsyy4f3^11
 @m^1412^Mulgore
 @m^1414^Kalimdor
 @m^1424^Laderas de Trabalomas
+@m^1426^Dun Morogh
 @m^1440^Vallefresno
 @m^1441^Las Mil Agujas
 @m^1443^Desolace
@@ -1123,6 +1159,11 @@ GoldScout-export 6^84b96zsyy4f3^11
 @c^285280^
 @c^285281^
 @c^286152^
+@a^705^285:8
+@a^706^304:10,305:4
+@a^707^285:2,304:1,305:3
+@a^708^284:12
+@a^724^285:6
 @a^2248^128:1,129:11
 @a^2249^128:1
 @a^2265^166:1,186:3

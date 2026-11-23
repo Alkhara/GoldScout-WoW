@@ -1,4 +1,4 @@
-GoldScout-export 6^6fdn3ryh1m11^6
+GoldScout-export 6^6fdn3ryh1m11^7
 3636^1^0^0^0^0^0.0000^0.0000^0^^5124:1:1^
 3637^1^0^0^0^0^0.0000^0.0000^0^^5124:1:1^
 3640^1^0^0^0^0^0.0000^0.0000^0^^3676:1:1^
@@ -43,7 +43,10 @@ GoldScout-export 6^6fdn3ryh1m11^6
 6243^3^0^0^0^0^0.0000^0.0000^0^^1468:1:1,5784:1:1,6906:3:3,17057:1:1^
 12902^2^0^0^0^0^0.0000^0.0000^0^^4306:1:1,15537:1:1,273842:1:1,273843:1:1^
 254560^13^0^39^40^2548^0.4802^0.4699^13^Sombramántico Crepuscular^4306:4:9,6438:1:1,8747:1:1,9885:1:1,266425:5:10^
-256798^14^0^37^38^2548^0.4900^0.4845^14^Neófita Crepuscular^3803:1:1,4306:3:4,266425:6:13,266427:1:1^
+256795^11^0^42^43^2548^0.3062^0.4344^11^Fanática Crepuscular^3671:1:1,4306:2:3,4338:2:2^
+256797^9^0^42^43^2548^0.2848^0.4393^9^Corruptora Crepuscular^4306:1:2,4338:3:3,5431:1:1,248694:1:1^
+256798^14^0^37^38^2548^0.4900^0.4845^14^Neófito Crepuscular^3803:1:1,4306:3:4,266425:6:13,266427:1:1^
+256799^10^0^43^44^2548^0.2933^0.4379^10^Campeón Crepuscular^4306:1:1,4338:2:3,6438:1:1,265821:6:6^
 256952^13^0^39^40^2548^0.5043^0.5051^13^Asaltante Crepuscular^3785:1:1,4306:3:6,4338:1:1,5429:1:1,6438:1:1,15233:1:1^
 257017^1^0^37^38^2548^0.4941^0.4969^1^Lupo Crepuscular^4582:1:1^
 260931^1^0^35^35^2548^0.4992^0.4688^1^Garrotepié^^
@@ -85,6 +88,7 @@ GoldScout-export 6^6fdn3ryh1m11^6
 @i^3181^Carne parcialmente digerida
 @i^3376^Cinturón de retal
 @i^3385^Poción de maná inferior
+@i^3671^Calavera inerte
 @i^3676^Icor baboso
 @i^3712^Carne de tortuga
 @i^3740^Espada decapitadora de protección contra la Naturaleza
@@ -103,6 +107,7 @@ GoldScout-export 6^6fdn3ryh1m11^6
 @i^5207^Varita opaca
 @i^5243^Eructo flamígero
 @i^5429^Una bonita roca
+@i^5431^Petaca vacía
 @i^5516^Colmillo de trillanodonte
 @i^5524^Almeja de concha espesa
 @i^5569^Algas
@@ -145,8 +150,10 @@ GoldScout-export 6^6fdn3ryh1m11^6
 @i^17058^Aceite de pescado
 @i^248685^Cajón saqueado: curiosidades de aprendiz
 @i^248687^Cajón saqueado: menas de oficial
+@i^248694^Cajón saqueado: curiosidades de experto
 @i^252774^Patrón: armadura de cuero totémica
 @i^262888^Libranza del oficial sellada
+@i^265821^Llave Crepuscular
 @i^266425^Talismán Crepuscular
 @i^266427^Registro de Mariscal de campo
 @i^273839^Sortija de caparazón con pinchos
@@ -191,6 +198,7 @@ GoldScout-export 6^6fdn3ryh1m11^6
 @q^3181^0:15:0
 @q^3376^0:4:0
 @q^3385^1:0:0
+@q^3671^0:15:0
 @q^3676^0:15:0
 @q^3712^1:7:1
 @q^3740^2:2:0
@@ -209,6 +217,7 @@ GoldScout-export 6^6fdn3ryh1m11^6
 @q^5207^2:2:0
 @q^5243^3:2:0
 @q^5429^0:15:0
+@q^5431^0:15:0
 @q^5516^0:2:0
 @q^5524^1:7:0
 @q^5569^0:15:0
@@ -251,8 +260,10 @@ GoldScout-export 6^6fdn3ryh1m11^6
 @q^17058^1:15:0
 @q^248685^1:0:1
 @q^248687^1:0:1
+@q^248694^1:0:1
 @q^252774^3:9:0
 @q^262888^3:0:0
+@q^265821^1:12:0
 @q^266425^1:12:0
 @q^266427^1:12:0
 @q^273839^3:4:0
@@ -1055,7 +1066,10 @@ GoldScout-export 6^6fdn3ryh1m11^6
 @a^4802^128:4
 @a^4803^128:7,148:1
 @a^254560^169:3,189:8,209:2
+@a^256795^145:1,165:3,166:4,185:1,186:2
+@a^256797^145:1,165:3,185:3,186:2
 @a^256798^169:1,170:1,189:6,190:1,209:3,210:2
+@a^256799^145:1,165:2,166:3,185:2,186:2
 @a^256952^189:3,190:5,209:1,210:3,230:1
 @a^257017^189:1
 @a^260931^189:1
