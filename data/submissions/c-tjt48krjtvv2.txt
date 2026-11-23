@@ -1,4 +1,4 @@
-GoldScout-export 6^tjt48krjtvv2^6
+GoldScout-export 6^tjt48krjtvv2^7
 2240^2^0^32^33^1416^0.5762^0.6881^2^Syndicate Footpad^1707:1:1,3601:1:1,5113:1:1^
 2241^2^0^33^34^1416^0.5760^0.6991^2^Syndicate Thief^1707:1:1,4306:1:2,4634:1:1^
 2248^7^0^30^31^1424^0.4711^0.3168^7^Cave Yeti^1477:1:1,1710:1:1,1828:1:1,3708:1:1^
@@ -11,6 +11,7 @@ GoldScout-export 6^tjt48krjtvv2^6
 2271^13^0^31^32^1416^0.2024^0.8957^11^Dalaran Shield Guard^3714:6:6,4306:4:6^
 2272^5^0^32^33^1416^0.1993^0.9025^5^Dalaran Theurgist^2592:1:2,3714:4:4,3827:1:1,4306:1:1^
 2305^1^0^30^30^1424^0.3012^0.5721^1^Foreman Bonds^422:1:1^
+2349^1^0^24^25^1424^0.7582^0.6182^1^Giant Moss Creeper^878:1:1,2251:1:1,4428:1:1^
 2351^1^0^21^22^1424^0.6049^0.2612^1^Gray Bear^^
 2372^4^0^26^27^1424^0.6474^0.6173^4^Mudsnout Gnoll^^
 2373^2^0^27^27^1424^0.6386^0.6164^2^Mudsnout Shaman^^
@@ -26,6 +27,8 @@ GoldScout-export 6^tjt48krjtvv2^6
 2414^1^0^33^33^1416^0.1658^0.8900^1^Kegan Darkmar^3688:1:1^
 2415^1^0^33^33^1416^0.1648^0.8916^1^Warden Belamoore^3711:1:1^
 2503^9^0^27^28^1424^0.2855^0.5635^9^Hillsbrad Foreman^1829:1:1,2072:1:1,2221:1:1,2290:1:1,3692:4:4^
+2563^1^0^32^32^1417^0.2867^0.3508^1^Plains Creeper^1081:1:1,2251:1:1^
+2578^1^0^31^31^1417^0.2772^0.3444^1^Young Mesa Buzzard^1464:1:1,3404:1:1^
 2623^17^0^32^33^1416^0.2024^0.8978^15^Spirit of Old^^
 3376^5^0^23^23^1413^0.4924^0.8433^5^Bael'dun Soldier^2589:2:4^
 3377^8^0^24^25^1413^0.4910^0.8438^8^Bael'dun Rifleman^929:1:1,1821:1:1,2592:1:2,3021:1:1,4306:1:1,211853:1:1^
@@ -72,8 +75,11 @@ GoldScout-export 6^tjt48krjtvv2^6
 10992^1^0^30^30^1441^0.2160^0.2709^1^Enraged Panther^5137:1:1,12946:1:1^
 270094^1^0^30^30^1441^0.5344^0.4413^1^Stormheart^5128:1:1^
 @i^422^Dwarven Mild
+@i^878^Fist-sized Spinneret
 @i^929^Healing Potion
+@i^1081^Crisp Spider Meat
 @i^1205^Melon Juice
+@i^1464^Buzzard Talon
 @i^1477^Scroll of Agility II
 @i^1686^Bristly Whisker
 @i^1701^Curved Basilisk Claw
@@ -93,6 +99,7 @@ GoldScout-export 6^tjt48krjtvv2^6
 @i^2072^Dwarven Magestaff of Power
 @i^2221^Targe Shield
 @i^2222^Tower Shield
+@i^2251^Gooey Spider Leg
 @i^2290^Scroll of Intellect II
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
@@ -102,6 +109,7 @@ GoldScout-export 6^tjt48krjtvv2^6
 @i^3021^Ranger Bow
 @i^3301^Sharp Canine
 @i^3402^Soft Patch of Fur
+@i^3404^Buzzard Wing
 @i^3601^Syndicate Missive
 @i^3688^Bloodstone Oval
 @i^3689^Bloodstone Marble
@@ -117,6 +125,7 @@ GoldScout-export 6^tjt48krjtvv2^6
 @i^3783^Light Scimitar
 @i^3827^Mana Potion
 @i^4306^Silk Cloth
+@i^4428^Spider Palp
 @i^4555^Thick Scaly Tail
 @i^4634^Iron Lockbox
 @i^4784^Lifeless Stone
@@ -155,8 +164,11 @@ GoldScout-export 6^tjt48krjtvv2^6
 @i^248687^Waylaid Crate: Journeyman Ore
 @i^251385^Plans: Hard Gold Cuirass
 @q^422^1:0:0
+@q^878^0:7:0
 @q^929^1:0:0
+@q^1081^1:7:1
 @q^1205^1:0:0
+@q^1464^0:15:0
 @q^1477^1:0:0
 @q^1686^0:15:0
 @q^1701^0:15:0
@@ -176,6 +188,7 @@ GoldScout-export 6^tjt48krjtvv2^6
 @q^2072^2:2:0
 @q^2221^0:4:0
 @q^2222^0:4:0
+@q^2251^1:7:1
 @q^2290^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
@@ -185,6 +198,7 @@ GoldScout-export 6^tjt48krjtvv2^6
 @q^3021^3:2:0
 @q^3301^0:15:0
 @q^3402^0:15:0
+@q^3404^1:7:1
 @q^3601^1:12:0
 @q^3688^1:12:0
 @q^3689^1:12:0
@@ -200,6 +214,7 @@ GoldScout-export 6^tjt48krjtvv2^6
 @q^3783^0:2:0
 @q^3827^1:0:0
 @q^4306^1:7:1
+@q^4428^0:15:0
 @q^4555^0:15:0
 @q^4634^2:15:0
 @q^4784^0:15:0
@@ -239,6 +254,7 @@ GoldScout-export 6^tjt48krjtvv2^6
 @q^251385^2:9:0
 @m^1413^The Barrens
 @m^1416^Alterac Mountains
+@m^1417^Arathi Highlands
 @m^1424^Hillsbrad Foothills
 @m^1441^Thousand Needles
 @c^118^
@@ -1016,6 +1032,7 @@ GoldScout-export 6^tjt48krjtvv2^6
 @a^2271^343:2,344:7,364:2
 @a^2272^343:1,344:1,363:1,364:2
 @a^2305^226:1
+@a^2349^255:1
 @a^2351^112:1
 @a^2372^252:3,253:1
 @a^2373^252:2
@@ -1031,6 +1048,8 @@ GoldScout-export 6^tjt48krjtvv2^6
 @a^2414^343:1
 @a^2415^343:1
 @a^2503^205:3,225:6
+@a^2563^145:1
+@a^2578^125:1
 @a^2623^343:2,344:8,363:2,364:3
 @a^3376^329:5
 @a^3377^329:8
