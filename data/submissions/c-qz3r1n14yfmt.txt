@@ -1,4 +1,4 @@
-GoldScout-export 6^qz3r1n14yfmt^11
+GoldScout-export 6^qz3r1n14yfmt^12
 127^3^0^18^19^1436^0.3492^0.8559^3^Murloc Tidehunter^730:1:1,5523:1:1,5784:1:1^
 517^2^0^17^17^1436^0.3485^0.8540^2^Murloc Oracle^730:2:2^
 598^9^0^0^0^0^0.0000^0.0000^0^^1743:1:1,1744:1:1,2592:2:2,15926:1:1,248684:1:1^
@@ -32,12 +32,18 @@ GoldScout-export 6^qz3r1n14yfmt^11
 4107^4^0^28^29^1441^0.1117^0.3445^4^Highperch Wyvern^5137:4:4^
 4109^2^0^29^29^1441^0.1150^0.3271^2^Highperch Consort^5137:1:1^
 4113^2^0^28^29^1441^0.1227^0.1820^2^Gravelsnout Digger^1205:1:1,4306:1:2,5842:1:1,211853:1:1^
-4114^1^0^27^27^1441^0.2518^0.4652^1^Gravelsnout Forager^1806:1:1^
+4114^2^0^27^28^1441^0.4306^0.5108^2^Gravelsnout Forager^1806:1:1,2592:1:2^
 4116^1^0^29^29^1441^0.1243^0.1829^1^Gravelsnout Surveyor^2785:1:1,4306:1:1^
 4117^2^0^25^26^1441^0.3929^0.5534^2^Cloud Serpent^6826:1:1,17056:1:1,211854:1:1^
 4118^3^0^26^28^1441^0.3879^0.5594^3^Venomous Cloud Serpent^6444:1:1,6826:1:1^
 4124^5^0^27^28^1441^0.2852^0.4278^5^Needles Cougar^5137:4:4,5635:1:1^
 4126^1^0^25^26^1441^0.3960^0.5581^1^Crag Stalker^5137:1:1^
+4130^5^0^32^33^1441^0.6923^0.8340^5^Silithid Searcher^5853:1:1,5854:1:1,5855:1:1,6302:2:2^
+4131^2^0^35^35^1441^0.6564^0.8536^2^Silithid Invader^5854:1:1^
+4133^7^0^33^34^1441^0.6842^0.8268^7^Silithid Hive Drone^5853:2:2,5854:3:3,5877:1:1,6300:1:1,6302:1:1,15243:1:1^
+4142^1^0^30^31^1441^0.7075^0.6598^1^Sparkleshell Tortoise^3712:1:1,4555:1:1^
+4147^2^0^30^31^1441^0.7142^0.6629^2^Saltstone Basilisk^11384:2:2^
+4154^1^0^30^30^1441^0.7079^0.6591^1^Salt Flats Scavenger^5116:1:1,5848:1:1^
 4249^3^0^28^29^1441^0.4885^0.5397^3^Pesterhide Snarler^3402:1:1^
 4280^1^0^30^30^1420^0.8289^0.3376^1^Scarlet Preserver^5805:1:1^
 4283^1^0^0^0^0^0.0000^0.0000^0^^5805:1:1^
@@ -174,6 +180,7 @@ GoldScout-export 6^qz3r1n14yfmt^11
 @i^3402^Soft Patch of Fur
 @i^3403^Ivory Boar Tusk
 @i^3671^Lifeless Skull
+@i^3712^Turtle Meat
 @i^3770^Mutton Chop
 @i^3771^Wild Hog Shank
 @i^3778^Taut Compound Bow
@@ -187,6 +194,7 @@ GoldScout-export 6^qz3r1n14yfmt^11
 @i^4364^Coarse Blasting Powder
 @i^4541^Freshly Baked Bread
 @i^4542^Moist Cornbread
+@i^4555^Thick Scaly Tail
 @i^4603^Raw Spotted Yellowtail
 @i^4606^Spongy Morel
 @i^4607^Delicious Cave Mold
@@ -208,7 +216,14 @@ GoldScout-export 6^qz3r1n14yfmt^11
 @i^5810^Fresh Carcass
 @i^5811^Frostmaw's Mane
 @i^5842^Unrefined Ore Sample
+@i^5848^Hollow Vulture Bone
+@i^5853^Intact Silithid Carapace
+@i^5854^Silithid Talon
+@i^5855^Silithid Heart
+@i^5877^Cracked Silithid Carapace
 @i^5974^Pattern: Guardian Cloak
+@i^6300^Husk Fragment
+@i^6302^Delicate Insect Wing
 @i^6308^Raw Bristle Whisker Catfish
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
@@ -245,6 +260,7 @@ GoldScout-export 6^qz3r1n14yfmt^11
 @i^9860^Archer's Cloak of the Eagle
 @i^9862^Archer's Trousers of the Monkey
 @i^9867^Renegade Cloak of the Champion
+@i^11384^Broken Basilisk Teeth
 @i^11391^Spined Bat Wing
 @i^11393^Small Bat Skull
 @i^11394^Bat Heart
@@ -253,6 +269,7 @@ GoldScout-export 6^qz3r1n14yfmt^11
 @i^15224^Battlesmasher of the Gorilla
 @i^15230^Ridge Cleaver of Intellect
 @i^15242^Honed Stiletto of Frost Protection
+@i^15243^Deadly Kris of Healing
 @i^15522^Spiked Chain Shield of the Defender
 @i^15537^Wicked Chain Cloak of the Bandit
 @i^15547^Thick Scale Cloak of the Bandit
@@ -341,6 +358,7 @@ GoldScout-export 6^qz3r1n14yfmt^11
 @q^3402^0:15:0
 @q^3403^0:15:0
 @q^3671^0:15:0
+@q^3712^1:7:1
 @q^3770^1:0:0
 @q^3771^1:0:0
 @q^3778^0:2:0
@@ -354,6 +372,7 @@ GoldScout-export 6^qz3r1n14yfmt^11
 @q^4364^1:7:1
 @q^4541^1:0:0
 @q^4542^1:0:0
+@q^4555^0:15:0
 @q^4603^1:7:1
 @q^4606^1:0:0
 @q^4607^1:0:0
@@ -375,7 +394,14 @@ GoldScout-export 6^qz3r1n14yfmt^11
 @q^5810^1:12:0
 @q^5811^1:12:0
 @q^5842^1:12:0
+@q^5848^1:12:0
+@q^5853^1:12:0
+@q^5854^1:12:0
+@q^5855^1:12:0
+@q^5877^1:12:0
 @q^5974^2:9:0
+@q^6300^0:15:0
+@q^6302^0:15:0
 @q^6308^1:7:1
 @q^6358^1:7:1
 @q^6359^1:7:1
@@ -412,6 +438,7 @@ GoldScout-export 6^qz3r1n14yfmt^11
 @q^9860^2:4:0
 @q^9862^2:4:0
 @q^9867^2:4:0
+@q^11384^0:15:0
 @q^11391^0:15:0
 @q^11393^0:15:0
 @q^11394^0:15:0
@@ -420,6 +447,7 @@ GoldScout-export 6^qz3r1n14yfmt^11
 @q^15224^2:2:0
 @q^15230^2:2:0
 @q^15242^2:2:0
+@q^15243^2:2:0
 @q^15522^2:4:0
 @q^15537^2:4:0
 @q^15547^2:4:0
@@ -1167,12 +1195,18 @@ GoldScout-export 6^qz3r1n14yfmt^11
 @a^4107^122:2,142:2
 @a^4109^122:2
 @a^4113^62:2
-@a^4114^185:1
+@a^4114^185:1,232:1
 @a^4116^62:1
 @a^4117^208:1,227:1
 @a^4118^227:3
 @a^4124^122:2,143:1,206:1,253:1
 @a^4126^227:1
+@a^4130^333:3,354:2
+@a^4131^332:1,353:1
+@a^4133^333:6,353:1
+@a^4142^274:1
+@a^4147^274:2
+@a^4154^274:1
 @a^4249^143:1,252:1,253:1
 @a^4280^136:1
 @a^4504^267:1

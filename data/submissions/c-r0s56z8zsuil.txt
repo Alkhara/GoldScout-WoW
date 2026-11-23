@@ -1,4 +1,4 @@
-GoldScout-export 6^r0s56z8zsuil^9
+GoldScout-export 6^r0s56z8zsuil^11
 681^10^0^30^31^1434^0.3441^0.1026^10^Young Stranglethorn Tiger^1686:2:2,1687:3:3,12202:2:2^
 682^11^0^32^33^1434^0.4303^0.1478^11^Stranglethorn Tiger^1686:2:2,1687:1:1,4073:1:1,12202:6:6^
 683^7^0^30^31^1434^0.4137^0.1164^7^Young Panther^1686:1:1^
@@ -40,6 +40,7 @@ GoldScout-export 6^r0s56z8zsuil^9
 2714^1^0^35^35^1417^0.4133^0.5487^1^Forsaken Courier^4482:1:1^
 2721^1^1^35^35^1417^0.4144^0.5514^1^Forsaken Bodyguard^^
 3743^1^0^23^23^1440^0.5002^0.6189^1^Foulweald Warrior^954:1:1,2592:1:2^
+3809^1^0^21^22^1440^0.5243^0.5504^1^Ashenvale Bear^3730:1:1,11406:1:1,15488:1:1^
 4095^1^1^27^28^1441^0.2076^0.2239^1^Galak Mauler^^
 4107^16^0^28^29^1441^0.1152^0.3663^16^Highperch Wyvern^5136:3:3,5137:8:8,5635:3:3,5809:5:5^
 4109^17^0^28^29^1441^0.1143^0.3629^17^Highperch Consort^2072:1:1,5137:15:15,5635:3:3,5809:4:4,15525:1:1^
@@ -59,6 +60,7 @@ GoldScout-export 6^r0s56z8zsuil^9
 4260^1^0^37^37^1434^0.4372^0.2026^1^Venture Co. Shredder^^
 4355^1^0^37^37^1445^0.4343^0.2765^1^Bloodfen Scytheclaw^^
 4411^3^0^36^37^1445^0.5491^0.2524^3^Darkfang Lurker^1074:1:1,4585:1:1,12205:1:1^
+4693^1^0^37^37^1443^0.4273^0.5807^1^Dread Flyer^11416:1:1,12037:1:1^
 4723^1^0^38^38^1434^0.4266^0.1832^1^Foreman Cozzle^3771:1:1,4306:1:3,5851:1:1^
 12922^1^0^32^32^1417^0.3781^0.4110^1^Imp Minion^^
 260429^1^0^39^39^1434^0.4335^0.2039^1^Venture Co. Agent^^
@@ -99,6 +101,7 @@ GoldScout-export 6^r0s56z8zsuil^9
 @i^3685^Raptor Egg
 @i^3703^Southshore Stout
 @i^3712^Turtle Meat
+@i^3730^Big Bear Meat
 @i^3731^Lion Meat
 @i^3771^Wild Hog Shank
 @i^3779^Hefty War Axe
@@ -157,6 +160,7 @@ GoldScout-export 6^r0s56z8zsuil^9
 @i^11384^Broken Basilisk Teeth
 @i^11385^Basilisk Scale
 @i^11386^Squishy Basilisk Eye
+@i^11406^Rotting Bear Carcass
 @i^11416^Delicate Ribcage
 @i^12009^Tundra Ring of Arcane Protection
 @i^12037^Mystery Meat
@@ -164,10 +168,17 @@ GoldScout-export 6^r0s56z8zsuil^9
 @i^12202^Tiger Meat
 @i^12205^White Spider Meat
 @i^13422^Stonescale Eel
+@i^13758^Raw Redgill
+@i^13759^Raw Nightfin Snapper
 @i^14186^Raincaller Mantle of the Sorcerer
+@i^15488^Bloodspattered Surcoat of Spirit
 @i^15525^Sentry's Slippers of Spirit
 @i^16882^Battered Junkbox
 @i^16883^Worn Junkbox
+@i^16967^Feralas Ahi
+@i^16968^Sar'theris Striker
+@i^16969^Savage Coast Blue Sailfin
+@i^16970^Misty Reed Mahi Mahi
 @i^17056^Light Feather
 @i^17124^Syndicate Emblem
 @i^19807^Speckled Tastyfish
@@ -216,6 +227,7 @@ GoldScout-export 6^r0s56z8zsuil^9
 @q^3685^1:7:1
 @q^3703^1:0:0
 @q^3712^1:7:1
+@q^3730^1:7:1
 @q^3731^1:7:1
 @q^3771^1:0:0
 @q^3779^0:2:0
@@ -274,6 +286,7 @@ GoldScout-export 6^r0s56z8zsuil^9
 @q^11384^0:15:0
 @q^11385^0:15:0
 @q^11386^0:15:0
+@q^11406^0:15:0
 @q^11416^0:15:0
 @q^12009^2:4:0
 @q^12037^1:7:1
@@ -281,10 +294,17 @@ GoldScout-export 6^r0s56z8zsuil^9
 @q^12202^1:7:1
 @q^12205^1:7:1
 @q^13422^1:7:1
+@q^13758^1:7:1
+@q^13759^1:7:1
 @q^14186^2:4:0
+@q^15488^2:4:0
 @q^15525^2:4:0
 @q^16882^1:15:0
 @q^16883^1:15:0
+@q^16967^1:15:0
+@q^16968^1:12:0
+@q^16969^1:12:0
+@q^16970^1:12:0
 @q^17056^1:15:1
 @q^17124^1:12:0
 @q^19807^1:15:0
@@ -301,8 +321,11 @@ GoldScout-export 6^r0s56z8zsuil^9
 @m^1417^Arathi Highlands
 @m^1424^Hillsbrad Foothills
 @m^1434^Stranglethorn Vale
+@m^1435^Swamp of Sorrows
 @m^1440^Ashenvale
 @m^1441^Thousand Needles
+@m^1443^Desolace
+@m^1444^Feralas
 @m^1445^Dustwallow Marsh
 @m^1455^Ironforge
 @c^118^
@@ -1134,6 +1157,7 @@ GoldScout-export 6^r0s56z8zsuil^9
 @a^2714^208:1
 @a^2721^228:1
 @a^3743^250:1
+@a^3809^230:1
 @a^4095^84:1
 @a^4107^121:1,122:3,142:12
 @a^4109^121:1,122:4,142:12
@@ -1153,6 +1177,7 @@ GoldScout-export 6^r0s56z8zsuil^9
 @a^4260^88:1
 @a^4355^108:1
 @a^4411^91:2,109:1
+@a^4693^228:1
 @a^4723^68:1
 @a^12922^167:1
 @a^260429^88:1
@@ -1160,6 +1185,9 @@ GoldScout-export 6^r0s56z8zsuil^9
 @f^1416^0^49^126^1710:1:1,6308:15:15,8365:33:33^255:49
 @f^1417^0^376^150^1710:1:1,6308:132:132,6310:1:1,8365:242:242^205:376
 @f^1424^0^115^79^3820:1:3,6289:16:16,6308:48:48,21071:44:44,21113:3:3,21114:3:5^133:11,153:15,172:23,191:32,211:11,231:23
-@f^1434^0^40^225^4603:1:1,6355:1:1,6358:9:9,6359:4:4,6362:6:6,13422:1:3,19807:16:16,21150:2:2^64:2,224:19,244:9,264:6,286:1,306:3
+@f^1434^0^43^225^4603:1:1,6355:1:1,6358:10:10,6359:4:4,6362:8:8,13422:1:3,16969:1:1,19807:16:16,21150:2:2^64:2,224:19,244:9,264:6,265:3,286:1,306:3
+@f^1435^0^3^225^4603:1:1,6358:1:1,6362:1:1,16970:1:1^118:3
+@f^1443^0^4^225^6362:4:4,16968:1:1^305:4
+@f^1444^0^6^225^3820:1:1,6358:2:2,8365:1:1,13758:1:1,13759:1:1,16967:1:1^168:1,212:5
 @f^1455^0^78^4^6289:48:48,6291:10:10,6308:20:20^49:78
 @l^0^enUS

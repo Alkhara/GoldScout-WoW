@@ -1,4 +1,4 @@
-GoldScout-export 6^j2a23oxzafss^2
+GoldScout-export 6^j2a23oxzafss^3
 667^10^0^39^40^1434^0.4596^0.4027^10^Guerrero Machacacráneos^1520:5:5,1524:3:3,1708:1:1,3771:1:1,4306:1:2,8151:2:2^
 670^3^0^41^41^1434^0.4577^0.4211^3^Médico Brujo Machacacráneos^2466:3:3,4002:1:1,4338:1:2,4599:1:1^
 672^1^0^44^44^1434^0.4650^0.4484^1^Cazaespíritus Machacacráneos^4599:1:1^
@@ -19,8 +19,8 @@ GoldScout-export 6^j2a23oxzafss^2
 1550^1^0^42^42^1434^0.3852^0.4679^1^Basilisco Colastador^11386:1:1^
 1557^1^0^41^41^1434^0.3434^0.6308^1^Gorila del Valle Velo de Bruma viejo^4097:1:1^
 1561^2^0^40^41^1434^0.2695^0.6923^2^Asaltante Velasangre^2725:1:1,3897:1:1,3910:1:1,3963:1:1^
-1563^3^0^42^43^1434^0.2732^0.8330^3^Aventurero Velasangre^4338:3:4^
-1564^4^0^42^43^1434^0.2748^0.8415^4^Bruja Velasangre^3910:3:3,4338:1:1^
+1563^10^0^42^43^1434^0.2449^0.6294^10^Aventurero Velasangre^3910:1:1,4338:5:6,9260:1:1^
+1564^8^0^42^43^1434^0.2560^0.6915^8^Brujo Velasangre^3910:5:5,4338:5:6,4419:1:1^
 1565^1^0^44^44^1434^0.3068^0.8987^1^Perro de mar Velasangre^^
 1907^28^0^43^44^1434^0.2587^0.6200^28^Expedicionario Naga^2730:1:1,2751:1:1,3928:1:1,4029:10:10,4603:1:2,6149:1:1,7496:1:1,7973:10:10,17058:13:13^
 2530^1^0^41^41^1434^0.3918^0.5788^1^Yenniku^^
@@ -32,7 +32,8 @@ GoldScout-export 6^j2a23oxzafss^2
 2676^4^0^40^41^1434^0.4127^0.4361^4^Segador de la cosecha compacto^^
 3560^2^0^41^41^1434^0.4572^0.4242^2^Guarda de sanación^^
 4505^1^0^44^44^1434^0.3017^0.8911^1^Marinera de cubierta Velasangre^^
-10928^3^0^42^43^1434^0.2739^0.8469^3^Esbirro súcubo^^
+10928^4^0^42^43^1434^0.2653^0.7667^4^Esbirro súcubo^^
+12922^3^0^42^43^1434^0.2360^0.5454^3^Esbirro Diablillo^^
 @i^1520^Sudor trol
 @i^1524^Colmillo Machacacráneos
 @i^1630^Electro-linterna rota
@@ -70,6 +71,7 @@ GoldScout-export 6^j2a23oxzafss^2
 @i^4306^Paño de seda
 @i^4338^Tela de paño mágico
 @i^4387^Tornapunta de hierro
+@i^4419^Pergamino de Intelecto III
 @i^4421^Pergamino de Protección III
 @i^4599^Filete de jamón curado
 @i^4603^Serviola moteada cruda
@@ -82,6 +84,7 @@ GoldScout-export 6^j2a23oxzafss^2
 @i^7973^Almeja de boca grande
 @i^8151^Frasco de mojo
 @i^8153^Atriplex salvaje
+@i^9260^Ron volátil
 @i^9892^Guantes de cazador de poder
 @i^11203^Fórmula: encantar guantes: minería avanzada
 @i^11386^Ojo de basilisco fangoso
@@ -128,6 +131,7 @@ GoldScout-export 6^j2a23oxzafss^2
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4387^1:7:1
+@q^4419^1:0:0
 @q^4421^1:0:0
 @q^4599^1:0:0
 @q^4603^1:7:1
@@ -140,6 +144,7 @@ GoldScout-export 6^j2a23oxzafss^2
 @q^7973^1:7:0
 @q^8151^1:7:1
 @q^8153^1:7:1
+@q^9260^1:0:0
 @q^9892^2:4:0
 @q^11203^2:9:0
 @q^11386^0:15:0
@@ -857,8 +862,8 @@ GoldScout-export 6^j2a23oxzafss^2
 @a^1550^187:1
 @a^1557^246:1
 @a^1561^265:2
-@a^1563^325:3
-@a^1564^325:3,345:1
+@a^1563^204:6,224:1,325:3
+@a^1564^204:3,224:1,325:3,345:1
 @a^1565^346:1
 @a^1907^224:2,225:4,244:7,245:15
 @a^2530^227:1
@@ -870,5 +875,6 @@ GoldScout-export 6^j2a23oxzafss^2
 @a^2676^168:4
 @a^3560^169:2
 @a^4505^346:1
-@a^10928^325:2,345:1
+@a^10928^204:1,325:2,345:1
+@a^12922^204:2,224:1
 @l^0^esES
