@@ -1,4 +1,13 @@
-GoldScout-export 6^k4s33hyfpb09^5
+GoldScout-export 6^k4s33hyfpb09^7
+684^1^0^37^38^1434^0.3761^0.3647^1^Shadowmaw Panther^15234:1:1^
+730^2^0^43^43^1434^0.2984^0.4352^2^Tethis^3877:1:1,4461:2:2,12184:1:1^
+731^1^0^43^43^1434^0.3759^0.3485^1^King Bangalash^12202:1:1^
+772^1^0^37^38^1434^0.3776^0.3669^1^Stranglethorn Tigress^12202:1:1^
+1511^4^0^41^42^1434^0.3525^0.6034^4^Enraged Silverback Gorilla^2799:4:4^
+1514^1^0^44^44^1434^0.3525^0.6032^1^Mokk the Savage^2797:1:1^
+1557^9^0^40^41^1434^0.3377^0.6320^9^Elder Mistvale Gorilla^2799:5:5,4096:4:4,4097:1:1,213545:1:1^
+1558^1^0^42^42^1434^0.3476^0.6286^1^Silverback Patriarch^4099:1:1^
+1563^1^0^43^43^1434^0.3335^0.8574^1^Bloodsail Swashbuckler^4306:1:2^
 5229^8^0^40^41^1444^0.7705^0.3224^8^Gordunni Ogre^4306:2:3,4338:1:1^
 5232^6^0^42^43^1444^0.7571^0.3110^6^Gordunni Brute^1645:1:1,4306:2:4,4338:1:2^
 5234^4^0^43^44^1444^0.6104^0.5622^4^Gordunni Mauler^4306:1:1,4338:1:2,4599:1:1^
@@ -39,16 +48,23 @@ GoldScout-export 6^k4s33hyfpb09^5
 222286^1^0^43^43^1444^0.6712^0.3913^1^Namida Grimtotem^254877:1:1^
 @i^1608^Skullcrusher Mace of Healing
 @i^1645^Moonberry Juice
+@i^2797^Heart of Mokk
+@i^2799^Gorilla Fang
+@i^3877^Talon of Tethis
 @i^3928^Superior Healing Potion
 @i^4001^Overlinked Chain Boots
 @i^4017^Sharp Shortsword
 @i^4021^Blunting Mace
 @i^4022^Crushing Maul
 @i^4023^Fine Pointed Dagger
+@i^4096^Coarse Gorilla Hair
+@i^4097^Chipped Gorilla Tooth
+@i^4099^Tuft of Gorilla Hair
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4421^Scroll of Protection III
 @i^4460^Ripped Wing Webbing
+@i^4461^Raptor Hide
 @i^4589^Long Elegant Feather
 @i^4590^Curved Yellow Bill
 @i^4599^Cured Ham Steak
@@ -71,11 +87,15 @@ GoldScout-export 6^k4s33hyfpb09^5
 @i^11418^Hollow Wing Bone
 @i^11474^Sprite Darter Egg
 @i^12037^Mystery Meat
+@i^12184^Raptor Flesh
+@i^12202^Tiger Meat
 @i^14838^Tyrant's Belt
 @i^14903^Saltstone Armsplints of Fire Protection
+@i^15234^Greater Scythe of the Boar
 @i^15608^Ancient Pauldrons of the Bandit
 @i^18961^Zukk'ash Carapace
 @i^18962^Stinglasher's Glands
+@i^213545^Scroll: PEATCHY ATTAX
 @i^213546^Scroll: SHOOBEEDOOP
 @i^213547^Scroll: THAW WORDS
 @i^248693^Waylaid Crate: Expert Textiles
@@ -84,16 +104,23 @@ GoldScout-export 6^k4s33hyfpb09^5
 @i^254877^Namida's Hoof
 @q^1608^2:2:0
 @q^1645^1:0:0
+@q^2797^1:12:0
+@q^2799^1:12:0
+@q^3877^1:12:0
 @q^3928^1:0:0
 @q^4001^0:4:0
 @q^4017^0:2:0
 @q^4021^0:2:0
 @q^4022^0:2:0
 @q^4023^0:2:0
+@q^4096^1:15:0
+@q^4097^0:15:0
+@q^4099^0:15:0
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4421^1:0:0
 @q^4460^0:15:0
+@q^4461^1:7:1
 @q^4589^1:7:1
 @q^4590^0:15:0
 @q^4599^1:0:0
@@ -116,17 +143,22 @@ GoldScout-export 6^k4s33hyfpb09^5
 @q^11418^0:15:0
 @q^11474^1:15:0
 @q^12037^1:7:1
+@q^12184^1:7:1
+@q^12202^1:7:1
 @q^14838^2:4:0
 @q^14903^2:4:0
+@q^15234^2:2:0
 @q^15608^2:4:0
 @q^18961^1:12:0
 @q^18962^1:12:0
+@q^213545^1:0:0
 @q^213546^1:0:0
 @q^213547^1:0:0
 @q^248693^1:0:1
 @q^248694^1:0:1
 @q^249882^1:9:0
 @q^254877^1:12:0
+@m^1434^Stranglethorn Vale
 @m^1444^Feralas
 @m^1446^Tanaris
 @c^2454^
@@ -326,6 +358,15 @@ GoldScout-export 6^k4s33hyfpb09^5
 @c^279964^
 @c^279970^
 @c^279990^
+@a^684^147:1
+@a^730^165:1,166:1
+@a^731^127:1
+@a^772^147:1
+@a^1511^247:4
+@a^1514^247:1
+@a^1557^246:8,266:1
+@a^1558^246:1
+@a^1563^346:1
 @a^5229^114:1,115:2,135:4,136:1
 @a^5232^114:1,115:1,135:4
 @a^5234^232:4

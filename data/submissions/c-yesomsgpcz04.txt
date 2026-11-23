@@ -1,4 +1,4 @@
-GoldScout-export 6^yesomsgpcz04^21
+GoldScout-export 6^yesomsgpcz04^22
 205^37^0^28^29^1431^0.6303^0.4480^37^Nightbane Dark Runner^1205:1:1,1761:2:2,1803:1:1,1805:1:1,3770:2:2,5635:1:1,5637:1:1,9838:1:1,248689:1:1^
 206^7^0^29^30^1431^0.7163^0.7066^7^Nightbane Vile Fang^8184:1:1,211784:1:1^
 210^2^0^26^27^1431^0.2319^0.2773^2^Bone Chewer^^
@@ -74,7 +74,9 @@ GoldScout-export 6^yesomsgpcz04^21
 2091^1^0^32^32^1437^0.5248^0.5422^1^Chieftain Nek'rosh^1205:1:1^
 2240^1^7^32^33^1416^0.5677^0.6587^1^Syndicate Footpad^4306:1:2^4544:1:1,5431:1:1,16883:1:1,17124:7:7
 2241^0^3^33^34^0^0.0000^0.0000^0^Syndicate Thief^^4544:1:1,17124:3:3
-2347^4^0^40^40^1424^0.8304^0.3574^4^Wild Gryphon^1207:1:1,4589:1:1,4590:2:2,4591:1:2^
+2347^119^0^40^40^1424^0.8431^0.3741^119^Wild Gryphon^1207:1:1,4589:35:35,4590:51:51,4591:29:45,4725:1:1,9931:1:1^
+2349^4^0^24^25^1424^0.8722^0.3948^4^Giant Moss Creeper^878:1:1,1081:2:2,2251:1:1,4428:1:1^
+2356^7^0^25^26^1424^0.8547^0.3850^7^Elder Gray Bear^2940:2:2,3702:1:1,3730:1:1,5635:1:1,11406:2:2,11407:1:1,248686:1:1^
 2374^4^0^28^29^1424^0.3293^0.7044^4^Torn Fin Muckdweller^3716:1:1,5524:1:1,6308:1:1,17058:1:1^
 2375^13^0^29^30^1424^0.3283^0.7162^13^Torn Fin Coastrunner^3716:6:6,5524:5:5,6308:2:5,17057:2:2,17058:2:2^
 2376^17^0^30^31^1424^0.4132^0.6796^17^Torn Fin Oracle^1828:1:1,5002:1:1,5524:6:6,5785:2:2,6308:1:2,17057:3:3,17058:4:4,249881:2:2^
@@ -229,6 +231,7 @@ GoldScout-export 6^yesomsgpcz04^21
 @i^770^Pointy Crocolisk Tooth
 @i^814^Flask of Oil
 @i^857^Large Red Sack
+@i^878^Fist-sized Spinneret
 @i^884^Ghoul Rib
 @i^887^Pound of Flesh
 @i^929^Healing Potion
@@ -300,6 +303,7 @@ GoldScout-export 6^yesomsgpcz04^21
 @i^2799^Gorilla Fang
 @i^2909^Red Wool Bandana
 @i^2926^Head of Bazil Thredd
+@i^2940^Bloody Bear Paw
 @i^3010^Fine Sand
 @i^3048^Lambent Scale Legguards
 @i^3172^Boar Intestines
@@ -332,8 +336,10 @@ GoldScout-export 6^yesomsgpcz04^21
 @i^3674^Decomposed Boot
 @i^3676^Slimy Ichor
 @i^3685^Raptor Egg
+@i^3702^Bear Gall Bladder
 @i^3712^Turtle Meat
 @i^3716^Murloc Head
+@i^3730^Big Bear Meat
 @i^3731^Lion Meat
 @i^3770^Mutton Chop
 @i^3771^Wild Hog Shank
@@ -364,6 +370,7 @@ GoldScout-export 6^yesomsgpcz04^21
 @i^4338^Mageweave Cloth
 @i^4363^Copper Modulator
 @i^4412^Schematic: Moonsight Rifle
+@i^4428^Spider Palp
 @i^4482^Sealed Folder
 @i^4538^Snapvine Watermelon
 @i^4539^Goldenbark Apple
@@ -382,6 +389,7 @@ GoldScout-export 6^yesomsgpcz04^21
 @i^4709^Forest Leather Mantle
 @i^4714^Silver-thread Sash
 @i^4715^Emblazoned Cloak
+@i^4725^Chief Brigadier Pauldrons
 @i^5002^Glowing Green Talisman
 @i^5113^Mark of the Syndicate
 @i^5373^Lucky Charm
@@ -447,12 +455,15 @@ GoldScout-export 6^yesomsgpcz04^21
 @i^9829^Scaled Leather Bracers of the Knight
 @i^9838^Banded Cloak of the Monkey
 @i^9872^Renegade Pauldrons of Healing
+@i^9931^Brigade Girdle of the Whale
 @i^10289^Durable Hat of the Channeler
 @i^10406^Scaled Leather Headband of Arcane Protection
 @i^11150^Formula: Enchant Gloves - Mining
 @i^11165^Formula: Enchant Weapon - Lesser Elemental Slayer
 @i^11385^Basilisk Scale
 @i^11391^Spined Bat Wing
+@i^11406^Rotting Bear Carcass
+@i^11407^Torn Bear Pelt
 @i^12040^Forest Pendant of Strength
 @i^12203^Red Wolf Meat
 @i^12208^Tender Wolf Meat
@@ -547,6 +558,7 @@ GoldScout-export 6^yesomsgpcz04^21
 @q^770^0:15:0
 @q^814^1:7:1
 @q^857^1:1:0
+@q^878^0:7:0
 @q^884^1:12:0
 @q^887^0:15:0
 @q^929^1:0:0
@@ -618,6 +630,7 @@ GoldScout-export 6^yesomsgpcz04^21
 @q^2799^1:12:0
 @q^2909^1:12:0
 @q^2926^1:12:0
+@q^2940^0:15:0
 @q^3010^0:15:0
 @q^3048^2:4:0
 @q^3172^1:7:1
@@ -650,8 +663,10 @@ GoldScout-export 6^yesomsgpcz04^21
 @q^3674^0:15:0
 @q^3676^0:15:0
 @q^3685^1:7:1
+@q^3702^0:15:0
 @q^3712^1:7:1
 @q^3716^1:12:0
+@q^3730^1:7:1
 @q^3731^1:7:1
 @q^3770^1:0:0
 @q^3771^1:0:0
@@ -682,6 +697,7 @@ GoldScout-export 6^yesomsgpcz04^21
 @q^4338^1:7:1
 @q^4363^1:7:1
 @q^4412^2:9:0
+@q^4428^0:15:0
 @q^4482^1:12:0
 @q^4538^1:0:0
 @q^4539^1:0:0
@@ -700,6 +716,7 @@ GoldScout-export 6^yesomsgpcz04^21
 @q^4709^2:4:0
 @q^4714^2:4:0
 @q^4715^2:4:0
+@q^4725^2:4:0
 @q^5002^2:4:0
 @q^5113^0:15:0
 @q^5373^1:15:1
@@ -765,12 +782,15 @@ GoldScout-export 6^yesomsgpcz04^21
 @q^9829^2:4:0
 @q^9838^2:4:0
 @q^9872^2:4:0
+@q^9931^2:4:0
 @q^10289^2:4:0
 @q^10406^2:4:0
 @q^11150^2:9:0
 @q^11165^2:9:0
 @q^11385^0:15:0
 @q^11391^0:15:0
+@q^11406^0:15:0
+@q^11407^1:12:0
 @q^12040^2:4:0
 @q^12203^1:7:1
 @q^12208^1:7:1
@@ -1716,7 +1736,9 @@ GoldScout-export 6^yesomsgpcz04^21
 @a^2089^224:1,243:5
 @a^2091^210:1
 @a^2240^271:1
-@a^2347^135:1,136:1,156:1,157:1
+@a^2347^135:13,136:13,156:61,157:14,158:10,177:8
+@a^2349^136:1,158:1,177:2
+@a^2356^136:1,156:2,157:2,177:2
 @a^2374^266:2,286:2
 @a^2375^266:2,286:11
 @a^2376^267:6,268:10,269:1
