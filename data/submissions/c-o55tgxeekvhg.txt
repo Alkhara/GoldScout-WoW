@@ -1,4 +1,4 @@
-GoldScout-export 6^o55tgxeekvhg^6
+GoldScout-export 6^o55tgxeekvhg^7
 1853^1^0^0^0^0^0.0000^0.0000^0^^12843:1:1,16667:1:1,19276:1:1,22433:1:1^
 1996^1^0^8^8^1438^0.3885^0.5122^1^Strigid Screecher^4775:1:1,6889:1:2,7096:1:1^
 6200^164^0^51^52^1447^0.5781^0.2131^164^Legashi Satyr^3972:1:1,3998:1:1,4425:1:1,8766:7:7,8952:4:4,10305:1:1,12662:15:15,13446:1:1,13817:1:1,13818:1:1,13821:1:1,13823:1:1,13825:1:1,14047:46:71,14256:6:14,14797:1:1,19278:1:1,235256:64:64,248697:1:1,248698:2:2^
@@ -56,8 +56,10 @@ GoldScout-export 6^o55tgxeekvhg^6
 11261^1^0^0^0^0^0.0000^0.0000^0^^12843:1:1,14615:1:1^
 11551^1^0^0^0^0^0.0000^0.0000^0^^4585:1:1^
 11622^1^0^0^0^0^0.0000^0.0000^0^^14539:1:1,18782:1:1^
-11737^3^0^57^57^1451^0.4255^0.7906^3^Stonelash Flayer^12037:1:1,15191:1:1,19933:1:1^
-11739^2^0^58^58^1451^0.4331^0.7991^2^Rock Stalker^4337:1:1,4585:1:1,12205:1:1,248698:1:1^
+11737^10^0^57^58^1451^0.4283^0.8005^10^Stonelash Flayer^12037:5:5,15191:1:1,19933:3:3,19934:4:4^
+11739^94^0^57^58^1451^0.3857^0.7785^94^Rock Stalker^1074:12:12,4337:9:9,4585:40:40,10285:16:16,12205:40:40,14227:16:36,14970:1:1,15650:1:1,19441:3:3,248698:1:1,248712:1:1^
+11745^2^0^58^59^1451^0.3756^0.8002^2^Cyclone Warrior^7081:1:1^
+11747^4^0^58^59^1451^0.3466^0.7588^4^Desert Rager^4784:3:3,7912:1:2,8150:1:1^
 @i^1074^Hard Spider Leg Tip
 @i^3945^Twill Boots
 @i^3969^Smooth Leather Belt
@@ -72,12 +74,16 @@ GoldScout-export 6^o55tgxeekvhg^6
 @i^4585^Dripping Spider Mandible
 @i^4590^Curved Yellow Bill
 @i^4775^Cracked Bill
+@i^4784^Lifeless Stone
 @i^5829^Razor-sharp Beak
 @i^6530^Nightcrawlers
 @i^6889^Small Egg
+@i^7081^Breath of Wind
 @i^7096^Plucked Feather
+@i^7912^Solid Stone
 @i^7972^Ichor of Undeath
 @i^8085^Light Plate Pants
+@i^8150^Deeprock Salt
 @i^8284^Arcane Boots
 @i^8752^Laminated Scale Circlet
 @i^8766^Morning Glory Dew
@@ -87,6 +93,7 @@ GoldScout-export 6^o55tgxeekvhg^6
 @i^10148^Mighty Cloak of the Monkey
 @i^10210^Elegant Mantle of the Channeler
 @i^10249^Master's Cloak of the Gorilla
+@i^10285^Shadow Silk
 @i^10305^Scroll of Protection IV
 @i^10391^Hyperion Vambraces of Strength
 @i^12005^Granite Ring of Power
@@ -123,6 +130,7 @@ GoldScout-export 6^o55tgxeekvhg^6
 @i^13967^Windreaver Greaves
 @i^13983^Gravestone War Axe
 @i^14047^Runecloth
+@i^14227^Ironweb Spider Silk
 @i^14256^Felcloth
 @i^14448^Highborne Bracelets
 @i^14502^Frostbite Girdle
@@ -133,6 +141,7 @@ GoldScout-export 6^o55tgxeekvhg^6
 @i^14612^Bloodmail Legguards
 @i^14615^Bloodmail Gauntlets
 @i^14797^Protector Pads
+@i^14970^Glorious Legplates of the Whale
 @i^15191^Grand Belt of the Sorcerer
 @i^15239^Felstone Reaver of the Bandit
 @i^15263^Royal Mallet of the Physician
@@ -140,6 +149,7 @@ GoldScout-export 6^o55tgxeekvhg^6
 @i^15420^Ironfeather
 @i^15633^Formidable Crest of the Physician
 @i^15641^Ironhide Belt of Spirit
+@i^15650^Merciless Surcoat of the Bandit
 @i^15728^Pattern: Wicked Leather Bracers
 @i^15768^Pattern: Wicked Leather Belt
 @i^16219^Formula: Enchant Gloves - Greater Agility
@@ -160,6 +170,7 @@ GoldScout-export 6^o55tgxeekvhg^6
 @i^19278^Two of Portals
 @i^19441^Huge Venom Sac
 @i^19933^Glowing Scorpid Blood
+@i^19934^Large Scorpid Claw
 @i^20520^Dark Rune
 @i^22408^Ritssyn's Wand of Bad Mojo
 @i^22410^Gauntlets of Deftness
@@ -189,12 +200,16 @@ GoldScout-export 6^o55tgxeekvhg^6
 @q^4585^0:15:0
 @q^4590^0:15:0
 @q^4775^0:15:0
+@q^4784^0:15:0
 @q^5829^0:15:0
 @q^6530^1:0:0
 @q^6889^1:7:1
+@q^7081^1:7:1
 @q^7096^0:15:0
+@q^7912^1:7:1
 @q^7972^1:7:1
 @q^8085^0:4:0
+@q^8150^1:7:1
 @q^8284^2:4:0
 @q^8752^0:4:0
 @q^8766^1:0:0
@@ -204,6 +219,7 @@ GoldScout-export 6^o55tgxeekvhg^6
 @q^10148^2:4:0
 @q^10210^2:4:0
 @q^10249^2:4:0
+@q^10285^1:7:1
 @q^10305^1:0:0
 @q^10391^2:4:0
 @q^12005^2:4:0
@@ -240,6 +256,7 @@ GoldScout-export 6^o55tgxeekvhg^6
 @q^13967^3:4:0
 @q^13983^3:2:0
 @q^14047^1:7:1
+@q^14227^1:7:1
 @q^14256^1:7:1
 @q^14448^2:4:0
 @q^14502^3:4:0
@@ -250,6 +267,7 @@ GoldScout-export 6^o55tgxeekvhg^6
 @q^14612^3:4:0
 @q^14615^3:4:0
 @q^14797^2:4:0
+@q^14970^2:4:0
 @q^15191^2:4:0
 @q^15239^2:2:0
 @q^15263^2:2:0
@@ -257,6 +275,7 @@ GoldScout-export 6^o55tgxeekvhg^6
 @q^15420^1:7:1
 @q^15633^2:4:0
 @q^15641^2:4:0
+@q^15650^2:4:0
 @q^15728^2:9:0
 @q^15768^2:9:0
 @q^16219^2:9:0
@@ -277,6 +296,7 @@ GoldScout-export 6^o55tgxeekvhg^6
 @q^19278^3:12:0
 @q^19441^1:7:1
 @q^19933^1:15:0
+@q^19934^0:15:0
 @q^20520^2:7:1
 @q^22408^3:2:0
 @q^22410^3:4:0
@@ -967,6 +987,8 @@ GoldScout-export 6^o55tgxeekvhg^6
 @a^6202^71:2,91:166
 @a^6378^91:2
 @a^8890^285:1
-@a^11737^308:3
-@a^11739^308:2
+@a^11737^266:1,308:4,328:2,329:2,348:1
+@a^11739^266:4,267:4,268:4,269:2,286:4,287:7,288:2,289:10,305:3,306:9,308:3,309:4,325:6,326:2,327:4,328:2,329:6,346:1,347:10,348:4,349:2,367:1
+@a^11745^306:1,328:1
+@a^11747^267:1,288:1,305:1,326:1
 @l^0^enUS

@@ -1,4 +1,4 @@
-GoldScout-export 6^akky3901rmzz^24
+GoldScout-export 6^akky3901rmzz^25
 3^12^0^24^25^1431^0.2355^0.3793^12^Flesh Eater^887:2:2,1129:1:1,1478:1:1,2592:4:5,3012:1:1,4306:1:1,5529:2:2,6530:1:1,6566:1:1^
 36^4^0^11^12^1436^0.5601^0.3515^4^Harvest Golem^732:2:2,1274:1:1,255007:1:1,255010:1:1^
 48^16^0^21^22^1431^0.7924^0.6953^16^Skeletal Warrior^1772:1:1,2378:6:6,2589:1:2,2592:5:7,2794:1:1,4306:1:1,248683:1:1^
@@ -238,6 +238,9 @@ GoldScout-export 6^akky3901rmzz^24
 4026^2^0^24^25^1442^0.3407^0.6127^2^Bloodfury Windcaller^1205:1:1,3378:1:1,5116:1:1^
 4027^3^0^26^27^1442^0.3700^0.6851^3^Bloodfury Storm Witch^5635:1:1,17056:1:1^
 4028^1^0^25^26^1442^0.3407^0.6142^1^Charred Ancient^^
+4139^2^0^33^34^1441^0.8725^0.7407^2^Scorpid Terror^1288:1:1,5794:1:1,19937:2:2^
+4143^6^0^34^35^1441^0.8753^0.7506^6^Sparkleshell Snapper^3712:2:2,4555:1:1,4556:4:4,5795:1:1^
+4151^3^0^32^33^1441^0.8599^0.7318^3^Saltstone Crystalhide^^
 4263^2^0^14^14^1442^0.5394^0.4287^2^Deepmoss Hatchling^^
 4382^1^0^36^36^1445^0.5535^0.2621^1^Withervine Creeper^^
 4416^5^0^0^0^0^0.0000^0.0000^0^^414:1:1,2592:1:1^
@@ -511,6 +514,7 @@ GoldScout-export 6^akky3901rmzz^24
 @i^3676^Slimy Ichor
 @i^3685^Raptor Egg
 @i^3703^Southshore Stout
+@i^3712^Turtle Meat
 @i^3716^Murloc Head
 @i^3720^Yeti Fur
 @i^3730^Big Bear Meat
@@ -535,6 +539,8 @@ GoldScout-export 6^akky3901rmzz^24
 @i^4482^Sealed Folder
 @i^4542^Moist Cornbread
 @i^4553^Jagged Piece of Stone
+@i^4555^Thick Scaly Tail
+@i^4556^Speckled Shell Fragment
 @i^4569^Staunch Hammer of Magic
 @i^4570^Birchwood Maul of the Tiger
 @i^4606^Spongy Morel
@@ -592,6 +598,8 @@ GoldScout-export 6^akky3901rmzz^24
 @i^5784^Slimy Murloc Scale
 @i^5785^Thick Murloc Scale
 @i^5788^Pattern: Thick Murloc Armor
+@i^5794^Salty Scorpid Venom
+@i^5795^Hardened Tortoise Shell
 @i^5808^Pridewing Venom Sac
 @i^6289^Raw Longjaw Mud Snapper
 @i^6291^Raw Brilliant Smallfish
@@ -690,6 +698,7 @@ GoldScout-export 6^akky3901rmzz^24
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
+@i^19937^Small Scorpid Claw
 @i^21113^Watertight Trunk
 @i^211780^Scroll: KWYJIBO
 @i^211785^Scroll: CWAL
@@ -944,6 +953,7 @@ GoldScout-export 6^akky3901rmzz^24
 @q^3676^0:15:0
 @q^3685^1:7:1
 @q^3703^1:0:0
+@q^3712^1:7:1
 @q^3716^1:12:0
 @q^3720^1:12:0
 @q^3730^1:7:1
@@ -968,6 +978,8 @@ GoldScout-export 6^akky3901rmzz^24
 @q^4482^1:12:0
 @q^4542^1:0:0
 @q^4553^0:15:0
+@q^4555^0:15:0
+@q^4556^0:15:0
 @q^4569^2:2:0
 @q^4570^2:2:0
 @q^4606^1:0:0
@@ -1025,6 +1037,8 @@ GoldScout-export 6^akky3901rmzz^24
 @q^5784^1:7:1
 @q^5785^1:7:1
 @q^5788^2:9:0
+@q^5794^1:12:0
+@q^5795^1:12:0
 @q^5808^1:12:0
 @q^6289^1:7:1
 @q^6291^1:7:1
@@ -1123,6 +1137,7 @@ GoldScout-export 6^akky3901rmzz^24
 @q^17056^1:15:1
 @q^17057^1:15:0
 @q^17058^1:15:0
+@q^19937^0:15:0
 @q^21113^1:15:0
 @q^211780^1:0:0
 @q^211785^1:0:0
@@ -1208,6 +1223,7 @@ GoldScout-export 6^akky3901rmzz^24
 @m^1437^Wetlands
 @m^1439^Darkshore
 @m^1440^Ashenvale
+@m^1441^Thousand Needles
 @m^1442^Stonetalon Mountains
 @m^1445^Dustwallow Marsh
 @m^1453^Stormwind City
@@ -2206,6 +2222,9 @@ GoldScout-export 6^akky3901rmzz^24
 @a^4026^246:2
 @a^4027^267:3
 @a^4028^246:1
+@a^4139^297:1,317:1
+@a^4143^297:3,317:3
+@a^4151^296:1,297:2
 @a^4263^170:2
 @a^4382^111:1
 @a^4619^175:3

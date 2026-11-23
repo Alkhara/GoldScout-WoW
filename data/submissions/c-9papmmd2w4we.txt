@@ -1,4 +1,4 @@
-GoldScout-export 5^9papmmd2w4we^30
+GoldScout-export 5^9papmmd2w4we^31
 36^2^0^11^12^1436^0.4978^0.3365^2^Harvest Golem^814:1:1,255007:1:1,255010:1:1^
 38^20^0^3^4^1429^0.5436^0.4943^20^Defias Thug^159:1:1,752:12:12,1366:1:1,1377:1:1,1378:1:1,2070:1:1,2589:6:6,2652:1:1^
 40^11^0^6^7^1429^0.4958^0.6633^11^Kobold Miner^774:1:1,1389:1:1,2589:4:6,2835:1:3,4536:1:1,8182:1:1^
@@ -37,7 +37,11 @@ GoldScout-export 5^9papmmd2w4we^30
 525^5^0^5^6^1429^0.3974^0.6841^5^Mangy Wolf^2672:5:5,3300:2:2^
 589^1^0^14^15^1436^0.3717^0.5801^1^Defias Pillager^2589:1:2^
 590^1^0^13^14^1436^0.3487^0.5178^1^Defias Looter^^
-705^2^0^1^1^1426^0.3012^0.7367^2^Ragged Young Wolf^7073:1:1,7074:2:2^
+705^14^0^1^1^1426^0.2914^0.7397^14^Ragged Young Wolf^750:8:8,2210:1:1,2653:1:1,4865:4:4,7073:8:8,7074:5:5^
+706^15^0^3^4^1426^0.2287^0.7939^15^Frostmane Troll Whelp^159:1:1,1364:1:1,1368:1:1,1370:1:1,1376:1:1,1377:1:1,2211:2:2,2589:8:8,2654:1:1^
+707^2^0^1^2^1426^0.2630^0.7707^2^Rockjaw Trogg^117:1:1,2654:1:1^
+708^2^0^3^3^1426^0.2374^0.7845^2^Small Crag Boar^2211:1:1,4865:2:2,7098:1:1^
+724^1^0^2^2^1426^0.2414^0.7727^1^Burly Rockjaw Trogg^^
 735^3^0^6^7^1429^0.5439^0.6563^3^Murloc Streamrunner^1256:1:1,2138:1:1^
 822^6^0^8^9^1429^0.6205^0.6789^6^Young Forest Bear^4865:2:2,7073:4:4^
 833^1^0^11^12^1436^0.5560^0.2998^1^Coyote Packleader^3300:1:1^
@@ -64,6 +68,7 @@ GoldScout-export 5^9papmmd2w4we^30
 1271^1^0^11^11^1426^0.3850^0.5408^1^Old Icebeard^2671:1:1^
 1397^10^0^8^9^1426^0.4187^0.3508^10^Frostmane Seer^117:1:1,768:1:1,2589:3:4,2676:4:4^
 1421^1^0^31^31^1434^0.4062^0.0317^1^Private Merle^^
+1718^1^0^3^4^1426^0.3410^0.6901^1^Rockjaw Raider^^
 1922^2^0^7^8^1429^0.6593^0.6328^2^Gray Forest Wolf^2672:1:1,3300:1:1^
 1988^1^0^2^2^1438^0.6129^0.4556^1^Grell^159:1:1^
 1995^7^0^5^6^1438^0.5388^0.5836^7^Strigid Owl^3411:3:3,4757:3:3,4775:1:1,6889:2:2,7096:3:3^
@@ -161,6 +166,7 @@ GoldScout-export 5^9papmmd2w4we^30
 @i^729^Stringy Vulture Meat
 @i^731^Goretusk Snout
 @i^732^Okra
+@i^750^Tough Wolf Meat
 @i^752^Red Burlap Bandana
 @i^767^Long Bo Staff
 @i^768^Lumberjack Axe
@@ -185,7 +191,11 @@ GoldScout-export 5^9papmmd2w4we^30
 @i^1256^Crystal Kelp Frond
 @i^1274^Hops
 @i^1307^Gold Pickup Schedule
+@i^1364^Ragged Leather Vest
 @i^1366^Ragged Leather Pants
+@i^1368^Ragged Leather Gloves
+@i^1370^Ragged Leather Bracers
+@i^1376^Frayed Cloak
 @i^1377^Frayed Gloves
 @i^1378^Frayed Pants
 @i^1380^Frayed Robe
@@ -226,6 +236,7 @@ GoldScout-export 5^9papmmd2w4we^30
 @i^2057^Pitted Defias Shortsword
 @i^2070^Darnassian Bleu
 @i^2138^Sharpened Letter Opener
+@i^2210^Battered Buckler
 @i^2211^Bent Large Shield
 @i^2213^Worn Large Shield
 @i^2217^Rectangular Shield
@@ -241,6 +252,8 @@ GoldScout-export 5^9papmmd2w4we^30
 @i^2646^Loose Chain Pants
 @i^2648^Loose Chain Vest
 @i^2652^Flimsy Chain Cloak
+@i^2653^Flimsy Chain Gloves
+@i^2654^Flimsy Chain Pants
 @i^2671^Wendigo Mane
 @i^2672^Stringy Wolf Meat
 @i^2673^Coyote Meat
@@ -332,6 +345,7 @@ GoldScout-export 5^9papmmd2w4we^30
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
 @i^7096^Plucked Feather
+@i^7098^Splintered Tusk
 @i^7498^Top of Gelkak's Key
 @i^7500^Bottom of Gelkak's Key
 @i^7997^Red Defias Mask
@@ -374,6 +388,7 @@ GoldScout-export 5^9papmmd2w4we^30
 @q^729^1:7:1
 @q^731^1:7:1
 @q^732^1:12:0
+@q^750^1:12:0
 @q^752^1:12:0
 @q^767^1:2:0
 @q^768^1:2:0
@@ -398,7 +413,11 @@ GoldScout-export 5^9papmmd2w4we^30
 @q^1256^1:12:0
 @q^1274^1:12:0
 @q^1307^1:12:0
+@q^1364^0:4:0
 @q^1366^0:4:0
+@q^1368^0:4:0
+@q^1370^0:4:0
+@q^1376^0:4:0
 @q^1377^0:4:0
 @q^1378^0:4:0
 @q^1380^0:4:0
@@ -439,6 +458,7 @@ GoldScout-export 5^9papmmd2w4we^30
 @q^2057^1:2:0
 @q^2070^1:0:0
 @q^2138^0:2:0
+@q^2210^0:4:0
 @q^2211^0:4:0
 @q^2213^0:4:0
 @q^2217^0:4:0
@@ -454,6 +474,8 @@ GoldScout-export 5^9papmmd2w4we^30
 @q^2646^0:4:0
 @q^2648^0:4:0
 @q^2652^0:4:0
+@q^2653^0:4:0
+@q^2654^0:4:0
 @q^2671^1:12:0
 @q^2672^1:7:1
 @q^2673^1:7:1
@@ -545,6 +567,7 @@ GoldScout-export 5^9papmmd2w4we^30
 @q^7073^0:15:0
 @q^7074^0:15:0
 @q^7096^0:15:0
+@q^7098^0:15:0
 @q^7498^1:12:0
 @q^7500^1:12:0
 @q^7997^0:4:0
@@ -1913,7 +1936,11 @@ GoldScout-export 5^9papmmd2w4we^30
 @a^525^246:1,265:1,269:1,270:1,287:1
 @a^589^227:1
 @a^590^206:1
-@a^705^285:1,286:1
+@a^705^285:12,286:2
+@a^706^304:15
+@a^707^304:1,305:1
+@a^708^304:2
+@a^724^304:1
 @a^735^250:1,251:1,270:1
 @a^822^253:1,254:1,272:1,273:1,274:1,325:1
 @a^833^111:1
@@ -1940,6 +1967,7 @@ GoldScout-export 5^9papmmd2w4we^30
 @a^1271^207:1
 @a^1397^128:4,148:6
 @a^1421^8:1
+@a^1718^266:1
 @a^1922^252:1,274:1
 @a^1988^192:1
 @a^1995^189:1,212:1,230:1,250:4
