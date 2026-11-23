@@ -1,4 +1,4 @@
-GoldScout-export 6^122tp8b39ewe^28
+GoldScout-export 6^122tp8b39ewe^29
 6^26^0^1^2^1429^0.4944^0.3650^26^Kobold Vermin^159:3:3,755:4:4,1369:2:2,1378:2:2,2210:1:1,2589:4:4,2649:1:1,3363:1:1,4536:1:1,247834:2:2,247839:8:8^
 30^2^0^5^6^1429^0.3865^0.7738^2^Forest Spider^1476:1:1,5465:1:1^
 38^36^0^3^4^1429^0.5414^0.4653^36^Defias Thug^159:1:1,752:5:5,1364:2:2,1367:1:1,1368:1:1,1369:1:1,1374:1:1,2070:4:4,2589:6:6,3365:1:1^
@@ -23,6 +23,12 @@ GoldScout-export 6^122tp8b39ewe^28
 735^13^0^6^7^1429^0.5612^0.6499^13^Murloc Streamrunner^118:1:1,159:2:2,779:1:1,1256:3:3,1414:1:1,1417:1:1,3013:1:1,6303:1:1^
 822^2^0^9^9^1429^0.5021^0.8116^2^Young Forest Bear^3169:1:1,4865:1:1^
 1922^1^0^7^8^1429^0.6125^0.6504^1^Gray Forest Wolf^2672:1:1,3300:1:1^
+1984^4^0^1^2^1438^0.5864^0.4511^4^Young Thistle Boar^2210:1:1,4865:1:1,7098:1:1^
+1985^7^0^2^3^1438^0.5749^0.3675^7^Thistle Boar^1369:1:1,1377:1:1,4865:1:1,7098:4:4^
+1986^25^0^3^4^1438^0.5670^0.2964^25^Webwood Spider^1372:1:1,1380:1:1,1476:10:10,2651:1:1,5166:9:9,5571:1:1,5572:1:1,7100:8:8,7101:6:6,10640:1:1^
+1988^9^0^2^3^1438^0.5622^0.4527^9^Grell^159:2:2,1364:1:1,2589:3:3,3297:6:6^
+1989^3^0^3^4^1438^0.5682^0.3551^3^Grellkin^1380:1:1,10639:2:2^
+1995^1^0^6^6^1438^0.6296^0.5262^1^Strigid Owl^6889:1:1^
 1998^3^0^5^6^1438^0.5850^0.5978^3^Webwood Lurker^1476:2:2,5465:2:3^
 1999^6^0^7^8^1438^0.4392^0.6188^6^Webwood Venomfang^1476:2:2,5465:2:4^
 2002^7^0^5^6^1438^0.5344^0.5022^7^Rascal Sprite^159:1:1,1414:1:1,2213:1:1,2589:3:6,3370:1:1^
@@ -39,6 +45,8 @@ GoldScout-export 6^122tp8b39ewe^28
 2022^1^0^5^6^1438^0.5752^0.7078^1^Timberling^118:1:1^
 2025^1^0^7^8^1438^0.5320^0.6863^1^Timberling Bark Ripper^^
 2027^1^0^9^9^1438^0.5321^0.7478^1^Timberling Trampler^2449:1:1^
+2031^6^0^1^1^1438^0.5931^0.4513^6^Young Nightsaber^7073:1:1,7074:1:1^
+2032^7^0^2^2^1438^0.6166^0.3559^7^Mangy Nightsaber^1376:1:1,4865:1:1,7073:1:1,7074:2:2^
 2038^1^0^8^8^1438^0.5150^0.4973^1^Lord Melenas^5221:1:1^
 2039^1^0^12^12^1438^0.3964^0.8027^1^Ursal the Mauler^^
 2042^13^0^5^6^1438^0.5276^0.6144^13^Nightsaber^4813:3:3,4814:3:3,280087:5:5^
@@ -168,9 +176,12 @@ GoldScout-export 6^122tp8b39ewe^28
 @i^1367^Ragged Leather Boots
 @i^1368^Ragged Leather Gloves
 @i^1369^Ragged Leather Belt
+@i^1372^Ragged Cloak
 @i^1374^Frayed Shoes
 @i^1376^Frayed Cloak
+@i^1377^Frayed Gloves
 @i^1378^Frayed Pants
+@i^1380^Frayed Robe
 @i^1399^Magic Candle
 @i^1411^Withered Staff
 @i^1413^Feeble Sword
@@ -197,6 +208,7 @@ GoldScout-export 6^122tp8b39ewe^28
 @i^2648^Loose Chain Vest
 @i^2649^Flimsy Chain Belt
 @i^2650^Flimsy Chain Boots
+@i^2651^Flimsy Chain Bracers
 @i^2654^Flimsy Chain Pants
 @i^2672^Stringy Wolf Meat
 @i^2770^Copper Ore
@@ -210,6 +222,7 @@ GoldScout-export 6^122tp8b39ewe^28
 @i^3174^Spider Ichor
 @i^3190^Beatstick
 @i^3291^Ancestral Woollies
+@i^3297^Fel Moss
 @i^3300^Rabbit's Foot
 @i^3363^Frayed Belt
 @i^3365^Frayed Bracers
@@ -251,6 +264,7 @@ GoldScout-export 6^122tp8b39ewe^28
 @i^5120^Long Tail Hair
 @i^5128^Shed Lizard Skin
 @i^5133^Seeping Gizzard
+@i^5166^Webwood Venom Sac
 @i^5220^Gnarlpine Fang
 @i^5221^Melenas' Head
 @i^5465^Small Spider Leg
@@ -258,6 +272,7 @@ GoldScout-export 6^122tp8b39ewe^28
 @i^5566^Broken Antler
 @i^5569^Seaweed
 @i^5571^Small Black Pouch
+@i^5572^Small Green Pouch
 @i^5829^Razor-sharp Beak
 @i^6148^Web-covered Boots
 @i^6212^Head of Jammal'an
@@ -268,8 +283,12 @@ GoldScout-export 6^122tp8b39ewe^28
 @i^6303^Raw Slitherskin Mackerel
 @i^6444^Forked Tongue
 @i^6826^Brilliant Scale
+@i^6889^Small Egg
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
+@i^7098^Splintered Tusk
+@i^7100^Sticky Ichor
+@i^7101^Bug Eye
 @i^7973^Big-mouth Clam
 @i^8129^Myrmidon's Girdle
 @i^8146^Wicked Claw
@@ -287,6 +306,8 @@ GoldScout-export 6^122tp8b39ewe^28
 @i^10450^Undamaged Hippogryph Feather
 @i^10454^Essence of Eranikus
 @i^10460^Hakkari Blood
+@i^10639^Hyacinth Mushroom
+@i^10640^Webwood Ichor
 @i^10663^Essence of Hakkar
 @i^10783^Atal'ai Spaulders of Intellect
 @i^10795^Drakeclaw Band of the Champion
@@ -378,9 +399,12 @@ GoldScout-export 6^122tp8b39ewe^28
 @q^1367^0:4:0
 @q^1368^0:4:0
 @q^1369^0:4:0
+@q^1372^0:4:0
 @q^1374^0:4:0
 @q^1376^0:4:0
+@q^1377^0:4:0
 @q^1378^0:4:0
+@q^1380^0:4:0
 @q^1399^1:0:0
 @q^1411^0:2:0
 @q^1413^0:2:0
@@ -407,6 +431,7 @@ GoldScout-export 6^122tp8b39ewe^28
 @q^2648^0:4:0
 @q^2649^0:4:0
 @q^2650^0:4:0
+@q^2651^0:4:0
 @q^2654^0:4:0
 @q^2672^1:7:1
 @q^2770^1:7:1
@@ -420,6 +445,7 @@ GoldScout-export 6^122tp8b39ewe^28
 @q^3174^1:7:1
 @q^3190^1:2:0
 @q^3291^2:4:0
+@q^3297^1:12:0
 @q^3300^0:15:0
 @q^3363^0:4:0
 @q^3365^0:4:0
@@ -461,6 +487,7 @@ GoldScout-export 6^122tp8b39ewe^28
 @q^5120^0:15:0
 @q^5128^0:15:0
 @q^5133^0:15:0
+@q^5166^1:12:0
 @q^5220^1:12:0
 @q^5221^1:12:0
 @q^5465^1:7:1
@@ -468,6 +495,7 @@ GoldScout-export 6^122tp8b39ewe^28
 @q^5566^0:15:0
 @q^5569^0:15:0
 @q^5571^1:1:0
+@q^5572^1:1:0
 @q^5829^0:15:0
 @q^6148^1:4:0
 @q^6212^1:12:0
@@ -478,8 +506,12 @@ GoldScout-export 6^122tp8b39ewe^28
 @q^6303^1:7:1
 @q^6444^0:15:0
 @q^6826^0:15:0
+@q^6889^1:7:1
 @q^7073^0:15:0
 @q^7074^0:15:0
+@q^7098^0:15:0
+@q^7100^0:15:0
+@q^7101^0:15:0
 @q^7973^1:7:0
 @q^8129^2:4:0
 @q^8146^1:7:1
@@ -497,6 +529,8 @@ GoldScout-export 6^122tp8b39ewe^28
 @q^10450^1:12:0
 @q^10454^2:12:0
 @q^10460^1:13:0
+@q^10639^1:12:0
+@q^10640^1:12:0
 @q^10663^1:0:0
 @q^10783^3:4:0
 @q^10795^3:4:0
@@ -1644,6 +1678,12 @@ GoldScout-export 6^122tp8b39ewe^28
 @a^735^250:5,251:3,271:5
 @a^822^292:1,347:1
 @a^1922^272:1
+@a^1984^171:2,191:2
+@a^1985^151:7
+@a^1986^111:19,131:6
+@a^1988^171:2,191:7
+@a^1989^131:2,151:1
+@a^1995^212:1
 @a^1998^232:1,250:1,252:1
 @a^1999^208:4,309:2
 @a^2002^190:3,210:4
@@ -1660,6 +1700,8 @@ GoldScout-export 6^122tp8b39ewe^28
 @a^2022^291:1
 @a^2025^270:1
 @a^2027^290:1
+@a^2031^171:2,191:1,192:3
+@a^2032^132:3,152:4
 @a^2038^190:1
 @a^2039^327:1
 @a^2042^230:3,250:9,251:1

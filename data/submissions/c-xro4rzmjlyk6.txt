@@ -1,4 +1,4 @@
-GoldScout-export 6^xro4rzmjlyk6^15
+GoldScout-export 6^xro4rzmjlyk6^16
 2642^1^0^47^48^1425^0.6501^0.7114^1^Vilebranch Shadowcaster^1520:1:1,9259:1:1^
 2644^3^0^48^49^1425^0.6468^0.7426^3^Vilebranch Hideskinner^1520:1:1,4638:1:1,8152:1:1,9259:1:1^
 2648^1^0^50^50^1425^0.5975^0.7775^1^Vilebranch Aman'zasi Guard^6149:1:1^
@@ -35,6 +35,7 @@ GoldScout-export 6^xro4rzmjlyk6^15
 3207^10^0^8^9^1411^0.6770^0.8525^10^Hexed Troll^2589:4:5,15297:1:1,275724:2:2^
 3281^1^0^4^4^1411^0.4061^0.6646^1^Sarkoth^4905:1:1,7100:1:1^
 4196^4^0^50^50^1446^0.3634^0.4062^4^Silithid Swarm^^
+4374^1^0^47^50^1445^0.7162^0.1692^1^Strashaz Hydra^5569:1:1,7973:1:1^
 4465^1^0^45^46^1425^0.6749^0.6760^1^Vilebranch Warrior^9259:1:1^
 4846^1^0^35^35^1418^0.4094^0.1189^1^Shadowforge Digger^^
 4847^1^0^0^0^0^0.0000^0.0000^0^^4338:1:2^
@@ -139,6 +140,8 @@ GoldScout-export 6^xro4rzmjlyk6^15
 13596^1^0^0^0^0^0.0000^0.0000^0^^17728:1:1^
 13696^3^0^0^0^0^0.0000^0.0000^0^^14259:1:1,17684:2:2^
 254560^17^0^39^40^2548^0.4694^0.4782^17^Twilight Shadowmancer^3671:2:2,4306:4:12,4338:1:1,5429:1:1,265745:3:3,267073:4:8^
+254572^7^0^41^42^2652^0.6736^0.6209^7^Malevolent Marigold^^
+255669^1^0^42^42^1414^0.5278^0.7131^1^Virulent Blood of Agamaggan^3676:1:1,3782:1:1,260237:1:1^
 255769^16^0^37^38^2548^0.2520^0.6550^16^Redridge Brute^3402:1:1,4306:5:12,4338:1:1,20763:1:1,248710:1:1,265358:11:11^
 255770^10^0^36^37^2548^0.2079^0.6949^10^Redridge Mystic^4306:3:5,9355:1:1,20763:1:1,213547:1:1,265358:8:8^
 255772^9^0^36^37^2548^0.2580^0.6474^9^Redridge Trapper^3810:1:1,4306:4:9,20763:1:1,265358:7:7^
@@ -287,6 +290,7 @@ GoldScout-export 6^xro4rzmjlyk6^15
 @i^3778^Taut Compound Bow
 @i^3779^Hefty War Axe
 @i^3781^Broad Claymore
+@i^3782^Large War Club
 @i^3784^Metal Stave
 @i^3785^Keen Axe
 @i^3793^Interlaced Boots
@@ -523,6 +527,7 @@ GoldScout-export 6^xro4rzmjlyk6^15
 @i^251397^Plans: Shining Mithril Gauntlet
 @i^252921^Pattern: Mender's Mail Gauntlets
 @i^254044^Pattern: Black Cord
+@i^260237^Virulent Blood of Agamaggan
 @i^262889^Sealed Expert's Writ
 @i^263972^Woodworker's Axe
 @i^265357^Snargl's Snout
@@ -643,6 +648,7 @@ GoldScout-export 6^xro4rzmjlyk6^15
 @q^3778^0:2:0
 @q^3779^0:2:0
 @q^3781^0:2:0
+@q^3782^0:2:0
 @q^3784^0:2:0
 @q^3785^0:2:0
 @q^3793^0:4:0
@@ -879,6 +885,7 @@ GoldScout-export 6^xro4rzmjlyk6^15
 @q^251397^2:9:0
 @q^252921^3:9:0
 @q^254044^3:9:0
+@q^260237^1:12:0
 @q^262889^3:0:0
 @q^263972^1:12:0
 @q^265357^1:12:0
@@ -939,8 +946,10 @@ GoldScout-export 6^xro4rzmjlyk6^15
 @m^1418^Badlands
 @m^1425^The Hinterlands
 @m^1444^Feralas
+@m^1445^Dustwallow Marsh
 @m^1446^Tanaris
 @m^2548^Riverglades
+@m^2652^Shen'dralas
 @c^118^
 @c^724^
 @c^733^
@@ -2283,6 +2292,7 @@ GoldScout-export 6^xro4rzmjlyk6^15
 @a^3207^333:4,353:6
 @a^3281^268:1
 @a^4196^167:4
+@a^4374^74:1
 @a^4465^273:1
 @a^4846^48:1
 @a^5307^211:1
@@ -2308,6 +2318,8 @@ GoldScout-export 6^xro4rzmjlyk6^15
 @a^11782^227:1
 @a^11785^227:3
 @a^254560^169:2,188:1,189:12,209:2
+@a^254572^253:7
+@a^255669^290:1
 @a^255769^225:6,265:4,283:5,284:1
 @a^255770^246:1,263:1,264:2,283:2,284:4
 @a^255772^225:3,246:2,265:1,283:2,284:1

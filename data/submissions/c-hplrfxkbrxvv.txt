@@ -1,4 +1,4 @@
-GoldScout-export 6^hplrfxkbrxvv^26
+GoldScout-export 6^hplrfxkbrxvv^27
 588^3^0^34^35^1434^0.2655^0.1153^3^Eclaireur Bloodscalp^1708:1:1,2592:1:2,4338:1:1^
 595^2^0^34^35^1434^0.2338^0.1240^2^Chasseur Bloodscalp^^
 660^2^0^37^37^1434^0.2468^0.0945^2^Sorcier-docteur Bloodscalp^2730:1:1,4306:1:2^
@@ -32,9 +32,9 @@ GoldScout-export 6^hplrfxkbrxvv^26
 977^1^0^33^33^1434^0.4590^0.1007^1^Panthère de guerre de Kurzen^1686:1:1^
 978^3^0^38^38^1434^0.4936^0.0623^3^Lieutenant de Kurzen^1710:1:1,3779:1:1,4306:1:1^
 979^3^0^38^38^1434^0.4939^0.0637^3^Chasseur des ombres de Kurzen^4306:1:1^
-1082^6^0^38^39^1435^0.7133^0.1728^6^Crocilisque Dents-de-scie^770:6:6,3667:1:1,12037:2:2^
+1082^10^0^38^39^1435^0.7108^0.1722^10^Crocilisque Dents-de-scie^770:10:10,1207:1:1,3667:3:3,12037:3:3^
 1085^1^0^35^35^1434^0.3330^0.1884^1^Ancien tigre de Strangleronce^1686:1:1^
-1087^24^0^41^42^1435^0.8049^0.2519^24^Mordeur Dents-de-scie^770:16:24,3667:9:9,7909:1:1^
+1087^64^0^41^42^1435^0.8051^0.2573^64^Mordeur Dents-de-scie^770:45:68,3667:31:31,4060:1:1,7909:1:1,213545:1:1^
 1114^6^0^37^38^1434^0.4636^0.3479^6^Foudroyeur de la Jungle^2799:2:2,4096:2:2,4097:1:1,5637:1:1,248710:1:1^
 1125^7^0^5^6^1426^0.4903^0.5164^7^Sanglier des rochers^769:2:2,771:1:1,2886:4:4^
 1126^1^0^7^7^1426^0.5139^0.5056^1^Grand sanglier des rochers^2886:1:1^
@@ -176,7 +176,7 @@ GoldScout-export 6^hplrfxkbrxvv^26
 @i^936^Masse de minuit
 @i^1074^Patte d'araignée
 @i^1081^Chair croustillante d'araignée
-@i^1207^Murphstar de héraut
+@i^1207^Murphstar de prophétie
 @i^1377^Gants râpés
 @i^1415^Marteau de charpentier
 @i^1430^Gants en patchwork
@@ -242,6 +242,7 @@ GoldScout-export 6^hplrfxkbrxvv^26
 @i^3864^Citrine
 @i^3928^Potion de soins excellente
 @i^4058^Cuirasse glyphée
+@i^4060^Jambières glyphés
 @i^4093^Grande queue de basilic
 @i^4096^Poil de gorille grossier
 @i^4097^Croc de gorille ébréché
@@ -473,6 +474,7 @@ GoldScout-export 6^hplrfxkbrxvv^26
 @q^3864^2:7:1
 @q^3928^1:0:0
 @q^4058^2:4:0
+@q^4060^2:4:0
 @q^4093^0:15:0
 @q^4096^1:15:0
 @q^4097^0:15:0
@@ -1459,9 +1461,9 @@ GoldScout-export 6^hplrfxkbrxvv^26
 @a^977^49:1
 @a^978^29:3
 @a^979^29:3
-@a^1082^73:1,74:5
+@a^1082^54:1,73:3,74:5,94:1
 @a^1085^66:1
-@a^1087^55:5,75:3,76:1,95:2,96:2,116:1,136:6,156:2,157:2
+@a^1087^55:9,75:6,76:2,95:6,96:6,115:2,116:10,135:1,136:14,156:5,157:3
 @a^1114^108:1,149:5
 @a^1125^189:1,209:1,210:4,228:1
 @a^1126^210:1

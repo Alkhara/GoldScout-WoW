@@ -1,4 +1,4 @@
-GoldScout-export 6^ngrkzmldgqnr^23
+GoldScout-export 6^ngrkzmldgqnr^24
 760^6^0^36^37^1435^0.5891^0.2670^6^Lost One Muckdweller^4306:2:2,4338:1:1,274045:5:5^
 2240^1^0^32^32^1416^0.4774^0.8136^1^Syndicate Footpad^4306:1:2^
 2241^1^0^33^34^1416^0.4805^0.8248^1^Syndicate Thief^3601:1:1^
@@ -43,6 +43,7 @@ GoldScout-export 6^ngrkzmldgqnr^23
 2623^4^0^32^33^1416^0.2079^0.9035^3^Spirit of Old^^
 2893^4^0^39^40^1418^0.4862^0.7212^4^Stonevault Bonesnapper^3771:1:1,3794:1:1,4338:1:1,211269:1:1,274044:4:4^
 2894^2^0^40^41^1418^0.4866^0.7094^2^Stonevault Shaman^274044:1:1^
+3098^10^0^1^2^1411^0.4383^0.7161^10^Mottled Boar^117:3:3,4865:2:2,5571:1:1,7098:7:7^
 3382^1^0^14^14^1413^0.6435^0.4729^1^Southsea Cannoneer^2589:1:2^
 3476^1^0^27^27^1413^0.6344^0.5361^1^Isha Awak^5104:1:1,5516:1:1^
 3560^1^0^34^34^1417^0.3102^0.4364^1^Healing Ward^^
@@ -177,6 +178,7 @@ GoldScout-export 6^ngrkzmldgqnr^23
 216474^1^0^40^40^1441^0.3678^0.3932^1^Ravaging Tempest^212792:1:1^
 256798^2^0^37^38^2548^0.5061^0.5334^2^Twilight Neophyte^12030:1:1^
 256952^1^0^39^40^2548^0.4835^0.4977^1^Twilight Raider^4338:1:1^
+@i^117^Tough Jerky
 @i^422^Dwarven Mild
 @i^729^Stringy Vulture Meat
 @i^878^Fist-sized Spinneret
@@ -263,6 +265,7 @@ GoldScout-export 6^ngrkzmldgqnr^23
 @i^4556^Speckled Shell Fragment
 @i^4633^Heavy Bronze Lockbox
 @i^4784^Lifeless Stone
+@i^4865^Ruined Pelt
 @i^5104^Heart of Isha Awak
 @i^5114^Severed Talon
 @i^5115^Broken Wishbone
@@ -276,6 +279,7 @@ GoldScout-export 6^ngrkzmldgqnr^23
 @i^5451^Crushed Elemental Bracer
 @i^5481^Satyr Horns
 @i^5516^Threshadon Fang
+@i^5571^Small Black Pouch
 @i^5635^Sharp Claw
 @i^5636^Delicate Feather
 @i^5686^Ordanus' Head
@@ -318,6 +322,7 @@ GoldScout-export 6^ngrkzmldgqnr^23
 @i^6692^Pronged Reaver
 @i^6826^Brilliant Scale
 @i^7070^Elemental Water
+@i^7098^Splintered Tusk
 @i^7812^Corrupt Manifestation's Bracers
 @i^8183^Precision Bow
 @i^8184^Firestarter
@@ -396,6 +401,7 @@ GoldScout-export 6^ngrkzmldgqnr^23
 @i^274152^Roogug's Severed Head
 @i^274159^Thorncursed Grips
 @i^274463^Tattered Note
+@q^117^1:0:0
 @q^422^1:0:0
 @q^729^1:7:1
 @q^878^0:7:0
@@ -482,6 +488,7 @@ GoldScout-export 6^ngrkzmldgqnr^23
 @q^4556^0:15:0
 @q^4633^2:15:0
 @q^4784^0:15:0
+@q^4865^0:15:0
 @q^5104^1:12:0
 @q^5114^0:15:0
 @q^5115^0:15:0
@@ -495,6 +502,7 @@ GoldScout-export 6^ngrkzmldgqnr^23
 @q^5451^0:15:0
 @q^5481^1:12:0
 @q^5516^0:2:0
+@q^5571^1:1:0
 @q^5635^1:7:1
 @q^5636^0:15:0
 @q^5686^1:12:0
@@ -537,6 +545,7 @@ GoldScout-export 6^ngrkzmldgqnr^23
 @q^6692^3:2:0
 @q^6826^0:15:0
 @q^7070^1:7:1
+@q^7098^0:15:0
 @q^7812^1:12:0
 @q^8183^2:2:0
 @q^8184^2:2:0
@@ -615,6 +624,7 @@ GoldScout-export 6^ngrkzmldgqnr^23
 @q^274152^3:4:0
 @q^274159^3:4:0
 @q^274463^1:12:0
+@m^1411^Durotar
 @m^1413^The Barrens
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
@@ -1767,6 +1777,7 @@ GoldScout-export 6^ngrkzmldgqnr^23
 @a^2623^344:1,364:2
 @a^2893^289:4
 @a^2894^289:2
+@a^3098^288:10
 @a^3382^192:1
 @a^3476^212:1
 @a^3560^166:1

@@ -1,10 +1,12 @@
-GoldScout-export 6^vslu2bs4p9h1^7
+GoldScout-export 6^vslu2bs4p9h1^8
+48^14^0^21^22^1431^0.7949^0.7181^14^Skeletal Warrior^2378:5:5,2589:2:2,2592:3:4,4306:1:1,4606:1:1,6570:1:1^
 95^3^0^11^11^1436^0.4664^0.2766^3^Defias Smuggler^2589:2:6^
 98^1^0^18^18^1436^0.5567^0.7028^1^Riverpaw Taskmaster^2592:1:2^
 121^5^0^15^16^1436^0.3893^0.7105^5^Defias Pathstalker^2073:1:1,2589:3:7,2764:1:1^
 122^16^0^17^18^1436^0.4254^0.8009^16^Defias Highwayman^1738:1:1,2592:6:8,2781:1:1,6560:1:1,248702:1:1^
 123^7^0^13^14^1436^0.3753^0.3278^7^Riverpaw Mongrel^858:1:1,2214:1:1,2589:5:9,3374:1:1,6267:1:1^
 124^8^0^15^16^1436^0.3814^0.6500^8^Riverpaw Brute^1179:2:2,1498:1:1,1510:1:1,2589:4:6^
+203^11^0^22^23^1431^0.7933^0.7165^11^Skeletal Mage^1205:1:1,2378:1:1,2589:1:2,2592:4:7,3385:1:1,4306:2:2^
 391^1^0^20^20^1436^0.3215^0.8310^1^Old Murk-Eye^3636:1:1^
 449^8^0^16^17^1436^0.4402^0.7767^8^Defias Knuckleduster^1813:1:1,2592:4:5^
 452^10^0^16^17^1436^0.5247^0.6597^10^Riverpaw Bandit^858:1:1,2589:3:4,2592:1:1^
@@ -161,6 +163,7 @@ GoldScout-export 6^vslu2bs4p9h1^7
 @i^2220^Box Shield
 @i^2251^Gooey Spider Leg
 @i^2287^Haunch of Meat
+@i^2378^Skeleton Finger
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2674^Crawler Meat
@@ -186,6 +189,7 @@ GoldScout-export 6^vslu2bs4p9h1^7
 @i^3301^Sharp Canine
 @i^3374^Calico Belt
 @i^3379^Brocade Bracers
+@i^3385^Lesser Mana Potion
 @i^3393^Recipe: Minor Magic Resistance Potion
 @i^3402^Soft Patch of Fur
 @i^3628^Hand of Dextren Ward
@@ -195,6 +199,7 @@ GoldScout-export 6^vslu2bs4p9h1^7
 @i^4306^Silk Cloth
 @i^4555^Thick Scaly Tail
 @i^4571^War Knife of Stamina
+@i^4606^Spongy Morel
 @i^4697^Burnished Girdle
 @i^5187^Rhahk'Zor's Hammer
 @i^5193^Cape of the Brotherhood
@@ -219,6 +224,7 @@ GoldScout-export 6^vslu2bs4p9h1^7
 @i^6380^Inscribed Buckler
 @i^6548^Soldier's Girdle of Agility
 @i^6560^Soldier's Shield of the Whale
+@i^6570^Shimmering Sash of the Whale
 @i^6571^Scouting Buckler of the Eagle
 @i^6577^Defender Gauntlets of the Owl
 @i^6604^Dervish Cape of the Physician
@@ -313,6 +319,7 @@ GoldScout-export 6^vslu2bs4p9h1^7
 @q^2220^0:4:0
 @q^2251^1:7:1
 @q^2287^1:0:0
+@q^2378^1:12:0
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2674^1:7:1
@@ -338,6 +345,7 @@ GoldScout-export 6^vslu2bs4p9h1^7
 @q^3301^0:15:0
 @q^3374^0:4:0
 @q^3379^0:4:0
+@q^3385^1:0:0
 @q^3393^1:9:0
 @q^3402^0:15:0
 @q^3628^1:12:0
@@ -347,6 +355,7 @@ GoldScout-export 6^vslu2bs4p9h1^7
 @q^4306^1:7:1
 @q^4555^0:15:0
 @q^4571^2:2:0
+@q^4606^1:0:0
 @q^4697^2:4:0
 @q^5187^3:2:0
 @q^5193^3:4:0
@@ -371,6 +380,7 @@ GoldScout-export 6^vslu2bs4p9h1^7
 @q^6380^2:4:0
 @q^6548^2:4:0
 @q^6560^2:4:0
+@q^6570^2:4:0
 @q^6571^2:4:0
 @q^6577^2:4:0
 @q^6604^2:4:0
@@ -409,6 +419,7 @@ GoldScout-export 6^vslu2bs4p9h1^7
 @m^1415^Eastern Kingdoms
 @m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
+@m^1431^Duskwood
 @m^1436^Westfall
 @m^1440^Ashenvale
 @c^118^
@@ -581,12 +592,14 @@ GoldScout-export 6^vslu2bs4p9h1^7
 @c^279981^
 @c^279982^
 @c^286152^
+@a^48^295:9,296:5
 @a^95^88:2,150:1
 @a^98^291:1
 @a^121^287:5
 @a^122^307:1,308:3,309:1,310:3,327:6,328:2
 @a^123^127:7
 @a^124^185:1,249:2,250:1,286:4
+@a^203^275:2,295:7,296:2
 @a^391^326:1
 @a^449^286:1,287:1,307:1,309:1,310:2,329:2
 @a^452^229:1,249:3,250:1,291:5

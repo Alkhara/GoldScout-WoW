@@ -1,4 +1,4 @@
-GoldScout-export 6^ed7hwh6e9fik^8
+GoldScout-export 6^ed7hwh6e9fik^9
 1783^1^0^50^51^1422^0.3939^0.5734^1^Skeletal Flayer^^
 1815^1^0^51^52^1422^0.3344^0.6091^1^Diseased Black Bear^8146:1:1,11408:1:1^
 2244^5^0^21^22^1424^0.8022^0.4464^5^Syndicate Shadow Mage^2592:1:2^
@@ -62,6 +62,9 @@ GoldScout-export 6^ed7hwh6e9fik^8
 270772^1^0^49^49^1425^0.2445^0.6554^1^Witch Doctor Ti'ik^279913:1:1^
 270807^3^0^45^45^1425^0.2446^0.6555^3^Hexed Larva^^
 271780^1^0^0^0^0^0.0000^0.0000^0^^15252:1:1^
+276089^1^0^11^11^1420^0.6732^0.4778^1^The Condemned One^805:1:1^
+@i^118^Minor Healing Potion
+@i^805^Small Red Pouch
 @i^1074^Hard Spider Leg Tip
 @i^1205^Melon Juice
 @i^1464^Buzzard Talon
@@ -96,6 +99,16 @@ GoldScout-export 6^ed7hwh6e9fik^8
 @i^4603^Raw Spotted Yellowtail
 @i^4638^Reinforced Steel Lockbox
 @i^5829^Razor-sharp Beak
+@i^6289^Raw Longjaw Mud Snapper
+@i^6291^Raw Brilliant Smallfish
+@i^6294^12 Pound Mud Snapper
+@i^6297^Old Skull
+@i^6299^Sickly Looking Fish
+@i^6301^Old Teamster's Skull
+@i^6308^Raw Bristle Whisker Catfish
+@i^6358^Oily Blackmouth
+@i^6359^Firefin Snapper
+@i^6362^Raw Rockscale Cod
 @i^7973^Big-mouth Clam
 @i^8126^Myrmidon's Breastplate
 @i^8146^Wicked Claw
@@ -140,6 +153,7 @@ GoldScout-export 6^ed7hwh6e9fik^8
 @i^19935^Empty Venom Sac
 @i^19936^Dried Scorpid Carapace
 @i^20763^Broken Weapon
+@i^21150^Iron Bound Trunk
 @i^248693^Waylaid Crate: Expert Textiles
 @i^248694^Waylaid Crate: Expert Curiosities
 @i^248696^Waylaid Crate: Flowering Artisan Herbs
@@ -152,6 +166,8 @@ GoldScout-export 6^ed7hwh6e9fik^8
 @i^276744^Zarla's Snack Pouch
 @i^276746^Defias Enforcer's Legguards
 @i^279913^Ti'ik's Head
+@q^118^1:0:0
+@q^805^1:1:0
 @q^1074^0:15:0
 @q^1205^1:0:0
 @q^1464^0:15:0
@@ -186,6 +202,16 @@ GoldScout-export 6^ed7hwh6e9fik^8
 @q^4603^1:7:1
 @q^4638^2:15:0
 @q^5829^0:15:0
+@q^6289^1:7:1
+@q^6291^1:7:1
+@q^6294^1:15:0
+@q^6297^0:15:0
+@q^6299^1:0:0
+@q^6301^0:15:0
+@q^6308^1:7:1
+@q^6358^1:7:1
+@q^6359^1:7:1
+@q^6362^1:7:1
 @q^7973^1:7:0
 @q^8126^2:4:0
 @q^8146^1:7:1
@@ -230,6 +256,7 @@ GoldScout-export 6^ed7hwh6e9fik^8
 @q^19935^0:15:0
 @q^19936^0:15:0
 @q^20763^0:15:0
+@q^21150^1:15:0
 @q^248693^1:0:1
 @q^248694^1:0:1
 @q^248696^1:0:1
@@ -243,9 +270,12 @@ GoldScout-export 6^ed7hwh6e9fik^8
 @q^276746^3:4:0
 @q^279913^1:12:0
 @m^1419^Blasted Lands
+@m^1420^Tirisfal Glades
 @m^1422^Western Plaguelands
 @m^1424^Hillsbrad Foothills
 @m^1425^The Hinterlands
+@m^1434^Stranglethorn Vale
+@m^1458^Undercity
 @c^724^
 @c^733^
 @c^787^
@@ -988,12 +1018,15 @@ GoldScout-export 6^ed7hwh6e9fik^8
 @c^279256^
 @c^279257^
 @c^279258^
+@c^279938^
 @c^279941^
 @c^279945^
 @c^279957^
 @c^279961^
+@c^279969^
 @c^279974^
 @c^279978^
+@c^279979^
 @c^279981^
 @c^279982^
 @c^286152^
@@ -1045,4 +1078,8 @@ GoldScout-export 6^ed7hwh6e9fik^8
 @a^14748^176:1
 @a^270772^264:1
 @a^270807^264:3
+@a^276089^193:1
+@f^1420^0^110^11^118:1:1,6289:24:24,6291:49:49,6294:1:1,6297:11:11,6299:23:23,6301:1:1^193:40,213:70
+@f^1434^0^9^102^4603:1:1,6358:2:2,6359:2:2,6362:2:2,21150:2:2^106:1,126:2,147:6
+@f^1458^0^36^5^6289:17:17,6291:2:2,6297:7:7,6299:7:7,6308:3:3^173:30,273:6
 @l^0^enUS
