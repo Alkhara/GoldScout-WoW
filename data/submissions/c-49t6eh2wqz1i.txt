@@ -1,4 +1,4 @@
-GoldScout-export 6^49t6eh2wqz1i^21
+GoldScout-export 6^49t6eh2wqz1i^22
 667^21^0^39^40^1434^0.4306^0.3526^21^Guerrero Machacacráneos^1520:5:5,1524:6:6,2744:1:1,2749:1:1,2751:1:1,4306:6:12,4338:1:1,8151:4:4,8153:2:5,248691:1:1^
 684^4^0^37^38^1434^0.3672^0.3741^4^Pantera Faucesombría^863:1:1,1688:2:2^
 687^8^0^40^41^1434^0.2694^0.4980^8^Acechador de la selva^4461:5:5,4586:4:4,12184:3:3^
@@ -31,7 +31,12 @@ GoldScout-export 6^49t6eh2wqz1i^21
 2567^1^0^36^36^1417^0.5300^0.7720^1^Magus Puño de Roca^^
 2624^1^0^40^40^1434^0.2479^0.2350^1^Gazban^4034:1:1^
 2649^1^0^41^41^1425^0.2173^0.5769^1^Arrancacabelleras Secacorteza^^
+2725^2^0^42^43^1418^0.7659^0.6472^2^Cría hirviente^6444:2:2^
+2731^2^0^36^36^1418^0.5990^0.2478^2^Acechador de la cresta^^
+2732^1^0^39^39^1418^0.4139^0.6492^1^Cazadora de la cresta^^
+2734^5^0^40^41^1418^0.2255^0.7414^5^Patriarca acechador de la cresta^1688:2:2,12202:3:3^
 2760^71^0^38^39^1417^0.2560^0.3043^71^Exiliado ardiente^3857:11:11,4479:36:36,4787:27:27,6413:1:1,6419:1:1,7068:9:9^
+2831^1^0^41^41^1418^0.2080^0.7340^1^Águila ratonera gigante^1464:1:1,12037:1:1^
 4040^11^0^21^22^1437^0.4908^0.6159^11^Acechador de cuevas^878:2:2,1081:3:3,1288:1:1,2251:6:6,3174:4:4,4428:3:3^
 12922^3^0^32^42^1434^0.3269^0.7774^3^Esbirro diablillo^^
 254560^6^0^39^40^2548^0.4821^0.4740^6^Sombramante Crepuscular^4306:1:1,266425:3:7^
@@ -80,6 +85,7 @@ GoldScout-export 6^49t6eh2wqz1i^21
 @i^1288^Glándula de veneno grande
 @i^1370^Brazales de cuero harapiento
 @i^1377^Guantes deshilachados
+@i^1464^Garfa de águila ratonera
 @i^1477^Pergamino de agilidad II
 @i^1520^Sudor trol
 @i^1524^Colmillo Machacacráneos
@@ -180,6 +186,7 @@ GoldScout-export 6^49t6eh2wqz1i^21
 @i^9919^Capa de rastreador del mono
 @i^9928^Coraza brigada del falcón
 @i^10320^Patrón: cinta de tejido mágico roja
+@i^12037^Carne misteriosa
 @i^12184^Carne de raptor
 @i^12202^Carne de tigre
 @i^15798^Diente de ogro astillado
@@ -218,6 +225,7 @@ GoldScout-export 6^49t6eh2wqz1i^21
 @q^1288^1:7:1
 @q^1370^0:4:0
 @q^1377^0:4:0
+@q^1464^0:15:0
 @q^1477^1:0:0
 @q^1520^0:15:0
 @q^1524^1:12:0
@@ -318,6 +326,7 @@ GoldScout-export 6^49t6eh2wqz1i^21
 @q^9919^2:4:0
 @q^9928^2:4:0
 @q^10320^2:9:0
+@q^12037^1:7:1
 @q^12184^1:7:1
 @q^12202^1:7:1
 @q^15798^0:15:0
@@ -351,6 +360,7 @@ GoldScout-export 6^49t6eh2wqz1i^21
 @q^287013^3:4:0
 @m^1415^Reinos del Este
 @m^1417^Tierras Altas de Arathi
+@m^1418^Tierras Inhóspitas
 @m^1425^Tierras del Interior
 @m^1434^Vega de Tuercespina
 @m^1437^Los Humedales
@@ -1393,7 +1403,12 @@ GoldScout-export 6^49t6eh2wqz1i^21
 @a^2567^310:1
 @a^2624^84:1
 @a^2649^224:1
+@a^2725^255:1,275:1
+@a^2731^91:1,112:1
+@a^2732^248:1
+@a^2734^284:3,285:1,304:1
 @a^2760^104:12,105:20,124:14,125:25
+@a^2831^284:1
 @a^4040^229:1,230:1,249:8,250:1
 @a^12922^306:3
 @a^254560^169:1,189:4,209:1

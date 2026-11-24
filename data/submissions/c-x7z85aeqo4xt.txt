@@ -1,4 +1,4 @@
-GoldScout-export 6^x7z85aeqo4xt^23
+GoldScout-export 6^x7z85aeqo4xt^24
 92^3^0^39^40^1418^0.1527^0.3692^3^Rock Elemental^4553:1:1,4627:3:3,4784:1:1,7912:1:2,262889:1:1^
 595^1^0^35^35^1434^0.2302^0.1205^1^Bloodscalp Hunter^^
 701^2^0^35^35^1434^0.2532^0.1143^2^Bloodscalp Mystic^4306:1:1^
@@ -168,6 +168,8 @@ GoldScout-export 6^x7z85aeqo4xt^23
 5307^1^0^42^43^1444^0.5786^0.5653^1^Vale Screecher^^
 5308^2^0^45^46^1444^0.5144^0.4782^2^Rogue Vale Screecher^6826:1:1^
 5600^1^0^35^35^1443^0.7321^0.4264^1^Khan Dez'hepah^6066:1:1^
+5615^1^0^44^44^1446^0.6529^0.3975^1^Wastewander Rogue^4019:1:1,8483:1:1^
+5623^1^0^44^44^1446^0.6533^0.4009^1^Wastewander Assassin^8483:1:1,11206:1:1^
 5648^4^0^0^0^0^0.0000^0.0000^0^^4338:1:1,9523:2:2,15611:1:1^
 5649^18^0^0^0^0^0.0000^0.0000^0^^1520:4:4,4306:2:3,4338:1:4,4421:1:1,4599:1:1,8151:2:2,9523:7:7^
 5650^11^0^0^0^0^0.0000^0.0000^0^^1520:1:1,3864:1:1,3928:1:1,3989:1:1,4088:1:1,4306:1:1,4338:2:6,7909:1:1,9523:1:1^
@@ -211,8 +213,13 @@ GoldScout-export 6^x7z85aeqo4xt^23
 7795^2^0^0^0^0^0.0000^0.0000^0^^9234:1:1,10661:1:1,274651:2:2^
 7796^2^0^0^0^0^0.0000^0.0000^0^^4599:1:1,9523:1:2,274645:2:2^
 7797^1^0^0^0^0^0.0000^0.0000^0^^274655:1:1^
+7855^36^0^44^45^1446^0.7259^0.4592^36^Southsea Pirate^3927:2:2,3928:1:1,4338:10:14,9260:2:2,14781:1:1,20519:7:7^
+7856^25^0^44^45^1446^0.7323^0.4599^25^Southsea Freebooter^868:1:1,3927:1:1,3939:1:1,3942:1:1,4338:5:8,4421:1:1,6149:1:1,9276:2:2,20519:4:4,248692:1:1^
+7857^33^0^44^45^1446^0.7366^0.4709^33^Southsea Dock Worker^3927:2:2,3940:1:1,4306:1:1,4338:5:7,9260:3:3,9276:1:1,20519:5:5^
+7858^38^0^44^45^1446^0.7423^0.4639^38^Southsea Swashbuckler^1645:2:2,3927:1:1,4306:4:5,4338:11:17,7909:1:1,9260:7:7,9276:2:2,14432:1:1,20519:4:4^
 7872^2^0^34^34^1413^0.4759^0.9227^2^Death's Head Cultist^3806:1:1^
 7873^1^0^33^34^1413^0.4685^0.9217^1^Razorfen Battleguard^^
+7883^10^0^45^45^1446^0.7340^0.4696^10^Andre Firebeard^3927:2:2,4306:3:5,4338:3:5,9246:1:1,20519:1:1^
 7996^1^0^50^50^1425^0.4830^0.6779^1^Qiaga the Keeper^9241:1:1^
 8095^4^0^0^0^0^0.0000^0.0000^0^^1701:2:2,1702:1:1,4092:1:1,8623:1:1,11387:1:1^
 8120^1^0^0^0^0^0.0000^0.0000^0^^11386:1:1^
@@ -356,6 +363,7 @@ GoldScout-export 6^x7z85aeqo4xt^23
 @i^770^Pointy Crocolisk Tooth
 @i^774^Malachite
 @i^864^Knightly Longsword of the Bandit
+@i^868^Ardent Custodian
 @i^878^Fist-sized Spinneret
 @i^1074^Hard Spider Leg Tip
 @i^1081^Crisp Spider Meat
@@ -379,6 +387,7 @@ GoldScout-export 6^x7z85aeqo4xt^23
 @i^1465^Tigerbane
 @i^1477^Scroll of Agility II
 @i^1520^Troll Sweat
+@i^1645^Moonberry Juice
 @i^1688^Long Soft Tail
 @i^1696^Curved Raptor Talon
 @i^1701^Curved Basilisk Claw
@@ -447,12 +456,17 @@ GoldScout-export 6^x7z85aeqo4xt^23
 @i^3864^Citrine
 @i^3874^Plans: Polished Steel Boots
 @i^3914^Journeyman's Backpack
+@i^3927^Fine Aged Cheddar
 @i^3928^Superior Healing Potion
 @i^3932^Smotts' Chest
+@i^3939^Crochet Cloak
+@i^3940^Crochet Gloves
+@i^3942^Crochet Shoulderpads
 @i^3961^Thick Leather Belt
 @i^3962^Thick Leather Boots
 @i^3989^Blocking Targe
 @i^4017^Sharp Shortsword
+@i^4019^Heavy Flint Axe
 @i^4020^Splintering Battle Axe
 @i^4021^Blunting Mace
 @i^4023^Fine Pointed Dagger
@@ -536,6 +550,7 @@ GoldScout-export 6^x7z85aeqo4xt^23
 @i^5945^Deadmire's Tooth
 @i^5959^Acidic Venom Sac
 @i^6066^Khan Dez'hepah's Head
+@i^6149^Greater Mana Potion
 @i^6166^Coyote Jawbone
 @i^6297^Old Skull
 @i^6302^Delicate Insect Wing
@@ -597,6 +612,7 @@ GoldScout-export 6^x7z85aeqo4xt^23
 @i^8188^Explosive Shotgun
 @i^8194^Goblin Nutcracker of the Defender
 @i^8196^Ebon Scimitar of the Whale
+@i^8483^Wastewander Water Pouch
 @i^8548^Divino-matic Rod
 @i^8623^OOX-17 TN Distress Beacon
 @i^8707^Gahz'rilla's Electrified Scale
@@ -608,7 +624,10 @@ GoldScout-export 6^x7z85aeqo4xt^23
 @i^9241^Sacred Mallet
 @i^9242^Ancient Tablet
 @i^9243^Shriveled Heart
+@i^9246^Firebeard's Head
 @i^9259^Troll Tribal Necklace
+@i^9260^Volatile Rum
+@i^9276^Pirate's Footlocker
 @i^9295^Recipe: Invisibility Potion
 @i^9322^Undamaged Venom Sac
 @i^9401^Nordic Longshank
@@ -640,6 +659,7 @@ GoldScout-export 6^x7z85aeqo4xt^23
 @i^10661^Second Mosh'aru Tablet
 @i^11018^Un'Goro Soil
 @i^11118^Archaedic Stone of the Beast
+@i^11206^Formula: Enchant Cloak - Lesser Agility
 @i^11386^Squishy Basilisk Eye
 @i^11387^Basilisk Heart
 @i^11393^Small Bat Skull
@@ -664,8 +684,10 @@ GoldScout-export 6^x7z85aeqo4xt^23
 @i^14419^Silksand Bracers
 @i^14422^Silksand Gloves
 @i^14429^Windchaser Cuffs
+@i^14432^Windchaser Amice
 @i^14606^Warden's Gloves
 @i^14773^Ravager's Cord
+@i^14781^Khan's Cloak
 @i^14903^Saltstone Armsplints of the Beast
 @i^14906^Brutish Belt of the Beast
 @i^14918^Jade Belt of the Gorilla
@@ -691,6 +713,7 @@ GoldScout-export 6^x7z85aeqo4xt^23
 @i^17058^Fish Oil
 @i^18083^Jumanza Grips
 @i^19937^Small Scorpid Claw
+@i^20519^Southsea Pirate Hat
 @i^211269^Primitive Drawing
 @i^211293^Crimson Trophy Quill
 @i^213543^Scroll: UPDOG
@@ -794,6 +817,7 @@ GoldScout-export 6^x7z85aeqo4xt^23
 @q^770^0:15:0
 @q^774^2:7:1
 @q^864^2:2:0
+@q^868^4:2:0
 @q^878^0:7:0
 @q^1074^0:15:0
 @q^1081^1:7:1
@@ -817,6 +841,7 @@ GoldScout-export 6^x7z85aeqo4xt^23
 @q^1465^2:2:0
 @q^1477^1:0:0
 @q^1520^0:15:0
+@q^1645^1:0:0
 @q^1688^0:15:0
 @q^1696^0:15:0
 @q^1701^0:15:0
@@ -885,12 +910,17 @@ GoldScout-export 6^x7z85aeqo4xt^23
 @q^3864^2:7:1
 @q^3874^2:9:0
 @q^3914^1:1:0
+@q^3927^1:0:0
 @q^3928^1:0:0
 @q^3932^1:12:0
+@q^3939^0:4:0
+@q^3940^0:4:0
+@q^3942^0:4:0
 @q^3961^0:4:0
 @q^3962^0:4:0
 @q^3989^0:4:0
 @q^4017^0:2:0
+@q^4019^0:2:0
 @q^4020^0:2:0
 @q^4021^0:2:0
 @q^4023^0:2:0
@@ -974,6 +1004,7 @@ GoldScout-export 6^x7z85aeqo4xt^23
 @q^5945^1:12:0
 @q^5959^1:12:0
 @q^6066^1:12:0
+@q^6149^1:0:0
 @q^6166^1:12:0
 @q^6297^0:15:0
 @q^6302^0:15:0
@@ -1035,6 +1066,7 @@ GoldScout-export 6^x7z85aeqo4xt^23
 @q^8188^2:2:0
 @q^8194^2:2:0
 @q^8196^2:2:0
+@q^8483^1:12:0
 @q^8548^1:0:0
 @q^8623^2:12:0
 @q^8707^1:12:0
@@ -1046,7 +1078,10 @@ GoldScout-export 6^x7z85aeqo4xt^23
 @q^9241^1:12:0
 @q^9242^0:15:0
 @q^9243^2:4:0
+@q^9246^1:12:0
 @q^9259^1:15:0
+@q^9260^1:0:0
+@q^9276^1:15:0
 @q^9295^2:9:0
 @q^9322^1:12:0
 @q^9401^3:2:0
@@ -1078,6 +1113,7 @@ GoldScout-export 6^x7z85aeqo4xt^23
 @q^10661^1:12:0
 @q^11018^1:12:0
 @q^11118^3:4:0
+@q^11206^2:9:0
 @q^11386^0:15:0
 @q^11387^0:15:0
 @q^11393^0:15:0
@@ -1102,8 +1138,10 @@ GoldScout-export 6^x7z85aeqo4xt^23
 @q^14419^2:4:0
 @q^14422^2:4:0
 @q^14429^2:4:0
+@q^14432^2:4:0
 @q^14606^2:4:0
 @q^14773^2:4:0
+@q^14781^2:4:0
 @q^14903^2:4:0
 @q^14906^2:4:0
 @q^14918^2:4:0
@@ -1129,6 +1167,7 @@ GoldScout-export 6^x7z85aeqo4xt^23
 @q^17058^1:15:0
 @q^18083^3:4:0
 @q^19937^0:15:0
+@q^20519^1:12:0
 @q^211269^1:12:0
 @q^211293^1:12:0
 @q^213543^1:0:0
@@ -1239,6 +1278,7 @@ GoldScout-export 6^x7z85aeqo4xt^23
 @m^1443^Desolace
 @m^1444^Feralas
 @m^1445^Dustwallow Marsh
+@m^1446^Tanaris
 @m^1449^Un'Goro Crater
 @m^2521^Zephras Isle
 @m^2548^Riverglades
@@ -2107,11 +2147,18 @@ GoldScout-export 6^x7z85aeqo4xt^23
 @a^5307^231:1
 @a^5308^189:1,191:1
 @a^5600^174:1
+@a^5615^153:1
+@a^5623^173:1
 @a^6733^173:1,193:1
 @a^7057^66:1
 @a^7768^246:2,247:4,266:6,267:2,286:4
+@a^7855^174:10,194:26
+@a^7856^174:4,175:1,194:16,195:4
+@a^7857^194:33
+@a^7858^194:26,195:12
 @a^7872^369:2
 @a^7873^369:1
+@a^7883^194:10
 @a^7996^269:1
 @a^9157^28:3
 @a^9163^49:1

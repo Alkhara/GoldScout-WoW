@@ -1,4 +1,4 @@
-GoldScout-export 6^h7cu5zxb77jc^11
+GoldScout-export 6^h7cu5zxb77jc^12
 92^6^0^39^40^1418^0.1429^0.3481^6^Rock Elemental^4553:1:1,4627:3:3,4784:4:4,7067:1:1^
 587^1^0^33^33^1434^0.2892^0.1912^1^Bloodscalp Warrior^^
 595^2^0^34^35^1434^0.2480^0.1230^2^Bloodscalp Hunter^3385:1:1,4306:1:1^
@@ -71,6 +71,8 @@ GoldScout-export 6^h7cu5zxb77jc^11
 4681^1^0^39^39^1443^0.5587^0.7762^1^Mage Hunter^4582:1:1^
 5477^1^0^39^39^1435^0.4083^0.3363^1^Noboru the Cudgel^4306:1:1,6196:1:1^
 5601^1^0^42^42^1443^0.6607^0.8055^1^Khan Jehn^^
+5616^12^0^40^41^1446^0.6158^0.2750^12^Wastewander Thief^3927:1:1,4022:1:1,4306:3:4,4338:3:5,8483:6:6,264215:1:1^
+5618^11^0^41^42^1446^0.6069^0.2453^11^Wastewander Bandit^3927:2:2,3928:1:1,4306:2:3,4338:1:2,8483:5:5,213547:1:1^
 5622^1^0^37^37^1435^0.6524^0.2181^1^Ongeku^6190:1:1^
 5760^1^0^40^40^1443^0.5579^0.7312^1^Lord Azrethoc^^
 5771^1^0^40^40^1443^0.5587^0.7762^1^Jugkar Grim'rod^^
@@ -121,6 +123,9 @@ GoldScout-export 6^h7cu5zxb77jc^11
 @i^3904^Gan'zulah's Head
 @i^3905^Nezzliok's Head
 @i^3917^Singing Blue Crystal
+@i^3927^Fine Aged Cheddar
+@i^3928^Superior Healing Potion
+@i^4022^Crushing Maul
 @i^4057^Insignia Chestguard
 @i^4074^Mail Combat Armor
 @i^4096^Coarse Gorilla Hair
@@ -175,6 +180,7 @@ GoldScout-export 6^h7cu5zxb77jc^11
 @i^8150^Deeprock Salt
 @i^8151^Flask of Mojo
 @i^8153^Wildvine
+@i^8483^Wastewander Water Pouch
 @i^8749^Crochet Hat
 @i^9854^Archer's Jerkin of Strength
 @i^9877^Sorcerer Cloak of the Elder
@@ -208,6 +214,7 @@ GoldScout-export 6^h7cu5zxb77jc^11
 @i^248694^Waylaid Crate: Expert Curiosities
 @i^260347^Tattered Journal
 @i^262888^Sealed Journeyman's Writ
+@i^264215^Schematic: SAF-T Bomb
 @q^770^0:15:0
 @q^1464^0:15:0
 @q^1520^0:15:0
@@ -250,6 +257,9 @@ GoldScout-export 6^h7cu5zxb77jc^11
 @q^3904^1:12:0
 @q^3905^1:12:0
 @q^3917^1:12:0
+@q^3927^1:0:0
+@q^3928^1:0:0
+@q^4022^0:2:0
 @q^4057^2:4:0
 @q^4074^2:4:0
 @q^4096^1:15:0
@@ -304,6 +314,7 @@ GoldScout-export 6^h7cu5zxb77jc^11
 @q^8150^1:7:1
 @q^8151^1:7:1
 @q^8153^1:7:1
+@q^8483^1:12:0
 @q^8749^0:4:0
 @q^9854^2:4:0
 @q^9877^2:4:0
@@ -337,6 +348,7 @@ GoldScout-export 6^h7cu5zxb77jc^11
 @q^248694^1:0:1
 @q^260347^1:15:0
 @q^262888^3:0:0
+@q^264215^1:9:0
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
 @m^1418^Badlands
@@ -344,6 +356,7 @@ GoldScout-export 6^h7cu5zxb77jc^11
 @m^1435^Swamp of Sorrows
 @m^1441^Thousand Needles
 @m^1443^Desolace
+@m^1446^Tanaris
 @m^2652^Shen'dralas
 @c^118^
 @c^724^
@@ -590,6 +603,8 @@ GoldScout-export 6^h7cu5zxb77jc^11
 @a^4681^311:1
 @a^5477^128:1
 @a^5601^333:1
+@a^5616^91:3,92:4,112:1,132:4
+@a^5618^91:2,92:7,111:1,132:1
 @a^5622^93:1
 @a^5760^291:1
 @a^5771^311:1

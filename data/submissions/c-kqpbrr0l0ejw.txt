@@ -1,4 +1,4 @@
-GoldScout-export 6^kqpbrr0l0ejw^18
+GoldScout-export 6^kqpbrr0l0ejw^19
 587^4^0^33^34^1434^0.2979^0.1865^4^Bloodscalp Warrior^1519:2:2,2289:1:1,3798:1:1,4306:2:4^
 588^9^0^34^35^1434^0.2497^0.1239^9^Bloodscalp Scout^1711:1:1,2592:1:2,2751:1:1,3771:1:1,4043:1:1,4306:2:4,213547:1:1^
 595^5^0^34^35^1434^0.2553^0.1191^5^Bloodscalp Hunter^2592:1:3,2745:1:1^
@@ -74,6 +74,8 @@ GoldScout-export 6^kqpbrr0l0ejw^18
 3560^5^0^33^42^1417^0.6517^0.7237^5^Healing Ward^^
 4260^2^0^37^37^1434^0.4588^0.2172^2^Venture Co. Shredder^4377:1:1^
 4723^1^0^38^38^1434^0.4248^0.1856^1^Foreman Cozzle^213543:1:1^
+11559^4^0^39^40^2652^0.3129^0.2520^4^Outcast Necromancer^260347:1:1^
+11561^14^0^37^40^2652^0.3178^0.2374^14^Undead Ravager^1710:1:1,1725:1:1,3805:1:1,4306:6:10,4338:2:2,213545:1:1^
 217305^1^0^35^35^1416^0.6001^0.4572^1^Ancient Fire Elemental^3857:1:1^
 245999^1^0^0^0^0^0.0000^0.0000^0^^273035:1:1^
 246003^1^0^0^0^0^0.0000^0.0000^0^^273038:1:1^
@@ -122,6 +124,7 @@ GoldScout-export 6^kqpbrr0l0ejw^18
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
 @i^1711^Scroll of Stamina II
+@i^1725^Large Knapsack
 @i^2289^Scroll of Strength II
 @i^2466^Skullsplitter Fetish
 @i^2592^Wool Cloth
@@ -160,6 +163,7 @@ GoldScout-export 6^kqpbrr0l0ejw^18
 @i^3798^Interlaced Shoulderpads
 @i^3799^Interlaced Vest
 @i^3803^Hardened Cloak
+@i^3805^Hardened Leather Pants
 @i^3812^Double Mail Gloves
 @i^3818^Fadeleaf
 @i^3820^Stranglekelp
@@ -244,6 +248,7 @@ GoldScout-export 6^kqpbrr0l0ejw^18
 @i^254018^Pattern: Earthen Silk Gloves
 @i^254022^Pattern: Gilded Handwraps
 @i^255723^Manual: Greater Healing Potion
+@i^260347^Tattered Journal
 @i^265357^Snargl's Snout
 @i^265738^Sootfur's Pelt
 @i^266157^Jumbo Crawfish Shell
@@ -274,6 +279,7 @@ GoldScout-export 6^kqpbrr0l0ejw^18
 @q^1708^1:0:0
 @q^1710^1:0:0
 @q^1711^1:0:0
+@q^1725^1:1:0
 @q^2289^1:0:0
 @q^2466^1:12:0
 @q^2592^1:7:1
@@ -312,6 +318,7 @@ GoldScout-export 6^kqpbrr0l0ejw^18
 @q^3798^0:4:0
 @q^3799^0:4:0
 @q^3803^0:4:0
+@q^3805^0:4:0
 @q^3812^0:4:0
 @q^3818^1:7:1
 @q^3820^1:7:1
@@ -396,6 +403,7 @@ GoldScout-export 6^kqpbrr0l0ejw^18
 @q^254018^2:9:0
 @q^254022^3:9:0
 @q^255723^2:9:0
+@q^260347^1:15:0
 @q^265357^1:12:0
 @q^265738^1:12:0
 @q^266157^1:12:0
@@ -416,6 +424,7 @@ GoldScout-export 6^kqpbrr0l0ejw^18
 @m^1424^Hillsbrad Foothills
 @m^1434^Stranglethorn Vale
 @m^2548^Riverglades
+@m^2652^Shen'dralas
 @c^118^
 @c^724^
 @c^733^
@@ -944,6 +953,8 @@ GoldScout-export 6^kqpbrr0l0ejw^18
 @a^3560^292:2,293:3
 @a^4260^88:1,89:1
 @a^4723^68:1
+@a^11559^66:1,86:1,106:2
+@a^11561^26:1,46:1,66:1,84:1,86:3,87:1,105:1,106:3,126:2
 @a^217305^192:1
 @a^255769^225:1,226:1,244:1,283:1
 @a^255770^283:4
