@@ -1,4 +1,4 @@
-GoldScout-export 6^1vtskxijchow^41
+GoldScout-export 6^1vtskxijchow^42
 3^19^0^24^25^1431^0.2296^0.3644^19^Comedor de Carne^884:3:3,885:1:1,887:2:2,1129:6:6,1210:1:1,1777:1:1,1801:1:1,1823:1:1,2592:5:7,4606:1:1,5529:1:1,6530:5:5,9793:1:1^
 6^17^0^1^2^1429^0.4974^0.3636^17^Kobold Daninho^755:5:5,1369:1:1,1372:1:1,1380:1:1,2589:7:7,2651:1:1,2656:1:1,4536:3:3,247834:1:1,247839:2:2^
 30^2^0^5^6^1429^0.4029^0.7131^2^Aranha da Floresta^5465:1:2^
@@ -206,6 +206,10 @@ GoldScout-export 6^1vtskxijchow^41
 3989^11^2^18^19^1442^0.6577^0.5282^11^Madeireiro da Empreendimentos S.A.^1813:1:1,2592:4:6^5379:1:1
 3991^10^6^19^20^1442^0.6594^0.5207^10^Desmatador da Empreendimentos S.A.^1769:1:1,2589:1:3,2592:1:2^
 4065^12^0^21^22^1433^0.6237^0.5615^12^Sentinela Rocha Negra^1296:1:1,2589:1:3,2592:3:9,4306:1:3,6574:1:1,6581:1:1,211854:1:1^
+4282^0^1^30^30^0^0.0000^0.0000^0^Mágico Escarlate^^4538:1:1
+4293^0^1^0^0^0^0.0000^0.0000^0^^^210963:1:1
+4299^0^1^0^0^0^0.0000^0.0000^0^^^
+4306^0^1^0^0^0^0.0000^0.0000^0^^^4538:1:1,16882:1:1
 4462^4^0^23^24^1433^0.6346^0.5542^4^Caçador Rocha Negra^1445:1:1,1797:1:1,1823:1:1,2589:1:2,2592:1:2,15259:1:1^
 4464^2^0^25^25^1433^0.6264^0.5553^2^Gladiador Rocha Negra^^
 4632^7^0^30^31^1443^0.6937^0.4268^7^Centauro Kolkar^1710:1:1,2592:1:3,4306:1:2,6067:1:1,254432:2:2^
@@ -282,6 +286,7 @@ GoldScout-export 6^1vtskxijchow^41
 8566^4^0^47^48^1427^0.3296^0.5467^4^Atalaia Ferro Negro^4338:2:5,18960:1:1^
 8637^3^0^44^45^1427^0.6310^0.6017^3^Vigia Ferro Negro^4338:1:1,213543:1:1^
 9318^16^0^47^49^1427^0.4801^0.2716^16^Incendossauro^5128:1:1,5133:9:9^
+11561^10^0^37^40^2652^0.3300^0.2050^8^Assolador Morto-vivo^4306:1:1,4607:2:2^
 11562^7^0^33^34^1443^0.3229^0.3169^7^Rastejante Estalo-seco^1708:1:1^
 11563^7^0^34^35^1443^0.3288^0.3254^7^Tenaz Estalo-seco^1710:1:1,3780:1:1,15878:1:1,17057:3:3^
 12902^1^0^0^0^0^0.0000^0.0000^0^^1206:1:1,14748:1:1,273841:1:1^
@@ -633,6 +638,7 @@ GoldScout-export 6^1vtskxijchow^41
 @i^4428^Palpo de Aranha
 @i^4461^Pelego de Raptor
 @i^4536^Maçã Vermelha Brilhante
+@i^4538^Melancia Estala-vinha
 @i^4552^Lasca de Pedra Lisa
 @i^4554^Pedra Polida Brilhosa
 @i^4555^Cauda Escamosa Grossa
@@ -645,6 +651,7 @@ GoldScout-export 6^1vtskxijchow^41
 @i^4601^Pão de Banana Macio
 @i^4603^Rabo-amarelo Mosqueado Cru
 @i^4606^Morel Esponjoso
+@i^4607^Mofo de Caverna Delicioso
 @i^4633^Cofre de Bronze Pesado
 @i^4634^Cofre de Ferro
 @i^4637^Cofre de Aço
@@ -785,6 +792,7 @@ GoldScout-export 6^1vtskxijchow^41
 @i^15878^Chave Prateada de Rodovalho
 @i^15881^Chave Dourada de Rodovalho
 @i^15927^Esfera Brilhante
+@i^16882^Caixa de Tralhas Desgastada
 @i^17056^Pluma
 @i^17057^Escamas Brilhantes de Peixe
 @i^17058^Óleo de Peixe
@@ -795,6 +803,7 @@ GoldScout-export 6^1vtskxijchow^41
 @i^19935^Vesícula de Peçonha Vazia
 @i^210212^Metade de Chave do Irmão
 @i^210213^Metade de Chave da Irmã
+@i^210963^Chave dos Áugures
 @i^211784^Pergaminho: ADUBIDIBE
 @i^211786^Pergaminho: CARA LUTA WELLES
 @i^211787^Pergaminho: PING MAIS BAIXO ALGUÉM
@@ -1164,6 +1173,7 @@ GoldScout-export 6^1vtskxijchow^41
 @q^4428^0:15:0
 @q^4461^1:7:1
 @q^4536^1:0:0
+@q^4538^1:0:0
 @q^4552^0:15:0
 @q^4554^0:15:0
 @q^4555^0:15:0
@@ -1176,6 +1186,7 @@ GoldScout-export 6^1vtskxijchow^41
 @q^4601^1:0:0
 @q^4603^1:7:1
 @q^4606^1:0:0
+@q^4607^1:0:0
 @q^4633^2:15:0
 @q^4634^2:15:0
 @q^4637^2:15:0
@@ -1316,6 +1327,7 @@ GoldScout-export 6^1vtskxijchow^41
 @q^15878^1:12:0
 @q^15881^1:12:0
 @q^15927^2:4:0
+@q^16882^1:15:0
 @q^17056^1:15:1
 @q^17057^1:15:0
 @q^17058^1:15:0
@@ -1326,6 +1338,7 @@ GoldScout-export 6^1vtskxijchow^41
 @q^19935^0:15:0
 @q^210212^1:13:0
 @q^210213^1:13:0
+@q^210963^1:13:0
 @q^211784^1:0:0
 @q^211786^1:0:0
 @q^211787^1:0:0
@@ -1417,6 +1430,7 @@ GoldScout-export 6^1vtskxijchow^41
 @m^1444^Feralas
 @m^1449^Cratera Un'Goro
 @m^1453^Ventobravo
+@m^2652^Shen'dralas
 @c^118^
 @c^724^
 @c^733^
@@ -2734,6 +2748,7 @@ GoldScout-export 6^1vtskxijchow^41
 @a^8566^206:3,226:1
 @a^8637^232:1,252:2
 @a^9318^88:1,89:5,109:6,130:1,150:3
+@a^11561^26:2,46:1,105:1,106:3,127:1
 @a^11562^106:3,126:3,146:1
 @a^11563^106:1,126:5,146:1
 @a^13019^131:1

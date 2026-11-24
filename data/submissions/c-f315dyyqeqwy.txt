@@ -1,4 +1,4 @@
-GoldScout-export 6^f315dyyqeqwy^14
+GoldScout-export 6^f315dyyqeqwy^15
 92^3^0^39^40^1418^0.1398^0.3484^3^Rock Elemental^4553:1:1,4784:2:2,7067:1:1,7848:2:2^
 598^18^0^0^0^0^0.0000^0.0000^0^^1743:1:1,2589:3:5,2592:2:3^
 622^2^0^0^0^0^0.0000^0.0000^0^^2592:1:1^
@@ -241,7 +241,15 @@ GoldScout-export 6^f315dyyqeqwy^14
 14445^1^0^45^45^1435^0.7875^0.4700^1^Lord Captain Wyrmak^282008:1:1^
 14748^1^0^49^49^1425^0.8460^0.4113^1^Vilebranch Kidnapper^19034:1:1^
 250873^9^0^1^1^2521^0.4413^0.2597^9^Juvenile Vuldren^2672:5:5,4865:2:2,7073:3:3,7074:4:4^
+250926^6^0^3^4^2521^0.4158^0.2652^6^Scrawny Ursera^1374:1:1,2210:1:1,7073:1:1,7074:2:2,251918:6:6,251925:4:4^
+250937^8^0^4^4^2521^0.3694^0.2474^8^Ursera Scavenger^1369:1:1,1376:1:1,2650:1:1,7073:2:2,7074:2:2,251925:4:4^
+251115^1^0^5^5^2521^0.3551^0.2535^1^Urs'anah^7074:1:1,252665:1:1^
+251143^6^0^2^3^2521^0.4783^0.2093^6^Roiling Winds^251930:3:3,251931:3:3^
+251145^17^0^4^4^2521^0.3750^0.3260^17^Al'Aketh Brute^159:4:4,1376:1:1,1380:1:1,2210:1:1,2211:1:1,2589:5:5,2650:1:1,2651:1:1,2652:1:1,2653:1:1,3363:1:1,4540:13:13^
+251160^7^0^2^3^2521^0.4825^0.2064^7^Al'Aketh Convert^159:1:1,1372:1:1,1377:1:1,1380:1:1,2589:3:3,3363:1:1,4540:3:3^
 251169^7^0^1^1^2521^0.4460^0.2722^7^Pesky Cirrusfly^1364:1:1,2652:1:1,251927:3:3,251928:4:4^
+251404^1^0^3^3^2521^0.4779^0.2822^1^Cirrusfly Queen^251928:1:1^
+251448^10^0^4^4^2521^0.3734^0.3261^10^Al'Aketh Neophyte^159:3:3,1367:1:1,1372:1:1,2589:4:4,2649:1:1,2652:1:1,4540:7:7^
 255262^5^0^0^0^0^0.0000^0.0000^0^^274028:3:3^
 255271^3^0^0^0^0^0.0000^0.0000^0^^3927:1:1,274028:1:1^
 255276^4^0^0^0^0^0.0000^0.0000^0^^4024:1:1,14904:1:1,287021:1:1^
@@ -260,6 +268,7 @@ GoldScout-export 6^f315dyyqeqwy^14
 256800^2^0^45^45^2548^0.2779^0.4133^2^Twilight Enforcer^3939:1:1^
 256881^1^0^46^46^2548^0.2678^0.4464^1^Overlord Kilgar^265837:1:1^
 256891^1^0^46^46^2548^0.2978^0.4124^1^Executioner Morg^269351:1:1^
+256935^1^0^5^5^2521^0.3736^0.3257^1^Malduko Cloudcrush^^
 257016^2^0^0^0^0^0.0000^0.0000^0^^276739:2:2^
 257885^4^0^0^0^0^0.0000^0.0000^0^^5215:1:1,9973:1:1,15798:1:1,248691:1:1,287014:1:1^
 257888^2^0^0^0^0^0.0000^0.0000^0^^9919:1:1^
@@ -293,6 +302,7 @@ GoldScout-export 6^f315dyyqeqwy^14
 269057^1^0^48^48^1444^0.4879^0.4614^1^Mirrorscale^277972:1:1^
 271780^3^0^0^0^0^0.0000^0.0000^0^^7910:1:1^
 271784^1^0^0^0^0^0.0000^0.0000^0^^274028:1:1^
+@i^159^Refreshing Spring Water
 @i^414^Dalaran Sharp
 @i^770^Pointy Crocolisk Tooth
 @i^814^Flask of Oil
@@ -302,6 +312,13 @@ GoldScout-export 6^f315dyyqeqwy^14
 @i^955^Scroll of Intellect
 @i^1179^Ice Cold Milk
 @i^1364^Ragged Leather Vest
+@i^1367^Ragged Leather Boots
+@i^1369^Ragged Leather Belt
+@i^1372^Ragged Cloak
+@i^1374^Frayed Shoes
+@i^1376^Frayed Cloak
+@i^1377^Frayed Gloves
+@i^1380^Frayed Robe
 @i^1464^Buzzard Talon
 @i^1520^Troll Sweat
 @i^1608^Skullcrusher Mace of Strength
@@ -330,17 +347,24 @@ GoldScout-export 6^f315dyyqeqwy^14
 @i^1821^Warped Blade
 @i^1951^Blackwater Cutlass
 @i^2169^Buzzer Blade
+@i^2210^Battered Buckler
+@i^2211^Bent Large Shield
 @i^2287^Haunch of Meat
 @i^2295^Large Boar Tusk
 @i^2449^Earthroot
 @i^2455^Minor Mana Potion
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2649^Flimsy Chain Belt
+@i^2650^Flimsy Chain Boots
+@i^2651^Flimsy Chain Bracers
 @i^2652^Flimsy Chain Cloak
+@i^2653^Flimsy Chain Gloves
 @i^2672^Stringy Wolf Meat
 @i^2764^Small Dagger
 @i^2838^Heavy Stone
 @i^2986^Inscribed Leather Pants
+@i^3363^Frayed Belt
 @i^3403^Ivory Boar Tusk
 @i^3404^Buzzard Wing
 @i^3430^Sniper Rifle of the Bandit
@@ -396,6 +420,7 @@ GoldScout-export 6^f315dyyqeqwy^14
 @i^4518^Torn Scroll Fragment
 @i^4519^Crumpled Scroll Fragment
 @i^4520^Singed Scroll Fragment
+@i^4540^Tough Hunk of Bread
 @i^4552^Smooth Stone Chip
 @i^4553^Jagged Piece of Stone
 @i^4554^Shiny Polished Stone
@@ -658,8 +683,13 @@ GoldScout-export 6^f315dyyqeqwy^14
 @i^248709^Waylaid Crate: Expert Ingots
 @i^248710^Waylaid Crate: Expert Parts
 @i^248711^Waylaid Crate: Artisan Fabrics
+@i^251918^Scrawny Ursera Claw
+@i^251925^Tattered Ursera Feather
 @i^251927^Chipped Cirrusfly Stinger
 @i^251928^Torn Insect Wing
+@i^251930^Minor Essence of the Four Winds
+@i^251931^Depleted Windstone
+@i^252665^Head of Urs'anah
 @i^252845^Pattern: Warden's Leather Shoes
 @i^252883^Pattern: Blue Suede Armor
 @i^252918^Pattern: Stalker's Mail Gauntlets
@@ -721,6 +751,7 @@ GoldScout-export 6^f315dyyqeqwy^14
 @i^286429^Big-Belly Belt
 @i^287014^Krol'dok Warplate Pauldrons
 @i^287021^Defias Enforcer's Prowlers
+@q^159^1:0:0
 @q^414^1:0:0
 @q^770^0:15:0
 @q^814^1:7:1
@@ -730,6 +761,13 @@ GoldScout-export 6^f315dyyqeqwy^14
 @q^955^1:0:0
 @q^1179^1:0:0
 @q^1364^0:4:0
+@q^1367^0:4:0
+@q^1369^0:4:0
+@q^1372^0:4:0
+@q^1374^0:4:0
+@q^1376^0:4:0
+@q^1377^0:4:0
+@q^1380^0:4:0
 @q^1464^0:15:0
 @q^1520^0:15:0
 @q^1608^2:2:0
@@ -758,17 +796,24 @@ GoldScout-export 6^f315dyyqeqwy^14
 @q^1821^0:2:0
 @q^1951^3:2:0
 @q^2169^3:2:0
+@q^2210^0:4:0
+@q^2211^0:4:0
 @q^2287^1:0:0
 @q^2295^0:15:0
 @q^2449^1:7:1
 @q^2455^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2649^0:4:0
+@q^2650^0:4:0
+@q^2651^0:4:0
 @q^2652^0:4:0
+@q^2653^0:4:0
 @q^2672^1:7:1
 @q^2764^0:2:0
 @q^2838^1:7:1
 @q^2986^2:4:0
+@q^3363^0:4:0
 @q^3403^0:15:0
 @q^3404^1:7:1
 @q^3430^2:2:0
@@ -824,6 +869,7 @@ GoldScout-export 6^f315dyyqeqwy^14
 @q^4518^1:12:0
 @q^4519^1:12:0
 @q^4520^1:12:0
+@q^4540^1:0:0
 @q^4552^0:15:0
 @q^4553^0:15:0
 @q^4554^0:15:0
@@ -1086,8 +1132,13 @@ GoldScout-export 6^f315dyyqeqwy^14
 @q^248709^2:0:1
 @q^248710^2:0:1
 @q^248711^2:0:1
+@q^251918^1:12:0
+@q^251925^0:15:0
 @q^251927^0:15:0
 @q^251928^0:15:0
+@q^251930^0:15:0
+@q^251931^0:15:0
+@q^252665^1:12:0
 @q^252845^3:9:0
 @q^252883^2:9:0
 @q^252918^3:9:0
@@ -1831,13 +1882,22 @@ GoldScout-export 6^f315dyyqeqwy^14
 @a^14445^195:1
 @a^14748^176:1
 @a^250873^108:9
+@a^250926^108:6
+@a^250937^87:5,107:3
+@a^251115^107:1
+@a^251143^89:6
+@a^251145^127:17
+@a^251160^89:7
 @a^251169^108:7
+@a^251404^109:1
+@a^251448^127:10
 @a^256795^165:9,185:3
 @a^256797^145:1,165:2,185:6
 @a^256799^145:1,165:7,185:3
 @a^256800^165:2
 @a^256881^165:1
 @a^256891^165:1
+@a^256935^127:1
 @a^257915^155:3
 @a^257916^155:1
 @a^258574^310:1
