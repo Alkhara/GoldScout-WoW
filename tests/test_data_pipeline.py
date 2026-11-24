@@ -590,6 +590,41 @@ class MergeTests(unittest.TestCase):
         self.assertEqual(merged[3812]["k"], 1011)
         self.assertEqual(merged[3812]["i"][3010][0], 600 + 7)
 
+    def test_kill_times(self):
+        # Version 7: @t^npcID^timed kills:seconds, checked against the mob's kills.
+        mob = "3812^40^0^19^20^1440^0.5000^0.5000^40^Clattering Crawler^3010:7:7^"
+        v7 = "GoldScout-export 7^abcdefghijkl^3\n%s\n" % mob
+        good = submission.parse(v7 + "@t^3812^30:1500\n")
+        self.assertEqual(good.errors, [])
+        self.assertEqual((good.mobs[0].t, good.mobs[0].s), (30, 1500))
+        self.assertIn("@t^3812^30:1500\n", good.text())                    # kept when stored
+        self.assertEqual(submission.parse(good.text()).errors, [])
+        for bad in ("@t^3812^41:1500",          # more timed kills than kills
+                    "@t^3812^30:99999",         # longer than 6 minutes a kill
+                    "@t^3812^0:0", "@t^3812^30", "@t^3812^x:5",
+                    "@t^4000^5:300",            # a mob that isn't in the export
+                    "@t^3812^30:1500\n@t^3812^30:1500"):
+            self.assertTrue(submission.parse(v7 + bad + "\n").errors, bad)
+        self.assertTrue(submission.parse(v7.replace("export 7^", "export 6^") + "@t^3812^30:1500\n").errors)
+        # Merged across players under the per-player cap: the seconds shrink with the kills.
+        other = submission.parse(v7.replace("abcdefghijkl", "zzzzzzzzzzzz").replace("^40^0^", "^3000^0^")
+                                 + "@t^3812^2000:60000\n")
+        none = submission.parse(v7.replace("abcdefghijkl", "yyyyyyyyyyyy"))
+        merged = merge_data.merge([good.mobs, other.mobs, none.mobs], 1000)
+        self.assertEqual((merged[3812]["t"], merged[3812]["tp"]), (30 + 1000, 2))
+        self.assertAlmostEqual(merged[3812]["s"], 1500 + 30000)
+        # The add-on's community data carries a pace only with enough timed kills from enough players.
+        alone = merge_data.merge([good.mobs, none.mobs], 1000)
+        with tempfile.TemporaryDirectory() as tmp:
+            target = Path(tmp) / "Data_Community.lua"
+            lines = []
+            for data in (merged, alone):
+                merge_data.write_lua(data, 5, target, 2, {}, 1000)
+                lines.append(next(l for l in target.read_text(encoding="utf-8").splitlines()
+                                  if l.startswith("  [3812] =")))
+        self.assertIn(", t = 1030, s = 31500, ", lines[0])
+        self.assertNotIn(", t = ", lines[1])                           # one player's timing
+
     def test_dungeon_zones_without_a_position(self):
         # Inside a dungeon the game gives no position, only the zone: version 6 can say that, older versions can't.
         dungeon = "3812^40^0^19^20^291^0.0000^0.0000^0^Defias Miner^3010:7:7^"

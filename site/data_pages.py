@@ -34,6 +34,7 @@ import re
 from collections import Counter, defaultdict
 from pathlib import Path
 
+import merge_data  # noqa: E402 (tools/ is on the path: site/build.py, the tests)
 from i18n_de import DE, RATES_BODY as RATES_BODY_DE
 from i18n_es import ES, RATES_BODY as RATES_BODY_ES
 from i18n_fr import FR, RATES_BODY as RATES_BODY_FR
@@ -113,6 +114,7 @@ GEMS = addon_gems()
 KILLS_PER_HOUR = addon_pace("killsPerHour")
 PICKS_PER_HOUR = addon_pace("picksPerHour")
 CATCHES_PER_HOUR = addon_pace("catchesPerHour")
+PACE_MIN_KILLS = merge_data.PACE_MIN_KILLS   # timed kills before a mob's own pace replaces KILLS_PER_HOUR
 POOL_SHARE = addon_number("Engine.lua", "POOL_FISHING_SHARE")   # a pool takes finding: this share of your time fishes
 AREA_GRID = int(addon_number("Learn.lua", "AREA_GRID"))   # where loot happened: squares of a grid over the zone map
 AREA_MIN_SHARE = addon_number("Engine.lua", "AREA_MIN_SHARE")   # as the addon's hunt map: quieter squares are noise
@@ -309,6 +311,14 @@ class Dataset:
     def zone(self, npc):
         map_id = self.zone_id(npc)
         return self.map_name(map_id) if map_id is not None else ""
+
+    def kills_per_hour(self, npc):
+        """(kills an hour on mobs of your own level, timed kills behind it): how fast players kill this mob,
+        once enough kills were timed, else the addon's default pace and 0."""
+        entry = self.mobs[npc]
+        if merge_data.has_pace(entry):
+            return 3600 * entry["t"] / entry["s"], entry["t"]
+        return KILLS_PER_HOUR, 0
 
     def levels(self, npc):
         entry = self.mobs[npc]
@@ -552,15 +562,16 @@ def mob_table(data, npcs, zone_column=True):
                      for item, rate, _ in data.best_drops(npc)[:3]) or '<span class=small>%s</span>' % T("none yet"),
            num(data.mobs[npc]["k"]), badge(data.mobs[npc]["k"]),
            value_cell(data.best_drops(npc)),
-           value_cell([(item, rate * KILLS_PER_HOUR, stack) for item, rate, stack in data.best_drops(npc)]))
+           value_cell([(item, rate * data.kills_per_hour(npc)[0], stack)
+                       for item, rate, stack in data.best_drops(npc)]))
         for npc in npcs)
     return ("<table class=by-value><thead><tr><th>%s</th><th>%s</th>%s<th>%s</th>"
             "<th class=num>%s</th><th class=num>%s</th><th class=num>%s*</th></tr></thead>"
             "<tbody>%s</tbody></table><p class=small>* %s</p>"
             % (T("Mob"), T("Level"), "<th>%s</th>" % T("Zone") if zone_column else "", T("Best reagent drops"),
                T("Kills"), T("Gold per kill"), T("Gold per hour"), rows,
-               T("Crafting reagents only, at %d kills an hour. In game, GoldScout works it out for your character, "
-                 "at your own pace.") % KILLS_PER_HOUR))
+               T("Crafting reagents only, at how fast GoldScout players kill each mob, or %d kills an hour until "
+                 "enough kills are timed. In game, GoldScout works it out for your character.") % KILLS_PER_HOUR))
 
 
 def fishing_link(data, map_id):
@@ -819,21 +830,23 @@ def source_where(data, npc):
 
 def source_table(data, item, sources, per):
     """Where an item comes from, best first, with gold per kill and per hour at the visitor's prices."""
-    pace = KILLS_PER_HOUR if per == "kill" else PICKS_PER_HOUR
+    def pace(npc):
+        return data.kills_per_hour(npc)[0] if per == "kill" else PICKS_PER_HOUR
+
     rows = "".join(
         "<tr><td>%s</td><td class=nowrap>%s</td><td>%s</td><td class=num>%s</td><td class=num>%s %s</td>%s%s</tr>"
         % (mob_link(data, npc), e(data.levels(npc)), zone_link(data, npc), chance(rate, attempts),
            num(attempts), badge(attempts), value_cell([(item, rate, stack)]),
-           value_cell([(item, rate * pace, stack)]))
+           value_cell([(item, rate * pace(npc), stack)]))
         for npc, rate, stack, attempts, _ in sources)
     if per == "kill":
         head = (T("Dropped by"), T("Kills"), T("Gold per kill"))
-        note = T("At %d kills an hour. In game, GoldScout works it out for your character, at your own pace and "
-                 "level.") % pace
+        note = T("At how fast GoldScout players kill each mob, or %d kills an hour until enough kills are timed. "
+                 "In game, GoldScout works it out for your character and level.") % KILLS_PER_HOUR
     else:
         head = (T("Pickpocketed from"), T("Pickpockets"), T("Gold per pickpocket"))
         note = T("At %d pickpockets an hour. In game, GoldScout works it out for your character, at your own pace "
-                 "and level.") % pace
+                 "and level.") % PICKS_PER_HOUR
     return ("<table><thead><tr><th>%s</th><th>%s</th><th>%s</th><th class=num>%s</th>"
             "<th class=num>%s</th><th class=num>%s</th><th class=num>%s*</th></tr></thead>"
             "<tbody>%s</tbody></table><p class=small>* %s</p>"

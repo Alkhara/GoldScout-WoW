@@ -19,7 +19,8 @@ files next to it:
   for you
 - vendor prices you've seen
 - your characters' profession skills and known recipes
-- what you've looted from creatures, how often, at what level and where
+- what you've looted from creatures, how often, at what level and where, and how
+  long your solo kills take
 - your settings and recent Hunt mode sessions
 - a short log of GoldScout's own errors (never shared; it's there for bug reports)
 
@@ -143,7 +144,9 @@ GoldScout_Prices addon, so GoldScout can show it.
 Nothing leaves your computer unless you choose to share it. `/gscout export`
 shows only your loot records: creature IDs, names and levels, kill and
 pickpocket counts, item drops, the average map position where you looted
-each creature, the names of those items and zones as your game shows them, and
+each creature, how many of your solo kills of it were timed and how many seconds
+they took in all (a total per creature, never when you played), the names of
+those items and zones as your game shows them, and
 the IDs of items your characters' professions can make. It doesn't include
 character names, account names, realm names, prices, skill levels or settings.
 

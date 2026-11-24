@@ -195,8 +195,10 @@ set up, ticking itself off as you go (`/gscout welcome` shows it again):
   in the row's tooltip). On gathering, fishing and pickpocket rows it's per
   node, skin, catch or pickpocket, times the yield.
 - **Est. /hour** multiplies that by your rate. Kills per hour go up for mobs
-  well below your level and down for mobs above it. Tune the rates with
-  `/gscout set` so they match how you play.
+  well below your level and down for mobs above it. Where GoldScout players
+  have timed enough kills of a mob, it goes at their pace instead (the row's
+  tooltip says so), unless you've set your own kills per hour. Tune the rates
+  with `/gscout set` so they match how you play.
 - **Mob drop rates and spawn spots** come only from players: your own loot,
   plus community data that players share with `/gscout export` and that ships
   with each release. Mobs show up on the Farm tab as **Learned** from their

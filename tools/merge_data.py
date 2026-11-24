@@ -131,6 +131,19 @@ def sources_of(submissions):
     return sources
 
 
+# A mob's own pace (export version 7 @t lines) replaces the default kills an hour once this many of its kills
+# were timed, by at least this many players: one player's pace is their character and play style, not the farm's.
+# The add-on (Data_Community.lua t and s) and the website (site/data_pages.py) both go by these.
+PACE_MIN_KILLS = 30
+PACE_MIN_PLAYERS = 2
+
+
+def has_pace(entry):
+    """True when enough of a merged mob's kills were timed, by enough players, to use its own pace."""
+    return (entry.get("t", 0) >= PACE_MIN_KILLS and entry.get("tp", 0) >= PACE_MIN_PLAYERS
+            and entry.get("s", 0) > 0)
+
+
 def merge(submissions, max_per_player):
     merged = {}
     for mobs in submissions:
@@ -143,8 +156,15 @@ def merge(submissions, max_per_player):
                 "zones": Counter(),   # zones reported without a position (dungeons), by kills
                 "areas": defaultdict(lambda: defaultdict(float)),
                 "i": defaultdict(lambda: [0, 0]), "pi": defaultdict(lambda: [0, 0]),
+                # Timed kills, the seconds they took at your own level's pace, and the players who timed them.
+                "t": 0, "s": 0.0, "tp": 0,
             })
             entry["k"] += min(mob.k, max_per_player)
+            if getattr(mob, "t", 0):
+                timed = min(mob.t, max_per_player)
+                entry["t"] += timed
+                entry["s"] += mob.s * timed / mob.t
+                entry["tp"] += 1
             entry["p"] += min(mob.p, max_per_player)
             if mob.lmin:
                 entry["lmin"] = min(entry["lmin"] or mob.lmin, mob.lmin)
@@ -234,6 +254,9 @@ def write_lua(merged, min_attempts, path, contributors, sources=None, cap=1000, 
         elif entry["zones"]:
             # Only a zone (inside a dungeon the game gives no position): the one reported most.
             fields.append("m = %d" % max(entry["zones"].items(), key=lambda pair: (pair[1], pair[0]))[0])
+        if has_pace(entry):
+            # How fast players kill it: t timed kills in s seconds, at the pace on mobs of your own level.
+            fields += ["t = %d" % entry["t"], "s = %d" % round(entry["s"])]
         fields += ["i = %s" % lua_items(entry["i"]), "pi = %s" % lua_items(entry["pi"])]
         out.append("  [%d] = { %s }," % (npc, ", ".join(fields)))
     out.append("}")

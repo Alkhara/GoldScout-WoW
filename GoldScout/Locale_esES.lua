@@ -175,6 +175,7 @@ local strings = {
   ["Starting rate"] = "Tasa inicial",
   ["Expected value per %s"] = "Valor esperado por %s",
   ["Rough estimate per hour"] = "Estimación aproximada por hora",
+  ["At %d kills an hour, how fast GoldScout players kill this mob (%d kills timed)."] = "A %d muertes por hora, al ritmo al que los jugadores de GoldScout matan a este enemigo (%d muertes cronometradas).",
   ["Per-hour figures assume your /gscout set kills, nodes, picks and catches rates."] = "Las cifras por hora usan tus ritmos de /gscout set kills, nodes, picks y catches.",
   ["Best of %d sources by gold per hour. Click + to see the others."] = "El mejor de %d orígenes por oro por hora. Pulsa + para ver los demás.",
   ["Click to select it, then press Hunt for a waypoint and loot tracker."] = "Pulsa para seleccionarlo y luego Cazar para un punto de ruta y un registro de botín.",

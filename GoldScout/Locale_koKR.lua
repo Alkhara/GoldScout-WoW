@@ -176,6 +176,7 @@ ns.AddLocale("koKR", {
   ["Starting rate"] = "초기 확률",
   ["Expected value per %s"] = "%s당 기대 가치",
   ["Rough estimate per hour"] = "시간당 대략적인 추정",
+  ["At %d kills an hour, how fast GoldScout players kill this mob (%d kills timed)."] = "시간당 %d회 처치: GoldScout 플레이어들이 이 몹을 잡는 속도입니다(처치 %d회 측정).",
   ["Per-hour figures assume your /gscout set kills, nodes, picks and catches rates."] = "시간당 수치는 /gscout set kills, nodes, picks, catches 설정을 기준으로 합니다.",
   ["Best of %d sources by gold per hour. Click + to see the others."] = "출처 %d개 중 시간당 골드가 가장 높은 곳입니다. +를 눌러 나머지를 보세요.",
   ["Click to select it, then press Hunt for a waypoint and loot tracker."] = "클릭해 선택한 뒤 사냥을 누르면 경유지와 전리품 추적이 시작됩니다.",

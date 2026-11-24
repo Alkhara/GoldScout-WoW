@@ -175,6 +175,7 @@ ns.AddLocale("frFR", {
   ["Starting rate"] = "Taux de départ",
   ["Expected value per %s"] = "Valeur attendue par %s",
   ["Rough estimate per hour"] = "Estimation approximative par heure",
+  ["At %d kills an hour, how fast GoldScout players kill this mob (%d kills timed)."] = "À %d victimes par heure, au rythme auquel les joueurs de GoldScout tuent ce monstre (%d victimes chronométrées).",
   ["Per-hour figures assume your /gscout set kills, nodes, picks and catches rates."] = "Les valeurs par heure utilisent vos taux /gscout set kills, nodes, picks et catches.",
   ["Best of %d sources by gold per hour. Click + to see the others."] = "Meilleure de %d sources en or par heure. Cliquez sur + pour voir les autres.",
   ["Click to select it, then press Hunt for a waypoint and loot tracker."] = "Cliquez pour le sélectionner, puis sur Chasser pour un point de passage et le suivi du butin.",

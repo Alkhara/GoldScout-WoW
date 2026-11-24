@@ -225,11 +225,10 @@ FR = {
     "%s has %s %s recorded so far, so the ranges are wide; %d more and its rates are solid.":
         "%s a %s %s enregistrées pour l'instant, donc les intervalles sont larges ; encore %d et ses taux seront "
         "fiables.",
-    "Crafting reagents only, at %d kills an hour. In game, GoldScout works it out for your character, at your own "
-    "pace.": "Composants d'artisanat uniquement, à %d victimes par heure. En jeu, GoldScout le calcule pour votre "
-             "personnage, à votre propre rythme.",
-    "At %d kills an hour. In game, GoldScout works it out for your character, at your own pace and level.":
-        "À %d victimes par heure. En jeu, GoldScout le calcule pour votre personnage, à votre rythme et à votre niveau.",
+    'Crafting reagents only, at how fast GoldScout players kill each mob, or %d kills an hour until enough kills are timed. In game, GoldScout works it out for your character.':
+        "Composants d'artisanat uniquement, au rythme auquel les joueurs de GoldScout tuent chaque monstre, ou à %d victimes par heure tant que trop peu de victimes sont chronométrées. En jeu, GoldScout le calcule pour votre personnage.",
+    'At how fast GoldScout players kill each mob, or %d kills an hour until enough kills are timed. In game, GoldScout works it out for your character and level.':
+        'Au rythme auquel les joueurs de GoldScout tuent chaque monstre, ou à %d victimes par heure tant que trop peu de victimes sont chronométrées. En jeu, GoldScout le calcule pour votre personnage et votre niveau.',
     "At %d pickpockets an hour. In game, GoldScout works it out for your character, at your own pace and level.":
         "À %d vols par heure. En jeu, GoldScout le calcule pour votre personnage, à votre rythme et à votre niveau.",
     "At %d catches an hour in open water, half that at pools (finding the next one takes time).":

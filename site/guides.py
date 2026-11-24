@@ -98,9 +98,10 @@ def market_name(market):
 
 # -- ranking ----------------------------------------------------------------
 def farms(data, prices):
-    """The mobs worth farming on one auction house, best first: [{npc, kills, per_kill, cautious, parts}],
-    parts [{item, rate, stack, price, listed, per_kill}] for each crafting reagent listed there, most valuable
-    first. Only mobs with SOLID kills that players looted somewhere with a position, so not inside dungeons (the
+    """The mobs worth farming on one auction house, best first: [{npc, kills, per_kill, cautious, pace, timed,
+    parts}], parts [{item, rate, stack, price, listed, per_kill}] for each crafting reagent listed there, most
+    valuable first. Ranked by the cautious gold an hour, at the pace players kill each mob (Dataset.kills_per_hour:
+    timed kills where there are enough, else the addon's default). Only mobs with SOLID kills that players looted somewhere with a position, so not inside dungeons (the
     game gives no position there, and some bosses come with no zone at all): like the add-on's Farm list with
     Show dungeon drops off, since a boss with a lockout isn't a farm. Items nobody lists (no price) don't count."""
     found = []
@@ -120,9 +121,10 @@ def farms(data, prices):
         if not parts:
             continue
         parts.sort(key=lambda part: (-part["per_kill"], part["item"]))
-        found.append({"npc": npc, "kills": kills, "parts": parts, "cautious": cautious,
-                      "per_kill": sum(part["per_kill"] for part in parts)})
-    found.sort(key=lambda farm: (-farm["cautious"], farm["npc"]))
+        pace, timed = data.kills_per_hour(npc)
+        found.append({"npc": npc, "kills": kills, "parts": parts, "cautious": cautious, "pace": pace,
+                      "timed": timed, "per_kill": sum(part["per_kill"] for part in parts)})
+    found.sort(key=lambda farm: (-farm["cautious"] * farm["pace"], farm["npc"]))
     return found
 
 
@@ -249,7 +251,7 @@ def snapshot_text(snapshot):
 def hour_range(farm):
     """What a farm earns an hour: the cautious figure (the low end of each drop chance's range, which the
     ranking uses) to the average so far: "4g 4s-4g 31s", or one figure when they round the same."""
-    low, high = (money(value * data_pages.KILLS_PER_HOUR) for value in (farm["cautious"], farm["per_kill"]))
+    low, high = (money(value * farm["pace"]) for value in (farm["cautious"], farm["per_kill"]))
     return low if low == high else "%s&ndash;%s" % (low, high)
 
 
@@ -302,6 +304,15 @@ def in_game(data, farm, links):
             % (item, mob, links["curseforge"]))
 
 
+def pace_text(farm):
+    """At what pace a farm's gold an hour is worked out."""
+    if farm["timed"]:
+        return ("at %d kills an hour, how fast GoldScout players kill them (from %s timed kills, on mobs of your "
+                "own level)" % (round(farm["pace"]), data_pages.num(farm["timed"])))
+    return ("at %d kills an hour, an estimate until enough players have timed their kills here"
+            % round(farm["pace"]))
+
+
 def farm_card(data, rank, farm, market, links, note=None):
     npc, main = farm["npc"], farm["parts"][0]
     where = data_pages.zone_link(data, npc)
@@ -318,11 +329,11 @@ def farm_card(data, rank, farm, market, links, note=None):
         for part in shown)
     badge = trend_badge(market, main["item"])
     return ('<section class=guide-farm><h3>%s</h3><p class=sub>%s</p><div class=cols><div>'
-            '<p><b>%s an hour</b> at %d kills an hour, from %s kills recorded by GoldScout players.%s</p>%s'
+            '<p><b>%s an hour</b> %s. Drop chances from %s kills recorded by GoldScout players.%s</p>%s'
             '<div class=scroll><table><thead><tr><th>Drop</th><th class=num>Chance</th><th class=num>Lowest buyout'
             '</th><th class=num>Listed now</th><th class=num>Per kill</th>%s</tr></thead><tbody>%s</tbody></table>'
             '</div>%s%s<p class=small><a href="%s">Everything about %s</a></p></div>%s</div></section>'
-            % (head, place, hour_range(farm), data_pages.KILLS_PER_HOUR, data_pages.num(farm["kills"]),
+            % (head, place, hour_range(farm), pace_text(farm), data_pages.num(farm["kills"]),
                " " + badge if badge else "", '<p class=guide-note>%s</p>' % e(note) if note else "",
                "<th class=num>This week</th>" if weekly else "", rows,
                loot_table(data, npc, farm["kills"], market["prices"]), in_game(data, farm, links),
@@ -396,10 +407,13 @@ def market_page(data, market, ranked, markets, links, notes=None):
         "<h2>How this is worked out</h2><p>Each drop chance comes from GoldScout players looting in game: only mobs "
         "with at least %d recorded kills count, and they're ranked by the low end of the chance's range, so a lucky "
         "streak can't top the list. Prices are the lowest buyout on %s auction houses, after the %d%% auction house "
-        "cut. Gold per hour runs from that low end to the average so far, at %d kills an hour on mobs of your own "
-        "level (faster if you outlevel them), and counts crafting reagents only, not gear, coin or vendor trash. "
+        "cut. Gold per hour runs from that low end to the average so far, at the pace GoldScout players kill each "
+        "mob: the time from one kill to the next, as if the mobs were your own level (breaks of over three minutes "
+        "don't count). Until players have timed at least %d kills of a mob, it's %d kills an hour on mobs of your "
+        "own level (faster if you outlevel them). It counts crafting reagents only, not gear, coin or vendor trash. "
         "Lots of listings can mean a crowded market: check before you farm for hours.</p><p class=small>%s</p>"
-        % (data_pages.SOLID, e(name), round((1 - AH_CUT) * 100), data_pages.KILLS_PER_HOUR, e(data_pages.SOURCE)))
+        % (data_pages.SOLID, e(name), round((1 - AH_CUT) * 100), data_pages.PACE_MIN_KILLS,
+           data_pages.KILLS_PER_HOUR, e(data_pages.SOURCE)))
     others = [other for other in markets if other is not market]
     if others:
         sections.append("<h2>Other realm types and factions</h2>" + data_pages.link_list(

@@ -170,6 +170,17 @@ class SnapshotLuaTests(unittest.TestCase):
         newer = learn.Snapshot(learn)[0]
         self.assertEqual(submission.parse(newer).seq, 2)
 
+    def test_kill_times_are_exported_and_valid(self):
+        self.ns.db.drops[3812].t, self.ns.db.drops[3812].ts = 9, 540.4
+        self.ns.db.drops[3814].t, self.ns.db.drops[3814].ts = 10, 600   # more than its 7 kills: clamped
+        learn = self.ns.Learn
+        text = learn.ExportString(learn)[0]
+        self.assertIn("@t^3812^9:540\n", text)
+        self.assertIn("@t^3814^7:420", text)
+        result = submission.parse(text)
+        self.assertEqual(result.errors, [])
+        self.assertEqual({mob.npc: (mob.t, mob.s) for mob in result.mobs}, {3812: (9, 540), 3814: (7, 420)})
+
     def test_recovery_secret_stays_out_of_exports(self):
         learn = self.ns.Learn
         self.assertIsNone(self.ns.db.recoverySecret)        # made at the first export, not at login
@@ -199,7 +210,7 @@ class SnapshotLuaTests(unittest.TestCase):
         learn = self.ns.Learn
         text, count, _ = learn.ExportString(learn)
         self.assertEqual(count, 2)
-        self.assertTrue(text.startswith("GoldScout-export 6^"))   # no old companion here
+        self.assertTrue(text.startswith("GoldScout-export 7^"))   # no old companion here
         result = submission.parse(text)
         self.assertEqual(result.errors, [])
         self.assertEqual(result.item_meta, {3010: (1, 7, True)})
@@ -400,6 +411,60 @@ class LootCountingLuaTests(unittest.TestCase):
         self.open_window(BEAR, 3730, 2940, take=(2,))
         fired = list(self.ns.fired.values())
         self.assertEqual((fired.count("LOOT_GAINED"), fired.count("LOOT_DROP")), (1, 1))
+
+    # Kill times: how long from one solo kill to the next, scaled to the pace on mobs of your own level.
+    def kill(self, n, after=0):
+        self.game.now += after
+        guid = "Creature-0-1-2-3-3809-00000001%02d" % n
+        self.game.units["target"] = self.lua.table_from({"guid": guid, "dead": True})   # a level 22 bear
+        self.loot(guid, 3730)
+
+    def pace(self):
+        entry = self.ns.db.drops[3809]
+        return entry.t, entry.ts
+
+    def test_kills_are_timed_from_the_kill_before(self):
+        self.kill(1)                          # the first kill has nothing before it
+        self.assertEqual(self.pace(), (None, None))
+        self.kill(2, after=30)
+        self.kill(3, after=45)
+        self.assertEqual(self.pace(), (2, 75))
+        self.kill(4, after=181)               # a break: not timed
+        self.kill(5, after=20)
+        self.assertEqual(self.pace(), (3, 95))
+        self.assertEqual(self.bear()[0], 5)
+
+    def test_kill_times_are_scaled_to_your_own_level(self):
+        # Ten levels above the bears you kill twice as fast: each kill counts as twice as long at your level.
+        self.lua.execute("UnitLevel = function(unit) return unit == 'player' and 32 or 22 end")
+        self.kill(1)
+        self.kill(2, after=30)
+        self.assertEqual(self.pace(), (1, 60))
+
+    def test_a_mob_without_a_level_isnt_timed(self):
+        self.kill(1)
+        self.game.now += 30
+        self.game.units["target"] = None
+        self.loot("Creature-0-1-2-3-4000-0000000001", 3730)   # not targeted: no level known
+        self.assertEqual(self.ns.db.drops[4000].t, None)
+
+    def test_group_and_dungeon_kills_arent_timed(self):
+        self.kill(1)
+        self.game.inGroup = True
+        self.kill(2, after=30)
+        self.game.inGroup = False
+        self.lua.execute("IsInInstance = function() return true end")
+        self.kill(3, after=30)
+        self.lua.execute("IsInInstance = nil")
+        self.kill(4, after=30)
+        self.assertEqual(self.pace(), (1, 30))
+
+    def test_a_kill_counted_at_death_is_timed_once(self):
+        self.kill(1)
+        self.game.now += 30
+        self.dies(BEAR)                       # no CanLootUnit: counted at death
+        self.loot(BEAR, 3730)                 # looting it after doesn't time it again
+        self.assertEqual(self.pace(), (1, 30))
 
     # Pick Pocket, as rogues play it: often macroed with Cheap Shot or Ambush, at a mob that isn't the target.
     JUNKBOX, HIP_FLASK, HIDE = 16882, 5431, 3730

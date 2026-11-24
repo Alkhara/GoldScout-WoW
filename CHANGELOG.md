@@ -7,6 +7,8 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- **Real kill rates for gold per hour:** GoldScout now times your solo kills (from one kill to the next, leaving out breaks of over three minutes), and shared drop data includes those times. Once enough players have timed a mob, gold per hour uses the pace players really kill it, instead of the same 70 kills an hour for every mob: on the Farm tab (unless you set your own kills per hour), in the website's gold guides and on its mob and item pages.
+
 ## v0.12.48
 
 - **Pickpocketing in dungeons counts as pickpocketing:** inside dungeons the game hides which mob a Pick Pocket hit, so its loot was counted as a kill. GoldScout now counts the loot window that opens right after the cast as that mob's pockets.

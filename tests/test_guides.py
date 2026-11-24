@@ -42,6 +42,49 @@ def dataset():
     return data_pages.Dataset([result], merge_data.merge([result.mobs], 1000))
 
 
+def paced(coyote_a, coyote_b=None):
+    """Two players' exports (version 7) with these Coyote kill time lines."""
+    results = []
+    for install, line in (("abcdefghijkl", coyote_a), ("zzzzzzzzzzzz", coyote_b)):
+        text = EXPORT.replace("export 4^", "export 7^").replace("abcdefghijkl", install)
+        result = submission.parse(text + (line + "\n" if line else ""))
+        assert result.ok, result.errors
+        results.append(result)
+    return data_pages.Dataset(results, merge_data.merge([r.mobs for r in results], 1000))
+
+
+class PaceTests(unittest.TestCase):
+    def test_a_slow_farm_ranks_by_its_own_pace(self):
+        # Players kill Coyotes at 10 an hour: far less an hour than the Packleader and the Bear at the default.
+        data = paced("@t^1109^40:14400", "@t^1109^40:14400")
+        ranked = guides.farms(data, PRICES)
+        self.assertEqual([farm["npc"] for farm in ranked], [833, 3809, 1109])
+        coyote = ranked[2]
+        self.assertEqual((round(coyote["pace"]), coyote["timed"]), (10, 80))
+        self.assertIn("at 10 kills an hour, how fast GoldScout players kill them (from 80 timed kills",
+                      guides.pace_text(coyote))
+        self.assertEqual(guides.hour_range(coyote).split("&ndash;")[-1],
+                         guides.money(coyote["per_kill"] * coyote["pace"]))
+        self.assertIn("an estimate until enough players have timed", guides.pace_text(ranked[0]))
+
+    def test_mob_and_item_pages_use_each_mobs_pace(self):
+        # Coyote Meat drops on 40% of Coyote kills: 4 an hour at 10 kills an hour, where 70 would make it 28.
+        data = paced("@t^1109^40:14400", "@t^1109^40:14400")
+        self.assertIn('data-value="2673:4,2934:1"', data_pages.mob_table(data, [1109]))
+        sources = [source for source in data.sources[2673] if source[0] == 1109]
+        self.assertIn('data-value="2673:4"', data_pages.source_table(data, 2673, sources, "kill"))
+        self.assertIn('data-value="2673:28,2934:7"', data_pages.mob_table(dataset(), [1109]))
+
+    def test_one_players_pace_isnt_enough(self):
+        data = paced("@t^1109^60:21600")
+        self.assertEqual(data.kills_per_hour(1109), (data_pages.KILLS_PER_HOUR, 0))
+        self.assertEqual([farm["npc"] for farm in guides.farms(data, PRICES)], [1109, 833, 3809])
+
+    def test_too_few_timed_kills_arent_enough(self):
+        data = paced("@t^1109^10:3600", "@t^1109^10:3600")
+        self.assertEqual(data.kills_per_hour(1109), (data_pages.KILLS_PER_HOUR, 0))
+
+
 class RankingTests(unittest.TestCase):
     def setUp(self):
         self.data = dataset()

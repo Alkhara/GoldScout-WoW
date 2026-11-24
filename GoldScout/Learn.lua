@@ -19,7 +19,9 @@ local ITEM_SLOT = (Enum.LootSlotType and Enum.LootSlotType.Item) or 1
 -- learned so far. Companions from 0.10.0 on share any newer format as it is.
 -- Version 6 lets a mob have a zone without a position: inside dungeons the
 -- game gives addons no map position, only the zone (tools/submission.py).
-local EXPORT_VERSION = 6
+-- Version 7 adds how fast you kill each mob (@t, see NotePace), so gold per
+-- hour can use real kill rates instead of one default pace.
+local EXPORT_VERSION = 7
 local COMPANION_FOR_V5 = { 0, 10, 0 }
 
 local function ExportVersion()
@@ -75,6 +77,8 @@ local GATHER_SPELLS = {
   [2575] = true,  -- Mining
 }
 local GATHER_SECONDS = 3
+-- A gap between kills longer than this is a break, and the kill after it isn't timed (NotePace).
+local PACE_GAP = 180
 local lastGatherCast = -math.huge
 
 -- Pick Pocket, cast at a mob: [guid] = { at = GetTime() of the cast, window = a pickpocket loot window was
@@ -379,7 +383,7 @@ local function ExportBody()
   local drops = (ns.db and ns.db.drops) or {}
   local zoneOnly = ExportVersion() >= 6
   local names = Names() or { items = {}, maps = {} }
-  local lines, items, maps, areas = {}, {}, {}, {}
+  local lines, items, maps, areas, paces = {}, {}, {}, {}, {}
   for _, npcID in ipairs(SortedKeys(drops)) do
     local entry = drops[npcID]
     -- Written with %d: a count that's a negative zero would otherwise go out as "-0" (seen in one player's saved data).
@@ -404,6 +408,12 @@ local function ExportBody()
         if #cells > 0 then
           areas[#areas + 1] = "@a^" .. npcID .. "^" .. table.concat(cells, ",")
         end
+      end
+      local timed = math.min(math.floor(entry.t or 0), kills)
+      if timed > 0 and (entry.ts or 0) >= 0 then
+        -- Timed kills can't outnumber kills (a mixed corpse takes its kill back): the seconds shrink with them.
+        local seconds = math.floor(entry.ts * timed / entry.t + 0.5)
+        paces[#paces + 1] = ("@t^%d^%d:%d"):format(npcID, timed, math.min(seconds, timed * PACE_GAP * 2))
       end
       local dropList, pickList = ItemList(entry.i, kills), ItemList(entry.pi, picks)
       lines[#lines + 1] = table.concat({
@@ -459,6 +469,11 @@ local function ExportBody()
       lines[#lines + 1] = line
     end
     lines[#lines + 1] = "@l^0^" .. (ns.LOCALE or "enUS")
+  end
+  if ExportVersion() >= 7 then
+    for _, line in ipairs(paces) do
+      lines[#lines + 1] = line
+    end
   end
   return table.concat(lines, "\n"), mobs, #fishLines
 end
@@ -567,6 +582,48 @@ local function PlayerSpot()
     return map
   end
   return map, x, y
+end
+
+-- How fast you kill, for gold per hour at real kill rates. Each solo kill outside instances is timed from the
+-- kill before it; a gap over PACE_GAP seconds is a break (travel, a vendor, a meal) and isn't timed. The time is
+-- scaled to the pace on mobs of your own level: a kill on a mob far below you counts as the longer one it would
+-- have taken at your level, as the Farm tab assumes (PaceFactor). entry.t = timed kills, entry.ts = their seconds.
+local lastKillAt -- GetTime() of your last counted kill
+
+-- How much faster than on mobs of your own level you kill a mob: the Farm tab's pace (Engine.lua) is its
+-- killsPerHour setting times this.
+function Learn.PaceFactor(playerLevel, mobLevel)
+  local diff = playerLevel - mobLevel
+  if diff >= 10 then
+    return 2
+  elseif diff >= 6 then
+    return 1.6
+  elseif diff >= 3 then
+    return 1.25
+  elseif diff >= 0 then
+    return 1
+  elseif diff >= -2 then
+    return 0.8
+  end
+  return 0.6
+end
+
+local function NotePace(entry)
+  local now = GetTime()
+  local previous = lastKillAt
+  lastKillAt = now
+  local grouped = IsInGroup and ns.Plain(IsInGroup())
+  local instanced = IsInInstance and ns.Plain(IsInInstance())
+  if not previous or now - previous > PACE_GAP or grouped or instanced then
+    return   -- the first kill after a break, a group's kills (others loot some) or a dungeon's
+  end
+  local playerLevel = ns.Plain(UnitLevel("player"))
+  local lmin, lmax = entry.lmin, entry.lmax
+  if type(playerLevel) ~= "number" or playerLevel <= 0 or not lmin or not lmax then
+    return   -- without both levels the pace can't be scaled to your own level
+  end
+  entry.t = (entry.t or 0) + 1
+  entry.ts = (entry.ts or 0) + (now - previous) * Learn.PaceFactor(playerLevel, math.floor((lmin + lmax) / 2))
 end
 
 local function NotePosition(entry)
@@ -831,7 +888,8 @@ local function OnLootReady()
       local isMob = source.role == "kill" or source.role == "pick"
       if isMob and source.id and learn then
         local entry = Entry(source.id, true)
-        if source.role == "kill" then
+        local killed = source.role == "kill"
+        if killed then
           entry.k = entry.k + 1
           NotePosition(entry)
         else
@@ -844,6 +902,9 @@ local function OnLootReady()
           -- GUID. Inside instances the game may keep it secret, and then nothing is noted.
           local ok, name = pcall(UnitNameFromGUID, guid)
           Learn:NoteUnit(source.id, ok and name or nil, nil)
+        end
+        if killed then
+          NotePace(entry)
         end
       end
       ns.Fire("LOOT_ACTION", source.role, source.id)
@@ -1015,6 +1076,7 @@ local function JudgeDeath(guid, npcID, name, level)
   entry.k = entry.k + 1
   NotePosition(entry)
   Learn:NoteUnit(npcID, name, level)
+  NotePace(entry)
   ns.Fire("LOOT_ACTION", "kill", npcID)
   ns.Debounce("lootLearned", 2, function()
     ns.Fire("LOOT_LEARNED")

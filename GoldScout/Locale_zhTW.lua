@@ -176,6 +176,7 @@ ns.AddLocale("zhTW", {
   ["Starting rate"] = "起始機率",
   ["Expected value per %s"] = "每次%s的期望價值",
   ["Rough estimate per hour"] = "每小時粗略估計",
+  ["At %d kills an hour, how fast GoldScout players kill this mob (%d kills timed)."] = "每小時擊殺 %d 次：GoldScout 玩家擊殺這個怪物的速度（已計時 %d 次擊殺）。",
   ["Per-hour figures assume your /gscout set kills, nodes, picks and catches rates."] = "每小時數值依據你的 /gscout set kills、nodes、picks 和 catches 設定。",
   ["Best of %d sources by gold per hour. Click + to see the others."] = "%d 個來源中每小時金幣最高者。點擊 + 查看其他來源。",
   ["Click to select it, then press Hunt for a waypoint and loot tracker."] = "點擊選取後按「狩獵」，即可取得路徑點與拾取追蹤。",

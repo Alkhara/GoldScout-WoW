@@ -31,7 +31,12 @@ function ns.GetItemInfo(item)
 end
 ns.GetItemInfoInstant = (C_Item and C_Item.GetItemInfoInstant) or GetItemInfoInstant
 
-local DEFAULT_SETTINGS = {
+local DEFAULT_SETTINGS
+-- The settings' defaults; the Farm tab uses players' measured kill pace only while yours is the default.
+function ns.DefaultSetting(key)
+  return DEFAULT_SETTINGS[key]
+end
+DEFAULT_SETTINGS = {
   autoScan = false,       -- scan automatically when the auction house opens (off: press Scan AH)
   autoScanMinutes = 10,   -- minimum minutes between automatic scans
   openWithAH = true,      -- show the GoldScout window next to the auction house

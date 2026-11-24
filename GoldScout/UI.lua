@@ -371,6 +371,14 @@ local function AddOtherLootLines(row)
   end
 end
 
+-- When a row's gold per hour is at the pace GoldScout players kill the mob, says so.
+local function AddPaceLine(row)
+  if row.paceTimed and row.perHour then
+    GameTooltip:AddLine((L["At %d kills an hour, how fast GoldScout players kill this mob (%d kills timed)."]):format(
+      math.floor(row.perHour + 0.5), row.paceTimed), 0.6, 0.6, 0.6, true)
+  end
+end
+
 -- A By mob row with several farms: everything it drops that's worth farming.
 local function MobTooltip(row)
   GameTooltip:AddLine(row.source or "", 1, 1, 1)
@@ -394,6 +402,7 @@ local function MobTooltip(row)
   if not row.unknownRate then
     AddMoneyLine(L["Expected value per %s"]:format(Per(row.per)), row.each)
     AddMoneyLine(L["Rough estimate per hour"], row.hour)
+    AddPaceLine(row)
   end
   if row.otherLoot then
     GameTooltip:AddLine((L["Includes the mob's other loot, vendor trash too, from %d kills (not coin)."]):format(
@@ -446,6 +455,7 @@ local function FarmTooltip(row)
   if not row.unknownRate then
     AddMoneyLine(L["Expected value per %s"]:format(Per(row.per)), row.each)
     AddMoneyLine(L["Rough estimate per hour"], row.hour)
+    AddPaceLine(row)
     if row.otherLoot and not row.child then
       -- This item's own gold per hour; the mob's other loot counts in the By mob view.
       GameTooltip:AddLine((L["By mob adds this mob's other loot too, about %s a kill."]):format(

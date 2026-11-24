@@ -202,6 +202,24 @@ class FarmRulesTests(unittest.TestCase):
         self.assertAlmostEqual(row.each, 10000 * 0.95 * 4 / 12)   # drops / (kills + 2)
         self.assertNotIn(("Market", 3730), self.rows())             # covered, no duplicate
 
+    def test_a_mob_players_have_timed_goes_at_their_pace(self):
+        self.item(3730, price=10000, ilvl=22, name="Big Bear Meat")
+        self.drops(3809, kills=10, items={3730: 4})
+        default = self.rows()[("Learned", 3730)]
+        self.assertIsNone(default.paceTimed)
+        self.ns.COMMUNITY[3809] = self.lua.eval("{ k = 0, p = 0, i = {}, pi = {}, t = 40, s = 7200 }")  # 20 an hour
+        row = self.rows()[("Learned", 3730)]
+        self.assertEqual(row.paceTimed, 40)
+        self.assertAlmostEqual(row.perHour, default.perHour * 20 / 70)   # still scaled to your level
+        self.assertAlmostEqual(row.hour, row.each * row.perHour)
+        mob = next(m for m in self.ns.Engine.MobFarms(self.ns.Engine, self.ns.Engine.Farms(self.ns.Engine)).values()
+                   if m.npc == 3809)
+        self.assertEqual((mob.paceTimed, mob.perHour), (40, row.perHour))   # By mob too
+        self.settings.killsPerHour = 90                                     # a pace you set yourself wins
+        own = self.rows()[("Learned", 3730)]
+        self.assertIsNone(own.paceTimed)
+        self.assertAlmostEqual(own.perHour, default.perHour * 90 / 70)
+
     def test_hunting_an_item_marks_every_mob_dropping_it_in_the_zone(self):
         self.item(2673, price=30000, ilvl=12, name="Coyote Meat")
         self.drops(833, kills=40, items={2673: 16}, name="Coyote Packleader", levels=(11, 12))

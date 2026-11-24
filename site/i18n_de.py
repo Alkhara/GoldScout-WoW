@@ -220,12 +220,10 @@ DE = {
         "nach, wo Daten am meisten fehlen</a>.",
     "%s has %s %s recorded so far, so the ranges are wide; %d more and its rates are solid.":
         "%s hat bisher %s erfasste %s, daher sind die Bereiche breit; noch %d, dann sind die Raten verlässlich.",
-    "Crafting reagents only, at %d kills an hour. In game, GoldScout works it out for your character, at your own "
-    "pace.": "Nur Handwerksmaterialien, bei %d Kills pro Stunde. Im Spiel rechnet GoldScout das für deinen "
-             "Charakter aus, in deinem eigenen Tempo.",
-    "At %d kills an hour. In game, GoldScout works it out for your character, at your own pace and level.":
-        "Bei %d Kills pro Stunde. Im Spiel rechnet GoldScout das für deinen Charakter aus, in deinem Tempo und auf "
-        "deiner Stufe.",
+    'Crafting reagents only, at how fast GoldScout players kill each mob, or %d kills an hour until enough kills are timed. In game, GoldScout works it out for your character.':
+        'Nur Handwerksmaterialien, so schnell wie GoldScout-Spieler jeden Gegner töten, oder bei %d Kills pro Stunde, bis genug Kills gemessen sind. Im Spiel rechnet GoldScout das für deinen Charakter aus.',
+    'At how fast GoldScout players kill each mob, or %d kills an hour until enough kills are timed. In game, GoldScout works it out for your character and level.':
+        'So schnell wie GoldScout-Spieler jeden Gegner töten, oder bei %d Kills pro Stunde, bis genug Kills gemessen sind. Im Spiel rechnet GoldScout das für deinen Charakter und deine Stufe aus.',
     "At %d pickpockets an hour. In game, GoldScout works it out for your character, at your own pace and level.":
         "Bei %d Taschendiebstählen pro Stunde. Im Spiel rechnet GoldScout das für deinen Charakter aus, in deinem "
         "Tempo und auf deiner Stufe.",

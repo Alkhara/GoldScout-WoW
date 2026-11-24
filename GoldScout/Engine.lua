@@ -122,19 +122,7 @@ Engine.InDungeon = InDungeon
 
 -- Rough kills per hour: mobs well below your level die much faster.
 local function KillsPerHour(playerLevel, mobLevel, base)
-  local diff = playerLevel - mobLevel
-  if diff >= 10 then
-    return base * 2
-  elseif diff >= 6 then
-    return base * 1.6
-  elseif diff >= 3 then
-    return base * 1.25
-  elseif diff >= 0 then
-    return base
-  elseif diff >= -2 then
-    return base * 0.8
-  end
-  return base * 0.6
+  return base * ns.Learn.PaceFactor(playerLevel, mobLevel)   -- the same scale timed kills are stored at
 end
 
 -- Highest beast level you can skin with this Skinning skill.
@@ -864,7 +852,15 @@ local function BuildFarms(self)
     return math.min(level, (minLevel + maxLevel) / 2)
   end
 
-  local function Kills(mobLevel)
+  -- Kills an hour on a mob, and how many timed kills that pace comes from (nil: your Kills per hour setting).
+  -- With the setting at its default, a mob players have timed enough kills of (Data_Community.lua t and s) goes
+  -- at their pace, scaled to your level like any other; a pace you set yourself is used for every mob.
+  local ownPace = settings.killsPerHour ~= (ns.DefaultSetting and ns.DefaultSetting("killsPerHour"))
+  local function Kills(mobLevel, npcID)
+    local shared = not ownPace and npcID and ns.COMMUNITY[npcID]
+    if shared and (shared.t or 0) > 0 and (shared.s or 0) > 0 then
+      return KillsPerHour(level, mobLevel, 3600 * shared.t / shared.s), shared.t
+    end
     return KillsPerHour(level, mobLevel, settings.killsPerHour)
   end
 
@@ -914,11 +910,11 @@ local function BuildFarms(self)
       local net, listed, age = NetPrice(drop.item)
       local chance, seenRate, seenTrials = BlendedChance(drop.chance, drop.npc, drop.item, false)
       local each = net and net * chance
-      local kills = Kills((drop.min + drop.max) / 2)
+      local kills, timed = Kills((drop.min + drop.max) / 2, drop.npc)
       rows[#rows + 1] = AddOtherLoot({
         kind = "Drop", item = drop.item, source = ns.MobName(drop.npc, nil, drop.mob), zone = drop.zone,
         lvl = LevelText(drop.min, drop.max), chance = chance, baseChance = drop.chance, per = "kill",
-        seenRate = seenRate, seenTrials = seenTrials, npc = drop.npc, perHour = kills,
+        seenRate = seenRate, seenTrials = seenTrials, npc = drop.npc, perHour = kills, paceTimed = timed,
         each = each, hour = each and each * kills,
         listed = listed, age = age, note = drop.note, hunt = DropHunt(drop),
       }, drop.npc)
@@ -1027,12 +1023,12 @@ local function BuildFarms(self)
               if confidence.min < 15 then
                 note = note .. L[" Gold per hour uses a cautious rate until more kills are recorded."]
               end
-              local kills = Kills((minLevel + maxLevel) / 2)
+              local kills, timed = Kills((minLevel + maxLevel) / 2, npcID)
               rows[#rows + 1] = AddOtherLoot({
                 kind = "Learned", item = itemID, source = mob, zone = zone,
                 lvl = LevelText(minLevel, maxLevel), chance = rate, per = "kill",
                 seenRate = rate, seenTrials = attempts, confidence = confidence,
-                each = each, hour = each * kills, npc = npcID, perHour = kills,
+                each = each, hour = each * kills, npc = npcID, perHour = kills, paceTimed = timed,
                 listed = listed, age = age,
                 note = note,
                 hunt = MobHunt("Learned:" .. npcID .. ":" .. itemID, "kill", itemID, rate, mob, zone, npcID, nil),
@@ -1363,11 +1359,13 @@ function Engine:MobFarms(rows)
       list[#list + 1] = items[1]
     else
       local first = items[1]
-      local each, perHour, skip, otherLoot = 0, nil, {}, nil
+      local each, perHour, skip, otherLoot, paceTimed = 0, nil, {}, nil, nil
       for _, row in ipairs(items) do
         if row.each and not row.unknownRate then
           each = each + row.each
-          perHour = perHour or row.perHour
+          if not perHour then
+            perHour, paceTimed = row.perHour, row.paceTimed
+          end
           skip[row.item] = true
           otherLoot = otherLoot or row.otherLoot
         end
@@ -1386,7 +1384,7 @@ function Engine:MobFarms(rows)
         end
         group.each = each + (group.otherLoot or 0)
         group.hour = group.each * perHour
-        group.perHour = perHour
+        group.perHour, group.paceTimed = perHour, paceTimed
         if group.otherLoot then
           group.otherRow = {
             kind = "OtherLoot", otherLoot = group.otherLoot, otherLootKills = group.otherLootKills, per = first.per,
