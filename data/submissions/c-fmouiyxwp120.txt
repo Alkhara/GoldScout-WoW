@@ -1,4 +1,4 @@
-GoldScout-export 5^fmouiyxwp120^22
+GoldScout-export 5^fmouiyxwp120^23
 3^5^0^24^25^1431^0.2463^0.3717^5^Flesh Eater^5529:1:1^
 6^11^0^1^2^1429^0.4782^0.3627^11^Kobold Vermin^159:1:1,755:2:2,1374:1:1,1378:1:1,1380:1:1,2210:1:1,2211:1:1,2589:3:3,4536:1:1,247834:1:1^
 48^25^0^21^22^1431^0.7895^0.7149^25^Skeletal Warrior^2378:13:13,2592:10:15,4606:1:1,251336:1:1^
@@ -110,6 +110,8 @@ GoldScout-export 5^fmouiyxwp120^22
 2091^1^0^32^32^1437^0.5292^0.5482^1^Chieftain Nek'rosh^2592:1:1,3625:1:1,3779:1:1^
 2240^3^0^32^33^1416^0.5762^0.6516^3^Syndicate Footpad^4306:1:1,5113:1:1^
 2241^7^0^33^34^1416^0.5810^0.6590^7^Syndicate Thief^2592:1:3,4306:3:3,6986:2:2^
+2252^21^0^34^35^1416^0.4981^0.5744^21^Crushridge Ogre^1710:1:1,2592:1:2,2843:5:5,3658:2:2,3771:1:1,4306:4:5,213547:1:1,248690:1:1^
+2253^14^0^35^36^1416^0.4964^0.5819^14^Crushridge Brute^2843:3:3,3658:3:3,3771:1:1,4306:5:8^
 2349^1^0^24^25^1424^0.3475^0.6209^1^Giant Moss Creeper^2251:1:1^
 2351^3^0^21^22^1424^0.6036^0.3343^3^Gray Bear^3730:1:1,5635:1:1,6582:1:1^
 2354^1^0^22^23^1424^0.5476^0.5235^1^Vicious Gray Bear^11406:1:1^
@@ -224,6 +226,7 @@ GoldScout-export 5^fmouiyxwp120^22
 @i^1696^Curved Raptor Talon
 @i^1697^Keen Raptor Tooth
 @i^1707^Stormwind Brie
+@i^1710^Greater Healing Potion
 @i^1712^Scroll of Spirit II
 @i^1739^Laced Mail Boots
 @i^1740^Laced Mail Bracers
@@ -292,6 +295,7 @@ GoldScout-export 5^fmouiyxwp120^22
 @i^2785^Stiff Recurve Bow
 @i^2786^Oiled Blunderbuss
 @i^2794^An Old History Book
+@i^2843^Dirty Knucklebones
 @i^2874^An Unsent Letter
 @i^2909^Red Wool Bandana
 @i^2926^Head of Bazil Thredd
@@ -330,6 +334,7 @@ GoldScout-export 5^fmouiyxwp120^22
 @i^3638^Sarltooth's Talon
 @i^3639^Ear of Balgaras
 @i^3647^Bright Bracers
+@i^3658^Recovered Tome
 @i^3667^Tender Crocolisk Meat
 @i^3670^Large Slimy Bone
 @i^3676^Slimy Ichor
@@ -340,6 +345,7 @@ GoldScout-export 5^fmouiyxwp120^22
 @i^3730^Big Bear Meat
 @i^3731^Lion Meat
 @i^3770^Mutton Chop
+@i^3771^Wild Hog Shank
 @i^3779^Hefty War Axe
 @i^3795^Interlaced Cloak
 @i^3820^Stranglekelp
@@ -422,6 +428,7 @@ GoldScout-export 5^fmouiyxwp120^22
 @i^211853^Scroll: VOCE WELL
 @i^211854^Scroll: OMIT KESA
 @i^213544^Scroll: TOPAZ YORAK
+@i^213547^Scroll: THAW WORDS
 @i^247834^Nibbled-On Book
 @i^247839^Stolen Book
 @i^248682^Waylaid Crate: Apprentice Herbs
@@ -514,6 +521,7 @@ GoldScout-export 5^fmouiyxwp120^22
 @q^1696^0:15:0
 @q^1697^0:15:0
 @q^1707^1:0:0
+@q^1710^1:0:0
 @q^1712^1:0:0
 @q^1739^0:4:0
 @q^1740^0:4:0
@@ -582,6 +590,7 @@ GoldScout-export 5^fmouiyxwp120^22
 @q^2785^0:2:0
 @q^2786^0:2:0
 @q^2794^1:12:0
+@q^2843^1:12:0
 @q^2874^1:12:0
 @q^2909^1:12:0
 @q^2926^1:12:0
@@ -620,6 +629,7 @@ GoldScout-export 5^fmouiyxwp120^22
 @q^3638^1:12:0
 @q^3639^1:12:0
 @q^3647^2:4:0
+@q^3658^1:12:0
 @q^3667^1:7:1
 @q^3670^0:15:0
 @q^3676^0:15:0
@@ -630,6 +640,7 @@ GoldScout-export 5^fmouiyxwp120^22
 @q^3730^1:7:1
 @q^3731^1:7:1
 @q^3770^1:0:0
+@q^3771^1:0:0
 @q^3779^0:2:0
 @q^3795^0:4:0
 @q^3820^1:7:1
@@ -712,6 +723,7 @@ GoldScout-export 5^fmouiyxwp120^22
 @q^211853^1:0:0
 @q^211854^1:0:0
 @q^213544^1:0:0
+@q^213547^1:0:0
 @q^247834^1:15:0
 @q^247839^1:12:0
 @q^248682^1:0:1
@@ -1636,6 +1648,8 @@ GoldScout-export 5^fmouiyxwp120^22
 @a^2091^210:1
 @a^2240^271:3
 @a^2241^251:2,271:5
+@a^2252^209:4,210:5,211:1,230:4,249:7
+@a^2253^209:1,210:2,229:4,230:1,249:2,250:4
 @a^2349^246:1
 @a^2351^131:2,152:1
 @a^2354^210:1

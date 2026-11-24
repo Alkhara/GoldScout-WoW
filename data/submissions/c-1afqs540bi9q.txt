@@ -1,4 +1,4 @@
-GoldScout-export 5^1afqs540bi9q^13
+GoldScout-export 5^1afqs540bi9q^14
 205^12^0^28^29^1431^0.6422^0.4996^12^Nightbane Dark Runner^^
 206^8^0^29^30^1431^0.5860^0.7908^8^Nightbane Vile Fang^1783:2:2,5635:2:2^
 210^5^0^26^27^1431^0.2383^0.3302^5^Bone Chewer^1129:2:2,2592:1:2,3048:1:1,4306:1:2^
@@ -30,8 +30,12 @@ GoldScout-export 5^1afqs540bi9q^13
 1270^2^0^30^30^1431^0.7706^0.3630^2^Fetid Corpse^887:1:1,6530:1:1,248694:1:1^
 1871^3^0^31^31^1431^0.2792^0.3084^3^Eliza's Guard^^
 2044^1^0^26^26^1429^0.8558^0.6968^1^Forlorn Spirit^2592:1:2^
-2376^6^0^30^31^1424^0.3904^0.6899^6^Torn Fin Oracle^1827:1:1,5524:2:2,5785:1:1,17057:4:4,17058:4:4,249881:1:1^
-2377^9^0^31^32^1424^0.4040^0.6845^9^Torn Fin Tidehunter^865:1:1,5524:4:4,17057:1:1,17058:4:4,213545:1:1^
+2248^18^0^30^31^1424^0.4502^0.2937^18^Cave Yeti^1708:1:1,2289:1:1,3385:1:1,3720:7:7^
+2249^8^0^31^32^1424^0.4436^0.2706^8^Ferocious Yeti^3720:3:3,3779:1:1,3786:1:1^
+2369^8^0^30^31^1424^0.5721^0.6725^8^Daggerspine Shorehunter^5524:3:3,6308:1:1,7072:1:1,17057:1:1,17058:1:1^
+2371^15^0^31^32^1424^0.5772^0.6695^15^Daggerspine Siren^3385:1:1,6308:1:1,7072:1:1,17057:3:3,17058:7:7^
+2376^19^0^30^31^1424^0.4072^0.6802^19^Torn Fin Oracle^929:1:1,1826:1:1,1827:1:1,1831:1:1,3716:4:4,5524:8:8,5785:2:2,17057:10:10,17058:8:8,249881:1:1^
+2377^23^0^31^32^1424^0.4098^0.6837^23^Torn Fin Tidehunter^865:1:1,3716:6:6,5524:7:7,17057:2:2,17058:8:8,213545:1:1^
 2462^6^0^25^25^1431^0.2343^0.3590^6^Flesh Eating Worm^^
 4969^2^0^25^25^1453^0.7358^0.5947^2^Old Town Thug^^
 6206^5^0^0^0^0^0.0000^0.0000^0^^1748:1:1,1829:1:1,4306:1:2,6584:1:1,9309:1:1^
@@ -78,6 +82,7 @@ GoldScout-export 5^1afqs540bi9q^13
 @i^1378^Frayed Pants
 @i^1478^Scroll of Protection II
 @i^1686^Bristly Whisker
+@i^1708^Sweet Nectar
 @i^1711^Scroll of Stamina II
 @i^1747^Linked Chain Boots
 @i^1748^Linked Chain Bracers
@@ -92,6 +97,7 @@ GoldScout-export 5^1afqs540bi9q^13
 @i^1798^Rawhide Cloak
 @i^1808^Tough Leather Pants
 @i^1821^Warped Blade
+@i^1826^Rock Maul
 @i^1827^Meat Cleaver
 @i^1829^Short Cutlass
 @i^1831^Oaken War Staff
@@ -100,6 +106,7 @@ GoldScout-export 5^1afqs540bi9q^13
 @i^2077^Magician Staff of Power
 @i^2211^Bent Large Shield
 @i^2222^Tower Shield
+@i^2289^Scroll of Strength II
 @i^2290^Scroll of Intellect II
 @i^2382^The Embalmer's Heart
 @i^2589^Linen Cloth
@@ -115,7 +122,11 @@ GoldScout-export 5^1afqs540bi9q^13
 @i^3514^Mor'Ladim's Skull
 @i^3629^Mistmantle Family Ring
 @i^3674^Decomposed Boot
+@i^3716^Murloc Head
+@i^3720^Yeti Fur
+@i^3779^Hefty War Axe
 @i^3785^Keen Axe
+@i^3786^Shiny Dirk
 @i^3787^Stone Club
 @i^3803^Hardened Cloak
 @i^3806^Hardened Leather Shoulderpads
@@ -131,9 +142,11 @@ GoldScout-export 5^1afqs540bi9q^13
 @i^5529^Tomb Dust
 @i^5635^Sharp Claw
 @i^5785^Thick Murloc Scale
+@i^6308^Raw Bristle Whisker Catfish
 @i^6530^Nightcrawlers
 @i^6584^Scouting Tunic of the Boar
 @i^6893^Workshop Key
+@i^7072^Naga Scale
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
 @i^7098^Splintered Tusk
@@ -171,6 +184,7 @@ GoldScout-export 5^1afqs540bi9q^13
 @q^1378^0:4:0
 @q^1478^1:0:0
 @q^1686^0:15:0
+@q^1708^1:0:0
 @q^1711^1:0:0
 @q^1747^0:4:0
 @q^1748^0:4:0
@@ -185,6 +199,7 @@ GoldScout-export 5^1afqs540bi9q^13
 @q^1798^0:4:0
 @q^1808^0:4:0
 @q^1821^0:2:0
+@q^1826^0:2:0
 @q^1827^0:2:0
 @q^1829^0:2:0
 @q^1831^0:2:0
@@ -193,6 +208,7 @@ GoldScout-export 5^1afqs540bi9q^13
 @q^2077^2:2:0
 @q^2211^0:4:0
 @q^2222^0:4:0
+@q^2289^1:0:0
 @q^2290^1:0:0
 @q^2382^1:12:0
 @q^2589^1:7:1
@@ -208,7 +224,11 @@ GoldScout-export 5^1afqs540bi9q^13
 @q^3514^1:12:0
 @q^3629^1:12:0
 @q^3674^0:15:0
+@q^3716^1:12:0
+@q^3720^1:12:0
+@q^3779^0:2:0
 @q^3785^0:2:0
+@q^3786^0:2:0
 @q^3787^0:2:0
 @q^3803^0:4:0
 @q^3806^0:4:0
@@ -224,9 +244,11 @@ GoldScout-export 5^1afqs540bi9q^13
 @q^5529^0:15:0
 @q^5635^1:7:1
 @q^5785^1:7:1
+@q^6308^1:7:1
 @q^6530^1:0:0
 @q^6584^2:4:0
 @q^6893^1:13:0
+@q^7072^1:7:1
 @q^7073^0:15:0
 @q^7074^0:15:0
 @q^7098^0:15:0
@@ -926,6 +948,7 @@ GoldScout-export 5^1afqs540bi9q^13
 @c^273937^
 @c^273938^
 @c^273939^
+@c^274490^
 @c^274971^
 @c^274976^
 @c^275610^
@@ -984,6 +1007,7 @@ GoldScout-export 5^1afqs540bi9q^13
 @c^279256^
 @c^279257^
 @c^279258^
+@c^279938^
 @c^279941^
 @c^279945^
 @c^279948^
@@ -991,8 +1015,13 @@ GoldScout-export 5^1afqs540bi9q^13
 @c^279957^
 @c^279960^
 @c^279961^
+@c^279965^
+@c^279966^
+@c^279967^
+@c^279969^
 @c^279974^
 @c^279978^
+@c^279979^
 @c^279981^
 @c^279982^
 @c^286152^
@@ -1027,8 +1056,12 @@ GoldScout-export 5^1afqs540bi9q^13
 @a^1270^155:2
 @a^1871^125:3
 @a^2044^277:1
-@a^2376^267:3,268:2,288:1
-@a^2377^267:3,268:4,269:2
+@a^2248^108:9,128:1,129:8
+@a^2249^108:5,109:3
+@a^2369^250:2,251:1,271:4,292:1
+@a^2371^251:4,271:9,291:2
+@a^2376^249:1,267:7,268:10,288:1
+@a^2377^267:7,268:13,269:2,288:1
 @a^2462^124:2,144:4
 @a^4969^234:2
 @a^6208^208:1

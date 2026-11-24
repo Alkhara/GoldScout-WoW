@@ -1,4 +1,4 @@
-GoldScout-export 6^iyirxku9bmhk^8
+GoldScout-export 6^iyirxku9bmhk^9
 30^1^0^6^6^1429^0.2797^0.6734^1^Forest Spider^5465:1:2^
 94^4^0^5^6^1429^0.4147^0.5670^4^Defias Cutpurse^1427:1:1^
 122^1^0^18^18^1436^0.3794^0.7860^1^Defias Highwayman^^
@@ -60,7 +60,9 @@ GoldScout-export 6^iyirxku9bmhk^8
 2354^1^0^22^23^1424^0.5399^0.4489^1^Vicious Gray Bear^2940:1:1,3702:1:1^
 2384^2^0^23^24^1424^0.5301^0.4575^2^Starving Mountain Lion^5136:2:2^
 3662^2^0^17^17^1439^0.5667^0.2678^2^Delmanis the Hated^2592:2:3^
-3819^12^0^20^21^1440^0.3009^0.4967^12^Wildthorn Stalker^878:2:2,1081:3:3,1288:2:2,2251:6:6,3174:6:6,3182:3:3,15307:1:1,248689:1:1^
+3740^1^0^21^21^1440^0.2099^0.4210^1^Saltspittle Muckdweller^1468:1:1,5784:1:1,17057:1:1^
+3819^21^0^20^21^1440^0.2974^0.5099^21^Wildthorn Stalker^878:5:5,1081:8:8,1288:2:2,2251:8:8,3174:11:11,3182:3:3,4428:3:3,15307:1:1,248689:1:1^
+3823^2^0^19^20^1440^0.2527^0.4991^2^Ghostpaw Runner^1015:2:2^
 3925^1^0^23^24^1440^0.3201^0.4312^1^Thistlefur Avenger^^
 3947^2^0^0^0^0^0.0000^0.0000^0^^1812:1:1,2592:1:2^
 4416^4^0^0^0^0^0.0000^0.0000^0^^2589:1:1,9775:1:1,10402:1:1^
@@ -88,6 +90,7 @@ GoldScout-export 6^iyirxku9bmhk^8
 @i^858^Lesser Healing Potion
 @i^878^Fist-sized Spinneret
 @i^955^Scroll of Intellect
+@i^1015^Lean Wolf Flank
 @i^1080^Tough Condor Meat
 @i^1081^Crisp Spider Meat
 @i^1179^Ice Cold Milk
@@ -164,6 +167,7 @@ GoldScout-export 6^iyirxku9bmhk^8
 @i^3375^Calico Bracers
 @i^3649^Tribal Buckler
 @i^3702^Bear Gall Bladder
+@i^4428^Spider Palp
 @i^4537^Tel'Abim Banana
 @i^4675^Tribal Belt
 @i^4775^Cracked Bill
@@ -251,6 +255,7 @@ GoldScout-export 6^iyirxku9bmhk^8
 @q^858^1:0:0
 @q^878^0:7:0
 @q^955^1:0:0
+@q^1015^1:7:1
 @q^1080^1:7:1
 @q^1081^1:7:1
 @q^1179^1:0:0
@@ -327,6 +332,7 @@ GoldScout-export 6^iyirxku9bmhk^8
 @q^3375^0:4:0
 @q^3649^1:4:0
 @q^3702^0:15:0
+@q^4428^0:15:0
 @q^4537^1:0:0
 @q^4675^1:4:0
 @q^4775^0:15:0
@@ -1667,7 +1673,9 @@ GoldScout-export 6^iyirxku9bmhk^8
 @a^2354^170:1
 @a^2384^170:1,190:1
 @a^3662^111:2
-@a^3819^166:2,167:1,185:1,186:1,205:6,226:1
+@a^3740^164:1
+@a^3819^166:2,167:1,184:3,185:1,186:1,205:8,206:1,226:2,227:2
+@a^3823^184:1,205:1
 @a^3925^166:1
 @a^10373^130:2
 @a^14271^242:1

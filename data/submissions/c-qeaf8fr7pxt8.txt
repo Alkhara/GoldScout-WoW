@@ -1,5 +1,7 @@
-GoldScout-export 6^qeaf8fr7pxt8^15
+GoldScout-export 6^qeaf8fr7pxt8^16
 3098^3^0^1^2^1411^0.4411^0.6375^3^Mottled Boar^4865:2:2,7098:2:2^
+3101^4^0^3^4^1411^0.4513^0.5775^4^Vile Familiar^1370:1:1,1378:1:1,2589:1:1,2649:1:1^
+3124^21^0^3^3^1411^0.4497^0.5956^21^Scorpid Worker^1369:1:1,1374:1:1,1377:2:2,1378:1:1,2210:1:1,2652:1:1,4862:9:9,4867:4:4,7099:5:5,7100:4:4,7101:4:4^
 4029^1^0^27^27^1442^0.3139^0.7265^1^Blackened Ancient^^
 4038^1^0^26^26^1442^0.3115^0.7319^1^Burning Destroyer^16312:1:1^
 4113^1^0^28^29^1441^0.5976^0.5529^1^Gravelsnout Digger^4306:1:1^
@@ -81,6 +83,11 @@ GoldScout-export 6^qeaf8fr7pxt8^15
 @i^729^Stringy Vulture Meat
 @i^929^Healing Potion
 @i^1288^Large Venom Sac
+@i^1369^Ragged Leather Belt
+@i^1370^Ragged Leather Bracers
+@i^1374^Frayed Shoes
+@i^1377^Frayed Gloves
+@i^1378^Frayed Pants
 @i^1477^Scroll of Agility II
 @i^1701^Curved Basilisk Claw
 @i^1702^Intact Basilisk Spine
@@ -88,9 +95,12 @@ GoldScout-export 6^qeaf8fr7pxt8^15
 @i^1711^Scroll of Stamina II
 @i^1725^Large Knapsack
 @i^1823^Bludgeoning Cudgel
+@i^2210^Battered Buckler
 @i^2295^Large Boar Tusk
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2649^Flimsy Chain Belt
+@i^2652^Flimsy Chain Cloak
 @i^2677^Boar Ribs
 @i^2819^Cross Dagger of the Channeler
 @i^2838^Heavy Stone
@@ -114,7 +124,9 @@ GoldScout-export 6^qeaf8fr7pxt8^15
 @i^4556^Speckled Shell Fragment
 @i^4582^Soft Bushy Tail
 @i^4784^Lifeless Stone
+@i^4862^Scorpid Worker Tail
 @i^4865^Ruined Pelt
+@i^4867^Broken Scorpid Leg
 @i^5114^Severed Talon
 @i^5115^Broken Wishbone
 @i^5116^Long Tail Feather
@@ -143,6 +155,9 @@ GoldScout-export 6^qeaf8fr7pxt8^15
 @i^6986^Crimson Lotus
 @i^7072^Naga Scale
 @i^7098^Splintered Tusk
+@i^7099^Severed Pincer
+@i^7100^Sticky Ichor
+@i^7101^Bug Eye
 @i^8146^Wicked Claw
 @i^9869^Renegade Belt of the Knight
 @i^11384^Broken Basilisk Teeth
@@ -184,6 +199,11 @@ GoldScout-export 6^qeaf8fr7pxt8^15
 @q^729^1:7:1
 @q^929^1:0:0
 @q^1288^1:7:1
+@q^1369^0:4:0
+@q^1370^0:4:0
+@q^1374^0:4:0
+@q^1377^0:4:0
+@q^1378^0:4:0
 @q^1477^1:0:0
 @q^1701^0:15:0
 @q^1702^0:15:0
@@ -191,9 +211,12 @@ GoldScout-export 6^qeaf8fr7pxt8^15
 @q^1711^1:0:0
 @q^1725^1:1:0
 @q^1823^0:2:0
+@q^2210^0:4:0
 @q^2295^0:15:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2649^0:4:0
+@q^2652^0:4:0
 @q^2677^1:7:1
 @q^2819^2:2:0
 @q^2838^1:7:1
@@ -217,7 +240,9 @@ GoldScout-export 6^qeaf8fr7pxt8^15
 @q^4556^0:15:0
 @q^4582^1:12:0
 @q^4784^0:15:0
+@q^4862^1:12:0
 @q^4865^0:15:0
+@q^4867^0:15:0
 @q^5114^0:15:0
 @q^5115^0:15:0
 @q^5116^1:7:1
@@ -246,6 +271,9 @@ GoldScout-export 6^qeaf8fr7pxt8^15
 @q^6986^0:15:0
 @q^7072^1:7:1
 @q^7098^0:15:0
+@q^7099^0:15:0
+@q^7100^0:15:0
+@q^7101^0:15:0
 @q^8146^1:7:1
 @q^9869^2:4:0
 @q^11384^0:15:0
@@ -422,6 +450,8 @@ GoldScout-export 6^qeaf8fr7pxt8^15
 @c^279982^
 @c^286152^
 @a^3098^248:2,268:1
+@a^3101^228:1,229:3
+@a^3124^228:6,229:10,248:1,249:4
 @a^4029^286:1
 @a^4038^286:1
 @a^4113^231:1
