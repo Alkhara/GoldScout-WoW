@@ -1,4 +1,4 @@
-GoldScout-export 6^opwwm1mhz30c^19
+GoldScout-export 6^opwwm1mhz30c^20
 1783^1^0^50^50^1422^0.3839^0.5465^1^Skeletal Flayer^12840:1:1,14047:1:1^
 1784^2^0^51^52^1422^0.3837^0.5503^2^Skeletal Sorcerer^12840:2:2^
 1791^2^0^50^52^1422^0.3843^0.5459^2^Slavering Ghoul^6530:1:1,13443:1:1^
@@ -42,9 +42,13 @@ GoldScout-export 6^opwwm1mhz30c^19
 2927^1^0^42^43^1425^0.3377^0.5401^1^Vicious Owlbeast^^
 2928^2^0^44^45^1425^0.4253^0.5400^2^Primitive Owlbeast^^
 2929^15^0^46^47^1425^0.6102^0.4790^15^Savage Owlbeast^5117:1:1,5636:2:2,8146:2:2,11417:3:3,12207:4:4^
-2955^9^0^1^2^1412^0.4857^0.7988^9^Plainstrider^1372:1:1,2649:1:1,3363:1:1,4739:7:7,4740:7:7,4757:3:3,7096:5:5,7097:1:1^
+2952^15^0^3^4^1412^0.5768^0.7915^15^Bristleback Quilboar^159:2:2,2589:3:3,2652:1:1,3363:1:1,4536:1:1,4770:11:11^
+2953^2^0^4^4^1412^0.5884^0.7825^2^Bristleback Shaman^1388:1:1,4770:1:1^
+2954^2^0^4^5^1412^0.5664^0.7813^2^Bristleback Battleboar^1377:1:1,7098:2:2^
+2955^23^0^1^2^1412^0.4767^0.8039^23^Plainstrider^1372:1:1,1378:2:2,2649:2:2,2650:1:1,3363:2:2,4739:7:7,4740:7:7,4757:9:9,7096:10:10,7097:6:6^
+2958^1^0^6^6^1412^0.4633^0.6755^1^Prairie Wolf^2672:1:1,3300:1:1^
 2961^12^0^3^3^1412^0.4697^0.8868^12^Mountain Cougar^1368:1:1,2211:2:2,2652:1:1,4742:10:10,4865:4:4,7073:5:5,7074:6:6^
-2966^3^0^3^4^1412^0.5318^0.8215^3^Battleboar^1367:1:1,4848:2:2,4849:2:2,4865:2:2,7098:1:1^
+2966^20^0^3^4^1412^0.5315^0.8081^20^Battleboar^1367:1:1,1369:1:1,1374:1:1,1376:1:1,1377:1:1,1380:2:2,4848:8:8,4849:8:8,4865:15:15,7098:7:7^
 3975^1^0^0^0^0^0.0000^0.0000^0^^7718:1:1^
 3976^1^0^0^0^0^0.0000^0.0000^0^^7726:1:1^
 4286^3^0^0^0^0^0.0000^0.0000^0^^^
@@ -144,6 +148,7 @@ GoldScout-export 6^opwwm1mhz30c^19
 7996^1^0^50^50^1425^0.4792^0.6720^1^Qiaga the Keeper^9241:1:1^
 8095^1^0^0^0^0^0.0000^0.0000^0^^1702:1:1,4092:1:1^
 8127^2^0^0^0^0^0.0000^0.0000^0^^9523:1:1,9641:2:2,15245:1:1^
+8554^4^0^5^5^1412^0.6101^0.7793^4^Chief Sharptusk Thornmantle^828:1:1,2589:1:1,10459:1:1^
 8667^1^0^43^43^1446^0.5320^0.4172^1^Gusting Vortex^^
 8996^11^0^42^48^1446^0.6356^0.3885^11^Voidwalker Minion^^
 9396^1^0^41^41^1446^0.5667^0.3544^1^Ground Pounder^4784:1:1,7075:1:1^
@@ -172,13 +177,22 @@ GoldScout-export 6^opwwm1mhz30c^19
 270772^1^0^49^49^1425^0.2451^0.6539^1^Witch Doctor Ti'ik^279913:1:1^
 271780^3^0^0^0^0^0.0000^0.0000^0^^4021:1:1,4338:2:8,274028:1:1^
 271784^1^0^0^0^0^0.0000^0.0000^0^^274028:1:1^
+@i^159^Refreshing Spring Water
 @i^556^Buzzard Beak
+@i^828^Small Blue Pouch
 @i^863^Gloom Reaper of Intellect
 @i^878^Fist-sized Spinneret
 @i^1081^Crisp Spider Meat
 @i^1367^Ragged Leather Boots
 @i^1368^Ragged Leather Gloves
+@i^1369^Ragged Leather Belt
 @i^1372^Ragged Cloak
+@i^1374^Frayed Shoes
+@i^1376^Frayed Cloak
+@i^1377^Frayed Gloves
+@i^1378^Frayed Pants
+@i^1380^Frayed Robe
+@i^1388^Crooked Staff
 @i^1464^Buzzard Talon
 @i^1477^Scroll of Agility II
 @i^1520^Troll Sweat
@@ -195,12 +209,16 @@ GoldScout-export 6^opwwm1mhz30c^19
 @i^2251^Gooey Spider Leg
 @i^2453^Bruiseweed
 @i^2459^Swiftness Potion
+@i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2649^Flimsy Chain Belt
+@i^2650^Flimsy Chain Boots
 @i^2652^Flimsy Chain Cloak
+@i^2672^Stringy Wolf Meat
 @i^2771^Tin Ore
 @i^2838^Heavy Stone
 @i^3208^Conk Hammer of Arcane Protection
+@i^3300^Rabbit's Foot
 @i^3358^Khadgar's Whisker
 @i^3363^Frayed Belt
 @i^3404^Buzzard Wing
@@ -245,6 +263,7 @@ GoldScout-export 6^opwwm1mhz30c^19
 @i^4419^Scroll of Intellect III
 @i^4421^Scroll of Protection III
 @i^4422^Scroll of Stamina III
+@i^4536^Shiny Red Apple
 @i^4544^Mulgore Spice Bread
 @i^4553^Jagged Piece of Stone
 @i^4554^Shiny Polished Stone
@@ -267,6 +286,7 @@ GoldScout-export 6^opwwm1mhz30c^19
 @i^4740^Plainstrider Feather
 @i^4742^Mountain Cougar Pelt
 @i^4757^Cracked Egg Shells
+@i^4770^Bristleback Belt
 @i^4784^Lifeless Stone
 @i^4848^Battleboar Snout
 @i^4849^Battleboar Flank
@@ -362,6 +382,7 @@ GoldScout-export 6^opwwm1mhz30c^19
 @i^10058^Duskwoven Sandals of the Channeler
 @i^10083^Lord's Crown of the Bandit
 @i^10286^Heart of the Wild
+@i^10459^Chief Sharptusk Thornmantle's Head
 @i^10660^First Mosh'aru Tablet
 @i^10661^Second Mosh'aru Tablet
 @i^11018^Un'Goro Soil
@@ -437,13 +458,22 @@ GoldScout-export 6^opwwm1mhz30c^19
 @i^276744^Zarla's Snack Pouch
 @i^277112^Zum'rah's Head
 @i^279913^Ti'ik's Head
+@q^159^1:0:0
 @q^556^0:15:0
+@q^828^1:1:0
 @q^863^2:2:0
 @q^878^0:7:0
 @q^1081^1:7:1
 @q^1367^0:4:0
 @q^1368^0:4:0
+@q^1369^0:4:0
 @q^1372^0:4:0
+@q^1374^0:4:0
+@q^1376^0:4:0
+@q^1377^0:4:0
+@q^1378^0:4:0
+@q^1380^0:4:0
+@q^1388^1:2:0
 @q^1464^0:15:0
 @q^1477^1:0:0
 @q^1520^0:15:0
@@ -460,12 +490,16 @@ GoldScout-export 6^opwwm1mhz30c^19
 @q^2251^1:7:1
 @q^2453^1:7:1
 @q^2459^1:0:0
+@q^2589^1:7:1
 @q^2592^1:7:1
 @q^2649^0:4:0
+@q^2650^0:4:0
 @q^2652^0:4:0
+@q^2672^1:7:1
 @q^2771^1:7:1
 @q^2838^1:7:1
 @q^3208^2:2:0
+@q^3300^0:15:0
 @q^3358^1:7:1
 @q^3363^0:4:0
 @q^3404^1:7:1
@@ -510,6 +544,7 @@ GoldScout-export 6^opwwm1mhz30c^19
 @q^4419^1:0:0
 @q^4421^1:0:0
 @q^4422^1:0:0
+@q^4536^1:0:0
 @q^4544^1:0:0
 @q^4553^0:15:0
 @q^4554^0:15:0
@@ -532,6 +567,7 @@ GoldScout-export 6^opwwm1mhz30c^19
 @q^4740^1:12:0
 @q^4742^1:12:0
 @q^4757^0:15:0
+@q^4770^1:12:0
 @q^4784^0:15:0
 @q^4848^1:12:0
 @q^4849^1:12:0
@@ -627,6 +663,7 @@ GoldScout-export 6^opwwm1mhz30c^19
 @q^10058^2:4:0
 @q^10083^2:4:0
 @q^10286^1:7:1
+@q^10459^1:12:0
 @q^10660^1:12:0
 @q^10661^1:12:0
 @q^11018^1:12:0
@@ -1115,9 +1152,13 @@ GoldScout-export 6^opwwm1mhz30c^19
 @a^2927^206:1
 @a^2928^188:1,248:1
 @a^2929^171:1,172:1,190:1,191:3,192:6,212:3
-@a^2955^309:6,329:3
+@a^2952^311:10,312:2,331:3
+@a^2953^311:1,312:1
+@a^2954^311:2
+@a^2955^309:12,329:11
+@a^2958^269:1
 @a^2961^349:11,369:1
-@a^2966^310:2,351:1
+@a^2966^310:9,330:10,351:1
 @a^4465^253:1,273:3
 @a^4466^150:5,151:1,170:2,172:1,173:6,193:1,194:15
 @a^4467^150:5,173:1,194:8
@@ -1149,6 +1190,7 @@ GoldScout-export 6^opwwm1mhz30c^19
 @a^7809^253:3
 @a^7995^311:1
 @a^7996^269:1
+@a^8554^312:4
 @a^8667^170:1
 @a^8996^152:10,172:1
 @a^9396^151:1

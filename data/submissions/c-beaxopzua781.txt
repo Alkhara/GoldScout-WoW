@@ -1,4 +1,4 @@
-GoldScout-export 6^beaxopzua781^30
+GoldScout-export 6^beaxopzua781^31
 30^2^0^5^6^1429^0.3900^0.7698^2^Forest Spider^1476:1:1,2590:1:1,5465:2:4^
 36^1^0^11^12^1436^0.3288^0.3477^1^Harvest Golem^732:1:1^
 113^2^0^5^6^1429^0.4135^0.7546^2^Stonetusk Boar^769:1:1,3171:1:1^
@@ -137,6 +137,9 @@ GoldScout-export 6^beaxopzua781^30
 4275^1^0^0^0^0^0.0000^0.0000^0^^6324:1:1^
 4278^1^0^0^0^0^0.0000^0.0000^0^^3191:1:1,251346:1:1,273105:1:1^
 4279^1^0^0^0^0^0.0000^0.0000^0^^273645:1:1^
+4356^1^0^40^40^1445^0.3341^0.6470^1^Bloodfen Razormaw^4461:1:1,12184:1:1^
+4357^2^0^40^41^1445^0.3263^0.6506^2^Bloodfen Lashtail^4461:1:1,4586:1:1,12184:1:1,250184:1:1^
+4506^1^0^44^44^1434^0.3071^0.9010^1^Bloodsail Swabby^4338:1:1^
 4788^1^0^21^21^1414^0.4391^0.3496^1^Fallenroot Satyr^^
 4798^11^0^0^0^0^0.0000^0.0000^0^^1206:1:1,1753:1:1,1778:1:1,1802:1:1,2592:2:4,3385:1:1^
 4799^8^0^0^0^0^0.0000^0.0000^0^^1776:1:1,2592:3:8,5952:4:4,14127:1:1^
@@ -584,6 +587,7 @@ GoldScout-export 6^beaxopzua781^30
 @i^248703^Waylaid Crate: Apprentice Ingots
 @i^248706^Waylaid Crate: Journeyman Ingots
 @i^248707^Waylaid Crate: Journeyman Parts
+@i^250184^Recipe: Raptor Rouladen
 @i^251346^Plans: Guard's Chain Leggings
 @i^251388^Plans: Hard Gold Leggings
 @i^251961^Arcane Mote
@@ -965,6 +969,7 @@ GoldScout-export 6^beaxopzua781^30
 @q^248703^2:0:1
 @q^248706^2:0:1
 @q^248707^2:0:1
+@q^250184^1:9:0
 @q^251346^3:9:0
 @q^251388^2:9:0
 @q^251961^1:12:0
@@ -1016,6 +1021,7 @@ GoldScout-export 6^beaxopzua781^30
 @m^1436^Westfall
 @m^1437^Wetlands
 @m^1439^Darkshore
+@m^1445^Dustwallow Marsh
 @m^1453^Stormwind City
 @c^118^
 @c^724^
@@ -2405,6 +2411,9 @@ GoldScout-export 6^beaxopzua781^30
 @a^3381^192:1
 @a^3382^192:1
 @a^3467^192:1
+@a^4356^246:1
+@a^4357^246:1,266:1
+@a^4506^366:1
 @a^4788^128:1
 @a^4802^128:2
 @a^4803^128:2,148:1

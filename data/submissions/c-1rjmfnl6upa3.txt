@@ -1,4 +1,4 @@
-GoldScout-export 6^1rjmfnl6upa3^9
+GoldScout-export 6^1rjmfnl6upa3^10
 1525^1^0^6^6^1420^0.5340^0.5031^1^Rotting Dead^^
 1526^4^0^6^7^1420^0.5241^0.5161^4^Ravaged Corpse^118:1:1,1416:1:1,2589:1:1,2855:2:2^
 1783^10^0^50^51^1422^0.4608^0.7162^10^Skeletal Flayer^4023:1:1,8948:1:1,12840:5:5,13446:1:1,14047:2:2^
@@ -69,15 +69,18 @@ GoldScout-export 6^1rjmfnl6upa3^9
 8127^1^0^0^0^0^0.0000^0.0000^0^^4338:1:1,9639:1:1^
 9779^3^0^54^56^1428^0.6602^0.2167^3^Flamekin Rager^8146:1:1^
 11075^1^0^53^53^1422^0.3751^0.5768^1^Cauldron Lord Bilemaw^13194:1:1^
+243509^1^0^56^57^2482^0.4810^0.8286^1^Noxious Slime^20763:1:1^
 244525^1^0^55^56^2482^0.7000^0.8026^1^Hyjal Bear^248695:1:1^
 248041^2^0^56^57^2482^0.6914^0.7877^2^Hyjal Stag^5119:1:1,5471:1:1,251641:2:2^
 248042^1^0^55^56^2482^0.6956^0.7423^1^Tainted Hyjal Stag^5471:1:1^
 248395^22^0^55^56^2482^0.6252^0.7106^22^Tainted Shrubbery^3358:1:1,8766:2:2,8948:1:1,10286:4:4,10305:1:1,10308:1:1,13824:1:1,247892:12:12,256036:1:1,281017:1:1^
 249051^1^0^57^57^2482^0.6539^0.7433^1^Celastrus the Bitter^282028:1:1^
 249491^1^0^59^59^2482^0.7420^0.7581^1^Mountain Squallclimber^11419:1:1^
-260422^5^0^56^57^2482^0.4374^0.7335^5^Ashen Acolyte^274396:3:3^
+260422^24^0^56^57^2482^0.4652^0.7095^24^Ashen Acolyte^3971:1:1,8952:2:2,12693:1:1,13446:1:1,14047:8:15,274396:12:12^
+260439^3^0^56^56^2482^0.4639^0.6879^3^Subjugated Assistant^^
 260443^1^0^58^58^2482^0.4453^0.6848^1^Dazka Shadowsleep^^
 261914^1^0^55^55^2482^0.7709^0.7563^1^Tainted Hyjal Owl^15420:1:2^
+276138^3^0^56^57^2482^0.4943^0.7129^3^Subjugated Assistant^^
 @i^118^Minor Healing Potion
 @i^1416^Rusty Hatchet
 @i^1464^Buzzard Talon
@@ -94,6 +97,7 @@ GoldScout-export 6^1rjmfnl6upa3^9
 @i^3928^Superior Healing Potion
 @i^3961^Thick Leather Belt
 @i^3964^Thick Cloak
+@i^3971^Smooth Leather Bracers
 @i^4023^Fine Pointed Dagger
 @i^4026^Sentinel Musket
 @i^4093^Large Basilisk Tail
@@ -137,6 +141,7 @@ GoldScout-export 6^1rjmfnl6upa3^9
 @i^8766^Morning Glory Dew
 @i^8932^Alterac Swiss
 @i^8948^Dried King Bolete
+@i^8952^Roasted Quail
 @i^8973^Thick Yeti Hide
 @i^9247^Hatecrest Naga Scale
 @i^9467^Gahz'rilla Fang
@@ -162,6 +167,7 @@ GoldScout-export 6^1rjmfnl6upa3^9
 @i^12203^Red Wolf Meat
 @i^12207^Giant Egg
 @i^12208^Tender Wolf Meat
+@i^12693^Plans: Thorium Boots
 @i^12840^Minion's Scourgestone
 @i^13194^Felstone Field Cauldron Key
 @i^13446^Major Healing Potion
@@ -175,6 +181,7 @@ GoldScout-export 6^1rjmfnl6upa3^9
 @i^18082^Zum'rah's Vexing Cane
 @i^18956^Miniaturization Residue
 @i^18958^Water Elemental Core
+@i^20763^Broken Weapon
 @i^213544^Scroll: TOPAZ YORAK
 @i^247892^Verdant Leaves
 @i^248690^Waylaid Crate: Earthly Expert Herbs
@@ -207,6 +214,7 @@ GoldScout-export 6^1rjmfnl6upa3^9
 @q^3928^1:0:0
 @q^3961^0:4:0
 @q^3964^0:4:0
+@q^3971^0:4:0
 @q^4023^0:2:0
 @q^4026^0:2:0
 @q^4093^0:15:0
@@ -250,6 +258,7 @@ GoldScout-export 6^1rjmfnl6upa3^9
 @q^8766^1:0:0
 @q^8932^1:0:0
 @q^8948^1:0:0
+@q^8952^1:0:0
 @q^8973^1:12:0
 @q^9247^1:12:0
 @q^9467^3:2:0
@@ -275,6 +284,7 @@ GoldScout-export 6^1rjmfnl6upa3^9
 @q^12203^1:7:1
 @q^12207^1:7:1
 @q^12208^1:7:1
+@q^12693^2:9:0
 @q^12840^1:12:0
 @q^13194^1:12:0
 @q^13446^1:0:0
@@ -288,6 +298,7 @@ GoldScout-export 6^1rjmfnl6upa3^9
 @q^18082^3:2:0
 @q^18956^1:12:0
 @q^18958^1:12:0
+@q^20763^0:15:0
 @q^213544^1:0:0
 @q^247892^1:12:0
 @q^248690^1:0:1
@@ -1052,13 +1063,16 @@ GoldScout-export 6^1rjmfnl6upa3^9
 @a^5993^149:1,150:2,209:1
 @a^9779^93:3
 @a^11075^227:1
+@a^243509^329:1
 @a^244525^333:1
 @a^248041^314:1,333:1
 @a^248042^293:1
 @a^248395^271:4,272:4,273:2,291:1,292:3,293:2,294:2,311:4
 @a^249051^293:1
 @a^249491^314:1
-@a^260422^268:1,288:1,289:1,308:1,309:1
+@a^260422^268:3,269:4,270:3,288:3,289:7,290:2,308:1,309:1
+@a^260439^269:3
 @a^260443^268:1
 @a^261914^315:1
+@a^276138^270:1,289:1,290:1
 @l^0^enUS
