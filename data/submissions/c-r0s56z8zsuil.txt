@@ -1,4 +1,4 @@
-GoldScout-export 6^r0s56z8zsuil^11
+GoldScout-export 6^r0s56z8zsuil^12
 681^10^0^30^31^1434^0.3441^0.1026^10^Young Stranglethorn Tiger^1686:2:2,1687:3:3,12202:2:2^
 682^11^0^32^33^1434^0.4303^0.1478^11^Stranglethorn Tiger^1686:2:2,1687:1:1,4073:1:1,12202:6:6^
 683^7^0^30^31^1434^0.4137^0.1164^7^Young Panther^1686:1:1^
@@ -168,8 +168,13 @@ GoldScout-export 6^r0s56z8zsuil^11
 @i^12202^Tiger Meat
 @i^12205^White Spider Meat
 @i^13422^Stonescale Eel
+@i^13443^Superior Mana Potion
+@i^13446^Major Healing Potion
 @i^13758^Raw Redgill
 @i^13759^Raw Nightfin Snapper
+@i^13889^Raw Whitescale Salmon
+@i^13890^Raw Plated Armorfish
+@i^13891^Bloated Whitescale Salmon
 @i^14186^Raincaller Mantle of the Sorcerer
 @i^15488^Bloodspattered Surcoat of Spirit
 @i^15525^Sentry's Slippers of Spirit
@@ -188,6 +193,8 @@ GoldScout-export 6^r0s56z8zsuil^11
 @i^21113^Watertight Trunk
 @i^21114^Rumsey Rum Dark
 @i^21150^Iron Bound Trunk
+@i^21228^Mithril Bound Trunk
+@i^21243^Bloated Glossy Mightfish
 @i^213421^Singed Note
 @i^248690^Waylaid Crate: Earthly Expert Herbs
 @i^255723^Manual: Greater Healing Potion
@@ -294,8 +301,13 @@ GoldScout-export 6^r0s56z8zsuil^11
 @q^12202^1:7:1
 @q^12205^1:7:1
 @q^13422^1:7:1
+@q^13443^1:0:0
+@q^13446^1:0:0
 @q^13758^1:7:1
 @q^13759^1:7:1
+@q^13889^1:7:1
+@q^13890^1:12:1
+@q^13891^2:15:0
 @q^14186^2:4:0
 @q^15488^2:4:0
 @q^15525^2:4:0
@@ -314,6 +326,8 @@ GoldScout-export 6^r0s56z8zsuil^11
 @q^21113^1:15:0
 @q^21114^1:0:0
 @q^21150^1:15:0
+@q^21228^1:15:0
+@q^21243^2:15:0
 @q^213421^1:15:0
 @q^248690^1:0:1
 @q^255723^2:9:0
@@ -328,6 +342,7 @@ GoldScout-export 6^r0s56z8zsuil^11
 @m^1444^Feralas
 @m^1445^Dustwallow Marsh
 @m^1455^Ironforge
+@m^2482^Mount Hyjal
 @c^118^
 @c^724^
 @c^733^
@@ -1190,4 +1205,5 @@ GoldScout-export 6^r0s56z8zsuil^11
 @f^1443^0^4^225^6362:4:4,16968:1:1^305:4
 @f^1444^0^6^225^3820:1:1,6358:2:2,8365:1:1,13758:1:1,13759:1:1,16967:1:1^168:1,212:5
 @f^1455^0^78^4^6289:48:48,6291:10:10,6308:20:20^49:78
+@f^2482^0^144^225^3820:1:2,6359:10:10,13443:1:1,13446:1:1,13758:4:4,13759:52:52,13889:45:45,13890:28:28,13891:8:8,21228:2:2,21243:1:1^167:4,187:140
 @l^0^enUS

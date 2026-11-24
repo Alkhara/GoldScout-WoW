@@ -1,4 +1,4 @@
-GoldScout-export 6^ghf94fxfhrbw^25
+GoldScout-export 6^ghf94fxfhrbw^26
 588^6^0^34^35^1434^0.2417^0.1237^6^Bloodscalp Scout^1710:1:1,2740:1:1,3901:2:2,3915:3:3,4306:1:2^
 595^2^0^34^35^1434^0.2344^0.1227^2^Bloodscalp Hunter^3915:1:1^
 597^1^0^36^37^1434^0.2506^0.1302^1^Bloodscalp Berserker^3915:1:1,7990:1:1^
@@ -18,6 +18,11 @@ GoldScout-export 6^ghf94fxfhrbw^25
 2589^16^0^31^32^1417^0.3204^0.2839^16^Syndicate Mercenary^1529:1:1,1707:1:1,2592:1:3,3785:1:1,4306:7:10,4414:1:1,4495:4:4,5113:2:2,6986:1:1,213546:1:1^
 2635^1^0^38^38^1434^0.2886^0.2165^1^Elder Saltwater Crocolisk^770:1:1,3667:1:1,12037:1:1^
 2760^278^0^38^39^1417^0.2574^0.3025^278^Burning Exile^3857:55:55,3864:1:1,4479:139:139,4636:2:2,4729:1:1,4735:1:1,4787:121:121,7068:37:37,7476:1:1,8188:1:1,11204:1:1,15226:1:1,15233:2:2,15234:1:1,213543:2:2,213544:3:3,213545:6:6,213546:6:6,213547:4:4,248691:1:1,248692:1:1,262889:1:1^
+2949^2^0^5^6^1412^0.4814^0.7270^2^Palemane Tanner^2589:1:1^
+2950^1^0^6^6^1412^0.4811^0.7153^1^Palemane Skinner^^
+2956^2^0^7^7^1412^0.5023^0.6594^2^Adult Plainstrider^4757:1:1,4775:1:1,7097:1:1^
+2958^10^0^5^6^1412^0.4942^0.6717^10^Prairie Wolf^2672:5:5,3300:2:2^
+2976^2^0^6^7^1412^0.5127^0.5416^2^Venture Co. Laborer^^
 3198^1^0^10^10^1411^0.5468^0.0879^1^Burning Blade Apprentice^14544:1:1^
 3975^1^0^0^0^0^0.0000^0.0000^0^^7718:1:1^
 3977^1^0^0^0^0^0.0000^0.0000^0^^7720:1:1^
@@ -157,6 +162,7 @@ GoldScout-export 6^ghf94fxfhrbw^25
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2632^Curved Dagger of the Bear
+@i^2672^Stringy Wolf Meat
 @i^2677^Boar Ribs
 @i^2740^Green Hills of Stranglethorn - Page 16
 @i^2745^Green Hills of Stranglethorn - Page 21
@@ -167,6 +173,7 @@ GoldScout-export 6^ghf94fxfhrbw^25
 @i^3185^Acrobatic Staff of Fire Protection
 @i^3288^Tribal Vest
 @i^3291^Ancestral Woollies
+@i^3300^Rabbit's Foot
 @i^3303^Brackwater Bracers
 @i^3305^Brackwater Leggings
 @i^3404^Buzzard Wing
@@ -216,6 +223,8 @@ GoldScout-export 6^ghf94fxfhrbw^25
 @i^4680^Brackwater Cloak
 @i^4729^Aurora Mantle
 @i^4735^Mistscape Cloak
+@i^4757^Cracked Egg Shells
+@i^4775^Cracked Bill
 @i^4787^Burning Pitch
 @i^5113^Mark of the Syndicate
 @i^5116^Long Tail Feather
@@ -235,6 +244,7 @@ GoldScout-export 6^ghf94fxfhrbw^25
 @i^6826^Brilliant Scale
 @i^6986^Crimson Lotus
 @i^7068^Elemental Fire
+@i^7097^Leg Meat
 @i^7113^Mistscape Armor
 @i^7434^Twilight Boots of the Sorcerer
 @i^7454^Knight's Breastplate of Power
@@ -376,6 +386,7 @@ GoldScout-export 6^ghf94fxfhrbw^25
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2632^2:2:0
+@q^2672^1:7:1
 @q^2677^1:7:1
 @q^2740^1:12:0
 @q^2745^1:12:0
@@ -386,6 +397,7 @@ GoldScout-export 6^ghf94fxfhrbw^25
 @q^3185^2:2:0
 @q^3288^2:4:0
 @q^3291^2:4:0
+@q^3300^0:15:0
 @q^3303^1:4:0
 @q^3305^2:4:0
 @q^3404^1:7:1
@@ -435,6 +447,8 @@ GoldScout-export 6^ghf94fxfhrbw^25
 @q^4680^1:4:0
 @q^4729^2:4:0
 @q^4735^2:4:0
+@q^4757^0:15:0
+@q^4775^0:15:0
 @q^4787^0:15:0
 @q^5113^0:15:0
 @q^5116^1:7:1
@@ -454,6 +468,7 @@ GoldScout-export 6^ghf94fxfhrbw^25
 @q^6826^0:15:0
 @q^6986^0:15:0
 @q^7068^1:7:1
+@q^7097^1:0:0
 @q^7113^2:4:0
 @q^7434^2:4:0
 @q^7454^2:4:0
@@ -565,6 +580,7 @@ GoldScout-export 6^ghf94fxfhrbw^25
 @q^282717^2:4:0
 @q^286658^3:4:0
 @m^1411^Durotar
+@m^1412^Mulgore
 @m^1413^The Barrens
 @m^1417^Arathi Highlands
 @m^1424^Hillsbrad Foothills
@@ -1236,6 +1252,11 @@ GoldScout-export 6^ghf94fxfhrbw^25
 @a^2589^106:14,126:2
 @a^2635^85:1
 @a^2760^104:33,105:83,124:34,125:128
+@a^2949^289:2
+@a^2950^289:1
+@a^2956^250:1,290:1
+@a^2958^249:1,250:1,269:6,289:2
+@a^2976^210:2
 @a^3198^30:1
 @a^4841^209:1
 @a^5797^269:1

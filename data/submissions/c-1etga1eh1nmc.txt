@@ -1,4 +1,4 @@
-GoldScout-export 6^1etga1eh1nmc^15
+GoldScout-export 6^1etga1eh1nmc^16
 40^13^0^6^7^1429^0.6128^0.5029^13^Kobold Miner^1389:1:1,1416:1:1,2589:2:3,4536:1:1^
 46^3^0^9^10^1429^0.7960^0.5417^3^Murloc Forager^159:1:1,779:1:1^
 95^21^0^11^12^1436^0.4829^0.4551^21^Defias Smuggler^414:1:1,829:11:11,858:1:1,1179:1:1,1501:1:1,1506:1:1,1733:1:1,2589:8:14,3013:1:1^
@@ -56,7 +56,13 @@ GoldScout-export 6^1etga1eh1nmc^15
 3256^10^0^16^18^1413^0.5772^0.5364^10^Sunscale Scytheclaw^3180:2:2,5055:5:5,5124:2:2,5165:2:2,248684:1:1^
 3630^1^0^16^16^1414^0.5188^0.5481^1^Deviate Coiler^6445:1:1^
 3632^2^0^15^16^1414^0.5194^0.5464^2^Deviate Creeper^5124:2:2^
+3636^2^0^0^0^0^0.0000^0.0000^0^^5124:2:2^
+3637^2^0^0^0^0^0.0000^0.0000^0^^5124:1:1,6443:1:1^
 3638^1^0^16^16^1414^0.5188^0.5481^1^Devouring Ectoplasm^3036:1:1,6464:1:1,211855:1:1^
+3640^3^0^0^0^0^0.0000^0.0000^0^^3676:1:1,4410:1:1,6464:2:2^
+3671^1^0^0^0^0^0.0000^0.0000^0^^6446:1:1,273088:1:1^
+3840^6^0^0^0^0^0.0000^0.0000^0^^2589:1:2,2780:1:1,248683:1:1^
+5048^2^0^0^0^0^0.0000^0.0000^0^^6443:1:1,6444:1:1,14122:1:1^
 6123^22^0^10^11^1426^0.7750^0.6160^22^Dark Iron Spy^1419:1:1,1731:1:1,2589:9:12,2763:1:1,3375:1:1,3652:1:1,4540:4:4,6847:1:1,211785:1:1,211787:1:1^
 6124^2^0^11^11^1426^0.7789^0.6262^2^Captain Beld^4540:1:1,15932:1:1^
 248463^6^0^7^7^1429^0.6124^0.4929^6^Rumbler^^
@@ -167,6 +173,7 @@ GoldScout-export 6^1etga1eh1nmc^15
 @i^2773^Cracked Shortbow
 @i^2774^Rust-covered Blunderbuss
 @i^2777^Feeble Shortbow
+@i^2780^Light Hunting Bow
 @i^2835^Rough Stone
 @i^2843^Dirty Knucklebones
 @i^2958^Journeyman's Pants
@@ -191,6 +198,7 @@ GoldScout-export 6^1etga1eh1nmc^15
 @i^3652^Hunting Buckler
 @i^3658^Recovered Tome
 @i^3667^Tender Crocolisk Meat
+@i^3676^Slimy Ichor
 @i^3771^Wild Hog Shank
 @i^3785^Keen Axe
 @i^3792^Interlaced Belt
@@ -202,6 +210,7 @@ GoldScout-export 6^1etga1eh1nmc^15
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4361^Copper Tube
+@i^4410^Schematic: Shadow Goggles
 @i^4536^Shiny Red Apple
 @i^4537^Tel'Abim Banana
 @i^4540^Tough Hunk of Bread
@@ -234,7 +243,10 @@ GoldScout-export 6^1etga1eh1nmc^15
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
 @i^6362^Raw Rockscale Cod
+@i^6443^Deviate Hide
+@i^6444^Forked Tongue
 @i^6445^Brittle Molting
+@i^6446^Snakeskin Bag
 @i^6464^Wailing Essence
 @i^6506^Infantry Boots
 @i^6539^Willow Belt of Intellect
@@ -264,6 +276,7 @@ GoldScout-export 6^1etga1eh1nmc^15
 @i^9898^Jazeraint Cloak of the Physician
 @i^10604^Schematic: Mithril Heavy-bore Rifle
 @i^12037^Mystery Meat
+@i^14122^Ritual Bands of Spirit
 @i^15226^Giant Club of the Bear
 @i^15932^Disciple's Stein of Intellect
 @i^17056^Light Feather
@@ -274,6 +287,7 @@ GoldScout-export 6^1etga1eh1nmc^15
 @i^211785^Scroll: CWAL
 @i^211787^Scroll: LOWER PING WHOMEVER
 @i^211855^Scroll: STHENIC LUNATE
+@i^248683^Waylaid Crate: Apprentice Ore
 @i^248684^Waylaid Crate: Apprentice Textiles
 @i^248691^Waylaid Crate: Flowering Expert Herbs
 @i^248692^Waylaid Crate: Expert Ore
@@ -287,6 +301,7 @@ GoldScout-export 6^1etga1eh1nmc^15
 @i^271095^Fang of Magmatus
 @i^271097^Spiritwraith Drape
 @i^271098^Golemguard Chest
+@i^273088^Snake Eye Kaleidoscope
 @i^274286^Durgen Dirgehammer's Head
 @i^274598^Bloodslash Axe
 @i^274601^Harpoon of Command
@@ -371,6 +386,7 @@ GoldScout-export 6^1etga1eh1nmc^15
 @q^2773^0:2:0
 @q^2774^0:2:0
 @q^2777^0:2:0
+@q^2780^0:2:0
 @q^2835^1:7:1
 @q^2843^1:12:0
 @q^2958^2:4:0
@@ -395,6 +411,7 @@ GoldScout-export 6^1etga1eh1nmc^15
 @q^3652^2:4:0
 @q^3658^1:12:0
 @q^3667^1:7:1
+@q^3676^0:15:0
 @q^3771^1:0:0
 @q^3785^0:2:0
 @q^3792^0:4:0
@@ -406,6 +423,7 @@ GoldScout-export 6^1etga1eh1nmc^15
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4361^1:7:1
+@q^4410^2:9:0
 @q^4536^1:0:0
 @q^4537^1:0:0
 @q^4540^1:0:0
@@ -438,7 +456,10 @@ GoldScout-export 6^1etga1eh1nmc^15
 @q^6358^1:7:1
 @q^6359^1:7:1
 @q^6362^1:7:1
+@q^6443^1:12:0
+@q^6444^0:15:0
 @q^6445^0:15:0
+@q^6446^2:1:0
 @q^6464^1:0:0
 @q^6506^1:4:0
 @q^6539^2:4:0
@@ -468,6 +489,7 @@ GoldScout-export 6^1etga1eh1nmc^15
 @q^9898^2:4:0
 @q^10604^2:9:0
 @q^12037^1:7:1
+@q^14122^2:4:0
 @q^15226^2:2:0
 @q^15932^2:4:0
 @q^17056^1:15:1
@@ -478,6 +500,7 @@ GoldScout-export 6^1etga1eh1nmc^15
 @q^211785^1:0:0
 @q^211787^1:0:0
 @q^211855^1:0:0
+@q^248683^1:0:1
 @q^248684^1:0:1
 @q^248691^1:0:1
 @q^248692^1:0:1
@@ -491,6 +514,7 @@ GoldScout-export 6^1etga1eh1nmc^15
 @q^271095^3:2:0
 @q^271097^3:4:0
 @q^271098^3:4:0
+@q^273088^3:4:0
 @q^274286^1:12:0
 @q^274598^3:2:0
 @q^274601^3:2:0

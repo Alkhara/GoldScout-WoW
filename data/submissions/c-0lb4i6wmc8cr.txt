@@ -1,7 +1,11 @@
-GoldScout-export 6^0lb4i6wmc8cr^6
+GoldScout-export 6^0lb4i6wmc8cr^7
 428^18^0^18^19^1433^0.5218^0.7625^18^Dire Condor^556:2:2,1080:7:7,1464:1:1,4775:8:8,4776:2:2,5114:1:1,5115:2:2,6889:12:12,9776:1:1,17056:7:7,250188:2:2^
 437^1^0^21^21^1433^0.5711^0.6464^1^Blackrock Renegade^^
 485^1^0^21^21^1433^0.5672^0.6462^1^Blackrock Outrunner^1818:1:1^
+628^3^0^24^25^1431^0.5394^0.5986^3^Black Ravager^1015:3:3^
+681^8^0^30^31^1434^0.4028^0.0842^8^Young Stranglethorn Tiger^1686:5:5,1687:1:1,12202:2:2^
+683^9^0^30^31^1434^0.4138^0.0981^9^Young Panther^1686:5:5,1687:3:3^
+923^6^0^23^24^1431^0.5649^0.6152^6^Young Black Ravager^1015:4:4,3301:2:2,3402:1:1,5635:1:1^
 1009^1^0^23^23^1437^0.3894^0.3412^1^Mosshide Mistweaver^^
 1010^10^0^22^23^1437^0.3599^0.3451^10^Mosshide Fenrunner^1712:1:1,2589:1:1,2592:2:3,2611:3:3^
 1011^14^0^23^24^1437^0.3469^0.3392^14^Mosshide Trapper^929:1:1,1772:1:1,1775:1:1,2589:2:4,2592:5:7,2611:4:4,2783:1:1,3770:3:3^
@@ -22,8 +26,11 @@ GoldScout-export 6^0lb4i6wmc8cr^6
 @i^770^Pointy Crocolisk Tooth
 @i^785^Mageroyal
 @i^929^Healing Potion
+@i^1015^Lean Wolf Flank
 @i^1080^Tough Condor Meat
 @i^1464^Buzzard Talon
+@i^1686^Bristly Whisker
+@i^1687^Retractable Claw
 @i^1696^Curved Raptor Talon
 @i^1697^Keen Raptor Tooth
 @i^1712^Scroll of Spirit II
@@ -37,6 +44,8 @@ GoldScout-export 6^0lb4i6wmc8cr^6
 @i^2783^Shoddy Blunderbuss
 @i^2940^Bloody Bear Paw
 @i^3193^Oak Mallet of Arcane Protection
+@i^3301^Sharp Canine
+@i^3402^Soft Patch of Fur
 @i^3667^Tender Crocolisk Meat
 @i^3685^Raptor Egg
 @i^3730^Big Bear Meat
@@ -56,6 +65,7 @@ GoldScout-export 6^0lb4i6wmc8cr^6
 @i^6889^Small Egg
 @i^9776^Bandit Boots of the Monkey
 @i^11406^Rotting Bear Carcass
+@i^12202^Tiger Meat
 @i^12997^Redbeard Crest
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
@@ -69,8 +79,11 @@ GoldScout-export 6^0lb4i6wmc8cr^6
 @q^770^0:15:0
 @q^785^1:7:1
 @q^929^1:0:0
+@q^1015^1:7:1
 @q^1080^1:7:1
 @q^1464^0:15:0
+@q^1686^0:15:0
+@q^1687^0:15:0
 @q^1696^0:15:0
 @q^1697^0:15:0
 @q^1712^1:0:0
@@ -84,6 +97,8 @@ GoldScout-export 6^0lb4i6wmc8cr^6
 @q^2783^0:2:0
 @q^2940^0:15:0
 @q^3193^2:2:0
+@q^3301^0:15:0
+@q^3402^0:15:0
 @q^3667^1:7:1
 @q^3685^1:7:1
 @q^3730^1:7:1
@@ -103,6 +118,7 @@ GoldScout-export 6^0lb4i6wmc8cr^6
 @q^6889^1:7:1
 @q^9776^2:4:0
 @q^11406^0:15:0
+@q^12202^1:7:1
 @q^12997^3:4:0
 @q^17056^1:15:1
 @q^17057^1:15:0
@@ -111,7 +127,9 @@ GoldScout-export 6^0lb4i6wmc8cr^6
 @q^248685^1:0:1
 @q^250188^1:9:0
 @q^252804^2:9:0
+@m^1431^Duskwood
 @m^1433^Redridge Mountains
+@m^1434^Stranglethorn Vale
 @m^1437^Wetlands
 @m^1440^Ashenvale
 @c^2300^
@@ -710,6 +728,10 @@ GoldScout-export 6^0lb4i6wmc8cr^6
 @a^428^289:3,292:1,308:2,309:1,310:6,311:5
 @a^437^251:1
 @a^485^251:1
+@a^628^231:1,250:2
+@a^681^27:3,28:4,48:1
+@a^683^28:6,48:3
+@a^923^231:1,232:1,251:3,269:1
 @a^1009^127:1
 @a^1010^126:1,127:4,128:1,145:2,147:2
 @a^1011^125:1,126:5,127:2,128:1,145:1,146:3,147:1

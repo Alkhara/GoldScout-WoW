@@ -1,4 +1,4 @@
-GoldScout-export 6^0sgwye9takkd^26
+GoldScout-export 6^0sgwye9takkd^27
 232^1^0^23^23^1424^0.3328^0.3861^1^Farmer Ray^1485:1:1,4538:1:1^
 587^7^0^33^34^1434^0.3373^0.1551^7^Bloodscalp Warrior^1519:4:4,3901:4:4,3915:3:3,4306:3:4^
 588^9^0^34^35^1434^0.2418^0.1216^9^Bloodscalp Scout^1519:1:1,1708:1:1,2730:1:1,2732:1:1,3915:3:3,4306:2:2,277957:1:1^
@@ -18,10 +18,17 @@ GoldScout-export 6^0sgwye9takkd^26
 701^10^0^34^35^1434^0.2464^0.1219^10^Bloodscalp Mystic^1519:1:1,1708:1:1,2732:1:1,2734:1:1,3901:2:2,3915:2:2,4306:2:3^
 702^9^0^33^34^1434^0.3213^0.1353^9^Bloodscalp Scavenger^1519:4:4,1520:1:1,3901:1:1,3915:4:4,4306:1:1^
 736^3^0^32^33^1434^0.2907^0.1224^3^Panther^1686:2:2,1687:1:1^
+772^2^0^37^38^1434^0.3601^0.3649^2^Stranglethorn Tigress^1688:1:1,3839:1:1^
 1061^1^0^41^41^1434^0.2347^0.0859^1^Gan'zulah^4338:1:2,8153:1:2^
 1062^2^0^40^40^1434^0.2363^0.0951^2^Nezzliok the Dire^1708:1:1^
 1085^2^0^34^35^1434^0.3114^0.1968^2^Elder Stranglethorn Tiger^1686:1:1,12202:1:1^
+1096^20^0^35^36^1434^0.4428^0.2154^20^Venture Co. Geologist^1630:3:3,1708:1:1,3771:1:1,4106:8:8,4306:5:7^
+1097^3^0^34^35^1434^0.4241^0.1841^3^Venture Co. Mechanic^^
+1114^3^0^37^38^1434^0.4291^0.2682^3^Jungle Thunderer^2799:3:3,4096:1:1^
+1142^8^0^36^37^1434^0.3734^0.3046^8^Mosh'Ogg Brute^1679:1:1,4306:3:7,4338:1:1^
+1144^1^0^36^37^1434^0.3717^0.3078^1^Mosh'Ogg Witch Doctor^^
 1150^5^0^30^31^1434^0.3585^0.1114^5^River Crocolisk^770:3:3,3667:2:2,4053:2:2,12037:1:1^
+1152^8^0^35^36^1434^0.4025^0.2693^8^Snapjaw Crocolisk^770:3:3,3667:3:3,4104:5:5,12037:2:2^
 1779^1^0^12^13^1421^0.5648^0.4792^1^Moonrage Glutton^^
 2241^1^0^33^33^1416^0.5794^0.6756^1^Syndicate Thief^3601:1:1,4306:1:2^
 2248^5^0^30^31^1424^0.4413^0.3010^5^Cave Yeti^2785:1:1,3708:1:1,5637:1:1^
@@ -185,6 +192,7 @@ GoldScout-export 6^0sgwye9takkd^26
 4539^1^0^0^0^0^0.0000^0.0000^0^^11392:1:1,11394:1:1,213543:1:1^
 4541^1^0^0^0^0^0.0000^0.0000^0^^3676:1:1^
 4623^4^0^0^0^0^0.0000^0.0000^0^^15125:1:1,15285:1:1^
+4723^1^0^38^38^1434^0.4260^0.1837^1^Foreman Cozzle^1630:1:1,5851:1:1^
 4798^3^0^0^0^0^0.0000^0.0000^0^^14742:1:1^
 4802^3^0^20^21^1414^0.4387^0.3497^3^Blackfathom Tide Priestess^16790:1:1^
 4803^1^0^21^22^1414^0.4414^0.3483^1^Blackfathom Oracle^5524:1:1^
@@ -220,6 +228,7 @@ GoldScout-export 6^0sgwye9takkd^26
 12897^2^0^21^22^1440^0.6437^0.7536^2^Silverwing Warrior^2592:2:3^
 12902^1^0^0^0^0^0.0000^0.0000^0^^^
 14427^1^0^28^28^1441^0.5577^0.4947^1^Gibblesnik^3206:1:1,5842:1:1^
+14488^1^0^38^38^1434^0.3673^0.2932^1^Roloch^7485:1:1,9854:1:1^
 217836^1^0^35^35^1417^0.6912^0.6476^1^Needletooth^9868:1:1^
 245999^2^0^0^0^1416^0.0000^0.0000^0^^273031:1:1,273034:1:1^
 246003^2^0^0^0^1416^0.0000^0.0000^0^^273037:2:2^
@@ -269,8 +278,11 @@ GoldScout-export 6^0sgwye9takkd^26
 @i^1519^Bloodscalp Ear
 @i^1520^Troll Sweat
 @i^1532^Shrunken Head
+@i^1630^Broken Electro-lantern
+@i^1679^Korg Bat
 @i^1686^Bristly Whisker
 @i^1687^Retractable Claw
+@i^1688^Long Soft Tail
 @i^1696^Curved Raptor Talon
 @i^1697^Keen Raptor Tooth
 @i^1701^Curved Basilisk Claw
@@ -317,6 +329,7 @@ GoldScout-export 6^0sgwye9takkd^26
 @i^2765^Hunting Knife
 @i^2783^Shoddy Blunderbuss
 @i^2785^Stiff Recurve Bow
+@i^2799^Gorilla Fang
 @i^2838^Heavy Stone
 @i^2981^Seer's Robe
 @i^3172^Boar Intestines
@@ -351,12 +364,16 @@ GoldScout-export 6^0sgwye9takkd^26
 @i^3782^Large War Club
 @i^3807^Hardened Leather Tunic
 @i^3808^Double Mail Belt
+@i^3839^Pristine Tigress Fang
 @i^3901^Bloodscalp Tusk
 @i^3915^Bloody Bone Necklace
 @i^3918^Singing Crystal Shard
 @i^4052^Insignia Cap
 @i^4053^Large River Crocolisk Skin
 @i^4093^Large Basilisk Tail
+@i^4096^Coarse Gorilla Hair
+@i^4104^Snapjaw Crocolisk Skin
+@i^4106^Tumbled Crystal
 @i^4306^Silk Cloth
 @i^4337^Thick Spider's Silk
 @i^4338^Mageweave Cloth
@@ -411,6 +428,7 @@ GoldScout-export 6^0sgwye9takkd^26
 @i^5843^Grenka's Claw
 @i^5844^Fragments of Rok'Alim
 @i^5848^Hollow Vulture Bone
+@i^5851^Cozzle's Key
 @i^5853^Intact Silithid Carapace
 @i^5854^Silithid Talon
 @i^5855^Silithid Heart
@@ -427,11 +445,13 @@ GoldScout-export 6^0sgwye9takkd^26
 @i^6686^Tusken Helm
 @i^6826^Brilliant Scale
 @i^7356^Elder's Cloak of Defense
+@i^7485^Ranger Cord of the Wolf
 @i^8150^Deeprock Salt
 @i^8153^Wildvine
 @i^8186^Dire Wand
 @i^8365^Raw Mithril Head Trout
 @i^9828^Scaled Leather Boots of the Channeler
+@i^9854^Archer's Jerkin of Arcane Protection
 @i^9868^Renegade Gauntlets of Magic
 @i^11384^Broken Basilisk Teeth
 @i^11385^Basilisk Scale
@@ -532,8 +552,11 @@ GoldScout-export 6^0sgwye9takkd^26
 @q^1519^1:12:0
 @q^1520^0:15:0
 @q^1532^1:12:0
+@q^1630^0:15:0
+@q^1679^2:2:0
 @q^1686^0:15:0
 @q^1687^0:15:0
+@q^1688^0:15:0
 @q^1696^0:15:0
 @q^1697^0:15:0
 @q^1701^0:15:0
@@ -580,6 +603,7 @@ GoldScout-export 6^0sgwye9takkd^26
 @q^2765^0:2:0
 @q^2783^0:2:0
 @q^2785^0:2:0
+@q^2799^1:12:0
 @q^2838^1:7:1
 @q^2981^2:4:0
 @q^3172^1:7:1
@@ -614,12 +638,16 @@ GoldScout-export 6^0sgwye9takkd^26
 @q^3782^0:2:0
 @q^3807^0:4:0
 @q^3808^0:4:0
+@q^3839^1:12:0
 @q^3901^1:12:0
 @q^3915^1:12:0
 @q^3918^1:12:0
 @q^4052^2:4:0
 @q^4053^1:12:0
 @q^4093^0:15:0
+@q^4096^1:15:0
+@q^4104^1:12:0
+@q^4106^1:12:0
 @q^4306^1:7:1
 @q^4337^1:7:1
 @q^4338^1:7:1
@@ -674,6 +702,7 @@ GoldScout-export 6^0sgwye9takkd^26
 @q^5843^1:12:0
 @q^5844^1:12:0
 @q^5848^1:12:0
+@q^5851^1:13:0
 @q^5853^1:12:0
 @q^5854^1:12:0
 @q^5855^1:12:0
@@ -690,11 +719,13 @@ GoldScout-export 6^0sgwye9takkd^26
 @q^6686^3:4:0
 @q^6826^0:15:0
 @q^7356^2:4:0
+@q^7485^2:4:0
 @q^8150^1:7:1
 @q^8153^1:7:1
 @q^8186^2:2:0
 @q^8365^1:7:1
 @q^9828^2:4:0
+@q^9854^2:4:0
 @q^9868^2:4:0
 @q^11384^0:15:0
 @q^11385^0:15:0
@@ -959,10 +990,17 @@ GoldScout-export 6^0sgwye9takkd^26
 @a^701^44:7,45:3
 @a^702^46:9
 @a^736^45:2,46:1
+@a^772^147:2
 @a^1061^24:1
 @a^1062^24:2
 @a^1085^66:2
+@a^1096^68:2,69:2,88:11,89:5
+@a^1097^68:3
+@a^1114^108:3
+@a^1142^107:2,127:6
+@a^1144^127:1
 @a^1150^26:1,27:1,46:1,47:2
+@a^1152^88:3,107:1,108:2,127:2
 @a^1779^191:1
 @a^2241^271:1
 @a^2248^108:3,128:1,129:1
@@ -1089,6 +1127,7 @@ GoldScout-export 6^0sgwye9takkd^26
 @a^4490^225:1
 @a^4499^82:1
 @a^4504^267:1
+@a^4723^68:1
 @a^4802^128:1,148:2
 @a^4803^128:1
 @a^6132^368:1
@@ -1107,6 +1146,7 @@ GoldScout-export 6^0sgwye9takkd^26
 @a^12896^312:1
 @a^12897^312:2
 @a^14427^191:1
+@a^14488^107:1
 @a^217836^253:1
 @a^260809^230:1
 @a^268622^309:1
