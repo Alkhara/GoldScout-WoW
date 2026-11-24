@@ -1,4 +1,4 @@
-GoldScout-export 6^cde8c2s0qrmv^5
+GoldScout-export 6^cde8c2s0qrmv^6
 5260^4^0^42^43^1444^0.5590^0.5422^4^Groddoc Ape^2799:1:1,4099:2:2^
 5268^1^0^41^42^1444^0.5730^0.5504^1^Ironfur Bear^11409:1:1^
 5292^11^0^43^44^1444^0.5475^0.5629^11^Feral Scar Yeti^3928:1:1,6149:1:1^
@@ -27,11 +27,14 @@ GoldScout-export 6^cde8c2s0qrmv^5
 6513^3^0^51^51^1449^0.6504^0.1582^3^Un'Goro Stomper^2799:1:1,4099:2:2^
 6514^2^0^50^51^1449^0.6726^0.1607^2^Un'Goro Gorilla^4099:1:1^
 6551^1^0^52^52^1449^0.4832^0.8668^1^Gorishi Wasp^^
+7109^1^0^50^51^1448^0.4104^0.8607^1^Jadefire Felsworn^12662:1:1^
 8337^3^0^42^45^1427^0.6463^0.4889^3^Dark Iron Steelshifter^4306:1:1,4601:1:1,213547:1:1^
 8447^1^0^48^48^1427^0.3614^0.5320^1^Clunk^10561:1:1^
 8566^25^0^47^48^1427^0.3948^0.5618^25^Dark Iron Lookout^3928:1:1,3941:1:1,4002:1:1,4026:1:1,4338:4:7,4422:1:1,4601:2:2,18960:1:1,213543:1:1,251439:1:1^
 8637^3^0^44^45^1427^0.6224^0.5997^3^Dark Iron Watchman^^
 8675^1^0^50^51^1419^0.5485^0.4097^1^Felbeast^^
+8956^11^0^47^48^1448^0.4442^0.8307^11^Angerclaw Bear^11408:4:4,11410:2:2,11411:2:2,213546:1:1,248697:1:1,277958:7:7^
+8959^7^0^47^48^1448^0.4423^0.8127^7^Felpaw Wolf^4584:2:2,8146:1:1,12203:5:5,12208:5:5,277959:2:2^
 9163^3^0^51^52^1449^0.4696^0.2622^3^Diemetradon^5128:1:1,11114:2:2^
 9164^22^0^54^55^1449^0.3720^0.3344^22^Elder Diemetradon^5128:1:1,5133:8:8,11018:5:5,11114:6:6,11830:8:8^
 9167^23^0^52^54^1449^0.3588^0.3347^23^Frenzied Pterrordax^5128:6:6,5133:7:7,8146:3:3,11018:7:7,11831:8:8,14301:1:1,280459:1:1^
@@ -60,6 +63,7 @@ GoldScout-export 6^cde8c2s0qrmv^5
 @i^4554^Shiny Polished Stone
 @i^4582^Soft Bushy Tail
 @i^4583^Thick Furry Mane
+@i^4584^Large Trophy Paw
 @i^4585^Dripping Spider Mandible
 @i^4601^Soft Banana Bread
 @i^5128^Shed Lizard Skin
@@ -82,7 +86,10 @@ GoldScout-export 6^cde8c2s0qrmv^5
 @i^10561^Mithril Casing
 @i^11018^Un'Goro Soil
 @i^11114^Dinosaur Bone
+@i^11408^Bear Jaw
 @i^11409^Bear Flank
+@i^11410^Savage Bear Claw
+@i^11411^Large Bear Bone
 @i^11417^Feathery Wing
 @i^11818^Grimesilt Outhouse Key
 @i^11830^Webbed Diemetradon Scale
@@ -106,9 +113,12 @@ GoldScout-export 6^cde8c2s0qrmv^5
 @i^213547^Scroll: THAW WORDS
 @i^235256^Severed Legashi Horn
 @i^248695^Waylaid Crate: Earthly Artisan Herbs
+@i^248697^Waylaid Crate: Artisan Ore
 @i^248698^Waylaid Crate: Artisan Textiles
 @i^251439^Plans: Blessed Plate Boots
 @i^274966^Silvermoon Shimmerwine
+@i^277958^Putrescent Bear Organs
+@i^277959^Putrescent Wolf Organs
 @i^280459^Crystal Infused Scale
 @q^1074^0:15:0
 @q^1464^0:15:0
@@ -131,6 +141,7 @@ GoldScout-export 6^cde8c2s0qrmv^5
 @q^4554^0:15:0
 @q^4582^1:12:0
 @q^4583^0:15:0
+@q^4584^0:15:0
 @q^4585^0:15:0
 @q^4601^1:0:0
 @q^5128^0:15:0
@@ -153,7 +164,10 @@ GoldScout-export 6^cde8c2s0qrmv^5
 @q^10561^1:7:1
 @q^11018^1:12:0
 @q^11114^1:12:0
+@q^11408^0:15:0
 @q^11409^0:15:0
+@q^11410^0:15:0
+@q^11411^0:2:0
 @q^11417^0:15:0
 @q^11818^1:12:0
 @q^11830^1:12:0
@@ -177,14 +191,18 @@ GoldScout-export 6^cde8c2s0qrmv^5
 @q^213547^1:0:0
 @q^235256^1:12:0
 @q^248695^1:0:1
+@q^248697^1:0:1
 @q^248698^1:0:1
 @q^251439^2:9:0
 @q^274966^1:12:0
+@q^277958^1:12:0
+@q^277959^1:12:0
 @q^280459^1:12:0
 @m^1419^Blasted Lands
 @m^1427^Searing Gorge
 @m^1444^Feralas
 @m^1447^Azshara
+@m^1448^Felwood
 @m^1449^Un'Goro Crater
 @m^2548^Riverglades
 @c^724^
@@ -347,11 +365,14 @@ GoldScout-export 6^cde8c2s0qrmv^5
 @a^6513^53:1,72:1,73:1
 @a^6514^73:2
 @a^6551^349:1
+@a^7109^348:1
 @a^8337^173:1,212:2
 @a^8447^207:1
 @a^8566^206:10,226:4,230:6,247:2,248:3
 @a^8637^232:2,252:1
 @a^8675^170:1
+@a^8956^308:1,328:8,329:1,349:1
+@a^8959^308:1,328:4,329:2
 @a^9163^89:1,109:2
 @a^9164^87:1,106:3,107:2,126:2,127:3,128:1,147:7,148:2,167:1
 @a^9167^106:3,107:3,125:2,126:1,127:4,128:1,147:6,148:1,166:1,167:1

@@ -1,4 +1,4 @@
-GoldScout-export 6^zddivq5v9ttp^31
+GoldScout-export 6^zddivq5v9ttp^32
 1529^8^0^9^10^1420^0.7699^0.6062^8^Bleeding Horror^1413:1:1,2589:2:3,2635:1:1,6507:1:1^
 1532^9^0^10^11^1420^0.7718^0.6106^9^Wandering Spirit^1730:1:1,2589:4:6,4604:2:2,6521:1:1^
 1554^3^0^8^9^1420^0.7143^0.5568^3^Vampiric Duskbat^805:1:1,4865:1:1,7073:1:1,278242:1:1^
@@ -137,6 +137,7 @@ GoldScout-export 6^zddivq5v9ttp^31
 6412^1^0^56^56^2482^0.2777^0.5778^1^Skeleton^^
 6466^1^0^12^12^1454^0.5420^0.6856^1^Gamon^2589:1:1^
 6494^1^0^13^13^1413^0.6423^0.4435^1^Tazan^1505:1:1,2589:1:1^
+6560^13^0^60^61^1449^0.6625^0.4763^13^Stone Guardian^3976:1:1,4552:2:2,4554:1:1,7076:3:3,7912:4:7,8150:5:5,11018:4:4,12809:4:4,13823:1:1,14811:1:1^
 7079^1^0^0^0^0^0.0000^0.0000^0^^9453:1:1^
 7431^1^0^56^56^1452^0.5206^0.1710^1^Frostsaber^1688:1:1,12202:1:1^
 7432^2^0^59^60^1452^0.5125^0.1254^2^Frostsaber Stalker^1688:1:1,12202:1:1,12430:1:1^
@@ -508,6 +509,7 @@ GoldScout-export 6^zddivq5v9ttp^31
 @i^3969^Smooth Leather Belt
 @i^3972^Smooth Cloak
 @i^3973^Smooth Leather Gloves
+@i^3976^Smooth Leather Armor
 @i^3992^Laminated Scale Belt
 @i^3993^Laminated Scale Boots
 @i^3995^Laminated Scale Cloak
@@ -521,6 +523,8 @@ GoldScout-export 6^zddivq5v9ttp^31
 @i^4536^Shiny Red Apple
 @i^4537^Tel'Abim Banana
 @i^4542^Moist Cornbread
+@i^4552^Smooth Stone Chip
+@i^4554^Shiny Polished Stone
 @i^4555^Thick Scaly Tail
 @i^4557^Fiery Gland
 @i^4558^Empty Barrel
@@ -627,6 +631,7 @@ GoldScout-export 6^zddivq5v9ttp^31
 @i^6893^Workshop Key
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
+@i^7076^Essence of Earth
 @i^7077^Heart of Fire
 @i^7098^Splintered Tusk
 @i^7099^Severed Pincer
@@ -636,12 +641,14 @@ GoldScout-export 6^zddivq5v9ttp^31
 @i^7529^Cabalist Helm of the Gorilla
 @i^7909^Aquamarine
 @i^7910^Star Ruby
+@i^7912^Solid Stone
 @i^7972^Ichor of Undeath
 @i^8081^Light Plate Belt
 @i^8122^Heraldic Headpiece
 @i^8131^Myrmidon's Helm
 @i^8138^Chromite Chestplate
 @i^8146^Wicked Claw
+@i^8150^Deeprock Salt
 @i^8168^Jet Black Feather
 @i^8182^Pellet Rifle
 @i^8289^Arcane Leggings
@@ -684,6 +691,7 @@ GoldScout-export 6^zddivq5v9ttp^31
 @i^10377^Commander's Vambraces of the Beast
 @i^10384^Hyperion Armor of the Beast
 @i^10593^Imperfect Draenethyst Fragment
+@i^11018^Un'Goro Soil
 @i^11078^Relic Coffer Key
 @i^11386^Squishy Basilisk Eye
 @i^11387^Basilisk Heart
@@ -755,6 +763,7 @@ GoldScout-export 6^zddivq5v9ttp^31
 @i^13820^Clout Mace
 @i^13821^Bulky Maul
 @i^13822^Spiked Dagger
+@i^13823^Stout War Staff
 @i^13824^Recurve Long Bow
 @i^13825^Primed Musket
 @i^14025^Mystic's Belt
@@ -779,6 +788,7 @@ GoldScout-export 6^zddivq5v9ttp^31
 @i^14544^Lieutenant's Insignia
 @i^14798^Bloodlust Breastplate
 @i^14805^Bloodlust Britches
+@i^14811^Warstrike Chestguard
 @i^14848^Sunscale Sabatons
 @i^14857^Vanguard Sabatons
 @i^14966^Glorious Breastplate of the Defender
@@ -1063,6 +1073,7 @@ GoldScout-export 6^zddivq5v9ttp^31
 @q^3969^0:4:0
 @q^3972^0:4:0
 @q^3973^0:4:0
+@q^3976^0:4:0
 @q^3992^0:4:0
 @q^3993^0:4:0
 @q^3995^0:4:0
@@ -1076,6 +1087,8 @@ GoldScout-export 6^zddivq5v9ttp^31
 @q^4536^1:0:0
 @q^4537^1:0:0
 @q^4542^1:0:0
+@q^4552^0:15:0
+@q^4554^0:15:0
 @q^4555^0:15:0
 @q^4557^0:15:0
 @q^4558^0:15:0
@@ -1182,6 +1195,7 @@ GoldScout-export 6^zddivq5v9ttp^31
 @q^6893^1:13:0
 @q^7073^0:15:0
 @q^7074^0:15:0
+@q^7076^2:7:1
 @q^7077^1:7:1
 @q^7098^0:15:0
 @q^7099^0:15:0
@@ -1191,12 +1205,14 @@ GoldScout-export 6^zddivq5v9ttp^31
 @q^7529^2:4:0
 @q^7909^2:7:1
 @q^7910^2:7:1
+@q^7912^1:7:1
 @q^7972^1:7:1
 @q^8081^0:4:0
 @q^8122^2:4:0
 @q^8131^2:4:0
 @q^8138^2:4:0
 @q^8146^1:7:1
+@q^8150^1:7:1
 @q^8168^1:7:1
 @q^8182^1:2:0
 @q^8289^2:4:0
@@ -1239,6 +1255,7 @@ GoldScout-export 6^zddivq5v9ttp^31
 @q^10377^2:4:0
 @q^10384^2:4:0
 @q^10593^2:12:0
+@q^11018^1:12:0
 @q^11078^1:13:0
 @q^11386^0:15:0
 @q^11387^0:15:0
@@ -1310,6 +1327,7 @@ GoldScout-export 6^zddivq5v9ttp^31
 @q^13820^0:2:0
 @q^13821^0:2:0
 @q^13822^0:2:0
+@q^13823^0:2:0
 @q^13824^0:2:0
 @q^13825^0:2:0
 @q^14025^2:4:0
@@ -1334,6 +1352,7 @@ GoldScout-export 6^zddivq5v9ttp^31
 @q^14544^1:12:0
 @q^14798^2:4:0
 @q^14805^2:4:0
+@q^14811^2:4:0
 @q^14848^2:4:0
 @q^14857^2:4:0
 @q^14966^2:4:0
@@ -3385,6 +3404,7 @@ GoldScout-export 6^zddivq5v9ttp^31
 @a^6412^225:1
 @a^6466^270:1
 @a^6494^172:1
+@a^6560^148:1,150:1,151:1,153:2,154:1,171:1,174:1,215:2,274:3
 @a^7431^70:1
 @a^7432^50:2
 @a^7433^29:1,30:2,49:1
