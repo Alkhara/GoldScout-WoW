@@ -1,4 +1,4 @@
-GoldScout-export 6^uw5fc6xq9s9v^24
+GoldScout-export 6^uw5fc6xq9s9v^25
 624^2^0^17^18^1415^0.4098^0.8012^2^Undead Excavator^1769:1:1,2589:1:1^
 625^3^0^18^18^1415^0.4096^0.8010^3^Undead Dynamiter^1789:1:1,2592:1:2^
 705^4^0^1^1^1426^0.3019^0.7473^4^Ragged Young Wolf^4865:3:3,7074:1:1^
@@ -124,7 +124,10 @@ GoldScout-export 6^uw5fc6xq9s9v^24
 249247^4^0^57^58^2482^0.2414^0.5438^4^Forgotten Soldier^6530:1:1,10310:1:1,14047:2:5^
 255851^1^0^38^39^2548^0.6946^0.6452^1^Mature Paletusk^769:1:1,3403:1:1^
 256809^14^0^57^58^2482^0.3464^0.4732^14^Predatory Hyjal Stag^5119:2:2,5471:5:5,5566:3:3^
+258522^1^0^38^38^2548^0.5500^0.8664^1^Sootfur^4583:1:1^
+259046^2^0^39^39^2548^0.5354^0.8356^2^Freshwater Crocolisk^770:1:1^
 259055^1^0^38^39^2548^0.5932^0.5466^1^Wildplains Huntress^^
+259267^28^0^36^37^2548^0.5481^0.8590^28^Plains Coyote^4582:9:9,4583:3:3,5637:6:6,12203:20:20,15918:1:1,213547:1:1^
 260148^1^0^60^60^2482^0.2705^0.5700^1^Scourge Reanimator^268573:1:1^
 260422^23^0^56^57^2482^0.4825^0.7295^23^Ashen Acolyte^3948:1:1,3992:1:1,8766:2:2,11903:1:1,14047:10:18,274396:12:12^
 260439^2^0^56^56^2482^0.4306^0.7126^2^Subjugated Assistant^^
@@ -200,6 +203,7 @@ GoldScout-export 6^uw5fc6xq9s9v^24
 @i^4570^Birchwood Maul of Healing
 @i^4580^Sabertooth Fang
 @i^4581^Patch of Fine Fur
+@i^4582^Soft Bushy Tail
 @i^4583^Thick Furry Mane
 @i^4584^Large Trophy Paw
 @i^4585^Dripping Spider Mandible
@@ -341,6 +345,7 @@ GoldScout-export 6^uw5fc6xq9s9v^24
 @i^15635^Formidable Gauntlets of the Bandit
 @i^15636^Formidable Belt of the Bear
 @i^15652^Merciless Cloak of the Owl
+@i^15918^Conjurer's Sphere of Nature Protection
 @i^15981^Lunar Sphere of Strength
 @i^16251^Formula: Enchant Bracer - Superior Stamina
 @i^17056^Light Feather
@@ -454,6 +459,7 @@ GoldScout-export 6^uw5fc6xq9s9v^24
 @q^4570^2:2:0
 @q^4580^0:15:0
 @q^4581^0:15:0
+@q^4582^1:12:0
 @q^4583^0:15:0
 @q^4584^0:15:0
 @q^4585^0:15:0
@@ -595,6 +601,7 @@ GoldScout-export 6^uw5fc6xq9s9v^24
 @q^15635^2:4:0
 @q^15636^2:4:0
 @q^15652^2:4:0
+@q^15918^2:4:0
 @q^15981^2:4:0
 @q^16251^2:9:0
 @q^17056^1:15:1
@@ -1006,7 +1013,10 @@ GoldScout-export 6^uw5fc6xq9s9v^24
 @a^249247^204:1,224:2,225:1
 @a^255851^253:1
 @a^256809^166:2,186:5,187:7
+@a^258522^351:1
+@a^259046^330:2
 @a^259055^211:1
+@a^259267^330:5,350:18,351:5
 @a^260148^225:1
 @a^260422^268:3,288:3,289:3,290:5,309:4,310:5
 @a^260439^288:2

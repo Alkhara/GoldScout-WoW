@@ -1,4 +1,4 @@
-GoldScout-export 6^dffcmgqfevu3^11
+GoldScout-export 6^dffcmgqfevu3^12
 94^1^0^5^6^1429^0.4364^0.5708^1^Defias Cutpurse^1369:1:1^
 1853^1^0^0^0^0^0.0000^0.0000^0^^^
 7430^2^0^55^56^1452^0.5009^0.1772^2^Frostsaber Cub^4580:2:2,12202:1:1,15645:1:1,21928:1:1^
@@ -57,12 +57,16 @@ GoldScout-export 6^dffcmgqfevu3^11
 @i^4557^Fiery Gland
 @i^4580^Sabertooth Fang
 @i^4581^Patch of Fine Fur
+@i^4603^Raw Spotted Yellowtail
 @i^5759^Thorium Lockbox
 @i^6289^Raw Longjaw Mud Snapper
 @i^6291^Raw Brilliant Smallfish
 @i^6308^Raw Bristle Whisker Catfish
 @i^6309^17 Pound Catfish
 @i^6311^22 Pound Catfish
+@i^6358^Oily Blackmouth
+@i^6359^Firefin Snapper
+@i^6362^Raw Rockscale Cod
 @i^6444^Forked Tongue
 @i^6826^Brilliant Scale
 @i^7909^Aquamarine
@@ -93,6 +97,9 @@ GoldScout-export 6^dffcmgqfevu3^11
 @i^13422^Stonescale Eel
 @i^13444^Major Mana Potion
 @i^13446^Major Healing Potion
+@i^13758^Raw Redgill
+@i^13759^Raw Nightfin Snapper
+@i^13760^Raw Sunscale Salmon
 @i^13819^Balanced War Axe
 @i^13955^Stoneform Shoulders
 @i^13967^Windreaver Greaves
@@ -107,9 +114,13 @@ GoldScout-export 6^dffcmgqfevu3^11
 @i^15645^Ironhide Helmet of Spirit
 @i^16702^Dreadmist Belt
 @i^16711^Shadowcraft Boots
+@i^16967^Feralas Ahi
+@i^16968^Sar'theris Striker
+@i^16969^Savage Coast Blue Sailfin
 @i^17683^Book: Gift of the Wild II
 @i^18695^Spellbound Tome
 @i^20520^Dark Rune
+@i^20708^Tightly Sealed Trunk
 @i^21928^Winterspring Blood Sample
 @i^248695^Waylaid Crate: Earthly Artisan Herbs
 @i^258323^Missing Mail
@@ -128,12 +139,16 @@ GoldScout-export 6^dffcmgqfevu3^11
 @q^4557^0:15:0
 @q^4580^0:15:0
 @q^4581^0:15:0
+@q^4603^1:7:1
 @q^5759^2:15:0
 @q^6289^1:7:1
 @q^6291^1:7:1
 @q^6308^1:7:1
 @q^6309^1:15:0
 @q^6311^1:15:0
+@q^6358^1:7:1
+@q^6359^1:7:1
+@q^6362^1:7:1
 @q^6444^0:15:0
 @q^6826^0:15:0
 @q^7909^2:7:1
@@ -164,6 +179,9 @@ GoldScout-export 6^dffcmgqfevu3^11
 @q^13422^1:7:1
 @q^13444^1:0:0
 @q^13446^1:0:0
+@q^13758^1:7:1
+@q^13759^1:7:1
+@q^13760^1:7:1
 @q^13819^0:2:0
 @q^13955^3:4:0
 @q^13967^3:4:0
@@ -178,9 +196,13 @@ GoldScout-export 6^dffcmgqfevu3^11
 @q^15645^2:4:0
 @q^16702^3:4:0
 @q^16711^3:4:0
+@q^16967^1:15:0
+@q^16968^1:12:0
+@q^16969^1:12:0
 @q^17683^3:9:0
 @q^18695^3:4:0
 @q^20520^2:7:1
+@q^20708^1:15:0
 @q^21928^1:12:0
 @q^248695^1:0:1
 @q^258323^1:12:0
@@ -191,9 +213,12 @@ GoldScout-export 6^dffcmgqfevu3^11
 @q^274287^1:12:0
 @q^274288^1:12:0
 @q^281018^1:0:0
+@m^1413^The Barrens
 @m^1417^Arathi Highlands
 @m^1429^Elwynn Forest
 @m^1434^Stranglethorn Vale
+@m^1443^Desolace
+@m^1444^Feralas
 @m^1452^Winterspring
 @m^1455^Ironforge
 @m^2482^Mount Hyjal
@@ -836,7 +861,10 @@ GoldScout-export 6^dffcmgqfevu3^11
 @a^249551^93:1,133:2,154:5,174:2
 @a^256809^166:1
 @a^264570^93:1,133:1,154:5,174:1,175:1,195:2
+@f^1413^0^6^225^6358:6:9,20708:1:1^152:6
 @f^1417^0^383^150^1710:2:2,3827:2:2,6308:160:179,6309:1:1,6311:1:1,8365:293:373,8366:1:1^204:383
-@f^1434^0^1^150^13422:1:2^305:1
+@f^1434^0^7^150^6359:1:1,6362:5:7,13422:1:2,16969:1:1^265:6,305:1
+@f^1443^0^42^225^4603:11:12,6358:8:8,6359:7:7,6362:28:34,16968:1:1^304:42
+@f^1444^0^10^225^6358:2:2,13758:6:8,13759:2:2,13760:2:2,16967:1:1^192:10
 @f^1455^0^243^1^6289:173:214,6291:66:71,6308:75:79^49:169,69:74
 @l^0^enUS

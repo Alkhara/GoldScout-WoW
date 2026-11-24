@@ -1,4 +1,4 @@
-GoldScout-export 6^wnv4t5tdicnh^11
+GoldScout-export 6^wnv4t5tdicnh^12
 705^11^0^1^1^1426^0.2884^0.7475^11^Jeune loup décharné^750:8:8,1370:1:1,2210:1:1,2653:1:1,4865:5:5,7073:4:4,7074:3:3^
 706^36^0^3^4^1426^0.2395^0.7818^36^Jeune troll Frostmane^117:1:1,159:2:2,1364:2:2,1378:1:1,1380:1:1,2210:1:1,2589:12:12,2651:1:1,3363:1:1,3365:2:2^
 707^6^0^1^2^1426^0.2233^0.7360^6^Trogg Mâcheroc^159:1:1,1374:1:1,2589:4:4,3363:1:1^
@@ -50,6 +50,12 @@ GoldScout-export 6^wnv4t5tdicnh^11
 4151^10^0^32^33^1441^0.8490^0.6644^10^Peau de cristal du sel gemme^1701:4:4,1702:3:3,5637:1:1^
 4154^9^0^30^32^1441^0.8290^0.6432^9^Charognard des Salines^729:4:4,3399:3:3,5114:3:3,5115:2:2,5116:3:3,5848:9:9,11416:3:3,12037:3:3,17056:4:4^
 4158^1^0^33^33^1441^0.8279^0.8571^1^Vautour des Salines^729:1:1,5848:1:1,12037:1:1^
+4670^6^0^31^32^1443^0.7461^0.2459^6^Voleur Fielfurie^3786:1:1,4306:2:3,4338:1:1,6246:1:1,6247:1:1^
+4671^7^0^31^32^1443^0.7590^0.2377^7^Entourloupeur Fielfurie^2592:1:2,4306:3:4,6246:5:5,6247:1:1^
+4672^4^0^31^31^1443^0.7563^0.2465^4^Lige de la corruption Fielfurie^1708:1:1,4306:2:3,6246:3:3,6247:1:1^
+4673^8^0^32^33^1443^0.7467^0.2179^8^Traître Fielfurie^1711:1:1,3771:1:1,3813:1:1,4306:3:5,6247:5:5^
+4674^8^0^32^33^1443^0.7375^0.1822^8^Traqueur des ténèbres Fielfurie^2592:1:1,3771:1:1,4306:4:7,6246:1:1,6247:1:1,248690:1:1^
+4675^3^0^32^33^1443^0.7837^0.2268^3^Implorateur de l'enfer Fielfurie^3771:2:2,4306:2:4,6247:1:1^
 4969^2^0^26^26^1453^0.7355^0.5934^2^Nervi de la vieille ville^^
 269075^1^0^6^6^1426^0.2767^0.6343^1^Léopard des neiges rôdeur^4814:1:1^
 271486^2^0^6^8^1426^0.4152^0.4863^2^Wendigo chaman^^
@@ -88,6 +94,7 @@ GoldScout-export 6^wnv4t5tdicnh^11
 @i^1701^Griffe de basilic
 @i^1702^Epine dorsale intacte de basilic
 @i^1708^Nectar sucré
+@i^1711^Parchemin d'Endurance II
 @i^2004^Journal de Grelin Whitebeard
 @i^2210^Targe endommagée
 @i^2211^Grand bouclier endommagé
@@ -120,8 +127,11 @@ GoldScout-export 6^wnv4t5tdicnh^11
 @i^3720^Fourrure de yéti
 @i^3731^Viande de lion
 @i^3771^Jarret de cochon sauvage
+@i^3786^Miséricorde rutilante
 @i^3806^Protège-épaules en cuir durci
+@i^3813^Pantalon doublentin
 @i^4306^Etoffe de soie
+@i^4338^Etoffe de tisse-mage
 @i^4428^Palpe d'araignée
 @i^4496^Petite sacoche marron
 @i^4552^Fragment de pierre lisse
@@ -143,6 +153,8 @@ GoldScout-export 6^wnv4t5tdicnh^11
 @i^5794^Venin de scorpide acide
 @i^5795^Carapace de tortue durcie
 @i^5848^Os creux de vautour
+@i^6246^Griffe de Fielfurie
+@i^6247^Corne de Fielfurie
 @i^6308^Poisson-chat moustachu cru
 @i^6358^Bouche-noire huileux
 @i^6361^Thon arc-en-ciel cru
@@ -171,6 +183,7 @@ GoldScout-export 6^wnv4t5tdicnh^11
 @i^211785^Parchemin : FIGERF
 @i^213545^Parchemin : CHUTE D'AGUERRI
 @i^248686^Caisse détournée : plantes de compagnon
+@i^248690^Caisse détournée : plantes terreuses d'expert
 @i^248706^Caisse détournée : lingots de compagnon
 @i^248708^Caisse détournée : étoffes d'expert
 @i^248709^Caisse détournée : lingots d'expert
@@ -209,6 +222,7 @@ GoldScout-export 6^wnv4t5tdicnh^11
 @q^1701^0:15:0
 @q^1702^0:15:0
 @q^1708^1:0:0
+@q^1711^1:0:0
 @q^2004^1:12:0
 @q^2210^0:4:0
 @q^2211^0:4:0
@@ -241,8 +255,11 @@ GoldScout-export 6^wnv4t5tdicnh^11
 @q^3720^1:12:0
 @q^3731^1:7:1
 @q^3771^1:0:0
+@q^3786^0:2:0
 @q^3806^0:4:0
+@q^3813^0:4:0
 @q^4306^1:7:1
+@q^4338^1:7:1
 @q^4428^0:15:0
 @q^4496^1:1:0
 @q^4552^0:15:0
@@ -264,6 +281,8 @@ GoldScout-export 6^wnv4t5tdicnh^11
 @q^5794^1:12:0
 @q^5795^1:12:0
 @q^5848^1:12:0
+@q^6246^1:12:0
+@q^6247^1:12:0
 @q^6308^1:7:1
 @q^6358^1:7:1
 @q^6361^1:7:1
@@ -292,6 +311,7 @@ GoldScout-export 6^wnv4t5tdicnh^11
 @q^211785^1:0:0
 @q^213545^1:0:0
 @q^248686^1:0:1
+@q^248690^1:0:1
 @q^248706^2:0:1
 @q^248708^2:0:1
 @q^248709^2:0:1
@@ -301,6 +321,7 @@ GoldScout-export 6^wnv4t5tdicnh^11
 @m^1424^Contreforts de Hautebrande
 @m^1426^Dun Morogh
 @m^1441^Mille pointes
+@m^1443^Désolace
 @m^1453^Hurlevent
 @c^118^
 @c^724^
@@ -1269,6 +1290,12 @@ GoldScout-export 6^wnv4t5tdicnh^11
 @a^4151^215:1,257:3,275:1,297:5
 @a^4154^235:1,254:1,257:2,274:1,277:4
 @a^4158^356:1
+@a^4670^54:1,94:1,114:1,115:2,135:1
+@a^4671^94:1,95:2,114:1,115:3
+@a^4672^94:1,95:2,115:1
+@a^4673^73:1,74:1,94:3,95:3
+@a^4674^54:2,74:2,94:1,95:3
+@a^4675^95:3
 @a^4969^234:2
 @a^269075^245:1
 @a^271486^188:2
