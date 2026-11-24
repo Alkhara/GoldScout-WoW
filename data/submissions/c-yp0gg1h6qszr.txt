@@ -1,4 +1,4 @@
-GoldScout-export 6^yp0gg1h6qszr^13
+GoldScout-export 6^yp0gg1h6qszr^14
 1783^11^0^50^51^1422^0.4699^0.7686^11^Skeletal Flayer^3943:1:1,8766:1:1,8948:1:1,12840:4:4,14047:3:3^
 1787^3^0^54^54^1422^0.4260^0.6498^3^Skeletal Executioner^14047:1:2^
 1789^1^0^56^56^1422^0.4661^0.6913^1^Skeletal Acolyte^12840:1:1^
@@ -323,6 +323,11 @@ GoldScout-export 6^yp0gg1h6qszr^13
 249551^8^0^60^60^2482^0.7565^0.3563^8^Blackthorne Cultist^8952:1:1,14047:3:5^
 250023^9^0^55^57^1447^0.3793^0.3053^1^Blackmaw Thrall^13443:1:1,249695:1:1,274964:7:7^
 250027^4^0^0^0^0^0.0000^0.0000^0^^15254:1:1,274964:1:1^
+250873^8^0^1^1^2521^0.4431^0.2641^8^Juvenile Vuldren^1376:1:1,2649:1:1,2672:4:4,4865:4:4,7073:5:5,7074:3:3^
+250926^1^0^3^4^2521^0.4142^0.2624^1^Scrawny Ursera^7074:1:1^
+251143^1^0^3^3^2521^0.4754^0.2098^1^Roiling Winds^1380:1:1,251931:1:1^
+251169^7^0^1^1^2521^0.4542^0.2784^7^Pesky Cirrusfly^1376:1:1,2210:1:1,251927:2:2,251928:4:4^
+251404^1^0^3^3^2521^0.4847^0.2806^1^Cirrusfly Queen^251927:1:1^
 252063^9^0^56^57^2482^0.2848^0.6708^9^Deadwood Den Guardian^14047:4:10,16251:1:1,263439:4:4^
 252096^2^0^56^57^2482^0.2507^0.6661^2^Deadwood Fel-Tender^14047:1:1^
 252116^8^0^56^57^2482^0.3094^0.7167^8^Deadwood Totemic^8952:1:1,13446:1:1,14047:2:4,263439:5:5^
@@ -366,12 +371,17 @@ GoldScout-export 6^yp0gg1h6qszr^13
 @i^765^Silverleaf
 @i^785^Mageroyal
 @i^1074^Hard Spider Leg Tip
+@i^1376^Frayed Cloak
+@i^1380^Frayed Robe
 @i^1520^Troll Sweat
 @i^1607^Soulkeeper
 @i^1639^Grinning Axe of the Eagle
 @i^1645^Moonberry Juice
 @i^1688^Long Soft Tail
+@i^2210^Battered Buckler
+@i^2649^Flimsy Chain Belt
 @i^2662^Ribbly's Quiver
+@i^2672^Stringy Wolf Meat
 @i^3404^Buzzard Wing
 @i^3669^Gelatinous Goo
 @i^3671^Lifeless Skull
@@ -439,6 +449,7 @@ GoldScout-export 6^yp0gg1h6qszr^13
 @i^4625^Firebloom
 @i^4787^Burning Pitch
 @i^4791^Enchanted Water
+@i^4865^Ruined Pelt
 @i^5117^Vibrant Plume
 @i^5120^Long Tail Hair
 @i^5128^Shed Lizard Skin
@@ -458,6 +469,8 @@ GoldScout-export 6^yp0gg1h6qszr^13
 @i^6530^Nightcrawlers
 @i^6826^Brilliant Scale
 @i^7068^Elemental Fire
+@i^7073^Broken Fang
+@i^7074^Chipped Claw
 @i^7077^Heart of Fire
 @i^7078^Essence of Fire
 @i^7080^Essence of Water
@@ -747,6 +760,9 @@ GoldScout-export 6^yp0gg1h6qszr^13
 @i^249697^Claws of the Great Bear
 @i^251407^Plans: Justicar's Gloves
 @i^251641^Hyjal Venison Cut
+@i^251927^Chipped Cirrusfly Stinger
+@i^251928^Torn Insect Wing
+@i^251931^Depleted Windstone
 @i^253341^Hyjal Owl Feather
 @i^254104^Pattern: Golden Gloves
 @i^254140^Pattern: Bottomless Reagent Bag
@@ -798,12 +814,17 @@ GoldScout-export 6^yp0gg1h6qszr^13
 @q^765^1:7:1
 @q^785^1:7:1
 @q^1074^0:15:0
+@q^1376^0:4:0
+@q^1380^0:4:0
 @q^1520^0:15:0
 @q^1607^3:2:0
 @q^1639^2:2:0
 @q^1645^1:0:0
 @q^1688^0:15:0
+@q^2210^0:4:0
+@q^2649^0:4:0
 @q^2662^2:11:0
+@q^2672^1:7:1
 @q^3404^1:7:1
 @q^3669^0:15:0
 @q^3671^0:15:0
@@ -871,6 +892,7 @@ GoldScout-export 6^yp0gg1h6qszr^13
 @q^4625^1:7:1
 @q^4787^0:15:0
 @q^4791^1:0:0
+@q^4865^0:15:0
 @q^5117^1:12:0
 @q^5120^0:15:0
 @q^5128^0:15:0
@@ -890,6 +912,8 @@ GoldScout-export 6^yp0gg1h6qszr^13
 @q^6530^1:0:0
 @q^6826^0:15:0
 @q^7068^1:7:1
+@q^7073^0:15:0
+@q^7074^0:15:0
 @q^7077^1:7:1
 @q^7078^2:7:1
 @q^7080^2:7:1
@@ -1179,6 +1203,9 @@ GoldScout-export 6^yp0gg1h6qszr^13
 @q^249697^1:12:0
 @q^251407^3:9:0
 @q^251641^1:12:0
+@q^251927^0:15:0
+@q^251928^0:15:0
+@q^251931^0:15:0
 @q^253341^1:12:0
 @q^254104^3:9:0
 @q^254140^2:9:0
@@ -1239,6 +1266,7 @@ GoldScout-export 6^yp0gg1h6qszr^13
 @m^1452^Winterspring
 @m^1459^Alterac Valley
 @m^2482^Mount Hyjal
+@m^2521^Zephras Isle
 @c^118^
 @c^724^
 @c^733^
@@ -1726,6 +1754,11 @@ GoldScout-export 6^yp0gg1h6qszr^13
 @a^249493^155:1,175:1
 @a^249551^115:1,134:2,135:1,154:2,155:1,156:1
 @a^250023^127:1
+@a^250873^108:8
+@a^250926^108:1
+@a^251143^89:1
+@a^251169^108:3,109:4
+@a^251404^109:1
 @a^252063^244:2,245:2,266:1,267:1,284:1,285:1,286:1
 @a^252096^245:1,284:1
 @a^252116^264:1,266:2,267:1,284:1,285:1,286:1,326:1

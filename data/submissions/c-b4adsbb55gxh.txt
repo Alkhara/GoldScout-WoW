@@ -1,4 +1,4 @@
-GoldScout-export 6^b4adsbb55gxh^40
+GoldScout-export 6^b4adsbb55gxh^41
 587^14^0^33^34^1434^0.2961^0.1962^14^Bloodscalp Warrior^1519:2:2,2734:1:1,3771:1:1^
 588^10^0^34^35^1434^0.2496^0.1116^10^Bloodscalp Scout^2745:1:1,4306:1:2^
 595^9^0^34^35^1434^0.2390^0.1245^9^Bloodscalp Hunter^1519:3:3,4306:1:2^
@@ -63,8 +63,12 @@ GoldScout-export 6^b4adsbb55gxh^40
 1718^2^0^3^3^1426^0.3530^0.6803^2^Rockjaw Raider^1380:1:1^
 1756^3^0^60^60^1453^0.7881^0.3995^3^Onyxia's Elite Guard^^
 1783^6^0^50^51^1422^0.4335^0.6736^6^Skeletal Flayer^12840:4:4,14047:2:3^
+1787^1^0^55^55^1422^0.4680^0.7068^1^Skeletal Executioner^^
+1789^2^0^55^56^1422^0.4799^0.7127^2^Skeletal Acolyte^7972:1:1^
 1791^5^0^50^52^1422^0.4471^0.6999^5^Slavering Ghoul^12840:1:1,14047:3:4^
+1796^1^0^55^56^1422^0.5271^0.6241^1^Freezing Ghoul^12840:1:1^
 1907^24^0^43^44^1434^0.2544^0.6109^24^Naga Explorer^2732:1:1,4007:1:1,4029:10:10,7973:4:4,8140:1:1,9921:1:1,12031:1:1,17058:3:3,262889:1:1^
+2258^1^0^37^37^1416^0.8071^0.3585^1^Stone Fury^7067:1:1,9896:1:1^
 2522^1^0^50^50^1434^0.3875^0.7739^1^Jaguero Stalker^4580:1:1^
 2535^1^0^44^44^1434^0.3486^0.5127^1^Maury Club Foot Wilkins^3924:1:1,4338:1:1,4608:1:1^
 2536^2^0^43^44^1434^0.3457^0.5177^2^Jon-Jon the Crow^3925:1:1^
@@ -575,6 +579,7 @@ GoldScout-export 6^b4adsbb55gxh^40
 @i^6302^Delicate Insect Wing
 @i^6438^Dull Elemental Bracer
 @i^6530^Nightcrawlers
+@i^7067^Elemental Earth
 @i^7069^Elemental Air
 @i^7070^Elemental Water
 @i^7073^Broken Fang
@@ -631,6 +636,7 @@ GoldScout-export 6^b4adsbb55gxh^40
 @i^9847^Conjurer's Cloak of the Gorilla
 @i^9857^Archer's Bracers of the Bandit
 @i^9882^Sorcerer Sphere of the Monkey
+@i^9896^Jazeraint Bracers of Nature Protection
 @i^9898^Jazeraint Cloak of the Owl
 @i^9901^Jazeraint Belt of the Bandit
 @i^9921^Tracker's Headband of the Wolf
@@ -935,6 +941,7 @@ GoldScout-export 6^b4adsbb55gxh^40
 @q^6302^0:15:0
 @q^6438^0:15:0
 @q^6530^1:0:0
+@q^7067^1:7:1
 @q^7069^1:7:1
 @q^7070^1:7:1
 @q^7073^0:15:0
@@ -991,6 +998,7 @@ GoldScout-export 6^b4adsbb55gxh^40
 @q^9847^2:4:0
 @q^9857^2:4:0
 @q^9882^2:4:0
+@q^9896^2:4:0
 @q^9898^2:4:0
 @q^9901^2:4:0
 @q^9921^2:4:0
@@ -1129,6 +1137,7 @@ GoldScout-export 6^b4adsbb55gxh^40
 @q^280459^1:12:0
 @q^281015^1:0:0
 @q^281018^1:0:0
+@m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
 @m^1418^Badlands
 @m^1422^Western Plaguelands
@@ -1930,8 +1939,12 @@ GoldScout-export 6^b4adsbb55gxh^40
 @a^1718^267:2
 @a^1756^155:3
 @a^1783^207:1,227:2,310:2,329:1
+@a^1787^289:1
+@a^1789^289:2
 @a^1791^227:2,309:1,310:2
+@a^1796^250:1
 @a^1907^225:7,244:8,245:8,264:1
+@a^2258^156:1
 @a^2522^307:1
 @a^2535^206:1
 @a^2536^206:2

@@ -1,10 +1,15 @@
-GoldScout-export 6^xmbtg5aos5ot^17
+GoldScout-export 6^xmbtg5aos5ot^18
 1787^7^0^54^55^1422^0.4321^0.6844^7^Bourreau Squelette^14047:2:2,14619:5:5^
 1789^11^0^55^56^1422^0.4271^0.6894^11^Acolyte Squelette^14047:2:3,14619:10:10^
 1794^1^0^55^55^1422^0.4537^0.7009^1^Goule dévastée^^
 1795^1^0^55^56^1422^0.4180^0.6791^1^Goule incendiaire^^
 1853^1^0^0^0^0^0.0000^0.0000^0^^19276:1:1^
 1913^1^0^16^16^1421^0.6351^0.6314^1^Garde de Dalaran^^
+2649^1^0^40^40^1425^0.2535^0.5789^1^Scalpeur Witherbark^4338:1:2,9259:1:1^
+2650^1^0^41^41^1425^0.2447^0.5674^1^Zélote Witherbark^1645:1:1,9259:1:1^
+2653^1^0^44^44^1425^0.4058^0.6604^1^Sadique Witherbark^1520:1:1,1645:1:1,4338:1:1^
+2680^1^0^46^46^1425^0.5111^0.6589^1^Louveteau Vilebranch^4583:1:1^
+2926^1^0^47^48^1425^0.7254^0.6209^1^Traqueur Crins-d'argent^4583:1:1,12208:1:1^
 3975^2^0^0^0^0^0.0000^0.0000^0^^1529:1:1,7718:1:1,7719:1:1^
 4286^32^0^0^0^0^0.0000^0.0000^0^^1707:5:5,1708:1:1,2592:2:8,3197:1:1,3784:1:1,3803:1:1,3812:1:1,3813:2:2,4306:10:24,9868:1:1^
 4289^7^0^0^0^0^0.0000^0.0000^0^^4306:2:7,4338:1:2^
@@ -245,7 +250,9 @@ GoldScout-export 6^xmbtg5aos5ot^17
 @i^1074^Patte d'araignée
 @i^1468^Aileron de murloc
 @i^1477^Parchemin d'Agilité II
+@i^1520^Sueur de troll
 @i^1529^Jade
+@i^1645^Jus de baie lunaire
 @i^1707^Brie de Hurlevent
 @i^1708^Nectar sucré
 @i^1710^Potion de soins supérieure
@@ -348,6 +355,7 @@ GoldScout-export 6^xmbtg5aos5ot^17
 @i^8950^Tarte aux cerises maison
 @i^8952^Poulet rôti
 @i^8953^Bananes frites
+@i^9259^Collier tribal troll
 @i^9868^Gantelets de renégat de la bête
 @i^9944^Cristal d'abjurateur de médecine
 @i^9950^Cuirasse de chef de puissance
@@ -583,7 +591,9 @@ GoldScout-export 6^xmbtg5aos5ot^17
 @q^1074^0:15:0
 @q^1468^1:7:1
 @q^1477^1:0:0
+@q^1520^0:15:0
 @q^1529^2:7:1
+@q^1645^1:0:0
 @q^1707^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
@@ -686,6 +696,7 @@ GoldScout-export 6^xmbtg5aos5ot^17
 @q^8950^1:0:0
 @q^8952^1:0:0
 @q^8953^1:0:0
+@q^9259^1:15:0
 @q^9868^2:4:0
 @q^9944^2:4:0
 @q^9950^2:4:0
@@ -920,6 +931,7 @@ GoldScout-export 6^xmbtg5aos5ot^17
 @m^1421^Forêt des Pins argentés
 @m^1422^Maleterres de l'ouest
 @m^1423^Maleterres de l'est
+@m^1425^Les Hinterlands
 @m^1428^Steppes ardentes
 @m^1434^Vallée de Strangleronce
 @m^1435^Marais des Chagrins
@@ -1627,6 +1639,11 @@ GoldScout-export 6^xmbtg5aos5ot^17
 @a^1794^289:1
 @a^1795^268:1
 @a^1913^252:1
+@a^2649^225:1
+@a^2650^224:1
+@a^2653^268:1
+@a^2680^270:1
+@a^2926^254:1
 @a^4494^90:2,130:2,131:2
 @a^4789^128:1
 @a^7032^247:1

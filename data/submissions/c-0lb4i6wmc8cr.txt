@@ -1,4 +1,4 @@
-GoldScout-export 6^0lb4i6wmc8cr^9
+GoldScout-export 6^0lb4i6wmc8cr^10
 205^21^0^28^29^1431^0.6405^0.4885^21^Nightbane Dark Runner^2766:1:1,3770:1:1,5635:1:1^
 206^11^0^29^30^1431^0.7190^0.6885^11^Nightbane Vile Fang^2794:1:1^
 428^18^0^18^19^1433^0.5218^0.7625^18^Dire Condor^556:2:2,1080:7:7,1464:1:1,4775:8:8,4776:2:2,5114:1:1,5115:2:2,6889:12:12,9776:1:1,17056:7:7,250188:2:2^
@@ -32,7 +32,20 @@ GoldScout-export 6^0lb4i6wmc8cr^9
 4065^4^0^21^22^1433^0.5970^0.6285^4^Blackrock Sentry^1775:1:1,2592:2:7^
 6170^1^0^32^32^1431^0.7414^0.7519^1^Gutspill^^
 14357^1^0^25^25^1433^0.3397^0.6303^1^Lake Thresher^5524:1:1,17057:1:1^
+260325^1^0^0^0^0^0.0000^0.0000^0^^273025:1:1,284845:1:4^
+260326^1^0^0^0^0^0.0000^0.0000^0^^270865:1:1,273028:1:1^
+260797^1^0^0^0^0^0.0000^0.0000^0^^1830:1:1^
+260799^3^0^0^0^0^0.0000^0.0000^0^^3180:1:1,3685:3:3,5635:1:1^
+260800^3^0^0^0^0^0.0000^0.0000^0^^1206:1:1,1697:2:2,3381:1:1,211784:1:1,284845:2:2^
+260801^1^0^0^0^0^0.0000^0.0000^0^^1697:1:1,3685:1:1^
+260803^1^0^0^0^0^0.0000^0.0000^0^^4049:1:1^
+260804^2^0^0^0^0^0.0000^0.0000^0^^1074:2:2^
+260808^1^0^0^0^0^0.0000^0.0000^0^^270180:1:1^
 267214^1^0^28^28^1440^0.4052^0.6211^1^Va'xug Firefure^^
+271732^1^0^0^0^0^0.0000^0.0000^0^^1697:1:1,1780:1:1^
+274715^2^0^0^0^0^0.0000^0.0000^0^^3667:1:1,12037:1:1^
+275044^2^0^0^0^0^0.0000^0.0000^0^^3770:1:1^
+275046^2^0^0^0^0^0.0000^0.0000^0^^929:1:1,4306:1:2^
 @i^556^Buzzard Beak
 @i^730^Murloc Eye
 @i^765^Silverleaf
@@ -41,7 +54,9 @@ GoldScout-export 6^0lb4i6wmc8cr^9
 @i^887^Pound of Flesh
 @i^929^Healing Potion
 @i^1015^Lean Wolf Flank
+@i^1074^Hard Spider Leg Tip
 @i^1080^Tough Condor Meat
+@i^1206^Moss Agate
 @i^1464^Buzzard Talon
 @i^1468^Murloc Fin
 @i^1686^Bristly Whisker
@@ -66,13 +81,16 @@ GoldScout-export 6^0lb4i6wmc8cr^9
 @i^2783^Shoddy Blunderbuss
 @i^2794^An Old History Book
 @i^2940^Bloody Bear Paw
+@i^3180^Flecked Raptor Scale
 @i^3193^Oak Mallet of Arcane Protection
 @i^3301^Sharp Canine
+@i^3381^Cross-stitched Bracers
 @i^3402^Soft Patch of Fur
 @i^3667^Tender Crocolisk Meat
 @i^3685^Raptor Egg
 @i^3730^Big Bear Meat
 @i^3770^Mutton Chop
+@i^4049^Emblazoned Bracers
 @i^4306^Silk Cloth
 @i^4606^Spongy Morel
 @i^4775^Cracked Bill
@@ -92,6 +110,7 @@ GoldScout-export 6^0lb4i6wmc8cr^9
 @i^9776^Bandit Boots of the Monkey
 @i^11406^Rotting Bear Carcass
 @i^11984^Cobalt Ring of the Beast
+@i^12037^Mystery Meat
 @i^12202^Tiger Meat
 @i^12997^Redbeard Crest
 @i^13048^Looming Gavel
@@ -103,6 +122,11 @@ GoldScout-export 6^0lb4i6wmc8cr^9
 @i^248685^Waylaid Crate: Apprentice Curiosities
 @i^250188^Recipe: Breakfast Omelette
 @i^252804^Pattern: Hillman's Leather Boots
+@i^270180^Horrible Rootcore
+@i^270865^Titan Relic
+@i^273025^Raptorclaw Greaves
+@i^273028^Reliquary Mantle
+@i^284845^Thicket Raptor Hide
 @q^556^0:15:0
 @q^730^1:7:1
 @q^765^1:7:1
@@ -111,7 +135,9 @@ GoldScout-export 6^0lb4i6wmc8cr^9
 @q^887^0:15:0
 @q^929^1:0:0
 @q^1015^1:7:1
+@q^1074^0:15:0
 @q^1080^1:7:1
+@q^1206^2:7:1
 @q^1464^0:15:0
 @q^1468^1:7:1
 @q^1686^0:15:0
@@ -136,13 +162,16 @@ GoldScout-export 6^0lb4i6wmc8cr^9
 @q^2783^0:2:0
 @q^2794^1:12:0
 @q^2940^0:15:0
+@q^3180^0:15:0
 @q^3193^2:2:0
 @q^3301^0:15:0
+@q^3381^0:4:0
 @q^3402^0:15:0
 @q^3667^1:7:1
 @q^3685^1:7:1
 @q^3730^1:7:1
 @q^3770^1:0:0
+@q^4049^2:4:0
 @q^4306^1:7:1
 @q^4606^1:0:0
 @q^4775^0:15:0
@@ -162,6 +191,7 @@ GoldScout-export 6^0lb4i6wmc8cr^9
 @q^9776^2:4:0
 @q^11406^0:15:0
 @q^11984^2:4:0
+@q^12037^1:7:1
 @q^12202^1:7:1
 @q^12997^3:4:0
 @q^13048^3:2:0
@@ -173,6 +203,11 @@ GoldScout-export 6^0lb4i6wmc8cr^9
 @q^248685^1:0:1
 @q^250188^1:9:0
 @q^252804^2:9:0
+@q^270180^1:12:0
+@q^270865^1:12:0
+@q^273025^3:4:0
+@q^273028^3:4:0
+@q^284845^1:12:0
 @m^1431^Duskwood
 @m^1433^Redridge Mountains
 @m^1434^Stranglethorn Vale
