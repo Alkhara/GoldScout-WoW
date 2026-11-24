@@ -1,6 +1,11 @@
-GoldScout-export 6^vru6cat0wxjc^1
+GoldScout-export 6^vru6cat0wxjc^2
 3928^1^0^20^20^1440^0.7227^0.7104^1^Rotting Slime^3674:1:1^
 3983^2^0^0^0^0^0.0000^0.0000^0^^5805:1:1,7682:1:1,7683:1:1,251354:1:1^
+4100^8^0^28^29^1441^0.2733^0.5125^8^Screeching Harpy^1712:1:1,2786:1:1,3770:1:1,4306:3:6,5636:2:2,17056:3:3^
+4101^4^0^29^30^1441^0.2657^0.5520^4^Screeching Roguefeather^5117:2:2,17056:1:1,251385:1:1^
+4104^4^0^30^30^1441^0.2652^0.5540^4^Screeching Windcaller^4306:1:1,17056:2:2^
+4107^1^0^28^29^1441^0.1323^0.3815^1^Highperch Wyvern^5137:1:1^
+4109^6^0^28^29^1441^0.1319^0.3870^6^Highperch Consort^5137:6:6^
 4293^2^0^0^0^0^0.0000^0.0000^0^^5805:2:2^
 4306^11^0^0^0^0^0.0000^0.0000^0^^4306:2:4,5805:7:7,248707:1:1^
 4308^9^0^0^0^0^0.0000^0.0000^0^^3864:1:1,4306:3:6^
@@ -9,10 +14,16 @@ GoldScout-export 6^vru6cat0wxjc^1
 6427^2^0^0^0^0^0.0000^0.0000^0^^248708:1:1^
 6489^1^0^0^0^0^0.0000^0.0000^0^^7686:1:1^
 12676^1^0^31^31^1440^0.7435^0.7022^1^Sharptalon^16305:1:1^
+@i^1712^Scroll of Spirit II
+@i^2786^Oiled Blunderbuss
 @i^3674^Decomposed Boot
+@i^3770^Mutton Chop
 @i^3864^Citrine
 @i^4306^Silk Cloth
 @i^4607^Delicious Cave Mold
+@i^5117^Vibrant Plume
+@i^5137^Bright Eyeball
+@i^5636^Delicate Feather
 @i^5805^Heart of Zeal
 @i^6530^Nightcrawlers
 @i^7682^Torturing Poker
@@ -20,14 +31,22 @@ GoldScout-export 6^vru6cat0wxjc^1
 @i^7685^Orb of the Forgotten Seer
 @i^7686^Ironspine's Eye
 @i^16305^Sharptalon's Claw
+@i^17056^Light Feather
 @i^248707^Waylaid Crate: Journeyman Parts
 @i^248708^Waylaid Crate: Expert Fabrics
 @i^251354^Plans: Crusader's Chain Helm
+@i^251385^Plans: Hard Gold Cuirass
 @i^274291^Polished Skullcap
+@q^1712^1:0:0
+@q^2786^0:2:0
 @q^3674^0:15:0
+@q^3770^1:0:0
 @q^3864^2:7:1
 @q^4306^1:7:1
 @q^4607^1:0:0
+@q^5117^1:12:0
+@q^5137^0:15:0
+@q^5636^0:15:0
 @q^5805^1:12:0
 @q^6530^1:0:0
 @q^7682^3:2:0
@@ -35,11 +54,14 @@ GoldScout-export 6^vru6cat0wxjc^1
 @q^7685^3:4:0
 @q^7686^3:4:0
 @q^16305^2:12:0
+@q^17056^1:15:1
 @q^248707^2:0:1
 @q^248708^2:0:1
 @q^251354^3:9:0
+@q^251385^2:9:0
 @q^274291^3:4:0
 @m^1440^Ashenvale
+@m^1441^Thousand Needles
 @c^724^
 @c^733^
 @c^787^
@@ -798,5 +820,10 @@ GoldScout-export 6^vru6cat0wxjc^1
 @c^279982^
 @c^286152^
 @a^3928^294:1
+@a^4100^185:3,205:3,225:2
+@a^4101^205:1,225:3
+@a^4104^205:1,225:3
+@a^4107^142:1
+@a^4109^142:4,163:2
 @a^12676^294:1
 @l^0^enUS

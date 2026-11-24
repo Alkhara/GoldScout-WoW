@@ -1,4 +1,4 @@
-GoldScout-export 6^3ubmf49vax6y^30
+GoldScout-export 6^3ubmf49vax6y^31
 428^223^0^18^19^1433^0.5345^0.7595^223^Dire Condor^556:26:26,1080:77:77,1464:23:23,2657:1:1,3195:1:1,3611:1:1,4775:96:96,4776:31:31,5114:11:11,5115:5:5,6581:1:1,6889:139:139,15926:1:1,17056:65:65,211853:3:3,211854:2:2,211855:3:3,248684:1:1,248704:1:1,250188:11:11,251526:1:1^
 441^5^0^17^18^1433^0.5052^0.6829^5^Black Dragon Whelp^^
 588^10^0^34^35^1434^0.2474^0.1231^10^Bloodscalp Scout^1519:3:3,1708:1:1,3771:1:1,3901:3:3,3915:1:1,4306:4:5^
@@ -110,8 +110,15 @@ GoldScout-export 6^3ubmf49vax6y^30
 3976^1^0^0^0^0^0.0000^0.0000^0^^5216:1:1,7726:1:1^
 3977^1^0^0^0^0^0.0000^0.0000^0^^7720:1:1^
 3983^1^0^0^0^0^0.0000^0.0000^0^^7682:1:1^
+3988^2^0^19^20^1442^0.6645^0.4881^2^Venture Co. Operator^5734:1:1^
+3989^15^0^18^19^1442^0.6460^0.5054^15^Venture Co. Logger^955:1:1,1812:2:2,2287:1:1,2455:1:1,2592:3:4,14125:1:1^
+3991^2^0^19^20^1442^0.6638^0.5236^2^Venture Co. Deforester^2287:1:1,2592:1:2,248685:1:1^
 4005^10^0^16^17^1442^0.5879^0.7595^10^Deepmoss Creeper^1081:2:2,3174:4:4,3182:1:1,3931:1:1,4567:1:1^
+4007^8^0^17^18^1442^0.6144^0.6222^8^Deepmoss Venomspitter^1081:2:2,3174:4:4,3182:1:1^
 4008^1^0^17^17^1442^0.7617^0.8349^1^Cliff Stormer^5128:1:1^
+4011^1^0^19^19^1442^0.6210^0.5869^1^Young Pridewing^^
+4073^1^0^23^23^1442^0.6601^0.4517^1^XT 4^1478:1:1,1800:1:1,2592:1:2^
+4263^5^0^14^14^1442^0.6151^0.6232^5^Deepmoss Hatchling^^
 4286^5^0^0^0^0^0.0000^0.0000^0^^3780:1:1,4306:2:2^
 4287^7^0^0^0^0^0.0000^0.0000^0^^3816:1:1,4306:1:2,9833:1:1,213543:1:1^
 4288^2^0^0^0^0^0.0000^0.0000^0^^4306:2:7^
@@ -310,6 +317,7 @@ GoldScout-export 6^3ubmf49vax6y^30
 @i^1464^Buzzard Talon
 @i^1465^Tigerbane
 @i^1477^Scroll of Agility II
+@i^1478^Scroll of Protection II
 @i^1497^Calico Cloak
 @i^1498^Calico Gloves
 @i^1499^Calico Pants
@@ -335,6 +343,7 @@ GoldScout-export 6^3ubmf49vax6y^30
 @i^1739^Laced Mail Boots
 @i^1787^Patched Leather Belt
 @i^1790^Patched Cloak
+@i^1800^Rawhide Pants
 @i^1812^Short-handled Battle Axe
 @i^1815^Ornamental Mace
 @i^1816^Unbalanced Axe
@@ -538,6 +547,7 @@ GoldScout-export 6^3ubmf49vax6y^30
 @i^5569^Seaweed
 @i^5636^Delicate Feather
 @i^5637^Large Fang
+@i^5734^Super Reaper 6000 Blueprints
 @i^5741^Rock Chip
 @i^5775^Pattern: Black Silk Pack
 @i^5785^Thick Murloc Scale
@@ -606,6 +616,7 @@ GoldScout-export 6^3ubmf49vax6y^30
 @i^13115^Sheepshear Mantle
 @i^14086^Beaded Sandals
 @i^14088^Beaded Cloak
+@i^14125^Ritual Leggings of the Owl
 @i^14366^Mystic's Bracelets
 @i^14829^Symbolic Legplates
 @i^15010^Primal Wraps of Nature Protection
@@ -641,6 +652,7 @@ GoldScout-export 6^3ubmf49vax6y^30
 @i^217161^Torn Mystical Scroll
 @i^248683^Waylaid Crate: Apprentice Ore
 @i^248684^Waylaid Crate: Apprentice Textiles
+@i^248685^Waylaid Crate: Apprentice Curiosities
 @i^248690^Waylaid Crate: Earthly Expert Herbs
 @i^248691^Waylaid Crate: Flowering Expert Herbs
 @i^248693^Waylaid Crate: Expert Textiles
@@ -762,6 +774,7 @@ GoldScout-export 6^3ubmf49vax6y^30
 @q^1464^0:15:0
 @q^1465^2:2:0
 @q^1477^1:0:0
+@q^1478^1:0:0
 @q^1497^0:4:0
 @q^1498^0:4:0
 @q^1499^0:4:0
@@ -787,6 +800,7 @@ GoldScout-export 6^3ubmf49vax6y^30
 @q^1739^0:4:0
 @q^1787^0:4:0
 @q^1790^0:4:0
+@q^1800^0:4:0
 @q^1812^0:2:0
 @q^1815^0:2:0
 @q^1816^0:2:0
@@ -990,6 +1004,7 @@ GoldScout-export 6^3ubmf49vax6y^30
 @q^5569^0:15:0
 @q^5636^0:15:0
 @q^5637^1:7:1
+@q^5734^1:12:0
 @q^5741^0:15:0
 @q^5775^2:9:0
 @q^5785^1:7:1
@@ -1058,6 +1073,7 @@ GoldScout-export 6^3ubmf49vax6y^30
 @q^13115^3:4:0
 @q^14086^1:4:0
 @q^14088^1:4:0
+@q^14125^2:4:0
 @q^14366^2:4:0
 @q^14829^2:4:0
 @q^15010^2:4:0
@@ -1093,6 +1109,7 @@ GoldScout-export 6^3ubmf49vax6y^30
 @q^217161^1:15:0
 @q^248683^1:0:1
 @q^248684^1:0:1
+@q^248685^1:0:1
 @q^248690^1:0:1
 @q^248691^1:0:1
 @q^248693^1:0:1
@@ -2297,8 +2314,15 @@ GoldScout-export 6^3ubmf49vax6y^30
 @a^3475^71:1
 @a^3560^91:1
 @a^3939^91:2,111:6
+@a^3988^193:1,213:1
+@a^3989^172:1,192:3,193:2,212:1,213:6,232:2
+@a^3991^213:2
 @a^4005^290:1,291:2,292:1,310:1,311:2,312:2,333:1
+@a^4007^232:2,251:1,252:5
 @a^4008^335:1
+@a^4011^232:1
+@a^4073^193:1
+@a^4263^251:2,252:3
 @a^4316^171:1,191:1
 @a^4342^108:1
 @a^4376^86:4,106:1

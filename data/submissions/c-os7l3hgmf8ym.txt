@@ -1,4 +1,4 @@
-GoldScout-export 6^os7l3hgmf8ym^18
+GoldScout-export 6^os7l3hgmf8ym^19
 205^4^0^28^29^1431^0.6363^0.7240^4^Dunkelläufer der Nachtheuler^3770:1:1,9809:1:1^
 428^4^0^18^19^1433^0.5445^0.6552^4^Terrorkondor^556:1:1,1080:2:2,4775:1:1,4776:1:1,6889:4:4,17056:1:1,211784:1:1^
 430^1^0^19^19^1433^0.2260^0.2134^1^Mystiker der Rotkammgnolle^^
@@ -40,8 +40,8 @@ GoldScout-export 6^os7l3hgmf8ym^18
 1195^1^0^10^11^1432^0.3184^0.1753^1^Waldlauerer^3174:1:1^
 1202^1^0^11^12^1432^0.3642^0.2351^1^Kobold der Tunnelratten^2589:1:2^
 1364^1^0^34^34^1437^0.6273^0.2744^1^Balgaras der Niederträchtige^3639:1:1^
-1400^4^0^23^24^1437^0.3179^0.3764^4^Sumpflandkrokilisk^3667:1:1^
-1417^3^0^21^22^1437^0.2873^0.3942^3^Junger Sumpflandkrokilisk^3667:2:2^
+1400^5^0^23^24^1437^0.3004^0.3893^5^Sumpflandkrokilisk^3667:2:2^
+1417^15^0^21^22^1437^0.2645^0.4113^15^Junger Sumpflandkrokilisk^770:4:4,3397:6:6,3667:6:6,14170:1:1^
 1663^1^0^0^0^0^0.0000^0.0000^0^^2909:1:1,3628:1:1,4306:1:1^
 1666^1^0^0^0^0^0.0000^0.0000^0^^3640:1:1^
 1696^1^0^0^0^0^0.0000^0.0000^0^^3630:1:1^
@@ -133,6 +133,7 @@ GoldScout-export 6^os7l3hgmf8ym^18
 @i^556^Bussardschnabel
 @i^723^Geiferzahnleber
 @i^769^Brocken Eberfleisch
+@i^770^Spitzer Krokiliskenzahn
 @i^771^Gesplitterter Eberhauer
 @i^858^Geringer Heiltrank
 @i^878^Faustgroße Spinndrüse
@@ -205,6 +206,7 @@ GoldScout-export 6^os7l3hgmf8ym^18
 @i^3306^Brackwasserweste
 @i^3308^Barbarische Stoffhandschuhe
 @i^3378^Brokatgürtel
+@i^3397^Haut eines jungen Krokilisken
 @i^3401^Raue Krokiliskenschuppe
 @i^3614^Jaulers Tatze
 @i^3628^Hand von Dextren Ward
@@ -286,6 +288,7 @@ GoldScout-export 6^os7l3hgmf8ym^18
 @i^11407^Zerrissener Bärenpelz
 @i^12184^Raptorfleisch
 @i^13245^Kreshs Rücken
+@i^14170^Bukanier-Mantel
 @i^14171^Bukanier-Hose des Zauberers
 @i^14364^Mystikerschuhe
 @i^15211^Militantes Kurzschwert der Beweglichkeit
@@ -315,6 +318,7 @@ GoldScout-export 6^os7l3hgmf8ym^18
 @q^556^0:15:0
 @q^723^1:7:1
 @q^769^1:7:1
+@q^770^0:15:0
 @q^771^0:15:0
 @q^858^1:0:0
 @q^878^0:7:0
@@ -387,6 +391,7 @@ GoldScout-export 6^os7l3hgmf8ym^18
 @q^3306^2:4:0
 @q^3308^2:4:0
 @q^3378^0:4:0
+@q^3397^1:12:0
 @q^3401^0:15:0
 @q^3614^1:12:0
 @q^3628^1:12:0
@@ -468,6 +473,7 @@ GoldScout-export 6^os7l3hgmf8ym^18
 @q^11407^1:12:0
 @q^12184^1:7:1
 @q^13245^3:4:0
+@q^14170^1:4:0
 @q^14171^2:4:0
 @q^14364^2:4:0
 @q^15211^2:2:0
@@ -1791,8 +1797,8 @@ GoldScout-export 6^os7l3hgmf8ym^18
 @a^1195^66:1
 @a^1202^87:1
 @a^1364^112:1
-@a^1400^109:1,127:1,164:2
-@a^1417^127:1,145:1,164:1
+@a^1400^109:1,127:1,164:3
+@a^1417^127:1,145:2,146:5,164:3,165:1,182:1,183:2
 @a^1909^193:2
 @a^2349^192:1,197:2,216:1
 @a^2350^195:1

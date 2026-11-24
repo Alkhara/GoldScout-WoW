@@ -1,4 +1,4 @@
-GoldScout-export 6^otli460mthfa^13
+GoldScout-export 6^otli460mthfa^14
 206^6^0^29^30^1431^0.6878^0.7162^6^Nightbane Vile Fang^5637:1:1^
 212^6^0^29^30^1431^0.3395^0.7332^6^Splinter Fist Warrior^4306:1:2^
 215^1^0^24^24^1431^0.2127^0.6260^1^Defias Night Runner^^
@@ -7,15 +7,20 @@ GoldScout-export 6^otli460mthfa^13
 448^1^0^11^11^1429^0.2532^0.9208^1^Hogger^1931:1:1^
 478^16^0^9^10^1429^0.2502^0.9269^16^Riverpaw Outrunner^117:2:2,159:1:1,781:1:1,1307:1:1,1413:1:1,1419:1:1,2589:8:12,2642:1:1,2646:1:1,2966:1:1,3192:1:1,9761:1:1^
 522^1^0^35^35^1431^0.1814^0.4472^1^Mor'Ladim^3514:1:1^
+547^1^0^17^17^1436^0.6159^0.6632^1^Great Goretusk^769:1:2^
 565^1^0^20^20^1431^0.2040^0.3013^1^Rabid Dire Wolf^1015:1:1,5635:1:1^
 604^1^0^27^27^1431^0.1631^0.3397^1^Plague Spreader^^
 628^2^0^24^25^1431^0.5443^0.6108^2^Black Ravager^1015:1:1,3402:2:2^
+681^3^0^30^31^1434^0.3816^0.1377^3^Young Stranglethorn Tiger^1686:2:2,12202:1:1^
 889^1^0^25^25^1431^0.3660^0.7239^1^Splinter Fist Ogre^2592:1:1,15241:1:1^
 892^1^0^28^28^1431^0.3554^0.7101^1^Splinter Fist Taskmaster^^
 898^1^0^26^27^1431^0.6481^0.3384^1^Nightbane Worgen^^
 909^2^0^26^26^1431^0.2467^0.7083^2^Defias Night Blade^2592:1:1,7997:1:1^
 920^2^0^30^31^1431^0.6168^0.8165^2^Nightbane Tainted One^^
-923^3^0^23^24^1431^0.2409^0.6916^3^Young Black Ravager^1015:2:2,3301:1:1^
+923^4^0^23^24^1431^0.3337^0.6689^4^Young Black Ravager^1015:2:2,3301:1:1,248687:1:1^
+937^8^0^32^33^1434^0.4450^0.1046^8^Kurzen Jungle Fighter^2748:1:1,3802:1:1,4306:2:4,6404:1:1^
+938^1^0^34^35^1434^0.4426^0.0799^1^Kurzen Commando^1707:1:1^
+940^23^0^32^33^1434^0.4465^0.0982^23^Kurzen Medicine Man^1707:1:1,2633:10:10,2725:1:1,3357:3:3,3358:1:1,3818:1:1,4306:6:9,4338:1:1^
 1007^5^0^20^21^1437^0.6310^0.6674^5^Mosshide Gnoll^1821:1:1,2592:2:3,4306:1:1,6565:1:1^
 1008^9^0^21^22^1437^0.6310^0.6481^9^Mosshide Mongrel^2589:1:2,2592:3:4^
 1009^2^0^22^23^1437^0.4716^0.3272^2^Mosshide Mistweaver^^
@@ -123,6 +128,7 @@ GoldScout-export 6^otli460mthfa^13
 @i^159^Refreshing Spring Water
 @i^422^Dwarven Mild
 @i^730^Murloc Eye
+@i^769^Chunk of Boar Meat
 @i^770^Pointy Crocolisk Tooth
 @i^781^Stone Gnoll Hammer
 @i^785^Mageroyal
@@ -171,9 +177,12 @@ GoldScout-export 6^otli460mthfa^13
 @i^2592^Wool Cloth
 @i^2611^Crude Flint
 @i^2629^Intrepid Strongbox Key
+@i^2633^Jungle Remedy
 @i^2642^Loose Chain Boots
 @i^2646^Loose Chain Pants
 @i^2702^Lightforge Ingot
+@i^2725^Green Hills of Stranglethorn - Page 1
+@i^2748^Green Hills of Stranglethorn - Page 24
 @i^2785^Stiff Recurve Bow
 @i^2909^Red Wool Bandana
 @i^2940^Bloody Bear Paw
@@ -191,6 +200,8 @@ GoldScout-export 6^otli460mthfa^13
 @i^3337^Dragonmaw War Banner
 @i^3348^Giant Crocolisk Skin
 @i^3349^Sida's Bag
+@i^3357^Liferoot
+@i^3358^Khadgar's Whisker
 @i^3379^Brocade Bracers
 @i^3380^Cross-stitched Belt
 @i^3385^Lesser Mana Potion
@@ -216,7 +227,9 @@ GoldScout-export 6^otli460mthfa^13
 @i^3786^Shiny Dirk
 @i^3802^Hardened Leather Bracers
 @i^3805^Hardened Leather Pants
+@i^3818^Fadeleaf
 @i^4306^Silk Cloth
+@i^4338^Mageweave Cloth
 @i^4402^Small Flame Sac
 @i^4428^Spider Palp
 @i^4542^Moist Cornbread
@@ -237,6 +250,7 @@ GoldScout-export 6^otli460mthfa^13
 @i^6361^Raw Rainbow Fin Albacore
 @i^6387^Glimmering Mail Bracers
 @i^6393^Silver-thread Gloves
+@i^6404^Mail Combat Spaulders
 @i^6565^Shimmering Gloves of Spirit
 @i^6986^Crimson Lotus
 @i^7110^Silver-thread Armor
@@ -252,6 +266,7 @@ GoldScout-export 6^otli460mthfa^13
 @i^11407^Torn Bear Pelt
 @i^11969^Jacinth Circle of Arcane Protection
 @i^11983^Chrome Ring of the Tiger
+@i^12202^Tiger Meat
 @i^12238^Darkshore Grouper
 @i^14170^Buccaneer's Mantle
 @i^15211^Militant Shortsword of the Boar
@@ -261,6 +276,7 @@ GoldScout-export 6^otli460mthfa^13
 @i^17058^Fish Oil
 @i^211784^Scroll: WUBBA WUBBA
 @i^211855^Scroll: STHENIC LUNATE
+@i^248687^Waylaid Crate: Journeyman Ore
 @i^248688^Waylaid Crate: Journeyman Textiles
 @i^248689^Waylaid Crate: Journeyman Curiosities
 @i^248707^Waylaid Crate: Journeyman Parts
@@ -294,6 +310,7 @@ GoldScout-export 6^otli460mthfa^13
 @q^159^1:0:0
 @q^422^1:0:0
 @q^730^1:7:1
+@q^769^1:7:1
 @q^770^0:15:0
 @q^781^1:2:0
 @q^785^1:7:1
@@ -342,9 +359,12 @@ GoldScout-export 6^otli460mthfa^13
 @q^2592^1:7:1
 @q^2611^1:12:0
 @q^2629^1:13:0
+@q^2633^1:0:0
 @q^2642^0:4:0
 @q^2646^0:4:0
 @q^2702^1:12:0
+@q^2725^1:12:0
+@q^2748^1:12:0
 @q^2785^0:2:0
 @q^2909^1:12:0
 @q^2940^0:15:0
@@ -362,6 +382,8 @@ GoldScout-export 6^otli460mthfa^13
 @q^3337^1:12:0
 @q^3348^1:12:0
 @q^3349^1:12:0
+@q^3357^1:7:1
+@q^3358^1:7:1
 @q^3379^0:4:0
 @q^3380^0:4:0
 @q^3385^1:0:0
@@ -387,7 +409,9 @@ GoldScout-export 6^otli460mthfa^13
 @q^3786^0:2:0
 @q^3802^0:4:0
 @q^3805^0:4:0
+@q^3818^1:7:1
 @q^4306^1:7:1
+@q^4338^1:7:1
 @q^4402^1:7:1
 @q^4428^0:15:0
 @q^4542^1:0:0
@@ -408,6 +432,7 @@ GoldScout-export 6^otli460mthfa^13
 @q^6361^1:7:1
 @q^6387^2:4:0
 @q^6393^2:4:0
+@q^6404^2:4:0
 @q^6565^2:4:0
 @q^6986^0:15:0
 @q^7110^2:4:0
@@ -423,6 +448,7 @@ GoldScout-export 6^otli460mthfa^13
 @q^11407^1:12:0
 @q^11969^2:4:0
 @q^11983^2:4:0
+@q^12202^1:7:1
 @q^12238^1:0:0
 @q^14170^1:4:0
 @q^15211^2:2:0
@@ -432,6 +458,7 @@ GoldScout-export 6^otli460mthfa^13
 @q^17058^1:15:0
 @q^211784^1:0:0
 @q^211855^1:0:0
+@q^248687^1:0:1
 @q^248688^1:0:1
 @q^248689^1:0:1
 @q^248707^2:0:1
@@ -466,6 +493,8 @@ GoldScout-export 6^otli460mthfa^13
 @m^1424^Hillsbrad Foothills
 @m^1429^Elwynn Forest
 @m^1431^Duskwood
+@m^1434^Stranglethorn Vale
+@m^1436^Westfall
 @m^1437^Wetlands
 @m^1438^Teldrassil
 @m^1439^Darkshore
@@ -1243,15 +1272,20 @@ GoldScout-export 6^otli460mthfa^13
 @a^448^365:1
 @a^478^345:1,364:9,365:6
 @a^522^163:1
+@a^547^272:1
 @a^565^124:1
 @a^604^123:1
 @a^628^250:1,251:1
+@a^681^47:3
 @a^889^287:1
 @a^892^287:1
 @a^898^132:1
 @a^909^284:2
 @a^920^332:2
-@a^923^245:1,265:1,304:1
+@a^923^245:1,252:1,265:1,304:1
+@a^937^28:2,48:5,49:1
+@a^938^28:1
+@a^940^28:14,48:7,49:2
 @a^1007^252:3,292:2
 @a^1008^252:7,291:1,292:1
 @a^1009^128:1,130:1

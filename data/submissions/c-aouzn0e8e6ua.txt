@@ -1,4 +1,4 @@
-GoldScout-export 6^aouzn0e8e6ua^37
+GoldScout-export 6^aouzn0e8e6ua^38
 126^7^0^12^13^1436^0.4576^0.0883^7^Murloc Coastrunner^730:4:4,1499:1:1,1732:1:1,6289:1:2,254548:2:2^
 456^12^0^13^14^1436^0.4305^0.1037^12^Murloc Minor Oracle^730:6:6,1498:1:1,2777:1:1,5523:4:4,254548:3:3^
 513^4^0^14^15^1436^0.3819^0.1495^4^Murloc Netter^1512:1:1,254548:2:2^
@@ -127,6 +127,14 @@ GoldScout-export 6^aouzn0e8e6ua^37
 5053^3^0^0^0^0^0.0000^0.0000^0^^2924:1:1,3181:1:3,3401:2:5,6443:1:1^
 5055^3^0^0^0^0^0.0000^0.0000^0^^4604:3:3,4606:1:1^
 5056^3^0^0^0^0^0.0000^0.0000^0^^6443:1:1,6444:1:1,6445:1:1,17056:1:1^
+5260^2^0^42^43^1444^0.5069^0.4975^2^Groddoc Ape^2799:2:2^
+5262^4^0^49^50^1444^0.4703^0.2623^4^Groddoc Thunderer^2799:3:3,4096:1:1,4099:2:2,6259:3:3^
+5268^7^0^41^42^1444^0.7550^0.4116^7^Ironfur Bear^6258:3:3,11408:2:2,11409:2:2,11411:2:2^
+5288^1^0^47^48^1444^0.4625^0.2933^1^Rabid Longtooth^12208:1:1^
+5425^3^0^41^42^1446^0.4896^0.3480^3^Starving Blisterpaw^4583:1:1,12037:1:1,14230:1:1^
+5426^5^0^44^45^1446^0.4853^0.4476^5^Blisterpaw Hyena^4583:2:2,4584:1:1,12037:3:3,12203:2:2,12208:2:2^
+5428^3^0^42^43^1446^0.4928^0.3599^3^Roc^1464:1:1,3404:1:1,6257:1:1,11418:1:1^
+5429^9^0^43^45^1446^0.4575^0.3897^9^Fire Roc^1464:7:7,3404:3:3,5829:2:2,6257:2:2,8146:1:1,11417:1:1,12207:4:4^
 5431^2^0^48^50^1446^0.5304^0.9573^2^Surf Glider^4555:2:2,7973:1:1^
 5459^1^0^47^48^1446^0.3877^0.2895^1^Centipaar Tunneler^6302:1:1^
 5615^8^0^43^44^1446^0.6216^0.3759^8^Wastewander Rogue^3927:1:1,4306:1:2,4338:1:1,8399:2:2,8483:3:3^
@@ -453,6 +461,7 @@ GoldScout-export 6^aouzn0e8e6ua^37
 @i^2749^Green Hills of Stranglethorn - Page 25
 @i^2773^Cracked Shortbow
 @i^2777^Feeble Shortbow
+@i^2799^Gorilla Fang
 @i^2924^Crocolisk Meat
 @i^2940^Bloody Bear Paw
 @i^3010^Fine Sand
@@ -515,6 +524,7 @@ GoldScout-export 6^aouzn0e8e6ua^37
 @i^4092^Prismatic Basilisk Scale
 @i^4096^Coarse Gorilla Hair
 @i^4097^Chipped Gorilla Tooth
+@i^4099^Tuft of Gorilla Hair
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4377^Heavy Blasting Powder
@@ -579,7 +589,11 @@ GoldScout-export 6^aouzn0e8e6ua^37
 @i^5569^Seaweed
 @i^5637^Large Fang
 @i^5785^Thick Murloc Scale
+@i^5829^Razor-sharp Beak
 @i^6149^Greater Mana Potion
+@i^6257^Roc Gizzard
+@i^6258^Ironfur Liver
+@i^6259^Groddoc Liver
 @i^6289^Raw Longjaw Mud Snapper
 @i^6300^Husk Fragment
 @i^6302^Delicate Insect Wing
@@ -748,6 +762,7 @@ GoldScout-export 6^aouzn0e8e6ua^37
 @i^14047^Runecloth
 @i^14162^Pagan Mitts of the Eagle
 @i^14164^Pagan Belt of the Sorcerer
+@i^14230^Embersilk Tunic of the Elder
 @i^14234^Embersilk Robes of Spirit
 @i^14242^Darkmist Pants of Frost Protection
 @i^14246^Darkmist Wizard Hat of the Prophet
@@ -1014,6 +1029,7 @@ GoldScout-export 6^aouzn0e8e6ua^37
 @q^2749^1:12:0
 @q^2773^0:2:0
 @q^2777^0:2:0
+@q^2799^1:12:0
 @q^2924^1:7:1
 @q^2940^0:15:0
 @q^3010^0:15:0
@@ -1076,6 +1092,7 @@ GoldScout-export 6^aouzn0e8e6ua^37
 @q^4092^0:15:0
 @q^4096^1:15:0
 @q^4097^0:15:0
+@q^4099^0:15:0
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4377^1:7:1
@@ -1140,7 +1157,11 @@ GoldScout-export 6^aouzn0e8e6ua^37
 @q^5569^0:15:0
 @q^5637^1:7:1
 @q^5785^1:7:1
+@q^5829^0:15:0
 @q^6149^1:0:0
+@q^6257^1:12:0
+@q^6258^1:12:0
+@q^6259^1:12:0
 @q^6289^1:7:1
 @q^6300^0:15:0
 @q^6302^0:15:0
@@ -1309,6 +1330,7 @@ GoldScout-export 6^aouzn0e8e6ua^37
 @q^14047^1:7:1
 @q^14162^2:4:0
 @q^14164^2:4:0
+@q^14230^2:4:0
 @q^14234^2:4:0
 @q^14242^2:4:0
 @q^14246^2:4:0
@@ -1522,6 +1544,7 @@ GoldScout-export 6^aouzn0e8e6ua^37
 @m^1438^Teldrassil
 @m^1439^Darkshore
 @m^1443^Desolace
+@m^1444^Feralas
 @m^1445^Dustwallow Marsh
 @m^1446^Tanaris
 @m^1448^Felwood
@@ -3452,6 +3475,14 @@ GoldScout-export 6^aouzn0e8e6ua^37
 @a^4846^28:1,29:1,47:3,48:1,49:1,67:3
 @a^4851^67:2,87:1
 @a^4856^67:3,86:1
+@a^5260^190:2
+@a^5262^89:1,109:2,110:1
+@a^5268^155:2,174:3,175:1,176:1
+@a^5288^109:1
+@a^5425^129:1,149:2
+@a^5426^169:2,189:3
+@a^5428^149:3
+@a^5429^129:1,148:1,149:4,168:3
 @a^5431^390:2
 @a^5459^107:1
 @a^5615^132:2,151:2,152:4
@@ -3592,6 +3623,6 @@ GoldScout-export 6^aouzn0e8e6ua^37
 @a^263749^73:1
 @a^272228^310:1
 @a^276401^207:1
-@f^1437^0^4^199^6361:4:4^240:4
+@f^1437^0^8^199^6358:1:1,6361:7:7^240:8
 @f^1439^0^10^197^6303:2:2,6358:1:1,6361:2:2,12238:5:5^166:10
 @l^0^enUS
