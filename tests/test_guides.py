@@ -14,11 +14,13 @@ import submission  # noqa: E402
 
 # Coyote: 60 kills, Coyote Meat (2673) on 24. Packleader: 55 kills, also Coyote Meat (the same farm).
 # Bear: 70 kills, Bear Gall Bladder (3702) on 14 and Big Bear Meat (3730) on 7. Thin: 12 kills (too few).
+# Boss: 53 kills and Bear Gall Bladder on almost every one, but no zone or position (a dungeon): not a farm.
 EXPORT = """GoldScout-export 4^abcdefghijkl^9
 1109^60^0^10^11^1436^0.5^0.5^60^Coyote^2673:24:24,2934:6:6^
 833^55^0^11^12^1436^0.5^0.5^55^Coyote Packleader^2673:20:20^
 3809^70^0^21^22^1440^0.5^0.5^70^Ashenvale Bear^3702:14:14,3730:7:14^
 4000^12^0^30^31^1440^0.5^0.5^12^Thin Mob^3702:12:12^
+8983^53^0^0^0^0^0.0000^0.0000^0^^3702:50:50^
 @i^2673^Coyote Meat
 @i^3702^Bear Gall Bladder
 @i^3730^Big Bear Meat

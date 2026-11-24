@@ -100,11 +100,13 @@ def market_name(market):
 def farms(data, prices):
     """The mobs worth farming on one auction house, best first: [{npc, kills, per_kill, cautious, parts}],
     parts [{item, rate, stack, price, listed, per_kill}] for each crafting reagent listed there, most valuable
-    first. Only mobs with SOLID kills; items nobody lists (no price) don't count."""
+    first. Only mobs with SOLID kills that players looted somewhere with a position, so not inside dungeons (the
+    game gives no position there, and some bosses come with no zone at all): like the add-on's Farm list with
+    Show dungeon drops off, since a boss with a lockout isn't a farm. Items nobody lists (no price) don't count."""
     found = []
     for npc, entry in data.mobs.items():
         kills = entry["k"]
-        if kills < data_pages.SOLID:
+        if kills < data_pages.SOLID or not entry["maps"]:
             continue
         parts, cautious = [], 0.0
         for item, rate, stack in data.best_drops(npc):
