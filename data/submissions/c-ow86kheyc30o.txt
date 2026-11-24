@@ -1,4 +1,4 @@
-GoldScout-export 6^ow86kheyc30o^11
+GoldScout-export 6^ow86kheyc30o^12
 597^1^0^37^37^1434^0.2409^0.0859^1^Bloodscalp Berserker^4306:1:2^
 660^2^0^37^37^1434^0.2405^0.0859^2^Bloodscalp Witch Doctor^1708:1:1^
 667^3^0^39^40^1434^0.4357^0.3564^3^Skullsplitter Warrior^1520:1:1,4306:1:2^
@@ -33,6 +33,12 @@ GoldScout-export 6^ow86kheyc30o^11
 4855^4^0^0^0^0^0.0000^0.0000^0^^8118:1:1,9918:1:1^
 4857^1^0^0^0^0^0.0000^0.0000^0^^7912:1:1^
 4860^4^0^0^0^0^0.0000^0.0000^0^^8142:1:1^
+5229^10^0^40^41^1444^0.7556^0.3106^10^Gordunni Ogre^3806:1:1,4338:1:2,4599:2:2^
+5232^6^0^42^43^1444^0.7543^0.3162^6^Gordunni Brute^4004:1:1,4306:1:2,4338:4:7,251464:1:1^
+5237^10^0^41^42^1444^0.7636^0.3267^10^Gordunni Ogre Mage^4338:4:7^
+5249^9^0^40^41^1444^0.7275^0.3866^9^Woodpaw Mongrel^3928:1:1,4306:1:1,4338:4:5,9237:5:5,262889:1:1^
+5251^9^0^41^42^1444^0.7257^0.3775^9^Woodpaw Trapper^1645:1:1,4338:2:2,9237:3:3^
+5253^7^0^41^42^1444^0.7262^0.3901^7^Woodpaw Brute^4306:1:2,4338:2:4,9237:2:2^
 5615^3^0^43^44^1446^0.6232^0.3782^3^Wastewander Rogue^3927:1:1^
 5616^10^0^40^41^1446^0.6303^0.3064^10^Wastewander Thief^4338:3:6,8483:4:4^
 5617^7^0^42^43^1446^0.6205^0.3795^7^Wastewander Shadow Mage^8483:2:2^
@@ -171,6 +177,7 @@ GoldScout-export 6^ow86kheyc30o^11
 @i^3800^Hardened Leather Belt
 @i^3801^Hardened Leather Boots
 @i^3802^Hardened Leather Bracers
+@i^3806^Hardened Leather Shoulderpads
 @i^3810^Double Mail Bracers
 @i^3812^Double Mail Gloves
 @i^3813^Double Mail Pants
@@ -184,6 +191,7 @@ GoldScout-export 6^ow86kheyc30o^11
 @i^3928^Superior Healing Potion
 @i^3942^Crochet Shoulderpads
 @i^3965^Thick Leather Gloves
+@i^4004^Overlinked Chain Gloves
 @i^4021^Blunting Mace
 @i^4105^Elder Crocolisk Skin
 @i^4306^Silk Cloth
@@ -232,6 +240,7 @@ GoldScout-export 6^ow86kheyc30o^11
 @i^8483^Wastewander Water Pouch
 @i^8723^Caliph Scorpidsting's Head
 @i^8751^Overlinked Coif
+@i^9237^Woodpaw Gnoll Mane
 @i^9285^Field Plate Vambraces of Spirit
 @i^9298^Recipe: Elixir of Giants
 @i^9355^Hoop Earring
@@ -275,6 +284,7 @@ GoldScout-export 6^ow86kheyc30o^11
 @i^248708^Waylaid Crate: Expert Fabrics
 @i^250184^Recipe: Raptor Rouladen
 @i^251401^Plans: Prefect's Boots
+@i^251464^Plans: Charged Mithril Battleaxe
 @i^262889^Sealed Expert's Writ
 @i^263972^Woodworker's Axe
 @i^265357^Snargl's Snout
@@ -352,6 +362,7 @@ GoldScout-export 6^ow86kheyc30o^11
 @q^3800^0:4:0
 @q^3801^0:4:0
 @q^3802^0:4:0
+@q^3806^0:4:0
 @q^3810^0:4:0
 @q^3812^0:4:0
 @q^3813^0:4:0
@@ -365,6 +376,7 @@ GoldScout-export 6^ow86kheyc30o^11
 @q^3928^1:0:0
 @q^3942^0:4:0
 @q^3965^0:4:0
+@q^4004^0:4:0
 @q^4021^0:2:0
 @q^4105^1:12:0
 @q^4306^1:7:1
@@ -413,6 +425,7 @@ GoldScout-export 6^ow86kheyc30o^11
 @q^8483^1:12:0
 @q^8723^1:12:0
 @q^8751^0:4:0
+@q^9237^1:12:0
 @q^9285^2:4:0
 @q^9298^2:9:0
 @q^9355^0:15:0
@@ -456,6 +469,7 @@ GoldScout-export 6^ow86kheyc30o^11
 @q^248708^2:0:1
 @q^250184^1:9:0
 @q^251401^3:9:0
+@q^251464^2:9:0
 @q^262889^3:0:0
 @q^263972^1:12:0
 @q^265357^1:12:0
@@ -503,6 +517,7 @@ GoldScout-export 6^ow86kheyc30o^11
 @m^1415^Eastern Kingdoms
 @m^1418^Badlands
 @m^1434^Stranglethorn Vale
+@m^1444^Feralas
 @m^1445^Dustwallow Marsh
 @m^1446^Tanaris
 @m^2548^Riverglades
@@ -1218,6 +1233,12 @@ GoldScout-export 6^ow86kheyc30o^11
 @a^4404^250:7,251:12
 @a^4405^250:5,251:9,271:1
 @a^4841^210:1
+@a^5229^114:2,115:1,135:7
+@a^5232^114:1,115:1,135:4
+@a^5237^115:1,135:9
+@a^5249^154:6,174:3
+@a^5251^154:9
+@a^5253^154:7
 @a^5615^151:1,152:2
 @a^5616^111:1,112:2,132:6,133:1
 @a^5617^132:1,151:2,152:3,172:1
