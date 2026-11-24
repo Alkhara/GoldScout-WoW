@@ -1,4 +1,4 @@
-GoldScout-export 6^j7nnv5ciga4h^6
+GoldScout-export 6^j7nnv5ciga4h^7
 232^1^0^23^23^1424^0.3359^0.3419^1^Farmer Ray^1485:1:1^
 1939^19^0^16^17^1421^0.6586^0.2814^19^Rot Hide Brute^858:1:1,1743:1:1,2216:1:1,2217:1:1,2589:1:1,2592:3:4,4567:1:1,211853:1:1,211854:1:1^
 1940^1^0^17^18^1421^0.6711^0.2501^1^Rot Hide Plague Weaver^^
@@ -29,7 +29,18 @@ GoldScout-export 6^j7nnv5ciga4h^6
 3925^12^0^23^24^1440^0.3762^0.3457^12^Thistlefur Avenger^1205:1:1,1801:1:1,2589:1:2,2592:3:4,4538:1:1^
 3926^4^0^23^24^1440^0.3801^0.3560^4^Thistlefur Pathfinder^2592:1:1,16653:1:1^
 3987^1^0^25^25^1440^0.3585^0.3338^1^Dal Bloodclaw^^
+4016^2^0^24^25^1442^0.3568^0.1564^2^Fey Dragon^3176:2:2,4402:1:1,5583:1:1^
+4017^1^0^26^26^1442^0.3169^0.1080^1^Wily Fey Dragon^3175:1:1^
+4018^15^0^22^23^1442^0.4530^0.2592^15^Antlered Courser^5471:9:9,5566:5:5,5585:15:30,5871:2:2^
+4020^16^0^22^23^1442^0.3602^0.1736^16^Sap Beast^1820:1:1,1821:1:1,2450:1:1,3356:1:1,3385:1:1,3670:2:2,3674:1:1,3676:2:2,5582:5:5^
+4021^3^0^24^25^1442^0.3601^0.1990^3^Corrosive Sap Beast^2447:1:1,3676:1:1^
+4044^1^0^23^24^1442^0.4331^0.3875^1^Blackened Basilisk^^
+4051^4^0^23^24^1442^0.3628^0.1247^4^Cenarion Botanist^2592:1:1^
+4053^4^0^23^25^1442^0.3614^0.1184^4^Daughter of Cenarius^4306:1:1^
+4057^4^0^24^25^1442^0.3676^0.1191^4^Son of Cenarius^2589:1:2,2592:1:1,4306:1:1^
+4067^16^0^23^24^1442^0.3524^0.1291^16^Twilight Runner^5135:1:1,5136:8:8,5584:5:5,248705:1:1^
 4802^2^0^21^21^1414^0.4394^0.3486^2^Blackfathom Tide Priestess^5524:1:1,16790:1:1,17057:1:1^
+5806^4^0^24^25^1442^0.3676^0.1190^4^Treant Ally^^
 @i^422^Dwarven Mild
 @i^858^Lesser Healing Potion
 @i^878^Fist-sized Spinneret
@@ -53,29 +64,49 @@ GoldScout-export 6^j7nnv5ciga4h^6
 @i^1805^Tough Leather Bracers
 @i^1808^Tough Leather Pants
 @i^1810^Tough Leather Armor
+@i^1820^Wooden Maul
+@i^1821^Warped Blade
 @i^2216^Simple Buckler
 @i^2217^Rectangular Shield
+@i^2447^Peacebloom
+@i^2450^Briarthorn
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2940^Bloody Bear Paw
 @i^3174^Spider Ichor
+@i^3175^Ruined Dragonhide
+@i^3176^Small Claw
 @i^3317^A Talking Head
+@i^3356^Kingsblood
+@i^3385^Lesser Mana Potion
+@i^3670^Large Slimy Bone
+@i^3674^Decomposed Boot
+@i^3676^Slimy Ichor
 @i^3692^Hillsbrad Human Skull
 @i^3730^Big Bear Meat
 @i^3770^Mutton Chop
 @i^3872^Plans: Golden Scale Leggings
 @i^4306^Silk Cloth
+@i^4402^Small Flame Sac
 @i^4428^Spider Palp
 @i^4538^Snapvine Watermelon
 @i^4567^Merc Sword of the Tiger
 @i^4605^Red-speckled Mushroom
 @i^4633^Heavy Bronze Lockbox
+@i^5135^Thin Black Claw
 @i^5136^Torn Furry Ear
 @i^5446^Broken Elemental Bracer
 @i^5447^Damaged Elemental Bracer
 @i^5448^Fractured Elemental Bracer
+@i^5471^Stag Meat
 @i^5481^Satyr Horns
 @i^5524^Thick-shelled Clam
+@i^5566^Broken Antler
+@i^5582^Stonetalon Sap
+@i^5583^Fey Dragon Scale
+@i^5584^Twilight Whisker
+@i^5585^Courser Eye
+@i^5871^Large Hoof
 @i^9451^Bubbling Water
 @i^11406^Rotting Bear Carcass
 @i^11407^Torn Bear Pelt
@@ -119,29 +150,49 @@ GoldScout-export 6^j7nnv5ciga4h^6
 @q^1805^0:4:0
 @q^1808^0:4:0
 @q^1810^0:4:0
+@q^1820^0:2:0
+@q^1821^0:2:0
 @q^2216^0:4:0
 @q^2217^0:4:0
+@q^2447^1:7:1
+@q^2450^1:7:1
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2940^0:15:0
 @q^3174^1:7:1
+@q^3175^0:15:0
+@q^3176^0:15:0
 @q^3317^1:12:0
+@q^3356^1:7:1
+@q^3385^1:0:0
+@q^3670^0:15:0
+@q^3674^0:15:0
+@q^3676^0:15:0
 @q^3692^1:12:0
 @q^3730^1:7:1
 @q^3770^1:0:0
 @q^3872^2:9:0
 @q^4306^1:7:1
+@q^4402^1:7:1
 @q^4428^0:15:0
 @q^4538^1:0:0
 @q^4567^2:2:0
 @q^4605^1:0:0
 @q^4633^2:15:0
+@q^5135^0:15:0
 @q^5136^0:15:0
 @q^5446^0:15:0
 @q^5447^0:15:0
 @q^5448^0:15:0
+@q^5471^1:7:1
 @q^5481^1:12:0
 @q^5524^1:7:0
+@q^5566^0:15:0
+@q^5582^1:12:0
+@q^5583^1:12:0
+@q^5584^1:12:0
+@q^5585^1:12:0
+@q^5871^0:15:0
 @q^9451^1:0:0
 @q^11406^0:15:0
 @q^11407^1:12:0
@@ -166,6 +217,7 @@ GoldScout-export 6^j7nnv5ciga4h^6
 @m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
 @m^1440^Ashenvale
+@m^1442^Stonetalon Mountains
 @c^118^
 @c^724^
 @c^733^
@@ -1436,5 +1488,16 @@ GoldScout-export 6^j7nnv5ciga4h^6
 @a^3925^127:6,147:5,148:1
 @a^3926^127:1,147:3
 @a^3987^127:1
+@a^4016^46:1,67:1
+@a^4017^46:1
+@a^4018^67:1,69:1,88:4,89:2,108:1,109:3,129:1,149:2
+@a^4020^46:1,47:1,66:5,67:9
+@a^4021^66:1,67:1,87:1
+@a^4044^148:1
+@a^4051^46:1,47:3
+@a^4053^47:4
+@a^4057^47:4
+@a^4067^26:3,46:6,47:1,67:6
 @a^4802^128:2
+@a^5806^47:4
 @l^0^enUS

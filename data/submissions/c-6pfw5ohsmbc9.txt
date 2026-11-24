@@ -1,4 +1,5 @@
-GoldScout-export 6^6pfw5ohsmbc9^22
+GoldScout-export 6^6pfw5ohsmbc9^23
+92^15^0^39^40^1418^0.1515^0.3437^15^Elémentaire de roche^4552:1:1,4553:5:5,4784:9:9,7067:3:3,7912:4:5,8150:3:3,262889:1:1^
 587^12^0^33^34^1434^0.3092^0.1834^12^Guerrier Bloodscalp^1520:1:1,2290:1:1,2592:1:2,3771:1:1,3795:1:1,3901:4:4,3915:2:2,4306:4:7,213547:1:1^
 588^22^0^34^35^1434^0.2536^0.1150^22^Eclaireur Bloodscalp^2592:1:3,2721:1:1,2734:1:1,2735:1:1,3771:1:1,3901:4:4,3915:6:6,4306:7:9,4338:1:1^
 595^17^0^34^35^1434^0.2476^0.1096^17^Chasseur Bloodscalp^2592:2:4,2742:1:1,3771:2:2,3901:4:4,3915:2:2,4306:5:9,248706:1:1,277957:1:1^
@@ -81,6 +82,10 @@ GoldScout-export 6^6pfw5ohsmbc9^22
 2565^7^0^35^36^1417^0.5562^0.5818^7^Rampant des plaines géant^878:1:1,1074:4:4,1081:6:6,1725:1:1,2251:3:3,3182:4:4,278225:4:4^
 2578^3^0^31^31^1417^0.6699^0.4730^3^Jeune busard des mésas^1464:2:2,3041:1:1,3404:2:2,5829:1:1^
 2667^8^0^36^37^1434^0.3618^0.3106^8^Garde de Laze^^
+2732^2^0^38^39^1418^0.3479^0.4772^2^Chasseresse des récifs^1688:1:1,12202:2:2^
+2734^1^0^40^40^1418^0.1743^0.5029^1^Patriarche Traqueur des récifs^^
+2735^21^0^37^39^1418^0.1799^0.4159^21^Elémentaire de roche inférieur^4552:3:3,4553:7:7,4626:10:10,4784:4:4,7912:3:6,8150:6:6^
+2831^1^0^39^41^1418^0.2614^0.4768^1^Busard géant^1464:1:1,5829:1:1,12037:1:1^
 3560^4^0^37^37^1434^0.2291^0.1079^4^Gardien Guérisseur^^
 3767^6^0^27^28^1440^0.8105^0.4981^6^Entourloupeur Mornecoeur^4306:1:2,7128:5:5,248687:1:1^
 3770^3^0^27^27^1440^0.8084^0.4960^3^Traqueur des ténèbres Mornecoeur^4306:1:2,7128:1:1,16654:1:1^
@@ -357,6 +362,8 @@ GoldScout-export 6^6pfw5ohsmbc9^22
 @i^4461^Peau de raptor
 @i^4512^Oeil de raptor des hautes-terres
 @i^4536^Pomme rouge brillante
+@i^4552^Fragment de pierre lisse
+@i^4553^Morceau de pierre délabré
 @i^4555^Epaisse queue écailleuse
 @i^4556^Fragment de carapace moucheté
 @i^4566^Solide bâton de guerre du loup
@@ -371,9 +378,11 @@ GoldScout-export 6^6pfw5ohsmbc9^22
 @i^4605^Champignon à pois rouges
 @i^4606^Morilles spongieuses
 @i^4607^Délicieux humus des grottes
+@i^4626^Petit éclat de pierre
 @i^4695^Cape brunie
 @i^4720^Echarpe nocturne
 @i^4732^Cape glyphée
+@i^4784^Pierre morte
 @i^4865^Peau détruite
 @i^5114^Griffe abîmée
 @i^5115^Os brisé
@@ -420,6 +429,7 @@ GoldScout-export 6^6pfw5ohsmbc9^22
 @i^6840^Corne galvanisée
 @i^6905^Hache des récifs
 @i^6908^Lien de Ghamoo-ra
+@i^7067^Terre élémentaire
 @i^7073^Croc brisé
 @i^7074^Griffes émoussées
 @i^7100^Ichor gluant
@@ -429,8 +439,10 @@ GoldScout-export 6^6pfw5ohsmbc9^22
 @i^7462^Ceinturon de chevalier de protection contre les arcanes
 @i^7465^Cimier de chevalier de défense
 @i^7490^Bottes de capitaine du loup
+@i^7912^Pierre solide
 @i^7973^Palourde à large bouche
 @i^8146^Serre cruelle
+@i^8150^Sel de Fonderoc
 @i^8365^Truite tête-mithril crue
 @i^9294^Recette : Potion de sauvageonne
 @i^9355^Boucle d'oreille
@@ -694,6 +706,8 @@ GoldScout-export 6^6pfw5ohsmbc9^22
 @q^4461^1:7:1
 @q^4512^1:12:0
 @q^4536^1:0:0
+@q^4552^0:15:0
+@q^4553^0:15:0
 @q^4555^0:15:0
 @q^4556^0:15:0
 @q^4566^2:2:0
@@ -708,9 +722,11 @@ GoldScout-export 6^6pfw5ohsmbc9^22
 @q^4605^1:0:0
 @q^4606^1:0:0
 @q^4607^1:0:0
+@q^4626^1:12:0
 @q^4695^2:4:0
 @q^4720^2:4:0
 @q^4732^2:4:0
+@q^4784^0:15:0
 @q^4865^0:15:0
 @q^5114^0:15:0
 @q^5115^0:15:0
@@ -757,6 +773,7 @@ GoldScout-export 6^6pfw5ohsmbc9^22
 @q^6840^1:12:0
 @q^6905^3:2:0
 @q^6908^3:4:0
+@q^7067^1:7:1
 @q^7073^0:15:0
 @q^7074^0:15:0
 @q^7100^0:15:0
@@ -766,8 +783,10 @@ GoldScout-export 6^6pfw5ohsmbc9^22
 @q^7462^2:4:0
 @q^7465^2:4:0
 @q^7490^2:4:0
+@q^7912^1:7:1
 @q^7973^1:7:0
 @q^8146^1:7:1
+@q^8150^1:7:1
 @q^8365^1:7:1
 @q^9294^2:9:0
 @q^9355^0:15:0
@@ -866,6 +885,7 @@ GoldScout-export 6^6pfw5ohsmbc9^22
 @m^1414^Kalimdor
 @m^1416^Montagnes d'Alterac
 @m^1417^Hautes-terres d'Arathi
+@m^1418^Terres ingrates
 @m^1420^Clairières de Tirisfal
 @m^1421^Forêt des Pins argentés
 @m^1424^Contreforts de Hautebrande
@@ -2124,6 +2144,7 @@ GoldScout-export 6^6pfw5ohsmbc9^22
 @c^285280^
 @c^285281^
 @c^286152^
+@a^92^122:3,123:6,142:1,143:5
 @a^587^46:1,66:6,85:3,86:2
 @a^588^25:3,44:7,45:10,46:2
 @a^595^25:5,44:7,45:5
@@ -2206,6 +2227,10 @@ GoldScout-export 6^6pfw5ohsmbc9^22
 @a^2565^211:1,230:1,231:2,251:3
 @a^2578^172:1,194:1,213:1
 @a^2667^127:8
+@a^2732^165:1,207:1
+@a^2734^203:1
+@a^2735^142:2,143:5,163:8,164:3,183:1,184:2
+@a^2831^185:1
 @a^3560^24:2,44:1,64:1
 @a^3767^196:4,216:2
 @a^3770^196:1,216:2
