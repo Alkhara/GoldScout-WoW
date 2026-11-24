@@ -1,4 +1,4 @@
-GoldScout-export 6^s51ykkpzvxlw^2
+GoldScout-export 6^s51ykkpzvxlw^3
 3^8^0^24^25^1431^0.2454^0.3933^8^Flesh Eater^887:1:1,1772:1:1,2589:2:4,2783:1:1,6530:2:2^
 202^5^0^23^24^1431^0.2109^0.4824^5^Skeletal Horror^2592:4:6,3012:1:1,211784:1:1,248682:1:1^
 210^2^0^26^27^1431^0.2627^0.3788^2^Bone Chewer^2592:1:1,6530:1:1^
@@ -17,16 +17,31 @@ GoldScout-export 6^s51ykkpzvxlw^2
 923^4^0^23^24^1431^0.3257^0.6813^4^Young Black Ravager^1015:1:1,3301:3:3,262888:1:1^
 930^5^0^24^25^1431^0.3086^0.5294^5^Black Widow Hatchling^878:3:3,1081:3:3,2251:1:1,3174:3:3,3182:1:1,4428:1:1^
 948^1^0^25^26^1431^0.2485^0.3924^1^Rotted One^887:1:1^
+1501^8^0^1^1^1420^0.3116^0.6237^8^Mindless Zombie^159:1:1,1374:1:1,2211:1:1,2589:1:1,4604:1:1^
+1502^8^0^1^2^1420^0.3189^0.6186^8^Wretched Zombie^159:2:2,1364:1:1,1370:1:1,1374:1:1,4604:1:1^
+1508^4^0^1^1^1420^0.3120^0.6019^4^Young Scavenger^3265:3:3,4865:2:2,7074:2:2^
+1509^3^0^2^3^1420^0.3502^0.5704^3^Ragged Scavenger^3265:3:3,4865:1:1,7073:1:1^
+1512^6^0^1^2^1420^0.3251^0.5798^6^Duskbat^1372:1:1,3264:5:5,3363:1:1,3365:1:1,4865:1:1,7073:3:3,7074:3:3^
+1513^2^0^3^4^1420^0.3467^0.5688^2^Mangy Duskbat^3264:1:1,7073:1:1,7074:1:1^
+1890^12^0^2^3^1420^0.3284^0.6098^12^Rattlecage Skeleton^159:2:2,1364:1:1,1378:1:1,2589:4:4,4604:2:2^
+1919^1^0^5^5^1420^0.3659^0.6165^1^Samuel Fipps^16333:1:1^
 2044^1^0^25^25^1429^0.8546^0.6971^1^Forlorn Spirit^^
 272260^1^0^24^24^1431^0.3055^0.5133^1^Lost Stalker^281143:1:1^
+@i^159^Refreshing Spring Water
 @i^878^Fist-sized Spinneret
 @i^887^Pound of Flesh
 @i^893^Dire Wolf Fang
 @i^1015^Lean Wolf Flank
 @i^1081^Crisp Spider Meat
 @i^1205^Melon Juice
+@i^1364^Ragged Leather Vest
+@i^1370^Ragged Leather Bracers
+@i^1372^Ragged Cloak
+@i^1374^Frayed Shoes
+@i^1378^Frayed Pants
 @i^1475^Small Venom Sac
 @i^1772^Brocade Shoes
+@i^2211^Bent Large Shield
 @i^2251^Gooey Spider Leg
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
@@ -35,17 +50,26 @@ GoldScout-export 6^s51ykkpzvxlw^2
 @i^3174^Spider Ichor
 @i^3182^Spider's Silk
 @i^3198^Battering Hammer of Nature Protection
+@i^3264^Duskbat Wing
+@i^3265^Scavenger Paw
 @i^3301^Sharp Canine
+@i^3363^Frayed Belt
+@i^3365^Frayed Bracers
 @i^3402^Soft Patch of Fur
 @i^3631^Bellygrub's Tusk
 @i^4306^Silk Cloth
 @i^4428^Spider Palp
+@i^4604^Forest Mushroom Cap
 @i^4606^Spongy Morel
+@i^4865^Ruined Pelt
 @i^5635^Sharp Claw
 @i^6530^Nightcrawlers
 @i^6546^Soldier's Leggings of Healing
+@i^7073^Broken Fang
+@i^7074^Chipped Claw
 @i^9794^Ivycloth Cloak of the Boar
 @i^9810^Fortified Boots of the Eagle
+@i^16333^Samuel's Remains
 @i^211784^Scroll: WUBBA WUBBA
 @i^248682^Waylaid Crate: Apprentice Herbs
 @i^248684^Waylaid Crate: Apprentice Textiles
@@ -53,14 +77,21 @@ GoldScout-export 6^s51ykkpzvxlw^2
 @i^248689^Waylaid Crate: Journeyman Curiosities
 @i^262888^Sealed Journeyman's Writ
 @i^281143^Ira's Dagger
+@q^159^1:0:0
 @q^878^0:7:0
 @q^887^0:15:0
 @q^893^0:15:0
 @q^1015^1:7:1
 @q^1081^1:7:1
 @q^1205^1:0:0
+@q^1364^0:4:0
+@q^1370^0:4:0
+@q^1372^0:4:0
+@q^1374^0:4:0
+@q^1378^0:4:0
 @q^1475^1:7:1
 @q^1772^0:4:0
+@q^2211^0:4:0
 @q^2251^1:7:1
 @q^2589^1:7:1
 @q^2592^1:7:1
@@ -69,17 +100,26 @@ GoldScout-export 6^s51ykkpzvxlw^2
 @q^3174^1:7:1
 @q^3182^1:7:1
 @q^3198^2:2:0
+@q^3264^1:12:0
+@q^3265^1:12:0
 @q^3301^0:15:0
+@q^3363^0:4:0
+@q^3365^0:4:0
 @q^3402^0:15:0
 @q^3631^1:12:0
 @q^4306^1:7:1
 @q^4428^0:15:0
+@q^4604^1:0:0
 @q^4606^1:0:0
+@q^4865^0:15:0
 @q^5635^1:7:1
 @q^6530^1:0:0
 @q^6546^2:4:0
+@q^7073^0:15:0
+@q^7074^0:15:0
 @q^9794^2:4:0
 @q^9810^2:4:0
+@q^16333^1:12:0
 @q^211784^1:0:0
 @q^248682^1:0:1
 @q^248684^1:0:1
@@ -87,6 +127,7 @@ GoldScout-export 6^s51ykkpzvxlw^2
 @q^248689^1:0:1
 @q^262888^3:0:0
 @q^281143^1:15:0
+@m^1420^Tirisfal Glades
 @m^1429^Elwynn Forest
 @m^1431^Duskwood
 @m^1433^Redridge Mountains
@@ -986,6 +1027,14 @@ GoldScout-export 6^s51ykkpzvxlw^2
 @a^923^249:1,265:1,285:2
 @a^930^145:1,206:2,226:1,246:1
 @a^948^144:1
+@a^1501^246:8
+@a^1502^246:8
+@a^1508^226:2,246:2
+@a^1509^226:2,227:1
+@a^1512^226:6
+@a^1513^226:1,227:1
+@a^1890^226:2,246:10
+@a^1919^247:1
 @a^2044^277:1
 @a^272260^206:1
 @l^0^enUS

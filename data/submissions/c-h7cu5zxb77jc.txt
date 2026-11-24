@@ -1,4 +1,4 @@
-GoldScout-export 6^h7cu5zxb77jc^14
+GoldScout-export 6^h7cu5zxb77jc^15
 92^6^0^39^40^1418^0.1429^0.3481^6^Rock Elemental^4553:1:1,4627:3:3,4784:4:4,7067:1:1^
 587^1^0^33^33^1434^0.2892^0.1912^1^Bloodscalp Warrior^^
 595^2^0^34^35^1434^0.2480^0.1230^2^Bloodscalp Hunter^3385:1:1,4306:1:1^
@@ -86,12 +86,16 @@ GoldScout-export 6^h7cu5zxb77jc^14
 5426^2^0^44^44^1446^0.4881^0.3432^2^Blisterpaw Hyena^9439:2:2,12208:1:1^
 5477^1^0^39^39^1435^0.4083^0.3363^1^Noboru the Cudgel^4306:1:1,6196:1:1^
 5601^1^0^42^42^1443^0.6607^0.8055^1^Khan Jehn^^
-5615^2^0^44^44^1446^0.6104^0.3358^2^Wastewander Rogue^8483:1:1^
+5615^11^0^43^44^1446^0.6342^0.3799^11^Wastewander Rogue^3927:1:1,4001:1:1,4338:1:2,8399:1:1,8401:1:1,8483:3:3,13117:1:1^
 5616^15^0^40^41^1446^0.6190^0.2856^15^Wastewander Thief^3927:1:1,4022:1:1,4306:4:5,4338:4:7,8483:8:8,264215:1:1^
+5617^7^0^42^43^1446^0.6413^0.3897^7^Wastewander Shadow Mage^4338:3:5,8483:1:1^
 5618^15^0^41^42^1446^0.6136^0.2670^15^Wastewander Bandit^3927:2:2,3928:1:1,3938:1:1,4306:3:4,4338:2:3,8395:1:1,8483:7:7,213547:1:1^
 5622^1^0^37^37^1435^0.6524^0.2181^1^Ongeku^6190:1:1^
+5623^6^0^44^45^1446^0.6426^0.3953^6^Wastewander Assassin^1645:1:1,3927:1:1,4338:1:1,6149:1:1,8483:1:1^
 5760^1^0^40^40^1443^0.5579^0.7312^1^Lord Azrethoc^^
 5771^1^0^40^40^1443^0.5587^0.7762^1^Jugkar Grim'rod^^
+7847^1^0^46^46^1446^0.6351^0.3701^1^Caliph Scorpidsting^6149:1:1,8723:1:1^
+8996^6^0^42^43^1446^0.6405^0.3836^6^Voidwalker Minion^^
 11560^9^0^38^39^2652^0.3466^0.2549^9^Centaur Spectre^15849:8:8^
 11561^2^0^38^43^2652^0.3463^0.1936^2^Undead Ravager^^
 12922^4^0^37^38^1443^0.5455^0.7359^1^Imp Minion^^
@@ -103,6 +107,7 @@ GoldScout-export 6^h7cu5zxb77jc^14
 @i^1524^Skullsplitter Tusk
 @i^1529^Jade
 @i^1630^Broken Electro-lantern
+@i^1645^Moonberry Juice
 @i^1686^Bristly Whisker
 @i^1688^Long Soft Tail
 @i^1708^Sweet Nectar
@@ -142,6 +147,7 @@ GoldScout-export 6^h7cu5zxb77jc^14
 @i^3927^Fine Aged Cheddar
 @i^3928^Superior Healing Potion
 @i^3938^Crochet Bracers
+@i^4001^Overlinked Chain Boots
 @i^4022^Crushing Maul
 @i^4025^Balanced Long Bow
 @i^4057^Insignia Chestguard
@@ -184,6 +190,7 @@ GoldScout-export 6^h7cu5zxb77jc^14
 @i^5840^Searing Tongue
 @i^5841^Searing Heart
 @i^5945^Deadmire's Tooth
+@i^6149^Greater Mana Potion
 @i^6166^Coyote Jawbone
 @i^6169^Unprepared Sawtooth Flank
 @i^6190^Draenethyst Shard
@@ -213,7 +220,10 @@ GoldScout-export 6^h7cu5zxb77jc^14
 @i^8151^Flask of Mojo
 @i^8153^Wildvine
 @i^8395^Pattern: Tough Scorpid Breastplate
+@i^8399^Pattern: Tough Scorpid Boots
+@i^8401^Pattern: Tough Scorpid Leggings
 @i^8483^Wastewander Water Pouch
+@i^8723^Caliph Scorpidsting's Head
 @i^8749^Crochet Hat
 @i^9437^Untested Basilisk Sample
 @i^9439^Untested Hyena Sample
@@ -231,6 +241,7 @@ GoldScout-export 6^h7cu5zxb77jc^14
 @i^12202^Tiger Meat
 @i^12203^Red Wolf Meat
 @i^12208^Tender Wolf Meat
+@i^13117^Ogron's Sash
 @i^13129^Firemane Leggings
 @i^13422^Stonescale Eel
 @i^13754^Raw Glossy Mightfish
@@ -271,6 +282,7 @@ GoldScout-export 6^h7cu5zxb77jc^14
 @q^1524^1:12:0
 @q^1529^2:7:1
 @q^1630^0:15:0
+@q^1645^1:0:0
 @q^1686^0:15:0
 @q^1688^0:15:0
 @q^1708^1:0:0
@@ -310,6 +322,7 @@ GoldScout-export 6^h7cu5zxb77jc^14
 @q^3927^1:0:0
 @q^3928^1:0:0
 @q^3938^0:4:0
+@q^4001^0:4:0
 @q^4022^0:2:0
 @q^4025^0:2:0
 @q^4057^2:4:0
@@ -352,6 +365,7 @@ GoldScout-export 6^h7cu5zxb77jc^14
 @q^5840^1:12:0
 @q^5841^1:12:0
 @q^5945^1:12:0
+@q^6149^1:0:0
 @q^6166^1:12:0
 @q^6169^1:12:0
 @q^6190^1:12:0
@@ -381,7 +395,10 @@ GoldScout-export 6^h7cu5zxb77jc^14
 @q^8151^1:7:1
 @q^8153^1:7:1
 @q^8395^2:9:0
+@q^8399^2:9:0
+@q^8401^2:9:0
 @q^8483^1:12:0
+@q^8723^1:12:0
 @q^8749^0:4:0
 @q^9437^1:12:0
 @q^9439^1:12:0
@@ -399,6 +416,7 @@ GoldScout-export 6^h7cu5zxb77jc^14
 @q^12202^1:7:1
 @q^12203^1:7:1
 @q^12208^1:7:1
+@q^13117^3:4:0
 @q^13129^3:4:0
 @q^13422^1:7:1
 @q^13754^1:7:1
@@ -703,12 +721,16 @@ GoldScout-export 6^h7cu5zxb77jc^14
 @a^5426^128:1,150:1
 @a^5477^128:1
 @a^5601^333:1
-@a^5615^132:2
+@a^5615^132:2,152:8,172:1
 @a^5616^91:3,92:4,112:1,132:7
+@a^5617^152:5,153:1,172:1
 @a^5618^91:2,92:7,111:1,132:5
 @a^5622^93:1
+@a^5623^152:4,172:2
 @a^5760^291:1
 @a^5771^311:1
+@a^7847^152:1
+@a^8996^152:6
 @a^11560^86:3,106:6
 @a^11561^46:1,106:1
 @a^12922^290:1

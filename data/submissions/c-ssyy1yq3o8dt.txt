@@ -1,4 +1,4 @@
-GoldScout-export 5^ssyy1yq3o8dt^30
+GoldScout-export 5^ssyy1yq3o8dt^31
 232^1^0^23^23^1424^0.3320^0.3430^1^Farmer Ray^1485:1:1^
 667^5^3^39^40^1434^0.4577^0.4025^5^Skullsplitter Warrior^2289:1:1,3771:1:1,3916:1:1,4306:3:7,4338:1:1,8151:2:2,8153:1:1^5427:1:1,16883:1:1
 669^4^2^41^42^1434^0.4527^0.4283^4^Skullsplitter Hunter^1520:1:1,2738:1:1,4338:1:2,4599:1:1^
@@ -225,6 +225,8 @@ GoldScout-export 5^ssyy1yq3o8dt^30
 5799^1^0^24^24^1413^0.4895^0.5280^1^Hannah Bladeleaf^2592:1:4^
 5881^1^0^45^45^1444^0.5468^0.6752^1^Cursed Sycamore^^
 5912^1^0^0^0^0^0.0000^0.0000^0^^6632:1:1^
+6505^3^0^48^49^1449^0.6477^0.7200^3^Ravasaur^11477:1:1,12184:1:1,20015:1:1^
+6506^5^0^50^50^1449^0.6637^0.7280^5^Ravasaur Runner^4587:1:1,4588:1:1,11018:2:2,11116:1:1,11477:1:1,12184:4:4,280459:1:1^
 6932^1^0^50^50^1435^0.6308^0.8944^1^Swamp Spirit^^
 7097^1^0^48^49^1448^0.5364^0.8495^1^Ironbeak Owl^5829:1:1,12207:1:1^
 7109^1^0^50^50^1448^0.4256^0.8644^1^Jadefire Felsworn^4338:1:2^
@@ -492,6 +494,7 @@ GoldScout-export 5^ssyy1yq3o8dt^30
 @i^4583^Thick Furry Mane
 @i^4584^Large Trophy Paw
 @i^4585^Dripping Spider Mandible
+@i^4587^Tribal Raptor Feathers
 @i^4588^Pristine Raptor Skull
 @i^4589^Long Elegant Feather
 @i^4590^Curved Yellow Bill
@@ -639,6 +642,8 @@ GoldScout-export 5^ssyy1yq3o8dt^30
 @i^10621^Runed Scroll
 @i^10660^First Mosh'aru Tablet
 @i^10661^Second Mosh'aru Tablet
+@i^11018^Un'Goro Soil
+@i^11116^A Mangled Journal
 @i^11386^Squishy Basilisk Eye
 @i^11387^Basilisk Heart
 @i^11391^Spined Bat Wing
@@ -651,6 +656,7 @@ GoldScout-export 5^ssyy1yq3o8dt^30
 @i^11417^Feathery Wing
 @i^11418^Hollow Wing Bone
 @i^11474^Sprite Darter Egg
+@i^11477^White Ravasaur Claw
 @i^11988^Tellurium Band of the Champion
 @i^12006^Meadow Ring of the Boar
 @i^12037^Mystery Meat
@@ -717,6 +723,7 @@ GoldScout-export 5^ssyy1yq3o8dt^30
 @i^19034^Lard's Lunch
 @i^19935^Empty Venom Sac
 @i^19936^Dried Scorpid Carapace
+@i^20015^Elder Raptor Feathers
 @i^20519^Southsea Pirate Hat
 @i^20763^Broken Weapon
 @i^20767^Scum Covered Bag
@@ -768,6 +775,7 @@ GoldScout-export 5^ssyy1yq3o8dt^30
 @i^277277^Olgra's Adornments
 @i^278186^Brilliantly Polished Bangle
 @i^280438^Abominable Head
+@i^280459^Crystal Infused Scale
 @i^286978^Rotmender's Garb
 @q^414^1:0:0
 @q^422^1:0:0
@@ -934,6 +942,7 @@ GoldScout-export 5^ssyy1yq3o8dt^30
 @q^4583^0:15:0
 @q^4584^0:15:0
 @q^4585^0:15:0
+@q^4587^0:15:0
 @q^4588^0:15:0
 @q^4589^1:7:1
 @q^4590^0:15:0
@@ -1081,6 +1090,8 @@ GoldScout-export 5^ssyy1yq3o8dt^30
 @q^10621^1:0:0
 @q^10660^1:12:0
 @q^10661^1:12:0
+@q^11018^1:12:0
+@q^11116^2:15:0
 @q^11386^0:15:0
 @q^11387^0:15:0
 @q^11391^0:15:0
@@ -1093,6 +1104,7 @@ GoldScout-export 5^ssyy1yq3o8dt^30
 @q^11417^0:15:0
 @q^11418^0:15:0
 @q^11474^1:15:0
+@q^11477^1:12:0
 @q^11988^2:4:0
 @q^12006^2:4:0
 @q^12037^1:7:1
@@ -1159,6 +1171,7 @@ GoldScout-export 5^ssyy1yq3o8dt^30
 @q^19034^1:12:0
 @q^19935^0:15:0
 @q^19936^0:15:0
+@q^20015^0:15:0
 @q^20519^1:12:0
 @q^20763^0:15:0
 @q^20767^1:15:0
@@ -1210,6 +1223,7 @@ GoldScout-export 5^ssyy1yq3o8dt^30
 @q^277277^1:12:0
 @q^278186^1:12:0
 @q^280438^1:15:0
+@q^280459^1:12:0
 @q^286978^3:4:0
 @m^1413^The Barrens
 @m^1414^Kalimdor
@@ -1222,6 +1236,7 @@ GoldScout-export 5^ssyy1yq3o8dt^30
 @m^1445^Dustwallow Marsh
 @m^1446^Tanaris
 @m^1448^Felwood
+@m^1449^Un'Goro Crater
 @c^118^
 @c^724^
 @c^733^
@@ -1616,6 +1631,8 @@ GoldScout-export 5^ssyy1yq3o8dt^30
 @a^5798^209:1
 @a^5799^209:1
 @a^5881^270:1
+@a^6505^292:1,293:2
+@a^6506^292:1,293:3,313:1
 @a^6932^352:1
 @a^7097^330:1
 @a^7109^348:1
