@@ -1,4 +1,4 @@
-GoldScout-export 6^1rjmfnl6upa3^7
+GoldScout-export 6^1rjmfnl6upa3^9
 1525^1^0^6^6^1420^0.5340^0.5031^1^Rotting Dead^^
 1526^4^0^6^7^1420^0.5241^0.5161^4^Ravaged Corpse^118:1:1,1416:1:1,2589:1:1,2855:2:2^
 1783^10^0^50^51^1422^0.4608^0.7162^10^Skeletal Flayer^4023:1:1,8948:1:1,12840:5:5,13446:1:1,14047:2:2^
@@ -69,8 +69,14 @@ GoldScout-export 6^1rjmfnl6upa3^7
 8127^1^0^0^0^0^0.0000^0.0000^0^^4338:1:1,9639:1:1^
 9779^3^0^54^56^1428^0.6602^0.2167^3^Flamekin Rager^8146:1:1^
 11075^1^0^53^53^1422^0.3751^0.5768^1^Cauldron Lord Bilemaw^13194:1:1^
+244525^1^0^55^56^2482^0.7000^0.8026^1^Hyjal Bear^248695:1:1^
 248041^2^0^56^57^2482^0.6914^0.7877^2^Hyjal Stag^5119:1:1,5471:1:1,251641:2:2^
+248042^1^0^55^56^2482^0.6956^0.7423^1^Tainted Hyjal Stag^5471:1:1^
+248395^22^0^55^56^2482^0.6252^0.7106^22^Tainted Shrubbery^3358:1:1,8766:2:2,8948:1:1,10286:4:4,10305:1:1,10308:1:1,13824:1:1,247892:12:12,256036:1:1,281017:1:1^
+249051^1^0^57^57^2482^0.6539^0.7433^1^Celastrus the Bitter^282028:1:1^
 249491^1^0^59^59^2482^0.7420^0.7581^1^Mountain Squallclimber^11419:1:1^
+260422^5^0^56^57^2482^0.4374^0.7335^5^Ashen Acolyte^274396:3:3^
+260443^1^0^58^58^2482^0.4453^0.6848^1^Dazka Shadowsleep^^
 261914^1^0^55^55^2482^0.7709^0.7563^1^Tainted Hyjal Owl^15420:1:2^
 @i^118^Minor Healing Potion
 @i^1416^Rusty Hatchet
@@ -82,6 +88,7 @@ GoldScout-export 6^1rjmfnl6upa3^7
 @i^2608^Threshadon Ambergris
 @i^2799^Gorilla Fang
 @i^2855^Putrid Claw
+@i^3358^Khadgar's Whisker
 @i^3403^Ivory Boar Tusk
 @i^3404^Buzzard Wing
 @i^3928^Superior Healing Potion
@@ -137,6 +144,9 @@ GoldScout-export 6^1rjmfnl6upa3^7
 @i^9474^Jinxed Hoodoo Kilt
 @i^9478^Ripsaw
 @i^9639^The Hand of Antu'sul
+@i^10286^Heart of the Wild
+@i^10305^Scroll of Protection IV
+@i^10308^Scroll of Intellect IV
 @i^10320^Pattern: Red Mageweave Headband
 @i^10593^Imperfect Draenethyst Fragment
 @i^10661^Second Mosh'aru Tablet
@@ -155,6 +165,7 @@ GoldScout-export 6^1rjmfnl6upa3^7
 @i^12840^Minion's Scourgestone
 @i^13194^Felstone Field Cauldron Key
 @i^13446^Major Healing Potion
+@i^13824^Recurve Long Bow
 @i^14047^Runecloth
 @i^14435^Windchaser Cinch
 @i^15264^Backbreaker of the Beast
@@ -165,15 +176,21 @@ GoldScout-export 6^1rjmfnl6upa3^7
 @i^18956^Miniaturization Residue
 @i^18958^Water Elemental Core
 @i^213544^Scroll: TOPAZ YORAK
+@i^247892^Verdant Leaves
 @i^248690^Waylaid Crate: Earthly Expert Herbs
 @i^248694^Waylaid Crate: Expert Curiosities
+@i^248695^Waylaid Crate: Earthly Artisan Herbs
 @i^251641^Hyjal Venison Cut
 @i^252930^Pattern: Charged Scorpid Gauntlets
 @i^255725^Manual: Superior Healing Potion
+@i^256036^Handful of Dirt
+@i^274396^Fel Ash Experimentation Notes
 @i^274645^Desert Ziggurat Drape
 @i^274648^The Desert Rose
 @i^274651^Zealot Plate
 @i^274655^Peacekeeper Wand
+@i^281017^Scroll: KEEP CLEF FOCI
+@i^282028^Broken Frond of Celastrus
 @q^118^1:0:0
 @q^1416^0:2:0
 @q^1464^0:15:0
@@ -184,6 +201,7 @@ GoldScout-export 6^1rjmfnl6upa3^7
 @q^2608^0:15:0
 @q^2799^1:12:0
 @q^2855^1:12:0
+@q^3358^1:7:1
 @q^3403^0:15:0
 @q^3404^1:7:1
 @q^3928^1:0:0
@@ -239,6 +257,9 @@ GoldScout-export 6^1rjmfnl6upa3^7
 @q^9474^3:4:0
 @q^9478^3:2:0
 @q^9639^3:2:0
+@q^10286^1:7:1
+@q^10305^1:0:0
+@q^10308^1:0:0
 @q^10320^2:9:0
 @q^10593^2:12:0
 @q^10661^1:12:0
@@ -257,6 +278,7 @@ GoldScout-export 6^1rjmfnl6upa3^7
 @q^12840^1:12:0
 @q^13194^1:12:0
 @q^13446^1:0:0
+@q^13824^0:2:0
 @q^14047^1:7:1
 @q^14435^2:4:0
 @q^15264^2:2:0
@@ -267,15 +289,21 @@ GoldScout-export 6^1rjmfnl6upa3^7
 @q^18956^1:12:0
 @q^18958^1:12:0
 @q^213544^1:0:0
+@q^247892^1:12:0
 @q^248690^1:0:1
 @q^248694^1:0:1
+@q^248695^1:0:1
 @q^251641^1:12:0
 @q^252930^2:9:0
 @q^255725^2:9:0
+@q^256036^0:15:0
+@q^274396^1:12:0
 @q^274645^3:4:0
 @q^274648^3:4:0
 @q^274651^3:4:0
 @q^274655^3:2:0
+@q^281017^1:0:0
+@q^282028^1:12:0
 @m^1419^Blasted Lands
 @m^1420^Tirisfal Glades
 @m^1422^Western Plaguelands
@@ -1024,7 +1052,13 @@ GoldScout-export 6^1rjmfnl6upa3^7
 @a^5993^149:1,150:2,209:1
 @a^9779^93:3
 @a^11075^227:1
+@a^244525^333:1
 @a^248041^314:1,333:1
+@a^248042^293:1
+@a^248395^271:4,272:4,273:2,291:1,292:3,293:2,294:2,311:4
+@a^249051^293:1
 @a^249491^314:1
+@a^260422^268:1,288:1,289:1,308:1,309:1
+@a^260443^268:1
 @a^261914^315:1
 @l^0^enUS
