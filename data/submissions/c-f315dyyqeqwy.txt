@@ -1,4 +1,4 @@
-GoldScout-export 6^f315dyyqeqwy^13
+GoldScout-export 6^f315dyyqeqwy^14
 92^3^0^39^40^1418^0.1398^0.3484^3^Rock Elemental^4553:1:1,4784:2:2,7067:1:1,7848:2:2^
 598^18^0^0^0^0^0.0000^0.0000^0^^1743:1:1,2589:3:5,2592:2:3^
 622^2^0^0^0^0^0.0000^0.0000^0^^2592:1:1^
@@ -240,7 +240,8 @@ GoldScout-export 6^f315dyyqeqwy^13
 13718^2^0^41^41^1414^0.3828^0.5799^2^The Nameless Prophet^17684:1:1,17757:1:1^
 14445^1^0^45^45^1435^0.7875^0.4700^1^Lord Captain Wyrmak^282008:1:1^
 14748^1^0^49^49^1425^0.8460^0.4113^1^Vilebranch Kidnapper^19034:1:1^
-250873^2^0^1^1^2521^0.4381^0.2596^2^Juvenile Vuldren^7073:2:2^
+250873^9^0^1^1^2521^0.4413^0.2597^9^Juvenile Vuldren^2672:5:5,4865:2:2,7073:3:3,7074:4:4^
+251169^7^0^1^1^2521^0.4460^0.2722^7^Pesky Cirrusfly^1364:1:1,2652:1:1,251927:3:3,251928:4:4^
 255262^5^0^0^0^0^0.0000^0.0000^0^^274028:3:3^
 255271^3^0^0^0^0^0.0000^0.0000^0^^3927:1:1,274028:1:1^
 255276^4^0^0^0^0^0.0000^0.0000^0^^4024:1:1,14904:1:1,287021:1:1^
@@ -300,6 +301,7 @@ GoldScout-export 6^f315dyyqeqwy^13
 @i^872^Rockslicer
 @i^955^Scroll of Intellect
 @i^1179^Ice Cold Milk
+@i^1364^Ragged Leather Vest
 @i^1464^Buzzard Talon
 @i^1520^Troll Sweat
 @i^1608^Skullcrusher Mace of Strength
@@ -334,6 +336,8 @@ GoldScout-export 6^f315dyyqeqwy^13
 @i^2455^Minor Mana Potion
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2652^Flimsy Chain Cloak
+@i^2672^Stringy Wolf Meat
 @i^2764^Small Dagger
 @i^2838^Heavy Stone
 @i^2986^Inscribed Leather Pants
@@ -416,6 +420,7 @@ GoldScout-export 6^f315dyyqeqwy^13
 @i^4735^Mistscape Cloak
 @i^4784^Lifeless Stone
 @i^4791^Enchanted Water
+@i^4865^Ruined Pelt
 @i^5113^Mark of the Syndicate
 @i^5116^Long Tail Feather
 @i^5117^Vibrant Plume
@@ -451,6 +456,7 @@ GoldScout-export 6^f315dyyqeqwy^13
 @i^7067^Elemental Earth
 @i^7070^Elemental Water
 @i^7073^Broken Fang
+@i^7074^Chipped Claw
 @i^7075^Core of Earth
 @i^7079^Globe of Water
 @i^7368^Elder's Pants of Stamina
@@ -652,6 +658,8 @@ GoldScout-export 6^f315dyyqeqwy^13
 @i^248709^Waylaid Crate: Expert Ingots
 @i^248710^Waylaid Crate: Expert Parts
 @i^248711^Waylaid Crate: Artisan Fabrics
+@i^251927^Chipped Cirrusfly Stinger
+@i^251928^Torn Insect Wing
 @i^252845^Pattern: Warden's Leather Shoes
 @i^252883^Pattern: Blue Suede Armor
 @i^252918^Pattern: Stalker's Mail Gauntlets
@@ -721,6 +729,7 @@ GoldScout-export 6^f315dyyqeqwy^13
 @q^872^3:2:0
 @q^955^1:0:0
 @q^1179^1:0:0
+@q^1364^0:4:0
 @q^1464^0:15:0
 @q^1520^0:15:0
 @q^1608^2:2:0
@@ -755,6 +764,8 @@ GoldScout-export 6^f315dyyqeqwy^13
 @q^2455^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2652^0:4:0
+@q^2672^1:7:1
 @q^2764^0:2:0
 @q^2838^1:7:1
 @q^2986^2:4:0
@@ -837,6 +848,7 @@ GoldScout-export 6^f315dyyqeqwy^13
 @q^4735^2:4:0
 @q^4784^0:15:0
 @q^4791^1:0:0
+@q^4865^0:15:0
 @q^5113^0:15:0
 @q^5116^1:7:1
 @q^5117^1:12:0
@@ -872,6 +884,7 @@ GoldScout-export 6^f315dyyqeqwy^13
 @q^7067^1:7:1
 @q^7070^1:7:1
 @q^7073^0:15:0
+@q^7074^0:15:0
 @q^7075^1:7:1
 @q^7079^1:7:1
 @q^7368^2:4:0
@@ -1073,6 +1086,8 @@ GoldScout-export 6^f315dyyqeqwy^13
 @q^248709^2:0:1
 @q^248710^2:0:1
 @q^248711^2:0:1
+@q^251927^0:15:0
+@q^251928^0:15:0
 @q^252845^3:9:0
 @q^252883^2:9:0
 @q^252918^3:9:0
@@ -1815,7 +1830,8 @@ GoldScout-export 6^f315dyyqeqwy^13
 @a^13718^227:2
 @a^14445^195:1
 @a^14748^176:1
-@a^250873^108:2
+@a^250873^108:9
+@a^251169^108:7
 @a^256795^165:9,185:3
 @a^256797^145:1,165:2,185:6
 @a^256799^145:1,165:7,185:3
