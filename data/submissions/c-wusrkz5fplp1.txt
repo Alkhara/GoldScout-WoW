@@ -1,4 +1,4 @@
-GoldScout-export 6^wusrkz5fplp1^16
+GoldScout-export 6^wusrkz5fplp1^18
 587^6^2^33^34^1434^0.3273^0.1648^6^Bloodscalp Warrior^1520:1:1,2592:1:1,4306:3:3^16883:1:1
 667^8^0^39^40^1434^0.4509^0.3669^8^Skullsplitter Warrior^1520:2:2,1524:3:3,4306:3:7,8151:2:2^
 669^2^0^41^42^1434^0.4652^0.3868^2^Skullsplitter Hunter^1524:1:1,4306:1:2^
@@ -42,6 +42,11 @@ GoldScout-export 6^wusrkz5fplp1^16
 4301^3^0^0^0^0^0.0000^0.0000^0^^9896:1:1^
 4306^60^0^0^0^0^0.0000^0.0000^0^^929:1:1,1206:1:1,1707:1:1,1708:1:1,1710:2:2,1826:1:1,2222:1:1,2289:1:1,2592:1:5,3800:1:1,4306:13:35,9822:1:1,248686:1:1^
 4542^1^0^0^0^0^0.0000^0.0000^0^^9285:1:1,19509:1:1^
+5615^5^1^43^44^1446^0.5932^0.3912^5^Wastewander Rogue^8483:2:2^16884:1:1
+5616^4^2^40^41^1446^0.6351^0.3169^4^Wastewander Thief^4306:1:2,8483:2:2^1707:1:1,5431:1:1
+5617^9^2^42^43^1446^0.5917^0.3846^9^Wastewander Shadow Mage^4338:4:8,4424:1:1,8483:4:4,8751:1:1^
+5618^6^1^41^42^1446^0.6365^0.3251^6^Wastewander Bandit^4306:1:2,8483:2:2^
+5623^5^1^44^44^1446^0.5864^0.3877^5^Wastewander Assassin^1645:1:1,3927:1:1,3938:1:1,4338:1:2,8483:1:1^
 6426^2^0^0^0^0^0.0000^0.0000^0^^4607:1:1^
 6489^1^0^0^0^0^0.0000^0.0000^0^^^
 6490^1^0^0^0^0^0.0000^0.0000^0^^3814:1:1,4306:1:1,7708:1:1^
@@ -68,6 +73,7 @@ GoldScout-export 6^wusrkz5fplp1^16
 7873^2^0^33^34^1413^0.4822^0.9074^2^Razorfen Battleguard^4306:1:2^
 7874^4^0^33^34^1413^0.4798^0.9252^4^Razorfen Thornweaver^2592:1:4,3813:1:1,4306:3:7^
 8567^1^0^0^0^0^0.0000^0.0000^0^^1710:1:1^
+8996^9^0^42^43^1446^0.5916^0.3824^9^Voidwalker Minion^^
 14272^1^0^18^18^1433^0.4445^0.3361^1^Snarlflare^9785:1:1^
 250187^2^0^0^0^0^0.0000^0.0000^0^^4039:1:1,249695:1:1^
 254560^17^2^39^40^2548^0.4735^0.4869^17^Twilight Shadowmancer^4306:4:6,4544:1:1,6438:1:1,7909:1:1,266425:8:16,266427:3:3,267073:4:8^5427:1:1
@@ -212,6 +218,7 @@ GoldScout-export 6^wusrkz5fplp1^16
 @i^3864^Citrine
 @i^3927^Fine Aged Cheddar
 @i^3928^Superior Healing Potion
+@i^3938^Crochet Bracers
 @i^4017^Sharp Shortsword
 @i^4019^Heavy Flint Axe
 @i^4039^Nightsky Cowl
@@ -223,6 +230,7 @@ GoldScout-export 6^wusrkz5fplp1^16
 @i^4402^Small Flame Sac
 @i^4419^Scroll of Intellect III
 @i^4421^Scroll of Protection III
+@i^4424^Scroll of Spirit III
 @i^4460^Ripped Wing Webbing
 @i^4538^Snapvine Watermelon
 @i^4539^Goldenbark Apple
@@ -244,6 +252,7 @@ GoldScout-export 6^wusrkz5fplp1^16
 @i^5428^An Exotic Cookbook
 @i^5429^A Pretty Rock
 @i^5430^Intricate Bauble
+@i^5431^Empty Hip Flask
 @i^5432^Hickory Pipe
 @i^5524^Thick-shelled Clam
 @i^5569^Seaweed
@@ -274,6 +283,8 @@ GoldScout-export 6^wusrkz5fplp1^16
 @i^8158^Jouster's Gauntlets
 @i^8159^Jouster's Girdle
 @i^8188^Explosive Shotgun
+@i^8483^Wastewander Water Pouch
+@i^8751^Overlinked Coif
 @i^9285^Field Plate Vambraces of the Wolf
 @i^9355^Hoop Earring
 @i^9785^Raider's Bracers of Nature Protection
@@ -306,6 +317,7 @@ GoldScout-export 6^wusrkz5fplp1^16
 @i^15977^Vital Orb of the Elder
 @i^16882^Battered Junkbox
 @i^16883^Worn Junkbox
+@i^16884^Sturdy Junkbox
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
 @i^19509^Dusty Mail Boots
@@ -423,6 +435,7 @@ GoldScout-export 6^wusrkz5fplp1^16
 @q^3864^2:7:1
 @q^3927^1:0:0
 @q^3928^1:0:0
+@q^3938^0:4:0
 @q^4017^0:2:0
 @q^4019^0:2:0
 @q^4039^2:4:0
@@ -434,6 +447,7 @@ GoldScout-export 6^wusrkz5fplp1^16
 @q^4402^1:7:1
 @q^4419^1:0:0
 @q^4421^1:0:0
+@q^4424^1:0:0
 @q^4460^0:15:0
 @q^4538^1:0:0
 @q^4539^1:0:0
@@ -455,6 +469,7 @@ GoldScout-export 6^wusrkz5fplp1^16
 @q^5428^0:15:0
 @q^5429^0:15:0
 @q^5430^0:15:0
+@q^5431^0:15:0
 @q^5432^0:15:0
 @q^5524^1:7:0
 @q^5569^0:15:0
@@ -485,6 +500,8 @@ GoldScout-export 6^wusrkz5fplp1^16
 @q^8158^2:4:0
 @q^8159^2:4:0
 @q^8188^2:2:0
+@q^8483^1:12:0
+@q^8751^0:4:0
 @q^9285^2:4:0
 @q^9355^0:15:0
 @q^9785^2:4:0
@@ -517,6 +534,7 @@ GoldScout-export 6^wusrkz5fplp1^16
 @q^15977^2:4:0
 @q^16882^1:15:0
 @q^16883^1:15:0
+@q^16884^1:15:0
 @q^17057^1:15:0
 @q^17058^1:15:0
 @q^19509^3:4:0
@@ -582,6 +600,7 @@ GoldScout-export 6^wusrkz5fplp1^16
 @m^1433^Redridge Mountains
 @m^1434^Stranglethorn Vale
 @m^1441^Thousand Needles
+@m^1446^Tanaris
 @m^2548^Riverglades
 @c^118^
 @c^724^
@@ -1404,9 +1423,15 @@ GoldScout-export 6^wusrkz5fplp1^16
 @a^2356^86:1
 @a^2406^286:1
 @a^4096^169:1
+@a^5615^151:3,152:1,171:1
+@a^5616^112:1,132:3
+@a^5617^151:6,152:2,171:1
+@a^5618^112:1,132:5
+@a^5623^151:5
 @a^7332^290:1
 @a^7873^369:2
 @a^7874^369:4
+@a^8996^151:6,152:2,171:1
 @a^14272^128:1
 @a^254560^169:2,188:1,189:6,209:8
 @a^255769^226:1,265:1,266:1,283:2,284:1

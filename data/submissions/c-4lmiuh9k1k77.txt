@@ -1,4 +1,4 @@
-GoldScout-export 6^4lmiuh9k1k77^5
+GoldScout-export 6^4lmiuh9k1k77^6
 681^4^0^30^31^1434^0.3451^0.1204^4^Young Stranglethorn Tiger^1686:4:4,12202:1:1^
 683^2^0^30^31^1434^0.4096^0.1170^2^Young Panther^1686:2:2^
 2240^3^0^32^33^1416^0.5697^0.6817^3^Syndicate Footpad^1707:1:1,3601:1:1^
@@ -15,6 +15,7 @@ GoldScout-export 6^4lmiuh9k1k77^5
 2413^1^0^33^33^1416^0.1922^0.9211^1^Dermot^3691:1:1^
 2414^1^0^33^33^1416^0.1680^0.8980^1^Kegan Darkmar^3688:1:1^
 2415^1^0^33^33^1416^0.1648^0.8922^1^Warden Belamoore^3711:1:1,3714:1:1^
+4054^11^0^24^25^1440^0.5933^0.5616^11^Laughing Sister^929:1:1,1205:2:2,1796:1:1,2592:5:6,5867:1:1,16656:1:1^
 4100^2^0^28^29^1441^0.2810^0.4932^2^Screeching Harpy^1205:1:1,4306:2:3,17056:1:1^
 4101^1^0^29^30^1441^0.2794^0.4947^1^Screeching Roguefeather^^
 4104^3^0^30^30^1441^0.2665^0.5315^3^Screeching Windcaller^4306:2:2,17056:1:1^
@@ -23,10 +24,12 @@ GoldScout-export 6^4lmiuh9k1k77^5
 4504^1^0^37^37^1416^0.3809^0.6859^1^Frostmaw^5811:1:1^
 4548^1^0^30^30^1441^0.1034^0.2260^1^Steelsnap^3402:1:1,5837:1:1^
 10992^1^0^30^30^1441^0.2217^0.2460^1^Enraged Panther^5137:1:1,12946:1:1^
+@i^929^Healing Potion
 @i^1205^Melon Juice
 @i^1686^Bristly Whisker
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
+@i^1796^Rawhide Boots
 @i^2289^Scroll of Strength II
 @i^2592^Wool Cloth
 @i^3402^Soft Patch of Fur
@@ -43,17 +46,24 @@ GoldScout-export 6^4lmiuh9k1k77^5
 @i^5810^Fresh Carcass
 @i^5811^Frostmaw's Mane
 @i^5837^Steelsnap's Rib
+@i^5867^Etched Phial
+@i^6303^Raw Slitherskin Mackerel
+@i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
+@i^6361^Raw Rainbow Fin Albacore
 @i^8365^Raw Mithril Head Trout
 @i^11406^Rotting Bear Carcass
 @i^12202^Tiger Meat
 @i^12946^Hypercapacitor Gizmo
+@i^16656^Shredder Operating Manual - Page 12
 @i^17056^Light Feather
 @i^21150^Iron Bound Trunk
+@q^929^1:0:0
 @q^1205^1:0:0
 @q^1686^0:15:0
 @q^1707^1:0:0
 @q^1708^1:0:0
+@q^1796^0:4:0
 @q^2289^1:0:0
 @q^2592^1:7:1
 @q^3402^0:15:0
@@ -70,16 +80,23 @@ GoldScout-export 6^4lmiuh9k1k77^5
 @q^5810^1:12:0
 @q^5811^1:12:0
 @q^5837^1:12:0
+@q^5867^1:12:0
+@q^6303^1:7:1
+@q^6358^1:7:1
 @q^6359^1:7:1
+@q^6361^1:7:1
 @q^8365^1:7:1
 @q^11406^0:15:0
 @q^12202^1:7:1
 @q^12946^1:12:0
+@q^16656^1:12:0
 @q^17056^1:15:1
 @q^21150^1:15:0
+@m^1413^The Barrens
 @m^1416^Alterac Mountains
 @m^1424^Hillsbrad Foothills
 @m^1434^Stranglethorn Vale
+@m^1440^Ashenvale
 @m^1441^Thousand Needles
 @m^1443^Desolace
 @c^724^
@@ -1136,6 +1153,7 @@ GoldScout-export 6^4lmiuh9k1k77^5
 @c^279273^
 @c^279938^
 @c^279943^
+@c^279947^
 @c^279948^
 @c^279949^
 @c^279950^
@@ -1145,6 +1163,11 @@ GoldScout-export 6^4lmiuh9k1k77^5
 @c^279959^
 @c^279960^
 @c^279961^
+@c^279962^
+@c^279964^
+@c^279965^
+@c^279966^
+@c^279967^
 @c^279969^
 @c^279970^
 @c^279972^
@@ -1185,6 +1208,7 @@ GoldScout-export 6^4lmiuh9k1k77^5
 @a^2413^363:1
 @a^2414^343:1
 @a^2415^343:1
+@a^4054^211:1,231:8,232:2
 @a^4100^185:1,205:1
 @a^4101^185:1
 @a^4104^205:3
@@ -1193,5 +1217,6 @@ GoldScout-export 6^4lmiuh9k1k77^5
 @a^4504^267:1
 @a^4548^82:1
 @a^10992^84:1
+@f^1413^0^14^157^6303:5:5,6358:5:5,6361:4:4^152:14
 @f^1443^0^7^155^6359:4:4,8365:1:1,21150:2:2^284:7
 @l^0^enUS

@@ -1,4 +1,4 @@
-GoldScout-export 6^nvfpbx504xek^39
+GoldScout-export 6^nvfpbx504xek^40
 3^16^0^24^25^1431^0.2377^0.3765^16^Flesh Eater^884:3:3,887:3:3,1129:4:4,2219:1:1,2592:2:3,2783:1:1,5529:3:3^
 48^19^0^21^22^1431^0.7925^0.7122^19^Skeletal Warrior^1818:1:1,2378:5:5,2589:2:6,2592:4:4,4306:3:3^
 157^6^0^14^15^1436^0.4932^0.5582^6^Goretusk^723:1:1,731:2:2,769:3:5,771:3:3,2677:2:2,3172:2:2^
@@ -205,11 +205,12 @@ GoldScout-export 6^nvfpbx504xek^39
 4464^1^0^24^25^1433^0.6346^0.5570^1^Blackrock Gladiator^2592:1:4^
 4499^1^0^30^30^1441^0.1067^0.2320^1^Rok'Alim the Pounder^2838:1:2,4784:1:1,5741:1:1^
 4969^2^0^26^26^1453^0.7373^0.5931^2^Old Town Thug^1205:1:1,2589:1:2^
+5419^1^0^42^42^1446^0.6687^0.2875^1^Glasshide Basilisk^^
 6523^4^0^27^28^1437^0.4893^0.1650^4^Dark Iron Rifleman^1761:1:1^
 9377^6^0^33^34^1441^0.7874^0.8449^6^Swirling Vortex^7069:3:3^
 10323^1^0^19^19^1439^0.3539^0.7667^1^Murkdeep^730:1:1,1792:1:1,5523:1:1^
 12922^1^0^23^23^1433^0.7138^0.8408^1^Imp Minion^^
-14123^1^0^42^43^1446^0.6626^0.3278^1^Steeljaw Snapper^4555:1:1,4556:1:1^
+14123^64^0^42^43^1446^0.6747^0.3632^64^Steeljaw Snapper^3712:21:21,4555:40:40,4556:37:37,4603:4:4,7973:26:26,15251:1:1,248690:1:1,262889:1:1^
 14424^1^0^25^25^1437^0.2159^0.2923^1^Mirelow^282655:1:1^
 214519^1^0^23^23^1433^0.7126^0.8421^1^Incinerator Gar'im^2592:1:2,271872:1:1^
 270892^1^0^32^32^1437^0.3409^0.5195^1^Goaz Warder^279993:1:1^
@@ -407,6 +408,7 @@ GoldScout-export 6^nvfpbx504xek^39
 @i^4556^Speckled Shell Fragment
 @i^4585^Dripping Spider Mandible
 @i^4586^Smooth Raptor Skin
+@i^4603^Raw Spotted Yellowtail
 @i^4606^Spongy Morel
 @i^4632^Ornate Bronze Lockbox
 @i^4634^Iron Lockbox
@@ -467,6 +469,7 @@ GoldScout-export 6^nvfpbx504xek^39
 @i^7354^Elder's Boots of the Channeler
 @i^7357^Elder's Hat of the Sorcerer
 @i^7561^Schematic: Goblin Jumper Cables
+@i^7973^Big-mouth Clam
 @i^8146^Wicked Claw
 @i^9797^Ivycloth Pants of the Whale
 @i^9807^Superior Shoulders of the Owl
@@ -504,6 +507,7 @@ GoldScout-export 6^nvfpbx504xek^39
 @i^15137^Cutthroat's Mitts of Power
 @i^15140^Cutthroat's Mantle of Spirit
 @i^15250^Glimmering Flamberge of Power
+@i^15251^Headstriker Sword of Stamina
 @i^15259^Hefty Battlehammer of Defense
 @i^15286^Long Redwood Bow
 @i^15350^Headhunter's Slippers of Frost Protection
@@ -745,6 +749,7 @@ GoldScout-export 6^nvfpbx504xek^39
 @q^4556^0:15:0
 @q^4585^0:15:0
 @q^4586^0:15:0
+@q^4603^1:7:1
 @q^4606^1:0:0
 @q^4632^2:15:0
 @q^4634^2:15:0
@@ -805,6 +810,7 @@ GoldScout-export 6^nvfpbx504xek^39
 @q^7354^2:4:0
 @q^7357^2:4:0
 @q^7561^1:9:0
+@q^7973^1:7:0
 @q^8146^1:7:1
 @q^9797^2:4:0
 @q^9807^2:4:0
@@ -842,6 +848,7 @@ GoldScout-export 6^nvfpbx504xek^39
 @q^15137^2:4:0
 @q^15140^2:4:0
 @q^15250^2:2:0
+@q^15251^2:2:0
 @q^15259^2:2:0
 @q^15286^2:2:0
 @q^15350^2:4:0
@@ -1953,11 +1960,12 @@ GoldScout-export 6^nvfpbx504xek^39
 @a^4464^232:1
 @a^4499^82:1
 @a^4969^234:2
+@a^5419^113:1
 @a^6523^69:4
 @a^9377^256:1,355:4,375:1
 @a^10323^307:1
 @a^12922^334:1
-@a^14123^133:1
+@a^14123^113:7,133:8,153:46,173:3
 @a^14424^104:1
 @a^214519^334:1
 @a^270892^206:1

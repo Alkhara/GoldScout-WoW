@@ -1,4 +1,4 @@
-GoldScout-export 6^hzjbrn0t99uc^29
+GoldScout-export 6^hzjbrn0t99uc^30
 6^19^0^1^2^1429^0.4842^0.3618^19^Kobold Vermin^755:6:6,805:1:1,1367:1:1,1376:1:1,1377:1:1,2589:3:3,3363:3:3,4536:3:3,247834:1:1,247839:3:3^
 38^21^0^3^4^1429^0.5458^0.4680^21^Defias Thug^159:2:2,752:12:12,1364:1:1,1368:1:1,1370:1:1,1374:1:1,1378:1:1,2070:3:3,2589:5:5,2649:1:1,2650:1:1,3365:1:1^
 40^12^0^6^7^1429^0.4740^0.7095^12^Kobold Miner^159:1:1,772:4:4,773:6:6,1417:1:1,1430:1:1,2213:1:1,2589:4:7,248001:3:3^
@@ -361,6 +361,7 @@ GoldScout-export 6^hzjbrn0t99uc^29
 @i^4584^Large Trophy Paw
 @i^4585^Dripping Spider Mandible
 @i^4599^Cured Ham Steak
+@i^4603^Raw Spotted Yellowtail
 @i^4608^Raw Black Truffle
 @i^4625^Firebloom
 @i^4638^Reinforced Steel Lockbox
@@ -385,6 +386,10 @@ GoldScout-export 6^hzjbrn0t99uc^29
 @i^6303^Raw Slitherskin Mackerel
 @i^6308^Raw Bristle Whisker Catfish
 @i^6309^17 Pound Catfish
+@i^6310^19 Pound Catfish
+@i^6358^Oily Blackmouth
+@i^6359^Firefin Snapper
+@i^6362^Raw Rockscale Cod
 @i^6444^Forked Tongue
 @i^6530^Nightcrawlers
 @i^6826^Brilliant Scale
@@ -516,6 +521,8 @@ GoldScout-export 6^hzjbrn0t99uc^29
 @i^13533^Acid-etched Pauldrons
 @i^13538^Windshrieker Pauldrons
 @i^13725^Krastinov's Bag of Horrors
+@i^13758^Raw Redgill
+@i^13760^Raw Sunscale Salmon
 @i^13816^Fine Longsword
 @i^13817^Tapered Greatsword
 @i^13819^Balanced War Axe
@@ -554,6 +561,9 @@ GoldScout-export 6^hzjbrn0t99uc^29
 @i^16724^Lightforge Gauntlets
 @i^16732^Legplates of Valor
 @i^16737^Gauntlets of Valor
+@i^16967^Feralas Ahi
+@i^16968^Sar'theris Striker
+@i^16970^Misty Reed Mahi Mahi
 @i^18043^Coal Miner Boots
 @i^18335^Pristine Black Diamond
 @i^18600^Tome of Arcane Brilliance
@@ -751,6 +761,7 @@ GoldScout-export 6^hzjbrn0t99uc^29
 @q^4584^0:15:0
 @q^4585^0:15:0
 @q^4599^1:0:0
+@q^4603^1:7:1
 @q^4608^1:0:0
 @q^4625^1:7:1
 @q^4638^2:15:0
@@ -775,6 +786,10 @@ GoldScout-export 6^hzjbrn0t99uc^29
 @q^6303^1:7:1
 @q^6308^1:7:1
 @q^6309^1:15:0
+@q^6310^1:15:0
+@q^6358^1:7:1
+@q^6359^1:7:1
+@q^6362^1:7:1
 @q^6444^0:15:0
 @q^6530^1:0:0
 @q^6826^0:15:0
@@ -906,6 +921,8 @@ GoldScout-export 6^hzjbrn0t99uc^29
 @q^13533^3:4:0
 @q^13538^3:4:0
 @q^13725^1:12:0
+@q^13758^1:7:1
+@q^13760^1:7:1
 @q^13816^0:2:0
 @q^13817^0:2:0
 @q^13819^0:2:0
@@ -944,6 +961,9 @@ GoldScout-export 6^hzjbrn0t99uc^29
 @q^16724^3:4:0
 @q^16732^3:4:0
 @q^16737^3:4:0
+@q^16967^1:15:0
+@q^16968^1:12:0
+@q^16970^1:12:0
 @q^18043^3:4:0
 @q^18335^3:12:1
 @q^18600^3:9:0
@@ -1039,6 +1059,8 @@ GoldScout-export 6^hzjbrn0t99uc^29
 @m^1429^Elwynn Forest
 @m^1435^Swamp of Sorrows
 @m^1440^Ashenvale
+@m^1443^Desolace
+@m^1444^Feralas
 @m^1445^Dustwallow Marsh
 @m^1446^Tanaris
 @m^1447^Azshara
@@ -2975,7 +2997,10 @@ GoldScout-export 6^hzjbrn0t99uc^29
 @a^256996^248:2
 @a^257532^187:4,188:2
 @f^1429^0^44^33^6289:17:17,6291:26:26,6292:1:1^249:44
+@f^1435^0^8^225^6362:8:8,16970:1:1^36:8
 @f^1440^0^321^130^3827:2:2,6289:101:101,6308:200:200,6309:2:2,21071:16:16^269:321
-@f^1445^0^76^206^6308:30:30,8365:46:46^151:76
+@f^1443^0^14^225^4603:1:1,6358:3:3,6359:2:2,6362:8:8,16968:1:1^127:14
+@f^1444^0^4^225^8365:1:1,13758:1:1,13760:2:2,16967:1:1^212:4
+@f^1445^0^122^206^6308:49:49,6310:1:1,8365:72:72^151:122
 @f^1453^0^108^75^6289:66:66,6291:21:21,6308:21:21^271:108
 @l^0^enUS
