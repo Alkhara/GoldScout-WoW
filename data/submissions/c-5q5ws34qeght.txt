@@ -1,4 +1,4 @@
-GoldScout-export 6^5q5ws34qeght^64
+GoldScout-export 6^5q5ws34qeght^65
 232^3^0^23^23^1424^0.3297^0.3625^3^Farmer Ray^1205:1:1,2592:1:2,4306:1:1,4538:2:2^
 750^1^0^42^43^1435^0.6413^0.8026^1^Marsh Inkspewer^7973:1:1^
 950^1^0^50^50^1435^0.6417^0.8015^1^Swamp Talker^8463:1:1^
@@ -531,6 +531,11 @@ GoldScout-export 6^5q5ws34qeght^64
 260432^1^0^12^12^1420^0.0946^0.6139^1^Shadowvale Mystic^1509:1:1^
 260826^2^0^59^59^2482^0.5071^0.5714^2^Zarrat Wormwing^^
 263394^1^0^60^60^2482^0.5877^0.3252^1^Bethra'zel the Feeble^^
+264079^5^0^27^28^1412^0.3362^0.1031^5^Gloomrise Hatchling^3167:5:5^
+264081^5^0^28^28^1412^0.3326^0.1017^5^Gloomrise Spinner^878:1:1,3182:1:1,14578:1:1,273181:3:3^
+264082^1^0^30^30^1412^0.3331^0.0832^1^Broodmother Valraxx^273658:1:1^
+264083^5^0^28^29^1412^0.3444^0.1025^5^Gloomrise Soldier^1081:2:2,3167:1:1,5465:3:3^
+264096^1^0^29^29^1412^0.3478^0.1031^1^Gnawed Corpse^6530:1:1^
 264570^9^0^60^60^2482^0.7564^0.3351^9^Blackthorne Adept^^
 264850^1^0^47^50^1413^0.6382^0.4052^1^Hawk^^
 266216^1^0^24^24^1424^0.7903^0.4655^1^Lord Tomas^422:1:1,15927:1:1^
@@ -761,6 +766,7 @@ GoldScout-export 6^5q5ws34qeght^64
 @i^3174^Spider Ichor
 @i^3180^Flecked Raptor Scale
 @i^3181^Partially Digested Meat
+@i^3182^Spider's Silk
 @i^3191^Arced War Axe
 @i^3192^Short Bastard Sword of Shadow Protection
 @i^3196^Edged Bastard Sword of Intellect
@@ -1199,6 +1205,7 @@ GoldScout-export 6^5q5ws34qeght^64
 @i^14563^Prospector's Cloak
 @i^14564^Prospector's Mitts
 @i^14571^Bristlebark Cape
+@i^14578^Dokebi Cord
 @i^14582^Dokebi Cape
 @i^14638^Cadaverous Leggings
 @i^14746^Hulking Belt
@@ -1341,10 +1348,12 @@ GoldScout-export 6^5q5ws34qeght^64
 @i^273105^Blueprint: Toxin Study
 @i^273125^Lich's Index Finger
 @i^273137^Skum's Bucket
+@i^273181^Crystalline Silk
 @i^273456^Cell Keeper's Claws
 @i^273457^Sorcerer Collar
 @i^273645^Blindwatcher's Sight
 @i^273646^Half-Eaten Boots
+@i^273658^Bloody Parchment
 @i^273839^Spiked Shell Band
 @i^273840^Cursed Murloc Eye
 @i^273842^Treacherous Treads
@@ -1585,6 +1594,7 @@ GoldScout-export 6^5q5ws34qeght^64
 @q^3174^1:7:1
 @q^3180^0:15:0
 @q^3181^0:15:0
+@q^3182^1:7:1
 @q^3191^3:2:0
 @q^3192^2:2:0
 @q^3196^2:2:0
@@ -2023,6 +2033,7 @@ GoldScout-export 6^5q5ws34qeght^64
 @q^14563^2:4:0
 @q^14564^2:4:0
 @q^14571^2:4:0
+@q^14578^2:4:0
 @q^14582^2:4:0
 @q^14638^3:4:0
 @q^14746^2:4:0
@@ -2165,10 +2176,12 @@ GoldScout-export 6^5q5ws34qeght^64
 @q^273105^2:9:0
 @q^273125^2:15:1
 @q^273137^3:4:0
+@q^273181^1:12:0
 @q^273456^3:2:0
 @q^273457^3:4:0
 @q^273645^3:4:0
 @q^273646^3:4:0
+@q^273658^1:15:0
 @q^273839^3:4:0
 @q^273840^3:4:0
 @q^273842^3:4:0
@@ -4904,6 +4917,11 @@ GoldScout-export 6^5q5ws34qeght^64
 @a^260432^241:1
 @a^260826^229:1,230:1
 @a^263394^131:1
+@a^264079^26:3,46:2
+@a^264081^26:3,46:2
+@a^264082^26:1
+@a^264083^26:3,46:2
+@a^264096^46:1
 @a^264570^114:3,135:2,136:1,154:1,155:1,175:1
 @a^264850^172:1
 @a^266216^195:1

@@ -1,4 +1,4 @@
-GoldScout-export 6^0eoomd273f3k^23
+GoldScout-export 6^0eoomd273f3k^25
 92^5^0^39^40^1418^0.2926^0.6134^5^Elémentaire de roche^4553:2:2,4627:3:3,4784:3:3,7067:1:1,8150:1:1^
 597^2^0^36^37^1434^0.2364^0.0923^2^Berserker Bloodscalp^4306:1:3^
 660^4^0^37^37^1434^0.2339^0.0926^4^Sorcier-docteur Bloodscalp^4306:1:2^
@@ -147,9 +147,17 @@ GoldScout-export 6^0eoomd273f3k^23
 8095^1^0^0^0^0^0.0000^0.0000^0^^1702:1:1^
 8127^1^0^0^0^0^0.0000^0.0000^0^^9641:1:1^
 8996^7^0^42^47^1446^0.6226^0.3726^7^Sbire marcheur du Vide^^
+11559^1^0^39^39^2652^0.2663^0.2652^1^Nécromancien renégat^4338:1:1,260347:1:1^
 14123^1^0^43^43^1446^0.6784^0.3968^1^Mordeuse mâchoire d'acier^3712:1:1^
 14661^1^0^47^47^1444^0.7470^0.6251^1^Fouet-cuisant^18961:1:1,18962:1:1^
 222233^1^0^43^43^1444^0.7498^0.2513^1^Ohk'zi^3187:1:1,3961:1:1^
+252711^3^0^42^43^2652^0.5358^0.3038^3^Protecteur de pylône décrépit^260348:1:1,260352:1:1^
+253526^4^0^42^42^2652^0.6685^0.2362^4^Brise-têtes dos-hirsute^4306:1:2^
+254566^4^0^41^42^2652^0.6513^0.7371^4^Rose rebelle^3357:1:1,256037:2:2,260351:1:1^
+254567^3^0^41^42^2652^0.6747^0.7452^3^Tulipe terrible^256036:1:1,256037:2:2,260349:1:1^
+254572^23^0^41^42^2652^0.6649^0.6895^23^Souci sadique^^
+255174^1^0^41^42^2652^0.4537^0.4787^1^Hurleur aveugle^260350:1:1^
+255207^1^0^42^42^2652^0.4537^0.4787^1^Rôdeur^12202:1:1,259461:1:1,260353:1:1^
 260425^1^0^37^37^1434^0.2938^0.7194^1^Mercenaire de la KapitalRisk^^
 @i^117^Viande séchée coriace
 @i^770^Croc pointu de crocilisque
@@ -181,6 +189,7 @@ GoldScout-export 6^0eoomd273f3k^23
 @i^3185^Bâton d'acrobatie d'agilité
 @i^3187^Kris sacrificiel de protection contre les arcanes
 @i^3208^Masse ronde du tigre
+@i^3357^Vietérule
 @i^3385^Potion de mana inférieure
 @i^3404^Aile de busard
 @i^3667^Viande de crocilisque tendre
@@ -196,6 +205,7 @@ GoldScout-export 6^0eoomd273f3k^23
 @i^3802^Brassards en cuir durci
 @i^3808^Ceinture doublentine
 @i^3817^Targe renforcée
+@i^3827^Potion de mana
 @i^3838^Griffe d'Ombregueule
 @i^3862^Tendon d'ancien gorille
 @i^3863^Plume de Traqueur de la jungle
@@ -261,7 +271,9 @@ GoldScout-export 6^0eoomd273f3k^23
 @i^6300^Fragment de peau
 @i^6302^Aile d'insecte délicate
 @i^6308^Poisson-chat moustachu cru
+@i^6311^Poisson-chat de 22 livres
 @i^6358^Bouche-noire huileux
+@i^6359^Lutjan de nagefeu
 @i^6411^Armure de général de brigade
 @i^6444^Langue fourchue
 @i^7067^Terre élémentaire
@@ -281,6 +293,7 @@ GoldScout-export 6^0eoomd273f3k^23
 @i^8151^Flacon de mojo
 @i^8153^Sauvageonne
 @i^8159^Ceinturon de jouteur
+@i^8365^Truite tête-mithril crue
 @i^8398^Patron : Gants armés du scorpide
 @i^8401^Patron : Jambières armées du scorpide
 @i^8444^Clé du bourreau
@@ -363,6 +376,16 @@ GoldScout-export 6^0eoomd273f3k^23
 @i^249882^Recette : thé de triage
 @i^254078^Patron : corde en tisse-terrestre
 @i^255725^Manuel : potion de soins excellente
+@i^256036^Poignée de poussière
+@i^256037^Herbes coupées
+@i^259461^Collier partiellement digéré
+@i^260347^Journal en lambeaux
+@i^260348^Extrait de journal à peine lisible, page I
+@i^260349^Extrait de journal à peine lisible, page II
+@i^260350^Extrait de journal à peine lisible, page III
+@i^260351^Extrait de journal à peine lisible, page IV
+@i^260352^Extrait de journal à peine lisible, page V
+@i^260353^Extrait de journal à peine lisible, page VI
 @i^262889^Commission d'expert scellée
 @i^264215^Schéma : bombe SUR-T
 @i^274638^Espauliers furie-des-sables
@@ -399,6 +422,7 @@ GoldScout-export 6^0eoomd273f3k^23
 @q^3185^2:2:0
 @q^3187^2:2:0
 @q^3208^2:2:0
+@q^3357^1:7:1
 @q^3385^1:0:0
 @q^3404^1:7:1
 @q^3667^1:7:1
@@ -414,6 +438,7 @@ GoldScout-export 6^0eoomd273f3k^23
 @q^3802^0:4:0
 @q^3808^0:4:0
 @q^3817^0:4:0
+@q^3827^1:0:0
 @q^3838^1:12:0
 @q^3862^1:12:0
 @q^3863^1:12:0
@@ -479,7 +504,9 @@ GoldScout-export 6^0eoomd273f3k^23
 @q^6300^0:15:0
 @q^6302^0:15:0
 @q^6308^1:7:1
+@q^6311^1:15:0
 @q^6358^1:7:1
+@q^6359^1:7:1
 @q^6411^2:4:0
 @q^6444^0:15:0
 @q^7067^1:7:1
@@ -499,6 +526,7 @@ GoldScout-export 6^0eoomd273f3k^23
 @q^8151^1:7:1
 @q^8153^1:7:1
 @q^8159^2:4:0
+@q^8365^1:7:1
 @q^8398^2:9:0
 @q^8401^2:9:0
 @q^8444^1:0:0
@@ -581,6 +609,16 @@ GoldScout-export 6^0eoomd273f3k^23
 @q^249882^1:9:0
 @q^254078^2:9:0
 @q^255725^2:9:0
+@q^256036^0:15:0
+@q^256037^0:15:0
+@q^259461^1:15:0
+@q^260347^1:15:0
+@q^260348^1:15:0
+@q^260349^1:15:0
+@q^260350^1:15:0
+@q^260351^1:15:0
+@q^260352^1:15:0
+@q^260353^1:15:0
 @q^262889^3:0:0
 @q^264215^1:9:0
 @q^274638^3:4:0
@@ -592,9 +630,11 @@ GoldScout-export 6^0eoomd273f3k^23
 @m^1425^Les Hinterlands
 @m^1434^Vallée de Strangleronce
 @m^1435^Marais des Chagrins
+@m^1443^Désolace
 @m^1444^Féralas
 @m^1446^Tanaris
 @m^1456^Thunder Bluff
+@m^2652^Shen'dralas
 @c^118^
 @c^724^
 @c^733^
@@ -1459,10 +1499,19 @@ GoldScout-export 6^0eoomd273f3k^23
 @a^7883^194:2
 @a^7996^269:1
 @a^8996^132:1,151:1,152:4,153:1
+@a^11559^105:1
 @a^14123^153:1
 @a^14661^254:1
 @a^222233^114:1
+@a^252711^94:1,128:2
+@a^253526^92:2,94:2
+@a^254566^292:1,293:2,312:1
+@a^254567^294:1,312:1,313:1
+@a^254572^273:21,293:2
+@a^255174^189:1
+@a^255207^189:1
 @a^260425^285:1
 @f^1434^0^3^150^6308:1:1,6358:1:1,21150:1:1^87:2,286:1
-@f^1456^0^61^150^6289:39:39,6291:10:10,6308:12:12^228:61
+@f^1443^0^85^166^1710:1:1,3827:1:1,6308:41:41,6311:1:1,6359:2:2,8365:39:39^284:85
+@f^1456^0^63^150^6289:40:40,6291:10:10,6308:13:13^228:61,247:2
 @l^0^frFR
