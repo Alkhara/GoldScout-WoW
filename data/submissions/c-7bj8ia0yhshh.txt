@@ -1,4 +1,7 @@
-GoldScout-export 6^7bj8ia0yhshh^24
+GoldScout-export 6^7bj8ia0yhshh^26
+422^15^0^18^19^1433^0.3788^0.5529^15^Murlocfleischfresser^730:7:7,1467:4:4,1468:6:6,1769:1:1,1793:1:1,5523:1:1,5784:2:2,6289:2:4^
+548^10^0^17^18^1433^0.4384^0.6993^10^Schwacher Murlocgezeitenrufer^730:3:3,1467:3:3,1468:4:4,2455:1:1,5523:5:5,5784:4:4,6289:1:3^
+578^6^0^19^20^1433^0.3464^0.4785^6^Murlocspäher^730:2:2,1467:1:1,1468:1:1,5523:1:1,5784:1:1^
 681^2^0^30^31^1434^0.3490^0.1318^2^Junger Schlingendorntiger^5214:1:1,248688:1:1^
 682^8^0^32^33^1434^0.3923^0.1417^8^Schlingendorntiger^1686:2:2,1687:3:3,7367:1:1,12202:3:3,15250:1:1^
 683^1^0^30^31^1434^0.4030^0.1053^1^Junger Panther^^
@@ -13,6 +16,7 @@ GoldScout-export 6^7bj8ia0yhshh^24
 855^2^0^30^31^1434^0.2483^0.1581^2^Junger Schlingendornraptor^3685:1:1,4461:2:2^
 858^1^0^36^37^1435^0.1676^0.5491^1^Trauerspinner^7433:1:1,12205:1:1^
 910^1^0^26^27^1431^0.2385^0.7157^1^Verzauberin der Defias^11968:1:1^
+1083^10^0^16^17^1433^0.4416^0.7066^10^Murlocküstenschläger^730:5:5,1467:2:2,1468:3:3,1787:1:1,5523:6:6,5784:1:1^
 1085^8^0^34^35^1434^0.3172^0.1759^8^Alter Schlingendorntiger^1686:4:4,12202:6:6,248693:1:1^
 1120^1^0^7^7^1426^0.7028^0.3906^1^Troll der Frostmane^^
 1131^2^0^7^8^1426^0.3406^0.4075^2^Winterwolf^2672:2:2,3300:1:1^
@@ -154,6 +158,7 @@ GoldScout-export 6^7bj8ia0yhshh^24
 276101^1^0^10^10^1438^0.4664^0.3276^1^Nachtschrei^6889:1:2,286750:1:1^
 @i^117^Zähes Stockfleisch
 @i^159^Erfrischendes Quellwasser
+@i^730^Murlocauge
 @i^765^Silberblatt
 @i^774^Malachit
 @i^785^Maguskönigskraut
@@ -176,6 +181,8 @@ GoldScout-export 6^7bj8ia0yhshh^24
 @i^1421^Abgenutzter Balgumhang
 @i^1433^Flickwerkrüstung
 @i^1464^Bussardkralle
+@i^1467^Gefleckter Sonnenfisch
+@i^1468^Murlocflosse
 @i^1476^Abgeknicktes Spinnengliedmaß
 @i^1497^Kattunumhang
 @i^1520^Trollschweiß
@@ -193,8 +200,11 @@ GoldScout-export 6^7bj8ia0yhshh^24
 @i^1747^Gekettelte Stiefel
 @i^1751^Gekettelte Hose
 @i^1757^Verstärkter Kettenumhang
+@i^1769^Segeltuchschulterpolster
 @i^1774^Brokatumhang
 @i^1785^Kreuznahtschulterpolster
+@i^1787^Geflickter Ledergürtel
+@i^1793^Geflickte Lederschulterstücke
 @i^1805^Feste Lederarmschienen
 @i^1806^Fester Umhang
 @i^1807^Feste Lederhandschuhe
@@ -209,6 +219,7 @@ GoldScout-export 6^7bj8ia0yhshh^24
 @i^2289^Rolle der Stärke II
 @i^2295^Großer Eberhauer
 @i^2447^Friedensblume
+@i^2455^Schwacher Manatrank
 @i^2589^Leinenstoff
 @i^2592^Wollstoff
 @i^2635^Lockerer Kettengürtel
@@ -282,8 +293,10 @@ GoldScout-export 6^7bj8ia0yhshh^24
 @i^5220^Knarzklauenfangzahn
 @i^5221^Melenas Kopf
 @i^5465^Kleines Spinnenbein
+@i^5523^Kleine rankenfüßige Muschel
 @i^5524^Dickschalige Muschel
 @i^5637^Großer Fangzahn
+@i^5784^Schleimige Murlocschuppe
 @i^5792^Razorflanks Medaillon
 @i^5825^Treshalas Anhänger
 @i^6067^Zentaurenohr
@@ -291,6 +304,8 @@ GoldScout-export 6^7bj8ia0yhshh^24
 @i^6246^Zornsäerklaue
 @i^6247^Zornsäerhorn
 @i^6248^Skorpashigift
+@i^6289^Roher Langzahniger Matschschnapper
+@i^6303^Rohe Glitschhautmakrele
 @i^6308^Roher Stoppelfühlerwels
 @i^6355^Stabile verschlossene Truhe
 @i^6357^Versiegelte Kiste
@@ -391,6 +406,7 @@ GoldScout-export 6^7bj8ia0yhshh^24
 @i^286750^Zauberstab der weisen Sicht
 @q^117^1:0:0
 @q^159^1:0:0
+@q^730^1:7:1
 @q^765^1:7:1
 @q^774^2:7:1
 @q^785^1:7:1
@@ -413,6 +429,8 @@ GoldScout-export 6^7bj8ia0yhshh^24
 @q^1421^0:4:0
 @q^1433^0:4:0
 @q^1464^0:15:0
+@q^1467^1:12:0
+@q^1468^1:7:1
 @q^1476^0:15:0
 @q^1497^0:4:0
 @q^1520^0:15:0
@@ -430,8 +448,11 @@ GoldScout-export 6^7bj8ia0yhshh^24
 @q^1747^0:4:0
 @q^1751^0:4:0
 @q^1757^0:4:0
+@q^1769^0:4:0
 @q^1774^0:4:0
 @q^1785^0:4:0
+@q^1787^0:4:0
+@q^1793^0:4:0
 @q^1805^0:4:0
 @q^1806^0:4:0
 @q^1807^0:4:0
@@ -446,6 +467,7 @@ GoldScout-export 6^7bj8ia0yhshh^24
 @q^2289^1:0:0
 @q^2295^0:15:0
 @q^2447^1:7:1
+@q^2455^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2635^0:4:0
@@ -519,8 +541,10 @@ GoldScout-export 6^7bj8ia0yhshh^24
 @q^5220^1:12:0
 @q^5221^1:12:0
 @q^5465^1:7:1
+@q^5523^1:7:0
 @q^5524^1:7:0
 @q^5637^1:7:1
+@q^5784^1:7:1
 @q^5792^1:12:0
 @q^5825^1:12:0
 @q^6067^1:12:0
@@ -528,6 +552,8 @@ GoldScout-export 6^7bj8ia0yhshh^24
 @q^6246^1:12:0
 @q^6247^1:12:0
 @q^6248^1:12:0
+@q^6289^1:7:1
+@q^6303^1:7:1
 @q^6308^1:7:1
 @q^6355^1:15:0
 @q^6357^1:15:0
@@ -631,12 +657,14 @@ GoldScout-export 6^7bj8ia0yhshh^24
 @m^1424^Vorgebirge von Hillsbrad
 @m^1426^Dun Morogh
 @m^1431^Dämmerwald
+@m^1433^Rotkammgebirge
 @m^1434^Schlingendorntal
 @m^1435^Sümpfe des Elends
 @m^1437^Sumpfland
 @m^1438^Teldrassil
 @m^1443^Desolace
 @m^1445^Marschen von Dustwallow
+@m^1453^Stormwind
 @c^118^
 @c^724^
 @c^733^
@@ -892,6 +920,7 @@ GoldScout-export 6^7bj8ia0yhshh^24
 @c^6043^
 @c^6214^
 @c^6217^
+@c^6218^
 @c^6238^
 @c^6239^
 @c^6240^
@@ -903,6 +932,7 @@ GoldScout-export 6^7bj8ia0yhshh^24
 @c^6290^
 @c^6316^
 @c^6338^
+@c^6339^
 @c^6350^
 @c^6384^
 @c^6385^
@@ -1119,13 +1149,19 @@ GoldScout-export 6^7bj8ia0yhshh^24
 @c^10423^
 @c^10841^
 @c^11128^
+@c^11130^
 @c^11144^
+@c^11145^
+@c^11287^
+@c^11288^
+@c^11289^
 @c^11371^
 @c^11604^
 @c^11605^
 @c^11606^
 @c^11607^
 @c^11608^
+@c^11811^
 @c^12209^
 @c^12210^
 @c^12212^
@@ -1180,6 +1216,7 @@ GoldScout-export 6^7bj8ia0yhshh^24
 @c^12643^
 @c^12644^
 @c^12645^
+@c^12655^
 @c^12764^
 @c^12769^
 @c^12772^
@@ -1201,6 +1238,7 @@ GoldScout-export 6^7bj8ia0yhshh^24
 @c^12797^
 @c^12798^
 @c^12802^
+@c^12810^
 @c^13446^
 @c^13851^
 @c^13856^
@@ -1323,6 +1361,7 @@ GoldScout-export 6^7bj8ia0yhshh^24
 @c^15871^
 @c^15872^
 @c^16206^
+@c^16207^
 @c^16766^
 @c^16979^
 @c^16980^
@@ -1423,6 +1462,13 @@ GoldScout-export 6^7bj8ia0yhshh^24
 @c^20550^
 @c^20551^
 @c^20575^
+@c^20744^
+@c^20745^
+@c^20746^
+@c^20747^
+@c^20748^
+@c^20749^
+@c^20750^
 @c^21023^
 @c^21072^
 @c^21154^
@@ -1480,6 +1526,7 @@ GoldScout-export 6^7bj8ia0yhshh^24
 @c^211423^
 @c^211502^
 @c^211845^
+@c^211848^
 @c^213369^
 @c^213376^
 @c^213379^
@@ -1516,6 +1563,9 @@ GoldScout-export 6^7bj8ia0yhshh^24
 @c^217281^
 @c^217283^
 @c^217285^
+@c^217287^
+@c^217308^
+@c^220606^
 @c^220738^
 @c^220739^
 @c^220740^
@@ -1529,6 +1579,8 @@ GoldScout-export 6^7bj8ia0yhshh^24
 @c^220749^
 @c^220750^
 @c^220751^
+@c^220792^
+@c^221028^
 @c^227684^
 @c^227844^
 @c^227845^
@@ -1569,12 +1621,17 @@ GoldScout-export 6^7bj8ia0yhshh^24
 @c^227886^
 @c^227887^
 @c^228125^
+@c^228175^
+@c^228176^
 @c^228230^
 @c^228476^
+@c^228978^
+@c^228980^
 @c^228994^
 @c^232433^
 @c^232436^
 @c^232438^
+@c^232611^
 @c^233490^
 @c^233491^
 @c^233492^
@@ -1596,6 +1653,16 @@ GoldScout-export 6^7bj8ia0yhshh^24
 @c^233958^
 @c^233959^
 @c^233960^
+@c^233990^
+@c^233991^
+@c^233992^
+@c^233993^
+@c^233994^
+@c^233995^
+@c^233996^
+@c^234000^
+@c^234001^
+@c^234002^
 @c^234003^
 @c^234004^
 @c^234009^
@@ -1621,6 +1688,15 @@ GoldScout-export 6^7bj8ia0yhshh^24
 @c^234428^
 @c^234459^
 @c^234460^
+@c^234468^
+@c^234469^
+@c^234474^
+@c^234475^
+@c^234476^
+@c^234477^
+@c^234478^
+@c^234479^
+@c^234480^
 @c^234482^
 @c^234484^
 @c^234485^
@@ -1683,6 +1759,30 @@ GoldScout-export 6^7bj8ia0yhshh^24
 @c^238926^
 @c^239147^
 @c^239148^
+@c^247786^
+@c^247789^
+@c^249144^
+@c^249232^
+@c^249234^
+@c^249237^
+@c^249385^
+@c^249392^
+@c^249393^
+@c^249394^
+@c^249395^
+@c^249396^
+@c^249397^
+@c^249398^
+@c^249441^
+@c^249442^
+@c^249443^
+@c^249453^
+@c^249454^
+@c^249455^
+@c^249456^
+@c^249469^
+@c^249470^
+@c^249473^
 @c^249726^
 @c^249865^
 @c^249866^
@@ -2342,6 +2442,12 @@ GoldScout-export 6^7bj8ia0yhshh^24
 @c^277055^
 @c^277672^
 @c^277715^
+@c^279246^
+@c^279247^
+@c^279248^
+@c^279249^
+@c^279250^
+@c^279251^
 @c^279252^
 @c^279253^
 @c^279254^
@@ -2384,15 +2490,21 @@ GoldScout-export 6^7bj8ia0yhshh^24
 @c^279972^
 @c^279973^
 @c^279974^
+@c^279976^
 @c^279978^
 @c^279979^
 @c^279981^
 @c^279982^
+@c^279985^
+@c^279987^
 @c^279988^
 @c^285279^
 @c^285280^
 @c^285281^
 @c^286152^
+@a^422^186:7,187:3,268:1,269:1,288:3
+@a^548^268:3,288:5,289:2
+@a^578^186:4,187:1,207:1
 @a^681^46:1,47:1
 @a^682^45:1,46:2,48:2,49:2,69:1
 @a^683^48:1
@@ -2407,6 +2519,7 @@ GoldScout-export 6^7bj8ia0yhshh^24
 @a^855^64:1,65:1
 @a^858^203:1
 @a^910^284:1
+@a^1083^268:2,269:1,288:5,289:2
 @a^1085^46:1,66:7
 @a^1120^154:1
 @a^1131^166:2
@@ -2505,4 +2618,5 @@ GoldScout-export 6^7bj8ia0yhshh^24
 @f^1434^0^1^178^6362:1:1^285:1
 @f^1437^0^14^150^6358:6:6,6359:1:1,6361:7:7^240:3,241:11
 @f^1445^0^99^154^4603:25:25,6355:2:2,6357:1:1,6358:10:10,6359:13:13,6362:48:48^214:99
+@f^1453^0^3^101^6303:1:1,6358:1:1,6361:1:1^224:3
 @l^0^deDE
