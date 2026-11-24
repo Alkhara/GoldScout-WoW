@@ -1,4 +1,5 @@
-GoldScout-export 6^gcpd1b5k0jtu^34
+GoldScout-export 6^gcpd1b5k0jtu^36
+92^4^0^39^40^1418^0.1423^0.3533^4^Rock Elemental^4553:1:1,4784:4:4,7848:2:2,7912:2:4^
 232^3^0^23^23^1424^0.3391^0.3414^3^Farmer Ray^4538:1:1^
 587^5^0^33^34^1434^0.3439^0.1636^5^Bloodscalp Warrior^1519:1:1,1708:1:1,3901:3:3,3915:2:2,4306:2:3^
 588^2^0^34^34^1434^0.2947^0.1228^2^Bloodscalp Scout^1519:1:1,2749:1:1^
@@ -104,6 +105,11 @@ GoldScout-export 6^gcpd1b5k0jtu^34
 2589^6^0^31^32^1417^0.3290^0.2924^6^Syndicate Mercenary^1708:1:1,4306:4:6,4495:1:1,5113:1:1^
 2635^1^0^38^38^1434^0.2991^0.2563^1^Elder Saltwater Crocolisk^770:1:1,4044:1:1,4105:1:1^
 2667^9^0^36^36^1434^0.3735^0.3009^9^Ward of Laze^^
+2729^18^0^39^40^1418^0.1436^0.6324^18^Elder Crag Coyote^4582:3:3,4583:3:3,5637:1:1,7846:7:11,8146:1:1,12203:5:5^
+2731^1^0^37^37^1418^0.3762^0.4785^1^Ridge Stalker^^
+2735^6^0^37^39^1418^0.1766^0.4230^6^Lesser Rock Elemental^4553:2:2,4784:3:3,7848:3:3,8150:2:2^
+2791^2^0^42^43^1418^0.5446^0.8558^2^Enraged Rock Elemental^4552:1:1,4784:2:2,8150:1:1^
+2831^15^0^39^41^1418^0.1608^0.6034^15^Giant Buzzard^1464:7:7,3404:6:6,5116:3:3,5636:2:2,5829:1:1,7847:4:4,11416:4:4,11418:1:1,12037:8:8^
 3258^1^0^18^18^1413^0.4514^0.5488^1^Bristleback Hunter^5075:1:1,5085:1:1^
 3260^1^0^16^17^1413^0.4499^0.5546^1^Bristleback Water Seeker^5085:1:1^
 3560^4^0^37^37^1434^0.2346^0.0881^4^Healing Ward^^
@@ -242,10 +248,10 @@ GoldScout-export 6^gcpd1b5k0jtu^34
 256433^6^0^32^33^2548^0.3990^0.6187^6^Woodworker^4306:1:2,10302:1:1^
 256434^34^0^37^38^2548^0.3973^0.6097^34^Turner's Mill Lumberjack^1465:1:1,4306:3:6,4338:2:2,7461:1:1,263972:10:10^
 256797^3^0^42^43^2548^0.2688^0.4373^3^Twilight Corrupter^^
-256798^10^0^37^38^2548^0.4656^0.5038^10^Twilight Neophyte^4306:3:9,267073:2:2^
+256798^12^0^37^38^2548^0.4723^0.4937^12^Twilight Neophyte^4306:4:10,267073:2:2^
 256799^7^0^43^44^2548^0.2664^0.4454^7^Twilight Champion^4338:3:5,5431:1:1,6438:1:1^
 256881^1^0^46^46^2548^0.2581^0.4382^1^Overlord Kilgar^265837:1:1^
-256952^13^0^39^40^2548^0.4572^0.4975^13^Twilight Raider^4306:2:5,5429:1:1,267073:7:16^
+256952^14^0^39^40^2548^0.4561^0.4961^14^Twilight Raider^4306:2:5,5429:1:1,267073:7:16^
 257017^1^0^37^37^2548^0.4522^0.4778^1^Twilight Worg^4583:1:1^
 257059^2^0^45^45^2548^0.6561^0.2105^2^Chub'chob^^
 257885^2^0^0^0^1415^0.0000^0.0000^0^^^
@@ -530,8 +536,11 @@ GoldScout-export 6^gcpd1b5k0jtu^34
 @i^4512^Highland Raptor Eye
 @i^4538^Snapvine Watermelon
 @i^4539^Goldenbark Apple
+@i^4552^Smooth Stone Chip
+@i^4553^Jagged Piece of Stone
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
+@i^4582^Soft Bushy Tail
 @i^4583^Thick Furry Mane
 @i^4585^Dripping Spider Mandible
 @i^4586^Smooth Raptor Skin
@@ -546,6 +555,7 @@ GoldScout-export 6^gcpd1b5k0jtu^34
 @i^4700^Inscribed Leather Spaulders
 @i^4731^Glyphed Epaulets
 @i^4732^Glyphed Cloak
+@i^4784^Lifeless Stone
 @i^4791^Enchanted Water
 @i^5075^Blood Shard
 @i^5085^Bristleback Quilboar Tusk
@@ -566,6 +576,7 @@ GoldScout-export 6^gcpd1b5k0jtu^34
 @i^5567^Silver Hook
 @i^5569^Seaweed
 @i^5635^Sharp Claw
+@i^5636^Delicate Feather
 @i^5637^Large Fang
 @i^5794^Salty Scorpid Venom
 @i^5795^Hardened Tortoise Shell
@@ -659,9 +670,14 @@ GoldScout-export 6^gcpd1b5k0jtu^34
 @i^7752^Dreamslayer
 @i^7756^Dog Training Gloves
 @i^7757^Windweaver Staff
+@i^7846^Crag Coyote Fang
+@i^7847^Buzzard Gizzard
+@i^7848^Rock Elemental Shard
 @i^7909^Aquamarine
 @i^7910^Star Ruby
+@i^7912^Solid Stone
 @i^8146^Wicked Claw
+@i^8150^Deeprock Salt
 @i^8188^Explosive Shotgun
 @i^8365^Raw Mithril Head Trout
 @i^8386^Pattern: Big Voodoo Robe
@@ -719,6 +735,7 @@ GoldScout-export 6^gcpd1b5k0jtu^34
 @i^11392^Severed Bat Claw
 @i^11406^Rotting Bear Carcass
 @i^11416^Delicate Ribcage
+@i^11418^Hollow Wing Bone
 @i^11971^Amethyst Band of Concentration
 @i^12009^Tundra Ring of Stamina
 @i^12037^Mystery Meat
@@ -1060,8 +1077,11 @@ GoldScout-export 6^gcpd1b5k0jtu^34
 @q^4512^1:12:0
 @q^4538^1:0:0
 @q^4539^1:0:0
+@q^4552^0:15:0
+@q^4553^0:15:0
 @q^4555^0:15:0
 @q^4556^0:15:0
+@q^4582^1:12:0
 @q^4583^0:15:0
 @q^4585^0:15:0
 @q^4586^0:15:0
@@ -1076,6 +1096,7 @@ GoldScout-export 6^gcpd1b5k0jtu^34
 @q^4700^1:4:0
 @q^4731^2:4:0
 @q^4732^2:4:0
+@q^4784^0:15:0
 @q^4791^1:0:0
 @q^5075^1:12:0
 @q^5085^1:12:0
@@ -1096,6 +1117,7 @@ GoldScout-export 6^gcpd1b5k0jtu^34
 @q^5567^0:15:0
 @q^5569^0:15:0
 @q^5635^1:7:1
+@q^5636^0:15:0
 @q^5637^1:7:1
 @q^5794^1:12:0
 @q^5795^1:12:0
@@ -1189,9 +1211,14 @@ GoldScout-export 6^gcpd1b5k0jtu^34
 @q^7752^3:2:0
 @q^7756^3:4:0
 @q^7757^3:2:0
+@q^7846^1:12:0
+@q^7847^1:12:0
+@q^7848^1:12:0
 @q^7909^2:7:1
 @q^7910^2:7:1
+@q^7912^1:7:1
 @q^8146^1:7:1
+@q^8150^1:7:1
 @q^8188^2:2:0
 @q^8365^1:7:1
 @q^8386^2:9:0
@@ -1249,6 +1276,7 @@ GoldScout-export 6^gcpd1b5k0jtu^34
 @q^11392^0:15:0
 @q^11406^0:15:0
 @q^11416^0:15:0
+@q^11418^0:15:0
 @q^11971^2:4:0
 @q^12009^2:4:0
 @q^12037^1:7:1
@@ -1380,6 +1408,7 @@ GoldScout-export 6^gcpd1b5k0jtu^34
 @m^1415^Eastern Kingdoms
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
+@m^1418^Badlands
 @m^1420^Tirisfal Glades
 @m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
@@ -2634,6 +2663,7 @@ GoldScout-export 6^gcpd1b5k0jtu^34
 @c^285280^
 @c^285281^
 @c^286152^
+@a^92^122:1,142:2,143:1
 @a^232^126:3
 @a^587^66:5
 @a^588^45:1,46:1
@@ -2738,6 +2768,11 @@ GoldScout-export 6^gcpd1b5k0jtu^34
 @a^2589^106:5,126:1
 @a^2635^105:1
 @a^2667^107:2,127:7
+@a^2729^203:1,223:2,241:2,242:6,243:2,262:5
+@a^2731^187:1
+@a^2735^142:1,143:1,163:2,183:1,184:1
+@a^2791^350:2
+@a^2831^223:8,243:6,262:1
 @a^3258^209:1
 @a^3260^228:1
 @a^3560^24:4
@@ -2780,10 +2815,10 @@ GoldScout-export 6^gcpd1b5k0jtu^34
 @a^256433^228:1,247:2,248:3
 @a^256434^227:9,228:4,247:10,248:10,267:1
 @a^256797^165:3
-@a^256798^188:1,189:1,209:8
+@a^256798^170:1,188:1,189:2,209:8
 @a^256799^165:5,185:2
 @a^256881^165:1
-@a^256952^188:3,189:2,208:1,209:7
+@a^256952^188:4,189:2,208:1,209:7
 @a^257017^189:1
 @a^257059^93:2
 @a^257926^248:5,249:4,269:11

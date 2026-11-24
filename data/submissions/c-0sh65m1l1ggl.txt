@@ -1,4 +1,4 @@
-GoldScout-export 6^0sh65m1l1ggl^1
+GoldScout-export 6^0sh65m1l1ggl^2
 2566^2^0^35^36^1417^0.5241^0.7407^2^Boulderfist Brute^3778:1:1^
 2567^1^0^37^37^1417^0.5239^0.7573^1^Boulderfist Magus^^
 2580^1^0^37^37^1417^0.2581^0.6863^1^Elder Mesa Buzzard^1464:1:1,12037:1:1^
@@ -8,6 +8,13 @@ GoldScout-export 6^0sh65m1l1ggl^1
 2760^8^0^38^39^1417^0.2662^0.2957^8^Burning Exile^3857:4:4,4479:2:2,4787:4:4^
 2776^5^0^40^40^1417^0.3444^0.8043^5^Vengeful Surge^^
 2793^1^0^39^39^1417^0.5434^0.8115^1^Kor'gresh Coldrage^4525:1:1^
+4360^2^0^38^38^1445^0.6351^0.2728^2^Mirefin Warrior^17057:1:1^
+4361^5^0^36^37^1445^0.6325^0.2642^5^Mirefin Muckdweller^5847:1:1,17057:2:2,17058:1:1^
+4363^2^0^37^37^1445^0.6343^0.2672^2^Mirefin Oracle^4639:1:1,6362:1:1^
+4396^2^0^36^37^1445^0.6201^0.2749^2^Mudrock Tortoise^4555:1:1,5883:1:1^
+4397^4^0^37^38^1445^0.6159^0.3067^4^Mudrock Spikeshell^4555:3:3,5883:2:2^
+4413^1^0^36^36^1445^0.6324^0.3944^1^Darkfang Spider^1074:1:1,248693:1:1^
+@i^1074^Hard Spider Leg Tip
 @i^1464^Buzzard Talon
 @i^3778^Taut Compound Bow
 @i^3857^Coal
@@ -15,14 +22,21 @@ GoldScout-export 6^0sh65m1l1ggl^1
 @i^4525^Trelane's Wand of Invocation
 @i^4552^Smooth Stone Chip
 @i^4553^Jagged Piece of Stone
+@i^4555^Thick Scaly Tail
+@i^4639^Enchanted Sea Kelp
 @i^4784^Lifeless Stone
 @i^4787^Burning Pitch
+@i^5847^Mirefin Head
+@i^5883^Forked Mudrock Tongue
+@i^6362^Raw Rockscale Cod
 @i^7067^Elemental Earth
 @i^7072^Naga Scale
 @i^8150^Deeprock Salt
 @i^12037^Mystery Meat
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
+@i^248693^Waylaid Crate: Expert Textiles
+@q^1074^0:15:0
 @q^1464^0:15:0
 @q^3778^0:2:0
 @q^3857^1:7:1
@@ -30,15 +44,54 @@ GoldScout-export 6^0sh65m1l1ggl^1
 @q^4525^1:12:0
 @q^4552^0:15:0
 @q^4553^0:15:0
+@q^4555^0:15:0
+@q^4639^1:12:0
 @q^4784^0:15:0
 @q^4787^0:15:0
+@q^5847^1:12:0
+@q^5883^1:12:0
+@q^6362^1:7:1
 @q^7067^1:7:1
 @q^7072^1:7:1
 @q^8150^1:7:1
 @q^12037^1:7:1
 @q^17057^1:15:0
 @q^17058^1:15:0
+@q^248693^1:0:1
 @m^1417^Arathi Highlands
+@m^1445^Dustwallow Marsh
+@c^118^
+@c^858^
+@c^929^
+@c^1251^
+@c^1710^
+@c^2581^
+@c^3530^
+@c^3531^
+@c^3928^
+@c^6450^
+@c^6451^
+@c^6452^
+@c^6453^
+@c^8544^
+@c^8545^
+@c^13446^
+@c^14529^
+@c^14530^
+@c^19440^
+@c^23684^
+@c^232433^
+@c^255715^
+@c^255716^
+@c^255717^
+@c^255718^
+@c^255719^
+@c^255720^
+@c^255721^
+@c^255722^
+@c^279940^
+@c^279951^
+@c^279968^
 @a^2566^290:1,310:1
 @a^2567^310:1
 @a^2580^265:1
@@ -48,4 +101,10 @@ GoldScout-export 6^0sh65m1l1ggl^1
 @a^2760^105:3,125:5
 @a^2776^307:3,326:2
 @a^2793^330:1
+@a^4360^112:2
+@a^4361^112:5
+@a^4363^112:2
+@a^4396^112:2
+@a^4397^112:1,132:3
+@a^4413^152:1
 @l^0^enUS
