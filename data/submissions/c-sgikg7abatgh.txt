@@ -1,4 +1,4 @@
-GoldScout-export 6^sgikg7abatgh^13
+GoldScout-export 6^sgikg7abatgh^14
 92^5^0^39^40^1418^0.1367^0.3482^5^Rock Elemental^4553:2:2,4784:5:5,7848:4:4,8150:1:1^
 587^3^0^33^34^1434^0.3234^0.1525^3^Bloodscalp Warrior^1519:2:2,3901:1:1,3915:2:2,4306:3:4^
 588^10^0^34^35^1434^0.2407^0.1249^10^Bloodscalp Scout^1519:1:1,1710:1:1,2592:1:2,3771:1:1,3803:1:1,3915:1:1,4306:5:8,248691:1:1^
@@ -44,6 +44,8 @@ GoldScout-export 6^sgikg7abatgh^13
 2556^6^0^34^35^1417^0.7083^0.6633^6^Witherbark Headhunter^2592:1:3,4306:2:3,7273:3:3^
 2635^1^0^38^38^1434^0.2506^0.1988^1^Elder Saltwater Crocolisk^770:1:1,3667:1:1,4105:1:1^
 2667^7^0^36^37^1434^0.3703^0.2989^7^Ward of Laze^^
+2719^2^0^44^45^1418^0.0802^0.9373^2^Dustbelcher Lord^4338:1:1,4422:1:1^
+2720^6^0^43^44^1418^0.0912^0.8980^6^Dustbelcher Ogre Mage^3928:1:1,4306:2:3,4338:1:2,211269:2:2,262889:1:1^
 2729^17^0^39^40^1418^0.2689^0.6112^17^Elder Crag Coyote^4582:7:7,4583:3:3,7846:6:10,12203:6:6^
 2735^2^0^37^39^1418^0.1478^0.3811^2^Lesser Rock Elemental^4784:1:1,7848:1:1,7912:1:1,8150:1:1^
 2831^16^0^39^41^1418^0.1676^0.6193^16^Giant Buzzard^1464:10:10,3404:8:8,5116:7:7,5829:2:2,7847:5:5,11416:1:1,11418:1:1,12037:5:5,213543:1:1,213545:1:1^
@@ -116,6 +118,8 @@ GoldScout-export 6^sgikg7abatgh^13
 4715^1^0^35^36^1443^0.2717^0.0955^1^Slitherblade Razortail^17057:1:1^
 4718^1^0^34^35^1443^0.2848^0.0762^1^Slitherblade Oracle^3808:1:1,6442:1:1,7072:1:1^
 4723^1^0^38^38^1434^0.4245^0.1852^1^Foreman Cozzle^1630:1:1,4306:1:2,5851:1:1^
+4844^1^0^36^36^1418^0.4615^0.0856^1^Shadowforge Surveyor^4306:1:1,8052:1:1^
+4846^6^0^35^36^1418^0.4409^0.1083^6^Shadowforge Digger^4306:2:5,7666:1:1,8009:1:1,8052:1:1,213543:1:1^
 5044^1^0^36^36^1445^0.4249^0.3818^1^Theramore Skirmisher^4306:1:2^
 5045^1^0^36^36^1445^0.4235^0.3789^1^Private Hallan^4306:1:3^
 5046^2^0^37^37^1445^0.4243^0.3815^2^Lieutenant Caldwell^4306:1:3^
@@ -352,6 +356,7 @@ GoldScout-export 6^sgikg7abatgh^13
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4419^Scroll of Intellect III
+@i^4422^Scroll of Stamina III
 @i^4461^Raptor Hide
 @i^4539^Goldenbark Apple
 @i^4542^Moist Cornbread
@@ -396,6 +401,7 @@ GoldScout-export 6^sgikg7abatgh^13
 @i^7465^Knight's Crest of the Hierophant
 @i^7480^Ranger Gloves of the Whale
 @i^7493^Captain's Bracers of Spirit
+@i^7666^Shattered Necklace
 @i^7683^Bloody Brass Knuckles
 @i^7685^Orb of the Forgotten Seer
 @i^7711^Robe of Doan
@@ -409,6 +415,8 @@ GoldScout-export 6^sgikg7abatgh^13
 @i^7848^Rock Elemental Shard
 @i^7909^Aquamarine
 @i^7912^Solid Stone
+@i^8009^Dentrium Power Stone
+@i^8052^An'Alleum Power Stone
 @i^8150^Deeprock Salt
 @i^8188^Explosive Shotgun
 @i^8748^Double Mail Coif
@@ -472,6 +480,7 @@ GoldScout-export 6^sgikg7abatgh^13
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
 @i^19508^Branded Leather Bracers
+@i^211269^Primitive Drawing
 @i^211784^Scroll: WUBBA WUBBA
 @i^211853^Scroll: VOCE WELL
 @i^211854^Scroll: OMIT KESA
@@ -499,6 +508,7 @@ GoldScout-export 6^sgikg7abatgh^13
 @i^252844^Pattern: Skulker's Leather Shoes
 @i^254432^Carved Centaur Totem
 @i^260347^Tattered Journal
+@i^262889^Sealed Expert's Writ
 @i^267086^Eye of Mugg
 @i^267091^Cultist Ear
 @i^267104^Tome of Twilight
@@ -641,6 +651,7 @@ GoldScout-export 6^sgikg7abatgh^13
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4419^1:0:0
+@q^4422^1:0:0
 @q^4461^1:7:1
 @q^4539^1:0:0
 @q^4542^1:0:0
@@ -685,6 +696,7 @@ GoldScout-export 6^sgikg7abatgh^13
 @q^7465^2:4:0
 @q^7480^2:4:0
 @q^7493^2:4:0
+@q^7666^2:12:0
 @q^7683^3:2:0
 @q^7685^3:4:0
 @q^7711^2:4:0
@@ -698,6 +710,8 @@ GoldScout-export 6^sgikg7abatgh^13
 @q^7848^1:12:0
 @q^7909^2:7:1
 @q^7912^1:7:1
+@q^8009^1:12:0
+@q^8052^1:12:0
 @q^8150^1:7:1
 @q^8188^2:2:0
 @q^8748^0:4:0
@@ -761,6 +775,7 @@ GoldScout-export 6^sgikg7abatgh^13
 @q^17057^1:15:0
 @q^17058^1:15:0
 @q^19508^3:4:0
+@q^211269^1:12:0
 @q^211784^1:0:0
 @q^211853^1:0:0
 @q^211854^1:0:0
@@ -788,6 +803,7 @@ GoldScout-export 6^sgikg7abatgh^13
 @q^252844^3:9:0
 @q^254432^2:15:0
 @q^260347^1:15:0
+@q^262889^3:0:0
 @q^267086^1:12:0
 @q^267091^1:12:0
 @q^267104^1:12:0
@@ -1466,6 +1482,8 @@ GoldScout-export 6^sgikg7abatgh^13
 @a^2556^254:2,273:1,274:3
 @a^2635^65:1
 @a^2667^107:5,127:2
+@a^2719^361:2
+@a^2720^341:4,361:2
 @a^2729^185:1,205:3,224:1,225:2,245:4,262:1,265:3,286:2
 @a^2735^142:1,143:1
 @a^2831^205:1,223:1,243:10,245:1,261:1,262:1,282:1
@@ -1512,6 +1530,8 @@ GoldScout-export 6^sgikg7abatgh^13
 @a^4715^25:1
 @a^4718^25:1
 @a^4723^68:1
+@a^4844^29:1
+@a^4846^28:2,29:1,48:2,49:1
 @a^5044^148:1
 @a^5045^148:1
 @a^5046^148:2

@@ -1,6 +1,8 @@
-GoldScout-export 6^a7ozec9btb31^3
+GoldScout-export 6^a7ozec9btb31^5
 1853^1^0^0^0^0^0.0000^0.0000^0^^13964:1:1,16731:1:1^
-2354^1^0^22^22^1424^0.4931^0.4854^1^Vicious Gray Bear^11406:1:1^
+2354^2^0^22^23^1424^0.4978^0.4727^2^Vicious Gray Bear^3647:1:1,3730:1:1,11406:1:1^
+2406^1^0^32^32^1416^0.4199^0.7901^1^Mountain Lion^3731:1:1^
+2407^1^0^33^33^1416^0.4374^0.7983^1^Hulking Mountain Lion^3731:1:1^
 6498^2^0^54^55^1449^0.6656^0.4344^2^Devilsaur^4588:1:1,15758:1:1,20015:1:1^
 6499^6^0^54^56^1449^0.6619^0.4448^6^Ironhide Devilsaur^4587:1:2,4588:3:3,8146:1:1,11018:1:1,14789:1:1,20015:2:2^
 6500^4^0^54^55^1449^0.6967^0.4325^4^Tyrant Devilsaur^4588:3:3,20015:1:1^
@@ -85,7 +87,10 @@ GoldScout-export 6^a7ozec9btb31^3
 11678^1^0^0^0^1459^0.0000^0.0000^0^^^
 228609^1^0^58^58^1428^0.6148^0.2924^1^Sulfuron Smuggler^14047:1:1^
 @i^1074^Hard Spider Leg Tip
+@i^3647^Bright Bracers
 @i^3676^Slimy Ichor
+@i^3730^Big Bear Meat
+@i^3731^Lion Meat
 @i^3946^Twill Bracers
 @i^3995^Laminated Scale Cloak
 @i^3999^Laminated Scale Armor
@@ -181,7 +186,10 @@ GoldScout-export 6^a7ozec9btb31^3
 @i^273130^Undeath Engine
 @i^276073^Band of the Damned
 @q^1074^0:15:0
+@q^3647^2:4:0
 @q^3676^0:15:0
+@q^3730^1:7:1
+@q^3731^1:7:1
 @q^3946^0:4:0
 @q^3995^0:4:0
 @q^3999^0:4:0
@@ -276,6 +284,7 @@ GoldScout-export 6^a7ozec9btb31^3
 @q^262890^3:0:0
 @q^273130^2:15:1
 @q^276073^3:4:0
+@m^1416^Alterac Mountains
 @m^1424^Hillsbrad Foothills
 @m^1428^Burning Steppes
 @m^1448^Felwood
@@ -874,7 +883,9 @@ GoldScout-export 6^a7ozec9btb31^3
 @c^279941^
 @c^279945^
 @c^279978^
-@a^2354^189:1
+@a^2354^189:1,190:1
+@a^2406^308:1
+@a^2407^308:1
 @a^6498^171:1,195:1
 @a^6499^93:1,154:1,172:1,175:1,194:1,289:1
 @a^6500^151:1,154:1,194:2
