@@ -1,4 +1,4 @@
-GoldScout-export 6^tbr4mqlj22p9^17
+GoldScout-export 6^tbr4mqlj22p9^18
 3^2^0^24^25^1431^0.2203^0.3583^2^Flesh Eater^2592:1:2,2765:1:1,6530:1:1^
 6^1^0^1^1^1429^0.4913^0.3709^1^Kobold Vermin^2210:1:1^
 69^3^0^2^2^1429^0.4954^0.3782^3^Timber Wolf^750:3:3,2672:2:2,4865:2:2,7074:1:1^
@@ -599,12 +599,15 @@ GoldScout-export 6^tbr4mqlj22p9^17
 @i^6289^Raw Longjaw Mud Snapper
 @i^6296^Patch of Bat Hair
 @i^6303^Raw Slitherskin Mackerel
+@i^6307^Message in a Bottle
 @i^6308^Raw Bristle Whisker Catfish
 @i^6318^Odo's Ley Staff
 @i^6321^Silverlaine's Family Seal
 @i^6340^Fenrus' Hide
 @i^6351^Dented Crate
+@i^6352^Waterlogged Crate
 @i^6358^Oily Blackmouth
+@i^6359^Firefin Snapper
 @i^6361^Raw Rainbow Fin Albacore
 @i^6362^Raw Rockscale Cod
 @i^6381^Bright Cloak
@@ -726,6 +729,7 @@ GoldScout-export 6^tbr4mqlj22p9^17
 @i^11982^Viridian Band of Spirit
 @i^12207^Giant Egg
 @i^12223^Meaty Bat Wing
+@i^12238^Darkshore Grouper
 @i^12989^Gargoyle's Bite
 @i^12994^Thorbia's Gauntlets
 @i^13049^Deanship Claymore
@@ -760,6 +764,8 @@ GoldScout-export 6^tbr4mqlj22p9^17
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
+@i^20708^Tightly Sealed Trunk
+@i^20709^Rumsey Rum Light
 @i^21071^Raw Sagefish
 @i^21113^Watertight Trunk
 @i^21150^Iron Bound Trunk
@@ -1130,12 +1136,15 @@ GoldScout-export 6^tbr4mqlj22p9^17
 @q^6289^1:7:1
 @q^6296^0:15:0
 @q^6303^1:7:1
+@q^6307^1:15:0
 @q^6308^1:7:1
 @q^6318^3:2:0
 @q^6321^3:4:0
 @q^6340^3:4:0
 @q^6351^1:15:0
+@q^6352^1:15:0
 @q^6358^1:7:1
+@q^6359^1:7:1
 @q^6361^1:7:1
 @q^6362^1:7:1
 @q^6381^2:4:0
@@ -1257,6 +1266,7 @@ GoldScout-export 6^tbr4mqlj22p9^17
 @q^11982^2:4:0
 @q^12207^1:7:1
 @q^12223^1:7:1
+@q^12238^1:0:0
 @q^12989^3:2:0
 @q^12994^3:4:0
 @q^13049^3:2:0
@@ -1291,6 +1301,8 @@ GoldScout-export 6^tbr4mqlj22p9^17
 @q^17056^1:15:1
 @q^17057^1:15:0
 @q^17058^1:15:0
+@q^20708^1:15:0
+@q^20709^1:0:0
 @q^21071^1:7:1
 @q^21113^1:15:0
 @q^21150^1:15:0
@@ -1388,6 +1400,7 @@ GoldScout-export 6^tbr4mqlj22p9^17
 @m^1434^Stranglethorn Vale
 @m^1436^Westfall
 @m^1437^Wetlands
+@m^1439^Darkshore
 @m^1453^Stormwind City
 @c^118^
 @c^724^
@@ -2727,7 +2740,8 @@ GoldScout-export 6^tbr4mqlj22p9^17
 @a^272389^5:5,26:16,46:2,47:9,106:2,107:5,126:2,145:1,146:7,165:6,184:2,185:7
 @f^1413^0^70^127^6303:26:26,6351:2:2,6358:10:10,6361:32:32^152:70
 @f^1416^0^51^151^3820:2:4,6308:6:6,8365:6:6,21150:3:3,21151:3:5,21153:31:31^26:2,46:3,47:5,67:4,87:6,106:5,126:6,184:10,203:10
-@f^1424^0^13^158^3820:1:3,6289:1:1,6308:4:4,21071:6:6,21113:1:1^131:11,269:2
+@f^1424^0^45^158^3820:1:3,6289:1:1,6307:1:1,6308:4:4,6352:1:1,6358:7:7,6359:2:2,6361:21:21,21071:6:6,21113:1:1^131:11,269:10,270:24
 @f^1434^0^5^150^4603:2:2,6362:3:3^285:5
+@f^1439^0^20^175^3820:1:1,6358:16:16,12238:1:1,20708:1:1,20709:1:3^108:4,127:14,147:2
 @f^1453^0^2^126^6358:1:1,6361:1:1^224:2
 @l^0^enUS

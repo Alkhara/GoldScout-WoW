@@ -1,13 +1,15 @@
-GoldScout-export 6^37dfqf16vx2u^22
+GoldScout-export 6^37dfqf16vx2u^23
 46^5^0^9^10^1429^0.7889^0.6705^5^Murlocfutterwühler^779:1:1,1425:1:1^
 48^1^0^21^21^1431^0.8199^0.6861^1^Skelettkrieger^^
 94^1^0^6^6^1429^0.3805^0.5849^1^Taschendieb der Defias^2070:1:1^
+114^2^0^15^15^1436^0.5269^0.3326^2^Erntebehüter^814:2:2,1274:1:1,255007:1:1^
 118^9^0^9^10^1429^0.8127^0.6468^9^Streuner^2672:7:7,3300:3:3^
 202^2^0^23^23^1431^0.8004^0.6044^2^Skelettschrecken^1210:1:1,2592:1:2^
 330^1^0^9^9^1429^0.6910^0.7910^1^Prinzessin^771:1:1,1006:1:1^
 390^2^0^7^7^1429^0.6909^0.7908^2^Gefolgsschwein^769:1:1,3171:1:1^
 732^5^0^9^10^1429^0.7737^0.7797^5^Murloclauerer^779:3:3,1413:1:1,2648:1:1^
 822^5^0^8^9^1429^0.8549^0.6501^5^Junger Waldbär^3169:3:3,3170:1:1,3610:1:1,4865:1:1,7073:3:3,7074:1:1^
+833^1^0^11^11^1436^0.5329^0.3556^1^Kojotenrudelanführer^3299:1:1,211787:1:1^
 834^2^0^11^11^1436^0.5593^0.2987^2^Kojote^2698:1:1,3299:1:1^
 1115^2^0^8^9^1426^0.7041^0.5700^2^Schädelhauer der Felsenkiefer^2212:1:1^
 1116^14^0^9^10^1426^0.7494^0.5685^14^Wegelagerer der Felsenkiefer^818:1:1,1413:1:1,2065:2:2,2589:2:4,2591:3:3,2645:1:1,4689:1:1,267415:9:17^
@@ -115,6 +117,7 @@ GoldScout-export 6^37dfqf16vx2u^22
 @i^774^Malachit
 @i^779^Glänzende Seemuschelschale
 @i^785^Maguskönigskraut
+@i^814^Fläschchen Öl
 @i^818^Tigerauge
 @i^1006^Messinghalsband
 @i^1081^Knuspriges Spinnenfleisch
@@ -122,6 +125,7 @@ GoldScout-export 6^37dfqf16vx2u^22
 @i^1180^Rolle der Ausdauer
 @i^1181^Rolle der Willenskraft
 @i^1210^Schattenedelstein
+@i^1274^Hopfen
 @i^1366^Struppige Lederhose
 @i^1374^Ausgefranste Schuhe
 @i^1413^Schwächliches Schwert
@@ -271,6 +275,7 @@ GoldScout-export 6^37dfqf16vx2u^22
 @i^15482^Gebrauchte Bänder
 @i^17056^Leichte Feder
 @i^21151^Schwarzer Rumsey Rum
+@i^211787^Schriftrolle: UNTERPING SONSTWEM
 @i^216483^Schlaghammer der Witherbark
 @i^247826^Quakis Kopf
 @i^248690^Abgefangene Kiste: Weltliche Kräuter des Experten
@@ -279,6 +284,7 @@ GoldScout-export 6^37dfqf16vx2u^22
 @i^252031^Frisches Quellwasser
 @i^252032^Roter köstlicher Sturmapfel
 @i^252671^Horterfuß
+@i^255007^Golemisofeder
 @i^255663^Windstein
 @i^267415^Gestohlenes Sprengpulver
 @i^267474^Sturmgepeitschter Waldpilz
@@ -300,6 +306,7 @@ GoldScout-export 6^37dfqf16vx2u^22
 @q^774^2:7:1
 @q^779^0:15:0
 @q^785^1:7:1
+@q^814^1:7:1
 @q^818^2:7:1
 @q^1006^1:12:0
 @q^1081^1:7:1
@@ -307,6 +314,7 @@ GoldScout-export 6^37dfqf16vx2u^22
 @q^1180^1:0:0
 @q^1181^1:0:0
 @q^1210^2:7:1
+@q^1274^1:12:0
 @q^1366^0:4:0
 @q^1374^0:4:0
 @q^1413^0:2:0
@@ -456,6 +464,7 @@ GoldScout-export 6^37dfqf16vx2u^22
 @q^15482^1:4:0
 @q^17056^1:15:1
 @q^21151^1:0:0
+@q^211787^1:0:0
 @q^216483^1:0:0
 @q^247826^1:12:0
 @q^248690^1:0:1
@@ -464,6 +473,7 @@ GoldScout-export 6^37dfqf16vx2u^22
 @q^252031^1:0:0
 @q^252032^1:0:0
 @q^252671^0:15:0
+@q^255007^1:7:1
 @q^255663^1:0:0
 @q^267415^1:12:0
 @q^267474^1:0:0
@@ -1921,12 +1931,14 @@ GoldScout-export 6^37dfqf16vx2u^22
 @a^46^236:3,335:2
 @a^48^276:1
 @a^94^227:1
+@a^114^130:1,150:1
 @a^118^255:3,256:1,257:2,277:1,295:1,297:1
 @a^202^235:1,256:1
 @a^330^313:1
 @a^390^313:2
 @a^732^236:1,335:4
 @a^822^255:1,257:3,277:1
+@a^833^150:1
 @a^834^111:1,131:1
 @a^1115^234:2
 @a^1116^213:1,214:2,234:1,235:10
