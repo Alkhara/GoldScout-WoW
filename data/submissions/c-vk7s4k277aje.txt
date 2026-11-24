@@ -1,5 +1,8 @@
-GoldScout-export 6^vk7s4k277aje^23
+GoldScout-export 6^vk7s4k277aje^24
+6^2^0^1^1^1429^0.4921^0.3747^2^Kobold Vermin^755:1:1,1364:1:1,247834:1:1^
+69^7^0^2^2^1429^0.5107^0.4338^7^Timber Wolf^750:7:7,1369:1:1,1377:1:1,1380:1:1,2672:3:3,4865:4:4,7073:4:4,7074:1:1^
 92^9^0^39^40^1418^0.4113^0.7940^9^Rock Elemental^4552:2:2,4553:4:4,4784:5:5,7848:5:5,7912:1:1,8150:1:1^
+299^2^0^1^1^1429^0.5158^0.4304^2^Young Wolf^750:1:1,2210:1:1,2672:1:1,7073:1:1,7074:1:1^
 589^1^0^15^15^1436^0.4389^0.6826^1^Defias Pillager^858:1:1^
 590^1^0^13^13^1436^0.4389^0.6826^1^Defias Looter^^
 628^2^0^24^25^1431^0.6736^0.3343^2^Black Ravager^1015:1:1,3301:1:1^
@@ -333,6 +336,8 @@ GoldScout-export 6^vk7s4k277aje^23
 271780^1^0^0^0^0^0.0000^0.0000^0^^^
 272228^4^0^36^37^2548^0.5510^0.7589^4^Harvest Sentry^4306:2:4,5427:1:1,5567:4:4^
 272291^1^0^25^25^1431^0.7769^0.3304^1^Lost Knight^281147:1:1^
+@i^750^Tough Wolf Meat
+@i^755^Melted Candle
 @i^769^Chunk of Boar Meat
 @i^770^Pointy Crocolisk Tooth
 @i^858^Lesser Healing Potion
@@ -345,6 +350,10 @@ GoldScout-export 6^vk7s4k277aje^23
 @i^1206^Moss Agate
 @i^1210^Shadowgem
 @i^1292^Butcher's Cleaver
+@i^1364^Ragged Leather Vest
+@i^1369^Ragged Leather Belt
+@i^1377^Frayed Gloves
+@i^1380^Frayed Robe
 @i^1464^Buzzard Talon
 @i^1465^Tigerbane
 @i^1477^Scroll of Agility II
@@ -366,9 +375,11 @@ GoldScout-export 6^vk7s4k277aje^23
 @i^1812^Short-handled Battle Axe
 @i^1817^Stock Shortsword
 @i^2014^Black Metal Greatsword
+@i^2210^Battered Buckler
 @i^2295^Large Boar Tusk
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2672^Stringy Wolf Meat
 @i^2677^Boar Ribs
 @i^2734^Green Hills of Stranglethorn - Page 10
 @i^2744^Green Hills of Stranglethorn - Page 20
@@ -471,6 +482,7 @@ GoldScout-export 6^vk7s4k277aje^23
 @i^4727^Chief Brigadier Girdle
 @i^4784^Lifeless Stone
 @i^4791^Enchanted Water
+@i^4865^Ruined Pelt
 @i^5116^Long Tail Feather
 @i^5117^Vibrant Plume
 @i^5128^Shed Lizard Skin
@@ -509,6 +521,8 @@ GoldScout-export 6^vk7s4k277aje^23
 @i^6585^Scouting Cloak of the Bear
 @i^6826^Brilliant Scale
 @i^7067^Elemental Earth
+@i^7073^Broken Fang
+@i^7074^Chipped Claw
 @i^7075^Core of Earth
 @i^7079^Globe of Water
 @i^7407^Infiltrator Armor of the Monkey
@@ -714,6 +728,7 @@ GoldScout-export 6^vk7s4k277aje^23
 @i^213547^Scroll: THAW WORDS
 @i^221359^Pristine Owlbeast Quill
 @i^221360^Farraki Papyrus
+@i^247834^Nibbled-On Book
 @i^248682^Waylaid Crate: Apprentice Herbs
 @i^248687^Waylaid Crate: Journeyman Ore
 @i^248690^Waylaid Crate: Earthly Expert Herbs
@@ -782,6 +797,8 @@ GoldScout-export 6^vk7s4k277aje^23
 @i^278186^Brilliantly Polished Bangle
 @i^281052^Ombassa's Hide
 @i^281147^Grant's Shield
+@q^750^1:12:0
+@q^755^0:15:0
 @q^769^1:7:1
 @q^770^0:15:0
 @q^858^1:0:0
@@ -794,6 +811,10 @@ GoldScout-export 6^vk7s4k277aje^23
 @q^1206^2:7:1
 @q^1210^2:7:1
 @q^1292^3:2:0
+@q^1364^0:4:0
+@q^1369^0:4:0
+@q^1377^0:4:0
+@q^1380^0:4:0
 @q^1464^0:15:0
 @q^1465^2:2:0
 @q^1477^1:0:0
@@ -815,9 +836,11 @@ GoldScout-export 6^vk7s4k277aje^23
 @q^1812^0:2:0
 @q^1817^0:2:0
 @q^2014^2:2:0
+@q^2210^0:4:0
 @q^2295^0:15:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2672^1:7:1
 @q^2677^1:7:1
 @q^2734^1:12:0
 @q^2744^1:12:0
@@ -920,6 +943,7 @@ GoldScout-export 6^vk7s4k277aje^23
 @q^4727^2:4:0
 @q^4784^0:15:0
 @q^4791^1:0:0
+@q^4865^0:15:0
 @q^5116^1:7:1
 @q^5117^1:12:0
 @q^5128^0:15:0
@@ -958,6 +982,8 @@ GoldScout-export 6^vk7s4k277aje^23
 @q^6585^2:4:0
 @q^6826^0:15:0
 @q^7067^1:7:1
+@q^7073^0:15:0
+@q^7074^0:15:0
 @q^7075^1:7:1
 @q^7079^1:7:1
 @q^7407^2:4:0
@@ -1163,6 +1189,7 @@ GoldScout-export 6^vk7s4k277aje^23
 @q^213547^1:0:0
 @q^221359^1:12:0
 @q^221360^1:12:0
+@q^247834^1:15:0
 @q^248682^1:0:1
 @q^248687^1:0:1
 @q^248690^1:0:1
@@ -1238,6 +1265,7 @@ GoldScout-export 6^vk7s4k277aje^23
 @m^1419^Blasted Lands
 @m^1425^The Hinterlands
 @m^1427^Searing Gorge
+@m^1429^Elwynn Forest
 @m^1431^Duskwood
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
@@ -1628,7 +1656,10 @@ GoldScout-export 6^vk7s4k277aje^23
 @c^279982^
 @c^279990^
 @c^286152^
+@a^6^149:2
+@a^69^170:7
 @a^92^307:4,328:5
+@a^299^170:2
 @a^589^268:1
 @a^590^268:1
 @a^628^133:1,153:1
