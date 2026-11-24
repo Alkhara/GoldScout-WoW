@@ -1,4 +1,8 @@
-GoldScout-export 6^aouzn0e8e6ua^33
+GoldScout-export 6^aouzn0e8e6ua^34
+126^7^0^12^13^1436^0.4576^0.0883^7^Murloc Coastrunner^730:4:4,1499:1:1,1732:1:1,6289:1:2,254548:2:2^
+456^12^0^13^14^1436^0.4305^0.1037^12^Murloc Minor Oracle^730:6:6,1498:1:1,2777:1:1,5523:4:4,254548:3:3^
+513^4^0^14^15^1436^0.3819^0.1495^4^Murloc Netter^1512:1:1,254548:2:2^
+515^5^0^11^12^1436^0.4997^0.0918^5^Murloc Raider^730:1:1,1357:1:1,5523:1:1,254548:1:1^
 589^1^0^15^15^1436^0.4357^0.6813^1^Defias Pillager^1515:1:1^
 590^2^0^13^14^1436^0.4361^0.6788^2^Defias Looter^2214:1:1^
 736^1^0^43^43^1434^0.4064^0.3447^1^Panther^^
@@ -374,6 +378,7 @@ GoldScout-export 6^aouzn0e8e6ua^33
 @i^117^Tough Jerky
 @i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
+@i^730^Murloc Eye
 @i^774^Malachite
 @i^789^Stout Battlehammer of Spirit
 @i^818^Tigerseye
@@ -383,6 +388,7 @@ GoldScout-export 6^aouzn0e8e6ua^33
 @i^1181^Scroll of Spirit
 @i^1206^Moss Agate
 @i^1210^Shadowgem
+@i^1357^Captain Sander's Treasure Map
 @i^1368^Ragged Leather Gloves
 @i^1369^Ragged Leather Belt
 @i^1370^Ragged Leather Bracers
@@ -397,6 +403,9 @@ GoldScout-export 6^aouzn0e8e6ua^33
 @i^1430^Patchwork Gloves
 @i^1464^Buzzard Talon
 @i^1476^Snapped Spider Limb
+@i^1498^Calico Gloves
+@i^1499^Calico Pants
+@i^1512^Crude Battle Axe
 @i^1515^Rough Wooden Staff
 @i^1520^Troll Sweat
 @i^1613^Spiritchaser Staff of the Wolf
@@ -431,6 +440,7 @@ GoldScout-export 6^aouzn0e8e6ua^33
 @i^2748^Green Hills of Stranglethorn - Page 24
 @i^2749^Green Hills of Stranglethorn - Page 25
 @i^2773^Cracked Shortbow
+@i^2777^Feeble Shortbow
 @i^2924^Crocolisk Meat
 @i^2940^Bloody Bear Paw
 @i^3010^Fine Sand
@@ -556,6 +566,7 @@ GoldScout-export 6^aouzn0e8e6ua^33
 @i^5637^Large Fang
 @i^5785^Thick Murloc Scale
 @i^6149^Greater Mana Potion
+@i^6289^Raw Longjaw Mud Snapper
 @i^6300^Husk Fragment
 @i^6302^Delicate Insect Wing
 @i^6303^Raw Slitherskin Mackerel
@@ -826,6 +837,7 @@ GoldScout-export 6^aouzn0e8e6ua^33
 @i^253986^Pattern: Filigreed Shining Circlet
 @i^254048^Pattern: Radiant Cord
 @i^254100^Pattern: Fiery Gloves
+@i^254548^Longshore Murloc Gill
 @i^255663^Windstone
 @i^257942^Vulgara's Head
 @i^257945^Pilfered Windstone
@@ -914,6 +926,7 @@ GoldScout-export 6^aouzn0e8e6ua^33
 @q^117^1:0:0
 @q^118^1:0:0
 @q^159^1:0:0
+@q^730^1:7:1
 @q^774^2:7:1
 @q^789^2:2:0
 @q^818^2:7:1
@@ -923,6 +936,7 @@ GoldScout-export 6^aouzn0e8e6ua^33
 @q^1181^1:0:0
 @q^1206^2:7:1
 @q^1210^2:7:1
+@q^1357^1:12:0
 @q^1368^0:4:0
 @q^1369^0:4:0
 @q^1370^0:4:0
@@ -937,6 +951,9 @@ GoldScout-export 6^aouzn0e8e6ua^33
 @q^1430^0:4:0
 @q^1464^0:15:0
 @q^1476^0:15:0
+@q^1498^0:4:0
+@q^1499^0:4:0
+@q^1512^0:2:0
 @q^1515^0:2:0
 @q^1520^0:15:0
 @q^1613^2:2:0
@@ -971,6 +988,7 @@ GoldScout-export 6^aouzn0e8e6ua^33
 @q^2748^1:12:0
 @q^2749^1:12:0
 @q^2773^0:2:0
+@q^2777^0:2:0
 @q^2924^1:7:1
 @q^2940^0:15:0
 @q^3010^0:15:0
@@ -1096,6 +1114,7 @@ GoldScout-export 6^aouzn0e8e6ua^33
 @q^5637^1:7:1
 @q^5785^1:7:1
 @q^6149^1:0:0
+@q^6289^1:7:1
 @q^6300^0:15:0
 @q^6302^0:15:0
 @q^6303^1:7:1
@@ -1366,6 +1385,7 @@ GoldScout-export 6^aouzn0e8e6ua^33
 @q^253986^3:9:0
 @q^254048^3:9:0
 @q^254100^3:9:0
+@q^254548^1:12:0
 @q^255663^1:0:0
 @q^257942^1:12:0
 @q^257945^1:12:0
@@ -3304,6 +3324,10 @@ GoldScout-export 6^aouzn0e8e6ua^33
 @c^285280^
 @c^285281^
 @c^286152^
+@a^126^28:4,29:1,30:1,48:1
+@a^456^28:5,29:1,48:5,67:1
+@a^513^47:3,67:1
+@a^515^28:1,29:1,30:3
 @a^589^268:1
 @a^590^268:2
 @a^736^128:1

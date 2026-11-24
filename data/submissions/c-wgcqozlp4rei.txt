@@ -1,4 +1,4 @@
-GoldScout-export 6^wgcqozlp4rei^13
+GoldScout-export 6^wgcqozlp4rei^14
 682^5^0^32^33^1434^0.4376^0.1540^5^Stranglethorn Tiger^1686:1:1,1687:2:2,12202:1:1,213546:1:1^
 684^4^0^37^38^1434^0.4866^0.2406^4^Shadowmaw Panther^1688:3:3,213546:1:1^
 685^7^0^33^34^1434^0.2770^0.1606^7^Stranglethorn Raptor^1696:1:1,3685:5:5,4461:4:4,8146:1:1,12184:1:1^
@@ -74,6 +74,7 @@ GoldScout-export 6^wgcqozlp4rei^13
 260429^2^0^39^39^1434^0.4337^0.2043^2^Venture Co. Agent^8748:1:1^
 272291^1^0^25^25^1431^0.2408^0.4134^1^Lost Knight^275895:1:1^
 @i^770^Pointy Crocolisk Tooth
+@i^858^Lesser Healing Potion
 @i^1464^Buzzard Talon
 @i^1477^Scroll of Agility II
 @i^1630^Broken Electro-lantern
@@ -138,7 +139,13 @@ GoldScout-export 6^wgcqozlp4rei^13
 @i^6248^Scorpashi Venom
 @i^6249^Aged Kodo Hide
 @i^6289^Raw Longjaw Mud Snapper
+@i^6291^Raw Brilliant Smallfish
+@i^6307^Message in a Bottle
 @i^6308^Raw Bristle Whisker Catfish
+@i^6309^17 Pound Catfish
+@i^6358^Oily Blackmouth
+@i^6359^Firefin Snapper
+@i^6361^Raw Rainbow Fin Albacore
 @i^6362^Raw Rockscale Cod
 @i^6394^Silver-thread Boots
 @i^6767^Tyranis' Pendant
@@ -175,6 +182,7 @@ GoldScout-export 6^wgcqozlp4rei^13
 @i^254432^Carved Centaur Totem
 @i^275895^Fading Echo
 @q^770^0:15:0
+@q^858^1:0:0
 @q^1464^0:15:0
 @q^1477^1:0:0
 @q^1630^0:15:0
@@ -239,7 +247,13 @@ GoldScout-export 6^wgcqozlp4rei^13
 @q^6248^1:12:0
 @q^6249^1:12:0
 @q^6289^1:7:1
+@q^6291^1:7:1
+@q^6307^1:15:0
 @q^6308^1:7:1
+@q^6309^1:15:0
+@q^6358^1:7:1
+@q^6359^1:7:1
+@q^6361^1:7:1
 @q^6362^1:7:1
 @q^6394^2:4:0
 @q^6767^1:12:0
@@ -996,5 +1010,6 @@ GoldScout-export 6^wgcqozlp4rei^13
 @a^255560^313:4,333:2
 @a^260429^88:2
 @a^272291^164:1
-@f^1453^0^2^1^6289:1:1,6308:1:1^271:2
+@f^1437^0^100^125^6307:2:2,6358:29:29,6359:10:10,6361:59:59^241:100
+@f^1453^0^171^1^858:1:1,6289:106:106,6291:29:29,6308:34:34,6309:1:1^271:171
 @l^0^enUS
