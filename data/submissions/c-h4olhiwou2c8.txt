@@ -1,4 +1,4 @@
-GoldScout-export 6^h4olhiwou2c8^4
+GoldScout-export 6^h4olhiwou2c8^5
 48^11^0^21^22^1431^0.7917^0.7098^11^Guerrero esquelético^1478:1:1,1712:1:1,1747:1:1,1795:1:1,2378:6:6,2589:1:1,2592:2:3^
 98^2^0^17^18^1436^0.6194^0.7205^2^Capataz Zarparrío^^
 202^9^0^23^24^1431^0.3752^0.5130^9^Horror esquelético^2378:1:1,2589:1:1,2592:1:1,3385:1:1,4306:1:1,6582:1:1^
@@ -24,6 +24,16 @@ GoldScout-export 6^h4olhiwou2c8^4
 1200^1^0^32^32^1431^0.1998^0.3663^1^Morbent Vil^1205:1:1,2592:1:1,3807:1:1^
 1251^1^0^29^29^1431^0.3317^0.7271^1^Pirófilo Puñastilla^^
 1270^1^0^29^30^1431^0.7829^0.3557^1^Cadáver fétido^1129:1:1,4606:1:1^
+1663^1^0^0^0^0^0.0000^0.0000^0^^3628:1:1,273817:1:1^
+1666^1^0^0^0^0^0.0000^0.0000^0^^273807:1:1^
+1696^1^0^0^0^0^0.0000^0.0000^0^^273806:1:1^
+1706^4^0^0^0^0^0.0000^0.0000^0^^6571:1:1,6577:1:1,12054:1:1^
+1707^4^0^0^0^0^0.0000^0.0000^0^^1750:1:1,2589:1:4,3056:1:1^
+1708^5^0^0^0^0^0.0000^0.0000^0^^1821:1:1,2589:1:5,248688:1:1,262888:1:1^
+1711^2^0^0^0^0^0.0000^0.0000^0^^^
+1715^2^0^0^0^0^0.0000^0.0000^0^^^
+1717^1^0^0^0^0^0.0000^0.0000^0^^4306:1:2,273810:1:1^
+1754^1^0^31^31^1453^0.7246^0.3520^1^Lord Gregor Lescovar^4306:1:2,248694:1:1^
 2044^1^0^26^26^1436^0.4155^0.6736^1^Espíritu melancólico^2592:1:2^
 @i^887^Kilo de carne
 @i^929^Poción de sanación
@@ -34,25 +44,39 @@ GoldScout-export 6^h4olhiwou2c8^4
 @i^1478^Pergamino de protección II
 @i^1712^Pergamino de espíritu II
 @i^1747^Botas de eslabones
+@i^1750^Guantes de eslabones
 @i^1777^Hombreras brocadas
 @i^1795^Cinturón de pellejo crudo
 @i^1806^Capa dura
+@i^1821^Espada combada
 @i^1946^Espejo de Mary
 @i^2378^Dedo esquelético
 @i^2589^Paño de lino
 @i^2592^Paño de lana
 @i^2794^Un viejo libro de Historia
 @i^3039^Arco de fresno corto
+@i^3056^Pantalones de cuero de bosque
 @i^3182^Seda de araña
 @i^3385^Poción de maná inferior
+@i^3628^Mano de Dextren Ward
 @i^3807^Guerrera de cuero endurecido
 @i^4306^Paño de seda
 @i^4428^Pulpa de araña
 @i^4606^Colmenilla esponjosa
 @i^6530^Reptadores nocturnos
+@i^6571^Rodela de exploración del médico
+@i^6577^Guanteletes defensores del gorila
 @i^6582^Botas de exploración de poder
 @i^6592^Armadura Forjabatalla del falcón
 @i^7307^Gusano carnívoro
+@i^12054^Sortija de demonio
+@i^248688^Cajón arrebatado: Textiles de oficial
+@i^248694^Cajón arrebatado: Curiosidades de experto
+@i^262888^Libranza de oficial lacrada
+@i^273806^Sortija de la Horda Oscura
+@i^273807^Faja de demolición
+@i^273810^Mandiletes de ogro
+@i^273817^Pala de profanador
 @q^887^0:15:0
 @q^929^1:0:0
 @q^1015^1:7:1
@@ -62,27 +86,42 @@ GoldScout-export 6^h4olhiwou2c8^4
 @q^1478^1:0:0
 @q^1712^1:0:0
 @q^1747^0:4:0
+@q^1750^0:4:0
 @q^1777^0:4:0
 @q^1795^0:4:0
 @q^1806^0:4:0
+@q^1821^0:2:0
 @q^1946^1:12:0
 @q^2378^1:12:0
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2794^1:12:0
 @q^3039^2:2:0
+@q^3056^2:4:0
 @q^3182^1:7:1
 @q^3385^1:0:0
+@q^3628^1:12:0
 @q^3807^0:4:0
 @q^4306^1:7:1
 @q^4428^0:15:0
 @q^4606^1:0:0
 @q^6530^1:0:0
+@q^6571^2:4:0
+@q^6577^2:4:0
 @q^6582^2:4:0
 @q^6592^2:4:0
 @q^7307^1:0:0
+@q^12054^2:4:0
+@q^248688^1:0:1
+@q^248694^1:0:1
+@q^262888^3:0:0
+@q^273806^3:4:0
+@q^273807^3:4:0
+@q^273810^3:4:0
+@q^273817^3:2:0
 @m^1431^Bosque del Ocaso
 @m^1436^Páramos de Poniente
+@m^1453^Ciudad de Ventormenta
 @c^118^
 @c^724^
 @c^733^
@@ -272,5 +311,6 @@ GoldScout-export 6^h4olhiwou2c8^4
 @a^1200^143:1
 @a^1251^286:1
 @a^1270^155:1
+@a^1754^154:1
 @a^2044^268:1
 @l^0^esMX
