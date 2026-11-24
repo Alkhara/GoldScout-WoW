@@ -7,6 +7,9 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- **Pickpocketing in dungeons counts as pickpocketing:** inside dungeons the game hides which mob a Pick Pocket hit, so its loot was counted as a kill. GoldScout now counts the loot window that opens right after the cast as that mob's pockets.
+- **Names for mobs you loot without targeting them,** such as a boss your group killed, when the game shares the name.
+
 ## v0.12.43
 
 - **Shared drop data that was turned away now goes in:** a saved pickpocket count could be written as "-0", and the community data refused the whole share. GoldScout now writes it as 0, and shares already sent that way are accepted.

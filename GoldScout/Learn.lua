@@ -86,6 +86,12 @@ local lastGatherCast = -math.huge
 local PICK_POCKET = 921
 local PICK_SECONDS = 3
 local picked = {}
+-- Inside an instance the game keeps every mob's name and GUID secret, so a Pick Pocket can't be tied to its mob,
+-- and its window used to count as a kill. Your own casts aren't secret, and the pickpocket window opens the
+-- moment the cast goes off: a window from a single mob within BLIND_PICK_SECONDS of a pick whose mob we couldn't
+-- see is that mob's pockets.
+local BLIND_PICK_SECONDS = 1
+local blindPick -- GetTime() of that pick
 
 -- What gathering gives: leather, hides and scraps, herbs, ore and stone. A
 -- creature loot window with nothing else in it is gathering, even if the cast
@@ -755,6 +761,24 @@ local function ReadWindow()
     end
     result.slots[slot] = slotInfo
   end
+
+  -- A pick we couldn't tie to a mob: the one mob in the window that opens right after it is the pickpocketed one.
+  if blindPick and GetTime() - blindPick <= BLIND_PICK_SECONDS then
+    local only, more
+    for guid, source in pairs(result.sources) do
+      if only then
+        more = true
+      end
+      only = only or (source.role == "kill" and guid)
+    end
+    if only and not more then
+      blindPick = nil
+      picked[only] = { at = GetTime() }
+      local source = result.sources[only]
+      source.role, source.key, source.pending = "pick", only .. ":pick", false
+      source.new = not counted[source.key]
+    end
+  end
   return result
 end
 
@@ -815,6 +839,11 @@ local function OnLootReady()
         end
         if source.isTarget then
           Learn:NoteUnit(source.id, UnitName("target"), UnitLevel("target"))
+        elseif UnitNameFromGUID then
+          -- Looted without targeting it (a group's kill, or a mouseover): the name may still be known by its
+          -- GUID. Inside instances the game may keep it secret, and then nothing is noted.
+          local ok, name = pcall(UnitNameFromGUID, guid)
+          Learn:NoteUnit(source.id, ok and name or nil, nil)
         end
       end
       ns.Fire("LOOT_ACTION", source.role, source.id)
@@ -950,8 +979,12 @@ ns.On("UNIT_SPELLCAST_SUCCEEDED", function(unit, castGUID, spellID)
     lastGatherCast = GetTime()
   end
   local cast = ns.Plain(castGUID)
-  if pickCast and pickCast.guid and (pickCast.cast == nil or pickCast.cast == cast) and IsPickPocket(spellID) then
-    picked[pickCast.guid] = { at = GetTime() }
+  if pickCast and (pickCast.cast == nil or pickCast.cast == cast) and IsPickPocket(spellID) then
+    if pickCast.guid then
+      picked[pickCast.guid] = { at = GetTime() }
+    else
+      blindPick = GetTime()   -- at a mob the game keeps secret (inside an instance)
+    end
     pickCast = nil
   end
 end)

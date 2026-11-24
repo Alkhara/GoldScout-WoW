@@ -453,6 +453,54 @@ class LootCountingLuaTests(unittest.TestCase):
         self.loot(BEAR, self.HIDE)
         self.assertEqual(self.bear(), (1, {self.HIDE: 1}))
 
+    # Inside an instance every mob's name and GUID is secret: the cast can't be tied to its mob.
+    def cast_blind_pick(self):
+        self.cast_pick(BEAR, unit=None, name=None)
+
+    def test_inside_an_instance_the_window_right_after_a_pick_is_its_pockets(self):
+        self.cast_blind_pick()
+        self.loot(BEAR, self.JUNKBOX)
+        self.assertEqual(self.picks(), (1, {self.JUNKBOX: 1}))
+        self.assertEqual(self.bear(), (0, {}))
+        self.game.now += 20
+        self.loot(BEAR, self.HIDE)                      # its corpse later is a kill
+        self.assertEqual(self.bear(), (1, {self.HIDE: 1}))
+        self.assertEqual(self.picks(), (1, {self.JUNKBOX: 1}))
+
+    def test_an_unplaced_pick_claims_only_the_window_right_after_it(self):
+        self.cast_blind_pick()
+        self.game.now += 2
+        self.loot(BEAR, self.HIDE)
+        self.assertEqual((self.bear(), self.picks()[0]), ((1, {self.HIDE: 1}), 0))
+
+    def test_an_unplaced_pick_claims_one_window_once(self):
+        self.cast_blind_pick()
+        self.loot(BEAR, self.JUNKBOX)
+        self.loot(BEAR2, self.HIDE)                     # the next window, still within the second, is a kill
+        self.assertEqual(self.picks(), (1, {self.JUNKBOX: 1}))
+        self.assertEqual(self.bear(), (1, {self.HIDE: 1}))
+
+    def test_an_unplaced_pick_never_claims_a_window_from_several_mobs(self):
+        # Area loot from two corpses isn't a pickpocket window.
+        self.cast_blind_pick()
+        self.game.loot = self.lua.table_from([self.lua.table_from({"item": self.HIDE, "guid": BEAR}),
+                                              self.lua.table_from({"item": self.HIDE, "guid": BEAR2})])
+        self.ns.events["LOOT_READY"]()
+        self.ns.events["LOOT_CLOSED"]()
+        self.assertEqual((self.bear(), self.picks()[0]), ((2, {self.HIDE: 2}), 0))
+
+    def test_an_untargeted_corpse_is_named_by_its_guid(self):
+        g = self.lua.globals()
+        g.UnitNameFromGUID = lambda guid: "Golem Lord Argelmach" if guid == BEAR else None
+        self.loot(BEAR, self.HIDE)                      # no target: a group's kill
+        entry = self.ns.db.drops[3809]
+        self.assertEqual((entry.n, entry.lmin), ("Golem Lord Argelmach", None))
+
+    def test_a_guid_lookup_that_fails_names_nothing(self):
+        self.lua.execute("UnitNameFromGUID = function() error('secret') end")
+        self.loot(BEAR, self.HIDE)
+        self.assertEqual((self.bear(), self.ns.db.drops[3809].n), ((1, {self.HIDE: 1}), None))
+
     def test_a_pick_pocket_that_never_goes_off_records_nothing(self):
         self.cast_pick(BEAR, succeed=False)
         self.game.now += 20
