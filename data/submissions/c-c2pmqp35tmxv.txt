@@ -1,4 +1,4 @@
-GoldScout-export 6^c2pmqp35tmxv^61
+GoldScout-export 6^c2pmqp35tmxv^62
 205^2^0^28^29^1431^0.6628^0.7753^2^Nightbane Dark Runner^^
 533^1^0^28^28^1431^0.6691^0.7748^1^Nightbane Shadow Weaver^^
 587^18^0^33^34^1434^0.2954^0.1956^18^Bloodscalp Warrior^1477:1:1,1519:2:2,1520:2:2,2289:1:1,2728:1:1,2738:1:1,3915:4:4,4306:3:3^
@@ -383,8 +383,17 @@ GoldScout-export 6^c2pmqp35tmxv^61
 8996^4^0^42^48^1446^0.5878^0.3961^4^Voidwalker Minion^^
 9683^1^0^50^50^1449^0.6711^0.6889^1^Lar'korwi Mate^11018:1:1^
 10082^1^0^0^0^0^0.0000^0.0000^0^^9523:1:3,12470:1:1^
+11685^1^0^42^42^1414^0.3824^0.5801^1^Maraudine Priest^4306:1:3^
+11686^1^0^41^41^1414^0.3865^0.5781^1^Ghostly Raider^^
+11687^1^0^41^42^1414^0.3835^0.5797^1^Ghostly Marauder^4338:1:2^
+11777^1^0^41^41^1414^0.3829^0.5732^1^Shadowshard Rumbler^4784:1:1,8150:1:1,17756:1:1^
+11778^2^0^41^41^1414^0.3836^0.5736^2^Shadowshard Smasher^4552:2:2,4784:2:2,7912:2:4,8150:1:1,17756:2:2^
+11787^3^0^41^41^1414^0.3832^0.5726^3^Rock Borer^3669:2:2,3676:2:2^
+11788^3^0^41^42^1414^0.3845^0.5733^3^Rock Worm^3669:3:3,3676:1:1^
 12046^1^0^49^49^1446^0.4121^0.5749^1^Gor'marok the Ravager^^
+12239^1^0^42^42^1414^0.3841^0.5725^1^Gelk^17684:1:1,17762:1:1^
 12922^1^0^38^38^1435^0.6488^0.2117^1^Imp Minion^^
+13718^1^0^41^41^1414^0.3821^0.5804^1^The Nameless Prophet^4637:1:1,17684:1:1,17757:1:1^
 14123^22^0^42^43^1446^0.6741^0.3112^22^Steeljaw Snapper^3712:6:6,4555:14:14,4556:9:9,4603:1:1,7973:11:11,213543:2:2^
 14492^1^0^42^42^1434^0.3557^0.5622^1^Verifonix^4338:1:1,281896:1:1^
 14748^1^0^49^49^1425^0.8435^0.4101^1^Vilebranch Kidnapper^19034:1:1^
@@ -563,6 +572,7 @@ GoldScout-export 6^c2pmqp35tmxv^61
 @i^3403^Ivory Boar Tusk
 @i^3404^Buzzard Wing
 @i^3667^Tender Crocolisk Meat
+@i^3669^Gelatinous Goo
 @i^3671^Lifeless Skull
 @i^3676^Slimy Ichor
 @i^3685^Raptor Egg
@@ -674,6 +684,7 @@ GoldScout-export 6^c2pmqp35tmxv^61
 @i^4607^Delicious Cave Mold
 @i^4608^Raw Black Truffle
 @i^4636^Strong Iron Lockbox
+@i^4637^Steel Lockbox
 @i^4638^Reinforced Steel Lockbox
 @i^4644^The Legacy Heart
 @i^4721^Insignia Mantle
@@ -859,6 +870,10 @@ GoldScout-export 6^c2pmqp35tmxv^61
 @i^15980^Darkmist Orb of Strength
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
+@i^17684^Theradric Crystal Carving
+@i^17756^Shadowshard Fragment
+@i^17757^Amulet of Spirits
+@i^17762^Gem of the Second Khan
 @i^18082^Zum'rah's Vexing Cane
 @i^18947^Rage Scar Yeti Hide
 @i^18956^Miniaturization Residue
@@ -1011,6 +1026,7 @@ GoldScout-export 6^c2pmqp35tmxv^61
 @q^3403^0:15:0
 @q^3404^1:7:1
 @q^3667^1:7:1
+@q^3669^0:15:0
 @q^3671^0:15:0
 @q^3676^0:15:0
 @q^3685^1:7:1
@@ -1122,6 +1138,7 @@ GoldScout-export 6^c2pmqp35tmxv^61
 @q^4607^1:0:0
 @q^4608^1:0:0
 @q^4636^2:15:0
+@q^4637^2:15:0
 @q^4638^2:15:0
 @q^4644^1:12:0
 @q^4721^2:4:0
@@ -1307,6 +1324,10 @@ GoldScout-export 6^c2pmqp35tmxv^61
 @q^15980^2:4:0
 @q^17057^1:15:0
 @q^17058^1:15:0
+@q^17684^1:12:0
+@q^17756^1:12:0
+@q^17757^1:12:0
+@q^17762^1:12:0
 @q^18082^3:2:0
 @q^18947^1:12:0
 @q^18956^1:12:0
@@ -1399,6 +1420,7 @@ GoldScout-export 6^c2pmqp35tmxv^61
 @q^287014^3:4:0
 @m^1411^Durotar
 @m^1413^The Barrens
+@m^1414^Kalimdor
 @m^1415^Eastern Kingdoms
 @m^1418^Badlands
 @m^1420^Tirisfal Glades
@@ -2338,8 +2360,17 @@ GoldScout-export 6^c2pmqp35tmxv^61
 @a^8636^269:1
 @a^8996^151:3,171:1
 @a^9683^273:1
+@a^11685^227:1
+@a^11686^227:1
+@a^11687^227:1
+@a^11777^227:1
+@a^11778^227:2
+@a^11787^227:3
+@a^11788^227:3
 @a^12046^228:1
+@a^12239^227:1
 @a^12922^92:1
+@a^13718^227:1
 @a^14123^93:3,113:12,153:6,173:1
 @a^14492^227:1
 @a^14748^176:1

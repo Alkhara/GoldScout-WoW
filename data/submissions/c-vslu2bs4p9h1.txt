@@ -1,4 +1,4 @@
-GoldScout-export 6^vslu2bs4p9h1^11
+GoldScout-export 6^vslu2bs4p9h1^12
 3^6^0^24^25^1431^0.2182^0.3650^6^Flesh Eater^885:1:1,1129:2:2,2592:1:1,6530:1:1^
 48^18^0^21^22^1431^0.7938^0.7185^18^Skeletal Warrior^1747:1:1,2378:8:8,2589:2:2,2592:4:6,2765:1:1,4306:2:2,4606:1:1,6570:1:1,14171:1:1^
 95^3^0^11^11^1436^0.4664^0.2766^3^Defias Smuggler^2589:2:6^
@@ -14,12 +14,14 @@ GoldScout-export 6^vslu2bs4p9h1^11
 215^3^0^24^25^1431^0.5166^0.7363^3^Defias Night Runner^2592:1:2^
 217^13^0^19^20^1431^0.2596^0.4133^13^Venom Web Spider^878:1:1,1081:3:3,1475:1:1,2251:7:7,3174:7:7^
 391^1^0^20^20^1436^0.3215^0.8310^1^Old Murk-Eye^3636:1:1^
-428^2^0^19^19^1433^0.5926^0.7664^2^Dire Condor^1464:1:1,6889:2:2,17056:1:1,250188:1:1^
-440^4^0^19^20^1433^0.6776^0.7851^4^Blackrock Grunt^858:1:1,2589:1:1,2592:1:1,3014:2:2^
+428^3^0^19^19^1433^0.5496^0.7599^3^Dire Condor^1464:1:1,4775:1:1,6889:3:3,17056:2:2,250188:1:1^
+437^4^0^21^22^1433^0.7163^0.7018^4^Blackrock Renegade^2592:2:2,3014:2:2,4306:1:1^
+440^6^0^19^20^1433^0.6788^0.7719^6^Blackrock Grunt^789:1:1,858:1:1,2589:3:7,2592:1:1,3014:3:3^
+441^8^0^17^18^1433^0.5183^0.7517^8^Black Dragon Whelp^1221:5:5,3176:1:1,3177:1:1,5635:1:1^
 449^8^0^16^17^1436^0.4402^0.7767^8^Defias Knuckleduster^1813:1:1,2592:4:5^
 452^10^0^16^17^1436^0.5247^0.6597^10^Riverpaw Bandit^858:1:1,2589:3:4,2592:1:1^
 453^2^0^18^19^1436^0.6131^0.7227^2^Riverpaw Mystic^^
-485^3^0^20^21^1433^0.6741^0.7754^3^Blackrock Outrunner^2589:1:2,3014:2:2^
+485^15^0^20^21^1433^0.6857^0.7431^15^Blackrock Outrunner^2589:2:3,2592:3:5,3014:4:4^
 500^1^0^13^13^1436^0.3695^0.3210^1^Riverpaw Scout^2589:1:2^
 501^1^0^15^15^1436^0.2902^0.4912^1^Riverpaw Herbalist^^
 504^3^0^12^13^1436^0.4460^0.2279^3^Defias Trapper^2589:1:1^
@@ -135,6 +137,7 @@ GoldScout-export 6^vslu2bs4p9h1^11
 @i^555^Rough Vulture Feathers
 @i^729^Stringy Vulture Meat
 @i^730^Murloc Eye
+@i^789^Stout Battlehammer of Magic
 @i^818^Tigerseye
 @i^858^Lesser Healing Potion
 @i^872^Rockslicer
@@ -153,6 +156,7 @@ GoldScout-export 6^vslu2bs4p9h1^11
 @i^1205^Melon Juice
 @i^1206^Moss Agate
 @i^1210^Shadowgem
+@i^1221^Underbelly Whelp Scale
 @i^1292^Butcher's Cleaver
 @i^1464^Buzzard Talon
 @i^1468^Murloc Fin
@@ -225,6 +229,8 @@ GoldScout-export 6^vslu2bs4p9h1^11
 @i^3014^Battleworn Axe
 @i^3058^Forest Leather Gloves
 @i^3174^Spider Ichor
+@i^3176^Small Claw
+@i^3177^Tiny Fang
 @i^3182^Spider's Silk
 @i^3193^Oak Mallet of Shadow Protection
 @i^3195^Barbaric Battle Axe of Frost Protection
@@ -246,6 +252,7 @@ GoldScout-export 6^vslu2bs4p9h1^11
 @i^4571^War Knife of Stamina
 @i^4606^Spongy Morel
 @i^4697^Burnished Girdle
+@i^4775^Cracked Bill
 @i^5187^Rhahk'Zor's Hammer
 @i^5193^Cape of the Brotherhood
 @i^5194^Taskmaster Axe
@@ -307,6 +314,7 @@ GoldScout-export 6^vslu2bs4p9h1^11
 @i^248689^Waylaid Crate: Journeyman Curiosities
 @i^248702^Waylaid Crate: Apprentice Fabrics
 @i^250188^Recipe: Breakfast Omelette
+@i^251524^Whimsyfin
 @i^252792^Pattern: Brawler's Leather Pants
 @i^252796^Pattern: Stormrider's Leather Pants
 @i^262888^Sealed Journeyman's Writ
@@ -321,6 +329,7 @@ GoldScout-export 6^vslu2bs4p9h1^11
 @q^555^0:15:0
 @q^729^1:7:1
 @q^730^1:7:1
+@q^789^2:2:0
 @q^818^2:7:1
 @q^858^1:0:0
 @q^872^3:2:0
@@ -339,6 +348,7 @@ GoldScout-export 6^vslu2bs4p9h1^11
 @q^1205^1:0:0
 @q^1206^2:7:1
 @q^1210^2:7:1
+@q^1221^1:12:0
 @q^1292^3:2:0
 @q^1464^0:15:0
 @q^1468^1:7:1
@@ -411,6 +421,8 @@ GoldScout-export 6^vslu2bs4p9h1^11
 @q^3014^1:12:0
 @q^3058^2:4:0
 @q^3174^1:7:1
+@q^3176^0:15:0
+@q^3177^0:15:0
 @q^3182^1:7:1
 @q^3193^2:2:0
 @q^3195^2:2:0
@@ -432,6 +444,7 @@ GoldScout-export 6^vslu2bs4p9h1^11
 @q^4571^2:2:0
 @q^4606^1:0:0
 @q^4697^2:4:0
+@q^4775^0:15:0
 @q^5187^3:2:0
 @q^5193^3:4:0
 @q^5194^3:2:0
@@ -493,6 +506,7 @@ GoldScout-export 6^vslu2bs4p9h1^11
 @q^248689^1:0:1
 @q^248702^2:0:1
 @q^250188^1:9:0
+@q^251524^1:7:1
 @q^252792^3:9:0
 @q^252796^3:9:0
 @q^262888^3:0:0
@@ -696,12 +710,14 @@ GoldScout-export 6^vslu2bs4p9h1^11
 @a^215^289:1,290:2
 @a^217^69:1,71:1,72:1,73:1,162:1,182:3,202:2,221:1,222:2
 @a^391^326:1
-@a^428^311:1,312:1
-@a^440^313:3,333:1
+@a^428^289:1,311:1,312:1
+@a^437^274:2,293:1,294:1
+@a^440^294:1,312:1,313:3,333:1
+@a^441^285:1,289:2,290:1,291:1,292:1,312:2
 @a^449^286:1,287:1,307:1,309:1,310:2,329:2
 @a^452^229:1,249:3,250:1,291:5
 @a^453^292:2
-@a^485^292:1,313:2
+@a^485^274:4,292:1,293:2,294:1,312:2,313:5
 @a^500^127:1
 @a^501^185:1
 @a^504^88:2,89:1
@@ -749,4 +765,5 @@ GoldScout-export 6^vslu2bs4p9h1^11
 @a^268624^210:2
 @a^272260^202:1
 @a^272291^143:1
+@f^1433^0^2^75^6308:1:1,251524:1:1^292:2
 @l^0^enUS

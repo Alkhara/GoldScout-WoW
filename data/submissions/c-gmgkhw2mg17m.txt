@@ -1,4 +1,4 @@
-GoldScout-export 6^gmgkhw2mg17m^47
+GoldScout-export 6^gmgkhw2mg17m^48
 36^1^0^11^11^1436^0.3320^0.3822^1^Harvest Golem^1506:1:1^
 114^2^0^14^15^1436^0.3748^0.5132^2^Harvest Watcher^732:2:2,814:1:1,1274:1:1^
 122^1^0^17^17^1436^0.3627^0.8307^1^Defias Highwayman^^
@@ -303,6 +303,7 @@ GoldScout-export 6^gmgkhw2mg17m^47
 251115^1^0^5^5^2521^0.3559^0.2546^1^Urs'anah^2650:1:1,251925:1:1,252665:1:1^
 251145^6^0^4^4^2521^0.3707^0.3279^6^Al'Aketh Brute^159:4:4,1378:1:1,2589:4:4,4540:2:2^
 251448^4^0^4^4^2521^0.3689^0.3232^4^Al'Aketh Neophyte^159:2:2,1380:1:1,2589:1:1,4540:2:2^
+254560^10^0^39^40^2548^0.4535^0.4840^10^Twilight Shadowmancer^4306:4:7,5215:1:1,6438:1:1,265745:3:3,267073:2:5^
 255109^2^0^0^0^0^0.0000^0.0000^0^^1731:1:1,2777:1:1^
 255964^1^0^0^0^0^0.0000^0.0000^0^^858:1:1,9785:1:1,268580:1:1^
 256035^1^0^0^0^0^0.0000^0.0000^0^^271212:1:1^
@@ -310,7 +311,10 @@ GoldScout-export 6^gmgkhw2mg17m^47
 256383^8^0^35^36^2548^0.4580^0.8072^8^Meadowsbrook Farmhand^4306:3:5^
 256433^4^0^32^33^2548^0.3967^0.6089^4^Woodworker^4306:2:2^
 256434^20^0^37^38^2548^0.3990^0.6291^20^Turner's Mill Lumberjack^4306:4:6,4338:1:1,263972:10:10^
+256798^5^0^37^38^2548^0.4656^0.5078^5^Twilight Neophyte^4306:1:1,267073:3:5^
 256935^1^0^5^5^2521^0.3613^0.3350^1^Malduko Cloudcrush^^
+256952^19^0^39^40^2548^0.4752^0.5203^19^Twilight Raider^3671:1:1,4306:8:17,5429:2:2,9929:1:1,267073:7:11^
+257017^2^0^37^38^2548^0.4710^0.4865^2^Twilight Worg^4582:1:1,4583:1:1^
 257926^7^0^38^39^2548^0.4621^0.6543^7^Farholde Scout^4306:2:4,4338:1:1^
 258792^3^0^0^0^0^0.0000^0.0000^0^^3798:1:1,4338:1:1^
 258799^3^0^0^0^0^0.0000^0.0000^0^^5215:1:1^
@@ -337,7 +341,7 @@ GoldScout-export 6^gmgkhw2mg17m^47
 260432^3^0^11^12^1420^0.0935^0.6271^3^Shadowvale Mystic^2589:2:2,286259:1:1^
 262397^24^0^36^38^1434^0.2303^0.2724^24^Brinescale Skirmisher^2745:1:1,2748:1:1,2749:1:1,2750:1:1,3928:1:1,4603:2:4,5524:7:7,17058:4:4,248692:2:2,270305:10:10^
 263196^2^0^0^0^0^0.0000^0.0000^0^^1708:1:1^
-263307^5^0^37^38^2548^0.6174^0.5847^5^Glade Viper^6444:3:3,6826:1:1,213543:1:1^
+263307^9^0^37^38^2548^0.6191^0.5771^9^Glade Viper^6444:3:3,6826:3:3,213543:1:1,271776:3:3^
 263315^1^0^41^41^2548^0.5939^0.5383^1^Ombassa^281052:1:1^
 263343^14^0^37^38^2548^0.6521^0.5284^14^Low Plains Buzzard^1464:4:4,3404:4:4,5829:3:3,10301:1:1,11418:1:1,12037:6:6,271793:6:6^
 263348^3^0^37^38^2548^0.6269^0.5150^3^Roving Tallstrider^5116:2:2,5829:1:1,271778:1:1^
@@ -534,6 +538,7 @@ GoldScout-export 6^gmgkhw2mg17m^47
 @i^3641^Journeyman's Bracers
 @i^3667^Tender Crocolisk Meat
 @i^3669^Gelatinous Goo
+@i^3671^Lifeless Skull
 @i^3674^Decomposed Boot
 @i^3676^Slimy Ichor
 @i^3712^Turtle Meat
@@ -570,6 +575,8 @@ GoldScout-export 6^gmgkhw2mg17m^47
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
 @i^4570^Birchwood Maul of Defense
+@i^4582^Soft Bushy Tail
+@i^4583^Thick Furry Mane
 @i^4585^Dripping Spider Mandible
 @i^4603^Raw Spotted Yellowtail
 @i^4604^Forest Mushroom Cap
@@ -607,7 +614,8 @@ GoldScout-export 6^gmgkhw2mg17m^47
 @i^5137^Bright Eyeball
 @i^5165^Sunscale Feather
 @i^5213^Scorching Wand
-@i^5215^Ember Wand of the Channeler
+@i^5215^Ember Wand of the Elder
+@i^5429^A Pretty Rock
 @i^5465^Small Spider Leg
 @i^5469^Strider Meat
 @i^5498^Small Lustrous Pearl
@@ -645,6 +653,7 @@ GoldScout-export 6^gmgkhw2mg17m^47
 @i^6390^Pattern: Stylish Blue Shirt
 @i^6402^Mail Combat Leggings
 @i^6408^Insignia Gloves
+@i^6438^Dull Elemental Bracer
 @i^6444^Forked Tongue
 @i^6507^Infantry Bracers
 @i^6530^Nightcrawlers
@@ -707,6 +716,7 @@ GoldScout-export 6^gmgkhw2mg17m^47
 @i^9845^Conjurer's Shoes of the Hierophant
 @i^9846^Conjurer's Bracers of the Owl
 @i^9862^Archer's Trousers of the Whale
+@i^9929^Brigade Cloak of Power
 @i^10301^Pattern: White Bandit Mask
 @i^10420^Skull of the Coldbringer
 @i^10763^Icemetal Barbute
@@ -772,6 +782,8 @@ GoldScout-export 6^gmgkhw2mg17m^47
 @i^262888^Sealed Journeyman's Writ
 @i^262889^Sealed Expert's Writ
 @i^263972^Woodworker's Axe
+@i^265745^Twilight Missive
+@i^267073^Twilight Finger Bone
 @i^268580^Intact Limbs
 @i^268581^Scoutmaster's Eye
 @i^268812^Whispering Horror Residue
@@ -783,6 +795,7 @@ GoldScout-export 6^gmgkhw2mg17m^47
 @i^271212^Bloodied Chestwraps
 @i^271214^Rotmender's Treads
 @i^271217^Corpse Chopper
+@i^271776^Glade Viper Venom
 @i^271778^Intact Tallstrider Beak
 @i^271793^Plains Buzzard Feather
 @i^271828^Ghostmaw's Fang
@@ -992,6 +1005,7 @@ GoldScout-export 6^gmgkhw2mg17m^47
 @q^3641^1:4:0
 @q^3667^1:7:1
 @q^3669^0:15:0
+@q^3671^0:15:0
 @q^3674^0:15:0
 @q^3676^0:15:0
 @q^3712^1:7:1
@@ -1028,6 +1042,8 @@ GoldScout-export 6^gmgkhw2mg17m^47
 @q^4555^0:15:0
 @q^4556^0:15:0
 @q^4570^2:2:0
+@q^4582^1:12:0
+@q^4583^0:15:0
 @q^4585^0:15:0
 @q^4603^1:7:1
 @q^4604^1:0:0
@@ -1066,6 +1082,7 @@ GoldScout-export 6^gmgkhw2mg17m^47
 @q^5165^1:12:0
 @q^5213^2:2:0
 @q^5215^2:2:0
+@q^5429^0:15:0
 @q^5465^1:7:1
 @q^5469^1:7:1
 @q^5498^2:7:1
@@ -1103,6 +1120,7 @@ GoldScout-export 6^gmgkhw2mg17m^47
 @q^6390^2:9:0
 @q^6402^2:4:0
 @q^6408^2:4:0
+@q^6438^0:15:0
 @q^6444^0:15:0
 @q^6507^1:4:0
 @q^6530^1:0:0
@@ -1165,6 +1183,7 @@ GoldScout-export 6^gmgkhw2mg17m^47
 @q^9845^2:4:0
 @q^9846^2:4:0
 @q^9862^2:4:0
+@q^9929^2:4:0
 @q^10301^2:9:0
 @q^10420^1:12:0
 @q^10763^3:4:0
@@ -1230,6 +1249,8 @@ GoldScout-export 6^gmgkhw2mg17m^47
 @q^262888^3:0:0
 @q^262889^3:0:0
 @q^263972^1:12:0
+@q^265745^1:12:0
+@q^267073^1:12:0
 @q^268580^1:12:0
 @q^268581^1:12:0
 @q^268812^1:12:0
@@ -1241,6 +1262,7 @@ GoldScout-export 6^gmgkhw2mg17m^47
 @q^271212^3:4:0
 @q^271214^3:4:0
 @q^271217^3:2:0
+@q^271776^1:12:0
 @q^271778^1:12:0
 @q^271793^1:12:0
 @q^271828^1:12:0
@@ -3513,10 +3535,14 @@ GoldScout-export 6^gmgkhw2mg17m^47
 @a^251115^107:1
 @a^251145^127:6
 @a^251448^127:4
+@a^254560^188:3,189:5,209:2
 @a^256383^309:1,329:7
 @a^256433^227:1,228:1,248:1,267:1
 @a^256434^227:1,228:2,247:5,248:6,267:5,268:1
+@a^256798^189:1,208:1,209:3
 @a^256935^127:1
+@a^256952^188:2,189:5,208:1,209:6,230:5
+@a^257017^188:1,189:1
 @a^257926^249:2,269:5
 @a^259046^249:1
 @a^259433^242:2,262:1
@@ -3529,7 +3555,7 @@ GoldScout-export 6^gmgkhw2mg17m^47
 @a^260431^241:3
 @a^260432^241:3
 @a^262397^104:24
-@a^263307^232:4,252:1
+@a^263307^212:1,232:6,251:1,252:1
 @a^263315^211:1
 @a^263343^173:1,193:4,213:2,231:2,232:2,233:3
 @a^263348^193:1,213:1,231:1

@@ -1,8 +1,10 @@
-GoldScout-export 6^tht0xw0ej5yi^9
+GoldScout-export 6^tht0xw0ej5yi^10
 1812^1^0^55^56^1422^0.6594^0.4240^1^Rotting Behemoth^8948:1:1^
 1822^1^0^50^50^1422^0.3361^0.6060^1^Venom Mist Lurker^4337:1:1,12205:1:1^
 1824^1^0^54^55^1422^0.5803^0.5639^1^Plague Lurker^4337:1:1,12205:1:1^
 1853^3^0^0^0^0^0.0000^0.0000^0^^12843:1:1,13398:1:1,13501:1:1,13938:1:1,16707:1:1,16727:1:1^
+2655^2^0^46^47^1425^0.5690^0.4294^2^Green Sludge^20763:1:1^
+2656^5^0^47^48^1425^0.5809^0.4097^5^Jade Ooze^3671:2:2,3676:2:2,20767:1:1^
 7033^2^0^50^51^1428^0.7680^0.5562^2^Firegut Ogre^8952:1:1,14047:1:1^
 8520^7^0^55^56^1423^0.5418^0.6871^7^Plague Ravager^4791:2:8,7070:3:3,7079:1:1,7080:2:2,254130:1:1^
 8525^4^0^55^56^1423^0.5299^0.5932^4^Scourge Warder^7972:1:1,14047:1:1^
@@ -259,6 +261,8 @@ GoldScout-export 6^tht0xw0ej5yi^9
 14861^1^0^0^0^0^0.0000^0.0000^0^^^
 @i^1074^Hard Spider Leg Tip
 @i^2244^Krol Blade
+@i^3671^Lifeless Skull
+@i^3676^Slimy Ichor
 @i^3857^Coal
 @i^3944^Twill Belt
 @i^3946^Twill Bracers
@@ -619,6 +623,8 @@ GoldScout-export 6^tht0xw0ej5yi^9
 @i^19933^Glowing Scorpid Blood
 @i^19934^Large Scorpid Claw
 @i^20520^Dark Rune
+@i^20763^Broken Weapon
+@i^20767^Scum Covered Bag
 @i^22204^Wristguards of Renown
 @i^22207^Sash of the Grand Hunt
 @i^22231^Kayser's Boots of Precision
@@ -672,6 +678,8 @@ GoldScout-export 6^tht0xw0ej5yi^9
 @i^282712^Libram of Binding
 @q^1074^0:15:0
 @q^2244^4:2:0
+@q^3671^0:15:0
+@q^3676^0:15:0
 @q^3857^1:7:1
 @q^3944^0:4:0
 @q^3946^0:4:0
@@ -1032,6 +1040,8 @@ GoldScout-export 6^tht0xw0ej5yi^9
 @q^19933^1:15:0
 @q^19934^0:15:0
 @q^20520^2:7:1
+@q^20763^0:15:0
+@q^20767^1:15:0
 @q^22204^3:4:0
 @q^22207^3:4:0
 @q^22231^3:4:0
@@ -1085,6 +1095,7 @@ GoldScout-export 6^tht0xw0ej5yi^9
 @q^282712^2:9:0
 @m^1422^Western Plaguelands
 @m^1423^Eastern Plaguelands
+@m^1425^The Hinterlands
 @m^1428^Burning Steppes
 @m^1444^Feralas
 @c^724^
@@ -1419,6 +1430,8 @@ GoldScout-export 6^tht0xw0ej5yi^9
 @a^1812^173:1
 @a^1822^246:1
 @a^1824^231:1
+@a^2655^171:2
+@a^2656^151:1,171:4
 @a^7033^235:2
 @a^8520^270:3,271:3,290:1
 @a^8525^230:4
