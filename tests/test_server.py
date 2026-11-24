@@ -189,9 +189,17 @@ class ServerTests(unittest.TestCase):
         status, reply = raw("/v1/uploads", body, {"X-GoldScout-Terms": uploader.TERMS_VERSION,
                                                   "CF-Connecting-IP": fake_ip()}, "POST")
         self.assertEqual((status, reply.get("status")), (201, "registered"))
-        status, _ = raw("/v1/uploads", body.replace("export 6^", "export 7^"),
+        status, _ = raw("/v1/uploads", body.replace("export 6^", "export 8^"),
                         {"X-GoldScout-Terms": uploader.TERMS_VERSION, "CF-Connecting-IP": fake_ip()}, "POST")
         self.assertEqual(status, 400)
+
+    def test_accepts_version_seven_with_kill_times(self):
+        # Version 7: @t lines, how long a mob's kills took.
+        mob = "1109^60^0^10^11^1436^0.5000^0.5000^60^Coyote^2673:24:24^"
+        body = "GoldScout-export 7^%s^1\n%s\n@m^1436^Westfall\n@t^1109^40:2400\n" % (new_install(), mob)
+        status, reply = raw("/v1/uploads", body, {"X-GoldScout-Terms": uploader.TERMS_VERSION,
+                                                  "CF-Connecting-IP": fake_ip()}, "POST")
+        self.assertEqual((status, reply.get("status")), (201, "registered"))
 
     def test_list_needs_admin_token(self):
         self.assertEqual(raw("/v1/uploads")[0], 401)

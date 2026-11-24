@@ -33,6 +33,11 @@ came at (0 if unknown), items "itemID:times:quantity" as for mobs, and cells
 where the catches were, as for @a. An export can hold only fishing lines.
 Version 6 lets a mob line give a zone without a position (x, y and the position
 count 0): inside dungeons the game gives addons no map position, only the zone.
+Version 7 adds how fast players kill each mob:
+  @t^npcID^timed:seconds   timed kills of that mob, and the seconds they took
+                           (from the kill before, at most PACE_GAP; longer gaps
+                           are breaks and aren't timed), scaled to the pace on
+                           mobs of your own level (GoldScout/Learn.lua PaceFactor)
 Versions 2 (no @ lines) and 3 are still accepted; version 1 (no install ID)
 isn't.
 """
@@ -42,14 +47,17 @@ import unicodedata
 from collections import defaultdict
 
 HEADER = "GoldScout-export"
-HEADER_RE = re.compile(r"^GoldScout-export ([2-6])\^([a-z0-9]{12})\^([1-9][0-9]{0,8})$")
+HEADER_RE = re.compile(r"^GoldScout-export ([2-7])\^([a-z0-9]{12})\^([1-9][0-9]{0,8})$")
 LOCALE_RE = re.compile(r"^[a-z]{2}[A-Z]{2}$")
 AREA_RE = re.compile(r"^\d{1,3}:\d{1,6}(?:,\d{1,3}:\d{1,6})*$")
 AREA_CELLS = 400            # a 20x20 grid
-KNOWN_VERSION = 6           # the newest export version this copy understands
-KNOWN_EXTRA = ("@i", "@m", "@c", "@q", "@l", "@a", "@f")
+KNOWN_VERSION = 7           # the newest export version this copy understands
+KNOWN_EXTRA = ("@i", "@m", "@c", "@q", "@l", "@a", "@f", "@t")
 NEWER_HEADER_RE = re.compile(r"^GoldScout-export (\d+)\^[a-z0-9]{12}\^[1-9][0-9]{0,8}$")
 ITEM_META_RE = re.compile(r"^([0-9]):([0-9]{1,2}):([01x])$")
+PACE_RE = re.compile(r"^([0-9]{1,6}):([0-9]{1,9})$")
+# A timed kill took at most PACE_GAP seconds (GoldScout/Learn.lua), scaled by at most 2 for the level gap.
+MAX_PACE_SECONDS = 180 * 2
 
 
 def header(install_id, seq, version=3):
@@ -105,10 +113,11 @@ def clean_name(text, allowed=ITEM_NAME_PUNCTUATION):
 
 
 class Mob:
-    __slots__ = ("npc", "k", "p", "lmin", "lmax", "m", "x", "y", "c", "n", "i", "pi", "a")
+    __slots__ = ("npc", "k", "p", "lmin", "lmax", "m", "x", "y", "c", "n", "i", "pi", "a", "t", "s")
 
     def __init__(self, **fields):
         self.a = {}          # area cells {cell: count} on map m (version 5)
+        self.t, self.s = 0, 0   # timed kills and the seconds they took, at your own level's pace (version 7)
         for key, value in fields.items():
             setattr(self, key, value)
 
@@ -149,6 +158,7 @@ class Result:
         self.item_meta = {}  # itemID -> (quality, classID, reagent: True/False/None)
         self.locale = None   # the client's language (version 5+); None for older exports
         self.areas = {}      # npcID -> {cell: count} from @a lines, attached to the mobs
+        self.paces = {}      # npcID -> (timed kills, seconds) from @t lines, attached to the mobs
         self.fishing = []    # Fish from @f lines
         # Names keep_english_names() took out of a non-English export, kept apart for the website's
         # pages in that language: {"items": {itemID: name}, "maps": {...}, "mobs": {npcID: name}}.
@@ -165,6 +175,7 @@ class Result:
         for mob in self.mobs:
             if mob.a:
                 lines.append("@a^%d^%s" % (mob.npc, ",".join("%d:%d" % pair for pair in sorted(mob.a.items()))))
+        lines += ["@t^%d^%d:%d" % (mob.npc, mob.t, mob.s) for mob in self.mobs if mob.t]
         lines += [fish.to_line() for fish in sorted(self.fishing, key=lambda f: (f.m, f.spot))]
         if self.locale:
             lines.append("@l^0^%s" % self.locale)
@@ -332,11 +343,35 @@ def _parse_fish(line, line_no, result):
     result.fishing.append(Fish(map_id, spot, catches, skill, items, cells))
 
 
+def _parse_pace(fields, line_no, result):
+    """One @t line: how many kills of a mob were timed, and how long they took."""
+    if result.version < 7:
+        result.errors.append("Line %d: kill time lines need a version 7 export." % line_no)
+        return
+    npc = _int(fields[1], "NPC ID", line_no, result, low=1)
+    match = PACE_RE.match(fields[2])
+    if npc is None:
+        return
+    if not match:
+        result.errors.append("Line %d: a kill time line must look like @t^npcID^kills:seconds." % line_no)
+        return
+    timed, seconds = int(match.group(1)), int(match.group(2))
+    if timed < 1 or seconds > timed * MAX_PACE_SECONDS:
+        result.errors.append("Line %d: NPC %d's kill times are out of range." % (line_no, npc))
+    elif npc in result.paces:
+        result.errors.append("Line %d: NPC %d has more than one kill time line." % (line_no, npc))
+    else:
+        result.paces[npc] = (timed, seconds)
+
+
 def _parse_extra(line, line_no, result):
     """One @ line: an item name, item details, a zone name or a crafted item."""
     fields = line.split("^")
     if fields[0] == "@f":
         _parse_fish(line, line_no, result)
+        return
+    if fields[0] == "@t" and len(fields) == 3:
+        _parse_pace(fields, line_no, result)
         return
     if len(fields) != 3 or fields[0] not in ("@i", "@m", "@c", "@q", "@l", "@a"):
         result.errors.append("Line %d: expected @i, @q, @m, @c, @l or @a followed by an ID and a value." % line_no)
@@ -485,9 +520,16 @@ def parse(text):
     for npc in result.areas:
         if npc not in seen:
             result.errors.append("An area line is for NPC %d, which isn't in the export." % npc)
+    for npc, (timed, _) in result.paces.items():
+        mob = next((mob for mob in result.mobs if mob.npc == npc), None)
+        if mob is None:
+            result.errors.append("A kill time line is for NPC %d, which isn't in the export." % npc)
+        elif timed > mob.k:
+            result.errors.append("NPC %d has more timed kills (%d) than kills (%d)." % (npc, timed, mob.k))
     for mob in result.mobs:
         if mob.m and mob.c:     # cells are on the mob's map; without one they mean nothing
             mob.a = result.areas.get(mob.npc, {})
+        mob.t, mob.s = result.paces.get(mob.npc, (0, 0))
     return result
 
 
