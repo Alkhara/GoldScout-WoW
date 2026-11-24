@@ -1,4 +1,4 @@
-GoldScout-export 6^3898767bl3i0^40
+GoldScout-export 6^3898767bl3i0^41
 6^10^0^1^2^1429^0.5088^0.3711^10^Alimaña kóbold^159:2:2,755:2:2,1370:1:1,1380:1:1,2589:3:3,3365:1:1,4536:1:1,247834:1:1,247839:3:3^
 30^2^0^6^6^1429^0.3937^0.6633^2^Araña del bosque^5465:2:4^
 36^1^0^11^12^1436^0.5824^0.3370^1^Gólem de la cosecha^732:1:1,816:1:1,1274:1:1,255007:1:1^
@@ -141,6 +141,7 @@ GoldScout-export 6^3898767bl3i0^40
 7874^1^0^34^34^1413^0.4557^0.8960^1^Tejespina de Rajacieno^^
 10928^7^0^42^43^1434^0.2997^0.8101^7^Esbirro súcubo^^
 12922^5^0^0^0^1434^0.3089^0.8022^5^Esbirro diablillo^^
+14123^84^0^42^43^1446^0.6732^0.2394^84^Sacudidor Quijacero^3712:33:33,4555:51:51,4556:39:39,4603:9:9,7973:28:28,14606:1:1,213543:1:1,248690:1:1^
 248362^1^0^3^3^1429^0.4914^0.2796^1^Buscatesoros Narf^755:1:1,1377:1:1,247886:1:1^
 248463^4^0^6^7^1429^0.5637^0.5588^4^Estruendor^^
 248464^1^0^6^6^1429^0.4133^0.7947^1^Nimsy^772:1:1,773:1:1,2589:1:2,2635:1:1,2770:1:1,248002:1:1^
@@ -347,6 +348,7 @@ GoldScout-export 6^3898767bl3i0^40
 @i^3615^Cabeza de Kurzen
 @i^3667^Carne de crocolisco tierna
 @i^3671^Calavera inerte
+@i^3712^Carne de tortuga
 @i^3771^Pata de marrano salvaje
 @i^3780^Mosquete de cañón largo
 @i^3783^Cimitarra ligera
@@ -390,6 +392,8 @@ GoldScout-export 6^3898767bl3i0^40
 @i^4536^Manzana roja lustrosa
 @i^4552^Trozo de piedra lisa
 @i^4554^Piedra pulida lustrosa
+@i^4555^Cola escamosa espesa
+@i^4556^Fragmento de caparazón moteado
 @i^4562^Hacha severa de fuerza
 @i^4564^Garrote con pinchos del águila
 @i^4569^Martillo acérrimo del mono
@@ -470,6 +474,7 @@ GoldScout-export 6^3898767bl3i0^40
 @i^12184^Carne de raptor
 @i^12202^Carne de tigre
 @i^12206^Carne de cangrejo tierna
+@i^14606^Guantes de celador
 @i^15210^Espada corta de asaltante del búho
 @i^15234^Guadaña superior de la bestia
 @i^15262^Gran maza superior del falcón
@@ -481,6 +486,7 @@ GoldScout-export 6^3898767bl3i0^40
 @i^211785^Pergamino: CWAL
 @i^211786^Scroll: CHAP BALK WELLES
 @i^213127^Notas místicas incompletas
+@i^213543^Pergamino: QUÉONDA
 @i^213544^Pergamino: EZFOO KATASI
 @i^213546^Pergamino: CUCAMONGA
 @i^216616^Llave de jaula de la base
@@ -493,6 +499,7 @@ GoldScout-export 6^3898767bl3i0^40
 @i^248002^Libro de ilustraciones: Diversión con los elementales
 @i^248003^Geomancia para jóvenes hechiceros curiosos
 @i^248004^Volumen arcano: Conceptos mágicos en pocas palabras
+@i^248690^Cajón arrebatado: Hierbas de experto terrenal
 @i^248691^Cajón arrebatado: Hierbas de experto en floración
 @i^248692^Cajón arrebatado: Mena de experto
 @i^248693^Cajón arrebatado: Textiles de experto
@@ -684,6 +691,7 @@ GoldScout-export 6^3898767bl3i0^40
 @q^3615^1:12:0
 @q^3667^1:7:1
 @q^3671^0:15:0
+@q^3712^1:7:1
 @q^3771^1:0:0
 @q^3780^0:2:0
 @q^3783^0:2:0
@@ -727,6 +735,8 @@ GoldScout-export 6^3898767bl3i0^40
 @q^4536^1:0:0
 @q^4552^0:15:0
 @q^4554^0:15:0
+@q^4555^0:15:0
+@q^4556^0:15:0
 @q^4562^2:2:0
 @q^4564^2:2:0
 @q^4569^2:2:0
@@ -807,6 +817,7 @@ GoldScout-export 6^3898767bl3i0^40
 @q^12184^1:7:1
 @q^12202^1:7:1
 @q^12206^1:7:1
+@q^14606^2:4:0
 @q^15210^2:2:0
 @q^15234^2:2:0
 @q^15262^2:2:0
@@ -818,6 +829,7 @@ GoldScout-export 6^3898767bl3i0^40
 @q^211785^1:0:0
 @q^211786^1:0:0
 @q^213127^1:15:0
+@q^213543^1:0:0
 @q^213544^1:0:0
 @q^213546^1:0:0
 @q^216616^1:12:0
@@ -830,6 +842,7 @@ GoldScout-export 6^3898767bl3i0^40
 @q^248002^1:12:0
 @q^248003^1:12:0
 @q^248004^1:12:0
+@q^248690^1:0:1
 @q^248691^1:0:1
 @q^248692^1:0:1
 @q^248693^1:0:1
@@ -869,6 +882,7 @@ GoldScout-export 6^3898767bl3i0^40
 @m^1436^Páramos de Poniente
 @m^1441^Las Mil Agujas
 @m^1443^Desolace
+@m^1446^Tanaris
 @m^1453^Ciudad de Ventormenta
 @m^2548^Claros del Río
 @c^118^
@@ -2326,6 +2340,7 @@ GoldScout-export 6^3898767bl3i0^40
 @a^7874^349:1
 @a^10928^306:1,325:3,326:3
 @a^12922^306:2,325:3
+@a^14123^73:19,93:26,113:36,133:3
 @a^248362^109:1
 @a^248463^192:3,308:1
 @a^248464^308:1
