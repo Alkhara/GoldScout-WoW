@@ -1,4 +1,4 @@
-GoldScout-export 6^y2l3m73d9z0r^10
+GoldScout-export 6^y2l3m73d9z0r^11
 740^2^0^34^35^1435^0.1233^0.6206^2^Cría adolescente^4402:2:2,8146:1:1^
 743^1^0^42^43^1435^0.6155^0.5824^1^Verminte Caminasueños^^
 745^2^0^43^44^1435^0.7740^0.6996^2^Capitán Horrocrusto^^
@@ -63,6 +63,8 @@ GoldScout-export 6^y2l3m73d9z0r^10
 @i^6169^Costillar de Denteserra sin preparar
 @i^6190^Fragmento draenetista
 @i^6196^Cayada de Noboru
+@i^6289^Pargo de lodo boquilargo crudo
+@i^6291^Pececito luminoso crudo
 @i^6308^Siluro mostacherizo crudo
 @i^7098^Colmillo astillado
 @i^7454^Coraza de Caballero del médico
@@ -107,6 +109,8 @@ GoldScout-export 6^y2l3m73d9z0r^10
 @q^6169^1:12:0
 @q^6190^1:12:0
 @q^6196^0:2:0
+@q^6289^1:7:1
+@q^6291^1:7:1
 @q^6308^1:7:1
 @q^7098^0:15:0
 @q^7454^2:4:0
@@ -124,10 +128,12 @@ GoldScout-export 6^y2l3m73d9z0r^10
 @q^254432^2:15:0
 @q^258530^1:12:0
 @m^1411^Durotar
+@m^1412^Mulgore
 @m^1435^Pantano de las Penas
 @m^1440^Vallefresno
 @m^1443^Desolace
 @m^1446^Tanaris
+@m^1456^Cima del Trueno
 @m^2652^Shen'dralas
 @c^118^
 @c^724^
@@ -1277,6 +1283,9 @@ GoldScout-export 6^y2l3m73d9z0r^10
 @c^279959^
 @c^279960^
 @c^279961^
+@c^279965^
+@c^279966^
+@c^279967^
 @c^279968^
 @c^279972^
 @c^279973^
@@ -1324,5 +1333,7 @@ GoldScout-export 6^y2l3m73d9z0r^10
 @a^11937^290:1,310:1,330:3
 @a^12922^92:4
 @a^14356^253:1,254:1
+@f^1412^0^54^132^6289:26:26,6291:28:28^229:5,230:49
 @f^1440^0^3^130^6308:3:3^253:3
+@f^1456^0^2^131^6289:2:2^248:2
 @l^0^esMX
