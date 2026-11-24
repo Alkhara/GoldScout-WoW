@@ -1,7 +1,9 @@
-GoldScout-export 6^4lmiuh9k1k77^8
+GoldScout-export 6^4lmiuh9k1k77^9
 681^4^0^30^31^1434^0.3451^0.1204^4^Young Stranglethorn Tiger^1686:4:4,12202:1:1^
 683^2^0^30^31^1434^0.4096^0.1170^2^Young Panther^1686:2:2^
 1535^16^0^6^7^1420^0.3232^0.4812^16^Scarlet Warrior^159:1:1,1411:1:1,1416:1:1,1417:1:1,2070:1:1,2589:4:5,2635:1:1,2875:10:10,3013:1:1^
+1536^1^0^8^8^1420^0.5025^0.6880^1^Scarlet Missionary^1414:1:1^
+1537^4^0^8^9^1420^0.5149^0.6711^4^Scarlet Zealot^1181:1:1,1431:1:1^
 1543^2^0^7^7^1420^0.3480^0.4447^2^Vile Fin Puddlejumper^779:1:1^
 1544^5^0^8^9^1420^0.3506^0.4412^5^Vile Fin Minor Oracle^779:2:2,2635:1:1,278244:3:3^
 1545^1^0^9^9^1420^0.3529^0.4394^1^Vile Fin Muckdweller^779:1:1^
@@ -42,11 +44,14 @@ GoldScout-export 6^4lmiuh9k1k77^8
 @i^779^Shiny Seashell
 @i^805^Small Red Pouch
 @i^929^Healing Potion
+@i^1181^Scroll of Spirit
 @i^1205^Melon Juice
 @i^1411^Withered Staff
 @i^1413^Feeble Sword
+@i^1414^Cracked Sledge
 @i^1416^Rusty Hatchet
 @i^1417^Beaten Battle Axe
+@i^1431^Patchwork Pants
 @i^1686^Bristly Whisker
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
@@ -105,11 +110,14 @@ GoldScout-export 6^4lmiuh9k1k77^8
 @q^779^0:15:0
 @q^805^1:1:0
 @q^929^1:0:0
+@q^1181^1:0:0
 @q^1205^1:0:0
 @q^1411^0:2:0
 @q^1413^0:2:0
+@q^1414^0:2:0
 @q^1416^0:2:0
 @q^1417^0:2:0
+@q^1431^0:4:0
 @q^1686^0:15:0
 @q^1707^1:0:0
 @q^1708^1:0:0
@@ -1773,6 +1781,8 @@ GoldScout-export 6^4lmiuh9k1k77^8
 @a^681^46:3,47:1
 @a^683^48:2
 @a^1535^166:1,185:1,186:7,187:3,206:4
+@a^1536^270:1
+@a^1537^270:4
 @a^1543^166:1,167:1
 @a^1544^166:3,167:2
 @a^1545^167:1

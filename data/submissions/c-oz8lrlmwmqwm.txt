@@ -1,4 +1,4 @@
-GoldScout-export 6^oz8lrlmwmqwm^10
+GoldScout-export 6^oz8lrlmwmqwm^11
 588^18^0^34^35^1434^0.2538^0.1214^18^Bloodscalp Scout^1710:1:1,2592:1:2,2735:1:1,2749:1:1,3385:1:1,3771:3:3,3901:5:5,4306:2:2,7357:1:1^
 595^18^0^34^35^1434^0.2561^0.1188^18^Bloodscalp Hunter^1708:1:1,2592:1:2,2725:1:1,3771:2:2,3901:3:3,4306:5:7,7457:1:1^
 667^1^0^39^39^1434^0.4351^0.3478^1^Skullsplitter Warrior^^
@@ -106,6 +106,8 @@ GoldScout-export 6^oz8lrlmwmqwm^10
 261710^2^0^39^40^2548^0.4895^0.4861^2^Twilight Brute^4306:1:1,6438:1:1^
 261711^11^0^38^39^2548^0.4762^0.5028^11^Empowered Brute^4306:3:4,6438:1:1^
 262169^16^0^39^41^2548^0.4797^0.4972^16^Twilight Ritualist^4017:1:1,4306:2:5,4338:4:5,5431:2:2^
+262473^3^0^39^40^2548^0.2973^0.7084^3^Cinderscale Whelp^4460:2:2,9901:1:1^
+262477^2^0^41^42^2548^0.2951^0.7123^2^Cinderscale Warrior^^
 263071^1^0^42^42^2548^0.5872^0.3814^1^Blademaster Kaijo^271425:1:1^
 263196^3^0^0^0^0^0.0000^0.0000^0^^4306:1:3,270343:1:1^
 263307^4^0^37^38^2548^0.6078^0.5868^4^Glade Viper^6444:1:1,6826:1:1^
@@ -163,6 +165,7 @@ GoldScout-export 6^oz8lrlmwmqwm^10
 @i^4338^Mageweave Cloth
 @i^4416^Schematic: Goblin Land Mine
 @i^4424^Scroll of Spirit III
+@i^4460^Ripped Wing Webbing
 @i^4469^Rod of Order
 @i^4479^Burning Charm
 @i^4480^Thundering Charm
@@ -223,6 +226,7 @@ GoldScout-export 6^oz8lrlmwmqwm^10
 @i^9855^Archer's Belt of the Bear
 @i^9859^Archer's Cap of the Bandit
 @i^9870^Renegade Circlet of Agility
+@i^9901^Jazeraint Belt of the Monkey
 @i^10762^Robes of the Lich
 @i^10764^Deathchill Armor
 @i^10767^Savage Boar's Guard
@@ -325,6 +329,7 @@ GoldScout-export 6^oz8lrlmwmqwm^10
 @q^4338^1:7:1
 @q^4416^2:9:0
 @q^4424^1:0:0
+@q^4460^0:15:0
 @q^4469^1:12:0
 @q^4479^1:0:0
 @q^4480^1:0:0
@@ -385,6 +390,7 @@ GoldScout-export 6^oz8lrlmwmqwm^10
 @q^9855^2:4:0
 @q^9859^2:4:0
 @q^9870^2:4:0
+@q^9901^2:4:0
 @q^10762^3:4:0
 @q^10764^3:4:0
 @q^10767^3:4:0
@@ -1208,6 +1214,8 @@ GoldScout-export 6^oz8lrlmwmqwm^10
 @a^261710^189:1,190:1
 @a^261711^189:4,209:7
 @a^262169^189:8,190:2,209:6
+@a^262473^285:2,286:1
+@a^262477^285:2
 @a^263071^151:1
 @a^263307^231:1,232:2,252:1
 @a^263315^211:1

@@ -1,4 +1,4 @@
-GoldScout-export 6^gbx4cjirowt2^2
+GoldScout-export 6^gbx4cjirowt2^3
 3809^1^0^21^22^1440^0.3874^0.3653^1^Ashenvale Bear^11406:1:1^
 3844^7^0^23^24^1440^0.4049^0.3298^7^Healing Ward IV^^
 3921^17^0^23^24^1440^0.3991^0.3227^17^Thistlefur Ursa^1774:1:1,1799:1:1,2592:2:4,4306:1:1,4538:1:1,16648:1:1,16651:1:1^
@@ -14,9 +14,9 @@ GoldScout-export 6^gbx4cjirowt2^2
 4095^1^0^27^27^1441^0.4365^0.3513^1^Galak Mauler^4306:1:1,248689:1:1^
 4096^10^0^24^25^1441^0.4306^0.3845^10^Galak Windchaser^4306:4:6,248705:1:1^
 4097^5^0^26^27^1441^0.4244^0.3455^5^Galak Stormer^2592:1:1,4306:1:1^
-4100^8^0^28^29^1441^0.2666^0.5328^8^Screeching Harpy^1205:1:1,1478:1:1,2592:1:2,4306:1:1,5636:1:1,17056:1:1^
-4101^8^0^29^30^1441^0.2655^0.5316^8^Screeching Roguefeather^1205:1:1,2221:1:1,2592:2:4,3770:1:1,5117:1:1,5635:1:1,17056:1:1,251385:1:1^
-4104^1^0^30^30^1441^0.2598^0.5527^1^Screeching Windcaller^^
+4100^18^0^28^29^1441^0.2693^0.5067^18^Screeching Harpy^1205:1:1,1478:1:1,2592:4:7,4306:1:1,5117:3:3,5635:1:1,5636:1:1,17056:4:4,248706:1:1^
+4101^20^0^29^30^1441^0.2699^0.4979^20^Screeching Roguefeather^1205:1:1,2221:1:1,2592:5:8,3770:2:2,4306:2:3,5117:5:5,5635:2:2,15337:1:1,17056:5:5,251385:1:1^
+4104^2^0^30^30^1441^0.2612^0.5530^2^Screeching Windcaller^^
 4113^1^0^28^28^1441^0.5733^0.5723^1^Gravelsnout Digger^5842:1:1^
 4490^1^0^31^31^1441^0.2641^0.5587^1^Grenka Bloodscreech^5843:1:1^
 4788^1^0^20^21^1414^0.4388^0.3507^1^Fallenroot Satyr^1738:1:1^
@@ -86,6 +86,7 @@ GoldScout-export 6^gbx4cjirowt2^2
 @i^14165^Pagan Britches of Fire Protection
 @i^14375^Sanguine Cuffs
 @i^14562^Prospector's Chestpiece
+@i^15337^Wrangler's Wraps of the Bear
 @i^16304^Shadumbra's Head
 @i^16645^Shredder Operating Manual - Page 1
 @i^16646^Shredder Operating Manual - Page 2
@@ -101,6 +102,7 @@ GoldScout-export 6^gbx4cjirowt2^2
 @i^17057^Shiny Fish Scales
 @i^248689^Waylaid Crate: Journeyman Curiosities
 @i^248705^Waylaid Crate: Journeyman Fabrics
+@i^248706^Waylaid Crate: Journeyman Ingots
 @i^251385^Plans: Hard Gold Cuirass
 @i^252815^Pattern: Trapper's Leather Helm
 @i^273839^Spiked Shell Band
@@ -149,6 +151,7 @@ GoldScout-export 6^gbx4cjirowt2^2
 @q^14165^2:4:0
 @q^14375^2:4:0
 @q^14562^2:4:0
+@q^15337^2:4:0
 @q^16304^2:12:0
 @q^16645^1:12:0
 @q^16646^1:12:0
@@ -164,6 +167,7 @@ GoldScout-export 6^gbx4cjirowt2^2
 @q^17057^1:15:0
 @q^248689^1:0:1
 @q^248705^2:0:1
+@q^248706^2:0:1
 @q^251385^2:9:0
 @q^252815^3:9:0
 @q^273839^3:4:0
@@ -187,9 +191,9 @@ GoldScout-export 6^gbx4cjirowt2^2
 @a^4095^148:1
 @a^4096^148:6,168:3,169:1
 @a^4097^128:4,148:1
-@a^4100^185:2,205:3,225:3
-@a^4101^185:2,205:2,225:4
-@a^4104^225:1
+@a^4100^185:11,205:3,225:4
+@a^4101^185:14,205:2,225:4
+@a^4104^225:2
 @a^4113^231:1
 @a^4490^225:1
 @a^4788^148:1
