@@ -1,4 +1,4 @@
-GoldScout-export 6^3i3wchbl9rn8^9
+GoldScout-export 6^3i3wchbl9rn8^10
 587^1^0^33^34^1434^0.3332^0.1686^1^Guerrier Bloodscalp^1519:1:1^
 595^4^0^34^35^1434^0.2578^0.1203^4^Chasseur Bloodscalp^^
 597^4^0^36^37^1434^0.2438^0.1014^4^Berserker Bloodscalp^1519:1:1,2730:1:1,2732:1:1,4306:1:1^
@@ -10,6 +10,7 @@ GoldScout-export 6^3i3wchbl9rn8^9
 684^9^0^37^38^1434^0.4844^0.2267^9^Panthère Ombregueule^5637:1:1^
 685^2^0^33^34^1434^0.2668^0.1672^2^Raptor de Strangleronce^3685:1:1,4461:1:1,12184:1:1^
 686^13^0^35^36^1434^0.3508^0.2342^13^Raptor flagellant^1696:6:6,3685:7:7,4461:5:5,4586:1:1,5637:1:1,12184:9:9,248710:1:1^
+691^3^0^36^37^1434^0.2197^0.2195^3^Elémentaire d'eau mineur^1706:1:1,3923:1:1,4791:1:5^
 694^1^0^33^34^1434^0.3384^0.1631^1^Lanceur de haches Bloodscalp^4306:1:1^
 697^2^0^34^34^1434^0.3382^0.1549^2^Chaman Bloodscalp^1519:1:1,4306:1:2^
 699^2^0^34^35^1434^0.2517^0.1313^2^Belluaire Bloodscalp^3771:1:1,4306:1:2^
@@ -50,6 +51,7 @@ GoldScout-export 6^3i3wchbl9rn8^9
 @i^1687^Griffe rétractile
 @i^1696^Griffe de raptor
 @i^1702^Epine dorsale intacte de basilic
+@i^1706^Eclats de Profondazur
 @i^1707^Brie de Hurlevent
 @i^1708^Nectar sucré
 @i^1710^Potion de soins supérieure
@@ -73,11 +75,13 @@ GoldScout-export 6^3i3wchbl9rn8^9
 @i^3818^Pâlerette
 @i^3820^Etouffante
 @i^3879^Patte de Sin'Dall
+@i^3923^Bracelets d'élémentaire d'eau
 @i^4106^Cristal réduit
 @i^4306^Etoffe de soie
 @i^4338^Etoffe de tisse-mage
 @i^4461^Peau de raptor
 @i^4586^Peau lisse de raptor
+@i^4791^Eau enchantée
 @i^5637^Grand croc
 @i^6308^Poisson-chat moustachu cru
 @i^6358^Bouche-noire huileux
@@ -111,6 +115,7 @@ GoldScout-export 6^3i3wchbl9rn8^9
 @q^1687^0:15:0
 @q^1696^0:15:0
 @q^1702^0:15:0
+@q^1706^0:15:0
 @q^1707^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
@@ -134,11 +139,13 @@ GoldScout-export 6^3i3wchbl9rn8^9
 @q^3818^1:7:1
 @q^3820^1:7:1
 @q^3879^1:12:0
+@q^3923^1:12:0
 @q^4106^1:12:0
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4461^1:7:1
 @q^4586^0:15:0
+@q^4791^1:0:0
 @q^5637^1:7:1
 @q^6308^1:7:1
 @q^6358^1:7:1
@@ -537,6 +544,7 @@ GoldScout-export 6^3i3wchbl9rn8^9
 @a^684^89:7,90:1,109:1
 @a^685^65:2
 @a^686^67:1,86:6,87:4,106:1,107:1
+@a^691^84:3
 @a^694^66:1
 @a^697^66:2
 @a^699^44:1,45:1
