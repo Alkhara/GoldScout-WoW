@@ -1,4 +1,4 @@
-GoldScout-export 6^oymve5zznzkj^21
+GoldScout-export 6^oymve5zznzkj^22
 92^13^0^39^40^1418^0.4155^0.7890^13^Rock Elemental^4552:2:2,4553:3:3,4784:3:3,7067:1:1,7848:5:5,7909:1:1,7912:1:1,8150:1:1,213547:1:1^
 232^2^0^23^23^1424^0.3313^0.3496^2^Farmer Ray^1821:1:1,2592:1:1,4306:1:1,4538:1:1^
 597^6^0^36^37^1434^0.2231^0.1144^6^Bloodscalp Berserker^4306:2:3^
@@ -516,13 +516,19 @@ GoldScout-export 6^oymve5zznzkj^21
 @i^12208^Tender Wolf Meat
 @i^12691^Pattern: Wildthorn Mail
 @i^13422^Stonescale Eel
+@i^13446^Major Healing Potion
 @i^13754^Raw Glossy Mightfish
 @i^13755^Raw Winter Squid
+@i^13757^Lightning Eel
 @i^13758^Raw Redgill
 @i^13759^Raw Nightfin Snapper
+@i^13760^Raw Sunscale Salmon
 @i^13875^Ironbound Locked Chest
 @i^13876^40 Pound Yellowtail
 @i^13877^47 Pound Yellowtail
+@i^13889^Raw Whitescale Salmon
+@i^13890^Raw Plated Armorfish
+@i^13903^22 Pound Salmon
 @i^14268^Gaea's Cuffs of Fire Protection
 @i^14436^Windchaser Coronet
 @i^14571^Bristlebark Cape
@@ -889,13 +895,19 @@ GoldScout-export 6^oymve5zznzkj^21
 @q^12208^1:7:1
 @q^12691^2:9:0
 @q^13422^1:7:1
+@q^13446^1:0:0
 @q^13754^1:7:1
 @q^13755^1:0:1
+@q^13757^1:7:1
 @q^13758^1:7:1
 @q^13759^1:7:1
+@q^13760^1:7:1
 @q^13875^1:15:0
 @q^13876^1:15:0
 @q^13877^1:15:0
+@q^13889^1:7:1
+@q^13890^1:12:1
+@q^13903^1:15:0
 @q^14268^2:4:0
 @q^14436^2:4:0
 @q^14571^2:4:0
@@ -1001,6 +1013,7 @@ GoldScout-export 6^oymve5zznzkj^21
 @m^1417^Arathi Highlands
 @m^1418^Badlands
 @m^1421^Silverpine Forest
+@m^1423^Eastern Plaguelands
 @m^1424^Hillsbrad Foothills
 @m^1425^The Hinterlands
 @m^1434^Stranglethorn Vale
@@ -1899,6 +1912,7 @@ GoldScout-export 6^oymve5zznzkj^21
 @a^268831^154:2
 @a^270664^247:5
 @a^270667^269:3,290:1
+@f^1423^0^77^300^13446:1:1,13757:6:6,13758:3:3,13759:9:9,13760:10:10,13889:35:35,13890:12:12,13903:1:1^290:77
 @f^1434^0^218^201^4603:53:53,6357:2:2,6358:23:23,6359:34:34,6362:103:103,13422:1:1,16969:1:1,21228:2:2^145:3,165:3,204:1,265:6,285:154,305:51
 @f^1435^0^8^225^4603:1:1,6358:1:1,6362:6:6,16970:1:1^36:8
 @f^1442^0^34^182^6289:14:14,6308:20:20^249:34

@@ -1,4 +1,18 @@
-GoldScout-export 6^a6fk3njokyoo^2
+GoldScout-export 6^a6fk3njokyoo^3
+2554^1^0^32^33^1417^0.7303^0.6459^1^Witherbark Axe Thrower^4306:1:1^
+2555^1^0^33^33^1417^0.7303^0.6459^1^Witherbark Witch Doctor^4306:1:2^
+2556^1^0^34^34^1417^0.7233^0.6393^1^Witherbark Headhunter^4306:1:1^
+2653^1^0^44^45^1425^0.3585^0.6610^1^Witherbark Sadist^4025:1:1,9259:1:1^
+2654^1^0^45^45^1425^0.3675^0.7300^1^Witherbark Caller^^
+2686^1^0^44^45^1425^0.3569^0.6990^1^Witherbark Broodguard^4585:1:1^
+3275^1^0^15^15^1413^0.5310^0.4462^1^Kolkar Marauder^^
+3282^3^0^15^16^1413^0.5619^0.0860^3^Venture Co. Mercenary^2287:1:1,2589:2:4^
+3284^2^0^14^14^1413^0.5622^0.0860^2^Venture Co. Drudger^2589:1:1^
+3445^1^0^18^18^1413^0.5624^0.0859^1^Supervisor Lugwizzle^^
+5836^1^0^19^19^1413^0.5630^0.0874^1^Engineer Whirleygig^285366:1:1^
+5838^1^0^17^17^1413^0.5305^0.4457^1^Brokespear^7559:1:1^
+7767^1^0^45^45^1425^0.3675^0.7300^1^Witherbark Felhunter^^
+7768^2^0^25^25^1425^0.3573^0.7013^2^Witherbark Bloodling^^
 255849^6^0^39^41^2548^0.6691^0.1678^6^Bolder'ok Magus^4338:1:1,4599:2:2^
 255850^13^0^41^44^2548^0.6680^0.1751^13^Bolder'ok Brute^1645:1:1,3928:1:1,4306:3:5,4338:3:5,213547:1:1^
 256795^8^0^42^43^2548^0.2894^0.4370^8^Twilight Fanatic^4306:2:3,5431:1:1,8749:1:1,213543:1:1^
@@ -17,6 +31,8 @@ GoldScout-export 6^a6fk3njokyoo^2
 272228^4^0^36^37^2548^0.5523^0.7433^4^Harvest Sentry^4306:2:6,5427:1:1^
 @i^770^Pointy Crocolisk Tooth
 @i^1645^Moonberry Juice
+@i^2287^Haunch of Meat
+@i^2589^Linen Cloth
 @i^3671^Lifeless Skull
 @i^3928^Superior Healing Potion
 @i^3964^Thick Cloak
@@ -26,13 +42,16 @@ GoldScout-export 6^a6fk3njokyoo^2
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4555^Thick Scaly Tail
+@i^4585^Dripping Spider Mandible
 @i^4599^Cured Ham Steak
 @i^5427^Crude Pocket Watch
 @i^5429^A Pretty Rock
 @i^5431^Empty Hip Flask
 @i^6432^Imperial Cloak
 @i^6438^Dull Elemental Bracer
+@i^7559^Runic Cane
 @i^8749^Crochet Hat
+@i^9259^Troll Tribal Necklace
 @i^213543^Scroll: UPDOG
 @i^213544^Scroll: TOPAZ YORAK
 @i^213545^Scroll: PEATCHY ATTAX
@@ -41,8 +60,11 @@ GoldScout-export 6^a6fk3njokyoo^2
 @i^265821^Twilight Key
 @i^265837^Kilgar's Head
 @i^272190^Gronok's Key
+@i^285366^Whirleygig's Supply Stash
 @q^770^0:15:0
 @q^1645^1:0:0
+@q^2287^1:0:0
+@q^2589^1:7:1
 @q^3671^0:15:0
 @q^3928^1:0:0
 @q^3964^0:4:0
@@ -52,13 +74,16 @@ GoldScout-export 6^a6fk3njokyoo^2
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4555^0:15:0
+@q^4585^0:15:0
 @q^4599^1:0:0
 @q^5427^0:15:0
 @q^5429^0:15:0
 @q^5431^0:15:0
 @q^6432^2:4:0
 @q^6438^0:15:0
+@q^7559^2:4:0
 @q^8749^0:4:0
+@q^9259^1:15:0
 @q^213543^1:0:0
 @q^213544^1:0:0
 @q^213545^1:0:0
@@ -67,6 +92,10 @@ GoldScout-export 6^a6fk3njokyoo^2
 @q^265821^1:12:0
 @q^265837^1:12:0
 @q^272190^1:12:0
+@q^285366^1:0:0
+@m^1413^The Barrens
+@m^1417^Arathi Highlands
+@m^1425^The Hinterlands
 @m^2548^Riverglades
 @c^118^
 @c^724^
@@ -787,6 +816,20 @@ GoldScout-export 6^a6fk3njokyoo^2
 @c^279985^
 @c^279987^
 @c^286152^
+@a^2554^254:1
+@a^2555^254:1
+@a^2556^254:1
+@a^2653^267:1
+@a^2654^287:1
+@a^2686^267:1
+@a^3275^170:1
+@a^3282^31:3
+@a^3284^31:2
+@a^3445^31:1
+@a^5836^31:1
+@a^5838^170:1
+@a^7767^287:1
+@a^7768^287:2
 @a^255849^53:2,73:4
 @a^255850^53:3,73:8,93:2
 @a^256795^165:6,185:2

@@ -1,4 +1,7 @@
-GoldScout-export 6^rueird6c5u9f^42
+GoldScout-export 6^rueird6c5u9f^43
+1783^8^0^50^51^1422^0.3619^0.5715^8^Despellejador esquelético^14047:1:1^
+1784^2^0^51^52^1422^0.3583^0.5692^2^Hechicero esquelético^8766:1:1,14047:2:4^
+1791^3^0^50^52^1422^0.3592^0.5761^3^Necrófago esclavizante^14047:1:2^
 2253^1^0^36^36^1416^0.4844^0.5757^1^Tosco Aplastacresta^7441:1:1^
 2254^17^0^36^37^1416^0.4344^0.4679^17^Aplastador Aplastacresta^3771:1:1,3785:1:1,3864:1:1,4306:6:18,6413:1:1^
 2255^2^0^37^37^1416^0.4562^0.4672^2^Mago Aplastacresta^4338:1:3^
@@ -419,6 +422,7 @@ GoldScout-export 6^rueird6c5u9f^42
 @i^8747^Gorro de cuero endurecido
 @i^8749^Sombrero de ganchillo
 @i^8751^Almófar superpuesto
+@i^8766^Rocío de gloria matinal
 @i^8831^Loto cárdeno
 @i^8838^Solea
 @i^8952^Codorniz asada
@@ -480,6 +484,7 @@ GoldScout-export 6^rueird6c5u9f^42
 @i^12208^Carne de lobo tierna
 @i^13100^Botas de Furen
 @i^13109^Manteo de llama negra
+@i^13422^Anguila escama pétrea
 @i^13754^Vigorpez lustroso crudo
 @i^14047^Paño rúnico
 @i^14258^Cordón de tejido de sangre del anciano
@@ -545,6 +550,7 @@ GoldScout-export 6^rueird6c5u9f^42
 @i^21150^Valija reforzada con hierro
 @i^21151^Ron Rumsey etiqueta negra
 @i^21153^Sabiola cruda superior
+@i^21228^Valija reforzada con mitril
 @i^21547^Receta: elixir de poder sagrado
 @i^213543^Pergamino: QUÉONDA
 @i^213544^Pergamino: EZFOO KATASI
@@ -728,6 +734,7 @@ GoldScout-export 6^rueird6c5u9f^42
 @q^8747^0:4:0
 @q^8749^0:4:0
 @q^8751^0:4:0
+@q^8766^1:0:0
 @q^8831^1:7:1
 @q^8838^1:7:1
 @q^8952^1:0:0
@@ -789,6 +796,7 @@ GoldScout-export 6^rueird6c5u9f^42
 @q^12208^1:7:1
 @q^13100^3:4:0
 @q^13109^3:4:0
+@q^13422^1:7:1
 @q^13754^1:7:1
 @q^14047^1:7:1
 @q^14258^2:4:0
@@ -854,6 +862,7 @@ GoldScout-export 6^rueird6c5u9f^42
 @q^21150^1:15:0
 @q^21151^1:0:0
 @q^21153^1:7:1
+@q^21228^1:15:0
 @q^21547^2:9:0
 @q^213543^1:0:0
 @q^213544^1:0:0
@@ -896,9 +905,11 @@ GoldScout-export 6^rueird6c5u9f^42
 @m^1416^Montañas de Alterac
 @m^1418^Tierras Inhóspitas
 @m^1419^Las Tierras Devastadas
+@m^1422^Tierras de la Peste del Oeste
 @m^1425^Tierras del Interior
 @m^1427^La Garganta de Fuego
 @m^1428^Las Estepas Ardientes
+@m^1434^Vega de Tuercespina
 @m^1443^Desolace
 @m^1444^Feralas
 @m^1445^Marjal Revolcafango
@@ -1070,6 +1081,9 @@ GoldScout-export 6^rueird6c5u9f^42
 @c^279981^
 @c^279982^
 @c^286152^
+@a^1783^227:8
+@a^1784^227:2
+@a^1791^227:2,247:1
 @a^2253^229:1
 @a^2254^168:1,188:12,189:4
 @a^2255^189:2
@@ -1272,6 +1286,7 @@ GoldScout-export 6^rueird6c5u9f^42
 @a^269254^111:1,249:1
 @a^270667^248:1,249:1,269:5
 @f^1413^0^10^208^6303:1:1,6358:7:7,6361:1:1,21150:1:1^232:10
+@f^1434^0^13^225^6358:1:1,6362:5:5,13422:5:7,21151:1:2,21228:1:1^126:11,184:2
 @f^1445^0^228^184^3820:13:26,4603:20:20,6303:2:2,6355:1:1,6358:62:62,6359:51:51,6361:3:3,6362:49:49,21150:22:22,21151:5:8^30:6,50:44,51:21,71:42,72:20,92:19,112:27,129:19,132:13,152:2,153:4,169:4,172:5,173:2
 @f^1446^0^4^178^6358:3:3,13754:1:1^93:4
 @f^2548^0^24^179^3820:1:2,6308:3:3,8365:8:8,21150:1:1,21153:11:11^134:9,135:7,155:8

@@ -1,4 +1,4 @@
-GoldScout-export 6^iyirxku9bmhk^6
+GoldScout-export 6^iyirxku9bmhk^7
 30^1^0^6^6^1429^0.2797^0.6734^1^Forest Spider^5465:1:2^
 94^4^0^5^6^1429^0.4147^0.5670^4^Defias Cutpurse^1427:1:1^
 122^1^0^18^18^1436^0.3794^0.7860^1^Defias Highwayman^^
@@ -35,8 +35,8 @@ GoldScout-export 6^iyirxku9bmhk^6
 2167^9^0^12^13^1439^0.3968^0.5534^9^Blackwood Pathfinder^2589:1:1^
 2168^12^0^16^17^1439^0.5168^0.3400^12^Blackwood Warrior^1179:1:1,1210:1:1,1787:1:1,2589:1:1,2592:4:6,3309:1:1,4537:1:1,15016:1:1^
 2169^6^0^17^18^1439^0.5150^0.3412^6^Blackwood Totemic^2589:1:1,4537:1:1^
-2170^6^0^18^19^1439^0.4385^0.8436^6^Blackwood Ursa^2589:1:2,2592:4:5,4537:1:1^
-2171^3^0^19^20^1439^0.4294^0.8315^3^Blackwood Shaman^1769:1:1,2592:2:2,4537:1:1^
+2170^9^0^18^19^1439^0.4414^0.8500^9^Blackwood Ursa^2589:1:2,2592:5:6,4537:1:1^
+2171^5^0^19^20^1439^0.4360^0.8426^5^Blackwood Shaman^1769:1:1,2592:4:4,4537:1:1^
 2179^5^0^15^16^1439^0.5508^0.3458^5^Stormscale Wave Rider^5523:1:1,6289:1:2^
 2180^5^0^16^17^1439^0.5518^0.3485^5^Stormscale Siren^5523:1:1,6289:2:3^
 2181^5^0^18^19^1439^0.5794^0.2037^5^Stormscale Myrmidon^5523:1:1,6211:1:1,14364:1:1,279276:1:1^
@@ -60,6 +60,8 @@ GoldScout-export 6^iyirxku9bmhk^6
 2354^1^0^22^23^1424^0.5399^0.4489^1^Vicious Gray Bear^2940:1:1,3702:1:1^
 2384^2^0^23^24^1424^0.5301^0.4575^2^Starving Mountain Lion^5136:2:2^
 3662^2^0^17^17^1439^0.5667^0.2678^2^Delmanis the Hated^2592:2:3^
+3819^4^0^20^21^1440^0.3406^0.4243^4^Wildthorn Stalker^2251:1:1,3174:3:3,3182:1:1,248689:1:1^
+3925^1^0^23^24^1440^0.3201^0.4312^1^Thistlefur Avenger^^
 3947^2^0^0^0^0^0.0000^0.0000^0^^1812:1:1,2592:1:2^
 4416^4^0^0^0^0^0.0000^0.0000^0^^2589:1:1,9775:1:1,10402:1:1^
 4417^2^0^0^0^0^0.0000^0.0000^0^^^
@@ -129,6 +131,7 @@ GoldScout-export 6^iyirxku9bmhk^6
 @i^2214^Wooden Buckler
 @i^2216^Simple Buckler
 @i^2217^Rectangular Shield
+@i^2251^Gooey Spider Leg
 @i^2287^Haunch of Meat
 @i^2455^Minor Mana Potion
 @i^2589^Linen Cloth
@@ -150,6 +153,7 @@ GoldScout-export 6^iyirxku9bmhk^6
 @i^3170^Large Bear Tooth
 @i^3173^Bear Meat
 @i^3174^Spider Ichor
+@i^3182^Spider's Silk
 @i^3184^Hook Dagger of Spirit
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
@@ -213,6 +217,7 @@ GoldScout-export 6^iyirxku9bmhk^6
 @i^17057^Shiny Fish Scales
 @i^211787^Scroll: LOWER PING WHOMEVER
 @i^248682^Waylaid Crate: Apprentice Herbs
+@i^248689^Waylaid Crate: Journeyman Curiosities
 @i^252022^Galestrider Jerky
 @i^252028^Fresh Gustberry Bread
 @i^252030^Pungent Skycheddar
@@ -286,6 +291,7 @@ GoldScout-export 6^iyirxku9bmhk^6
 @q^2214^0:4:0
 @q^2216^0:4:0
 @q^2217^0:4:0
+@q^2251^1:7:1
 @q^2287^1:0:0
 @q^2455^1:0:0
 @q^2589^1:7:1
@@ -307,6 +313,7 @@ GoldScout-export 6^iyirxku9bmhk^6
 @q^3170^0:15:0
 @q^3173^1:7:1
 @q^3174^1:7:1
+@q^3182^1:7:1
 @q^3184^2:2:0
 @q^3299^0:15:0
 @q^3300^0:15:0
@@ -370,6 +377,7 @@ GoldScout-export 6^iyirxku9bmhk^6
 @q^17057^1:15:0
 @q^211787^1:0:0
 @q^248682^1:0:1
+@q^248689^1:0:1
 @q^252022^1:0:0
 @q^252028^1:0:0
 @q^252030^1:0:0
@@ -396,6 +404,7 @@ GoldScout-export 6^iyirxku9bmhk^6
 @m^1433^Redridge Mountains
 @m^1436^Westfall
 @m^1439^Darkshore
+@m^1440^Ashenvale
 @m^2521^Zephras Isle
 @c^724^
 @c^733^
@@ -1627,8 +1636,8 @@ GoldScout-export 6^iyirxku9bmhk^6
 @a^2167^207:4,227:3,228:2
 @a^2168^130:10,150:2
 @a^2169^130:5,150:1
-@a^2170^328:4,348:2
-@a^2171^328:3
+@a^2170^328:4,348:5
+@a^2171^328:3,348:2
 @a^2179^130:2,150:2,151:1
 @a^2180^131:3,150:1,151:1
 @a^2181^71:2,91:3
@@ -1652,6 +1661,8 @@ GoldScout-export 6^iyirxku9bmhk^6
 @a^2354^170:1
 @a^2384^170:1,190:1
 @a^3662^111:2
+@a^3819^166:2,167:1,186:1
+@a^3925^166:1
 @a^10373^130:2
 @a^14271^242:1
 @a^251245^270:1,289:1

@@ -1,4 +1,4 @@
-GoldScout-export 6^wusrkz5fplp1^18
+GoldScout-export 6^wusrkz5fplp1^19
 587^6^2^33^34^1434^0.3273^0.1648^6^Bloodscalp Warrior^1520:1:1,2592:1:1,4306:3:3^16883:1:1
 667^8^0^39^40^1434^0.4509^0.3669^8^Skullsplitter Warrior^1520:2:2,1524:3:3,4306:3:7,8151:2:2^
 669^2^0^41^42^1434^0.4652^0.3868^2^Skullsplitter Hunter^1524:1:1,4306:1:2^
@@ -21,6 +21,7 @@ GoldScout-export 6^wusrkz5fplp1^18
 977^2^0^32^33^1434^0.4484^0.1030^2^Kurzen War Panther^1686:1:1,1687:1:1^
 978^11^0^38^38^1434^0.4929^0.0500^11^Kurzen Subchief^1710:1:1,4306:2:3,4338:1:1,15234:1:1^
 979^1^0^38^38^1434^0.4925^0.0639^1^Kurzen Shadow Hunter^3827:1:1,4338:1:1^
+1027^1^0^24^25^1437^0.1402^0.3282^1^Bluegill Warrior^730:1:1,5524:1:1,17057:1:1^
 1114^2^0^37^38^1434^0.4302^0.2937^2^Jungle Thunderer^2799:2:2,4096:1:1^
 1151^1^0^36^36^1434^0.2663^0.1938^1^Saltwater Crocolisk^770:1:1,3667:1:1^
 2246^3^0^38^39^1416^0.4055^0.1743^3^Syndicate Assassin^5113:1:1^
@@ -30,6 +31,10 @@ GoldScout-export 6^wusrkz5fplp1^18
 2253^2^0^36^36^1416^0.4827^0.5009^2^Crushridge Brute^^
 2356^1^0^25^26^1424^0.3139^0.2476^1^Elder Gray Bear^3730:1:1^
 2406^1^0^32^33^1416^0.3111^0.7222^1^Mountain Lion^^
+2723^11^0^38^39^1418^0.4072^0.2669^11^Stone Golem^4552:1:1,4553:1:1,7912:1:2,8150:2:2,9890:1:1^
+2742^17^3^38^39^1418^0.4146^0.2785^17^Shadowforge Chanter^3784:1:1,4306:5:13,4338:2:2,4544:1:1^4539:1:1
+2743^17^2^38^39^1418^0.4171^0.2868^17^Shadowforge Warrior^1708:1:1,3802:1:1,4306:5:11,4544:1:1^
+3844^1^0^25^25^1437^0.1676^0.3083^1^Healing Ward IV^^
 3976^1^0^0^0^0^0.0000^0.0000^0^^7726:1:1^
 3983^16^0^0^0^0^0.0000^0.0000^0^^1707:1:1,1710:1:1,2592:1:5,3804:1:1,3817:1:1,3864:1:1,4306:2:3,7682:6:6,7683:3:3,274290:3:3^
 4096^1^0^24^25^1441^0.4935^0.4145^1^Galak Windchaser^4306:1:1^
@@ -158,6 +163,7 @@ GoldScout-export 6^wusrkz5fplp1^18
 264773^1^0^0^0^1415^0.0000^0.0000^0^^286430:1:1^
 270664^3^0^37^38^2548^0.3842^0.5929^3^Venomweb Spitter^1074:1:1,4337:1:1,4585:1:1,5637:1:1,10285:2:2,12205:1:1^
 272228^3^0^36^37^2548^0.5430^0.7501^3^Harvest Sentry^4306:2:5,248690:1:1^
+@i^730^Murloc Eye
 @i^770^Pointy Crocolisk Tooth
 @i^929^Healing Potion
 @i^1074^Hard Spider Leg Tip
@@ -236,6 +242,8 @@ GoldScout-export 6^wusrkz5fplp1^18
 @i^4539^Goldenbark Apple
 @i^4542^Moist Cornbread
 @i^4544^Mulgore Spice Bread
+@i^4552^Smooth Stone Chip
+@i^4553^Jagged Piece of Stone
 @i^4582^Soft Bushy Tail
 @i^4583^Thick Furry Mane
 @i^4585^Dripping Spider Mandible
@@ -275,9 +283,11 @@ GoldScout-export 6^wusrkz5fplp1^18
 @i^7726^Aegis of the Scarlet Commander
 @i^7909^Aquamarine
 @i^7910^Star Ruby
+@i^7912^Solid Stone
 @i^7976^Plans: Mithril Shield Spike
 @i^7989^Plans: Mithril Spurs
 @i^8146^Wicked Claw
+@i^8150^Deeprock Salt
 @i^8151^Flask of Mojo
 @i^8153^Wildvine
 @i^8158^Jouster's Gauntlets
@@ -290,6 +300,7 @@ GoldScout-export 6^wusrkz5fplp1^18
 @i^9785^Raider's Bracers of Nature Protection
 @i^9822^Durable Cape of Strength
 @i^9835^Scaled Leather Tunic of the Whale
+@i^9890^Huntsman's Cape of Stamina
 @i^9896^Jazeraint Bracers of the Bear
 @i^9973^Embossed Plate Boots of Intellect
 @i^10285^Shadow Silk
@@ -375,6 +386,7 @@ GoldScout-export 6^wusrkz5fplp1^18
 @i^276894^Ancient Gurubashi Idol
 @i^281052^Ombassa's Hide
 @i^286430^Toofbreaker
+@q^730^1:7:1
 @q^770^0:15:0
 @q^929^1:0:0
 @q^1074^0:15:0
@@ -453,6 +465,8 @@ GoldScout-export 6^wusrkz5fplp1^18
 @q^4539^1:0:0
 @q^4542^1:0:0
 @q^4544^1:0:0
+@q^4552^0:15:0
+@q^4553^0:15:0
 @q^4582^1:12:0
 @q^4583^0:15:0
 @q^4585^0:15:0
@@ -492,9 +506,11 @@ GoldScout-export 6^wusrkz5fplp1^18
 @q^7726^3:4:0
 @q^7909^2:7:1
 @q^7910^2:7:1
+@q^7912^1:7:1
 @q^7976^3:9:0
 @q^7989^2:9:0
 @q^8146^1:7:1
+@q^8150^1:7:1
 @q^8151^1:7:1
 @q^8153^1:7:1
 @q^8158^2:4:0
@@ -507,6 +523,7 @@ GoldScout-export 6^wusrkz5fplp1^18
 @q^9785^2:4:0
 @q^9822^2:4:0
 @q^9835^2:4:0
+@q^9890^2:4:0
 @q^9896^2:4:0
 @q^9973^2:4:0
 @q^10285^1:7:1
@@ -596,9 +613,11 @@ GoldScout-export 6^wusrkz5fplp1^18
 @m^1414^Kalimdor
 @m^1415^Eastern Kingdoms
 @m^1416^Alterac Mountains
+@m^1418^Badlands
 @m^1424^Hillsbrad Foothills
 @m^1433^Redridge Mountains
 @m^1434^Stranglethorn Vale
+@m^1437^Wetlands
 @m^1441^Thousand Needles
 @m^1446^Tanaris
 @m^2548^Riverglades
@@ -1413,6 +1432,7 @@ GoldScout-export 6^wusrkz5fplp1^18
 @a^977^48:2
 @a^978^9:6,29:5
 @a^979^29:1
+@a^1027^122:1
 @a^1114^108:1,128:1
 @a^1151^65:1
 @a^2246^67:2,68:1
@@ -1422,6 +1442,10 @@ GoldScout-export 6^wusrkz5fplp1^18
 @a^2253^169:1,249:1
 @a^2356^86:1
 @a^2406^286:1
+@a^2723^107:2,108:9
+@a^2742^107:2,108:13,128:2
+@a^2743^107:1,108:14,128:2
+@a^3844^123:1
 @a^4096^169:1
 @a^5615^151:3,152:1,171:1
 @a^5616^112:1,132:3
