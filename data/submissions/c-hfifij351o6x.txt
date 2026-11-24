@@ -1,4 +1,4 @@
-GoldScout-export 6^hfifij351o6x^30
+GoldScout-export 6^hfifij351o6x^31
 92^6^0^39^40^1418^0.3294^0.6647^6^Rock Elemental^4042:1:1,4553:3:3,4627:4:4,4784:1:1,7912:1:1,8150:1:1^
 587^8^0^33^34^1434^0.3057^0.1886^8^Bloodscalp Warrior^1519:1:1,1520:1:1,2749:1:1,3901:2:2,3915:5:5,4306:4:5^
 588^8^0^34^35^1434^0.2457^0.1184^8^Bloodscalp Scout^3771:1:1,3786:1:1,3809:1:1,3901:2:2,3915:3:3,4306:3:5^
@@ -243,7 +243,9 @@ GoldScout-export 6^hfifij351o6x^30
 260429^1^0^39^39^1434^0.4356^0.2031^1^Venture Co. Agent^2589:1:1^
 262397^26^0^36^38^1434^0.2224^0.2857^26^Brinescale Skirmisher^2730:1:1,2740:1:1,2744:1:1,4603:3:6,5524:6:6,7433:1:1,17058:4:4,270305:10:10^
 263196^3^0^0^0^0^0.0000^0.0000^0^^3806:1:1^
-263343^1^0^37^37^2548^0.6889^0.4907^1^Low Plains Buzzard^1464:1:1^
+263307^1^0^37^38^2548^0.6099^0.5766^1^Glade Viper^6826:1:1,268632:1:1^
+263343^18^0^37^38^2548^0.6395^0.5648^18^Low Plains Buzzard^1464:8:8,3404:4:4,5636:1:1,5829:2:2,11418:2:2,12037:9:9,248693:1:1,268632:6:6,271793:6:6^
+263348^4^0^37^38^2548^0.6841^0.5492^4^Roving Tallstrider^5116:2:2,5829:1:1,11416:1:1,271778:1:1^
 263886^1^0^0^0^0^0.0000^0.0000^0^^^
 263899^2^0^0^0^0^0.0000^0.0000^0^^4306:1:3^
 264850^1^0^35^47^1434^0.4908^0.0819^1^Hawk^^
@@ -421,6 +423,7 @@ GoldScout-export 6^hfifij351o6x^30
 @i^5524^Thick-shelled Clam
 @i^5569^Seaweed
 @i^5635^Sharp Claw
+@i^5636^Delicate Feather
 @i^5637^Large Fang
 @i^5741^Rock Chip
 @i^5794^Salty Scorpid Venom
@@ -445,6 +448,7 @@ GoldScout-export 6^hfifij351o6x^30
 @i^6308^Raw Bristle Whisker Catfish
 @i^6438^Dull Elemental Bracer
 @i^6530^Nightcrawlers
+@i^6826^Brilliant Scale
 @i^6894^Whirlwind Heart
 @i^6986^Crimson Lotus
 @i^7067^Elemental Earth
@@ -493,6 +497,7 @@ GoldScout-export 6^hfifij351o6x^30
 @i^11391^Spined Bat Wing
 @i^11393^Small Bat Skull
 @i^11416^Delicate Ribcage
+@i^11418^Hollow Wing Bone
 @i^12037^Mystery Meat
 @i^12184^Raptor Flesh
 @i^12202^Tiger Meat
@@ -542,6 +547,8 @@ GoldScout-export 6^hfifij351o6x^30
 @i^268632^Beast Entrails
 @i^270305^Brinescale Trident
 @i^270333^Voodoo-Infused Artifact
+@i^271778^Intact Tallstrider Beak
+@i^271793^Plains Buzzard Feather
 @i^274381^Coldbringer Spine
 @i^274385^Abomination Chain
 @i^274431^Sandstorm Staff
@@ -724,6 +731,7 @@ GoldScout-export 6^hfifij351o6x^30
 @q^5524^1:7:0
 @q^5569^0:15:0
 @q^5635^1:7:1
+@q^5636^0:15:0
 @q^5637^1:7:1
 @q^5741^0:15:0
 @q^5794^1:12:0
@@ -748,6 +756,7 @@ GoldScout-export 6^hfifij351o6x^30
 @q^6308^1:7:1
 @q^6438^0:15:0
 @q^6530^1:0:0
+@q^6826^0:15:0
 @q^6894^1:12:0
 @q^6986^0:15:0
 @q^7067^1:7:1
@@ -796,6 +805,7 @@ GoldScout-export 6^hfifij351o6x^30
 @q^11391^0:15:0
 @q^11393^0:15:0
 @q^11416^0:15:0
+@q^11418^0:15:0
 @q^12037^1:7:1
 @q^12184^1:7:1
 @q^12202^1:7:1
@@ -845,6 +855,8 @@ GoldScout-export 6^hfifij351o6x^30
 @q^268632^1:12:0
 @q^270305^1:12:0
 @q^270333^1:12:0
+@q^271778^1:12:0
+@q^271793^1:12:0
 @q^274381^3:2:0
 @q^274385^3:4:0
 @q^274431^3:2:0
@@ -1148,7 +1160,9 @@ GoldScout-export 6^hfifij351o6x^30
 @a^260235^216:1
 @a^260429^88:1
 @a^262397^104:25,124:1
-@a^263343^193:1
+@a^263307^232:1
+@a^263343^193:2,212:2,213:2,231:2,232:6,233:1,252:1,253:1,273:1
+@a^263348^213:4
 @a^264850^29:1
 @a^269175^106:4,107:1,126:1
 @a^270094^210:1

@@ -1,4 +1,4 @@
-GoldScout-export 6^exsgadq8fg23^27
+GoldScout-export 6^exsgadq8fg23^28
 597^4^0^36^37^1434^0.2337^0.0965^4^Berserker Bloodscalp^^
 660^3^0^37^37^1434^0.2349^0.0920^3^Sorcier-docteur Bloodscalp^15260:1:1^
 669^5^0^41^42^1434^0.4517^0.4112^5^Chasseur Skullsplitter^1520:2:2^
@@ -34,6 +34,17 @@ GoldScout-export 6^exsgadq8fg23^27
 1564^27^0^42^43^1434^0.2869^0.8209^27^Démoniste de la Voile sanglante^1645:1:1,2732:1:1,2734:1:1,2740:1:1,2751:1:1,3910:10:10,3927:2:2,3928:1:1,4338:7:9,9260:1:1,217161:1:1^
 1565^3^0^44^45^1434^0.3238^0.8863^3^Loup de mer de la Voile sanglante^3927:1:1^
 1653^4^0^44^45^1434^0.3267^0.8850^4^Ancien magus de la Voile sanglante^2725:1:1,4338:1:1^
+1783^4^0^50^51^1422^0.3812^0.5500^4^Ecorcheur Squelette^14047:3:5^
+1784^2^0^51^52^1422^0.3793^0.5566^2^Ensorceleur Squelette^14047:1:1^
+1787^1^0^54^55^1422^0.4219^0.6639^1^Bourreau Squelette^^
+1788^1^0^56^56^1422^0.4673^0.7167^1^Chef de guerre Squelette^^
+1789^1^0^56^56^1422^0.4305^0.6361^1^Acolyte Squelette^14047:1:2^
+1791^4^0^50^52^1422^0.3736^0.5607^4^Goule écumante^14047:1:1^
+1794^4^0^54^55^1422^0.4576^0.6698^4^Goule dévastée^6530:2:2,14047:2:3^
+1795^2^0^55^56^1422^0.4474^0.6548^2^Goule incendiaire^^
+1815^1^0^51^51^1422^0.3469^0.5623^1^Ours noir malade^11409:1:1,11410:1:1^
+1831^4^0^52^53^1422^0.4069^0.5286^4^Chasseur écarlate^3993:1:1,14047:4:7^
+1835^7^0^53^54^1422^0.4076^0.5272^7^Invocatrice écarlate^13816:1:1,14047:3:4^
 1907^10^0^43^44^1434^0.2474^0.6173^10^Explorateur naga^2749:1:1,7973:6:6,17058:4:4,248693:1:1^
 2347^1^0^40^40^1424^0.8414^0.3317^1^Gryphon sauvage^4589:1:1^
 2474^1^0^40^40^1424^0.8412^0.3311^1^Kurdros^^
@@ -223,9 +234,12 @@ GoldScout-export 6^exsgadq8fg23^27
 9862^2^0^55^55^1448^0.3661^0.5485^2^Légionnaire de Jaedenar^12662:1:1,14047:1:2^
 9878^1^0^51^51^1448^0.4123^0.4143^1^Bête d'entropie^4787:1:1^
 9879^1^0^53^54^1448^0.4153^0.4352^1^Horreur d'entropie^^
+10605^4^0^52^54^1422^0.4057^0.5270^4^Médecin écarlate^14047:1:2^
 10738^1^0^59^59^1452^0.6941^0.3836^1^Grand chef Tombe-hiver^12820:1:1^
 10916^1^0^57^57^1452^0.4249^0.4063^1^Messager Tombe-hiver^12820:1:1,12829:1:1,21383:1:1^
 10928^8^0^42^43^1434^0.2873^0.8189^8^Succube démoniaque^^
+10979^1^0^52^53^1422^0.4039^0.5411^1^Chien écarlate^^
+11075^1^0^53^53^1422^0.3712^0.5587^1^Seigneur du Chaudron Bilegueule^13194:1:1^
 11516^1^0^54^54^1448^0.6648^0.0293^1^Garde Grumegueule^^
 11685^1^0^42^42^1414^0.3847^0.5797^1^Prêtre maraudine^^
 11687^1^0^42^42^1414^0.3857^0.5780^1^Maraudeur fantomatique^^
@@ -498,10 +512,12 @@ GoldScout-export 6^exsgadq8fg23^27
 @i^12822^Gouttelette d'Horreur toxique
 @i^12829^Caisse des Tombe-hiver
 @i^13140^Clé rouge sang
+@i^13194^Clé du chaudron du Champ de Felstone
 @i^13443^Potion de mana excellente
 @i^13444^Potion de mana majeure
 @i^13446^Potion de soins majeure
 @i^13815^Une rune
+@i^13816^Epée longue fine
 @i^14047^Etoffe runique
 @i^14244^Cafetan de Sombrebrume de protection contre l'ombre
 @i^14274^Jambières de Gaïa d'endurance
@@ -811,10 +827,12 @@ GoldScout-export 6^exsgadq8fg23^27
 @q^12822^1:12:0
 @q^12829^1:12:0
 @q^13140^1:12:0
+@q^13194^1:12:0
 @q^13443^1:0:0
 @q^13444^1:0:0
 @q^13446^1:0:0
 @q^13815^1:12:0
+@q^13816^0:2:0
 @q^14047^1:7:1
 @q^14244^2:4:0
 @q^14274^2:4:0
@@ -903,6 +921,7 @@ GoldScout-export 6^exsgadq8fg23^27
 @q^281018^1:0:0
 @m^1414^Kalimdor
 @m^1419^Terres foudroyées
+@m^1422^Maleterres de l'ouest
 @m^1424^Contreforts de Hautebrande
 @m^1425^Les Hinterlands
 @m^1427^Gorge des Vents brûlants
@@ -1542,6 +1561,17 @@ GoldScout-export 6^exsgadq8fg23^27
 @a^1564^325:24,326:3
 @a^1565^346:3
 @a^1653^346:4
+@a^1783^208:1,227:3
+@a^1784^227:2
+@a^1787^268:1
+@a^1788^289:1
+@a^1789^248:1
+@a^1791^227:4
+@a^1794^248:1,268:1,269:1,289:1
+@a^1795^248:1,269:1
+@a^1815^226:1
+@a^1831^208:4
+@a^1835^208:7
 @a^1907^224:1,225:2,244:6,245:1
 @a^2347^136:1
 @a^2474^136:1
@@ -1725,9 +1755,12 @@ GoldScout-export 6^exsgadq8fg23^27
 @a^9862^207:1,227:1
 @a^9878^168:1
 @a^9879^168:1
+@a^10605^208:4
 @a^10738^153:1
 @a^10916^168:1
 @a^10928^325:7,326:1
+@a^10979^208:1
+@a^11075^227:1
 @a^11516^13:1
 @a^11685^227:1
 @a^11687^227:1
