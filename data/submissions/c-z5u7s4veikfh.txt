@@ -1,4 +1,4 @@
-GoldScout-export 6^z5u7s4veikfh^13
+GoldScout-export 6^z5u7s4veikfh^14
 1529^8^0^9^10^1420^0.7601^0.6190^8^Bleeding Horror^1414:1:1,2589:3:6,2774:1:1^
 1532^8^0^10^11^1420^0.7581^0.5974^8^Wandering Spirit^159:1:1,1415:1:1,2589:2:2,4577:1:1^
 1766^14^0^11^12^1421^0.5575^0.1574^14^Mottled Worg^2672:12:12,3164:3:3,3299:1:1,3300:1:1^
@@ -63,7 +63,10 @@ GoldScout-export 6^z5u7s4veikfh^13
 3204^1^0^14^14^1411^0.5185^0.0957^1^Gazz'uz^4903:1:1^
 3225^1^0^10^10^1411^0.3905^0.2223^1^Corrupted Mottled Boar^769:1:1^
 3227^1^0^11^11^1411^0.4459^0.2613^1^Corrupted Bloodtalon Scythemaw^^
+3256^17^0^16^18^1413^0.5734^0.5262^17^Sunscale Scytheclaw^3180:1:1,5055:5:5,5124:3:3,5165:11:11,211853:1:1,211855:1:1,248683:1:1^
+3397^2^0^15^15^1413^0.5662^0.4339^2^Kolkar Bloodcharger^2589:1:2^
 3560^2^0^18^19^1416^0.1856^0.1648^2^Healing Ward^^
+4127^2^0^15^16^1413^0.5760^0.4152^2^Hecklefang Hyena^3301:1:1^
 6033^1^0^15^15^1421^0.7259^0.1146^1^Lake Frenzy^^
 8996^8^0^10^14^1411^0.5280^0.0945^8^Voidwalker Minion^^
 10381^6^0^0^0^0^0.0000^0.0000^0^^6530:2:2,8297:1:1,10204:1:1,14047:1:4,15276:1:1^
@@ -257,6 +260,7 @@ GoldScout-export 6^z5u7s4veikfh^13
 @i^3170^Large Bear Tooth
 @i^3173^Bear Meat
 @i^3174^Spider Ichor
+@i^3180^Flecked Raptor Scale
 @i^3192^Short Bastard Sword of the Boar
 @i^3253^Grizzled Bear Heart
 @i^3254^Skittering Blood
@@ -266,6 +270,7 @@ GoldScout-export 6^z5u7s4veikfh^13
 @i^3285^Tribal Bracers
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
+@i^3301^Sharp Canine
 @i^3370^Patchwork Belt
 @i^3621^Ivar's Head
 @i^3622^Essence of Nightlash
@@ -299,7 +304,10 @@ GoldScout-export 6^z5u7s4veikfh^13
 @i^4879^Squashed Rabbit Carcass
 @i^4880^Broken Spear
 @i^4903^Eye of Burning Shadow
+@i^5055^Intact Raptor Horn
 @i^5069^Fire Wand
+@i^5124^Small Raptor Tooth
+@i^5165^Sunscale Feather
 @i^5465^Small Spider Leg
 @i^5466^Scorpid Stinger
 @i^5523^Small Barnacled Clam
@@ -422,6 +430,7 @@ GoldScout-export 6^z5u7s4veikfh^13
 @i^211780^Scroll: KWYJIBO
 @i^211785^Scroll: CWAL
 @i^211787^Scroll: LOWER PING WHOMEVER
+@i^211853^Scroll: VOCE WELL
 @i^211854^Scroll: OMIT KESA
 @i^211855^Scroll: STHENIC LUNATE
 @i^248683^Waylaid Crate: Apprentice Ore
@@ -528,6 +537,7 @@ GoldScout-export 6^z5u7s4veikfh^13
 @q^3170^0:15:0
 @q^3173^1:7:1
 @q^3174^1:7:1
+@q^3180^0:15:0
 @q^3192^2:2:0
 @q^3253^1:12:0
 @q^3254^1:12:0
@@ -537,6 +547,7 @@ GoldScout-export 6^z5u7s4veikfh^13
 @q^3285^1:4:0
 @q^3299^0:15:0
 @q^3300^0:15:0
+@q^3301^0:15:0
 @q^3370^0:4:0
 @q^3621^1:12:0
 @q^3622^1:12:0
@@ -570,7 +581,10 @@ GoldScout-export 6^z5u7s4veikfh^13
 @q^4879^0:15:0
 @q^4880^0:15:0
 @q^4903^1:12:0
+@q^5055^1:12:0
 @q^5069^2:2:0
+@q^5124^0:15:0
+@q^5165^1:12:0
 @q^5465^1:7:1
 @q^5466^1:7:1
 @q^5523^1:7:0
@@ -693,6 +707,7 @@ GoldScout-export 6^z5u7s4veikfh^13
 @q^211780^1:0:0
 @q^211785^1:0:0
 @q^211787^1:0:0
+@q^211853^1:0:0
 @q^211854^1:0:0
 @q^211855^1:0:0
 @q^248683^1:0:1
@@ -739,6 +754,7 @@ GoldScout-export 6^z5u7s4veikfh^13
 @q^286326^1:12:0
 @m^1411^Durotar
 @m^1412^Mulgore
+@m^1413^The Barrens
 @m^1416^Alterac Mountains
 @m^1420^Tirisfal Glades
 @m^1421^Silverpine Forest
@@ -2877,7 +2893,10 @@ GoldScout-export 6^z5u7s4veikfh^13
 @a^3204^30:1
 @a^3225^87:1
 @a^3227^108:1
+@a^3256^191:2,211:15
+@a^3397^171:2
 @a^3560^63:2
+@a^4127^171:2
 @a^6033^54:1
 @a^8996^30:6,50:2
 @a^11735^153:1,172:1,173:1

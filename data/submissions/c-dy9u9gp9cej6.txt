@@ -1,4 +1,4 @@
-GoldScout-export 6^dy9u9gp9cej6^6
+GoldScout-export 6^dy9u9gp9cej6^7
 597^3^0^36^37^1434^0.2379^0.0950^3^Bloodscalp Berserker^4306:1:1^
 660^2^0^37^37^1434^0.2402^0.1038^2^Bloodscalp Witch Doctor^2289:1:1,4306:1:2^
 667^2^0^39^40^1434^0.4412^0.3532^2^Skullsplitter Warrior^^
@@ -27,6 +27,8 @@ GoldScout-export 6^dy9u9gp9cej6^6
 2714^1^0^35^35^1417^0.6069^0.5917^1^Forsaken Courier^3816:1:1,4482:1:1^
 2721^4^0^35^35^1417^0.6070^0.5916^4^Forsaken Bodyguard^3782:1:1,4306:2:4^
 3560^2^0^37^37^1434^0.2402^0.1038^2^Healing Ward^^
+4150^3^0^34^35^1441^0.7791^0.8483^3^Saltstone Gazer^1701:2:2,11386:2:2,14211:1:1^
+4151^1^0^32^33^1441^0.7735^0.8616^1^Saltstone Crystalhide^^
 4358^4^0^35^36^1445^0.5694^0.2084^4^Mirefin Puddlejumper^17057:1:1,17058:1:1^
 4359^8^0^35^36^1445^0.5632^0.2097^8^Mirefin Murloc^5785:1:1,8747:1:1,17057:3:3,17058:1:1,254020:1:1^
 4411^8^0^36^37^1445^0.5264^0.2537^8^Darkfang Lurker^1074:1:1,4585:2:2,12205:2:2^
@@ -47,6 +49,7 @@ GoldScout-export 6^dy9u9gp9cej6^6
 @i^1074^Hard Spider Leg Tip
 @i^1520^Troll Sweat
 @i^1686^Bristly Whisker
+@i^1701^Curved Basilisk Claw
 @i^1706^Azuredeep Shards
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
@@ -102,10 +105,12 @@ GoldScout-export 6^dy9u9gp9cej6^6
 @i^9851^Conjurer's Breeches of the Channeler
 @i^9877^Sorcerer Cloak of Spirit
 @i^10285^Shadow Silk
+@i^11386^Squishy Basilisk Eye
 @i^12202^Tiger Meat
 @i^12205^White Spider Meat
 @i^13422^Stonescale Eel
 @i^13755^Raw Winter Squid
+@i^14211^Vital Handwraps of Stamina
 @i^15233^Savage Axe of the Tiger
 @i^15322^Smoothbore Gun
 @i^17057^Shiny Fish Scales
@@ -123,6 +128,7 @@ GoldScout-export 6^dy9u9gp9cej6^6
 @q^1074^0:15:0
 @q^1520^0:15:0
 @q^1686^0:15:0
+@q^1701^0:15:0
 @q^1706^0:15:0
 @q^1707^1:0:0
 @q^1708^1:0:0
@@ -178,10 +184,12 @@ GoldScout-export 6^dy9u9gp9cej6^6
 @q^9851^2:4:0
 @q^9877^2:4:0
 @q^10285^1:7:1
+@q^11386^0:15:0
 @q^12202^1:7:1
 @q^12205^1:7:1
 @q^13422^1:7:1
 @q^13755^1:0:1
+@q^14211^2:4:0
 @q^15233^2:2:0
 @q^15322^2:2:0
 @q^17057^1:15:0
@@ -200,6 +208,7 @@ GoldScout-export 6^dy9u9gp9cej6^6
 @m^1424^Hillsbrad Foothills
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
+@m^1441^Thousand Needles
 @m^1445^Dustwallow Marsh
 @m^1447^Azshara
 @c^118^
@@ -789,6 +798,8 @@ GoldScout-export 6^dy9u9gp9cej6^6
 @a^2714^232:1
 @a^2721^232:4
 @a^3560^44:2
+@a^4150^335:2,355:1
+@a^4151^355:1
 @a^4358^91:4
 @a^4359^91:8
 @a^4411^88:1,90:2,91:1,108:1,111:2,152:1
