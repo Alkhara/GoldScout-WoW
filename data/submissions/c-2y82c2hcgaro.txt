@@ -1,12 +1,17 @@
-GoldScout-export 6^2y82c2hcgaro^15
+GoldScout-export 6^2y82c2hcgaro^16
 212^1^0^30^30^1431^0.3640^0.7430^1^Splinter Fist Warrior^4306:1:1^
 682^12^0^32^33^1434^0.4494^0.1420^12^Stranglethorn Tiger^1686:3:3,1687:1:1,12202:6:6^
+684^1^0^37^38^1434^0.4960^0.2398^1^Shadowmaw Panther^^
 685^4^0^33^34^1434^0.2678^0.1671^4^Stranglethorn Raptor^1696:1:1,3685:2:2,12184:2:2^
-689^28^0^34^35^1434^0.2501^0.1777^28^Crystal Spine Basilisk^1701:9:9,1702:4:4,1703:8:8,3918:10:10,4076:1:1,4093:1:1,11386:3:3^
+689^31^0^34^35^1434^0.2722^0.1688^31^Crystal Spine Basilisk^1701:9:9,1702:5:5,1703:9:9,3918:10:10,4076:1:1,4093:1:1,11386:3:3,248693:1:1^
 736^4^0^32^33^1434^0.2897^0.1131^4^Panther^1686:2:2,5637:2:2^
-937^6^0^32^33^1434^0.4433^0.1011^6^Kurzen Jungle Fighter^2592:1:3,2728:1:1,2749:1:1,2751:1:1,4306:2:4^
-938^2^0^34^35^1434^0.4520^0.0921^2^Kurzen Commando^^
-940^3^0^32^33^1434^0.4446^0.1019^3^Kurzen Medicine Man^1707:1:1,2633:2:2,4306:2:3^
+772^1^0^38^38^1434^0.4894^0.2134^1^Stranglethorn Tigress^^
+937^7^0^32^33^1434^0.4432^0.1007^7^Kurzen Jungle Fighter^2592:1:3,2728:1:1,2749:1:1,2751:1:1,4306:2:4^
+938^12^0^34^35^1434^0.4539^0.0838^12^Kurzen Commando^1707:2:2,1708:1:1,1710:1:1,2725:1:1,4306:3:5^
+939^4^0^36^37^1434^0.4850^0.0831^4^Kurzen Elite^4306:2:5,4338:1:1,216616:1:1^
+940^5^0^32^33^1434^0.4452^0.1062^5^Kurzen Medicine Man^1707:1:1,2633:2:2,4306:2:3,4716:1:1^
+941^6^0^34^35^1434^0.4759^0.0791^6^Kurzen Headshrinker^2732:1:1,4306:1:1,8747:1:1^
+942^3^0^36^37^1434^0.4873^0.0806^3^Kurzen Witch Doctor^2750:1:1,4306:1:3^
 976^1^0^32^32^1434^0.4554^0.1027^1^Kurzen War Tiger^12202:1:1^
 1085^4^0^34^35^1434^0.3411^0.1811^4^Elder Stranglethorn Tiger^1686:2:2,1687:1:1,9826:1:1,12202:2:2^
 1096^25^0^35^36^1434^0.4458^0.2009^25^Venture Co. Geologist^1630:3:3,1708:1:1,2735:2:2,3782:1:1,4106:8:8,4306:4:8,11985:1:1^
@@ -100,10 +105,13 @@ GoldScout-export 6^2y82c2hcgaro^15
 @i^1990^Ballast Maul of the Tiger
 @i^2592^Wool Cloth
 @i^2633^Jungle Remedy
+@i^2725^Green Hills of Stranglethorn - Page 1
 @i^2728^Green Hills of Stranglethorn - Page 4
+@i^2732^Green Hills of Stranglethorn - Page 8
 @i^2735^Green Hills of Stranglethorn - Page 11
 @i^2742^Green Hills of Stranglethorn - Page 18
 @i^2749^Green Hills of Stranglethorn - Page 25
+@i^2750^Green Hills of Stranglethorn - Page 26
 @i^2751^Green Hills of Stranglethorn - Page 27
 @i^3037^Whipwood Recurve Bow
 @i^3385^Lesser Mana Potion
@@ -131,6 +139,7 @@ GoldScout-export 6^2y82c2hcgaro^15
 @i^4556^Speckled Shell Fragment
 @i^4607^Delicious Cave Mold
 @i^4634^Iron Lockbox
+@i^4716^Combat Cloak
 @i^5002^Glowing Green Talisman
 @i^5003^Crystal Starfire Medallion
 @i^5114^Severed Talon
@@ -158,6 +167,7 @@ GoldScout-export 6^2y82c2hcgaro^15
 @i^6362^Raw Rockscale Cod
 @i^6767^Tyranis' Pendant
 @i^6986^Crimson Lotus
+@i^8747^Hardened Leather Helm
 @i^9826^Durable Robe of the Owl
 @i^11384^Broken Basilisk Teeth
 @i^11386^Squishy Basilisk Eye
@@ -179,6 +189,7 @@ GoldScout-export 6^2y82c2hcgaro^15
 @i^17058^Fish Oil
 @i^19937^Small Scorpid Claw
 @i^19938^Heavy Scorpid Leg
+@i^216616^Compound Cage Key
 @i^248692^Waylaid Crate: Expert Ore
 @i^248693^Waylaid Crate: Expert Textiles
 @i^254432^Carved Centaur Totem
@@ -202,10 +213,13 @@ GoldScout-export 6^2y82c2hcgaro^15
 @q^1990^2:2:0
 @q^2592^1:7:1
 @q^2633^1:0:0
+@q^2725^1:12:0
 @q^2728^1:12:0
+@q^2732^1:12:0
 @q^2735^1:12:0
 @q^2742^1:12:0
 @q^2749^1:12:0
+@q^2750^1:12:0
 @q^2751^1:12:0
 @q^3037^2:2:0
 @q^3385^1:0:0
@@ -233,6 +247,7 @@ GoldScout-export 6^2y82c2hcgaro^15
 @q^4556^0:15:0
 @q^4607^1:0:0
 @q^4634^2:15:0
+@q^4716^2:4:0
 @q^5002^2:4:0
 @q^5003^2:4:0
 @q^5114^0:15:0
@@ -260,6 +275,7 @@ GoldScout-export 6^2y82c2hcgaro^15
 @q^6362^1:7:1
 @q^6767^1:12:0
 @q^6986^0:15:0
+@q^8747^0:4:0
 @q^9826^2:4:0
 @q^11384^0:15:0
 @q^11386^0:15:0
@@ -281,6 +297,7 @@ GoldScout-export 6^2y82c2hcgaro^15
 @q^17058^1:15:0
 @q^19937^0:15:0
 @q^19938^0:15:0
+@q^216616^1:12:0
 @q^248692^1:0:1
 @q^248693^1:0:1
 @q^254432^2:15:0
@@ -851,12 +868,17 @@ GoldScout-export 6^2y82c2hcgaro^15
 @c^285281^
 @a^212^287:1
 @a^682^46:1,49:6,69:5
+@a^684^89:1
 @a^685^65:4
-@a^689^64:16,65:12
+@a^689^29:3,64:16,65:12
 @a^736^45:4
-@a^937^28:3,48:3
-@a^938^29:2
-@a^940^28:2,48:1
+@a^772^89:1
+@a^937^28:4,48:3
+@a^938^28:4,29:8
+@a^939^29:4
+@a^940^28:2,48:3
+@a^941^29:6
+@a^942^29:3
 @a^976^49:1
 @a^1085^66:2,67:2
 @a^1096^68:6,69:5,88:10,89:4

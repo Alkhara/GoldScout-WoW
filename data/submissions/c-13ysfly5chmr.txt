@@ -1,4 +1,4 @@
-GoldScout-export 6^13ysfly5chmr^3
+GoldScout-export 6^13ysfly5chmr^4
 1520^15^0^6^7^1420^0.4623^0.4011^15^Rattlecage Soldier^118:1:1,159:3:3,2589:6:9,2648:1:1,3162:5:5,4604:2:2^
 1522^13^0^7^8^1420^0.4648^0.3992^13^Darkeye Bonecaster^2589:4:6,2839:1:1,3163:3:3,8178:1:1^
 1535^1^0^6^7^1420^0.3670^0.4823^1^Scarlet Warrior^2589:1:2^
@@ -17,9 +17,11 @@ GoldScout-export 6^13ysfly5chmr^3
 1657^1^0^9^9^1420^0.4718^0.3985^1^Devlin Agamand^2831:1:1^
 250282^4^0^9^10^1420^0.1587^0.5289^4^Vile Fin Seer^^
 250283^5^0^9^11^1420^0.1557^0.5631^5^Vile Fin Attacker^159:1:1,1422:1:1,6303:1:2^
-259433^1^0^10^11^1420^0.1378^0.6629^1^Tarnished Zealot^2589:1:1^
-259434^1^0^10^10^1420^0.1414^0.6612^1^Tarnished Drudge^2968:1:1^
-260428^1^0^10^11^1420^0.1177^0.6653^1^Shadowvale Lurcher^159:1:1^
+259431^1^0^12^12^1420^0.1158^0.6414^1^Rudolph Gelhardt^270435:1:1^
+259433^9^0^10^11^1420^0.1321^0.6488^9^Tarnished Zealot^118:1:1,159:1:1,2589:2:3,7350:1:1^
+259434^5^0^10^11^1420^0.1292^0.6440^5^Tarnished Drudge^159:1:1,1411:1:1,2968:1:1^
+260428^5^0^10^12^1420^0.1016^0.6663^5^Shadowvale Lurcher^159:1:1,1181:1:1,2589:3:6^
+260430^2^0^10^11^1420^0.1104^0.6589^2^Shadowvale Mystic^159:1:1^
 260431^3^0^11^12^1420^0.0912^0.6109^3^Shadowvale Lurcher^2777:1:1^
 260432^2^0^11^12^1420^0.0929^0.6117^2^Shadowvale Mystic^^
 271080^1^0^10^10^1420^0.1541^0.5610^1^Blightsculler^159:1:1,779:1:1,5523:1:1,5572:1:1^
@@ -27,6 +29,8 @@ GoldScout-export 6^13ysfly5chmr^3
 @i^159^Refreshing Spring Water
 @i^774^Malachite
 @i^779^Shiny Seashell
+@i^1181^Scroll of Spirit
+@i^1411^Withered Staff
 @i^1412^Crude Bastard Sword
 @i^1418^Worn Leather Belt
 @i^1422^Worn Leather Gloves
@@ -51,13 +55,17 @@ GoldScout-export 6^13ysfly5chmr^3
 @i^6296^Patch of Bat Hair
 @i^6303^Raw Slitherskin Mackerel
 @i^7074^Chipped Claw
+@i^7350^Disciple's Bracers
 @i^8178^Training Sword of the Wolf
 @i^12223^Meaty Bat Wing
+@i^270435^Rudolph Gelhardt's Head
 @i^278244^Vile Fin Murloc Skin
 @q^118^1:0:0
 @q^159^1:0:0
 @q^774^2:7:1
 @q^779^0:15:0
+@q^1181^1:0:0
+@q^1411^0:2:0
 @q^1412^0:2:0
 @q^1418^0:4:0
 @q^1422^0:4:0
@@ -82,8 +90,10 @@ GoldScout-export 6^13ysfly5chmr^3
 @q^6296^0:15:0
 @q^6303^1:7:1
 @q^7074^0:15:0
+@q^7350^1:4:0
 @q^8178^2:2:0
 @q^12223^1:7:1
+@q^270435^1:12:0
 @q^278244^1:12:0
 @m^1420^Tirisfal Glades
 @c^118^
@@ -749,9 +759,11 @@ GoldScout-export 6^13ysfly5chmr^3
 @a^1657^149:1
 @a^250282^203:3,222:1
 @a^250283^202:1,222:1,223:3
-@a^259433^262:1
-@a^259434^262:1
-@a^260428^262:1
+@a^259431^242:1
+@a^259433^242:6,262:3
+@a^259434^242:3,262:2
+@a^260428^261:2,262:3
+@a^260430^262:2
 @a^260431^221:1,241:2
 @a^260432^241:2
 @a^271080^223:1

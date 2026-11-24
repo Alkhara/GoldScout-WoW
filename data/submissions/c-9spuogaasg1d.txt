@@ -1,6 +1,14 @@
-GoldScout-export 6^9spuogaasg1d^10
+GoldScout-export 6^9spuogaasg1d^12
 1547^1^0^5^5^1420^0.6645^0.5704^1^Decrepit Darkhound^2672:1:1,3299:1:1^
+1767^2^0^12^13^1421^0.5665^0.2634^2^Vile Fin Shredder^730:1:1,5523:1:1^
+1768^3^0^13^13^1421^0.5663^0.2738^3^Vile Fin Tidehunter^730:2:2,5523:1:1^
+1770^2^0^11^12^1421^0.5273^0.2849^2^Moonrage Darkrunner^2777:1:1^
 1778^2^0^11^12^1421^0.5078^0.3716^2^Ferocious Grizzled Bear^3173:1:1,3253:2:2,11406:1:1^
+1779^7^0^12^13^1421^0.4281^0.2807^7^Moonrage Glutton^1505:1:1,1511:1:1^
+1780^2^0^12^13^1421^0.3407^0.1511^2^Moss Stalker^3167:2:2,3254:1:1,5465:2:3^
+1781^1^0^13^14^1421^0.3539^0.1221^1^Mist Creeper^3174:1:1,3254:1:1,3652:1:1,5465:1:2^
+1782^5^0^13^14^1421^0.4092^0.2680^5^Moonrage Darksoul^818:1:1,2409:1:1,2455:1:1,3157:3:3^
+1869^1^0^14^14^1421^0.5670^0.3197^1^Ravenclaw Champion^1179:1:1^
 2265^1^0^24^25^1424^0.3286^0.4413^1^Hillsbrad Apprentice Blacksmith^1205:1:1^
 2372^4^0^26^27^1424^0.6527^0.6287^4^Mudsnout Gnoll^929:1:1,4306:1:1^
 2373^3^0^27^28^1424^0.6533^0.6233^3^Mudsnout Shaman^2592:2:2^
@@ -44,23 +52,35 @@ GoldScout-export 6^9spuogaasg1d^10
 @i^730^Murloc Eye
 @i^769^Chunk of Boar Meat
 @i^771^Chipped Boar Tusk
+@i^818^Tigerseye
 @i^929^Healing Potion
+@i^1179^Ice Cold Milk
 @i^1205^Melon Juice
 @i^1468^Murloc Fin
+@i^1505^Warped Cloak
+@i^1511^Commoner's Sword
 @i^1712^Scroll of Spirit II
 @i^1750^Linked Chain Gloves
 @i^1778^Brocade Vest
 @i^1822^Cedar Walking Stick
 @i^1824^Shiny War Axe
 @i^2220^Box Shield
+@i^2409^Pattern: Dark Leather Tunic
+@i^2455^Minor Mana Potion
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2672^Stringy Wolf Meat
+@i^2777^Feeble Shortbow
+@i^3157^Darksoul Shackle
+@i^3167^Thick Spider Hair
 @i^3171^Broken Boar Tusk
 @i^3173^Bear Meat
+@i^3174^Spider Ichor
 @i^3253^Grizzled Bear Heart
+@i^3254^Skittering Blood
 @i^3299^Fractured Canine
 @i^3385^Lesser Mana Potion
+@i^3652^Hunting Buckler
 @i^3770^Mutton Chop
 @i^4306^Silk Cloth
 @i^5117^Vibrant Plume
@@ -68,6 +88,8 @@ GoldScout-export 6^9spuogaasg1d^10
 @i^5446^Broken Elemental Bracer
 @i^5448^Fractured Elemental Bracer
 @i^5451^Crushed Elemental Bracer
+@i^5465^Small Spider Leg
+@i^5523^Small Barnacled Clam
 @i^5524^Thick-shelled Clam
 @i^5575^Large Green Sack
 @i^5635^Sharp Claw
@@ -98,23 +120,35 @@ GoldScout-export 6^9spuogaasg1d^10
 @q^730^1:7:1
 @q^769^1:7:1
 @q^771^0:15:0
+@q^818^2:7:1
 @q^929^1:0:0
+@q^1179^1:0:0
 @q^1205^1:0:0
 @q^1468^1:7:1
+@q^1505^0:4:0
+@q^1511^0:2:0
 @q^1712^1:0:0
 @q^1750^0:4:0
 @q^1778^0:4:0
 @q^1822^0:2:0
 @q^1824^0:2:0
 @q^2220^0:4:0
+@q^2409^2:9:0
+@q^2455^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2672^1:7:1
+@q^2777^0:2:0
+@q^3157^1:12:0
+@q^3167^0:15:0
 @q^3171^0:15:0
 @q^3173^1:7:1
+@q^3174^1:7:1
 @q^3253^1:12:0
+@q^3254^1:12:0
 @q^3299^0:15:0
 @q^3385^1:0:0
+@q^3652^2:4:0
 @q^3770^1:0:0
 @q^4306^1:7:1
 @q^5117^1:12:0
@@ -122,6 +156,8 @@ GoldScout-export 6^9spuogaasg1d^10
 @q^5446^0:15:0
 @q^5448^0:15:0
 @q^5451^0:15:0
+@q^5465^1:7:1
+@q^5523^1:7:0
 @q^5524^1:7:0
 @q^5575^1:1:0
 @q^5635^1:7:1
@@ -1485,7 +1521,15 @@ GoldScout-export 6^9spuogaasg1d^10
 @c^279987^
 @c^286152^
 @a^1547^233:1
+@a^1767^91:1,111:1
+@a^1768^111:3
+@a^1770^110:2
 @a^1778^150:2
+@a^1779^87:1,107:1,108:2,109:1,128:2
+@a^1780^47:1,66:1
+@a^1781^47:1
+@a^1782^87:2,108:2,128:1
+@a^1869^131:1
 @a^2265^166:1
 @a^2372^252:1,253:3
 @a^2373^252:2,253:1
