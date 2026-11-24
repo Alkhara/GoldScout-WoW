@@ -1,4 +1,4 @@
-GoldScout-export 6^paer9lpz1xh5^8
+GoldScout-export 6^paer9lpz1xh5^9
 667^1^0^40^40^1434^0.4684^0.4140^1^Skullsplitter Warrior^1520:1:1,2734:1:1,4338:1:1^
 669^5^0^41^42^1434^0.4592^0.4257^5^Skullsplitter Hunter^1520:2:2,2750:1:1^
 672^1^0^44^44^1434^0.4727^0.4309^1^Skullsplitter Spiritchaser^4338:1:1^
@@ -165,6 +165,22 @@ GoldScout-export 6^paer9lpz1xh5^8
 13718^1^0^41^41^1414^0.3828^0.5818^1^The Nameless Prophet^17757:1:1^
 14492^1^0^42^42^1434^0.3668^0.5479^1^Verifonix^4306:1:1,7471:1:1^
 253526^1^0^42^42^2652^0.7219^0.2297^1^Bristleback Skullcrusher^^
+255262^4^0^0^0^0^0.0000^0.0000^0^^4338:1:2,274028:2:2^
+255267^1^0^0^0^0^0.0000^0.0000^0^^12208:1:1^
+255271^3^0^0^0^0^0.0000^0.0000^0^^274028:3:3^
+255276^1^0^0^0^0^0.0000^0.0000^0^^4602:1:1^
+255309^3^0^0^0^0^0.0000^0.0000^0^^4026:1:1,287019:1:1^
+255364^1^0^0^0^0^0.0000^0.0000^0^^4638:1:1^
+255373^1^0^0^0^0^0.0000^0.0000^0^^^
+255377^4^0^0^0^0^0.0000^0.0000^0^^3927:1:1,15174:1:1,274028:1:1^
+255391^1^0^0^0^0^0.0000^0.0000^0^^276732:1:1^
+255702^1^0^0^0^0^0.0000^0.0000^0^^276744:1:1^
+255995^4^0^0^0^0^0.0000^0.0000^0^^1645:1:1,3943:1:1^
+255997^1^0^0^0^0^0.0000^0.0000^0^^273883:1:1,276735:1:1^
+256236^1^0^0^0^0^0.0000^0.0000^0^^274029:1:1,276742:1:1^
+257016^1^0^0^0^0^0.0000^0.0000^0^^276738:1:1^
+271780^1^0^0^0^0^0.0000^0.0000^0^^274028:1:1^
+271784^1^0^0^0^0^0.0000^0.0000^0^^274028:1:1^
 @i^1520^Troll Sweat
 @i^1613^Spiritchaser Staff of Healing
 @i^1625^Exquisite Flamberge of the Boar
@@ -208,6 +224,7 @@ GoldScout-export 6^paer9lpz1xh5^8
 @i^3927^Fine Aged Cheddar
 @i^3928^Superior Healing Potion
 @i^3932^Smotts' Chest
+@i^3943^Crochet Vest
 @i^3961^Thick Leather Belt
 @i^3965^Thick Leather Gloves
 @i^4004^Overlinked Chain Gloves
@@ -218,6 +235,7 @@ GoldScout-export 6^paer9lpz1xh5^8
 @i^4019^Heavy Flint Axe
 @i^4023^Fine Pointed Dagger
 @i^4025^Balanced Long Bow
+@i^4026^Sentinel Musket
 @i^4029^Akiris Reed
 @i^4066^Insignia Buckler
 @i^4092^Prismatic Basilisk Scale
@@ -236,8 +254,10 @@ GoldScout-export 6^paer9lpz1xh5^8
 @i^4583^Thick Furry Mane
 @i^4584^Large Trophy Paw
 @i^4599^Cured Ham Steak
+@i^4602^Moon Harvest Pumpkin
 @i^4607^Delicious Cave Mold
 @i^4608^Raw Black Truffle
+@i^4638^Reinforced Steel Lockbox
 @i^4644^The Legacy Heart
 @i^4784^Lifeless Stone
 @i^5128^Shed Lizard Skin
@@ -323,6 +343,7 @@ GoldScout-export 6^paer9lpz1xh5^8
 @i^14906^Brutish Belt of the Eagle
 @i^14956^Bloodforged Bindings of Fire Protection
 @i^15167^Imposing Bandana of the Wolf
+@i^15174^Potent Gloves of Power
 @i^15322^Smoothbore Gun
 @i^15370^Wolf Rider's Boots of the Boar
 @i^15597^Steadfast Shoulders of the Physician
@@ -367,12 +388,21 @@ GoldScout-export 6^paer9lpz1xh5^8
 @i^252871^Pattern: Mender's Leather Gauntlets
 @i^252920^Pattern: Skirmisher's Mail Gauntlets
 @i^255645^Swollen Venom Sac
+@i^273883^Ca'zass's Head
+@i^274028^Blood Red Bandana
+@i^274029^Ornate Shackle Key
 @i^274639^Sacrificial Chain Vest
 @i^274642^Blood Ritual Ring
 @i^274645^Desert Ziggurat Drape
 @i^274648^The Desert Rose
 @i^274654^Sandfury Guillotine
+@i^276732^Alcaz Willcrusher
+@i^276735^Tidesong Wand
+@i^276738^Katerina's Shanker
+@i^276742^Girdle of Extracted Answers
+@i^276744^Zarla's Snack Pouch
 @i^277112^Zum'rah's Head
+@i^287019^Defias Enforcer's Mask
 @q^1520^0:15:0
 @q^1613^2:2:0
 @q^1625^2:2:0
@@ -416,6 +446,7 @@ GoldScout-export 6^paer9lpz1xh5^8
 @q^3927^1:0:0
 @q^3928^1:0:0
 @q^3932^1:12:0
+@q^3943^0:4:0
 @q^3961^0:4:0
 @q^3965^0:4:0
 @q^4004^0:4:0
@@ -426,6 +457,7 @@ GoldScout-export 6^paer9lpz1xh5^8
 @q^4019^0:2:0
 @q^4023^0:2:0
 @q^4025^0:2:0
+@q^4026^0:2:0
 @q^4029^1:12:0
 @q^4066^2:4:0
 @q^4092^0:15:0
@@ -444,8 +476,10 @@ GoldScout-export 6^paer9lpz1xh5^8
 @q^4583^0:15:0
 @q^4584^0:15:0
 @q^4599^1:0:0
+@q^4602^1:0:0
 @q^4607^1:0:0
 @q^4608^1:0:0
+@q^4638^2:15:0
 @q^4644^1:12:0
 @q^4784^0:15:0
 @q^5128^0:15:0
@@ -531,6 +565,7 @@ GoldScout-export 6^paer9lpz1xh5^8
 @q^14906^2:4:0
 @q^14956^2:4:0
 @q^15167^2:4:0
+@q^15174^2:4:0
 @q^15322^2:2:0
 @q^15370^2:4:0
 @q^15597^2:4:0
@@ -575,12 +610,21 @@ GoldScout-export 6^paer9lpz1xh5^8
 @q^252871^3:9:0
 @q^252920^3:9:0
 @q^255645^1:7:1
+@q^273883^1:12:0
+@q^274028^1:12:0
+@q^274029^1:12:0
 @q^274639^3:4:0
 @q^274642^3:4:0
 @q^274645^3:4:0
 @q^274648^3:4:0
 @q^274654^3:2:0
+@q^276732^3:2:0
+@q^276735^3:2:0
+@q^276738^3:2:0
+@q^276742^3:4:0
+@q^276744^3:4:0
 @q^277112^1:12:0
+@q^287019^3:4:0
 @m^1414^Kalimdor
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows

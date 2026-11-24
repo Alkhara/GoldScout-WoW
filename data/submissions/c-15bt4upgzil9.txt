@@ -1,4 +1,4 @@
-GoldScout-export 6^15bt4upgzil9^7
+GoldScout-export 6^15bt4upgzil9^8
 2242^8^0^35^36^1416^0.6139^0.4385^8^Espía de la Hermandad^1710:2:2,4306:3:6,5113:3:3^
 2246^11^0^38^39^1416^0.3973^0.1697^11^Asesino de la Hermandad^1477:1:1,1707:1:1,3505:4:4,4306:2:3,4338:1:1,6421:1:1,7431:1:1^
 2247^15^0^39^40^1416^0.4024^0.1810^15^Déspota de la Hermandad^1707:1:1,1710:1:1,3505:3:3,4306:3:8,4338:1:1,5113:1:1,6986:1:1^
@@ -28,6 +28,10 @@ GoldScout-export 6^15bt4upgzil9^7
 2596^4^0^39^40^1417^0.2229^0.8613^4^Hechicera Espinadaga^17057:2:2,17058:2:2^
 2597^1^0^40^40^1417^0.2613^0.6548^1^Lord Falconcrest^4306:1:3,4517:1:1^
 2599^1^0^38^38^1417^0.2602^0.6539^1^Otto^4516:1:1^
+2649^2^0^40^41^1425^0.2327^0.5791^2^Arrancacabelleras Secacorteza^1520:1:1,4306:1:2,4338:1:1^
+2650^1^0^42^42^1425^0.2239^0.5625^1^Zelote Secacorteza^9259:1:1^
+2651^0^3^43^43^0^0.0000^0.0000^0^Desollador Secacorteza^^4601:1:1,16884:1:1
+2652^0^1^43^43^0^0.0000^0.0000^0^Sangreveneno Secacorteza^^
 2727^5^0^35^36^1418^0.5325^0.2476^5^Coyote del risco^4583:1:1,7846:2:4,12029:1:1,213546:1:1^
 2739^7^0^35^36^1418^0.5328^0.3281^7^Tunelador de Forjatiniebla^4306:4:8,4616:1:1,255726:2:2,278402:7:7^
 2740^1^0^36^37^1418^0.5146^0.3418^1^Tejeoscuro de Forjatiniebla^4306:1:1,278402:1:1^
@@ -37,7 +41,10 @@ GoldScout-export 6^15bt4upgzil9^7
 2783^1^0^40^40^1417^0.2926^0.6171^1^Marez Cogulla^4515:1:1^
 2793^1^0^39^39^1417^0.5483^0.8188^1^Kor'gresh Ira Helada^4525:1:1^
 2829^1^0^35^35^1418^0.5303^0.1656^1^Águila ratonera famélica^1464:1:1,5116:1:1^
-2923^1^0^41^41^1425^0.1992^0.4827^1^Melenargenta sarnoso^4583:1:1,12208:1:1^
+2923^4^0^41^42^1425^0.1980^0.4980^4^Melenargenta sarnoso^4583:2:2,12203:1:1,12208:2:2^
+2924^5^0^43^44^1425^0.2861^0.5510^5^Lobo melenargenta^4583:1:1,12203:2:2,12208:1:1^
+2925^1^0^46^46^1425^0.3856^0.6092^1^Aullador melenargenta^4583:1:1,12203:1:1^
+2927^1^0^42^42^1425^0.2319^0.5239^1^Lechubestia sañosa^^
 3560^1^0^33^34^1417^0.6927^0.6725^1^Guarda de sanación^^
 4341^1^0^35^35^1445^0.4072^0.2383^1^Crocolisco secorrón^3667:1:1^
 4342^4^0^36^37^1445^0.4388^0.2274^4^Malafauce secorrón^770:2:4,3667:1:1^
@@ -110,6 +117,7 @@ GoldScout-export 6^15bt4upgzil9^7
 @i^1464^Garfa de águila ratonera
 @i^1465^Aterratigres
 @i^1477^Pergamino de agilidad II
+@i^1520^Sudor trol
 @i^1640^Hacha de guerra monstruosa del bandido
 @i^1645^Zumo de baya lunar
 @i^1696^Garfa de raptor curva
@@ -197,6 +205,7 @@ GoldScout-export 6^15bt4upgzil9^7
 @i^7846^Colmillo de coyote del risco
 @i^7912^Piedra sólida
 @i^8121^Guantes heráldicos
+@i^9259^Collar tribal trol
 @i^9390^Guantes de Revelosh de protección Arcana
 @i^9407^Leotardos tejepiedra
 @i^9411^Espaldares de fragmento de roca
@@ -223,6 +232,7 @@ GoldScout-export 6^15bt4upgzil9^7
 @i^15286^Arco largo de madera roja
 @i^15358^Prendas de lana de rebanacabezas del tigre
 @i^15849^Ectoplasma
+@i^16884^Caja de trastos robusta
 @i^17057^Escamas de pez lustrosas
 @i^17058^Aceite de pescado
 @i^19937^Garra de escórpido pequeña
@@ -250,6 +260,7 @@ GoldScout-export 6^15bt4upgzil9^7
 @q^1464^0:15:0
 @q^1465^2:2:0
 @q^1477^1:0:0
+@q^1520^0:15:0
 @q^1640^2:2:0
 @q^1645^1:0:0
 @q^1696^0:15:0
@@ -337,6 +348,7 @@ GoldScout-export 6^15bt4upgzil9^7
 @q^7846^1:12:0
 @q^7912^1:7:1
 @q^8121^2:4:0
+@q^9259^1:15:0
 @q^9390^3:4:0
 @q^9407^3:4:0
 @q^9411^3:4:0
@@ -363,6 +375,7 @@ GoldScout-export 6^15bt4upgzil9^7
 @q^15286^2:2:0
 @q^15358^2:4:0
 @q^15849^1:12:0
+@q^16884^1:15:0
 @q^17057^1:15:0
 @q^17058^1:15:0
 @q^19937^0:15:0
@@ -1204,6 +1217,8 @@ GoldScout-export 6^15bt4upgzil9^7
 @a^2596^324:2,344:1,364:1
 @a^2597^265:1
 @a^2599^265:1
+@a^2649^224:2
+@a^2650^224:1
 @a^2727^70:2,90:2,150:1
 @a^2739^130:7
 @a^2740^130:1
@@ -1212,7 +1227,10 @@ GoldScout-export 6^15bt4upgzil9^7
 @a^2783^245:1
 @a^2793^330:1
 @a^2829^70:1
-@a^2923^183:1
+@a^2923^183:2,204:2
+@a^2924^205:1,225:4
+@a^2925^247:1
+@a^2927^204:1
 @a^3560^273:1
 @a^4341^88:1
 @a^4342^87:2,89:2
