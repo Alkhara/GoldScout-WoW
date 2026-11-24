@@ -1,6 +1,7 @@
-GoldScout-export 6^my3wxrwfsd8s^4
-5616^4^0^40^41^1446^0.6388^0.3034^4^Wastewander Thief^4306:1:2,4338:1:1,8483:1:1^
-5618^5^0^41^42^1446^0.6239^0.2711^5^Wastewander Bandit^3927:1:1,8483:2:2^
+GoldScout-export 6^my3wxrwfsd8s^5
+5615^1^0^43^44^1446^0.5889^0.3892^1^Wastewander Rogue^^
+5616^9^0^40^41^1446^0.6374^0.3172^9^Wastewander Thief^3927:1:1,4306:1:2,4338:4:5,8398:1:1,8483:2:2^
+5618^10^0^41^42^1446^0.6282^0.2935^10^Wastewander Bandit^3927:1:1,4338:2:4,8483:3:3^
 255898^1^0^39^39^2548^0.7507^0.6309^1^Murloc Oracle^^
 255899^2^0^37^37^2548^0.7504^0.6308^2^Murloc Tideskimmer^^
 255901^1^0^36^37^2548^0.7507^0.6309^1^Sand Crawler^12206:1:1,17057:1:1^
@@ -31,6 +32,7 @@ GoldScout-export 6^my3wxrwfsd8s^4
 @i^7439^Sentinel Breastplate of the Whale
 @i^7482^Ranger Shoulders of the Bandit
 @i^8159^Jouster's Girdle
+@i^8398^Pattern: Tough Scorpid Gloves
 @i^8483^Wastewander Water Pouch
 @i^9900^Jazeraint Gauntlets of Nature's Wrath
 @i^12011^Forest Hoop of Intellect
@@ -56,6 +58,7 @@ GoldScout-export 6^my3wxrwfsd8s^4
 @q^7439^2:4:0
 @q^7482^2:4:0
 @q^8159^2:4:0
+@q^8398^2:9:0
 @q^8483^1:12:0
 @q^9900^2:4:0
 @q^12011^2:4:0
@@ -829,8 +832,9 @@ GoldScout-export 6^my3wxrwfsd8s^4
 @c^279981^
 @c^279982^
 @c^286152^
-@a^5616^112:3,132:1
-@a^5618^92:2,112:1,132:2
+@a^5615^151:1
+@a^5616^112:3,132:6
+@a^5618^92:2,112:3,132:5
 @a^255898^255:1
 @a^255899^255:2
 @a^255901^255:1

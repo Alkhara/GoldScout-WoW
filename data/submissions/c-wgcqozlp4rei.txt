@@ -1,4 +1,4 @@
-GoldScout-export 6^wgcqozlp4rei^14
+GoldScout-export 6^wgcqozlp4rei^15
 682^5^0^32^33^1434^0.4376^0.1540^5^Stranglethorn Tiger^1686:1:1,1687:2:2,12202:1:1,213546:1:1^
 684^4^0^37^38^1434^0.4866^0.2406^4^Shadowmaw Panther^1688:3:3,213546:1:1^
 685^7^0^33^34^1434^0.2770^0.1606^7^Stranglethorn Raptor^1696:1:1,3685:5:5,4461:4:4,8146:1:1,12184:1:1^
@@ -122,6 +122,7 @@ GoldScout-export 6^wgcqozlp4rei^14
 @i^4338^Mageweave Cloth
 @i^4461^Raptor Hide
 @i^4553^Jagged Piece of Stone
+@i^4603^Raw Spotted Yellowtail
 @i^4633^Heavy Bronze Lockbox
 @i^4634^Iron Lockbox
 @i^4719^Nightsky Cloak
@@ -143,6 +144,8 @@ GoldScout-export 6^wgcqozlp4rei^14
 @i^6307^Message in a Bottle
 @i^6308^Raw Bristle Whisker Catfish
 @i^6309^17 Pound Catfish
+@i^6355^Sturdy Locked Chest
+@i^6357^Sealed Crate
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
 @i^6361^Raw Rainbow Fin Albacore
@@ -230,6 +233,7 @@ GoldScout-export 6^wgcqozlp4rei^14
 @q^4338^1:7:1
 @q^4461^1:7:1
 @q^4553^0:15:0
+@q^4603^1:7:1
 @q^4633^2:15:0
 @q^4634^2:15:0
 @q^4719^2:4:0
@@ -251,6 +255,8 @@ GoldScout-export 6^wgcqozlp4rei^14
 @q^6307^1:15:0
 @q^6308^1:7:1
 @q^6309^1:15:0
+@q^6355^1:15:0
+@q^6357^1:15:0
 @q^6358^1:7:1
 @q^6359^1:7:1
 @q^6361^1:7:1
@@ -1010,6 +1016,8 @@ GoldScout-export 6^wgcqozlp4rei^14
 @a^255560^313:4,333:2
 @a^260429^88:2
 @a^272291^164:1
+@f^1434^0^51^157^4603:7:7,6355:1:1,6357:1:1,6358:5:5,6359:5:5,6362:32:32^305:51
 @f^1437^0^100^125^6307:2:2,6358:29:29,6359:10:10,6361:59:59^241:100
+@f^1445^0^306^169^4603:62:62,6355:1:1,6357:1:1,6358:37:37,6359:31:31,6362:174:174^251:306
 @f^1453^0^171^1^858:1:1,6289:106:106,6291:29:29,6308:34:34,6309:1:1^271:171
 @l^0^enUS

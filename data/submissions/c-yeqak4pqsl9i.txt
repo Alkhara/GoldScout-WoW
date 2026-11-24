@@ -1,4 +1,4 @@
-GoldScout-export 6^yeqak4pqsl9i^31
+GoldScout-export 6^yeqak4pqsl9i^32
 92^32^0^39^40^1418^0.4225^0.8047^32^Elémentaire de roche^4041:1:1,4552:1:1,4553:17:17,4784:21:21,7067:4:4,7848:5:5,7912:6:8,8150:7:7,248710:1:1^
 94^1^0^5^6^1429^0.3662^0.5362^1^Vide-gousset défias^^
 116^1^0^9^9^1429^0.5206^0.5945^1^Bandit défias^^
@@ -44,6 +44,9 @@ GoldScout-export 6^yeqak4pqsl9i^31
 2559^1^0^30^31^1417^0.4781^0.5013^1^Arpenteur des hautes-terres^4461:1:1^
 2563^1^0^32^33^1417^0.4813^0.4932^1^Rampant des plaines^878:1:1,3182:1:1^
 2565^2^0^35^36^1417^0.5295^0.5768^2^Rampant des plaines géant^878:1:1,1081:2:2,2251:1:1,4585:1:1^
+2649^1^0^41^41^1425^0.2305^0.5839^1^Scalpeur Witherbark^1520:1:1^
+2651^9^0^42^43^1425^0.3138^0.5737^9^Ecorcheur Witherbark^1520:1:1,4338:1:1,4589:2:2,4599:1:1,8153:1:1,9259:5:5^
+2652^2^0^43^43^1425^0.3107^0.5842^2^Sang-venin Fânécorce^4306:1:2,9259:1:1^
 2727^3^0^35^36^1418^0.5192^0.3876^3^Coyote des rochers^4582:1:1,7846:3:5,248692:1:1^
 2728^8^0^37^38^1418^0.5124^0.6365^8^Coyote farouche des rochers^4583:3:3,7846:3:4,12203:3:3^
 2729^6^0^39^40^1418^0.3586^0.6900^6^Ancien coyote des rochers^4582:2:2,5637:2:2,7846:1:1,12203:5:5^
@@ -107,6 +110,11 @@ GoldScout-export 6^yeqak4pqsl9i^31
 4301^3^0^0^0^0^0.0000^0.0000^0^^1477:1:1,4306:1:1,248693:1:1^
 4303^2^0^0^0^0^0.0000^0.0000^0^^^
 4308^1^0^0^0^0^0.0000^0.0000^0^^^
+4323^12^0^41^42^1445^0.4266^0.7725^12^Jeune incendiaire^4402:3:3,4460:2:2,6444:3:3,12239:1:1,279934:6:6^
+4324^15^0^42^43^1445^0.4287^0.7908^15^Dragonnet incendiaire^4402:2:2,4460:5:5,6444:2:2,279934:10:10^
+4329^2^0^41^42^1445^0.4309^0.7538^2^Eclaireur Crins-de-feu^279934:1:1^
+4331^3^0^42^43^1445^0.4291^0.7695^3^Queue-cendrée Crins-de-feu^279934:3:3^
+4401^1^0^39^40^1445^0.5866^0.4743^1^Claqueur Bourbecoque^^
 4435^3^0^0^0^0^0.0000^0.0000^0^^248687:1:1,262888:1:1^
 4436^5^0^0^0^0^0.0000^0.0000^0^^1782:1:1,4306:1:3^
 4442^2^0^0^0^0^0.0000^0.0000^0^^4306:1:3^
@@ -489,6 +497,7 @@ GoldScout-export 6^yeqak4pqsl9i^31
 @i^4093^Grande queue de basilic
 @i^4306^Etoffe de soie
 @i^4338^Etoffe de tisse-mage
+@i^4402^Petit sac de flammes
 @i^4416^Schéma : Mine gobeline
 @i^4421^Parchemin de Protection III
 @i^4422^Parchemin d'Endurance III
@@ -505,6 +514,7 @@ GoldScout-export 6^yeqak4pqsl9i^31
 @i^4582^Queue fournie soyeuse
 @i^4583^Epaisse crinière
 @i^4585^Mandibule d'araignée visqueuse
+@i^4589^Longue plume élégante
 @i^4599^Jambonneau traité
 @i^4601^Pain de banane doux
 @i^4603^Jaune-queue tacheté cru
@@ -602,8 +612,10 @@ GoldScout-export 6^yeqak4pqsl9i^31
 @i^8140^Ceinturon chromite
 @i^8150^Sel de Fonderoc
 @i^8151^Flacon de mojo
+@i^8153^Sauvageonne
 @i^8750^Casque en cuir épais
 @i^8751^Camail en anneaux doubliers
+@i^9259^Collier tribal troll
 @i^9298^Recette : Elixir des géants
 @i^9355^Boucle d'oreille
 @i^9407^Pantalon Stoneweaver
@@ -644,6 +656,7 @@ GoldScout-export 6^yeqak4pqsl9i^31
 @i^12205^Viande d'araignée blanche
 @i^12206^Viande de crabe tendre
 @i^12207^Oeuf géant
+@i^12239^Recette : Chili de souffle de dragon
 @i^14121^Gilet aborigène d'intelligence
 @i^14131^Ceinture rituelle d'esprit
 @i^14255^Ceinture lunaire de canalisation
@@ -755,6 +768,7 @@ GoldScout-export 6^yeqak4pqsl9i^31
 @i^276158^Éclat cristallisé
 @i^276160^Fragment de mana
 @i^276894^Idole antique des Gurubashi
+@i^279934^Écaille de dragon sombre tombée
 @i^281052^Peau d'Ombassa
 @i^286430^Casse-Kof
 @i^287013^Cuissards de harnois de guerre krol'dok
@@ -901,6 +915,7 @@ GoldScout-export 6^yeqak4pqsl9i^31
 @q^4093^0:15:0
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4402^1:7:1
 @q^4416^2:9:0
 @q^4421^1:0:0
 @q^4422^1:0:0
@@ -917,6 +932,7 @@ GoldScout-export 6^yeqak4pqsl9i^31
 @q^4582^1:12:0
 @q^4583^0:15:0
 @q^4585^0:15:0
+@q^4589^1:7:1
 @q^4599^1:0:0
 @q^4601^1:0:0
 @q^4603^1:7:1
@@ -1014,8 +1030,10 @@ GoldScout-export 6^yeqak4pqsl9i^31
 @q^8140^2:4:0
 @q^8150^1:7:1
 @q^8151^1:7:1
+@q^8153^1:7:1
 @q^8750^0:4:0
 @q^8751^0:4:0
+@q^9259^1:15:0
 @q^9298^2:9:0
 @q^9355^0:15:0
 @q^9407^3:4:0
@@ -1056,6 +1074,7 @@ GoldScout-export 6^yeqak4pqsl9i^31
 @q^12205^1:7:1
 @q^12206^1:7:1
 @q^12207^1:7:1
+@q^12239^1:9:0
 @q^14121^2:4:0
 @q^14131^2:4:0
 @q^14255^2:4:0
@@ -1167,6 +1186,7 @@ GoldScout-export 6^yeqak4pqsl9i^31
 @q^276158^0:15:0
 @q^276160^0:15:0
 @q^276894^1:12:0
+@q^279934^1:12:0
 @q^281052^1:12:0
 @q^286430^3:2:0
 @q^287013^3:4:0
@@ -1178,12 +1198,14 @@ GoldScout-export 6^yeqak4pqsl9i^31
 @m^1418^Terres ingrates
 @m^1421^Forêt des Pins argentés
 @m^1424^Contreforts de Hautebrande
+@m^1425^Les Hinterlands
 @m^1426^Dun Morogh
 @m^1429^Forêt d'Elwynn
 @m^1431^Bois de la Pénombre
 @m^1432^Loch Modan
 @m^1434^Vallée de Strangleronce
 @m^1443^Désolace
+@m^1445^Marécage d'Âprefange
 @m^1446^Tanaris
 @m^2548^Rives Claires
 @m^2652^Shen'dralas
@@ -1951,6 +1973,9 @@ GoldScout-export 6^yeqak4pqsl9i^31
 @a^2559^209:1
 @a^2563^189:1
 @a^2565^230:2
+@a^2649^224:1
+@a^2651^225:2,226:7
+@a^2652^225:1,246:1
 @a^2727^150:3
 @a^2728^210:1,211:1,230:1,250:1,270:1,288:1,289:1,310:1
 @a^2729^243:1,267:3,288:2
@@ -1986,6 +2011,11 @@ GoldScout-export 6^yeqak4pqsl9i^31
 @a^3638^230:1
 @a^3641^210:2
 @a^4127^171:1
+@a^4323^288:3,308:7,328:2
+@a^4324^308:11,328:4
+@a^4329^288:1,308:1
+@a^4331^288:1,308:1,328:1
+@a^4401^191:1
 @a^4689^153:1
 @a^4692^93:1
 @a^4693^172:1,192:1

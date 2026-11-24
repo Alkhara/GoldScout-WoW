@@ -1,4 +1,4 @@
-GoldScout-export 6^h1hb8998rke8^16
+GoldScout-export 6^h1hb8998rke8^17
 587^7^0^33^34^1434^0.3154^0.1765^7^Krieger der Bloodscalp^1519:1:1,1520:1:1,2751:1:1,3901:2:2,3915:3:3,4306:2:3^
 588^3^0^34^35^1434^0.2474^0.1190^3^Späher der Bloodscalp^2592:1:1^
 595^8^0^34^35^1434^0.2410^0.1284^8^Jäger der Bloodscalp^1519:2:2,1710:1:1,2751:1:1,3787:1:1,3792:1:1,4306:3:3,213545:1:1^
@@ -71,6 +71,9 @@ GoldScout-export 6^h1hb8998rke8^16
 2623^22^0^32^33^1416^0.1896^0.8863^19^Geist der Vergangenheit^^
 2628^1^0^34^34^1416^0.2280^0.5843^1^Tagelöhner von Dalaran^4306:1:1^
 2667^6^0^36^37^1434^0.3691^0.3103^6^Zauberschutz von Laze^^
+2729^11^0^39^40^1418^0.3344^0.6533^11^Alter Klippenkojote^4583:6:6,5637:1:1,8146:1:1,9900:1:1,9927:1:1,12203:5:5^
+2734^2^0^41^41^1418^0.2399^0.6091^2^Kammpirscherpatriarch^1688:1:1,12202:2:2^
+2831^1^0^39^41^1418^0.2617^0.6136^1^Riesenbussard^5116:1:1,12037:1:1^
 3560^7^0^0^0^1434^0.2238^0.1175^6^Heilungszauberschutz^^
 4130^4^0^32^33^1441^0.6945^0.8407^4^Silithidsucher^5854:1:1,5855:1:1,5877:1:1,6300:1:1,6302:1:1^
 4133^7^0^33^34^1441^0.6985^0.8509^7^Silithidschwarmdrohne^5853:3:3,5854:4:4,6300:1:1,6302:1:1,14196:1:1^
@@ -208,6 +211,7 @@ GoldScout-export 6^h1hb8998rke8^16
 @i^4553^Gezacktes Steinstück
 @i^4555^Dicker geschuppter Schwanz
 @i^4556^Getupftes Muschelschalenfragment
+@i^4583^Dicke fellige Mähne
 @i^4585^Tropfender Spinnenunterkiefer
 @i^4586^Glatte Raptorenhaut
 @i^4606^Schwammerl
@@ -254,10 +258,13 @@ GoldScout-export 6^h1hb8998rke8^16
 @i^7437^Twilightmanschetten der Intelligenz
 @i^7453^Muster: Hurtige Stiefel
 @i^7462^Rittergurt der Bestie
+@i^8146^Tückische Klaue
 @i^8150^Tiefsteinsalz
 @i^8188^Explosive Schrotflinte
 @i^9817^Befestigte Schiftung des Adlers
 @i^9819^Haltbare Tunika des Frostschutzes
+@i^9900^Jazeraintstulpen des Arkanschutzes
+@i^9927^Brigadearmschienen der Macht
 @i^10285^Schattenseide
 @i^11384^Zerbrochene Basiliskenzähne
 @i^11385^Basiliskenschuppe
@@ -266,6 +273,7 @@ GoldScout-export 6^h1hb8998rke8^16
 @i^12037^Eigenartiges Fleisch
 @i^12184^Raptorfleisch
 @i^12202^Tigerfleisch
+@i^12203^Rotes Wolfsfleisch
 @i^12205^Weißes Spinnenfleisch
 @i^14196^Distelfellsandalen des Ältesten
 @i^15242^Gewetztes Stilett des Bären
@@ -389,6 +397,7 @@ GoldScout-export 6^h1hb8998rke8^16
 @q^4553^0:15:0
 @q^4555^0:15:0
 @q^4556^0:15:0
+@q^4583^0:15:0
 @q^4585^0:15:0
 @q^4586^0:15:0
 @q^4606^1:0:0
@@ -435,10 +444,13 @@ GoldScout-export 6^h1hb8998rke8^16
 @q^7437^2:4:0
 @q^7453^2:9:0
 @q^7462^2:4:0
+@q^8146^1:7:1
 @q^8150^1:7:1
 @q^8188^2:2:0
 @q^9817^2:4:0
 @q^9819^2:4:0
+@q^9900^2:4:0
+@q^9927^2:4:0
 @q^10285^1:7:1
 @q^11384^0:15:0
 @q^11385^0:15:0
@@ -447,6 +459,7 @@ GoldScout-export 6^h1hb8998rke8^16
 @q^12037^1:7:1
 @q^12184^1:7:1
 @q^12202^1:7:1
+@q^12203^1:7:1
 @q^12205^1:7:1
 @q^14196^2:4:0
 @q^15242^2:2:0
@@ -486,6 +499,7 @@ GoldScout-export 6^h1hb8998rke8^16
 @q^286987^3:4:0
 @m^1416^Alteracgebirge
 @m^1417^Arathihochland
+@m^1418^Ödland
 @m^1421^Silberwald
 @m^1424^Vorgebirge von Hillsbrad
 @m^1434^Schlingendorntal
@@ -1283,6 +1297,9 @@ GoldScout-export 6^h1hb8998rke8^16
 @a^2623^343:17,344:1,364:1
 @a^2628^224:1
 @a^2667^107:1,127:5
+@a^2729^245:1,246:2,266:3,267:5
+@a^2734^223:1,245:1
+@a^2831^245:1
 @a^3560^24:1,43:2,44:2,45:1
 @a^4130^333:2,334:1,353:1
 @a^4133^333:2,353:4,354:1

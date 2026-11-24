@@ -1,5 +1,6 @@
-GoldScout-export 5^9spuogaasg1d^7
+GoldScout-export 6^9spuogaasg1d^10
 1547^1^0^5^5^1420^0.6645^0.5704^1^Decrepit Darkhound^2672:1:1,3299:1:1^
+1778^2^0^11^12^1421^0.5078^0.3716^2^Ferocious Grizzled Bear^3173:1:1,3253:2:2,11406:1:1^
 2265^1^0^24^25^1424^0.3286^0.4413^1^Hillsbrad Apprentice Blacksmith^1205:1:1^
 2372^4^0^26^27^1424^0.6527^0.6287^4^Mudsnout Gnoll^929:1:1,4306:1:1^
 2373^3^0^27^28^1424^0.6533^0.6233^3^Mudsnout Shaman^2592:2:2^
@@ -56,6 +57,8 @@ GoldScout-export 5^9spuogaasg1d^7
 @i^2592^Wool Cloth
 @i^2672^Stringy Wolf Meat
 @i^3171^Broken Boar Tusk
+@i^3173^Bear Meat
+@i^3253^Grizzled Bear Heart
 @i^3299^Fractured Canine
 @i^3385^Lesser Mana Potion
 @i^3770^Mutton Chop
@@ -74,6 +77,7 @@ GoldScout-export 5^9spuogaasg1d^7
 @i^7070^Elemental Water
 @i^8186^Dire Wand
 @i^9451^Bubbling Water
+@i^11406^Rotting Bear Carcass
 @i^12006^Meadow Ring of the Monkey
 @i^15230^Ridge Cleaver of Shadow Protection
 @i^15545^Thick Scale Bracelets of Frost Protection
@@ -107,6 +111,8 @@ GoldScout-export 5^9spuogaasg1d^7
 @q^2592^1:7:1
 @q^2672^1:7:1
 @q^3171^0:15:0
+@q^3173^1:7:1
+@q^3253^1:12:0
 @q^3299^0:15:0
 @q^3385^1:0:0
 @q^3770^1:0:0
@@ -125,6 +131,7 @@ GoldScout-export 5^9spuogaasg1d^7
 @q^7070^1:7:1
 @q^8186^2:2:0
 @q^9451^1:0:0
+@q^11406^0:15:0
 @q^12006^2:4:0
 @q^15230^2:2:0
 @q^15545^2:4:0
@@ -145,6 +152,7 @@ GoldScout-export 5^9spuogaasg1d^7
 @m^1411^Durotar
 @m^1414^Kalimdor
 @m^1420^Tirisfal Glades
+@m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
 @m^1440^Ashenvale
 @m^1441^Thousand Needles
@@ -1477,6 +1485,7 @@ GoldScout-export 5^9spuogaasg1d^7
 @c^279987^
 @c^286152^
 @a^1547^233:1
+@a^1778^150:2
 @a^2265^166:1
 @a^2372^252:1,253:3
 @a^2373^252:2,253:1

@@ -1,4 +1,4 @@
-GoldScout-export 6^1zo0nkg1fpct^17
+GoldScout-export 6^1zo0nkg1fpct^18
 6^7^0^1^2^1429^0.4871^0.3642^7^Kobold Vermin^159:1:1,755:3:3,2589:1:1,4536:2:2,247834:1:1^
 38^34^0^3^4^1429^0.5379^0.4893^34^Defias Thug^159:2:2,752:12:12,1367:1:1,1368:1:1,1369:2:2,1378:1:1,2057:1:1,2210:1:1,2589:6:6,2649:1:1,2650:1:1,2651:1:1,3365:1:1^
 40^26^0^6^7^1429^0.5091^0.6762^26^Kobold Miner^118:1:1,159:1:1,772:6:6,773:2:2,818:1:1,1412:2:2,1425:1:1,1427:1:1,2589:4:6,2770:1:2,248001:4:4^
@@ -86,6 +86,9 @@ GoldScout-export 6^1zo0nkg1fpct^17
 1922^1^0^7^8^1429^0.7449^0.6303^1^Gray Forest Wolf^2672:1:1^
 2102^7^0^20^21^1437^0.4814^0.7625^7^Dragonmaw Grunt^1792:1:1,2592:3:5,248684:1:1^
 2103^7^0^19^20^1437^0.4865^0.7778^7^Dragonmaw Scout^1770:1:1,2592:1:2,2764:1:1,3770:1:1^
+2181^11^0^18^19^1439^0.5967^0.1989^11^Stormscale Myrmidon^5523:1:1,6289:1:3,279276:5:5^
+2182^12^0^19^20^1439^0.6051^0.2140^12^Stormscale Sorceress^3306:1:1,5523:3:3,6289:1:2,279276:8:8^
+2183^18^0^20^21^1439^0.6095^0.1994^18^Stormscale Warrior^1206:1:1,5523:7:7,6289:1:3,15312:1:1,17057:3:3,279276:6:6^
 3947^1^0^0^0^0^0.0000^0.0000^0^^1740:1:1^
 4040^12^0^21^22^1437^0.4714^0.6141^12^Cave Stalker^1081:5:5,2251:3:3,3174:5:5,3182:1:1,4428:1:1,6838:10:10^
 4064^2^0^20^21^1433^0.5787^0.4947^2^Blackrock Scout^2589:1:5,2592:1:2^
@@ -101,6 +104,7 @@ GoldScout-export 6^1zo0nkg1fpct^17
 248362^1^0^3^3^1429^0.4919^0.2794^1^Shinyfinder Narf^247886:1:1^
 248464^1^0^6^6^1429^0.4164^0.8006^1^Nimsy^2589:1:1,2835:1:2,248002:1:1^
 248474^1^0^7^7^1429^0.6140^0.4902^1^Geosculptor Yip^248003:1:1^
+270294^1^0^21^21^1439^0.5925^0.2284^1^Baron Marinous^279275:1:1^
 @i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
 @i^182^Garrick's Head
@@ -131,6 +135,7 @@ GoldScout-export 6^1zo0nkg1fpct^17
 @i^1081^Crisp Spider Meat
 @i^1179^Ice Cold Milk
 @i^1205^Melon Juice
+@i^1206^Moss Agate
 @i^1212^Gnoll Spittle
 @i^1220^Lupine Axe
 @i^1221^Underbelly Whelp Scale
@@ -218,6 +223,7 @@ GoldScout-export 6^1zo0nkg1fpct^17
 @i^3182^Spider's Silk
 @i^3184^Hook Dagger of Defense
 @i^3299^Fractured Canine
+@i^3306^Brackwater Vest
 @i^3363^Frayed Belt
 @i^3365^Frayed Bracers
 @i^3376^Canvas Belt
@@ -265,8 +271,10 @@ GoldScout-export 6^1zo0nkg1fpct^17
 @i^9815^Fortified Leggings of the Eagle
 @i^10405^Bandit Shoulders
 @i^14168^Buccaneer's Gloves of Frost Protection
+@i^15312^Feral Leggings of Spirit
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
+@i^21113^Watertight Trunk
 @i^211784^Scroll: WUBBA WUBBA
 @i^211785^Scroll: CWAL
 @i^211853^Scroll: VOCE WELL
@@ -293,6 +301,8 @@ GoldScout-export 6^1zo0nkg1fpct^17
 @i^271872^Broken Staff of Incinerator Gar'im
 @i^273289^Ogre Loincloth
 @i^273297^Goblin Hammer
+@i^279275^Clouded Water Globe
+@i^279276^Mathystral Amulet Fragment
 @i^286215^Vial of Animal Blood
 @q^118^1:0:0
 @q^159^1:0:0
@@ -324,6 +334,7 @@ GoldScout-export 6^1zo0nkg1fpct^17
 @q^1081^1:7:1
 @q^1179^1:0:0
 @q^1205^1:0:0
+@q^1206^2:7:1
 @q^1212^0:15:0
 @q^1220^2:2:0
 @q^1221^1:12:0
@@ -411,6 +422,7 @@ GoldScout-export 6^1zo0nkg1fpct^17
 @q^3182^1:7:1
 @q^3184^2:2:0
 @q^3299^0:15:0
+@q^3306^2:4:0
 @q^3363^0:4:0
 @q^3365^0:4:0
 @q^3376^0:4:0
@@ -458,8 +470,10 @@ GoldScout-export 6^1zo0nkg1fpct^17
 @q^9815^2:4:0
 @q^10405^1:4:0
 @q^14168^2:4:0
+@q^15312^2:4:0
 @q^17056^1:15:1
 @q^17057^1:15:0
+@q^21113^1:15:0
 @q^211784^1:0:0
 @q^211785^1:0:0
 @q^211853^1:0:0
@@ -486,12 +500,15 @@ GoldScout-export 6^1zo0nkg1fpct^17
 @q^271872^1:12:0
 @q^273289^3:4:0
 @q^273297^3:2:0
+@q^279275^2:12:0
+@q^279276^1:0:0
 @q^286215^1:12:0
 @m^1415^Eastern Kingdoms
 @m^1429^Elwynn Forest
 @m^1432^Loch Modan
 @m^1433^Redridge Mountains
 @m^1437^Wetlands
+@m^1439^Darkshore
 @c^118^
 @c^724^
 @c^733^
@@ -2004,6 +2021,9 @@ GoldScout-export 6^1zo0nkg1fpct^17
 @a^1922^254:1
 @a^2102^289:2,309:5
 @a^2103^309:6,329:1
+@a^2181^71:2,72:4,91:3,92:1,111:1
+@a^2182^71:1,72:3,91:4,92:4
+@a^2183^71:2,72:8,92:8
 @a^4040^229:3,249:7,250:1,269:1
 @a^4064^191:2
 @a^4065^169:1,212:3,232:2
@@ -2016,5 +2036,7 @@ GoldScout-export 6^1zo0nkg1fpct^17
 @a^248362^109:1
 @a^248464^328:1
 @a^248474^192:1
+@a^270294^91:1
 @f^1433^0^83^121^6289:36:36,6308:47:47^204:83
+@f^1437^0^2^150^21113:2:2^221:2
 @l^0^enUS
