@@ -1,4 +1,4 @@
-GoldScout-export 6^mdxijtx7qbem^17
+GoldScout-export 6^mdxijtx7qbem^18
 36^5^0^11^12^1436^0.4423^0.5229^5^Harvest Golem^732:3:3,814:2:2,1274:3:3,4359:1:1,9750:1:1^
 48^14^0^21^22^1431^0.7938^0.7102^14^Skeletal Warrior^1802:1:1,2378:5:5,2592:5:8^
 95^18^0^11^12^1436^0.4544^0.2581^18^Defias Smuggler^414:2:2,829:9:9,1179:2:2,1515:1:1,1733:1:1,2589:7:13^
@@ -130,6 +130,10 @@ GoldScout-export 6^mdxijtx7qbem^17
 1166^6^0^13^14^1432^0.2987^0.8352^6^Stonesplinter Seer^1505:1:1,2266:1:1,2536:2:2^
 1172^15^0^10^11^1432^0.2992^0.2521^15^Tunnel Rat Vermin^1413:1:1,1737:1:1,2282:1:1,2589:8:19,3110:4:4^
 1173^20^0^10^11^1432^0.2521^0.3090^20^Tunnel Rat Scout^2589:5:10,2777:1:1,3110:7:7,4678:1:1^
+1178^4^0^19^19^1432^0.7159^0.2208^4^Mo'grosh Ogre^1179:1:1,1738:1:1,2589:1:5,2592:1:1,9787:1:1,248683:1:1^
+1179^4^0^18^19^1432^0.7133^0.2321^4^Mo'grosh Enforcer^1768:1:1,1787:1:1,2592:1:1,2988:1:1^
+1180^3^0^19^20^1432^0.7570^0.2208^3^Mo'grosh Brute^2589:1:5^
+1185^1^0^17^17^1432^0.6287^0.2000^1^Wood Lurker^1081:1:1,3174:1:1,5465:1:2^
 1186^4^0^11^12^1432^0.2845^0.4545^4^Elder Black Bear^3169:1:1,3170:1:1,3173:3:3^
 1190^5^0^10^11^1432^0.3489^0.3242^5^Mountain Boar^769:4:4,774:1:1,2677:1:1,3171:1:1,3172:2:2^
 1191^2^0^14^15^1432^0.4301^0.6049^2^Mangy Mountain Boar^769:1:1,2677:1:1,3172:1:1^
@@ -141,6 +145,7 @@ GoldScout-export 6^mdxijtx7qbem^17
 1202^1^0^11^11^1432^0.3839^0.1181^1^Tunnel Rat Kobold^2589:1:1,3110:1:1^
 1205^1^0^17^17^1432^0.3432^0.9175^1^Grawmug^^
 1206^1^0^16^16^1432^0.3437^0.9171^1^Gnasher^2589:1:3^
+1210^1^0^22^22^1432^0.7924^0.1551^1^Chok'sul^2561:1:1^
 1211^30^0^8^10^1426^0.2700^0.3728^30^Leper Gnome^118:1:1,159:1:1,1419:1:1,1430:1:1,2589:12:18,3083:7:7,3084:8:8,4540:1:1,15895:1:1,211787:1:1^
 1236^3^0^12^13^1436^0.4490^0.2035^3^Kobold Digger^1179:1:1,2589:1:1^
 1258^1^0^25^26^1431^0.6973^0.3683^1^Black Ravager Mastiff^3402:1:1^
@@ -281,6 +286,7 @@ GoldScout-export 6^mdxijtx7qbem^17
 @i^1768^Canvas Pants
 @i^1770^Canvas Vest
 @i^1776^Brocade Pants
+@i^1787^Patched Leather Belt
 @i^1788^Patched Leather Boots
 @i^1793^Patched Leather Shoulderpads
 @i^1802^Rawhide Tunic
@@ -310,6 +316,7 @@ GoldScout-export 6^mdxijtx7qbem^17
 @i^2455^Minor Mana Potion
 @i^2536^Trogg Stone Tooth
 @i^2555^Recipe: Swiftness Potion
+@i^2561^Chok'sul's Head
 @i^2589^Linen Cloth
 @i^2591^Dirty Trogg Cloth
 @i^2592^Wool Cloth
@@ -336,6 +343,7 @@ GoldScout-export 6^mdxijtx7qbem^17
 @i^2980^Veteran Gloves
 @i^2985^Inscribed Leather Breastplate
 @i^2986^Inscribed Leather Pants
+@i^2988^Inscribed Leather Gloves
 @i^3012^Scroll of Agility
 @i^3013^Scroll of Protection
 @i^3014^Battleworn Axe
@@ -443,6 +451,7 @@ GoldScout-export 6^mdxijtx7qbem^17
 @i^9765^Cadet Vest of Strength
 @i^9776^Bandit Boots of the Bear
 @i^9779^Bandit Cloak of the Wolf
+@i^9787^Raider's Gauntlets of the Eagle
 @i^9789^Raider's Legguards of Frost Protection
 @i^9796^Ivycloth Mantle of Shadow Protection
 @i^9818^Fortified Chain of the Falcon
@@ -575,6 +584,7 @@ GoldScout-export 6^mdxijtx7qbem^17
 @q^1768^0:4:0
 @q^1770^0:4:0
 @q^1776^0:4:0
+@q^1787^0:4:0
 @q^1788^0:4:0
 @q^1793^0:4:0
 @q^1802^0:4:0
@@ -604,6 +614,7 @@ GoldScout-export 6^mdxijtx7qbem^17
 @q^2455^1:0:0
 @q^2536^1:12:0
 @q^2555^2:9:0
+@q^2561^1:12:0
 @q^2589^1:7:1
 @q^2591^0:15:0
 @q^2592^1:7:1
@@ -630,6 +641,7 @@ GoldScout-export 6^mdxijtx7qbem^17
 @q^2980^2:4:0
 @q^2985^2:4:0
 @q^2986^2:4:0
+@q^2988^2:4:0
 @q^3012^1:0:0
 @q^3013^1:0:0
 @q^3014^1:12:0
@@ -737,6 +749,7 @@ GoldScout-export 6^mdxijtx7qbem^17
 @q^9765^2:4:0
 @q^9776^2:4:0
 @q^9779^2:4:0
+@q^9787^2:4:0
 @q^9789^2:4:0
 @q^9796^2:4:0
 @q^9818^2:4:0
@@ -1603,6 +1616,10 @@ GoldScout-export 6^mdxijtx7qbem^17
 @a^1166^325:4,327:1,345:1
 @a^1172^47:4,66:1,67:1,105:2,124:6,165:1
 @a^1173^104:7,105:6,124:3,125:3,165:1
+@a^1178^93:2,94:1,114:1
+@a^1179^74:1,93:1,94:1,114:1
+@a^1180^75:1,95:1,114:1
+@a^1185^72:1
 @a^1186^145:2,205:2
 @a^1190^66:1,126:1,147:3
 @a^1191^228:1,248:1
@@ -1614,6 +1631,7 @@ GoldScout-export 6^mdxijtx7qbem^17
 @a^1202^47:1
 @a^1205^366:1
 @a^1206^366:1
+@a^1210^75:1
 @a^1211^145:27,165:3
 @a^1236^68:1,69:1,88:1
 @a^1258^153:1
