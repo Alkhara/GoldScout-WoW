@@ -1,4 +1,4 @@
-GoldScout-export 6^lt1x62n5va7r^14
+GoldScout-export 6^lt1x62n5va7r^15
 1548^1^0^7^8^1420^0.5486^0.6383^1^Cursed Darkhound^2672:1:1,3299:1:1^
 1769^1^0^10^11^1421^0.5181^0.4651^1^Moonrage Whitescalp^1495:1:1^
 1888^9^0^18^19^1421^0.6346^0.6028^9^Dalaran Watcher^414:1:1,2589:1:1,2592:1:2,4695:1:1,248685:1:1^
@@ -122,9 +122,10 @@ GoldScout-export 6^lt1x62n5va7r^14
 260800^2^0^0^0^0^0.0000^0.0000^0^^1697:1:1,271100:1:1^
 260801^3^0^0^0^0^0.0000^0.0000^0^^3180:1:1,3685:2:2,5635:1:1,271100:1:1^
 260804^1^0^0^0^0^0.0000^0.0000^0^^1074:1:1,3182:1:1^
-264079^1^0^27^28^1412^0.3391^0.1250^1^Gloomrise Hatchling^^
-264081^1^0^28^28^1412^0.3237^0.1196^1^Gloomrise Spinner^878:1:1,3182:1:1^
-264083^2^0^28^28^1412^0.3329^0.1261^2^Gloomrise Soldier^3167:1:1,3206:1:1,5465:1:1^
+264079^3^0^27^28^1412^0.3291^0.1030^3^Gloomrise Hatchling^3167:1:1^
+264081^6^0^28^28^1412^0.3321^0.0987^6^Gloomrise Spinner^878:1:1,1081:3:3,1475:2:2,3182:1:1,3931:2:2,14181:1:1,248689:1:1,273181:2:2^
+264082^1^0^30^30^1412^0.3355^0.0716^1^Broodmother Valraxx^273658:1:1^
+264083^3^0^28^29^1412^0.3391^0.1167^3^Gloomrise Soldier^1081:1:1,3167:2:2,3174:1:1,3206:1:1,5465:2:2^
 274715^2^0^0^0^0^0.0000^0.0000^0^^1705:1:1,3667:1:1^
 @i^414^Dalaran Sharp
 @i^422^Dwarven Mild
@@ -144,6 +145,7 @@ GoldScout-export 6^lt1x62n5va7r^14
 @i^1210^Shadowgem
 @i^1454^Axe of the Enforcer
 @i^1468^Murloc Fin
+@i^1475^Small Venom Sac
 @i^1485^Pitchfork
 @i^1495^Calico Shoes
 @i^1697^Keen Raptor Tooth
@@ -189,6 +191,7 @@ GoldScout-export 6^lt1x62n5va7r^14
 @i^3012^Scroll of Agility
 @i^3078^Naga Heartpiercer
 @i^3167^Thick Spider Hair
+@i^3174^Spider Ichor
 @i^3180^Flecked Raptor Scale
 @i^3181^Partially Digested Meat
 @i^3182^Spider's Silk
@@ -218,6 +221,7 @@ GoldScout-export 6^lt1x62n5va7r^14
 @i^3740^Decapitating Sword of Spirit
 @i^3748^Feline Mantle
 @i^3770^Mutton Chop
+@i^3931^Poisoned Spider Fang
 @i^4306^Silk Cloth
 @i^4350^Pattern: Spider Silk Slippers
 @i^4428^Spider Palp
@@ -268,6 +272,7 @@ GoldScout-export 6^lt1x62n5va7r^14
 @i^11406^Rotting Bear Carcass
 @i^11407^Torn Bear Pelt
 @i^14177^Watcher's Cuffs of the Sorcerer
+@i^14181^Watcher's Handwraps of Shadow Wrath
 @i^14367^Mystic's Gloves
 @i^14369^Mystic's Wrap
 @i^14373^Sanguine Belt
@@ -316,6 +321,8 @@ GoldScout-export 6^lt1x62n5va7r^14
 @i^273028^Reliquary Mantle
 @i^273087^Blueprint: Journeyman Campfire
 @i^273088^Snake Eye Kaleidoscope
+@i^273181^Crystalline Silk
+@i^273658^Bloody Parchment
 @i^273839^Spiked Shell Band
 @i^273842^Treacherous Treads
 @i^273843^Fallenroot Longbow
@@ -337,6 +344,7 @@ GoldScout-export 6^lt1x62n5va7r^14
 @q^1210^2:7:1
 @q^1454^3:2:0
 @q^1468^1:7:1
+@q^1475^1:7:1
 @q^1485^0:2:0
 @q^1495^0:4:0
 @q^1697^0:15:0
@@ -382,6 +390,7 @@ GoldScout-export 6^lt1x62n5va7r^14
 @q^3012^1:0:0
 @q^3078^3:2:0
 @q^3167^0:15:0
+@q^3174^1:7:1
 @q^3180^0:15:0
 @q^3181^0:15:0
 @q^3182^1:7:1
@@ -411,6 +420,7 @@ GoldScout-export 6^lt1x62n5va7r^14
 @q^3740^2:2:0
 @q^3748^3:4:0
 @q^3770^1:0:0
+@q^3931^0:15:0
 @q^4306^1:7:1
 @q^4350^2:9:0
 @q^4428^0:15:0
@@ -461,6 +471,7 @@ GoldScout-export 6^lt1x62n5va7r^14
 @q^11406^0:15:0
 @q^11407^1:12:0
 @q^14177^2:4:0
+@q^14181^2:4:0
 @q^14367^2:4:0
 @q^14369^2:4:0
 @q^14373^2:4:0
@@ -509,6 +520,8 @@ GoldScout-export 6^lt1x62n5va7r^14
 @q^273028^3:4:0
 @q^273087^2:9:0
 @q^273088^3:4:0
+@q^273181^1:12:0
+@q^273658^1:15:0
 @q^273839^3:4:0
 @q^273842^3:4:0
 @q^273843^3:2:0
@@ -1133,7 +1146,8 @@ GoldScout-export 6^lt1x62n5va7r^14
 @a^12897^312:1
 @a^12918^251:1
 @a^12940^101:1
-@a^264079^46:1
-@a^264081^46:1
-@a^264083^46:2
+@a^264079^26:2,46:1
+@a^264081^26:5,46:1
+@a^264082^26:1
+@a^264083^27:1,46:2
 @l^0^enUS

@@ -1,4 +1,4 @@
-GoldScout-export 6^6f4pc9exbt4s^34
+GoldScout-export 6^6f4pc9exbt4s^36
 48^2^1^21^22^1431^0.7816^0.7202^2^Skeletal Warrior^2592:1:1^5376:1:1
 202^7^0^23^24^1431^0.5565^0.5360^7^Skeletal Horror^929:1:1,1205:1:1,1820:1:1,2592:3:4^
 203^1^1^22^23^1431^0.7838^0.6746^1^Skeletal Mage^^
@@ -83,6 +83,15 @@ GoldScout-export 6^6f4pc9exbt4s^34
 1732^1^0^0^0^0^0.0000^0.0000^0^^2589:1:3^
 1754^1^1^31^31^1453^0.7227^0.3492^1^Lord Gregor Lescovar^^16883:1:1
 2044^3^0^25^26^1429^0.8557^0.6975^1^Forlorn Spirit^^
+2165^1^0^17^17^1439^0.4130^0.8136^1^Grizzled Thistle Bear^3169:1:1^
+2202^3^0^12^13^1439^0.3611^0.7712^3^Greymist Coastrunner^730:2:2,5523:1:1^
+2203^2^0^13^14^1439^0.3692^0.6637^2^Greymist Seer^730:2:2,5523:1:1^
+2204^1^0^15^15^1439^0.3657^0.7072^1^Greymist Netter^1506:1:1,5523:1:1,6289:1:2^
+2205^4^0^15^16^1439^0.3617^0.7732^4^Greymist Warrior^730:2:2,5523:2:2,5784:1:1,6289:1:2^
+2207^3^0^18^19^1439^0.3161^0.8623^3^Greymist Oracle^730:1:1,5523:1:1^
+2208^1^0^19^20^1439^0.3210^0.8331^1^Greymist Tidehunter^^
+2338^12^0^16^17^1439^0.3893^0.8654^12^Twilight Disciple^2287:1:1,2589:3:5,2592:2:2,279279:1:1^
+2339^15^0^17^18^1439^0.3899^0.8683^15^Twilight Thug^858:1:1,1788:1:1,2589:2:5,2592:1:1,211784:1:1,211855:1:1^
 3711^2^0^20^21^1440^0.0681^0.1310^2^Wrathtail Myrmidon^929:1:1^
 3712^1^0^19^20^1440^0.1119^0.1344^1^Wrathtail Razortail^^
 3713^2^0^18^19^1440^0.1301^0.2676^2^Wrathtail Wave Rider^^
@@ -133,6 +142,7 @@ GoldScout-export 6^6f4pc9exbt4s^34
 7079^1^0^0^0^0^0.0000^0.0000^0^^9454:1:1^
 7361^1^0^0^0^0^0.0000^0.0000^0^^274042:1:1^
 7603^19^0^0^0^0^0.0000^0.0000^0^^2592:1:1,4306:5:8,9309:7:7^
+10323^1^0^19^19^1439^0.3630^0.7717^1^Murkdeep^730:1:1,5523:1:1^
 250626^1^0^0^0^0^0.0000^0.0000^0^^2589:1:2^
 250657^1^0^0^0^0^0.0000^0.0000^0^^^
 269075^1^0^6^6^1426^0.2722^0.6313^1^Snow Leopard Prowler^4814:1:1^
@@ -165,6 +175,7 @@ GoldScout-export 6^6f4pc9exbt4s^34
 @i^1421^Worn Hide Cloak
 @i^1423^Worn Leather Pants
 @i^1468^Murloc Fin
+@i^1506^Warped Leather Gloves
 @i^1519^Bloodscalp Ear
 @i^1560^Bluegill Sandals
 @i^1630^Broken Electro-lantern
@@ -190,6 +201,7 @@ GoldScout-export 6^6f4pc9exbt4s^34
 @i^1783^Cross-stitched Gloves
 @i^1786^Cross-stitched Vest
 @i^1787^Patched Leather Belt
+@i^1788^Patched Leather Boots
 @i^1799^Rawhide Gloves
 @i^1801^Rawhide Shoulderpads
 @i^1805^Tough Leather Bracers
@@ -209,6 +221,7 @@ GoldScout-export 6^6f4pc9exbt4s^34
 @i^2217^Rectangular Shield
 @i^2220^Box Shield
 @i^2222^Tower Shield
+@i^2287^Haunch of Meat
 @i^2589^Linen Cloth
 @i^2591^Dirty Trogg Cloth
 @i^2592^Wool Cloth
@@ -291,6 +304,7 @@ GoldScout-export 6^6f4pc9exbt4s^34
 @i^5376^Broken Mirror
 @i^5427^Crude Pocket Watch
 @i^5431^Empty Hip Flask
+@i^5523^Small Barnacled Clam
 @i^5524^Thick-shelled Clam
 @i^5572^Small Green Pouch
 @i^5573^Green Leather Bag
@@ -358,7 +372,9 @@ GoldScout-export 6^6f4pc9exbt4s^34
 @i^21151^Rumsey Rum Black Label
 @i^21153^Raw Greater Sagefish
 @i^21228^Mithril Bound Trunk
+@i^211784^Scroll: WUBBA WUBBA
 @i^211853^Scroll: VOCE WELL
+@i^211855^Scroll: STHENIC LUNATE
 @i^213545^Scroll: PEATCHY ATTAX
 @i^216616^Compound Cage Key
 @i^248683^Waylaid Crate: Apprentice Ore
@@ -379,6 +395,7 @@ GoldScout-export 6^6f4pc9exbt4s^34
 @i^273637^Blade of Silverlaine
 @i^274042^Skullduggery Belt
 @i^274268^Dark Iron Map
+@i^279279^Peerless Eye
 @q^117^1:0:0
 @q^159^1:0:0
 @q^729^1:7:1
@@ -406,6 +423,7 @@ GoldScout-export 6^6f4pc9exbt4s^34
 @q^1421^0:4:0
 @q^1423^0:4:0
 @q^1468^1:7:1
+@q^1506^0:4:0
 @q^1519^1:12:0
 @q^1560^2:4:0
 @q^1630^0:15:0
@@ -431,6 +449,7 @@ GoldScout-export 6^6f4pc9exbt4s^34
 @q^1783^0:4:0
 @q^1786^0:4:0
 @q^1787^0:4:0
+@q^1788^0:4:0
 @q^1799^0:4:0
 @q^1801^0:4:0
 @q^1805^0:4:0
@@ -450,6 +469,7 @@ GoldScout-export 6^6f4pc9exbt4s^34
 @q^2217^0:4:0
 @q^2220^0:4:0
 @q^2222^0:4:0
+@q^2287^1:0:0
 @q^2589^1:7:1
 @q^2591^0:15:0
 @q^2592^1:7:1
@@ -532,6 +552,7 @@ GoldScout-export 6^6f4pc9exbt4s^34
 @q^5376^0:15:0
 @q^5427^0:15:0
 @q^5431^0:15:0
+@q^5523^1:7:0
 @q^5524^1:7:0
 @q^5572^1:1:0
 @q^5573^1:1:0
@@ -599,7 +620,9 @@ GoldScout-export 6^6f4pc9exbt4s^34
 @q^21151^1:0:0
 @q^21153^1:7:1
 @q^21228^1:15:0
+@q^211784^1:0:0
 @q^211853^1:0:0
+@q^211855^1:0:0
 @q^213545^1:0:0
 @q^216616^1:12:0
 @q^248683^1:0:1
@@ -620,6 +643,7 @@ GoldScout-export 6^6f4pc9exbt4s^34
 @q^273637^3:2:0
 @q^274042^3:4:0
 @q^274268^1:12:0
+@q^279279^1:12:0
 @m^1411^Durotar
 @m^1412^Mulgore
 @m^1415^Eastern Kingdoms
@@ -629,6 +653,7 @@ GoldScout-export 6^6f4pc9exbt4s^34
 @m^1434^Stranglethorn Vale
 @m^1436^Westfall
 @m^1437^Wetlands
+@m^1439^Darkshore
 @m^1440^Ashenvale
 @m^1441^Thousand Needles
 @m^1453^Stormwind City
@@ -2428,6 +2453,15 @@ GoldScout-export 6^6f4pc9exbt4s^34
 @a^1397^148:1,168:1
 @a^1754^134:1
 @a^2044^277:1
+@a^2165^328:1
+@a^2202^307:3
+@a^2203^247:1,287:1
+@a^2204^287:1
+@a^2205^307:4
+@a^2207^346:3
+@a^2208^326:1
+@a^2338^327:1,347:11
+@a^2339^347:15
 @a^3711^41:2
 @a^3712^42:1
 @a^3713^102:2
@@ -2445,6 +2479,7 @@ GoldScout-export 6^6f4pc9exbt4s^34
 @a^6213^208:1
 @a^6221^208:4
 @a^6231^208:1
+@a^10323^307:1
 @a^269075^245:1
 @a^271486^188:2
 @a^271530^188:2
