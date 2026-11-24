@@ -1,4 +1,4 @@
-GoldScout-export 6^55u9hbewjdhc^5
+GoldScout-export 6^55u9hbewjdhc^6
 2174^108^0^14^16^1439^0.3372^0.6908^108^Coastal Frenzy^537:41:41,2073:1:1,3036:1:1,3312:1:1,3314:1:1,4567:1:1,4874:19:19,5468:42:42,6361:20:28,14097:1:1,14116:1:1,211780:1:1,248683:1:1,249474:2:2^
 2240^1^0^33^33^1416^0.5470^0.6629^1^Syndicate Footpad^3601:1:1,248694:1:1^
 2244^8^0^21^22^1424^0.7815^0.4355^8^Syndicate Shadow Mage^2589:3:6,2592:1:1,3012:1:1,12989:1:1^
@@ -62,10 +62,21 @@ GoldScout-export 6^55u9hbewjdhc^5
 11562^1^0^34^34^1443^0.2649^0.7593^1^Drysnap Crawler^^
 13019^1^0^33^33^1443^0.5534^0.3016^1^Burning Blade Seer^15750:1:1^
 14278^1^0^28^28^1424^0.6660^0.5966^1^Ro'Bark^4306:1:1,6612:1:1^
+246016^1^0^0^0^1416^0.0000^0.0000^0^^273043:1:1^
+246020^1^0^0^0^1416^0.0000^0.0000^0^^251961:1:1,273051:1:1^
+246602^1^0^0^0^1416^0.0000^0.0000^0^^1754:1:1^
+246664^3^0^0^0^1416^0.0000^0.0000^0^^6438:1:1,6439:1:1,275997:2:2,276160:1:1^
+246890^1^0^0^0^1416^0.0000^0.0000^0^^1705:1:1^
+247001^1^0^0^0^1416^0.0000^0.0000^0^^276160:1:1^
+247003^1^0^0^0^1416^0.0000^0.0000^0^^276158:1:1^
+247032^1^0^0^0^1416^0.0000^0.0000^0^^273054:1:1^
+255068^1^0^0^0^1416^0.0000^0.0000^0^^^
+255069^1^0^0^0^1416^0.0000^0.0000^0^^4072:1:1^
 266849^5^0^5^6^1411^0.5121^0.5405^5^Ridgeshade Lurker^1476:3:3,2590:2:2,5465:3:5^
 266850^3^0^5^6^1411^0.5096^0.5437^3^Ridgeshade Creeper^1476:1:1,2590:2:2,5465:1:2^
 266851^1^0^8^8^1411^0.4956^0.5665^1^Ukorsbane^1476:1:1,5465:1:2,275722:1:1^
 268530^1^0^9^9^1411^0.6886^0.7220^1^Bloodtalon Matriarch^277128:1:1^
+269134^1^0^0^0^1416^0.0000^0.0000^0^^4606:1:1^
 @i^117^Tough Jerky
 @i^159^Refreshing Spring Water
 @i^422^Dwarven Mild
@@ -87,8 +98,10 @@ GoldScout-export 6^55u9hbewjdhc^5
 @i^1421^Worn Hide Cloak
 @i^1422^Worn Leather Gloves
 @i^1476^Snapped Spider Limb
+@i^1705^Lesser Moonstone
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
+@i^1754^Reinforced Chain Belt
 @i^1784^Cross-stitched Pants
 @i^1826^Rock Maul
 @i^1829^Short Cutlass
@@ -132,6 +145,7 @@ GoldScout-export 6^55u9hbewjdhc^5
 @i^3778^Taut Compound Bow
 @i^3798^Interlaced Shoulderpads
 @i^3799^Interlaced Vest
+@i^4072^Glimmering Mail Gauntlets
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4553^Jagged Piece of Stone
@@ -140,6 +154,7 @@ GoldScout-export 6^55u9hbewjdhc^5
 @i^4561^Scalping Tomahawk of the Falcon
 @i^4567^Merc Sword of the Whale
 @i^4576^Light Bow
+@i^4606^Spongy Morel
 @i^4784^Lifeless Stone
 @i^4814^Discolored Fang
 @i^4859^Burning Blade Medallion
@@ -163,6 +178,8 @@ GoldScout-export 6^55u9hbewjdhc^5
 @i^6303^Raw Slitherskin Mackerel
 @i^6308^Raw Bristle Whisker Catfish
 @i^6361^Raw Rainbow Fin Albacore
+@i^6438^Dull Elemental Bracer
+@i^6439^Broken Binding Bracer
 @i^6487^Vile Familiar Head
 @i^6612^Sage's Boots of the Owl
 @i^7073^Broken Fang
@@ -185,8 +202,15 @@ GoldScout-export 6^55u9hbewjdhc^5
 @i^248689^Waylaid Crate: Journeyman Curiosities
 @i^248694^Waylaid Crate: Expert Curiosities
 @i^249474^Formula: Enchant Bracer - Minor Intellect
+@i^251961^Arcane Mote
 @i^254432^Carved Centaur Totem
+@i^273043^Wand of Mana Concentration
+@i^273051^Violet Sorcerer's Mantle
+@i^273054^Cartilage Shapers
 @i^275722^Ukor's Lost Pack
+@i^275997^Cracked Sentry Core
+@i^276158^Crystallized Shard
+@i^276160^Mana Fragment
 @i^277128^Bloodtalon Matriarch Eggs
 @q^117^1:0:0
 @q^159^1:0:0
@@ -209,8 +233,10 @@ GoldScout-export 6^55u9hbewjdhc^5
 @q^1421^0:4:0
 @q^1422^0:4:0
 @q^1476^0:15:0
+@q^1705^2:7:1
 @q^1707^1:0:0
 @q^1708^1:0:0
+@q^1754^0:4:0
 @q^1784^0:4:0
 @q^1826^0:2:0
 @q^1829^0:2:0
@@ -254,6 +280,7 @@ GoldScout-export 6^55u9hbewjdhc^5
 @q^3778^0:2:0
 @q^3798^0:4:0
 @q^3799^0:4:0
+@q^4072^2:4:0
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4553^0:15:0
@@ -262,6 +289,7 @@ GoldScout-export 6^55u9hbewjdhc^5
 @q^4561^2:2:0
 @q^4567^2:2:0
 @q^4576^2:2:0
+@q^4606^1:0:0
 @q^4784^0:15:0
 @q^4814^0:15:0
 @q^4859^1:12:0
@@ -285,6 +313,8 @@ GoldScout-export 6^55u9hbewjdhc^5
 @q^6303^1:7:1
 @q^6308^1:7:1
 @q^6361^1:7:1
+@q^6438^0:15:0
+@q^6439^0:15:0
 @q^6487^1:12:0
 @q^6612^2:4:0
 @q^7073^0:15:0
@@ -307,8 +337,15 @@ GoldScout-export 6^55u9hbewjdhc^5
 @q^248689^1:0:1
 @q^248694^1:0:1
 @q^249474^2:9:0
+@q^251961^1:12:0
 @q^254432^2:15:0
+@q^273043^3:2:0
+@q^273051^3:4:0
+@q^273054^3:4:0
 @q^275722^1:12:0
+@q^275997^1:12:0
+@q^276158^0:15:0
+@q^276160^0:15:0
 @q^277128^1:12:0
 @m^1411^Durotar
 @m^1416^Alterac Mountains
