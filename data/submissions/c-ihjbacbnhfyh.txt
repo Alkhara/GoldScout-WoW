@@ -1,7 +1,7 @@
-GoldScout-export 6^ihjbacbnhfyh^16
+GoldScout-export 6^ihjbacbnhfyh^17
 705^1^0^1^1^1426^0.2867^0.7251^1^Ragged Young Wolf^750:1:1,4865:1:1^
-1783^29^0^50^51^1422^0.4962^0.8044^29^Skeletal Flayer^7972:3:3,8766:4:4,8948:1:1,14047:8:13^
-1791^13^0^50^52^1422^0.4990^0.8032^13^Slavering Ghoul^6530:2:2,8084:1:1,8755:1:1,8766:1:1,14047:3:4,213546:1:1^
+1783^66^0^50^51^1422^0.4979^0.7955^66^Skeletal Flayer^7972:5:5,8766:4:4,8948:1:1,9296:1:1,12840:2:2,13446:1:1,13823:1:1,14047:18:27,262890:1:1^
+1791^39^0^50^52^1422^0.4990^0.7889^39^Slavering Ghoul^6530:8:8,7972:1:1,8084:1:1,8752:1:1,8755:1:1,8766:2:2,8948:1:1,12840:4:4,13446:1:1,14047:4:5,213546:1:1^
 2639^1^0^45^46^1425^0.4706^0.6588^1^Vilebranch Axe Thrower^4338:1:1,8151:1:1^
 2641^2^0^46^47^1425^0.6657^0.6985^2^Vilebranch Headhunter^4338:1:2,4599:1:1,9259:1:1^
 2643^2^0^47^48^1425^0.6549^0.7176^2^Vilebranch Berserker^1520:1:1,9938:1:1^
@@ -184,6 +184,7 @@ GoldScout-export 6^ihjbacbnhfyh^16
 @i^8707^Gahz'rilla's Electrified Scale
 @i^8723^Caliph Scorpidsting's Head
 @i^8751^Overlinked Coif
+@i^8752^Laminated Scale Circlet
 @i^8755^Light Plate Helmet
 @i^8766^Morning Glory Dew
 @i^8948^Dried King Bolete
@@ -196,6 +197,7 @@ GoldScout-export 6^ihjbacbnhfyh^16
 @i^9259^Troll Tribal Necklace
 @i^9260^Volatile Rum
 @i^9276^Pirate's Footlocker
+@i^9296^Recipe: Gift of Arthas
 @i^9470^Bad Mojo Mask
 @i^9472^Hexx's Key
 @i^9474^Jinxed Hoodoo Kilt
@@ -221,8 +223,10 @@ GoldScout-export 6^ihjbacbnhfyh^16
 @i^12207^Giant Egg
 @i^12208^Tender Wolf Meat
 @i^12470^Sandstalker Ankleguards
+@i^12840^Minion's Scourgestone
 @i^13446^Major Healing Potion
 @i^13818^Jagged Axe
+@i^13823^Stout War Staff
 @i^14047^Runecloth
 @i^14260^Bloodwoven Bracers of Intellect
 @i^14264^Bloodwoven Pants of the Physician
@@ -360,6 +364,7 @@ GoldScout-export 6^ihjbacbnhfyh^16
 @q^8707^1:12:0
 @q^8723^1:12:0
 @q^8751^0:4:0
+@q^8752^0:4:0
 @q^8755^0:4:0
 @q^8766^1:0:0
 @q^8948^1:0:0
@@ -372,6 +377,7 @@ GoldScout-export 6^ihjbacbnhfyh^16
 @q^9259^1:15:0
 @q^9260^1:0:0
 @q^9276^1:15:0
+@q^9296^2:9:0
 @q^9470^3:4:0
 @q^9472^1:12:0
 @q^9474^3:4:0
@@ -397,8 +403,10 @@ GoldScout-export 6^ihjbacbnhfyh^16
 @q^12207^1:7:1
 @q^12208^1:7:1
 @q^12470^3:4:0
+@q^12840^1:12:0
 @q^13446^1:0:0
 @q^13818^0:2:0
+@q^13823^0:2:0
 @q^14047^1:7:1
 @q^14260^2:4:0
 @q^14264^2:4:0
@@ -1159,8 +1167,8 @@ GoldScout-export 6^ihjbacbnhfyh^16
 @c^285281^
 @c^286152^
 @a^705^285:1
-@a^1783^309:5,310:1,329:8,330:15
-@a^1791^309:2,310:1,329:1,330:9
+@a^1783^309:12,310:12,329:18,330:24
+@a^1791^309:7,310:13,329:6,330:13
 @a^2639^269:1
 @a^2641^273:1,293:1
 @a^2643^292:1,293:1

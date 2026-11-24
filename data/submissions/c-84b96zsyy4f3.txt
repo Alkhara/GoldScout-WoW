@@ -1,9 +1,10 @@
-GoldScout-export 6^84b96zsyy4f3^12
-705^8^0^1^1^1426^0.2931^0.7374^8^Lobo joven andrajoso^750:8:8,1367:1:1,2649:1:1,3365:1:1,4865:3:3,7074:5:5^
-706^14^0^3^4^1426^0.2315^0.7730^14^Cría de trol Peloescarcha^117:2:2,159:2:2,1374:1:1,1378:1:1,2589:4:4,5571:1:1^
-707^6^0^1^2^1426^0.2752^0.7540^6^Trogg Mentueso^117:1:1,159:1:1,1374:1:1^
-708^12^0^3^3^1426^0.2131^0.7276^12^Jabalí del risco pequeño^117:2:2,3363:1:1,4865:5:5,7098:8:8^
-724^6^0^2^2^1426^0.2721^0.7277^6^Trogg Comepiedras fornido^1370:1:1,2589:2:2,2651:1:1^
+GoldScout-export 6^84b96zsyy4f3^13
+705^19^0^1^1^1426^0.2914^0.7397^19^Lobo joven andrajoso^750:16:16,1367:1:1,1369:1:1,1370:1:1,2211:1:1,2649:1:1,2651:1:1,3365:2:2,4865:5:5,7073:6:6,7074:8:8^
+706^48^0^3^4^1426^0.2373^0.7767^48^Cría de trol Peloescarcha^117:6:6,159:7:7,1366:1:1,1368:1:1,1372:1:1,1374:1:1,1377:1:1,1378:1:1,1380:1:1,2589:12:12,2649:2:2,2650:1:1,2653:1:1,2654:1:1,5571:1:1,264356:2:2^
+707^12^0^1^2^1426^0.2834^0.7499^12^Trogg Mentueso^117:3:3,159:2:2,1374:1:1,2589:4:4,2650:1:1,3365:1:1^
+708^24^0^3^3^1426^0.2196^0.7371^24^Jabalí del risco pequeño^117:4:4,1376:1:1,1378:1:1,3363:2:2,4865:9:9,7098:15:15^
+724^12^0^2^2^1426^0.2693^0.7274^12^Trogg Comepiedras fornido^159:1:1,1370:1:1,2589:5:5,2651:2:2,3365:1:1^
+808^1^0^5^5^1426^0.3038^0.7935^1^Grik'nir el Frío^2004:1:1^
 2248^12^0^30^31^1424^0.4628^0.3183^12^Yeti de cuevas^3708:1:1,3771:1:1,213545:1:1^
 2249^1^0^31^31^1424^0.4485^0.3124^1^Yeti feroz^^
 2265^4^0^24^25^1424^0.3215^0.4552^4^Herrero aprendiz de Trabalomas^2592:1:2^
@@ -138,10 +139,17 @@ GoldScout-export 6^84b96zsyy4f3^12
 @i^1081^Carne de araña crujiente
 @i^1205^Zumo de melón
 @i^1288^Glándula de veneno grande
+@i^1366^Pantalones de cuero harapiento
 @i^1367^Botas de cuero harapiento
+@i^1368^Guantes de cuero harapiento
+@i^1369^Cinturón de cuero harapiento
 @i^1370^Brazales de cuero harapiento
+@i^1372^Capa harapienta
 @i^1374^Zapatos deshilachados
+@i^1376^Capa deshilachada
+@i^1377^Guantes deshilachados
 @i^1378^Pantalones deshilachados
+@i^1380^Toga deshilachada
 @i^1464^Talón de águila ratonera
 @i^1475^Glándula de veneno pequeña
 @i^1478^Pergamino de Protección II
@@ -160,12 +168,17 @@ GoldScout-export 6^84b96zsyy4f3^12
 @i^1806^Capa dura
 @i^1807^Guantes de cuero fuerte
 @i^1828^Hacha de guerra de piedra
+@i^2004^Diario de Grelin Barbablanca
+@i^2211^Escudo grande doblado
 @i^2221^Tarja
 @i^2290^Pergamino de Intelecto II
 @i^2589^Paño de lino
 @i^2592^Paño de lana
 @i^2649^Cinturón de anillas endeble
+@i^2650^Botas de anillas endebles
 @i^2651^Brazales de anillas endebles
+@i^2653^Guantes de anillas endebles
+@i^2654^Pantalones de anillas endebles
 @i^2675^Garra de reptador
 @i^2783^Trabuco de pésima calidad
 @i^2786^Trabuco engrasado
@@ -239,6 +252,7 @@ GoldScout-export 6^84b96zsyy4f3^12
 @i^6905^Hacha arrecife
 @i^6908^Vínculo de Ghamoo-ra
 @i^7069^Elemental de aire
+@i^7073^Colmillo roto
 @i^7074^Garra astillada
 @i^7098^Colmillo astillado
 @i^8186^Varita funesta
@@ -293,6 +307,7 @@ GoldScout-export 6^84b96zsyy4f3^12
 @i^251339^Diseño: coraza de plata de ley
 @i^254432^Tótem de los centauros tallado
 @i^262888^Libranza del oficial sellada
+@i^264356^Colgante de oso garrahielo
 @i^273001^Muestra de toxina de altopenumbra
 @i^273181^Seda cristalina
 @q^117^1:0:0
@@ -307,10 +322,17 @@ GoldScout-export 6^84b96zsyy4f3^12
 @q^1081^1:7:1
 @q^1205^1:0:0
 @q^1288^1:7:1
+@q^1366^0:4:0
 @q^1367^0:4:0
+@q^1368^0:4:0
+@q^1369^0:4:0
 @q^1370^0:4:0
+@q^1372^0:4:0
 @q^1374^0:4:0
+@q^1376^0:4:0
+@q^1377^0:4:0
 @q^1378^0:4:0
+@q^1380^0:4:0
 @q^1464^0:15:0
 @q^1475^1:7:1
 @q^1478^1:0:0
@@ -329,12 +351,17 @@ GoldScout-export 6^84b96zsyy4f3^12
 @q^1806^0:4:0
 @q^1807^0:4:0
 @q^1828^0:2:0
+@q^2004^1:12:0
+@q^2211^0:4:0
 @q^2221^0:4:0
 @q^2290^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2649^0:4:0
+@q^2650^0:4:0
 @q^2651^0:4:0
+@q^2653^0:4:0
+@q^2654^0:4:0
 @q^2675^1:7:1
 @q^2783^0:2:0
 @q^2786^0:2:0
@@ -408,6 +435,7 @@ GoldScout-export 6^84b96zsyy4f3^12
 @q^6905^3:2:0
 @q^6908^3:4:0
 @q^7069^1:7:1
+@q^7073^0:15:0
 @q^7074^0:15:0
 @q^7098^0:15:0
 @q^8186^2:2:0
@@ -462,6 +490,7 @@ GoldScout-export 6^84b96zsyy4f3^12
 @q^251339^2:9:0
 @q^254432^2:15:0
 @q^262888^3:0:0
+@q^264356^1:12:0
 @q^273001^1:12:0
 @q^273181^1:12:0
 @m^1412^Mulgore
@@ -1159,11 +1188,12 @@ GoldScout-export 6^84b96zsyy4f3^12
 @c^285280^
 @c^285281^
 @c^286152^
-@a^705^285:8
-@a^706^304:10,305:4
-@a^707^285:2,304:1,305:3
-@a^708^284:12
-@a^724^285:6
+@a^705^285:19
+@a^706^284:1,304:31,305:12,306:1,325:3
+@a^707^285:6,286:1,304:1,305:3,306:1
+@a^708^284:19,304:5
+@a^724^285:12
+@a^808^306:1
 @a^2248^128:1,129:11
 @a^2249^128:1
 @a^2265^166:1,186:3
