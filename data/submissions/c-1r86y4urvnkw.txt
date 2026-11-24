@@ -1,4 +1,4 @@
-GoldScout-export 6^1r86y4urvnkw^4
+GoldScout-export 6^1r86y4urvnkw^5
 215^1^0^24^24^1431^0.2433^0.6396^1^Defias Night Runner^4306:1:1^
 217^1^0^19^20^1431^0.1253^0.6010^1^Venom Web Spider^1081:1:1,4428:1:1^
 345^2^0^24^24^1433^0.1150^0.4983^2^Bellygrub^2296:1:1,2677:1:1,3631:1:1^
@@ -16,6 +16,7 @@ GoldScout-export 6^1r86y4urvnkw^4
 547^7^0^16^17^1433^0.1250^0.5228^7^Great Goretusk^723:2:2,769:7:9,2296:4:4,2677:2:2,3172:3:3^
 712^11^0^14^15^1433^0.1945^0.7451^11^Redridge Thrasher^1212:2:2,1516:1:1,2455:1:1,2589:1:3,2592:3:4,6555:1:1,280911:5:5^
 930^1^0^24^25^1431^0.7867^0.4962^1^Black Widow Hatchling^^
+1135^24^0^6^7^1426^0.4214^0.4929^24^Wendigo^117:4:4,1416:1:1,1419:2:2,1422:1:1,1423:2:2,1427:1:1,1429:1:1,2648:1:1,3373:2:2^
 1178^3^0^18^19^1432^0.7135^0.2525^3^Mo'grosh Ogre^2287:1:1,2592:1:2,2822:2:2^
 1179^4^0^18^19^1432^0.6669^0.2374^4^Mo'grosh Enforcer^2589:1:4,6553:1:1^
 1180^3^0^19^20^1432^0.7420^0.1692^3^Mo'grosh Brute^1764:1:1,9783:1:1^
@@ -33,10 +34,15 @@ GoldScout-export 6^1r86y4urvnkw^4
 4129^2^0^18^19^1413^0.4608^0.4679^2^Hecklefang Snarler^3299:1:1,3301:1:1,211853:1:1^
 6093^1^0^11^11^1429^0.8868^0.7947^1^Dead-Tooth Jack^2589:1:1^
 8996^1^0^18^18^1440^0.3055^0.3141^1^Voidwalker Minion^^
+271486^6^0^6^8^1426^0.4263^0.4941^6^Wendigo Shaman^774:1:1,1416:1:1,2773:1:1^
+271530^10^0^7^8^1426^0.4266^0.4924^10^Elder Wendigo^117:1:1,159:1:1,818:1:1,1419:1:1^
 271898^2^0^18^19^1433^0.5136^0.4317^2^Greater Tarantula^1081:1:1,3931:2:2^
+@i^117^Tough Jerky
+@i^159^Refreshing Spring Water
 @i^556^Buzzard Beak
 @i^723^Goretusk Liver
 @i^769^Chunk of Boar Meat
+@i^774^Malachite
 @i^818^Tigerseye
 @i^858^Lesser Healing Potion
 @i^1013^Iron Rivet
@@ -46,6 +52,12 @@ GoldScout-export 6^1r86y4urvnkw^4
 @i^1210^Shadowgem
 @i^1212^Gnoll Spittle
 @i^1221^Underbelly Whelp Scale
+@i^1416^Rusty Hatchet
+@i^1419^Worn Leather Boots
+@i^1422^Worn Leather Gloves
+@i^1423^Worn Leather Pants
+@i^1427^Patchwork Shoes
+@i^1429^Patchwork Cloak
 @i^1464^Buzzard Talon
 @i^1475^Small Venom Sac
 @i^1516^Worn Hatchet
@@ -62,7 +74,9 @@ GoldScout-export 6^1r86y4urvnkw^4
 @i^2561^Chok'sul's Head
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2648^Loose Chain Vest
 @i^2677^Boar Ribs
+@i^2773^Cracked Shortbow
 @i^2822^Mo'grosh Toothpick
 @i^2856^Iron Pike
 @i^3167^Thick Spider Hair
@@ -74,6 +88,7 @@ GoldScout-export 6^1r86y4urvnkw^4
 @i^3182^Spider's Silk
 @i^3299^Fractured Canine
 @i^3301^Sharp Canine
+@i^3373^Patchwork Bracers
 @i^3631^Bellygrub's Tusk
 @i^3931^Poisoned Spider Fang
 @i^4306^Silk Cloth
@@ -107,9 +122,12 @@ GoldScout-export 6^1r86y4urvnkw^4
 @i^248685^Waylaid Crate: Apprentice Curiosities
 @i^250188^Recipe: Breakfast Omelette
 @i^280911^Spiked Collar
+@q^117^1:0:0
+@q^159^1:0:0
 @q^556^0:15:0
 @q^723^1:7:1
 @q^769^1:7:1
+@q^774^2:7:1
 @q^818^2:7:1
 @q^858^1:0:0
 @q^1013^1:12:0
@@ -119,6 +137,12 @@ GoldScout-export 6^1r86y4urvnkw^4
 @q^1210^2:7:1
 @q^1212^0:15:0
 @q^1221^1:12:0
+@q^1416^0:2:0
+@q^1419^0:4:0
+@q^1422^0:4:0
+@q^1423^0:4:0
+@q^1427^0:4:0
+@q^1429^0:4:0
 @q^1464^0:15:0
 @q^1475^1:7:1
 @q^1516^0:2:0
@@ -135,7 +159,9 @@ GoldScout-export 6^1r86y4urvnkw^4
 @q^2561^1:12:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2648^0:4:0
 @q^2677^1:7:1
+@q^2773^0:2:0
 @q^2822^2:2:0
 @q^2856^1:12:0
 @q^3167^0:15:0
@@ -147,6 +173,7 @@ GoldScout-export 6^1r86y4urvnkw^4
 @q^3182^1:7:1
 @q^3299^0:15:0
 @q^3301^0:15:0
+@q^3373^0:4:0
 @q^3631^1:12:0
 @q^3931^0:15:0
 @q^4306^1:7:1
@@ -181,6 +208,7 @@ GoldScout-export 6^1r86y4urvnkw^4
 @q^250188^1:9:0
 @q^280911^1:12:0
 @m^1413^The Barrens
+@m^1426^Dun Morogh
 @m^1429^Elwynn Forest
 @m^1431^Duskwood
 @m^1432^Loch Modan
@@ -569,6 +597,7 @@ GoldScout-export 6^1r86y4urvnkw^4
 @a^547^162:1,202:6
 @a^712^222:2,262:2,304:1,324:4,325:2
 @a^930^195:1
+@a^1135^188:22,208:2
 @a^1178^93:1,94:1,134:1
 @a^1179^92:1,93:2,113:1
 @a^1180^73:1,75:2
@@ -586,6 +615,8 @@ GoldScout-export 6^1r86y4urvnkw^4
 @a^4129^189:2
 @a^6093^317:1
 @a^8996^126:1
+@a^271486^188:6
+@a^271530^188:10
 @a^271898^170:1,190:1
 @f^1439^0^10^23^6303:4:4,6358:1:1,6361:1:1,12238:4:4^146:1,166:9
 @f^1453^0^7^21^6303:4:4,6361:3:3^224:7

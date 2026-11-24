@@ -1,4 +1,4 @@
-GoldScout-export 6^qcls3h68bnsk^25
+GoldScout-export 6^qcls3h68bnsk^26
 94^1^0^6^6^1429^0.3177^0.6589^1^Vide-gousset défias^^
 95^26^0^11^12^1436^0.4830^0.4650^26^Contrebandière défias^414:1:1,727:1:1,829:8:8,858:1:1,1510:1:1,2589:10:16,2971:1:1^
 114^24^0^14^15^1436^0.5090^0.2341^24^Gardien des moissons^732:7:7,814:5:5,1274:13:13,1516:1:1,2763:1:1,2777:1:1,4359:2:2,4361:1:1,255007:9:9^
@@ -112,9 +112,13 @@ GoldScout-export 6^qcls3h68bnsk^25
 2287^0^3^39^40^0^0.0000^0.0000^0^Combattant Cassecrête^^5427:1:1
 2406^1^0^32^33^1416^0.3755^0.8292^1^Lion des montagnes^1686:1:1,3731:1:1^
 2440^1^0^33^33^1416^0.5715^0.6938^1^Détrousseur ivre^3703:1:1^
+2554^5^6^32^33^1417^0.7225^0.6089^5^Lanceuse de haches Fânécorce^1708:1:1,3771:1:1,4306:1:2,4503:3:3^1710:1:1,16883:1:1
+2555^2^1^33^34^1417^0.6995^0.6680^2^Sorcier-docteur Witherbark^2592:1:1,4503:1:1^5427:1:1
+2556^10^9^34^35^1417^0.6741^0.8008^10^Chasseur de têtes Witherbark^1711:1:1,2290:1:1,3771:1:1,4306:7:11,4503:1:1^3771:1:1,5427:1:1,16883:2:2
+2557^8^8^35^36^1417^0.6776^0.8078^8^Chasseur des ombres Witherbark^3797:1:1,4306:3:6,4503:1:1,5040:1:1,216483:2:2^3771:1:1
 2560^1^0^33^33^1417^0.3656^0.2943^1^Vandale des hautes-terres^3685:1:1,12184:1:1^
-2573^7^3^37^38^1417^0.8428^0.2955^7^Géomètre Sèche-moustache^4435:5:5,4539:1:1^
-2574^21^6^36^37^1417^0.8496^0.2992^21^Terrassier Sèche-moustache^1708:2:2,1710:1:1,3811:1:1,4306:6:11,4338:2:2,4435:5:5^16883:1:1
+2573^12^3^37^38^1417^0.8436^0.2966^12^Géomètre Sèche-moustache^1710:2:2,3816:1:1,4338:1:1,4435:7:7,4539:1:1^
+2574^24^6^36^37^1417^0.8498^0.2989^24^Terrassier Sèche-moustache^1708:2:2,1710:1:1,3811:1:1,4306:7:12,4338:2:2,4435:5:5^16883:1:1
 2586^9^0^30^31^1417^0.3208^0.3124^9^Malandrin du Syndicat^4306:2:2,5113:2:2,7450:1:1^
 2587^7^1^32^33^1417^0.3193^0.2821^7^Eclaireuse du Syndicat^1529:1:1,4306:2:2^17124:1:1
 2589^3^0^31^32^1417^0.3162^0.2918^3^Mercenaire du Syndicat^4306:1:2^
@@ -264,6 +268,7 @@ GoldScout-export 6^qcls3h68bnsk^25
 @i^1707^Brie de Hurlevent
 @i^1708^Nectar sucré
 @i^1710^Potion de soins supérieure
+@i^1711^Parchemin d'Endurance II
 @i^1725^Grand sac à dos
 @i^1735^Pantalon usé en mailles
 @i^1757^Cape en anneaux renforcés
@@ -343,10 +348,12 @@ GoldScout-export 6^qcls3h68bnsk^25
 @i^3787^Gourdin en pierre
 @i^3793^Bottes entrelacées
 @i^3794^Brassards entrelacés
+@i^3797^Pantalon entrelacé
 @i^3802^Brassards en cuir durci
 @i^3811^Cape à double couture
 @i^3813^Pantalon doublentin
 @i^3814^Protège-épaules doublentins
+@i^3816^Ecu réfléchissant
 @i^3817^Targe renforcée
 @i^3818^Pâlerette
 @i^3820^Etouffante
@@ -367,6 +374,7 @@ GoldScout-export 6^qcls3h68bnsk^25
 @i^4421^Parchemin de Protection III
 @i^4435^Poussières de Myzrael
 @i^4461^Peau de raptor
+@i^4503^Défense de Witherbark
 @i^4537^Banane de Tel'Abim
 @i^4539^Pomme dorette
 @i^4540^Morceau de pain rassis
@@ -382,6 +390,7 @@ GoldScout-export 6^qcls3h68bnsk^25
 @i^4791^Eau enchantée
 @i^4873^Bigorneaux secs durcis
 @i^4874^Arêtes propres
+@i^5040^Couteau de chasseur d'ombre
 @i^5113^Marque du Syndicat
 @i^5192^Lame du larron
 @i^5194^Hache du sous-chef
@@ -462,6 +471,7 @@ GoldScout-export 6^qcls3h68bnsk^25
 @i^211787^Parchemin : LOWER PING WHOMEVER
 @i^213543^Parchemin : BONHOMME
 @i^213546^Parchemin : TAGADAAA
+@i^216483^Massette fânécorce
 @i^216616^Clé de cage de la base
 @i^248683^Caisse détournée : minerai d'apprenti
 @i^248686^Caisse détournée : plantes de compagnon
@@ -550,6 +560,7 @@ GoldScout-export 6^qcls3h68bnsk^25
 @q^1707^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
+@q^1711^1:0:0
 @q^1725^1:1:0
 @q^1735^0:4:0
 @q^1757^0:4:0
@@ -629,10 +640,12 @@ GoldScout-export 6^qcls3h68bnsk^25
 @q^3787^0:2:0
 @q^3793^0:4:0
 @q^3794^0:4:0
+@q^3797^0:4:0
 @q^3802^0:4:0
 @q^3811^0:4:0
 @q^3813^0:4:0
 @q^3814^0:4:0
+@q^3816^0:4:0
 @q^3817^0:4:0
 @q^3818^1:7:1
 @q^3820^1:7:1
@@ -653,6 +666,7 @@ GoldScout-export 6^qcls3h68bnsk^25
 @q^4421^1:0:0
 @q^4435^1:12:0
 @q^4461^1:7:1
+@q^4503^1:12:0
 @q^4537^1:0:0
 @q^4539^1:0:0
 @q^4540^1:0:0
@@ -668,6 +682,7 @@ GoldScout-export 6^qcls3h68bnsk^25
 @q^4791^1:0:0
 @q^4873^0:15:0
 @q^4874^0:15:0
+@q^5040^1:2:0
 @q^5113^0:15:0
 @q^5192^3:2:0
 @q^5194^3:2:0
@@ -748,6 +763,7 @@ GoldScout-export 6^qcls3h68bnsk^25
 @q^211787^1:0:0
 @q^213543^1:0:0
 @q^213546^1:0:0
+@q^216483^1:0:0
 @q^216616^1:12:0
 @q^248683^1:0:1
 @q^248686^1:0:1
@@ -2751,9 +2767,13 @@ GoldScout-export 6^qcls3h68bnsk^25
 @a^2261^175:1,176:1,195:1
 @a^2406^327:1
 @a^2440^271:1
+@a^2554^234:2,254:2,274:1
+@a^2555^254:1,293:1
+@a^2556^293:1,313:2,333:7
+@a^2557^313:3,333:5
 @a^2560^107:1
-@a^2573^116:5,136:2
-@a^2574^116:9,117:2,136:2,137:8
+@a^2573^116:8,136:4
+@a^2574^116:10,117:2,136:2,137:10
 @a^2586^106:1,126:8
 @a^2587^106:5,126:2
 @a^2589^106:1,126:2

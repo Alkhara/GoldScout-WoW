@@ -1,4 +1,4 @@
-GoldScout-export 6^7n0hiaav0k9g^14
+GoldScout-export 6^7n0hiaav0k9g^15
 30^1^0^5^5^1429^0.2871^0.6687^1^Forest Spider^2590:1:1,5465:1:1^
 94^2^0^6^6^1429^0.3456^0.5752^2^Defias Cutpurse^2589:1:2^
 114^2^0^14^15^1436^0.4493^0.3286^2^Harvest Watcher^4363:1:1^
@@ -14,14 +14,16 @@ GoldScout-export 6^7n0hiaav0k9g^14
 822^2^0^9^9^1429^0.2217^0.7489^2^Young Forest Bear^3170:1:1,7073:1:1,7074:1:1^
 834^1^0^10^11^1436^0.4176^0.3606^1^Coyote^3300:1:1^
 1109^1^0^13^14^1436^0.4054^0.3760^1^Fleshripper^729:1:1^
-1126^1^0^7^7^1426^0.5520^0.4804^1^Large Crag Boar^818:1:1,2886:1:1^
-1131^1^0^7^7^1426^0.5149^0.4870^1^Winter Wolf^2672:1:1^
+1126^1^0^6^7^1426^0.5520^0.4804^1^Large Crag Boar^818:1:1,2886:1:1^
+1128^6^0^5^6^1426^0.4454^0.4918^6^Young Black Bear^3170:2:2,4865:1:1,7073:1:1,7074:3:3^
+1131^13^0^7^8^1426^0.4566^0.4634^13^Winter Wolf^774:1:1,2672:12:12,3299:2:2,3300:4:4^
+1138^26^0^6^7^1426^0.4474^0.4689^26^Snow Tracker Wolf^2672:21:21,3299:6:6,3300:7:7,4560:2:2,211787:1:1^
 1161^7^0^11^12^1432^0.3155^0.7514^7^Stonesplinter Trogg^2287:2:2,2589:2:6,9758:1:1^
 1163^2^0^13^14^1432^0.2830^0.8585^2^Stonesplinter Skullthumper^1505:1:1,2287:1:1^
 1166^1^0^13^13^1432^0.2745^0.8558^1^Stonesplinter Seer^^
 1188^1^0^13^13^1432^0.4205^0.6397^1^Grizzled Black Bear^3169:1:1^
 1195^2^0^10^10^1432^0.3868^0.7376^2^Forest Lurker^3174:2:2,5465:2:3^
-1860^2^0^0^0^1440^0.2547^0.6072^2^Zhar'gorg^^
+1860^2^0^0^0^1440^0.2547^0.6072^2^Thangore^^
 1922^1^0^7^7^1429^0.6315^0.6916^1^Gray Forest Wolf^3300:1:1^
 2354^1^0^22^22^1424^0.5192^0.5302^1^Vicious Gray Bear^^
 3240^3^0^18^19^1413^0.4882^0.5184^3^Stormsnout^5128:1:1,5470:2:2^
@@ -69,6 +71,7 @@ GoldScout-export 6^7n0hiaav0k9g^14
 @i^765^Silverleaf
 @i^769^Chunk of Boar Meat
 @i^771^Chipped Boar Tusk
+@i^774^Malachite
 @i^779^Shiny Seashell
 @i^818^Tigerseye
 @i^878^Fist-sized Spinneret
@@ -99,6 +102,7 @@ GoldScout-export 6^7n0hiaav0k9g^14
 @i^3174^Spider Ichor
 @i^3176^Small Claw
 @i^3182^Spider's Silk
+@i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
 @i^3301^Sharp Canine
 @i^3402^Soft Patch of Fur
@@ -109,8 +113,10 @@ GoldScout-export 6^7n0hiaav0k9g^14
 @i^3931^Poisoned Spider Fang
 @i^4363^Copper Modulator
 @i^4428^Spider Palp
+@i^4560^Fine Scimitar
 @i^4606^Spongy Morel
 @i^4775^Cracked Bill
+@i^4865^Ruined Pelt
 @i^5075^Blood Shard
 @i^5124^Small Raptor Tooth
 @i^5128^Shed Lizard Skin
@@ -154,6 +160,7 @@ GoldScout-export 6^7n0hiaav0k9g^14
 @i^21071^Raw Sagefish
 @i^21113^Watertight Trunk
 @i^21114^Rumsey Rum Dark
+@i^211787^Scroll: LOWER PING WHOMEVER
 @i^248685^Waylaid Crate: Apprentice Curiosities
 @i^250182^Recipe: Bear Brisket
 @i^277917^Stonetalon Supply Bundle
@@ -162,6 +169,7 @@ GoldScout-export 6^7n0hiaav0k9g^14
 @q^765^1:7:1
 @q^769^1:7:1
 @q^771^0:15:0
+@q^774^2:7:1
 @q^779^0:15:0
 @q^818^2:7:1
 @q^878^0:7:0
@@ -192,6 +200,7 @@ GoldScout-export 6^7n0hiaav0k9g^14
 @q^3174^1:7:1
 @q^3176^0:15:0
 @q^3182^1:7:1
+@q^3299^0:15:0
 @q^3300^0:15:0
 @q^3301^0:15:0
 @q^3402^0:15:0
@@ -202,8 +211,10 @@ GoldScout-export 6^7n0hiaav0k9g^14
 @q^3931^0:15:0
 @q^4363^1:7:1
 @q^4428^0:15:0
+@q^4560^1:2:0
 @q^4606^1:0:0
 @q^4775^0:15:0
+@q^4865^0:15:0
 @q^5075^1:12:0
 @q^5124^0:15:0
 @q^5128^0:15:0
@@ -247,6 +258,7 @@ GoldScout-export 6^7n0hiaav0k9g^14
 @q^21071^1:7:1
 @q^21113^1:15:0
 @q^21114^1:0:0
+@q^211787^1:0:0
 @q^248685^1:0:1
 @q^250182^1:9:0
 @q^277917^1:12:0
@@ -962,7 +974,9 @@ GoldScout-export 6^7n0hiaav0k9g^14
 @a^834^148:1
 @a^1109^148:1
 @a^1126^191:1
-@a^1131^190:1
+@a^1128^168:1,188:2,189:2,228:1
+@a^1131^168:1,169:2,188:2,189:7,190:1
+@a^1138^188:14,189:12
 @a^1161^286:2,306:5
 @a^1163^345:2
 @a^1166^345:1
