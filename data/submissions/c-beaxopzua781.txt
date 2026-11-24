@@ -1,4 +1,4 @@
-GoldScout-export 6^beaxopzua781^32
+GoldScout-export 6^beaxopzua781^33
 30^2^0^5^6^1429^0.3900^0.7698^2^Forest Spider^1476:1:1,2590:1:1,5465:2:4^
 36^1^0^11^12^1436^0.3288^0.3477^1^Harvest Golem^732:1:1^
 113^2^0^5^6^1429^0.4135^0.7546^2^Stonetusk Boar^769:1:1,3171:1:1^
@@ -7,7 +7,7 @@ GoldScout-export 6^beaxopzua781^32
 154^1^0^16^17^1436^0.5819^0.5801^1^Greater Fleshripper^729:1:1,6889:1:1^
 157^1^0^14^15^1436^0.5462^0.5820^1^Goretusk^723:1:1,731:1:1^
 199^2^0^10^11^1436^0.4190^0.2217^2^Young Fleshripper^555:1:1,6889:1:1,17056:1:1^
-500^3^0^12^12^1436^0.3934^0.3243^3^Riverpaw Scout^2287:1:1,2589:1:2^
+500^4^0^12^13^1436^0.3994^0.2913^4^Riverpaw Scout^2287:1:1,2589:1:2^
 525^4^0^5^6^1429^0.3536^0.6695^4^Mangy Wolf^2672:3:3,3300:1:1^
 547^1^0^16^17^1436^0.5748^0.5742^1^Great Goretusk^769:1:1^
 587^1^0^33^34^1434^0.2953^0.2083^1^Bloodscalp Warrior^1519:1:1,2742:1:1^
@@ -38,8 +38,8 @@ GoldScout-export 6^beaxopzua781^32
 772^2^0^37^38^1434^0.4307^0.3163^2^Stranglethorn Tigress^1686:1:1,12202:2:2,248693:1:1^
 824^1^0^16^16^1415^0.4121^0.7927^1^Defias Digger^^
 832^1^0^18^19^1436^0.3912^0.2221^1^Dust Devil^2091:1:1^
-833^65^0^11^12^1436^0.3935^0.2695^65^Coyote Packleader^2673:34:34,3192:1:1,3299:34:34,3300:12:12,5635:1:1,8180:2:2,9760:1:1^
-834^94^0^10^11^1436^0.4095^0.2637^94^Coyote^768:1:1,2673:52:52,2698:1:1,2961:1:1,3299:37:37,3300:25:25,5571:1:1,5635:1:1,7351:1:1,211785:1:1,211786:1:1,211787:1:1^
+833^82^0^11^12^1436^0.3905^0.2741^82^Coyote Packleader^2075:1:1,2673:41:41,3192:1:1,3299:45:45,3300:16:16,5635:2:2,8180:2:2,9759:1:1,9760:1:1^
+834^123^0^10^11^1436^0.4064^0.2650^123^Coyote^768:1:1,2673:65:65,2698:1:1,2961:1:1,3299:49:49,3300:32:32,5571:1:1,5572:1:1,5635:4:4,6336:1:1,6507:1:1,6514:1:1,7350:1:1,7351:1:1,211785:1:1,211786:1:1,211787:1:1^
 937^24^0^32^33^1434^0.4458^0.1008^24^Kurzen Jungle Fighter^1707:3:3,2592:1:1,2730:1:1,2734:1:1,2740:2:2,4306:6:10,4338:2:2,251388:1:1^
 938^6^0^34^35^1434^0.4524^0.0835^6^Kurzen Commando^2290:1:1,2592:1:2,3827:1:1^
 939^6^0^36^37^1434^0.4851^0.0837^6^Kurzen Elite^2735:1:1,4306:2:5,4338:1:1,216616:1:1^
@@ -358,6 +358,7 @@ GoldScout-export 6^beaxopzua781^32
 @i^1875^Thistlenettle's Badge
 @i^1894^Miners' Union Card
 @i^2072^Dwarven Magestaff of the Falcon
+@i^2075^Priest's Mace of the Whale
 @i^2077^Magician Staff of Frost Protection
 @i^2091^Magic Dust
 @i^2216^Simple Buckler
@@ -508,6 +509,7 @@ GoldScout-export 6^beaxopzua781^32
 @i^5524^Thick-shelled Clam
 @i^5569^Seaweed
 @i^5571^Small Black Pouch
+@i^5572^Small Green Pouch
 @i^5573^Green Leather Bag
 @i^5635^Sharp Claw
 @i^5637^Large Fang
@@ -522,6 +524,7 @@ GoldScout-export 6^beaxopzua781^32
 @i^6303^Raw Slitherskin Mackerel
 @i^6308^Raw Bristle Whisker Catfish
 @i^6324^Robes of Arugal
+@i^6336^Infantry Tunic of the Owl
 @i^6358^Oily Blackmouth
 @i^6361^Raw Rainbow Fin Albacore
 @i^6379^Inscribed Leather Belt
@@ -534,6 +537,8 @@ GoldScout-export 6^beaxopzua781^32
 @i^6445^Brittle Molting
 @i^6470^Deviate Scale
 @i^6471^Perfect Deviate Scale
+@i^6507^Infantry Bracers
+@i^6514^Disciple's Cloak
 @i^6569^Shimmering Robe of Spirit
 @i^6583^Scouting Bracers of Agility
 @i^6584^Scouting Tunic of the Gorilla
@@ -559,6 +564,7 @@ GoldScout-export 6^beaxopzua781^32
 @i^7074^Chipped Claw
 @i^7090^Pattern: Green Silk Armor
 @i^7091^Pattern: Truefaith Gloves
+@i^7350^Disciple's Bracers
 @i^7351^Disciple's Boots
 @i^7356^Elder's Cloak of the Knight
 @i^7366^Elder's Gloves of Fire Protection
@@ -583,6 +589,7 @@ GoldScout-export 6^beaxopzua781^32
 @i^9454^Acidic Walkers
 @i^9458^Thermaplugg's Central Core
 @i^9461^Charged Gear of the Channeler
+@i^9759^Cadet Boots
 @i^9760^Cadet Bracers
 @i^9771^Greenweave Gloves of the Sorcerer
 @i^9796^Ivycloth Mantle of Intellect
@@ -766,6 +773,7 @@ GoldScout-export 6^beaxopzua781^32
 @q^1875^1:12:0
 @q^1894^1:12:0
 @q^2072^2:2:0
+@q^2075^2:2:0
 @q^2077^2:2:0
 @q^2091^1:0:0
 @q^2216^0:4:0
@@ -916,6 +924,7 @@ GoldScout-export 6^beaxopzua781^32
 @q^5524^1:7:0
 @q^5569^0:15:0
 @q^5571^1:1:0
+@q^5572^1:1:0
 @q^5573^1:1:0
 @q^5635^1:7:1
 @q^5637^1:7:1
@@ -930,6 +939,7 @@ GoldScout-export 6^beaxopzua781^32
 @q^6303^1:7:1
 @q^6308^1:7:1
 @q^6324^3:4:0
+@q^6336^2:4:0
 @q^6358^1:7:1
 @q^6361^1:7:1
 @q^6379^2:4:0
@@ -942,6 +952,8 @@ GoldScout-export 6^beaxopzua781^32
 @q^6445^0:15:0
 @q^6470^1:7:1
 @q^6471^1:7:1
+@q^6507^1:4:0
+@q^6514^1:4:0
 @q^6569^2:4:0
 @q^6583^2:4:0
 @q^6584^2:4:0
@@ -967,6 +979,7 @@ GoldScout-export 6^beaxopzua781^32
 @q^7074^0:15:0
 @q^7090^2:9:0
 @q^7091^2:9:0
+@q^7350^1:4:0
 @q^7351^1:4:0
 @q^7356^2:4:0
 @q^7366^2:4:0
@@ -991,6 +1004,7 @@ GoldScout-export 6^beaxopzua781^32
 @q^9454^3:4:0
 @q^9458^3:4:0
 @q^9461^3:4:0
+@q^9759^1:4:0
 @q^9760^1:4:0
 @q^9771^2:4:0
 @q^9796^2:4:0
@@ -2401,7 +2415,7 @@ GoldScout-export 6^beaxopzua781^32
 @a^154^231:1
 @a^157^230:1
 @a^199^87:1,88:1
-@a^500^127:3
+@a^500^68:1,127:3
 @a^525^247:2,266:1,306:1
 @a^547^231:1
 @a^587^85:1
@@ -2432,8 +2446,8 @@ GoldScout-export 6^beaxopzua781^32
 @a^772^89:1,167:1
 @a^824^308:1
 @a^832^87:1
-@a^833^68:5,69:6,87:6,88:8,89:4,107:6,108:10,126:8,127:1,146:5,147:3,166:1,167:1,170:1
-@a^834^68:4,69:1,70:2,71:2,87:15,88:7,89:6,107:20,108:19,126:2,127:2,128:4,129:1,146:1,147:1,148:1,150:1,166:1,167:1,190:3
+@a^833^68:6,69:6,87:8,88:8,89:6,107:10,108:12,126:9,127:2,146:6,147:3,166:4,167:1,170:1
+@a^834^68:6,69:1,70:2,71:2,87:19,88:10,89:8,107:26,108:26,126:2,127:2,128:5,129:1,146:2,147:2,148:2,150:1,166:2,167:1,190:3
 @a^937^28:13,48:9,49:2
 @a^938^28:3,29:3
 @a^939^29:6

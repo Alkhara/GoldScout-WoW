@@ -1,4 +1,4 @@
-GoldScout-export 6^w8d9jwgbmanj^22
+GoldScout-export 6^w8d9jwgbmanj^23
 1162^1^0^11^11^1432^0.2942^0.6041^1^Stonesplinter Scout^^
 1492^1^0^47^47^1434^0.3644^0.6954^1^Gorlash^3932:1:1,7973:1:1^
 1565^2^0^44^45^1434^0.2946^0.8917^2^Bloodsail Sea Dog^4306:1:2,7555:1:1^
@@ -27,6 +27,7 @@ GoldScout-export 6^w8d9jwgbmanj^22
 2924^1^0^43^44^1425^0.3179^0.5633^1^Silvermane Wolf^12203:1:1^
 2944^1^0^41^41^1418^0.6131^0.6901^1^Boss Tho'grun^4338:1:1,4640:1:1^
 2945^1^0^42^42^1418^0.5078^0.6733^1^Murdaloc^^
+2955^5^0^1^2^1412^0.4368^0.7598^5^Plainstrider^2211:1:1,2649:1:1,4739:4:4,4740:4:4,4757:1:1,7096:3:3,7097:1:1^
 3560^1^0^40^40^1418^0.4797^0.7509^1^Healing Ward^^
 4323^6^0^41^42^1445^0.4117^0.7426^6^Searing Hatchling^4402:2:2,4460:1:1,6444:1:1,279934:2:2^
 4324^10^0^42^43^1445^0.4150^0.7383^10^Searing Whelp^4402:1:1,4460:2:2,6444:1:1,279934:8:8^
@@ -121,6 +122,8 @@ GoldScout-export 6^w8d9jwgbmanj^22
 @i^1710^Greater Healing Potion
 @i^1988^Chief Brigadier Gauntlets
 @i^1990^Ballast Maul of the Prophet
+@i^2211^Bent Large Shield
+@i^2649^Flimsy Chain Belt
 @i^2751^Green Hills of Stranglethorn - Page 27
 @i^3010^Fine Sand
 @i^3402^Soft Patch of Fur
@@ -160,6 +163,9 @@ GoldScout-export 6^w8d9jwgbmanj^22
 @i^4630^Scrap Metal
 @i^4636^Strong Iron Lockbox
 @i^4640^Sign of the Earth
+@i^4739^Plainstrider Meat
+@i^4740^Plainstrider Feather
+@i^4757^Cracked Egg Shells
 @i^4784^Lifeless Stone
 @i^5116^Long Tail Feather
 @i^5429^A Pretty Rock
@@ -171,6 +177,8 @@ GoldScout-export 6^w8d9jwgbmanj^22
 @i^6438^Dull Elemental Bracer
 @i^6444^Forked Tongue
 @i^6826^Brilliant Scale
+@i^7096^Plucked Feather
+@i^7097^Leg Meat
 @i^7462^Knight's Girdle of the Whale
 @i^7463^Sentinel Buckler of Fire Protection
 @i^7471^Regal Gloves of Spirit
@@ -255,6 +263,8 @@ GoldScout-export 6^w8d9jwgbmanj^22
 @q^1710^1:0:0
 @q^1988^2:4:0
 @q^1990^2:2:0
+@q^2211^0:4:0
+@q^2649^0:4:0
 @q^2751^1:12:0
 @q^3010^0:15:0
 @q^3402^0:15:0
@@ -294,6 +304,9 @@ GoldScout-export 6^w8d9jwgbmanj^22
 @q^4630^1:12:0
 @q^4636^2:15:0
 @q^4640^1:12:0
+@q^4739^1:12:0
+@q^4740^1:12:0
+@q^4757^0:15:0
 @q^4784^0:15:0
 @q^5116^1:7:1
 @q^5429^0:15:0
@@ -305,6 +318,8 @@ GoldScout-export 6^w8d9jwgbmanj^22
 @q^6438^0:15:0
 @q^6444^0:15:0
 @q^6826^0:15:0
+@q^7096^0:15:0
+@q^7097^1:0:0
 @q^7462^2:4:0
 @q^7463^2:4:0
 @q^7471^2:4:0
@@ -379,6 +394,7 @@ GoldScout-export 6^w8d9jwgbmanj^22
 @q^279934^1:12:0
 @q^281052^1:12:0
 @q^286430^3:2:0
+@m^1412^Mulgore
 @m^1415^Eastern Kingdoms
 @m^1418^Badlands
 @m^1425^The Hinterlands
@@ -1106,6 +1122,7 @@ GoldScout-export 6^w8d9jwgbmanj^22
 @a^2924^226:1
 @a^2944^272:1
 @a^2945^270:1
+@a^2955^288:1,308:4
 @a^3560^309:1
 @a^4323^287:1,288:3,308:2
 @a^4324^287:2,288:6,308:2

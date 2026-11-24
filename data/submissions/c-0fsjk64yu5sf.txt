@@ -1,4 +1,4 @@
-GoldScout-export 6^0fsjk64yu5sf^4
+GoldScout-export 6^0fsjk64yu5sf^5
 426^4^0^17^18^1433^0.1666^0.3474^4^Redridge Brute^1013:1:1,2592:1:1,2856:2:2^
 428^3^0^18^19^1433^0.3454^0.5192^3^Dire Condor^1080:1:1,4775:1:1,4776:1:1,5114:1:1,6889:3:3,17056:1:1^
 430^6^0^18^19^1433^0.1761^0.3390^6^Redridge Mystic^955:1:1,1013:3:3,1179:1:1,1212:3:3,2592:1:1,2856:3:3^
@@ -45,22 +45,33 @@ GoldScout-export 6^0fsjk64yu5sf^4
 3740^3^0^20^21^1440^0.2026^0.4280^3^Saltspittle Muckdweller^1468:1:1,5523:1:1,17057:2:2^
 3742^1^0^21^21^1440^0.2012^0.4253^1^Saltspittle Oracle^1468:1:1^
 3780^1^0^23^23^1440^0.4633^0.4573^1^Shadethicket Moss Eater^^
+3783^1^0^22^23^1440^0.3341^0.6828^1^Shadethicket Raincaller^^
 3809^4^0^21^22^1440^0.4791^0.4834^4^Ashenvale Bear^3730:2:2,5635:1:1,11406:2:2^
 3819^2^0^20^21^1440^0.4351^0.5109^2^Wildthorn Stalker^1081:1:1,2251:1:1,3174:2:2^
 3823^5^0^19^20^1440^0.2445^0.2718^5^Ghostpaw Runner^1015:3:3,3402:2:2,15310:1:1^
 3943^1^0^22^22^1440^0.0693^0.1362^1^Ruuzel^1749:1:1,5445:1:1^
+3988^12^0^19^20^1442^0.6366^0.5284^12^Venture Co. Operator^1180:1:1,2589:2:6,2592:3:4,5734:1:1^
+3989^12^0^18^19^1442^0.6418^0.5318^12^Venture Co. Logger^858:1:1,2287:1:1,2589:1:2,2592:4:7^
+3991^10^0^19^20^1442^0.6538^0.5221^10^Venture Co. Deforester^1788:1:1,2287:2:2,2589:3:8,2592:2:4^
+4011^1^0^19^19^1442^0.6064^0.6214^1^Young Pridewing^5808:1:1^
+4012^16^0^21^22^1442^0.5108^0.4424^16^Pridewing Wyvern^5135:5:5,5136:9:9,5635:2:2,5808:10:10,211853:1:1,262888:1:1^
+4014^4^0^22^23^1442^0.5087^0.4444^4^Pridewing Consort^5135:1:1,5136:2:2,5808:1:1^
+4020^1^0^23^23^1442^0.3963^0.1324^1^Sap Beast^^
+4074^2^0^23^23^1442^0.5986^0.5273^2^XT 9^4377:1:1^
 10323^1^0^19^19^1439^0.3632^0.7660^1^Murkdeep^5784:1:1^
 10373^1^0^19^19^1439^0.5246^0.3328^1^Xabraxxis^2592:1:1,248684:1:1^
 11714^1^0^16^16^1439^0.4583^0.9045^1^Marosh the Devious^2592:1:2^
 @i^730^Murloc Eye
 @i^769^Chunk of Boar Meat
 @i^771^Chipped Boar Tusk
+@i^858^Lesser Healing Potion
 @i^955^Scroll of Intellect
 @i^1013^Iron Rivet
 @i^1015^Lean Wolf Flank
 @i^1080^Tough Condor Meat
 @i^1081^Crisp Spider Meat
 @i^1179^Ice Cold Milk
+@i^1180^Scroll of Stamina
 @i^1205^Melon Juice
 @i^1206^Moss Agate
 @i^1210^Shadowgem
@@ -69,6 +80,7 @@ GoldScout-export 6^0fsjk64yu5sf^4
 @i^1468^Murloc Fin
 @i^1516^Worn Hatchet
 @i^1749^Linked Chain Cloak
+@i^1788^Patched Leather Boots
 @i^1796^Rawhide Boots
 @i^2217^Rectangular Shield
 @i^2251^Gooey Spider Leg
@@ -93,12 +105,14 @@ GoldScout-export 6^0fsjk64yu5sf^4
 @i^3402^Soft Patch of Fur
 @i^3730^Big Bear Meat
 @i^3931^Poisoned Spider Fang
+@i^4377^Heavy Blasting Powder
 @i^4564^Spiked Club of Magic
 @i^4775^Cracked Bill
 @i^4776^Ruffled Feather
 @i^5114^Severed Talon
 @i^5134^Small Furry Paw
 @i^5135^Thin Black Claw
+@i^5136^Torn Furry Ear
 @i^5366^Glowing Soul Gem
 @i^5386^Fine Moonstalker Pelt
 @i^5445^Ring of Zoram
@@ -107,7 +121,9 @@ GoldScout-export 6^0fsjk64yu5sf^4
 @i^5523^Small Barnacled Clam
 @i^5568^Smooth Pebble
 @i^5635^Sharp Claw
+@i^5734^Super Reaper 6000 Blueprints
 @i^5784^Slimy Murloc Scale
+@i^5808^Pridewing Venom Sac
 @i^6289^Raw Longjaw Mud Snapper
 @i^6308^Raw Bristle Whisker Catfish
 @i^6889^Small Egg
@@ -117,19 +133,23 @@ GoldScout-export 6^0fsjk64yu5sf^4
 @i^15310^Feral Gloves of the Owl
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
+@i^211853^Scroll: VOCE WELL
 @i^248682^Waylaid Crate: Apprentice Herbs
 @i^248683^Waylaid Crate: Apprentice Ore
 @i^248684^Waylaid Crate: Apprentice Textiles
+@i^262888^Sealed Journeyman's Writ
 @i^279279^Peerless Eye
 @q^730^1:7:1
 @q^769^1:7:1
 @q^771^0:15:0
+@q^858^1:0:0
 @q^955^1:0:0
 @q^1013^1:12:0
 @q^1015^1:7:1
 @q^1080^1:7:1
 @q^1081^1:7:1
 @q^1179^1:0:0
+@q^1180^1:0:0
 @q^1205^1:0:0
 @q^1206^2:7:1
 @q^1210^2:7:1
@@ -138,6 +158,7 @@ GoldScout-export 6^0fsjk64yu5sf^4
 @q^1468^1:7:1
 @q^1516^0:2:0
 @q^1749^0:4:0
+@q^1788^0:4:0
 @q^1796^0:4:0
 @q^2217^0:4:0
 @q^2251^1:7:1
@@ -162,12 +183,14 @@ GoldScout-export 6^0fsjk64yu5sf^4
 @q^3402^0:15:0
 @q^3730^1:7:1
 @q^3931^0:15:0
+@q^4377^1:7:1
 @q^4564^2:2:0
 @q^4775^0:15:0
 @q^4776^0:15:0
 @q^5114^0:15:0
 @q^5134^1:12:0
 @q^5135^0:15:0
+@q^5136^0:15:0
 @q^5366^1:12:0
 @q^5386^1:12:0
 @q^5445^1:12:0
@@ -176,7 +199,9 @@ GoldScout-export 6^0fsjk64yu5sf^4
 @q^5523^1:7:0
 @q^5568^1:6:0
 @q^5635^1:7:1
+@q^5734^1:12:0
 @q^5784^1:7:1
+@q^5808^1:12:0
 @q^6289^1:7:1
 @q^6308^1:7:1
 @q^6889^1:7:1
@@ -186,13 +211,16 @@ GoldScout-export 6^0fsjk64yu5sf^4
 @q^15310^2:4:0
 @q^17056^1:15:1
 @q^17057^1:15:0
+@q^211853^1:0:0
 @q^248682^1:0:1
 @q^248683^1:0:1
 @q^248684^1:0:1
+@q^262888^3:0:0
 @q^279279^1:12:0
 @m^1433^Redridge Mountains
 @m^1439^Darkshore
 @m^1440^Ashenvale
+@m^1442^Stonetalon Mountains
 @c^118^
 @c^724^
 @c^733^
@@ -1270,10 +1298,19 @@ GoldScout-export 6^0fsjk64yu5sf^4
 @a^3740^163:1,164:2
 @a^3742^164:1
 @a^3780^189:1
+@a^3783^266:1
 @a^3809^188:1,190:2,209:1
 @a^3819^188:1,228:1
 @a^3823^85:1,103:1,105:1,106:1,123:1
 @a^3943^41:1
+@a^3988^194:1,212:10,213:1
+@a^3989^211:3,212:1,213:6,232:2
+@a^3991^193:1,212:3,213:3,214:1,233:2
+@a^4011^252:1
+@a^4012^170:11,190:5
+@a^4014^170:3,190:1
+@a^4020^47:1
+@a^4074^211:2
 @a^10323^307:1
 @a^10373^130:1
 @a^11714^369:1
