@@ -1,4 +1,4 @@
-GoldScout-export 6^7bj8ia0yhshh^27
+GoldScout-export 6^7bj8ia0yhshh^28
 422^15^0^18^19^1433^0.3788^0.5529^15^Murlocfleischfresser^730:7:7,1467:4:4,1468:6:6,1769:1:1,1793:1:1,5523:1:1,5784:2:2,6289:2:4^
 548^10^0^17^18^1433^0.4384^0.6993^10^Schwacher Murlocgezeitenrufer^730:3:3,1467:3:3,1468:4:4,2455:1:1,5523:5:5,5784:4:4,6289:1:3^
 578^6^0^19^20^1433^0.3464^0.4785^6^Murlocspäher^730:2:2,1467:1:1,1468:1:1,5523:1:1,5784:1:1^
@@ -166,6 +166,25 @@ GoldScout-export 6^7bj8ia0yhshh^27
 7319^1^0^12^12^1438^0.3861^0.2624^1^Lady Sathrah^8344:1:1^
 7603^22^0^0^0^0^0.0000^0.0000^0^^1806:1:1,3186:1:1,3201:1:1,4306:6:8,4542:1:1,6398:1:1,6612:1:1,9309:3:3,9838:1:1,248689:1:1^
 7800^1^0^0^0^0^0.0000^0.0000^0^^9458:1:1,9865:1:1^
+250484^9^0^0^0^0^0.0000^0.0000^0^^1730:1:1,1734:1:1,1816:1:1,2978:1:1,3167:4:4,3931:3:3^
+250618^12^0^0^0^0^0.0000^0.0000^0^^1210:1:1,1505:1:1,1764:1:1,2777:1:1,6348:1:1^
+250619^1^0^0^0^0^0.0000^0.0000^0^^1814:1:1,3931:1:1^
+250622^12^0^0^0^0^0.0000^0.0000^0^^858:1:1,1179:1:1,1210:1:1,2764:1:1,2971:1:1,2978:1:1,211854:1:1^
+250623^1^0^0^0^0^0.0000^0.0000^0^^4567:1:1^
+250624^8^0^0^0^0^0.0000^0.0000^0^^858:1:1,1741:1:1,1812:1:1,2078:1:1,2781:1:1,4605:2:2^
+250625^2^0^0^0^0^0.0000^0.0000^0^^1505:1:1,2079:1:1,3167:1:1,3931:1:1^
+250626^16^0^0^0^0^0.0000^0.0000^0^^858:1:1,1179:2:2,1498:1:1,1509:1:1,1510:1:1,1514:1:1,1731:1:1,1737:1:1,2592:1:1,2971:1:1,3375:1:1,3652:1:1,4605:1:1,6554:1:1,6556:1:1,9765:1:1^
+250627^7^0^0^0^0^0.0000^0.0000^0^^1741:1:1,1811:1:1,248704:1:1^
+250630^3^0^0^0^0^0.0000^0.0000^0^^858:1:1,1743:1:1,2217:1:1^
+250654^5^0^0^0^0^0.0000^0.0000^0^^1179:1:1,1501:1:1,1515:1:1,1516:1:1,2763:1:1,3012:1:1,4605:1:1,9765:1:1^
+250656^1^0^0^0^0^0.0000^0.0000^0^^3012:1:1^
+250657^1^0^0^0^0^0.0000^0.0000^0^^271213:1:1^
+250689^1^0^0^0^0^0.0000^0.0000^0^^1179:1:1,1742:1:1^
+250735^2^0^0^0^0^0.0000^0.0000^0^^1794:1:1,3931:1:1,9748:1:1^
+255109^1^0^0^0^0^0.0000^0.0000^0^^^
+255964^6^0^0^0^0^0.0000^0.0000^0^^1495:1:1,1516:1:1,2984:1:1^
+256035^1^0^0^0^0^0.0000^0.0000^0^^271218:1:1^
+256040^3^0^0^0^0^0.0000^0.0000^0^^2987:1:1,3931:1:1,4569:1:1^
 272034^1^0^10^10^1438^0.3520^0.3898^1^Hasskreisch^774:1:1,4775:1:1,280831:1:1^
 272044^1^0^10^10^1438^0.3342^0.3573^1^Windmeisterin Gaedress^2589:1:1,280832:1:1^
 272046^1^0^12^12^1438^0.3304^0.2817^1^Hexenmutter Arysa^2589:1:1,3013:1:1,280834:1:1^
@@ -180,11 +199,14 @@ GoldScout-export 6^7bj8ia0yhshh^27
 @i^774^Malachit
 @i^785^Maguskönigskraut
 @i^805^Kleiner roter Beutel
+@i^858^Geringer Heiltrank
 @i^865^Bleistreitkolben des Champions
 @i^1015^Magere Wolfflanke
 @i^1081^Knuspriges Spinnenfleisch
+@i^1179^Eiskalte Milch
 @i^1181^Rolle der Willenskraft
 @i^1205^Melonensaft
+@i^1210^Schattenedelstein
 @i^1288^Großer Giftbeutel
 @i^1364^Struppige Lederweste
 @i^1366^Struppige Lederhose
@@ -202,7 +224,16 @@ GoldScout-export 6^7bj8ia0yhshh^27
 @i^1467^Gefleckter Sonnenfisch
 @i^1468^Murlocflosse
 @i^1476^Abgeknicktes Spinnengliedmaß
+@i^1495^Kattunschuhe
 @i^1497^Kattunumhang
+@i^1498^Kattunhandschuhe
+@i^1501^Kattuntunika
+@i^1505^Verformter Umhang
+@i^1509^Verformte Lederweste
+@i^1510^Schwerer Hammer
+@i^1514^Rostiger Kriegshammer
+@i^1515^Rauer Holzstab
+@i^1516^Abgenutztes Kriegsbeil
 @i^1520^Trollschweiß
 @i^1529^Jade
 @i^1686^Gesträubtes Schnurrbarthaar
@@ -215,25 +246,41 @@ GoldScout-export 6^7bj8ia0yhshh^27
 @i^1708^Süßer Nektar
 @i^1710^Großer Heiltrank
 @i^1711^Rolle der Ausdauer II
+@i^1730^Abgenutzter Panzergürtel
+@i^1731^Abgenutzte Panzerstiefel
+@i^1734^Abgenutzte Panzerhandschuhe
+@i^1737^Abgenutzte Panzerweste
+@i^1741^Geschnürter Umhang
+@i^1742^Geschnürte Panzerhandschuhe
+@i^1743^Geschnürte Panzerhose
 @i^1747^Gekettelte Stiefel
 @i^1751^Gekettelte Hose
 @i^1757^Verstärkter Kettenumhang
+@i^1764^Segeltuchschuhe
 @i^1769^Segeltuchschulterpolster
 @i^1774^Brokatumhang
 @i^1785^Kreuznahtschulterpolster
 @i^1787^Geflickter Ledergürtel
 @i^1793^Geflickte Lederschulterstücke
+@i^1794^Geflicktes Lederwams
 @i^1805^Feste Lederarmschienen
 @i^1806^Fester Umhang
 @i^1807^Feste Lederhandschuhe
 @i^1808^Feste Lederhose
 @i^1810^Feste Lederrüstung
+@i^1811^Stumpfes Claymore
+@i^1812^Kurzstielige Streitaxt
+@i^1814^Ramponierter Schlaghammer
 @i^1815^Ornamentstreitkolben
+@i^1816^Unausgewuchtete Axt
 @i^1824^Glänzende Kriegsaxt
 @i^1826^Steinschlägel
 @i^2072^Zwergischer Magierstab der Ausdauer
+@i^2078^Nordisches Kurzschwert der Stärke
+@i^2079^Sergeants Kriegshammer der Verteidigung
 @i^2080^Hügelkämpferaxt des Bären
 @i^2211^Gebogener großer Schild
+@i^2217^Rechteckiger Schild
 @i^2251^Klebriges Spinnenbein
 @i^2289^Rolle der Stärke II
 @i^2295^Großer Eberhauer
@@ -246,11 +293,20 @@ GoldScout-export 6^7bj8ia0yhshh^27
 @i^2646^Lockere Kettenhose
 @i^2672^Sehniges Wolfsfleisch
 @i^2677^Eberrippchen
+@i^2763^Anglermesser
+@i^2764^Kleiner Dolch
+@i^2777^Schwächlicher Kurzbogen
+@i^2781^Schmutzige Donnerbüchse
 @i^2782^Verschlissener Doppelbogen
 @i^2940^Blutige Bärentatze
+@i^2971^Zauberbinder-Stiefel
+@i^2978^Veteranen-Gamaschen
 @i^2984^Seherhandschuhe
+@i^2987^Gravierte Lederstiefel
+@i^3012^Rolle der Beweglichkeit
 @i^3013^Rolle des Schutzes
 @i^3058^Waldlederhandschuhe
+@i^3167^Dickes Spinnenhaar
 @i^3172^Ebergedärme
 @i^3186^Wikingerschwert des Adlers
 @i^3191^Gekrümmte Kriegsaxt
@@ -260,6 +316,7 @@ GoldScout-export 6^7bj8ia0yhshh^27
 @i^3300^Hasenpfote
 @i^3365^Ausgefranste Armschienen
 @i^3373^Flickwerkarmschienen
+@i^3375^Kattunarmschienen
 @i^3385^Geringer Manatrank
 @i^3402^Weicher Fellflicken
 @i^3403^Elfenbeineberhauer
@@ -267,6 +324,7 @@ GoldScout-export 6^7bj8ia0yhshh^27
 @i^3409^Nachtsäbler-Fangzahn
 @i^3411^Strigideulenfeder
 @i^3412^Waldweberspinnenseide
+@i^3652^Jagdrundschild
 @i^3671^Lebloser Schädel
 @i^3685^Raptorei
 @i^3712^Schildkrötenfleisch
@@ -283,6 +341,7 @@ GoldScout-export 6^7bj8ia0yhshh^27
 @i^3801^Gehärtete Lederstiefel
 @i^3805^Gehärtete Lederhose
 @i^3879^Tatze von Sin'Dall
+@i^3931^Vergifteter Spinnenfangzahn
 @i^4297^Muster: Barbarische Handschuhe
 @i^4306^Seidenstoff
 @i^4377^Schweres Sprengpulver
@@ -296,10 +355,13 @@ GoldScout-export 6^7bj8ia0yhshh^27
 @i^4555^Dicker geschuppter Schwanz
 @i^4556^Getupftes Muschelschalenfragment
 @i^4561^Skalpiertomahawk des Bären
+@i^4567^Söldnerschwert der Stärke
+@i^4569^Zuverlässiger Hammer der Ausdauer
 @i^4583^Dicke fellige Mähne
 @i^4586^Glatte Raptorenhaut
 @i^4603^Roher Tüpfelgelbschwanz
 @i^4604^Waldpilzkappe
+@i^4605^Rotgetupfter Pilz
 @i^4606^Schwammerl
 @i^4699^Sehergürtel
 @i^4706^Züngelnder Schuppenumhang
@@ -335,6 +397,7 @@ GoldScout-export 6^7bj8ia0yhshh^27
 @i^6303^Rohe Glitschhautmakrele
 @i^6308^Roher Stoppelfühlerwels
 @i^6314^Wolfmeister Cape
+@i^6348^Formel: Waffe - Schwacher Wildtiertöter
 @i^6355^Stabile verschlossene Truhe
 @i^6357^Versiegelte Kiste
 @i^6358^Öliges Schwarzmaul
@@ -345,6 +408,8 @@ GoldScout-export 6^7bj8ia0yhshh^27
 @i^6398^Geschmückter Gürtel
 @i^6438^Glanzlose Elementararmschiene
 @i^6538^Weidenrobe des Naturschutzes
+@i^6554^Bardenhandschuhe des Falken
+@i^6556^Bardenarmschienen der Intelligenz
 @i^6591^Schlachtschmiedehandgelenksschutz des Bären
 @i^6596^Schlachtschmiedebeinschützer des Champions
 @i^6611^Weisenschärpe des Zauberers
@@ -381,6 +446,8 @@ GoldScout-export 6^7bj8ia0yhshh^27
 @i^9449^Handlicher Meuteverprügler
 @i^9452^Hydrokrückstock
 @i^9458^Thermapluggs Zentralkern
+@i^9748^Einfache Robe des Naturschutzes
+@i^9765^Kadettenweste des Adlers
 @i^9795^Efeustoffhandschuhe des Adlers
 @i^9831^Schuppenumhang des Adlers
 @i^9838^Bebänderter Umhang der Intelligenz
@@ -425,8 +492,11 @@ GoldScout-export 6^7bj8ia0yhshh^27
 @i^248689^Abgefangene Kiste: Kuriositäten des Gesellen
 @i^248691^Abgefangene Kiste: Blühende Kräuter des Experten
 @i^248693^Abgefangene Kiste: Textilien des Experten
+@i^248704^Abgefangene Kiste: Bauteile des Lehrlings
 @i^254432^Geschnitztes Zentaurentotem
 @i^262889^Versiegelte Verfügung des Experten
+@i^271213^Rath'maels Spiegel
+@i^271218^Ekelblutkrummsäbel
 @i^273637^Klinge von Silverlaine
 @i^273645^Sicht des Blindsehers
 @i^274160^Wurfaxt des Stachelwüters
@@ -445,11 +515,14 @@ GoldScout-export 6^7bj8ia0yhshh^27
 @q^774^2:7:1
 @q^785^1:7:1
 @q^805^1:1:0
+@q^858^1:0:0
 @q^865^2:2:0
 @q^1015^1:7:1
 @q^1081^1:7:1
+@q^1179^1:0:0
 @q^1181^1:0:0
 @q^1205^1:0:0
+@q^1210^2:7:1
 @q^1288^1:7:1
 @q^1364^0:4:0
 @q^1366^0:4:0
@@ -467,7 +540,16 @@ GoldScout-export 6^7bj8ia0yhshh^27
 @q^1467^1:12:0
 @q^1468^1:7:1
 @q^1476^0:15:0
+@q^1495^0:4:0
 @q^1497^0:4:0
+@q^1498^0:4:0
+@q^1501^0:4:0
+@q^1505^0:4:0
+@q^1509^0:4:0
+@q^1510^0:2:0
+@q^1514^0:2:0
+@q^1515^0:2:0
+@q^1516^0:2:0
 @q^1520^0:15:0
 @q^1529^2:7:1
 @q^1686^0:15:0
@@ -480,25 +562,41 @@ GoldScout-export 6^7bj8ia0yhshh^27
 @q^1708^1:0:0
 @q^1710^1:0:0
 @q^1711^1:0:0
+@q^1730^0:4:0
+@q^1731^0:4:0
+@q^1734^0:4:0
+@q^1737^0:4:0
+@q^1741^0:4:0
+@q^1742^0:4:0
+@q^1743^0:4:0
 @q^1747^0:4:0
 @q^1751^0:4:0
 @q^1757^0:4:0
+@q^1764^0:4:0
 @q^1769^0:4:0
 @q^1774^0:4:0
 @q^1785^0:4:0
 @q^1787^0:4:0
 @q^1793^0:4:0
+@q^1794^0:4:0
 @q^1805^0:4:0
 @q^1806^0:4:0
 @q^1807^0:4:0
 @q^1808^0:4:0
 @q^1810^0:4:0
+@q^1811^0:2:0
+@q^1812^0:2:0
+@q^1814^0:2:0
 @q^1815^0:2:0
+@q^1816^0:2:0
 @q^1824^0:2:0
 @q^1826^0:2:0
 @q^2072^2:2:0
+@q^2078^2:2:0
+@q^2079^2:2:0
 @q^2080^2:2:0
 @q^2211^0:4:0
+@q^2217^0:4:0
 @q^2251^1:7:1
 @q^2289^1:0:0
 @q^2295^0:15:0
@@ -511,11 +609,20 @@ GoldScout-export 6^7bj8ia0yhshh^27
 @q^2646^0:4:0
 @q^2672^1:7:1
 @q^2677^1:7:1
+@q^2763^0:2:0
+@q^2764^0:2:0
+@q^2777^0:2:0
+@q^2781^0:2:0
 @q^2782^0:2:0
 @q^2940^0:15:0
+@q^2971^1:4:0
+@q^2978^2:4:0
 @q^2984^2:4:0
+@q^2987^2:4:0
+@q^3012^1:0:0
 @q^3013^1:0:0
 @q^3058^2:4:0
+@q^3167^0:15:0
 @q^3172^1:7:1
 @q^3186^2:2:0
 @q^3191^3:2:0
@@ -525,6 +632,7 @@ GoldScout-export 6^7bj8ia0yhshh^27
 @q^3300^0:15:0
 @q^3365^0:4:0
 @q^3373^0:4:0
+@q^3375^0:4:0
 @q^3385^1:0:0
 @q^3402^0:15:0
 @q^3403^0:15:0
@@ -532,6 +640,7 @@ GoldScout-export 6^7bj8ia0yhshh^27
 @q^3409^1:12:0
 @q^3411^1:12:0
 @q^3412^1:12:0
+@q^3652^2:4:0
 @q^3671^0:15:0
 @q^3685^1:7:1
 @q^3712^1:7:1
@@ -548,6 +657,7 @@ GoldScout-export 6^7bj8ia0yhshh^27
 @q^3801^0:4:0
 @q^3805^0:4:0
 @q^3879^1:12:0
+@q^3931^0:15:0
 @q^4297^2:9:0
 @q^4306^1:7:1
 @q^4377^1:7:1
@@ -561,10 +671,13 @@ GoldScout-export 6^7bj8ia0yhshh^27
 @q^4555^0:15:0
 @q^4556^0:15:0
 @q^4561^2:2:0
+@q^4567^2:2:0
+@q^4569^2:2:0
 @q^4583^0:15:0
 @q^4586^0:15:0
 @q^4603^1:7:1
 @q^4604^1:0:0
+@q^4605^1:0:0
 @q^4606^1:0:0
 @q^4699^2:4:0
 @q^4706^2:4:0
@@ -600,6 +713,7 @@ GoldScout-export 6^7bj8ia0yhshh^27
 @q^6303^1:7:1
 @q^6308^1:7:1
 @q^6314^3:4:0
+@q^6348^2:9:0
 @q^6355^1:15:0
 @q^6357^1:15:0
 @q^6358^1:7:1
@@ -610,6 +724,8 @@ GoldScout-export 6^7bj8ia0yhshh^27
 @q^6398^2:4:0
 @q^6438^0:15:0
 @q^6538^2:4:0
+@q^6554^2:4:0
+@q^6556^2:4:0
 @q^6591^2:4:0
 @q^6596^2:4:0
 @q^6611^2:4:0
@@ -646,6 +762,8 @@ GoldScout-export 6^7bj8ia0yhshh^27
 @q^9449^3:2:0
 @q^9452^3:2:0
 @q^9458^3:4:0
+@q^9748^2:4:0
+@q^9765^2:4:0
 @q^9795^2:4:0
 @q^9831^2:4:0
 @q^9838^2:4:0
@@ -690,8 +808,11 @@ GoldScout-export 6^7bj8ia0yhshh^27
 @q^248689^1:0:1
 @q^248691^1:0:1
 @q^248693^1:0:1
+@q^248704^2:0:1
 @q^254432^2:15:0
 @q^262889^3:0:0
+@q^271213^3:4:0
+@q^271218^3:2:0
 @q^273637^3:2:0
 @q^273645^3:4:0
 @q^274160^3:2:0

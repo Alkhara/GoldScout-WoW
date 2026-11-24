@@ -1,4 +1,5 @@
-GoldScout-export 6^7xy7oeygltkz^21
+GoldScout-export 6^7xy7oeygltkz^22
+92^4^0^39^40^1418^0.1549^0.3546^4^Elémentaire de roche^4553:1:1,4784:3:3,7848:3:3,8150:2:2^
 587^8^10^33^34^1434^0.3182^0.1756^8^Guerrier Bloodscalp^1519:2:2,2290:1:1,2730:1:1,3771:2:2,3901:2:2,3915:5:5,4306:2:4^1710:1:1,3771:1:1,5427:2:2
 588^4^4^34^35^1434^0.2314^0.1301^4^Eclaireur Bloodscalp^2592:1:3,4306:1:1^
 595^5^9^34^35^1434^0.2437^0.1227^5^Chasseur Bloodscalp^1708:1:1,2725:1:1,3771:1:1,3915:2:2,4306:2:3^5427:1:1
@@ -64,6 +65,8 @@ GoldScout-export 6^7xy7oeygltkz^21
 2595^11^7^38^39^1417^0.2151^0.8676^11^Ecumeur Daguéchine^1710:1:1,6362:2:2,7072:11:11,17057:3:3,17058:5:5^1710:1:1,10457:1:1,16883:1:1
 2596^3^1^39^40^1417^0.2136^0.8496^3^Sorcière Daguéchine^1640:1:1^16883:1:1
 2667^4^0^36^37^1434^0.3699^0.3085^4^Garde de Laze^^
+2731^2^0^36^37^1418^0.4336^0.4545^2^Traqueur des crêtes^12202:2:2^
+2735^21^0^37^39^1418^0.1895^0.4333^21^Elémentaire de roche inférieur^4553:7:7,4626:10:10,4784:14:14,7067:2:2,7848:2:2,7912:5:8,8150:3:3,248693:1:1^
 3099^7^0^6^7^1411^0.5157^0.5239^7^Sanglier tacheté redoutable^769:7:7,771:2:2,3171:1:1,211785:1:1^
 3125^1^0^5^5^1411^0.5566^0.7015^1^Scorpide cliquetant^4867:1:1^
 3560^2^0^34^37^1434^0.2439^0.1000^1^Gardien Guérisseur^^
@@ -234,6 +237,7 @@ GoldScout-export 6^7xy7oeygltkz^21
 @i^4537^Banane de Tel'Abim
 @i^4539^Pomme dorette
 @i^4544^Pain épicé de Mulgore
+@i^4553^Morceau de pierre délabré
 @i^4555^Epaisse queue écailleuse
 @i^4585^Mandibule d'araignée visqueuse
 @i^4586^Peau lisse de raptor
@@ -243,8 +247,10 @@ GoldScout-export 6^7xy7oeygltkz^21
 @i^4605^Champignon à pois rouges
 @i^4606^Morilles spongieuses
 @i^4607^Délicieux humus des grottes
+@i^4626^Petit éclat de pierre
 @i^4633^Coffret lourd en bronze
 @i^4707^Ceinturon en écailles brillantes
+@i^4784^Pierre morte
 @i^4867^Patte de scorpide brisée
 @i^4999^Volonté d'Azora
 @i^5116^Longue plume de queue
@@ -283,11 +289,15 @@ GoldScout-export 6^7xy7oeygltkz^21
 @i^6470^Ecaille de déviant
 @i^6471^Ecaille de déviant parfaite
 @i^6631^Racine vivante
+@i^7067^Terre élémentaire
 @i^7072^Ecaille de naga
 @i^7411^Cape d'infiltrateur de l'épervier
 @i^7441^Coiffe de sentinelle d'intelligence
 @i^7448^Ceinturon de sentinelle de brigandage
+@i^7848^Fragment d'élémentaire de roche
+@i^7912^Pierre solide
 @i^8146^Serre cruelle
+@i^8150^Sel de Fonderoc
 @i^8365^Truite tête-mithril crue
 @i^8746^Capuche entrelacée
 @i^9760^Brassards de cadet
@@ -329,6 +339,7 @@ GoldScout-export 6^7xy7oeygltkz^21
 @i^216483^Massette fânécorce
 @i^248684^Caisse détournée : textiles d'apprenti
 @i^248691^Caisse détournée : plantes à fleurs d'expert
+@i^248693^Caisse détournée : textiles d'expert
 @i^248694^Caisse détournée : curiosités d'expert
 @i^248703^Caisse détournée : lingots d'apprenti
 @i^251457^Plans : lance en acier
@@ -437,6 +448,7 @@ GoldScout-export 6^7xy7oeygltkz^21
 @q^4537^1:0:0
 @q^4539^1:0:0
 @q^4544^1:0:0
+@q^4553^0:15:0
 @q^4555^0:15:0
 @q^4585^0:15:0
 @q^4586^0:15:0
@@ -446,8 +458,10 @@ GoldScout-export 6^7xy7oeygltkz^21
 @q^4605^1:0:0
 @q^4606^1:0:0
 @q^4607^1:0:0
+@q^4626^1:12:0
 @q^4633^2:15:0
 @q^4707^2:4:0
+@q^4784^0:15:0
 @q^4867^0:15:0
 @q^4999^2:4:0
 @q^5116^1:7:1
@@ -486,11 +500,15 @@ GoldScout-export 6^7xy7oeygltkz^21
 @q^6470^1:7:1
 @q^6471^1:7:1
 @q^6631^3:2:0
+@q^7067^1:7:1
 @q^7072^1:7:1
 @q^7411^2:4:0
 @q^7441^2:4:0
 @q^7448^2:4:0
+@q^7848^1:12:0
+@q^7912^1:7:1
 @q^8146^1:7:1
+@q^8150^1:7:1
 @q^8365^1:7:1
 @q^8746^0:4:0
 @q^9760^1:4:0
@@ -532,6 +550,7 @@ GoldScout-export 6^7xy7oeygltkz^21
 @q^216483^1:0:0
 @q^248684^1:0:1
 @q^248691^1:0:1
+@q^248693^1:0:1
 @q^248694^1:0:1
 @q^248703^2:0:1
 @q^251457^2:9:0
@@ -552,6 +571,7 @@ GoldScout-export 6^7xy7oeygltkz^21
 @m^1411^Durotar
 @m^1416^Montagnes d'Alterac
 @m^1417^Hautes-terres d'Arathi
+@m^1418^Terres ingrates
 @m^1421^Forêt des Pins argentés
 @m^1424^Contreforts de Hautebrande
 @m^1434^Vallée de Strangleronce
@@ -947,6 +967,7 @@ GoldScout-export 6^7xy7oeygltkz^21
 @c^279982^
 @c^279990^
 @c^286152^
+@a^92^123:1,142:2,143:1
 @a^587^46:2,65:3,66:3
 @a^588^44:4
 @a^595^44:3,45:2
@@ -1003,6 +1024,8 @@ GoldScout-export 6^7xy7oeygltkz^21
 @a^2595^324:1,343:1,344:9
 @a^2596^324:1,344:2
 @a^2667^107:1,127:3
+@a^2731^148:1,208:1
+@a^2735^142:2,143:1,163:7,164:4,183:1,184:6
 @a^3099^169:2,190:1,230:3,250:1
 @a^3125^291:1
 @a^3560^24:1
