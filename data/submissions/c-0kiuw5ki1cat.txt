@@ -1,4 +1,4 @@
-GoldScout-export 6^0kiuw5ki1cat^10
+GoldScout-export 6^0kiuw5ki1cat^11
 212^3^0^29^30^1431^0.3377^0.7311^3^Splinter Fist Warrior^4306:1:2^
 213^2^0^19^20^1431^0.1202^0.2879^2^Starving Dire Wolf^1015:1:1,3301:1:1^
 217^1^0^19^20^1431^0.1299^0.2704^1^Venom Web Spider^2251:1:1^
@@ -72,6 +72,12 @@ GoldScout-export 6^0kiuw5ki1cat^10
 4021^1^0^24^24^1442^0.3869^0.1702^1^Corrosive Sap Beast^^
 4041^1^0^28^28^1442^0.3056^0.7196^1^Scorched Basilisk^^
 4044^1^0^23^23^1442^0.3342^0.6189^1^Blackened Basilisk^1702:1:1^
+4646^4^0^32^33^1443^0.4050^0.8663^4^Gelkis Outrunner^2290:1:1,2592:1:3,4306:1:2,6067:2:2,254432:2:2^
+4647^1^0^33^33^1443^0.4030^0.8975^1^Gelkis Scout^6067:1:1^
+4648^2^0^33^34^1443^0.4062^0.8408^2^Gelkis Stamper^6067:1:1^
+4649^5^0^33^34^1443^0.4001^0.8572^5^Gelkis Windchaser^1708:1:1,2592:1:3,3771:1:1,4306:2:3,6067:2:2,254432:1:1^
+4651^1^0^34^34^1443^0.3907^0.8777^1^Gelkis Earthcaller^^
+4661^1^0^29^29^1443^0.3907^0.8785^1^Gelkis Rumbler^^
 4663^1^0^30^31^1443^0.5413^0.3345^1^Burning Blade Augur^^
 4664^3^0^30^31^1443^0.5729^0.2843^3^Burning Blade Reaver^4306:3:5^
 4666^2^0^31^32^1443^0.5779^0.2570^2^Burning Blade Felsworn^4306:1:1^
@@ -172,6 +178,7 @@ GoldScout-export 6^0kiuw5ki1cat^10
 @i^5566^Broken Antler
 @i^5637^Large Fang
 @i^5829^Razor-sharp Beak
+@i^6067^Centaur Ear
 @i^6211^Recipe: Elixir of Ogre's Strength
 @i^6246^Hatefury Claw
 @i^6247^Hatefury Horn
@@ -205,6 +212,7 @@ GoldScout-export 6^0kiuw5ki1cat^10
 @i^248709^Waylaid Crate: Expert Ingots
 @i^248710^Waylaid Crate: Expert Parts
 @i^251391^Plans: Hard Gold Pauldrons
+@i^254432^Carved Centaur Totem
 @i^255728^Manual: Potent Anti-Venom
 @i^258530^Lucky Lure
 @q^730^1:7:1
@@ -283,6 +291,7 @@ GoldScout-export 6^0kiuw5ki1cat^10
 @q^5566^0:15:0
 @q^5637^1:7:1
 @q^5829^0:15:0
+@q^6067^1:12:0
 @q^6211^1:9:0
 @q^6246^1:12:0
 @q^6247^1:12:0
@@ -316,6 +325,7 @@ GoldScout-export 6^0kiuw5ki1cat^10
 @q^248709^2:0:1
 @q^248710^2:0:1
 @q^251391^2:9:0
+@q^254432^2:15:0
 @q^255728^2:9:0
 @q^258530^1:12:0
 @m^1416^Alterac Mountains
@@ -1121,6 +1131,12 @@ GoldScout-export 6^0kiuw5ki1cat^10
 @a^4021^67:1
 @a^4041^286:1
 @a^4044^246:1
+@a^4646^328:1,348:3
+@a^4647^348:1
+@a^4648^328:1,348:1
+@a^4649^328:1,347:2,348:2
+@a^4651^347:1
+@a^4661^347:1
 @a^4663^130:1
 @a^4664^111:3
 @a^4666^91:1,111:1

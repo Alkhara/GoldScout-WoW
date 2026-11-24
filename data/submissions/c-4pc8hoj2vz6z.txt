@@ -1,4 +1,4 @@
-GoldScout-export 6^4pc8hoj2vz6z^51
+GoldScout-export 6^4pc8hoj2vz6z^53
 589^1^0^14^15^1436^0.4439^0.6843^1^Defias Pillager^2589:1:3^
 705^11^0^1^1^1426^0.2896^0.7326^11^Ragged Young Wolf^750:8:8,1367:2:2,2211:1:1,2653:1:1,4865:2:2,7073:2:2,7074:7:7^
 707^3^0^2^2^1426^0.2994^0.7350^3^Rockjaw Trogg^117:2:2,1367:1:1,2589:2:2^
@@ -207,6 +207,12 @@ GoldScout-export 6^4pc8hoj2vz6z^51
 9878^2^0^51^52^1448^0.4070^0.4320^2^Entropic Beast^4787:1:1,7077:1:1^
 9879^1^0^53^54^1448^0.4144^0.4272^1^Entropic Horror^4787:1:1,7068:1:1^
 9916^1^0^46^46^1435^0.9343^0.6141^1^Jarquia^7973:1:1,11723:1:1^
+10469^1^0^0^0^0^0.0000^0.0000^0^^^
+10471^1^0^0^0^0^0.0000^0.0000^0^^13823:1:1,14047:1:4^
+10476^2^0^0^0^0^0.0000^0.0000^0^^12841:1:1,14047:1:2^
+10477^1^0^0^0^0^0.0000^0.0000^0^^20520:1:1^
+10487^1^0^0^0^0^0.0000^0.0000^0^^3990:1:1^
+10489^1^0^0^0^0^0.0000^0.0000^0^^^
 10801^1^0^54^54^1422^0.3801^0.5709^1^Jabbering Ghoul^^
 10802^1^0^51^51^1425^0.5732^0.8652^1^Hitah'ya the Keeper^^
 10816^1^0^55^55^1422^0.4691^0.4913^1^Wandering Skeleton^12738:1:1^
@@ -214,6 +220,7 @@ GoldScout-export 6^4pc8hoj2vz6z^51
 10940^2^0^55^55^1423^0.3258^0.7946^2^Ghost of the Past^^
 11075^1^0^53^53^1422^0.3709^0.5793^1^Cauldron Lord Bilemaw^13194:1:1^
 11077^1^0^55^55^1422^0.4619^0.5274^1^Cauldron Lord Malvinious^13195:1:1^
+11551^1^0^0^0^0^0.0000^0.0000^0^^4585:1:1^
 11686^1^0^40^41^1414^0.3861^0.5796^1^Ghostly Raider^4306:1:1^
 11777^2^0^40^41^1414^0.3835^0.5727^2^Shadowshard Rumbler^17756:2:2^
 11783^3^0^0^0^0^0.0000^0.0000^0^^4554:2:2,7075:1:1^
@@ -330,6 +337,7 @@ GoldScout-export 6^4pc8hoj2vz6z^51
 @i^3928^Superior Healing Potion
 @i^3965^Thick Leather Gloves
 @i^3967^Thick Leather Shoulderpads
+@i^3990^Crested Buckler
 @i^3996^Laminated Scale Gloves
 @i^3998^Laminated Scale Shoulderpads
 @i^3999^Laminated Scale Armor
@@ -462,12 +470,14 @@ GoldScout-export 6^4pc8hoj2vz6z^51
 @i^12739^Dalson Cabinet Key
 @i^12771^Empty Firewater Flask
 @i^12840^Minion's Scourgestone
+@i^12841^Invader's Scourgestone
 @i^13194^Felstone Field Cauldron Key
 @i^13195^Dalson's Tears Cauldron Key
 @i^13446^Major Healing Potion
 @i^13815^Some Rune
 @i^13816^Fine Longsword
 @i^13819^Balanced War Axe
+@i^13823^Stout War Staff
 @i^14047^Runecloth
 @i^14227^Ironweb Spider Silk
 @i^14256^Felcloth
@@ -493,6 +503,7 @@ GoldScout-export 6^4pc8hoj2vz6z^51
 @i^18946^Head of Overseer Maltorius
 @i^18959^Smithing Tuyere
 @i^18960^Lookout's Spyglass
+@i^20520^Dark Rune
 @i^20606^Amber Voodoo Feather
 @i^20607^Blue Voodoo Feather
 @i^20608^Green Voodoo Feather
@@ -589,6 +600,7 @@ GoldScout-export 6^4pc8hoj2vz6z^51
 @q^3928^1:0:0
 @q^3965^0:4:0
 @q^3967^0:4:0
+@q^3990^0:4:0
 @q^3996^0:4:0
 @q^3998^0:4:0
 @q^3999^0:4:0
@@ -721,12 +733,14 @@ GoldScout-export 6^4pc8hoj2vz6z^51
 @q^12739^1:12:0
 @q^12771^1:12:0
 @q^12840^1:12:0
+@q^12841^1:12:0
 @q^13194^1:12:0
 @q^13195^1:12:0
 @q^13446^1:0:0
 @q^13815^1:12:0
 @q^13816^0:2:0
 @q^13819^0:2:0
+@q^13823^0:2:0
 @q^14047^1:7:1
 @q^14227^1:7:1
 @q^14256^1:7:1
@@ -752,6 +766,7 @@ GoldScout-export 6^4pc8hoj2vz6z^51
 @q^18946^1:12:0
 @q^18959^1:12:0
 @q^18960^1:12:0
+@q^20520^2:7:1
 @q^20606^1:15:0
 @q^20607^1:15:0
 @q^20608^1:15:0

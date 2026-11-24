@@ -1,4 +1,4 @@
-GoldScout-export 6^hl4a8m0fs63j^6
+GoldScout-export 6^hl4a8m0fs63j^7
 832^7^0^18^19^1436^0.3817^0.5377^7^Dust Devil^2091:1:1^
 834^2^0^10^11^1436^0.3882^0.2234^2^Coyote^2673:1:1,2959:1:1^
 1151^3^0^35^36^1434^0.2568^0.2144^3^Saltwater Crocolisk^770:2:2,3667:3:3,12037:1:1^
@@ -165,6 +165,7 @@ GoldScout-export 6^hl4a8m0fs63j^6
 @i^4538^Snapvine Watermelon
 @i^4542^Moist Cornbread
 @i^4553^Jagged Piece of Stone
+@i^4603^Raw Spotted Yellowtail
 @i^4732^Glyphed Cloak
 @i^4784^Lifeless Stone
 @i^4787^Burning Pitch
@@ -186,7 +187,9 @@ GoldScout-export 6^hl4a8m0fs63j^6
 @i^5842^Unrefined Ore Sample
 @i^6308^Raw Bristle Whisker Catfish
 @i^6358^Oily Blackmouth
+@i^6359^Firefin Snapper
 @i^6361^Raw Rainbow Fin Albacore
+@i^6362^Raw Rockscale Cod
 @i^6611^Sage's Sash of the Eagle
 @i^6682^Death Speaker Robes
 @i^6688^Whisperwind Headdress
@@ -299,6 +302,7 @@ GoldScout-export 6^hl4a8m0fs63j^6
 @q^4538^1:0:0
 @q^4542^1:0:0
 @q^4553^0:15:0
+@q^4603^1:7:1
 @q^4732^2:4:0
 @q^4784^0:15:0
 @q^4787^0:15:0
@@ -320,7 +324,9 @@ GoldScout-export 6^hl4a8m0fs63j^6
 @q^5842^1:12:0
 @q^6308^1:7:1
 @q^6358^1:7:1
+@q^6359^1:7:1
 @q^6361^1:7:1
+@q^6362^1:7:1
 @q^6611^2:4:0
 @q^6682^3:4:0
 @q^6688^3:4:0
@@ -972,6 +978,9 @@ GoldScout-export 6^hl4a8m0fs63j^6
 @c^279938^
 @c^279941^
 @c^279945^
+@c^279965^
+@c^279966^
+@c^279967^
 @c^279969^
 @c^279978^
 @c^279979^
@@ -1039,5 +1048,6 @@ GoldScout-export 6^hl4a8m0fs63j^6
 @a^10992^84:1
 @a^14277^333:1
 @a^14426^126:1
-@f^1434^0^2^150^6358:2:2^43:2
+@f^1413^0^1^150^6361:1:1^152:1
+@f^1434^0^88^150^4603:19:19,6358:17:17,6359:14:14,6362:38:38^43:2,106:3,305:83
 @l^0^enUS

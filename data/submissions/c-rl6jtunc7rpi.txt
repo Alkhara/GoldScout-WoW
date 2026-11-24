@@ -1,4 +1,4 @@
-GoldScout-export 6^rl6jtunc7rpi^20
+GoldScout-export 6^rl6jtunc7rpi^21
 40^1^0^6^7^1429^0.6145^0.4852^1^Kobold Miner^^
 43^1^0^7^7^1429^0.6129^0.4722^1^Mine Spider^1476:1:1,5465:1:1^
 46^3^0^9^10^1429^0.7874^0.6616^3^Murloc Forager^159:1:1,779:2:2^
@@ -74,6 +74,7 @@ GoldScout-export 6^rl6jtunc7rpi^20
 1176^8^0^11^12^1432^0.3640^0.1557^8^Tunnel Rat Forager^1511:1:1,2406:1:1,2589:3:6,3110:2:2^
 1186^2^0^11^12^1432^0.2976^0.2517^2^Elder Black Bear^2940:1:1,3173:2:2^
 1190^5^0^10^11^1432^0.2935^0.2734^5^Mountain Boar^769:3:3,2677:1:1,3172:3:3^
+1194^6^0^15^16^1432^0.7573^0.7008^6^Mountain Buzzard^556:1:1,5114:1:1,6889:4:4,9784:1:1,9786:1:1,17056:3:3^
 1195^14^0^10^11^1432^0.3071^0.2646^14^Forest Lurker^1081:8:8,1475:1:1,2966:1:1,3167:2:2,3174:4:4,5465:6:8^
 1196^7^0^7^8^1426^0.2803^0.5116^7^Ice Claw Bear^3169:2:2,3170:1:1,3190:1:1,4865:1:1,7073:1:1,7074:3:3^
 1201^5^0^7^8^1426^0.2910^0.4950^5^Snow Leopard^4813:3:3,4814:1:1^
@@ -128,6 +129,7 @@ GoldScout-export 6^rl6jtunc7rpi^20
 @i^414^Dalaran Sharp
 @i^422^Dwarven Mild
 @i^555^Rough Vulture Feathers
+@i^556^Buzzard Beak
 @i^723^Goretusk Liver
 @i^725^Gnoll Paw
 @i^727^Notched Shortsword of Healing
@@ -297,6 +299,7 @@ GoldScout-export 6^rl6jtunc7rpi^20
 @i^4814^Discolored Fang
 @i^4865^Ruined Pelt
 @i^4874^Clean Fishbones
+@i^5114^Severed Talon
 @i^5170^Mossy Tumor
 @i^5204^Bloodfeather Belt
 @i^5206^Bogling Root
@@ -328,6 +331,8 @@ GoldScout-export 6^rl6jtunc7rpi^20
 @i^9755^Nomad Gloves
 @i^9760^Cadet Bracers
 @i^9761^Cadet Cloak
+@i^9784^Raider's Boots of the Owl
+@i^9786^Raider's Cloak of Nature Protection
 @i^15212^Fighter Broadsword of the Monkey
 @i^17056^Light Feather
 @i^211784^Scroll: WUBBA WUBBA
@@ -363,6 +368,7 @@ GoldScout-export 6^rl6jtunc7rpi^20
 @q^414^1:0:0
 @q^422^1:0:0
 @q^555^0:15:0
+@q^556^0:15:0
 @q^723^1:7:1
 @q^725^1:12:0
 @q^727^2:2:0
@@ -532,6 +538,7 @@ GoldScout-export 6^rl6jtunc7rpi^20
 @q^4814^0:15:0
 @q^4865^0:15:0
 @q^4874^0:15:0
+@q^5114^0:15:0
 @q^5170^1:12:0
 @q^5204^1:12:0
 @q^5206^1:0:0
@@ -563,6 +570,8 @@ GoldScout-export 6^rl6jtunc7rpi^20
 @q^9755^1:4:0
 @q^9760^1:4:0
 @q^9761^1:4:0
+@q^9784^2:4:0
+@q^9786^2:4:0
 @q^15212^2:2:0
 @q^17056^1:15:1
 @q^211784^1:0:0
@@ -2199,6 +2208,7 @@ GoldScout-export 6^rl6jtunc7rpi^20
 @a^1176^47:2,67:6
 @a^1186^65:1,125:1
 @a^1190^44:1,65:1,125:1,126:1,146:1
+@a^1194^254:1,255:1,275:1,313:1,315:2
 @a^1195^65:1,66:2,85:4,106:1,126:4,146:1,166:1
 @a^1196^165:1,185:1,205:5
 @a^1201^146:1,185:1,205:3
