@@ -1,4 +1,4 @@
-GoldScout-export 6^aibagrymj0qa^14
+GoldScout-export 6^aibagrymj0qa^15
 6^14^0^1^2^1429^0.4771^0.3625^14^Kobold Vermin^755:5:5,1366:1:1,1367:1:1,1368:1:1,1372:2:2,2589:5:5,2650:1:1,2651:1:1,4536:3:3,247834:1:1,247839:4:4^
 69^4^0^2^2^1429^0.4688^0.3830^4^Timber Wolf^750:2:2,1376:1:1,2650:1:1,2672:1:1,4865:3:3,7073:1:1,7074:1:1^
 257^19^0^3^3^1429^0.4732^0.3481^19^Kobold Worker^159:2:2,755:6:6,1372:1:1,1374:1:1,1378:1:1,1380:1:1,2211:1:1,2589:3:3,2650:1:1,3363:2:2,4536:3:3,247839:4:4^
@@ -84,6 +84,10 @@ GoldScout-export 6^aibagrymj0qa^14
 4723^1^0^38^38^1434^0.4260^0.1838^1^Foreman Cozzle^5851:1:1^
 5477^1^0^39^39^1435^0.5017^0.3834^1^Noboru the Cudgel^4306:1:3,6196:1:1^
 5622^1^0^37^37^1435^0.6239^0.2202^1^Ongeku^^
+11559^3^0^39^40^2652^0.3146^0.2295^3^Outcast Necromancer^4306:1:1,260347:1:1^
+11561^17^0^37^42^2652^0.3230^0.2249^16^Undead Ravager^4306:6:10,4338:1:1,4607:1:1^
+11576^3^0^32^33^1443^0.6733^0.6282^3^Whirlwind Ripper^7069:1:1^
+11578^2^0^33^33^1443^0.6392^0.7625^2^Whirlwind Shredder^^
 254560^10^0^39^40^2548^0.4889^0.4736^10^Twilight Shadowmancer^4306:3:4,266425:6:13,267073:2:3^
 256798^17^0^37^38^2548^0.4941^0.4679^17^Twilight Neophyte^3782:1:1,4306:3:5,4338:1:1,5429:1:1,266425:6:12,267073:2:4^
 256899^1^0^41^41^2548^0.4489^0.5121^1^Chogg'Zac^265750:1:1,265751:1:1^
@@ -213,6 +217,7 @@ GoldScout-export 6^aibagrymj0qa^14
 @i^4556^Speckled Shell Fragment
 @i^4585^Dripping Spider Mandible
 @i^4586^Smooth Raptor Skin
+@i^4607^Delicious Cave Mold
 @i^4865^Ruined Pelt
 @i^5113^Mark of the Syndicate
 @i^5114^Severed Talon
@@ -237,6 +242,7 @@ GoldScout-export 6^aibagrymj0qa^14
 @i^6362^Raw Rockscale Cod
 @i^6438^Dull Elemental Bracer
 @i^6986^Crimson Lotus
+@i^7069^Elemental Air
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
 @i^7407^Infiltrator Armor of the Prophet
@@ -284,6 +290,7 @@ GoldScout-export 6^aibagrymj0qa^14
 @i^249881^Recipe: Root Tea
 @i^251391^Plans: Hard Gold Pauldrons
 @i^258530^Lucky Lure
+@i^260347^Tattered Journal
 @i^262889^Sealed Expert's Writ
 @i^265750^Chogg's Head
 @i^265751^Zac's Head
@@ -402,6 +409,7 @@ GoldScout-export 6^aibagrymj0qa^14
 @q^4556^0:15:0
 @q^4585^0:15:0
 @q^4586^0:15:0
+@q^4607^1:0:0
 @q^4865^0:15:0
 @q^5113^0:15:0
 @q^5114^0:15:0
@@ -426,6 +434,7 @@ GoldScout-export 6^aibagrymj0qa^14
 @q^6362^1:7:1
 @q^6438^0:15:0
 @q^6986^0:15:0
+@q^7069^1:7:1
 @q^7073^0:15:0
 @q^7074^0:15:0
 @q^7407^2:4:0
@@ -473,6 +482,7 @@ GoldScout-export 6^aibagrymj0qa^14
 @q^249881^1:9:0
 @q^251391^2:9:0
 @q^258530^1:12:0
+@q^260347^1:15:0
 @q^262889^3:0:0
 @q^265750^1:12:0
 @q^265751^1:12:0
@@ -498,7 +508,9 @@ GoldScout-export 6^aibagrymj0qa^14
 @m^1435^Swamp of Sorrows
 @m^1437^Wetlands
 @m^1441^Thousand Needles
+@m^1443^Desolace
 @m^2548^Riverglades
+@m^2652^Shen'dralas
 @c^118^
 @c^724^
 @c^733^
@@ -1303,6 +1315,10 @@ GoldScout-export 6^aibagrymj0qa^14
 @a^4723^68:1
 @a^5477^150:1
 @a^5622^92:1
+@a^11559^66:1,85:1,106:1
+@a^11561^26:3,46:1,86:2,105:1,106:8,127:1
+@a^11576^233:1,253:1,273:1
+@a^11578^292:1,312:1
 @a^254560^169:1,189:4,190:3,209:2
 @a^256798^170:6,189:8,209:3
 @a^256899^208:1
