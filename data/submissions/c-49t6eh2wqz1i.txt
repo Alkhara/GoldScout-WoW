@@ -1,4 +1,5 @@
-GoldScout-export 6^49t6eh2wqz1i^22
+GoldScout-export 6^49t6eh2wqz1i^23
+92^1^0^40^40^1418^0.4494^0.8421^1^Elemental de roca^4784:1:1^
 667^21^0^39^40^1434^0.4306^0.3526^21^Guerrero Machacacráneos^1520:5:5,1524:6:6,2744:1:1,2749:1:1,2751:1:1,4306:6:12,4338:1:1,8151:4:4,8153:2:5,248691:1:1^
 684^4^0^37^38^1434^0.3672^0.3741^4^Pantera Faucesombría^863:1:1,1688:2:2^
 687^8^0^40^41^1434^0.2694^0.4980^8^Acechador de la selva^4461:5:5,4586:4:4,12184:3:3^
@@ -32,11 +33,12 @@ GoldScout-export 6^49t6eh2wqz1i^22
 2624^1^0^40^40^1434^0.2479^0.2350^1^Gazban^4034:1:1^
 2649^1^0^41^41^1425^0.2173^0.5769^1^Arrancacabelleras Secacorteza^^
 2725^2^0^42^43^1418^0.7659^0.6472^2^Cría hirviente^6444:2:2^
-2731^2^0^36^36^1418^0.5990^0.2478^2^Acechador de la cresta^^
-2732^1^0^39^39^1418^0.4139^0.6492^1^Cazadora de la cresta^^
+2730^2^0^42^43^1418^0.7327^0.3366^2^Coyote del risco rabioso^4583:1:1,12203:1:1^
+2731^3^0^36^36^1418^0.5324^0.2973^3^Acechador de la cresta^^
+2732^3^0^38^39^1418^0.4700^0.6311^3^Cazadora de la cresta^1688:1:1,5637:1:1^
 2734^5^0^40^41^1418^0.2255^0.7414^5^Patriarca acechador de la cresta^1688:2:2,12202:3:3^
 2760^71^0^38^39^1417^0.2560^0.3043^71^Exiliado ardiente^3857:11:11,4479:36:36,4787:27:27,6413:1:1,6419:1:1,7068:9:9^
-2831^1^0^41^41^1418^0.2080^0.7340^1^Águila ratonera gigante^1464:1:1,12037:1:1^
+2831^1^0^40^41^1418^0.2080^0.7340^1^Águila ratonera gigante^1464:1:1,12037:1:1^
 4040^11^0^21^22^1437^0.4908^0.6159^11^Acechador de cuevas^878:2:2,1081:3:3,1288:1:1,2251:6:6,3174:4:4,4428:3:3^
 12922^3^0^32^42^1434^0.3269^0.7774^3^Esbirro diablillo^^
 254560^6^0^39^40^2548^0.4821^0.4740^6^Sombramante Crepuscular^4306:1:1,266425:3:7^
@@ -154,16 +156,19 @@ GoldScout-export 6^49t6eh2wqz1i^22
 @i^4460^Ala rasgada
 @i^4461^Pellejo de raptor
 @i^4479^Talismán ardiente
+@i^4583^Melena espesa
 @i^4586^Piel de raptor lisa
 @i^4599^Filete de jamón curado
 @i^4637^Arcón de acero
 @i^4725^Espaldares de brigadier
 @i^4732^Capa con inscripciones
+@i^4784^Piedra inerte
 @i^4787^Brea ardiente
 @i^4865^Pelambre estropeada
 @i^5429^Una bonita roca
 @i^5431^Petaca vacía
 @i^5524^Almeja gruesa
+@i^5637^Colmillo grande
 @i^5829^Pico afilado
 @i^6149^Poción de maná superior
 @i^6358^Bocanegra graso
@@ -189,6 +194,7 @@ GoldScout-export 6^49t6eh2wqz1i^22
 @i^12037^Carne misteriosa
 @i^12184^Carne de raptor
 @i^12202^Carne de tigre
+@i^12203^Carne de lobo rojo
 @i^15798^Diente de ogro astillado
 @i^17057^Escamas de pez lustrosas
 @i^17058^Aceite de pescado
@@ -294,16 +300,19 @@ GoldScout-export 6^49t6eh2wqz1i^22
 @q^4460^0:15:0
 @q^4461^1:7:1
 @q^4479^1:0:0
+@q^4583^0:15:0
 @q^4586^0:15:0
 @q^4599^1:0:0
 @q^4637^2:15:0
 @q^4725^2:4:0
 @q^4732^2:4:0
+@q^4784^0:15:0
 @q^4787^0:15:0
 @q^4865^0:15:0
 @q^5429^0:15:0
 @q^5431^0:15:0
 @q^5524^1:7:0
+@q^5637^1:7:1
 @q^5829^0:15:0
 @q^6149^1:0:0
 @q^6358^1:7:1
@@ -329,6 +338,7 @@ GoldScout-export 6^49t6eh2wqz1i^22
 @q^12037^1:7:1
 @q^12184^1:7:1
 @q^12202^1:7:1
+@q^12203^1:7:1
 @q^15798^0:15:0
 @q^17057^1:15:0
 @q^17058^1:15:0
@@ -1374,6 +1384,7 @@ GoldScout-export 6^49t6eh2wqz1i^22
 @c^285277^
 @c^285278^
 @c^286152^
+@a^92^328:1
 @a^667^128:9,148:12
 @a^684^147:4
 @a^687^185:4,205:4
@@ -1404,8 +1415,9 @@ GoldScout-export 6^49t6eh2wqz1i^22
 @a^2624^84:1
 @a^2649^224:1
 @a^2725^255:1,275:1
-@a^2731^91:1,112:1
-@a^2732^248:1
+@a^2730^134:2
+@a^2731^91:1,112:1,147:1
+@a^2732^207:1,248:1,292:1
 @a^2734^284:3,285:1,304:1
 @a^2760^104:12,105:20,124:14,125:25
 @a^2831^284:1

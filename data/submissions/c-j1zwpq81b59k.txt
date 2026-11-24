@@ -1,4 +1,4 @@
-GoldScout-export 6^j1zwpq81b59k^24
+GoldScout-export 6^j1zwpq81b59k^25
 705^1^0^1^1^1426^0.3217^0.7095^1^Ragged Young Wolf^4865:1:1^
 1087^1^0^42^42^1435^0.7478^0.1367^1^Sawtooth Snapper^770:1:2^
 1115^9^0^8^9^1426^0.7038^0.5636^9^Rockjaw Skullthumper^117:1:1,1416:1:1,1419:1:1,2213:1:1,2589:1:2,2591:2:2,2644:1:1,2960:1:1,268548:1:1^
@@ -118,6 +118,8 @@ GoldScout-export 6^j1zwpq81b59k^24
 5850^1^0^46^46^1427^0.4165^0.3874^1^Blazing Elemental^3857:1:1,4787:1:1^
 5856^1^0^45^45^1427^0.5893^0.4897^1^Glassweb Spider^4585:1:1^
 5858^1^0^47^47^1427^0.3763^0.3399^1^Searing Lava Spider^12205:1:1^
+6004^1^0^51^51^1419^0.6324^0.3228^1^Shadowsworn Cultist^14047:1:2^
+6011^2^0^54^55^1419^0.6091^0.5025^2^Felguard Sentry^14047:1:1,14256:1:2,18623:1:1^
 6123^10^0^10^11^1426^0.7718^0.6019^10^Dark Iron Spy^159:1:1,774:1:1,1412:1:1,1511:1:1,2589:2:3,4540:1:1,6508:1:1,274268:1:1^
 6198^3^0^51^52^1447^0.5783^0.2479^3^Blood Elf Surveyor^14047:2:4,274966:2:2^
 6199^3^0^52^53^1447^0.5802^0.2530^3^Blood Elf Reclaimer^14047:3:5,274966:2:2^
@@ -469,6 +471,7 @@ GoldScout-export 6^j1zwpq81b59k^24
 @i^14228^Embersilk Coronet of Magic
 @i^14247^Lunar Mantle of Fire Protection
 @i^14250^Lunar Slippers of Intellect
+@i^14256^Felcloth
 @i^14479^Pattern: Brightcloth Gloves
 @i^14665^Keeper's Cloak
 @i^14944^Warbringer's Crown of the Wolf
@@ -504,6 +507,7 @@ GoldScout-export 6^j1zwpq81b59k^24
 @i^17764^Gem of the Fourth Khan
 @i^17765^Gem of the Fifth Khan
 @i^18082^Zum'rah's Vexing Cane
+@i^18623^Flawless Fel Essence (Dark Portal)
 @i^18624^Flawless Fel Essence (Azshara)
 @i^18956^Miniaturization Residue
 @i^18958^Water Elemental Core
@@ -783,6 +787,7 @@ GoldScout-export 6^j1zwpq81b59k^24
 @q^14228^2:4:0
 @q^14247^2:4:0
 @q^14250^2:4:0
+@q^14256^1:7:1
 @q^14479^2:9:0
 @q^14665^2:4:0
 @q^14944^2:4:0
@@ -818,6 +823,7 @@ GoldScout-export 6^j1zwpq81b59k^24
 @q^17764^1:12:0
 @q^17765^1:12:0
 @q^18082^3:2:0
+@q^18623^1:12:0
 @q^18624^1:12:0
 @q^18956^1:12:0
 @q^18958^1:12:0
@@ -880,6 +886,7 @@ GoldScout-export 6^j1zwpq81b59k^24
 @q^286647^1:12:0
 @q^287008^3:4:0
 @m^1414^Kalimdor
+@m^1419^Blasted Lands
 @m^1425^The Hinterlands
 @m^1426^Dun Morogh
 @m^1427^Searing Gorge
@@ -1735,6 +1742,8 @@ GoldScout-export 6^j1zwpq81b59k^24
 @a^5850^148:1
 @a^5856^191:1
 @a^5858^127:1
+@a^6004^132:1
+@a^6011^191:1,212:1
 @a^6123^235:5,255:5
 @a^6198^91:3
 @a^6199^91:1,111:2
