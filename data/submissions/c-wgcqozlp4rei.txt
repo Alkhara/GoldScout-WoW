@@ -1,8 +1,11 @@
-GoldScout-export 6^wgcqozlp4rei^19
+GoldScout-export 6^wgcqozlp4rei^20
 682^5^0^32^33^1434^0.4376^0.1540^5^Stranglethorn Tiger^1686:1:1,1687:2:2,12202:1:1,213546:1:1^
 684^4^0^37^38^1434^0.4866^0.2406^4^Shadowmaw Panther^1688:3:3,213546:1:1^
 685^7^0^33^34^1434^0.2770^0.1606^7^Stranglethorn Raptor^1696:1:1,3685:5:5,4461:4:4,8146:1:1,12184:1:1^
 689^25^0^34^35^1434^0.2479^0.1747^25^Crystal Spine Basilisk^1701:9:9,1702:7:7,1703:7:7,3918:9:9,4093:1:1,8146:3:3,11386:1:1,213543:1:1,213544:1:1^
+704^1^0^2^2^1426^0.2739^0.7528^1^Ragged Timber Wolf^750:1:1,1380:1:1,7073:1:1^
+705^8^0^1^1^1426^0.2856^0.7436^8^Ragged Young Wolf^750:7:7,1377:1:1,4865:3:3,7073:4:4,7074:1:1^
+708^12^0^3^3^1426^0.2084^0.7182^12^Small Crag Boar^1367:1:1,1368:1:1,1370:1:1,2656:1:1,4865:5:5,7098:8:8^
 736^4^0^32^33^1434^0.2946^0.1552^4^Panther^1686:2:2,5637:1:1,213543:1:1^
 772^2^0^37^38^1434^0.5025^0.2189^2^Stranglethorn Tigress^1688:1:1,12202:1:1^
 921^5^0^34^35^1434^0.4349^0.1878^5^Venture Co. Lumberjack^2592:1:1,3771:1:1,4306:1:1^
@@ -75,8 +78,14 @@ GoldScout-export 6^wgcqozlp4rei^19
 255560^6^0^39^41^1443^0.6866^0.7933^6^Magram Guardian^1710:1:1,4306:1:2,6067:1:1,254432:2:2^
 260429^2^0^39^39^1434^0.4337^0.2043^2^Venture Co. Agent^8748:1:1^
 272291^1^0^25^25^1431^0.2408^0.4134^1^Lost Knight^275895:1:1^
+@i^750^Tough Wolf Meat
 @i^770^Pointy Crocolisk Tooth
 @i^858^Lesser Healing Potion
+@i^1367^Ragged Leather Boots
+@i^1368^Ragged Leather Gloves
+@i^1370^Ragged Leather Bracers
+@i^1377^Frayed Gloves
+@i^1380^Frayed Robe
 @i^1464^Buzzard Talon
 @i^1477^Scroll of Agility II
 @i^1630^Broken Electro-lantern
@@ -96,6 +105,7 @@ GoldScout-export 6^wgcqozlp4rei^19
 @i^2290^Scroll of Intellect II
 @i^2592^Wool Cloth
 @i^2633^Jungle Remedy
+@i^2656^Flimsy Chain Vest
 @i^2725^Green Hills of Stranglethorn - Page 1
 @i^2728^Green Hills of Stranglethorn - Page 4
 @i^2732^Green Hills of Stranglethorn - Page 8
@@ -130,6 +140,7 @@ GoldScout-export 6^wgcqozlp4rei^19
 @i^4634^Iron Lockbox
 @i^4719^Nightsky Cloak
 @i^4784^Lifeless Stone
+@i^4865^Ruined Pelt
 @i^5116^Long Tail Feather
 @i^5122^Thick Kodo Hair
 @i^5637^Large Fang
@@ -158,6 +169,9 @@ GoldScout-export 6^wgcqozlp4rei^19
 @i^6986^Crimson Lotus
 @i^7069^Elemental Air
 @i^7072^Naga Scale
+@i^7073^Broken Fang
+@i^7074^Chipped Claw
+@i^7098^Splintered Tusk
 @i^7441^Sentinel Cap of Stamina
 @i^7973^Big-mouth Clam
 @i^8146^Wicked Claw
@@ -205,8 +219,14 @@ GoldScout-export 6^wgcqozlp4rei^19
 @i^248690^Waylaid Crate: Earthly Expert Herbs
 @i^254432^Carved Centaur Totem
 @i^275895^Fading Echo
+@q^750^1:12:0
 @q^770^0:15:0
 @q^858^1:0:0
+@q^1367^0:4:0
+@q^1368^0:4:0
+@q^1370^0:4:0
+@q^1377^0:4:0
+@q^1380^0:4:0
 @q^1464^0:15:0
 @q^1477^1:0:0
 @q^1630^0:15:0
@@ -226,6 +246,7 @@ GoldScout-export 6^wgcqozlp4rei^19
 @q^2290^1:0:0
 @q^2592^1:7:1
 @q^2633^1:0:0
+@q^2656^0:4:0
 @q^2725^1:12:0
 @q^2728^1:12:0
 @q^2732^1:12:0
@@ -260,6 +281,7 @@ GoldScout-export 6^wgcqozlp4rei^19
 @q^4634^2:15:0
 @q^4719^2:4:0
 @q^4784^0:15:0
+@q^4865^0:15:0
 @q^5116^1:7:1
 @q^5122^0:15:0
 @q^5637^1:7:1
@@ -288,6 +310,9 @@ GoldScout-export 6^wgcqozlp4rei^19
 @q^6986^0:15:0
 @q^7069^1:7:1
 @q^7072^1:7:1
+@q^7073^0:15:0
+@q^7074^0:15:0
+@q^7098^0:15:0
 @q^7441^2:4:0
 @q^7973^1:7:0
 @q^8146^1:7:1
@@ -335,6 +360,7 @@ GoldScout-export 6^wgcqozlp4rei^19
 @q^248690^1:0:1
 @q^254432^2:15:0
 @q^275895^0:15:0
+@m^1426^Dun Morogh
 @m^1431^Duskwood
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
@@ -1581,6 +1607,9 @@ GoldScout-export 6^wgcqozlp4rei^19
 @a^684^89:3,109:1
 @a^685^45:2,65:5
 @a^689^64:16,65:9
+@a^704^305:1
+@a^705^285:6,305:2
+@a^708^264:3,284:9
 @a^736^45:1,65:2,66:1
 @a^772^90:2
 @a^921^68:5

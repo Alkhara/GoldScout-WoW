@@ -1,4 +1,4 @@
-GoldScout-export 6^uoi9dmctvdxj^18
+GoldScout-export 6^uoi9dmctvdxj^19
 588^12^0^34^35^1434^0.2496^0.1193^12^Bloodscalp Scout^2592:1:3,2732:1:1,3915:1:1,4306:2:2,6406:1:1^
 595^23^0^34^35^1434^0.2490^0.1198^23^Bloodscalp Hunter^1529:1:1,1708:1:1,1711:1:1,2592:1:1,2730:1:1,2740:1:1,3771:2:2,3807:1:1,4306:6:10,9855:1:1,277957:1:1^
 597^14^0^36^37^1434^0.2019^0.1279^14^Bloodscalp Berserker^2735:1:1,3771:1:1,3901:3:3,3915:8:8,4306:1:2^
@@ -306,6 +306,7 @@ GoldScout-export 6^uoi9dmctvdxj^18
 @i^3812^Double Mail Gloves
 @i^3814^Double Mail Shoulderpads
 @i^3817^Reinforced Buckler
+@i^3820^Stranglekelp
 @i^3857^Coal
 @i^3864^Citrine
 @i^3869^Plans: Shadow Crescent Axe
@@ -386,7 +387,11 @@ GoldScout-export 6^uoi9dmctvdxj^18
 @i^5741^Rock Chip
 @i^5844^Fragments of Rok'Alim
 @i^6308^Raw Bristle Whisker Catfish
+@i^6355^Sturdy Locked Chest
+@i^6358^Oily Blackmouth
+@i^6359^Firefin Snapper
 @i^6361^Raw Rainbow Fin Albacore
+@i^6362^Raw Rockscale Cod
 @i^6404^Mail Combat Spaulders
 @i^6406^Nightsky Boots
 @i^6617^Sage's Mantle of the Eagle
@@ -631,6 +636,7 @@ GoldScout-export 6^uoi9dmctvdxj^18
 @q^3812^0:4:0
 @q^3814^0:4:0
 @q^3817^0:4:0
+@q^3820^1:7:1
 @q^3857^1:7:1
 @q^3864^2:7:1
 @q^3869^2:9:0
@@ -711,7 +717,11 @@ GoldScout-export 6^uoi9dmctvdxj^18
 @q^5741^0:15:0
 @q^5844^1:12:0
 @q^6308^1:7:1
+@q^6355^1:15:0
+@q^6358^1:7:1
+@q^6359^1:7:1
 @q^6361^1:7:1
+@q^6362^1:7:1
 @q^6404^2:4:0
 @q^6406^2:4:0
 @q^6617^2:4:0
@@ -846,6 +856,7 @@ GoldScout-export 6^uoi9dmctvdxj^18
 @m^1434^Stranglethorn Vale
 @m^1440^Ashenvale
 @m^1441^Thousand Needles
+@m^1445^Dustwallow Marsh
 @m^1454^Orgrimmar
 @c^118^
 @c^724^
@@ -1891,5 +1902,6 @@ GoldScout-export 6^uoi9dmctvdxj^18
 @a^275666^71:2
 @f^1413^0^1^137^6361:1:1^152:1
 @f^1417^0^4^137^6308:3:3,8365:1:1^205:1,289:3
-@f^1434^0^1^139^8365:1:1^106:1
+@f^1434^0^110^139^3820:2:4,4603:20:20,6355:1:1,6358:15:15,6359:12:12,6362:59:59,8365:1:1^106:1,305:109
+@f^1445^0^19^169^4603:2:2,6358:4:4,6359:2:2,6362:10:10,8365:1:1^186:1,190:18
 @l^0^enUS

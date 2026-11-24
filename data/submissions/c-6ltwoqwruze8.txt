@@ -1,4 +1,4 @@
-GoldScout-export 6^6ltwoqwruze8^7
+GoldScout-export 6^6ltwoqwruze8^8
 2579^1^0^34^34^1417^0.5784^0.6149^1^Mesa Buzzard^1464:1:1,5116:1:1,12037:1:1^
 2586^2^0^30^31^1417^0.3224^0.2596^2^Syndicate Highwayman^4306:1:1^
 2589^2^0^31^32^1417^0.3254^0.2899^2^Syndicate Mercenary^4306:1:1,6986:1:1^
@@ -19,8 +19,11 @@ GoldScout-export 6^6ltwoqwruze8^7
 4151^6^0^32^33^1441^0.7929^0.8304^6^Saltstone Crystalhide^1701:3:3,1702:2:2,5637:1:1^
 4154^9^0^30^32^1441^0.8436^0.6320^9^Salt Flats Scavenger^729:4:4,3399:3:3,5114:4:4,5115:1:1,5116:4:4,5848:9:9,11416:2:2,12037:2:2,17056:2:2^
 4158^1^0^32^34^1441^0.6950^0.9136^1^Salt Flats Vulture^5116:1:1,5848:1:1^
+4693^1^0^37^37^1443^0.5429^0.4429^1^Dread Flyer^12037:1:1^
 5419^1^0^43^43^1446^0.5095^0.2933^1^Glasshide Basilisk^^
 9377^5^0^33^34^1441^0.7963^0.6721^5^Swirling Vortex^7069:1:1^
+11576^3^0^32^33^1443^0.6000^0.4498^3^Whirlwind Ripper^7069:1:1,15232:1:1,248691:1:1^
+11577^5^0^35^37^1443^0.5599^0.4947^5^Whirlwind Stormwalker^7069:2:2^
 12576^1^0^25^25^1441^0.3200^0.2178^1^Grish Longrunner^^
 @i^729^Stringy Vulture Meat
 @i^1464^Buzzard Talon
@@ -71,6 +74,7 @@ GoldScout-export 6^6ltwoqwruze8^7
 @i^14162^Pagan Mitts of the Eagle
 @i^15116^Rigid Shoulders of the Prophet
 @i^15135^Cutthroat's Cape of Strength
+@i^15232^Hacking Cleaver of the Gorilla
 @i^15329^Wrangler's Belt of Stamina
 @i^15358^Headhunter's Woolies of Nature Protection
 @i^15540^Wicked Chain Helmet of Holy Wrath
@@ -79,6 +83,7 @@ GoldScout-export 6^6ltwoqwruze8^7
 @i^19938^Heavy Scorpid Leg
 @i^211853^Scroll: VOCE WELL
 @i^213544^Scroll: TOPAZ YORAK
+@i^248691^Waylaid Crate: Flowering Expert Herbs
 @i^248706^Waylaid Crate: Journeyman Ingots
 @i^252804^Pattern: Hillman's Leather Boots
 @i^262888^Sealed Journeyman's Writ
@@ -131,6 +136,7 @@ GoldScout-export 6^6ltwoqwruze8^7
 @q^14162^2:4:0
 @q^15116^2:4:0
 @q^15135^2:4:0
+@q^15232^2:2:0
 @q^15329^2:4:0
 @q^15358^2:4:0
 @q^15540^2:4:0
@@ -139,12 +145,14 @@ GoldScout-export 6^6ltwoqwruze8^7
 @q^19938^0:15:0
 @q^211853^1:0:0
 @q^213544^1:0:0
+@q^248691^1:0:1
 @q^248706^2:0:1
 @q^252804^2:9:0
 @q^262888^3:0:0
 @m^1417^Arathi Highlands
 @m^1440^Ashenvale
 @m^1441^Thousand Needles
+@m^1443^Desolace
 @m^1446^Tanaris
 @m^1450^Moonglade
 @c^118^
@@ -855,8 +863,11 @@ GoldScout-export 6^6ltwoqwruze8^7
 @a^4151^296:1,313:1,317:1,355:3
 @a^4154^236:1,254:1,256:1,257:3,277:3
 @a^4158^373:1
+@a^4693^170:1
 @a^5419^110:1
 @a^9377^215:1,254:1,275:1,316:2
+@a^11576^131:1,151:1,272:1
+@a^11577^189:1,190:1,192:1,211:2
 @a^12576^86:1
 @f^1450^0^309^266^3928:1:1,6358:26:26,8365:34:34,13757:6:6,13758:175:175,13759:25:25,13760:42:42^229:309
 @l^0^enUS

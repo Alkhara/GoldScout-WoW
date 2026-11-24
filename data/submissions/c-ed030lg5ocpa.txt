@@ -1,4 +1,4 @@
-GoldScout-export 6^ed030lg5ocpa^13
+GoldScout-export 6^ed030lg5ocpa^14
 94^2^0^5^6^1429^0.3601^0.6569^2^Defias Cutpurse^^
 704^7^0^2^2^1426^0.2635^0.7626^7^Ragged Timber Wolf^1372:1:1,2652:1:1,4865:3:3,7073:1:1,7074:4:4^
 705^24^0^1^1^1426^0.2874^0.7356^24^Ragged Young Wolf^750:8:8,1368:1:1,1372:1:1,1374:1:1,1376:1:1,1377:1:1,1380:1:1,2650:2:2,2656:1:1,4865:9:9,7073:10:10,7074:9:9^
@@ -36,6 +36,15 @@ GoldScout-export 6^ed030lg5ocpa^13
 7032^1^0^56^56^1428^0.4438^0.4343^1^Greater Obsidian Elemental^4784:1:1^
 7048^1^0^54^54^1428^0.7289^0.4793^1^Scalding Broodling^8146:1:1^
 7049^2^0^55^56^1428^0.3223^0.5537^2^Flamescale Broodling^^
+7443^1^0^55^55^1452^0.5935^0.3541^1^Shardtooth Mauler^11409:1:1^
+7523^7^0^54^55^1452^0.5429^0.4240^7^Suffering Highborne^14047:3:5,21936:7:7^
+7524^5^0^55^56^1452^0.5283^0.4377^5^Anguished Highborne^21936:5:5^
+8525^2^0^55^56^1423^0.5267^0.5861^2^Scourge Warder^281015:1:1^
+8528^1^0^58^59^1423^0.6702^0.4297^1^Dread Weaver^^
+8538^1^0^55^56^1423^0.5115^0.5986^1^Unseen Servant^21935:1:1^
+8541^8^0^55^57^1423^0.5232^0.5927^8^Hate Shrieker^3950:1:1,7972:1:1,14047:3:4,21935:8:8^
+8542^3^0^57^59^1423^0.6707^0.4295^3^Death Singer^21935:3:3^
+8543^1^0^58^58^1423^0.5421^0.5845^1^Stitched Horror^^
 8889^5^0^0^0^0^0.0000^0.0000^0^^3966:1:1,4020:1:1,8950:1:1,9957:1:1,14047:1:1,18945:1:4,248697:1:1^
 8890^9^0^49^49^1427^0.2627^0.7433^1^Anvilrage Warden^8389:1:1,11078:1:1,11754:2:2,14047:1:2,18945:1:6,262890:1:1^
 8891^24^0^0^0^0^0.0000^0.0000^0^^8250:1:1,8950:3:3,9955:1:1,10185:1:1,11078:2:2,11754:2:2,12697:1:1,14047:6:11,18945:4:22,248712:1:1^
@@ -314,6 +323,7 @@ GoldScout-export 6^ed030lg5ocpa^13
 @i^3857^Coal
 @i^3945^Twill Boots
 @i^3947^Twill Cloak
+@i^3950^Twill Shoulderpads
 @i^3951^Twill Vest
 @i^3966^Thick Leather Pants
 @i^3971^Smooth Leather Bracers
@@ -432,6 +442,7 @@ GoldScout-export 6^ed030lg5ocpa^13
 @i^10381^Commander's Girdle of Healing
 @i^10387^Hyperion Girdle of the Bear
 @i^11078^Relic Coffer Key
+@i^11409^Bear Flank
 @i^11612^Plans: Dark Iron Plate
 @i^11623^Spritecaster Cape
 @i^11626^Blackveil Cape
@@ -622,6 +633,8 @@ GoldScout-export 6^ed030lg5ocpa^13
 @i^20520^Dark Rune
 @i^20763^Broken Weapon
 @i^20770^Bubbling Green Ichor
+@i^21935^Stable Ectoplasm
+@i^21936^Frozen Ectoplasm
 @i^21937^Scorched Ectoplasm
 @i^22204^Wristguards of Renown
 @i^22232^Marksman's Girdle
@@ -670,6 +683,7 @@ GoldScout-export 6^ed030lg5ocpa^13
 @i^276455^Swordsmith Mitts
 @i^276456^Plague Defiled Buckler
 @i^276879^Backroom Bulwark
+@i^281015^Scroll: DOST OREM
 @i^286325^Avala's Core
 @q^117^1:0:0
 @q^118^1:0:0
@@ -722,6 +736,7 @@ GoldScout-export 6^ed030lg5ocpa^13
 @q^3857^1:7:1
 @q^3945^0:4:0
 @q^3947^0:4:0
+@q^3950^0:4:0
 @q^3951^0:4:0
 @q^3966^0:4:0
 @q^3971^0:4:0
@@ -840,6 +855,7 @@ GoldScout-export 6^ed030lg5ocpa^13
 @q^10381^2:4:0
 @q^10387^2:4:0
 @q^11078^1:13:0
+@q^11409^0:15:0
 @q^11612^3:9:0
 @q^11623^3:4:0
 @q^11626^3:4:0
@@ -1030,6 +1046,8 @@ GoldScout-export 6^ed030lg5ocpa^13
 @q^20520^2:7:1
 @q^20763^0:15:0
 @q^20770^0:15:0
+@q^21935^1:12:0
+@q^21936^1:12:0
 @q^21937^1:12:0
 @q^22204^3:4:0
 @q^22232^3:4:0
@@ -1078,13 +1096,16 @@ GoldScout-export 6^ed030lg5ocpa^13
 @q^276455^3:4:0
 @q^276456^3:4:0
 @q^276879^3:4:0
+@q^281015^1:0:0
 @q^286325^1:12:0
 @m^1418^Badlands
+@m^1423^Eastern Plaguelands
 @m^1426^Dun Morogh
 @m^1427^Searing Gorge
 @m^1428^Burning Steppes
 @m^1429^Elwynn Forest
 @m^1451^Silithus
+@m^1452^Winterspring
 @m^2482^Mount Hyjal
 @c^724^
 @c^733^
@@ -1457,6 +1478,15 @@ GoldScout-export 6^ed030lg5ocpa^13
 @a^7032^168:1
 @a^7048^194:1
 @a^7049^206:1,226:1
+@a^7443^151:1
+@a^7523^170:4,171:3
+@a^7524^170:4,171:1
+@a^8525^230:2
+@a^8528^173:1
+@a^8538^230:1
+@a^8541^230:5,250:3
+@a^8542^173:3
+@a^8543^230:1
 @a^8890^285:1
 @a^9043^106:1
 @a^12178^212:9

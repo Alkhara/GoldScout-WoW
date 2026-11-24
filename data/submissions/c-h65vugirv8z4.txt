@@ -1,4 +1,4 @@
-GoldScout-export 6^h65vugirv8z4^1
+GoldScout-export 6^h65vugirv8z4^2
 7100^7^0^52^53^1448^0.5722^0.2002^7^Warpwood Moss Flayer^2449:1:1,10286:3:3,11503:7:7,13446:1:1^
 7101^8^0^53^54^1448^0.5645^0.1910^8^Warpwood Shredder^8838:1:1,8948:1:1,11503:8:8^
 7112^7^0^51^52^1448^0.3852^0.6097^7^Jaedenar Cultist^14047:3:4^
@@ -8,6 +8,9 @@ GoldScout-export 6^h65vugirv8z4^1
 7153^15^0^48^49^1448^0.4843^0.9202^15^Deadwood Warrior^1645:1:1,4017:1:1,4338:7:14,21377:2:2^
 7154^17^0^48^49^1448^0.4809^0.9167^17^Deadwood Gardener^4338:5:13,21377:2:2,248713:1:1^
 7155^10^0^49^50^1448^0.4861^0.9244^10^Deadwood Pathfinder^3964:1:1,4338:2:2,4602:2:2,14444:1:1,21377:1:1^
+7440^6^0^55^56^1452^0.3125^0.3664^6^Winterfall Den Watcher^12771:1:1,14047:1:2,262890:1:1^
+7441^8^0^54^55^1452^0.3092^0.3639^8^Winterfall Totemic^3998:1:1,12820:1:1,14047:1:1,20742:1:1^
+7442^11^0^53^54^1452^0.3141^0.3650^11^Winterfall Pathfinder^8766:1:1,12771:1:1,14047:2:4,20742:1:1,281015:1:1^
 8957^6^0^51^52^1448^0.5346^0.1437^6^Angerclaw Grizzly^11409:1:1,11410:2:2,11411:1:1^
 8961^5^0^51^52^1448^0.5515^0.1701^5^Felpaw Ravager^4583:1:1,12203:3:3,12208:2:2^
 9464^3^0^51^51^1448^0.4818^0.9373^3^Overlord Ror^14047:1:1,15879:1:1^
@@ -18,6 +21,7 @@ GoldScout-export 6^h65vugirv8z4^1
 @i^3857^Coal
 @i^3949^Twill Pants
 @i^3964^Thick Cloak
+@i^3998^Laminated Scale Shoulderpads
 @i^4017^Sharp Shortsword
 @i^4338^Mageweave Cloth
 @i^4583^Thick Furry Mane
@@ -36,17 +40,23 @@ GoldScout-export 6^h65vugirv8z4^1
 @i^11503^Blood Amber
 @i^12203^Red Wolf Meat
 @i^12208^Tender Wolf Meat
+@i^12771^Empty Firewater Flask
+@i^12820^Winterfall Firewater
 @i^13446^Major Healing Potion
 @i^14047^Runecloth
 @i^14444^Venomshroud Leggings
 @i^15879^Overlord Ror's Claw
+@i^20742^Winterfall Ritual Totem
 @i^21377^Deadwood Headdress Feather
 @i^248713^Waylaid Crate: Artisan Parts
+@i^262890^Sealed Artisan's Writ
+@i^281015^Scroll: DOST OREM
 @q^1645^1:0:0
 @q^2449^1:7:1
 @q^3857^1:7:1
 @q^3949^0:4:0
 @q^3964^0:4:0
+@q^3998^0:4:0
 @q^4017^0:2:0
 @q^4338^1:7:1
 @q^4583^0:15:0
@@ -65,13 +75,19 @@ GoldScout-export 6^h65vugirv8z4^1
 @q^11503^1:12:0
 @q^12203^1:7:1
 @q^12208^1:7:1
+@q^12771^1:12:0
+@q^12820^1:0:0
 @q^13446^1:0:0
 @q^14047^1:7:1
 @q^14444^2:4:0
 @q^15879^1:12:0
+@q^20742^1:15:0
 @q^21377^1:12:0
 @q^248713^2:0:1
+@q^262890^3:0:0
+@q^281015^1:0:0
 @m^1448^Felwood
+@m^1452^Winterspring
 @c^724^
 @c^733^
 @c^787^
@@ -765,6 +781,9 @@ GoldScout-export 6^h65vugirv8z4^1
 @a^7153^369:15
 @a^7154^349:3,350:1,369:13
 @a^7155^369:10
+@a^7440^146:6
+@a^7441^146:8
+@a^7442^146:11
 @a^8957^50:4,71:1,72:1
 @a^8961^50:1,70:1,71:2,91:1
 @a^9464^369:3

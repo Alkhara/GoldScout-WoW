@@ -1,4 +1,4 @@
-GoldScout-export 6^sykfzatti3hc^25
+GoldScout-export 6^sykfzatti3hc^26
 667^6^0^39^40^1434^0.4567^0.3993^6^Skullsplitter Warrior^1520:2:2,1524:1:1,1710:1:1,3916:2:2,4306:1:2,8151:1:1,8153:1:2^
 669^8^0^41^42^1434^0.4554^0.4124^8^Skullsplitter Hunter^1520:3:3,1524:2:2,2749:1:1,3916:3:3,4338:3:3,8151:1:1^
 670^7^0^41^42^1434^0.4483^0.4201^7^Skullsplitter Witch Doctor^1520:2:2,1524:3:3,3916:5:5,4338:1:2,8151:1:1^
@@ -195,6 +195,7 @@ GoldScout-export 6^sykfzatti3hc^25
 5799^1^0^24^24^1413^0.4612^0.6945^1^Hannah Bladeleaf^^
 5800^1^0^24^24^1413^0.4611^0.6940^1^Marcus Bel^^
 5856^1^0^45^45^1427^0.6627^0.3756^1^Glassweb Spider^1074:1:1,10285:1:1^
+5996^3^0^48^48^1419^0.5726^0.0872^3^Nethergarde Miner^^
 6126^1^0^45^46^1447^0.2066^0.6158^1^Haldarr Trickster^1645:1:1^
 6243^6^0^0^0^0^0.0000^0.0000^0^^730:4:4,1468:1:1,1470:1:1,1825:1:1,1826:1:1,3385:1:1,5524:2:2,5784:1:1,6308:1:2,6905:3:3,6906:1:1,17057:1:1,17058:2:2,273141:1:1,273840:2:2^
 7327^2^0^0^0^0^0.0000^0.0000^0^^4306:1:4^
@@ -577,10 +578,12 @@ GoldScout-export 6^sykfzatti3hc^25
 @i^6297^Old Skull
 @i^6300^Husk Fragment
 @i^6302^Delicate Insect Wing
+@i^6303^Raw Slitherskin Mackerel
 @i^6308^Raw Bristle Whisker Catfish
 @i^6357^Sealed Crate
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
+@i^6361^Raw Rainbow Fin Albacore
 @i^6362^Raw Rockscale Cod
 @i^6411^Chief Brigadier Armor
 @i^6413^Chief Brigadier Bracers
@@ -1021,10 +1024,12 @@ GoldScout-export 6^sykfzatti3hc^25
 @q^6297^0:15:0
 @q^6300^0:15:0
 @q^6302^0:15:0
+@q^6303^1:7:1
 @q^6308^1:7:1
 @q^6357^1:15:0
 @q^6358^1:7:1
 @q^6359^1:7:1
+@q^6361^1:7:1
 @q^6362^1:7:1
 @q^6411^2:4:0
 @q^6413^2:4:0
@@ -1240,6 +1245,7 @@ GoldScout-export 6^sykfzatti3hc^25
 @m^1415^Eastern Kingdoms
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
+@m^1419^Blasted Lands
 @m^1420^Tirisfal Glades
 @m^1424^Hillsbrad Foothills
 @m^1425^The Hinterlands
@@ -2727,6 +2733,7 @@ GoldScout-export 6^sykfzatti3hc^25
 @a^5799^269:1
 @a^5800^269:1
 @a^5856^153:1
+@a^5996^31:2,51:1
 @a^6126^244:1
 @a^7332^290:1
 @a^7335^290:1
@@ -2816,6 +2823,7 @@ GoldScout-export 6^sykfzatti3hc^25
 @a^263380^190:1
 @a^270094^210:1
 @a^270667^268:1,269:5
+@f^1413^0^18^242^6303:4:4,6358:10:10,6361:4:4^152:18
 @f^1417^0^2^203^6308:1:1,8365:1:1^273:2
 @f^1424^0^7^202^21071:6:6,21113:1:1^152:6,172:1
 @f^1425^0^11^240^8365:1:1,13422:1:1,13758:8:8,13760:1:1^252:1,256:1,286:9

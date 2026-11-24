@@ -1,4 +1,4 @@
-GoldScout-export 6^2fzkb29n0qlu^3
+GoldScout-export 6^2fzkb29n0qlu^4
 6500^1^0^55^55^1449^0.6110^0.7039^1^Tyrant Devilsaur^^
 6505^3^0^48^49^1449^0.6076^0.7503^3^Ravasaur^4587:1:1,8146:1:1,11018:1:1,20015:1:1^
 6506^3^0^49^50^1449^0.6069^0.7507^3^Ravasaur Runner^4587:2:2,4588:1:1^
@@ -26,10 +26,19 @@ GoldScout-export 6^2fzkb29n0qlu^3
 11745^9^0^57^59^1451^0.3908^0.7273^9^Cyclone Warrior^7081:3:3,7082:3:3^
 11746^92^0^56^58^1451^0.2337^0.1407^92^Desert Rumbler^4784:84:84,7067:9:9,7075:10:10,7076:3:3,7912:22:32,8150:28:28,14284:1:1^
 251284^8^0^6^7^2521^0.3578^0.5480^8^Hippogryph Protector^4775:7:7,4776:1:1,6889:4:4^
+257900^8^0^0^0^1415^0.0000^0.0000^0^^4306:3:4^
+258042^7^0^0^0^1415^0.0000^0.0000^0^^4422:1:1,8749:1:1^
+258102^3^0^0^0^1415^0.0000^0.0000^0^^3928:1:1^
+258104^1^0^0^0^1415^0.0000^0.0000^0^^4306:1:3^
+258687^9^0^0^0^1415^0.0000^0.0000^0^^15798:1:1^
+258966^1^0^0^0^1415^0.0000^0.0000^0^^274995:1:1^
 @i^3669^Gelatinous Goo
 @i^3676^Slimy Ichor
+@i^3928^Superior Healing Potion
 @i^3973^Smooth Leather Gloves
+@i^4306^Silk Cloth
 @i^4337^Thick Spider's Silk
+@i^4422^Scroll of Stamina III
 @i^4460^Ripped Wing Webbing
 @i^4552^Smooth Stone Chip
 @i^4557^Fiery Gland
@@ -51,6 +60,7 @@ GoldScout-export 6^2fzkb29n0qlu^3
 @i^7912^Solid Stone
 @i^8146^Wicked Claw
 @i^8150^Deeprock Salt
+@i^8749^Crochet Hat
 @i^8952^Roasted Quail
 @i^11018^Un'Goro Soil
 @i^12037^Mystery Meat
@@ -61,16 +71,21 @@ GoldScout-export 6^2fzkb29n0qlu^3
 @i^13817^Tapered Greatsword
 @i^14047^Runecloth
 @i^14284^Opulent Robes of the Channeler
+@i^15798^Chipped Ogre Teeth
 @i^19933^Glowing Scorpid Blood
 @i^19934^Large Scorpid Claw
 @i^20015^Elder Raptor Feathers
 @i^20424^Sandworm Meat
 @i^262890^Sealed Artisan's Writ
+@i^274995^Slavecrusher Scepter
 @i^281018^Scroll: RARE SERVICHI RADAR
 @q^3669^0:15:0
 @q^3676^0:15:0
+@q^3928^1:0:0
 @q^3973^0:4:0
+@q^4306^1:7:1
 @q^4337^1:7:1
+@q^4422^1:0:0
 @q^4460^0:15:0
 @q^4552^0:15:0
 @q^4557^0:15:0
@@ -92,6 +107,7 @@ GoldScout-export 6^2fzkb29n0qlu^3
 @q^7912^1:7:1
 @q^8146^1:7:1
 @q^8150^1:7:1
+@q^8749^0:4:0
 @q^8952^1:0:0
 @q^11018^1:12:0
 @q^12037^1:7:1
@@ -102,12 +118,15 @@ GoldScout-export 6^2fzkb29n0qlu^3
 @q^13817^0:2:0
 @q^14047^1:7:1
 @q^14284^2:4:0
+@q^15798^0:15:0
 @q^19933^1:15:0
 @q^19934^0:15:0
 @q^20015^0:15:0
 @q^20424^1:7:1
 @q^262890^3:0:0
+@q^274995^3:2:0
 @q^281018^1:0:0
+@m^1415^Eastern Kingdoms
 @m^1428^Burning Steppes
 @m^1449^Un'Goro Crater
 @m^1451^Silithus
