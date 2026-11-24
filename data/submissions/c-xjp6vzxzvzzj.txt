@@ -1,4 +1,4 @@
-GoldScout-export 6^xjp6vzxzvzzj^7
+GoldScout-export 6^xjp6vzxzvzzj^8
 2261^7^0^20^21^1424^0.7700^0.4551^7^Syndicate Watchman^929:1:1,2592:1:2,3376:1:1^
 2351^2^0^21^22^1424^0.6691^0.2433^2^Gray Bear^3476:1:1,3730:1:1,11406:1:1^
 2354^1^0^23^23^1424^0.7096^0.3550^1^Vicious Gray Bear^2940:1:1^
@@ -68,6 +68,7 @@ GoldScout-export 6^xjp6vzxzvzzj^7
 11518^1^0^0^0^0^0.0000^0.0000^0^^14151:1:1^
 11519^1^0^0^0^0^0.0000^0.0000^0^^273007:1:1^
 11520^1^0^0^0^0^0.0000^0.0000^0^^14148:1:1,14540:1:1,15487:1:1^
+257196^2^0^10^10^2521^0.5661^0.5037^2^Zaal Stormshield^1181:1:1,252031:1:1,258771:1:1^
 267307^1^0^20^20^1413^0.5751^0.2720^1^Chol'aruk^276070:1:1^
 267308^5^0^18^19^1413^0.5795^0.2624^5^Razormane Flesheater^2589:1:2,3376:1:1^
 267314^2^0^18^19^1413^0.5792^0.2601^2^Razormane Berserker^2589:1:3^
@@ -77,6 +78,7 @@ GoldScout-export 6^xjp6vzxzvzzj^7
 @i^858^Lesser Healing Potion
 @i^929^Healing Potion
 @i^1179^Ice Cold Milk
+@i^1181^Scroll of Spirit
 @i^1205^Melon Juice
 @i^1210^Shadowgem
 @i^1497^Calico Cloak
@@ -180,6 +182,8 @@ GoldScout-export 6^xjp6vzxzvzzj^7
 @i^17056^Light Feather
 @i^211785^Scroll: CWAL
 @i^248683^Waylaid Crate: Apprentice Ore
+@i^252031^Crisp Spring Water
+@i^258771^Al'Aketh Cultist's Ear
 @i^269715^Savannah Lion Hide
 @i^273007^Chasm Walkers
 @i^276070^Chol'aruk's Head
@@ -187,6 +191,7 @@ GoldScout-export 6^xjp6vzxzvzzj^7
 @q^858^1:0:0
 @q^929^1:0:0
 @q^1179^1:0:0
+@q^1181^1:0:0
 @q^1205^1:0:0
 @q^1210^2:7:1
 @q^1497^0:4:0
@@ -290,12 +295,15 @@ GoldScout-export 6^xjp6vzxzvzzj^7
 @q^17056^1:15:1
 @q^211785^1:0:0
 @q^248683^1:0:1
+@q^252031^1:0:0
+@q^258771^1:15:0
 @q^269715^1:12:0
 @q^273007^3:4:0
 @q^276070^1:12:0
 @m^1412^Mulgore
 @m^1413^The Barrens
 @m^1424^Hillsbrad Foothills
+@m^2521^Zephras Isle
 @c^118^
 @c^724^
 @c^733^
@@ -1641,6 +1649,7 @@ GoldScout-export 6^xjp6vzxzvzzj^7
 @a^6668^349:2
 @a^9523^108:2
 @a^9524^108:2,109:1
+@a^257196^211:2
 @a^267307^111:1
 @a^267308^111:5
 @a^267314^111:2
