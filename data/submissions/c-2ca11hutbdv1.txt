@@ -1,4 +1,4 @@
-GoldScout-export 6^2ca11hutbdv1^7
+GoldScout-export 6^2ca11hutbdv1^8
 3^8^0^24^25^1431^0.2549^0.3419^8^Flesh Eater^1129:3:3,1205:1:1,2592:2:2,4306:1:1,5529:1:1,6530:2:2^
 46^1^0^9^9^1429^0.7875^0.5855^1^Murloc Forager^779:1:1,2213:1:1,6303:1:3^
 48^8^0^21^22^1431^0.7976^0.6870^8^Skeletal Warrior^1772:1:1,2589:1:2,2592:2:2^
@@ -43,6 +43,9 @@ GoldScout-export 6^2ca11hutbdv1^7
 1426^4^0^14^15^1436^0.3008^0.4794^4^Riverpaw Miner^2589:2:4^
 1922^2^0^8^8^1429^0.6741^0.6305^2^Gray Forest Wolf^2672:2:2,3300:1:1^
 2044^2^0^25^26^1453^0.4272^0.7253^1^Forlorn Spirit^2592:1:1^
+2181^3^0^18^19^1439^0.5795^0.1926^3^Stormscale Myrmidon^5523:1:1,279276:2:2^
+2182^4^0^20^20^1439^0.5979^0.2013^4^Stormscale Sorceress^5523:1:1,279276:3:3^
+2183^5^0^20^21^1439^0.6032^0.1932^5^Stormscale Warrior^858:1:1,5523:2:2,279276:2:2^
 2462^27^0^25^25^1431^0.2548^0.3419^27^Flesh Eating Worm^^
 248299^1^0^12^12^1429^0.8121^0.8594^1^Elmpaw^^
 272260^2^0^24^24^1431^0.3303^0.4913^2^Lost Stalker^281143:1:1^
@@ -51,6 +54,7 @@ GoldScout-export 6^2ca11hutbdv1^7
 @i^774^Malachite
 @i^779^Shiny Seashell
 @i^857^Large Red Sack
+@i^858^Lesser Healing Potion
 @i^878^Fist-sized Spinneret
 @i^887^Pound of Flesh
 @i^893^Dire Wolf Fang
@@ -93,16 +97,19 @@ GoldScout-export 6^2ca11hutbdv1^7
 @i^3402^Soft Patch of Fur
 @i^3629^Mistmantle Family Ring
 @i^3770^Mutton Chop
+@i^3820^Stranglekelp
 @i^4300^Pattern: Guardian Leather Bracers
 @i^4306^Silk Cloth
 @i^4428^Spider Palp
 @i^4606^Spongy Morel
 @i^4714^Silver-thread Sash
 @i^5115^Broken Wishbone
+@i^5523^Small Barnacled Clam
 @i^5529^Tomb Dust
 @i^5635^Sharp Claw
 @i^6044^Plans: Iron Shield Spike
 @i^6303^Raw Slitherskin Mackerel
+@i^6358^Oily Blackmouth
 @i^6394^Silver-thread Boots
 @i^6530^Nightcrawlers
 @i^6591^Battleforge Wristguards of Fire Protection
@@ -114,6 +121,8 @@ GoldScout-export 6^2ca11hutbdv1^7
 @i^12997^Redbeard Crest
 @i^15269^Massive Battle Axe of Healing
 @i^17056^Light Feather
+@i^20708^Tightly Sealed Trunk
+@i^20709^Rumsey Rum Light
 @i^211787^Scroll: LOWER PING WHOMEVER
 @i^211854^Scroll: OMIT KESA
 @i^248682^Waylaid Crate: Apprentice Herbs
@@ -121,12 +130,14 @@ GoldScout-export 6^2ca11hutbdv1^7
 @i^248688^Waylaid Crate: Journeyman Textiles
 @i^248703^Waylaid Crate: Apprentice Ingots
 @i^262888^Sealed Journeyman's Writ
+@i^279276^Mathystral Amulet Fragment
 @i^281143^Ira's Dagger
 @q^414^1:0:0
 @q^729^1:7:1
 @q^774^2:7:1
 @q^779^0:15:0
 @q^857^1:1:0
+@q^858^1:0:0
 @q^878^0:7:0
 @q^887^0:15:0
 @q^893^0:15:0
@@ -169,16 +180,19 @@ GoldScout-export 6^2ca11hutbdv1^7
 @q^3402^0:15:0
 @q^3629^1:12:0
 @q^3770^1:0:0
+@q^3820^1:7:1
 @q^4300^2:9:0
 @q^4306^1:7:1
 @q^4428^0:15:0
 @q^4606^1:0:0
 @q^4714^2:4:0
 @q^5115^0:15:0
+@q^5523^1:7:0
 @q^5529^0:15:0
 @q^5635^1:7:1
 @q^6044^2:9:0
 @q^6303^1:7:1
+@q^6358^1:7:1
 @q^6394^2:4:0
 @q^6530^1:0:0
 @q^6591^2:4:0
@@ -190,6 +204,8 @@ GoldScout-export 6^2ca11hutbdv1^7
 @q^12997^3:4:0
 @q^15269^2:2:0
 @q^17056^1:15:1
+@q^20708^1:15:0
+@q^20709^1:0:0
 @q^211787^1:0:0
 @q^211854^1:0:0
 @q^248682^1:0:1
@@ -197,11 +213,13 @@ GoldScout-export 6^2ca11hutbdv1^7
 @q^248688^1:0:1
 @q^248703^2:0:1
 @q^262888^3:0:0
+@q^279276^1:0:0
 @q^281143^1:15:0
 @m^1429^Elwynn Forest
 @m^1431^Duskwood
 @m^1433^Redridge Mountains
 @m^1436^Westfall
+@m^1439^Darkshore
 @m^1453^Stormwind City
 @c^118^
 @c^724^
@@ -1019,7 +1037,11 @@ GoldScout-export 6^2ca11hutbdv1^7
 @a^1426^185:1,186:3
 @a^1922^252:1,254:1
 @a^2044^288:1
+@a^2181^71:2,91:1
+@a^2182^71:2,72:1,92:1
+@a^2183^71:1,72:3,92:1
 @a^2462^124:6,125:13,145:8
 @a^248299^356:1
 @a^272260^142:1,231:1
+@f^1439^0^75^95^3820:2:4,6358:51:51,20708:16:16,20709:6:9^88:24,89:17,90:2,108:13,127:9,147:4,166:6
 @l^0^enUS

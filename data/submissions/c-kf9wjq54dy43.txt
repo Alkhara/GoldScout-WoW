@@ -1,6 +1,18 @@
-GoldScout-export 6^kf9wjq54dy43^3
+GoldScout-export 6^kf9wjq54dy43^4
 3239^1^0^21^21^1413^0.4434^0.6458^1^Thunderhead^5125:1:1,5470:1:1^
-4248^1^0^26^26^1441^0.3573^0.2834^1^Pesterhide Hyena^5637:1:1^
+4093^8^0^25^26^1441^0.4623^0.4134^8^Galak Wrangler^2592:2:2,4306:2:2^
+4094^9^0^24^25^1441^0.4544^0.3934^9^Galak Scout^2592:1:2^
+4095^5^0^27^28^1441^0.4235^0.3287^5^Galak Mauler^211854:1:1^
+4096^6^0^24^25^1441^0.4726^0.4104^6^Galak Windchaser^1205:1:1,2592:1:2,3385:1:1^
+4097^2^0^26^26^1441^0.4342^0.3529^2^Galak Stormer^1712:1:1^
+4099^3^0^26^27^1441^0.4276^0.3299^3^Galak Marauder^4306:1:1^
+4111^3^0^26^27^1441^0.3875^0.5257^3^Gravelsnout Kobold^1806:1:1,4306:1:2^
+4113^2^0^28^29^1441^0.5527^0.5197^2^Gravelsnout Digger^2592:1:1,5842:1:1^
+4114^2^0^27^28^1441^0.4509^0.4781^2^Gravelsnout Forager^929:1:1,4306:1:1^
+4118^1^0^27^27^1441^0.3797^0.5366^1^Venomous Cloud Serpent^17056:1:1^
+4119^2^0^27^29^1441^0.5531^0.4916^2^Elder Cloud Serpent^6826:2:2^
+4126^1^0^25^25^1441^0.4054^0.5699^1^Crag Stalker^5137:1:1^
+4248^3^0^26^27^1441^0.3693^0.4345^3^Pesterhide Hyena^3402:2:2,5637:1:1^
 4788^2^0^20^21^1414^0.4382^0.3524^2^Fallenroot Satyr^2592:1:4,3378:1:1^
 4798^4^0^0^0^0^0.0000^0.0000^0^^2589:1:4,2592:1:2,3770:1:1^
 4799^3^0^0^0^0^0.0000^0.0000^0^^15330:1:1^
@@ -30,12 +42,15 @@ GoldScout-export 6^kf9wjq54dy43^3
 264096^3^0^28^29^1412^0.3402^0.1022^3^Gnawed Corpse^6530:1:1,273001:2:2^
 @i^730^Murloc Eye
 @i^878^Fist-sized Spinneret
+@i^929^Healing Potion
 @i^1081^Crisp Spider Meat
 @i^1205^Melon Juice
 @i^1468^Murloc Fin
 @i^1475^Small Venom Sac
+@i^1712^Scroll of Spirit II
 @i^1748^Linked Chain Bracers
 @i^1774^Brocade Cloak
+@i^1806^Tough Cloak
 @i^1827^Meat Cleaver
 @i^2034^Scholarly Robes
 @i^2589^Linen Cloth
@@ -47,19 +62,25 @@ GoldScout-export 6^kf9wjq54dy43^3
 @i^3174^Spider Ichor
 @i^3182^Spider's Silk
 @i^3378^Brocade Belt
+@i^3385^Lesser Mana Potion
+@i^3402^Soft Patch of Fur
 @i^3770^Mutton Chop
 @i^3931^Poisoned Spider Fang
+@i^4306^Silk Cloth
 @i^4542^Moist Cornbread
 @i^5001^Heart Ring
 @i^5125^Charged Scale
+@i^5137^Bright Eyeball
 @i^5465^Small Spider Leg
 @i^5470^Thunder Lizard Tail
 @i^5524^Thick-shelled Clam
 @i^5569^Seaweed
 @i^5637^Large Fang
 @i^5784^Slimy Murloc Scale
+@i^5842^Unrefined Ore Sample
 @i^5881^Head of Kelris
 @i^6530^Nightcrawlers
+@i^6826^Brilliant Scale
 @i^6902^Bands of Serra'kis
 @i^6903^Gaze Dreamer Pants
 @i^6905^Reef Axe
@@ -72,7 +93,9 @@ GoldScout-export 6^kf9wjq54dy43^3
 @i^15330^Wrangler's Boots of the Monkey
 @i^16782^Strange Water Globe
 @i^16790^Damp Note
+@i^17056^Light Feather
 @i^17057^Shiny Fish Scales
+@i^211854^Scroll: OMIT KESA
 @i^248689^Waylaid Crate: Journeyman Curiosities
 @i^248705^Waylaid Crate: Journeyman Fabrics
 @i^262888^Sealed Journeyman's Writ
@@ -83,12 +106,15 @@ GoldScout-export 6^kf9wjq54dy43^3
 @i^273843^Fallenroot Longbow
 @q^730^1:7:1
 @q^878^0:7:0
+@q^929^1:0:0
 @q^1081^1:7:1
 @q^1205^1:0:0
 @q^1468^1:7:1
 @q^1475^1:7:1
+@q^1712^1:0:0
 @q^1748^0:4:0
 @q^1774^0:4:0
+@q^1806^0:4:0
 @q^1827^0:2:0
 @q^2034^3:4:0
 @q^2589^1:7:1
@@ -100,19 +126,25 @@ GoldScout-export 6^kf9wjq54dy43^3
 @q^3174^1:7:1
 @q^3182^1:7:1
 @q^3378^0:4:0
+@q^3385^1:0:0
+@q^3402^0:15:0
 @q^3770^1:0:0
 @q^3931^0:15:0
+@q^4306^1:7:1
 @q^4542^1:0:0
 @q^5001^2:4:0
 @q^5125^0:15:0
+@q^5137^0:15:0
 @q^5465^1:7:1
 @q^5470^1:7:1
 @q^5524^1:7:0
 @q^5569^0:15:0
 @q^5637^1:7:1
 @q^5784^1:7:1
+@q^5842^1:12:0
 @q^5881^1:12:0
 @q^6530^1:0:0
+@q^6826^0:15:0
 @q^6902^3:4:0
 @q^6903^3:4:0
 @q^6905^3:2:0
@@ -125,7 +157,9 @@ GoldScout-export 6^kf9wjq54dy43^3
 @q^15330^2:4:0
 @q^16782^2:12:0
 @q^16790^1:15:0
+@q^17056^1:15:1
 @q^17057^1:15:0
+@q^211854^1:0:0
 @q^248689^1:0:1
 @q^248705^2:0:1
 @q^262888^3:0:0
@@ -663,7 +697,19 @@ GoldScout-export 6^kf9wjq54dy43^3
 @c^285280^
 @c^285281^
 @a^3239^248:1
-@a^4248^107:1
+@a^4093^148:1,168:1,169:6
+@a^4094^148:5,169:4
+@a^4095^128:5
+@a^4096^149:1,169:5
+@a^4097^148:2
+@a^4099^128:3
+@a^4111^187:1,207:1,228:1
+@a^4113^190:1,231:1
+@a^4114^187:1,190:1
+@a^4118^207:1
+@a^4119^191:2
+@a^4126^228:1
+@a^4248^107:1,187:1,207:1
 @a^4788^148:2
 @a^4802^148:1
 @a^10617^127:1
