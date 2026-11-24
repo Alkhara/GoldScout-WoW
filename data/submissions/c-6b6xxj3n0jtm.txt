@@ -1,6 +1,12 @@
-GoldScout-export 6^6b6xxj3n0jtm^8
+GoldScout-export 6^6b6xxj3n0jtm^9
 314^1^0^31^31^1431^0.2883^0.3126^1^Eliza^2382:1:1^
 522^1^0^35^35^1431^0.1842^0.3860^1^Mor'Ladim^3514:1:1^
+684^6^0^37^38^1434^0.4843^0.2400^6^Shadowmaw Panther^1688:3:3,5637:1:1,213543:1:1,213547:1:1^
+938^13^0^34^35^1434^0.4588^0.0781^13^Kurzen Commando^2738:1:1,2745:1:1,3793:1:1,4306:8:13^
+939^4^0^36^37^1434^0.4901^0.0785^4^Kurzen Elite^4306:1:1,216616:1:1^
+940^1^0^32^32^1434^0.4415^0.0897^1^Kurzen Medicine Man^1708:1:1,4306:1:2^
+941^7^0^34^35^1434^0.4667^0.0717^7^Kurzen Headshrinker^1707:2:2,1708:1:1,2633:2:2,2725:1:1,2732:1:1,2751:1:1^
+942^1^0^36^36^1434^0.4953^0.0781^1^Kurzen Witch Doctor^4306:1:2^
 4632^7^0^30^31^1443^0.6941^0.4519^7^Kolkar Centaur^4306:2:4,4338:1:1,6079:1:1,254432:1:1^
 4633^10^0^30^31^1443^0.6956^0.4635^10^Kolkar Scout^1825:1:1,2592:1:1,3041:1:1,4306:2:3,6067:1:1,6079:2:2,254432:2:2^
 4634^13^0^31^32^1443^0.7274^0.4377^13^Kolkar Mauler^3771:1:1,4306:6:10,6079:1:1,254432:1:1^
@@ -38,13 +44,21 @@ GoldScout-export 6^6b6xxj3n0jtm^8
 251169^8^0^1^1^2521^0.4621^0.2666^8^Pesky Cirrusfly^2211:1:1,251927:4:4,251928:4:4^
 255560^2^0^39^41^1443^0.6828^0.7951^2^Magram Guardian^4021:1:1,4306:2:4^
 @i^1288^Large Venom Sac
+@i^1688^Long Soft Tail
+@i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
 @i^1825^Bulky Bludgeon
 @i^2211^Bent Large Shield
 @i^2290^Scroll of Intellect II
 @i^2382^The Embalmer's Heart
 @i^2592^Wool Cloth
+@i^2633^Jungle Remedy
 @i^2672^Stringy Wolf Meat
+@i^2725^Green Hills of Stranglethorn - Page 1
+@i^2732^Green Hills of Stranglethorn - Page 8
+@i^2738^Green Hills of Stranglethorn - Page 14
+@i^2745^Green Hills of Stranglethorn - Page 21
+@i^2751^Green Hills of Stranglethorn - Page 27
 @i^3041^Mage-Eye Blunderbuss
 @i^3042^BKP Sparrow Smallbore
 @i^3404^Buzzard Wing
@@ -55,6 +69,7 @@ GoldScout-export 6^6b6xxj3n0jtm^8
 @i^3780^Long-barreled Musket
 @i^3784^Metal Stave
 @i^3785^Keen Axe
+@i^3793^Interlaced Boots
 @i^3795^Interlaced Cloak
 @i^4021^Blunting Mace
 @i^4306^Silk Cloth
@@ -62,6 +77,7 @@ GoldScout-export 6^6b6xxj3n0jtm^8
 @i^4634^Iron Lockbox
 @i^4865^Ruined Pelt
 @i^5133^Seeping Gizzard
+@i^5637^Large Fang
 @i^6067^Centaur Ear
 @i^6079^Crude Charm
 @i^6248^Scorpashi Venom
@@ -88,17 +104,28 @@ GoldScout-export 6^6b6xxj3n0jtm^8
 @i^17058^Fish Oil
 @i^19937^Small Scorpid Claw
 @i^19938^Heavy Scorpid Leg
+@i^213543^Scroll: UPDOG
+@i^213547^Scroll: THAW WORDS
+@i^216616^Compound Cage Key
 @i^251927^Chipped Cirrusfly Stinger
 @i^251928^Torn Insect Wing
 @i^254432^Carved Centaur Totem
 @q^1288^1:7:1
+@q^1688^0:15:0
+@q^1707^1:0:0
 @q^1708^1:0:0
 @q^1825^0:2:0
 @q^2211^0:4:0
 @q^2290^1:0:0
 @q^2382^1:12:0
 @q^2592^1:7:1
+@q^2633^1:0:0
 @q^2672^1:7:1
+@q^2725^1:12:0
+@q^2732^1:12:0
+@q^2738^1:12:0
+@q^2745^1:12:0
+@q^2751^1:12:0
 @q^3041^2:2:0
 @q^3042^2:2:0
 @q^3404^1:7:1
@@ -109,6 +136,7 @@ GoldScout-export 6^6b6xxj3n0jtm^8
 @q^3780^0:2:0
 @q^3784^0:2:0
 @q^3785^0:2:0
+@q^3793^0:4:0
 @q^3795^0:4:0
 @q^4021^0:2:0
 @q^4306^1:7:1
@@ -116,6 +144,7 @@ GoldScout-export 6^6b6xxj3n0jtm^8
 @q^4634^2:15:0
 @q^4865^0:15:0
 @q^5133^0:15:0
+@q^5637^1:7:1
 @q^6067^1:12:0
 @q^6079^1:12:0
 @q^6248^1:12:0
@@ -142,14 +171,24 @@ GoldScout-export 6^6b6xxj3n0jtm^8
 @q^17058^1:15:0
 @q^19937^0:15:0
 @q^19938^0:15:0
+@q^213543^1:0:0
+@q^213547^1:0:0
+@q^216616^1:12:0
 @q^251927^0:15:0
 @q^251928^0:15:0
 @q^254432^2:15:0
 @m^1431^Duskwood
+@m^1434^Stranglethorn Vale
 @m^1443^Desolace
 @m^2521^Zephras Isle
 @a^314^125:1
 @a^522^143:1
+@a^684^89:4,109:2
+@a^938^28:2,29:11
+@a^939^29:4
+@a^940^28:1
+@a^941^29:7
+@a^942^29:1
 @a^4632^154:1,173:1,174:1,193:3,213:1
 @a^4633^153:1,173:1,193:7,194:1
 @a^4634^154:1,174:7,194:4,214:1

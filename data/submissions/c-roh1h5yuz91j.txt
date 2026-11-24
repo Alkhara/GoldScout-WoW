@@ -1,4 +1,4 @@
-GoldScout-export 6^roh1h5yuz91j^22
+GoldScout-export 6^roh1h5yuz91j^23
 1520^6^0^6^7^1420^0.4557^0.4061^6^Rattlecage Soldier^118:1:1,1417:1:1,2589:4:7,2839:1:1,3162:5:5,4604:1:1^
 1522^5^0^7^8^1420^0.4587^0.3888^5^Darkeye Bonecaster^818:1:1,2589:2:3,3163:3:3^
 1526^1^0^6^7^1420^0.5276^0.4686^1^Ravaged Corpse^2589:1:2,4604:1:1^
@@ -44,9 +44,13 @@ GoldScout-export 6^roh1h5yuz91j^22
 3192^2^0^8^8^1411^0.5961^0.5821^2^Lieutenant Benedict^4882:2:2^
 3239^8^0^20^21^1413^0.4879^0.6044^8^Thunderhead^5128:2:2,5470:2:2,5578:1:1^
 3240^6^0^18^19^1413^0.4943^0.5669^6^Stormsnout^5128:3:3,5470:2:2^
-3374^10^0^21^22^1413^0.4753^0.8480^10^Bael'dun Excavator^1819:1:1,2592:2:3,4306:2:2^
+3374^11^0^21^22^1413^0.4750^0.8477^11^Bael'dun Excavator^1819:1:1,2592:2:3,4306:2:2,211784:1:1^
 3375^2^0^22^23^1413^0.4749^0.8501^2^Bael'dun Foreman^2592:1:2^
+3376^8^0^23^24^1413^0.4921^0.8417^8^Bael'dun Soldier^2219:1:1,2589:1:3,2592:3:5,5017:2:2,5018:2:2,5019:1:1,15311:1:1^
+3377^6^0^24^25^1413^0.4929^0.8416^6^Bael'dun Rifleman^2592:1:2,5017:2:2,5018:3:3,5019:2:2^
+3378^7^0^26^26^1413^0.4919^0.8414^7^Bael'dun Officer^2592:4:5,5017:2:2,5018:1:1,5019:3:3^
 3392^1^0^24^24^1413^0.4829^0.8605^1^Prospector Khazgorm^5006:1:1,15511:1:1^
+3414^1^0^30^30^1413^0.4929^0.8406^1^General Twinbraid^^
 3466^1^0^20^20^1413^0.4912^0.5805^1^Zhevra Courser^^
 3473^1^0^24^24^1413^0.4912^0.6149^1^Owatanka^5102:1:1^
 3474^1^0^22^22^1413^0.4992^0.5328^1^Lakota'mani^5082:1:1,5099:1:1^
@@ -204,6 +208,7 @@ GoldScout-export 6^roh1h5yuz91j^22
 @i^2210^Battered Buckler
 @i^2213^Worn Large Shield
 @i^2216^Simple Buckler
+@i^2219^Small Round Shield
 @i^2589^Linen Cloth
 @i^2590^Forest Spider Webbing
 @i^2592^Wool Cloth
@@ -279,6 +284,9 @@ GoldScout-export 6^roh1h5yuz91j^22
 @i^4867^Broken Scorpid Leg
 @i^4882^Benedict's Key
 @i^5006^Khazgorm's Journal
+@i^5017^Nitroglycerin
+@i^5018^Wood Pulp
+@i^5019^Sodium Nitrate
 @i^5082^Thin Kodo Leather
 @i^5099^Hoof of Lakota'mani
 @i^5102^Owatanka's Tailspike
@@ -348,6 +356,7 @@ GoldScout-export 6^roh1h5yuz91j^22
 @i^15210^Raider Shortsword of Holy Wrath
 @i^15249^Polished Zweihander of the Beast
 @i^15269^Massive Battle Axe of Nature Protection
+@i^15311^Feral Harness of the Eagle
 @i^15509^Grunt's Handwraps of the Wolf
 @i^15511^Grunt's Legguards of the Wolf
 @i^16312^Incendrites
@@ -358,6 +367,7 @@ GoldScout-export 6^roh1h5yuz91j^22
 @i^21114^Rumsey Rum Dark
 @i^21151^Rumsey Rum Black Label
 @i^21153^Raw Greater Sagefish
+@i^211784^Scroll: WUBBA WUBBA
 @i^248684^Waylaid Crate: Apprentice Textiles
 @i^248685^Waylaid Crate: Apprentice Curiosities
 @i^248689^Waylaid Crate: Journeyman Curiosities
@@ -437,6 +447,7 @@ GoldScout-export 6^roh1h5yuz91j^22
 @q^2210^0:4:0
 @q^2213^0:4:0
 @q^2216^0:4:0
+@q^2219^0:4:0
 @q^2589^1:7:1
 @q^2590^0:15:0
 @q^2592^1:7:1
@@ -512,6 +523,9 @@ GoldScout-export 6^roh1h5yuz91j^22
 @q^4867^0:15:0
 @q^4882^1:13:0
 @q^5006^1:12:0
+@q^5017^1:12:0
+@q^5018^1:12:0
+@q^5019^1:12:0
 @q^5082^1:7:1
 @q^5099^1:12:0
 @q^5102^1:12:0
@@ -581,6 +595,7 @@ GoldScout-export 6^roh1h5yuz91j^22
 @q^15210^2:2:0
 @q^15249^2:2:0
 @q^15269^2:2:0
+@q^15311^2:4:0
 @q^15509^2:4:0
 @q^15511^2:4:0
 @q^16312^1:12:0
@@ -591,6 +606,7 @@ GoldScout-export 6^roh1h5yuz91j^22
 @q^21114^1:0:0
 @q^21151^1:0:0
 @q^21153^1:7:1
+@q^211784^1:0:0
 @q^248684^1:0:1
 @q^248685^1:0:1
 @q^248689^1:0:1
@@ -2704,9 +2720,13 @@ GoldScout-export 6^roh1h5yuz91j^22
 @a^3192^231:2
 @a^3239^229:3,249:5
 @a^3240^209:1,229:4,230:1
-@a^3374^329:6,349:4
+@a^3374^329:7,349:4
 @a^3375^329:1,349:1
+@a^3376^329:8
+@a^3377^329:6
+@a^3378^329:7
 @a^3392^349:1
+@a^3414^329:1
 @a^3466^229:1
 @a^3473^249:1
 @a^3474^209:1

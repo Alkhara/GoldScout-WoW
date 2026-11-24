@@ -1,9 +1,13 @@
-GoldScout-export 6^ourxu6cz1cto^8
+GoldScout-export 6^ourxu6cz1cto^10
 114^1^0^15^15^1436^0.5541^0.3419^1^Harvest Watcher^255007:1:1^
 2248^1^0^31^31^1424^0.4678^0.3343^1^Cave Yeti^^
 2354^2^0^22^22^1424^0.4763^0.3305^2^Vicious Gray Bear^2940:1:1,3730:1:1^
 2356^1^0^25^25^1424^0.3133^0.2457^1^Elder Gray Bear^2940:1:1,3730:1:1,15224:1:1^
 2529^4^0^0^0^0^0.0000^0.0000^0^^1205:1:1,1818:1:1^
+2956^4^0^6^7^1412^0.5130^0.6812^4^Adult Plainstrider^4757:2:2,4759:2:2,4775:1:1,7096:1:1,287505:1:1^
+2958^7^0^5^6^1412^0.4817^0.7081^7^Prairie Wolf^2672:4:4,3299:1:1,4758:3:3^
+2966^1^0^3^4^1412^0.5118^0.7969^1^Battleboar^7098:1:1^
+2969^2^0^5^7^1412^0.4984^0.7031^2^Wiry Swoop^4769:2:2,4807:1:1,6889:2:2,7096:1:1^
 3850^1^0^0^0^0^0.0000^0.0000^0^^422:1:1^
 3851^5^0^0^0^0^0.0000^0.0000^0^^2781:1:1^
 3853^9^0^0^0^0^0.0000^0.0000^0^^1769:1:1,6545:1:1,7608:1:1,14168:1:1,248682:1:1^
@@ -100,6 +104,7 @@ GoldScout-export 6^ourxu6cz1cto^8
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2632^Curved Dagger of the Falcon
+@i^2672^Stringy Wolf Meat
 @i^2764^Small Dagger
 @i^2777^Feeble Shortbow
 @i^2778^Cheap Blunderbuss
@@ -117,6 +122,7 @@ GoldScout-export 6^ourxu6cz1cto^8
 @i^3191^Arced War Axe
 @i^3205^Inscribed Leather Bracers
 @i^3207^Hunting Bracers
+@i^3299^Fractured Canine
 @i^3301^Sharp Canine
 @i^3307^Barbaric Cloth Boots
 @i^3375^Calico Bracers
@@ -132,6 +138,12 @@ GoldScout-export 6^ourxu6cz1cto^8
 @i^4575^Medicine Staff of Strength
 @i^4605^Red-speckled Mushroom
 @i^4606^Spongy Morel
+@i^4757^Cracked Egg Shells
+@i^4758^Prairie Wolf Paw
+@i^4759^Plainstrider Talon
+@i^4769^Trophy Swoop Quill
+@i^4775^Cracked Bill
+@i^4807^Swoop Gizzard
 @i^5207^Opaque Wand
 @i^5442^Head of Arugal
 @i^5871^Large Hoof
@@ -155,6 +167,9 @@ GoldScout-export 6^ourxu6cz1cto^8
 @i^6557^Bard's Boots of the Wolf
 @i^6567^Shimmering Armor of the Whale
 @i^6633^Butcher's Slicer
+@i^6889^Small Egg
+@i^7096^Plucked Feather
+@i^7098^Splintered Tusk
 @i^7608^Seer's Fine Stein
 @i^9747^Simple Britches of Intellect
 @i^9756^Nomad Trousers of Shadow Protection
@@ -210,6 +225,7 @@ GoldScout-export 6^ourxu6cz1cto^8
 @i^273647^Worgpelt Leggings
 @i^286978^Rotmender's Garb
 @i^286981^Death Bindings
+@i^287505^Tender Strider Meat
 @q^422^1:0:0
 @q^818^2:7:1
 @q^929^1:0:0
@@ -252,6 +268,7 @@ GoldScout-export 6^ourxu6cz1cto^8
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2632^2:2:0
+@q^2672^1:7:1
 @q^2764^0:2:0
 @q^2777^0:2:0
 @q^2778^0:2:0
@@ -269,6 +286,7 @@ GoldScout-export 6^ourxu6cz1cto^8
 @q^3191^3:2:0
 @q^3205^2:4:0
 @q^3207^1:4:0
+@q^3299^0:15:0
 @q^3301^0:15:0
 @q^3307^2:4:0
 @q^3375^0:4:0
@@ -284,6 +302,12 @@ GoldScout-export 6^ourxu6cz1cto^8
 @q^4575^2:2:0
 @q^4605^1:0:0
 @q^4606^1:0:0
+@q^4757^0:15:0
+@q^4758^1:12:0
+@q^4759^1:12:0
+@q^4769^1:12:0
+@q^4775^0:15:0
+@q^4807^1:12:0
 @q^5207^2:2:0
 @q^5442^1:12:0
 @q^5871^0:15:0
@@ -307,6 +331,9 @@ GoldScout-export 6^ourxu6cz1cto^8
 @q^6557^2:4:0
 @q^6567^2:4:0
 @q^6633^3:2:0
+@q^6889^1:7:1
+@q^7096^0:15:0
+@q^7098^0:15:0
 @q^7608^2:4:0
 @q^9747^2:4:0
 @q^9756^2:4:0
@@ -362,6 +389,8 @@ GoldScout-export 6^ourxu6cz1cto^8
 @q^273647^3:4:0
 @q^286978^3:4:0
 @q^286981^3:4:0
+@q^287505^1:12:0
+@m^1412^Mulgore
 @m^1424^Hillsbrad Foothills
 @m^1436^Westfall
 @c^118^
@@ -2162,4 +2191,8 @@ GoldScout-export 6^ourxu6cz1cto^8
 @a^2248^129:1
 @a^2354^130:1,148:1
 @a^2356^86:1
+@a^2956^270:3,290:1
+@a^2958^269:1,270:2,289:1,290:2,307:1
+@a^2966^310:1
+@a^2969^289:1,290:1
 @l^0^enUS
