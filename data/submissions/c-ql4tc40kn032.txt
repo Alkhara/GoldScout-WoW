@@ -1,4 +1,4 @@
-GoldScout-export 6^ql4tc40kn032^20
+GoldScout-export 6^ql4tc40kn032^21
 36^5^0^11^12^1436^0.4955^0.3290^5^Harvest Golem^732:2:2,814:3:3,1274:1:1,255007:1:1,255010:1:1^
 46^2^0^10^10^1429^0.7822^0.8574^2^Murloc Forager^6303:1:2^
 92^3^0^39^40^1418^0.4136^0.8130^3^Rock Elemental^4552:2:2,4553:1:1,4627:3:3,4784:3:3,7912:1:2,8150:2:2^
@@ -76,9 +76,9 @@ GoldScout-export 6^ql4tc40kn032^20
 2735^35^0^37^39^1418^0.2101^0.4543^35^Lesser Rock Elemental^4552:2:2,4553:7:7,4626:9:9,4784:15:15,7067:4:4,7848:5:5,7912:4:6,8150:4:4,213544:1:1^
 2739^5^0^35^36^1418^0.5250^0.3214^5^Shadowforge Tunneler^4306:3:8,4338:1:1,4544:1:1,4616:2:2,278402:4:4^
 2740^6^0^36^37^1418^0.5284^0.3323^6^Shadowforge Darkweaver^4306:1:1,4544:1:1,278402:4:4^
-2760^1^0^38^38^1417^0.2706^0.2947^1^Burning Exile^^
+2760^24^0^38^39^1417^0.2548^0.3049^24^Burning Exile^3857:2:2,4479:7:7,4787:7:7,7068:2:2,15322:1:1,213547:1:1,248690:1:1^
 2761^4^0^38^39^1417^0.6627^0.3059^4^Cresting Exile^4481:1:1^
-2762^3^0^39^39^1417^0.5285^0.5104^3^Thundering Exile^4480:2:2^
+2762^8^0^38^39^1417^0.5191^0.5088^8^Thundering Exile^4480:5:5,7465:1:1^
 2776^2^0^40^40^1417^0.3556^0.7990^2^Vengeful Surge^^
 2793^1^0^39^39^1417^0.5418^0.8075^1^Kor'gresh Coldrage^3793:1:1,4525:1:1^
 2829^6^0^35^37^1418^0.5650^0.2872^6^Starving Buzzard^1464:3:3,3404:1:1,4636:1:1,5116:2:2,7847:1:1,11416:2:2,12037:3:3^
@@ -208,6 +208,7 @@ GoldScout-export 6^ql4tc40kn032^20
 @i^3817^Reinforced Buckler
 @i^3820^Stranglekelp
 @i^3827^Mana Potion
+@i^3857^Coal
 @i^3923^Water Elemental Bracers
 @i^4104^Snapjaw Crocolisk Skin
 @i^4306^Silk Cloth
@@ -215,6 +216,7 @@ GoldScout-export 6^ql4tc40kn032^20
 @i^4359^Handful of Copper Bolts
 @i^4421^Scroll of Protection III
 @i^4435^Mote of Myzrael
+@i^4479^Burning Charm
 @i^4480^Thundering Charm
 @i^4481^Cresting Charm
 @i^4482^Sealed Folder
@@ -238,6 +240,7 @@ GoldScout-export 6^ql4tc40kn032^20
 @i^4775^Cracked Bill
 @i^4776^Ruffled Feather
 @i^4784^Lifeless Stone
+@i^4787^Burning Pitch
 @i^4791^Enchanted Water
 @i^4865^Ruined Pelt
 @i^5040^Shadow Hunter Knife
@@ -265,11 +268,13 @@ GoldScout-export 6^ql4tc40kn032^20
 @i^6889^Small Egg
 @i^6986^Crimson Lotus
 @i^7067^Elemental Earth
+@i^7068^Elemental Fire
 @i^7069^Elemental Air
 @i^7072^Naga Scale
 @i^7073^Broken Fang
 @i^7096^Plucked Feather
 @i^7097^Leg Meat
+@i^7465^Knight's Crest of the Falcon
 @i^7846^Crag Coyote Fang
 @i^7847^Buzzard Gizzard
 @i^7848^Rock Elemental Shard
@@ -300,6 +305,7 @@ GoldScout-export 6^ql4tc40kn032^20
 @i^14590^Hawkeye's Bracers
 @i^15130^Cutthroat's Vest of the Wolf
 @i^15213^Mercenary Blade of the Tiger
+@i^15322^Smoothbore Gun
 @i^15347^Pathfinder Belt of Strength
 @i^15522^Spiked Chain Shield of the Owl
 @i^15534^Wicked Chain Boots of Spirit
@@ -323,6 +329,7 @@ GoldScout-export 6^ql4tc40kn032^20
 @i^213547^Scroll: THAW WORDS
 @i^216483^Witherbark Mallet
 @i^216616^Compound Cage Key
+@i^248690^Waylaid Crate: Earthly Expert Herbs
 @i^248692^Waylaid Crate: Expert Ore
 @i^248694^Waylaid Crate: Expert Curiosities
 @i^248710^Waylaid Crate: Expert Parts
@@ -418,6 +425,7 @@ GoldScout-export 6^ql4tc40kn032^20
 @q^3817^0:4:0
 @q^3820^1:7:1
 @q^3827^1:0:0
+@q^3857^1:7:1
 @q^3923^1:12:0
 @q^4104^1:12:0
 @q^4306^1:7:1
@@ -425,6 +433,7 @@ GoldScout-export 6^ql4tc40kn032^20
 @q^4359^1:7:1
 @q^4421^1:0:0
 @q^4435^1:12:0
+@q^4479^1:0:0
 @q^4480^1:0:0
 @q^4481^1:0:0
 @q^4482^1:12:0
@@ -448,6 +457,7 @@ GoldScout-export 6^ql4tc40kn032^20
 @q^4775^0:15:0
 @q^4776^0:15:0
 @q^4784^0:15:0
+@q^4787^0:15:0
 @q^4791^1:0:0
 @q^4865^0:15:0
 @q^5040^1:2:0
@@ -475,11 +485,13 @@ GoldScout-export 6^ql4tc40kn032^20
 @q^6889^1:7:1
 @q^6986^0:15:0
 @q^7067^1:7:1
+@q^7068^1:7:1
 @q^7069^1:7:1
 @q^7072^1:7:1
 @q^7073^0:15:0
 @q^7096^0:15:0
 @q^7097^1:0:0
+@q^7465^2:4:0
 @q^7846^1:12:0
 @q^7847^1:12:0
 @q^7848^1:12:0
@@ -510,6 +522,7 @@ GoldScout-export 6^ql4tc40kn032^20
 @q^14590^2:4:0
 @q^15130^2:4:0
 @q^15213^2:2:0
+@q^15322^2:2:0
 @q^15347^2:4:0
 @q^15522^2:4:0
 @q^15534^2:4:0
@@ -533,6 +546,7 @@ GoldScout-export 6^ql4tc40kn032^20
 @q^213547^1:0:0
 @q^216483^1:0:0
 @q^216616^1:12:0
+@q^248690^1:0:1
 @q^248692^1:0:1
 @q^248694^1:0:1
 @q^248710^2:0:1
@@ -1356,9 +1370,9 @@ GoldScout-export 6^ql4tc40kn032^20
 @a^2735^163:6,164:5,183:1,184:23
 @a^2739^130:5
 @a^2740^130:5,150:1
-@a^2760^105:1
+@a^2760^105:7,124:7,125:10
 @a^2761^113:2,133:2
-@a^2762^210:3
+@a^2762^190:2,210:6
 @a^2776^307:2
 @a^2793^330:1
 @a^2829^110:3,111:1,132:2

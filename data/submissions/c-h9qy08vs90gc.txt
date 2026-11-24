@@ -1,4 +1,4 @@
-GoldScout-export 6^h9qy08vs90gc^16
+GoldScout-export 6^h9qy08vs90gc^17
 36^1^0^12^12^1436^0.5538^0.3666^1^Harvest Golem^732:1:1^
 95^5^0^11^12^1436^0.4981^0.1950^5^Defias Smuggler^829:2:2,2589:2:6^
 98^3^0^17^18^1436^0.6457^0.7095^3^Riverpaw Taskmaster^2592:2:3^
@@ -81,6 +81,9 @@ GoldScout-export 6^h9qy08vs90gc^16
 7067^0^1^22^22^0^0.0000^0.0000^0^Venture Co. Drone^^
 12922^3^0^22^23^1433^0.6453^0.6694^3^Imp Minion^^
 14270^1^0^19^19^1433^0.3561^0.5331^1^Squiddic^730:1:1,2700:1:1,6545:1:1^
+250926^1^0^4^4^2521^0.4156^0.2677^1^Scrawny Ursera^251925:1:1^
+251143^7^0^2^3^2521^0.4681^0.2047^7^Roiling Winds^1372:2:2,1374:1:1,1378:1:1,251930:2:2,251931:5:5^
+251160^7^0^2^3^2521^0.4661^0.1966^7^Al'Aketh Convert^1374:1:1,2589:1:1,3365:1:1,4540:4:4^
 276009^1^0^8^8^1426^0.5779^0.4215^1^Avala^2642:1:1,286325:1:1^
 @i^118^Minor Healing Potion
 @i^414^Dalaran Sharp
@@ -107,6 +110,9 @@ GoldScout-export 6^h9qy08vs90gc^16
 @i^1210^Shadowgem
 @i^1212^Gnoll Spittle
 @i^1274^Hops
+@i^1372^Ragged Cloak
+@i^1374^Frayed Shoes
+@i^1378^Frayed Pants
 @i^1381^A Mysterious Message
 @i^1431^Patchwork Pants
 @i^1448^Blackrock Gauntlets
@@ -164,6 +170,7 @@ GoldScout-export 6^h9qy08vs90gc^16
 @i^3195^Barbaric Battle Axe of Healing
 @i^3196^Edged Bastard Sword of Fire Protection
 @i^3214^Warrior's Bracers
+@i^3365^Frayed Bracers
 @i^3376^Canvas Belt
 @i^3397^Young Crocolisk Skin
 @i^3399^Vulture Talon
@@ -179,6 +186,7 @@ GoldScout-export 6^h9qy08vs90gc^16
 @i^4361^Copper Tube
 @i^4496^Small Brown Pouch
 @i^4537^Tel'Abim Banana
+@i^4540^Tough Hunk of Bread
 @i^4577^Compact Shotgun
 @i^4605^Red-speckled Mushroom
 @i^4663^Journeyman's Belt
@@ -236,6 +244,9 @@ GoldScout-export 6^h9qy08vs90gc^16
 @i^250187^Recipe: Tasty Raptor Bites
 @i^250188^Recipe: Breakfast Omelette
 @i^251343^Plans: Acolyte's Chain Shirt
+@i^251925^Tattered Ursera Feather
+@i^251930^Minor Essence of the Four Winds
+@i^251931^Depleted Windstone
 @i^253910^Pattern: Filigreed Pearly Gown
 @i^255007^Golem Isospring
 @i^268548^Empty Powder Keg
@@ -268,6 +279,9 @@ GoldScout-export 6^h9qy08vs90gc^16
 @q^1210^2:7:1
 @q^1212^0:15:0
 @q^1274^1:12:0
+@q^1372^0:4:0
+@q^1374^0:4:0
+@q^1378^0:4:0
 @q^1381^1:12:0
 @q^1431^0:4:0
 @q^1448^2:4:0
@@ -325,6 +339,7 @@ GoldScout-export 6^h9qy08vs90gc^16
 @q^3195^2:2:0
 @q^3196^2:2:0
 @q^3214^1:4:0
+@q^3365^0:4:0
 @q^3376^0:4:0
 @q^3397^1:12:0
 @q^3399^0:15:0
@@ -340,6 +355,7 @@ GoldScout-export 6^h9qy08vs90gc^16
 @q^4361^1:7:1
 @q^4496^1:1:0
 @q^4537^1:0:0
+@q^4540^1:0:0
 @q^4577^2:2:0
 @q^4605^1:0:0
 @q^4663^1:4:0
@@ -397,6 +413,9 @@ GoldScout-export 6^h9qy08vs90gc^16
 @q^250187^1:9:0
 @q^250188^1:9:0
 @q^251343^3:9:0
+@q^251925^0:15:0
+@q^251930^0:15:0
+@q^251931^0:15:0
 @q^253910^3:9:0
 @q^255007^1:7:1
 @q^268548^1:12:0
@@ -410,6 +429,7 @@ GoldScout-export 6^h9qy08vs90gc^16
 @m^1433^Redridge Mountains
 @m^1436^Westfall
 @m^1437^Wetlands
+@m^2521^Zephras Isle
 @c^118^
 @c^724^
 @c^733^
@@ -2306,5 +2326,8 @@ GoldScout-export 6^h9qy08vs90gc^16
 @a^4463^171:2,313:2
 @a^12922^171:1,313:2
 @a^14270^207:1
+@a^250926^108:1
+@a^251143^69:2,89:5
+@a^251160^69:5,89:2
 @a^276009^171:1
 @l^0^enUS
