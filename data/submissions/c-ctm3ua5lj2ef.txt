@@ -1,10 +1,10 @@
-GoldScout-export 6^ctm3ua5lj2ef^38
+GoldScout-export 6^ctm3ua5lj2ef^40
 30^1^0^5^5^1429^0.3447^0.5313^1^Araignée forestière^^
 40^9^0^6^7^1429^0.5774^0.5922^9^Mineur kobold^159:1:1,772:1:1,773:1:1,1389:1:1,2212:1:1,2589:2:4,3189:1:1,4536:2:2^
 43^2^0^7^7^1429^0.6160^0.4774^2^Araignée minière^1476:2:2,5465:2:3^
 46^2^0^9^10^1429^0.8031^0.5635^2^Fourrageur murloc^3641:1:1,6303:2:5^
 80^12^0^3^4^1429^0.4833^0.3019^12^Travailleur kobold^159:2:2,755:2:2,1364:1:1,1376:1:1,1377:1:1,2589:3:3^
-92^1^0^39^39^1418^0.1344^0.3977^1^Elémentaire de roche^^
+92^6^0^39^40^1418^0.3760^0.7554^6^Elémentaire de roche^4552:2:2,4784:4:4,7848:1:1,7912:1:2,8150:1:1,213547:1:1^
 97^1^0^9^9^1429^0.6889^0.4716^1^Rivepatte chétif^117:1:1^
 113^10^0^5^6^1429^0.4157^0.8159^10^Sanglier Brocheroc^769:5:5,771:2:2,3171:3:3,286215:6:6^
 118^8^0^9^10^1429^0.7597^0.6615^8^Rôdeur^2672:6:6,3299:1:1,3300:3:3,6507:1:1,211780:1:1^
@@ -72,6 +72,7 @@ GoldScout-export 6^ctm3ua5lj2ef^38
 2556^1^0^35^35^1417^0.7302^0.6407^1^Chasseuse de têtes Fânécorce^^
 2701^1^0^37^38^1418^0.2983^0.5462^1^Ogre Crache-poussières^211269:1:1^
 2715^1^0^38^38^1418^0.2962^0.5463^1^Brute Crache-poussières^^
+2727^9^0^35^36^1418^0.4875^0.4429^9^Coyote des rochers^3864:1:1,4583:2:2,7846:6:10,12203:4:4^
 2731^2^0^36^37^1418^0.5885^0.2563^2^Traqueur des crêtes^1688:2:2^
 2732^1^0^38^39^1418^0.2976^0.5360^1^Chasseresse des récifs^5637:1:1^
 2735^6^0^37^39^1418^0.1639^0.4044^6^Elémentaire de roche inférieur^4553:2:2,4784:3:3,7067:1:1,8150:2:2^
@@ -436,6 +437,7 @@ GoldScout-export 6^ctm3ua5lj2ef^38
 @i^4461^Peau de raptor
 @i^4536^Pomme rouge brillante
 @i^4540^Morceau de pain rassis
+@i^4552^Fragment de pierre lisse
 @i^4553^Morceau de pierre délabré
 @i^4555^Epaisse queue écailleuse
 @i^4556^Fragment de carapace moucheté
@@ -526,6 +528,9 @@ GoldScout-export 6^ctm3ua5lj2ef^38
 @i^7714^Lame hypnotique
 @i^7721^Main de la droiture
 @i^7726^Egide du commandant écarlate
+@i^7846^Croc de coyote des rochers
+@i^7848^Fragment d'élémentaire de roche
+@i^7912^Pierre solide
 @i^7973^Palourde à large bouche
 @i^7997^Masque rouge de Défias
 @i^8142^Barbute chromite
@@ -590,6 +595,7 @@ GoldScout-export 6^ctm3ua5lj2ef^38
 @i^213544^Parchemin : ZOO ET DU KAFÊ
 @i^213545^Parchemin : CHUTE D'AGUERRI
 @i^213546^Parchemin : TAGADAAA
+@i^213547^Parchemin : ELLUQE PÉÉE
 @i^215373^Marteau d'entraînement de la Main d'argent
 @i^215375^Bâton de tacticienne
 @i^215376^Masse de croisé
@@ -820,6 +826,7 @@ GoldScout-export 6^ctm3ua5lj2ef^38
 @q^4461^1:7:1
 @q^4536^1:0:0
 @q^4540^1:0:0
+@q^4552^0:15:0
 @q^4553^0:15:0
 @q^4555^0:15:0
 @q^4556^0:15:0
@@ -910,6 +917,9 @@ GoldScout-export 6^ctm3ua5lj2ef^38
 @q^7714^3:2:0
 @q^7721^3:2:0
 @q^7726^3:4:0
+@q^7846^1:12:0
+@q^7848^1:12:0
+@q^7912^1:7:1
 @q^7973^1:7:0
 @q^7997^0:4:0
 @q^8142^2:4:0
@@ -974,6 +984,7 @@ GoldScout-export 6^ctm3ua5lj2ef^38
 @q^213544^1:0:0
 @q^213545^1:0:0
 @q^213546^1:0:0
+@q^213547^1:0:0
 @q^215373^1:2:0
 @q^215375^1:2:0
 @q^215376^1:2:0
@@ -3101,7 +3112,7 @@ GoldScout-export 6^ctm3ua5lj2ef^38
 @a^43^192:2
 @a^46^236:2
 @a^80^109:5,129:7
-@a^92^142:1
+@a^92^142:1,287:1,328:3,348:1
 @a^97^193:1
 @a^113^268:3,348:7
 @a^118^255:1,256:1,257:1,274:4,315:1
@@ -3169,6 +3180,7 @@ GoldScout-export 6^ctm3ua5lj2ef^38
 @a^2556^254:1
 @a^2701^205:1
 @a^2715^205:1
+@a^2727^149:1,169:4,170:1,189:3
 @a^2731^91:1,111:1
 @a^2732^205:1
 @a^2735^142:3,163:2,164:1
