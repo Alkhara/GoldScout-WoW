@@ -1,4 +1,4 @@
-GoldScout-export 7^b1g9hhizsnq2^24
+GoldScout-export 7^b1g9hhizsnq2^25
 667^9^0^39^40^1434^0.4668^0.3980^9^Skullsplitter Warrior^1520:1:1,1524:3:3,2732:1:1,2738:1:1,3916:3:3,4306:4:8,8151:2:2^
 669^8^0^41^42^1434^0.4565^0.4199^8^Skullsplitter Hunter^1520:2:2,1524:1:1,2745:1:1,3916:3:3,4306:1:2,4338:1:2,8153:1:1^
 670^6^0^41^42^1434^0.4578^0.4242^6^Skullsplitter Witch Doctor^1524:1:1,4338:1:1,12042:1:1^
@@ -255,7 +255,9 @@ GoldScout-export 7^b1g9hhizsnq2^24
 6126^5^0^45^47^1447^0.1959^0.6337^5^Haldarr Trickster^4338:2:4^
 6127^11^0^46^47^1447^0.2017^0.6125^11^Haldarr Felsworn^4338:2:3,4599:2:2,15235:1:1^
 6131^1^0^51^52^1447^0.3639^0.7280^1^Draconic Mageweaver^^
-6148^1^0^52^53^1447^0.4440^0.7149^1^Cliff Walker^246888:1:1^
+6146^2^0^54^55^1447^0.7083^0.1312^2^Cliff Breaker^7912:1:2,8150:1:1,11405:2:3^
+6147^1^0^53^54^1447^0.6547^0.1222^1^Cliff Thunderer^4552:1:1,7912:1:1,8753:1:1,11405:1:2^
+6148^2^0^52^53^1447^0.5850^0.4281^2^Cliff Walker^3996:1:1,11405:1:2,246888:1:1^
 6193^1^0^47^48^1447^0.2618^0.5287^1^Spitelash Screamer^^
 6194^1^0^48^49^1447^0.3663^0.6099^1^Spitelash Serpent Guard^^
 6195^7^0^51^52^1447^0.4737^0.5449^7^Spitelash Siren^7973:3:3,13446:1:1^
@@ -266,6 +268,7 @@ GoldScout-export 7^b1g9hhizsnq2^24
 6201^3^0^51^53^1447^0.5821^0.2124^3^Legashi Rogue^12662:1:1,15728:1:1,19259:1:1,235256:1:1^
 6202^3^0^52^53^1447^0.5838^0.2081^3^Legashi Hellcaller^12662:3:3,13443:1:1,235256:2:2^
 6378^1^0^51^52^1447^0.5710^0.2111^1^Thunderhead Skystormer^5117:1:1,5829:1:1,15420:1:3^
+6380^1^0^54^54^1447^0.6674^0.1234^1^Thunderhead Consort^15420:1:2^
 6412^1^0^55^56^1422^0.5441^0.6374^1^Skeleton^^
 6498^1^0^54^55^1449^0.5663^0.5486^1^Devilsaur^11018:1:1,20015:1:1^
 6499^1^0^54^56^1449^0.6811^0.2477^1^Ironhide Devilsaur^14295:1:1^
@@ -573,6 +576,7 @@ GoldScout-export 7^b1g9hhizsnq2^24
 @i^3986^Protective Pavise
 @i^3989^Blocking Targe
 @i^3994^Laminated Scale Bracers
+@i^3996^Laminated Scale Gloves
 @i^4002^Overlinked Chain Bracers
 @i^4007^Overlinked Chain Armor
 @i^4016^Zanzil's Mixture
@@ -725,6 +729,7 @@ GoldScout-export 7^b1g9hhizsnq2^24
 @i^8704^OOX-09 HL Distress Beacon
 @i^8705^OOX-22 FE Distress Beacon
 @i^8723^Caliph Scorpidsting's Head
+@i^8753^Smooth Leather Helmet
 @i^8766^Morning Glory Dew
 @i^8948^Dried King Bolete
 @i^8952^Roasted Quail
@@ -791,6 +796,7 @@ GoldScout-export 7^b1g9hhizsnq2^24
 @i^11386^Squishy Basilisk Eye
 @i^11387^Basilisk Heart
 @i^11395^Bat Ear
+@i^11405^Giant Silver Vein
 @i^11417^Feathery Wing
 @i^11418^Hollow Wing Bone
 @i^11476^U'cha's Pelt
@@ -1093,6 +1099,7 @@ GoldScout-export 7^b1g9hhizsnq2^24
 @q^3986^0:4:0
 @q^3989^0:4:0
 @q^3994^0:4:0
+@q^3996^0:4:0
 @q^4002^0:4:0
 @q^4007^0:4:0
 @q^4016^1:12:0
@@ -1245,6 +1252,7 @@ GoldScout-export 7^b1g9hhizsnq2^24
 @q^8704^2:12:0
 @q^8705^2:12:0
 @q^8723^1:12:0
+@q^8753^0:4:0
 @q^8766^1:0:0
 @q^8948^1:0:0
 @q^8952^1:0:0
@@ -1311,6 +1319,7 @@ GoldScout-export 7^b1g9hhizsnq2^24
 @q^11386^0:15:0
 @q^11387^0:15:0
 @q^11395^0:15:0
+@q^11405^1:0:0
 @q^11417^0:15:0
 @q^11418^0:15:0
 @q^11476^1:12:0
@@ -3558,7 +3567,9 @@ GoldScout-export 7^b1g9hhizsnq2^24
 @a^6126^243:4,244:1
 @a^6127^224:1,243:5,244:5
 @a^6131^287:1
-@a^6148^288:1
+@a^6146^53:1,54:1
+@a^6147^53:1
+@a^6148^54:1,288:1
 @a^6193^205:1
 @a^6194^247:1
 @a^6195^169:1,189:2,209:1,248:1,249:1,250:1
@@ -3569,6 +3580,7 @@ GoldScout-export 7^b1g9hhizsnq2^24
 @a^6201^91:3
 @a^6202^71:1,91:2
 @a^6378^91:1
+@a^6380^53:1
 @a^6412^250:1
 @a^6498^211:1
 @a^6499^93:1
@@ -3689,6 +3701,9 @@ GoldScout-export 7^b1g9hhizsnq2^24
 @t^1796^5:295
 @t^4474^1:58
 @t^4475^1:191
+@t^6146^2:187
+@t^6148^1:132
+@t^6380^1:69
 @t^6412^1:30
 @t^10816^1:45
 @t^10836^1:54
