@@ -1,9 +1,11 @@
-GoldScout-export 6^xn6kkozrrt8y^5
+GoldScout-export 7^xn6kkozrrt8y^6
 40^3^0^6^7^1429^0.6180^0.5165^3^Kobold Miner^159:1:1,1427:1:1,2589:2:4^
 43^2^0^7^7^1429^0.6192^0.4790^2^Mine Spider^1476:2:2,5465:1:2^
 46^2^0^9^10^1429^0.7629^0.8471^2^Murloc Forager^779:1:1,6303:1:1,211785:1:1^
+95^3^0^11^12^1436^0.4675^0.3734^3^Defias Smuggler^829:3:3,2589:2:5^
 97^5^0^8^9^1429^0.3438^0.7912^5^Riverpaw Runt^782:3:3,2075:1:1,2589:2:3^
 100^1^0^12^12^1429^0.2638^0.9324^1^Gruff Swiftbite^1307:1:1,2075:1:1,3233:1:1^
+114^17^0^14^15^1436^0.5167^0.2355^17^Harvest Watcher^732:7:7,814:5:5,1274:7:7,4359:1:1,4361:1:1,4569:1:1,255007:5:5,255010:5:5^
 116^1^0^8^8^1429^0.6788^0.7800^1^Defias Bandit^1425:1:1,2589:1:1^
 118^6^0^9^10^1429^0.8173^0.6472^6^Prowler^2672:4:4,3299:1:1,3300:1:1,4663:1:1,9743:1:1^
 330^1^0^9^9^1429^0.6934^0.7818^1^Princess^769:1:1,771:1:1,1006:1:1^
@@ -12,8 +14,9 @@ GoldScout-export 6^xn6kkozrrt8y^5
 474^9^0^9^10^1429^0.7396^0.5259^9^Defias Rogue Wizard^159:1:1,1019:1:1,2589:3:6,211787:1:1^
 476^2^0^7^8^1429^0.6106^0.5056^2^Kobold Geomancer^1399:1:1^
 478^22^0^9^10^1429^0.3395^0.8038^22^Riverpaw Outrunner^117:2:2,782:5:5,1418:1:1,2213:1:1,2589:12:19,2957:1:1,3370:1:1,4663:1:1,211780:1:1^
-480^1^0^9^9^1436^0.5741^0.1960^1^Rusty Harvest Golem^2327:1:1,255007:1:1^
+480^1^0^9^10^1436^0.5741^0.1960^1^Rusty Harvest Golem^2327:1:1,255007:1:1^
 481^5^0^10^11^1436^0.5706^0.1917^5^Defias Footpad^829:1:1,1510:1:1,1512:1:1,2589:2:3^
+504^2^0^12^13^1436^0.4749^0.3749^2^Defias Trapper^1735:1:1,2589:1:2^
 525^1^0^5^6^1429^0.5159^0.6987^1^Mangy Wolf^2672:1:1,3299:1:1^
 732^1^0^9^10^1429^0.7666^0.8592^1^Murloc Lurker^779:1:1^
 822^3^0^8^9^1429^0.6408^0.7855^3^Young Forest Bear^3169:1:1,7073:1:1,7074:2:2^
@@ -31,14 +34,17 @@ GoldScout-export 6^xn6kkozrrt8y^5
 263470^7^0^0^0^0^0.0000^0.0000^0^^818:2:2,1513:1:1,1516:1:1,2672:2:2,2970:1:1,2979:1:1,3299:1:1,3300:1:1^
 @i^117^Tough Jerky
 @i^159^Refreshing Spring Water
+@i^732^Okra
 @i^769^Chunk of Boar Meat
 @i^771^Chipped Boar Tusk
 @i^779^Shiny Seashell
 @i^782^Painted Gnoll Armband
+@i^814^Flask of Oil
 @i^818^Tigerseye
 @i^829^Red Leather Bandana
 @i^1006^Brass Collar
 @i^1019^Red Linen Bandana
+@i^1274^Hops
 @i^1307^Gold Pickup Schedule
 @i^1399^Magic Candle
 @i^1418^Worn Leather Belt
@@ -53,6 +59,7 @@ GoldScout-export 6^xn6kkozrrt8y^5
 @i^1513^Old Greatsword
 @i^1515^Rough Wooden Staff
 @i^1516^Worn Hatchet
+@i^1735^Worn Mail Pants
 @i^1931^Huge Gnoll Claw
 @i^2075^Priest's Mace of the Eagle
 @i^2213^Worn Large Shield
@@ -74,8 +81,11 @@ GoldScout-export 6^xn6kkozrrt8y^5
 @i^3300^Rabbit's Foot
 @i^3370^Patchwork Belt
 @i^3374^Calico Belt
+@i^4359^Handful of Copper Bolts
+@i^4361^Copper Tube
 @i^4536^Shiny Red Apple
 @i^4541^Freshly Baked Bread
+@i^4569^Staunch Hammer of the Tiger
 @i^4663^Journeyman's Belt
 @i^4684^Spellbinder Belt
 @i^5465^Small Spider Leg
@@ -97,20 +107,24 @@ GoldScout-export 6^xn6kkozrrt8y^5
 @i^248003^Geomancy for Curious Young Wizards
 @i^248004^Arcane Explainer: Magical Stuff in Simple Words
 @i^255007^Golem Isospring
+@i^255010^Harvester Gyrostabilizer
 @i^274268^Dark Iron Map
 @i^274286^Durgen Dirgehammer's Head
 @i^275893^Searing Gourd
 @i^275895^Fading Echo
 @q^117^1:0:0
 @q^159^1:0:0
+@q^732^1:12:0
 @q^769^1:7:1
 @q^771^0:15:0
 @q^779^0:15:0
 @q^782^1:12:0
+@q^814^1:7:1
 @q^818^2:7:1
 @q^829^1:12:0
 @q^1006^1:12:0
 @q^1019^1:12:0
+@q^1274^1:12:0
 @q^1307^1:12:0
 @q^1399^1:0:0
 @q^1418^0:4:0
@@ -125,6 +139,7 @@ GoldScout-export 6^xn6kkozrrt8y^5
 @q^1513^0:2:0
 @q^1515^0:2:0
 @q^1516^0:2:0
+@q^1735^0:4:0
 @q^1931^1:12:0
 @q^2075^2:2:0
 @q^2213^0:4:0
@@ -146,8 +161,11 @@ GoldScout-export 6^xn6kkozrrt8y^5
 @q^3300^0:15:0
 @q^3370^0:4:0
 @q^3374^0:4:0
+@q^4359^1:7:1
+@q^4361^1:7:1
 @q^4536^1:0:0
 @q^4541^1:0:0
+@q^4569^2:2:0
 @q^4663^1:4:0
 @q^4684^1:4:0
 @q^5465^1:7:1
@@ -169,6 +187,7 @@ GoldScout-export 6^xn6kkozrrt8y^5
 @q^248003^1:12:0
 @q^248004^1:12:0
 @q^255007^1:7:1
+@q^255010^1:12:0
 @q^274268^1:12:0
 @q^274286^1:12:0
 @q^275893^1:15:0
@@ -731,8 +750,10 @@ GoldScout-export 6^xn6kkozrrt8y^5
 @a^40^192:1,212:1,232:1
 @a^43^192:2
 @a^46^335:2
+@a^95^149:3
 @a^97^193:1,345:4
 @a^100^365:1
+@a^114^90:15,130:2
 @a^116^313:1
 @a^118^173:1,255:1,297:4
 @a^330^313:1
@@ -743,6 +764,7 @@ GoldScout-export 6^xn6kkozrrt8y^5
 @a^478^173:3,193:1,345:14,365:4
 @a^480^71:1
 @a^481^71:5
+@a^504^149:2
 @a^525^270:1
 @a^732^355:1
 @a^822^312:3
@@ -750,4 +772,5 @@ GoldScout-export 6^xn6kkozrrt8y^5
 @a^6124^255:1
 @a^248278^355:1
 @a^248474^192:2
+@t^114^1:66
 @l^0^enUS

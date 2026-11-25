@@ -1,4 +1,4 @@
-GoldScout-export 7^pe9ca3cwajce^46
+GoldScout-export 7^pe9ca3cwajce^47
 92^3^0^39^40^1418^0.3990^0.8036^3^Rock Elemental^4552:3:3,4627:3:3,4784:2:2,7912:2:3^
 587^7^6^33^34^1434^0.3227^0.1579^7^Bloodscalp Warrior^1519:2:2,1520:1:1,2750:1:1,3796:1:1,3901:3:3,3915:3:3,4306:1:1^
 588^22^14^34^35^1434^0.2442^0.1151^22^Bloodscalp Scout^1519:1:1,1708:1:1,2592:1:1,3915:2:2,4306:4:4,9853:1:1^
@@ -471,9 +471,12 @@ GoldScout-export 7^pe9ca3cwajce^46
 7396^4^0^0^0^0^0.0000^0.0000^0^^4338:1:2^
 7397^3^0^0^0^0^0.0000^0.0000^0^^4338:1:2^
 7440^3^0^55^56^1452^0.3340^0.3701^3^Winterfall Den Watcher^12771:1:1,14047:2:3^
-7441^3^1^54^55^1452^0.3231^0.3672^3^Winterfall Totemic^^8952:1:1
+7441^4^1^54^55^1452^0.3264^0.3745^4^Winterfall Totemic^^8952:1:1
 7442^6^5^53^54^1452^0.3301^0.3658^6^Winterfall Pathfinder^7909:1:1,12820:1:1,13446:1:1,14047:1:1^8952:1:1
-7450^3^0^53^55^1452^0.3598^0.4052^3^Ragged Owlbeast^11420:1:1,12207:1:1,15420:3:6^
+7450^9^0^53^55^1452^0.3931^0.3876^9^Ragged Owlbeast^11420:1:1,12207:6:6,14938:1:1,15420:5:10^
+7451^2^0^54^56^1452^0.5530^0.3394^2^Raging Owlbeast^11419:1:1^
+7457^8^0^53^55^1452^0.3930^0.3846^8^Rogue Ice Thistle^8146:1:1,8766:1:1,12366:2:2,14281:1:1^
+7458^3^0^55^56^1452^0.5444^0.3295^3^Ice Thistle Yeti^4425:1:1,8952:1:1,12366:1:1^
 7584^3^0^44^46^1444^0.6735^0.4941^3^Wandering Forest Walker^2447:1:1,4608:1:1,9590:2:2^
 7604^2^0^0^0^0^0.0000^0.0000^0^^8548:1:1,14947:1:1,274648:1:1^
 7605^2^0^0^0^0^0.0000^0.0000^0^^3966:1:1,4306:1:1^
@@ -1067,6 +1070,7 @@ GoldScout-export 7^pe9ca3cwajce^46
 @i^11416^Delicate Ribcage
 @i^11417^Feathery Wing
 @i^11418^Hollow Wing Bone
+@i^11419^Mysterious Unhatched Egg
 @i^11420^Elegant Writing Tool
 @i^11474^Sprite Darter Egg
 @i^11476^U'cha's Pelt
@@ -1094,6 +1098,7 @@ GoldScout-export 7^pe9ca3cwajce^46
 @i^12206^Tender Crab Meat
 @i^12207^Giant Egg
 @i^12208^Tender Wolf Meat
+@i^12366^Thick Yeti Fur
 @i^12683^Plans: Thorium Belt
 @i^12771^Empty Firewater Flask
 @i^12820^Winterfall Firewater
@@ -1109,6 +1114,7 @@ GoldScout-export 7^pe9ca3cwajce^46
 @i^14264^Bloodwoven Pants of Arcane Wrath
 @i^14272^Gaea's Handwraps of Intellect
 @i^14276^Gaea's Belt of Shadow Wrath
+@i^14281^Opulent Crown of Arcane Protection
 @i^14425^Silksand Wraps
 @i^14433^Windchaser Woolies
 @i^14656^Scorpashi Cape
@@ -1117,6 +1123,7 @@ GoldScout-export 7^pe9ca3cwajce^46
 @i^14795^Protector Helm
 @i^14841^Tyrant's Epaulets
 @i^14905^Brutish Gauntlets of the Beast
+@i^14938^Heroic Bracers of Holy Wrath
 @i^14944^Warbringer's Crown of the Gorilla
 @i^14947^Warbringer's Shield of Intellect
 @i^14949^Bloodforged Gauntlets of the Defender
@@ -1625,6 +1632,7 @@ GoldScout-export 7^pe9ca3cwajce^46
 @q^11416^0:15:0
 @q^11417^0:15:0
 @q^11418^0:15:0
+@q^11419^0:15:0
 @q^11420^0:15:0
 @q^11474^1:15:0
 @q^11476^1:12:0
@@ -1652,6 +1660,7 @@ GoldScout-export 7^pe9ca3cwajce^46
 @q^12206^1:7:1
 @q^12207^1:7:1
 @q^12208^1:7:1
+@q^12366^1:12:0
 @q^12683^2:9:0
 @q^12771^1:12:0
 @q^12820^1:0:0
@@ -1667,6 +1676,7 @@ GoldScout-export 7^pe9ca3cwajce^46
 @q^14264^2:4:0
 @q^14272^2:4:0
 @q^14276^2:4:0
+@q^14281^2:4:0
 @q^14425^2:4:0
 @q^14433^2:4:0
 @q^14656^2:4:0
@@ -1675,6 +1685,7 @@ GoldScout-export 7^pe9ca3cwajce^46
 @q^14795^2:4:0
 @q^14841^2:4:0
 @q^14905^2:4:0
+@q^14938^2:4:0
 @q^14944^2:4:0
 @q^14947^2:4:0
 @q^14949^2:4:0
@@ -2424,9 +2435,12 @@ GoldScout-export 7^pe9ca3cwajce^46
 @a^7332^290:1
 @a^7335^290:2
 @a^7440^146:3
-@a^7441^146:3
+@a^7441^146:4
 @a^7442^126:1,146:5
-@a^7450^146:1,149:1,185:1
+@a^7450^146:3,147:1,148:1,149:3,185:1
+@a^7451^130:1,131:1
+@a^7457^129:1,146:1,147:1,148:1,149:1,166:2,167:1
+@a^7458^130:1,131:2
 @a^7584^173:1,191:1,234:1
 @a^7725^153:5
 @a^7726^153:3
