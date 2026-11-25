@@ -1,4 +1,4 @@
-GoldScout-export 7^bnkuhegviarq^22
+GoldScout-export 7^bnkuhegviarq^25
 669^4^0^41^42^1434^0.4613^0.4197^4^Skullsplitter Hunter^4306:1:2,4599:1:1,8151:1:1,248690:1:1^
 670^2^0^41^42^1434^0.4532^0.4231^2^Skullsplitter Witch Doctor^3916:1:1,8151:1:1^
 696^1^0^39^39^1434^0.4333^0.3927^1^Skullsplitter Axe Thrower^3916:1:1,4306:1:2,9892:1:1^
@@ -104,6 +104,10 @@ GoldScout-export 7^bnkuhegviarq^22
 2927^1^0^42^43^1425^0.3309^0.5144^1^Vicious Owlbeast^^
 2928^3^0^44^45^1425^0.4168^0.5467^3^Primitive Owlbeast^7910:1:1,248690:1:1^
 2929^13^0^46^47^1425^0.5438^0.5179^13^Savage Owlbeast^1645:2:2,3989:1:1,5117:2:2,5636:1:1,8146:1:1,12207:3:3^
+3098^33^0^1^2^1411^0.4334^0.6518^33^Mottled Boar^117:6:6,1364:1:1,1369:1:1,1374:1:1,1377:2:2,1378:1:1,2210:2:2,2650:1:1,2651:1:1,2653:1:1,2654:1:1,3363:1:1,4865:18:18,7098:17:17^
+3101^6^0^4^4^1411^0.4452^0.5692^6^Vile Familiar^117:1:1,1364:1:1,2210:1:1,2589:2:2,2653:1:1,6487:6:6^
+3124^15^0^3^3^1411^0.4691^0.6200^15^Scorpid Worker^1367:1:1,1374:2:2,1378:1:1,1380:2:2,2649:1:1,4862:10:10,4867:3:3,7099:5:5,7100:4:4,7101:3:3^
+3281^1^0^4^4^1411^0.4070^0.6657^1^Sarkoth^4867:1:1,4905:1:1^
 4196^4^0^49^50^1446^0.5654^0.7015^4^Silithid Swarm^^
 4328^1^0^44^44^1445^0.5649^0.7602^1^Firemane Scalebane^^
 4334^2^0^43^44^1445^0.5612^0.7875^2^Firemane Flamecaller^^
@@ -460,9 +464,12 @@ GoldScout-export 7^bnkuhegviarq^22
 @i^4775^Cracked Bill
 @i^4776^Ruffled Feather
 @i^4784^Lifeless Stone
+@i^4862^Scorpid Worker Tail
 @i^4865^Ruined Pelt
+@i^4867^Broken Scorpid Leg
 @i^4873^Dry Hardened Barnacle
 @i^4874^Clean Fishbones
+@i^4905^Sarkoth's Mangled Claw
 @i^5069^Fire Wand
 @i^5117^Vibrant Plume
 @i^5215^Ember Wand of the Sorcerer
@@ -480,12 +487,15 @@ GoldScout-export 7^bnkuhegviarq^22
 @i^6303^Raw Slitherskin Mackerel
 @i^6336^Infantry Tunic of the Bear
 @i^6444^Forked Tongue
+@i^6487^Vile Familiar Head
 @i^6530^Nightcrawlers
 @i^6889^Small Egg
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
 @i^7096^Plucked Feather
 @i^7097^Leg Meat
+@i^7098^Splintered Tusk
+@i^7099^Severed Pincer
 @i^7100^Sticky Ichor
 @i^7101^Bug Eye
 @i^7332^Regal Armor of the Elder
@@ -827,9 +837,12 @@ GoldScout-export 7^bnkuhegviarq^22
 @q^4775^0:15:0
 @q^4776^0:15:0
 @q^4784^0:15:0
+@q^4862^1:12:0
 @q^4865^0:15:0
+@q^4867^0:15:0
 @q^4873^0:15:0
 @q^4874^0:15:0
+@q^4905^1:12:0
 @q^5069^2:2:0
 @q^5117^1:12:0
 @q^5215^2:2:0
@@ -847,12 +860,15 @@ GoldScout-export 7^bnkuhegviarq^22
 @q^6303^1:7:1
 @q^6336^2:4:0
 @q^6444^0:15:0
+@q^6487^1:12:0
 @q^6530^1:0:0
 @q^6889^1:7:1
 @q^7073^0:15:0
 @q^7074^0:15:0
 @q^7096^0:15:0
 @q^7097^1:0:0
+@q^7098^0:15:0
+@q^7099^0:15:0
 @q^7100^0:15:0
 @q^7101^0:15:0
 @q^7332^2:4:0
@@ -1004,6 +1020,7 @@ GoldScout-export 7^bnkuhegviarq^22
 @q^278244^1:12:0
 @q^279913^1:12:0
 @q^286259^1:12:0
+@m^1411^Durotar
 @m^1418^Badlands
 @m^1420^Tirisfal Glades
 @m^1425^The Hinterlands
@@ -2676,6 +2693,10 @@ GoldScout-export 7^bnkuhegviarq^22
 @a^2927^206:1
 @a^2928^188:1,227:1,249:1
 @a^2929^190:4,210:5,211:1,230:2,232:1
+@a^3098^248:25,249:1,268:2,288:5
+@a^3101^228:6
+@a^3124^249:15
+@a^3281^268:1
 @a^4196^271:3,291:1
 @a^4328^311:1
 @a^4334^311:1,331:1
@@ -2836,6 +2857,9 @@ GoldScout-export 7^bnkuhegviarq^22
 @t^2655^1:218
 @t^2686^4:50
 @t^2929^1:119
+@t^3098^29:576
+@t^3101^6:154
+@t^3124^14:205
 @t^4666^2:3
 @t^7767^1:15
 @t^7768^12:321

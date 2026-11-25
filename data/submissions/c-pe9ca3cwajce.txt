@@ -1,4 +1,4 @@
-GoldScout-export 7^pe9ca3cwajce^48
+GoldScout-export 7^pe9ca3cwajce^49
 92^3^0^39^40^1418^0.3990^0.8036^3^Rock Elemental^4552:3:3,4627:3:3,4784:2:2,7912:2:3^
 587^7^6^33^34^1434^0.3227^0.1579^7^Bloodscalp Warrior^1519:2:2,1520:1:1,2750:1:1,3796:1:1,3901:3:3,3915:3:3,4306:1:1^
 588^22^14^34^35^1434^0.2442^0.1151^22^Bloodscalp Scout^1519:1:1,1708:1:1,2592:1:1,3915:2:2,4306:4:4,9853:1:1^
@@ -470,6 +470,8 @@ GoldScout-export 7^pe9ca3cwajce^48
 7358^1^0^0^0^0^0.0000^0.0000^0^^^
 7396^4^0^0^0^0^0.0000^0.0000^0^^4338:1:2^
 7397^3^0^0^0^0^0.0000^0.0000^0^^4338:1:2^
+7430^1^0^55^56^1452^0.4956^0.1080^1^Frostsaber Cub^4580:1:1^
+7434^2^0^60^60^1452^0.4960^0.0990^2^Frostsaber Pride Watcher^4580:1:1,12202:1:1,250180:1:1^
 7440^3^0^55^56^1452^0.3340^0.3701^3^Winterfall Den Watcher^12771:1:1,14047:2:3^
 7441^4^1^54^55^1452^0.3264^0.3745^4^Winterfall Totemic^^8952:1:1
 7442^6^5^53^54^1452^0.3301^0.3658^6^Winterfall Pathfinder^7909:1:1,12820:1:1,13446:1:1,14047:1:1^8952:1:1
@@ -535,6 +537,7 @@ GoldScout-export 7^pe9ca3cwajce^48
 9878^2^0^51^52^1448^0.4118^0.4130^2^Entropic Beast^4787:2:2^
 9879^1^0^53^54^1448^0.4079^0.3983^1^Entropic Horror^3857:1:1^
 10080^2^0^0^0^0^0.0000^0.0000^0^^^
+10737^1^0^60^60^1452^0.4949^0.1006^1^Shy-Rotam^1688:1:1,12202:1:1^
 10802^1^1^51^51^1425^0.5740^0.8644^1^Hitah'ya the Keeper^1645:1:1^
 10928^20^0^42^43^1434^0.2809^0.8227^20^Succubus Minion^^
 11440^0^4^53^54^0^0.0000^0.0000^0^Gordok Enforcer^^16885:1:1
@@ -903,6 +906,7 @@ GoldScout-export 7^pe9ca3cwajce^48
 @i^4556^Speckled Shell Fragment
 @i^4557^Fiery Gland
 @i^4558^Empty Barrel
+@i^4580^Sabertooth Fang
 @i^4582^Soft Bushy Tail
 @i^4583^Thick Furry Mane
 @i^4584^Large Trophy Paw
@@ -1211,6 +1215,7 @@ GoldScout-export 7^pe9ca3cwajce^48
 @i^248709^Waylaid Crate: Expert Ingots
 @i^248711^Waylaid Crate: Artisan Fabrics
 @i^248712^Waylaid Crate: Artisan Ingots
+@i^250180^Recipe: Swiftstrike Steak
 @i^250184^Recipe: Raptor Rouladen
 @i^252866^Pattern: Blue Suede Gloves
 @i^252868^Pattern: Skulker's Leather Gauntlets
@@ -1468,6 +1473,7 @@ GoldScout-export 7^pe9ca3cwajce^48
 @q^4556^0:15:0
 @q^4557^0:15:0
 @q^4558^0:15:0
+@q^4580^0:15:0
 @q^4582^1:12:0
 @q^4583^0:15:0
 @q^4584^0:15:0
@@ -1776,6 +1782,7 @@ GoldScout-export 7^pe9ca3cwajce^48
 @q^248709^2:0:1
 @q^248711^2:0:1
 @q^248712^2:0:1
+@q^250180^1:9:0
 @q^250184^1:9:0
 @q^252866^2:9:0
 @q^252868^3:9:0
@@ -2441,6 +2448,8 @@ GoldScout-export 7^pe9ca3cwajce^48
 @a^7327^369:1
 @a^7332^290:1
 @a^7335^290:2
+@a^7430^49:1
+@a^7434^29:1,49:1
 @a^7440^146:3
 @a^7441^146:4
 @a^7442^126:1,146:5
@@ -2492,6 +2501,7 @@ GoldScout-export 7^pe9ca3cwajce^48
 @a^9877^227:1
 @a^9878^148:1,168:1
 @a^9879^148:1
+@a^10737^49:1
 @a^10802^351:1
 @a^10928^306:1,325:19
 @a^11521^230:1,250:1

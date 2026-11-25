@@ -1,4 +1,4 @@
-GoldScout-export 7^ocwt8n26wzy6^52
+GoldScout-export 7^ocwt8n26wzy6^53
 48^19^0^21^22^1431^0.7908^0.7078^19^Skeletal Warrior^1772:1:1,1799:1:1,1802:1:1,2378:7:7,2592:5:7,2794:1:1,3198:1:1,4698:1:1^
 202^2^0^23^24^1431^0.4917^0.5446^2^Skeletal Horror^^
 203^13^0^22^23^1431^0.7968^0.7141^13^Skeletal Mage^2378:3:3,2589:1:2,2592:5:9,4306:2:2,5576:1:1^
@@ -90,6 +90,12 @@ GoldScout-export 7^ocwt8n26wzy6^52
 2373^1^0^27^27^1424^0.6373^0.5907^1^Mudsnout Shaman^3770:1:1^
 2376^8^0^30^31^1424^0.3698^0.6832^8^Torn Fin Oracle^3716:6:6,3804:1:1,5524:3:3,17057:2:2,17058:1:1^
 2377^5^0^31^32^1424^0.3708^0.6828^5^Torn Fin Tidehunter^3385:2:2,3716:4:4,17057:2:2,17058:1:1^
+2554^8^0^32^33^1417^0.7109^0.6340^8^Witherbark Axe Thrower^4306:4:6,4503:3:3,216483:1:1^
+2555^3^0^33^34^1417^0.7309^0.6396^3^Witherbark Witch Doctor^4503:1:1,4522:1:1^
+2556^1^0^35^35^1417^0.7099^0.6163^1^Witherbark Headhunter^2592:1:2,3037:1:1^
+2559^1^0^31^31^1417^0.4203^0.4972^1^Highland Strider^248692:1:1^
+2563^1^0^33^33^1417^0.3601^0.3420^1^Plains Creeper^1081:1:1^
+2572^3^0^36^36^1417^0.8221^0.3877^3^Drywhisker Kobold^4306:1:2^
 3630^1^0^15^15^1414^0.5190^0.5482^1^Deviate Coiler^6444:1:1^
 3631^1^0^16^17^1414^0.5283^0.5476^1^Deviate Stinglash^6443:1:1^
 3632^2^0^15^16^1414^0.5197^0.5520^2^Deviate Creeper^3036:1:1,5124:2:2,211784:1:1^
@@ -313,6 +319,7 @@ GoldScout-export 7^ocwt8n26wzy6^52
 @i^2973^Hunting Tunic
 @i^3012^Scroll of Agility
 @i^3036^Heavy Shortbow
+@i^3037^Whipwood Recurve Bow
 @i^3174^Spider Ichor
 @i^3175^Ruined Dragonhide
 @i^3176^Small Claw
@@ -371,6 +378,8 @@ GoldScout-export 7^ocwt8n26wzy6^52
 @i^4402^Small Flame Sac
 @i^4416^Schematic: Goblin Land Mine
 @i^4428^Spider Palp
+@i^4503^Witherbark Tusk
+@i^4522^Witherbark Medicine Pouch
 @i^4537^Tel'Abim Banana
 @i^4542^Moist Cornbread
 @i^4553^Jagged Piece of Stone
@@ -488,12 +497,14 @@ GoldScout-export 7^ocwt8n26wzy6^52
 @i^211854^Scroll: OMIT KESA
 @i^211855^Scroll: STHENIC LUNATE
 @i^213547^Scroll: THAW WORDS
+@i^216483^Witherbark Mallet
 @i^216616^Compound Cage Key
 @i^248683^Waylaid Crate: Apprentice Ore
 @i^248685^Waylaid Crate: Apprentice Curiosities
 @i^248686^Waylaid Crate: Journeyman Herbs
 @i^248687^Waylaid Crate: Journeyman Ore
 @i^248688^Waylaid Crate: Journeyman Textiles
+@i^248692^Waylaid Crate: Expert Ore
 @i^248693^Waylaid Crate: Expert Textiles
 @i^248694^Waylaid Crate: Expert Curiosities
 @i^248703^Waylaid Crate: Apprentice Ingots
@@ -621,6 +632,7 @@ GoldScout-export 7^ocwt8n26wzy6^52
 @q^2973^2:4:0
 @q^3012^1:0:0
 @q^3036^2:2:0
+@q^3037^2:2:0
 @q^3174^1:7:1
 @q^3175^0:15:0
 @q^3176^0:15:0
@@ -679,6 +691,8 @@ GoldScout-export 7^ocwt8n26wzy6^52
 @q^4402^1:7:1
 @q^4416^2:9:0
 @q^4428^0:15:0
+@q^4503^1:12:0
+@q^4522^1:12:0
 @q^4537^1:0:0
 @q^4542^1:0:0
 @q^4553^0:15:0
@@ -796,12 +810,14 @@ GoldScout-export 7^ocwt8n26wzy6^52
 @q^211854^1:0:0
 @q^211855^1:0:0
 @q^213547^1:0:0
+@q^216483^1:0:0
 @q^216616^1:12:0
 @q^248683^1:0:1
 @q^248685^1:0:1
 @q^248686^1:0:1
 @q^248687^1:0:1
 @q^248688^1:0:1
+@q^248692^1:0:1
 @q^248693^1:0:1
 @q^248694^1:0:1
 @q^248703^2:0:1
@@ -831,6 +847,7 @@ GoldScout-export 7^ocwt8n26wzy6^52
 @q^281143^1:15:0
 @m^1413^The Barrens
 @m^1414^Kalimdor
+@m^1417^Arathi Highlands
 @m^1424^Hillsbrad Foothills
 @m^1431^Duskwood
 @m^1434^Stranglethorn Vale
@@ -1638,6 +1655,12 @@ GoldScout-export 7^ocwt8n26wzy6^52
 @a^2373^232:1
 @a^2376^267:8
 @a^2377^267:5
+@a^2554^253:2,254:4,274:2
+@a^2555^254:2,274:1
+@a^2556^254:1
+@a^2559^188:1
+@a^2563^127:1
+@a^2572^156:3
 @a^3630^210:1
 @a^3631^210:1
 @a^3632^230:2

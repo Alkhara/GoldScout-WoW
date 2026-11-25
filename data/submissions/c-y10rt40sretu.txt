@@ -1,4 +1,4 @@
-GoldScout-export 7^y10rt40sretu^20
+GoldScout-export 7^y10rt40sretu^21
 685^1^0^33^33^1434^0.2846^0.1528^1^Stranglethorn Raptor^4461:1:1^
 694^1^0^34^34^1434^0.3036^0.1674^1^Bloodscalp Axe Thrower^4306:1:1^
 1501^3^0^1^1^1420^0.3209^0.6397^3^Mindless Zombie^2589:1:1,4604:2:2^
@@ -34,6 +34,7 @@ GoldScout-export 7^y10rt40sretu^20
 2450^1^0^29^29^1424^0.2974^0.5774^1^Miner Hackett^4306:1:1^
 2503^3^0^27^28^1424^0.2885^0.5756^3^Hillsbrad Foreman^422:1:1,4306:1:1,211784:2:2^
 2529^2^0^0^0^0^0.0000^0.0000^0^^^
+2761^7^0^38^39^1417^0.6598^0.3026^7^Cresting Exile^4481:4:4,4791:5:16,7070:1:1^
 3099^24^0^6^7^1411^0.4779^0.3568^24^Dire Mottled Boar^769:24:24,771:1:1,3171:5:5^
 3100^39^0^8^9^1411^0.4424^0.2178^39^Elder Mottled Boar^767:1:1,769:33:33,771:5:5,774:2:2,805:1:1,818:1:1,3171:12:12,4563:2:2,15010:1:1^
 3114^1^0^10^10^1411^0.4336^0.4050^1^Razormane Battleguard^^
@@ -220,6 +221,7 @@ GoldScout-export 7^y10rt40sretu^20
 @i^4414^Schematic: Portable Bronze Mortar
 @i^4428^Spider Palp
 @i^4461^Raptor Hide
+@i^4481^Cresting Charm
 @i^4538^Snapvine Watermelon
 @i^4542^Moist Cornbread
 @i^4553^Jagged Piece of Stone
@@ -236,6 +238,7 @@ GoldScout-export 7^y10rt40sretu^20
 @i^4775^Cracked Bill
 @i^4776^Ruffled Feather
 @i^4784^Lifeless Stone
+@i^4791^Enchanted Water
 @i^4813^Small Leather Collar
 @i^4867^Broken Scorpid Leg
 @i^4871^Searing Collar
@@ -285,6 +288,7 @@ GoldScout-export 7^y10rt40sretu^20
 @i^6527^Ancestral Robe
 @i^6575^Defender Cloak of Agility
 @i^6582^Scouting Boots of Agility
+@i^7070^Elemental Water
 @i^7072^Naga Scale
 @i^7270^Laughing Sister's Hair
 @i^7355^Elder's Bracers of the Channeler
@@ -422,6 +426,7 @@ GoldScout-export 7^y10rt40sretu^20
 @q^4414^2:9:0
 @q^4428^0:15:0
 @q^4461^1:7:1
+@q^4481^1:0:0
 @q^4538^1:0:0
 @q^4542^1:0:0
 @q^4553^0:15:0
@@ -438,6 +443,7 @@ GoldScout-export 7^y10rt40sretu^20
 @q^4775^0:15:0
 @q^4776^0:15:0
 @q^4784^0:15:0
+@q^4791^1:0:0
 @q^4813^0:15:0
 @q^4867^0:15:0
 @q^4871^1:12:0
@@ -487,6 +493,7 @@ GoldScout-export 7^y10rt40sretu^20
 @q^6527^2:4:0
 @q^6575^2:4:0
 @q^6582^2:4:0
+@q^7070^1:7:1
 @q^7072^1:7:1
 @q^7270^1:12:0
 @q^7355^2:4:0
@@ -546,6 +553,7 @@ GoldScout-export 7^y10rt40sretu^20
 @m^1413^The Barrens
 @m^1414^Kalimdor
 @m^1416^Alterac Mountains
+@m^1417^Arathi Highlands
 @m^1420^Tirisfal Glades
 @m^1424^Hillsbrad Foothills
 @m^1434^Stranglethorn Vale
@@ -1305,6 +1313,7 @@ GoldScout-export 7^y10rt40sretu^20
 @a^2408^53:1,54:1,73:6,93:4,113:1,133:1
 @a^2450^225:1
 @a^2503^225:2,226:1
+@a^2761^113:3,133:4
 @a^3099^127:1,128:4,129:1,130:6,149:4,150:4,168:2,169:2
 @a^3100^49:1,67:3,68:2,69:6,70:5,71:1,87:3,88:8,89:4,107:2,127:2,147:1,167:1
 @a^3114^168:1
@@ -1352,6 +1361,7 @@ GoldScout-export 7^y10rt40sretu^20
 @a^14279^245:1
 @t^1501^2:32
 @t^1502^4:85
+@t^2761^5:205
 @t^3242^6:302
 @t^3244^2:45
 @t^3246^11:388
