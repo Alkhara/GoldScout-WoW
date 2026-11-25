@@ -1,4 +1,4 @@
-GoldScout-export 7^4pwziwqfnnzh^28
+GoldScout-export 7^4pwziwqfnnzh^29
 92^4^0^39^40^1418^0.3289^0.6611^4^Rock Elemental^4552:2:2,4553:1:1,4627:3:3,4784:2:2,7067:1:1^
 588^1^0^34^34^1434^0.2258^0.1340^1^Bloodscalp Scout^2742:1:1,248708:1:1^
 597^1^0^36^36^1434^0.2428^0.0946^1^Bloodscalp Berserker^^
@@ -79,6 +79,8 @@ GoldScout-export 7^4pwziwqfnnzh^28
 2928^3^0^44^45^1425^0.4452^0.5096^3^Primitive Owlbeast^1645:1:1,4599:1:1,5636:1:1^
 2929^1^0^46^47^1425^0.5346^0.4911^1^Savage Owlbeast^11417:1:1^
 2944^1^0^41^41^1418^0.6119^0.6786^1^Boss Tho'grun^4338:1:1,4640:1:1^
+3098^9^0^1^2^1411^0.4321^0.7052^9^Mottled Boar^117:2:2,1377:1:1,2652:1:1,4865:3:3,7098:4:4^
+3124^1^0^3^3^1411^0.4092^0.7103^1^Scorpid Worker^7100:1:1^
 3560^3^0^37^41^1418^0.4880^0.7138^3^Healing Ward^^
 4196^2^0^49^50^1446^0.3415^0.3791^2^Silithid Swarm^^
 4323^24^0^41^42^1445^0.4540^0.7750^24^Searing Hatchling^4402:5:5,4460:7:7,5840:4:4,5841:4:4^
@@ -261,10 +263,12 @@ GoldScout-export 7^4pwziwqfnnzh^28
 270807^8^0^45^46^1425^0.2484^0.6558^8^Hexed Larva^^
 272313^1^0^39^40^2548^0.7458^0.7239^1^Brineshell Clacker^^
 272315^2^0^42^43^2548^0.8212^0.5193^2^Brineshell Snapper^^
+@i^117^Tough Jerky
 @i^769^Chunk of Boar Meat
 @i^770^Pointy Crocolisk Tooth
 @i^1074^Hard Spider Leg Tip
 @i^1081^Crisp Spider Meat
+@i^1377^Frayed Gloves
 @i^1464^Buzzard Talon
 @i^1520^Troll Sweat
 @i^1524^Skullsplitter Tusk
@@ -283,6 +287,7 @@ GoldScout-export 7^4pwziwqfnnzh^28
 @i^2251^Gooey Spider Leg
 @i^2452^Swiftthistle
 @i^2592^Wool Cloth
+@i^2652^Flimsy Chain Cloak
 @i^2730^Green Hills of Stranglethorn - Page 6
 @i^2735^Green Hills of Stranglethorn - Page 11
 @i^2742^Green Hills of Stranglethorn - Page 18
@@ -392,6 +397,7 @@ GoldScout-export 7^4pwziwqfnnzh^28
 @i^4784^Lifeless Stone
 @i^4787^Burning Pitch
 @i^4791^Enchanted Water
+@i^4865^Ruined Pelt
 @i^5116^Long Tail Feather
 @i^5117^Vibrant Plume
 @i^5128^Shed Lizard Skin
@@ -429,6 +435,8 @@ GoldScout-export 7^4pwziwqfnnzh^28
 @i^7068^Elemental Fire
 @i^7069^Elemental Air
 @i^7072^Naga Scale
+@i^7098^Splintered Tusk
+@i^7100^Sticky Ichor
 @i^7112^Aurora Armor
 @i^7430^Twilight Robe of the Elder
 @i^7433^Twilight Gloves of Stamina
@@ -577,10 +585,12 @@ GoldScout-export 7^4pwziwqfnnzh^28
 @i^279913^Ti'ik's Head
 @i^281052^Ombassa's Hide
 @i^286428^Band of Bossman
+@q^117^1:0:0
 @q^769^1:7:1
 @q^770^0:15:0
 @q^1074^0:15:0
 @q^1081^1:7:1
+@q^1377^0:4:0
 @q^1464^0:15:0
 @q^1520^0:15:0
 @q^1524^1:12:0
@@ -599,6 +609,7 @@ GoldScout-export 7^4pwziwqfnnzh^28
 @q^2251^1:7:1
 @q^2452^1:7:1
 @q^2592^1:7:1
+@q^2652^0:4:0
 @q^2730^1:12:0
 @q^2735^1:12:0
 @q^2742^1:12:0
@@ -708,6 +719,7 @@ GoldScout-export 7^4pwziwqfnnzh^28
 @q^4784^0:15:0
 @q^4787^0:15:0
 @q^4791^1:0:0
+@q^4865^0:15:0
 @q^5116^1:7:1
 @q^5117^1:12:0
 @q^5128^0:15:0
@@ -745,6 +757,8 @@ GoldScout-export 7^4pwziwqfnnzh^28
 @q^7068^1:7:1
 @q^7069^1:7:1
 @q^7072^1:7:1
+@q^7098^0:15:0
+@q^7100^0:15:0
 @q^7112^2:4:0
 @q^7430^2:4:0
 @q^7433^2:4:0
@@ -893,6 +907,7 @@ GoldScout-export 7^4pwziwqfnnzh^28
 @q^279913^1:12:0
 @q^281052^1:12:0
 @q^286428^3:4:0
+@m^1411^Durotar
 @m^1415^Eastern Kingdoms
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
@@ -2297,6 +2312,8 @@ GoldScout-export 7^4pwziwqfnnzh^28
 @a^2928^170:1,227:1,228:1
 @a^2929^190:1
 @a^2944^272:1
+@a^3098^268:2,288:7
+@a^3124^288:1
 @a^3560^269:1,289:1,290:1
 @a^4196^146:2
 @a^4323^269:1,270:1,288:2,289:2,308:7,309:1,328:4,329:6
@@ -2474,6 +2491,8 @@ GoldScout-export 7^4pwziwqfnnzh^28
 @t^2925^11:522
 @t^2926^5:398
 @t^2928^3:74
+@t^3098^7:151
+@t^3124^1:25
 @t^4466^1:1
 @t^4467^1:19
 @t^270772^1:1

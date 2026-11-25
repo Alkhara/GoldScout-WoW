@@ -1,4 +1,4 @@
-GoldScout-export 7^14mkmwswj7i9^32
+GoldScout-export 7^14mkmwswj7i9^33
 574^1^0^27^27^1431^0.8637^0.4792^1^Naraxis^1074:1:1,1081:1:1,3174:1:1,6607:1:1^
 587^11^0^33^34^1434^0.3142^0.1828^11^Krieger der Bloodscalp^1519:1:1,1520:1:1,2751:1:1,3771:1:1,3786:1:1,3915:1:1,4306:3:5^
 588^1^0^35^35^1434^0.2321^0.1175^1^Späher der Bloodscalp^4306:1:2^
@@ -46,8 +46,12 @@ GoldScout-export 7^14mkmwswj7i9^32
 1144^2^0^36^37^1434^0.3659^0.3105^2^Hexendoktor der Mosh'Ogg^2748:1:1,4306:1:2^
 1150^1^0^30^30^1434^0.3574^0.1079^1^Flusskrokilisk^770:1:1,3667:1:1^
 1152^3^0^35^36^1434^0.3922^0.3066^3^Schnappkieferkrokilisk^770:2:2,3667:2:2^
-1508^3^0^1^1^1420^0.2947^0.6696^3^Junger Aasfresser^1374:1:1,2652:1:1,3265:3:3,4865:3:3^
-1512^6^0^1^2^1420^0.2993^0.6769^6^Nachtsauger^2210:1:1,3264:4:4,4865:1:1,7073:4:4,7074:3:3^
+1501^6^0^1^1^1420^0.3200^0.6386^6^Hirnloser Zombie^159:1:1,1378:1:1,2589:2:2,4604:1:1^
+1502^7^0^1^2^1420^0.3233^0.6236^7^Elender Zombie^159:1:1,2589:1:1,2649:1:1,2652:1:1,4604:1:1^
+1508^6^0^1^1^1420^0.3012^0.6508^6^Junger Aasfresser^1374:1:1,2652:1:1,2653:1:1,3265:6:6,4865:5:5,7073:1:1^
+1512^7^0^1^2^1420^0.3049^0.6650^7^Nachtsauger^2210:1:1,3264:5:5,4865:2:2,7073:4:4,7074:3:3^
+1513^1^0^3^3^1420^0.3418^0.5981^1^Räudiger Nachtsauger^3264:1:1,4865:1:1,7073:1:1^
+1890^2^0^2^2^1420^0.3260^0.6159^2^Klapperndes Skelett^2652:1:1^
 2554^5^0^32^33^1417^0.6749^0.6254^5^Axtwerfer der Witherbark^1710:1:1,2592:1:3,4306:1:1,4338:1:1,216483:1:1^
 2555^9^0^33^34^1417^0.6264^0.6642^9^Hexendoktor der Witherbark^1708:1:1,4055:1:1,4306:3:5,216483:1:1^
 2556^4^0^34^35^1417^0.6421^0.6995^4^Kopfjäger der Witherbark^2592:1:1,3781:1:1,4634:1:1,216483:2:2^
@@ -279,6 +283,7 @@ GoldScout-export 7^14mkmwswj7i9^32
 270667^3^0^38^39^2548^0.4691^0.6553^3^Farholde-Priester^^
 278382^2^0^38^38^1441^0.3667^0.3915^2^Verheerender Sturmelementar^^
 278384^2^0^38^38^1441^0.3648^0.4011^2^Verheerender Flutelementar^^
+@i^159^Erfrischendes Quellwasser
 @i^769^Brocken Eberfleisch
 @i^770^Spitzer Krokiliskenzahn
 @i^878^Faustgroße Spinndrüse
@@ -286,6 +291,7 @@ GoldScout-export 7^14mkmwswj7i9^32
 @i^1074^Harte Spinnenbeinspitze
 @i^1081^Knuspriges Spinnenfleisch
 @i^1374^Ausgefranste Schuhe
+@i^1378^Ausgefranste Hose
 @i^1464^Bussardkralle
 @i^1477^Rolle der Beweglichkeit II
 @i^1497^Kattunumhang
@@ -324,7 +330,9 @@ GoldScout-export 7^14mkmwswj7i9^32
 @i^2295^Großer Eberhauer
 @i^2589^Leinenstoff
 @i^2592^Wollstoff
+@i^2649^Sehr leichter Kettengürtel
 @i^2652^Sehr leichter Kettenumhang
+@i^2653^Sehr leichte Kettenhandschuhe
 @i^2725^Die Grünen Hügel des Schlingendorntals - Seite 1
 @i^2728^Die Grünen Hügel des Schlingendorntals - Seite 4
 @i^2730^Die Grünen Hügel des Schlingendorntals - Seite 6
@@ -427,6 +435,7 @@ GoldScout-export 7^14mkmwswj7i9^32
 @i^4586^Glatte Raptorenhaut
 @i^4602^Monderntekürbis
 @i^4603^Roher Tüpfelgelbschwanz
+@i^4604^Waldpilzkappe
 @i^4607^Köstlicher Höhlenschimmel
 @i^4634^Eisenschließkassette
 @i^4636^Starke Eisenschließkassette
@@ -625,6 +634,7 @@ GoldScout-export 7^14mkmwswj7i9^32
 @i^278225^Chirurgische Spinnenseide
 @i^281052^Ombassas Balg
 @i^286429^Riesenwanstgürtel
+@q^159^1:0:0
 @q^769^1:7:1
 @q^770^0:15:0
 @q^878^0:7:0
@@ -632,6 +642,7 @@ GoldScout-export 7^14mkmwswj7i9^32
 @q^1074^0:15:0
 @q^1081^1:7:1
 @q^1374^0:4:0
+@q^1378^0:4:0
 @q^1464^0:15:0
 @q^1477^1:0:0
 @q^1497^0:4:0
@@ -670,7 +681,9 @@ GoldScout-export 7^14mkmwswj7i9^32
 @q^2295^0:15:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2649^0:4:0
 @q^2652^0:4:0
+@q^2653^0:4:0
 @q^2725^1:12:0
 @q^2728^1:12:0
 @q^2730^1:12:0
@@ -773,6 +786,7 @@ GoldScout-export 7^14mkmwswj7i9^32
 @q^4586^0:15:0
 @q^4602^1:0:0
 @q^4603^1:7:1
+@q^4604^1:0:0
 @q^4607^1:0:0
 @q^4634^2:15:0
 @q^4636^2:15:0
@@ -1796,8 +1810,12 @@ GoldScout-export 7^14mkmwswj7i9^32
 @a^1144^127:2
 @a^1150^47:1
 @a^1152^127:3
-@a^1508^265:3
-@a^1512^265:5,266:1
+@a^1501^246:6
+@a^1502^246:7
+@a^1508^246:2,265:4
+@a^1512^226:1,265:5,266:1
+@a^1513^226:1
+@a^1890^246:2
 @a^2554^234:1,253:2,254:1,272:1
 @a^2555^186:1,253:1,254:1,272:1,273:1,292:1,293:3
 @a^2556^272:1,273:1,291:1,293:1
@@ -1949,8 +1967,11 @@ GoldScout-export 7^14mkmwswj7i9^32
 @a^270667^249:1,269:2
 @a^278382^147:2
 @a^278384^167:2
-@t^1508^3:40
-@t^1512^5:124
+@t^1501^5:127
+@t^1502^7:146
+@t^1508^6:110
+@t^1512^6:143
+@t^1890^2:53
 @t^5425^1:41
 @t^5616^2:180
 @t^5618^1:4

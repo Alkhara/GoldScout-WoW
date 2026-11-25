@@ -1,4 +1,4 @@
-GoldScout-export 7^f4qt28j9yr8l^16
+GoldScout-export 7^f4qt28j9yr8l^17
 92^7^0^39^40^1418^0.2539^0.5333^7^Rock Elemental^4553:6:6,4627:3:3,4784:3:3,7848:3:3,7912:1:2^
 1082^1^0^39^39^1435^0.5344^0.5464^1^Sawtooth Crocolisk^770:1:1^
 1096^2^0^35^36^1434^0.4253^0.1873^2^Venture Co. Geologist^1630:1:1,3771:1:1,9856:1:1^
@@ -86,6 +86,8 @@ GoldScout-export 7^f4qt28j9yr8l^16
 8015^1^0^40^40^1440^0.5929^0.5993^1^Ashenvale Sentinel^^
 8095^2^0^0^0^0^0.0000^0.0000^0^^1702:1:1,8623:1:1^
 8127^1^0^0^0^0^0.0000^0.0000^0^^9639:1:1^
+250873^8^0^1^1^2521^0.4476^0.2535^8^Juvenile Vuldren^1378:1:1,2654:1:1,2672:1:1,4865:3:3,7073:2:2,7074:4:4^
+251169^8^0^1^1^2521^0.4637^0.2622^8^Pesky Cirrusfly^1378:1:1,2210:1:1,251927:3:3,251928:5:5^
 255851^19^0^38^39^2548^0.7178^0.3067^19^Mature Paletusk^769:10:10,2295:5:5,3403:5:5,7435:1:1,268632:7:7^
 255892^1^0^42^42^2548^0.6511^0.2040^1^Bonegnaw^^
 256795^9^0^42^43^2548^0.2909^0.4129^9^Twilight Fanatic^4338:2:3,5431:1:1,6438:1:1,8749:1:1^
@@ -135,6 +137,7 @@ GoldScout-export 7^f4qt28j9yr8l^16
 @i^769^Chunk of Boar Meat
 @i^770^Pointy Crocolisk Tooth
 @i^1074^Hard Spider Leg Tip
+@i^1378^Frayed Pants
 @i^1464^Buzzard Talon
 @i^1520^Troll Sweat
 @i^1613^Spiritchaser Staff of Agility
@@ -143,9 +146,12 @@ GoldScout-export 7^f4qt28j9yr8l^16
 @i^1688^Long Soft Tail
 @i^1702^Intact Basilisk Spine
 @i^1708^Sweet Nectar
+@i^2210^Battered Buckler
 @i^2295^Large Boar Tusk
 @i^2459^Swiftness Potion
 @i^2592^Wool Cloth
+@i^2654^Flimsy Chain Pants
+@i^2672^Stringy Wolf Meat
 @i^2738^Green Hills of Stranglethorn - Page 14
 @i^3403^Ivory Boar Tusk
 @i^3404^Buzzard Wing
@@ -180,6 +186,7 @@ GoldScout-export 7^f4qt28j9yr8l^16
 @i^4628^Bracers of Rock Binding
 @i^4784^Lifeless Stone
 @i^4847^Lotwil's Shackles of Elemental Binding
+@i^4865^Ruined Pelt
 @i^5116^Long Tail Feather
 @i^5215^Ember Wand of Spirit
 @i^5429^A Pretty Rock
@@ -194,6 +201,8 @@ GoldScout-export 7^f4qt28j9yr8l^16
 @i^6438^Dull Elemental Bracer
 @i^6826^Brilliant Scale
 @i^7067^Elemental Earth
+@i^7073^Broken Fang
+@i^7074^Chipped Claw
 @i^7430^Twilight Robe of the Sorcerer
 @i^7432^Twilight Cowl of the Channeler
 @i^7434^Twilight Boots of the Hierophant
@@ -271,6 +280,8 @@ GoldScout-export 7^f4qt28j9yr8l^16
 @i^248709^Waylaid Crate: Expert Ingots
 @i^248710^Waylaid Crate: Expert Parts
 @i^251399^Plans: Sentinel's Boots
+@i^251927^Chipped Cirrusfly Stinger
+@i^251928^Torn Insect Wing
 @i^252918^Pattern: Stalker's Mail Gauntlets
 @i^254048^Pattern: Radiant Cord
 @i^262889^Sealed Expert's Writ
@@ -300,6 +311,7 @@ GoldScout-export 7^f4qt28j9yr8l^16
 @q^769^1:7:1
 @q^770^0:15:0
 @q^1074^0:15:0
+@q^1378^0:4:0
 @q^1464^0:15:0
 @q^1520^0:15:0
 @q^1613^2:2:0
@@ -308,9 +320,12 @@ GoldScout-export 7^f4qt28j9yr8l^16
 @q^1688^0:15:0
 @q^1702^0:15:0
 @q^1708^1:0:0
+@q^2210^0:4:0
 @q^2295^0:15:0
 @q^2459^1:0:0
 @q^2592^1:7:1
+@q^2654^0:4:0
+@q^2672^1:7:1
 @q^2738^1:12:0
 @q^3403^0:15:0
 @q^3404^1:7:1
@@ -345,6 +360,7 @@ GoldScout-export 7^f4qt28j9yr8l^16
 @q^4628^1:12:0
 @q^4784^0:15:0
 @q^4847^1:12:0
+@q^4865^0:15:0
 @q^5116^1:7:1
 @q^5215^2:2:0
 @q^5429^0:15:0
@@ -359,6 +375,8 @@ GoldScout-export 7^f4qt28j9yr8l^16
 @q^6438^0:15:0
 @q^6826^0:15:0
 @q^7067^1:7:1
+@q^7073^0:15:0
+@q^7074^0:15:0
 @q^7430^2:4:0
 @q^7432^2:4:0
 @q^7434^2:4:0
@@ -436,6 +454,8 @@ GoldScout-export 7^f4qt28j9yr8l^16
 @q^248709^2:0:1
 @q^248710^2:0:1
 @q^251399^3:9:0
+@q^251927^0:15:0
+@q^251928^0:15:0
 @q^252918^3:9:0
 @q^254048^3:9:0
 @q^262889^3:0:0
@@ -470,6 +490,7 @@ GoldScout-export 7^f4qt28j9yr8l^16
 @m^1440^Ashenvale
 @m^1444^Feralas
 @m^1446^Tanaris
+@m^2521^Zephras Isle
 @m^2548^Riverglades
 @c^118^
 @c^724^
@@ -1421,6 +1442,8 @@ GoldScout-export 7^f4qt28j9yr8l^16
 @a^7767^287:1
 @a^7768^246:2,247:2,266:6,286:4
 @a^8015^231:1
+@a^250873^89:2,108:4,109:2
+@a^251169^109:8
 @a^255851^113:2,115:1,116:2,133:3,134:11
 @a^255892^93:1
 @a^256795^145:2,165:7
@@ -1452,4 +1475,6 @@ GoldScout-export 7^f4qt28j9yr8l^16
 @a^266862^113:2
 @a^268831^154:7,155:1,174:1,175:1
 @t^5308^1:47
+@t^250873^7:80
+@t^251169^8:88
 @l^0^enUS

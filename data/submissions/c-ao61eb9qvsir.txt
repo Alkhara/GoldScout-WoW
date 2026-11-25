@@ -1,4 +1,4 @@
-GoldScout-export 5^ao61eb9qvsir^32
+GoldScout-export 5^ao61eb9qvsir^33
 681^1^0^30^30^1434^0.3496^0.1680^1^Young Stranglethorn Tiger^1686:1:1,12202:1:1^
 686^3^0^35^35^1434^0.3321^0.2487^3^Lashtail Raptor^3685:1:1,4461:1:1,12184:1:1,248694:1:1^
 1085^1^0^34^35^1434^0.3404^0.1803^1^Elder Stranglethorn Tiger^1687:1:1,12202:1:1^
@@ -74,7 +74,7 @@ GoldScout-export 5^ao61eb9qvsir^32
 2349^1^0^24^25^1424^0.6423^0.4569^1^Giant Moss Creeper^4428:1:1^
 2351^1^0^21^22^1424^0.5780^0.2329^1^Gray Bear^^
 2354^1^0^22^23^1424^0.3970^0.4306^1^Vicious Gray Bear^3702:1:1,3730:1:1^
-2356^1^0^25^25^1424^0.7180^0.5178^1^Elder Gray Bear^2940:1:1,3702:1:1^
+2356^1^0^25^26^1424^0.7180^0.5178^1^Elder Gray Bear^2940:1:1,3702:1:1^
 2358^37^0^32^33^1416^0.2357^0.5720^37^Dalaran Summoner^1707:5:5,1708:1:1,2592:3:5,3714:15:15,3745:19:19,4306:8:14^
 2359^36^0^32^33^1416^0.2337^0.5549^36^Elemental Slave^2838:8:13,3715:8:8,3864:1:1,4553:11:11,4784:17:17,5741:2:8,7067:9:9,8150:10:10,9847:1:1,248687:1:1^
 2360^3^0^22^23^1424^0.3511^0.4112^3^Hillsbrad Farmhand^3692:1:1,4306:1:1^
@@ -577,6 +577,7 @@ GoldScout-export 5^ao61eb9qvsir^32
 @i^6302^Delicate Insect Wing
 @i^6303^Raw Slitherskin Mackerel
 @i^6308^Raw Bristle Whisker Catfish
+@i^6309^17 Pound Catfish
 @i^6362^Raw Rockscale Cod
 @i^6375^Formula: Enchant Bracer - Lesser Spirit
 @i^6438^Dull Elemental Bracer
@@ -654,6 +655,9 @@ GoldScout-export 5^ao61eb9qvsir^32
 @i^21071^Raw Sagefish
 @i^21113^Watertight Trunk
 @i^21114^Rumsey Rum Dark
+@i^21150^Iron Bound Trunk
+@i^21151^Rumsey Rum Black Label
+@i^21153^Raw Greater Sagefish
 @i^211784^Scroll: WUBBA WUBBA
 @i^211785^Scroll: CWAL
 @i^211853^Scroll: VOCE WELL
@@ -958,6 +962,7 @@ GoldScout-export 5^ao61eb9qvsir^32
 @q^6302^0:15:0
 @q^6303^1:7:1
 @q^6308^1:7:1
+@q^6309^1:15:0
 @q^6362^1:7:1
 @q^6375^2:9:0
 @q^6438^0:15:0
@@ -1035,6 +1040,9 @@ GoldScout-export 5^ao61eb9qvsir^32
 @q^21071^1:7:1
 @q^21113^1:15:0
 @q^21114^1:0:0
+@q^21150^1:15:0
+@q^21151^1:0:0
+@q^21153^1:7:1
 @q^211784^1:0:0
 @q^211785^1:0:0
 @q^211853^1:0:0
@@ -2746,6 +2754,7 @@ GoldScout-export 5^ao61eb9qvsir^32
 @a^271961^224:1,244:5
 @a^275437^253:4,273:4
 @a^276020^196:1
+@f^1416^0^40^200^6309:1:1,8365:4:4,21150:1:1,21151:1:1,21153:33:33^47:6,67:5,87:7,126:5,146:4,165:5,184:8
 @f^1424^0^61^186^3820:1:3,6289:1:1,21071:52:52,21113:5:5,21114:2:4^53:8,113:20,132:7,153:6,172:10,191:9,231:1
 @f^1442^0^14^197^6289:8:8,6308:6:6^249:14
 @l^0^enUS

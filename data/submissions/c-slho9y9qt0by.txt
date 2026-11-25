@@ -1,4 +1,4 @@
-GoldScout-export 7^slho9y9qt0by^35
+GoldScout-export 7^slho9y9qt0by^36
 36^17^0^11^12^1436^0.3842^0.3983^17^Golem des moissons^732:10:10,814:4:4,816:1:1,818:1:1,1274:3:3,1495:1:1,1503:1:1,1510:1:1,1737:1:1,4361:1:1,4363:1:1,6558:1:1,255007:7:7,255010:2:2^
 95^28^0^11^12^1436^0.4825^0.4484^28^Contrebandière défias^829:7:7,858:1:1,1504:1:1,1733:1:1,2455:1:1,2589:12:19,3374:1:1,7997:2:2,8180:1:1,9760:1:1^
 113^16^0^5^6^1429^0.4156^0.8718^16^Sanglier Brocheroc^769:11:11,771:5:5,3171:4:4,286215:4:4^
@@ -51,6 +51,7 @@ GoldScout-export 7^slho9y9qt0by^35
 3781^3^0^23^24^1440^0.3386^0.6670^3^Forme-bois Sombretaillis^2219:1:1^
 3783^4^0^22^23^1440^0.3357^0.6671^4^Invocateur de pluie Sombretaillis^789:1:1,1206:1:1,7361:1:1^
 3809^7^0^21^22^1440^0.4762^0.5367^7^Ours d'Ashenvale^2940:2:2,3702:1:1,4410:1:1,11406:1:1,11407:1:1,250182:1:1^
+3917^4^0^23^25^1440^0.5118^0.6964^4^Elémentaire d'eau souillé^5447:1:1,5448:1:1,5451:1:1,9451:2:3,12220:2:2^
 3943^1^0^22^22^1440^0.0720^0.1424^1^Ruuzel^5445:1:1,5523:1:1,17057:1:1^
 3944^6^0^20^21^1440^0.0665^0.1261^6^Prêtresse Irequeue^5490:5:5,5523:1:1,6308:1:3,17057:2:2^
 4012^20^0^21^22^1442^0.5266^0.4385^20^Wyverne Aile-fière^5135:2:2,5136:12:12,5635:1:1,5808:7:7,15511:1:1,277917:4:4^
@@ -255,6 +256,9 @@ GoldScout-export 7^slho9y9qt0by^35
 @i^5385^Patte de clampant
 @i^5412^Oeil de batteur
 @i^5445^Anneau de Zoram
+@i^5447^Bracelet élémentaire endommagé
+@i^5448^Bracelet élémentaire cassé
+@i^5451^Bracelet élémentaire brisé
 @i^5469^Viande de trotteur
 @i^5490^Tête d'Irequeue
 @i^5523^Petite palourde spiralée
@@ -282,6 +286,7 @@ GoldScout-export 7^slho9y9qt0by^35
 @i^7997^Masque rouge de Défias
 @i^8178^Epée d'entraînement du singe
 @i^8180^Arc de chasse
+@i^9451^Eau bouillonnante
 @i^9746^Gants simples
 @i^9747^Pantalon simple de protection contre les arcanes
 @i^9759^Bottes de cadet
@@ -289,6 +294,7 @@ GoldScout-export 7^slho9y9qt0by^35
 @i^9789^Cuissards d'écumeur de guérison
 @i^11406^Carcasse pourrie d'ours
 @i^11407^Peau d'ours déchirée
+@i^12220^Bracelets élémentaires intacts
 @i^12237^Belle chair de crabe
 @i^12238^Mérou de Sombrivage
 @i^14086^Sandales perlées
@@ -490,6 +496,9 @@ GoldScout-export 7^slho9y9qt0by^35
 @q^5385^1:12:0
 @q^5412^1:12:0
 @q^5445^1:12:0
+@q^5447^0:15:0
+@q^5448^0:15:0
+@q^5451^0:15:0
 @q^5469^1:7:1
 @q^5490^1:12:0
 @q^5523^1:7:0
@@ -517,6 +526,7 @@ GoldScout-export 7^slho9y9qt0by^35
 @q^7997^0:4:0
 @q^8178^2:2:0
 @q^8180^2:2:0
+@q^9451^1:0:0
 @q^9746^1:4:0
 @q^9747^2:4:0
 @q^9759^1:4:0
@@ -524,6 +534,7 @@ GoldScout-export 7^slho9y9qt0by^35
 @q^9789^2:4:0
 @q^11406^0:15:0
 @q^11407^1:12:0
+@q^12220^1:12:0
 @q^12237^1:12:0
 @q^12238^1:0:0
 @q^14086^1:4:0
@@ -2068,6 +2079,7 @@ GoldScout-export 7^slho9y9qt0by^35
 @a^3781^266:3
 @a^3783^266:4
 @a^3809^190:4,230:1,247:1,268:1
+@a^3917^270:3,290:1
 @a^3943^41:1
 @a^3944^41:6
 @a^4012^170:14,171:2,190:4

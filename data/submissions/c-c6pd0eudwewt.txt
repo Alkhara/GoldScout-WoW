@@ -1,7 +1,9 @@
-GoldScout-export 7^c6pd0eudwewt^6
-705^8^0^1^1^1426^0.2913^0.7351^8^Ragged Young Wolf^1380:1:1,7073:5:5,7074:4:4^
-708^1^0^3^3^1426^0.2882^0.7305^1^Small Crag Boar^117:1:1^
-724^1^0^2^2^1426^0.2956^0.7449^1^Burly Rockjaw Trogg^^
+GoldScout-export 7^c6pd0eudwewt^7
+704^2^0^2^2^1426^0.2959^0.7480^2^Ragged Timber Wolf^4865:2:2,7074:1:1^
+705^53^0^1^1^1426^0.2892^0.7380^53^Ragged Young Wolf^1364:1:1,1380:2:2,2211:1:1,2651:1:1,2652:1:1,2653:1:1,2656:2:2,3363:1:1,3365:1:1,4865:18:18,5572:1:1,7073:22:22,7074:22:22^
+707^16^0^1^2^1426^0.3111^0.7523^16^Rockjaw Trogg^117:3:3,159:4:4,1367:1:1,1368:1:1,2211:1:1,2589:5:5,2649:1:1,3363:1:1,3365:1:1^
+708^5^0^3^3^1426^0.2791^0.7239^5^Small Crag Boar^117:2:2,1369:1:1,1377:1:1,4865:2:2,7098:2:2^
+724^14^0^2^2^1426^0.2950^0.7482^14^Burly Rockjaw Trogg^159:2:2,1369:1:1,1370:1:1,2211:1:1,2589:1:1,2654:1:1^
 1211^4^0^8^10^1426^0.2542^0.4105^4^Leper Gnome^159:1:1,1429:1:1,2589:3:6,4540:1:1^
 2354^2^0^22^23^1424^0.5386^0.4814^2^Vicious Gray Bear^2940:2:2,3730:1:1^
 2384^1^0^24^24^1424^0.5250^0.4664^1^Starving Mountain Lion^3731:1:1^
@@ -80,6 +82,12 @@ GoldScout-export 7^c6pd0eudwewt^6
 @i^929^Healing Potion
 @i^1206^Moss Agate
 @i^1210^Shadowgem
+@i^1364^Ragged Leather Vest
+@i^1367^Ragged Leather Boots
+@i^1368^Ragged Leather Gloves
+@i^1369^Ragged Leather Belt
+@i^1370^Ragged Leather Bracers
+@i^1377^Frayed Gloves
 @i^1380^Frayed Robe
 @i^1429^Patchwork Cloak
 @i^1529^Jade
@@ -89,10 +97,17 @@ GoldScout-export 7^c6pd0eudwewt^6
 @i^1710^Greater Healing Potion
 @i^1711^Scroll of Stamina II
 @i^1780^Cross-stitched Sandals
+@i^2211^Bent Large Shield
 @i^2290^Scroll of Intellect II
 @i^2295^Large Boar Tusk
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2649^Flimsy Chain Belt
+@i^2651^Flimsy Chain Bracers
+@i^2652^Flimsy Chain Cloak
+@i^2653^Flimsy Chain Gloves
+@i^2654^Flimsy Chain Pants
+@i^2656^Flimsy Chain Vest
 @i^2677^Boar Ribs
 @i^2766^Deft Stiletto
 @i^2785^Stiff Recurve Bow
@@ -100,6 +115,8 @@ GoldScout-export 7^c6pd0eudwewt^6
 @i^2940^Bloody Bear Paw
 @i^3172^Boar Intestines
 @i^3301^Sharp Canine
+@i^3363^Frayed Belt
+@i^3365^Frayed Bracers
 @i^3381^Cross-stitched Bracers
 @i^3385^Lesser Mana Potion
 @i^3402^Soft Patch of Fur
@@ -129,7 +146,9 @@ GoldScout-export 7^c6pd0eudwewt^6
 @i^4614^Pendant of Myzrael
 @i^4633^Heavy Bronze Lockbox
 @i^4634^Iron Lockbox
+@i^4865^Ruined Pelt
 @i^5134^Small Furry Paw
+@i^5572^Small Green Pouch
 @i^5637^Large Fang
 @i^5792^Razorflank's Medallion
 @i^6444^Forked Tongue
@@ -141,6 +160,7 @@ GoldScout-export 7^c6pd0eudwewt^6
 @i^6893^Workshop Key
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
+@i^7098^Splintered Tusk
 @i^7438^Twilight Belt of the Sorcerer
 @i^7447^Sentinel Bracers of the Elder
 @i^7448^Sentinel Girdle of the Beast
@@ -194,6 +214,12 @@ GoldScout-export 7^c6pd0eudwewt^6
 @q^929^1:0:0
 @q^1206^2:7:1
 @q^1210^2:7:1
+@q^1364^0:4:0
+@q^1367^0:4:0
+@q^1368^0:4:0
+@q^1369^0:4:0
+@q^1370^0:4:0
+@q^1377^0:4:0
 @q^1380^0:4:0
 @q^1429^0:4:0
 @q^1529^2:7:1
@@ -203,10 +229,17 @@ GoldScout-export 7^c6pd0eudwewt^6
 @q^1710^1:0:0
 @q^1711^1:0:0
 @q^1780^0:4:0
+@q^2211^0:4:0
 @q^2290^1:0:0
 @q^2295^0:15:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2649^0:4:0
+@q^2651^0:4:0
+@q^2652^0:4:0
+@q^2653^0:4:0
+@q^2654^0:4:0
+@q^2656^0:4:0
 @q^2677^1:7:1
 @q^2766^0:2:0
 @q^2785^0:2:0
@@ -214,6 +247,8 @@ GoldScout-export 7^c6pd0eudwewt^6
 @q^2940^0:15:0
 @q^3172^1:7:1
 @q^3301^0:15:0
+@q^3363^0:4:0
+@q^3365^0:4:0
 @q^3381^0:4:0
 @q^3385^1:0:0
 @q^3402^0:15:0
@@ -243,7 +278,9 @@ GoldScout-export 7^c6pd0eudwewt^6
 @q^4614^2:4:0
 @q^4633^2:15:0
 @q^4634^2:15:0
+@q^4865^0:15:0
 @q^5134^1:12:0
+@q^5572^1:1:0
 @q^5637^1:7:1
 @q^5792^1:12:0
 @q^6444^0:15:0
@@ -255,6 +292,7 @@ GoldScout-export 7^c6pd0eudwewt^6
 @q^6893^1:13:0
 @q^7073^0:15:0
 @q^7074^0:15:0
+@q^7098^0:15:0
 @q^7438^2:4:0
 @q^7447^2:4:0
 @q^7448^2:4:0
@@ -825,9 +863,11 @@ GoldScout-export 7^c6pd0eudwewt^6
 @c^285277^
 @c^285278^
 @c^286152^
-@a^705^285:8
-@a^708^285:1
-@a^724^285:1
+@a^704^285:2
+@a^705^285:44,286:3,305:5,306:1
+@a^707^286:6,305:2,306:8
+@a^708^285:5
+@a^724^285:6,286:1,305:2,306:5
 @a^1211^144:1,164:1,165:2
 @a^2354^190:2
 @a^2384^190:1
@@ -839,4 +879,9 @@ GoldScout-export 7^c6pd0eudwewt^6
 @a^6213^208:1
 @a^6221^208:1
 @a^6231^208:1
+@t^704^2:30
+@t^705^44:567
+@t^707^16:192
+@t^708^4:216
+@t^724^13:193
 @l^0^enUS

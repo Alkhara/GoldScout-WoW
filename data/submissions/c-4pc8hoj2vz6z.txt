@@ -1,4 +1,4 @@
-GoldScout-export 7^4pc8hoj2vz6z^61
+GoldScout-export 7^4pc8hoj2vz6z^62
 436^1^0^22^23^1433^0.6096^0.5483^1^Blackrock Shadowcaster^1778:1:1^
 589^1^0^14^15^1436^0.4439^0.6843^1^Defias Pillager^2589:1:3^
 705^11^0^1^1^1426^0.2896^0.7326^11^Ragged Young Wolf^750:8:8,1367:2:2,2211:1:1,2653:1:1,4865:2:2,7073:2:2,7074:7:7^
@@ -50,6 +50,7 @@ GoldScout-export 7^4pc8hoj2vz6z^61
 2031^14^0^1^1^1438^0.6222^0.4205^14^Young Nightsaber^1364:1:1,2650:1:1,2651:1:1,2653:1:1,4865:7:7,7073:4:4,7074:5:5^
 2032^7^0^2^2^1438^0.5944^0.3640^7^Mangy Nightsaber^1364:2:2,4865:2:2,7073:6:6,7074:2:2^
 2042^5^0^5^6^1438^0.6686^0.5372^5^Nightsaber^3409:3:3,4813:1:1,280087:2:2^
+2185^4^0^13^14^1439^0.3950^0.2963^4^Darkshore Thresher^3312:1:1,5412:2:2,5523:2:2,6361:1:1^
 2202^2^0^13^13^1439^0.3637^0.4783^2^Greymist Coastrunner^^
 2231^6^0^9^10^1439^0.3634^0.4707^6^Pygmy Tide Crawler^2674:3:3,5385:4:4,5506:1:1,5523:2:2^
 2557^1^0^35^35^1417^0.6764^0.8136^1^Witherbark Shadow Hunter^^
@@ -405,6 +406,7 @@ GoldScout-export 7^4pc8hoj2vz6z^61
 @i^3172^Boar Intestines
 @i^3214^Warrior's Bracers
 @i^3297^Fel Moss
+@i^3312^Ceremonial Leather Bracers
 @i^3370^Patchwork Belt
 @i^3404^Buzzard Wing
 @i^3409^Nightsaber Fang
@@ -466,6 +468,7 @@ GoldScout-export 7^4pc8hoj2vz6z^61
 @i^5166^Webwood Venom Sac
 @i^5168^Timberling Seed
 @i^5385^Crawler Leg
+@i^5412^Thresher Eye
 @i^5471^Stag Meat
 @i^5506^Beady Eye Stalk
 @i^5523^Small Barnacled Clam
@@ -474,6 +477,7 @@ GoldScout-export 7^4pc8hoj2vz6z^61
 @i^6149^Greater Mana Potion
 @i^6212^Head of Jammal'an
 @i^6300^Husk Fragment
+@i^6361^Raw Rainbow Fin Albacore
 @i^6444^Forked Tongue
 @i^6530^Nightcrawlers
 @i^6826^Brilliant Scale
@@ -733,6 +737,7 @@ GoldScout-export 7^4pc8hoj2vz6z^61
 @q^3172^1:7:1
 @q^3214^1:4:0
 @q^3297^1:12:0
+@q^3312^1:4:0
 @q^3370^0:4:0
 @q^3404^1:7:1
 @q^3409^1:12:0
@@ -794,6 +799,7 @@ GoldScout-export 7^4pc8hoj2vz6z^61
 @q^5166^1:12:0
 @q^5168^1:12:0
 @q^5385^1:12:0
+@q^5412^1:12:0
 @q^5471^1:7:1
 @q^5506^0:15:0
 @q^5523^1:7:0
@@ -802,6 +808,7 @@ GoldScout-export 7^4pc8hoj2vz6z^61
 @q^6149^1:0:0
 @q^6212^1:12:0
 @q^6300^0:15:0
+@q^6361^1:7:1
 @q^6444^0:15:0
 @q^6530^1:0:0
 @q^6826^0:15:0
@@ -2546,6 +2553,7 @@ GoldScout-export 7^4pc8hoj2vz6z^61
 @a^2031^172:14
 @a^2032^151:6,152:1
 @a^2042^213:5
+@a^2185^107:2,108:1,127:1
 @a^2202^187:2
 @a^2231^187:6
 @a^2557^333:1
@@ -2696,6 +2704,7 @@ GoldScout-export 7^4pc8hoj2vz6z^61
 @a^271587^187:1
 @a^276003^171:1
 @a^276009^171:1
+@t^2185^3:179
 @t^5991^1:2
 @t^10158^1:111
 @l^0^enUS
