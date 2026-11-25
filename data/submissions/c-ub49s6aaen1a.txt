@@ -1,4 +1,7 @@
-GoldScout-export 6^ub49s6aaen1a^15
+GoldScout-export 6^ub49s6aaen1a^16
+757^1^0^35^35^1435^0.5068^0.3276^1^Lost One Fisherman^258530:1:1^
+767^2^0^37^37^1435^0.5297^0.4082^2^Swamp Jaguar^1686:1:1,1688:1:1^
+1082^1^0^39^39^1435^0.5435^0.3684^1^Sawtooth Crocolisk^770:1:1,3667:1:1,6169:1:1,12037:1:1^
 2505^15^0^49^50^1425^0.7746^0.6723^15^Saltwater Snapjaw^3712:8:8,4555:8:8,4556:10:10,4603:1:2,7973:6:6,248699:1:1^
 2554^10^0^32^33^1417^0.6858^0.6527^10^Witherbark Axe Thrower^1708:1:1,3804:1:1,4306:3:4^
 2555^8^0^33^34^1417^0.6943^0.6849^8^Witherbark Witch Doctor^1708:1:1,4306:4:6,216483:1:1^
@@ -109,6 +112,7 @@ GoldScout-export 6^ub49s6aaen1a^15
 @i^3402^Soft Patch of Fur
 @i^3403^Ivory Boar Tusk
 @i^3404^Buzzard Wing
+@i^3667^Tender Crocolisk Meat
 @i^3671^Lifeless Skull
 @i^3685^Raptor Egg
 @i^3712^Turtle Meat
@@ -154,6 +158,7 @@ GoldScout-export 6^ub49s6aaen1a^15
 @i^5636^Delicate Feather
 @i^5637^Large Fang
 @i^5829^Razor-sharp Beak
+@i^6169^Unprepared Sawtooth Flank
 @i^6359^Firefin Snapper
 @i^6362^Raw Rockscale Cod
 @i^6438^Dull Elemental Bracer
@@ -207,6 +212,7 @@ GoldScout-export 6^ub49s6aaen1a^15
 @i^248692^Waylaid Crate: Expert Ore
 @i^248693^Waylaid Crate: Expert Textiles
 @i^248699^Waylaid Crate: Artisan Curiosities
+@i^258530^Lucky Lure
 @i^262889^Sealed Expert's Writ
 @i^263972^Woodworker's Axe
 @i^265357^Snargl's Snout
@@ -258,6 +264,7 @@ GoldScout-export 6^ub49s6aaen1a^15
 @q^3402^0:15:0
 @q^3403^0:15:0
 @q^3404^1:7:1
+@q^3667^1:7:1
 @q^3671^0:15:0
 @q^3685^1:7:1
 @q^3712^1:7:1
@@ -303,6 +310,7 @@ GoldScout-export 6^ub49s6aaen1a^15
 @q^5636^0:15:0
 @q^5637^1:7:1
 @q^5829^0:15:0
+@q^6169^1:12:0
 @q^6359^1:7:1
 @q^6362^1:7:1
 @q^6438^0:15:0
@@ -356,6 +364,7 @@ GoldScout-export 6^ub49s6aaen1a^15
 @q^248692^1:0:1
 @q^248693^1:0:1
 @q^248699^1:0:1
+@q^258530^1:12:0
 @q^262889^3:0:0
 @q^263972^1:12:0
 @q^265357^1:12:0
@@ -396,9 +405,13 @@ GoldScout-export 6^ub49s6aaen1a^15
 @m^1415^Eastern Kingdoms
 @m^1417^Arathi Highlands
 @m^1425^The Hinterlands
+@m^1435^Swamp of Sorrows
 @m^1446^Tanaris
 @m^1447^Azshara
 @m^2548^Riverglades
+@a^757^130:1
+@a^767^150:1,170:1
+@a^1082^150:1
 @a^2505^235:2,236:1,255:2,275:3,294:2,295:4,335:1
 @a^2554^253:1,254:5,274:1,292:2,293:1
 @a^2555^253:1,254:2,274:1,293:4
