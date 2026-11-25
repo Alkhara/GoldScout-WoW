@@ -1,4 +1,4 @@
-GoldScout-export 7^twlf567tc2ll^14
+GoldScout-export 7^twlf567tc2ll^15
 589^2^0^14^15^1436^0.4358^0.6797^2^Defias Pillager^1512:1:1,2589:1:2^
 598^47^0^0^0^0^0.0000^0.0000^0^^414:1:1,1179:2:2,1740:1:1,1743:1:1,1787:1:1,1791:1:1,1816:1:1,1930:1:1,2216:1:1,2589:9:16,2592:11:13,2771:1:3,2838:1:1,3012:1:1,7997:2:2,9789:1:1^
 622^6^0^0^0^0^0.0000^0.0000^0^^858:1:1,1791:1:1,2589:1:4,2592:1:4,2780:1:1^
@@ -40,6 +40,13 @@ GoldScout-export 7^twlf567tc2ll^14
 1833^7^0^54^55^1422^0.5121^0.3762^7^Scarlet Knight^14047:2:3^
 1835^1^0^53^54^1422^0.4076^0.5107^1^Scarlet Invoker^14047:1:1^
 1884^5^0^54^56^1422^0.4853^0.3237^5^Scarlet Lumberjack^8932:1:1,14047:1:2^
+3100^2^0^8^9^1411^0.4542^0.1993^2^Elder Mottled Boar^769:1:1,3171:1:1^
+3115^2^0^8^8^1411^0.4977^0.2830^2^Dustwind Harpy^117:1:1,250976:1:1^
+3117^11^0^9^10^1411^0.5335^0.2364^11^Dustwind Savage^117:1:1,1422:1:1,2589:5:6,4775:2:2^
+3118^7^0^10^11^1411^0.5218^0.2074^7^Dustwind Storm Witch^117:1:1,2212:1:1,2589:2:4,3013:1:1,3375:1:1,4775:1:1,277661:1:1^
+3127^8^0^9^10^1411^0.4125^0.1903^8^Venomtail Scorpid^2075:1:1,4674:1:1,4867:2:2,4872:2:2,4886:4:4,5466:4:4,15005:1:1^
+3130^5^0^9^10^1411^0.4052^0.2951^5^Thunder Lizard^4879:3:3,4880:2:2,14098:1:1^
+3131^5^0^10^11^1411^0.4126^0.2481^5^Lightning Hide^2075:1:1,4879:4:4,277665:5:5^
 3586^1^0^0^0^0^0.0000^0.0000^0^^1817:1:1,5444:1:1^
 3947^13^0^0^0^0^0.0000^0.0000^0^^1179:1:1,1210:1:1,1792:1:1,2216:1:1,2287:2:2,2589:1:1,2592:3:10^
 4416^27^0^0^0^0^0.0000^0.0000^0^^414:1:1,1179:1:1,1741:1:1,1770:2:2,2589:4:8,2592:8:12,2771:2:6,2838:1:1,2984:1:1,5972:1:1^
@@ -169,7 +176,9 @@ GoldScout-export 7^twlf567tc2ll^14
 249053^1^0^56^57^2482^0.2427^0.7374^1^Hyjal Owl^12207:1:1^
 249229^1^0^58^58^2482^0.6140^0.4177^1^Felguard Sentinel^8948:1:2^
 264850^1^0^52^60^1447^0.5676^0.2172^1^Hawk^^
+@i^117^Tough Jerky
 @i^414^Dalaran Sharp
+@i^769^Chunk of Boar Meat
 @i^814^Flask of Oil
 @i^858^Lesser Healing Potion
 @i^872^Rockslicer
@@ -177,6 +186,7 @@ GoldScout-export 7^twlf567tc2ll^14
 @i^1180^Scroll of Stamina
 @i^1206^Moss Agate
 @i^1210^Shadowgem
+@i^1422^Worn Leather Gloves
 @i^1512^Crude Battle Axe
 @i^1740^Laced Mail Bracers
 @i^1741^Laced Cloak
@@ -194,6 +204,8 @@ GoldScout-export 7^twlf567tc2ll^14
 @i^1937^Buzz Saw
 @i^1944^Metalworking Gloves
 @i^1951^Blackwater Cutlass
+@i^2075^Priest's Mace of Magic
+@i^2212^Cracked Buckler
 @i^2216^Simple Buckler
 @i^2287^Haunch of Meat
 @i^2589^Linen Cloth
@@ -203,6 +215,9 @@ GoldScout-export 7^twlf567tc2ll^14
 @i^2838^Heavy Stone
 @i^2984^Seer's Gloves
 @i^3012^Scroll of Agility
+@i^3013^Scroll of Protection
+@i^3171^Broken Boar Tusk
+@i^3375^Calico Bracers
 @i^3376^Canvas Belt
 @i^3377^Canvas Bracers
 @i^3669^Gelatinous Goo
@@ -224,9 +239,16 @@ GoldScout-export 7^twlf567tc2ll^14
 @i^4554^Shiny Polished Stone
 @i^4583^Thick Furry Mane
 @i^4584^Large Trophy Paw
+@i^4674^Tribal Cloak
 @i^4698^Seer's Mantle
+@i^4775^Cracked Bill
 @i^4787^Burning Pitch
 @i^4791^Enchanted Water
+@i^4867^Broken Scorpid Leg
+@i^4872^Dry Scorpid Eye
+@i^4879^Squashed Rabbit Carcass
+@i^4880^Broken Spear
+@i^4886^Venomtail Poison Sac
 @i^5117^Vibrant Plume
 @i^5119^Fine Loose Hair
 @i^5120^Long Tail Hair
@@ -235,6 +257,7 @@ GoldScout-export 7^twlf567tc2ll^14
 @i^5199^Smelting Pants
 @i^5207^Opaque Wand
 @i^5444^Miner's Cape
+@i^5466^Scorpid Stinger
 @i^5471^Stag Meat
 @i^5566^Broken Antler
 @i^5758^Mithril Lockbox
@@ -323,6 +346,7 @@ GoldScout-export 7^twlf567tc2ll^14
 @i^13820^Clout Mace
 @i^13853^Slab of Carrion Worm Meat
 @i^14047^Runecloth
+@i^14098^Native Cloak
 @i^14227^Ironweb Spider Silk
 @i^14256^Felcloth
 @i^14290^Arachnidian Footpads of the Sorcerer
@@ -333,6 +357,7 @@ GoldScout-export 7^twlf567tc2ll^14
 @i^14619^Skeletal Fragments
 @i^14795^Protector Helm
 @i^14926^Lofty Gauntlets of Nature Protection
+@i^15005^Primal Bands
 @i^15170^Potent Armor of the Bandit
 @i^15291^Harpy Needler of the Boar
 @i^15420^Ironfeather
@@ -363,16 +388,21 @@ GoldScout-export 7^twlf567tc2ll^14
 @i^248684^Waylaid Crate: Apprentice Textiles
 @i^248698^Waylaid Crate: Artisan Textiles
 @i^248699^Waylaid Crate: Artisan Curiosities
+@i^250976^Recipe: Minor Spellblasting Potion
 @i^252878^Pattern: Blue Suede Pants
 @i^252929^Pattern: Supple Scorpid Belt
 @i^252935^Pattern: Supple Scorpid Sabatons
 @i^262890^Sealed Artisan's Writ
 @i^273092^Blueprint: Repair Bot
+@i^277661^Dull Storm Orb
+@i^277665^Charged Thunder Lizard Organ
 @i^277958^Putrescent Bear Organs
 @i^277959^Putrescent Wolf Organs
 @i^281016^Scroll: FORGOT HOOF THUD
 @i^284715^First Mate Band
+@q^117^1:0:0
 @q^414^1:0:0
+@q^769^1:7:1
 @q^814^1:7:1
 @q^858^1:0:0
 @q^872^3:2:0
@@ -380,6 +410,7 @@ GoldScout-export 7^twlf567tc2ll^14
 @q^1180^1:0:0
 @q^1206^2:7:1
 @q^1210^2:7:1
+@q^1422^0:4:0
 @q^1512^0:2:0
 @q^1740^0:4:0
 @q^1741^0:4:0
@@ -397,6 +428,8 @@ GoldScout-export 7^twlf567tc2ll^14
 @q^1937^3:2:0
 @q^1944^2:4:0
 @q^1951^3:2:0
+@q^2075^2:2:0
+@q^2212^0:4:0
 @q^2216^0:4:0
 @q^2287^1:0:0
 @q^2589^1:7:1
@@ -406,6 +439,9 @@ GoldScout-export 7^twlf567tc2ll^14
 @q^2838^1:7:1
 @q^2984^2:4:0
 @q^3012^1:0:0
+@q^3013^1:0:0
+@q^3171^0:15:0
+@q^3375^0:4:0
 @q^3376^0:4:0
 @q^3377^0:4:0
 @q^3669^0:15:0
@@ -427,9 +463,16 @@ GoldScout-export 7^twlf567tc2ll^14
 @q^4554^0:15:0
 @q^4583^0:15:0
 @q^4584^0:15:0
+@q^4674^1:4:0
 @q^4698^1:4:0
+@q^4775^0:15:0
 @q^4787^0:15:0
 @q^4791^1:0:0
+@q^4867^0:15:0
+@q^4872^0:15:0
+@q^4879^0:15:0
+@q^4880^0:15:0
+@q^4886^1:12:0
 @q^5117^1:12:0
 @q^5119^0:15:0
 @q^5120^0:15:0
@@ -438,6 +481,7 @@ GoldScout-export 7^twlf567tc2ll^14
 @q^5199^3:4:0
 @q^5207^2:2:0
 @q^5444^3:4:0
+@q^5466^1:7:1
 @q^5471^1:7:1
 @q^5566^0:15:0
 @q^5758^2:15:0
@@ -526,6 +570,7 @@ GoldScout-export 7^twlf567tc2ll^14
 @q^13820^0:2:0
 @q^13853^1:12:0
 @q^14047^1:7:1
+@q^14098^1:4:0
 @q^14227^1:7:1
 @q^14256^1:7:1
 @q^14290^2:4:0
@@ -536,6 +581,7 @@ GoldScout-export 7^twlf567tc2ll^14
 @q^14619^1:12:0
 @q^14795^2:4:0
 @q^14926^2:4:0
+@q^15005^1:4:0
 @q^15170^2:4:0
 @q^15291^2:2:0
 @q^15420^1:7:1
@@ -566,15 +612,19 @@ GoldScout-export 7^twlf567tc2ll^14
 @q^248684^1:0:1
 @q^248698^1:0:1
 @q^248699^1:0:1
+@q^250976^1:9:0
 @q^252878^2:9:0
 @q^252929^2:9:0
 @q^252935^2:9:0
 @q^262890^3:0:0
 @q^273092^2:9:0
+@q^277661^1:12:0
+@q^277665^1:12:0
 @q^277958^1:12:0
 @q^277959^1:12:0
 @q^281016^1:0:0
 @q^284715^3:4:0
+@m^1411^Durotar
 @m^1422^Western Plaguelands
 @m^1423^Eastern Plaguelands
 @m^1427^Searing Gorge
@@ -658,6 +708,13 @@ GoldScout-export 7^twlf567tc2ll^14
 @a^1833^129:2,151:1,170:4
 @a^1835^208:1
 @a^1884^129:5
+@a^3100^68:1,89:1
+@a^3115^109:2
+@a^3117^90:9,110:2
+@a^3118^70:1,90:6
+@a^3127^68:5,87:1,88:2
+@a^3130^108:5
+@a^3131^87:1,88:3,107:1
 @a^4472^232:2
 @a^4474^189:1,209:3
 @a^4475^189:1,209:3,229:1
@@ -783,6 +840,13 @@ GoldScout-export 7^twlf567tc2ll^14
 @a^249229^172:1
 @a^264850^91:1
 @t^589^1:2
+@t^3100^2:109
+@t^3115^1:15
+@t^3117^10:329
+@t^3118^6:143
+@t^3127^8:348
+@t^3130^5:137
+@t^3131^5:184
 @t^6520^1:43
 @t^6521^3:133
 @t^7138^1:30

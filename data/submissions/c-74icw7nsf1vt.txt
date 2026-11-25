@@ -1,4 +1,4 @@
-GoldScout-export 7^74icw7nsf1vt^1
+GoldScout-export 7^74icw7nsf1vt^2
 2252^1^0^35^35^1416^0.4999^0.6093^1^Crushridge Ogre^^
 2253^1^0^36^36^1416^0.5045^0.5331^1^Crushridge Brute^3771:1:1^
 2254^4^0^36^37^1416^0.4403^0.4721^4^Crushridge Mauler^4306:1:4^
@@ -6,21 +6,31 @@ GoldScout-export 7^74icw7nsf1vt^1
 2287^9^0^39^40^1416^0.3725^0.5253^9^Crushridge Warmonger^3771:1:1,3815:1:1,4306:2:4,6419:1:1,9844:1:1,213547:1:1^
 2417^1^0^39^39^1416^0.4173^0.4687^1^Grel'borg the Miser^3684:1:1^
 2421^1^0^40^40^1416^0.3870^0.4680^1^Muckrake^^
+2566^7^0^35^36^1417^0.5271^0.7407^7^Boulderfist Brute^1710:1:1,4306:2:4^
+2567^4^0^36^37^1417^0.5327^0.7509^4^Boulderfist Magus^4306:1:3,4338:1:1^
+2793^1^0^39^39^1417^0.5455^0.8104^1^Kor'gresh Coldrage^4525:1:1^
+@i^1710^Greater Healing Potion
 @i^3684^Perenolde Tiara
 @i^3771^Wild Hog Shank
 @i^3815^Double Mail Vest
 @i^4306^Silk Cloth
+@i^4338^Mageweave Cloth
+@i^4525^Trelane's Wand of Invocation
 @i^6419^Glyphed Mitts
 @i^9844^Conjurer's Vest of the Channeler
 @i^213547^Scroll: THAW WORDS
+@q^1710^1:0:0
 @q^3684^1:12:0
 @q^3771^1:0:0
 @q^3815^0:4:0
 @q^4306^1:7:1
+@q^4338^1:7:1
+@q^4525^1:12:0
 @q^6419^2:4:0
 @q^9844^2:4:0
 @q^213547^1:0:0
 @m^1416^Alterac Mountains
+@m^1417^Arathi Highlands
 @c^118^
 @c^724^
 @c^733^
@@ -744,4 +754,10 @@ GoldScout-export 7^74icw7nsf1vt^1
 @a^2287^187:2,207:6,227:1
 @a^2417^188:1
 @a^2421^187:1
+@a^2566^290:5,310:2
+@a^2567^290:2,310:2
+@a^2793^330:1
+@t^2566^6:212
+@t^2567^4:127
+@t^2793^1:37
 @l^0^enUS
