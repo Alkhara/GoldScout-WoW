@@ -1,4 +1,4 @@
-GoldScout-export 5^zbm9unaf3lp9^40
+GoldScout-export 5^zbm9unaf3lp9^41
 3^7^0^24^25^1431^0.2454^0.3691^7^Flesh Eater^884:1:1,887:1:1,929:1:1,4606:1:1,6530:1:1,12990:1:1^
 36^4^0^11^12^1436^0.3210^0.3459^4^Harvest Golem^732:1:1,814:1:1,1274:1:1,255007:2:2^
 117^3^0^11^12^1436^0.4143^0.2064^3^Riverpaw Gnoll^2589:1:1^
@@ -88,7 +88,7 @@ GoldScout-export 5^zbm9unaf3lp9^40
 2408^8^0^30^31^1424^0.5608^0.5099^8^Snapjaw^3712:2:3,4555:3:3,5524:4:4^
 2462^18^0^25^25^1431^0.2456^0.3644^18^Flesh Eating Worm^^
 2563^1^0^33^33^1417^0.4747^0.4936^1^Plains Creeper^878:1:1,2251:1:1,4634:1:1^
-2735^4^0^37^39^1418^0.1952^0.4780^4^Lesser Rock Elemental^4553:2:2,8150:1:1^
+2735^19^0^37^39^1418^0.1810^0.4385^19^Lesser Rock Elemental^4552:1:1,4553:6:6,4626:7:7,4784:7:7,7067:3:3,7912:4:6,8150:5:5,248710:1:1^
 2739^4^0^35^35^1418^0.5323^0.2979^4^Shadowforge Tunneler^4306:3:3,255726:2:2^
 2740^6^0^36^37^1418^0.5213^0.3180^6^Shadowforge Darkweaver^2289:1:1,4306:3:6,4616:1:1^
 2762^6^0^38^39^1417^0.5036^0.5092^6^Thundering Exile^4480:6:6,7069:1:1,15261:1:1^
@@ -145,6 +145,7 @@ GoldScout-export 5^zbm9unaf3lp9^40
 11578^2^0^32^33^1443^0.3203^0.7919^2^Whirlwind Shredder^^
 12922^1^0^18^18^1440^0.3135^0.2965^1^Imp Minion^^
 13019^1^0^33^33^1443^0.5508^0.2974^1^Burning Blade Seer^4306:1:1,15750:1:1^
+14388^1^0^50^50^1428^0.1345^0.5731^1^Rogue Black Drake^^
 269075^2^0^6^6^1426^0.2742^0.6318^2^Snow Leopard Prowler^4814:1:1^
 271486^4^0^6^8^1426^0.4122^0.4764^4^Wendigo Shaman^2671:1:1^
 271530^3^0^7^8^1426^0.4076^0.4658^3^Elder Wendigo^1412:1:1,2671:2:2^
@@ -296,11 +297,13 @@ GoldScout-export 5^zbm9unaf3lp9^40
 @i^4480^Thundering Charm
 @i^4538^Snapvine Watermelon
 @i^4542^Moist Cornbread
+@i^4552^Smooth Stone Chip
 @i^4553^Jagged Piece of Stone
 @i^4555^Thick Scaly Tail
 @i^4605^Red-speckled Mushroom
 @i^4606^Spongy Morel
 @i^4616^Ryedol's Lucky Pick
+@i^4626^Small Stone Shard
 @i^4634^Iron Lockbox
 @i^4694^Burnished Pauldrons
 @i^4757^Cracked Egg Shells
@@ -332,11 +335,13 @@ GoldScout-export 5^zbm9unaf3lp9^40
 @i^6889^Small Egg
 @i^6952^Thick Bear Fur
 @i^6986^Crimson Lotus
+@i^7067^Elemental Earth
 @i^7069^Elemental Air
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
 @i^7098^Splintered Tusk
 @i^7412^Infiltrator Gloves of Defense
+@i^7912^Solid Stone
 @i^8146^Wicked Claw
 @i^8150^Deeprock Salt
 @i^9753^Nomad Buckler of Agility
@@ -376,6 +381,7 @@ GoldScout-export 5^zbm9unaf3lp9^40
 @i^248689^Waylaid Crate: Journeyman Curiosities
 @i^248703^Waylaid Crate: Apprentice Ingots
 @i^248707^Waylaid Crate: Journeyman Parts
+@i^248710^Waylaid Crate: Expert Parts
 @i^254432^Carved Centaur Totem
 @i^255007^Golem Isospring
 @i^255726^Manual: Leather Tourniquet
@@ -528,11 +534,13 @@ GoldScout-export 5^zbm9unaf3lp9^40
 @q^4480^1:0:0
 @q^4538^1:0:0
 @q^4542^1:0:0
+@q^4552^0:15:0
 @q^4553^0:15:0
 @q^4555^0:15:0
 @q^4605^1:0:0
 @q^4606^1:0:0
 @q^4616^1:2:0
+@q^4626^1:12:0
 @q^4634^2:15:0
 @q^4694^1:4:0
 @q^4757^0:15:0
@@ -564,11 +572,13 @@ GoldScout-export 5^zbm9unaf3lp9^40
 @q^6889^1:7:1
 @q^6952^1:12:0
 @q^6986^0:15:0
+@q^7067^1:7:1
 @q^7069^1:7:1
 @q^7073^0:15:0
 @q^7074^0:15:0
 @q^7098^0:15:0
 @q^7412^2:4:0
+@q^7912^1:7:1
 @q^8146^1:7:1
 @q^8150^1:7:1
 @q^9753^2:4:0
@@ -608,6 +618,7 @@ GoldScout-export 5^zbm9unaf3lp9^40
 @q^248689^1:0:1
 @q^248703^2:0:1
 @q^248707^2:0:1
+@q^248710^2:0:1
 @q^254432^2:15:0
 @q^255007^1:7:1
 @q^255726^2:9:0
@@ -617,6 +628,7 @@ GoldScout-export 5^zbm9unaf3lp9^40
 @m^1418^Badlands
 @m^1424^Hillsbrad Foothills
 @m^1426^Dun Morogh
+@m^1428^Burning Steppes
 @m^1431^Duskwood
 @m^1434^Stranglethorn Vale
 @m^1436^Westfall
@@ -1593,7 +1605,7 @@ GoldScout-export 5^zbm9unaf3lp9^40
 @a^2408^191:4,210:1,211:1,230:2
 @a^2462^125:4,144:8,145:6
 @a^2563^189:1
-@a^2735^183:2,184:2
+@a^2735^143:1,163:13,183:2,184:3
 @a^2739^110:3,130:1
 @a^2740^110:1,130:5
 @a^2762^209:3,210:3
@@ -1650,6 +1662,7 @@ GoldScout-export 5^zbm9unaf3lp9^40
 @a^11578^306:2
 @a^12922^106:1
 @a^13019^111:1
+@a^14388^222:1
 @a^269075^245:2
 @a^271486^187:1,188:3
 @a^271530^187:1,188:2
