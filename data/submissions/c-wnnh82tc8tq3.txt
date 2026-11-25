@@ -1,9 +1,11 @@
-GoldScout-export 7^wnnh82tc8tq3^10
+GoldScout-export 7^wnnh82tc8tq3^11
 1766^15^0^11^12^1421^0.5760^0.1158^15^Lupo jaspeado^2672:13:13,3164:3:3,3299:5:5,211786:1:1^
 1769^10^0^10^11^1421^0.5166^0.3604^10^Canoso Furia Lunar^774:1:1,858:1:1,2287:1:1,211787:1:1^
 1770^6^0^11^12^1421^0.5317^0.2787^6^Correoscuro Furia Lunar^^
 1778^9^0^11^12^1421^0.5098^0.2492^9^Grisoso feroz^3169:3:3,3170:2:2,3173:3:3,3253:4:4^
-1779^1^0^12^13^1421^0.4977^0.1697^1^Glotón Furia Lunar^^
+1779^3^0^12^13^1421^0.4643^0.2708^3^Glotón Furia Lunar^2287:1:1,3156:1:1^
+1780^19^0^12^13^1421^0.3521^0.1563^19^Acechamusgo^1475:1:1,3167:5:5,3174:7:7,3254:6:6,5465:10:12,211787:1:1^
+1782^1^0^13^13^1421^0.4418^0.3170^1^Almanegra Furia Lunar^^
 1797^10^0^12^13^1421^0.4032^0.1798^10^Grisoso gigante^2940:2:2,3169:1:1,3170:3:3,3173:3:3,3253:2:2,11406:1:1,211787:1:1^
 1868^2^0^13^14^1421^0.5208^0.3274^2^Sirviente Corvozarpa^4605:1:1^
 1983^1^0^14^14^1421^0.4613^0.2072^1^Latipesadilla^2589:1:2,3622:1:1^
@@ -124,6 +126,7 @@ GoldScout-export 7^wnnh82tc8tq3^10
 @i^1422^Guantes de cuero desgastados
 @i^1433^Armadura de retales
 @i^1464^Talón de águila ratonera
+@i^1475^Glándula de veneno pequeña
 @i^1476^Miembro de araña partido
 @i^1520^Sudor trol
 @i^1645^Zumo de baya lunar
@@ -148,12 +151,16 @@ GoldScout-export 7^wnnh82tc8tq3^10
 @i^2672^Carne fibrosa de lobo
 @i^2773^Arco corto rajado
 @i^2940^Pata de oso sangriento
+@i^3156^Grillete de glotón
 @i^3164^Corazón de lupo descolorido
+@i^3167^Cerda de araña espesa
 @i^3169^Diente de oso astillado
 @i^3170^Diente de oso grande
 @i^3171^Colmillo de jabalí roto
 @i^3173^Carne de oso
+@i^3174^Icor de araña
 @i^3253^Corazón de grisoso
+@i^3254^Sangre de celerácnida
 @i^3299^Canino fracturado
 @i^3363^Cinturón deshilachado
 @i^3373^Brazales de retales
@@ -306,6 +313,7 @@ GoldScout-export 7^wnnh82tc8tq3^10
 @q^1422^0:4:0
 @q^1433^0:4:0
 @q^1464^0:15:0
+@q^1475^1:7:1
 @q^1476^0:15:0
 @q^1520^0:15:0
 @q^1645^1:0:0
@@ -330,12 +338,16 @@ GoldScout-export 7^wnnh82tc8tq3^10
 @q^2672^1:7:1
 @q^2773^0:2:0
 @q^2940^0:15:0
+@q^3156^1:12:0
 @q^3164^1:12:0
+@q^3167^0:15:0
 @q^3169^0:15:0
 @q^3170^0:15:0
 @q^3171^0:15:0
 @q^3173^1:7:1
+@q^3174^1:7:1
 @q^3253^1:12:0
+@q^3254^1:12:0
 @q^3299^0:15:0
 @q^3363^0:4:0
 @q^3373^0:4:0
@@ -1161,7 +1173,9 @@ GoldScout-export 7^wnnh82tc8tq3^10
 @a^1769^110:3,149:3,151:1,169:1,170:2
 @a^1770^110:6
 @a^1778^69:4,70:2,150:1,170:2
-@a^1779^69:1
+@a^1779^69:1,128:2
+@a^1780^47:3,66:6,67:10
+@a^1782^128:1
 @a^1797^67:3,68:6,88:1
 @a^1868^130:2
 @a^1983^89:1
@@ -1258,7 +1272,9 @@ GoldScout-export 7^wnnh82tc8tq3^10
 @t^1769^9:392
 @t^1770^6:185
 @t^1778^8:325
-@t^1779^1:21
+@t^1779^2:45
+@t^1780^18:730
+@t^1782^1:27
 @t^1797^9:347
 @t^1868^1:25
 @t^1983^1:43

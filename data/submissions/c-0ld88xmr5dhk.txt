@@ -1,4 +1,10 @@
-GoldScout-export 6^0ld88xmr5dhk^16
+GoldScout-export 7^0ld88xmr5dhk^17
+454^4^0^12^13^1436^0.3770^0.2932^4^Young Goretusk^723:2:2,731:1:1,769:3:3,3171:1:1,3172:2:2^
+500^1^0^12^12^1436^0.3703^0.2737^1^Riverpaw Scout^2589:1:2^
+754^1^0^31^31^1434^0.3938^0.0574^1^Rebel Watchman^^
+833^7^0^11^12^1436^0.3672^0.2969^7^Coyote Packleader^2673:2:2,3299:2:2,3300:2:2,6514:1:1^
+834^7^0^10^11^1436^0.4048^0.2794^7^Coyote^2673:4:4,3300:2:2^
+1109^1^0^13^13^1436^0.3606^0.2745^1^Fleshripper^818:1:1^
 1501^13^0^1^1^1420^0.3148^0.6379^13^Mindless Zombie^159:1:1,1376:1:1,1378:1:1,2589:5:5,4604:2:2^
 1502^22^0^1^2^1420^0.3195^0.6403^22^Wretched Zombie^1370:1:1,1380:1:1,2589:3:3,2653:1:1,3363:1:1,4604:1:1,5572:1:1^
 1504^10^0^2^3^1420^0.2844^0.5776^10^Young Night Web Spider^1372:1:1,1476:3:3,2211:1:1,2649:1:1,3365:1:1,7100:6:6,7101:2:2^
@@ -63,7 +69,10 @@ GoldScout-export 6^0ld88xmr5dhk^16
 @i^117^Tough Jerky
 @i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
+@i^723^Goretusk Liver
+@i^731^Goretusk Snout
 @i^769^Chunk of Boar Meat
+@i^818^Tigerseye
 @i^1181^Scroll of Spirit
 @i^1364^Ragged Leather Vest
 @i^1366^Ragged Leather Pants
@@ -96,15 +105,19 @@ GoldScout-export 6^0ld88xmr5dhk^16
 @i^2654^Flimsy Chain Pants
 @i^2656^Flimsy Chain Vest
 @i^2672^Stringy Wolf Meat
+@i^2673^Coyote Meat
 @i^2855^Putrid Claw
 @i^2858^Darkhound Blood
 @i^2875^Scarlet Insignia Ring
 @i^2876^Duskbat Pelt
 @i^2885^Scarlet Crusade Documents
+@i^3171^Broken Boar Tusk
+@i^3172^Boar Intestines
 @i^3261^Webbed Cloak
 @i^3264^Duskbat Wing
 @i^3265^Scavenger Paw
 @i^3266^Scarlet Armband
+@i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
 @i^3363^Frayed Belt
 @i^3365^Frayed Bracers
@@ -136,6 +149,7 @@ GoldScout-export 6^0ld88xmr5dhk^16
 @i^5572^Small Green Pouch
 @i^6293^Dried Bat Blood
 @i^6296^Patch of Bat Hair
+@i^6514^Disciple's Cloak
 @i^6655^Glowing Ember
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
@@ -154,7 +168,10 @@ GoldScout-export 6^0ld88xmr5dhk^16
 @q^117^1:0:0
 @q^118^1:0:0
 @q^159^1:0:0
+@q^723^1:7:1
+@q^731^1:7:1
 @q^769^1:7:1
+@q^818^2:7:1
 @q^1181^1:0:0
 @q^1364^0:4:0
 @q^1366^0:4:0
@@ -187,15 +204,19 @@ GoldScout-export 6^0ld88xmr5dhk^16
 @q^2654^0:4:0
 @q^2656^0:4:0
 @q^2672^1:7:1
+@q^2673^1:7:1
 @q^2855^1:12:0
 @q^2858^1:12:0
 @q^2875^1:12:0
 @q^2876^1:12:0
 @q^2885^1:12:0
+@q^3171^0:15:0
+@q^3172^1:7:1
 @q^3261^1:4:0
 @q^3264^1:12:0
 @q^3265^1:12:0
 @q^3266^1:12:0
+@q^3299^0:15:0
 @q^3300^0:15:0
 @q^3363^0:4:0
 @q^3365^0:4:0
@@ -227,6 +248,7 @@ GoldScout-export 6^0ld88xmr5dhk^16
 @q^5572^1:1:0
 @q^6293^0:15:0
 @q^6296^0:15:0
+@q^6514^1:4:0
 @q^6655^1:12:0
 @q^7073^0:15:0
 @q^7074^0:15:0
@@ -246,6 +268,8 @@ GoldScout-export 6^0ld88xmr5dhk^16
 @m^1412^Mulgore
 @m^1413^The Barrens
 @m^1420^Tirisfal Glades
+@m^1434^Stranglethorn Vale
+@m^1436^Westfall
 @c^118^
 @c^724^
 @c^733^
@@ -2278,6 +2302,12 @@ GoldScout-export 6^0ld88xmr5dhk^16
 @c^285280^
 @c^285281^
 @c^286152^
+@a^454^107:2,127:1,128:1
+@a^500^107:1
+@a^754^27:1
+@a^833^107:1,108:2,126:2,127:2
+@a^834^107:1,108:3,127:1,128:2
+@a^1109^107:1
 @a^1501^246:8,266:5
 @a^1502^246:8,266:14
 @a^1504^225:9,245:1
@@ -2339,4 +2369,9 @@ GoldScout-export 6^0ld88xmr5dhk^16
 @a^246143^245:1
 @a^266849^210:1,250:1
 @a^271961^224:4,244:2
+@t^454^4:164
+@t^500^1:28
+@t^833^6:387
+@t^834^7:292
+@t^1109^1:50
 @l^0^enUS
