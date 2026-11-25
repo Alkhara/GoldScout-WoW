@@ -1,4 +1,4 @@
-GoldScout-export 6^lkfl1ae5rdbe^46
+GoldScout-export 6^lkfl1ae5rdbe^47
 589^1^0^14^15^1436^0.4353^0.6800^1^Defias Pillager^1180:1:1^
 704^1^0^2^2^1426^0.2667^0.7502^1^Ragged Timber Wolf^7074:1:1^
 706^1^0^3^4^1426^0.2285^0.7982^1^Frostmane Troll Whelp^117:1:1^
@@ -237,10 +237,25 @@ GoldScout-export 6^lkfl1ae5rdbe^46
 9041^1^0^0^0^0^0.0000^0.0000^0^^11783:1:1^
 9042^2^0^0^0^0^0.0000^0.0000^0^^12203:1:1,12208:1:1,276884:1:1^
 9056^2^0^0^0^0^0.0000^0.0000^0^^10999:1:1,11078:1:1,11468:1:3,11839:1:1,11842:1:1^
+9097^3^0^0^0^0^0.0000^0.0000^0^^10057:1:1^
+9098^2^0^0^0^0^0.0000^0.0000^0^^^
 9156^2^0^0^0^0^0.0000^0.0000^0^^11809:1:1,11832:1:1^
 9176^1^0^54^54^1428^0.3948^0.5231^1^Gor'tesh^8766:1:1,11080:1:1^
+9196^1^0^0^0^0^0.0000^0.0000^0^^12534:1:1^
+9198^2^0^0^0^0^0.0000^0.0000^0^^3944:1:1,14047:1:3^
+9199^2^0^0^0^0^0.0000^0.0000^0^^10200:1:1^
+9200^1^0^0^0^0^0.0000^0.0000^0^^14047:1:3^
+9201^1^0^0^0^0^0.0000^0.0000^0^^12219:1:1^
+9218^1^0^0^0^0^0.0000^0.0000^0^^13285:1:1^
+9236^1^0^0^0^0^0.0000^0.0000^0^^12654:1:200,13255:1:1^
+9237^1^0^0^0^0^0.0000^0.0000^0^^12582:1:1^
+9257^3^0^0^0^0^0.0000^0.0000^0^^13443:1:1,14047:2:6^
+9265^1^0^0^0^0^0.0000^0.0000^0^^^
+9266^2^0^0^0^0^0.0000^0.0000^0^^14047:1:2,16673:1:1^
+9267^2^0^0^0^0^0.0000^0.0000^0^^12219:1:1,14047:1:2^
 9318^6^0^47^49^1427^0.4582^0.2348^6^Incendosaur^5128:1:1,5133:4:4^
 9319^1^0^0^0^0^0.0000^0.0000^0^^11627:1:1^
+9416^1^0^0^0^0^0.0000^0.0000^0^^12203:1:1,12208:1:1^
 9476^1^0^0^0^0^0.0000^0.0000^0^^^
 9502^2^0^0^0^0^0.0000^0.0000^0^^11745:1:1,22212:1:1^
 9537^2^0^0^0^0^0.0000^0.0000^0^^11735:1:1,18945:1:2,22275:1:1^
@@ -618,6 +633,7 @@ GoldScout-export 6^lkfl1ae5rdbe^46
 @i^9472^Hexx's Key
 @i^9818^Fortified Chain of Stamina
 @i^9936^Abjurer's Boots of the Channeler
+@i^10057^Duskwoven Tunic of Fire Protection
 @i^10060^Duskwoven Cape of the Monkey
 @i^10063^Duskwoven Amice of Nature Protection
 @i^10065^Duskwoven Robe of Shadow Protection
@@ -630,7 +646,7 @@ GoldScout-export 6^lkfl1ae5rdbe^46
 @i^10183^Swashbuckler's Boots of the Beast
 @i^10197^Crusader's Belt of the Tiger
 @i^10199^Crusader's Leggings of the Bandit
-@i^10200^Crusader's Pauldrons of Nature's Wrath
+@i^10200^Crusader's Pauldrons of Healing
 @i^10202^Overlord's Vambraces of the Whale
 @i^10203^Overlord's Chestplate of the Beast
 @i^10225^Nightshade Gloves of Intellect
@@ -719,12 +735,18 @@ GoldScout-export 6^lkfl1ae5rdbe^46
 @i^12205^White Spider Meat
 @i^12207^Giant Egg
 @i^12208^Tender Wolf Meat
+@i^12219^Unadorned Seal of Ascension
 @i^12466^Dawnspire Cord
 @i^12531^Searing Needle
+@i^12534^Omokk's Head
+@i^12582^Keris of Zul'Serak
+@i^12654^Doomshot
 @i^12695^Plans: Radiant Gloves
 @i^12840^Minion's Scourgestone
 @i^12841^Invader's Scourgestone
 @i^13194^Felstone Field Cauldron Key
+@i^13255^Trueaim Gauntlets
+@i^13285^The Blackrock Slicer
 @i^13443^Superior Mana Potion
 @i^13446^Major Healing Potion
 @i^13757^Lightning Eel
@@ -752,6 +774,7 @@ GoldScout-export 6^lkfl1ae5rdbe^46
 @i^15731^Pattern: Runic Leather Gauntlets
 @i^15770^Pattern: Black Dragonscale Shoulders
 @i^15781^Pattern: Black Dragonscale Leggings
+@i^16673^Cord of Elements
 @i^17056^Light Feather
 @i^17413^Codex: Prayer of Fortitude
 @i^17684^Theradric Crystal Carving
@@ -1103,6 +1126,7 @@ GoldScout-export 6^lkfl1ae5rdbe^46
 @q^9472^1:12:0
 @q^9818^2:4:0
 @q^9936^2:4:0
+@q^10057^2:4:0
 @q^10060^2:4:0
 @q^10063^2:4:0
 @q^10065^2:4:0
@@ -1204,12 +1228,18 @@ GoldScout-export 6^lkfl1ae5rdbe^46
 @q^12205^1:7:1
 @q^12207^1:7:1
 @q^12208^1:7:1
+@q^12219^1:12:0
 @q^12466^3:4:0
 @q^12531^3:2:0
+@q^12534^1:12:0
+@q^12582^3:2:0
+@q^12654^3:6:0
 @q^12695^2:9:0
 @q^12840^1:12:0
 @q^12841^1:12:0
 @q^13194^1:12:0
+@q^13255^3:4:0
+@q^13285^3:2:0
 @q^13443^1:0:0
 @q^13446^1:0:0
 @q^13757^1:7:1
@@ -1237,6 +1267,7 @@ GoldScout-export 6^lkfl1ae5rdbe^46
 @q^15731^2:9:0
 @q^15770^3:9:0
 @q^15781^3:9:0
+@q^16673^3:4:0
 @q^17056^1:15:1
 @q^17413^3:9:0
 @q^17684^1:12:0

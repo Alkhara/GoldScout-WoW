@@ -1,12 +1,13 @@
-GoldScout-export 6^qeaf8fr7pxt8^17
+GoldScout-export 6^qeaf8fr7pxt8^19
 587^2^0^33^34^1434^0.3290^0.1412^2^Bloodscalp Warrior^2738:1:1,3901:1:1,3915:1:1^
 694^3^0^33^34^1434^0.3423^0.1543^3^Bloodscalp Axe Thrower^3901:2:2,3915:2:2^
 697^1^0^33^34^1434^0.3423^0.1421^1^Bloodscalp Shaman^3779:1:1,3901:1:1,4306:1:2^
-702^5^0^33^34^1434^0.3206^0.1301^5^Bloodscalp Scavenger^1519:1:1,3901:2:2,4306:2:3^
+702^6^0^33^34^1434^0.3216^0.1298^6^Bloodscalp Scavenger^1519:1:1,3901:2:2,4306:2:3,7421:1:1^
 1085^1^0^35^35^1434^0.3381^0.1919^1^Elder Stranglethorn Tiger^1687:1:1,12202:1:1^
 3098^3^0^1^2^1411^0.4411^0.6375^3^Mottled Boar^4865:2:2,7098:2:2^
 3101^4^0^3^4^1411^0.4513^0.5775^4^Vile Familiar^1370:1:1,1378:1:1,2589:1:1,2649:1:1^
-3124^21^0^3^3^1411^0.4497^0.5956^21^Scorpid Worker^1369:1:1,1374:1:1,1377:2:2,1378:1:1,2210:1:1,2652:1:1,4862:9:9,4867:4:4,7099:5:5,7100:4:4,7101:4:4^
+3124^22^0^3^3^1411^0.4492^0.5955^22^Scorpid Worker^1369:1:1,1374:1:1,1377:2:2,1378:1:1,2210:1:1,2650:1:1,2652:1:1,4862:9:9,4867:4:4,7099:6:6,7100:4:4,7101:4:4^
+3281^1^0^4^4^1411^0.4059^0.6713^1^Sarkoth^1378:1:1,4905:1:1,7100:1:1^
 4029^1^0^27^27^1442^0.3139^0.7265^1^Blackened Ancient^^
 4038^1^0^26^26^1442^0.3115^0.7319^1^Burning Destroyer^16312:1:1^
 4113^1^0^28^29^1441^0.5976^0.5529^1^Gravelsnout Digger^4306:1:1^
@@ -107,6 +108,7 @@ GoldScout-export 6^qeaf8fr7pxt8^17
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2649^Flimsy Chain Belt
+@i^2650^Flimsy Chain Boots
 @i^2652^Flimsy Chain Cloak
 @i^2677^Boar Ribs
 @i^2738^Green Hills of Stranglethorn - Page 14
@@ -138,6 +140,7 @@ GoldScout-export 6^qeaf8fr7pxt8^17
 @i^4862^Scorpid Worker Tail
 @i^4865^Ruined Pelt
 @i^4867^Broken Scorpid Leg
+@i^4905^Sarkoth's Mangled Claw
 @i^5114^Severed Talon
 @i^5115^Broken Wishbone
 @i^5116^Long Tail Feather
@@ -169,6 +172,7 @@ GoldScout-export 6^qeaf8fr7pxt8^17
 @i^7099^Severed Pincer
 @i^7100^Sticky Ichor
 @i^7101^Bug Eye
+@i^7421^Phalanx Gauntlets of the Bear
 @i^8146^Wicked Claw
 @i^9869^Renegade Belt of the Knight
 @i^11384^Broken Basilisk Teeth
@@ -230,6 +234,7 @@ GoldScout-export 6^qeaf8fr7pxt8^17
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2649^0:4:0
+@q^2650^0:4:0
 @q^2652^0:4:0
 @q^2677^1:7:1
 @q^2738^1:12:0
@@ -261,6 +266,7 @@ GoldScout-export 6^qeaf8fr7pxt8^17
 @q^4862^1:12:0
 @q^4865^0:15:0
 @q^4867^0:15:0
+@q^4905^1:12:0
 @q^5114^0:15:0
 @q^5115^0:15:0
 @q^5116^1:7:1
@@ -292,6 +298,7 @@ GoldScout-export 6^qeaf8fr7pxt8^17
 @q^7099^0:15:0
 @q^7100^0:15:0
 @q^7101^0:15:0
+@q^7421^2:4:0
 @q^8146^1:7:1
 @q^9869^2:4:0
 @q^11384^0:15:0
@@ -472,11 +479,12 @@ GoldScout-export 6^qeaf8fr7pxt8^17
 @a^587^46:2
 @a^694^46:1,66:2
 @a^697^46:1
-@a^702^46:5
+@a^702^46:6
 @a^1085^66:1
 @a^3098^248:2,268:1
 @a^3101^228:1,229:3
-@a^3124^228:6,229:10,248:1,249:4
+@a^3124^228:7,229:10,248:1,249:4
+@a^3281^268:1
 @a^4029^286:1
 @a^4038^286:1
 @a^4113^231:1

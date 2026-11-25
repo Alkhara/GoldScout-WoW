@@ -1,4 +1,4 @@
-GoldScout-export 6^wck4furesn2m^14
+GoldScout-export 6^wck4furesn2m^15
 92^6^0^39^40^1418^0.1488^0.3571^6^Rock Elemental^4553:3:3,4784:2:2,7067:3:3,7912:3:4,8150:2:2^
 205^4^0^28^29^1431^0.6547^0.6759^4^Nightbane Dark Runner^^
 597^2^0^36^37^1434^0.2449^0.0985^2^Bloodscalp Berserker^2751:1:1,4306:1:3^
@@ -23,6 +23,9 @@ GoldScout-export 6^wck4furesn2m^14
 2421^1^0^40^40^1416^0.3914^0.4738^1^Muckrake^^
 2731^1^0^36^36^1418^0.3800^0.4024^1^Ridge Stalker^12202:1:1^
 2735^83^0^37^39^1418^0.1926^0.4339^83^Lesser Rock Elemental^863:1:1,3864:1:1,4552:8:8,4553:25:25,4626:2:2,4784:52:52,7067:7:7,7431:1:1,7909:1:1,7912:16:23,8150:26:26,9849:1:1,248692:1:1^
+3631^1^0^16^16^1414^0.5225^0.5464^1^Deviate Stinglash^15016:1:1^
+3632^1^0^15^15^1414^0.5188^0.5474^1^Deviate Creeper^5124:1:1^
+3638^2^0^17^17^1414^0.5234^0.5483^2^Devouring Ectoplasm^3676:1:1^
 3974^1^0^0^0^0^0.0000^0.0000^0^^3801:1:1^
 3975^1^0^0^0^0^0.0000^0.0000^0^^7717:1:1^
 3976^1^0^0^0^0^0.0000^0.0000^0^^1710:1:1,4306:1:1,7723:1:1^
@@ -271,6 +274,7 @@ GoldScout-export 6^wck4furesn2m^14
 @i^3402^Soft Patch of Fur
 @i^3403^Ivory Boar Tusk
 @i^3671^Lifeless Skull
+@i^3676^Slimy Ichor
 @i^3684^Perenolde Tiara
 @i^3712^Turtle Meat
 @i^3771^Wild Hog Shank
@@ -339,6 +343,7 @@ GoldScout-export 6^wck4furesn2m^14
 @i^4784^Lifeless Stone
 @i^5114^Severed Talon
 @i^5116^Long Tail Feather
+@i^5124^Small Raptor Tooth
 @i^5128^Shed Lizard Skin
 @i^5133^Seeping Gizzard
 @i^5429^A Pretty Rock
@@ -414,6 +419,7 @@ GoldScout-export 6^wck4furesn2m^14
 @i^12208^Tender Wolf Meat
 @i^13054^Grim Reaper
 @i^14259^Bloodwoven Boots of Shadow Wrath
+@i^15016^Lupine Handwraps of Agility
 @i^15152^Nocturnal Shoes of the Bandit
 @i^15243^Deadly Kris of the Tiger
 @i^15261^Sequoia Branch of Arcane Protection
@@ -548,6 +554,7 @@ GoldScout-export 6^wck4furesn2m^14
 @q^3402^0:15:0
 @q^3403^0:15:0
 @q^3671^0:15:0
+@q^3676^0:15:0
 @q^3684^1:12:0
 @q^3712^1:7:1
 @q^3771^1:0:0
@@ -616,6 +623,7 @@ GoldScout-export 6^wck4furesn2m^14
 @q^4784^0:15:0
 @q^5114^0:15:0
 @q^5116^1:7:1
+@q^5124^0:15:0
 @q^5128^0:15:0
 @q^5133^0:15:0
 @q^5429^0:15:0
@@ -691,6 +699,7 @@ GoldScout-export 6^wck4furesn2m^14
 @q^12208^1:7:1
 @q^13054^3:2:0
 @q^14259^2:4:0
+@q^15016^2:4:0
 @q^15152^2:4:0
 @q^15243^2:2:0
 @q^15261^2:2:0
@@ -772,6 +781,7 @@ GoldScout-export 6^wck4furesn2m^14
 @q^286428^3:4:0
 @q^287002^3:4:0
 @q^287013^3:4:0
+@m^1414^Kalimdor
 @m^1415^Eastern Kingdoms
 @m^1416^Alterac Mountains
 @m^1418^Badlands
@@ -1534,6 +1544,9 @@ GoldScout-export 6^wck4furesn2m^14
 @a^2421^187:1
 @a^2731^167:1
 @a^2735^142:7,143:2,162:3,163:29,164:18,183:4,184:20
+@a^3631^210:1
+@a^3632^210:1
+@a^3638^210:1,230:1
 @a^4139^294:1
 @a^4140^214:1,215:9,234:1,235:4,236:1,254:1,294:2
 @a^4142^214:4,215:7,216:10,234:13,235:10,236:1,254:1
