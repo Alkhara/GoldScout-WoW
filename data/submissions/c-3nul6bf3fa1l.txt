@@ -1,4 +1,4 @@
-GoldScout-export 7^3nul6bf3fa1l^26
+GoldScout-export 7^3nul6bf3fa1l^27
 1765^1^0^10^10^1421^0.5881^0.0876^1^Worg^2672:1:1^
 1766^11^0^11^12^1421^0.5655^0.1113^11^Mottled Worg^2672:9:9,3164:3:3,3299:2:2^
 1768^3^0^13^14^1421^0.5614^0.2868^3^Vile Fin Tidehunter^1512:1:1,3258:1:1^
@@ -31,6 +31,9 @@ GoldScout-export 7^3nul6bf3fa1l^26
 1983^1^0^14^14^1421^0.4624^0.2069^1^Nightlash^3622:1:1^
 2061^1^0^13^13^1421^0.4660^0.7404^1^Councilman Thatcher^414:1:1,2589:1:2^
 2256^1^0^38^39^1416^0.3666^0.5585^1^Crushridge Enforcer^1708:1:1^
+2648^13^0^50^51^1425^0.5710^0.8245^13^Vilebranch Aman'zasi Guard^1520:4:4,4338:3:10,4422:1:1,8152:2:2,8153:1:2,9259:7:7,248699:1:1^
+2655^1^0^46^47^1425^0.5756^0.4016^1^Green Sludge^^
+2656^1^0^47^48^1425^0.5758^0.3996^1^Jade Ooze^20763:1:1^
 3098^10^0^1^2^1411^0.4521^0.6576^10^Mottled Boar^117:3:3,1364:2:2,1372:1:1,1374:1:1,3363:1:1,3365:1:1,4865:4:4,7098:4:4^
 3101^15^0^3^4^1411^0.4451^0.5592^15^Vile Familiar^117:2:2,159:1:1,1366:1:1,1368:1:1,1369:2:2,1370:2:2,1372:1:1,1377:1:1,1378:2:2,2589:3:3,2654:1:1,2656:1:1,3363:2:2,3365:2:2^
 3102^8^0^3^4^1411^0.4427^0.5499^8^Felstalker^1366:1:1,1372:1:1,1380:1:1,4865:2:2,7073:6:6,7074:3:3^
@@ -225,6 +228,7 @@ GoldScout-export 7^3nul6bf3fa1l^26
 10596^2^0^0^0^0^0.0000^0.0000^0^^13213:1:1,16715:1:1,249521:1:1^
 10605^1^0^54^54^1422^0.3867^0.5619^1^Scarlet Medic^^
 10678^6^0^0^0^0^0.0000^0.0000^0^^4557:1:1,7909:1:1,12840:1:1^
+10802^1^0^51^51^1425^0.5743^0.8686^1^Hitah'ya the Keeper^262890:1:1^
 10806^1^0^56^56^1452^0.5781^0.3276^1^Ursius^3730:1:1,11408:1:1,11411:1:1^
 10901^1^0^0^0^0^0.0000^0.0000^0^^14047:1:4,20520:1:1^
 10979^2^0^52^52^1422^0.3967^0.5430^2^Scarlet Hound^^
@@ -335,6 +339,7 @@ GoldScout-export 7^3nul6bf3fa1l^26
 @i^1512^Crude Battle Axe
 @i^1513^Old Greatsword
 @i^1516^Worn Hatchet
+@i^1520^Troll Sweat
 @i^1708^Sweet Nectar
 @i^1770^Canvas Vest
 @i^1787^Patched Leather Belt
@@ -384,6 +389,8 @@ GoldScout-export 7^3nul6bf3fa1l^26
 @i^4005^Overlinked Chain Pants
 @i^4020^Splintering Battle Axe
 @i^4337^Thick Spider's Silk
+@i^4338^Mageweave Cloth
+@i^4422^Scroll of Stamina III
 @i^4426^Scroll of Strength III
 @i^4460^Ripped Wing Webbing
 @i^4552^Smooth Stone Chip
@@ -447,6 +454,8 @@ GoldScout-export 7^3nul6bf3fa1l^26
 @i^8086^Light Plate Shoulderpads
 @i^8146^Wicked Claw
 @i^8150^Deeprock Salt
+@i^8152^Flask of Big Mojo
+@i^8153^Wildvine
 @i^8182^Pellet Rifle
 @i^8252^Imperial Red Robe
 @i^8284^Arcane Boots
@@ -460,6 +469,7 @@ GoldScout-export 7^3nul6bf3fa1l^26
 @i^8948^Dried King Bolete
 @i^8950^Homemade Cherry Pie
 @i^8952^Roasted Quail
+@i^9259^Troll Tribal Necklace
 @i^10104^Councillor's Tunic of Intellect
 @i^10144^High Councillor's Sash of Fire Protection
 @i^10167^Templar Boots of the Knight
@@ -666,6 +676,7 @@ GoldScout-export 7^3nul6bf3fa1l^26
 @i^19282^Six of Portals
 @i^19934^Large Scorpid Claw
 @i^20520^Dark Rune
+@i^20763^Broken Weapon
 @i^22212^Golem Fitted Pauldrons
 @i^22240^Greaves of Withering Despair
 @i^22242^Verek's Leash
@@ -736,6 +747,7 @@ GoldScout-export 7^3nul6bf3fa1l^26
 @q^1512^0:2:0
 @q^1513^0:2:0
 @q^1516^0:2:0
+@q^1520^0:15:0
 @q^1708^1:0:0
 @q^1770^0:4:0
 @q^1787^0:4:0
@@ -785,6 +797,8 @@ GoldScout-export 7^3nul6bf3fa1l^26
 @q^4005^0:4:0
 @q^4020^0:2:0
 @q^4337^1:7:1
+@q^4338^1:7:1
+@q^4422^1:0:0
 @q^4426^1:0:0
 @q^4460^0:15:0
 @q^4552^0:15:0
@@ -848,6 +862,8 @@ GoldScout-export 7^3nul6bf3fa1l^26
 @q^8086^0:4:0
 @q^8146^1:7:1
 @q^8150^1:7:1
+@q^8152^1:7:1
+@q^8153^1:7:1
 @q^8182^1:2:0
 @q^8252^2:4:0
 @q^8284^2:4:0
@@ -861,6 +877,7 @@ GoldScout-export 7^3nul6bf3fa1l^26
 @q^8948^1:0:0
 @q^8950^1:0:0
 @q^8952^1:0:0
+@q^9259^1:15:0
 @q^10104^2:4:0
 @q^10144^2:4:0
 @q^10167^2:4:0
@@ -1067,6 +1084,7 @@ GoldScout-export 7^3nul6bf3fa1l^26
 @q^19282^3:12:0
 @q^19934^0:15:0
 @q^20520^2:7:1
+@q^20763^0:15:0
 @q^22212^3:4:0
 @q^22240^3:4:0
 @q^22242^3:4:0
@@ -1117,6 +1135,7 @@ GoldScout-export 7^3nul6bf3fa1l^26
 @m^1421^Silverpine Forest
 @m^1422^Western Plaguelands
 @m^1423^Eastern Plaguelands
+@m^1425^The Hinterlands
 @m^1428^Burning Steppes
 @m^1449^Un'Goro Crater
 @m^1452^Winterspring
@@ -2068,6 +2087,9 @@ GoldScout-export 7^3nul6bf3fa1l^26
 @a^1983^89:1
 @a^2061^289:1
 @a^2256^227:1
+@a^2648^311:2,330:2,331:7,351:2
+@a^2655^171:1
+@a^2656^151:1
 @a^3098^248:1,249:1,268:3,269:5
 @a^3101^208:5,209:1,228:6,229:3
 @a^3102^208:4,228:2,229:2
@@ -2105,6 +2127,7 @@ GoldScout-export 7^3nul6bf3fa1l^26
 @a^9522^105:1,168:1,206:2
 @a^10357^268:1
 @a^10605^227:1
+@a^10802^351:1
 @a^10806^131:1
 @a^10979^208:1,227:1
 @a^11075^227:1
@@ -2136,6 +2159,7 @@ GoldScout-export 7^3nul6bf3fa1l^26
 @a^269213^233:1
 @a^275174^194:2
 @a^276198^392:1
+@t^2648^6:651
 @f^1411^0^24^1^6303:24:24^330:24
 @f^2482^0^8^288^7070:1:2,7079:1:1,13757:1:1,13758:1:1,13760:1:1,13889:3:3^154:3,167:5
 @l^0^enUS

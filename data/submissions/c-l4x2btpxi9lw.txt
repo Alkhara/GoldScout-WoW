@@ -1,4 +1,4 @@
-GoldScout-export 6^l4x2btpxi9lw^15
+GoldScout-export 6^l4x2btpxi9lw^16
 92^3^0^40^40^1418^0.4097^0.7699^3^Rock Elemental^3864:1:1,4553:2:2,4627:3:3,7912:2:4^
 587^5^0^33^34^1434^0.3310^0.1551^5^Bloodscalp Warrior^1519:2:2,1520:1:1,3800:1:1,3901:2:2,3915:2:2,4306:1:1^
 588^17^0^34^35^1434^0.2438^0.1209^17^Bloodscalp Scout^1519:2:2,2289:1:1,2592:1:2,3385:1:1,3771:1:1,3915:2:2,4306:5:7,4338:1:1^
@@ -62,6 +62,8 @@ GoldScout-export 6^l4x2btpxi9lw^15
 2893^17^0^39^40^1418^0.4876^0.7077^17^Stonevault Bonesnapper^1710:2:2,3771:1:1,3803:1:1,4306:7:14,4338:1:1,5797:5:5,211269:3:3^
 2894^15^0^40^41^1418^0.4911^0.7003^15^Stonevault Shaman^2289:1:1,3771:1:1,4306:4:6,4338:2:2,5797:5:5,211269:2:2^
 2945^1^0^42^42^1418^0.4952^0.7054^1^Murdaloc^^
+3098^30^0^1^2^1411^0.4440^0.6821^30^Mottled Boar^117:7:7,1367:1:1,1370:1:1,1376:1:1,1377:1:1,2649:1:1,2651:1:1,2654:2:2,3365:1:1,4865:12:12,7098:16:16^
+3124^1^0^3^3^1411^0.4135^0.7123^1^Scorpid Worker^4867:1:1^
 3560^23^0^35^41^1418^0.4869^0.7022^14^Healing Ward^^
 3974^1^0^0^0^0^0.0000^0.0000^0^^7710:1:1,253986:1:1^
 3976^2^0^0^0^0^0.0000^0.0000^0^^7723:1:1,7726:1:1^
@@ -241,6 +243,7 @@ GoldScout-export 6^l4x2btpxi9lw^15
 269175^3^0^36^38^1434^0.3460^0.2951^3^Carnivorous Weed^863:1:1,4607:1:1,7438:1:1,256037:1:1^
 270310^1^0^34^34^2548^0.4585^0.7961^1^Farholde Steed^^
 270667^5^0^38^39^2548^0.4686^0.6551^5^Farholde Priest^4306:3:7,4338:1:1^
+@i^117^Tough Jerky
 @i^159^Refreshing Spring Water
 @i^769^Chunk of Boar Meat
 @i^770^Pointy Crocolisk Tooth
@@ -248,8 +251,10 @@ GoldScout-export 6^l4x2btpxi9lw^15
 @i^866^Monk's Staff of Shadow Protection
 @i^1074^Hard Spider Leg Tip
 @i^1364^Ragged Leather Vest
+@i^1367^Ragged Leather Boots
 @i^1370^Ragged Leather Bracers
 @i^1376^Frayed Cloak
+@i^1377^Frayed Gloves
 @i^1378^Frayed Pants
 @i^1464^Buzzard Talon
 @i^1519^Bloodscalp Ear
@@ -271,7 +276,9 @@ GoldScout-export 6^l4x2btpxi9lw^15
 @i^2295^Large Boar Tusk
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2649^Flimsy Chain Belt
 @i^2650^Flimsy Chain Boots
+@i^2651^Flimsy Chain Bracers
 @i^2654^Flimsy Chain Pants
 @i^2656^Flimsy Chain Vest
 @i^2674^Crawler Meat
@@ -294,6 +301,7 @@ GoldScout-export 6^l4x2btpxi9lw^15
 @i^3264^Duskbat Wing
 @i^3265^Scavenger Paw
 @i^3363^Frayed Belt
+@i^3365^Frayed Bracers
 @i^3385^Lesser Mana Potion
 @i^3402^Soft Patch of Fur
 @i^3403^Ivory Boar Tusk
@@ -366,6 +374,7 @@ GoldScout-export 6^l4x2btpxi9lw^15
 @i^4731^Glyphed Epaulets
 @i^4784^Lifeless Stone
 @i^4865^Ruined Pelt
+@i^4867^Broken Scorpid Leg
 @i^5116^Long Tail Feather
 @i^5128^Shed Lizard Skin
 @i^5429^A Pretty Rock
@@ -394,6 +403,7 @@ GoldScout-export 6^l4x2btpxi9lw^15
 @i^7072^Naga Scale
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
+@i^7098^Splintered Tusk
 @i^7111^Nightsky Armor
 @i^7408^Infiltrator Shoulders of the Bandit
 @i^7432^Twilight Cowl of the Elder
@@ -520,6 +530,7 @@ GoldScout-export 6^l4x2btpxi9lw^15
 @i^277957^Primitive Key
 @i^279863^Black Horn Necklace
 @i^281052^Ombassa's Hide
+@q^117^1:0:0
 @q^159^1:0:0
 @q^769^1:7:1
 @q^770^0:15:0
@@ -527,8 +538,10 @@ GoldScout-export 6^l4x2btpxi9lw^15
 @q^866^2:2:0
 @q^1074^0:15:0
 @q^1364^0:4:0
+@q^1367^0:4:0
 @q^1370^0:4:0
 @q^1376^0:4:0
+@q^1377^0:4:0
 @q^1378^0:4:0
 @q^1464^0:15:0
 @q^1519^1:12:0
@@ -550,7 +563,9 @@ GoldScout-export 6^l4x2btpxi9lw^15
 @q^2295^0:15:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2649^0:4:0
 @q^2650^0:4:0
+@q^2651^0:4:0
 @q^2654^0:4:0
 @q^2656^0:4:0
 @q^2674^1:7:1
@@ -573,6 +588,7 @@ GoldScout-export 6^l4x2btpxi9lw^15
 @q^3264^1:12:0
 @q^3265^1:12:0
 @q^3363^0:4:0
+@q^3365^0:4:0
 @q^3385^1:0:0
 @q^3402^0:15:0
 @q^3403^0:15:0
@@ -645,6 +661,7 @@ GoldScout-export 6^l4x2btpxi9lw^15
 @q^4731^2:4:0
 @q^4784^0:15:0
 @q^4865^0:15:0
+@q^4867^0:15:0
 @q^5116^1:7:1
 @q^5128^0:15:0
 @q^5429^0:15:0
@@ -673,6 +690,7 @@ GoldScout-export 6^l4x2btpxi9lw^15
 @q^7072^1:7:1
 @q^7073^0:15:0
 @q^7074^0:15:0
+@q^7098^0:15:0
 @q^7111^2:4:0
 @q^7408^2:4:0
 @q^7432^2:4:0
@@ -799,6 +817,7 @@ GoldScout-export 6^l4x2btpxi9lw^15
 @q^277957^1:12:0
 @q^279863^3:4:0
 @q^281052^1:12:0
+@m^1411^Durotar
 @m^1413^The Barrens
 @m^1414^Kalimdor
 @m^1415^Eastern Kingdoms
@@ -873,6 +892,8 @@ GoldScout-export 6^l4x2btpxi9lw^15
 @a^2893^269:5,289:10,290:2
 @a^2894^269:5,270:2,288:1,289:5,290:2
 @a^2945^289:1
+@a^3098^248:3,249:5,268:4,269:4,288:14
+@a^3124^288:1
 @a^3560^269:4,270:1,288:1,289:6,290:2
 @a^4285^137:2
 @a^4638^274:1,293:2

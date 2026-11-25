@@ -1,4 +1,4 @@
-GoldScout-export 7^u4kjce9bj2d8^13
+GoldScout-export 7^u4kjce9bj2d8^14
 587^22^0^32^34^1434^0.2931^0.1987^22^Bloodscalp Warrior^1519:6:6,1520:3:3,3771:1:1,3915:5:5,4306:7:10^
 681^5^0^30^31^1434^0.3514^0.1098^5^Young Stranglethorn Tiger^1686:2:2,1687:1:1,4073:1:1,12202:2:2,15242:1:1^
 684^11^0^37^38^1434^0.3621^0.3715^11^Shadowmaw Panther^1686:1:1,1688:3:3,3838:8:8,4044:1:1,248692:1:1^
@@ -49,6 +49,8 @@ GoldScout-export 7^u4kjce9bj2d8^13
 256383^6^0^35^36^2548^0.4554^0.8278^6^Meadowsbrook Farmhand^4306:2:3^
 260429^1^0^39^39^1434^0.4343^0.2036^1^Venture Co. Agent^^
 262397^1^0^36^38^1434^0.2380^0.2427^1^Brinescale Skirmisher^^
+263307^2^0^37^38^2548^0.6200^0.5923^2^Glade Viper^6444:2:2^
+263343^6^0^37^38^2548^0.6369^0.5474^6^Low Plains Buzzard^1464:6:6,3404:4:4,5636:2:2,6421:1:1,12037:1:1,271793:2:2^
 269175^1^0^36^37^1434^0.3472^0.2979^1^Carnivorous Weed^256037:1:1^
 @i^729^Stringy Vulture Meat
 @i^770^Pointy Crocolisk Tooth
@@ -56,6 +58,7 @@ GoldScout-export 7^u4kjce9bj2d8^13
 @i^1074^Hard Spider Leg Tip
 @i^1081^Crisp Spider Meat
 @i^1288^Large Venom Sac
+@i^1464^Buzzard Talon
 @i^1519^Bloodscalp Ear
 @i^1520^Troll Sweat
 @i^1630^Broken Electro-lantern
@@ -82,6 +85,7 @@ GoldScout-export 7^u4kjce9bj2d8^13
 @i^3174^Spider Ichor
 @i^3385^Lesser Mana Potion
 @i^3399^Vulture Talon
+@i^3404^Buzzard Wing
 @i^3667^Tender Crocolisk Meat
 @i^3685^Raptor Egg
 @i^3712^Turtle Meat
@@ -120,6 +124,7 @@ GoldScout-export 7^u4kjce9bj2d8^13
 @i^5116^Long Tail Feather
 @i^5213^Scorching Wand
 @i^5214^Wand of Eventide
+@i^5636^Delicate Feather
 @i^5637^Large Fang
 @i^5785^Thick Murloc Scale
 @i^5794^Salty Scorpid Venom
@@ -137,6 +142,8 @@ GoldScout-export 7^u4kjce9bj2d8^13
 @i^6359^Firefin Snapper
 @i^6361^Raw Rainbow Fin Albacore
 @i^6362^Raw Rockscale Cod
+@i^6421^Glyphed Belt
+@i^6444^Forked Tongue
 @i^6826^Brilliant Scale
 @i^8146^Wicked Claw
 @i^8365^Raw Mithril Head Trout
@@ -170,6 +177,7 @@ GoldScout-export 7^u4kjce9bj2d8^13
 @i^248692^Waylaid Crate: Expert Ore
 @i^251457^Plans: Steel Spear
 @i^256037^Grass Clippings
+@i^271793^Plains Buzzard Feather
 @i^278225^Surgical Spidersilk
 @q^729^1:7:1
 @q^770^0:15:0
@@ -177,6 +185,7 @@ GoldScout-export 7^u4kjce9bj2d8^13
 @q^1074^0:15:0
 @q^1081^1:7:1
 @q^1288^1:7:1
+@q^1464^0:15:0
 @q^1519^1:12:0
 @q^1520^0:15:0
 @q^1630^0:15:0
@@ -203,6 +212,7 @@ GoldScout-export 7^u4kjce9bj2d8^13
 @q^3174^1:7:1
 @q^3385^1:0:0
 @q^3399^0:15:0
+@q^3404^1:7:1
 @q^3667^1:7:1
 @q^3685^1:7:1
 @q^3712^1:7:1
@@ -241,6 +251,7 @@ GoldScout-export 7^u4kjce9bj2d8^13
 @q^5116^1:7:1
 @q^5213^2:2:0
 @q^5214^2:2:0
+@q^5636^0:15:0
 @q^5637^1:7:1
 @q^5785^1:7:1
 @q^5794^1:12:0
@@ -258,6 +269,8 @@ GoldScout-export 7^u4kjce9bj2d8^13
 @q^6359^1:7:1
 @q^6361^1:7:1
 @q^6362^1:7:1
+@q^6421^2:4:0
+@q^6444^0:15:0
 @q^6826^0:15:0
 @q^8146^1:7:1
 @q^8365^1:7:1
@@ -291,6 +304,7 @@ GoldScout-export 7^u4kjce9bj2d8^13
 @q^248692^1:0:1
 @q^251457^2:9:0
 @q^256037^0:15:0
+@q^271793^1:12:0
 @q^278225^1:12:0
 @m^1413^The Barrens
 @m^1417^Arathi Highlands
@@ -1070,6 +1084,8 @@ GoldScout-export 7^u4kjce9bj2d8^13
 @a^256383^328:2,329:4
 @a^260429^88:1
 @a^262397^84:1
+@a^263307^232:1,252:1
+@a^263343^212:1,213:2,232:3
 @a^269175^106:1
 @f^1413^0^33^150^6303:15:15,6358:5:5,6361:13:13^152:33
 @f^1417^0^7^150^8365:7:7^253:7
