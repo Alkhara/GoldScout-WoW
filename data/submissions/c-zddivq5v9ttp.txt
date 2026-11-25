@@ -1,4 +1,4 @@
-GoldScout-export 7^zddivq5v9ttp^38
+GoldScout-export 7^zddivq5v9ttp^39
 1529^8^0^9^10^1420^0.7699^0.6062^8^Bleeding Horror^1413:1:1,2589:2:3,2635:1:1,6507:1:1^
 1532^9^0^10^11^1420^0.7718^0.6106^9^Wandering Spirit^1730:1:1,2589:4:6,4604:2:2,6521:1:1^
 1554^3^0^8^9^1420^0.7143^0.5568^3^Vampiric Duskbat^805:1:1,4865:1:1,7073:1:1,278242:1:1^
@@ -609,6 +609,7 @@ GoldScout-export 7^zddivq5v9ttp^38
 @i^4584^Large Trophy Paw
 @i^4585^Dripping Spider Mandible
 @i^4588^Pristine Raptor Skull
+@i^4603^Raw Spotted Yellowtail
 @i^4604^Forest Mushroom Cap
 @i^4605^Red-speckled Mushroom
 @i^4638^Reinforced Steel Lockbox
@@ -696,7 +697,9 @@ GoldScout-export 7^zddivq5v9ttp^38
 @i^6308^Raw Bristle Whisker Catfish
 @i^6310^19 Pound Catfish
 @i^6336^Infantry Tunic of Agility
+@i^6359^Firefin Snapper
 @i^6361^Raw Rainbow Fin Albacore
+@i^6362^Raw Rockscale Cod
 @i^6443^Deviate Hide
 @i^6444^Forked Tongue
 @i^6445^Brittle Molting
@@ -857,6 +860,9 @@ GoldScout-export 7^zddivq5v9ttp^38
 @i^13259^Ribsteel Footguards
 @i^13444^Major Mana Potion
 @i^13446^Major Healing Potion
+@i^13758^Raw Redgill
+@i^13759^Raw Nightfin Snapper
+@i^13760^Raw Sunscale Salmon
 @i^13817^Tapered Greatsword
 @i^13818^Jagged Axe
 @i^13819^Balanced War Axe
@@ -935,6 +941,8 @@ GoldScout-export 7^zddivq5v9ttp^38
 @i^16716^Wildheart Belt
 @i^16729^Lightforge Spaulders
 @i^16730^Breastplate of Valor
+@i^16967^Feralas Ahi
+@i^16968^Sar'theris Striker
 @i^17056^Light Feather
 @i^17413^Codex: Prayer of Fortitude
 @i^18104^Feralsurge Girdle
@@ -1258,6 +1266,7 @@ GoldScout-export 7^zddivq5v9ttp^38
 @q^4584^0:15:0
 @q^4585^0:15:0
 @q^4588^0:15:0
+@q^4603^1:7:1
 @q^4604^1:0:0
 @q^4605^1:0:0
 @q^4638^2:15:0
@@ -1345,7 +1354,9 @@ GoldScout-export 7^zddivq5v9ttp^38
 @q^6308^1:7:1
 @q^6310^1:15:0
 @q^6336^2:4:0
+@q^6359^1:7:1
 @q^6361^1:7:1
+@q^6362^1:7:1
 @q^6443^1:12:0
 @q^6444^0:15:0
 @q^6445^0:15:0
@@ -1506,6 +1517,9 @@ GoldScout-export 7^zddivq5v9ttp^38
 @q^13259^3:4:0
 @q^13444^1:0:0
 @q^13446^1:0:0
+@q^13758^1:7:1
+@q^13759^1:7:1
+@q^13760^1:7:1
 @q^13817^0:2:0
 @q^13818^0:2:0
 @q^13819^0:2:0
@@ -1584,6 +1598,8 @@ GoldScout-export 7^zddivq5v9ttp^38
 @q^16716^3:4:0
 @q^16729^3:4:0
 @q^16730^3:4:0
+@q^16967^1:15:0
+@q^16968^1:12:0
 @q^17056^1:15:1
 @q^17413^3:9:0
 @q^18104^3:4:0
@@ -1739,6 +1755,7 @@ GoldScout-export 7^zddivq5v9ttp^38
 @m^1424^Hillsbrad Foothills
 @m^1427^Searing Gorge
 @m^1428^Burning Steppes
+@m^1443^Desolace
 @m^1444^Feralas
 @m^1447^Azshara
 @m^1448^Felwood
@@ -3752,4 +3769,6 @@ GoldScout-export 7^zddivq5v9ttp^38
 @a^275666^71:1
 @a^276020^176:1
 @f^1417^0^378^152^1710:1:1,6308:173:193,6310:1:1,8365:282:353^205:378
+@f^1443^0^4^225^4603:2:2,6359:2:2,6362:3:3,16968:1:1^305:4
+@f^1444^0^5^225^8365:1:1,13758:4:4,13759:1:2,13760:1:1,16967:1:1^175:1,212:4
 @l^0^enUS

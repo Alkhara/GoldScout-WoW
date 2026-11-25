@@ -1,4 +1,4 @@
-GoldScout-export 6^xq3uv48tyx6a^6
+GoldScout-export 6^xq3uv48tyx6a^7
 1888^10^0^18^19^1421^0.6471^0.5923^10^Vigía de Dalaran^414:1:1,1179:1:1,2589:1:3,2592:3:4,9775:1:1^
 1889^8^0^19^20^1421^0.6521^0.5153^8^Zahorí de Dalaran^858:1:1,2589:3:5,2592:2:3^
 1891^1^0^13^14^1421^0.4804^0.7209^1^Vigía Piroleña^1497:1:1,3218:1:1,6555:1:1^
@@ -9,6 +9,13 @@ GoldScout-export 6^xq3uv48tyx6a^6
 1940^8^0^17^18^1421^0.6718^0.3513^8^Siembrapestes Putrepellejo^1793:1:1,2589:1:2,2592:1:2,3236:4:4^
 1953^1^0^16^16^1421^0.6816^0.3663^1^Vagador del Lago^^
 2054^1^0^19^20^1421^0.4631^0.8363^1^Refugiado enfermo^^
+2244^1^0^22^22^1424^0.6482^0.4700^1^Mago oscuro de la Hermandad^2589:1:1,5620:1:1^
+2349^5^0^24^25^1424^0.6323^0.4774^5^Trepamusgo gigante^878:1:1,1081:3:3,1206:1:1,2251:1:1,3182:1:1,4428:2:2^
+2350^3^0^20^20^1424^0.5958^0.2763^3^Trepamusgo del bosque^1081:2:2,2251:2:2,4428:1:1^
+2351^6^0^21^22^1424^0.5795^0.2905^6^Oso gris^2940:1:1,3476:3:3,3702:1:1,3730:2:2,11406:3:3^
+2354^10^0^22^23^1424^0.5131^0.4077^10^Oso gris sañoso^2940:2:2,3476:4:4,3730:3:3,11406:2:2^
+2356^7^0^25^26^1424^0.6437^0.5063^7^Oso gris viejo^2940:2:2,3476:2:2,3702:1:1,3730:3:3,11406:1:1,11407:1:1^
+2384^7^0^23^24^1424^0.5258^0.4092^7^León de montaña famélico^3496:2:2,3731:2:2,5135:1:1,5136:4:4^
 2540^1^0^15^15^1421^0.6218^0.6193^1^Serpiente de Dalaran^^
 2676^2^0^21^22^1442^0.6313^0.4009^2^Segador de la cosecha compacto^^
 3560^2^0^18^18^1421^0.6534^0.2179^2^Guarda de sanación^^
@@ -39,11 +46,16 @@ GoldScout-export 6^xq3uv48tyx6a^6
 4070^4^0^20^21^1442^0.6358^0.4043^4^Constructor de Ventura y Cía.^858:1:1,2592:2:3^
 4202^1^0^27^27^1442^0.6277^0.4034^1^Gerenzo Silbillave^5736:1:1^
 12579^1^0^26^26^1442^0.3122^0.6188^1^Desgarradora Furia Sangrienta^16190:1:1^
+247126^1^0^0^0^1416^0.0000^0.0000^0^^273032:1:1^
+255066^1^0^0^0^1416^0.0000^0.0000^0^^^
+269134^3^0^0^0^1416^0.0000^0.0000^0^^6592:1:1,6615:1:1,9838:1:1^
 @i^414^Pincho de Dalaran
 @i^730^Ojo de múrloc
 @i^858^Poción de sanación inferior
+@i^878^Hilera del tamaño de un puño
 @i^1081^Carne de araña crujiente
 @i^1179^Leche fría como el hielo
+@i^1206^Ágata musgosa
 @i^1210^Gema de las Sombras
 @i^1497^Capa de percal
 @i^1793^Hombreras de cuero con remiendos
@@ -51,22 +63,31 @@ GoldScout-export 6^xq3uv48tyx6a^6
 @i^1802^Guerrera de pellejo crudo
 @i^1818^Mandoble estándar
 @i^2216^Rodela simple
+@i^2251^Pata pegajosa de araña
 @i^2589^Paño de lino
 @i^2592^Paño de lana
+@i^2940^Pata de oso sangrienta
 @i^3012^Pergamino de agilidad
 @i^3174^Icor de araña
+@i^3182^Seda de araña
 @i^3218^Grillete de piroleña
 @i^3236^Icor de Putrepellejo
 @i^3317^Una cabeza que habla
 @i^3377^Brazales de retal
 @i^3385^Poción de maná inferior
+@i^3476^Lengua de oso gris
+@i^3496^Sangre de león de montaña
 @i^3670^Hueso viscoso grande
 @i^3671^Calavera inerte
+@i^3702^Vejiga de bilis de oso
+@i^3730^Carne de oso grande
+@i^3731^Carne de león
 @i^3820^Alga estranguladora
 @i^3857^Carbón
 @i^3931^Colmillo de araña envenenado
 @i^4306^Paño de seda
 @i^4382^Marco de bronce
+@i^4428^Pulpa de araña
 @i^5116^Pluma de cola larga
 @i^5120^Pelo de cola larga
 @i^5135^Garra negra fina
@@ -78,6 +99,7 @@ GoldScout-export 6^xq3uv48tyx6a^6
 @i^5583^Escama de dragón hada
 @i^5584^Mostacho Crepuscular
 @i^5585^Ojo de trotador
+@i^5620^Vial de sangre inocente
 @i^5635^Garra afilada
 @i^5736^Brazo mecánico de Gerenzo
 @i^5784^Escama de múrloc babosa
@@ -90,8 +112,13 @@ GoldScout-export 6^xq3uv48tyx6a^6
 @i^6458^Pescado cubierto de aceite
 @i^6555^Capa de bardo
 @i^6558^Cinturón de bardo de poder
+@i^6592^Armadura Forjabatalla del profeta
+@i^6615^Guantes de sabio del búho
 @i^9775^Cincho de bandido del mono
+@i^9838^Capa a rayas del búho
 @i^11384^Diente de basilisco partido
+@i^11406^Cadáver de oso en descomposición
+@i^11407^Pelambre de oso rasgada
 @i^15511^Musleras de bruto de protección de Escarcha
 @i^15513^Espaldares de bruto del gorila
 @i^16190^Restos de desgarradora Furia Sangrienta
@@ -102,12 +129,15 @@ GoldScout-export 6^xq3uv48tyx6a^6
 @i^248682^Cajón arrebatado: Hierbas de aprendiz
 @i^248683^Cajón arrebatado: Mena de aprendiz
 @i^248704^Cajón arrebatado: Piezas de aprendiz
+@i^273032^Sello de atahuesos
 @i^277936^Piedrasol relumbrante
 @q^414^1:0:0
 @q^730^1:7:1
 @q^858^1:0:0
+@q^878^0:7:0
 @q^1081^1:7:1
 @q^1179^1:0:0
+@q^1206^2:7:1
 @q^1210^2:7:1
 @q^1497^0:4:0
 @q^1793^0:4:0
@@ -115,22 +145,31 @@ GoldScout-export 6^xq3uv48tyx6a^6
 @q^1802^0:4:0
 @q^1818^0:2:0
 @q^2216^0:4:0
+@q^2251^1:7:1
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2940^0:15:0
 @q^3012^1:0:0
 @q^3174^1:7:1
+@q^3182^1:7:1
 @q^3218^1:12:0
 @q^3236^1:12:0
 @q^3317^1:12:0
 @q^3377^0:4:0
 @q^3385^1:0:0
+@q^3476^1:12:0
+@q^3496^1:12:0
 @q^3670^0:15:0
 @q^3671^0:15:0
+@q^3702^0:15:0
+@q^3730^1:7:1
+@q^3731^1:7:1
 @q^3820^1:7:1
 @q^3857^1:7:1
 @q^3931^0:15:0
 @q^4306^1:7:1
 @q^4382^1:7:1
+@q^4428^0:15:0
 @q^5116^1:7:1
 @q^5120^0:15:0
 @q^5135^0:15:0
@@ -142,6 +181,7 @@ GoldScout-export 6^xq3uv48tyx6a^6
 @q^5583^1:12:0
 @q^5584^1:12:0
 @q^5585^1:12:0
+@q^5620^1:12:0
 @q^5635^1:7:1
 @q^5736^1:12:0
 @q^5784^1:7:1
@@ -154,8 +194,13 @@ GoldScout-export 6^xq3uv48tyx6a^6
 @q^6458^1:0:0
 @q^6555^1:4:0
 @q^6558^2:4:0
+@q^6592^2:4:0
+@q^6615^2:4:0
 @q^9775^2:4:0
+@q^9838^2:4:0
 @q^11384^0:15:0
+@q^11406^0:15:0
+@q^11407^1:12:0
 @q^15511^2:4:0
 @q^15513^2:4:0
 @q^16190^1:12:0
@@ -166,8 +211,11 @@ GoldScout-export 6^xq3uv48tyx6a^6
 @q^248682^1:0:1
 @q^248683^1:0:1
 @q^248704^2:0:1
+@q^273032^3:4:0
 @q^277936^1:12:0
+@m^1416^Montañas de Alterac
 @m^1421^Bosque de Argénteos
+@m^1424^Laderas de Trabalomas
 @m^1442^Sierra Espolón
 @m^1458^Entrañas
 @c^118^
@@ -1490,6 +1538,13 @@ GoldScout-export 6^xq3uv48tyx6a^6
 @a^1940^133:2,153:6
 @a^1953^153:1
 @a^2054^329:1
+@a^2244^192:1
+@a^2349^192:4,212:1
+@a^2350^91:1,111:1,132:1
+@a^2351^91:1,111:2,131:3
+@a^2354^129:1,130:2,169:3,170:1,171:1,189:1,190:1
+@a^2356^192:3,213:4
+@a^2384^130:1,151:1,169:3,171:2
 @a^2540^252:1
 @a^2676^152:1,172:1
 @a^3560^92:1,93:1

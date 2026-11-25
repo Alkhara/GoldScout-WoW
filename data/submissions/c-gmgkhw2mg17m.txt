@@ -1,4 +1,4 @@
-GoldScout-export 7^gmgkhw2mg17m^59
+GoldScout-export 7^gmgkhw2mg17m^60
 36^1^0^11^11^1436^0.3320^0.3822^1^Harvest Golem^1506:1:1^
 114^2^0^14^15^1436^0.3748^0.5132^2^Harvest Watcher^732:2:2,814:1:1,1274:1:1^
 122^1^0^17^17^1436^0.3627^0.8307^1^Defias Highwayman^^
@@ -84,8 +84,8 @@ GoldScout-export 7^gmgkhw2mg17m^59
 1868^3^0^13^14^1421^0.5165^0.3476^3^Ravenclaw Servant^2589:1:3^
 1869^5^0^14^15^1421^0.5491^0.3368^5^Ravenclaw Champion^2589:1:1^
 1870^5^0^15^16^1421^0.5776^0.3513^5^Hand of Ravenclaw^2589:1:2^
-1888^2^0^18^19^1421^0.5792^0.7790^2^Dalaran Watcher^2589:1:2^
-1889^1^0^20^20^1421^0.5976^0.7790^1^Dalaran Wizard^2592:1:1^
+1888^3^0^18^19^1421^0.5989^0.7812^3^Dalaran Watcher^2589:2:5^
+1889^1^0^19^20^1421^0.5976^0.7790^1^Dalaran Wizard^2592:1:1^
 1890^16^0^2^3^1420^0.3395^0.6345^16^Rattlecage Skeleton^159:1:1,1377:1:1,1380:1:1,2589:7:7,2654:1:1,3365:1:1,4604:1:1^
 1891^3^0^13^14^1421^0.4736^0.7294^3^Pyrewood Watcher^414:1:1,2589:1:3,2777:1:1,3218:2:2,211780:1:1^
 1892^2^0^13^14^1421^0.4640^0.7344^2^Moonrage Watcher^2589:1:5^
@@ -114,6 +114,11 @@ GoldScout-export 7^gmgkhw2mg17m^59
 2061^1^0^13^13^1421^0.4656^0.7405^1^Councilman Thatcher^^
 2063^1^0^13^13^1421^0.4656^0.7395^1^Councilman Wilhelm^^
 2065^1^0^13^13^1421^0.4651^0.7410^1^Councilman Cooper^^
+2266^1^0^24^24^1424^0.3524^0.4230^1^Hillsbrad Farmer^^
+2351^3^0^21^22^1424^0.4661^0.3530^3^Gray Bear^2940:1:1,11406:2:2,248703:1:1^
+2354^6^0^22^23^1424^0.4492^0.3742^6^Vicious Gray Bear^2940:3:3,3476:2:2,3730:1:1,5635:1:1,11406:1:1,11407:2:2^
+2360^1^0^22^23^1424^0.3630^0.4149^1^Hillsbrad Farmhand^2592:1:2^
+2384^3^0^23^24^1424^0.4556^0.3592^3^Starving Mountain Lion^3496:2:2,3731:1:1,5136:1:1,5635:1:1^
 2540^4^0^14^15^1421^0.5853^0.6401^4^Dalaran Serpent^^
 3099^1^0^6^7^1411^0.5296^0.4827^1^Dire Mottled Boar^769:1:1^
 3115^3^0^7^8^1411^0.4843^0.3216^3^Dustwind Harpy^2589:1:2^
@@ -559,6 +564,7 @@ GoldScout-export 7^gmgkhw2mg17m^59
 @i^2875^Scarlet Insignia Ring
 @i^2876^Duskbat Pelt
 @i^2885^Scarlet Crusade Documents
+@i^2940^Bloody Bear Paw
 @i^2972^Spellbinder Gloves
 @i^2975^Hunting Boots
 @i^2982^Seer's Pants
@@ -604,6 +610,8 @@ GoldScout-export 7^gmgkhw2mg17m^59
 @i^3399^Vulture Talon
 @i^3402^Soft Patch of Fur
 @i^3404^Buzzard Wing
+@i^3476^Gray Bear Tongue
+@i^3496^Mountain Lion Blood
 @i^3634^Head of Grimson
 @i^3635^Maggot Eye's Paw
 @i^3641^Journeyman's Bracers
@@ -613,6 +621,8 @@ GoldScout-export 7^gmgkhw2mg17m^59
 @i^3674^Decomposed Boot
 @i^3676^Slimy Ichor
 @i^3712^Turtle Meat
+@i^3730^Big Bear Meat
+@i^3731^Lion Meat
 @i^3771^Wild Hog Shank
 @i^3778^Taut Compound Bow
 @i^3779^Hefty War Axe
@@ -813,6 +823,8 @@ GoldScout-export 7^gmgkhw2mg17m^59
 @i^11384^Broken Basilisk Teeth
 @i^11385^Basilisk Scale
 @i^11386^Squishy Basilisk Eye
+@i^11406^Rotting Bear Carcass
+@i^11407^Torn Bear Pelt
 @i^11418^Hollow Wing Bone
 @i^12037^Mystery Meat
 @i^12202^Tiger Meat
@@ -865,6 +877,7 @@ GoldScout-export 7^gmgkhw2mg17m^59
 @i^248689^Waylaid Crate: Journeyman Curiosities
 @i^248691^Waylaid Crate: Flowering Expert Herbs
 @i^248692^Waylaid Crate: Expert Ore
+@i^248703^Waylaid Crate: Apprentice Ingots
 @i^248708^Waylaid Crate: Expert Fabrics
 @i^250187^Recipe: Tasty Raptor Bites
 @i^251918^Scrawny Ursera Claw
@@ -1091,6 +1104,7 @@ GoldScout-export 7^gmgkhw2mg17m^59
 @q^2875^1:12:0
 @q^2876^1:12:0
 @q^2885^1:12:0
+@q^2940^0:15:0
 @q^2972^1:4:0
 @q^2975^1:4:0
 @q^2982^2:4:0
@@ -1136,6 +1150,8 @@ GoldScout-export 7^gmgkhw2mg17m^59
 @q^3399^0:15:0
 @q^3402^0:15:0
 @q^3404^1:7:1
+@q^3476^1:12:0
+@q^3496^1:12:0
 @q^3634^1:12:0
 @q^3635^1:12:0
 @q^3641^1:4:0
@@ -1145,6 +1161,8 @@ GoldScout-export 7^gmgkhw2mg17m^59
 @q^3674^0:15:0
 @q^3676^0:15:0
 @q^3712^1:7:1
+@q^3730^1:7:1
+@q^3731^1:7:1
 @q^3771^1:0:0
 @q^3778^0:2:0
 @q^3779^0:2:0
@@ -1345,6 +1363,8 @@ GoldScout-export 7^gmgkhw2mg17m^59
 @q^11384^0:15:0
 @q^11385^0:15:0
 @q^11386^0:15:0
+@q^11406^0:15:0
+@q^11407^1:12:0
 @q^11418^0:15:0
 @q^12037^1:7:1
 @q^12202^1:7:1
@@ -1397,6 +1417,7 @@ GoldScout-export 7^gmgkhw2mg17m^59
 @q^248689^1:0:1
 @q^248691^1:0:1
 @q^248692^1:0:1
+@q^248703^2:0:1
 @q^248708^2:0:1
 @q^250187^1:9:0
 @q^251918^1:12:0
@@ -1483,6 +1504,7 @@ GoldScout-export 7^gmgkhw2mg17m^59
 @m^1415^Eastern Kingdoms
 @m^1420^Tirisfal Glades
 @m^1421^Silverpine Forest
+@m^1424^Hillsbrad Foothills
 @m^1434^Stranglethorn Vale
 @m^1436^Westfall
 @m^1440^Ashenvale
@@ -3611,7 +3633,7 @@ GoldScout-export 7^gmgkhw2mg17m^59
 @a^1868^130:2,150:1
 @a^1869^130:3,131:2
 @a^1870^131:2,151:3
-@a^1888^311:2
+@a^1888^311:2,312:1
 @a^1889^311:1
 @a^1890^246:16
 @a^1891^289:2,309:1
@@ -3641,6 +3663,11 @@ GoldScout-export 7^gmgkhw2mg17m^59
 @a^2061^289:1
 @a^2063^289:1
 @a^2065^289:1
+@a^2266^167:1
+@a^2351^111:1,131:1,184:1
+@a^2354^130:1,147:1,148:2,149:1,168:1
+@a^2360^167:1
+@a^2384^130:1,147:1,149:1
 @a^2540^251:3,271:1
 @a^3099^190:1
 @a^3115^129:3

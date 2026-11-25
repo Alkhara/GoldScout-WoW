@@ -1,4 +1,4 @@
-GoldScout-export 7^78fm33snnhmi^3
+GoldScout-export 7^78fm33snnhmi^4
 667^5^0^39^40^1434^0.4735^0.4022^5^Skullsplitter Warrior^1520:3:3,1524:3:3,4306:1:2,8153:1:3^
 669^5^0^41^42^1434^0.4661^0.4070^5^Skullsplitter Hunter^1520:2:2,1524:2:2,4306:1:2,4338:3:5,4599:1:1,8151:1:1^
 670^1^0^41^41^1434^0.4641^0.4053^1^Skullsplitter Witch Doctor^1524:1:1,4338:1:1^
@@ -11,12 +11,18 @@ GoldScout-export 7^78fm33snnhmi^3
 782^7^0^41^42^1434^0.4571^0.4199^7^Skullsplitter Scout^1520:2:2,1524:3:3,3938:1:1,4306:1:2,4338:1:1^
 783^1^0^43^44^1434^0.4745^0.4183^1^Skullsplitter Berserker^1524:1:1^
 1114^1^0^37^38^1434^0.4808^0.3394^1^Jungle Thunderer^4097:1:1,248690:1:1^
-1488^1^0^44^44^1434^0.3448^0.5020^1^Zanzil Zombie^4016:1:1,4306:1:1,6530:1:1^
+1488^9^0^43^44^1434^0.3736^0.5457^9^Zanzil Zombie^4016:3:3,4306:2:2,6530:3:3^
+1489^3^0^43^44^1434^0.4070^0.5684^3^Zanzil Hunter^2734:1:1,4016:1:1,6530:2:2^
+1490^8^0^44^44^1434^0.3740^0.5472^8^Zanzil Witch Doctor^2738:1:1,4016:3:3,4338:2:3,4422:1:1,8152:1:1,8153:1:1^
+1491^9^0^44^44^1434^0.3767^0.5531^9^Zanzil Naga^2734:1:1,4016:2:2,7973:4:4,17058:6:6^
 1492^1^0^47^47^1434^0.3584^0.7115^1^Gorlash^3932:1:1^
+1550^1^0^41^42^1434^0.3801^0.4977^1^Thrashtail Basilisk^4093:1:1^
 1561^7^0^40^41^1434^0.3212^0.7200^7^Bloodsail Raider^1707:1:1,2732:1:1,2738:1:1,3910:2:2,4306:3:6^
 1562^3^0^40^41^1434^0.3231^0.7292^3^Bloodsail Mage^2730:1:1,3910:1:1,4306:1:3^
 1565^1^0^45^45^1434^0.3300^0.5681^1^Bloodsail Sea Dog^^
 1653^3^0^44^45^1434^0.3162^0.6746^3^Bloodsail Elder Magus^3910:1:1,4338:1:1,9260:1:1^
+2530^1^0^41^41^1434^0.3914^0.5803^1^Yenniku^8153:1:1^
+2537^1^0^43^43^1434^0.4007^0.5818^1^Chucky Ten Thumbs^^
 2544^1^0^41^41^1434^0.2871^0.8709^1^Southern Sand Crawler^^
 2640^1^0^46^46^1425^0.4757^0.6958^1^Vilebranch Witch Doctor^4338:1:3^
 2650^1^0^41^41^1425^0.2762^0.5294^1^Witherbark Zealot^8151:1:1,9259:1:1^
@@ -58,6 +64,7 @@ GoldScout-export 7^78fm33snnhmi^3
 @i^2592^Wool Cloth
 @i^2730^Green Hills of Stranglethorn - Page 6
 @i^2732^Green Hills of Stranglethorn - Page 8
+@i^2734^Green Hills of Stranglethorn - Page 10
 @i^2738^Green Hills of Stranglethorn - Page 14
 @i^2745^Green Hills of Stranglethorn - Page 21
 @i^2780^Light Hunting Bow
@@ -76,6 +83,7 @@ GoldScout-export 7^78fm33snnhmi^3
 @i^4001^Overlinked Chain Boots
 @i^4016^Zanzil's Mixture
 @i^4022^Crushing Maul
+@i^4093^Large Basilisk Tail
 @i^4097^Chipped Gorilla Tooth
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
@@ -95,6 +103,7 @@ GoldScout-export 7^78fm33snnhmi^3
 @i^6530^Nightcrawlers
 @i^7973^Big-mouth Clam
 @i^8151^Flask of Mojo
+@i^8152^Flask of Big Mojo
 @i^8153^Wildvine
 @i^8395^Pattern: Tough Scorpid Breastplate
 @i^8483^Wastewander Water Pouch
@@ -113,6 +122,7 @@ GoldScout-export 7^78fm33snnhmi^3
 @i^14166^Buccaneer's Bracers of Fiery Wrath
 @i^14435^Windchaser Cinch
 @i^14784^Khan's Greaves
+@i^17058^Fish Oil
 @i^20519^Southsea Pirate Hat
 @i^248690^Waylaid Crate: Earthly Expert Herbs
 @i^248708^Waylaid Crate: Expert Fabrics
@@ -127,6 +137,7 @@ GoldScout-export 7^78fm33snnhmi^3
 @q^2592^1:7:1
 @q^2730^1:12:0
 @q^2732^1:12:0
+@q^2734^1:12:0
 @q^2738^1:12:0
 @q^2745^1:12:0
 @q^2780^0:2:0
@@ -145,6 +156,7 @@ GoldScout-export 7^78fm33snnhmi^3
 @q^4001^0:4:0
 @q^4016^1:12:0
 @q^4022^0:2:0
+@q^4093^0:15:0
 @q^4097^0:15:0
 @q^4306^1:7:1
 @q^4338^1:7:1
@@ -164,6 +176,7 @@ GoldScout-export 7^78fm33snnhmi^3
 @q^6530^1:0:0
 @q^7973^1:7:0
 @q^8151^1:7:1
+@q^8152^1:7:1
 @q^8153^1:7:1
 @q^8395^2:9:0
 @q^8483^1:12:0
@@ -182,6 +195,7 @@ GoldScout-export 7^78fm33snnhmi^3
 @q^14166^2:4:0
 @q^14435^2:4:0
 @q^14784^2:4:0
+@q^17058^1:15:0
 @q^20519^1:12:0
 @q^248690^1:0:1
 @q^248708^2:0:1
@@ -931,12 +945,18 @@ GoldScout-export 7^78fm33snnhmi^3
 @a^782^149:1,168:1,169:5
 @a^783^169:1
 @a^1114^129:1
-@a^1488^206:1
+@a^1488^206:4,227:3,228:2
+@a^1489^227:1,228:2
+@a^1490^206:4,227:2,228:2
+@a^1491^206:3,227:6
 @a^1492^287:1
+@a^1550^187:1
 @a^1561^286:7
 @a^1562^286:3
 @a^1565^226:1
 @a^1653^226:2,345:1
+@a^2530^227:1
+@a^2537^228:1
 @a^2544^345:1
 @a^2640^269:1
 @a^2650^205:1
@@ -973,10 +993,17 @@ GoldScout-export 7^78fm33snnhmi^3
 @t^782^6:389
 @t^783^1:22
 @t^1114^1:41
+@t^1488^6:242
+@t^1489^3:88
+@t^1490^7:155
+@t^1491^9:436
+@t^1550^1:133
 @t^1561^6:341
 @t^1562^2:57
 @t^1565^1:5
 @t^1653^2:43
+@t^2530^1:2
+@t^2537^1:26
 @t^2544^1:136
 @t^2640^1:64
 @t^2650^1:14
