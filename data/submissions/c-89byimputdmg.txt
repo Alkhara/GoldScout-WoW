@@ -1,4 +1,4 @@
-GoldScout-export 6^89byimputdmg^12
+GoldScout-export 6^89byimputdmg^13
 587^6^0^33^34^1434^0.2969^0.1943^6^Bloodscalp Warrior^1519:3:3,1520:1:1,3793:1:1,3796:1:1,3915:3:3,4306:2:3^
 657^1^0^0^0^0^0.0000^0.0000^0^^^
 682^1^0^32^33^1434^0.4756^0.1289^1^Stranglethorn Tiger^1686:1:1,12202:1:1^
@@ -71,6 +71,7 @@ GoldScout-export 6^89byimputdmg^12
 4481^1^0^34^34^1417^0.5486^0.3777^1^Marcel Dabyrie^5832:1:1^
 4504^1^0^37^37^1416^0.3733^0.6869^1^Frostmaw^5811:1:1^
 4723^1^0^38^38^1434^0.4267^0.1834^1^Foreman Cozzle^5851:1:1^
+4841^1^0^45^45^1445^0.4423^0.6186^1^Deadmire^5945:1:1^
 5600^1^0^35^35^1443^0.7293^0.4668^1^Khan Dez'hepah^6066:1:1^
 5937^2^0^35^35^1441^0.7006^0.7008^2^Vile Sting^1288:1:1,2565:1:1,12037:1:1,19937:1:1,285177:1:1^
 6206^1^0^0^0^0^0.0000^0.0000^0^^4306:1:3^
@@ -82,7 +83,21 @@ GoldScout-export 6^89byimputdmg^12
 6235^1^0^0^0^0^0.0000^0.0000^0^^6893:1:1^
 6329^3^0^0^0^0^0.0000^0.0000^0^^1827:1:1,9308:1:1^
 6407^2^0^0^0^0^0.0000^0.0000^0^^4306:1:2,9308:2:2^
+7327^1^0^34^34^0^0.0000^0.0000^0^Withered Warrior^4306:1:3^
+7328^2^0^0^0^0^0.0000^0.0000^0^^213544:1:1^
+7329^2^0^0^0^0^0.0000^0.0000^0^^4306:2:3^
+7332^1^0^34^34^0^0.0000^0.0000^0^Withered Spearhide^4306:1:2,4539:1:1^
+7334^3^0^0^0^0^0.0000^0.0000^0^^2295:3:3,2677:3:3,3172:1:1^
+7335^1^0^35^35^0^0.0000^0.0000^0^Death's Head Geomancer^^
+7337^2^0^0^0^0^0.0000^0.0000^0^^4306:1:2^
+7347^2^0^0^0^0^0.0000^0.0000^0^^6530:1:1^
+7353^1^0^0^0^0^0.0000^0.0000^0^^4607:1:1^
+7358^1^0^0^0^0^0.0000^0.0000^0^^10420:1:1^
 7800^1^0^0^0^0^0.0000^0.0000^0^^9299:1:1^
+7872^2^0^33^34^1413^0.4807^0.9067^2^Death's Head Cultist^4306:1:3^
+7873^2^0^33^34^1413^0.4628^0.9027^2^Razorfen Battleguard^2592:1:1,3827:1:1,4306:1:2^
+7874^2^0^33^34^1413^0.4728^0.8818^2^Razorfen Thornweaver^4306:1:4,4539:2:2^
+12865^3^0^36^36^1413^0.4757^0.9125^3^Ambassador Malcin^4306:1:1,17009:1:1,248694:1:1^
 246020^1^0^0^0^1416^0.0000^0.0000^0^^251961:1:1^
 246600^1^0^0^0^1416^0.0000^0.0000^0^^6438:1:1,276160:1:1^
 246664^2^0^0^0^1416^0.0000^0.0000^0^^6439:1:1,248709:1:1,275997:2:2,276160:1:1^
@@ -117,12 +132,15 @@ GoldScout-export 6^89byimputdmg^12
 @i^1827^Meat Cleaver
 @i^1944^Metalworking Gloves
 @i^2289^Scroll of Strength II
+@i^2295^Large Boar Tusk
 @i^2565^Rod of Molten Fire
 @i^2592^Wool Cloth
+@i^2677^Boar Ribs
 @i^2734^Green Hills of Stranglethorn - Page 10
 @i^2738^Green Hills of Stranglethorn - Page 14
 @i^2745^Green Hills of Stranglethorn - Page 21
 @i^2838^Heavy Stone
+@i^3172^Boar Intestines
 @i^3399^Vulture Talon
 @i^3601^Syndicate Missive
 @i^3626^Head of Baron Vardus
@@ -159,9 +177,11 @@ GoldScout-export 6^89byimputdmg^12
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4461^Raptor Hide
+@i^4539^Goldenbark Apple
 @i^4553^Jagged Piece of Stone
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
+@i^4607^Delicious Cave Mold
 @i^4614^Pendant of Myzrael
 @i^4784^Lifeless Stone
 @i^5113^Mark of the Syndicate
@@ -186,6 +206,7 @@ GoldScout-export 6^89byimputdmg^12
 @i^5854^Silithid Talon
 @i^5855^Silithid Heart
 @i^5877^Cracked Silithid Carapace
+@i^5945^Deadmire's Tooth
 @i^6066^Khan Dez'hepah's Head
 @i^6300^Husk Fragment
 @i^6302^Delicate Insect Wing
@@ -193,6 +214,7 @@ GoldScout-export 6^89byimputdmg^12
 @i^6362^Raw Rockscale Cod
 @i^6438^Dull Elemental Bracer
 @i^6439^Broken Binding Bracer
+@i^6530^Nightcrawlers
 @i^6893^Workshop Key
 @i^7067^Elemental Earth
 @i^8150^Deeprock Salt
@@ -202,6 +224,7 @@ GoldScout-export 6^89byimputdmg^12
 @i^9326^Grime-Encrusted Ring
 @i^9867^Renegade Cloak of the Bear
 @i^9890^Huntsman's Cape of Intellect
+@i^10420^Skull of the Coldbringer
 @i^11384^Broken Basilisk Teeth
 @i^11385^Basilisk Scale
 @i^11386^Squishy Basilisk Eye
@@ -212,6 +235,7 @@ GoldScout-export 6^89byimputdmg^12
 @i^12202^Tiger Meat
 @i^14198^Thistlefur Cloak of Intellect
 @i^15918^Conjurer's Sphere of Agility
+@i^17009^Ambassador Malcin's Head
 @i^17056^Light Feather
 @i^19937^Small Scorpid Claw
 @i^19938^Heavy Scorpid Leg
@@ -253,12 +277,15 @@ GoldScout-export 6^89byimputdmg^12
 @q^1827^0:2:0
 @q^1944^2:4:0
 @q^2289^1:0:0
+@q^2295^0:15:0
 @q^2565^3:4:0
 @q^2592^1:7:1
+@q^2677^1:7:1
 @q^2734^1:12:0
 @q^2738^1:12:0
 @q^2745^1:12:0
 @q^2838^1:7:1
+@q^3172^1:7:1
 @q^3399^0:15:0
 @q^3601^1:12:0
 @q^3626^1:12:0
@@ -295,9 +322,11 @@ GoldScout-export 6^89byimputdmg^12
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4461^1:7:1
+@q^4539^1:0:0
 @q^4553^0:15:0
 @q^4555^0:15:0
 @q^4556^0:15:0
+@q^4607^1:0:0
 @q^4614^2:4:0
 @q^4784^0:15:0
 @q^5113^0:15:0
@@ -322,6 +351,7 @@ GoldScout-export 6^89byimputdmg^12
 @q^5854^1:12:0
 @q^5855^1:12:0
 @q^5877^1:12:0
+@q^5945^1:12:0
 @q^6066^1:12:0
 @q^6300^0:15:0
 @q^6302^0:15:0
@@ -329,6 +359,7 @@ GoldScout-export 6^89byimputdmg^12
 @q^6362^1:7:1
 @q^6438^0:15:0
 @q^6439^0:15:0
+@q^6530^1:0:0
 @q^6893^1:13:0
 @q^7067^1:7:1
 @q^8150^1:7:1
@@ -338,6 +369,7 @@ GoldScout-export 6^89byimputdmg^12
 @q^9326^1:12:0
 @q^9867^2:4:0
 @q^9890^2:4:0
+@q^10420^1:12:0
 @q^11384^0:15:0
 @q^11385^0:15:0
 @q^11386^0:15:0
@@ -348,6 +380,7 @@ GoldScout-export 6^89byimputdmg^12
 @q^12202^1:7:1
 @q^14198^2:4:0
 @q^15918^2:4:0
+@q^17009^1:12:0
 @q^17056^1:15:1
 @q^19937^0:15:0
 @q^19938^0:15:0
@@ -368,12 +401,14 @@ GoldScout-export 6^89byimputdmg^12
 @q^284844^1:12:0
 @q^285177^3:4:0
 @m^1412^Mulgore
+@m^1413^The Barrens
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
 @m^1424^Hillsbrad Foothills
 @m^1434^Stranglethorn Vale
 @m^1441^Thousand Needles
 @m^1443^Desolace
+@m^1445^Dustwallow Marsh
 @c^118^
 @c^858^
 @c^929^
@@ -1071,8 +1106,13 @@ GoldScout-export 6^89byimputdmg^12
 @a^4481^150:1
 @a^4504^267:1
 @a^4723^68:1
+@a^4841^248:1
 @a^5600^194:1
 @a^5937^273:1,294:1
+@a^7872^349:1,369:1
+@a^7873^369:2
+@a^7874^349:2
+@a^12865^369:3
 @a^264082^26:1
 @a^266357^192:1
 @l^0^enUS

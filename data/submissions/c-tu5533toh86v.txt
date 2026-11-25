@@ -1,6 +1,12 @@
-GoldScout-export 7^tu5533toh86v^5
+GoldScout-export 7^tu5533toh86v^6
 2559^2^0^30^31^1417^0.5861^0.3754^2^Highland Strider^4586:1:1^
 2578^1^0^32^32^1417^0.6993^0.3638^1^Young Mesa Buzzard^1464:1:1,11416:1:1^
+3989^7^2^18^19^1442^0.7440^0.5934^7^Venture Co. Logger^1179:2:2,2592:3:5^858:1:1
+3991^6^2^19^20^1442^0.7437^0.5907^6^Venture Co. Deforester^1764:1:1,1814:1:1,2589:1:2,2592:2:3,2780:1:1^
+3999^21^69^21^22^1442^0.7290^0.6070^21^Windshear Digger^1205:1:1,2592:4:5,4538:3:3,15115:1:1^929:1:1,1705:1:1,3770:4:4,5375:8:8,16882:13:13
+4001^1^1^20^20^1442^0.7187^0.6094^1^Windshear Tunnel Rat^^
+4003^10^12^20^21^1442^0.7376^0.5992^10^Windshear Geomancer^2589:3:6,2592:1:2^3770:2:2,5375:2:2,16882:3:3
+4004^6^6^21^22^1442^0.7347^0.6021^6^Windshear Overlord^929:1:1,2592:1:2,4306:2:2,248686:1:1^5375:2:2
 4093^8^5^25^26^1441^0.4298^0.3821^8^Galak Wrangler^1205:2:2,1749:1:1,4306:1:1^3770:2:2,5375:1:1
 4094^6^3^24^25^1441^0.4406^0.3917^6^Galak Scout^4306:3:6,15515:1:1^5375:1:1,16882:2:2
 4095^1^2^27^28^1441^0.1722^0.2232^1^Galak Mauler^^
@@ -51,20 +57,27 @@ GoldScout-export 7^tu5533toh86v^5
 275044^2^0^0^0^0^0.0000^0.0000^0^^929:1:1^
 275045^1^1^0^0^0^0.0000^0.0000^0^^^
 275046^2^0^0^0^0^0.0000^0.0000^0^^284844:1:1^
+@i^858^Lesser Healing Potion
 @i^878^Fist-sized Spinneret
 @i^929^Healing Potion
 @i^1081^Crisp Spider Meat
+@i^1179^Ice Cold Milk
 @i^1205^Melon Juice
 @i^1464^Buzzard Talon
 @i^1475^Small Venom Sac
 @i^1697^Keen Raptor Tooth
+@i^1705^Lesser Moonstone
 @i^1749^Linked Chain Cloak
+@i^1764^Canvas Shoes
 @i^1803^Tough Leather Belt
 @i^1809^Tough Leather Shoulderpads
+@i^1814^Battered Mallet
 @i^1831^Oaken War Staff
 @i^2221^Targe Shield
 @i^2447^Peacebloom
+@i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2780^Light Hunting Bow
 @i^2785^Stiff Recurve Bow
 @i^2786^Oiled Blunderbuss
 @i^3069^Bright Robe
@@ -77,6 +90,7 @@ GoldScout-export 7^tu5533toh86v^5
 @i^3770^Mutton Chop
 @i^3931^Poisoned Spider Fang
 @i^4306^Silk Cloth
+@i^4538^Snapvine Watermelon
 @i^4555^Thick Scaly Tail
 @i^4586^Smooth Raptor Skin
 @i^4606^Spongy Morel
@@ -100,10 +114,12 @@ GoldScout-export 7^tu5533toh86v^5
 @i^12884^Arnak's Hoof
 @i^12946^Hypercapacitor Gizmo
 @i^14380^Sanguine Robe
+@i^15115^Rigid Gloves of the Owl
 @i^15515^Spiked Chain Belt of Stamina
 @i^15523^Spiked Chain Shoulder Pads of the Owl
 @i^16882^Battered Junkbox
 @i^17056^Light Feather
+@i^248686^Waylaid Crate: Journeyman Herbs
 @i^248687^Waylaid Crate: Journeyman Ore
 @i^271100^Thicket Raptor Meat
 @i^273001^Gloomrise Toxin Sample
@@ -111,20 +127,27 @@ GoldScout-export 7^tu5533toh86v^5
 @i^273181^Crystalline Silk
 @i^273658^Bloody Parchment
 @i^284844^Dragonmaw Dispatch
+@q^858^1:0:0
 @q^878^0:7:0
 @q^929^1:0:0
 @q^1081^1:7:1
+@q^1179^1:0:0
 @q^1205^1:0:0
 @q^1464^0:15:0
 @q^1475^1:7:1
 @q^1697^0:15:0
+@q^1705^2:7:1
 @q^1749^0:4:0
+@q^1764^0:4:0
 @q^1803^0:4:0
 @q^1809^0:4:0
+@q^1814^0:2:0
 @q^1831^0:2:0
 @q^2221^0:4:0
 @q^2447^1:7:1
+@q^2589^1:7:1
 @q^2592^1:7:1
+@q^2780^0:2:0
 @q^2785^0:2:0
 @q^2786^0:2:0
 @q^3069^2:4:0
@@ -137,6 +160,7 @@ GoldScout-export 7^tu5533toh86v^5
 @q^3770^1:0:0
 @q^3931^0:15:0
 @q^4306^1:7:1
+@q^4538^1:0:0
 @q^4555^0:15:0
 @q^4586^0:15:0
 @q^4606^1:0:0
@@ -160,10 +184,12 @@ GoldScout-export 7^tu5533toh86v^5
 @q^12884^1:0:0
 @q^12946^1:12:0
 @q^14380^2:4:0
+@q^15115^2:4:0
 @q^15515^2:4:0
 @q^15523^2:4:0
 @q^16882^1:15:0
 @q^17056^1:15:1
+@q^248686^1:0:1
 @q^248687^1:0:1
 @q^271100^1:12:0
 @q^273001^1:12:0
@@ -175,6 +201,7 @@ GoldScout-export 7^tu5533toh86v^5
 @m^1417^Arathi Highlands
 @m^1437^Wetlands
 @m^1441^Thousand Needles
+@m^1442^Stonetalon Mountains
 @c^118^
 @c^724^
 @c^733^
@@ -925,6 +952,12 @@ GoldScout-export 7^tu5533toh86v^5
 @c^286152^
 @a^2559^149:1,153:1
 @a^2578^153:1
+@a^3989^234:7
+@a^3991^234:6
+@a^3999^234:6,254:15
+@a^4001^254:1
+@a^4003^234:8,254:2
+@a^4004^234:3,254:3
 @a^4093^127:1,148:4,149:1,168:1,169:1
 @a^4094^127:1,148:1,149:1,169:3
 @a^4095^83:1
@@ -964,4 +997,9 @@ GoldScout-export 7^tu5533toh86v^5
 @a^264083^26:1,46:5
 @a^264096^26:2,46:1
 @t^2578^1:29
+@t^3989^6:189
+@t^3991^5:90
+@t^3999^20:2040
+@t^4003^10:189
+@t^4004^6:294
 @l^0^enUS

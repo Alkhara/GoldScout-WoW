@@ -1,4 +1,4 @@
-GoldScout-export 6^o1c37gaea9cp^5
+GoldScout-export 6^o1c37gaea9cp^6
 1765^1^0^11^11^1421^0.4639^0.4431^1^Worg^2672:1:1^
 1769^1^0^10^11^1421^0.4765^0.3427^1^Moonrage Whitescalp^^
 1778^1^0^12^12^1421^0.4613^0.3258^1^Ferocious Grizzled Bear^^
@@ -23,6 +23,8 @@ GoldScout-export 6^o1c37gaea9cp^5
 2377^1^0^32^32^1424^0.3442^0.6661^1^Torn Fin Tidehunter^3510:1:1^
 2384^1^0^23^23^1424^0.5172^0.3614^1^Starving Mountain Lion^3731:1:1^
 2449^1^0^25^25^1424^0.3279^0.4155^1^Citizen Wilkes^^
+3818^4^0^26^26^1440^0.6965^0.6333^4^Elder Shadowhorn Stag^5471:1:1,5566:2:2^
+3825^2^0^27^28^1440^0.7014^0.6331^2^Ghostpaw Alpha^^
 3851^2^0^0^0^0^0.0000^0.0000^0^^2983:1:1,6528:1:1^
 3857^1^0^0^0^0^0.0000^0.0000^0^^1749:1:1^
 3861^1^0^0^0^0^0.0000^0.0000^0^^1015:1:1^
@@ -59,7 +61,9 @@ GoldScout-export 6^o1c37gaea9cp^5
 @i^3857^Coal
 @i^4306^Silk Cloth
 @i^5117^Vibrant Plume
+@i^5471^Stag Meat
 @i^5524^Thick-shelled Clam
+@i^5566^Broken Antler
 @i^5635^Sharp Claw
 @i^6299^Sickly Looking Fish
 @i^6308^Raw Bristle Whisker Catfish
@@ -98,7 +102,9 @@ GoldScout-export 6^o1c37gaea9cp^5
 @q^3857^1:7:1
 @q^4306^1:7:1
 @q^5117^1:12:0
+@q^5471^1:7:1
 @q^5524^1:7:0
+@q^5566^0:15:0
 @q^5635^1:7:1
 @q^6299^1:0:0
 @q^6308^1:7:1
@@ -121,6 +127,7 @@ GoldScout-export 6^o1c37gaea9cp^5
 @q^277936^1:12:0
 @m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
+@m^1440^Ashenvale
 @m^1442^Stonetalon Mountains
 @m^1458^Undercity
 @c^724^
@@ -285,6 +292,8 @@ GoldScout-export 6^o1c37gaea9cp^5
 @a^2377^266:1
 @a^2384^150:1
 @a^2449^166:1
+@a^3818^253:2,254:2
+@a^3825^253:1,254:1
 @a^4022^245:1,246:1
 @a^4023^265:2,285:1
 @a^4024^265:1
