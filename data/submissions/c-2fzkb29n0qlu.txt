@@ -1,4 +1,4 @@
-GoldScout-export 7^2fzkb29n0qlu^7
+GoldScout-export 7^2fzkb29n0qlu^8
 589^3^0^14^15^1436^0.3459^0.5369^3^Defias Pillager^^
 590^4^0^13^14^1436^0.4014^0.6124^4^Defias Looter^^
 6200^1^0^52^52^1447^0.5914^0.2149^1^Legashi Satyr^235256:1:1^
@@ -32,6 +32,10 @@ GoldScout-export 7^2fzkb29n0qlu^7
 236867^4^0^53^54^1447^0.6446^0.1856^4^Legashi Soulstealer^14047:1:1,235256:2:2^
 236874^3^0^53^54^1447^0.6624^0.1961^3^Legashi Hellraiser^14047:1:1,235256:1:1^
 236876^2^0^53^54^1447^0.6581^0.2142^2^Legashi Blackguard^13491:1:1,14047:1:1,235256:2:2^
+249224^9^0^57^58^2482^0.3634^0.4654^9^Child of Tortolla^3712:5:5,4555:5:5,4556:3:3,7973:1:1,250176:1:1^
+249229^2^0^58^59^2482^0.5110^0.3545^2^Felguard Sentinel^8948:1:3,14047:1:2^
+249493^1^0^59^59^2482^0.7576^0.3277^1^Nightsaber Guardian^8146:1:1^
+249551^2^0^60^60^2482^0.7576^0.3277^2^Blackthorne Cultist^14047:1:2^
 251284^8^0^6^7^2521^0.3578^0.5480^8^Hippogryph Protector^4775:7:7,4776:1:1,6889:4:4^
 257900^8^0^0^0^1415^0.0000^0.0000^0^^4306:3:4^
 258042^7^0^0^0^1415^0.0000^0.0000^0^^4422:1:1,8749:1:1^
@@ -49,6 +53,7 @@ GoldScout-export 7^2fzkb29n0qlu^7
 263397^3^0^0^0^0^0.0000^0.0000^0^^2589:1:4,4541:1:1,9746:1:1,275893:1:1^
 263438^5^0^0^0^0^0.0000^0.0000^0^^818:1:1,1511:1:1,2589:1:1,4541:1:1,6558:1:1^
 263470^1^0^0^0^0^0.0000^0.0000^0^^2672:1:1^
+264570^2^0^60^60^2482^0.7576^0.3277^2^Blackthorne Adept^8766:2:2^
 @i^818^Tigerseye
 @i^1499^Calico Pants
 @i^1501^Calico Tunic
@@ -63,6 +68,7 @@ GoldScout-export 7^2fzkb29n0qlu^7
 @i^2975^Hunting Boots
 @i^3669^Gelatinous Goo
 @i^3676^Slimy Ichor
+@i^3712^Turtle Meat
 @i^3928^Superior Healing Potion
 @i^3973^Smooth Leather Gloves
 @i^4306^Silk Cloth
@@ -71,6 +77,8 @@ GoldScout-export 7^2fzkb29n0qlu^7
 @i^4460^Ripped Wing Webbing
 @i^4541^Freshly Baked Bread
 @i^4552^Smooth Stone Chip
+@i^4555^Thick Scaly Tail
+@i^4556^Speckled Shell Fragment
 @i^4557^Fiery Gland
 @i^4583^Thick Furry Mane
 @i^4584^Large Trophy Paw
@@ -90,9 +98,12 @@ GoldScout-export 7^2fzkb29n0qlu^7
 @i^7081^Breath of Wind
 @i^7082^Essence of Air
 @i^7912^Solid Stone
+@i^7973^Big-mouth Clam
 @i^8146^Wicked Claw
 @i^8150^Deeprock Salt
 @i^8749^Crochet Hat
+@i^8766^Morning Glory Dew
+@i^8948^Dried King Bolete
 @i^8952^Roasted Quail
 @i^9746^Simple Gloves
 @i^9757^Nomad Tunic of Power
@@ -115,6 +126,7 @@ GoldScout-export 7^2fzkb29n0qlu^7
 @i^211780^Scroll: KWYJIBO
 @i^211787^Scroll: LOWER PING WHOMEVER
 @i^235256^Severed Legashi Horn
+@i^250176^Recipe: Savory Turtle Stew
 @i^262890^Sealed Artisan's Writ
 @i^270227^Ephemeral Choker
 @i^270228^Golemheart Stave
@@ -140,6 +152,7 @@ GoldScout-export 7^2fzkb29n0qlu^7
 @q^2975^1:4:0
 @q^3669^0:15:0
 @q^3676^0:15:0
+@q^3712^1:7:1
 @q^3928^1:0:0
 @q^3973^0:4:0
 @q^4306^1:7:1
@@ -148,6 +161,8 @@ GoldScout-export 7^2fzkb29n0qlu^7
 @q^4460^0:15:0
 @q^4541^1:0:0
 @q^4552^0:15:0
+@q^4555^0:15:0
+@q^4556^0:15:0
 @q^4557^0:15:0
 @q^4583^0:15:0
 @q^4584^0:15:0
@@ -167,9 +182,12 @@ GoldScout-export 7^2fzkb29n0qlu^7
 @q^7081^1:7:1
 @q^7082^2:7:1
 @q^7912^1:7:1
+@q^7973^1:7:0
 @q^8146^1:7:1
 @q^8150^1:7:1
 @q^8749^0:4:0
+@q^8766^1:0:0
+@q^8948^1:0:0
 @q^8952^1:0:0
 @q^9746^1:4:0
 @q^9757^2:4:0
@@ -192,6 +210,7 @@ GoldScout-export 7^2fzkb29n0qlu^7
 @q^211780^1:0:0
 @q^211787^1:0:0
 @q^235256^1:12:0
+@q^250176^1:9:0
 @q^262890^3:0:0
 @q^270227^3:4:0
 @q^270228^3:2:0
@@ -210,6 +229,7 @@ GoldScout-export 7^2fzkb29n0qlu^7
 @m^1449^Un'Goro Crater
 @m^1451^Silithus
 @m^1452^Winterspring
+@m^2482^Mount Hyjal
 @m^2521^Zephras Isle
 @c^724^
 @c^733^
@@ -400,7 +420,17 @@ GoldScout-export 7^2fzkb29n0qlu^7
 @a^236867^72:2,73:2
 @a^236874^73:2,93:1
 @a^236876^93:2
+@a^249224^167:4,186:1,187:4
+@a^249229^150:2
+@a^249493^135:1
+@a^249551^135:2
 @a^251284^207:3,226:2,227:3
+@a^264570^135:2
 @t^589^1:20
 @t^590^1:17
+@t^249224^9:518
+@t^249229^1:1
+@t^249493^1:1
+@t^249551^2:1
+@t^264570^1:1
 @l^0^enUS

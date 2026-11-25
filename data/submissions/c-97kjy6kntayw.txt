@@ -1,11 +1,13 @@
-GoldScout-export 5^97kjy6kntayw^17
+GoldScout-export 5^97kjy6kntayw^18
 46^1^0^10^10^1429^0.7463^0.8556^1^Murloc Forager^1412:1:1^
 203^2^0^22^22^1431^0.7997^0.7394^2^Skeletal Mage^^
 205^6^0^28^29^1431^0.6440^0.6369^6^Nightbane Dark Runner^^
 206^3^0^29^29^1431^0.7029^0.7694^3^Nightbane Vile Fang^^
 212^1^0^30^30^1431^0.3410^0.7531^1^Splinter Fist Warrior^^
+441^1^0^17^18^1433^0.2720^0.6150^1^Black Dragon Whelp^^
 524^2^0^8^8^1429^0.7318^0.8323^2^Rockhide Boar^3171:1:1,8177:1:1^
 533^4^0^27^28^1431^0.6536^0.4558^4^Nightbane Shadow Weaver^1205:1:1^
+547^1^0^16^17^1433^0.2874^0.6144^1^Great Goretusk^769:1:2,3172:1:1^
 565^1^0^20^20^1431^0.7804^0.2393^1^Rabid Dire Wolf^1015:1:1^
 628^5^0^24^25^1431^0.5764^0.5217^5^Black Ravager^1015:3:3,3301:1:1,3402:1:1^
 889^2^0^25^26^1431^0.3943^0.7553^2^Splinter Fist Ogre^1800:1:1^
@@ -194,6 +196,7 @@ GoldScout-export 5^97kjy6kntayw^17
 275044^2^0^0^0^0^0.0000^0.0000^0^^4306:1:1^
 @i^422^Dwarven Mild
 @i^730^Murloc Eye
+@i^769^Chunk of Boar Meat
 @i^770^Pointy Crocolisk Tooth
 @i^771^Chipped Boar Tusk
 @i^785^Mageroyal
@@ -269,6 +272,7 @@ GoldScout-export 5^97kjy6kntayw^17
 @i^3074^Smoldering Gloves
 @i^3170^Large Bear Tooth
 @i^3171^Broken Boar Tusk
+@i^3172^Boar Intestines
 @i^3174^Spider Ichor
 @i^3175^Ruined Dragonhide
 @i^3176^Small Claw
@@ -406,6 +410,7 @@ GoldScout-export 5^97kjy6kntayw^17
 @i^284845^Thicket Raptor Hide
 @q^422^1:0:0
 @q^730^1:7:1
+@q^769^1:7:1
 @q^770^0:15:0
 @q^771^0:15:0
 @q^785^1:7:1
@@ -481,6 +486,7 @@ GoldScout-export 5^97kjy6kntayw^17
 @q^3074^2:4:0
 @q^3170^0:15:0
 @q^3171^0:15:0
+@q^3172^1:7:1
 @q^3174^1:7:1
 @q^3175^0:15:0
 @q^3176^0:15:0
@@ -624,6 +630,7 @@ GoldScout-export 5^97kjy6kntayw^17
 @m^1429^Elwynn Forest
 @m^1431^Duskwood
 @m^1432^Loch Modan
+@m^1433^Redridge Mountains
 @m^1437^Wetlands
 @m^1439^Darkshore
 @m^1440^Ashenvale
@@ -1291,8 +1298,10 @@ GoldScout-export 5^97kjy6kntayw^17
 @a^205^172:1,193:1,252:1,272:1,312:1,313:1
 @a^206^312:1,314:2
 @a^212^306:1
+@a^441^245:1
 @a^524^334:2
 @a^533^171:1,173:1,193:2
+@a^547^245:1
 @a^565^95:1
 @a^628^153:1,210:1,230:2,231:1
 @a^889^287:1,307:1

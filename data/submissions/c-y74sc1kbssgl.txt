@@ -1,4 +1,4 @@
-GoldScout-export 7^y74sc1kbssgl^32
+GoldScout-export 7^y74sc1kbssgl^34
 587^18^0^33^34^1434^0.3084^0.1906^18^Bloodscalp Warrior^1519:6:6,1520:4:4,1708:1:1,2592:1:1,2735:1:1,3771:1:1,3901:2:2,3915:6:6,4306:3:4,262888:1:1^
 588^8^0^34^35^1434^0.2404^0.1185^8^Bloodscalp Scout^3771:2:2,3915:1:1^
 595^18^0^34^35^1434^0.2468^0.1128^18^Bloodscalp Hunter^2740:1:1,4306:9:13^
@@ -239,10 +239,10 @@ GoldScout-export 7^y74sc1kbssgl^32
 7725^9^0^42^43^1444^0.6999^0.3877^9^Grimtotem Raider^4338:4:6,9460:9:15^
 7726^1^0^41^41^1444^0.7008^0.3806^1^Grimtotem Naturalist^^
 7727^4^0^43^44^1444^0.6951^0.3881^4^Grimtotem Shaman^4306:1:2,4338:1:1,9460:4:5^
-7855^8^0^44^45^1446^0.7222^0.4578^8^Southsea Pirate^3927:2:2,4306:2:3,4338:3:4,9260:1:1,9276:2:2,251397:1:1^
-7856^16^0^44^45^1446^0.7232^0.4525^16^Southsea Freebooter^4306:1:1,4338:4:5,9260:1:1,9276:1:1^
-7857^4^0^44^45^1446^0.7296^0.4761^4^Southsea Dock Worker^4338:1:1^
-7858^3^0^45^45^1446^0.7290^0.4795^3^Southsea Swashbuckler^1645:1:1,4306:1:2,4338:1:2,9260:1:1^
+7855^24^0^44^45^1446^0.7226^0.4564^24^Southsea Pirate^3927:5:5,4306:3:4,4338:6:8,9260:3:3,9276:2:2,20519:5:5,248695:1:1,251397:1:1^
+7856^34^0^44^45^1446^0.7253^0.4577^34^Southsea Freebooter^3964:1:1,4306:1:1,4338:11:14,4424:1:1,6149:1:1,9260:3:3,9276:2:2,20519:8:8^
+7857^14^0^44^45^1446^0.7392^0.4754^14^Southsea Dock Worker^1645:1:1,3927:1:1,3941:1:1,4338:4:5,9260:1:1,9276:2:2,20519:4:4,262889:1:1^
+7858^13^0^44^45^1446^0.7300^0.4653^13^Southsea Swashbuckler^1645:1:1,3927:1:1,3928:1:1,3967:1:1,4001:1:1,4306:2:3,4338:3:5,9260:1:1,9276:2:2,20519:3:3^
 7883^1^0^45^45^1446^0.7230^0.4831^1^Andre Firebeard^3927:1:1,4338:1:2,9246:1:1^
 11562^3^0^34^34^1443^0.3369^0.3045^3^Drysnap Crawler^3827:1:1,15878:1:1,17057:1:1^
 11563^2^0^34^35^1443^0.3320^0.2888^2^Drysnap Pincer^2289:1:1^
@@ -481,10 +481,12 @@ GoldScout-export 7^y74sc1kbssgl^32
 @i^3938^Crochet Bracers
 @i^3939^Crochet Cloak
 @i^3940^Crochet Gloves
+@i^3941^Crochet Pants
 @i^3942^Crochet Shoulderpads
 @i^3943^Crochet Vest
 @i^3964^Thick Cloak
 @i^3966^Thick Leather Pants
+@i^3967^Thick Leather Shoulderpads
 @i^4001^Overlinked Chain Boots
 @i^4007^Overlinked Chain Armor
 @i^4019^Heavy Flint Axe
@@ -510,6 +512,7 @@ GoldScout-export 7^y74sc1kbssgl^32
 @i^4419^Scroll of Intellect III
 @i^4421^Scroll of Protection III
 @i^4422^Scroll of Stamina III
+@i^4424^Scroll of Spirit III
 @i^4435^Mote of Myzrael
 @i^4459^Brittle Dragon Bone
 @i^4460^Ripped Wing Webbing
@@ -670,6 +673,7 @@ GoldScout-export 7^y74sc1kbssgl^32
 @i^18962^Stinglasher's Glands
 @i^19509^Dusty Mail Boots
 @i^19938^Heavy Scorpid Leg
+@i^20519^Southsea Pirate Hat
 @i^20763^Broken Weapon
 @i^20767^Scum Covered Bag
 @i^21150^Iron Bound Trunk
@@ -691,6 +695,7 @@ GoldScout-export 7^y74sc1kbssgl^32
 @i^248692^Waylaid Crate: Expert Ore
 @i^248693^Waylaid Crate: Expert Textiles
 @i^248694^Waylaid Crate: Expert Curiosities
+@i^248695^Waylaid Crate: Earthly Artisan Herbs
 @i^248705^Waylaid Crate: Journeyman Fabrics
 @i^248709^Waylaid Crate: Expert Ingots
 @i^250186^Recipe: Giant Scrambled Eggs
@@ -878,10 +883,12 @@ GoldScout-export 7^y74sc1kbssgl^32
 @q^3938^0:4:0
 @q^3939^0:4:0
 @q^3940^0:4:0
+@q^3941^0:4:0
 @q^3942^0:4:0
 @q^3943^0:4:0
 @q^3964^0:4:0
 @q^3966^0:4:0
+@q^3967^0:4:0
 @q^4001^0:4:0
 @q^4007^0:4:0
 @q^4019^0:2:0
@@ -907,6 +914,7 @@ GoldScout-export 7^y74sc1kbssgl^32
 @q^4419^1:0:0
 @q^4421^1:0:0
 @q^4422^1:0:0
+@q^4424^1:0:0
 @q^4435^1:12:0
 @q^4459^0:15:0
 @q^4460^0:15:0
@@ -1067,6 +1075,7 @@ GoldScout-export 7^y74sc1kbssgl^32
 @q^18962^1:12:0
 @q^19509^3:4:0
 @q^19938^0:15:0
+@q^20519^1:12:0
 @q^20763^0:15:0
 @q^20767^1:15:0
 @q^21150^1:15:0
@@ -1088,6 +1097,7 @@ GoldScout-export 7^y74sc1kbssgl^32
 @q^248692^1:0:1
 @q^248693^1:0:1
 @q^248694^1:0:1
+@q^248695^1:0:1
 @q^248705^2:0:1
 @q^248709^2:0:1
 @q^250186^1:9:0
@@ -2772,10 +2782,10 @@ GoldScout-export 7^y74sc1kbssgl^32
 @a^7725^153:3,154:4,173:1,174:1
 @a^7726^154:1
 @a^7727^153:4
-@a^7855^174:3,194:5
-@a^7856^174:5,194:11
-@a^7857^194:4
-@a^7858^194:3
+@a^7855^174:8,194:16
+@a^7856^174:9,194:25
+@a^7857^194:14
+@a^7858^174:2,194:11
 @a^7883^194:1
 @a^11562^126:3
 @a^11563^106:2
@@ -2888,10 +2898,10 @@ GoldScout-export 7^y74sc1kbssgl^32
 @t^2541^1:52
 @t^4505^6:440
 @t^4506^2:164
-@t^7855^8:249
-@t^7856^15:682
-@t^7857^4:127
-@t^7858^3:110
+@t^7855^23:772
+@t^7856^32:1539
+@t^7857^14:526
+@t^7858^13:624
 @t^7883^1:106
 @t^14445^1:144
 @f^1434^0^72^150^3820:3:5,6358:19:19,6359:34:34,8365:1:1,13422:2:5,21150:6:6,21151:4:5,21228:3:3^43:21,64:25,85:8,204:4,224:6,265:3,325:5
