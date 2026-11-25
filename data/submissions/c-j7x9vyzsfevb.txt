@@ -1,4 +1,4 @@
-GoldScout-export 6^j7x9vyzsfevb^54
+GoldScout-export 7^j7x9vyzsfevb^55
 203^1^0^22^22^1431^0.8182^0.6571^1^Skeletal Mage^^
 667^4^0^39^40^1434^0.4688^0.3984^4^Skullsplitter Warrior^1520:2:2,1524:1:1,2750:1:1,3771:2:2,4306:1:2,4725:1:1^
 669^7^0^41^42^1434^0.4583^0.4140^7^Skullsplitter Hunter^1520:4:4,1524:1:1,4024:1:1,4338:3:4,4599:2:2,8153:1:2^
@@ -419,6 +419,14 @@ GoldScout-export 6^j7x9vyzsfevb^54
 11516^1^0^53^54^1448^0.6502^0.0623^1^Timbermaw Warder^14047:1:1^
 11611^1^0^57^57^1422^0.5486^0.2340^1^Cavalier Durgen^3951:1:1^
 11613^1^0^56^56^1422^0.5780^0.3617^1^Huntsman Radley^14047:1:2^
+11736^13^0^56^56^1451^0.3176^0.5226^13^Stonelash Pincer^12037:8:8,19933:7:7,19934:4:4,248695:1:1^
+11737^31^0^57^58^1451^0.3348^0.8206^31^Stonelash Flayer^12037:13:13,15271:1:1,19933:10:10,19934:13:13^
+11739^10^0^57^58^1451^0.3721^0.8302^10^Rock Stalker^1074:4:4,10285:2:2,12205:4:4,14227:1:2,19441:1:1^
+11741^2^0^58^58^1451^0.3404^0.5204^2^Dredge Crusher^3669:1:1,3676:1:1,20424:1:1^
+11744^4^0^55^57^1451^0.2801^0.2292^4^Dust Stormer^7081:1:1,7082:1:1^
+11745^1^0^57^59^1451^0.3634^0.5814^1^Cyclone Warrior^7069:1:1^
+11746^1^0^56^56^1451^0.2742^0.1215^1^Desert Rumbler^4784:1:1^
+11747^4^0^58^59^1451^0.2929^0.8122^4^Desert Rager^4784:3:3,7076:1:1^
 11886^1^0^57^57^1423^0.2457^0.7062^1^Mercutio Filthgorger^14613:1:1^
 12046^1^0^49^49^1446^0.4126^0.5755^1^Gor'marok the Ravager^^
 12248^1^0^60^60^1423^0.6102^0.1263^1^Infiltrator Hameya^14047:1:3,15767:1:1^
@@ -659,12 +667,16 @@ GoldScout-export 6^j7x9vyzsfevb^54
 @i^6530^Nightcrawlers
 @i^6826^Brilliant Scale
 @i^7068^Elemental Fire
+@i^7069^Elemental Air
 @i^7070^Elemental Water
 @i^7075^Core of Earth
+@i^7076^Essence of Earth
 @i^7077^Heart of Fire
 @i^7078^Essence of Fire
 @i^7079^Globe of Water
 @i^7080^Essence of Water
+@i^7081^Breath of Wind
+@i^7082^Essence of Air
 @i^7471^Regal Gloves of Frost Protection
 @i^7475^Regal Cuffs of the Physician
 @i^7487^Captain's Leggings of the Channeler
@@ -851,6 +863,7 @@ GoldScout-export 6^j7x9vyzsfevb^54
 @i^15167^Imposing Bandana of the Boar
 @i^15251^Headstriker Sword of Intellect
 @i^15254^Dark Espadon of Frost Protection
+@i^15271^Colossal Great Axe of the Tiger
 @i^15274^Diviner Long Staff of Healing
 @i^15373^Wolf Rider's Headgear of the Boar
 @i^15388^Jadefire Belt of Strength
@@ -874,6 +887,8 @@ GoldScout-export 6^j7x9vyzsfevb^54
 @i^18956^Miniaturization Residue
 @i^18958^Water Elemental Core
 @i^18960^Lookout's Spyglass
+@i^19441^Huge Venom Sac
+@i^19933^Glowing Scorpid Blood
 @i^19934^Large Scorpid Claw
 @i^19935^Empty Venom Sac
 @i^19936^Dried Scorpid Carapace
@@ -881,6 +896,7 @@ GoldScout-export 6^j7x9vyzsfevb^54
 @i^20015^Elder Raptor Feathers
 @i^20017^Perfect Courser Antler
 @i^20087^Wavethrasher Scales
+@i^20424^Sandworm Meat
 @i^20519^Southsea Pirate Hat
 @i^20741^Deadwood Ritual Totem
 @i^20742^Winterfall Ritual Totem
@@ -1120,12 +1136,16 @@ GoldScout-export 6^j7x9vyzsfevb^54
 @q^6530^1:0:0
 @q^6826^0:15:0
 @q^7068^1:7:1
+@q^7069^1:7:1
 @q^7070^1:7:1
 @q^7075^1:7:1
+@q^7076^2:7:1
 @q^7077^1:7:1
 @q^7078^2:7:1
 @q^7079^1:7:1
 @q^7080^2:7:1
+@q^7081^1:7:1
+@q^7082^2:7:1
 @q^7471^2:4:0
 @q^7475^2:4:0
 @q^7487^2:4:0
@@ -1312,6 +1332,7 @@ GoldScout-export 6^j7x9vyzsfevb^54
 @q^15167^2:4:0
 @q^15251^2:2:0
 @q^15254^2:2:0
+@q^15271^2:2:0
 @q^15274^2:2:0
 @q^15373^2:4:0
 @q^15388^2:4:0
@@ -1335,6 +1356,8 @@ GoldScout-export 6^j7x9vyzsfevb^54
 @q^18956^1:12:0
 @q^18958^1:12:0
 @q^18960^1:12:0
+@q^19441^1:7:1
+@q^19933^1:15:0
 @q^19934^0:15:0
 @q^19935^0:15:0
 @q^19936^0:15:0
@@ -1342,6 +1365,7 @@ GoldScout-export 6^j7x9vyzsfevb^54
 @q^20015^0:15:0
 @q^20017^1:15:0
 @q^20087^1:15:0
+@q^20424^1:7:1
 @q^20519^1:12:0
 @q^20741^1:15:0
 @q^20742^1:15:0
@@ -1426,6 +1450,7 @@ GoldScout-export 6^j7x9vyzsfevb^54
 @m^1447^Azshara
 @m^1448^Felwood
 @m^1449^Un'Goro Crater
+@m^1451^Silithus
 @m^1452^Winterspring
 @m^2482^Mount Hyjal
 @m^2548^Riverglades
@@ -1961,6 +1986,14 @@ GoldScout-export 6^j7x9vyzsfevb^54
 @a^11516^33:1
 @a^11611^90:1
 @a^11613^151:1
+@a^11736^164:3,185:1,186:1,187:2,207:1,227:2,246:2,247:1
+@a^11737^269:2,285:1,287:1,304:2,305:1,306:1,325:4,326:2,327:2,328:1,344:3,346:1,347:9,348:1
+@a^11739^285:1,286:1,325:1,327:1,328:2,347:2,348:2
+@a^11741^186:1,227:1
+@a^11744^65:1,85:1,87:1,123:1
+@a^11745^227:1
+@a^11746^45:1
+@a^11747^304:1,325:2,327:1
 @a^11886^284:1
 @a^12046^228:1
 @a^12248^52:1
@@ -2033,4 +2066,12 @@ GoldScout-export 6^j7x9vyzsfevb^54
 @a^272313^294:1
 @a^276138^269:1,309:1
 @a^278137^293:9
+@t^11736^13:923
+@t^11737^29:2199
+@t^11739^10:497
+@t^11741^2:127
+@t^11744^2:217
+@t^11745^1:76
+@t^11746^1:85
+@t^11747^4:249
 @l^0^enUS

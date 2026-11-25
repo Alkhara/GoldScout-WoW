@@ -1,4 +1,4 @@
-GoldScout-export 6^1z9zltwvzpqf^33
+GoldScout-export 6^1z9zltwvzpqf^34
 1543^2^0^7^8^1420^0.3657^0.4252^2^Vile Fin Puddlejumper^^
 1544^4^0^8^8^1420^0.3630^0.4255^4^Vile Fin Minor Oracle^779:1:1,1413:1:1^
 1545^1^0^10^10^1420^0.3634^0.4240^1^Vile Fin Muckdweller^^
@@ -119,7 +119,10 @@ GoldScout-export 6^1z9zltwvzpqf^33
 4005^5^0^16^17^1442^0.5984^0.7853^5^Deepmoss Creeper^3174:3:3,3931:3:3^
 4006^1^0^19^20^1442^0.5358^0.7113^1^Deepmoss Webspinner^1081:1:1,3931:1:1^
 4007^9^0^17^18^1442^0.5344^0.6105^9^Deepmoss Venomspitter^1081:5:5,1475:3:3,3174:3:3,3182:2:2,3196:1:1,3931:3:3^
-4018^4^0^22^23^1442^0.5014^0.3557^4^Antlered Courser^5471:2:2,5566:2:2,5585:4:8,5871:1:1^
+4009^1^0^18^18^1442^0.4873^0.3668^1^Raging Cliff Stormer^5470:1:1^
+4016^2^0^24^25^1442^0.3856^0.1499^2^Fey Dragon^3175:1:1,5583:1:1^
+4018^15^0^22^23^1442^0.4485^0.2370^15^Antlered Courser^5471:6:6,5566:5:5,5585:14:28,5871:1:1^
+4019^2^0^24^25^1442^0.3865^0.1495^2^Great Courser^5471:1:1,5585:1:2,5871:1:1^
 4020^3^0^22^23^1442^0.4906^0.3568^3^Sap Beast^1777:1:1,1801:1:1^
 4022^11^0^23^24^1442^0.3344^0.6048^11^Bloodfury Harpy^1205:1:1,2589:2:3,2592:2:3,4306:1:1,5635:2:2,17056:4:4,277936:6:9^
 4023^3^0^25^26^1442^0.2972^0.6806^3^Bloodfury Roguefeather^2592:1:1,3857:1:1,5116:1:1,17056:2:2^
@@ -133,6 +136,10 @@ GoldScout-export 6^1z9zltwvzpqf^33
 4038^3^0^26^27^1442^0.3267^0.7133^3^Burning Destroyer^16312:3:3^
 4042^1^0^25^25^1442^0.3356^0.6992^1^Singed Basilisk^5635:1:1,11384:1:1^
 4044^1^0^23^24^1442^0.3738^0.5080^1^Blackened Basilisk^5637:1:1,11384:1:1^
+4051^1^0^23^24^1442^0.3514^0.1102^1^Cenarion Botanist^2592:1:1,2765:1:1,211784:1:1^
+4053^1^0^23^25^1442^0.3650^0.1258^1^Daughter of Cenarius^2592:1:1^
+4057^2^0^24^25^1442^0.3739^0.1324^2^Son of Cenarius^^
+4067^2^0^23^24^1442^0.3610^0.1026^2^Twilight Runner^5136:1:1,5584:1:1^
 4073^2^0^23^23^1442^0.6337^0.4532^2^XT 4^2592:1:2^
 4093^1^0^26^26^1441^0.4041^0.3525^1^Galak Wrangler^^
 4096^1^0^24^24^1441^0.4248^0.3597^1^Galak Windchaser^3770:1:1^
@@ -247,6 +254,7 @@ GoldScout-export 6^1z9zltwvzpqf^33
 @i^2643^Loose Chain Bracers
 @i^2644^Loose Chain Cloak
 @i^2672^Stringy Wolf Meat
+@i^2765^Hunting Knife
 @i^2770^Copper Ore
 @i^2774^Rust-covered Blunderbuss
 @i^2777^Feeble Shortbow
@@ -262,6 +270,7 @@ GoldScout-export 6^1z9zltwvzpqf^33
 @i^3170^Large Bear Tooth
 @i^3173^Bear Meat
 @i^3174^Spider Ichor
+@i^3175^Ruined Dragonhide
 @i^3180^Flecked Raptor Scale
 @i^3181^Partially Digested Meat
 @i^3182^Spider's Silk
@@ -351,6 +360,7 @@ GoldScout-export 6^1z9zltwvzpqf^33
 @i^5133^Seeping Gizzard
 @i^5134^Small Furry Paw
 @i^5135^Thin Black Claw
+@i^5136^Torn Furry Ear
 @i^5143^Thunder Lizard Blood
 @i^5164^Thunderhawk Wings
 @i^5183^Pulsating Hydra Heart
@@ -368,6 +378,8 @@ GoldScout-export 6^1z9zltwvzpqf^33
 @i^5523^Small Barnacled Clam
 @i^5566^Broken Antler
 @i^5571^Small Black Pouch
+@i^5583^Fey Dragon Scale
+@i^5584^Twilight Whisker
 @i^5585^Courser Eye
 @i^5635^Sharp Claw
 @i^5637^Large Fang
@@ -520,6 +532,7 @@ GoldScout-export 6^1z9zltwvzpqf^33
 @q^2643^0:4:0
 @q^2644^0:4:0
 @q^2672^1:7:1
+@q^2765^0:2:0
 @q^2770^1:7:1
 @q^2774^0:2:0
 @q^2777^0:2:0
@@ -535,6 +548,7 @@ GoldScout-export 6^1z9zltwvzpqf^33
 @q^3170^0:15:0
 @q^3173^1:7:1
 @q^3174^1:7:1
+@q^3175^0:15:0
 @q^3180^0:15:0
 @q^3181^0:15:0
 @q^3182^1:7:1
@@ -624,6 +638,7 @@ GoldScout-export 6^1z9zltwvzpqf^33
 @q^5133^0:15:0
 @q^5134^1:12:0
 @q^5135^0:15:0
+@q^5136^0:15:0
 @q^5143^1:12:0
 @q^5164^1:12:0
 @q^5183^3:4:0
@@ -641,6 +656,8 @@ GoldScout-export 6^1z9zltwvzpqf^33
 @q^5523^1:7:0
 @q^5566^0:15:0
 @q^5571^1:1:0
+@q^5583^1:12:0
+@q^5584^1:12:0
 @q^5585^1:12:0
 @q^5635^1:7:1
 @q^5637^1:7:1
@@ -2183,7 +2200,10 @@ GoldScout-export 6^1z9zltwvzpqf^33
 @a^4005^311:3,312:1,353:1
 @a^4006^290:1
 @a^4007^169:1,170:2,250:1,251:1,290:4
-@a^4018^130:1,149:1,150:2
+@a^4009^149:1
+@a^4016^47:1,67:1
+@a^4018^47:5,89:2,108:2,109:1,130:1,149:2,150:2
+@a^4019^47:1,67:1
 @a^4020^129:1,149:2
 @a^4022^207:1,245:1,246:8,247:1
 @a^4023^265:2,266:1
@@ -2197,6 +2217,10 @@ GoldScout-export 6^1z9zltwvzpqf^33
 @a^4038^266:1,286:2
 @a^4042^266:1
 @a^4044^207:1
+@a^4051^47:1
+@a^4053^47:1
+@a^4057^47:1,67:1
+@a^4067^46:1,47:1
 @a^4073^172:1,192:1
 @a^4093^148:1
 @a^4096^148:1
