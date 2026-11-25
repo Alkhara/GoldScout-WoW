@@ -1,8 +1,9 @@
-GoldScout-export 7^l9esytn29m25^4
+GoldScout-export 7^l9esytn29m25^5
 5979^5^0^45^47^1419^0.4693^0.1946^5^Wretched Lost One^3928:1:1,4338:2:3^
 5982^19^0^46^48^1419^0.4785^0.1859^19^Black Slayer^1464:10:10,3404:5:5,5117:2:2,5829:3:3,8146:1:1,8168:16:16,8396:3:3,11418:2:2,12037:9:9,12207:8:8^
 5984^35^0^45^46^1419^0.4675^0.1968^35^Starving Snickerfang^4583:8:8,4584:3:3,8146:2:2,8391:11:11,10593:1:1,12037:22:22,12203:12:12,12208:15:15^
 5988^31^0^50^51^1419^0.4697^0.2018^31^Scorpok Stinger^8393:14:14,10593:1:1,12037:13:13,15294:1:1,19441:1:1,19933:4:4,19934:4:4,19935:7:7,19936:4:4^
+7132^40^0^53^54^1448^0.4985^0.2508^40^Toxic Horror^2163:1:1,4791:33:93,7070:7:7,7079:6:6,7080:6:6^
 7523^13^0^54^55^1452^0.5460^0.4296^13^Suffering Highborne^3998:1:1,4425:1:1,7972:2:2,8766:1:1,13816:1:1,14047:5:7,21936:7:7^
 7524^11^0^55^56^1452^0.5361^0.4260^11^Anguished Highborne^8766:1:1,14047:3:4,21936:5:5^
 11736^1^0^56^56^1451^0.4355^0.5545^1^Stonelash Pincer^19934:1:1^
@@ -15,6 +16,7 @@ GoldScout-export 7^l9esytn29m25^4
 13136^7^0^57^58^1451^0.6154^0.5363^7^Hive'Ashi Drone^6300:2:2,6302:4:4,15648:1:1^
 @i^1074^Hard Spider Leg Tip
 @i^1464^Buzzard Talon
+@i^2163^Shadowblade
 @i^3404^Buzzard Wing
 @i^3928^Superior Healing Potion
 @i^3998^Laminated Scale Shoulderpads
@@ -25,13 +27,17 @@ GoldScout-export 7^l9esytn29m25^4
 @i^4584^Large Trophy Paw
 @i^4585^Dripping Spider Mandible
 @i^4784^Lifeless Stone
+@i^4791^Enchanted Water
 @i^5117^Vibrant Plume
 @i^5829^Razor-sharp Beak
 @i^6300^Husk Fragment
 @i^6302^Delicate Insect Wing
 @i^7067^Elemental Earth
 @i^7069^Elemental Air
+@i^7070^Elemental Water
 @i^7075^Core of Earth
+@i^7079^Globe of Water
+@i^7080^Essence of Water
 @i^7082^Essence of Air
 @i^7910^Star Ruby
 @i^7912^Solid Stone
@@ -68,6 +74,7 @@ GoldScout-export 7^l9esytn29m25^4
 @i^254132^Pattern: Earthenweave Cuffs
 @q^1074^0:15:0
 @q^1464^0:15:0
+@q^2163^4:2:0
 @q^3404^1:7:1
 @q^3928^1:0:0
 @q^3998^0:4:0
@@ -78,13 +85,17 @@ GoldScout-export 7^l9esytn29m25^4
 @q^4584^0:15:0
 @q^4585^0:15:0
 @q^4784^0:15:0
+@q^4791^1:0:0
 @q^5117^1:12:0
 @q^5829^0:15:0
 @q^6300^0:15:0
 @q^6302^0:15:0
 @q^7067^1:7:1
 @q^7069^1:7:1
+@q^7070^1:7:1
 @q^7075^1:7:1
+@q^7079^1:7:1
+@q^7080^2:7:1
 @q^7082^2:7:1
 @q^7910^2:7:1
 @q^7912^1:7:1
@@ -120,6 +131,7 @@ GoldScout-export 7^l9esytn29m25^4
 @q^248695^1:0:1
 @q^254132^2:9:0
 @m^1419^Blasted Lands
+@m^1448^Felwood
 @m^1451^Silithus
 @m^1452^Winterspring
 @c^118^
@@ -889,6 +901,7 @@ GoldScout-export 7^l9esytn29m25^4
 @a^5982^69:14,70:3,89:2
 @a^5984^69:23,88:1,89:9,108:2
 @a^5988^68:1,69:19,89:8,108:3
+@a^7132^89:11,90:11,109:9,110:9
 @a^7523^170:6,171:7
 @a^7524^170:10,171:1
 @a^11736^228:1
@@ -903,6 +916,7 @@ GoldScout-export 7^l9esytn29m25^4
 @t^5982^18:1551
 @t^5984^35:3209
 @t^5988^30:2770
+@t^7132^35:3766
 @t^7523^11:438
 @t^7524^11:472
 @t^11737^57:2865

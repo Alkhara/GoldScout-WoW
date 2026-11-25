@@ -1,9 +1,9 @@
-GoldScout-export 6^8p0q6xzhqpnr^3
+GoldScout-export 6^8p0q6xzhqpnr^4
 3560^3^0^57^57^2482^0.2363^0.6892^3^Guarda de sanación^^
 6498^2^0^54^55^1449^0.5614^0.3797^2^Demosaurio^4588:1:1,8146:1:1,11018:1:1^
-6499^1^0^55^55^1449^0.7404^0.4549^1^Devilsaurio Pielférrea^4588:1:1^
+6499^3^0^55^56^1449^0.6795^0.4110^3^Devilsaurio Pielférrea^4587:2:4,4588:1:1,8146:1:1^
 6500^1^0^55^55^1449^0.3617^0.2181^1^Devilsaurio Tirano^20015:1:1^
-6560^32^0^60^61^1449^0.6308^0.4823^32^Guardián de piedra^3944:1:1,3948:1:1,4552:4:4,4554:2:2,7076:4:4,7912:8:11,8150:2:2,11018:7:7,12809:16:16,13820:1:1,14306:1:1,14319:1:1,14322:1:1,14337:1:1,14866:1:1,15288:1:1^
+6560^50^0^60^61^1449^0.6148^0.4728^50^Guardián de piedra^3944:1:1,3948:1:1,3951:1:1,3970:1:1,3972:1:1,4552:7:7,4554:7:7,7076:6:6,7912:14:17,8084:1:1,8150:5:5,11018:15:15,12809:22:22,13820:1:1,13822:1:1,13823:1:1,13824:1:1,14306:1:1,14319:1:1,14322:1:1,14324:1:1,14337:1:1,14808:1:1,14866:1:1,15288:1:1^
 7107^2^0^52^52^1448^0.4199^0.1934^2^Timador Fuego de Jade^14256:1:2^
 7108^4^0^52^53^1448^0.4221^0.1925^4^Traidor Fuego de Jade^8952:1:1,11515:1:1,12662:1:1,14047:1:1^
 7111^1^0^53^53^1448^0.4134^0.2008^1^Clamainferno Fuego de Jade^14047:1:1^
@@ -13,8 +13,12 @@ GoldScout-export 6^8p0q6xzhqpnr^3
 252116^7^0^56^57^2482^0.2405^0.6970^7^Totémico Muertobosque^14047:2:3,263439:2:2^
 @i^3944^Cinturón sarga
 @i^3948^Guantes sarga
+@i^3951^Jubón sarga
+@i^3970^Botas de cuero liso
+@i^3972^Capa lisa
 @i^4552^Trozo de piedra lisa
 @i^4554^Piedra pulida lustrosa
+@i^4587^Plumas de raptor tribales
 @i^4588^Calavera de raptor prístino
 @i^4791^Agua encantada
 @i^7070^Elemental de agua
@@ -22,6 +26,7 @@ GoldScout-export 6^8p0q6xzhqpnr^3
 @i^7079^Globo de agua
 @i^7080^Esencia de agua
 @i^7912^Piedra sólida
+@i^8084^Guantes de placas ligeras
 @i^8146^Garra maligna
 @i^8150^Sal de roca
 @i^8952^Codorniz asada
@@ -30,12 +35,17 @@ GoldScout-export 6^8p0q6xzhqpnr^3
 @i^12662^Runa demoníaca
 @i^12809^Piedra guardián
 @i^13820^Maza de peso
+@i^13822^Daga con pinchos
+@i^13823^Bastón de guerra recio
+@i^13824^Arco largo corvo
 @i^14047^Paño rúnico
 @i^14256^Tela de inferi
 @i^14306^Jubón de Tirahuesos del anciano
 @i^14319^Botas resplendentes del águila
 @i^14322^Aro resplendente de aguante
+@i^14324^Pareo resplendente del médico
 @i^14337^Cordón eterno de intelecto
+@i^14808^Cinturón Golpe de Guerra
 @i^14866^Corona de Líder de guerra
 @i^15288^Arco tiroespina de defensa
 @i^16251^Fórmula: encantar brazal: aguante excelente
@@ -44,8 +54,12 @@ GoldScout-export 6^8p0q6xzhqpnr^3
 @i^281016^Pergamino: RAPEN AD EUQ
 @q^3944^0:4:0
 @q^3948^0:4:0
+@q^3951^0:4:0
+@q^3970^0:4:0
+@q^3972^0:4:0
 @q^4552^0:15:0
 @q^4554^0:15:0
+@q^4587^0:15:0
 @q^4588^0:15:0
 @q^4791^1:0:0
 @q^7070^1:7:1
@@ -53,6 +67,7 @@ GoldScout-export 6^8p0q6xzhqpnr^3
 @q^7079^1:7:1
 @q^7080^2:7:1
 @q^7912^1:7:1
+@q^8084^0:4:0
 @q^8146^1:7:1
 @q^8150^1:7:1
 @q^8952^1:0:0
@@ -61,12 +76,17 @@ GoldScout-export 6^8p0q6xzhqpnr^3
 @q^12662^2:7:1
 @q^12809^2:7:1
 @q^13820^0:2:0
+@q^13822^0:2:0
+@q^13823^0:2:0
+@q^13824^0:2:0
 @q^14047^1:7:1
 @q^14256^1:7:1
 @q^14306^2:4:0
 @q^14319^2:4:0
 @q^14322^2:4:0
+@q^14324^2:4:0
 @q^14337^2:4:0
+@q^14808^2:4:0
 @q^14866^2:4:0
 @q^15288^2:2:0
 @q^16251^2:9:0
@@ -78,9 +98,9 @@ GoldScout-export 6^8p0q6xzhqpnr^3
 @m^2482^Monte Hyjal
 @a^3560^264:2,284:1
 @a^6498^151:2
-@a^6499^194:1
+@a^6499^154:1,171:1,194:1
 @a^6500^87:1
-@a^6560^87:2,108:3,149:1,150:2,151:1,154:1,168:1,169:1,171:2,173:1,175:1,194:1,195:1,215:3,235:2,254:1,255:2,274:3,294:3
+@a^6560^86:2,87:4,108:3,148:1,149:2,150:3,151:3,153:1,154:1,168:1,169:1,171:2,173:1,175:1,194:1,195:2,215:4,235:4,254:1,255:2,274:5,294:5
 @a^7107^68:2
 @a^7108^68:3,88:1
 @a^7111^88:1
