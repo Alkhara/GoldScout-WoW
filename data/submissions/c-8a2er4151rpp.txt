@@ -1,4 +1,12 @@
-GoldScout-export 7^8a2er4151rpp^19
+GoldScout-export 7^8a2er4151rpp^20
+704^2^0^2^2^1426^0.2596^0.7927^2^Loup des bois décharné^3365:1:1,4865:1:1,7074:1:1^
+705^42^0^1^1^1426^0.2868^0.7387^42^Jeune loup décharné^750:7:7,1370:1:1,1372:1:1,1376:2:2,1377:2:2,1380:2:2,2210:2:2,2651:1:1,2654:1:1,3363:1:1,3365:1:1,4865:17:17,7073:12:12,7074:14:14^
+706^15^0^3^4^1426^0.2843^0.8012^15^Jeune troll Frostmane^117:3:3,828:1:1,1366:1:1,2589:3:3,2649:2:2^
+707^6^0^1^2^1426^0.3074^0.7527^6^Trogg Mâcheroc^2210:1:1,2211:1:1,2589:4:4^
+708^3^0^3^3^1426^0.2263^0.7138^3^Petit sanglier des rochers^117:1:1,828:1:1,1377:1:1,2210:1:1,4865:2:2^
+724^7^0^2^2^1426^0.2656^0.7431^7^Trogg Mâcheroc forcené^159:2:2,2589:3:3,2653:1:1^
+808^1^0^5^5^1426^0.3018^0.8034^1^Grik'nir le Froid^2004:1:1^
+946^1^0^3^4^1426^0.3045^0.7958^1^Novice Frostmane^117:1:1^
 1756^4^0^60^60^1453^0.7938^0.3827^4^Garde royal de Hurlevent^^
 1783^20^0^50^51^1422^0.4688^0.7641^20^Ecorcheur Squelette^8766:1:1,10305:1:1,12840:2:2,13443:2:2,14047:4:6,14619:2:2^
 1784^2^0^51^52^1422^0.3796^0.5452^2^Ensorceleur Squelette^14047:1:2^
@@ -330,17 +338,38 @@ GoldScout-export 7^8a2er4151rpp^19
 260443^1^0^58^58^2482^0.4426^0.6881^1^Dazka Noirsommeil^14047:1:1,273292:1:1^
 260444^1^0^58^58^2482^0.4628^0.6762^1^Tyaeha Noirserment^14047:1:1,273291:1:1^
 260818^1^0^58^58^2482^0.4246^0.7258^1^Frezzlie Popsiffle^273290:1:1^
+269075^1^0^6^6^1426^0.2738^0.6272^1^Léopard des neiges rôdeur^4813:1:1^
 271780^1^0^0^0^0^0.0000^0.0000^0^^287017:1:1^
 271784^1^0^0^0^0^0.0000^0.0000^0^^15279:1:1^
 276138^5^0^56^57^2482^0.4898^0.7101^5^Assistant subjugué^^
+@i^117^Viande séchée coriace
+@i^159^Eau de source
+@i^750^Viande de loup coriace
+@i^828^Petite bourse bleue
 @i^1074^Patte d'araignée
+@i^1366^Pantalon rapiécé en cuir
+@i^1370^Brassards rapiécés en cuir
+@i^1372^Cape déchirée
+@i^1376^Cape râpée
+@i^1377^Gants râpés
+@i^1380^Robe râpée
 @i^1464^Serre de busard
 @i^1520^Sueur de troll
 @i^1645^Jus de baie lunaire
+@i^2004^Journal de Grelin Whitebeard
+@i^2210^Targe endommagée
+@i^2211^Grand bouclier endommagé
 @i^2295^Grande défense de sanglier
 @i^2453^Doulourante
+@i^2589^Etoffe de lin
+@i^2649^Ceinture en anneaux fins
+@i^2651^Brassards en anneaux fins
+@i^2653^Gants en anneaux fins
+@i^2654^Pantalon en anneaux fins
 @i^2799^Croc de gorille
 @i^3357^Vietérule
+@i^3363^Ceinture râpée
+@i^3365^Brassards râpés
 @i^3403^Défense de sanglier en ivoire
 @i^3404^Aile de busard
 @i^3669^Bave gélatineuse
@@ -389,6 +418,8 @@ GoldScout-export 7^8a2er4151rpp^19
 @i^4638^Coffret d'acier renforcé
 @i^4787^Poix ardente
 @i^4791^Eau enchantée
+@i^4813^Petit collier en cuir
+@i^4865^Peau détruite
 @i^5119^Fin cheveu flottant
 @i^5120^Long poil de queue
 @i^5128^Peau de lézard dépouillée
@@ -406,6 +437,8 @@ GoldScout-export 7^8a2er4151rpp^19
 @i^6302^Aile d'insecte délicate
 @i^6530^Asticots
 @i^7068^Feu élémentaire
+@i^7073^Croc brisé
+@i^7074^Griffes émoussées
 @i^7078^Essence de feu
 @i^7517^Tunique de tulle d'hiérophante
 @i^7909^Aigue-marine
@@ -676,14 +709,34 @@ GoldScout-export 7^8a2er4151rpp^19
 @i^287017^Mitre de chapelain
 @i^287018^Gants de la base
 @i^287019^Masque de massacreur défias
+@q^117^1:0:0
+@q^159^1:0:0
+@q^750^1:12:0
+@q^828^1:1:0
 @q^1074^0:15:0
+@q^1366^0:4:0
+@q^1370^0:4:0
+@q^1372^0:4:0
+@q^1376^0:4:0
+@q^1377^0:4:0
+@q^1380^0:4:0
 @q^1464^0:15:0
 @q^1520^0:15:0
 @q^1645^1:0:0
+@q^2004^1:12:0
+@q^2210^0:4:0
+@q^2211^0:4:0
 @q^2295^0:15:0
 @q^2453^1:7:1
+@q^2589^1:7:1
+@q^2649^0:4:0
+@q^2651^0:4:0
+@q^2653^0:4:0
+@q^2654^0:4:0
 @q^2799^1:12:0
 @q^3357^1:7:1
+@q^3363^0:4:0
+@q^3365^0:4:0
 @q^3403^0:15:0
 @q^3404^1:7:1
 @q^3669^0:15:0
@@ -732,6 +785,8 @@ GoldScout-export 7^8a2er4151rpp^19
 @q^4638^2:15:0
 @q^4787^0:15:0
 @q^4791^1:0:0
+@q^4813^0:15:0
+@q^4865^0:15:0
 @q^5119^0:15:0
 @q^5120^0:15:0
 @q^5128^0:15:0
@@ -749,6 +804,8 @@ GoldScout-export 7^8a2er4151rpp^19
 @q^6302^0:15:0
 @q^6530^1:0:0
 @q^7068^1:7:1
+@q^7073^0:15:0
+@q^7074^0:15:0
 @q^7078^2:7:1
 @q^7517^2:4:0
 @q^7909^2:7:1
@@ -1023,6 +1080,7 @@ GoldScout-export 7^8a2er4151rpp^19
 @m^1422^Maleterres de l'ouest
 @m^1423^Maleterres de l'est
 @m^1425^Les Hinterlands
+@m^1426^Dun Morogh
 @m^1427^Gorge des Vents brûlants
 @m^1428^Steppes ardentes
 @m^1435^Marais des Chagrins
@@ -1704,6 +1762,7 @@ GoldScout-export 7^8a2er4151rpp^19
 @c^279263^
 @c^279264^
 @c^279265^
+@c^279938^
 @c^279940^
 @c^279944^
 @c^279948^
@@ -1717,7 +1776,9 @@ GoldScout-export 7^8a2er4151rpp^19
 @c^279966^
 @c^279967^
 @c^279968^
+@c^279969^
 @c^279974^
+@c^279979^
 @c^279981^
 @c^279982^
 @c^279988^
@@ -1725,6 +1786,14 @@ GoldScout-export 7^8a2er4151rpp^19
 @c^285280^
 @c^285281^
 @c^286152^
+@a^704^305:2
+@a^705^285:40,286:1,305:1
+@a^706^304:1,305:5,306:3,325:6
+@a^707^285:1,286:2,306:3
+@a^708^284:3
+@a^724^284:2,285:2,286:1,304:1,306:1
+@a^808^326:1
+@a^946^306:1
 @a^1756^155:4
 @a^1783^207:1,227:2,309:1,310:3,329:13
 @a^1784^207:2
@@ -1884,6 +1953,7 @@ GoldScout-export 7^8a2er4151rpp^19
 @a^260443^268:1
 @a^260444^269:1
 @a^260818^288:1
+@a^269075^245:1
 @a^276138^269:1,270:1,289:1,290:2
 @t^4494^8:484
 @t^8523^1:1

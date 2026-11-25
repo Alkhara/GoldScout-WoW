@@ -1,4 +1,4 @@
-GoldScout-export 7^xq3uv48tyx6a^8
+GoldScout-export 7^xq3uv48tyx6a^9
 1888^10^0^18^19^1421^0.6471^0.5923^10^Vigía de Dalaran^414:1:1,1179:1:1,2589:1:3,2592:3:4,9775:1:1^
 1889^8^0^19^20^1421^0.6521^0.5153^8^Zahorí de Dalaran^858:1:1,2589:3:5,2592:2:3^
 1891^1^0^13^14^1421^0.4804^0.7209^1^Vigía Piroleña^1497:1:1,3218:1:1,6555:1:1^
@@ -11,12 +11,12 @@ GoldScout-export 7^xq3uv48tyx6a^8
 2054^1^0^19^20^1421^0.4631^0.8363^1^Refugiado enfermo^^
 2244^1^0^22^22^1424^0.6482^0.4700^1^Mago oscuro de la Hermandad^2589:1:1,5620:1:1^
 2349^5^0^24^25^1424^0.6323^0.4774^5^Trepamusgo gigante^878:1:1,1081:3:3,1206:1:1,2251:1:1,3182:1:1,4428:2:2^
-2350^3^0^20^20^1424^0.5958^0.2763^3^Trepamusgo del bosque^1081:2:2,2251:2:2,4428:1:1^
-2351^6^0^21^22^1424^0.5795^0.2905^6^Oso gris^2940:1:1,3476:3:3,3702:1:1,3730:2:2,11406:3:3^
+2350^7^0^20^21^1424^0.6399^0.1992^7^Trepamusgo del bosque^1081:3:3,1288:1:1,2251:3:3,3477:1:1,4428:2:2^
+2351^9^0^21^22^1424^0.6091^0.2612^9^Oso gris^2940:2:2,3476:4:4,3702:1:1,3730:3:3,11406:5:5^
 2354^10^0^22^23^1424^0.5131^0.4077^10^Oso gris sañoso^2940:2:2,3476:4:4,3730:3:3,11406:2:2^
 2356^7^0^25^26^1424^0.6437^0.5063^7^Oso gris viejo^2940:2:2,3476:2:2,3702:1:1,3730:3:3,11406:1:1,11407:1:1^
 2384^7^0^23^24^1424^0.5258^0.4092^7^León de montaña famélico^3496:2:2,3731:2:2,5135:1:1,5136:4:4^
-2408^2^0^30^31^1416^0.1816^0.5149^2^Quijaforte^5524:1:1^
+2408^16^0^30^31^1424^0.6824^0.2477^10^Quijaforte^3712:3:6,4555:2:2,4556:2:2,5524:8:8,6308:1:2,6407:1:1,248686:1:1^
 2540^1^0^15^15^1421^0.6218^0.6193^1^Serpiente de Dalaran^^
 2676^2^0^21^22^1442^0.6313^0.4009^2^Segador de la cosecha compacto^^
 3560^2^0^18^18^1421^0.6534^0.2179^2^Guarda de sanación^^
@@ -58,6 +58,7 @@ GoldScout-export 7^xq3uv48tyx6a^8
 @i^1179^Leche fría como el hielo
 @i^1206^Ágata musgosa
 @i^1210^Gema de las Sombras
+@i^1288^Glándula de veneno grande
 @i^1497^Capa de percal
 @i^1793^Hombreras de cuero con remiendos
 @i^1798^Capa de pellejo crudo
@@ -77,10 +78,12 @@ GoldScout-export 7^xq3uv48tyx6a^8
 @i^3377^Brazales de retal
 @i^3385^Poción de maná inferior
 @i^3476^Lengua de oso gris
+@i^3477^Icor de trepador
 @i^3496^Sangre de león de montaña
 @i^3670^Hueso viscoso grande
 @i^3671^Calavera inerte
 @i^3702^Vejiga de bilis de oso
+@i^3712^Carne de tortuga
 @i^3730^Carne de oso grande
 @i^3731^Carne de león
 @i^3820^Alga estranguladora
@@ -89,6 +92,8 @@ GoldScout-export 7^xq3uv48tyx6a^8
 @i^4306^Paño de seda
 @i^4382^Marco de bronce
 @i^4428^Pulpa de araña
+@i^4555^Cola escamosa espesa
+@i^4556^Fragmento de caparazón moteado
 @i^5116^Pluma de cola larga
 @i^5120^Pelo de cola larga
 @i^5135^Garra negra fina
@@ -111,6 +116,7 @@ GoldScout-export 7^xq3uv48tyx6a^8
 @i^6297^Calavera vieja
 @i^6308^Siluro mostacherizo crudo
 @i^6359^Pargo de fuego
+@i^6407^Muñequeras Cielo Nocturno
 @i^6458^Pescado cubierto de aceite
 @i^6555^Capa de bardo
 @i^6558^Cinturón de bardo de poder
@@ -130,6 +136,7 @@ GoldScout-export 7^xq3uv48tyx6a^8
 @i^21113^Valija hermética
 @i^248682^Cajón arrebatado: Hierbas de aprendiz
 @i^248683^Cajón arrebatado: Mena de aprendiz
+@i^248686^Cajón arrebatado: Hierbas de oficial
 @i^248704^Cajón arrebatado: Piezas de aprendiz
 @i^273032^Sello de atahuesos
 @i^277936^Piedrasol relumbrante
@@ -141,6 +148,7 @@ GoldScout-export 7^xq3uv48tyx6a^8
 @q^1179^1:0:0
 @q^1206^2:7:1
 @q^1210^2:7:1
+@q^1288^1:7:1
 @q^1497^0:4:0
 @q^1793^0:4:0
 @q^1798^0:4:0
@@ -160,10 +168,12 @@ GoldScout-export 7^xq3uv48tyx6a^8
 @q^3377^0:4:0
 @q^3385^1:0:0
 @q^3476^1:12:0
+@q^3477^1:12:0
 @q^3496^1:12:0
 @q^3670^0:15:0
 @q^3671^0:15:0
 @q^3702^0:15:0
+@q^3712^1:7:1
 @q^3730^1:7:1
 @q^3731^1:7:1
 @q^3820^1:7:1
@@ -172,6 +182,8 @@ GoldScout-export 7^xq3uv48tyx6a^8
 @q^4306^1:7:1
 @q^4382^1:7:1
 @q^4428^0:15:0
+@q^4555^0:15:0
+@q^4556^0:15:0
 @q^5116^1:7:1
 @q^5120^0:15:0
 @q^5135^0:15:0
@@ -194,6 +206,7 @@ GoldScout-export 7^xq3uv48tyx6a^8
 @q^6297^0:15:0
 @q^6308^1:7:1
 @q^6359^1:7:1
+@q^6407^2:4:0
 @q^6458^1:0:0
 @q^6555^1:4:0
 @q^6558^2:4:0
@@ -213,6 +226,7 @@ GoldScout-export 7^xq3uv48tyx6a^8
 @q^21113^1:15:0
 @q^248682^1:0:1
 @q^248683^1:0:1
+@q^248686^1:0:1
 @q^248704^2:0:1
 @q^273032^3:4:0
 @q^277936^1:12:0
@@ -1543,12 +1557,12 @@ GoldScout-export 7^xq3uv48tyx6a^8
 @a^2054^329:1
 @a^2244^192:1
 @a^2349^192:4,212:1
-@a^2350^91:1,111:1,132:1
-@a^2351^91:1,111:2,131:3
+@a^2350^53:3,91:1,93:1,111:1,132:1
+@a^2351^73:1,91:1,93:2,111:2,131:3
 @a^2354^129:1,130:2,169:3,170:1,171:1,189:1,190:1
 @a^2356^192:3,213:4
 @a^2384^130:1,151:1,169:3,171:2
-@a^2408^203:2
+@a^2408^53:1,54:1,73:1,93:2,113:2,133:1,153:2
 @a^2540^252:1
 @a^2676^152:1,172:1
 @a^3560^92:1,93:1
@@ -1579,7 +1593,9 @@ GoldScout-export 7^xq3uv48tyx6a^8
 @a^4070^152:1,172:3
 @a^4202^172:1
 @a^12579^246:1
-@t^2408^1:56
+@t^2350^3:105
+@t^2351^3:100
+@t^2408^15:696
 @f^1442^0^33^150^3820:2:3,6289:4:4,6308:8:8,6359:6:6,6458:1:1,21071:11:11,21113:1:1^149:5,169:14,213:11,249:3
 @f^1458^0^8^159^6289:3:3,6291:1:1,6297:2:2,6308:2:2^173:8
 @l^0^esMX

@@ -1,4 +1,4 @@
-GoldScout-export 7^0eoomd273f3k^26
+GoldScout-export 7^0eoomd273f3k^27
 92^5^0^39^40^1418^0.2926^0.6134^5^Elémentaire de roche^4553:2:2,4627:3:3,4784:3:3,7067:1:1,8150:1:1^
 597^2^0^36^37^1434^0.2364^0.0923^2^Berserker Bloodscalp^4306:1:3^
 660^4^0^37^37^1434^0.2339^0.0926^4^Sorcier-docteur Bloodscalp^4306:1:2^
@@ -96,6 +96,19 @@ GoldScout-export 7^0eoomd273f3k^26
 5295^3^0^45^45^1444^0.5230^0.5714^3^Enragé Griffe farouche^1645:1:1,8973:1:1^
 5307^2^0^41^43^1444^0.5691^0.5603^2^Hurleur des vallées^6444:2:2^
 5308^1^0^44^46^1444^0.6037^0.5000^1^Hurleur des vallées insoumis^^
+5426^1^0^44^44^1446^0.5724^0.5236^1^Hyène Brûlepatte^12037:1:1,12203:1:1,12208:1:1^
+5429^7^0^43^45^1446^0.4934^0.5114^7^Roc de feu^1464:3:3,3404:3:3,5117:3:3,11418:2:2,12207:4:4^
+5455^3^0^47^48^1446^0.3527^0.4846^3^Guêpe Centipaar^6302:3:3,8587:1:1^
+5456^4^0^48^49^1446^0.3497^0.4709^4^Dard Centipaar^6300:2:2,8587:4:4^
+5459^1^0^47^48^1446^0.3909^0.2950^1^Tunnelière centipaar^6300:1:1^
+5471^4^0^45^46^1446^0.4038^0.5617^4^Ogre Cognedune^1645:1:1,4338:1:1,4422:1:1^
+5472^10^0^46^47^1446^0.4106^0.5543^10^Massacreur Cognedune^4599:1:1^
+5473^2^0^46^47^1446^0.4126^0.5551^2^Ogre-mage Cognedune^^
+5474^10^0^47^48^1446^0.4056^0.5599^10^Brute Cognedune^4338:7:17^
+5475^5^0^47^48^1446^0.4053^0.5589^5^Démoniste Cognedune^3962:1:1,4338:3:7^
+5481^2^0^47^48^1446^0.2887^0.6401^2^Chardonnier collecteur de rosée^8430:1:1^
+5485^2^0^50^50^1446^0.2914^0.6262^2^Chardonnier taille-racine^^
+5490^2^0^48^48^1446^0.3001^0.6287^2^Chardonnier noueux^2447:1:1^
 5615^14^0^43^44^1446^0.6324^0.3764^14^Voleur Bat-le-désert^1645:1:1,3927:1:1,3928:2:2,4338:6:8,8401:1:1,8483:3:3^
 5616^10^0^40^41^1446^0.6343^0.3148^10^Larronnesse Bat-le-désert^3782:1:1,3927:1:1,4306:2:2,4338:3:5,8398:2:2,8483:5:5,264215:1:1^
 5617^10^0^42^43^1446^0.6245^0.3736^10^Mage de l'ombre Bat-le-désert^3928:1:1,3962:1:1,4306:1:1,4338:4:5,6149:1:1,8483:2:2^
@@ -149,6 +162,7 @@ GoldScout-export 7^0eoomd273f3k^26
 8127^1^0^0^0^0^0.0000^0.0000^0^^9641:1:1^
 8996^7^0^42^47^1446^0.6226^0.3726^7^Sbire marcheur du Vide^^
 11559^1^0^39^40^2652^0.2663^0.2652^1^Nécromancien renégat^4338:1:1,260347:1:1^
+12046^1^0^49^49^1446^0.4122^0.5752^1^Gor'marok le Ravageur^4338:1:2^
 14123^1^0^43^43^1446^0.6784^0.3968^1^Mordeuse mâchoire d'acier^3712:1:1^
 14661^1^0^47^47^1444^0.7470^0.6251^1^Fouet-cuisant^18961:1:1,18962:1:1^
 222233^1^0^43^43^1444^0.7498^0.2513^1^Ohk'zi^3187:1:1,3961:1:1^
@@ -178,6 +192,7 @@ GoldScout-export 7^0eoomd273f3k^26
 @i^1710^Potion de soins supérieure
 @i^2210^Targe endommagée
 @i^2289^Parchemin de Force II
+@i^2447^Pacifique
 @i^2654^Pantalon en anneaux fins
 @i^2656^Lorica fine
 @i^2730^Les vertes collines de Strangleronce - Page 6
@@ -243,6 +258,7 @@ GoldScout-export 7^0eoomd273f3k^26
 @i^4306^Etoffe de soie
 @i^4338^Etoffe de tisse-mage
 @i^4402^Petit sac de flammes
+@i^4422^Parchemin d'Endurance III
 @i^4424^Parchemin d'Esprit III
 @i^4461^Peau de raptor
 @i^4544^Pain épicé de Mulgore
@@ -298,9 +314,11 @@ GoldScout-export 7^0eoomd273f3k^26
 @i^8365^Truite tête-mithril crue
 @i^8398^Patron : Gants armés du scorpide
 @i^8401^Patron : Jambières armées du scorpide
+@i^8430^Glande de rosée vide
 @i^8444^Clé du bourreau
 @i^8483^Outre de Bat-le-désert
 @i^8548^Bâtonnet divino-matic
+@i^8587^Morceaux d'insecte Centipaar
 @i^8623^Balise de détresse OOX-17 TN
 @i^8705^Balise de détresse OOX-22 FE
 @i^8707^Ecaille électrique de Gahz'rilla
@@ -347,6 +365,7 @@ GoldScout-export 7^0eoomd273f3k^26
 @i^12202^Viande de tigre
 @i^12203^Viande de loup rouge
 @i^12205^Viande d'araignée blanche
+@i^12207^Oeuf géant
 @i^12208^Viande de loup tendre
 @i^13042^Epée du Magistrat
 @i^13064^Boute-flammes de Jaina
@@ -412,6 +431,7 @@ GoldScout-export 7^0eoomd273f3k^26
 @q^1710^1:0:0
 @q^2210^0:4:0
 @q^2289^1:0:0
+@q^2447^1:7:1
 @q^2654^0:4:0
 @q^2656^0:4:0
 @q^2730^1:12:0
@@ -477,6 +497,7 @@ GoldScout-export 7^0eoomd273f3k^26
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4402^1:7:1
+@q^4422^1:0:0
 @q^4424^1:0:0
 @q^4461^1:7:1
 @q^4544^1:0:0
@@ -532,9 +553,11 @@ GoldScout-export 7^0eoomd273f3k^26
 @q^8365^1:7:1
 @q^8398^2:9:0
 @q^8401^2:9:0
+@q^8430^0:15:0
 @q^8444^1:0:0
 @q^8483^1:12:0
 @q^8548^1:0:0
+@q^8587^1:12:0
 @q^8623^2:12:0
 @q^8705^2:12:0
 @q^8707^1:12:0
@@ -581,6 +604,7 @@ GoldScout-export 7^0eoomd273f3k^26
 @q^12202^1:7:1
 @q^12203^1:7:1
 @q^12205^1:7:1
+@q^12207^1:7:1
 @q^12208^1:7:1
 @q^13042^3:2:0
 @q^13064^3:2:0
@@ -1488,6 +1512,19 @@ GoldScout-export 7^0eoomd273f3k^26
 @a^5295^230:3
 @a^5307^231:2
 @a^5308^192:1
+@a^5426^211:1
+@a^5429^187:1,190:1,209:2,210:3
+@a^5455^186:1,187:2
+@a^5456^186:2,187:2
+@a^5459^107:1
+@a^5471^227:1,228:3
+@a^5472^208:4,227:2,228:4
+@a^5473^208:1,228:1
+@a^5474^208:2,227:2,228:6
+@a^5475^227:2,228:3
+@a^5481^245:2
+@a^5485^245:2
+@a^5490^245:1,246:1
 @a^5615^151:1,152:7,153:4,172:2
 @a^5616^112:2,132:8
 @a^5617^132:2,151:1,152:6,153:1
@@ -1506,6 +1543,7 @@ GoldScout-export 7^0eoomd273f3k^26
 @a^7996^269:1
 @a^8996^132:1,151:1,152:4,153:1
 @a^11559^105:1
+@a^12046^228:1
 @a^14123^153:1
 @a^14661^254:1
 @a^222233^114:1

@@ -1,4 +1,6 @@
-GoldScout-export 6^em18pre9dzkw^14
+GoldScout-export 6^em18pre9dzkw^15
+38^28^0^3^4^1429^0.5379^0.4796^28^Defias Thug^159:3:3,752:11:11,1366:1:1,1368:1:1,1370:1:1,1372:1:1,1376:1:1,1377:1:1,2070:4:4,2211:2:2,2589:7:7^
+103^1^0^5^5^1429^0.5676^0.4769^1^Garrick Padfoot^182:1:1^
 691^4^0^36^37^1434^0.2188^0.2376^4^Lesser Water Elemental^1706:3:3,4791:2:4^
 2246^1^0^38^39^1416^0.3947^0.1538^1^Syndicate Assassin^4338:1:1^
 2247^1^0^40^40^1416^0.3932^0.1511^1^Syndicate Enforcer^5113:1:1^
@@ -111,8 +113,17 @@ GoldScout-export 6^em18pre9dzkw^14
 268321^2^0^0^0^0^0.0000^0.0000^0^^9848:1:1,11225:1:1^
 268462^1^0^0^0^0^0.0000^0.0000^0^^1529:1:1^
 272228^1^0^36^37^2548^0.5459^0.7438^1^Harvest Sentry^5427:1:1^
+@i^159^Refreshing Spring Water
+@i^182^Garrick's Head
 @i^537^Dull Frenzy Scale
+@i^752^Red Burlap Bandana
 @i^864^Knightly Longsword of the Eagle
+@i^1366^Ragged Leather Pants
+@i^1368^Ragged Leather Gloves
+@i^1370^Ragged Leather Bracers
+@i^1372^Ragged Cloak
+@i^1376^Frayed Cloak
+@i^1377^Frayed Gloves
 @i^1465^Tigerbane
 @i^1529^Jade
 @i^1645^Moonberry Juice
@@ -123,9 +134,12 @@ GoldScout-export 6^em18pre9dzkw^14
 @i^1710^Greater Healing Potion
 @i^1725^Large Knapsack
 @i^1990^Ballast Maul of the Eagle
+@i^2070^Darnassian Bleu
+@i^2211^Bent Large Shield
 @i^2276^Swampwalker Boots
 @i^2290^Scroll of Intellect II
 @i^2295^Large Boar Tusk
+@i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2677^Boar Ribs
 @i^3010^Fine Sand
@@ -306,8 +320,17 @@ GoldScout-export 6^em18pre9dzkw^14
 @i^286646^Gill's Gills
 @i^286649^Tidebound Dagger
 @i^287003^Corroded Handguards
+@q^159^1:0:0
+@q^182^1:12:0
 @q^537^0:15:0
+@q^752^1:12:0
 @q^864^2:2:0
+@q^1366^0:4:0
+@q^1368^0:4:0
+@q^1370^0:4:0
+@q^1372^0:4:0
+@q^1376^0:4:0
+@q^1377^0:4:0
 @q^1465^2:2:0
 @q^1529^2:7:1
 @q^1645^1:0:0
@@ -318,9 +341,12 @@ GoldScout-export 6^em18pre9dzkw^14
 @q^1710^1:0:0
 @q^1725^1:1:0
 @q^1990^2:2:0
+@q^2070^1:0:0
+@q^2211^0:4:0
 @q^2276^3:4:0
 @q^2290^1:0:0
 @q^2295^0:15:0
+@q^2589^1:7:1
 @q^2592^1:7:1
 @q^2677^1:7:1
 @q^3010^0:15:0
@@ -503,6 +529,7 @@ GoldScout-export 6^em18pre9dzkw^14
 @q^287003^3:4:0
 @m^1413^The Barrens
 @m^1416^Alterac Mountains
+@m^1429^Elwynn Forest
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
 @m^1437^Wetlands
@@ -968,6 +995,8 @@ GoldScout-export 6^em18pre9dzkw^14
 @c^285277^
 @c^285278^
 @c^286152^
+@a^38^190:27,191:1
+@a^103^191:1
 @a^691^84:3,104:1
 @a^2246^67:1
 @a^2247^67:1

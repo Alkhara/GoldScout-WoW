@@ -1,4 +1,4 @@
-GoldScout-export 7^01brebf605sh^27
+GoldScout-export 7^01brebf605sh^28
 127^1^0^18^18^1436^0.3549^0.8378^1^Murloc Tidehunter^730:1:1^
 1527^2^0^8^8^1420^0.6781^0.4174^2^Hungering Dead^^
 1528^4^0^8^9^1420^0.6782^0.4243^4^Shambling Horror^2589:2:3^
@@ -79,7 +79,7 @@ GoldScout-export 7^01brebf605sh^27
 3384^5^0^14^15^1413^0.6224^0.4598^5^Southsea Privateer^1495:1:1,2589:1:2,3036:1:1,15485:1:1^
 3385^6^0^15^16^1413^0.6109^0.5215^6^Theramore Marine^858:1:1,2589:4:5^
 3394^1^0^16^16^1413^0.4281^0.2357^1^Barak Kodobane^858:1:1,5022:1:1^
-3397^10^0^14^15^1413^0.5481^0.4241^10^Kolkar Bloodcharger^1180:1:1,2215:1:1,2287:1:1,2589:4:8,5030:2:2,248704:1:1^
+3397^11^0^14^15^1413^0.5462^0.4236^11^Kolkar Bloodcharger^1180:1:1,1510:1:1,2215:1:1,2287:1:1,2589:4:8,5030:3:3,248685:1:1,248704:1:1^
 3425^12^0^14^15^1413^0.4245^0.3105^12^Savannah Prowler^1210:1:1,4893:5:5,5096:7:7,5134:4:4,14025:1:1,248682:1:1^
 3426^3^0^17^18^1413^0.5287^0.4170^3^Zhevra Charger^5086:1:1,5119:1:1,5120:1:1^
 3438^1^0^15^15^1413^0.5844^0.2720^1^Kreenig Snarlsnout^5063:1:1^
@@ -433,6 +433,7 @@ GoldScout-export 7^01brebf605sh^27
 @i^248682^Waylaid Crate: Apprentice Herbs
 @i^248683^Waylaid Crate: Apprentice Ore
 @i^248684^Waylaid Crate: Apprentice Textiles
+@i^248685^Waylaid Crate: Apprentice Curiosities
 @i^248704^Waylaid Crate: Apprentice Parts
 @i^251343^Plans: Acolyte's Chain Shirt
 @i^264693^Scarlet Crusade Attack Plans
@@ -718,6 +719,7 @@ GoldScout-export 7^01brebf605sh^27
 @q^248682^1:0:1
 @q^248683^1:0:1
 @q^248684^1:0:1
+@q^248685^1:0:1
 @q^248704^2:0:1
 @q^251343^3:9:0
 @q^264693^1:12:0
@@ -1194,7 +1196,7 @@ GoldScout-export 7^01brebf605sh^27
 @a^3384^192:5
 @a^3385^212:6
 @a^3394^88:1
-@a^3397^170:5,171:5
+@a^3397^170:6,171:5
 @a^3425^108:5,128:7
 @a^3426^107:1,191:1,192:1
 @a^3438^111:1
