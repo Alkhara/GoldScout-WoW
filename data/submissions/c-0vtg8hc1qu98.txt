@@ -1,4 +1,6 @@
-GoldScout-export 6^0vtg8hc1qu98^11
+GoldScout-export 6^0vtg8hc1qu98^13
+681^4^0^30^31^1434^0.3440^0.1193^4^Young Stranglethorn Tiger^1686:2:2,12202:3:3^
+683^1^0^30^31^1434^0.3539^0.1500^1^Young Panther^9822:1:1^
 2554^15^0^32^33^1417^0.6824^0.6474^15^Witherbark Axe Thrower^2592:2:2,3771:1:1,3778:1:1,4306:2:4,7273:7:7,216483:1:1^
 2555^12^0^33^34^1417^0.6949^0.6767^12^Witherbark Witch Doctor^1710:1:1,3809:1:1,3815:1:1,4306:7:12,7273:2:2,15226:1:1^
 2556^4^0^34^35^1417^0.6935^0.6718^4^Witherbark Headhunter^4306:2:3,7273:1:1,213546:1:1^
@@ -179,6 +181,7 @@ GoldScout-export 6^0vtg8hc1qu98^11
 13019^1^0^33^33^1443^0.5540^0.3018^1^Burning Blade Seer^15750:1:1^
 209797^1^0^20^20^1413^0.6483^0.3914^1^Bruuz^537:1:1,6361:1:1,253710:1:1^
 255560^2^0^41^41^1443^0.6837^0.7996^2^Magram Guardian^4306:1:1,213544:1:1^
+256807^4^0^39^40^2548^0.8511^0.4475^4^Shore Crawler^5524:1:1,5569:1:1,12206:1:1,17057:1:1,268345:1:1^
 258792^3^0^0^0^0^0.0000^0.0000^0^^213543:1:1^
 258799^6^0^0^0^0^0.0000^0.0000^0^^537:1:1,3778:1:1,15234:1:1,213546:2:2^
 258804^3^0^0^0^0^0.0000^0.0000^0^^4306:2:2,5567:1:1^
@@ -190,6 +193,7 @@ GoldScout-export 6^0vtg8hc1qu98^11
 259987^3^0^0^0^0^0.0000^0.0000^0^^4306:1:3,270333:2:2^
 260042^1^0^0^0^0^0.0000^0.0000^0^^274603:1:1^
 260202^1^0^0^0^0^0.0000^0.0000^0^^276894:1:1^
+260235^1^0^42^42^2548^0.8565^0.5213^1^Trapclaw^268586:1:1^
 261367^1^0^19^19^1413^0.4194^0.1135^1^Terry Longdrink^^
 261368^7^0^16^17^1413^0.4203^0.1319^7^Kul Tiras Marine^2589:1:3,2592:1:1^
 262119^1^0^18^18^1413^0.4212^0.1561^1^Corporal Adamore^2592:1:2,270151:1:1^
@@ -225,6 +229,7 @@ GoldScout-export 6^0vtg8hc1qu98^11
 @i^1515^Rough Wooden Staff
 @i^1516^Worn Hatchet
 @i^1529^Jade
+@i^1686^Bristly Whisker
 @i^1701^Curved Basilisk Claw
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
@@ -373,11 +378,14 @@ GoldScout-export 6^0vtg8hc1qu98^11
 @i^7719^Raging Berserker's Helm
 @i^8365^Raw Mithril Head Trout
 @i^9451^Bubbling Water
+@i^9822^Durable Cape of the Knight
 @i^9877^Sorcerer Cloak of Strength
 @i^9894^Huntsman's Shoulders of the Beast
 @i^11392^Severed Bat Claw
 @i^12037^Mystery Meat
+@i^12202^Tiger Meat
 @i^12203^Red Wolf Meat
+@i^12206^Tender Crab Meat
 @i^12564^Assassination Note
 @i^12884^Arnak's Hoof
 @i^12925^Arikara Serpent Skin
@@ -448,6 +456,8 @@ GoldScout-export 6^0vtg8hc1qu98^11
 @i^253710^Bruuz's Dorsal Fin
 @i^254432^Carved Centaur Totem
 @i^262888^Sealed Journeyman's Writ
+@i^268345^Sand Crawler Meat
+@i^268586^Trapclaw's Pincer
 @i^270151^Benedict's Orders
 @i^270305^Brinescale Trident
 @i^270333^Voodoo-Infused Artifact
@@ -485,6 +495,7 @@ GoldScout-export 6^0vtg8hc1qu98^11
 @q^1515^0:2:0
 @q^1516^0:2:0
 @q^1529^2:7:1
+@q^1686^0:15:0
 @q^1701^0:15:0
 @q^1708^1:0:0
 @q^1710^1:0:0
@@ -633,11 +644,14 @@ GoldScout-export 6^0vtg8hc1qu98^11
 @q^7719^3:4:0
 @q^8365^1:7:1
 @q^9451^1:0:0
+@q^9822^2:4:0
 @q^9877^2:4:0
 @q^9894^2:4:0
 @q^11392^0:15:0
 @q^12037^1:7:1
+@q^12202^1:7:1
 @q^12203^1:7:1
+@q^12206^1:7:1
 @q^12564^1:12:0
 @q^12884^1:0:0
 @q^12925^1:12:0
@@ -708,6 +722,8 @@ GoldScout-export 6^0vtg8hc1qu98^11
 @q^253710^1:12:0
 @q^254432^2:15:0
 @q^262888^3:0:0
+@q^268345^1:12:0
+@q^268586^1:12:0
 @q^270151^1:12:0
 @q^270305^1:12:0
 @q^270333^1:12:0
@@ -737,6 +753,7 @@ GoldScout-export 6^0vtg8hc1qu98^11
 @m^1444^Feralas
 @m^1445^Dustwallow Marsh
 @m^1450^Moonglade
+@m^2548^Riverglades
 @c^118^
 @c^724^
 @c^733^
@@ -1480,6 +1497,8 @@ GoldScout-export 6^0vtg8hc1qu98^11
 @c^279985^
 @c^279987^
 @c^286152^
+@a^681^46:2,47:2
+@a^683^47:1
 @a^2554^234:2,253:2,254:4,272:3,273:1,274:1,292:1,293:1
 @a^2555^254:2,273:1,274:5,292:1,293:3
 @a^2556^254:2,273:1,293:1
@@ -1606,6 +1625,8 @@ GoldScout-export 6^0vtg8hc1qu98^11
 @a^13019^131:1
 @a^209797^152:1
 @a^255560^313:1,333:1
+@a^256807^177:2,196:2
+@a^260235^217:1
 @a^261367^48:1
 @a^261368^48:4,68:3
 @a^262119^68:1

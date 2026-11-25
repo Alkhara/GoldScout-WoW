@@ -1,4 +1,4 @@
-GoldScout-export 6^e0nzz4xidf8q^14
+GoldScout-export 6^e0nzz4xidf8q^15
 3^4^0^24^25^1431^0.2311^0.3728^4^Flesh Eater^884:3:3,885:1:1,929:1:1,1129:2:2,5529:1:1,6530:1:1,211784:1:1^
 205^12^0^28^29^1431^0.6418^0.4513^12^Nightbane Dark Runner^1804:1:1,3770:1:1,5635:1:1^
 206^8^0^29^30^1431^0.5698^0.7850^8^Nightbane Vile Fang^929:1:1,1758:1:1,5635:1:1^
@@ -75,6 +75,10 @@ GoldScout-export 6^e0nzz4xidf8q^14
 2407^7^0^33^34^1416^0.6350^0.6016^7^Hulking Mountain Lion^1686:2:2,1687:1:1,3731:6:6^
 2462^5^0^25^25^1431^0.2334^0.3709^5^Flesh Eating Worm^^
 2529^2^0^0^0^0^0.0000^0.0000^0^^3066:1:1^
+2586^10^0^30^31^1417^0.3394^0.3039^10^Syndicate Highwayman^1707:1:1,1710:1:1,1803:1:1,2592:2:4,4306:4:7,5113:3:3,213545:1:1^
+2587^3^0^32^33^1417^0.3334^0.3176^3^Syndicate Pathstalker^4306:1:1^
+2589^6^0^31^32^1417^0.3303^0.3029^6^Syndicate Mercenary^1707:1:1,4306:3:4,4338:1:1,5113:2:2,6986:1:1,255723:1:1^
+2600^1^0^34^34^1417^0.3360^0.2829^1^Singer^5181:1:1^
 2618^1^0^34^34^1417^0.6039^0.6048^1^Hammerfall Peon^^
 2714^1^0^35^35^1417^0.6060^0.6055^1^Forsaken Courier^4482:1:1^
 2721^2^0^35^35^1417^0.6024^0.6152^2^Forsaken Bodyguard^1708:1:1^
@@ -211,6 +215,7 @@ GoldScout-export 6^e0nzz4xidf8q^14
 @i^1686^Bristly Whisker
 @i^1687^Retractable Claw
 @i^1697^Keen Raptor Tooth
+@i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
 @i^1712^Scroll of Spirit II
@@ -226,6 +231,7 @@ GoldScout-export 6^e0nzz4xidf8q^14
 @i^1786^Cross-stitched Vest
 @i^1787^Patched Leather Belt
 @i^1798^Rawhide Cloak
+@i^1803^Tough Leather Belt
 @i^1804^Tough Leather Boots
 @i^1806^Tough Cloak
 @i^1807^Tough Leather Gloves
@@ -289,6 +295,7 @@ GoldScout-export 6^e0nzz4xidf8q^14
 @i^3781^Broad Claymore
 @i^4050^Emblazoned Leggings
 @i^4306^Silk Cloth
+@i^4338^Mageweave Cloth
 @i^4402^Small Flame Sac
 @i^4428^Spider Palp
 @i^4482^Sealed Folder
@@ -298,6 +305,7 @@ GoldScout-export 6^e0nzz4xidf8q^14
 @i^4874^Clean Fishbones
 @i^5113^Mark of the Syndicate
 @i^5120^Long Tail Hair
+@i^5181^Vibrant Silk Cape
 @i^5191^Cruel Barb
 @i^5254^Rugged Spaulders
 @i^5443^Gold-plated Buckler
@@ -334,6 +342,7 @@ GoldScout-export 6^e0nzz4xidf8q^14
 @i^6893^Workshop Key
 @i^6902^Bands of Serra'kis
 @i^6911^Moss Cinch
+@i^6986^Crimson Lotus
 @i^7072^Naga Scale
 @i^7081^Breath of Wind
 @i^7091^Pattern: Truefaith Gloves
@@ -385,6 +394,7 @@ GoldScout-export 6^e0nzz4xidf8q^14
 @i^249881^Recipe: Root Tea
 @i^251961^Arcane Mote
 @i^253946^Pattern: Filigreed Pearly Leggings
+@i^255723^Manual: Greater Healing Potion
 @i^270180^Horrible Rootcore
 @i^270865^Titan Relic
 @i^273029^Golemsight Long Gun
@@ -430,6 +440,7 @@ GoldScout-export 6^e0nzz4xidf8q^14
 @q^1686^0:15:0
 @q^1687^0:15:0
 @q^1697^0:15:0
+@q^1707^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
 @q^1712^1:0:0
@@ -445,6 +456,7 @@ GoldScout-export 6^e0nzz4xidf8q^14
 @q^1786^0:4:0
 @q^1787^0:4:0
 @q^1798^0:4:0
+@q^1803^0:4:0
 @q^1804^0:4:0
 @q^1806^0:4:0
 @q^1807^0:4:0
@@ -508,6 +520,7 @@ GoldScout-export 6^e0nzz4xidf8q^14
 @q^3781^0:2:0
 @q^4050^2:4:0
 @q^4306^1:7:1
+@q^4338^1:7:1
 @q^4402^1:7:1
 @q^4428^0:15:0
 @q^4482^1:12:0
@@ -517,6 +530,7 @@ GoldScout-export 6^e0nzz4xidf8q^14
 @q^4874^0:15:0
 @q^5113^0:15:0
 @q^5120^0:15:0
+@q^5181^2:4:0
 @q^5191^3:2:0
 @q^5254^3:4:0
 @q^5443^3:4:0
@@ -553,6 +567,7 @@ GoldScout-export 6^e0nzz4xidf8q^14
 @q^6893^1:13:0
 @q^6902^3:4:0
 @q^6911^3:4:0
+@q^6986^0:15:0
 @q^7072^1:7:1
 @q^7081^1:7:1
 @q^7091^2:9:0
@@ -604,6 +619,7 @@ GoldScout-export 6^e0nzz4xidf8q^14
 @q^249881^1:9:0
 @q^251961^1:12:0
 @q^253946^3:9:0
+@q^255723^2:9:0
 @q^270180^1:12:0
 @q^270865^1:12:0
 @q^273029^3:2:0
@@ -931,6 +947,10 @@ GoldScout-export 6^e0nzz4xidf8q^14
 @a^2406^285:1,305:2,326:3
 @a^2407^196:1,213:2,215:2,308:1,345:1
 @a^2462^144:5
+@a^2586^106:6,126:4
+@a^2587^126:3
+@a^2589^106:4,126:2
+@a^2600^106:1
 @a^2618^252:1
 @a^2714^252:1
 @a^2721^252:2
