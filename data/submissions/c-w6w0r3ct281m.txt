@@ -1,4 +1,4 @@
-GoldScout-export 6^w6w0r3ct281m^24
+GoldScout-export 6^w6w0r3ct281m^25
 95^5^0^11^12^1436^0.4462^0.2523^5^Defias Smuggler^2589:1:2,6269:1:1^
 199^1^0^10^11^1436^0.4928^0.3163^1^Young Fleshripper^4775:1:1,7097:1:1,17056:1:1^
 315^2^0^32^32^1431^0.7719^0.3459^2^Stalvan Mistmantle^^
@@ -19,6 +19,8 @@ GoldScout-export 6^w6w0r3ct281m^24
 642^1^0^0^0^0^0.0000^0.0000^0^^7365:1:1^
 647^1^0^0^0^0^0.0000^0.0000^0^^1210:1:1,5200:1:1,251341:1:1^
 657^5^0^0^0^0^0.0000^0.0000^0^^1792:1:1,1812:1:1,2592:1:2^
+681^6^0^30^31^1434^0.3374^0.1137^6^Young Stranglethorn Tiger^1686:1:1,1687:2:2,2077:1:1,12202:3:3^
+683^2^0^30^31^1434^0.4043^0.1211^2^Young Panther^213543:1:1,248691:1:1^
 785^2^0^28^29^1431^0.1623^0.3228^2^Skeletal Warder^2592:1:2,4306:1:1^
 787^1^0^26^27^1431^0.1680^0.3731^1^Skeletal Healer^^
 824^1^0^15^16^1415^0.4124^0.7917^1^Defias Digger^2592:1:2^
@@ -69,6 +71,9 @@ GoldScout-export 6^w6w0r3ct281m^24
 3470^1^0^15^15^1413^0.4766^0.1915^1^Rathorian^5111:1:1^
 3696^1^0^30^30^1440^0.5475^0.7953^1^Ran Bloodtooth^5388:1:1^
 3736^1^0^23^23^1440^0.7816^0.7415^1^Darkslayer Mordenthal^6580:1:1^
+3752^6^0^29^30^1440^0.7816^0.4609^6^Xavian Rogue^3770:1:1,4306:2:4,14187:1:1^
+3755^5^0^28^29^1440^0.7849^0.4585^5^Xavian Felsworn^4306:1:1,211784:1:1^
+3757^5^0^29^30^1440^0.7832^0.4480^5^Xavian Hellcaller^1711:1:1,4306:1:2^
 3799^2^0^28^29^1440^0.7647^0.7482^2^Severed Druid^^
 3801^4^0^28^29^1440^0.7651^0.7437^4^Severed Sleeper^4306:2:4,4538:1:1,15516:1:1^
 3802^6^0^29^30^1440^0.7663^0.7423^6^Severed Dreamer^1712:1:1,2592:2:3,4306:2:4,4538:1:1^
@@ -159,9 +164,12 @@ GoldScout-export 6^w6w0r3ct281m^24
 @i^1206^Moss Agate
 @i^1210^Shadowgem
 @i^1514^Rusty Warhammer
+@i^1686^Bristly Whisker
+@i^1687^Retractable Claw
 @i^1697^Keen Raptor Tooth
 @i^1702^Intact Basilisk Spine
 @i^1705^Lesser Moonstone
+@i^1711^Scroll of Stamina II
 @i^1712^Scroll of Spirit II
 @i^1739^Laced Mail Boots
 @i^1742^Laced Mail Gloves
@@ -178,6 +186,7 @@ GoldScout-export 6^w6w0r3ct281m^24
 @i^1875^Thistlenettle's Badge
 @i^1894^Miners' Union Card
 @i^1944^Metalworking Gloves
+@i^2077^Magician Staff of the Bear
 @i^2078^Northern Shortsword of the Wolf
 @i^2214^Wooden Buckler
 @i^2215^Wooden Shield
@@ -287,8 +296,10 @@ GoldScout-export 6^w6w0r3ct281m^24
 @i^11406^Rotting Bear Carcass
 @i^11407^Pelagem Rasgada de Urso
 @i^11967^Zircon Band of Eluding
+@i^12202^Tiger Meat
 @i^12223^Meaty Bat Wing
 @i^13287^Pattern: Raptor Hide Harness
+@i^14187^Raincaller Cuffs of the Eagle
 @i^14746^Hulking Belt
 @i^15123^Robust Buckler of Intellect
 @i^15212^Fighter Broadsword of the Channeler
@@ -297,11 +308,13 @@ GoldScout-export 6^w6w0r3ct281m^24
 @i^17056^Light Feather
 @i^21071^Sabichão Cru
 @i^21113^Arca à Prova d'Água
-@i^211784^Pergaminho: ADUBIDIBE
+@i^211784^Scroll: WUBBA WUBBA
 @i^211853^Pergaminho: POÇO VOCE
 @i^211855^Pergaminho: LUAR VIGOROSO
+@i^213543^Scroll: UPDOG
 @i^248687^Waylaid Crate: Journeyman Ore
 @i^248689^Waylaid Crate: Journeyman Curiosities
+@i^248691^Waylaid Crate: Flowering Expert Herbs
 @i^248702^Waylaid Crate: Apprentice Fabrics
 @i^248704^Caixote Extraviado: Peças de Aprendiz
 @i^248707^Waylaid Crate: Journeyman Parts
@@ -337,9 +350,12 @@ GoldScout-export 6^w6w0r3ct281m^24
 @q^1206^2:7:1
 @q^1210^2:7:1
 @q^1514^0:2:0
+@q^1686^0:15:0
+@q^1687^0:15:0
 @q^1697^0:15:0
 @q^1702^0:15:0
 @q^1705^2:7:1
+@q^1711^1:0:0
 @q^1712^1:0:0
 @q^1739^0:4:0
 @q^1742^0:4:0
@@ -356,6 +372,7 @@ GoldScout-export 6^w6w0r3ct281m^24
 @q^1875^1:12:0
 @q^1894^1:12:0
 @q^1944^2:4:0
+@q^2077^2:2:0
 @q^2078^2:2:0
 @q^2214^0:4:0
 @q^2215^0:4:0
@@ -465,8 +482,10 @@ GoldScout-export 6^w6w0r3ct281m^24
 @q^11406^0:15:0
 @q^11407^1:12:0
 @q^11967^2:4:0
+@q^12202^1:7:1
 @q^12223^1:7:1
 @q^13287^2:9:0
+@q^14187^2:4:0
 @q^14746^2:4:0
 @q^15123^2:4:0
 @q^15212^2:2:0
@@ -478,8 +497,10 @@ GoldScout-export 6^w6w0r3ct281m^24
 @q^211784^1:0:0
 @q^211853^1:0:0
 @q^211855^1:0:0
+@q^213543^1:0:0
 @q^248687^1:0:1
 @q^248689^1:0:1
+@q^248691^1:0:1
 @q^248702^2:0:1
 @q^248704^2:0:1
 @q^248707^2:0:1
@@ -503,6 +524,7 @@ GoldScout-export 6^w6w0r3ct281m^24
 @m^1417^Arathi Highlands
 @m^1421^Silverpine Forest
 @m^1431^Duskwood
+@m^1434^Stranglethorn Vale
 @m^1436^Westfall
 @m^1437^Wetlands
 @m^1438^Teldrassil
@@ -885,6 +907,8 @@ GoldScout-export 6^w6w0r3ct281m^24
 @a^624^328:5
 @a^625^328:2
 @a^626^328:1
+@a^681^26:1,46:4,47:1
+@a^683^47:1,48:1
 @a^785^103:1,143:1
 @a^787^143:1
 @a^824^308:1
@@ -929,6 +953,9 @@ GoldScout-export 6^w6w0r3ct281m^24
 @a^3470^69:1
 @a^3696^310:1
 @a^3736^295:1
+@a^3752^195:6
+@a^3755^195:5
+@a^3757^175:1,195:4
 @a^3799^295:1,315:1
 @a^3801^295:3,315:1
 @a^3802^294:1,295:3,315:2

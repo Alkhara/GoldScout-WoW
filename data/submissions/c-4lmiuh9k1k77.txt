@@ -1,4 +1,4 @@
-GoldScout-export 6^4lmiuh9k1k77^11
+GoldScout-export 6^4lmiuh9k1k77^12
 681^4^0^30^31^1434^0.3451^0.1204^4^Young Stranglethorn Tiger^1686:4:4,12202:1:1^
 683^2^0^30^31^1434^0.4096^0.1170^2^Young Panther^1686:2:2^
 1529^8^0^9^10^1420^0.7683^0.6221^8^Bleeding Horror^118:1:1,2589:2:4,3370:1:1,4604:2:2^
@@ -36,6 +36,9 @@ GoldScout-export 6^4lmiuh9k1k77^11
 2413^1^0^33^33^1416^0.1922^0.9211^1^Dermot^3691:1:1^
 2414^1^0^33^33^1416^0.1680^0.8980^1^Kegan Darkmar^3688:1:1^
 2415^1^0^33^33^1416^0.1648^0.8922^1^Warden Belamoore^3711:1:1,3714:1:1^
+3197^16^0^9^10^1411^0.5320^0.0903^16^Burning Blade Fanatic^117:1:1,774:1:1,2138:1:1,2589:4:7,2642:1:1,2643:1:1,4563:1:1^
+3198^11^0^10^11^1411^0.5323^0.0892^11^Burning Blade Apprentice^118:1:1,159:1:1,727:1:1,774:1:1,1411:1:1,2212:1:1,2589:4:4,3013:1:1,14544:1:1,211780:1:1^
+3204^1^0^14^14^1411^0.5149^0.0968^1^Gazz'uz^4903:1:1^
 4054^11^0^24^25^1440^0.5933^0.5616^11^Laughing Sister^929:1:1,1205:2:2,1796:1:1,2592:5:6,5867:1:1,16656:1:1^
 4100^2^0^28^29^1441^0.2810^0.4932^2^Screeching Harpy^1205:1:1,4306:2:3,17056:1:1^
 4101^1^0^29^30^1441^0.2794^0.4947^1^Screeching Roguefeather^^
@@ -62,6 +65,7 @@ GoldScout-export 6^4lmiuh9k1k77^11
 @i^117^Tough Jerky
 @i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
+@i^727^Notched Shortsword of Holy Wrath
 @i^774^Malachite
 @i^779^Shiny Seashell
 @i^805^Small Red Pouch
@@ -95,10 +99,13 @@ GoldScout-export 6^4lmiuh9k1k77^11
 @i^2070^Darnassian Bleu
 @i^2075^Priest's Mace of Stamina
 @i^2138^Sharpened Letter Opener
+@i^2212^Cracked Buckler
 @i^2289^Scroll of Strength II
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2635^Loose Chain Belt
+@i^2642^Loose Chain Boots
+@i^2643^Loose Chain Bracers
 @i^2645^Loose Chain Gloves
 @i^2646^Loose Chain Pants
 @i^2672^Stringy Wolf Meat
@@ -126,9 +133,11 @@ GoldScout-export 6^4lmiuh9k1k77^11
 @i^3714^Worn Stone Token
 @i^3787^Stone Club
 @i^4306^Silk Cloth
+@i^4563^Billy Club
 @i^4604^Forest Mushroom Cap
 @i^4663^Journeyman's Belt
 @i^4865^Ruined Pelt
+@i^4903^Eye of Burning Shadow
 @i^5137^Bright Eyeball
 @i^5465^Small Spider Leg
 @i^5523^Small Barnacled Clam
@@ -154,9 +163,11 @@ GoldScout-export 6^4lmiuh9k1k77^11
 @i^12202^Tiger Meat
 @i^12223^Meaty Bat Wing
 @i^12946^Hypercapacitor Gizmo
+@i^14544^Lieutenant's Insignia
 @i^16656^Shredder Operating Manual - Page 12
 @i^17056^Light Feather
 @i^21150^Iron Bound Trunk
+@i^211780^Scroll: KWYJIBO
 @i^250366^Recipe: Minor Cleric's Elixir
 @i^264693^Scarlet Crusade Attack Plans
 @i^268812^Whispering Horror Residue
@@ -170,6 +181,7 @@ GoldScout-export 6^4lmiuh9k1k77^11
 @q^117^1:0:0
 @q^118^1:0:0
 @q^159^1:0:0
+@q^727^2:2:0
 @q^774^2:7:1
 @q^779^0:15:0
 @q^805^1:1:0
@@ -203,10 +215,13 @@ GoldScout-export 6^4lmiuh9k1k77^11
 @q^2070^1:0:0
 @q^2075^2:2:0
 @q^2138^0:2:0
+@q^2212^0:4:0
 @q^2289^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2635^0:4:0
+@q^2642^0:4:0
+@q^2643^0:4:0
 @q^2645^0:4:0
 @q^2646^0:4:0
 @q^2672^1:7:1
@@ -234,9 +249,11 @@ GoldScout-export 6^4lmiuh9k1k77^11
 @q^3714^1:12:0
 @q^3787^0:2:0
 @q^4306^1:7:1
+@q^4563^1:2:0
 @q^4604^1:0:0
 @q^4663^1:4:0
 @q^4865^0:15:0
+@q^4903^1:12:0
 @q^5137^0:15:0
 @q^5465^1:7:1
 @q^5523^1:7:0
@@ -262,9 +279,11 @@ GoldScout-export 6^4lmiuh9k1k77^11
 @q^12202^1:7:1
 @q^12223^1:7:1
 @q^12946^1:12:0
+@q^14544^1:12:0
 @q^16656^1:12:0
 @q^17056^1:15:1
 @q^21150^1:15:0
+@q^211780^1:0:0
 @q^250366^1:9:0
 @q^264693^1:12:0
 @q^268812^1:12:0
@@ -275,6 +294,7 @@ GoldScout-export 6^4lmiuh9k1k77^11
 @q^278244^1:12:0
 @q^286259^1:12:0
 @q^286326^1:12:0
+@m^1411^Durotar
 @m^1413^The Barrens
 @m^1416^Alterac Mountains
 @m^1420^Tirisfal Glades
@@ -1919,6 +1939,9 @@ GoldScout-export 6^4lmiuh9k1k77^11
 @a^2413^363:1
 @a^2414^343:1
 @a^2415^343:1
+@a^3197^30:13,50:2,51:1
+@a^3198^30:9,50:2
+@a^3204^30:1
 @a^4054^211:1,231:8,232:2
 @a^4100^185:1,205:1
 @a^4101^185:1

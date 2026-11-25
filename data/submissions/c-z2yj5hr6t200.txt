@@ -1,4 +1,4 @@
-GoldScout-export 6^z2yj5hr6t200^16
+GoldScout-export 6^z2yj5hr6t200^17
 2248^49^0^30^31^1424^0.4597^0.3130^49^Cave Yeti^1708:1:1,1710:1:1,3771:4:4,5637:2:2,248705:1:1,262889:1:1^
 2249^13^0^31^32^1424^0.4385^0.3018^13^Ferocious Yeti^3771:1:1,15250:1:1^
 2250^3^0^32^33^1416^0.3542^0.7237^3^Mountain Yeti^3708:1:1^
@@ -36,6 +36,12 @@ GoldScout-export 6^z2yj5hr6t200^16
 2623^10^0^32^33^1416^0.2457^0.5796^10^Spirit of Old^^
 2628^1^0^34^34^1416^0.2169^0.5812^1^Dalaran Worker^^
 3560^12^0^33^34^1417^0.7105^0.6356^12^Healing Ward^^
+4113^1^0^28^28^1441^0.6440^0.5682^1^Gravelsnout Digger^^
+4124^1^0^27^27^1441^0.6367^0.5806^1^Needles Cougar^5137:1:1^
+4139^4^0^33^34^1441^0.7168^0.7330^4^Scorpid Terror^5794:2:2,12037:1:1^
+4140^12^0^31^32^1441^0.7159^0.6966^12^Scorpid Reaver^1288:2:2,5794:4:4,12037:3:3,14403:1:1,19938:2:2^
+4142^4^0^30^31^1441^0.7093^0.6479^4^Sparkleshell Tortoise^3712:1:1,4556:2:2^
+4147^3^0^30^31^1441^0.6971^0.6558^3^Saltstone Basilisk^1701:1:1,1702:1:1,11384:1:1^
 4420^1^0^0^0^0^0.0000^0.0000^0^^6687:1:1^
 4421^1^0^0^0^0^0.0000^0.0000^0^^5793:1:1,6693:1:1,17008:1:1,253986:1:1^
 4422^1^0^0^0^0^0.0000^0.0000^0^^6690:1:1^
@@ -82,12 +88,16 @@ GoldScout-export 6^z2yj5hr6t200^16
 255070^1^0^0^0^0^0.0000^0.0000^0^^6590:1:1^
 255072^2^0^0^0^0^0.0000^0.0000^0^^^
 269134^5^0^0^0^0^0.0000^0.0000^0^^1805:1:1,248686:1:1^
+270094^1^0^30^30^1441^0.5827^0.5628^1^Stormheart^5128:1:1,7090:1:1,279186:1:1^
 @i^878^Fist-sized Spinneret
 @i^1074^Hard Spider Leg Tip
 @i^1081^Crisp Spider Meat
+@i^1288^Large Venom Sac
 @i^1529^Jade
 @i^1686^Bristly Whisker
 @i^1696^Curved Raptor Talon
+@i^1701^Curved Basilisk Claw
+@i^1702^Intact Basilisk Spine
 @i^1705^Lesser Moonstone
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
@@ -118,6 +128,7 @@ GoldScout-export 6^z2yj5hr6t200^16
 @i^3690^Bloodstone Shard
 @i^3691^Bloodstone Wedge
 @i^3708^Helcular's Rod
+@i^3712^Turtle Meat
 @i^3714^Worn Stone Token
 @i^3715^Bracers of Earth Binding
 @i^3730^Big Bear Meat
@@ -140,15 +151,19 @@ GoldScout-export 6^z2yj5hr6t200^16
 @i^4495^Bloodstone Amulet
 @i^4512^Highland Raptor Eye
 @i^4553^Jagged Piece of Stone
+@i^4556^Speckled Shell Fragment
 @i^4585^Dripping Spider Mandible
 @i^4586^Smooth Raptor Skin
 @i^4606^Spongy Morel
 @i^4633^Heavy Bronze Lockbox
 @i^4784^Lifeless Stone
 @i^5113^Mark of the Syndicate
+@i^5128^Shed Lizard Skin
+@i^5137^Bright Eyeball
 @i^5637^Large Fang
 @i^5741^Rock Chip
 @i^5793^Razorflank's Heart
+@i^5794^Salty Scorpid Venom
 @i^5801^Kraul Guano
 @i^5810^Fresh Carcass
 @i^5811^Frostmaw's Mane
@@ -165,18 +180,22 @@ GoldScout-export 6^z2yj5hr6t200^16
 @i^6693^Agamaggan's Clutch
 @i^6986^Crimson Lotus
 @i^7067^Elemental Earth
+@i^7090^Pattern: Green Silk Armor
 @i^8150^Deeprock Salt
 @i^9774^Greenweave Vest of Frost Protection
 @i^9827^Scaled Leather Belt of the Champion
 @i^10289^Durable Hat of Shadow Wrath
+@i^11384^Broken Basilisk Teeth
 @i^11392^Severed Bat Claw
 @i^11394^Bat Heart
 @i^11406^Rotting Bear Carcass
 @i^11416^Delicate Ribcage
+@i^12037^Mystery Meat
 @i^12184^Raptor Flesh
 @i^14181^Watcher's Handwraps of Stamina
 @i^14199^Thistlefur Gloves of Magic
 @i^14206^Vital Bracelets of the Physician
+@i^14403^Resilient Handgrips
 @i^14562^Prospector's Chestpiece
 @i^14749^Hulking Spaulders
 @i^15212^Fighter Broadsword of Agility
@@ -186,6 +205,7 @@ GoldScout-export 6^z2yj5hr6t200^16
 @i^15539^Wicked Chain Waistband of Arcane Protection
 @i^15947^Sanguine Star
 @i^17008^Small Scroll
+@i^19938^Heavy Scorpid Leg
 @i^213422^Illegible Recipe
 @i^216483^Witherbark Mallet
 @i^248686^Waylaid Crate: Journeyman Herbs
@@ -210,13 +230,17 @@ GoldScout-export 6^z2yj5hr6t200^16
 @i^276158^Crystallized Shard
 @i^276160^Mana Fragment
 @i^278225^Surgical Spidersilk
+@i^279186^Stormheart's Still-beating Heart
 @i^286992^Construct's Grips
 @q^878^0:7:0
 @q^1074^0:15:0
 @q^1081^1:7:1
+@q^1288^1:7:1
 @q^1529^2:7:1
 @q^1686^0:15:0
 @q^1696^0:15:0
+@q^1701^0:15:0
+@q^1702^0:15:0
 @q^1705^2:7:1
 @q^1707^1:0:0
 @q^1708^1:0:0
@@ -247,6 +271,7 @@ GoldScout-export 6^z2yj5hr6t200^16
 @q^3690^1:12:0
 @q^3691^1:12:0
 @q^3708^1:12:0
+@q^3712^1:7:1
 @q^3714^1:12:0
 @q^3715^1:12:0
 @q^3730^1:7:1
@@ -269,15 +294,19 @@ GoldScout-export 6^z2yj5hr6t200^16
 @q^4495^1:12:0
 @q^4512^1:12:0
 @q^4553^0:15:0
+@q^4556^0:15:0
 @q^4585^0:15:0
 @q^4586^0:15:0
 @q^4606^1:0:0
 @q^4633^2:15:0
 @q^4784^0:15:0
 @q^5113^0:15:0
+@q^5128^0:15:0
+@q^5137^0:15:0
 @q^5637^1:7:1
 @q^5741^0:15:0
 @q^5793^1:12:0
+@q^5794^1:12:0
 @q^5801^1:12:0
 @q^5810^1:12:0
 @q^5811^1:12:0
@@ -294,18 +323,22 @@ GoldScout-export 6^z2yj5hr6t200^16
 @q^6693^3:4:0
 @q^6986^0:15:0
 @q^7067^1:7:1
+@q^7090^2:9:0
 @q^8150^1:7:1
 @q^9774^2:4:0
 @q^9827^2:4:0
 @q^10289^2:4:0
+@q^11384^0:15:0
 @q^11392^0:15:0
 @q^11394^0:15:0
 @q^11406^0:15:0
 @q^11416^0:15:0
+@q^12037^1:7:1
 @q^12184^1:7:1
 @q^14181^2:4:0
 @q^14199^2:4:0
 @q^14206^2:4:0
+@q^14403^2:4:0
 @q^14562^2:4:0
 @q^14749^2:4:0
 @q^15212^2:2:0
@@ -315,6 +348,7 @@ GoldScout-export 6^z2yj5hr6t200^16
 @q^15539^2:4:0
 @q^15947^2:4:0
 @q^17008^1:15:0
+@q^19938^0:15:0
 @q^213422^1:12:0
 @q^216483^1:0:0
 @q^248686^1:0:1
@@ -339,11 +373,13 @@ GoldScout-export 6^z2yj5hr6t200^16
 @q^276158^0:15:0
 @q^276160^0:15:0
 @q^278225^1:12:0
+@q^279186^1:12:0
 @q^286992^3:4:0
 @m^1413^The Barrens
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
 @m^1424^Hillsbrad Foothills
+@m^1441^Thousand Needles
 @c^118^
 @c^724^
 @c^733^
@@ -1097,9 +1133,16 @@ GoldScout-export 6^z2yj5hr6t200^16
 @a^2623^204:1,224:5,225:4
 @a^2628^224:1
 @a^3560^253:3,254:6,274:3
+@a^4113^232:1
+@a^4124^232:1
+@a^4139^294:4
+@a^4140^253:1,274:4,294:7
+@a^4142^234:1,254:1,274:2
+@a^4147^273:2,274:1
 @a^4479^151:1
 @a^4480^131:1
 @a^4481^150:1
 @a^4504^267:1
 @a^6132^368:1
+@a^270094^231:1
 @l^0^enUS

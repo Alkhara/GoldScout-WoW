@@ -1,4 +1,4 @@
-GoldScout-export 6^k0mvbyvl1s4f^2
+GoldScout-export 7^k0mvbyvl1s4f^3
 92^1^0^40^40^1418^0.1561^0.3248^1^Rock Elemental^4784:1:1,7912:1:1,8150:1:1^
 2558^1^0^36^36^1417^0.2133^0.6670^1^Witherbark Berserker^248690:1:1^
 2569^2^0^37^38^1417^0.2112^0.6614^2^Boulderfist Mauler^4306:1:3^
@@ -13,6 +13,12 @@ GoldScout-export 6^k0mvbyvl1s4f^2
 2748^1^0^0^0^0^0.0000^0.0000^0^^7672:1:1,9418:1:1,11118:1:1^
 2773^1^0^40^40^1417^0.2075^0.6561^1^Or'Kalar^4551:1:1^
 2783^1^0^40^40^1417^0.2981^0.6479^1^Marez Cowl^4510:1:1^
+3244^5^0^11^12^1413^0.4839^0.2769^5^Greater Plainstrider^3192:1:1,4775:1:1,4894:2:2,5115:1:1,5469:2:2,17056:2:2^
+3246^1^0^12^12^1413^0.4708^0.2654^1^Fleeting Plainstrider^4894:1:1^
+3255^1^0^13^13^1413^0.4664^0.2598^1^Sunscale Screecher^5062:1:1^
+3272^2^0^12^13^1413^0.4301^0.2378^2^Kolkar Wrangler^3013:1:1,5030:2:2^
+3273^1^0^13^14^1413^0.4445^0.2308^1^Kolkar Stormer^2589:1:2,5030:1:1^
+3394^1^0^16^16^1413^0.4277^0.2357^1^Barak Kodobane^2287:1:1,5022:1:1^
 4467^1^0^47^47^1425^0.4807^0.6750^1^Vilebranch Soothsayer^4338:1:2^
 4848^1^0^0^0^0^0.0000^0.0000^0^^8052:1:1^
 4849^1^0^0^0^0^0.0000^0.0000^0^^9909:1:1^
@@ -40,9 +46,14 @@ GoldScout-export 6^k0mvbyvl1s4f^2
 7397^3^0^0^0^0^0.0000^0.0000^0^^^
 7405^1^0^0^0^0^0.0000^0.0000^0^^12037:1:1,19935:1:1^
 7996^1^0^50^50^1425^0.4869^0.6798^1^Qiaga the Keeper^4599:1:1,9241:1:1^
+9524^1^0^16^16^1413^0.4551^0.2664^1^Kolkar Invader^^
 @i^1177^Oil of Olaf
 @i^1645^Moonberry Juice
+@i^2287^Haunch of Meat
+@i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^3013^Scroll of Protection
+@i^3192^Short Bastard Sword of Stamina
 @i^3771^Wild Hog Shank
 @i^3799^Interlaced Vest
 @i^3801^Hardened Leather Boots
@@ -60,7 +71,14 @@ GoldScout-export 6^k0mvbyvl1s4f^2
 @i^4599^Cured Ham Steak
 @i^4636^Strong Iron Lockbox
 @i^4637^Steel Lockbox
+@i^4775^Cracked Bill
 @i^4784^Lifeless Stone
+@i^4894^Plainstrider Kidney
+@i^5022^Kodobane's Head
+@i^5030^Centaur Bracers
+@i^5062^Raptor Head
+@i^5115^Broken Wishbone
+@i^5469^Strider Meat
 @i^6362^Raw Rockscale Cod
 @i^6986^Crimson Lotus
 @i^7072^Naga Scale
@@ -90,6 +108,7 @@ GoldScout-export 6^k0mvbyvl1s4f^2
 @i^12037^Mystery Meat
 @i^12203^Red Wolf Meat
 @i^15287^Crusader Bow of the Bandit
+@i^17056^Light Feather
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
 @i^19935^Empty Venom Sac
@@ -100,7 +119,11 @@ GoldScout-export 6^k0mvbyvl1s4f^2
 @i^274430^Rock Sentinel Slicer
 @q^1177^1:0:0
 @q^1645^1:0:0
+@q^2287^1:0:0
+@q^2589^1:7:1
 @q^2592^1:7:1
+@q^3013^1:0:0
+@q^3192^2:2:0
 @q^3771^1:0:0
 @q^3799^0:4:0
 @q^3801^0:4:0
@@ -118,7 +141,14 @@ GoldScout-export 6^k0mvbyvl1s4f^2
 @q^4599^1:0:0
 @q^4636^2:15:0
 @q^4637^2:15:0
+@q^4775^0:15:0
 @q^4784^0:15:0
+@q^4894^1:12:0
+@q^5022^1:12:0
+@q^5030^1:12:0
+@q^5062^1:12:0
+@q^5115^0:15:0
+@q^5469^1:7:1
 @q^6362^1:7:1
 @q^6986^0:15:0
 @q^7072^1:7:1
@@ -148,6 +178,7 @@ GoldScout-export 6^k0mvbyvl1s4f^2
 @q^12037^1:7:1
 @q^12203^1:7:1
 @q^15287^2:2:0
+@q^17056^1:15:1
 @q^17057^1:15:0
 @q^17058^1:15:0
 @q^19935^0:15:0
@@ -156,6 +187,7 @@ GoldScout-export 6^k0mvbyvl1s4f^2
 @q^248710^2:0:1
 @q^251398^3:9:0
 @q^274430^3:2:0
+@m^1413^The Barrens
 @m^1417^Arathi Highlands
 @m^1418^Badlands
 @m^1425^The Hinterlands
@@ -828,6 +860,20 @@ GoldScout-export 6^k0mvbyvl1s4f^2
 @a^2680^273:1
 @a^2773^264:1
 @a^2783^245:1
+@a^3244^109:5
+@a^3246^109:1
+@a^3255^109:1
+@a^3272^88:2
+@a^3273^88:1
+@a^3394^88:1
 @a^4467^269:1
 @a^7996^269:1
+@a^9524^109:1
+@t^3244^4:120
+@t^3246^1:31
+@t^3255^1:19
+@t^3272^2:82
+@t^3273^1:124
+@t^3394^1:1
+@t^9524^1:83
 @l^0^enUS

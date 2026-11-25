@@ -1,4 +1,4 @@
-GoldScout-export 6^sitwl3qe4zml^37
+GoldScout-export 6^sitwl3qe4zml^38
 232^2^0^23^23^1424^0.3306^0.3632^2^Farmer Ray^2592:1:2,4538:2:2^
 619^1^0^16^16^1415^0.4121^0.7926^1^Defias Conjurer^2592:1:1,6550:1:1^
 636^2^0^0^0^0^0.0000^0.0000^0^^2589:1:4,4697:1:1,9776:1:1^
@@ -194,9 +194,10 @@ GoldScout-export 6^sitwl3qe4zml^37
 4306^6^0^0^0^0^0.0000^0.0000^0^^1707:1:1,3827:1:1,5805:6:6^
 4308^4^0^0^0^0^0.0000^0.0000^0^^3800:1:1,4306:1:1^
 4342^2^0^36^37^1445^0.4251^0.3814^2^Drywallow Vicejaw^770:2:3^
-4343^3^0^37^38^1445^0.4021^0.3232^3^Drywallow Snapper^770:3:5,3667:1:1^
+4343^5^0^37^38^1445^0.4036^0.3207^5^Drywallow Snapper^770:4:6,3667:2:2,15977:1:1^
 4344^1^0^38^39^1445^0.4565^0.4723^1^Mottled Drywallow Crocolisk^3667:1:1^
 4358^1^0^35^35^1445^0.5748^0.2030^1^Mirefin Puddlejumper^^
+4387^1^0^38^38^1445^0.4034^0.3229^1^Withervine Mire Beast^4607:1:1^
 4411^1^0^36^36^1445^0.4598^0.4159^1^Darkfang Lurker^4585:1:1^
 4416^2^0^0^0^0^0.0000^0.0000^0^^14166:1:1^
 4418^2^0^0^0^0^0.0000^0.0000^0^^1815:1:1,2592:1:2^
@@ -509,6 +510,7 @@ GoldScout-export 6^sitwl3qe4zml^37
 @i^4585^Dripping Spider Mandible
 @i^4603^Raw Spotted Yellowtail
 @i^4606^Spongy Morel
+@i^4607^Delicious Cave Mold
 @i^4697^Burnished Girdle
 @i^4715^Emblazoned Cloak
 @i^4859^Burning Blade Medallion
@@ -559,6 +561,7 @@ GoldScout-export 6^sitwl3qe4zml^37
 @i^5844^Fragments of Rok'Alim
 @i^5848^Hollow Vulture Bone
 @i^5881^Head of Kelris
+@i^6149^Greater Mana Potion
 @i^6289^Raw Longjaw Mud Snapper
 @i^6291^Raw Brilliant Smallfish
 @i^6308^Raw Bristle Whisker Catfish
@@ -635,8 +638,10 @@ GoldScout-export 6^sitwl3qe4zml^37
 @i^12203^Red Wolf Meat
 @i^12564^Assassination Note
 @i^12884^Arnak's Hoof
+@i^13757^Lightning Eel
 @i^13758^Raw Redgill
 @i^13760^Raw Sunscale Salmon
+@i^13885^34 Pound Redgill
 @i^14166^Buccaneer's Bracers of the Owl
 @i^14211^Vital Handwraps of Frost Protection
 @i^14221^Geomancer's Bracers of the Eagle
@@ -656,6 +661,7 @@ GoldScout-export 6^sitwl3qe4zml^37
 @i^15509^Grunt's Handwraps of Power
 @i^15511^Grunt's Legguards of Magic
 @i^15520^Spiked Chain Gauntlets of the Tiger
+@i^15977^Vital Orb of Intellect
 @i^16192^Besseleth's Fang
 @i^16303^Ursangous's Paw
 @i^16646^Shredder Operating Manual - Page 2
@@ -897,6 +903,7 @@ GoldScout-export 6^sitwl3qe4zml^37
 @q^4585^0:15:0
 @q^4603^1:7:1
 @q^4606^1:0:0
+@q^4607^1:0:0
 @q^4697^2:4:0
 @q^4715^2:4:0
 @q^4859^1:12:0
@@ -947,6 +954,7 @@ GoldScout-export 6^sitwl3qe4zml^37
 @q^5844^1:12:0
 @q^5848^1:12:0
 @q^5881^1:12:0
+@q^6149^1:0:0
 @q^6289^1:7:1
 @q^6291^1:7:1
 @q^6308^1:7:1
@@ -1023,8 +1031,10 @@ GoldScout-export 6^sitwl3qe4zml^37
 @q^12203^1:7:1
 @q^12564^1:12:0
 @q^12884^1:0:0
+@q^13757^1:7:1
 @q^13758^1:7:1
 @q^13760^1:7:1
+@q^13885^1:15:0
 @q^14166^2:4:0
 @q^14211^2:4:0
 @q^14221^2:4:0
@@ -1044,6 +1054,7 @@ GoldScout-export 6^sitwl3qe4zml^37
 @q^15509^2:4:0
 @q^15511^2:4:0
 @q^15520^2:4:0
+@q^15977^2:4:0
 @q^16192^1:12:0
 @q^16303^2:12:0
 @q^16646^1:12:0
@@ -2207,9 +2218,10 @@ GoldScout-export 6^sitwl3qe4zml^37
 @a^4281^136:2,156:2
 @a^4282^136:1,156:2
 @a^4342^127:1,169:1
-@a^4343^127:1,128:2
+@a^4343^127:1,128:4
 @a^4344^189:1
 @a^4358^91:1
+@a^4387^128:1
 @a^4411^169:1
 @a^4457^86:1,87:1
 @a^4458^86:2,87:5
@@ -2253,7 +2265,7 @@ GoldScout-export 6^sitwl3qe4zml^37
 @f^1435^0^21^225^4603:3:3,6358:2:2,6359:1:1,6362:15:15,16970:1:1^158:21
 @f^1442^0^228^130^929:2:2,3820:1:2,4363:1:1,4371:1:2,4377:2:2,6289:44:44,6308:78:78,6309:1:1,6359:23:23,6456:11:11,6457:40:40,6458:18:18,21113:4:4,21114:2:4^213:10,214:132,234:86
 @f^1443^0^32^225^3820:2:4,4603:9:9,6358:1:1,6359:5:5,6362:9:9,8365:1:1,16968:1:1,21150:3:3,21151:2:2^284:8,305:24
-@f^1444^0^31^225^3928:1:1,6358:1:1,8112:1:1,8365:2:2,13758:16:16,13760:10:10,16967:1:1^212:31
+@f^1444^0^142^225^3928:1:1,6149:1:1,6358:8:8,8112:1:1,8365:8:8,13757:10:10,13758:64:64,13760:48:48,13885:1:1,16967:1:1^194:111,212:31
 @f^1445^0^360^202^1710:1:1,6308:117:117,6309:1:1,6310:2:2,8365:239:239^127:219,229:141
 @f^1456^0^108^75^6289:66:66,6291:12:12,6308:30:30^247:108
 @l^0^enUS
