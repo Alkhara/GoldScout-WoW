@@ -1,5 +1,6 @@
-GoldScout-export 6^77f635vm4mug^7
+GoldScout-export 6^77f635vm4mug^8
 547^2^0^17^17^1433^0.4226^0.2541^2^Grand Broche-tripes^723:1:1,769:1:2,2677:1:1,3172:1:1^
+1152^1^0^35^36^1434^0.4064^0.2253^1^Crocilisque Gueule d'acier^3667:1:1^
 1755^1^0^30^30^1453^0.7232^0.3491^1^Marzon Lame silencieuse^^
 3809^3^0^21^21^1440^0.5429^0.5587^3^Ours d'Ashenvale^2940:1:1,3730:1:1,11406:1:1^
 3810^1^0^25^26^1440^0.6831^0.6090^1^Vieil ours d'Ashenvale^3730:1:1^
@@ -60,12 +61,14 @@ GoldScout-export 6^77f635vm4mug^7
 @i^3172^Tripes de sanglier
 @i^3201^Hache de guerre barbare du tigre
 @i^3385^Potion de mana inférieure
+@i^3667^Viande de crocilisque tendre
 @i^3730^Viande de grand ours
 @i^3770^Côtelette de mouton
 @i^4306^Etoffe de soie
 @i^4371^Tube en bronze
 @i^4377^Poudre d'explosion majeure
 @i^4542^Pain de maïs moelleux
+@i^4603^Jaune-queue tacheté cru
 @i^4706^Cape en écailles brillantes
 @i^4707^Ceinturon en écailles brillantes
 @i^5119^Fin cheveu flottant
@@ -74,9 +77,13 @@ GoldScout-export 6^77f635vm4mug^7
 @i^5566^Ramure brisée
 @i^5871^Grand sabot
 @i^6289^Lutjan à longue mâchoire cru
+@i^6291^Goujon brillant cru
 @i^6308^Poisson-chat moustachu cru
 @i^6311^Poisson-chat de 22 livres
+@i^6358^Bouche-noire huileux
+@i^6359^Lutjan de nagefeu
 @i^6361^Thon arc-en-ciel cru
+@i^6362^Morue rochécaille crue
 @i^6387^Brassards en mailles rougeoyantes
 @i^6397^Gants blasonnés
 @i^6592^Armure de forgeguerre du tigre
@@ -84,6 +91,7 @@ GoldScout-export 6^77f635vm4mug^7
 @i^6893^Clé d'atelier
 @i^7085^Patron : Epaulières d'azur
 @i^7354^Bottes de doyen d'endurance
+@i^8365^Truite tête-mithril crue
 @i^9277^Mémoire de Techbot
 @i^9279^Carte perforée blanche
 @i^9308^Objet sali
@@ -96,6 +104,7 @@ GoldScout-export 6^77f635vm4mug^7
 @i^11406^Carcasse pourrie d'ours
 @i^15241^Couteau de combat du gorille
 @i^21071^Sagerelle crue
+@i^21153^Grande sagerelle crue
 @i^211853^Parchemin : VOCE WELL
 @i^213547^Parchemin : ELLUQE PÉÉE
 @i^248686^Caisse détournée : plantes de compagnon
@@ -134,12 +143,14 @@ GoldScout-export 6^77f635vm4mug^7
 @q^3172^1:7:1
 @q^3201^2:2:0
 @q^3385^1:0:0
+@q^3667^1:7:1
 @q^3730^1:7:1
 @q^3770^1:0:0
 @q^4306^1:7:1
 @q^4371^1:7:1
 @q^4377^1:7:1
 @q^4542^1:0:0
+@q^4603^1:7:1
 @q^4706^2:4:0
 @q^4707^2:4:0
 @q^5119^0:15:0
@@ -148,9 +159,13 @@ GoldScout-export 6^77f635vm4mug^7
 @q^5566^0:15:0
 @q^5871^0:15:0
 @q^6289^1:7:1
+@q^6291^1:7:1
 @q^6308^1:7:1
 @q^6311^1:15:0
+@q^6358^1:7:1
+@q^6359^1:7:1
 @q^6361^1:7:1
+@q^6362^1:7:1
 @q^6387^2:4:0
 @q^6397^2:4:0
 @q^6592^2:4:0
@@ -158,6 +173,7 @@ GoldScout-export 6^77f635vm4mug^7
 @q^6893^1:13:0
 @q^7085^2:9:0
 @q^7354^2:4:0
+@q^8365^1:7:1
 @q^9277^1:12:0
 @q^9279^1:12:0
 @q^9308^1:12:0
@@ -170,6 +186,7 @@ GoldScout-export 6^77f635vm4mug^7
 @q^11406^0:15:0
 @q^15241^2:2:0
 @q^21071^1:7:1
+@q^21153^1:7:1
 @q^211853^1:0:0
 @q^213547^1:0:0
 @q^248686^1:0:1
@@ -180,8 +197,11 @@ GoldScout-export 6^77f635vm4mug^7
 @q^274042^3:4:0
 @m^1415^Royaumes de l'est
 @m^1433^Les Carmines
+@m^1434^Vallée de Strangleronce
+@m^1437^Les Paluns
 @m^1440^Orneval
 @m^1453^Hurlevent
+@m^1455^Forgefer
 @c^118^
 @c^724^
 @c^733^
@@ -639,6 +659,7 @@ GoldScout-export 6^77f635vm4mug^7
 @c^285278^
 @c^286152^
 @a^547^88:1,108:1
+@a^1152^88:1
 @a^1755^134:1
 @a^3809^230:2,231:1
 @a^3810^253:1
@@ -649,6 +670,9 @@ GoldScout-export 6^77f635vm4mug^7
 @a^6221^208:1
 @a^6231^208:2
 @f^1433^0^17^119^6289:8:8,6308:9:9^185:1,204:14,205:2
+@f^1434^0^23^133^4603:4:4,6358:1:1,6362:11:11,8365:2:2,21153:5:5^88:7,305:16
+@f^1437^0^17^141^6358:5:5,6359:2:2,6361:10:10^241:17
 @f^1440^0^10^115^6289:1:1,6308:3:3,6311:1:1,21071:5:5^272:10
 @f^1453^0^3^113^6361:3:3^224:3
+@f^1455^0^5^131^6289:4:4,6291:1:1^49:5
 @l^0^frFR

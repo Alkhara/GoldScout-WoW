@@ -1,4 +1,4 @@
-GoldScout-export 6^aohj03zbhxs2^35
+GoldScout-export 7^aohj03zbhxs2^37
 6^35^0^1^2^1429^0.4864^0.3652^35^Vermine kobold^159:2:2,755:12:12,1368:1:1,1372:1:1,1378:1:1,1380:1:1,2210:1:1,2589:12:12,2649:2:2,2650:1:1,2651:1:1,2652:1:1,4536:6:6,247834:5:5,247839:5:5^
 30^2^0^5^6^1429^0.3327^0.7145^2^Araignée forestière^1476:1:1,2590:1:1,5465:1:1^
 36^7^0^11^12^1436^0.3749^0.4426^7^Golem des moissons^814:2:2,1274:1:1,5069:1:1,255007:2:2,255010:1:1^
@@ -153,6 +153,17 @@ GoldScout-export 6^aohj03zbhxs2^35
 5048^7^0^0^0^0^0.0000^0.0000^0^^6444:5:5,6445:2:2^
 5053^13^0^0^0^0^0.0000^0.0000^0^^2924:2:2,3181:12:25,3401:12:24,6470:1:1,211855:1:1,248684:1:1^
 5055^6^0^0^0^0^0.0000^0.0000^0^^2449:1:1,4604:3:3,4605:5:5^
+5232^9^0^42^43^1444^0.6065^0.5674^9^Brute Gordunni^1645:1:1,4306:1:1,4338:5:6,4599:1:1,10604:1:1^
+5234^5^0^43^44^1444^0.6076^0.5711^5^Marteleur Gordunni^4306:1:2^
+5236^8^0^44^45^1444^0.6013^0.6640^8^Chaman Gordunni^4306:1:1,4338:2:3,4599:1:1,255725:1:1^
+5240^8^0^43^44^1444^0.6056^0.6120^8^Démoniste Gordunni^4022:1:1,4306:1:1,4338:4:7^
+5286^1^0^40^40^1444^0.2982^0.4585^1^Messager Longues-dents^12208:1:1^
+5292^3^0^43^44^1444^0.5518^0.5734^3^Yéti Griffe farouche^6149:1:1,8705:1:1,8973:2:2^
+5295^2^0^45^45^1444^0.5359^0.5531^2^Enragé Griffe farouche^8973:1:1^
+5331^2^0^43^43^1444^0.2677^0.5275^2^Guerrier Hainecrête^7973:1:1,9247:1:1,17058:1:1^
+5332^4^0^41^42^1444^0.2772^0.5471^4^Chevaucheur des vagues Hainecrête^4006:1:1,4026:1:1,7973:1:1,17058:2:2,213545:1:1^
+5335^11^0^41^42^1444^0.2978^0.5287^11^Hurleuse Hainecrête^1645:1:1,7973:6:6,9247:9:9,17058:1:1^
+5337^1^0^43^43^1444^0.2594^0.5288^1^Sirène Hainecrête^3928:1:1^
 5420^1^0^46^46^1446^0.6048^0.6047^1^Contemplateur Peau-de-verre^11386:1:1^
 5423^1^0^43^44^1446^0.3817^0.2732^1^Scorpide flagellant^12037:1:1,19936:1:1^
 5424^1^0^47^47^1446^0.6123^0.5412^1^Scorpide des sables^^
@@ -504,6 +515,7 @@ GoldScout-export 6^aohj03zbhxs2^35
 @i^3928^Potion de soins excellente
 @i^3961^Ceinture en cuir épais
 @i^4000^Ceinture en anneaux doubliers
+@i^4006^Protège-épaules en anneaux doubliers
 @i^4018^Claymore affûtée
 @i^4019^Lourde hache en silex
 @i^4020^Hache de guerre brisante
@@ -629,10 +641,13 @@ GoldScout-export 6^aohj03zbhxs2^35
 @i^8400^Patron : Epaulières armées du scorpide
 @i^8483^Outre de Bat-le-désert
 @i^8623^Balise de détresse OOX-17 TN
+@i^8705^Balise de détresse OOX-22 FE
 @i^8723^Tête de Caliph Dard-de-scorpide
 @i^8747^Casque en cuir durci
 @i^8748^Camail doublentin
+@i^8973^Peau de yéti épaisse
 @i^9246^Tête de Barbe-en-feu
+@i^9247^Ecaille de naga Hainecrête
 @i^9259^Collier tribal troll
 @i^9260^Rhum explosif
 @i^9276^Coffre de pirate
@@ -659,6 +674,7 @@ GoldScout-export 6^aohj03zbhxs2^35
 @i^10301^Patron : Masque blanc de bandit
 @i^10410^Jambières du Croc
 @i^10412^Ceinture du Croc
+@i^10604^Schéma : Carabine de gros calibre en mithril
 @i^11038^Formule : Enchantement d'arme 2M (Esprit inférieur)
 @i^11386^Oeil spongieux de basilic
 @i^11406^Carcasse pourrie d'ours
@@ -692,6 +708,7 @@ GoldScout-export 6^aohj03zbhxs2^35
 @i^15798^Dents d'ogre ébréchées
 @i^17056^Plume légère
 @i^17057^Ecailles de poisson brillantes
+@i^17058^Huile de poisson
 @i^19507^Châle d'inquisiteur
 @i^19936^Carapace de scorpide desséchée
 @i^20519^Chapeau de pirate des Mers du sud
@@ -702,6 +719,7 @@ GoldScout-export 6^aohj03zbhxs2^35
 @i^211786^Parchemin : CHAP BALK WELLES
 @i^211787^Parchemin : LOWER PING WHOMEVER
 @i^211855^Parchemin : STHENIC LUNATE
+@i^213545^Parchemin : CHUTE D'AGUERRI
 @i^213547^Parchemin : ELLUQE PÉÉE
 @i^215374^Épée ancestrale
 @i^247826^Tête de Coassie
@@ -725,6 +743,7 @@ GoldScout-export 6^aohj03zbhxs2^35
 @i^254548^Branchie de Murloc de Longrivage
 @i^255007^Isoressort de golem
 @i^255010^Gyrostabiliseur de moissonneur
+@i^255725^Manuel : potion de soins excellente
 @i^255726^Manuel : garrot en cuir
 @i^260347^Journal en lambeaux
 @i^262889^Commission d'expert scellée
@@ -991,6 +1010,7 @@ GoldScout-export 6^aohj03zbhxs2^35
 @q^3928^1:0:0
 @q^3961^0:4:0
 @q^4000^0:4:0
+@q^4006^0:4:0
 @q^4018^0:2:0
 @q^4019^0:2:0
 @q^4020^0:2:0
@@ -1116,10 +1136,13 @@ GoldScout-export 6^aohj03zbhxs2^35
 @q^8400^2:9:0
 @q^8483^1:12:0
 @q^8623^2:12:0
+@q^8705^2:12:0
 @q^8723^1:12:0
 @q^8747^0:4:0
 @q^8748^0:4:0
+@q^8973^1:12:0
 @q^9246^1:12:0
+@q^9247^1:12:0
 @q^9259^1:15:0
 @q^9260^1:0:0
 @q^9276^1:15:0
@@ -1146,6 +1169,7 @@ GoldScout-export 6^aohj03zbhxs2^35
 @q^10301^2:9:0
 @q^10410^3:4:0
 @q^10412^3:4:0
+@q^10604^2:9:0
 @q^11038^2:9:0
 @q^11386^0:15:0
 @q^11406^0:15:0
@@ -1179,6 +1203,7 @@ GoldScout-export 6^aohj03zbhxs2^35
 @q^15798^0:15:0
 @q^17056^1:15:1
 @q^17057^1:15:0
+@q^17058^1:15:0
 @q^19507^3:4:0
 @q^19936^0:15:0
 @q^20519^1:12:0
@@ -1189,6 +1214,7 @@ GoldScout-export 6^aohj03zbhxs2^35
 @q^211786^1:0:0
 @q^211787^1:0:0
 @q^211855^1:0:0
+@q^213545^1:0:0
 @q^213547^1:0:0
 @q^215374^1:2:0
 @q^247826^1:12:0
@@ -1212,6 +1238,7 @@ GoldScout-export 6^aohj03zbhxs2^35
 @q^254548^1:12:0
 @q^255007^1:7:1
 @q^255010^1:12:0
+@q^255725^2:9:0
 @q^255726^2:9:0
 @q^260347^1:15:0
 @q^262889^3:0:0
@@ -1276,6 +1303,7 @@ GoldScout-export 6^aohj03zbhxs2^35
 @m^1432^Loch Modan
 @m^1434^Vallée de Strangleronce
 @m^1436^Marche de l'Ouest
+@m^1444^Féralas
 @m^1446^Tanaris
 @m^2548^Rives Claires
 @m^2652^Shen'dralas
@@ -2300,6 +2328,17 @@ GoldScout-export 6^aohj03zbhxs2^35
 @a^3632^210:1
 @a^3641^210:1
 @a^4281^156:1
+@a^5232^212:2,231:2,232:5
+@a^5234^231:1,232:4
+@a^5236^252:1,271:2,272:5
+@a^5240^231:1,232:3,272:4
+@a^5286^185:1
+@a^5292^230:1,231:2
+@a^5295^230:2
+@a^5331^205:1,225:1
+@a^5332^205:3,225:1
+@a^5335^186:1,205:6,206:3,226:1
+@a^5337^205:1
 @a^5420^252:1
 @a^5423^107:1
 @a^5424^212:1
@@ -2380,4 +2419,14 @@ GoldScout-export 6^aohj03zbhxs2^35
 @a^272315^216:1
 @a^276003^170:1
 @a^276009^171:1
+@t^5232^9:347
+@t^5234^4:271
+@t^5236^8:476
+@t^5240^7:274
+@t^5292^3:211
+@t^5295^2:155
+@t^5331^2:109
+@t^5332^4:521
+@t^5335^11:958
+@t^5337^1:92
 @l^0^frFR
