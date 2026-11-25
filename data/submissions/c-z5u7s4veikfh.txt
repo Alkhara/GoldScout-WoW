@@ -1,4 +1,4 @@
-GoldScout-export 6^z5u7s4veikfh^18
+GoldScout-export 6^z5u7s4veikfh^19
 1529^8^0^9^10^1420^0.7601^0.6190^8^Bleeding Horror^1414:1:1,2589:3:6,2774:1:1^
 1532^8^0^10^11^1420^0.7581^0.5974^8^Wandering Spirit^159:1:1,1415:1:1,2589:2:2,4577:1:1^
 1766^14^0^11^12^1421^0.5575^0.1574^14^Mottled Worg^2672:12:12,3164:3:3,3299:1:1,3300:1:1^
@@ -384,6 +384,7 @@ GoldScout-export 6^z5u7s4veikfh^18
 @i^4577^Compact Shotgun
 @i^4585^Dripping Spider Mandible
 @i^4587^Tribal Raptor Feathers
+@i^4603^Raw Spotted Yellowtail
 @i^4605^Red-speckled Mushroom
 @i^4687^Barbaric Cloth Belt
 @i^4701^Inscribed Cloak
@@ -426,7 +427,11 @@ GoldScout-export 6^z5u7s4veikfh^18
 @i^6293^Dried Bat Blood
 @i^6296^Patch of Bat Hair
 @i^6337^Infantry Leggings of Healing
+@i^6357^Sealed Crate
+@i^6358^Oily Blackmouth
+@i^6359^Firefin Snapper
 @i^6361^Raw Rainbow Fin Albacore
+@i^6362^Raw Rockscale Cod
 @i^6379^Inscribed Leather Belt
 @i^6443^Deviate Hide
 @i^6444^Forked Tongue
@@ -769,6 +774,7 @@ GoldScout-export 6^z5u7s4veikfh^18
 @q^4577^2:2:0
 @q^4585^0:15:0
 @q^4587^0:15:0
+@q^4603^1:7:1
 @q^4605^1:0:0
 @q^4687^1:4:0
 @q^4701^2:4:0
@@ -811,7 +817,11 @@ GoldScout-export 6^z5u7s4veikfh^18
 @q^6293^0:15:0
 @q^6296^0:15:0
 @q^6337^2:4:0
+@q^6357^1:15:0
+@q^6358^1:7:1
+@q^6359^1:7:1
 @q^6361^1:7:1
+@q^6362^1:7:1
 @q^6379^2:4:0
 @q^6443^1:12:0
 @q^6444^0:15:0
@@ -1047,6 +1057,7 @@ GoldScout-export 6^z5u7s4veikfh^18
 @m^1420^Tirisfal Glades
 @m^1421^Silverpine Forest
 @m^1428^Burning Steppes
+@m^1445^Dustwallow Marsh
 @m^1447^Azshara
 @m^1451^Silithus
 @c^724^
@@ -3229,4 +3240,5 @@ GoldScout-export 6^z5u7s4veikfh^18
 @a^272307^107:1,168:1
 @a^276020^176:1
 @a^277882^34:1,67:1,68:1
+@f^1445^0^147^150^4603:41:46,6357:1:1,6358:27:29,6359:24:26,6362:95:114^231:147
 @l^0^enUS
