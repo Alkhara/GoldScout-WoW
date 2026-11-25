@@ -1,4 +1,5 @@
-GoldScout-export 7^208ja2dyis6g^10
+GoldScout-export 7^208ja2dyis6g^11
+750^1^0^42^42^1435^0.8711^0.8106^1^Marsh Inkspewer^7973:1:1,17058:1:1^
 1789^2^0^55^56^1422^0.4501^0.6559^2^Skeletal Acolyte^8948:1:1,14047:1:2^
 1821^34^0^52^53^1422^0.4768^0.5148^34^Carrion Lurker^1074:5:5,4337:3:3,4585:16:16,10098:1:1,10285:5:5,12205:16:16,14227:4:5,248699:1:1^
 1840^1^0^0^0^1422^0.5419^0.2399^1^Grand Inquisitor Isillien^^
@@ -157,8 +158,10 @@ GoldScout-export 7^208ja2dyis6g^10
 12128^4^0^60^60^1422^0.5406^0.2447^4^Crimson Elite^^
 14518^1^0^0^0^0^0.0000^0.0000^0^^3945:1:1^
 14520^1^0^0^0^0^0.0000^0.0000^0^^10159:1:1^
+249493^1^0^57^57^2482^0.7743^0.4144^1^Nightsaber Guardian^1688:1:1^
 276078^3^0^47^47^1427^0.2103^0.7981^3^Twilight Laborer^^
 @i^1074^Hard Spider Leg Tip
+@i^1688^Long Soft Tail
 @i^3669^Gelatinous Goo
 @i^3676^Slimy Ichor
 @i^3820^Stranglekelp
@@ -191,8 +194,12 @@ GoldScout-export 7^208ja2dyis6g^10
 @i^6359^Firefin Snapper
 @i^6362^Raw Rockscale Cod
 @i^6530^Nightcrawlers
+@i^7070^Elemental Water
+@i^7079^Globe of Water
+@i^7080^Essence of Water
 @i^7910^Star Ruby
 @i^7972^Ichor of Undeath
+@i^7973^Big-mouth Clam
 @i^8084^Light Plate Gloves
 @i^8085^Light Plate Pants
 @i^8146^Wicked Claw
@@ -284,6 +291,7 @@ GoldScout-export 7^208ja2dyis6g^10
 @i^13385^Tome of Knowledge
 @i^13402^Timmy's Galoshes
 @i^13404^Mask of the Unforgiven
+@i^13443^Superior Mana Potion
 @i^13444^Major Mana Potion
 @i^13446^Major Healing Potion
 @i^13490^Recipe: Greater Stoneshield Potion
@@ -293,6 +301,7 @@ GoldScout-export 7^208ja2dyis6g^10
 @i^13532^Darkspinner Claws
 @i^13757^Lightning Eel
 @i^13758^Raw Redgill
+@i^13759^Raw Nightfin Snapper
 @i^13760^Raw Sunscale Salmon
 @i^13816^Fine Longsword
 @i^13817^Tapered Greatsword
@@ -304,6 +313,9 @@ GoldScout-export 7^208ja2dyis6g^10
 @i^13824^Recurve Long Bow
 @i^13825^Primed Musket
 @i^13881^Bloated Redgill
+@i^13889^Raw Whitescale Salmon
+@i^13890^Raw Plated Armorfish
+@i^13891^Bloated Whitescale Salmon
 @i^13920^Healthy Dragon Scale
 @i^13951^Vigorsteel Vambraces
 @i^13956^Clutch of Andros
@@ -351,6 +363,9 @@ GoldScout-export 7^208ja2dyis6g^10
 @i^16735^Bracers of Valor
 @i^16967^Feralas Ahi
 @i^16968^Sar'theris Striker
+@i^16969^Savage Coast Blue Sailfin
+@i^16970^Misty Reed Mahi Mahi
+@i^17058^Fish Oil
 @i^18047^Flame Walkers
 @i^18104^Feralsurge Girdle
 @i^18684^Dimly Opalescent Ring of Frost Resistance
@@ -369,6 +384,7 @@ GoldScout-export 7^208ja2dyis6g^10
 @i^21150^Iron Bound Trunk
 @i^21151^Rumsey Rum Black Label
 @i^21164^Bloated Rockscale Cod
+@i^21228^Mithril Bound Trunk
 @i^22267^Spellweaver's Turban
 @i^22268^Draconic Infused Emblem
 @i^22269^Shadow Prowler's Cloak
@@ -398,6 +414,7 @@ GoldScout-export 7^208ja2dyis6g^10
 @i^281018^Scroll: RARE SERVICHI RADAR
 @i^282568^Fireflare Handwraps
 @q^1074^0:15:0
+@q^1688^0:15:0
 @q^3669^0:15:0
 @q^3676^0:15:0
 @q^3820^1:7:1
@@ -430,8 +447,12 @@ GoldScout-export 7^208ja2dyis6g^10
 @q^6359^1:7:1
 @q^6362^1:7:1
 @q^6530^1:0:0
+@q^7070^1:7:1
+@q^7079^1:7:1
+@q^7080^2:7:1
 @q^7910^2:7:1
 @q^7972^1:7:1
+@q^7973^1:7:0
 @q^8084^0:4:0
 @q^8085^0:4:0
 @q^8146^1:7:1
@@ -523,6 +544,7 @@ GoldScout-export 7^208ja2dyis6g^10
 @q^13385^3:4:0
 @q^13402^3:4:0
 @q^13404^3:4:0
+@q^13443^1:0:0
 @q^13444^1:0:0
 @q^13446^1:0:0
 @q^13490^2:9:0
@@ -532,6 +554,7 @@ GoldScout-export 7^208ja2dyis6g^10
 @q^13532^3:4:0
 @q^13757^1:7:1
 @q^13758^1:7:1
+@q^13759^1:7:1
 @q^13760^1:7:1
 @q^13816^0:2:0
 @q^13817^0:2:0
@@ -543,6 +566,9 @@ GoldScout-export 7^208ja2dyis6g^10
 @q^13824^0:2:0
 @q^13825^0:2:0
 @q^13881^2:15:0
+@q^13889^1:7:1
+@q^13890^1:12:1
+@q^13891^2:15:0
 @q^13920^1:12:0
 @q^13951^3:4:0
 @q^13956^3:4:0
@@ -590,6 +616,9 @@ GoldScout-export 7^208ja2dyis6g^10
 @q^16735^3:4:0
 @q^16967^1:15:0
 @q^16968^1:12:0
+@q^16969^1:12:0
+@q^16970^1:12:0
+@q^17058^1:15:0
 @q^18047^3:4:0
 @q^18104^3:4:0
 @q^18684^3:4:0
@@ -608,6 +637,7 @@ GoldScout-export 7^208ja2dyis6g^10
 @q^21150^1:15:0
 @q^21151^1:0:0
 @q^21164^2:15:0
+@q^21228^1:15:0
 @q^22267^3:4:0
 @q^22268^3:4:0
 @q^22269^3:4:0
@@ -642,9 +672,11 @@ GoldScout-export 7^208ja2dyis6g^10
 @m^1427^Searing Gorge
 @m^1428^Burning Steppes
 @m^1434^Stranglethorn Vale
+@m^1435^Swamp of Sorrows
 @m^1443^Desolace
 @m^1444^Feralas
 @m^1451^Silithus
+@m^2482^Mount Hyjal
 @c^118^
 @c^724^
 @c^733^
@@ -1336,6 +1368,7 @@ GoldScout-export 7^208ja2dyis6g^10
 @c^285280^
 @c^285281^
 @c^286152^
+@a^750^337:1
 @a^1789^250:1,267:1
 @a^1821^149:3,169:7,189:6,190:2,208:1,228:2,229:5,230:2,249:3,250:3
 @a^1840^90:1
@@ -1353,10 +1386,13 @@ GoldScout-export 7^208ja2dyis6g^10
 @a^11740^192:1
 @a^11880^344:1
 @a^12128^90:4
+@a^249493^175:1
 @a^276078^304:3
 @f^1422^0^8^185^6358:1:1,8365:1:1,13757:1:1,13758:3:3,13760:2:2,13881:1:1^333:8
 @f^1424^0^16^181^3820:1:1,21071:13:13,21113:2:2^53:6,54:5,73:5
-@f^1434^0^392^140^3820:1:3,4603:62:62,6308:2:2,6355:2:2,6357:1:1,6358:64:64,6359:51:51,6362:199:199,8365:2:2,21150:7:7,21151:1:2,21164:1:1^105:140,106:15,126:228,285:9
+@f^1434^0^394^140^3820:1:3,4603:62:62,6308:2:2,6355:2:2,6357:1:1,6358:64:64,6359:52:52,6362:200:200,8365:2:2,16969:1:1,21150:7:7,21151:1:2,21164:1:1^105:140,106:15,126:230,285:9
+@f^1435^0^6^225^4603:3:3,6362:3:3,16970:1:1^337:6
 @f^1443^0^5^225^6359:2:2,6362:3:3,16968:1:1^305:5
-@f^1444^0^1^225^13758:1:1,16967:1:1^212:1
+@f^1444^0^21^225^6358:2:2,8365:2:2,13758:14:14,13759:2:2,13760:1:1,13881:1:1,16967:1:1^154:20,212:1
+@f^2482^0^104^228^6359:4:5,7070:4:9,7079:4:4,7080:1:1,13443:1:1,13757:14:16,13758:10:10,13759:28:31,13760:22:22,13889:47:51,13890:20:20,13891:4:4,21228:1:1^155:97,175:2,187:5
 @l^0^enUS

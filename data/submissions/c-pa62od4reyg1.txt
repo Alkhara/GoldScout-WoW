@@ -1,6 +1,6 @@
-GoldScout-export 7^pa62od4reyg1^3
-2248^40^0^30^31^1424^0.4588^0.3134^40^Yeti de las cuevas^1708:4:4,1830:1:1,2290:1:1,3771:4:4^
-2249^21^0^31^32^1424^0.4436^0.2901^21^Yeti feroz^3771:1:1,5637:1:1,8746:1:1^
+GoldScout-export 7^pa62od4reyg1^4
+2248^70^0^30^31^1424^0.4608^0.3148^70^Yeti de las cuevas^1708:4:4,1830:1:1,2290:1:1,3771:8:8,5214:1:1,9867:1:1,10408:1:1,15284:1:1,248686:1:1^
+2249^24^0^31^32^1424^0.4441^0.2923^24^Yeti feroz^3771:1:1,5637:1:1,8746:1:1^
 2271^5^0^31^32^1424^0.2839^0.2852^1^Guardia escudero de Dalaran^1707:1:1,3714:2:2,3778:1:1,4306:3:6^
 2272^1^0^33^33^1424^0.2740^0.3027^1^Teúrgo de Dalaran^^
 2349^1^0^25^25^1416^0.2999^0.7175^1^Trepamusgo gigante^878:1:1,1081:1:1,1288:1:1^
@@ -31,10 +31,15 @@ GoldScout-export 7^pa62od4reyg1^3
 @i^3778^Arco compuesto tenso
 @i^4306^Paño de seda
 @i^4784^Piedra inerte
+@i^5214^Varita de Manto de la noche
 @i^5637^Colmillo grande
 @i^5741^Trozo de roca
 @i^8746^Capucha entrelazada
+@i^9867^Capa de renegado del falcón
+@i^10408^Yelmo a rayas de fuerza
+@i^15284^Arco de batalla largo
 @i^17056^Pluma ligera
+@i^248686^Cajón arrebatado: Hierbas de oficial
 @q^878^0:7:0
 @q^1081^1:7:1
 @q^1288^1:7:1
@@ -54,15 +59,20 @@ GoldScout-export 7^pa62od4reyg1^3
 @q^3778^0:2:0
 @q^4306^1:7:1
 @q^4784^0:15:0
+@q^5214^2:2:0
 @q^5637^1:7:1
 @q^5741^0:15:0
 @q^8746^0:4:0
+@q^9867^2:4:0
+@q^10408^2:4:0
+@q^15284^2:2:0
 @q^17056^1:15:1
+@q^248686^1:0:1
 @m^1416^Montañas de Alterac
 @m^1424^Laderas de Trabalomas
 @m^1441^Las Mil Agujas
-@a^2248^108:6,128:8,129:26
-@a^2249^108:13,109:4,128:4
+@a^2248^108:8,109:1,128:10,129:51
+@a^2249^108:13,109:4,128:5,129:2
 @a^2271^105:1
 @a^2272^125:1
 @a^2349^285:1
@@ -74,7 +84,7 @@ GoldScout-export 7^pa62od4reyg1^3
 @a^2414^343:1
 @a^4114^190:1
 @a^4119^191:1
-@t^2248^37:1852
+@t^2248^48:2400
 @t^2249^21:793
 @t^4114^1:125
 @l^0^esMX
