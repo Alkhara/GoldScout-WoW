@@ -1,4 +1,4 @@
-GoldScout-export 6^ukldp0o9bjhk^29
+GoldScout-export 7^ukldp0o9bjhk^30
 92^14^0^39^40^1418^0.3953^0.7811^14^Felselementar^4553:7:7,4784:6:6,5974:1:1,7848:4:4,7912:4:6,8150:2:2^
 667^13^0^39^40^1434^0.4683^0.3970^13^Krieger der Skullsplitter^1520:4:4,1708:2:2,2732:1:1,2738:1:1,3916:2:2,4306:2:4,4338:1:1,8151:1:1,8153:2:4^
 669^16^0^41^42^1434^0.4567^0.4186^16^Jäger der Skullsplitter^866:1:1,1520:3:3,1524:4:4,1645:1:1,2730:1:1,2735:1:1,2745:1:1,3916:5:5,4025:1:1,4306:1:2,4338:2:2,8151:3:3,9880:1:1^
@@ -140,6 +140,7 @@ GoldScout-export 6^ukldp0o9bjhk^29
 3467^1^0^16^16^1413^0.6370^0.4678^1^Baron Küstenschipper^5084:1:1^
 3470^1^0^15^15^1413^0.4785^0.1916^1^Rathorian^9749:1:1^
 3471^1^0^16^16^1413^0.5273^0.1095^1^Tüftler Sniggles^2287:1:1,5089:1:1^
+3475^1^0^16^16^1413^0.5590^0.1705^1^Echeyakee^5100:1:1^
 3560^1^0^41^41^1434^0.4571^0.4265^1^Heilungszauberschutz^^
 3939^3^0^7^8^1413^0.5542^0.2603^3^Wolf der Grimmhauer^^
 4127^2^0^16^16^1413^0.4109^0.2289^2^Fleischreißerhyäne^3299:1:1,3301:1:1^
@@ -370,6 +371,9 @@ GoldScout-export 6^ukldp0o9bjhk^29
 263348^2^0^37^38^2548^0.5869^0.5421^2^Umherstreifender Weitschreiter^5116:1:1,7435:1:1,271778:1:1^
 263380^1^0^42^42^2548^0.6410^0.3650^1^Geisterrachen^770:1:1,5128:1:1,271828:1:1^
 264773^1^0^0^0^1415^0.0000^0.0000^0^^286428:1:1^
+267307^1^0^20^20^1413^0.5761^0.2722^1^Chol'aruk^276070:1:1^
+267308^1^0^19^19^1413^0.5780^0.2746^1^Fleischfresser der Grimmhauer^2589:1:1^
+267314^1^0^18^18^1413^0.5814^0.2492^1^Berserker der Grimmhauer^^
 268831^1^0^39^39^2548^0.7158^0.3989^1^Ebenenstreuner^12203:1:1^
 270310^3^0^34^35^2548^0.4640^0.8297^3^Ross von Farholde^5120:3:3^
 270664^1^0^38^38^2548^0.4006^0.5863^1^Giftweberspeier^5637:1:1^
@@ -597,6 +601,7 @@ GoldScout-export 6^ukldp0o9bjhk^29
 @i^5089^Konsolenschlüssel
 @i^5096^Streunerklauen
 @i^5097^Katzenaugensmaragd
+@i^5100^Echeyakees Balg
 @i^5114^Abgespaltene Kralle
 @i^5115^Zerbrochenes Gabelbein
 @i^5116^Lange Schwanzfeder
@@ -857,6 +862,7 @@ GoldScout-export 6^ukldp0o9bjhk^29
 @i^275001^Blutiger Eingeweideschlitzer
 @i^275004^Kette des Verderbers
 @i^275008^Muggs Querschläger
+@i^276070^Chol'aruks Kopf
 @i^278242^Nachtsaugerflügelmembran
 @i^278243^Schattenhundbalg
 @i^278515^Mus'hales gestohlene Vorräte
@@ -1087,6 +1093,7 @@ GoldScout-export 6^ukldp0o9bjhk^29
 @q^5089^1:13:0
 @q^5096^1:12:0
 @q^5097^1:12:0
+@q^5100^1:12:0
 @q^5114^0:15:0
 @q^5115^0:15:0
 @q^5116^1:7:1
@@ -1347,6 +1354,7 @@ GoldScout-export 6^ukldp0o9bjhk^29
 @q^275001^3:2:0
 @q^275004^3:4:0
 @q^275008^3:2:0
+@q^276070^1:12:0
 @q^278242^1:12:0
 @q^278243^1:12:0
 @q^278515^1:12:0
@@ -2948,6 +2956,7 @@ GoldScout-export 6^ukldp0o9bjhk^29
 @a^3467^192:1
 @a^3470^69:1
 @a^3471^50:1
+@a^3475^71:1
 @a^3560^169:1
 @a^3939^111:3
 @a^4127^88:2
@@ -3102,6 +3111,9 @@ GoldScout-export 6^ukldp0o9bjhk^29
 @a^263343^193:1,212:3,213:5,231:1,232:1,233:1,252:1,253:1,273:1
 @a^263348^212:1,230:1
 @a^263380^152:1
+@a^267307^111:1
+@a^267308^111:1
+@a^267314^91:1
 @a^268831^154:1
 @a^270310^329:3
 @a^270664^228:1
