@@ -1,4 +1,4 @@
-GoldScout-export 7^w6w0r3ct281m^26
+GoldScout-export 7^w6w0r3ct281m^27
 95^5^0^11^12^1436^0.4462^0.2523^5^Defias Smuggler^2589:1:2,6269:1:1^
 199^1^0^10^11^1436^0.4928^0.3163^1^Young Fleshripper^4775:1:1,7097:1:1,17056:1:1^
 315^2^0^32^32^1431^0.7719^0.3459^2^Stalvan Mistmantle^^
@@ -60,9 +60,11 @@ GoldScout-export 7^w6w0r3ct281m^26
 1732^3^0^0^0^0^0.0000^0.0000^0^^1210:1:1,1817:1:1^
 1763^1^0^0^0^0^0.0000^0.0000^0^^273086:1:1,273297:1:1^
 1778^1^0^11^12^1421^0.4756^0.3178^1^Ferocious Grizzled Bear^3169:1:1^
+1984^1^0^1^1^1438^0.5787^0.4447^1^Young Thistle Boar^2210:1:1,4865:1:1^
 2009^1^0^8^8^1438^0.3759^0.6629^1^Xamã Masca-pinho^2589:1:2,4536:1:1^
 2012^1^0^9^9^1438^0.4065^0.7969^1^Desbravador Masca-pinho^159:1:1^
 2013^1^0^9^9^1438^0.4076^0.7959^1^Vingador Masca-pinho^^
+2031^3^0^1^1^1438^0.5817^0.4474^3^Young Nightsaber^1364:1:1,3363:1:1,7073:2:2,7074:1:1^
 2091^1^0^32^32^1437^0.5307^0.5318^1^Chieftain Nek'rosh^3625:1:1^
 2108^1^0^29^29^1437^0.3923^0.4669^1^Garneg Charskull^3392:1:1^
 2529^1^0^0^0^0^0.0000^0.0000^0^^^
@@ -163,6 +165,7 @@ GoldScout-export 7^w6w0r3ct281m^26
 @i^1205^Melon Juice
 @i^1206^Moss Agate
 @i^1210^Shadowgem
+@i^1364^Ragged Leather Vest
 @i^1514^Rusty Warhammer
 @i^1686^Bristly Whisker
 @i^1687^Retractable Claw
@@ -188,6 +191,7 @@ GoldScout-export 7^w6w0r3ct281m^26
 @i^1944^Metalworking Gloves
 @i^2077^Magician Staff of the Bear
 @i^2078^Northern Shortsword of the Wolf
+@i^2210^Battered Buckler
 @i^2214^Wooden Buckler
 @i^2215^Wooden Shield
 @i^2251^Gooey Spider Leg
@@ -215,6 +219,7 @@ GoldScout-export 7^w6w0r3ct281m^26
 @i^3180^Flecked Raptor Scale
 @i^3301^Sharp Canine
 @i^3337^Dragonmaw War Banner
+@i^3363^Frayed Belt
 @i^3377^Canvas Bracers
 @i^3378^Brocade Belt
 @i^3385^Lesser Mana Potion
@@ -249,6 +254,7 @@ GoldScout-export 7^w6w0r3ct281m^26
 @i^4695^Burnished Cloak
 @i^4708^Bright Belt
 @i^4775^Cracked Bill
+@i^4865^Ruined Pelt
 @i^5111^Rathorian's Cape
 @i^5116^Long Tail Feather
 @i^5120^Long Tail Hair
@@ -282,6 +288,8 @@ GoldScout-export 7^w6w0r3ct281m^26
 @i^6580^Defender Tunic of the Gorilla
 @i^6594^Battleforge Girdle of the Beast
 @i^6641^Haunting Blade
+@i^7073^Broken Fang
+@i^7074^Chipped Claw
 @i^7097^Leg Meat
 @i^7365^Gnoam Sprecklesprocket
 @i^9779^Bandit Cloak of the Tiger
@@ -349,6 +357,7 @@ GoldScout-export 7^w6w0r3ct281m^26
 @q^1205^1:0:0
 @q^1206^2:7:1
 @q^1210^2:7:1
+@q^1364^0:4:0
 @q^1514^0:2:0
 @q^1686^0:15:0
 @q^1687^0:15:0
@@ -374,6 +383,7 @@ GoldScout-export 7^w6w0r3ct281m^26
 @q^1944^2:4:0
 @q^2077^2:2:0
 @q^2078^2:2:0
+@q^2210^0:4:0
 @q^2214^0:4:0
 @q^2215^0:4:0
 @q^2251^1:7:1
@@ -401,6 +411,7 @@ GoldScout-export 7^w6w0r3ct281m^26
 @q^3180^0:15:0
 @q^3301^0:15:0
 @q^3337^1:12:0
+@q^3363^0:4:0
 @q^3377^0:4:0
 @q^3378^0:4:0
 @q^3385^1:0:0
@@ -435,6 +446,7 @@ GoldScout-export 7^w6w0r3ct281m^26
 @q^4695^2:4:0
 @q^4708^2:4:0
 @q^4775^0:15:0
+@q^4865^0:15:0
 @q^5111^2:4:0
 @q^5116^1:7:1
 @q^5120^0:15:0
@@ -468,6 +480,8 @@ GoldScout-export 7^w6w0r3ct281m^26
 @q^6580^2:4:0
 @q^6594^2:4:0
 @q^6641^3:2:0
+@q^7073^0:15:0
+@q^7074^0:15:0
 @q^7097^1:0:0
 @q^7365^1:12:0
 @q^9779^2:4:0
@@ -943,9 +957,11 @@ GoldScout-export 7^w6w0r3ct281m^26
 @a^1417^182:3,183:4,203:1
 @a^1426^185:1,205:2
 @a^1778^129:1
+@a^1984^171:1
 @a^2009^267:1
 @a^2012^308:1
 @a^2013^308:1
+@a^2031^171:1,191:2
 @a^2091^210:1
 @a^2108^187:1
 @a^3379^69:5
@@ -1005,6 +1021,8 @@ GoldScout-export 7^w6w0r3ct281m^26
 @a^264850^205:1
 @a^270892^207:1
 @a^271334^132:1,151:1
+@t^1984^1:15
+@t^2031^2:21
 @f^1437^0^6^144^6358:2:2,6361:4:4^220:4,241:2
 @f^1439^0^2^145^6303:2:2^166:2
 @f^1440^0^17^138^3820:1:1,6289:5:5,6308:2:2,21071:8:8,21113:1:1^186:5,187:9,270:3

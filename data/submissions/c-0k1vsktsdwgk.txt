@@ -1,4 +1,4 @@
-GoldScout-export 6^0k1vsktsdwgk^13
+GoldScout-export 7^0k1vsktsdwgk^14
 30^1^0^5^5^1429^0.4393^0.7677^1^Forest Spider^5465:1:2^
 113^9^0^5^6^1429^0.4171^0.8191^9^Stonetusk Boar^769:2:2,774:1:1,286215:4:4^
 116^3^0^8^8^1429^0.4533^0.7570^3^Defias Bandit^1019:2:2,2589:1:2^
@@ -40,10 +40,13 @@ GoldScout-export 6^0k1vsktsdwgk^13
 3749^2^0^24^25^1440^0.4986^0.5998^2^Foulweald Ursa^2592:1:2,4306:1:1^
 3750^10^0^23^24^1440^0.5222^0.6237^10^Foulweald Totemic^1205:1:1,2589:1:1,2592:1:2,14562:1:1^
 3780^1^0^21^21^1440^0.4623^0.4582^1^Shadethicket Moss Eater^^
-3809^7^0^21^22^1440^0.4936^0.5159^7^Ashenvale Bear^2940:2:2,3702:1:1,3730:2:2,11406:4:4^
-3817^3^0^22^23^1440^0.4889^0.6033^3^Shadowhorn Stag^5471:2:2,5566:2:2,211853:1:1^
+3781^1^0^23^23^1440^0.3387^0.6653^1^Shadethicket Wood Shaper^4606:1:1^
+3783^3^0^22^23^1440^0.3400^0.6735^3^Shadethicket Raincaller^2450:1:1,3385:1:1^
+3809^12^0^21^22^1440^0.5044^0.5245^12^Ashenvale Bear^2940:3:3,3702:1:1,3730:5:5,11406:4:4,11407:2:2^
+3817^4^0^22^23^1440^0.4934^0.5645^4^Shadowhorn Stag^5471:2:2,5566:2:2,5871:1:1,211853:1:1^
 3819^4^0^20^21^1440^0.3509^0.5442^4^Wildthorn Stalker^1081:1:1,2251:3:3,3174:1:1,3182:2:2,4428:1:1^
 3823^2^0^19^20^1440^0.2372^0.4390^2^Ghostpaw Runner^3301:1:1^
+3834^2^0^27^27^1440^0.6018^0.3933^2^Crazed Ancient^5475:1:1^
 3840^31^0^0^0^0^0.0000^0.0000^0^^1210:1:1,1744:1:1,1813:1:1,1814:1:1,2078:1:1,2217:1:1,2589:5:10,2592:5:7,4537:2:2,14560:1:1,14562:1:1,15014:1:1,15018:1:1,15111:1:1,15494:1:1,248702:1:1^
 3917^6^0^23^25^1440^0.4876^0.7112^6^Befouled Water Elemental^5446:1:1,5451:1:1,9451:3:7,12220:1:1,211784:1:1^
 3924^2^0^23^24^1440^0.3444^0.4024^2^Thistlefur Shaman^248703:1:1^
@@ -88,6 +91,7 @@ GoldScout-export 6^0k1vsktsdwgk^13
 @i^2078^Northern Shortsword of the Wolf
 @i^2217^Rectangular Shield
 @i^2251^Gooey Spider Leg
+@i^2450^Briarthorn
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2764^Small Dagger
@@ -103,6 +107,7 @@ GoldScout-export 6^0k1vsktsdwgk^13
 @i^3184^Hook Dagger of the Whale
 @i^3301^Sharp Canine
 @i^3377^Canvas Bracers
+@i^3385^Lesser Mana Potion
 @i^3401^Rough Crocolisk Scale
 @i^3669^Gelatinous Goo
 @i^3670^Large Slimy Bone
@@ -114,6 +119,7 @@ GoldScout-export 6^0k1vsktsdwgk^13
 @i^4428^Spider Palp
 @i^4537^Tel'Abim Banana
 @i^4538^Snapvine Watermelon
+@i^4606^Spongy Morel
 @i^4775^Cracked Bill
 @i^4776^Ruffled Feather
 @i^4814^Discolored Fang
@@ -131,11 +137,13 @@ GoldScout-export 6^0k1vsktsdwgk^13
 @i^5465^Small Spider Leg
 @i^5469^Strider Meat
 @i^5471^Stag Meat
+@i^5475^Wooden Key
 @i^5490^Wrathtail Head
 @i^5523^Small Barnacled Clam
 @i^5544^Dal Bloodclaw's Skull
 @i^5566^Broken Antler
 @i^5784^Slimy Murloc Scale
+@i^5871^Large Hoof
 @i^6308^Raw Bristle Whisker Catfish
 @i^6443^Deviate Hide
 @i^6444^Forked Tongue
@@ -154,6 +162,7 @@ GoldScout-export 6^0k1vsktsdwgk^13
 @i^10412^Belt of the Fang
 @i^10441^Glowing Shard
 @i^11406^Rotting Bear Carcass
+@i^11407^Torn Bear Pelt
 @i^12220^Intact Elemental Bracer
 @i^13245^Kresh's Back
 @i^14025^Mystic's Belt
@@ -200,6 +209,7 @@ GoldScout-export 6^0k1vsktsdwgk^13
 @q^2078^2:2:0
 @q^2217^0:4:0
 @q^2251^1:7:1
+@q^2450^1:7:1
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2764^0:2:0
@@ -215,6 +225,7 @@ GoldScout-export 6^0k1vsktsdwgk^13
 @q^3184^2:2:0
 @q^3301^0:15:0
 @q^3377^0:4:0
+@q^3385^1:0:0
 @q^3401^0:15:0
 @q^3669^0:15:0
 @q^3670^0:15:0
@@ -226,6 +237,7 @@ GoldScout-export 6^0k1vsktsdwgk^13
 @q^4428^0:15:0
 @q^4537^1:0:0
 @q^4538^1:0:0
+@q^4606^1:0:0
 @q^4775^0:15:0
 @q^4776^0:15:0
 @q^4814^0:15:0
@@ -243,11 +255,13 @@ GoldScout-export 6^0k1vsktsdwgk^13
 @q^5465^1:7:1
 @q^5469^1:7:1
 @q^5471^1:7:1
+@q^5475^1:13:0
 @q^5490^1:12:0
 @q^5523^1:7:0
 @q^5544^1:12:0
 @q^5566^0:15:0
 @q^5784^1:7:1
+@q^5871^0:15:0
 @q^6308^1:7:1
 @q^6443^1:12:0
 @q^6444^0:15:0
@@ -266,6 +280,7 @@ GoldScout-export 6^0k1vsktsdwgk^13
 @q^10412^3:4:0
 @q^10441^1:12:0
 @q^11406^0:15:0
+@q^11407^1:12:0
 @q^12220^1:12:0
 @q^13245^3:4:0
 @q^14025^2:4:0
@@ -510,10 +525,13 @@ GoldScout-export 6^0k1vsktsdwgk^13
 @a^3749^230:1,249:1
 @a^3750^249:1,250:9
 @a^3780^189:1
-@a^3809^190:2,208:1,209:2,210:1,230:1
-@a^3817^229:1,249:2
+@a^3781^266:1
+@a^3783^266:3
+@a^3809^190:4,208:1,209:2,210:1,211:1,228:1,230:1,231:1
+@a^3817^170:1,229:1,249:2
 @a^3819^205:1,206:1,227:2
 @a^3823^123:1,205:1
+@a^3834^152:2
 @a^3917^289:5,290:1
 @a^3924^127:1,186:1
 @a^3925^186:1
@@ -521,4 +539,8 @@ GoldScout-export 6^0k1vsktsdwgk^13
 @a^3987^127:1
 @a^12759^289:2
 @a^12922^126:1
+@t^3783^3:35
+@t^3809^3:167
+@t^3817^1:63
+@t^3834^1:23
 @l^0^enUS

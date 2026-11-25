@@ -1,4 +1,4 @@
-GoldScout-export 6^9tu5j0rxlx1x^30
+GoldScout-export 6^9tu5j0rxlx1x^31
 6^19^0^1^2^1429^0.4886^0.3611^19^Alimaña kóbold^159:2:2,755:11:11,1367:1:1,1374:2:2,1377:1:1,1380:1:1,2589:7:7,2651:1:1,3363:1:1,4536:1:1,247834:1:1,247839:4:4^
 69^5^0^2^2^1429^0.4847^0.3704^5^Lobo gris^750:4:4,2672:3:3,7073:3:3,7074:3:3^
 80^13^0^3^4^1429^0.4839^0.2905^13^Obrero kóbold^755:7:7,1374:1:1,1380:1:1,2589:1:1,2650:1:1,3363:1:1,4536:1:1^
@@ -160,9 +160,9 @@ GoldScout-export 6^9tu5j0rxlx1x^30
 7153^8^0^48^49^1448^0.4812^0.9074^8^Guerrero Muertobosque^4338:4:6,4602:1:1,248698:1:1^
 7154^4^0^48^49^1448^0.4802^0.9147^4^Jardinero Muertobosque^4338:1:1,6149:1:1,248698:1:1^
 7155^3^0^49^50^1448^0.4782^0.8929^3^Abrecaminos Muertobosque^15182:1:1^
-7156^2^0^53^54^1448^0.6260^0.1064^2^Vigía del cubil Muertobosque^^
-7157^4^0^54^55^1448^0.6293^0.0708^4^Vengador Muertobosque^14047:1:2,20741:1:1,21377:2:2^
-7158^4^0^53^54^1448^0.6222^0.0911^4^Chamán Muertobosque^14047:1:2,21377:1:1^
+7156^33^0^53^54^1448^0.6207^0.0814^33^Vigía del cubil Muertobosque^8953:1:1,13446:2:2,14047:10:15,14926:1:1,15254:1:1,21377:9:9^
+7157^37^0^54^55^1448^0.6194^0.0788^37^Vengador Muertobosque^8766:2:2,8953:2:2,14047:12:19,15229:1:1,20741:1:1,21377:16:16^
+7158^39^0^53^54^1448^0.6196^0.0842^39^Chamán Muertobosque^2244:1:1,3993:1:1,8766:1:1,8953:2:2,13443:1:1,14047:10:12,15752:3:3,21377:15:15^
 7246^5^0^0^0^0^0.0000^0.0000^0^^9523:1:1^
 7267^1^0^0^0^0^0.0000^0.0000^0^^4338:1:1,9476:1:1^
 7269^3^0^0^0^0^0.0000^0.0000^0^^6300:2:2,248710:1:1^
@@ -236,7 +236,7 @@ GoldScout-export 6^9tu5j0rxlx1x^30
 10717^4^0^55^57^1422^0.4750^0.6624^4^Parásito temporal^3669:1:1,3676:2:2,281017:1:1^
 10738^1^0^59^59^1452^0.6960^0.3826^1^Gran Jefe Nevada^12820:1:1^
 10801^1^0^54^54^1422^0.3809^0.5618^1^Necrófago farfullante^^
-10916^1^0^57^57^1448^0.6024^0.0706^1^Corredor Nevada^^
+10916^4^0^57^57^1448^0.6025^0.0610^4^Corredor Nevada^3947:1:1,10305:1:1,14047:1:3,21383:1:1^
 11075^1^0^53^53^1422^0.3709^0.5764^1^Señor de la caldera Garravil^13194:1:1^
 11611^1^0^57^57^1422^0.5499^0.2367^1^Hidalgo Durgen^^
 11613^1^0^56^56^1422^0.5734^0.3523^1^Montero Radley^13817:1:1,14047:1:2^
@@ -329,6 +329,7 @@ GoldScout-export 6^9tu5j0rxlx1x^30
 @i^1710^Poción de sanación superior
 @i^1994^Espetadora Garra de ébano de magia
 @i^2211^Escudo grande doblado
+@i^2244^Hoja krol
 @i^2447^Flor de paz
 @i^2452^Cardopresto
 @i^2589^Paño de lino
@@ -356,6 +357,7 @@ GoldScout-export 6^9tu5j0rxlx1x^30
 @i^3941^Pantalones de ganchillo
 @i^3942^Hombreras de ganchillo
 @i^3944^Cinturón de sarga
+@i^3947^Capa de sarga
 @i^3948^Guantes de sarga
 @i^3949^Pantalones de sarga
 @i^3961^Cinturón de cuero grueso
@@ -367,6 +369,7 @@ GoldScout-export 6^9tu5j0rxlx1x^30
 @i^3968^Guerrera de cuero grueso
 @i^3987^Torre deflectora
 @i^3990^Rodela con emblema
+@i^3993^Botas de escamas laminadas
 @i^3997^Pantalones de escamas laminadas
 @i^3998^Hombreras de escamas laminadas
 @i^3999^Armadura de escamas laminadas
@@ -485,6 +488,7 @@ GoldScout-export 6^9tu5j0rxlx1x^30
 @i^10208^Quijotes de Señor Supremo de protección de las Sombras
 @i^10237^Espaldares grabados de la ballena
 @i^10286^Corazón de lo Salvaje
+@i^10305^Pergamino de protección IV
 @i^10306^Pergamino de espíritu IV
 @i^10450^Pluma de hipogrifo sin estropear
 @i^10454^Esencia de Eranikus
@@ -582,13 +586,16 @@ GoldScout-export 6^9tu5j0rxlx1x^30
 @i^14853^Guardamuñecas de Solescama
 @i^14905^Guanteletes toscos de cólera Sagrada
 @i^14922^Escarpes magnánimos de la ballena
+@i^14926^Guanteletes magnánimos de poder
 @i^15157^Leotardos nocturnos de la bestia
 @i^15166^Guantes imponentes de poder
 @i^15168^Pantalones imponentes del hierofante
 @i^15173^Manteo pujante del gorila
 @i^15182^Braciles pretorianas del anciano
 @i^15227^Cachiporra con punta de diamante del falcón
+@i^15229^Martillo Ventobendito de aguante
 @i^15236^Cuchilla de la Luna de defensa
+@i^15254^Espadón oscuro de cólera Sagrada
 @i^15274^Bastón largo de adivino del tigre
 @i^15279^Varita de marfil del médico
 @i^15369^Cinturón de Caballero Lobo de la bestia
@@ -604,6 +611,7 @@ GoldScout-export 6^9tu5j0rxlx1x^30
 @i^15639^Brazales de pielférrea del bandido
 @i^15647^Espaldares de pielférrea del gorila
 @i^15656^Cubrehombros despiadados de espíritu
+@i^15752^Patrón: leotardos vivos
 @i^15755^Patrón: jubón quimérico
 @i^15964^Estrella Sedarena
 @i^16220^Fórmula: encantar botas: espíritu
@@ -641,6 +649,7 @@ GoldScout-export 6^9tu5j0rxlx1x^30
 @i^20763^Arma rota
 @i^20767^Bolsa cubierta de suciedad
 @i^21377^Pluma de penacho de Muertobosque
+@i^21383^Cuentas de Espíritu Nevada
 @i^22435^Aguijón Gorishi
 @i^22444^Vid pútrida
 @i^213544^Pergamino: EZFOO KATASI
@@ -722,6 +731,7 @@ GoldScout-export 6^9tu5j0rxlx1x^30
 @q^1710^1:0:0
 @q^1994^2:2:0
 @q^2211^0:4:0
+@q^2244^4:2:0
 @q^2447^1:7:1
 @q^2452^1:7:1
 @q^2589^1:7:1
@@ -749,6 +759,7 @@ GoldScout-export 6^9tu5j0rxlx1x^30
 @q^3941^0:4:0
 @q^3942^0:4:0
 @q^3944^0:4:0
+@q^3947^0:4:0
 @q^3948^0:4:0
 @q^3949^0:4:0
 @q^3961^0:4:0
@@ -760,6 +771,7 @@ GoldScout-export 6^9tu5j0rxlx1x^30
 @q^3968^0:4:0
 @q^3987^0:4:0
 @q^3990^0:4:0
+@q^3993^0:4:0
 @q^3997^0:4:0
 @q^3998^0:4:0
 @q^3999^0:4:0
@@ -878,6 +890,7 @@ GoldScout-export 6^9tu5j0rxlx1x^30
 @q^10208^2:4:0
 @q^10237^2:4:0
 @q^10286^1:7:1
+@q^10305^1:0:0
 @q^10306^1:0:0
 @q^10450^1:12:0
 @q^10454^2:12:0
@@ -975,13 +988,16 @@ GoldScout-export 6^9tu5j0rxlx1x^30
 @q^14853^2:4:0
 @q^14905^2:4:0
 @q^14922^2:4:0
+@q^14926^2:4:0
 @q^15157^2:4:0
 @q^15166^2:4:0
 @q^15168^2:4:0
 @q^15173^2:4:0
 @q^15182^2:4:0
 @q^15227^2:2:0
+@q^15229^2:2:0
 @q^15236^2:2:0
+@q^15254^2:2:0
 @q^15274^2:2:0
 @q^15279^2:2:0
 @q^15369^2:4:0
@@ -997,6 +1013,7 @@ GoldScout-export 6^9tu5j0rxlx1x^30
 @q^15639^2:4:0
 @q^15647^2:4:0
 @q^15656^2:4:0
+@q^15752^3:9:0
 @q^15755^2:9:0
 @q^15964^2:4:0
 @q^16220^2:9:0
@@ -1034,6 +1051,7 @@ GoldScout-export 6^9tu5j0rxlx1x^30
 @q^20763^0:15:0
 @q^20767^1:15:0
 @q^21377^1:12:0
+@q^21383^1:12:0
 @q^22435^1:15:0
 @q^22444^1:15:0
 @q^213544^1:0:0
@@ -2013,9 +2031,9 @@ GoldScout-export 6^9tu5j0rxlx1x^30
 @a^7153^349:3,369:5
 @a^7154^349:2,369:2
 @a^7155^349:3
-@a^7156^52:2
-@a^7157^32:4
-@a^7158^32:2,52:2
+@a^7156^32:30,52:3
+@a^7157^32:32,52:5
+@a^7158^31:1,32:28,52:10
 @a^7438^153:8
 @a^7439^153:7
 @a^7440^133:1,153:1,167:5,168:3
@@ -2061,7 +2079,7 @@ GoldScout-export 6^9tu5j0rxlx1x^30
 @a^10717^269:4
 @a^10738^153:1
 @a^10801^227:1
-@a^10916^32:1
+@a^10916^32:4
 @a^11075^227:1
 @a^11611^90:1
 @a^11613^151:1

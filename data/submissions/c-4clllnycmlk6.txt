@@ -1,4 +1,4 @@
-GoldScout-export 7^4clllnycmlk6^11
+GoldScout-export 7^4clllnycmlk6^12
 3^9^0^24^25^1431^0.2306^0.3825^9^Flesh Eater^884:1:1,887:1:1,1129:3:3,2589:1:3,2592:2:3,5529:1:1,6530:1:1^
 46^1^0^10^10^1429^0.5219^0.8718^1^Murloc Forager^^
 48^8^0^21^22^1431^0.8030^0.7043^8^Skeletal Warrior^1774:1:1,2589:1:2,2592:2:2,4306:1:1^
@@ -103,7 +103,7 @@ GoldScout-export 7^4clllnycmlk6^11
 1400^4^0^23^24^1437^0.3284^0.3054^4^Wetlands Crocolisk^770:2:2,3667:2:2^
 1417^23^0^21^22^1437^0.3976^0.4178^23^Young Wetlands Crocolisk^770:5:5,3397:6:6,3667:9:9^
 1418^18^3^28^29^1437^0.0905^0.7087^18^Bluegill Raider^730:10:10,1468:6:6,2702:4:4,5524:7:7,6308:1:3,17057:6:6,17058:5:5^
-1860^2^0^0^0^1440^0.2527^0.6084^2^Grimlos^^
+1860^2^0^0^0^1440^0.2527^0.6084^2^Juk'los^^
 2044^1^0^25^25^1429^0.8550^0.6979^1^Forlorn Spirit^^
 2089^6^0^25^26^1437^0.1960^0.2588^6^Giant Wetlands Crocolisk^770:2:2,3348:6:6^
 2091^1^1^32^32^1437^0.5339^0.5458^1^Chieftain Nek'rosh^3625:1:1^1710:1:1,5427:1:1
@@ -121,8 +121,9 @@ GoldScout-export 7^4clllnycmlk6^11
 3711^4^0^20^21^1440^0.0666^0.1361^4^Wrathtail Myrmidon^929:1:1,5523:2:2,6308:1:2^
 3712^1^0^20^20^1440^0.1161^0.2568^1^Wrathtail Razortail^5490:1:1,5523:1:1^
 3713^11^0^18^19^1440^0.1359^0.2436^11^Wrathtail Wave Rider^1712:1:1,5490:11:11,5523:2:2^
-3715^1^0^20^20^1440^0.0630^0.1319^1^Wrathtail Sea Witch^5523:1:1^
-3717^8^0^18^19^1440^0.1286^0.2539^8^Wrathtail Sorceress^1816:1:1,3012:1:1,5490:8:8,5523:2:2^
+3715^2^1^19^20^1440^0.0906^0.2164^2^Wrathtail Sea Witch^5523:2:2^
+3717^9^0^18^19^1440^0.1280^0.2544^9^Wrathtail Sorceress^1788:1:1,1816:1:1,3012:1:1,5490:8:8,5523:2:2^
+3721^1^0^20^20^1440^0.1118^0.2701^1^Mystlash Hydra^5523:1:1,14131:1:1^
 3725^1^0^18^19^1440^0.3078^0.3176^1^Dark Strand Cultist^4542:1:1,5366:1:1^
 3728^2^0^18^19^1440^0.3038^0.3170^1^Dark Strand Adept^2592:1:2^
 3730^1^0^19^19^1439^0.4147^0.8110^1^Dark Strand Excavator^4542:1:1^
@@ -229,6 +230,7 @@ GoldScout-export 7^4clllnycmlk6^11
 @i^1774^Brocade Cloak
 @i^1780^Cross-stitched Sandals
 @i^1783^Cross-stitched Gloves
+@i^1788^Patched Leather Boots
 @i^1791^Patched Leather Gloves
 @i^1795^Rawhide Belt
 @i^1800^Rawhide Pants
@@ -383,6 +385,7 @@ GoldScout-export 7^4clllnycmlk6^11
 @i^12999^Drakewing Bands
 @i^13131^Sparkleshell Mantle
 @i^14117^Aboriginal Gloves of Stamina
+@i^14131^Ritual Belt of Intellect
 @i^15344^Pathfinder Pants of the Gorilla
 @i^15912^Buccaneer's Orb of the Eagle
 @i^16882^Battered Junkbox
@@ -460,6 +463,7 @@ GoldScout-export 7^4clllnycmlk6^11
 @q^1774^0:4:0
 @q^1780^0:4:0
 @q^1783^0:4:0
+@q^1788^0:4:0
 @q^1791^0:4:0
 @q^1795^0:4:0
 @q^1800^0:4:0
@@ -614,6 +618,7 @@ GoldScout-export 7^4clllnycmlk6^11
 @q^12999^3:4:0
 @q^13131^3:4:0
 @q^14117^2:4:0
+@q^14131^2:4:0
 @q^15344^2:4:0
 @q^15912^2:4:0
 @q^16882^1:15:0
@@ -1558,8 +1563,9 @@ GoldScout-export 7^4clllnycmlk6^11
 @a^3711^41:4
 @a^3712^102:1
 @a^3713^82:6,83:1,102:4
-@a^3715^41:1
-@a^3717^82:4,102:4
+@a^3715^41:1,122:1
+@a^3717^82:4,102:5
+@a^3721^102:1
 @a^3725^126:1
 @a^3728^126:1
 @a^3730^328:1
@@ -1626,6 +1632,7 @@ GoldScout-export 7^4clllnycmlk6^11
 @t^1157^2:64
 @t^1158^2:29
 @t^1160^1:123
+@t^3717^1:93
 @t^4062^1:2
 @t^271334^2:57
 @f^1442^0^4^137^6359:3:3,21114:1:1^214:4

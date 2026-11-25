@@ -1,10 +1,10 @@
-GoldScout-export 6^ssp3m3pd31b9^5
+GoldScout-export 6^ssp3m3pd31b9^6
 2957^2^0^8^9^1412^0.6342^0.6481^2^Elder Plainstrider^3285:1:1,4775:1:1,4776:1:1^
 3246^1^0^13^13^1413^0.4603^0.2845^1^Fleeting Plainstrider^5469:1:1^
 3801^2^0^28^29^1440^0.7688^0.7508^2^Severed Sleeper^4306:1:2^
 3802^2^0^29^29^1440^0.7720^0.7535^2^Severed Dreamer^^
 3803^3^0^29^30^1440^0.7685^0.7499^3^Severed Keeper^4306:1:2^
-4249^1^0^28^28^1441^0.5820^0.5562^1^Pesterhide Snarler^3301:1:1^
+4249^1^0^28^29^1441^0.5820^0.5562^1^Pesterhide Snarler^3301:1:1^
 @i^3285^Tribal Bracers
 @i^3301^Sharp Canine
 @i^3820^Stranglekelp
@@ -17,10 +17,16 @@ GoldScout-export 6^ssp3m3pd31b9^5
 @i^6359^Firefin Snapper
 @i^6362^Raw Rockscale Cod
 @i^7973^Big-mouth Clam
+@i^8365^Raw Mithril Head Trout
 @i^13422^Stonescale Eel
 @i^13754^Raw Glossy Mightfish
 @i^13755^Raw Winter Squid
+@i^13758^Raw Redgill
+@i^13760^Raw Sunscale Salmon
 @i^13874^Heavy Crate
+@i^16967^Feralas Ahi
+@i^16968^Sar'theris Striker
+@i^16969^Savage Coast Blue Sailfin
 @i^21151^Rumsey Rum Black Label
 @i^21228^Mithril Bound Trunk
 @i^21243^Bloated Glossy Mightfish
@@ -36,17 +42,26 @@ GoldScout-export 6^ssp3m3pd31b9^5
 @q^6359^1:7:1
 @q^6362^1:7:1
 @q^7973^1:7:0
+@q^8365^1:7:1
 @q^13422^1:7:1
 @q^13754^1:7:1
 @q^13755^1:0:1
+@q^13758^1:7:1
+@q^13760^1:7:1
 @q^13874^1:15:0
+@q^16967^1:15:0
+@q^16968^1:12:0
+@q^16969^1:12:0
 @q^21151^1:0:0
 @q^21228^1:15:0
 @q^21243^2:15:0
 @m^1412^Mulgore
 @m^1413^The Barrens
+@m^1434^Stranglethorn Vale
 @m^1440^Ashenvale
 @m^1441^Thousand Needles
+@m^1443^Desolace
+@m^1444^Feralas
 @m^1446^Tanaris
 @c^118^
 @c^724^
@@ -773,5 +788,8 @@ GoldScout-export 6^ssp3m3pd31b9^5
 @a^3802^295:1,315:1
 @a^3803^295:1,315:2
 @a^4249^231:1
-@f^1446^0^339^225^3820:4:9,4603:135:135,6358:2:2,6359:41:41,6362:32:32,7973:32:32,13422:26:52,13754:22:22,13755:34:34,13874:1:1,21151:1:1,21228:9:9,21243:2:2^73:4,93:330,113:5
+@f^1434^0^4^225^4603:1:1,6359:1:1,6362:2:2,16969:1:1^105:4
+@f^1443^0^12^225^6358:3:3,6359:1:1,6362:8:8,16968:1:1^305:12
+@f^1444^0^18^225^6358:2:2,8365:1:1,13758:9:9,13760:6:6,16967:1:1^89:12,212:6
+@f^1446^0^348^225^3820:5:10,4603:136:136,6358:2:2,6359:45:45,6362:33:33,7973:32:32,13422:26:52,13754:22:22,13755:34:34,13874:1:1,21151:2:3,21228:10:10,21243:2:2^73:4,93:335,113:9
 @l^0^enUS
