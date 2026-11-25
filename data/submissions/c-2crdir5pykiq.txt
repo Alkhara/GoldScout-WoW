@@ -1,4 +1,4 @@
-GoldScout-export 6^2crdir5pykiq^11
+GoldScout-export 6^2crdir5pykiq^12
 154^1^0^16^16^1436^0.5891^0.5825^1^Großer Fleischreißer^729:1:1,4775:1:1,6889:1:1,17056:1:1^
 428^254^0^18^19^1433^0.5415^0.7605^254^Terrorkondor^556:21:21,1080:91:91,1206:1:1,1210:1:1,1464:25:25,2079:1:1,4412:1:1,4575:1:1,4775:113:113,4776:43:43,5114:16:16,5115:6:6,6546:1:1,6889:172:172,9784:1:1,15222:1:1,17056:81:81,211784:3:3,211853:3:3,211854:1:1,211855:3:3,250188:9:9^
 441^30^0^17^18^1433^0.5300^0.7463^30^Schwarzer Großdrachenwelpe^3176:1:1,3177:5:5,6540:1:1,9785:1:1,211854:1:1,211855:1:1,248683:1:1^
@@ -28,6 +28,11 @@ GoldScout-export 6^2crdir5pykiq^11
 3816^1^0^18^19^1440^0.2916^0.2695^1^Wildbock^5566:1:1^
 3819^1^0^21^21^1440^0.3184^0.3807^1^Wilddornpirscher^2251:1:1^
 4109^5^0^28^29^1441^0.1065^0.3559^5^Steilhangkonsort^5136:1:1,5137:2:2,5809:4:4^
+4140^4^0^31^32^1441^0.7089^0.7379^4^Skorpidhäscher^5794:2:2,19938:1:1^
+4342^1^0^36^36^1445^0.5766^0.2309^1^Staubsuhlerzwingenkiefer^3667:1:1^
+4358^3^0^35^36^1445^0.5761^0.1983^3^Pfützenspringer der Schlammflossen^17057:2:2,17058:1:1^
+4359^8^0^35^36^1445^0.5771^0.1970^8^Murloc der Schlammflossen^5785:2:2,17057:3:3,17058:3:3,213547:1:1^
+4413^1^0^35^35^1445^0.5554^0.1944^1^Dunkelzahnspinne^4585:1:1,12205:1:1^
 4421^1^0^0^0^0^0.0000^0.0000^0^^5792:1:1,6694:1:1^
 4424^1^0^0^0^0^0.0000^0.0000^0^^274158:1:1^
 4435^1^0^0^0^0^0.0000^0.0000^0^^^
@@ -85,6 +90,7 @@ GoldScout-export 6^2crdir5pykiq^11
 @i^3177^Winziger Fangzahn
 @i^3379^Brokatarmschienen
 @i^3403^Elfenbeineberhauer
+@i^3667^Zartes Krokiliskenfleisch
 @i^3712^Schildkrötenfleisch
 @i^3771^Wildschweinschenkel
 @i^3931^Vergifteter Spinnenfangzahn
@@ -107,7 +113,9 @@ GoldScout-export 6^2crdir5pykiq^11
 @i^5524^Dickschalige Muschel
 @i^5566^Zerbrochenes Geweih
 @i^5637^Großer Fangzahn
+@i^5785^Dicke Murlocschuppe
 @i^5792^Razorflanks Medaillon
+@i^5794^Salziges Skorpidgift
 @i^5809^Steilhanggiftbeutel
 @i^5825^Treshalas Anhänger
 @i^6308^Roher Stoppelfühlerwels
@@ -125,11 +133,15 @@ GoldScout-export 6^2crdir5pykiq^11
 @i^14176^Hüterstiefel der Intelligenz
 @i^15222^Stachelige Keule der Heilung
 @i^17056^Leichte Feder
+@i^17057^Glänzende Fischschuppen
+@i^17058^Fischöl
+@i^19938^Schweres Skorpidbein
 @i^211784^Schriftrolle: WUBBA WUBBA
 @i^211853^Schriftrolle: VOCE WELL
 @i^211854^Schriftrolle: OMIT KESA
 @i^211855^Schriftrolle: STHENIC LUNATE
 @i^213546^Schriftrolle: SCHUBIDU
+@i^213547^Schriftrolle: WELCH SCHWESTER
 @i^248683^Abgefangene Kiste: Erz des Lehrlings
 @i^248686^Abgefangene Kiste: Kräuter des Gesellen
 @i^248688^Abgefangene Kiste: Textilien des Gesellen
@@ -168,6 +180,7 @@ GoldScout-export 6^2crdir5pykiq^11
 @q^3177^0:15:0
 @q^3379^0:4:0
 @q^3403^0:15:0
+@q^3667^1:7:1
 @q^3712^1:7:1
 @q^3771^1:0:0
 @q^3931^0:15:0
@@ -190,7 +203,9 @@ GoldScout-export 6^2crdir5pykiq^11
 @q^5524^1:7:0
 @q^5566^0:15:0
 @q^5637^1:7:1
+@q^5785^1:7:1
 @q^5792^1:12:0
+@q^5794^1:12:0
 @q^5809^1:12:0
 @q^5825^1:12:0
 @q^6308^1:7:1
@@ -208,11 +223,15 @@ GoldScout-export 6^2crdir5pykiq^11
 @q^14176^2:4:0
 @q^15222^2:2:0
 @q^17056^1:15:1
+@q^17057^1:15:0
+@q^17058^1:15:0
+@q^19938^0:15:0
 @q^211784^1:0:0
 @q^211853^1:0:0
 @q^211854^1:0:0
 @q^211855^1:0:0
 @q^213546^1:0:0
+@q^213547^1:0:0
 @q^248683^1:0:1
 @q^248686^1:0:1
 @q^248688^1:0:1
@@ -981,6 +1000,11 @@ GoldScout-export 6^2crdir5pykiq^11
 @a^3816^105:1
 @a^3819^146:1
 @a^4109^122:2,142:3
+@a^4140^294:4
+@a^4342^91:1
+@a^4358^71:1,91:2
+@a^4359^71:4,91:4
+@a^4413^71:1
 @a^4692^152:1
 @a^5184^89:1
 @a^6221^208:2

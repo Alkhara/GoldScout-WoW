@@ -1,4 +1,4 @@
-GoldScout-export 7^4pk9q6yhchld^93
+GoldScout-export 7^4pk9q6yhchld^94
 92^6^0^39^40^1418^0.1490^0.3418^6^Rock Elemental^4552:3:3,4553:1:1,4627:3:3,4784:5:5,7912:2:3,8150:1:1^
 588^6^0^34^35^1434^0.2310^0.1278^6^Bloodscalp Scout^3385:1:1,4306:2:2,4732:1:1^
 595^1^0^35^35^1434^0.2306^0.1302^1^Bloodscalp Hunter^2592:1:3^
@@ -212,7 +212,9 @@ GoldScout-export 7^4pk9q6yhchld^93
 7353^1^0^0^0^0^0.0000^0.0000^0^^^
 7355^1^0^0^0^0^0.0000^0.0000^0^^4585:1:1^
 7358^1^0^0^0^0^0.0000^0.0000^0^^10420:1:1,10761:1:1,10765:1:1^
-7725^1^0^42^43^1444^0.6641^0.4788^1^Grimtotem Raider^^
+7725^11^0^42^43^1444^0.6692^0.4676^11^Grimtotem Raider^3928:1:1,4306:2:4,4338:3:4,9460:7:10^
+7726^3^0^42^42^1444^0.6648^0.4711^3^Grimtotem Naturalist^3989:1:1,9460:3:4^
+7727^4^0^43^44^1444^0.6706^0.4645^4^Grimtotem Shaman^3928:1:1,4338:1:2,9460:4:6^
 7768^4^0^25^25^1425^0.3516^0.6336^4^Witherbark Bloodling^^
 7872^1^0^33^33^1413^0.4612^0.9054^1^Death's Head Cultist^^
 7874^1^0^33^34^1413^0.4681^0.9016^1^Razorfen Thornweaver^^
@@ -421,6 +423,7 @@ GoldScout-export 7^4pk9q6yhchld^93
 @i^3919^Mistvale Giblets
 @i^3928^Superior Healing Potion
 @i^3941^Crochet Pants
+@i^3989^Blocking Targe
 @i^4021^Blunting Mace
 @i^4041^Aurora Cowl
 @i^4060^Glyphed Leggings
@@ -533,6 +536,7 @@ GoldScout-export 7^4pk9q6yhchld^93
 @i^9237^Woodpaw Gnoll Mane
 @i^9322^Undamaged Venom Sac
 @i^9369^Iridescent Sprite Darter Wing
+@i^9460^Grimtotem Horn
 @i^9771^Greenweave Gloves of Intellect
 @i^9795^Ivycloth Gloves of the Eagle
 @i^9831^Scaled Cloak of the Elder
@@ -768,6 +772,7 @@ GoldScout-export 7^4pk9q6yhchld^93
 @q^3919^1:12:0
 @q^3928^1:0:0
 @q^3941^0:4:0
+@q^3989^0:4:0
 @q^4021^0:2:0
 @q^4041^2:4:0
 @q^4060^2:4:0
@@ -880,6 +885,7 @@ GoldScout-export 7^4pk9q6yhchld^93
 @q^9237^1:12:0
 @q^9322^1:12:0
 @q^9369^1:12:0
+@q^9460^1:12:0
 @q^9771^2:4:0
 @q^9795^2:4:0
 @q^9831^2:4:0
@@ -1825,7 +1831,9 @@ GoldScout-export 7^4pk9q6yhchld^93
 @a^5798^209:1
 @a^5800^209:1
 @a^6132^368:5
-@a^7725^193:1
+@a^7725^193:11
+@a^7726^193:3
+@a^7727^193:4
 @a^7768^246:2,247:2
 @a^7872^369:1
 @a^7874^369:1
@@ -1904,7 +1912,9 @@ GoldScout-export 7^4pk9q6yhchld^93
 @t^5253^6:244
 @t^5258^1:157
 @t^5278^7:214
-@t^7725^1:1
+@t^7725^11:290
+@t^7726^3:161
+@t^7727^3:62
 @t^7997^1:16
 @t^255851^6:359
 @t^257861^1:135
