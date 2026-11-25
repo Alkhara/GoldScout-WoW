@@ -1,4 +1,4 @@
-GoldScout-export 5^va9g2s88n9qs^10
+GoldScout-export 5^va9g2s88n9qs^11
 587^5^0^33^34^1434^0.3143^0.1750^5^Bloodscalp Warrior^3802:1:1,3901:1:1,3915:3:3,4306:1:2^
 588^11^0^34^35^1434^0.2486^0.1191^11^Bloodscalp Scout^1708:1:1,2735:1:1,3385:1:1,3781:1:1,3901:1:1,3915:3:3,4306:3:4^
 595^18^0^34^35^1434^0.2480^0.1170^18^Bloodscalp Hunter^1708:1:1,2592:1:3,2751:1:1,3901:2:2,3915:7:7,4306:5:7,7367:1:1^
@@ -26,6 +26,10 @@ GoldScout-export 5^va9g2s88n9qs^10
 1150^1^0^30^31^1434^0.4103^0.1379^1^River Crocolisk^3667:1:1^
 1172^1^0^10^10^1432^0.4065^0.2319^1^Tunnel Rat Vermin^2589:1:3^
 1186^1^0^12^12^1432^0.3443^0.2829^1^Elder Black Bear^^
+2248^2^0^30^31^1424^0.4467^0.3160^2^Cave Yeti^^
+2271^1^0^31^32^1416^0.2553^0.5939^1^Dalaran Shield Guard^^
+2358^7^0^32^33^1416^0.2349^0.5718^7^Dalaran Summoner^2592:1:2,3745:2:2,3792:1:1,4306:4:8^
+2359^11^0^32^33^1416^0.2379^0.5767^11^Elemental Slave^2838:2:2,3715:4:4,4553:3:3,4784:5:5,5741:2:6,8150:2:2^
 2559^22^0^30^31^1417^0.6641^0.4111^22^Highland Strider^3685:11:11,4461:7:7,4512:10:10,5637:1:1,12184:5:5^
 2562^6^0^32^33^1417^0.3490^0.4541^6^Boulderfist Ogre^213422:1:1^
 2563^18^0^32^33^1417^0.6699^0.4981^18^Plains Creeper^878:4:4,1074:4:4,1081:7:7,2251:4:4,3182:3:3,4337:1:1,4585:2:2,5637:2:2,278225:12:12^
@@ -57,6 +61,7 @@ GoldScout-export 5^va9g2s88n9qs^10
 @i^2744^Green Hills of Stranglethorn - Page 20
 @i^2750^Green Hills of Stranglethorn - Page 26
 @i^2751^Green Hills of Stranglethorn - Page 27
+@i^2838^Heavy Stone
 @i^3037^Whipwood Recurve Bow
 @i^3182^Spider's Silk
 @i^3341^Gauntlets of Ogre Strength
@@ -64,8 +69,11 @@ GoldScout-export 5^va9g2s88n9qs^10
 @i^3404^Buzzard Wing
 @i^3667^Tender Crocolisk Meat
 @i^3685^Raptor Egg
+@i^3715^Bracers of Earth Binding
+@i^3745^Rune of Opening
 @i^3771^Wild Hog Shank
 @i^3781^Broad Claymore
+@i^3792^Interlaced Belt
 @i^3802^Hardened Leather Bracers
 @i^3879^Paw of Sin'Dall
 @i^3901^Bloodscalp Tusk
@@ -76,14 +84,18 @@ GoldScout-export 5^va9g2s88n9qs^10
 @i^4435^Mote of Myzrael
 @i^4461^Raptor Hide
 @i^4512^Highland Raptor Eye
+@i^4553^Jagged Piece of Stone
 @i^4585^Dripping Spider Mandible
+@i^4784^Lifeless Stone
 @i^5116^Long Tail Feather
 @i^5117^Vibrant Plume
 @i^5637^Large Fang
+@i^5741^Rock Chip
 @i^6308^Raw Bristle Whisker Catfish
 @i^7131^Dragonmaw Shinbone
 @i^7367^Elder's Mantle of the Hierophant
 @i^8146^Wicked Claw
+@i^8150^Deeprock Salt
 @i^8365^Raw Mithril Head Trout
 @i^9294^Recipe: Wildvine Potion
 @i^11416^Delicate Ribcage
@@ -124,6 +136,7 @@ GoldScout-export 5^va9g2s88n9qs^10
 @q^2744^1:12:0
 @q^2750^1:12:0
 @q^2751^1:12:0
+@q^2838^1:7:1
 @q^3037^2:2:0
 @q^3182^1:7:1
 @q^3341^2:4:0
@@ -131,8 +144,11 @@ GoldScout-export 5^va9g2s88n9qs^10
 @q^3404^1:7:1
 @q^3667^1:7:1
 @q^3685^1:7:1
+@q^3715^1:12:0
+@q^3745^1:12:0
 @q^3771^1:0:0
 @q^3781^0:2:0
+@q^3792^0:4:0
 @q^3802^0:4:0
 @q^3879^1:12:0
 @q^3901^1:12:0
@@ -143,14 +159,18 @@ GoldScout-export 5^va9g2s88n9qs^10
 @q^4435^1:12:0
 @q^4461^1:7:1
 @q^4512^1:12:0
+@q^4553^0:15:0
 @q^4585^0:15:0
+@q^4784^0:15:0
 @q^5116^1:7:1
 @q^5117^1:12:0
 @q^5637^1:7:1
+@q^5741^0:15:0
 @q^6308^1:7:1
 @q^7131^1:12:0
 @q^7367^2:4:0
 @q^8146^1:7:1
+@q^8150^1:7:1
 @q^8365^1:7:1
 @q^9294^2:9:0
 @q^11416^0:15:0
@@ -170,7 +190,9 @@ GoldScout-export 5^va9g2s88n9qs^10
 @q^256037^0:15:0
 @q^277957^1:12:0
 @q^278225^1:12:0
+@m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
+@m^1424^Hillsbrad Foothills
 @m^1432^Loch Modan
 @m^1434^Stranglethorn Vale
 @m^1437^Wetlands
@@ -894,6 +916,10 @@ GoldScout-export 5^va9g2s88n9qs^10
 @a^1150^48:1
 @a^1172^88:1
 @a^1186^106:1
+@a^2248^128:1,129:1
+@a^2271^225:1
+@a^2358^203:2,204:1,224:1,225:1,244:1,245:1
+@a^2359^203:2,204:1,224:1,225:4,245:3
 @a^2559^113:1,133:2,151:1,152:1,153:5,172:3,173:4,212:1,213:2,214:2
 @a^2562^166:1,167:2,186:2,187:1
 @a^2563^105:1,194:7,213:5,214:3,233:1,249:1

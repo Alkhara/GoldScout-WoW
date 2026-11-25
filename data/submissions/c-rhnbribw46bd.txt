@@ -1,4 +1,4 @@
-GoldScout-export 6^rhnbribw46bd^44
+GoldScout-export 7^rhnbribw46bd^45
 587^3^0^33^34^1434^0.3388^0.1556^3^Bloodscalp Warrior^3807:1:1^
 667^2^0^40^40^1434^0.4649^0.3887^2^Skullsplitter Warrior^4306:1:3,9294:1:1^
 694^1^0^34^34^1434^0.3393^0.1558^1^Bloodscalp Axe Thrower^2730:1:1,4306:1:1^
@@ -483,6 +483,9 @@ GoldScout-export 6^rhnbribw46bd^44
 16118^1^0^0^0^0^0.0000^0.0000^0^^22303:1:1^
 236028^5^0^47^48^1447^0.1881^0.5341^5^Honey Wasp^6302:1:1,238503:2:2^
 239939^1^0^52^52^1447^0.3835^0.5583^1^Lord Sarthiss^280610:1:1^
+248041^2^0^56^56^2482^0.6293^0.8121^2^Hyjal Stag^5471:1:1,251641:1:1^
+248042^1^0^55^57^2482^0.6061^0.7808^1^Tainted Hyjal Stag^5120:1:1^
+248395^14^0^55^56^2482^0.6354^0.7307^14^Tainted Shrubbery^3946:1:1,8766:2:2,8948:2:2,10286:2:2,12803:1:1,13463:1:1,247892:5:5,256036:1:1,256037:1:1^
 269254^1^0^46^47^1427^0.4508^0.6014^1^Famished Blackworg^^
 278644^1^0^0^0^0^0.0000^0.0000^0^^7912:1:2,18945:1:6^
 @i^1074^Hard Spider Leg Tip
@@ -764,6 +767,7 @@ GoldScout-export 6^rhnbribw46bd^44
 @i^13443^Superior Mana Potion
 @i^13444^Major Mana Potion
 @i^13446^Major Healing Potion
+@i^13463^Dreamfoil
 @i^13464^Golden Sansam
 @i^13501^Recipe: Major Mana Potion
 @i^13502^Handcrafted Mastersmith Girdle
@@ -920,6 +924,7 @@ GoldScout-export 6^rhnbribw46bd^44
 @i^227911^Head of Rend Blackhand
 @i^238463^Mosshoof Hide
 @i^238503^Wild Honey
+@i^247892^Verdant Leaves
 @i^248684^Waylaid Crate: Apprentice Textiles
 @i^248692^Waylaid Crate: Expert Ore
 @i^248695^Waylaid Crate: Earthly Artisan Herbs
@@ -931,11 +936,14 @@ GoldScout-export 6^rhnbribw46bd^44
 @i^248712^Waylaid Crate: Artisan Ingots
 @i^248713^Waylaid Crate: Artisan Parts
 @i^249520^Formula: Molten Heart of the Mountain
+@i^251641^Hyjal Venison Cut
 @i^252865^Pattern: Tooled Leather Boots
 @i^252871^Pattern: Mender's Leather Gauntlets
 @i^252895^Pattern: Ironfeather Leggings
 @i^254104^Pattern: Golden Gloves
 @i^255645^Swollen Venom Sac
+@i^256036^Handful of Dirt
+@i^256037^Grass Clippings
 @i^262889^Sealed Expert's Writ
 @i^262890^Sealed Artisan's Writ
 @i^273087^Blueprint: Journeyman Campfire
@@ -1234,6 +1242,7 @@ GoldScout-export 6^rhnbribw46bd^44
 @q^13443^1:0:0
 @q^13444^1:0:0
 @q^13446^1:0:0
+@q^13463^1:7:1
 @q^13464^1:7:1
 @q^13501^2:9:0
 @q^13502^3:4:0
@@ -1390,6 +1399,7 @@ GoldScout-export 6^rhnbribw46bd^44
 @q^227911^1:12:0
 @q^238463^1:12:0
 @q^238503^1:12:0
+@q^247892^1:12:0
 @q^248684^1:0:1
 @q^248692^1:0:1
 @q^248695^1:0:1
@@ -1401,11 +1411,14 @@ GoldScout-export 6^rhnbribw46bd^44
 @q^248712^2:0:1
 @q^248713^2:0:1
 @q^249520^3:9:0
+@q^251641^1:12:0
 @q^252865^2:9:0
 @q^252871^3:9:0
 @q^252895^4:9:0
 @q^254104^3:9:0
 @q^255645^1:7:1
+@q^256036^0:15:0
+@q^256037^0:15:0
 @q^262889^3:0:0
 @q^262890^3:0:0
 @q^273087^2:9:0
@@ -1440,6 +1453,7 @@ GoldScout-export 6^rhnbribw46bd^44
 @m^1448^Felwood
 @m^1449^Un'Goro Crater
 @m^1452^Winterspring
+@m^2482^Mount Hyjal
 @c^118^
 @c^724^
 @c^733^
@@ -2410,6 +2424,12 @@ GoldScout-export 6^rhnbribw46bd^44
 @a^14621^148:1
 @a^236028^203:4,223:1
 @a^239939^227:1
+@a^248041^332:2
+@a^248042^312:1
+@a^248395^272:1,273:1,291:2,293:3,294:3,311:2,331:2
 @a^269254^249:1
+@t^248041^1:68
+@t^248042^1:36
+@t^248395^11:347
 @f^1444^0^4^168^3820:1:3,21228:3:3^209:4
 @l^0^enUS

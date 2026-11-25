@@ -1,4 +1,4 @@
-GoldScout-export 6^l83pb5gjjihl^15
+GoldScout-export 7^l83pb5gjjihl^16
 587^30^0^33^34^1434^0.3014^0.1922^30^Bloodscalp Warrior^1520:2:2,1708:1:1,2592:1:1,2730:1:1,2732:1:1,2745:1:1,2751:1:1,3385:1:1,3771:2:2,3809:1:1,3814:1:1,3901:1:1,3915:2:2,4306:14:20,9719:1:1,10408:1:1^
 588^8^0^34^35^1434^0.2584^0.1124^8^Bloodscalp Scout^2725:1:1,3771:1:1,3915:3:3,4306:2:4,4338:1:1^
 595^5^0^34^35^1434^0.2633^0.0988^5^Bloodscalp Hunter^3781:1:1,4306:1:1^
@@ -38,6 +38,10 @@ GoldScout-export 6^l83pb5gjjihl^15
 2359^11^0^32^33^1416^0.2372^0.5667^11^Elemental Slave^2838:4:6,3715:4:4,4553:1:1,4784:10:10,5741:2:3,7067:1:1,8150:4:4^
 2423^1^0^41^41^1416^0.4252^0.1709^1^Lord Aliden Perenolde^^
 2431^1^0^37^37^1416^0.6271^0.4444^1^Jailor Borhuin^1710:1:1,3704:1:1,4306:1:2^
+2559^2^0^30^31^1417^0.6676^0.3835^2^Highland Strider^3685:2:2,4461:2:2,12184:1:1^
+2572^4^0^35^36^1417^0.8231^0.3646^4^Drywhisker Kobold^4306:1:1,4435:2:2^
+2573^16^0^37^38^1417^0.8468^0.3086^16^Drywhisker Surveyor^1708:1:1,3816:1:1,4306:4:7,4338:3:3,4435:5:5,4539:1:1^
+2574^24^0^36^37^1417^0.8494^0.3130^24^Drywhisker Digger^1708:2:2,3799:1:1,3814:1:1,4306:8:16,4435:5:5,4539:2:2,4727:1:1^
 2635^1^0^38^38^1434^0.2912^0.2217^1^Elder Saltwater Crocolisk^770:1:1,3667:1:1^
 2701^3^0^38^39^1418^0.2871^0.5913^3^Dustbelcher Ogre^211269:2:2^
 2715^1^0^39^39^1418^0.2845^0.5349^1^Dustbelcher Brute^278515:1:1^
@@ -175,7 +179,9 @@ GoldScout-export 6^l83pb5gjjihl^15
 @i^4306^Silk Cloth
 @i^4337^Thick Spider's Silk
 @i^4338^Mageweave Cloth
+@i^4435^Mote of Myzrael
 @i^4461^Raptor Hide
+@i^4539^Goldenbark Apple
 @i^4553^Jagged Piece of Stone
 @i^4582^Soft Bushy Tail
 @i^4583^Thick Furry Mane
@@ -184,6 +190,7 @@ GoldScout-export 6^l83pb5gjjihl^15
 @i^4587^Tribal Raptor Feathers
 @i^4634^Iron Lockbox
 @i^4721^Insignia Mantle
+@i^4727^Chief Brigadier Girdle
 @i^4784^Lifeless Stone
 @i^5113^Mark of the Syndicate
 @i^5116^Long Tail Feather
@@ -311,7 +318,9 @@ GoldScout-export 6^l83pb5gjjihl^15
 @q^4306^1:7:1
 @q^4337^1:7:1
 @q^4338^1:7:1
+@q^4435^1:12:0
 @q^4461^1:7:1
+@q^4539^1:0:0
 @q^4553^0:15:0
 @q^4582^1:12:0
 @q^4583^0:15:0
@@ -320,6 +329,7 @@ GoldScout-export 6^l83pb5gjjihl^15
 @q^4587^0:15:0
 @q^4634^2:15:0
 @q^4721^2:4:0
+@q^4727^2:4:0
 @q^4784^0:15:0
 @q^5113^0:15:0
 @q^5116^1:7:1
@@ -383,6 +393,7 @@ GoldScout-export 6^l83pb5gjjihl^15
 @q^255727^2:9:0
 @q^278515^1:12:0
 @m^1416^Alterac Mountains
+@m^1417^Arathi Highlands
 @m^1418^Badlands
 @m^1424^Hillsbrad Foothills
 @m^1434^Stranglethorn Vale
@@ -1158,6 +1169,10 @@ GoldScout-export 6^l83pb5gjjihl^15
 @a^2359^204:5,224:2,225:1,245:3
 @a^2423^68:1
 @a^2431^172:1
+@a^2559^153:2
+@a^2572^156:4
+@a^2573^116:2,136:9,137:5
+@a^2574^116:3,117:2,136:6,137:11,156:2
 @a^2635^85:1
 @a^2701^205:1,245:2
 @a^2715^205:1
@@ -1230,4 +1245,8 @@ GoldScout-export 6^l83pb5gjjihl^15
 @a^12347^106:2,126:2
 @a^260429^88:1
 @a^266357^172:1
+@t^2559^1:123
+@t^2572^4:127
+@t^2573^15:351
+@t^2574^24:825
 @l^0^enUS
