@@ -1,4 +1,4 @@
-GoldScout-export 6^2qeegg8yhff6^17
+GoldScout-export 7^2qeegg8yhff6^19
 3^3^0^24^25^1431^0.2483^0.3319^3^Flesh Eater^1772:1:1,2592:1:1^
 48^8^0^21^22^1431^0.7956^0.7226^8^Skeletal Warrior^1205:2:2,1819:1:1,2378:3:3,2589:1:1,2592:3:5,2794:1:1,3385:1:1,4306:1:1,4606:1:1^
 157^1^0^14^14^1436^0.6070^0.4866^1^Goretusk^769:1:1,9765:1:1^
@@ -88,6 +88,11 @@ GoldScout-export 6^2qeegg8yhff6^17
 2462^6^0^25^25^1431^0.2347^0.3588^6^Flesh Eating Worm^^
 2529^3^0^0^0^0^0.0000^0.0000^0^^1820:1:1,3770:1:1^
 2531^1^0^27^27^1433^0.7519^0.4941^1^Minion of Morganth^^
+2586^6^0^30^31^1417^0.3183^0.2494^6^Syndicate Highwayman^4306:2:4^
+2587^2^0^32^33^1417^0.3190^0.2664^2^Syndicate Pathstalker^2592:1:1,4306:1:1^
+2589^3^0^31^32^1417^0.3207^0.2663^3^Syndicate Mercenary^4306:1:1^
+2714^1^0^35^35^1417^0.6062^0.5920^1^Forsaken Courier^1708:1:1,2592:1:2,4482:1:1^
+2721^1^0^35^35^1417^0.6065^0.5920^1^Forsaken Bodyguard^^
 2946^3^0^44^44^1424^0.5027^0.5932^3^Puppet of Helcular^^
 3631^1^0^16^17^1414^0.5273^0.5483^1^Deviate Stinglash^^
 3632^1^0^15^15^1414^0.5191^0.5461^1^Deviate Creeper^^
@@ -246,6 +251,7 @@ GoldScout-export 6^2qeegg8yhff6^17
 @i^1687^Retractable Claw
 @i^1697^Keen Raptor Tooth
 @i^1705^Lesser Moonstone
+@i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
 @i^1711^Scroll of Stamina II
 @i^1744^Laced Mail Shoulderpads
@@ -343,6 +349,7 @@ GoldScout-export 6^2qeegg8yhff6^17
 @i^4377^Heavy Blasting Powder
 @i^4410^Schematic: Shadow Goggles
 @i^4428^Spider Palp
+@i^4482^Sealed Folder
 @i^4542^Moist Cornbread
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
@@ -512,6 +519,7 @@ GoldScout-export 6^2qeegg8yhff6^17
 @q^1687^0:15:0
 @q^1697^0:15:0
 @q^1705^2:7:1
+@q^1708^1:0:0
 @q^1710^1:0:0
 @q^1711^1:0:0
 @q^1744^0:4:0
@@ -609,6 +617,7 @@ GoldScout-export 6^2qeegg8yhff6^17
 @q^4377^1:7:1
 @q^4410^2:9:0
 @q^4428^0:15:0
+@q^4482^1:12:0
 @q^4542^1:0:0
 @q^4555^0:15:0
 @q^4556^0:15:0
@@ -758,6 +767,7 @@ GoldScout-export 6^2qeegg8yhff6^17
 @m^1414^Kalimdor
 @m^1415^Eastern Kingdoms
 @m^1416^Alterac Mountains
+@m^1417^Arathi Highlands
 @m^1424^Hillsbrad Foothills
 @m^1426^Dun Morogh
 @m^1429^Elwynn Forest
@@ -1110,6 +1120,11 @@ GoldScout-export 6^2qeegg8yhff6^17
 @a^2440^271:2
 @a^2462^124:2,144:2,145:2
 @a^2531^195:1
+@a^2586^86:4,105:1,106:1
+@a^2587^106:2
+@a^2589^106:3
+@a^2714^232:1
+@a^2721^232:1
 @a^2946^230:3
 @a^3631^210:1
 @a^3632^210:1
@@ -1135,6 +1150,9 @@ GoldScout-export 6^2qeegg8yhff6^17
 @a^14222^326:1
 @a^272260^91:1
 @a^272291^164:1
+@t^2586^5:274
+@t^2587^2:107
+@t^2589^1:52
 @f^1413^0^23^81^3820:3:7,6289:7:7,6291:1:1,6308:2:2,6522:9:9,20709:1:2^149:19,152:4
 @f^1424^0^27^126^3820:4:6,6359:6:6,21071:14:14,21113:3:3^54:6,73:5,93:6,268:6,271:4
 @f^1433^0^7^101^251524:7:7^234:4,235:3

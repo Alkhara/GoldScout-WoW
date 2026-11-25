@@ -1,4 +1,4 @@
-GoldScout-export 7^r3y3a89n4nhg^8
+GoldScout-export 7^r3y3a89n4nhg^9
 36^3^0^11^12^1436^0.5632^0.3538^3^Harvest Golem^814:2:2,255007:1:1^
 94^2^0^5^6^1429^0.4045^0.5419^2^Defias Cutpurse^2589:1:2,2656:1:1^
 95^8^0^11^12^1436^0.4788^0.4228^8^Defias Smuggler^414:1:1,829:2:2,2589:2:2,3013:1:1,7997:1:1^
@@ -22,11 +22,11 @@ GoldScout-export 7^r3y3a89n4nhg^8
 1551^1^0^43^44^1434^0.4233^0.4965^1^Ironjaw Basilisk^^
 1557^4^0^40^41^1434^0.3343^0.6529^4^Elder Mistvale Gorilla^2799:1:1,4096:3:3,4097:1:1^
 1558^52^0^42^43^1434^0.3684^0.6254^52^Silverback Patriarch^2799:24:24,4047:1:1,4096:23:23,4099:7:7,5637:4:4,9902:1:1,248692:1:1,262889:1:1^
-1561^2^3^40^40^1434^0.3175^0.7197^2^Bloodsail Raider^^16884:1:1
-1562^1^1^40^41^1434^0.3267^0.7345^1^Bloodsail Mage^4306:1:2^
+1561^4^5^40^41^1434^0.3207^0.7220^4^Bloodsail Raider^^16884:1:1
+1562^5^3^40^41^1434^0.3243^0.7304^5^Bloodsail Mage^2745:1:1,4306:1:2^5432:1:1
 1563^6^1^42^43^1434^0.3183^0.7911^6^Bloodsail Swashbuckler^4019:1:1,4306:1:2,4338:1:1^
 1713^6^0^42^43^1434^0.3423^0.5662^6^Elder Shadowmaw Panther^1688:2:2,4580:1:1^
-5419^1^0^43^43^1446^0.4677^0.3170^1^Glasshide Basilisk^11386:1:1^
+5419^1^0^42^43^1446^0.4677^0.3170^1^Glasshide Basilisk^11386:1:1^
 5422^1^0^41^41^1446^0.5725^0.2493^1^Scorpid Hunter^19936:1:1^
 5425^2^0^41^42^1446^0.5198^0.2836^2^Starving Blisterpaw^12037:1:1,12203:1:1,12208:1:1^
 7857^10^1^44^45^1446^0.7452^0.4773^10^Southsea Dock Worker^4338:3:3,9260:2:2,9276:1:1^
@@ -59,6 +59,7 @@ GoldScout-export 7^r3y3a89n4nhg^8
 @i^2672^Stringy Wolf Meat
 @i^2677^Boar Ribs
 @i^2738^Green Hills of Stranglethorn - Page 14
+@i^2745^Green Hills of Stranglethorn - Page 21
 @i^2763^Fisherman Knife
 @i^2778^Cheap Blunderbuss
 @i^2799^Gorilla Fang
@@ -81,8 +82,12 @@ GoldScout-export 7^r3y3a89n4nhg^8
 @i^4599^Cured Ham Steak
 @i^4603^Raw Spotted Yellowtail
 @i^4608^Raw Black Truffle
+@i^5432^Hickory Pipe
 @i^5637^Large Fang
 @i^6149^Greater Mana Potion
+@i^6289^Raw Longjaw Mud Snapper
+@i^6291^Raw Brilliant Smallfish
+@i^6308^Raw Bristle Whisker Catfish
 @i^6530^Nightcrawlers
 @i^6889^Small Egg
 @i^7074^Chipped Claw
@@ -137,6 +142,7 @@ GoldScout-export 7^r3y3a89n4nhg^8
 @q^2672^1:7:1
 @q^2677^1:7:1
 @q^2738^1:12:0
+@q^2745^1:12:0
 @q^2763^0:2:0
 @q^2778^0:2:0
 @q^2799^1:12:0
@@ -159,8 +165,12 @@ GoldScout-export 7^r3y3a89n4nhg^8
 @q^4599^1:0:0
 @q^4603^1:7:1
 @q^4608^1:0:0
+@q^5432^0:15:0
 @q^5637^1:7:1
 @q^6149^1:0:0
+@q^6289^1:7:1
+@q^6291^1:7:1
+@q^6308^1:7:1
 @q^6530^1:0:0
 @q^6889^1:7:1
 @q^7074^0:15:0
@@ -192,6 +202,7 @@ GoldScout-export 7^r3y3a89n4nhg^8
 @m^1434^Stranglethorn Vale
 @m^1436^Westfall
 @m^1446^Tanaris
+@m^1453^Stormwind City
 @c^118^
 @c^724^
 @c^733^
@@ -1525,8 +1536,8 @@ GoldScout-export 7^r3y3a89n4nhg^8
 @a^1551^188:1
 @a^1557^246:1,247:1,266:2
 @a^1558^247:52
-@a^1561^286:2
-@a^1562^286:1
+@a^1561^286:4
+@a^1562^286:5
 @a^1563^306:4,325:1,326:1
 @a^1713^226:2,227:4
 @a^5419^129:1
@@ -1548,7 +1559,9 @@ GoldScout-export 7^r3y3a89n4nhg^8
 @t^1550^6:299
 @t^1557^3:188
 @t^1558^46:3440
-@t^1561^1:101
+@t^1561^2:163
+@t^1562^3:148
 @t^1563^4:315
 @t^1713^3:329
+@f^1453^0^14^225^6289:11:11,6291:1:1,6308:2:2^270:14
 @l^0^enUS

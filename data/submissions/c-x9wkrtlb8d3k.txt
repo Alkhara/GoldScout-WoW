@@ -1,4 +1,4 @@
-GoldScout-export 7^x9wkrtlb8d3k^17
+GoldScout-export 7^x9wkrtlb8d3k^20
 3^2^0^24^25^1431^0.2382^0.3956^2^Flesh Eater^887:1:1,1129:1:1^
 48^18^0^21^22^1431^0.7973^0.7020^18^Skeletal Warrior^929:1:1,2378:4:4,2592:3:3,4306:1:1,4606:1:1,211854:2:2^
 202^34^0^23^24^1431^0.6166^0.5513^34^Skeletal Horror^929:1:1,1598:5:5,2378:1:1,2589:1:3,2592:6:10,4306:3:3,4606:1:1,211784:1:1,211855:1:1,248684:1:1^
@@ -67,6 +67,8 @@ GoldScout-export 7^x9wkrtlb8d3k^17
 646^1^0^0^0^0^0.0000^0.0000^0^^7230:1:1^
 657^6^0^0^0^0^0.0000^0.0000^0^^2589:2:4,2592:2:5,7997:1:1,248684:1:1^
 703^1^0^26^26^1433^0.7636^0.3927^1^Lieutenant Fangore^3632:1:1^
+704^1^0^2^2^1426^0.2935^0.7431^1^Ragged Timber Wolf^750:1:1,4865:1:1,7073:1:1^
+705^16^0^1^1^1426^0.2921^0.7361^16^Ragged Young Wolf^750:7:7,828:1:1,1366:1:1,1367:1:1,1370:1:1,3365:2:2,4865:6:6,7073:8:8,7074:4:4^
 785^4^0^28^29^1431^0.1677^0.3097^4^Skeletal Warder^4306:2:3,248687:1:1^
 787^5^0^27^27^1431^0.1646^0.3714^5^Skeletal Healer^4306:1:1,211855:1:1^
 824^14^0^15^16^1415^0.4111^0.7936^14^Defias Digger^414:2:2,915:3:3,1499:1:1,2592:1:1,2838:1:1,211786:2:2^
@@ -98,6 +100,7 @@ GoldScout-export 7^x9wkrtlb8d3k^17
 1069^1^0^25^25^1437^0.6662^0.4595^1^Crimson Whelp^^
 1109^1^0^13^13^1436^0.3846^0.3598^1^Fleshripper^6889:1:1,17056:1:1^
 1110^16^0^27^28^1431^0.1797^0.3670^16^Skeletal Raider^1205:1:1,2785:1:1,4306:5:7,6388:1:1,9796:1:1^
+1121^1^0^9^9^1426^0.7031^0.3898^1^Frostmane Snowstrider^^
 1251^2^0^28^28^1431^0.3614^0.7833^2^Splinter Fist Firemonger^4306:1:1^
 1258^3^0^25^26^1431^0.6535^0.3098^3^Black Ravager Mastiff^3301:1:1,3402:1:1,211784:1:1^
 1270^1^0^30^30^1431^0.8022^0.3392^1^Fetid Corpse^1129:1:1^
@@ -237,9 +240,11 @@ GoldScout-export 7^x9wkrtlb8d3k^17
 @i^414^Dalaran Sharp
 @i^422^Dwarven Mild
 @i^730^Murloc Eye
+@i^750^Tough Wolf Meat
 @i^770^Pointy Crocolisk Tooth
 @i^814^Flask of Oil
 @i^818^Tigerseye
+@i^828^Small Blue Pouch
 @i^858^Lesser Healing Potion
 @i^887^Pound of Flesh
 @i^888^Naga Battle Gloves
@@ -263,6 +268,9 @@ GoldScout-export 7^x9wkrtlb8d3k^17
 @i^1260^Tharil'zun's Head
 @i^1261^Midnight Orb
 @i^1299^Lesser Belt of the Spire
+@i^1366^Ragged Leather Pants
+@i^1367^Ragged Leather Boots
+@i^1370^Ragged Leather Bracers
 @i^1381^A Mysterious Message
 @i^1464^Buzzard Talon
 @i^1467^Spotted Sunfish
@@ -370,6 +378,7 @@ GoldScout-export 7^x9wkrtlb8d3k^17
 @i^3207^Hunting Bracers
 @i^3301^Sharp Canine
 @i^3337^Dragonmaw War Banner
+@i^3365^Frayed Bracers
 @i^3375^Calico Bracers
 @i^3381^Cross-stitched Bracers
 @i^3385^Lesser Mana Potion
@@ -407,6 +416,7 @@ GoldScout-export 7^x9wkrtlb8d3k^17
 @i^4711^Glimmering Cloak
 @i^4775^Cracked Bill
 @i^4776^Ruffled Feather
+@i^4865^Ruined Pelt
 @i^5108^Dark Iron Leather
 @i^5523^Small Barnacled Clam
 @i^5524^Thick-shelled Clam
@@ -446,6 +456,8 @@ GoldScout-export 7^x9wkrtlb8d3k^17
 @i^6889^Small Egg
 @i^6901^Glowing Thresher Cape
 @i^6905^Reef Axe
+@i^7073^Broken Fang
+@i^7074^Chipped Claw
 @i^7230^Smite's Mighty Hammer
 @i^7307^Flesh Eating Worm
 @i^7365^Gnoam Sprecklesprocket
@@ -525,9 +537,11 @@ GoldScout-export 7^x9wkrtlb8d3k^17
 @q^414^1:0:0
 @q^422^1:0:0
 @q^730^1:7:1
+@q^750^1:12:0
 @q^770^0:15:0
 @q^814^1:7:1
 @q^818^2:7:1
+@q^828^1:1:0
 @q^858^1:0:0
 @q^887^0:15:0
 @q^888^3:4:0
@@ -551,6 +565,9 @@ GoldScout-export 7^x9wkrtlb8d3k^17
 @q^1260^1:12:0
 @q^1261^1:12:0
 @q^1299^2:4:0
+@q^1366^0:4:0
+@q^1367^0:4:0
+@q^1370^0:4:0
 @q^1381^1:12:0
 @q^1464^0:15:0
 @q^1467^1:12:0
@@ -658,6 +675,7 @@ GoldScout-export 7^x9wkrtlb8d3k^17
 @q^3207^1:4:0
 @q^3301^0:15:0
 @q^3337^1:12:0
+@q^3365^0:4:0
 @q^3375^0:4:0
 @q^3381^0:4:0
 @q^3385^1:0:0
@@ -695,6 +713,7 @@ GoldScout-export 7^x9wkrtlb8d3k^17
 @q^4711^2:4:0
 @q^4775^0:15:0
 @q^4776^0:15:0
+@q^4865^0:15:0
 @q^5108^1:4:0
 @q^5523^1:7:0
 @q^5524^1:7:0
@@ -734,6 +753,8 @@ GoldScout-export 7^x9wkrtlb8d3k^17
 @q^6889^1:7:1
 @q^6901^3:4:0
 @q^6905^3:2:0
+@q^7073^0:15:0
+@q^7074^0:15:0
 @q^7230^3:2:0
 @q^7307^1:0:0
 @q^7365^1:12:0
@@ -815,6 +836,7 @@ GoldScout-export 7^x9wkrtlb8d3k^17
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
 @m^1424^Hillsbrad Foothills
+@m^1426^Dun Morogh
 @m^1431^Duskwood
 @m^1433^Redridge Mountains
 @m^1436^Westfall
@@ -1564,6 +1586,8 @@ GoldScout-export 7^x9wkrtlb8d3k^17
 @a^626^328:1
 @a^628^112:1,113:2
 @a^703^155:1
+@a^704^285:1
+@a^705^285:15,286:1
 @a^785^103:1,123:3
 @a^787^103:1,143:2,162:1,163:1
 @a^824^308:14
@@ -1595,6 +1619,7 @@ GoldScout-export 7^x9wkrtlb8d3k^17
 @a^1069^193:1
 @a^1109^147:1
 @a^1110^104:1,123:5,143:7,163:3
+@a^1121^154:1
 @a^1251^307:2
 @a^1258^112:1,113:1,133:1
 @a^1270^136:1
@@ -1627,6 +1652,7 @@ GoldScout-export 7^x9wkrtlb8d3k^17
 @a^271346^193:1,194:1,195:2
 @a^271348^193:1,195:2
 @a^271351^193:4
+@t^705^5:134
 @f^1424^0^2^40^6359:2:2^269:2
 @f^1433^0^37^118^1467:9:9,6289:12:12,6308:25:25^204:19,225:18
 @f^1453^0^113^42^6289:69:69,6291:21:21,6308:22:22,6309:1:1^270:113

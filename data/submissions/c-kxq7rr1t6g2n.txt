@@ -1,4 +1,4 @@
-GoldScout-export 6^kxq7rr1t6g2n^15
+GoldScout-export 6^kxq7rr1t6g2n^17
 565^1^0^21^21^1431^0.7002^0.2649^1^Loup redoutable enragé^893:1:1^
 1007^8^0^20^21^1437^0.6399^0.6320^8^Gnoll Poil-moussu^954:1:1,2592:3:5^
 1008^5^0^21^22^1437^0.6195^0.5973^5^Bâtard Poil-moussu^1796:1:1,1821:1:1,2592:1:1^
@@ -45,6 +45,9 @@ GoldScout-export 6^kxq7rr1t6g2n^15
 3560^1^0^34^34^1417^0.6524^0.6809^1^Gardien Guérisseur^^
 4040^9^0^21^22^1437^0.4880^0.6115^9^Traqueuse des grottes^878:1:1,1081:3:3,1288:1:1,2251:2:2,3174:2:2,4428:4:4,4576:1:1^
 4062^1^0^30^30^1437^0.5143^0.0813^1^Bombardier Sombrefer^^
+4351^1^0^35^35^1445^0.4179^0.2561^1^Raptor Rougefange^^
+11910^1^0^14^15^1442^0.8141^0.8473^1^Ruffian du Totem-sinistre^1503:1:1^
+11911^1^0^14^14^1442^0.8141^0.8473^1^Mercenaire du Totem sinistre^2589:1:2^
 245999^1^0^0^0^1416^0.0000^0.0000^0^^273035:1:1^
 246003^2^0^0^0^1416^0.0000^0.0000^0^^273037:1:1,273039:1:1^
 246008^1^0^0^0^1416^0.0000^0.0000^0^^273040:1:1^
@@ -104,6 +107,7 @@ GoldScout-export 6^kxq7rr1t6g2n^15
 @i^1464^Serre de busard
 @i^1468^Aileron de murloc
 @i^1478^Parchemin de Protection II
+@i^1503^Bottes déformées en cuir
 @i^1697^Dent de raptor
 @i^1705^Pierre de lune inférieure
 @i^1754^Ceinture en anneaux renforcés
@@ -266,6 +270,7 @@ GoldScout-export 6^kxq7rr1t6g2n^15
 @q^1464^0:15:0
 @q^1468^1:7:1
 @q^1478^1:0:0
+@q^1503^0:4:0
 @q^1697^0:15:0
 @q^1705^2:7:1
 @q^1754^0:4:0
@@ -420,6 +425,8 @@ GoldScout-export 6^kxq7rr1t6g2n^15
 @m^1431^Bois de la Pénombre
 @m^1433^Les Carmines
 @m^1437^Les Paluns
+@m^1442^Les Serres-Rocheuses
+@m^1445^Marécage d'Âprefange
 @m^1453^Hurlevent
 @m^1455^Forgefer
 @c^724^
@@ -1387,6 +1394,9 @@ GoldScout-export 6^kxq7rr1t6g2n^15
 @a^3560^273:1
 @a^4040^229:3,249:3,250:3
 @a^4062^30:1
+@a^4351^108:1
+@a^11910^336:1
+@a^11911^336:1
 @a^260803^230:1,250:4,270:3
 @a^270589^191:1
 @f^1417^0^52^140^6308:19:19,8365:33:33^269:15,273:37

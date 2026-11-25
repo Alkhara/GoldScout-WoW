@@ -1,4 +1,4 @@
-GoldScout-export 7^f8d1kokxwdd3^12
+GoldScout-export 7^f8d1kokxwdd3^13
 422^8^0^18^19^1433^0.3570^0.4725^8^Comecarnes múrloc^730:2:2,1467:2:2,1468:2:2,1811:1:1,1813:1:1,5523:2:2,5784:2:2^
 423^14^0^15^16^1433^0.1463^0.6895^14^Bastardo de Crestagrana^1212:3:3,1501:1:1,2287:1:1,2589:4:10,2980:1:1,6550:1:1,211786:1:1^
 424^6^0^16^17^1433^0.2586^0.8313^6^Furtivo de Crestagrana^1212:1:1,2589:1:2^
@@ -47,6 +47,9 @@ GoldScout-export 7^f8d1kokxwdd3^12
 1831^2^0^52^53^1422^0.4087^0.5964^2^Cazadora Escarlata^3950:1:1^
 1833^1^0^54^55^1422^0.5346^0.3621^1^Caballero Escarlata^14047:1:2^
 1852^1^0^61^61^1422^0.4648^0.6979^1^Araj el Invocador^12843:1:1^
+1984^4^0^1^2^1438^0.6159^0.4244^4^Joven jabalí Cardo^117:1:1,4865:2:2,7098:1:1^
+1988^13^0^2^3^1438^0.5600^0.4575^13^Grell^117:3:3,1364:2:2,1372:1:1,2210:1:1,2589:4:4,2653:1:1,3297:8:8^
+2031^7^0^1^1^1438^0.6170^0.4333^7^Sable de la Noche joven^2211:1:1,2650:1:1,4865:2:2,7073:5:5,7074:1:1^
 3245^2^0^16^17^1413^0.6064^0.3354^2^Zancudo de llanura Ornery^4775:1:1,5114:1:1,5469:1:1^
 3256^9^0^16^18^1413^0.5785^0.4454^9^Segador solescama^5055:5:5,5124:3:3,5165:3:3,5635:1:1^
 3425^2^0^14^15^1413^0.5841^0.4026^2^Merodeador de la savana^5134:1:1,211787:1:1^
@@ -123,6 +126,7 @@ GoldScout-export 7^f8d1kokxwdd3^12
 258968^1^0^0^0^1415^0.0000^0.0000^0^^271721:1:1,275007:1:1^
 258972^1^0^0^0^1415^0.0000^0.0000^0^^274998:1:1^
 259281^1^0^0^0^1415^0.0000^0.0000^0^^275003:1:1^
+@i^117^Cecina dura
 @i^414^Pincho Dalaran
 @i^556^Pico de águila ratonera
 @i^723^Hígado de Dentosangre
@@ -138,6 +142,8 @@ GoldScout-export 7^f8d1kokxwdd3^12
 @i^1210^Gema de las Sombras
 @i^1212^Gapo gnoll
 @i^1221^Escama de vientre de cría
+@i^1364^Jubón de cuero harapiento
+@i^1372^Capa harapienta
 @i^1467^Pez luna moteado
 @i^1468^Aleta de múrloc
 @i^1501^Túnica percal
@@ -152,6 +158,8 @@ GoldScout-export 7^f8d1kokxwdd3^12
 @i^1813^Bastón astillado
 @i^1814^Marra maltrecha
 @i^1817^Espada corta de serie
+@i^2210^Rodela maltrecha
+@i^2211^Escudo grande doblado
 @i^2216^Rodela simple
 @i^2287^Anca de carne
 @i^2295^Colmillo de jabalí grande
@@ -159,6 +167,8 @@ GoldScout-export 7^f8d1kokxwdd3^12
 @i^2449^Raíz de tierra
 @i^2589^Paño de lino
 @i^2592^Paño de lana
+@i^2650^Botas de anillas endebles
+@i^2653^Guantes de anillas endebles
 @i^2677^Costillas de jabalí
 @i^2764^Daga pequeña
 @i^2780^Arco de caza ligero
@@ -178,6 +188,7 @@ GoldScout-export 7^f8d1kokxwdd3^12
 @i^3196^Espada afilada bastarda del mono
 @i^3198^Martillo de paliza del gorila
 @i^3205^Brazales de cuero grabado
+@i^3297^Musgovil
 @i^3301^Canino afilado
 @i^3376^Cinturón de retal
 @i^3401^Escama de crocolisco basta
@@ -205,6 +216,7 @@ GoldScout-export 7^f8d1kokxwdd3^12
 @i^4775^Pico roto
 @i^4776^Pluma erizada
 @i^4787^Brea ardiente
+@i^4865^Pelambre estropeada
 @i^5055^Cuerno de raptor intacto
 @i^5114^Espolón cortado
 @i^5124^Diente de raptor pequeño
@@ -241,8 +253,11 @@ GoldScout-export 7^f8d1kokxwdd3^12
 @i^6575^Capa de defensor del mono
 @i^6629^Manteo esporidio
 @i^6889^Huevo pequeño
+@i^7073^Colmillo roto
+@i^7074^Garra astillada
 @i^7078^Esencia de Fuego
 @i^7092^Patrón: manos de Oscuridad
+@i^7098^Colmillo astillado
 @i^7365^Dentrituradora goblin
 @i^7473^Manto majestuoso de sanación
 @i^7909^Aguamarina
@@ -319,6 +334,7 @@ GoldScout-export 7^f8d1kokxwdd3^12
 @i^275007^Atizador de Mugg
 @i^280911^Collera con pinchos
 @i^285292^Hoja de sierra roma
+@q^117^1:0:0
 @q^414^1:0:0
 @q^556^0:15:0
 @q^723^1:7:1
@@ -334,6 +350,8 @@ GoldScout-export 7^f8d1kokxwdd3^12
 @q^1210^2:7:1
 @q^1212^0:15:0
 @q^1221^1:12:0
+@q^1364^0:4:0
+@q^1372^0:4:0
 @q^1467^1:12:0
 @q^1468^1:7:1
 @q^1501^0:4:0
@@ -348,6 +366,8 @@ GoldScout-export 7^f8d1kokxwdd3^12
 @q^1813^0:2:0
 @q^1814^0:2:0
 @q^1817^0:2:0
+@q^2210^0:4:0
+@q^2211^0:4:0
 @q^2216^0:4:0
 @q^2287^1:0:0
 @q^2295^0:15:0
@@ -355,6 +375,8 @@ GoldScout-export 7^f8d1kokxwdd3^12
 @q^2449^1:7:1
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2650^0:4:0
+@q^2653^0:4:0
 @q^2677^1:7:1
 @q^2764^0:2:0
 @q^2780^0:2:0
@@ -374,6 +396,7 @@ GoldScout-export 7^f8d1kokxwdd3^12
 @q^3196^2:2:0
 @q^3198^2:2:0
 @q^3205^2:4:0
+@q^3297^1:12:0
 @q^3301^0:15:0
 @q^3376^0:4:0
 @q^3401^0:15:0
@@ -401,6 +424,7 @@ GoldScout-export 7^f8d1kokxwdd3^12
 @q^4775^0:15:0
 @q^4776^0:15:0
 @q^4787^0:15:0
+@q^4865^0:15:0
 @q^5055^1:12:0
 @q^5114^0:15:0
 @q^5124^0:15:0
@@ -437,8 +461,11 @@ GoldScout-export 7^f8d1kokxwdd3^12
 @q^6575^2:4:0
 @q^6629^3:4:0
 @q^6889^1:7:1
+@q^7073^0:15:0
+@q^7074^0:15:0
 @q^7078^2:7:1
 @q^7092^2:9:0
+@q^7098^0:15:0
 @q^7365^1:12:0
 @q^7473^2:4:0
 @q^7909^2:7:1
@@ -523,6 +550,7 @@ GoldScout-export 7^f8d1kokxwdd3^12
 @m^1432^Loch Modan
 @m^1433^Montañas Crestagrana
 @m^1434^Vega de Tuercespina
+@m^1438^Teldrassil
 @m^1449^Cráter de Un'Goro
 @c^118^
 @c^724^
@@ -1395,6 +1423,9 @@ GoldScout-export 7^f8d1kokxwdd3^12
 @a^1831^227:1,248:1
 @a^1833^150:1
 @a^1852^269:1
+@a^1984^172:4
+@a^1988^171:1,191:12
+@a^2031^172:7
 @a^3245^132:2
 @a^3256^131:1,132:2,191:2,211:4
 @a^3425^171:2
@@ -1434,6 +1465,9 @@ GoldScout-export 7^f8d1kokxwdd3^12
 @a^11613^151:1
 @a^11873^269:1
 @a^14271^325:1
+@t^1984^4:53
+@t^1988^13:194
+@t^2031^6:59
 @t^3245^2:182
 @t^3256^7:260
 @t^3425^1:24
