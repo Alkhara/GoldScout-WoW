@@ -1,4 +1,4 @@
-GoldScout-export 7^bsdo27ls52em^17
+GoldScout-export 7^bsdo27ls52em^18
 1007^14^0^20^21^1437^0.5820^0.7239^14^Mosshide Gnoll^1764:1:1,1823:1:1,2589:3:6,2592:4:6,3385:1:1^
 1008^16^0^21^22^1437^0.6106^0.6810^16^Mosshide Mongrel^1746:1:1,1819:1:1,2589:2:6,2592:3:6,2765:1:1,3770:1:1,6383:1:1^
 1010^3^2^22^23^1437^0.3451^0.3421^3^Mosshide Fenrunner^2592:1:1^
@@ -22,8 +22,13 @@ GoldScout-export 7^bsdo27ls52em^17
 1364^1^0^34^34^1437^0.5969^0.2594^1^Balgaras the Foul^3639:1:1^
 1400^3^0^23^24^1437^0.3560^0.3809^3^Wetlands Crocolisk^770:1:1,3667:2:2^
 1417^11^0^21^22^1437^0.2215^0.4527^11^Young Wetlands Crocolisk^770:4:4,3397:6:6,3667:6:6^
+1506^21^0^3^3^1420^0.3605^0.6862^21^Scarlet Convert^159:1:1,2070:1:1,2210:2:2,2589:5:5,2651:1:1,2656:1:1,3266:9:9^
+1507^5^0^3^4^1420^0.3619^0.6882^5^Scarlet Initiate^159:1:1,1374:1:1,1380:1:1,2070:1:1,2589:3:3,3266:1:1^
+1525^2^0^5^6^1420^0.5321^0.5388^2^Rotting Dead^^
+1526^2^0^7^7^1420^0.5332^0.5406^2^Ravaged Corpse^2138:1:1^
 1663^1^0^0^0^0^0.0000^0.0000^0^^3628:1:1,4306:1:2,251352:1:1,273820:1:1^
 1666^1^0^0^0^0^0.0000^0.0000^0^^3640:1:1,273807:1:1^
+1667^3^0^5^5^1420^0.3640^0.6860^3^Meven Korgal^2885:1:1,3266:2:2^
 1696^1^0^0^0^0^0.0000^0.0000^0^^3630:1:1,273806:1:1^
 1706^8^0^0^0^0^0.0000^0.0000^0^^2592:1:3,2909:4:4,6584:1:1,7364:1:1,9805:1:1^
 1707^8^0^0^0^0^0.0000^0.0000^0^^1823:1:1,2592:1:4,2909:2:2,3396:1:1,4306:1:3,6580:1:1,12006:1:1^
@@ -214,6 +219,8 @@ GoldScout-export 7^bsdo27ls52em^17
 @i^1823^Bludgeoning Cudgel
 @i^1830^Long Bastard Sword
 @i^2065^Rockjaw Blade
+@i^2070^Darnassian Bleu
+@i^2138^Sharpened Letter Opener
 @i^2210^Battered Buckler
 @i^2211^Bent Large Shield
 @i^2212^Cracked Buckler
@@ -234,6 +241,7 @@ GoldScout-export 7^bsdo27ls52em^17
 @i^2652^Flimsy Chain Cloak
 @i^2653^Flimsy Chain Gloves
 @i^2654^Flimsy Chain Pants
+@i^2656^Flimsy Chain Vest
 @i^2672^Stringy Wolf Meat
 @i^2675^Crawler Claw
 @i^2765^Hunting Knife
@@ -241,6 +249,7 @@ GoldScout-export 7^bsdo27ls52em^17
 @i^2774^Rust-covered Blunderbuss
 @i^2778^Cheap Blunderbuss
 @i^2819^Cross Dagger of the Boar
+@i^2885^Scarlet Crusade Documents
 @i^2909^Red Wool Bandana
 @i^2926^Head of Bazil Thredd
 @i^3013^Scroll of Protection
@@ -248,6 +257,7 @@ GoldScout-export 7^bsdo27ls52em^17
 @i^3182^Spider's Silk
 @i^3189^Wood Chopper
 @i^3201^Barbarian War Axe of Agility
+@i^3266^Scarlet Armband
 @i^3297^Fel Moss
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
@@ -479,6 +489,8 @@ GoldScout-export 7^bsdo27ls52em^17
 @q^1823^0:2:0
 @q^1830^0:2:0
 @q^2065^1:2:0
+@q^2070^1:0:0
+@q^2138^0:2:0
 @q^2210^0:4:0
 @q^2211^0:4:0
 @q^2212^0:4:0
@@ -499,6 +511,7 @@ GoldScout-export 7^bsdo27ls52em^17
 @q^2652^0:4:0
 @q^2653^0:4:0
 @q^2654^0:4:0
+@q^2656^0:4:0
 @q^2672^1:7:1
 @q^2675^1:7:1
 @q^2765^0:2:0
@@ -506,6 +519,7 @@ GoldScout-export 7^bsdo27ls52em^17
 @q^2774^0:2:0
 @q^2778^0:2:0
 @q^2819^2:2:0
+@q^2885^1:12:0
 @q^2909^1:12:0
 @q^2926^1:12:0
 @q^3013^1:0:0
@@ -513,6 +527,7 @@ GoldScout-export 7^bsdo27ls52em^17
 @q^3182^1:7:1
 @q^3189^1:2:0
 @q^3201^2:2:0
+@q^3266^1:12:0
 @q^3297^1:12:0
 @q^3299^0:15:0
 @q^3300^0:15:0
@@ -685,6 +700,7 @@ GoldScout-export 7^bsdo27ls52em^17
 @m^1411^Durotar
 @m^1412^Mulgore
 @m^1417^Arathi Highlands
+@m^1420^Tirisfal Glades
 @m^1424^Hillsbrad Foothills
 @m^1426^Dun Morogh
 @m^1433^Redridge Mountains
@@ -2340,6 +2356,11 @@ GoldScout-export 7^bsdo27ls52em^17
 @a^1364^111:1
 @a^1400^128:1,148:1,164:1
 @a^1417^125:1,130:1,164:1,182:1,183:5,203:2
+@a^1506^267:20,287:1
+@a^1507^267:5
+@a^1525^210:2
+@a^1526^210:2
+@a^1667^267:3
 @a^1754^134:1
 @a^1755^154:1
 @a^1984^171:1,191:2

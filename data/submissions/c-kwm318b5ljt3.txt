@@ -1,4 +1,4 @@
-GoldScout-export 7^kwm318b5ljt3^25
+GoldScout-export 7^kwm318b5ljt3^26
 3^4^0^24^25^1431^0.2335^0.3763^4^Flesh Eater^887:1:1,1129:1:1,5529:1:1,6530:2:2^
 202^22^0^23^24^1431^0.2001^0.4641^22^Skeletal Horror^929:1:1,1205:1:1,1598:6:6,1821:1:1,2592:7:10,2765:1:1,3012:1:1,3379:1:1,4306:2:2,4606:2:2,281146:1:1^
 205^13^0^28^29^1431^0.6292^0.4324^13^Nightbane Dark Runner^1780:1:1,3210:1:1,5635:2:2^
@@ -334,8 +334,11 @@ GoldScout-export 7^kwm318b5ljt3^25
 @i^5972^Pattern: Fine Leather Pants
 @i^6289^Raw Longjaw Mud Snapper
 @i^6291^Raw Brilliant Smallfish
+@i^6303^Raw Slitherskin Mackerel
 @i^6308^Raw Bristle Whisker Catfish
 @i^6317^Raw Loch Frenzy
+@i^6358^Oily Blackmouth
+@i^6359^Firefin Snapper
 @i^6361^Raw Rainbow Fin Albacore
 @i^6378^Seer's Cape
 @i^6381^Bright Cloak
@@ -577,8 +580,11 @@ GoldScout-export 7^kwm318b5ljt3^25
 @q^5972^2:9:0
 @q^6289^1:7:1
 @q^6291^1:7:1
+@q^6303^1:7:1
 @q^6308^1:7:1
 @q^6317^1:7:1
+@q^6358^1:7:1
+@q^6359^1:7:1
 @q^6361^1:7:1
 @q^6378^2:4:0
 @q^6381^2:4:0
@@ -673,6 +679,7 @@ GoldScout-export 7^kwm318b5ljt3^25
 @m^1437^Wetlands
 @m^1440^Ashenvale
 @m^1442^Stonetalon Mountains
+@m^1453^Stormwind City
 @m^1455^Ironforge
 @c^118^
 @c^724^
@@ -1062,6 +1069,7 @@ GoldScout-export 7^kwm318b5ljt3^25
 @t^1400^3:223
 @t^1417^6:397
 @f^1432^0^12^1^6289:3:3,6291:2:2,6317:4:4,21071:3:3^148:4,168:8
-@f^1437^0^1^75^6361:1:1^221:1
+@f^1437^0^2^75^6359:1:1,6361:1:1^221:2
+@f^1453^0^54^76^6289:2:2,6303:14:14,6308:1:1,6358:7:7,6361:30:30^185:51,271:3
 @f^1455^0^64^13^6289:41:41,6291:9:9,6308:14:14^49:64
 @l^0^enUS
