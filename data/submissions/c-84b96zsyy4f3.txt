@@ -1,4 +1,4 @@
-GoldScout-export 6^84b96zsyy4f3^18
+GoldScout-export 7^84b96zsyy4f3^19
 705^19^0^1^1^1426^0.2914^0.7397^19^Lobo joven andrajoso^750:16:16,1367:1:1,1369:1:1,1370:1:1,2211:1:1,2649:1:1,2651:1:1,3365:2:2,4865:5:5,7073:6:6,7074:8:8^
 706^48^0^3^4^1426^0.2373^0.7767^48^Cría de trol Peloescarcha^117:6:6,159:7:7,1366:1:1,1368:1:1,1372:1:1,1374:1:1,1377:1:1,1378:1:1,1380:1:1,2589:12:12,2649:2:2,2650:1:1,2653:1:1,2654:1:1,5571:1:1,264356:2:2^
 707^12^0^1^2^1426^0.2834^0.7499^12^Trogg Mentueso^117:3:3,159:2:2,1374:1:1,2589:4:4,2650:1:1,3365:1:1^
@@ -23,9 +23,16 @@ GoldScout-export 6^84b96zsyy4f3^18
 1138^3^0^6^7^1426^0.4448^0.4790^3^Lobo rastreador de la nieve^3300:1:1^
 1161^10^0^11^12^1432^0.3186^0.6913^10^Trogg Rompecantos^1179:1:1,2287:1:1,2536:3:3,2589:4:10^
 1162^12^0^11^12^1432^0.3348^0.7357^12^Explorador Rompecantos^858:1:1,1179:1:1,1511:1:1,2268:1:1,2536:5:5,2589:3:6^
-1195^4^0^10^11^1432^0.2961^0.4410^4^Rondador del bosque^3174:2:2,5465:2:4^
+1172^18^0^10^11^1432^0.2659^0.3378^18^Alimaña Ratatúnel^1415:1:1,2589:6:14,2777:1:1,2975:1:1,3110:6:6,4537:1:1,211787:1:1^
+1173^17^0^10^11^1432^0.2556^0.3291^17^Explorador Ratatúnel^1412:1:1,1423:1:1,2282:1:1,2589:5:7,3110:6:6,4537:1:1,4689:1:1,5572:1:1,9753:1:1^
+1174^6^0^12^13^1432^0.3596^0.2333^6^Geomántico Ratatúnel^2589:2:4,5026:1:1^
+1175^3^0^12^12^1432^0.3605^0.2717^3^Cavador Ratatúnel^858:1:1,2589:1:3^
+1177^2^0^14^14^1432^0.3497^0.2735^2^Perito Ratatúnel^2589:1:3^
+1186^7^0^11^12^1432^0.2672^0.3344^7^Oso negro viejo^3169:3:3,3173:3:3,11406:1:1^
+1195^5^0^10^11^1432^0.3002^0.4389^5^Rondador del bosque^3174:3:3,5465:3:5^
 1196^10^0^7^8^1426^0.3557^0.4752^10^Oso zarpahelada^2898:2:2,3169:1:1,3170:4:4,4865:2:2,6952:1:1,7074:2:2^
 1201^9^0^7^8^1426^0.2910^0.4781^9^Leopardo de la nieve^4814:2:2^
+1202^1^0^11^12^1432^0.2741^0.4391^1^Kóbold Ratatúnel^^
 1211^20^0^8^10^1426^0.2601^0.4281^20^Gnomo paria^1429:1:1,2140:1:1,2589:4:7,2635:1:1,2643:1:1,2644:1:1,3013:1:1,3083:8:8,3084:8:8,4540:1:1,6520:1:1^
 1397^9^0^8^9^1426^0.4156^0.4313^9^Profeta Peloescarcha^159:1:1,2589:4:5,2676:4:4,3370:1:1^
 1718^2^0^3^4^1426^0.3423^0.6990^2^Asaltante Mentueso^117:1:1,1372:1:1,2589:1:1^
@@ -190,12 +197,14 @@ GoldScout-export 6^84b96zsyy4f3^18
 @i^1378^Pantalones deshilachados
 @i^1380^Toga deshilachada
 @i^1411^Bastón seco
+@i^1412^Espada bastarda rudimentaria
 @i^1415^Marra de carpintero
 @i^1416^Hacha herrumbrada
 @i^1417^Hacha de batalla golpeada
 @i^1419^Botas de cuero desgastadas
 @i^1421^Capa de pellejo desgastada
 @i^1422^Guantes de cuero desgastados
+@i^1423^Pantalones de cuero desgastados
 @i^1425^Jubón de cuero desgastado
 @i^1427^Zapatos de retales
 @i^1429^Capa de retales
@@ -227,6 +236,7 @@ GoldScout-export 6^84b96zsyy4f3^18
 @i^2221^Tarja
 @i^2258^Espada corta Peloescarcha
 @i^2268^Espada Rompecantos
+@i^2282^Espada corta Rodentia
 @i^2287^Anca de carne
 @i^2290^Pergamino de Intelecto II
 @i^2536^Diente de piedra trogg
@@ -245,6 +255,7 @@ GoldScout-export 6^84b96zsyy4f3^18
 @i^2672^Carne fibrosa de lobo
 @i^2675^Garra de reptador
 @i^2676^Cardaluz
+@i^2777^Arco corto débil
 @i^2783^Trabuco de pésima calidad
 @i^2786^Trabuco engrasado
 @i^2886^Costilla de jabalí del risco
@@ -254,17 +265,20 @@ GoldScout-export 6^84b96zsyy4f3^18
 @i^2959^Botas de oficial
 @i^2962^Calzones de cuero quemado
 @i^2964^Guantes de cuero quemado
+@i^2975^Botas de caza
 @i^3012^Pergamino de Agilidad
 @i^3013^Pergamino de Protección
 @i^3039^Arco de ceniza corto
 @i^3078^Troceacorazones Naga
 @i^3083^Leva estabilizadora
 @i^3084^Engranaje giromecánico
+@i^3110^Oreja de rata de túnel
 @i^3167^Cerda de araña espesa
 @i^3169^Diente de oso astillado
 @i^3170^Diente de oso grande
 @i^3171^Colmillo de jabalí roto
 @i^3172^Intestinos de jabalí
+@i^3173^Carne de oso
 @i^3174^Icor de araña
 @i^3182^Seda de araña
 @i^3183^Garra sarnosa
@@ -290,6 +304,7 @@ GoldScout-export 6^84b96zsyy4f3^18
 @i^3931^Colmillo de araña envenenado
 @i^4093^Cola de basilisco grande
 @i^4306^Paño de seda
+@i^4537^Banana Tel'Abim
 @i^4538^Sandía Vidrota
 @i^4540^Mendrugo de pan duro
 @i^4555^Cola escamada espesa
@@ -297,11 +312,13 @@ GoldScout-export 6^84b96zsyy4f3^18
 @i^4563^Garrote de Billy
 @i^4633^Arcón de bronce pesado
 @i^4634^Arcón de hierro
+@i^4689^Capa de caza
 @i^4784^Piedra inerte
 @i^4813^Collar de cuero pequeño
 @i^4814^Colmillo descolorido
 @i^4865^Pelambre estropeada
 @i^4877^Punta de flecha de piedra
+@i^5026^Alquitrán
 @i^5114^Espolón cortado
 @i^5116^Pluma de cola larga
 @i^5136^Oreja peluda rasgada
@@ -349,6 +366,7 @@ GoldScout-export 6^84b96zsyy4f3^18
 @i^8178^Espada de instrucción del halcón
 @i^8186^Varita funesta
 @i^9451^Agua burbujeante
+@i^9753^Rodela de trotamundos del águila
 @i^9767^Sandalias de tejido verde de cólera de las Sombras
 @i^9795^Guantes de paño de hiedra de aguante
 @i^9806^Guantes excelentes del gorila
@@ -390,6 +408,7 @@ GoldScout-export 6^84b96zsyy4f3^18
 @i^19938^Pierna de escórpido pesado
 @i^211784^Pergamino: WUBBA WUBBA
 @i^211786^Pergamino: CHAP BALK WELLES
+@i^211787^Pergamino: LOWER PING WHOMEVER
 @i^211855^Pergamino: STHENIC LUNATE
 @i^213545^Pergamino: NIMIPU SETOFELO
 @i^213547^Pergamino: QÉU PESADA
@@ -438,12 +457,14 @@ GoldScout-export 6^84b96zsyy4f3^18
 @q^1378^0:4:0
 @q^1380^0:4:0
 @q^1411^0:2:0
+@q^1412^0:2:0
 @q^1415^0:2:0
 @q^1416^0:2:0
 @q^1417^0:2:0
 @q^1419^0:4:0
 @q^1421^0:4:0
 @q^1422^0:4:0
+@q^1423^0:4:0
 @q^1425^0:4:0
 @q^1427^0:4:0
 @q^1429^0:4:0
@@ -475,6 +496,7 @@ GoldScout-export 6^84b96zsyy4f3^18
 @q^2221^0:4:0
 @q^2258^1:2:0
 @q^2268^1:2:0
+@q^2282^1:2:0
 @q^2287^1:0:0
 @q^2290^1:0:0
 @q^2536^1:12:0
@@ -493,6 +515,7 @@ GoldScout-export 6^84b96zsyy4f3^18
 @q^2672^1:7:1
 @q^2675^1:7:1
 @q^2676^1:12:0
+@q^2777^0:2:0
 @q^2783^0:2:0
 @q^2786^0:2:0
 @q^2886^1:7:1
@@ -502,17 +525,20 @@ GoldScout-export 6^84b96zsyy4f3^18
 @q^2959^1:4:0
 @q^2962^2:4:0
 @q^2964^1:4:0
+@q^2975^1:4:0
 @q^3012^1:0:0
 @q^3013^1:0:0
 @q^3039^2:2:0
 @q^3078^3:2:0
 @q^3083^1:12:0
 @q^3084^1:12:0
+@q^3110^1:12:0
 @q^3167^0:15:0
 @q^3169^0:15:0
 @q^3170^0:15:0
 @q^3171^0:15:0
 @q^3172^1:7:1
+@q^3173^1:7:1
 @q^3174^1:7:1
 @q^3182^1:7:1
 @q^3183^1:12:0
@@ -538,6 +564,7 @@ GoldScout-export 6^84b96zsyy4f3^18
 @q^3931^0:15:0
 @q^4093^0:15:0
 @q^4306^1:7:1
+@q^4537^1:0:0
 @q^4538^1:0:0
 @q^4540^1:0:0
 @q^4555^0:15:0
@@ -545,11 +572,13 @@ GoldScout-export 6^84b96zsyy4f3^18
 @q^4563^1:2:0
 @q^4633^2:15:0
 @q^4634^2:15:0
+@q^4689^1:4:0
 @q^4784^0:15:0
 @q^4813^0:15:0
 @q^4814^0:15:0
 @q^4865^0:15:0
 @q^4877^0:15:0
+@q^5026^1:12:0
 @q^5114^0:15:0
 @q^5116^1:7:1
 @q^5136^0:15:0
@@ -597,6 +626,7 @@ GoldScout-export 6^84b96zsyy4f3^18
 @q^8178^2:2:0
 @q^8186^2:2:0
 @q^9451^1:0:0
+@q^9753^2:4:0
 @q^9767^2:4:0
 @q^9795^2:4:0
 @q^9806^2:4:0
@@ -638,6 +668,7 @@ GoldScout-export 6^84b96zsyy4f3^18
 @q^19938^0:15:0
 @q^211784^1:0:0
 @q^211786^1:0:0
+@q^211787^1:0:0
 @q^211855^1:0:0
 @q^213545^1:0:0
 @q^213547^1:0:0
@@ -1971,9 +2002,16 @@ GoldScout-export 6^84b96zsyy4f3^18
 @a^1138^188:3
 @a^1161^225:3,286:6,306:1
 @a^1162^286:9,306:3
-@a^1195^165:3,186:1
+@a^1172^67:1,104:1,105:1,124:5,125:6,145:1,165:3
+@a^1173^104:1,105:1,124:6,125:8,144:1
+@a^1174^87:4,107:2
+@a^1175^107:3
+@a^1177^106:1,107:1
+@a^1186^105:1,124:1,125:3,145:2
+@a^1195^165:3,166:1,186:1
 @a^1196^165:1,170:1,184:1,185:4,186:1,190:1,232:1
 @a^1201^165:2,185:5,205:1,249:1
+@a^1202^165:1
 @a^1211^164:1,165:15,185:4
 @a^1397^148:1,168:7,188:1
 @a^1718^266:1,286:1
@@ -2086,4 +2124,11 @@ GoldScout-export 6^84b96zsyy4f3^18
 @a^271587^188:1
 @a^276003^170:2,171:4,191:4
 @a^276009^171:1
+@t^1172^18:758
+@t^1173^17:596
+@t^1174^5:204
+@t^1175^3:103
+@t^1177^2:79
+@t^1186^7:263
+@t^1202^1:33
 @l^0^esES
