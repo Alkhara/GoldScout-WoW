@@ -1,4 +1,4 @@
-GoldScout-export 5^jwerfn8m12wp^7
+GoldScout-export 5^jwerfn8m12wp^8
 2952^17^0^3^4^1412^0.5830^0.8007^17^Bristleback Quilboar^159:2:2,1367:1:1,1369:1:1,1370:1:1,1372:1:1,2589:1:1,2653:1:1,3365:1:1,4770:12:12^
 2954^1^0^4^5^1412^0.5695^0.7895^1^Bristleback Battleboar^3365:1:1,4865:1:1^
 2955^8^0^1^2^1412^0.4657^0.7703^8^Plainstrider^1372:1:1,2653:1:1,4739:7:7,4740:7:7,4757:6:6,7096:3:3,7097:1:1^
@@ -20,7 +20,10 @@ GoldScout-export 5^jwerfn8m12wp^7
 3116^3^0^7^8^1411^0.4734^0.3096^3^Dustwind Pillager^^
 3121^6^0^7^8^1411^0.6659^0.8373^6^Durotar Tiger^4814:2:2,4892:4:4^
 3124^15^0^3^3^1411^0.4122^0.6505^15^Scorpid Worker^1378:1:1,2651:1:1,3365:1:1,4862:10:10,4867:4:4,7099:4:4,7100:3:3,7101:4:4^
+3128^5^0^5^6^1411^0.5808^0.5547^5^Kul Tiras Sailor^1415:1:1,2070:1:1,2589:2:3^
+3129^12^0^6^7^1411^0.5902^0.5663^12^Kul Tiras Marine^159:1:1,1414:1:1,2070:1:1,2138:1:1,2589:2:3,2643:1:1^
 3183^4^0^5^5^1411^0.4284^0.5283^4^Yarrog Baneshadow^1376:2:2,2589:1:1,4859:1:1^
+3192^1^0^8^8^1411^0.5969^0.5824^1^Lieutenant Benedict^1429:1:1,4882:1:1^
 3205^1^0^10^10^1411^0.6635^0.8757^1^Zalazane^4866:1:1^
 3206^8^0^8^9^1411^0.6643^0.8650^8^Voodoo Troll^117:1:1,118:1:1,1415:1:1,2589:1:2,211785:1:1,211787:1:1^
 3207^9^0^8^9^1411^0.6639^0.8617^9^Hexed Troll^117:1:1,159:1:1,2589:4:5,211785:1:1^
@@ -58,14 +61,19 @@ GoldScout-export 5^jwerfn8m12wp^7
 @i^1377^Frayed Gloves
 @i^1378^Frayed Pants
 @i^1412^Crude Bastard Sword
+@i^1414^Cracked Sledge
 @i^1415^Carpenter's Mallet
+@i^1429^Patchwork Cloak
 @i^1476^Snapped Spider Limb
 @i^1768^Canvas Pants
 @i^1770^Canvas Vest
+@i^2070^Darnassian Bleu
+@i^2138^Sharpened Letter Opener
 @i^2211^Bent Large Shield
 @i^2589^Linen Cloth
 @i^2590^Forest Spider Webbing
 @i^2592^Wool Cloth
+@i^2643^Loose Chain Bracers
 @i^2646^Loose Chain Pants
 @i^2649^Flimsy Chain Belt
 @i^2651^Flimsy Chain Bracers
@@ -96,6 +104,7 @@ GoldScout-export 5^jwerfn8m12wp^7
 @i^4867^Broken Scorpid Leg
 @i^4873^Dry Hardened Barnacle
 @i^4874^Clean Fishbones
+@i^4882^Benedict's Key
 @i^4887^Intact Makrura Eye
 @i^4888^Crawler Mucus
 @i^4892^Durotar Tiger Fur
@@ -150,14 +159,19 @@ GoldScout-export 5^jwerfn8m12wp^7
 @q^1377^0:4:0
 @q^1378^0:4:0
 @q^1412^0:2:0
+@q^1414^0:2:0
 @q^1415^0:2:0
+@q^1429^0:4:0
 @q^1476^0:15:0
 @q^1768^0:4:0
 @q^1770^0:4:0
+@q^2070^1:0:0
+@q^2138^0:2:0
 @q^2211^0:4:0
 @q^2589^1:7:1
 @q^2590^0:15:0
 @q^2592^1:7:1
+@q^2643^0:4:0
 @q^2646^0:4:0
 @q^2649^0:4:0
 @q^2651^0:4:0
@@ -188,6 +202,7 @@ GoldScout-export 5^jwerfn8m12wp^7
 @q^4867^0:15:0
 @q^4873^0:15:0
 @q^4874^0:15:0
+@q^4882^1:13:0
 @q^4887^1:12:0
 @q^4888^1:12:0
 @q^4892^1:12:0
@@ -891,7 +906,10 @@ GoldScout-export 5^jwerfn8m12wp^7
 @a^3116^129:3
 @a^3121^333:4,352:1,353:1
 @a^3124^228:2,247:4,248:4,268:1,288:4
+@a^3128^211:2,231:3
+@a^3129^211:1,231:11
 @a^3183^208:4
+@a^3192^231:1
 @a^3205^353:1
 @a^3206^333:2,353:6
 @a^3207^333:3,353:6
