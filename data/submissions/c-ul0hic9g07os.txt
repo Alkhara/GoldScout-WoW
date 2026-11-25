@@ -1,4 +1,4 @@
-GoldScout-export 7^ul0hic9g07os^34
+GoldScout-export 7^ul0hic9g07os^35
 3^13^0^24^25^1431^0.2382^0.3748^13^Flesh Eater^885:2:2,1129:3:3,1777:1:1,2220:1:1,2592:1:2,2794:1:1,4306:2:2,4606:1:1,5529:1:1,6530:2:2^
 48^13^0^21^22^1431^0.7903^0.7090^13^Skeletal Warrior^2378:6:6,2592:3:4,2783:1:1^
 202^33^0^23^24^1431^0.2518^0.4631^33^Skeletal Horror^1205:2:2,1598:4:4,1774:1:1,2589:1:2,2592:11:17,3385:1:1,4306:1:1,4606:5:5,9814:1:1,248689:1:1^
@@ -280,7 +280,13 @@ GoldScout-export 7^ul0hic9g07os^34
 218908^1^0^40^40^1415^0.4193^0.5894^1^Scarlet Crusade Assassin^215468:1:1^
 252711^1^0^43^43^2652^0.4382^0.3436^1^Decrepit Pylon Protector^14599:1:1^
 253272^1^0^42^43^2652^0.3481^0.3080^1^Magram Necromancer^^
+256798^3^0^38^38^2548^0.4493^0.5289^3^Twilight Neophyte^4306:2:5,266425:3:6^
+256952^5^0^39^40^2548^0.4823^0.5531^5^Twilight Raider^4306:2:6,4338:1:1^
+258573^10^0^36^37^2548^0.4361^0.5862^10^Mudfin Oracle^3928:1:1,5524:5:5,9859:1:1,17058:4:4,267266:3:3^
+258574^8^0^37^38^2548^0.4404^0.5826^8^Mudfin Warrior^3786:1:1,3795:1:1,3798:1:1,4603:1:1,5524:2:2,17058:2:2,267266:1:1^
+258588^13^0^38^40^2548^0.4374^0.5783^13^Jumbo Crawfish^1708:1:1,5524:2:2,266157:3:3^
 258922^4^0^37^38^2548^0.4605^0.7092^4^Hungry Crocolisk^^
+259046^1^0^38^38^2548^0.4382^0.5059^1^Freshwater Crocolisk^^
 260322^1^0^0^0^0^0.0000^0.0000^0^^273022:1:1^
 260326^1^0^0^0^0^0.0000^0.0000^0^^270865:1:1,273028:1:1^
 260796^1^0^0^0^0^0.0000^0.0000^0^^770:1:1^
@@ -455,8 +461,11 @@ GoldScout-export 7^ul0hic9g07os^34
 @i^3780^Long-barreled Musket
 @i^3784^Metal Stave
 @i^3785^Keen Axe
+@i^3786^Shiny Dirk
 @i^3787^Stone Club
+@i^3795^Interlaced Cloak
 @i^3797^Interlaced Pants
+@i^3798^Interlaced Shoulderpads
 @i^3802^Hardened Leather Bracers
 @i^3807^Hardened Leather Tunic
 @i^3808^Double Mail Belt
@@ -465,6 +474,7 @@ GoldScout-export 7^ul0hic9g07os^34
 @i^3879^Paw of Sin'Dall
 @i^3918^Singing Crystal Shard
 @i^3923^Water Elemental Bracers
+@i^3928^Superior Healing Potion
 @i^4048^Emblazoned Hat
 @i^4053^Large River Crocolisk Skin
 @i^4075^Mail Combat Gauntlets
@@ -483,6 +493,7 @@ GoldScout-export 7^ul0hic9g07os^34
 @i^4582^Soft Bushy Tail
 @i^4585^Dripping Spider Mandible
 @i^4586^Smooth Raptor Skin
+@i^4603^Raw Spotted Yellowtail
 @i^4606^Spongy Morel
 @i^4607^Delicious Cave Mold
 @i^4633^Heavy Bronze Lockbox
@@ -572,6 +583,7 @@ GoldScout-export 7^ul0hic9g07os^34
 @i^9843^Banded Shield of the Hierophant
 @i^9855^Archer's Belt of the Knight
 @i^9856^Archer's Boots of Strength
+@i^9859^Archer's Cap of the Owl
 @i^9862^Archer's Trousers of the Falcon
 @i^9865^Renegade Bracers of the Beast
 @i^11150^Formula: Enchant Gloves - Mining
@@ -645,6 +657,9 @@ GoldScout-export 7^ul0hic9g07os^34
 @i^258530^Lucky Lure
 @i^260347^Tattered Journal
 @i^262888^Sealed Journeyman's Writ
+@i^266157^Jumbo Crawfish Shell
+@i^266425^Twilight Charm
+@i^267266^Mudfin Murloc Head
 @i^270180^Horrible Rootcore
 @i^270865^Titan Relic
 @i^273022^Supple Bellyskin Leggings
@@ -822,8 +837,11 @@ GoldScout-export 7^ul0hic9g07os^34
 @q^3780^0:2:0
 @q^3784^0:2:0
 @q^3785^0:2:0
+@q^3786^0:2:0
 @q^3787^0:2:0
+@q^3795^0:4:0
 @q^3797^0:4:0
+@q^3798^0:4:0
 @q^3802^0:4:0
 @q^3807^0:4:0
 @q^3808^0:4:0
@@ -832,6 +850,7 @@ GoldScout-export 7^ul0hic9g07os^34
 @q^3879^1:12:0
 @q^3918^1:12:0
 @q^3923^1:12:0
+@q^3928^1:0:0
 @q^4048^2:4:0
 @q^4053^1:12:0
 @q^4075^2:4:0
@@ -850,6 +869,7 @@ GoldScout-export 7^ul0hic9g07os^34
 @q^4582^1:12:0
 @q^4585^0:15:0
 @q^4586^0:15:0
+@q^4603^1:7:1
 @q^4606^1:0:0
 @q^4607^1:0:0
 @q^4633^2:15:0
@@ -939,6 +959,7 @@ GoldScout-export 7^ul0hic9g07os^34
 @q^9843^2:4:0
 @q^9855^2:4:0
 @q^9856^2:4:0
+@q^9859^2:4:0
 @q^9862^2:4:0
 @q^9865^2:4:0
 @q^11150^2:9:0
@@ -1012,6 +1033,9 @@ GoldScout-export 7^ul0hic9g07os^34
 @q^258530^1:12:0
 @q^260347^1:15:0
 @q^262888^3:0:0
+@q^266157^1:12:0
+@q^266425^1:12:0
+@q^267266^1:12:0
 @q^270180^1:12:0
 @q^270865^1:12:0
 @q^273022^3:4:0
@@ -1928,7 +1952,13 @@ GoldScout-export 7^ul0hic9g07os^34
 @a^218908^228:1
 @a^252711^128:1
 @a^253272^126:1
+@a^256798^208:2,209:1
+@a^256952^208:2,229:1,230:2
+@a^258573^228:9,248:1
+@a^258574^228:7,248:1
+@a^258588^208:4,228:2,229:2,248:4,268:1
 @a^258922^289:4
+@a^259046^208:1
 @a^262037^332:1,352:3
 @a^271351^191:1
 @a^272228^310:2
@@ -1936,7 +1966,13 @@ GoldScout-export 7^ul0hic9g07os^34
 @t^4685^1:55
 @t^4705^2:63
 @t^12922^1:0
+@t^256798^3:150
+@t^256952^4:144
+@t^258573^10:253
+@t^258574^8:244
+@t^258588^13:427
 @t^258922^3:50
+@t^259046^1:21
 @t^262037^3:104
 @t^272228^1:39
 @f^1442^0^13^143^4382:1:1,6289:3:3,6359:6:6,6456:2:2,6457:1:1^213:7,214:6
