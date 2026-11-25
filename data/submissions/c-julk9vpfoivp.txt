@@ -1,4 +1,4 @@
-GoldScout-export 7^julk9vpfoivp^10
+GoldScout-export 7^julk9vpfoivp^11
 2269^21^0^26^27^1424^0.3020^0.5576^21^Hillsbrad Miner^422:1:1,1205:1:1,1754:1:1,1761:1:1,2592:2:3,2772:1:2,3692:6:6,4306:5:9^
 2270^3^0^27^28^1424^0.2778^0.5963^3^Hillsbrad Sentry^3692:1:1^
 2271^22^0^31^32^1416^0.1931^0.9007^16^Dalaran Shield Guard^1707:1:1,2592:1:2,3714:7:7,3792:1:1,4306:3:5,213547:1:1^
@@ -79,8 +79,28 @@ GoldScout-export 7^julk9vpfoivp^10
 4832^1^0^0^0^0^0.0000^0.0000^0^^5881:1:1,273846:1:1^
 4887^1^0^0^0^0^0.0000^0.0000^0^^4555:1:1,5524:1:1,6907:1:1^
 6168^1^0^0^0^0^0.0000^0.0000^0^^274155:1:1^
+6206^9^0^0^0^0^0.0000^0.0000^0^^4306:3:6,6594:1:1,9308:3:3,15212:1:1^
+6207^3^0^0^0^0^0.0000^0.0000^0^^4713:1:1,9308:1:1^
+6211^3^0^0^0^0^0.0000^0.0000^0^^1782:1:1,2785:1:1,9308:1:1^
+6212^4^0^0^0^0^0.0000^0.0000^0^^4076:1:1,4306:1:3,4542:1:1,9326:2:2^
+6218^2^0^0^0^0^0.0000^0.0000^0^^3674:1:1^
+6221^2^0^24^25^1415^0.4332^0.5273^2^Addled Leper^248686:1:1^
+6222^4^0^0^0^0^0.0000^0.0000^0^^2592:1:1,4306:1:1,4633:1:1,9308:3:3,248688:1:1^
+6223^2^0^0^0^0^0.0000^0.0000^0^^3041:1:1^
+6224^1^0^0^0^0^0.0000^0.0000^0^^4306:1:1,9308:1:1^
+6225^1^0^0^0^0^0.0000^0.0000^0^^3385:1:1^
+6226^1^0^0^0^0^0.0000^0.0000^0^^^
+6232^3^0^0^0^0^0.0000^0.0000^0^^4377:1:1,4721:1:1,15285:1:1^
+6233^4^0^0^0^0^0.0000^0.0000^0^^3870:1:1,4306:2:6,4377:2:2^
+6234^3^0^0^0^0^0.0000^0.0000^0^^3785:1:1^
+6235^1^0^0^0^0^0.0000^0.0000^0^^6893:1:1,9446:1:1^
 6243^1^0^0^0^0^0.0000^0.0000^0^^730:1:1,1468:1:1,5524:1:1,6906:1:1^
+6329^9^0^0^0^0^0.0000^0.0000^0^^1831:1:1,2592:1:3,3770:1:1,4306:3:8,9308:2:2,9793:1:1,15259:1:1^
+6391^1^0^0^0^0^0.0000^0.0000^0^^4542:1:1^
+7079^1^0^0^0^0^0.0000^0.0000^0^^9452:1:1^
 7404^2^0^30^30^1441^0.4216^0.3172^2^Galak Flame Guard^1205:1:1,4306:1:1^
+7603^10^0^0^0^0^0.0000^0.0000^0^^4306:2:3,211855:1:1^
+7800^1^0^0^0^0^0.0000^0.0000^0^^7436:1:1,9299:1:1,9461:1:1^
 10617^1^0^26^26^1441^0.3867^0.3160^1^Galak Messenger^12564:1:1^
 10757^3^0^27^28^1441^0.3516^0.3447^3^Boiling Elemental^7070:1:1,9451:3:4^
 10758^3^0^25^26^1441^0.3457^0.2986^3^Grimtotem Bandit^4306:1:1^
@@ -141,10 +161,12 @@ GoldScout-export 7^julk9vpfoivp^10
 @i^1757^Reinforced Chain Cloak
 @i^1761^Reinforced Chain Vest
 @i^1776^Brocade Pants
+@i^1782^Cross-stitched Cloak
 @i^1784^Cross-stitched Pants
 @i^1801^Rawhide Shoulderpads
 @i^1803^Tough Leather Belt
 @i^1823^Bludgeoning Cudgel
+@i^1831^Oaken War Staff
 @i^2295^Large Boar Tusk
 @i^2592^Wool Cloth
 @i^2675^Crawler Claw
@@ -153,11 +175,14 @@ GoldScout-export 7^julk9vpfoivp^10
 @i^2785^Stiff Recurve Bow
 @i^2786^Oiled Blunderbuss
 @i^2838^Heavy Stone
+@i^3041^Mage-Eye Blunderbuss
 @i^3172^Boar Intestines
 @i^3182^Spider's Silk
+@i^3385^Lesser Mana Potion
 @i^3402^Soft Patch of Fur
 @i^3403^Ivory Boar Tusk
 @i^3667^Tender Crocolisk Meat
+@i^3674^Decomposed Boot
 @i^3685^Raptor Egg
 @i^3688^Bloodstone Oval
 @i^3689^Bloodstone Marble
@@ -168,17 +193,26 @@ GoldScout-export 7^julk9vpfoivp^10
 @i^3714^Worn Stone Token
 @i^3715^Bracers of Earth Binding
 @i^3730^Big Bear Meat
+@i^3770^Mutton Chop
+@i^3785^Keen Axe
 @i^3792^Interlaced Belt
 @i^3805^Hardened Leather Pants
 @i^3806^Hardened Leather Shoulderpads
 @i^3832^Recipe: Elixir of Detect Lesser Invisibility
+@i^3870^Plans: Green Iron Shoulders
 @i^3931^Poisoned Spider Fang
 @i^4054^Insignia Leggings
+@i^4076^Mail Combat Boots
 @i^4306^Silk Cloth
+@i^4377^Heavy Blasting Powder
 @i^4538^Snapvine Watermelon
+@i^4542^Moist Cornbread
 @i^4553^Jagged Piece of Stone
 @i^4555^Thick Scaly Tail
 @i^4606^Spongy Morel
+@i^4633^Heavy Bronze Lockbox
+@i^4713^Silver-thread Cloak
+@i^4721^Insignia Mantle
 @i^4784^Lifeless Stone
 @i^5117^Vibrant Plume
 @i^5137^Bright Eyeball
@@ -199,19 +233,29 @@ GoldScout-export 7^julk9vpfoivp^10
 @i^5881^Head of Kelris
 @i^6439^Broken Binding Bracer
 @i^6454^Manual: Strong Anti-Venom
+@i^6594^Battleforge Girdle of the Beast
 @i^6682^Death Speaker Robes
 @i^6687^Corpsemaker
 @i^6691^Swinetusk Shank
+@i^6893^Workshop Key
 @i^6902^Bands of Serra'kis
 @i^6906^Algae Fists
 @i^6907^Tortoise Armor
 @i^6911^Moss Cinch
 @i^7070^Elemental Water
+@i^7436^Twilight Cape of Fiery Wrath
 @i^7558^Shimmering Stave of Strength
 @i^8150^Deeprock Salt
 @i^8184^Firestarter
+@i^9299^Thermaplugg's Safe Combination
+@i^9308^Grime-Encrusted Object
+@i^9326^Grime-Encrusted Ring
+@i^9446^Electrocutioner Leg
 @i^9451^Bubbling Water
+@i^9452^Hydrocane
+@i^9461^Charged Gear of the Bandit
 @i^9767^Greenweave Sandals of Intellect
+@i^9793^Ivycloth Bracelets of Spirit
 @i^9797^Ivycloth Pants of the Physician
 @i^11407^Torn Bear Pelt
 @i^12203^Red Wolf Meat
@@ -229,8 +273,10 @@ GoldScout-export 7^julk9vpfoivp^10
 @i^14743^Hulking Bands
 @i^15118^Rigid Tunic of Intellect
 @i^15124^Robust Cloak of the Falcon
-@i^15212^Fighter Broadsword of Defense
+@i^15212^Fighter Broadsword of the Tiger
 @i^15241^Battle Knife of Intellect
+@i^15259^Hefty Battlehammer of the Eagle
+@i^15285^Archer's Longbow
 @i^15329^Wrangler's Belt of the Tiger
 @i^15330^Wrangler's Boots of the Falcon
 @i^15340^Pathfinder Cloak of the Eagle
@@ -241,7 +287,10 @@ GoldScout-export 7^julk9vpfoivp^10
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
 @i^211853^Scroll: VOCE WELL
+@i^211855^Scroll: STHENIC LUNATE
 @i^213547^Scroll: THAW WORDS
+@i^248686^Waylaid Crate: Journeyman Herbs
+@i^248688^Waylaid Crate: Journeyman Textiles
 @i^248693^Waylaid Crate: Expert Textiles
 @i^248705^Waylaid Crate: Journeyman Fabrics
 @i^248706^Waylaid Crate: Journeyman Ingots
@@ -287,10 +336,12 @@ GoldScout-export 7^julk9vpfoivp^10
 @q^1757^0:4:0
 @q^1761^0:4:0
 @q^1776^0:4:0
+@q^1782^0:4:0
 @q^1784^0:4:0
 @q^1801^0:4:0
 @q^1803^0:4:0
 @q^1823^0:2:0
+@q^1831^0:2:0
 @q^2295^0:15:0
 @q^2592^1:7:1
 @q^2675^1:7:1
@@ -299,11 +350,14 @@ GoldScout-export 7^julk9vpfoivp^10
 @q^2785^0:2:0
 @q^2786^0:2:0
 @q^2838^1:7:1
+@q^3041^2:2:0
 @q^3172^1:7:1
 @q^3182^1:7:1
+@q^3385^1:0:0
 @q^3402^0:15:0
 @q^3403^0:15:0
 @q^3667^1:7:1
+@q^3674^0:15:0
 @q^3685^1:7:1
 @q^3688^1:12:0
 @q^3689^1:12:0
@@ -314,17 +368,26 @@ GoldScout-export 7^julk9vpfoivp^10
 @q^3714^1:12:0
 @q^3715^1:12:0
 @q^3730^1:7:1
+@q^3770^1:0:0
+@q^3785^0:2:0
 @q^3792^0:4:0
 @q^3805^0:4:0
 @q^3806^0:4:0
 @q^3832^2:9:0
+@q^3870^2:9:0
 @q^3931^0:15:0
 @q^4054^2:4:0
+@q^4076^2:4:0
 @q^4306^1:7:1
+@q^4377^1:7:1
 @q^4538^1:0:0
+@q^4542^1:0:0
 @q^4553^0:15:0
 @q^4555^0:15:0
 @q^4606^1:0:0
+@q^4633^2:15:0
+@q^4713^2:4:0
+@q^4721^2:4:0
 @q^4784^0:15:0
 @q^5117^1:12:0
 @q^5137^0:15:0
@@ -345,19 +408,29 @@ GoldScout-export 7^julk9vpfoivp^10
 @q^5881^1:12:0
 @q^6439^0:15:0
 @q^6454^2:9:0
+@q^6594^2:4:0
 @q^6682^3:4:0
 @q^6687^3:2:0
 @q^6691^3:2:0
+@q^6893^1:13:0
 @q^6902^3:4:0
 @q^6906^3:4:0
 @q^6907^3:4:0
 @q^6911^3:4:0
 @q^7070^1:7:1
+@q^7436^2:4:0
 @q^7558^2:4:0
 @q^8150^1:7:1
 @q^8184^2:2:0
+@q^9299^1:13:0
+@q^9308^1:12:0
+@q^9326^1:12:0
+@q^9446^3:2:0
 @q^9451^1:0:0
+@q^9452^3:2:0
+@q^9461^3:4:0
 @q^9767^2:4:0
+@q^9793^2:4:0
 @q^9797^2:4:0
 @q^11407^1:12:0
 @q^12203^1:7:1
@@ -377,6 +450,8 @@ GoldScout-export 7^julk9vpfoivp^10
 @q^15124^2:4:0
 @q^15212^2:2:0
 @q^15241^2:2:0
+@q^15259^2:2:0
+@q^15285^2:2:0
 @q^15329^2:4:0
 @q^15330^2:4:0
 @q^15340^2:4:0
@@ -387,7 +462,10 @@ GoldScout-export 7^julk9vpfoivp^10
 @q^17056^1:15:1
 @q^17057^1:15:0
 @q^211853^1:0:0
+@q^211855^1:0:0
 @q^213547^1:0:0
+@q^248686^1:0:1
+@q^248688^1:0:1
 @q^248693^1:0:1
 @q^248705^2:0:1
 @q^248706^2:0:1
@@ -417,6 +495,7 @@ GoldScout-export 7^julk9vpfoivp^10
 @m^1412^Mulgore
 @m^1413^The Barrens
 @m^1414^Kalimdor
+@m^1415^Eastern Kingdoms
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
 @m^1424^Hillsbrad Foothills
@@ -1417,6 +1496,7 @@ GoldScout-export 7^julk9vpfoivp^10
 @a^4499^102:1
 @a^4548^122:1
 @a^4802^148:2
+@a^6221^208:2
 @a^7404^128:2
 @a^10617^127:1
 @a^10757^126:1,127:1,147:1

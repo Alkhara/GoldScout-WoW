@@ -1,4 +1,4 @@
-GoldScout-export 6^sykfzatti3hc^28
+GoldScout-export 7^sykfzatti3hc^29
 667^6^0^39^40^1434^0.4567^0.3993^6^Skullsplitter Warrior^1520:2:2,1524:1:1,1710:1:1,3916:2:2,4306:1:2,8151:1:1,8153:1:2^
 669^8^0^41^42^1434^0.4554^0.4124^8^Skullsplitter Hunter^1520:3:3,1524:2:2,2749:1:1,3916:3:3,4338:3:3,8151:1:1^
 670^7^0^41^42^1434^0.4483^0.4201^7^Skullsplitter Witch Doctor^1520:2:2,1524:3:3,3916:5:5,4338:1:2,8151:1:1^
@@ -132,6 +132,7 @@ GoldScout-export 6^sykfzatti3hc^28
 2686^12^0^44^45^1425^0.3260^0.7142^12^Witherbark Broodguard^1074:2:2,4337:2:2,4585:3:3,9322:2:2,10285:3:3,12205:6:6^
 2691^4^0^43^44^1425^0.3321^0.5218^4^Highvale Outrunner^4338:1:1,248693:1:1^
 2694^1^0^47^47^1425^0.3386^0.5398^1^Highvale Ranger^4338:1:3^
+2729^2^0^39^40^1418^0.1454^0.6346^2^Elder Crag Coyote^4582:1:1^
 2738^1^0^36^37^1417^0.3004^0.5124^1^Stromgarde Cavalryman^^
 2760^25^0^38^39^1417^0.2557^0.3048^25^Burning Exile^3857:3:3,4479:9:9,4787:14:14,7068:5:5^
 2761^1^0^38^39^1417^0.6806^0.3111^1^Cresting Exile^7070:1:1^
@@ -558,6 +559,7 @@ GoldScout-export 6^sykfzatti3hc^28
 @i^4556^Speckled Shell Fragment
 @i^4580^Sabertooth Fang
 @i^4581^Patch of Fine Fur
+@i^4582^Soft Bushy Tail
 @i^4583^Thick Furry Mane
 @i^4584^Large Trophy Paw
 @i^4585^Dripping Spider Mandible
@@ -1037,6 +1039,7 @@ GoldScout-export 6^sykfzatti3hc^28
 @q^4556^0:15:0
 @q^4580^0:15:0
 @q^4581^0:15:0
+@q^4582^1:12:0
 @q^4583^0:15:0
 @q^4584^0:15:0
 @q^4585^0:15:0
@@ -1331,6 +1334,7 @@ GoldScout-export 6^sykfzatti3hc^28
 @m^1415^Eastern Kingdoms
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
+@m^1418^Badlands
 @m^1419^Blasted Lands
 @m^1420^Tirisfal Glades
 @m^1424^Hillsbrad Foothills
@@ -2771,6 +2775,7 @@ GoldScout-export 6^sykfzatti3hc^28
 @a^2686^266:2,267:1,285:1,286:7,287:1
 @a^2691^206:4
 @a^2694^206:1
+@a^2729^242:2
 @a^2738^206:1
 @a^2760^104:5,105:6,124:4,125:10
 @a^2761^133:1
@@ -2911,6 +2916,7 @@ GoldScout-export 6^sykfzatti3hc^28
 @a^263380^190:1
 @a^270094^210:1
 @a^270667^268:1,269:5
+@t^2729^1:30
 @f^1413^0^22^242^6303:5:5,6358:11:11,6361:6:6^152:22
 @f^1417^0^2^203^6308:1:1,8365:1:1^273:2
 @f^1424^0^7^202^21071:6:6,21113:1:1^152:6,172:1

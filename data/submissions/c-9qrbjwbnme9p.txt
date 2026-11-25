@@ -1,4 +1,4 @@
-GoldScout-export 5^9qrbjwbnme9p^19
+GoldScout-export 7^9qrbjwbnme9p^20
 660^1^0^37^37^1434^0.2471^0.0968^1^Sorcier-docteur Bloodscalp^^
 667^2^0^39^40^1434^0.4833^0.3995^2^Guerrier Skullsplitter^4306:1:2,8153:1:1^
 689^1^0^34^34^1434^0.2495^0.1754^1^Basilic de cristal^1701:1:1^
@@ -15,6 +15,8 @@ GoldScout-export 5^9qrbjwbnme9p^19
 943^1^0^34^34^1434^0.4537^0.0952^1^Fracasseur de Kurzen^^
 978^6^0^38^38^1434^0.4914^0.0549^6^Lieutenant de Kurzen^2740:1:1,4306:3:4^
 979^2^0^38^38^1434^0.4914^0.0567^2^Chasseur des ombres de Kurzen^1708:1:1,4338:1:1^
+1022^18^0^25^26^1437^0.3480^0.4895^18^Faucheur tacheté^1697:8:8,3685:5:5,5635:4:4^
+1023^21^0^26^27^1437^0.3417^0.4826^21^Tranchegueule tacheté^1696:2:2,1697:5:5,3685:14:14,5635:1:1^
 1114^3^0^37^38^1434^0.4561^0.3424^3^Foudroyeur de la Jungle^2799:1:1,4096:1:1,4097:1:1,9899:1:1^
 1178^2^0^18^18^1432^0.6943^0.2606^2^Ogre Mo'grosh^6347:1:1^
 1179^3^0^18^19^1432^0.7166^0.2512^3^Massacreur Mo'grosh^1210:1:1^
@@ -121,6 +123,8 @@ GoldScout-export 5^9qrbjwbnme9p^19
 @i^1520^Sueur de troll
 @i^1686^Moustache à poil dur
 @i^1687^Griffe rétractile
+@i^1696^Griffe de raptor
+@i^1697^Dent de raptor
 @i^1701^Griffe de basilic
 @i^1702^Epine dorsale intacte de basilic
 @i^1707^Brie de Hurlevent
@@ -157,6 +161,7 @@ GoldScout-export 5^9qrbjwbnme9p^19
 @i^3356^Sang-royal
 @i^3385^Potion de mana inférieure
 @i^3615^Tête de Kurzen
+@i^3685^Oeuf de raptor
 @i^3703^Bière d'Austrivage
 @i^3712^Viande de tortue
 @i^3716^Tête de murloc
@@ -214,6 +219,7 @@ GoldScout-export 5^9qrbjwbnme9p^19
 @i^5465^Petite patte d'araignée
 @i^5524^Palourde à coque épaisse
 @i^5567^Crochet d'argent
+@i^5635^Griffe aiguisée
 @i^5637^Grand croc
 @i^5785^Ecailles de murloc épaisses
 @i^6308^Poisson-chat moustachu cru
@@ -284,6 +290,8 @@ GoldScout-export 5^9qrbjwbnme9p^19
 @q^1520^0:15:0
 @q^1686^0:15:0
 @q^1687^0:15:0
+@q^1696^0:15:0
+@q^1697^0:15:0
 @q^1701^0:15:0
 @q^1702^0:15:0
 @q^1707^1:0:0
@@ -320,6 +328,7 @@ GoldScout-export 5^9qrbjwbnme9p^19
 @q^3356^1:7:1
 @q^3385^1:0:0
 @q^3615^1:12:0
+@q^3685^1:7:1
 @q^3703^1:0:0
 @q^3712^1:7:1
 @q^3716^1:12:0
@@ -377,6 +386,7 @@ GoldScout-export 5^9qrbjwbnme9p^19
 @q^5465^1:7:1
 @q^5524^1:7:0
 @q^5567^0:15:0
+@q^5635^1:7:1
 @q^5637^1:7:1
 @q^5785^1:7:1
 @q^6308^1:7:1
@@ -441,6 +451,7 @@ GoldScout-export 5^9qrbjwbnme9p^19
 @m^1424^Contreforts de Hautebrande
 @m^1432^Loch Modan
 @m^1434^Vallée de Strangleronce
+@m^1437^Les Paluns
 @m^1440^Orneval
 @m^1443^Désolace
 @m^1453^Hurlevent
@@ -1739,6 +1750,8 @@ GoldScout-export 5^9qrbjwbnme9p^19
 @a^943^29:1
 @a^978^9:2,29:4
 @a^979^29:2
+@a^1022^166:1,167:2,186:3,187:3,206:8,207:1
+@a^1023^186:16,187:5
 @a^1114^128:1,129:1,149:1
 @a^1178^94:1,113:1
 @a^1179^94:1,114:2
@@ -1792,5 +1805,7 @@ GoldScout-export 5^9qrbjwbnme9p^19
 @a^11577^211:1,232:1
 @a^218029^293:1
 @a^253272^106:2
+@t^1022^16:1069
+@t^1023^20:1309
 @f^1424^0^12^140^6358:3:3,6361:9:9^270:11,291:1
 @l^0^frFR

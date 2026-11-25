@@ -1,4 +1,4 @@
-GoldScout-export 6^tbld3cccjqd3^41
+GoldScout-export 6^tbld3cccjqd3^42
 1501^9^0^1^1^1420^0.3193^0.6323^9^Zombie lunatique^1378:1:1,2211:1:1,2589:4:4,2653:1:1,3365:1:1,4604:2:2^
 1502^9^0^1^2^1420^0.3206^0.6278^9^Zombie décharné^2589:3:3,2649:1:1,3365:1:1,4604:2:2^
 1504^11^0^2^3^1420^0.2835^0.5737^11^Jeune Tisse-nuit^1476:4:4,2649:1:1,7100:5:5,7101:3:3^
@@ -40,20 +40,22 @@ GoldScout-export 6^tbld3cccjqd3^41
 1767^6^1^12^13^1421^0.5907^0.1605^6^Vile Fin Shredder^730:2:2,3375:1:1,5523:3:3,6289:1:2^
 1768^2^0^14^14^1421^0.5800^0.1726^2^Chasse-marée Aileron noir^730:1:1,5523:1:1^
 1769^9^0^10^11^1421^0.5237^0.3635^9^Moonrage Whitescalp^1179:2:2,2455:1:1^
-1770^1^0^11^12^1421^0.5281^0.2838^1^Moonrage Darkrunner^^
+1770^2^0^11^12^1421^0.5363^0.2806^2^Moonrage Darkrunner^^
 1772^1^0^11^12^1421^0.4594^0.2033^1^Rot Hide Gladerunner^2589:1:3,4605:1:1^
 1778^4^0^11^12^1421^0.5293^0.4497^4^Ferocious Grizzled Bear^3170:1:1,3173:1:1,3253:1:1,11406:2:2^
-1779^3^0^12^13^1421^0.4339^0.2683^3^Moonrage Glutton^2455:1:1,3156:1:1^
+1779^23^0^12^13^1421^0.4033^0.2655^23^Moonrage Glutton^1179:1:1,1495:1:1,1501:1:1,1513:1:1,2287:1:1,2455:1:1,3156:6:6,3213:1:1^
 1780^16^0^12^13^1421^0.3537^0.1584^16^Moss Stalker^1475:1:1,2965:1:1,3167:5:5,3174:7:7,3254:6:6,4677:1:1,5465:9:14^
-1782^1^0^13^13^1421^0.3989^0.3056^1^Moonrage Darksoul^2287:1:1^
+1782^15^0^13^14^1421^0.3890^0.2716^15^Moonrage Darksoul^858:1:1,1515:2:2,2287:2:2,3157:3:3,4683:1:1,6541:1:1^
 1797^12^0^12^13^1421^0.3929^0.1816^12^Giant Grizzled Bear^2940:1:1,3169:4:4,3170:3:3,3173:2:2,3253:5:5,4566:1:1,9763:1:1^
-1866^1^0^11^12^1421^0.5335^0.1365^1^Ravenclaw Slave^2589:1:2^
+1866^12^0^11^12^1421^0.5276^0.1488^12^Ravenclaw Slave^1498:1:1,2589:4:8^
 1868^2^0^13^13^1421^0.5196^0.3197^2^Ravenclaw Servant^1179:1:1,2589:1:2^
+1869^2^0^14^15^1421^0.5537^0.3303^2^Ravenclaw Champion^^
 1890^12^0^2^3^1420^0.3220^0.6118^12^Squelette Cliquethorax^159:2:2,2210:1:1,2589:3:3,2656:1:1,3363:1:1,4604:2:2,5571:1:1^
 1919^1^0^5^5^1420^0.3664^0.6157^1^Samuel Fipps^1367:1:1,16333:1:1^
 1934^3^0^6^7^1420^0.3775^0.5113^3^Fermier de Tirisfal^2589:1:2,4536:2:3^
 1935^1^0^5^6^1420^0.3616^0.5130^1^Journalier de Tirisfal^159:1:1^
 1941^13^0^6^7^1420^0.5575^0.4125^13^Profanateur Poil-Putride^159:1:1,1422:1:1,2589:4:6,2834:8:8,3013:1:1,4604:1:1^
+1971^1^0^13^13^1421^0.5145^0.1399^1^Ivar the Foul^2589:1:3,3621:1:1^
 1983^1^0^14^14^1421^0.4536^0.2028^1^Nightlash^3622:1:1^
 2242^1^0^36^36^1416^0.6258^0.4524^1^Espion du Syndicat^^
 2252^20^0^34^35^1416^0.4891^0.3987^20^Ogre Cassecrête^1708:2:2,2592:4:6,3771:1:1,3782:1:1,3864:1:1,4306:4:6,4338:1:1^
@@ -255,6 +257,7 @@ GoldScout-export 6^tbld3cccjqd3^41
 @i^770^Croc pointu de crocilisque
 @i^779^Coquillage luisant
 @i^828^Petite bourse bleue
+@i^858^Lesser Healing Potion
 @i^864^Epée longue des chevaliers d'endurance
 @i^878^Petite filière
 @i^929^Potion de soins
@@ -282,8 +285,12 @@ GoldScout-export 6^tbld3cccjqd3^41
 @i^1475^Small Venom Sac
 @i^1476^Patte d'araignée brisée
 @i^1477^Parchemin d'Agilité II
+@i^1495^Calico Shoes
 @i^1497^Cape en calicot
-@i^1501^Tunique en calicot
+@i^1498^Calico Gloves
+@i^1501^Calico Tunic
+@i^1513^Old Greatsword
+@i^1515^Rough Wooden Staff
 @i^1686^Moustache à poil dur
 @i^1688^Longue queue soyeuse
 @i^1696^Griffe de raptor
@@ -346,6 +353,7 @@ GoldScout-export 6^tbld3cccjqd3^41
 @i^3012^Parchemin d'Agilité
 @i^3013^Parchemin de Protection
 @i^3156^Glutton Shackle
+@i^3157^Darksoul Shackle
 @i^3162^Côtes ébréchées
 @i^3163^Crâne noirci
 @i^3164^Discolored Worg Heart
@@ -356,6 +364,7 @@ GoldScout-export 6^tbld3cccjqd3^41
 @i^3173^Bear Meat
 @i^3174^Spider Ichor
 @i^3197^Claymore tranche-pierre de chevalerie
+@i^3213^Veteran Bracers
 @i^3253^Grizzled Bear Heart
 @i^3254^Skittering Blood
 @i^3264^Aile de chauve-souris du crépuscule
@@ -373,6 +382,7 @@ GoldScout-export 6^tbld3cccjqd3^41
 @i^3403^Défense de sanglier en ivoire
 @i^3404^Aile de busard
 @i^3610^Plans : Gantelets ornementés en cuivre
+@i^3621^Ivar's Head
 @i^3622^Essence of Nightlash
 @i^3635^Patte d'Oeil-de-ver
 @i^3669^Bave gélatineuse
@@ -433,6 +443,7 @@ GoldScout-export 6^tbld3cccjqd3^41
 @i^4636^Solide coffret en fer
 @i^4662^Cape de compagnon
 @i^4677^Veteran Cloak
+@i^4683^Spellbinder Cloak
 @i^4725^Espauliers de général de brigade
 @i^4731^Epaulettes glyphées
 @i^4865^Peau détruite
@@ -473,6 +484,7 @@ GoldScout-export 6^tbld3cccjqd3^41
 @i^6438^Bracelet élémentaire terne
 @i^6444^Langue fourchue
 @i^6520^Cape de pionnier
+@i^6541^Willow Gloves of the Sorcerer
 @i^6826^Ecaille brillante
 @i^7073^Croc brisé
 @i^7074^Griffes émoussées
@@ -607,6 +619,7 @@ GoldScout-export 6^tbld3cccjqd3^41
 @q^770^0:15:0
 @q^779^0:15:0
 @q^828^1:1:0
+@q^858^1:0:0
 @q^864^2:2:0
 @q^878^0:7:0
 @q^929^1:0:0
@@ -634,8 +647,12 @@ GoldScout-export 6^tbld3cccjqd3^41
 @q^1475^1:7:1
 @q^1476^0:15:0
 @q^1477^1:0:0
+@q^1495^0:4:0
 @q^1497^0:4:0
+@q^1498^0:4:0
 @q^1501^0:4:0
+@q^1513^0:2:0
+@q^1515^0:2:0
 @q^1686^0:15:0
 @q^1688^0:15:0
 @q^1696^0:15:0
@@ -698,6 +715,7 @@ GoldScout-export 6^tbld3cccjqd3^41
 @q^3012^1:0:0
 @q^3013^1:0:0
 @q^3156^1:12:0
+@q^3157^1:12:0
 @q^3162^1:12:0
 @q^3163^1:12:0
 @q^3164^1:12:0
@@ -708,6 +726,7 @@ GoldScout-export 6^tbld3cccjqd3^41
 @q^3173^1:7:1
 @q^3174^1:7:1
 @q^3197^2:2:0
+@q^3213^1:4:0
 @q^3253^1:12:0
 @q^3254^1:12:0
 @q^3264^1:12:0
@@ -725,6 +744,7 @@ GoldScout-export 6^tbld3cccjqd3^41
 @q^3403^0:15:0
 @q^3404^1:7:1
 @q^3610^2:9:0
+@q^3621^1:12:0
 @q^3622^1:12:0
 @q^3635^1:12:0
 @q^3669^0:15:0
@@ -785,6 +805,7 @@ GoldScout-export 6^tbld3cccjqd3^41
 @q^4636^2:15:0
 @q^4662^1:4:0
 @q^4677^1:4:0
+@q^4683^1:4:0
 @q^4725^2:4:0
 @q^4731^2:4:0
 @q^4865^0:15:0
@@ -825,6 +846,7 @@ GoldScout-export 6^tbld3cccjqd3^41
 @q^6438^0:15:0
 @q^6444^0:15:0
 @q^6520^1:4:0
+@q^6541^2:4:0
 @q^6826^0:15:0
 @q^7073^0:15:0
 @q^7074^0:15:0
@@ -2036,20 +2058,22 @@ GoldScout-export 6^tbld3cccjqd3^41
 @a^1767^52:1,71:5
 @a^1768^71:2
 @a^1769^90:2,110:1,149:1,150:1,170:3,190:1
-@a^1770^110:1
+@a^1770^110:2
 @a^1772^89:1
 @a^1778^150:1,190:3
-@a^1779^90:1,107:1,128:1
+@a^1779^87:1,88:6,90:1,107:12,108:2,128:1
 @a^1780^47:2,66:5,67:9
-@a^1782^127:1
+@a^1782^87:4,107:8,108:1,127:2
 @a^1797^67:7,68:3,88:2
-@a^1866^50:1
+@a^1866^50:7,70:5
 @a^1868^130:2
+@a^1869^131:2
 @a^1890^226:1,246:11
 @a^1919^247:1
 @a^1934^207:3
 @a^1935^207:1
 @a^1941^151:3,171:10
+@a^1971^50:1
 @a^1983^89:1
 @a^2242^192:1
 @a^2252^108:1,128:2,129:1,149:4,150:3,169:3,170:4,190:1,249:1

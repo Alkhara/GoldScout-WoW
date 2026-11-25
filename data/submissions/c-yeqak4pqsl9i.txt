@@ -1,4 +1,4 @@
-GoldScout-export 7^yeqak4pqsl9i^36
+GoldScout-export 7^yeqak4pqsl9i^37
 92^32^0^39^40^1418^0.4225^0.8047^32^Elémentaire de roche^4041:1:1,4552:1:1,4553:17:17,4784:21:21,7067:4:4,7848:5:5,7912:6:8,8150:7:7,248710:1:1^
 94^1^0^5^6^1429^0.3662^0.5362^1^Vide-gousset défias^^
 116^1^0^9^9^1429^0.5206^0.5945^1^Bandit défias^^
@@ -152,7 +152,10 @@ GoldScout-export 7^yeqak4pqsl9i^36
 5053^3^0^0^0^0^0.0000^0.0000^0^^2924:2:2,3181:3:7,3401:3:7,6470:1:1,6471:1:1^
 5055^2^0^0^0^0^0.0000^0.0000^0^^4604:1:1,4605:1:1^
 5056^2^0^0^0^0^0.0000^0.0000^0^^6443:1:1,6444:1:1^
-5286^1^0^40^41^1444^0.2915^0.4676^1^Messager Longues-dents^12203:1:1,12208:1:1^
+5286^12^0^40^41^1444^0.2867^0.4722^12^Messager Longues-dents^4583:4:4,4584:2:2,12203:7:7,12208:6:6^
+5331^12^0^42^43^1444^0.2875^0.5426^12^Guerrier Hainecrête^7973:4:4,9247:5:5,17058:3:3^
+5332^4^0^41^42^1444^0.2912^0.5492^4^Chevaucheur des vagues Hainecrête^7973:1:1,9247:2:2,17058:1:1^
+5335^11^0^41^42^1444^0.2869^0.5393^11^Hurleuse Hainecrête^4603:1:3,7973:7:7,9247:2:2,17058:5:5^
 5361^1^0^48^48^1444^0.4040^0.3894^1^Marcheur des vagues^4338:1:1^
 5422^1^0^40^41^1446^0.4977^0.2671^1^Scorpide chasseur^19936:1:1^
 5615^1^0^43^44^1446^0.5938^0.3780^1^Voleuse Bat-le-désert^^
@@ -540,6 +543,7 @@ GoldScout-export 7^yeqak4pqsl9i^36
 @i^4568^Hache de grunt de force
 @i^4582^Queue fournie soyeuse
 @i^4583^Epaisse crinière
+@i^4584^Grande patte trophée
 @i^4585^Mandibule d'araignée visqueuse
 @i^4589^Longue plume élégante
 @i^4599^Jambonneau traité
@@ -634,6 +638,7 @@ GoldScout-export 7^yeqak4pqsl9i^36
 @i^7847^Gésier de busard
 @i^7848^Fragment d'élémentaire de roche
 @i^7912^Pierre solide
+@i^7973^Palourde à large bouche
 @i^8009^Pierre de puissance Dentrium
 @i^8052^Pierre de puissance An'Alleum
 @i^8120^Cape héraldique
@@ -643,6 +648,7 @@ GoldScout-export 7^yeqak4pqsl9i^36
 @i^8153^Sauvageonne
 @i^8750^Casque en cuir épais
 @i^8751^Camail en anneaux doubliers
+@i^9247^Ecaille de naga Hainecrête
 @i^9259^Collier tribal troll
 @i^9298^Recette : Elixir des géants
 @i^9355^Boucle d'oreille
@@ -979,6 +985,7 @@ GoldScout-export 7^yeqak4pqsl9i^36
 @q^4568^2:2:0
 @q^4582^1:12:0
 @q^4583^0:15:0
+@q^4584^0:15:0
 @q^4585^0:15:0
 @q^4589^1:7:1
 @q^4599^1:0:0
@@ -1073,6 +1080,7 @@ GoldScout-export 7^yeqak4pqsl9i^36
 @q^7847^1:12:0
 @q^7848^1:12:0
 @q^7912^1:7:1
+@q^7973^1:7:0
 @q^8009^1:12:0
 @q^8052^1:12:0
 @q^8120^2:4:0
@@ -1082,6 +1090,7 @@ GoldScout-export 7^yeqak4pqsl9i^36
 @q^8153^1:7:1
 @q^8750^0:4:0
 @q^8751^0:4:0
+@q^9247^1:12:0
 @q^9259^1:15:0
 @q^9298^2:9:0
 @q^9355^0:15:0
@@ -2099,7 +2108,10 @@ GoldScout-export 7^yeqak4pqsl9i^36
 @a^4851^67:5,86:3
 @a^4856^47:1,67:1,86:2,87:1
 @a^4872^67:1
-@a^5286^185:1
+@a^5286^185:12
+@a^5331^205:6,225:5,226:1
+@a^5332^205:2,226:2
+@a^5335^205:8,225:2,226:1
 @a^5361^148:1
 @a^5422^109:1
 @a^5615^151:1
@@ -2209,6 +2221,10 @@ GoldScout-export 7^yeqak4pqsl9i^36
 @a^272389^146:1,165:2
 @a^276401^209:1
 @a^277882^34:2
+@t^5286^8:573
+@t^5331^12:640
+@t^5332^4:248
+@t^5335^11:489
 @f^1434^0^5^163^4603:3:3,6358:1:1,6362:1:1^85:1,104:4
 @f^2548^0^2^164^21228:2:2^295:2
 @l^0^frFR

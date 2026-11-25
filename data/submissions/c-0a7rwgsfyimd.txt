@@ -1,4 +1,4 @@
-GoldScout-export 6^0a7rwgsfyimd^18
+GoldScout-export 7^0a7rwgsfyimd^19
 334^1^0^26^26^1433^0.6427^0.5576^1^Gath'Ilzogg^3633:1:1^
 429^9^0^25^26^1433^0.7581^0.5341^9^Shadowhide Darkweaver^1075:3:3,2589:2:3,2592:1:2^
 430^1^0^18^19^1433^0.2249^0.2179^1^Redridge Mystic^1212:1:1^
@@ -52,6 +52,9 @@ GoldScout-export 6^0a7rwgsfyimd^18
 1417^1^0^21^22^1437^0.0716^0.6555^1^Young Wetlands Crocolisk^770:1:1^
 1755^1^0^30^30^1453^0.7260^0.3513^1^Marzon the Silent Blade^2592:1:2^
 1756^2^0^60^60^1453^0.7955^0.3895^2^Stormwind Royal Guard^^
+1985^2^0^2^3^1438^0.6004^0.3554^2^Thistle Boar^117:1:1,1366:1:1,7098:1:1^
+2022^16^0^5^6^1438^0.6043^0.7056^16^Timberling^159:1:1,1372:2:2,1380:1:1,2447:1:1,5168:8:8^
+2032^6^0^2^2^1438^0.5978^0.3547^6^Mangy Nightsaber^1376:1:1,1377:1:1,4865:2:2,7073:3:3,7074:1:1^
 2089^6^0^25^26^1437^0.1696^0.2770^6^Giant Wetlands Crocolisk^770:1:1,3348:6:6,3667:2:2^
 2091^1^0^32^32^1437^0.5286^0.5470^1^Chieftain Nek'rosh^3625:1:1^
 2348^1^0^26^27^1424^0.5979^0.5553^1^Elder Moss Creeper^878:1:1,1288:1:1,2251:1:1,262888:1:1^
@@ -70,6 +73,7 @@ GoldScout-export 6^0a7rwgsfyimd^18
 2586^6^0^30^31^1417^0.3261^0.2958^6^Syndicate Highwayman^4306:2:3,5113:2:2,6986:1:1^
 2587^3^0^32^33^1417^0.3214^0.2755^3^Syndicate Pathstalker^2592:1:3^
 2589^4^0^31^32^1417^0.3192^0.2746^4^Syndicate Mercenary^1707:1:1,1710:1:1,4306:2:2,255723:1:1^
+3569^3^0^5^5^1438^0.6083^0.6847^3^Bogling^5206:3:3^
 4062^1^0^30^30^1417^0.4903^0.8888^1^Dark Iron Bombardier^^
 4065^4^0^21^22^1433^0.6206^0.5712^4^Blackrock Sentry^1751:1:1,6564:1:1^
 4462^1^0^23^24^1433^0.6314^0.5585^1^Blackrock Hunter^^
@@ -174,6 +178,8 @@ GoldScout-export 6^0a7rwgsfyimd^18
 272273^1^0^24^24^1431^0.7592^0.2275^1^Lost Watcher^275895:1:1,281142:1:1^
 275045^1^0^0^0^0^0.0000^0.0000^0^^4306:1:3^
 275046^1^0^0^0^0^0.0000^0.0000^0^^1756:1:1^
+@i^117^Tough Jerky
+@i^159^Refreshing Spring Water
 @i^422^Dwarven Mild
 @i^730^Murloc Eye
 @i^769^Chunk of Boar Meat
@@ -196,6 +202,11 @@ GoldScout-export 6^0a7rwgsfyimd^18
 @i^1260^Tharil'zun's Head
 @i^1261^Midnight Orb
 @i^1288^Large Venom Sac
+@i^1366^Ragged Leather Pants
+@i^1372^Ragged Cloak
+@i^1376^Frayed Cloak
+@i^1377^Frayed Gloves
+@i^1380^Frayed Robe
 @i^1464^Buzzard Talon
 @i^1468^Murloc Fin
 @i^1495^Calico Shoes
@@ -241,6 +252,7 @@ GoldScout-export 6^0a7rwgsfyimd^18
 @i^2073^Dwarven Hatchet of the Eagle
 @i^2215^Wooden Shield
 @i^2251^Gooey Spider Leg
+@i^2447^Peacebloom
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2611^Crude Flint
@@ -297,8 +309,11 @@ GoldScout-export 6^0a7rwgsfyimd^18
 @i^4701^Inscribed Cloak
 @i^4705^Lambent Scale Pauldrons
 @i^4707^Lambent Scale Girdle
+@i^4865^Ruined Pelt
 @i^5108^Dark Iron Leather
 @i^5113^Mark of the Syndicate
+@i^5168^Timberling Seed
+@i^5206^Bogling Root
 @i^5465^Small Spider Leg
 @i^5524^Thick-shelled Clam
 @i^5635^Sharp Claw
@@ -324,6 +339,9 @@ GoldScout-export 6^0a7rwgsfyimd^18
 @i^6600^Dervish Belt of the Eagle
 @i^6611^Sage's Sash of Intellect
 @i^6986^Crimson Lotus
+@i^7073^Broken Fang
+@i^7074^Chipped Claw
+@i^7098^Splintered Tusk
 @i^7191^Fused Wiring
 @i^7355^Elder's Bracers of Spirit
 @i^7367^Elder's Mantle of Intellect
@@ -411,6 +429,8 @@ GoldScout-export 6^0a7rwgsfyimd^18
 @i^284845^Thicket Raptor Hide
 @i^286980^Rotmender's Sash
 @i^286989^Violet Sorcerer's Wraps
+@q^117^1:0:0
+@q^159^1:0:0
 @q^422^1:0:0
 @q^730^1:7:1
 @q^769^1:7:1
@@ -433,6 +453,11 @@ GoldScout-export 6^0a7rwgsfyimd^18
 @q^1260^1:12:0
 @q^1261^1:12:0
 @q^1288^1:7:1
+@q^1366^0:4:0
+@q^1372^0:4:0
+@q^1376^0:4:0
+@q^1377^0:4:0
+@q^1380^0:4:0
 @q^1464^0:15:0
 @q^1468^1:7:1
 @q^1495^0:4:0
@@ -478,6 +503,7 @@ GoldScout-export 6^0a7rwgsfyimd^18
 @q^2073^2:2:0
 @q^2215^0:4:0
 @q^2251^1:7:1
+@q^2447^1:7:1
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2611^1:12:0
@@ -534,8 +560,11 @@ GoldScout-export 6^0a7rwgsfyimd^18
 @q^4701^2:4:0
 @q^4705^2:4:0
 @q^4707^2:4:0
+@q^4865^0:15:0
 @q^5108^1:4:0
 @q^5113^0:15:0
+@q^5168^1:12:0
+@q^5206^1:0:0
 @q^5465^1:7:1
 @q^5524^1:7:0
 @q^5635^1:7:1
@@ -561,6 +590,9 @@ GoldScout-export 6^0a7rwgsfyimd^18
 @q^6600^2:4:0
 @q^6611^2:4:0
 @q^6986^0:15:0
+@q^7073^0:15:0
+@q^7074^0:15:0
+@q^7098^0:15:0
 @q^7191^1:7:1
 @q^7355^2:4:0
 @q^7367^2:4:0
@@ -658,6 +690,7 @@ GoldScout-export 6^0a7rwgsfyimd^18
 @m^1433^Redridge Mountains
 @m^1436^Westfall
 @m^1437^Wetlands
+@m^1438^Teldrassil
 @m^1439^Darkshore
 @m^1453^Stormwind City
 @c^724^
@@ -1137,6 +1170,9 @@ GoldScout-export 6^0a7rwgsfyimd^18
 @a^1417^261:1
 @a^1755^154:1
 @a^1756^155:2
+@a^1985^151:1,152:1
+@a^2022^272:1,291:2,292:13
+@a^2032^131:1,151:4,152:1
 @a^2089^83:1,103:5
 @a^2091^210:1
 @a^2348^231:1
@@ -1155,6 +1191,7 @@ GoldScout-export 6^0a7rwgsfyimd^18
 @a^2586^106:3,107:1,126:2
 @a^2587^106:3
 @a^2589^106:4
+@a^3569^272:3
 @a^4062^349:1
 @a^4065^212:1,232:3
 @a^4462^232:1
@@ -1178,6 +1215,10 @@ GoldScout-export 6^0a7rwgsfyimd^18
 @a^271351^173:1,193:3
 @a^271460^70:1
 @a^272273^95:1
+@t^1985^1:29
+@t^2022^16:398
+@t^2032^5:137
+@t^3569^2:46
 @f^1421^0^17^111^6289:8:8,6291:3:3,6297:1:1,6299:3:3,6308:2:2^173:17
 @f^1424^0^22^85^6289:2:2,6308:5:5,21071:13:13,21113:2:2^172:12,191:4,231:6
 @f^1432^0^36^35^6289:19:19,6291:3:3,6308:3:3,6317:11:11^68:11,148:25
