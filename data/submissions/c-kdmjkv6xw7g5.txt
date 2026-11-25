@@ -1,4 +1,4 @@
-GoldScout-export 7^kdmjkv6xw7g5^20
+GoldScout-export 7^kdmjkv6xw7g5^21
 3^1^0^25^25^1431^0.2588^0.3378^1^Flesh Eater^884:1:1^
 118^8^0^9^10^1429^0.7661^0.6502^8^Prowler^2672:8:8,2960:1:1,3299:2:2,3300:1:1^
 157^4^0^14^15^1436^0.5658^0.5277^4^Goretusk^723:1:1,731:2:2,769:4:7,2677:1:1,3172:1:1,6557:1:1^
@@ -212,6 +212,7 @@ GoldScout-export 7^kdmjkv6xw7g5^20
 @i^4540^Tough Hunk of Bread
 @i^4553^Jagged Piece of Stone
 @i^4563^Billy Club
+@i^4603^Raw Spotted Yellowtail
 @i^4606^Spongy Morel
 @i^4633^Heavy Bronze Lockbox
 @i^4709^Forest Leather Mantle
@@ -230,9 +231,11 @@ GoldScout-export 7^kdmjkv6xw7g5^20
 @i^6294^12 Pound Mud Snapper
 @i^6308^Raw Bristle Whisker Catfish
 @i^6354^Small Locked Chest
+@i^6355^Sturdy Locked Chest
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
 @i^6361^Raw Rainbow Fin Albacore
+@i^6362^Raw Rockscale Cod
 @i^6382^Forest Leather Belt
 @i^6530^Nightcrawlers
 @i^6557^Bard's Boots of Agility
@@ -376,6 +379,7 @@ GoldScout-export 7^kdmjkv6xw7g5^20
 @q^4540^1:0:0
 @q^4553^0:15:0
 @q^4563^1:2:0
+@q^4603^1:7:1
 @q^4606^1:0:0
 @q^4633^2:15:0
 @q^4709^2:4:0
@@ -394,9 +398,11 @@ GoldScout-export 7^kdmjkv6xw7g5^20
 @q^6294^1:15:0
 @q^6308^1:7:1
 @q^6354^1:15:0
+@q^6355^1:15:0
 @q^6358^1:7:1
 @q^6359^1:7:1
 @q^6361^1:7:1
+@q^6362^1:7:1
 @q^6382^2:4:0
 @q^6530^1:0:0
 @q^6557^2:4:0
@@ -435,6 +441,7 @@ GoldScout-export 7^kdmjkv6xw7g5^20
 @m^1433^Redridge Mountains
 @m^1436^Westfall
 @m^1437^Wetlands
+@m^1445^Dustwallow Marsh
 @m^1453^Stormwind City
 @c^118^
 @c^724^
@@ -1349,5 +1356,6 @@ GoldScout-export 7^kdmjkv6xw7g5^20
 @a^277645^122:1
 @t^1027^1:53
 @f^1429^0^76^1^118:1:1,6289:32:32,6291:41:41,6292:1:1,6294:1:1^246:76
-@f^1437^0^48^75^6354:1:1,6358:13:13,6359:10:10,6361:22:22,21113:2:2^46:2,221:42,241:4
+@f^1437^0^108^75^6354:1:1,6358:29:29,6359:16:16,6361:60:60,21113:2:2^46:2,221:42,241:64
+@f^1445^0^40^130^4603:3:3,6355:2:2,6358:5:5,6359:7:7,6362:23:23^193:40
 @l^0^enUS

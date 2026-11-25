@@ -1,4 +1,4 @@
-GoldScout-export 6^sy9oojr66j7q^37
+GoldScout-export 6^sy9oojr66j7q^38
 1057^3^0^27^28^1437^0.4911^0.4846^3^Dragonmaw Bonewarder^2592:1:1,6930:3:3^
 4099^1^0^26^27^1441^0.4343^0.3322^1^Galak Marauder^929:1:1^
 5259^2^0^0^0^0^0.0000^0.0000^0^^16216:1:1^
@@ -22,6 +22,11 @@ GoldScout-export 6^sy9oojr66j7q^37
 6412^3^0^24^25^1437^0.4918^0.4874^3^Skeleton^^
 8318^2^0^0^0^0^0.0000^0.0000^0^^4338:1:1^
 8319^4^0^0^0^0^0.0000^0.0000^0^^3928:1:1^
+8899^1^0^0^0^0^0.0000^0.0000^0^^11078:1:1,14047:1:3^
+8904^6^0^0^0^0^0.0000^0.0000^0^^8766:1:1,18945:1:5^
+8911^1^0^0^0^0^0.0000^0.0000^0^^4787:1:1,18945:1:2^
+8915^4^0^0^0^0^0.0000^0.0000^0^^8952:1:1,14047:1:2,18945:1:8^
+9019^1^0^0^0^0^0.0000^0.0000^0^^11933:1:1,22207:1:1^
 9045^2^0^0^0^0^0.0000^0.0000^0^^274964:1:1^
 9096^4^0^0^0^0^0.0000^0.0000^0^^7909:1:1^
 9097^6^0^0^0^0^0.0000^0.0000^0^^10122:1:1,10167:1:1,14047:1:3^
@@ -56,6 +61,7 @@ GoldScout-export 6^sy9oojr66j7q^37
 9817^3^0^0^0^0^0.0000^0.0000^0^^13821:1:1,16703:1:1^
 9818^1^0^0^0^0^0.0000^0.0000^0^^^
 9819^2^0^0^0^0^0.0000^0.0000^0^^14047:1:3^
+9938^1^0^0^0^0^0.0000^0.0000^0^^11746:1:1,277129:1:1^
 10083^1^0^0^0^0^0.0000^0.0000^0^^^
 10220^2^0^0^0^0^0.0000^0.0000^0^^4583:1:1,12203:1:1,12208:1:1^
 10221^1^0^0^0^0^0.0000^0.0000^0^^12203:1:1,12208:1:1^
@@ -140,6 +146,7 @@ GoldScout-export 6^sy9oojr66j7q^37
 @i^4599^Cured Ham Steak
 @i^4603^Raw Spotted Yellowtail
 @i^4784^Lifeless Stone
+@i^4787^Burning Pitch
 @i^5133^Seeping Gizzard
 @i^5569^Seaweed
 @i^6149^Greater Mana Potion
@@ -173,7 +180,10 @@ GoldScout-export 6^sy9oojr66j7q^37
 @i^10807^Kilt of the Atal'ai Prophet
 @i^10828^Dire Nail of the Tiger
 @i^10836^Rod of Corrosion
+@i^11078^Relic Coffer Key
 @i^11419^Mysterious Unhatched Egg
+@i^11746^Golem Skull Helm
+@i^11933^Imperial Jewel
 @i^12037^Mystery Meat
 @i^12184^Raptor Flesh
 @i^12203^Red Wolf Meat
@@ -259,11 +269,13 @@ GoldScout-export 6^sy9oojr66j7q^37
 @i^18104^Feralsurge Girdle
 @i^18657^Schematic: Hyper-Radiant Flame Reflector
 @i^18784^Top Half of Advanced Armorsmithing: Volume III
+@i^18945^Dark Iron Residue
 @i^19934^Large Scorpid Claw
 @i^20015^Elder Raptor Feathers
 @i^20606^Amber Voodoo Feather
 @i^20607^Blue Voodoo Feather
 @i^20608^Green Voodoo Feather
+@i^22207^Sash of the Grand Hunt
 @i^22225^Dragonskin Cowl of Fire Resistance
 @i^22232^Marksman's Girdle
 @i^22267^Spellweaver's Turban
@@ -295,6 +307,7 @@ GoldScout-export 6^sy9oojr66j7q^37
 @i^273128^Maker's Spark
 @i^274964^Mote of Unstable Magic
 @i^276235^Seeping Slime Essence
+@i^277129^Fragment of the Firelands
 @i^280011^Deeproar Cord
 @i^280012^Talon of Tor'Rel
 @i^280016^Spiderchitin Wrap
@@ -339,6 +352,7 @@ GoldScout-export 6^sy9oojr66j7q^37
 @q^4599^1:0:0
 @q^4603^1:7:1
 @q^4784^0:15:0
+@q^4787^0:15:0
 @q^5133^0:15:0
 @q^5569^0:15:0
 @q^6149^1:0:0
@@ -372,7 +386,10 @@ GoldScout-export 6^sy9oojr66j7q^37
 @q^10807^3:4:0
 @q^10828^3:2:0
 @q^10836^3:2:0
+@q^11078^1:13:0
 @q^11419^0:15:0
+@q^11746^3:4:0
+@q^11933^3:4:0
 @q^12037^1:7:1
 @q^12184^1:7:1
 @q^12203^1:7:1
@@ -458,11 +475,13 @@ GoldScout-export 6^sy9oojr66j7q^37
 @q^18104^3:4:0
 @q^18657^2:9:0
 @q^18784^3:12:0
+@q^18945^1:12:0
 @q^19934^0:15:0
 @q^20015^0:15:0
 @q^20606^1:15:0
 @q^20607^1:15:0
 @q^20608^1:15:0
+@q^22207^3:4:0
 @q^22225^3:4:0
 @q^22232^3:4:0
 @q^22267^3:4:0
@@ -494,6 +513,7 @@ GoldScout-export 6^sy9oojr66j7q^37
 @q^273128^2:15:1
 @q^274964^1:15:0
 @q^276235^1:12:0
+@q^277129^1:12:0
 @q^280011^3:4:0
 @q^280012^3:2:0
 @q^280016^3:4:0

@@ -1,4 +1,4 @@
-GoldScout-export 6^aouzn0e8e6ua^39
+GoldScout-export 7^aouzn0e8e6ua^40
 126^7^0^12^13^1436^0.4576^0.0883^7^Murloc Coastrunner^730:4:4,1499:1:1,1732:1:1,6289:1:2,254548:2:2^
 456^12^0^13^14^1436^0.4305^0.1037^12^Murloc Minor Oracle^730:6:6,1498:1:1,2777:1:1,5523:4:4,254548:3:3^
 513^4^0^14^15^1436^0.3819^0.1495^4^Murloc Netter^1512:1:1,254548:2:2^
@@ -176,6 +176,7 @@ GoldScout-export 6^aouzn0e8e6ua^39
 5763^2^0^0^0^0^0.0000^0.0000^0^^3669:1:1,3670:1:1,3674:2:2,3676:1:1^
 5775^1^0^0^0^0^0.0000^0.0000^0^^6630:1:1^
 5831^1^0^21^21^1413^0.6051^0.3403^1^Swiftmane^5119:1:1,285330:1:1^
+5862^1^0^50^50^1427^0.2108^0.7962^1^Twilight Geomancer^4338:1:4^
 5985^1^0^49^49^1419^0.5856^0.3951^1^Snickerfang Hyena^4583:1:1,12203:1:1^
 5991^3^0^51^52^1419^0.4805^0.5251^3^Redstone Crystalhide^11387:3:3^
 5993^5^0^52^53^1419^0.4791^0.5220^5^Helboar^3403:3:3,8392:4:4^
@@ -271,6 +272,7 @@ GoldScout-export 6^aouzn0e8e6ua^39
 8960^6^0^49^50^1448^0.4488^0.6972^6^Felpaw Scavenger^12203:2:2,12208:2:2,277959:2:2^
 9454^1^0^54^54^1448^0.3248^0.6711^1^Xavathras^14256:1:2^
 9464^1^0^51^51^1448^0.4834^0.9361^1^Overlord Ror^^
+9695^1^0^55^55^1428^0.6200^0.5411^1^Deathlash Scorpid^12037:1:1,19933:1:1^
 9879^1^0^54^54^1448^0.4011^0.4346^1^Entropic Horror^4787:1:1^
 10082^1^0^0^0^0^0.0000^0.0000^0^^12470:1:1^
 10648^1^0^55^55^1448^0.3939^0.2108^1^Xavaric^11668:1:1^
@@ -424,8 +426,10 @@ GoldScout-export 6^aouzn0e8e6ua^39
 263749^1^0^44^44^2548^0.6776^0.1920^1^Gronok the Butcher^272190:1:1^
 264773^1^0^0^0^0^0.0000^0.0000^0^^286429:1:1^
 268423^1^0^0^0^0^0.0000^0.0000^0^^^
+269254^1^0^45^45^1427^0.5695^0.8279^1^Famished Blackworg^7532:1:1,8146:1:1,12203:1:1,12208:1:1^
 271784^1^0^0^0^0^0.0000^0.0000^0^^^
 272228^1^0^36^37^2548^0.5465^0.7712^1^Harvest Sentry^4306:1:3^
+276078^4^0^47^48^1427^0.2110^0.7960^4^Twilight Laborer^4306:3:7^
 276401^1^0^43^43^2652^0.3804^0.5316^1^Nascent Pylon Protector^260351:1:1^
 @i^117^Tough Jerky
 @i^118^Minor Healing Potion
@@ -673,6 +677,7 @@ GoldScout-export 6^aouzn0e8e6ua^39
 @i^7479^Ranger Helm of Arcane Protection
 @i^7494^Captain's Waistguard of the Wolf
 @i^7495^Captain's Buckler of the Physician
+@i^7532^Cabalist Spaulders of the Bandit
 @i^7541^Champion's Gauntlets of the Bandit
 @i^7666^Shattered Necklace
 @i^7670^Shattered Necklace Sapphire
@@ -897,6 +902,7 @@ GoldScout-export 6^aouzn0e8e6ua^39
 @i^17764^Gem of the Fourth Khan
 @i^17765^Gem of the Fifth Khan
 @i^17943^Fist of Stone
+@i^19933^Glowing Scorpid Blood
 @i^19936^Dried Scorpid Carapace
 @i^19938^Heavy Scorpid Leg
 @i^20519^Southsea Pirate Hat
@@ -1270,6 +1276,7 @@ GoldScout-export 6^aouzn0e8e6ua^39
 @q^7479^2:4:0
 @q^7494^2:4:0
 @q^7495^2:4:0
+@q^7532^2:4:0
 @q^7541^2:4:0
 @q^7666^2:12:0
 @q^7670^1:12:0
@@ -1494,6 +1501,7 @@ GoldScout-export 6^aouzn0e8e6ua^39
 @q^17764^1:12:0
 @q^17765^1:12:0
 @q^17943^3:2:0
+@q^19933^1:15:0
 @q^19936^0:15:0
 @q^19938^0:15:0
 @q^20519^1:12:0
@@ -1629,6 +1637,8 @@ GoldScout-export 6^aouzn0e8e6ua^39
 @m^1419^Blasted Lands
 @m^1425^The Hinterlands
 @m^1426^Dun Morogh
+@m^1427^Searing Gorge
+@m^1428^Burning Steppes
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
 @m^1436^Westfall
@@ -3584,6 +3594,7 @@ GoldScout-export 6^aouzn0e8e6ua^39
 @a^5617^132:1,151:1,152:7,153:1
 @a^5618^132:5,133:2
 @a^5831^132:1
+@a^5862^304:1
 @a^5985^151:1
 @a^5991^209:2,230:1
 @a^5993^209:4,230:1
@@ -3628,6 +3639,7 @@ GoldScout-export 6^aouzn0e8e6ua^39
 @a^8960^268:5,289:1
 @a^9454^266:1
 @a^9464^369:1
+@a^9695^212:1
 @a^9879^168:1
 @a^10648^87:1
 @a^11218^328:1
@@ -3715,8 +3727,12 @@ GoldScout-export 6^aouzn0e8e6ua^39
 @a^263380^191:1
 @a^263615^111:1
 @a^263749^73:1
+@a^269254^331:1
 @a^272228^310:1
+@a^276078^304:4
 @a^276401^207:1
+@t^5862^1:26
+@t^276078^3:11
 @f^1437^0^8^199^6358:1:1,6361:7:7^240:8
 @f^1439^0^10^197^6303:2:2,6358:1:1,6361:2:2,12238:5:5^166:10
 @l^0^enUS
