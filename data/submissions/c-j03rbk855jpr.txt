@@ -1,4 +1,4 @@
-GoldScout-export 6^j03rbk855jpr^33
+GoldScout-export 7^j03rbk855jpr^34
 38^15^0^3^4^1429^0.5316^0.4835^15^Nervi défias^159:3:3,752:12:12,1372:1:1,1376:1:1,2070:5:5,2211:1:1,2589:3:3,2652:1:1,2654:1:1,2656:1:1^
 40^24^0^6^7^1429^0.5004^0.6734^24^Mineur kobold^159:1:1,772:4:4,773:5:5,1181:1:1,1417:1:1,1431:1:1,2589:3:4,2635:1:1,4536:2:2,248001:3:3^
 46^1^0^10^10^1429^0.8059^0.5349^1^Fourrageur murloc^780:1:1^
@@ -110,8 +110,10 @@ GoldScout-export 6^j03rbk855jpr^33
 2165^1^0^17^17^1439^0.4116^0.8255^1^Vieil ours des chardons^3170:1:1,3173:1:1^
 2240^6^0^32^33^1416^0.5296^0.7421^6^Détrousseuse du Syndicat^4306:3:4,5113:1:1^
 2241^3^0^33^34^1416^0.5409^0.7240^3^Larronnesse du Syndicat^3798:1:1,3801:1:1,5113:1:1^
-2248^12^0^30^31^1424^0.4330^0.3111^12^Yéti des grottes^1754:1:1,3720:4:4,5637:1:1^
-2249^14^0^31^32^1424^0.4331^0.3028^14^Yéti féroce^3720:6:6,3808:1:1^
+2248^20^0^30^31^1424^0.4310^0.3114^20^Yéti des grottes^1708:1:1,1754:1:1,3720:4:4,3780:1:1,5637:1:1^
+2249^22^0^31^32^1424^0.4343^0.3021^22^Yéti féroce^3385:1:1,3720:6:6,3771:1:1,3808:1:1^
+2252^3^0^34^35^1416^0.4921^0.5555^3^Ogre Cassecrête^1708:1:1,2843:1:1,4306:1:1^
+2253^3^0^35^36^1416^0.4886^0.5586^3^Brute Cassecrête^2843:1:1,3658:1:1^
 2319^1^0^35^35^1416^0.5782^0.6687^1^Sorcière du Syndicat^1707:1:1^
 2338^4^0^16^17^1439^0.3912^0.8721^4^Disciple du crépuscule^1738:1:1,2592:1:2,248702:1:1^
 2339^1^0^18^18^1439^0.3926^0.8597^1^Nervi du crépuscule^^
@@ -325,6 +327,7 @@ GoldScout-export 6^j03rbk855jpr^33
 @i^1697^Dent de raptor
 @i^1705^Pierre de lune inférieure
 @i^1707^Brie de Hurlevent
+@i^1708^Nectar sucré
 @i^1712^Parchemin d'Esprit II
 @i^1738^Ceinture en mailles entrelacées
 @i^1742^Gants en mailles entrelacées
@@ -407,6 +410,7 @@ GoldScout-export 6^j03rbk855jpr^33
 @i^2794^Un vieux livre d'histoire
 @i^2835^Pierre brute
 @i^2836^Pierre grossière
+@i^2843^Articulation sale
 @i^2856^Clou en fer
 @i^2939^Larme de crocilisque
 @i^2966^Pantalon de guerrier
@@ -452,6 +456,7 @@ GoldScout-export 6^j03rbk855jpr^33
 @i^3632^Patte de Fangore
 @i^3633^Tête de Gath'Ilzogg
 @i^3639^Oreille de Balgaras
+@i^3658^Tome retrouvé
 @i^3667^Viande de crocilisque tendre
 @i^3669^Bave gélatineuse
 @i^3670^Grand os visqueux
@@ -462,6 +467,8 @@ GoldScout-export 6^j03rbk855jpr^33
 @i^3720^Fourrure de yéti
 @i^3731^Viande de lion
 @i^3770^Côtelette de mouton
+@i^3771^Jarret de cochon sauvage
+@i^3780^Mousquet à canon long
 @i^3781^Claymore large
 @i^3798^Protège-épaules entrelacées
 @i^3801^Bottes en cuir durci
@@ -725,6 +732,7 @@ GoldScout-export 6^j03rbk855jpr^33
 @q^1697^0:15:0
 @q^1705^2:7:1
 @q^1707^1:0:0
+@q^1708^1:0:0
 @q^1712^1:0:0
 @q^1738^0:4:0
 @q^1742^0:4:0
@@ -807,6 +815,7 @@ GoldScout-export 6^j03rbk855jpr^33
 @q^2794^1:12:0
 @q^2835^1:7:1
 @q^2836^1:7:1
+@q^2843^1:12:0
 @q^2856^1:12:0
 @q^2939^1:12:0
 @q^2966^2:4:0
@@ -852,6 +861,7 @@ GoldScout-export 6^j03rbk855jpr^33
 @q^3632^1:12:0
 @q^3633^1:12:0
 @q^3639^1:12:0
+@q^3658^1:12:0
 @q^3667^1:7:1
 @q^3669^0:15:0
 @q^3670^0:15:0
@@ -862,6 +872,8 @@ GoldScout-export 6^j03rbk855jpr^33
 @q^3720^1:12:0
 @q^3731^1:7:1
 @q^3770^1:0:0
+@q^3771^1:0:0
+@q^3780^0:2:0
 @q^3781^0:2:0
 @q^3798^0:4:0
 @q^3801^0:4:0
@@ -3010,8 +3022,10 @@ GoldScout-export 6^j03rbk855jpr^33
 @a^2165^328:1
 @a^2240^271:3,329:3
 @a^2241^271:2,329:1
-@a^2248^108:1,128:9,129:2
-@a^2249^108:4,128:10
+@a^2248^108:3,128:15,129:2
+@a^2249^108:8,109:1,128:13
+@a^2252^189:1,249:1,250:1
+@a^2253^189:1,249:2
 @a^2319^271:1
 @a^2338^347:4
 @a^2339^347:1
@@ -3083,4 +3097,6 @@ GoldScout-export 6^j03rbk855jpr^33
 @a^271460^70:1
 @a^271698^274:1
 @a^272291^135:1
+@t^2248^2:137
+@t^2249^1:1
 @l^0^frFR
