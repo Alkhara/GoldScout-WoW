@@ -1,4 +1,4 @@
-GoldScout-export 6^fvxpmchaz0r7^77
+GoldScout-export 6^fvxpmchaz0r7^78
 92^14^0^39^40^1418^0.1426^0.3497^14^Rock Elemental^4552:1:1,4553:6:6,4627:3:3,4784:5:5,7067:2:2,7912:1:2,8150:2:2^
 587^1^0^34^34^1434^0.3337^0.1368^1^Bloodscalp Warrior^3771:1:1^
 588^30^0^34^35^1434^0.2568^0.1178^30^Bloodscalp Scout^1519:8:8,2290:1:1,2592:2:6,2742:1:1,2749:1:1,3037:1:1,3771:1:1,3785:1:1,3798:1:1,3901:3:3,3915:7:7,4306:4:6,248693:1:1^
@@ -513,6 +513,9 @@ GoldScout-export 6^fvxpmchaz0r7^77
 7156^6^0^53^54^1448^0.6209^0.0957^6^Deadwood Den Watcher^4425:1:1,8766:2:2,13443:1:1,14047:1:2,20741:1:1,21377:2:2,248695:1:1^
 7157^7^0^54^55^1448^0.6172^0.0850^7^Deadwood Avenger^14047:2:2,21377:3:3^
 7158^6^0^53^54^1448^0.6234^0.0870^6^Deadwood Shaman^4426:1:1,8766:1:1,14047:1:2,21377:1:1^
+7443^1^0^55^55^1452^0.5954^0.3278^1^Shardtooth Mauler^11408:1:1^
+7451^4^0^54^55^1452^0.5882^0.3449^4^Raging Owlbeast^11420:1:1,12207:1:1,13443:1:1,15420:2:4^
+7458^2^0^56^56^1452^0.5845^0.3366^2^Ice Thistle Yeti^12366:1:1^
 7584^5^0^44^46^1444^0.5443^0.6169^5^Wandering Forest Walker^3819:1:1,3928:1:1,4608:1:1,9590:2:2,9592:3:3^
 7725^10^0^42^43^1444^0.6742^0.4538^10^Grimtotem Raider^4306:2:4,4338:2:3,4601:2:2,9460:5:7,213546:1:1^
 7726^13^0^41^42^1444^0.6735^0.4524^13^Grimtotem Naturalist^3986:1:1,4306:2:3,4338:6:11,9460:4:6^
@@ -1083,6 +1086,7 @@ GoldScout-export 6^fvxpmchaz0r7^77
 @i^11416^Delicate Ribcage
 @i^11417^Feathery Wing
 @i^11418^Hollow Wing Bone
+@i^11420^Elegant Writing Tool
 @i^11474^Sprite Darter Egg
 @i^11477^White Ravasaur Claw
 @i^11478^Un'Goro Gorilla Pelt
@@ -1109,6 +1113,7 @@ GoldScout-export 6^fvxpmchaz0r7^77
 @i^12208^Tender Wolf Meat
 @i^12230^Felwood Slime Sample
 @i^12235^Un'Goro Slime Sample
+@i^12366^Thick Yeti Fur
 @i^12564^Assassination Note
 @i^12662^Demonic Rune
 @i^12738^Dalson Outhouse Key
@@ -1143,6 +1148,7 @@ GoldScout-export 6^fvxpmchaz0r7^77
 @i^15380^Rageclaw Bracers of Shadow Protection
 @i^15381^Rageclaw Chestguard of Stamina
 @i^15392^Jadefire Cloak of the Beast
+@i^15420^Ironfeather
 @i^15605^Ancient Gauntlets of Spirit
 @i^15626^Gryphon Mail Greaves of the Bandit
 @i^15891^Hulking Shield
@@ -1707,6 +1713,7 @@ GoldScout-export 6^fvxpmchaz0r7^77
 @q^11416^0:15:0
 @q^11417^0:15:0
 @q^11418^0:15:0
+@q^11420^0:15:0
 @q^11474^1:15:0
 @q^11477^1:12:0
 @q^11478^1:12:0
@@ -1733,6 +1740,7 @@ GoldScout-export 6^fvxpmchaz0r7^77
 @q^12208^1:7:1
 @q^12230^1:12:0
 @q^12235^1:12:0
+@q^12366^1:12:0
 @q^12564^1:12:0
 @q^12662^2:7:1
 @q^12738^1:12:0
@@ -1767,6 +1775,7 @@ GoldScout-export 6^fvxpmchaz0r7^77
 @q^15380^2:4:0
 @q^15381^2:4:0
 @q^15392^2:4:0
+@q^15420^1:7:1
 @q^15605^2:4:0
 @q^15626^2:4:0
 @q^15891^2:4:0
@@ -1922,6 +1931,7 @@ GoldScout-export 6^fvxpmchaz0r7^77
 @m^1447^Azshara
 @m^1448^Felwood
 @m^1449^Un'Goro Crater
+@m^1452^Winterspring
 @m^2521^Zephras Isle
 @m^2548^Riverglades
 @c^2300^
@@ -2926,6 +2936,9 @@ GoldScout-export 6^fvxpmchaz0r7^77
 @a^7156^32:3,52:3
 @a^7157^32:6,52:1
 @a^7158^32:5,52:1
+@a^7443^131:1
+@a^7451^131:3,151:1
+@a^7458^131:2
 @a^7584^190:2,270:2,291:1
 @a^7725^153:2,193:8
 @a^7726^153:3,193:10

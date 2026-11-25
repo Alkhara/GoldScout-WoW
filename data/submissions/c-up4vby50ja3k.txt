@@ -1,4 +1,4 @@
-GoldScout-export 6^up4vby50ja3k^11
+GoldScout-export 6^up4vby50ja3k^12
 92^8^0^39^40^1418^0.2298^0.5060^8^Rock Elemental^4552:1:1,4553:4:4,4627:3:3,4784:3:3,7912:2:3,8150:3:3^
 587^5^0^33^34^1434^0.2930^0.2002^5^Bloodscalp Warrior^2725:1:1,4306:3:5^
 595^1^0^35^35^1434^0.2292^0.1213^1^Bloodscalp Hunter^3804:1:1^
@@ -37,7 +37,10 @@ GoldScout-export 6^up4vby50ja3k^11
 1062^1^0^40^40^1434^0.2398^0.1031^1^Nezzliok the Dire^3905:1:1^
 1151^2^0^35^36^1434^0.3115^0.2704^2^Saltwater Crocolisk^770:1:1,3667:2:2^
 1492^1^0^47^47^1434^0.3530^0.7203^1^Gorlash^3932:1:1^
-1557^5^0^40^41^1434^0.3325^0.6500^5^Elder Mistvale Gorilla^2799:1:1,3919:4:4,4096:4:4,5637:1:1,9878:1:1^
+1511^2^0^41^42^1434^0.3532^0.6028^2^Enraged Silverback Gorilla^2799:1:1^
+1514^1^0^44^44^1434^0.3506^0.6085^1^Mokk the Savage^2797:1:1^
+1516^1^0^43^43^1434^0.3537^0.6029^1^Konda^^
+1557^23^0^40^41^1434^0.3321^0.6464^23^Elder Mistvale Gorilla^2799:9:9,3862:1:1,3919:6:6,4096:15:15,4097:4:4,5637:2:2,9878:1:1^
 1562^1^0^41^41^1434^0.3316^0.7420^1^Bloodsail Mage^2749:1:1,3910:1:1^
 1563^10^0^42^43^1434^0.3172^0.8545^10^Bloodsail Swashbuckler^2728:1:1,2734:1:1,3910:3:3,4047:1:1,4306:1:1,4338:3:6,7533:1:1,9260:1:1^
 1564^10^0^42^43^1434^0.3030^0.8238^10^Bloodsail Warlock^2735:1:1,2740:1:1,3897:1:1,3910:3:3,3927:1:1,4338:4:7,7489:1:1,9260:1:1,217161:1:1^
@@ -223,6 +226,7 @@ GoldScout-export 6^up4vby50ja3k^11
 @i^2748^Green Hills of Stranglethorn - Page 24
 @i^2749^Green Hills of Stranglethorn - Page 25
 @i^2750^Green Hills of Stranglethorn - Page 26
+@i^2797^Heart of Mokk
 @i^2799^Gorilla Fang
 @i^3010^Fine Sand
 @i^3385^Lesser Mana Potion
@@ -247,6 +251,7 @@ GoldScout-export 6^up4vby50ja3k^11
 @i^3813^Double Mail Pants
 @i^3814^Double Mail Shoulderpads
 @i^3817^Reinforced Buckler
+@i^3862^Aged Gorilla Sinew
 @i^3863^Jungle Stalker Feather
 @i^3876^Fang of Bhag'thera
 @i^3877^Talon of Tethis
@@ -276,6 +281,7 @@ GoldScout-export 6^up4vby50ja3k^11
 @i^4060^Glyphed Leggings
 @i^4079^Chief Brigadier Leggings
 @i^4096^Coarse Gorilla Hair
+@i^4097^Chipped Gorilla Tooth
 @i^4105^Elder Crocolisk Skin
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
@@ -484,6 +490,7 @@ GoldScout-export 6^up4vby50ja3k^11
 @q^2748^1:12:0
 @q^2749^1:12:0
 @q^2750^1:12:0
+@q^2797^1:12:0
 @q^2799^1:12:0
 @q^3010^0:15:0
 @q^3385^1:0:0
@@ -508,6 +515,7 @@ GoldScout-export 6^up4vby50ja3k^11
 @q^3813^0:4:0
 @q^3814^0:4:0
 @q^3817^0:4:0
+@q^3862^1:12:0
 @q^3863^1:12:0
 @q^3876^1:12:0
 @q^3877^1:12:0
@@ -537,6 +545,7 @@ GoldScout-export 6^up4vby50ja3k^11
 @q^4060^2:4:0
 @q^4079^2:4:0
 @q^4096^1:15:0
+@q^4097^0:15:0
 @q^4105^1:12:0
 @q^4306^1:7:1
 @q^4338^1:7:1
@@ -1509,7 +1518,10 @@ GoldScout-export 6^up4vby50ja3k^11
 @a^1062^44:1
 @a^1151^85:1,126:1
 @a^1492^287:1
-@a^1557^246:2,266:3
+@a^1511^247:2
+@a^1514^247:1
+@a^1516^247:1
+@a^1557^226:2,246:8,266:13
 @a^1562^286:1
 @a^1563^325:3,345:1,346:6
 @a^1564^306:1,325:7,346:2

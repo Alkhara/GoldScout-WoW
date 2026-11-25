@@ -1,4 +1,4 @@
-GoldScout-export 6^lrqg90totyno^26
+GoldScout-export 6^lrqg90totyno^27
 678^5^0^43^44^1434^0.5129^0.2757^5^Mosh'Ogg Mauler^2728:1:1,2749:1:1,4005:1:1,4338:1:1,7909:1:1^
 679^2^0^43^44^1434^0.5159^0.2761^2^Mosh'Ogg Shaman^^
 680^2^0^45^45^1434^0.5239^0.2731^2^Mosh'Ogg Lord^4338:1:1,4599:1:1^
@@ -123,12 +123,13 @@ GoldScout-export 6^lrqg90totyno^26
 260425^2^0^37^37^1434^0.2995^0.7105^2^Venture Co. Mercenary^^
 260429^1^0^39^39^1434^0.4350^0.2031^1^Venture Co. Agent^2589:1:2,268810:1:1^
 261316^1^0^0^0^0^0.0000^0.0000^0^^270230:1:1^
-263389^3^0^0^0^0^0.0000^0.0000^0^^1497:1:1,2215:1:1,2589:2:7^
-263390^2^0^0^0^0^0.0000^0.0000^0^^1515:1:1,2589:1:2^
+261319^1^0^0^0^0^0.0000^0.0000^0^^270261:1:1,274286:1:1^
+263389^5^0^0^0^0^0.0000^0.0000^0^^1497:1:1,1510:1:1,2215:1:1,2589:2:7,5071:1:1^
+263390^5^0^0^0^0^0.0000^0.0000^0^^1210:1:1,1515:1:1,2589:1:2,248703:1:1^
 263396^5^0^0^0^0^0.0000^0.0000^0^^1504:1:1,2589:1:1,275893:2:2^
 263397^3^0^0^0^0^0.0000^0.0000^0^^1179:1:1,2589:2:2,2983:1:1,3651:1:1,248683:1:1^
-263438^1^0^0^0^0^0.0000^0.0000^0^^774:1:1,9757:1:1^
-263466^1^0^0^0^0^0.0000^0.0000^0^^6540:1:1^
+263438^2^0^0^0^0^0.0000^0.0000^0^^774:1:1,9757:1:1,248704:1:1^
+263466^2^0^0^0^0^0.0000^0.0000^0^^5741:1:1,6540:1:1^
 263470^3^0^0^0^0^0.0000^0.0000^0^^1511:2:2,1734:1:1,2672:1:1,3300:1:1^
 269075^1^0^6^6^1426^0.2755^0.6353^1^Snow Leopard Prowler^4813:1:1^
 270693^1^0^15^15^1432^0.6080^0.4180^1^Daggerfang^279591:1:1^
@@ -173,6 +174,7 @@ GoldScout-export 6^lrqg90totyno^26
 @i^1504^Warped Leather Bracers
 @i^1505^Warped Cloak
 @i^1506^Warped Leather Gloves
+@i^1510^Heavy Hammer
 @i^1511^Commoner's Sword
 @i^1513^Old Greatsword
 @i^1515^Rough Wooden Staff
@@ -310,12 +312,14 @@ GoldScout-export 6^lrqg90totyno^26
 @i^4813^Small Leather Collar
 @i^4814^Discolored Fang
 @i^4865^Ruined Pelt
+@i^5071^Shadow Wand
 @i^5109^Stonesplinter Rags
 @i^5116^Long Tail Feather
 @i^5446^Broken Elemental Bracer
 @i^5465^Small Spider Leg
 @i^5635^Sharp Claw
 @i^5637^Large Fang
+@i^5741^Rock Chip
 @i^6420^Glyphed Boots
 @i^6506^Infantry Boots
 @i^6512^Disciple's Robe of the Whale
@@ -364,6 +368,8 @@ GoldScout-export 6^lrqg90totyno^26
 @i^248683^Waylaid Crate: Apprentice Ore
 @i^248691^Waylaid Crate: Flowering Expert Herbs
 @i^248692^Waylaid Crate: Expert Ore
+@i^248703^Waylaid Crate: Apprentice Ingots
+@i^248704^Waylaid Crate: Apprentice Parts
 @i^248710^Waylaid Crate: Expert Parts
 @i^251395^Plans: Shining Mithril Helm
 @i^255726^Manual: Leather Tourniquet
@@ -372,7 +378,9 @@ GoldScout-export 6^lrqg90totyno^26
 @i^268548^Empty Powder Keg
 @i^268810^Ruzzgot's Shipment
 @i^270230^Kindlegem Girdle
+@i^270261^Robes of the Disgraced Thane
 @i^274268^Dark Iron Map
+@i^274286^Durgen Dirgehammer's Head
 @i^275893^Searing Gourd
 @i^278402^Unstudied Artifact
 @i^279591^Marek's Croc-Hunting Knife
@@ -414,6 +422,7 @@ GoldScout-export 6^lrqg90totyno^26
 @q^1504^0:4:0
 @q^1505^0:4:0
 @q^1506^0:4:0
+@q^1510^0:2:0
 @q^1511^0:2:0
 @q^1513^0:2:0
 @q^1515^0:2:0
@@ -551,12 +560,14 @@ GoldScout-export 6^lrqg90totyno^26
 @q^4813^0:15:0
 @q^4814^0:15:0
 @q^4865^0:15:0
+@q^5071^2:2:0
 @q^5109^1:4:0
 @q^5116^1:7:1
 @q^5446^0:15:0
 @q^5465^1:7:1
 @q^5635^1:7:1
 @q^5637^1:7:1
+@q^5741^0:15:0
 @q^6420^2:4:0
 @q^6506^1:4:0
 @q^6512^2:4:0
@@ -605,6 +616,8 @@ GoldScout-export 6^lrqg90totyno^26
 @q^248683^1:0:1
 @q^248691^1:0:1
 @q^248692^1:0:1
+@q^248703^2:0:1
+@q^248704^2:0:1
 @q^248710^2:0:1
 @q^251395^3:9:0
 @q^255726^2:9:0
@@ -613,7 +626,9 @@ GoldScout-export 6^lrqg90totyno^26
 @q^268548^1:12:0
 @q^268810^1:12:0
 @q^270230^3:4:0
+@q^270261^3:4:0
 @q^274268^1:12:0
+@q^274286^1:12:0
 @q^275893^1:15:0
 @q^278402^1:12:0
 @q^279591^1:12:0

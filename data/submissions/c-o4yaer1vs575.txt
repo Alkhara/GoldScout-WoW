@@ -1,4 +1,4 @@
-GoldScout-export 7^o4yaer1vs575^42
+GoldScout-export 7^o4yaer1vs575^43
 3^10^0^24^25^1431^0.2289^0.3653^10^Flesh Eater^887:1:1,929:1:1,1129:5:5,2589:1:1,2592:2:3,3048:1:1,4606:1:1,5529:1:1,6530:1:1^
 6^10^0^1^2^1429^0.4765^0.3642^10^Kobold Vermin^159:1:1,755:1:1,1372:1:1,1378:1:1,2589:3:3,4536:1:1,247834:1:1,247839:3:3^
 30^1^0^5^6^1429^0.3808^0.7561^1^Forest Spider^1476:1:1,2590:1:1^
@@ -49,6 +49,10 @@ GoldScout-export 7^o4yaer1vs575^42
 565^8^0^20^21^1431^0.2943^0.2625^8^Rabid Dire Wolf^1015:2:2,3301:1:1,3402:3:3^
 569^6^0^21^22^1431^0.5781^0.2179^6^Green Recluse^878:2:2,1081:2:2,1130:2:2,3174:2:2,3182:1:1,4428:2:2^
 604^2^0^27^28^1431^0.2219^0.3493^2^Plague Spreader^1129:1:1,4606:1:1,6530:1:1^
+681^9^0^30^31^1434^0.3624^0.1207^9^Young Stranglethorn Tiger^1686:1:1,1687:2:2,12202:4:4,248686:1:1^
+683^9^0^30^31^1434^0.4187^0.0995^9^Young Panther^1686:2:2,1687:1:1^
+688^4^0^31^32^1434^0.3517^0.0701^4^Stone Maw Basilisk^1701:1:1,1702:1:1,3918:1:1^
+689^10^0^34^35^1434^0.4846^0.0917^10^Crystal Spine Basilisk^1701:1:1,1702:3:3,1703:1:1,3918:5:5,4057:1:1,4093:1:1,5637:1:1^
 704^1^0^2^2^1426^0.2951^0.7452^1^Ragged Timber Wolf^750:1:1,4865:1:1^
 705^16^0^1^1^1426^0.2905^0.7418^16^Ragged Young Wolf^750:15:15,1369:1:1,1376:1:1,1377:1:1,2654:1:1,3365:1:1,4865:7:7,7073:8:8,7074:6:6^
 706^29^0^3^4^1426^0.2536^0.7871^29^Frostmane Troll Whelp^117:1:1,1364:1:1,1368:1:1,1370:2:2,1374:1:1,2210:1:1,2589:5:5,2650:1:1,2651:1:1,264356:2:2^
@@ -68,9 +72,15 @@ GoldScout-export 7^o4yaer1vs575^42
 909^2^0^25^26^1431^0.5017^0.7684^2^Defias Night Blade^^
 920^3^0^30^31^1431^0.7365^0.7715^3^Nightbane Tainted One^3770:1:1^
 930^11^0^24^25^1431^0.3689^0.4188^11^Black Widow Hatchling^1081:3:3,1288:2:2,2251:3:3,3174:5:5,3182:1:1,4428:3:3^
+937^21^0^32^33^1434^0.4472^0.1031^21^Kurzen Jungle Fighter^2592:1:3,2730:1:1,2751:1:1,4306:8:12,251388:1:1^
+938^2^0^34^35^1434^0.4480^0.0813^2^Kurzen Commando^4306:1:1^
+940^16^0^32^33^1434^0.4546^0.1042^16^Kurzen Medicine Man^2592:2:6,2633:6:6,2738:1:1,2742:1:1,2749:1:1,3357:2:2,3818:2:2,3827:1:1,4306:7:12^
+942^1^0^36^37^1434^0.4801^0.0760^1^Kurzen Witch Doctor^2633:1:1^
 948^9^0^25^26^1431^0.2295^0.3649^9^Rotted One^887:2:2,1129:2:2,2592:2:3,4606:1:1,5529:1:1,6530:2:2,7307:1:1^
 949^2^0^25^26^1431^0.2032^0.4333^2^Carrion Recluse^1288:1:1,2251:1:1,3174:1:1,4428:1:1^
+978^2^0^38^38^1434^0.4927^0.0676^2^Kurzen Subchief^1477:1:1,216616:1:1^
 1110^13^0^27^28^1431^0.1661^0.3668^13^Skeletal Raider^1205:1:1,4306:4:7^
+1150^5^0^30^31^1434^0.3426^0.0913^5^River Crocolisk^770:1:1,3667:2:2,4053:2:2^
 1161^3^0^11^12^1432^0.2696^0.4842^3^Stonesplinter Trogg^1509:1:1,2536:3:3^
 1162^3^0^11^12^1432^0.2576^0.4854^3^Stonesplinter Scout^2536:2:2,2589:2:3^
 1163^12^0^13^14^1432^0.4945^0.2432^12^Stonesplinter Skullthumper^858:1:1,1180:1:1,2265:1:1,2589:3:5,2700:1:1,9751:1:1^
@@ -298,6 +308,7 @@ GoldScout-export 7^o4yaer1vs575^42
 @i^755^Melted Candle
 @i^767^Long Bo Staff
 @i^769^Chunk of Boar Meat
+@i^770^Pointy Crocolisk Tooth
 @i^771^Chipped Boar Tusk
 @i^772^Large Candle
 @i^773^Gold Dust
@@ -364,8 +375,10 @@ GoldScout-export 7^o4yaer1vs575^42
 @i^1509^Warped Leather Vest
 @i^1598^Rot Blossom
 @i^1686^Bristly Whisker
+@i^1687^Retractable Claw
 @i^1701^Curved Basilisk Claw
 @i^1702^Intact Basilisk Spine
+@i^1703^Crystal Basilisk Spine
 @i^1705^Lesser Moonstone
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
@@ -404,6 +417,7 @@ GoldScout-export 7^o4yaer1vs575^42
 @i^2589^Linen Cloth
 @i^2590^Forest Spider Webbing
 @i^2592^Wool Cloth
+@i^2633^Jungle Remedy
 @i^2635^Loose Chain Belt
 @i^2642^Loose Chain Boots
 @i^2643^Loose Chain Bracers
@@ -418,6 +432,11 @@ GoldScout-export 7^o4yaer1vs575^42
 @i^2672^Stringy Wolf Meat
 @i^2677^Boar Ribs
 @i^2700^Recipe: Succulent Pork Ribs
+@i^2730^Green Hills of Stranglethorn - Page 6
+@i^2738^Green Hills of Stranglethorn - Page 14
+@i^2742^Green Hills of Stranglethorn - Page 18
+@i^2749^Green Hills of Stranglethorn - Page 25
+@i^2751^Green Hills of Stranglethorn - Page 27
 @i^2766^Deft Stiletto
 @i^2770^Copper Ore
 @i^2773^Cracked Shortbow
@@ -450,6 +469,7 @@ GoldScout-export 7^o4yaer1vs575^42
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
 @i^3301^Sharp Canine
+@i^3357^Liferoot
 @i^3363^Frayed Belt
 @i^3365^Frayed Bracers
 @i^3373^Patchwork Bracers
@@ -463,6 +483,7 @@ GoldScout-export 7^o4yaer1vs575^42
 @i^3641^Journeyman's Bracers
 @i^3651^Veteran Shield
 @i^3658^Recovered Tome
+@i^3667^Tender Crocolisk Meat
 @i^3672^Head of Nagaz
 @i^3674^Decomposed Boot
 @i^3676^Slimy Ichor
@@ -480,8 +501,12 @@ GoldScout-export 7^o4yaer1vs575^42
 @i^3801^Hardened Leather Boots
 @i^3802^Hardened Leather Bracers
 @i^3817^Reinforced Buckler
+@i^3818^Fadeleaf
 @i^3827^Mana Potion
 @i^3857^Coal
+@i^3918^Singing Crystal Shard
+@i^4053^Large River Crocolisk Skin
+@i^4057^Insignia Chestguard
 @i^4077^Mail Combat Headguard
 @i^4093^Large Basilisk Tail
 @i^4306^Silk Cloth
@@ -603,6 +628,7 @@ GoldScout-export 7^o4yaer1vs575^42
 @i^11406^Rotting Bear Carcass
 @i^11416^Delicate Ribcage
 @i^12037^Mystery Meat
+@i^12202^Tiger Meat
 @i^12220^Intact Elemental Bracer
 @i^14559^Prospector's Sash
 @i^14583^Dokebi Gloves
@@ -628,6 +654,7 @@ GoldScout-export 7^o4yaer1vs575^42
 @i^213421^Singed Note
 @i^213544^Scroll: TOPAZ YORAK
 @i^216483^Witherbark Mallet
+@i^216616^Compound Cage Key
 @i^247826^Croaky's Head
 @i^247834^Nibbled-On Book
 @i^247839^Stolen Book
@@ -636,6 +663,7 @@ GoldScout-export 7^o4yaer1vs575^42
 @i^247886^Sack of Picture Books
 @i^248001^Lost Book
 @i^248002^Picture Book: Fun with Elementals
+@i^248686^Waylaid Crate: Journeyman Herbs
 @i^248687^Waylaid Crate: Journeyman Ore
 @i^248688^Waylaid Crate: Journeyman Textiles
 @i^248690^Waylaid Crate: Earthly Expert Herbs
@@ -643,6 +671,7 @@ GoldScout-export 7^o4yaer1vs575^42
 @i^249880^Recipe: Royal Tea
 @i^250366^Recipe: Minor Cleric's Elixir
 @i^250370^Recipe: Elixir of Fortitude
+@i^251388^Plans: Hard Gold Leggings
 @i^254432^Carved Centaur Totem
 @i^255727^Manual: Superior Poultice
 @i^260347^Tattered Journal
@@ -667,6 +696,7 @@ GoldScout-export 7^o4yaer1vs575^42
 @q^755^0:15:0
 @q^767^1:2:0
 @q^769^1:7:1
+@q^770^0:15:0
 @q^771^0:15:0
 @q^772^1:12:0
 @q^773^1:12:0
@@ -733,8 +763,10 @@ GoldScout-export 7^o4yaer1vs575^42
 @q^1509^0:4:0
 @q^1598^1:12:0
 @q^1686^0:15:0
+@q^1687^0:15:0
 @q^1701^0:15:0
 @q^1702^0:15:0
+@q^1703^1:0:0
 @q^1705^2:7:1
 @q^1707^1:0:0
 @q^1708^1:0:0
@@ -773,6 +805,7 @@ GoldScout-export 7^o4yaer1vs575^42
 @q^2589^1:7:1
 @q^2590^0:15:0
 @q^2592^1:7:1
+@q^2633^1:0:0
 @q^2635^0:4:0
 @q^2642^0:4:0
 @q^2643^0:4:0
@@ -787,6 +820,11 @@ GoldScout-export 7^o4yaer1vs575^42
 @q^2672^1:7:1
 @q^2677^1:7:1
 @q^2700^1:9:0
+@q^2730^1:12:0
+@q^2738^1:12:0
+@q^2742^1:12:0
+@q^2749^1:12:0
+@q^2751^1:12:0
 @q^2766^0:2:0
 @q^2770^1:7:1
 @q^2773^0:2:0
@@ -819,6 +857,7 @@ GoldScout-export 7^o4yaer1vs575^42
 @q^3299^0:15:0
 @q^3300^0:15:0
 @q^3301^0:15:0
+@q^3357^1:7:1
 @q^3363^0:4:0
 @q^3365^0:4:0
 @q^3373^0:4:0
@@ -832,6 +871,7 @@ GoldScout-export 7^o4yaer1vs575^42
 @q^3641^1:4:0
 @q^3651^2:4:0
 @q^3658^1:12:0
+@q^3667^1:7:1
 @q^3672^1:12:0
 @q^3674^0:15:0
 @q^3676^0:15:0
@@ -849,8 +889,12 @@ GoldScout-export 7^o4yaer1vs575^42
 @q^3801^0:4:0
 @q^3802^0:4:0
 @q^3817^0:4:0
+@q^3818^1:7:1
 @q^3827^1:0:0
 @q^3857^1:7:1
+@q^3918^1:12:0
+@q^4053^1:12:0
+@q^4057^2:4:0
 @q^4077^2:4:0
 @q^4093^0:15:0
 @q^4306^1:7:1
@@ -972,6 +1016,7 @@ GoldScout-export 7^o4yaer1vs575^42
 @q^11406^0:15:0
 @q^11416^0:15:0
 @q^12037^1:7:1
+@q^12202^1:7:1
 @q^12220^1:12:0
 @q^14559^2:4:0
 @q^14583^2:4:0
@@ -997,6 +1042,7 @@ GoldScout-export 7^o4yaer1vs575^42
 @q^213421^1:15:0
 @q^213544^1:0:0
 @q^216483^1:0:0
+@q^216616^1:12:0
 @q^247826^1:12:0
 @q^247834^1:15:0
 @q^247839^1:12:0
@@ -1005,6 +1051,7 @@ GoldScout-export 7^o4yaer1vs575^42
 @q^247886^1:12:0
 @q^248001^1:12:0
 @q^248002^1:12:0
+@q^248686^1:0:1
 @q^248687^1:0:1
 @q^248688^1:0:1
 @q^248690^1:0:1
@@ -1012,6 +1059,7 @@ GoldScout-export 7^o4yaer1vs575^42
 @q^249880^1:9:0
 @q^250366^1:9:0
 @q^250370^1:9:0
+@q^251388^2:9:0
 @q^254432^2:15:0
 @q^255727^2:9:0
 @q^260347^1:15:0
@@ -1034,6 +1082,7 @@ GoldScout-export 7^o4yaer1vs575^42
 @m^1431^Duskwood
 @m^1432^Loch Modan
 @m^1433^Redridge Mountains
+@m^1434^Stranglethorn Vale
 @m^1438^Teldrassil
 @m^1439^Darkshore
 @m^1440^Ashenvale
@@ -2619,6 +2668,10 @@ GoldScout-export 7^o4yaer1vs575^42
 @a^565^91:2,103:2,104:4
 @a^569^70:1,90:1,91:3,94:1
 @a^604^124:2
+@a^681^27:1,28:1,46:3,47:3,67:1
+@a^683^27:1,28:2,48:6
+@a^688^26:2,27:2
+@a^689^29:8,49:2
 @a^704^285:1
 @a^705^285:14,305:1,306:1
 @a^706^303:1,304:6,305:20,324:1,325:1
@@ -2638,9 +2691,15 @@ GoldScout-export 7^o4yaer1vs575^42
 @a^909^310:2
 @a^920^314:3
 @a^930^126:4,146:2,166:1,167:1,186:1,206:1,276:1
+@a^937^28:9,29:2,48:6,49:4
+@a^938^28:1,29:1
+@a^940^28:4,29:3,48:1,49:8
+@a^942^29:1
 @a^948^124:3,144:5,145:1
 @a^949^163:1,164:1
+@a^978^29:2
 @a^1110^123:4,143:9
+@a^1150^26:3,27:1,46:1
 @a^1161^185:3
 @a^1162^185:3
 @a^1163^89:5,90:2,109:3,110:2
@@ -2856,6 +2915,16 @@ GoldScout-export 7^o4yaer1vs575^42
 @a^269075^245:1
 @a^270294^91:1
 @a^272273^243:1
+@t^681^7:518
+@t^683^8:495
+@t^688^4:136
+@t^689^10:423
+@t^937^14:747
+@t^938^2:142
+@t^940^15:572
+@t^942^1:37
+@t^978^2:116
+@t^1150^4:178
 @t^2242^1:1
 @t^2243^2:180
 @t^2245^3:74

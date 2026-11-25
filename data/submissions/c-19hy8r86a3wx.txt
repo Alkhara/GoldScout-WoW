@@ -1,4 +1,4 @@
-GoldScout-export 5^19hy8r86a3wx^49
+GoldScout-export 5^19hy8r86a3wx^50
 3^5^0^24^25^1431^0.2327^0.3718^5^Flesh Eater^884:1:1,887:2:2,1129:2:2,2592:1:1,5529:1:1,211855:1:1^
 6^9^0^1^2^1429^0.4832^0.3608^9^Kobold Vermin^159:1:1,755:2:2,1378:1:1,2589:2:2,4536:1:1,247834:1:1,247839:3:3^
 36^1^0^11^12^1436^0.4831^0.3302^1^Harvest Golem^814:1:1^
@@ -219,6 +219,8 @@ GoldScout-export 5^19hy8r86a3wx^49
 2336^15^0^16^17^1439^0.5567^0.2698^15^Dark Strand Fanatic^414:1:1,1179:1:1,1739:1:1,2589:2:4,2592:4:7,5348:8:8^
 2338^13^0^16^17^1439^0.3919^0.8631^13^Twilight Disciple^858:1:1,2287:2:2,2589:2:4,2592:2:3,5352:1:1,279279:1:1^
 2339^16^0^17^18^1439^0.3904^0.8696^16^Twilight Thug^2287:1:1,2589:4:7,2592:1:1,5352:1:1,15268:1:1,279279:1:1^
+2376^22^0^30^31^1424^0.4442^0.6637^22^Torn Fin Oracle^1205:1:1,3385:1:1,3716:4:4,3798:1:1,3803:1:1,5524:9:9,6308:1:1,11152:2:2,17057:6:6,17058:4:4^
+2377^28^0^31^32^1424^0.4398^0.6756^28^Torn Fin Tidehunter^3716:6:6,3782:1:1,5524:10:10,6308:3:6,8746:1:1,17057:7:7,17058:6:6^
 3569^3^0^5^5^1438^0.6074^0.6839^3^Bogling^5206:3:3^
 3664^1^0^24^24^1440^0.2525^0.6066^1^Ilkrud Magthrull^5533:1:1^
 3667^2^0^16^16^1439^0.4259^0.6166^2^Anaya Dawnrunner^5382:2:2^
@@ -279,6 +281,7 @@ GoldScout-export 5^19hy8r86a3wx^49
 6227^1^0^0^0^0^0.0000^0.0000^0^^3807:1:1^
 6229^1^0^0^0^0^0.0000^0.0000^0^^3797:1:1,9450:1:1^
 6230^1^0^0^0^0^0.0000^0.0000^0^^^
+6231^1^0^26^26^1415^0.4313^0.5282^1^Techbot^9277:1:1,9444:1:1^
 6232^1^0^0^0^0^0.0000^0.0000^0^^4364:1:1^
 6233^6^0^0^0^0^0.0000^0.0000^0^^1828:1:1,9309:1:2,9327:1:1,11164:1:1^
 6234^4^0^0^0^0^0.0000^0.0000^0^^4306:1:2,4542:1:1,9857:1:1,15285:1:1^
@@ -657,10 +660,14 @@ GoldScout-export 5^19hy8r86a3wx^49
 @i^3676^Slimy Ichor
 @i^3685^Raptor Egg
 @i^3712^Turtle Meat
+@i^3716^Murloc Head
 @i^3770^Mutton Chop
 @i^3778^Taut Compound Bow
+@i^3782^Large War Club
 @i^3785^Keen Axe
 @i^3797^Interlaced Pants
+@i^3798^Interlaced Shoulderpads
+@i^3803^Hardened Cloak
 @i^3807^Hardened Leather Tunic
 @i^3882^Buzzard Feather
 @i^3931^Poisoned Spider Fang
@@ -818,10 +825,13 @@ GoldScout-export 5^19hy8r86a3wx^49
 @i^8186^Dire Wand
 @i^8344^Silvery Spinnerets
 @i^8365^Raw Mithril Head Trout
+@i^8746^Interlaced Cowl
+@i^9277^Techbot's Memory Core
 @i^9308^Grime-Encrusted Object
 @i^9309^Robo-mechanical Guts
 @i^9326^Grime-Encrusted Ring
 @i^9327^Security DELTA Data Access Card
+@i^9444^Techbot CPU Shell
 @i^9446^Electrocutioner Leg
 @i^9450^Gnomebot Operating Boots
 @i^9451^Bubbling Water
@@ -857,6 +867,7 @@ GoldScout-export 5^19hy8r86a3wx^49
 @i^10407^Raider's Shoulderpads
 @i^10640^Webwood Ichor
 @i^10940^Strange Dust
+@i^11152^Formula: Enchant Gloves - Fishing
 @i^11164^Formula: Enchant Weapon - Lesser Beastslayer
 @i^11406^Rotting Bear Carcass
 @i^11983^Chrome Ring of the Whale
@@ -1285,10 +1296,14 @@ GoldScout-export 5^19hy8r86a3wx^49
 @q^3676^0:15:0
 @q^3685^1:7:1
 @q^3712^1:7:1
+@q^3716^1:12:0
 @q^3770^1:0:0
 @q^3778^0:2:0
+@q^3782^0:2:0
 @q^3785^0:2:0
 @q^3797^0:4:0
+@q^3798^0:4:0
+@q^3803^0:4:0
 @q^3807^0:4:0
 @q^3882^0:15:0
 @q^3931^0:15:0
@@ -1446,10 +1461,13 @@ GoldScout-export 5^19hy8r86a3wx^49
 @q^8186^2:2:0
 @q^8344^1:12:0
 @q^8365^1:7:1
+@q^8746^0:4:0
+@q^9277^1:12:0
 @q^9308^1:12:0
 @q^9309^1:12:0
 @q^9326^1:12:0
 @q^9327^2:12:0
+@q^9444^1:4:0
 @q^9446^3:2:0
 @q^9450^3:4:0
 @q^9451^1:0:0
@@ -1485,6 +1503,7 @@ GoldScout-export 5^19hy8r86a3wx^49
 @q^10407^1:4:0
 @q^10640^1:12:0
 @q^10940^1:7:1
+@q^11152^2:9:0
 @q^11164^2:9:0
 @q^11406^0:15:0
 @q^11983^2:4:0
@@ -1611,6 +1630,7 @@ GoldScout-export 5^19hy8r86a3wx^49
 @q^286017^1:12:0
 @q^286980^3:4:0
 @m^1415^Eastern Kingdoms
+@m^1424^Hillsbrad Foothills
 @m^1426^Dun Morogh
 @m^1429^Elwynn Forest
 @m^1431^Duskwood
@@ -3128,6 +3148,8 @@ GoldScout-export 5^19hy8r86a3wx^49
 @a^2336^110:2,111:13
 @a^2338^347:13
 @a^2339^347:16
+@a^2376^249:7,268:13,269:1,288:1
+@a^2377^268:21,269:7
 @a^3569^272:3
 @a^3664^245:1
 @a^3667^248:2
@@ -3172,6 +3194,7 @@ GoldScout-export 5^19hy8r86a3wx^49
 @a^6123^255:1
 @a^6208^208:1
 @a^6221^208:1
+@a^6231^208:1
 @a^6789^150:1
 @a^7234^213:1
 @a^7235^213:5
