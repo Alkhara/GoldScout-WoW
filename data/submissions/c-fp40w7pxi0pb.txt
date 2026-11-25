@@ -1,4 +1,4 @@
-GoldScout-export 6^fp40w7pxi0pb^12
+GoldScout-export 6^fp40w7pxi0pb^14
 40^2^0^6^6^1429^0.6468^0.6027^2^Kobold Miner^^
 116^30^0^8^9^1429^0.8954^0.7910^30^Defias Bandit^159:1:1,1420:1:1,1422:1:1,1423:1:1,2589:12:18,2646:1:1,3189:1:1,4658:1:1,211787:1:1^
 118^74^0^9^10^1429^0.8270^0.7649^74^Prowler^774:1:1,777:6:6,2672:53:53,2960:1:1,2963:1:1,2964:1:1,3299:10:10,3300:12:12,4409:1:1,6519:1:1,15895:1:1^
@@ -113,8 +113,11 @@ GoldScout-export 6^fp40w7pxi0pb^12
 246993^1^0^0^0^1416^0.0000^0.0000^0^^4633:1:1^
 247003^1^0^0^0^1416^0.0000^0.0000^0^^276158:1:1^
 248299^1^0^12^12^1429^0.8660^0.8109^1^Elmpaw^3169:1:1,5069:1:1,247862:1:1^
+252664^2^0^10^11^2521^0.6266^0.3720^2^Al'Aketh Stormchaser^1418:1:1,2645:1:1,3192:1:1,252031:2:4^
+252665^3^0^10^11^2521^0.6303^0.3736^3^Al'Aketh Footsoldier^2589:1:2,252022:1:1,255663:2:2,267474:1:2^
 255066^1^0^0^0^1416^0.0000^0.0000^0^^^
 255069^2^0^0^0^1416^0.0000^0.0000^0^^^
+256092^2^0^10^11^2521^0.6198^0.3731^2^Shadowgale Shriekling^3299:1:1,252671:1:1^
 269075^1^0^6^6^1426^0.2744^0.6372^1^Snow Leopard Prowler^4813:1:1^
 270892^1^0^32^32^1437^0.3500^0.5251^1^Goaz Warder^5741:1:7,279993:1:1^
 271336^1^0^30^30^1437^0.6968^0.2922^1^Carnage^280330:1:1^
@@ -157,6 +160,7 @@ GoldScout-export 6^fp40w7pxi0pb^12
 @i^1374^Frayed Shoes
 @i^1376^Frayed Cloak
 @i^1380^Frayed Robe
+@i^1418^Worn Leather Belt
 @i^1420^Worn Leather Bracers
 @i^1422^Worn Leather Gloves
 @i^1423^Worn Leather Pants
@@ -200,6 +204,7 @@ GoldScout-export 6^fp40w7pxi0pb^12
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2633^Jungle Remedy
+@i^2645^Loose Chain Gloves
 @i^2646^Loose Chain Pants
 @i^2649^Flimsy Chain Belt
 @i^2651^Flimsy Chain Bracers
@@ -231,6 +236,7 @@ GoldScout-export 6^fp40w7pxi0pb^12
 @i^3174^Spider Ichor
 @i^3182^Spider's Silk
 @i^3189^Wood Chopper
+@i^3192^Short Bastard Sword of Arcane Protection
 @i^3297^Fel Moss
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
@@ -337,10 +343,15 @@ GoldScout-export 6^fp40w7pxi0pb^12
 @i^248683^Waylaid Crate: Apprentice Ore
 @i^248687^Waylaid Crate: Journeyman Ore
 @i^251961^Arcane Mote
+@i^252022^Galestrider Jerky
+@i^252031^Crisp Spring Water
+@i^252671^Hoarder's Foot
 @i^252817^Pattern: Totemic Leather Helm
+@i^255663^Windstone
 @i^255723^Manual: Greater Healing Potion
 @i^255727^Manual: Superior Poultice
 @i^262888^Sealed Journeyman's Writ
+@i^267474^Galeswept Forestshroom
 @i^273035^Mana-Warped Chain Shirt
 @i^274043^Irradiated Shield
 @i^274068^Thermaplugg Medal of Honor
@@ -388,6 +399,7 @@ GoldScout-export 6^fp40w7pxi0pb^12
 @q^1374^0:4:0
 @q^1376^0:4:0
 @q^1380^0:4:0
+@q^1418^0:4:0
 @q^1420^0:4:0
 @q^1422^0:4:0
 @q^1423^0:4:0
@@ -431,6 +443,7 @@ GoldScout-export 6^fp40w7pxi0pb^12
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2633^1:0:0
+@q^2645^0:4:0
 @q^2646^0:4:0
 @q^2649^0:4:0
 @q^2651^0:4:0
@@ -462,6 +475,7 @@ GoldScout-export 6^fp40w7pxi0pb^12
 @q^3174^1:7:1
 @q^3182^1:7:1
 @q^3189^1:2:0
+@q^3192^2:2:0
 @q^3297^1:12:0
 @q^3299^0:15:0
 @q^3300^0:15:0
@@ -568,10 +582,15 @@ GoldScout-export 6^fp40w7pxi0pb^12
 @q^248683^1:0:1
 @q^248687^1:0:1
 @q^251961^1:12:0
+@q^252022^1:0:0
+@q^252031^1:0:0
+@q^252671^0:15:0
 @q^252817^3:9:0
+@q^255663^1:0:0
 @q^255723^2:9:0
 @q^255727^2:9:0
 @q^262888^3:0:0
+@q^267474^1:0:0
 @q^273035^3:4:0
 @q^274043^3:4:0
 @q^274068^3:4:0
@@ -595,6 +614,7 @@ GoldScout-export 6^fp40w7pxi0pb^12
 @m^1434^Stranglethorn Vale
 @m^1437^Wetlands
 @m^1438^Teldrassil
+@m^2521^Zephras Isle
 @c^118^
 @c^724^
 @c^733^
@@ -1598,6 +1618,9 @@ GoldScout-export 6^fp40w7pxi0pb^12
 @a^14221^172:1
 @a^14281^271:1
 @a^248299^337:1
+@a^252664^152:2
+@a^252665^152:3
+@a^256092^152:2
 @a^269075^245:1
 @a^270892^207:1
 @a^271336^113:1

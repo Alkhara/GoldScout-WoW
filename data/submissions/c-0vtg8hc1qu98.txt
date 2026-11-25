@@ -1,6 +1,17 @@
-GoldScout-export 6^0vtg8hc1qu98^13
+GoldScout-export 6^0vtg8hc1qu98^14
+588^11^0^34^35^1434^0.2403^0.1238^11^Bloodscalp Scout^2728:1:1,3771:1:1,4306:6:7,13121:1:1,213546:2:2^
+595^9^0^34^35^1434^0.2486^0.1166^9^Bloodscalp Hunter^2592:1:2,2742:1:1,3385:1:1,4306:4:6,277957:1:1^
+671^1^0^37^37^1434^0.2374^0.1231^1^Bloodscalp Headhunter^4338:1:1^
 681^4^0^30^31^1434^0.3440^0.1193^4^Young Stranglethorn Tiger^1686:2:2,12202:3:3^
-683^1^0^30^31^1434^0.3539^0.1500^1^Young Panther^9822:1:1^
+682^2^0^32^33^1434^0.2937^0.1024^2^Stranglethorn Tiger^12202:2:2^
+683^2^0^30^31^1434^0.3843^0.1386^2^Young Panther^1686:1:1,9822:1:1^
+685^6^0^33^34^1434^0.2610^0.1616^6^Stranglethorn Raptor^1696:1:1,3685:3:3,4586:1:1,10409:1:1,12184:1:1^
+686^8^0^35^36^1434^0.3155^0.2324^8^Lashtail Raptor^3685:4:4,4461:1:1,4586:2:2,12184:2:2,213546:1:1^
+699^1^0^34^35^1434^0.2336^0.1310^1^Bloodscalp Beastmaster^^
+701^4^0^34^35^1434^0.2443^0.1190^4^Bloodscalp Mystic^2740:1:1,4306:1:2^
+736^2^0^32^33^1434^0.3016^0.0915^2^Panther^1686:1:1,9847:1:1,213545:1:1^
+855^1^0^30^31^1434^0.2425^0.1587^1^Young Stranglethorn Raptor^4461:1:1^
+856^1^0^34^34^1434^0.3056^0.2386^1^Young Lashtail Raptor^3685:1:1,12184:1:1^
 2554^15^0^32^33^1417^0.6824^0.6474^15^Witherbark Axe Thrower^2592:2:2,3771:1:1,3778:1:1,4306:2:4,7273:7:7,216483:1:1^
 2555^12^0^33^34^1417^0.6949^0.6767^12^Witherbark Witch Doctor^1710:1:1,3809:1:1,3815:1:1,4306:7:12,7273:2:2,15226:1:1^
 2556^4^0^34^35^1417^0.6935^0.6718^4^Witherbark Headhunter^4306:2:3,7273:1:1,213546:1:1^
@@ -230,6 +241,7 @@ GoldScout-export 6^0vtg8hc1qu98^13
 @i^1516^Worn Hatchet
 @i^1529^Jade
 @i^1686^Bristly Whisker
+@i^1696^Curved Raptor Talon
 @i^1701^Curved Basilisk Claw
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
@@ -261,6 +273,8 @@ GoldScout-export 6^0vtg8hc1qu98^13
 @i^2677^Boar Ribs
 @i^2725^Green Hills of Stranglethorn - Page 1
 @i^2728^Green Hills of Stranglethorn - Page 4
+@i^2740^Green Hills of Stranglethorn - Page 16
+@i^2742^Green Hills of Stranglethorn - Page 18
 @i^2763^Fisherman Knife
 @i^2764^Small Dagger
 @i^2773^Cracked Shortbow
@@ -284,6 +298,7 @@ GoldScout-export 6^0vtg8hc1qu98^13
 @i^3385^Lesser Mana Potion
 @i^3403^Ivory Boar Tusk
 @i^3456^Dog Whistle
+@i^3685^Raptor Egg
 @i^3740^Decapitating Sword of Healing
 @i^3770^Mutton Chop
 @i^3771^Wild Hog Shank
@@ -301,11 +316,13 @@ GoldScout-export 6^0vtg8hc1qu98^13
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4424^Scroll of Spirit III
+@i^4461^Raptor Hide
 @i^4480^Thundering Charm
 @i^4537^Tel'Abim Banana
 @i^4552^Smooth Stone Chip
 @i^4570^Birchwood Maul of the Owl
 @i^4582^Soft Bushy Tail
+@i^4586^Smooth Raptor Skin
 @i^4603^Raw Spotted Yellowtail
 @i^4675^Tribal Belt
 @i^4779^Dull Kodo Tooth
@@ -379,10 +396,13 @@ GoldScout-export 6^0vtg8hc1qu98^13
 @i^8365^Raw Mithril Head Trout
 @i^9451^Bubbling Water
 @i^9822^Durable Cape of the Knight
+@i^9847^Conjurer's Cloak of the Owl
 @i^9877^Sorcerer Cloak of Strength
 @i^9894^Huntsman's Shoulders of the Beast
+@i^10409^Banded Boots of Stamina
 @i^11392^Severed Bat Claw
 @i^12037^Mystery Meat
+@i^12184^Raptor Flesh
 @i^12202^Tiger Meat
 @i^12203^Red Wolf Meat
 @i^12206^Tender Crab Meat
@@ -390,6 +410,7 @@ GoldScout-export 6^0vtg8hc1qu98^13
 @i^12884^Arnak's Hoof
 @i^12925^Arikara Serpent Skin
 @i^12946^Hypercapacitor Gizmo
+@i^13121^Wing of the Whelpling
 @i^13542^Demon Box
 @i^13757^Lightning Eel
 @i^13758^Raw Redgill
@@ -469,6 +490,7 @@ GoldScout-export 6^0vtg8hc1qu98^13
 @i^274611^Robe of the Drowned
 @i^276070^Chol'aruk's Head
 @i^276894^Ancient Gurubashi Idol
+@i^277957^Primitive Key
 @i^279046^Cracked Crab Pincer
 @i^279186^Stormheart's Still-beating Heart
 @i^281048^Clearcutter Key
@@ -496,6 +518,7 @@ GoldScout-export 6^0vtg8hc1qu98^13
 @q^1516^0:2:0
 @q^1529^2:7:1
 @q^1686^0:15:0
+@q^1696^0:15:0
 @q^1701^0:15:0
 @q^1708^1:0:0
 @q^1710^1:0:0
@@ -527,6 +550,8 @@ GoldScout-export 6^0vtg8hc1qu98^13
 @q^2677^1:7:1
 @q^2725^1:12:0
 @q^2728^1:12:0
+@q^2740^1:12:0
+@q^2742^1:12:0
 @q^2763^0:2:0
 @q^2764^0:2:0
 @q^2773^0:2:0
@@ -550,6 +575,7 @@ GoldScout-export 6^0vtg8hc1qu98^13
 @q^3385^1:0:0
 @q^3403^0:15:0
 @q^3456^3:4:0
+@q^3685^1:7:1
 @q^3740^2:2:0
 @q^3770^1:0:0
 @q^3771^1:0:0
@@ -567,11 +593,13 @@ GoldScout-export 6^0vtg8hc1qu98^13
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4424^1:0:0
+@q^4461^1:7:1
 @q^4480^1:0:0
 @q^4537^1:0:0
 @q^4552^0:15:0
 @q^4570^2:2:0
 @q^4582^1:12:0
+@q^4586^0:15:0
 @q^4603^1:7:1
 @q^4675^1:4:0
 @q^4779^0:15:0
@@ -645,10 +673,13 @@ GoldScout-export 6^0vtg8hc1qu98^13
 @q^8365^1:7:1
 @q^9451^1:0:0
 @q^9822^2:4:0
+@q^9847^2:4:0
 @q^9877^2:4:0
 @q^9894^2:4:0
+@q^10409^2:4:0
 @q^11392^0:15:0
 @q^12037^1:7:1
+@q^12184^1:7:1
 @q^12202^1:7:1
 @q^12203^1:7:1
 @q^12206^1:7:1
@@ -656,6 +687,7 @@ GoldScout-export 6^0vtg8hc1qu98^13
 @q^12884^1:0:0
 @q^12925^1:12:0
 @q^12946^1:12:0
+@q^13121^3:4:0
 @q^13542^1:12:0
 @q^13757^1:7:1
 @q^13758^1:7:1
@@ -735,6 +767,7 @@ GoldScout-export 6^0vtg8hc1qu98^13
 @q^274611^3:4:0
 @q^276070^1:12:0
 @q^276894^1:12:0
+@q^277957^1:12:0
 @q^279046^0:15:0
 @q^279186^1:12:0
 @q^281048^1:12:0
@@ -1497,8 +1530,19 @@ GoldScout-export 6^0vtg8hc1qu98^13
 @c^279985^
 @c^279987^
 @c^286152^
+@a^588^44:9,45:2
+@a^595^44:4,45:5
+@a^671^44:1
 @a^681^46:2,47:2
-@a^683^47:1
+@a^682^25:1,46:1
+@a^683^47:1,48:1
+@a^685^64:2,65:4
+@a^686^86:8
+@a^699^44:1
+@a^701^44:2,45:2
+@a^736^26:2
+@a^855^64:1
+@a^856^86:1
 @a^2554^234:2,253:2,254:4,272:3,273:1,274:1,292:1,293:1
 @a^2555^254:2,273:1,274:5,292:1,293:3
 @a^2556^254:2,273:1,293:1

@@ -1,4 +1,4 @@
-GoldScout-export 6^fcf3gvuwqrq7^15
+GoldScout-export 6^fcf3gvuwqrq7^16
 760^3^0^36^37^1435^0.6100^0.2306^3^Lost One Muckdweller^1477:1:1,3800:1:1,4306:1:2^
 762^2^0^37^38^1435^0.6351^0.2037^2^Lost One Riftseeker^^
 766^1^0^41^41^1435^0.6831^0.2630^1^Tangled Horror^^
@@ -55,6 +55,9 @@ GoldScout-export 6^fcf3gvuwqrq7^15
 4688^2^0^33^35^1443^0.4923^0.3261^2^Bonepaw Hyena^3402:1:1,4582:1:1^
 4705^2^0^40^40^1443^0.8102^0.7939^2^Burning Blade Invoker^4306:1:1^
 5622^1^0^37^37^1435^0.6341^0.2330^1^Ongeku^^
+5850^1^0^47^47^1427^0.5555^0.7707^1^Blazing Elemental^4787:1:1,10509:1:1^
+5853^1^0^47^47^1427^0.6816^0.3647^1^Tempered War Golem^4554:1:1,7912:1:1^
+5855^1^0^48^48^1427^0.5555^0.7707^1^Magma Elemental^4787:1:1,10511:1:1^
 6427^3^0^0^0^0^0.0000^0.0000^0^^7407:1:1^
 6487^4^0^0^0^0^0.0000^0.0000^0^^3798:1:1,4725:1:1,7711:1:1,7712:2:2,7713:2:2,7714:1:1,15226:1:1,254040:1:1,274293:1:1,274294:1:1^
 6575^15^0^0^0^0^0.0000^0.0000^0^^1708:2:2,3827:1:1,4306:7:10,6599:1:1,248686:1:1^
@@ -261,6 +264,7 @@ GoldScout-export 6^fcf3gvuwqrq7^15
 @i^4435^Mote of Myzrael
 @i^4460^Ripped Wing Webbing
 @i^4539^Goldenbark Apple
+@i^4554^Shiny Polished Stone
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
 @i^4582^Soft Bushy Tail
@@ -270,6 +274,7 @@ GoldScout-export 6^fcf3gvuwqrq7^15
 @i^4716^Combat Cloak
 @i^4720^Nightsky Sash
 @i^4725^Chief Brigadier Pauldrons
+@i^4787^Burning Pitch
 @i^5116^Long Tail Feather
 @i^5429^A Pretty Rock
 @i^5431^Empty Hip Flask
@@ -311,6 +316,7 @@ GoldScout-export 6^fcf3gvuwqrq7^15
 @i^7754^Harbinger Boots
 @i^7756^Dog Training Gloves
 @i^7909^Aquamarine
+@i^7912^Solid Stone
 @i^8029^Plans: Wicked Mithril Blade
 @i^8156^Jouster's Wristguards
 @i^8186^Dire Wand
@@ -334,6 +340,8 @@ GoldScout-export 6^fcf3gvuwqrq7^15
 @i^10329^Scarlet Belt
 @i^10330^Scarlet Leggings
 @i^10332^Scarlet Boots
+@i^10509^Heart of Flame
+@i^10511^Golem Oil
 @i^10604^Schematic: Mithril Heavy-bore Rifle
 @i^11208^Formula: Enchant Weapon - Demonslaying
 @i^11393^Small Bat Skull
@@ -532,6 +540,7 @@ GoldScout-export 6^fcf3gvuwqrq7^15
 @q^4435^1:12:0
 @q^4460^0:15:0
 @q^4539^1:0:0
+@q^4554^0:15:0
 @q^4555^0:15:0
 @q^4556^0:15:0
 @q^4582^1:12:0
@@ -541,6 +550,7 @@ GoldScout-export 6^fcf3gvuwqrq7^15
 @q^4716^2:4:0
 @q^4720^2:4:0
 @q^4725^2:4:0
+@q^4787^0:15:0
 @q^5116^1:7:1
 @q^5429^0:15:0
 @q^5431^0:15:0
@@ -582,6 +592,7 @@ GoldScout-export 6^fcf3gvuwqrq7^15
 @q^7754^3:4:0
 @q^7756^3:4:0
 @q^7909^2:7:1
+@q^7912^1:7:1
 @q^8029^2:9:0
 @q^8156^2:4:0
 @q^8186^2:2:0
@@ -605,6 +616,8 @@ GoldScout-export 6^fcf3gvuwqrq7^15
 @q^10329^3:4:0
 @q^10330^3:4:0
 @q^10332^3:4:0
+@q^10509^1:12:0
+@q^10511^1:12:0
 @q^10604^2:9:0
 @q^11208^2:9:0
 @q^11393^0:15:0
@@ -720,6 +733,7 @@ GoldScout-export 6^fcf3gvuwqrq7^15
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
 @m^1418^Badlands
+@m^1427^Searing Gorge
 @m^1432^Loch Modan
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
@@ -1514,6 +1528,9 @@ GoldScout-export 6^fcf3gvuwqrq7^15
 @a^4688^129:2
 @a^4705^316:1,336:1
 @a^5622^92:1
+@a^5850^311:1
+@a^5853^153:1
+@a^5855^311:1
 @a^8996^316:1
 @a^11576^233:1
 @a^12922^316:2
