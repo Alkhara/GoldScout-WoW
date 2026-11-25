@@ -1,4 +1,4 @@
-GoldScout-export 6^rhnbribw46bd^42
+GoldScout-export 6^rhnbribw46bd^43
 587^3^0^33^34^1434^0.3388^0.1556^3^Bloodscalp Warrior^3807:1:1^
 667^2^0^40^40^1434^0.4649^0.3887^2^Skullsplitter Warrior^4306:1:3,9294:1:1^
 694^1^0^34^34^1434^0.3393^0.1558^1^Bloodscalp Axe Thrower^2730:1:1,4306:1:1^
@@ -37,8 +37,8 @@ GoldScout-export 6^rhnbribw46bd^42
 2547^1^0^43^43^1434^0.3057^0.9007^1^Ironpatch^^
 2548^1^0^47^47^1434^0.2923^0.8900^1^Captain Keelhaul^^
 2549^1^0^43^43^1434^0.2938^0.8897^1^Garr Salthoof^^
-2655^41^0^46^47^1425^0.5754^0.4287^41^Green Sludge^3671:5:5,3676:6:6,4026:1:1,20763:6:6,20767:6:6,213545:1:1,213546:2:2,213547:2:2,248692:1:1^
-2656^26^0^47^48^1425^0.5808^0.4247^26^Jade Ooze^3671:2:2,3676:7:7,4021:1:1,20763:5:5,20767:3:3,248692:1:1^
+2655^84^0^46^47^1425^0.5730^0.4272^84^Green Sludge^3671:8:8,3676:11:11,3943:1:1,4026:1:1,20763:13:13,20767:14:14,213545:1:1,213546:2:2,213547:2:2,248692:2:2,248709:1:1,262890:1:1^
+2656^58^0^47^48^1425^0.5763^0.4239^58^Jade Ooze^3671:4:4,3676:13:13,3963:1:1,4017:1:1,4021:1:1,20763:16:16,20767:8:8,213543:1:1,213547:1:1,248692:1:1^
 3632^1^0^15^16^1414^0.5197^0.5530^1^Deviate Creeper^248684:1:1^
 3636^4^0^0^0^0^0.0000^0.0000^0^^1206:1:1,3180:1:1,4575:1:1,5124:3:3^
 3637^3^0^0^0^0^0.0000^0.0000^0^^3180:2:2,5124:1:1^
@@ -479,6 +479,7 @@ GoldScout-export 6^rhnbribw46bd^42
 @i^3947^Twill Cloak
 @i^3949^Twill Pants
 @i^3951^Twill Vest
+@i^3963^Thick Leather Bracers
 @i^3969^Smooth Leather Belt
 @i^3973^Smooth Leather Gloves
 @i^3974^Smooth Leather Pants
@@ -488,6 +489,7 @@ GoldScout-export 6^rhnbribw46bd^42
 @i^3989^Blocking Targe
 @i^3992^Laminated Scale Belt
 @i^3993^Laminated Scale Boots
+@i^4017^Sharp Shortsword
 @i^4021^Blunting Mace
 @i^4023^Fine Pointed Dagger
 @i^4025^Balanced Long Bow
@@ -846,6 +848,7 @@ GoldScout-export 6^rhnbribw46bd^42
 @i^248696^Waylaid Crate: Flowering Artisan Herbs
 @i^248698^Waylaid Crate: Artisan Textiles
 @i^248699^Waylaid Crate: Artisan Curiosities
+@i^248709^Waylaid Crate: Expert Ingots
 @i^248711^Waylaid Crate: Artisan Fabrics
 @i^248712^Waylaid Crate: Artisan Ingots
 @i^248713^Waylaid Crate: Artisan Parts
@@ -913,6 +916,7 @@ GoldScout-export 6^rhnbribw46bd^42
 @q^3947^0:4:0
 @q^3949^0:4:0
 @q^3951^0:4:0
+@q^3963^0:4:0
 @q^3969^0:4:0
 @q^3973^0:4:0
 @q^3974^0:4:0
@@ -922,6 +926,7 @@ GoldScout-export 6^rhnbribw46bd^42
 @q^3989^0:4:0
 @q^3992^0:4:0
 @q^3993^0:4:0
+@q^4017^0:2:0
 @q^4021^0:2:0
 @q^4023^0:2:0
 @q^4025^0:2:0
@@ -1280,6 +1285,7 @@ GoldScout-export 6^rhnbribw46bd^42
 @q^248696^1:0:1
 @q^248698^1:0:1
 @q^248699^1:0:1
+@q^248709^2:0:1
 @q^248711^2:0:1
 @q^248712^2:0:1
 @q^248713^2:0:1
@@ -2079,8 +2085,8 @@ GoldScout-export 6^rhnbribw46bd^42
 @a^2547^366:1
 @a^2548^345:1
 @a^2549^345:1
-@a^2655^171:39,172:2
-@a^2656^171:23,172:3
+@a^2655^171:79,172:5
+@a^2656^171:53,172:5
 @a^3632^230:1
 @a^4472^232:7
 @a^4474^209:1

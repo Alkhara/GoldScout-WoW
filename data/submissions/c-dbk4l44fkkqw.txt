@@ -1,4 +1,4 @@
-GoldScout-export 7^dbk4l44fkkqw^1
+GoldScout-export 7^dbk4l44fkkqw^2
 745^3^0^43^44^1435^0.8299^0.4612^3^Scalebane Captain^4599:2:2,5803:1:1,8194:1:1^
 746^3^0^45^45^1435^0.8294^0.4594^3^Elder Dragonkin^1613:1:1^
 766^1^0^40^40^1435^0.5742^0.4991^1^Tangled Horror^^
@@ -9,6 +9,8 @@ GoldScout-export 7^dbk4l44fkkqw^1
 256807^22^0^39^40^2548^0.8561^0.3944^22^Shore Crawler^3010:1:1,5524:8:8,5569:6:6,12206:8:8,17057:4:4,268345:6:6,268632:15:15,271650:3:3^
 257901^12^0^41^42^2548^0.8744^0.3530^12^Eastsea Buccaneer^4338:2:2,248690:1:1,268796:2:2^
 257910^11^0^42^43^2548^0.8717^0.3450^11^Eastsea Musketeer^4306:2:4,7479:1:1,268796:6:6^
+257915^16^0^44^45^2548^0.7925^0.3585^16^Eastsea Raider^4306:1:1,4338:4:7,13115:1:1^
+257916^9^0^43^44^2548^0.7892^0.3562^9^Eastsea Bombardier^3937:1:1,4306:1:1,4338:2:4,213544:1:1^
 260235^1^0^42^42^2548^0.8112^0.5446^1^Trapclaw^5569:1:1,17057:1:1,268586:1:1^
 272315^1^0^42^43^2548^0.8409^0.5162^1^Brineshell Snapper^^
 @i^769^Chunk of Boar Meat
@@ -17,6 +19,7 @@ GoldScout-export 7^dbk4l44fkkqw^1
 @i^2295^Large Boar Tusk
 @i^3010^Fine Sand
 @i^3667^Tender Crocolisk Meat
+@i^3937^Crochet Boots
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4599^Cured Ham Steak
@@ -28,7 +31,9 @@ GoldScout-export 7^dbk4l44fkkqw^1
 @i^7973^Big-mouth Clam
 @i^8194^Goblin Nutcracker of Healing
 @i^12206^Tender Crab Meat
+@i^13115^Sheepshear Mantle
 @i^17057^Shiny Fish Scales
+@i^213544^Scroll: TOPAZ YORAK
 @i^248690^Waylaid Crate: Earthly Expert Herbs
 @i^268345^Sand Crawler Meat
 @i^268586^Trapclaw's Pincer
@@ -41,6 +46,7 @@ GoldScout-export 7^dbk4l44fkkqw^1
 @q^2295^0:15:0
 @q^3010^0:15:0
 @q^3667^1:7:1
+@q^3937^0:4:0
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4599^1:0:0
@@ -52,7 +58,9 @@ GoldScout-export 7^dbk4l44fkkqw^1
 @q^7973^1:7:0
 @q^8194^2:2:0
 @q^12206^1:7:1
+@q^13115^3:4:0
 @q^17057^1:15:0
+@q^213544^1:0:0
 @q^248690^1:0:1
 @q^268345^1:12:0
 @q^268586^1:12:0
@@ -722,6 +730,8 @@ GoldScout-export 7^dbk4l44fkkqw^1
 @a^256807^117:3,137:5,157:1,177:7,195:1,196:5
 @a^257901^117:1,137:5,157:5,177:1
 @a^257910^137:7,157:4
+@a^257915^135:4,136:1,155:10,156:1
+@a^257916^135:4,136:1,155:4
 @a^260235^216:1
 @a^272315^216:1
 @t^745^3:110
@@ -733,5 +743,7 @@ GoldScout-export 7^dbk4l44fkkqw^1
 @t^256807^20:696
 @t^257901^12:418
 @t^257910^11:343
+@t^257915^16:626
+@t^257916^8:323
 @t^260235^1:85
 @l^0^enUS
