@@ -1,4 +1,4 @@
-GoldScout-export 6^y2l3m73d9z0r^17
+GoldScout-export 6^y2l3m73d9z0r^18
 740^2^0^34^35^1435^0.1233^0.6206^2^Cría adolescente^4402:2:2,8146:1:1^
 743^1^0^42^43^1435^0.6155^0.5824^1^Verminte Caminasueños^^
 745^2^0^43^44^1435^0.7740^0.6996^2^Capitán Horrocrusto^^
@@ -77,6 +77,10 @@ GoldScout-export 6^y2l3m73d9z0r^17
 4832^1^0^0^0^0^0.0000^0.0000^0^^5881:1:1,6903:1:1^
 4841^1^0^45^45^1445^0.4543^0.5380^1^Lodomuerto^770:1:1,5945:1:1^
 4887^1^0^0^0^0^0.0000^0.0000^0^^273839:1:1^
+5419^7^0^43^43^1446^0.4446^0.2792^7^Basilisco Cristaldermo^9437:7:7,11386:2:2^
+5423^1^0^43^43^1446^0.4673^0.2884^1^Colazote escórpido^9442:1:1,19935:1:1^
+5425^4^0^41^42^1446^0.4400^0.2663^4^Llagapata famélica^4583:1:1,9439:4:4,12037:1:1,12203:1:1,12208:1:1,14255:1:1^
+5459^2^0^47^48^1446^0.3929^0.2954^2^Tunelador Centipaar^^
 5477^1^0^39^39^1435^0.4646^0.3876^1^Noboru el Garrote^6196:1:1^
 5601^2^0^42^42^1443^0.6600^0.8059^2^Khan Jehn^4025:1:1^
 5615^1^0^44^44^1446^0.6080^0.3116^1^Pícaro Vagayermo^4306:1:1^
@@ -156,6 +160,7 @@ GoldScout-export 6^y2l3m73d9z0r^17
 @i^4460^Ala rasgada
 @i^4552^Trozo de piedra lisa
 @i^4582^Cola tupida suave
+@i^4583^Melena espesa
 @i^4599^Filete de jamón curado
 @i^4603^Serviola moteada cruda
 @i^4607^Moho de cueva delicado
@@ -215,6 +220,9 @@ GoldScout-export 6^y2l3m73d9z0r^17
 @i^8365^Trucha cabeza de mitril cruda
 @i^8483^Faltriquera de agua de Vagayermos
 @i^8723^Cabeza del Califa Escorpijón
+@i^9437^Muestra de basilisco sin estudiar
+@i^9439^Muestra de hiena sin estudiar
+@i^9442^Muestra de escórpido sin estudiar
 @i^9771^Guantes de tejido verde de intelecto
 @i^9845^Zapatos de implorador de protección de Fuego
 @i^9847^Capa de implorador del oso
@@ -223,14 +231,18 @@ GoldScout-export 6^y2l3m73d9z0r^17
 @i^10329^Cinturón Escarlata
 @i^10330^Leotardos Escarlata
 @i^10332^Botas Escarlata
+@i^11386^Ojo de basilisco fangoso
 @i^11418^Hueso hueco de ala
 @i^12037^Carne misteriosa
+@i^12203^Carne de lobo rojo
 @i^12204^Carne de kodo pesada
+@i^12208^Carne de lobo tierna
 @i^13758^Branquirrojo crudo
 @i^13759^Pargo nocturno crudo
 @i^13760^Salmón escama de sol crudo
 @i^14202^Chaleco Piel de Cardo del profeta
 @i^14226^Pulseras de seda de ascuas del hechicero
+@i^14255^Cinturón lunar del águila
 @i^14375^Puños sanguinos
 @i^14569^Ataduras Erizacorteza
 @i^14839^Grebas de tirano
@@ -244,6 +256,7 @@ GoldScout-export 6^y2l3m73d9z0r^17
 @i^17057^Escamas de pez lustrosas
 @i^17058^Aceite de pescado
 @i^19507^Chal de inquisidor
+@i^19935^Glándula de veneno vacía
 @i^20763^Arma rota
 @i^21150^Valija reforzada con hierro
 @i^21151^Ron Rumsey etiqueta negra
@@ -311,6 +324,7 @@ GoldScout-export 6^y2l3m73d9z0r^17
 @q^4460^0:15:0
 @q^4552^0:15:0
 @q^4582^1:12:0
+@q^4583^0:15:0
 @q^4599^1:0:0
 @q^4603^1:7:1
 @q^4607^1:0:0
@@ -370,6 +384,9 @@ GoldScout-export 6^y2l3m73d9z0r^17
 @q^8365^1:7:1
 @q^8483^1:12:0
 @q^8723^1:12:0
+@q^9437^1:12:0
+@q^9439^1:12:0
+@q^9442^1:12:0
 @q^9771^2:4:0
 @q^9845^2:4:0
 @q^9847^2:4:0
@@ -378,14 +395,18 @@ GoldScout-export 6^y2l3m73d9z0r^17
 @q^10329^3:4:0
 @q^10330^3:4:0
 @q^10332^3:4:0
+@q^11386^0:15:0
 @q^11418^0:15:0
 @q^12037^1:7:1
+@q^12203^1:7:1
 @q^12204^1:7:1
+@q^12208^1:7:1
 @q^13758^1:7:1
 @q^13759^1:7:1
 @q^13760^1:7:1
 @q^14202^2:4:0
 @q^14226^2:4:0
+@q^14255^2:4:0
 @q^14375^2:4:0
 @q^14569^2:4:0
 @q^14839^2:4:0
@@ -399,6 +420,7 @@ GoldScout-export 6^y2l3m73d9z0r^17
 @q^17057^1:15:0
 @q^17058^1:15:0
 @q^19507^3:4:0
+@q^19935^0:15:0
 @q^20763^0:15:0
 @q^21150^1:15:0
 @q^21151^1:0:0
@@ -1621,6 +1643,10 @@ GoldScout-export 6^y2l3m73d9z0r^17
 @a^4702^229:8,230:13,249:1,250:3,251:2
 @a^4725^305:1
 @a^4841^209:1
+@a^5419^108:3,109:4
+@a^5423^109:1
+@a^5425^108:4
+@a^5459^107:2
 @a^5477^149:1
 @a^5601^333:2
 @a^5615^132:1
