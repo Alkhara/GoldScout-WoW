@@ -1,4 +1,4 @@
-GoldScout-export 7^6pfw5ohsmbc9^27
+GoldScout-export 7^6pfw5ohsmbc9^28
 92^21^0^39^40^1418^0.1503^0.3428^21^Elémentaire de roche^4552:2:2,4553:9:9,4627:1:1,4784:12:12,7067:3:3,7848:1:1,7912:7:8,8150:5:5,262889:1:1^
 587^12^0^33^34^1434^0.3092^0.1834^12^Guerrier Bloodscalp^1520:1:1,2290:1:1,2592:1:2,3771:1:1,3795:1:1,3901:4:4,3915:2:2,4306:4:7,213547:1:1^
 588^22^0^34^35^1434^0.2536^0.1150^22^Eclaireur Bloodscalp^2592:1:3,2721:1:1,2734:1:1,2735:1:1,3771:1:1,3901:4:4,3915:6:6,4306:7:9,4338:1:1^
@@ -199,6 +199,13 @@ GoldScout-export 7^6pfw5ohsmbc9^27
 259054^6^0^38^39^2548^0.5951^0.5284^6^Patriarche des plaines sauvages^1686:1:1,1688:2:2,8146:1:1,266888:3:3^
 259055^6^0^38^39^2548^0.5976^0.5269^6^Chasseresse des plaines sauvages^1686:2:2,1688:3:3,266888:3:3^
 259269^2^0^38^39^2548^0.3162^0.5918^2^Busard des hautes plaines^5829:1:1,11418:1:1^
+259433^2^0^11^11^1420^0.1388^0.6636^2^Zélote terni^2589:1:2^
+259434^1^0^10^10^1420^0.1931^0.6171^1^Manoeuvre terni^2070:1:1^
+260396^1^0^13^13^1420^0.0895^0.6018^1^Horreur murmurante^268812:1:1^
+260428^8^0^10^12^1420^0.1075^0.6637^8^Titubeur d'Ombreval^159:1:1,818:1:1,1429:1:1,1495:1:1,2589:4:4,4604:1:1,286259:4:4^
+260430^4^0^10^12^1420^0.1039^0.6663^4^Mystique d'Ombreval^2589:2:4^
+260431^2^0^11^12^1420^0.0919^0.5995^2^Titubeur d'Ombreval^211785:1:1^
+260432^2^0^11^12^1420^0.0935^0.6199^2^Mystique d'Ombreval^2589:1:1,286259:2:2^
 260803^2^0^27^27^1437^0.5193^0.6470^2^Araignée des hautes-terres^1074:1:1,3182:1:1^
 262397^2^0^36^38^1434^0.2266^0.2552^2^Tirailleur écaille-de-mer^^
 262473^2^0^39^40^2548^0.3010^0.7202^2^Dragonnet cendrécaille^4460:2:2^
@@ -212,6 +219,7 @@ GoldScout-export 7^6pfw5ohsmbc9^27
 269175^5^0^36^38^1434^0.3407^0.2948^5^Herbe carnivore^4607:1:1,256036:2:2,256037:4:4^
 270664^2^0^37^38^2548^0.3916^0.6157^2^Crache-toile venimeux^1074:1:1,4585:1:1,12205:1:1^
 275437^9^0^10^12^1420^0.6841^0.6525^9^Massacreur sombre^159:1:1,1413:1:1,1733:1:1,1735:1:1,2589:5:12,9753:1:1,211787:1:1,275851:4:4^
+277730^1^0^9^9^1420^0.1903^0.6221^1^Loup des bois enragé^2672:1:1^
 @i^118^Potion de soins mineure
 @i^159^Eau de source
 @i^729^Viande filandreuse de vautour
@@ -250,10 +258,12 @@ GoldScout-export 7^6pfw5ohsmbc9^27
 @i^1420^Brassards usés en cuir
 @i^1425^Gilet usé en cuir
 @i^1427^Bottes en patchwork
+@i^1429^Cape en patchwork
 @i^1464^Serre de busard
 @i^1468^Aileron de murloc
 @i^1475^Petite glande à venin
 @i^1476^Patte d'araignée brisée
+@i^1495^Chaussures en calicot
 @i^1503^Bottes déformées en cuir
 @i^1504^Brassards déformés en cuir
 @i^1509^Gilet déformé en cuir
@@ -573,6 +583,7 @@ GoldScout-export 7^6pfw5ohsmbc9^27
 @i^263972^Hache d'abattage
 @i^265358^Minerai volé
 @i^266888^Peau de lion prisée
+@i^268812^Résidu d'horreur murmurante
 @i^271205^Os d'abomination
 @i^271208^Poigne de la peur
 @i^271210^Ceinture en brochebande
@@ -594,6 +605,7 @@ GoldScout-export 7^6pfw5ohsmbc9^27
 @i^278243^Peau de sombredogue
 @i^278244^Peau de Murloc aileron noir
 @i^281052^Peau d'Ombassa
+@i^286259^Os faiblement luminescent
 @i^286978^Tenue de soigneur de pourriture
 @q^118^1:0:0
 @q^159^1:0:0
@@ -633,10 +645,12 @@ GoldScout-export 7^6pfw5ohsmbc9^27
 @q^1420^0:4:0
 @q^1425^0:4:0
 @q^1427^0:4:0
+@q^1429^0:4:0
 @q^1464^0:15:0
 @q^1468^1:7:1
 @q^1475^1:7:1
 @q^1476^0:15:0
+@q^1495^0:4:0
 @q^1503^0:4:0
 @q^1504^0:4:0
 @q^1509^0:4:0
@@ -956,6 +970,7 @@ GoldScout-export 7^6pfw5ohsmbc9^27
 @q^263972^1:12:0
 @q^265358^1:12:0
 @q^266888^1:12:0
+@q^268812^1:12:0
 @q^271205^3:4:0
 @q^271208^3:4:0
 @q^271210^3:4:0
@@ -977,6 +992,7 @@ GoldScout-export 7^6pfw5ohsmbc9^27
 @q^278243^1:12:0
 @q^278244^1:12:0
 @q^281052^1:12:0
+@q^286259^1:12:0
 @q^286978^3:4:0
 @m^1413^Les Tarides
 @m^1414^Kalimdor
@@ -2384,6 +2400,13 @@ GoldScout-export 7^6pfw5ohsmbc9^27
 @a^259054^211:3,212:2,231:1
 @a^259055^211:3,212:3
 @a^259269^226:1,246:1
+@a^259433^262:2
+@a^259434^243:1
+@a^260396^241:1
+@a^260428^261:3,262:5
+@a^260430^261:1,262:3
+@a^260431^221:1,241:1
+@a^260432^241:2
 @a^260803^250:1,270:1
 @a^262397^84:1,104:1
 @a^262473^285:1,286:1
@@ -2396,6 +2419,7 @@ GoldScout-export 7^6pfw5ohsmbc9^27
 @a^269175^106:3,126:2
 @a^270664^247:2
 @a^275437^253:4,273:5
+@a^277730^243:1
 @t^92^1:72
 @t^2729^25:1732
 @t^2734^3:255
