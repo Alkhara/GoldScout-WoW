@@ -1,4 +1,4 @@
-GoldScout-export 6^zddivq5v9ttp^36
+GoldScout-export 7^zddivq5v9ttp^37
 1529^8^0^9^10^1420^0.7699^0.6062^8^Bleeding Horror^1413:1:1,2589:2:3,2635:1:1,6507:1:1^
 1532^9^0^10^11^1420^0.7718^0.6106^9^Wandering Spirit^1730:1:1,2589:4:6,4604:2:2,6521:1:1^
 1554^3^0^8^9^1420^0.7143^0.5568^3^Vampiric Duskbat^805:1:1,4865:1:1,7073:1:1,278242:1:1^
@@ -484,6 +484,7 @@ GoldScout-export 6^zddivq5v9ttp^36
 @i^1516^Worn Hatchet
 @i^1645^Moonberry Juice
 @i^1688^Long Soft Tail
+@i^1710^Greater Healing Potion
 @i^1730^Worn Mail Belt
 @i^1731^Worn Mail Boots
 @i^1733^Worn Cloak
@@ -692,6 +693,7 @@ GoldScout-export 6^zddivq5v9ttp^36
 @i^6297^Old Skull
 @i^6300^Husk Fragment
 @i^6303^Raw Slitherskin Mackerel
+@i^6308^Raw Bristle Whisker Catfish
 @i^6336^Infantry Tunic of Agility
 @i^6361^Raw Rainbow Fin Albacore
 @i^6443^Deviate Hide
@@ -741,6 +743,7 @@ GoldScout-export 6^zddivq5v9ttp^36
 @i^8182^Pellet Rifle
 @i^8289^Arcane Leggings
 @i^8310^Hero's Pauldrons
+@i^8365^Raw Mithril Head Trout
 @i^8391^Snickerfang Jowl
 @i^8392^Blasted Boar Lung
 @i^8393^Scorpok Pincer
@@ -1129,6 +1132,7 @@ GoldScout-export 6^zddivq5v9ttp^36
 @q^1516^0:2:0
 @q^1645^1:0:0
 @q^1688^0:15:0
+@q^1710^1:0:0
 @q^1730^0:4:0
 @q^1731^0:4:0
 @q^1733^0:4:0
@@ -1337,6 +1341,7 @@ GoldScout-export 6^zddivq5v9ttp^36
 @q^6297^0:15:0
 @q^6300^0:15:0
 @q^6303^1:7:1
+@q^6308^1:7:1
 @q^6336^2:4:0
 @q^6361^1:7:1
 @q^6443^1:12:0
@@ -1386,6 +1391,7 @@ GoldScout-export 6^zddivq5v9ttp^36
 @q^8182^1:2:0
 @q^8289^2:4:0
 @q^8310^2:4:0
+@q^8365^1:7:1
 @q^8391^1:12:0
 @q^8392^1:12:0
 @q^8393^1:12:0
@@ -1722,6 +1728,7 @@ GoldScout-export 6^zddivq5v9ttp^36
 @m^1411^Durotar
 @m^1413^The Barrens
 @m^1414^Kalimdor
+@m^1417^Arathi Highlands
 @m^1419^Blasted Lands
 @m^1420^Tirisfal Glades
 @m^1421^Silverpine Forest
@@ -3500,6 +3507,9 @@ GoldScout-export 6^zddivq5v9ttp^36
 @c^279959^
 @c^279960^
 @c^279961^
+@c^279965^
+@c^279966^
+@c^279967^
 @c^279968^
 @c^279969^
 @c^279970^
@@ -3739,4 +3749,5 @@ GoldScout-export 6^zddivq5v9ttp^36
 @a^275663^91:2,111:3
 @a^275666^71:1
 @a^276020^176:1
+@f^1417^0^73^152^1710:1:1,6308:35:38,8365:51:66^205:73
 @l^0^enUS

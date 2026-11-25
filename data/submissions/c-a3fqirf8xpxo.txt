@@ -1,26 +1,41 @@
-GoldScout-export 7^a3fqirf8xpxo^2
+GoldScout-export 7^a3fqirf8xpxo^3
 30^3^0^5^6^1429^0.3807^0.6315^3^Forest Spider^1476:2:2,2590:1:1^
 94^1^0^5^5^1429^0.3786^0.5772^1^Defias Cutpurse^^
 113^1^0^5^5^1429^0.3897^0.6844^1^Stonetusk Boar^769:1:1,771:1:1^
 299^7^0^1^1^1429^0.4349^0.6012^7^Young Wolf^4865:1:1,7074:1:1^
+428^1^0^18^18^1433^0.4199^0.7625^1^Dire Condor^4775:1:1,6889:1:1^
 525^10^0^5^6^1429^0.4122^0.6107^10^Mangy Wolf^2672:5:5,3299:1:1^
+547^2^0^17^17^1433^0.2362^0.7162^2^Great Goretusk^723:1:1,769:2:3,2295:1:1,2677:1:1,3172:2:2^
+@i^723^Goretusk Liver
 @i^769^Chunk of Boar Meat
 @i^771^Chipped Boar Tusk
 @i^1476^Snapped Spider Limb
+@i^2295^Large Boar Tusk
 @i^2590^Forest Spider Webbing
 @i^2672^Stringy Wolf Meat
+@i^2677^Boar Ribs
+@i^3172^Boar Intestines
 @i^3299^Fractured Canine
+@i^4775^Cracked Bill
 @i^4865^Ruined Pelt
+@i^6889^Small Egg
 @i^7074^Chipped Claw
+@q^723^1:7:1
 @q^769^1:7:1
 @q^771^0:15:0
 @q^1476^0:15:0
+@q^2295^0:15:0
 @q^2590^0:15:0
 @q^2672^1:7:1
+@q^2677^1:7:1
+@q^3172^1:7:1
 @q^3299^0:15:0
+@q^4775^0:15:0
 @q^4865^0:15:0
+@q^6889^1:7:1
 @q^7074^0:15:0
 @m^1429^Elwynn Forest
+@m^1433^Redridge Mountains
 @c^118^
 @c^724^
 @c^733^
@@ -782,10 +797,14 @@ GoldScout-export 7^a3fqirf8xpxo^2
 @a^94^227:1
 @a^113^267:1
 @a^299^228:1,229:1,248:5
+@a^428^308:1
 @a^525^228:1,229:1,247:4,248:4
+@a^547^265:1,304:1
 @t^30^3:142
 @t^94^1:213
 @t^113^1:98
 @t^299^7:141
+@t^428^1:136
 @t^525^8:386
+@t^547^1:212
 @l^0^enUS

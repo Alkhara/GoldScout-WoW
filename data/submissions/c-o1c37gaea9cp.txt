@@ -1,4 +1,4 @@
-GoldScout-export 6^o1c37gaea9cp^10
+GoldScout-export 6^o1c37gaea9cp^11
 1765^1^0^11^11^1421^0.4639^0.4431^1^Worg^2672:1:1^
 1769^1^0^10^11^1421^0.4765^0.3427^1^Moonrage Whitescalp^^
 1778^1^0^12^12^1421^0.4613^0.3258^1^Ferocious Grizzled Bear^^
@@ -27,12 +27,17 @@ GoldScout-export 6^o1c37gaea9cp^10
 3712^1^0^20^20^1440^0.1189^0.3245^1^Wrathtail Razortail^^
 3713^1^0^18^18^1440^0.0957^0.2784^1^Wrathtail Wave Rider^^
 3717^1^0^18^18^1440^0.0955^0.2783^1^Wrathtail Sorceress^^
+3758^4^0^25^26^1440^0.6679^0.5283^4^Felmusk Satyr^^
+3759^3^0^26^27^1440^0.6647^0.5359^3^Felmusk Rogue^^
+3762^3^0^25^26^1440^0.6670^0.5417^3^Felmusk Felsworn^5481:2:2^
+3763^4^0^26^27^1440^0.6686^0.5491^4^Felmusk Shadowstalker^^
 3780^1^0^21^21^1440^0.4577^0.4797^1^Shadethicket Moss Eater^^
 3797^1^0^25^25^1440^0.6216^0.5078^1^Cenarion Protector^16649:1:1^
 3809^4^0^21^22^1440^0.5041^0.5672^4^Ashenvale Bear^^
+3810^4^0^25^26^1440^0.6468^0.5838^4^Elder Ashenvale Bear^2940:1:1,3730:1:1^
 3818^4^0^26^26^1440^0.6965^0.6333^4^Elder Shadowhorn Stag^5471:1:1,5566:2:2^
 3819^1^0^20^21^1440^0.3598^0.5994^1^Wildthorn Stalker^^
-3820^3^0^25^25^1440^0.5706^0.7130^3^Wildthorn Venomspitter^^
+3820^4^0^24^25^1440^0.5914^0.6852^4^Wildthorn Venomspitter^2251:1:1^
 3823^1^0^19^20^1440^0.7610^0.6724^1^Ghostpaw Runner^^
 3824^2^0^23^24^1440^0.5781^0.7045^2^Ghostpaw Howler^^
 3825^2^0^27^28^1440^0.7014^0.6331^2^Ghostpaw Alpha^^
@@ -94,10 +99,12 @@ GoldScout-export 6^o1c37gaea9cp^10
 @i^1801^Rawhide Shoulderpads
 @i^1823^Bludgeoning Cudgel
 @i^2221^Targe Shield
+@i^2251^Gooey Spider Leg
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2672^Stringy Wolf Meat
 @i^2819^Cross Dagger of the Bandit
+@i^2940^Bloody Bear Paw
 @i^2983^Seer's Boots
 @i^3170^Large Bear Tooth
 @i^3173^Bear Meat
@@ -108,6 +115,7 @@ GoldScout-export 6^o1c37gaea9cp^10
 @i^3674^Decomposed Boot
 @i^3676^Slimy Ichor
 @i^3685^Raptor Egg
+@i^3730^Big Bear Meat
 @i^3731^Lion Meat
 @i^3820^Stranglekelp
 @i^3857^Coal
@@ -117,6 +125,7 @@ GoldScout-export 6^o1c37gaea9cp^10
 @i^5448^Fractured Elemental Bracer
 @i^5451^Crushed Elemental Bracer
 @i^5471^Stag Meat
+@i^5481^Satyr Horns
 @i^5523^Small Barnacled Clam
 @i^5524^Thick-shelled Clam
 @i^5566^Broken Antler
@@ -170,10 +179,12 @@ GoldScout-export 6^o1c37gaea9cp^10
 @q^1801^0:4:0
 @q^1823^0:2:0
 @q^2221^0:4:0
+@q^2251^1:7:1
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2672^1:7:1
 @q^2819^2:2:0
+@q^2940^0:15:0
 @q^2983^2:4:0
 @q^3170^0:15:0
 @q^3173^1:7:1
@@ -184,6 +195,7 @@ GoldScout-export 6^o1c37gaea9cp^10
 @q^3674^0:15:0
 @q^3676^0:15:0
 @q^3685^1:7:1
+@q^3730^1:7:1
 @q^3731^1:7:1
 @q^3820^1:7:1
 @q^3857^1:7:1
@@ -193,6 +205,7 @@ GoldScout-export 6^o1c37gaea9cp^10
 @q^5448^0:15:0
 @q^5451^0:15:0
 @q^5471^1:7:1
+@q^5481^1:12:0
 @q^5523^1:7:0
 @q^5524^1:7:0
 @q^5566^0:15:0
@@ -405,12 +418,17 @@ GoldScout-export 6^o1c37gaea9cp^10
 @a^3712^122:1
 @a^3713^101:1
 @a^3717^101:1
+@a^3758^213:4
+@a^3759^213:3
+@a^3762^213:2,233:1
+@a^3763^213:2,233:2
 @a^3780^189:1
 @a^3797^212:1
 @a^3809^209:1,211:1,231:1,247:1
+@a^3810^232:3,253:1
 @a^3818^253:2,254:2
 @a^3819^227:1
-@a^3820^291:3
+@a^3820^253:1,291:3
 @a^3823^275:1
 @a^3824^271:1,291:1
 @a^3825^253:1,254:1

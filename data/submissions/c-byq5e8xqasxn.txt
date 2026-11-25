@@ -1,10 +1,21 @@
-GoldScout-export 7^byq5e8xqasxn^1
-262473^2^0^39^40^2548^0.3012^0.7084^2^Cinderscale Whelp^4402:1:1,4460:2:2^
-262477^1^0^42^42^2548^0.2969^0.7102^1^Cinderscale Warrior^^
+GoldScout-export 7^byq5e8xqasxn^2
+262473^8^0^39^40^2548^0.3042^0.7142^8^Cinderscale Whelp^4402:1:1,4460:6:6,6444:1:1,12011:1:1^
+262477^5^0^41^42^2548^0.3056^0.7221^5^Cinderscale Warrior^1645:1:1^
+263141^1^0^43^43^2548^0.3080^0.7254^1^Scaldaron^7490:1:1,8141:1:1^
+@i^1645^Moonberry Juice
 @i^4402^Small Flame Sac
 @i^4460^Ripped Wing Webbing
+@i^6444^Forked Tongue
+@i^7490^Captain's Boots of the Falcon
+@i^8141^Chromite Greaves
+@i^12011^Forest Hoop of the Monkey
+@q^1645^1:0:0
 @q^4402^1:7:1
 @q^4460^0:15:0
+@q^6444^0:15:0
+@q^7490^2:4:0
+@q^8141^2:4:0
+@q^12011^2:4:0
 @m^2548^Riverglades
 @c^724^
 @c^733^
@@ -147,8 +158,10 @@ GoldScout-export 7^byq5e8xqasxn^1
 @c^279981^
 @c^279982^
 @c^286152^
-@a^262473^286:2
-@a^262477^285:1
-@t^262473^1:47
-@t^262477^1:28
+@a^262473^285:1,286:7
+@a^262477^285:1,286:4
+@a^263141^286:1
+@t^262473^6:229
+@t^262477^3:153
+@t^263141^1:95
 @l^0^enUS
