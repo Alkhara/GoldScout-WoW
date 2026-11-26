@@ -1,5 +1,7 @@
-GoldScout-export 7^0s0in9dfp5aa^39
+GoldScout-export 7^0s0in9dfp5aa^40
+686^5^0^35^36^1434^0.3850^0.2567^5^Lashtail Raptor^3685:3:3,4461:2:2,12184:1:1^
 772^1^0^37^38^1434^0.4136^0.3926^1^Stranglethorn Tigress^1688:1:1^
+1152^1^0^35^35^1434^0.3965^0.2152^1^Snapjaw Crocolisk^770:1:1,12037:1:1^
 1973^9^0^20^21^1421^0.5809^0.7100^9^Ravenclaw Guardian^955:1:1,1179:1:1,1794:1:1,2589:3:5,271343:1:1,271350:1:1^
 1974^5^0^19^20^1421^0.5931^0.7119^5^Ravenclaw Drudger^4605:1:1,6530:2:2^
 2244^3^0^21^22^1424^0.7885^0.4353^3^Syndicate Shadow Mage^2592:1:1^
@@ -320,6 +322,7 @@ GoldScout-export 7^0s0in9dfp5aa^39
 264081^7^0^28^28^1412^0.3290^0.1061^7^Gloomrise Spinner^878:2:2,1081:1:1,3182:2:2,3931:2:2,273181:3:3^
 264082^1^0^30^30^1412^0.3378^0.0675^1^Broodmother Valraxx^273658:1:1^
 264083^6^0^28^29^1412^0.3303^0.1093^6^Gloomrise Soldier^1081:3:3,3167:2:2,3174:1:1,5465:2:2,248707:1:1^
+269175^2^0^37^37^1434^0.3532^0.2891^2^Carnivorous Weed^2450:1:1,256037:2:2^
 271698^2^0^23^23^1450^0.7184^0.6360^2^Restless Spirit^^
 271784^1^0^0^0^0^0.0000^0.0000^0^^3965:1:1,274028:1:1^
 274715^1^0^0^0^0^0.0000^0.0000^0^^3667:1:1^
@@ -472,6 +475,7 @@ GoldScout-export 7^0s0in9dfp5aa^39
 @i^4352^Pattern: Boots of the Enchanter
 @i^4402^Small Flame Sac
 @i^4428^Spider Palp
+@i^4461^Raptor Hide
 @i^4479^Burning Charm
 @i^4480^Thundering Charm
 @i^4537^Tel'Abim Banana
@@ -646,6 +650,7 @@ GoldScout-export 7^0s0in9dfp5aa^39
 @i^11418^Hollow Wing Bone
 @i^11993^Clay Ring of the Monkey
 @i^12037^Mystery Meat
+@i^12184^Raptor Flesh
 @i^12203^Red Wolf Meat
 @i^12205^White Spider Meat
 @i^12207^Giant Egg
@@ -734,6 +739,7 @@ GoldScout-export 7^0s0in9dfp5aa^39
 @i^253978^Pattern: Filigreed Silky Circlet
 @i^254877^Namida's Hoof
 @i^255645^Swollen Venom Sac
+@i^256037^Grass Clippings
 @i^262889^Sealed Expert's Writ
 @i^263992^Overseer's Keyring
 @i^270866^Titan Relic
@@ -917,6 +923,7 @@ GoldScout-export 7^0s0in9dfp5aa^39
 @q^4352^2:9:0
 @q^4402^1:7:1
 @q^4428^0:15:0
+@q^4461^1:7:1
 @q^4479^1:0:0
 @q^4480^1:0:0
 @q^4537^1:0:0
@@ -1091,6 +1098,7 @@ GoldScout-export 7^0s0in9dfp5aa^39
 @q^11418^0:15:0
 @q^11993^2:4:0
 @q^12037^1:7:1
+@q^12184^1:7:1
 @q^12203^1:7:1
 @q^12205^1:7:1
 @q^12207^1:7:1
@@ -1179,6 +1187,7 @@ GoldScout-export 7^0s0in9dfp5aa^39
 @q^253978^3:9:0
 @q^254877^1:12:0
 @q^255645^1:7:1
+@q^256037^0:15:0
 @q^262889^3:0:0
 @q^263992^1:13:0
 @q^270866^1:12:0
@@ -2210,7 +2219,9 @@ GoldScout-export 7^0s0in9dfp5aa^39
 @c^279982^
 @c^279990^
 @c^286152^
+@a^686^87:1,107:4
 @a^772^148:1
+@a^1152^87:1
 @a^1973^271:1,291:8
 @a^1974^291:5
 @a^2244^175:2,195:1
@@ -2384,10 +2395,14 @@ GoldScout-export 7^0s0in9dfp5aa^39
 @a^264081^26:3,46:4
 @a^264082^26:1
 @a^264083^26:1,46:5
+@a^269175^106:1,107:1
 @a^271698^254:1,274:1
+@t^686^5:712
+@t^1152^1:236
 @t^2655^1:98
 @t^2656^4:237
 @t^2691^1:75
 @t^2692^1:3
 @t^2926^1:176
+@t^269175^1:109
 @l^0^enUS

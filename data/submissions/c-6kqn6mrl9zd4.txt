@@ -1,4 +1,4 @@
-GoldScout-export 6^6kqn6mrl9zd4^22
+GoldScout-export 6^6kqn6mrl9zd4^23
 423^2^0^15^16^1433^0.1063^0.6083^2^Redridge Mongrel^1179:1:1,2589:1:1,2592:1:2^
 678^3^0^43^44^1434^0.5056^0.2750^3^Mosh'Ogg Mauler^3930:1:1,4306:1:4,4637:1:1,213543:1:1^
 679^4^0^43^44^1434^0.5153^0.2739^4^Mosh'Ogg Shaman^4306:1:3,4338:1:1^
@@ -36,10 +36,12 @@ GoldScout-export 6^6kqn6mrl9zd4^22
 2652^2^0^43^43^1425^0.3212^0.5830^2^Witherbark Venomblood^4306:1:1,4338:1:2,4599:1:1^
 2653^2^0^44^44^1425^0.3876^0.6624^2^Witherbark Sadist^1645:1:1,4306:1:1,9259:1:1^
 2654^1^0^46^46^1425^0.4001^0.6554^1^Witherbark Caller^1520:1:1,9259:1:1^
-2655^1^0^47^47^1425^0.5047^0.5452^1^Green Sludge^3676:1:1^
+2655^13^0^46^47^1425^0.4881^0.4932^13^Green Sludge^3676:3:3,4005:1:1,4021:1:1,8704:1:1,20763:2:2^
+2656^10^0^47^48^1425^0.5266^0.4645^10^Jade Ooze^3671:1:1,3676:2:2,7518:1:1,20763:1:1,20767:1:1^
 2680^1^0^46^47^1425^0.4459^0.6543^1^Vilebranch Wolf Pup^12203:1:1^
 2923^30^0^41^42^1425^0.1853^0.5218^30^Mangy Silvermane^4583:11:11,4584:4:4,6411:1:1,12203:14:14,12208:10:10,213545:1:1^
 2924^13^0^43^44^1425^0.2795^0.5607^13^Silvermane Wolf^4583:6:6,4584:1:1,8146:1:1,12203:9:9,12208:4:4^
+2926^1^0^47^48^1425^0.5418^0.4530^1^Silvermane Stalker^8146:1:1^
 2927^6^0^42^43^1425^0.2723^0.6067^6^Vicious Owlbeast^12207:3:3^
 4358^3^0^35^36^1445^0.5688^0.2126^3^Mirefin Puddlejumper^3827:1:1,17058:1:1^
 4359^3^0^35^36^1445^0.5682^0.2123^3^Mirefin Murloc^17057:1:1^
@@ -276,11 +278,13 @@ GoldScout-export 6^6kqn6mrl9zd4^22
 @i^3967^Thick Leather Shoulderpads
 @i^3989^Blocking Targe
 @i^4001^Overlinked Chain Boots
+@i^4005^Overlinked Chain Pants
 @i^4006^Overlinked Chain Shoulderpads
 @i^4016^Zanzil's Mixture
 @i^4018^Whetted Claymore
 @i^4019^Heavy Flint Axe
 @i^4020^Splintering Battle Axe
+@i^4021^Blunting Mace
 @i^4022^Crushing Maul
 @i^4026^Sentinel Musket
 @i^4029^Akiris Reed
@@ -330,6 +334,7 @@ GoldScout-export 6^6kqn6mrl9zd4^22
 @i^7070^Elemental Water
 @i^7079^Globe of Water
 @i^7475^Regal Cuffs of Shadow Protection
+@i^7518^Gossamer Robe of the Whale
 @i^7909^Aquamarine
 @i^7910^Star Ruby
 @i^7912^Solid Stone
@@ -343,6 +348,7 @@ GoldScout-export 6^6kqn6mrl9zd4^22
 @i^8399^Pattern: Tough Scorpid Boots
 @i^8483^Wastewander Water Pouch
 @i^8623^OOX-17 TN Distress Beacon
+@i^8704^OOX-09 HL Distress Beacon
 @i^8705^OOX-22 FE Distress Beacon
 @i^8707^Gahz'rilla's Electrified Scale
 @i^8723^Caliph Scorpidsting's Head
@@ -523,11 +529,13 @@ GoldScout-export 6^6kqn6mrl9zd4^22
 @q^3967^0:4:0
 @q^3989^0:4:0
 @q^4001^0:4:0
+@q^4005^0:4:0
 @q^4006^0:4:0
 @q^4016^1:12:0
 @q^4018^0:2:0
 @q^4019^0:2:0
 @q^4020^0:2:0
+@q^4021^0:2:0
 @q^4022^0:2:0
 @q^4026^0:2:0
 @q^4029^1:12:0
@@ -577,6 +585,7 @@ GoldScout-export 6^6kqn6mrl9zd4^22
 @q^7070^1:7:1
 @q^7079^1:7:1
 @q^7475^2:4:0
+@q^7518^2:4:0
 @q^7909^2:7:1
 @q^7910^2:7:1
 @q^7912^1:7:1
@@ -590,6 +599,7 @@ GoldScout-export 6^6kqn6mrl9zd4^22
 @q^8399^2:9:0
 @q^8483^1:12:0
 @q^8623^2:12:0
+@q^8704^2:12:0
 @q^8705^2:12:0
 @q^8707^1:12:0
 @q^8723^1:12:0
@@ -1454,10 +1464,12 @@ GoldScout-export 6^6kqn6mrl9zd4^22
 @a^2652^226:2
 @a^2653^267:1,268:1
 @a^2654^268:1
-@a^2655^210:1
+@a^2655^149:1,169:2,189:2,209:5,210:2,229:1
+@a^2656^149:1,171:4,189:1,191:1,209:3
 @a^2680^268:1
 @a^2923^183:6,184:2,203:15,204:2,223:3,224:2
 @a^2924^204:2,205:3,225:5,226:1,245:2
+@a^2926^190:1
 @a^2927^205:1,225:1,245:3,265:1
 @a^4358^91:3
 @a^4359^91:3

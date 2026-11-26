@@ -1,4 +1,8 @@
-GoldScout-export 7^7z1hvz9eaxak^5
+GoldScout-export 7^7z1hvz9eaxak^6
+587^25^0^33^34^1434^0.3381^0.1551^25^Guerrero Sangrapellejo^1520:4:4,1708:1:1,2592:1:1,2728:1:1,2730:1:1,2732:1:1,2735:2:2,2738:1:1,3901:6:6,4306:10:15^
+694^25^0^33^34^1434^0.3384^0.1562^25^Lanzahachas Sangrapellejo^2730:1:1,2735:1:1,2738:1:1,2748:1:1,3385:1:1,3771:1:1,3901:6:6,4306:8:11^
+697^34^0^33^34^1434^0.3386^0.1553^34^Chamán Sangrapellejo^1520:4:4,1708:1:1,2592:2:3,2732:1:1,2745:2:2,2748:1:1,3771:1:1,3901:13:13,4306:7:9^
+702^22^0^33^34^1434^0.3242^0.1353^22^Carroñero Sangrapellejo^1520:4:4,2742:1:1,2749:1:1,3901:5:5,4306:7:11^
 4341^1^0^35^36^1445^0.4847^0.2184^1^Crocolisco secorrón^770:1:1^
 4342^1^0^36^37^1445^0.4636^0.1997^1^Malafauce secorrón^15213:1:1^
 4352^6^0^36^37^1445^0.4674^0.1845^6^Estridador Cienorrojo^863:1:1,4461:2:2,4586:1:1,5637:1:1,12184:2:2^
@@ -32,10 +36,25 @@ GoldScout-export 7^7z1hvz9eaxak^5
 @i^770^Diente de crocolisco puntiagudo
 @i^863^Segadora penumbra del hechicero
 @i^1074^Punta de pata de araña dura
+@i^1520^Sudor trol
+@i^1708^Néctar dulce
 @i^1710^Poción de sanación superior
+@i^2592^Paño de lana
+@i^2728^Las verdes colinas de Tuercespina: Página 4
+@i^2730^Las verdes colinas de Tuercespina: Página 6
+@i^2732^Las verdes colinas de Tuercespina: Página 8
+@i^2735^Las verdes colinas de Tuercespina: Página 11
+@i^2738^Las verdes colinas de Tuercespina: Página 14
+@i^2742^Las verdes colinas de Tuercespina: Página 18
+@i^2745^Las verdes colinas de Tuercespina: Página 21
+@i^2748^Las verdes colinas de Tuercespina: Página 24
+@i^2749^Las verdes colinas de Tuercespina: Página 25
+@i^3385^Poción de maná inferior
 @i^3671^Calavera inerte
 @i^3712^Carne de tortuga
+@i^3771^Pata de marrano salvaje
 @i^3827^Poción de maná
+@i^3901^Colmillo Sangrapellejo
 @i^4306^Paño de seda
 @i^4337^Seda de araña espesa
 @i^4461^Pellejo de raptor
@@ -72,10 +91,25 @@ GoldScout-export 7^7z1hvz9eaxak^5
 @q^770^0:15:0
 @q^863^2:2:0
 @q^1074^0:15:0
+@q^1520^0:15:0
+@q^1708^1:0:0
 @q^1710^1:0:0
+@q^2592^1:7:1
+@q^2728^1:12:0
+@q^2730^1:12:0
+@q^2732^1:12:0
+@q^2735^1:12:0
+@q^2738^1:12:0
+@q^2742^1:12:0
+@q^2745^1:12:0
+@q^2748^1:12:0
+@q^2749^1:12:0
+@q^3385^1:0:0
 @q^3671^0:15:0
 @q^3712^1:7:1
+@q^3771^1:0:0
 @q^3827^1:0:0
+@q^3901^1:12:0
 @q^4306^1:7:1
 @q^4337^1:7:1
 @q^4461^1:7:1
@@ -109,6 +143,7 @@ GoldScout-export 7^7z1hvz9eaxak^5
 @q^248692^1:0:1
 @q^280203^1:12:0
 @q^285100^2:2:0
+@m^1434^Vega de Tuercespina
 @m^1443^Desolace
 @m^1445^Marjal Revolcafango
 @c^118^
@@ -799,6 +834,10 @@ GoldScout-export 7^7z1hvz9eaxak^5
 @c^285280^
 @c^285281^
 @c^286152^
+@a^587^46:7,66:18
+@a^694^46:7,66:18
+@a^697^46:10,66:24
+@a^702^46:22
 @a^4341^89:1
 @a^4342^69:1
 @a^4352^69:6
@@ -829,6 +868,10 @@ GoldScout-export 7^7z1hvz9eaxak^5
 @a^4718^27:1
 @a^4719^26:1,27:1,45:1,46:2,67:1
 @a^14232^69:1
+@t^587^15:972
+@t^694^21:957
+@t^697^26:1239
+@t^702^13:518
 @t^4341^1:121
 @t^4342^1:162
 @t^4352^6:206

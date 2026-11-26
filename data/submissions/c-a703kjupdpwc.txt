@@ -1,4 +1,4 @@
-GoldScout-export 7^a703kjupdpwc^14
+GoldScout-export 7^a703kjupdpwc^15
 2250^2^0^32^33^1416^0.3467^0.7052^2^Mountain Yeti^3781:1:1^
 2271^3^0^31^32^1416^0.1822^0.8981^3^Dalaran Shield Guard^^
 2272^1^0^33^33^1416^0.1749^0.9108^1^Dalaran Theurgist^^
@@ -78,6 +78,15 @@ GoldScout-export 7^a703kjupdpwc^14
 10758^5^0^25^26^1441^0.3533^0.2918^5^Grimtotem Bandit^1796:1:1,2592:2:3,4306:1:1^
 10759^3^0^26^27^1441^0.3484^0.2946^3^Grimtotem Stomper^3385:1:1,4306:1:2^
 10760^1^0^25^27^1441^0.3813^0.2699^1^Grimtotem Geomancer^^
+11318^4^0^0^0^0^0.0000^0.0000^0^^1507:1:1,1513:1:1,2287:1:1,2589:1:1,15945:1:1^
+11319^1^0^0^0^0^0.0000^0.0000^0^^1210:1:1^
+11321^2^0^0^0^0^0.0000^0.0000^0^^4784:1:1,15012:1:1^
+11322^5^0^0^0^0^0.0000^0.0000^0^^774:1:1,2287:1:1,3288:1:1,14396:1:1,15970:1:1^
+11323^5^0^0^0^0^0.0000^0.0000^0^^1499:1:1,1513:1:1,2589:2:5,4569:1:1,15013:1:1,15309:1:1,248702:1:1^
+11324^1^0^0^0^0^0.0000^0.0000^0^^^
+11517^1^0^0^0^0^0.0000^0.0000^0^^252772:1:1,272999:1:1^
+11519^1^0^0^0^0^0.0000^0.0000^0^^273005:1:1^
+11520^1^0^0^0^0^0.0000^0.0000^0^^14145:1:1,14540:1:1^
 12677^1^0^28^28^1440^0.5772^0.5565^1^Shadumbra^16304:1:1^
 12759^3^0^27^27^1440^0.4841^0.7047^3^Tideress^7070:1:1,9451:1:2,15343:1:1,16408:1:1,16645:1:1^
 245999^1^0^0^0^1416^0.0000^0.0000^0^^273031:1:1^
@@ -111,6 +120,7 @@ GoldScout-export 7^a703kjupdpwc^14
 @i^1081^Crisp Spider Meat
 @i^1181^Scroll of Spirit
 @i^1205^Melon Juice
+@i^1210^Shadowgem
 @i^1364^Ragged Leather Vest
 @i^1367^Ragged Leather Boots
 @i^1369^Ragged Leather Belt
@@ -128,6 +138,9 @@ GoldScout-export 7^a703kjupdpwc^14
 @i^1430^Patchwork Gloves
 @i^1431^Patchwork Pants
 @i^1475^Small Venom Sac
+@i^1499^Calico Pants
+@i^1507^Warped Leather Pants
+@i^1513^Old Greatsword
 @i^1707^Stormwind Brie
 @i^1783^Cross-stitched Gloves
 @i^1796^Rawhide Boots
@@ -136,6 +149,7 @@ GoldScout-export 7^a703kjupdpwc^14
 @i^2212^Cracked Buckler
 @i^2236^Blackfang
 @i^2251^Gooey Spider Leg
+@i^2287^Haunch of Meat
 @i^2406^Pattern: Fine Leather Boots
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
@@ -151,6 +165,7 @@ GoldScout-export 7^a703kjupdpwc^14
 @i^3171^Broken Boar Tusk
 @i^3186^Viking Sword of the Eagle
 @i^3281^Battle Chain Gloves
+@i^3288^Tribal Vest
 @i^3291^Ancestral Woollies
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
@@ -170,6 +185,7 @@ GoldScout-export 7^a703kjupdpwc^14
 @i^4553^Jagged Piece of Stone
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
+@i^4569^Staunch Hammer of Healing
 @i^4633^Heavy Bronze Lockbox
 @i^4702^Prospector's Pick
 @i^4739^Plainstrider Meat
@@ -230,13 +246,21 @@ GoldScout-export 7^a703kjupdpwc^14
 @i^11407^Torn Bear Pelt
 @i^12564^Assassination Note
 @i^14094^Beaded Wraps of the Owl
+@i^14145^Cursed Felblade
 @i^14162^Pagan Mitts of Spirit
+@i^14396^Incantations from the Nether
+@i^14540^Taragaman the Hungerer's Heart
 @i^14544^Lieutenant's Insignia
 @i^15003^Primal Belt
+@i^15012^Lupine Slippers of Power
+@i^15013^Lupine Cuffs
 @i^15015^Lupine Cloak
 @i^15118^Rigid Tunic of the Eagle
+@i^15309^Feral Cloak of the Owl
 @i^15343^Pathfinder Gloves of Power
 @i^15477^Charger's Pants of the Monkey
+@i^15945^Runic Stave
+@i^15970^Native Branch of the Monkey
 @i^16304^Shadumbra's Head
 @i^16408^Befouled Water Globe
 @i^16645^Shredder Operating Manual - Page 1
@@ -249,10 +273,14 @@ GoldScout-export 7^a703kjupdpwc^14
 @i^211786^Scroll: CHAP BALK WELLES
 @i^211855^Scroll: STHENIC LUNATE
 @i^213545^Scroll: PEATCHY ATTAX
+@i^248702^Waylaid Crate: Apprentice Fabrics
 @i^248706^Waylaid Crate: Journeyman Ingots
 @i^248707^Waylaid Crate: Journeyman Parts
 @i^251961^Arcane Mote
+@i^252772^Pattern: Trapper's Leather Armor
 @i^270302^Chakuyak's Pelt
+@i^272999^Barbaric Crossbow
+@i^273005^Satyrskin Cloak
 @i^273031^Runemender's Seal
 @i^273040^Spine of the Devourer
 @i^273045^Drape of Shifting Energy
@@ -277,6 +305,7 @@ GoldScout-export 7^a703kjupdpwc^14
 @q^1081^1:7:1
 @q^1181^1:0:0
 @q^1205^1:0:0
+@q^1210^2:7:1
 @q^1364^0:4:0
 @q^1367^0:4:0
 @q^1369^0:4:0
@@ -294,6 +323,9 @@ GoldScout-export 7^a703kjupdpwc^14
 @q^1430^0:4:0
 @q^1431^0:4:0
 @q^1475^1:7:1
+@q^1499^0:4:0
+@q^1507^0:4:0
+@q^1513^0:2:0
 @q^1707^1:0:0
 @q^1783^0:4:0
 @q^1796^0:4:0
@@ -302,6 +334,7 @@ GoldScout-export 7^a703kjupdpwc^14
 @q^2212^0:4:0
 @q^2236^3:2:0
 @q^2251^1:7:1
+@q^2287^1:0:0
 @q^2406^2:9:0
 @q^2589^1:7:1
 @q^2592^1:7:1
@@ -317,6 +350,7 @@ GoldScout-export 7^a703kjupdpwc^14
 @q^3171^0:15:0
 @q^3186^2:2:0
 @q^3281^1:4:0
+@q^3288^2:4:0
 @q^3291^2:4:0
 @q^3299^0:15:0
 @q^3300^0:15:0
@@ -336,6 +370,7 @@ GoldScout-export 7^a703kjupdpwc^14
 @q^4553^0:15:0
 @q^4555^0:15:0
 @q^4556^0:15:0
+@q^4569^2:2:0
 @q^4633^2:15:0
 @q^4702^1:12:0
 @q^4739^1:12:0
@@ -396,13 +431,21 @@ GoldScout-export 7^a703kjupdpwc^14
 @q^11407^1:12:0
 @q^12564^1:12:0
 @q^14094^2:4:0
+@q^14145^3:2:0
 @q^14162^2:4:0
+@q^14396^1:12:0
+@q^14540^1:12:0
 @q^14544^1:12:0
 @q^15003^1:4:0
+@q^15012^2:4:0
+@q^15013^1:4:0
 @q^15015^1:4:0
 @q^15118^2:4:0
+@q^15309^2:4:0
 @q^15343^2:4:0
 @q^15477^2:4:0
+@q^15945^2:4:0
+@q^15970^2:4:0
 @q^16304^2:12:0
 @q^16408^2:12:0
 @q^16645^1:12:0
@@ -415,10 +458,14 @@ GoldScout-export 7^a703kjupdpwc^14
 @q^211786^1:0:0
 @q^211855^1:0:0
 @q^213545^1:0:0
+@q^248702^2:0:1
 @q^248706^2:0:1
 @q^248707^2:0:1
 @q^251961^1:12:0
+@q^252772^3:9:0
 @q^270302^1:12:0
+@q^272999^3:2:0
+@q^273005^3:4:0
 @q^273031^3:4:0
 @q^273040^3:2:0
 @q^273045^3:4:0
@@ -1031,6 +1078,9 @@ GoldScout-export 7^a703kjupdpwc^14
 @c^279938^
 @c^279941^
 @c^279945^
+@c^279947^
+@c^279962^
+@c^279964^
 @c^279969^
 @c^279978^
 @c^279979^

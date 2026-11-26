@@ -1,4 +1,10 @@
-GoldScout-export 7^b0eqez9rqeni^10
+GoldScout-export 7^b0eqez9rqeni^11
+1888^3^0^18^18^1421^0.6155^0.7461^3^Dalaran Watcher^1793:1:1,2589:1:3^
+1973^27^0^20^21^1421^0.5821^0.7101^27^Ravenclaw Guardian^858:1:1,1179:1:1,1788:1:1,2589:7:15,2592:5:9,3377:1:1,4605:4:4,10407:1:1,271343:1:1^
+1974^24^0^19^20^1421^0.5846^0.7082^24^Ravenclaw Drudger^1179:1:1,2589:2:2,2592:5:6,6530:2:2,211853:1:1,271350:1:1^
+2283^1^0^22^22^1421^0.5708^0.7028^1^Ravenclaw Regent^6586:1:1^
+2350^2^0^21^21^1424^0.5919^0.2630^2^Forest Moss Creeper^1081:2:2^
+2351^1^0^21^21^1424^0.5841^0.2805^1^Gray Bear^11406:1:1^
 3234^1^0^14^15^1413^0.4213^0.3033^1^Lost Barrens Kodo^5467:1:1^
 3238^2^0^22^22^1413^0.4674^0.7551^2^Stormhide^4898:1:1,5143:1:1,5470:2:2^
 3239^6^0^20^21^1413^0.4563^0.6386^6^Thunderhead^5125:1:1,5128:2:2,5143:2:2,5470:1:1,6661:1:1^
@@ -103,7 +109,9 @@ GoldScout-export 7^b0eqez9rqeni^10
 @i^1742^Laced Mail Gloves
 @i^1745^Laced Mail Vest
 @i^1753^Linked Chain Vest
+@i^1788^Patched Leather Boots
 @i^1792^Patched Leather Pants
+@i^1793^Patched Leather Shoulderpads
 @i^1812^Short-handled Battle Axe
 @i^1815^Ornamental Mace
 @i^2079^Sergeant's Warhammer of Spirit
@@ -126,6 +134,7 @@ GoldScout-export 7^b0eqez9rqeni^10
 @i^3303^Brackwater Bracers
 @i^3307^Barbaric Cloth Boots
 @i^3375^Calico Bracers
+@i^3377^Canvas Bracers
 @i^3385^Lesser Mana Potion
 @i^3402^Soft Patch of Fur
 @i^3702^Bear Gall Bladder
@@ -136,6 +145,7 @@ GoldScout-export 7^b0eqez9rqeni^10
 @i^4537^Tel'Abim Banana
 @i^4555^Thick Scaly Tail
 @i^4571^War Knife of Magic
+@i^4605^Red-speckled Mushroom
 @i^4775^Cracked Bill
 @i^4776^Ruffled Feather
 @i^4813^Small Leather Collar
@@ -186,9 +196,12 @@ GoldScout-export 7^b0eqez9rqeni^10
 @i^5871^Large Hoof
 @i^6361^Raw Rainbow Fin Albacore
 @i^6444^Forked Tongue
+@i^6530^Nightcrawlers
+@i^6586^Scouting Gloves of Power
 @i^6661^Recipe: Savory Deviate Delight
 @i^6663^Recipe: Elixir of Giant Growth
 @i^10338^Fresh Zhevra Carcass
+@i^10407^Raider's Shoulderpads
 @i^11406^Rotting Bear Carcass
 @i^14117^Aboriginal Gloves of Fiery Wrath
 @i^14129^Ritual Sandals of the Whale
@@ -203,6 +216,7 @@ GoldScout-export 7^b0eqez9rqeni^10
 @i^16646^Shredder Operating Manual - Page 2
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
+@i^211853^Scroll: VOCE WELL
 @i^211854^Scroll: OMIT KESA
 @i^211855^Scroll: STHENIC LUNATE
 @i^248682^Waylaid Crate: Apprentice Herbs
@@ -210,6 +224,8 @@ GoldScout-export 7^b0eqez9rqeni^10
 @i^250182^Recipe: Bear Brisket
 @i^250187^Recipe: Tasty Raptor Bites
 @i^253710^Bruuz's Dorsal Fin
+@i^271343^Note Scrap
+@i^271350^Tortured Soul
 @i^277277^Olgra's Adornments
 @q^414^1:0:0
 @q^818^2:7:1
@@ -228,7 +244,9 @@ GoldScout-export 7^b0eqez9rqeni^10
 @q^1742^0:4:0
 @q^1745^0:4:0
 @q^1753^0:4:0
+@q^1788^0:4:0
 @q^1792^0:4:0
+@q^1793^0:4:0
 @q^1812^0:2:0
 @q^1815^0:2:0
 @q^2079^2:2:0
@@ -251,6 +269,7 @@ GoldScout-export 7^b0eqez9rqeni^10
 @q^3303^1:4:0
 @q^3307^2:4:0
 @q^3375^0:4:0
+@q^3377^0:4:0
 @q^3385^1:0:0
 @q^3402^0:15:0
 @q^3702^0:15:0
@@ -261,6 +280,7 @@ GoldScout-export 7^b0eqez9rqeni^10
 @q^4537^1:0:0
 @q^4555^0:15:0
 @q^4571^2:2:0
+@q^4605^1:0:0
 @q^4775^0:15:0
 @q^4776^0:15:0
 @q^4813^0:15:0
@@ -311,9 +331,12 @@ GoldScout-export 7^b0eqez9rqeni^10
 @q^5871^0:15:0
 @q^6361^1:7:1
 @q^6444^0:15:0
+@q^6530^1:0:0
+@q^6586^2:4:0
 @q^6661^2:9:0
 @q^6663^2:9:0
 @q^10338^1:12:0
+@q^10407^1:4:0
 @q^11406^0:15:0
 @q^14117^2:4:0
 @q^14129^2:4:0
@@ -328,6 +351,7 @@ GoldScout-export 7^b0eqez9rqeni^10
 @q^16646^1:12:0
 @q^17056^1:15:1
 @q^17057^1:15:0
+@q^211853^1:0:0
 @q^211854^1:0:0
 @q^211855^1:0:0
 @q^248682^1:0:1
@@ -335,8 +359,12 @@ GoldScout-export 7^b0eqez9rqeni^10
 @q^250182^1:9:0
 @q^250187^1:9:0
 @q^253710^1:12:0
+@q^271343^1:15:0
+@q^271350^1:12:0
 @q^277277^1:12:0
 @m^1413^The Barrens
+@m^1421^Silverpine Forest
+@m^1424^Hillsbrad Foothills
 @m^1440^Ashenvale
 @m^1442^Stonetalon Mountains
 @c^118^
@@ -1025,6 +1053,7 @@ GoldScout-export 7^b0eqez9rqeni^10
 @c^273937^
 @c^273938^
 @c^273939^
+@c^274490^
 @c^274971^
 @c^274976^
 @c^275610^
@@ -1101,6 +1130,12 @@ GoldScout-export 7^b0eqez9rqeni^10
 @c^279981^
 @c^279982^
 @c^286152^
+@a^1888^292:2,312:1
+@a^1973^271:3,291:24
+@a^1974^271:5,291:16,292:3
+@a^2283^291:1
+@a^2350^91:1,111:1
+@a^2351^111:1
 @a^3234^128:1
 @a^3238^289:1,309:1
 @a^3239^248:1,249:2,269:3
@@ -1188,6 +1223,11 @@ GoldScout-export 7^b0eqez9rqeni^10
 @a^12940^101:1
 @a^209797^152:1
 @a^268624^189:3,209:3,210:3,230:1
+@t^1888^2:91
+@t^1973^27:758
+@t^1974^24:670
+@t^2283^1:29
+@t^2351^1:57
 @t^3711^1:31
 @t^3712^3:294
 @t^3715^1:19
