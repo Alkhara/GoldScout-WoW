@@ -1,4 +1,4 @@
-GoldScout-export 6^fnaeeez8y0xl^22
+GoldScout-export 6^fnaeeez8y0xl^23
 587^39^0^33^34^1434^0.3178^0.1752^39^Bloodscalp Warrior^1519:3:3,1520:4:4,1708:2:2,3771:1:1,3786:1:1,3901:15:15,3915:10:10,4306:9:14,6396:1:1,7449:1:1,15232:1:1^
 686^1^0^36^36^1434^0.3269^0.2401^1^Lashtail Raptor^1696:1:1^
 694^40^0^33^34^1434^0.3135^0.1800^40^Bloodscalp Axe Thrower^1519:5:5,1708:1:1,2592:1:2,2730:2:2,2735:1:1,2740:1:1,2745:1:1,3771:1:1,3783:1:1,3816:1:1,3901:13:13,3915:4:4,4306:12:19^
@@ -84,6 +84,11 @@ GoldScout-export 6^fnaeeez8y0xl^22
 4541^1^0^0^0^0^0.0000^0.0000^0^^3676:1:1^
 4543^2^0^0^0^0^0.0000^0.0000^0^^4306:1:2,7685:1:1,274291:1:1^
 4623^3^0^0^0^0^0.0000^0.0000^0^^248705:1:1^
+4646^11^0^32^33^1443^0.3992^0.8434^11^Gelkis Outrunner^1708:1:1,4306:5:6,254432:3:3^
+4647^14^0^32^33^1443^0.4047^0.8543^14^Gelkis Scout^3385:2:2,3771:1:1,4306:5:6,254432:3:3^
+4648^5^0^33^34^1443^0.3719^0.8521^5^Gelkis Stamper^2592:1:2,3803:1:1,4306:1:1,14405:1:1,254432:1:1^
+4649^10^0^33^34^1443^0.3873^0.8344^10^Gelkis Windchaser^1708:1:1,3813:1:1,4306:5:7,254432:2:2^
+4651^5^0^34^35^1443^0.3820^0.8999^5^Gelkis Earthcaller^3794:1:1,3802:1:1,4306:2:4,213543:1:1,254432:3:3^
 4798^4^0^0^0^0^0.0000^0.0000^0^^954:1:1,1206:1:1,11081:1:1^
 4799^1^0^0^0^0^0.0000^0.0000^0^^1206:1:1^
 4802^1^0^21^21^1414^0.4377^0.3472^1^Blackfathom Tide Priestess^16790:1:1^
@@ -261,6 +266,10 @@ GoldScout-export 6^fnaeeez8y0xl^22
 @i^3783^Light Scimitar
 @i^3784^Metal Stave
 @i^3786^Shiny Dirk
+@i^3794^Interlaced Bracers
+@i^3802^Hardened Leather Bracers
+@i^3803^Hardened Cloak
+@i^3813^Double Mail Pants
 @i^3816^Reflective Heater
 @i^3820^Stranglekelp
 @i^3827^Mana Potion
@@ -410,6 +419,7 @@ GoldScout-export 6^fnaeeez8y0xl^22
 @i^21153^Raw Greater Sagefish
 @i^21228^Mithril Bound Trunk
 @i^211853^Scroll: VOCE WELL
+@i^213543^Scroll: UPDOG
 @i^213544^Scroll: TOPAZ YORAK
 @i^215375^Tactician's Staff
 @i^248686^Waylaid Crate: Journeyman Herbs
@@ -421,6 +431,7 @@ GoldScout-export 6^fnaeeez8y0xl^22
 @i^251345^Plans: Veteran's Chain Leggings
 @i^252792^Pattern: Brawler's Leather Pants
 @i^252816^Pattern: Defender's Leather Helm
+@i^254432^Carved Centaur Totem
 @i^262888^Sealed Journeyman's Writ
 @i^262889^Sealed Expert's Writ
 @i^270866^Titan Relic
@@ -543,6 +554,10 @@ GoldScout-export 6^fnaeeez8y0xl^22
 @q^3783^0:2:0
 @q^3784^0:2:0
 @q^3786^0:2:0
+@q^3794^0:4:0
+@q^3802^0:4:0
+@q^3803^0:4:0
+@q^3813^0:4:0
 @q^3816^0:4:0
 @q^3820^1:7:1
 @q^3827^1:0:0
@@ -692,6 +707,7 @@ GoldScout-export 6^fnaeeez8y0xl^22
 @q^21153^1:7:1
 @q^21228^1:15:0
 @q^211853^1:0:0
+@q^213543^1:0:0
 @q^213544^1:0:0
 @q^215375^1:2:0
 @q^248686^1:0:1
@@ -703,6 +719,7 @@ GoldScout-export 6^fnaeeez8y0xl^22
 @q^251345^3:9:0
 @q^252792^3:9:0
 @q^252816^3:9:0
+@q^254432^2:15:0
 @q^262888^3:0:0
 @q^262889^3:0:0
 @q^270866^1:12:0
@@ -734,6 +751,7 @@ GoldScout-export 6^fnaeeez8y0xl^22
 @m^1440^Ashenvale
 @m^1441^Thousand Needles
 @m^1442^Stonetalon Mountains
+@m^1443^Desolace
 @m^1446^Tanaris
 @m^1450^Moonglade
 @c^118^
@@ -1430,6 +1448,11 @@ GoldScout-export 6^fnaeeez8y0xl^22
 @a^4109^163:1
 @a^4119^191:1,211:1
 @a^4490^225:1
+@a^4646^307:1,327:2,328:2,348:6
+@a^4647^327:5,328:1,347:1,348:7
+@a^4648^307:2,347:3
+@a^4649^307:3,327:3,328:1,347:1,348:1,367:1
+@a^4651^347:3,367:2
 @a^4802^128:1
 @a^4803^128:1,148:1
 @a^6239^255:1

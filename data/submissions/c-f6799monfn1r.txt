@@ -1,4 +1,4 @@
-GoldScout-export 7^f6799monfn1r^25
+GoldScout-export 7^f6799monfn1r^26
 755^9^0^34^35^1435^0.3529^0.3826^9^Lost One Mudlurker^1710:1:1,3771:1:1,4306:4:6,4338:1:1^
 757^4^0^35^36^1435^0.4764^0.3216^4^Lost One Fisherman^8747:1:1,258530:1:1^
 759^14^0^36^37^1435^0.6011^0.2517^14^Lost One Hunter^1708:1:1,4306:3:6,4338:2:2^
@@ -148,8 +148,22 @@ GoldScout-export 7^f6799monfn1r^25
 246888^1^0^0^0^1416^0.0000^0.0000^0^^8183:1:1^
 246890^1^0^0^0^1416^0.0000^0.0000^0^^1809:1:1^
 247003^3^0^0^0^1416^0.0000^0.0000^0^^1830:1:1,6439:1:1,262888:1:1,276158:2:2^
+250618^16^0^0^0^0^0.0000^0.0000^0^^1499:1:1,1510:1:1,2589:1:2,2777:1:1,2778:1:1,4605:4:4,268535:7:7,268540:6:6^
+250622^4^0^0^0^0^0.0000^0.0000^0^^1179:1:1,1770:1:1,2632:1:1,9789:1:1^
+250624^3^0^0^0^0^0.0000^0.0000^0^^2657:1:1,4605:1:1,268540:1:1^
+250626^2^0^0^0^0^0.0000^0.0000^0^^6548:1:1,268540:2:2^
+250627^7^0^0^0^0^0.0000^0.0000^0^^268535:3:3^
+250630^2^0^0^0^0^0.0000^0.0000^0^^268535:1:1^
+250631^1^0^0^0^0^0.0000^0.0000^0^^271216:1:1^
+250657^1^0^0^0^0^0.0000^0.0000^0^^271215:1:1^
+250660^1^0^0^0^0^0.0000^0.0000^0^^268518:1:1,271204:1:1^
+250689^1^0^0^0^0^0.0000^0.0000^0^^4701:1:1^
 255071^1^0^0^0^1416^0.0000^0.0000^0^^8183:1:1^
+255109^1^0^0^0^0^0.0000^0.0000^0^^954:1:1,1790:1:1^
 255851^8^0^38^39^2548^0.7254^0.5023^8^Mature Paletusk^769:3:3,2295:3:3,3784:1:1^
+255964^2^0^0^0^0^0.0000^0.0000^0^^2980:1:1^
+256035^1^0^0^0^0^0.0000^0.0000^0^^271211:1:1^
+256097^1^0^0^0^0^0.0000^0.0000^0^^271210:1:1^
 258331^5^0^36^36^2548^0.4198^0.7479^5^Young Paletusk^2295:1:1^
 259046^2^0^38^39^2548^0.5324^0.8231^2^Freshwater Crocolisk^770:1:1^
 259267^4^0^36^37^2548^0.5165^0.8301^4^Plains Coyote^12203:3:3^
@@ -177,6 +191,8 @@ GoldScout-export 7^f6799monfn1r^25
 @i^1206^Moss Agate
 @i^1210^Shadowgem
 @i^1464^Buzzard Talon
+@i^1499^Calico Pants
+@i^1510^Heavy Hammer
 @i^1686^Bristly Whisker
 @i^1688^Long Soft Tail
 @i^1697^Keen Raptor Tooth
@@ -197,6 +213,7 @@ GoldScout-export 7^f6799monfn1r^25
 @i^1764^Canvas Shoes
 @i^1766^Canvas Cloak
 @i^1767^Canvas Gloves
+@i^1770^Canvas Vest
 @i^1777^Brocade Shoulderpads
 @i^1778^Brocade Vest
 @i^1788^Patched Leather Boots
@@ -220,12 +237,16 @@ GoldScout-export 7^f6799monfn1r^25
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2608^Threshadon Ambergris
-@i^2632^Curved Dagger of Healing
+@i^2632^Curved Dagger of Intellect
+@i^2657^Red Leather Bag
 @i^2764^Small Dagger
 @i^2765^Hunting Knife
+@i^2777^Feeble Shortbow
+@i^2778^Cheap Blunderbuss
 @i^2781^Dirty Blunderbuss
 @i^2843^Dirty Knucklebones
 @i^2924^Crocolisk Meat
+@i^2980^Veteran Gloves
 @i^3010^Fine Sand
 @i^3180^Flecked Raptor Scale
 @i^3181^Partially Digested Meat
@@ -283,10 +304,12 @@ GoldScout-export 7^f6799monfn1r^25
 @i^4585^Dripping Spider Mandible
 @i^4603^Raw Spotted Yellowtail
 @i^4604^Forest Mushroom Cap
+@i^4605^Red-speckled Mushroom
 @i^4606^Spongy Morel
 @i^4607^Delicious Cave Mold
 @i^4697^Burnished Girdle
 @i^4698^Seer's Mantle
+@i^4701^Inscribed Cloak
 @i^4784^Lifeless Stone
 @i^4787^Burning Pitch
 @i^5055^Intact Raptor Horn
@@ -342,6 +365,7 @@ GoldScout-export 7^f6799monfn1r^25
 @i^6471^Perfect Deviate Scale
 @i^6472^Stinging Viper
 @i^6473^Armor of the Fang
+@i^6548^Soldier's Girdle of Power
 @i^6604^Dervish Cape of the Gorilla
 @i^6627^Mutant Scale Breastplate
 @i^6630^Seedcloud Buckler
@@ -363,6 +387,7 @@ GoldScout-export 7^f6799monfn1r^25
 @i^8188^Explosive Shotgun
 @i^8747^Hardened Leather Helm
 @i^9766^Greenweave Sash of the Sorcerer
+@i^9789^Raider's Legguards of Power
 @i^9805^Superior Cloak of Fiery Wrath
 @i^9818^Fortified Chain of Magic
 @i^9877^Sorcerer Cloak of Frost Protection
@@ -439,6 +464,14 @@ GoldScout-export 7^f6799monfn1r^25
 @i^258530^Lucky Lure
 @i^262888^Sealed Journeyman's Writ
 @i^262889^Sealed Expert's Writ
+@i^268518^Head of the Baron
+@i^268535^Bloodied Insignia
+@i^268540^Bloodied Insignia
+@i^271204^Meathook Slicer
+@i^271210^Tuskwrap Belt
+@i^271211^Vilewalkers
+@i^271215^Coldspire Staff
+@i^271216^Scepter of the Abandoned
 @i^273022^Supple Bellyskin Leggings
 @i^273028^Reliquary Mantle
 @i^273034^Ephemeral Grips
@@ -465,6 +498,8 @@ GoldScout-export 7^f6799monfn1r^25
 @q^1206^2:7:1
 @q^1210^2:7:1
 @q^1464^0:15:0
+@q^1499^0:4:0
+@q^1510^0:2:0
 @q^1686^0:15:0
 @q^1688^0:15:0
 @q^1697^0:15:0
@@ -485,6 +520,7 @@ GoldScout-export 7^f6799monfn1r^25
 @q^1764^0:4:0
 @q^1766^0:4:0
 @q^1767^0:4:0
+@q^1770^0:4:0
 @q^1777^0:4:0
 @q^1778^0:4:0
 @q^1788^0:4:0
@@ -509,11 +545,15 @@ GoldScout-export 7^f6799monfn1r^25
 @q^2592^1:7:1
 @q^2608^0:15:0
 @q^2632^2:2:0
+@q^2657^1:1:0
 @q^2764^0:2:0
 @q^2765^0:2:0
+@q^2777^0:2:0
+@q^2778^0:2:0
 @q^2781^0:2:0
 @q^2843^1:12:0
 @q^2924^1:7:1
+@q^2980^2:4:0
 @q^3010^0:15:0
 @q^3180^0:15:0
 @q^3181^0:15:0
@@ -571,10 +611,12 @@ GoldScout-export 7^f6799monfn1r^25
 @q^4585^0:15:0
 @q^4603^1:7:1
 @q^4604^1:0:0
+@q^4605^1:0:0
 @q^4606^1:0:0
 @q^4607^1:0:0
 @q^4697^2:4:0
 @q^4698^1:4:0
+@q^4701^2:4:0
 @q^4784^0:15:0
 @q^4787^0:15:0
 @q^5055^1:12:0
@@ -630,6 +672,7 @@ GoldScout-export 7^f6799monfn1r^25
 @q^6471^1:7:1
 @q^6472^3:2:0
 @q^6473^3:4:0
+@q^6548^2:4:0
 @q^6604^2:4:0
 @q^6627^3:4:0
 @q^6630^3:4:0
@@ -651,6 +694,7 @@ GoldScout-export 7^f6799monfn1r^25
 @q^8188^2:2:0
 @q^8747^0:4:0
 @q^9766^2:4:0
+@q^9789^2:4:0
 @q^9805^2:4:0
 @q^9818^2:4:0
 @q^9877^2:4:0
@@ -727,6 +771,14 @@ GoldScout-export 7^f6799monfn1r^25
 @q^258530^1:12:0
 @q^262888^3:0:0
 @q^262889^3:0:0
+@q^268518^1:12:0
+@q^268535^1:12:0
+@q^268540^1:12:0
+@q^271204^3:2:0
+@q^271210^3:4:0
+@q^271211^3:4:0
+@q^271215^3:2:0
+@q^271216^3:2:0
 @q^273022^3:4:0
 @q^273028^3:4:0
 @q^273034^3:4:0
