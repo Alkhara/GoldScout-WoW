@@ -1,4 +1,4 @@
-GoldScout-export 7^hr6hu2uqty5d^35
+GoldScout-export 8^hr6hu2uqty5d^36
 92^4^0^39^40^1418^0.3350^0.6738^4^Felselementar^4552:1:1,4553:2:2,4627:3:3,7912:1:2,8150:1:1^
 588^1^0^35^35^1434^0.2272^0.1194^1^Späher der Bloodscalp^^
 597^3^0^36^37^1434^0.2333^0.0946^3^Berserker der Bloodscalp^4306:1:3^
@@ -89,12 +89,12 @@ GoldScout-export 7^hr6hu2uqty5d^35
 2944^1^0^42^42^1418^0.6143^0.6861^1^Boss Tho'grun^4640:1:1^
 3560^19^0^37^42^1418^0.4850^0.7036^12^Heilungszauberschutz^^
 4196^9^0^49^50^1446^0.4669^0.5172^9^Silithidschwarm^^
-4323^24^0^41^42^1445^0.4537^0.6663^24^Sengendes Jungtier^4402:4:4,4460:5:5,5840:9:9,5841:7:7,6444:1:1,7909:1:1,213544:1:1^
-4324^21^0^42^43^1445^0.4476^0.6614^21^Sengender Welpe^4402:3:3,4460:2:2,5840:6:6,5841:8:8,6444:4:4^
-4328^5^0^43^44^1445^0.4419^0.7213^5^Bannschuppe der Feuermähnen^^
+4323^26^0^41^42^1445^0.4613^0.6793^26^Sengendes Jungtier^4402:4:4,4460:5:5,5840:9:9,5841:7:7,6444:1:1,7909:1:1,213544:1:1^
+4324^23^0^42^43^1445^0.4565^0.6721^23^Sengender Welpe^4402:3:3,4460:2:2,5840:6:6,5841:8:8,6444:4:4^
+4328^47^0^43^44^1445^0.5278^0.7742^47^Bannschuppe der Feuermähnen^1645:3:3,3928:2:2,4002:1:1,248691:1:1,248694:1:1^
 4329^13^0^41^42^1445^0.4334^0.6616^13^Späher der Feuermähnen^^
 4331^11^0^42^43^1445^0.4428^0.6609^11^Aschenschweif der Feuermähnen^4599:1:1^
-4334^1^0^43^44^1445^0.4901^0.7362^1^Flammenrufer der Feuermähnen^^
+4334^52^0^43^44^1445^0.5298^0.7807^52^Flammenrufer der Feuermähnen^3986:1:1,4020:1:1,4599:4:4,4637:1:1^
 4343^2^0^37^38^1445^0.4806^0.6094^2^Staubsuhlerschnapper^770:2:3,3667:1:1^
 4345^1^0^40^41^1445^0.4925^0.7416^1^Staubsuhlerdolchrachen^770:1:2,3667:1:1^
 4391^1^0^38^38^1445^0.4982^0.6352^1^Sumpfbrühschlammer^3676:1:1^
@@ -236,10 +236,13 @@ GoldScout-export 7^hr6hu2uqty5d^35
 @i^3942^Häkelschulterpolster
 @i^3962^Dicke Lederstiefel
 @i^3963^Dicke Lederarmschienen
+@i^3986^Schutzpavese
+@i^4002^Doppelverbundkettenarmschienen
 @i^4007^Doppelverbundkettenrüstung
 @i^4016^Zanzils Mixtur
 @i^4017^Scharfes Kurzschwert
 @i^4018^Gewetztes Claymore
+@i^4020^Absplitternde Streitaxt
 @i^4023^Feiner Spitzdolch
 @i^4024^Schwerer Kriegsstab
 @i^4025^Ausbalancierter Langbogen
@@ -382,6 +385,7 @@ GoldScout-export 7^hr6hu2uqty5d^35
 @i^213546^Schriftrolle: SCHUBIDU
 @i^217161^Zerrissene mystische Schriftrolle
 @i^248690^Abgefangene Kiste: Weltliche Kräuter des Experten
+@i^248691^Abgefangene Kiste: Blühende Kräuter des Experten
 @i^248692^Abgefangene Kiste: Erz des Experten
 @i^248694^Abgefangene Kiste: Kuriositäten des Experten
 @i^248695^Abgefangene Kiste: Weltliche Kräuter des Fachmanns
@@ -454,10 +458,13 @@ GoldScout-export 7^hr6hu2uqty5d^35
 @q^3942^0:4:0
 @q^3962^0:4:0
 @q^3963^0:4:0
+@q^3986^0:4:0
+@q^4002^0:4:0
 @q^4007^0:4:0
 @q^4016^1:12:0
 @q^4017^0:2:0
 @q^4018^0:2:0
+@q^4020^0:2:0
 @q^4023^0:2:0
 @q^4024^0:2:0
 @q^4025^0:2:0
@@ -600,6 +607,7 @@ GoldScout-export 7^hr6hu2uqty5d^35
 @q^213546^1:0:0
 @q^217161^1:15:0
 @q^248690^1:0:1
+@q^248691^1:0:1
 @q^248692^1:0:1
 @q^248694^1:0:1
 @q^248695^1:0:1
@@ -939,12 +947,12 @@ GoldScout-export 7^hr6hu2uqty5d^35
 @a^2944^272:1
 @a^3560^269:5,289:7
 @a^4196^110:1,167:4,271:4
-@a^4323^248:3,249:1,268:9,269:11
-@a^4324^248:2,249:3,268:9,269:7
-@a^4328^267:2,289:2,309:1
+@a^4323^248:3,249:1,268:9,269:11,331:2
+@a^4324^248:2,249:3,268:9,269:7,290:1,331:1
+@a^4328^267:2,289:2,290:8,291:2,309:2,310:9,311:9,330:9,331:4
 @a^4329^248:3,267:1,268:9
 @a^4331^249:1,268:6,269:4
-@a^4334^289:1
+@a^4334^289:2,290:11,309:4,310:9,311:9,330:12,331:5
 @a^4343^229:1,269:1
 @a^4345^289:1
 @a^4391^249:1
@@ -1046,8 +1054,10 @@ GoldScout-export 7^hr6hu2uqty5d^35
 @t^2537^2:38
 @t^2541^1:33
 @t^4196^9:80
-@t^4328^2:118
-@t^4334^1:54
+@t^4323^2:151
+@t^4324^2:134
+@t^4328^44:1850
+@t^4334^51:1925
 @t^4345^1:54
 @t^4505^3:237
 @t^4506^1:33

@@ -1,4 +1,4 @@
-GoldScout-export 7^jk3wnj7ulhky^46
+GoldScout-export 7^jk3wnj7ulhky^47
 589^3^0^14^15^1436^0.4348^0.6898^3^Defias Pillager^1179:1:1^
 590^1^0^13^14^1436^0.4348^0.6898^1^Defias Looter^2589:1:1^
 750^3^0^42^43^1435^0.6501^0.8395^3^Marsh Inkspewer^7973:1:1^
@@ -237,6 +237,11 @@ GoldScout-export 7^jk3wnj7ulhky^46
 7273^1^0^0^0^0^0.0000^0.0000^0^^^
 7276^3^0^0^0^0^0.0000^0.0000^0^^1520:1:1,4338:1:4,8623:1:1^
 7286^3^0^0^0^0^0.0000^0.0000^0^^9523:1:1^
+7450^1^0^53^55^1452^0.4498^0.3794^1^Ragged Owlbeast^12207:1:1,15420:1:1^
+7451^4^0^54^56^1452^0.5744^0.3372^4^Raging Owlbeast^11420:1:1,12207:3:3,15420:1:1^
+7457^20^0^53^55^1452^0.4498^0.3989^20^Rogue Ice Thistle^8146:1:1,8754:1:1,15186:1:1^
+7458^11^0^55^56^1452^0.5909^0.3570^11^Ice Thistle Yeti^3945:1:1,3969:1:1,8146:1:1,8952:2:2,10306:1:1,258323:6:6,281015:1:1^
+7459^1^0^57^57^1452^0.6529^0.4271^1^Ice Thistle Matriarch^^
 7523^4^0^54^55^1452^0.5571^0.4302^4^Suffering Highborne^14047:1:2,21936:4:4^
 7524^8^0^55^56^1452^0.5566^0.4325^8^Anguished Highborne^7972:1:1,8766:1:1,14047:2:3,21936:8:8^
 7604^2^0^0^0^0^0.0000^0.0000^0^^3928:1:1,9242:1:1,248693:1:1^
@@ -358,6 +363,7 @@ GoldScout-export 7^jk3wnj7ulhky^46
 11076^1^0^56^56^1422^0.5310^0.6607^1^Cauldron Lord Razarch^12841:1:1,13197:1:1^
 11077^1^0^55^55^1422^0.4618^0.5243^1^Cauldron Lord Malvinious^12841:1:1,13195:1:1^
 11078^1^0^58^58^1422^0.6237^0.5878^1^Cauldron Lord Soulwrath^12841:1:1,13196:1:1^
+11190^1^0^57^57^1452^0.6148^0.3834^1^Everlook Bruiser^^
 11516^1^0^53^54^1448^0.6544^0.0678^1^Timbermaw Warder^^
 11553^1^0^52^53^1448^0.6544^0.0678^1^Timbermaw Woodbender^14047:1:2^
 11686^2^0^40^41^1414^0.3845^0.5789^2^Ghostly Raider^4306:1:1^
@@ -668,6 +674,7 @@ GoldScout-export 7^jk3wnj7ulhky^46
 @i^8704^OOX-09 HL Distress Beacon
 @i^8705^OOX-22 FE Distress Beacon
 @i^8746^Interlaced Cowl
+@i^8754^Twill Cover
 @i^8766^Morning Glory Dew
 @i^8839^Blindweed
 @i^8948^Dried King Bolete
@@ -806,6 +813,7 @@ GoldScout-export 7^jk3wnj7ulhky^46
 @i^14957^High Chief's Sabatons of the Prophet
 @i^14961^High Chief's Crown of the Champion
 @i^15169^Imposing Shoulders of Agility
+@i^15186^Praetorian Leggings of the Wolf
 @i^15216^Rune Sword of Intellect
 @i^15238^Warlord's Axe of Spirit
 @i^15252^Tusker Sword of the Beast
@@ -898,6 +906,7 @@ GoldScout-export 7^jk3wnj7ulhky^46
 @i^252909^Pattern: Charged Scorpid Belt
 @i^253341^Hyjal Owl Feather
 @i^255730^Manual: Surgical Tourniquet
+@i^258323^Missing Mail
 @i^262888^Sealed Journeyman's Writ
 @i^262889^Sealed Expert's Writ
 @i^262890^Sealed Artisan's Writ
@@ -1125,6 +1134,7 @@ GoldScout-export 7^jk3wnj7ulhky^46
 @q^8704^2:12:0
 @q^8705^2:12:0
 @q^8746^0:4:0
+@q^8754^0:4:0
 @q^8766^1:0:0
 @q^8839^1:7:1
 @q^8948^1:0:0
@@ -1263,6 +1273,7 @@ GoldScout-export 7^jk3wnj7ulhky^46
 @q^14957^2:4:0
 @q^14961^2:4:0
 @q^15169^2:4:0
+@q^15186^2:4:0
 @q^15216^2:2:0
 @q^15238^2:2:0
 @q^15252^2:2:0
@@ -1355,6 +1366,7 @@ GoldScout-export 7^jk3wnj7ulhky^46
 @q^252909^2:9:0
 @q^253341^1:12:0
 @q^255730^2:9:0
+@q^258323^1:12:0
 @q^262888^3:0:0
 @q^262889^3:0:0
 @q^262890^3:0:0
@@ -1800,6 +1812,11 @@ GoldScout-export 7^jk3wnj7ulhky^46
 @a^7156^32:5,52:3
 @a^7157^32:5,52:2
 @a^7158^32:5,52:2
+@a^7450^148:1
+@a^7451^130:1,131:3
+@a^7457^147:1,148:5,149:3,150:2,166:1,167:2,168:1,169:4,190:1
+@a^7458^110:1,130:2,131:4,151:1,173:3
+@a^7459^173:1
 @a^7523^170:1,171:3
 @a^7524^170:1,171:7
 @a^7668^191:1,192:1,210:1,211:2,212:2,230:2
@@ -1878,6 +1895,7 @@ GoldScout-export 7^jk3wnj7ulhky^46
 @a^11076^270:1
 @a^11077^209:1
 @a^11078^232:1
+@a^11190^152:1
 @a^11516^33:1
 @a^11553^33:1
 @a^11686^227:2
@@ -1963,6 +1981,12 @@ GoldScout-export 7^jk3wnj7ulhky^46
 @a^276138^289:1,290:2
 @a^278137^293:12
 @t^3560^9:379
+@t^7450^1:214
+@t^7451^3:160
+@t^7457^18:1677
+@t^7458^10:602
+@t^7459^1:1
+@t^11190^1:198
 @t^243509^10:421
 @t^248041^1:5
 @t^248395^20:1270

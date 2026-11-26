@@ -1,4 +1,4 @@
-GoldScout-export 8^gmgkhw2mg17m^62
+GoldScout-export 8^gmgkhw2mg17m^63
 36^1^0^11^11^1436^0.3320^0.3822^1^Harvest Golem^1506:1:1^
 114^2^0^14^15^1436^0.3748^0.5132^2^Harvest Watcher^732:2:2,814:1:1,1274:1:1^
 122^1^0^17^17^1436^0.3627^0.8307^1^Defias Highwayman^^
@@ -14,6 +14,7 @@ GoldScout-export 8^gmgkhw2mg17m^62
 595^33^0^34^35^1434^0.2528^0.1144^33^Bloodscalp Hunter^1477:1:1,2592:1:3,2732:2:2,2740:1:1,2751:1:1,3771:5:5,3802:1:1,3901:4:4,3915:14:14,4306:14:22,9846:1:1,213545:1:1,277957:1:1^
 597^1^0^36^36^1434^0.2525^0.1280^1^Bloodscalp Berserker^^
 681^5^0^30^31^1434^0.3545^0.1345^5^Young Stranglethorn Tiger^1686:2:2,9827:1:1,12202:2:2^
+686^3^0^35^36^1434^0.3683^0.2428^3^Lashtail Raptor^1696:2:2,4461:2:2,5637:1:1,8146:1:1,12184:1:1^
 697^1^0^33^34^1434^0.3362^0.1380^1^Bloodscalp Shaman^4306:1:1,9845:1:1^
 699^3^0^34^35^1434^0.2571^0.1051^3^Bloodscalp Beastmaster^4306:1:2^
 701^21^0^34^35^1434^0.2487^0.1162^21^Bloodscalp Mystic^2592:1:2,2740:1:1,2742:1:1,3385:1:1,3771:4:4,3803:1:1,3901:4:4,3915:6:6,4306:7:10^
@@ -510,6 +511,7 @@ GoldScout-export 8^gmgkhw2mg17m^62
 @i^1645^Moonberry Juice
 @i^1686^Bristly Whisker
 @i^1688^Long Soft Tail
+@i^1696^Curved Raptor Talon
 @i^1701^Curved Basilisk Claw
 @i^1702^Intact Basilisk Spine
 @i^1705^Lesser Moonstone
@@ -683,6 +685,7 @@ GoldScout-export 8^gmgkhw2mg17m^62
 @i^4377^Heavy Blasting Powder
 @i^4421^Scroll of Protection III
 @i^4428^Spider Palp
+@i^4461^Raptor Hide
 @i^4536^Shiny Red Apple
 @i^4538^Snapvine Watermelon
 @i^4539^Goldenbark Apple
@@ -811,6 +814,7 @@ GoldScout-export 8^gmgkhw2mg17m^62
 @i^7718^Herod's Shoulder
 @i^7726^Aegis of the Scarlet Commander
 @i^7756^Dog Training Gloves
+@i^8146^Wicked Claw
 @i^8162^Jouster's Legplates
 @i^8179^Cadet's Bow
 @i^8746^Interlaced Cowl
@@ -853,6 +857,7 @@ GoldScout-export 8^gmgkhw2mg17m^62
 @i^11407^Torn Bear Pelt
 @i^11418^Hollow Wing Bone
 @i^12037^Mystery Meat
+@i^12184^Raptor Flesh
 @i^12202^Tiger Meat
 @i^12203^Red Wolf Meat
 @i^12205^White Spider Meat
@@ -1064,6 +1069,7 @@ GoldScout-export 8^gmgkhw2mg17m^62
 @q^1645^1:0:0
 @q^1686^0:15:0
 @q^1688^0:15:0
+@q^1696^0:15:0
 @q^1701^0:15:0
 @q^1702^0:15:0
 @q^1705^2:7:1
@@ -1237,6 +1243,7 @@ GoldScout-export 8^gmgkhw2mg17m^62
 @q^4377^1:7:1
 @q^4421^1:0:0
 @q^4428^0:15:0
+@q^4461^1:7:1
 @q^4536^1:0:0
 @q^4538^1:0:0
 @q^4539^1:0:0
@@ -1365,6 +1372,7 @@ GoldScout-export 8^gmgkhw2mg17m^62
 @q^7718^3:4:0
 @q^7726^3:4:0
 @q^7756^3:4:0
+@q^8146^1:7:1
 @q^8162^2:4:0
 @q^8179^1:2:0
 @q^8746^0:4:0
@@ -1407,6 +1415,7 @@ GoldScout-export 8^gmgkhw2mg17m^62
 @q^11407^1:12:0
 @q^11418^0:15:0
 @q^12037^1:7:1
+@q^12184^1:7:1
 @q^12202^1:7:1
 @q^12203^1:7:1
 @q^12205^1:7:1
@@ -3607,6 +3616,7 @@ GoldScout-export 8^gmgkhw2mg17m^62
 @a^595^25:10,44:9,45:14
 @a^597^45:1
 @a^681^46:1,47:3,67:1
+@a^686^87:3
 @a^697^46:1
 @a^699^25:2,45:1
 @a^701^25:6,44:8,45:7
@@ -3886,6 +3896,7 @@ GoldScout-export 8^gmgkhw2mg17m^62
 @a^275437^253:4,273:4
 @a^276020^196:1
 @a^277882^52:1
+@t^686^2:97
 @t^1525^4:108
 @t^1526^3:237
 @t^1535^17:640

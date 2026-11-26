@@ -1,4 +1,4 @@
-GoldScout-export 8^fzp5d5fqs9vq^25
+GoldScout-export 8^fzp5d5fqs9vq^27
 587^1^0^34^34^1434^0.2826^0.1930^1^Krieger der Bloodscalp^1519:1:1,4306:1:2^
 588^4^0^34^35^1434^0.2367^0.1213^4^Späher der Bloodscalp^1708:1:1,2592:1:1,3792:1:1,4306:1:1^
 595^12^0^34^35^1434^0.2500^0.1230^12^Jäger der Bloodscalp^1519:3:3,1708:1:1,2290:1:1,4306:6:10^
@@ -20,7 +20,7 @@ GoldScout-export 8^fzp5d5fqs9vq^25
 740^7^0^34^35^1435^0.1405^0.6117^7^Halbwüchsiger Welpe^4402:1:1,5803:3:3^
 741^5^0^35^36^1435^0.1534^0.5990^5^Träumender Welpe^4402:1:1,4459:1:1,5803:1:1^
 755^1^0^34^35^1435^0.4473^0.3491^1^Matschlauerer der Verirrten^4306:1:2^
-757^4^0^35^36^1435^0.5304^0.3045^4^Angler der Verirrten^^
+757^5^0^35^36^1435^0.5326^0.3010^5^Angler der Verirrten^258530:1:1^
 759^3^0^36^37^1435^0.5756^0.2727^3^Jäger der Verirrten^^
 760^5^0^36^37^1435^0.6338^0.2303^5^Matschkrabbler der Verirrten^4306:4:4^
 761^1^0^37^37^1435^0.6045^0.2382^1^Seher der Verirrten^^
@@ -28,11 +28,11 @@ GoldScout-export 8^fzp5d5fqs9vq^25
 764^17^0^38^39^1435^0.2523^0.3854^17^Sumpfwandler^1708:1:1,2450:1:1,3827:1:1,4607:1:1,6065:1:1^
 765^5^0^39^40^1435^0.1080^0.3388^5^Sumpfwandlerältester^^
 766^3^0^40^41^1435^0.4176^0.4005^3^Wuchernder Schrecken^4607:1:1,10286:2:2^
-767^12^0^36^37^1435^0.2877^0.4586^12^Sumpfjaguar^1686:4:4,1688:8:8,5637:1:1^
+767^13^0^36^37^1435^0.3024^0.4542^13^Sumpfjaguar^1686:4:4,1688:9:9,5637:1:1^
 772^6^0^37^38^1434^0.4915^0.2412^6^Schlingendorntigerin^1686:2:2,12202:2:2^
 856^1^0^33^33^1434^0.3104^0.2325^1^Junger Schmetterschwanz^3685:1:1^
 858^8^0^36^37^1435^0.3078^0.4635^8^Trauerspinner^1074:1:1,4337:2:2,4585:6:6,5637:2:2,12205:3:3^
-862^1^0^37^38^1435^0.6392^0.1732^1^Forscherin von Stonard^^
+862^1^0^37^38^1435^0.6392^0.1732^1^Forscher von Stonard^^
 937^13^0^32^33^1434^0.4458^0.0999^13^Kurzens Dschungelkämpfer^1707:2:2,1710:1:1,2592:1:1,2749:1:1,4306:5:8^
 938^11^0^34^35^1434^0.4569^0.0790^11^Kurzens Kommandosoldat^1708:1:1,2290:1:1,2745:1:1,3781:1:1,3806:1:1,4306:6:9^
 939^3^0^36^37^1434^0.4868^0.0863^3^Kurzens Elitesoldat^2745:1:1,4306:1:2,216616:1:1^
@@ -121,6 +121,8 @@ GoldScout-export 8^fzp5d5fqs9vq^25
 12922^1^0^38^38^1435^0.6120^0.2074^1^Wichteldiener^^
 13019^1^0^33^33^1443^0.5517^0.3009^1^Seher der Burning Blade^4306:1:2,15750:1:1^
 14280^1^0^27^27^1424^0.8507^0.4760^1^Samras^4707:1:1,5635:1:1,6394:1:1^
+262037^4^0^37^38^2548^0.6024^0.8497^4^Nistender Nachtsauger^11394:4:4^
+272228^1^0^36^37^2548^0.5506^0.7381^1^Erntewächter^4306:1:2^
 @i^729^Sehniges Geierfleisch
 @i^770^Spitzer Krokiliskenzahn
 @i^1074^Harte Spinnenbeinspitze
@@ -252,6 +254,7 @@ GoldScout-export 8^fzp5d5fqs9vq^25
 @i^11384^Zerbrochene Basiliskenzähne
 @i^11385^Basiliskenschuppe
 @i^11386^Matschiges Basiliskenauge
+@i^11394^Fledermausherz
 @i^11416^Zierlicher Brustkorb
 @i^12037^Eigenartiges Fleisch
 @i^12040^Waldanhänger des Affen
@@ -281,6 +284,7 @@ GoldScout-export 8^fzp5d5fqs9vq^25
 @i^248691^Abgefangene Kiste: Blühende Kräuter des Experten
 @i^248708^Abgefangene Kiste: Stoffe des Experten
 @i^254432^Geschnitztes Zentaurentotem
+@i^258530^Glücksköder
 @i^260347^Zerlumptes Tagebuch
 @i^262888^Versiegelte Verfügung des Gesellen
 @i^262889^Versiegelte Verfügung des Experten
@@ -415,6 +419,7 @@ GoldScout-export 8^fzp5d5fqs9vq^25
 @q^11384^0:15:0
 @q^11385^0:15:0
 @q^11386^0:15:0
+@q^11394^0:15:0
 @q^11416^0:15:0
 @q^12037^1:7:1
 @q^12040^2:4:0
@@ -444,6 +449,7 @@ GoldScout-export 8^fzp5d5fqs9vq^25
 @q^248691^1:0:1
 @q^248708^2:0:1
 @q^254432^2:15:0
+@q^258530^1:12:0
 @q^260347^1:15:0
 @q^262888^3:0:0
 @q^262889^3:0:0
@@ -455,6 +461,7 @@ GoldScout-export 8^fzp5d5fqs9vq^25
 @m^1441^Tausend Nadeln
 @m^1443^Desolace
 @m^1445^Marschen von Dustwallow
+@m^2548^Flusslande
 @m^2652^Shen'dralas
 @c^118^
 @c^724^
@@ -933,7 +940,7 @@ GoldScout-export 8^fzp5d5fqs9vq^25
 @a^740^222:1,223:1,242:2,243:2,262:1
 @a^741^222:1,223:2,243:1,263:1
 @a^755^128:1
-@a^757^110:1,129:1,130:1,131:1
+@a^757^110:2,129:1,130:1,131:1
 @a^759^111:2,130:1
 @a^760^72:1,73:1,112:3
 @a^761^92:1
@@ -941,7 +948,7 @@ GoldScout-export 8^fzp5d5fqs9vq^25
 @a^764^122:2,142:3,143:4,149:2,150:1,163:3,169:1,170:1
 @a^765^121:2,122:2,142:1
 @a^766^122:1,151:1,211:1
-@a^767^106:1,125:1,126:1,128:2,165:1,185:1,223:1,224:1,244:1,245:2
+@a^767^106:1,125:1,126:1,128:2,165:1,169:1,185:1,223:1,224:1,244:1,245:2
 @a^772^89:3,90:2,109:1
 @a^856^86:1
 @a^858^107:1,128:2,165:1,185:1,244:2,245:1
@@ -1034,6 +1041,8 @@ GoldScout-export 8^fzp5d5fqs9vq^25
 @a^12922^92:1
 @a^13019^131:1
 @a^14280^197:1
+@a^262037^332:2,352:2
+@a^272228^291:1
 @t^588^3:133
 @t^595^12:751
 @t^597^5:114
@@ -1061,5 +1070,6 @@ GoldScout-export 8^fzp5d5fqs9vq^25
 @t^1082^3:196
 @t^1084^7:261
 @t^3560^5:156
+@t^262037^3:175
 @f^1445^0^28^200^4603:7:7,6358:1:1,6359:2:2,6362:18:18^231:28
 @l^0^deDE
