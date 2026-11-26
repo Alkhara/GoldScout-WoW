@@ -1,21 +1,33 @@
-GoldScout-export 6^6n9ngcfp350v^4
+GoldScout-export 6^6n9ngcfp350v^5
 1770^1^0^12^12^1421^0.5202^0.2484^1^Moonrage Darkrunner^^
 1866^3^0^11^12^1421^0.5355^0.1522^3^Ravenclaw Slave^2589:1:2,4346:1:1,4605:1:1^
 3035^1^0^8^8^1412^0.3607^0.4266^1^Flatland Cougar^4802:1:1^
+3241^2^0^15^16^1413^0.4580^0.1570^2^Savannah Patriarch^4813:2:2,269715:1:1^
+3245^1^0^16^16^1413^0.4415^0.1407^1^Ornery Plainstrider^17056:1:1^
+3256^1^0^16^18^1413^0.4519^0.1367^1^Sunscale Scytheclaw^3180:1:1^
 @i^2589^Linen Cloth
+@i^3180^Flecked Raptor Scale
 @i^4346^Pattern: Heavy Woolen Cloak
 @i^4605^Red-speckled Mushroom
 @i^4802^Cougar Claws
+@i^4813^Small Leather Collar
 @i^6303^Raw Slitherskin Mackerel
 @i^6358^Oily Blackmouth
 @i^6361^Raw Rainbow Fin Albacore
+@i^17056^Light Feather
+@i^269715^Savannah Lion Hide
 @q^2589^1:7:1
+@q^3180^0:15:0
 @q^4346^2:9:0
 @q^4605^1:0:0
 @q^4802^1:12:0
+@q^4813^0:15:0
 @q^6303^1:7:1
 @q^6358^1:7:1
 @q^6361^1:7:1
+@q^17056^1:15:1
+@q^269715^1:12:0
+@m^1411^Durotar
 @m^1412^Mulgore
 @m^1413^The Barrens
 @m^1421^Silverpine Forest
@@ -50,9 +62,16 @@ GoldScout-export 6^6n9ngcfp350v^4
 @c^255722^
 @c^279940^
 @c^279951^
+@c^279965^
+@c^279966^
+@c^279967^
 @c^279968^
 @a^1770^90:1
 @a^1866^50:1,70:2
 @a^3035^167:1
+@a^3241^49:1,69:1
+@a^3245^48:1
+@a^3256^49:1
+@f^1411^0^7^82^6303:7:7^31:7
 @f^1413^0^10^75^6303:2:2,6358:1:1,6361:7:7^152:10
 @l^0^enUS

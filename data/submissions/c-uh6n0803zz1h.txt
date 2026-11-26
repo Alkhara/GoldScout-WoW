@@ -1,4 +1,4 @@
-GoldScout-export 6^uh6n0803zz1h^19
+GoldScout-export 6^uh6n0803zz1h^20
 428^58^0^18^19^1433^0.5175^0.7281^58^Cóndor temible^556:9:9,1080:28:28,1464:4:4,4775:23:23,4776:9:9,5114:4:4,6561:1:1,6889:35:35,17056:15:15,211853:1:1,248702:1:1,250188:1:1^
 429^1^0^25^25^1433^0.7055^0.3039^1^Tejeoscuro Pielsombra^^
 431^1^0^26^26^1433^0.7054^0.3054^1^Destripador Pielsombra^^
@@ -38,6 +38,7 @@ GoldScout-export 6^uh6n0803zz1h^19
 2588^1^0^37^37^1417^0.2605^0.5868^1^Merodeador de la Hermandad^4306:1:4,4440:1:1^
 2592^2^0^38^38^1417^0.3724^0.5857^2^Exiliado resonador^4553:2:2,4784:1:1,7912:2:4^
 2623^1^0^33^33^1416^0.2618^0.6442^1^Espíritu de lo antiguo^^
+2729^2^0^40^40^1418^0.0960^0.6152^2^Coyote del risco mayor^4582:1:1,4583:1:1,7846:2:2,12203:1:1^
 3560^1^0^37^37^1434^0.2423^0.1083^1^Guarda de sanación^^
 4074^1^0^23^23^1442^0.6676^0.5605^1^XT 9^^
 4343^1^0^37^37^1445^0.4109^0.3713^1^Sacudidor secorrón^770:1:1,14207:1:1^
@@ -59,6 +60,7 @@ GoldScout-export 6^uh6n0803zz1h^19
 5044^4^0^36^36^1445^0.4238^0.3781^4^Hostigador de Theramore^4306:1:3,213546:1:1^
 5045^2^0^36^36^1445^0.4253^0.3801^2^Soldado Hallan^4306:1:3^
 5046^2^0^37^37^1445^0.4234^0.3781^2^Teniente Caldwell^1707:1:1^
+6549^1^0^40^40^1445^0.4601^0.5676^1^Demonio del orbe^^
 11560^8^0^38^39^2652^0.3410^0.3118^8^Espectro centauro^15849:8:8^
 11561^3^0^38^43^2652^0.3330^0.2309^3^Devastador no-muerto^14595:1:1^
 11910^1^0^15^15^1442^0.8173^0.8796^1^Rufiana Tótem Siniestro^^
@@ -169,6 +171,7 @@ GoldScout-export 6^uh6n0803zz1h^19
 @i^4513^Corazón de raptor
 @i^4539^Manzana de Corteza de oro
 @i^4553^Trozo de piedra dentado
+@i^4582^Cola tupida suave
 @i^4583^Melena espesa
 @i^4585^Mandíbula de araña chorreando
 @i^4586^Piel de raptor lisa
@@ -200,6 +203,7 @@ GoldScout-export 6^uh6n0803zz1h^19
 @i^7441^Gorro de centinela del bandido
 @i^7447^Brazales de centinela del bandido
 @i^7463^Rodela de centinela del profeta
+@i^7846^Colmillo de coyote del risco
 @i^7912^Piedra sólida
 @i^7990^Diseño: yelmo de mitril pesado
 @i^8150^Sal de roca
@@ -330,6 +334,7 @@ GoldScout-export 6^uh6n0803zz1h^19
 @q^4513^1:12:0
 @q^4539^1:0:0
 @q^4553^0:15:0
+@q^4582^1:12:0
 @q^4583^0:15:0
 @q^4585^0:15:0
 @q^4586^0:15:0
@@ -361,6 +366,7 @@ GoldScout-export 6^uh6n0803zz1h^19
 @q^7441^2:4:0
 @q^7447^2:4:0
 @q^7463^2:4:0
+@q^7846^1:12:0
 @q^7912^1:7:1
 @q^7990^2:9:0
 @q^8150^1:7:1
@@ -425,6 +431,7 @@ GoldScout-export 6^uh6n0803zz1h^19
 @q^279046^0:15:0
 @m^1416^Montañas de Alterac
 @m^1417^Tierras Altas de Arathi
+@m^1418^Tierras Inhóspitas
 @m^1421^Bosque de Argénteos
 @m^1424^Laderas de Trabalomas
 @m^1433^Montañas Crestagrana
@@ -834,6 +841,7 @@ GoldScout-export 6^uh6n0803zz1h^19
 @a^2588^225:1
 @a^2592^227:2
 @a^2623^245:1
+@a^2729^221:1,242:1
 @a^3560^44:1
 @a^4074^233:1
 @a^4343^148:1
@@ -855,6 +863,7 @@ GoldScout-export 6^uh6n0803zz1h^19
 @a^5044^148:4
 @a^5045^148:2
 @a^5046^148:2
+@a^6549^229:1
 @a^11560^106:1,126:7
 @a^11561^26:1,106:1,126:1
 @a^11910^356:1
