@@ -1,4 +1,4 @@
-GoldScout-export 7^frkmwvxujppy^48
+GoldScout-export 7^frkmwvxujppy^49
 30^3^0^5^6^1429^0.3728^0.6601^3^Forest Spider^1476:2:2,5465:2:3^
 36^18^0^11^12^1436^0.5337^0.3470^18^Harvest Golem^732:6:6,814:8:8,1274:4:4,1516:1:1,2409:1:1,2961:1:1,4361:1:1,255007:10:10,255010:1:1^
 94^5^0^5^6^1429^0.3812^0.5672^5^Defias Cutpurse^1416:1:1,2070:2:2,2589:2:4^
@@ -7,6 +7,7 @@ GoldScout-export 7^frkmwvxujppy^48
 116^6^0^8^9^1429^0.3870^0.7386^6^Defias Bandit^2589:1:1,2774:1:1^
 118^1^0^9^10^1429^0.8876^0.7323^1^Prowler^3300:1:1^
 121^2^0^15^16^1436^0.3879^0.7000^2^Defias Pathstalker^1499:1:1,2589:1:2^
+124^9^0^15^16^1436^0.5229^0.6164^9^Riverpaw Brute^725:5:5,955:1:1,2589:1:3,248684:1:1^
 126^15^0^12^13^1436^0.5425^0.1048^15^Murloc Coastrunner^730:7:7,1733:1:1,3013:1:1,5523:3:3,6289:1:2,211780:1:1,254548:6:6^
 199^17^0^10^11^1436^0.5512^0.3593^17^Young Fleshripper^555:5:5,729:3:3,2963:1:1,3399:2:2,4757:6:6,4775:1:1,6889:12:12,7096:3:3,7097:1:1,17056:8:8^
 299^1^0^1^1^1429^0.4187^0.6041^1^Young Wolf^4865:1:1^
@@ -19,6 +20,7 @@ GoldScout-export 7^frkmwvxujppy^48
 437^2^0^21^21^1433^0.3825^0.1837^2^Blackrock Renegade^^
 445^4^0^21^22^1433^0.1610^0.1862^4^Redridge Alpha^1751:1:1,2592:1:1^
 446^52^0^19^20^1433^0.1570^0.1927^52^Redridge Basher^858:1:1,1179:1:1,1212:5:5,1768:1:1,1770:1:1,1791:1:1,1813:1:1,1816:1:1,2287:3:3,2589:10:15,2592:7:10,3012:1:1,15222:1:1^
+452^10^0^16^17^1436^0.5075^0.6239^10^Riverpaw Bandit^725:3:3,858:1:1,1817:1:1,2592:3:3,6542:1:1,6552:1:1^
 454^29^0^12^13^1436^0.5399^0.4052^29^Young Goretusk^723:8:8,731:8:8,769:27:27,771:2:2,2677:11:11,2957:1:1,3171:6:6,3172:13:13^
 474^4^0^9^10^1429^0.2920^0.6164^4^Defias Rogue Wizard^1414:1:1,1438:1:1,4665:1:1^
 481^1^0^11^11^1436^0.5681^0.1897^1^Defias Footpad^^
@@ -286,6 +288,7 @@ GoldScout-export 7^frkmwvxujppy^48
 @i^414^Dalaran Sharp
 @i^555^Rough Vulture Feathers
 @i^723^Goretusk Liver
+@i^725^Gnoll Paw
 @i^729^Stringy Vulture Meat
 @i^730^Murloc Eye
 @i^731^Goretusk Snout
@@ -366,6 +369,7 @@ GoldScout-export 7^frkmwvxujppy^48
 @i^1812^Short-handled Battle Axe
 @i^1813^Chipped Quarterstaff
 @i^1816^Unbalanced Axe
+@i^1817^Stock Shortsword
 @i^2070^Darnassian Bleu
 @i^2091^Magic Dust
 @i^2138^Sharpened Letter Opener
@@ -570,6 +574,8 @@ GoldScout-export 7^frkmwvxujppy^48
 @i^6251^Nether Wing
 @i^6252^Doomwarder Blood
 @i^6289^Raw Longjaw Mud Snapper
+@i^6291^Raw Brilliant Smallfish
+@i^6292^10 Pound Mud Snapper
 @i^6308^Raw Bristle Whisker Catfish
 @i^6336^Infantry Tunic of the Boar
 @i^6359^Firefin Snapper
@@ -579,6 +585,8 @@ GoldScout-export 7^frkmwvxujppy^48
 @i^6444^Forked Tongue
 @i^6509^Infantry Belt
 @i^6518^Pioneer Boots
+@i^6542^Willow Cape of Spirit
+@i^6552^Bard's Tunic of Defense
 @i^6560^Soldier's Shield of the Defender
 @i^6580^Defender Tunic of Strength
 @i^6767^Tyranis' Pendant
@@ -685,6 +693,7 @@ GoldScout-export 7^frkmwvxujppy^48
 @i^213547^Scroll: THAW WORDS
 @i^216483^Witherbark Mallet
 @i^216616^Compound Cage Key
+@i^248684^Waylaid Crate: Apprentice Textiles
 @i^248686^Waylaid Crate: Journeyman Herbs
 @i^248687^Waylaid Crate: Journeyman Ore
 @i^248688^Waylaid Crate: Journeyman Textiles
@@ -713,6 +722,7 @@ GoldScout-export 7^frkmwvxujppy^48
 @q^414^1:0:0
 @q^555^0:15:0
 @q^723^1:7:1
+@q^725^1:12:0
 @q^729^1:7:1
 @q^730^1:7:1
 @q^731^1:7:1
@@ -793,6 +803,7 @@ GoldScout-export 7^frkmwvxujppy^48
 @q^1812^0:2:0
 @q^1813^0:2:0
 @q^1816^0:2:0
+@q^1817^0:2:0
 @q^2070^1:0:0
 @q^2091^1:0:0
 @q^2138^0:2:0
@@ -997,6 +1008,8 @@ GoldScout-export 7^frkmwvxujppy^48
 @q^6251^1:12:0
 @q^6252^1:12:0
 @q^6289^1:7:1
+@q^6291^1:7:1
+@q^6292^1:15:0
 @q^6308^1:7:1
 @q^6336^2:4:0
 @q^6359^1:7:1
@@ -1006,6 +1019,8 @@ GoldScout-export 7^frkmwvxujppy^48
 @q^6444^0:15:0
 @q^6509^1:4:0
 @q^6518^1:4:0
+@q^6542^2:4:0
+@q^6552^2:4:0
 @q^6560^2:4:0
 @q^6580^2:4:0
 @q^6767^1:12:0
@@ -1112,6 +1127,7 @@ GoldScout-export 7^frkmwvxujppy^48
 @q^213547^1:0:0
 @q^216483^1:0:0
 @q^216616^1:12:0
+@q^248684^1:0:1
 @q^248686^1:0:1
 @q^248687^1:0:1
 @q^248688^1:0:1
@@ -1149,6 +1165,7 @@ GoldScout-export 7^frkmwvxujppy^48
 @m^1442^Stonetalon Mountains
 @m^1443^Desolace
 @m^1445^Dustwallow Marsh
+@m^1453^Stormwind City
 @m^2548^Riverglades
 @m^2652^Shen'dralas
 @c^118^
@@ -2402,6 +2419,7 @@ GoldScout-export 7^frkmwvxujppy^48
 @a^116^245:2,265:1,329:3
 @a^118^297:1
 @a^121^287:2
+@a^124^229:1,230:1,249:2,250:5
 @a^126^30:1,31:4,50:9,51:1
 @a^199^70:1,91:1,112:2,132:2,149:2,150:2,151:1,170:4,171:1,190:1
 @a^299^248:1
@@ -2414,6 +2432,7 @@ GoldScout-export 7^frkmwvxujppy^48
 @a^437^67:2
 @a^445^62:3,85:1
 @a^446^42:4,43:4,62:16,63:7,82:8,83:6,85:1,102:2,105:4
+@a^452^249:6,250:4
 @a^454^111:1,112:1,150:8,151:1,170:12,171:3,190:2,191:1
 @a^474^245:4
 @a^481^71:1
@@ -2679,6 +2698,8 @@ GoldScout-export 7^frkmwvxujppy^48
 @a^270196^229:1
 @t^94^1:3
 @t^116^3:338
+@t^124^7:501
+@t^452^10:399
 @t^474^4:233
 @t^525^1:99
 @t^1172^5:160
@@ -2698,7 +2719,9 @@ GoldScout-export 7^frkmwvxujppy^48
 @t^2237^5:412
 @t^2338^4:587
 @t^2339^9:719
+@f^1429^0^42^8^6289:19:19,6291:22:22,6292:1:1^249:42
 @f^1434^0^3^150^3820:1:3,6308:1:1,21150:1:1^26:2,247:1
 @f^1443^0^5^150^6308:1:1,6359:1:1,8365:2:2,21151:1:1^107:5
 @f^1445^0^3^150^3820:2:5,6359:1:1^132:1,172:2
+@f^1453^0^7^1^6289:4:4,6308:3:3^270:7
 @l^0^enUS

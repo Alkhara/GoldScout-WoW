@@ -1,4 +1,4 @@
-GoldScout-export 7^p8dyx7lrl9u0^6
+GoldScout-export 7^p8dyx7lrl9u0^7
 314^2^0^31^31^1431^0.2885^0.3087^2^Eliza^887:1:1,2382:1:1,4306:1:1^
 522^1^0^35^35^1431^0.1746^0.4009^1^Mor'Ladim^3514:1:1^
 587^13^0^33^34^1434^0.2921^0.2029^13^Bloodscalp Warrior^1519:5:5,1520:2:2,1711:1:1,3781:1:1,4306:3:4^
@@ -26,6 +26,9 @@ GoldScout-export 7^p8dyx7lrl9u0^6
 4015^1^0^25^25^1442^0.4540^0.3936^1^Pridewing Patriarch^5135:1:1,6601:1:1^
 4020^1^0^23^23^1442^0.3803^0.1842^1^Sap Beast^6454:1:1^
 4040^6^0^21^22^1437^0.4918^0.6089^6^Cave Stalker^878:1:1,1081:1:1,1288:1:1,2251:1:1,3174:2:2,9812:1:1^
+4139^1^0^33^33^1441^0.8389^0.7231^1^Scorpid Terror^5794:1:1^
+4143^2^0^34^35^1441^0.8354^0.6749^2^Sparkleshell Snapper^4556:1:1,5795:1:1,5974:1:1^
+4151^1^0^32^33^1441^0.8423^0.6792^1^Saltstone Crystalhide^1701:1:1^
 4692^1^0^32^33^1443^0.6705^0.5948^1^Dread Swoop^3404:1:1,12037:1:1^
 11576^1^0^34^34^1443^0.6002^0.3919^1^Whirlwind Ripper^^
 260803^13^0^27^28^1437^0.5118^0.6260^13^Highland Spider^1074:1:1,1756:1:1,1782:1:1,2251:3:3,2766:1:1,2786:1:1,3182:1:1,5001:1:1,12047:1:1^
@@ -86,11 +89,15 @@ GoldScout-export 7^p8dyx7lrl9u0^6
 @i^4306^Silk Cloth
 @i^4428^Spider Palp
 @i^4461^Raptor Hide
+@i^4556^Speckled Shell Fragment
 @i^4586^Smooth Raptor Skin
 @i^4721^Insignia Mantle
 @i^5001^Heart Ring
 @i^5135^Thin Black Claw
 @i^5637^Large Fang
+@i^5794^Salty Scorpid Venom
+@i^5795^Hardened Tortoise Shell
+@i^5974^Pattern: Guardian Cloak
 @i^6407^Nightsky Wristbands
 @i^6454^Manual: Strong Anti-Venom
 @i^6601^Dervish Boots of Agility
@@ -157,11 +164,15 @@ GoldScout-export 7^p8dyx7lrl9u0^6
 @q^4306^1:7:1
 @q^4428^0:15:0
 @q^4461^1:7:1
+@q^4556^0:15:0
 @q^4586^0:15:0
 @q^4721^2:4:0
 @q^5001^2:4:0
 @q^5135^0:15:0
 @q^5637^1:7:1
+@q^5794^1:12:0
+@q^5795^1:12:0
+@q^5974^2:9:0
 @q^6407^2:4:0
 @q^6454^2:9:0
 @q^6601^2:4:0
@@ -175,6 +186,7 @@ GoldScout-export 7^p8dyx7lrl9u0^6
 @m^1431^Duskwood
 @m^1434^Stranglethorn Vale
 @m^1437^Wetlands
+@m^1441^Thousand Needles
 @m^1442^Stonetalon Mountains
 @m^1443^Desolace
 @c^724^
@@ -1052,6 +1064,9 @@ GoldScout-export 7^p8dyx7lrl9u0^6
 @a^4015^149:1
 @a^4020^67:1
 @a^4040^229:1,230:2,249:2,250:1
+@a^4139^296:1
+@a^4143^256:1,296:1
+@a^4151^276:1
 @a^4692^233:1
 @a^11576^152:1
 @a^260803^250:12,270:1

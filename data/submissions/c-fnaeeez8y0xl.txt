@@ -1,4 +1,4 @@
-GoldScout-export 6^fnaeeez8y0xl^23
+GoldScout-export 6^fnaeeez8y0xl^24
 587^39^0^33^34^1434^0.3178^0.1752^39^Bloodscalp Warrior^1519:3:3,1520:4:4,1708:2:2,3771:1:1,3786:1:1,3901:15:15,3915:10:10,4306:9:14,6396:1:1,7449:1:1,15232:1:1^
 686^1^0^36^36^1434^0.3269^0.2401^1^Lashtail Raptor^1696:1:1^
 694^40^0^33^34^1434^0.3135^0.1800^40^Bloodscalp Axe Thrower^1519:5:5,1708:1:1,2592:1:2,2730:2:2,2735:1:1,2740:1:1,2745:1:1,3771:1:1,3783:1:1,3816:1:1,3901:13:13,3915:4:4,4306:12:19^
@@ -89,6 +89,15 @@ GoldScout-export 6^fnaeeez8y0xl^23
 4648^5^0^33^34^1443^0.3719^0.8521^5^Gelkis Stamper^2592:1:2,3803:1:1,4306:1:1,14405:1:1,254432:1:1^
 4649^10^0^33^34^1443^0.3873^0.8344^10^Gelkis Windchaser^1708:1:1,3813:1:1,4306:5:7,254432:2:2^
 4651^5^0^34^35^1443^0.3820^0.8999^5^Gelkis Earthcaller^3794:1:1,3802:1:1,4306:2:4,213543:1:1,254432:3:3^
+4670^5^0^31^32^1443^0.7350^0.2168^5^Hatefury Rogue^4306:2:3,213543:1:1^
+4671^3^0^31^32^1443^0.7596^0.2056^3^Hatefury Trickster^^
+4672^6^0^31^32^1443^0.7733^0.1816^6^Hatefury Felsworn^4306:1:2^
+4673^5^0^32^33^1443^0.7377^0.2102^5^Hatefury Betrayer^2592:2:4,3771:1:1,4306:1:1,14200:1:1^
+4674^1^0^32^33^1443^0.7613^0.2385^1^Hatefury Shadowstalker^4306:1:1^
+4675^5^0^32^33^1443^0.7644^0.2057^5^Hatefury Hellcaller^2290:1:1,2592:1:1,14581:1:1^
+4695^2^0^36^37^1443^0.5332^0.5985^2^Carrion Horror^5116:2:2^
+4701^1^0^36^36^1443^0.5405^0.6116^1^Dying Kodo^12204:1:1^
+4729^1^0^36^36^1443^0.7977^0.1696^1^Hulking Gritjaw Basilisk^1701:1:1^
 4798^4^0^0^0^0^0.0000^0.0000^0^^954:1:1,1206:1:1,11081:1:1^
 4799^1^0^0^0^0^0.0000^0.0000^0^^1206:1:1^
 4802^1^0^21^21^1414^0.4377^0.3472^1^Blackfathom Tide Priestess^16790:1:1^
@@ -185,6 +194,7 @@ GoldScout-export 6^fnaeeez8y0xl^23
 @i^1686^Bristly Whisker
 @i^1696^Curved Raptor Talon
 @i^1697^Keen Raptor Tooth
+@i^1701^Curved Basilisk Claw
 @i^1705^Lesser Moonstone
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
@@ -379,6 +389,7 @@ GoldScout-export 6^fnaeeez8y0xl^23
 @i^12037^Mystery Meat
 @i^12047^Spectral Necklace of the Hierophant
 @i^12203^Red Wolf Meat
+@i^12204^Heavy Kodo Meat
 @i^12564^Assassination Note
 @i^12946^Hypercapacitor Gizmo
 @i^12982^Silver-linked Footguards
@@ -392,9 +403,11 @@ GoldScout-export 6^fnaeeez8y0xl^23
 @i^13885^34 Pound Redgill
 @i^14129^Ritual Sandals of Stamina
 @i^14185^Watcher's Cinch of Fire Protection
+@i^14200^Thistlefur Cap of the Eagle
 @i^14373^Sanguine Belt
 @i^14400^Resilient Cape
 @i^14405^Resilient Robe
+@i^14581^Dokebi Chestguard
 @i^14608^Dokebi Buckler
 @i^14755^Slayer's Sash
 @i^15111^Rigid Moccasins of Spirit
@@ -473,6 +486,7 @@ GoldScout-export 6^fnaeeez8y0xl^23
 @q^1686^0:15:0
 @q^1696^0:15:0
 @q^1697^0:15:0
+@q^1701^0:15:0
 @q^1705^2:7:1
 @q^1707^1:0:0
 @q^1708^1:0:0
@@ -667,6 +681,7 @@ GoldScout-export 6^fnaeeez8y0xl^23
 @q^12037^1:7:1
 @q^12047^2:4:0
 @q^12203^1:7:1
+@q^12204^1:7:1
 @q^12564^1:12:0
 @q^12946^1:12:0
 @q^12982^3:4:0
@@ -680,9 +695,11 @@ GoldScout-export 6^fnaeeez8y0xl^23
 @q^13885^1:15:0
 @q^14129^2:4:0
 @q^14185^2:4:0
+@q^14200^2:4:0
 @q^14373^2:4:0
 @q^14400^2:4:0
 @q^14405^2:4:0
+@q^14581^2:4:0
 @q^14608^2:4:0
 @q^14755^2:4:0
 @q^15111^2:4:0
@@ -1453,6 +1470,15 @@ GoldScout-export 6^fnaeeez8y0xl^23
 @a^4648^307:2,347:3
 @a^4649^307:3,327:3,328:1,347:1,348:1,367:1
 @a^4651^347:3,367:2
+@a^4670^74:1,94:3,115:1
+@a^4671^75:1,95:2
+@a^4672^75:4,94:1,95:1
+@a^4673^74:2,94:2,95:1
+@a^4674^95:1
+@a^4675^55:1,74:1,94:1,95:1,115:1
+@a^4695^230:1,250:1
+@a^4701^250:1
+@a^4729^75:1
 @a^4802^128:1
 @a^4803^128:1,148:1
 @a^6239^255:1
