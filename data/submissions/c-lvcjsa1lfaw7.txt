@@ -1,4 +1,14 @@
-GoldScout-export 8^lvcjsa1lfaw7^41
+GoldScout-export 8^lvcjsa1lfaw7^42
+1520^2^0^6^7^1420^0.4713^0.3675^2^Rattlecage Soldier^118:1:1,3013:1:1,3162:1:1^
+1522^11^0^7^8^1420^0.4670^0.3371^11^Darkeye Bonecaster^159:1:1,1430:1:1,2589:2:3,3163:3:3,4604:2:2^
+1523^9^0^8^9^1420^0.4470^0.3287^9^Cracked Skull Soldier^159:1:1,805:1:1,1422:1:1,2589:2:3,3162:4:4,4604:1:1^
+1536^3^0^7^8^1420^0.5205^0.6716^3^Scarlet Missionary^1412:1:1,2589:1:2^
+1537^10^0^8^9^1420^0.5253^0.6738^10^Scarlet Zealot^768:1:1,2589:2:3,2875:7:7,6520:1:1^
+1654^1^0^10^10^1420^0.4629^0.2980^1^Gregor Agamand^2589:1:1,2829:1:1^
+1655^1^0^10^10^1420^0.4923^0.3666^1^Nissa Agamand^2828:1:1^
+1656^1^0^10^10^1420^0.4343^0.3237^1^Thurman Agamand^2589:1:1,2830:1:1^
+1657^1^0^9^9^1420^0.4731^0.4148^1^Devlin Agamand^2589:1:2,2831:1:1^
+1662^1^0^9^9^1420^0.5238^0.6758^1^Captain Perrine^2644:1:1,2875:1:1,4663:1:1^
 1783^3^0^50^51^1422^0.3855^0.5487^3^Skeletal Flayer^7972:2:2,8948:1:1,12840:2:2,14047:1:1^
 1784^2^0^51^51^1422^0.3844^0.5474^2^Skeletal Sorcerer^8948:1:1,12840:1:1,13443:1:1^
 1785^8^0^52^54^1422^0.4750^0.5047^8^Skeletal Terror^12840:4:4,13446:1:1,14047:3:5^
@@ -291,8 +301,15 @@ GoldScout-export 8^lvcjsa1lfaw7^41
 14523^1^0^57^57^1448^0.4035^0.4859^1^Ulathek^^
 14564^24^0^59^60^1423^0.1601^0.2755^24^Terrordale Spirit^8766:1:1,8948:1:1,10385:1:1,12841:7:7,14047:8:16,248713:1:1^
 15200^1^0^60^60^1451^0.2758^0.3716^1^Twilight Keeper Mayna^20394:1:1^
+@i^118^Minor Healing Potion
+@i^159^Refreshing Spring Water
+@i^768^Lumberjack Axe
+@i^805^Small Red Pouch
 @i^858^Lesser Healing Potion
 @i^1074^Hard Spider Leg Tip
+@i^1412^Crude Bastard Sword
+@i^1422^Worn Leather Gloves
+@i^1430^Patchwork Gloves
 @i^1645^Moonberry Juice
 @i^1688^Long Soft Tail
 @i^1708^Sweet Nectar
@@ -300,7 +317,17 @@ GoldScout-export 8^lvcjsa1lfaw7^41
 @i^1711^Scroll of Stamina II
 @i^1830^Long Bastard Sword
 @i^1973^Orb of Deception
+@i^2589^Linen Cloth
+@i^2644^Loose Chain Cloak
 @i^2799^Gorilla Fang
+@i^2828^Nissa's Remains
+@i^2829^Gregor's Remains
+@i^2830^Thurman's Remains
+@i^2831^Devlin's Remains
+@i^2875^Scarlet Insignia Ring
+@i^3013^Scroll of Protection
+@i^3162^Notched Rib
+@i^3163^Blackened Skull
 @i^3357^Liferoot
 @i^3385^Lesser Mana Potion
 @i^3669^Gelatinous Goo
@@ -343,7 +370,9 @@ GoldScout-export 8^lvcjsa1lfaw7^41
 @i^4590^Curved Yellow Bill
 @i^4599^Cured Ham Steak
 @i^4603^Raw Spotted Yellowtail
+@i^4604^Forest Mushroom Cap
 @i^4608^Raw Black Truffle
+@i^4663^Journeyman's Belt
 @i^4787^Burning Pitch
 @i^4791^Enchanted Water
 @i^5128^Shed Lizard Skin
@@ -361,6 +390,7 @@ GoldScout-export 8^lvcjsa1lfaw7^41
 @i^6302^Delicate Insect Wing
 @i^6308^Raw Bristle Whisker Catfish
 @i^6444^Forked Tongue
+@i^6520^Pioneer Cloak
 @i^6530^Nightcrawlers
 @i^6609^Sage's Cloth of Spirit
 @i^6826^Brilliant Scale
@@ -615,8 +645,15 @@ GoldScout-export 8^lvcjsa1lfaw7^41
 @i^276419^Lightcrest Hammer
 @i^281015^Scroll: DOST OREM
 @i^281018^Scroll: RARE SERVICHI RADAR
+@q^118^1:0:0
+@q^159^1:0:0
+@q^768^1:2:0
+@q^805^1:1:0
 @q^858^1:0:0
 @q^1074^0:15:0
+@q^1412^0:2:0
+@q^1422^0:4:0
+@q^1430^0:4:0
 @q^1645^1:0:0
 @q^1688^0:15:0
 @q^1708^1:0:0
@@ -624,7 +661,17 @@ GoldScout-export 8^lvcjsa1lfaw7^41
 @q^1711^1:0:0
 @q^1830^0:2:0
 @q^1973^3:4:0
+@q^2589^1:7:1
+@q^2644^0:4:0
 @q^2799^1:12:0
+@q^2828^1:12:0
+@q^2829^1:12:0
+@q^2830^1:12:0
+@q^2831^1:12:0
+@q^2875^1:12:0
+@q^3013^1:0:0
+@q^3162^1:12:0
+@q^3163^1:12:0
 @q^3357^1:7:1
 @q^3385^1:0:0
 @q^3669^0:15:0
@@ -667,7 +714,9 @@ GoldScout-export 8^lvcjsa1lfaw7^41
 @q^4590^0:15:0
 @q^4599^1:0:0
 @q^4603^1:7:1
+@q^4604^1:0:0
 @q^4608^1:0:0
+@q^4663^1:4:0
 @q^4787^0:15:0
 @q^4791^1:0:0
 @q^5128^0:15:0
@@ -685,6 +734,7 @@ GoldScout-export 8^lvcjsa1lfaw7^41
 @q^6302^0:15:0
 @q^6308^1:7:1
 @q^6444^0:15:0
+@q^6520^1:4:0
 @q^6530^1:0:0
 @q^6609^2:4:0
 @q^6826^0:15:0
@@ -939,6 +989,7 @@ GoldScout-export 8^lvcjsa1lfaw7^41
 @q^276419^3:2:0
 @q^281015^1:0:0
 @q^281018^1:0:0
+@m^1420^Tirisfal Glades
 @m^1422^Western Plaguelands
 @m^1423^Eastern Plaguelands
 @m^1424^Hillsbrad Foothills
@@ -2396,6 +2447,16 @@ GoldScout-export 8^lvcjsa1lfaw7^41
 @c^285280^
 @c^285281^
 @c^286152^
+@a^1520^149:2
+@a^1522^109:1,128:1,129:5,149:4
+@a^1523^109:1,128:5,129:3
+@a^1536^270:3
+@a^1537^270:10
+@a^1654^109:1
+@a^1655^149:1
+@a^1656^128:1
+@a^1657^169:1
+@a^1662^270:1
 @a^1783^207:1,227:2
 @a^1784^207:2
 @a^1785^189:2,209:6
@@ -2584,6 +2645,15 @@ GoldScout-export 8^lvcjsa1lfaw7^41
 @a^14523^188:1
 @a^14564^102:10,103:12,123:2
 @a^15200^145:1
+@t^1520^2:48
+@t^1522^11:216
+@t^1523^9:171
+@t^1536^3:72
+@t^1537^9:186
+@t^1654^1:34
+@t^1655^1:28
+@t^1656^1:21
+@t^1662^1:1
 @t^1793^1:84
 @t^1796^1:1
 @t^1815^1:92

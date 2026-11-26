@@ -1,4 +1,4 @@
-GoldScout-export 6^uh6n0803zz1h^21
+GoldScout-export 6^uh6n0803zz1h^22
 428^58^0^18^19^1433^0.5175^0.7281^58^Cóndor temible^556:9:9,1080:28:28,1464:4:4,4775:23:23,4776:9:9,5114:4:4,6561:1:1,6889:35:35,17056:15:15,211853:1:1,248702:1:1,250188:1:1^
 429^1^0^25^25^1433^0.7055^0.3039^1^Tejeoscuro Pielsombra^^
 431^1^0^26^26^1433^0.7054^0.3054^1^Destripador Pielsombra^^
@@ -38,7 +38,9 @@ GoldScout-export 6^uh6n0803zz1h^21
 2588^1^0^37^37^1417^0.2605^0.5868^1^Merodeador de la Hermandad^4306:1:4,4440:1:1^
 2592^2^0^38^38^1417^0.3724^0.5857^2^Exiliado resonador^4553:2:2,4784:1:1,7912:2:4^
 2623^1^0^33^33^1416^0.2618^0.6442^1^Espíritu de lo antiguo^^
-2729^7^0^39^40^1418^0.0930^0.6258^7^Coyote del risco mayor^4582:3:3,4583:2:2,7846:4:5,12203:4:4^
+2729^18^0^39^40^1418^0.1247^0.6312^18^Coyote del risco mayor^4582:7:7,4583:3:3,5637:2:2,7846:7:10,12203:8:8^
+2735^10^0^37^39^1418^0.2145^0.4513^10^Elemental de roca inferior^4552:1:1,4553:2:2,4784:3:3,7067:1:1,7848:5:5,7912:2:3,8150:3:3,213545:1:1^
+2831^20^0^39^41^1418^0.1598^0.6087^20^Águila ratonera gigante^1464:7:7,3404:4:4,5116:6:6,5636:3:3,5829:1:1,7847:5:5,11416:8:8,11418:6:6,12037:7:7^
 3560^1^0^37^37^1434^0.2423^0.1083^1^Guarda de sanación^^
 4074^1^0^23^23^1442^0.6676^0.5605^1^XT 9^^
 4343^1^0^37^37^1445^0.4109^0.3713^1^Sacudidor secorrón^770:1:1,14207:1:1^
@@ -130,6 +132,7 @@ GoldScout-export 6^uh6n0803zz1h^21
 @i^2786^Trabuco engrasado
 @i^2838^Piedra pesada
 @i^3040^Avancarga de cazador
+@i^3404^Ala de águila ratonera
 @i^3667^Carne de crocolisco tierna
 @i^3685^Huevo de raptor
 @i^3731^Carne de león
@@ -170,6 +173,7 @@ GoldScout-export 6^uh6n0803zz1h^21
 @i^4512^Ojo de raptor de las Tierras Altas
 @i^4513^Corazón de raptor
 @i^4539^Manzana de Corteza de oro
+@i^4552^Trozo de piedra lisa
 @i^4553^Trozo de piedra dentado
 @i^4582^Cola tupida suave
 @i^4583^Melena espesa
@@ -185,8 +189,10 @@ GoldScout-export 6^uh6n0803zz1h^21
 @i^5114^Garfa cortada
 @i^5116^Pluma de cola larga
 @i^5524^Almeja gruesa
+@i^5636^Pluma delicada
 @i^5637^Colmillo grande
 @i^5785^Escama múrloc gruesa
+@i^5829^Pico afilado
 @i^5959^Glándula de veneno ácido
 @i^6149^Poción de maná superior
 @i^6402^Leotardos de combate de malla
@@ -196,6 +202,7 @@ GoldScout-export 6^uh6n0803zz1h^21
 @i^6569^Toga fulgurante del gorila
 @i^6592^Armadura Forjabatalla del caballero
 @i^6889^Huevo pequeño
+@i^7067^Tierra elemental
 @i^7291^Orbe infernal
 @i^7431^Pantalones Crepusculares del anciano
 @i^7434^Botas Crepusculares del canalizador
@@ -204,6 +211,8 @@ GoldScout-export 6^uh6n0803zz1h^21
 @i^7447^Brazales de centinela del bandido
 @i^7463^Rodela de centinela del profeta
 @i^7846^Colmillo de coyote del risco
+@i^7847^Molleja de águila ratonera
+@i^7848^Fragmento de elemental de roca
 @i^7912^Piedra sólida
 @i^7990^Diseño: yelmo de mitril pesado
 @i^8150^Sal de roca
@@ -215,6 +224,8 @@ GoldScout-export 6^uh6n0803zz1h^21
 @i^10285^Seda de las Sombras
 @i^10406^Cinta de cuero escamado de espíritu
 @i^11407^Pelambre de oso rasgada
+@i^11416^Caja torácica delicada
+@i^11418^Hueso hueco de ala
 @i^12010^Anillo de pantano del bandido
 @i^12030^Cadena de azabache de poder
 @i^12037^Carne misteriosa
@@ -293,6 +304,7 @@ GoldScout-export 6^uh6n0803zz1h^21
 @q^2786^0:2:0
 @q^2838^1:7:1
 @q^3040^2:2:0
+@q^3404^1:7:1
 @q^3667^1:7:1
 @q^3685^1:7:1
 @q^3731^1:7:1
@@ -333,6 +345,7 @@ GoldScout-export 6^uh6n0803zz1h^21
 @q^4512^1:12:0
 @q^4513^1:12:0
 @q^4539^1:0:0
+@q^4552^0:15:0
 @q^4553^0:15:0
 @q^4582^1:12:0
 @q^4583^0:15:0
@@ -348,8 +361,10 @@ GoldScout-export 6^uh6n0803zz1h^21
 @q^5114^0:15:0
 @q^5116^1:7:1
 @q^5524^1:7:0
+@q^5636^0:15:0
 @q^5637^1:7:1
 @q^5785^1:7:1
+@q^5829^0:15:0
 @q^5959^1:12:0
 @q^6149^1:0:0
 @q^6402^2:4:0
@@ -359,6 +374,7 @@ GoldScout-export 6^uh6n0803zz1h^21
 @q^6569^2:4:0
 @q^6592^2:4:0
 @q^6889^1:7:1
+@q^7067^1:7:1
 @q^7291^1:12:0
 @q^7431^2:4:0
 @q^7434^2:4:0
@@ -367,6 +383,8 @@ GoldScout-export 6^uh6n0803zz1h^21
 @q^7447^2:4:0
 @q^7463^2:4:0
 @q^7846^1:12:0
+@q^7847^1:12:0
+@q^7848^1:12:0
 @q^7912^1:7:1
 @q^7990^2:9:0
 @q^8150^1:7:1
@@ -378,6 +396,8 @@ GoldScout-export 6^uh6n0803zz1h^21
 @q^10285^1:7:1
 @q^10406^2:4:0
 @q^11407^1:12:0
+@q^11416^0:15:0
+@q^11418^0:15:0
 @q^12010^2:4:0
 @q^12030^2:4:0
 @q^12037^1:7:1
@@ -841,7 +861,9 @@ GoldScout-export 6^uh6n0803zz1h^21
 @a^2588^225:1
 @a^2592^227:2
 @a^2623^245:1
-@a^2729^221:1,241:4,242:2
+@a^2729^221:1,241:5,242:2,243:7,262:2,263:1
+@a^2735^163:1,164:5,184:4
+@a^2831^223:8,242:3,243:9
 @a^3560^44:1
 @a^4074^233:1
 @a^4343^148:1
