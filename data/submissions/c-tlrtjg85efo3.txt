@@ -1,4 +1,4 @@
-GoldScout-export 6^tlrtjg85efo3^27
+GoldScout-export 6^tlrtjg85efo3^28
 759^2^0^36^37^1435^0.6314^0.2347^2^Lost One Hunter^4306:2:4^
 760^2^0^36^37^1435^0.6137^0.2218^2^Lost One Muckdweller^4306:1:2^
 762^1^0^37^38^1435^0.6411^0.2282^1^Lost One Riftseeker^4306:1:2^
@@ -268,8 +268,16 @@ GoldScout-export 6^tlrtjg85efo3^27
 255069^1^0^0^0^1416^0.0000^0.0000^0^^286988:1:1^
 255070^1^0^0^0^1416^0.0000^0.0000^0^^^
 255072^1^0^0^0^1416^0.0000^0.0000^0^^^
+258792^2^0^0^0^0^0.0000^0.0000^0^^4306:1:2,4607:1:1,8747:1:1^
+258797^1^0^0^0^0^0.0000^0.0000^0^^9900:1:1,262889:1:1^
+259979^8^0^0^0^0^0.0000^0.0000^0^^3806:1:1,3816:1:1,4306:2:3,4338:2:4,270333:4:4^
+259981^2^0^0^0^0^0.0000^0.0000^0^^270333:1:1^
+259987^2^0^0^0^0^0.0000^0.0000^0^^270333:2:2^
+260202^1^0^0^0^0^0.0000^0.0000^0^^276894:1:1^
+260243^1^0^0^0^0^0.0000^0.0000^0^^274608:1:1^
 260325^1^0^0^0^0^0.0000^0.0000^0^^^
 260326^1^0^0^0^0^0.0000^0.0000^0^^270866:1:1,273030:1:1^
+260353^1^0^0^0^0^0.0000^0.0000^0^^3802:1:1,4306:1:1^
 260798^1^0^0^0^0^0.0000^0.0000^0^^3667:1:1,12037:1:1^
 260799^4^0^0^0^0^0.0000^0.0000^0^^1697:1:1,3180:1:1,6599:1:1^
 260800^2^0^0^0^0^0.0000^0.0000^0^^1809:1:1,3180:1:1,271100:1:1^
@@ -470,8 +478,11 @@ GoldScout-export 6^tlrtjg85efo3^27
 @i^3782^Large War Club
 @i^3786^Shiny Dirk
 @i^3792^Interlaced Belt
+@i^3802^Hardened Leather Bracers
 @i^3805^Hardened Leather Pants
+@i^3806^Hardened Leather Shoulderpads
 @i^3811^Double-Stitched Cloak
+@i^3816^Reflective Heater
 @i^3820^Stranglekelp
 @i^3827^Mana Potion
 @i^3864^Citrine
@@ -493,6 +504,7 @@ GoldScout-export 6^tlrtjg85efo3^27
 @i^4603^Raw Spotted Yellowtail
 @i^4604^Forest Mushroom Cap
 @i^4606^Spongy Morel
+@i^4607^Delicious Cave Mold
 @i^4634^Iron Lockbox
 @i^4668^Battle Chain Cloak
 @i^4669^Battle Chain Girdle
@@ -591,10 +603,12 @@ GoldScout-export 6^tlrtjg85efo3^27
 @i^8182^Pellet Rifle
 @i^8186^Dire Wand
 @i^8365^Raw Mithril Head Trout
+@i^8747^Hardened Leather Helm
 @i^9798^Ivycloth Robe of the Owl
 @i^9837^Banded Bracers of the Bear
 @i^9863^Archer's Shoulderpads of the Monkey
 @i^9877^Sorcerer Cloak of the Boar
+@i^9900^Jazeraint Gauntlets of Frost Protection
 @i^10329^Scarlet Belt
 @i^10459^Chief Sharptusk Thornmantle's Head
 @i^11390^Broken Bat Fang
@@ -641,6 +655,7 @@ GoldScout-export 6^tlrtjg85efo3^27
 @i^254432^Carved Centaur Totem
 @i^255007^Golem Isospring
 @i^262889^Sealed Expert's Writ
+@i^270333^Voodoo-Infused Artifact
 @i^270866^Titan Relic
 @i^271100^Thicket Raptor Meat
 @i^273001^Gloomrise Toxin Sample
@@ -657,8 +672,10 @@ GoldScout-export 6^tlrtjg85efo3^27
 @i^274155^Geomancer Headdress
 @i^274290^Painwalker Buckler
 @i^274291^Polished Skullcap
+@i^274608^Maw of Min'loth
 @i^276158^Crystallized Shard
 @i^276160^Mana Fragment
+@i^276894^Ancient Gurubashi Idol
 @i^277128^Bloodtalon Matriarch Eggs
 @i^277470^Schematic: Harvester Override Signalcaster
 @i^277661^Dull Storm Orb
@@ -846,8 +863,11 @@ GoldScout-export 6^tlrtjg85efo3^27
 @q^3782^0:2:0
 @q^3786^0:2:0
 @q^3792^0:4:0
+@q^3802^0:4:0
 @q^3805^0:4:0
+@q^3806^0:4:0
 @q^3811^0:4:0
+@q^3816^0:4:0
 @q^3820^1:7:1
 @q^3827^1:0:0
 @q^3864^2:7:1
@@ -869,6 +889,7 @@ GoldScout-export 6^tlrtjg85efo3^27
 @q^4603^1:7:1
 @q^4604^1:0:0
 @q^4606^1:0:0
+@q^4607^1:0:0
 @q^4634^2:15:0
 @q^4668^1:4:0
 @q^4669^1:4:0
@@ -967,10 +988,12 @@ GoldScout-export 6^tlrtjg85efo3^27
 @q^8182^1:2:0
 @q^8186^2:2:0
 @q^8365^1:7:1
+@q^8747^0:4:0
 @q^9798^2:4:0
 @q^9837^2:4:0
 @q^9863^2:4:0
 @q^9877^2:4:0
+@q^9900^2:4:0
 @q^10329^3:4:0
 @q^10459^1:12:0
 @q^11390^0:15:0
@@ -1017,6 +1040,7 @@ GoldScout-export 6^tlrtjg85efo3^27
 @q^254432^2:15:0
 @q^255007^1:7:1
 @q^262889^3:0:0
+@q^270333^1:12:0
 @q^270866^1:12:0
 @q^271100^1:12:0
 @q^273001^1:12:0
@@ -1033,8 +1057,10 @@ GoldScout-export 6^tlrtjg85efo3^27
 @q^274155^3:4:0
 @q^274290^3:4:0
 @q^274291^3:4:0
+@q^274608^3:4:0
 @q^276158^0:15:0
 @q^276160^0:15:0
+@q^276894^1:12:0
 @q^277128^1:12:0
 @q^277470^1:9:0
 @q^277661^1:12:0

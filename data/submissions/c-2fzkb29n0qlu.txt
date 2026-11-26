@@ -1,4 +1,4 @@
-GoldScout-export 7^2fzkb29n0qlu^9
+GoldScout-export 7^2fzkb29n0qlu^10
 589^3^0^14^15^1436^0.3459^0.5369^3^Defias Pillager^^
 590^4^0^13^14^1436^0.4014^0.6124^4^Defias Looter^^
 6200^1^0^52^52^1447^0.5914^0.2149^1^Legashi Satyr^235256:1:1^
@@ -32,18 +32,30 @@ GoldScout-export 7^2fzkb29n0qlu^9
 236867^4^0^53^54^1447^0.6446^0.1856^4^Legashi Soulstealer^14047:1:1,235256:2:2^
 236874^3^0^53^54^1447^0.6624^0.1961^3^Legashi Hellraiser^14047:1:1,235256:1:1^
 236876^2^0^53^54^1447^0.6581^0.2142^2^Legashi Blackguard^13491:1:1,14047:1:1,235256:2:2^
-247237^1^0^0^0^0^0.0000^0.0000^0^^^
+247198^1^0^0^0^0^0.0000^0.0000^0^^280060:1:1^
+247206^1^0^0^0^0^0.0000^0.0000^0^^280058:1:1^
+247209^1^0^0^0^0^0.0000^0.0000^0^^273050:1:1,280069:1:1^
+247235^5^0^0^0^0^0.0000^0.0000^0^^3970:1:1,13446:1:1,248697:1:1,249695:1:1^
+247237^7^0^56^56^0^0.0000^0.0000^0^Blackmaw Berserker^8766:1:1^
+247248^2^0^0^0^0^0.0000^0.0000^0^^^
 249224^9^0^57^58^2482^0.3634^0.4654^9^Child of Tortolla^3712:5:5,4555:5:5,4556:3:3,7973:1:1,250176:1:1^
 249229^2^0^58^59^2482^0.5110^0.3545^2^Felguard Sentinel^8948:1:3,14047:1:2^
 249493^1^0^59^59^2482^0.7576^0.3277^1^Nightsaber Guardian^8146:1:1^
 249551^2^0^60^60^2482^0.7576^0.3277^2^Blackthorne Cultist^14047:1:2^
-250023^4^0^0^0^0^0.0000^0.0000^0^^8085:1:1^
+250023^13^0^0^0^0^0.0000^0.0000^0^^8085:1:1,8766:1:1,13824:1:1,273050:3:3^
+250027^12^0^0^0^0^0.0000^0.0000^0^^3944:2:2,3976:1:1,3995:1:1,8766:1:1,8953:1:1,14295:1:1,14305:1:1,273050:2:2^
 251284^8^0^6^7^2521^0.3578^0.5480^8^Hippogryph Protector^4775:7:7,4776:1:1,6889:4:4^
+255347^12^0^0^0^0^0.0000^0.0000^0^^8146:4:4,8952:2:2,13822:1:1,14459:1:1,273050:1:1^
+255394^1^0^0^0^0^0.0000^0.0000^0^^^
 257900^8^0^0^0^1415^0.0000^0.0000^0^^4306:3:4^
 258042^7^0^0^0^1415^0.0000^0.0000^0^^4422:1:1,8749:1:1^
 258102^3^0^0^0^1415^0.0000^0.0000^0^^3928:1:1^
 258104^1^0^0^0^1415^0.0000^0.0000^0^^4306:1:3^
-258264^1^0^0^0^0^0.0000^0.0000^0^^13823:1:1^
+258152^2^0^0^0^0^0.0000^0.0000^0^^8085:1:1,13820:1:1^
+258264^2^0^0^0^0^0.0000^0.0000^0^^8952:1:1,13823:1:1^
+258508^3^0^0^0^0^0.0000^0.0000^0^^13820:1:1^
+258516^2^0^0^0^0^0.0000^0.0000^0^^^
+258668^2^0^0^0^0^0.0000^0.0000^0^^^
 258687^9^0^0^0^1415^0.0000^0.0000^0^^15798:1:1^
 258966^1^0^0^0^1415^0.0000^0.0000^0^^274995:1:1^
 261306^2^0^0^0^0^0.0000^0.0000^0^^270227:2:2^
@@ -73,7 +85,11 @@ GoldScout-export 7^2fzkb29n0qlu^9
 @i^3676^Slimy Ichor
 @i^3712^Turtle Meat
 @i^3928^Superior Healing Potion
+@i^3944^Twill Belt
+@i^3970^Smooth Leather Boots
 @i^3973^Smooth Leather Gloves
+@i^3976^Smooth Leather Armor
+@i^3995^Laminated Scale Cloak
 @i^4306^Silk Cloth
 @i^4337^Thick Spider's Silk
 @i^4422^Scroll of Stamina III
@@ -109,6 +125,7 @@ GoldScout-export 7^2fzkb29n0qlu^9
 @i^8766^Morning Glory Dew
 @i^8948^Dried King Bolete
 @i^8952^Roasted Quail
+@i^8953^Deep Fried Plantains
 @i^9746^Simple Gloves
 @i^9757^Nomad Tunic of Power
 @i^11018^Un'Goro Soil
@@ -117,11 +134,18 @@ GoldScout-export 7^2fzkb29n0qlu^9
 @i^12205^White Spider Meat
 @i^12208^Tender Wolf Meat
 @i^12809^Guardian Stone
+@i^13446^Major Healing Potion
 @i^13491^Recipe: Elixir of the Mongoose
 @i^13817^Tapered Greatsword
+@i^13820^Clout Mace
+@i^13822^Spiked Dagger
 @i^13823^Stout War Staff
+@i^13824^Recurve Long Bow
 @i^14047^Runecloth
 @i^14284^Opulent Robes of the Channeler
+@i^14295^Arachnidian Legguards of Stamina
+@i^14305^Bonecaster's Sarong of Spirit
+@i^14459^Elunarian Cloak
 @i^15798^Chipped Ogre Teeth
 @i^15933^Simple Branch of the Gorilla
 @i^19933^Glowing Scorpid Blood
@@ -131,6 +155,8 @@ GoldScout-export 7^2fzkb29n0qlu^9
 @i^211780^Scroll: KWYJIBO
 @i^211787^Scroll: LOWER PING WHOMEVER
 @i^235256^Severed Legashi Horn
+@i^248697^Waylaid Crate: Artisan Ore
+@i^249695^Fel-Tainted Flesh
 @i^250176^Recipe: Savory Turtle Stew
 @i^262890^Sealed Artisan's Writ
 @i^270227^Ephemeral Choker
@@ -139,9 +165,13 @@ GoldScout-export 7^2fzkb29n0qlu^9
 @i^270256^Durgen's Crescent Axe
 @i^270261^Robes of the Disgraced Thane
 @i^271095^Fang of Magmatus
+@i^273050^Blackmaw Pouch
 @i^274995^Slavecrusher Scepter
 @i^275893^Searing Gourd
 @i^275895^Fading Echo
+@i^280058^Impish Chain Hood
+@i^280060^Lucky Shovelnose Tuft
+@i^280069^Shamanic Wristguards
 @i^281018^Scroll: RARE SERVICHI RADAR
 @q^818^2:7:1
 @q^1499^0:4:0
@@ -159,7 +189,11 @@ GoldScout-export 7^2fzkb29n0qlu^9
 @q^3676^0:15:0
 @q^3712^1:7:1
 @q^3928^1:0:0
+@q^3944^0:4:0
+@q^3970^0:4:0
 @q^3973^0:4:0
+@q^3976^0:4:0
+@q^3995^0:4:0
 @q^4306^1:7:1
 @q^4337^1:7:1
 @q^4422^1:0:0
@@ -195,6 +229,7 @@ GoldScout-export 7^2fzkb29n0qlu^9
 @q^8766^1:0:0
 @q^8948^1:0:0
 @q^8952^1:0:0
+@q^8953^1:0:0
 @q^9746^1:4:0
 @q^9757^2:4:0
 @q^11018^1:12:0
@@ -203,11 +238,18 @@ GoldScout-export 7^2fzkb29n0qlu^9
 @q^12205^1:7:1
 @q^12208^1:7:1
 @q^12809^2:7:1
+@q^13446^1:0:0
 @q^13491^2:9:0
 @q^13817^0:2:0
+@q^13820^0:2:0
+@q^13822^0:2:0
 @q^13823^0:2:0
+@q^13824^0:2:0
 @q^14047^1:7:1
 @q^14284^2:4:0
+@q^14295^2:4:0
+@q^14305^2:4:0
+@q^14459^2:4:0
 @q^15798^0:15:0
 @q^15933^2:4:0
 @q^19933^1:15:0
@@ -217,6 +259,8 @@ GoldScout-export 7^2fzkb29n0qlu^9
 @q^211780^1:0:0
 @q^211787^1:0:0
 @q^235256^1:12:0
+@q^248697^1:0:1
+@q^249695^1:12:0
 @q^250176^1:9:0
 @q^262890^3:0:0
 @q^270227^3:4:0
@@ -225,9 +269,13 @@ GoldScout-export 7^2fzkb29n0qlu^9
 @q^270256^3:2:0
 @q^270261^3:4:0
 @q^271095^3:2:0
+@q^273050^1:15:0
 @q^274995^3:2:0
 @q^275893^1:15:0
 @q^275895^0:15:0
+@q^280058^3:4:0
+@q^280060^3:4:0
+@q^280069^3:4:0
 @q^281018^1:0:0
 @m^1415^Eastern Kingdoms
 @m^1428^Burning Steppes

@@ -1,4 +1,4 @@
-GoldScout-export 6^vmahntihd1qm^34
+GoldScout-export 6^vmahntihd1qm^35
 6^5^0^1^2^1429^0.5092^0.3724^5^Kobold Vermin^247839:3:3^
 30^3^0^5^6^1429^0.4119^0.7470^3^Forest Spider^1476:2:2,2590:2:2,5465:2:3^
 40^46^0^6^7^1429^0.5525^0.6184^46^Kobold Miner^118:1:1,159:1:1,772:1:1,773:1:1,774:1:1,1389:2:2,1411:1:1,1416:1:1,1417:1:1,1430:1:1,1433:1:1,2589:14:21,2642:1:1,2835:1:2,4536:4:4^
@@ -86,7 +86,14 @@ GoldScout-export 6^vmahntihd1qm^34
 2597^1^0^40^40^1417^0.2601^0.6532^1^Lord Falconcrest^1477:1:1,3779:1:1,4517:1:1^
 2599^1^0^38^38^1417^0.2603^0.6550^1^Otto^4516:1:1^
 2618^1^0^34^34^1417^0.6006^0.5998^1^Hammerfall Peon^^
+2649^3^0^40^41^1425^0.2345^0.5848^3^Witherbark Scalper^1520:1:1,4338:1:1,6411:1:1,9259:2:2^
+2650^3^0^41^41^1425^0.2406^0.5774^3^Witherbark Zealot^1520:2:2,4306:1:2,4338:1:1,9259:1:1^
+2651^3^0^42^43^1425^0.3244^0.5939^3^Witherbark Hideskinner^1520:1:1,4338:1:2,8151:1:1,9259:2:2^
+2652^4^0^43^43^1425^0.3230^0.5968^4^Witherbark Venomblood^1645:1:1,4306:1:2,4338:1:2,8153:1:3^
 2783^2^0^40^40^1417^0.2893^0.6255^2^Marez Cowl^4515:1:1^
+2924^1^0^43^44^1425^0.3193^0.6010^1^Silvermane Wolf^4583:1:1,12203:1:1,12208:1:1^
+2927^6^0^42^43^1425^0.3398^0.5804^6^Vicious Owlbeast^5117:1:1,12207:2:2^
+2928^4^0^44^45^1425^0.3816^0.5667^4^Primitive Owlbeast^8146:1:1,12207:2:2,221359:1:1,248695:1:1^
 2946^7^0^44^44^1424^0.5055^0.5861^7^Puppet of Helcular^^
 3560^4^0^33^34^1417^0.6718^0.7259^4^Healing Ward^^
 3974^2^0^0^0^0^0.0000^0.0000^0^^4306:1:1^
@@ -509,6 +516,7 @@ GoldScout-export 6^vmahntihd1qm^34
 @i^5113^Mark of the Syndicate
 @i^5115^Broken Wishbone
 @i^5116^Long Tail Feather
+@i^5117^Vibrant Plume
 @i^5128^Shed Lizard Skin
 @i^5364^Dry Salt Lick
 @i^5429^A Pretty Rock
@@ -557,6 +565,7 @@ GoldScout-export 6^vmahntihd1qm^34
 @i^7992^Plans: Blue Glittering Axe
 @i^8146^Wicked Claw
 @i^8151^Flask of Mojo
+@i^8153^Wildvine
 @i^8181^Hunting Rifle
 @i^8385^Pattern: Turtle Scale Gloves
 @i^8548^Divino-matic Rod
@@ -567,6 +576,7 @@ GoldScout-export 6^vmahntihd1qm^34
 @i^9234^Tiara of the Deep
 @i^9238^Uncracked Scarab Shell
 @i^9242^Ancient Tablet
+@i^9259^Troll Tribal Necklace
 @i^9260^Volatile Rum
 @i^9379^Sang'thraze the Deflector
 @i^9475^Diabolic Skiver
@@ -590,6 +600,8 @@ GoldScout-export 6^vmahntihd1qm^34
 @i^12184^Raptor Flesh
 @i^12203^Red Wolf Meat
 @i^12206^Tender Crab Meat
+@i^12207^Giant Egg
+@i^12208^Tender Wolf Meat
 @i^14203^Thistlefur Pants of Spirit
 @i^14572^Bristlebark Gloves
 @i^14781^Khan's Cloak
@@ -615,6 +627,7 @@ GoldScout-export 6^vmahntihd1qm^34
 @i^215374^Ancestral Sword
 @i^215375^Tactician's Staff
 @i^216483^Witherbark Mallet
+@i^221359^Pristine Owlbeast Quill
 @i^221360^Farraki Papyrus
 @i^247839^Stolen Book
 @i^247886^Sack of Picture Books
@@ -627,6 +640,7 @@ GoldScout-export 6^vmahntihd1qm^34
 @i^248692^Waylaid Crate: Expert Ore
 @i^248693^Waylaid Crate: Expert Textiles
 @i^248694^Waylaid Crate: Expert Curiosities
+@i^248695^Waylaid Crate: Earthly Artisan Herbs
 @i^248708^Waylaid Crate: Expert Fabrics
 @i^260347^Tattered Journal
 @i^262889^Sealed Expert's Writ
@@ -891,6 +905,7 @@ GoldScout-export 6^vmahntihd1qm^34
 @q^5113^0:15:0
 @q^5115^0:15:0
 @q^5116^1:7:1
+@q^5117^1:12:0
 @q^5128^0:15:0
 @q^5364^0:15:0
 @q^5429^0:15:0
@@ -939,6 +954,7 @@ GoldScout-export 6^vmahntihd1qm^34
 @q^7992^2:9:0
 @q^8146^1:7:1
 @q^8151^1:7:1
+@q^8153^1:7:1
 @q^8181^1:2:0
 @q^8385^1:9:0
 @q^8548^1:0:0
@@ -949,6 +965,7 @@ GoldScout-export 6^vmahntihd1qm^34
 @q^9234^1:12:0
 @q^9238^1:12:0
 @q^9242^0:15:0
+@q^9259^1:15:0
 @q^9260^1:0:0
 @q^9379^3:2:0
 @q^9475^3:2:0
@@ -972,6 +989,8 @@ GoldScout-export 6^vmahntihd1qm^34
 @q^12184^1:7:1
 @q^12203^1:7:1
 @q^12206^1:7:1
+@q^12207^1:7:1
+@q^12208^1:7:1
 @q^14203^2:4:0
 @q^14572^2:4:0
 @q^14781^2:4:0
@@ -997,6 +1016,7 @@ GoldScout-export 6^vmahntihd1qm^34
 @q^215374^1:2:0
 @q^215375^1:2:0
 @q^216483^1:0:0
+@q^221359^1:12:0
 @q^221360^1:12:0
 @q^247839^1:12:0
 @q^247886^1:12:0
@@ -1009,6 +1029,7 @@ GoldScout-export 6^vmahntihd1qm^34
 @q^248692^1:0:1
 @q^248693^1:0:1
 @q^248694^1:0:1
+@q^248695^1:0:1
 @q^248708^2:0:1
 @q^260347^1:15:0
 @q^262889^3:0:0
@@ -1064,6 +1085,7 @@ GoldScout-export 6^vmahntihd1qm^34
 @m^1417^Arathi Highlands
 @m^1420^Tirisfal Glades
 @m^1424^Hillsbrad Foothills
+@m^1425^The Hinterlands
 @m^1426^Dun Morogh
 @m^1429^Elwynn Forest
 @m^1431^Duskwood
@@ -1527,7 +1549,14 @@ GoldScout-export 6^vmahntihd1qm^34
 @a^2597^265:1
 @a^2599^265:1
 @a^2618^232:1
+@a^2649^224:3
+@a^2650^224:3
+@a^2651^226:3
+@a^2652^226:3,246:1
 @a^2783^245:2
+@a^2924^246:1
+@a^2927^206:1,226:2,227:1,246:2
+@a^2928^207:1,227:3
 @a^2946^230:7
 @a^3560^293:3,313:1
 @a^4016^47:1

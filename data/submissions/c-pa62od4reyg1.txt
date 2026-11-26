@@ -1,18 +1,27 @@
-GoldScout-export 7^pa62od4reyg1^4
+GoldScout-export 7^pa62od4reyg1^5
 2248^70^0^30^31^1424^0.4608^0.3148^70^Yeti de las cuevas^1708:4:4,1830:1:1,2290:1:1,3771:8:8,5214:1:1,9867:1:1,10408:1:1,15284:1:1,248686:1:1^
 2249^24^0^31^32^1424^0.4441^0.2923^24^Yeti feroz^3771:1:1,5637:1:1,8746:1:1^
-2271^5^0^31^32^1424^0.2839^0.2852^1^Guardia escudero de Dalaran^1707:1:1,3714:2:2,3778:1:1,4306:3:6^
-2272^1^0^33^33^1424^0.2740^0.3027^1^Teúrgo de Dalaran^^
-2349^1^0^25^25^1416^0.2999^0.7175^1^Trepamusgo gigante^878:1:1,1081:1:1,1288:1:1^
+2268^5^0^25^26^1424^0.3076^0.4261^5^Lacayo de Trabalomas^2592:1:1,4306:1:1^
+2269^2^0^26^27^1424^0.2990^0.5481^2^Minero de Trabalomas^929:1:1^
+2270^1^0^28^28^1424^0.2716^0.6044^1^Avizor de Trabalomas^^
+2271^27^0^31^32^1416^0.1884^0.8914^22^Guardia escudero de Dalaran^1707:2:2,3037:1:1,3714:7:7,3778:1:1,3813:1:1,4306:8:13,7423:1:1,248686:1:1^
+2272^3^0^32^33^1416^0.1971^0.8959^2^Teúrgo de Dalaran^4306:1:2^
+2335^2^0^30^30^1424^0.2969^0.4167^2^Magistrado Ladoquemado^4306:1:2^
+2349^1^0^24^25^1416^0.2999^0.7175^1^Trepamusgo gigante^878:1:1,1081:1:1,1288:1:1^
 2358^4^0^32^33^1416^0.2524^0.6011^4^Invocador de Dalaran^3714:1:1,3745:2:2,4306:2:2^
 2359^4^0^32^33^1416^0.2540^0.6065^4^Esclavo elemental^2838:2:4,4784:4:4,5741:1:4^
+2387^4^0^25^26^1424^0.3026^0.4237^4^Consejero de Trabalomas^2592:1:2^
 2406^2^0^32^33^1416^0.2941^0.7336^2^León de montaña^3731:2:2^
 2411^1^0^33^33^1424^0.2853^0.2760^1^Ricter^3689:1:1^
 2413^1^0^33^33^1416^0.1944^0.9192^1^Dermot^3691:1:1^
-2414^1^0^33^33^1416^0.1677^0.8978^1^Kegan Darkmar^1710:1:1,3688:1:1^
+2414^2^0^33^33^1416^0.1656^0.8929^2^Kegan Darkmar^1710:1:1,3688:1:1^
+2415^2^0^33^33^1416^0.1666^0.8939^2^Celadora Belamoore^3711:2:2^
+2449^1^0^25^25^1424^0.3261^0.4130^1^Ciudadano Wilkes^2592:1:1^
+2503^1^0^27^27^1424^0.2987^0.5423^1^Supervisor de Trabalomas^^
 4114^1^0^28^28^1441^0.5240^0.4804^1^Batidor Gravamorro^^
 4119^1^0^27^29^1441^0.5579^0.4896^1^Serpiente nubosa anciana^17056:1:1^
 @i^878^Hilera del tamaño de un puño
+@i^929^Poción de sanación
 @i^1081^Carne de araña crujiente
 @i^1288^Glándula de veneno grande
 @i^1707^Brie de Ventormenta
@@ -20,20 +29,25 @@ GoldScout-export 7^pa62od4reyg1^4
 @i^1710^Poción de sanación superior
 @i^1830^Espada bastarda larga
 @i^2290^Pergamino de intelecto II
+@i^2592^Paño de lana
 @i^2838^Piedra pesada
+@i^3037^Arco corvo ligero
 @i^3688^Óvalo de sangrita
 @i^3689^Canica de sangrita
 @i^3691^Cuña de sangrita
+@i^3711^Cuaderno de investigación de Belamoore
 @i^3714^Muestra de piedra desgastada
 @i^3731^Carne de león
 @i^3745^Runa de apertura
 @i^3771^Pata de marrano salvaje
 @i^3778^Arco compuesto tenso
+@i^3813^Pantalones de malla doble
 @i^4306^Paño de seda
 @i^4784^Piedra inerte
 @i^5214^Varita de Manto de la noche
 @i^5637^Colmillo grande
 @i^5741^Trozo de roca
+@i^7423^Leotardos Falange del defensor
 @i^8746^Capucha entrelazada
 @i^9867^Capa de renegado del falcón
 @i^10408^Yelmo a rayas de fuerza
@@ -41,6 +55,7 @@ GoldScout-export 7^pa62od4reyg1^4
 @i^17056^Pluma ligera
 @i^248686^Cajón arrebatado: Hierbas de oficial
 @q^878^0:7:0
+@q^929^1:0:0
 @q^1081^1:7:1
 @q^1288^1:7:1
 @q^1707^1:0:0
@@ -48,20 +63,25 @@ GoldScout-export 7^pa62od4reyg1^4
 @q^1710^1:0:0
 @q^1830^0:2:0
 @q^2290^1:0:0
+@q^2592^1:7:1
 @q^2838^1:7:1
+@q^3037^2:2:0
 @q^3688^1:12:0
 @q^3689^1:12:0
 @q^3691^1:12:0
+@q^3711^1:12:0
 @q^3714^1:12:0
 @q^3731^1:7:1
 @q^3745^1:12:0
 @q^3771^1:0:0
 @q^3778^0:2:0
+@q^3813^0:4:0
 @q^4306^1:7:1
 @q^4784^0:15:0
 @q^5214^2:2:0
 @q^5637^1:7:1
 @q^5741^0:15:0
+@q^7423^2:4:0
 @q^8746^0:4:0
 @q^9867^2:4:0
 @q^10408^2:4:0
@@ -73,15 +93,23 @@ GoldScout-export 7^pa62od4reyg1^4
 @m^1441^Las Mil Agujas
 @a^2248^108:8,109:1,128:10,129:51
 @a^2249^108:13,109:4,128:5,129:2
-@a^2271^105:1
-@a^2272^125:1
+@a^2268^166:5
+@a^2269^206:1,225:1
+@a^2270^245:1
+@a^2271^343:13,344:4,363:4,364:1
+@a^2272^343:1,364:1
+@a^2335^165:2
 @a^2349^285:1
 @a^2358^224:1,225:1,244:1,245:1
 @a^2359^205:1,244:1,245:2
+@a^2387^165:3,166:1
 @a^2406^265:1,306:1
 @a^2411^105:1
 @a^2413^363:1
-@a^2414^343:1
+@a^2414^343:2
+@a^2415^343:2
+@a^2449^166:1
+@a^2503^205:1
 @a^4114^190:1
 @a^4119^191:1
 @t^2248^48:2400

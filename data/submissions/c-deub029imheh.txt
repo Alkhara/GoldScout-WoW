@@ -1,4 +1,4 @@
-GoldScout-export 7^deub029imheh^11
+GoldScout-export 7^deub029imheh^12
 587^8^0^33^34^1434^0.3075^0.1847^8^Bloodscalp Warrior^1520:1:1,2750:1:1,3901:1:1,3915:5:5,4306:5:10^
 588^6^0^34^35^1434^0.2507^0.1101^6^Bloodscalp Scout^1519:2:2,2592:1:2^
 595^12^0^34^35^1434^0.2455^0.1152^12^Bloodscalp Hunter^1519:4:4,3771:2:2,3795:1:1,3915:4:4,4306:6:7^
@@ -108,7 +108,11 @@ GoldScout-export 7^deub029imheh^11
 4713^2^0^34^34^1443^0.3758^0.2450^2^Slitherblade Warrior^17057:1:1^
 4725^1^0^37^37^1443^0.2633^0.7952^1^Crazed Sandstrider^11416:1:1,11418:1:1^
 4728^1^0^31^32^1443^0.7762^0.3553^1^Gritjaw Basilisk^1702:1:1^
+5419^1^0^42^42^1446^0.6582^0.2049^1^Glasshide Basilisk^^
+5422^3^0^41^41^1446^0.6593^0.2303^3^Scorpid Hunter^12037:1:1,19935:2:2,19937:1:1^
 5600^1^0^35^35^1443^0.7348^0.4695^1^Khan Dez'hepah^4306:1:2,6066:1:1^
+5616^2^0^40^41^1446^0.6104^0.2386^2^Wastewander Thief^3927:1:1,4338:1:2,8398:1:1^
+5618^1^0^41^41^1446^0.6106^0.2427^1^Wastewander Bandit^262889:1:1^
 6168^1^0^0^0^0^0.0000^0.0000^0^^274152:1:1^
 7872^1^0^33^34^1413^0.4830^0.9223^1^Death's Head Cultist^^
 7873^2^0^33^34^1413^0.4835^0.9244^2^Razorfen Battleguard^1529:1:1^
@@ -252,6 +256,7 @@ GoldScout-export 7^deub029imheh^11
 @i^3901^Bloodscalp Tusk
 @i^3915^Bloody Bone Necklace
 @i^3918^Singing Crystal Shard
+@i^3927^Fine Aged Cheddar
 @i^3931^Poisoned Spider Fang
 @i^4053^Large River Crocolisk Skin
 @i^4097^Chipped Gorilla Tooth
@@ -313,6 +318,7 @@ GoldScout-export 7^deub029imheh^11
 @i^8177^Practice Sword
 @i^8183^Precision Bow
 @i^8365^Raw Mithril Head Trout
+@i^8398^Pattern: Tough Scorpid Gloves
 @i^9756^Nomad Trousers of Nature's Wrath
 @i^9819^Durable Tunic of the Elder
 @i^9865^Renegade Bracers of the Owl
@@ -346,6 +352,8 @@ GoldScout-export 7^deub029imheh^11
 @i^17009^Ambassador Malcin's Head
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
+@i^19935^Empty Venom Sac
+@i^19937^Small Scorpid Claw
 @i^19938^Heavy Scorpid Leg
 @i^21150^Iron Bound Trunk
 @i^21151^Rumsey Rum Black Label
@@ -384,6 +392,7 @@ GoldScout-export 7^deub029imheh^11
 @i^257226^Lesser Essence of the Four Winds
 @i^257941^Windsong Crawler Meat
 @i^257942^Vulgara's Head
+@i^262889^Sealed Expert's Writ
 @i^267474^Galeswept Forestshroom
 @i^270866^Titan Relic
 @i^271100^Thicket Raptor Meat
@@ -499,6 +508,7 @@ GoldScout-export 7^deub029imheh^11
 @q^3901^1:12:0
 @q^3915^1:12:0
 @q^3918^1:12:0
+@q^3927^1:0:0
 @q^3931^0:15:0
 @q^4053^1:12:0
 @q^4097^0:15:0
@@ -560,6 +570,7 @@ GoldScout-export 7^deub029imheh^11
 @q^8177^1:2:0
 @q^8183^2:2:0
 @q^8365^1:7:1
+@q^8398^2:9:0
 @q^9756^2:4:0
 @q^9819^2:4:0
 @q^9865^2:4:0
@@ -593,6 +604,8 @@ GoldScout-export 7^deub029imheh^11
 @q^17009^1:12:0
 @q^17057^1:15:0
 @q^17058^1:15:0
+@q^19935^0:15:0
+@q^19937^0:15:0
 @q^19938^0:15:0
 @q^21150^1:15:0
 @q^21151^1:0:0
@@ -631,6 +644,7 @@ GoldScout-export 7^deub029imheh^11
 @q^257226^0:15:0
 @q^257941^1:12:0
 @q^257942^1:12:0
+@q^262889^3:0:0
 @q^267474^1:0:0
 @q^270866^1:12:0
 @q^271100^1:12:0
@@ -1678,7 +1692,11 @@ GoldScout-export 7^deub029imheh^11
 @a^4713^87:1,107:1
 @a^4725^305:1
 @a^4728^155:1
+@a^5419^93:1
+@a^5422^73:1,93:1,113:1
 @a^5600^194:1
+@a^5616^92:2
+@a^5618^92:1
 @a^7872^369:1
 @a^7873^369:2
 @a^11562^305:2
@@ -1735,6 +1753,9 @@ GoldScout-export 7^deub029imheh^11
 @t^1778^21:1050
 @t^1983^1:105
 @t^2667^9:50
+@t^5419^1:62
+@t^5616^1:40
+@t^5618^1:22
 @t^269175^4:104
 @t^277882^3:139
 @f^1413^0^17^233^6303:8:8,6358:2:2,6361:7:7^152:17
@@ -1743,5 +1764,5 @@ GoldScout-export 7^deub029imheh^11
 @f^1443^0^31^225^4603:2:2,6308:2:2,6358:10:10,6359:8:8,6362:4:4,8365:1:1,16968:1:1,21150:4:4^87:11,107:2,284:10,305:8
 @f^1444^0^23^225^6358:2:2,8365:5:5,13758:12:12,13759:1:1,13760:3:3,16967:1:1^192:23
 @f^1445^0^31^225^4603:5:5,6355:1:1,6358:2:2,6359:5:5,6362:18:18^231:31
-@f^1446^0^23^229^3820:2:2,4603:3:3,6358:3:3,6359:1:1,6362:2:2,7973:1:1,13422:4:8,13754:1:1,13755:2:2,21151:1:1,21228:3:3^73:1,93:18,113:4
+@f^1446^0^121^229^3820:3:4,4603:34:34,6358:9:9,6359:23:23,6362:11:11,7973:10:10,13422:8:15,13754:5:5,13755:12:12,21151:1:1,21228:5:5^73:34,93:55,113:32
 @l^0^enUS
