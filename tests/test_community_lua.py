@@ -360,6 +360,37 @@ class LootCountingLuaTests(unittest.TestCase):
         self.dies(BEAR)
         self.assertEqual(self.bear(), (1, {}))
 
+    def judged_later(self):
+        """Holds the death check's timer until run() is called, as the game does for 1.5 seconds."""
+        self.lua.execute("PENDING = {}; C_Timer.After = function(_, fn) PENDING[#PENDING + 1] = fn end")
+
+        def run():
+            self.game.now += 1.5
+            self.lua.execute("for _, fn in ipairs(PENDING) do fn() end; PENDING = {}")
+        return run
+
+    def test_a_corpse_emptied_before_goldscout_read_it_isnt_an_empty_kill(self):
+        # A fast-loot add-on can take everything before the window is read: the window names no source, and
+        # the corpse is empty by the time its death is judged.
+        self.lua.globals().CanLootUnit = lambda guid: False
+        run = self.judged_later()
+        self.dies(BEAR)
+        self.loot(BEAR)                                  # the window, already emptied
+        run()
+        self.assertEqual(self.bear(), (None, {}))
+        self.game.now += 60                              # a later kill with no window is still counted
+        self.dies(BEAR2, unit="nameplate1")
+        run()
+        self.assertEqual(self.bear(), (1, {}))
+
+    def test_a_window_read_in_full_doesnt_stop_an_empty_corpse_counting(self):
+        self.lua.globals().CanLootUnit = lambda guid: False
+        run = self.judged_later()
+        self.dies(BEAR2, unit="nameplate1")              # died empty while you looted another bear
+        self.loot(BEAR, 3730)
+        run()
+        self.assertEqual(self.bear(), (2, {3730: 1}))
+
     def test_lootable_corpse_counts_when_looted_not_at_death(self):
         self.lua.globals().CanLootUnit = lambda guid: True
         self.dies(BEAR)

@@ -7,6 +7,8 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- **Fast-loot add-ons no longer make drops look rarer:** when another add-on emptied a corpse before GoldScout could read its loot, the kill could be counted as one that dropped nothing. GoldScout now leaves such a kill out.
+
 ## v0.12.50
 
 - **Real kill rates for gold per hour:** GoldScout now times your solo kills (from one kill to the next, leaving out breaks of over three minutes), and shared drop data includes those times. Once enough players have timed a mob, gold per hour uses the pace players really kill it, instead of the same 70 kills an hour for every mob: on the Farm tab (unless you set your own kills per hour), in the website's gold guides and on its mob and item pages.

@@ -67,6 +67,10 @@ local window -- the loot window that is open right now
 -- do loot the corpse, its drops still count but the kill isn't counted twice.
 local pendingDrops = {}
 local judgedDeaths = {}
+-- When a loot window last opened that named no corpse or other source (GetTime()). A fast-loot add-on can take
+-- everything before GoldScout reads the window; the corpse is then empty when its death is judged, and counting
+-- that kill with no drops would pull every rate down. A death before such a window isn't counted.
+local lastBlindWindow
 
 -- When you last cast Skinning, Herb Gathering or Mining: a corpse's loot
 -- window that opens right after is gathering, not the mob's drops. (Some
@@ -844,6 +848,9 @@ local function OnLootReady()
     return
   end
   window = ReadWindow()
+  if not window.fishing and next(window.sources) == nil then
+    lastBlindWindow = GetTime()
+  end
   local learn = ns.db.settings.learnDrops
   if window.fishing then
     -- One loot window per catch; it stays open (window set) until it closes.
@@ -1058,9 +1065,12 @@ end)
 -- mob you tagged dies while you're solo, GoldScout checks its corpse a moment
 -- later; with no loot on it, the kill counts right away. (In a group, others
 -- loot your kills, so only opened corpses count.)
-local function JudgeDeath(guid, npcID, name, level)
+local function JudgeDeath(guid, npcID, name, level, diedAt)
   if counted[guid .. ":kill"] then
     return -- already looted
+  end
+  if lastBlindWindow and diedAt and lastBlindWindow >= diedAt then
+    return -- a loot window GoldScout couldn't read may have been this corpse's: an empty corpse proves nothing
   end
   local hasLoot
   if CanLootUnit then
@@ -1106,8 +1116,8 @@ ns.On("UNIT_HEALTH", function(unit)
   if not UnitIsTapDenied or ns.Plain(UnitIsTapDenied(unit)) ~= false then
     return
   end
-  local name, level = UnitName(unit), UnitLevel(unit)
+  local name, level, diedAt = UnitName(unit), UnitLevel(unit), GetTime()
   C_Timer.After(1.5, function()
-    JudgeDeath(guid, npcID, name, level)
+    JudgeDeath(guid, npcID, name, level, diedAt)
   end)
 end)
