@@ -7,6 +7,8 @@ releases add their own line automatically.
 
 ## Unreleased
 
+## v0.12.55
+
 - **Cleaner dungeon drop rates from rogues:** before v0.12.48, a Pick Pocket inside a dungeon counted as a kill, and those kills stayed in your saved loot. On an account that picks pockets, GoldScout now shares only the dungeon loot recorded from this version on. Your own Farm tab and drop rates still use everything you've looted.
 
 ## v0.12.54
