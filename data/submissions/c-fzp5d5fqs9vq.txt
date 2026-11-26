@@ -1,4 +1,4 @@
-GoldScout-export 8^fzp5d5fqs9vq^27
+GoldScout-export 8^fzp5d5fqs9vq^29
 587^1^0^34^34^1434^0.2826^0.1930^1^Krieger der Bloodscalp^1519:1:1,4306:1:2^
 588^4^0^34^35^1434^0.2367^0.1213^4^Späher der Bloodscalp^1708:1:1,2592:1:1,3792:1:1,4306:1:1^
 595^12^0^34^35^1434^0.2500^0.1230^12^Jäger der Bloodscalp^1519:3:3,1708:1:1,2290:1:1,4306:6:10^
@@ -121,6 +121,9 @@ GoldScout-export 8^fzp5d5fqs9vq^27
 12922^1^0^38^38^1435^0.6120^0.2074^1^Wichteldiener^^
 13019^1^0^33^33^1443^0.5517^0.3009^1^Seher der Burning Blade^4306:1:2,15750:1:1^
 14280^1^0^27^27^1424^0.8507^0.4760^1^Samras^4707:1:1,5635:1:1,6394:1:1^
+254560^6^0^39^40^2548^0.4735^0.4994^6^Twilight-Schattenbeschwörer^4306:2:4,266425:6:11,266427:1:1,267073:3:7^
+256798^8^0^37^38^2548^0.4791^0.4970^8^Twilight-Neophyt^3671:1:1,3799:1:1,4306:3:7,4338:1:1,5429:1:1,6438:1:1,248692:1:1,266425:8:15,266427:1:1,267073:4:10^
+256952^12^0^39^40^2548^0.4923^0.5396^12^Twilight-Räuber^3783:1:1,3805:1:1,4306:4:9,267073:2:5^
 262037^4^0^37^38^2548^0.6024^0.8497^4^Nistender Nachtsauger^11394:4:4^
 272228^1^0^36^37^2548^0.5506^0.7381^1^Erntewächter^4306:1:2^
 @i^729^Sehniges Geierfleisch
@@ -168,18 +171,22 @@ GoldScout-export 8^fzp5d5fqs9vq^27
 @i^3399^Geierkralle
 @i^3404^Bussardflügel
 @i^3667^Zartes Krokiliskenfleisch
+@i^3671^Lebloser Schädel
 @i^3685^Raptorei
 @i^3712^Schildkrötenfleisch
 @i^3731^Löwenfleisch
 @i^3771^Wildschweinschenkel
 @i^3781^Breites Claymore
+@i^3783^Leichter Krummsäbel
 @i^3784^Metallstock
 @i^3787^Steinkeule
 @i^3792^Geflochtener Gürtel
 @i^3796^Geflochtene Handschuhe
+@i^3799^Geflochtene Weste
 @i^3802^Gehärtete Lederarmschienen
 @i^3803^Gehärteter Umhang
 @i^3804^Gehärtete Lederhandschuhe
+@i^3805^Gehärtete Lederhose
 @i^3806^Gehärtete Lederschulterpolster
 @i^3810^Doppelpanzerarmschienen
 @i^3811^Doppelt genähter Umhang
@@ -216,6 +223,7 @@ GoldScout-export 8^fzp5d5fqs9vq^27
 @i^5122^Dickes Kodohaar
 @i^5136^Zerrissenes pelziges Ohr
 @i^5137^Heller Augapfel
+@i^5429^Ein hübscher Stein
 @i^5524^Dickschalige Muschel
 @i^5635^Scharfe Klaue
 @i^5636^Zierliche Feder
@@ -240,6 +248,7 @@ GoldScout-export 8^fzp5d5fqs9vq^27
 @i^6359^Feuerflossenschnapper
 @i^6362^Roher Steinschuppenkabeljau
 @i^6394^Silberfadenstiefel
+@i^6438^Glanzlose Elementararmschiene
 @i^6767^Tyranis' Anhänger
 @i^6986^Purpurroter Lotus
 @i^7070^Elementarwasser
@@ -282,12 +291,16 @@ GoldScout-export 8^fzp5d5fqs9vq^27
 @i^216616^Lagerkäfigschlüssel
 @i^248686^Abgefangene Kiste: Kräuter des Gesellen
 @i^248691^Abgefangene Kiste: Blühende Kräuter des Experten
+@i^248692^Abgefangene Kiste: Erz des Experten
 @i^248708^Abgefangene Kiste: Stoffe des Experten
 @i^254432^Geschnitztes Zentaurentotem
 @i^258530^Glücksköder
 @i^260347^Zerlumptes Tagebuch
 @i^262888^Versiegelte Verfügung des Gesellen
 @i^262889^Versiegelte Verfügung des Experten
+@i^266425^Twilightcharme
+@i^266427^Logbuch des Feldmarschalls
+@i^267073^Twilightfingerknochen
 @q^729^1:7:1
 @q^770^0:15:0
 @q^1074^0:15:0
@@ -333,18 +346,22 @@ GoldScout-export 8^fzp5d5fqs9vq^27
 @q^3399^0:15:0
 @q^3404^1:7:1
 @q^3667^1:7:1
+@q^3671^0:15:0
 @q^3685^1:7:1
 @q^3712^1:7:1
 @q^3731^1:7:1
 @q^3771^1:0:0
 @q^3781^0:2:0
+@q^3783^0:2:0
 @q^3784^0:2:0
 @q^3787^0:2:0
 @q^3792^0:4:0
 @q^3796^0:4:0
+@q^3799^0:4:0
 @q^3802^0:4:0
 @q^3803^0:4:0
 @q^3804^0:4:0
+@q^3805^0:4:0
 @q^3806^0:4:0
 @q^3810^0:4:0
 @q^3811^0:4:0
@@ -381,6 +398,7 @@ GoldScout-export 8^fzp5d5fqs9vq^27
 @q^5122^0:15:0
 @q^5136^0:15:0
 @q^5137^0:15:0
+@q^5429^0:15:0
 @q^5524^1:7:0
 @q^5635^1:7:1
 @q^5636^0:15:0
@@ -405,6 +423,7 @@ GoldScout-export 8^fzp5d5fqs9vq^27
 @q^6359^1:7:1
 @q^6362^1:7:1
 @q^6394^2:4:0
+@q^6438^0:15:0
 @q^6767^1:12:0
 @q^6986^0:15:0
 @q^7070^1:7:1
@@ -447,12 +466,16 @@ GoldScout-export 8^fzp5d5fqs9vq^27
 @q^216616^1:12:0
 @q^248686^1:0:1
 @q^248691^1:0:1
+@q^248692^1:0:1
 @q^248708^2:0:1
 @q^254432^2:15:0
 @q^258530^1:12:0
 @q^260347^1:15:0
 @q^262888^3:0:0
 @q^262889^3:0:0
+@q^266425^1:12:0
+@q^266427^1:12:0
+@q^267073^1:12:0
 @m^1416^Alteracgebirge
 @m^1417^Arathihochland
 @m^1424^Vorgebirge von Hillsbrad
@@ -1041,6 +1064,9 @@ GoldScout-export 8^fzp5d5fqs9vq^27
 @a^12922^92:1
 @a^13019^131:1
 @a^14280^197:1
+@a^254560^189:1,209:5
+@a^256798^189:4,209:3,210:1
+@a^256952^189:3,209:2,210:1,230:6
 @a^262037^332:2,352:2
 @a^272228^291:1
 @t^588^3:133
@@ -1070,6 +1096,9 @@ GoldScout-export 8^fzp5d5fqs9vq^27
 @t^1082^3:196
 @t^1084^7:261
 @t^3560^5:156
+@t^254560^5:151
+@t^256798^8:251
+@t^256952^11:317
 @t^262037^3:175
 @f^1445^0^28^200^4603:7:7,6358:1:1,6359:2:2,6362:18:18^231:28
 @l^0^deDE

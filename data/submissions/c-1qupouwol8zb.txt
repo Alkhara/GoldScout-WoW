@@ -1,4 +1,4 @@
-GoldScout-export 7^1qupouwol8zb^27
+GoldScout-export 7^1qupouwol8zb^28
 587^8^0^33^34^1434^0.3086^0.1854^8^Bloodscalp Warrior^1520:1:1,2725:1:1,2734:1:1,3915:2:2,4306:1:2^
 588^1^0^34^35^1434^0.2600^0.0949^1^Bloodscalp Scout^3915:1:1^
 595^1^0^34^34^1434^0.2307^0.1251^1^Bloodscalp Hunter^1708:1:1^
@@ -49,7 +49,7 @@ GoldScout-export 7^1qupouwol8zb^27
 2554^10^0^32^33^1417^0.6815^0.6615^10^Witherbark Axe Thrower^1711:1:1,3771:1:1,4306:2:3^
 2555^5^0^33^34^1417^0.7175^0.6727^5^Witherbark Witch Doctor^2592:1:2,3795:1:1,4306:3:5^
 2556^8^0^34^35^1417^0.7100^0.6808^8^Witherbark Headhunter^1710:1:1,2592:1:2,3795:1:1,3801:1:1,15286:1:1^
-2559^17^0^30^31^1417^0.6100^0.4807^17^Highland Strider^1696:3:3,3685:7:7,4461:7:7,4512:5:5,4586:1:1,12184:5:5^
+2559^19^0^30^31^1417^0.6013^0.4786^19^Highland Strider^1696:3:3,3685:7:7,4461:7:7,4512:5:5,4586:2:2,12184:6:6^
 2560^5^0^33^34^1417^0.5750^0.6539^5^Highland Thrasher^1696:1:1,3685:2:2,4461:1:1,4512:1:1,12184:3:3^
 2562^3^3^32^33^1417^0.3421^0.4786^3^Boulderfist Ogre^^1710:1:1,16883:1:1
 2563^2^0^32^33^1417^0.5272^0.5422^2^Plains Creeper^1074:1:1,2251:2:2,4585:1:1,278225:1:1^
@@ -62,12 +62,19 @@ GoldScout-export 7^1qupouwol8zb^27
 2579^3^0^34^35^1417^0.5804^0.6560^3^Mesa Buzzard^1464:1:1,3404:1:1,11416:1:1,12037:3:3^
 2581^2^0^31^32^1417^0.5622^0.3827^2^Dabyrie Militia^^
 2582^6^0^30^31^1417^0.5591^0.3905^6^Dabyrie Laborer^^
-2588^2^0^36^37^1417^0.2771^0.6077^2^Syndicate Prowler^4306:1:4,4440:1:1^
-2590^1^0^35^35^1417^0.2752^0.6046^1^Syndicate Conjuror^3809:1:1,4306:1:1^
+2583^7^0^37^38^1417^0.2293^0.6059^7^Stromgarde Troll Hunter^4306:3:9,4450:2:6,7434:1:1,8748:1:1,248709:1:1^
+2584^9^2^38^39^1417^0.2433^0.5962^9^Stromgarde Defender^3781:1:1,4306:2:5,4450:2:6,248694:1:1^16883:1:1
+2585^3^1^39^40^1417^0.2392^0.5956^3^Stromgarde Vindicator^1710:1:1,4338:1:3,262889:1:1^
+2588^4^0^36^37^1417^0.2805^0.6089^4^Syndicate Prowler^4306:1:4,4440:1:1,5113:1:1^
+2590^1^0^35^36^1417^0.2752^0.6046^1^Syndicate Conjuror^3809:1:1,4306:1:1^
 2591^2^0^37^38^1417^0.2881^0.6124^2^Syndicate Magus^4306:2:7^
+2607^1^0^44^44^1417^0.2744^0.5813^1^Prince Galen Trollbane^4466:1:1^
+2612^1^0^38^38^1417^0.4037^0.5417^1^Lieutenant Valorcall^4306:1:3,4458:1:1^
+2615^1^0^40^40^1417^0.2636^0.5816^1^Stromgarde Roughrider^^
 2623^10^0^32^33^1416^0.2312^0.5812^2^Spirit of Old^^
 2628^1^0^33^33^1416^0.2318^0.5879^1^Dalaran Worker^4306:1:1^
 2712^1^0^38^38^1417^0.6028^0.5339^1^Quae^^
+2738^0^1^37^37^0^0.0000^0.0000^0^Stromgarde Cavalryman^^
 2964^3^0^9^10^1412^0.3549^0.2603^3^Windfury Sorceress^2589:1:1,4775:1:1^
 2965^1^0^10^11^1412^0.3774^0.2099^1^Windfury Matriarch^2589:1:2^
 3250^1^0^21^21^1413^0.4708^0.6993^1^Silithid Creeper^^
@@ -196,6 +203,7 @@ GoldScout-export 7^1qupouwol8zb^27
 @i^3745^Rune of Opening
 @i^3771^Wild Hog Shank
 @i^3779^Hefty War Axe
+@i^3781^Broad Claymore
 @i^3784^Metal Stave
 @i^3786^Shiny Dirk
 @i^3787^Stone Club
@@ -220,7 +228,10 @@ GoldScout-export 7^1qupouwol8zb^27
 @i^4428^Spider Palp
 @i^4435^Mote of Myzrael
 @i^4440^Sigil of Strom
+@i^4450^Sigil Fragment
+@i^4458^Sigil of Arathor
 @i^4461^Raptor Hide
+@i^4466^Sigil of Trollbane
 @i^4512^Highland Raptor Eye
 @i^4538^Snapvine Watermelon
 @i^4539^Goldenbark Apple
@@ -279,7 +290,7 @@ GoldScout-export 7^1qupouwol8zb^27
 @i^6986^Crimson Lotus
 @i^7330^Infiltrator Buckler of the Tiger
 @i^7432^Twilight Cowl of Intellect
-@i^7434^Twilight Boots of Fire Protection
+@i^7434^Twilight Boots of the Physician
 @i^7440^Sentinel Trousers of Stamina
 @i^7443^Sentinel Gloves of the Boar
 @i^7447^Sentinel Bracers of the Bear
@@ -288,6 +299,7 @@ GoldScout-export 7^1qupouwol8zb^27
 @i^8150^Deeprock Salt
 @i^8186^Dire Wand
 @i^8746^Interlaced Cowl
+@i^8748^Double Mail Coif
 @i^9293^Recipe: Magic Resistance Potion
 @i^9451^Bubbling Water
 @i^9797^Ivycloth Pants of Frost Protection
@@ -360,10 +372,12 @@ GoldScout-export 7^1qupouwol8zb^27
 @i^248706^Waylaid Crate: Journeyman Ingots
 @i^248707^Waylaid Crate: Journeyman Parts
 @i^248708^Waylaid Crate: Expert Fabrics
+@i^248709^Waylaid Crate: Expert Ingots
 @i^248710^Waylaid Crate: Expert Parts
 @i^251961^Arcane Mote
 @i^252816^Pattern: Defender's Leather Helm
 @i^262888^Sealed Journeyman's Writ
+@i^262889^Sealed Expert's Writ
 @i^270305^Brinescale Trident
 @i^270333^Voodoo-Infused Artifact
 @i^270866^Titan Relic
@@ -492,6 +506,7 @@ GoldScout-export 7^1qupouwol8zb^27
 @q^3745^1:12:0
 @q^3771^1:0:0
 @q^3779^0:2:0
+@q^3781^0:2:0
 @q^3784^0:2:0
 @q^3786^0:2:0
 @q^3787^0:2:0
@@ -516,7 +531,10 @@ GoldScout-export 7^1qupouwol8zb^27
 @q^4428^0:15:0
 @q^4435^1:12:0
 @q^4440^1:12:0
+@q^4450^1:12:0
+@q^4458^1:12:0
 @q^4461^1:7:1
+@q^4466^1:12:0
 @q^4512^1:12:0
 @q^4538^1:0:0
 @q^4539^1:0:0
@@ -584,6 +602,7 @@ GoldScout-export 7^1qupouwol8zb^27
 @q^8150^1:7:1
 @q^8186^2:2:0
 @q^8746^0:4:0
+@q^8748^0:4:0
 @q^9293^2:9:0
 @q^9451^1:0:0
 @q^9797^2:4:0
@@ -656,10 +675,12 @@ GoldScout-export 7^1qupouwol8zb^27
 @q^248706^2:0:1
 @q^248707^2:0:1
 @q^248708^2:0:1
+@q^248709^2:0:1
 @q^248710^2:0:1
 @q^251961^1:12:0
 @q^252816^3:9:0
 @q^262888^3:0:0
+@q^262889^3:0:0
 @q^270305^1:12:0
 @q^270333^1:12:0
 @q^270866^1:12:0
@@ -1538,7 +1559,7 @@ GoldScout-export 7^1qupouwol8zb^27
 @a^2554^254:3,272:4,273:1,274:2
 @a^2555^254:1,274:3,293:1
 @a^2556^254:3,274:3,293:2
-@a^2559^135:1,145:1,153:4,173:3,192:1,209:1,212:1,213:2,214:1,308:2
+@a^2559^135:1,145:1,153:5,173:3,192:1,207:1,209:1,212:1,213:2,214:1,308:2
 @a^2560^231:1,271:3,272:1
 @a^2562^186:2,187:1
 @a^2563^212:1,228:1
@@ -1551,9 +1572,15 @@ GoldScout-export 7^1qupouwol8zb^27
 @a^2579^251:1,271:2
 @a^2581^151:1,171:1
 @a^2582^150:1,151:5
-@a^2588^225:1,245:1
+@a^2583^224:2,225:1,244:4
+@a^2584^224:1,225:3,244:5
+@a^2585^224:1,225:1,244:1
+@a^2588^225:1,245:3
 @a^2590^245:1
 @a^2591^245:2
+@a^2607^225:1
+@a^2612^208:1
+@a^2615^225:1
 @a^2623^224:2
 @a^2628^224:1
 @a^2712^212:1
