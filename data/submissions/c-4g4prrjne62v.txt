@@ -1,4 +1,7 @@
-GoldScout-export 5^4g4prrjne62v^1
+GoldScout-export 5^4g4prrjne62v^2
+1525^2^0^5^6^1420^0.5184^0.5145^2^Rotting Dead^2855:2:2^
+1526^5^0^6^7^1420^0.5364^0.5226^5^Ravaged Corpse^1422:1:1,2855:3:3^
+1535^20^0^6^7^1420^0.3326^0.4810^20^Scarlet Warrior^159:2:2,818:1:1,1423:1:1,2070:1:1,2589:3:4^
 3711^1^0^21^21^1440^0.1139^0.3110^1^Wrathtail Myrmidon^5490:1:1,16656:1:1,17057:1:1^
 3712^3^0^19^20^1440^0.1124^0.2888^3^Wrathtail Razortail^1792:1:1,1813:1:1,5490:3:3,5523:1:1,16647:1:1^
 3713^6^0^18^19^1440^0.1268^0.2830^6^Wrathtail Wave Rider^3396:1:1,5490:6:6,5523:4:4,15014:1:1^
@@ -24,8 +27,12 @@ GoldScout-export 5^4g4prrjne62v^1
 4832^1^0^0^0^0^0.0000^0.0000^0^^5881:1:1,6903:1:1^
 4887^1^0^0^0^0^0.0000^0.0000^0^^273839:1:1^
 12876^1^0^0^0^0^0.0000^0.0000^0^^16782:1:1,252819:1:1^
+@i^159^Refreshing Spring Water
 @i^730^Murloc Eye
+@i^818^Tigerseye
 @i^1205^Melon Juice
+@i^1422^Worn Leather Gloves
+@i^1423^Worn Leather Pants
 @i^1468^Murloc Fin
 @i^1747^Linked Chain Boots
 @i^1751^Linked Chain Pants
@@ -36,10 +43,12 @@ GoldScout-export 5^4g4prrjne62v^1
 @i^1819^Gouging Pick
 @i^1820^Wooden Maul
 @i^1823^Bludgeoning Cudgel
+@i^2070^Darnassian Bleu
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2674^Crawler Meat
 @i^2675^Crawler Claw
+@i^2855^Putrid Claw
 @i^3010^Fine Sand
 @i^3396^Recipe: Elixir of Lesser Agility
 @i^3712^Turtle Meat
@@ -69,8 +78,12 @@ GoldScout-export 5^4g4prrjne62v^1
 @i^17058^Fish Oil
 @i^252819^Pattern: Wisdom's Leather Helm
 @i^273839^Spiked Shell Band
+@q^159^1:0:0
 @q^730^1:7:1
+@q^818^2:7:1
 @q^1205^1:0:0
+@q^1422^0:4:0
+@q^1423^0:4:0
 @q^1468^1:7:1
 @q^1747^0:4:0
 @q^1751^0:4:0
@@ -81,10 +94,12 @@ GoldScout-export 5^4g4prrjne62v^1
 @q^1819^0:2:0
 @q^1820^0:2:0
 @q^1823^0:2:0
+@q^2070^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2674^1:7:1
 @q^2675^1:7:1
+@q^2855^1:12:0
 @q^3010^0:15:0
 @q^3396^2:9:0
 @q^3712^1:7:1
@@ -115,6 +130,7 @@ GoldScout-export 5^4g4prrjne62v^1
 @q^252819^3:9:0
 @q^273839^3:4:0
 @m^1414^Kalimdor
+@m^1420^Tirisfal Glades
 @m^1440^Ashenvale
 @c^118^
 @c^724^
@@ -1342,6 +1358,9 @@ GoldScout-export 5^4g4prrjne62v^1
 @c^279981^
 @c^279982^
 @c^286152^
+@a^1525^210:2
+@a^1526^210:5
+@a^1535^186:18,206:2
 @a^3711^122:1
 @a^3712^102:3
 @a^3713^102:6
