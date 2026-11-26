@@ -10,20 +10,31 @@ can't top a list. English for now: these paths aren't in data_pages.LOCAL_PAGES,
 Trends: the server keeps each auction house's first snapshot of every day for 30 days (?ago=7), so each farm's
 main item is labelled rising, steady, cooling or new against a week ago, and "What changed this week" ranks the
 same farms at last week's prices to show what entered or left the top list and which prices moved most.
+
+One odd listing can't top a guide: as the add-on values a mob's other loot (Core.lua OTHER_LOOT_PRICE_CAP), a
+lowest buyout over PRICE_CAP times the item's usual price in the region (the median lowest buyout across the
+region's faction auction houses, tools/bundle_prices.py) counts as that much. A single Soft Frenzy Flesh listed at
+567g, where the next house sells it for 1s, made a level 15 mob the best farm on its auction house.
 """
 import json
+import sys
 import time
 import urllib.error
 import urllib.request
+from pathlib import Path
 
 import data_pages
 import farm_notes
 from data_pages import P, e
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "tools"))
+import bundle_prices  # noqa: E402
+
 API_URL = "https://api.wowgoldscout.com"
 USER_AGENT = "GoldScout-site-build/1.0 (+https://wowgoldscout.com)"
 REGIONS = {"us": "US", "eu": "EU", "kr": "Korea", "tw": "Taiwan"}
 AH_CUT = data_pages.addon_number("Core.lua", "AH_CUT")   # you keep this share of a sale
+PRICE_CAP = data_pages.addon_number("Core.lua", "OTHER_LOOT_PRICE_CAP")   # times the region's usual price
 TOP = 3                     # farms in a guide's top list, each for a different item
 MINOR = 0.02                # drops worth less than this share of a farm's kill are left out of its table
 FETCH_TIMEOUT = 20
@@ -83,7 +94,37 @@ def fetch_markets(api=API_URL, fetch=get_json):
                         "faction": house["faction"], "snapshot": int(house.get("snapshot") or 0),
                         "prices": price_pairs(body), "week": fetch_week(api, house, fetch)})
     markets.sort(key=lambda m: (list(REGIONS).index(m["region"]), m["ruleset"], m["faction"]))
+    return with_usual(markets)
+
+
+def usual_prices(price_lists):
+    """{itemID: usual price in copper}: the median lowest buyout over these auction houses' prices, for items
+    listed on at least bundle_prices.MIN_HOUSES of them (on one house alone, nothing says what's usual)."""
+    houses = dict(enumerate(price_lists))
+    if len(houses) < bundle_prices.MIN_HOUSES:
+        return {}
+    return {item: entry[0] for item, entry in bundle_prices.region_estimates(houses).items()}
+
+
+def with_usual(markets):
+    """Adds each region's usual prices to its markets ("usual"), and a week ago's to their "week". In place;
+    returns markets."""
+    for region in {market["region"] for market in markets}:
+        own = [market for market in markets if market["region"] == region]
+        usual = usual_prices([market["prices"] for market in own])
+        weeks = [market["week"] for market in own if market.get("week")]
+        usual_then = usual_prices([week["prices"] for week in weeks])
+        for market in own:
+            market["usual"] = usual
+        for week in weeks:
+            week["usual"] = usual_then
     return markets
+
+
+def counted_price(item, price, usual):
+    """(the price a drop is valued at, True if that's the cap): at most PRICE_CAP times its usual price."""
+    cap = (usual or {}).get(item, 0) * PRICE_CAP
+    return (cap, True) if cap and price > cap else (price, False)
 
 
 def slug(market):
@@ -97,10 +138,11 @@ def market_name(market):
 
 
 # -- ranking ----------------------------------------------------------------
-def farms(data, prices):
+def farms(data, prices, usual=None):
     """The mobs worth farming on one auction house, best first: [{npc, kills, per_kill, cautious, pace, timed,
-    parts}], parts [{item, rate, stack, price, listed, per_kill}] for each crafting reagent listed there, most
-    valuable first. Ranked by the cautious gold an hour, at the pace players kill each mob (Dataset.kills_per_hour:
+    parts}], parts [{item, rate, stack, price, listed, counted, capped, per_kill}] for each crafting reagent
+    listed there, most valuable first: price is the lowest buyout, counted what it's valued at (at most
+    PRICE_CAP times its price in usual, the region's usual prices). Ranked by the cautious gold an hour, at the pace players kill each mob (Dataset.kills_per_hour:
     timed kills where there are enough, else the addon's default). Only mobs with SOLID kills that players looted somewhere with a position, so not inside dungeons (the
     game gives no position there, and some bosses come with no zone at all): like the add-on's Farm list with
     Show dungeon drops off, since a boss with a lockout isn't a farm. Items nobody lists (no price) don't count."""
@@ -114,9 +156,10 @@ def farms(data, prices):
             price, listed = prices.get(item, (0, 0))
             if price <= 0 or listed <= 0:
                 continue
-            each = price * AH_CUT
+            counted, capped = counted_price(item, price, usual)
+            each = counted * AH_CUT
             parts.append({"item": item, "rate": rate, "stack": stack, "price": price, "listed": listed,
-                          "per_kill": rate * stack * each})
+                          "counted": counted, "capped": capped, "per_kill": rate * stack * each})
             cautious += data_pages.wilson(round(rate * kills), kills)[0] * stack * each
         if not parts:
             continue
@@ -213,7 +256,7 @@ def changes(data, market, ranked):
     week = market.get("week")
     if not week:
         return None
-    before = farms(data, week["prices"])
+    before = farms(data, week["prices"], week.get("usual"))
     places_now, places_then = places(ranked), places(before)
     picked_now, picked_then = top(ranked), top(before)
     items_now = {farm["parts"][0]["item"] for farm in picked_now}
@@ -271,18 +314,28 @@ def where_figure(data, npc):
             % (art, data_pages.square_coords(data_pages.busiest(cells)), data_pages.ground_note([map_id])))
 
 
-def loot_table(data, npc, kills, prices):
+def price_cell(price, counted, capped):
+    """A drop's lowest buyout, and what it's counted as when that's capped."""
+    if not capped:
+        return money(price)
+    return '%s <span class=small title="Far above its usual price in the region">(counted as %s)</span>' % (
+        money(price), money(counted))
+
+
+def loot_table(data, npc, kills, prices, usual=None):
     """Everything players have looted from the mob (gray junk aside), priced on this auction house."""
     rows = []
     for item, rate, stack in data.drops(npc):
         if data.kind(item) == "gray":
             continue
         price, listed = prices.get(item, (0, 0))
-        each = price * AH_CUT if price > 0 and listed > 0 else 0
+        counted, capped = counted_price(item, price, usual)
+        each = counted * AH_CUT if price > 0 and listed > 0 else 0
         rows.append("<tr><td>%s</td><td class=num>%s</td><td class=num>%s</td><td class=num>%s</td>"
                     "<td class=num>%s</td></tr>"
                     % (data_pages.item_link(data, item), data_pages.chance(rate, kills), data_pages.stack_text(stack),
-                       money(price) if each else "&ndash;", money(rate * stack * each) if each else "&ndash;"))
+                       price_cell(price, counted, capped) if each else "&ndash;",
+                       money(rate * stack * each) if each else "&ndash;"))
     if not rows:
         return ""
     return ("<details><summary>Everything players have looted from it (%d item%s)</summary>"
@@ -324,7 +377,8 @@ def farm_card(data, rank, farm, market, links, note=None):
     rows = "".join(
         "<tr><td>%s</td><td class=num>%s</td><td class=num>%s</td><td class=num>%s</td><td class=num>%s</td>%s</tr>"
         % (data_pages.item_link(data, part["item"]), data_pages.chance(part["rate"], farm["kills"]),
-           money(part["price"]), data_pages.num(part["listed"]), money(part["per_kill"]),
+           price_cell(part["price"], part["counted"], part["capped"]), data_pages.num(part["listed"]),
+           money(part["per_kill"]),
            "<td class=num>%s</td>" % week_cell(market, part["item"]) if weekly else "")
         for part in shown)
     badge = trend_badge(market, main["item"])
@@ -336,7 +390,8 @@ def farm_card(data, rank, farm, market, links, note=None):
             % (head, place, hour_range(farm), pace_text(farm), data_pages.num(farm["kills"]),
                " " + badge if badge else "", '<p class=guide-note>%s</p>' % e(note) if note else "",
                "<th class=num>This week</th>" if weekly else "", rows,
-               loot_table(data, npc, farm["kills"], market["prices"]), in_game(data, farm, links),
+               loot_table(data, npc, farm["kills"], market["prices"], market.get("usual")),
+               in_game(data, farm, links),
                P("/mob/%d" % npc), e(data.mob_name(npc)), where_figure(data, npc)))
 
 
@@ -407,12 +462,15 @@ def market_page(data, market, ranked, markets, links, notes=None):
         "<h2>How this is worked out</h2><p>Each drop chance comes from GoldScout players looting in game: only mobs "
         "with at least %d recorded kills count, and they're ranked by the low end of the chance's range, so a lucky "
         "streak can't top the list. Prices are the lowest buyout on %s auction houses, after the %d%% auction house "
-        "cut. Gold per hour runs from that low end to the average so far, at the pace GoldScout players kill each "
-        "mob: the time from one kill to the next, as if the mobs were your own level (breaks of over three minutes "
-        "don't count). Until players have timed at least %d kills of a mob, it's %d kills an hour on mobs of your "
+        "cut. A price over %d times the item's usual price in the region (the middle of its lowest buyouts there) "
+        "counts as %d times the usual price, so a single odd listing can't top the list either. Gold per hour "
+        "runs from that low end to the average so far, at the pace GoldScout players kill each mob: the time from "
+        "one kill to the next, as if the mobs were your own level. Looking for the next one counts, so a mob there "
+        "are only a few of isn't rated like a crowded camp; a gap of over ten minutes, or over three after moving "
+        "to another zone, is a break and doesn't count. Until players have timed at least %d kills of a mob, it's %d kills an hour on mobs of your "
         "own level (faster if you outlevel them). It counts crafting reagents only, not gear, coin or vendor trash. "
         "Lots of listings can mean a crowded market: check before you farm for hours.</p><p class=small>%s</p>"
-        % (data_pages.SOLID, e(name), round((1 - AH_CUT) * 100), data_pages.PACE_MIN_KILLS,
+        % (data_pages.SOLID, e(name), round((1 - AH_CUT) * 100), PRICE_CAP, PRICE_CAP, data_pages.PACE_MIN_KILLS,
            data_pages.KILLS_PER_HOUR, e(data_pages.SOURCE)))
     others = [other for other in markets if other is not market]
     if others:
@@ -459,7 +517,9 @@ def index_page(data, markets, ranked):
 
 def build(data, links, write, markets, notes_file=farm_notes.NOTES_FILE):
     """Writes /guides and each market's guide; returns their URL paths."""
-    ranked = {slug(market): farms(data, market["prices"]) for market in markets}
+    if any("usual" not in market for market in markets):
+        with_usual(markets)
+    ranked = {slug(market): farms(data, market["prices"], market["usual"]) for market in markets}
     written = farm_notes.load(notes_file)
     known = farm_notes.known_name_words(data) if written else set()
 

@@ -64,7 +64,7 @@ def farms_to_note(data, markets):
     out mobs nobody's export has named yet (a note about "Mob 11783" reads badly)."""
     found = {}
     for market in markets:
-        for farm in guides.top(guides.farms(data, market["prices"]), NOTE_FARMS):
+        for farm in guides.top(guides.farms(data, market["prices"], market.get("usual")), NOTE_FARMS):
             if data.mobs[farm["npc"]]["names"]:
                 found.setdefault(farm_notes.key(farm), farm)
     return found

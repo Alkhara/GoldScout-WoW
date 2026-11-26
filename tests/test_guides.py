@@ -194,6 +194,53 @@ class PageTests(unittest.TestCase):
         title, _, body = guides.market_page(self.data, self.market, [], [self.market], LINKS)
         self.assertIn("No farm on US PvP Horde", body)
 
+class OddListingTests(unittest.TestCase):
+    """One Bear Gall Bladder listed at 100g on one house, where the region's others sell it for 20s: it counts at
+    three times the usual price, 60s, not 100g (Soft Frenzy Flesh at 567g topped a Korean guide)."""
+    ODD = {**PRICES, 3702: (1000000, 1)}
+
+    def setUp(self):
+        self.data = dataset()
+        base = {"region": "us", "ruleset": "PvP", "faction": "Horde", "snapshot": 1794986707}
+        self.odd = dict(base, house=113, prices=self.ODD)
+        self.markets = guides.with_usual([self.odd, dict(base, house=114, ruleset="Normal", prices=PRICES),
+                                          dict(base, house=115, ruleset="Roleplay", prices=PRICES),
+                                          dict(base, region="eu", house=113, prices=self.ODD)])
+
+    def test_the_usual_price_is_the_regions_median(self):
+        self.assertEqual(self.odd["usual"][3702], 2000)
+        self.assertEqual(self.markets[3]["usual"], {})            # alone in its region: nothing says what's usual
+        self.assertEqual(guides.usual_prices([{1: (5, 1)}, {2: (7, 1)}]), {})   # each on one house only
+
+    def test_an_odd_listing_counts_as_three_times_the_usual(self):
+        ranked = guides.farms(self.data, self.ODD, self.odd["usual"])
+        self.assertEqual([farm["npc"] for farm in ranked], [3809, 1109, 833])
+        gall = ranked[0]["parts"][0]
+        self.assertEqual((gall["price"], gall["counted"], gall["capped"]), (1000000, 6000, True))
+        self.assertAlmostEqual(gall["per_kill"], 14 / 70 * 6000 * guides.AH_CUT)
+        uncapped = guides.farms(self.data, self.ODD)[0]["parts"][0]
+        self.assertAlmostEqual(uncapped["per_kill"], 14 / 70 * 1000000 * guides.AH_CUT)
+        self.assertFalse(ranked[1]["parts"][0]["capped"])         # Coyote Meat sells at its usual price
+
+    def test_the_page_shows_the_listing_and_what_it_counts_as(self):
+        pages = {}
+        guides.build(self.data, LINKS, lambda path, title, description, body, index=True:
+                     pages.__setitem__(path, body), self.markets)
+        body = pages["guides/us/pvp-horde.html"]
+        self.assertIn("100g <span class=small", body)
+        self.assertIn("(counted as 60s)", body)
+        self.assertIn("counts as 3 times the usual price", body)
+        self.assertNotIn("counted as", pages["guides/us/normal-horde.html"])
+
+    def test_a_week_ago_has_its_own_usual_prices(self):
+        week = {"day": "2026-11-11", "prices": {3702: (1000000, 1)}}
+        markets = guides.with_usual([dict(self.odd, week=week),
+                                     dict(self.odd, house=114, prices=PRICES,
+                                          week={"day": "2026-11-11", "prices": PRICES})])
+        self.assertEqual(markets[0]["week"]["usual"][3702], 2000)
+        self.assertEqual(markets[0]["usual"][3702], 2000)
+
+
 class TrendTests(unittest.TestCase):
     """A week ago: Coyote Meat cheaper (now rising), Bear Gall Bladder dearer (now cooling, and the bear was #1),
     Big Bear Meat not listed (new)."""
@@ -249,7 +296,7 @@ class TrendTests(unittest.TestCase):
                 return {"day": "2026-11-11", "prices": {"2673": [1000, 150]}}
             return {"prices": {"2673": [1550, 176]}}
         us, eu = guides.fetch_markets("https://api.example", fake)
-        self.assertEqual(us["week"], {"day": "2026-11-11", "prices": {2673: (1000, 150)}})
+        self.assertEqual((us["week"]["day"], us["week"]["prices"]), ("2026-11-11", {2673: (1000, 150)}))
         self.assertIsNone(eu["week"])
 
     def test_money(self):
