@@ -189,7 +189,7 @@ class ServerTests(unittest.TestCase):
         status, reply = raw("/v1/uploads", body, {"X-GoldScout-Terms": uploader.TERMS_VERSION,
                                                   "CF-Connecting-IP": fake_ip()}, "POST")
         self.assertEqual((status, reply.get("status")), (201, "registered"))
-        status, _ = raw("/v1/uploads", body.replace("export 6^", "export 9^"),
+        status, _ = raw("/v1/uploads", body.replace("export 6^", "export 10^"),
                         {"X-GoldScout-Terms": uploader.TERMS_VERSION, "CF-Connecting-IP": fake_ip()}, "POST")
         self.assertEqual(status, 400)
 
@@ -205,6 +205,15 @@ class ServerTests(unittest.TestCase):
         # Version 8: a rogue's dungeon mobs hold only what was recorded since the add-on started them over.
         dungeon = "3812^40^12^19^20^291^0.0000^0.0000^0^Defias Miner^3010:7:7^16882:3:3"
         body = "GoldScout-export 8^%s^1\n%s\n@m^291^The Deadmines\n" % (new_install(), dungeon)
+        status, reply = raw("/v1/uploads", body, {"X-GoldScout-Terms": uploader.TERMS_VERSION,
+                                                  "CF-Connecting-IP": fake_ip()}, "POST")
+        self.assertEqual((status, reply.get("status")), (201, "registered"))
+
+    def test_accepts_version_nine_with_hunting_time(self):
+        # Version 9: kill times count the hunt between kills, so a kill can take up to ten minutes (twice that
+        # scaled to your own level).
+        mob = "6560^30^0^60^61^1449^0.6300^0.4700^30^Stone Guardian^12809:13:13^"
+        body = "GoldScout-export 9^%s^1\n%s\n@m^1449^Un'Goro Crater\n@t^6560^20:18000\n" % (new_install(), mob)
         status, reply = raw("/v1/uploads", body, {"X-GoldScout-Terms": uploader.TERMS_VERSION,
                                                   "CF-Connecting-IP": fake_ip()}, "POST")
         self.assertEqual((status, reply.get("status")), (201, "registered"))

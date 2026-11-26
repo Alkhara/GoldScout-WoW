@@ -9,7 +9,7 @@
   var API = LOCAL ? "http://127.0.0.1:8799" : "https://api.wowgoldscout.com";   // local: wrangler dev
   var TERMS = "2026-11-07";   // the Contributor Terms version (server/src/index.js TERMS_VERSIONS)
   var MAX_BYTES = 250000;     // the server's limit for one export
-  var HEADER = /^GoldScout-export [2-8]\^([a-z0-9]{12})\^([1-9][0-9]{0,8})$/;
+  var HEADER = /^GoldScout-export [2-9]\^([a-z0-9]{12})\^([1-9][0-9]{0,8})$/;
   var STORE = "goldscout-share-tokens";
   var LAST = "goldscout-share-last";   // the install this browser shared most recently: its leaderboard entry
   // Leaderboard names, as the server checks them (server/src/leaderboard.js NAME).

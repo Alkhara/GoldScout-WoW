@@ -38,6 +38,11 @@ Version 7 adds how fast players kill each mob:
                            (from the kill before, at most PACE_GAP; longer gaps
                            are breaks and aren't timed), scaled to the pace on
                            mobs of your own level (GoldScout/Learn.lua PaceFactor)
+Version 9 changes no line either, only what @t times: a gap between kills over
+PACE_GAP still isn't timed, unless both kills were in the same zone at most
+HUNT_GAP apart (Learn.lua), so looking for the next one counts. Its times are
+only those recorded since (Learn.lua FreshPace); tools/merge_data.py prefers
+them, mob by mob, once there are enough.
 Version 8 changes no line, only what a rogue's dungeon mobs hold: before
 GoldScout v0.12.48 a Pick Pocket inside a dungeon counted as a kill, and those
 kills stay in a player's saved data. On an account that pickpockets, version 8
@@ -53,17 +58,20 @@ import unicodedata
 from collections import defaultdict
 
 HEADER = "GoldScout-export"
-HEADER_RE = re.compile(r"^GoldScout-export ([2-8])\^([a-z0-9]{12})\^([1-9][0-9]{0,8})$")
+HEADER_RE = re.compile(r"^GoldScout-export ([2-9])\^([a-z0-9]{12})\^([1-9][0-9]{0,8})$")
 LOCALE_RE = re.compile(r"^[a-z]{2}[A-Z]{2}$")
 AREA_RE = re.compile(r"^\d{1,3}:\d{1,6}(?:,\d{1,3}:\d{1,6})*$")
 AREA_CELLS = 400            # a 20x20 grid
-KNOWN_VERSION = 8           # the newest export version this copy understands
+KNOWN_VERSION = 9           # the newest export version this copy understands
 KNOWN_EXTRA = ("@i", "@m", "@c", "@q", "@l", "@a", "@f", "@t")
 NEWER_HEADER_RE = re.compile(r"^GoldScout-export (\d+)\^[a-z0-9]{12}\^[1-9][0-9]{0,8}$")
 ITEM_META_RE = re.compile(r"^([0-9]):([0-9]{1,2}):([01x])$")
 PACE_RE = re.compile(r"^([0-9]{1,6}):([0-9]{1,9})$")
-# A timed kill took at most PACE_GAP seconds (GoldScout/Learn.lua), scaled by at most 2 for the level gap.
+# A timed kill took at most PACE_GAP seconds (GoldScout/Learn.lua), from version 9 HUNT_GAP, scaled by at most 2
+# for the level gap.
 MAX_PACE_SECONDS = 180 * 2
+MAX_HUNT_SECONDS = 600 * 2
+HUNT_PACE = 9               # from this version, kill times count the hunt between kills (Learn.lua HUNT_GAP)
 
 
 def header(install_id, seq, version=3):
@@ -119,11 +127,12 @@ def clean_name(text, allowed=ITEM_NAME_PUNCTUATION):
 
 
 class Mob:
-    __slots__ = ("npc", "k", "p", "lmin", "lmax", "m", "x", "y", "c", "n", "i", "pi", "a", "t", "s")
+    __slots__ = ("npc", "k", "p", "lmin", "lmax", "m", "x", "y", "c", "n", "i", "pi", "a", "t", "s", "hunt")
 
     def __init__(self, **fields):
         self.a = {}          # area cells {cell: count} on map m (version 5)
         self.t, self.s = 0, 0   # timed kills and the seconds they took, at your own level's pace (version 7)
+        self.hunt = False       # timed with the hunt between kills (version 9, HUNT_PACE)
         for key, value in fields.items():
             setattr(self, key, value)
 
@@ -365,7 +374,8 @@ def _parse_pace(fields, line_no, result):
         result.errors.append("Line %d: a kill time line must look like @t^npcID^kills:seconds." % line_no)
         return
     timed, seconds = int(match.group(1)), int(match.group(2))
-    if timed < 1 or seconds > timed * MAX_PACE_SECONDS:
+    most = MAX_HUNT_SECONDS if result.version >= HUNT_PACE else MAX_PACE_SECONDS
+    if timed < 1 or seconds > timed * most:
         result.errors.append("Line %d: NPC %d's kill times are out of range." % (line_no, npc))
     elif npc in result.paces:
         result.errors.append("Line %d: NPC %d has more than one kill time line." % (line_no, npc))
@@ -539,6 +549,7 @@ def parse(text):
         if mob.m and mob.c:     # cells are on the mob's map; without one they mean nothing
             mob.a = result.areas.get(mob.npc, {})
         mob.t, mob.s = result.paces.get(mob.npc, (0, 0))
+        mob.hunt = result.version >= HUNT_PACE
     fresh_rogue_dungeons(result)
     return result
 
