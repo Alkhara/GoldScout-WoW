@@ -5,6 +5,8 @@ CurseForge. Add to **Unreleased** as changes land, written for players; when
 releasing, rename it to the version (`## v1.2.3`). Daily community data
 releases add their own line automatically.
 
+## Unreleased
+
 ## v0.12.56
 
 - **Kill rates count the hunt between kills:** GoldScout now also times kills up to ten minutes apart in the same zone, so looking for the next one and waiting for respawns count. A mob there are only a few of no longer looks as quick to farm as a crowded camp. Kill times start over with this version so shared data follows the new rule; until enough players have timed a mob the new way, gold per hour uses the old times.
