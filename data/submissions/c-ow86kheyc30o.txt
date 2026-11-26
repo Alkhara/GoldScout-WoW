@@ -1,4 +1,4 @@
-GoldScout-export 7^ow86kheyc30o^16
+GoldScout-export 8^ow86kheyc30o^17
 597^1^0^37^37^1434^0.2409^0.0859^1^Bloodscalp Berserker^4306:1:2^
 660^2^0^37^37^1434^0.2405^0.0859^2^Bloodscalp Witch Doctor^1708:1:1^
 667^3^0^39^40^1434^0.4357^0.3564^3^Skullsplitter Warrior^1520:1:1,4306:1:2^
@@ -115,6 +115,11 @@ GoldScout-export 7^ow86kheyc30o^16
 7727^6^0^43^44^1444^0.6779^0.3904^6^Grimtotem Shaman^4338:3:5,9460:2:2^
 7847^1^0^46^46^1446^0.6256^0.3676^1^Caliph Scorpidsting^8723:1:1^
 7848^3^0^46^46^1444^0.5537^0.5379^3^Lurking Feral Scar^^
+7855^6^0^44^45^1446^0.7238^0.4674^6^Southsea Pirate^1645:1:1,4306:1:2,4338:1:1,8623:1:1,9276:1:1,20519:3:3^
+7856^4^0^44^45^1446^0.7212^0.4681^4^Southsea Freebooter^1645:1:1,4338:3:4^
+7857^4^0^44^45^1446^0.7363^0.4737^4^Southsea Dock Worker^4338:1:1^
+7858^5^0^44^45^1446^0.7291^0.4776^5^Southsea Swashbuckler^3928:2:2,4338:3:5,9260:1:1,20519:1:1^
+7883^1^0^45^45^1446^0.7347^0.4707^1^Andre Firebeard^9246:1:1^
 8996^4^0^42^43^1446^0.6140^0.3789^4^Voidwalker Minion^^
 10928^7^0^42^43^1434^0.2833^0.8203^7^Succubus Minion^^
 12922^6^0^42^43^1434^0.2845^0.8195^6^Imp Minion^^
@@ -332,12 +337,15 @@ GoldScout-export 7^ow86kheyc30o^16
 @i^8153^Wildvine
 @i^8395^Pattern: Tough Scorpid Breastplate
 @i^8483^Wastewander Water Pouch
+@i^8623^OOX-17 TN Distress Beacon
 @i^8705^OOX-22 FE Distress Beacon
 @i^8723^Caliph Scorpidsting's Head
 @i^8751^Overlinked Coif
 @i^8973^Thick Yeti Hide
 @i^9237^Woodpaw Gnoll Mane
+@i^9246^Firebeard's Head
 @i^9260^Volatile Rum
+@i^9276^Pirate's Footlocker
 @i^9285^Field Plate Vambraces of Spirit
 @i^9294^Recipe: Wildvine Potion
 @i^9298^Recipe: Elixir of Giants
@@ -383,6 +391,7 @@ GoldScout-export 7^ow86kheyc30o^16
 @i^18962^Stinglasher's Glands
 @i^19937^Small Scorpid Claw
 @i^19938^Heavy Scorpid Leg
+@i^20519^Southsea Pirate Hat
 @i^20763^Broken Weapon
 @i^211293^Crimson Trophy Quill
 @i^213545^Scroll: PEATCHY ATTAX
@@ -572,12 +581,15 @@ GoldScout-export 7^ow86kheyc30o^16
 @q^8153^1:7:1
 @q^8395^2:9:0
 @q^8483^1:12:0
+@q^8623^2:12:0
 @q^8705^2:12:0
 @q^8723^1:12:0
 @q^8751^0:4:0
 @q^8973^1:12:0
 @q^9237^1:12:0
+@q^9246^1:12:0
 @q^9260^1:0:0
+@q^9276^1:15:0
 @q^9285^2:4:0
 @q^9294^2:9:0
 @q^9298^2:9:0
@@ -623,6 +635,7 @@ GoldScout-export 7^ow86kheyc30o^16
 @q^18962^1:12:0
 @q^19937^0:15:0
 @q^19938^0:15:0
+@q^20519^1:12:0
 @q^20763^0:15:0
 @q^211293^1:12:0
 @q^213545^1:0:0
@@ -1467,6 +1480,11 @@ GoldScout-export 7^ow86kheyc30o^16
 @a^7727^153:5,174:1
 @a^7847^152:1
 @a^7848^211:3
+@a^7855^174:1,194:5
+@a^7856^194:4
+@a^7857^194:4
+@a^7858^194:5
+@a^7883^194:1
 @a^8996^151:2,152:2
 @a^10928^325:7
 @a^12922^325:6
@@ -1545,6 +1563,11 @@ GoldScout-export 7^ow86kheyc30o^16
 @t^2536^1:109
 @t^2537^1:40
 @t^2545^1:21
+@t^7855^4:299
+@t^7856^4:58
+@t^7857^4:253
+@t^7858^5:282
+@t^7883^1:137
 @t^10928^6:451
 @t^12922^6:518
 @l^0^enUS

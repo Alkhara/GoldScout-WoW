@@ -1,4 +1,5 @@
-GoldScout-export 5^5xzvyxm2t353^3
+GoldScout-export 5^5xzvyxm2t353^4
+114^1^0^14^14^1436^0.3877^0.5081^1^Harvest Watcher^1274:1:1,1514:1:1^
 154^2^0^16^17^1436^0.6149^0.5661^2^Greater Fleshripper^4776:1:1,5114:1:1,6889:1:1,17056:1:1^
 213^6^0^19^20^1431^0.1881^0.2742^6^Starving Dire Wolf^893:1:1,1015:1:1,3301:1:1,3402:2:2,5207:1:1^
 217^1^0^19^20^1431^0.1421^0.2710^1^Venom Web Spider^2251:1:1,3174:1:1^
@@ -15,6 +16,7 @@ GoldScout-export 5^5xzvyxm2t353^3
 547^4^0^16^17^1436^0.6139^0.5477^3^Great Goretusk^723:1:1,769:3:4,2295:1:1,2677:1:1^
 565^4^0^20^21^1431^0.1762^0.2712^4^Rabid Dire Wolf^1015:2:2,3301:1:1,3402:1:1^
 1083^1^0^16^16^1433^0.4351^0.7161^1^Murloc Shorestriker^5784:1:1^
+4128^3^0^22^23^1413^0.4830^0.7614^3^Hecklefang Stalker^3301:1:1,3402:1:1^
 @i^556^Buzzard Beak
 @i^723^Goretusk Liver
 @i^769^Chunk of Boar Meat
@@ -24,7 +26,9 @@ GoldScout-export 5^5xzvyxm2t353^3
 @i^1015^Lean Wolf Flank
 @i^1080^Tough Condor Meat
 @i^1212^Gnoll Spittle
+@i^1274^Hops
 @i^1448^Blackrock Gauntlets
+@i^1514^Rusty Warhammer
 @i^2251^Gooey Spider Leg
 @i^2287^Haunch of Meat
 @i^2295^Large Boar Tusk
@@ -56,7 +60,9 @@ GoldScout-export 5^5xzvyxm2t353^3
 @q^1015^1:7:1
 @q^1080^1:7:1
 @q^1212^0:15:0
+@q^1274^1:12:0
 @q^1448^2:4:0
+@q^1514^0:2:0
 @q^2251^1:7:1
 @q^2287^1:0:0
 @q^2295^0:15:0
@@ -79,6 +85,7 @@ GoldScout-export 5^5xzvyxm2t353^3
 @q^6553^2:4:0
 @q^6889^1:7:1
 @q^17056^1:15:1
+@m^1413^The Barrens
 @m^1431^Duskwood
 @m^1433^Redridge Mountains
 @m^1436^Westfall
@@ -100,6 +107,10 @@ GoldScout-export 5^5xzvyxm2t353^3
 @c^279948^
 @c^279952^
 @c^279960^
+@c^279965^
+@c^279966^
+@c^279967^
+@a^114^207:1
 @a^154^231:1,232:1
 @a^213^83:1,102:1,104:1,105:2,122:1
 @a^217^102:1
@@ -116,4 +127,5 @@ GoldScout-export 5^5xzvyxm2t353^3
 @a^547^212:1,231:1,232:1
 @a^565^83:1,102:2,105:1
 @a^1083^288:1
+@a^4128^309:3
 @l^0^enUS

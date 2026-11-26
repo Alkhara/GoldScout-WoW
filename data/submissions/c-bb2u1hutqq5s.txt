@@ -1,5 +1,5 @@
-GoldScout-export 5^bb2u1hutqq5s^9
-587^2^0^33^34^1434^0.3372^0.1622^2^Bloodscalp Warrior^1519:1:1,3901:1:1,4306:2:4^
+GoldScout-export 5^bb2u1hutqq5s^10
+587^4^0^33^34^1434^0.3183^0.1784^4^Bloodscalp Warrior^1519:2:2,2742:1:1,3901:2:2,3915:2:2,4306:4:7^
 588^1^0^35^35^1434^0.2856^0.1154^1^Bloodscalp Scout^1519:1:1,2751:1:1^
 681^9^0^30^31^1434^0.3360^0.1056^9^Young Stranglethorn Tiger^1686:6:6,1687:1:1,12202:3:3^
 682^8^0^32^33^1434^0.4496^0.1386^8^Stranglethorn Tiger^1686:5:5,1687:1:1,9834:1:1,12202:3:3^
@@ -7,9 +7,9 @@ GoldScout-export 5^bb2u1hutqq5s^9
 684^10^0^37^38^1434^0.4011^0.3498^10^Shadowmaw Panther^1686:2:2,1688:3:3,3838:8:8,5637:1:1,248710:1:1^
 685^9^0^33^34^1434^0.2669^0.1619^9^Stranglethorn Raptor^1696:3:3,3685:2:2,4461:2:2,5637:1:1,12184:3:3^
 686^19^0^35^36^1434^0.3292^0.2334^19^Lashtail Raptor^1696:4:4,3685:12:12,4461:7:7,5637:4:4,7445:1:1,9870:1:1,12184:8:8^
-689^2^0^34^35^1434^0.2576^0.1839^2^Crystal Spine Basilisk^1702:2:2,4093:1:1^
-694^4^0^33^34^1434^0.3377^0.1592^4^Bloodscalp Axe Thrower^2728:1:1,3901:1:1,3915:1:1,4306:1:1^
-697^1^0^33^33^1434^0.3456^0.1606^1^Bloodscalp Shaman^3901:1:1,3915:1:1^
+689^21^0^34^35^1434^0.2539^0.1779^21^Crystal Spine Basilisk^1701:6:6,1702:9:9,1703:7:7,3918:9:9,4093:1:1,11386:1:1^
+694^7^0^33^34^1434^0.3206^0.1760^7^Bloodscalp Axe Thrower^1519:1:1,2728:2:2,3901:2:2,3915:1:1,4306:3:3^
+697^6^0^33^34^1434^0.3046^0.1964^6^Bloodscalp Shaman^1519:2:2,1520:1:1,3901:3:3,3915:3:3,4306:2:4^
 728^1^0^40^40^1434^0.4714^0.2844^1^Bhag'thera^3876:1:1^
 729^2^0^37^37^1434^0.3220^0.1744^2^Sin'Dall^3879:1:1,12202:1:1^
 736^6^0^32^33^1434^0.2909^0.1190^6^Panther^1686:5:5,5637:1:1^
@@ -97,6 +97,7 @@ GoldScout-export 5^bb2u1hutqq5s^9
 @i^1477^Scroll of Agility II
 @i^1478^Scroll of Protection II
 @i^1519^Bloodscalp Ear
+@i^1520^Troll Sweat
 @i^1630^Broken Electro-lantern
 @i^1686^Bristly Whisker
 @i^1687^Retractable Claw
@@ -104,6 +105,7 @@ GoldScout-export 5^bb2u1hutqq5s^9
 @i^1696^Curved Raptor Talon
 @i^1701^Curved Basilisk Claw
 @i^1702^Intact Basilisk Spine
+@i^1703^Crystal Basilisk Spine
 @i^1705^Lesser Moonstone
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
@@ -114,6 +116,7 @@ GoldScout-export 5^bb2u1hutqq5s^9
 @i^2728^Green Hills of Stranglethorn - Page 4
 @i^2730^Green Hills of Stranglethorn - Page 6
 @i^2735^Green Hills of Stranglethorn - Page 11
+@i^2742^Green Hills of Stranglethorn - Page 18
 @i^2744^Green Hills of Stranglethorn - Page 20
 @i^2750^Green Hills of Stranglethorn - Page 26
 @i^2751^Green Hills of Stranglethorn - Page 27
@@ -134,6 +137,7 @@ GoldScout-export 5^bb2u1hutqq5s^9
 @i^3879^Paw of Sin'Dall
 @i^3901^Bloodscalp Tusk
 @i^3915^Bloody Bone Necklace
+@i^3918^Singing Crystal Shard
 @i^4053^Large River Crocolisk Skin
 @i^4093^Large Basilisk Tail
 @i^4096^Coarse Gorilla Hair
@@ -233,6 +237,7 @@ GoldScout-export 5^bb2u1hutqq5s^9
 @q^1477^1:0:0
 @q^1478^1:0:0
 @q^1519^1:12:0
+@q^1520^0:15:0
 @q^1630^0:15:0
 @q^1686^0:15:0
 @q^1687^0:15:0
@@ -240,6 +245,7 @@ GoldScout-export 5^bb2u1hutqq5s^9
 @q^1696^0:15:0
 @q^1701^0:15:0
 @q^1702^0:15:0
+@q^1703^1:0:0
 @q^1705^2:7:1
 @q^1707^1:0:0
 @q^1708^1:0:0
@@ -250,6 +256,7 @@ GoldScout-export 5^bb2u1hutqq5s^9
 @q^2728^1:12:0
 @q^2730^1:12:0
 @q^2735^1:12:0
+@q^2742^1:12:0
 @q^2744^1:12:0
 @q^2750^1:12:0
 @q^2751^1:12:0
@@ -270,6 +277,7 @@ GoldScout-export 5^bb2u1hutqq5s^9
 @q^3879^1:12:0
 @q^3901^1:12:0
 @q^3915^1:12:0
+@q^3918^1:12:0
 @q^4053^1:12:0
 @q^4093^0:15:0
 @q^4096^1:15:0
@@ -542,7 +550,7 @@ GoldScout-export 5^bb2u1hutqq5s^9
 @c^279981^
 @c^279982^
 @c^286152^
-@a^587^66:2
+@a^587^65:1,66:3
 @a^588^45:1
 @a^681^26:4,46:4,47:1
 @a^682^48:3,49:3,68:2
@@ -550,9 +558,9 @@ GoldScout-export 5^bb2u1hutqq5s^9
 @a^684^90:1,127:3,128:1,147:2,148:2,187:1
 @a^685^45:2,65:7
 @a^686^67:1,86:14,87:1,106:1,107:2
-@a^689^64:1,65:1
-@a^694^66:4
-@a^697^66:1
+@a^689^64:12,65:9
+@a^694^65:1,66:5,86:1
+@a^697^65:3,66:1,85:2
 @a^728^109:1
 @a^729^66:2
 @a^736^25:1,45:4,46:1
