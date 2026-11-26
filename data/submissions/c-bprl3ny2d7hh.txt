@@ -1,4 +1,4 @@
-GoldScout-export 7^bprl3ny2d7hh^26
+GoldScout-export 8^bprl3ny2d7hh^27
 92^1^0^39^40^1418^0.1331^0.3622^1^Rock Elemental^4553:1:1,4784:1:1,7912:1:2^
 587^10^0^33^34^1434^0.2934^0.2003^10^Bloodscalp Warrior^2732:1:1,2740:1:1,2750:1:1,3901:3:3,3915:5:5,4306:3:5,213543:1:1^
 588^14^0^34^35^1434^0.2515^0.1161^14^Bloodscalp Scout^1708:1:1,2592:1:2,2749:2:2,3915:2:2,4306:8:15^
@@ -95,7 +95,14 @@ GoldScout-export 7^bprl3ny2d7hh^26
 5292^18^0^43^44^1444^0.5374^0.5717^18^Feral Scar Yeti^4599:1:1,8146:1:1,8973:3:3,14769:1:1^
 5293^13^0^45^46^1444^0.5199^0.5922^13^Hulking Feral Scar^4599:1:1,8146:1:1,8973:5:5^
 5295^14^0^44^45^1444^0.5238^0.5810^14^Enraged Feral Scar^4599:1:1,8973:1:1,213545:1:1,262889:1:1^
+5296^12^0^46^47^1444^0.5289^0.3129^12^Rage Scar Yeti^14434:1:1,18947:5:5,213543:1:1^
+5297^2^0^48^49^1444^0.5432^0.3254^2^Elder Rage Scar^4599:1:1,18972:1:1^
+5299^13^0^47^48^1444^0.5247^0.3114^13^Ferocious Rage Scar^4026:1:1,4599:2:2,18947:5:5,213543:1:1,248699:1:1^
 5308^3^0^44^44^1444^0.5163^0.4806^3^Rogue Vale Screecher^6826:1:1^
+5359^3^0^48^49^1444^0.4521^0.4948^3^Zapped Shore Strider^4338:3:8,7973:2:2,18956:3:3^
+5360^5^0^47^49^1444^0.4476^0.5138^5^Zapped Deep Strider^4338:1:3,7973:2:2,18956:5:5^
+5461^5^0^48^49^1444^0.4504^0.4936^5^Sea Elemental^4791:3:8,7070:1:1,7079:1:1,18958:3:3^
+5462^3^0^47^48^1444^0.4698^0.5050^3^Sea Spray^4791:1:5,18958:2:2^
 5477^1^0^39^39^1435^0.5448^0.3698^1^Noboru the Cudgel^6196:1:1^
 5615^9^0^43^44^1446^0.6253^0.3828^9^Wastewander Rogue^4338:3:4,14841:1:1^
 5616^5^0^40^41^1446^0.6155^0.2661^5^Wastewander Thief^4306:1:2,8398:1:1,8483:2:2,213543:1:1^
@@ -341,6 +348,7 @@ GoldScout-export 7^bprl3ny2d7hh^26
 @i^4638^Reinforced Steel Lockbox
 @i^4735^Mistscape Cloak
 @i^4784^Lifeless Stone
+@i^4791^Enchanted Water
 @i^5215^Ember Wand of Intellect
 @i^5216^Umbral Wand of the Hierophant
 @i^5429^A Pretty Rock
@@ -368,6 +376,8 @@ GoldScout-export 7^bprl3ny2d7hh^26
 @i^6530^Nightcrawlers
 @i^6826^Brilliant Scale
 @i^7069^Elemental Air
+@i^7070^Elemental Water
+@i^7079^Globe of Water
 @i^7086^Pattern: Earthen Silk Belt
 @i^7455^Knight's Legguards of the Physician
 @i^7459^Knight's Pauldrons of the Wolf
@@ -458,6 +468,7 @@ GoldScout-export 7^bprl3ny2d7hh^26
 @i^14235^Embersilk Cord of Spirit
 @i^14262^Bloodwoven Mitts of the Owl
 @i^14425^Silksand Wraps
+@i^14434^Windchaser Robes
 @i^14436^Windchaser Coronet
 @i^14604^Warden's Wizard Hat
 @i^14652^Scorpashi Sash
@@ -475,8 +486,12 @@ GoldScout-export 7^bprl3ny2d7hh^26
 @i^15626^Gryphon Mail Greaves of Agility
 @i^15798^Chipped Ogre Teeth
 @i^17058^Fish Oil
+@i^18947^Rage Scar Yeti Hide
+@i^18956^Miniaturization Residue
+@i^18958^Water Elemental Core
 @i^18961^Zukk'ash Carapace
 @i^18962^Stinglasher's Glands
+@i^18972^Perfect Yeti Hide
 @i^19509^Dusty Mail Boots
 @i^19937^Small Scorpid Claw
 @i^20519^Southsea Pirate Hat
@@ -498,6 +513,7 @@ GoldScout-export 7^bprl3ny2d7hh^26
 @i^248692^Waylaid Crate: Expert Ore
 @i^248693^Waylaid Crate: Expert Textiles
 @i^248694^Waylaid Crate: Expert Curiosities
+@i^248699^Waylaid Crate: Artisan Curiosities
 @i^248708^Waylaid Crate: Expert Fabrics
 @i^248710^Waylaid Crate: Expert Parts
 @i^251402^Plans: Justicar's Boots
@@ -644,6 +660,7 @@ GoldScout-export 7^bprl3ny2d7hh^26
 @q^4638^2:15:0
 @q^4735^2:4:0
 @q^4784^0:15:0
+@q^4791^1:0:0
 @q^5215^2:2:0
 @q^5216^2:2:0
 @q^5429^0:15:0
@@ -671,6 +688,8 @@ GoldScout-export 7^bprl3ny2d7hh^26
 @q^6530^1:0:0
 @q^6826^0:15:0
 @q^7069^1:7:1
+@q^7070^1:7:1
+@q^7079^1:7:1
 @q^7086^2:9:0
 @q^7455^2:4:0
 @q^7459^2:4:0
@@ -761,6 +780,7 @@ GoldScout-export 7^bprl3ny2d7hh^26
 @q^14235^2:4:0
 @q^14262^2:4:0
 @q^14425^2:4:0
+@q^14434^2:4:0
 @q^14436^2:4:0
 @q^14604^2:4:0
 @q^14652^2:4:0
@@ -778,8 +798,12 @@ GoldScout-export 7^bprl3ny2d7hh^26
 @q^15626^2:4:0
 @q^15798^0:15:0
 @q^17058^1:15:0
+@q^18947^1:12:0
+@q^18956^1:12:0
+@q^18958^1:12:0
 @q^18961^1:12:0
 @q^18962^1:12:0
+@q^18972^1:12:0
 @q^19509^3:4:0
 @q^19937^0:15:0
 @q^20519^1:12:0
@@ -801,6 +825,7 @@ GoldScout-export 7^bprl3ny2d7hh^26
 @q^248692^1:0:1
 @q^248693^1:0:1
 @q^248694^1:0:1
+@q^248699^1:0:1
 @q^248708^2:0:1
 @q^248710^2:0:1
 @q^251402^3:9:0
@@ -1390,7 +1415,14 @@ GoldScout-export 7^bprl3ny2d7hh^26
 @a^5292^230:12,231:6
 @a^5293^230:10,250:3
 @a^5295^230:13,231:1
+@a^5296^110:1,130:9,131:2
+@a^5297^130:1,131:1
+@a^5299^110:1,130:12
 @a^5308^189:2,192:1
+@a^5359^168:1,209:2
+@a^5360^208:4,209:1
+@a^5461^188:2,209:3
+@a^5462^189:1,209:2
 @a^5477^150:1
 @a^5615^132:1,151:2,152:6
 @a^5616^91:1,92:2,112:1,132:1
@@ -1481,7 +1513,14 @@ GoldScout-export 7^bprl3ny2d7hh^26
 @t^5292^17:612
 @t^5293^13:598
 @t^5295^13:773
+@t^5296^11:611
+@t^5297^1:21
+@t^5299^12:524
 @t^5308^2:189
+@t^5359^3:189
+@t^5360^5:264
+@t^5461^5:212
+@t^5462^2:260
 @t^5616^2:57
 @t^5618^2:63
 @t^7725^9:397
@@ -1492,6 +1531,7 @@ GoldScout-export 7^bprl3ny2d7hh^26
 @t^8996^1:21
 @t^14661^1:43
 @f^1434^0^4^263^3820:2:4,21150:1:1,21151:1:2^107:4
+@f^1444^0^5^264^21151:1:1,21228:4:4^208:3,209:2
 @f^1446^0^138^237^4603:46:46,6358:9:9,6359:19:19,6362:14:14,7973:5:5,13422:11:21,13754:19:19,13755:9:9,13876:1:1,21151:1:1,21228:4:4^73:3,93:62,113:73
 @f^2548^0^68^255^3820:1:1,6308:1:1,6359:7:7,6362:2:2,8365:1:1,21150:6:6,21153:50:50^131:12,152:8,171:10,178:6,190:4,208:2,209:6,248:2,268:6,269:2,270:2,290:5,294:3
 @l^0^enUS

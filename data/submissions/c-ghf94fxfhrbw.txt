@@ -1,4 +1,4 @@
-GoldScout-export 7^ghf94fxfhrbw^35
+GoldScout-export 7^ghf94fxfhrbw^36
 588^6^0^34^35^1434^0.2417^0.1237^6^Bloodscalp Scout^1710:1:1,2740:1:1,3901:2:2,3915:3:3,4306:1:2^
 595^2^0^34^35^1434^0.2344^0.1227^2^Bloodscalp Hunter^3915:1:1^
 597^1^0^36^37^1434^0.2506^0.1302^1^Bloodscalp Berserker^3915:1:1,7990:1:1^
@@ -36,6 +36,7 @@ GoldScout-export 7^ghf94fxfhrbw^35
 3632^1^0^16^16^1414^0.5210^0.5516^1^Deviate Creeper^3180:1:1^
 3637^3^0^0^0^0^0.0000^0.0000^0^^818:1:1,3180:1:1,5124:2:2^
 3640^3^0^0^0^0^0.0000^0.0000^0^^3670:1:1,3674:1:1,6464:3:3,15222:1:1^
+3655^1^0^18^18^1414^0.5215^0.5515^1^Mad Magglish^1811:1:1,2287:1:1,5334:1:1^
 3840^5^0^0^0^0^0.0000^0.0000^0^^858:1:1,1210:1:1,14727:1:1,248703:1:1^
 3975^1^0^0^0^0^0.0000^0.0000^0^^7718:1:1^
 3977^1^0^0^0^0^0.0000^0.0000^0^^7720:1:1^
@@ -181,10 +182,12 @@ GoldScout-export 7^ghf94fxfhrbw^35
 @i^1710^Greater Healing Potion
 @i^1735^Worn Mail Pants
 @i^1737^Worn Mail Vest
+@i^1811^Blunt Claymore
 @i^1814^Battered Mallet
 @i^1997^Pressed Felt Robe
 @i^2080^Hillborne Axe of the Eagle
 @i^2251^Gooey Spider Leg
+@i^2287^Haunch of Meat
 @i^2455^Minor Mana Potion
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
@@ -269,6 +272,7 @@ GoldScout-export 7^ghf94fxfhrbw^35
 @i^5116^Long Tail Feather
 @i^5124^Small Raptor Tooth
 @i^5128^Shed Lizard Skin
+@i^5334^99-Year-Old Port
 @i^5523^Small Barnacled Clam
 @i^5524^Thick-shelled Clam
 @i^5569^Seaweed
@@ -439,10 +443,12 @@ GoldScout-export 7^ghf94fxfhrbw^35
 @q^1710^1:0:0
 @q^1735^0:4:0
 @q^1737^0:4:0
+@q^1811^0:2:0
 @q^1814^0:2:0
 @q^1997^2:4:0
 @q^2080^2:2:0
 @q^2251^1:7:1
+@q^2287^1:0:0
 @q^2455^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
@@ -527,6 +533,7 @@ GoldScout-export 7^ghf94fxfhrbw^35
 @q^5116^1:7:1
 @q^5124^0:15:0
 @q^5128^0:15:0
+@q^5334^1:12:0
 @q^5523^1:7:0
 @q^5524^1:7:0
 @q^5569^0:15:0
@@ -1951,6 +1958,7 @@ GoldScout-export 7^ghf94fxfhrbw^35
 @a^3455^212:1
 @a^3461^171:8
 @a^3632^230:1
+@a^3655^230:1
 @a^4841^209:1
 @a^5797^269:1
 @a^5798^269:1
