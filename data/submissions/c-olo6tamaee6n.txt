@@ -1,4 +1,4 @@
-GoldScout-export 8^olo6tamaee6n^58
+GoldScout-export 8^olo6tamaee6n^59
 3^7^0^24^25^1431^0.2381^0.3817^7^Flesh Eater^1205:1:1,2592:2:4,2794:1:1,4306:1:1,6530:1:1^
 6^28^0^1^2^1429^0.4789^0.3598^28^Kobold Vermin^159:1:1,755:10:10,1374:1:1,1376:1:1,1380:1:1,2589:8:8,2649:1:1,4536:4:4,247834:2:2,247839:7:7^
 30^1^0^5^5^1429^0.4084^0.7044^1^Forest Spider^2590:1:1,5465:1:1^
@@ -212,10 +212,13 @@ GoldScout-export 8^olo6tamaee6n^58
 1988^10^0^2^3^1438^0.5603^0.4556^10^Grell^117:1:1,1374:1:1,2589:1:1,2650:1:1,2652:1:1,3297:8:8^
 1989^3^0^3^4^1438^0.6275^0.3741^3^Grellkin^2589:1:1,10639:2:2^
 1994^1^0^5^5^1438^0.5663^0.2576^1^Githyiss the Vile^277190:1:1^
-1995^1^0^5^6^1438^0.6162^0.5069^1^Strigid Owl^4775:1:1,6889:1:2^
+1995^6^0^5^6^1438^0.6153^0.5995^6^Strigid Owl^3411:3:3,4775:2:2,6889:4:6,7096:1:1^
+1998^3^0^5^6^1438^0.6110^0.6168^3^Webwood Lurker^3412:3:3,5465:2:2^
+2008^1^0^7^7^1438^0.6799^0.5945^1^Gnarlpine Warrior^2589:1:2^
+2022^14^0^5^6^1438^0.5885^0.7043^14^Timberling^1423:1:1,2447:1:1,2449:2:2,2644:1:1,3363:1:1,4604:1:1,5168:8:8^
 2031^8^0^1^1^1438^0.5964^0.4520^8^Young Nightsaber^1369:1:1,1372:1:1,2650:1:1,4865:2:2,7073:4:4,7074:3:3^
 2032^7^0^2^2^1438^0.6073^0.3595^7^Mangy Nightsaber^2649:1:1,4865:5:5,7073:1:1,7074:3:3^
-2042^1^0^6^6^1438^0.6471^0.5482^1^Nightsaber^4814:1:1^
+2042^2^0^5^6^1438^0.6205^0.5855^2^Nightsaber^4814:2:2^
 2069^17^0^14^15^1439^0.4890^0.3006^17^Moonstalker^4813:2:2,5134:5:5,5413:9:9^
 2070^16^0^10^17^1439^0.4776^0.2733^16^Moonstalker Runt^4561:1:1,5134:2:2,5413:3:3,5635:1:1^
 2071^3^0^19^20^1439^0.6173^0.0982^3^Moonstalker Matriarch^4575:1:1,5135:2:2^
@@ -660,6 +663,7 @@ GoldScout-export 8^olo6tamaee6n^58
 @i^1420^Worn Leather Bracers
 @i^1421^Worn Hide Cloak
 @i^1422^Worn Leather Gloves
+@i^1423^Worn Leather Pants
 @i^1429^Patchwork Cloak
 @i^1433^Patchwork Armor
 @i^1464^Buzzard Talon
@@ -763,6 +767,8 @@ GoldScout-export 8^olo6tamaee6n^58
 @i^2295^Large Boar Tusk
 @i^2296^Great Goretusk Snout
 @i^2409^Pattern: Dark Leather Tunic
+@i^2447^Peacebloom
+@i^2449^Earthroot
 @i^2455^Minor Mana Potion
 @i^2466^Skullsplitter Fetish
 @i^2536^Trogg Stone Tooth
@@ -777,6 +783,7 @@ GoldScout-export 8^olo6tamaee6n^58
 @i^2635^Loose Chain Belt
 @i^2636^Carved Stone Idol
 @i^2642^Loose Chain Boots
+@i^2644^Loose Chain Cloak
 @i^2645^Loose Chain Gloves
 @i^2646^Loose Chain Pants
 @i^2649^Flimsy Chain Belt
@@ -874,6 +881,8 @@ GoldScout-export 8^olo6tamaee6n^58
 @i^3402^Soft Patch of Fur
 @i^3403^Ivory Boar Tusk
 @i^3404^Buzzard Wing
+@i^3411^Strigid Owl Feather
+@i^3412^Webwood Spider Silk
 @i^3609^Plans: Copper Chain Vest
 @i^3618^Gobbler's Head
 @i^3619^Snellig's Snuffbox
@@ -1020,6 +1029,7 @@ GoldScout-export 8^olo6tamaee6n^58
 @i^5136^Torn Furry Ear
 @i^5137^Bright Eyeball
 @i^5166^Webwood Venom Sac
+@i^5168^Timberling Seed
 @i^5187^Rhahk'Zor's Hammer
 @i^5191^Cruel Barb
 @i^5233^Stone of Relu
@@ -1392,6 +1402,7 @@ GoldScout-export 8^olo6tamaee6n^58
 @q^1420^0:4:0
 @q^1421^0:4:0
 @q^1422^0:4:0
+@q^1423^0:4:0
 @q^1429^0:4:0
 @q^1433^0:4:0
 @q^1464^0:15:0
@@ -1495,6 +1506,8 @@ GoldScout-export 8^olo6tamaee6n^58
 @q^2295^0:15:0
 @q^2296^1:7:0
 @q^2409^2:9:0
+@q^2447^1:7:1
+@q^2449^1:7:1
 @q^2455^1:0:0
 @q^2466^1:12:0
 @q^2536^1:12:0
@@ -1509,6 +1522,7 @@ GoldScout-export 8^olo6tamaee6n^58
 @q^2635^0:4:0
 @q^2636^1:12:0
 @q^2642^0:4:0
+@q^2644^0:4:0
 @q^2645^0:4:0
 @q^2646^0:4:0
 @q^2649^0:4:0
@@ -1606,6 +1620,8 @@ GoldScout-export 8^olo6tamaee6n^58
 @q^3402^0:15:0
 @q^3403^0:15:0
 @q^3404^1:7:1
+@q^3411^1:12:0
+@q^3412^1:12:0
 @q^3609^2:9:0
 @q^3618^1:12:0
 @q^3619^1:12:0
@@ -1752,6 +1768,7 @@ GoldScout-export 8^olo6tamaee6n^58
 @q^5136^0:15:0
 @q^5137^0:15:0
 @q^5166^1:12:0
+@q^5168^1:12:0
 @q^5187^3:2:0
 @q^5191^3:2:0
 @q^5233^1:12:0
@@ -4305,10 +4322,13 @@ GoldScout-export 8^olo6tamaee6n^58
 @a^1988^191:10
 @a^1989^132:1,152:1,172:1
 @a^1994^111:1
-@a^1995^212:1
+@a^1995^212:1,251:2,252:3
+@a^1998^251:1,252:2
+@a^2008^233:1
+@a^2022^271:2,272:2,291:8,292:2
 @a^2031^172:1,191:5,192:2
 @a^2032^132:1,151:4,152:2
-@a^2042^212:1
+@a^2042^212:1,251:1
 @a^2069^108:1,109:9,129:2,130:1,149:2,150:2
 @a^2070^32:2,52:2,108:4,109:1,128:3,167:1,168:3
 @a^2071^32:1,52:2
@@ -4660,9 +4680,13 @@ GoldScout-export 8^olo6tamaee6n^58
 @t^1986^20:554
 @t^1988^9:168
 @t^1989^3:168
+@t^1995^5:146
+@t^1998^3:151
+@t^2008^1:107
+@t^2022^13:444
 @t^2031^7:117
 @t^2032^7:105
-@t^2042^1:56
+@t^2042^2:110
 @t^2069^8:277
 @t^2070^1:30
 @t^2163^1:117

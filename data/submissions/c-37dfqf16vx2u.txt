@@ -1,7 +1,7 @@
-GoldScout-export 7^37dfqf16vx2u^40
+GoldScout-export 7^37dfqf16vx2u^41
 46^5^0^9^10^1429^0.7889^0.6705^5^Murlocfutterwühler^779:1:1,1425:1:1^
 48^1^0^21^21^1431^0.8199^0.6861^1^Skelettkrieger^^
-94^2^0^5^6^1429^0.3473^0.5779^2^Taschendiebin der Defias^2070:1:1^
+94^2^0^5^6^1429^0.3473^0.5779^2^Taschendieb der Defias^2070:1:1^
 114^5^0^14^15^1436^0.4365^0.4309^5^Erntebehüter^814:2:2,1274:3:3,6543:1:1,255007:2:2^
 116^1^0^8^9^1429^0.2815^0.5968^1^Banditin der Defias^^
 117^1^0^12^12^1436^0.4164^0.2355^1^Gnoll der Flusspfoten^^
@@ -36,7 +36,10 @@ GoldScout-export 7^37dfqf16vx2u^40
 646^1^0^0^0^0^0.0000^0.0000^0^^251343:1:1,284715:1:1^
 647^1^0^0^0^0^0.0000^0.0000^0^^1210:1:1^
 657^14^0^0^0^0^0.0000^0.0000^0^^1210:1:1,1817:2:2,2078:1:1,2589:1:4,2592:2:2,4575:1:1,6391:1:1,9782:1:1,14166:1:1^
+681^10^0^30^31^1434^0.3642^0.1227^10^Junger Schlingendorntiger^1686:3:3,1687:1:1,12202:4:4^
+683^10^0^30^31^1434^0.3989^0.1331^10^Junger Panther^1686:1:1,1687:1:1^
 732^5^0^9^10^1429^0.7737^0.7797^5^Murloclauerer^779:3:3,1413:1:1,2648:1:1^
+775^2^0^33^33^1434^0.3999^0.0859^2^Kurzens Agent^3802:1:1,4306:1:1^
 822^5^0^8^9^1429^0.8549^0.6501^5^Junger Waldbär^3169:3:3,3170:1:1,3610:1:1,4865:1:1,7073:3:3,7074:1:1^
 824^3^0^15^16^1415^0.4102^0.7955^3^Buddler der Defias^915:2:2,2836:1:5,2970:1:1^
 833^1^0^11^11^1436^0.5329^0.3556^1^Kojotenrudelanführer^3299:1:1,211787:1:1^
@@ -231,6 +234,8 @@ GoldScout-export 7^37dfqf16vx2u^40
 @i^1511^Schwert der Bürgerlichen
 @i^1512^Kunstlose Streitaxt
 @i^1515^Rauer Holzstab
+@i^1686^Gesträubtes Schnurrbarthaar
+@i^1687^Einziehbare Klaue
 @i^1708^Süßer Nektar
 @i^1710^Großer Heiltrank
 @i^1737^Abgenutzte Panzerweste
@@ -326,6 +331,7 @@ GoldScout-export 7^37dfqf16vx2u^40
 @i^3771^Wildschweinschenkel
 @i^3782^Große Kriegskeule
 @i^3786^Glänzender Langdolch
+@i^3802^Gehärtete Lederarmschienen
 @i^3827^Manatrank
 @i^3882^Bussardfeder
 @i^4306^Seidenstoff
@@ -423,6 +429,7 @@ GoldScout-export 7^37dfqf16vx2u^40
 @i^11406^Faulendes Bärengerippe
 @i^12037^Eigenartiges Fleisch
 @i^12184^Raptorfleisch
+@i^12202^Tigerfleisch
 @i^12237^Feine Krebsbrocken
 @i^13422^Steinschuppenaal
 @i^14094^Perlenwickeltücher der Ausdauer
@@ -528,6 +535,8 @@ GoldScout-export 7^37dfqf16vx2u^40
 @q^1511^0:2:0
 @q^1512^0:2:0
 @q^1515^0:2:0
+@q^1686^0:15:0
+@q^1687^0:15:0
 @q^1708^1:0:0
 @q^1710^1:0:0
 @q^1737^0:4:0
@@ -623,6 +632,7 @@ GoldScout-export 7^37dfqf16vx2u^40
 @q^3771^1:0:0
 @q^3782^0:2:0
 @q^3786^0:2:0
+@q^3802^0:4:0
 @q^3827^1:0:0
 @q^3882^0:15:0
 @q^4306^1:7:1
@@ -720,6 +730,7 @@ GoldScout-export 7^37dfqf16vx2u^40
 @q^11406^0:15:0
 @q^12037^1:7:1
 @q^12184^1:7:1
+@q^12202^1:7:1
 @q^12237^1:12:0
 @q^13422^1:7:1
 @q^14094^2:4:0
@@ -2831,7 +2842,10 @@ GoldScout-export 7^37dfqf16vx2u^40
 @a^623^308:1,328:1
 @a^624^308:1,328:1
 @a^625^308:1,328:2
+@a^681^46:1,47:9
+@a^683^47:4,48:5,67:1
 @a^732^236:1,335:4
+@a^775^27:1,28:1
 @a^822^255:1,257:3,277:1
 @a^824^308:3
 @a^833^150:1
@@ -2962,6 +2976,9 @@ GoldScout-export 7^37dfqf16vx2u^40
 @t^525^1:128
 @t^547^1:99
 @t^570^1:220
+@t^681^10:462
+@t^683^10:430
+@t^775^1:8
 @t^1109^6:443
 @t^1756^7:85
 @t^2069^6:413
