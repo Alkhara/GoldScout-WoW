@@ -1,4 +1,4 @@
-GoldScout-export 7^6dbz4t5wteaw^52
+GoldScout-export 8^6dbz4t5wteaw^53
 574^1^0^27^27^1431^0.8635^0.4750^1^Naraxis^2251:1:1,4715:1:1^
 930^1^0^25^25^1431^0.8645^0.4847^1^Black Widow Hatchling^^
 1082^6^0^38^39^1435^0.5638^0.3926^6^Sawtooth Crocolisk^770:5:5,3667:4:4,6169:1:1,12037:2:2,248693:1:1^
@@ -176,8 +176,8 @@ GoldScout-export 7^6dbz4t5wteaw^52
 5473^4^0^46^47^1446^0.4659^0.6619^4^Dunemaul Ogre Mage^4338:2:3,15629:1:1^
 5474^9^0^47^48^1446^0.4127^0.5471^9^Dunemaul Brute^4338:1:1,4599:1:1^
 5475^2^0^47^48^1446^0.4706^0.6724^2^Dunemaul Warlock^^
-5481^10^0^47^48^1446^0.2879^0.6700^10^Thistleshrub Dew Collector^4608:1:1,8429:1:1,8430:1:1,10286:1:1^
-5485^4^0^49^50^1446^0.2963^0.6562^4^Thistleshrub Rootshaper^^
+5481^20^0^47^48^1446^0.2887^0.6620^20^Thistleshrub Dew Collector^3939:1:1,4022:1:1,4608:2:2,8428:1:1,8429:3:3,8430:5:5,10286:1:1,248699:1:1^
+5485^8^0^49^50^1446^0.2959^0.6568^8^Thistleshrub Rootshaper^8749:1:1,10286:1:1^
 5490^5^0^48^49^1446^0.2939^0.6325^5^Gnarled Thistleshrub^1645:1:1,2452:1:1,10286:1:1^
 5615^5^0^43^44^1446^0.6112^0.3698^5^Wastewander Rogue^8483:2:2^
 5623^2^0^44^45^1446^0.6607^0.3518^2^Wastewander Assassin^4306:1:1,8400:1:1,8483:1:1^
@@ -606,6 +606,7 @@ GoldScout-export 7^6dbz4t5wteaw^52
 @i^8150^Deeprock Salt
 @i^8151^Flask of Mojo
 @i^8400^Pattern: Tough Scorpid Shoulders
+@i^8428^Laden Dew Gland
 @i^8429^Punctured Dew Gland
 @i^8430^Empty Dew Gland
 @i^8444^Executioner's Key
@@ -615,6 +616,7 @@ GoldScout-export 7^6dbz4t5wteaw^52
 @i^8623^OOX-17 TN Distress Beacon
 @i^8723^Caliph Scorpidsting's Head
 @i^8746^Interlaced Cowl
+@i^8749^Crochet Hat
 @i^9234^Tiara of the Deep
 @i^9238^Uncracked Scarab Shell
 @i^9242^Ancient Tablet
@@ -737,6 +739,7 @@ GoldScout-export 7^6dbz4t5wteaw^52
 @i^248694^Waylaid Crate: Expert Curiosities
 @i^248695^Waylaid Crate: Earthly Artisan Herbs
 @i^248696^Waylaid Crate: Flowering Artisan Herbs
+@i^248699^Waylaid Crate: Artisan Curiosities
 @i^248712^Waylaid Crate: Artisan Ingots
 @i^252032^Red Delicious Stormapple
 @i^254098^Pattern: Frothing Gloves
@@ -1034,6 +1037,7 @@ GoldScout-export 7^6dbz4t5wteaw^52
 @q^8150^1:7:1
 @q^8151^1:7:1
 @q^8400^2:9:0
+@q^8428^1:12:0
 @q^8429^0:15:0
 @q^8430^0:15:0
 @q^8444^1:0:0
@@ -1043,6 +1047,7 @@ GoldScout-export 7^6dbz4t5wteaw^52
 @q^8623^2:12:0
 @q^8723^1:12:0
 @q^8746^0:4:0
+@q^8749^0:4:0
 @q^9234^1:12:0
 @q^9238^1:12:0
 @q^9242^0:15:0
@@ -1165,6 +1170,7 @@ GoldScout-export 7^6dbz4t5wteaw^52
 @q^248694^1:0:1
 @q^248695^1:0:1
 @q^248696^1:0:1
+@q^248699^1:0:1
 @q^248712^2:0:1
 @q^252032^1:0:0
 @q^254098^3:9:0
@@ -3399,8 +3405,8 @@ GoldScout-export 7^6dbz4t5wteaw^52
 @a^5473^269:4
 @a^5474^207:1,208:6,227:1,249:1
 @a^5475^269:2
-@a^5481^245:2,265:7,266:1
-@a^5485^245:1,265:1,266:2
+@a^5481^245:7,246:1,265:11,266:1
+@a^5485^245:2,265:3,266:3
 @a^5490^245:5
 @a^5615^132:2,151:1,152:2
 @a^5623^153:2
@@ -3508,8 +3514,8 @@ GoldScout-export 7^6dbz4t5wteaw^52
 @t^5458^1:53
 @t^5472^4:278
 @t^5474^7:366
-@t^5481^10:577
-@t^5485^4:233
+@t^5481^19:1014
+@t^5485^7:392
 @t^5490^4:160
 @t^12046^1:28
 @t^12922^1:21

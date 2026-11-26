@@ -1,4 +1,4 @@
-GoldScout-export 7^kmz1k2bi5s0o^28
+GoldScout-export 8^kmz1k2bi5s0o^29
 594^2^0^15^15^1415^0.4099^0.7970^2^Defias Henchman^2214:1:1,2589:2:3^
 597^2^0^36^37^1434^0.2375^0.0983^2^Bloodscalp Berserker^3811:1:1,213546:1:1^
 598^24^0^0^0^0^0.0000^0.0000^0^^414:1:1,1179:1:1,1743:1:1,1764:1:1,2589:3:8,2592:6:10,2770:1:3,2836:1:4,4575:1:1,14167:1:1^
@@ -107,6 +107,12 @@ GoldScout-export 7^kmz1k2bi5s0o^28
 4728^3^0^31^32^1443^0.7436^0.3737^3^Gritjaw Basilisk^1701:2:2^
 4729^6^0^35^36^1443^0.4158^0.4978^6^Hulking Gritjaw Basilisk^1701:3:3,1702:1:1,4093:1:1,11386:2:2^
 4841^1^0^45^45^1445^0.5048^0.5259^1^Deadmire^770:1:1,5945:1:1^
+5229^6^0^41^41^1444^0.7728^0.3418^6^Gordunni Ogre^4338:3:5^
+5232^3^0^42^43^1444^0.7761^0.3368^3^Gordunni Brute^^
+5237^8^0^41^42^1444^0.7906^0.3455^8^Gordunni Ogre Mage^4338:3:3^
+5249^5^0^40^41^1444^0.7275^0.3811^5^Woodpaw Mongrel^9237:2:2^
+5251^14^0^41^42^1444^0.7258^0.3736^14^Woodpaw Trapper^1645:1:1,4306:3:4,4338:1:2,4421:1:1,9237:6:6,213545:1:1^
+5253^3^0^41^42^1444^0.7253^0.3941^3^Woodpaw Brute^4306:1:2,4599:1:1,9237:2:2^
 5419^17^0^42^43^1446^0.4896^0.3225^17^Glasshide Basilisk^4092:2:2,4093:4:4,9437:17:17,11386:5:5,262889:1:1^
 5422^6^0^40^41^1446^0.5455^0.3181^6^Scorpid Hunter^9442:6:6,12037:3:3,19935:2:2,19936:1:1,19937:1:1,255645:1:1^
 5423^19^0^43^44^1446^0.4439^0.3402^19^Scorpid Tail Lasher^9442:19:19,12037:7:7,19936:3:3,19937:3:3,255645:1:1^
@@ -233,6 +239,7 @@ GoldScout-export 7^kmz1k2bi5s0o^28
 @i^4359^Handful of Copper Bolts
 @i^4364^Coarse Blasting Powder
 @i^4402^Small Flame Sac
+@i^4421^Scroll of Protection III
 @i^4422^Scroll of Stamina III
 @i^4435^Mote of Myzrael
 @i^4460^Ripped Wing Webbing
@@ -299,6 +306,7 @@ GoldScout-export 7^kmz1k2bi5s0o^28
 @i^8483^Wastewander Water Pouch
 @i^8723^Caliph Scorpidsting's Head
 @i^8746^Interlaced Cowl
+@i^9237^Woodpaw Gnoll Mane
 @i^9437^Untested Basilisk Sample
 @i^9439^Untested Hyena Sample
 @i^9442^Untested Scorpid Sample
@@ -350,6 +358,7 @@ GoldScout-export 7^kmz1k2bi5s0o^28
 @i^213421^Singed Note
 @i^213529^Viscous Venom
 @i^213543^Scroll: UPDOG
+@i^213545^Scroll: PEATCHY ATTAX
 @i^213546^Scroll: SHOOBEEDOOP
 @i^213547^Scroll: THAW WORDS
 @i^248690^Waylaid Crate: Earthly Expert Herbs
@@ -460,6 +469,7 @@ GoldScout-export 7^kmz1k2bi5s0o^28
 @q^4359^1:7:1
 @q^4364^1:7:1
 @q^4402^1:7:1
+@q^4421^1:0:0
 @q^4422^1:0:0
 @q^4435^1:12:0
 @q^4460^0:15:0
@@ -526,6 +536,7 @@ GoldScout-export 7^kmz1k2bi5s0o^28
 @q^8483^1:12:0
 @q^8723^1:12:0
 @q^8746^0:4:0
+@q^9237^1:12:0
 @q^9437^1:12:0
 @q^9439^1:12:0
 @q^9442^1:12:0
@@ -577,6 +588,7 @@ GoldScout-export 7^kmz1k2bi5s0o^28
 @q^213421^1:15:0
 @q^213529^1:15:0
 @q^213543^1:0:0
+@q^213545^1:0:0
 @q^213546^1:0:0
 @q^213547^1:0:0
 @q^248690^1:0:1
@@ -598,6 +610,7 @@ GoldScout-export 7^kmz1k2bi5s0o^28
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
 @m^1443^Desolace
+@m^1444^Feralas
 @m^1445^Dustwallow Marsh
 @m^1446^Tanaris
 @c^118^
@@ -1380,6 +1393,12 @@ GoldScout-export 7^kmz1k2bi5s0o^28
 @a^4728^154:2,155:1
 @a^4729^167:1,188:2,208:2,228:1
 @a^4841^210:1
+@a^5229^135:4,156:2
+@a^5232^135:2,156:1
+@a^5237^135:7,156:1
+@a^5249^154:5
+@a^5251^154:13,174:1
+@a^5253^154:3
 @a^5419^108:1,109:5,129:4,131:1,149:2,150:3,151:1
 @a^5422^109:1,129:1,131:3,151:1
 @a^5423^108:2,128:7,129:1,148:5,149:3,150:1
@@ -1408,6 +1427,12 @@ GoldScout-export 7^kmz1k2bi5s0o^28
 @a^14123^73:8,93:16,113:22,133:16,153:18
 @a^14356^254:2
 @a^222243^128:1
+@t^5229^5:203
+@t^5232^2:91
+@t^5237^8:573
+@t^5249^5:130
+@t^5251^14:511
+@t^5253^2:72
 @t^5419^7:173
 @t^5422^1:1
 @t^5423^15:641
