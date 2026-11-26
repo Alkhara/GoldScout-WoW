@@ -11,7 +11,7 @@ their section, new commands in Commands), then set the line below to the new
 version. `tools/release.py` won't release until it matches, and afterwards it
 says whether the description changed, so you know when to paste it again.
 
-**Description reviewed for:** v0.12.50
+**Description reviewed for:** v0.12.54
 
 CurseForge doesn't allow download links to files hosted elsewhere, and wants
 links to outside sites at the bottom of the page. So the description names

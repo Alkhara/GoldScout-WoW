@@ -7,7 +7,10 @@ releases add their own line automatically.
 
 ## Unreleased
 
+## v0.12.54
+
 - **Fast-loot add-ons no longer make drops look rarer:** when another add-on emptied a corpse before GoldScout could read its loot, the kill could be counted as one that dropped nothing. GoldScout now leaves such a kill out.
+- Updated drop data from the community.
 
 ## v0.12.50
 
