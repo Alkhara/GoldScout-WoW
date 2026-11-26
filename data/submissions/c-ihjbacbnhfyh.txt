@@ -1,5 +1,13 @@
-GoldScout-export 7^ihjbacbnhfyh^25
-705^1^0^1^1^1426^0.2867^0.7251^1^Ragged Young Wolf^750:1:1,4865:1:1^
+GoldScout-export 8^ihjbacbnhfyh^28
+705^14^0^1^1^1426^0.2861^0.7382^14^Ragged Young Wolf^750:11:11,1374:1:1,1376:1:1,2211:1:1,2650:1:1,2651:1:1,4865:5:5,7073:4:4,7074:7:7^
+706^11^0^3^4^1426^0.2526^0.7948^11^Frostmane Troll Whelp^117:2:2,159:1:1,1367:1:1,1369:1:1,1376:1:1,1377:1:1,2589:6:6,2651:1:1,3365:2:2^
+708^13^0^3^3^1426^0.2134^0.7214^13^Small Crag Boar^117:2:2,1366:1:1,1368:1:1,1377:1:1,2652:1:1,4865:6:6,7098:8:8^
+724^3^0^2^2^1426^0.2340^0.7306^3^Burly Rockjaw Trogg^159:1:1,2589:2:2^
+808^1^0^5^5^1426^0.3022^0.7961^1^Grik'nir the Cold^2004:1:1^
+1125^2^0^5^6^1426^0.3974^0.5986^2^Crag Boar^771:1:1,2886:2:2^
+1128^2^0^5^6^1426^0.4112^0.5739^2^Young Black Bear^4865:1:1,7074:1:1^
+1199^1^0^6^6^1426^0.4025^0.5919^1^Juvenile Snow Leopard^4814:1:1^
+1718^1^0^4^4^1426^0.3397^0.7004^1^Rockjaw Raider^117:1:1,1380:1:1^
 1783^95^0^50^51^1422^0.4903^0.7839^95^Skeletal Flayer^7972:7:7,8766:5:5,8948:1:1,9296:2:2,10306:1:1,12840:17:17,13446:1:1,13823:1:1,14047:21:32,262890:1:1^
 1784^1^0^51^52^1422^0.3672^0.5737^1^Skeletal Sorcerer^12840:1:1^
 1787^3^0^54^55^1422^0.4020^0.7300^3^Skeletal Executioner^12840:1:1^
@@ -157,19 +165,38 @@ GoldScout-export 7^ihjbacbnhfyh^25
 13718^2^0^41^41^1414^0.3828^0.5811^2^The Nameless Prophet^17684:1:1,17757:1:1^
 263615^1^0^42^42^2548^0.5929^0.2918^1^Krek the Noxious^4555:1:1^
 268831^1^0^40^40^2548^0.6794^0.3749^1^Plains Prowler^^
+@i^117^Tough Jerky
+@i^159^Refreshing Spring Water
 @i^750^Tough Wolf Meat
+@i^771^Chipped Boar Tusk
+@i^1366^Ragged Leather Pants
+@i^1367^Ragged Leather Boots
+@i^1368^Ragged Leather Gloves
+@i^1369^Ragged Leather Belt
+@i^1374^Frayed Shoes
+@i^1376^Frayed Cloak
+@i^1377^Frayed Gloves
+@i^1380^Frayed Robe
 @i^1464^Buzzard Talon
 @i^1520^Troll Sweat
 @i^1639^Grinning Axe of the Whale
 @i^1645^Moonberry Juice
 @i^1701^Curved Basilisk Claw
 @i^1702^Intact Basilisk Spine
+@i^2004^Grelin Whitebeard's Journal
+@i^2211^Bent Large Shield
 @i^2452^Swiftthistle
 @i^2453^Bruiseweed
+@i^2589^Linen Cloth
+@i^2650^Flimsy Chain Boots
+@i^2651^Flimsy Chain Bracers
+@i^2652^Flimsy Chain Cloak
 @i^2799^Gorilla Fang
+@i^2886^Crag Boar Rib
 @i^3010^Fine Sand
 @i^3357^Liferoot
 @i^3358^Khadgar's Whisker
+@i^3365^Frayed Bracers
 @i^3403^Ivory Boar Tusk
 @i^3404^Buzzard Wing
 @i^3669^Gelatinous Goo
@@ -216,6 +243,7 @@ GoldScout-export 7^ihjbacbnhfyh^25
 @i^4784^Lifeless Stone
 @i^4787^Burning Pitch
 @i^4791^Enchanted Water
+@i^4814^Discolored Fang
 @i^4865^Ruined Pelt
 @i^5117^Vibrant Plume
 @i^5128^Shed Lizard Skin
@@ -235,8 +263,11 @@ GoldScout-export 7^ihjbacbnhfyh^25
 @i^6530^Nightcrawlers
 @i^7068^Elemental Fire
 @i^7070^Elemental Water
+@i^7073^Broken Fang
+@i^7074^Chipped Claw
 @i^7075^Core of Earth
 @i^7079^Globe of Water
+@i^7098^Splintered Tusk
 @i^7909^Aquamarine
 @i^7910^Star Ruby
 @i^7912^Solid Stone
@@ -396,19 +427,38 @@ GoldScout-export 7^ihjbacbnhfyh^25
 @i^279225^Vilebranch Totem
 @i^280459^Crystal Infused Scale
 @i^281017^Scroll: KEEP CLEF FOCI
+@q^117^1:0:0
+@q^159^1:0:0
 @q^750^1:12:0
+@q^771^0:15:0
+@q^1366^0:4:0
+@q^1367^0:4:0
+@q^1368^0:4:0
+@q^1369^0:4:0
+@q^1374^0:4:0
+@q^1376^0:4:0
+@q^1377^0:4:0
+@q^1380^0:4:0
 @q^1464^0:15:0
 @q^1520^0:15:0
 @q^1639^2:2:0
 @q^1645^1:0:0
 @q^1701^0:15:0
 @q^1702^0:15:0
+@q^2004^1:12:0
+@q^2211^0:4:0
 @q^2452^1:7:1
 @q^2453^1:7:1
+@q^2589^1:7:1
+@q^2650^0:4:0
+@q^2651^0:4:0
+@q^2652^0:4:0
 @q^2799^1:12:0
+@q^2886^1:7:1
 @q^3010^0:15:0
 @q^3357^1:7:1
 @q^3358^1:7:1
+@q^3365^0:4:0
 @q^3403^0:15:0
 @q^3404^1:7:1
 @q^3669^0:15:0
@@ -455,6 +505,7 @@ GoldScout-export 7^ihjbacbnhfyh^25
 @q^4784^0:15:0
 @q^4787^0:15:0
 @q^4791^1:0:0
+@q^4814^0:15:0
 @q^4865^0:15:0
 @q^5117^1:12:0
 @q^5128^0:15:0
@@ -474,8 +525,11 @@ GoldScout-export 7^ihjbacbnhfyh^25
 @q^6530^1:0:0
 @q^7068^1:7:1
 @q^7070^1:7:1
+@q^7073^0:15:0
+@q^7074^0:15:0
 @q^7075^1:7:1
 @q^7079^1:7:1
+@q^7098^0:15:0
 @q^7909^2:7:1
 @q^7910^2:7:1
 @q^7912^1:7:1
@@ -1340,7 +1394,15 @@ GoldScout-export 7^ihjbacbnhfyh^25
 @c^285280^
 @c^285281^
 @c^286152^
-@a^705^285:1
+@a^705^285:13,305:1
+@a^706^304:4,305:5,324:2
+@a^708^284:12,286:1
+@a^724^283:1,284:1,285:1
+@a^808^306:1
+@a^1125^228:1,247:1
+@a^1128^208:1,247:1
+@a^1199^228:1
+@a^1718^286:1
 @a^1783^227:5,309:17,310:14,329:28,330:31
 @a^1784^227:1
 @a^1787^287:2,308:1
@@ -1448,6 +1510,15 @@ GoldScout-export 7^ihjbacbnhfyh^25
 @a^13718^227:2
 @a^263615^111:1
 @a^268831^153:1
+@t^705^11:138
+@t^706^8:296
+@t^708^13:418
+@t^724^2:24
+@t^808^1:20
+@t^1125^2:158
+@t^1128^2:133
+@t^1199^1:108
+@t^1718^1:50
 @t^6513^6:190
 @t^6514^4:183
 @t^6516^4:210
