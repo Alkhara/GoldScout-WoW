@@ -1,4 +1,4 @@
-GoldScout-export 7^r31ur4iifwgz^4
+GoldScout-export 7^r31ur4iifwgz^5
 4196^8^0^49^49^1446^0.3650^0.4633^8^Silithid Swarm^^
 4374^1^0^50^50^1445^0.7062^0.1925^1^Strashaz Hydra^15623:1:1^
 4390^1^0^43^43^1445^0.7015^0.1876^1^Elder Murk Thresher^7973:1:1^
@@ -60,6 +60,21 @@ GoldScout-export 7^r31ur4iifwgz^4
 13323^1^0^0^0^0^0.0000^0.0000^0^^5133:1:1,8146:1:1^
 13601^1^0^0^0^0^0.0000^0.0000^0^^15381:1:1,17719:1:1^
 13718^1^0^41^41^1414^0.3832^0.5797^1^The Nameless Prophet^17684:1:1,17757:1:1^
+255262^1^0^0^0^0^0.0000^0.0000^0^^4338:1:1,274028:1:1^
+255267^1^0^0^0^0^0.0000^0.0000^0^^12208:1:1^
+255271^3^0^0^0^0^0.0000^0.0000^0^^274028:1:1^
+255276^4^0^0^0^0^0.0000^0.0000^0^^248699:1:1,274028:1:1^
+255309^2^0^0^0^0^0.0000^0.0000^0^^4338:1:2,274028:1:1^
+255364^2^0^0^0^0^0.0000^0.0000^0^^274028:1:1^
+255373^3^0^0^0^0^0.0000^0.0000^0^^3928:1:1^
+255377^3^0^0^0^0^0.0000^0.0000^0^^1645:1:1,3968:1:1,4338:1:3,248696:1:1,274028:1:1^
+255391^1^0^0^0^0^0.0000^0.0000^0^^276734:1:1^
+255995^1^0^0^0^0^0.0000^0.0000^0^^^
+255997^1^0^0^0^0^0.0000^0.0000^0^^273883:1:1,276737:1:1^
+256236^1^0^0^0^0^0.0000^0.0000^0^^274029:1:1,276741:1:1^
+257016^1^0^0^0^0^0.0000^0.0000^0^^276738:1:1^
+271780^1^0^0^0^0^0.0000^0.0000^0^^4638:1:1^
+271784^1^0^0^0^0^0.0000^0.0000^0^^287024:1:1^
 @i^1608^Skullcrusher Mace of Power
 @i^1645^Moonberry Juice
 @i^2450^Briarthorn
@@ -71,6 +86,7 @@ GoldScout-export 7^r31ur4iifwgz^4
 @i^3928^Superior Healing Potion
 @i^3964^Thick Cloak
 @i^3966^Thick Leather Pants
+@i^3968^Thick Leather Tunic
 @i^3986^Protective Pavise
 @i^4089^Ricochet Blunderbuss of the Bandit
 @i^4093^Large Basilisk Tail
@@ -104,6 +120,7 @@ GoldScout-export 7^r31ur4iifwgz^4
 @i^10604^Schematic: Mithril Heavy-bore Rifle
 @i^11387^Basilisk Heart
 @i^12037^Mystery Meat
+@i^12208^Tender Wolf Meat
 @i^14047^Runecloth
 @i^15251^Headstriker Sword of Power
 @i^15372^Wolf Rider's Gloves of Healing
@@ -133,9 +150,19 @@ GoldScout-export 7^r31ur4iifwgz^4
 @i^213544^Scroll: TOPAZ YORAK
 @i^213545^Scroll: PEATCHY ATTAX
 @i^248693^Waylaid Crate: Expert Textiles
+@i^248696^Waylaid Crate: Flowering Artisan Herbs
+@i^248699^Waylaid Crate: Artisan Curiosities
 @i^262890^Sealed Artisan's Writ
+@i^273883^Ca'zass's Head
+@i^274028^Blood Red Bandana
+@i^274029^Ornate Shackle Key
 @i^275864^Putridus Wall
+@i^276734^Wrex's Pinky Ring
+@i^276737^Cloak of the Tidemistress
+@i^276738^Katerina's Shanker
+@i^276741^Defias Enforcer's Shoulderpads
 @i^278186^Brilliantly Polished Bangle
+@i^287024^Mark of Captivity
 @q^1608^2:2:0
 @q^1645^1:0:0
 @q^2450^1:7:1
@@ -147,6 +174,7 @@ GoldScout-export 7^r31ur4iifwgz^4
 @q^3928^1:0:0
 @q^3964^0:4:0
 @q^3966^0:4:0
+@q^3968^0:4:0
 @q^3986^0:4:0
 @q^4089^2:2:0
 @q^4093^0:15:0
@@ -180,6 +208,7 @@ GoldScout-export 7^r31ur4iifwgz^4
 @q^10604^2:9:0
 @q^11387^0:15:0
 @q^12037^1:7:1
+@q^12208^1:7:1
 @q^14047^1:7:1
 @q^15251^2:2:0
 @q^15372^2:4:0
@@ -209,9 +238,19 @@ GoldScout-export 7^r31ur4iifwgz^4
 @q^213544^1:0:0
 @q^213545^1:0:0
 @q^248693^1:0:1
+@q^248696^1:0:1
+@q^248699^1:0:1
 @q^262890^3:0:0
+@q^273883^1:12:0
+@q^274028^1:12:0
+@q^274029^1:12:0
 @q^275864^3:4:0
+@q^276734^3:4:0
+@q^276737^3:4:0
+@q^276738^3:2:0
+@q^276741^3:4:0
 @q^278186^1:12:0
+@q^287024^3:4:0
 @m^1414^Kalimdor
 @m^1445^Dustwallow Marsh
 @m^1446^Tanaris

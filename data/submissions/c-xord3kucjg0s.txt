@@ -1,4 +1,4 @@
-GoldScout-export 7^xord3kucjg0s^24
+GoldScout-export 7^xord3kucjg0s^25
 92^11^0^39^40^1418^0.4233^0.8169^11^Rock Elemental^4552:1:1,4553:3:3,4784:5:5,7067:1:1,7848:5:5,7912:2:4,8150:1:1^
 423^9^1^15^16^1433^0.1060^0.6346^9^Redridge Mongrel^1212:2:2,2589:3:5,2592:1:1^
 442^3^0^15^16^1433^0.0864^0.7516^3^Tarantula^1081:1:1,1475:1:1,3167:1:1,3174:1:1^
@@ -85,7 +85,10 @@ GoldScout-export 7^xord3kucjg0s^24
 6554^1^0^53^53^1449^0.4896^0.8534^1^Gorishi Stinger^6302:1:1,11018:1:1^
 6557^1^0^50^52^1449^0.4594^0.2454^1^Primal Ooze^3676:1:1,11018:1:1^
 6559^3^0^52^54^1449^0.3422^0.4345^3^Glutinous Ooze^20763:1:1,20770:1:1^
-7047^3^0^51^52^1428^0.9010^0.4361^3^Black Broodling^4460:1:1^
+7040^5^0^52^53^1428^0.8474^0.5033^5^Black Dragonspawn^3995:1:1,8754:1:1,8952:1:1,10108:1:1,10184:1:1,15755:1:1^
+7041^2^0^53^54^1428^0.8700^0.3105^2^Black Wyrmkin^3946:1:1^
+7044^1^0^51^51^1428^0.8342^0.2936^1^Black Drake^^
+7047^20^0^51^52^1428^0.8824^0.4394^20^Black Broodling^4460:3:3^
 7092^1^0^51^52^1448^0.4152^0.4532^1^Tainted Ooze^^
 7100^5^0^52^53^1448^0.5651^0.1857^5^Warpwood Moss Flayer^10286:2:2,11503:5:5^
 7101^11^0^53^54^1448^0.5713^0.1871^11^Warpwood Shredder^765:1:1,2452:1:1,10286:2:2,11503:10:10^
@@ -129,6 +132,9 @@ GoldScout-export 7^xord3kucjg0s^24
 9454^1^0^54^54^1448^0.3242^0.6714^1^Xavathras^^
 9462^1^0^55^55^1448^0.6255^0.0749^1^Chieftain Bloodmaw^14047:1:2^
 9622^2^0^55^55^1449^0.6842^0.1255^2^U'cha^2799:1:1,4099:1:1,11476:1:1^
+9690^2^0^51^52^1428^0.8838^0.3033^2^Ember Worg^11467:1:3,12208:2:2^
+9691^2^0^52^53^1428^0.8827^0.3936^2^Venomtip Scorpid^19933:1:1,19936:1:1,248697:1:1^
+9695^1^0^54^54^1428^0.6405^0.5434^1^Deathlash Scorpid^12037:1:1,19934:1:1^
 9878^1^0^52^52^1448^0.4143^0.4343^1^Entropic Beast^4787:1:1^
 10916^1^0^57^57^1448^0.6035^0.0604^1^Winterfall Runner^^
 11685^1^0^41^42^1414^0.3833^0.5808^1^Maraudine Priest^4306:1:1^
@@ -259,12 +265,14 @@ GoldScout-export 7^xord3kucjg0s^24
 @i^3940^Crochet Gloves
 @i^3943^Crochet Vest
 @i^3944^Twill Belt
+@i^3946^Twill Bracers
 @i^3961^Thick Leather Belt
 @i^3964^Thick Cloak
 @i^3966^Thick Leather Pants
 @i^3967^Thick Leather Shoulderpads
 @i^3986^Protective Pavise
 @i^3989^Blocking Targe
+@i^3995^Laminated Scale Cloak
 @i^4001^Overlinked Chain Boots
 @i^4002^Overlinked Chain Bracers
 @i^4003^Overlinked Chain Cloak
@@ -372,6 +380,7 @@ GoldScout-export 7^xord3kucjg0s^24
 @i^8707^Gahz'rilla's Electrified Scale
 @i^8723^Caliph Scorpidsting's Head
 @i^8749^Crochet Hat
+@i^8754^Twill Cover
 @i^8831^Purple Lotus
 @i^8845^Ghost Mushroom
 @i^8952^Roasted Quail
@@ -402,7 +411,9 @@ GoldScout-export 7^xord3kucjg0s^24
 @i^9893^Huntsman's Leggings of the Eagle
 @i^9947^Chieftain's Belt of Frost Protection
 @i^9971^Embossed Plate Pauldrons of the Champion
+@i^10108^Wanderer's Cloak of Spirit
 @i^10172^Mystical Mantle of Stamina
+@i^10184^Swashbuckler's Bracers of the Elder
 @i^10285^Shadow Silk
 @i^10286^Heart of the Wild
 @i^10413^Gloves of the Fang
@@ -432,6 +443,7 @@ GoldScout-export 7^xord3kucjg0s^24
 @i^11411^Large Bear Bone
 @i^11416^Delicate Ribcage
 @i^11418^Hollow Wing Bone
+@i^11467^Blackrock Medallion
 @i^11476^U'cha's Pelt
 @i^11478^Un'Goro Gorilla Pelt
 @i^11479^Un'Goro Stomper Pelt
@@ -486,6 +498,7 @@ GoldScout-export 7^xord3kucjg0s^24
 @i^15605^Ancient Gauntlets of the Bear
 @i^15618^Bonelink Wall Shield of the Defender
 @i^15653^Merciless Gauntlets of the Bandit
+@i^15755^Pattern: Chimeric Vest
 @i^15798^Chipped Ogre Teeth
 @i^15893^Prospector's Buckler
 @i^15981^Lunar Sphere of Power
@@ -507,6 +520,7 @@ GoldScout-export 7^xord3kucjg0s^24
 @i^18946^Head of Overseer Maltorius
 @i^18959^Smithing Tuyere
 @i^18960^Lookout's Spyglass
+@i^19933^Glowing Scorpid Blood
 @i^19934^Large Scorpid Claw
 @i^19935^Empty Venom Sac
 @i^19936^Dried Scorpid Carapace
@@ -535,6 +549,7 @@ GoldScout-export 7^xord3kucjg0s^24
 @i^248692^Waylaid Crate: Expert Ore
 @i^248694^Waylaid Crate: Expert Curiosities
 @i^248695^Waylaid Crate: Earthly Artisan Herbs
+@i^248697^Waylaid Crate: Artisan Ore
 @i^248699^Waylaid Crate: Artisan Curiosities
 @i^248712^Waylaid Crate: Artisan Ingots
 @i^248713^Waylaid Crate: Artisan Parts
@@ -673,12 +688,14 @@ GoldScout-export 7^xord3kucjg0s^24
 @q^3940^0:4:0
 @q^3943^0:4:0
 @q^3944^0:4:0
+@q^3946^0:4:0
 @q^3961^0:4:0
 @q^3964^0:4:0
 @q^3966^0:4:0
 @q^3967^0:4:0
 @q^3986^0:4:0
 @q^3989^0:4:0
+@q^3995^0:4:0
 @q^4001^0:4:0
 @q^4002^0:4:0
 @q^4003^0:4:0
@@ -786,6 +803,7 @@ GoldScout-export 7^xord3kucjg0s^24
 @q^8707^1:12:0
 @q^8723^1:12:0
 @q^8749^0:4:0
+@q^8754^0:4:0
 @q^8831^1:7:1
 @q^8845^1:7:1
 @q^8952^1:0:0
@@ -816,7 +834,9 @@ GoldScout-export 7^xord3kucjg0s^24
 @q^9893^2:4:0
 @q^9947^2:4:0
 @q^9971^2:4:0
+@q^10108^2:4:0
 @q^10172^2:4:0
+@q^10184^2:4:0
 @q^10285^1:7:1
 @q^10286^1:7:1
 @q^10413^3:4:0
@@ -846,6 +866,7 @@ GoldScout-export 7^xord3kucjg0s^24
 @q^11411^0:2:0
 @q^11416^0:15:0
 @q^11418^0:15:0
+@q^11467^1:12:0
 @q^11476^1:12:0
 @q^11478^1:12:0
 @q^11479^1:12:0
@@ -900,6 +921,7 @@ GoldScout-export 7^xord3kucjg0s^24
 @q^15605^2:4:0
 @q^15618^2:4:0
 @q^15653^2:4:0
+@q^15755^2:9:0
 @q^15798^0:15:0
 @q^15893^2:4:0
 @q^15981^2:4:0
@@ -921,6 +943,7 @@ GoldScout-export 7^xord3kucjg0s^24
 @q^18946^1:12:0
 @q^18959^1:12:0
 @q^18960^1:12:0
+@q^19933^1:15:0
 @q^19934^0:15:0
 @q^19935^0:15:0
 @q^19936^0:15:0
@@ -949,6 +972,7 @@ GoldScout-export 7^xord3kucjg0s^24
 @q^248692^1:0:1
 @q^248694^1:0:1
 @q^248695^1:0:1
+@q^248697^1:0:1
 @q^248699^1:0:1
 @q^248712^2:0:1
 @q^248713^2:0:1
@@ -2068,7 +2092,10 @@ GoldScout-export 7^xord3kucjg0s^24
 @a^6554^349:1
 @a^6557^89:1
 @a^6559^127:1,146:1,246:1
-@a^7047^177:2,178:1
+@a^7040^157:2,218:1,255:2
+@a^7041^116:1,157:1
+@a^7044^116:1
+@a^7047^116:1,117:1,136:1,137:2,138:1,158:2,177:4,178:1,197:1,198:1,237:2,256:2,257:1
 @a^7092^188:1
 @a^7100^70:1,71:3,91:1
 @a^7101^70:1,71:7,91:3
@@ -2112,6 +2139,9 @@ GoldScout-export 7^xord3kucjg0s^24
 @a^9454^266:1
 @a^9462^32:1
 @a^9622^53:2
+@a^9690^118:1,137:1
+@a^9691^137:1,197:1
+@a^9695^212:1
 @a^9878^168:1
 @a^10916^32:1
 @a^11685^227:1
@@ -2173,7 +2203,7 @@ GoldScout-export 7^xord3kucjg0s^24
 @t^6004^2:56
 @t^6005^1:28
 @t^6006^4:131
-@t^7047^2:55
+@t^7047^14:532
 @t^7100^2:114
 @t^7101^3:68
 @t^7105^9:210
@@ -2188,6 +2218,8 @@ GoldScout-export 7^xord3kucjg0s^24
 @t^8956^22:1197
 @t^8959^15:469
 @t^8960^5:198
+@t^9690^2:96
+@t^9691^2:51
 @t^9878^1:164
 @t^14340^1:47
 @f^2548^0^23^225^3820:1:2,4603:2:2,6357:1:1,6358:2:2,6359:4:4,6362:5:5,13422:5:11,21151:1:1,21228:2:2^275:4,294:17,313:2
