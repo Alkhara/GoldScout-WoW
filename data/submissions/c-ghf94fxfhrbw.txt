@@ -1,4 +1,4 @@
-GoldScout-export 7^ghf94fxfhrbw^33
+GoldScout-export 7^ghf94fxfhrbw^34
 588^6^0^34^35^1434^0.2417^0.1237^6^Bloodscalp Scout^1710:1:1,2740:1:1,3901:2:2,3915:3:3,4306:1:2^
 595^2^0^34^35^1434^0.2344^0.1227^2^Bloodscalp Hunter^3915:1:1^
 597^1^0^36^37^1434^0.2506^0.1302^1^Bloodscalp Berserker^3915:1:1,7990:1:1^
@@ -32,6 +32,7 @@ GoldScout-export 7^ghf94fxfhrbw^33
 3386^4^0^16^17^1413^0.6155^0.5399^4^Theramore Preserver^414:1:1,2589:1:1,2592:1:2^
 3396^1^0^19^19^1413^0.4503^0.3473^1^Hezrul Bloodmark^5025:1:1^
 3455^1^0^19^19^1413^0.6043^0.5477^1^Cannoneer Whessan^2589:1:1^
+3461^8^0^15^16^1413^0.5585^0.4230^8^Oasis Snapjaw^4555:1:1,5098:8:8,5523:3:3,6361:1:1^
 3632^1^0^16^16^1414^0.5210^0.5516^1^Deviate Creeper^3180:1:1^
 3637^3^0^0^0^0^0.0000^0.0000^0^^818:1:1,3180:1:1,5124:2:2^
 3640^3^0^0^0^0^0.0000^0.0000^0^^3670:1:1,3674:1:1,6464:3:3,15222:1:1^
@@ -247,6 +248,7 @@ GoldScout-export 7^ghf94fxfhrbw^33
 @i^4495^Bloodstone Amulet
 @i^4512^Highland Raptor Eye
 @i^4539^Goldenbark Apple
+@i^4555^Thick Scaly Tail
 @i^4585^Dripping Spider Mandible
 @i^4586^Smooth Raptor Skin
 @i^4590^Curved Yellow Bill
@@ -262,10 +264,12 @@ GoldScout-export 7^ghf94fxfhrbw^33
 @i^4775^Cracked Bill
 @i^4787^Burning Pitch
 @i^5025^Hezrul's Head
+@i^5098^Altered Snapjaw Shell
 @i^5113^Mark of the Syndicate
 @i^5116^Long Tail Feather
 @i^5124^Small Raptor Tooth
 @i^5128^Shed Lizard Skin
+@i^5523^Small Barnacled Clam
 @i^5524^Thick-shelled Clam
 @i^5569^Seaweed
 @i^5741^Rock Chip
@@ -274,6 +278,7 @@ GoldScout-export 7^ghf94fxfhrbw^33
 @i^6357^Sealed Crate
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
+@i^6361^Raw Rainbow Fin Albacore
 @i^6362^Raw Rockscale Cod
 @i^6412^Chief Brigadier Boots
 @i^6418^Aurora Sash
@@ -501,6 +506,7 @@ GoldScout-export 7^ghf94fxfhrbw^33
 @q^4495^1:12:0
 @q^4512^1:12:0
 @q^4539^1:0:0
+@q^4555^0:15:0
 @q^4585^0:15:0
 @q^4586^0:15:0
 @q^4590^0:15:0
@@ -516,10 +522,12 @@ GoldScout-export 7^ghf94fxfhrbw^33
 @q^4775^0:15:0
 @q^4787^0:15:0
 @q^5025^1:12:0
+@q^5098^1:12:0
 @q^5113^0:15:0
 @q^5116^1:7:1
 @q^5124^0:15:0
 @q^5128^0:15:0
+@q^5523^1:7:0
 @q^5524^1:7:0
 @q^5569^0:15:0
 @q^5741^0:15:0
@@ -528,6 +536,7 @@ GoldScout-export 7^ghf94fxfhrbw^33
 @q^6357^1:15:0
 @q^6358^1:7:1
 @q^6359^1:7:1
+@q^6361^1:7:1
 @q^6362^1:7:1
 @q^6412^2:4:0
 @q^6418^2:4:0
@@ -1940,6 +1949,7 @@ GoldScout-export 7^ghf94fxfhrbw^33
 @a^3386^212:3,232:1
 @a^3396^129:1
 @a^3455^212:1
+@a^3461^171:8
 @a^3632^230:1
 @a^4841^209:1
 @a^5797^269:1
@@ -1982,6 +1992,7 @@ GoldScout-export 7^ghf94fxfhrbw^33
 @a^270664^227:1,247:1,267:1
 @a^272315^216:1
 @t^2545^1:39
+@t^3461^7:237
 @f^1425^0^1^234^4603:1:1^336:1
 @f^1434^0^103^252^3820:11:20,6358:11:11,6359:35:35,6362:1:1,13422:11:19,21150:3:3,21151:5:8,21228:26:26^85:6,105:7,106:1,227:2,228:22,247:10,248:4,267:5,286:9,287:4,306:11,325:18,326:3,345:1
 @f^1440^0^1^279^6358:1:1^298:1

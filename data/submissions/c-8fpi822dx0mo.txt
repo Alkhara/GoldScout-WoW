@@ -1,4 +1,9 @@
-GoldScout-export 7^8fpi822dx0mo^9
+GoldScout-export 7^8fpi822dx0mo^11
+6^16^0^1^2^1429^0.4802^0.3645^16^Kobold Vermin^159:2:2,755:2:2,1368:1:1,1369:1:1,1372:1:1,2589:4:4,3365:1:1,4536:4:4,5572:1:1,247834:1:1,247839:3:3^
+38^19^0^3^4^1429^0.5238^0.4943^19^Defias Thug^159:1:1,752:12:12,1369:1:1,1372:1:1,2070:1:1,2211:1:1,2589:6:6,2654:1:1,3363:1:1^
+69^1^0^2^2^1429^0.4700^0.3829^1^Timber Wolf^750:1:1,1374:1:1,7073:1:1,7074:1:1^
+257^13^0^3^3^1429^0.4820^0.3555^13^Kobold Worker^159:2:2,755:1:1,1369:2:2,2210:1:1,2589:5:5,2653:1:1,4536:1:1,247839:5:5^
+299^9^0^1^1^1429^0.4764^0.3835^9^Young Wolf^750:7:7,1364:1:1,1372:1:1,2649:1:1,2656:1:1,2672:3:3,4865:5:5,7073:4:4,7074:2:2^
 5256^1^0^0^0^0^0.0000^0.0000^0^^^
 5259^5^0^0^0^0^0.0000^0.0000^0^^1520:2:2,4338:2:5,248696:1:1^
 5261^1^0^45^45^1435^0.8125^0.4374^1^Enthralled Atal'ai^^
@@ -84,8 +89,28 @@ GoldScout-export 7^8fpi822dx0mo^9
 272318^1^0^0^0^1414^0.0000^0.0000^0^^7078:1:1^
 272319^1^0^0^0^1414^0.0000^0.0000^0^^4787:1:1^
 272561^1^0^0^0^1414^0.0000^0.0000^0^^280029:1:1^
+@i^159^Refreshing Spring Water
+@i^750^Tough Wolf Meat
+@i^752^Red Burlap Bandana
+@i^755^Melted Candle
+@i^1364^Ragged Leather Vest
+@i^1368^Ragged Leather Gloves
+@i^1369^Ragged Leather Belt
+@i^1372^Ragged Cloak
+@i^1374^Frayed Shoes
 @i^1464^Buzzard Talon
 @i^1520^Troll Sweat
+@i^2070^Darnassian Bleu
+@i^2210^Battered Buckler
+@i^2211^Bent Large Shield
+@i^2589^Linen Cloth
+@i^2649^Flimsy Chain Belt
+@i^2653^Flimsy Chain Gloves
+@i^2654^Flimsy Chain Pants
+@i^2656^Flimsy Chain Vest
+@i^2672^Stringy Wolf Meat
+@i^3363^Frayed Belt
+@i^3365^Frayed Bracers
 @i^3928^Superior Healing Potion
 @i^3965^Thick Leather Gloves
 @i^3994^Laminated Scale Bracers
@@ -93,6 +118,7 @@ GoldScout-export 7^8fpi822dx0mo^9
 @i^4025^Balanced Long Bow
 @i^4337^Thick Spider's Silk
 @i^4338^Mageweave Cloth
+@i^4536^Shiny Red Apple
 @i^4580^Sabertooth Fang
 @i^4585^Dripping Spider Mandible
 @i^4588^Pristine Raptor Skull
@@ -100,10 +126,14 @@ GoldScout-export 7^8fpi822dx0mo^9
 @i^4599^Cured Ham Steak
 @i^4787^Burning Pitch
 @i^4791^Enchanted Water
+@i^4865^Ruined Pelt
 @i^5117^Vibrant Plume
 @i^5128^Shed Lizard Skin
 @i^5133^Seeping Gizzard
+@i^5572^Small Green Pouch
 @i^7070^Elemental Water
+@i^7073^Broken Fang
+@i^7074^Chipped Claw
 @i^7076^Essence of Earth
 @i^7078^Essence of Fire
 @i^7079^Globe of Water
@@ -157,6 +187,8 @@ GoldScout-export 7^8fpi822dx0mo^9
 @i^22247^Faith Healer's Boots
 @i^22267^Spellweaver's Turban
 @i^227911^Head of Rend Blackhand
+@i^247834^Nibbled-On Book
+@i^247839^Stolen Book
 @i^248696^Waylaid Crate: Flowering Artisan Herbs
 @i^248713^Waylaid Crate: Artisan Parts
 @i^249695^Fel-Tainted Flesh
@@ -181,8 +213,28 @@ GoldScout-export 7^8fpi822dx0mo^9
 @i^280070^Veilpiercer Girdle
 @i^280073^Burnished Pridescales
 @i^280076^Horns of Varrox
+@q^159^1:0:0
+@q^750^1:12:0
+@q^752^1:12:0
+@q^755^0:15:0
+@q^1364^0:4:0
+@q^1368^0:4:0
+@q^1369^0:4:0
+@q^1372^0:4:0
+@q^1374^0:4:0
 @q^1464^0:15:0
 @q^1520^0:15:0
+@q^2070^1:0:0
+@q^2210^0:4:0
+@q^2211^0:4:0
+@q^2589^1:7:1
+@q^2649^0:4:0
+@q^2653^0:4:0
+@q^2654^0:4:0
+@q^2656^0:4:0
+@q^2672^1:7:1
+@q^3363^0:4:0
+@q^3365^0:4:0
 @q^3928^1:0:0
 @q^3965^0:4:0
 @q^3994^0:4:0
@@ -190,6 +242,7 @@ GoldScout-export 7^8fpi822dx0mo^9
 @q^4025^0:2:0
 @q^4337^1:7:1
 @q^4338^1:7:1
+@q^4536^1:0:0
 @q^4580^0:15:0
 @q^4585^0:15:0
 @q^4588^0:15:0
@@ -197,10 +250,14 @@ GoldScout-export 7^8fpi822dx0mo^9
 @q^4599^1:0:0
 @q^4787^0:15:0
 @q^4791^1:0:0
+@q^4865^0:15:0
 @q^5117^1:12:0
 @q^5128^0:15:0
 @q^5133^0:15:0
+@q^5572^1:1:0
 @q^7070^1:7:1
+@q^7073^0:15:0
+@q^7074^0:15:0
 @q^7076^2:7:1
 @q^7078^2:7:1
 @q^7079^1:7:1
@@ -254,6 +311,8 @@ GoldScout-export 7^8fpi822dx0mo^9
 @q^22247^3:4:0
 @q^22267^3:4:0
 @q^227911^1:12:0
+@q^247834^1:15:0
+@q^247839^1:12:0
 @q^248696^1:0:1
 @q^248713^2:0:1
 @q^249695^1:12:0
@@ -281,6 +340,7 @@ GoldScout-export 7^8fpi822dx0mo^9
 @m^1414^Kalimdor
 @m^1419^Blasted Lands
 @m^1423^Eastern Plaguelands
+@m^1429^Elwynn Forest
 @m^1435^Swamp of Sorrows
 @m^1447^Azshara
 @m^1452^Winterspring
@@ -614,6 +674,11 @@ GoldScout-export 7^8fpi822dx0mo^9
 @c^279982^
 @c^279990^
 @c^286152^
+@a^6^149:14,150:2
+@a^38^190:9,210:10
+@a^69^149:1
+@a^257^129:6,149:7
+@a^299^149:9
 @a^5261^176:1
 @a^5982^150:1,171:1
 @a^5984^69:1
@@ -632,4 +697,9 @@ GoldScout-export 7^8fpi822dx0mo^9
 @a^255347^107:1
 @a^255394^127:1
 @a^260422^268:1
+@t^6^15:210
+@t^38^19:475
+@t^69^1:14
+@t^257^13:306
+@t^299^8:112
 @l^0^enUS

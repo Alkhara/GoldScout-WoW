@@ -1,4 +1,4 @@
-GoldScout-export 7^gcpd1b5k0jtu^41
+GoldScout-export 7^gcpd1b5k0jtu^42
 92^4^0^39^40^1418^0.1423^0.3533^4^Rock Elemental^4553:1:1,4784:4:4,7848:2:2,7912:2:4^
 232^3^0^23^23^1424^0.3391^0.3414^3^Farmer Ray^4538:1:1^
 587^5^0^33^34^1434^0.3439^0.1636^5^Bloodscalp Warrior^1519:1:1,1708:1:1,3901:3:3,3915:2:2,4306:2:3^
@@ -227,6 +227,10 @@ GoldScout-export 7^gcpd1b5k0jtu^41
 4872^1^0^38^38^1418^0.4057^0.1593^1^Obsidian Golem^4552:1:1,7912:1:2^
 5272^1^0^45^45^1444^0.5924^0.5098^1^Grizzled Ironfur Bear^11408:1:1^
 5308^3^0^44^46^1444^0.5087^0.4944^3^Rogue Vale Screecher^6826:3:3^
+5333^19^0^44^45^1444^0.2716^0.6878^19^Hatecrest Serpent Guard^1645:2:2,3961:1:1,4603:1:3,7973:8:8,17058:9:9^
+5334^3^0^43^44^1444^0.2602^0.6418^3^Hatecrest Myrmidon^17058:1:1^
+5336^35^0^43^44^1444^0.2717^0.6853^35^Hatecrest Sorceress^3968:1:1,4603:2:3,6149:1:1,7973:14:14,8705:1:1,17058:12:12,248692:1:1,248693:1:1,249513:1:1^
+5343^1^0^46^46^1444^0.2752^0.6900^1^Lady Szallah^4419:1:1,15373:1:1^
 5419^1^0^42^43^1446^0.5376^0.2504^1^Glasshide Basilisk^^
 5422^2^0^40^41^1446^0.5634^0.2520^2^Scorpid Hunter^12037:1:1,19936:1:1^
 6206^1^0^0^0^0^0.0000^0.0000^0^^2592:1:3^
@@ -590,6 +594,8 @@ GoldScout-export 7^gcpd1b5k0jtu^41
 @i^3927^Fine Aged Cheddar
 @i^3928^Superior Healing Potion
 @i^3931^Poisoned Spider Fang
+@i^3961^Thick Leather Belt
+@i^3968^Thick Leather Tunic
 @i^3989^Blocking Targe
 @i^4023^Fine Pointed Dagger
 @i^4026^Sentinel Musket
@@ -773,6 +779,7 @@ GoldScout-export 7^gcpd1b5k0jtu^41
 @i^7909^Aquamarine
 @i^7910^Star Ruby
 @i^7912^Solid Stone
+@i^7973^Big-mouth Clam
 @i^8009^Dentrium Power Stone
 @i^8052^An'Alleum Power Stone
 @i^8146^Wicked Claw
@@ -781,6 +788,7 @@ GoldScout-export 7^gcpd1b5k0jtu^41
 @i^8188^Explosive Shotgun
 @i^8365^Raw Mithril Head Trout
 @i^8386^Pattern: Big Voodoo Robe
+@i^8705^OOX-22 FE Distress Beacon
 @i^8746^Interlaced Cowl
 @i^8748^Double Mail Coif
 @i^8749^Crochet Hat
@@ -890,6 +898,7 @@ GoldScout-export 7^gcpd1b5k0jtu^41
 @i^15322^Smoothbore Gun
 @i^15351^Headhunter's Bands of Spirit
 @i^15365^Trickster's Handwraps of the Bandit
+@i^15373^Wolf Rider's Headgear of the Boar
 @i^15550^Thick Scale Crown of Intellect
 @i^15553^Thick Scale Shoulder Pads of Spirit
 @i^15798^Chipped Ogre Teeth
@@ -940,6 +949,7 @@ GoldScout-export 7^gcpd1b5k0jtu^41
 @i^248707^Waylaid Crate: Journeyman Parts
 @i^248709^Waylaid Crate: Expert Ingots
 @i^248710^Waylaid Crate: Expert Parts
+@i^249513^Formula: Enchant 2H Weapon - Lesser Strength
 @i^251345^Plans: Veteran's Chain Leggings
 @i^251349^Plans: Crusader's Chain Leggings
 @i^251354^Plans: Crusader's Chain Helm
@@ -1201,6 +1211,8 @@ GoldScout-export 7^gcpd1b5k0jtu^41
 @q^3927^1:0:0
 @q^3928^1:0:0
 @q^3931^0:15:0
+@q^3961^0:4:0
+@q^3968^0:4:0
 @q^3989^0:4:0
 @q^4023^0:2:0
 @q^4026^0:2:0
@@ -1384,6 +1396,7 @@ GoldScout-export 7^gcpd1b5k0jtu^41
 @q^7909^2:7:1
 @q^7910^2:7:1
 @q^7912^1:7:1
+@q^7973^1:7:0
 @q^8009^1:12:0
 @q^8052^1:12:0
 @q^8146^1:7:1
@@ -1392,6 +1405,7 @@ GoldScout-export 7^gcpd1b5k0jtu^41
 @q^8188^2:2:0
 @q^8365^1:7:1
 @q^8386^2:9:0
+@q^8705^2:12:0
 @q^8746^0:4:0
 @q^8748^0:4:0
 @q^8749^0:4:0
@@ -1501,6 +1515,7 @@ GoldScout-export 7^gcpd1b5k0jtu^41
 @q^15322^2:2:0
 @q^15351^2:4:0
 @q^15365^2:4:0
+@q^15373^2:4:0
 @q^15550^2:4:0
 @q^15553^2:4:0
 @q^15798^0:15:0
@@ -1551,6 +1566,7 @@ GoldScout-export 7^gcpd1b5k0jtu^41
 @q^248707^2:0:1
 @q^248709^2:0:1
 @q^248710^2:0:1
+@q^249513^2:9:0
 @q^251345^3:9:0
 @q^251349^3:9:0
 @q^251354^3:9:0
@@ -3046,6 +3062,10 @@ GoldScout-export 7^gcpd1b5k0jtu^41
 @a^4872^68:1
 @a^5272^211:1
 @a^5308^189:2,211:1
+@a^5333^265:17,285:2
+@a^5334^245:2,265:1
+@a^5336^245:2,265:30,285:3
+@a^5343^265:1
 @a^5419^110:1
 @a^5422^91:1,111:1
 @a^6550^229:1
