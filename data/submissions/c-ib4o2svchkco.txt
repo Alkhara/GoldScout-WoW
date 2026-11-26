@@ -1,11 +1,18 @@
-GoldScout-export 7^ib4o2svchkco^3
+GoldScout-export 7^ib4o2svchkco^6
 92^7^0^39^40^1418^0.1390^0.3516^7^Rock Elemental^4552:1:1,4553:2:2,4784:4:4,7848:5:5,7912:1:1,8150:3:3^
 2727^10^0^35^36^1418^0.5005^0.3662^10^Crag Coyote^4582:3:3,7846:5:6,12203:5:5^
-2729^1^0^40^40^1418^0.3840^0.5323^1^Elder Crag Coyote^4583:1:1^
-2731^1^0^36^36^1418^0.6316^0.3535^1^Ridge Stalker^1688:1:1^
+2729^1^0^39^40^1418^0.3840^0.5323^1^Elder Crag Coyote^4583:1:1^
+2731^1^0^36^37^1418^0.6316^0.3535^1^Ridge Stalker^1688:1:1^
 2735^2^0^37^39^1418^0.1538^0.3934^2^Lesser Rock Elemental^7067:1:1,248691:1:1^
 2892^1^0^39^40^1418^0.6601^0.4443^1^Stonevault Seer^^
 2906^1^0^36^37^1418^0.6352^0.2378^1^Dustbelcher Warrior^^
+3988^1^0^19^20^1442^0.6732^0.4516^1^Venture Co. Operator^^
+3989^1^0^19^19^1442^0.6729^0.4509^1^Venture Co. Logger^1811:1:1,2592:1:1^
+3992^3^0^20^21^1442^0.6379^0.3943^3^Venture Co. Engineer^814:1:1,2589:1:2^
+3993^1^0^21^22^1442^0.6449^0.3999^1^Venture Co. Machine Smith^^
+4006^1^0^19^19^1442^0.6883^0.3919^1^Deepmoss Webspinner^3931:1:1,15311:1:1^
+4070^3^0^20^21^1442^0.6401^0.3978^3^Venture Co. Builder^2589:1:2^
+4202^1^0^27^27^1442^0.6273^0.4030^1^Gerenzo Wrenchwhistle^5736:1:1^
 4686^1^0^38^38^1443^0.4462^0.8042^1^Deepstrider Giant^4306:1:2,17058:1:1^
 4844^3^0^35^36^1418^0.3924^0.1394^3^Shadowforge Surveyor^2772:1:2,8009:1:1^
 4845^4^0^36^37^1418^0.3833^0.1581^4^Shadowforge Ruffian^4306:1:2,7666:1:1^
@@ -78,10 +85,14 @@ GoldScout-export 7^ib4o2svchkco^3
 268321^1^0^0^0^0^0.0000^0.0000^0^^3816:1:1^
 269254^1^0^45^45^1427^0.5065^0.7041^1^Famished Blackworg^12208:1:1^
 @i^537^Dull Frenzy Scale
+@i^814^Flask of Oil
 @i^1645^Moonberry Juice
 @i^1688^Long Soft Tail
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
+@i^1811^Blunt Claymore
+@i^2589^Linen Cloth
+@i^2592^Wool Cloth
 @i^2772^Iron Ore
 @i^3669^Gelatinous Goo
 @i^3712^Turtle Meat
@@ -93,6 +104,7 @@ GoldScout-export 7^ib4o2svchkco^3
 @i^3816^Reflective Heater
 @i^3927^Fine Aged Cheddar
 @i^3928^Superior Healing Potion
+@i^3931^Poisoned Spider Fang
 @i^3939^Crochet Cloak
 @i^4003^Overlinked Chain Cloak
 @i^4018^Whetted Claymore
@@ -113,6 +125,7 @@ GoldScout-export 7^ib4o2svchkco^3
 @i^4601^Soft Banana Bread
 @i^4603^Raw Spotted Yellowtail
 @i^4784^Lifeless Stone
+@i^5736^Gerenzo's Mechanical Arm
 @i^6149^Greater Mana Potion
 @i^6300^Husk Fragment
 @i^6302^Delicate Insect Wing
@@ -153,6 +166,7 @@ GoldScout-export 7^ib4o2svchkco^3
 @i^12208^Tender Wolf Meat
 @i^14663^Keeper's Bindings
 @i^15233^Savage Axe of Holy Wrath
+@i^15311^Feral Harness of the Boar
 @i^17058^Fish Oil
 @i^19936^Dried Scorpid Carapace
 @i^19937^Small Scorpid Claw
@@ -172,10 +186,14 @@ GoldScout-export 7^ib4o2svchkco^3
 @i^274609^Serpentbane Crown
 @i^287002^Risen Sentry's Links
 @q^537^0:15:0
+@q^814^1:7:1
 @q^1645^1:0:0
 @q^1688^0:15:0
 @q^1708^1:0:0
 @q^1710^1:0:0
+@q^1811^0:2:0
+@q^2589^1:7:1
+@q^2592^1:7:1
 @q^2772^1:7:1
 @q^3669^0:15:0
 @q^3712^1:7:1
@@ -187,6 +205,7 @@ GoldScout-export 7^ib4o2svchkco^3
 @q^3816^0:4:0
 @q^3927^1:0:0
 @q^3928^1:0:0
+@q^3931^0:15:0
 @q^3939^0:4:0
 @q^4003^0:4:0
 @q^4018^0:2:0
@@ -207,6 +226,7 @@ GoldScout-export 7^ib4o2svchkco^3
 @q^4601^1:0:0
 @q^4603^1:7:1
 @q^4784^0:15:0
+@q^5736^1:12:0
 @q^6149^1:0:0
 @q^6300^0:15:0
 @q^6302^0:15:0
@@ -247,6 +267,7 @@ GoldScout-export 7^ib4o2svchkco^3
 @q^12208^1:7:1
 @q^14663^2:4:0
 @q^15233^2:2:0
+@q^15311^2:4:0
 @q^17058^1:15:0
 @q^19936^0:15:0
 @q^19937^0:15:0
@@ -267,6 +288,7 @@ GoldScout-export 7^ib4o2svchkco^3
 @q^287002^3:4:0
 @m^1418^Badlands
 @m^1427^Searing Gorge
+@m^1442^Stonetalon Mountains
 @m^1443^Desolace
 @m^1446^Tanaris
 @m^2652^Shen'dralas
@@ -1005,6 +1027,13 @@ GoldScout-export 7^ib4o2svchkco^3
 @a^2735^142:1,163:1
 @a^2892^173:1
 @a^2906^92:1
+@a^3988^193:1
+@a^3989^193:1
+@a^3992^152:2,172:1
+@a^3993^152:1
+@a^4006^153:1
+@a^4070^152:1,172:2
+@a^4202^172:1
 @a^4686^328:1
 @a^4844^47:2,67:1
 @a^4845^47:2,67:2
@@ -1061,4 +1090,8 @@ GoldScout-export 7^ib4o2svchkco^3
 @a^260419^93:1
 @a^262838^150:1,169:1
 @a^269254^290:1
+@t^3988^1:1
+@t^3992^3:109
+@t^4006^1:93
+@t^4070^3:109
 @l^0^enUS
