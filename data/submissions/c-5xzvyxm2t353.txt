@@ -1,4 +1,4 @@
-GoldScout-export 5^5xzvyxm2t353^4
+GoldScout-export 5^5xzvyxm2t353^5
 114^1^0^14^14^1436^0.3877^0.5081^1^Harvest Watcher^1274:1:1,1514:1:1^
 154^2^0^16^17^1436^0.6149^0.5661^2^Greater Fleshripper^4776:1:1,5114:1:1,6889:1:1,17056:1:1^
 213^6^0^19^20^1431^0.1881^0.2742^6^Starving Dire Wolf^893:1:1,1015:1:1,3301:1:1,3402:2:2,5207:1:1^
@@ -16,19 +16,33 @@ GoldScout-export 5^5xzvyxm2t353^4
 547^4^0^16^17^1436^0.6139^0.5477^3^Great Goretusk^723:1:1,769:3:4,2295:1:1,2677:1:1^
 565^4^0^20^21^1431^0.1762^0.2712^4^Rabid Dire Wolf^1015:2:2,3301:1:1,3402:1:1^
 1083^1^0^16^16^1433^0.4351^0.7161^1^Murloc Shorestriker^5784:1:1^
+3239^3^0^20^21^1413^0.4739^0.6618^3^Thunderhead^5128:2:2,5470:1:1^
+3245^1^0^16^16^1413^0.5565^0.4748^1^Ornery Plainstrider^5469:1:1^
+3258^3^0^18^18^1413^0.5125^0.5566^3^Bristleback Hunter^1741:1:1,2589:1:1,2592:1:1,5075:1:2^
+3260^2^0^16^17^1413^0.5202^0.5376^2^Bristleback Water Seeker^2589:1:2,5075:2:3^
+3261^1^0^19^19^1413^0.5040^0.5770^1^Bristleback Thornweaver^2592:1:2^
+3263^4^0^19^20^1413^0.5131^0.5607^4^Bristleback Geomancer^954:1:1,1742:1:1,2589:1:3,3193:1:1,4537:1:1,5075:2:2^
+3274^1^0^14^14^1413^0.5569^0.4665^1^Kolkar Pack Runner^^
+3275^1^0^16^16^1413^0.5767^0.4129^1^Kolkar Marauder^1179:1:1^
+3424^1^0^20^20^1413^0.4997^0.6058^1^Thunderhawk Cloudscraper^15508:1:1,17056:1:1^
 4128^3^0^22^23^1413^0.4830^0.7614^3^Hecklefang Stalker^3301:1:1,3402:1:1^
+4316^1^0^13^13^1413^0.5571^0.4669^1^Kolkar Packhound^3299:1:1^
 @i^556^Buzzard Beak
 @i^723^Goretusk Liver
 @i^769^Chunk of Boar Meat
 @i^858^Lesser Healing Potion
 @i^893^Dire Wolf Fang
+@i^954^Scroll of Strength
 @i^1013^Iron Rivet
 @i^1015^Lean Wolf Flank
 @i^1080^Tough Condor Meat
+@i^1179^Ice Cold Milk
 @i^1212^Gnoll Spittle
 @i^1274^Hops
 @i^1448^Blackrock Gauntlets
 @i^1514^Rusty Warhammer
+@i^1741^Laced Cloak
+@i^1742^Laced Mail Gloves
 @i^2251^Gooey Spider Leg
 @i^2287^Haunch of Meat
 @i^2295^Large Boar Tusk
@@ -39,30 +53,42 @@ GoldScout-export 5^5xzvyxm2t353^4
 @i^3014^Battleworn Axe
 @i^3174^Spider Ichor
 @i^3176^Small Claw
+@i^3193^Oak Mallet of the Wolf
+@i^3299^Fractured Canine
 @i^3301^Sharp Canine
 @i^3402^Soft Patch of Fur
 @i^3631^Bellygrub's Tusk
+@i^4537^Tel'Abim Banana
 @i^4568^Grunt Axe of the Whale
 @i^4775^Cracked Bill
 @i^4776^Ruffled Feather
+@i^5075^Blood Shard
 @i^5114^Severed Talon
+@i^5128^Shed Lizard Skin
 @i^5207^Opaque Wand
+@i^5469^Strider Meat
+@i^5470^Thunder Lizard Tail
 @i^5784^Slimy Murloc Scale
 @i^6553^Bard's Trousers of the Tiger
 @i^6889^Small Egg
+@i^15508^Grunt's Cape of the Gorilla
 @i^17056^Light Feather
 @q^556^0:15:0
 @q^723^1:7:1
 @q^769^1:7:1
 @q^858^1:0:0
 @q^893^0:15:0
+@q^954^1:0:0
 @q^1013^1:12:0
 @q^1015^1:7:1
 @q^1080^1:7:1
+@q^1179^1:0:0
 @q^1212^0:15:0
 @q^1274^1:12:0
 @q^1448^2:4:0
 @q^1514^0:2:0
+@q^1741^0:4:0
+@q^1742^0:4:0
 @q^2251^1:7:1
 @q^2287^1:0:0
 @q^2295^0:15:0
@@ -73,17 +99,25 @@ GoldScout-export 5^5xzvyxm2t353^4
 @q^3014^1:12:0
 @q^3174^1:7:1
 @q^3176^0:15:0
+@q^3193^2:2:0
+@q^3299^0:15:0
 @q^3301^0:15:0
 @q^3402^0:15:0
 @q^3631^1:12:0
+@q^4537^1:0:0
 @q^4568^2:2:0
 @q^4775^0:15:0
 @q^4776^0:15:0
+@q^5075^1:12:0
 @q^5114^0:15:0
+@q^5128^0:15:0
 @q^5207^2:2:0
+@q^5469^1:7:1
+@q^5470^1:7:1
 @q^5784^1:7:1
 @q^6553^2:4:0
 @q^6889^1:7:1
+@q^15508^2:4:0
 @q^17056^1:15:1
 @m^1413^The Barrens
 @m^1431^Duskwood
@@ -127,5 +161,15 @@ GoldScout-export 5^5xzvyxm2t353^4
 @a^547^212:1,231:1,232:1
 @a^565^83:1,102:2,105:1
 @a^1083^288:1
+@a^3239^249:1,269:2
+@a^3245^191:1
+@a^3258^210:1,230:2
+@a^3260^210:2
+@a^3261^230:1
+@a^3263^210:1,230:3
+@a^3274^191:1
+@a^3275^171:1
+@a^3424^249:1
 @a^4128^309:3
+@a^4316^191:1
 @l^0^enUS

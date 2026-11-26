@@ -1,4 +1,4 @@
-GoldScout-export 5^1afqs540bi9q^19
+GoldScout-export 5^1afqs540bi9q^20
 205^12^0^28^29^1431^0.6422^0.4996^12^Nightbane Dark Runner^^
 206^8^0^29^30^1431^0.5860^0.7908^8^Nightbane Vile Fang^1783:2:2,5635:2:2^
 210^5^0^26^27^1431^0.2383^0.3302^5^Bone Chewer^1129:2:2,2592:1:2,3048:1:1,4306:1:2^
@@ -49,6 +49,14 @@ GoldScout-export 5^1afqs540bi9q^19
 2714^1^0^35^35^1417^0.6078^0.5890^1^Forsaken Courier^4482:1:1^
 2721^2^0^35^35^1417^0.6078^0.5890^2^Forsaken Bodyguard^4306:1:2^
 2733^1^0^36^36^1417^0.6009^0.5851^1^Apothecary Jorell^^
+4139^4^0^33^34^1441^0.8256^0.8249^4^Scorpid Terror^1288:1:1,5794:3:3,12037:2:2,19937:1:1^
+4140^10^0^31^32^1441^0.7796^0.6326^10^Scorpid Reaver^1288:3:3,5794:3:3,12037:5:5,19937:2:2,19938:1:1^
+4142^10^0^30^31^1441^0.7717^0.5646^10^Sparkleshell Tortoise^3712:5:5,4555:1:1,4556:2:2,5795:4:4,6308:1:2,248693:1:1^
+4143^19^0^34^35^1441^0.8230^0.6765^19^Sparkleshell Snapper^3712:8:8,4555:5:5,4556:5:5,5795:5:5,6362:3:5^
+4147^9^0^30^31^1441^0.7471^0.5947^9^Saltstone Basilisk^1701:2:2,1702:2:2,11384:1:1,11385:2:2,211784:1:1^
+4150^6^0^34^35^1441^0.7816^0.8783^6^Saltstone Gazer^1701:1:1,1702:2:2^
+4151^10^0^32^33^1441^0.7800^0.8781^10^Saltstone Crystalhide^1701:2:2,1702:3:3,11386:1:1,14210:1:1^
+4154^10^0^30^32^1441^0.8492^0.6298^10^Salt Flats Scavenger^729:7:7,5114:4:4,5115:1:1,5116:4:4,5848:10:10,11416:2:2,12037:1:1,17056:3:3,248688:1:1^
 4420^1^0^0^0^0^0.0000^0.0000^0^^^
 4421^1^0^0^0^0^0.0000^0.0000^0^^5792:1:1^
 4422^1^0^0^0^0^0.0000^0.0000^0^^^
@@ -100,6 +108,7 @@ GoldScout-export 5^1afqs540bi9q^19
 7361^1^0^0^0^0^0.0000^0.0000^0^^^
 7603^19^0^0^0^0^0.0000^0.0000^0^^929:1:1,1780:1:1,1785:1:1,2222:1:1,2592:2:4,4306:3:5,4542:1:1,9309:4:4,13127:1:1^
 7800^1^0^0^0^0^0.0000^0.0000^0^^^
+9377^2^0^34^34^1441^0.8140^0.8700^2^Swirling Vortex^7069:2:2^
 245999^1^0^0^0^0^0.0000^0.0000^0^^^
 246003^1^0^0^0^0^0.0000^0.0000^0^^^
 246008^1^0^0^0^0^0.0000^0.0000^0^^^
@@ -119,6 +128,7 @@ GoldScout-export 5^1afqs540bi9q^19
 @i^117^Tough Jerky
 @i^159^Refreshing Spring Water
 @i^422^Dwarven Mild
+@i^729^Stringy Vulture Meat
 @i^750^Tough Wolf Meat
 @i^865^Leaden Mace of the Eagle
 @i^884^Ghoul Rib
@@ -126,6 +136,7 @@ GoldScout-export 5^1afqs540bi9q^19
 @i^929^Healing Potion
 @i^1129^Ghoul Fang
 @i^1205^Melon Juice
+@i^1288^Large Venom Sac
 @i^1369^Ragged Leather Belt
 @i^1372^Ragged Cloak
 @i^1374^Frayed Shoes
@@ -133,6 +144,8 @@ GoldScout-export 5^1afqs540bi9q^19
 @i^1378^Frayed Pants
 @i^1478^Scroll of Protection II
 @i^1686^Bristly Whisker
+@i^1701^Curved Basilisk Claw
+@i^1702^Intact Basilisk Spine
 @i^1708^Sweet Nectar
 @i^1711^Scroll of Stamina II
 @i^1747^Linked Chain Boots
@@ -203,18 +216,26 @@ GoldScout-export 5^1afqs540bi9q^19
 @i^4633^Heavy Bronze Lockbox
 @i^4865^Ruined Pelt
 @i^5113^Mark of the Syndicate
+@i^5114^Severed Talon
+@i^5115^Broken Wishbone
+@i^5116^Long Tail Feather
 @i^5524^Thick-shelled Clam
 @i^5529^Tomb Dust
 @i^5635^Sharp Claw
 @i^5637^Large Fang
 @i^5785^Thick Murloc Scale
 @i^5792^Razorflank's Medallion
+@i^5794^Salty Scorpid Venom
+@i^5795^Hardened Tortoise Shell
+@i^5848^Hollow Vulture Bone
 @i^6308^Raw Bristle Whisker Catfish
+@i^6362^Raw Rockscale Cod
 @i^6438^Dull Elemental Bracer
 @i^6439^Broken Binding Bracer
 @i^6530^Nightcrawlers
 @i^6584^Scouting Tunic of the Boar
 @i^6893^Workshop Key
+@i^7069^Elemental Air
 @i^7072^Naga Scale
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
@@ -225,19 +246,30 @@ GoldScout-export 5^1afqs540bi9q^19
 @i^9309^Robo-mechanical Guts
 @i^9326^Grime-Encrusted Ring
 @i^9444^Techbot CPU Shell
+@i^11384^Broken Basilisk Teeth
+@i^11385^Basilisk Scale
+@i^11386^Squishy Basilisk Eye
 @i^11392^Severed Bat Claw
 @i^11393^Small Bat Skull
 @i^11394^Bat Heart
+@i^11416^Delicate Ribcage
+@i^12037^Mystery Meat
 @i^12202^Tiger Meat
 @i^13127^Frostreaver Crown
+@i^14210^Vital Cape of Power
+@i^17056^Light Feather
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
+@i^19937^Small Scorpid Claw
+@i^19938^Heavy Scorpid Leg
+@i^211784^Scroll: WUBBA WUBBA
 @i^213545^Scroll: PEATCHY ATTAX
 @i^213546^Scroll: SHOOBEEDOOP
 @i^248686^Waylaid Crate: Journeyman Herbs
 @i^248688^Waylaid Crate: Journeyman Textiles
 @i^248689^Waylaid Crate: Journeyman Curiosities
 @i^248691^Waylaid Crate: Flowering Expert Herbs
+@i^248693^Waylaid Crate: Expert Textiles
 @i^248694^Waylaid Crate: Expert Curiosities
 @i^249881^Recipe: Root Tea
 @i^251961^Arcane Mote
@@ -248,6 +280,7 @@ GoldScout-export 5^1afqs540bi9q^19
 @q^117^1:0:0
 @q^159^1:0:0
 @q^422^1:0:0
+@q^729^1:7:1
 @q^750^1:12:0
 @q^865^2:2:0
 @q^884^1:12:0
@@ -255,6 +288,7 @@ GoldScout-export 5^1afqs540bi9q^19
 @q^929^1:0:0
 @q^1129^1:12:0
 @q^1205^1:0:0
+@q^1288^1:7:1
 @q^1369^0:4:0
 @q^1372^0:4:0
 @q^1374^0:4:0
@@ -262,6 +296,8 @@ GoldScout-export 5^1afqs540bi9q^19
 @q^1378^0:4:0
 @q^1478^1:0:0
 @q^1686^0:15:0
+@q^1701^0:15:0
+@q^1702^0:15:0
 @q^1708^1:0:0
 @q^1711^1:0:0
 @q^1747^0:4:0
@@ -332,18 +368,26 @@ GoldScout-export 5^1afqs540bi9q^19
 @q^4633^2:15:0
 @q^4865^0:15:0
 @q^5113^0:15:0
+@q^5114^0:15:0
+@q^5115^0:15:0
+@q^5116^1:7:1
 @q^5524^1:7:0
 @q^5529^0:15:0
 @q^5635^1:7:1
 @q^5637^1:7:1
 @q^5785^1:7:1
 @q^5792^1:12:0
+@q^5794^1:12:0
+@q^5795^1:12:0
+@q^5848^1:12:0
 @q^6308^1:7:1
+@q^6362^1:7:1
 @q^6438^0:15:0
 @q^6439^0:15:0
 @q^6530^1:0:0
 @q^6584^2:4:0
 @q^6893^1:13:0
+@q^7069^1:7:1
 @q^7072^1:7:1
 @q^7073^0:15:0
 @q^7074^0:15:0
@@ -354,19 +398,30 @@ GoldScout-export 5^1afqs540bi9q^19
 @q^9309^1:12:0
 @q^9326^1:12:0
 @q^9444^1:4:0
+@q^11384^0:15:0
+@q^11385^0:15:0
+@q^11386^0:15:0
 @q^11392^0:15:0
 @q^11393^0:15:0
 @q^11394^0:15:0
+@q^11416^0:15:0
+@q^12037^1:7:1
 @q^12202^1:7:1
 @q^13127^3:4:0
+@q^14210^2:4:0
+@q^17056^1:15:1
 @q^17057^1:15:0
 @q^17058^1:15:0
+@q^19937^0:15:0
+@q^19938^0:15:0
+@q^211784^1:0:0
 @q^213545^1:0:0
 @q^213546^1:0:0
 @q^248686^1:0:1
 @q^248688^1:0:1
 @q^248689^1:0:1
 @q^248691^1:0:1
+@q^248693^1:0:1
 @q^248694^1:0:1
 @q^249881^1:9:0
 @q^251961^1:12:0
@@ -382,6 +437,7 @@ GoldScout-export 5^1afqs540bi9q^19
 @m^1429^Elwynn Forest
 @m^1431^Duskwood
 @m^1434^Stranglethorn Vale
+@m^1441^Thousand Needles
 @m^1453^Stormwind City
 @c^724^
 @c^733^
@@ -1182,10 +1238,19 @@ GoldScout-export 5^1afqs540bi9q^19
 @a^2714^232:1
 @a^2721^232:2
 @a^2733^232:1
+@a^4139^317:1,335:1,356:2
+@a^4140^234:1,235:2,254:1,256:3,276:1,294:2
+@a^4142^214:1,215:1,216:2,234:2,235:1,236:1,254:1,255:1
+@a^4143^216:2,236:3,237:2,256:3,297:1,314:3,317:4,334:1
+@a^4147^214:1,215:1,234:1,235:3,254:1,255:1,273:1
+@a^4150^335:1,355:5
+@a^4151^335:1,355:8,375:1
+@a^4154^214:1,236:1,256:2,276:1,277:5
 @a^4969^234:2
 @a^6208^208:1
 @a^6210^208:1
 @a^6213^208:4
 @a^6221^208:3
 @a^6231^208:1
+@a^9377^355:1,356:1
 @l^0^enUS

@@ -1,4 +1,4 @@
-GoldScout-export 7^q84c69q7lto5^7
+GoldScout-export 7^q84c69q7lto5^9
 681^7^0^30^31^1434^0.3511^0.1173^7^Jeune tigre de Strangleronce^1686:2:2,1687:2:2,5637:1:1,12202:4:4^
 683^1^0^30^31^1434^0.4168^0.1117^1^Jeune panthère^1686:1:1^
 704^1^0^2^2^1426^0.2909^0.7476^1^Loup des bois décharné^750:1:1,1368:1:1,4865:1:1^
@@ -37,10 +37,18 @@ GoldScout-export 7^q84c69q7lto5^7
 1508^4^0^1^1^1420^0.3135^0.6060^4^Jeune charognard^2656:1:1,3265:3:3,4865:1:1,7073:2:2,7074:1:1^
 1509^6^0^2^3^1420^0.3629^0.6304^6^Charognard pouilleux^2651:1:1,3265:3:3,4865:4:4,7074:2:2^
 1512^8^0^1^2^1420^0.3237^0.5845^8^Chauve-souris du crépuscule^2650:1:1,2652:1:1,3264:6:6,4865:4:4,7073:4:4^
-1547^2^0^5^6^1420^0.5294^0.5247^2^Sombredogue décrépit^2672:1:1^
+1547^3^0^5^6^1420^0.5505^0.5335^3^Sombredogue décrépit^2672:1:1,278243:1:1^
+1548^6^0^7^8^1420^0.5819^0.6176^6^Sombredogue maudit^2672:5:5,2858:5:5,278243:4:4^
+1553^6^0^6^7^1420^0.5881^0.5654^6^Grande chauve-souris du crépuscule^2876:1:1,6293:1:1,6296:1:1,7073:2:2,278242:3:3^
 1667^2^0^5^5^1420^0.3660^0.6904^2^Meven Korgal^2885:1:1^
 1890^12^0^2^3^1420^0.3377^0.6303^12^Squelette Cliquethorax^159:1:1,1370:1:1,2210:1:1,2589:3:3,2652:1:1,3365:1:1,4604:1:1^
 1919^1^0^5^5^1420^0.3668^0.6155^1^Samuel Fipps^16333:1:1^
+3098^11^0^1^2^1411^0.4433^0.6450^11^Sanglier tacheté^117:1:1,3363:1:1,4865:5:5,7098:5:5^
+3101^10^0^3^4^1411^0.4496^0.5705^10^Vil quasit^117:1:1,159:1:1,2211:1:1,2589:2:2,3363:1:1,3365:1:1^
+3102^5^0^3^4^1411^0.4414^0.5445^5^Traqueur corrompu^2653:1:1,3363:1:1,4865:2:2,6640:2:2,7073:3:3^
+3124^17^0^3^3^1411^0.4175^0.6394^17^Scorpide ouvrier^1370:1:1,1374:1:1,1377:2:2,2210:1:1,2654:1:1,3365:1:1,4862:8:8,4867:5:5,7099:3:3,7100:4:4,7101:5:5^
+3183^1^0^5^5^1411^0.4295^0.5332^1^Yarrog Baneshadow^2651:1:1,4859:1:1^
+3281^2^0^4^4^1411^0.4048^0.6727^2^Sarkoth^1376:1:1,4862:2:2,4867:1:1,4905:1:1,7100:1:1,7101:1:1^
 4062^1^0^31^31^1437^0.5110^0.0822^1^Bombardier Sombrefer^^
 6206^3^0^0^0^0^0.0000^0.0000^0^^6601:1:1,9814:1:1^
 6207^10^0^0^0^0^0.0000^0.0000^0^^1820:1:1,1825:1:1,2592:1:1,4306:1:1,6608:1:1,9308:1:1,9309:3:3,9806:1:1^
@@ -126,6 +134,8 @@ GoldScout-export 7^q84c69q7lto5^7
 @i^2654^Pantalon en anneaux fins
 @i^2656^Lorica fine
 @i^2672^Viande de loup maigre
+@i^2858^Sang de sombredogue
+@i^2876^Peau de chauve-souris du crépuscule
 @i^2885^Documents de la Croisade écarlate
 @i^2886^Côtes de sanglier des rochers
 @i^3169^Dent d'ours abîmée
@@ -157,18 +167,26 @@ GoldScout-export 7^q84c69q7lto5^7
 @i^4715^Cape blasonnée
 @i^4813^Petit collier en cuir
 @i^4814^Croc décoloré
+@i^4859^Médaillon de la Lame ardente
+@i^4862^Queue de scorpide ouvrier
 @i^4865^Peau détruite
+@i^4867^Patte de scorpide brisée
+@i^4905^Pince abîmée de Sarkoth
 @i^5571^Petite bourse noire
 @i^5637^Grand croc
+@i^6293^Sang séché de chauve-souris
+@i^6296^Poils de chauve-souris
 @i^6601^Bottes de derviche du gorille
 @i^6608^Armure éclatante
 @i^6613^Brassards de sage de la chouette
 @i^6615^Gants de sage d'ancienneté
+@i^6640^Sabot de traqueur corrompu
 @i^6893^Clé d'atelier
 @i^6952^Fourrure d'ours épaisse
 @i^7073^Croc brisé
 @i^7074^Griffes émoussées
 @i^7098^Défense brisée
+@i^7099^Pinces endommagées
 @i^7100^Ichor gluant
 @i^7101^Oeil de bestiole
 @i^7367^Mantelet de doyen de protection contre le feu
@@ -199,6 +217,8 @@ GoldScout-export 7^q84c69q7lto5^7
 @i^273026^Atours de plumes bigarrées
 @i^273097^Plan : jardin de pierres
 @i^274043^Bouclier irradié
+@i^278242^Membrane d'aile de chauve-souris de la pénombre
+@i^278243^Peau de sombredogue
 @i^284845^Peau de raptor des fourrés
 @q^117^1:0:0
 @q^159^1:0:0
@@ -251,6 +271,8 @@ GoldScout-export 7^q84c69q7lto5^7
 @q^2654^0:4:0
 @q^2656^0:4:0
 @q^2672^1:7:1
+@q^2858^1:12:0
+@q^2876^1:12:0
 @q^2885^1:12:0
 @q^2886^1:7:1
 @q^3169^0:15:0
@@ -282,18 +304,26 @@ GoldScout-export 7^q84c69q7lto5^7
 @q^4715^2:4:0
 @q^4813^0:15:0
 @q^4814^0:15:0
+@q^4859^1:12:0
+@q^4862^1:12:0
 @q^4865^0:15:0
+@q^4867^0:15:0
+@q^4905^1:12:0
 @q^5571^1:1:0
 @q^5637^1:7:1
+@q^6293^0:15:0
+@q^6296^0:15:0
 @q^6601^2:4:0
 @q^6608^2:4:0
 @q^6613^2:4:0
 @q^6615^2:4:0
+@q^6640^1:12:0
 @q^6893^1:13:0
 @q^6952^1:12:0
 @q^7073^0:15:0
 @q^7074^0:15:0
 @q^7098^0:15:0
+@q^7099^0:15:0
 @q^7100^0:15:0
 @q^7101^0:15:0
 @q^7367^2:4:0
@@ -324,7 +354,10 @@ GoldScout-export 7^q84c69q7lto5^7
 @q^273026^3:4:0
 @q^273097^2:9:0
 @q^274043^3:4:0
+@q^278242^1:12:0
+@q^278243^1:12:0
 @q^284845^1:12:0
+@m^1411^Durotar
 @m^1415^Royaumes de l'est
 @m^1420^Clairières de Tirisfal
 @m^1426^Dun Morogh
@@ -359,9 +392,12 @@ GoldScout-export 7^q84c69q7lto5^7
 @c^255720^
 @c^255721^
 @c^255722^
+@c^279938^
 @c^279940^
 @c^279951^
 @c^279968^
+@c^279969^
+@c^279979^
 @a^681^46:4,47:3
 @a^683^48:1
 @a^704^285:1
@@ -400,10 +436,18 @@ GoldScout-export 7^q84c69q7lto5^7
 @a^1508^226:3,265:1
 @a^1509^246:2,247:4
 @a^1512^226:7,266:1
-@a^1547^209:1,211:1
+@a^1547^209:1,211:1,231:1
+@a^1548^251:6
+@a^1553^211:2,231:2,232:1,251:1
 @a^1667^267:2
 @a^1890^226:2,246:9,266:1
 @a^1919^247:1
+@a^3098^248:6,249:1,268:2,269:2
+@a^3101^228:5,229:5
+@a^3102^208:4,229:1
+@a^3124^229:1,248:9,249:2,268:5
+@a^3183^208:1
+@a^3281^268:2
 @a^4062^30:1
 @a^6221^208:1
 @a^6231^208:1
@@ -435,6 +479,9 @@ GoldScout-export 7^q84c69q7lto5^7
 @t^1508^4:122
 @t^1509^6:104
 @t^1512^8:163
+@t^1547^1:29
+@t^1548^6:206
+@t^1553^4:124
 @t^1667^2:71
 @t^1890^11:298
 @t^1919^1:47

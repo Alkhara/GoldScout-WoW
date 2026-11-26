@@ -1,4 +1,4 @@
-GoldScout-export 7^5pqpwmqcgfwz^10
+GoldScout-export 8^5pqpwmqcgfwz^11
 3099^34^0^6^7^1411^0.4918^0.4029^34^Jabalí jaspeado feroz^769:34:34,771:4:4,774:2:2,3171:1:1,5571:1:1^
 3100^83^0^8^9^1411^0.4818^0.2013^83^Jabalí jaspeado mayor^769:63:63,771:12:12,774:1:1,3171:26:26,3190:1:1,8181:1:1,211780:1:1,211785:1:1,211786:1:1^
 3110^1^0^10^10^1411^0.3805^0.1702^1^Crocolisco Fauzatroz^4875:1:1,4891:1:1^
@@ -52,6 +52,17 @@ GoldScout-export 7^5pqpwmqcgfwz^10
 3939^5^0^7^8^1413^0.5678^0.2533^5^Lobo Crines de Acero^^
 4127^9^0^15^16^1413^0.5395^0.2145^9^Hiena Dentecenado^3301:3:3^
 8996^21^0^10^14^1411^0.5255^0.1043^21^Esbirro abisario^^
+11318^7^0^0^0^0^0.0000^0.0000^0^^1179:1:1,1495:1:1,1514:1:1,2073:1:1,2589:3:8,2777:1:1,3307:1:1^
+11319^1^0^0^0^0^0.0000^0.0000^0^^^
+11320^1^0^0^0^0^0.0000^0.0000^0^^3676:1:1^
+11321^2^0^0^0^0^0.0000^0.0000^0^^2836:1:2,3036:1:1,14099:1:1^
+11322^8^0^0^0^0^0.0000^0.0000^0^^2589:2:6,3374:1:1,4292:1:1,4564:1:1,15300:1:1^
+11323^4^0^0^0^0^0.0000^0.0000^0^^1210:1:1,15014:1:1,15492:1:1^
+11324^2^0^0^0^0^0.0000^0.0000^0^^15489:1:1^
+11517^1^0^0^0^0^0.0000^0.0000^0^^272999:1:1^
+11518^1^0^0^0^0^0.0000^0.0000^0^^14150:1:1,251340:1:1^
+11519^1^0^0^0^0^0.0000^0.0000^0^^273005:1:1^
+11520^1^0^0^0^0^0.0000^0.0000^0^^14149:1:1,14540:1:1^
 12922^2^0^10^12^1411^0.4741^0.2638^2^Esbirro Diablillo^^
 275662^12^0^9^10^1411^0.5859^0.2811^12^Explorador Látigo de Ira^2589:3:4,3373:1:1,286008:4:4^
 275663^8^0^11^11^1411^0.5891^0.2819^8^Ayudante Látigo de Ira^159:1:1,1737:1:1,2589:1:2,4604:1:1,286008:5:5^
@@ -66,6 +77,7 @@ GoldScout-export 7^5pqpwmqcgfwz^10
 @i^858^Poción de Curación inferior
 @i^1179^Leche fría como el hielo
 @i^1181^Pergamino de Espíritu
+@i^1210^Gema de las Sombras
 @i^1412^Espada bastarda rudimentaria
 @i^1415^Marra de carpintero
 @i^1419^Botas de cuero desgastadas
@@ -82,25 +94,33 @@ GoldScout-export 7^5pqpwmqcgfwz^10
 @i^1741^Capa con encaje
 @i^1764^Zapatos de retal
 @i^1811^Espada claymore desafilada
-@i^2073^Hachuela enana de la ballena
+@i^2073^Hachuela enana de magia
 @i^2287^Anca de carne
 @i^2589^Paño de lino
 @i^2592^Paño de lana
 @i^2773^Arco corto rajado
+@i^2777^Arco corto débil
 @i^2778^Trabuco barato
+@i^2836^Piedra burda
 @i^3013^Pergamino de Protección
+@i^3036^Arco corto pesado
 @i^3171^Colmillo de jabalí roto
 @i^3190^Palo para golpear
 @i^3281^Guantes de anillas de batalla
 @i^3301^Canino afilado
+@i^3307^Botas de paño barbárico
 @i^3313^Arnés de cuero ceremonial
 @i^3370^Cinturón de retales
 @i^3373^Brazales de retales
+@i^3374^Cinturón percal
 @i^3642^Brazales ancestrales
+@i^3676^Icor baboso
 @i^3731^Carne de león
+@i^4292^Patrón: bolsa de lana verde
 @i^4345^Patrón: botas de lana roja
 @i^4537^Banana Tel'Abim
 @i^4555^Cola escamada espesa
+@i^4564^Garrote con pinchos de protección contra el Fuego
 @i^4604^Champiñón de bosque
 @i^4675^Cinturón tribal
 @i^4775^Pico roto
@@ -142,19 +162,28 @@ GoldScout-export 7^5pqpwmqcgfwz^10
 @i^6303^Caballa suave cruda
 @i^6308^Siluro mostacherizo crudo
 @i^6356^Cofre maltrecho
+@i^6358^Bocanegra graso
 @i^6361^Atún blanco arco iris crudo
 @i^6522^Pez descarriado
 @i^8180^Arco de caza
 @i^8181^Rifle de caza
 @i^14094^Brazaletes perlados de intelecto
 @i^14098^Capa nativa
+@i^14099^Fajín nativo
+@i^14149^Manteo subterráneo
+@i^14150^Toga de Evocación
+@i^14540^Corazón de Taragaman el Hambriento
 @i^14544^Insignia de Teniente
 @i^15003^Cinturón primigenio
 @i^15011^Cordón lupino de agilidad
 @i^15013^Puños lupinos
+@i^15014^Rodela lupina de agilidad
+@i^15300^Guantes griseznos
 @i^15303^Pantalones griseznos de protección contra las Sombras
 @i^15472^Cinturón de cargador
 @i^15480^Restos de faja
+@i^15489^Escarpes salpicados de sangre de aguante
+@i^15492^Fajín salpicado de sangre del mono
 @i^17056^Pluma ligera
 @i^20708^Baúl bien sellado
 @i^20709^Ron Rumsey ligero
@@ -167,6 +196,9 @@ GoldScout-export 7^5pqpwmqcgfwz^10
 @i^211855^Pergamino: STHENIC LUNATE
 @i^248682^Cajón saqueado: hierbas de aprendiz
 @i^250187^Receta: pinchitos de raptor sabrosos
+@i^251340^Diseño: camisa de anillas de veterano
+@i^272999^Ballesta barbárica
+@i^273005^Capa de piel de sátiro
 @i^277661^Orbe de tormenta sin brillo
 @i^277665^Órgano de truenagarto cargado
 @i^286008^Aleta espinosa de naga
@@ -181,6 +213,7 @@ GoldScout-export 7^5pqpwmqcgfwz^10
 @q^858^1:0:0
 @q^1179^1:0:0
 @q^1181^1:0:0
+@q^1210^2:7:1
 @q^1412^0:2:0
 @q^1415^0:2:0
 @q^1419^0:4:0
@@ -202,20 +235,28 @@ GoldScout-export 7^5pqpwmqcgfwz^10
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2773^0:2:0
+@q^2777^0:2:0
 @q^2778^0:2:0
+@q^2836^1:7:1
 @q^3013^1:0:0
+@q^3036^2:2:0
 @q^3171^0:15:0
 @q^3190^1:2:0
 @q^3281^1:4:0
 @q^3301^0:15:0
+@q^3307^2:4:0
 @q^3313^2:4:0
 @q^3370^0:4:0
 @q^3373^0:4:0
+@q^3374^0:4:0
 @q^3642^1:4:0
+@q^3676^0:15:0
 @q^3731^1:7:1
+@q^4292^2:9:0
 @q^4345^2:9:0
 @q^4537^1:0:0
 @q^4555^0:15:0
+@q^4564^2:2:0
 @q^4604^1:0:0
 @q^4675^1:4:0
 @q^4775^0:15:0
@@ -257,19 +298,28 @@ GoldScout-export 7^5pqpwmqcgfwz^10
 @q^6303^1:7:1
 @q^6308^1:7:1
 @q^6356^1:15:0
+@q^6358^1:7:1
 @q^6361^1:7:1
 @q^6522^1:0:1
 @q^8180^2:2:0
 @q^8181^1:2:0
 @q^14094^2:4:0
 @q^14098^1:4:0
+@q^14099^1:4:0
+@q^14149^3:4:0
+@q^14150^3:4:0
+@q^14540^1:12:0
 @q^14544^1:12:0
 @q^15003^1:4:0
 @q^15011^2:4:0
 @q^15013^1:4:0
+@q^15014^2:4:0
+@q^15300^1:4:0
 @q^15303^2:4:0
 @q^15472^1:4:0
 @q^15480^1:4:0
+@q^15489^2:4:0
+@q^15492^2:4:0
 @q^17056^1:15:1
 @q^20708^1:15:0
 @q^20709^1:0:0
@@ -282,6 +332,9 @@ GoldScout-export 7^5pqpwmqcgfwz^10
 @q^211855^1:0:0
 @q^248682^1:0:1
 @q^250187^1:9:0
+@q^251340^3:9:0
+@q^272999^3:2:0
+@q^273005^3:4:0
 @q^277661^1:12:0
 @q^277665^1:12:0
 @q^286008^1:12:0
@@ -1314,5 +1367,5 @@ GoldScout-export 7^5pqpwmqcgfwz^10
 @t^275663^8:134
 @t^275666^1:66
 @f^1411^0^61^1^6303:58:58,6356:3:3^31:61
-@f^1413^0^43^62^6289:6:6,6308:2:2,6522:31:31,20708:3:3,20709:1:2^88:7,89:7,149:3,169:11,171:15
+@f^1413^0^48^62^6289:6:6,6308:2:2,6358:4:4,6361:1:1,6522:31:31,20708:3:3,20709:1:2^88:7,89:7,149:3,152:5,169:11,171:15
 @l^0^esES
