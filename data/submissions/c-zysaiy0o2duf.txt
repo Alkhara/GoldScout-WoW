@@ -1,4 +1,4 @@
-GoldScout-export 7^zysaiy0o2duf^32
+GoldScout-export 7^zysaiy0o2duf^33
 743^1^0^42^43^1435^0.6056^0.5385^1^Wyrmkin Dreamwalker^^
 1789^1^0^55^56^1422^0.4957^0.6561^1^Skeletal Acolyte^8948:1:1^
 1794^2^0^54^55^1422^0.4491^0.6888^2^Soulless Ghoul^12840:1:1,14047:1:2^
@@ -378,6 +378,7 @@ GoldScout-export 7^zysaiy0o2duf^32
 11873^1^0^60^60^1422^0.4537^0.6907^1^Spectral Attendant^14047:1:1^
 11886^1^0^57^57^1423^0.2359^0.7417^1^Mercutio Filthgorger^14613:1:1^
 11887^3^0^54^54^1423^0.2365^0.7501^3^Crypt Robber^^
+11949^1^0^0^0^1459^0.0000^0.0000^0^^14047:1:4,17306:1:1,17327:1:1,17422:1:1^
 12201^1^0^0^0^0^0.0000^0.0000^0^^^
 12203^1^0^0^0^0^0.0000^0.0000^0^^^
 12206^3^0^0^0^0^0.0000^0.0000^0^^7912:1:2^
@@ -399,10 +400,14 @@ GoldScout-export 7^zysaiy0o2duf^32
 12922^2^0^46^53^1447^0.2054^0.6062^2^Imp Minion^^
 13141^2^0^0^0^0^0.0000^0.0000^0^^4608:1:1^
 13142^1^0^0^0^0^0.0000^0.0000^0^^^
+13257^1^0^0^0^1459^0.0000^0.0000^0^^^
 13282^1^0^0^0^0^0.0000^0.0000^0^^^
+13298^1^0^0^0^1459^0.0000^0.0000^0^^5759:1:1^
 13323^2^0^0^0^0^0.0000^0.0000^0^^8146:1:1^
+13358^1^0^0^0^1459^0.0000^0.0000^0^^19278:1:1^
 13596^1^0^0^0^0^0.0000^0.0000^0^^^
 13601^1^0^0^0^0^0.0000^0.0000^0^^^
+14188^1^0^0^0^1459^0.0000^0.0000^0^^17306:1:1,17326:1:1^
 14516^1^0^0^0^0^0.0000^0.0000^0^^12843:1:1,18759:1:1,276784:1:1^
 14520^1^0^0^0^0^0.0000^0.0000^0^^^
 14564^24^0^59^60^1423^0.1688^0.2753^24^Terrordale Spirit^7972:2:2,8948:5:5,10374:1:1,13816:1:1,14047:11:26^
@@ -900,7 +905,11 @@ GoldScout-export 7^zysaiy0o2duf^32
 @i^16728^Lightforge Legplates
 @i^16733^Spaulders of Valor
 @i^16736^Belt of Valor
+@i^17306^Stormpike Soldier's Blood
+@i^17326^Stormpike Soldier's Flesh
+@i^17327^Stormpike Lieutenant's Flesh
 @i^17414^Codex: Prayer of Fortitude II
+@i^17422^Armor Scraps
 @i^17683^Book: Gift of the Wild II
 @i^17761^Gem of the First Khan
 @i^17763^Gem of the Third Khan
@@ -944,6 +953,7 @@ GoldScout-export 7^zysaiy0o2duf^32
 @i^18784^Top Half of Advanced Armorsmithing: Volume III
 @i^18945^Dark Iron Residue
 @i^19234^Six of Beasts
+@i^19278^Two of Portals
 @i^19441^Huge Venom Sac
 @i^19933^Glowing Scorpid Blood
 @i^19934^Large Scorpid Claw
@@ -1491,7 +1501,11 @@ GoldScout-export 7^zysaiy0o2duf^32
 @q^16728^3:4:0
 @q^16733^3:4:0
 @q^16736^3:4:0
+@q^17306^1:12:0
+@q^17326^1:12:0
+@q^17327^1:12:0
 @q^17414^3:9:0
+@q^17422^1:12:0
 @q^17683^3:9:0
 @q^17761^1:12:0
 @q^17763^1:12:0
@@ -1535,6 +1549,7 @@ GoldScout-export 7^zysaiy0o2duf^32
 @q^18784^3:12:0
 @q^18945^1:12:0
 @q^19234^3:12:0
+@q^19278^3:12:0
 @q^19441^1:7:1
 @q^19933^1:15:0
 @q^19934^0:15:0
@@ -1654,6 +1669,7 @@ GoldScout-export 7^zysaiy0o2duf^32
 @m^1449^Un'Goro Crater
 @m^1451^Silithus
 @m^1452^Winterspring
+@m^1459^Alterac Valley
 @m^2482^Mount Hyjal
 @c^118^
 @c^724^
