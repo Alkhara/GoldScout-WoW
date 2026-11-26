@@ -1,4 +1,4 @@
-GoldScout-export 7^r0s56z8zsuil^25
+GoldScout-export 7^r0s56z8zsuil^26
 587^2^3^33^34^1434^0.3230^0.1711^2^Bloodscalp Warrior^1520:1:1,3042:1:1,4306:1:1,213544:1:1^16883:1:1
 588^5^4^34^35^1434^0.2541^0.1067^5^Bloodscalp Scout^1519:2:2,4306:2:3^4544:1:1,16883:1:1
 595^2^3^34^35^1434^0.2523^0.1282^2^Bloodscalp Hunter^1519:1:1,4306:1:2^16883:1:1
@@ -160,10 +160,16 @@ GoldScout-export 7^r0s56z8zsuil^25
 12922^1^0^32^38^1417^0.3781^0.4110^1^Imp Minion^^
 13019^1^0^33^33^1443^0.5526^0.3013^1^Burning Blade Seer^4306:1:2,15750:1:1^
 253272^3^0^42^43^2652^0.3418^0.2076^3^Magram Necromancer^4306:1:1,14775:1:1,260347:1:1^
+254560^11^3^39^40^2548^0.4651^0.4842^11^Twilight Shadowmancer^4041:1:1,4306:2:5,4338:1:1,266425:6:9,267073:4:6^
 255560^1^1^40^41^1443^0.6792^0.7879^1^Magram Guardian^3805:1:1,4306:1:2^
 255899^1^0^37^37^2548^0.7013^0.6548^1^Murloc Tideskimmer^^
+256798^11^6^37^38^2548^0.4720^0.4738^11^Twilight Neophyte^266425:5:10,266427:1:1,267073:2:2^3771:1:1,4544:1:1
+256952^16^7^39^40^2548^0.4852^0.4761^16^Twilight Raider^4306:5:9,4338:1:1,5431:1:1,213546:1:1,266148:4:4,266427:1:1,267073:4:6^5428:2:2
+257017^2^0^38^38^2548^0.4798^0.4662^2^Twilight Worg^4582:1:1^
 260429^1^0^39^39^1434^0.4335^0.2039^1^Venture Co. Agent^^
+262037^2^0^37^38^2548^0.6018^0.8568^2^Roosting Duskbat^4732:1:1^
 266357^1^0^36^36^1416^0.6231^0.4421^1^Barton^4306:1:2^
+272228^3^0^36^37^2548^0.5496^0.7455^3^Harvest Sentry^4306:3:3,5567:1:1^
 @i^729^Stringy Vulture Meat
 @i^770^Pointy Crocolisk Tooth
 @i^865^Leaden Mace of the Bandit
@@ -246,6 +252,7 @@ GoldScout-export 7^r0s56z8zsuil^25
 @i^4037^Silver-thread Pants
 @i^4039^Nightsky Cowl
 @i^4040^Nightsky Gloves
+@i^4041^Aurora Cowl
 @i^4052^Insignia Cap
 @i^4053^Large River Crocolisk Skin
 @i^4059^Glyphed Bracers
@@ -275,6 +282,7 @@ GoldScout-export 7^r0s56z8zsuil^25
 @i^4614^Pendant of Myzrael
 @i^4634^Iron Lockbox
 @i^4718^Nightsky Mantle
+@i^4732^Glyphed Cloak
 @i^4791^Enchanted Water
 @i^5113^Mark of the Syndicate
 @i^5114^Severed Talon
@@ -284,6 +292,7 @@ GoldScout-export 7^r0s56z8zsuil^25
 @i^5136^Torn Furry Ear
 @i^5137^Bright Eyeball
 @i^5427^Crude Pocket Watch
+@i^5428^An Exotic Cookbook
 @i^5429^A Pretty Rock
 @i^5431^Empty Hip Flask
 @i^5432^Hickory Pipe
@@ -405,6 +414,7 @@ GoldScout-export 7^r0s56z8zsuil^25
 @i^213543^Scroll: UPDOG
 @i^213544^Scroll: TOPAZ YORAK
 @i^213545^Scroll: PEATCHY ATTAX
+@i^213546^Scroll: SHOOBEEDOOP
 @i^215374^Ancestral Sword
 @i^216616^Compound Cage Key
 @i^248690^Waylaid Crate: Earthly Expert Herbs
@@ -419,6 +429,10 @@ GoldScout-export 7^r0s56z8zsuil^25
 @i^258530^Lucky Lure
 @i^260347^Tattered Journal
 @i^262889^Sealed Expert's Writ
+@i^266148^Farmers' Mementos
+@i^266425^Twilight Charm
+@i^266427^Field Marshal's Log
+@i^267073^Twilight Finger Bone
 @i^270333^Voodoo-Infused Artifact
 @i^274599^Oathbound Bracers
 @i^274610^Ritual-Binder's Gloves
@@ -508,6 +522,7 @@ GoldScout-export 7^r0s56z8zsuil^25
 @q^4037^2:4:0
 @q^4039^2:4:0
 @q^4040^2:4:0
+@q^4041^2:4:0
 @q^4052^2:4:0
 @q^4053^1:12:0
 @q^4059^2:4:0
@@ -537,6 +552,7 @@ GoldScout-export 7^r0s56z8zsuil^25
 @q^4614^2:4:0
 @q^4634^2:15:0
 @q^4718^2:4:0
+@q^4732^2:4:0
 @q^4791^1:0:0
 @q^5113^0:15:0
 @q^5114^0:15:0
@@ -546,6 +562,7 @@ GoldScout-export 7^r0s56z8zsuil^25
 @q^5136^0:15:0
 @q^5137^0:15:0
 @q^5427^0:15:0
+@q^5428^0:15:0
 @q^5429^0:15:0
 @q^5431^0:15:0
 @q^5432^0:15:0
@@ -667,6 +684,7 @@ GoldScout-export 7^r0s56z8zsuil^25
 @q^213543^1:0:0
 @q^213544^1:0:0
 @q^213545^1:0:0
+@q^213546^1:0:0
 @q^215374^1:2:0
 @q^216616^1:12:0
 @q^248690^1:0:1
@@ -681,6 +699,10 @@ GoldScout-export 7^r0s56z8zsuil^25
 @q^258530^1:12:0
 @q^260347^1:15:0
 @q^262889^3:0:0
+@q^266148^1:12:0
+@q^266425^1:12:0
+@q^266427^1:12:0
+@q^267073^1:12:0
 @q^270333^1:12:0
 @q^274599^3:4:0
 @q^274610^3:4:0
@@ -1648,10 +1670,16 @@ GoldScout-export 7^r0s56z8zsuil^25
 @a^12922^167:1
 @a^13019^131:1
 @a^253272^46:1,67:1,106:1
+@a^254560^188:1,189:8,209:2
 @a^255560^313:1
 @a^255899^274:1
+@a^256798^170:1,189:8,209:2
+@a^256952^170:3,189:9,190:2,209:1,230:1
+@a^257017^188:1,190:1
 @a^260429^88:1
+@a^262037^352:2
 @a^266357^172:1
+@a^272228^290:1,291:1,310:1
 @t^587^2:104
 @t^588^4:34
 @t^595^1:1
@@ -1684,6 +1712,12 @@ GoldScout-export 7^r0s56z8zsuil^25
 @t^4109^14:943
 @t^4150^3:122
 @t^5477^1:1
+@t^254560^2:153
+@t^256798^1:18
+@t^256952^5:296
+@t^257017^1:52
+@t^262037^1:42
+@t^272228^2:120
 @f^1416^0^49^126^1710:1:1,6308:15:15,8365:33:33^255:49
 @f^1417^0^376^150^1710:1:1,6308:132:132,6310:1:1,8365:242:242^205:376
 @f^1424^0^115^79^3820:1:3,6289:16:16,6308:48:48,21071:44:44,21113:3:3,21114:3:5^133:11,153:15,172:23,191:32,211:11,231:23
