@@ -1,4 +1,4 @@
-GoldScout-export 9^pa62od4reyg1^10
+GoldScout-export 9^pa62od4reyg1^11
 1908^1^0^19^20^1421^0.6779^0.4573^1^Oráculo Anca Vil^3376:1:1^
 2241^1^0^34^34^1416^0.4607^0.8154^1^Ladrón de la Hermandad^3601:1:1^
 2248^74^0^30^31^1424^0.4604^0.3142^74^Yeti de las cuevas^1708:5:5,1830:1:1,2290:1:1,3771:8:8,3796:1:1,5214:1:1,9867:1:1,10408:1:1,15284:1:1,248686:1:1,248688:1:1^
@@ -26,7 +26,7 @@ GoldScout-export 9^pa62od4reyg1^10
 2449^1^0^25^25^1424^0.3261^0.4130^1^Ciudadano Wilkes^2592:1:1^
 2503^1^0^27^27^1424^0.2987^0.5423^1^Supervisor de Trabalomas^^
 2552^1^0^30^31^1417^0.3173^0.4634^1^Trol Secacorteza^^
-2559^1^0^30^31^1417^0.2822^0.3790^1^Zancudo de las Tierras Altas^4461:1:1^
+2559^2^0^30^31^1417^0.3627^0.4898^2^Zancudo de las Tierras Altas^4461:1:1,12184:1:1^
 2560^1^0^34^34^1417^0.3798^0.3912^1^Descarnador de las Tierras Altas^3685:1:1^
 2562^1^0^32^33^1417^0.3621^0.4441^1^Ogro Puño de Roca^3783:1:1^
 2564^6^0^33^34^1417^0.3410^0.4513^6^Déspota Puño de Roca^2592:2:6,3385:1:1,4306:2:3,213422:1:1,248692:1:1^
@@ -102,6 +102,7 @@ GoldScout-export 9^pa62od4reyg1^10
 @i^8746^Capucha entrelazada
 @i^9867^Capa de renegado del falcón
 @i^10408^Yelmo a rayas de fuerza
+@i^12184^Carne de raptor
 @i^15284^Arco de batalla largo
 @i^17056^Pluma ligera
 @i^211855^Pergamino: STHENIC LUNATE
@@ -169,6 +170,7 @@ GoldScout-export 9^pa62od4reyg1^10
 @q^8746^0:4:0
 @q^9867^2:4:0
 @q^10408^2:4:0
+@q^12184^1:7:1
 @q^15284^2:2:0
 @q^17056^1:15:1
 @q^211855^1:0:0
@@ -768,7 +770,7 @@ GoldScout-export 9^pa62od4reyg1^10
 @a^2449^166:1
 @a^2503^205:1
 @a^2552^186:1
-@a^2559^145:1
+@a^2559^145:1,248:1
 @a^2560^147:1
 @a^2562^167:1
 @a^2564^167:2,186:4

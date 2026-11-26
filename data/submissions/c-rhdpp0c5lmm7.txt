@@ -1,8 +1,8 @@
-GoldScout-export 9^rhdpp0c5lmm7^4
+GoldScout-export 9^rhdpp0c5lmm7^5
 1853^1^0^0^0^0^0.0000^0.0000^0^^12843:1:1,13398:1:1,16693:1:1^
-7156^23^0^53^54^1448^0.6209^0.0777^23^Protecteur Mort-bois^4425:1:1,8953:1:1,13443:1:1,13446:2:2,14047:3:3,21377:10:10,248695:1:1^
-7157^12^0^54^55^1448^0.6222^0.0815^12^Vengeur Mort-bois^8766:1:1,8953:1:1,14047:4:5,21377:3:3^
-7158^17^0^53^54^1448^0.6232^0.0887^17^Chaman Mort-bois^13824:1:1,14047:2:2,14296:1:1,20741:1:1,21377:2:2^
+7156^53^0^53^54^1448^0.6226^0.0805^53^Protecteur Mort-bois^4425:1:1,8953:2:2,13443:1:1,13446:2:2,14047:7:9,14454:1:1,21377:21:21,248695:1:1^
+7157^47^0^54^55^1448^0.6211^0.0844^47^Vengeur Mort-bois^8766:2:2,8953:4:4,13130:1:1,13446:1:1,13816:1:1,14047:13:20,14449:1:1,21377:15:15,248696:1:1^
+7158^47^0^53^54^1448^0.6214^0.0821^47^Chaman Mort-bois^4426:1:1,13446:1:1,13824:2:2,14047:11:15,14296:1:1,14302:1:1,20741:1:1,21377:15:15,248695:1:1^
 7438^1^0^57^58^1452^0.6701^0.3740^1^Ursa Tombe-hiver^12820:1:1^
 7439^5^0^56^57^1452^0.6787^0.3731^5^Chaman Tombe-hiver^14047:1:3^
 7440^7^0^55^56^1452^0.5303^0.3720^7^Protecteur Tombe-hiver^12820:1:1,14047:3:3,20742:1:1,248711:1:1,281017:1:1^
@@ -16,7 +16,7 @@ GoldScout-export 9^rhdpp0c5lmm7^4
 8548^4^0^56^57^1423^0.5234^0.5980^4^Vil tuteur^12840:1:1,14047:1:3^
 8551^2^0^55^56^1423^0.5326^0.6043^2^Invocateur des ténèbres^12840:1:1^
 8598^1^0^58^58^1423^0.4157^0.1795^1^Chien pestiféré frénétique^4583:1:1,12203:1:1^
-9462^1^0^55^55^1448^0.6266^0.0778^1^Chef de clan Saignegueule^14047:1:1^
+9462^4^0^55^55^1448^0.6264^0.0779^4^Chef de clan Saignegueule^14047:3:4,248695:1:1^
 10382^1^0^0^0^0^0.0000^0.0000^0^^12841:1:1,13446:1:1,14047:1:2^
 10391^3^0^0^0^0^0.0000^0.0000^0^^12840:2:2,14047:1:3^
 10394^1^0^0^0^0^0.0000^0.0000^0^^14047:1:3^
@@ -65,7 +65,7 @@ GoldScout-export 9^rhdpp0c5lmm7^4
 10698^6^0^55^56^1423^0.5280^0.5993^6^Zombie invoqué^^
 10738^1^0^59^59^1452^0.6916^0.3828^1^Grand chef Tombe-hiver^12820:1:1,12842:1:1^
 10901^1^0^0^0^0^0.0000^0.0000^0^^20520:1:1^
-10916^3^0^57^57^1448^0.6047^0.0588^2^Messager Tombe-hiver^3998:1:1,21383:2:2^
+10916^7^0^57^57^1448^0.6041^0.0609^6^Messager Tombe-hiver^3998:1:1,21383:5:5^
 11257^1^0^0^0^0^0.0000^0.0000^0^^^
 11261^1^0^0^0^0^0.0000^0.0000^0^^14638:1:1^
 11441^3^0^0^0^0^0.0000^0.0000^0^^5759:1:1,14047:2:6^
@@ -95,6 +95,7 @@ GoldScout-export 9^rhdpp0c5lmm7^4
 13036^2^0^0^0^0^0.0000^0.0000^0^^15185:1:1,248713:1:1^
 13136^1^0^58^58^1451^0.6350^0.5507^1^Bourdon de la Ruche'Ashi^6302:1:1^
 13160^1^0^0^0^0^0.0000^0.0000^0^^6302:1:1^
+13448^1^0^0^0^1459^0.0000^0.0000^0^^17423:1:12^
 14321^1^0^0^0^0^0.0000^0.0000^0^^18450:1:1,18640:1:1^
 14323^1^0^0^0^0^0.0000^0.0000^0^^18250:1:1,18459:1:1^
 14325^1^0^0^0^0^0.0000^0.0000^0^^18502:1:1^
@@ -110,6 +111,7 @@ GoldScout-export 9^rhdpp0c5lmm7^4
 @i^3998^Protège-épaules en écailles laminées
 @i^4337^Soie d'araignée épaisse
 @i^4425^Parchemin d'Agilité III
+@i^4426^Parchemin de force III
 @i^4583^Epaisse crinière
 @i^4584^Grande patte trophée
 @i^4585^Mandibule d'araignée visqueuse
@@ -136,17 +138,22 @@ GoldScout-export 9^rhdpp0c5lmm7^4
 @i^12841^Pierre du Fléau des envahisseurs
 @i^12842^Journal mal écrit
 @i^12843^Pierre du Fléau des corrupteurs
+@i^13130^Jambières de Windrunner
 @i^13340^Cape du baron noir
 @i^13398^Bottes du Hurleur
 @i^13443^Potion de mana excellente
 @i^13446^Potion de soins majeure
 @i^13526^Ceinturon ardent
 @i^13725^Sac des horreurs de Krastinov
+@i^13816^Epée longue fine
 @i^13823^Bâton de guerre massacreur
 @i^13824^Arc long recourbé
 @i^13873^Clé de la Chambre des visions
 @i^14047^Etoffe runique
 @i^14296^Espauliers arachnéens d'endurance
+@i^14302^Gants d'ossomancien de sorcellerie
+@i^14449^Couronne de bien-né
+@i^14454^Corde de bien-né
 @i^14487^Marteau Os-transis
 @i^14525^Gantelets de l'étreinte osseuse
 @i^14528^Targe de Cliquethorax
@@ -162,6 +169,7 @@ GoldScout-export 9^rhdpp0c5lmm7^4
 @i^16701^Mantelet de Brume-funeste
 @i^16710^Brassards Sombreruse
 @i^16732^Jambières de vaillance
+@i^17423^Cristal de tempête
 @i^18250^Clé des menottes gordok
 @i^18285^Eclat de mana cristallisé
 @i^18286^Fragment de mana condensé
@@ -193,6 +201,7 @@ GoldScout-export 9^rhdpp0c5lmm7^4
 @i^21383^Perles d'esprit tombe-hiver
 @i^22410^Gantelets d'adresse
 @i^248695^Caisse détournée : plantes terreuses d'artisan
+@i^248696^Caisse détournée : plantes à fleurs d'artisan
 @i^248697^Caisse détournée : minerai d'artisan
 @i^248698^Caisse détournée : textiles d'artisan
 @i^248711^Caisse détournée : étoffes d'artisan
@@ -208,6 +217,7 @@ GoldScout-export 9^rhdpp0c5lmm7^4
 @q^3998^0:4:0
 @q^4337^1:7:1
 @q^4425^1:0:0
+@q^4426^1:0:0
 @q^4583^0:15:0
 @q^4584^0:15:0
 @q^4585^0:15:0
@@ -234,17 +244,22 @@ GoldScout-export 9^rhdpp0c5lmm7^4
 @q^12841^1:12:0
 @q^12842^1:12:0
 @q^12843^2:12:0
+@q^13130^3:4:0
 @q^13340^3:4:0
 @q^13398^3:4:0
 @q^13443^1:0:0
 @q^13446^1:0:0
 @q^13526^3:4:0
 @q^13725^1:12:0
+@q^13816^0:2:0
 @q^13823^0:2:0
 @q^13824^0:2:0
 @q^13873^1:13:0
 @q^14047^1:7:1
 @q^14296^2:4:0
+@q^14302^2:4:0
+@q^14449^2:4:0
+@q^14454^2:4:0
 @q^14487^3:2:0
 @q^14525^3:4:0
 @q^14528^3:4:0
@@ -260,6 +275,7 @@ GoldScout-export 9^rhdpp0c5lmm7^4
 @q^16701^3:4:0
 @q^16710^3:4:0
 @q^16732^3:4:0
+@q^17423^1:12:0
 @q^18250^2:15:0
 @q^18285^0:15:0
 @q^18286^0:15:0
@@ -291,6 +307,7 @@ GoldScout-export 9^rhdpp0c5lmm7^4
 @q^21383^1:12:0
 @q^22410^3:4:0
 @q^248695^1:0:1
+@q^248696^1:0:1
 @q^248697^1:0:1
 @q^248698^1:0:1
 @q^248711^2:0:1
@@ -304,6 +321,7 @@ GoldScout-export 9^rhdpp0c5lmm7^4
 @m^1448^Gangrebois
 @m^1451^Silithus
 @m^1452^Berceau-de-l'Hiver
+@m^1459^Vallée d'Alterac
 @m^2482^Mont Hyjal
 @c^2568^
 @c^2569^
@@ -857,9 +875,9 @@ GoldScout-export 9^rhdpp0c5lmm7^4
 @c^279976^
 @c^279985^
 @c^279987^
-@a^7156^32:19,52:4
-@a^7157^32:10,52:2
-@a^7158^32:11,52:6
+@a^7156^32:43,52:10
+@a^7157^32:37,52:10
+@a^7158^32:37,52:10
 @a^7438^153:1
 @a^7439^153:5
 @a^7440^133:1,146:2,153:3,167:1
@@ -873,14 +891,17 @@ GoldScout-export 9^rhdpp0c5lmm7^4
 @a^8548^230:2,250:2
 @a^8551^250:2
 @a^8598^68:1
-@a^9462^32:1
+@a^9462^32:4
 @a^10698^230:4,250:2
 @a^10738^153:1
-@a^10916^32:2
+@a^10916^32:6
 @a^12178^232:1
 @a^13136^232:1
 @a^249229^128:1,129:1,130:6,131:2,149:1,150:1,171:2
 @a^249230^111:1,129:2,130:2,131:1,149:2,150:2,169:1,170:4,171:2,172:1,191:1
 @a^252457^170:1
 @a^263394^131:1
+@t^7156^2:154
+@t^7157^3:130
+@t^7158^3:161
 @l^0^frFR

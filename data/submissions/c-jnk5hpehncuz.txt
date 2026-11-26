@@ -1,4 +1,4 @@
-GoldScout-export 9^jnk5hpehncuz^17
+GoldScout-export 9^jnk5hpehncuz^18
 30^1^0^5^5^1429^0.3276^0.5788^1^Forest Spider^1476:1:1^
 36^6^0^11^12^1436^0.5600^0.3488^6^Harvest Golem^732:2:2,814:2:2,1274:2:2,2778:1:1,9742:1:1,255007:2:2,255010:1:1^
 94^5^0^5^6^1429^0.3126^0.6513^5^Defias Cutpurse^118:1:1,1368:1:1,2589:1:1,3013:1:1^
@@ -67,10 +67,12 @@ GoldScout-export 9^jnk5hpehncuz^17
 1180^6^0^19^20^1432^0.7894^0.1553^6^Mo'grosh Brute^1739:1:1,1814:1:1,2287:1:1,2592:2:4,2780:1:1,6562:1:1^
 1181^5^0^18^19^1432^0.7015^0.2520^5^Mo'grosh Shaman^1816:1:1,2589:1:1,2592:3:5,2607:1:1,2764:1:1,211853:2:2^
 1183^3^0^19^20^1432^0.7614^0.1605^3^Mo'grosh Mystic^2216:1:1,2589:1:2^
-1184^2^0^13^14^1432^0.7148^0.5214^2^Cliff Lurker^3167:1:1,5465:2:2^
+1184^4^0^13^14^1432^0.6418^0.5903^4^Cliff Lurker^1081:1:1,3167:2:2,3174:1:1,5465:4:6^
 1188^2^0^13^14^1432^0.5481^0.5285^2^Grizzled Black Bear^3170:1:1,211786:1:1^
-1189^2^0^16^17^1432^0.6843^0.4110^2^Black Bear Patriarch^1210:1:1,3169:2:2,3173:2:2,11406:1:1^
+1189^3^0^16^17^1432^0.5805^0.4839^3^Black Bear Patriarch^1210:1:1,3169:2:2,3170:1:1,3173:3:3,11406:1:1^
+1195^3^0^10^11^1432^0.3469^0.5610^3^Forest Lurker^1081:1:1,3167:1:1,3174:1:1,5465:2:3,6506:1:1^
 1210^1^0^22^22^1432^0.7949^0.1564^1^Chok'sul^2561:1:1^
+1225^1^0^20^20^1432^0.3776^0.6277^1^Ol' Sooty^2713:1:1,2940:1:1,3170:1:1^
 1236^5^0^12^13^1436^0.4533^0.2088^5^Kobold Digger^858:1:1,2835:1:4,4537:1:1^
 1393^4^0^19^20^1432^0.6966^0.6296^4^Berserk Trogg^2589:1:1,2636:4:4^
 1426^9^0^14^15^1436^0.3013^0.4695^9^Riverpaw Miner^2287:1:1,2589:2:3,2770:1:4^
@@ -127,6 +129,7 @@ GoldScout-export 9^jnk5hpehncuz^17
 @i^858^Lesser Healing Potion
 @i^954^Scroll of Strength
 @i^955^Scroll of Intellect
+@i^1081^Crisp Spider Meat
 @i^1179^Ice Cold Milk
 @i^1180^Scroll of Stamina
 @i^1190^Overseer's Cloak
@@ -192,6 +195,7 @@ GoldScout-export 9^jnk5hpehncuz^17
 @i^2672^Stringy Wolf Meat
 @i^2673^Coyote Meat
 @i^2677^Boar Ribs
+@i^2713^Ol' Sooty's Head
 @i^2764^Small Dagger
 @i^2770^Copper Ore
 @i^2778^Cheap Blunderbuss
@@ -204,6 +208,7 @@ GoldScout-export 9^jnk5hpehncuz^17
 @i^2924^Crocolisk Meat
 @i^2925^Crocolisk Skin
 @i^2939^Crocolisk Tear
+@i^2940^Bloody Bear Paw
 @i^2961^Burnt Leather Vest
 @i^2970^Spellbinder Pants
 @i^2972^Spellbinder Gloves
@@ -217,6 +222,7 @@ GoldScout-export 9^jnk5hpehncuz^17
 @i^3171^Broken Boar Tusk
 @i^3172^Boar Intestines
 @i^3173^Bear Meat
+@i^3174^Spider Ichor
 @i^3180^Flecked Raptor Scale
 @i^3181^Partially Digested Meat
 @i^3205^Inscribed Leather Bracers
@@ -269,6 +275,7 @@ GoldScout-export 9^jnk5hpehncuz^17
 @i^6445^Brittle Molting
 @i^6449^Glowing Lizardscale Cloak
 @i^6470^Deviate Scale
+@i^6506^Infantry Boots
 @i^6510^Infantry Gauntlets
 @i^6517^Pioneer Belt
 @i^6539^Willow Belt of the Eagle
@@ -358,6 +365,7 @@ GoldScout-export 9^jnk5hpehncuz^17
 @q^858^1:0:0
 @q^954^1:0:0
 @q^955^1:0:0
+@q^1081^1:7:1
 @q^1179^1:0:0
 @q^1180^1:0:0
 @q^1190^2:4:0
@@ -423,6 +431,7 @@ GoldScout-export 9^jnk5hpehncuz^17
 @q^2672^1:7:1
 @q^2673^1:7:1
 @q^2677^1:7:1
+@q^2713^1:12:0
 @q^2764^0:2:0
 @q^2770^1:7:1
 @q^2778^0:2:0
@@ -435,6 +444,7 @@ GoldScout-export 9^jnk5hpehncuz^17
 @q^2924^1:7:1
 @q^2925^1:12:0
 @q^2939^1:12:0
+@q^2940^0:15:0
 @q^2961^2:4:0
 @q^2970^2:4:0
 @q^2972^1:4:0
@@ -448,6 +458,7 @@ GoldScout-export 9^jnk5hpehncuz^17
 @q^3171^0:15:0
 @q^3172^1:7:1
 @q^3173^1:7:1
+@q^3174^1:7:1
 @q^3180^0:15:0
 @q^3181^0:15:0
 @q^3205^2:4:0
@@ -500,6 +511,7 @@ GoldScout-export 9^jnk5hpehncuz^17
 @q^6445^0:15:0
 @q^6449^3:4:0
 @q^6470^1:7:1
+@q^6506^1:4:0
 @q^6510^1:4:0
 @q^6517^1:4:0
 @q^6539^2:4:0
@@ -1353,10 +1365,12 @@ GoldScout-export 9^jnk5hpehncuz^17
 @a^1180^75:6
 @a^1181^93:1,94:1,113:1,114:1,133:1
 @a^1183^75:3
-@a^1184^214:2
+@a^1184^214:2,271:2
 @a^1188^213:1,228:1
-@a^1189^153:1,193:1
+@a^1189^153:1,193:1,247:1
+@a^1195^206:1,207:1,246:1
 @a^1210^75:1
+@a^1225^247:1
 @a^1236^69:2,88:3
 @a^1393^253:2,254:2
 @a^1426^185:3,186:5,205:1
@@ -1369,6 +1383,10 @@ GoldScout-export 9^jnk5hpehncuz^17
 @a^3655^230:1
 @a^4026^267:1
 @a^270693^192:1
+@t^1184^2:328
+@t^1189^1:73
+@t^1195^2:127
+@t^1225^1:91
 @f^1432^0^14^150^20708:2:2,20709:2:6,21071:10:10^192:2,212:5,230:1,251:6
 @f^1436^0^2^150^6358:2:2^285:2
 @f^1439^0^46^150^6303:10:10,6358:4:4,6361:18:18,12238:14:14^166:35,167:11

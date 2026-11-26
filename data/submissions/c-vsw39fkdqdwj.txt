@@ -1,4 +1,4 @@
-GoldScout-export 9^vsw39fkdqdwj^56
+GoldScout-export 9^vsw39fkdqdwj^57
 3^14^0^24^25^1431^0.2312^0.3751^14^Flesh Eater^885:1:1,887:2:2,1129:4:4,2589:1:2,2592:3:4,3385:1:1,4606:1:1,6530:3:3^
 30^1^0^6^6^1429^0.4094^0.7211^1^Forest Spider^^
 36^12^0^11^12^1436^0.5143^0.3369^12^Harvest Golem^732:2:2,814:3:3,816:1:1,1274:4:4,1735:1:1,2975:1:1,4359:1:1,255007:7:7,255010:1:1^
@@ -203,6 +203,8 @@ GoldScout-export 9^vsw39fkdqdwj^56
 2091^1^0^32^32^1437^0.5379^0.5311^1^Chieftain Nek'rosh^3625:1:1^
 2240^2^0^32^33^1416^0.5696^0.6709^2^Syndicate Footpad^4306:1:2,248691:1:1^
 2241^3^0^33^34^1416^0.5872^0.6742^3^Syndicate Thief^1707:1:1,4306:1:2,5113:1:1^
+2248^17^0^30^31^1424^0.4398^0.3004^17^Cave Yeti^1784:1:1,3385:1:1,3720:3:3,3771:2:2,3778:1:1,3795:1:1,5637:1:1^
+2249^12^0^31^32^1424^0.4348^0.2886^12^Ferocious Yeti^3720:5:5,3771:1:1,248689:1:1^
 2319^1^0^34^35^1416^0.5775^0.6837^1^Syndicate Wizard^4306:1:1^
 2354^1^0^23^23^1424^0.5641^0.4343^1^Vicious Gray Bear^2940:1:1,3730:1:1^
 2356^2^0^25^25^1424^0.5812^0.6294^2^Elder Gray Bear^3730:1:1,11406:1:1,11407:1:1^
@@ -433,6 +435,7 @@ GoldScout-export 9^vsw39fkdqdwj^56
 @i^1768^Canvas Pants
 @i^1772^Brocade Shoes
 @i^1777^Brocade Shoulderpads
+@i^1784^Cross-stitched Pants
 @i^1785^Cross-stitched Shoulderpads
 @i^1787^Patched Leather Belt
 @i^1801^Rawhide Shoulderpads
@@ -556,14 +559,17 @@ GoldScout-export 9^vsw39fkdqdwj^56
 @i^3685^Raptor Egg
 @i^3712^Turtle Meat
 @i^3716^Murloc Head
+@i^3720^Yeti Fur
 @i^3730^Big Bear Meat
 @i^3731^Lion Meat
 @i^3740^Decapitating Sword of Fire Protection
 @i^3770^Mutton Chop
 @i^3771^Wild Hog Shank
+@i^3778^Taut Compound Bow
 @i^3783^Light Scimitar
 @i^3784^Metal Stave
 @i^3786^Shiny Dirk
+@i^3795^Interlaced Cloak
 @i^3796^Interlaced Gloves
 @i^3797^Interlaced Pants
 @i^3798^Interlaced Shoulderpads
@@ -734,6 +740,7 @@ GoldScout-export 9^vsw39fkdqdwj^56
 @i^248686^Waylaid Crate: Journeyman Herbs
 @i^248687^Waylaid Crate: Journeyman Ore
 @i^248688^Waylaid Crate: Journeyman Textiles
+@i^248689^Waylaid Crate: Journeyman Curiosities
 @i^248690^Waylaid Crate: Earthly Expert Herbs
 @i^248691^Waylaid Crate: Flowering Expert Herbs
 @i^248694^Waylaid Crate: Expert Curiosities
@@ -897,6 +904,7 @@ GoldScout-export 9^vsw39fkdqdwj^56
 @q^1768^0:4:0
 @q^1772^0:4:0
 @q^1777^0:4:0
+@q^1784^0:4:0
 @q^1785^0:4:0
 @q^1787^0:4:0
 @q^1801^0:4:0
@@ -1020,14 +1028,17 @@ GoldScout-export 9^vsw39fkdqdwj^56
 @q^3685^1:7:1
 @q^3712^1:7:1
 @q^3716^1:12:0
+@q^3720^1:12:0
 @q^3730^1:7:1
 @q^3731^1:7:1
 @q^3740^2:2:0
 @q^3770^1:0:0
 @q^3771^1:0:0
+@q^3778^0:2:0
 @q^3783^0:2:0
 @q^3784^0:2:0
 @q^3786^0:2:0
+@q^3795^0:4:0
 @q^3796^0:4:0
 @q^3797^0:4:0
 @q^3798^0:4:0
@@ -1198,6 +1209,7 @@ GoldScout-export 9^vsw39fkdqdwj^56
 @q^248686^1:0:1
 @q^248687^1:0:1
 @q^248688^1:0:1
+@q^248689^1:0:1
 @q^248690^1:0:1
 @q^248691^1:0:1
 @q^248694^1:0:1
@@ -3746,6 +3758,8 @@ GoldScout-export 9^vsw39fkdqdwj^56
 @a^2091^210:1
 @a^2240^271:2
 @a^2241^271:3
+@a^2248^108:8,109:1,128:6,129:2
+@a^2249^108:9,128:3
 @a^2319^271:1
 @a^2354^171:1
 @a^2356^235:1,267:1
@@ -3840,6 +3854,8 @@ GoldScout-export 9^vsw39fkdqdwj^56
 @a^276180^215:1
 @a^276189^330:1
 @a^277645^285:1
+@t^2248^16:971
+@t^2249^12:1113
 @t^2356^1:2
 @t^2368^4:103
 @t^2369^10:453
