@@ -52,7 +52,7 @@
 // player's export passes 60 KB, the share form's limit, which only GitHub issues need.
 const MAX_BYTES = 250000;
 const MAX_LINES = 1 + 1500 + 20000; // header, mobs, @ lines (names, item details, crafted items, areas, fishing)
-const HEADER = /^GoldScout-export [2-7]\^([a-z0-9]{12})\^([1-9][0-9]{0,8})$/;
+const HEADER = /^GoldScout-export [2-8]\^([a-z0-9]{12})\^([1-9][0-9]{0,8})$/;
 // @t (version 7): kill times, @t^npcID^kills:seconds.
 const EXTRA_LINE = /^@[imcqlat]\^[0-9]{1,9}\^[^^]*$/;
 // Fishing: @f^uiMapID^spot^catches^skill^items^cells (tools/submission.py checks the rest).

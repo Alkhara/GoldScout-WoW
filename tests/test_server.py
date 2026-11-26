@@ -189,7 +189,7 @@ class ServerTests(unittest.TestCase):
         status, reply = raw("/v1/uploads", body, {"X-GoldScout-Terms": uploader.TERMS_VERSION,
                                                   "CF-Connecting-IP": fake_ip()}, "POST")
         self.assertEqual((status, reply.get("status")), (201, "registered"))
-        status, _ = raw("/v1/uploads", body.replace("export 6^", "export 8^"),
+        status, _ = raw("/v1/uploads", body.replace("export 6^", "export 9^"),
                         {"X-GoldScout-Terms": uploader.TERMS_VERSION, "CF-Connecting-IP": fake_ip()}, "POST")
         self.assertEqual(status, 400)
 
@@ -197,6 +197,14 @@ class ServerTests(unittest.TestCase):
         # Version 7: @t lines, how long a mob's kills took.
         mob = "1109^60^0^10^11^1436^0.5000^0.5000^60^Coyote^2673:24:24^"
         body = "GoldScout-export 7^%s^1\n%s\n@m^1436^Westfall\n@t^1109^40:2400\n" % (new_install(), mob)
+        status, reply = raw("/v1/uploads", body, {"X-GoldScout-Terms": uploader.TERMS_VERSION,
+                                                  "CF-Connecting-IP": fake_ip()}, "POST")
+        self.assertEqual((status, reply.get("status")), (201, "registered"))
+
+    def test_accepts_version_eight(self):
+        # Version 8: a rogue's dungeon mobs hold only what was recorded since the add-on started them over.
+        dungeon = "3812^40^12^19^20^291^0.0000^0.0000^0^Defias Miner^3010:7:7^16882:3:3"
+        body = "GoldScout-export 8^%s^1\n%s\n@m^291^The Deadmines\n" % (new_install(), dungeon)
         status, reply = raw("/v1/uploads", body, {"X-GoldScout-Terms": uploader.TERMS_VERSION,
                                                   "CF-Connecting-IP": fake_ip()}, "POST")
         self.assertEqual((status, reply.get("status")), (201, "registered"))
