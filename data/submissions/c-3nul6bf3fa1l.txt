@@ -1,4 +1,4 @@
-GoldScout-export 8^3nul6bf3fa1l^32
+GoldScout-export 8^3nul6bf3fa1l^33
 1765^1^0^10^10^1421^0.5881^0.0876^1^Worg^2672:1:1^
 1766^11^0^11^12^1421^0.5655^0.1113^11^Mottled Worg^2672:9:9,3164:3:3,3299:2:2^
 1768^3^0^13^14^1421^0.5614^0.2868^3^Vile Fin Tidehunter^1512:1:1,3258:1:1^
@@ -47,6 +47,8 @@ GoldScout-export 8^3nul6bf3fa1l^32
 3122^2^0^6^8^1411^0.6192^0.8574^2^Bloodtalon Taillasher^^
 3124^19^0^3^3^1411^0.4218^0.5969^19^Scorpid Worker^1366:1:1,1368:1:1,1374:1:1,2649:1:1,2654:1:1,3365:1:1,4862:10:10,4867:4:4,7099:6:6,7100:4:4,7101:5:5^
 3125^4^0^5^6^1411^0.5450^0.7203^4^Clattering Scorpid^5466:2:2^
+3130^7^0^9^10^1411^0.3932^0.2839^7^Thunder Lizard^4879:3:3,4880:1:1,275719:5:5^
+3131^3^0^10^11^1411^0.4298^0.2411^3^Lightning Hide^727:1:1,4879:3:3^
 3183^1^0^5^5^1411^0.4281^0.5333^1^Yarrog Baneshadow^4859:1:1^
 3205^2^0^10^10^1411^0.6655^0.8710^2^Zalazane^818:1:1,2589:1:1,4866:1:1^
 3206^8^0^8^9^1411^0.6730^0.8525^8^Voodoo Troll^117:1:1,1415:1:1,1433:1:1,2589:4:6,2642:1:1,211786:1:1^
@@ -377,6 +379,7 @@ GoldScout-export 8^3nul6bf3fa1l^32
 @i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
 @i^414^Dalaran Sharp
+@i^727^Notched Shortsword of Spirit
 @i^818^Tigerseye
 @i^828^Small Blue Pouch
 @i^1074^Hard Spider Leg Tip
@@ -482,6 +485,8 @@ GoldScout-export 8^3nul6bf3fa1l^32
 @i^4867^Broken Scorpid Leg
 @i^4873^Dry Hardened Barnacle
 @i^4874^Clean Fishbones
+@i^4879^Squashed Rabbit Carcass
+@i^4880^Broken Spear
 @i^4887^Intact Makrura Eye
 @i^4888^Crawler Mucus
 @i^4892^Durotar Tiger Fur
@@ -820,6 +825,7 @@ GoldScout-export 8^3nul6bf3fa1l^32
 @i^274151^Tender Nightsaber Haunch
 @i^274162^Venom-dripping Heart
 @i^274964^Mote of Unstable Magic
+@i^275719^Weathered Spine
 @i^276235^Seeping Slime Essence
 @i^276784^Charger's Lost Soul
 @i^276877^Brewmancer Nightcap
@@ -843,6 +849,7 @@ GoldScout-export 8^3nul6bf3fa1l^32
 @q^118^1:0:0
 @q^159^1:0:0
 @q^414^1:0:0
+@q^727^2:2:0
 @q^818^2:7:1
 @q^828^1:1:0
 @q^1074^0:15:0
@@ -948,6 +955,8 @@ GoldScout-export 8^3nul6bf3fa1l^32
 @q^4867^0:15:0
 @q^4873^0:15:0
 @q^4874^0:15:0
+@q^4879^0:15:0
+@q^4880^0:15:0
 @q^4887^1:12:0
 @q^4888^1:12:0
 @q^4892^1:12:0
@@ -1286,6 +1295,7 @@ GoldScout-export 8^3nul6bf3fa1l^32
 @q^274151^1:12:0
 @q^274162^1:12:0
 @q^274964^1:15:0
+@q^275719^1:12:0
 @q^276235^1:12:0
 @q^276784^1:12:0
 @q^276877^3:4:0
@@ -2803,6 +2813,8 @@ GoldScout-export 8^3nul6bf3fa1l^32
 @a^3122^331:1,352:1
 @a^3124^228:14,248:5
 @a^3125^290:2,291:2
+@a^3130^87:2,107:3,127:2
+@a^3131^88:3
 @a^3183^208:1
 @a^3205^353:2
 @a^3206^333:4,353:4
@@ -2879,6 +2891,8 @@ GoldScout-export 8^3nul6bf3fa1l^32
 @a^275174^194:2
 @a^276198^392:1
 @t^2648^6:651
+@t^3130^7:191
+@t^3131^2:39
 @t^8525^6:213
 @t^8534^1:251
 @t^8538^1:48
