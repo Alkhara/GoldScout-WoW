@@ -1,4 +1,4 @@
-GoldScout-export 7^so8qd0drun72^19
+GoldScout-export 7^so8qd0drun72^21
 36^4^0^11^12^1436^0.5669^0.3495^4^Gólem de la cosecha^814:1:1,1274:2:2,4359:1:1^
 95^7^0^11^12^1436^0.4474^0.2330^7^Contrabandista Defias^829:1:1,2589:4:8,3013:1:1^
 114^10^0^14^15^1436^0.4913^0.2967^10^Vigilante de la cosecha^814:2:2,1274:3:3,4359:1:1,4361:1:1,248684:1:1,255007:2:2,255010:2:2^
@@ -45,6 +45,11 @@ GoldScout-export 7^so8qd0drun72^19
 1731^13^0^0^0^0^0.0000^0.0000^0^^814:4:4,1179:1:1,1769:1:1,1815:1:1,1816:1:1,2287:2:2,2589:3:9,2592:1:2,3040:1:1,4361:1:1,6540:1:1,7363:1:1,248685:1:1^
 1732^11^0^0^0^0^0.0000^0.0000^0^^414:1:1,1179:1:1,1815:1:1,1951:1:1,2589:2:5,2592:1:3,7997:1:1^
 1763^1^0^0^0^0^0.0000^0.0000^0^^1156:1:1,2589:1:5^
+1783^58^0^50^51^1422^0.5023^0.7803^58^Despellejador esquelético^4425:1:1,7972:3:3,8948:2:2,12840:12:12,13443:1:1,13446:3:3,14047:13:22,248697:1:1^
+1784^14^0^51^52^1422^0.5442^0.7997^14^Hechicero esquelético^8948:1:1,12840:3:3,14047:7:8^
+1791^20^0^50^52^1422^0.5112^0.7786^20^Necrófago esclavizante^4425:1:1,6530:5:5,7972:1:1,8948:2:2,9296:1:1,12840:5:5,13446:1:1,14047:6:10^
+1794^2^0^54^55^1422^0.4869^0.6978^2^Necrófago desalmado^6530:1:1^
+1795^1^0^56^56^1422^0.4979^0.7644^1^Necrófago abrasador^^
 2336^1^0^16^16^1439^0.5654^0.2649^1^Fanático de la Facción Oscura^^
 2337^8^0^28^29^1439^0.5630^0.2583^8^Llamacío de la Facción Oscura^422:1:1,1205:1:1,2785:1:1,4306:1:1,211855:1:1^
 2529^8^0^0^0^0^0.0000^0.0000^0^^1753:1:1^
@@ -88,6 +93,8 @@ GoldScout-export 7^so8qd0drun72^19
 4418^2^0^0^0^0^0.0000^0.0000^0^^2589:1:5^
 4463^9^0^22^23^1433^0.2450^0.1118^9^Invocador Roca Negra^1824:1:1,2592:1:2,4306:2:2,209778:7:7^
 4467^5^0^46^47^1425^0.4797^0.6714^5^Veritas Vilrama^4338:1:2,4599:1:1,8151:1:1,9259:3:3,279225:1:1^
+4668^2^0^38^39^1443^0.5382^0.8011^2^Invocador Filo Ardiente^216956:1:1^
+4682^1^0^39^39^1443^0.5441^0.7850^1^Hermana infernal^4338:1:1^
 4802^2^0^20^21^1414^0.4380^0.3520^2^Sacerdote de las mareas Brazanegra^3376:1:1,5524:1:1^
 4805^3^0^0^0^0^0.0000^0.0000^0^^1778:1:1,5524:1:1,6995:1:1,17057:1:1^
 4807^1^0^0^0^0^0.0000^0.0000^0^^17057:1:1^
@@ -229,7 +236,7 @@ GoldScout-export 7^so8qd0drun72^19
 12242^1^0^0^0^0^0.0000^0.0000^0^^17764:1:1^
 12243^1^0^0^0^0^0.0000^0.0000^0^^17765:1:1^
 12258^1^0^0^0^0^0.0000^0.0000^0^^17748:1:1,251405:1:1^
-12922^5^0^22^23^1433^0.2320^0.1358^5^Esbirro Diablillo^^
+12922^7^0^0^0^1433^0.2320^0.1358^5^Esbirro Diablillo^^
 13141^3^0^0^0^0^0.0000^0.0000^0^^^
 13142^1^0^0^0^0^0.0000^0.0000^0^^^
 13282^1^0^0^0^0^0.0000^0.0000^0^^17702:1:1,17746:1:1^
@@ -446,6 +453,7 @@ GoldScout-export 7^so8qd0drun72^19
 @i^4419^Pergamino de Intelecto III
 @i^4421^Pergamino de Protección III
 @i^4424^Pergamino de Espíritu III
+@i^4425^Pergamino de Agilidad III
 @i^4542^Pan de maíz húmedo
 @i^4544^Pan con especias de Mulgore
 @i^4552^Trozo de piedra lisa
@@ -503,6 +511,7 @@ GoldScout-export 7^so8qd0drun72^19
 @i^6425^Faja Forjanegra
 @i^6431^Botas de cuero imperial
 @i^6438^Brazal elemental mate
+@i^6530^Reptadores nocturnos
 @i^6540^Pantalones de sauce del búho
 @i^6545^Armadura de soldado del águila
 @i^6561^Armadura acolchada de profeta
@@ -532,6 +541,7 @@ GoldScout-export 7^so8qd0drun72^19
 @i^7909^Aguamarina
 @i^7910^Rubí estrella
 @i^7912^Piedra sólida
+@i^7972^Icor de no-muerto
 @i^7973^Almeja de boca grande
 @i^7993^Diseño: estoque de mitril deslumbrante
 @i^7997^Máscara de Defias roja
@@ -556,6 +566,7 @@ GoldScout-export 7^so8qd0drun72^19
 @i^8747^Yelmo de cuero endurecido
 @i^8749^Sombrero de ganchillo
 @i^8831^Loto morado
+@i^8948^Bolete de rey seco
 @i^9234^Tiara de las profundidades
 @i^9238^Caparazón de escarabajo sin rajar
 @i^9241^Marra sacra
@@ -567,6 +578,7 @@ GoldScout-export 7^so8qd0drun72^19
 @i^9276^Baúl de pirata
 @i^9287^Guanteletes de placas de campo de la bestia
 @i^9289^Botas de placas de campo del caballero
+@i^9296^Receta: obsequio de Arthas
 @i^9389^Bufas Revelosh del bandido
 @i^9409^Brazales de Hierraya de agilidad
 @i^9413^El machacador de rocas
@@ -622,9 +634,13 @@ GoldScout-export 7^so8qd0drun72^19
 @i^12208^Carne de lobo tierna
 @i^12223^Ala de murciélago carnosa
 @i^12471^Bastón de Caminadesiertos
+@i^12840^Piedra de la Plaga de esbirro
 @i^12992^Hoja abrasadora
 @i^13026^Luz del cielo
 @i^13139^Rompentrañas
+@i^13443^Poción de maná excelente
+@i^13446^Poción de curación sublime
+@i^14047^Paño rúnico
 @i^14237^Armadura Niebla Negra de sanación
 @i^14249^Jubón lunar del médico
 @i^14599^Escarpines de alcaide
@@ -684,6 +700,7 @@ GoldScout-export 7^so8qd0drun72^19
 @i^213545^Pergamino: NIMIPU SETOFELO
 @i^213546^Pergamino: SHOOBEEDOOP
 @i^213547^Pergamino: QÉU PESADA
+@i^216956^Carta rota
 @i^248683^Cajón saqueado: menas de aprendiz
 @i^248684^Cajón saqueado: telas de aprendiz
 @i^248685^Cajón saqueado: curiosidades de aprendiz
@@ -691,6 +708,7 @@ GoldScout-export 7^so8qd0drun72^19
 @i^248687^Cajón saqueado: menas de oficial
 @i^248688^Cajón saqueado: textiles de oficial
 @i^248690^Cajón saqueado: hierbas de experto terrenales
+@i^248697^Cajón saqueado: menas de artesano
 @i^248708^Cajón saqueado: tejidos de experto
 @i^248709^Cajón saqueado: lingotes de experto
 @i^248710^Cajón saqueado: piezas de experto
@@ -922,6 +940,7 @@ GoldScout-export 7^so8qd0drun72^19
 @q^4419^1:0:0
 @q^4421^1:0:0
 @q^4424^1:0:0
+@q^4425^1:0:0
 @q^4542^1:0:0
 @q^4544^1:0:0
 @q^4552^0:15:0
@@ -979,6 +998,7 @@ GoldScout-export 7^so8qd0drun72^19
 @q^6425^2:4:0
 @q^6431^2:4:0
 @q^6438^0:15:0
+@q^6530^1:0:0
 @q^6540^2:4:0
 @q^6545^2:4:0
 @q^6561^2:4:0
@@ -1008,6 +1028,7 @@ GoldScout-export 7^so8qd0drun72^19
 @q^7909^2:7:1
 @q^7910^2:7:1
 @q^7912^1:7:1
+@q^7972^1:7:1
 @q^7973^1:7:0
 @q^7993^2:9:0
 @q^7997^0:4:0
@@ -1032,6 +1053,7 @@ GoldScout-export 7^so8qd0drun72^19
 @q^8747^0:4:0
 @q^8749^0:4:0
 @q^8831^1:7:1
+@q^8948^1:0:0
 @q^9234^1:12:0
 @q^9238^1:12:0
 @q^9241^1:12:0
@@ -1043,6 +1065,7 @@ GoldScout-export 7^so8qd0drun72^19
 @q^9276^1:15:0
 @q^9287^2:4:0
 @q^9289^2:4:0
+@q^9296^2:9:0
 @q^9389^3:4:0
 @q^9409^3:4:0
 @q^9413^3:2:0
@@ -1098,9 +1121,13 @@ GoldScout-export 7^so8qd0drun72^19
 @q^12208^1:7:1
 @q^12223^1:7:1
 @q^12471^3:4:0
+@q^12840^1:12:0
 @q^12992^3:2:0
 @q^13026^3:2:0
 @q^13139^3:2:0
+@q^13443^1:0:0
+@q^13446^1:0:0
+@q^14047^1:7:1
 @q^14237^2:4:0
 @q^14249^2:4:0
 @q^14599^2:4:0
@@ -1160,6 +1187,7 @@ GoldScout-export 7^so8qd0drun72^19
 @q^213545^1:0:0
 @q^213546^1:0:0
 @q^213547^1:0:0
+@q^216956^1:12:0
 @q^248683^1:0:1
 @q^248684^1:0:1
 @q^248685^1:0:1
@@ -1167,6 +1195,7 @@ GoldScout-export 7^so8qd0drun72^19
 @q^248687^1:0:1
 @q^248688^1:0:1
 @q^248690^1:0:1
+@q^248697^1:0:1
 @q^248708^2:0:1
 @q^248709^2:0:1
 @q^248710^2:0:1
@@ -1240,12 +1269,14 @@ GoldScout-export 7^so8qd0drun72^19
 @m^1414^Kalimdor
 @m^1415^Reinos del Este
 @m^1418^Tierras Inhóspitas
+@m^1422^Tierras de la Peste del Oeste
 @m^1425^Tierras del Interior
 @m^1432^Loch Modan
 @m^1433^Montañas Crestagrana
 @m^1436^Páramos de Poniente
 @m^1439^Costa Oscura
 @m^1440^Vallefresno
+@m^1443^Desolace
 @m^1444^Feralas
 @m^1446^Tanaris
 @m^1448^Frondavil
@@ -2520,6 +2551,11 @@ GoldScout-export 7^so8qd0drun72^19
 @a^1236^68:2,88:1,89:1
 @a^1426^166:1,185:3,186:4,205:1
 @a^1727^308:1
+@a^1783^309:20,310:21,329:11,330:6
+@a^1784^310:10,330:4
+@a^1791^309:9,310:8,330:3
+@a^1794^269:1,289:1
+@a^1795^309:1
 @a^2336^111:1
 @a^2337^111:8
 @a^2649^224:4
@@ -2534,6 +2570,8 @@ GoldScout-export 7^so8qd0drun72^19
 @a^3660^111:1
 @a^4463^25:5,44:3,64:1
 @a^4467^269:5
+@a^4668^310:1,330:1
+@a^4682^310:1
 @a^4802^148:2
 @a^4844^47:2,48:2,49:1,67:1
 @a^4845^48:2
@@ -2628,4 +2666,12 @@ GoldScout-export 7^so8qd0drun72^19
 @a^263315^211:1
 @a^263343^252:1
 @a^263749^73:1
+@t^1783^54:1789
+@t^1784^14:361
+@t^1791^19:854
+@t^1794^1:53
+@t^1795^1:1
+@t^4668^2:80
+@t^4682^1:1
+@t^12922^1:0
 @l^0^esES
