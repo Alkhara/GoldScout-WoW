@@ -1,4 +1,4 @@
-GoldScout-export 7^p4mflzmlj46r^20
+GoldScout-export 7^p4mflzmlj46r^21
 48^13^0^21^22^1431^0.7907^0.6968^13^Skeletal Warrior^1798:1:1,1801:1:1,2378:5:5,2589:1:2,2592:5:7,4606:1:1,15211:1:1^
 202^12^0^23^24^1431^0.8115^0.5704^12^Skeletal Horror^929:1:1,2378:2:2,2592:1:2,4306:1:1^
 203^10^0^22^23^1431^0.7961^0.7154^10^Skeletal Mage^2378:3:3,2592:3:4,3378:1:1,4606:1:1^
@@ -12,6 +12,7 @@ GoldScout-export 7^p4mflzmlj46r^20
 644^1^0^0^0^0^0.0000^0.0000^0^^872:1:1,1210:1:1,253912:1:1^
 646^1^0^0^0^0^0.0000^0.0000^0^^5192:1:1^
 657^4^0^0^0^0^0.0000^0.0000^0^^2592:2:7^
+686^6^0^35^36^1434^0.3629^0.2618^6^Schmetterschwanz^1696:1:1,3685:2:2,4461:2:2,5637:1:1,12184:4:4^
 704^1^0^2^2^1426^0.2831^0.7539^1^Ragged Timber Wolf^750:1:1,7074:1:1^
 705^9^0^1^1^1426^0.2882^0.7463^9^Ragged Young Wolf^750:6:6,1369:1:1,4865:5:5,5572:1:1,7073:3:3,7074:2:2^
 706^14^0^3^4^1426^0.2274^0.7826^14^Frostmane Troll Whelp^117:2:2,159:1:1,1364:1:1,1368:1:1,2108:1:1,2589:3:3,2650:1:1,3363:2:2^
@@ -343,6 +344,7 @@ GoldScout-export 7^p4mflzmlj46r^20
 260804^1^0^0^0^0^0.0000^0.0000^0^^2251:1:1,3182:1:1^
 260808^1^0^0^0^0^0.0000^0.0000^0^^248706:1:1^
 269134^3^0^0^0^1416^0.0000^0.0000^0^^1205:1:1,7422:1:1^
+269175^3^0^36^38^1434^0.3521^0.2975^3^Fleischfressendes Unkraut^765:1:1,3819:1:1,256037:3:3^
 270094^1^0^30^30^1441^0.5254^0.5359^1^Sturmherz^5128:1:1,279186:1:1^
 275044^1^0^0^0^0^0.0000^0.0000^0^^3770:1:1^
 275046^2^0^0^0^0^0.0000^0.0000^0^^9802:1:1,284844:1:1^
@@ -352,7 +354,7 @@ GoldScout-export 7^p4mflzmlj46r^20
 @i^729^Sehniges Geierfleisch
 @i^730^Murlocauge
 @i^750^Tough Wolf Meat
-@i^765^Silverleaf
+@i^765^Silberblatt
 @i^770^Spitzer Krokiliskenzahn
 @i^785^Maguskönigskraut
 @i^818^Tigerseye
@@ -380,6 +382,7 @@ GoldScout-export 7^p4mflzmlj46r^20
 @i^1503^Warped Leather Boots
 @i^1505^Warped Cloak
 @i^1529^Jade
+@i^1696^Geschwungene Raptorkralle
 @i^1697^Beißender Raptorzahn
 @i^1701^Geschwungene Basiliskenklaue
 @i^1702^Intaktes Basiliskenrückgrat
@@ -520,6 +523,7 @@ GoldScout-export 7^p4mflzmlj46r^20
 @i^3811^Doppelt genähter Umhang
 @i^3812^Doppelpanzerhandschuhe
 @i^3814^Doppelpanzerschulterpolster
+@i^3819^Winterbiss
 @i^3827^Manatrank
 @i^3864^Citrin
 @i^3931^Poisoned Spider Fang
@@ -531,6 +535,7 @@ GoldScout-export 7^p4mflzmlj46r^20
 @i^4364^Coarse Blasting Powder
 @i^4412^Schematic: Moonsight Rifle
 @i^4428^Spider Palp
+@i^4461^Raptorbalg
 @i^4538^Schnappranken-Wassermelone
 @i^4542^Saftiges Maisbrot
 @i^4553^Gezacktes Steinstück
@@ -683,6 +688,7 @@ GoldScout-export 7^p4mflzmlj46r^20
 @i^11416^Zierlicher Brustkorb
 @i^12037^Eigenartiges Fleisch
 @i^12054^Demon Band
+@i^12184^Raptorfleisch
 @i^12884^Arnaks Huf
 @i^12946^Hyperkondensator-Dingsda
 @i^13079^Schild von Thorsen
@@ -751,6 +757,7 @@ GoldScout-export 7^p4mflzmlj46r^20
 @i^252797^Pattern: Wisdom's Leather Pants
 @i^253912^Pattern: Filigreed Shining Gown
 @i^254432^Geschnitztes Zentaurentotem
+@i^256037^Grasschnitt
 @i^262889^Versiegelte Verfügung des Experten
 @i^264207^Bauplan: SAF-T-Bronzebombe
 @i^268580^Intact Limbs
@@ -830,6 +837,7 @@ GoldScout-export 7^p4mflzmlj46r^20
 @q^1503^0:4:0
 @q^1505^0:4:0
 @q^1529^2:7:1
+@q^1696^0:15:0
 @q^1697^0:15:0
 @q^1701^0:15:0
 @q^1702^0:15:0
@@ -970,6 +978,7 @@ GoldScout-export 7^p4mflzmlj46r^20
 @q^3811^0:4:0
 @q^3812^0:4:0
 @q^3814^0:4:0
+@q^3819^1:7:1
 @q^3827^1:0:0
 @q^3864^2:7:1
 @q^3931^0:15:0
@@ -981,6 +990,7 @@ GoldScout-export 7^p4mflzmlj46r^20
 @q^4364^1:7:1
 @q^4412^2:9:0
 @q^4428^0:15:0
+@q^4461^1:7:1
 @q^4538^1:0:0
 @q^4542^1:0:0
 @q^4553^0:15:0
@@ -1133,6 +1143,7 @@ GoldScout-export 7^p4mflzmlj46r^20
 @q^11416^0:15:0
 @q^12037^1:7:1
 @q^12054^2:4:0
+@q^12184^1:7:1
 @q^12884^1:0:0
 @q^12946^1:12:0
 @q^13079^3:4:0
@@ -1201,6 +1212,7 @@ GoldScout-export 7^p4mflzmlj46r^20
 @q^252797^3:9:0
 @q^253912^3:9:0
 @q^254432^2:15:0
+@q^256037^0:15:0
 @q^262889^3:0:0
 @q^264207^1:9:0
 @q^268580^1:12:0
@@ -1255,6 +1267,7 @@ GoldScout-export 7^p4mflzmlj46r^20
 @m^1424^Vorgebirge von Hillsbrad
 @m^1426^Dun Morogh
 @m^1431^Duskwood
+@m^1434^Schlingendorntal
 @m^1440^Ashenvale
 @m^1441^Tausend Nadeln
 @m^1443^Desolace
@@ -1950,6 +1963,7 @@ GoldScout-export 7^p4mflzmlj46r^20
 @a^202^235:2,236:10
 @a^203^275:3,295:3,296:4
 @a^628^231:1,250:1
+@a^686^87:1,106:1,107:4
 @a^704^305:1
 @a^705^285:8,305:1
 @a^706^284:1,304:10,305:2,324:1
@@ -2100,6 +2114,7 @@ GoldScout-export 7^p4mflzmlj46r^20
 @a^12976^193:1
 @a^12977^173:2
 @a^13019^111:1,131:1
+@a^269175^106:1,107:1,127:1
 @a^270094^210:1
 @t^4638^2:61
 @t^4639^5:239

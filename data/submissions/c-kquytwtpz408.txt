@@ -1,4 +1,4 @@
-GoldScout-export 9^kquytwtpz408^30
+GoldScout-export 9^kquytwtpz408^33
 1783^2^0^50^51^1422^0.3838^0.5474^2^Skeletal Flayer^12840:1:1^
 1785^2^0^53^54^1422^0.4810^0.5109^2^Skeletal Terror^^
 1787^4^0^54^55^1422^0.4357^0.7150^4^Skeletal Executioner^12840:2:2,14047:1:2,14619:3:3^
@@ -368,7 +368,7 @@ GoldScout-export 9^kquytwtpz408^30
 14661^2^0^47^47^1444^0.7336^0.6373^2^Stinglasher^6302:1:1,18961:1:1,18962:1:1^
 14748^1^0^49^49^1425^0.8455^0.4143^1^Vilebranch Kidnapper^^
 222286^1^0^43^43^1444^0.6642^0.3846^1^Namida Grimtotem^254877:1:1^
-244530^1^0^57^57^2482^0.7263^0.7854^1^Tainted Hyjal Bear^8146:1:1^
+244530^1^0^56^57^2482^0.7263^0.7854^1^Tainted Hyjal Bear^8146:1:1^
 245999^1^0^0^0^1416^0.0000^0.0000^0^^273031:1:1^
 246003^1^0^0^0^1416^0.0000^0.0000^0^^273039:1:1^
 246008^1^0^0^0^1416^0.0000^0.0000^0^^273041:1:1^
@@ -379,15 +379,20 @@ GoldScout-export 9^kquytwtpz408^30
 246890^2^0^0^0^1416^0.0000^0.0000^0^^1756:1:1,4036:1:1^
 246992^1^0^0^0^1416^0.0000^0.0000^0^^9822:1:1^
 247016^1^0^0^0^1416^0.0000^0.0000^0^^929:1:1^
-248041^2^0^56^56^2482^0.7875^0.7348^2^Hyjal Stag^5566:1:1,251641:1:1^
+248041^2^0^56^57^2482^0.7875^0.7348^2^Hyjal Stag^5566:1:1,251641:1:1^
+248042^2^0^55^57^2482^0.6354^0.7548^2^Tainted Hyjal Stag^5119:1:1,5471:1:1,5566:1:1^
+248395^6^0^55^56^2482^0.6655^0.7030^6^Tainted Shrubbery^10286:1:1,10306:1:1,247892:4:4^
+249051^1^0^57^57^2482^0.6531^0.7467^1^Celastrus the Bitter^282028:1:1^
 255066^2^0^0^0^1416^0.0000^0.0000^0^^929:1:1^
 255069^1^0^0^0^1416^0.0000^0.0000^0^^^
 255070^1^0^0^0^1416^0.0000^0.0000^0^^1529:1:1^
+260422^1^0^57^57^2482^0.4923^0.7568^1^Ashen Acolyte^^
 269134^2^0^0^0^1416^0.0000^0.0000^0^^2592:1:2,15284:1:1^
 269254^1^0^47^47^1427^0.6020^0.8426^1^Famished Blackworg^^
 270094^1^0^30^30^1441^0.5316^0.5378^1^Stormheart^5133:1:1,279186:1:1^
 270772^1^0^49^49^1425^0.2448^0.6555^1^Witch Doctor Ti'ik^279913:1:1^
 270807^3^0^46^46^1425^0.2447^0.6554^3^Hexed Larva^^
+278137^3^0^55^56^2482^0.6162^0.7368^3^Fungal Bloom^^
 @i^729^Stringy Vulture Meat
 @i^929^Healing Potion
 @i^1074^Hard Spider Leg Tip
@@ -474,8 +479,10 @@ GoldScout-export 9^kquytwtpz408^30
 @i^5115^Broken Wishbone
 @i^5116^Long Tail Feather
 @i^5117^Vibrant Plume
+@i^5119^Fine Loose Hair
 @i^5128^Shed Lizard Skin
 @i^5133^Seeping Gizzard
+@i^5471^Stag Meat
 @i^5566^Broken Antler
 @i^5569^Seaweed
 @i^5635^Sharp Claw
@@ -558,6 +565,7 @@ GoldScout-export 9^kquytwtpz408^30
 @i^10074^Righteous Leggings of the Channeler
 @i^10176^Mystical Gloves of Spirit
 @i^10286^Heart of the Wild
+@i^10306^Scroll of Spirit IV
 @i^10454^Essence of Eranikus
 @i^10460^Hakkari Blood
 @i^10509^Heart of Flame
@@ -717,6 +725,7 @@ GoldScout-export 9^kquytwtpz408^30
 @i^21377^Deadwood Headdress Feather
 @i^213546^Scroll: SHOOBEEDOOP
 @i^213547^Scroll: THAW WORDS
+@i^247892^Verdant Leaves
 @i^248691^Waylaid Crate: Flowering Expert Herbs
 @i^248692^Waylaid Crate: Expert Ore
 @i^248695^Waylaid Crate: Earthly Artisan Herbs
@@ -751,6 +760,7 @@ GoldScout-export 9^kquytwtpz408^30
 @i^279186^Stormheart's Still-beating Heart
 @i^279601^Intact Raptor Hide
 @i^279913^Ti'ik's Head
+@i^282028^Broken Frond of Celastrus
 @i^286992^Construct's Grips
 @q^729^1:7:1
 @q^929^1:0:0
@@ -838,8 +848,10 @@ GoldScout-export 9^kquytwtpz408^30
 @q^5115^0:15:0
 @q^5116^1:7:1
 @q^5117^1:12:0
+@q^5119^0:15:0
 @q^5128^0:15:0
 @q^5133^0:15:0
+@q^5471^1:7:1
 @q^5566^0:15:0
 @q^5569^0:15:0
 @q^5635^1:7:1
@@ -922,6 +934,7 @@ GoldScout-export 9^kquytwtpz408^30
 @q^10074^2:4:0
 @q^10176^2:4:0
 @q^10286^1:7:1
+@q^10306^1:0:0
 @q^10454^2:12:0
 @q^10460^1:13:0
 @q^10509^1:12:0
@@ -1081,6 +1094,7 @@ GoldScout-export 9^kquytwtpz408^30
 @q^21377^1:12:0
 @q^213546^1:0:0
 @q^213547^1:0:0
+@q^247892^1:12:0
 @q^248691^1:0:1
 @q^248692^1:0:1
 @q^248695^1:0:1
@@ -1115,6 +1129,7 @@ GoldScout-export 9^kquytwtpz408^30
 @q^279186^1:12:0
 @q^279601^1:12:0
 @q^279913^1:12:0
+@q^282028^1:12:0
 @q^286992^3:4:0
 @m^1414^Kalimdor
 @m^1416^Alterac Mountains
@@ -2731,8 +2746,16 @@ GoldScout-export 9^kquytwtpz408^30
 @a^222286^153:1
 @a^244530^314:1
 @a^248041^296:1,315:1
+@a^248042^292:1,312:1
+@a^248395^273:2,292:2,293:1,294:1
+@a^249051^293:1
+@a^260422^309:1
 @a^269254^332:1
 @a^270094^210:1
 @a^270772^264:1
 @a^270807^264:3
+@a^278137^292:3
+@t^248042^1:204
+@t^248395^5:668
+@t^278137^2:0
 @l^0^enUS

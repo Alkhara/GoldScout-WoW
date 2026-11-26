@@ -1,4 +1,4 @@
-GoldScout-export 6^ed7hwh6e9fik^10
+GoldScout-export 6^ed7hwh6e9fik^11
 1783^1^0^50^51^1422^0.3939^0.5734^1^Skeletal Flayer^^
 1815^1^0^51^52^1422^0.3344^0.6091^1^Diseased Black Bear^8146:1:1,11408:1:1^
 2244^5^0^21^22^1424^0.8022^0.4464^5^Syndicate Shadow Mage^2592:1:2^
@@ -40,16 +40,19 @@ GoldScout-export 6^ed7hwh6e9fik^10
 5992^3^0^48^49^1419^0.5564^0.3132^3^Ashmane Boar^3403:1:1,8392:3:3^
 5993^10^0^52^53^1419^0.4960^0.3745^10^Helboar^2295:2:2,3403:2:2,8392:7:7^
 6194^1^0^48^48^1447^0.3923^0.5266^1^Spitelash Serpent Guard^7973:1:1^
+6348^1^0^52^53^1447^0.7026^0.3365^1^Wavethrasher^5569:1:1^
+6371^1^0^51^51^1447^0.7026^0.3365^1^Storm Bay Warrior^^
 7768^21^0^25^25^1425^0.3350^0.6904^21^Witherbark Bloodling^^
 7977^1^0^48^48^1425^0.7602^0.6512^1^Gammerita^3712:1:1,19023:1:1^
 8296^1^0^48^48^1419^0.4526^0.1593^1^Mojo the Twisted^10593:1:1^
 8675^6^0^50^51^1419^0.5466^0.4068^6^Felbeast^4583:4:4^
-8766^3^0^52^53^1447^0.3872^0.7015^3^Forest Ooze^20023:1:1^
+8766^6^6^52^53^1447^0.3782^0.6988^6^Forest Ooze^20023:1:1,20763:1:1,20767:1:1^3419:1:1,3421:1:1,20023:4:5
 10802^1^0^51^51^1425^0.5728^0.8624^1^Hitah'ya the Keeper^19064:1:1^
 14748^1^0^49^49^1425^0.8408^0.4165^1^Vilebranch Kidnapper^19034:1:1^
 237733^2^0^50^50^1447^0.4347^0.1878^2^Blackmaw Den Watcher^4338:1:3^
 237736^6^3^50^51^1447^0.4295^0.2052^6^Blackmaw Shaman^4338:3:6^3928:1:1,19775:1:1
 237738^6^0^51^52^1447^0.4334^0.1862^6^Blackmaw Ursa^8953:1:1,14047:1:2^
+247033^1^0^53^53^1447^0.7083^0.2963^1^Bloodshrike^^
 270772^1^0^49^49^1425^0.2445^0.6554^1^Witch Doctor Ti'ik^279913:1:1^
 270807^3^0^45^45^1425^0.2446^0.6555^3^Hexed Larva^^
 272386^1^0^60^60^1419^0.5956^0.3529^1^Snickerfang Matriarch^4584:1:1,8391:1:1^
@@ -67,8 +70,13 @@ GoldScout-export 6^ed7hwh6e9fik^10
 @i^3377^Canvas Bracers
 @i^3403^Ivory Boar Tusk
 @i^3404^Buzzard Wing
+@i^3419^Red Rose
+@i^3421^Simple Wildflowers
+@i^3669^Gelatinous Goo
+@i^3676^Slimy Ichor
 @i^3712^Turtle Meat
 @i^3928^Superior Healing Potion
+@i^3948^Twill Gloves
 @i^3967^Thick Leather Shoulderpads
 @i^3987^Deflecting Tower
 @i^3989^Blocking Targe
@@ -92,7 +100,10 @@ GoldScout-export 6^ed7hwh6e9fik^10
 @i^4599^Cured Ham Steak
 @i^4603^Raw Spotted Yellowtail
 @i^4638^Reinforced Steel Lockbox
+@i^5569^Seaweed
 @i^5829^Razor-sharp Beak
+@i^6149^Greater Mana Potion
+@i^6212^Head of Jammal'an
 @i^6289^Raw Longjaw Mud Snapper
 @i^6291^Raw Brilliant Smallfish
 @i^6294^12 Pound Mud Snapper
@@ -103,7 +114,9 @@ GoldScout-export 6^ed7hwh6e9fik^10
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
 @i^6362^Raw Rockscale Cod
+@i^6826^Brilliant Scale
 @i^7973^Big-mouth Clam
+@i^8080^Light Plate Chestpiece
 @i^8126^Myrmidon's Breastplate
 @i^8146^Wicked Claw
 @i^8151^Flask of Mojo
@@ -125,7 +138,16 @@ GoldScout-export 6^ed7hwh6e9fik^10
 @i^10133^Revenant Leggings of the Gorilla
 @i^10285^Shadow Silk
 @i^10320^Pattern: Red Mageweave Headband
+@i^10454^Essence of Eranikus
+@i^10460^Hakkari Blood
 @i^10593^Imperfect Draenethyst Fragment
+@i^10787^Atal'ai Gloves of Frozen Wrath
+@i^10788^Atal'ai Girdle of the Defender
+@i^10800^Darkwater Bracers of Strength
+@i^10804^Fist of the Damned
+@i^10833^Horns of Eranikus
+@i^10842^Windscale Sarong
+@i^10845^Warrior's Embrace
 @i^11386^Squishy Basilisk Eye
 @i^11387^Basilisk Heart
 @i^11408^Bear Jaw
@@ -136,10 +158,12 @@ GoldScout-export 6^ed7hwh6e9fik^10
 @i^12205^White Spider Meat
 @i^12207^Giant Egg
 @i^12208^Tender Wolf Meat
+@i^12704^Plans: Thorium Leggings
 @i^14047^Runecloth
 @i^14278^Opulent Mantle of the Prophet
 @i^14484^Pattern: Brightcloth Cloak
 @i^15252^Tusker Sword of the Bandit
+@i^15323^Percussion Shotgun of the Boar
 @i^16251^Formula: Enchant Bracer - Superior Stamina
 @i^19023^Katoom's Best Lure
 @i^19025^Skylord Plume
@@ -149,14 +173,20 @@ GoldScout-export 6^ed7hwh6e9fik^10
 @i^19934^Large Scorpid Claw
 @i^19935^Empty Venom Sac
 @i^19936^Dried Scorpid Carapace
+@i^20022^Azure Key
 @i^20023^Encoded Fragment
 @i^20763^Broken Weapon
+@i^20767^Scum Covered Bag
 @i^21150^Iron Bound Trunk
 @i^248693^Waylaid Crate: Expert Textiles
 @i^248694^Waylaid Crate: Expert Curiosities
+@i^248695^Waylaid Crate: Earthly Artisan Herbs
 @i^248696^Waylaid Crate: Flowering Artisan Herbs
+@i^248711^Waylaid Crate: Artisan Fabrics
 @i^254078^Pattern: Earthenweave Cord
+@i^254102^Pattern: Black Gloves
 @i^255645^Swollen Venom Sac
+@i^262890^Sealed Artisan's Writ
 @i^274029^Ornate Shackle Key
 @i^276732^Alcaz Willcrusher
 @i^276736^Seascale Bracers
@@ -178,8 +208,13 @@ GoldScout-export 6^ed7hwh6e9fik^10
 @q^3377^0:4:0
 @q^3403^0:15:0
 @q^3404^1:7:1
+@q^3419^1:4:0
+@q^3421^1:4:0
+@q^3669^0:15:0
+@q^3676^0:15:0
 @q^3712^1:7:1
 @q^3928^1:0:0
+@q^3948^0:4:0
 @q^3967^0:4:0
 @q^3987^0:4:0
 @q^3989^0:4:0
@@ -203,7 +238,10 @@ GoldScout-export 6^ed7hwh6e9fik^10
 @q^4599^1:0:0
 @q^4603^1:7:1
 @q^4638^2:15:0
+@q^5569^0:15:0
 @q^5829^0:15:0
+@q^6149^1:0:0
+@q^6212^1:12:0
 @q^6289^1:7:1
 @q^6291^1:7:1
 @q^6294^1:15:0
@@ -214,7 +252,9 @@ GoldScout-export 6^ed7hwh6e9fik^10
 @q^6358^1:7:1
 @q^6359^1:7:1
 @q^6362^1:7:1
+@q^6826^0:15:0
 @q^7973^1:7:0
+@q^8080^0:4:0
 @q^8126^2:4:0
 @q^8146^1:7:1
 @q^8151^1:7:1
@@ -236,7 +276,16 @@ GoldScout-export 6^ed7hwh6e9fik^10
 @q^10133^2:4:0
 @q^10285^1:7:1
 @q^10320^2:9:0
+@q^10454^2:12:0
+@q^10460^1:13:0
 @q^10593^2:12:0
+@q^10787^3:4:0
+@q^10788^2:4:0
+@q^10800^3:4:0
+@q^10804^3:2:0
+@q^10833^3:4:0
+@q^10842^3:4:0
+@q^10845^3:4:0
 @q^11386^0:15:0
 @q^11387^0:15:0
 @q^11408^0:15:0
@@ -247,10 +296,12 @@ GoldScout-export 6^ed7hwh6e9fik^10
 @q^12205^1:7:1
 @q^12207^1:7:1
 @q^12208^1:7:1
+@q^12704^2:9:0
 @q^14047^1:7:1
 @q^14278^2:4:0
 @q^14484^2:9:0
 @q^15252^2:2:0
+@q^15323^2:2:0
 @q^16251^2:9:0
 @q^19023^1:12:0
 @q^19025^1:12:0
@@ -260,14 +311,20 @@ GoldScout-export 6^ed7hwh6e9fik^10
 @q^19934^0:15:0
 @q^19935^0:15:0
 @q^19936^0:15:0
+@q^20022^1:15:0
 @q^20023^1:12:0
 @q^20763^0:15:0
+@q^20767^1:15:0
 @q^21150^1:15:0
 @q^248693^1:0:1
 @q^248694^1:0:1
+@q^248695^1:0:1
 @q^248696^1:0:1
+@q^248711^2:0:1
 @q^254078^2:9:0
+@q^254102^3:9:0
 @q^255645^1:7:1
+@q^262890^3:0:0
 @q^274029^1:12:0
 @q^276732^3:2:0
 @q^276736^3:4:0
@@ -1079,16 +1136,19 @@ GoldScout-export 6^ed7hwh6e9fik^10
 @a^5992^131:3
 @a^5993^128:2,149:3,150:3,170:2
 @a^6194^207:1
+@a^6348^134:1
+@a^6371^134:1
 @a^7768^246:2,247:2,266:4,267:3,286:8,287:2
 @a^7977^275:1
 @a^8296^69:1
 @a^8675^150:1,151:1,152:1,170:1,171:1,189:1
-@a^8766^267:1,268:1,287:1
+@a^8766^267:3,268:1,287:2
 @a^10802^351:1
 @a^14748^176:1
 @a^237733^68:2
 @a^237736^68:1,88:5
 @a^237738^68:6
+@a^247033^114:1
 @a^270772^264:1
 @a^270807^264:3
 @a^272386^151:1
