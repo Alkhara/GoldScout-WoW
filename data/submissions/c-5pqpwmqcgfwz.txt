@@ -1,4 +1,4 @@
-GoldScout-export 9^5pqpwmqcgfwz^12
+GoldScout-export 9^5pqpwmqcgfwz^13
 1765^3^0^10^10^1421^0.6756^0.0681^3^Lupo^2672:3:3,2962:1:1,8178:1:1^
 1766^4^0^11^12^1421^0.5354^0.1867^4^Lupo jaspeado^2672:4:4^
 1769^2^0^10^11^1421^0.5613^0.2146^2^Canoso Furia Lunar^^
@@ -8,10 +8,16 @@ GoldScout-export 9^5pqpwmqcgfwz^12
 1782^1^0^14^14^1421^0.4726^0.2892^1^Almanegra Furia Lunar^^
 1797^7^0^12^13^1421^0.4393^0.1874^7^Grisoso gigante^2979:1:1,3169:2:2,3170:2:2,3173:1:1,3253:2:2,8180:1:1,211780:1:1^
 1867^15^0^13^14^1421^0.5276^0.6530^15^Aprendiz Dalaran^2589:8:13,3013:1:1,7293:6:6^
-1868^4^0^13^14^1421^0.5254^0.3284^4^Sirviente Corvozarpa^2589:1:2,2777:1:1^
-1869^2^0^14^15^1421^0.5285^0.3123^2^Campeón Corvozarpa^6548:1:1^
+1868^6^0^13^14^1421^0.5290^0.3248^6^Sirviente Corvozarpa^2589:2:3,2777:1:1^
+1869^3^0^14^15^1421^0.5308^0.3149^3^Campeón Corvozarpa^1505:1:1,2589:1:2,6548:1:1^
 1894^1^0^14^15^1421^0.4335^0.7310^1^Argos Piroleño^1499:1:1,2589:1:2^
 1912^1^0^14^14^1421^0.5490^0.6737^1^Protector Dalaran^^
+1953^8^0^15^16^1421^0.7152^0.3589^8^Vigilante del Lago^1509:1:1,3256:4:4^
+1954^5^0^16^17^1421^0.7264^0.3508^5^Vagador del Lago viejo^858:2:2,1179:1:1,2452:1:1,3256:2:2^
+1955^12^0^17^18^1421^0.7733^0.2660^12^Trepador del Lago^1179:1:1,3257:4:4,4605:3:3^
+1956^4^0^18^19^1421^0.7750^0.2452^4^Trepador del Lago viejo^3257:2:2,4605:1:1,14166:1:1^
+1957^7^0^16^17^1421^0.7659^0.3310^7^Trepacostas Anca Vil^3258:1:1,5523:3:3,6289:1:2^
+1958^5^0^17^18^1421^0.7614^0.3336^5^Llamamareas Anca Vil^730:2:2,1179:1:1,1790:1:1,5523:2:2^
 3099^34^0^6^7^1411^0.4918^0.4029^34^Jabalí jaspeado feroz^769:34:34,771:4:4,774:2:2,3171:1:1,5571:1:1^
 3100^83^0^8^9^1411^0.4818^0.2013^83^Jabalí jaspeado mayor^769:63:63,771:12:12,774:1:1,3171:26:26,3190:1:1,8181:1:1,211780:1:1,211785:1:1,211786:1:1^
 3110^1^0^10^10^1411^0.3805^0.1702^1^Crocolisco Fauzatroz^4875:1:1,4891:1:1^
@@ -89,6 +95,7 @@ GoldScout-export 9^5pqpwmqcgfwz^12
 @i^118^Poción de curación menor
 @i^159^Agua de manantial refrescante
 @i^414^Pincho Dalaran
+@i^730^Ojo de múrloc
 @i^769^Trozo de carne de jabalí
 @i^771^Colmillo de jabalí astillado
 @i^774^Malaquita
@@ -108,6 +115,7 @@ GoldScout-export 9^5pqpwmqcgfwz^12
 @i^1505^Capa combada
 @i^1506^Guantes de cuero combados
 @i^1507^Pantalones de cuero combados
+@i^1509^Jubón de cuero combado
 @i^1513^Espada magna vieja
 @i^1514^Martillo de guerra herrumbrado
 @i^1516^Hachuela desgastada
@@ -115,9 +123,11 @@ GoldScout-export 9^5pqpwmqcgfwz^12
 @i^1737^Jubón de malla desgastado
 @i^1741^Capa con encaje
 @i^1764^Zapatos de retal
+@i^1790^Capa con remiendos
 @i^1811^Espada claymore desafilada
 @i^2073^Hachuela enana del tigre
 @i^2287^Anca de carne
+@i^2452^Cardoveloz
 @i^2455^Poción de maná menor
 @i^2589^Paño de lino
 @i^2592^Paño de lana
@@ -140,6 +150,9 @@ GoldScout-export 9^5pqpwmqcgfwz^12
 @i^3190^Palo para golpear
 @i^3253^Corazón de grisoso
 @i^3254^Sangre de celerácnida
+@i^3256^Moho de Vigilante del Lago
+@i^3257^Moho de Trepador del Lago
+@i^3258^Tumor endurecido
 @i^3281^Guantes de anillas de batalla
 @i^3301^Canino afilado
 @i^3307^Botas de paño barbárico
@@ -159,6 +172,7 @@ GoldScout-export 9^5pqpwmqcgfwz^12
 @i^4569^Martillo acérrimo de sanación
 @i^4577^Escopeta compacta
 @i^4604^Champiñón de bosque
+@i^4605^Champiñón con motas rojas
 @i^4675^Cinturón tribal
 @i^4775^Pico roto
 @i^4776^Pluma erizada
@@ -200,6 +214,7 @@ GoldScout-export 9^5pqpwmqcgfwz^12
 @i^5523^Percebe pequeño
 @i^5571^Faltriquera negra pequeña
 @i^6289^Pargo de loco boquilargo crudo
+@i^6291^Pececito luminoso crudo
 @i^6303^Caballa suave cruda
 @i^6308^Siluro mostacherizo crudo
 @i^6356^Cofre maltrecho
@@ -219,6 +234,7 @@ GoldScout-export 9^5pqpwmqcgfwz^12
 @i^14099^Fajín nativo
 @i^14149^Manteo subterráneo
 @i^14150^Toga de Evocación
+@i^14166^Brazales de bucanero de protección contra las Sombras
 @i^14395^Hechizos de las Sombras
 @i^14396^Encantamientos desde el infierno
 @i^14540^Corazón de Taragaman el Hambriento
@@ -237,6 +253,7 @@ GoldScout-export 9^5pqpwmqcgfwz^12
 @i^17056^Pluma ligera
 @i^20708^Baúl bien sellado
 @i^20709^Ron Rumsey ligero
+@i^21071^Sabiola cruda
 @i^211780^Pergamino: KWYJIBO
 @i^211784^Pergamino: WUBBA WUBBA
 @i^211785^Pergamino: CWAL
@@ -260,6 +277,7 @@ GoldScout-export 9^5pqpwmqcgfwz^12
 @q^118^1:0:0
 @q^159^1:0:0
 @q^414^1:0:0
+@q^730^1:7:1
 @q^769^1:7:1
 @q^771^0:15:0
 @q^774^2:7:1
@@ -279,6 +297,7 @@ GoldScout-export 9^5pqpwmqcgfwz^12
 @q^1505^0:4:0
 @q^1506^0:4:0
 @q^1507^0:4:0
+@q^1509^0:4:0
 @q^1513^0:2:0
 @q^1514^0:2:0
 @q^1516^0:2:0
@@ -286,9 +305,11 @@ GoldScout-export 9^5pqpwmqcgfwz^12
 @q^1737^0:4:0
 @q^1741^0:4:0
 @q^1764^0:4:0
+@q^1790^0:4:0
 @q^1811^0:2:0
 @q^2073^2:2:0
 @q^2287^1:0:0
+@q^2452^1:7:1
 @q^2455^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
@@ -311,6 +332,9 @@ GoldScout-export 9^5pqpwmqcgfwz^12
 @q^3190^1:2:0
 @q^3253^1:12:0
 @q^3254^1:12:0
+@q^3256^1:12:0
+@q^3257^1:12:0
+@q^3258^1:12:0
 @q^3281^1:4:0
 @q^3301^0:15:0
 @q^3307^2:4:0
@@ -330,6 +354,7 @@ GoldScout-export 9^5pqpwmqcgfwz^12
 @q^4569^2:2:0
 @q^4577^2:2:0
 @q^4604^1:0:0
+@q^4605^1:0:0
 @q^4675^1:4:0
 @q^4775^0:15:0
 @q^4776^0:15:0
@@ -371,6 +396,7 @@ GoldScout-export 9^5pqpwmqcgfwz^12
 @q^5523^1:7:0
 @q^5571^1:1:0
 @q^6289^1:7:1
+@q^6291^1:7:1
 @q^6303^1:7:1
 @q^6308^1:7:1
 @q^6356^1:15:0
@@ -390,6 +416,7 @@ GoldScout-export 9^5pqpwmqcgfwz^12
 @q^14099^1:4:0
 @q^14149^3:4:0
 @q^14150^3:4:0
+@q^14166^2:4:0
 @q^14395^1:12:0
 @q^14396^1:12:0
 @q^14540^1:12:0
@@ -408,6 +435,7 @@ GoldScout-export 9^5pqpwmqcgfwz^12
 @q^17056^1:15:1
 @q^20708^1:15:0
 @q^20709^1:0:0
+@q^21071^1:7:1
 @q^211780^1:0:0
 @q^211784^1:0:0
 @q^211785^1:0:0
@@ -1355,10 +1383,16 @@ GoldScout-export 9^5pqpwmqcgfwz^12
 @a^1782^109:1
 @a^1797^68:5,69:2
 @a^1867^230:2,250:4,270:6,271:1,290:2
-@a^1868^130:4
-@a^1869^130:2
+@a^1868^130:6
+@a^1869^130:3
 @a^1894^288:1
 @a^1912^270:1
+@a^1953^134:2,154:6
+@a^1954^134:1,154:4
+@a^1955^95:2,115:10
+@a^1956^95:3,115:1
+@a^1957^135:7
+@a^1958^135:5
 @a^3099^128:3,130:4,131:2,149:5,151:3,169:4,188:2,189:5,190:6
 @a^3100^48:1,49:1,50:9,51:5,67:6,68:7,69:2,70:4,71:5,87:2,88:7,89:11,91:5,108:12,109:1,111:3,131:1,168:1
 @a^3110^67:1
@@ -1430,10 +1464,16 @@ GoldScout-export 9^5pqpwmqcgfwz^12
 @t^1782^1:92
 @t^1797^7:309
 @t^1867^15:725
-@t^1868^4:571
-@t^1869^2:116
+@t^1868^6:993
+@t^1869^3:152
 @t^1894^1:199
 @t^1912^1:17
+@t^1953^7:168
+@t^1954^5:192
+@t^1955^12:355
+@t^1956^4:113
+@t^1957^7:252
+@t^1958^5:159
 @t^3255^2:190
 @t^3381^24:890
 @t^3382^18:653
@@ -1442,4 +1482,5 @@ GoldScout-export 9^5pqpwmqcgfwz^12
 @t^3467^3:71
 @f^1411^0^61^1^6303:58:58,6356:3:3^31:61
 @f^1413^0^74^62^6289:6:6,6303:2:2,6308:2:2,6358:21:21,6361:2:2,6522:31:31,20708:7:7,20709:3:5^88:7,89:7,149:3,152:11,169:11,171:15,192:16,212:4
+@f^1421^0^4^110^6291:1:1,20708:1:1,21071:2:2^131:4
 @l^0^esES

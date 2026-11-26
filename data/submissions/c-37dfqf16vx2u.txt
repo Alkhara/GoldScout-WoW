@@ -1,4 +1,4 @@
-GoldScout-export 7^37dfqf16vx2u^43
+GoldScout-export 7^37dfqf16vx2u^44
 46^5^0^9^10^1429^0.7889^0.6705^5^Murlocfutterwühler^779:1:1,1425:1:1^
 48^1^0^21^21^1431^0.8199^0.6861^1^Skelettkrieger^^
 94^2^0^5^6^1429^0.3473^0.5779^2^Taschendieb der Defias^2070:1:1^
@@ -16,6 +16,7 @@ GoldScout-export 7^37dfqf16vx2u^43
 330^1^0^9^9^1429^0.6910^0.7910^1^Prinzessin^771:1:1,1006:1:1^
 390^2^0^7^7^1429^0.6909^0.7908^2^Gefolgsschwein^769:1:1,3171:1:1^
 391^1^0^20^20^1436^0.3390^0.8214^1^Old Murk-Eye^3636:1:1,5784:1:1^
+435^10^0^24^25^1433^0.2521^0.1101^10^Held der Blackrock^1751:1:1,2592:2:3,4306:1:1,9815:1:1^
 449^1^0^17^17^1436^0.3336^0.7140^1^Knöchelhauer der Defias^2592:1:2^
 458^1^0^16^16^1436^0.3000^0.3424^1^Murlocjäger^1768:1:1,5523:1:1^
 474^1^0^9^9^1429^0.2908^0.6366^1^Abtrünniger Hexer der Defias^^
@@ -172,6 +173,7 @@ GoldScout-export 7^37dfqf16vx2u^43
 4416^12^0^0^0^0^0.0000^0.0000^0^^915:1:1,1179:1:1,1210:1:1,2589:1:3,2592:2:3,2838:1:1^
 4417^3^0^0^0^0^0.0000^0.0000^0^^^
 4418^2^0^0^0^0^0.0000^0.0000^0^^9775:1:1^
+4463^4^0^22^23^1433^0.2425^0.1468^4^Beschwörer der Blackrock^929:2:2,1774:1:1,2592:1:2,248684:1:1^
 5893^1^0^12^12^1432^0.3199^0.6446^1^Schwache Feuermanifestation^6655:1:1^
 6123^10^0^10^11^1426^0.7752^0.6029^10^Spion der Dunkeleisenzwerge^159:1:1,2138:1:1,2589:6:9,3013:1:1,274268:1:1^
 6250^1^0^11^11^1436^0.3018^0.3443^1^Kriecher^^
@@ -235,6 +237,7 @@ GoldScout-export 7^37dfqf16vx2u^43
 @i^858^Geringer Heiltrank
 @i^872^Steinschneider
 @i^915^Rotes Seidenkopftuch
+@i^929^Heiltrank
 @i^954^Rolle der Stärke
 @i^1006^Messinghalsband
 @i^1081^Knuspriges Spinnenfleisch
@@ -276,10 +279,12 @@ GoldScout-export 7^37dfqf16vx2u^43
 @i^1710^Großer Heiltrank
 @i^1737^Abgenutzte Panzerweste
 @i^1744^Geschnürte Panzerschulterpolster
+@i^1751^Gekettelte Hose
 @i^1764^Segeltuchschuhe
 @i^1766^Segeltuchumhang
 @i^1767^Segeltuchhandschuhe
 @i^1768^Segeltuchhose
+@i^1774^Brokatumhang
 @i^1787^Geflickter Ledergürtel
 @i^1788^Geflickte Lederstiefel
 @i^1814^Ramponierter Schlaghammer
@@ -481,6 +486,7 @@ GoldScout-export 7^37dfqf16vx2u^43
 @i^9776^Banditen-Stiefel des Schattenschutzes
 @i^9778^Banditen-Rundschild des Verteidigers
 @i^9782^Banditen-Wams der Beweglichkeit
+@i^9815^Befestigte Gamaschen des Wals
 @i^10399^Geschwärzte Rüstung der Defias
 @i^11081^Formel: Schild - Geringer Schutz
 @i^11406^Faulendes Bärengerippe
@@ -513,6 +519,7 @@ GoldScout-export 7^37dfqf16vx2u^43
 @i^216483^Schlaghammer der Witherbark
 @i^247826^Quakis Kopf
 @i^248683^Abgefangene Kiste: Erz des Lehrlings
+@i^248684^Abgefangene Kiste: Textilien des Lehrlings
 @i^248685^Abgefangene Kiste: Kuriositäten des Lehrlings
 @i^248690^Abgefangene Kiste: Weltliche Kräuter des Experten
 @i^248704^Abgefangene Kiste: Bauteile des Lehrlings
@@ -566,6 +573,7 @@ GoldScout-export 7^37dfqf16vx2u^43
 @q^858^1:0:0
 @q^872^3:2:0
 @q^915^1:12:0
+@q^929^1:0:0
 @q^954^1:0:0
 @q^1006^1:12:0
 @q^1081^1:7:1
@@ -607,10 +615,12 @@ GoldScout-export 7^37dfqf16vx2u^43
 @q^1710^1:0:0
 @q^1737^0:4:0
 @q^1744^0:4:0
+@q^1751^0:4:0
 @q^1764^0:4:0
 @q^1766^0:4:0
 @q^1767^0:4:0
 @q^1768^0:4:0
+@q^1774^0:4:0
 @q^1787^0:4:0
 @q^1788^0:4:0
 @q^1814^0:2:0
@@ -812,6 +822,7 @@ GoldScout-export 7^37dfqf16vx2u^43
 @q^9776^2:4:0
 @q^9778^2:4:0
 @q^9782^2:4:0
+@q^9815^2:4:0
 @q^10399^3:4:0
 @q^11081^2:9:0
 @q^11406^0:15:0
@@ -844,6 +855,7 @@ GoldScout-export 7^37dfqf16vx2u^43
 @q^216483^1:0:0
 @q^247826^1:12:0
 @q^248683^1:0:1
+@q^248684^1:0:1
 @q^248685^1:0:1
 @q^248690^1:0:1
 @q^248704^2:0:1
@@ -884,6 +896,7 @@ GoldScout-export 7^37dfqf16vx2u^43
 @m^1429^Wald von Elwynn
 @m^1431^Dämmerwald
 @m^1432^Loch Modan
+@m^1433^Rotkammgebirge
 @m^1434^Schlingendorntal
 @m^1436^Westfall
 @m^1438^Teldrassil
@@ -2931,6 +2944,7 @@ GoldScout-export 7^37dfqf16vx2u^43
 @a^330^313:1
 @a^390^313:2
 @a^391^326:1
+@a^435^25:4,44:3,45:2,64:1
 @a^449^286:1
 @a^458^125:1
 @a^474^245:1
@@ -3066,6 +3080,7 @@ GoldScout-export 7^37dfqf16vx2u^43
 @a^3780^189:1
 @a^3809^188:1
 @a^3819^164:1
+@a^4463^44:1,45:1,64:2
 @a^5893^246:1
 @a^6123^235:4,255:6
 @a^6250^126:1
