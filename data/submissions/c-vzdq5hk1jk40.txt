@@ -1,4 +1,4 @@
-GoldScout-export 7^vzdq5hk1jk40^33
+GoldScout-export 7^vzdq5hk1jk40^34
 36^1^0^11^11^1436^0.3308^0.3529^1^Golem des moissons^1274:1:1,255007:1:1^
 117^3^0^11^12^1436^0.5599^0.1319^3^Gnoll Rivepatte^^
 123^1^0^14^14^1436^0.3564^0.3264^1^Bâtard Rivepatte^^
@@ -123,13 +123,18 @@ GoldScout-export 7^vzdq5hk1jk40^33
 4041^1^0^27^27^1442^0.3493^0.7092^1^Basilic cramoisi^11384:1:1^
 4054^1^0^25^25^1440^0.6162^0.5143^1^Soeur rieuse^^
 4099^1^0^27^27^1441^0.1959^0.2301^1^Maraudeur galak^^
-4113^1^0^29^29^1441^0.1121^0.1445^1^Mineur Mufle-de-gravier^^
+4104^2^0^30^30^1441^0.2695^0.5199^2^Imploratrice céleste hurlante^17056:1:1^
+4111^1^0^26^27^1441^0.3460^0.2740^1^Kobold Mufle-de-gravier^^
+4113^2^0^28^29^1441^0.1030^0.1542^2^Mineur Mufle-de-gravier^4306:1:1^
+4114^1^0^27^28^1441^0.3802^0.5163^1^Fourrageur Mufle-de-gravier^^
 4116^1^0^30^30^1441^0.1046^0.1397^1^Géomètre Mufle-de-gravier^^
 4120^1^0^28^29^1441^0.0955^0.1665^1^Eboulide fulminant^4784:1:1^
-4124^3^0^27^28^1441^0.1652^0.2251^3^Puma des pointes^5136:1:1,5137:2:2^
+4124^4^0^27^28^1441^0.1519^0.2041^4^Puma des pointes^5136:1:1,5137:2:2,14573:1:1^
+4126^1^0^25^26^1441^0.3627^0.2928^1^Traqueur des combes^5137:1:1^
 4130^1^0^32^33^1441^0.7001^0.8234^1^Chercheur silithide^5877:1:1,6302:1:1^
 4132^1^0^36^36^1441^0.6839^0.8238^1^Ravageur silithide^5854:1:1,6300:1:1,8224:1:1^
 4133^8^0^33^34^1441^0.6791^0.8506^8^Bourdon silithide^5853:3:3,5854:4:4,5855:1:1,5877:1:1,6300:1:1,6302:2:2^
+4248^1^0^26^27^1441^0.2405^0.2270^1^Hyène Pestepoil^3402:1:1^
 4249^1^0^28^29^1441^0.6780^0.6192^1^Grogneuse Pestepoil^5635:1:1^
 4273^1^0^29^29^1440^0.6200^0.5136^1^Gardien Ordanus^3385:1:1,5686:1:1^
 4421^1^0^0^0^0^0.0000^0.0000^0^^4306:1:2,5793:1:1,6693:1:1,17008:1:1^
@@ -325,6 +330,7 @@ GoldScout-export 7^vzdq5hk1jk40^33
 @i^3378^Ceinture en brocart
 @i^3380^Ceinture à couture croisée
 @i^3385^Potion de mana inférieure
+@i^3402^Touffe de fourrure douce
 @i^3403^Défense de sanglier en ivoire
 @i^3404^Aile de busard
 @i^3467^Clé en fer terne
@@ -496,6 +502,7 @@ GoldScout-export 7^vzdq5hk1jk40^33
 @i^14195^Bottes d'invocateur de pluie de sorcellerie
 @i^14377^Protège-mains sanguins
 @i^14562^Plastron de prospecteur
+@i^14573^Amict de rêche-écorce
 @i^14758^Protège-épaules de tueur
 @i^15211^Epée courte militante de la chouette
 @i^15222^Marteau clouté du gorille
@@ -652,6 +659,7 @@ GoldScout-export 7^vzdq5hk1jk40^33
 @q^3378^0:4:0
 @q^3380^0:4:0
 @q^3385^1:0:0
+@q^3402^0:15:0
 @q^3403^0:15:0
 @q^3404^1:7:1
 @q^3467^1:13:0
@@ -823,6 +831,7 @@ GoldScout-export 7^vzdq5hk1jk40^33
 @q^14195^2:4:0
 @q^14377^2:4:0
 @q^14562^2:4:0
+@q^14573^2:4:0
 @q^14758^2:4:0
 @q^15211^2:2:0
 @q^15222^2:2:0
@@ -1722,13 +1731,18 @@ GoldScout-export 7^vzdq5hk1jk40^33
 @a^4041^286:1
 @a^4054^212:1
 @a^4099^83:1
-@a^4113^42:1
+@a^4104^205:2
+@a^4111^106:1
+@a^4113^42:1,61:1
+@a^4114^207:1
 @a^4116^42:1
 @a^4120^61:1
-@a^4124^21:1,22:1,185:1
+@a^4124^21:1,22:1,42:1,185:1
+@a^4126^107:1
 @a^4130^334:1
 @a^4132^333:1
 @a^4133^334:3,352:1,353:4
+@a^4248^84:1
 @a^4249^253:1
 @a^4273^212:1
 @a^4479^151:1
@@ -1770,6 +1784,7 @@ GoldScout-export 7^vzdq5hk1jk40^33
 @t^2563^5:178
 @t^2565^11:659
 @t^2579^3:249
+@t^4104^1:65
 @t^4113^1:28
 @t^4120^1:177
 @t^4124^1:74

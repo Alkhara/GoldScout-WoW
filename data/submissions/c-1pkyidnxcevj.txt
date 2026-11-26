@@ -1,5 +1,13 @@
-GoldScout-export 7^1pkyidnxcevj^11
-683^1^0^30^31^1434^0.4116^0.0884^1^Pantera joven^^
+GoldScout-export 9^1pkyidnxcevj^12
+587^4^0^33^34^1434^0.2990^0.1953^4^Guerrero Cabellesangre^1520:3:3,2592:1:1,2749:1:1,3807:1:1^
+588^5^0^34^35^1434^0.2486^0.1192^5^Explorador Cabellesangre^4306:1:2^
+595^10^0^34^35^1434^0.2353^0.1222^10^Cazador Cabellesangre^2592:1:3,4306:3:5^
+681^1^0^30^31^1434^0.3739^0.1165^1^Tigre joven de Tuercespina^248686:1:1^
+683^2^0^30^31^1434^0.4011^0.0784^2^Pantera joven^1686:1:1^
+694^1^0^33^33^1434^0.3012^0.1971^1^Lanzahachas Cabellesangre^^
+697^2^0^34^34^1434^0.3041^0.1911^2^Chamán Cabellesangre^2749:1:1,4306:1:2^
+699^1^0^35^35^1434^0.2504^0.1078^1^Maestro de bestias Cabellesangre^4306:1:1^
+701^5^0^34^35^1434^0.2465^0.1127^5^Místico Cabellesangre^2748:1:1,4306:1:1,277957:1:1^
 937^16^0^32^33^1434^0.4521^0.1045^16^Jíbaro Kurzen^1711:1:1,2740:1:1,3811:1:1,3827:1:1,4306:6:9^
 938^10^0^34^35^1434^0.4604^0.0754^10^Comando Kurzen^1707:1:1,1708:1:1,2592:1:1,4306:1:2,7447:1:1^
 939^10^0^36^37^1434^0.4892^0.0808^10^Élite Kurzen^1708:1:1,2728:1:1,2730:1:1,4306:3:5^
@@ -104,6 +112,8 @@ GoldScout-export 7^1pkyidnxcevj^11
 @i^1433^Armadura de retales
 @i^1477^Pergamino de Agilidad II
 @i^1516^Hachuela desgastada
+@i^1520^Sudor trol
+@i^1686^Bigote de cerdas
 @i^1705^Piedra lunar inferior
 @i^1707^Brie de Ventormenta
 @i^1708^Néctar dulce
@@ -133,6 +143,8 @@ GoldScout-export 7^1pkyidnxcevj^11
 @i^2730^Las verdes colinas de Tuercespina: Página 6
 @i^2740^Las verdes colinas de Tuercespina: Página 16
 @i^2745^Las verdes colinas de Tuercespina: Página 21
+@i^2748^Las verdes colinas de Tuercespina: Página 24
+@i^2749^Las verdes colinas de Tuercespina: Página 25
 @i^2750^Las verdes colinas de Tuercespina: Página 26
 @i^2751^Las verdes colinas de Tuercespina: Página 27
 @i^2773^Arco corto rajado
@@ -150,6 +162,7 @@ GoldScout-export 7^1pkyidnxcevj^11
 @i^3794^Brazales entrelazados
 @i^3796^Guantes entrelazados
 @i^3806^Hombreras de cuero endurecido
+@i^3807^Túnica de cuero endurecido
 @i^3808^Cinturón de malla doble
 @i^3811^Capa con doble pespunte
 @i^3818^Pálida
@@ -209,6 +222,7 @@ GoldScout-export 7^1pkyidnxcevj^11
 @i^213526^Anca híbrida
 @i^216483^Marra Secacorteza
 @i^216616^Llave de la jaula del complejo
+@i^248686^Cajón saqueado: hierbas de oficial
 @i^251961^Mota Arcana
 @i^252022^Cecina de zancavendavales
 @i^252028^Pan de soplobayas fresco
@@ -251,6 +265,7 @@ GoldScout-export 7^1pkyidnxcevj^11
 @i^273815^Camisa de Hijo del Viento liviana
 @i^276158^Fragmento cristalizado
 @i^276160^Fragmento de maná
+@i^277957^Llave primitiva
 @q^118^1:0:0
 @q^159^1:0:0
 @q^791^3:2:0
@@ -271,6 +286,8 @@ GoldScout-export 7^1pkyidnxcevj^11
 @q^1433^0:4:0
 @q^1477^1:0:0
 @q^1516^0:2:0
+@q^1520^0:15:0
+@q^1686^0:15:0
 @q^1705^2:7:1
 @q^1707^1:0:0
 @q^1708^1:0:0
@@ -300,6 +317,8 @@ GoldScout-export 7^1pkyidnxcevj^11
 @q^2730^1:12:0
 @q^2740^1:12:0
 @q^2745^1:12:0
+@q^2748^1:12:0
+@q^2749^1:12:0
 @q^2750^1:12:0
 @q^2751^1:12:0
 @q^2773^0:2:0
@@ -317,6 +336,7 @@ GoldScout-export 7^1pkyidnxcevj^11
 @q^3794^0:4:0
 @q^3796^0:4:0
 @q^3806^0:4:0
+@q^3807^0:4:0
 @q^3808^0:4:0
 @q^3811^0:4:0
 @q^3818^1:7:1
@@ -376,6 +396,7 @@ GoldScout-export 7^1pkyidnxcevj^11
 @q^213526^1:12:0
 @q^216483^1:0:0
 @q^216616^1:12:0
+@q^248686^1:0:1
 @q^251961^1:12:0
 @q^252022^1:0:0
 @q^252028^1:0:0
@@ -418,6 +439,7 @@ GoldScout-export 7^1pkyidnxcevj^11
 @q^273815^1:4:0
 @q^276158^0:15:0
 @q^276160^0:15:0
+@q^277957^1:12:0
 @m^1416^Montañas de Alterac
 @m^1417^Tierras Altas de Arathi
 @m^1421^Bosque de Argénteos
@@ -1159,7 +1181,15 @@ GoldScout-export 7^1pkyidnxcevj^11
 @c^279985^
 @c^279987^
 @c^286152^
-@a^683^28:1
+@a^587^66:2,85:2
+@a^588^44:2,45:3
+@a^595^24:1,44:7,45:2
+@a^681^47:1
+@a^683^27:1,28:1
+@a^694^66:1
+@a^697^65:1,66:1
+@a^699^45:1
+@a^701^25:1,44:2,45:2
 @a^937^28:6,48:1,49:9
 @a^938^28:1,29:9
 @a^939^29:10
@@ -1223,14 +1253,13 @@ GoldScout-export 7^1pkyidnxcevj^11
 @a^270201^272:6,273:11
 @a^276415^269:3
 @a^276416^269:5
-@t^937^12:513
-@t^938^1:135
-@t^940^12:611
-@t^941^2:42
-@t^2243^1:40
-@t^2246^5:390
-@t^2247^1:20
-@t^2320^1:42
+@t^587^4:181
+@t^595^6:937
+@t^681^1:352
+@t^683^1:157
+@t^694^1:61
+@t^697^1:84
+@t^701^1:59
 @f^1416^0^22^266^6308:5:5,8365:3:3,21150:3:3,21153:11:11^67:3,87:3,146:10,184:6
 @f^1421^0^5^265^6289:4:4,6299:1:1^173:5
 @f^1422^0^110^252^6358:4:4,8365:11:11,9949:1:1,13758:60:60,13759:15:15,13760:19:19^309:110

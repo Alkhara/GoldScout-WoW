@@ -1,4 +1,4 @@
-GoldScout-export 8^ui8x93tfrayk^55
+GoldScout-export 9^ui8x93tfrayk^57
 92^16^0^39^40^1418^0.3985^0.7842^16^Rock Elemental^4552:2:2,4553:6:6,4627:3:3,4784:7:7,7067:2:2,7848:5:5,7912:3:4,8150:4:4^
 525^5^0^5^6^1429^0.3488^0.6263^5^Mangy Wolf^2672:4:4,3299:1:1,3300:1:1^
 588^2^0^34^35^1434^0.2391^0.1202^2^Bloodscalp Scout^2592:1:2^
@@ -143,6 +143,9 @@ GoldScout-export 8^ui8x93tfrayk^55
 255772^10^0^36^37^2548^0.1812^0.7118^10^Redridge Trapper^3402:2:2,4306:4:5,4338:1:1,7459:1:1^
 255774^4^0^35^36^2548^0.2002^0.6947^4^Redridge Scout^2592:1:3,20763:1:1^
 255906^1^0^40^40^2548^0.1668^0.7262^1^Snargl^265357:1:1^
+258573^21^0^36^37^2548^0.4732^0.7210^21^Mudfin Oracle^1645:1:1,3793:1:1,5524:9:9,17058:4:4,267266:5:5^
+258574^16^0^37^38^2548^0.4662^0.6917^16^Mudfin Warrior^3781:2:2,3811:1:1,3812:1:1,5524:8:8,17058:3:3,267266:3:3^
+258588^5^0^38^40^2548^0.5051^0.7311^5^Jumbo Crawfish^1708:1:1,4424:1:1,5524:1:1,266157:4:4^
 258792^9^0^0^0^0^0.0000^0.0000^0^^3779:1:1,4306:5:14,6421:1:1,7437:1:1,270343:1:1^
 258797^3^0^0^0^0^0.0000^0.0000^0^^3780:1:1,4061:1:1^
 258799^8^0^0^0^0^0.0000^0.0000^0^^4306:1:4,7457:1:1,8748:1:1,15226:1:1,248694:1:1^
@@ -167,7 +170,7 @@ GoldScout-export 8^ui8x93tfrayk^55
 264172^1^0^0^0^0^0.0000^0.0000^0^^286658:1:1^
 264177^1^0^0^0^0^0.0000^0.0000^0^^286649:1:1^
 268321^1^0^0^0^0^0.0000^0.0000^0^^3778:1:1^
-270664^1^0^38^38^2548^0.3922^0.6451^1^Venomweb Spitter^1074:1:1^
+270664^1^0^37^38^2548^0.3922^0.6451^1^Venomweb Spitter^1074:1:1^
 @i^537^Dull Frenzy Scale
 @i^770^Pointy Crocolisk Tooth
 @i^864^Knightly Longsword of the Wolf
@@ -222,12 +225,15 @@ GoldScout-export 8^ui8x93tfrayk^55
 @i^3781^Broad Claymore
 @i^3782^Large War Club
 @i^3783^Light Scimitar
+@i^3793^Interlaced Boots
 @i^3795^Interlaced Cloak
 @i^3801^Hardened Leather Boots
 @i^3802^Hardened Leather Bracers
 @i^3803^Hardened Cloak
 @i^3805^Hardened Leather Pants
 @i^3809^Double Mail Boots
+@i^3811^Double-Stitched Cloak
+@i^3812^Double Mail Gloves
 @i^3814^Double Mail Shoulderpads
 @i^3817^Reinforced Buckler
 @i^3818^Fadeleaf
@@ -242,6 +248,7 @@ GoldScout-export 8^ui8x93tfrayk^55
 @i^4338^Mageweave Cloth
 @i^4402^Small Flame Sac
 @i^4421^Scroll of Protection III
+@i^4424^Scroll of Spirit III
 @i^4460^Ripped Wing Webbing
 @i^4539^Goldenbark Apple
 @i^4544^Mulgore Spice Bread
@@ -263,6 +270,7 @@ GoldScout-export 8^ui8x93tfrayk^55
 @i^4720^Nightsky Sash
 @i^4784^Lifeless Stone
 @i^5116^Long Tail Feather
+@i^5524^Thick-shelled Clam
 @i^5567^Silver Hook
 @i^5637^Large Fang
 @i^5785^Thick Murloc Scale
@@ -364,6 +372,8 @@ GoldScout-export 8^ui8x93tfrayk^55
 @i^254432^Carved Centaur Totem
 @i^262888^Sealed Journeyman's Writ
 @i^265357^Snargl's Snout
+@i^266157^Jumbo Crawfish Shell
+@i^267266^Mudfin Murloc Head
 @i^270333^Voodoo-Infused Artifact
 @i^270343^I'lalai Fetish
 @i^274044^Twisted Fire Totem
@@ -435,12 +445,15 @@ GoldScout-export 8^ui8x93tfrayk^55
 @q^3781^0:2:0
 @q^3782^0:2:0
 @q^3783^0:2:0
+@q^3793^0:4:0
 @q^3795^0:4:0
 @q^3801^0:4:0
 @q^3802^0:4:0
 @q^3803^0:4:0
 @q^3805^0:4:0
 @q^3809^0:4:0
+@q^3811^0:4:0
+@q^3812^0:4:0
 @q^3814^0:4:0
 @q^3817^0:4:0
 @q^3818^1:7:1
@@ -455,6 +468,7 @@ GoldScout-export 8^ui8x93tfrayk^55
 @q^4338^1:7:1
 @q^4402^1:7:1
 @q^4421^1:0:0
+@q^4424^1:0:0
 @q^4460^0:15:0
 @q^4539^1:0:0
 @q^4544^1:0:0
@@ -476,6 +490,7 @@ GoldScout-export 8^ui8x93tfrayk^55
 @q^4720^2:4:0
 @q^4784^0:15:0
 @q^5116^1:7:1
+@q^5524^1:7:0
 @q^5567^0:15:0
 @q^5637^1:7:1
 @q^5785^1:7:1
@@ -577,6 +592,8 @@ GoldScout-export 8^ui8x93tfrayk^55
 @q^254432^2:15:0
 @q^262888^3:0:0
 @q^265357^1:12:0
+@q^266157^1:12:0
+@q^267266^1:12:0
 @q^270333^1:12:0
 @q^270343^1:12:0
 @q^274044^1:12:0
@@ -1287,22 +1304,14 @@ GoldScout-export 8^ui8x93tfrayk^55
 @a^255772^264:1,283:8,284:1
 @a^255774^263:1,264:2,283:1
 @a^255906^283:1
+@a^258573^228:5,248:3,309:8,310:1,329:4
+@a^258574^228:8,290:1,309:2,329:2,330:3
+@a^258588^269:1,290:3,310:1
 @a^259269^266:1
 @a^262473^285:3,286:7
 @a^262477^285:5,286:4
 @a^270664^247:1
-@t^1036^7:555
-@t^1037^1:355
-@t^1038^7:600
-@t^1057^1:2
-@t^2091^1:244
-@t^2728^16:1304
-@t^2944^1:143
-@t^255769^6:397
-@t^255770^9:571
-@t^255772^7:296
-@t^255774^3:155
-@t^262473^10:755
-@t^262477^8:681
+@t^258573^8:1099
+@t^258574^7:256
 @f^1424^0^8^138^6289:1:1,6308:1:1,21071:6:6^53:8
 @l^0^enUS

@@ -1,4 +1,4 @@
-GoldScout-export 6^v0syh68vq8b3^15
+GoldScout-export 6^v0syh68vq8b3^16
 95^2^0^11^12^1436^0.4602^0.2951^2^Defias Smuggler^2589:1:3^
 114^59^0^14^15^1436^0.4482^0.3577^59^Harvest Watcher^732:15:15,814:11:11,818:1:1,1274:14:14,1502:1:1,1504:1:1,1510:1:1,1511:1:1,1514:1:1,1516:1:1,1732:1:1,1737:1:1,2214:1:1,2215:1:1,3036:1:1,3374:1:1,4359:4:4,4361:3:3,4363:1:1,6548:1:1,9756:1:1,248683:1:1,255007:15:15,255010:4:4^
 121^2^0^15^16^1436^0.3760^0.7486^2^Defias Pathstalker^^
@@ -35,6 +35,11 @@ GoldScout-export 6^v0syh68vq8b3^15
 1563^15^0^42^43^1434^0.2525^0.6369^15^Bloodsail Swashbuckler^1645:2:2,2732:1:1,3910:5:5,3936:1:1,4338:3:3^
 1564^13^0^42^43^1434^0.2661^0.7125^13^Bloodsail Warlock^1645:1:1,3910:5:5,4007:1:1,4021:1:1,4306:1:2,4338:4:6,9260:1:1,217161:1:1^
 1756^2^0^60^60^1453^0.7997^0.4102^2^Onyxia's Elite Guard^^
+1783^10^0^50^51^1422^0.5007^0.7846^10^Skeletal Flayer^8766:1:1,12840:4:4,14047:2:2^
+1787^2^0^54^55^1422^0.4233^0.7404^2^Skeletal Executioner^12840:1:1,14619:1:1^
+1791^10^0^50^52^1422^0.5049^0.7833^10^Slavering Ghoul^6530:2:2,12840:1:1,14047:4:6^
+1794^2^0^54^55^1422^0.4289^0.6715^2^Soulless Ghoul^12840:1:1,14047:1:2^
+1795^1^0^56^56^1422^0.4657^0.7519^1^Searing Ghoul^^
 1907^24^0^43^44^1434^0.2750^0.6241^24^Naga Explorer^1645:1:1,3928:1:1,4029:10:10,4603:1:2,7973:5:5,8751:1:1,17058:8:8^
 2287^2^0^39^40^1416^0.3610^0.5332^2^Crushridge Warmonger^3771:1:1,4306:2:4,284870:1:1^
 2417^1^0^39^39^1416^0.3632^0.5380^1^Grel'borg the Miser^3684:1:1^
@@ -485,6 +490,7 @@ GoldScout-export 6^v0syh68vq8b3^15
 @i^6444^Forked Tongue
 @i^6512^Disciple's Robe of the Bear
 @i^6528^Spellbinder Robe
+@i^6530^Nightcrawlers
 @i^6541^Willow Gloves of Shadow Wrath
 @i^6548^Soldier's Girdle of Strength
 @i^6826^Brilliant Scale
@@ -653,6 +659,7 @@ GoldScout-export 6^v0syh68vq8b3^15
 @i^12682^Plans: Thorium Armor
 @i^12689^Plans: Radiant Breastplate
 @i^12702^Plans: Radiant Circlet
+@i^12840^Minion's Scourgestone
 @i^13026^Heaven's Light
 @i^13443^Superior Mana Potion
 @i^13446^Major Healing Potion
@@ -666,6 +673,7 @@ GoldScout-export 6^v0syh68vq8b3^15
 @i^14432^Windchaser Amice
 @i^14477^Pattern: Ghostweave Gloves
 @i^14492^Pattern: Felcloth Boots
+@i^14619^Skeletal Fragments
 @i^14662^Keeper's Hooves
 @i^14768^Ravager's Armor
 @i^14776^Ravager's Mantle
@@ -971,6 +979,7 @@ GoldScout-export 6^v0syh68vq8b3^15
 @q^6444^0:15:0
 @q^6512^2:4:0
 @q^6528^2:4:0
+@q^6530^1:0:0
 @q^6541^2:4:0
 @q^6548^2:4:0
 @q^6826^0:15:0
@@ -1139,6 +1148,7 @@ GoldScout-export 6^v0syh68vq8b3^15
 @q^12682^2:9:0
 @q^12689^2:9:0
 @q^12702^2:9:0
+@q^12840^1:12:0
 @q^13026^3:2:0
 @q^13443^1:0:0
 @q^13446^1:0:0
@@ -1152,6 +1162,7 @@ GoldScout-export 6^v0syh68vq8b3^15
 @q^14432^2:4:0
 @q^14477^2:9:0
 @q^14492^2:9:0
+@q^14619^1:12:0
 @q^14662^2:4:0
 @q^14768^2:4:0
 @q^14776^2:4:0
@@ -1269,6 +1280,7 @@ GoldScout-export 6^v0syh68vq8b3^15
 @m^1414^Kalimdor
 @m^1416^Alterac Mountains
 @m^1419^Blasted Lands
+@m^1422^Western Plaguelands
 @m^1425^The Hinterlands
 @m^1426^Dun Morogh
 @m^1427^Searing Gorge
@@ -2544,6 +2556,11 @@ GoldScout-export 6^v0syh68vq8b3^15
 @a^1563^204:7,224:3,325:5
 @a^1564^204:4,224:1,325:8
 @a^1756^175:2
+@a^1783^309:1,310:7,329:1,330:1
+@a^1787^287:1,309:1
+@a^1791^310:10
+@a^1794^248:1,288:1
+@a^1795^309:1
 @a^1907^225:1,245:23
 @a^2287^207:2
 @a^2417^207:1

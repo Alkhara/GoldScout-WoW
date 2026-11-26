@@ -1,4 +1,4 @@
-GoldScout-export 7^etgspej3430l^15
+GoldScout-export 9^etgspej3430l^16
 587^1^0^33^33^1434^0.3046^0.1832^1^Bloodscalp Warrior^4306:1:1^
 588^30^0^34^35^1434^0.2564^0.1038^30^Bloodscalp Scout^1519:3:3,1708:1:1,1710:1:1,3771:1:1,3779:1:1,3816:1:1,3901:4:4,3915:5:5,4306:6:8,7446:1:1,213544:1:1,248710:1:1^
 595^30^0^34^35^1434^0.2549^0.1053^30^Bloodscalp Hunter^1519:6:6,1710:1:1,2728:1:1,2749:1:1,3771:2:2,3780:1:1,3793:1:1,3805:1:1,3901:2:2,3915:7:7,4306:6:9,4721:1:1^
@@ -53,6 +53,8 @@ GoldScout-export 7^etgspej3430l^15
 2587^9^0^32^33^1417^0.3212^0.2893^9^Syndicate Pathstalker^3797:1:1,3816:1:1,4306:4:6,4495:2:2,5113:1:1^
 2589^7^0^31^32^1417^0.3274^0.2949^7^Syndicate Mercenary^1707:1:1,3817:1:1,4306:3:5,5113:2:2,255723:1:1^
 2635^1^0^38^38^1434^0.2981^0.2541^1^Elder Saltwater Crocolisk^770:1:1,3667:1:1,4105:1:1,12037:1:1^
+2729^3^0^39^40^1418^0.2207^0.5246^3^Elder Crag Coyote^4582:1:1,4583:1:1,6166:3:3,7846:1:1,12203:1:1^
+2735^5^0^37^39^1418^0.1941^0.4569^5^Lesser Rock Elemental^4552:1:1,4784:3:3,7067:2:2,7848:2:2,7912:1:1,8150:2:2^
 3273^1^0^13^13^1413^0.4676^0.3639^1^Kolkar Stormer^2589:1:1^
 3476^1^0^27^27^1413^0.6403^0.5088^1^Isha Awak^5524:1:1,6308:1:1^
 3632^1^0^15^16^1414^0.5188^0.5469^1^Deviate Creeper^5124:1:1^
@@ -286,6 +288,7 @@ GoldScout-export 7^etgspej3430l^15
 @i^4461^Raptor Hide
 @i^4495^Bloodstone Amulet
 @i^4512^Highland Raptor Eye
+@i^4552^Smooth Stone Chip
 @i^4553^Jagged Piece of Stone
 @i^4582^Soft Bushy Tail
 @i^4583^Thick Furry Mane
@@ -314,6 +317,7 @@ GoldScout-export 7^etgspej3430l^15
 @i^5970^Serpent Gloves
 @i^6066^Khan Dez'hepah's Head
 @i^6067^Centaur Ear
+@i^6166^Coyote Jawbone
 @i^6289^Raw Longjaw Mud Snapper
 @i^6291^Raw Brilliant Smallfish
 @i^6308^Raw Bristle Whisker Catfish
@@ -328,10 +332,15 @@ GoldScout-export 7^etgspej3430l^15
 @i^6470^Deviate Scale
 @i^6607^Dervish Leggings of Arcane Wrath
 @i^6826^Brilliant Scale
+@i^7067^Elemental Earth
 @i^7072^Naga Scale
 @i^7435^Twilight Mantle of the Physician
 @i^7446^Sentinel Cloak of Spirit
+@i^7846^Crag Coyote Fang
+@i^7848^Rock Elemental Shard
+@i^7912^Solid Stone
 @i^8146^Wicked Claw
+@i^8150^Deeprock Salt
 @i^8365^Raw Mithril Head Trout
 @i^9854^Archer's Jerkin of Agility
 @i^9872^Renegade Pauldrons of Intellect
@@ -514,6 +523,7 @@ GoldScout-export 7^etgspej3430l^15
 @q^4461^1:7:1
 @q^4495^1:12:0
 @q^4512^1:12:0
+@q^4552^0:15:0
 @q^4553^0:15:0
 @q^4582^1:12:0
 @q^4583^0:15:0
@@ -542,6 +552,7 @@ GoldScout-export 7^etgspej3430l^15
 @q^5970^3:4:0
 @q^6066^1:12:0
 @q^6067^1:12:0
+@q^6166^1:12:0
 @q^6289^1:7:1
 @q^6291^1:7:1
 @q^6308^1:7:1
@@ -556,10 +567,15 @@ GoldScout-export 7^etgspej3430l^15
 @q^6470^1:7:1
 @q^6607^2:4:0
 @q^6826^0:15:0
+@q^7067^1:7:1
 @q^7072^1:7:1
 @q^7435^2:4:0
 @q^7446^2:4:0
+@q^7846^1:12:0
+@q^7848^1:12:0
+@q^7912^1:7:1
 @q^8146^1:7:1
+@q^8150^1:7:1
 @q^8365^1:7:1
 @q^9854^2:4:0
 @q^9872^2:4:0
@@ -632,6 +648,7 @@ GoldScout-export 7^etgspej3430l^15
 @m^1414^Kalimdor
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
+@m^1418^Badlands
 @m^1434^Stranglethorn Vale
 @m^1442^Stonetalon Mountains
 @m^1443^Desolace
@@ -1056,6 +1073,8 @@ GoldScout-export 7^etgspej3430l^15
 @a^2587^106:6,126:3
 @a^2589^106:4,126:3
 @a^2635^105:1
+@a^2729^204:3
+@a^2735^163:2,183:2,184:1
 @a^3273^149:1
 @a^3476^212:1
 @a^3632^210:1
@@ -1148,14 +1167,8 @@ GoldScout-export 7^etgspej3430l^15
 @a^269175^106:1,126:2
 @a^270664^227:1
 @a^270667^249:1,290:1
-@t^255769^15:435
-@t^255770^8:230
-@t^255772^8:495
-@t^255774^25:751
-@t^260023^1:153
-@t^260968^2:154
-@t^262473^9:345
-@t^262477^7:206
+@t^2729^3:134
+@t^2735^4:172
 @f^1443^0^2^100^8365:2:2^284:2
 @f^1454^0^65^51^6289:38:38,6291:11:11,6308:14:14,6309:2:2^113:62,133:3
 @f^2548^0^1^101^6362:1:1^294:1
