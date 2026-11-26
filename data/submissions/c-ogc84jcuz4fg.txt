@@ -1,4 +1,6 @@
-GoldScout-export 6^ogc84jcuz4fg^12
+GoldScout-export 6^ogc84jcuz4fg^13
+124^9^0^15^16^1436^0.5399^0.6290^9^Riverpaw Brute^725:3:3,2589:2:5,2778:1:1^
+452^4^0^16^17^1436^0.5333^0.6232^4^Riverpaw Bandit^725:1:1,1767:1:1,2589:1:2^
 1115^6^0^8^9^1426^0.6759^0.5878^6^Rockjaw Skullthumper^1419:1:1,2589:2:2,2591:3:3,2642:1:1,3373:1:1,268548:1:1^
 1116^14^0^9^10^1426^0.7291^0.5455^14^Rockjaw Ambusher^117:1:1,159:1:1,1417:1:1,1430:1:1,2589:3:3,2591:1:1,211787:1:1,267415:7:17^
 1117^10^0^9^10^1426^0.7593^0.5712^10^Rockjaw Bonesnapper^2589:3:4,2591:3:3^
@@ -66,6 +68,7 @@ GoldScout-export 6^ogc84jcuz4fg^12
 @i^117^Tough Jerky
 @i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
+@i^725^Gnoll Paw
 @i^769^Chunk of Boar Meat
 @i^771^Chipped Boar Tusk
 @i^774^Malachite
@@ -90,6 +93,7 @@ GoldScout-export 6^ogc84jcuz4fg^12
 @i^1511^Commoner's Sword
 @i^1515^Rough Wooden Staff
 @i^1731^Worn Mail Boots
+@i^1767^Canvas Gloves
 @i^1790^Patched Cloak
 @i^2138^Sharpened Letter Opener
 @i^2212^Cracked Buckler
@@ -195,6 +199,7 @@ GoldScout-export 6^ogc84jcuz4fg^12
 @q^117^1:0:0
 @q^118^1:0:0
 @q^159^1:0:0
+@q^725^1:12:0
 @q^769^1:7:1
 @q^771^0:15:0
 @q^774^2:7:1
@@ -219,6 +224,7 @@ GoldScout-export 6^ogc84jcuz4fg^12
 @q^1511^0:2:0
 @q^1515^0:2:0
 @q^1731^0:4:0
+@q^1767^0:4:0
 @q^1790^0:4:0
 @q^2138^0:2:0
 @q^2212^0:4:0
@@ -323,6 +329,7 @@ GoldScout-export 6^ogc84jcuz4fg^12
 @q^286325^1:12:0
 @m^1426^Dun Morogh
 @m^1432^Loch Modan
+@m^1436^Westfall
 @m^1441^Thousand Needles
 @c^118^
 @c^724^
@@ -1207,6 +1214,8 @@ GoldScout-export 6^ogc84jcuz4fg^12
 @c^285280^
 @c^285281^
 @c^286152^
+@a^124^250:9
+@a^452^230:1,250:3
 @a^1115^233:6
 @a^1116^214:11,234:1,235:2
 @a^1117^214:1,234:4,235:4,255:1

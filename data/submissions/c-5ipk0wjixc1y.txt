@@ -1,4 +1,4 @@
-GoldScout-export 6^5ipk0wjixc1y^12
+GoldScout-export 6^5ipk0wjixc1y^13
 202^1^0^23^24^1431^0.1407^0.4964^1^Skeletal Horror^^
 205^1^0^29^29^1431^0.6483^0.7590^1^Nightbane Dark Runner^^
 206^3^0^29^30^1431^0.7329^0.7275^3^Nightbane Vile Fang^1809:1:1,3770:1:1,6590:1:1^
@@ -7,10 +7,20 @@ GoldScout-export 6^5ipk0wjixc1y^12
 533^1^0^27^27^1431^0.6697^0.7727^1^Nightbane Shadow Weaver^^
 570^3^0^28^29^1431^0.1771^0.3397^3^Brain Eater^4306:1:1^
 604^17^0^27^28^1431^0.1825^0.3369^17^Plague Spreader^887:1:1,1205:1:1,2786:1:1,4306:4:8,4606:1:1,5529:2:2,6530:3:3^
+681^7^0^30^31^1434^0.3750^0.1371^7^Young Stranglethorn Tiger^1686:4:4,1687:1:1,12202:1:1,211784:1:1^
+682^8^0^32^33^1434^0.3905^0.1391^8^Stranglethorn Tiger^1686:3:3,3185:1:1,5637:1:1,12202:3:3^
+683^4^0^30^31^1434^0.3938^0.1339^4^Young Panther^1686:3:3,1687:1:1,5637:1:1^
+684^6^0^37^38^1434^0.4701^0.2523^6^Shadowmaw Panther^1686:1:1,1688:3:3,5637:1:1,248693:1:1^
+685^10^0^33^34^1434^0.2640^0.1621^10^Stranglethorn Raptor^1696:2:2,3685:5:5,4461:5:5,4586:4:4,12184:6:6^
+686^3^0^36^36^1434^0.3815^0.2126^3^Lashtail Raptor^1696:1:1,3685:2:2,12184:2:2^
+736^5^0^32^33^1434^0.2900^0.1210^5^Panther^1686:4:4^
+772^3^0^37^38^1434^0.4848^0.2338^3^Stranglethorn Tigress^1686:1:1,1688:1:1,12202:1:1^
 785^2^0^28^29^1431^0.1570^0.3749^2^Skeletal Warder^2592:1:1,4306:1:2^
 787^4^0^26^27^1431^0.1693^0.3802^4^Skeletal Healer^4306:1:2,4352:1:1,4606:1:1^
 920^6^0^30^31^1431^0.6225^0.7684^6^Nightbane Tainted One^1205:1:1,3787:1:1^
 930^1^0^24^25^1431^0.3112^0.5822^1^Black Widow Hatchling^1081:1:1^
+937^14^0^32^33^1434^0.4506^0.1088^14^Kurzen Jungle Fighter^1708:2:2,2734:1:1,2951:1:1,4306:7:12,251388:1:1^
+940^7^0^32^33^1434^0.4529^0.1143^7^Kurzen Medicine Man^2633:3:3,2735:1:1,2744:1:1,3356:1:1,4306:4:7^
 949^2^0^25^26^1431^0.1736^0.4007^2^Carrion Recluse^1081:2:2,3174:2:2^
 1017^2^0^25^26^1437^0.3542^0.1887^2^Highland Scytheclaw^1697:1:1,3685:1:1^
 1018^16^0^27^28^1437^0.3515^0.1875^16^Highland Razormaw^1696:2:2,1697:4:4,3021:1:1,3685:4:4,6597:1:1,280103:9:9^
@@ -167,6 +177,7 @@ GoldScout-export 6^5ipk0wjixc1y^12
 @i^1529^Jade
 @i^1686^Bristly Whisker
 @i^1687^Retractable Claw
+@i^1688^Long Soft Tail
 @i^1696^Curved Raptor Talon
 @i^1697^Keen Raptor Tooth
 @i^1705^Lesser Moonstone
@@ -194,11 +205,16 @@ GoldScout-export 6^5ipk0wjixc1y^12
 @i^2034^Scholarly Robes
 @i^2251^Gooey Spider Leg
 @i^2592^Wool Cloth
+@i^2633^Jungle Remedy
 @i^2674^Crawler Meat
 @i^2675^Crawler Claw
+@i^2734^Green Hills of Stranglethorn - Page 10
+@i^2735^Green Hills of Stranglethorn - Page 11
+@i^2744^Green Hills of Stranglethorn - Page 20
 @i^2765^Hunting Knife
 @i^2786^Oiled Blunderbuss
 @i^2843^Dirty Knucklebones
+@i^2951^Ring of the Underwood
 @i^3021^Ranger Bow
 @i^3057^Forest Leather Boots
 @i^3174^Spider Ichor
@@ -206,10 +222,12 @@ GoldScout-export 6^5ipk0wjixc1y^12
 @i^3176^Small Claw
 @i^3180^Flecked Raptor Scale
 @i^3182^Spider's Silk
+@i^3185^Acrobatic Staff of Intellect
 @i^3201^Barbarian War Axe of the Beast
 @i^3206^Cavalier Two-hander of Shadow Protection
 @i^3337^Dragonmaw War Banner
 @i^3349^Sida's Bag
+@i^3356^Kingsblood
 @i^3385^Lesser Mana Potion
 @i^3415^Staff of the Friar
 @i^3416^Martyr's Chain
@@ -243,10 +261,12 @@ GoldScout-export 6^5ipk0wjixc1y^12
 @i^4364^Coarse Blasting Powder
 @i^4377^Heavy Blasting Powder
 @i^4402^Small Flame Sac
+@i^4461^Raptor Hide
 @i^4482^Sealed Folder
 @i^4542^Moist Cornbread
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
+@i^4586^Smooth Raptor Skin
 @i^4606^Spongy Morel
 @i^4633^Heavy Bronze Lockbox
 @i^5113^Mark of the Syndicate
@@ -298,12 +318,15 @@ GoldScout-export 6^5ipk0wjixc1y^12
 @i^11152^Formula: Enchant Gloves - Fishing
 @i^11983^Chrome Ring of the Physician
 @i^12037^Mystery Meat
+@i^12184^Raptor Flesh
+@i^12202^Tiger Meat
 @i^13079^Shield of Thorsen
 @i^14127^Ritual Shroud of the Bear
 @i^15113^Rigid Buckler of Spirit
 @i^15342^Pathfinder Guard of Frost Protection
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
+@i^211784^Scroll: WUBBA WUBBA
 @i^211853^Scroll: VOCE WELL
 @i^211854^Scroll: OMIT KESA
 @i^213547^Scroll: THAW WORDS
@@ -313,8 +336,10 @@ GoldScout-export 6^5ipk0wjixc1y^12
 @i^248689^Waylaid Crate: Journeyman Curiosities
 @i^248691^Waylaid Crate: Flowering Expert Herbs
 @i^248692^Waylaid Crate: Expert Ore
+@i^248693^Waylaid Crate: Expert Textiles
 @i^248706^Waylaid Crate: Journeyman Ingots
 @i^249881^Recipe: Root Tea
+@i^251388^Plans: Hard Gold Leggings
 @i^251961^Arcane Mote
 @i^255723^Manual: Greater Healing Potion
 @i^270180^Horrible Rootcore
@@ -358,6 +383,7 @@ GoldScout-export 6^5ipk0wjixc1y^12
 @q^1529^2:7:1
 @q^1686^0:15:0
 @q^1687^0:15:0
+@q^1688^0:15:0
 @q^1696^0:15:0
 @q^1697^0:15:0
 @q^1705^2:7:1
@@ -385,11 +411,16 @@ GoldScout-export 6^5ipk0wjixc1y^12
 @q^2034^3:4:0
 @q^2251^1:7:1
 @q^2592^1:7:1
+@q^2633^1:0:0
 @q^2674^1:7:1
 @q^2675^1:7:1
+@q^2734^1:12:0
+@q^2735^1:12:0
+@q^2744^1:12:0
 @q^2765^0:2:0
 @q^2786^0:2:0
 @q^2843^1:12:0
+@q^2951^3:4:0
 @q^3021^3:2:0
 @q^3057^2:4:0
 @q^3174^1:7:1
@@ -397,10 +428,12 @@ GoldScout-export 6^5ipk0wjixc1y^12
 @q^3176^0:15:0
 @q^3180^0:15:0
 @q^3182^1:7:1
+@q^3185^2:2:0
 @q^3201^2:2:0
 @q^3206^2:2:0
 @q^3337^1:12:0
 @q^3349^1:12:0
+@q^3356^1:7:1
 @q^3385^1:0:0
 @q^3415^3:2:0
 @q^3416^3:4:0
@@ -434,10 +467,12 @@ GoldScout-export 6^5ipk0wjixc1y^12
 @q^4364^1:7:1
 @q^4377^1:7:1
 @q^4402^1:7:1
+@q^4461^1:7:1
 @q^4482^1:12:0
 @q^4542^1:0:0
 @q^4555^0:15:0
 @q^4556^0:15:0
+@q^4586^0:15:0
 @q^4606^1:0:0
 @q^4633^2:15:0
 @q^5113^0:15:0
@@ -489,12 +524,15 @@ GoldScout-export 6^5ipk0wjixc1y^12
 @q^11152^2:9:0
 @q^11983^2:4:0
 @q^12037^1:7:1
+@q^12184^1:7:1
+@q^12202^1:7:1
 @q^13079^3:4:0
 @q^14127^2:4:0
 @q^15113^2:4:0
 @q^15342^2:4:0
 @q^17057^1:15:0
 @q^17058^1:15:0
+@q^211784^1:0:0
 @q^211853^1:0:0
 @q^211854^1:0:0
 @q^213547^1:0:0
@@ -504,8 +542,10 @@ GoldScout-export 6^5ipk0wjixc1y^12
 @q^248689^1:0:1
 @q^248691^1:0:1
 @q^248692^1:0:1
+@q^248693^1:0:1
 @q^248706^2:0:1
 @q^249881^1:9:0
+@q^251388^2:9:0
 @q^251961^1:12:0
 @q^255723^2:9:0
 @q^270180^1:12:0
@@ -544,6 +584,7 @@ GoldScout-export 6^5ipk0wjixc1y^12
 @m^1424^Hillsbrad Foothills
 @m^1426^Dun Morogh
 @m^1431^Duskwood
+@m^1434^Stranglethorn Vale
 @m^1437^Wetlands
 @m^1440^Ashenvale
 @m^1453^Stormwind City
@@ -1333,10 +1374,20 @@ GoldScout-export 6^5ipk0wjixc1y^12
 @a^533^313:1
 @a^570^123:3
 @a^604^123:15,124:1,144:1
+@a^681^46:1,47:5,67:1
+@a^682^45:1,46:2,49:1,67:1,69:3
+@a^683^47:2,48:1,67:1
+@a^684^89:1,109:5
+@a^685^64:1,65:9
+@a^686^87:3
+@a^736^25:1,45:4
+@a^772^69:1,90:1,109:1
 @a^785^143:2
 @a^787^143:4
 @a^920^294:1,311:4,314:1
 @a^930^226:1
+@a^937^48:7,49:7
+@a^940^48:4,49:3
 @a^949^143:1,163:1
 @a^1017^67:1,86:1
 @a^1018^66:7,67:6,86:1,87:2
