@@ -1,4 +1,4 @@
-GoldScout-export 7^a3fqirf8xpxo^4
+GoldScout-export 7^a3fqirf8xpxo^5
 30^3^0^5^6^1429^0.3807^0.6315^3^Forest Spider^1476:2:2,2590:1:1^
 94^1^0^5^5^1429^0.3786^0.5772^1^Defias Cutpurse^^
 113^1^0^5^5^1429^0.3897^0.6844^1^Stonetusk Boar^769:1:1,771:1:1^
@@ -54,11 +54,17 @@ GoldScout-export 7^a3fqirf8xpxo^4
 2091^1^0^32^32^1437^0.5291^0.5433^1^Chieftain Nek'rosh^3625:1:1^
 14424^1^0^25^25^1437^0.2540^0.2824^1^Mirelow^2072:1:1^
 260322^1^0^0^0^0^0.0000^0.0000^0^^273023:1:1^
+260325^1^0^0^0^0^0.0000^0.0000^0^^273026:1:1^
+260326^1^0^0^0^0^0.0000^0.0000^0^^270865:1:1,273029:1:1^
 260796^1^0^0^0^0^0.0000^0.0000^0^^8186:1:1^
 260797^1^0^0^0^0^0.0000^0.0000^0^^3667:1:1,12037:1:1^
 260798^1^0^0^0^0^0.0000^0.0000^0^^3667:1:1^
 260799^2^0^0^0^0^0.0000^0.0000^0^^1697:1:1,2819:1:1^
-260801^1^0^0^0^0^0.0000^0.0000^0^^284845:1:1^
+260801^4^0^0^0^0^0.0000^0.0000^0^^3685:1:1,284845:3:3^
+260802^1^0^0^0^0^0.0000^0.0000^0^^284845:1:1^
+260803^1^0^0^0^0^0.0000^0.0000^0^^1074:1:1^
+260804^1^0^0^0^0^0.0000^0.0000^0^^1829:1:1^
+260808^1^0^0^0^0^0.0000^0.0000^0^^270180:1:1^
 271334^2^0^25^26^1437^0.5976^0.3553^2^Maddened Rotclaw^3702:2:2,5637:1:1,280331:1:1^
 271336^1^0^30^30^1437^0.6974^0.2910^1^Carnage^280330:1:1^
 271338^1^0^32^32^1437^0.7755^0.4662^1^Ados^280395:1:1^
@@ -68,6 +74,7 @@ GoldScout-export 7^a3fqirf8xpxo^4
 272260^1^0^24^24^1431^0.4195^0.2109^1^Lost Stalker^3647:1:1,281143:1:1^
 272273^1^0^24^24^1431^0.3079^0.6159^1^Lost Watcher^281142:1:1^
 272291^1^0^25^25^1431^0.2268^0.4247^1^Lost Knight^281147:1:1^
+275044^3^0^0^0^0^0.0000^0.0000^0^^4306:2:2^
 @i^422^Dwarven Mild
 @i^723^Goretusk Liver
 @i^730^Murloc Eye
@@ -78,6 +85,7 @@ GoldScout-export 7^a3fqirf8xpxo^4
 @i^880^Staff of Horrors
 @i^929^Healing Potion
 @i^1015^Lean Wolf Flank
+@i^1074^Hard Spider Leg Tip
 @i^1076^Defias Renegade Ring
 @i^1081^Crisp Spider Meat
 @i^1205^Melon Juice
@@ -89,6 +97,7 @@ GoldScout-export 7^a3fqirf8xpxo^4
 @i^1711^Scroll of Stamina II
 @i^1805^Tough Leather Bracers
 @i^1823^Bludgeoning Cudgel
+@i^1829^Short Cutlass
 @i^2072^Dwarven Magestaff of the Gorilla
 @i^2219^Small Round Shield
 @i^2295^Large Boar Tusk
@@ -147,7 +156,11 @@ GoldScout-export 7^a3fqirf8xpxo^4
 @i^248687^Waylaid Crate: Journeyman Ore
 @i^248689^Waylaid Crate: Journeyman Curiosities
 @i^248706^Waylaid Crate: Journeyman Ingots
+@i^270180^Horrible Rootcore
+@i^270865^Titan Relic
 @i^273023^Saltscale Girdle
+@i^273026^Garb of Florid Feathers
+@i^273029^Golemsight Long Gun
 @i^273806^Dark Horde Band
 @i^273808^Bridgebreaker Bindings
 @i^273809^Hamhock's Cleaver
@@ -173,6 +186,7 @@ GoldScout-export 7^a3fqirf8xpxo^4
 @q^880^2:2:0
 @q^929^1:0:0
 @q^1015^1:7:1
+@q^1074^0:15:0
 @q^1076^3:4:0
 @q^1081^1:7:1
 @q^1205^1:0:0
@@ -184,6 +198,7 @@ GoldScout-export 7^a3fqirf8xpxo^4
 @q^1711^1:0:0
 @q^1805^0:4:0
 @q^1823^0:2:0
+@q^1829^0:2:0
 @q^2072^2:2:0
 @q^2219^0:4:0
 @q^2295^0:15:0
@@ -242,7 +257,11 @@ GoldScout-export 7^a3fqirf8xpxo^4
 @q^248687^1:0:1
 @q^248689^1:0:1
 @q^248706^2:0:1
+@q^270180^1:12:0
+@q^270865^1:12:0
 @q^273023^3:4:0
+@q^273026^3:4:0
+@q^273029^3:2:0
 @q^273806^3:4:0
 @q^273808^3:4:0
 @q^273809^3:2:0

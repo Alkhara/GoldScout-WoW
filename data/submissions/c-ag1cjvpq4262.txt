@@ -1,4 +1,4 @@
-GoldScout-export 6^ag1cjvpq4262^15
+GoldScout-export 8^ag1cjvpq4262^17
 587^1^0^33^34^1434^0.2874^0.2105^1^Bloodscalp Warrior^1520:1:1^
 681^5^0^30^31^1434^0.3377^0.0973^5^Young Stranglethorn Tiger^1686:3:3,12202:2:2^
 682^6^0^32^33^1434^0.4423^0.1553^6^Stranglethorn Tiger^1686:6:6,12202:5:5,213545:1:1^
@@ -30,6 +30,7 @@ GoldScout-export 6^ag1cjvpq4262^15
 2448^2^0^26^26^1424^0.2968^0.4281^2^Clerk Horrace Whitesteed^2592:1:2,4306:1:2^
 2449^1^0^25^25^1424^0.3057^0.4120^1^Citizen Wilkes^1205:1:1^
 2623^6^0^32^33^1416^0.2007^0.8934^6^Spirit of Old^^
+2761^6^0^38^39^1417^0.6627^0.3113^6^Cresting Exile^4481:3:3,4791:5:18^
 3244^4^0^11^12^1413^0.5346^0.2983^4^Greater Plainstrider^3287:1:1,5087:2:2,5469:2:2,17056:2:2^
 3254^1^0^12^12^1413^0.5357^0.2889^1^Sunscale Lashtail^5062:1:1,5123:1:1^
 4093^15^0^25^26^1441^0.4390^0.3964^15^Galak Wrangler^1784:1:1,1820:1:1,2592:1:2,4306:2:3,211854:1:1^
@@ -87,10 +88,12 @@ GoldScout-export 6^ag1cjvpq4262^15
 @i^3901^Bloodscalp Tusk
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
+@i^4481^Cresting Charm
 @i^4553^Jagged Piece of Stone
 @i^4556^Speckled Shell Fragment
 @i^4603^Raw Spotted Yellowtail
 @i^4784^Lifeless Stone
+@i^4791^Enchanted Water
 @i^5062^Raptor Head
 @i^5087^Plainstrider Beak
 @i^5113^Mark of the Syndicate
@@ -159,10 +162,12 @@ GoldScout-export 6^ag1cjvpq4262^15
 @q^3901^1:12:0
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4481^1:0:0
 @q^4553^0:15:0
 @q^4556^0:15:0
 @q^4603^1:7:1
 @q^4784^0:15:0
+@q^4791^1:0:0
 @q^5062^1:12:0
 @q^5087^1:12:0
 @q^5113^0:15:0
@@ -188,6 +193,7 @@ GoldScout-export 6^ag1cjvpq4262^15
 @q^279186^1:12:0
 @m^1413^The Barrens
 @m^1416^Alterac Mountains
+@m^1417^Arathi Highlands
 @m^1424^Hillsbrad Foothills
 @m^1434^Stranglethorn Vale
 @m^1441^Thousand Needles
@@ -941,6 +947,7 @@ GoldScout-export 6^ag1cjvpq4262^15
 @a^2448^165:2
 @a^2449^166:1
 @a^2623^343:4,364:2
+@a^2761^113:1,133:5
 @a^3244^110:3,130:1
 @a^3254^110:1
 @a^4093^127:1,148:6,168:3,169:5
@@ -953,6 +960,7 @@ GoldScout-export 6^ag1cjvpq4262^15
 @a^270094^231:1
 @a^278383^147:2
 @a^278384^147:1
+@t^2761^3:144
 @f^1413^0^34^150^6303:13:13,6358:5:5,6361:16:16^152:34
 @f^1434^0^3^150^4603:1:1,6358:1:1,6362:1:1^305:3
 @l^0^enUS
