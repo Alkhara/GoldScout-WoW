@@ -1,4 +1,4 @@
-GoldScout-export 6^objzat4bh15h^26
+GoldScout-export 6^objzat4bh15h^27
 92^3^0^39^40^1418^0.3710^0.7492^3^Rock Elemental^4553:1:1,4627:3:3,4784:2:2,7912:1:2^
 587^1^0^33^33^1434^0.3305^0.1594^1^Bloodscalp Warrior^^
 588^9^0^34^35^1434^0.2500^0.1190^9^Bloodscalp Scout^2735:1:1,3793:1:1,3795:1:1,3799:1:1,3915:2:2,4306:3:6^
@@ -89,6 +89,12 @@ GoldScout-export 6^objzat4bh15h^26
 2944^1^0^41^41^1418^0.2771^0.5753^1^Boss Tho'grun^4640:1:1^
 2945^2^0^42^42^1418^0.5022^0.6675^2^Murdaloc^4338:1:1^
 2955^10^0^1^2^1412^0.4724^0.7935^10^Plainstrider^1369:1:1,1378:1:1,4739:6:6,4740:6:6,4757:6:6,7096:4:4,7097:1:1^
+4324^1^0^42^43^1445^0.4570^0.6510^1^Searing Whelp^213545:1:1^
+4329^1^0^42^42^1445^0.4533^0.6526^1^Firemane Scout^1645:1:1^
+4401^14^0^39^40^1445^0.5177^0.4091^14^Muckshell Clacker^5942:1:1,17057:7:7^
+4402^12^0^40^41^1445^0.5179^0.4179^12^Muckshell Snapclaw^1710:1:1,7973:6:6,17057:5:5^
+4404^11^0^42^43^1445^0.5527^0.6225^11^Muckshell Scrabbler^4603:3:6,7973:4:4,213544:1:1^
+4405^14^0^43^44^1445^0.5493^0.6224^14^Muckshell Razorclaw^4603:1:2,7973:4:4,213543:1:1^
 4420^1^0^0^0^0^0.0000^0.0000^0^^^
 4421^1^0^0^0^0^0.0000^0.0000^0^^^
 4424^1^0^0^0^0^0.0000^0.0000^0^^^
@@ -228,6 +234,7 @@ GoldScout-export 6^objzat4bh15h^26
 @i^4585^Dripping Spider Mandible
 @i^4586^Smooth Raptor Skin
 @i^4599^Cured Ham Steak
+@i^4603^Raw Spotted Yellowtail
 @i^4626^Small Stone Shard
 @i^4627^Large Stone Slab
 @i^4640^Sign of the Earth
@@ -240,6 +247,7 @@ GoldScout-export 6^objzat4bh15h^26
 @i^5637^Large Fang
 @i^5797^Indurium Flake
 @i^5803^Speck of Dream Dust
+@i^5942^Jeweled Pendant
 @i^6166^Coyote Jawbone
 @i^6169^Unprepared Sawtooth Flank
 @i^6196^Noboru's Cudgel
@@ -253,6 +261,7 @@ GoldScout-export 6^objzat4bh15h^26
 @i^7847^Buzzard Gizzard
 @i^7848^Rock Elemental Shard
 @i^7912^Solid Stone
+@i^7973^Big-mouth Clam
 @i^8146^Wicked Claw
 @i^8150^Deeprock Salt
 @i^8151^Flask of Mojo
@@ -284,6 +293,7 @@ GoldScout-export 6^objzat4bh15h^26
 @i^213529^Viscous Venom
 @i^213543^Scroll: UPDOG
 @i^213544^Scroll: TOPAZ YORAK
+@i^213545^Scroll: PEATCHY ATTAX
 @i^213546^Scroll: SHOOBEEDOOP
 @i^248688^Waylaid Crate: Journeyman Textiles
 @i^248690^Waylaid Crate: Earthly Expert Herbs
@@ -391,6 +401,7 @@ GoldScout-export 6^objzat4bh15h^26
 @q^4585^0:15:0
 @q^4586^0:15:0
 @q^4599^1:0:0
+@q^4603^1:7:1
 @q^4626^1:12:0
 @q^4627^1:12:0
 @q^4640^1:12:0
@@ -403,6 +414,7 @@ GoldScout-export 6^objzat4bh15h^26
 @q^5637^1:7:1
 @q^5797^1:12:0
 @q^5803^1:12:0
+@q^5942^1:12:0
 @q^6166^1:12:0
 @q^6169^1:12:0
 @q^6196^0:2:0
@@ -416,6 +428,7 @@ GoldScout-export 6^objzat4bh15h^26
 @q^7847^1:12:0
 @q^7848^1:12:0
 @q^7912^1:7:1
+@q^7973^1:7:0
 @q^8146^1:7:1
 @q^8150^1:7:1
 @q^8151^1:7:1
@@ -447,6 +460,7 @@ GoldScout-export 6^objzat4bh15h^26
 @q^213529^1:15:0
 @q^213543^1:0:0
 @q^213544^1:0:0
+@q^213545^1:0:0
 @q^213546^1:0:0
 @q^248688^1:0:1
 @q^248690^1:0:1
@@ -464,6 +478,7 @@ GoldScout-export 6^objzat4bh15h^26
 @m^1424^Hillsbrad Foothills
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
+@m^1445^Dustwallow Marsh
 @m^1446^Tanaris
 @c^118^
 @c^724^
@@ -916,6 +931,12 @@ GoldScout-export 6^objzat4bh15h^26
 @a^2944^225:1
 @a^2945^269:1,270:1
 @a^2955^309:9,329:1
+@a^4324^269:1
+@a^4329^269:1
+@a^4401^149:2,150:3,169:1,170:5,171:1,191:2
+@a^4402^149:2,169:2,170:6,171:1,191:1
+@a^4404^250:6,251:5
+@a^4405^250:7,251:7
 @a^5477^128:1
 @a^5616^91:7,92:5
 @a^5618^91:6,92:7

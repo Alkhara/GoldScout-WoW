@@ -1,32 +1,60 @@
-GoldScout-export 9^0c7qdiyp1uib^1
+GoldScout-export 9^0c7qdiyp1uib^3
+1020^4^0^22^23^1437^0.2690^0.4599^4^Raptor Mosqueado^1697:3:3,3685:1:1,6586:1:1^
+1021^2^0^24^25^1437^0.2794^0.4636^2^Guinchador Mosqueado^1697:1:1,3180:1:1^
+1022^3^0^25^26^1437^0.3483^0.5016^3^Garrafoice Mosqueado^3685:3:3,5637:1:1^
+1023^5^0^26^27^1437^0.3377^0.4861^5^Rasgaqueixo Mosqueado^1697:1:1,3685:3:3,10601:1:1^
 1024^1^0^20^21^1437^0.1360^0.3948^1^Murloc Guelrazul^730:1:1,1468:1:1,17057:1:1^
 1026^1^0^23^23^1437^0.1352^0.3956^1^Colhedor Guelrazul^730:1:1,1468:1:1,5784:1:1,248684:1:1^
+1032^2^0^24^24^1437^0.2814^0.4569^2^Gosma Preta^3671:1:1,3676:1:1^
 1040^1^0^25^25^1437^0.1728^0.2795^1^Rastejante do Pântano^^
 1160^1^0^30^30^1437^0.1596^0.2313^1^Capitão Halyndor^2629:1:1,4306:1:1^
 2089^5^0^26^26^1437^0.1714^0.2812^5^Crocolisco do Pantanal Gigante^770:2:2,3348:5:5,3667:3:3^
 14424^1^0^25^25^1437^0.1725^0.2788^1^Lamedo^6594:1:1^
+270892^1^0^32^32^1437^0.3449^0.5263^1^Guardião de Goaz^3798:1:1,4553:1:2,279993:1:1^
 @i^730^Olho de Murloc
 @i^770^Dente Pontudo de Crocolisco
 @i^1468^Barbatana de Murloc
+@i^1697^Dente Afiado de Raptor
 @i^2629^Chave do Cofre do Intrépido
+@i^3180^Escama Sarapintada de Raptor
 @i^3348^Pele de Crocolisco Gigante
 @i^3667^Carne Tenra de Crocolisco
+@i^3671^Crânio Inerte
+@i^3676^Linfa Viscosa
+@i^3685^Ovo de Raptor
+@i^3798^Ombreiras Entrelaçadas
 @i^4306^Seda
+@i^4553^Pedaço de Pedra Pontudo
+@i^5637^Presa Grande
 @i^5784^Escama Viscosa de Murloc
+@i^6586^Luvas de Observação de Proteção contra a Natureza
 @i^6594^Cinturão Forja da Batalha do Defensor
+@i^10601^Diagrama: Óculos Brilho-do-olhar
 @i^17057^Escamas Brilhantes de Peixe
 @i^248684^Caixote Extraviado: Têxteis de Aprendiz
+@i^279993^Pedra-chave Titânica
 @q^730^1:7:1
 @q^770^0:15:0
 @q^1468^1:7:1
+@q^1697^0:15:0
 @q^2629^1:13:0
+@q^3180^0:15:0
 @q^3348^1:12:0
 @q^3667^1:7:1
+@q^3671^0:15:0
+@q^3676^0:15:0
+@q^3685^1:7:1
+@q^3798^0:4:0
 @q^4306^1:7:1
+@q^4553^0:15:0
+@q^5637^1:7:1
 @q^5784^1:7:1
+@q^6586^2:4:0
 @q^6594^2:4:0
+@q^10601^2:9:0
 @q^17057^1:15:0
 @q^248684^1:0:1
+@q^279993^1:12:0
 @m^1437^Pantanal
 @c^724^
 @c^733^
@@ -756,13 +784,24 @@ GoldScout-export 9^0c7qdiyp1uib^1
 @c^279981^
 @c^279982^
 @c^286152^
+@a^1020^165:1,185:2,204:1
+@a^1021^165:1,185:1
+@a^1022^186:1,187:1,207:1
+@a^1023^186:5
 @a^1024^142:1
 @a^1026^142:1
+@a^1032^165:1,185:1
 @a^1040^103:1
 @a^1160^83:1
 @a^2089^103:5
 @a^14424^103:1
+@a^270892^206:1
+@t^1020^4:494
+@t^1021^2:229
+@t^1022^2:183
+@t^1023^5:341
 @t^1024^1:5
+@t^1032^1:74
 @t^1040^1:8
 @t^1160^1:300
 @t^2089^5:264

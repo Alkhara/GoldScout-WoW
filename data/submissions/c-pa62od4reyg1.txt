@@ -1,4 +1,4 @@
-GoldScout-export 9^pa62od4reyg1^13
+GoldScout-export 9^pa62od4reyg1^14
 1908^1^0^19^20^1421^0.6779^0.4573^1^Oráculo Anca Vil^3376:1:1^
 2241^1^0^34^34^1416^0.4607^0.8154^1^Ladrón de la Hermandad^3601:1:1^
 2248^74^0^30^31^1424^0.4604^0.3142^74^Yeti de las cuevas^1708:5:5,1830:1:1,2290:1:1,3771:8:8,3796:1:1,5214:1:1,9867:1:1,10408:1:1,15284:1:1,248686:1:1,248688:1:1^
@@ -27,12 +27,16 @@ GoldScout-export 9^pa62od4reyg1^13
 2503^1^0^27^27^1424^0.2987^0.5423^1^Supervisor de Trabalomas^^
 2552^1^0^30^31^1417^0.3173^0.4634^1^Trol Secacorteza^^
 2559^17^0^30^31^1417^0.4117^0.4936^17^Zancudo de las Tierras Altas^1696:1:1,1725:1:1,3685:6:6,4461:8:8,4512:7:7,4586:1:1,12184:9:9^
-2560^5^0^33^34^1417^0.3940^0.3984^5^Descarnador de las Tierras Altas^3685:4:4,4461:1:1,4512:1:1,12184:2:2^
+2560^15^0^33^34^1417^0.3862^0.3632^15^Descarnador de las Tierras Altas^1696:3:3,3685:10:10,4461:5:5,4512:3:3,4586:1:1,12184:4:4^
 2562^1^0^32^33^1417^0.3621^0.4441^1^Ogro Puño de Roca^3783:1:1^
-2563^7^0^32^33^1417^0.4364^0.5579^7^Trepador de las llanuras^878:2:2,1074:1:1,1081:6:6,2251:3:3,4337:1:1,4585:1:1,278225:5:5^
+2563^13^0^32^33^1417^0.4081^0.4552^13^Trepador de las llanuras^878:3:3,1074:3:3,1081:8:8,2251:7:7,4337:1:1,4585:1:1,278225:9:9^
 2564^6^0^33^34^1417^0.3410^0.4513^6^Déspota Puño de Roca^2592:2:6,3385:1:1,4306:2:3,213422:1:1,248692:1:1^
+2565^1^0^36^36^1417^0.3983^0.3194^1^Trepador de las llanuras gigante^1074:1:1,1081:1:1,2251:1:1^
 2581^6^0^31^32^1417^0.5472^0.3695^6^Miliciano Dabyrie^2592:1:1,4306:3:5^
 2582^3^0^30^31^1417^0.5433^0.3753^3^Obrero Dabyrie^4306:1:1^
+2586^6^0^30^31^1417^0.3417^0.3050^6^Bandolero de la Hermandad^4306:4:5,4495:2:2,5113:1:1,213544:1:1^
+2587^5^0^32^33^1417^0.3304^0.2903^5^Acechacaminos de la Hermandad^4306:1:1,4495:2:2,5113:2:2^
+2589^7^0^31^32^1417^0.3341^0.2950^7^Mercenario de la Hermandad^1708:1:1,4306:1:1,5113:2:2,248687:1:1,255723:1:1^
 4114^1^0^28^28^1441^0.5240^0.4804^1^Batidor Gravamorro^^
 4119^1^0^27^29^1441^0.5579^0.4896^1^Serpiente nubosa anciana^17056:1:1^
 4479^1^0^33^33^1417^0.5605^0.3802^1^Fardel Dabyrie^4306:1:2,5831:1:1^
@@ -98,11 +102,13 @@ GoldScout-export 9^pa62od4reyg1^13
 @i^4306^Paño de seda
 @i^4337^Seda de araña espesa
 @i^4461^Pellejo de raptor
+@i^4495^Amuleto de sangrita
 @i^4512^Ojo de raptor de las Tierras Altas
 @i^4585^Mandíbula de araña chorreando
 @i^4586^Piel de raptor lisa
 @i^4606^Colmenilla esponjosa
 @i^4784^Piedra inerte
+@i^5113^Marca de la Hermandad
 @i^5214^Varita de Manto de la noche
 @i^5637^Colmillo grande
 @i^5741^Trozo de roca
@@ -116,11 +122,13 @@ GoldScout-export 9^pa62od4reyg1^13
 @i^17056^Pluma ligera
 @i^211855^Pergamino: STHENIC LUNATE
 @i^213422^Receta ilegible
+@i^213544^Pergamino: EZFOO KATASI
 @i^248686^Cajón arrebatado: Hierbas de oficial
 @i^248687^Cajón arrebatado: Mena de oficial
 @i^248688^Cajón arrebatado: Textiles de oficial
 @i^248692^Cajón arrebatado: Mena de experto
 @i^251961^Mota arcana
+@i^255723^Manual: Poción de sanación superior
 @i^273033^Repetidora de púas sepulcral
 @i^273035^Camisa de anillas manadistorsionada
 @i^273036^Ataduras de tejido sepulcral
@@ -175,11 +183,13 @@ GoldScout-export 9^pa62od4reyg1^13
 @q^4306^1:7:1
 @q^4337^1:7:1
 @q^4461^1:7:1
+@q^4495^1:12:0
 @q^4512^1:12:0
 @q^4585^0:15:0
 @q^4586^0:15:0
 @q^4606^1:0:0
 @q^4784^0:15:0
+@q^5113^0:15:0
 @q^5214^2:2:0
 @q^5637^1:7:1
 @q^5741^0:15:0
@@ -193,11 +203,13 @@ GoldScout-export 9^pa62od4reyg1^13
 @q^17056^1:15:1
 @q^211855^1:0:0
 @q^213422^1:12:0
+@q^213544^1:0:0
 @q^248686^1:0:1
 @q^248687^1:0:1
 @q^248688^1:0:1
 @q^248692^1:0:1
 @q^251961^1:12:0
+@q^255723^2:9:0
 @q^273033^3:2:0
 @q^273035^3:4:0
 @q^273036^3:4:0
@@ -790,16 +802,24 @@ GoldScout-export 9^pa62od4reyg1^13
 @a^2503^205:1
 @a^2552^186:1
 @a^2559^145:1,168:4,187:3,188:1,208:3,209:1,228:1,229:2,248:1
-@a^2560^147:2,148:1,168:2
+@a^2560^107:1,127:3,147:7,148:1,167:1,168:2
 @a^2562^167:1
-@a^2563^187:1,208:1,228:3,229:1,250:1
+@a^2563^127:4,147:2,187:1,208:1,228:3,229:1,250:1
 @a^2564^167:2,186:4
+@a^2565^127:1
 @a^2581^150:3,151:2,171:1
 @a^2582^150:2,151:1
+@a^2586^106:3,126:2,127:1
+@a^2587^106:3,126:2
+@a^2589^106:6,126:1
 @a^4114^190:1
 @a^4119^191:1
 @a^4479^151:1
 @t^2559^15:664
-@t^2560^4:177
-@t^2563^5:304
+@t^2560^13:641
+@t^2563^11:767
+@t^2565^1:25
+@t^2586^6:476
+@t^2587^5:310
+@t^2589^7:199
 @l^0^esMX
