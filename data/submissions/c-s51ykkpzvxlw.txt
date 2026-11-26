@@ -1,7 +1,8 @@
-GoldScout-export 9^s51ykkpzvxlw^6
+GoldScout-export 9^s51ykkpzvxlw^7
 3^14^0^24^25^1431^0.2451^0.3915^14^Flesh Eater^887:3:3,1751:1:1,1772:1:1,1819:1:1,2589:2:4,2592:1:2,2783:1:1,5529:1:1,6530:3:3^
+30^1^0^5^5^1429^0.3644^0.6074^1^Forest Spider^1476:1:1,5465:1:2^
 36^2^0^11^12^1436^0.5750^0.3622^2^Harvest Golem^814:1:1,1274:1:1^
-94^1^0^6^6^1429^0.3946^0.5387^1^Defias Cutpurse^2589:1:2^
+94^5^0^5^6^1429^0.4008^0.5590^5^Defias Cutpurse^1376:1:1,2070:1:1,2589:1:2,3365:1:1^
 95^15^0^11^12^1436^0.4871^0.2823^15^Defias Smuggler^414:2:2,829:6:6,2455:1:1,2589:4:9,3375:1:1^
 113^13^0^5^6^1429^0.3293^0.8378^13^Stonetusk Boar^769:8:8,771:3:3,3171:5:5^
 114^21^0^14^15^1436^0.5036^0.2225^21^Harvest Watcher^732:10:10,814:9:9,1274:12:12,1497:1:1,1505:1:1,2763:1:1,3375:1:1,4359:1:1,4361:1:1,6537:1:1,255007:7:7^
@@ -86,9 +87,11 @@ GoldScout-export 9^s51ykkpzvxlw^6
 @i^1370^Ragged Leather Bracers
 @i^1372^Ragged Cloak
 @i^1374^Frayed Shoes
+@i^1376^Frayed Cloak
 @i^1378^Frayed Pants
 @i^1381^A Mysterious Message
 @i^1475^Small Venom Sac
+@i^1476^Snapped Spider Limb
 @i^1497^Calico Cloak
 @i^1501^Calico Tunic
 @i^1505^Warped Cloak
@@ -100,6 +103,7 @@ GoldScout-export 9^s51ykkpzvxlw^6
 @i^1751^Linked Chain Pants
 @i^1772^Brocade Shoes
 @i^1819^Gouging Pick
+@i^2070^Darnassian Bleu
 @i^2211^Bent Large Shield
 @i^2239^The Collector's Ring
 @i^2251^Gooey Spider Leg
@@ -136,6 +140,7 @@ GoldScout-export 9^s51ykkpzvxlw^6
 @i^4604^Forest Mushroom Cap
 @i^4606^Spongy Morel
 @i^4865^Ruined Pelt
+@i^5465^Small Spider Leg
 @i^5523^Small Barnacled Clam
 @i^5529^Tomb Dust
 @i^5571^Small Black Pouch
@@ -198,9 +203,11 @@ GoldScout-export 9^s51ykkpzvxlw^6
 @q^1370^0:4:0
 @q^1372^0:4:0
 @q^1374^0:4:0
+@q^1376^0:4:0
 @q^1378^0:4:0
 @q^1381^1:12:0
 @q^1475^1:7:1
+@q^1476^0:15:0
 @q^1497^0:4:0
 @q^1501^0:4:0
 @q^1505^0:4:0
@@ -212,6 +219,7 @@ GoldScout-export 9^s51ykkpzvxlw^6
 @q^1751^0:4:0
 @q^1772^0:4:0
 @q^1819^0:2:0
+@q^2070^1:0:0
 @q^2211^0:4:0
 @q^2239^1:12:0
 @q^2251^1:7:1
@@ -248,6 +256,7 @@ GoldScout-export 9^s51ykkpzvxlw^6
 @q^4604^1:0:0
 @q^4606^1:0:0
 @q^4865^0:15:0
+@q^5465^1:7:1
 @q^5523^1:7:0
 @q^5529^0:15:0
 @q^5571^1:1:0
@@ -1169,8 +1178,9 @@ GoldScout-export 9^s51ykkpzvxlw^6
 @c^279990^
 @c^286152^
 @a^3^144:10,145:3,164:1
+@a^30^247:1
 @a^36^151:2
-@a^94^207:1
+@a^94^207:1,208:1,227:1,228:2
 @a^95^69:7,88:1,89:1,149:2,150:2,170:1,190:1
 @a^113^268:1,326:4,346:8
 @a^114^69:1,70:4,89:2,90:13,187:1
@@ -1227,6 +1237,7 @@ GoldScout-export 9^s51ykkpzvxlw^6
 @a^1919^247:1
 @a^2044^277:1
 @a^272260^206:1
+@t^94^4:294
 @t^114^1:75
 @t^117^10:283
 @t^500^9:287
