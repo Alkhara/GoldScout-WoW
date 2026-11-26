@@ -38,6 +38,12 @@ Version 7 adds how fast players kill each mob:
                            (from the kill before, at most PACE_GAP; longer gaps
                            are breaks and aren't timed), scaled to the pace on
                            mobs of your own level (GoldScout/Learn.lua PaceFactor)
+Version 8 changes no line, only what a rogue's dungeon mobs hold: before
+GoldScout v0.12.48 a Pick Pocket inside a dungeon counted as a kill, and those
+kills stay in a player's saved data. On an account that pickpockets, version 8
+shares only the dungeon loot recorded since that version started them over
+(Learn.lua FreshDungeons). From older exports of such an account, dungeon mobs
+are left out (fresh_rogue_dungeons).
 Versions 2 (no @ lines) and 3 are still accepted; version 1 (no install ID)
 isn't.
 """
@@ -47,11 +53,11 @@ import unicodedata
 from collections import defaultdict
 
 HEADER = "GoldScout-export"
-HEADER_RE = re.compile(r"^GoldScout-export ([2-7])\^([a-z0-9]{12})\^([1-9][0-9]{0,8})$")
+HEADER_RE = re.compile(r"^GoldScout-export ([2-8])\^([a-z0-9]{12})\^([1-9][0-9]{0,8})$")
 LOCALE_RE = re.compile(r"^[a-z]{2}[A-Z]{2}$")
 AREA_RE = re.compile(r"^\d{1,3}:\d{1,6}(?:,\d{1,3}:\d{1,6})*$")
 AREA_CELLS = 400            # a 20x20 grid
-KNOWN_VERSION = 7           # the newest export version this copy understands
+KNOWN_VERSION = 8           # the newest export version this copy understands
 KNOWN_EXTRA = ("@i", "@m", "@c", "@q", "@l", "@a", "@f", "@t")
 NEWER_HEADER_RE = re.compile(r"^GoldScout-export (\d+)\^[a-z0-9]{12}\^[1-9][0-9]{0,8}$")
 ITEM_META_RE = re.compile(r"^([0-9]):([0-9]{1,2}):([01x])$")
@@ -159,6 +165,8 @@ class Result:
         self.locale = None   # the client's language (version 5+); None for older exports
         self.areas = {}      # npcID -> {cell: count} from @a lines, attached to the mobs
         self.paces = {}      # npcID -> (timed kills, seconds) from @t lines, attached to the mobs
+        self.pocket_loot = False   # PICKPOCKET_ONLY items were taken out of kill loot: this account pickpockets
+        self.left_out = 0    # dungeon mobs fresh_rogue_dungeons() took out
         self.fishing = []    # Fish from @f lines
         # Names keep_english_names() took out of a non-English export, kept apart for the website's
         # pages in that language: {"items": {itemID: name}, "maps": {...}, "mobs": {npcID: name}}.
@@ -290,6 +298,7 @@ def _parse_line(line, line_no, result):
         return None
     for item in PICKPOCKET_ONLY & set(drops):
         del drops[item]
+        result.pocket_loot = True
     if kills == 0 and drops:
         result.errors.append("Line %d: drops listed with no kills." % line_no)
         return None
@@ -530,7 +539,26 @@ def parse(text):
         if mob.m and mob.c:     # cells are on the mob's map; without one they mean nothing
             mob.a = result.areas.get(mob.npc, {})
         mob.t, mob.s = result.paces.get(mob.npc, (0, 0))
+    fresh_rogue_dungeons(result)
     return result
+
+
+# The export version from which a pickpocketing account's dungeon mobs hold only loot recorded since GoldScout
+# started them over (GoldScout/Learn.lua FreshDungeons).
+FRESH_ROGUE_DUNGEONS = 8
+
+
+def fresh_rogue_dungeons(result):
+    """Takes the dungeon mobs (kills with no position) out of an export older than FRESH_ROGUE_DUNGEONS from an
+    account that pickpockets. Before GoldScout v0.12.48 a Pick Pocket inside a dungeon counted as a kill, so such a
+    player's dungeon mobs have up to twice their real kills (checked 2026-11-26: rogues' dungeon kills held 0.87 of
+    the loot other players got from the same mobs, 0.97 outdoors), and nothing in the export tells those kills
+    apart. Mobs with only pickpocketing stay: picks were never counted wrongly."""
+    if result.version >= FRESH_ROGUE_DUNGEONS or not (result.pocket_loot or any(mob.p for mob in result.mobs)):
+        return
+    kept = [mob for mob in result.mobs if mob.c or not mob.k]
+    result.left_out = len(result.mobs) - len(kept)
+    result.mobs = kept
 
 
 def _z(drops_a, attempts_a, drops_b, attempts_b):

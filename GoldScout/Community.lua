@@ -11,7 +11,7 @@ local _, ns = ...
 local Community = {}
 ns.Community = Community
 
-Community.HEADER_PATTERN = "^GoldScout%-export [2-7]%^(%w+)%^(%d+)$"
+Community.HEADER_PATTERN = "^GoldScout%-export [2-8]%^(%w+)%^(%d+)$"
 Community.DEFAULT_CAP = 1000
 
 local function Round(value)
@@ -219,15 +219,43 @@ function Community.DropList(pick, ...)
   return attempts, list
 end
 
--- Your saved loot (GoldScoutDB.drops) in the same shape ParseExport returns.
+local function Less(items, base)
+  if not base then
+    return items or {}
+  end
+  local left = {}
+  for itemID, stat in pairs(items or {}) do
+    local was = base[itemID]
+    local drops = (stat.d or 0) - (was and was.d or 0)
+    if drops > 0 then
+      left[itemID] = { d = drops, q = math.max(drops, (stat.q or 0) - (was and was.q or 0)) }
+    end
+  end
+  return left
+end
+
+-- What one mob of your saved loot shares: kills, picks, drops and pickpocket drops ({ [itemID] = { d, q } }).
+-- That's everything, less the baseline (entry.b) Learn.lua FreshDungeons keeps when it starts a
+-- pickpocketer's dungeon mob over.
+function Community.SharedCounts(entry)
+  local base = entry.b
+  if not base then
+    return entry.k or 0, entry.p or 0, entry.i or {}, entry.pi or {}
+  end
+  return math.max(0, (entry.k or 0) - (base.k or 0)), math.max(0, (entry.p or 0) - (base.p or 0)),
+    Less(entry.i, base.i), Less(entry.pi, base.pi)
+end
+
+-- What your saved loot (GoldScoutDB.drops) shares, in the same shape ParseExport returns.
 function Community.MobsFromDrops(drops)
   local mobs = {}
   for npcID, entry in pairs(drops or {}) do
     local count = entry.c or 0
+    local kills, picks, items, pickItems = Community.SharedCounts(entry)
     mobs[npcID] = {
-      k = entry.k or 0, p = entry.p or 0, m = entry.m or 0, c = count,
+      k = kills, p = picks, m = entry.m or 0, c = math.min(count, kills),
       x = count > 0 and entry.sx / count or 0, y = count > 0 and entry.sy / count or 0,
-      i = entry.i or {}, pi = entry.pi or {},
+      i = items, pi = pickItems,
     }
   end
   return mobs
@@ -245,6 +273,19 @@ function Community.RemoveOwn(community, sources, cap, install, exports, drops, f
   local text = exports and exports.list and exports.list[included]
   if text then
     local _, _, mobs, fishing = Community.ParseExport(text)
+    if mobs and (tonumber(text:match("^GoldScout%-export (%d+)")) or 0) < 8 then
+      -- As tools/submission.py fresh_rogue_dungeons: from an older export of an account that pickpockets, the
+      -- community data has no dungeon mobs, so there's nothing of yours to take back out of theirs.
+      local pickpockets = false
+      for _, mob in pairs(mobs) do
+        pickpockets = pickpockets or (mob.p or 0) > 0
+      end
+      for npcID, mob in pairs(pickpockets and mobs or {}) do
+        if (mob.k or 0) > 0 and (mob.c or 0) == 0 then
+          mobs[npcID] = nil
+        end
+      end
+    end
     if mobs then
       Community.Subtract(community, mobs, cap)
       Community.SubtractFish(fishCommunity, fishing, cap)

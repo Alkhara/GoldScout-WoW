@@ -347,6 +347,10 @@ def collect_uploads(uploads_path):
             print("reject upload %s" % install[:12])
             continue
         path = SUBMISSIONS / ("c-%s.txt" % install)
+        if not result.mobs and not result.fishing:
+            # Only a pickpocketer's dungeon mobs from before export version 8, which aren't shared.
+            print("skip upload %s: nothing to share yet" % install[:12])
+            continue
         if install in always_held and install not in approved:
             held.append((install, len(result.mobs), [ON_HELD_LIST]))
             print("hold upload %s (on the held list)" % install)

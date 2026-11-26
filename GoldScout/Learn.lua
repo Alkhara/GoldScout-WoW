@@ -21,7 +21,9 @@ local ITEM_SLOT = (Enum.LootSlotType and Enum.LootSlotType.Item) or 1
 -- game gives addons no map position, only the zone (tools/submission.py).
 -- Version 7 adds how fast you kill each mob (@t, see NotePace), so gold per
 -- hour can use real kill rates instead of one default pace.
-local EXPORT_VERSION = 7
+-- Version 8 changes no line: on an account that pickpockets, dungeon mobs hold
+-- only what was recorded since FreshDungeons started them over.
+local EXPORT_VERSION = 8
 local COMPANION_FOR_V5 = { 0, 10, 0 }
 
 local function ExportVersion()
@@ -390,8 +392,9 @@ local function ExportBody()
   local lines, items, maps, areas, paces = {}, {}, {}, {}, {}
   for _, npcID in ipairs(SortedKeys(drops)) do
     local entry = drops[npcID]
+    local sharedKills, sharedPicks, sharedDrops, sharedPickDrops = ns.Community.SharedCounts(entry)
     -- Written with %d: a count that's a negative zero would otherwise go out as "-0" (seen in one player's saved data).
-    local kills, picks = ("%d"):format(entry.k or 0), ("%d"):format(entry.p or 0)
+    local kills, picks = ("%d"):format(sharedKills), ("%d"):format(sharedPicks)
     kills, picks = tonumber(kills), tonumber(picks)
     if kills + picks > 0 then
       local map, count, x, y = entry.m or 0, math.min(entry.c or 0, kills), 0, 0
@@ -419,7 +422,7 @@ local function ExportBody()
         local seconds = math.floor(entry.ts * timed / entry.t + 0.5)
         paces[#paces + 1] = ("@t^%d^%d:%d"):format(npcID, timed, math.min(seconds, timed * PACE_GAP * 2))
       end
-      local dropList, pickList = ItemList(entry.i, kills), ItemList(entry.pi, picks)
+      local dropList, pickList = ItemList(sharedDrops, kills), ItemList(sharedPickDrops, picks)
       lines[#lines + 1] = table.concat({
         npcID, kills, picks, lmin, lmax, map,
         ("%.4f"):format(x), ("%.4f"):format(y), count, Clean(entry.n), dropList, pickList,
@@ -516,6 +519,50 @@ function Learn:ExportString()
   return self:Snapshot()
 end
 
+-- Before v0.12.48 a Pick Pocket inside a dungeon counted as a kill, so on an account that pickpockets, its
+-- dungeon mobs hold kills that never happened, and nothing tells them apart. Once, on the first load of export
+-- version 8, each dungeon mob (kills, no position) of such an account keeps what it held as a baseline (entry.b):
+-- exports share only what's recorded after it (Community.SharedCounts), while your own Farm tab and drop rates
+-- still use everything. tools/submission.py leaves such an account's dungeon mobs out of older exports.
+local function Pickpockets(drops)
+  if UnitClass then
+    local _, class = UnitClass("player")
+    if ns.Plain(class) == "ROGUE" then
+      return true
+    end
+  end
+  for _, entry in pairs(drops) do
+    if (entry.p or 0) > 0 then
+      return true
+    end
+  end
+  return false
+end
+
+local function CopyItems(items)
+  local copy = {}
+  for itemID, stat in pairs(items or {}) do
+    copy[itemID] = { d = stat.d or 0, q = stat.q or 0 }
+  end
+  return copy
+end
+
+function Learn.FreshDungeons(db)
+  if db.freshDungeons then
+    return
+  end
+  db.freshDungeons = true
+  local drops = db.drops or {}
+  if not Pickpockets(drops) then
+    return
+  end
+  for _, entry in pairs(drops) do
+    if (entry.k or 0) > 0 and (entry.c or 0) == 0 and not entry.b then
+      entry.b = { k = entry.k, p = entry.p or 0, i = CopyItems(entry.i), pi = CopyItems(entry.pi) }
+    end
+  end
+end
+
 -- On load: give this account an install ID, then take your own shared loot
 -- back out of the community data so it isn't counted twice.
 ns.Listen("DB_READY", function()
@@ -528,6 +575,7 @@ ns.Listen("DB_READY", function()
   db.names.maps = db.names.maps or {}
   db.names.meta = db.names.meta or {}
   db.fish = db.fish or {}
+  Learn.FreshDungeons(db)
   ns.COMMUNITY_FISH = ns.COMMUNITY_FISH or {}
   Learn.ownShared = ns.Community.RemoveOwn(ns.COMMUNITY, ns.COMMUNITY_SOURCES, ns.COMMUNITY_CAP,
     db.installID, db.exports, db.drops, ns.COMMUNITY_FISH, db.fish)

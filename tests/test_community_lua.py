@@ -105,6 +105,19 @@ class CommunityLuaTests(unittest.TestCase):
         self.assertEqual(after[3814]["k"], 30)
         self.assertEqual(after[3814]["i"], {5569: (9, 9)})
 
+    def test_a_pickpocketers_old_dungeon_mobs_arent_taken_back_out(self):
+        # The merge leaves dungeon mobs out of an older export from an account that pickpockets (MINE picks
+        # pockets of 1234), so the client mustn't take them out of other players' data either.
+        ogre = "5000^%d^0^40^41^0^0.0000^0.0000^0^Dungeon Ogre^1205:%d:%d^\n"
+        mine, other = MINE + ogre % (30, 10, 10), OTHER + ogre % (50, 20, 20)
+        lua, ns = self.load(mine, other)
+        self.assertEqual(self.community(lua, ns)[5000]["k"], 50)          # only the other player's
+        ns.Community.RemoveOwn(ns.COMMUNITY, ns.COMMUNITY_SOURCES, ns.COMMUNITY_CAP,
+                               "mineminemine", self.exports_table(lua, 5, mine), lua.table())
+        after = self.community(lua, ns)
+        self.assertEqual((after[5000]["k"], after[5000]["i"]), (50, {1205: (20, 20)}))
+        self.assertNotIn(1234, after)                                     # the rest still comes out
+
     def test_parse_export_matches_python(self):
         lua, ns = self.load(OTHER)
         install, seq, mobs, _ = ns.Community.ParseExport(OTHER)
@@ -210,7 +223,7 @@ class SnapshotLuaTests(unittest.TestCase):
         learn = self.ns.Learn
         text, count, _ = learn.ExportString(learn)
         self.assertEqual(count, 2)
-        self.assertTrue(text.startswith("GoldScout-export 7^"))   # no old companion here
+        self.assertTrue(text.startswith("GoldScout-export 8^"))   # no old companion here
         result = submission.parse(text)
         self.assertEqual(result.errors, [])
         self.assertEqual(result.item_meta, {3010: (1, 7, True)})
@@ -234,6 +247,48 @@ class SnapshotLuaTests(unittest.TestCase):
         self.assertIn("@i^3010^Patron : Cape ' Rouge '\n", text)
         self.assertIn("@m^1440^\u517b\u6b96\u573a:\u6d4b\u8bd5\n", text)
         self.assertEqual(submission.parse(text).errors, [])
+
+    # Rogues' dungeon loot from before v0.12.48 counted Pick Pocket as kills: started over once, kept for you.
+    def dungeon_ogre(self, picks_elsewhere, cls="WARRIOR"):
+        self.lua.execute("UnitClass = function() return 'Rogue', '%s' end" % cls)
+        self.ns.db.drops[5000] = self.lua.eval(
+            "{ k = 40, p = 0, c = 0, m = 291, lmin = 40, lmax = 41, n = 'Dungeon Ogre',"
+            "  i = { [1205] = { d = 10, q = 12 } }, pi = {} }")
+        self.ns.db.drops[3814].p = picks_elsewhere
+        self.ns.db.freshDungeons = None
+        self.ns.Learn.FreshDungeons(self.ns.db)
+        return self.ns.db.drops[5000]
+
+    def shared_ogre(self):
+        result = submission.parse(self.ns.Learn.ExportString(self.ns.Learn)[0])
+        self.assertEqual(result.errors, [])
+        ogre = next((mob for mob in result.mobs if mob.npc == 5000), None)
+        return ogre and (ogre.k, {item: drops for item, (drops, _) in ogre.i.items()})
+
+    def test_a_pickpocketers_dungeon_mobs_share_only_what_comes_after(self):
+        ogre = self.dungeon_ogre(picks_elsewhere=3)
+        self.assertIsNone(self.shared_ogre())                  # nothing new yet
+        ogre.k = ogre.k + 5
+        ogre.i[1205].d, ogre.i[1205].q = 12, 14
+        ogre.i[4306] = self.lua.eval("{ d = 1, q = 2 }")
+        self.assertEqual(self.shared_ogre(), (5, {1205: 2, 4306: 1}))
+        rate, attempts, _ = self.ns.Learn.Rate(self.ns.Learn, 5000, 1205)
+        self.assertEqual((rate, attempts), (12 / 45, 45))     # your own rates still use everything
+        self.assertEqual(self.ns.db.drops[3814].b, None)       # outdoor mobs are untouched
+
+    def test_a_rogue_with_no_picks_yet_starts_dungeons_over_too(self):
+        self.dungeon_ogre(picks_elsewhere=0, cls="ROGUE")
+        self.assertIsNone(self.shared_ogre())
+
+    def test_an_account_that_never_pickpockets_shares_dungeons_in_full(self):
+        self.dungeon_ogre(picks_elsewhere=0)
+        self.assertEqual(self.shared_ogre(), (40, {1205: 10}))
+
+    def test_dungeons_are_started_over_only_once(self):
+        self.dungeon_ogre(picks_elsewhere=3)
+        self.ns.db.drops[5001] = self.lua.eval("{ k = 8, p = 0, c = 0, m = 291, i = {}, pi = {} }")
+        self.ns.Learn.FreshDungeons(self.ns.db)               # a later login
+        self.assertIsNone(self.ns.db.drops[5001].b)
 
     def test_old_snapshots_are_pruned_except_the_included_one(self):
         learn = self.ns.Learn

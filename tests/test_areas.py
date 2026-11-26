@@ -131,11 +131,11 @@ class VersionFiveExportTests(unittest.TestCase):
 
     def test_versions_follow_the_players_companion(self):
         cases = {
-            None: 7,                                                         # no companion here, or prices off
+            None: 8,                                                         # no companion here, or prices off
             "{ markets = {} }": 4,                                           # a companion before 0.10.0
             '{ markets = {}, companion = "0.9.0" }': 4,
-            '{ markets = {}, companion = "0.10.0" }': 7,
-            '{ markets = {}, companion = "1.2.0" }': 7,
+            '{ markets = {}, companion = "0.10.0" }': 8,
+            '{ markets = {}, companion = "1.2.0" }': 8,
         }
         for prices_data, version in cases.items():
             with self.subTest(prices_data):
@@ -148,7 +148,7 @@ class VersionFiveExportTests(unittest.TestCase):
         ns, text = self.export()
         result = submission.parse(text)
         self.assertEqual(result.errors, [])
-        self.assertEqual((result.version, result.locale), (7, "deDE"))
+        self.assertEqual((result.version, result.locale), (8, "deDE"))
         self.assertEqual(result.mobs[0].a, {205: 9, 206: 2})
         install, _, mobs, _ = ns.Community.ParseExport(text)         # the addon's own parser skips @ lines
         self.assertEqual(sorted(mobs.keys()), [3812])
