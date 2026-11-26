@@ -1,4 +1,4 @@
-GoldScout-export 8^fd43ssjyfcyu^76
+GoldScout-export 8^fd43ssjyfcyu^78
 232^2^0^23^23^1424^0.3415^0.3468^2^Farmer Ray^2592:1:1,4538:1:1^
 1501^9^0^1^1^1420^0.3210^0.6376^9^Mindless Zombie^159:1:1,1367:1:1,1369:1:1,2589:3:3,2652:1:1,4604:2:2^
 1502^9^3^1^2^1420^0.3238^0.6324^9^Wretched Zombie^159:1:1,1366:1:1,1380:1:1,2589:3:3,2650:1:1,2656:1:1,4604:1:1^5362:1:1
@@ -247,10 +247,16 @@ GoldScout-export 8^fd43ssjyfcyu^76
 4057^5^0^24^25^1442^0.3656^0.1315^5^Son of Cenarius^1774:1:1,2592:1:2,4306:1:1,15332:1:1^
 4067^17^0^23^24^1442^0.3328^0.1089^17^Twilight Runner^1206:1:1,5135:1:1,5136:6:6,5584:5:5,5635:2:2,15503:1:1^
 4074^2^0^23^23^1442^0.6026^0.5305^2^XT 9^2589:1:3^
+4113^3^0^28^29^1441^0.5902^0.5668^3^Gravelsnout Digger^5842:2:2^
+4120^1^0^29^29^1441^0.6806^0.6030^1^Thundering Boulderkin^5741:1:1^
 4127^4^0^15^16^1413^0.5302^0.2064^4^Hecklefang Hyena^3301:3:3^
 4128^9^0^22^23^1413^0.4743^0.7556^9^Hecklefang Stalker^3301:1:1,3402:2:2^
 4129^4^0^18^19^1413^0.4749^0.4817^4^Hecklefang Snarler^3299:1:1,3301:2:2^
+4140^4^0^31^32^1441^0.7344^0.6460^4^Scorpid Reaver^1288:1:1,12037:3:3,19937:2:2^
+4142^2^0^30^31^1441^0.7022^0.6708^2^Sparkleshell Tortoise^3712:2:2,4556:1:1^
+4147^4^0^30^31^1441^0.7306^0.6232^4^Saltstone Basilisk^1701:1:1,5635:1:1,11384:1:1,11385:2:2^
 4196^12^0^21^22^1413^0.4359^0.7027^12^Silithid Swarm^^
+4249^1^0^29^29^1441^0.6899^0.6254^1^Pesterhide Snarler^3402:1:1^
 4263^8^0^14^14^1442^0.5217^0.4578^8^Deepmoss Hatchling^^
 4316^3^0^13^13^1413^0.5461^0.4083^3^Kolkar Packhound^3299:1:1,3300:2:2^
 5766^7^0^4^5^1413^0.6219^0.3301^7^Savannah Cub^^
@@ -356,6 +362,7 @@ GoldScout-export 8^fd43ssjyfcyu^76
 @i^1513^Old Greatsword
 @i^1515^Rough Wooden Staff
 @i^1516^Worn Hatchet
+@i^1701^Curved Basilisk Claw
 @i^1712^Scroll of Spirit II
 @i^1730^Worn Mail Belt
 @i^1731^Worn Mail Boots
@@ -478,6 +485,7 @@ GoldScout-export 8^fd43ssjyfcyu^76
 @i^3676^Slimy Ichor
 @i^3692^Hillsbrad Human Skull
 @i^3702^Bear Gall Bladder
+@i^3712^Turtle Meat
 @i^3730^Big Bear Meat
 @i^3731^Lion Meat
 @i^3820^Stranglekelp
@@ -495,6 +503,7 @@ GoldScout-export 8^fd43ssjyfcyu^76
 @i^4540^Tough Hunk of Bread
 @i^4542^Moist Cornbread
 @i^4555^Thick Scaly Tail
+@i^4556^Speckled Shell Fragment
 @i^4563^Billy Club
 @i^4565^Simple Dagger
 @i^4567^Merc Sword of the Falcon
@@ -631,6 +640,7 @@ GoldScout-export 8^fd43ssjyfcyu^76
 @i^5637^Large Fang
 @i^5734^Super Reaper 6000 Blueprints
 @i^5741^Rock Chip
+@i^5842^Unrefined Ore Sample
 @i^5871^Large Hoof
 @i^6044^Plans: Iron Shield Spike
 @i^6289^Raw Longjaw Mud Snapper
@@ -678,9 +688,12 @@ GoldScout-export 8^fd43ssjyfcyu^76
 @i^9771^Greenweave Gloves of Intellect
 @i^10338^Fresh Zhevra Carcass
 @i^10459^Chief Sharptusk Thornmantle's Head
+@i^11384^Broken Basilisk Teeth
+@i^11385^Basilisk Scale
 @i^11406^Rotting Bear Carcass
 @i^11407^Torn Bear Pelt
 @i^12007^Prairie Ring of the Eagle
+@i^12037^Mystery Meat
 @i^12223^Meaty Bat Wing
 @i^13881^Bloated Redgill
 @i^14088^Beaded Cloak
@@ -736,6 +749,7 @@ GoldScout-export 8^fd43ssjyfcyu^76
 @i^16656^Shredder Operating Manual - Page 12
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
+@i^19937^Small Scorpid Claw
 @i^20708^Tightly Sealed Trunk
 @i^20709^Rumsey Rum Light
 @i^21071^Raw Sagefish
@@ -837,6 +851,7 @@ GoldScout-export 8^fd43ssjyfcyu^76
 @q^1513^0:2:0
 @q^1515^0:2:0
 @q^1516^0:2:0
+@q^1701^0:15:0
 @q^1712^1:0:0
 @q^1730^0:4:0
 @q^1731^0:4:0
@@ -959,6 +974,7 @@ GoldScout-export 8^fd43ssjyfcyu^76
 @q^3676^0:15:0
 @q^3692^1:12:0
 @q^3702^0:15:0
+@q^3712^1:7:1
 @q^3730^1:7:1
 @q^3731^1:7:1
 @q^3820^1:7:1
@@ -976,6 +992,7 @@ GoldScout-export 8^fd43ssjyfcyu^76
 @q^4540^1:0:0
 @q^4542^1:0:0
 @q^4555^0:15:0
+@q^4556^0:15:0
 @q^4563^1:2:0
 @q^4565^1:2:0
 @q^4567^2:2:0
@@ -1112,6 +1129,7 @@ GoldScout-export 8^fd43ssjyfcyu^76
 @q^5637^1:7:1
 @q^5734^1:12:0
 @q^5741^0:15:0
+@q^5842^1:12:0
 @q^5871^0:15:0
 @q^6044^2:9:0
 @q^6289^1:7:1
@@ -1159,9 +1177,12 @@ GoldScout-export 8^fd43ssjyfcyu^76
 @q^9771^2:4:0
 @q^10338^1:12:0
 @q^10459^1:12:0
+@q^11384^0:15:0
+@q^11385^0:15:0
 @q^11406^0:15:0
 @q^11407^1:12:0
 @q^12007^2:4:0
+@q^12037^1:7:1
 @q^12223^1:7:1
 @q^13881^2:15:0
 @q^14088^1:4:0
@@ -1217,6 +1238,7 @@ GoldScout-export 8^fd43ssjyfcyu^76
 @q^16656^1:12:0
 @q^17056^1:15:1
 @q^17057^1:15:0
+@q^19937^0:15:0
 @q^20708^1:15:0
 @q^20709^1:0:0
 @q^21071^1:7:1
@@ -1265,6 +1287,7 @@ GoldScout-export 8^fd43ssjyfcyu^76
 @m^1424^Hillsbrad Foothills
 @m^1434^Stranglethorn Vale
 @m^1440^Ashenvale
+@m^1441^Thousand Needles
 @m^1442^Stonetalon Mountains
 @m^1445^Dustwallow Marsh
 @m^1454^Orgrimmar
@@ -1707,10 +1730,16 @@ GoldScout-export 8^fd43ssjyfcyu^76
 @a^4057^47:5
 @a^4067^26:3,27:1,46:10,47:1,48:1,67:1
 @a^4074^212:2
+@a^4113^231:3
+@a^4120^253:1
 @a^4127^31:1,32:1,88:1,170:1
 @a^4128^289:4,309:5
 @a^4129^189:4
+@a^4140^234:1,254:1,274:1,275:1
+@a^4142^273:1,274:1
+@a^4147^235:1,253:1,255:1,274:1
 @a^4196^268:5,288:7
+@a^4249^253:1
 @a^4263^169:4,170:1,189:1,192:2
 @a^4316^170:2,171:1
 @a^5766^132:7
@@ -1770,6 +1799,12 @@ GoldScout-export 8^fd43ssjyfcyu^76
 @t^4007^4:380
 @t^4012^3:260
 @t^4074^1:7
+@t^4113^2:30
+@t^4120^1:123
+@t^4140^4:243
+@t^4142^2:113
+@t^4147^3:158
+@t^4249^1:33
 @t^4263^7:413
 @t^5932^1:126
 @t^6071^8:371
