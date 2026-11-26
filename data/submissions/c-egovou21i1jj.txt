@@ -1,4 +1,4 @@
-GoldScout-export 7^egovou21i1jj^10
+GoldScout-export 7^egovou21i1jj^11
 1527^1^0^7^8^1420^0.6677^0.4489^1^Hungering Dead^2589:1:1^
 1528^3^0^8^9^1420^0.6740^0.4402^3^Shambling Horror^1415:1:1,2642:1:1^
 1765^3^0^10^11^1421^0.6520^0.0672^3^Worg^2672:3:3,9750:1:1^
@@ -44,6 +44,13 @@ GoldScout-export 7^egovou21i1jj^10
 2067^1^0^13^13^1421^0.4660^0.7457^1^Councilman Brunswick^^
 2068^1^0^15^15^1421^0.4663^0.7379^1^Lord Mayor Morrison^6550:1:1^
 2106^0^1^16^16^0^0.0000^0.0000^0^Apothecary Berard^^
+2244^3^6^21^22^1424^0.8307^0.4308^3^Syndicate Shadow Mage^^16882:2:2,17124:4:4
+2260^1^1^21^22^1424^0.8175^0.4674^1^Syndicate Rogue^2592:1:1^5374:1:1,17124:1:1
+2261^7^15^20^21^1424^0.8085^0.4398^7^Syndicate Watchman^422:1:1,2592:3:4,2782:1:1,4306:1:1^5374:2:2,16882:2:2,17124:7:7
+2349^1^0^24^24^1424^0.8720^0.4788^1^Giant Moss Creeper^1081:1:1,1288:1:1^
+2350^1^0^20^20^1424^0.6229^0.2634^1^Forest Moss Creeper^^
+2351^2^0^21^22^1424^0.6431^0.2512^2^Gray Bear^^
+2354^1^0^22^22^1424^0.7605^0.4945^1^Vicious Gray Bear^2940:1:1,3476:1:1^
 2957^1^0^8^8^1412^0.4031^0.2867^1^Elder Plainstrider^4757:1:1^
 2959^1^0^7^8^1412^0.5389^0.5361^1^Prairie Stalker^2672:1:1,3299:1:1^
 2965^1^0^10^10^1412^0.3993^0.1729^1^Windfury Matriarch^159:1:1,4775:1:1,17056:1:1^
@@ -81,10 +88,12 @@ GoldScout-export 7^egovou21i1jj^10
 11519^1^0^0^0^0^0.0000^0.0000^0^^2589:1:2,273003:1:1^
 11520^1^0^0^0^0^0.0000^0.0000^0^^14149:1:1,14540:1:1^
 12431^1^0^13^13^1421^0.4651^0.1709^1^Gorefang^2672:1:1,6548:1:1^
+266216^0^1^24^24^0^0.0000^0.0000^0^Lord Tomas^^
 277882^3^0^12^13^1421^0.5282^0.1568^3^Foothills Duskbat^6296:3:3^
 @i^117^Tough Jerky
 @i^159^Refreshing Spring Water
 @i^414^Dalaran Sharp
+@i^422^Dwarven Mild
 @i^730^Murloc Eye
 @i^774^Malachite
 @i^818^Tigerseye
@@ -93,6 +102,7 @@ GoldScout-export 7^egovou21i1jj^10
 @i^1179^Ice Cold Milk
 @i^1180^Scroll of Stamina
 @i^1181^Scroll of Spirit
+@i^1288^Large Venom Sac
 @i^1415^Carpenter's Mallet
 @i^1416^Rusty Hatchet
 @i^1419^Worn Leather Boots
@@ -126,7 +136,9 @@ GoldScout-export 7^egovou21i1jj^10
 @i^2763^Fisherman Knife
 @i^2777^Feeble Shortbow
 @i^2778^Cheap Blunderbuss
+@i^2782^Mishandled Recurve Bow
 @i^2836^Coarse Stone
+@i^2940^Bloody Bear Paw
 @i^3156^Glutton Shackle
 @i^3157^Darksoul Shackle
 @i^3164^Discolored Worg Heart
@@ -146,12 +158,14 @@ GoldScout-export 7^egovou21i1jj^10
 @i^3307^Barbaric Cloth Boots
 @i^3354^Dalaran Pendant
 @i^3377^Canvas Bracers
+@i^3476^Gray Bear Tongue
 @i^3621^Ivar's Head
 @i^3622^Essence of Nightlash
 @i^3634^Head of Grimson
 @i^3676^Slimy Ichor
 @i^3820^Stranglekelp
 @i^3931^Poisoned Spider Fang
+@i^4306^Silk Cloth
 @i^4605^Red-speckled Mushroom
 @i^4757^Cracked Egg Shells
 @i^4775^Cracked Bill
@@ -163,6 +177,7 @@ GoldScout-export 7^egovou21i1jj^10
 @i^5165^Sunscale Feather
 @i^5368^Empty Wallet
 @i^5369^Gnawed Bone
+@i^5374^Small Pocket Watch
 @i^5465^Small Spider Leg
 @i^5469^Strider Meat
 @i^5523^Small Barnacled Clam
@@ -190,13 +205,16 @@ GoldScout-export 7^egovou21i1jj^10
 @i^15007^Primal Cape
 @i^15014^Lupine Buckler of the Defender
 @i^15222^Barbed Club of Nature Protection
+@i^16882^Battered Junkbox
 @i^17056^Light Feather
+@i^17124^Syndicate Emblem
 @i^20708^Tightly Sealed Trunk
 @i^21071^Raw Sagefish
 @i^273003^Searing Dagger
 @q^117^1:0:0
 @q^159^1:0:0
 @q^414^1:0:0
+@q^422^1:0:0
 @q^730^1:7:1
 @q^774^2:7:1
 @q^818^2:7:1
@@ -205,6 +223,7 @@ GoldScout-export 7^egovou21i1jj^10
 @q^1179^1:0:0
 @q^1180^1:0:0
 @q^1181^1:0:0
+@q^1288^1:7:1
 @q^1415^0:2:0
 @q^1416^0:2:0
 @q^1419^0:4:0
@@ -238,7 +257,9 @@ GoldScout-export 7^egovou21i1jj^10
 @q^2763^0:2:0
 @q^2777^0:2:0
 @q^2778^0:2:0
+@q^2782^0:2:0
 @q^2836^1:7:1
+@q^2940^0:15:0
 @q^3156^1:12:0
 @q^3157^1:12:0
 @q^3164^1:12:0
@@ -258,12 +279,14 @@ GoldScout-export 7^egovou21i1jj^10
 @q^3307^2:4:0
 @q^3354^1:12:0
 @q^3377^0:4:0
+@q^3476^1:12:0
 @q^3621^1:12:0
 @q^3622^1:12:0
 @q^3634^1:12:0
 @q^3676^0:15:0
 @q^3820^1:7:1
 @q^3931^0:15:0
+@q^4306^1:7:1
 @q^4605^1:0:0
 @q^4757^0:15:0
 @q^4775^0:15:0
@@ -275,6 +298,7 @@ GoldScout-export 7^egovou21i1jj^10
 @q^5165^1:12:0
 @q^5368^0:15:0
 @q^5369^0:15:0
+@q^5374^0:15:0
 @q^5465^1:7:1
 @q^5469^1:7:1
 @q^5523^1:7:0
@@ -302,7 +326,9 @@ GoldScout-export 7^egovou21i1jj^10
 @q^15007^1:4:0
 @q^15014^2:4:0
 @q^15222^2:2:0
+@q^16882^1:15:0
 @q^17056^1:15:1
+@q^17124^1:12:0
 @q^20708^1:15:0
 @q^21071^1:7:1
 @q^273003^3:2:0
@@ -311,6 +337,7 @@ GoldScout-export 7^egovou21i1jj^10
 @m^1413^The Barrens
 @m^1420^Tirisfal Glades
 @m^1421^Silverpine Forest
+@m^1424^Hillsbrad Foothills
 @m^1442^Stonetalon Mountains
 @c^118^
 @c^724^
@@ -1116,6 +1143,13 @@ GoldScout-export 7^egovou21i1jj^10
 @a^2066^289:1
 @a^2067^289:1
 @a^2068^289:1
+@a^2244^176:2,196:1
+@a^2260^196:1
+@a^2261^175:2,176:3,196:2
+@a^2349^197:1
+@a^2350^112:1
+@a^2351^93:1,112:1
+@a^2354^195:1
 @a^2957^108:1
 @a^2959^210:1
 @a^2965^67:1
@@ -1147,6 +1181,12 @@ GoldScout-export 7^egovou21i1jj^10
 @a^277882^50:1,52:1,88:1
 @t^1909^1:2
 @t^1956^1:2
+@t^2244^3:208
+@t^2260^1:41
+@t^2261^5:340
+@t^2349^1:103
+@t^2350^1:14
+@t^2354^1:125
 @t^2965^1:82
 @t^3566^1:86
 @t^4005^4:213
