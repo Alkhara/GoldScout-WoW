@@ -1,4 +1,4 @@
-GoldScout-export 6^yjnpulrcffft^31
+GoldScout-export 7^yjnpulrcffft^32
 442^1^0^15^16^1433^0.0991^0.7239^1^Tarantula^^
 587^1^0^34^34^1434^0.3344^0.1713^1^Bloodscalp Warrior^1520:1:1^
 588^13^0^34^35^1434^0.2525^0.1168^13^Bloodscalp Scout^1519:1:1,3771:2:2,3781:1:1,4306:3:5,12029:1:1^
@@ -142,9 +142,10 @@ GoldScout-export 6^yjnpulrcffft^31
 4711^2^0^32^33^1443^0.3763^0.2327^2^Slitherblade Naga^17057:1:1,17058:1:1^
 4719^3^0^35^36^1443^0.3075^0.0938^3^Slitherblade Sea Witch^6245:1:1,15881:1:1,17058:1:1^
 5234^5^0^43^44^1444^0.5901^0.6459^5^Gordunni Mauler^4338:1:1^
-5236^1^0^45^45^1444^0.5807^0.7341^1^Gordunni Shaman^4338:1:2,4599:1:1^
+5236^6^0^44^45^1444^0.5989^0.6837^6^Gordunni Shaman^4338:1:2,4599:1:1,6149:1:1,8199:1:1,14262:1:1^
 5238^2^0^45^46^1444^0.5892^0.7318^2^Gordunni Battlemaster^^
 5239^1^0^45^46^1444^0.5754^0.7262^1^Gordunni Mage-Lord^4306:1:1^
+5240^4^0^43^44^1444^0.5900^0.6466^4^Gordunni Warlock^3965:1:1^
 5253^1^0^42^42^1444^0.4804^0.4482^1^Woodpaw Brute^^
 5254^1^0^42^42^1444^0.4813^0.4485^1^Woodpaw Mystic^^
 5255^1^0^43^43^1444^0.4799^0.4476^1^Woodpaw Reaver^4599:1:1^
@@ -379,6 +380,7 @@ GoldScout-export 6^yjnpulrcffft^31
 @i^3937^Crochet Boots
 @i^3938^Crochet Bracers
 @i^3939^Crochet Cloak
+@i^3965^Thick Leather Gloves
 @i^3966^Thick Leather Pants
 @i^3968^Thick Leather Tunic
 @i^3986^Protective Pavise
@@ -489,7 +491,7 @@ GoldScout-export 6^yjnpulrcffft^31
 @i^8153^Wildvine
 @i^8194^Goblin Nutcracker of Agility
 @i^8196^Ebon Scimitar of the Boar
-@i^8199^Battlefield Destroyer of the Tiger
+@i^8199^Battlefield Destroyer of the Wolf
 @i^8398^Pattern: Tough Scorpid Gloves
 @i^8483^Wastewander Water Pouch
 @i^8548^Divino-matic Rod
@@ -544,6 +546,7 @@ GoldScout-export 6^yjnpulrcffft^31
 @i^12470^Sandstalker Ankleguards
 @i^13422^Stonescale Eel
 @i^14260^Bloodwoven Bracers of Stamina
+@i^14262^Bloodwoven Mitts of Fiery Wrath
 @i^14268^Gaea's Cuffs of the Channeler
 @i^14270^Gaea's Cloak of Defense
 @i^14272^Gaea's Handwraps of the Channeler
@@ -758,6 +761,7 @@ GoldScout-export 6^yjnpulrcffft^31
 @q^3937^0:4:0
 @q^3938^0:4:0
 @q^3939^0:4:0
+@q^3965^0:4:0
 @q^3966^0:4:0
 @q^3968^0:4:0
 @q^3986^0:4:0
@@ -923,6 +927,7 @@ GoldScout-export 6^yjnpulrcffft^31
 @q^12470^3:4:0
 @q^13422^1:7:1
 @q^14260^2:4:0
+@q^14262^2:4:0
 @q^14268^2:4:0
 @q^14270^2:4:0
 @q^14272^2:4:0
@@ -1963,9 +1968,10 @@ GoldScout-export 6^yjnpulrcffft^31
 @a^4711^87:2
 @a^4719^26:2,46:1
 @a^5234^251:4,271:1
-@a^5236^291:1
+@a^5236^271:1,272:3,291:1,292:1
 @a^5238^291:2
 @a^5239^291:1
+@a^5240^251:3,271:1
 @a^5253^169:1
 @a^5254^169:1
 @a^5255^169:1
@@ -2065,6 +2071,7 @@ GoldScout-export 6^yjnpulrcffft^31
 @a^268831^155:1,175:2
 @a^272228^310:2
 @a^272315^137:1
+@t^5236^1:102
 @f^1434^0^602^150^3820:61:128,4603:5:5,6358:123:123,6359:104:104,6362:13:13,13422:109:215,21150:2:2,21151:32:50,21228:153:153^126:14,145:95,146:38,165:97,184:71,185:48,204:77,224:56,225:17,244:18,264:35,265:25,285:5,325:6
 @f^1438^0^232^16^6303:229:229,6356:3:3^371:232
 @l^0^enUS
