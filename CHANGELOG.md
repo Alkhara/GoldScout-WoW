@@ -7,6 +7,8 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- **Kill rates count the hunt between kills:** GoldScout now also times kills up to ten minutes apart in the same zone, so looking for the next one and waiting for respawns count. A mob there are only a few of no longer looks as quick to farm as a crowded camp. Kill times start over with this version so shared data follows the new rule; until enough players have timed a mob the new way, gold per hour uses the old times.
+
 ## v0.12.55
 
 - **Cleaner dungeon drop rates from rogues:** before v0.12.48, a Pick Pocket inside a dungeon counted as a kill, and those kills stayed in your saved loot. On an account that picks pockets, GoldScout now shares only the dungeon loot recorded from this version on. Your own Farm tab and drop rates still use everything you've looted.

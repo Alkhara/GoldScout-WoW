@@ -23,7 +23,9 @@ local ITEM_SLOT = (Enum.LootSlotType and Enum.LootSlotType.Item) or 1
 -- hour can use real kill rates instead of one default pace.
 -- Version 8 changes no line: on an account that pickpockets, dungeon mobs hold
 -- only what was recorded since FreshDungeons started them over.
-local EXPORT_VERSION = 8
+-- Version 9 changes no line, only what @t times: the hunt between kills too (up
+-- to HUNT_GAP in one zone), timed since FreshPace started them over.
+local EXPORT_VERSION = 9
 local COMPANION_FOR_V5 = { 0, 10, 0 }
 
 local function ExportVersion()
@@ -83,8 +85,11 @@ local GATHER_SPELLS = {
   [2575] = true,  -- Mining
 }
 local GATHER_SECONDS = 3
--- A gap between kills longer than this is a break, and the kill after it isn't timed (NotePace).
+-- A gap between kills longer than PACE_GAP is a break, and the kill after it isn't timed (NotePace), unless
+-- it's at most HUNT_GAP and both kills were in the same zone: looking for the next one, or waiting for a
+-- respawn, is part of farming a mob there are only a few of.
 local PACE_GAP = 180
+local HUNT_GAP = 600
 local lastGatherCast = -math.huge
 
 -- Pick Pocket, cast at a mob: [guid] = { at = GetTime() of the cast, window = a pickpocket loot window was
@@ -420,7 +425,7 @@ local function ExportBody()
       if timed > 0 and (entry.ts or 0) >= 0 then
         -- Timed kills can't outnumber kills (a mixed corpse takes its kill back): the seconds shrink with them.
         local seconds = math.floor(entry.ts * timed / entry.t + 0.5)
-        paces[#paces + 1] = ("@t^%d^%d:%d"):format(npcID, timed, math.min(seconds, timed * PACE_GAP * 2))
+        paces[#paces + 1] = ("@t^%d^%d:%d"):format(npcID, timed, math.min(seconds, timed * HUNT_GAP * 2))
       end
       local dropList, pickList = ItemList(sharedDrops, kills), ItemList(sharedPickDrops, picks)
       lines[#lines + 1] = table.concat({
@@ -563,6 +568,19 @@ function Learn.FreshDungeons(db)
   end
 end
 
+-- Kill times from before version 9 left out the hunt between kills over PACE_GAP apart, so they ran fast for
+-- mobs there are only a few of: start every mob's over, once, so shared times all follow the new rule
+-- (tools/merge_data.py prefers them, mob by mob, once there are enough).
+function Learn.FreshPace(db)
+  if db.huntPace then
+    return
+  end
+  db.huntPace = true
+  for _, entry in pairs(db.drops or {}) do
+    entry.t, entry.ts = nil, nil
+  end
+end
+
 -- On load: give this account an install ID, then take your own shared loot
 -- back out of the community data so it isn't counted twice.
 ns.Listen("DB_READY", function()
@@ -576,6 +594,7 @@ ns.Listen("DB_READY", function()
   db.names.meta = db.names.meta or {}
   db.fish = db.fish or {}
   Learn.FreshDungeons(db)
+  Learn.FreshPace(db)
   ns.COMMUNITY_FISH = ns.COMMUNITY_FISH or {}
   Learn.ownShared = ns.Community.RemoveOwn(ns.COMMUNITY, ns.COMMUNITY_SOURCES, ns.COMMUNITY_CAP,
     db.installID, db.exports, db.drops, ns.COMMUNITY_FISH, db.fish)
@@ -637,10 +656,12 @@ local function PlayerSpot()
 end
 
 -- How fast you kill, for gold per hour at real kill rates. Each solo kill outside instances is timed from the
--- kill before it; a gap over PACE_GAP seconds is a break (travel, a vendor, a meal) and isn't timed. The time is
+-- kill before it; a gap over PACE_GAP seconds is a break (travel, a vendor, a meal) and isn't timed, unless both
+-- kills were in the same zone at most HUNT_GAP apart (the hunt for the next one). The time is
 -- scaled to the pace on mobs of your own level: a kill on a mob far below you counts as the longer one it would
 -- have taken at your level, as the Farm tab assumes (PaceFactor). entry.t = timed kills, entry.ts = their seconds.
 local lastKillAt -- GetTime() of your last counted kill
+local lastKillMap -- and the zone map it was in (nil if the game didn't say)
 
 -- How much faster than on mobs of your own level you kill a mob: the Farm tab's pace (Engine.lua) is its
 -- killsPerHour setting times this.
@@ -662,12 +683,15 @@ end
 
 local function NotePace(entry)
   local now = GetTime()
-  local previous = lastKillAt
-  lastKillAt = now
+  local previous, previousMap = lastKillAt, lastKillMap
+  local map = PlayerSpot()
+  lastKillAt, lastKillMap = now, map
   local grouped = IsInGroup and ns.Plain(IsInGroup())
   local instanced = IsInInstance and ns.Plain(IsInInstance())
-  if not previous or now - previous > PACE_GAP or grouped or instanced then
-    return   -- the first kill after a break, a group's kills (others loot some) or a dungeon's
+  local gap = previous and now - previous
+  local hunting = gap and gap <= HUNT_GAP and map ~= nil and map == previousMap
+  if not gap or (gap > PACE_GAP and not hunting) or grouped or instanced then
+    return   -- the first kill after a break or a trip, a group's kills (others loot some) or a dungeon's
   end
   local playerLevel = ns.Plain(UnitLevel("player"))
   local lmin, lmax = entry.lmin, entry.lmax

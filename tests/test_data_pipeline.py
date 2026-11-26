@@ -625,6 +625,25 @@ class MergeTests(unittest.TestCase):
         self.assertIn(", t = 1030, s = 31500, ", lines[0])
         self.assertNotIn(", t = ", lines[1])                           # one player's timing
 
+    def test_hunting_time_kill_times(self):
+        # Version 9 times the hunt between kills too: up to 20 minutes a kill (ten, scaled to your level), where
+        # older versions stop at 6. Once version 9 alone has enough, a mob's pace comes from it.
+        mob = "6560^60^0^60^61^1449^0.6300^0.4700^60^Stone Guardian^12809:26:26^"
+        export = "GoldScout-export %d^%s^3\n" + mob + "\n@t^6560^%s\n"
+        self.assertEqual(submission.parse(export % (9, "abcdefghijkl", "30:36000")).errors, [])
+        self.assertTrue(submission.parse(export % (9, "abcdefghijkl", "30:36001")).errors)
+        self.assertTrue(submission.parse(export % (8, "abcdefghijkl", "30:18000")).errors)
+        old = [submission.parse(export % (8, install, "40:4800")) for install in ("aaaaaaaaaaaa", "bbbbbbbbbbbb")]
+        new = [submission.parse(export % (9, install, "15:3600")) for install in ("cccccccccccc", "dddddddddddd")]
+        self.assertTrue(all(r.ok for r in old + new))
+        self.assertEqual([r.mobs[0].hunt for r in old + new], [False, False, True, True])
+        merged = merge_data.merge([r.mobs for r in old + new], 1000)[6560]
+        self.assertEqual((merged["t"], merged["s"], merged["tp"]), (30, 7200, 2))   # version 9 alone: 15 an hour
+        self.assertNotIn("ht", merged)
+        # One version 9 player isn't enough yet: everyone's times, old and new, until there are.
+        merged = merge_data.merge([r.mobs for r in old + new[:1]], 1000)[6560]
+        self.assertEqual((merged["t"], merged["s"], merged["tp"]), (95, 13200, 3))
+
     def test_dungeon_zones_without_a_position(self):
         # Inside a dungeon the game gives no position, only the zone: version 6 can say that, older versions can't.
         dungeon = "3812^40^0^19^20^291^0.0000^0.0000^0^Defias Miner^3010:7:7^"

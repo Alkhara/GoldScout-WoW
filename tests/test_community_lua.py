@@ -223,7 +223,7 @@ class SnapshotLuaTests(unittest.TestCase):
         learn = self.ns.Learn
         text, count, _ = learn.ExportString(learn)
         self.assertEqual(count, 2)
-        self.assertTrue(text.startswith("GoldScout-export 8^"))   # no old companion here
+        self.assertTrue(text.startswith("GoldScout-export 9^"))   # no old companion here
         result = submission.parse(text)
         self.assertEqual(result.errors, [])
         self.assertEqual(result.item_meta, {3010: (1, 7, True)})
@@ -544,6 +544,44 @@ class LootCountingLuaTests(unittest.TestCase):
         self.lua.execute("IsInInstance = nil")
         self.kill(4, after=30)
         self.assertEqual(self.pace(), (1, 30))
+
+    def in_zone(self, map_id):
+        self.lua.execute("""
+          C_Map = {
+            GetBestMapForUnit = function() return %d end,
+            GetPlayerMapPosition = function() return { GetXY = function() return 0.5, 0.5 end } end,
+            GetMapInfo = function() return { name = "Ashenvale" } end,
+          }""" % map_id)
+
+    def test_the_hunt_for_the_next_one_counts_in_one_zone(self):
+        # A mob there are only a few of: up to ten minutes looking for the next one is part of farming it.
+        self.in_zone(1440)
+        self.kill(1)
+        self.kill(2, after=300)
+        self.assertEqual(self.pace(), (1, 300))
+        self.kill(3, after=601)               # over ten minutes: a break
+        self.kill(4, after=20)
+        self.assertEqual(self.pace(), (2, 320))
+
+    def test_a_long_gap_after_moving_to_another_zone_is_a_trip(self):
+        self.in_zone(1440)
+        self.kill(1)
+        self.in_zone(1439)
+        self.kill(2, after=300)               # flew somewhere else: not timed
+        self.assertEqual(self.pace(), (None, None))
+        self.in_zone(1440)
+        self.kill(3, after=60)                # a short gap counts, zone border or not
+        self.assertEqual(self.pace(), (1, 60))
+
+    def test_older_kill_times_start_over_once(self):
+        # They left the hunt between kills out: version 9 exports share only times recorded since.
+        db = self.lua.eval("{ drops = { [3809] = { k = 50, t = 40, ts = 2400 } } }")
+        self.ns.Learn.FreshPace(db)
+        self.assertEqual((db.drops[3809].t, db.drops[3809].ts, db.huntPace), (None, None, True))
+        db.drops[3809].t, db.drops[3809].ts = 3, 900
+        self.ns.Learn.FreshPace(db)            # only once
+        self.assertEqual((db.drops[3809].t, db.drops[3809].ts), (3, 900))
+        self.assertTrue(self.ns.db.huntPace)   # done at login
 
     def test_a_kill_counted_at_death_is_timed_once(self):
         self.kill(1)

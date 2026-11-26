@@ -131,7 +131,7 @@ def sources_of(submissions):
     return sources
 
 
-# A mob's own pace (export version 7 @t lines) replaces the default kills an hour once this many of its kills
+# A mob's own pace (export version 7 @t lines; from version 9 alone once there are enough) replaces the default kills an hour once this many of its kills
 # were timed, by at least this many players: one player's pace is their character and play style, not the farm's.
 # The add-on (Data_Community.lua t and s) and the website (site/data_pages.py) both go by these.
 PACE_MIN_KILLS = 30
@@ -142,6 +142,23 @@ def has_pace(entry):
     """True when enough of a merged mob's kills were timed, by enough players, to use its own pace."""
     return (entry.get("t", 0) >= PACE_MIN_KILLS and entry.get("tp", 0) >= PACE_MIN_PLAYERS
             and entry.get("s", 0) > 0)
+
+
+def _add_pace(entry, prefix, mob, max_per_player):
+    timed = min(mob.t, max_per_player)
+    entry[prefix + "t"] += timed
+    entry[prefix + "s"] += mob.s * timed / mob.t
+    entry[prefix + "tp"] += 1
+
+
+def _settle_paces(merged):
+    """Each mob's pace from version 9 kill times alone (they count the hunt between kills, submission.HUNT_PACE)
+    once those are enough for has_pace, else from every player's: older times leave that hunt out, so they run
+    fast for mobs there are only a few of, but they're better than no pace at all."""
+    for entry in merged.values():
+        hunt = {"t": entry.pop("ht"), "s": entry.pop("hs"), "tp": entry.pop("htp")}
+        if has_pace(hunt):
+            entry.update(hunt)
 
 
 def merge(submissions, max_per_player):
@@ -158,13 +175,13 @@ def merge(submissions, max_per_player):
                 "i": defaultdict(lambda: [0, 0]), "pi": defaultdict(lambda: [0, 0]),
                 # Timed kills, the seconds they took at your own level's pace, and the players who timed them.
                 "t": 0, "s": 0.0, "tp": 0,
+                "ht": 0, "hs": 0.0, "htp": 0,   # the same from version 9 exports alone (_settle_paces)
             })
             entry["k"] += min(mob.k, max_per_player)
             if getattr(mob, "t", 0):
-                timed = min(mob.t, max_per_player)
-                entry["t"] += timed
-                entry["s"] += mob.s * timed / mob.t
-                entry["tp"] += 1
+                _add_pace(entry, "", mob, max_per_player)
+                if getattr(mob, "hunt", False):
+                    _add_pace(entry, "h", mob, max_per_player)
             entry["p"] += min(mob.p, max_per_player)
             if mob.lmin:
                 entry["lmin"] = min(entry["lmin"] or mob.lmin, mob.lmin)
@@ -188,6 +205,7 @@ def merge(submissions, max_per_player):
                 for item, (d, q) in _scaled(getattr(mob, key), factor).items():
                     entry[key][item][0] += d
                     entry[key][item][1] += q
+    _settle_paces(merged)
     return merged
 
 
