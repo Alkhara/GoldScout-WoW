@@ -547,10 +547,12 @@ QUEST_ITEM_CLASS = 12   # Blizzard's item class for quest items
 # (GoldScout before v0.12.40 missed picks of a mob you hadn't targeted, and pockets a Cheap Shot macro left full
 # turn up on the corpse), so they're dropped from kill loot as an export is read. Besides the junkboxes, the
 # community data shows these: picked from mobs that players who never pickpocket killed 430 to 4,800 times
-# without one dropping, while every one in kill loot came from a rogue (checked 2026-11-21).
+# without one dropping, while every one in kill loot came from a rogue (checked 2026-11-21; An Exotic Cookbook and
+# Hickory Pipe 2026-11-26, none in 25,000 to 29,000 kills by players who never pickpocket).
 PICKPOCKET_ONLY = frozenset((
     16882, 16883, 16884, 16885,   # Battered, Worn, Sturdy and Heavy Junkbox
     5373, 5374, 5379, 5430,       # Lucky Charm, Small Pocket Watch, Boot Knife, Intricate Bauble
+    5428, 5432,                   # An Exotic Cookbook, Hickory Pipe
     10457, 17124,                 # Empty Sea Snail Shell, Syndicate Emblem (a rogue quest's pickpocket)
 ))
 
