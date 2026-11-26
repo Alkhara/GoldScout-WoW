@@ -1,6 +1,7 @@
-GoldScout-export 6^6ltwoqwruze8^9
+GoldScout-export 6^6ltwoqwruze8^10
 682^9^0^32^33^1434^0.4708^0.1429^9^Stranglethorn Tiger^1686:5:5,1687:2:2,8146:1:1,12202:3:3^
-685^1^0^33^33^1434^0.2782^0.1446^1^Stranglethorn Raptor^4461:1:1,213547:1:1^
+685^9^0^33^34^1434^0.2643^0.1600^9^Stranglethorn Raptor^1696:1:1,3685:7:7,4461:3:3,12184:2:2,213547:1:1^
+689^23^0^34^35^1434^0.2521^0.1771^23^Crystal Spine Basilisk^1701:8:8,1702:7:7,1703:3:3,3918:10:10,4093:1:1,5637:2:2,11386:2:2^
 729^1^0^37^37^1434^0.3303^0.1713^1^Sin'Dall^12202:1:1^
 736^3^0^32^33^1434^0.2851^0.1426^3^Panther^1686:1:1,5637:2:2^
 937^13^0^32^33^1434^0.4435^0.0988^13^Kurzen Jungle Fighter^2592:2:6,4306:4:5^
@@ -15,6 +16,7 @@ GoldScout-export 6^6ltwoqwruze8^9
 2589^2^0^31^32^1417^0.3254^0.2899^2^Syndicate Mercenary^4306:1:1,6986:1:1^
 2618^2^0^33^34^1417^0.6030^0.5776^2^Hammerfall Peon^^
 2619^3^0^34^35^1417^0.6022^0.5732^3^Hammerfall Grunt^3771:1:1,6405:1:1^
+2635^1^0^38^38^1434^0.2512^0.1906^1^Elder Saltwater Crocolisk^770:1:1^
 2714^1^0^35^35^1417^0.6050^0.5888^1^Forsaken Courier^4482:1:1^
 2721^2^0^35^35^1417^0.6060^0.5898^2^Forsaken Bodyguard^4306:1:2^
 3809^5^0^21^22^1440^0.4088^0.6749^5^Ashenvale Bear^2940:1:1,3702:1:1,3730:1:1,4296:1:1,11406:2:2^
@@ -33,6 +35,7 @@ GoldScout-export 6^6ltwoqwruze8^9
 4362^4^0^36^37^1445^0.5648^0.1692^4^Mirefin Coastrunner^3780:1:1,5847:1:1,17057:1:1,17058:2:2^
 4693^1^0^37^37^1443^0.5429^0.4429^1^Dread Flyer^12037:1:1^
 4723^1^0^38^38^1434^0.4252^0.1846^1^Foreman Cozzle^5851:1:1^
+4969^1^0^25^26^1453^0.7378^0.5923^1^Old Town Thug^^
 5419^1^0^43^43^1446^0.5095^0.2933^1^Glasshide Basilisk^^
 6238^1^0^33^33^1413^0.6860^0.4875^1^Big Will^4306:1:1^
 6240^7^0^26^27^1413^0.6858^0.4858^7^Affray Challenger^^
@@ -47,8 +50,10 @@ GoldScout-export 6^6ltwoqwruze8^9
 @i^1630^Broken Electro-lantern
 @i^1686^Bristly Whisker
 @i^1687^Retractable Claw
+@i^1696^Curved Raptor Talon
 @i^1701^Curved Basilisk Claw
 @i^1702^Intact Basilisk Spine
+@i^1703^Crystal Basilisk Spine
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
 @i^2592^Wool Cloth
@@ -60,12 +65,14 @@ GoldScout-export 6^6ltwoqwruze8^9
 @i^3385^Lesser Mana Potion
 @i^3399^Vulture Talon
 @i^3667^Tender Crocolisk Meat
+@i^3685^Raptor Egg
 @i^3702^Bear Gall Bladder
 @i^3712^Turtle Meat
 @i^3730^Big Bear Meat
 @i^3771^Wild Hog Shank
 @i^3780^Long-barreled Musket
 @i^3820^Stranglekelp
+@i^3918^Singing Crystal Shard
 @i^3928^Superior Healing Potion
 @i^4053^Large River Crocolisk Skin
 @i^4093^Large Basilisk Tail
@@ -101,9 +108,11 @@ GoldScout-export 6^6ltwoqwruze8^9
 @i^8748^Double Mail Coif
 @i^11384^Broken Basilisk Teeth
 @i^11385^Basilisk Scale
+@i^11386^Squishy Basilisk Eye
 @i^11406^Rotting Bear Carcass
 @i^11416^Delicate Ribcage
 @i^12037^Mystery Meat
+@i^12184^Raptor Flesh
 @i^12202^Tiger Meat
 @i^13757^Lightning Eel
 @i^13758^Raw Redgill
@@ -139,8 +148,10 @@ GoldScout-export 6^6ltwoqwruze8^9
 @q^1630^0:15:0
 @q^1686^0:15:0
 @q^1687^0:15:0
+@q^1696^0:15:0
 @q^1701^0:15:0
 @q^1702^0:15:0
+@q^1703^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
 @q^2592^1:7:1
@@ -152,12 +163,14 @@ GoldScout-export 6^6ltwoqwruze8^9
 @q^3385^1:0:0
 @q^3399^0:15:0
 @q^3667^1:7:1
+@q^3685^1:7:1
 @q^3702^0:15:0
 @q^3712^1:7:1
 @q^3730^1:7:1
 @q^3771^1:0:0
 @q^3780^0:2:0
 @q^3820^1:7:1
+@q^3918^1:12:0
 @q^3928^1:0:0
 @q^4053^1:12:0
 @q^4093^0:15:0
@@ -193,9 +206,11 @@ GoldScout-export 6^6ltwoqwruze8^9
 @q^8748^0:4:0
 @q^11384^0:15:0
 @q^11385^0:15:0
+@q^11386^0:15:0
 @q^11406^0:15:0
 @q^11416^0:15:0
 @q^12037^1:7:1
+@q^12184^1:7:1
 @q^12202^1:7:1
 @q^13757^1:7:1
 @q^13758^1:7:1
@@ -234,6 +249,7 @@ GoldScout-export 6^6ltwoqwruze8^9
 @m^1445^Dustwallow Marsh
 @m^1446^Tanaris
 @m^1450^Moonglade
+@m^1453^Stormwind City
 @c^118^
 @c^724^
 @c^733^
@@ -923,7 +939,8 @@ GoldScout-export 6^6ltwoqwruze8^9
 @c^285281^
 @c^286152^
 @a^682^49:5,69:4
-@a^685^45:1
+@a^685^45:1,64:2,65:6
+@a^689^64:12,65:11
 @a^729^66:1
 @a^736^45:2,65:1
 @a^937^28:7,29:1,48:5
@@ -938,6 +955,7 @@ GoldScout-export 6^6ltwoqwruze8^9
 @a^2589^106:1,126:1
 @a^2618^232:2
 @a^2619^232:3
+@a^2635^65:1
 @a^2714^232:1
 @a^2721^232:2
 @a^3809^249:1,268:2,287:2
@@ -956,6 +974,7 @@ GoldScout-export 6^6ltwoqwruze8^9
 @a^4362^71:4
 @a^4693^170:1
 @a^4723^68:1
+@a^4969^234:1
 @a^5419^110:1
 @a^6238^193:1
 @a^6240^193:7

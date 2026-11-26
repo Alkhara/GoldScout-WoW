@@ -1,4 +1,4 @@
-GoldScout-export 7^r3y3a89n4nhg^13
+GoldScout-export 7^r3y3a89n4nhg^14
 36^3^0^11^12^1436^0.5632^0.3538^3^Harvest Golem^814:2:2,255007:1:1^
 94^2^0^5^6^1429^0.4045^0.5419^2^Defias Cutpurse^2589:1:2,2656:1:1^
 95^8^0^11^12^1436^0.4788^0.4228^8^Defias Smuggler^414:1:1,829:2:2,2589:2:2,3013:1:1,7997:1:1^
@@ -28,6 +28,7 @@ GoldScout-export 7^r3y3a89n4nhg^13
 1562^5^3^40^41^1434^0.3243^0.7304^5^Bloodsail Mage^2745:1:1,4306:1:2^5432:1:1
 1563^6^1^42^43^1434^0.3183^0.7911^6^Bloodsail Swashbuckler^4019:1:1,4306:1:2,4338:1:1^
 1713^6^0^42^43^1434^0.3423^0.5662^6^Elder Shadowmaw Panther^1688:2:2,4580:1:1^
+2260^1^0^22^22^1424^0.7835^0.4351^1^Syndicate Rogue^1821:1:1,2592:1:2^
 5234^0^2^43^44^0^0.0000^0.0000^0^Gordunni Mauler^^5428:1:1
 5236^2^1^44^45^1444^0.5960^0.6601^2^Gordunni Shaman^255725:1:1^
 5238^1^5^45^46^1444^0.6020^0.6520^1^Gordunni Battlemaster^^5428:2:2
@@ -76,9 +77,11 @@ GoldScout-export 7^r3y3a89n4nhg^13
 @i^1716^Robe of the Magi
 @i^1730^Worn Mail Belt
 @i^1732^Worn Mail Bracers
+@i^1821^Warped Blade
 @i^2140^Carving Knife of Strength
 @i^2213^Worn Large Shield
 @i^2589^Linen Cloth
+@i^2592^Wool Cloth
 @i^2656^Flimsy Chain Vest
 @i^2672^Stringy Wolf Meat
 @i^2673^Coyote Meat
@@ -188,9 +191,11 @@ GoldScout-export 7^r3y3a89n4nhg^13
 @q^1716^3:4:0
 @q^1730^0:4:0
 @q^1732^0:4:0
+@q^1821^0:2:0
 @q^2140^2:2:0
 @q^2213^0:4:0
 @q^2589^1:7:1
+@q^2592^1:7:1
 @q^2656^0:4:0
 @q^2672^1:7:1
 @q^2673^1:7:1
@@ -277,6 +282,7 @@ GoldScout-export 7^r3y3a89n4nhg^13
 @q^255154^0:15:0
 @q^255725^2:9:0
 @q^262889^3:0:0
+@m^1424^Hillsbrad Foothills
 @m^1426^Dun Morogh
 @m^1429^Elwynn Forest
 @m^1434^Stranglethorn Vale
@@ -1624,6 +1630,7 @@ GoldScout-export 7^r3y3a89n4nhg^13
 @a^1562^286:5
 @a^1563^306:4,325:1,326:1
 @a^1713^226:2,227:4
+@a^2260^175:1
 @a^5236^271:1,272:1
 @a^5238^272:1
 @a^5239^291:1
