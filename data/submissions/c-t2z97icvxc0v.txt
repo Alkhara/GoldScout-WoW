@@ -1,4 +1,4 @@
-GoldScout-export 7^t2z97icvxc0v^34
+GoldScout-export 7^t2z97icvxc0v^35
 589^2^0^14^15^1436^0.4357^0.6766^2^Defias Pillager^2589:1:2^
 590^3^0^13^14^1436^0.4356^0.6756^3^Defias Looter^1510:1:1,2778:1:1,211786:1:1^
 1082^1^0^39^39^1435^0.4903^0.5193^1^Sawtooth Crocolisk^^
@@ -110,6 +110,8 @@ GoldScout-export 7^t2z97icvxc0v^34
 5716^1^0^0^0^0^0.0000^0.0000^0^^10787:1:1^
 5719^1^0^0^0^0^0.0000^0.0000^0^^^
 5721^1^0^0^0^0^0.0000^0.0000^0^^12464:1:1^
+5854^2^0^48^48^1427^0.4326^0.4048^2^Heavy War Golem^7912:1:1^
+5858^1^0^47^47^1427^0.3804^0.3340^1^Searing Lava Spider^4337:1:1,4585:1:1^
 6116^6^0^45^46^1447^0.1674^0.6935^6^Highborne Apparition^3961:1:1,4338:1:3,4608:1:1^
 6117^6^0^46^47^1447^0.1724^0.6919^6^Highborne Lichling^4338:2:6,4608:1:1^
 6125^6^0^45^46^1447^0.1988^0.6286^6^Haldarr Satyr^3928:1:1,4338:1:1^
@@ -369,6 +371,7 @@ GoldScout-export 7^t2z97icvxc0v^34
 @i^4092^Prismatic Basilisk Scale
 @i^4093^Large Basilisk Tail
 @i^4306^Silk Cloth
+@i^4337^Thick Spider's Silk
 @i^4338^Mageweave Cloth
 @i^4402^Small Flame Sac
 @i^4419^Scroll of Intellect III
@@ -737,6 +740,7 @@ GoldScout-export 7^t2z97icvxc0v^34
 @q^4092^0:15:0
 @q^4093^0:15:0
 @q^4306^1:7:1
+@q^4337^1:7:1
 @q^4338^1:7:1
 @q^4402^1:7:1
 @q^4419^1:0:0
@@ -1042,6 +1046,7 @@ GoldScout-export 7^t2z97icvxc0v^34
 @m^1418^Badlands
 @m^1422^Western Plaguelands
 @m^1425^The Hinterlands
+@m^1427^Searing Gorge
 @m^1435^Swamp of Sorrows
 @m^1436^Westfall
 @m^1443^Desolace
@@ -2319,6 +2324,8 @@ GoldScout-export 7^t2z97icvxc0v^34
 @a^5617^112:2,132:3,151:1,152:4
 @a^5618^92:1,112:2,132:5,133:4
 @a^5623^132:2,151:2,152:2
+@a^5854^148:1,168:1
+@a^5858^127:1
 @a^6116^263:4,283:2
 @a^6117^263:4,283:2
 @a^6125^243:4,244:2
@@ -2390,6 +2397,7 @@ GoldScout-export 7^t2z97icvxc0v^34
 @a^270807^265:3
 @a^272313^294:1
 @t^5243^3:349
+@t^5854^2:90
 @t^6551^3:268
 @t^6554^1:92
 @f^1435^0^3^242^6308:1:1,8365:2:2^212:3

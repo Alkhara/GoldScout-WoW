@@ -1,4 +1,4 @@
-GoldScout-export 8^8a2er4151rpp^23
+GoldScout-export 9^8a2er4151rpp^26
 30^1^0^5^6^1429^0.3815^0.7267^1^Araignée forestière^5465:1:1^
 40^13^0^6^7^1429^0.4068^0.7948^13^Mineur kobold^772:2:2,773:2:2,818:1:1,1389:1:1,1417:1:1,1429:1:1,1433:1:1,2589:3:6,4536:1:1^
 79^1^0^10^10^1429^0.4098^0.7796^1^Narg le Sous-chef^6147:1:1^
@@ -337,6 +337,10 @@ GoldScout-export 8^8a2er4151rpp^23
 249247^6^0^57^58^2482^0.2314^0.5890^6^Soldat oublié^7972:1:1,14047:4:9,272973:1:1^
 249474^1^0^56^57^2482^0.4310^0.3457^1^Renard feuillerousse^4583:1:1^
 249491^1^0^59^59^2482^0.3429^0.6794^1^Saute-vents des montagnes^^
+250873^9^0^1^1^2521^0.4448^0.2590^9^Jeune vuldrène^1378:1:1,2672:1:1,4865:4:4,5572:1:1,7073:2:2,7074:5:5^
+251143^2^0^2^3^2521^0.4580^0.1908^2^Vents tourbillonnants^251930:1:1,251931:1:1^
+251160^2^0^2^3^2521^0.4627^0.1842^2^Converti al'aketh^159:1:1^
+251169^7^0^1^1^2521^0.4608^0.2561^7^Mouche-cirrus agaçante^1370:1:1,2650:1:1,251927:2:2,251928:5:5^
 252063^10^0^56^57^2482^0.3174^0.7496^10^Garde-tanière mort-bois^14047:4:8,263439:5:5^
 252096^15^0^56^57^2482^0.3156^0.7057^15^Soigne-gangrène mort-bois^8766:1:1,8952:1:1,14047:1:2,263439:8:8^
 252116^14^0^56^57^2482^0.3133^0.6800^14^Totémique mort-bois^8766:2:2,14047:7:15,263439:4:4^
@@ -384,6 +388,7 @@ GoldScout-export 8^8a2er4151rpp^23
 @i^1372^Cape déchirée
 @i^1376^Cape râpée
 @i^1377^Gants râpés
+@i^1378^Pantalon râpé
 @i^1380^Robe râpée
 @i^1389^Marteau de mine kobold
 @i^1411^Vieux bâton usé
@@ -400,10 +405,12 @@ GoldScout-export 8^8a2er4151rpp^23
 @i^2453^Doulourante
 @i^2589^Etoffe de lin
 @i^2649^Ceinture en anneaux fins
+@i^2650^Bottes en anneaux fins
 @i^2651^Brassards en anneaux fins
 @i^2653^Gants en anneaux fins
 @i^2654^Pantalon en anneaux fins
 @i^2656^Lorica fine
+@i^2672^Viande de loup maigre
 @i^2799^Croc de gorille
 @i^3013^Parchemin de Protection
 @i^3171^Défense de sanglier cassée
@@ -470,6 +477,7 @@ GoldScout-export 8^8a2er4151rpp^23
 @i^5471^Viande de cerf
 @i^5566^Ramure brisée
 @i^5569^Algue
+@i^5572^Petite bourse verte
 @i^5758^Coffret en mithril
 @i^5759^Coffret de thorium
 @i^6147^Vieille ceinture miteuse
@@ -729,6 +737,10 @@ GoldScout-export 8^8a2er4151rpp^23
 @i^249521^Formule : cœur dormant de la montagne
 @i^251442^Plans : brassards bénis en plaques
 @i^251641^Tranche de venaison d'Hyjal
+@i^251927^Dard de mouche-cirrus ébréché
+@i^251928^Aile d'insecte déchirée
+@i^251930^Essence mineure des Quatre vents
+@i^251931^Pierre de vent déchargée
 @i^252867^Patron : gantelets de rôdeur en cuir
 @i^252868^Patron : gantelets de furtivité en cuir
 @i^252931^Patron : heaume en écailles de scorpide souples
@@ -790,6 +802,7 @@ GoldScout-export 8^8a2er4151rpp^23
 @q^1372^0:4:0
 @q^1376^0:4:0
 @q^1377^0:4:0
+@q^1378^0:4:0
 @q^1380^0:4:0
 @q^1389^1:2:0
 @q^1411^0:2:0
@@ -806,10 +819,12 @@ GoldScout-export 8^8a2er4151rpp^23
 @q^2453^1:7:1
 @q^2589^1:7:1
 @q^2649^0:4:0
+@q^2650^0:4:0
 @q^2651^0:4:0
 @q^2653^0:4:0
 @q^2654^0:4:0
 @q^2656^0:4:0
+@q^2672^1:7:1
 @q^2799^1:12:0
 @q^3013^1:0:0
 @q^3171^0:15:0
@@ -876,6 +891,7 @@ GoldScout-export 8^8a2er4151rpp^23
 @q^5471^1:7:1
 @q^5566^0:15:0
 @q^5569^0:15:0
+@q^5572^1:1:0
 @q^5758^2:15:0
 @q^5759^2:15:0
 @q^6147^2:4:0
@@ -1135,6 +1151,10 @@ GoldScout-export 8^8a2er4151rpp^23
 @q^249521^3:9:0
 @q^251442^2:9:0
 @q^251641^1:12:0
+@q^251927^0:15:0
+@q^251928^0:15:0
+@q^251930^0:15:0
+@q^251931^0:15:0
 @q^252867^3:9:0
 @q^252868^3:9:0
 @q^252931^2:9:0
@@ -1195,6 +1215,7 @@ GoldScout-export 8^8a2er4151rpp^23
 @m^1449^Cratère d'Un'Goro
 @m^1453^Hurlevent
 @m^2482^Mont Hyjal
+@m^2521^Île de Zéphras
 @c^118^
 @c^724^
 @c^733^
@@ -2333,6 +2354,10 @@ GoldScout-export 8^8a2er4151rpp^23
 @a^249247^224:4,225:1,245:1
 @a^249474^128:1
 @a^249491^266:1
+@a^250873^108:9
+@a^251143^69:2
+@a^251160^69:2
+@a^251169^89:2,109:5
 @a^252063^266:2,284:2,286:1,287:1,306:1,325:1,326:2
 @a^252096^225:2,264:2,266:2,267:2,284:1,286:1,287:1,306:1,307:1,326:2
 @a^252116^225:2,226:3,244:1,267:1,284:1,285:1,287:2,307:1,326:2
@@ -2346,17 +2371,8 @@ GoldScout-export 8^8a2er4151rpp^23
 @a^260818^288:1
 @a^269075^245:1
 @a^276138^269:1,270:1,289:1,290:2
-@t^3560^7:399
-@t^4494^8:484
-@t^7025^2:163
-@t^7026^2:227
-@t^7027^3:325
-@t^8523^1:1
-@t^11611^3:214
-@t^249228^16:794
-@t^249237^2:172
-@t^249247^4:302
-@t^252063^2:89
-@t^252096^8:629
-@t^252116^9:388
+@t^250873^8:159
+@t^251143^1:17
+@t^251160^2:69
+@t^251169^7:179
 @l^0^frFR

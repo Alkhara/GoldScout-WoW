@@ -1,4 +1,4 @@
-GoldScout-export 9^jnk5hpehncuz^19
+GoldScout-export 9^jnk5hpehncuz^20
 30^1^0^5^5^1429^0.3276^0.5788^1^Forest Spider^1476:1:1^
 36^6^0^11^12^1436^0.5600^0.3488^6^Harvest Golem^732:2:2,814:2:2,1274:2:2,2778:1:1,9742:1:1,255007:2:2,255010:1:1^
 94^5^0^5^6^1429^0.3126^0.6513^5^Defias Cutpurse^118:1:1,1368:1:1,2589:1:1,3013:1:1^
@@ -84,6 +84,8 @@ GoldScout-export 9^jnk5hpehncuz^19
 1731^6^0^0^0^0^0.0000^0.0000^0^^814:1:1,858:2:2,2287:1:1,2589:1:1,4364:1:1,211853:1:1^
 1732^4^0^0^0^0^0.0000^0.0000^0^^7997:1:1^
 1763^1^0^0^0^0^0.0000^0.0000^0^^211784:1:1^
+2102^2^0^20^21^1437^0.4981^0.7493^2^Dragonmaw Grunt^2592:1:1^
+2103^7^0^19^20^1437^0.4971^0.7917^7^Dragonmaw Scout^2592:2:4,4306:1:1,7290:1:1^
 3417^2^0^17^17^1415^0.4110^0.7965^2^Living Flame^^
 3586^1^0^0^0^0^0.0000^0.0000^0^^1764:1:1,2589:1:3^
 3632^1^0^15^15^1414^0.5189^0.5539^1^Deviate Creeper^774:1:1^
@@ -236,6 +238,7 @@ GoldScout-export 9^jnk5hpehncuz^19
 @i^3645^Seer's Cuffs
 @i^3670^Large Slimy Bone
 @i^3674^Decomposed Boot
+@i^4306^Silk Cloth
 @i^4359^Handful of Copper Bolts
 @i^4361^Copper Tube
 @i^4363^Copper Modulator
@@ -296,6 +299,7 @@ GoldScout-export 9^jnk5hpehncuz^19
 @i^7074^Chipped Claw
 @i^7091^Pattern: Truefaith Gloves
 @i^7096^Plucked Feather
+@i^7290^Pattern: Red Whelp Gloves
 @i^7350^Disciple's Bracers
 @i^7997^Red Defias Mask
 @i^8180^Hunting Bow
@@ -472,6 +476,7 @@ GoldScout-export 9^jnk5hpehncuz^19
 @q^3645^2:4:0
 @q^3670^0:15:0
 @q^3674^0:15:0
+@q^4306^1:7:1
 @q^4359^1:7:1
 @q^4361^1:7:1
 @q^4363^1:7:1
@@ -532,6 +537,7 @@ GoldScout-export 9^jnk5hpehncuz^19
 @q^7074^0:15:0
 @q^7091^2:9:0
 @q^7096^0:15:0
+@q^7290^1:9:0
 @q^7350^1:4:0
 @q^7997^0:4:0
 @q^8180^2:2:0
@@ -588,6 +594,7 @@ GoldScout-export 9^jnk5hpehncuz^19
 @m^1429^Elwynn Forest
 @m^1432^Loch Modan
 @m^1436^Westfall
+@m^1437^Wetlands
 @m^1439^Darkshore
 @m^1442^Stonetalon Mountains
 @m^1453^Stormwind City
@@ -1379,6 +1386,8 @@ GoldScout-export 9^jnk5hpehncuz^19
 @a^1693^172:1,210:9,211:3,230:5
 @a^1725^308:2
 @a^1727^308:5
+@a^2102^290:1,309:1
+@a^2103^309:4,310:3
 @a^3417^308:2
 @a^3632^230:1
 @a^3633^210:1
@@ -1389,6 +1398,8 @@ GoldScout-export 9^jnk5hpehncuz^19
 @t^1189^1:73
 @t^1195^2:127
 @t^1225^1:91
+@t^2102^2:91
+@t^2103^6:656
 @f^1432^0^24^150^6308:2:2,20708:2:2,20709:2:6,21071:18:18^48:4,70:2,168:4,192:2,212:5,230:1,251:6
 @f^1436^0^2^150^6358:2:2^285:2
 @f^1439^0^46^150^6303:10:10,6358:4:4,6361:18:18,12238:14:14^166:35,167:11

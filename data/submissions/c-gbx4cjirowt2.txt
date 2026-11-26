@@ -1,6 +1,10 @@
-GoldScout-export 7^gbx4cjirowt2^6
-2248^3^0^30^31^1424^0.4472^0.2902^3^Cave Yeti^^
-2249^4^0^31^32^1424^0.4417^0.2919^4^Ferocious Yeti^^
+GoldScout-export 9^gbx4cjirowt2^7
+2248^4^0^30^31^1424^0.4477^0.2919^4^Cave Yeti^^
+2249^7^0^31^32^1424^0.4425^0.2910^7^Ferocious Yeti^1708:1:1,3708:1:1^
+2269^7^0^26^27^1424^0.2831^0.5491^7^Hillsbrad Miner^2592:1:1,2838:1:3,4306:2:3^
+2270^1^0^27^27^1424^0.2748^0.5702^1^Hillsbrad Sentry^^
+2384^1^0^23^24^1424^0.4956^0.3107^1^Starving Mountain Lion^5136:1:1,5810:1:1^
+2503^3^0^27^27^1424^0.2845^0.5438^3^Hillsbrad Foreman^4306:1:2^
 3560^8^0^26^27^1441^0.3772^0.3353^8^Healing Ward^^
 3809^1^0^21^22^1440^0.3874^0.3653^1^Ashenvale Bear^11406:1:1^
 3844^7^0^23^24^1440^0.4049^0.3298^7^Healing Ward IV^^
@@ -127,6 +131,7 @@ GoldScout-export 7^gbx4cjirowt2^6
 @i^1205^Melon Juice
 @i^1206^Moss Agate
 @i^1478^Scroll of Protection II
+@i^1708^Sweet Nectar
 @i^1712^Scroll of Spirit II
 @i^1738^Laced Mail Belt
 @i^1757^Reinforced Chain Cloak
@@ -158,12 +163,14 @@ GoldScout-export 7^gbx4cjirowt2^6
 @i^2786^Oiled Blunderbuss
 @i^2816^Death Speaker Scepter
 @i^2819^Cross Dagger of the Elder
+@i^2838^Heavy Stone
 @i^3010^Fine Sand
 @i^3385^Lesser Mana Potion
 @i^3399^Vulture Talon
 @i^3402^Soft Patch of Fur
 @i^3403^Ivory Boar Tusk
 @i^3674^Decomposed Boot
+@i^3708^Helcular's Rod
 @i^3712^Turtle Meat
 @i^3740^Decapitating Sword of Strength
 @i^3770^Mutton Chop
@@ -181,6 +188,7 @@ GoldScout-export 7^gbx4cjirowt2^6
 @i^5115^Broken Wishbone
 @i^5117^Vibrant Plume
 @i^5128^Shed Lizard Skin
+@i^5136^Torn Furry Ear
 @i^5137^Bright Eyeball
 @i^5516^Threshadon Fang
 @i^5524^Thick-shelled Clam
@@ -189,6 +197,7 @@ GoldScout-export 7^gbx4cjirowt2^6
 @i^5741^Rock Chip
 @i^5793^Razorflank's Heart
 @i^5801^Kraul Guano
+@i^5810^Fresh Carcass
 @i^5837^Steelsnap's Rib
 @i^5842^Unrefined Ore Sample
 @i^5843^Grenka's Claw
@@ -284,6 +293,7 @@ GoldScout-export 7^gbx4cjirowt2^6
 @q^1205^1:0:0
 @q^1206^2:7:1
 @q^1478^1:0:0
+@q^1708^1:0:0
 @q^1712^1:0:0
 @q^1738^0:4:0
 @q^1757^0:4:0
@@ -315,12 +325,14 @@ GoldScout-export 7^gbx4cjirowt2^6
 @q^2786^0:2:0
 @q^2816^3:2:0
 @q^2819^2:2:0
+@q^2838^1:7:1
 @q^3010^0:15:0
 @q^3385^1:0:0
 @q^3399^0:15:0
 @q^3402^0:15:0
 @q^3403^0:15:0
 @q^3674^0:15:0
+@q^3708^1:12:0
 @q^3712^1:7:1
 @q^3740^2:2:0
 @q^3770^1:0:0
@@ -338,6 +350,7 @@ GoldScout-export 7^gbx4cjirowt2^6
 @q^5115^0:15:0
 @q^5117^1:12:0
 @q^5128^0:15:0
+@q^5136^0:15:0
 @q^5137^0:15:0
 @q^5516^0:2:0
 @q^5524^1:7:0
@@ -346,6 +359,7 @@ GoldScout-export 7^gbx4cjirowt2^6
 @q^5741^0:15:0
 @q^5793^1:12:0
 @q^5801^1:12:0
+@q^5810^1:12:0
 @q^5837^1:12:0
 @q^5842^1:12:0
 @q^5843^1:12:0
@@ -442,8 +456,12 @@ GoldScout-export 7^gbx4cjirowt2^6
 @m^1424^Hillsbrad Foothills
 @m^1440^Ashenvale
 @m^1441^Thousand Needles
-@a^2248^108:2,129:1
-@a^2249^108:2,128:1,129:1
+@a^2248^108:3,129:1
+@a^2249^108:5,128:1,129:1
+@a^2269^205:4,225:3
+@a^2270^225:1
+@a^2384^129:1
+@a^2503^205:2,225:1
 @a^3560^107:1,127:2,147:5
 @a^3809^147:1
 @a^3844^127:3,128:4
@@ -497,6 +515,10 @@ GoldScout-export 7^gbx4cjirowt2^6
 @a^10992^84:1
 @a^12677^231:1
 @a^270094^210:1
-@t^2248^2:194
-@t^2249^3:238
+@t^2248^1:100
+@t^2249^2:33
+@t^2269^7:937
+@t^2270^1:164
+@t^2384^1:162
+@t^2503^3:4
 @l^0^enUS

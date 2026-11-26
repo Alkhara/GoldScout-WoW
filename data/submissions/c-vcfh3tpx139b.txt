@@ -1,4 +1,4 @@
-GoldScout-export 8^vcfh3tpx139b^26
+GoldScout-export 8^vcfh3tpx139b^27
 205^12^0^28^29^1431^0.6107^0.4195^12^Nightbane Dark Runner^1825:1:1,1830:1:1,5635:2:2^
 206^9^0^29^30^1431^0.7162^0.6841^9^Nightbane Vile Fang^865:1:1,3770:1:1,5637:1:1,7416:1:1^
 212^8^0^29^30^1431^0.3305^0.7382^8^Splinter Fist Warrior^2592:2:3,3770:1:1,4306:1:2^
@@ -100,8 +100,16 @@ GoldScout-export 8^vcfh3tpx139b^26
 2406^24^0^32^33^1416^0.3191^0.8324^24^Mountain Lion^1686:12:12,1687:3:3,3731:13:13,5637:1:1,12020:1:1,213543:1:1,248709:1:1^
 2407^7^0^33^34^1416^0.3268^0.8517^7^Hulking Mountain Lion^1686:2:2,1687:1:1,3731:6:6,5213:1:1,9435:1:1,12009:1:1^
 2408^33^0^30^31^1416^0.2332^0.4481^29^Snapjaw^3712:7:10,4555:6:6,4556:8:8,5524:26:26,6308:5:8^
+2559^1^0^30^30^1417^0.4949^0.4871^1^Highland Strider^4461:1:1^
+2618^5^0^33^34^1417^0.6064^0.5690^5^Hammerfall Peon^4075:1:1,4306:2:2,4338:1:1^
+2619^3^0^34^35^1417^0.5913^0.5934^3^Hammerfall Grunt^4306:3:4^
+2733^2^0^36^36^1417^0.5997^0.6070^2^Apothecary Jorell^4306:2:2,9846:1:1^
 2946^1^0^44^44^1424^0.5038^0.5863^1^Puppet of Helcular^^
 4062^1^0^30^30^1437^0.5131^0.0825^1^Dark Iron Bombardier^1710:1:1^
+4351^3^0^35^36^1445^0.6035^0.3369^3^Bloodfen Raptor^4461:2:2,4587:1:1,12184:1:1^
+4376^9^0^35^36^1445^0.3509^0.2036^9^Darkmist Spider^1074:2:2,4585:4:4,5637:1:1,5884:9:18^
+4378^13^0^36^37^1445^0.3524^0.1997^13^Darkmist Recluse^1074:4:4,4337:1:1,4585:2:2,5884:12:22,10285:1:1,12205:5:5^
+4397^2^0^37^38^1445^0.6220^0.3192^2^Mudrock Spikeshell^4555:1:1,5883:1:1,6362:1:1^
 4463^1^0^22^23^1433^0.6841^0.7889^1^Blackrock Summoner^^
 6412^2^0^24^25^1437^0.5120^0.5007^2^Skeleton^^
 214519^1^0^23^23^1433^0.7172^0.8439^1^Incinerator Gar'im^271872:1:1^
@@ -124,6 +132,7 @@ GoldScout-export 8^vcfh3tpx139b^26
 @i^929^Healing Potion
 @i^954^Scroll of Strength
 @i^1015^Lean Wolf Flank
+@i^1074^Hard Spider Leg Tip
 @i^1080^Tough Condor Meat
 @i^1081^Crisp Spider Meat
 @i^1130^Vial of Spider Venom
@@ -231,14 +240,19 @@ GoldScout-export 8^vcfh3tpx139b^26
 @i^3931^Poisoned Spider Fang
 @i^4050^Emblazoned Leggings
 @i^4053^Large River Crocolisk Skin
+@i^4075^Mail Combat Gauntlets
 @i^4093^Large Basilisk Tail
 @i^4306^Silk Cloth
+@i^4337^Thick Spider's Silk
+@i^4338^Mageweave Cloth
 @i^4461^Raptor Hide
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
 @i^4561^Scalping Tomahawk of Defense
 @i^4577^Compact Shotgun
+@i^4585^Dripping Spider Mandible
 @i^4586^Smooth Raptor Skin
+@i^4587^Tribal Raptor Feathers
 @i^4603^Raw Spotted Yellowtail
 @i^4699^Seer's Belt
 @i^4721^Insignia Mantle
@@ -256,6 +270,8 @@ GoldScout-export 8^vcfh3tpx139b^26
 @i^5635^Sharp Claw
 @i^5637^Large Fang
 @i^5785^Thick Murloc Scale
+@i^5883^Forked Mudrock Tongue
+@i^5884^Unpopped Darkmist Eye
 @i^6269^Pioneer Trousers of the Monkey
 @i^6308^Raw Bristle Whisker Catfish
 @i^6354^Small Locked Chest
@@ -281,6 +297,8 @@ GoldScout-export 8^vcfh3tpx139b^26
 @i^9809^Superior Tunic of Agility
 @i^9817^Fortified Spaulders of Power
 @i^9840^Banded Girdle of the Boar
+@i^9846^Conjurer's Bracers of the Sorcerer
+@i^10285^Shadow Silk
 @i^11152^Formula: Enchant Gloves - Fishing
 @i^11407^Torn Bear Pelt
 @i^12009^Tundra Ring of the Bandit
@@ -288,6 +306,7 @@ GoldScout-export 8^vcfh3tpx139b^26
 @i^12037^Mystery Meat
 @i^12184^Raptor Flesh
 @i^12202^Tiger Meat
+@i^12205^White Spider Meat
 @i^13422^Stonescale Eel
 @i^13754^Raw Glossy Mightfish
 @i^13755^Raw Winter Squid
@@ -344,6 +363,7 @@ GoldScout-export 8^vcfh3tpx139b^26
 @q^929^1:0:0
 @q^954^1:0:0
 @q^1015^1:7:1
+@q^1074^0:15:0
 @q^1080^1:7:1
 @q^1081^1:7:1
 @q^1130^1:12:0
@@ -451,14 +471,19 @@ GoldScout-export 8^vcfh3tpx139b^26
 @q^3931^0:15:0
 @q^4050^2:4:0
 @q^4053^1:12:0
+@q^4075^2:4:0
 @q^4093^0:15:0
 @q^4306^1:7:1
+@q^4337^1:7:1
+@q^4338^1:7:1
 @q^4461^1:7:1
 @q^4555^0:15:0
 @q^4556^0:15:0
 @q^4561^2:2:0
 @q^4577^2:2:0
+@q^4585^0:15:0
 @q^4586^0:15:0
+@q^4587^0:15:0
 @q^4603^1:7:1
 @q^4699^2:4:0
 @q^4721^2:4:0
@@ -476,6 +501,8 @@ GoldScout-export 8^vcfh3tpx139b^26
 @q^5635^1:7:1
 @q^5637^1:7:1
 @q^5785^1:7:1
+@q^5883^1:12:0
+@q^5884^1:12:0
 @q^6269^2:4:0
 @q^6308^1:7:1
 @q^6354^1:15:0
@@ -501,6 +528,8 @@ GoldScout-export 8^vcfh3tpx139b^26
 @q^9809^2:4:0
 @q^9817^2:4:0
 @q^9840^2:4:0
+@q^9846^2:4:0
+@q^10285^1:7:1
 @q^11152^2:9:0
 @q^11407^1:12:0
 @q^12009^2:4:0
@@ -508,6 +537,7 @@ GoldScout-export 8^vcfh3tpx139b^26
 @q^12037^1:7:1
 @q^12184^1:7:1
 @q^12202^1:7:1
+@q^12205^1:7:1
 @q^13422^1:7:1
 @q^13754^1:7:1
 @q^13755^1:0:1
@@ -555,6 +585,7 @@ GoldScout-export 8^vcfh3tpx139b^26
 @m^1433^Redridge Mountains
 @m^1434^Stranglethorn Vale
 @m^1437^Wetlands
+@m^1445^Dustwallow Marsh
 @m^1453^Stormwind City
 @c^118^
 @c^724^
@@ -1881,8 +1912,16 @@ GoldScout-export 8^vcfh3tpx139b^26
 @a^2406^305:1,306:5,326:8,327:3,345:2,346:5
 @a^2407^326:4,345:1,346:1,347:1
 @a^2408^145:3,146:2,164:3,165:5,184:10,202:1,203:4,204:1
+@a^2559^189:1
+@a^2618^212:1,231:2,232:2
+@a^2619^231:1,251:2
+@a^2733^232:1,251:1
 @a^2946^230:1
 @a^4062^30:1
+@a^4351^131:1,132:1,172:1
+@a^4376^66:1,67:2,86:3,87:3
+@a^4378^66:2,67:5,86:4,87:2
+@a^4397^112:1,152:1
 @a^4463^313:1
 @a^6412^190:1,209:1
 @a^214519^334:1
@@ -1900,7 +1939,14 @@ GoldScout-export 8^vcfh3tpx139b^26
 @t^2406^19:1593
 @t^2407^6:447
 @t^2408^29:1696
+@t^2618^3:153
+@t^2619^2:132
+@t^2733^2:99
 @t^2946^1:63
+@t^4351^1:60
+@t^4376^7:338
+@t^4378^8:354
+@t^4397^2:164
 @f^1417^0^12^202^3820:2:4,6358:3:3,6362:1:1,21150:5:5,21151:1:2^325:1,326:3,345:8
 @f^1434^0^291^171^3820:1:1,4603:50:50,6308:2:2,6357:4:4,6358:46:46,6359:41:41,6362:110:110,7973:1:1,8365:11:11,13422:2:4,13754:5:5,13755:2:2,21150:1:1,21151:3:3,21153:5:5,21228:7:7^47:10,264:12,265:3,285:168,305:41,307:55,327:2
 @f^1437^0^82^150^3820:1:1,6354:1:1,6358:28:28,6359:7:7,6361:41:41,21113:3:3,21114:1:1^201:4,221:78
