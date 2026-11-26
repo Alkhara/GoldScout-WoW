@@ -1,7 +1,11 @@
-GoldScout-export 6^uzpjqoh7kfl9^21
+GoldScout-export 6^uzpjqoh7kfl9^22
 92^152^0^39^40^1418^0.3024^0.6183^152^Rock Elemental^3864:1:1,4042:1:1,4087:1:1,4552:34:34,4553:59:59,4627:5:5,4784:90:90,6432:1:1,7067:15:15,7909:1:1,7912:38:58,8150:34:34,213543:1:1,213544:1:1,213545:1:1,213546:1:1,213547:1:1,248691:1:1,248708:1:1^
+750^1^0^42^43^1435^0.6424^0.8847^1^Marsh Inkspewer^3941:1:1^
+751^5^0^43^44^1435^0.6343^0.9072^5^Marsh Flesheater^7973:1:1,248692:1:1^
+752^4^0^44^45^1435^0.6335^0.8858^4^Marsh Oracle^3986:1:1,7973:1:1,17058:1:1^
 832^1^0^19^19^1436^0.6930^0.7303^1^Dust Devil^9788:1:1^
 910^3^0^26^27^1431^0.4943^0.7655^3^Defias Enchanter^1807:1:1,255724:1:1^
+950^1^0^50^50^1435^0.6249^0.9029^1^Swamp Talker^8463:1:1^
 1765^1^0^11^11^1421^0.4556^0.4242^1^Worg^^
 2701^4^0^38^39^1418^0.2898^0.5828^4^Dustbelcher Ogre^4306:1:3,211269:2:2,278515:1:1^
 2715^3^0^39^40^1418^0.2898^0.5812^3^Dustbelcher Brute^1477:1:1,4306:1:1^
@@ -211,6 +215,7 @@ GoldScout-export 6^uzpjqoh7kfl9^21
 @i^3928^Superior Healing Potion
 @i^3941^Crochet Pants
 @i^3963^Thick Leather Bracers
+@i^3986^Protective Pavise
 @i^4020^Splintering Battle Axe
 @i^4021^Blunting Mace
 @i^4022^Crushing Maul
@@ -283,11 +288,13 @@ GoldScout-export 6^uzpjqoh7kfl9^21
 @i^7848^Rock Elemental Shard
 @i^7909^Aquamarine
 @i^7912^Solid Stone
+@i^7973^Big-mouth Clam
 @i^8150^Deeprock Salt
 @i^8168^Jet Black Feather
 @i^8188^Explosive Shotgun
 @i^8394^Basilisk Brain
 @i^8396^Vulture Gizzard
+@i^8463^Warchief's Orders
 @i^8751^Overlinked Coif
 @i^9291^Field Plate Leggings of the Defender
 @i^9293^Recipe: Magic Resistance Potion
@@ -449,6 +456,7 @@ GoldScout-export 6^uzpjqoh7kfl9^21
 @q^3928^1:0:0
 @q^3941^0:4:0
 @q^3963^0:4:0
+@q^3986^0:4:0
 @q^4020^0:2:0
 @q^4021^0:2:0
 @q^4022^0:2:0
@@ -521,11 +529,13 @@ GoldScout-export 6^uzpjqoh7kfl9^21
 @q^7848^1:12:0
 @q^7909^2:7:1
 @q^7912^1:7:1
+@q^7973^1:7:0
 @q^8150^1:7:1
 @q^8168^1:7:1
 @q^8188^2:2:0
 @q^8394^1:12:0
 @q^8396^1:12:0
+@q^8463^1:12:0
 @q^8751^0:4:0
 @q^9291^2:4:0
 @q^9293^2:9:0
@@ -652,6 +662,7 @@ GoldScout-export 6^uzpjqoh7kfl9^21
 @m^1423^Eastern Plaguelands
 @m^1431^Duskwood
 @m^1434^Stranglethorn Vale
+@m^1435^Swamp of Sorrows
 @m^1436^Westfall
 @m^1443^Desolace
 @m^2548^Riverglades
@@ -1537,8 +1548,12 @@ GoldScout-export 6^uzpjqoh7kfl9^21
 @c^285281^
 @c^286152^
 @a^92^122:37,123:2,142:19,143:5,307:20,308:13,309:7,328:35,348:14
+@a^750^352:1
+@a^751^352:1,372:4
+@a^752^332:1,352:1,372:2
 @a^832^293:1
 @a^910^309:2,310:1
+@a^950^372:1
 @a^1765^169:1
 @a^2701^225:3,245:1
 @a^2715^225:2,245:1
