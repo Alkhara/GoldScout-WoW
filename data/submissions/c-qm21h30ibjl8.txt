@@ -1,4 +1,4 @@
-GoldScout-export 8^qm21h30ibjl8^53
+GoldScout-export 8^qm21h30ibjl8^54
 3^1^0^24^25^1431^0.2581^0.3278^1^Flesh Eater^884:1:1,2783:1:1,6530:1:1^
 92^3^0^39^40^1418^0.1592^0.3437^3^Rock Elemental^3864:1:1,4552:1:1,4553:2:2,4627:3:3,4784:3:3,7067:1:1,7912:1:1,248694:1:1^
 157^1^0^14^15^1436^0.3714^0.6871^1^Goretusk^723:1:1,771:1:1^
@@ -104,8 +104,14 @@ GoldScout-export 8^qm21h30ibjl8^53
 1718^1^0^3^4^1426^0.3448^0.7081^1^Rockjaw Raider^^
 1871^3^0^31^31^1431^0.2862^0.3251^3^Eliza's Guard^^
 1907^42^0^43^44^1434^0.2610^0.6187^42^Naga Explorer^1645:1:1,2732:1:1,3928:1:1,3966:1:1,4029:10:10,4603:1:1,7973:16:16,17058:22:22^
-1984^5^0^1^2^1438^0.5900^0.4471^5^Young Thistle Boar^117:1:1,2210:1:1,4865:2:2,7098:2:2^
+1984^6^0^1^2^1438^0.5848^0.4429^6^Young Thistle Boar^117:1:1,2210:1:1,4865:3:3,7098:2:2^
+1985^7^0^2^3^1438^0.5998^0.3622^7^Thistle Boar^117:2:2,1368:1:1,1369:1:1,1377:1:1,4865:3:3,7098:4:4^
+1986^21^0^3^4^1438^0.5662^0.2924^21^Webwood Spider^1364:1:1,1367:1:1,1476:5:5,2651:2:2,2652:1:1,2656:1:1,3363:1:1,5166:10:10,7100:8:8,7101:9:9,10640:1:1^
+1988^9^0^2^3^1438^0.5611^0.4440^9^Grell^159:2:2,1364:1:1,1370:1:1,2589:4:4,2650:1:1,3297:6:6^
+1989^5^0^3^4^1438^0.5566^0.3940^5^Grellkin^117:1:1,1368:1:1,1369:1:1,1374:1:1,2589:1:1,2649:1:1,3297:2:2,10639:2:2^
+1994^2^0^5^5^1438^0.5664^0.2632^2^Githyiss the Vile^1376:1:1,7101:1:1,277190:1:1^
 2031^7^0^1^1^1438^0.6146^0.4478^7^Young Nightsaber^1368:1:1,1378:1:1,4865:3:3,7073:2:2,7074:3:3^
+2032^7^0^2^2^1438^0.6067^0.3666^7^Mangy Nightsaber^2211:1:1,2651:1:1,3363:1:1,4865:2:2,7073:4:4,7074:2:2^
 2240^12^0^32^33^1416^0.5339^0.7343^12^Syndicate Footpad^1707:1:1,1708:2:2,3782:1:1,4306:5:9,5113:2:2^
 2241^10^0^33^34^1416^0.5452^0.7178^10^Syndicate Thief^1708:2:2,1725:1:1,2290:1:1,4306:1:2,5113:2:2,6986:1:1^
 2242^5^0^35^36^1416^0.6195^0.4554^5^Syndicate Spy^3505:1:1,4306:1:2^
@@ -484,12 +490,14 @@ GoldScout-export 8^qm21h30ibjl8^53
 @i^1288^Large Venom Sac
 @i^1364^Ragged Leather Vest
 @i^1366^Ragged Leather Pants
+@i^1367^Ragged Leather Boots
 @i^1368^Ragged Leather Gloves
 @i^1369^Ragged Leather Belt
 @i^1370^Ragged Leather Bracers
 @i^1372^Ragged Cloak
 @i^1374^Frayed Shoes
 @i^1376^Frayed Cloak
+@i^1377^Frayed Gloves
 @i^1378^Frayed Pants
 @i^1380^Frayed Robe
 @i^1411^Withered Staff
@@ -498,6 +506,7 @@ GoldScout-export 8^qm21h30ibjl8^53
 @i^1429^Patchwork Cloak
 @i^1433^Patchwork Armor
 @i^1464^Buzzard Talon
+@i^1476^Snapped Spider Limb
 @i^1477^Scroll of Agility II
 @i^1497^Calico Cloak
 @i^1498^Calico Gloves
@@ -555,11 +564,13 @@ GoldScout-export 8^qm21h30ibjl8^53
 @i^2643^Loose Chain Bracers
 @i^2645^Loose Chain Gloves
 @i^2648^Loose Chain Vest
+@i^2649^Flimsy Chain Belt
 @i^2650^Flimsy Chain Boots
 @i^2651^Flimsy Chain Bracers
 @i^2652^Flimsy Chain Cloak
 @i^2653^Flimsy Chain Gloves
 @i^2654^Flimsy Chain Pants
+@i^2656^Flimsy Chain Vest
 @i^2671^Wendigo Mane
 @i^2672^Stringy Wolf Meat
 @i^2676^Shimmerweed
@@ -600,6 +611,7 @@ GoldScout-export 8^qm21h30ibjl8^53
 @i^3187^Sacrificial Kris of the Sorcerer
 @i^3195^Barbaric Battle Axe of Magic
 @i^3210^Brutal War Axe of the Bandit
+@i^3297^Fel Moss
 @i^3356^Kingsblood
 @i^3357^Liferoot
 @i^3358^Khadgar's Whisker
@@ -753,6 +765,7 @@ GoldScout-export 8^qm21h30ibjl8^53
 @i^5116^Long Tail Feather
 @i^5124^Small Raptor Tooth
 @i^5128^Shed Lizard Skin
+@i^5166^Webwood Venom Sac
 @i^5429^A Pretty Rock
 @i^5431^Empty Hip Flask
 @i^5446^Broken Elemental Bracer
@@ -820,6 +833,8 @@ GoldScout-export 8^qm21h30ibjl8^53
 @i^7077^Heart of Fire
 @i^7084^Pattern: Crimson Silk Shoulders
 @i^7098^Splintered Tusk
+@i^7100^Sticky Ichor
+@i^7101^Bug Eye
 @i^7111^Nightsky Armor
 @i^7429^Twilight Armor of the Whale
 @i^7433^Twilight Gloves of the Hierophant
@@ -899,6 +914,8 @@ GoldScout-export 8^qm21h30ibjl8^53
 @i^10410^Leggings of the Fang
 @i^10441^Glowing Shard
 @i^10603^Schematic: Catseye Ultra Goggles
+@i^10639^Hyacinth Mushroom
+@i^10640^Webwood Ichor
 @i^10758^X'caliboar
 @i^10760^Swine Fists
 @i^10763^Icemetal Barbute
@@ -1075,6 +1092,7 @@ GoldScout-export 8^qm21h30ibjl8^53
 @i^275006^Krol'dok Warplate Helmet
 @i^275010^Strongly Scented Hood
 @i^276894^Ancient Gurubashi Idol
+@i^277190^Fang of Githyiss
 @i^278402^Unstudied Artifact
 @i^279046^Cracked Crab Pincer
 @i^279591^Marek's Croc-Hunting Knife
@@ -1116,12 +1134,14 @@ GoldScout-export 8^qm21h30ibjl8^53
 @q^1288^1:7:1
 @q^1364^0:4:0
 @q^1366^0:4:0
+@q^1367^0:4:0
 @q^1368^0:4:0
 @q^1369^0:4:0
 @q^1370^0:4:0
 @q^1372^0:4:0
 @q^1374^0:4:0
 @q^1376^0:4:0
+@q^1377^0:4:0
 @q^1378^0:4:0
 @q^1380^0:4:0
 @q^1411^0:2:0
@@ -1130,6 +1150,7 @@ GoldScout-export 8^qm21h30ibjl8^53
 @q^1429^0:4:0
 @q^1433^0:4:0
 @q^1464^0:15:0
+@q^1476^0:15:0
 @q^1477^1:0:0
 @q^1497^0:4:0
 @q^1498^0:4:0
@@ -1187,11 +1208,13 @@ GoldScout-export 8^qm21h30ibjl8^53
 @q^2643^0:4:0
 @q^2645^0:4:0
 @q^2648^0:4:0
+@q^2649^0:4:0
 @q^2650^0:4:0
 @q^2651^0:4:0
 @q^2652^0:4:0
 @q^2653^0:4:0
 @q^2654^0:4:0
+@q^2656^0:4:0
 @q^2671^1:12:0
 @q^2672^1:7:1
 @q^2676^1:12:0
@@ -1232,6 +1255,7 @@ GoldScout-export 8^qm21h30ibjl8^53
 @q^3187^2:2:0
 @q^3195^2:2:0
 @q^3210^2:2:0
+@q^3297^1:12:0
 @q^3356^1:7:1
 @q^3357^1:7:1
 @q^3358^1:7:1
@@ -1385,6 +1409,7 @@ GoldScout-export 8^qm21h30ibjl8^53
 @q^5116^1:7:1
 @q^5124^0:15:0
 @q^5128^0:15:0
+@q^5166^1:12:0
 @q^5429^0:15:0
 @q^5431^0:15:0
 @q^5446^0:15:0
@@ -1452,6 +1477,8 @@ GoldScout-export 8^qm21h30ibjl8^53
 @q^7077^1:7:1
 @q^7084^2:9:0
 @q^7098^0:15:0
+@q^7100^0:15:0
+@q^7101^0:15:0
 @q^7111^2:4:0
 @q^7429^2:4:0
 @q^7433^2:4:0
@@ -1531,6 +1558,8 @@ GoldScout-export 8^qm21h30ibjl8^53
 @q^10410^3:4:0
 @q^10441^1:12:0
 @q^10603^2:9:0
+@q^10639^1:12:0
+@q^10640^1:12:0
 @q^10758^3:2:0
 @q^10760^3:4:0
 @q^10763^3:4:0
@@ -1707,6 +1736,7 @@ GoldScout-export 8^qm21h30ibjl8^53
 @q^275006^3:4:0
 @q^275010^3:4:0
 @q^276894^1:12:0
+@q^277190^1:12:0
 @q^278402^1:12:0
 @q^279046^0:15:0
 @q^279591^1:12:0
@@ -3560,8 +3590,14 @@ GoldScout-export 8^qm21h30ibjl8^53
 @a^1718^286:1
 @a^1871^125:3
 @a^1907^224:1,225:9,244:9,245:23
-@a^1984^171:2,191:1,192:2
+@a^1984^171:3,191:1,192:2
+@a^1985^151:4,152:3
+@a^1986^111:14,131:6,151:1
+@a^1988^171:6,191:3
+@a^1989^131:1,151:2,171:2
+@a^1994^111:2
 @a^2031^172:4,192:3
+@a^2032^151:3,152:4
 @a^2240^271:7,309:1,329:4
 @a^2241^271:7,329:3
 @a^2242^172:1,191:1,192:3
@@ -3819,8 +3855,14 @@ GoldScout-export 8^qm21h30ibjl8^53
 @t^1202^3:13
 @t^1397^5:244
 @t^1693^20:1110
-@t^1984^3:85
+@t^1984^4:100
+@t^1985^7:157
+@t^1986^20:831
+@t^1988^9:324
+@t^1989^3:100
+@t^1994^1:47
 @t^2031^7:209
+@t^2032^7:223
 @t^11559^2:69
 @t^11561^1:29
 @t^252711^1:27
