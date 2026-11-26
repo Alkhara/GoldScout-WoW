@@ -1,5 +1,11 @@
-GoldScout-export 7^p8dyx7lrl9u0^4
+GoldScout-export 7^p8dyx7lrl9u0^5
+587^5^0^33^34^1434^0.2952^0.2071^5^Bloodscalp Warrior^1519:3:3,3781:1:1^
+686^4^0^35^36^1434^0.3017^0.2407^4^Lashtail Raptor^1696:3:3,3685:1:1,4721:1:1,5637:1:1,12184:1:1^
+694^4^0^33^34^1434^0.2957^0.1996^4^Bloodscalp Axe Thrower^1519:1:1,2592:2:3,2749:1:1,4306:1:2^
+697^6^0^33^34^1434^0.2936^0.2041^6^Bloodscalp Shaman^1519:2:2,1520:1:1,1708:1:1,2592:1:2^
+856^1^0^34^34^1434^0.3015^0.2354^1^Young Lashtail Raptor^3685:1:1,4461:1:1^
 1111^24^0^21^22^1437^0.4892^0.6153^24^Leech Stalker^878:2:2,1081:7:7,1288:3:3,2251:11:11,3174:14:14,3182:4:4,4428:6:6,15230:1:1^
+1151^5^0^35^36^1434^0.2942^0.2263^5^Saltwater Crocolisk^770:2:2,3667:3:3,12037:3:3^
 4015^1^0^25^25^1442^0.4540^0.3936^1^Pridewing Patriarch^5135:1:1,6601:1:1^
 4020^1^0^23^23^1442^0.3803^0.1842^1^Sap Beast^6454:1:1^
 4040^6^0^21^22^1437^0.4918^0.6089^6^Cave Stalker^878:1:1,1081:1:1,1288:1:1,2251:1:1,3174:2:2,9812:1:1^
@@ -7,54 +13,85 @@ GoldScout-export 7^p8dyx7lrl9u0^4
 11576^1^0^34^34^1443^0.6002^0.3919^1^Whirlwind Ripper^^
 260803^13^0^27^28^1437^0.5118^0.6260^13^Highland Spider^1074:1:1,1756:1:1,1782:1:1,2251:3:3,2766:1:1,2786:1:1,3182:1:1,5001:1:1,12047:1:1^
 260804^5^0^28^29^1437^0.4914^0.6121^5^Highland Lurker^1074:2:2,1783:1:1,1806:1:1,1829:1:1,2251:1:1,3182:2:2^
+@i^770^Pointy Crocolisk Tooth
 @i^878^Fist-sized Spinneret
 @i^1074^Hard Spider Leg Tip
 @i^1081^Crisp Spider Meat
 @i^1288^Large Venom Sac
+@i^1519^Bloodscalp Ear
+@i^1520^Troll Sweat
+@i^1696^Curved Raptor Talon
+@i^1708^Sweet Nectar
 @i^1756^Reinforced Chain Bracers
 @i^1782^Cross-stitched Cloak
 @i^1783^Cross-stitched Gloves
 @i^1806^Tough Cloak
 @i^1829^Short Cutlass
 @i^2251^Gooey Spider Leg
+@i^2592^Wool Cloth
+@i^2749^Green Hills of Stranglethorn - Page 25
 @i^2766^Deft Stiletto
 @i^2786^Oiled Blunderbuss
 @i^3174^Spider Ichor
 @i^3182^Spider's Silk
 @i^3404^Buzzard Wing
+@i^3667^Tender Crocolisk Meat
+@i^3685^Raptor Egg
+@i^3781^Broad Claymore
+@i^4306^Silk Cloth
 @i^4428^Spider Palp
+@i^4461^Raptor Hide
+@i^4721^Insignia Mantle
 @i^5001^Heart Ring
 @i^5135^Thin Black Claw
+@i^5637^Large Fang
 @i^6454^Manual: Strong Anti-Venom
 @i^6601^Dervish Boots of Agility
 @i^9812^Fortified Cloak of Frost Protection
 @i^12037^Mystery Meat
 @i^12047^Spectral Necklace of the Owl
+@i^12184^Raptor Flesh
 @i^15230^Ridge Cleaver of Defense
+@q^770^0:15:0
 @q^878^0:7:0
 @q^1074^0:15:0
 @q^1081^1:7:1
 @q^1288^1:7:1
+@q^1519^1:12:0
+@q^1520^0:15:0
+@q^1696^0:15:0
+@q^1708^1:0:0
 @q^1756^0:4:0
 @q^1782^0:4:0
 @q^1783^0:4:0
 @q^1806^0:4:0
 @q^1829^0:2:0
 @q^2251^1:7:1
+@q^2592^1:7:1
+@q^2749^1:12:0
 @q^2766^0:2:0
 @q^2786^0:2:0
 @q^3174^1:7:1
 @q^3182^1:7:1
 @q^3404^1:7:1
+@q^3667^1:7:1
+@q^3685^1:7:1
+@q^3781^0:2:0
+@q^4306^1:7:1
 @q^4428^0:15:0
+@q^4461^1:7:1
+@q^4721^2:4:0
 @q^5001^2:4:0
 @q^5135^0:15:0
+@q^5637^1:7:1
 @q^6454^2:9:0
 @q^6601^2:4:0
 @q^9812^2:4:0
 @q^12037^1:7:1
 @q^12047^2:4:0
+@q^12184^1:7:1
 @q^15230^2:2:0
+@m^1434^Stranglethorn Vale
 @m^1437^Wetlands
 @m^1442^Stonetalon Mountains
 @m^1443^Desolace
@@ -906,7 +943,13 @@ GoldScout-export 7^p8dyx7lrl9u0^4
 @c^285280^
 @c^285281^
 @c^286152^
+@a^587^65:1,85:4
+@a^686^85:1,86:3
+@a^694^65:3,86:1
+@a^697^65:2,85:4
+@a^856^86:1
 @a^1111^229:3,230:2,249:12,250:7
+@a^1151^85:5
 @a^4015^149:1
 @a^4020^67:1
 @a^4040^229:1,230:2,249:2,250:1
@@ -914,7 +957,13 @@ GoldScout-export 7^p8dyx7lrl9u0^4
 @a^11576^152:1
 @a^260803^250:12,270:1
 @a^260804^249:5
+@t^587^5:139
+@t^686^3:91
+@t^694^4:68
+@t^697^6:269
+@t^856^1:72
 @t^1111^23:1270
+@t^1151^5:229
 @t^4040^6:167
 @t^260803^11:639
 @t^260804^5:621
