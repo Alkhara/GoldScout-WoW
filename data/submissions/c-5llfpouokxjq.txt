@@ -1,8 +1,8 @@
-GoldScout-export 9^5llfpouokxjq^4
+GoldScout-export 9^5llfpouokxjq^5
 6200^2^0^51^52^1447^0.5859^0.2173^2^Legashi Satyr^14047:2:4^
 6201^1^0^52^53^1447^0.5847^0.2154^1^Legashi Rogue^13446:1:1^
 6202^1^0^52^53^1447^0.5878^0.2189^1^Legashi Hellcaller^235645:1:1^
-7132^11^0^53^54^1448^0.4945^0.2403^11^Toxic Horror^4791:8:28,7070:1:1,7079:2:2,7080:1:1,12822:3:3,15184:1:1^
+7132^38^0^53^54^1448^0.4951^0.2505^38^Toxic Horror^4791:23:76,7070:8:8,7079:6:6,7080:5:5,12822:3:3,15184:1:1,248697:1:1^
 7156^3^0^53^54^1448^0.6282^0.0758^3^Deadwood Den Watcher^^
 7157^2^0^54^55^1448^0.6268^0.0774^2^Deadwood Avenger^^
 7158^2^0^54^54^1448^0.6293^0.0750^2^Deadwood Shaman^11515:1:1,21377:1:1^
@@ -38,7 +38,7 @@ GoldScout-export 9^5llfpouokxjq^4
 237614^2^0^52^52^1447^0.5760^0.2126^2^Cauldron Imp^^
 249229^2^0^58^59^2482^0.4865^0.3132^2^Felguard Sentinel^12662:1:1,14047:1:1^
 255691^1^0^61^61^2482^0.2853^0.5175^1^Spectral Frostwyrm^^
-264850^21^0^60^60^1447^0.6548^0.1686^6^Hawk^^
+264850^26^0^60^60^1447^0.6548^0.1686^6^Hawk^^
 @i^1074^Hard Spider Leg Tip
 @i^1688^Long Soft Tail
 @i^3669^Gelatinous Goo
@@ -93,6 +93,7 @@ GoldScout-export 9^5llfpouokxjq^4
 @i^236631^Bloodmaw's Basher
 @i^248695^Waylaid Crate: Earthly Artisan Herbs
 @i^248696^Waylaid Crate: Flowering Artisan Herbs
+@i^248697^Waylaid Crate: Artisan Ore
 @i^248698^Waylaid Crate: Artisan Textiles
 @i^249429^Pristine Scale
 @i^258323^Missing Mail
@@ -150,6 +151,7 @@ GoldScout-export 9^5llfpouokxjq^4
 @q^236631^1:12:0
 @q^248695^1:0:1
 @q^248696^1:0:1
+@q^248697^1:0:1
 @q^248698^1:0:1
 @q^249429^2:7:1
 @q^258323^1:12:0
@@ -919,7 +921,7 @@ GoldScout-export 9^5llfpouokxjq^4
 @a^6200^91:2
 @a^6201^91:1
 @a^6202^91:1
-@a^7132^89:7,90:2,109:2
+@a^7132^89:16,90:6,109:11,110:5
 @a^7156^32:3
 @a^7157^32:2
 @a^7158^32:2
@@ -956,5 +958,6 @@ GoldScout-export 9^5llfpouokxjq^4
 @a^249229^129:2
 @a^255691^205:1
 @a^264850^72:2,73:4
-@t^7132^5:385
+@t^7132^31:3483
+@t^264850^5:193
 @l^0^enUS

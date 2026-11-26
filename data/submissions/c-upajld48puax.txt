@@ -1,4 +1,4 @@
-GoldScout-export 8^upajld48puax^7
+GoldScout-export 8^upajld48puax^8
 1151^1^0^36^36^1434^0.2978^0.2662^1^Saltwater Crocolisk^770:1:1,7111:1:1,12037:1:1^
 3974^1^0^0^0^0^0.0000^0.0000^0^^274292:1:1^
 3976^1^0^0^0^0^0.0000^0.0000^0^^7726:1:1^
@@ -28,19 +28,24 @@ GoldScout-export 8^upajld48puax^7
 6575^4^0^0^0^0^0.0000^0.0000^0^^1803:1:1,3827:1:1,4306:2:4^
 255898^10^0^38^39^2548^0.7242^0.6673^10^Murloc Oracle^5524:2:2,15233:1:1,268344:3:5^
 255899^9^0^37^38^2548^0.7292^0.6545^9^Murloc Tideskimmer^268344:3:3^
-255901^10^0^36^37^2548^0.7383^0.6340^10^Sand Crawler^5524:6:6,5569:6:6,12206:2:2,17057:4:4,268345:4:4^
+255901^15^0^36^37^2548^0.7442^0.6258^15^Sand Crawler^3010:2:2,5524:8:8,5569:6:6,12206:2:2,17057:6:6,268345:7:7^
+256383^13^0^35^36^2548^0.4592^0.8055^13^Meadowsbrook Farmhand^3814:1:1,4306:2:4,4338:1:1^
+256434^6^0^37^38^2548^0.4138^0.6717^6^Turner's Mill Lumberjack^4306:1:3,4338:1:1,263972:2:2^
 256801^5^0^40^41^2548^0.7282^0.6323^5^Murloc Warrior^3928:1:1,5524:1:1,268344:3:4^
+260235^1^0^42^42^2548^0.8627^0.5079^1^Trapclaw^268586:1:1^
 @i^770^Pointy Crocolisk Tooth
 @i^1207^Murphstar of the Defender
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
 @i^1803^Tough Leather Belt
 @i^2289^Scroll of Strength II
+@i^3010^Fine Sand
 @i^3402^Soft Patch of Fur
 @i^3781^Broad Claymore
 @i^3787^Stone Club
 @i^3795^Interlaced Cloak
 @i^3798^Interlaced Shoulderpads
+@i^3814^Double Mail Shoulderpads
 @i^3827^Mana Potion
 @i^3928^Superior Healing Potion
 @i^4306^Silk Cloth
@@ -63,8 +68,10 @@ GoldScout-export 8^upajld48puax^7
 @i^15233^Savage Axe of Agility
 @i^17057^Shiny Fish Scales
 @i^19509^Dusty Mail Boots
+@i^263972^Woodworker's Axe
 @i^268344^Saltwater Murloc Eye
 @i^268345^Sand Crawler Meat
+@i^268586^Trapclaw's Pincer
 @i^274292^Houndmaster Boomerang
 @q^770^0:15:0
 @q^1207^2:2:0
@@ -72,11 +79,13 @@ GoldScout-export 8^upajld48puax^7
 @q^1710^1:0:0
 @q^1803^0:4:0
 @q^2289^1:0:0
+@q^3010^0:15:0
 @q^3402^0:15:0
 @q^3781^0:2:0
 @q^3787^0:2:0
 @q^3795^0:4:0
 @q^3798^0:4:0
+@q^3814^0:4:0
 @q^3827^1:0:0
 @q^3928^1:0:0
 @q^4306^1:7:1
@@ -99,8 +108,10 @@ GoldScout-export 8^upajld48puax^7
 @q^15233^2:2:0
 @q^17057^1:15:0
 @q^19509^3:4:0
+@q^263972^1:12:0
 @q^268344^1:12:0
 @q^268345^1:12:0
+@q^268586^1:12:0
 @q^274292^3:2:0
 @m^1434^Stranglethorn Vale
 @m^1445^Dustwallow Marsh
@@ -785,13 +796,19 @@ GoldScout-export 8^upajld48puax^7
 @a^4402^149:2,169:1,170:4,171:1,190:1,191:4,211:1
 @a^255898^254:3,255:1,274:3,294:3
 @a^255899^254:3,255:2,274:2,294:2
-@a^255901^254:5,255:4,294:1
+@a^255901^254:7,255:7,294:1
+@a^256383^308:1,309:2,328:1,329:9
+@a^256434^268:6
 @a^256801^254:4,274:1
+@a^260235^217:1
 @t^4388^1:54
 @t^4401^23:720
 @t^4402^14:729
 @t^255898^4:34
 @t^255899^3:65
-@t^255901^8:212
+@t^255901^12:358
+@t^256383^12:493
+@t^256434^5:108
 @t^256801^3:97
+@t^260235^1:97
 @l^0^enUS

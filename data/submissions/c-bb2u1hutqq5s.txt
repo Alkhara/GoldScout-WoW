@@ -1,4 +1,4 @@
-GoldScout-export 5^bb2u1hutqq5s^12
+GoldScout-export 5^bb2u1hutqq5s^13
 587^6^0^33^34^1434^0.3109^0.1834^6^Bloodscalp Warrior^1519:2:2,1520:1:1,2734:1:1,2742:1:1,3901:2:2,3915:3:3,4306:6:10^
 588^1^0^35^35^1434^0.2856^0.1154^1^Bloodscalp Scout^1519:1:1,2751:1:1^
 597^11^0^36^37^1434^0.2099^0.1260^11^Bloodscalp Berserker^1207:1:1,1519:3:3,3771:1:1,3915:3:3,4306:3:5,4338:1:1^
@@ -97,6 +97,10 @@ GoldScout-export 5^bb2u1hutqq5s^12
 10761^2^0^28^28^1441^0.3442^0.3892^2^Grimtotem Reaver^4306:1:1^
 10896^1^0^29^29^1441^0.3824^0.2698^1^Arnak Grimtotem^4306:1:2,12884:1:1^
 216474^1^0^40^40^1441^0.3667^0.3916^1^Ravaging Tempest^212792:1:1^
+256801^2^0^40^40^2548^0.7718^0.7195^2^Murloc Warrior^268344:1:2^
+256807^4^0^39^40^2548^0.8142^0.4861^4^Shore Crawler^5524:1:1,12206:2:2,17057:1:1,268345:1:1^
+257001^1^0^42^42^2548^0.7710^0.7343^1^Old Rot-Chum^268341:1:1^
+260235^1^0^42^42^2548^0.8628^0.5053^1^Trapclaw^268586:1:1^
 262397^19^0^36^38^1434^0.2370^0.2773^19^Brinescale Skirmisher^1645:1:1,2735:1:1,2748:1:1,4422:1:1,5524:7:7,17058:5:5,270305:10:10^
 269175^5^0^36^38^1434^0.3429^0.2860^5^Carnivorous Weed^4607:1:1,256036:1:1,256037:4:4^
 270094^1^0^30^30^1441^0.5718^0.5622^1^Stormheart^279186:1:1^
@@ -222,6 +226,7 @@ GoldScout-export 5^bb2u1hutqq5s^12
 @i^12039^Tundra Necklace of Intellect
 @i^12184^Raptor Flesh
 @i^12202^Tiger Meat
+@i^12206^Tender Crab Meat
 @i^12884^Arnak's Hoof
 @i^14211^Vital Handwraps of Spirit
 @i^14602^Warden's Cloak
@@ -243,6 +248,10 @@ GoldScout-export 5^bb2u1hutqq5s^12
 @i^248710^Waylaid Crate: Expert Parts
 @i^256036^Handful of Dirt
 @i^256037^Grass Clippings
+@i^268341^Rot-Covered Harpoon
+@i^268344^Saltwater Murloc Eye
+@i^268345^Sand Crawler Meat
+@i^268586^Trapclaw's Pincer
 @i^270305^Brinescale Trident
 @i^274044^Twisted Fire Totem
 @i^274045^Twisted Earth Totem
@@ -375,6 +384,7 @@ GoldScout-export 5^bb2u1hutqq5s^12
 @q^12039^2:4:0
 @q^12184^1:7:1
 @q^12202^1:7:1
+@q^12206^1:7:1
 @q^12884^1:0:0
 @q^14211^2:4:0
 @q^14602^2:4:0
@@ -396,6 +406,10 @@ GoldScout-export 5^bb2u1hutqq5s^12
 @q^248710^2:0:1
 @q^256036^0:15:0
 @q^256037^0:15:0
+@q^268341^1:12:0
+@q^268344^1:12:0
+@q^268345^1:12:0
+@q^268586^1:12:0
 @q^270305^1:12:0
 @q^274044^1:12:0
 @q^274045^1:12:0
@@ -416,6 +430,7 @@ GoldScout-export 5^bb2u1hutqq5s^12
 @m^1442^Stonetalon Mountains
 @m^1443^Desolace
 @m^1445^Dustwallow Marsh
+@m^2548^Riverglades
 @c^118^
 @c^724^
 @c^733^
@@ -663,6 +678,10 @@ GoldScout-export 5^bb2u1hutqq5s^12
 @a^10761^146:1,166:1
 @a^10896^107:1
 @a^216474^147:1
+@a^256801^295:2
+@a^256807^195:1,196:3
+@a^257001^295:1
+@a^260235^217:1
 @a^262397^104:17,105:1,124:1
 @a^269175^106:4,107:1
 @a^270094^231:1
