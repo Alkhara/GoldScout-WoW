@@ -1,4 +1,4 @@
-GoldScout-export 6^6kqn6mrl9zd4^24
+GoldScout-export 6^6kqn6mrl9zd4^25
 423^2^0^15^16^1433^0.1063^0.6083^2^Redridge Mongrel^1179:1:1,2589:1:1,2592:1:2^
 678^3^0^43^44^1434^0.5056^0.2750^3^Mosh'Ogg Mauler^3930:1:1,4306:1:4,4637:1:1,213543:1:1^
 679^4^0^43^44^1434^0.5153^0.2739^4^Mosh'Ogg Shaman^4306:1:3,4338:1:1^
@@ -324,7 +324,12 @@ GoldScout-export 6^6kqn6mrl9zd4^24
 @i^6149^Greater Mana Potion
 @i^6300^Husk Fragment
 @i^6302^Delicate Insect Wing
+@i^6303^Raw Slitherskin Mackerel
 @i^6308^Raw Bristle Whisker Catfish
+@i^6351^Dented Crate
+@i^6353^Small Chest
+@i^6358^Oily Blackmouth
+@i^6361^Raw Rainbow Fin Albacore
 @i^6411^Chief Brigadier Armor
 @i^6444^Forked Tongue
 @i^6530^Nightcrawlers
@@ -381,6 +386,7 @@ GoldScout-export 6^6kqn6mrl9zd4^24
 @i^12205^White Spider Meat
 @i^12207^Giant Egg
 @i^12208^Tender Wolf Meat
+@i^12238^Darkshore Grouper
 @i^14268^Gaea's Cuffs of the Eagle
 @i^14433^Windchaser Woolies
 @i^14436^Windchaser Coronet
@@ -576,7 +582,12 @@ GoldScout-export 6^6kqn6mrl9zd4^24
 @q^6149^1:0:0
 @q^6300^0:15:0
 @q^6302^0:15:0
+@q^6303^1:7:1
 @q^6308^1:7:1
+@q^6351^1:15:0
+@q^6353^1:15:0
+@q^6358^1:7:1
+@q^6361^1:7:1
 @q^6411^2:4:0
 @q^6444^0:15:0
 @q^6530^1:0:0
@@ -633,6 +644,7 @@ GoldScout-export 6^6kqn6mrl9zd4^24
 @q^12205^1:7:1
 @q^12207^1:7:1
 @q^12208^1:7:1
+@q^12238^1:0:0
 @q^14268^2:4:0
 @q^14433^2:4:0
 @q^14436^2:4:0
@@ -735,6 +747,7 @@ GoldScout-export 6^6kqn6mrl9zd4^24
 @m^1433^Redridge Mountains
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
+@m^1439^Darkshore
 @m^1443^Desolace
 @m^1444^Feralas
 @m^1445^Dustwallow Marsh
@@ -1582,4 +1595,5 @@ GoldScout-export 6^6kqn6mrl9zd4^24
 @a^256799^165:2
 @a^263681^189:1,229:2,230:1,249:1,250:1
 @a^276401^292:1
+@f^1439^0^76^1^6303:20:20,6351:1:1,6353:1:1,6358:15:15,6361:22:22,12238:17:17^167:18,187:58
 @l^0^enUS

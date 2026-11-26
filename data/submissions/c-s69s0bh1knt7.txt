@@ -1,4 +1,4 @@
-GoldScout-export 6^s69s0bh1knt7^24
+GoldScout-export 6^s69s0bh1knt7^25
 704^1^0^2^2^1426^0.2963^0.7475^1^Ragged Timber Wolf^750:1:1,4865:1:1,7073:1:1^
 705^2^0^1^1^1426^0.2994^0.7450^2^Ragged Young Wolf^750:2:2,2654:1:1,7073:2:2,7074:1:1^
 730^1^0^43^43^1434^0.2841^0.4255^1^Tethis^3877:1:1,4461:1:1,12184:1:1^
@@ -118,6 +118,8 @@ GoldScout-export 6^s69s0bh1knt7^24
 5860^2^0^47^48^1427^0.2629^0.3522^2^Twilight Dark Shaman^4023:1:1,4338:1:2,10552:1:1^
 5861^1^0^48^49^1427^0.2615^0.3088^1^Twilight Fire Guard^4338:1:1^
 5862^2^0^49^50^1427^0.2481^0.2678^2^Twilight Geomancer^4338:1:1^
+5984^2^0^45^46^1419^0.4905^0.1904^2^Starving Snickerfang^8391:1:1,12037:2:2,12203:1:1^
+5988^1^0^50^51^1419^0.4917^0.2216^1^Scorpok Stinger^8393:1:1,19935:1:1^
 6505^15^0^48^49^1449^0.6225^0.6971^15^Ravasaur^4587:4:4,4588:4:4,11018:3:3,12184:9:9,20015:2:2,252914:1:1,280459:1:1^
 6506^3^0^49^50^1449^0.6376^0.6901^3^Ravasaur Runner^4587:2:2,11116:1:1,12184:1:1,20015:1:1^
 6508^1^0^51^51^1449^0.6878^0.5752^1^Venomhide Ravasaur^12184:1:1^
@@ -377,6 +379,8 @@ GoldScout-export 6^s69s0bh1knt7^24
 @i^7973^Big-mouth Clam
 @i^8146^Wicked Claw
 @i^8150^Deeprock Salt
+@i^8391^Snickerfang Jowl
+@i^8393^Scorpok Pincer
 @i^8397^Pattern: Tough Scorpid Bracers
 @i^8428^Laden Dew Gland
 @i^8429^Punctured Dew Gland
@@ -438,6 +442,7 @@ GoldScout-export 6^s69s0bh1knt7^24
 @i^17058^Fish Oil
 @i^18959^Smithing Tuyere
 @i^18960^Lookout's Spyglass
+@i^19935^Empty Venom Sac
 @i^19936^Dried Scorpid Carapace
 @i^20015^Elder Raptor Feathers
 @i^20519^Southsea Pirate Hat
@@ -653,6 +658,8 @@ GoldScout-export 6^s69s0bh1knt7^24
 @q^7973^1:7:0
 @q^8146^1:7:1
 @q^8150^1:7:1
+@q^8391^1:12:0
+@q^8393^1:12:0
 @q^8397^2:9:0
 @q^8428^1:12:0
 @q^8429^0:15:0
@@ -714,6 +721,7 @@ GoldScout-export 6^s69s0bh1knt7^24
 @q^17058^1:15:0
 @q^18959^1:12:0
 @q^18960^1:12:0
+@q^19935^0:15:0
 @q^19936^0:15:0
 @q^20015^0:15:0
 @q^20519^1:12:0
@@ -773,6 +781,7 @@ GoldScout-export 6^s69s0bh1knt7^24
 @q^280459^1:12:0
 @q^281052^1:12:0
 @q^281650^3:4:0
+@m^1419^Blasted Lands
 @m^1425^The Hinterlands
 @m^1426^Dun Morogh
 @m^1427^Searing Gorge
@@ -1666,6 +1675,8 @@ GoldScout-export 6^s69s0bh1knt7^24
 @a^5860^125:1,145:1
 @a^5861^125:1
 @a^5862^104:2
+@a^5984^69:2
+@a^5988^89:1
 @a^6505^272:9,273:1,292:4,293:1
 @a^6506^272:1,273:1,292:1
 @a^6508^233:1

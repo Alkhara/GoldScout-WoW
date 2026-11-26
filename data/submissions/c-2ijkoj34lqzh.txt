@@ -1,4 +1,4 @@
-GoldScout-export 7^2ijkoj34lqzh^26
+GoldScout-export 7^2ijkoj34lqzh^27
 6^12^0^1^2^1429^0.4942^0.3641^12^Kobold Vermin^159:1:1,755:4:4,1370:1:1,2589:5:5,2651:1:1,247834:1:1,247839:2:2^
 30^6^0^5^6^1429^0.4070^0.6887^6^Forest Spider^2590:4:4,5465:3:4^
 38^30^0^3^4^1429^0.5359^0.4928^30^Defias Thug^159:1:1,752:12:12,1364:1:1,1366:1:1,1367:1:1,1369:1:1,1374:1:1,1378:2:2,1380:1:1,2070:1:1,2211:1:1,2589:11:11^
@@ -176,6 +176,15 @@ GoldScout-export 7^2ijkoj34lqzh^26
 255069^5^0^0^0^1416^0.0000^0.0000^0^^211853:1:1^
 255070^2^0^0^0^1416^0.0000^0.0000^0^^^
 256935^1^0^5^5^2521^0.3648^0.3324^1^Malduko Cloudcrush^^
+261311^1^0^0^0^0^0.0000^0.0000^0^^270229:1:1^
+261316^1^0^0^0^0^0.0000^0.0000^0^^270231:1:1^
+261319^1^0^0^0^0^0.0000^0.0000^0^^270261:1:1^
+263389^3^0^0^0^0^0.0000^0.0000^0^^2589:2:5,211785:1:1^
+263390^2^0^0^0^0^0.0000^0.0000^0^^1512:1:1^
+263396^8^0^0^0^0^0.0000^0.0000^0^^1501:1:1,6380:1:1,15268:1:1,211780:1:1,275893:1:1^
+263397^2^0^0^0^0^0.0000^0.0000^0^^1737:1:1,211780:1:1^
+263438^2^0^0^0^0^0.0000^0.0000^0^^1514:1:1,2589:1:4,211786:1:1^
+263470^1^0^0^0^0^0.0000^0.0000^0^^1501:1:1^
 269134^6^0^0^0^1416^0.0000^0.0000^0^^1829:1:1,2592:1:2,211784:1:1,248687:1:1^
 270094^1^0^30^30^1441^0.5807^0.5642^1^Stormheart^5128:1:1,279186:1:1^
 @i^117^Tough Jerky
@@ -243,6 +252,9 @@ GoldScout-export 7^2ijkoj34lqzh^26
 @i^1431^Patchwork Pants
 @i^1485^Pitchfork
 @i^1498^Calico Gloves
+@i^1501^Calico Tunic
+@i^1512^Crude Battle Axe
+@i^1514^Rusty Warhammer
 @i^1529^Jade
 @i^1686^Bristly Whisker
 @i^1696^Curved Raptor Talon
@@ -255,6 +267,7 @@ GoldScout-export 7^2ijkoj34lqzh^26
 @i^1711^Scroll of Stamina II
 @i^1712^Scroll of Spirit II
 @i^1725^Large Knapsack
+@i^1737^Worn Mail Vest
 @i^1754^Reinforced Chain Belt
 @i^1760^Reinforced Chain Shoulderpads
 @i^1761^Reinforced Chain Vest
@@ -426,6 +439,7 @@ GoldScout-export 7^2ijkoj34lqzh^26
 @i^6308^Raw Bristle Whisker Catfish
 @i^6359^Firefin Snapper
 @i^6361^Raw Rainbow Fin Albacore
+@i^6380^Inscribed Buckler
 @i^6388^Glimmering Mail Pauldrons
 @i^6397^Emblazoned Gloves
 @i^6438^Dull Elemental Bracer
@@ -468,6 +482,7 @@ GoldScout-export 7^2ijkoj34lqzh^26
 @i^12946^Hypercapacitor Gizmo
 @i^14197^Thistlefur Bands of Nature Protection
 @i^14582^Dokebi Cape
+@i^15268^Twin-bladed Axe of Shadow Protection
 @i^15529^Sentry's Leggings of Fire Protection
 @i^15925^Journeyman's Stave
 @i^15974^Pagan Rod of Strength
@@ -510,6 +525,9 @@ GoldScout-export 7^2ijkoj34lqzh^26
 @i^252665^Head of Urs'anah
 @i^254000^Pattern: Earthen Leggings
 @i^262889^Sealed Expert's Writ
+@i^270229^Treads of the Protector Golem
+@i^270231^Flamefist Grips
+@i^270261^Robes of the Disgraced Thane
 @i^273034^Ephemeral Grips
 @i^273036^Graveweave Bindings
 @i^273038^Garb of Fallen Felbark
@@ -520,6 +538,7 @@ GoldScout-export 7^2ijkoj34lqzh^26
 @i^273048^Refractory Scaleguards
 @i^273049^Archmagister's Faceted Pendant
 @i^273051^Violet Sorcerer's Mantle
+@i^275893^Searing Gourd
 @i^275997^Cracked Sentry Core
 @i^276158^Crystallized Shard
 @i^276160^Mana Fragment
@@ -592,6 +611,9 @@ GoldScout-export 7^2ijkoj34lqzh^26
 @q^1431^0:4:0
 @q^1485^0:2:0
 @q^1498^0:4:0
+@q^1501^0:4:0
+@q^1512^0:2:0
+@q^1514^0:2:0
 @q^1529^2:7:1
 @q^1686^0:15:0
 @q^1696^0:15:0
@@ -604,6 +626,7 @@ GoldScout-export 7^2ijkoj34lqzh^26
 @q^1711^1:0:0
 @q^1712^1:0:0
 @q^1725^1:1:0
+@q^1737^0:4:0
 @q^1754^0:4:0
 @q^1760^0:4:0
 @q^1761^0:4:0
@@ -775,6 +798,7 @@ GoldScout-export 7^2ijkoj34lqzh^26
 @q^6308^1:7:1
 @q^6359^1:7:1
 @q^6361^1:7:1
+@q^6380^2:4:0
 @q^6388^2:4:0
 @q^6397^2:4:0
 @q^6438^0:15:0
@@ -817,6 +841,7 @@ GoldScout-export 7^2ijkoj34lqzh^26
 @q^12946^1:12:0
 @q^14197^2:4:0
 @q^14582^2:4:0
+@q^15268^2:2:0
 @q^15529^2:4:0
 @q^15925^2:4:0
 @q^15974^2:4:0
@@ -859,6 +884,9 @@ GoldScout-export 7^2ijkoj34lqzh^26
 @q^252665^1:12:0
 @q^254000^2:9:0
 @q^262889^3:0:0
+@q^270229^3:4:0
+@q^270231^3:4:0
+@q^270261^3:4:0
 @q^273034^3:4:0
 @q^273036^3:4:0
 @q^273038^3:4:0
@@ -869,6 +897,7 @@ GoldScout-export 7^2ijkoj34lqzh^26
 @q^273048^3:4:0
 @q^273049^3:4:0
 @q^273051^3:4:0
+@q^275893^1:15:0
 @q^275997^1:12:0
 @q^276158^0:15:0
 @q^276160^0:15:0
