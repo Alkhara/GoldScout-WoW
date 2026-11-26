@@ -1,4 +1,5 @@
-GoldScout-export 7^9mbj9vrqq22p^10
+GoldScout-export 7^9mbj9vrqq22p^11
+92^6^0^39^40^1418^0.1363^0.3473^6^Rock Elemental^4552:3:3,4553:2:2,4784:6:6,7912:2:4,8150:1:1^
 1501^12^0^1^1^1420^0.3178^0.6398^12^Mindless Zombie^159:2:2,2589:6:6,2654:1:1,3365:1:1,4604:1:1^
 1502^14^0^1^2^1420^0.3198^0.6410^14^Wretched Zombie^1367:1:1,1372:1:1,1376:1:1,2210:1:1,2589:2:2,4604:1:1^
 1504^10^0^2^3^1420^0.2863^0.5681^10^Young Night Web Spider^1366:2:2,1476:6:6,2649:1:1,7100:4:4,7101:2:2^
@@ -56,6 +57,7 @@ GoldScout-export 7^9mbj9vrqq22p^10
 2559^3^0^30^31^1417^0.6580^0.3419^3^Highland Strider^3685:1:1,4461:2:2,12184:1:1^
 2581^4^0^31^32^1417^0.5692^0.3779^4^Dabyrie Militia^4306:1:2,5007:1:1^
 2582^7^0^30^31^1417^0.5602^0.3792^7^Dabyrie Laborer^1705:1:1,4306:4:7,211784:1:1^
+2735^2^0^38^38^1418^0.1313^0.3904^2^Lesser Rock Elemental^4553:2:2,4784:1:1,7848:1:1,7912:2:3^
 3974^1^0^0^0^0^0.0000^0.0000^0^^5805:1:1,274292:1:1^
 4111^1^0^27^27^1441^0.2439^0.3488^1^Gravelsnout Kobold^^
 4117^1^0^26^26^1441^0.5208^0.5511^1^Cloud Serpent^6826:1:1,17056:1:1^
@@ -164,6 +166,7 @@ GoldScout-export 7^9mbj9vrqq22p^10
 @i^4461^Raptor Hide
 @i^4538^Snapvine Watermelon
 @i^4542^Moist Cornbread
+@i^4552^Smooth Stone Chip
 @i^4553^Jagged Piece of Stone
 @i^4560^Fine Scimitar
 @i^4562^Severing Axe of Intellect
@@ -197,6 +200,8 @@ GoldScout-export 7^9mbj9vrqq22p^10
 @i^7101^Bug Eye
 @i^7711^Robe of Doan
 @i^7714^Hypnotic Blade
+@i^7848^Rock Elemental Shard
+@i^7912^Solid Stone
 @i^8150^Deeprock Salt
 @i^8365^Raw Mithril Head Trout
 @i^11152^Formula: Enchant Gloves - Fishing
@@ -304,6 +309,7 @@ GoldScout-export 7^9mbj9vrqq22p^10
 @q^4461^1:7:1
 @q^4538^1:0:0
 @q^4542^1:0:0
+@q^4552^0:15:0
 @q^4553^0:15:0
 @q^4560^1:2:0
 @q^4562^2:2:0
@@ -337,6 +343,8 @@ GoldScout-export 7^9mbj9vrqq22p^10
 @q^7101^0:15:0
 @q^7711^2:4:0
 @q^7714^3:2:0
+@q^7848^1:12:0
+@q^7912^1:7:1
 @q^8150^1:7:1
 @q^8365^1:7:1
 @q^11152^2:9:0
@@ -363,6 +371,7 @@ GoldScout-export 7^9mbj9vrqq22p^10
 @q^279186^1:12:0
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
+@m^1418^Badlands
 @m^1420^Tirisfal Glades
 @m^1424^Hillsbrad Foothills
 @m^1441^Thousand Needles
@@ -1598,6 +1607,7 @@ GoldScout-export 7^9mbj9vrqq22p^10
 @c^279981^
 @c^279982^
 @c^286152^
+@a^92^122:5,142:1
 @a^1501^246:11,266:1
 @a^1502^246:10,266:4
 @a^1504^225:10
@@ -1655,6 +1665,7 @@ GoldScout-export 7^9mbj9vrqq22p^10
 @a^2559^133:1,134:1,151:1
 @a^2581^151:4
 @a^2582^150:1,151:6
+@a^2735^142:1,162:1
 @a^4111^124:1
 @a^4117^230:1
 @a^4118^230:3
@@ -1671,6 +1682,7 @@ GoldScout-export 7^9mbj9vrqq22p^10
 @a^270094^210:1
 @a^271961^224:1,225:2,244:2
 @a^276061^230:1
+@t^92^6:177
 @t^1501^11:555
 @t^1502^11:265
 @t^1504^9:139
@@ -1701,6 +1713,7 @@ GoldScout-export 7^9mbj9vrqq22p^10
 @t^1935^4:123
 @t^1936^1:22
 @t^1941^21:592
+@t^2735^1:35
 @t^271961^5:81
 @t^276061^1:46
 @f^1443^0^1^225^8365:1:1^308:1

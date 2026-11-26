@@ -1,4 +1,4 @@
-GoldScout-export 6^m00jxkjr841x^107
+GoldScout-export 6^m00jxkjr841x^108
 98^1^0^17^17^1436^0.6373^0.7055^1^Riverpaw Taskmaster^^
 117^1^0^11^12^1436^0.5780^0.1317^1^Riverpaw Gnoll^1502:1:1^
 154^2^0^16^17^1436^0.6243^0.6214^2^Greater Fleshripper^6889:1:1^
@@ -406,6 +406,11 @@ GoldScout-export 6^m00jxkjr841x^107
 7327^7^0^35^35^1414^0.5321^0.7117^1^Withered Warrior^1710:1:1,3771:1:1,3811:1:1,4306:2:2,14200:1:1^
 7768^1^0^25^25^1425^0.3571^0.6388^1^Witherbark Bloodling^^
 7847^1^1^46^46^1446^0.6055^0.3726^1^Caliph Scorpidsting^4338:1:2,8723:1:1^
+7855^2^0^44^44^1446^0.7356^0.4659^2^Southsea Pirate^20519:1:1^
+7856^4^1^44^45^1446^0.7350^0.4611^4^Southsea Freebooter^9276:1:1,20519:1:1^
+7857^10^5^44^45^1446^0.7398^0.4756^10^Southsea Dock Worker^1645:1:1,4306:1:1,4338:2:2,7909:1:1,9260:1:1,9276:1:1,14431:1:1,20519:3:3^5432:1:1
+7858^4^1^44^45^1446^0.7486^0.4609^4^Southsea Swashbuckler^4338:1:1,9276:1:1,20519:3:3^
+7883^1^0^45^45^1446^0.7329^0.4725^1^Andre Firebeard^4338:1:1,9246:1:1,20519:1:1^
 7977^1^0^48^48^1425^0.8131^0.5423^1^Gammerita^19023:1:1^
 8518^2^0^29^29^1442^0.2976^0.1768^2^Rynthariel the Keymaster^1784:1:1,2592:1:2^
 8554^1^0^5^5^1412^0.6060^0.7834^1^Chief Sharptusk Thornmantle^2211:1:1,10459:1:1^
@@ -996,8 +1001,10 @@ GoldScout-export 6^m00jxkjr841x^107
 @i^8704^OOX-09 HL Distress Beacon
 @i^8723^Caliph Scorpidsting's Head
 @i^8751^Overlinked Coif
+@i^9246^Firebeard's Head
 @i^9259^Troll Tribal Necklace
 @i^9260^Volatile Rum
+@i^9276^Pirate's Footlocker
 @i^9294^Recipe: Wildvine Potion
 @i^9320^Witherbark Skull
 @i^9451^Bubbling Water
@@ -1062,6 +1069,7 @@ GoldScout-export 6^m00jxkjr841x^107
 @i^14183^Watcher's Leggings of the Sorcerer
 @i^14200^Thistlefur Cap of Arcane Wrath
 @i^14373^Sanguine Belt
+@i^14431^Windchaser Handguards
 @i^14589^Hawkeye's Shoes
 @i^14728^War Paint Shoulder Pads
 @i^14747^Hulking Gauntlets
@@ -1101,6 +1109,7 @@ GoldScout-export 6^m00jxkjr841x^107
 @i^19034^Lard's Lunch
 @i^19937^Small Scorpid Claw
 @i^19938^Heavy Scorpid Leg
+@i^20519^Southsea Pirate Hat
 @i^20763^Broken Weapon
 @i^210213^Sister's Half-Key
 @i^211269^Primitive Drawing
@@ -1671,8 +1680,10 @@ GoldScout-export 6^m00jxkjr841x^107
 @q^8704^2:12:0
 @q^8723^1:12:0
 @q^8751^0:4:0
+@q^9246^1:12:0
 @q^9259^1:15:0
 @q^9260^1:0:0
+@q^9276^1:15:0
 @q^9294^2:9:0
 @q^9320^1:12:0
 @q^9451^1:0:0
@@ -1737,6 +1748,7 @@ GoldScout-export 6^m00jxkjr841x^107
 @q^14183^2:4:0
 @q^14200^2:4:0
 @q^14373^2:4:0
+@q^14431^2:4:0
 @q^14589^2:4:0
 @q^14728^1:4:0
 @q^14747^2:4:0
@@ -1776,6 +1788,7 @@ GoldScout-export 6^m00jxkjr841x^107
 @q^19034^1:12:0
 @q^19937^0:15:0
 @q^19938^0:15:0
+@q^20519^1:12:0
 @q^20763^0:15:0
 @q^210213^1:13:0
 @q^211269^1:12:0
@@ -3051,6 +3064,11 @@ GoldScout-export 6^m00jxkjr841x^107
 @a^7327^290:1
 @a^7768^247:1
 @a^7847^152:1
+@a^7855^194:2
+@a^7856^194:4
+@a^7857^194:10
+@a^7858^175:1,194:2,195:1
+@a^7883^194:1
 @a^7977^216:1
 @a^8996^245:1,265:3
 @a^10758^127:2,147:4
