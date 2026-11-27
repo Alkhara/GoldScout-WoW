@@ -1,4 +1,4 @@
-GoldScout-export 9^eg2jkxnnnf5d^49
+GoldScout-export 9^eg2jkxnnnf5d^50
 599^1^0^18^18^1415^0.4120^0.7968^1^Marisa du'Paige^4660:1:1^
 1529^8^0^9^10^1420^0.7650^0.6091^8^Bleeding Horror^159:1:1,1429:1:1,2589:1:2,4604:1:1^
 1532^8^0^10^11^1420^0.7646^0.6027^8^Wandering Spirit^2589:3:6,2958:1:1,4604:1:1^
@@ -132,7 +132,11 @@ GoldScout-export 9^eg2jkxnnnf5d^49
 3632^1^0^15^16^1414^0.5188^0.5541^1^Deviate Creeper^^
 3634^1^0^15^15^1414^0.5192^0.5532^1^Deviate Stalker^5124:1:1^
 3655^1^0^18^18^1414^0.5215^0.5517^1^Mad Magglish^1788:1:1,5334:1:1^
-3717^1^0^19^19^1440^0.1533^0.1713^1^Wrathtail Sorceress^^
+3711^1^1^20^20^1440^0.1137^0.3130^1^Wrathtail Myrmidon^5490:1:1^
+3712^1^1^20^20^1440^0.1186^0.3126^1^Wrathtail Razortail^5490:1:1^
+3713^6^8^18^19^1440^0.1427^0.2664^6^Wrathtail Wave Rider^5490:6:6,5523:1:1,14122:1:1,16653:1:1^5371:1:1
+3715^3^3^19^20^1440^0.1258^0.3067^3^Wrathtail Sea Witch^3012:1:1,5490:3:3,5523:1:1,16656:2:2^
+3717^6^7^18^19^1440^0.1378^0.2512^6^Wrathtail Sorceress^2216:1:1,5490:5:5,5523:3:3^858:1:1,1210:1:1
 3851^2^0^0^0^0^0.0000^0.0000^0^^3770:1:1,6553:1:1^
 3853^4^0^0^0^0^0.0000^0.0000^0^^1210:1:1,2764:1:1,4410:1:1,5635:1:1^
 3854^2^0^0^0^0^0.0000^0.0000^0^^1777:1:1,3065:1:1^
@@ -335,6 +339,7 @@ GoldScout-export 9^eg2jkxnnnf5d^49
 @i^2213^Worn Large Shield
 @i^2214^Wooden Buckler
 @i^2215^Wooden Shield
+@i^2216^Simple Buckler
 @i^2217^Rectangular Shield
 @i^2287^Haunch of Meat
 @i^2447^Peacebloom
@@ -371,6 +376,7 @@ GoldScout-export 9^eg2jkxnnnf5d^49
 @i^2978^Veteran Leggings
 @i^2992^Burnished Gloves
 @i^3010^Fine Sand
+@i^3012^Scroll of Agility
 @i^3013^Scroll of Protection
 @i^3065^Bright Boots
 @i^3156^Glutton Shackle
@@ -525,6 +531,7 @@ GoldScout-export 9^eg2jkxnnnf5d^49
 @i^5334^99-Year-Old Port
 @i^5368^Empty Wallet
 @i^5369^Gnawed Bone
+@i^5371^Piece of Coral
 @i^5374^Small Pocket Watch
 @i^5379^Boot Knife
 @i^5465^Small Spider Leg
@@ -532,6 +539,7 @@ GoldScout-export 9^eg2jkxnnnf5d^49
 @i^5469^Strider Meat
 @i^5470^Thunder Lizard Tail
 @i^5471^Stag Meat
+@i^5490^Wrathtail Head
 @i^5498^Small Lustrous Pearl
 @i^5523^Small Barnacled Clam
 @i^5524^Thick-shelled Clam
@@ -588,6 +596,7 @@ GoldScout-export 9^eg2jkxnnnf5d^49
 @i^14096^Native Vest of the Whale
 @i^14099^Native Sash
 @i^14102^Native Handwraps
+@i^14122^Ritual Bands of Intellect
 @i^14544^Lieutenant's Insignia
 @i^14722^War Paint Anklewraps
 @i^15009^Primal Leggings of Healing
@@ -598,6 +607,8 @@ GoldScout-export 9^eg2jkxnnnf5d^49
 @i^15490^Bloodspattered Cloak
 @i^15493^Bloodspattered Loincloth of the Owl
 @i^16312^Incendrites
+@i^16653^Shredder Operating Manual - Page 9
+@i^16656^Shredder Operating Manual - Page 12
 @i^16790^Damp Note
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
@@ -743,6 +754,7 @@ GoldScout-export 9^eg2jkxnnnf5d^49
 @q^2213^0:4:0
 @q^2214^0:4:0
 @q^2215^0:4:0
+@q^2216^0:4:0
 @q^2217^0:4:0
 @q^2287^1:0:0
 @q^2447^1:7:1
@@ -779,6 +791,7 @@ GoldScout-export 9^eg2jkxnnnf5d^49
 @q^2978^2:4:0
 @q^2992^2:4:0
 @q^3010^0:15:0
+@q^3012^1:0:0
 @q^3013^1:0:0
 @q^3065^2:4:0
 @q^3156^1:12:0
@@ -933,6 +946,7 @@ GoldScout-export 9^eg2jkxnnnf5d^49
 @q^5334^1:12:0
 @q^5368^0:15:0
 @q^5369^0:15:0
+@q^5371^0:15:0
 @q^5374^0:15:0
 @q^5379^0:2:0
 @q^5465^1:7:1
@@ -940,6 +954,7 @@ GoldScout-export 9^eg2jkxnnnf5d^49
 @q^5469^1:7:1
 @q^5470^1:7:1
 @q^5471^1:7:1
+@q^5490^1:12:0
 @q^5498^2:7:1
 @q^5523^1:7:0
 @q^5524^1:7:0
@@ -996,6 +1011,7 @@ GoldScout-export 9^eg2jkxnnnf5d^49
 @q^14096^2:4:0
 @q^14099^1:4:0
 @q^14102^1:4:0
+@q^14122^2:4:0
 @q^14544^1:12:0
 @q^14722^2:4:0
 @q^15009^2:4:0
@@ -1006,6 +1022,8 @@ GoldScout-export 9^eg2jkxnnnf5d^49
 @q^15490^1:4:0
 @q^15493^2:4:0
 @q^16312^1:12:0
+@q^16653^1:12:0
+@q^16656^1:12:0
 @q^16790^1:15:0
 @q^17056^1:15:1
 @q^17057^1:15:0
@@ -2674,7 +2692,11 @@ GoldScout-export 9^eg2jkxnnnf5d^49
 @a^3632^230:1
 @a^3634^230:1
 @a^3655^230:1
-@a^3717^63:1
+@a^3711^122:1
+@a^3712^122:1
+@a^3713^82:1,102:3,103:2
+@a^3715^122:3
+@a^3717^63:1,82:1,102:4
 @a^3939^90:1,91:1,110:1,111:1
 @a^3988^212:1,213:1,234:1
 @a^3989^193:1,212:1,213:5,232:5,233:4,234:1
@@ -2792,6 +2814,11 @@ GoldScout-export 9^eg2jkxnnnf5d^49
 @t^3452^1:74
 @t^3467^1:42
 @t^3475^1:752
+@t^3711^1:29
+@t^3712^1:25
+@t^3713^6:275
+@t^3715^2:114
+@t^3717^5:391
 @t^3988^2:117
 @t^3989^17:1881
 @t^4005^5:1354

@@ -1,4 +1,4 @@
-GoldScout-export 9^6ckk8mmdkmpt^26
+GoldScout-export 9^6ckk8mmdkmpt^30
 95^1^0^11^12^1436^0.4291^0.4239^1^Schmuggler der Defias^^
 114^1^0^14^15^1436^0.3788^0.5304^1^Erntebehüter^6555:1:1^
 123^2^0^13^14^1436^0.3564^0.3305^2^Bastard der Flusspfoten^2589:1:3^
@@ -60,12 +60,15 @@ GoldScout-export 9^6ckk8mmdkmpt^26
 3207^7^0^8^9^1411^0.6753^0.8502^7^Verhexter Troll^1412:1:1,2589:2:4,275724:3:3^
 3227^1^0^10^10^1411^0.4231^0.1833^1^Verderbter Blutkrallensensenschlund^4877:1:1^
 3281^1^0^4^4^1411^0.4077^0.6683^1^Sarkoth^4905:1:1,7100:1:1^
+4095^2^0^27^28^1441^0.4272^0.3405^2^Raufer der Galak^3770:1:1,15973:1:1^
+4099^3^0^26^27^1441^0.4272^0.3499^3^Marodeur der Galak^2592:1:1,3770:1:1^
 4100^10^0^28^29^1441^0.2702^0.5491^10^Kreischende Harpyie^1478:1:1,2592:1:1,4306:4:6,17056:2:2,248689:1:1^
-4101^5^0^29^30^1441^0.2699^0.5524^5^Kreischende Wildfeder^1711:1:1,5116:1:1,17056:2:2^
+4101^6^0^29^30^1441^0.2674^0.5359^6^Kreischende Wildfeder^1711:1:1,3770:1:1,4306:1:1,5116:1:1,17056:3:3^
 4104^1^0^30^30^1441^0.2700^0.5524^1^Kreischende Windruferin^^
-4113^5^0^28^29^1441^0.6090^0.5855^5^Buddler der Bruchschnauzen^929:1:1,1205:1:1,2077:1:1,4306:3:6^
-4114^3^0^27^28^1441^0.4067^0.4893^3^Futterwühler der Bruchschnauzen^4306:1:2,248689:1:1^
-4116^4^0^29^30^1441^0.6232^0.5633^4^Feldmesser der Bruchschnauzen^1783:1:1,4538:1:1^
+4113^6^0^28^29^1441^0.5260^0.5110^6^Buddler der Bruchschnauzen^929:1:1,1205:1:1,2077:1:1,4306:3:6^
+4114^4^0^27^28^1441^0.3994^0.5005^4^Futterwühler der Bruchschnauzen^4306:1:2,4538:1:1,248689:1:1^
+4116^5^0^29^30^1441^0.5209^0.4784^5^Feldmesser der Bruchschnauzen^1783:1:1,4538:1:1^
+4124^2^0^27^28^1441^0.1450^0.2618^2^Nadelpuma^5137:2:2^
 4139^3^0^33^34^1441^0.7970^0.8258^3^Skorpidschrecker^5794:3:3,12037:1:1^
 4140^13^0^31^32^1441^0.8024^0.6427^13^Skorpidhäscher^1288:1:1,5794:3:3,12037:6:6,19937:2:2,19938:3:3^
 4142^9^0^30^31^1441^0.8028^0.5681^9^Spiegelpanzerschildkröte^3712:3:3,4555:1:1,4556:3:3,5795:4:4,6308:2:2^
@@ -279,6 +282,7 @@ GoldScout-export 9^6ckk8mmdkmpt^26
 @i^3669^Gelatineartige Schmiere
 @i^3676^Schleimiges Sekret
 @i^3712^Schildkrötenfleisch
+@i^3770^Hammelkoteletts
 @i^3827^Manatrank
 @i^4093^Großer Basiliskenschwanz
 @i^4290^Staubschale
@@ -326,6 +330,7 @@ GoldScout-export 9^6ckk8mmdkmpt^26
 @i^5114^Abgespaltene Kralle
 @i^5115^Zerbrochenes Gabelbein
 @i^5116^Lange Schwanzfeder
+@i^5137^Heller Augapfel
 @i^5207^Undurchsichtiger Zauberstab
 @i^5212^Loderflammenzauberstab
 @i^5465^Kleines Spinnenbein
@@ -419,6 +424,7 @@ GoldScout-export 9^6ckk8mmdkmpt^26
 @i^15500^Kundschafter-Brustschutz des Arkanschutzes
 @i^15525^Wachpostenschuhe des Ritters
 @i^15970^Eingeborenenzweig des Tigers
+@i^15973^Behüter-Stern des Naturschutzes
 @i^17008^Kleine Rolle
 @i^17056^Leichte Feder
 @i^17057^Glänzende Fischschuppen
@@ -572,6 +578,7 @@ GoldScout-export 9^6ckk8mmdkmpt^26
 @q^3669^0:15:0
 @q^3676^0:15:0
 @q^3712^1:7:1
+@q^3770^1:0:0
 @q^3827^1:0:0
 @q^4093^0:15:0
 @q^4290^2:4:0
@@ -619,6 +626,7 @@ GoldScout-export 9^6ckk8mmdkmpt^26
 @q^5114^0:15:0
 @q^5115^0:15:0
 @q^5116^1:7:1
+@q^5137^0:15:0
 @q^5207^2:2:0
 @q^5212^2:2:0
 @q^5465^1:7:1
@@ -712,6 +720,7 @@ GoldScout-export 9^6ckk8mmdkmpt^26
 @q^15500^2:4:0
 @q^15525^2:4:0
 @q^15970^2:4:0
+@q^15973^2:4:0
 @q^17008^1:15:0
 @q^17056^1:15:1
 @q^17057^1:15:0
@@ -2059,12 +2068,15 @@ GoldScout-export 9^6ckk8mmdkmpt^26
 @a^3207^333:3,353:4
 @a^3227^68:1
 @a^3281^268:1
+@a^4095^128:2
+@a^4099^128:2,148:1
 @a^4100^205:4,225:6
-@a^4101^225:5
+@a^4101^185:1,225:5
 @a^4104^225:1
-@a^4113^231:3,252:2
-@a^4114^187:1,190:1,206:1
-@a^4116^213:1,231:1,232:1,252:1
+@a^4113^42:1,231:3,252:2
+@a^4114^187:1,190:1,206:1,207:1
+@a^4116^42:1,213:1,231:1,232:1,252:1
+@a^4124^42:1,143:1
 @a^4139^334:1,336:1,356:1
 @a^4140^215:2,237:1,256:1,257:1,275:4,276:3,294:1
 @a^4142^216:2,234:1,236:5,274:1
@@ -2091,5 +2103,9 @@ GoldScout-export 9^6ckk8mmdkmpt^26
 @a^270094^231:1
 @a^275662^111:2
 @a^275663^111:1
+@t^4095^1:32
+@t^4099^3:92
+@t^4116^1:1
+@t^4124^2:134
 @f^1417^0^144^200^3827:1:1,6308:52:52,6310:1:1,8365:90:90^204:144
 @l^0^deDE

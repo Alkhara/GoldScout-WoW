@@ -1,4 +1,4 @@
-GoldScout-export 7^0lb4i6wmc8cr^18
+GoldScout-export 7^0lb4i6wmc8cr^19
 205^21^0^28^29^1431^0.6405^0.4885^21^Nightbane Dark Runner^2766:1:1,3770:1:1,5635:1:1^
 206^11^0^29^30^1431^0.7190^0.6885^11^Nightbane Vile Fang^2794:1:1^
 428^18^0^18^19^1433^0.5218^0.7625^18^Dire Condor^556:2:2,1080:7:7,1464:1:1,4775:8:8,4776:2:2,5114:1:1,5115:2:2,6889:12:12,9776:1:1,17056:7:7,250188:2:2^
@@ -15,9 +15,9 @@ GoldScout-export 7^0lb4i6wmc8cr^18
 898^1^0^26^26^1431^0.6571^0.5173^1^Nightbane Worgen^929:1:1^
 920^7^0^30^31^1431^0.6663^0.7507^7^Nightbane Tainted One^^
 923^6^0^23^24^1431^0.5649^0.6152^6^Young Black Ravager^1015:4:4,3301:2:2,3402:1:1,5635:1:1^
-937^7^0^32^33^1434^0.4404^0.1042^7^Kurzen Jungle Fighter^3827:1:1,4306:1:1^
-938^3^0^34^35^1434^0.4435^0.0849^3^Kurzen Commando^4306:2:3^
-940^5^0^32^33^1434^0.4372^0.0935^5^Kurzen Medicine Man^2633:2:2,3818:2:2,4306:1:2^
+937^17^0^32^33^1434^0.4440^0.0976^17^Kurzen Jungle Fighter^2734:1:1,3827:1:1,4306:5:6^
+938^6^0^34^35^1434^0.4494^0.0850^6^Kurzen Commando^1707:1:1,4306:4:6,248688:1:1^
+940^13^0^32^33^1434^0.4502^0.1057^13^Kurzen Medicine Man^1710:1:1,2633:7:7,2728:1:1,3356:1:1,3357:2:2,3815:1:1,3818:2:2,4306:2:3,8746:1:1^
 1009^1^0^23^23^1437^0.3894^0.3412^1^Mosshide Mistweaver^^
 1010^10^0^22^23^1437^0.3599^0.3451^10^Mosshide Fenrunner^1712:1:1,2589:1:1,2592:2:3,2611:3:3^
 1011^14^0^23^24^1437^0.3469^0.3392^14^Mosshide Trapper^929:1:1,1772:1:1,1775:1:1,2589:2:4,2592:5:7,2611:4:4,2783:1:1,3770:3:3^
@@ -138,6 +138,7 @@ GoldScout-export 7^0lb4i6wmc8cr^18
 @i^1697^Keen Raptor Tooth
 @i^1705^Lesser Moonstone
 @i^1707^Stormwind Brie
+@i^1710^Greater Healing Potion
 @i^1712^Scroll of Spirit II
 @i^1752^Linked Chain Shoulderpads
 @i^1756^Reinforced Chain Bracers
@@ -170,6 +171,8 @@ GoldScout-export 7^0lb4i6wmc8cr^18
 @i^2611^Crude Flint
 @i^2633^Jungle Remedy
 @i^2702^Lightforge Ingot
+@i^2728^Green Hills of Stranglethorn - Page 4
+@i^2734^Green Hills of Stranglethorn - Page 10
 @i^2766^Deft Stiletto
 @i^2783^Shoddy Blunderbuss
 @i^2794^An Old History Book
@@ -179,6 +182,8 @@ GoldScout-export 7^0lb4i6wmc8cr^18
 @i^3180^Flecked Raptor Scale
 @i^3193^Oak Mallet of Arcane Protection
 @i^3301^Sharp Canine
+@i^3356^Kingsblood
+@i^3357^Liferoot
 @i^3381^Cross-stitched Bracers
 @i^3385^Lesser Mana Potion
 @i^3402^Soft Patch of Fur
@@ -193,6 +198,7 @@ GoldScout-export 7^0lb4i6wmc8cr^18
 @i^3770^Mutton Chop
 @i^3771^Wild Hog Shank
 @i^3778^Taut Compound Bow
+@i^3815^Double Mail Vest
 @i^3818^Fadeleaf
 @i^3827^Mana Potion
 @i^4049^Emblazoned Bracers
@@ -234,6 +240,7 @@ GoldScout-export 7^0lb4i6wmc8cr^18
 @i^7417^Phalanx Boots of Power
 @i^8146^Wicked Claw
 @i^8186^Dire Wand
+@i^8746^Interlaced Cowl
 @i^9277^Techbot's Memory Core
 @i^9279^White Punch Card
 @i^9308^Grime-Encrusted Object
@@ -312,6 +319,7 @@ GoldScout-export 7^0lb4i6wmc8cr^18
 @q^1697^0:15:0
 @q^1705^2:7:1
 @q^1707^1:0:0
+@q^1710^1:0:0
 @q^1712^1:0:0
 @q^1752^0:4:0
 @q^1756^0:4:0
@@ -344,6 +352,8 @@ GoldScout-export 7^0lb4i6wmc8cr^18
 @q^2611^1:12:0
 @q^2633^1:0:0
 @q^2702^1:12:0
+@q^2728^1:12:0
+@q^2734^1:12:0
 @q^2766^0:2:0
 @q^2783^0:2:0
 @q^2794^1:12:0
@@ -353,6 +363,8 @@ GoldScout-export 7^0lb4i6wmc8cr^18
 @q^3180^0:15:0
 @q^3193^2:2:0
 @q^3301^0:15:0
+@q^3356^1:7:1
+@q^3357^1:7:1
 @q^3381^0:4:0
 @q^3385^1:0:0
 @q^3402^0:15:0
@@ -367,6 +379,7 @@ GoldScout-export 7^0lb4i6wmc8cr^18
 @q^3770^1:0:0
 @q^3771^1:0:0
 @q^3778^0:2:0
+@q^3815^0:4:0
 @q^3818^1:7:1
 @q^3827^1:0:0
 @q^4049^2:4:0
@@ -408,6 +421,7 @@ GoldScout-export 7^0lb4i6wmc8cr^18
 @q^7417^2:4:0
 @q^8146^1:7:1
 @q^8186^2:2:0
+@q^8746^0:4:0
 @q^9277^1:12:0
 @q^9279^1:12:0
 @q^9308^1:12:0
@@ -1084,9 +1098,9 @@ GoldScout-export 7^0lb4i6wmc8cr^18
 @a^898^213:1
 @a^920^291:3,294:1,314:3
 @a^923^231:1,232:1,251:3,269:1
-@a^937^28:2,48:5
-@a^938^28:3
-@a^940^28:3,48:2
+@a^937^28:8,29:1,48:6,49:2
+@a^938^28:3,29:3
+@a^940^28:3,29:1,48:3,49:6
 @a^1009^127:1
 @a^1010^126:1,127:4,128:1,145:2,147:2
 @a^1011^125:1,126:5,127:2,128:1,145:1,146:3,147:1
@@ -1130,9 +1144,9 @@ GoldScout-export 7^0lb4i6wmc8cr^18
 @a^272389^184:1
 @t^681^1:143
 @t^683^4:356
-@t^937^7:398
-@t^938^3:145
-@t^940^5:326
+@t^937^15:676
+@t^938^6:380
+@t^940^13:631
 @t^1756^3:31
 @t^2408^4:313
 @t^2561^19:847
