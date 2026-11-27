@@ -1,4 +1,4 @@
-GoldScout-export 7^m2kihidx2y4p^38
+GoldScout-export 9^m2kihidx2y4p^40
 588^10^0^34^35^1434^0.2454^0.1232^10^Bloodscalp Scout^2592:1:1,2732:1:1,4306:3:5,13045:1:1,277957:1:1^
 595^15^0^34^35^1434^0.2410^0.1195^15^Bloodscalp Hunter^2592:1:3,2734:1:1,4306:7:10,7460:1:1,8188:1:1,9845:1:1,213545:1:1^
 597^15^0^36^37^1434^0.2451^0.0967^15^Bloodscalp Berserker^2745:1:1,2749:1:1,2751:1:1,4306:3:3,4338:2:2,213547:1:1,248690:1:1^
@@ -145,6 +145,8 @@ GoldScout-export 7^m2kihidx2y4p^38
 260243^1^0^0^0^0^0.0000^0.0000^0^^274610:1:1^
 260353^1^0^0^0^0^0.0000^0.0000^0^^270333:1:1^
 262397^26^0^36^38^1434^0.2282^0.2707^26^Brinescale Skirmisher^2738:1:1,2749:1:1,3778:1:1,3793:1:1,3800:1:1,3807:1:1,4422:1:1,4603:1:3,5524:3:3,17058:2:2,248710:1:1,270305:10:10^
+263307^2^0^37^38^2548^0.6072^0.6043^2^Glade Viper^6444:1:1,6826:1:1^
+263343^12^0^37^38^2548^0.6712^0.5543^12^Low Plains Buzzard^1464:4:4,3404:4:4,5829:2:2,11418:1:1,12037:3:3,248691:1:1,271793:6:6^
 263899^1^0^0^0^0^0.0000^0.0000^0^^^
 @i^537^Dull Frenzy Scale
 @i^770^Pointy Crocolisk Tooth
@@ -155,6 +157,7 @@ GoldScout-export 7^m2kihidx2y4p^38
 @i^1074^Hard Spider Leg Tip
 @i^1179^Ice Cold Milk
 @i^1207^Murphstar of the Eagle
+@i^1464^Buzzard Talon
 @i^1477^Scroll of Agility II
 @i^1529^Jade
 @i^1532^Shrunken Head
@@ -195,6 +198,7 @@ GoldScout-export 7^m2kihidx2y4p^38
 @i^3377^Canvas Bracers
 @i^3385^Lesser Mana Potion
 @i^3402^Soft Patch of Fur
+@i^3404^Buzzard Wing
 @i^3667^Tender Crocolisk Meat
 @i^3669^Gelatinous Goo
 @i^3685^Raptor Egg
@@ -246,6 +250,7 @@ GoldScout-export 7^m2kihidx2y4p^38
 @i^5741^Rock Chip
 @i^5785^Thick Murloc Scale
 @i^5805^Heart of Zeal
+@i^5829^Razor-sharp Beak
 @i^5844^Fragments of Rok'Alim
 @i^5847^Mirefin Head
 @i^5884^Unpopped Darkmist Eye
@@ -253,9 +258,11 @@ GoldScout-export 7^m2kihidx2y4p^38
 @i^6308^Raw Bristle Whisker Catfish
 @i^6417^Aurora Cloak
 @i^6420^Glyphed Boots
+@i^6444^Forked Tongue
 @i^6465^Robe of the Moccasin
 @i^6551^Soldier's Boots of Power
 @i^6603^Dervish Tunic of Agility
+@i^6826^Brilliant Scale
 @i^6986^Crimson Lotus
 @i^7067^Elemental Earth
 @i^7353^Elder's Padded Armor of the Owl
@@ -293,6 +300,7 @@ GoldScout-export 7^m2kihidx2y4p^38
 @i^11384^Broken Basilisk Teeth
 @i^11385^Basilisk Scale
 @i^11386^Squishy Basilisk Eye
+@i^11418^Hollow Wing Bone
 @i^11985^Cerulean Ring of the Tiger
 @i^12037^Mystery Meat
 @i^12184^Raptor Flesh
@@ -345,6 +353,7 @@ GoldScout-export 7^m2kihidx2y4p^38
 @i^262889^Sealed Expert's Writ
 @i^270305^Brinescale Trident
 @i^270333^Voodoo-Infused Artifact
+@i^271793^Plains Buzzard Feather
 @i^273293^Bandsaw Wristbands
 @i^273297^Goblin Hammer
 @i^274291^Polished Skullcap
@@ -365,6 +374,7 @@ GoldScout-export 7^m2kihidx2y4p^38
 @q^1074^0:15:0
 @q^1179^1:0:0
 @q^1207^2:2:0
+@q^1464^0:15:0
 @q^1477^1:0:0
 @q^1529^2:7:1
 @q^1532^1:12:0
@@ -405,6 +415,7 @@ GoldScout-export 7^m2kihidx2y4p^38
 @q^3377^0:4:0
 @q^3385^1:0:0
 @q^3402^0:15:0
+@q^3404^1:7:1
 @q^3667^1:7:1
 @q^3669^0:15:0
 @q^3685^1:7:1
@@ -456,6 +467,7 @@ GoldScout-export 7^m2kihidx2y4p^38
 @q^5741^0:15:0
 @q^5785^1:7:1
 @q^5805^1:12:0
+@q^5829^0:15:0
 @q^5844^1:12:0
 @q^5847^1:12:0
 @q^5884^1:12:0
@@ -463,9 +475,11 @@ GoldScout-export 7^m2kihidx2y4p^38
 @q^6308^1:7:1
 @q^6417^2:4:0
 @q^6420^2:4:0
+@q^6444^0:15:0
 @q^6465^3:4:0
 @q^6551^2:4:0
 @q^6603^2:4:0
+@q^6826^0:15:0
 @q^6986^0:15:0
 @q^7067^1:7:1
 @q^7353^2:4:0
@@ -503,6 +517,7 @@ GoldScout-export 7^m2kihidx2y4p^38
 @q^11384^0:15:0
 @q^11385^0:15:0
 @q^11386^0:15:0
+@q^11418^0:15:0
 @q^11985^2:4:0
 @q^12037^1:7:1
 @q^12184^1:7:1
@@ -555,6 +570,7 @@ GoldScout-export 7^m2kihidx2y4p^38
 @q^262889^3:0:0
 @q^270305^1:12:0
 @q^270333^1:12:0
+@q^271793^1:12:0
 @q^273293^3:4:0
 @q^273297^3:2:0
 @q^274291^3:4:0
@@ -574,6 +590,7 @@ GoldScout-export 7^m2kihidx2y4p^38
 @m^1441^Thousand Needles
 @m^1443^Desolace
 @m^1445^Dustwallow Marsh
+@m^2548^Riverglades
 @m^2652^Shen'dralas
 @c^2568^
 @c^2569^
@@ -1211,5 +1228,6 @@ GoldScout-export 7^m2kihidx2y4p^38
 @a^11937^310:1,330:2
 @a^13019^131:1
 @a^262397^84:1,104:24,105:1
-@t^2735^185:5587
+@a^263307^252:2
+@a^263343^193:4,213:1,233:3,252:1,253:2,273:1
 @l^0^enUS
