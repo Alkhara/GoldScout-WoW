@@ -1,4 +1,4 @@
-GoldScout-export 9^2mabsc9cek6i^34
+GoldScout-export 9^2mabsc9cek6i^35
 6^20^0^1^2^1429^0.4789^0.3618^20^Kobold Vermin^755:6:6,1377:1:1,1378:1:1,2211:1:1,2589:8:8,2654:1:1,3363:2:2,247834:1:1,247839:3:3^
 36^6^0^11^12^1436^0.4755^0.3661^6^Harvest Golem^732:2:2,814:2:2,1274:2:2,255007:2:2^
 38^25^0^3^4^1429^0.5424^0.4986^25^Defias Thug^159:1:1,752:12:12,1367:1:1,1372:1:1,2589:3:3,2650:2:2^
@@ -225,6 +225,10 @@ GoldScout-export 9^2mabsc9cek6i^34
 2336^6^0^16^17^1439^0.5484^0.2717^6^Dark Strand Fanatic^2589:2:4,2592:1:2,5348:4:4^
 2338^59^0^16^17^1439^0.3866^0.8706^59^Twilight Disciple^858:2:2,1179:1:1,1180:1:1,1742:1:1,1793:1:1,1814:1:1,2287:4:4,2455:1:1,2589:11:15,2592:11:18,2780:1:1,2781:1:1,3313:1:1,3315:1:1,5352:1:1,15309:1:1,15501:2:2,248682:1:1^
 2339^52^0^17^18^1439^0.3903^0.8603^52^Twilight Thug^1179:1:1,1768:1:1,1770:1:1,1788:1:1,2287:4:4,2589:6:9,2592:10:13,4409:1:1,15945:1:1^
+2374^3^0^28^29^1424^0.3364^0.7085^3^Torn Fin Muckdweller^3716:2:2,5524:1:1,6393:1:1^
+2375^5^0^29^30^1424^0.3324^0.7120^5^Torn Fin Coastrunner^3716:2:2,5524:2:2,17058:2:2^
+2376^16^0^30^31^1424^0.4204^0.6828^16^Torn Fin Oracle^3792:1:1,5524:6:6,6592:1:1,13049:1:1,17057:5:5,17058:3:3^
+2377^23^0^31^32^1424^0.4159^0.6844^23^Torn Fin Tidehunter^1205:1:1,3716:6:6,3800:1:1,5524:7:7,11152:1:1,17057:4:4,17058:3:3^
 2529^4^0^0^0^0^0.0000^0.0000^0^^1772:1:1,3770:1:1^
 2575^1^0^31^31^1417^0.4572^0.8812^1^Dark Iron Supplier^^
 2957^2^0^8^9^1412^0.5123^0.2776^2^Elder Plainstrider^4757:1:1,4776:1:1^
@@ -780,10 +784,13 @@ GoldScout-export 9^2mabsc9cek6i^34
 @i^3676^Slimy Ichor
 @i^3685^Raptor Egg
 @i^3712^Turtle Meat
+@i^3716^Murloc Head
 @i^3730^Big Bear Meat
 @i^3770^Mutton Chop
 @i^3784^Metal Stave
 @i^3785^Keen Axe
+@i^3792^Interlaced Belt
+@i^3800^Hardened Leather Belt
 @i^3931^Poisoned Spider Fang
 @i^4306^Silk Cloth
 @i^4361^Copper Tube
@@ -890,6 +897,7 @@ GoldScout-export 9^2mabsc9cek6i^34
 @i^6378^Seer's Cape
 @i^6379^Inscribed Leather Belt
 @i^6392^Belt of Arugal
+@i^6393^Silver-thread Gloves
 @i^6398^Emblazoned Belt
 @i^6443^Deviate Hide
 @i^6444^Forked Tongue
@@ -909,6 +917,7 @@ GoldScout-export 9^2mabsc9cek6i^34
 @i^6556^Bard's Bracers of the Wolf
 @i^6558^Bard's Belt of Intellect
 @i^6559^Bard's Buckler of the Wolf
+@i^6592^Battleforge Armor of the Owl
 @i^6597^Battleforge Shoulderguards of the Monkey
 @i^6616^Sage's Pants of the Elder
 @i^6682^Death Speaker Robes
@@ -971,6 +980,7 @@ GoldScout-export 9^2mabsc9cek6i^34
 @i^10639^Hyacinth Mushroom
 @i^10640^Webwood Ichor
 @i^11121^Darkwater Talwar
+@i^11152^Formula: Enchant Gloves - Fishing
 @i^11391^Spined Bat Wing
 @i^11392^Severed Bat Claw
 @i^11393^Small Bat Skull
@@ -980,6 +990,7 @@ GoldScout-export 9^2mabsc9cek6i^34
 @i^12238^Darkshore Grouper
 @i^12996^Band of Purification
 @i^13032^Sword of Corruption
+@i^13049^Deanship Claymore
 @i^14087^Beaded Cuffs
 @i^14088^Beaded Cloak
 @i^14090^Beaded Britches of the Whale
@@ -1409,10 +1420,13 @@ GoldScout-export 9^2mabsc9cek6i^34
 @q^3676^0:15:0
 @q^3685^1:7:1
 @q^3712^1:7:1
+@q^3716^1:12:0
 @q^3730^1:7:1
 @q^3770^1:0:0
 @q^3784^0:2:0
 @q^3785^0:2:0
+@q^3792^0:4:0
+@q^3800^0:4:0
 @q^3931^0:15:0
 @q^4306^1:7:1
 @q^4361^1:7:1
@@ -1519,6 +1533,7 @@ GoldScout-export 9^2mabsc9cek6i^34
 @q^6378^2:4:0
 @q^6379^2:4:0
 @q^6392^3:4:0
+@q^6393^2:4:0
 @q^6398^2:4:0
 @q^6443^1:12:0
 @q^6444^0:15:0
@@ -1538,6 +1553,7 @@ GoldScout-export 9^2mabsc9cek6i^34
 @q^6556^2:4:0
 @q^6558^2:4:0
 @q^6559^2:4:0
+@q^6592^2:4:0
 @q^6597^2:4:0
 @q^6616^2:4:0
 @q^6682^3:4:0
@@ -1600,6 +1616,7 @@ GoldScout-export 9^2mabsc9cek6i^34
 @q^10639^1:12:0
 @q^10640^1:12:0
 @q^11121^3:2:0
+@q^11152^2:9:0
 @q^11391^0:15:0
 @q^11392^0:15:0
 @q^11393^0:15:0
@@ -1609,6 +1626,7 @@ GoldScout-export 9^2mabsc9cek6i^34
 @q^12238^1:0:0
 @q^12996^3:4:0
 @q^13032^3:2:0
+@q^13049^3:2:0
 @q^14087^1:4:0
 @q^14088^1:4:0
 @q^14090^2:4:0
@@ -1730,6 +1748,7 @@ GoldScout-export 9^2mabsc9cek6i^34
 @m^1414^Kalimdor
 @m^1415^Eastern Kingdoms
 @m^1417^Arathi Highlands
+@m^1424^Hillsbrad Foothills
 @m^1426^Dun Morogh
 @m^1429^Elwynn Forest
 @m^1432^Loch Modan
@@ -2594,6 +2613,10 @@ GoldScout-export 9^2mabsc9cek6i^34
 @a^2336^110:5,111:1
 @a^2338^347:59
 @a^2339^151:1,347:51
+@a^2374^266:1,286:2
+@a^2375^266:1,267:1,286:3
+@a^2376^267:2,268:9,269:3,287:1,288:1
+@a^2377^266:1,267:4,268:17,269:1
 @a^2575^349:1
 @a^2957^110:2
 @a^2960^110:9

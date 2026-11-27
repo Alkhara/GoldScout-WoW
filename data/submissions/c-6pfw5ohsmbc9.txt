@@ -1,4 +1,4 @@
-GoldScout-export 9^6pfw5ohsmbc9^39
+GoldScout-export 9^6pfw5ohsmbc9^40
 92^24^0^39^40^1418^0.1686^0.3768^24^Elémentaire de roche^4552:2:2,4553:10:10,4627:1:1,4784:15:15,7067:4:4,7848:1:1,7912:7:8,8150:5:5,213544:1:1,262889:1:1^
 587^13^0^33^34^1434^0.3090^0.1839^13^Guerrier Bloodscalp^1520:1:1,2290:1:1,2592:1:2,3771:1:1,3795:1:1,3901:4:4,3915:2:2,4306:4:7,213547:1:1^
 588^22^0^34^35^1434^0.2536^0.1150^22^Eclaireur Bloodscalp^2592:1:3,2721:1:1,2734:1:1,2735:1:1,3771:1:1,3901:4:4,3915:6:6,4306:7:9,4338:1:1^
@@ -32,14 +32,14 @@ GoldScout-export 9^6pfw5ohsmbc9^39
 873^1^0^37^37^1434^0.2505^0.2256^1^Oracle Selécaille^5796:1:1^
 898^1^0^27^27^1431^0.6694^0.3928^1^Worgen Plaie-de-nuit^^
 923^4^0^23^24^1431^0.5563^0.6299^4^Jeune Ravageur noir^1015:2:2,3301:3:3^
-937^35^0^32^33^1434^0.4524^0.1051^35^Guerrier de la jungle de Kurzen^1707:1:1,1708:1:1,2592:3:5,2742:1:1,2749:1:1,4306:6:8,9824:1:1^
+937^62^0^32^33^1434^0.4500^0.1042^62^Guerrier de la jungle de Kurzen^1707:2:2,1708:1:1,1710:1:1,2592:6:11,2725:1:1,2742:1:1,2749:1:1,3806:1:1,4306:16:22,4338:1:1,9824:1:1,251388:1:1^
 938^14^0^34^35^1434^0.4599^0.0776^14^Commando de Kurzen^1707:3:3,2592:1:2,2725:1:1,2728:1:1,2735:1:1,4306:2:3,7086:1:1,213543:1:1,262888:1:1^
 939^13^0^36^37^1434^0.4839^0.0753^13^Troupe d'élite de Kurzen^1707:1:1,2734:1:1,3779:1:1,4306:7:17,216616:1:1^
-940^38^0^32^33^1434^0.4496^0.1033^38^Guérisseur de Kurzen^1707:3:3,1710:1:1,2592:1:2,2633:15:15,2735:1:1,2740:1:1,2744:1:1,2748:1:1,2750:1:1,3356:1:2,3357:5:5,3358:1:1,3798:1:1,3816:1:1,3817:1:1,3818:1:1,4306:15:26^
+940^62^0^32^33^1434^0.4475^0.1015^62^Guérisseur de Kurzen^1707:3:3,1708:2:2,1710:1:1,1711:1:1,2592:1:2,2633:18:18,2728:1:1,2735:1:1,2740:1:1,2744:2:2,2748:1:1,2750:2:2,3037:1:1,3356:1:2,3357:6:6,3358:2:2,3798:1:1,3816:1:1,3817:1:1,3818:3:3,4306:24:37,7413:1:1,248709:1:1^
 941^9^0^34^35^1434^0.4708^0.0739^9^Réducteur de tête de Kurzen^2633:4:4,2732:1:1,2751:1:1,4306:6:11,248690:1:1^
 942^13^0^36^37^1434^0.4797^0.0681^13^Sorcier-docteur de Kurzen^1707:1:1,2633:5:5,2734:1:1,3778:1:1,3816:1:1,4306:2:4^
-943^9^0^34^34^1434^0.4569^0.0954^9^Fracasseur de Kurzen^1707:1:1,2592:1:3,2749:1:1,4306:1:1^
-976^3^0^32^33^1434^0.4563^0.0948^3^Tigre de guerre de Kurzen^1686:2:2,12202:1:1^
+943^11^0^34^34^1434^0.4575^0.0963^11^Fracasseur de Kurzen^1707:1:1,2592:1:3,2749:1:1,4306:1:1^
+976^4^0^32^33^1434^0.4571^0.0962^4^Tigre de guerre de Kurzen^1686:3:3,12202:1:1^
 977^2^0^32^33^1434^0.4575^0.0957^2^Panthère de guerre de Kurzen^1686:1:1,248690:1:1^
 1034^5^0^26^27^1437^0.4713^0.4566^5^Ecumeur Dragonmaw^2592:1:1,7131:5:10^
 1035^2^0^27^28^1437^0.5111^0.5015^2^Arpenteur Dragonmaw^7131:2:4^
@@ -392,6 +392,7 @@ GoldScout-export 9^6pfw5ohsmbc9^39
 @i^1707^Brie de Hurlevent
 @i^1708^Nectar sucré
 @i^1710^Potion de soins supérieure
+@i^1711^Parchemin d'Endurance II
 @i^1725^Grand sac à dos
 @i^1730^Ceinture usée en mailles
 @i^1731^Bottes usées en mailles
@@ -482,6 +483,7 @@ GoldScout-export 9^6pfw5ohsmbc9^39
 @i^2971^Bottes de lieur de sort
 @i^2976^Gants de chasse
 @i^3012^Parchemin d'Agilité
+@i^3037^Arc courbe souple
 @i^3041^Tromblon Oeil du mage
 @i^3042^BKP petit calibre Moineau
 @i^3156^Bracelet de Glouton
@@ -544,6 +546,7 @@ GoldScout-export 9^6pfw5ohsmbc9^39
 @i^3795^Cape entrelacée
 @i^3798^Protège-épaules entrelacées
 @i^3805^Pantalon en cuir durci
+@i^3806^Protège-épaules en cuir durci
 @i^3815^Haubergeon doublentin
 @i^3816^Ecu réfléchissant
 @i^3817^Targe renforcée
@@ -705,6 +708,7 @@ GoldScout-export 9^6pfw5ohsmbc9^39
 @i^7191^Câble avec fusible
 @i^7293^Gemme de mana de Dalaran
 @i^7351^Bottes de disciple
+@i^7413^Coiffe d'infiltrateur de prophétie
 @i^7462^Ceinturon de chevalier de protection contre les arcanes
 @i^7465^Cimier de chevalier de défense
 @i^7483^Cape de forestier de courroux de la nature
@@ -811,7 +815,9 @@ GoldScout-export 9^6pfw5ohsmbc9^39
 @i^248692^Caisse détournée : minerai d'expert
 @i^248694^Caisse détournée : curiosités d'expert
 @i^248706^Caisse détournée : lingots de compagnon
+@i^248709^Caisse détournée : lingots d'expert
 @i^249880^Recette : thé royal
+@i^251388^Plans : jambières dorées dures
 @i^251961^Granule arcanique
 @i^256036^Poignée de poussière
 @i^256037^Herbes coupées
@@ -921,6 +927,7 @@ GoldScout-export 9^6pfw5ohsmbc9^39
 @q^1707^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
+@q^1711^1:0:0
 @q^1725^1:1:0
 @q^1730^0:4:0
 @q^1731^0:4:0
@@ -1011,6 +1018,7 @@ GoldScout-export 9^6pfw5ohsmbc9^39
 @q^2971^1:4:0
 @q^2976^2:4:0
 @q^3012^1:0:0
+@q^3037^2:2:0
 @q^3041^2:2:0
 @q^3042^2:2:0
 @q^3156^1:12:0
@@ -1073,6 +1081,7 @@ GoldScout-export 9^6pfw5ohsmbc9^39
 @q^3795^0:4:0
 @q^3798^0:4:0
 @q^3805^0:4:0
+@q^3806^0:4:0
 @q^3815^0:4:0
 @q^3816^0:4:0
 @q^3817^0:4:0
@@ -1234,6 +1243,7 @@ GoldScout-export 9^6pfw5ohsmbc9^39
 @q^7191^1:7:1
 @q^7293^1:12:0
 @q^7351^1:4:0
+@q^7413^2:4:0
 @q^7462^2:4:0
 @q^7465^2:4:0
 @q^7483^2:4:0
@@ -1340,7 +1350,9 @@ GoldScout-export 9^6pfw5ohsmbc9^39
 @q^248692^1:0:1
 @q^248694^1:0:1
 @q^248706^2:0:1
+@q^248709^2:0:1
 @q^249880^1:9:0
+@q^251388^2:9:0
 @q^251961^1:12:0
 @q^256036^0:15:0
 @q^256037^0:15:0
@@ -2671,14 +2683,14 @@ GoldScout-export 9^6pfw5ohsmbc9^39
 @a^873^85:1
 @a^898^153:1
 @a^923^250:1,251:2,270:1
-@a^937^28:7,29:5,48:9,49:14
+@a^937^28:20,29:5,48:15,49:22
 @a^938^28:3,29:11
 @a^939^29:13
-@a^940^28:13,29:3,48:9,49:13
+@a^940^28:31,29:3,48:12,49:16
 @a^941^29:9
 @a^942^29:13
-@a^943^29:9
-@a^976^29:3
+@a^943^29:9,49:2
+@a^976^29:3,49:1
 @a^977^29:2
 @a^1034^148:1,169:1,189:3
 @a^1035^190:1,210:1
