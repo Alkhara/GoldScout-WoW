@@ -1,4 +1,4 @@
-GoldScout-export 9^lquk1h27nxuz^29
+GoldScout-export 9^lquk1h27nxuz^30
 92^1^0^40^40^1418^0.4059^0.7846^1^Rock Elemental^4552:1:1^
 669^1^0^42^42^1434^0.4717^0.4383^1^Skullsplitter Hunter^1520:1:1^
 672^5^5^44^44^1434^0.4733^0.4392^5^Skullsplitter Spiritchaser^1520:2:2,2750:1:1,4338:2:3,4599:1:1,8151:2:2^4599:1:1,5428:1:1
@@ -100,6 +100,7 @@ GoldScout-export 9^lquk1h27nxuz^29
 6194^3^5^48^49^1447^0.3787^0.5550^3^Spitelash Serpent Guard^4419:1:1,7973:1:1,280608:1:1^3928:2:2,5435:1:1,7910:1:1
 6195^9^2^51^52^1447^0.4467^0.5847^9^Spitelash Siren^4425:1:1,7973:5:5,252932:1:1,280608:7:7^
 6196^2^1^50^51^1447^0.4982^0.6136^2^Spitelash Myrmidon^7973:2:2,280608:1:1^
+7099^1^0^51^51^1448^0.4152^0.5341^1^Ironbeak Hunter^12207:1:1^
 7246^12^8^0^0^0^0.0000^0.0000^0^^1520:1:1,3964:1:1,4306:1:2,9523:4:4,15380:1:1^4599:1:1,16884:1:1
 7247^1^0^0^0^0^0.0000^0.0000^0^^^
 7267^1^0^0^0^0^0.0000^0.0000^0^^9478:1:1,254102:1:1^
@@ -137,6 +138,7 @@ GoldScout-export 9^lquk1h27nxuz^29
 8759^8^0^45^47^1447^0.2091^0.5859^8^Mosshoof Runner^5120:6:6,5471:6:6,5566:1:1,238463:5:5^
 8877^1^1^0^0^0^0.0000^0.0000^0^^^
 9396^1^0^41^41^1446^0.5560^0.2612^1^Ground Pounder^4784:1:1^
+9878^1^0^51^51^1448^0.4382^0.4304^1^Entropic Beast^3857:1:1,7068:1:1^
 10082^1^1^0^0^0^0.0000^0.0000^0^^12470:1:1^
 11559^1^0^40^40^2652^0.3227^0.2731^1^Outcast Necromancer^260347:1:1^
 11560^1^0^38^39^2652^0.3487^0.2546^1^Centaur Spectre^^
@@ -218,6 +220,7 @@ GoldScout-export 9^lquk1h27nxuz^29
 @i^3804^Hardened Leather Gloves
 @i^3820^Stranglekelp
 @i^3827^Mana Potion
+@i^3857^Coal
 @i^3864^Citrine
 @i^3927^Fine Aged Cheddar
 @i^3928^Superior Healing Potion
@@ -282,6 +285,7 @@ GoldScout-export 9^lquk1h27nxuz^29
 @i^6438^Dull Elemental Bracer
 @i^6444^Forked Tongue
 @i^6826^Brilliant Scale
+@i^7068^Elemental Fire
 @i^7069^Elemental Air
 @i^7440^Sentinel Trousers of the Elder
 @i^7456^Knight's Headguard of the Beast
@@ -341,6 +345,7 @@ GoldScout-export 9^lquk1h27nxuz^29
 @i^12037^Mystery Meat
 @i^12202^Tiger Meat
 @i^12203^Red Wolf Meat
+@i^12207^Giant Egg
 @i^12208^Tender Wolf Meat
 @i^12470^Sandstalker Ankleguards
 @i^13132^Skeletal Shoulders
@@ -437,6 +442,7 @@ GoldScout-export 9^lquk1h27nxuz^29
 @q^3804^0:4:0
 @q^3820^1:7:1
 @q^3827^1:0:0
+@q^3857^1:7:1
 @q^3864^2:7:1
 @q^3927^1:0:0
 @q^3928^1:0:0
@@ -501,6 +507,7 @@ GoldScout-export 9^lquk1h27nxuz^29
 @q^6438^0:15:0
 @q^6444^0:15:0
 @q^6826^0:15:0
+@q^7068^1:7:1
 @q^7069^1:7:1
 @q^7440^2:4:0
 @q^7456^2:4:0
@@ -560,6 +567,7 @@ GoldScout-export 9^lquk1h27nxuz^29
 @q^12037^1:7:1
 @q^12202^1:7:1
 @q^12203^1:7:1
+@q^12207^1:7:1
 @q^12208^1:7:1
 @q^12470^3:4:0
 @q^13132^3:4:0
@@ -640,6 +648,7 @@ GoldScout-export 9^lquk1h27nxuz^29
 @m^1445^Dustwallow Marsh
 @m^1446^Tanaris
 @m^1447^Azshara
+@m^1448^Felwood
 @m^1453^Stormwind City
 @m^2548^Riverglades
 @m^2652^Shen'dralas
@@ -2074,6 +2083,7 @@ GoldScout-export 9^lquk1h27nxuz^29
 @a^6194^188:1,206:1,247:1
 @a^6195^207:2,208:1,229:2,247:1,249:2,250:1
 @a^6196^229:1,270:1
+@a^7099^208:1
 @a^7847^151:1
 @a^7855^194:9
 @a^7856^194:4,195:5
@@ -2089,6 +2099,7 @@ GoldScout-export 9^lquk1h27nxuz^29
 @a^8212^209:1
 @a^8759^203:2,204:1,223:1,244:4
 @a^9396^111:1
+@a^9878^168:1
 @a^11559^106:1
 @a^11560^106:1
 @a^11561^46:3,67:1,86:1,105:4,106:1,126:4,127:4
@@ -2167,6 +2178,7 @@ GoldScout-export 9^lquk1h27nxuz^29
 @t^7886^2:417
 @t^8212^1:95
 @t^8759^8:447
+@t^9878^1:71
 @t^12922^2:170
 @t^236028^5:398
 @t^239942^2:331

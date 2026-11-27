@@ -1,4 +1,4 @@
-GoldScout-export 9^01brebf605sh^34
+GoldScout-export 9^01brebf605sh^35
 127^1^0^18^18^1436^0.3549^0.8378^1^Murloc Tidehunter^730:1:1^
 1527^2^0^8^8^1420^0.6781^0.4174^2^Hungering Dead^^
 1528^4^0^8^9^1420^0.6782^0.4243^4^Shambling Horror^2589:2:3^
@@ -25,6 +25,8 @@ GoldScout-export 9^01brebf605sh^34
 1868^4^0^13^13^1421^0.5303^0.3540^4^Ravenclaw Servant^1511:1:1,2589:3:8^
 1869^2^0^14^14^1421^0.5367^0.3552^2^Ravenclaw Champion^^
 1870^1^0^15^16^1421^0.5678^0.3428^1^Hand of Ravenclaw^^
+1888^5^0^18^19^1421^0.6153^0.7482^5^Dalaran Watcher^858:1:1,2589:2:5,2592:1:1,6552:1:1,9775:1:1^
+1889^7^0^19^20^1421^0.6509^0.7601^7^Dalaran Wizard^858:2:2,2592:3:4^
 1891^2^0^13^14^1421^0.4724^0.7247^2^Pyrewood Watcher^2589:2:8^
 1894^1^0^15^15^1421^0.4590^0.7315^1^Pyrewood Sentry^818:1:1^
 1909^1^0^19^19^1421^0.6768^0.4893^1^Vile Fin Lakestalker^5784:1:1^
@@ -36,9 +38,12 @@ GoldScout-export 9^01brebf605sh^34
 1957^5^0^16^17^1421^0.7626^0.3250^5^Vile Fin Shorecreeper^730:1:1,5523:3:3,5784:1:1^
 1958^10^0^17^18^1421^0.7647^0.3200^10^Vile Fin Tidecaller^730:2:2,1787:1:1,3258:1:1,5523:6:6,5784:1:1^
 1971^1^0^13^13^1421^0.5178^0.1384^1^Ivar the Foul^3621:1:1^
+1973^12^0^20^21^1421^0.5905^0.7093^12^Ravenclaw Guardian^2589:1:1,2592:2:3,271343:2:2,271350:1:1^
+1974^6^0^19^20^1421^0.5948^0.7173^6^Ravenclaw Drudger^1210:1:1,2592:1:2,4605:1:1,7364:1:1,11981:1:1^
 1983^1^0^14^14^1421^0.4588^0.2096^1^Nightlash^3622:1:1^
 2061^1^0^13^13^1421^0.4658^0.7418^1^Councilman Thatcher^1734:1:1^
 2068^1^0^15^15^1421^0.4648^0.7458^1^Lord Mayor Morrison^3643:1:1^
+2283^1^0^22^22^1421^0.5813^0.6998^1^Ravenclaw Regent^6576:1:1^
 2529^4^0^0^0^0^0.0000^0.0000^0^^929:1:1,1772:1:1^
 2967^1^0^9^9^1412^0.6189^0.6264^1^Galak Centaur^^
 2968^1^0^9^10^1412^0.6202^0.6326^1^Galak Outrunner^2589:1:2^
@@ -458,9 +463,11 @@ GoldScout-export 9^01brebf605sh^34
 @i^6472^Stinging Viper
 @i^6511^Journeyman's Robe
 @i^6543^Willow Bracers of the Sorcerer
+@i^6552^Bard's Tunic of Arcane Protection
 @i^6557^Bard's Boots of the Falcon
 @i^6558^Bard's Belt of the Whale
 @i^6567^Shimmering Armor of the Sorcerer
+@i^6576^Defender Girdle of Agility
 @i^6577^Defender Gauntlets of Spirit
 @i^6579^Defender Spaulders
 @i^6582^Scouting Boots of Spirit
@@ -469,6 +476,7 @@ GoldScout-export 9^01brebf605sh^34
 @i^6661^Recipe: Savory Deviate Delight
 @i^6826^Brilliant Scale
 @i^7090^Pattern: Green Silk Armor
+@i^7364^Pattern: Heavy Earthen Gloves
 @i^9738^Gem of Cobrahn
 @i^9739^Gem of Anacondra
 @i^9740^Gem of Pythas
@@ -479,6 +487,7 @@ GoldScout-export 9^01brebf605sh^34
 @i^9763^Cadet Leggings of the Whale
 @i^9764^Cadet Shield of the Defender
 @i^9768^Greenweave Bracers of Arcane Wrath
+@i^9775^Bandit Cinch of the Monkey
 @i^9777^Bandit Bracers of the Boar
 @i^9786^Raider's Cloak of the Boar
 @i^10338^Fresh Zhevra Carcass
@@ -489,6 +498,7 @@ GoldScout-export 9^01brebf605sh^34
 @i^11081^Formula: Enchant Shield - Lesser Protection
 @i^11391^Spined Bat Wing
 @i^11406^Rotting Bear Carcass
+@i^11981^Lead Band of Agility
 @i^12223^Meaty Bat Wing
 @i^12977^Magefist Gloves
 @i^13245^Kresh's Back
@@ -565,6 +575,8 @@ GoldScout-export 9^01brebf605sh^34
 @i^271210^Tuskwrap Belt
 @i^271212^Bloodied Chestwraps
 @i^271214^Rotmender's Treads
+@i^271343^Note Scrap
+@i^271350^Tortured Soul
 @i^272996^Trogg Scepter
 @i^272999^Barbaric Crossbow
 @i^273007^Chasm Walkers
@@ -818,9 +830,11 @@ GoldScout-export 9^01brebf605sh^34
 @q^6472^3:2:0
 @q^6511^2:4:0
 @q^6543^2:4:0
+@q^6552^2:4:0
 @q^6557^2:4:0
 @q^6558^2:4:0
 @q^6567^2:4:0
+@q^6576^2:4:0
 @q^6577^2:4:0
 @q^6579^1:4:0
 @q^6582^2:4:0
@@ -829,6 +843,7 @@ GoldScout-export 9^01brebf605sh^34
 @q^6661^2:9:0
 @q^6826^0:15:0
 @q^7090^2:9:0
+@q^7364^2:9:0
 @q^9738^1:12:0
 @q^9739^1:12:0
 @q^9740^1:12:0
@@ -839,6 +854,7 @@ GoldScout-export 9^01brebf605sh^34
 @q^9763^2:4:0
 @q^9764^2:4:0
 @q^9768^2:4:0
+@q^9775^2:4:0
 @q^9777^2:4:0
 @q^9786^2:4:0
 @q^10338^1:12:0
@@ -849,6 +865,7 @@ GoldScout-export 9^01brebf605sh^34
 @q^11081^2:9:0
 @q^11391^0:15:0
 @q^11406^0:15:0
+@q^11981^2:4:0
 @q^12223^1:7:1
 @q^12977^3:4:0
 @q^13245^3:4:0
@@ -925,6 +942,8 @@ GoldScout-export 9^01brebf605sh^34
 @q^271210^3:4:0
 @q^271212^3:4:0
 @q^271214^3:4:0
+@q^271343^1:15:0
+@q^271350^1:12:0
 @q^272996^3:2:0
 @q^272999^3:2:0
 @q^273007^3:4:0
@@ -1340,6 +1359,8 @@ GoldScout-export 9^01brebf605sh^34
 @a^1868^130:1,150:2,151:1
 @a^1869^150:2
 @a^1870^131:1
+@a^1888^292:3,311:1,312:1
+@a^1889^292:2,312:2,313:3
 @a^1891^289:2
 @a^1894^289:1
 @a^1909^193:1
@@ -1351,9 +1372,12 @@ GoldScout-export 9^01brebf605sh^34
 @a^1957^135:5
 @a^1958^115:2,135:8
 @a^1971^50:1
+@a^1973^271:1,291:11
+@a^1974^271:1,291:2,292:3
 @a^1983^89:1
 @a^2061^289:1
 @a^2068^289:1
+@a^2283^271:1
 @a^2967^252:1
 @a^2968^252:1
 @a^3115^109:1
@@ -1467,6 +1491,10 @@ GoldScout-export 9^01brebf605sh^34
 @a^274300^283:1
 @a^276020^176:1
 @a^277882^50:1
+@t^1888^4:499
+@t^1889^7:356
+@t^1973^2:98
+@t^1974^4:136
 @t^3239^5:435
 @t^3247^1:228
 @t^3257^1:118

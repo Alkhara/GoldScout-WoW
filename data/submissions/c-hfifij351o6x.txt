@@ -1,4 +1,4 @@
-GoldScout-export 9^hfifij351o6x^55
+GoldScout-export 9^hfifij351o6x^56
 92^6^0^39^40^1418^0.3294^0.6647^6^Rock Elemental^4042:1:1,4553:3:3,4627:4:4,4784:1:1,7912:1:1,8150:1:1^
 587^8^0^33^34^1434^0.3057^0.1886^8^Bloodscalp Warrior^1519:1:1,1520:1:1,2749:1:1,3901:2:2,3915:5:5,4306:4:5^
 588^8^0^34^35^1434^0.2457^0.1184^8^Bloodscalp Scout^3771:1:1,3786:1:1,3809:1:1,3901:2:2,3915:3:3,4306:3:5^
@@ -228,7 +228,10 @@ GoldScout-export 9^hfifij351o6x^55
 5649^13^0^0^0^0^0.0000^0.0000^0^^1520:2:2,4306:3:4,4599:2:2,8390:1:1,9523:3:3,14262:1:1,14432:1:1,14905:1:1,248712:1:1^
 5650^16^0^0^0^0^0.0000^0.0000^0^^1520:4:4,3928:1:1,4001:1:1,4306:1:2,4338:3:8,4424:1:1,8194:1:1,9523:5:5,15167:1:1^
 5991^1^0^51^52^1419^0.5041^0.3807^1^Redstone Crystalhide^11388:1:1^
-5993^2^0^52^53^1419^0.5173^0.3912^2^Helboar^2295:2:2,8392:1:1^
+5993^3^0^52^53^1419^0.5043^0.3768^3^Helboar^2295:2:2,3403:1:1,8392:2:2^
+6004^16^0^51^52^1419^0.6657^0.3124^16^Shadowsworn Cultist^8085:1:1,8766:1:1,13446:2:2,14047:4:8^
+6005^15^0^52^53^1419^0.6610^0.3151^15^Shadowsworn Thug^10074:1:1,10172:1:1,10593:1:1^
+6006^9^0^52^53^1419^0.6586^0.3329^9^Shadowsworn Adept^8766:1:1,8952:1:1,14047:3:4^
 6239^2^0^40^40^1416^0.8058^0.6087^2^Cyclonian^6894:1:1^
 6733^1^0^39^40^1418^0.6443^0.4357^1^Stonevault Basher^5797:1:1^
 6906^1^0^0^0^0^0.0000^0.0000^0^^9399:1:151,9400:1:1^
@@ -473,7 +476,7 @@ GoldScout-export 9^hfifij351o6x^55
 263886^1^0^0^0^0^0.0000^0.0000^0^^^
 263899^2^0^0^0^0^0.0000^0.0000^0^^4306:1:3^
 264773^1^0^0^0^1415^0.0000^0.0000^0^^286429:1:1^
-264850^1^0^35^48^1434^0.4908^0.0819^1^Hawk^^
+264850^1^0^0^0^1434^0.4908^0.0819^1^Hawk^^
 268321^1^0^0^0^0^0.0000^0.0000^0^^3800:1:1^
 268831^1^0^39^40^2548^0.6876^0.3624^1^Plains Prowler^4582:1:1^
 269134^1^0^0^0^0^0.0000^0.0000^0^^^
@@ -760,6 +763,7 @@ GoldScout-export 9^hfifij351o6x^55
 @i^7912^Solid Stone
 @i^8009^Dentrium Power Stone
 @i^8052^An'Alleum Power Stone
+@i^8085^Light Plate Pants
 @i^8146^Wicked Claw
 @i^8150^Deeprock Salt
 @i^8151^Flask of Mojo
@@ -783,7 +787,9 @@ GoldScout-export 9^hfifij351o6x^55
 @i^8707^Gahz'rilla's Electrified Scale
 @i^8723^Caliph Scorpidsting's Head
 @i^8749^Crochet Hat
+@i^8766^Morning Glory Dew
 @i^8831^Purple Lotus
+@i^8952^Roasted Quail
 @i^8973^Thick Yeti Hide
 @i^9234^Tiara of the Deep
 @i^9237^Woodpaw Gnoll Mane
@@ -814,10 +820,13 @@ GoldScout-export 9^hfifij351o6x^55
 @i^9872^Renegade Pauldrons of the Whale
 @i^9892^Huntsman's Gloves of Nature's Wrath
 @i^9927^Brigade Bracers of Spirit
+@i^10074^Righteous Leggings of Intellect
+@i^10172^Mystical Mantle of the Whale
 @i^10286^Heart of the Wild
 @i^10302^Pattern: Red Mageweave Pants
 @i^10420^Skull of the Coldbringer
 @i^10573^Boneslasher
+@i^10593^Imperfect Draenethyst Fragment
 @i^10605^Schematic: Spellpower Goggles Xtreme
 @i^10660^First Mosh'aru Tablet
 @i^10661^Second Mosh'aru Tablet
@@ -846,6 +855,8 @@ GoldScout-export 9^hfifij351o6x^55
 @i^12206^Tender Crab Meat
 @i^12208^Tender Wolf Meat
 @i^13068^Obsidian Greaves
+@i^13446^Major Healing Potion
+@i^14047^Runecloth
 @i^14241^Darkmist Handguards of Fire Protection
 @i^14255^Lunar Belt of Intellect
 @i^14262^Bloodwoven Mitts of the Sorcerer
@@ -1283,6 +1294,7 @@ GoldScout-export 9^hfifij351o6x^55
 @q^7912^1:7:1
 @q^8009^1:12:0
 @q^8052^1:12:0
+@q^8085^0:4:0
 @q^8146^1:7:1
 @q^8150^1:7:1
 @q^8151^1:7:1
@@ -1306,7 +1318,9 @@ GoldScout-export 9^hfifij351o6x^55
 @q^8707^1:12:0
 @q^8723^1:12:0
 @q^8749^0:4:0
+@q^8766^1:0:0
 @q^8831^1:7:1
+@q^8952^1:0:0
 @q^8973^1:12:0
 @q^9234^1:12:0
 @q^9237^1:12:0
@@ -1337,10 +1351,13 @@ GoldScout-export 9^hfifij351o6x^55
 @q^9872^2:4:0
 @q^9892^2:4:0
 @q^9927^2:4:0
+@q^10074^2:4:0
+@q^10172^2:4:0
 @q^10286^1:7:1
 @q^10302^2:9:0
 @q^10420^1:12:0
 @q^10573^3:2:0
+@q^10593^2:12:0
 @q^10605^3:9:0
 @q^10660^1:12:0
 @q^10661^1:12:0
@@ -1369,6 +1386,8 @@ GoldScout-export 9^hfifij351o6x^55
 @q^12206^1:7:1
 @q^12208^1:7:1
 @q^13068^3:4:0
+@q^13446^1:0:0
+@q^14047^1:7:1
 @q^14241^2:4:0
 @q^14255^2:4:0
 @q^14262^2:4:0
@@ -1896,7 +1915,10 @@ GoldScout-export 9^hfifij351o6x^55
 @a^5618^91:1,92:4,112:1,132:4
 @a^5623^132:1,151:3,152:2
 @a^5991^150:1
-@a^5993^150:2
+@a^5993^129:1,150:2
+@a^6004^113:3,132:4,133:9
+@a^6005^91:1,113:1,132:1,133:11,172:1
+@a^6006^113:2,132:1,133:4,172:2
 @a^6239^236:1,255:1
 @a^6733^172:1
 @a^7327^290:1

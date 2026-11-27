@@ -1,4 +1,4 @@
-GoldScout-export 9^lpz73nc36yam^62
+GoldScout-export 9^lpz73nc36yam^63
 92^1^0^39^39^1418^0.1639^0.3569^1^Rock Elemental^7848:1:1^
 588^22^4^34^35^1434^0.2506^0.1119^22^Bloodscalp Scout^1519:3:3,2725:1:1,2740:1:1,2742:1:1,3771:1:1,3786:1:1,3901:3:3,3915:5:5,4306:6:9^
 595^18^4^34^35^1434^0.2494^0.1099^18^Bloodscalp Hunter^1519:2:2,1708:1:1,2592:1:1,2728:1:1,3778:1:1,3901:1:1,3915:3:3,4306:4:5^5427:1:1,16883:1:1
@@ -165,7 +165,9 @@ GoldScout-export 9^lpz73nc36yam^62
 4715^3^0^35^36^1443^0.2952^0.0748^3^Slitherblade Razortail^7072:1:1,17057:1:1,17058:1:1^
 4723^1^0^38^38^1434^0.4272^0.1853^1^Foreman Cozzle^5851:1:1^
 4834^5^4^35^36^1445^0.3946^0.2750^5^Theramore Infiltrator^4306:1:2,4338:1:1^
-4846^2^0^35^35^1418^0.3726^0.1674^2^Shadowforge Digger^1708:1:1,4306:1:2,8052:1:1^
+4844^6^0^35^36^1418^0.4002^0.1249^6^Shadowforge Surveyor^2836:1:3,3807:1:1,3812:1:1,4306:1:1,4338:1:2,4544:1:1,7666:1:1,8052:1:1^
+4845^5^0^36^37^1418^0.3700^0.1376^5^Shadowforge Ruffian^4306:3:10,7666:1:1,8052:1:1,9851:1:1^
+4846^4^0^35^36^1418^0.3854^0.1651^4^Shadowforge Digger^1708:1:1,4306:1:2,8009:1:1,8052:2:2^
 4851^2^0^36^37^1418^0.3762^0.1805^2^Stonevault Rockchewer^7666:1:1^
 5044^1^2^36^36^1445^0.4252^0.3816^1^Theramore Skirmisher^1707:1:1^
 5045^0^1^36^36^0^0.0000^0.0000^0^Private Hallan^^4539:1:1
@@ -353,6 +355,7 @@ GoldScout-export 9^lpz73nc36yam^62
 @i^2785^Stiff Recurve Bow
 @i^2797^Heart of Mokk
 @i^2799^Gorilla Fang
+@i^2836^Coarse Stone
 @i^2940^Bloody Bear Paw
 @i^3010^Fine Sand
 @i^3053^Humbert's Chestpiece
@@ -391,7 +394,9 @@ GoldScout-export 9^lpz73nc36yam^62
 @i^3802^Hardened Leather Bracers
 @i^3803^Hardened Cloak
 @i^3804^Hardened Leather Gloves
+@i^3807^Hardened Leather Tunic
 @i^3808^Double Mail Belt
+@i^3812^Double Mail Gloves
 @i^3814^Double Mail Shoulderpads
 @i^3827^Mana Potion
 @i^3831^Recipe: Troll's Blood Elixir
@@ -528,6 +533,7 @@ GoldScout-export 9^lpz73nc36yam^62
 @i^7848^Rock Elemental Shard
 @i^7909^Aquamarine
 @i^7912^Solid Stone
+@i^8009^Dentrium Power Stone
 @i^8052^An'Alleum Power Stone
 @i^8146^Wicked Claw
 @i^8150^Deeprock Salt
@@ -542,6 +548,7 @@ GoldScout-export 9^lpz73nc36yam^62
 @i^9287^Field Plate Gauntlets of the Bear
 @i^9294^Recipe: Wildvine Potion
 @i^9355^Hoop Earring
+@i^9851^Conjurer's Breeches of the Whale
 @i^9861^Archer's Gloves of the Bandit
 @i^9870^Renegade Circlet of the Monkey
 @i^9871^Renegade Leggings of the Beast
@@ -731,6 +738,7 @@ GoldScout-export 9^lpz73nc36yam^62
 @q^2785^0:2:0
 @q^2797^1:12:0
 @q^2799^1:12:0
+@q^2836^1:7:1
 @q^2940^0:15:0
 @q^3010^0:15:0
 @q^3053^2:4:0
@@ -769,7 +777,9 @@ GoldScout-export 9^lpz73nc36yam^62
 @q^3802^0:4:0
 @q^3803^0:4:0
 @q^3804^0:4:0
+@q^3807^0:4:0
 @q^3808^0:4:0
+@q^3812^0:4:0
 @q^3814^0:4:0
 @q^3827^1:0:0
 @q^3831^1:9:0
@@ -906,6 +916,7 @@ GoldScout-export 9^lpz73nc36yam^62
 @q^7848^1:12:0
 @q^7909^2:7:1
 @q^7912^1:7:1
+@q^8009^1:12:0
 @q^8052^1:12:0
 @q^8146^1:7:1
 @q^8150^1:7:1
@@ -920,6 +931,7 @@ GoldScout-export 9^lpz73nc36yam^62
 @q^9287^2:4:0
 @q^9294^2:9:0
 @q^9355^0:15:0
+@q^9851^2:4:0
 @q^9861^2:4:0
 @q^9870^2:4:0
 @q^9871^2:4:0
@@ -2216,7 +2228,9 @@ GoldScout-export 9^lpz73nc36yam^62
 @a^4715^25:2,26:1
 @a^4723^68:1
 @a^4834^87:1,107:2,108:1,127:1
-@a^4846^47:1,67:1
+@a^4844^47:4,49:1,68:1
+@a^4845^46:1,47:2,48:1,67:1
+@a^4846^47:1,67:2,68:1
 @a^4851^67:2
 @a^5044^148:1
 @a^7327^290:2
@@ -2315,6 +2329,8 @@ GoldScout-export 9^lpz73nc36yam^62
 @a^270664^247:2
 @a^270667^249:2,270:6,290:8
 @t^4676^1:3
+@t^4844^1:81
+@t^4845^3:293
 @t^11577^1:55
 @t^11937^6:846
 @t^269254^1:113
