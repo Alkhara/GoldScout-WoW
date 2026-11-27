@@ -1,4 +1,5 @@
-GoldScout-export 7^zi0tgbllhl23^3
+GoldScout-export 7^zi0tgbllhl23^4
+1693^3^0^14^15^1432^0.5542^0.3713^3^Crocilisque du loch^2924:2:2,3181:2:2,3401:2:2^
 2240^8^0^32^33^1416^0.5730^0.6711^8^Détrousseuse du Syndicat^1708:1:1,2592:1:2,4306:4:5,5113:1:1^
 2241^6^0^33^34^1416^0.5755^0.6811^6^Larronnesse du Syndicat^4306:3:4,5113:2:2^
 2248^17^0^30^31^1424^0.4475^0.2830^17^Yéti des grottes^1786:1:1,1827:1:1,1830:1:1,3720:8:8,3771:1:1,8747:1:1^
@@ -78,8 +79,11 @@ GoldScout-export 7^zi0tgbllhl23^3
 @i^2289^Parchemin de Force II
 @i^2592^Etoffe de laine
 @i^2843^Articulation sale
+@i^2924^Viande de crocilisque
 @i^3176^Petite griffe
+@i^3181^Viande partiellement digérée
 @i^3385^Potion de mana inférieure
+@i^3401^Ecaille de crocilisque grossière
 @i^3404^Aile de busard
 @i^3658^Tome retrouvé
 @i^3703^Bière d'Austrivage
@@ -90,6 +94,7 @@ GoldScout-export 7^zi0tgbllhl23^3
 @i^3785^Hache funèbre
 @i^3792^Ceinture entrelacée
 @i^3802^Brassards en cuir durci
+@i^3820^Etouffante
 @i^4093^Grande queue de basilic
 @i^4306^Etoffe de soie
 @i^4338^Etoffe de tisse-mage
@@ -127,6 +132,7 @@ GoldScout-export 7^zi0tgbllhl23^3
 @i^17056^Plume légère
 @i^17057^Ecailles de poisson brillantes
 @i^17058^Huile de poisson
+@i^20709^Rhum doux de Rumsey
 @i^213547^Parchemin : ELLUQE PÉÉE
 @i^216483^Massette fânécorce
 @i^248687^Caisse détournée : minerai de compagnon
@@ -149,8 +155,11 @@ GoldScout-export 7^zi0tgbllhl23^3
 @q^2289^1:0:0
 @q^2592^1:7:1
 @q^2843^1:12:0
+@q^2924^1:7:1
 @q^3176^0:15:0
+@q^3181^0:15:0
 @q^3385^1:0:0
+@q^3401^0:15:0
 @q^3404^1:7:1
 @q^3658^1:12:0
 @q^3703^1:0:0
@@ -161,6 +170,7 @@ GoldScout-export 7^zi0tgbllhl23^3
 @q^3785^0:2:0
 @q^3792^0:4:0
 @q^3802^0:4:0
+@q^3820^1:7:1
 @q^4093^0:15:0
 @q^4306^1:7:1
 @q^4338^1:7:1
@@ -198,6 +208,7 @@ GoldScout-export 7^zi0tgbllhl23^3
 @q^17056^1:15:1
 @q^17057^1:15:0
 @q^17058^1:15:0
+@q^20709^1:0:0
 @q^213547^1:0:0
 @q^216483^1:0:0
 @q^248687^1:0:1
@@ -208,6 +219,8 @@ GoldScout-export 7^zi0tgbllhl23^3
 @m^1416^Montagnes d'Alterac
 @m^1417^Hautes-terres d'Arathi
 @m^1424^Contreforts de Hautebrande
+@m^1432^Loch Modan
+@m^1439^Sombrivage
 @m^1442^Les Serres-Rocheuses
 @m^1443^Désolace
 @c^2300^
@@ -806,6 +819,7 @@ GoldScout-export 7^zi0tgbllhl23^3
 @c^279969^
 @c^279978^
 @c^279979^
+@a^1693^150:1,151:2
 @a^2240^271:7,291:1
 @a^2241^271:6
 @a^2248^108:12,128:1,129:4
@@ -870,6 +884,7 @@ GoldScout-export 7^zi0tgbllhl23^3
 @a^11576^251:1,253:1,273:1
 @a^12369^25:1
 @a^13019^131:1
+@t^1693^2:89
 @t^2240^5:148
 @t^2248^16:604
 @t^2249^5:225
@@ -918,4 +933,5 @@ GoldScout-export 7^zi0tgbllhl23^3
 @t^11563^3:70
 @t^11576^2:135
 @t^13019^1:28
+@f^1439^0^4^110^3820:2:3,20709:2:3^166:4
 @l^0^frFR
