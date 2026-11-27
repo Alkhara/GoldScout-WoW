@@ -1,22 +1,65 @@
-GoldScout-export 9^xloe261q6rfa^4
+GoldScout-export 9^xloe261q6rfa^6
 1562^1^0^41^41^1434^0.2995^0.7279^1^Bloodsail Mage^^
 2356^1^0^25^25^1424^0.7836^0.5556^1^Elder Gray Bear^11406:1:1^
+250873^11^0^1^1^2521^0.4415^0.2560^11^Juvenile Vuldren^1372:1:1,1376:1:1,2211:1:1,2654:1:1,2672:3:3,3365:1:1,4865:6:6,7073:3:3,7074:6:6^
+251143^2^0^2^3^2521^0.4692^0.2112^2^Roiling Winds^251930:1:1,251931:1:1^
+251160^2^0^3^3^2521^0.4682^0.1999^2^Al'Aketh Convert^1370:1:1,2589:1:1,4540:1:1,251924:1:1^
+251169^8^0^1^1^2521^0.4564^0.2615^8^Pesky Cirrusfly^1378:1:1,2650:1:1,251927:4:4,251928:4:4^
+@i^1370^Ragged Leather Bracers
+@i^1372^Ragged Cloak
+@i^1376^Frayed Cloak
+@i^1378^Frayed Pants
+@i^2211^Bent Large Shield
+@i^2589^Linen Cloth
+@i^2650^Flimsy Chain Boots
+@i^2654^Flimsy Chain Pants
+@i^2672^Stringy Wolf Meat
+@i^3365^Frayed Bracers
+@i^4540^Tough Hunk of Bread
 @i^4603^Raw Spotted Yellowtail
+@i^4865^Ruined Pelt
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
 @i^6362^Raw Rockscale Cod
+@i^7073^Broken Fang
+@i^7074^Chipped Claw
 @i^11406^Rotting Bear Carcass
 @i^13422^Stonescale Eel
 @i^21151^Rumsey Rum Black Label
+@i^251924^Signet of Akir
+@i^251927^Chipped Cirrusfly Stinger
+@i^251928^Torn Insect Wing
+@i^251930^Minor Essence of the Four Winds
+@i^251931^Depleted Windstone
+@q^1370^0:4:0
+@q^1372^0:4:0
+@q^1376^0:4:0
+@q^1378^0:4:0
+@q^2211^0:4:0
+@q^2589^1:7:1
+@q^2650^0:4:0
+@q^2654^0:4:0
+@q^2672^1:7:1
+@q^3365^0:4:0
+@q^4540^1:0:0
 @q^4603^1:7:1
+@q^4865^0:15:0
 @q^6358^1:7:1
 @q^6359^1:7:1
 @q^6362^1:7:1
+@q^7073^0:15:0
+@q^7074^0:15:0
 @q^11406^0:15:0
 @q^13422^1:7:1
 @q^21151^1:0:0
+@q^251924^1:12:0
+@q^251927^0:15:0
+@q^251928^0:15:0
+@q^251930^0:15:0
+@q^251931^0:15:0
 @m^1424^Hillsbrad Foothills
 @m^1434^Stranglethorn Vale
+@m^2521^Zephras Isle
 @c^118^
 @c^724^
 @c^733^
@@ -935,5 +978,13 @@ GoldScout-export 9^xloe261q6rfa^4
 @c^286152^
 @a^1562^285:1
 @a^2356^235:1
+@a^250873^88:1,89:2,108:8
+@a^251143^89:2
+@a^251160^69:1,89:1
+@a^251169^108:2,109:6
+@t^250873^8:277
+@t^251143^2:61
+@t^251160^2:50
+@t^251169^8:189
 @f^1434^0^178^191^4603:40:40,6358:22:22,6359:17:17,6362:93:93,13422:5:8,21151:1:1^285:1,305:177
 @l^0^enUS

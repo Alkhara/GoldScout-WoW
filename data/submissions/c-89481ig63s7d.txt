@@ -1,4 +1,4 @@
-GoldScout-export 6^89481ig63s7d^68
+GoldScout-export 6^89481ig63s7d^69
 92^3^0^39^40^1418^0.1393^0.3483^3^Rock Elemental^4553:1:1,4627:3:3,4784:2:2,7912:1:1,8150:2:2^
 441^1^0^17^18^1433^0.6105^0.7508^1^Black Dragon Whelp^818:1:1^
 505^1^0^20^20^1433^0.4720^0.4558^1^Greater Tarantula^3931:1:1^
@@ -44,6 +44,9 @@ GoldScout-export 6^89481ig63s7d^68
 2906^0^1^35^37^0^0.0000^0.0000^0^Dustbelcher Warrior^^16883:1:1
 2919^1^0^45^45^1418^0.2624^0.4604^1^Fam'retor Guardian^4784:1:1,4847:1:1,7912:1:2^
 3560^5^0^33^40^1418^0.4960^0.6991^1^Healing Ward^^
+3696^1^0^30^30^1440^0.5471^0.7953^1^Ran Bloodtooth^5388:1:1^
+3928^1^0^20^20^1440^0.7779^0.6855^1^Rotting Slime^3669:1:1,3670:1:1^
+3932^3^0^27^28^1440^0.5569^0.7660^3^Bloodtooth Guard^4306:1:2^
 4401^1^0^40^40^1445^0.5607^0.4334^1^Muckshell Clacker^^
 4639^1^0^32^32^1443^0.6639^0.7553^1^Magram Outrunner^^
 4640^1^0^34^34^1443^0.7006^0.7463^1^Magram Wrangler^^
@@ -162,6 +165,8 @@ GoldScout-export 6^89481ig63s7d^68
 @i^3403^Ivory Boar Tusk
 @i^3404^Buzzard Wing
 @i^3667^Tender Crocolisk Meat
+@i^3669^Gelatinous Goo
+@i^3670^Large Slimy Bone
 @i^3671^Lifeless Skull
 @i^3771^Wild Hog Shank
 @i^3783^Light Scimitar
@@ -224,6 +229,7 @@ GoldScout-export 6^89481ig63s7d^68
 @i^5254^Rugged Spaulders
 @i^5373^Lucky Charm
 @i^5374^Small Pocket Watch
+@i^5388^Ran Bloodtooth's Skull
 @i^5427^Crude Pocket Watch
 @i^5428^An Exotic Cookbook
 @i^5429^A Pretty Rock
@@ -385,6 +391,8 @@ GoldScout-export 6^89481ig63s7d^68
 @q^3403^0:15:0
 @q^3404^1:7:1
 @q^3667^1:7:1
+@q^3669^0:15:0
+@q^3670^0:15:0
 @q^3671^0:15:0
 @q^3771^1:0:0
 @q^3783^0:2:0
@@ -447,6 +455,7 @@ GoldScout-export 6^89481ig63s7d^68
 @q^5254^3:4:0
 @q^5373^1:15:1
 @q^5374^0:15:0
+@q^5388^1:12:0
 @q^5427^0:15:0
 @q^5428^0:15:0
 @q^5429^0:15:0
@@ -590,6 +599,7 @@ GoldScout-export 6^89481ig63s7d^68
 @m^1433^Redridge Mountains
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
+@m^1440^Ashenvale
 @m^1443^Desolace
 @m^1444^Feralas
 @m^1445^Dustwallow Marsh
@@ -1617,6 +1627,9 @@ GoldScout-export 6^89481ig63s7d^68
 @a^2894^269:1,270:1
 @a^2919^185:1
 @a^3560^269:1
+@a^3696^310:1
+@a^3928^275:1
+@a^3932^291:1,310:1,311:1
 @a^4401^171:1
 @a^4639^313:1
 @a^4640^294:1
