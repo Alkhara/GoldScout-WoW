@@ -1,4 +1,4 @@
-GoldScout-export 9^y3dt4wcv2idd^59
+GoldScout-export 9^y3dt4wcv2idd^61
 92^19^0^39^40^1418^0.2884^0.6114^19^Rock Elemental^3864:1:1,4552:3:3,4553:7:7,4627:5:5,4784:9:9,7067:2:2,7848:4:4,7912:4:7,8150:5:5,248693:1:1^
 667^20^0^39^40^1434^0.4427^0.3524^20^Skullsplitter Warrior^1520:10:10,1524:3:3,1708:1:1,1710:1:1,2725:1:1,2730:1:1,2742:1:1,3916:10:10,4306:6:12,7474:1:1,8151:2:2,8153:1:1^
 669^10^0^41^42^1434^0.4561^0.4188^10^Skullsplitter Hunter^1520:3:3,1524:2:2,3916:1:1,4002:1:1,4306:1:1,4338:3:6,4637:1:1,248694:1:1^
@@ -52,7 +52,7 @@ GoldScout-export 9^y3dt4wcv2idd^59
 1557^6^0^40^41^1434^0.3222^0.6630^6^Elder Mistvale Gorilla^2799:2:2,3862:1:1,3919:5:5,4096:2:2,4097:1:1^
 1565^14^0^44^45^1434^0.3197^0.5990^14^Bloodsail Sea Dog^1645:1:1,2742:1:1,3910:5:5,4025:1:1,4306:1:2,4338:4:7,9260:1:1^
 1653^13^0^44^45^1434^0.3179^0.6809^13^Bloodsail Elder Magus^1685:1:1,3910:4:4,3927:1:1,4306:2:2,4338:2:3,4422:1:1,4424:1:1^
-1907^1^0^44^44^1434^0.2699^0.6262^1^Naga Explorer^^
+1907^21^0^43^44^1434^0.2788^0.6277^21^Naga Explorer^2744:1:1,2751:1:1,4029:10:10,4603:1:3,7973:5:5,9915:1:1,17058:7:7,248692:1:1^
 2242^2^0^35^36^1416^0.6103^0.4199^2^Syndicate Spy^5113:1:1^
 2254^1^0^36^37^1416^0.4036^0.4592^1^Crushridge Mauler^4306:1:4^
 2255^1^0^37^38^1416^0.4347^0.4802^1^Crushridge Mage^^
@@ -477,6 +477,7 @@ GoldScout-export 9^y3dt4wcv2idd^59
 @i^4019^Heavy Flint Axe
 @i^4022^Crushing Maul
 @i^4025^Balanced Long Bow
+@i^4029^Akiris Reed
 @i^4043^Aurora Bracers
 @i^4044^Aurora Pants
 @i^4046^Mistscape Pants
@@ -523,6 +524,7 @@ GoldScout-export 9^y3dt4wcv2idd^59
 @i^4590^Curved Yellow Bill
 @i^4599^Cured Ham Steak
 @i^4601^Soft Banana Bread
+@i^4603^Raw Spotted Yellowtail
 @i^4608^Raw Black Truffle
 @i^4626^Small Stone Shard
 @i^4627^Large Stone Slab
@@ -666,6 +668,7 @@ GoldScout-export 9^y3dt4wcv2idd^59
 @i^9900^Jazeraint Gauntlets of the Wolf
 @i^9902^Jazeraint Helm of the Bandit
 @i^9906^Royal Sash of the Owl
+@i^9915^Royal Headband of the Channeler
 @i^9917^Tracker's Boots of the Falcon
 @i^9925^Tracker's Wristguards of Stamina
 @i^9969^Embossed Plate Helmet of Strength
@@ -910,6 +913,7 @@ GoldScout-export 9^y3dt4wcv2idd^59
 @q^4019^0:2:0
 @q^4022^0:2:0
 @q^4025^0:2:0
+@q^4029^1:12:0
 @q^4043^2:4:0
 @q^4044^2:4:0
 @q^4046^2:4:0
@@ -956,6 +960,7 @@ GoldScout-export 9^y3dt4wcv2idd^59
 @q^4590^0:15:0
 @q^4599^1:0:0
 @q^4601^1:0:0
+@q^4603^1:7:1
 @q^4608^1:0:0
 @q^4626^1:12:0
 @q^4627^1:12:0
@@ -1099,6 +1104,7 @@ GoldScout-export 9^y3dt4wcv2idd^59
 @q^9900^2:4:0
 @q^9902^2:4:0
 @q^9906^2:4:0
+@q^9915^2:4:0
 @q^9917^2:4:0
 @q^9925^2:4:0
 @q^9969^2:4:0
@@ -2543,7 +2549,7 @@ GoldScout-export 9^y3dt4wcv2idd^59
 @a^1557^246:1,266:5
 @a^1565^206:5,226:7,346:2
 @a^1653^206:4,226:4,345:1,346:3,366:1
-@a^1907^245:1
+@a^1907^245:21
 @a^2242^172:2
 @a^2254^188:1
 @a^2255^188:1
@@ -2764,7 +2770,7 @@ GoldScout-export 9^y3dt4wcv2idd^59
 @t^1552^1:156
 @t^1565^12:880
 @t^1653^8:330
-@t^1907^1:245
+@t^1907^19:1424
 @t^2530^1:898
 @t^2535^2:105
 @t^2536^2:64

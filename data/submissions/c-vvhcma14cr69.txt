@@ -1,4 +1,4 @@
-GoldScout-export 9^vvhcma14cr69^5
+GoldScout-export 9^vvhcma14cr69^6
 588^2^0^34^35^1434^0.2272^0.1243^2^Bloodscalp Scout^^
 660^1^0^37^37^1434^0.2457^0.0878^1^Bloodscalp Witch Doctor^^
 667^2^0^39^40^1434^0.4469^0.3517^2^Skullsplitter Warrior^2725:1:1,3771:2:2,8151:1:1^
@@ -7,7 +7,9 @@ GoldScout-export 9^vvhcma14cr69^5
 696^2^0^39^40^1434^0.4629^0.3351^2^Skullsplitter Axe Thrower^2751:1:1,4306:1:2,4338:1:1^
 701^2^0^34^35^1434^0.2279^0.1215^2^Bloodscalp Mystic^^
 705^9^0^1^1^1426^0.2895^0.7333^9^Ragged Young Wolf^750:8:8,4865:6:6,7073:5:5^
-707^2^0^2^2^1426^0.3084^0.7343^2^Rockjaw Trogg^^
+707^6^0^1^2^1426^0.3091^0.7359^6^Rockjaw Trogg^117:1:1,1380:1:1,2589:1:1,2654:1:1^
+708^12^0^3^3^1426^0.2201^0.7095^12^Small Crag Boar^117:1:1,1372:1:1,1374:1:1,1378:1:1,2651:1:1,4865:6:6,7098:6:6^
+724^6^0^2^2^1426^0.3068^0.7470^6^Burly Rockjaw Trogg^159:1:1^
 772^1^0^38^38^1434^0.4721^0.2986^1^Stranglethorn Tigress^7432:1:1^
 780^9^0^39^40^1434^0.4561^0.3506^9^Skullsplitter Mystic^1520:1:1,2466:4:4,2730:1:1,3385:1:1,4306:1:3,213127:1:1^
 921^1^0^35^35^1434^0.4392^0.1907^1^Venture Co. Lumberjack^3771:1:1,4306:1:2^
@@ -71,9 +73,15 @@ GoldScout-export 9^vvhcma14cr69^5
 260202^1^0^0^0^0^0.0000^0.0000^0^^274607:1:1,276894:1:1^
 260243^1^0^0^0^0^0.0000^0.0000^0^^274610:1:1^
 263196^9^0^0^0^0^0.0000^0.0000^0^^1710:1:1,4306:4:9,4338:1:3,4607:1:1,248690:1:1,248694:1:1,270343:4:4^
+@i^117^Tough Jerky
+@i^159^Refreshing Spring Water
 @i^750^Tough Wolf Meat
 @i^863^Gloom Reaper of the Bandit
 @i^1205^Melon Juice
+@i^1372^Ragged Cloak
+@i^1374^Frayed Shoes
+@i^1378^Frayed Pants
+@i^1380^Frayed Robe
 @i^1520^Troll Sweat
 @i^1529^Jade
 @i^1686^Bristly Whisker
@@ -87,8 +95,11 @@ GoldScout-export 9^vvhcma14cr69^5
 @i^2220^Box Shield
 @i^2222^Tower Shield
 @i^2466^Skullsplitter Fetish
+@i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2633^Jungle Remedy
+@i^2651^Flimsy Chain Bracers
+@i^2654^Flimsy Chain Pants
 @i^2725^Green Hills of Stranglethorn - Page 1
 @i^2730^Green Hills of Stranglethorn - Page 6
 @i^2742^Green Hills of Stranglethorn - Page 18
@@ -120,6 +131,7 @@ GoldScout-export 9^vvhcma14cr69^5
 @i^6608^Bright Armor
 @i^6893^Workshop Key
 @i^7073^Broken Fang
+@i^7098^Splintered Tusk
 @i^7330^Infiltrator Buckler of the Owl
 @i^7357^Elder's Hat of the Whale
 @i^7432^Twilight Cowl of the Channeler
@@ -166,9 +178,15 @@ GoldScout-export 9^vvhcma14cr69^5
 @i^274607^Viscera Spaulders
 @i^274610^Ritual-Binder's Gloves
 @i^276894^Ancient Gurubashi Idol
+@q^117^1:0:0
+@q^159^1:0:0
 @q^750^1:12:0
 @q^863^2:2:0
 @q^1205^1:0:0
+@q^1372^0:4:0
+@q^1374^0:4:0
+@q^1378^0:4:0
+@q^1380^0:4:0
 @q^1520^0:15:0
 @q^1529^2:7:1
 @q^1686^0:15:0
@@ -182,8 +200,11 @@ GoldScout-export 9^vvhcma14cr69^5
 @q^2220^0:4:0
 @q^2222^0:4:0
 @q^2466^1:12:0
+@q^2589^1:7:1
 @q^2592^1:7:1
 @q^2633^1:0:0
+@q^2651^0:4:0
+@q^2654^0:4:0
 @q^2725^1:12:0
 @q^2730^1:12:0
 @q^2742^1:12:0
@@ -215,6 +236,7 @@ GoldScout-export 9^vvhcma14cr69^5
 @q^6608^2:4:0
 @q^6893^1:13:0
 @q^7073^0:15:0
+@q^7098^0:15:0
 @q^7330^2:4:0
 @q^7357^2:4:0
 @q^7432^2:4:0
@@ -965,7 +987,9 @@ GoldScout-export 9^vvhcma14cr69^5
 @a^696^129:2
 @a^701^44:2
 @a^705^285:9
-@a^707^286:2
+@a^707^286:6
+@a^708^264:1,284:11
+@a^724^286:4,306:2
 @a^772^109:1
 @a^780^109:1,128:1,129:3,148:2,169:2
 @a^921^68:1
@@ -978,5 +1002,7 @@ GoldScout-export 9^vvhcma14cr69^5
 @a^11561^26:3,66:2,86:2,87:1,106:4,107:1,126:1
 @a^256798^208:1
 @t^705^8:183
-@t^707^2:265
+@t^707^5:455
+@t^708^12:644
+@t^724^6:175
 @l^0^enUS

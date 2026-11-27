@@ -1,4 +1,4 @@
-GoldScout-export 6^5k3rt7axfbwl^14
+GoldScout-export 9^5k3rt7axfbwl^15
 95^20^0^11^12^1436^0.4867^0.3927^20^Defias Smuggler^414:1:1,829:6:6,1495:1:1,2589:4:8,7997:1:1^
 114^22^0^14^15^1436^0.5168^0.3401^22^Harvest Watcher^732:10:10,814:7:7,1274:9:9,1505:1:1,1506:1:1,1512:1:1,4359:2:2,4361:1:1,211785:1:1,255007:11:11,255010:5:5^
 126^12^0^12^13^1436^0.5554^0.1100^12^Murloc Coastrunner^730:3:3,858:1:1,1179:1:1,5523:2:2,211780:1:1,254548:4:4^
@@ -66,6 +66,9 @@ GoldScout-export 6^5k3rt7axfbwl^14
 3732^1^0^19^19^1440^0.3093^0.2234^1^Forsaken Seeker^^
 3733^2^0^18^18^1440^0.3097^0.2136^2^Forsaken Herbalist^929:1:1^
 3742^1^0^20^20^1440^0.2007^0.4262^1^Saltspittle Oracle^730:1:1,5463:1:1,5523:1:1^
+3781^3^0^23^24^1440^0.3315^0.6866^3^Shadethicket Wood Shaper^1818:1:1,2782:1:1^
+3783^1^0^22^23^1440^0.3358^0.6622^1^Shadethicket Raincaller^^
+3809^1^0^21^22^1440^0.4280^0.6191^1^Ashenvale Bear^2940:1:1^
 3988^2^0^19^20^1442^0.6540^0.5151^2^Venture Co. Operator^2592:1:1,5734:1:1^
 3989^9^0^18^19^1442^0.6574^0.5397^9^Venture Co. Logger^1812:1:1,2455:1:1,2589:3:7,2592:1:1,2764:1:1,2780:1:1^
 3991^10^0^19^20^1442^0.6529^0.5428^10^Venture Co. Deforester^1179:2:2,2592:8:11^
@@ -127,6 +130,7 @@ GoldScout-export 6^5k3rt7axfbwl^14
 @i^1793^Patched Leather Shoulderpads
 @i^1812^Short-handled Battle Axe
 @i^1813^Chipped Quarterstaff
+@i^1818^Standard Claymore
 @i^1823^Bludgeoning Cudgel
 @i^2213^Worn Large Shield
 @i^2287^Haunch of Meat
@@ -142,6 +146,7 @@ GoldScout-export 6^5k3rt7axfbwl^14
 @i^2698^Recipe: Cooked Crab Claw
 @i^2764^Small Dagger
 @i^2780^Light Hunting Bow
+@i^2782^Mishandled Recurve Bow
 @i^2856^Iron Pike
 @i^2940^Bloody Bear Paw
 @i^2971^Spellbinder Boots
@@ -284,6 +289,7 @@ GoldScout-export 6^5k3rt7axfbwl^14
 @q^1793^0:4:0
 @q^1812^0:2:0
 @q^1813^0:2:0
+@q^1818^0:2:0
 @q^1823^0:2:0
 @q^2213^0:4:0
 @q^2287^1:0:0
@@ -299,6 +305,7 @@ GoldScout-export 6^5k3rt7axfbwl^14
 @q^2698^1:9:0
 @q^2764^0:2:0
 @q^2780^0:2:0
+@q^2782^0:2:0
 @q^2856^1:12:0
 @q^2940^0:15:0
 @q^2971^1:4:0
@@ -1635,6 +1642,9 @@ GoldScout-export 6^5k3rt7axfbwl^14
 @a^3732^86:1
 @a^3733^86:2
 @a^3742^164:1
+@a^3781^266:2,286:1
+@a^3783^266:1
+@a^3809^248:1
 @a^3988^213:2
 @a^3989^212:2,213:3,232:1,233:3
 @a^3991^212:4,213:1,233:5
@@ -1642,4 +1652,6 @@ GoldScout-export 6^5k3rt7axfbwl^14
 @a^10323^307:1
 @a^270196^228:1
 @a^271898^149:1
+@t^3781^3:192
+@t^3783^1:157
 @l^0^enUS
