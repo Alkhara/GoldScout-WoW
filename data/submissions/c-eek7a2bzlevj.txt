@@ -1,4 +1,4 @@
-GoldScout-export 9^eek7a2bzlevj^16
+GoldScout-export 9^eek7a2bzlevj^17
 1756^2^0^60^60^1453^0.7852^0.4034^2^Onyxia's Elite Guard^^
 1791^1^0^52^52^1422^0.5135^0.7702^1^Slavering Ghoul^^
 1993^1^0^10^10^1438^0.4432^0.6173^1^Greenpaw^^
@@ -24,6 +24,9 @@ GoldScout-export 9^eek7a2bzlevj^16
 7034^18^0^51^52^1428^0.8227^0.4437^18^Firegut Ogre Mage^8952:1:1,13443:1:1,14047:4:5,281015:1:1^
 7035^23^0^52^53^1428^0.8195^0.4438^23^Firegut Brute^8766:1:1,8952:1:1,9946:1:1,13822:1:1,14047:9:15,15732:3:3,248695:1:1^
 7047^1^0^52^52^1428^0.8586^0.6162^1^Black Broodling^^
+7156^2^0^53^54^1448^0.6184^0.0830^2^Deadwood Den Watcher^^
+7157^5^0^54^55^1448^0.6145^0.0912^5^Deadwood Avenger^8953:1:1,14047:1:1,20741:1:1^
+7158^2^0^53^54^1448^0.6027^0.0834^2^Deadwood Shaman^14047:1:1^
 7234^5^0^8^8^1438^0.6940^0.5334^5^Ferocitas the Dream Eater^159:1:1,2635:1:1,8049:2:2^
 7235^42^0^6^7^1438^0.6847^0.5237^42^Gnarlpine Mystic^159:2:2,1420:1:1,1423:1:1,1429:1:1,2212:1:1,2213:1:1,2589:8:14,2646:1:1,4536:3:3^
 7318^1^0^10^10^1438^0.4544^0.5854^1^Rageclaw^211785:1:1^
@@ -128,6 +131,7 @@ GoldScout-export 9^eek7a2bzlevj^16
 10375^20^0^0^0^0^0.0000^0.0000^0^^1074:3:3,4585:9:9,7910:1:1,10285:2:2,12205:5:5,12586:8:23,14227:2:2,15324:1:1,281017:1:1^
 10584^1^0^0^0^0^0.0000^0.0000^0^^12712:1:1,13258:1:1,18784:1:1^
 10596^2^0^0^0^0^0.0000^0.0000^0^^13183:1:1,249521:1:1^
+10916^2^0^57^57^1448^0.6029^0.0601^2^Winterfall Runner^12771:1:1^
 222525^1^0^0^0^0^0.0000^0.0000^0^^4005:1:1,14047:1:2^
 272096^2^0^10^11^1438^0.5047^0.4475^2^Befouled Webwood^1476:1:1,5465:2:3^
 272116^1^0^12^12^1438^0.5138^0.4478^1^Xethorr the Wicked^281023:1:1^
@@ -203,6 +207,7 @@ GoldScout-export 9^eek7a2bzlevj^16
 @i^8766^Morning Glory Dew
 @i^8950^Homemade Cherry Pie
 @i^8952^Roasted Quail
+@i^8953^Deep Fried Plantains
 @i^9937^Abjurer's Bands of the Channeler
 @i^9940^Abjurer's Hood of the Channeler
 @i^9942^Abjurer's Pants of the Sorcerer
@@ -265,6 +270,7 @@ GoldScout-export 9^eek7a2bzlevj^16
 @i^12534^Omokk's Head
 @i^12586^Immature Venom Sac
 @i^12712^Warosh's Mojo
+@i^12771^Empty Firewater Flask
 @i^12780^General Drakkisath's Command
 @i^12793^Mixologist's Tunic
 @i^12804^Powerful Mojo
@@ -304,6 +310,7 @@ GoldScout-export 9^eek7a2bzlevj^16
 @i^18784^Top Half of Advanced Armorsmithing: Volume III
 @i^18945^Dark Iron Residue
 @i^19934^Large Scorpid Claw
+@i^20741^Deadwood Ritual Totem
 @i^22207^Sash of the Grand Hunt
 @i^22231^Kayser's Boots of Precision
 @i^22242^Verek's Leash
@@ -398,6 +405,7 @@ GoldScout-export 9^eek7a2bzlevj^16
 @q^8766^1:0:0
 @q^8950^1:0:0
 @q^8952^1:0:0
+@q^8953^1:0:0
 @q^9937^2:4:0
 @q^9940^2:4:0
 @q^9942^2:4:0
@@ -460,6 +468,7 @@ GoldScout-export 9^eek7a2bzlevj^16
 @q^12534^1:12:0
 @q^12586^1:0:0
 @q^12712^1:0:0
+@q^12771^1:12:0
 @q^12780^1:12:0
 @q^12793^3:4:0
 @q^12804^1:7:1
@@ -499,6 +508,7 @@ GoldScout-export 9^eek7a2bzlevj^16
 @q^18784^3:12:0
 @q^18945^1:12:0
 @q^19934^0:15:0
+@q^20741^1:15:0
 @q^22207^3:4:0
 @q^22231^3:4:0
 @q^22242^3:4:0
@@ -525,6 +535,7 @@ GoldScout-export 9^eek7a2bzlevj^16
 @m^1427^Searing Gorge
 @m^1428^Burning Steppes
 @m^1438^Teldrassil
+@m^1448^Felwood
 @m^1453^Stormwind City
 @c^118^
 @c^858^
@@ -1923,6 +1934,9 @@ GoldScout-export 9^eek7a2bzlevj^16
 @a^7034^155:1,156:2,175:2,176:3,195:1,196:5,197:4
 @a^7035^155:1,156:4,175:3,176:5,196:8,216:2
 @a^7047^257:1
+@a^7156^32:2
+@a^7157^32:3,52:2
+@a^7158^32:2
 @a^7234^213:5
 @a^7235^213:41,214:1
 @a^7318^229:1
@@ -1931,7 +1945,10 @@ GoldScout-export 9^eek7a2bzlevj^16
 @a^8917^64:1,84:2,85:1
 @a^9026^285:1
 @a^9176^208:1
+@a^10916^32:2
 @a^272096^170:1,189:1
 @a^272116^170:1
 @t^1756^1:19
+@t^7157^2:60
+@t^7158^1:43
 @l^0^enUS
