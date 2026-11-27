@@ -1,4 +1,4 @@
-GoldScout-export 8^r1vkamfyythk^36
+GoldScout-export 9^r1vkamfyythk^38
 667^5^0^39^40^1434^0.4653^0.3971^5^Guerrero Machacacráneos^2728:1:1,2738:1:1^
 669^8^0^41^42^1434^0.4615^0.4160^8^Cazador Machacacráneos^1520:2:2,3916:5:5,4306:1:2,4338:2:3,4599:2:2^
 670^5^0^41^42^1434^0.4545^0.4257^5^Médico Brujo Machacacráneos^1524:2:2,2728:1:1,4306:1:2,4338:1:1,4421:1:1,4599:1:1,8151:1:1^
@@ -113,6 +113,13 @@ GoldScout-export 8^r1vkamfyythk^36
 3471^1^0^16^16^1413^0.5288^0.1050^1^Manitas Sniggles^2592:1:2,5089:1:1^
 3475^1^0^16^16^1413^0.5578^0.1712^1^Echeyakee^5100:1:1^
 3560^1^0^15^15^1413^0.5892^0.2416^1^Guarda de sanación^^
+3711^1^0^20^20^1440^0.1140^0.3140^1^Myrmidón Colafuria^5490:1:1,16654:1:1^
+3712^3^0^19^20^1440^0.1072^0.2988^3^Filón Colafuria^5490:2:2,5523:1:1,16648:1:1,211853:1:1^
+3713^12^0^18^19^1440^0.1365^0.2598^12^Jinete de olas Colafuria^1205:2:2,1812:1:1,5490:12:12,5523:4:4,6308:2:2,211784:1:1^
+3715^1^0^19^19^1440^0.1181^0.3198^1^Bruja de mar Colafuria^^
+3717^5^0^18^19^1440^0.1335^0.2634^5^Hechicera Colafuria^5490:5:5,5523:1:1,16646:1:1^
+3809^4^0^21^22^1440^0.4016^0.6404^4^Oso de Vallefresno^2940:2:2,3730:3:3,5635:1:1^
+3817^4^0^22^23^1440^0.3939^0.6675^4^Venado Necraste^5471:2:2,5566:2:2^
 3939^1^0^7^8^1413^0.5568^0.2736^1^Lobo Crines de Acero^^
 3988^3^0^19^20^1442^0.6353^0.5096^3^Operador de Ventura y Cía.^1179:1:1,2589:1:3,2592:1:2,5734:1:1^
 3989^6^0^18^19^1442^0.6435^0.5247^6^Leñero de Ventura y Cía.^1791:1:1,2589:1:3^
@@ -150,6 +157,7 @@ GoldScout-export 8^r1vkamfyythk^36
 11912^8^0^15^16^1442^0.7420^0.8713^8^Tosca Tótem Siniestro^1179:2:2,2287:1:1,2589:4:7,15210:1:1,211787:1:1^
 11913^3^0^15^16^1442^0.7429^0.8777^3^Hechicero Tótem Siniestro^1768:1:1,2589:1:1,14723:1:1^
 11921^1^0^21^21^1442^0.5471^0.7270^1^Besseleth^1081:1:1,3174:1:1,3182:1:1,3193:1:1,16192:1:1^
+12678^1^0^25^25^1440^0.3982^0.6512^1^Ursangous^16303:1:1^
 185334^1^0^22^22^1413^0.6179^0.3856^1^Isaac Pearson^^
 209797^1^0^20^20^1413^0.6323^0.3875^1^Bruuz^5567:1:1,253710:1:1^
 250483^1^0^0^0^0^0.0000^0.0000^0^^271201:1:1^
@@ -204,6 +212,7 @@ GoldScout-export 8^r1vkamfyythk^36
 @i^1081^Carne de araña crujiente
 @i^1179^Leche fría como el hielo
 @i^1180^Pergamino de Aguante
+@i^1205^Zumo de melón
 @i^1210^Gema de las Sombras
 @i^1419^Botas de cuero desgastadas
 @i^1422^Guantes de cuero desgastados
@@ -304,6 +313,7 @@ GoldScout-export 8^r1vkamfyythk^36
 @i^3616^Ojo de la mente
 @i^3621^Cabeza de Ivar
 @i^3622^Esencia de Latipesadilla
+@i^3730^Carne de oso grande
 @i^3771^Pata de cero salvaje
 @i^3779^Hacha de guerra pesada
 @i^3810^Brazales de malla doble
@@ -386,12 +396,16 @@ GoldScout-export 8^r1vkamfyythk^36
 @i^5465^Pata de araña pequeña
 @i^5466^Aguijón de escórpido
 @i^5469^Carne de zancudo
+@i^5471^Carne de ciervo
+@i^5490^Cabeza Colafuria
 @i^5523^Percebe pequeño
+@i^5566^Asta rota
 @i^5567^Gancho de plata
 @i^5635^Garra afilada
 @i^5734^Planos de la Súper Segadora 6000
 @i^6149^Poción de maná superior
 @i^6289^Pargo de loco boquilargo crudo
+@i^6308^Siluro mostacherizo crudo
 @i^6358^Bocanegra graso
 @i^6361^Atún blanco arco iris crudo
 @i^6444^Lengua bípeda
@@ -437,6 +451,10 @@ GoldScout-export 8^r1vkamfyythk^36
 @i^15498^Zapatillas de avanzado de agilidad
 @i^15506^Tobilleras de bruto de magia
 @i^16192^Colmillo de Besseleth
+@i^16303^Pata de Ursangous
+@i^16646^Manual de instrucciones de trituradora: Página 2
+@i^16648^Manual de instrucciones de trituradora: Página 4
+@i^16654^Manual de instrucciones de trituradora: Página 10
 @i^17056^Pluma ligera
 @i^20708^Baúl bien sellado
 @i^20709^Ron Rumsey ligero
@@ -484,6 +502,7 @@ GoldScout-export 8^r1vkamfyythk^36
 @q^1081^1:7:1
 @q^1179^1:0:0
 @q^1180^1:0:0
+@q^1205^1:0:0
 @q^1210^2:7:1
 @q^1419^0:4:0
 @q^1422^0:4:0
@@ -584,6 +603,7 @@ GoldScout-export 8^r1vkamfyythk^36
 @q^3616^1:12:0
 @q^3621^1:12:0
 @q^3622^1:12:0
+@q^3730^1:7:1
 @q^3771^1:0:0
 @q^3779^0:2:0
 @q^3810^0:4:0
@@ -666,12 +686,16 @@ GoldScout-export 8^r1vkamfyythk^36
 @q^5465^1:7:1
 @q^5466^1:7:1
 @q^5469^1:7:1
+@q^5471^1:7:1
+@q^5490^1:12:0
 @q^5523^1:7:0
+@q^5566^0:15:0
 @q^5567^0:15:0
 @q^5635^1:7:1
 @q^5734^1:12:0
 @q^6149^1:0:0
 @q^6289^1:7:1
+@q^6308^1:7:1
 @q^6358^1:7:1
 @q^6361^1:7:1
 @q^6444^0:15:0
@@ -717,6 +741,10 @@ GoldScout-export 8^r1vkamfyythk^36
 @q^15498^2:4:0
 @q^15506^2:4:0
 @q^16192^1:12:0
+@q^16303^2:12:0
+@q^16646^1:12:0
+@q^16648^1:12:0
+@q^16654^1:12:0
 @q^17056^1:15:1
 @q^20708^1:15:0
 @q^20709^1:0:0
@@ -759,6 +787,7 @@ GoldScout-export 8^r1vkamfyythk^36
 @m^1420^Claros de Tirisfal
 @m^1421^Bosque de Argénteos
 @m^1434^Vega de Tuercespina
+@m^1440^Vallefresno
 @m^1442^Sierra Espolón
 @m^2548^Clarofluvial
 @c^118^
@@ -1704,6 +1733,13 @@ GoldScout-export 8^r1vkamfyythk^36
 @a^3471^50:1
 @a^3475^71:1
 @a^3560^91:1
+@a^3711^122:1
+@a^3712^102:2,122:1
+@a^3713^82:4,102:8
+@a^3715^122:1
+@a^3717^82:2,102:3
+@a^3809^228:1,247:1,267:2
+@a^3817^247:1,267:3
 @a^3939^111:1
 @a^3988^193:1,212:2
 @a^3989^212:3,213:2,232:1
@@ -1730,6 +1766,7 @@ GoldScout-export 8^r1vkamfyythk^36
 @a^11912^354:4,355:3,375:1
 @a^11913^354:2,375:1
 @a^11921^290:1
+@a^12678^267:1
 @a^185334^152:1
 @a^209797^152:1
 @a^254560^169:1,189:5
@@ -1755,76 +1792,5 @@ GoldScout-export 8^r1vkamfyythk^36
 @a^267314^111:3
 @a^268624^189:4,209:9,210:2
 @a^270667^270:1,290:2
-@t^3239^4:202
-@t^3241^5:495
-@t^3242^4:144
-@t^3244^16:522
-@t^3245^2:359
-@t^3247^1:144
-@t^3254^4:62
-@t^3255^12:661
-@t^3256^16:842
-@t^3257^1:67
-@t^3258^18:769
-@t^3260^13:400
-@t^3261^12:270
-@t^3263^11:425
-@t^3266^11:375
-@t^3267^1:94
-@t^3269^6:142
-@t^3270^1:91
-@t^3272^10:294
-@t^3273^7:319
-@t^3274^7:273
-@t^3275^10:414
-@t^3276^17:550
-@t^3277^15:554
-@t^3278^22:670
-@t^3279^1:45
-@t^3280^3:90
-@t^3282^12:280
-@t^3283^5:162
-@t^3284^21:812
-@t^3285^11:604
-@t^3286^4:178
-@t^3295^1:26
-@t^3381^8:261
-@t^3382^2:16
-@t^3385^11:335
-@t^3386^1:6
-@t^3397^13:385
-@t^3425^5:149
-@t^3426^2:55
-@t^3445^2:64
-@t^3452^1:52
-@t^3454^1:80
-@t^3455^1:42
-@t^3461^8:278
-@t^3471^1:42
-@t^3560^1:47
-@t^3939^1:59
-@t^3988^1:45
-@t^3989^4:168
-@t^3999^2:207
-@t^4003^1:3
-@t^4005^5:287
-@t^4129^1:97
-@t^4316^2:159
-@t^5835^1:25
-@t^5838^1:77
-@t^5841^1:96
-@t^5932^1:65
-@t^6606^1:17
-@t^9456^1:16
-@t^9523^2:69
-@t^9524^7:196
-@t^11858^1:17
-@t^11910^1:2
-@t^11912^7:521
-@t^11913^2:17
-@t^261367^1:1
-@t^261368^4:194
-@t^262119^1:52
-@t^268624^14:655
 @f^1413^0^21^157^3820:1:1,6358:11:11,6361:1:1,20708:4:4,20709:4:10^152:21
 @l^0^esES

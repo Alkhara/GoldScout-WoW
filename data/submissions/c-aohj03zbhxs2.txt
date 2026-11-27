@@ -1,4 +1,4 @@
-GoldScout-export 8^aohj03zbhxs2^47
+GoldScout-export 9^aohj03zbhxs2^49
 6^35^0^1^2^1429^0.4864^0.3652^35^Vermine kobold^159:2:2,755:12:12,1368:1:1,1372:1:1,1378:1:1,1380:1:1,2210:1:1,2589:12:12,2649:2:2,2650:1:1,2651:1:1,2652:1:1,4536:6:6,247834:5:5,247839:5:5^
 30^2^0^5^6^1429^0.3327^0.7145^2^Araignée forestière^1476:1:1,2590:1:1,5465:1:1^
 36^7^0^11^12^1436^0.3749^0.4426^7^Golem des moissons^814:2:2,1274:1:1,5069:1:1,255007:2:2,255010:1:1^
@@ -250,6 +250,13 @@ GoldScout-export 8^aohj03zbhxs2^47
 5856^25^0^43^45^1427^0.6330^0.5726^25^Araignée verrière^1074:2:2,4337:2:2,4585:10:10,9909:1:1,10285:5:5,11725:11:21,12205:9:9^
 5858^10^0^47^49^1427^0.2866^0.5585^10^Araignée de lave incendiaire^4337:1:1,4585:4:4,12205:8:8,14227:1:2^
 6093^3^0^11^11^1429^0.8929^0.7906^3^Jack Dent-Morte^118:1:1,2589:1:1^
+6116^3^0^45^46^1447^0.1700^0.6919^3^Apparition bien-née^4338:1:2^
+6117^4^0^46^47^1447^0.1742^0.6930^4^Jeune liche bien-née^1608:1:1,4002:1:1,4338:2:4^
+6125^1^0^45^46^1447^0.2014^0.6075^1^Satyre Haldarr^^
+6126^3^0^46^47^1447^0.2043^0.6079^3^Entourloupeur Haldarr^4338:1:3,248697:1:1^
+6127^3^0^46^47^1447^0.1935^0.6314^3^Lige de la corruption Haldarr^4338:1:3,15262:1:1^
+6190^2^0^46^47^1447^0.3357^0.5994^2^Guerrier Fouette-bile^4603:1:3,7973:1:1^
+6193^4^0^47^48^1447^0.2853^0.5821^4^Hurleuse Fouette-bile^3928:1:1,3938:1:1,7973:3:3,11999:1:1^
 6426^1^0^0^0^0^0.0000^0.0000^0^^4306:1:1^
 6427^2^0^0^0^0^0.0000^0.0000^0^^2592:1:3^
 6575^3^0^0^0^0^0.0000^0.0000^0^^1708:1:1^
@@ -284,6 +291,7 @@ GoldScout-export 8^aohj03zbhxs2^47
 8337^6^0^42^45^1427^0.6536^0.4695^6^Trancheur Sombrefer^3967:1:1,4306:1:2,4338:1:1,10551:3:3^
 8566^13^0^47^48^1427^0.5343^0.5857^13^Guetteur Sombrefer^4023:1:1,4338:4:8,4601:1:1,11818:1:1,18960:1:1^
 8637^15^0^44^45^1427^0.6366^0.5677^15^Garde Sombrefer^1645:1:1,3928:1:1,4306:4:5,4338:4:6,4601:3:3,8139:1:1,10551:1:1^
+8759^9^0^45^47^1447^0.2152^0.6065^9^Coureur Sabots-de-mousse^5119:1:1,5120:5:5,5471:1:1,5566:4:4,238463:5:5^
 8886^16^0^0^0^0^0.0000^0.0000^0^^6444:13:13,6445:1:1,14161:1:1,14364:1:1,15333:1:1^
 8996^10^0^42^43^1446^0.6176^0.3691^10^Sbire marcheur du Vide^^
 11559^1^0^39^40^2652^0.3337^0.1889^1^Nécromancien renégat^4306:1:1,260347:1:1^
@@ -498,6 +506,7 @@ GoldScout-export 8^aohj03zbhxs2^47
 @i^1516^Hachette usée
 @i^1520^Sueur de troll
 @i^1529^Jade
+@i^1608^Masse Brise-tête de courroux sacré
 @i^1645^Jus de baie lunaire
 @i^1686^Moustache à poil dur
 @i^1688^Longue queue soyeuse
@@ -637,6 +646,7 @@ GoldScout-export 8^aohj03zbhxs2^47
 @i^3927^Cheddar affiné
 @i^3928^Potion de soins excellente
 @i^3937^Bottes en crochet
+@i^3938^Brassards en crochet
 @i^3941^Pantalon en crochet
 @i^3942^Protège-épaules en crochet
 @i^3943^Gilet en crochet
@@ -646,6 +656,7 @@ GoldScout-export 8^aohj03zbhxs2^47
 @i^3989^Targe de blocage
 @i^4000^Ceinture en anneaux doubliers
 @i^4001^Bottes en anneaux doubliers
+@i^4002^Brassards en anneaux doubliers
 @i^4006^Protège-épaules en anneaux doubliers
 @i^4016^Mixture de Zanzil
 @i^4017^Epée courte tranchante
@@ -716,6 +727,8 @@ GoldScout-export 8^aohj03zbhxs2^47
 @i^5069^Baguette de feu
 @i^5071^Baguette de l'ombre
 @i^5116^Longue plume de queue
+@i^5119^Fin cheveu flottant
+@i^5120^Long poil de queue
 @i^5124^Petite dent de raptor
 @i^5125^Ecaille chargée
 @i^5136^Oreille de fourrure déchirée
@@ -723,8 +736,10 @@ GoldScout-export 8^aohj03zbhxs2^47
 @i^5429^Un joli caillou
 @i^5431^Flasque vide
 @i^5465^Petite patte d'araignée
+@i^5471^Viande de cerf
 @i^5523^Petite palourde spiralée
 @i^5524^Palourde à coque épaisse
+@i^5566^Ramure brisée
 @i^5567^Crochet d'argent
 @i^5574^Sac blanc en cuir
 @i^5635^Griffe aiguisée
@@ -871,6 +886,7 @@ GoldScout-export 8^aohj03zbhxs2^47
 @i^11818^Clé des toilettes de Crasseboue
 @i^11971^Anneau d'améthyste de canalisation
 @i^11998^Anneau fusant d'agilité
+@i^11999^Anneau de magnétite du gorille
 @i^12020^Pendentif de thallium du gorille
 @i^12022^Collier d'iridium de protection contre le givre
 @i^12037^Viande mystère
@@ -902,6 +918,7 @@ GoldScout-export 8^aohj03zbhxs2^47
 @i^15226^Gourdin géant de la chouette
 @i^15244^Lame rasoir du tigre
 @i^15251^Epée frappe-tête de la baleine
+@i^15262^Maillet supérieur d'intelligence
 @i^15333^Cape de muletier de la chouette
 @i^15497^Corde d'estafette de défense
 @i^15582^Jambières de nacrétoile de courroux de la nature
@@ -927,6 +944,7 @@ GoldScout-export 8^aohj03zbhxs2^47
 @i^213545^Parchemin : CHUTE D'AGUERRI
 @i^213547^Parchemin : ELLUQE PÉÉE
 @i^215374^Épée ancestrale
+@i^238463^Peau de sabot-de-mousse
 @i^247826^Tête de Coassie
 @i^247834^Livre grignoté
 @i^247839^Livre dérobé
@@ -942,6 +960,7 @@ GoldScout-export 8^aohj03zbhxs2^47
 @i^248691^Caisse détournée : plantes à fleurs d'expert
 @i^248692^Caisse détournée : minerai d'expert
 @i^248694^Caisse détournée : curiosités d'expert
+@i^248697^Caisse détournée : minerai d'artisan
 @i^248708^Caisse détournée : étoffes d'expert
 @i^248709^Caisse détournée : lingots d'expert
 @i^248710^Caisse détournée : composants d'expert
@@ -1107,6 +1126,7 @@ GoldScout-export 8^aohj03zbhxs2^47
 @q^1516^0:2:0
 @q^1520^0:15:0
 @q^1529^2:7:1
+@q^1608^2:2:0
 @q^1645^1:0:0
 @q^1686^0:15:0
 @q^1688^0:15:0
@@ -1246,6 +1266,7 @@ GoldScout-export 8^aohj03zbhxs2^47
 @q^3927^1:0:0
 @q^3928^1:0:0
 @q^3937^0:4:0
+@q^3938^0:4:0
 @q^3941^0:4:0
 @q^3942^0:4:0
 @q^3943^0:4:0
@@ -1255,6 +1276,7 @@ GoldScout-export 8^aohj03zbhxs2^47
 @q^3989^0:4:0
 @q^4000^0:4:0
 @q^4001^0:4:0
+@q^4002^0:4:0
 @q^4006^0:4:0
 @q^4016^1:12:0
 @q^4017^0:2:0
@@ -1325,6 +1347,8 @@ GoldScout-export 8^aohj03zbhxs2^47
 @q^5069^2:2:0
 @q^5071^2:2:0
 @q^5116^1:7:1
+@q^5119^0:15:0
+@q^5120^0:15:0
 @q^5124^0:15:0
 @q^5125^0:15:0
 @q^5136^0:15:0
@@ -1332,8 +1356,10 @@ GoldScout-export 8^aohj03zbhxs2^47
 @q^5429^0:15:0
 @q^5431^0:15:0
 @q^5465^1:7:1
+@q^5471^1:7:1
 @q^5523^1:7:0
 @q^5524^1:7:0
+@q^5566^0:15:0
 @q^5567^0:15:0
 @q^5574^1:1:0
 @q^5635^1:7:1
@@ -1480,6 +1506,7 @@ GoldScout-export 8^aohj03zbhxs2^47
 @q^11818^1:12:0
 @q^11971^2:4:0
 @q^11998^2:4:0
+@q^11999^2:4:0
 @q^12020^2:4:0
 @q^12022^2:4:0
 @q^12037^1:7:1
@@ -1511,6 +1538,7 @@ GoldScout-export 8^aohj03zbhxs2^47
 @q^15226^2:2:0
 @q^15244^2:2:0
 @q^15251^2:2:0
+@q^15262^2:2:0
 @q^15333^2:4:0
 @q^15497^2:4:0
 @q^15582^2:4:0
@@ -1536,6 +1564,7 @@ GoldScout-export 8^aohj03zbhxs2^47
 @q^213545^1:0:0
 @q^213547^1:0:0
 @q^215374^1:2:0
+@q^238463^1:12:0
 @q^247826^1:12:0
 @q^247834^1:15:0
 @q^247839^1:12:0
@@ -1551,6 +1580,7 @@ GoldScout-export 8^aohj03zbhxs2^47
 @q^248691^1:0:1
 @q^248692^1:0:1
 @q^248694^1:0:1
+@q^248697^1:0:1
 @q^248708^2:0:1
 @q^248709^2:0:1
 @q^248710^2:0:1
@@ -1634,6 +1664,7 @@ GoldScout-export 8^aohj03zbhxs2^47
 @m^1444^Féralas
 @m^1445^Marécage d'Âprefange
 @m^1446^Tanaris
+@m^1447^Azshara
 @m^2548^Rives Claires
 @m^2652^Shen'dralas
 @c^724^
@@ -2731,6 +2762,13 @@ GoldScout-export 8^aohj03zbhxs2^47
 @a^5856^133:1,153:1,173:1,193:1,211:4,212:5,213:3,272:2,292:5,293:1,312:1
 @a^5858^165:1,185:2,205:2,225:2,246:1,285:1,286:1
 @a^6093^317:3
+@a^6116^263:2,283:1
+@a^6117^263:2,283:2
+@a^6125^244:1
+@a^6126^244:3
+@a^6127^243:3
+@a^6190^226:1,246:1
+@a^6193^206:1,224:1,225:1,246:1
 @a^7489^169:1
 @a^7725^153:11,173:2
 @a^7726^153:6,154:1,173:2,193:4
@@ -2747,6 +2785,7 @@ GoldScout-export 8^aohj03zbhxs2^47
 @a^8337^173:2,193:2,212:2
 @a^8566^230:12,231:1
 @a^8637^153:2,232:8,252:5
+@a^8759^204:2,224:3,244:2,263:1,264:1
 @a^8996^132:2,151:3,152:3,153:2
 @a^11559^66:1
 @a^11561^66:1
@@ -2811,75 +2850,4 @@ GoldScout-export 8^aohj03zbhxs2^47
 @a^272315^216:1
 @a^276003^170:1
 @a^276009^171:1
-@t^95^23:668
-@t^114^1:38
-@t^126^10:320
-@t^480^2:111
-@t^481^1:31
-@t^504^17:375
-@t^515^11:168
-@t^589^6:238
-@t^590^9:459
-@t^834^1:34
-@t^1236^4:85
-@t^1488^11:415
-@t^1489^5:148
-@t^1490^9:476
-@t^1491^7:284
-@t^1557^8:731
-@t^1558^7:441
-@t^1561^1:33
-@t^1562^4:143
-@t^1907^32:1638
-@t^2530^2:47
-@t^2534^1:29
-@t^2537^3:63
-@t^2541^1:33
-@t^2728^1:96
-@t^2894^1:1
-@t^2945^1:56
-@t^3560^1:13
-@t^4323^8:377
-@t^4324^8:408
-@t^4331^1:149
-@t^4334^1:73
-@t^4345^1:51
-@t^5232^9:347
-@t^5234^4:271
-@t^5236^8:476
-@t^5240^7:274
-@t^5286^1:38
-@t^5292^28:1176
-@t^5295^6:300
-@t^5331^2:109
-@t^5332^4:521
-@t^5335^11:958
-@t^5337^1:92
-@t^5426^1:136
-@t^5471^1:48
-@t^5615^11:437
-@t^5617^9:715
-@t^5618^1:51
-@t^5623^6:223
-@t^5839^12:582
-@t^5840^21:969
-@t^5843^2:100
-@t^5844^17:506
-@t^5846^17:729
-@t^5850^1:143
-@t^5853^7:232
-@t^5854^19:833
-@t^5855^3:168
-@t^5856^23:1239
-@t^5858^5:304
-@t^7725^13:684
-@t^7726^13:984
-@t^7727^7:281
-@t^8283^1:28
-@t^8337^6:208
-@t^8566^13:507
-@t^8637^10:441
-@t^8996^9:116
-@t^222286^1:69
-@t^269254^1:61
 @l^0^frFR
