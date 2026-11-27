@@ -1,7 +1,7 @@
-GoldScout-export 9^yeqak4pqsl9i^44
+GoldScout-export 9^yeqak4pqsl9i^45
 92^32^0^39^40^1418^0.4225^0.8047^32^Elémentaire de roche^4041:1:1,4552:1:1,4553:17:17,4784:21:21,7067:4:4,7848:5:5,7912:6:8,8150:7:7,248710:1:1^
-94^1^0^5^6^1429^0.3662^0.5362^1^Vide-gousset défias^^
-116^1^0^9^9^1429^0.5206^0.5945^1^Bandit défias^^
+94^2^0^5^6^1429^0.3681^0.5529^2^Vide-gousset défias^^
+116^2^0^9^9^1429^0.6093^0.7126^2^Bandit défias^^
 587^1^0^34^34^1434^0.2958^0.1927^1^Guerrier Bloodscalp^1519:1:1,4306:1:1^
 595^3^0^34^35^1434^0.2523^0.1061^3^Chasseur Bloodscalp^4306:1:2^
 597^2^0^36^37^1434^0.2447^0.1086^2^Berserker Bloodscalp^1519:2:2,2730:1:1,4306:1:1,4338:1:1,7458:1:1^
@@ -37,7 +37,10 @@ GoldScout-export 9^yeqak4pqsl9i^44
 2348^9^0^26^27^1424^0.6142^0.6617^9^Ancienne Rampemousse^878:1:1,1074:3:3,1081:5:5,2251:3:3,3182:1:1^
 2349^2^0^24^25^1421^0.6818^0.5059^1^Rampemousse géante^1081:1:1,2251:1:1^
 2351^1^0^22^22^1424^0.6513^0.2666^1^Ours gris^^
+2354^2^0^22^23^1424^0.4572^0.4311^2^Ours gris vicieux^3730:1:1,7360:1:1,11406:1:1^
+2356^1^0^25^25^1416^0.2460^0.8706^1^Vieil ours gris^11406:1:1^
 2371^1^0^31^32^1424^0.5415^0.6190^1^Sirène Daguéchine^17057:1:1^
+2384^1^0^23^23^1424^0.4615^0.4539^1^Lion des montagnes affamé^3731:1:1^
 2385^5^0^27^28^1424^0.6082^0.6448^5^Lion des montagnes farouche^3731:2:2,5137:2:2^
 2477^1^0^19^21^1432^0.5546^0.6709^1^Gradok^^
 2478^1^0^21^21^1432^0.5522^0.6756^1^Haren Swifthoof^5319:1:1^
@@ -550,6 +553,7 @@ GoldScout-export 9^yeqak4pqsl9i^44
 @i^3674^Botte décomposée
 @i^3676^Ichor visqueux
 @i^3702^Vésicule biliaire d'ours
+@i^3730^Viande de grand ours
 @i^3731^Viande de lion
 @i^3771^Jarret de cochon sauvage
 @i^3781^Claymore large
@@ -699,6 +703,7 @@ GoldScout-export 9^yeqak4pqsl9i^44
 @i^7081^Souffle de vent
 @i^7331^Bouclier de la phalange du singe
 @i^7353^Gambison de doyen d'intelligence
+@i^7360^Patron : Gants noirs en cuir
 @i^7415^Spallières de derviche d'esprit
 @i^7429^Armure du crépuscule de l'aigle
 @i^7434^Bottes du crépuscule de protection contre le feu
@@ -779,6 +784,7 @@ GoldScout-export 9^yeqak4pqsl9i^44
 @i^11387^Coeur de basilic
 @i^11393^Petit crâne de chauve-souris
 @i^11394^Coeur de chauve-souris
+@i^11406^Carcasse pourrie d'ours
 @i^11409^Flanc d'ours
 @i^11416^Cage thoracique délicate
 @i^11418^Os creux d'aile
@@ -1049,6 +1055,7 @@ GoldScout-export 9^yeqak4pqsl9i^44
 @q^3674^0:15:0
 @q^3676^0:15:0
 @q^3702^0:15:0
+@q^3730^1:7:1
 @q^3731^1:7:1
 @q^3771^1:0:0
 @q^3781^0:2:0
@@ -1198,6 +1205,7 @@ GoldScout-export 9^yeqak4pqsl9i^44
 @q^7081^1:7:1
 @q^7331^2:4:0
 @q^7353^2:4:0
+@q^7360^2:9:0
 @q^7415^2:4:0
 @q^7429^2:4:0
 @q^7434^2:4:0
@@ -1278,6 +1286,7 @@ GoldScout-export 9^yeqak4pqsl9i^44
 @q^11387^0:15:0
 @q^11393^0:15:0
 @q^11394^0:15:0
+@q^11406^0:15:0
 @q^11409^0:15:0
 @q^11416^0:15:0
 @q^11418^0:15:0
@@ -2188,8 +2197,8 @@ GoldScout-export 9^yeqak4pqsl9i^44
 @c^279987^
 @c^286152^
 @a^92^287:2,307:3,308:7,309:2,328:16,348:2
-@a^94^207:1
-@a^116^230:1
+@a^94^207:1,227:1
+@a^116^230:1,333:1
 @a^587^65:1
 @a^595^25:1,44:1,45:1
 @a^597^44:2
@@ -2225,7 +2234,10 @@ GoldScout-export 9^yeqak4pqsl9i^44
 @a^2348^251:2,252:1,272:5,292:1
 @a^2349^213:1
 @a^2351^113:1
+@a^2354^148:1,189:1
+@a^2356^344:1
 @a^2371^250:1
+@a^2384^189:1
 @a^2385^231:1,251:1,272:3
 @a^2477^271:1
 @a^2478^271:1
@@ -2448,6 +2460,8 @@ GoldScout-export 9^yeqak4pqsl9i^44
 @a^272389^146:1,165:2
 @a^276401^209:1
 @a^277882^34:2
+@t^2354^2:153
+@t^2384^1:47
 @t^5422^2:107
 @t^5425^3:998
 @t^5645^1:136
