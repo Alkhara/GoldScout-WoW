@@ -1,4 +1,4 @@
-GoldScout-export 9^gbx4cjirowt2^13
+GoldScout-export 9^gbx4cjirowt2^14
 2241^1^0^34^34^1416^0.5680^0.6848^1^Syndicate Thief^3601:1:1^
 2248^5^0^30^31^1424^0.4426^0.2950^5^Cave Yeti^3811:1:1^
 2249^10^0^31^32^1424^0.4366^0.2959^10^Ferocious Yeti^1708:1:1,3708:1:1^
@@ -21,9 +21,15 @@ GoldScout-export 9^gbx4cjirowt2^13
 2413^1^0^33^33^1416^0.1887^0.9143^1^Dermot^3691:1:1^
 2414^1^0^33^33^1416^0.1659^0.8910^1^Kegan Darkmar^3688:1:1,4306:1:1,4607:1:1^
 2503^3^0^27^27^1424^0.2845^0.5438^3^Hillsbrad Foreman^4306:1:2^
+2555^2^0^34^34^1417^0.3153^0.4339^2^Witherbark Witch Doctor^1710:1:1,3771:1:1^
+2562^7^0^32^33^1417^0.3589^0.4445^7^Boulderfist Ogre^1710:1:1,3771:2:2,4306:2:3,213422:1:1^
+2564^10^0^33^34^1417^0.3277^0.4459^10^Boulderfist Enforcer^3771:1:1,4306:3:6,213422:3:3^
+2581^4^0^31^32^1417^0.5658^0.3723^4^Dabyrie Militia^^
+2582^7^0^30^31^1417^0.5515^0.3721^7^Dabyrie Laborer^1707:1:1,4306:5:8^
 2623^1^0^32^32^1416^0.2489^0.6134^1^Spirit of Old^^
 2727^1^0^35^35^1418^0.5414^0.2541^1^Crag Coyote^4583:1:1,12203:1:1^
-3560^8^0^26^27^1441^0.3772^0.3353^8^Healing Ward^^
+2762^2^0^38^39^1417^0.5176^0.5043^2^Thundering Exile^4480:1:1,12030:1:1^
+3560^11^0^26^34^1441^0.3772^0.3353^8^Healing Ward^^
 3809^1^0^21^22^1440^0.3874^0.3653^1^Ashenvale Bear^11406:1:1^
 3844^7^0^23^24^1440^0.4049^0.3298^7^Healing Ward IV^^
 3850^1^0^0^0^0^0.0000^0.0000^0^^^
@@ -78,6 +84,7 @@ GoldScout-export 9^gbx4cjirowt2^13
 4436^4^0^0^0^0^0.0000^0.0000^0^^2592:1:2,4306:2:3,4538:1:1^
 4437^2^0^0^0^0^0.0000^0.0000^0^^4306:1:3^
 4442^4^0^0^0^0^0.0000^0.0000^0^^1785:1:1,2592:1:3,3385:1:1^
+4481^1^0^34^34^1417^0.5455^0.3720^1^Marcel Dabyrie^4306:1:2,5832:1:1^
 4490^1^0^31^31^1441^0.2641^0.5587^1^Grenka Bloodscreech^5843:1:1^
 4499^1^0^30^30^1441^0.1097^0.2176^1^Rok'Alim the Pounder^4784:1:1,5741:1:1,5844:1:1^
 4504^1^0^37^37^1416^0.3742^0.6626^1^Frostmaw^5811:1:1^
@@ -295,6 +302,7 @@ GoldScout-export 9^gbx4cjirowt2^13
 @i^4363^Copper Modulator
 @i^4371^Bronze Tube
 @i^4416^Schematic: Goblin Land Mine
+@i^4480^Thundering Charm
 @i^4538^Snapvine Watermelon
 @i^4542^Moist Cornbread
 @i^4553^Jagged Piece of Stone
@@ -326,6 +334,7 @@ GoldScout-export 9^gbx4cjirowt2^13
 @i^5810^Fresh Carcass
 @i^5811^Frostmaw's Mane
 @i^5829^Razor-sharp Beak
+@i^5832^Marcel's Head
 @i^5837^Steelsnap's Rib
 @i^5842^Unrefined Ore Sample
 @i^5843^Grenka's Claw
@@ -390,6 +399,7 @@ GoldScout-export 9^gbx4cjirowt2^13
 @i^11416^Delicate Ribcage
 @i^11968^Amber Hoop of Spirit
 @i^12010^Fen Ring of the Bandit
+@i^12030^Jet Chain of Regeneration
 @i^12037^Mystery Meat
 @i^12203^Red Wolf Meat
 @i^12564^Assassination Note
@@ -432,6 +442,7 @@ GoldScout-export 9^gbx4cjirowt2^13
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
 @i^19938^Heavy Scorpid Leg
+@i^213422^Illegible Recipe
 @i^248689^Waylaid Crate: Journeyman Curiosities
 @i^248690^Waylaid Crate: Earthly Expert Herbs
 @i^248705^Waylaid Crate: Journeyman Fabrics
@@ -553,6 +564,7 @@ GoldScout-export 9^gbx4cjirowt2^13
 @q^4363^1:7:1
 @q^4371^1:7:1
 @q^4416^2:9:0
+@q^4480^1:0:0
 @q^4538^1:0:0
 @q^4542^1:0:0
 @q^4553^0:15:0
@@ -584,6 +596,7 @@ GoldScout-export 9^gbx4cjirowt2^13
 @q^5810^1:12:0
 @q^5811^1:12:0
 @q^5829^0:15:0
+@q^5832^1:12:0
 @q^5837^1:12:0
 @q^5842^1:12:0
 @q^5843^1:12:0
@@ -648,6 +661,7 @@ GoldScout-export 9^gbx4cjirowt2^13
 @q^11416^0:15:0
 @q^11968^2:4:0
 @q^12010^2:4:0
+@q^12030^2:4:0
 @q^12037^1:7:1
 @q^12203^1:7:1
 @q^12564^1:12:0
@@ -690,6 +704,7 @@ GoldScout-export 9^gbx4cjirowt2^13
 @q^17056^1:15:1
 @q^17057^1:15:0
 @q^19938^0:15:0
+@q^213422^1:12:0
 @q^248689^1:0:1
 @q^248690^1:0:1
 @q^248705^2:0:1
@@ -719,6 +734,7 @@ GoldScout-export 9^gbx4cjirowt2^13
 @m^1414^Kalimdor
 @m^1415^Eastern Kingdoms
 @m^1416^Alterac Mountains
+@m^1417^Arathi Highlands
 @m^1418^Badlands
 @m^1424^Hillsbrad Foothills
 @m^1440^Ashenvale
@@ -1302,8 +1318,14 @@ GoldScout-export 9^gbx4cjirowt2^13
 @a^2413^363:1
 @a^2414^343:1
 @a^2503^205:2,225:1
+@a^2555^166:2
+@a^2562^166:1,167:3,186:1,187:2
+@a^2564^166:7,186:3
+@a^2581^150:1,151:3
+@a^2582^150:4,151:3
 @a^2623^244:1
 @a^2727^110:1
+@a^2762^190:1,210:1
 @a^3560^107:1,127:2,147:5
 @a^3809^147:1
 @a^3844^127:3,128:4
@@ -1336,6 +1358,7 @@ GoldScout-export 9^gbx4cjirowt2^13
 @a^4154^257:5,277:1
 @a^4158^317:1
 @a^4249^82:1,83:1
+@a^4481^150:1
 @a^4490^225:1
 @a^4499^82:1
 @a^4504^267:1
@@ -1380,8 +1403,16 @@ GoldScout-export 9^gbx4cjirowt2^13
 @t^2384^1:162
 @t^2406^2:495
 @t^2503^3:4
+@t^2555^1:1
+@t^2562^1:84
+@t^2564^9:396
+@t^2581^4:125
+@t^2582^7:308
 @t^2623^1:168
+@t^2762^2:597
+@t^3560^3:68
 @t^4093^1:15
 @t^4096^2:34
+@t^4481^1:50
 @t^4504^1:147
 @l^0^enUS
