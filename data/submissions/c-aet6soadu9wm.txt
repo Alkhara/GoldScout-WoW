@@ -1,4 +1,4 @@
-GoldScout-export 6^aet6soadu9wm^10
+GoldScout-export 6^aet6soadu9wm^11
 587^24^0^33^34^1434^0.2926^0.1969^24^Guerrier Bloodscalp^1519:3:3,1520:3:3,2592:2:3,2742:1:1,3771:4:4,3783:1:1,3901:4:4,3915:10:10,4306:11:17^
 588^5^0^34^35^1434^0.2577^0.1016^5^Eclaireur Bloodscalp^2592:1:2,3800:1:1,4306:2:3^
 595^6^0^34^35^1434^0.2585^0.1039^6^Chasseur Bloodscalp^2732:1:1,4306:1:2,213545:1:1^
@@ -56,6 +56,7 @@ GoldScout-export 6^aet6soadu9wm^10
 255899^5^0^37^38^2548^0.7687^0.6293^5^Frôle-marée murloc^268344:3:3^
 255901^6^0^36^37^2548^0.7674^0.6151^6^Clampant des sables^5524:2:2,5569:4:4,12206:1:1,13105:1:1,17057:1:1,268345:2:2^
 255906^1^0^40^40^2548^0.1605^0.7331^1^Snargl^265357:1:1^
+256383^12^0^35^36^2548^0.4537^0.8092^12^Journalier de Ruissepré^4306:4:6,4338:1:1,6419:1:1,248693:1:1^
 256433^1^0^33^33^2548^0.3834^0.6585^1^Menuisier^4306:1:1^
 256434^21^0^37^38^2548^0.3958^0.6345^21^Bûcheron du moulin de Turner^4306:3:4,4338:1:1,4636:1:1,263972:10:10^
 256798^9^0^37^38^2548^0.4692^0.4893^9^Néophyte du Crépuscule^3781:1:1,4306:2:5,5429:1:1,13121:1:1,267073:4:6^
@@ -73,6 +74,8 @@ GoldScout-export 6^aet6soadu9wm^10
 260429^1^0^39^39^1434^0.4355^0.2031^1^Agent de la KapitalRisk^^
 260968^1^0^41^42^2548^0.7695^0.2789^1^Marteleur du Crépuscule^3671:1:1^
 261497^1^0^40^41^2548^0.7660^0.2777^1^Mandefeu du Crépuscule^^
+262473^11^0^39^40^2548^0.3003^0.7226^11^Dragonnet cendrécaille^4402:2:2,4460:7:7,6444:3:3,9896:1:1^
+262477^7^0^41^42^2548^0.3015^0.7322^7^Guerrier cendrécaille^^
 263307^12^0^37^38^2548^0.6341^0.5877^12^Vipère de la clairière^6444:7:7,6826:2:2,213547:1:1,271776:4:4^
 263315^1^0^41^41^2548^0.5953^0.5331^1^Ombassa^281052:1:1^
 263343^13^0^37^38^2548^0.6553^0.5864^13^Busard des basses plaines^1464:6:6,3404:5:5,5636:1:1,5829:2:2,11418:2:2,12037:9:9,271793:6:6^
@@ -155,7 +158,9 @@ GoldScout-export 6^aet6soadu9wm^10
 @i^4106^Cristal réduit
 @i^4306^Etoffe de soie
 @i^4338^Etoffe de tisse-mage
+@i^4402^Petit sac de flammes
 @i^4435^Poussières de Myzrael
+@i^4460^Palmure d'aile arrachée
 @i^4461^Peau de raptor
 @i^4480^Charme de tonnerre
 @i^4513^Coeur de raptor
@@ -175,6 +180,7 @@ GoldScout-export 6^aet6soadu9wm^10
 @i^6358^Bouche-noire huileux
 @i^6362^Morue rochécaille crue
 @i^6413^Brassards de général de brigade
+@i^6419^Mitaines glyphées
 @i^6444^Langue fourchue
 @i^6826^Ecaille brillante
 @i^7412^Gants d'infiltrateur d'esprit
@@ -187,6 +193,7 @@ GoldScout-export 6^aet6soadu9wm^10
 @i^9845^Chaussures d'invocateur de sorcellerie
 @i^9856^Bottes d'archer de brigandage
 @i^9873^Bouclier de renégat de défense
+@i^9896^Brassards jazeran du loup
 @i^11386^Oeil spongieux de basilic
 @i^11416^Cage thoracique délicate
 @i^11418^Os creux d'aile
@@ -301,7 +308,9 @@ GoldScout-export 6^aet6soadu9wm^10
 @q^4106^1:12:0
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4402^1:7:1
 @q^4435^1:12:0
+@q^4460^0:15:0
 @q^4461^1:7:1
 @q^4480^1:0:0
 @q^4513^1:12:0
@@ -321,6 +330,7 @@ GoldScout-export 6^aet6soadu9wm^10
 @q^6358^1:7:1
 @q^6362^1:7:1
 @q^6413^2:4:0
+@q^6419^2:4:0
 @q^6444^0:15:0
 @q^6826^0:15:0
 @q^7412^2:4:0
@@ -333,6 +343,7 @@ GoldScout-export 6^aet6soadu9wm^10
 @q^9845^2:4:0
 @q^9856^2:4:0
 @q^9873^2:4:0
+@q^9896^2:4:0
 @q^11386^0:15:0
 @q^11416^0:15:0
 @q^11418^0:15:0
@@ -1114,6 +1125,7 @@ GoldScout-export 6^aet6soadu9wm^10
 @a^255899^255:5
 @a^255901^235:1,254:1,255:4
 @a^255906^283:1
+@a^256383^308:1,328:3,329:8
 @a^256433^267:1
 @a^256434^227:1,228:2,247:5,248:3,267:7,268:3
 @a^256798^188:1,189:5,209:3
@@ -1131,6 +1143,8 @@ GoldScout-export 6^aet6soadu9wm^10
 @a^260429^88:1
 @a^260968^115:1
 @a^261497^115:1
+@a^262473^266:2,285:4,286:4,306:1
+@a^262477^285:3,286:3,306:1
 @a^263307^212:2,232:5,252:5
 @a^263315^211:1
 @a^263343^212:1,213:2,232:3,233:3,253:2,272:1,273:1

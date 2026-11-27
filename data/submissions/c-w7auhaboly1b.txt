@@ -1,4 +1,4 @@
-GoldScout-export 9^w7auhaboly1b^25
+GoldScout-export 9^w7auhaboly1b^26
 92^5^0^39^40^1418^0.1375^0.3462^5^Rock Elemental^4553:2:2,4784:4:4,7912:2:3,8150:2:2^
 506^1^0^18^18^1436^0.3716^0.3183^1^Sergeant Brashclaw^2203:1:1,2592:1:2^
 569^1^0^21^21^1431^0.1679^0.7338^1^Green Recluse^3174:1:1^
@@ -30,6 +30,7 @@ GoldScout-export 9^w7auhaboly1b^25
 2748^2^0^0^0^0^0.0000^0.0000^0^^7672:1:1,9418:1:1,11118:2:2,274432:1:1^
 2753^1^0^38^38^1418^0.4657^0.7411^1^Barnabus^9929:1:1,12208:1:1^
 2831^20^0^39^41^1418^0.1714^0.6043^20^Giant Buzzard^1464:10:10,3404:4:4,5116:7:7,5636:1:1,5829:3:3,7847:5:5,11416:6:6,11418:1:1,12037:6:6^
+3098^6^0^1^2^1411^0.4471^0.6445^6^Mottled Boar^117:1:1,1377:1:1,1378:1:1,4865:3:3,7098:2:2^
 3660^3^0^31^31^1439^0.5604^0.2617^3^Athrikus Narassin^5839:2:2,282406:1:1^
 3974^1^0^0^0^0^0.0000^0.0000^0^^7756:1:1^
 3975^1^0^0^0^0^0.0000^0.0000^0^^7717:1:1^
@@ -146,7 +147,7 @@ GoldScout-export 9^w7auhaboly1b^25
 9377^5^0^33^34^1441^0.7967^0.6009^5^Swirling Vortex^7069:1:1^
 11578^1^0^32^33^1443^0.5561^0.8822^1^Whirlwind Shredder^7069:1:1^
 12865^1^0^36^36^1413^0.4818^0.9230^1^Ambassador Malcin^17009:1:1^
-12922^1^0^37^38^1435^0.6181^0.2096^1^Imp Minion^^
+12922^1^0^0^0^1435^0.6181^0.2096^1^Imp Minion^^
 250187^1^0^0^0^0^0.0000^0.0000^0^^262889:1:1^
 250657^1^0^0^0^0^0.0000^0.0000^0^^271215:1:1,273085:1:1^
 254560^7^0^39^40^2548^0.4875^0.4648^7^Twilight Shadowmancer^3671:1:1,4306:4:8,248691:1:1,265745:3:3^
@@ -223,6 +224,7 @@ GoldScout-export 9^w7auhaboly1b^25
 263899^2^0^0^0^0^0.0000^0.0000^0^^262889:1:1^
 270667^2^0^38^39^2548^0.4830^0.6768^2^Farholde Priest^4338:1:1,8746:1:1^
 274715^1^0^0^0^0^0.0000^0.0000^0^^770:1:1,4036:1:1^
+@i^117^Tough Jerky
 @i^422^Dwarven Mild
 @i^770^Pointy Crocolisk Tooth
 @i^774^Malachite
@@ -236,6 +238,8 @@ GoldScout-export 9^w7auhaboly1b^25
 @i^1081^Crisp Spider Meat
 @i^1177^Oil of Olaf
 @i^1205^Melon Juice
+@i^1377^Frayed Gloves
+@i^1378^Frayed Pants
 @i^1464^Buzzard Talon
 @i^1465^Tigerbane
 @i^1529^Jade
@@ -356,6 +360,7 @@ GoldScout-export 9^w7auhaboly1b^25
 @i^4732^Glyphed Cloak
 @i^4735^Mistscape Cloak
 @i^4784^Lifeless Stone
+@i^4865^Ruined Pelt
 @i^5009^Mindbender Loop
 @i^5116^Long Tail Feather
 @i^5429^A Pretty Rock
@@ -388,6 +393,7 @@ GoldScout-export 9^w7auhaboly1b^25
 @i^7067^Elemental Earth
 @i^7069^Elemental Air
 @i^7084^Pattern: Crimson Silk Shoulders
+@i^7098^Splintered Tusk
 @i^7331^Phalanx Shield of the Defender
 @i^7369^Elder's Robe of the Channeler
 @i^7407^Infiltrator Armor of the Sorcerer
@@ -570,6 +576,7 @@ GoldScout-export 9^w7auhaboly1b^25
 @i^281052^Ombassa's Hide
 @i^282406^Azsharan Key
 @i^287014^Krol'dok Warplate Pauldrons
+@q^117^1:0:0
 @q^422^1:0:0
 @q^770^0:15:0
 @q^774^2:7:1
@@ -583,6 +590,8 @@ GoldScout-export 9^w7auhaboly1b^25
 @q^1081^1:7:1
 @q^1177^1:0:0
 @q^1205^1:0:0
+@q^1377^0:4:0
+@q^1378^0:4:0
 @q^1464^0:15:0
 @q^1465^2:2:0
 @q^1529^2:7:1
@@ -703,6 +712,7 @@ GoldScout-export 9^w7auhaboly1b^25
 @q^4732^2:4:0
 @q^4735^2:4:0
 @q^4784^0:15:0
+@q^4865^0:15:0
 @q^5009^2:4:0
 @q^5116^1:7:1
 @q^5429^0:15:0
@@ -735,6 +745,7 @@ GoldScout-export 9^w7auhaboly1b^25
 @q^7067^1:7:1
 @q^7069^1:7:1
 @q^7084^2:9:0
+@q^7098^0:15:0
 @q^7331^2:4:0
 @q^7369^2:4:0
 @q^7407^2:4:0
@@ -917,6 +928,7 @@ GoldScout-export 9^w7auhaboly1b^25
 @q^281052^1:12:0
 @q^282406^1:13:0
 @q^287014^3:4:0
+@m^1411^Durotar
 @m^1413^The Barrens
 @m^1414^Kalimdor
 @m^1415^Eastern Kingdoms
@@ -1329,6 +1341,7 @@ GoldScout-export 9^w7auhaboly1b^25
 @a^2735^142:1,163:8,164:5,183:1,184:6
 @a^2753^289:1
 @a^2831^205:2,223:7,243:9,262:2
+@a^3098^248:4,249:1,268:1
 @a^3660^111:3
 @a^3984^125:1
 @a^4151^235:1,256:1
@@ -1405,6 +1418,7 @@ GoldScout-export 9^w7auhaboly1b^25
 @t^759^1:11
 @t^762^1:99
 @t^2753^1:394
+@t^3098^5:135
 @t^4846^2:206
 @t^5622^1:6
 @t^12922^1:24

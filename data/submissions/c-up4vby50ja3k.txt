@@ -1,4 +1,4 @@
-GoldScout-export 9^up4vby50ja3k^15
+GoldScout-export 9^up4vby50ja3k^16
 92^8^0^39^40^1418^0.2298^0.5060^8^Rock Elemental^4552:1:1,4553:4:4,4627:3:3,4784:3:3,7912:2:3,8150:3:3^
 587^5^0^33^34^1434^0.2930^0.2002^5^Bloodscalp Warrior^2725:1:1,4306:3:5^
 595^1^0^35^35^1434^0.2292^0.1213^1^Bloodscalp Hunter^3804:1:1^
@@ -139,6 +139,8 @@ GoldScout-export 9^up4vby50ja3k^15
 7796^1^0^0^0^0^0.0000^0.0000^0^^251398:1:1,274645:1:1^
 7847^2^0^46^46^1446^0.6018^0.3844^2^Caliph Scorpidsting^4338:1:1,8723:1:1^
 7848^3^0^46^46^1444^0.5523^0.5433^3^Lurking Feral Scar^6149:1:1,8973:1:1^
+7855^8^0^44^45^1446^0.7100^0.4441^8^Southsea Pirate^4306:1:2,4338:2:4,20519:1:1^
+7856^14^0^44^45^1446^0.7141^0.4468^14^Southsea Freebooter^3986:1:1,4338:6:10,9260:1:1,20519:7:7^
 8095^1^0^0^0^0^0.0000^0.0000^0^^14784:1:1^
 8127^1^0^0^0^0^0.0000^0.0000^0^^9639:1:1^
 8179^2^0^43^43^1434^0.4961^0.3166^2^Greater Healing Ward^^
@@ -292,6 +294,7 @@ GoldScout-export 9^up4vby50ja3k^15
 @i^3962^Thick Leather Boots
 @i^3963^Thick Leather Bracers
 @i^3966^Thick Leather Pants
+@i^3986^Protective Pavise
 @i^4003^Overlinked Chain Cloak
 @i^4006^Overlinked Chain Shoulderpads
 @i^4016^Zanzil's Mixture
@@ -439,6 +442,7 @@ GoldScout-export 9^up4vby50ja3k^15
 @i^17058^Fish Oil
 @i^18961^Zukk'ash Carapace
 @i^18962^Stinglasher's Glands
+@i^20519^Southsea Pirate Hat
 @i^20763^Broken Weapon
 @i^211269^Primitive Drawing
 @i^213127^Partial Mystical Notes
@@ -575,6 +579,7 @@ GoldScout-export 9^up4vby50ja3k^15
 @q^3962^0:4:0
 @q^3963^0:4:0
 @q^3966^0:4:0
+@q^3986^0:4:0
 @q^4003^0:4:0
 @q^4006^0:4:0
 @q^4016^1:12:0
@@ -722,6 +727,7 @@ GoldScout-export 9^up4vby50ja3k^15
 @q^17058^1:15:0
 @q^18961^1:12:0
 @q^18962^1:12:0
+@q^20519^1:12:0
 @q^20763^0:15:0
 @q^211269^1:12:0
 @q^213127^1:15:0
@@ -1659,6 +1665,8 @@ GoldScout-export 9^up4vby50ja3k^15
 @a^7727^153:5
 @a^7847^151:1,152:1
 @a^7848^211:3
+@a^7855^174:5,194:3
+@a^7856^174:8,194:6
 @a^8179^129:2
 @a^8996^92:1,132:1,151:5,152:5
 @a^10928^306:1,325:3,346:1
@@ -1730,4 +1738,6 @@ GoldScout-export 9^up4vby50ja3k^15
 @t^2549^1:47
 @t^2550^1:1
 @t^4505^4:146
+@t^7855^8:148
+@t^7856^13:237
 @l^0^enUS

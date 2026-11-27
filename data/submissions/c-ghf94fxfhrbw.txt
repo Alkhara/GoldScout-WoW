@@ -1,4 +1,4 @@
-GoldScout-export 7^ghf94fxfhrbw^46
+GoldScout-export 7^ghf94fxfhrbw^47
 92^9^0^39^40^1418^0.1445^0.3508^9^Rock Elemental^4552:1:1,4553:4:4,4627:3:3,4784:5:5,7067:1:1,7848:1:1,7912:1:1,8150:1:1,213544:1:1^
 588^6^0^34^35^1434^0.2417^0.1237^6^Bloodscalp Scout^1710:1:1,2740:1:1,3901:2:2,3915:3:3,4306:1:2^
 595^2^0^34^35^1434^0.2344^0.1227^2^Bloodscalp Hunter^3915:1:1^
@@ -39,12 +39,15 @@ GoldScout-export 7^ghf94fxfhrbw^46
 2976^2^0^6^7^1412^0.5127^0.5416^2^Venture Co. Laborer^^
 2978^15^0^8^9^1412^0.5784^0.5371^15^Venture Co. Worker^117:2:2,159:1:1,2589:5:6,2635:1:1,2645:1:1,2835:1:2,3013:1:1,15004:1:1^
 3035^12^0^7^8^1412^0.4569^0.5206^11^Flatland Cougar^4802:6:6,4805:1:1,4813:3:3,4814:2:2^
+3100^1^0^8^9^1411^0.5514^0.1052^1^Elder Mottled Boar^769:1:1,3171:1:1^
 3111^17^0^6^7^1411^0.4806^0.4916^17^Razormane Quilboar^727:1:1,1181:1:1,1412:1:1,1414:1:1,1431:1:1,2138:1:1,2589:6:10,4536:1:1^
 3112^5^0^7^8^1411^0.4690^0.4924^5^Razormane Scout^767:1:1,1415:1:1,2589:3:5^
+3127^1^0^9^10^1411^0.5523^0.1115^1^Venomtail Scorpid^4867:1:1,5466:1:1^
 3128^10^0^5^6^1411^0.5822^0.5563^10^Kul Tiras Sailor^1369:1:1,1374:1:1,1423:1:1,2589:4:5,3363:1:1^
 3129^9^0^6^7^1411^0.5892^0.5732^9^Kul Tiras Marine^159:2:2,774:1:1,1415:1:1,2589:3:5^
 3192^1^0^8^8^1411^0.5951^0.5848^1^Lieutenant Benedict^2589:1:2,4882:1:1^
-3198^1^0^10^10^1411^0.5468^0.0879^1^Burning Blade Apprentice^14544:1:1^
+3197^5^0^9^10^1411^0.5494^0.0998^5^Burning Blade Fanatic^1411:1:1^
+3198^5^0^10^11^1411^0.5420^0.0873^5^Burning Blade Apprentice^117:1:1,14544:2:2^
 3381^6^0^12^13^1413^0.6367^0.4669^6^Southsea Brigand^2589:1:1,3374:1:1,14097:1:1,211780:1:1^
 3382^4^0^13^14^1413^0.6308^0.4880^4^Southsea Cannoneer^^
 3385^4^0^15^16^1413^0.6178^0.5487^4^Theramore Marine^414:1:1,1180:1:1,15485:1:1^
@@ -246,6 +249,7 @@ GoldScout-export 7^ghf94fxfhrbw^46
 @i^1210^Shadowgem
 @i^1369^Ragged Leather Belt
 @i^1374^Frayed Shoes
+@i^1411^Withered Staff
 @i^1412^Crude Bastard Sword
 @i^1414^Cracked Sledge
 @i^1415^Carpenter's Mallet
@@ -298,6 +302,7 @@ GoldScout-export 7^ghf94fxfhrbw^46
 @i^3010^Fine Sand
 @i^3013^Scroll of Protection
 @i^3042^BKP Sparrow Smallbore
+@i^3171^Broken Boar Tusk
 @i^3180^Flecked Raptor Scale
 @i^3181^Partially Digested Meat
 @i^3182^Spider's Silk
@@ -401,6 +406,7 @@ GoldScout-export 7^ghf94fxfhrbw^46
 @i^4805^Flatland Cougar Femur
 @i^4813^Small Leather Collar
 @i^4814^Discolored Fang
+@i^4867^Broken Scorpid Leg
 @i^4882^Benedict's Key
 @i^5025^Hezrul's Head
 @i^5098^Altered Snapjaw Shell
@@ -412,6 +418,7 @@ GoldScout-export 7^ghf94fxfhrbw^46
 @i^5334^99-Year-Old Port
 @i^5429^A Pretty Rock
 @i^5431^Empty Hip Flask
+@i^5466^Scorpid Stinger
 @i^5523^Small Barnacled Clam
 @i^5524^Thick-shelled Clam
 @i^5569^Seaweed
@@ -641,6 +648,7 @@ GoldScout-export 7^ghf94fxfhrbw^46
 @q^1210^2:7:1
 @q^1369^0:4:0
 @q^1374^0:4:0
+@q^1411^0:2:0
 @q^1412^0:2:0
 @q^1414^0:2:0
 @q^1415^0:2:0
@@ -693,6 +701,7 @@ GoldScout-export 7^ghf94fxfhrbw^46
 @q^3010^0:15:0
 @q^3013^1:0:0
 @q^3042^2:2:0
+@q^3171^0:15:0
 @q^3180^0:15:0
 @q^3181^0:15:0
 @q^3182^1:7:1
@@ -796,6 +805,7 @@ GoldScout-export 7^ghf94fxfhrbw^46
 @q^4805^1:12:0
 @q^4813^0:15:0
 @q^4814^0:15:0
+@q^4867^0:15:0
 @q^4882^1:13:0
 @q^5025^1:12:0
 @q^5098^1:12:0
@@ -807,6 +817,7 @@ GoldScout-export 7^ghf94fxfhrbw^46
 @q^5334^1:12:0
 @q^5429^0:15:0
 @q^5431^0:15:0
+@q^5466^1:7:1
 @q^5523^1:7:0
 @q^5524^1:7:0
 @q^5569^0:15:0
@@ -2301,12 +2312,15 @@ GoldScout-export 7^ghf94fxfhrbw^46
 @a^2976^210:2
 @a^2978^211:15
 @a^3035^167:1,168:2,187:1,188:2,208:1,230:1,231:1,250:2
+@a^3100^51:1
 @a^3111^188:3,189:11,190:3
 @a^3112^188:1,189:2,190:1,208:1
+@a^3127^51:1
 @a^3128^211:5,231:5
 @a^3129^231:9
 @a^3192^231:1
-@a^3198^30:1
+@a^3197^30:1,51:4
+@a^3198^30:5
 @a^3381^192:6
 @a^3382^192:3,212:1
 @a^3385^212:1,232:3

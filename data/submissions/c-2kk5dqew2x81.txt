@@ -1,4 +1,4 @@
-GoldScout-export 6^2kk5dqew2x81^13
+GoldScout-export 6^2kk5dqew2x81^14
 157^1^0^14^14^1436^0.5679^0.5802^1^Goretusk^769:1:2,3172:1:1^
 206^4^0^29^30^1431^0.7406^0.6897^4^Nightbane Vile Fang^^
 212^8^0^29^30^1431^0.3320^0.7190^8^Splinter Fist Warrior^1205:2:2,1826:1:1,3770:1:1,4306:2:3^
@@ -71,9 +71,12 @@ GoldScout-export 6^2kk5dqew2x81^13
 4457^1^0^36^36^1434^0.3689^0.2124^1^Murkgill Forager^17057:1:1,17058:1:1^
 6412^1^0^24^25^1437^0.4527^0.4316^1^Skeleton^^
 6523^3^0^27^28^1437^0.4954^0.1722^3^Dark Iron Rifleman^2592:1:1,6315:1:1^
+256807^5^0^39^40^2548^0.8175^0.4862^5^Shore Crawler^4636:1:1,5569:2:2,17057:1:1,268345:3:3,271650:3:3^
+259052^7^0^38^39^2548^0.6302^0.5846^7^Rog'mar Poacher^3817:1:1,4306:1:1^
 259267^3^0^36^37^2548^0.5485^0.8404^3^Plains Coyote^4582:1:1,12203:1:1,271432:3:3^
 260803^2^0^27^28^1437^0.5142^0.6314^2^Highland Spider^1074:1:1,2251:1:1,11995:1:1^
 262037^2^0^37^38^2548^0.6157^0.8470^2^Roosting Duskbat^11393:1:1,11394:1:1^
+263307^1^0^38^38^2548^0.6235^0.5952^1^Glade Viper^6444:1:1^
 270589^1^0^31^31^1437^0.1600^0.2347^1^Nightveiled Rotheap^279537:1:1^
 271334^3^0^25^26^1437^0.5794^0.3238^3^Maddened Rotclaw^3702:1:1,3730:1:1,11407:2:2^
 @i^159^Refreshing Spring Water
@@ -136,6 +139,7 @@ GoldScout-export 6^2kk5dqew2x81^13
 @i^3771^Wild Hog Shank
 @i^3783^Light Scimitar
 @i^3792^Interlaced Belt
+@i^3817^Reinforced Buckler
 @i^3876^Fang of Bhag'thera
 @i^3877^Talon of Tethis
 @i^3880^Head of Bangalash
@@ -147,9 +151,11 @@ GoldScout-export 6^2kk5dqew2x81^13
 @i^4585^Dripping Spider Mandible
 @i^4586^Smooth Raptor Skin
 @i^4603^Raw Spotted Yellowtail
+@i^4636^Strong Iron Lockbox
 @i^5113^Mark of the Syndicate
 @i^5136^Torn Furry Ear
 @i^5524^Thick-shelled Clam
+@i^5569^Seaweed
 @i^5637^Large Fang
 @i^6308^Raw Bristle Whisker Catfish
 @i^6315^Steelarrow Crossbow
@@ -157,6 +163,7 @@ GoldScout-export 6^2kk5dqew2x81^13
 @i^6359^Firefin Snapper
 @i^6362^Raw Rockscale Cod
 @i^6382^Forest Leather Belt
+@i^6444^Forked Tongue
 @i^7408^Infiltrator Shoulders of the Wolf
 @i^9860^Archer's Cloak of the Beast
 @i^11150^Formula: Enchant Gloves - Mining
@@ -179,7 +186,9 @@ GoldScout-export 6^2kk5dqew2x81^13
 @i^248689^Waylaid Crate: Journeyman Curiosities
 @i^262888^Sealed Journeyman's Writ
 @i^262889^Sealed Expert's Writ
+@i^268345^Sand Crawler Meat
 @i^271432^Coyote Pelt
+@i^271650^Crawler Spittle
 @i^279385^Pristine Crimson Scale
 @i^279537^Rotheap Innards
 @i^280103^Razormaw Incisor
@@ -243,6 +252,7 @@ GoldScout-export 6^2kk5dqew2x81^13
 @q^3771^1:0:0
 @q^3783^0:2:0
 @q^3792^0:4:0
+@q^3817^0:4:0
 @q^3876^1:12:0
 @q^3877^1:12:0
 @q^3880^1:12:0
@@ -254,9 +264,11 @@ GoldScout-export 6^2kk5dqew2x81^13
 @q^4585^0:15:0
 @q^4586^0:15:0
 @q^4603^1:7:1
+@q^4636^2:15:0
 @q^5113^0:15:0
 @q^5136^0:15:0
 @q^5524^1:7:0
+@q^5569^0:15:0
 @q^5637^1:7:1
 @q^6308^1:7:1
 @q^6315^2:2:0
@@ -264,6 +276,7 @@ GoldScout-export 6^2kk5dqew2x81^13
 @q^6359^1:7:1
 @q^6362^1:7:1
 @q^6382^2:4:0
+@q^6444^0:15:0
 @q^7408^2:4:0
 @q^9860^2:4:0
 @q^11150^2:9:0
@@ -286,7 +299,9 @@ GoldScout-export 6^2kk5dqew2x81^13
 @q^248689^1:0:1
 @q^262888^3:0:0
 @q^262889^3:0:0
+@q^268345^1:12:0
 @q^271432^1:12:0
+@q^271650^1:12:0
 @q^279385^1:12:0
 @q^279537^1:15:0
 @q^280103^1:12:0
@@ -1135,9 +1150,12 @@ GoldScout-export 6^2kk5dqew2x81^13
 @a^4457^87:1
 @a^6412^169:1
 @a^6523^69:3
+@a^256807^196:5
+@a^259052^232:2,233:3,251:2
 @a^259267^330:3
 @a^260803^250:1,270:1
 @a^262037^332:2
+@a^263307^232:1
 @a^270589^83:1
 @a^271334^91:1,112:1,171:1
 @f^1439^0^1^32^12238:1:1^166:1
