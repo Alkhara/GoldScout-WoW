@@ -1,4 +1,4 @@
-GoldScout-export 9^zysaiy0o2duf^41
+GoldScout-export 9^zysaiy0o2duf^42
 743^1^0^42^43^1435^0.6056^0.5385^1^Wyrmkin Dreamwalker^^
 1789^1^0^55^56^1422^0.4957^0.6561^1^Skeletal Acolyte^8948:1:1^
 1794^2^0^54^55^1422^0.4491^0.6888^2^Soulless Ghoul^12840:1:1,14047:1:2^
@@ -396,7 +396,7 @@ GoldScout-export 9^zysaiy0o2duf^41
 12127^1^0^0^0^1459^0.0000^0.0000^0^^14047:1:1,17326:1:1,17422:1:1^
 12178^7^0^55^56^1451^0.6298^0.5768^7^Tortured Druid^8766:1:1,14047:2:5,21937:6:6^
 12179^7^0^56^57^1451^0.6353^0.5600^7^Tortured Sentinel^8953:1:1,13446:1:1,14047:2:3,21937:6:6^
-12201^1^0^0^0^0^0.0000^0.0000^0^^^
+12201^2^0^0^0^0^0.0000^0.0000^0^^17714:1:1,17766:1:1^
 12203^1^0^0^0^0^0.0000^0.0000^0^^^
 12206^3^0^0^0^0^0.0000^0.0000^0^^7912:1:2^
 12207^1^0^0^0^0^0.0000^0.0000^0^^5569:1:1,7973:1:1^
@@ -423,8 +423,8 @@ GoldScout-export 9^zysaiy0o2duf^41
 13298^1^0^0^0^1459^0.0000^0.0000^0^^5759:1:1^
 13323^2^0^0^0^0^0.0000^0.0000^0^^8146:1:1^
 13358^2^0^0^0^1459^0.0000^0.0000^0^^14504:1:1,19278:1:1^
-13596^1^0^0^0^0^0.0000^0.0000^0^^^
-13601^1^0^0^0^0^0.0000^0.0000^0^^^
+13596^2^0^0^0^0^0.0000^0.0000^0^^770:1:1,17728:1:1,252867:1:1^
+13601^2^0^0^0^0^0.0000^0.0000^0^^17719:1:1^
 14188^1^0^0^0^1459^0.0000^0.0000^0^^17306:1:1,17326:1:1^
 14516^1^0^0^0^0^0.0000^0.0000^0^^12843:1:1,18759:1:1,276784:1:1^
 14520^1^0^0^0^0^0.0000^0.0000^0^^^
@@ -484,6 +484,7 @@ GoldScout-export 9^zysaiy0o2duf^41
 278137^8^0^55^56^2482^0.6550^0.7425^8^Fungal Bloom^^
 278644^1^0^0^0^0^0.0000^0.0000^0^^7912:1:2,8150:1:1,11370:1:1^
 @i^556^Buzzard Beak
+@i^770^Pointy Crocolisk Tooth
 @i^1074^Hard Spider Leg Tip
 @i^1169^Blackskull Shield
 @i^1520^Troll Sweat
@@ -967,9 +968,13 @@ GoldScout-export 9^zysaiy0o2duf^41
 @i^17414^Codex: Prayer of Fortitude II
 @i^17422^Armor Scraps
 @i^17683^Book: Gift of the Wild II
+@i^17714^Bracers of the Stone Princess
+@i^17719^Inventor's Focal Sword
+@i^17728^Albino Crocscale Boots
 @i^17761^Gem of the First Khan
 @i^17763^Gem of the Third Khan
 @i^17765^Gem of the Fifth Khan
+@i^17766^Princess Theradras' Scepter
 @i^18103^Band of Rumination
 @i^18285^Crystallized Mana Shard
 @i^18286^Condensed Mana Fragment
@@ -1072,6 +1077,7 @@ GoldScout-export 9^zysaiy0o2duf^41
 @i^251444^Plans: Blessed Plate Belt
 @i^251641^Hyjal Venison Cut
 @i^251781^Head Scratcher's Scratchers
+@i^252867^Pattern: Prowler's Leather Gauntlets
 @i^253341^Hyjal Owl Feather
 @i^258323^Missing Mail
 @i^262890^Sealed Artisan's Writ
@@ -1126,6 +1132,7 @@ GoldScout-export 9^zysaiy0o2duf^41
 @i^281242^Winterspring Owl Feather
 @i^282028^Broken Frond of Celastrus
 @q^556^0:15:0
+@q^770^0:15:0
 @q^1074^0:15:0
 @q^1169^4:4:0
 @q^1520^0:15:0
@@ -1609,9 +1616,13 @@ GoldScout-export 9^zysaiy0o2duf^41
 @q^17414^3:9:0
 @q^17422^1:12:0
 @q^17683^3:9:0
+@q^17714^3:4:0
+@q^17719^3:2:0
+@q^17728^3:4:0
 @q^17761^1:12:0
 @q^17763^1:12:0
 @q^17765^1:12:0
+@q^17766^3:2:0
 @q^18103^3:4:0
 @q^18285^0:15:0
 @q^18286^0:15:0
@@ -1714,6 +1725,7 @@ GoldScout-export 9^zysaiy0o2duf^41
 @q^251444^2:9:0
 @q^251641^1:12:0
 @q^251781^1:12:0
+@q^252867^3:9:0
 @q^253341^1:12:0
 @q^258323^1:12:0
 @q^262890^3:0:0
