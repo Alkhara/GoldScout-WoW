@@ -1,10 +1,11 @@
-GoldScout-export 9^xro4rzmjlyk6^31
+GoldScout-export 9^xro4rzmjlyk6^32
 1492^1^0^47^47^1434^0.3630^0.6965^1^Gorlash^3932:1:1,4338:1:3,7973:1:1^
 1559^1^0^51^51^1434^0.3984^0.8255^1^King Mukla^4103:1:1^
 1785^5^0^52^53^1422^0.4774^0.5029^5^Skeletal Terror^13446:1:1,14047:2:2^
-1789^2^0^56^56^1422^0.4438^0.6866^2^Skeletal Acolyte^7972:1:1,12840:1:1^
-1794^2^0^54^55^1422^0.4204^0.6718^2^Soulless Ghoul^8948:1:1^
-1795^3^0^55^56^1422^0.4631^0.6360^3^Searing Ghoul^6530:1:1,8948:1:1,12840:1:1,14047:2:3^
+1787^8^0^54^55^1422^0.4002^0.6850^8^Skeletal Executioner^7972:1:1,12840:4:4,13446:1:1,14047:1:2,14619:8:8^
+1789^6^0^55^56^1422^0.4305^0.6869^6^Skeletal Acolyte^7972:1:1,10165:1:1,12840:3:3,14047:3:5,14619:4:4^
+1794^3^0^54^55^1422^0.4213^0.6770^3^Soulless Ghoul^8948:1:1^
+1795^4^0^55^56^1422^0.4583^0.6513^4^Searing Ghoul^6530:1:1,8948:1:1,12840:1:1,14047:2:3^
 2640^1^0^46^47^1425^0.6749^0.6604^1^Vilebranch Witch Doctor^^
 2641^4^0^46^47^1425^0.6585^0.6989^4^Vilebranch Headhunter^1520:1:1,4338:1:2,4599:1:1,8153:2:4,9259:2:2,9294:1:1^
 2642^6^0^47^48^1425^0.6457^0.6955^6^Vilebranch Shadowcaster^1520:2:2,4338:2:4,4599:2:2,8152:2:2,9259:2:2^
@@ -730,7 +731,7 @@ GoldScout-export 9^xro4rzmjlyk6^31
 @i^10078^Lord's Crest of the Champion
 @i^10087^Gothic Plate Gauntlets of the Beast
 @i^10134^Revenant Shoulders of Defense
-@i^10165^Templar Gauntlets of the Tiger
+@i^10165^Templar Gauntlets of the Beast
 @i^10171^Templar Bracers of the Boar
 @i^10180^Mystical Belt of the Sorcerer
 @i^10196^Crusader's Gauntlets of the Tiger
@@ -849,6 +850,7 @@ GoldScout-export 9^xro4rzmjlyk6^31
 @i^14438^Venomshroud Boots
 @i^14441^Venomshroud Mask
 @i^14498^Pattern: Runecloth Headband
+@i^14619^Skeletal Fragments
 @i^14775^Ravager's Woolies
 @i^14778^Khan's Bindings
 @i^14779^Khan's Chestpiece
@@ -1448,6 +1450,7 @@ GoldScout-export 9^xro4rzmjlyk6^31
 @q^14438^2:4:0
 @q^14441^2:4:0
 @q^14498^2:9:0
+@q^14619^1:12:0
 @q^14775^2:4:0
 @q^14778^2:4:0
 @q^14779^2:4:0
@@ -2960,9 +2963,10 @@ GoldScout-export 9^xro4rzmjlyk6^31
 @a^1492^267:1
 @a^1559^327:1
 @a^1785^189:2,209:3
-@a^1789^268:1,289:1
-@a^1794^248:1,288:1
-@a^1795^248:1,249:2
+@a^1787^267:7,268:1
+@a^1789^267:1,268:4,289:1
+@a^1794^248:1,268:1,288:1
+@a^1795^248:1,249:2,268:1
 @a^2640^273:1
 @a^2641^273:2,293:2
 @a^2642^272:3,293:3
@@ -3185,9 +3189,10 @@ GoldScout-export 9^xro4rzmjlyk6^31
 @a^270807^264:2
 @a^272313^294:1
 @t^1785^5:119
-@t^1789^1:143
-@t^1794^2:252
-@t^1795^3:196
+@t^1787^7:395
+@t^1789^5:245
+@t^1794^3:305
+@t^1795^4:197
 @t^4474^2:23
 @t^4475^3:3
 @t^10717^13:546

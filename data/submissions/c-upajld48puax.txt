@@ -1,5 +1,9 @@
-GoldScout-export 9^upajld48puax^11
+GoldScout-export 9^upajld48puax^12
+684^1^0^38^38^1434^0.4969^0.2398^1^Shadowmaw Panther^1686:1:1,5637:1:1^
+728^1^0^40^40^1434^0.4950^0.1994^1^Bhag'thera^3876:1:1^
+905^1^0^31^31^1434^0.3992^0.2180^1^Sharptooth Frenzy^4860:1:1^
 1151^1^0^36^36^1434^0.2978^0.2662^1^Saltwater Crocolisk^770:1:1,7111:1:1,12037:1:1^
+1152^20^0^35^36^1434^0.4022^0.2320^20^Snapjaw Crocolisk^770:14:14,3667:5:5,4104:5:5,12037:11:11^
 3974^1^0^0^0^0^0.0000^0.0000^0^^274292:1:1^
 3976^1^0^0^0^0^0.0000^0.0000^0^^7726:1:1^
 3977^1^0^0^0^0^0.0000^0.0000^0^^7720:1:1^
@@ -78,6 +82,7 @@ GoldScout-export 9^upajld48puax^11
 @i^3402^Soft Patch of Fur
 @i^3404^Buzzard Wing
 @i^3430^Sniper Rifle of the Bandit
+@i^3667^Tender Crocolisk Meat
 @i^3671^Lifeless Skull
 @i^3779^Hefty War Axe
 @i^3780^Long-barreled Musket
@@ -88,7 +93,9 @@ GoldScout-export 9^upajld48puax^11
 @i^3798^Interlaced Shoulderpads
 @i^3814^Double Mail Shoulderpads
 @i^3827^Mana Potion
+@i^3876^Fang of Bhag'thera
 @i^3928^Superior Healing Potion
+@i^4104^Snapjaw Crocolisk Skin
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4402^Small Flame Sac
@@ -96,6 +103,7 @@ GoldScout-export 9^upajld48puax^11
 @i^4599^Cured Ham Steak
 @i^4636^Strong Iron Lockbox
 @i^4732^Glyphed Cloak
+@i^4860^Glistening Frenzy Scale
 @i^5011^Welken Ring
 @i^5116^Long Tail Feather
 @i^5128^Shed Lizard Skin
@@ -169,6 +177,7 @@ GoldScout-export 9^upajld48puax^11
 @q^3402^0:15:0
 @q^3404^1:7:1
 @q^3430^2:2:0
+@q^3667^1:7:1
 @q^3671^0:15:0
 @q^3779^0:2:0
 @q^3780^0:2:0
@@ -179,7 +188,9 @@ GoldScout-export 9^upajld48puax^11
 @q^3798^0:4:0
 @q^3814^0:4:0
 @q^3827^1:0:0
+@q^3876^1:12:0
 @q^3928^1:0:0
+@q^4104^1:12:0
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4402^1:7:1
@@ -187,6 +198,7 @@ GoldScout-export 9^upajld48puax^11
 @q^4599^1:0:0
 @q^4636^2:15:0
 @q^4732^2:4:0
+@q^4860^0:15:0
 @q^5011^2:4:0
 @q^5116^1:7:1
 @q^5128^0:15:0
@@ -922,7 +934,11 @@ GoldScout-export 9^upajld48puax^11
 @c^279978^
 @c^279985^
 @c^279987^
+@a^684^89:1
+@a^728^69:1
+@a^905^87:1
 @a^1151^105:1
+@a^1152^67:2,68:4,87:1,88:6,107:4,127:3
 @a^4388^170:1
 @a^4401^149:4,169:3,170:5,171:1,190:2,191:7,192:1,211:1
 @a^4402^149:2,169:1,170:4,171:1,190:1,191:4,211:1
@@ -963,6 +979,10 @@ GoldScout-export 9^upajld48puax^11
 @a^263380^172:1
 @a^269175^106:1,126:3
 @a^270667^249:1,268:1,269:7
+@t^684^1:179
+@t^728^1:93
+@t^905^1:96
+@t^1152^19:994
 @t^254560^14:407
 @t^255769^10:454
 @t^255770^8:327

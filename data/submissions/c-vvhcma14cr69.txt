@@ -1,4 +1,4 @@
-GoldScout-export 9^vvhcma14cr69^4
+GoldScout-export 9^vvhcma14cr69^5
 588^2^0^34^35^1434^0.2272^0.1243^2^Bloodscalp Scout^^
 660^1^0^37^37^1434^0.2457^0.0878^1^Bloodscalp Witch Doctor^^
 667^2^0^39^40^1434^0.4469^0.3517^2^Skullsplitter Warrior^2725:1:1,3771:2:2,8151:1:1^
@@ -6,6 +6,8 @@ GoldScout-export 9^vvhcma14cr69^4
 671^1^0^36^37^1434^0.2363^0.1094^1^Bloodscalp Headhunter^2730:1:1,4306:1:3^
 696^2^0^39^40^1434^0.4629^0.3351^2^Skullsplitter Axe Thrower^2751:1:1,4306:1:2,4338:1:1^
 701^2^0^34^35^1434^0.2279^0.1215^2^Bloodscalp Mystic^^
+705^9^0^1^1^1426^0.2895^0.7333^9^Ragged Young Wolf^750:8:8,4865:6:6,7073:5:5^
+707^2^0^2^2^1426^0.3084^0.7343^2^Rockjaw Trogg^^
 772^1^0^38^38^1434^0.4721^0.2986^1^Stranglethorn Tigress^7432:1:1^
 780^9^0^39^40^1434^0.4561^0.3506^9^Skullsplitter Mystic^1520:1:1,2466:4:4,2730:1:1,3385:1:1,4306:1:3,213127:1:1^
 921^1^0^35^35^1434^0.4392^0.1907^1^Venture Co. Lumberjack^3771:1:1,4306:1:2^
@@ -69,6 +71,7 @@ GoldScout-export 9^vvhcma14cr69^4
 260202^1^0^0^0^0^0.0000^0.0000^0^^274607:1:1,276894:1:1^
 260243^1^0^0^0^0^0.0000^0.0000^0^^274610:1:1^
 263196^9^0^0^0^0^0.0000^0.0000^0^^1710:1:1,4306:4:9,4338:1:3,4607:1:1,248690:1:1,248694:1:1,270343:4:4^
+@i^750^Tough Wolf Meat
 @i^863^Gloom Reaper of the Bandit
 @i^1205^Melon Juice
 @i^1520^Troll Sweat
@@ -110,11 +113,13 @@ GoldScout-export 9^vvhcma14cr69^4
 @i^4607^Delicious Cave Mold
 @i^4633^Heavy Bronze Lockbox
 @i^4727^Chief Brigadier Girdle
+@i^4865^Ruined Pelt
 @i^6416^Aurora Boots
 @i^6584^Scouting Tunic of the Eagle
 @i^6603^Dervish Tunic of the Falcon
 @i^6608^Bright Armor
 @i^6893^Workshop Key
+@i^7073^Broken Fang
 @i^7330^Infiltrator Buckler of the Owl
 @i^7357^Elder's Hat of the Whale
 @i^7432^Twilight Cowl of the Channeler
@@ -161,6 +166,7 @@ GoldScout-export 9^vvhcma14cr69^4
 @i^274607^Viscera Spaulders
 @i^274610^Ritual-Binder's Gloves
 @i^276894^Ancient Gurubashi Idol
+@q^750^1:12:0
 @q^863^2:2:0
 @q^1205^1:0:0
 @q^1520^0:15:0
@@ -202,11 +208,13 @@ GoldScout-export 9^vvhcma14cr69^4
 @q^4607^1:0:0
 @q^4633^2:15:0
 @q^4727^2:4:0
+@q^4865^0:15:0
 @q^6416^2:4:0
 @q^6584^2:4:0
 @q^6603^2:4:0
 @q^6608^2:4:0
 @q^6893^1:13:0
+@q^7073^0:15:0
 @q^7330^2:4:0
 @q^7357^2:4:0
 @q^7432^2:4:0
@@ -253,6 +261,7 @@ GoldScout-export 9^vvhcma14cr69^4
 @q^274607^3:4:0
 @q^274610^3:4:0
 @q^276894^1:12:0
+@m^1426^Dun Morogh
 @m^1434^Stranglethorn Vale
 @m^1443^Desolace
 @m^2548^Riverglades
@@ -955,6 +964,8 @@ GoldScout-export 9^vvhcma14cr69^4
 @a^671^44:1
 @a^696^129:2
 @a^701^44:2
+@a^705^285:9
+@a^707^286:2
 @a^772^109:1
 @a^780^109:1,128:1,129:3,148:2,169:2
 @a^921^68:1
@@ -966,4 +977,6 @@ GoldScout-export 9^vvhcma14cr69^4
 @a^11559^66:1,86:1
 @a^11561^26:3,66:2,86:2,87:1,106:4,107:1,126:1
 @a^256798^208:1
+@t^705^8:183
+@t^707^2:265
 @l^0^enUS

@@ -1,4 +1,4 @@
-GoldScout-export 6^mund6tk4xasx^13
+GoldScout-export 6^mund6tk4xasx^14
 3239^1^0^20^20^1413^0.4805^0.5763^1^Thunderhead^5470:1:1^
 3240^1^0^18^18^1413^0.4582^0.5630^1^Stormsnout^4895:1:1^
 3241^11^0^15^16^1413^0.4518^0.1494^11^Savannah Patriarch^5134:6:6,15485:1:1,269715:6:6^
@@ -40,9 +40,12 @@ GoldScout-export 6^mund6tk4xasx^13
 3471^1^0^16^16^1413^0.5274^0.1082^1^Tinkerer Sniggles^5089:1:1^
 3632^2^0^15^16^1414^0.5203^0.5511^2^Deviate Creeper^3180:1:1,5124:1:1^
 3634^1^0^16^16^1414^0.5202^0.5527^1^Deviate Stalker^3180:1:1^
+3988^10^0^19^20^1442^0.7152^0.5439^10^Venture Co. Operator^1794:1:1,1816:1:1,2589:2:3,2592:2:3,5734:1:1^
+3989^18^0^18^19^1442^0.6944^0.5524^18^Venture Co. Logger^1812:1:1,2287:2:2,2589:8:15,2592:2:3,14564:1:1,15310:1:1,211854:1:1^
+3991^6^0^19^20^1442^0.6774^0.5426^6^Venture Co. Deforester^2592:2:3^
 4005^5^0^16^17^1442^0.5867^0.7851^5^Deepmoss Creeper^1081:3:3,3174:3:3,3931:1:1,5574:1:1^
 4006^3^0^19^20^1442^0.5360^0.7221^3^Deepmoss Webspinner^1475:1:1,3174:3:3,3931:2:2^
-4007^7^0^17^18^1442^0.5343^0.7346^7^Deepmoss Venomspitter^1081:3:3,1475:3:3,3174:2:2,3306:1:1,3931:2:2^
+4007^8^0^17^18^1442^0.5465^0.7181^8^Deepmoss Venomspitter^1081:4:4,1475:3:3,3174:2:2,3306:1:1,3931:2:2^
 4127^4^0^15^16^1413^0.5829^0.1218^4^Hecklefang Hyena^3299:1:1,3301:3:3^
 4316^4^0^13^13^1413^0.4888^0.4027^4^Kolkar Packhound^3299:3:3,3300:1:1,15300:1:1,211787:1:1^
 5863^1^0^19^19^1413^0.4456^0.5166^1^Geopriest Gukk'rok^^
@@ -85,6 +88,7 @@ GoldScout-export 6^mund6tk4xasx^13
 @i^1794^Patched Leather Jerkin
 @i^1812^Short-handled Battle Axe
 @i^1814^Battered Mallet
+@i^1816^Unbalanced Axe
 @i^1817^Stock Shortsword
 @i^2073^Dwarven Hatchet of Magic
 @i^2214^Wooden Buckler
@@ -138,16 +142,20 @@ GoldScout-export 6^mund6tk4xasx^13
 @i^5523^Small Barnacled Clam
 @i^5574^White Leather Bag
 @i^5635^Sharp Claw
+@i^5734^Super Reaper 6000 Blueprints
 @i^14117^Aboriginal Gloves of Stamina
+@i^14564^Prospector's Mitts
 @i^14724^War Paint Cloak
 @i^15011^Lupine Cord of the Gorilla
 @i^15114^Rigid Cape of Frozen Wrath
 @i^15300^Grizzly Gloves
+@i^15310^Feral Gloves of the Boar
 @i^15484^War Torn Handgrips
 @i^15485^War Torn Pants of Holy Wrath
 @i^16192^Besseleth's Fang
 @i^17056^Light Feather
 @i^211787^Scroll: LOWER PING WHOMEVER
+@i^211854^Scroll: OMIT KESA
 @i^248683^Waylaid Crate: Apprentice Ore
 @i^248685^Waylaid Crate: Apprentice Curiosities
 @i^248703^Waylaid Crate: Apprentice Ingots
@@ -181,6 +189,7 @@ GoldScout-export 6^mund6tk4xasx^13
 @q^1794^0:4:0
 @q^1812^0:2:0
 @q^1814^0:2:0
+@q^1816^0:2:0
 @q^1817^0:2:0
 @q^2073^2:2:0
 @q^2214^0:4:0
@@ -234,16 +243,20 @@ GoldScout-export 6^mund6tk4xasx^13
 @q^5523^1:7:0
 @q^5574^1:1:0
 @q^5635^1:7:1
+@q^5734^1:12:0
 @q^14117^2:4:0
+@q^14564^2:4:0
 @q^14724^2:4:0
 @q^15011^2:4:0
 @q^15114^2:4:0
 @q^15300^1:4:0
+@q^15310^2:4:0
 @q^15484^1:4:0
 @q^15485^2:4:0
 @q^16192^1:12:0
 @q^17056^1:15:1
 @q^211787^1:0:0
+@q^211854^1:0:0
 @q^248683^1:0:1
 @q^248685^1:0:1
 @q^248703^2:0:1
@@ -659,9 +672,12 @@ GoldScout-export 6^mund6tk4xasx^13
 @a^3471^50:1
 @a^3632^230:2
 @a^3634^230:1
+@a^3988^212:1,213:2,214:4,234:1,235:2
+@a^3989^212:1,213:4,214:1,233:6,234:6
+@a^3991^212:1,213:2,214:1,233:1,234:1
 @a^4005^310:1,311:3,353:1
 @a^4006^290:3
-@a^4007^290:6,310:1
+@a^4007^252:1,290:6,310:1
 @a^4127^32:1,50:2,71:1
 @a^4316^149:3,170:1
 @a^5863^208:1
