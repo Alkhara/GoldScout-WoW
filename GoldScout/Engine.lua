@@ -977,10 +977,15 @@ local function BuildFarms(self)
     local own, shared = ns.Learn:Entry(npcID), ns.COMMUNITY[npcID]
     local kills = ((own and own.k) or 0) + ((shared and shared.k) or 0)
     if kills >= LEARNED_MIN_KILLS and not ns.FARMS_BY_NPC[npcID] then
-      local minLevel = (own and own.lmin) or (shared and shared.lmin) or level
+      -- Inside instances the game hides a mob's level, so most dungeon mobs have none. Unknown, it's no guide to
+      -- whether the mob suits you: such a mob is listed only with All levels on, without a level, and its kill
+      -- rate is worked out as if it were your own level.
+      local knownLevel = (own and own.lmin) or (shared and shared.lmin)
+      local minLevel = knownLevel or level
       local maxLevel = (own and own.lmax) or (shared and shared.lmax) or minLevel
       local zoneMap = (shared and shared.m) or (own and own.m)
-      if InWindow(minLevel, maxLevel) and (settings.showDungeons or not InDungeon(zoneMap)) then
+      local inWindow = knownLevel and InWindow(minLevel, maxLevel) or (not knownLevel and settings.showAllLevels)
+      if inWindow and (settings.showDungeons or not InDungeon(zoneMap)) then
         local zone = MapName(zoneMap) or L["where players loot it"]
         local mob = ns.MobName(npcID, own and own.n, shared and shared.n)
         local items = {}
@@ -1026,7 +1031,7 @@ local function BuildFarms(self)
               local kills, timed = Kills((minLevel + maxLevel) / 2, npcID)
               rows[#rows + 1] = AddOtherLoot({
                 kind = "Learned", item = itemID, source = mob, zone = zone,
-                lvl = LevelText(minLevel, maxLevel), chance = rate, per = "kill",
+                lvl = knownLevel and LevelText(minLevel, maxLevel) or nil, chance = rate, per = "kill",
                 seenRate = rate, seenTrials = attempts, confidence = confidence,
                 each = each, hour = each * kills, npc = npcID, perHour = kills, paceTimed = timed,
                 listed = listed, age = age,

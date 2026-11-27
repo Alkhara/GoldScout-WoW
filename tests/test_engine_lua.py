@@ -258,6 +258,19 @@ class FarmRulesTests(unittest.TestCase):
         self.assertEqual(rows[("Learned", 5000)].zone, "The Deadmines")
         self.assertIn(("Learned", 5001), rows)
 
+    def test_a_mob_of_unknown_level_needs_all_levels(self):
+        # Inside instances the game hides a mob's level, so most dungeon mobs have none: one at level 31 saw
+        # Stratholme bosses listed at "31" with Show dungeon drops on.
+        self.settings.showDungeons = True
+        self.item(5000, price=10000, ilvl=20)
+        self.drops(3000, 20, {5000: 4}, name="Baroness Anastari")
+        self.ns.db.drops[3000].lmin, self.ns.db.drops[3000].lmax = None, None
+        self.assertNotIn(("Learned", 5000), self.rows())
+        self.settings.showAllLevels = True
+        row = self.rows()[("Learned", 5000)]
+        self.assertIsNone(row.lvl)          # not your own level
+        self.assertGreater(row.hour, 0)
+
     def test_item_names_stay_once_the_game_drops_the_item(self):
         # The client's item cache drops items while GoldScout looks at thousands; names flickered to "Item 3730".
         self.item(3730, name="Big Bear Meat")

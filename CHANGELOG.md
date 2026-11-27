@@ -7,6 +7,8 @@ releases add their own line automatically.
 
 ## Unreleased
 
+- **No more high-level dungeon farms at your level:** inside dungeons the game hides a mob's level, so most dungeon mobs have none in GoldScout's data. With **Show dungeon drops** on, the Farm tab listed them at your own level, so a level 31 character saw Stratholme bosses. A mob of unknown level is now listed only with **All levels** on, without a level.
+
 ## v0.12.56
 
 - **Kill rates count the hunt between kills:** GoldScout now also times kills up to ten minutes apart in the same zone, so looking for the next one and waiting for respawns count. A mob there are only a few of no longer looks as quick to farm as a crowded camp. Kill times start over with this version so shared data follows the new rule; until enough players have timed a mob the new way, gold per hour uses the old times.
