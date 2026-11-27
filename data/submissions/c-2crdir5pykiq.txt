@@ -1,4 +1,4 @@
-GoldScout-export 9^2crdir5pykiq^18
+GoldScout-export 9^2crdir5pykiq^19
 154^1^0^16^16^1436^0.5891^0.5825^1^Großer Fleischreißer^729:1:1,4775:1:1,6889:1:1,17056:1:1^
 428^254^0^18^19^1433^0.5415^0.7605^254^Terrorkondor^556:21:21,1080:91:91,1206:1:1,1210:1:1,1464:25:25,2079:1:1,4412:1:1,4575:1:1,4775:113:113,4776:43:43,5114:16:16,5115:6:6,6546:1:1,6889:172:172,9784:1:1,15222:1:1,17056:81:81,211784:3:3,211853:3:3,211854:1:1,211855:3:3,250188:9:9^
 441^30^0^17^18^1433^0.5300^0.7463^30^Schwarzer Großdrachenwelpe^3176:1:1,3177:5:5,6540:1:1,9785:1:1,211854:1:1,211855:1:1,248683:1:1^
@@ -36,10 +36,19 @@ GoldScout-export 9^2crdir5pykiq^18
 2555^18^0^33^34^1417^0.6873^0.6743^18^Hexendoktor der Witherbark^1477:1:1,3771:2:2,3782:1:1,3784:1:1,3802:1:1,4306:4:6,4503:2:2,4522:4:4,7273:2:2,7409:1:1,213544:1:1,216483:1:1^
 2556^10^0^34^35^1417^0.6902^0.7359^10^Kopfjägerin der Bleichborken^1988:1:1,3385:1:1,3771:1:1,4306:1:2,9836:1:1,216483:1:1^
 2557^1^0^35^35^1417^0.6773^0.7722^1^Schattenjägerin der Bleichborken^5040:1:1^
+2558^1^0^36^37^1417^0.2421^0.6490^1^Berserkerin der Bleichborken^1708:1:1,4306:1:1^
+2569^3^0^37^38^1417^0.2223^0.6668^3^Raufer der Felsfäuste^213422:2:2,262889:1:1^
+2570^1^0^38^39^1417^0.2170^0.6834^1^Schamane der Felsfäuste^^
+2579^1^0^34^34^1417^0.4902^0.6676^1^Mesabussard^1464:1:1^
+2588^11^0^36^37^1417^0.2681^0.6229^11^Streuner des Syndikats^1708:1:1,1710:1:1,3782:1:1,3783:1:1,4306:3:9,4338:1:1,5113:3:3^
+2590^3^0^35^36^1417^0.2717^0.6277^3^Herbeizauberer des Syndikats^2289:1:1,4306:1:1^
+2597^1^0^40^40^1417^0.2582^0.6484^1^Lord Falkenstein^4517:1:1^
+2599^1^0^38^38^1417^0.2598^0.6455^1^Otto^4516:1:1^
 2618^6^0^33^34^1417^0.6098^0.5794^6^Peon von Hammerfall^2592:1:1,4306:3:4^
 2619^10^0^34^35^1417^0.6079^0.5727^10^Grunzer von Hammerfall^3771:1:1,213546:1:1^
 2714^1^0^35^35^1417^0.6107^0.5929^1^Kurier der Verlassenen^4306:1:1,4482:1:1^
 2733^1^0^36^36^1417^0.6073^0.5866^1^Apotheker Jorell^^
+2783^1^0^40^40^1417^0.2892^0.6110^1^Marez Cowl^4515:1:1^
 3255^1^0^14^15^1413^0.5908^0.4283^1^Bluthornkreischer^5165:1:1^
 3434^1^0^23^23^1413^0.4394^0.8354^1^Nak^^
 3456^2^0^21^21^1413^0.4319^0.8059^2^Pfadfinder der Grimmhauer^2592:1:2^
@@ -121,6 +130,7 @@ GoldScout-export 9^2crdir5pykiq^18
 @i^1687^Einziehbare Klaue
 @i^1688^Langer weicher Schwanz
 @i^1708^Süßer Nektar
+@i^1710^Großer Heiltrank
 @i^1750^Gekettelte Handschuhe
 @i^1752^Gekettelte Schulterpolster
 @i^1754^Verstärkter Kettengürtel
@@ -137,6 +147,7 @@ GoldScout-export 9^2crdir5pykiq^18
 @i^2079^Sergeants Kriegshammer der Ausdauer
 @i^2221^Tartschenschild
 @i^2251^Klebriges Spinnenbein
+@i^2289^Rolle der Stärke II
 @i^2295^Großer Eberhauer
 @i^2455^Schwacher Manatrank
 @i^2589^Leinenstoff
@@ -162,6 +173,7 @@ GoldScout-export 9^2crdir5pykiq^18
 @i^3780^Langläufige Muskete
 @i^3781^Breites Claymore
 @i^3782^Große Kriegskeule
+@i^3783^Leichter Krummsäbel
 @i^3784^Metallstock
 @i^3802^Gehärtete Lederarmschienen
 @i^3809^Doppelpanzerstiefel
@@ -169,10 +181,14 @@ GoldScout-export 9^2crdir5pykiq^18
 @i^3931^Vergifteter Spinnenfangzahn
 @i^4097^Gesplitterter Gorillazahn
 @i^4306^Seidenstoff
+@i^4338^Magiestoff
 @i^4371^Bronzeröhre
 @i^4412^Bauplan: Mondsichtgewehr
 @i^4482^Versiegelter Ordner
 @i^4503^Hauer der Witherbark
+@i^4515^Marez' Kopf
+@i^4516^Ottos Kopf
+@i^4517^Falkensteins Kopf
 @i^4522^Medizinbeutel der Witherbark
 @i^4555^Dicker geschuppter Schwanz
 @i^4556^Getupftes Muschelschalenfragment
@@ -184,6 +200,7 @@ GoldScout-export 9^2crdir5pykiq^18
 @i^4775^Gesprungener Schnabel
 @i^4776^Gesträubte Feder
 @i^5040^Schattenjägermesser
+@i^5113^Mal des Syndikats
 @i^5114^Abgespaltene Kralle
 @i^5115^Zerbrochenes Gabelbein
 @i^5136^Zerrissenes pelziges Ohr
@@ -236,6 +253,7 @@ GoldScout-export 9^2crdir5pykiq^18
 @i^211853^Schriftrolle: VOCE WELL
 @i^211854^Schriftrolle: OMIT KESA
 @i^211855^Schriftrolle: STHENIC LUNATE
+@i^213422^Unleserliches Rezept
 @i^213543^Schriftrolle: UPDOG
 @i^213544^Schriftrolle: TOPAZ YORAK
 @i^213545^Schriftrolle: ZAEHLEZ STARKDEUTIEN
@@ -248,6 +266,7 @@ GoldScout-export 9^2crdir5pykiq^18
 @i^248689^Abgefangene Kiste: Kuriositäten des Gesellen
 @i^250188^Rezept: Frühstücksomelett
 @i^262888^Versiegelte Verfügung des Gesellen
+@i^262889^Versiegelte Verfügung des Experten
 @i^273811^Zweckentfremdeter Ständer
 @i^273824^Ausbrecher der Defias
 @i^274092^Geschärftes Besteck
@@ -272,6 +291,7 @@ GoldScout-export 9^2crdir5pykiq^18
 @q^1687^0:15:0
 @q^1688^0:15:0
 @q^1708^1:0:0
+@q^1710^1:0:0
 @q^1750^0:4:0
 @q^1752^0:4:0
 @q^1754^0:4:0
@@ -288,6 +308,7 @@ GoldScout-export 9^2crdir5pykiq^18
 @q^2079^2:2:0
 @q^2221^0:4:0
 @q^2251^1:7:1
+@q^2289^1:0:0
 @q^2295^0:15:0
 @q^2455^1:0:0
 @q^2589^1:7:1
@@ -313,6 +334,7 @@ GoldScout-export 9^2crdir5pykiq^18
 @q^3780^0:2:0
 @q^3781^0:2:0
 @q^3782^0:2:0
+@q^3783^0:2:0
 @q^3784^0:2:0
 @q^3802^0:4:0
 @q^3809^0:4:0
@@ -320,10 +342,14 @@ GoldScout-export 9^2crdir5pykiq^18
 @q^3931^0:15:0
 @q^4097^0:15:0
 @q^4306^1:7:1
+@q^4338^1:7:1
 @q^4371^1:7:1
 @q^4412^2:9:0
 @q^4482^1:12:0
 @q^4503^1:12:0
+@q^4515^1:12:0
+@q^4516^1:12:0
+@q^4517^1:12:0
 @q^4522^1:12:0
 @q^4555^0:15:0
 @q^4556^0:15:0
@@ -335,6 +361,7 @@ GoldScout-export 9^2crdir5pykiq^18
 @q^4775^0:15:0
 @q^4776^0:15:0
 @q^5040^1:2:0
+@q^5113^0:15:0
 @q^5114^0:15:0
 @q^5115^0:15:0
 @q^5136^0:15:0
@@ -387,6 +414,7 @@ GoldScout-export 9^2crdir5pykiq^18
 @q^211853^1:0:0
 @q^211854^1:0:0
 @q^211855^1:0:0
+@q^213422^1:12:0
 @q^213543^1:0:0
 @q^213544^1:0:0
 @q^213545^1:0:0
@@ -399,6 +427,7 @@ GoldScout-export 9^2crdir5pykiq^18
 @q^248689^1:0:1
 @q^250188^1:9:0
 @q^262888^3:0:0
+@q^262889^3:0:0
 @q^273811^3:4:0
 @q^273824^3:4:0
 @q^274092^3:2:0
@@ -1167,10 +1196,19 @@ GoldScout-export 9^2crdir5pykiq^18
 @a^2555^253:7,273:2,274:4,293:5
 @a^2556^274:2,293:3,294:1,313:4
 @a^2557^313:1
+@a^2558^244:1
+@a^2569^264:3
+@a^2570^264:1
+@a^2579^269:1
+@a^2588^225:1,245:9,265:1
+@a^2590^245:2,265:1
+@a^2597^245:1
+@a^2599^245:1
 @a^2618^232:6
 @a^2619^212:2,232:7,252:1
 @a^2714^232:1
 @a^2733^232:1
+@a^2783^245:1
 @a^3255^171:1
 @a^3434^328:1
 @a^3456^328:2

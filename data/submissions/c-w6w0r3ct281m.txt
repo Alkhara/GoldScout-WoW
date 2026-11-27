@@ -1,4 +1,4 @@
-GoldScout-export 9^w6w0r3ct281m^33
+GoldScout-export 9^w6w0r3ct281m^34
 95^5^0^11^12^1436^0.4462^0.2523^5^Defias Smuggler^2589:1:2,6269:1:1^
 199^1^0^10^11^1436^0.4928^0.3163^1^Young Fleshripper^4775:1:1,7097:1:1,17056:1:1^
 315^2^0^32^32^1431^0.7719^0.3459^2^Stalvan Mistmantle^^
@@ -161,12 +161,14 @@ GoldScout-export 9^w6w0r3ct281m^33
 251284^6^0^6^7^2521^0.3610^0.5110^6^Hippogryph Protector^1419:1:1,3610:1:1,4775:3:3,4776:3:3,6889:4:4^
 251291^8^0^6^6^2521^0.3818^0.5197^8^Hippogryph Youth^1425:1:1,4757:5:5,6889:3:3,7096:1:1,7097:2:2^
 251661^6^0^5^6^2521^0.4042^0.4367^6^Galestrider^1419:1:1,2774:1:1,4757:3:3,5469:3:3,6889:1:1,7096:1:1,7097:2:2^
+251918^16^0^7^7^2521^0.4812^0.3774^16^Highlands Bandit^766:1:1,1431:1:1,2212:1:1,2589:6:9,252022:4:5,252028:1:2,252030:2:2,252031:6:9,257945:10:10,267474:3:4^
 264850^1^0^33^33^1417^0.2594^0.5467^1^Hawk^^
 270892^1^0^32^32^1437^0.3504^0.5256^1^Goaz Warder^4553:1:2,279993:1:1^
 271334^2^0^25^26^1437^0.5973^0.3557^2^Maddened Rotclaw^3730:2:2,280331:1:1^
 @i^117^Tough Jerky
 @i^159^Água Refrescante da Fonte
 @i^422^Dwarven Mild
+@i^766^Flanged Mace
 @i^769^Chunk of Boar Meat
 @i^770^Pointy Crocolisk Tooth
 @i^771^Chipped Boar Tusk
@@ -184,6 +186,7 @@ GoldScout-export 9^w6w0r3ct281m^33
 @i^1364^Ragged Leather Vest
 @i^1419^Worn Leather Boots
 @i^1425^Worn Leather Vest
+@i^1431^Patchwork Pants
 @i^1514^Rusty Warhammer
 @i^1686^Bristly Whisker
 @i^1687^Retractable Claw
@@ -210,6 +213,7 @@ GoldScout-export 9^w6w0r3ct281m^33
 @i^2077^Magician Staff of the Bear
 @i^2078^Northern Shortsword of the Wolf
 @i^2210^Battered Buckler
+@i^2212^Cracked Buckler
 @i^2214^Wooden Buckler
 @i^2215^Wooden Shield
 @i^2251^Gooey Spider Leg
@@ -361,8 +365,14 @@ GoldScout-export 9^w6w0r3ct281m^33
 @i^248707^Waylaid Crate: Journeyman Parts
 @i^248708^Waylaid Crate: Expert Fabrics
 @i^251341^Plans: Guard's Chain Shirt
+@i^252022^Galestrider Jerky
+@i^252028^Fresh Gustberry Bread
+@i^252030^Pungent Skycheddar
+@i^252031^Crisp Spring Water
 @i^252671^Hoarder's Foot
+@i^257945^Pilfered Windstone
 @i^262888^Sealed Journeyman's Writ
+@i^267474^Galeswept Forestshroom
 @i^273086^Blueprint: Anvil
 @i^273105^Blueprint: Toxin Study
 @i^273297^Goblin Hammer
@@ -380,6 +390,7 @@ GoldScout-export 9^w6w0r3ct281m^33
 @q^117^1:0:0
 @q^159^1:0:0
 @q^422^1:0:0
+@q^766^1:2:0
 @q^769^1:7:1
 @q^770^0:15:0
 @q^771^0:15:0
@@ -397,6 +408,7 @@ GoldScout-export 9^w6w0r3ct281m^33
 @q^1364^0:4:0
 @q^1419^0:4:0
 @q^1425^0:4:0
+@q^1431^0:4:0
 @q^1514^0:2:0
 @q^1686^0:15:0
 @q^1687^0:15:0
@@ -423,6 +435,7 @@ GoldScout-export 9^w6w0r3ct281m^33
 @q^2077^2:2:0
 @q^2078^2:2:0
 @q^2210^0:4:0
+@q^2212^0:4:0
 @q^2214^0:4:0
 @q^2215^0:4:0
 @q^2251^1:7:1
@@ -574,8 +587,14 @@ GoldScout-export 9^w6w0r3ct281m^33
 @q^248707^2:0:1
 @q^248708^2:0:1
 @q^251341^3:9:0
+@q^252022^1:0:0
+@q^252028^1:0:0
+@q^252030^1:0:0
+@q^252031^1:0:0
 @q^252671^0:15:0
+@q^257945^1:12:0
 @q^262888^3:0:0
+@q^267474^1:0:0
 @q^273086^2:9:0
 @q^273105^2:9:0
 @q^273297^3:2:0
@@ -1094,6 +1113,7 @@ GoldScout-export 9^w6w0r3ct281m^33
 @a^251284^206:1,207:5
 @a^251291^207:8
 @a^251661^167:2,168:2,188:2
+@a^251918^149:16
 @a^264850^205:1
 @a^270892^207:1
 @a^271334^132:1,151:1
@@ -1102,6 +1122,7 @@ GoldScout-export 9^w6w0r3ct281m^33
 @t^251284^6:117
 @t^251291^8:353
 @t^251661^5:144
+@t^251918^15:408
 @f^1437^0^6^144^6358:2:2,6361:4:4^220:4,241:2
 @f^1439^0^2^145^6303:2:2^166:2
 @f^1440^0^17^138^3820:1:1,6289:5:5,6308:2:2,21071:8:8,21113:1:1^186:5,187:9,270:3
