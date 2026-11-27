@@ -89,8 +89,9 @@ MAX_LEVEL = 63              # Forever's level cap is 60; bosses show as 63
 MAX_LEVEL_SPREAD = 15       # one mob ID rarely spans more levels than this
 MAX_ITEMS_PER_MOB = 150
 MAX_DROPS_PER_ATTEMPT = 8   # items one corpse or pocket can hold
-MAX_QUANTITY_PER_DROP = 200 # average stack size per drop: some bosses drop a full stack of 200 ammo
-                            # (Lord Roccor, Shadow Hunter Vosh'gajin, Cannon Master Willey)
+MAX_QUANTITY_PER_DROP = 250 # average stack size per drop: some bosses drop a full stack of 200 ammo
+                            # (Lord Roccor, Shadow Hunter Vosh'gajin, Cannon Master Willey), and some
+                            # event mobs a full stack of a quest item (213 Well Cursed Bone)
 MAX_NAME_LENGTH = 64
 MAX_EXTRA_LINES = 20_000    # @ lines (names, item details, crafted items, areas, fishing) in one export
 MAX_FISH_SKILL = 450        # Fishing skill, with lures and gear on top of 300

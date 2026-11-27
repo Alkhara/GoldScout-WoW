@@ -124,6 +124,10 @@ class ValidatorTests(unittest.TestCase):
         # Lord Roccor drops Rockshard Pellets 200 at a time: 3 kills, 3 drops, 600 pellets.
         self.assertEqual(errors(GOOD.replace("4874:2:2", "4874:2:400")), [])
 
+    def test_an_event_mob_dropping_a_full_stack_of_a_quest_item_is_fine(self):
+        # Nascent Undead Ravager drops Well Cursed Bone 213 at a time: 2 kills, 2 drops, 426 bones.
+        self.assertEqual(errors(GOOD.replace("4874:2:2", "4874:2:426")), [])
+
     def test_junkboxes_in_kill_loot_are_dropped(self):
         # Only pickpockets give junkboxes: in kill loot they're a pick recorded as a kill. Picked, they stay.
         line = CLATTERING.replace("3812^11^0^", "3812^11^4^").replace("4874:2:2", "4874:2:2,16882:3:3") + "16883:1:1"
