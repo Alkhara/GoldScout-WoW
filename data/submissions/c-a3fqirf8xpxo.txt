@@ -1,4 +1,4 @@
-GoldScout-export 9^a3fqirf8xpxo^13
+GoldScout-export 9^a3fqirf8xpxo^14
 6^7^0^1^2^1429^0.4923^0.3730^7^Kobold Vermin^159:1:1,755:3:3,2589:3:3,4536:1:1,247834:1:1^
 30^3^0^5^6^1429^0.3807^0.6315^3^Forest Spider^1476:2:2,2590:1:1^
 38^4^0^3^4^1429^0.5422^0.4453^4^Defias Thug^752:3:3,1369:1:1,2057:1:1,2070:1:1,2210:1:1^
@@ -88,7 +88,7 @@ GoldScout-export 9^a3fqirf8xpxo^13
 4027^1^0^26^27^1442^0.3452^0.6856^1^Bloodfury Storm Witch^^
 4062^1^0^31^31^1417^0.5004^0.8907^1^Dark Iron Bombardier^^
 4619^1^0^32^32^1440^0.7818^0.4300^1^Geltharis^3770:1:1,5461:1:1^
-5043^7^0^20^20^1453^0.5131^0.6778^7^Defias Rioter^^
+5043^14^0^20^20^1453^0.5172^0.6787^14^Defias Rioter^^
 5930^1^0^28^28^1442^0.3057^0.6840^1^Sister Riven^6590:1:1^
 14424^1^0^25^25^1437^0.2540^0.2824^1^Mirelow^2072:1:1^
 260322^1^0^0^0^0^0.0000^0.0000^0^^273023:1:1^
@@ -219,6 +219,8 @@ GoldScout-export 9^a3fqirf8xpxo^13
 @i^5635^Sharp Claw
 @i^5637^Large Fang
 @i^5784^Slimy Murloc Scale
+@i^6289^Raw Longjaw Mud Snapper
+@i^6291^Raw Brilliant Smallfish
 @i^6308^Raw Bristle Whisker Catfish
 @i^6380^Inscribed Buckler
 @i^6567^Shimmering Armor of the Owl
@@ -370,6 +372,8 @@ GoldScout-export 9^a3fqirf8xpxo^13
 @q^5635^1:7:1
 @q^5637^1:7:1
 @q^5784^1:7:1
+@q^6289^1:7:1
+@q^6291^1:7:1
 @q^6308^1:7:1
 @q^6380^2:4:0
 @q^6567^2:4:0
@@ -1268,7 +1272,7 @@ GoldScout-export 9^a3fqirf8xpxo^13
 @a^4027^266:1
 @a^4062^350:1
 @a^4619^175:1
-@a^5043^270:7
+@a^5043^270:14
 @a^5930^266:1
 @a^14424^105:1
 @a^271334^132:1,171:1
@@ -1282,5 +1286,6 @@ GoldScout-export 9^a3fqirf8xpxo^13
 @a^272260^88:1
 @a^272273^246:1
 @a^272291^164:1
-@t^5043^6:18
+@t^5043^12:38
+@f^1453^0^9^1^6289:4:4,6291:1:1,6308:4:4^290:9
 @l^0^enUS

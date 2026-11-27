@@ -1,4 +1,4 @@
-GoldScout-export 9^pa62od4reyg1^16
+GoldScout-export 9^pa62od4reyg1^17
 1908^1^0^19^20^1421^0.6779^0.4573^1^Oráculo Anca Vil^3376:1:1^
 2241^1^0^34^34^1416^0.4607^0.8154^1^Ladrón de la Hermandad^3601:1:1^
 2248^74^0^30^31^1424^0.4604^0.3142^74^Yeti de las cuevas^1708:5:5,1830:1:1,2290:1:1,3771:8:8,3796:1:1,5214:1:1,9867:1:1,10408:1:1,15284:1:1,248686:1:1,248688:1:1^
@@ -41,8 +41,23 @@ GoldScout-export 9^pa62od4reyg1^16
 2587^9^0^32^33^1417^0.3299^0.2863^9^Acechacaminos de la Hermandad^1708:1:1,4306:2:3,4495:4:4,5113:3:3^
 2589^12^0^31^32^1417^0.3282^0.2917^12^Mercenario de la Hermandad^1708:1:1,1711:1:1,2592:1:2,4306:2:3,4495:1:1,4634:1:1,5113:3:3,8746:1:1,248687:1:1,255723:2:2^
 3560^1^0^33^34^1417^0.7055^0.6146^1^Guarda de sanación^^
-4114^1^0^28^28^1441^0.5240^0.4804^1^Batidor Gravamorro^^
+4114^2^0^28^28^1441^0.5570^0.5189^2^Batidor Gravamorro^^
+4116^3^0^29^30^1441^0.6374^0.6074^3^Supervisor Gravamorro^3381:1:1,4306:2:4^
 4119^1^0^27^29^1441^0.5579^0.4896^1^Serpiente nubosa anciana^17056:1:1^
+4120^3^0^28^29^1441^0.6556^0.6202^3^Rocoso tronador^2838:2:3,4784:3:3,5741:1:1^
+4124^1^0^27^28^1441^0.6268^0.6027^1^Puma de las Agujas^5137:1:1^
+4130^3^0^32^33^1441^0.6944^0.8502^3^Buscador silítido^5854:1:1,6300:2:2,6302:1:1^
+4131^4^0^34^35^1441^0.6625^0.8607^4^Invasor silítido^5854:1:1,6300:1:1,6302:2:2,14753:1:1^
+4133^8^0^33^34^1441^0.7006^0.8719^8^Zángano de colmena silítido^5853:3:3,5854:2:2,5855:1:1,5877:1:1,6300:2:2,6302:2:2^
+4139^6^0^33^34^1441^0.8367^0.7722^6^Terror escórpido^1288:3:3,5794:2:2,12037:2:2,19938:2:2^
+4140^5^0^31^32^1441^0.8345^0.6122^5^Atracador escórpido^5794:1:1,12037:3:3,19937:2:2^
+4142^1^0^30^31^1441^0.6896^0.6493^1^Tortuga brillavalva^4555:1:1^
+4143^6^0^34^35^1441^0.8717^0.7352^6^Mordedor brillavalva^3712:1:1,4555:2:2,4556:2:2,5795:4:4^
+4147^1^0^30^31^1441^0.7334^0.5869^1^Basilisco Piedra de sal^1702:1:1^
+4150^3^0^34^35^1441^0.7855^0.8414^3^Observador Piedra de sal^1701:1:1,1702:2:2^
+4151^11^0^32^33^1441^0.8558^0.7621^11^Vitropiel Piedra de sal^1701:7:7,1702:3:3,4093:2:2,11386:1:1^
+4158^1^0^33^33^1441^0.8657^0.7235^1^Buitre del Desierto de Sal^729:1:1,5848:1:1^
+4249^3^0^28^29^1441^0.6276^0.6058^3^Gruñidor Pestillejo^3402:3:3^
 4479^1^0^33^33^1417^0.5605^0.3802^1^Fardel Dabyrie^4306:1:2,5831:1:1^
 245999^1^0^0^0^1416^0.0000^0.0000^0^^273035:1:1^
 246020^1^0^0^0^1416^0.0000^0.0000^0^^251961:1:1^
@@ -59,12 +74,16 @@ GoldScout-export 9^pa62od4reyg1^16
 255070^1^0^0^0^1416^0.0000^0.0000^0^^^
 255072^1^0^0^0^1416^0.0000^0.0000^0^^^
 269134^8^0^0^0^1416^0.0000^0.0000^0^^1757:1:1,1825:1:1,2592:3:3,2786:1:1,3206:1:1,248687:1:1^
+270094^1^0^30^30^1441^0.5674^0.5623^1^Cuoretormenta^5133:1:1,279186:1:1^
+@i^729^Carne fibrosa de buitre
 @i^878^Hilera del tamaño de un puño
 @i^929^Poción de sanación
 @i^1074^Punta de pata de araña dura
 @i^1081^Carne de araña crujiente
 @i^1288^Glándula de veneno grande
 @i^1696^Garfa de raptor curva
+@i^1701^Garra de basilisco curva
+@i^1702^Espina de basilisco intacta
 @i^1705^Piedra lunar inferior
 @i^1707^Brie de Ventormenta
 @i^1708^Néctar dulce
@@ -87,13 +106,16 @@ GoldScout-export 9^pa62od4reyg1^16
 @i^3037^Arco corvo ligero
 @i^3206^Montante de hidalgo de agilidad
 @i^3376^Cinturón de retal
+@i^3381^Brazales a punto de cruz
 @i^3385^Poción de maná inferior
+@i^3402^Parche de pelaje suave
 @i^3601^Misiva de la Hermandad
 @i^3685^Huevo de raptor
 @i^3688^Óvalo de sangrita
 @i^3689^Canica de sangrita
 @i^3691^Cuña de sangrita
 @i^3711^Cuaderno de investigación de Belamoore
+@i^3712^Carne de tortuga
 @i^3714^Muestra de piedra desgastada
 @i^3730^Carne de oso grande
 @i^3731^Carne de león
@@ -105,28 +127,47 @@ GoldScout-export 9^pa62od4reyg1^16
 @i^3796^Guantes entrelazados
 @i^3813^Pantalones de malla doble
 @i^4049^Brazales blasonados
+@i^4093^Cola de basilisco grande
 @i^4306^Paño de seda
 @i^4337^Seda de araña espesa
 @i^4461^Pellejo de raptor
 @i^4495^Amuleto de sangrita
 @i^4512^Ojo de raptor de las Tierras Altas
+@i^4555^Cola escamosa espesa
+@i^4556^Fragmento de caparazón moteado
 @i^4585^Mandíbula de araña chorreando
 @i^4586^Piel de raptor lisa
 @i^4606^Colmenilla esponjosa
 @i^4634^Arcón de hierro
 @i^4784^Piedra inerte
 @i^5113^Marca de la Hermandad
+@i^5133^Mollejas húmedas
+@i^5137^Ojo brillante
 @i^5214^Varita de Manto de la noche
 @i^5637^Colmillo grande
 @i^5741^Trozo de roca
+@i^5794^Veneno de escórpido salado
+@i^5795^Caparazón de tortuga endurecido
 @i^5831^Cabeza de Fardel
+@i^5848^Hueso hueco de buitre
+@i^5853^Caparazón de silítido intacto
+@i^5854^Garfa de silítido
+@i^5855^Corazón de silítido
+@i^5877^Caparazón de silítido rajado
+@i^6300^Trozo de coraza
+@i^6302^Ala de insecto delicada
 @i^7423^Leotardos Falange del defensor
 @i^8746^Capucha entrelazada
 @i^9867^Capa de renegado del falcón
 @i^10408^Yelmo a rayas de fuerza
+@i^11386^Ojo de basilisco fangoso
+@i^12037^Carne misteriosa
 @i^12184^Carne de raptor
+@i^14753^Capacete de destripador
 @i^15284^Arco de batalla largo
 @i^17056^Pluma ligera
+@i^19937^Garra de escórpido pequeña
+@i^19938^Pata de escórpido pesada
 @i^211855^Pergamino: STHENIC LUNATE
 @i^213422^Receta ilegible
 @i^213544^Pergamino: EZFOO KATASI
@@ -144,12 +185,16 @@ GoldScout-export 9^pa62od4reyg1^16
 @i^275997^Núcleo de avizor rajado
 @i^276160^Fragmento de maná
 @i^278225^Seda de araña quirúrgica
+@i^279186^Corazón que aún late de Corazón Atronador
+@q^729^1:7:1
 @q^878^0:7:0
 @q^929^1:0:0
 @q^1074^0:15:0
 @q^1081^1:7:1
 @q^1288^1:7:1
 @q^1696^0:15:0
+@q^1701^0:15:0
+@q^1702^0:15:0
 @q^1705^2:7:1
 @q^1707^1:0:0
 @q^1708^1:0:0
@@ -172,13 +217,16 @@ GoldScout-export 9^pa62od4reyg1^16
 @q^3037^2:2:0
 @q^3206^2:2:0
 @q^3376^0:4:0
+@q^3381^0:4:0
 @q^3385^1:0:0
+@q^3402^0:15:0
 @q^3601^1:12:0
 @q^3685^1:7:1
 @q^3688^1:12:0
 @q^3689^1:12:0
 @q^3691^1:12:0
 @q^3711^1:12:0
+@q^3712^1:7:1
 @q^3714^1:12:0
 @q^3730^1:7:1
 @q^3731^1:7:1
@@ -190,28 +238,47 @@ GoldScout-export 9^pa62od4reyg1^16
 @q^3796^0:4:0
 @q^3813^0:4:0
 @q^4049^2:4:0
+@q^4093^0:15:0
 @q^4306^1:7:1
 @q^4337^1:7:1
 @q^4461^1:7:1
 @q^4495^1:12:0
 @q^4512^1:12:0
+@q^4555^0:15:0
+@q^4556^0:15:0
 @q^4585^0:15:0
 @q^4586^0:15:0
 @q^4606^1:0:0
 @q^4634^2:15:0
 @q^4784^0:15:0
 @q^5113^0:15:0
+@q^5133^0:15:0
+@q^5137^0:15:0
 @q^5214^2:2:0
 @q^5637^1:7:1
 @q^5741^0:15:0
+@q^5794^1:12:0
+@q^5795^1:12:0
 @q^5831^1:12:0
+@q^5848^1:12:0
+@q^5853^1:12:0
+@q^5854^1:12:0
+@q^5855^1:12:0
+@q^5877^1:12:0
+@q^6300^0:15:0
+@q^6302^0:15:0
 @q^7423^2:4:0
 @q^8746^0:4:0
 @q^9867^2:4:0
 @q^10408^2:4:0
+@q^11386^0:15:0
+@q^12037^1:7:1
 @q^12184^1:7:1
+@q^14753^2:4:0
 @q^15284^2:2:0
 @q^17056^1:15:1
+@q^19937^0:15:0
+@q^19938^0:15:0
 @q^211855^1:0:0
 @q^213422^1:12:0
 @q^213544^1:0:0
@@ -229,6 +296,7 @@ GoldScout-export 9^pa62od4reyg1^16
 @q^275997^1:12:0
 @q^276160^0:15:0
 @q^278225^1:12:0
+@q^279186^1:12:0
 @m^1416^Montañas de Alterac
 @m^1417^Tierras Altas de Arathi
 @m^1421^Bosque de Argénteos
@@ -828,9 +896,25 @@ GoldScout-export 9^pa62od4reyg1^16
 @a^2587^106:6,126:3
 @a^2589^106:11,126:1
 @a^3560^254:1
-@a^4114^190:1
+@a^4114^190:1,231:1
+@a^4116^252:2,253:1
 @a^4119^191:1
+@a^4120^252:1,253:2
+@a^4124^252:1
+@a^4130^333:2,354:1
+@a^4131^353:4
+@a^4133^333:2,353:3,354:3
+@a^4139^296:1,297:1,316:2,317:1,354:1
+@a^4140^237:1,254:1,257:2,276:1
+@a^4142^253:1
+@a^4143^276:1,297:3,317:2
+@a^4147^234:1
+@a^4150^317:1,335:1,354:1
+@a^4151^276:1,297:4,317:3,335:1,337:1,355:1
+@a^4158^297:1
+@a^4249^252:3
 @a^4479^151:1
+@a^270094^231:1
 @t^2554^4:242
 @t^2555^2:64
 @t^2559^15:664
@@ -841,4 +925,18 @@ GoldScout-export 9^pa62od4reyg1^16
 @t^2587^9:521
 @t^2589^12:464
 @t^3560^1:25
+@t^4116^3:154
+@t^4120^3:247
+@t^4124^1:3
+@t^4130^3:196
+@t^4131^3:155
+@t^4133^8:396
+@t^4139^5:268
+@t^4140^5:651
+@t^4143^6:264
+@t^4147^1:145
+@t^4150^3:311
+@t^4151^11:743
+@t^4158^1:48
+@t^4249^2:67
 @l^0^esMX
