@@ -1,4 +1,6 @@
-GoldScout-export 9^irxj7k7t88q1^3
+GoldScout-export 9^irxj7k7t88q1^5
+1783^5^0^50^51^1422^0.5002^0.7878^5^Skeletal Flayer^13816:1:1^
+1791^7^0^50^52^1422^0.5006^0.7857^7^Slavering Ghoul^4019:1:1,6530:1:1,12840:1:1,14047:3:5^
 5833^1^0^48^48^1427^0.7287^0.7748^1^Margol the Rager^10000:1:1^
 5839^3^0^43^44^1427^0.6338^0.6112^3^Dark Iron Geologist^4025:1:1,4306:1:1^
 5840^8^0^46^47^1427^0.3923^0.4851^8^Dark Iron Steamsmith^1645:1:1,4338:3:6,18959:1:1^
@@ -27,6 +29,7 @@ GoldScout-export 9^irxj7k7t88q1^3
 @i^3928^Superior Healing Potion
 @i^3986^Protective Pavise
 @i^4018^Whetted Claymore
+@i^4019^Heavy Flint Axe
 @i^4025^Balanced Long Bow
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
@@ -38,6 +41,7 @@ GoldScout-export 9^irxj7k7t88q1^3
 @i^4787^Burning Pitch
 @i^5128^Shed Lizard Skin
 @i^5133^Seeping Gizzard
+@i^6530^Nightcrawlers
 @i^7912^Solid Stone
 @i^8150^Deeprock Salt
 @i^8278^Valorous Greaves
@@ -52,7 +56,9 @@ GoldScout-export 9^irxj7k7t88q1^3
 @i^10552^Symbol of Ragnaros
 @i^11818^Grimesilt Outhouse Key
 @i^12205^White Spider Meat
+@i^12840^Minion's Scourgestone
 @i^13443^Superior Mana Potion
+@i^13816^Fine Longsword
 @i^14047^Runecloth
 @i^14227^Ironweb Spider Silk
 @i^15732^Pattern: Volcanic Leggings
@@ -67,6 +73,7 @@ GoldScout-export 9^irxj7k7t88q1^3
 @q^3928^1:0:0
 @q^3986^0:4:0
 @q^4018^0:2:0
+@q^4019^0:2:0
 @q^4025^0:2:0
 @q^4306^1:7:1
 @q^4338^1:7:1
@@ -78,6 +85,7 @@ GoldScout-export 9^irxj7k7t88q1^3
 @q^4787^0:15:0
 @q^5128^0:15:0
 @q^5133^0:15:0
+@q^6530^1:0:0
 @q^7912^1:7:1
 @q^8150^1:7:1
 @q^8278^2:4:0
@@ -92,7 +100,9 @@ GoldScout-export 9^irxj7k7t88q1^3
 @q^10552^1:12:0
 @q^11818^1:12:0
 @q^12205^1:7:1
+@q^12840^1:12:0
 @q^13443^1:0:0
+@q^13816^0:2:0
 @q^14047^1:7:1
 @q^14227^1:7:1
 @q^15732^2:9:0
@@ -102,8 +112,11 @@ GoldScout-export 9^irxj7k7t88q1^3
 @q^248698^1:0:1
 @q^248708^2:0:1
 @q^248713^2:0:1
+@m^1422^Western Plaguelands
 @m^1427^Searing Gorge
 @m^1428^Burning Steppes
+@a^1783^309:2,310:3
+@a^1791^309:3,310:3,329:1
 @a^5833^314:1
 @a^5839^252:3
 @a^5840^167:1,187:3,188:1,207:2,208:1
@@ -127,6 +140,8 @@ GoldScout-export 9^irxj7k7t88q1^3
 @a^8977^175:1
 @a^9318^89:3,130:2
 @a^14621^148:1
+@t^1783^4:116
+@t^1791^6:516
 @t^5840^8:434
 @t^5843^14:472
 @t^5844^20:1555

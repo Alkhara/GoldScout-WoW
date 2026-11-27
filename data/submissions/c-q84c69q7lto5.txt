@@ -1,4 +1,4 @@
-GoldScout-export 7^q84c69q7lto5^17
+GoldScout-export 7^q84c69q7lto5^18
 681^7^0^30^31^1434^0.3511^0.1173^7^Jeune tigre de Strangleronce^1686:2:2,1687:2:2,5637:1:1,12202:4:4^
 683^1^0^30^31^1434^0.4168^0.1117^1^Jeune panthère^1686:1:1^
 704^1^0^2^2^1426^0.2909^0.7476^1^Loup des bois décharné^750:1:1,1368:1:1,4865:1:1^
@@ -125,9 +125,13 @@ GoldScout-export 7^q84c69q7lto5^17
 7603^20^0^0^0^0^0.0000^0.0000^0^^929:2:2,2592:2:3,4306:2:2,6613:1:1,6615:1:1,9309:6:6^
 7800^1^0^0^0^0^0.0000^0.0000^0^^7367:1:1^
 246143^1^0^3^3^1420^0.2770^0.6391^1^Paladine effrayée^^
+250282^8^0^9^10^1420^0.1784^0.5990^8^Oracle aileron noir^779:1:1,1412:1:1,1420:1:1^
+250283^10^0^9^11^1420^0.1663^0.5791^10^Attaquant aileron noir^118:1:1,1423:1:1,1427:2:2,3325:3:3,3370:1:1,6303:2:5,6513:1:1^
+259434^2^0^10^11^1420^0.1473^0.6514^2^Manoeuvre terni^2070:1:1,2589:1:1^
 260322^1^0^0^0^0^0.0000^0.0000^0^^273022:1:1^
 260325^1^0^0^0^0^0.0000^0.0000^0^^273026:1:1^
 260326^1^0^0^0^0^0.0000^0.0000^0^^270865:1:1,273097:1:1^
+260428^1^0^12^12^1420^0.1199^0.6594^1^Titubeur d'Ombreval^1510:1:1,4604:1:1,286259:1:1^
 260797^2^0^0^0^0^0.0000^0.0000^0^^770:1:1,1758:1:1,3667:1:1,12037:1:1^
 260800^2^0^0^0^0^0.0000^0.0000^0^^3206:1:1,284845:1:1^
 260801^5^0^0^0^0^0.0000^0.0000^0^^1697:1:1,1829:1:1,1830:1:1,3180:1:1,3685:2:2,284845:3:3^
@@ -140,6 +144,7 @@ GoldScout-export 7^q84c69q7lto5^17
 271961^6^0^2^3^1420^0.2500^0.5940^6^Réprouvé entoilé^^
 275046^2^0^0^0^0^0.0000^0.0000^0^^248689:1:1^
 275437^5^0^10^12^1420^0.6853^0.6503^5^Massacreur sombre^117:1:1,2589:2:5,6513:1:1,275851:1:1^
+277730^2^0^8^9^1420^0.1896^0.6162^2^Loup des bois enragé^2672:1:1,3300:1:1,4666:1:1^
 @i^117^Viande séchée coriace
 @i^118^Potion de soins mineure
 @i^159^Eau de source
@@ -174,13 +179,16 @@ GoldScout-export 7^q84c69q7lto5^17
 @i^1416^Hachette rouillée
 @i^1417^Hache de guerre oxydée
 @i^1419^Bottes usées en cuir
+@i^1420^Brassards usés en cuir
 @i^1421^Cape usée en peau
 @i^1423^Pantalon usé en cuir
+@i^1427^Bottes en patchwork
 @i^1431^Pantalon en patchwork
 @i^1433^Armure en patchwork
 @i^1475^Petite glande à venin
 @i^1476^Patte d'araignée brisée
 @i^1478^Parchemin de Protection II
+@i^1510^Marteau lourd
 @i^1686^Moustache à poil dur
 @i^1687^Griffe rétractile
 @i^1697^Dent de raptor
@@ -247,6 +255,8 @@ GoldScout-export 7^q84c69q7lto5^17
 @i^3265^Patte de charognard
 @i^3266^Bracelets écarlates
 @i^3299^Canine cassée
+@i^3300^Patte de lapin
+@i^3325^Hache de guerre Aileron noir
 @i^3328^Robe toile d'araignée
 @i^3337^Etendard de guerre Dragonmaw
 @i^3363^Ceinture râpée
@@ -265,6 +275,7 @@ GoldScout-export 7^q84c69q7lto5^17
 @i^4542^Pain de maïs moelleux
 @i^4604^Tête de champignon sylvestre
 @i^4633^Coffret lourd en bronze
+@i^4666^Ceinture en cuir brûlé
 @i^4713^Cape brochée d'argent
 @i^4715^Cape blasonnée
 @i^4813^Petit collier en cuir
@@ -297,6 +308,7 @@ GoldScout-export 7^q84c69q7lto5^17
 @i^6297^Vieux crâne
 @i^6299^Poisson maladif
 @i^6301^Crâne du vieux Teamster
+@i^6303^Maquereau ombré cru
 @i^6308^Poisson-chat moustachu cru
 @i^6513^Echarpe de disciple
 @i^6517^Ceinture de pionnier
@@ -358,6 +370,7 @@ GoldScout-export 7^q84c69q7lto5^17
 @i^278243^Peau de sombredogue
 @i^278244^Peau de Murloc aileron noir
 @i^284845^Peau de raptor des fourrés
+@i^286259^Os faiblement luminescent
 @q^117^1:0:0
 @q^118^1:0:0
 @q^159^1:0:0
@@ -392,13 +405,16 @@ GoldScout-export 7^q84c69q7lto5^17
 @q^1416^0:2:0
 @q^1417^0:2:0
 @q^1419^0:4:0
+@q^1420^0:4:0
 @q^1421^0:4:0
 @q^1423^0:4:0
+@q^1427^0:4:0
 @q^1431^0:4:0
 @q^1433^0:4:0
 @q^1475^1:7:1
 @q^1476^0:15:0
 @q^1478^1:0:0
+@q^1510^0:2:0
 @q^1686^0:15:0
 @q^1687^0:15:0
 @q^1697^0:15:0
@@ -465,6 +481,8 @@ GoldScout-export 7^q84c69q7lto5^17
 @q^3265^1:12:0
 @q^3266^1:12:0
 @q^3299^0:15:0
+@q^3300^0:15:0
+@q^3325^1:2:0
 @q^3328^1:4:0
 @q^3337^1:12:0
 @q^3363^0:4:0
@@ -483,6 +501,7 @@ GoldScout-export 7^q84c69q7lto5^17
 @q^4542^1:0:0
 @q^4604^1:0:0
 @q^4633^2:15:0
+@q^4666^1:4:0
 @q^4713^2:4:0
 @q^4715^2:4:0
 @q^4813^0:15:0
@@ -515,6 +534,7 @@ GoldScout-export 7^q84c69q7lto5^17
 @q^6297^0:15:0
 @q^6299^1:0:0
 @q^6301^0:15:0
+@q^6303^1:7:1
 @q^6308^1:7:1
 @q^6513^1:4:0
 @q^6517^1:4:0
@@ -576,6 +596,7 @@ GoldScout-export 7^q84c69q7lto5^17
 @q^278243^1:12:0
 @q^278244^1:12:0
 @q^284845^1:12:0
+@q^286259^1:12:0
 @m^1411^Durotar
 @m^1413^Les Tarides
 @m^1415^Royaumes de l'est
@@ -1455,6 +1476,10 @@ GoldScout-export 7^q84c69q7lto5^17
 @a^6231^208:1
 @a^6523^69:3
 @a^246143^245:1
+@a^250282^223:4,243:4
+@a^250283^202:1,222:1,223:5,243:3
+@a^259434^242:1,262:1
+@a^260428^262:1
 @a^266849^210:1,250:1
 @a^266850^210:2
 @a^267006^253:3,273:3
@@ -1462,6 +1487,7 @@ GoldScout-export 7^q84c69q7lto5^17
 @a^269075^245:1
 @a^271961^224:2,225:4
 @a^275437^253:2,273:2,274:1
+@a^277730^243:2
 @t^704^1:15
 @t^705^11:178
 @t^706^19:478
@@ -1512,6 +1538,10 @@ GoldScout-export 7^q84c69q7lto5^17
 @t^1919^1:47
 @t^1935^1:22
 @t^1941^8:399
+@t^250282^8:440
+@t^250283^10:604
+@t^259434^1:24
+@t^260428^1:97
 @t^269075^1:119
 @t^271961^6:97
 @t^275437^1:13

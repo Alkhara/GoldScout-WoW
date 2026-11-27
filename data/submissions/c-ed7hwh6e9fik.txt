@@ -1,4 +1,4 @@
-GoldScout-export 6^ed7hwh6e9fik^14
+GoldScout-export 6^ed7hwh6e9fik^16
 1783^1^0^50^51^1422^0.3939^0.5734^1^Skeletal Flayer^^
 1815^1^0^51^52^1422^0.3344^0.6091^1^Diseased Black Bear^8146:1:1,11408:1:1^
 2244^5^0^21^22^1424^0.8022^0.4464^5^Syndicate Shadow Mage^2592:1:2^
@@ -64,11 +64,13 @@ GoldScout-export 6^ed7hwh6e9fik^14
 6559^2^0^53^54^1449^0.4004^0.4722^2^Glutinous Ooze^12235:2:2,20770:1:1^
 7039^2^0^53^55^1428^0.6072^0.3480^2^War Reaver^7912:1:2,8150:1:1,11266:2:2^
 7044^1^0^50^50^1428^0.9161^0.3408^1^Black Drake^^
+7092^3^0^51^51^1448^0.3927^0.5277^3^Tainted Ooze^12230:3:3^
 7768^21^0^25^25^1425^0.3350^0.6904^21^Witherbark Bloodling^^
 7977^1^0^48^48^1425^0.7602^0.6512^1^Gammerita^3712:1:1,19023:1:1^
 8296^1^0^48^48^1419^0.4526^0.1593^1^Mojo the Twisted^10593:1:1^
 8675^6^0^50^51^1419^0.5466^0.4068^6^Felbeast^4583:4:4^
 8766^6^6^52^53^1447^0.3782^0.6988^6^Forest Ooze^20023:1:1,20763:1:1,20767:1:1^3419:1:1,3421:1:1,20023:4:5
+8956^5^0^47^48^1448^0.4495^0.8061^5^Angerclaw Bear^11408:1:1,11409:3:3,11410:1:1,277958:1:1^
 9162^3^0^49^50^1449^0.6534^0.3638^3^Young Diemetradon^5133:3:3,11018:1:1,11830:1:1^
 9163^11^0^51^52^1449^0.4662^0.6588^11^Diemetradon^5128:1:1,5133:2:2,11018:1:1,11114:3:3,11830:6:6^
 9164^5^0^54^55^1449^0.3861^0.6626^5^Elder Diemetradon^5128:1:1,5133:2:2,11018:1:1,11114:1:1,11830:1:1^
@@ -220,6 +222,8 @@ GoldScout-export 6^ed7hwh6e9fik^14
 @i^11386^Squishy Basilisk Eye
 @i^11387^Basilisk Heart
 @i^11408^Bear Jaw
+@i^11409^Bear Flank
+@i^11410^Savage Bear Claw
 @i^11417^Feathery Wing
 @i^11418^Hollow Wing Bone
 @i^11476^U'cha's Pelt
@@ -240,12 +244,15 @@ GoldScout-export 6^ed7hwh6e9fik^14
 @i^11830^Webbed Diemetradon Scale
 @i^11831^Webbed Pterrordax Scale
 @i^11834^Super Sticky Tar
+@i^11924^Robes of the Royal Crown
+@i^11930^The Emperor's New Cape
 @i^12037^Mystery Meat
 @i^12184^Raptor Flesh
 @i^12203^Red Wolf Meat
 @i^12205^White Spider Meat
 @i^12207^Giant Egg
 @i^12208^Tender Wolf Meat
+@i^12230^Felwood Slime Sample
 @i^12235^Un'Goro Slime Sample
 @i^12704^Plans: Thorium Leggings
 @i^12791^Barman Shanker
@@ -256,6 +263,7 @@ GoldScout-export 6^ed7hwh6e9fik^14
 @i^14454^Highborne Cord
 @i^14474^Pattern: Frostweave Gloves
 @i^14484^Pattern: Brightcloth Cloak
+@i^15217^Widow Blade of Intellect
 @i^15252^Tusker Sword of the Bandit
 @i^15253^Beheading Blade of the Whale
 @i^15323^Percussion Shotgun of the Boar
@@ -276,6 +284,7 @@ GoldScout-export 6^ed7hwh6e9fik^14
 @i^20767^Scum Covered Bag
 @i^20770^Bubbling Green Ichor
 @i^21150^Iron Bound Trunk
+@i^22208^Lavastone Hammer
 @i^22241^Dark Warder's Pauldrons
 @i^22245^Soot Encrusted Footwear
 @i^22397^Idol of Ferocity
@@ -301,8 +310,11 @@ GoldScout-export 6^ed7hwh6e9fik^14
 @i^276744^Zarla's Snack Pouch
 @i^276746^Defias Enforcer's Legguards
 @i^276879^Backroom Bulwark
+@i^277129^Fragment of the Firelands
+@i^277958^Putrescent Bear Organs
 @i^279913^Ti'ik's Head
 @i^280459^Crystal Infused Scale
+@i^281015^Scroll: DOST OREM
 @q^118^1:0:0
 @q^785^1:7:1
 @q^805^1:1:0
@@ -437,6 +449,8 @@ GoldScout-export 6^ed7hwh6e9fik^14
 @q^11386^0:15:0
 @q^11387^0:15:0
 @q^11408^0:15:0
+@q^11409^0:15:0
+@q^11410^0:15:0
 @q^11417^0:15:0
 @q^11418^0:15:0
 @q^11476^1:12:0
@@ -457,12 +471,15 @@ GoldScout-export 6^ed7hwh6e9fik^14
 @q^11830^1:12:0
 @q^11831^1:12:0
 @q^11834^1:12:0
+@q^11924^3:4:0
+@q^11930^3:4:0
 @q^12037^1:7:1
 @q^12184^1:7:1
 @q^12203^1:7:1
 @q^12205^1:7:1
 @q^12207^1:7:1
 @q^12208^1:7:1
+@q^12230^1:12:0
 @q^12235^1:12:0
 @q^12704^2:9:0
 @q^12791^3:2:0
@@ -473,6 +490,7 @@ GoldScout-export 6^ed7hwh6e9fik^14
 @q^14454^2:4:0
 @q^14474^2:9:0
 @q^14484^2:9:0
+@q^15217^2:2:0
 @q^15252^2:2:0
 @q^15253^2:2:0
 @q^15323^2:2:0
@@ -493,6 +511,7 @@ GoldScout-export 6^ed7hwh6e9fik^14
 @q^20767^1:15:0
 @q^20770^0:15:0
 @q^21150^1:15:0
+@q^22208^3:2:0
 @q^22241^3:4:0
 @q^22245^3:4:0
 @q^22397^3:4:0
@@ -518,8 +537,11 @@ GoldScout-export 6^ed7hwh6e9fik^14
 @q^276744^3:4:0
 @q^276746^3:4:0
 @q^276879^3:4:0
+@q^277129^1:12:0
+@q^277958^1:12:0
 @q^279913^1:12:0
 @q^280459^1:12:0
+@q^281015^1:0:0
 @m^1419^Blasted Lands
 @m^1420^Tirisfal Glades
 @m^1422^Western Plaguelands
@@ -529,6 +551,7 @@ GoldScout-export 6^ed7hwh6e9fik^14
 @m^1434^Stranglethorn Vale
 @m^1446^Tanaris
 @m^1447^Azshara
+@m^1448^Felwood
 @m^1449^Un'Goro Crater
 @m^1458^Undercity
 @c^724^
@@ -1350,11 +1373,13 @@ GoldScout-export 6^ed7hwh6e9fik^14
 @a^6559^187:1,188:1
 @a^7039^132:2
 @a^7044^138:1
+@a^7092^187:1,208:2
 @a^7768^246:2,247:2,266:4,267:3,286:8,287:2
 @a^7977^275:1
 @a^8296^69:1
 @a^8675^150:1,151:1,152:1,170:1,171:1,189:1
 @a^8766^267:3,268:1,287:2
+@a^8956^289:1,328:4
 @a^9162^132:1,152:1,154:1
 @a^9163^248:3,249:3,268:1,269:3,331:1
 @a^9164^247:1,248:1,267:2,268:1
