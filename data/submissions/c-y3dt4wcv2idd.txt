@@ -1,4 +1,4 @@
-GoldScout-export 9^y3dt4wcv2idd^52
+GoldScout-export 9^y3dt4wcv2idd^53
 92^19^0^39^40^1418^0.2884^0.6114^19^Rock Elemental^3864:1:1,4552:3:3,4553:7:7,4627:5:5,4784:9:9,7067:2:2,7848:4:4,7912:4:7,8150:5:5,248693:1:1^
 667^20^0^39^40^1434^0.4427^0.3524^20^Skullsplitter Warrior^1520:10:10,1524:3:3,1708:1:1,1710:1:1,2725:1:1,2730:1:1,2742:1:1,3916:10:10,4306:6:12,7474:1:1,8151:2:2,8153:1:1^
 669^8^0^41^42^1434^0.4579^0.4167^8^Skullsplitter Hunter^1520:3:3,1524:2:2,3916:1:1,4002:1:1,4306:1:1,4338:3:6,4637:1:1,248694:1:1^
@@ -534,8 +534,19 @@ GoldScout-export 9^y3dt4wcv2idd^52
 @i^6168^Sawtooth Snapper Claw
 @i^6169^Unprepared Sawtooth Flank
 @i^6196^Noboru's Cudgel
+@i^6289^Raw Longjaw Mud Snapper
+@i^6291^Raw Brilliant Smallfish
+@i^6297^Old Skull
+@i^6299^Sickly Looking Fish
 @i^6300^Husk Fragment
+@i^6301^Old Teamster's Skull
 @i^6302^Delicate Insect Wing
+@i^6308^Raw Bristle Whisker Catfish
+@i^6352^Waterlogged Crate
+@i^6354^Small Locked Chest
+@i^6358^Oily Blackmouth
+@i^6359^Firefin Snapper
+@i^6361^Raw Rainbow Fin Albacore
 @i^6362^Raw Rockscale Cod
 @i^6413^Chief Brigadier Bracers
 @i^6421^Glyphed Belt
@@ -932,8 +943,19 @@ GoldScout-export 9^y3dt4wcv2idd^52
 @q^6168^1:12:0
 @q^6169^1:12:0
 @q^6196^0:2:0
+@q^6289^1:7:1
+@q^6291^1:7:1
+@q^6297^0:15:0
+@q^6299^1:0:0
 @q^6300^0:15:0
+@q^6301^0:15:0
 @q^6302^0:15:0
+@q^6308^1:7:1
+@q^6352^1:15:0
+@q^6354^1:15:0
+@q^6358^1:7:1
+@q^6359^1:7:1
+@q^6361^1:7:1
 @q^6362^1:7:1
 @q^6413^2:4:0
 @q^6421^2:4:0
@@ -1145,6 +1167,8 @@ GoldScout-export 9^y3dt4wcv2idd^52
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
 @m^1418^Badlands
+@m^1420^Tirisfal Glades
+@m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
 @m^1425^The Hinterlands
 @m^1434^Stranglethorn Vale
@@ -2380,6 +2404,9 @@ GoldScout-export 9^y3dt4wcv2idd^52
 @c^279959^
 @c^279960^
 @c^279961^
+@c^279965^
+@c^279966^
+@c^279967^
 @c^279968^
 @c^279972^
 @c^279973^
@@ -2637,4 +2664,7 @@ GoldScout-export 9^y3dt4wcv2idd^52
 @a^270094^210:1
 @a^270545^353:1
 @a^270667^249:1,268:1,269:1,270:2,290:3
+@f^1420^0^54^22^6289:13:13,6291:35:35,6297:2:2,6299:3:3,6301:1:1^213:54
+@f^1421^0^95^75^6289:61:61,6291:22:22,6308:12:12^131:95
+@f^1424^0^140^125^6352:1:1,6354:1:1,6358:27:27,6359:17:17,6361:94:94^330:140
 @l^0^enUS

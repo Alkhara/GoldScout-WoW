@@ -1,33 +1,47 @@
-GoldScout-export 9^85as7qezlz9d^4
+GoldScout-export 9^85as7qezlz9d^5
 121^4^0^15^16^1436^0.4525^0.7268^4^Defias Pathstalker^832:1:1,2589:3:6^
 122^9^0^17^18^1436^0.5116^0.7667^9^Defias Highwayman^818:1:1,1816:1:1,2589:1:1,2592:3:5,211784:1:1^
 449^5^0^16^17^1436^0.5131^0.7793^5^Defias Knuckleduster^1179:1:1,2592:2:3^
 589^1^0^15^15^1436^0.3921^0.6965^1^Defias Pillager^2589:1:2^
 832^1^0^19^19^1436^0.4282^0.5940^1^Dust Devil^2091:1:1^
+1165^5^0^17^18^1432^0.6893^0.6651^5^Stonesplinter Geomancer^2287:1:1,2592:2:2,2636:3:3,3196:1:1,5212:1:1^
+1167^7^0^18^19^1432^0.6967^0.6672^7^Stonesplinter Digger^858:1:1,2589:1:2,2592:1:2,2636:3:3^
+1393^2^0^19^20^1432^0.6946^0.6607^2^Berserk Trogg^2589:1:3,2636:2:2^
 3474^1^0^22^22^1413^0.4812^0.5182^1^Lakota'mani^5099:1:1,5121:1:1,5467:1:4^
 @i^818^Tigerseye
 @i^832^Silver Defias Belt
+@i^858^Lesser Healing Potion
 @i^1179^Ice Cold Milk
 @i^1816^Unbalanced Axe
 @i^2091^Magic Dust
+@i^2287^Haunch of Meat
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2636^Carved Stone Idol
+@i^3196^Edged Bastard Sword of the Falcon
 @i^5099^Hoof of Lakota'mani
 @i^5121^Dirty Kodo Scale
+@i^5212^Blazing Wand
 @i^5467^Kodo Meat
 @i^211784^Scroll: WUBBA WUBBA
 @q^818^2:7:1
 @q^832^2:4:0
+@q^858^1:0:0
 @q^1179^1:0:0
 @q^1816^0:2:0
 @q^2091^1:0:0
+@q^2287^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2636^1:12:0
+@q^3196^2:2:0
 @q^5099^1:12:0
 @q^5121^0:15:0
+@q^5212^2:2:0
 @q^5467^1:7:1
 @q^211784^1:0:0
 @m^1413^The Barrens
+@m^1432^Loch Modan
 @m^1436^Westfall
 @c^2568^
 @c^2569^
@@ -586,9 +600,15 @@ GoldScout-export 9^85as7qezlz9d^4
 @a^449^309:1,310:4
 @a^589^267:1
 @a^832^228:1
+@a^1165^254:1,273:3,274:1
+@a^1167^273:5,274:2
+@a^1393^273:2
 @a^3474^209:1
 @t^121^2:4
 @t^122^1:39
 @t^449^2:80
 @t^589^1:69
+@t^1165^4:150
+@t^1167^7:209
+@t^1393^2:47
 @l^0^enUS
