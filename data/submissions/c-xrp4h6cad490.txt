@@ -1,20 +1,45 @@
-GoldScout-export 9^xrp4h6cad490^4
-3098^11^0^1^2^1411^0.4479^0.6957^11^Scheckiger Eber^117:3:3,4865:3:3,7098:6:6^
+GoldScout-export 9^xrp4h6cad490^7
+3098^36^0^1^2^1411^0.4421^0.6664^36^Scheckiger Eber^117:7:7,1364:1:1,1366:1:1,1367:2:2,1368:1:1,1369:1:1,1380:1:1,2649:1:1,3363:1:1,4496:1:1,4865:16:16,7098:19:19^
+3101^8^0^3^4^1411^0.4498^0.5834^8^Übler Familiar^1366:1:1,1369:1:1,1377:1:1,2589:3:3,2651:1:1,6487:6:6^
+3124^14^0^3^3^1411^0.4199^0.5966^14^Skorpidarbeiter^1367:1:1,1369:1:1,1370:1:1,1376:1:1,2652:1:1,4862:10:10,4867:6:6,7099:3:3,7100:4:4,7101:2:2^
+3281^1^0^4^4^1411^0.4070^0.6638^1^Sarkoth^1364:1:1,4905:1:1,7101:1:1^
 6513^14^0^51^52^1449^0.6591^0.1597^14^Un'Goro-Stampfer^2799:7:7,4099:2:2,4558:1:1,11018:6:6^
 6514^13^0^50^51^1449^0.6571^0.1588^13^Un'Goro-Gorilla^2799:2:2,4099:8:8,11018:3:3^
 6516^31^0^52^53^1449^0.6675^0.1545^31^Un'Goro-Donnerer^2799:11:11,4099:4:4,4558:4:4,11018:7:7,15181:1:1,248698:1:1^
 6560^17^0^60^61^1449^0.6450^0.4567^17^Steinwächter^3944:1:1,4552:3:3,4554:1:1,7076:3:3,7912:8:12,8150:3:3,11018:3:3,12809:7:7,13824:1:1,14670:1:1,262890:1:1^
 9622^4^0^55^55^1449^0.6848^0.1254^4^U'cha^2799:2:2,4099:1:1^
 @i^117^Zähes Stockfleisch
+@i^1364^Struppige Lederweste
+@i^1366^Struppige Lederhose
+@i^1367^Struppige Lederstiefel
+@i^1368^Struppige Lederhandschuhe
+@i^1369^Struppiger Ledergürtel
+@i^1370^Struppige Lederarmschienen
+@i^1376^Ausgefranster Umhang
+@i^1377^Ausgefranste Handschuhe
+@i^1380^Ausgefranste Robe
+@i^2589^Leinenstoff
+@i^2649^Sehr leichter Kettengürtel
+@i^2651^Sehr leichte Kettenarmschienen
+@i^2652^Sehr leichter Kettenumhang
 @i^2799^Gorillafangzahn
+@i^3363^Ausgefranster Gürtel
 @i^3944^Köpergürtel
 @i^4099^Büschel Gorillahaare
+@i^4496^Kleiner brauner Beutel
 @i^4552^Glattes Steinbruchstück
 @i^4554^Glänzender polierter Stein
 @i^4558^Leeres Fass
+@i^4862^Skorpidarbeiterschwanz
 @i^4865^Verdorbener Pelz
+@i^4867^Gebrochenes Skorpidbein
+@i^4905^Sarkoths zerstückelte Klaue
+@i^6487^Kopf eines schändlichen Familiars
 @i^7076^Essenz der Erde
 @i^7098^Abgesplitterter Hauer
+@i^7099^Abgespaltene Zange
+@i^7100^Klebriges Sekret
+@i^7101^Käferauge
 @i^7912^Robuster Stein
 @i^8150^Tiefsteinsalz
 @i^11018^Un'Goro-Erde
@@ -25,15 +50,37 @@ GoldScout-export 9^xrp4h6cad490^4
 @i^248698^Abgefangene Kiste: Textilien des Fachmanns
 @i^262890^Versiegelte Verfügung des Fachmanns
 @q^117^1:0:0
+@q^1364^0:4:0
+@q^1366^0:4:0
+@q^1367^0:4:0
+@q^1368^0:4:0
+@q^1369^0:4:0
+@q^1370^0:4:0
+@q^1376^0:4:0
+@q^1377^0:4:0
+@q^1380^0:4:0
+@q^2589^1:7:1
+@q^2649^0:4:0
+@q^2651^0:4:0
+@q^2652^0:4:0
 @q^2799^1:12:0
+@q^3363^0:4:0
 @q^3944^0:4:0
 @q^4099^0:15:0
+@q^4496^1:1:0
 @q^4552^0:15:0
 @q^4554^0:15:0
 @q^4558^0:15:0
+@q^4862^1:12:0
 @q^4865^0:15:0
+@q^4867^0:15:0
+@q^4905^1:12:0
+@q^6487^1:12:0
 @q^7076^2:7:1
 @q^7098^0:15:0
+@q^7099^0:15:0
+@q^7100^0:15:0
+@q^7101^0:15:0
 @q^7912^1:7:1
 @q^8150^1:7:1
 @q^11018^1:12:0
@@ -638,11 +685,17 @@ GoldScout-export 9^xrp4h6cad490^4
 @c^279941^
 @c^279945^
 @c^279978^
-@a^3098^269:5,288:6
+@a^3098^248:8,268:17,269:5,288:6
+@a^3101^228:4,229:4
+@a^3124^228:11,248:2,268:1
+@a^3281^268:1
 @a^6513^53:5,72:6,73:3
 @a^6514^53:6,72:4,73:3
 @a^6516^53:12,72:5,73:14
 @a^6560^51:3,87:1,108:1,128:1,174:3,195:1,235:1,274:4,294:2
 @a^9622^53:4
-@t^3098^10:258
+@t^3098^34:1515
+@t^3101^6:203
+@t^3124^13:368
+@t^3281^1:90
 @l^0^deDE

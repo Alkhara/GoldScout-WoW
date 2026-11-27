@@ -1,4 +1,4 @@
-GoldScout-export 9^6m4tv8a5tcr3^20
+GoldScout-export 9^6m4tv8a5tcr3^21
 40^2^0^6^7^1429^0.6113^0.5141^2^Mineur kobold^^
 95^1^0^11^12^1436^0.4985^0.1968^1^Contrebandière défias^^
 114^5^0^14^15^1436^0.5135^0.2328^5^Gardien des moissons^732:2:2,814:3:3,1274:3:3,1503:1:1,6379:1:1,248702:1:1,255007:1:1^
@@ -131,6 +131,8 @@ GoldScout-export 9^6m4tv8a5tcr3^20
 2776^2^0^40^40^1417^0.3561^0.7978^2^Vengeur^^
 2783^2^0^40^40^1417^0.2881^0.6107^2^Marez Cowl^4306:1:3,4510:1:1^
 2793^1^0^39^39^1417^0.5461^0.8085^1^Kor'gresh Coldrage^^
+2893^5^0^39^40^1418^0.5024^0.7012^5^Briseur d'os Cavepierre^4306:3:9,211269:1:1,274044:3:3^
+2894^3^0^40^41^1418^0.4916^0.7005^3^Chaman Cavepierre^4306:1:2,274044:2:2^
 2992^2^0^38^38^1435^0.6029^0.2377^2^Gardien Guérisseur V^^
 3226^1^0^11^11^1411^0.4982^0.1392^1^Scorpide corrompu^^
 3258^6^0^17^18^1413^0.4187^0.4759^6^Chasseur Dos-hirsute^858:1:1,1743:1:1,2589:3:7,2592:1:1,5075:3:3^
@@ -816,6 +818,7 @@ GoldScout-export 9^6m4tv8a5tcr3^20
 @i^20310^Peau de démon écorché
 @i^21150^Malle cerclée de fer
 @i^23192^Tabard de la Croisade écarlate
+@i^211269^Dessin primitif
 @i^211784^Parchemin : WUBBA WUBBA
 @i^211853^Parchemin : VOCE WELL
 @i^211854^Parchemin : OMIT KESA
@@ -881,6 +884,7 @@ GoldScout-export 9^6m4tv8a5tcr3^20
 @i^273658^Parchemin taché de sang
 @i^273840^Œil de Murloc maudit
 @i^273841^Maillet du Crépuscule
+@i^274044^Totem de feu tordu
 @i^274045^Totem de terre tordu
 @i^274047^Totem d'air tordu
 @i^274159^Poignes de Malépine
@@ -1321,6 +1325,7 @@ GoldScout-export 9^6m4tv8a5tcr3^20
 @q^20310^1:12:0
 @q^21150^1:15:0
 @q^23192^1:4:0
+@q^211269^1:12:0
 @q^211784^1:0:0
 @q^211853^1:0:0
 @q^211854^1:0:0
@@ -1386,6 +1391,7 @@ GoldScout-export 9^6m4tv8a5tcr3^20
 @q^273658^1:15:0
 @q^273840^3:4:0
 @q^273841^3:2:0
+@q^274044^1:12:0
 @q^274045^1:12:0
 @q^274047^1:12:0
 @q^274159^3:4:0
@@ -1412,6 +1418,7 @@ GoldScout-export 9^6m4tv8a5tcr3^20
 @m^1413^Les Tarides
 @m^1416^Montagnes d'Alterac
 @m^1417^Hautes-terres d'Arathi
+@m^1418^Terres ingrates
 @m^1424^Contreforts de Hautebrande
 @m^1429^Forêt d'Elwynn
 @m^1431^Bois de la Pénombre
@@ -2835,6 +2842,8 @@ GoldScout-export 9^6m4tv8a5tcr3^20
 @a^2776^307:2
 @a^2783^245:2
 @a^2793^330:1
+@a^2893^270:2,289:2,290:1
+@a^2894^269:1,289:2
 @a^2992^91:1,92:1
 @a^3226^49:1
 @a^3258^168:1,188:3,208:2
@@ -2964,6 +2973,8 @@ GoldScout-export 9^6m4tv8a5tcr3^20
 @t^2596^6:394
 @t^2775^3:368
 @t^2776^2:147
+@t^2893^4:79
+@t^2894^3:88
 @t^2992^2:83
 @t^12922^4:19
 @t^254283^1:54
