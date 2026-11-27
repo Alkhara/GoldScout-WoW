@@ -376,7 +376,9 @@ def collect_uploads(uploads_path):
         stored.append((install, result.seq, len(result.mobs), len(result.warnings)))
         if lucky:
             auto.append((install, len(result.mobs), result.outliers))
-        print("store upload %s snapshot %d%s" % (install, result.seq, " (small rate differences)" if lucky else ""))
+        print("store upload %s snapshot %d%s%s" % (install, result.seq, " (small rate differences)" if lucky else "",
+                                                 " (left out NPC %s: overfull corpses)"
+                                                 % ", ".join(map(str, result.overfull)) if result.overfull else ""))
     record_install_dates(dates)
 
     body = ["", "### Companion uploads", ""]

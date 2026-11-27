@@ -177,6 +177,7 @@ class Result:
         self.paces = {}      # npcID -> (timed kills, seconds) from @t lines, attached to the mobs
         self.pocket_loot = False   # PICKPOCKET_ONLY items were taken out of kill loot: this account pickpockets
         self.left_out = 0    # dungeon mobs fresh_rogue_dungeons() took out
+        self.overfull = []   # NPC IDs whose line was left out: more loot than its corpses could hold (OVERFULL)
         self.fishing = []    # Fish from @f lines
         # Names keep_english_names() took out of a non-English export, kept apart for the website's
         # pages in that language: {"items": {itemID: name}, "maps": {...}, "mobs": {npcID: name}}.
@@ -258,9 +259,14 @@ def _items(text, what, attempts, line_no, result):
         items[item] = (times, quantity)
         total += times
     if total > attempts * MAX_DROPS_PER_ATTEMPT:
-        result.errors.append("Line %d: more %s than a mob can carry over %d attempts." % (line_no, what, attempts))
-        return None
+        return OVERFULL
     return items
+
+
+# More loot than a mob's corpses (or pockets) could hold: several corpses' loot counted as one, as seen inside a
+# dungeon (2026-11-27: 9 items, murlocs' among them, from one kill of a Blackfathom Deeps boss). That says nothing
+# about the rest of the export, so only that mob's line (with its area and kill time lines) is left out.
+OVERFULL = object()
 
 
 def _parse_line(line, line_no, result):
@@ -305,6 +311,9 @@ def _parse_line(line, line_no, result):
     drops = _items(fields[10], "drops", kills, line_no, result)
     pick_drops = _items(fields[11], "pickpocket items", picks, line_no, result)
     if name is None or drops is None or pick_drops is None:
+        return None
+    if drops is OVERFULL or pick_drops is OVERFULL:
+        result.overfull.append(npc)
         return None
     for item in PICKPOCKET_ONLY & set(drops):
         del drops[item]
@@ -537,6 +546,9 @@ def parse(text):
             continue
         seen.add(mob.npc)
         result.mobs.append(mob)
+    for npc in result.overfull:
+        result.areas.pop(npc, None)
+        result.paces.pop(npc, None)
     for npc in result.areas:
         if npc not in seen:
             result.errors.append("An area line is for NPC %d, which isn't in the export." % npc)

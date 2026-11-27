@@ -106,12 +106,10 @@ class ValidatorTests(unittest.TestCase):
                 self.assertTrue(errors(text))
 
     def test_rejects_impossible_loot(self):
-        many = ",".join("%d:11:11" % (100 + i) for i in range(10))
         cases = {
             "more drops than kills": GOOD.replace("3010:7:7", "3010:12:12"),
             "impossible stack": GOOD.replace("4874:2:2", "4874:2:900"),
             "less quantity than drops": GOOD.replace("4874:2:2", "4874:2:1"),
-            "too many drops per kill": GOOD.replace("Clattering Crawler^", "Clattering Crawler^" + many + ","),
             "item listed twice": GOOD.replace("4874:2:2", "4874:2:2,4874:1:1"),
             "pickpocket items without picks": GOOD.rstrip("\n").rstrip("^") + "^9:1:1\n",
             "bad item entry": GOOD.replace("4874:2:2", "4874:2"),
@@ -119,6 +117,21 @@ class ValidatorTests(unittest.TestCase):
         for name, text in cases.items():
             with self.subTest(name):
                 self.assertTrue(errors(text))
+
+    def test_a_mob_with_more_loot_than_its_corpses_hold_is_left_out(self):
+        # Several corpses' loot counted as one kill (seen inside a dungeon): only that mob goes, not the export.
+        many = ",".join("%d:11:11" % (100 + i) for i in range(10))
+        text = (GOOD.replace("Clattering Crawler^", "Clattering Crawler^" + many + ",")
+                .replace("GoldScout-export 2^", "GoldScout-export 9^")
+                + "@a^3812^245:11\n@t^3812^5:300\n@a^3814^245:7\n")
+        result = submission.parse(text)
+        self.assertEqual(result.errors, [])
+        self.assertEqual([mob.npc for mob in result.mobs], [3814])
+        self.assertEqual(result.overfull, [3812])
+        self.assertNotIn("3812", result.text())
+        pockets = ",".join("%d:1:1" % (200 + i) for i in range(9))
+        pocket = GOOD.replace("3814^7^0^", "3814^7^1^").rstrip("\n").rstrip("^") + "^" + pockets + "\n"
+        self.assertEqual([mob.npc for mob in submission.parse(pocket).mobs], [3812])   # pockets too
 
     def test_a_boss_dropping_a_full_stack_of_ammo_is_fine(self):
         # Lord Roccor drops Rockshard Pellets 200 at a time: 3 kills, 3 drops, 600 pellets.
