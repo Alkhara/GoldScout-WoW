@@ -1,4 +1,4 @@
-GoldScout-export 7^iznlndjargrk^3
+GoldScout-export 7^iznlndjargrk^4
 94^3^0^5^6^1429^0.4293^0.5428^3^Defias Cutpurse^159:1:1,2645:1:1^
 422^1^0^18^19^1433^0.3245^0.5076^1^Murloc Flesheater^5523:1:1^
 423^21^0^15^16^1433^0.1618^0.7012^21^Redridge Mongrel^1179:1:1,1737:1:1,1744:1:1,2589:1:1,2592:5:6,2632:1:1,248702:1:1^
@@ -7,7 +7,12 @@ GoldScout-export 7^iznlndjargrk^3
 441^10^0^17^18^1433^0.4885^0.7394^10^Black Dragon Whelp^3177:2:2^
 442^10^0^15^16^1433^0.0589^0.7972^10^Tarantula^1081:5:5,2976:1:1,3167:5:5,3174:4:4^
 547^15^0^16^17^1433^0.2579^0.6980^15^Great Goretusk^723:6:6,769:13:20,2296:5:5,2677:4:4,3172:3:3,6528:1:1,6557:1:1,6558:1:1,211854:1:1^
+681^7^0^30^31^1434^0.3699^0.1178^7^Young Stranglethorn Tiger^1686:1:1,5637:1:1,12202:4:4^
+682^2^0^32^33^1434^0.3054^0.1484^2^Stranglethorn Tiger^1687:1:1,3873:1:1^
+683^2^0^30^31^1434^0.3836^0.1322^2^Young Panther^1686:1:1^
+685^4^0^33^34^1434^0.2680^0.1674^4^Stranglethorn Raptor^1696:2:2,3685:3:3,4461:1:1,12184:3:3^
 712^17^0^14^15^1433^0.1234^0.6494^17^Redridge Thrasher^818:1:1,1212:1:1,2287:2:2,2589:2:4,2592:1:1,280911:5:5^
+736^1^0^32^33^1434^0.2871^0.1457^1^Panther^1687:1:1^
 1040^2^0^25^25^1437^0.5097^0.3393^2^Fen Creeper^^
 1069^1^0^25^25^1437^0.6734^0.4493^1^Crimson Whelp^9811:1:1^
 2070^1^0^10^10^1439^0.4117^0.4783^1^Moonstalker Runt^14098:1:1^
@@ -41,6 +46,9 @@ GoldScout-export 7^iznlndjargrk^3
 @i^1464^Buzzard Talon
 @i^1498^Calico Gloves
 @i^1505^Warped Cloak
+@i^1686^Bristly Whisker
+@i^1687^Retractable Claw
+@i^1696^Curved Raptor Talon
 @i^1733^Worn Cloak
 @i^1737^Worn Mail Vest
 @i^1744^Laced Mail Shoulderpads
@@ -63,6 +71,9 @@ GoldScout-export 7^iznlndjargrk^3
 @i^3374^Calico Belt
 @i^3375^Calico Bracers
 @i^3654^Brackwater Shield
+@i^3685^Raptor Egg
+@i^3873^Plans: Golden Scale Cuirass
+@i^4461^Raptor Hide
 @i^4567^Merc Sword of the Gorilla
 @i^4775^Cracked Bill
 @i^4776^Ruffled Feather
@@ -71,6 +82,7 @@ GoldScout-export 7^iznlndjargrk^3
 @i^5212^Blazing Wand
 @i^5523^Small Barnacled Clam
 @i^5574^White Leather Bag
+@i^5637^Large Fang
 @i^6528^Spellbinder Robe
 @i^6548^Soldier's Girdle of the Wolf
 @i^6556^Bard's Bracers of the Eagle
@@ -80,6 +92,8 @@ GoldScout-export 7^iznlndjargrk^3
 @i^6889^Small Egg
 @i^9780^Bandit Gloves of the Monkey
 @i^9811^Fortified Bracers of the Owl
+@i^12184^Raptor Flesh
+@i^12202^Tiger Meat
 @i^14098^Native Cloak
 @i^17056^Light Feather
 @i^211854^Scroll: OMIT KESA
@@ -107,6 +121,9 @@ GoldScout-export 7^iznlndjargrk^3
 @q^1464^0:15:0
 @q^1498^0:4:0
 @q^1505^0:4:0
+@q^1686^0:15:0
+@q^1687^0:15:0
+@q^1696^0:15:0
 @q^1733^0:4:0
 @q^1737^0:4:0
 @q^1744^0:4:0
@@ -129,6 +146,9 @@ GoldScout-export 7^iznlndjargrk^3
 @q^3374^0:4:0
 @q^3375^0:4:0
 @q^3654^2:4:0
+@q^3685^1:7:1
+@q^3873^2:9:0
+@q^4461^1:7:1
 @q^4567^2:2:0
 @q^4775^0:15:0
 @q^4776^0:15:0
@@ -137,6 +157,7 @@ GoldScout-export 7^iznlndjargrk^3
 @q^5212^2:2:0
 @q^5523^1:7:0
 @q^5574^1:1:0
+@q^5637^1:7:1
 @q^6528^2:4:0
 @q^6548^2:4:0
 @q^6556^2:4:0
@@ -146,6 +167,8 @@ GoldScout-export 7^iznlndjargrk^3
 @q^6889^1:7:1
 @q^9780^2:4:0
 @q^9811^2:4:0
+@q^12184^1:7:1
+@q^12202^1:7:1
 @q^14098^1:4:0
 @q^17056^1:15:1
 @q^211854^1:0:0
@@ -162,6 +185,7 @@ GoldScout-export 7^iznlndjargrk^3
 @q^280911^1:12:0
 @m^1429^Elwynn Forest
 @m^1433^Redridge Mountains
+@m^1434^Stranglethorn Vale
 @m^1437^Wetlands
 @m^1439^Darkshore
 @c^2300^
@@ -1292,7 +1316,12 @@ GoldScout-export 7^iznlndjargrk^3
 @a^441^271:1,285:2,290:3,291:1,310:2,311:1
 @a^442^280:1,300:3,301:3,321:1,341:1,360:1
 @a^547^245:1,265:6,266:1,285:4,301:1,304:1,305:1
+@a^681^27:1,47:6
+@a^682^46:1,66:1
+@a^683^47:2
+@a^685^65:4
 @a^712^241:4,242:10,262:1,305:2
+@a^736^45:1
 @a^1040^130:1,150:1
 @a^1069^173:1
 @a^2070^188:1
@@ -1305,5 +1334,7 @@ GoldScout-export 7^iznlndjargrk^3
 @a^271458^92:1
 @a^271460^70:1
 @a^271462^293:1
+@t^681^6:358
+@t^683^2:140
 @t^1040^1:118
 @l^0^enUS
