@@ -1,4 +1,4 @@
-GoldScout-export 9^94u9q7nulk6e^23
+GoldScout-export 9^94u9q7nulk6e^24
 588^18^0^34^35^1434^0.2455^0.1146^18^Explorador Cabellesangre^1519:4:4,1710:1:1,2592:1:1,2740:1:1,3771:1:1,3798:1:1,4306:6:10,262889:1:1^
 595^34^0^34^35^1434^0.2474^0.1162^34^Cazador Cabellesangre^1519:6:6,1708:2:2,1710:1:1,1711:1:1,2725:1:1,2734:1:1,2744:1:1,4306:12:19,277957:1:1^
 597^3^0^36^37^1434^0.2480^0.1071^3^Rabioso Cabellesangre^4306:1:3,9294:1:1^
@@ -51,8 +51,11 @@ GoldScout-export 9^94u9q7nulk6e^23
 1152^10^0^35^36^1434^0.4125^0.1957^10^Crocolisco Quijaforte^770:3:3,3667:5:5,4104:4:4,12037:4:4,248693:1:1^
 2240^4^0^32^33^1416^0.4805^0.8155^4^Asaltante de caminos de la Hermandad^3794:1:1,4306:2:2,5113:1:1^
 2241^7^0^33^34^1416^0.4960^0.7993^7^Ladrona de la Hermandad^4306:3:5,5113:1:1^
-2246^3^0^39^39^1416^0.3987^0.1496^3^Asesino de la Hermandad^3505:1:1,4306:1:3,5113:1:1,248691:1:1^
-2247^1^0^40^40^1416^0.4014^0.1451^1^Déspota de la Hermandad^3505:1:1^
+2243^1^0^36^36^1416^0.5247^0.2130^1^Avizora de la Hermandad^4306:1:3,255727:1:1^
+2246^12^0^38^39^1416^0.3919^0.1623^12^Asesino de la Hermandad^3505:4:4,4306:2:5,4338:1:1,5113:1:1,6986:1:1,9879:1:1,248691:1:1,248692:1:1^
+2247^6^0^39^40^1416^0.3919^0.1608^6^Déspota de la Hermandad^1207:1:1,3505:3:3,4306:1:3,4338:1:1,6986:1:1^
+2252^2^0^34^35^1416^0.5383^0.5378^2^Ogro Aplastacresta^2843:1:1,3658:1:1^
+2318^4^0^35^36^1416^0.5694^0.2765^4^Maga oscura Argus^2592:1:1^
 2320^1^0^40^40^1416^0.3924^0.1433^1^Nagaz^3672:1:1^
 2354^1^0^22^23^1424^0.5450^0.5276^1^Oso gris feroz^3730:1:1^
 2384^1^0^23^24^1424^0.5520^0.5097^1^León montés hambriento^3731:1:1^
@@ -153,6 +156,7 @@ GoldScout-export 9^94u9q7nulk6e^23
 @i^770^Diente de crocolisco puntiagudo
 @i^863^Segadora penumbra del oso
 @i^1074^Punta de pata de araña dura
+@i^1207^Murfestar del hierofante
 @i^1519^Oreja Sangrapellejo
 @i^1520^Sudor trol
 @i^1522^Lanza de cazador de cabezas
@@ -191,12 +195,14 @@ GoldScout-export 9^94u9q7nulk6e^23
 @i^2745^Las verdes colinas de Tuercespina: Página 21
 @i^2748^Las verdes colinas de Tuercespina: Página 24
 @i^2750^Las verdes colinas de Tuercespina: Página 26
+@i^2843^Nudillos sucios
 @i^2951^Anillo de Truenedera
 @i^3037^Arco corvo ligero
 @i^3201^Hacha de guerra bárbara del águila
 @i^3385^Poción de maná inferior
 @i^3399^Talón de buitre
 @i^3505^Sello de Alterac
+@i^3658^Escrito recuperado
 @i^3667^Carne de crocolisco tierna
 @i^3672^Cabeza de Nagaz
 @i^3684^Tiara Perenolde
@@ -298,6 +304,7 @@ GoldScout-export 9^94u9q7nulk6e^23
 @i^9862^Pantalones de arquero del bandido
 @i^9871^Leotardos de renegado de fuerza
 @i^9877^Capa hechicero de fuerza
+@i^9879^Pulseras hechicero de intelecto
 @i^9900^Guanteletes de brigandina de espíritu
 @i^11205^Fórmula: encantar guantes: herboristería avanzada
 @i^11384^Diente de basilisco partido
@@ -337,6 +344,7 @@ GoldScout-export 9^94u9q7nulk6e^23
 @i^248692^Cajón saqueado: menas de experto
 @i^248693^Cajón saqueado: textiles de experto
 @i^255723^Manual: poción de sanación superior
+@i^255727^Manual: cataplasma excelente
 @i^255728^Manual: antídoto potente
 @i^262888^Libranza del oficial sellada
 @i^262889^Libranza del experto sellada
@@ -362,6 +370,7 @@ GoldScout-export 9^94u9q7nulk6e^23
 @q^770^0:15:0
 @q^863^2:2:0
 @q^1074^0:15:0
+@q^1207^2:2:0
 @q^1519^1:12:0
 @q^1520^0:15:0
 @q^1522^2:2:0
@@ -400,12 +409,14 @@ GoldScout-export 9^94u9q7nulk6e^23
 @q^2745^1:12:0
 @q^2748^1:12:0
 @q^2750^1:12:0
+@q^2843^1:12:0
 @q^2951^3:4:0
 @q^3037^2:2:0
 @q^3201^2:2:0
 @q^3385^1:0:0
 @q^3399^0:15:0
 @q^3505^1:12:0
+@q^3658^1:12:0
 @q^3667^1:7:1
 @q^3672^1:12:0
 @q^3684^1:12:0
@@ -507,6 +518,7 @@ GoldScout-export 9^94u9q7nulk6e^23
 @q^9862^2:4:0
 @q^9871^2:4:0
 @q^9877^2:4:0
+@q^9879^2:4:0
 @q^9900^2:4:0
 @q^11205^2:9:0
 @q^11384^0:15:0
@@ -546,6 +558,7 @@ GoldScout-export 9^94u9q7nulk6e^23
 @q^248692^1:0:1
 @q^248693^1:0:1
 @q^255723^2:9:0
+@q^255727^2:9:0
 @q^255728^2:9:0
 @q^262888^3:0:0
 @q^262889^3:0:0
@@ -629,8 +642,11 @@ GoldScout-export 9^94u9q7nulk6e^23
 @a^1152^67:1,68:3,87:1,88:5
 @a^2240^329:4
 @a^2241^271:1,309:1,329:5
-@a^2246^47:1,48:1,67:1
-@a^2247^48:1
+@a^2243^90:1
+@a^2246^47:4,48:1,67:6,68:1
+@a^2247^47:2,48:1,67:2,87:1
+@a^2252^210:2
+@a^2318^90:1,111:1,131:2
 @a^2320^47:1
 @a^2354^210:1
 @a^2384^211:1
@@ -689,8 +705,11 @@ GoldScout-export 9^94u9q7nulk6e^23
 @a^13019^131:1
 @a^14222^347:1
 @a^14229^45:1
-@t^2246^3:259
-@t^2247^1:78
+@t^2243^1:103
+@t^2246^12:633
+@t^2247^5:180
+@t^2252^2:157
+@t^2318^4:307
 @t^2320^1:47
 @t^2421^1:329
 @l^0^esES

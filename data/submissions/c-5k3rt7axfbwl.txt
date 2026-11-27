@@ -1,4 +1,4 @@
-GoldScout-export 9^5k3rt7axfbwl^16
+GoldScout-export 9^5k3rt7axfbwl^17
 95^20^0^11^12^1436^0.4867^0.3927^20^Defias Smuggler^414:1:1,829:6:6,1495:1:1,2589:4:8,7997:1:1^
 114^22^0^14^15^1436^0.5168^0.3401^22^Harvest Watcher^732:10:10,814:7:7,1274:9:9,1505:1:1,1506:1:1,1512:1:1,4359:2:2,4361:1:1,211785:1:1,255007:11:11,255010:5:5^
 126^12^0^12^13^1436^0.5554^0.1100^12^Murloc Coastrunner^730:3:3,858:1:1,1179:1:1,5523:2:2,211780:1:1,254548:4:4^
@@ -77,6 +77,8 @@ GoldScout-export 9^5k3rt7axfbwl^16
 3988^2^0^19^20^1442^0.6540^0.5151^2^Venture Co. Operator^2592:1:1,5734:1:1^
 3989^9^0^18^19^1442^0.6574^0.5397^9^Venture Co. Logger^1812:1:1,2455:1:1,2589:3:7,2592:1:1,2764:1:1,2780:1:1^
 3991^10^0^19^20^1442^0.6529^0.5428^10^Venture Co. Deforester^1179:2:2,2592:8:11^
+4012^16^0^21^22^1442^0.5108^0.4379^16^Pridewing Wyvern^5135:2:2,5136:10:10,5635:2:2,5808:7:7,6391:1:1,15312:1:1,277917:2:2^
+4014^7^0^22^22^1442^0.5062^0.4328^7^Pridewing Consort^5135:2:2,5136:4:4,5808:5:5,277917:2:2^
 10158^1^0^12^13^1439^0.4364^0.4680^1^Moonkin^1515:1:1,6889:1:1^
 10323^1^0^19^19^1439^0.3695^0.7730^1^Murkdeep^5523:1:1^
 261306^1^0^0^0^0^0.0000^0.0000^0^^270227:1:1^
@@ -195,6 +197,7 @@ GoldScout-export 9^5k3rt7axfbwl^16
 @i^5114^Severed Talon
 @i^5134^Small Furry Paw
 @i^5135^Thin Black Claw
+@i^5136^Torn Furry Ear
 @i^5360^Highborne Relic
 @i^5382^Anaya's Pendant
 @i^5385^Crawler Leg
@@ -212,9 +215,11 @@ GoldScout-export 9^5k3rt7axfbwl^16
 @i^5734^Super Reaper 6000 Blueprints
 @i^5741^Rock Chip
 @i^5784^Slimy Murloc Scale
+@i^5808^Pridewing Venom Sac
 @i^6289^Raw Longjaw Mud Snapper
 @i^6308^Raw Bristle Whisker Catfish
 @i^6361^Raw Rainbow Fin Albacore
+@i^6391^Pattern: Stylish Green Shirt
 @i^6547^Soldier's Gauntlets of Arcane Protection
 @i^6558^Bard's Belt of Agility
 @i^6559^Bard's Buckler of Fire Protection
@@ -235,6 +240,7 @@ GoldScout-export 9^5k3rt7axfbwl^16
 @i^15009^Primal Leggings of the Wolf
 @i^15268^Twin-bladed Axe of Magic
 @i^15297^Grizzly Bracers
+@i^15312^Feral Leggings of Frost Protection
 @i^17057^Shiny Fish Scales
 @i^211780^Scroll: KWYJIBO
 @i^211784^Scroll: WUBBA WUBBA
@@ -253,6 +259,7 @@ GoldScout-export 9^5k3rt7axfbwl^16
 @i^270231^Flamefist Grips
 @i^270256^Durgen's Crescent Axe
 @i^275895^Fading Echo
+@i^277917^Stonetalon Supply Bundle
 @i^280911^Spiked Collar
 @i^281038^Feather of Jai'vhanel
 @q^414^1:0:0
@@ -359,6 +366,7 @@ GoldScout-export 9^5k3rt7axfbwl^16
 @q^5114^0:15:0
 @q^5134^1:12:0
 @q^5135^0:15:0
+@q^5136^0:15:0
 @q^5360^1:12:0
 @q^5382^1:12:0
 @q^5385^1:12:0
@@ -376,9 +384,11 @@ GoldScout-export 9^5k3rt7axfbwl^16
 @q^5734^1:12:0
 @q^5741^0:15:0
 @q^5784^1:7:1
+@q^5808^1:12:0
 @q^6289^1:7:1
 @q^6308^1:7:1
 @q^6361^1:7:1
+@q^6391^2:9:0
 @q^6547^2:4:0
 @q^6558^2:4:0
 @q^6559^2:4:0
@@ -399,6 +409,7 @@ GoldScout-export 9^5k3rt7axfbwl^16
 @q^15009^2:4:0
 @q^15268^2:2:0
 @q^15297^1:4:0
+@q^15312^2:4:0
 @q^17057^1:15:0
 @q^211780^1:0:0
 @q^211784^1:0:0
@@ -417,6 +428,7 @@ GoldScout-export 9^5k3rt7axfbwl^16
 @q^270231^3:4:0
 @q^270256^3:2:0
 @q^275895^0:15:0
+@q^277917^1:12:0
 @q^280911^1:12:0
 @q^281038^1:12:0
 @m^1431^Duskwood
@@ -1668,6 +1680,8 @@ GoldScout-export 9^5k3rt7axfbwl^16
 @a^3988^213:2
 @a^3989^212:2,213:3,232:1,233:3
 @a^3991^212:4,213:1,233:5
+@a^4012^169:3,170:13
+@a^4014^149:1,170:6
 @a^10158^188:1
 @a^10323^307:1
 @a^270196^228:1
@@ -1678,4 +1692,6 @@ GoldScout-export 9^5k3rt7axfbwl^16
 @t^3834^1:43
 @t^3919^2:95
 @t^3943^1:111
+@t^4012^16:953
+@t^4014^6:228
 @l^0^enUS
