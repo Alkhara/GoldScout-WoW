@@ -1,4 +1,4 @@
-GoldScout-export 9^78fm33snnhmi^13
+GoldScout-export 9^78fm33snnhmi^14
 667^5^0^39^40^1434^0.4735^0.4022^5^Skullsplitter Warrior^1520:3:3,1524:3:3,4306:1:2,8153:1:3^
 669^5^0^41^42^1434^0.4661^0.4070^5^Skullsplitter Hunter^1520:2:2,1524:2:2,4306:1:2,4338:3:5,4599:1:1,8151:1:1^
 670^1^0^41^41^1434^0.4641^0.4053^1^Skullsplitter Witch Doctor^1524:1:1,4338:1:1^
@@ -63,6 +63,7 @@ GoldScout-export 9^78fm33snnhmi^13
 5426^2^0^44^45^1446^0.5950^0.5356^2^Blisterpaw Hyena^4583:1:1,12037:2:2,12203:2:2,12208:2:2^
 5431^1^0^48^50^1446^0.6772^0.5612^1^Surf Glider^3712:1:1,4555:1:1,4556:1:1,7973:1:1^
 5459^1^0^48^48^1446^0.3884^0.3007^1^Centipaar Tunneler^6302:1:1^
+5461^2^0^48^49^1444^0.3541^0.3581^2^Sea Elemental^4791:1:2,7079:1:1^
 5471^1^0^46^46^1446^0.4157^0.7545^1^Dunemaul Ogre^^
 5472^1^0^46^47^1446^0.4008^0.5012^1^Dunemaul Enforcer^4338:1:2,4599:1:1^
 5474^4^0^47^48^1446^0.4191^0.5515^4^Dunemaul Brute^4338:3:5,4599:1:1^
@@ -212,6 +213,7 @@ GoldScout-export 9^78fm33snnhmi^13
 @i^4599^Cured Ham Steak
 @i^4603^Raw Spotted Yellowtail
 @i^4606^Spongy Morel
+@i^4791^Enchanted Water
 @i^5254^Rugged Spaulders
 @i^5429^A Pretty Rock
 @i^5635^Sharp Claw
@@ -231,6 +233,7 @@ GoldScout-export 9^78fm33snnhmi^13
 @i^6530^Nightcrawlers
 @i^6633^Butcher's Slicer
 @i^6826^Brilliant Scale
+@i^7079^Globe of Water
 @i^7973^Big-mouth Clam
 @i^8151^Flask of Mojo
 @i^8152^Flask of Big Mojo
@@ -391,6 +394,7 @@ GoldScout-export 9^78fm33snnhmi^13
 @q^4599^1:0:0
 @q^4603^1:7:1
 @q^4606^1:0:0
+@q^4791^1:0:0
 @q^5254^3:4:0
 @q^5429^0:15:0
 @q^5635^1:7:1
@@ -410,6 +414,7 @@ GoldScout-export 9^78fm33snnhmi^13
 @q^6530^1:0:0
 @q^6633^3:2:0
 @q^6826^0:15:0
+@q^7079^1:7:1
 @q^7973^1:7:0
 @q^8151^1:7:1
 @q^8152^1:7:1
@@ -1287,6 +1292,7 @@ GoldScout-export 9^78fm33snnhmi^13
 @a^5426^192:1,251:1
 @a^5431^233:1
 @a^5459^127:1
+@a^5461^146:1,147:1
 @a^5471^308:1
 @a^5472^208:1
 @a^5474^188:1,207:1,208:1,269:1
@@ -1319,6 +1325,7 @@ GoldScout-export 9^78fm33snnhmi^13
 @a^261711^189:2,208:1,209:4
 @a^262169^189:6,208:1,209:5
 @a^263071^151:1
+@t^5461^1:63
 @t^5471^1:123
 @t^5472^1:117
 @t^5474^4:163

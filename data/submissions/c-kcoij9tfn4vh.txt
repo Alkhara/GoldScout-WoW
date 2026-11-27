@@ -1,4 +1,5 @@
-GoldScout-export 9^kcoij9tfn4vh^12
+GoldScout-export 9^kcoij9tfn4vh^13
+2734^2^0^40^41^1418^0.2186^0.6814^2^Ridge Stalker Patriarch^1688:1:1,12202:2:2^
 4323^13^0^41^42^1445^0.4423^0.6745^13^Searing Hatchling^5840:5:5,5841:7:7,6444:3:3,8146:1:1,12239:1:1^
 4324^16^0^42^43^1445^0.4370^0.6819^16^Searing Whelp^4402:2:2,4460:2:2,5840:5:5,5841:6:6,6444:4:4,8146:2:2^
 4328^5^0^43^44^1445^0.3777^0.6768^5^Firemane Scalebane^1645:1:1,4424:1:1^
@@ -39,15 +40,20 @@ GoldScout-export 9^kcoij9tfn4vh^12
 7847^1^0^46^46^1446^0.6368^0.3310^1^Caliph Scorpidsting^4338:1:1,8723:1:1^
 8095^3^0^0^0^0^0.0000^0.0000^0^^1701:1:1,1702:1:1,4092:1:1,8146:1:1,11387:1:1,15614:1:1^
 8120^1^0^0^0^0^0.0000^0.0000^0^^4092:1:1^
+213795^1^0^40^40^1418^0.2227^0.6761^1^Gharrik^5116:1:1,12037:1:1,211293:1:1^
+257901^10^0^41^42^2548^0.8471^0.4050^10^Eastsea Buccaneer^4306:1:2,4338:3:6,248690:1:1,268796:3:3^
+257910^8^0^42^43^2548^0.8489^0.4100^8^Eastsea Musketeer^3961:1:1,4306:1:1,4338:1:2,213544:1:1,268796:4:4^
 @i^770^Pointy Crocolisk Tooth
 @i^1520^Troll Sweat
 @i^1645^Moonberry Juice
+@i^1688^Long Soft Tail
 @i^1701^Curved Basilisk Claw
 @i^1702^Intact Basilisk Spine
 @i^3667^Tender Crocolisk Meat
 @i^3676^Slimy Ichor
 @i^3927^Fine Aged Cheddar
 @i^3943^Crochet Vest
+@i^3961^Thick Leather Belt
 @i^3964^Thick Cloak
 @i^4001^Overlinked Chain Boots
 @i^4092^Prismatic Basilisk Scale
@@ -60,6 +66,7 @@ GoldScout-export 9^kcoij9tfn4vh^12
 @i^4586^Smooth Raptor Skin
 @i^4587^Tribal Raptor Feathers
 @i^4599^Cured Ham Steak
+@i^5116^Long Tail Feather
 @i^5637^Large Fang
 @i^5840^Searing Tongue
 @i^5841^Searing Heart
@@ -86,12 +93,18 @@ GoldScout-export 9^kcoij9tfn4vh^12
 @i^11387^Basilisk Heart
 @i^11409^Bear Flank
 @i^12012^Marsh Ring of the Beast
+@i^12037^Mystery Meat
 @i^12184^Raptor Flesh
+@i^12202^Tiger Meat
 @i^12239^Recipe: Dragonbreath Chili
 @i^12691^Pattern: Wildthorn Mail
 @i^15614^Bonelink Sabatons of the Eagle
 @i^15643^Ironhide Cloak of the Bandit
+@i^211293^Crimson Trophy Quill
+@i^213544^Scroll: TOPAZ YORAK
+@i^248690^Waylaid Crate: Earthly Expert Herbs
 @i^251406^Plans: Prefect's Gloves
+@i^268796^Smuggled Goods
 @i^274638^Sandfury Pauldrons
 @i^274643^Gutcutter Hatchet
 @i^277112^Zum'rah's Head
@@ -100,12 +113,14 @@ GoldScout-export 9^kcoij9tfn4vh^12
 @q^770^0:15:0
 @q^1520^0:15:0
 @q^1645^1:0:0
+@q^1688^0:15:0
 @q^1701^0:15:0
 @q^1702^0:15:0
 @q^3667^1:7:1
 @q^3676^0:15:0
 @q^3927^1:0:0
 @q^3943^0:4:0
+@q^3961^0:4:0
 @q^3964^0:4:0
 @q^4001^0:4:0
 @q^4092^0:15:0
@@ -118,6 +133,7 @@ GoldScout-export 9^kcoij9tfn4vh^12
 @q^4586^0:15:0
 @q^4587^0:15:0
 @q^4599^1:0:0
+@q^5116^1:7:1
 @q^5637^1:7:1
 @q^5840^1:12:0
 @q^5841^1:12:0
@@ -144,21 +160,29 @@ GoldScout-export 9^kcoij9tfn4vh^12
 @q^11387^0:15:0
 @q^11409^0:15:0
 @q^12012^2:4:0
+@q^12037^1:7:1
 @q^12184^1:7:1
+@q^12202^1:7:1
 @q^12239^1:9:0
 @q^12691^2:9:0
 @q^15614^2:4:0
 @q^15643^2:4:0
+@q^211293^1:12:0
+@q^213544^1:0:0
+@q^248690^1:0:1
 @q^251406^3:9:0
+@q^268796^1:15:0
 @q^274638^3:4:0
 @q^274643^3:2:0
 @q^277112^1:12:0
 @q^278186^1:12:0
 @q^279601^1:12:0
+@m^1418^Badlands
 @m^1444^Feralas
 @m^1445^Dustwallow Marsh
 @m^1446^Tanaris
 @m^1454^Orgrimmar
+@m^2548^Riverglades
 @c^724^
 @c^733^
 @c^787^
@@ -846,6 +870,7 @@ GoldScout-export 9^kcoij9tfn4vh^12
 @c^279985^
 @c^279987^
 @c^286152^
+@a^2734^264:2
 @a^4323^268:10,269:3
 @a^4324^248:1,268:8,269:4,288:3
 @a^4328^267:5
@@ -867,6 +892,10 @@ GoldScout-export 9^kcoij9tfn4vh^12
 @a^5645^87:1
 @a^6466^270:1
 @a^7847^132:1
+@a^213795^264:1
+@a^257901^156:2,157:3,176:5
+@a^257910^156:1,157:3,176:3,196:1
+@t^2734^1:1
 @t^4323^11:511
 @t^4324^13:712
 @t^4329^8:252
@@ -884,4 +913,7 @@ GoldScout-export 9^kcoij9tfn4vh^12
 @t^5616^8:272
 @t^5618^9:343
 @t^7847^1:36
+@t^213795^1:29
+@t^257901^10:276
+@t^257910^7:194
 @l^0^enUS

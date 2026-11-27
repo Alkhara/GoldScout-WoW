@@ -1,4 +1,4 @@
-GoldScout-export 9^xertsadvcsn0^8
+GoldScout-export 9^xertsadvcsn0^9
 1766^1^0^11^12^1421^0.6099^0.1169^1^Scheckiger Worg^2672:1:1^
 1778^1^0^12^12^1421^0.4896^0.2101^1^Wilder ergrauter Bär^3173:1:1^
 2173^1^0^14^14^1421^0.3416^0.3042^1^Rifffrenzy^5468:1:1^
@@ -32,7 +32,17 @@ GoldScout-export 9^xertsadvcsn0^8
 4019^4^0^24^25^1442^0.3576^0.1527^4^Großer Renner^5120:1:1,5471:2:2,5566:1:1,5585:4:8^
 4020^19^0^22^23^1442^0.4005^0.2246^19^Blutsaftbestie^1802:1:1,2452:1:1,2782:1:1,2783:2:2,3670:2:2,3671:2:2,3674:2:2,3676:2:2,5582:5:5,14125:1:1,248687:1:1^
 4021^1^0^24^25^1442^0.3877^0.1552^1^Ätzblutsaftbestie^1820:1:1^
-4036^1^0^23^23^1442^0.4513^0.4316^1^Wilder Flammengeist^16312:1:1^
+4022^5^0^23^24^1442^0.3442^0.5972^5^Harpyie der Blutfurien^2592:1:1,5635:1:1,17056:1:1,277936:3:5^
+4023^7^0^25^26^1442^0.3401^0.6857^7^Wildfeder der Blutfurien^2592:1:2,3857:1:1,5635:1:1,14375:1:1,17056:2:2,277936:4:6^
+4024^4^0^25^26^1442^0.3187^0.6843^4^Töterin der Blutfurien^1205:1:1,17056:2:2,248705:1:1,277936:1:1^
+4025^6^0^23^24^1442^0.3536^0.6367^6^Wegelagerin der Blutfurien^2592:3:4,4306:1:1,5635:1:1,5636:1:1,17056:2:2,277936:1:1^
+4026^3^0^24^25^1442^0.3555^0.6337^3^Windruferin der Blutfurien^2592:1:2,4306:1:1,17056:2:2,277936:1:2^
+4027^10^0^26^27^1442^0.3418^0.6951^10^Sturmhexe der Blutfurien^2589:3:6,2592:2:3,3012:1:1,3857:1:1,5116:1:1,17056:3:3,277936:1:1^
+4028^1^0^25^26^1442^0.3457^0.7155^1^Verkohltes Urtum^^
+4036^3^0^23^24^1442^0.4518^0.4251^3^Wilder Flammengeist^16312:3:3^
+4037^4^0^24^25^1442^0.3278^0.6599^4^Brennender Verheerer^7068:1:1,16312:3:3^
+4038^4^0^26^27^1442^0.3471^0.7123^4^Brennender Zerstörer^16312:4:4^
+4044^1^0^23^24^1442^0.3745^0.4773^1^Geschwärzter Basilisk^11385:1:1^
 4051^1^0^23^24^1442^0.3501^0.1276^1^Cenarischer Botaniker^2592:1:1^
 4053^2^0^23^25^1442^0.3568^0.1248^2^Tochter des Cenarius^929:1:1,1205:1:1,2592:1:2^
 4057^4^0^24^25^1442^0.3587^0.1503^4^Cenarius Sohn^1206:1:1,2592:1:2^
@@ -112,12 +122,15 @@ GoldScout-export 9^xertsadvcsn0^8
 @i^3671^Lebloser Schädel
 @i^3674^Verrotteter Stiefel
 @i^3676^Schleimiges Sekret
+@i^3857^Kohle
 @i^3931^Vergifteter Spinnenfangzahn
+@i^4306^Seidenstoff
 @i^4537^Tel'Abim-Banane
 @i^4571^Kriegsmesser der Heilung
 @i^4604^Waldpilzkappe
 @i^4605^Rotgetupfter Pilz
 @i^4606^Schwammerl
+@i^5116^Lange Schwanzfeder
 @i^5120^Langes Schweifhaar
 @i^5124^Kleiner Raptorzahn
 @i^5136^Zerrissenes pelziges Ohr
@@ -130,6 +143,7 @@ GoldScout-export 9^xertsadvcsn0^8
 @i^5584^Schnurrhaar eines Mondlichtläufers
 @i^5585^Rennerauge
 @i^5635^Scharfe Klaue
+@i^5636^Zierliche Feder
 @i^5734^Superschnitter-6000-Blaupause
 @i^5736^Gerenzos mechanischer Arm
 @i^5871^Großer Huf
@@ -148,6 +162,7 @@ GoldScout-export 9^xertsadvcsn0^8
 @i^6562^Schimmernde Stiefel des Zauberers
 @i^6627^Mutantenschuppenbrustplatte
 @i^6630^Samenwolken-Rundschild
+@i^7068^Elementarfeuer
 @i^9738^Edelstein von Kobrahn
 @i^9739^Edelstein von Anacondra
 @i^9740^Edelstein von Pythas
@@ -156,10 +171,12 @@ GoldScout-export 9^xertsadvcsn0^8
 @i^10441^Leuchtender Splitter
 @i^11147^Samophlang-Handbuchumschlag
 @i^11148^Samophlang-Handbuchseite
+@i^11385^Basiliskenschuppe
 @i^14121^Ureinwohnerweste des Adlers
 @i^14125^Ritual-Gamaschen des Zauberers
 @i^14160^Heiden-Bänder des Feuerschutzes
 @i^14364^Mystikerschuhe
+@i^14375^Blutbadmanschetten
 @i^14560^Stiefel des Ausgrabungsleiters
 @i^15012^Werwolf-Schuhe des Adlers
 @i^15016^Werwolf-Handlappen des Bären
@@ -174,7 +191,9 @@ GoldScout-export 9^xertsadvcsn0^8
 @i^248683^Abgefangene Kiste: Erz des Lehrlings
 @i^248687^Abgefangene Kiste: Erz des Gesellen
 @i^248703^Abgefangene Kiste: Barren des Lehrlings
+@i^248705^Abgefangene Kiste: Stoffe des Gesellen
 @i^273137^Skums Eimer
+@i^277936^Glitzernder Sonnenstein
 @q^774^2:7:1
 @q^814^1:7:1
 @q^858^1:0:0
@@ -226,12 +245,15 @@ GoldScout-export 9^xertsadvcsn0^8
 @q^3671^0:15:0
 @q^3674^0:15:0
 @q^3676^0:15:0
+@q^3857^1:7:1
 @q^3931^0:15:0
+@q^4306^1:7:1
 @q^4537^1:0:0
 @q^4571^2:2:0
 @q^4604^1:0:0
 @q^4605^1:0:0
 @q^4606^1:0:0
+@q^5116^1:7:1
 @q^5120^0:15:0
 @q^5124^0:15:0
 @q^5136^0:15:0
@@ -244,6 +266,7 @@ GoldScout-export 9^xertsadvcsn0^8
 @q^5584^1:12:0
 @q^5585^1:12:0
 @q^5635^1:7:1
+@q^5636^0:15:0
 @q^5734^1:12:0
 @q^5736^1:12:0
 @q^5871^0:15:0
@@ -262,6 +285,7 @@ GoldScout-export 9^xertsadvcsn0^8
 @q^6562^2:4:0
 @q^6627^3:4:0
 @q^6630^3:4:0
+@q^7068^1:7:1
 @q^9738^1:12:0
 @q^9739^1:12:0
 @q^9740^1:12:0
@@ -270,10 +294,12 @@ GoldScout-export 9^xertsadvcsn0^8
 @q^10441^1:12:0
 @q^11147^1:12:0
 @q^11148^1:0:0
+@q^11385^0:15:0
 @q^14121^2:4:0
 @q^14125^2:4:0
 @q^14160^2:4:0
 @q^14364^2:4:0
+@q^14375^2:4:0
 @q^14560^2:4:0
 @q^15012^2:4:0
 @q^15016^2:4:0
@@ -288,7 +314,9 @@ GoldScout-export 9^xertsadvcsn0^8
 @q^248683^1:0:1
 @q^248687^1:0:1
 @q^248703^2:0:1
+@q^248705^2:0:1
 @q^273137^3:4:0
+@q^277936^1:12:0
 @m^1413^Das Brachland
 @m^1414^Kalimdor
 @m^1421^Silberwald
@@ -1035,7 +1063,17 @@ GoldScout-export 9^xertsadvcsn0^8
 @a^4019^46:1,66:1,67:2
 @a^4020^46:1,66:2,67:11,130:2,149:2,150:1
 @a^4021^67:1
-@a^4036^169:1
+@a^4022^187:1,245:1,247:3
+@a^4023^265:1,266:3,267:3
+@a^4024^265:2,267:1,286:1
+@a^4025^246:1,247:5
+@a^4026^247:3
+@a^4027^265:1,266:3,267:4,286:1,287:1
+@a^4028^286:1
+@a^4036^168:1,169:2
+@a^4037^265:1,266:1,267:2
+@a^4038^286:3,287:1
+@a^4044^187:1
 @a^4051^47:1
 @a^4053^47:2
 @a^4057^47:1,67:3

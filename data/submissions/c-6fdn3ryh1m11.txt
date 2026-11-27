@@ -1,4 +1,4 @@
-GoldScout-export 9^6fdn3ryh1m11^21
+GoldScout-export 9^6fdn3ryh1m11^22
 92^16^0^39^40^1418^0.4063^0.7992^16^Elemental de piedra^4552:1:1,4553:5:5,4784:10:10,7067:3:3,7848:5:5,7912:5:6,8150:6:6^
 755^3^0^34^35^1435^0.4888^0.3144^3^Rondafango perdido^3197:1:1,3807:1:1^
 757^2^0^36^36^1435^0.5008^0.3050^2^Pescador perdido^4306:2:4^
@@ -67,10 +67,11 @@ GoldScout-export 9^6fdn3ryh1m11^21
 5337^7^0^42^43^1444^0.2614^0.5380^7^Sirena Crestafuria^3986:1:1,7973:3:3,9247:2:2,17058:1:1,248691:1:1^
 5456^1^0^48^49^1446^0.3432^0.4156^1^Aguijonero Centipaar^6302:1:1^
 5461^1^0^48^49^1444^0.4683^0.5371^1^Elemental marino^4791:1:3^
-5615^2^0^43^44^1446^0.6362^0.3792^2^Pícaro Deambulador^3937:1:1^
+5615^7^0^43^44^1446^0.6052^0.3779^7^Pícaro Deambulador^3937:1:1,4306:2:3,4338:2:3,4424:1:1,8483:1:1^
 5616^6^0^40^41^1446^0.6072^0.2553^6^Ladrón Deambulador^4306:1:2,4338:2:3,8483:4:4^
-5617^2^0^42^43^1446^0.6231^0.3128^2^Mago oscuro Deambulador^8483:1:1^
+5617^5^0^42^43^1446^0.6052^0.3551^5^Maga oscura Deambuladora^4338:1:2,8397:1:1,8483:2:2^
 5618^8^0^41^42^1446^0.6112^0.2650^8^Bandida Deambuladora^3927:1:1,3962:1:1,4338:3:6,4419:1:1,8483:2:2^
+5623^7^0^44^45^1446^0.5907^0.3805^7^Asesino Deambulador^3927:1:1,4338:1:2,8483:1:1^
 7725^13^0^42^43^1444^0.6682^0.4675^13^Asaltante Tótem Siniestro^4306:1:2,4338:2:3,4421:1:1,15607:1:1^
 7726^16^0^41^42^1444^0.6700^0.4654^16^Naturalista Tótem Siniestro^3939:1:1,4306:1:2,4338:3:5^
 7727^8^0^43^44^1444^0.6680^0.4646^8^Chamán Tótem Siniestro^1645:1:1^
@@ -140,6 +141,7 @@ GoldScout-export 9^6fdn3ryh1m11^21
 @i^4338^Tela de paño mágico
 @i^4419^Pergamino de Intelecto III
 @i^4421^Pergamino de Protección III
+@i^4424^Pergamino de Espíritu III
 @i^4544^Pan con especias de Mulgore
 @i^4552^Trozo de piedra lisa
 @i^4553^Trozo de piedra dentado
@@ -180,6 +182,7 @@ GoldScout-export 9^6fdn3ryh1m11^21
 @i^8052^Piedra de energía An'Alleum
 @i^8146^Garra maligna
 @i^8150^Sal de roca
+@i^8397^Patrón: brazales escórpidos resistentes
 @i^8483^Faltriquera de agua de Deambulador
 @i^8623^Localizador de emergencia OOX-17 TN
 @i^8705^Localizador de emergencia OOX-22 FE
@@ -273,6 +276,7 @@ GoldScout-export 9^6fdn3ryh1m11^21
 @q^4338^1:7:1
 @q^4419^1:0:0
 @q^4421^1:0:0
+@q^4424^1:0:0
 @q^4544^1:0:0
 @q^4552^0:15:0
 @q^4553^0:15:0
@@ -313,6 +317,7 @@ GoldScout-export 9^6fdn3ryh1m11^21
 @q^8052^1:12:0
 @q^8146^1:7:1
 @q^8150^1:7:1
+@q^8397^2:9:0
 @q^8483^1:12:0
 @q^8623^2:12:0
 @q^8705^2:12:0
@@ -1225,10 +1230,11 @@ GoldScout-export 9^6fdn3ryh1m11^21
 @a^5337^205:6,225:1
 @a^5456^166:1
 @a^5461^209:1
-@a^5615^152:2
+@a^5615^151:4,152:3
 @a^5616^91:2,92:3,132:1
-@a^5617^92:1,152:1
+@a^5617^92:1,151:2,152:2
 @a^5618^91:2,92:3,112:1,132:2
+@a^5623^151:6,152:1
 @a^7725^193:13
 @a^7726^193:16
 @a^7727^193:8
@@ -1251,4 +1257,7 @@ GoldScout-export 9^6fdn3ryh1m11^21
 @a^258331^153:2,154:1
 @a^260931^189:1
 @a^268831^153:5,154:14,155:1,174:9,175:1
+@t^5615^4:133
+@t^5617^3:344
+@t^5623^7:319
 @l^0^esES
