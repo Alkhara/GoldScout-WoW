@@ -1,4 +1,4 @@
-GoldScout-export 9^doqxcp10434h^29
+GoldScout-export 9^doqxcp10434h^30
 1111^24^0^21^22^1437^0.5070^0.6161^24^Leech Stalker^878:1:1,1081:10:10,2251:7:7,3174:14:14,3182:1:1,4428:5:5,6582:1:1,9778:1:1,211853:1:1,248703:1:1^
 2250^1^0^33^33^1416^0.3947^0.6877^1^Mountain Yeti^^
 2251^3^0^33^34^1416^0.4076^0.6542^3^Giant Yeti^1710:1:1^
@@ -51,10 +51,11 @@ GoldScout-export 9^doqxcp10434h^29
 5292^7^0^43^44^1444^0.5410^0.5690^7^Feral Scar Yeti^3928:1:1,8973:1:1,213546:1:1^
 5293^3^0^45^46^1444^0.5165^0.5888^3^Hulking Feral Scar^3965:1:1,8973:1:1^
 5295^6^0^44^45^1444^0.5154^0.5864^6^Enraged Feral Scar^1645:1:1,4424:1:1,8146:1:1,8973:1:1^
-5296^18^0^46^47^1444^0.5322^0.3188^18^Rage Scar Yeti^4023:1:1,8146:1:1,18947:1:1,18969:1:1^
-5297^14^0^48^49^1444^0.5486^0.3278^14^Elder Rage Scar^4599:2:2,8146:1:1,18947:1:1^
-5299^23^0^47^48^1444^0.5394^0.3207^23^Ferocious Rage Scar^1645:1:1,4024:1:1,4599:2:2,8146:1:1,14660:1:1,15164:1:1,18969:2:2^
+5296^41^0^46^47^1444^0.5295^0.3146^41^Rage Scar Yeti^1645:3:3,4023:1:1,4599:5:5,8146:3:3,14787:1:1,18947:1:1,18969:3:3,262890:1:1^
+5297^31^0^48^49^1444^0.5467^0.3282^31^Elder Rage Scar^3928:1:1,3936:1:1,4006:1:1,4599:2:2,8146:2:2,18947:1:1,18969:1:1,254094:1:1^
+5299^58^0^47^48^1444^0.5377^0.3197^58^Ferocious Rage Scar^1645:4:4,3928:1:1,4024:1:1,4599:3:3,8146:3:3,8705:1:1,14660:1:1,14949:1:1,15164:1:1,18969:4:4,213545:1:1^
 5308^3^0^44^46^1444^0.4501^0.3673^3^Rogue Vale Screecher^6444:1:1^
+5327^1^0^44^44^1444^0.3366^0.3205^1^Coast Crawl Snapclaw^^
 5331^10^0^42^43^1444^0.2739^0.5377^10^Hatecrest Warrior^7973:1:1,9247:4:4,17058:5:5,213543:1:1^
 5332^6^0^41^42^1444^0.2822^0.5458^6^Hatecrest Wave Rider^7973:2:2,9247:3:3,17058:1:1^
 5333^1^0^44^44^1444^0.2866^0.7072^1^Hatecrest Serpent Guard^17058:1:1^
@@ -66,8 +67,8 @@ GoldScout-export 9^doqxcp10434h^29
 5456^7^0^48^49^1446^0.3457^0.4204^7^Centipaar Stinger^6300:3:3,6302:1:1,8587:3:3^
 5459^1^0^48^48^1446^0.3880^0.2955^1^Centipaar Tunneler^^
 5460^1^0^49^49^1446^0.3705^0.4084^1^Centipaar Sandreaver^6300:1:1^
-5461^1^0^49^49^1444^0.3713^0.3306^1^Sea Elemental^4791:1:1^
-5462^2^0^47^47^1444^0.3542^0.3538^2^Sea Spray^7070:1:1,18958:1:1^
+5461^5^0^48^49^1444^0.3879^0.3557^5^Sea Elemental^4791:4:11,7079:2:2,18958:2:2^
+5462^7^0^47^48^1444^0.3640^0.3546^7^Sea Spray^4791:3:12,7070:1:1,7079:1:1,18958:2:2^
 5472^9^0^46^47^1446^0.3827^0.5653^9^Dunemaul Enforcer^3939:1:1,4338:2:5^
 5474^11^0^47^48^1446^0.3858^0.5467^11^Dunemaul Brute^4338:2:4,278186:1:1^
 5475^1^0^47^47^1446^0.3857^0.5699^1^Dunemaul Warlock^3941:1:1,4088:1:1^
@@ -304,6 +305,7 @@ GoldScout-export 9^doqxcp10434h^29
 @i^6149^Greater Mana Potion
 @i^6300^Husk Fragment
 @i^6302^Delicate Insect Wing
+@i^6303^Raw Slitherskin Mackerel
 @i^6308^Raw Bristle Whisker Catfish
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
@@ -315,6 +317,7 @@ GoldScout-export 9^doqxcp10434h^29
 @i^6826^Brilliant Scale
 @i^6986^Crimson Lotus
 @i^7070^Elemental Water
+@i^7079^Globe of Water
 @i^7354^Elder's Boots of the Whale
 @i^7437^Twilight Cuffs of the Eagle
 @i^7463^Sentinel Buckler of the Champion
@@ -337,6 +340,7 @@ GoldScout-export 9^doqxcp10434h^29
 @i^8483^Wastewander Water Pouch
 @i^8548^Divino-matic Rod
 @i^8587^Centipaar Insect Parts
+@i^8705^OOX-22 FE Distress Beacon
 @i^8707^Gahz'rilla's Electrified Scale
 @i^8723^Caliph Scorpidsting's Head
 @i^8746^Interlaced Cowl
@@ -388,7 +392,9 @@ GoldScout-export 9^doqxcp10434h^29
 @i^14246^Darkmist Wizard Hat of the Elder
 @i^14474^Pattern: Frostweave Gloves
 @i^14660^Scorpashi Shoulder Pads
+@i^14787^Khan's Mantle
 @i^14831^Symbolic Crown
+@i^14949^Bloodforged Gauntlets of Intellect
 @i^15157^Nocturnal Leggings of the Bandit
 @i^15164^Imposing Vest of Intellect
 @i^15226^Giant Club of the Beast
@@ -431,6 +437,7 @@ GoldScout-export 9^doqxcp10434h^29
 @i^248710^Waylaid Crate: Expert Parts
 @i^252844^Pattern: Skulker's Leather Shoes
 @i^252899^Pattern: Mender's Mail Boots
+@i^254094^Pattern: Earthenweave Boots
 @i^254692^Staff of Ohk'zi
 @i^255725^Manual: Superior Healing Potion
 @i^256037^Grass Clippings
@@ -443,6 +450,7 @@ GoldScout-export 9^doqxcp10434h^29
 @i^260353^Barely Legible Journal Entry, Page VI
 @i^260354^Barely Legible Journal Entry, Page VII
 @i^262889^Sealed Expert's Writ
+@i^262890^Sealed Artisan's Writ
 @i^265357^Snargl's Snout
 @i^265738^Sootfur's Pelt
 @i^265750^Chogg's Head
@@ -585,6 +593,7 @@ GoldScout-export 9^doqxcp10434h^29
 @q^6149^1:0:0
 @q^6300^0:15:0
 @q^6302^0:15:0
+@q^6303^1:7:1
 @q^6308^1:7:1
 @q^6358^1:7:1
 @q^6359^1:7:1
@@ -596,6 +605,7 @@ GoldScout-export 9^doqxcp10434h^29
 @q^6826^0:15:0
 @q^6986^0:15:0
 @q^7070^1:7:1
+@q^7079^1:7:1
 @q^7354^2:4:0
 @q^7437^2:4:0
 @q^7463^2:4:0
@@ -618,6 +628,7 @@ GoldScout-export 9^doqxcp10434h^29
 @q^8483^1:12:0
 @q^8548^1:0:0
 @q^8587^1:12:0
+@q^8705^2:12:0
 @q^8707^1:12:0
 @q^8723^1:12:0
 @q^8746^0:4:0
@@ -669,7 +680,9 @@ GoldScout-export 9^doqxcp10434h^29
 @q^14246^2:4:0
 @q^14474^2:9:0
 @q^14660^2:4:0
+@q^14787^2:4:0
 @q^14831^2:4:0
+@q^14949^2:4:0
 @q^15157^2:4:0
 @q^15164^2:4:0
 @q^15226^2:2:0
@@ -712,6 +725,7 @@ GoldScout-export 9^doqxcp10434h^29
 @q^248710^2:0:1
 @q^252844^3:9:0
 @q^252899^3:9:0
+@q^254094^2:9:0
 @q^254692^1:12:0
 @q^255725^2:9:0
 @q^256037^0:15:0
@@ -724,6 +738,7 @@ GoldScout-export 9^doqxcp10434h^29
 @q^260353^1:15:0
 @q^260354^1:15:0
 @q^262889^3:0:0
+@q^262890^3:0:0
 @q^265357^1:12:0
 @q^265738^1:12:0
 @q^265750^1:12:0
@@ -778,6 +793,7 @@ GoldScout-export 9^doqxcp10434h^29
 @m^1417^Arathi Highlands
 @m^1425^The Hinterlands
 @m^1437^Wetlands
+@m^1438^Teldrassil
 @m^1443^Desolace
 @m^1444^Feralas
 @m^1446^Tanaris
@@ -1535,6 +1551,9 @@ GoldScout-export 9^doqxcp10434h^29
 @c^279951^
 @c^279957^
 @c^279961^
+@c^279965^
+@c^279966^
+@c^279967^
 @c^279968^
 @c^279969^
 @c^279974^
@@ -1572,10 +1591,11 @@ GoldScout-export 9^doqxcp10434h^29
 @a^5292^230:5,231:2
 @a^5293^230:2,250:1
 @a^5295^230:6
-@a^5296^110:1,130:14,131:3
-@a^5297^130:7,131:7
-@a^5299^110:1,130:18,131:4
+@a^5296^110:3,130:34,131:4
+@a^5297^130:19,131:12
+@a^5299^110:4,130:46,131:8
 @a^5308^148:2,149:1
+@a^5327^126:1
 @a^5331^205:8,225:2
 @a^5332^205:3,206:1,225:2
 @a^5333^285:1
@@ -1587,8 +1607,8 @@ GoldScout-export 9^doqxcp10434h^29
 @a^5456^146:1,147:1,166:2,167:2,186:1
 @a^5459^107:1
 @a^5460^167:1
-@a^5461^127:1
-@a^5462^146:1,147:1
+@a^5461^127:2,147:2,148:1
+@a^5462^127:2,146:2,147:2,148:1
 @a^5472^207:1,227:8
 @a^5474^207:3,208:1,227:7
 @a^5475^227:1
@@ -1694,6 +1714,13 @@ GoldScout-export 9^doqxcp10434h^29
 @a^272228^291:2,310:1,311:1
 @a^272313^294:1
 @a^276401^248:1
-@t^5461^1:41
+@t^5296^22:1196
+@t^5297^17:1091
+@t^5299^35:1832
+@t^5327^1:145
+@t^5461^5:729
+@t^5462^4:668
+@f^1438^0^6^140^6303:6:6^371:6
+@f^1444^0^10^138^3820:1:3,6358:2:2,6359:3:3,13422:4:9^126:1,127:2,147:2,148:3,168:2
 @f^2548^0^33^127^3820:1:1,6308:1:1,6358:4:4,6359:3:3,13422:4:9,21150:1:1,21153:17:17,21228:2:2^187:3,196:3,208:4,232:4,268:2,269:6,292:5,312:6
 @l^0^enUS

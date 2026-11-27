@@ -1,4 +1,4 @@
-GoldScout-export 6^kv7vdiogutdf^24
+GoldScout-export 6^kv7vdiogutdf^25
 1853^2^0^0^0^0^0.0000^0.0000^0^^12843:2:2,13501:1:1,13953:1:1,16667:1:1,16727:1:1,22433:1:1^
 3975^1^0^0^0^0^0.0000^0.0000^0^^274295:1:1^
 4286^11^0^0^0^0^0.0000^0.0000^0^^2592:2:9,3794:1:1,4306:2:8,4417:1:1,8746:1:1^
@@ -26,6 +26,10 @@ GoldScout-export 6^kv7vdiogutdf^24
 7107^9^0^52^53^1448^0.4342^0.1561^9^Jadefire Trickster^11732:1:1,12662:3:3,14047:4:6,248699:1:1,281018:1:1^
 7108^7^0^52^53^1448^0.4330^0.1561^7^Jadefire Betrayer^12662:1:1,14047:2:2^
 7111^7^0^53^54^1448^0.4310^0.1492^7^Jadefire Hellcaller^14047:2:3,14256:1:1^
+7430^5^0^55^56^1452^0.5386^0.1311^5^Frostsaber Cub^1688:4:4,4581:1:1,12202:5:5,21928:2:2^
+7431^14^0^56^57^1452^0.5499^0.1503^14^Frostsaber^1688:5:5,4580:6:6,4581:3:3,8146:2:2,12202:8:8,21928:6:6^
+7432^10^0^59^60^1452^0.5438^0.1352^10^Frostsaber Stalker^1688:6:6,4580:2:2,4581:2:2,12202:5:5,21928:6:6^
+7433^4^0^58^59^1452^0.5244^0.1314^4^Frostsaber Huntress^1688:3:3,4580:2:2,12202:2:2,21928:1:1^
 8318^3^0^0^0^0^0.0000^0.0000^0^^3928:1:1,15262:1:1^
 8319^8^0^0^0^0^0.0000^0.0000^0^^^
 8523^3^0^53^54^1423^0.1396^0.2420^3^Scourge Soldier^^
@@ -190,6 +194,7 @@ GoldScout-export 6^kv7vdiogutdf^24
 14518^1^0^0^0^0^0.0000^0.0000^0^^^
 14519^1^0^0^0^0^0.0000^0.0000^0^^10235:1:1^
 14564^25^0^59^60^1423^0.1388^0.2503^25^Terrordale Spirit^7972:1:1,13446:1:1,14047:6:13^
+16093^3^0^60^60^1455^0.4350^0.5089^3^Spectral Stalker^^
 244525^1^0^55^56^2482^0.6696^0.6972^1^Hyjal Bear^^
 247207^1^0^0^0^0^0.0000^0.0000^0^^280066:1:1^
 247234^1^0^0^0^0^0.0000^0.0000^0^^272027:1:1,280074:1:1^
@@ -224,6 +229,7 @@ GoldScout-export 6^kv7vdiogutdf^24
 @i^1074^Hard Spider Leg Tip
 @i^1520^Troll Sweat
 @i^1645^Moonberry Juice
+@i^1688^Long Soft Tail
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
@@ -261,6 +267,7 @@ GoldScout-export 6^kv7vdiogutdf^24
 @i^4554^Shiny Polished Stone
 @i^4557^Fiery Gland
 @i^4580^Sabertooth Fang
+@i^4581^Patch of Fine Fur
 @i^4583^Thick Furry Mane
 @i^4584^Large Trophy Paw
 @i^4585^Dripping Spider Mandible
@@ -363,6 +370,7 @@ GoldScout-export 6^kv7vdiogutdf^24
 @i^11991^Quicksilver Ring of the Elder
 @i^12027^Vermilion Necklace of the Whale
 @i^12037^Mystery Meat
+@i^12202^Tiger Meat
 @i^12203^Red Wolf Meat
 @i^12205^White Spider Meat
 @i^12219^Unadorned Seal of Ascension
@@ -542,6 +550,7 @@ GoldScout-export 6^kv7vdiogutdf^24
 @i^19934^Large Scorpid Claw
 @i^20015^Elder Raptor Feathers
 @i^20520^Dark Rune
+@i^21928^Winterspring Blood Sample
 @i^22207^Sash of the Grand Hunt
 @i^22225^Dragonskin Cowl of Fire Resistance
 @i^22247^Faith Healer's Boots
@@ -596,6 +605,7 @@ GoldScout-export 6^kv7vdiogutdf^24
 @q^1074^0:15:0
 @q^1520^0:15:0
 @q^1645^1:0:0
+@q^1688^0:15:0
 @q^1707^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
@@ -633,6 +643,7 @@ GoldScout-export 6^kv7vdiogutdf^24
 @q^4554^0:15:0
 @q^4557^0:15:0
 @q^4580^0:15:0
+@q^4581^0:15:0
 @q^4583^0:15:0
 @q^4584^0:15:0
 @q^4585^0:15:0
@@ -735,6 +746,7 @@ GoldScout-export 6^kv7vdiogutdf^24
 @q^11991^2:4:0
 @q^12027^2:4:0
 @q^12037^1:7:1
+@q^12202^1:7:1
 @q^12203^1:7:1
 @q^12205^1:7:1
 @q^12219^1:12:0
@@ -914,6 +926,7 @@ GoldScout-export 6^kv7vdiogutdf^24
 @q^19934^0:15:0
 @q^20015^0:15:0
 @q^20520^2:7:1
+@q^21928^1:12:0
 @q^22207^3:4:0
 @q^22225^3:4:0
 @q^22247^3:4:0
@@ -967,6 +980,8 @@ GoldScout-export 6^kv7vdiogutdf^24
 @m^1414^Kalimdor
 @m^1423^Eastern Plaguelands
 @m^1448^Felwood
+@m^1452^Winterspring
+@m^1455^Ironforge
 @m^2482^Mount Hyjal
 @c^2840^
 @c^2841^
@@ -1495,10 +1510,15 @@ GoldScout-export 6^kv7vdiogutdf^24
 @a^7107^48:3,68:6
 @a^7108^48:2,68:5
 @a^7111^48:4,68:3
+@a^7430^50:4,51:1
+@a^7431^50:2,51:5,70:4,71:3
+@a^7432^50:6,51:2,70:1,71:1
+@a^7433^49:1,50:3
 @a^8523^82:3
 @a^8524^82:3,102:3
 @a^8540^82:3,102:3
 @a^14564^82:14,102:11
+@a^16093^208:3
 @a^244525^273:1
 @a^248395^272:1,273:5,292:1,293:8,294:2
 @a^248709^312:1
