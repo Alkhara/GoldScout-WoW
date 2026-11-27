@@ -1,4 +1,4 @@
-GoldScout-export 9^sd2dgtjc6rmy^64
+GoldScout-export 9^sd2dgtjc6rmy^66
 232^1^0^23^23^1424^0.3336^0.3609^1^Ray le fermier^4538:1:1^
 667^15^0^39^40^1434^0.4587^0.3864^15^Guerrier Skullsplitter^1520:7:7,1524:4:4,1710:1:1,2289:1:1,2732:1:1,2740:1:1,2749:1:1,3771:1:1,3813:1:1,3916:5:5,4306:5:10,4636:1:1,8151:1:1,8153:2:5^
 669^21^0^41^42^1434^0.4514^0.4147^21^Chasseur Skullsplitter^1520:6:6,1524:4:4,1645:1:1,2734:1:1,2745:1:1,2748:1:1,3916:3:3,4306:1:1,4338:2:4,4599:1:1,8151:1:1,8153:1:1^
@@ -339,6 +339,13 @@ GoldScout-export 9^sd2dgtjc6rmy^64
 6510^3^0^51^52^1449^0.4469^0.2601^3^Ecorcheur Pétale-de-sang^4606:1:1,10286:1:1,11018:1:1^
 6511^1^0^49^50^1449^0.6228^0.3834^1^Batteur Pétale-de-sang^4606:1:1,11018:1:1^
 6512^3^0^52^53^1449^0.3961^0.2423^3^Trappeur Pétale-de-sang^4606:1:1,4607:2:2,4608:1:1,11018:1:1,11116:1:1^
+6513^3^0^51^52^1449^0.6738^0.1475^3^Marteleur d'Un'Goro^2799:1:1,4099:2:2,11018:1:1,11479:2:2^
+6514^3^0^50^51^1449^0.6568^0.1570^3^Gorille d'Un'Goro^2799:1:1,4096:1:1,4099:1:1,11478:2:2^
+6516^6^0^52^53^1449^0.6780^0.1537^6^Foudroyeur d'Un'Goro^2799:2:2,4099:2:2,11018:2:2,11480:2:2,14922:1:1^
+6552^8^0^51^52^1449^0.4824^0.7618^8^Ouvrier Gorishi^6302:5:5,11018:5:5,11837:1:1^
+6553^5^0^51^53^1449^0.5140^0.7567^5^Ravageur Gorishi^6300:2:2,6302:2:2,11018:2:2^
+6555^1^0^53^53^1449^0.4852^0.8566^1^Tunnelière Gorishi^6302:1:1^
+6559^1^0^54^54^1449^0.3476^0.6732^1^Limon gluant^4500:1:1,20763:1:1,262890:1:1^
 6668^1^0^23^23^1413^0.4708^0.8576^1^Seigneur Cyrik Blackforge^2592:1:1^
 7032^3^0^55^57^1428^0.6426^0.3252^3^Grand élémentaire d'obsidienne^4784:3:3,7912:1:2,11266:2:2^
 7033^1^0^50^51^1428^0.7335^0.3829^1^Ogre Brûlentrailles^^
@@ -424,10 +431,14 @@ GoldScout-export 9^sd2dgtjc6rmy^64
 8959^17^0^47^48^1448^0.4720^0.8134^17^Loup Gangrepatte^4583:4:4,4584:1:1,12203:9:9,12208:5:5,277959:10:10^
 8961^12^0^51^52^1448^0.5491^0.2205^12^Ravageur Gangrepatte^4583:4:4,7909:1:1,12203:6:6,12208:4:4^
 8996^9^0^42^47^1446^0.6400^0.3732^9^Sbire marcheur du Vide^^
+9157^5^0^40^40^1449^0.4464^0.0813^5^Parasite Pétale-de-sang^^
+9163^10^0^51^52^1449^0.5657^0.6702^10^Dimeurtrodon^5128:1:1,5133:4:4,11018:3:3,11114:4:4,15236:1:1,280459:1:1^
+9164^5^0^54^55^1449^0.3627^0.7209^5^Ancien dimeurtrodon^5128:1:1,5133:3:3,11114:2:2^
 9318^20^0^47^49^1427^0.4829^0.2635^20^Incendosaure^5128:1:1,5133:7:7^
 9396^1^0^42^42^1446^0.4869^0.2965^1^Marteleur terrestre^^
 9462^1^0^55^55^1448^0.6252^0.0859^1^Chef de clan Saignegueule^^
 9464^1^0^51^51^1448^0.4818^0.9359^1^Seigneur Ror^13818:1:1,15879:1:1^
+9683^2^0^49^50^1449^0.6261^0.5258^2^Compagne de Lar'korwi^4587:1:1,4588:1:1,11509:2:2,12184:1:1^
 9878^2^0^51^52^1448^0.4108^0.4216^2^Bête d'entropie^4787:1:1,7077:1:1^
 10617^1^0^26^26^1441^0.3912^0.3230^1^Messager galak^12564:1:1^
 10720^6^0^27^28^1441^0.2133^0.3150^6^Assassin galak^^
@@ -670,6 +681,7 @@ GoldScout-export 9^sd2dgtjc6rmy^64
 @i^4093^Grande queue de basilic
 @i^4096^Poil de gorille grossier
 @i^4097^Croc de gorille ébréché
+@i^4099^Touffe de poils de gorille
 @i^4306^Etoffe de soie
 @i^4337^Soie d'araignée épaisse
 @i^4338^Etoffe de tisse-mage
@@ -683,6 +695,7 @@ GoldScout-export 9^sd2dgtjc6rmy^64
 @i^4459^Fragile os de dragon
 @i^4460^Palmure d'aile arrachée
 @i^4461^Peau de raptor
+@i^4500^Sac à dos de voyageur
 @i^4538^Pastèque claquevigne
 @i^4542^Pain de maïs moelleux
 @i^4552^Fragment de pierre lisse
@@ -695,6 +708,8 @@ GoldScout-export 9^sd2dgtjc6rmy^64
 @i^4584^Grande patte trophée
 @i^4585^Mandibule d'araignée visqueuse
 @i^4586^Peau lisse de raptor
+@i^4587^Plumes de raptor tribales
+@i^4588^Crâne de raptor en parfait état
 @i^4589^Longue plume élégante
 @i^4590^Bec jaune incurvé
 @i^4599^Jambonneau traité
@@ -889,6 +904,7 @@ GoldScout-export 9^sd2dgtjc6rmy^64
 @i^10842^Sarong Windscale
 @i^10845^Etreinte du guerrier
 @i^11018^Humus d'Un'Goro
+@i^11114^Os de dinosaure
 @i^11116^Un journal abîmé
 @i^11266^Fragment d'élémentaire fracturé
 @i^11318^Brume atal'ai
@@ -905,8 +921,13 @@ GoldScout-export 9^sd2dgtjc6rmy^64
 @i^11417^Aile douce
 @i^11418^Os creux d'aile
 @i^11474^Oeuf de Fée fléchetteuse
+@i^11478^Peau de gorille d'Un'Goro
+@i^11479^Peau de Marteleur d'Un'Goro
+@i^11480^Peau de Foudroyeur d'Un'Goro
 @i^11503^Ambre de sang
+@i^11509^Glande de phéromone de ravasaure
 @i^11818^Clé des toilettes de Crasseboue
+@i^11837^Glande olfactive Gorishi
 @i^12020^Pendentif de thallium du sanglier
 @i^12037^Viande mystère
 @i^12044^Pendentif arctique de prophétie
@@ -953,12 +974,14 @@ GoldScout-export 9^sd2dgtjc6rmy^64
 @i^14839^Bottes de tyran
 @i^14847^Ceinture solécaille
 @i^14853^Garde-poignets solécaille
+@i^14922^Sandales nobles d'esprit
 @i^15018^Gilet lupine du tigre
 @i^15159^Tunique de noctambule de brigandage
 @i^15212^Epée large des guerriers de défense
 @i^15216^Epée runique de magie
 @i^15224^Ecrasante de défense
 @i^15234^Faux supérieure du gorille
+@i^15236^Fendoir lunaire de médecine
 @i^15251^Epée frappe-tête de l'ours
 @i^15263^Maillet royal d'intelligence
 @i^15269^Hache de guerre massive de magie
@@ -1069,6 +1092,7 @@ GoldScout-export 9^sd2dgtjc6rmy^64
 @i^260353^Extrait de journal à peine lisible, page VI
 @i^260354^Extrait de journal à peine lisible, page VII
 @i^262888^Commission de compagnon scellée
+@i^262890^Commission d'artisan scellée
 @i^263992^Porte-clés de surveillant
 @i^273883^Tête de Ca'zass
 @i^274028^Foulard rouge sang
@@ -1080,6 +1104,7 @@ GoldScout-export 9^sd2dgtjc6rmy^64
 @i^277936^Héliolite lumineuse
 @i^277958^Organes d'ours putrides
 @i^277959^Organes de loup putrides
+@i^280459^Écaille imprégnée de cristaux
 @i^286647^Cœur de cristal épuisé
 @q^422^1:0:0
 @q^765^1:7:1
@@ -1232,6 +1257,7 @@ GoldScout-export 9^sd2dgtjc6rmy^64
 @q^4093^0:15:0
 @q^4096^1:15:0
 @q^4097^0:15:0
+@q^4099^0:15:0
 @q^4306^1:7:1
 @q^4337^1:7:1
 @q^4338^1:7:1
@@ -1245,6 +1271,7 @@ GoldScout-export 9^sd2dgtjc6rmy^64
 @q^4459^0:15:0
 @q^4460^0:15:0
 @q^4461^1:7:1
+@q^4500^2:1:0
 @q^4538^1:0:0
 @q^4542^1:0:0
 @q^4552^0:15:0
@@ -1257,6 +1284,8 @@ GoldScout-export 9^sd2dgtjc6rmy^64
 @q^4584^0:15:0
 @q^4585^0:15:0
 @q^4586^0:15:0
+@q^4587^0:15:0
+@q^4588^0:15:0
 @q^4589^1:7:1
 @q^4590^0:15:0
 @q^4599^1:0:0
@@ -1451,6 +1480,7 @@ GoldScout-export 9^sd2dgtjc6rmy^64
 @q^10842^3:4:0
 @q^10845^3:4:0
 @q^11018^1:12:0
+@q^11114^1:12:0
 @q^11116^2:15:0
 @q^11266^1:12:0
 @q^11318^1:12:0
@@ -1467,8 +1497,13 @@ GoldScout-export 9^sd2dgtjc6rmy^64
 @q^11417^0:15:0
 @q^11418^0:15:0
 @q^11474^1:15:0
+@q^11478^1:12:0
+@q^11479^1:12:0
+@q^11480^1:12:0
 @q^11503^1:12:0
+@q^11509^1:12:0
 @q^11818^1:12:0
+@q^11837^1:12:0
 @q^12020^2:4:0
 @q^12037^1:7:1
 @q^12044^2:4:0
@@ -1515,12 +1550,14 @@ GoldScout-export 9^sd2dgtjc6rmy^64
 @q^14839^2:4:0
 @q^14847^2:4:0
 @q^14853^2:4:0
+@q^14922^2:4:0
 @q^15018^2:4:0
 @q^15159^2:4:0
 @q^15212^2:2:0
 @q^15216^2:2:0
 @q^15224^2:2:0
 @q^15234^2:2:0
+@q^15236^2:2:0
 @q^15251^2:2:0
 @q^15263^2:2:0
 @q^15269^2:2:0
@@ -1631,6 +1668,7 @@ GoldScout-export 9^sd2dgtjc6rmy^64
 @q^260353^1:15:0
 @q^260354^1:15:0
 @q^262888^3:0:0
+@q^262890^3:0:0
 @q^263992^1:13:0
 @q^273883^1:12:0
 @q^274028^1:12:0
@@ -1642,6 +1680,7 @@ GoldScout-export 9^sd2dgtjc6rmy^64
 @q^277936^1:12:0
 @q^277958^1:12:0
 @q^277959^1:12:0
+@q^280459^1:12:0
 @q^286647^1:12:0
 @m^1411^Durotar
 @m^1412^Mulgore
@@ -2693,6 +2732,13 @@ GoldScout-export 9^sd2dgtjc6rmy^64
 @a^6510^89:1,108:2
 @a^6511^152:1
 @a^6512^87:1,88:2
+@a^6513^53:3
+@a^6514^53:1,72:1,73:1
+@a^6516^53:2,73:4
+@a^6552^289:1,308:2,309:2,310:3
+@a^6553^289:1,290:1,310:3
+@a^6555^349:1
+@a^6559^266:1
 @a^6668^349:1
 @a^7032^132:1,133:2
 @a^7033^154:1
@@ -2750,10 +2796,14 @@ GoldScout-export 9^sd2dgtjc6rmy^64
 @a^8959^289:1,309:5,328:5,329:2,350:4
 @a^8961^31:2,91:5,110:5
 @a^8996^132:1,152:6,153:2
+@a^9157^28:4,48:1
+@a^9163^250:1,251:4,271:2,291:3
+@a^9164^267:2,286:1,306:1,307:1
 @a^9318^88:1,89:9,108:1,109:3,110:2,130:1,149:1,150:2
 @a^9396^109:1
 @a^9462^32:1
 @a^9464^369:1
+@a^9683^192:1,232:1
 @a^9878^168:2
 @a^10617^127:1
 @a^10720^124:6
@@ -2812,6 +2862,13 @@ GoldScout-export 9^sd2dgtjc6rmy^64
 @t^6510^3:141
 @t^6511^1:39
 @t^6512^2:87
+@t^6513^3:290
+@t^6514^3:534
+@t^6516^6:298
+@t^6552^8:395
+@t^6553^5:330
+@t^6555^1:208
+@t^6559^1:40
 @t^7100^8:189
 @t^7101^6:202
 @t^7106^1:222
@@ -2834,8 +2891,12 @@ GoldScout-export 9^sd2dgtjc6rmy^64
 @t^8957^9:470
 @t^8959^17:688
 @t^8961^11:441
+@t^9157^4:867
+@t^9163^9:509
+@t^9164^5:306
 @t^9462^1:2
 @t^9464^1:40
+@t^9683^2:458
 @t^9878^1:234
 @f^1412^0^47^106^2455:1:1,6289:16:16,6291:29:29,6292:1:1^248:47
 @f^1413^0^55^80^6303:19:19,6358:5:5,6361:30:30,20708:1:1^152:55
