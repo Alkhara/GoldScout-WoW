@@ -1,4 +1,4 @@
-GoldScout-export 6^wn0eeb2mnmvt^41
+GoldScout-export 6^wn0eeb2mnmvt^42
 547^2^0^16^17^1433^0.4121^0.1640^2^Great Goretusk^723:1:1,769:1:1,1210:1:1,2295:1:1,3172:1:1^
 588^12^0^34^35^1434^0.2486^0.1216^12^Bloodscalp Scout^1519:3:3,3784:1:1,3874:1:1,3901:1:1,3915:4:4,4306:3:4^
 595^18^0^34^35^1434^0.2472^0.1202^18^Bloodscalp Hunter^1519:4:4,1708:1:1,2730:1:1,2738:1:1,2744:1:1,3783:1:1,3901:3:3,3915:4:4,4306:2:4^
@@ -65,7 +65,7 @@ GoldScout-export 6^wn0eeb2mnmvt^41
 1492^1^0^47^47^1434^0.3596^0.7087^1^Gorlash^3932:1:1^
 1511^5^0^41^42^1434^0.3513^0.6070^5^Enraged Silverback Gorilla^2799:5:5^
 1514^1^0^44^44^1434^0.3521^0.6034^1^Mokk the Savage^2797:1:1^
-1557^7^0^40^41^1434^0.3306^0.6398^7^Elder Mistvale Gorilla^2799:1:1,3919:5:5,4096:3:3,4097:1:1,5637:1:1^
+1557^19^0^40^41^1434^0.3308^0.6496^19^Elder Mistvale Gorilla^2799:4:4,3862:1:1,3919:5:5,4096:9:9,4097:3:3,5637:2:2^
 1558^1^0^42^43^1434^0.3818^0.6147^1^Silverback Patriarch^2799:1:1^
 1561^4^0^40^41^1434^0.2760^0.6939^4^Bloodsail Raider^3910:1:1,4306:2:6^
 1562^1^0^40^41^1434^0.2828^0.7028^1^Bloodsail Mage^4306:1:3^
@@ -83,6 +83,7 @@ GoldScout-export 6^wn0eeb2mnmvt^41
 1867^4^0^13^14^1421^0.5052^0.5943^4^Dalaran Apprentice^2589:1:3,2778:1:1^
 1869^1^0^15^15^1421^0.5735^0.3312^1^Ravenclaw Champion^1179:1:1^
 1870^1^0^16^16^1421^0.5738^0.3322^1^Hand of Ravenclaw^^
+1907^4^0^43^44^1434^0.2517^0.6217^4^Naga Explorer^4019:1:1,4029:2:2,4737:1:1,7973:3:3,17058:1:1^
 1971^1^0^13^13^1421^0.5187^0.1376^1^Ivar the Foul^3621:1:1^
 1972^1^0^15^15^1421^0.5825^0.4472^1^Grimson the Pale^3634:1:1^
 2242^9^0^35^36^1416^0.6250^0.4431^9^Syndicate Spy^1707:1:1,4306:5:7^
@@ -483,6 +484,7 @@ GoldScout-export 6^wn0eeb2mnmvt^41
 @i^3827^Mana Potion
 @i^3838^Shadowmaw Claw
 @i^3839^Pristine Tigress Fang
+@i^3862^Aged Gorilla Sinew
 @i^3863^Jungle Stalker Feather
 @i^3864^Citrine
 @i^3872^Plans: Golden Scale Leggings
@@ -506,7 +508,9 @@ GoldScout-export 6^wn0eeb2mnmvt^41
 @i^3932^Smotts' Chest
 @i^3941^Crochet Pants
 @i^4016^Zanzil's Mixture
+@i^4019^Heavy Flint Axe
 @i^4020^Splintering Battle Axe
+@i^4029^Akiris Reed
 @i^4035^Silver-thread Robe
 @i^4042^Aurora Gloves
 @i^4044^Aurora Pants
@@ -550,6 +554,7 @@ GoldScout-export 6^wn0eeb2mnmvt^41
 @i^4608^Raw Black Truffle
 @i^4634^Iron Lockbox
 @i^4636^Strong Iron Lockbox
+@i^4737^Imperial Leather Spaulders
 @i^4758^Prairie Wolf Paw
 @i^4769^Trophy Swoop Quill
 @i^4770^Bristleback Belt
@@ -648,6 +653,7 @@ GoldScout-export 6^wn0eeb2mnmvt^41
 @i^7722^Triune Amulet
 @i^7724^Gauntlets of Divinity
 @i^7909^Aquamarine
+@i^7973^Big-mouth Clam
 @i^8146^Wicked Claw
 @i^8150^Deeprock Salt
 @i^8151^Flask of Mojo
@@ -944,6 +950,7 @@ GoldScout-export 6^wn0eeb2mnmvt^41
 @q^3827^1:0:0
 @q^3838^1:12:0
 @q^3839^1:12:0
+@q^3862^1:12:0
 @q^3863^1:12:0
 @q^3864^2:7:1
 @q^3872^2:9:0
@@ -967,7 +974,9 @@ GoldScout-export 6^wn0eeb2mnmvt^41
 @q^3932^1:12:0
 @q^3941^0:4:0
 @q^4016^1:12:0
+@q^4019^0:2:0
 @q^4020^0:2:0
+@q^4029^1:12:0
 @q^4035^2:4:0
 @q^4042^2:4:0
 @q^4044^2:4:0
@@ -1011,6 +1020,7 @@ GoldScout-export 6^wn0eeb2mnmvt^41
 @q^4608^1:0:0
 @q^4634^2:15:0
 @q^4636^2:15:0
+@q^4737^2:4:0
 @q^4758^1:12:0
 @q^4769^1:12:0
 @q^4770^1:12:0
@@ -1109,6 +1119,7 @@ GoldScout-export 6^wn0eeb2mnmvt^41
 @q^7722^3:4:0
 @q^7724^3:4:0
 @q^7909^2:7:1
+@q^7973^1:7:0
 @q^8146^1:7:1
 @q^8150^1:7:1
 @q^8151^1:7:1
@@ -2088,7 +2099,7 @@ GoldScout-export 6^wn0eeb2mnmvt^41
 @a^1492^287:1
 @a^1511^246:1,247:4
 @a^1514^247:1
-@a^1557^226:1,246:4,266:2
+@a^1557^226:1,246:10,266:8
 @a^1558^247:1
 @a^1561^265:2,285:2
 @a^1562^285:1
@@ -2106,6 +2117,7 @@ GoldScout-export 6^wn0eeb2mnmvt^41
 @a^1867^230:3,249:1
 @a^1869^131:1
 @a^1870^131:1
+@a^1907^224:1,244:1,245:2
 @a^1971^50:1
 @a^1972^171:1
 @a^2242^172:7,192:2

@@ -1,4 +1,4 @@
-GoldScout-export 9^w3tlpxe9u9gg^30
+GoldScout-export 9^w3tlpxe9u9gg^31
 1788^1^0^56^56^1422^0.4645^0.6946^1^Skeletal Warlord^3995:1:1,8948:1:1^
 1853^2^0^0^0^0^0.0000^0.0000^0^^13951:1:1,16693:2:2,22433:1:1^
 3560^6^0^56^57^2482^0.3219^0.6956^6^Healing Ward^^
@@ -22,9 +22,9 @@ GoldScout-export 9^w3tlpxe9u9gg^30
 5720^1^0^0^0^0^0.0000^0.0000^0^^^
 5721^1^0^0^0^0^0.0000^0.0000^0^^^
 7039^1^0^53^54^1428^0.6370^0.3441^1^War Reaver^^
-7040^6^0^52^53^1428^0.9130^0.5186^6^Black Dragonspawn^8754:1:1^
-7041^2^0^53^54^1428^0.8881^0.4595^2^Black Wyrmkin^3972:1:1,12014:1:1^
-7044^1^0^50^50^1428^0.8167^0.6201^1^Black Drake^^
+7040^9^0^52^53^1428^0.9204^0.5309^9^Black Dragonspawn^3949:1:1,8754:1:1^
+7041^15^0^53^54^1428^0.9218^0.5397^15^Black Wyrmkin^3972:1:1,8754:1:1,8766:1:1,8952:2:2,10096:1:1,10097:1:1,12014:1:1,13446:1:1^
+7044^4^0^50^52^1428^0.9008^0.5733^4^Black Drake^4557:1:1^
 7047^7^0^51^52^1428^0.8537^0.5926^7^Black Broodling^4460:1:1^
 7086^15^0^49^50^1448^0.3979^0.7118^15^Cursed Ooze^3671:1:1,3676:2:2,20763:4:4,20767:2:2^
 7092^12^0^51^52^1448^0.3995^0.5536^12^Tainted Ooze^20763:2:2,20768:1:1,281017:1:1^
@@ -298,6 +298,7 @@ GoldScout-export 9^w3tlpxe9u9gg^30
 @i^3928^Superior Healing Potion
 @i^3942^Crochet Shoulderpads
 @i^3945^Twill Boots
+@i^3949^Twill Pants
 @i^3950^Twill Shoulderpads
 @i^3951^Twill Vest
 @i^3962^Thick Leather Boots
@@ -320,6 +321,7 @@ GoldScout-export 9^w3tlpxe9u9gg^30
 @i^4460^Ripped Wing Webbing
 @i^4500^Traveler's Backpack
 @i^4552^Smooth Stone Chip
+@i^4557^Fiery Gland
 @i^4580^Sabertooth Fang
 @i^4581^Patch of Fine Fur
 @i^4583^Thick Furry Mane
@@ -379,6 +381,8 @@ GoldScout-export 9^w3tlpxe9u9gg^30
 @i^9936^Abjurer's Boots of the Elder
 @i^9974^Overlord's Shield of Healing
 @i^10064^Duskwoven Pants of the Eagle
+@i^10096^Councillor's Cuffs of Frost Protection
+@i^10097^Councillor's Circlet of the Elder
 @i^10101^Councillor's Pants of the Elder
 @i^10131^Revenant Boots of Spirit
 @i^10140^High Councillor's Gloves of Frozen Wrath
@@ -643,6 +647,7 @@ GoldScout-export 9^w3tlpxe9u9gg^30
 @q^3928^1:0:0
 @q^3942^0:4:0
 @q^3945^0:4:0
+@q^3949^0:4:0
 @q^3950^0:4:0
 @q^3951^0:4:0
 @q^3962^0:4:0
@@ -665,6 +670,7 @@ GoldScout-export 9^w3tlpxe9u9gg^30
 @q^4460^0:15:0
 @q^4500^2:1:0
 @q^4552^0:15:0
+@q^4557^0:15:0
 @q^4580^0:15:0
 @q^4581^0:15:0
 @q^4583^0:15:0
@@ -724,6 +730,8 @@ GoldScout-export 9^w3tlpxe9u9gg^30
 @q^9936^2:4:0
 @q^9974^2:4:0
 @q^10064^2:4:0
+@q^10096^2:4:0
+@q^10097^2:4:0
 @q^10101^2:4:0
 @q^10131^2:4:0
 @q^10140^2:4:0
@@ -1596,9 +1604,9 @@ GoldScout-export 9^w3tlpxe9u9gg^30
 @a^4374^74:1
 @a^5224^174:1
 @a^7039^132:1
-@a^7040^177:1,218:4,238:1
-@a^7041^157:1,237:1
-@a^7044^256:1
+@a^7040^177:1,218:4,238:4
+@a^7041^157:1,218:6,237:1,238:7
+@a^7044^238:3,256:1
 @a^7047^217:1,236:1,237:2,256:2,257:1
 @a^7086^267:1,287:9,288:5
 @a^7092^207:3,208:1,227:2,228:6
@@ -1686,6 +1694,9 @@ GoldScout-export 9^w3tlpxe9u9gg^30
 @a^267121^130:2
 @a^272307^107:1
 @a^276138^289:1,290:1
+@t^7040^3:230
+@t^7041^12:1030
+@t^7044^3:374
 @f^1429^0^76^1^118:2:2,6289:25:25,6291:49:49^269:76
 @f^1453^0^13^75^6289:12:12,6291:1:1^271:13
 @l^0^enUS
