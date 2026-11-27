@@ -1,4 +1,4 @@
-GoldScout-export 9^gbx4cjirowt2^10
+GoldScout-export 9^gbx4cjirowt2^12
 2241^1^0^34^34^1416^0.5680^0.6848^1^Syndicate Thief^3601:1:1^
 2248^5^0^30^31^1424^0.4426^0.2950^5^Cave Yeti^3811:1:1^
 2249^10^0^31^32^1424^0.4366^0.2959^10^Ferocious Yeti^1708:1:1,3708:1:1^
@@ -176,7 +176,14 @@ GoldScout-export 9^gbx4cjirowt2^10
 10992^1^0^30^30^1441^0.2290^0.2430^1^Enraged Panther^12946:1:1^
 12677^1^0^28^28^1440^0.5628^0.5508^1^Shadumbra^16304:1:1,248689:1:1^
 12876^1^0^0^0^0^0.0000^0.0000^0^^16782:1:1^
+14123^3^0^42^43^1446^0.6780^0.2842^3^Steeljaw Snapper^3712:1:1,4555:1:1,4556:2:2,7973:1:1,14234:1:1^
 14280^1^0^27^27^1424^0.7208^0.2843^1^Big Samras^3730:1:1,6600:1:1^
+254560^1^0^39^39^2548^0.4432^0.4694^1^Twilight Shadowmancer^^
+256798^4^0^37^38^2548^0.4760^0.4898^4^Twilight Neophyte^4306:1:2,5431:1:1^
+256952^3^0^39^40^2548^0.4671^0.4874^3^Twilight Raider^4306:2:2^
+257900^12^0^0^0^1415^0.0000^0.0000^0^^4306:3:8,4338:2:4^
+258042^3^0^0^0^1415^0.0000^0.0000^0^^4338:1:2,4599:1:1,248709:1:1^
+258687^6^0^0^0^1415^0.0000^0.0000^0^^^
 270094^1^0^30^30^1441^0.5348^0.5374^1^Stormheart^5128:1:1^
 @i^888^Naga Battle Gloves
 @i^929^Healing Potion
@@ -274,6 +281,7 @@ GoldScout-export 9^gbx4cjirowt2^10
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
 @i^4585^Dripping Spider Mandible
+@i^4599^Cured Ham Steak
 @i^4607^Delicious Cave Mold
 @i^4614^Pendant of Myzrael
 @i^4634^Iron Lockbox
@@ -285,6 +293,7 @@ GoldScout-export 9^gbx4cjirowt2^10
 @i^5128^Shed Lizard Skin
 @i^5136^Torn Furry Ear
 @i^5137^Bright Eyeball
+@i^5431^Empty Hip Flask
 @i^5516^Threshadon Fang
 @i^5524^Thick-shelled Clam
 @i^5635^Sharp Claw
@@ -316,6 +325,7 @@ GoldScout-export 9^gbx4cjirowt2^10
 @i^7070^Elemental Water
 @i^7191^Fused Wiring
 @i^7423^Phalanx Leggings of the Owl
+@i^7973^Big-mouth Clam
 @i^8184^Firestarter
 @i^9299^Thermaplugg's Safe Combination
 @i^9308^Grime-Encrusted Object
@@ -354,6 +364,7 @@ GoldScout-export 9^gbx4cjirowt2^10
 @i^14165^Pagan Britches of the Eagle
 @i^14203^Thistlefur Pants of the Owl
 @i^14210^Vital Cape of the Physician
+@i^14234^Embersilk Robes of the Whale
 @i^14251^Lunar Cloak of the Beast
 @i^14375^Sanguine Cuffs
 @i^14562^Prospector's Chestpiece
@@ -389,6 +400,7 @@ GoldScout-export 9^gbx4cjirowt2^10
 @i^248690^Waylaid Crate: Earthly Expert Herbs
 @i^248705^Waylaid Crate: Journeyman Fabrics
 @i^248706^Waylaid Crate: Journeyman Ingots
+@i^248709^Waylaid Crate: Expert Ingots
 @i^251345^Plans: Veteran's Chain Leggings
 @i^251349^Plans: Crusader's Chain Leggings
 @i^251385^Plans: Hard Gold Cuirass
@@ -504,6 +516,7 @@ GoldScout-export 9^gbx4cjirowt2^10
 @q^4555^0:15:0
 @q^4556^0:15:0
 @q^4585^0:15:0
+@q^4599^1:0:0
 @q^4607^1:0:0
 @q^4614^2:4:0
 @q^4634^2:15:0
@@ -515,6 +528,7 @@ GoldScout-export 9^gbx4cjirowt2^10
 @q^5128^0:15:0
 @q^5136^0:15:0
 @q^5137^0:15:0
+@q^5431^0:15:0
 @q^5516^0:2:0
 @q^5524^1:7:0
 @q^5635^1:7:1
@@ -546,6 +560,7 @@ GoldScout-export 9^gbx4cjirowt2^10
 @q^7070^1:7:1
 @q^7191^1:7:1
 @q^7423^2:4:0
+@q^7973^1:7:0
 @q^8184^2:2:0
 @q^9299^1:13:0
 @q^9308^1:12:0
@@ -584,6 +599,7 @@ GoldScout-export 9^gbx4cjirowt2^10
 @q^14165^2:4:0
 @q^14203^2:4:0
 @q^14210^2:4:0
+@q^14234^2:4:0
 @q^14251^2:4:0
 @q^14375^2:4:0
 @q^14562^2:4:0
@@ -619,6 +635,7 @@ GoldScout-export 9^gbx4cjirowt2^10
 @q^248690^1:0:1
 @q^248705^2:0:1
 @q^248706^2:0:1
+@q^248709^2:0:1
 @q^251345^3:9:0
 @q^251349^3:9:0
 @q^251385^2:9:0
@@ -645,6 +662,8 @@ GoldScout-export 9^gbx4cjirowt2^10
 @m^1424^Hillsbrad Foothills
 @m^1440^Ashenvale
 @m^1441^Thousand Needles
+@m^1446^Tanaris
+@m^2548^Riverglades
 @c^2568^
 @c^2569^
 @c^2570^
@@ -1192,6 +1211,9 @@ GoldScout-export 9^gbx4cjirowt2^10
 @c^279271^
 @c^279943^
 @c^279959^
+@c^279965^
+@c^279966^
+@c^279967^
 @c^279972^
 @c^279973^
 @c^279976^
@@ -1276,7 +1298,11 @@ GoldScout-export 9^gbx4cjirowt2^10
 @a^10896^107:2
 @a^10992^84:1
 @a^12677^231:1
+@a^14123^113:3
 @a^14280^114:1
+@a^254560^188:1
+@a^256798^189:3,209:1
+@a^256952^188:1,189:1,209:1
 @a^270094^210:1
 @t^2248^1:100
 @t^2249^5:36
