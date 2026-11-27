@@ -1,4 +1,4 @@
-GoldScout-export 9^6rfdpnw91mjh^8
+GoldScout-export 9^6rfdpnw91mjh^9
 3234^2^0^14^14^1413^0.5141^0.4351^2^Lost Barrens Kodo^4779:1:1,4896:1:1,5082:1:1,5467:1:1,211786:1:1^
 3238^16^0^22^23^1413^0.4605^0.7514^16^Stormhide^4898:5:5,5133:6:6,5470:5:5^
 3239^3^0^20^21^1413^0.4659^0.6729^3^Thunderhead^5128:1:1,5470:2:2^
@@ -19,6 +19,7 @@ GoldScout-export 9^6rfdpnw91mjh^8
 3458^14^0^23^24^1413^0.4191^0.8122^14^Razormane Seer^1823:1:1,2592:3:3,5092:1:1^
 3459^4^0^24^25^1413^0.4165^0.8101^4^Razormane Warfrenzy^4306:1:1,5094:1:1^
 3472^1^0^25^25^1413^0.4463^0.7420^1^Washte Pawne^5103:1:1,6826:1:1^
+3566^1^0^9^9^1412^0.4014^0.2196^1^Flatland Prowler^4814:1:1^
 3630^1^0^15^16^1414^0.5187^0.5482^1^Deviate Coiler^6444:1:1^
 3632^4^0^15^16^1414^0.5195^0.5510^4^Deviate Creeper^3180:2:2,5124:2:2^
 3655^1^0^18^18^1414^0.5212^0.5512^1^Mad Magglish^^
@@ -76,6 +77,7 @@ GoldScout-export 9^6rfdpnw91mjh^8
 4196^6^0^21^22^1413^0.4264^0.7070^6^Silithid Swarm^^
 4263^5^0^14^14^1442^0.6140^0.5218^5^Deepmoss Hatchling^^
 4264^1^0^22^22^1442^0.6082^0.6335^1^Deepmoss Matriarch^1081:1:1,1475:1:1^
+4692^1^0^32^33^1443^0.4318^0.6784^1^Dread Swoop^12037:1:1^
 4788^1^0^20^21^1414^0.4383^0.3512^1^Fallenroot Satyr^^
 4798^1^0^0^0^0^0.0000^0.0000^0^^2592:1:2^
 4799^2^0^0^0^0^0.0000^0.0000^0^^^
@@ -187,9 +189,11 @@ GoldScout-export 9^6rfdpnw91mjh^8
 @i^4538^Snapvine Watermelon
 @i^4542^Moist Cornbread
 @i^4555^Thick Scaly Tail
+@i^4603^Raw Spotted Yellowtail
 @i^4605^Red-speckled Mushroom
 @i^4775^Cracked Bill
 @i^4779^Dull Kodo Tooth
+@i^4814^Discolored Fang
 @i^4896^Kodo Liver
 @i^4897^Thunderhawk Saliva Gland
 @i^4898^Lightning Gland
@@ -235,6 +239,7 @@ GoldScout-export 9^6rfdpnw91mjh^8
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
 @i^6361^Raw Rainbow Fin Albacore
+@i^6362^Raw Rockscale Cod
 @i^6379^Inscribed Leather Belt
 @i^6444^Forked Tongue
 @i^6522^Deviate Fish
@@ -244,6 +249,8 @@ GoldScout-export 9^6rfdpnw91mjh^8
 @i^11406^Rotting Bear Carcass
 @i^11993^Clay Ring of the Whale
 @i^11995^Ivory Band of the Channeler
+@i^12037^Mystery Meat
+@i^13422^Stonescale Eel
 @i^14157^Pagan Mantle
 @i^14725^War Paint Waistband
 @i^15117^Rigid Leggings of Arcane Protection
@@ -266,6 +273,7 @@ GoldScout-export 9^6rfdpnw91mjh^8
 @i^21071^Raw Sagefish
 @i^21113^Watertight Trunk
 @i^21114^Rumsey Rum Dark
+@i^21228^Mithril Bound Trunk
 @i^211786^Scroll: CHAP BALK WELLES
 @i^211853^Scroll: VOCE WELL
 @i^211854^Scroll: OMIT KESA
@@ -348,9 +356,11 @@ GoldScout-export 9^6rfdpnw91mjh^8
 @q^4538^1:0:0
 @q^4542^1:0:0
 @q^4555^0:15:0
+@q^4603^1:7:1
 @q^4605^1:0:0
 @q^4775^0:15:0
 @q^4779^0:15:0
+@q^4814^0:15:0
 @q^4896^1:12:0
 @q^4897^1:12:0
 @q^4898^1:12:0
@@ -396,6 +406,7 @@ GoldScout-export 9^6rfdpnw91mjh^8
 @q^6358^1:7:1
 @q^6359^1:7:1
 @q^6361^1:7:1
+@q^6362^1:7:1
 @q^6379^2:4:0
 @q^6444^0:15:0
 @q^6522^1:0:1
@@ -405,6 +416,8 @@ GoldScout-export 9^6rfdpnw91mjh^8
 @q^11406^0:15:0
 @q^11993^2:4:0
 @q^11995^2:4:0
+@q^12037^1:7:1
+@q^13422^1:7:1
 @q^14157^1:4:0
 @q^14725^2:4:0
 @q^15117^2:4:0
@@ -427,6 +440,7 @@ GoldScout-export 9^6rfdpnw91mjh^8
 @q^21071^1:7:1
 @q^21113^1:15:0
 @q^21114^1:0:0
+@q^21228^1:15:0
 @q^211786^1:0:0
 @q^211853^1:0:0
 @q^211854^1:0:0
@@ -444,10 +458,13 @@ GoldScout-export 9^6rfdpnw91mjh^8
 @q^277936^1:12:0
 @q^280438^1:15:0
 @q^286978^3:4:0
+@m^1412^Mulgore
 @m^1413^The Barrens
 @m^1414^Kalimdor
+@m^1434^Stranglethorn Vale
 @m^1440^Ashenvale
 @m^1442^Stonetalon Mountains
+@m^1443^Desolace
 @c^118^
 @c^724^
 @c^733^
@@ -641,6 +658,7 @@ GoldScout-export 9^6rfdpnw91mjh^8
 @a^3458^308:2,328:12
 @a^3459^328:4
 @a^3472^288:1
+@a^3566^88:1
 @a^3630^210:1
 @a^3632^210:1,230:3
 @a^3655^230:1
@@ -698,6 +716,7 @@ GoldScout-export 9^6rfdpnw91mjh^8
 @a^4196^288:6
 @a^4263^192:3,232:2
 @a^4264^252:1
+@a^4692^268:1
 @a^4788^148:1
 @a^4802^128:1
 @a^4803^128:1
@@ -728,6 +747,7 @@ GoldScout-export 9^6rfdpnw91mjh^8
 @t^4042^1:69
 @t^4044^2:145
 @f^1413^0^9^66^6289:1:1,6308:1:1,6522:7:7^149:9
+@f^1434^0^8^123^4603:2:2,6362:2:2,13422:3:5,21228:1:1^306:4,325:4
 @f^1440^0^41^74^6307:1:1,6354:1:1,6358:13:13,6359:5:5,6361:21:21^122:41
 @f^1442^0^51^100^3820:2:6,6289:1:1,6308:8:8,21071:37:37,21113:2:2,21114:1:2^149:12,169:35,170:4
 @l^0^enUS
