@@ -1,4 +1,4 @@
-GoldScout-export 7^8v8qnakbo3zm^46
+GoldScout-export 7^8v8qnakbo3zm^47
 587^4^0^33^34^1434^0.2987^0.1929^4^Bloodscalp Warrior^3771:2:2,3805:1:1,4306:1:2^
 588^6^0^34^35^1434^0.2299^0.1234^6^Bloodscalp Scout^2592:1:2,2725:1:1,2732:1:1,3385:1:1,3771:1:1,3781:1:1,3796:1:1,4306:1:2^
 595^5^0^35^35^1434^0.2324^0.1225^5^Bloodscalp Hunter^2750:1:1,4306:1:1^
@@ -128,6 +128,7 @@ GoldScout-export 7^8v8qnakbo3zm^46
 4012^1^0^21^22^1442^0.5069^0.4594^1^Pridewing Wyvern^^
 4020^1^0^23^23^1442^0.4990^0.3562^1^Sap Beast^3674:1:1^
 4036^1^0^23^23^1442^0.3691^0.4643^1^Rogue Flame Spirit^16312:1:1^
+4044^2^0^23^24^1442^0.3702^0.5125^2^Blackened Basilisk^11385:1:1,248687:1:1^
 4095^1^0^27^28^1441^0.2009^0.2198^1^Galak Mauler^2592:1:2^
 4127^10^0^15^16^1413^0.5802^0.3320^10^Hecklefang Hyena^3299:1:1,3301:8:8,5635:3:3,14109:1:1^
 4129^1^0^18^18^1413^0.4406^0.4936^1^Hecklefang Snarler^3301:1:1^
@@ -509,6 +510,7 @@ GoldScout-export 7^8v8qnakbo3zm^46
 @i^10413^Gloves of the Fang
 @i^10441^Glowing Shard
 @i^11203^Formula: Enchant Gloves - Advanced Mining
+@i^11385^Basilisk Scale
 @i^11392^Severed Bat Claw
 @i^11393^Small Bat Skull
 @i^11394^Bat Heart
@@ -559,6 +561,7 @@ GoldScout-export 7^8v8qnakbo3zm^46
 @i^248682^Waylaid Crate: Apprentice Herbs
 @i^248684^Waylaid Crate: Apprentice Textiles
 @i^248685^Waylaid Crate: Apprentice Curiosities
+@i^248687^Waylaid Crate: Journeyman Ore
 @i^248690^Waylaid Crate: Earthly Expert Herbs
 @i^248691^Waylaid Crate: Flowering Expert Herbs
 @i^248692^Waylaid Crate: Expert Ore
@@ -870,6 +873,7 @@ GoldScout-export 7^8v8qnakbo3zm^46
 @q^10413^3:4:0
 @q^10441^1:12:0
 @q^11203^2:9:0
+@q^11385^0:15:0
 @q^11392^0:15:0
 @q^11393^0:15:0
 @q^11394^0:15:0
@@ -920,6 +924,7 @@ GoldScout-export 7^8v8qnakbo3zm^46
 @q^248682^1:0:1
 @q^248684^1:0:1
 @q^248685^1:0:1
+@q^248687^1:0:1
 @q^248690^1:0:1
 @q^248691^1:0:1
 @q^248692^1:0:1
@@ -2366,6 +2371,7 @@ GoldScout-export 7^8v8qnakbo3zm^46
 @a^4012^190:1
 @a^4020^149:1
 @a^4036^187:1
+@a^4044^207:2
 @a^4095^84:1
 @a^4127^32:1,131:1,151:8
 @a^4129^188:1
@@ -2431,6 +2437,7 @@ GoldScout-export 7^8v8qnakbo3zm^46
 @t^4009^2:276
 @t^4020^1:77
 @t^4036^1:117
+@t^4044^1:36
 @t^4127^9:503
 @t^5766^2:53
 @t^11915^13:436

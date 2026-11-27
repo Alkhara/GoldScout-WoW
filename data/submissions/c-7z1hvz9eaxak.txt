@@ -1,4 +1,4 @@
-GoldScout-export 9^7z1hvz9eaxak^12
+GoldScout-export 9^7z1hvz9eaxak^13
 92^15^0^39^40^1418^0.4001^0.7735^15^Elemental de roca^4552:1:1,4553:3:3,4627:3:3,4784:7:7,7067:2:2,7848:5:5,7912:3:5,8150:5:5^
 587^25^0^33^34^1434^0.3381^0.1551^25^Guerrero Sangrapellejo^1520:4:4,1708:1:1,2592:1:1,2728:1:1,2730:1:1,2732:1:1,2735:2:2,2738:1:1,3901:6:6,4306:10:15^
 694^25^0^33^34^1434^0.3384^0.1562^25^Lanzahachas Sangrapellejo^2730:1:1,2735:1:1,2738:1:1,2748:1:1,3385:1:1,3771:1:1,3901:6:6,4306:8:11^
@@ -51,9 +51,22 @@ GoldScout-export 9^7z1hvz9eaxak^12
 4718^1^0^34^35^1443^0.3701^0.0684^1^Oráculo Filozante^6362:1:2,17058:1:1^
 4719^6^0^35^36^1443^0.3366^0.1166^6^Bruja de mar Filozante^17057:3:3,17058:5:5^
 14232^1^0^38^38^1445^0.4672^0.1744^1^Dardo^4461:1:1,285100:1:1^
+255898^5^0^38^39^2548^0.7344^0.6248^5^Oráculo múrloc^5524:1:1,268344:4:6^
+255899^7^0^37^38^2548^0.7728^0.6205^7^Robamareas múrloc^268344:3:3^
+255901^8^0^36^37^2548^0.7636^0.6235^8^Reptador de arena^5524:1:1,5569:4:4,12206:1:1,17057:1:1,268345:5:5^
 256798^1^0^38^38^2548^0.4431^0.4816^1^Neófito Crepuscular^^
-256952^1^0^39^40^2548^0.4426^0.4806^1^Asaltante Crepuscular^^
+256801^2^0^41^41^2548^0.7519^0.6688^2^Guerrero múrloc^5524:1:1,268344:1:2^
+256952^3^0^39^40^2548^0.4896^0.5415^3^Asaltante Crepuscular^4306:1:3^
+258522^1^0^38^38^2548^0.5371^0.8635^1^Pelihollín^12203:1:1,265738:1:1^
+258573^8^0^36^37^2548^0.4972^0.8001^8^Oráculo Aletalodo^5524:4:4,17058:5:5^
+258574^8^0^37^38^2548^0.4953^0.8052^8^Guerrero Aletalodo^4603:1:2,5524:2:2,17058:2:2^
+259052^11^0^38^39^2548^0.5668^0.5864^11^Cazadora furtiva de Rog'mar^4306:4:8^
+259267^1^0^36^36^2548^0.5472^0.8530^1^Coyote de las llanuras^4582:1:1^
 262037^1^0^37^38^2548^0.6014^0.8601^1^Murciumbrío posado^11393:1:1^
+263343^2^0^37^38^2548^0.6154^0.5873^2^Águila ratonera de las bajas llanuras^3404:1:1,11418:1:1,248694:1:1^
+263348^10^0^37^38^2548^0.6559^0.5891^10^Zancaalta errante^5116:1:1,5829:2:2,11416:6:6,11418:1:1,271778:1:1^
+272228^3^0^36^37^2548^0.5496^0.7521^3^Avisor de cosecha^4306:2:6,5427:2:2,5567:2:2,262889:1:1^
+272313^1^0^39^39^2548^0.7416^0.6510^1^Pinzador caparasal^8748:1:1^
 @i^770^Diente de crocolisco puntiagudo
 @i^863^Segadora penumbra del hechicero
 @i^1074^Punta de pata de araña dura
@@ -93,6 +106,7 @@ GoldScout-export 9^7z1hvz9eaxak^12
 @i^4583^Melena espesa
 @i^4585^Mandíbula de araña chorreando
 @i^4586^Piel de raptor lisa
+@i^4603^Serviola moteada cruda
 @i^4614^Colgante de Myzrael
 @i^4616^Pico de la suerte de Ryedol
 @i^4626^Fragmento de piedra pequeño
@@ -100,6 +114,10 @@ GoldScout-export 9^7z1hvz9eaxak^12
 @i^4630^Chatarra
 @i^4784^Piedra inerte
 @i^5116^Pluma de cola larga
+@i^5427^Reloj de bolsillo rudimentario
+@i^5524^Almeja gruesa
+@i^5567^Gancho de plata
+@i^5569^Algas
 @i^5636^Pluma delicada
 @i^5637^Colmillo grande
 @i^5785^Escama múrloc gruesa
@@ -118,15 +136,18 @@ GoldScout-export 9^7z1hvz9eaxak^12
 @i^7848^Fragmento de elemental de roca
 @i^7912^Piedra sólida
 @i^8150^Sal de roca
+@i^8748^Almófar de malla doble
 @i^10285^Seda de las Sombras
 @i^11393^Calavera de murciélago pequeño
 @i^11416^Caja torácica delicada
+@i^11418^Hueso hueco de ala
 @i^11997^Círculo de piedra verde del profeta
 @i^12037^Carne misteriosa
 @i^12184^Carne de raptor
 @i^12202^Carne de tigre
 @i^12203^Carne de lobo rojo
 @i^12205^Carne de araña blanca
+@i^12206^Carne de cangrejo tierna
 @i^15213^Hoja de mercenario de protección de las Sombras
 @i^17057^Escamas de pez lustrosas
 @i^17058^Aceite de pescado
@@ -138,6 +159,12 @@ GoldScout-export 9^7z1hvz9eaxak^12
 @i^213547^Pergamino: QÉUSAPEDA
 @i^248691^Cajón arrebatado: Hierbas de experto en floración
 @i^248692^Cajón arrebatado: Mena de experto
+@i^248694^Cajón arrebatado: Curiosidades de experto
+@i^262889^Libranza de experto lacrada
+@i^265738^Pelambre de pelihollín
+@i^268344^Ojo de múrloc marino
+@i^268345^Carne de reptador de arena
+@i^271778^Pico de zancaalta intacto
 @i^278402^Artefacto no investigado
 @i^280203^Espada de entrenamiento de Jameson
 @i^285100^Dientes de raptor serrados
@@ -180,6 +207,7 @@ GoldScout-export 9^7z1hvz9eaxak^12
 @q^4583^0:15:0
 @q^4585^0:15:0
 @q^4586^0:15:0
+@q^4603^1:7:1
 @q^4614^2:4:0
 @q^4616^1:2:0
 @q^4626^1:12:0
@@ -187,6 +215,10 @@ GoldScout-export 9^7z1hvz9eaxak^12
 @q^4630^1:12:0
 @q^4784^0:15:0
 @q^5116^1:7:1
+@q^5427^0:15:0
+@q^5524^1:7:0
+@q^5567^0:15:0
+@q^5569^0:15:0
 @q^5636^0:15:0
 @q^5637^1:7:1
 @q^5785^1:7:1
@@ -205,15 +237,18 @@ GoldScout-export 9^7z1hvz9eaxak^12
 @q^7848^1:12:0
 @q^7912^1:7:1
 @q^8150^1:7:1
+@q^8748^0:4:0
 @q^10285^1:7:1
 @q^11393^0:15:0
 @q^11416^0:15:0
+@q^11418^0:15:0
 @q^11997^2:4:0
 @q^12037^1:7:1
 @q^12184^1:7:1
 @q^12202^1:7:1
 @q^12203^1:7:1
 @q^12205^1:7:1
+@q^12206^1:7:1
 @q^15213^2:2:0
 @q^17057^1:15:0
 @q^17058^1:15:0
@@ -225,6 +260,12 @@ GoldScout-export 9^7z1hvz9eaxak^12
 @q^213547^1:0:0
 @q^248691^1:0:1
 @q^248692^1:0:1
+@q^248694^1:0:1
+@q^262889^3:0:0
+@q^265738^1:12:0
+@q^268344^1:12:0
+@q^268345^1:12:0
+@q^271778^1:12:0
 @q^278402^1:12:0
 @q^280203^1:12:0
 @q^285100^2:2:0
@@ -977,9 +1018,22 @@ GoldScout-export 9^7z1hvz9eaxak^12
 @a^4718^27:1
 @a^4719^26:1,27:1,45:1,46:2,67:1
 @a^14232^69:1
+@a^255898^254:4,255:1
+@a^255899^255:7
+@a^255901^254:1,255:7
 @a^256798^188:1
-@a^256952^188:1
+@a^256801^254:1,295:1
+@a^256952^188:1,230:2
+@a^258522^350:1
+@a^258573^309:1,310:2,329:3,330:2
+@a^258574^309:1,310:1,329:5,330:1
+@a^259052^230:3,231:3,251:5
+@a^259267^350:1
 @a^262037^352:1
+@a^263343^232:2
+@a^263348^213:3,233:3,251:1,252:2,273:1
+@a^272228^291:1,310:2
+@a^272313^274:1
 @t^92^15:1186
 @t^2727^7:907
 @t^2728^3:161
@@ -996,5 +1050,19 @@ GoldScout-export 9^7z1hvz9eaxak^12
 @t^2907^11:862
 @t^2945^1:17
 @t^3560^8:251
+@t^255898^5:221
+@t^255899^7:129
+@t^255901^8:640
 @t^256798^1:2
+@t^256801^2:143
+@t^256952^2:135
+@t^258522^1:41
+@t^258573^8:252
+@t^258574^8:376
+@t^259052^11:730
+@t^259267^1:566
+@t^263343^2:90
+@t^263348^10:810
+@t^272228^2:91
+@t^272313^1:82
 @l^0^esMX

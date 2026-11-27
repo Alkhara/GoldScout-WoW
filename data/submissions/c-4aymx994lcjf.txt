@@ -1,6 +1,6 @@
-GoldScout-export 9^4aymx994lcjf^29
+GoldScout-export 9^4aymx994lcjf^30
 205^4^0^28^29^1431^0.6619^0.6659^4^Nightbane Dark Runner^1826:1:1,2232:1:1,6394:1:1^
-206^33^0^29^30^1431^0.7209^0.7028^33^Nightbane Vile Fang^929:1:1,1205:1:1,1478:1:1,3612:1:1,3770:2:2,3868:1:1,5635:2:2^
+206^60^0^29^30^1431^0.7256^0.7036^60^Nightbane Vile Fang^897:1:1,929:2:2,1205:1:1,1478:1:1,3612:1:1,3770:2:2,3868:1:1,5635:3:3,6599:1:1,10288:1:1,248688:1:1^
 213^12^0^19^20^1431^0.2929^0.2533^12^Starving Dire Wolf^1015:4:4,3301:4:4,3402:4:4,5635:1:1,211855:1:1,248682:1:1^
 215^2^0^24^24^1431^0.4961^0.7309^2^Defias Night Runner^6573:1:1^
 217^1^0^19^20^1431^0.3273^0.2446^1^Venom Web Spider^3174:1:1^
@@ -31,7 +31,7 @@ GoldScout-export 9^4aymx994lcjf^29
 824^1^0^15^16^1415^0.4112^0.7938^1^Defias Digger^915:1:1,1926:1:1^
 898^2^0^27^27^1431^0.5786^0.3026^2^Nightbane Worgen^^
 909^1^0^25^25^1431^0.4830^0.7495^1^Defias Night Blade^^
-920^4^0^30^31^1431^0.6940^0.7463^4^Nightbane Tainted One^3770:1:1,5635:1:1^
+920^6^0^30^31^1431^0.7061^0.7415^6^Nightbane Tainted One^3770:1:1,5635:1:1^
 930^1^0^24^24^1431^0.3412^0.3441^1^Black Widow Hatchling^1081:1:1,1130:1:1,1288:1:1,2251:1:1,4428:1:1^
 1009^1^0^22^23^1437^0.3808^0.3427^1^Mosshide Mistweaver^2611:1:1,3770:1:1^
 1010^3^0^22^23^1437^0.3447^0.3485^3^Mosshide Fenrunner^2611:3:3,4306:1:1^
@@ -121,6 +121,7 @@ GoldScout-export 9^4aymx994lcjf^29
 4832^2^0^0^0^0^0.0000^0.0000^0^^1155:2:2,5881:1:1^
 4887^2^0^0^0^0^0.0000^0.0000^0^^6907:2:2^
 5894^1^0^22^22^1436^0.4619^0.6010^1^Corrupt Minor Manifestation of Water^7812:1:1^
+6170^1^0^32^32^1431^0.7348^0.7304^1^Gutspill^213545:1:1^
 6243^2^0^0^0^0^0.0000^0.0000^0^^273141:1:1,273840:1:1^
 12902^1^0^0^0^0^0.0000^0.0000^0^^252815:1:1,273843:1:1^
 245999^2^0^0^0^1416^0.0000^0.0000^0^^273034:2:2^
@@ -192,6 +193,7 @@ GoldScout-export 9^4aymx994lcjf^29
 @i^858^Lesser Healing Potion
 @i^878^Fist-sized Spinneret
 @i^893^Dire Wolf Fang
+@i^897^Madwolf Bracers
 @i^915^Red Silk Bandana
 @i^929^Healing Potion
 @i^955^Scroll of Intellect
@@ -354,6 +356,7 @@ GoldScout-export 9^4aymx994lcjf^29
 @i^6554^Bard's Gloves of the Gorilla
 @i^6573^Defender Boots of the Whale
 @i^6578^Defender Leggings of Intellect
+@i^6599^Battleforge Shield of Nature's Wrath
 @i^6600^Dervish Belt of the Bear
 @i^6603^Dervish Tunic of Spirit
 @i^6615^Sage's Gloves of Fiery Wrath
@@ -377,6 +380,7 @@ GoldScout-export 9^4aymx994lcjf^29
 @i^9838^Banded Cloak of the Bandit
 @i^9840^Banded Girdle of Intellect
 @i^9843^Banded Shield of the Owl
+@i^10288^Sage's Circlet of the Elder
 @i^10316^Pattern: Colorful Kilt
 @i^10403^Blackened Defias Belt
 @i^11152^Formula: Enchant Gloves - Fishing
@@ -411,6 +415,7 @@ GoldScout-export 9^4aymx994lcjf^29
 @i^211854^Scroll: OMIT KESA
 @i^211855^Scroll: STHENIC LUNATE
 @i^213543^Scroll: UPDOG
+@i^213545^Scroll: PEATCHY ATTAX
 @i^213546^Scroll: SHOOBEEDOOP
 @i^213547^Scroll: THAW WORDS
 @i^248682^Waylaid Crate: Apprentice Herbs
@@ -478,6 +483,7 @@ GoldScout-export 9^4aymx994lcjf^29
 @q^858^1:0:0
 @q^878^0:7:0
 @q^893^0:15:0
+@q^897^2:4:0
 @q^915^1:12:0
 @q^929^1:0:0
 @q^955^1:0:0
@@ -640,6 +646,7 @@ GoldScout-export 9^4aymx994lcjf^29
 @q^6554^2:4:0
 @q^6573^2:4:0
 @q^6578^2:4:0
+@q^6599^2:4:0
 @q^6600^2:4:0
 @q^6603^2:4:0
 @q^6615^2:4:0
@@ -663,6 +670,7 @@ GoldScout-export 9^4aymx994lcjf^29
 @q^9838^2:4:0
 @q^9840^2:4:0
 @q^9843^2:4:0
+@q^10288^2:4:0
 @q^10316^2:9:0
 @q^10403^3:4:0
 @q^11152^2:9:0
@@ -697,6 +705,7 @@ GoldScout-export 9^4aymx994lcjf^29
 @q^211854^1:0:0
 @q^211855^1:0:0
 @q^213543^1:0:0
+@q^213545^1:0:0
 @q^213546^1:0:0
 @q^213547^1:0:0
 @q^248682^1:0:1
@@ -1605,7 +1614,7 @@ GoldScout-export 9^4aymx994lcjf^29
 @c^279990^
 @c^286152^
 @a^205^273:4
-@a^206^274:16,275:1,294:14,311:2
+@a^206^274:29,275:1,294:28,311:2
 @a^213^67:1,86:4,103:1,105:6
 @a^215^289:2
 @a^217^86:1
@@ -1623,7 +1632,7 @@ GoldScout-export 9^4aymx994lcjf^29
 @a^824^308:1
 @a^898^131:2
 @a^909^289:1
-@a^920^294:1,311:1,314:2
+@a^920^294:3,311:1,314:2
 @a^930^126:1
 @a^1009^127:1
 @a^1010^126:1,127:1,146:1
@@ -1679,6 +1688,7 @@ GoldScout-export 9^4aymx994lcjf^29
 @a^4802^128:1
 @a^4803^128:1
 @a^5894^249:1
+@a^6170^294:1
 @a^260803^250:1
 @a^260804^229:1
 @a^260809^230:1
