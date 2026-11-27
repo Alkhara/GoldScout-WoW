@@ -1,4 +1,4 @@
-GoldScout-export 9^ma2tat9f4hc6^36
+GoldScout-export 9^ma2tat9f4hc6^37
 95^1^0^11^12^1436^0.4142^0.4094^1^Defias Smuggler^^
 122^2^0^17^18^1436^0.3651^0.8184^2^Defias Highwayman^827:1:1,1812:1:1,2592:1:2,9788:1:1^
 123^1^0^14^14^1436^0.3508^0.3227^1^Riverpaw Mongrel^^
@@ -211,8 +211,8 @@ GoldScout-export 9^ma2tat9f4hc6^36
 6412^6^0^24^25^1437^0.4978^0.4902^6^Skeleton^^
 10758^1^0^26^26^1441^0.3492^0.3088^1^Grimtotem Bandit^4306:1:2^
 10760^1^0^26^26^1441^0.3228^0.2788^1^Grimtotem Geomancer^4306:1:1^
-11562^18^0^33^34^1443^0.2132^0.7722^18^Drysnap Crawler^3805:1:1,6362:1:3,17057:5:5,248709:1:1^
-11563^6^0^34^35^1443^0.2141^0.7804^6^Drysnap Pincer^3794:1:1,17057:3:3^
+11562^41^0^33^34^1443^0.2004^0.8091^41^Drysnap Crawler^1708:1:1,3787:1:1,3805:1:1,6362:1:3,8746:1:1,17057:8:8,248709:1:1^
+11563^10^0^34^35^1443^0.2037^0.7863^10^Drysnap Pincer^3794:1:1,6362:1:1,17057:5:5^
 11577^1^0^35^36^1443^0.4241^0.6233^1^Whirlwind Stormwalker^7069:1:1^
 11912^1^0^16^16^1442^0.7132^0.8715^1^Grimtotem Brute^14096:1:1^
 11913^1^0^16^16^1442^0.7446^0.8562^1^Grimtotem Sorcerer^2589:1:1^
@@ -292,6 +292,7 @@ GoldScout-export 9^ma2tat9f4hc6^36
 @i^1687^Retractable Claw
 @i^1702^Intact Basilisk Spine
 @i^1705^Lesser Moonstone
+@i^1708^Sweet Nectar
 @i^1712^Scroll of Spirit II
 @i^1731^Worn Mail Boots
 @i^1732^Worn Mail Bracers
@@ -383,6 +384,7 @@ GoldScout-export 9^ma2tat9f4hc6^36
 @i^3731^Lion Meat
 @i^3745^Rune of Opening
 @i^3770^Mutton Chop
+@i^3787^Stone Club
 @i^3794^Interlaced Bracers
 @i^3801^Hardened Leather Boots
 @i^3805^Hardened Leather Pants
@@ -502,6 +504,7 @@ GoldScout-export 9^ma2tat9f4hc6^36
 @i^7410^Infiltrator Bracers of the Champion
 @i^7997^Red Defias Mask
 @i^8365^Raw Mithril Head Trout
+@i^8746^Interlaced Cowl
 @i^9451^Bubbling Water
 @i^9775^Bandit Cinch of the Owl
 @i^9786^Raider's Cloak of Frost Protection
@@ -634,6 +637,7 @@ GoldScout-export 9^ma2tat9f4hc6^36
 @q^1687^0:15:0
 @q^1702^0:15:0
 @q^1705^2:7:1
+@q^1708^1:0:0
 @q^1712^1:0:0
 @q^1731^0:4:0
 @q^1732^0:4:0
@@ -725,6 +729,7 @@ GoldScout-export 9^ma2tat9f4hc6^36
 @q^3731^1:7:1
 @q^3745^1:12:0
 @q^3770^1:0:0
+@q^3787^0:2:0
 @q^3794^0:4:0
 @q^3801^0:4:0
 @q^3805^0:4:0
@@ -844,6 +849,7 @@ GoldScout-export 9^ma2tat9f4hc6^36
 @q^7410^2:4:0
 @q^7997^0:4:0
 @q^8365^1:7:1
+@q^8746^0:4:0
 @q^9451^1:0:0
 @q^9775^2:4:0
 @q^9786^2:4:0
@@ -2639,8 +2645,8 @@ GoldScout-export 9^ma2tat9f4hc6^36
 @a^6412^169:1,189:1,190:1,209:1,210:2
 @a^10758^126:1
 @a^10760^106:1
-@a^11562^284:1,303:4,304:10,324:3
-@a^11563^303:2,304:3,324:1
+@a^11562^284:1,303:5,304:12,323:6,324:6,343:11
+@a^11563^303:5,304:3,323:1,324:1
 @a^11577^248:1
 @a^11912^354:1
 @a^11913^354:1
@@ -2696,8 +2702,8 @@ GoldScout-export 9^ma2tat9f4hc6^36
 @t^4728^1:14
 @t^5766^2:10
 @t^5865^1:6
-@t^11562^18:1710
-@t^11563^5:208
+@t^11562^40:3041
+@t^11563^9:451
 @t^11577^1:193
 @t^261367^1:3
 @t^261368^4:192
