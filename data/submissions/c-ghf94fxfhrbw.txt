@@ -1,4 +1,4 @@
-GoldScout-export 7^ghf94fxfhrbw^40
+GoldScout-export 7^ghf94fxfhrbw^41
 92^9^0^39^40^1418^0.1445^0.3508^9^Rock Elemental^4552:1:1,4553:4:4,4627:3:3,4784:5:5,7067:1:1,7848:1:1,7912:1:1,8150:1:1,213544:1:1^
 588^6^0^34^35^1434^0.2417^0.1237^6^Bloodscalp Scout^1710:1:1,2740:1:1,3901:2:2,3915:3:3,4306:1:2^
 595^2^0^34^35^1434^0.2344^0.1227^2^Bloodscalp Hunter^3915:1:1^
@@ -32,8 +32,13 @@ GoldScout-export 7^ghf94fxfhrbw^40
 2949^2^0^5^6^1412^0.4814^0.7270^2^Palemane Tanner^2589:1:1^
 2950^1^0^6^6^1412^0.4811^0.7153^1^Palemane Skinner^^
 2956^3^0^6^7^1412^0.5024^0.6445^3^Adult Plainstrider^767:1:1,774:1:1,4757:1:1,4775:2:2,7096:1:1,7097:1:1^
-2958^12^0^5^6^1412^0.4957^0.6629^12^Prairie Wolf^2672:7:7,3299:1:1,3300:2:2^
+2958^13^0^5^6^1412^0.4972^0.6592^13^Prairie Wolf^2672:7:7,3299:1:1,3300:2:2^
+2959^3^0^7^8^1412^0.5409^0.6119^3^Prairie Stalker^2672:1:1,4801:1:1^
+2969^1^0^5^5^1412^0.5157^0.6163^1^Wiry Swoop^4769:1:1,4775:1:1^
+2970^1^0^8^9^1412^0.5442^0.5930^1^Swoop^4769:1:1,7096:1:1^
 2976^2^0^6^7^1412^0.5127^0.5416^2^Venture Co. Laborer^^
+2978^15^0^8^9^1412^0.5784^0.5371^15^Venture Co. Worker^117:2:2,159:1:1,2589:5:6,2635:1:1,2645:1:1,2835:1:2,3013:1:1,15004:1:1^
+3035^4^0^7^8^1412^0.5477^0.6151^4^Flatland Cougar^4802:4:4,4805:1:1,4814:1:1^
 3198^1^0^10^10^1411^0.5468^0.0879^1^Burning Blade Apprentice^14544:1:1^
 3381^6^0^12^13^1413^0.6367^0.4669^6^Southsea Brigand^2589:1:1,3374:1:1,14097:1:1,211780:1:1^
 3382^4^0^13^14^1413^0.6308^0.4880^4^Southsea Cannoneer^^
@@ -198,6 +203,8 @@ GoldScout-export 7^ghf94fxfhrbw^40
 270664^3^0^37^38^2548^0.3858^0.6195^3^Venomweb Spitter^1074:1:1,4585:1:1,12205:1:1^
 270667^1^0^38^38^2548^0.4880^0.6480^1^Farholde Priest^^
 272315^1^0^42^43^2548^0.8304^0.5179^1^Brineshell Snapper^7113:1:1,248709:1:1^
+@i^117^Tough Jerky
+@i^159^Refreshing Spring Water
 @i^414^Dalaran Sharp
 @i^767^Long Bo Staff
 @i^770^Pointy Crocolisk Tooth
@@ -244,14 +251,18 @@ GoldScout-export 7^ghf94fxfhrbw^40
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
 @i^2632^Curved Dagger of the Bear
+@i^2635^Loose Chain Belt
+@i^2645^Loose Chain Gloves
 @i^2672^Stringy Wolf Meat
 @i^2677^Boar Ribs
 @i^2734^Green Hills of Stranglethorn - Page 10
 @i^2740^Green Hills of Stranglethorn - Page 16
 @i^2745^Green Hills of Stranglethorn - Page 21
+@i^2835^Rough Stone
 @i^2836^Coarse Stone
 @i^2924^Crocolisk Meat
 @i^3010^Fine Sand
+@i^3013^Scroll of Protection
 @i^3042^BKP Sparrow Smallbore
 @i^3180^Flecked Raptor Scale
 @i^3181^Partially Digested Meat
@@ -336,9 +347,14 @@ GoldScout-export 7^ghf94fxfhrbw^40
 @i^4729^Aurora Mantle
 @i^4735^Mistscape Cloak
 @i^4757^Cracked Egg Shells
+@i^4769^Trophy Swoop Quill
 @i^4775^Cracked Bill
 @i^4784^Lifeless Stone
 @i^4787^Burning Pitch
+@i^4801^Stalker Claws
+@i^4802^Cougar Claws
+@i^4805^Flatland Cougar Femur
+@i^4814^Discolored Fang
 @i^5025^Hezrul's Head
 @i^5098^Altered Snapjaw Shell
 @i^5113^Mark of the Syndicate
@@ -464,6 +480,7 @@ GoldScout-export 7^ghf94fxfhrbw^40
 @i^14563^Prospector's Cloak
 @i^14725^War Paint Waistband
 @i^14727^War Paint Legguards
+@i^15004^Primal Boots
 @i^15015^Lupine Cloak
 @i^15114^Rigid Cape of Arcane Protection
 @i^15214^Nobles Brand of the Elder
@@ -544,6 +561,8 @@ GoldScout-export 7^ghf94fxfhrbw^40
 @i^281052^Ombassa's Hide
 @i^282717^Durable Bearhide Pauldrons
 @i^286658^Umbral Scaled Belt
+@q^117^1:0:0
+@q^159^1:0:0
 @q^414^1:0:0
 @q^767^1:2:0
 @q^770^0:15:0
@@ -590,14 +609,18 @@ GoldScout-export 7^ghf94fxfhrbw^40
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2632^2:2:0
+@q^2635^0:4:0
+@q^2645^0:4:0
 @q^2672^1:7:1
 @q^2677^1:7:1
 @q^2734^1:12:0
 @q^2740^1:12:0
 @q^2745^1:12:0
+@q^2835^1:7:1
 @q^2836^1:7:1
 @q^2924^1:7:1
 @q^3010^0:15:0
+@q^3013^1:0:0
 @q^3042^2:2:0
 @q^3180^0:15:0
 @q^3181^0:15:0
@@ -682,9 +705,14 @@ GoldScout-export 7^ghf94fxfhrbw^40
 @q^4729^2:4:0
 @q^4735^2:4:0
 @q^4757^0:15:0
+@q^4769^1:12:0
 @q^4775^0:15:0
 @q^4784^0:15:0
 @q^4787^0:15:0
+@q^4801^1:12:0
+@q^4802^1:12:0
+@q^4805^1:12:0
+@q^4814^0:15:0
 @q^5025^1:12:0
 @q^5098^1:12:0
 @q^5113^0:15:0
@@ -810,6 +838,7 @@ GoldScout-export 7^ghf94fxfhrbw^40
 @q^14563^2:4:0
 @q^14725^2:4:0
 @q^14727^2:4:0
+@q^15004^1:4:0
 @q^15015^1:4:0
 @q^15114^2:4:0
 @q^15214^2:2:0
@@ -2170,8 +2199,13 @@ GoldScout-export 7^ghf94fxfhrbw^40
 @a^2949^289:2
 @a^2950^289:1
 @a^2956^250:2,290:1
-@a^2958^249:2,250:2,269:6,289:2
+@a^2958^249:2,250:3,269:6,289:2
+@a^2959^230:2,250:1
+@a^2969^250:1
+@a^2970^230:1
 @a^2976^210:2
+@a^2978^211:15
+@a^3035^230:1,231:1,250:2
 @a^3198^30:1
 @a^3381^192:6
 @a^3382^192:3,212:1
@@ -2235,7 +2269,11 @@ GoldScout-export 7^ghf94fxfhrbw^40
 @t^2545^1:39
 @t^2736^25:840
 @t^2956^1:37
-@t^2958^1:61
+@t^2958^2:84
+@t^2959^3:140
+@t^2970^1:48
+@t^2978^13:889
+@t^3035^3:182
 @t^3461^7:237
 @t^254560^3:44
 @t^256798^5:217

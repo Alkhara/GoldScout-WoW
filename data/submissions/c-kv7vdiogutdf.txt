@@ -1,4 +1,4 @@
-GoldScout-export 6^kv7vdiogutdf^26
+GoldScout-export 6^kv7vdiogutdf^27
 1853^2^0^0^0^0^0.0000^0.0000^0^^12843:2:2,13501:1:1,13953:1:1,16667:1:1,16727:1:1,22433:1:1^
 3975^1^0^0^0^0^0.0000^0.0000^0^^274295:1:1^
 4286^11^0^0^0^0^0.0000^0.0000^0^^2592:2:9,3794:1:1,4306:2:8,4417:1:1,8746:1:1^
@@ -36,7 +36,10 @@ GoldScout-export 6^kv7vdiogutdf^26
 8319^8^0^0^0^0^0.0000^0.0000^0^^^
 8523^3^0^53^54^1423^0.1396^0.2420^3^Scourge Soldier^^
 8524^6^0^54^55^1423^0.1410^0.2497^6^Cursed Mage^8948:1:1,13443:1:1,14047:2:4^
-8540^6^0^53^55^1423^0.1378^0.2473^6^Torn Screamer^8948:1:1,14047:1:1^
+8528^2^0^58^59^1423^0.7255^0.3491^2^Dread Weaver^7972:1:1,8948:1:1,14047:1:3^
+8539^1^0^58^58^1423^0.7292^0.3688^1^Eyeless Watcher^^
+8540^9^0^53^55^1423^0.2029^0.2640^9^Torn Screamer^7972:1:1,8948:1:1,10245:1:1,14047:1:1,21935:3:3^
+8542^2^0^57^58^1423^0.7176^0.3329^2^Death Singer^13446:1:1,14047:1:3,21935:1:1^
 8891^5^0^0^0^0^0.0000^0.0000^0^^10191:1:1,11754:1:1,14047:1:3,19265:1:1^
 8892^3^0^0^0^0^0.0000^0.0000^0^^11733:1:1,14047:2:7^
 8899^2^0^0^0^0^0.0000^0.0000^0^^14047:2:4^
@@ -192,6 +195,9 @@ GoldScout-export 6^kv7vdiogutdf^26
 11551^1^0^0^0^0^0.0000^0.0000^0^^4585:1:1,10285:1:1^
 11582^3^0^0^0^0^0.0000^0.0000^0^^14047:1:2,15776:1:1^
 11622^2^0^0^0^0^0.0000^0.0000^0^^14539:1:1,18686:1:1^
+12178^4^0^55^56^1451^0.6309^0.5201^4^Tortured Druid^14047:1:3,21937:3:3^
+12179^9^0^56^57^1451^0.6333^0.5117^9^Tortured Sentinel^8953:1:1,14047:3:3,21937:9:9^
+13136^6^0^57^58^1451^0.6320^0.5168^6^Hive'Ashi Drone^6300:4:4^
 14516^2^0^0^0^0^0.0000^0.0000^0^^12843:2:2,18749:1:1,18760:2:2^
 14518^1^0^0^0^0^0.0000^0.0000^0^^^
 14519^1^0^0^0^0^0.0000^0.0000^0^^10235:1:1^
@@ -281,6 +287,7 @@ GoldScout-export 6^kv7vdiogutdf^26
 @i^4787^Burning Pitch
 @i^5133^Seeping Gizzard
 @i^5759^Thorium Lockbox
+@i^6300^Husk Fragment
 @i^6530^Nightcrawlers
 @i^7068^Elemental Fire
 @i^7075^Core of Earth
@@ -311,6 +318,7 @@ GoldScout-export 6^kv7vdiogutdf^26
 @i^8948^Dried King Bolete
 @i^8950^Homemade Cherry Pie
 @i^8952^Roasted Quail
+@i^8953^Deep Fried Plantains
 @i^10070^Righteous Armor of the Prophet
 @i^10083^Lord's Crown of the Bear
 @i^10097^Councillor's Circlet of the Sorcerer
@@ -340,6 +348,7 @@ GoldScout-export 6^kv7vdiogutdf^26
 @i^10230^Engraved Breastplate of the Bandit
 @i^10234^Engraved Boots of Stamina
 @i^10235^Engraved Helm of the Boar
+@i^10245^Heavy Lamellar Pauldrons of Intellect
 @i^10251^Master's Gloves of Stamina
 @i^10254^Master's Robe of Frost Protection
 @i^10258^Adventurer's Cape of the Monkey
@@ -556,6 +565,8 @@ GoldScout-export 6^kv7vdiogutdf^26
 @i^20015^Elder Raptor Feathers
 @i^20520^Dark Rune
 @i^21928^Winterspring Blood Sample
+@i^21935^Stable Ectoplasm
+@i^21937^Scorched Ectoplasm
 @i^22207^Sash of the Grand Hunt
 @i^22225^Dragonskin Cowl of Fire Resistance
 @i^22247^Faith Healer's Boots
@@ -659,6 +670,7 @@ GoldScout-export 6^kv7vdiogutdf^26
 @q^4787^0:15:0
 @q^5133^0:15:0
 @q^5759^2:15:0
+@q^6300^0:15:0
 @q^6530^1:0:0
 @q^7068^1:7:1
 @q^7075^1:7:1
@@ -689,6 +701,7 @@ GoldScout-export 6^kv7vdiogutdf^26
 @q^8948^1:0:0
 @q^8950^1:0:0
 @q^8952^1:0:0
+@q^8953^1:0:0
 @q^10070^2:4:0
 @q^10083^2:4:0
 @q^10097^2:4:0
@@ -718,6 +731,7 @@ GoldScout-export 6^kv7vdiogutdf^26
 @q^10230^2:4:0
 @q^10234^2:4:0
 @q^10235^2:4:0
+@q^10245^2:4:0
 @q^10251^2:4:0
 @q^10254^2:4:0
 @q^10258^2:4:0
@@ -934,6 +948,8 @@ GoldScout-export 6^kv7vdiogutdf^26
 @q^20015^0:15:0
 @q^20520^2:7:1
 @q^21928^1:12:0
+@q^21935^1:12:0
+@q^21937^1:12:0
 @q^22207^3:4:0
 @q^22225^3:4:0
 @q^22247^3:4:0
@@ -988,6 +1004,7 @@ GoldScout-export 6^kv7vdiogutdf^26
 @m^1423^Eastern Plaguelands
 @m^1428^Burning Steppes
 @m^1448^Felwood
+@m^1451^Silithus
 @m^1452^Winterspring
 @m^1455^Ironforge
 @m^2482^Mount Hyjal
@@ -1526,7 +1543,13 @@ GoldScout-export 6^kv7vdiogutdf^26
 @a^7433^49:1,50:3
 @a^8523^82:3
 @a^8524^82:3,102:3
-@a^8540^82:3,102:3
+@a^8528^134:1,154:1
+@a^8539^154:1
+@a^8540^82:3,102:3,106:3
+@a^8542^134:2
+@a^12178^212:4
+@a^12179^212:9
+@a^13136^212:6
 @a^14564^82:14,102:11
 @a^16093^208:3
 @a^228609^91:1
