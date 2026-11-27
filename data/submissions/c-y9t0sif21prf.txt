@@ -1,4 +1,4 @@
-GoldScout-export 9^y9t0sif21prf^36
+GoldScout-export 9^y9t0sif21prf^37
 345^1^0^24^24^1433^0.1135^0.4929^1^Fouailleventre^723:1:1,3631:1:1^
 422^7^0^18^19^1433^0.4401^0.7051^7^Dévoreur murloc^730:2:2,1467:1:1,1468:1:1,1817:1:1,3193:1:1,5523:1:1,6289:1:2,248682:1:1^
 423^10^0^15^16^1433^0.1915^0.7431^10^Bâtard des Carmines^2589:1:1,2592:3:3,248684:1:1^
@@ -385,6 +385,16 @@ GoldScout-export 9^y9t0sif21prf^36
 259046^1^0^39^39^2548^0.4327^0.5564^1^Crocilisque d'eau douce^770:1:1^
 259281^1^0^0^0^1415^0.0000^0.0000^0^^275002:1:1^
 260157^1^0^9^10^1426^0.7788^0.6017^1^Ancien léopard des neiges^4814:1:1^
+261306^1^0^0^0^0^0.0000^0.0000^0^^270227:1:1^
+261311^1^0^0^0^0^0.0000^0.0000^0^^271098:1:1^
+261316^1^0^0^0^0^0.0000^0.0000^0^^270230:1:1^
+261319^1^0^0^0^0^0.0000^0.0000^0^^270260:1:1,274286:1:1^
+263389^2^0^0^0^0^0.0000^0.0000^0^^1509:1:1,2589:1:2,275895:1:1^
+263390^4^0^0^0^0^0.0000^0.0000^0^^275895:1:1^
+263396^8^0^0^0^0^0.0000^0.0000^0^^2589:3:8,3651:1:1,4570:1:1,6539:1:1,9747:1:1,9756:1:1,275893:1:1^
+263438^1^0^0^0^0^0.0000^0.0000^0^^4569:1:1^
+263466^1^0^0^0^0^0.0000^0.0000^0^^3375:1:1^
+263470^1^0^0^0^0^0.0000^0.0000^0^^2672:1:1,3207:1:1^
 264773^1^0^0^0^1415^0.0000^0.0000^0^^286428:1:1^
 270196^2^0^12^12^1439^0.4464^0.5817^2^Jai'vhanel^5114:2:2,281038:2:2^
 270294^1^0^21^21^1439^0.5924^0.2293^1^Baron Marinous^279275:1:1^
@@ -442,6 +452,7 @@ GoldScout-export 9^y9t0sif21prf^36
 @i^1497^Cape en calicot
 @i^1499^Pantalon en calicot
 @i^1507^Pantalon déformé en cuir
+@i^1509^Gilet déformé en cuir
 @i^1515^Bâton en bois brut
 @i^1520^Sueur de troll
 @i^1529^Jade
@@ -500,6 +511,7 @@ GoldScout-export 9^y9t0sif21prf^36
 @i^2644^Cape en anneaux distendus
 @i^2649^Ceinture en anneaux fins
 @i^2656^Lorica fine
+@i^2672^Viande de loup maigre
 @i^2674^Chair de clampant
 @i^2675^Pince de clampant
 @i^2677^Côtes de sanglier
@@ -536,12 +548,14 @@ GoldScout-export 9^y9t0sif21prf^36
 @i^3195^Hache de bataille barbare du tigre
 @i^3196^Bâtarde aiguisée du gorille
 @i^3205^Brassards en cuir gravé
+@i^3207^Brassards de chasse
 @i^3281^Gants de bataille en anneaux
 @i^3287^Pantalon tribal
 @i^3291^Lainages ancestraux
 @i^3365^Brassards râpés
 @i^3370^Ceinture en patchwork
 @i^3373^Brassards en patchwork
+@i^3375^Brassards en calicot
 @i^3376^Ceinture en canevas
 @i^3393^Recette : Potion de résistance à la magie mineure
 @i^3401^Ecaille de crocilisque grossière
@@ -554,6 +568,7 @@ GoldScout-export 9^y9t0sif21prf^36
 @i^3631^Défense de Fouailleventre
 @i^3637^Tête de VanCleef
 @i^3644^Brassards barbares en tissu
+@i^3651^Bouclier de vétéran
 @i^3669^Bave gélatineuse
 @i^3670^Grand os visqueux
 @i^3671^Crâne pourrissant
@@ -611,7 +626,8 @@ GoldScout-export 9^y9t0sif21prf^36
 @i^4555^Epaisse queue écailleuse
 @i^4556^Fragment de carapace moucheté
 @i^4562^Hache mortelle de magie
-@i^4570^Maillet de bouleau de guérison
+@i^4569^Marteau fidèle de protection contre les arcanes
+@i^4570^Maillet de bouleau de l'aigle
 @i^4582^Queue fournie soyeuse
 @i^4583^Epaisse crinière
 @i^4584^Grande patte trophée
@@ -700,6 +716,7 @@ GoldScout-export 9^y9t0sif21prf^36
 @i^6469^Venimeux
 @i^6471^Ecaille de déviant parfaite
 @i^6473^Armure du Croc
+@i^6539^Ceinture du saule de courroux ardent
 @i^6540^Pantalon du saule de l'aigle
 @i^6547^Gantelets de soldat d'agilité
 @i^6553^Pantalon de barde d'esprit
@@ -777,6 +794,8 @@ GoldScout-export 9^y9t0sif21prf^36
 @i^9523^Agent durcissant troll
 @i^9639^La main d'Antu'sul
 @i^9640^Poignes de fer de chevalerie
+@i^9747^Pantalon simple d'intelligence
+@i^9756^Chausses de nomade d'agilité
 @i^9776^Bottes de bandit du loup
 @i^9780^Gants de bandit du sanglier
 @i^9883^Pantalon de sorcier de sorcellerie
@@ -917,10 +936,15 @@ GoldScout-export 9^y9t0sif21prf^36
 @i^267086^Œil de Mugg
 @i^267104^Tome du Crépuscule
 @i^267234^Bracelet du Crépuscule
+@i^270227^Sautoir éphémère
+@i^270230^Ceinturon avive-gemme
+@i^270260^Jambières de Dirgehammer
+@i^271098^Plastron de garde golem
 @i^271872^Bâton brisé de l'incinérateur Gar'im
 @i^273137^Seau de Skum
 @i^273289^Pagne ogre
 @i^274268^Carte sombrefer
+@i^274286^Tête de Durgen Mornemartel
 @i^274380^Poignets en chair putréfiée
 @i^274430^Tranchoir de sentinelle de roche
 @i^274431^Bâton de tempête de sable
@@ -935,6 +959,8 @@ GoldScout-export 9^y9t0sif21prf^36
 @i^275002^Regard de la marchande de guerre
 @i^275005^Plastron de harnois de guerre krol'dok
 @i^275010^Chaperon au parfum entêtant
+@i^275893^Courge brûlante
+@i^275895^Écho faiblissant
 @i^277112^Tête de Zum'rah
 @i^277190^Crochet de Githyiss
 @i^278186^Bracelet brillamment poli
@@ -1001,6 +1027,7 @@ GoldScout-export 9^y9t0sif21prf^36
 @q^1497^0:4:0
 @q^1499^0:4:0
 @q^1507^0:4:0
+@q^1509^0:4:0
 @q^1515^0:2:0
 @q^1520^0:15:0
 @q^1529^2:7:1
@@ -1059,6 +1086,7 @@ GoldScout-export 9^y9t0sif21prf^36
 @q^2644^0:4:0
 @q^2649^0:4:0
 @q^2656^0:4:0
+@q^2672^1:7:1
 @q^2674^1:7:1
 @q^2675^1:7:1
 @q^2677^1:7:1
@@ -1095,12 +1123,14 @@ GoldScout-export 9^y9t0sif21prf^36
 @q^3195^2:2:0
 @q^3196^2:2:0
 @q^3205^2:4:0
+@q^3207^1:4:0
 @q^3281^1:4:0
 @q^3287^2:4:0
 @q^3291^2:4:0
 @q^3365^0:4:0
 @q^3370^0:4:0
 @q^3373^0:4:0
+@q^3375^0:4:0
 @q^3376^0:4:0
 @q^3393^1:9:0
 @q^3401^0:15:0
@@ -1113,6 +1143,7 @@ GoldScout-export 9^y9t0sif21prf^36
 @q^3631^1:12:0
 @q^3637^1:12:0
 @q^3644^1:4:0
+@q^3651^2:4:0
 @q^3669^0:15:0
 @q^3670^0:15:0
 @q^3671^0:15:0
@@ -1170,6 +1201,7 @@ GoldScout-export 9^y9t0sif21prf^36
 @q^4555^0:15:0
 @q^4556^0:15:0
 @q^4562^2:2:0
+@q^4569^2:2:0
 @q^4570^2:2:0
 @q^4582^1:12:0
 @q^4583^0:15:0
@@ -1259,6 +1291,7 @@ GoldScout-export 9^y9t0sif21prf^36
 @q^6469^3:2:0
 @q^6471^1:7:1
 @q^6473^3:4:0
+@q^6539^2:4:0
 @q^6540^2:4:0
 @q^6547^2:4:0
 @q^6553^2:4:0
@@ -1336,6 +1369,8 @@ GoldScout-export 9^y9t0sif21prf^36
 @q^9523^1:12:0
 @q^9639^3:2:0
 @q^9640^3:4:0
+@q^9747^2:4:0
+@q^9756^2:4:0
 @q^9776^2:4:0
 @q^9780^2:4:0
 @q^9883^2:4:0
@@ -1476,10 +1511,15 @@ GoldScout-export 9^y9t0sif21prf^36
 @q^267086^1:12:0
 @q^267104^1:12:0
 @q^267234^1:12:0
+@q^270227^3:4:0
+@q^270230^3:4:0
+@q^270260^3:4:0
+@q^271098^3:4:0
 @q^271872^1:12:0
 @q^273137^3:4:0
 @q^273289^3:4:0
 @q^274268^1:12:0
+@q^274286^1:12:0
 @q^274380^3:4:0
 @q^274430^3:2:0
 @q^274431^3:2:0
@@ -1494,6 +1534,8 @@ GoldScout-export 9^y9t0sif21prf^36
 @q^275002^3:4:0
 @q^275005^3:4:0
 @q^275010^3:4:0
+@q^275893^1:15:0
+@q^275895^0:15:0
 @q^277112^1:12:0
 @q^277190^1:12:0
 @q^278186^1:12:0
