@@ -1,4 +1,4 @@
-GoldScout-export 9^1hnmuv2ha560^35
+GoldScout-export 9^1hnmuv2ha560^37
 92^4^0^39^40^1418^0.3461^0.6713^4^Rock Elemental^4553:2:2,4627:3:3,4784:2:2,7067:1:1,7912:2:2^
 98^47^0^17^18^1436^0.6027^0.7412^47^Riverpaw Taskmaster^1179:1:1,1210:1:1,1743:1:1,1792:1:1,2287:2:2,2455:1:1,2589:10:21,2592:10:13,3211:1:1,248683:1:1^
 117^7^0^11^12^1436^0.4366^0.2015^7^Riverpaw Gnoll^1179:1:1,1506:1:1,2589:3:5^
@@ -130,6 +130,14 @@ GoldScout-export 9^1hnmuv2ha560^35
 5044^4^0^36^36^1445^0.4235^0.3816^4^Theramore Skirmisher^1707:1:1,4306:2:6^
 5045^2^0^36^36^1445^0.4231^0.3816^2^Private Hallan^3798:1:1^
 5046^2^0^37^37^1445^0.4229^0.3809^2^Lieutenant Caldwell^^
+5229^14^0^40^41^1444^0.7817^0.3315^14^Gordunni Ogre^4306:4:5,4338:4:6,14773:1:1^
+5232^7^0^42^43^1444^0.7625^0.3043^7^Gordunni Brute^4022:1:1,4338:1:2,4424:1:1^
+5237^10^0^41^42^1444^0.7790^0.3359^10^Gordunni Ogre Mage^4306:2:2,4338:4:6,4599:1:1^
+5249^7^0^40^41^1444^0.7276^0.3774^7^Woodpaw Mongrel^3928:1:1,4306:1:1,4338:2:3,9237:2:2^
+5251^13^0^41^42^1444^0.7275^0.3798^13^Woodpaw Trapper^4306:3:3,4338:2:3,6149:1:1,9237:3:3,262889:1:1^
+5253^12^0^41^42^1444^0.7267^0.3776^12^Woodpaw Brute^4007:1:1,4306:1:2,4338:5:8,4599:1:1,9237:5:5^
+5278^4^0^43^45^1444^0.6954^0.4784^4^Sprite Darter^4460:1:1,8146:1:1,9369:2:2^
+5286^1^0^40^40^1444^0.7263^0.4330^1^Longtooth Runner^4583:1:1,12203:1:1^
 5419^20^0^42^43^1446^0.5165^0.3524^20^Glasshide Basilisk^4092:1:1,4093:5:5,9437:20:20,11386:4:4,11387:1:1^
 5422^17^0^40^41^1446^0.5271^0.3201^17^Scorpid Hunter^9442:17:17,12037:10:10,19935:3:3,19936:3:3,19937:5:5^
 5423^4^0^43^44^1446^0.5028^0.3446^4^Scorpid Tail Lasher^9442:3:3,12037:1:1,19936:3:3^
@@ -275,6 +283,8 @@ GoldScout-export 9^1hnmuv2ha560^35
 @i^3937^Crochet Boots
 @i^3941^Crochet Pants
 @i^3962^Thick Leather Boots
+@i^4007^Overlinked Chain Armor
+@i^4022^Crushing Maul
 @i^4025^Balanced Long Bow
 @i^4092^Prismatic Basilisk Scale
 @i^4093^Large Basilisk Tail
@@ -287,6 +297,7 @@ GoldScout-export 9^1hnmuv2ha560^35
 @i^4424^Scroll of Spirit III
 @i^4428^Spider Palp
 @i^4435^Mote of Myzrael
+@i^4460^Ripped Wing Webbing
 @i^4461^Raptor Hide
 @i^4469^Rod of Order
 @i^4480^Thundering Charm
@@ -367,6 +378,8 @@ GoldScout-export 9^1hnmuv2ha560^35
 @i^8401^Pattern: Tough Scorpid Leggings
 @i^8483^Wastewander Water Pouch
 @i^8723^Caliph Scorpidsting's Head
+@i^9237^Woodpaw Gnoll Mane
+@i^9369^Iridescent Sprite Darter Wing
 @i^9385^Archaic Defender
 @i^9437^Untested Basilisk Sample
 @i^9439^Untested Hyena Sample
@@ -391,6 +404,7 @@ GoldScout-export 9^1hnmuv2ha560^35
 @i^12208^Tender Wolf Meat
 @i^14200^Thistlefur Cap of the Sorcerer
 @i^14252^Lunar Coronet of the Sorcerer
+@i^14773^Ravager's Cord
 @i^15150^Ghostwalker Pads of the Eagle
 @i^15249^Polished Zweihander of the Bandit
 @i^15322^Smoothbore Gun
@@ -557,6 +571,8 @@ GoldScout-export 9^1hnmuv2ha560^35
 @q^3937^0:4:0
 @q^3941^0:4:0
 @q^3962^0:4:0
+@q^4007^0:4:0
+@q^4022^0:2:0
 @q^4025^0:2:0
 @q^4092^0:15:0
 @q^4093^0:15:0
@@ -569,6 +585,7 @@ GoldScout-export 9^1hnmuv2ha560^35
 @q^4424^1:0:0
 @q^4428^0:15:0
 @q^4435^1:12:0
+@q^4460^0:15:0
 @q^4461^1:7:1
 @q^4469^1:12:0
 @q^4480^1:0:0
@@ -649,6 +666,8 @@ GoldScout-export 9^1hnmuv2ha560^35
 @q^8401^2:9:0
 @q^8483^1:12:0
 @q^8723^1:12:0
+@q^9237^1:12:0
+@q^9369^1:12:0
 @q^9385^3:2:0
 @q^9437^1:12:0
 @q^9439^1:12:0
@@ -673,6 +692,7 @@ GoldScout-export 9^1hnmuv2ha560^35
 @q^12208^1:7:1
 @q^14200^2:4:0
 @q^14252^2:4:0
+@q^14773^2:4:0
 @q^15150^2:4:0
 @q^15249^2:2:0
 @q^15322^2:2:0
@@ -724,6 +744,7 @@ GoldScout-export 9^1hnmuv2ha560^35
 @m^1436^Westfall
 @m^1437^Wetlands
 @m^1440^Ashenvale
+@m^1444^Feralas
 @m^1445^Dustwallow Marsh
 @m^1446^Tanaris
 @a^92^142:1,288:1,308:2
@@ -857,6 +878,14 @@ GoldScout-export 9^1hnmuv2ha560^35
 @a^5044^148:4
 @a^5045^148:2
 @a^5046^148:2
+@a^5229^115:1,135:10,136:2,156:1
+@a^5232^114:2,115:3,135:1,136:1
+@a^5237^115:1,135:7,136:1,156:1
+@a^5249^154:7
+@a^5251^154:13
+@a^5253^154:12
+@a^5278^193:2,194:2
+@a^5286^174:1
 @a^5419^128:2,129:3,130:3,131:3,150:7,151:2
 @a^5422^109:6,129:1,131:5,150:3,151:2
 @a^5423^109:2,150:1,171:1
@@ -876,6 +905,13 @@ GoldScout-export 9^1hnmuv2ha560^35
 @a^8996^132:1,152:5,153:1,172:1
 @a^14221^172:1
 @a^266357^192:1
+@t^5229^14:615
+@t^5232^7:514
+@t^5237^10:502
+@t^5249^7:254
+@t^5251^13:348
+@t^5253^11:200
+@t^5278^3:116
 @t^5419^20:829
 @t^5422^16:846
 @t^5423^4:409
