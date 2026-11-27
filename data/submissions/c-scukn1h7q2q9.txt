@@ -1,4 +1,4 @@
-GoldScout-export 9^scukn1h7q2q9^9
+GoldScout-export 9^scukn1h7q2q9^10
 3234^1^0^14^15^1413^0.5400^0.4154^1^Lost Barrens Kodo^4896:1:1^
 3239^2^0^20^21^1413^0.4418^0.6156^2^Thunderhead^5143:2:2,5470:1:1^
 3240^5^0^18^19^1413^0.4658^0.4949^5^Stormsnout^4895:1:1,5128:1:1,5143:1:1,5470:2:2^
@@ -34,6 +34,7 @@ GoldScout-export 9^scukn1h7q2q9^9
 3471^1^0^16^16^1413^0.5291^0.1060^1^Tinkerer Sniggles^5089:1:1^
 3474^1^0^22^22^1413^0.4716^0.5091^1^Lakota'mani^5099:1:1^
 3475^1^0^16^16^1413^0.5585^0.1714^1^Echeyakee^5100:1:1^
+3476^1^0^27^27^1413^0.6527^0.4691^1^Isha Awak^5104:1:1,5516:1:1,5524:1:1^
 3630^3^0^15^16^1414^0.5191^0.5484^3^Deviate Coiler^6444:2:2,14097:1:1^
 3632^8^0^15^16^1414^0.5192^0.5489^8^Deviate Creeper^3180:1:1,5124:3:3,6443:2:2,6471:1:1,14097:1:1^
 3633^2^0^16^17^1414^0.5240^0.5475^2^Deviate Slayer^5124:2:2,6470:1:1^
@@ -74,6 +75,7 @@ GoldScout-export 9^scukn1h7q2q9^9
 5864^1^0^22^22^1413^0.4268^0.4786^1^Swinegart Spearhide^6562:1:1^
 6020^1^0^18^19^1413^0.6515^0.4535^1^Slimeshell Makrura^^
 8886^6^0^0^0^0^0.0000^0.0000^0^^6443:2:2,6444:4:4^
+9524^1^0^16^16^1413^0.4484^0.2818^1^Kolkar Invader^1179:1:1,2589:1:1^
 209797^1^0^20^20^1413^0.6459^0.3822^1^Bruuz^537:1:1,253710:1:1^
 267307^1^0^20^20^1413^0.5753^0.2734^1^Chol'aruk^276070:1:1^
 267308^7^0^18^19^1413^0.5785^0.2589^7^Razormane Flesheater^2589:2:2,3608:1:1^
@@ -85,6 +87,7 @@ GoldScout-export 9^scukn1h7q2q9^9
 @i^858^Lesser Healing Potion
 @i^954^Scroll of Strength
 @i^1081^Crisp Spider Meat
+@i^1179^Ice Cold Milk
 @i^1180^Scroll of Stamina
 @i^1205^Melon Juice
 @i^1206^Moss Agate
@@ -163,6 +166,7 @@ GoldScout-export 9^scukn1h7q2q9^9
 @i^5099^Hoof of Lakota'mani
 @i^5100^Echeyakee's Hide
 @i^5101^Ishamuhale's Fang
+@i^5104^Heart of Isha Awak
 @i^5120^Long Tail Hair
 @i^5123^Steel Arrowhead
 @i^5124^Small Raptor Tooth
@@ -174,7 +178,9 @@ GoldScout-export 9^scukn1h7q2q9^9
 @i^5404^Serpent's Shoulders
 @i^5469^Strider Meat
 @i^5470^Thunder Lizard Tail
+@i^5516^Threshadon Fang
 @i^5523^Small Barnacled Clam
+@i^5524^Thick-shelled Clam
 @i^5574^White Leather Bag
 @i^5970^Serpent Gloves
 @i^6361^Raw Rainbow Fin Albacore
@@ -244,6 +250,7 @@ GoldScout-export 9^scukn1h7q2q9^9
 @q^858^1:0:0
 @q^954^1:0:0
 @q^1081^1:7:1
+@q^1179^1:0:0
 @q^1180^1:0:0
 @q^1205^1:0:0
 @q^1206^2:7:1
@@ -322,6 +329,7 @@ GoldScout-export 9^scukn1h7q2q9^9
 @q^5099^1:12:0
 @q^5100^1:12:0
 @q^5101^1:12:0
+@q^5104^1:12:0
 @q^5120^0:15:0
 @q^5123^0:15:0
 @q^5124^0:15:0
@@ -333,7 +341,9 @@ GoldScout-export 9^scukn1h7q2q9^9
 @q^5404^3:4:0
 @q^5469^1:7:1
 @q^5470^1:7:1
+@q^5516^0:2:0
 @q^5523^1:7:0
+@q^5524^1:7:0
 @q^5574^1:1:0
 @q^5970^3:4:0
 @q^6361^1:7:1
@@ -800,6 +810,7 @@ GoldScout-export 9^scukn1h7q2q9^9
 @a^3471^50:1
 @a^3474^209:1
 @a^3475^71:1
+@a^3476^193:1
 @a^3630^210:2,230:1
 @a^3632^210:6,230:2
 @a^3633^210:2
@@ -818,6 +829,7 @@ GoldScout-export 9^scukn1h7q2q9^9
 @a^5863^209:1
 @a^5864^188:1
 @a^6020^193:1
+@a^9524^108:1
 @a^209797^152:1
 @a^267307^111:1
 @a^267308^91:1,111:6
