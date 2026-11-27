@@ -1,4 +1,4 @@
-GoldScout-export 7^s9r7ooqna9x5^18
+GoldScout-export 9^s9r7ooqna9x5^20
 587^4^0^33^34^1434^0.3047^0.1952^4^Krieger der Bloodscalp^1520:1:1,2730:1:1,3779:1:1,3915:1:1,4306:2:3^
 588^8^0^34^35^1434^0.2494^0.1301^8^Späher der Bloodscalp^1519:2:2,1710:1:1,2725:1:1,3771:1:1,3901:2:2,3915:5:5,4306:6:9^
 595^16^0^34^35^1434^0.2443^0.1254^16^Jäger der Bloodscalp^1519:3:3,2592:1:1,3901:2:2,3915:4:4,4306:6:11,213543:1:1^
@@ -34,11 +34,21 @@ GoldScout-export 7^s9r7ooqna9x5^18
 1150^10^0^30^31^1434^0.3765^0.1160^10^Flusskrokilisk^770:4:4,3667:5:5,4053:2:2,12037:3:3^
 1152^12^0^35^36^1434^0.4058^0.2095^12^Schnappkieferkrokilisk^770:6:6,3667:6:6,4104:5:5,12037:3:3^
 2242^4^0^35^36^1416^0.6114^0.4563^4^Spion des Syndikats^1529:1:1,1710:2:2,2592:1:1,4306:1:2,213547:1:1^
+2243^1^0^37^37^1416^0.5346^0.1971^1^Wachposten des Syndikats^255727:1:1^
+2246^5^0^38^39^1416^0.3932^0.1555^5^Auftragsmörderin des Syndikats^4306:2:3^
+2247^2^0^40^40^1416^0.4062^0.1563^2^Vollstreckerin des Syndikats^6986:1:1^
 2250^2^0^32^33^1416^0.3876^0.7020^2^Bergyeti^^
 2251^4^0^33^34^1416^0.4023^0.6460^4^Riesenyeti^5637:1:1^
+2252^1^0^34^34^1416^0.4589^0.6259^1^Crushridge-Oger^^
+2306^1^0^40^40^1416^0.5348^0.2036^1^Baron Vardus^3626:1:1^
+2318^1^0^35^35^1416^0.5322^0.2090^1^Schattenmagier der Arguswacht^^
 2319^3^0^34^35^1416^0.6102^0.4356^3^Hexerin des Syndikats^4306:1:2^
+2320^1^0^40^40^1416^0.3945^0.1506^1^Nagaz^4306:1:2^
+2358^6^0^32^33^1416^0.2233^0.5464^6^Beschwörerin von Dalaran^4306:1:1^
+2359^7^0^32^33^1416^0.2373^0.5610^7^Elementarsklave^2838:3:4,3042:1:1,3715:4:4,4553:2:2,4784:5:5,6407:1:1,8150:5:5^
 2406^1^0^32^32^1416^0.3328^0.7993^1^Berglöwe^5810:1:1^
 2431^1^0^37^37^1416^0.6305^0.4323^1^Kerkermeister Borhuin^3704:1:1,4338:1:1,7444:1:1^
+2572^2^0^35^35^1417^0.7839^0.3778^2^Kobold der Trockenstoppel^4306:1:1,4435:1:1^
 2667^4^0^36^37^1434^0.3709^0.3096^4^Zauberschutz von Laze^^
 2959^2^0^8^8^1456^0.2558^0.4337^2^Präriepirscher^2672:1:1,3300:1:1^
 2960^2^0^9^10^1412^0.3931^0.2542^2^Präriewolfalpha^2672:1:1,3299:1:1,15475:1:1^
@@ -168,6 +178,7 @@ GoldScout-export 7^s9r7ooqna9x5^18
 @i^2750^Die Grünen Hügel des Schlingendorntals - Seite 26
 @i^2751^Die Grünen Hügel des Schlingendorntals - Seite 27
 @i^2838^Schwerer Stein
+@i^3042^BKP Spatz Kleinkaliber
 @i^3167^Dickes Spinnenhaar
 @i^3174^Spinnensekret
 @i^3299^Gerissener Eckzahn
@@ -175,10 +186,12 @@ GoldScout-export 7^s9r7ooqna9x5^18
 @i^3385^Geringer Manatrank
 @i^3399^Geierkralle
 @i^3402^Weicher Fellflicken
+@i^3626^Kopf von Baron Vardus
 @i^3667^Zartes Krokiliskenfleisch
 @i^3685^Raptorei
 @i^3704^Verrosteter Eisenschlüssel
 @i^3712^Schildkrötenfleisch
+@i^3715^Armschienen der Erdbindung
 @i^3771^Wildschweinschenkel
 @i^3779^Kräftige Kriegsaxt
 @i^3780^Langläufige Muskete
@@ -209,7 +222,9 @@ GoldScout-export 7^s9r7ooqna9x5^18
 @i^4306^Seidenstoff
 @i^4337^Dicke Spinnenseide
 @i^4338^Magiestoff
+@i^4435^Korn von Myzrael
 @i^4461^Raptorbalg
+@i^4553^Gezacktes Steinstück
 @i^4555^Dicker geschuppter Schwanz
 @i^4556^Getupftes Muschelschalenfragment
 @i^4585^Tropfender Spinnenunterkiefer
@@ -250,14 +265,17 @@ GoldScout-export 7^s9r7ooqna9x5^18
 @i^6302^Zierlicher Insektenflügel
 @i^6308^Roher Stoppelfühlerwels
 @i^6362^Roher Steinschuppenkabeljau
+@i^6407^Nachthauchgelenkbänder
 @i^6416^Aurorastiefel
 @i^6441^Schattenpirscherskalp
 @i^6442^Orakelkristall
 @i^6530^Nachtkriecher
+@i^6986^Purpurroter Lotus
 @i^7072^Nagaschuppe
 @i^7331^Phalanxschild der Willenskraft
 @i^7444^Schildwachenstiefel des Frostschutzes
 @i^8146^Tückische Klaue
+@i^8150^Tiefsteinsalz
 @i^8746^Geflochtene Kutte
 @i^8748^Doppelpanzerhelmkappe
 @i^10285^Schattenseide
@@ -300,6 +318,7 @@ GoldScout-export 7^s9r7ooqna9x5^18
 @i^248705^Abgefangene Kiste: Stoffe des Gesellen
 @i^248709^Abgefangene Kiste: Barren des Experten
 @i^254432^Geschnitztes Zentaurentotem
+@i^255727^Handbuch: Überragende Schlammpackung
 @i^262888^Versiegelte Verfügung des Gesellen
 @i^262889^Versiegelte Verfügung des Experten
 @i^273001^Toxinprobe der Düsteranhöhe
@@ -344,6 +363,7 @@ GoldScout-export 7^s9r7ooqna9x5^18
 @q^2750^1:12:0
 @q^2751^1:12:0
 @q^2838^1:7:1
+@q^3042^2:2:0
 @q^3167^0:15:0
 @q^3174^1:7:1
 @q^3299^0:15:0
@@ -351,10 +371,12 @@ GoldScout-export 7^s9r7ooqna9x5^18
 @q^3385^1:0:0
 @q^3399^0:15:0
 @q^3402^0:15:0
+@q^3626^1:12:0
 @q^3667^1:7:1
 @q^3685^1:7:1
 @q^3704^1:13:0
 @q^3712^1:7:1
+@q^3715^1:12:0
 @q^3771^1:0:0
 @q^3779^0:2:0
 @q^3780^0:2:0
@@ -385,7 +407,9 @@ GoldScout-export 7^s9r7ooqna9x5^18
 @q^4306^1:7:1
 @q^4337^1:7:1
 @q^4338^1:7:1
+@q^4435^1:12:0
 @q^4461^1:7:1
+@q^4553^0:15:0
 @q^4555^0:15:0
 @q^4556^0:15:0
 @q^4585^0:15:0
@@ -426,14 +450,17 @@ GoldScout-export 7^s9r7ooqna9x5^18
 @q^6302^0:15:0
 @q^6308^1:7:1
 @q^6362^1:7:1
+@q^6407^2:4:0
 @q^6416^2:4:0
 @q^6441^1:12:0
 @q^6442^1:12:0
 @q^6530^1:0:0
+@q^6986^0:15:0
 @q^7072^1:7:1
 @q^7331^2:4:0
 @q^7444^2:4:0
 @q^8146^1:7:1
+@q^8150^1:7:1
 @q^8746^0:4:0
 @q^8748^0:4:0
 @q^10285^1:7:1
@@ -476,6 +503,7 @@ GoldScout-export 7^s9r7ooqna9x5^18
 @q^248705^2:0:1
 @q^248709^2:0:1
 @q^254432^2:15:0
+@q^255727^2:9:0
 @q^262888^3:0:0
 @q^262889^3:0:0
 @q^273001^1:12:0
@@ -485,6 +513,7 @@ GoldScout-export 7^s9r7ooqna9x5^18
 @q^279186^1:12:0
 @m^1412^Mulgore
 @m^1416^Alteracgebirge
+@m^1417^Arathihochland
 @m^1434^Schlingendorntal
 @m^1441^Tausend Nadeln
 @m^1443^Desolace
@@ -1325,11 +1354,21 @@ GoldScout-export 7^s9r7ooqna9x5^18
 @a^1150^26:3,46:1,47:1,48:4,67:1
 @a^1152^67:1,68:4,87:2,88:3,107:1,108:1
 @a^2242^172:2,192:2
+@a^2243^70:1
+@a^2246^47:1,67:2,68:2
+@a^2247^67:1,68:1
 @a^2250^267:1,287:1
 @a^2251^248:2,267:2
+@a^2252^249:1
+@a^2306^90:1
+@a^2318^90:1
 @a^2319^172:3
+@a^2320^67:1
+@a^2358^203:1,204:2,224:3
+@a^2359^204:2,224:4,225:1
 @a^2406^306:1
 @a^2431^172:1
+@a^2572^155:2
 @a^2667^127:4
 @a^2959^165:1,184:1
 @a^2960^87:1,107:1
@@ -1422,16 +1461,7 @@ GoldScout-export 7^s9r7ooqna9x5^18
 @a^264083^26:1,46:4
 @a^264096^26:3
 @a^270094^231:1
-@t^2242^3:132
-@t^2319^3:219
-@t^2431^1:71
-@t^4342^1:71
-@t^4351^6:294
-@t^4376^2:188
-@t^4411^6:377
-@t^4413^3:120
-@t^4414^1:120
-@t^4834^8:341
+@t^2572^1:34
 @f^1454^0^39^10^6289:24:24,6291:6:6,6308:9:9^113:2,133:14,134:23
 @f^1458^0^17^49^6289:6:6,6291:2:2,6297:6:6,6299:1:1,6308:2:2^192:11,193:6
 @l^0^deDE
