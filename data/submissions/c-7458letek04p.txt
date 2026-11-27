@@ -1,6 +1,7 @@
-GoldScout-export 7^7458letek04p^3
+GoldScout-export 7^7458letek04p^4
 412^1^0^35^35^1431^0.7450^0.4759^1^Kleiner^3360:1:1,3801:1:1^
-683^1^0^30^30^1434^0.4207^0.0945^1^Junger Panther^^
+683^2^0^30^31^1434^0.3973^0.0899^2^Junger Panther^^
+688^1^0^32^32^1434^0.3669^0.0829^1^Steinmagenbasilisk^1701:1:1^
 689^1^0^34^34^1434^0.4750^0.0915^1^Kristallrückenbasilisk^5637:1:1^
 937^17^0^32^33^1434^0.4532^0.1035^17^Kurzens Dschungelkämpfer^2751:1:1,4306:4:5^
 938^23^0^34^35^1434^0.4575^0.0805^23^Kurzens Kommandosoldat^1707:1:1,1708:1:1,2592:1:1,3808:1:1,4306:6:8,5788:1:1^
@@ -16,6 +17,7 @@ GoldScout-export 7^7458letek04p^3
 11748^1^0^40^40^1434^0.3830^0.0494^1^Samantha Swifthoof^^
 @i^929^Heiltrank
 @i^1464^Bussardkralle
+@i^1701^Geschwungene Basiliskenklaue
 @i^1707^Brie aus Stormwind
 @i^1708^Süßer Nektar
 @i^1710^Großer Heiltrank
@@ -48,6 +50,7 @@ GoldScout-export 7^7458letek04p^3
 @i^216616^Lagerkäfigschlüssel
 @q^929^1:0:0
 @q^1464^0:15:0
+@q^1701^0:15:0
 @q^1707^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
@@ -86,7 +89,8 @@ GoldScout-export 7^7458letek04p^3
 @c^279966^
 @c^279967^
 @a^412^194:1
-@a^683^28:1
+@a^683^27:1,28:1
+@a^688^27:1
 @a^689^29:1
 @a^937^28:3,29:2,48:4,49:8
 @a^938^28:5,29:18
@@ -100,6 +104,7 @@ GoldScout-export 7^7458letek04p^3
 @a^2829^112:1,132:1
 @a^6013^208:1
 @a^11748^7:1
+@t^688^1:33
 @t^689^1:27
 @t^937^16:651
 @t^938^22:604
