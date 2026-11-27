@@ -1,4 +1,4 @@
-GoldScout-export 9^9wdquybkmz1n^21
+GoldScout-export 9^9wdquybkmz1n^22
 1547^1^0^5^6^1420^0.6934^0.6399^1^Decrepit Darkhound^2672:1:1,3300:1:1^
 1548^2^0^7^8^1420^0.5323^0.7291^2^Cursed Darkhound^2672:2:2^
 1765^6^0^10^11^1421^0.5326^0.2983^5^Worg^2672:6:6,5635:1:1^
@@ -64,15 +64,17 @@ GoldScout-export 9^9wdquybkmz1n^21
 3266^1^0^12^12^1413^0.5881^0.2536^1^Razormane Defender^1181:1:1^
 3267^8^0^10^11^1413^0.5529^0.2653^8^Razormane Water Seeker^2589:4:10,4537:1:1^
 3268^8^0^10^11^1413^0.5466^0.2519^8^Razormane Thornweaver^1733:1:1,2589:2:3,4537:1:1^
-3272^9^0^12^13^1413^0.4376^0.2244^9^Kolkar Wrangler^1179:1:1,1515:1:1,2455:1:1,2589:5:10,5020:1:1,5030:4:4,211787:1:1^
-3273^6^0^13^14^1413^0.4384^0.2234^6^Kolkar Stormer^2589:2:4,5030:3:3^
+3272^20^0^12^13^1413^0.4440^0.2338^20^Kolkar Wrangler^818:1:1,955:1:1,1179:1:1,1498:1:1,1503:1:1,1512:1:1,1515:1:1,2455:1:1,2589:8:16,5020:2:2,5030:9:9,211787:1:1^
+3273^13^0^13^14^1413^0.4388^0.2277^13^Kolkar Stormer^858:1:1,1179:1:1,1513:1:1,2589:3:6,5030:5:5^
+3278^1^0^17^17^1413^0.3798^0.1705^1^Witchwing Slayer^2287:1:1,5064:1:1,17056:1:1^
 3379^3^0^10^10^1413^0.4826^0.1891^3^Burning Blade Bruiser^2589:1:3^
 3380^3^0^11^12^1413^0.4825^0.1897^3^Burning Blade Acolyte^211780:1:1^
 3381^13^0^12^13^1413^0.6367^0.4731^13^Southsea Brigand^414:3:3,1497:1:1,2589:6:12,5069:1:1^
 3382^10^0^13^14^1413^0.6331^0.4812^10^Southsea Cannoneer^1179:1:1,1507:1:1,1733:1:1,2589:3:5^
 3383^3^0^14^15^1413^0.6231^0.4477^3^Southsea Cutthroat^1504:1:1,1514:1:1^
 3384^3^0^14^14^1413^0.6217^0.4478^3^Southsea Privateer^5498:1:1^
-3394^1^0^16^16^1413^0.4281^0.2358^1^Barak Kodobane^5022:1:1^
+3394^2^0^16^16^1413^0.4283^0.2353^2^Barak Kodobane^5022:1:1,5030:1:1,248683:1:1^
+3425^7^0^14^15^1413^0.4223^0.2899^7^Savannah Prowler^4564:1:1,4813:1:1,5096:7:7^
 3426^1^0^17^17^1413^0.6082^0.3527^1^Zhevra Charger^5086:1:1^
 3467^1^0^16^16^1413^0.6440^0.4642^1^Baron Longshore^5084:1:1^
 3566^13^0^9^9^1412^0.4745^0.2764^13^Flatland Prowler^4813:3:3,4814:9:9,5203:4:4,8181:1:1^
@@ -82,6 +84,7 @@ GoldScout-export 9^9wdquybkmz1n^21
 6494^1^0^13^13^1413^0.6421^0.4445^1^Tazan^2589:1:1^
 8554^1^0^5^5^1412^0.6064^0.7825^1^Chief Sharptusk Thornmantle^10459:1:1^
 8996^4^0^10^11^1411^0.5324^0.0788^4^Voidwalker Minion^^
+9523^1^0^16^16^1413^0.4509^0.2614^1^Kolkar Stormseer^^
 12138^1^0^12^12^1413^0.4197^0.6093^1^Lunaclaw^17056:1:1^
 12319^1^0^14^14^1413^0.4851^0.1869^1^Burning Blade Toxicologist^2589:1:1,2778:1:1^
 12320^2^0^13^13^1413^0.4851^0.1869^2^Burning Blade Crusher^^
@@ -98,6 +101,9 @@ GoldScout-export 9^9wdquybkmz1n^21
 @i^730^Murloc Eye
 @i^774^Malachite
 @i^805^Small Red Pouch
+@i^818^Tigerseye
+@i^858^Lesser Healing Potion
+@i^955^Scroll of Intellect
 @i^1179^Ice Cold Milk
 @i^1181^Scroll of Spirit
 @i^1367^Ragged Leather Boots
@@ -116,16 +122,21 @@ GoldScout-export 9^9wdquybkmz1n^21
 @i^1427^Patchwork Shoes
 @i^1430^Patchwork Gloves
 @i^1497^Calico Cloak
+@i^1498^Calico Gloves
 @i^1499^Calico Pants
+@i^1503^Warped Leather Boots
 @i^1504^Warped Leather Bracers
 @i^1507^Warped Leather Pants
 @i^1511^Commoner's Sword
+@i^1512^Crude Battle Axe
+@i^1513^Old Greatsword
 @i^1514^Rusty Warhammer
 @i^1515^Rough Wooden Staff
 @i^1516^Worn Hatchet
 @i^1733^Worn Cloak
 @i^2138^Sharpened Letter Opener
 @i^2211^Bent Large Shield
+@i^2287^Haunch of Meat
 @i^2455^Minor Mana Potion
 @i^2589^Linen Cloth
 @i^2644^Loose Chain Cloak
@@ -158,6 +169,7 @@ GoldScout-export 9^9wdquybkmz1n^21
 @i^4537^Tel'Abim Banana
 @i^4540^Tough Hunk of Bread
 @i^4562^Severing Axe of the Eagle
+@i^4564^Spiked Club of Spirit
 @i^4566^Sturdy Quarterstaff of the Beast
 @i^4605^Red-speckled Mushroom
 @i^4663^Journeyman's Belt
@@ -196,10 +208,12 @@ GoldScout-export 9^9wdquybkmz1n^21
 @i^5022^Kodobane's Head
 @i^5030^Centaur Bracers
 @i^5062^Raptor Head
+@i^5064^Witchwing Talon
 @i^5069^Fire Wand
 @i^5084^Baron Longshore's Head
 @i^5086^Zhevra Hooves
 @i^5087^Plainstrider Beak
+@i^5096^Prowler Claws
 @i^5114^Severed Talon
 @i^5118^Large Flat Tooth
 @i^5119^Fine Loose Hair
@@ -250,6 +264,7 @@ GoldScout-export 9^9wdquybkmz1n^21
 @i^211785^Scroll: CWAL
 @i^211786^Scroll: CHAP BALK WELLES
 @i^211787^Scroll: LOWER PING WHOMEVER
+@i^248683^Waylaid Crate: Apprentice Ore
 @i^250187^Recipe: Tasty Raptor Bites
 @i^270302^Chakuyak's Pelt
 @i^275851^Necrotic Crystal Fragment
@@ -264,6 +279,9 @@ GoldScout-export 9^9wdquybkmz1n^21
 @q^730^1:7:1
 @q^774^2:7:1
 @q^805^1:1:0
+@q^818^2:7:1
+@q^858^1:0:0
+@q^955^1:0:0
 @q^1179^1:0:0
 @q^1181^1:0:0
 @q^1367^0:4:0
@@ -282,16 +300,21 @@ GoldScout-export 9^9wdquybkmz1n^21
 @q^1427^0:4:0
 @q^1430^0:4:0
 @q^1497^0:4:0
+@q^1498^0:4:0
 @q^1499^0:4:0
+@q^1503^0:4:0
 @q^1504^0:4:0
 @q^1507^0:4:0
 @q^1511^0:2:0
+@q^1512^0:2:0
+@q^1513^0:2:0
 @q^1514^0:2:0
 @q^1515^0:2:0
 @q^1516^0:2:0
 @q^1733^0:4:0
 @q^2138^0:2:0
 @q^2211^0:4:0
+@q^2287^1:0:0
 @q^2455^1:0:0
 @q^2589^1:7:1
 @q^2644^0:4:0
@@ -324,6 +347,7 @@ GoldScout-export 9^9wdquybkmz1n^21
 @q^4537^1:0:0
 @q^4540^1:0:0
 @q^4562^2:2:0
+@q^4564^2:2:0
 @q^4566^2:2:0
 @q^4605^1:0:0
 @q^4663^1:4:0
@@ -362,10 +386,12 @@ GoldScout-export 9^9wdquybkmz1n^21
 @q^5022^1:12:0
 @q^5030^1:12:0
 @q^5062^1:12:0
+@q^5064^1:12:0
 @q^5069^2:2:0
 @q^5084^1:12:0
 @q^5086^1:12:0
 @q^5087^1:12:0
+@q^5096^1:12:0
 @q^5114^0:15:0
 @q^5118^0:15:0
 @q^5119^0:15:0
@@ -416,6 +442,7 @@ GoldScout-export 9^9wdquybkmz1n^21
 @q^211785^1:0:0
 @q^211786^1:0:0
 @q^211787^1:0:0
+@q^248683^1:0:1
 @q^250187^1:9:0
 @q^270302^1:12:0
 @q^275851^1:12:0
@@ -1258,15 +1285,17 @@ GoldScout-export 9^9wdquybkmz1n^21
 @a^3266^111:1
 @a^3267^110:2,111:6
 @a^3268^90:3,110:3,111:2
-@a^3272^88:9
-@a^3273^88:6
+@a^3272^88:13,89:3,109:4
+@a^3273^88:12,89:1
+@a^3278^67:1
 @a^3379^69:3
 @a^3380^69:3
 @a^3381^172:4,192:7,212:2
 @a^3382^172:2,192:7,212:1
 @a^3383^172:2,192:1
 @a^3384^172:2,192:1
-@a^3394^88:1
+@a^3394^88:2
+@a^3425^108:7
 @a^3426^152:1
 @a^3467^192:1
 @a^3566^88:3,108:5,110:1,130:3,131:1
@@ -1276,6 +1305,7 @@ GoldScout-export 9^9wdquybkmz1n^21
 @a^6494^172:1
 @a^8554^312:1
 @a^8996^30:4
+@a^9523^109:1
 @a^12138^248:1
 @a^12319^69:1
 @a^12320^69:2
@@ -1294,20 +1324,23 @@ GoldScout-export 9^9wdquybkmz1n^21
 @t^3266^1:262
 @t^3267^8:258
 @t^3268^8:472
-@t^3272^9:464
-@t^3273^6:515
+@t^3272^19:784
+@t^3273^13:880
+@t^3278^1:176
 @t^3379^3:55
 @t^3380^2:34
 @t^3381^12:1133
 @t^3382^9:282
 @t^3383^3:115
 @t^3384^3:140
-@t^3394^1:69
+@t^3394^2:86
+@t^3425^7:473
 @t^3426^1:134
 @t^3467^1:2
 @t^3939^4:104
 @t^4127^1:25
 @t^6494^1:3
+@t^9523^1:46
 @t^12319^1:1
 @t^12320^2:69
 @f^1412^0^75^1^2455:1:1,6289:29:29,6291:45:45^229:38,248:37
