@@ -7,7 +7,7 @@ releases add their own line automatically.
 
 ## Unreleased
 
-## v0.12.57
+## v0.12.60
 
 - **No more high-level dungeon farms at your level:** inside dungeons the game hides a mob's level, so most dungeon mobs have none in GoldScout's data. With **Show dungeon drops** on, the Farm tab listed them at your own level, so a level 31 character saw Stratholme bosses. A mob of unknown level is now listed only with **All levels** on, without a level.
 
