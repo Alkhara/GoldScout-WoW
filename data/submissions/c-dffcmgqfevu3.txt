@@ -1,4 +1,4 @@
-GoldScout-export 9^dffcmgqfevu3^21
+GoldScout-export 9^dffcmgqfevu3^22
 94^1^0^5^6^1429^0.4364^0.5708^1^Defias Cutpurse^1369:1:1^
 1853^1^0^0^0^0^0.0000^0.0000^0^^^
 7027^1^0^57^57^1428^0.4308^0.3730^1^Blackrock Slayer^^
@@ -118,6 +118,10 @@ GoldScout-export 9^dffcmgqfevu3^21
 11582^1^0^0^0^0^0.0000^0.0000^0^^^
 11598^1^0^0^0^0^0.0000^0.0000^0^^8948:1:1^
 11622^1^0^0^0^0^0.0000^0.0000^0^^16711:1:1^
+12178^8^0^55^56^1451^0.6099^0.5318^8^Tortured Druid^3951:1:1,8766:1:1,14047:1:1,21937:8:8^
+12179^6^0^56^57^1451^0.6087^0.5279^6^Tortured Sentinel^4500:1:1,14047:1:1,21937:5:5^
+13136^2^0^57^58^1451^0.6104^0.5333^2^Hive'Ashi Drone^6300:1:1,20461:1:1,20500:1:1^
+13301^2^0^57^57^1451^0.6095^0.5296^2^Hive'Ashi Ambusher^6302:1:1,248696:1:1^
 16093^2^0^60^60^1455^0.4298^0.5234^2^Spectral Stalker^^
 243509^4^0^56^56^2482^0.6969^0.7519^4^Noxious Slime^8082:1:1^
 244525^2^0^55^56^2482^0.6399^0.8227^2^Hyjal Bear^11408:1:1^
@@ -173,6 +177,7 @@ GoldScout-export 9^dffcmgqfevu3^21
 @i^3914^Journeyman's Backpack
 @i^3945^Twill Boots
 @i^3947^Twill Cloak
+@i^3951^Twill Vest
 @i^3973^Smooth Leather Gloves
 @i^3987^Deflecting Tower
 @i^3998^Laminated Scale Shoulderpads
@@ -199,6 +204,8 @@ GoldScout-export 9^dffcmgqfevu3^21
 @i^5759^Thorium Lockbox
 @i^6289^Raw Longjaw Mud Snapper
 @i^6291^Raw Brilliant Smallfish
+@i^6300^Husk Fragment
+@i^6302^Delicate Insect Wing
 @i^6308^Raw Bristle Whisker Catfish
 @i^6309^17 Pound Catfish
 @i^6311^22 Pound Catfish
@@ -337,11 +344,14 @@ GoldScout-export 9^dffcmgqfevu3^21
 @i^18945^Dark Iron Residue
 @i^19936^Dried Scorpid Carapace
 @i^20015^Elder Raptor Feathers
+@i^20461^Brann Bronzebeard's Lost Letter
+@i^20500^Light Silithid Carapace
 @i^20520^Dark Rune
 @i^20708^Tightly Sealed Trunk
 @i^21151^Rumsey Rum Black Label
 @i^21228^Mithril Bound Trunk
 @i^21928^Winterspring Blood Sample
+@i^21937^Scorched Ectoplasm
 @i^22207^Sash of the Grand Hunt
 @i^22225^Dragonskin Cowl of Arcane Resistance
 @i^22268^Draconic Infused Emblem
@@ -349,6 +359,7 @@ GoldScout-export 9^dffcmgqfevu3^21
 @i^22397^Idol of Ferocity
 @i^227911^Head of Rend Blackhand
 @i^248695^Waylaid Crate: Earthly Artisan Herbs
+@i^248696^Waylaid Crate: Flowering Artisan Herbs
 @i^248697^Waylaid Crate: Artisan Ore
 @i^248698^Waylaid Crate: Artisan Textiles
 @i^248699^Waylaid Crate: Artisan Curiosities
@@ -393,6 +404,7 @@ GoldScout-export 9^dffcmgqfevu3^21
 @q^3914^1:1:0
 @q^3945^0:4:0
 @q^3947^0:4:0
+@q^3951^0:4:0
 @q^3973^0:4:0
 @q^3987^0:4:0
 @q^3998^0:4:0
@@ -419,6 +431,8 @@ GoldScout-export 9^dffcmgqfevu3^21
 @q^5759^2:15:0
 @q^6289^1:7:1
 @q^6291^1:7:1
+@q^6300^0:15:0
+@q^6302^0:15:0
 @q^6308^1:7:1
 @q^6309^1:15:0
 @q^6311^1:15:0
@@ -557,11 +571,14 @@ GoldScout-export 9^dffcmgqfevu3^21
 @q^18945^1:12:0
 @q^19936^0:15:0
 @q^20015^0:15:0
+@q^20461^1:15:0
+@q^20500^1:7:1
 @q^20520^2:7:1
 @q^20708^1:15:0
 @q^21151^1:0:0
 @q^21228^1:15:0
 @q^21928^1:12:0
+@q^21937^1:12:0
 @q^22207^3:4:0
 @q^22225^3:4:0
 @q^22268^3:4:0
@@ -569,6 +586,7 @@ GoldScout-export 9^dffcmgqfevu3^21
 @q^22397^3:4:0
 @q^227911^1:12:0
 @q^248695^1:0:1
+@q^248696^1:0:1
 @q^248697^1:0:1
 @q^248698^1:0:1
 @q^248699^1:0:1
@@ -615,6 +633,7 @@ GoldScout-export 9^dffcmgqfevu3^21
 @m^1444^Feralas
 @m^1447^Azshara
 @m^1450^Moonglade
+@m^1451^Silithus
 @m^1452^Winterspring
 @m^1455^Ironforge
 @m^2482^Mount Hyjal
@@ -1255,6 +1274,10 @@ GoldScout-export 9^dffcmgqfevu3^21
 @a^9026^305:1
 @a^9778^168:2,247:3
 @a^9779^168:3,247:2
+@a^12178^212:8
+@a^12179^212:6
+@a^13136^212:2
+@a^13301^212:2
 @a^16093^208:2
 @a^243509^293:2,313:1,314:1
 @a^244525^313:1,352:1
@@ -1271,6 +1294,10 @@ GoldScout-export 9^dffcmgqfevu3^21
 @a^255691^205:1
 @a^256809^165:1,166:19,167:15,186:8,187:44
 @a^264570^93:1,133:1,154:5,174:1,175:1,195:2
+@t^12178^6:715
+@t^12179^3:443
+@t^13136^2:245
+@t^13301^2:78
 @f^1413^0^6^225^6358:6:9,20708:1:1^152:6
 @f^1417^0^383^150^1710:2:2,3827:2:2,6308:160:179,6309:1:1,6311:1:1,8365:293:373,8366:1:1^204:383
 @f^1434^0^7^150^6359:1:1,6362:5:7,13422:1:2,16969:1:1^265:6,305:1

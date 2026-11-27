@@ -1,4 +1,4 @@
-GoldScout-export 9^6pfw5ohsmbc9^36
+GoldScout-export 9^6pfw5ohsmbc9^37
 92^24^0^39^40^1418^0.1686^0.3768^24^Elémentaire de roche^4552:2:2,4553:10:10,4627:1:1,4784:15:15,7067:4:4,7848:1:1,7912:7:8,8150:5:5,213544:1:1,262889:1:1^
 587^13^0^33^34^1434^0.3090^0.1839^13^Guerrier Bloodscalp^1520:1:1,2290:1:1,2592:1:2,3771:1:1,3795:1:1,3901:4:4,3915:2:2,4306:4:7,213547:1:1^
 588^22^0^34^35^1434^0.2536^0.1150^22^Eclaireur Bloodscalp^2592:1:3,2721:1:1,2734:1:1,2735:1:1,3771:1:1,3901:4:4,3915:6:6,4306:7:9,4338:1:1^
@@ -27,11 +27,17 @@ GoldScout-export 9^6pfw5ohsmbc9^36
 729^1^0^37^37^1434^0.3338^0.1688^1^Sin'Dall^3879:1:1,12202:1:1^
 736^9^0^32^43^1434^0.2928^0.1366^9^Panthère^1686:6:6,1687:1:1^
 772^15^0^37^38^1434^0.3901^0.3593^15^Tigresse de Strangleronce^1688:9:9,3839:1:1,5637:1:1,12202:13:13^
+814^1^0^38^38^1434^0.4724^0.0579^1^Sergent Malthus^^
 871^2^0^35^36^1434^0.2465^0.2338^2^Guerrier Selécaille^5796:2:2,17058:1:1,248690:1:1^
 873^1^0^37^37^1434^0.2505^0.2256^1^Oracle Selécaille^5796:1:1^
 898^1^0^27^27^1431^0.6694^0.3928^1^Worgen Plaie-de-nuit^^
 923^4^0^23^24^1431^0.5563^0.6299^4^Jeune Ravageur noir^1015:2:2,3301:3:3^
-940^1^0^33^33^1434^0.4395^0.1231^1^Guérisseur de Kurzen^2744:1:1,3358:1:1,4306:1:2^
+937^13^0^32^33^1434^0.4574^0.1066^13^Guerrier de la jungle de Kurzen^2592:2:3,2742:1:1,4306:1:1^
+938^1^0^34^35^1434^0.4640^0.0750^1^Commando de Kurzen^^
+939^5^0^36^37^1434^0.4768^0.0718^5^Troupe d'élite de Kurzen^4306:2:5,216616:1:1^
+940^14^0^32^33^1434^0.4501^0.1071^14^Guérisseur de Kurzen^1710:1:1,2633:3:3,2744:1:1,3357:2:2,3358:1:1,3816:1:1,3818:1:1,4306:6:11^
+941^1^0^35^35^1434^0.4781^0.0777^1^Réducteur de tête de Kurzen^4306:1:2^
+942^7^0^36^37^1434^0.4741^0.0609^7^Sorcier-docteur de Kurzen^1707:1:1,2633:2:2,4306:1:2^
 1034^5^0^26^27^1437^0.4713^0.4566^5^Ecumeur Dragonmaw^2592:1:1,7131:5:10^
 1035^2^0^27^28^1437^0.5111^0.5015^2^Arpenteur Dragonmaw^7131:2:4^
 1036^2^0^28^29^1437^0.5100^0.5149^2^Centurion Dragonmaw^7131:2:4^
@@ -370,6 +376,7 @@ GoldScout-export 9^6pfw5ohsmbc9^36
 @i^1701^Griffe de basilic
 @i^1702^Epine dorsale intacte de basilic
 @i^1703^Queue de basilic de cristal
+@i^1707^Brie de Hurlevent
 @i^1708^Nectar sucré
 @i^1710^Potion de soins supérieure
 @i^1725^Grand sac à dos
@@ -412,6 +419,7 @@ GoldScout-export 9^6pfw5ohsmbc9^36
 @i^2589^Etoffe de lin
 @i^2592^Etoffe de laine
 @i^2632^Dague courbe de guérison
+@i^2633^Remède tropical
 @i^2643^Brassards en anneaux distendus
 @i^2644^Cape en anneaux distendus
 @i^2649^Ceinture en anneaux fins
@@ -490,6 +498,7 @@ GoldScout-export 9^6pfw5ohsmbc9^36
 @i^3301^Canine pointue
 @i^3305^Jambières des eaux stagnantes
 @i^3306^Broigne des eaux stagnantes
+@i^3357^Vietérule
 @i^3358^Moustache de Khadgar
 @i^3363^Ceinture râpée
 @i^3365^Brassards râpés
@@ -518,6 +527,8 @@ GoldScout-export 9^6pfw5ohsmbc9^36
 @i^3795^Cape entrelacée
 @i^3805^Pantalon en cuir durci
 @i^3815^Haubergeon doublentin
+@i^3816^Ecu réfléchissant
+@i^3818^Pâlerette
 @i^3820^Etouffante
 @i^3827^Potion de mana
 @i^3838^Griffe d'Ombregueule
@@ -766,6 +777,7 @@ GoldScout-export 9^6pfw5ohsmbc9^36
 @i^213545^Parchemin : CHUTE D'AGUERRI
 @i^213546^Parchemin : TAGADAAA
 @i^213547^Parchemin : ELLUQE PÉÉE
+@i^216616^Clé de cage de la base
 @i^248682^Caisse détournée : plantes d'apprenti
 @i^248685^Caisse détournée : curiosités d'apprenti
 @i^248687^Caisse détournée : minerai de compagnon
@@ -882,6 +894,7 @@ GoldScout-export 9^6pfw5ohsmbc9^36
 @q^1701^0:15:0
 @q^1702^0:15:0
 @q^1703^1:0:0
+@q^1707^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
 @q^1725^1:1:0
@@ -924,6 +937,7 @@ GoldScout-export 9^6pfw5ohsmbc9^36
 @q^2589^1:7:1
 @q^2592^1:7:1
 @q^2632^2:2:0
+@q^2633^1:0:0
 @q^2643^0:4:0
 @q^2644^0:4:0
 @q^2649^0:4:0
@@ -1002,6 +1016,7 @@ GoldScout-export 9^6pfw5ohsmbc9^36
 @q^3301^0:15:0
 @q^3305^2:4:0
 @q^3306^2:4:0
+@q^3357^1:7:1
 @q^3358^1:7:1
 @q^3363^0:4:0
 @q^3365^0:4:0
@@ -1030,6 +1045,8 @@ GoldScout-export 9^6pfw5ohsmbc9^36
 @q^3795^0:4:0
 @q^3805^0:4:0
 @q^3815^0:4:0
+@q^3816^0:4:0
+@q^3818^1:7:1
 @q^3820^1:7:1
 @q^3827^1:0:0
 @q^3838^1:12:0
@@ -1278,6 +1295,7 @@ GoldScout-export 9^6pfw5ohsmbc9^36
 @q^213545^1:0:0
 @q^213546^1:0:0
 @q^213547^1:0:0
+@q^216616^1:12:0
 @q^248682^1:0:1
 @q^248685^1:0:1
 @q^248687^1:0:1
@@ -2613,11 +2631,17 @@ GoldScout-export 9^6pfw5ohsmbc9^36
 @a^729^66:1
 @a^736^25:1,45:3,46:2,65:3
 @a^772^89:1,109:1,127:4,147:7,167:2
+@a^814^29:1
 @a^871^84:2
 @a^873^85:1
 @a^898^153:1
 @a^923^250:1,251:2,270:1
-@a^940^48:1
+@a^937^28:1,29:3,48:1,49:8
+@a^938^29:1
+@a^939^29:5
+@a^940^28:2,29:1,48:4,49:7
+@a^941^29:1
+@a^942^29:7
 @a^1034^148:1,169:1,189:3
 @a^1035^190:1,210:1
 @a^1036^189:1,210:1
@@ -2825,6 +2849,13 @@ GoldScout-export 9^6pfw5ohsmbc9^36
 @a^270664^247:2
 @a^275437^253:4,273:5
 @a^277730^243:1
+@t^814^1:25
+@t^937^13:526
+@t^938^1:56
+@t^939^5:198
+@t^940^12:439
+@t^941^1:62
+@t^942^7:259
 @f^1421^0^38^225^6289:15:15,6291:7:7,6297:8:8,6299:4:4,6308:4:4^173:38
 @f^1434^0^121^225^3820:7:13,4603:1:1,6308:15:15,6311:1:1,6358:4:4,6359:4:4,6362:13:13,8365:35:35,16969:1:1,21150:11:11,21151:1:1,21153:29:29^26:5,48:5,64:4,87:7,88:6,105:2,106:17,107:11,108:8,126:47,127:9
 @f^1435^0^9^225^4603:1:1,6358:2:2,6359:1:1,6362:5:5,16970:1:1^199:9
