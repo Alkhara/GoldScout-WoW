@@ -1,4 +1,7 @@
-GoldScout-export 9^ngcu3n2c2b19^25
+GoldScout-export 9^ngcu3n2c2b19^26
+598^9^0^0^0^0^0.0000^0.0000^0^^858:1:1,2592:2:2,2836:1:2^
+634^3^0^0^0^0^0.0000^0.0000^0^^1206:1:1,1741:1:1,2592:1:2,7997:2:2^
+644^1^0^0^0^0^0.0000^0.0000^0^^5187:1:1,252774:1:1^
 667^8^0^39^40^1434^0.4569^0.3662^8^Guerrier Skullsplitter^1520:3:3,3771:1:1,3916:2:2,4306:2:3,8151:2:2^
 669^6^0^41^42^1434^0.4480^0.4173^6^Chasseur Skullsplitter^3395:1:1,4306:2:3,4338:2:4,8153:1:1^
 687^29^0^40^41^1434^0.3244^0.3988^29^Traqueur de la jungle^3863:10:10,4461:10:10,4586:7:7,4587:1:1,12184:12:12^
@@ -37,6 +40,8 @@ GoldScout-export 9^ngcu3n2c2b19^25
 1565^7^0^44^45^1434^0.3230^0.8867^7^Loup de mer de la Voile sanglante^3910:3:3,3927:1:1,4338:2:3,9924:1:1^
 1653^14^0^44^45^1434^0.3281^0.8848^14^Ancien magus de la Voile sanglante^1645:1:1,2734:1:1,2745:1:1,2751:1:1,3910:3:3,3927:1:1,4007:1:1,4306:1:1,4338:2:3^
 1713^1^0^42^43^1434^0.3518^0.5513^1^Ancienne panthère Ombregueule^1688:1:1^
+1725^2^0^0^0^0^0.0000^0.0000^0^^858:1:1^
+1729^2^0^0^0^0^0.0000^0.0000^0^^1815:1:1,2986:1:1^
 1907^19^0^43^44^1434^0.2713^0.6201^19^Explorateur naga^1645:1:1,2725:1:1,2732:1:1,4029:10:10,7973:5:5,17058:4:4^
 2505^10^0^49^50^1425^0.7678^0.7022^10^Gueule d'acier des mers^3712:5:5,4555:5:5,4556:7:7,4603:1:2,7973:3:3,213546:1:1^
 2530^2^0^41^41^1434^0.3924^0.5759^2^Yenniku^2742:1:1,4016:2:2,4338:1:2^
@@ -265,9 +270,11 @@ GoldScout-export 9^ngcu3n2c2b19^25
 @i^537^Ecaille de Furie terne
 @i^769^Morceau de viande de sanglier
 @i^770^Croc pointu de crocilisque
+@i^858^Potion de soins inférieure
 @i^863^Faucheuse sombre de protection contre le givre
 @i^864^Epée longue des chevaliers de magie
 @i^1074^Patte d'araignée
+@i^1206^Agate mousse
 @i^1464^Serre de busard
 @i^1520^Sueur de troll
 @i^1625^Flamberge exquise de protection contre le givre
@@ -277,6 +284,8 @@ GoldScout-export 9^ngcu3n2c2b19^25
 @i^1701^Griffe de basilic
 @i^1708^Nectar sucré
 @i^1710^Potion de soins supérieure
+@i^1741^Cape lacée
+@i^1815^Masse ornementale
 @i^2289^Parchemin de Force II
 @i^2295^Grande défense de sanglier
 @i^2592^Etoffe de laine
@@ -293,6 +302,8 @@ GoldScout-export 9^ngcu3n2c2b19^25
 @i^2750^Les vertes collines de Strangleronce - Page 26
 @i^2751^Les vertes collines de Strangleronce - Page 27
 @i^2799^Croc de gorille
+@i^2836^Pierre grossière
+@i^2986^Pantalon en cuir gravé
 @i^3010^Sable fin
 @i^3172^Tripes de sanglier
 @i^3208^Masse ronde de la chouette
@@ -382,6 +393,7 @@ GoldScout-export 9^ngcu3n2c2b19^25
 @i^5116^Longue plume de queue
 @i^5117^Plume vibrante
 @i^5128^Peau de lézard dépouillée
+@i^5187^Marteau de Rhahk'Zor
 @i^5429^Un joli caillou
 @i^5431^Flasque vide
 @i^5524^Palourde à coque épaisse
@@ -421,6 +433,7 @@ GoldScout-export 9^ngcu3n2c2b19^25
 @i^7912^Pierre solide
 @i^7972^Ichor de non-mort
 @i^7973^Palourde à large bouche
+@i^7997^Masque rouge de Défias
 @i^8118^Brassards héraldiques
 @i^8146^Serre cruelle
 @i^8151^Flacon de mojo
@@ -523,6 +536,7 @@ GoldScout-export 9^ngcu3n2c2b19^25
 @i^249883^Recette : thé du soleil
 @i^250184^Recette : paupiette de raptor
 @i^251462^Plans : claymore en mithril
+@i^252774^Patron : armure totémique en cuir
 @i^254432^Totem centaure sculpté
 @i^255725^Manuel : potion de soins excellente
 @i^259461^Collier partiellement digéré
@@ -577,9 +591,11 @@ GoldScout-export 9^ngcu3n2c2b19^25
 @q^537^0:15:0
 @q^769^1:7:1
 @q^770^0:15:0
+@q^858^1:0:0
 @q^863^2:2:0
 @q^864^2:2:0
 @q^1074^0:15:0
+@q^1206^2:7:1
 @q^1464^0:15:0
 @q^1520^0:15:0
 @q^1625^2:2:0
@@ -589,6 +605,8 @@ GoldScout-export 9^ngcu3n2c2b19^25
 @q^1701^0:15:0
 @q^1708^1:0:0
 @q^1710^1:0:0
+@q^1741^0:4:0
+@q^1815^0:2:0
 @q^2289^1:0:0
 @q^2295^0:15:0
 @q^2592^1:7:1
@@ -605,6 +623,8 @@ GoldScout-export 9^ngcu3n2c2b19^25
 @q^2750^1:12:0
 @q^2751^1:12:0
 @q^2799^1:12:0
+@q^2836^1:7:1
+@q^2986^2:4:0
 @q^3010^0:15:0
 @q^3172^1:7:1
 @q^3208^2:2:0
@@ -694,6 +714,7 @@ GoldScout-export 9^ngcu3n2c2b19^25
 @q^5116^1:7:1
 @q^5117^1:12:0
 @q^5128^0:15:0
+@q^5187^3:2:0
 @q^5429^0:15:0
 @q^5431^0:15:0
 @q^5524^1:7:0
@@ -733,6 +754,7 @@ GoldScout-export 9^ngcu3n2c2b19^25
 @q^7912^1:7:1
 @q^7972^1:7:1
 @q^7973^1:7:0
+@q^7997^0:4:0
 @q^8118^2:4:0
 @q^8146^1:7:1
 @q^8151^1:7:1
@@ -835,6 +857,7 @@ GoldScout-export 9^ngcu3n2c2b19^25
 @q^249883^1:9:0
 @q^250184^1:9:0
 @q^251462^2:9:0
+@q^252774^3:9:0
 @q^254432^2:15:0
 @q^255725^2:9:0
 @q^259461^1:15:0

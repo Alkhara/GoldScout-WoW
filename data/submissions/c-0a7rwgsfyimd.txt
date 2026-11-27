@@ -1,4 +1,4 @@
-GoldScout-export 9^0a7rwgsfyimd^22
+GoldScout-export 9^0a7rwgsfyimd^23
 334^1^0^26^26^1433^0.6427^0.5576^1^Gath'Ilzogg^3633:1:1^
 429^9^0^25^26^1433^0.7581^0.5341^9^Shadowhide Darkweaver^1075:3:3,2589:2:3,2592:1:2^
 430^1^0^18^19^1433^0.2249^0.2179^1^Redridge Mystic^1212:1:1^
@@ -53,6 +53,11 @@ GoldScout-export 9^0a7rwgsfyimd^22
 1755^1^0^30^30^1453^0.7260^0.3513^1^Marzon the Silent Blade^2592:1:2^
 1756^2^0^60^60^1453^0.7955^0.3895^2^Stormwind Royal Guard^^
 1985^2^0^2^3^1438^0.6004^0.3554^2^Thistle Boar^117:1:1,1366:1:1,7098:1:1^
+1993^1^0^10^10^1438^0.4433^0.6180^1^Greenpaw^^
+1995^1^0^6^6^1438^0.5778^0.5740^1^Strigid Owl^7096:1:1^
+2009^12^0^7^8^1438^0.4448^0.5905^12^Gnarlpine Shaman^118:2:2,159:1:1,2589:3:4,5220:5:5,8363:1:1^
+2010^16^0^7^8^1438^0.4446^0.5882^16^Gnarlpine Defender^2589:3:6,4536:1:1,5220:8:8^
+2011^6^0^8^9^1438^0.4499^0.5928^6^Gnarlpine Augur^2589:2:3,5220:2:2^
 2022^16^0^5^6^1438^0.6043^0.7056^16^Timberling^159:1:1,1372:2:2,1380:1:1,2447:1:1,5168:8:8^
 2032^6^0^2^2^1438^0.5978^0.3547^6^Mangy Nightsaber^1376:1:1,1377:1:1,4865:2:2,7073:3:3,7074:1:1^
 2089^6^0^25^26^1437^0.1696^0.2770^6^Giant Wetlands Crocolisk^770:1:1,3348:6:6,3667:2:2^
@@ -193,6 +198,7 @@ GoldScout-export 9^0a7rwgsfyimd^22
 275045^1^0^0^0^0^0.0000^0.0000^0^^4306:1:3^
 275046^1^0^0^0^0^0.0000^0.0000^0^^1756:1:1^
 @i^117^Tough Jerky
+@i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
 @i^422^Dwarven Mild
 @i^730^Murloc Eye
@@ -331,6 +337,7 @@ GoldScout-export 9^0a7rwgsfyimd^22
 @i^4461^Raptor Hide
 @i^4503^Witherbark Tusk
 @i^4522^Witherbark Medicine Pouch
+@i^4536^Shiny Red Apple
 @i^4553^Jagged Piece of Stone
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
@@ -349,6 +356,7 @@ GoldScout-export 9^0a7rwgsfyimd^22
 @i^5136^Torn Furry Ear
 @i^5168^Timberling Seed
 @i^5206^Bogling Root
+@i^5220^Gnarlpine Fang
 @i^5465^Small Spider Leg
 @i^5524^Thick-shelled Clam
 @i^5635^Sharp Claw
@@ -380,6 +388,7 @@ GoldScout-export 9^0a7rwgsfyimd^22
 @i^7072^Naga Scale
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
+@i^7096^Plucked Feather
 @i^7098^Splintered Tusk
 @i^7191^Fused Wiring
 @i^7355^Elder's Bracers of Spirit
@@ -388,6 +397,7 @@ GoldScout-export 9^0a7rwgsfyimd^22
 @i^7450^Pattern: Green Whelp Armor
 @i^7812^Corrupt Manifestation's Bracers
 @i^8186^Dire Wand
+@i^8363^Shaman Voodoo Charm
 @i^9277^Techbot's Memory Core
 @i^9279^White Punch Card
 @i^9308^Grime-Encrusted Object
@@ -477,6 +487,7 @@ GoldScout-export 9^0a7rwgsfyimd^22
 @i^286989^Violet Sorcerer's Wraps
 @i^286992^Construct's Grips
 @q^117^1:0:0
+@q^118^1:0:0
 @q^159^1:0:0
 @q^422^1:0:0
 @q^730^1:7:1
@@ -615,6 +626,7 @@ GoldScout-export 9^0a7rwgsfyimd^22
 @q^4461^1:7:1
 @q^4503^1:12:0
 @q^4522^1:12:0
+@q^4536^1:0:0
 @q^4553^0:15:0
 @q^4555^0:15:0
 @q^4556^0:15:0
@@ -633,6 +645,7 @@ GoldScout-export 9^0a7rwgsfyimd^22
 @q^5136^0:15:0
 @q^5168^1:12:0
 @q^5206^1:0:0
+@q^5220^1:12:0
 @q^5465^1:7:1
 @q^5524^1:7:0
 @q^5635^1:7:1
@@ -664,6 +677,7 @@ GoldScout-export 9^0a7rwgsfyimd^22
 @q^7072^1:7:1
 @q^7073^0:15:0
 @q^7074^0:15:0
+@q^7096^0:15:0
 @q^7098^0:15:0
 @q^7191^1:7:1
 @q^7355^2:4:0
@@ -672,6 +686,7 @@ GoldScout-export 9^0a7rwgsfyimd^22
 @q^7450^2:9:0
 @q^7812^1:12:0
 @q^8186^2:2:0
+@q^8363^1:12:0
 @q^9277^1:12:0
 @q^9279^1:12:0
 @q^9308^1:12:0
@@ -1251,6 +1266,11 @@ GoldScout-export 9^0a7rwgsfyimd^22
 @a^1755^154:1
 @a^1756^155:2
 @a^1985^151:1,152:1
+@a^1993^248:1
+@a^1995^231:1
+@a^2009^228:3,229:5,248:4
+@a^2010^228:10,229:3,248:3
+@a^2011^228:2,229:2,248:2
 @a^2022^272:1,291:2,292:13
 @a^2032^131:1,151:4,152:1
 @a^2089^83:1,103:5
@@ -1308,6 +1328,8 @@ GoldScout-export 9^0a7rwgsfyimd^22
 @a^271351^173:1,193:3
 @a^271460^70:1
 @a^272273^95:1
+@t^2009^1:24
+@t^2010^1:24
 @f^1421^0^17^111^6289:8:8,6291:3:3,6297:1:1,6299:3:3,6308:2:2^173:17
 @f^1424^0^38^85^6289:2:2,6308:5:5,6358:4:4,21071:24:24,21113:3:3^53:5,172:12,191:7,211:4,231:6,251:4
 @f^1432^0^36^35^6289:19:19,6291:3:3,6308:3:3,6317:11:11^68:11,148:25

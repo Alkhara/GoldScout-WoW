@@ -1,4 +1,4 @@
-GoldScout-export 9^eek7a2bzlevj^18
+GoldScout-export 9^eek7a2bzlevj^19
 1756^2^0^60^60^1453^0.7852^0.4034^2^Onyxia's Elite Guard^^
 1791^1^0^52^52^1422^0.5135^0.7702^1^Slavering Ghoul^^
 1993^1^0^10^10^1438^0.4432^0.6173^1^Greenpaw^^
@@ -32,6 +32,12 @@ GoldScout-export 9^eek7a2bzlevj^18
 7318^1^0^10^10^1438^0.4544^0.5854^1^Rageclaw^211785:1:1^
 7440^1^0^55^56^1452^0.2973^0.3676^1^Winterfall Den Watcher^14047:1:1^
 7442^1^0^54^54^1452^0.3005^0.3588^1^Winterfall Pathfinder^14047:1:1^
+7445^1^0^57^58^1452^0.6199^0.5467^1^Elder Shardtooth^11408:1:1,11411:1:1^
+7448^6^0^55^57^1452^0.6672^0.5166^6^Chillwind Chimaera^6826:2:2,12444:3:3,281241:4:4^
+7455^3^0^55^56^1452^0.6653^0.5180^3^Winterspring Owl^11420:1:1,12207:2:2,15420:1:1,281242:1:1^
+7456^8^0^57^59^1452^0.6100^0.5786^8^Winterspring Screecher^11417:4:4,11419:1:1,11420:2:2,12207:3:3,15420:7:15,281242:1:1^
+7458^4^0^55^56^1452^0.6563^0.4055^4^Ice Thistle Yeti^12366:1:1^
+7459^1^0^57^57^1452^0.6660^0.4173^1^Ice Thistle Matriarch^^
 8504^1^0^48^48^1427^0.5016^0.5551^1^Dark Iron Sentry^4338:1:1,4601:1:1^
 8566^6^0^47^48^1427^0.3439^0.5610^6^Dark Iron Lookout^3928:1:1,4338:4:5^
 8889^6^0^0^0^0^0.0000^0.0000^0^^9942:1:1,11468:3:3,14047:2:6^
@@ -137,6 +143,7 @@ GoldScout-export 9^eek7a2bzlevj^18
 10661^1^0^55^56^1452^0.5451^0.5081^1^Spell Eater^4460:1:1^
 10916^2^0^57^57^1448^0.6029^0.0601^2^Winterfall Runner^12771:1:1^
 222525^1^0^0^0^0^0.0000^0.0000^0^^4005:1:1,14047:1:2^
+269213^1^0^60^60^1452^0.6807^0.5858^1^Hailspite^278091:1:1^
 272096^2^0^10^11^1438^0.5047^0.4475^2^Befouled Webwood^1476:1:1,5465:2:3^
 272116^1^0^12^12^1438^0.5138^0.4478^1^Xethorr the Wicked^281023:1:1^
 @i^118^Minor Healing Potion
@@ -192,6 +199,7 @@ GoldScout-export 9^eek7a2bzlevj^18
 @i^5758^Mithril Lockbox
 @i^6300^Husk Fragment
 @i^6302^Delicate Insect Wing
+@i^6826^Brilliant Scale
 @i^7078^Essence of Fire
 @i^7909^Aquamarine
 @i^7910^Star Ruby
@@ -238,6 +246,11 @@ GoldScout-export 9^eek7a2bzlevj^18
 @i^11080^Gor'tesh's Lopped Off Head
 @i^11312^Lost Thunderbrew Recipe
 @i^11313^Ribbly's Head
+@i^11408^Bear Jaw
+@i^11411^Large Bear Bone
+@i^11417^Feathery Wing
+@i^11419^Mysterious Unhatched Egg
+@i^11420^Elegant Writing Tool
 @i^11446^A Crumpled Up Note
 @i^11464^Marshal Windsor's Lost Information
 @i^11465^Marshal Windsor's Lost Information
@@ -269,9 +282,12 @@ GoldScout-export 9^eek7a2bzlevj^18
 @i^12037^Mystery Meat
 @i^12203^Red Wolf Meat
 @i^12205^White Spider Meat
+@i^12207^Giant Egg
 @i^12208^Tender Wolf Meat
 @i^12219^Unadorned Seal of Ascension
 @i^12335^Gemstone of Smolderthorn
+@i^12366^Thick Yeti Fur
+@i^12444^Uncracked Chillwind Horn
 @i^12534^Omokk's Head
 @i^12586^Immature Venom Sac
 @i^12712^Warosh's Mojo
@@ -302,6 +318,7 @@ GoldScout-export 9^eek7a2bzlevj^18
 @i^15254^Dark Espadon of the Bear
 @i^15274^Diviner Long Staff of the Hierophant
 @i^15324^Burnside Rifle of the Falcon
+@i^15420^Ironfeather
 @i^15732^Pattern: Volcanic Leggings
 @i^15749^Pattern: Volcanic Breastplate
 @i^15936^Duskwoven Branch of Fire Protection
@@ -334,10 +351,13 @@ GoldScout-export 9^eek7a2bzlevj^18
 @i^251467^Plans: Thorium Poleaxe
 @i^262890^Sealed Artisan's Writ
 @i^273127^Golem Heart
+@i^278091^Hailspite Frostmoss
 @i^280087^Soft Nightsaber Pelt
 @i^281015^Scroll: DOST OREM
 @i^281017^Scroll: KEEP CLEF FOCI
 @i^281023^Mature Fel Moss
+@i^281241^Chillwind Chimaera Fur
+@i^281242^Winterspring Owl Feather
 @q^118^1:0:0
 @q^159^1:0:0
 @q^774^2:7:1
@@ -391,6 +411,7 @@ GoldScout-export 9^eek7a2bzlevj^18
 @q^5758^2:15:0
 @q^6300^0:15:0
 @q^6302^0:15:0
+@q^6826^0:15:0
 @q^7078^2:7:1
 @q^7909^2:7:1
 @q^7910^2:7:1
@@ -437,6 +458,11 @@ GoldScout-export 9^eek7a2bzlevj^18
 @q^11080^1:12:0
 @q^11312^1:12:0
 @q^11313^1:12:0
+@q^11408^0:15:0
+@q^11411^0:2:0
+@q^11417^0:15:0
+@q^11419^0:15:0
+@q^11420^0:15:0
 @q^11446^1:12:0
 @q^11464^1:12:0
 @q^11465^1:12:0
@@ -468,9 +494,12 @@ GoldScout-export 9^eek7a2bzlevj^18
 @q^12037^1:7:1
 @q^12203^1:7:1
 @q^12205^1:7:1
+@q^12207^1:7:1
 @q^12208^1:7:1
 @q^12219^1:12:0
 @q^12335^2:12:0
+@q^12366^1:12:0
+@q^12444^1:12:0
 @q^12534^1:12:0
 @q^12586^1:0:0
 @q^12712^1:0:0
@@ -501,6 +530,7 @@ GoldScout-export 9^eek7a2bzlevj^18
 @q^15254^2:2:0
 @q^15274^2:2:0
 @q^15324^2:2:0
+@q^15420^1:7:1
 @q^15732^2:9:0
 @q^15749^2:9:0
 @q^15936^2:4:0
@@ -533,10 +563,13 @@ GoldScout-export 9^eek7a2bzlevj^18
 @q^251467^3:9:0
 @q^262890^3:0:0
 @q^273127^2:15:1
+@q^278091^1:12:0
 @q^280087^1:12:0
 @q^281015^1:0:0
 @q^281017^1:0:0
 @q^281023^1:12:0
+@q^281241^1:12:0
+@q^281242^1:12:0
 @m^1422^Western Plaguelands
 @m^1427^Searing Gorge
 @m^1428^Burning Steppes
@@ -1949,6 +1982,12 @@ GoldScout-export 9^eek7a2bzlevj^18
 @a^7318^229:1
 @a^7440^145:1
 @a^7442^146:1
+@a^7445^212:1
+@a^7448^193:2,213:4
+@a^7455^193:1,213:2
+@a^7456^232:8
+@a^7458^153:1,172:1,173:2
+@a^7459^173:1
 @a^8504^230:1
 @a^8566^206:3,226:1,247:2
 @a^8917^64:1,84:2,85:1
@@ -1957,9 +1996,15 @@ GoldScout-export 9^eek7a2bzlevj^18
 @a^10659^210:1
 @a^10661^210:1
 @a^10916^32:2
+@a^269213^233:1
 @a^272096^170:1,189:1
 @a^272116^170:1
 @t^1756^1:19
 @t^7157^2:60
 @t^7158^1:43
+@t^7448^6:203
+@t^7455^3:159
+@t^7456^8:384
+@t^7458^3:134
+@t^7459^1:27
 @l^0^enUS
