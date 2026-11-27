@@ -1,7 +1,9 @@
-GoldScout-export 9^5llfpouokxjq^8
+GoldScout-export 9^5llfpouokxjq^9
 6200^2^0^51^52^1447^0.5859^0.2173^2^Legashi Satyr^14047:2:4^
 6201^1^0^52^53^1447^0.5847^0.2154^1^Legashi Rogue^13446:1:1^
 6202^1^0^52^53^1447^0.5878^0.2189^1^Legashi Hellcaller^235645:1:1^
+6499^1^0^54^54^1449^0.7367^0.3805^1^Ironhide Devilsaur^20015:1:1^
+6560^17^0^60^61^1449^0.6050^0.4403^17^Stone Guardian^3974:1:1,4552:6:6,4554:2:2,7912:4:7,8150:5:5,11018:4:4,12809:8:8,14325:1:1,14864:1:1^
 7132^38^0^53^54^1448^0.4951^0.2505^38^Toxic Horror^4791:23:76,7070:8:8,7079:6:6,7080:5:5,12822:3:3,15184:1:1,248697:1:1^
 7156^3^0^53^54^1448^0.6282^0.0758^3^Deadwood Den Watcher^^
 7157^2^0^54^55^1448^0.6268^0.0774^2^Deadwood Avenger^^
@@ -95,7 +97,7 @@ GoldScout-export 9^5llfpouokxjq^8
 237614^2^0^52^52^1447^0.5760^0.2126^2^Cauldron Imp^^
 249229^2^0^58^59^2482^0.4865^0.3132^2^Felguard Sentinel^12662:1:1,14047:1:1^
 255691^1^0^61^61^2482^0.2853^0.5175^1^Spectral Frostwyrm^^
-264850^32^0^60^60^1447^0.6548^0.1686^6^Hawk^^
+264850^35^0^60^60^1447^0.6548^0.1686^6^Hawk^^
 @i^1074^Hard Spider Leg Tip
 @i^1688^Long Soft Tail
 @i^2449^Earthroot
@@ -108,6 +110,8 @@ GoldScout-export 9^5llfpouokxjq^8
 @i^3974^Smooth Leather Pants
 @i^4337^Thick Spider's Silk
 @i^4402^Small Flame Sac
+@i^4552^Smooth Stone Chip
+@i^4554^Shiny Polished Stone
 @i^4580^Sabertooth Fang
 @i^4581^Patch of Fine Fur
 @i^4583^Thick Furry Mane
@@ -136,6 +140,7 @@ GoldScout-export 9^5llfpouokxjq^8
 @i^10285^Shadow Silk
 @i^10286^Heart of the Wild
 @i^10305^Scroll of Protection IV
+@i^11018^Un'Goro Soil
 @i^11515^Corrupted Soul Shard
 @i^12037^Mystery Meat
 @i^12202^Tiger Meat
@@ -144,6 +149,7 @@ GoldScout-export 9^5llfpouokxjq^8
 @i^12208^Tender Wolf Meat
 @i^12662^Demonic Rune
 @i^12803^Living Essence
+@i^12809^Guardian Stone
 @i^12822^Toxic Horror Droplet
 @i^13443^Superior Mana Potion
 @i^13446^Major Healing Potion
@@ -151,6 +157,8 @@ GoldScout-export 9^5llfpouokxjq^8
 @i^14047^Runecloth
 @i^14227^Ironweb Spider Silk
 @i^14256^Felcloth
+@i^14325^Resplendent Epaulets of Frost Protection
+@i^14864^Warleader's Belt
 @i^15184^Praetorian Gloves of the Tiger
 @i^15229^Blesswind Hammer of Spirit
 @i^15432^Peerless Shoulders of the Beast
@@ -190,6 +198,7 @@ GoldScout-export 9^5llfpouokxjq^8
 @i^19441^Huge Venom Sac
 @i^19933^Glowing Scorpid Blood
 @i^19934^Large Scorpid Claw
+@i^20015^Elder Raptor Feathers
 @i^20374^Stonelash Pincer Stinger
 @i^20375^Stonelash Flayer Stinger
 @i^20377^Rock Stalker Fang
@@ -230,6 +239,8 @@ GoldScout-export 9^5llfpouokxjq^8
 @q^3974^0:4:0
 @q^4337^1:7:1
 @q^4402^1:7:1
+@q^4552^0:15:0
+@q^4554^0:15:0
 @q^4580^0:15:0
 @q^4581^0:15:0
 @q^4583^0:15:0
@@ -258,6 +269,7 @@ GoldScout-export 9^5llfpouokxjq^8
 @q^10285^1:7:1
 @q^10286^1:7:1
 @q^10305^1:0:0
+@q^11018^1:12:0
 @q^11515^1:12:0
 @q^12037^1:7:1
 @q^12202^1:7:1
@@ -266,6 +278,7 @@ GoldScout-export 9^5llfpouokxjq^8
 @q^12208^1:7:1
 @q^12662^2:7:1
 @q^12803^2:7:1
+@q^12809^2:7:1
 @q^12822^1:12:0
 @q^13443^1:0:0
 @q^13446^1:0:0
@@ -273,6 +286,8 @@ GoldScout-export 9^5llfpouokxjq^8
 @q^14047^1:7:1
 @q^14227^1:7:1
 @q^14256^1:7:1
+@q^14325^2:4:0
+@q^14864^2:4:0
 @q^15184^2:4:0
 @q^15229^2:2:0
 @q^15432^2:4:0
@@ -312,6 +327,7 @@ GoldScout-export 9^5llfpouokxjq^8
 @q^19441^1:7:1
 @q^19933^1:15:0
 @q^19934^0:15:0
+@q^20015^0:15:0
 @q^20374^1:12:0
 @q^20375^1:12:0
 @q^20377^1:12:0
@@ -343,6 +359,7 @@ GoldScout-export 9^5llfpouokxjq^8
 @m^1444^Feralas
 @m^1447^Azshara
 @m^1448^Felwood
+@m^1449^Un'Goro Crater
 @m^1451^Silithus
 @m^1452^Winterspring
 @m^1454^Orgrimmar
@@ -1107,6 +1124,8 @@ GoldScout-export 9^5llfpouokxjq^8
 @a^6200^91:2
 @a^6201^91:1
 @a^6202^91:1
+@a^6499^154:1
+@a^6560^67:1,108:1,148:2,149:1,150:2,151:1,152:1,153:1,174:1,195:2,254:1,274:2,294:1
 @a^7132^89:16,90:6,109:11,110:5
 @a^7156^32:3
 @a^7157^32:2
@@ -1159,6 +1178,8 @@ GoldScout-export 9^5llfpouokxjq^8
 @a^249229^129:2
 @a^255691^205:1
 @a^264850^72:2,73:4
+@t^6499^1:128
+@t^6560^14:2101
 @t^7132^31:3483
 @t^11727^3:72
 @t^11728^1:325
@@ -1171,5 +1192,5 @@ GoldScout-export 9^5llfpouokxjq^8
 @t^11747^1:87
 @t^11803^1:113
 @t^15200^1:175
-@t^264850^11:1047
+@t^264850^14:1436
 @l^0^enUS

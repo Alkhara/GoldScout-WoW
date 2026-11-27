@@ -1,4 +1,5 @@
-GoldScout-export 9^8oemfgawyuf3^29
+GoldScout-export 9^8oemfgawyuf3^30
+114^1^0^15^15^1436^0.3728^0.5081^1^Harvest Watcher^4359:1:1^
 1547^1^0^6^6^1420^0.6209^0.5513^1^Decrepit Darkhound^^
 1912^2^0^14^15^1421^0.5983^0.6680^2^Dalaran Protector^2589:1:3^
 2540^1^0^15^15^1421^0.5868^0.6682^1^Dalaran Serpent^^
@@ -105,7 +106,12 @@ GoldScout-export 9^8oemfgawyuf3^29
 4006^4^0^19^20^1442^0.5730^0.6421^4^Deepmoss Webspinner^1081:1:1,3174:1:1,3931:3:3^
 4007^5^0^17^18^1442^0.5346^0.7442^5^Deepmoss Venomspitter^1081:1:1,3174:4:4,3931:2:2^
 4020^1^0^23^23^1442^0.4988^0.3839^1^Sap Beast^^
-4044^1^0^23^23^1442^0.4492^0.4242^1^Blackened Basilisk^11385:1:1^
+4022^7^0^23^24^1442^0.3535^0.6067^7^Bloodfury Harpy^2592:1:1,3857:1:1,5115:1:1,5116:2:2,5635:1:1,15519:1:1,17056:2:2,277936:1:2^
+4025^8^0^23^24^1442^0.3502^0.6244^8^Bloodfury Ambusher^2592:2:3,3770:1:1,5116:1:1,5635:1:1,17056:1:1,277936:4:5^
+4026^10^0^24^25^1442^0.3496^0.6258^10^Bloodfury Windcaller^2589:1:2,3770:2:2,3857:2:2,5116:3:3,17056:4:4,277936:3:5^
+4028^2^0^25^26^1442^0.3518^0.6172^2^Charred Ancient^785:1:1,4606:1:1^
+4036^5^0^23^24^1442^0.3621^0.5430^5^Rogue Flame Spirit^16312:5:5^
+4044^2^0^23^24^1442^0.4127^0.4552^2^Blackened Basilisk^1701:1:1,11384:1:1,11385:1:1^
 4054^1^0^25^25^1440^0.5771^0.5619^1^Laughing Sister^5867:1:1^
 4070^1^0^20^20^1442^0.6455^0.3804^1^Venture Co. Builder^2592:1:2^
 4074^1^0^23^23^1442^0.6956^0.5735^1^XT 9^2592:1:2,4363:1:1^
@@ -134,6 +140,7 @@ GoldScout-export 9^8oemfgawyuf3^29
 @i^769^Chunk of Boar Meat
 @i^771^Chipped Boar Tusk
 @i^774^Malachite
+@i^785^Mageroyal
 @i^789^Stout Battlehammer of Healing
 @i^805^Small Red Pouch
 @i^814^Flask of Oil
@@ -152,6 +159,7 @@ GoldScout-export 9^8oemfgawyuf3^29
 @i^1503^Warped Leather Boots
 @i^1512^Crude Battle Axe
 @i^1513^Old Greatsword
+@i^1701^Curved Basilisk Claw
 @i^1730^Worn Mail Belt
 @i^1738^Laced Mail Belt
 @i^1739^Laced Mail Boots
@@ -210,8 +218,10 @@ GoldScout-export 9^8oemfgawyuf3^29
 @i^3731^Lion Meat
 @i^3770^Mutton Chop
 @i^3820^Stranglekelp
+@i^3857^Coal
 @i^3931^Poisoned Spider Fang
 @i^4306^Silk Cloth
+@i^4359^Handful of Copper Bolts
 @i^4363^Copper Modulator
 @i^4402^Small Flame Sac
 @i^4537^Tel'Abim Banana
@@ -220,6 +230,7 @@ GoldScout-export 9^8oemfgawyuf3^29
 @i^4562^Severing Axe of Shadow Protection
 @i^4570^Birchwood Maul of the Wolf
 @i^4576^Light Bow
+@i^4606^Spongy Morel
 @i^4671^Ancestral Cloak
 @i^4674^Tribal Cloak
 @i^4775^Cracked Bill
@@ -254,6 +265,7 @@ GoldScout-export 9^8oemfgawyuf3^29
 @i^5101^Ishamuhale's Fang
 @i^5114^Severed Talon
 @i^5115^Broken Wishbone
+@i^5116^Long Tail Feather
 @i^5120^Long Tail Hair
 @i^5123^Steel Arrowhead
 @i^5124^Small Raptor Tooth
@@ -300,6 +312,7 @@ GoldScout-export 9^8oemfgawyuf3^29
 @i^10338^Fresh Zhevra Carcass
 @i^11147^Samophlange Manual Cover
 @i^11148^Samophlange Manual Page
+@i^11384^Broken Basilisk Teeth
 @i^11385^Basilisk Scale
 @i^14088^Beaded Cloak
 @i^14099^Native Sash
@@ -316,9 +329,11 @@ GoldScout-export 9^8oemfgawyuf3^29
 @i^15493^Bloodspattered Loincloth of the Whale
 @i^15499^Outrunner's Cuffs of the Gorilla
 @i^15507^Grunt's Bracers of Holy Wrath
+@i^15519^Spiked Chain Cloak of the Falcon
 @i^15527^Sentry's Gloves of the Beast
 @i^15945^Runic Stave
 @i^16192^Besseleth's Fang
+@i^16312^Incendrites
 @i^16408^Befouled Water Globe
 @i^16646^Shredder Operating Manual - Page 2
 @i^16648^Shredder Operating Manual - Page 4
@@ -343,10 +358,12 @@ GoldScout-export 9^8oemfgawyuf3^29
 @i^253710^Bruuz's Dorsal Fin
 @i^275720^Rough Lizard Hide
 @i^276070^Chol'aruk's Head
+@i^277936^Glittering Sunstone
 @q^414^1:0:0
 @q^769^1:7:1
 @q^771^0:15:0
 @q^774^2:7:1
+@q^785^1:7:1
 @q^789^2:2:0
 @q^805^1:1:0
 @q^814^1:7:1
@@ -365,6 +382,7 @@ GoldScout-export 9^8oemfgawyuf3^29
 @q^1503^0:4:0
 @q^1512^0:2:0
 @q^1513^0:2:0
+@q^1701^0:15:0
 @q^1730^0:4:0
 @q^1738^0:4:0
 @q^1739^0:4:0
@@ -423,8 +441,10 @@ GoldScout-export 9^8oemfgawyuf3^29
 @q^3731^1:7:1
 @q^3770^1:0:0
 @q^3820^1:7:1
+@q^3857^1:7:1
 @q^3931^0:15:0
 @q^4306^1:7:1
+@q^4359^1:7:1
 @q^4363^1:7:1
 @q^4402^1:7:1
 @q^4537^1:0:0
@@ -433,6 +453,7 @@ GoldScout-export 9^8oemfgawyuf3^29
 @q^4562^2:2:0
 @q^4570^2:2:0
 @q^4576^2:2:0
+@q^4606^1:0:0
 @q^4671^1:4:0
 @q^4674^1:4:0
 @q^4775^0:15:0
@@ -467,6 +488,7 @@ GoldScout-export 9^8oemfgawyuf3^29
 @q^5101^1:12:0
 @q^5114^0:15:0
 @q^5115^0:15:0
+@q^5116^1:7:1
 @q^5120^0:15:0
 @q^5123^0:15:0
 @q^5124^0:15:0
@@ -513,6 +535,7 @@ GoldScout-export 9^8oemfgawyuf3^29
 @q^10338^1:12:0
 @q^11147^1:12:0
 @q^11148^1:0:0
+@q^11384^0:15:0
 @q^11385^0:15:0
 @q^14088^1:4:0
 @q^14099^1:4:0
@@ -529,9 +552,11 @@ GoldScout-export 9^8oemfgawyuf3^29
 @q^15493^2:4:0
 @q^15499^2:4:0
 @q^15507^2:4:0
+@q^15519^2:4:0
 @q^15527^2:4:0
 @q^15945^2:4:0
 @q^16192^1:12:0
+@q^16312^1:12:0
 @q^16408^2:12:0
 @q^16646^1:12:0
 @q^16648^1:12:0
@@ -556,6 +581,7 @@ GoldScout-export 9^8oemfgawyuf3^29
 @q^253710^1:12:0
 @q^275720^1:12:0
 @q^276070^1:12:0
+@q^277936^1:12:0
 @m^1411^Durotar
 @m^1413^The Barrens
 @m^1414^Kalimdor
@@ -563,6 +589,7 @@ GoldScout-export 9^8oemfgawyuf3^29
 @m^1420^Tirisfal Glades
 @m^1421^Silverpine Forest
 @m^1434^Stranglethorn Vale
+@m^1436^Westfall
 @m^1440^Ashenvale
 @m^1442^Stonetalon Mountains
 @m^1454^Orgrimmar
@@ -1298,6 +1325,7 @@ GoldScout-export 9^8oemfgawyuf3^29
 @c^279981^
 @c^279982^
 @c^286152^
+@a^114^207:1
 @a^1547^232:1
 @a^1912^271:1,272:1
 @a^2540^271:1
@@ -1404,7 +1432,12 @@ GoldScout-export 9^8oemfgawyuf3^29
 @a^4006^173:1,290:3
 @a^4007^290:3,310:2
 @a^4020^149:1
-@a^4044^168:1
+@a^4022^187:1,246:3,247:3
+@a^4025^246:4,247:4
+@a^4026^246:6,247:4
+@a^4028^246:1,247:1
+@a^4036^187:1,207:2,246:1,247:1
+@a^4044^168:1,187:1
 @a^4054^231:1
 @a^4070^152:1
 @a^4074^233:1
@@ -1429,6 +1462,8 @@ GoldScout-export 9^8oemfgawyuf3^29
 @a^267308^111:1
 @a^267314^111:3
 @a^268623^309:1
+@t^4022^1:23
+@t^4036^3:115
 @f^1413^0^39^150^3820:1:3,6303:9:9,6307:1:1,6358:11:11,6361:10:10,6522:3:3,20708:4:4^149:5,152:34
 @f^1414^0^1^165^6308:1:1^230:1
 @f^1417^0^27^155^6308:11:11,8365:16:16^204:5,205:22
