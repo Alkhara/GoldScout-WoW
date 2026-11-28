@@ -1,4 +1,4 @@
-GoldScout-export 9^rcv1fjjtr3nn^12
+GoldScout-export 9^rcv1fjjtr3nn^13
 3^1^0^25^25^1431^0.2644^0.3192^1^Comecarnes^^
 48^17^0^21^22^1431^0.7928^0.7086^17^Guerrero esquelético^2378:3:3,2592:1:2,4606:1:1,6564:1:1,14171:1:1,211854:1:1^
 98^8^0^17^18^1436^0.6325^0.7224^8^Capataz Zarparrío^2589:4:9,2592:1:2^
@@ -37,6 +37,9 @@ GoldScout-export 9^rcv1fjjtr3nn^12
 579^1^0^23^23^1433^0.6828^0.4345^1^Asesino Pielsombra^^
 703^1^0^26^26^1433^0.7486^0.3763^1^Teniente Fangore^3632:1:1^
 930^2^0^24^25^1431^0.7991^0.5600^2^Prole de viuda negra^3174:1:1,4428:2:2^
+1040^1^0^25^25^1437^0.5021^0.3958^1^Trepador del pantano^2450:1:1^
+1111^7^0^21^22^1437^0.5220^0.6301^7^Acechador sanguijuela^878:1:1,1081:2:2,1288:1:1,2251:5:5,3174:4:4,248682:1:1^
+2946^5^0^44^44^1424^0.4928^0.5236^5^Marioneta de Helcular^^
 4064^2^0^20^21^1433^0.6017^0.4958^2^Explorador Roca Negra^6562:1:1^
 4065^6^0^21^22^1433^0.6126^0.5257^6^Avizor Roca Negra^2592:1:2,2765:1:1,211855:1:1^
 4462^5^0^23^24^1433^0.6388^0.5606^5^Cazador Roca Negra^1775:1:1,3202:1:1,15269:1:1,211853:1:1,211855:1:1^
@@ -65,6 +68,7 @@ GoldScout-export 9^rcv1fjjtr3nn^12
 @i^1210^Gema de las Sombras
 @i^1212^Gapo gnoll
 @i^1261^Orbe de medianoche
+@i^1288^Glándula de veneno grande
 @i^1299^Cinturón de la Espiral inferior
 @i^1420^Brazales de cuero desgastados
 @i^1429^Capa de retales
@@ -87,6 +91,7 @@ GoldScout-export 9^rcv1fjjtr3nn^12
 @i^2251^Pata pegajosa de araña
 @i^2287^Anca de carne
 @i^2378^Dedo esquelético
+@i^2450^Brezospina
 @i^2455^Poción de maná menor
 @i^2589^Paño de lino
 @i^2592^Paño de lana
@@ -128,6 +133,7 @@ GoldScout-export 9^rcv1fjjtr3nn^12
 @i^211853^Pergamino: VOCE WELL
 @i^211854^Pergamino: OMIT KESA
 @i^211855^Pergamino: STHENIC LUNATE
+@i^248682^Cajón arrebatado: Hierbas de aprendiz
 @i^248684^Cajón arrebatado: Textiles de aprendiz
 @i^248685^Cajón arrebatado: Curiosidades de aprendiz
 @i^248688^Cajón arrebatado: Textiles de oficial
@@ -154,6 +160,7 @@ GoldScout-export 9^rcv1fjjtr3nn^12
 @q^1210^2:7:1
 @q^1212^0:15:0
 @q^1261^1:12:0
+@q^1288^1:7:1
 @q^1299^2:4:0
 @q^1420^0:4:0
 @q^1429^0:4:0
@@ -176,6 +183,7 @@ GoldScout-export 9^rcv1fjjtr3nn^12
 @q^2251^1:7:1
 @q^2287^1:0:0
 @q^2378^1:12:0
+@q^2450^1:7:1
 @q^2455^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
@@ -217,14 +225,17 @@ GoldScout-export 9^rcv1fjjtr3nn^12
 @q^211853^1:0:0
 @q^211854^1:0:0
 @q^211855^1:0:0
+@q^248682^1:0:1
 @q^248684^1:0:1
 @q^248685^1:0:1
 @q^248688^1:0:1
 @q^248703^2:0:1
+@m^1424^Laderas de Trabalomas
 @m^1429^Bosque de Elwynn
 @m^1431^Bosque del Ocaso
 @m^1433^Montañas Crestagrana
 @m^1436^Páramos de Poniente
+@m^1437^Los Humedales
 @c^118^
 @c^724^
 @c^733^
@@ -624,6 +635,9 @@ GoldScout-export 9^rcv1fjjtr3nn^12
 @a^579^173:1
 @a^703^154:1
 @a^930^216:1,235:1
+@a^1040^150:1
+@a^1111^250:7
+@a^2946^209:5
 @a^4064^191:1,192:1
 @a^4065^191:1,192:1,212:4
 @a^4462^232:5
@@ -642,6 +656,9 @@ GoldScout-export 9^rcv1fjjtr3nn^12
 @t^531^1:113
 @t^539^11:1980
 @t^565^9:736
+@t^1040^1:254
+@t^1111^6:303
+@t^2946^4:19
 @t^6866^4:62
 @t^6927^16:222
 @l^0^esMX

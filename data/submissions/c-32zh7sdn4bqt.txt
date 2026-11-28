@@ -1,4 +1,4 @@
-GoldScout-export 9^32zh7sdn4bqt^43
+GoldScout-export 9^32zh7sdn4bqt^44
 6^20^0^1^2^1429^0.4869^0.3618^20^Kobold Vermin^755:7:7,1364:1:1,1366:1:1,1372:1:1,1376:1:1,1378:1:1,2210:1:1,2589:7:7,4536:1:1,247834:2:2,247839:4:4^
 30^2^0^5^6^1429^0.4227^0.7662^2^Forest Spider^2590:1:1,5465:1:1^
 36^12^0^11^12^1436^0.4975^0.3360^12^Harvest Golem^732:3:3,814:1:1,1274:4:4,1510:1:1,4359:2:2,255007:4:4^
@@ -79,7 +79,12 @@ GoldScout-export 9^32zh7sdn4bqt^43
 2562^3^0^32^33^1417^0.3674^0.4437^3^Boulderfist Ogre^3792:1:1,213422:1:1^
 2564^5^0^33^34^1417^0.3439^0.4438^5^Boulderfist Enforcer^2592:1:3,3385:1:1,4306:1:1^
 2579^1^0^34^34^1417^0.6293^0.6728^1^Mesa Buzzard^5116:1:1^
+2655^2^0^46^47^1425^0.5009^0.4579^2^Green Sludge^3676:1:1,20767:1:1^
+2686^1^0^44^45^1425^0.3593^0.6363^1^Witherbark Broodguard^10285:1:1,12205:1:1^
 2762^1^0^39^39^1417^0.5194^0.5039^1^Thundering Exile^4480:1:1^
+2924^1^0^43^44^1425^0.3395^0.6085^1^Silvermane Wolf^12208:1:1,262889:1:1^
+2927^1^0^43^43^1425^0.3444^0.6158^1^Vicious Owlbeast^^
+2928^2^0^44^45^1425^0.3816^0.6289^2^Primitive Owlbeast^12207:1:1,221359:1:1^
 3560^1^0^33^33^1417^0.6429^0.7287^1^Healing Ward^^
 3974^1^0^0^0^0^0.0000^0.0000^0^^7710:1:1,15232:1:1^
 3975^1^0^0^0^0^0.0000^0.0000^0^^7718:1:1^
@@ -164,6 +169,7 @@ GoldScout-export 9^32zh7sdn4bqt^43
 7356^2^0^0^0^0^0.0000^0.0000^0^^10760:1:1,10766:1:1,254038:1:1^
 7357^1^0^0^0^0^0.0000^0.0000^0^^10770:1:1,15597:1:1^
 7358^1^0^0^0^0^0.0000^0.0000^0^^10762:1:1^
+7768^2^0^25^25^1425^0.3590^0.6386^2^Witherbark Bloodling^^
 7872^1^0^33^33^1413^0.4685^0.9216^1^Death's Head Cultist^^
 7873^3^0^33^34^1413^0.4818^0.9182^3^Razorfen Battleguard^4306:1:3^
 7874^4^0^33^34^1413^0.4779^0.9018^4^Razorfen Thornweaver^4306:2:6,4539:1:1^
@@ -367,6 +373,7 @@ GoldScout-export 9^32zh7sdn4bqt^43
 @i^3609^Plans: Copper Chain Vest
 @i^3667^Tender Crocolisk Meat
 @i^3671^Lifeless Skull
+@i^3676^Slimy Ichor
 @i^3731^Lion Meat
 @i^3771^Wild Hog Shank
 @i^3780^Long-barreled Musket
@@ -479,6 +486,7 @@ GoldScout-export 9^32zh7sdn4bqt^43
 @i^9853^Conjurer's Cinch of the Owl
 @i^9857^Archer's Bracers of the Bandit
 @i^9898^Jazeraint Cloak of the Owl
+@i^10285^Shadow Silk
 @i^10330^Scarlet Leggings
 @i^10760^Swine Fists
 @i^10762^Robes of the Lich
@@ -493,6 +501,7 @@ GoldScout-export 9^32zh7sdn4bqt^43
 @i^11418^Hollow Wing Bone
 @i^12037^Mystery Meat
 @i^12203^Red Wolf Meat
+@i^12205^White Spider Meat
 @i^12207^Giant Egg
 @i^12208^Tender Wolf Meat
 @i^14215^Vital Tunic of Fire Protection
@@ -520,6 +529,7 @@ GoldScout-export 9^32zh7sdn4bqt^43
 @i^19507^Inquisitor's Shawl
 @i^19938^Heavy Scorpid Leg
 @i^20763^Broken Weapon
+@i^20767^Scum Covered Bag
 @i^211780^Scroll: KWYJIBO
 @i^211785^Scroll: CWAL
 @i^211786^Scroll: CHAP BALK WELLES
@@ -530,6 +540,7 @@ GoldScout-export 9^32zh7sdn4bqt^43
 @i^213546^Scroll: SHOOBEEDOOP
 @i^213547^Scroll: THAW WORDS
 @i^216483^Witherbark Mallet
+@i^221359^Pristine Owlbeast Quill
 @i^247826^Croaky's Head
 @i^247834^Nibbled-On Book
 @i^247839^Stolen Book
@@ -704,6 +715,7 @@ GoldScout-export 9^32zh7sdn4bqt^43
 @q^3609^2:9:0
 @q^3667^1:7:1
 @q^3671^0:15:0
+@q^3676^0:15:0
 @q^3731^1:7:1
 @q^3771^1:0:0
 @q^3780^0:2:0
@@ -816,6 +828,7 @@ GoldScout-export 9^32zh7sdn4bqt^43
 @q^9853^2:4:0
 @q^9857^2:4:0
 @q^9898^2:4:0
+@q^10285^1:7:1
 @q^10330^3:4:0
 @q^10760^3:4:0
 @q^10762^3:4:0
@@ -830,6 +843,7 @@ GoldScout-export 9^32zh7sdn4bqt^43
 @q^11418^0:15:0
 @q^12037^1:7:1
 @q^12203^1:7:1
+@q^12205^1:7:1
 @q^12207^1:7:1
 @q^12208^1:7:1
 @q^14215^2:4:0
@@ -857,6 +871,7 @@ GoldScout-export 9^32zh7sdn4bqt^43
 @q^19507^3:4:0
 @q^19938^0:15:0
 @q^20763^0:15:0
+@q^20767^1:15:0
 @q^211780^1:0:0
 @q^211785^1:0:0
 @q^211786^1:0:0
@@ -867,6 +882,7 @@ GoldScout-export 9^32zh7sdn4bqt^43
 @q^213546^1:0:0
 @q^213547^1:0:0
 @q^216483^1:0:0
+@q^221359^1:12:0
 @q^247826^1:12:0
 @q^247834^1:15:0
 @q^247839^1:12:0
@@ -911,6 +927,7 @@ GoldScout-export 9^32zh7sdn4bqt^43
 @m^1413^The Barrens
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
+@m^1425^The Hinterlands
 @m^1429^Elwynn Forest
 @m^1432^Loch Modan
 @m^1433^Redridge Mountains
@@ -1959,7 +1976,12 @@ GoldScout-export 9^32zh7sdn4bqt^43
 @a^2562^167:3
 @a^2564^166:4,167:1
 @a^2579^272:1
+@a^2655^189:1,190:1
+@a^2686^247:1
 @a^2762^210:1
+@a^2924^246:1
+@a^2927^246:1
+@a^2928^247:2
 @a^3560^292:1
 @a^4014^170:1
 @a^4343^229:1
@@ -1999,6 +2021,7 @@ GoldScout-export 9^32zh7sdn4bqt^43
 @a^5616^92:2
 @a^5643^110:1
 @a^6549^229:1
+@a^7768^247:2
 @a^7872^369:1
 @a^7873^349:1,369:2
 @a^7874^349:2,369:2
@@ -2081,12 +2104,17 @@ GoldScout-export 9^32zh7sdn4bqt^43
 @t^2562^2:86
 @t^2564^5:208
 @t^2579^1:26
+@t^2655^1:30
+@t^2686^1:27
 @t^2762^1:286
+@t^2927^1:233
+@t^2928^2:107
 @t^3560^1:78
 @t^4404^5:446
 @t^4405^9:645
 @t^4414^1:290
 @t^6549^1:70
+@t^7768^2:9
 @t^11915^1:644
 @t^12922^1:30
 @t^248278^1:57
