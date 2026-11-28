@@ -1,4 +1,4 @@
-GoldScout-export 9^g60fuukks5sf^20
+GoldScout-export 9^g60fuukks5sf^21
 588^11^0^34^35^1434^0.2513^0.1140^11^Eclaireur Bloodscalp^1519:3:3,2748:1:1,3771:1:1,3901:3:3,3915:1:1,4306:2:3,7463:1:1^
 595^19^0^34^35^1434^0.2535^0.1067^19^Chasseur Bloodscalp^1519:1:1,1708:3:3,2592:1:2,2735:1:1,2748:1:1,2749:1:1,3771:1:1,3794:1:1,3901:3:3,3915:6:6,4306:1:2,4338:2:2^
 597^5^0^36^37^1434^0.2390^0.0939^5^Berserker Bloodscalp^1519:2:2,3915:1:1,4306:1:1^
@@ -136,6 +136,16 @@ GoldScout-export 9^g60fuukks5sf^20
 5045^1^0^36^36^1445^0.4242^0.3806^1^Soldat Hallan^1707:1:1^
 5046^2^0^37^37^1445^0.4230^0.3790^2^Lieutenant Caldwell^1710:1:1^
 5048^1^0^0^0^0^0.0000^0.0000^0^^6444:1:1^
+5229^7^0^40^41^1444^0.7712^0.3091^7^Ogre Gordunni^4338:3:3^
+5232^4^0^42^43^1444^0.7510^0.2877^4^Brute Gordunni^4338:1:2,15157:1:1^
+5237^7^0^41^42^1444^0.7653^0.3050^7^Ogre-mage Gordunni^1645:2:2,4306:2:3,4338:2:3,4421:1:1^
+5249^10^0^40^41^1444^0.7273^0.3800^10^Bâtard Griffebois^4306:1:1,4338:4:8,4599:1:1,6149:1:1,9237:1:1^
+5251^17^0^41^42^1444^0.7258^0.3676^17^Trappeur Griffebois^1645:1:1,4000:1:1,4006:1:1,4306:1:2,4338:4:5,9237:7:7^
+5253^7^0^41^42^1444^0.7251^0.3742^7^Brute Griffebois^1645:1:1,4306:1:2,8705:1:1,9237:2:2^
+5255^1^0^42^43^1444^0.6889^0.5642^1^Ravageur Griffebois^^
+5258^3^0^43^44^1444^0.6983^0.5499^3^Alpha Griffebois^^
+5278^7^0^43^45^1444^0.6829^0.4790^7^Fée fléchetteuse^4460:2:2,9369:6:10,11474:1:1,262889:1:1^
+5287^1^0^43^43^1444^0.7216^0.6048^1^Hurleur Longues-dents^4583:1:1^
 5755^2^0^0^0^0^0.0000^0.0000^0^^6445:2:2^
 5756^1^0^0^0^0^0.0000^0.0000^0^^6445:1:1^
 5775^1^0^0^0^0^0.0000^0.0000^0^^2449:1:1,6631:1:1^
@@ -143,6 +153,7 @@ GoldScout-export 9^g60fuukks5sf^20
 6426^2^0^0^0^0^0.0000^0.0000^0^^4306:1:1,15285:1:1^
 6487^1^0^0^0^0^0.0000^0.0000^0^^7711:1:1,274293:1:1^
 6575^4^0^0^0^0^0.0000^0.0000^0^^1708:1:1,1782:1:1,4306:2:4^
+7726^1^0^42^42^1444^0.6783^0.4800^1^Naturaliste du Totem sinistre^^
 11521^1^0^37^38^1443^0.5453^0.6380^1^Apparition kodo^^
 11562^1^0^33^33^1443^0.3126^0.2862^1^Rampant Claquesec^^
 11563^1^0^35^35^1443^0.3300^0.3102^1^Pinceur Claquesec^15878:1:1^
@@ -334,6 +345,8 @@ GoldScout-export 9^g60fuukks5sf^20
 @i^3927^Cheddar affiné
 @i^3940^Gants en crochet
 @i^3966^Pantalon en cuir épais
+@i^4000^Ceinture en anneaux doubliers
+@i^4006^Protège-épaules en anneaux doubliers
 @i^4017^Epée courte tranchante
 @i^4020^Hache de guerre brisante
 @i^4043^Brassards de l'aurore
@@ -345,11 +358,13 @@ GoldScout-export 9^g60fuukks5sf^20
 @i^4337^Soie d'araignée épaisse
 @i^4338^Etoffe de tisse-mage
 @i^4416^Schéma : Mine gobeline
+@i^4421^Parchemin de Protection III
 @i^4435^Poussières de Myzrael
 @i^4460^Palmure d'aile arrachée
 @i^4461^Peau de raptor
 @i^4555^Epaisse queue écailleuse
 @i^4582^Queue fournie soyeuse
+@i^4583^Epaisse crinière
 @i^4585^Mandibule d'araignée visqueuse
 @i^4586^Peau lisse de raptor
 @i^4599^Jambonneau traité
@@ -385,6 +400,7 @@ GoldScout-export 9^g60fuukks5sf^20
 @i^5959^Sac de venin acide
 @i^5970^Gants du serpent
 @i^6067^Oreille de centaure
+@i^6149^Potion de mana supérieure
 @i^6289^Lutjan à longue mâchoire cru
 @i^6308^Poisson-chat moustachu cru
 @i^6358^Bouche-noire huileux
@@ -424,9 +440,12 @@ GoldScout-export 9^g60fuukks5sf^20
 @i^7973^Palourde à large bouche
 @i^8146^Serre cruelle
 @i^8225^Epée de corruption
+@i^8705^Balise de détresse OOX-22 FE
 @i^8746^Capuche entrelacée
 @i^8749^Chapeau en crochet
+@i^9237^Crinière de gnoll Griffebois
 @i^9355^Boucle d'oreille
+@i^9369^Aile iridescente de fée fléchetteuse
 @i^9780^Gants de bandit de magie
 @i^9831^Cape en cuir écaillé de brigandage
 @i^9835^Tunique en cuir écaillé de la chouette
@@ -446,6 +465,7 @@ GoldScout-export 9^g60fuukks5sf^20
 @i^11386^Oeil spongieux de basilic
 @i^11416^Cage thoracique délicate
 @i^11418^Os creux d'aile
+@i^11474^Oeuf de Fée fléchetteuse
 @i^12037^Viande mystère
 @i^12184^Chair de raptor
 @i^12202^Viande de tigre
@@ -454,6 +474,7 @@ GoldScout-export 9^g60fuukks5sf^20
 @i^12206^Viande de crabe tendre
 @i^13422^Anguille pierre-écaille
 @i^13542^Boîte démoniaque
+@i^15157^Jambières de noctambule du sanglier
 @i^15233^Hache sauvage de la chouette
 @i^15285^Arc long d'archer
 @i^15349^Ceinture de chasseur de têtes de l'épervier
@@ -620,6 +641,8 @@ GoldScout-export 9^g60fuukks5sf^20
 @q^3927^1:0:0
 @q^3940^0:4:0
 @q^3966^0:4:0
+@q^4000^0:4:0
+@q^4006^0:4:0
 @q^4017^0:2:0
 @q^4020^0:2:0
 @q^4043^2:4:0
@@ -631,11 +654,13 @@ GoldScout-export 9^g60fuukks5sf^20
 @q^4337^1:7:1
 @q^4338^1:7:1
 @q^4416^2:9:0
+@q^4421^1:0:0
 @q^4435^1:12:0
 @q^4460^0:15:0
 @q^4461^1:7:1
 @q^4555^0:15:0
 @q^4582^1:12:0
+@q^4583^0:15:0
 @q^4585^0:15:0
 @q^4586^0:15:0
 @q^4599^1:0:0
@@ -671,6 +696,7 @@ GoldScout-export 9^g60fuukks5sf^20
 @q^5959^1:12:0
 @q^5970^3:4:0
 @q^6067^1:12:0
+@q^6149^1:0:0
 @q^6289^1:7:1
 @q^6308^1:7:1
 @q^6358^1:7:1
@@ -710,9 +736,12 @@ GoldScout-export 9^g60fuukks5sf^20
 @q^7973^1:7:0
 @q^8146^1:7:1
 @q^8225^3:2:0
+@q^8705^2:12:0
 @q^8746^0:4:0
 @q^8749^0:4:0
+@q^9237^1:12:0
 @q^9355^0:15:0
+@q^9369^1:12:0
 @q^9780^2:4:0
 @q^9831^2:4:0
 @q^9835^2:4:0
@@ -732,6 +761,7 @@ GoldScout-export 9^g60fuukks5sf^20
 @q^11386^0:15:0
 @q^11416^0:15:0
 @q^11418^0:15:0
+@q^11474^1:15:0
 @q^12037^1:7:1
 @q^12184^1:7:1
 @q^12202^1:7:1
@@ -740,6 +770,7 @@ GoldScout-export 9^g60fuukks5sf^20
 @q^12206^1:7:1
 @q^13422^1:7:1
 @q^13542^1:12:0
+@q^15157^2:4:0
 @q^15233^2:2:0
 @q^15285^2:2:0
 @q^15349^2:4:0
@@ -826,6 +857,7 @@ GoldScout-export 9^g60fuukks5sf^20
 @m^1434^Vallée de Strangleronce
 @m^1442^Les Serres-Rocheuses
 @m^1443^Désolace
+@m^1444^Féralas
 @m^1445^Marécage d'Âprefange
 @m^2548^Rives Claires
 @c^118^
@@ -1637,6 +1669,17 @@ GoldScout-export 9^g60fuukks5sf^20
 @a^5044^148:3
 @a^5045^148:1
 @a^5046^148:2
+@a^5229^114:1,115:3,135:2,136:1
+@a^5232^114:1,115:3
+@a^5237^115:5,135:1,156:1
+@a^5249^154:10
+@a^5251^154:17
+@a^5253^154:7
+@a^5255^233:1
+@a^5258^213:2,234:1
+@a^5278^193:7
+@a^5287^254:1
+@a^7726^193:1
 @a^11521^250:1
 @a^11562^106:1
 @a^11563^126:1
@@ -1709,6 +1752,16 @@ GoldScout-export 9^g60fuukks5sf^20
 @a^266357^192:1
 @a^270667^249:5,269:3
 @a^272313^294:1,331:1
+@t^5229^4:262
+@t^5232^3:338
+@t^5237^3:332
+@t^5249^9:226
+@t^5251^17:602
+@t^5253^7:217
+@t^5258^2:347
+@t^5278^7:605
+@t^5287^1:148
+@t^7726^1:52
 @f^1434^0^1^154^21151:1:2^85:1
 @f^1442^0^2^180^6289:1:1,6308:1:1^249:2
 @f^2548^0^167^154^3820:5:11,4603:3:3,6358:52:52,6359:41:41,6362:2:2,13422:47:95,21151:4:6,21228:13:13^75:5,76:1,96:16,117:14,137:23,157:5,177:5,178:4,195:11,196:13,215:5,216:10,254:6,255:4,274:6,293:4,294:5,312:2,313:7,331:6,333:2,351:5,353:8
