@@ -1,4 +1,4 @@
-GoldScout-export 9^s51ykkpzvxlw^10
+GoldScout-export 9^s51ykkpzvxlw^11
 3^15^0^24^25^1431^0.2435^0.3882^15^Flesh Eater^887:3:3,1751:1:1,1772:1:1,1819:1:1,2589:2:4,2592:1:2,2783:1:1,5529:1:1,6530:4:4^
 30^1^0^5^5^1429^0.3644^0.6074^1^Forest Spider^1476:1:1,5465:1:2^
 36^2^0^11^12^1436^0.5750^0.3622^2^Harvest Golem^814:1:1,1274:1:1^
@@ -32,6 +32,7 @@ GoldScout-export 9^s51ykkpzvxlw^10
 449^6^0^16^17^1436^0.4794^0.7759^6^Defias Knuckleduster^414:1:1,955:1:1,2592:1:2,7997:1:1,15268:1:1^
 454^25^0^12^13^1436^0.5236^0.3674^25^Young Goretusk^723:7:7,731:9:9,769:19:19,771:6:6,2677:6:6,3171:5:5,3172:6:6,6269:1:1,9752:1:1,211786:1:1,211787:1:1^
 473^1^0^10^10^1429^0.7081^0.7981^1^Morgan the Collector^2239:1:1^
+475^7^0^5^6^1429^0.3727^0.8289^7^Kobold Tunneler^772:2:2,773:1:1,1181:1:1,1370:1:1,2589:4:7,2651:1:1,3363:1:1,248001:2:2^
 480^3^0^9^10^1436^0.5794^0.1919^3^Rusty Harvest Golem^814:1:1,9745:1:1^
 481^3^0^11^11^1436^0.5702^0.1996^3^Defias Footpad^1179:1:1,1507:1:1^
 500^10^0^12^13^1436^0.4608^0.1525^10^Riverpaw Scout^725:3:3,858:1:1,1501:1:1,211780:1:1^
@@ -89,6 +90,8 @@ GoldScout-export 9^s51ykkpzvxlw^10
 @i^755^Melted Candle
 @i^769^Chunk of Boar Meat
 @i^771^Chipped Boar Tusk
+@i^772^Large Candle
+@i^773^Gold Dust
 @i^814^Flask of Oil
 @i^829^Red Leather Bandana
 @i^858^Lesser Healing Potion
@@ -101,6 +104,7 @@ GoldScout-export 9^s51ykkpzvxlw^10
 @i^1081^Crisp Spider Meat
 @i^1179^Ice Cold Milk
 @i^1180^Scroll of Stamina
+@i^1181^Scroll of Spirit
 @i^1205^Melon Juice
 @i^1212^Gnoll Spittle
 @i^1274^Hops
@@ -140,6 +144,7 @@ GoldScout-export 9^s51ykkpzvxlw^10
 @i^2455^Minor Mana Potion
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2651^Flimsy Chain Bracers
 @i^2672^Stringy Wolf Meat
 @i^2677^Boar Ribs
 @i^2763^Fisherman Knife
@@ -205,6 +210,7 @@ GoldScout-export 9^s51ykkpzvxlw^10
 @i^211787^Scroll: LOWER PING WHOMEVER
 @i^211854^Scroll: OMIT KESA
 @i^247886^Sack of Picture Books
+@i^248001^Lost Book
 @i^248682^Waylaid Crate: Apprentice Herbs
 @i^248684^Waylaid Crate: Apprentice Textiles
 @i^248686^Waylaid Crate: Journeyman Herbs
@@ -228,6 +234,8 @@ GoldScout-export 9^s51ykkpzvxlw^10
 @q^755^0:15:0
 @q^769^1:7:1
 @q^771^0:15:0
+@q^772^1:12:0
+@q^773^1:12:0
 @q^814^1:7:1
 @q^829^1:12:0
 @q^858^1:0:0
@@ -240,6 +248,7 @@ GoldScout-export 9^s51ykkpzvxlw^10
 @q^1081^1:7:1
 @q^1179^1:0:0
 @q^1180^1:0:0
+@q^1181^1:0:0
 @q^1205^1:0:0
 @q^1212^0:15:0
 @q^1274^1:12:0
@@ -279,6 +288,7 @@ GoldScout-export 9^s51ykkpzvxlw^10
 @q^2455^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2651^0:4:0
 @q^2672^1:7:1
 @q^2677^1:7:1
 @q^2763^0:2:0
@@ -344,6 +354,7 @@ GoldScout-export 9^s51ykkpzvxlw^10
 @q^211787^1:0:0
 @q^211854^1:0:0
 @q^247886^1:12:0
+@q^248001^1:12:0
 @q^248682^1:0:1
 @q^248684^1:0:1
 @q^248686^1:0:1
@@ -1273,6 +1284,7 @@ GoldScout-export 9^s51ykkpzvxlw^10
 @a^449^290:1,307:1,309:2,310:2
 @a^454^51:1,69:2,70:1,90:3,131:1,169:4,170:4,171:1,190:8
 @a^473^314:1
+@a^475^307:2,327:3,347:2
 @a^480^71:2,91:1
 @a^481^71:2,91:1
 @a^500^48:2,49:1,51:1,68:4,69:2
@@ -1333,6 +1345,7 @@ GoldScout-export 9^s51ykkpzvxlw^10
 @t^441^1:58
 @t^442^7:172
 @t^449^6:207
+@t^475^6:189
 @t^500^9:287
 @t^547^13:795
 @t^550^1:56
