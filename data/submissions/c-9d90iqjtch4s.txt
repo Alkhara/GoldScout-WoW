@@ -1,4 +1,4 @@
-GoldScout-export 9^9d90iqjtch4s^17
+GoldScout-export 9^9d90iqjtch4s^19
 213^1^0^19^19^1431^0.7982^0.2021^1^Starving Dire Wolf^893:1:1,1015:1:1^
 569^1^0^21^21^1431^0.7528^0.2290^1^Green Recluse^2251:1:1^
 1417^6^0^21^22^1437^0.0996^0.5077^6^Young Wetlands Crocolisk^770:2:2,3397:2:2,3667:3:3^
@@ -15,8 +15,17 @@ GoldScout-export 9^9d90iqjtch4s^17
 2235^21^0^15^17^1439^0.3732^0.6761^21^Reef Crawler^2674:8:8,2675:8:8,3010:8:8,4874:5:5,5523:6:6,12237:6:6^
 2336^15^0^16^17^1439^0.5634^0.2689^15^Dark Strand Fanatic^414:2:2,1814:1:1,2589:3:6,2592:2:4,2781:1:1,5348:4:4,15487:1:1^
 3662^1^0^17^17^1439^0.5683^0.2670^1^Delmanis the Hated^1179:1:1^
+3725^4^0^18^19^1440^0.3132^0.3013^4^Dark Strand Cultist^2592:1:2^
+3727^1^0^21^21^1440^0.3184^0.3092^1^Dark Strand Enforcer^4306:1:1,4542:1:1,5366:1:1^
+3728^1^0^18^19^1440^0.3215^0.2991^1^Dark Strand Adept^^
+3732^3^0^18^19^1440^0.3183^0.2378^3^Forsaken Seeker^^
+3733^2^0^18^19^1440^0.3165^0.2280^2^Forsaken Herbalist^2592:2:3^
+3734^8^0^20^20^1440^0.3182^0.2346^8^Forsaken Thug^2592:2:3,14370:1:1^
+3740^1^0^21^21^1440^0.1994^0.4151^1^Saltspittle Muckdweller^5463:1:1,17057:1:1^
 3809^1^0^22^22^1440^0.3321^0.3976^1^Ashenvale Bear^2940:1:1^
 3925^1^0^23^24^1440^0.3322^0.3977^1^Thistlefur Avenger^^
+8996^1^0^18^19^1440^0.3215^0.2995^1^Voidwalker Minion^^
+12922^4^0^18^19^1440^0.3136^0.3010^4^Imp Minion^^
 @i^414^Dalaran Sharp
 @i^730^Murloc Eye
 @i^770^Pointy Crocolisk Tooth
@@ -40,9 +49,13 @@ GoldScout-export 9^9d90iqjtch4s^17
 @i^3173^Bear Meat
 @i^3397^Young Crocolisk Skin
 @i^3667^Tender Crocolisk Meat
+@i^4306^Silk Cloth
+@i^4542^Moist Cornbread
 @i^4681^Brackwater Girdle
 @i^4874^Clean Fishbones
 @i^5348^Worn Parchment
+@i^5366^Glowing Soul Gem
+@i^5463^Glowing Gem
 @i^5523^Small Barnacled Clam
 @i^5568^Smooth Pebble
 @i^5784^Slimy Murloc Scale
@@ -55,10 +68,12 @@ GoldScout-export 9^9d90iqjtch4s^17
 @i^12237^Fine Crab Chunks
 @i^12238^Darkshore Grouper
 @i^14123^Ritual Cape of the Wolf
+@i^14370^Mystic's Woolies
 @i^15015^Lupine Cloak
 @i^15485^War Torn Pants of Strength
 @i^15487^War Torn Tunic of the Eagle
 @i^15489^Bloodspattered Sabatons of Stamina
+@i^17057^Shiny Fish Scales
 @i^20708^Tightly Sealed Trunk
 @q^414^1:0:0
 @q^730^1:7:1
@@ -83,9 +98,13 @@ GoldScout-export 9^9d90iqjtch4s^17
 @q^3173^1:7:1
 @q^3397^1:12:0
 @q^3667^1:7:1
+@q^4306^1:7:1
+@q^4542^1:0:0
 @q^4681^1:4:0
 @q^4874^0:15:0
 @q^5348^1:12:0
+@q^5366^1:12:0
+@q^5463^1:12:0
 @q^5523^1:7:0
 @q^5568^1:6:0
 @q^5784^1:7:1
@@ -98,10 +117,12 @@ GoldScout-export 9^9d90iqjtch4s^17
 @q^12237^1:12:0
 @q^12238^1:0:0
 @q^14123^2:4:0
+@q^14370^2:4:0
 @q^15015^1:4:0
 @q^15485^2:4:0
 @q^15487^2:4:0
 @q^15489^2:4:0
+@q^17057^1:15:0
 @q^20708^1:15:0
 @m^1431^Duskwood
 @m^1437^Wetlands
@@ -808,8 +829,17 @@ GoldScout-export 9^9d90iqjtch4s^17
 @a^2235^89:4,287:1,306:1,307:8,326:7
 @a^2336^111:15
 @a^3662^111:1
+@a^3725^106:2,126:2
+@a^3727^126:1
+@a^3728^106:1
+@a^3732^86:3
+@a^3733^86:2
+@a^3734^86:8
+@a^3740^163:1
 @a^3809^146:1
 @a^3925^146:1
+@a^8996^106:1
+@a^12922^106:2,126:2
 @t^569^1:46
 @t^1417^3:459
 @t^2069^1:16
@@ -823,8 +853,17 @@ GoldScout-export 9^9d90iqjtch4s^17
 @t^2235^18:959
 @t^2336^15:816
 @t^3662^1:49
+@t^3725^4:615
+@t^3727^1:52
+@t^3728^1:1
+@t^3732^2:477
+@t^3733^2:70
+@t^3734^8:185
 @t^3925^1:17
+@t^8996^1:47
+@t^12922^4:24
 @f^1431^0^9^18^6289:5:5,6291:4:4^58:9
 @f^1439^0^36^45^6303:8:8,6358:3:3,6361:9:9,12238:14:14,20708:2:2^89:16,108:2,147:11,166:4,307:3
+@f^1440^0^1^75^6308:1:1^164:1
 @f^1455^0^12^6^6289:8:8,6291:1:1,6308:3:3^49:12
 @l^0^enUS

@@ -1,4 +1,4 @@
-GoldScout-export 9^zjvt20l2b5xk^47
+GoldScout-export 9^zjvt20l2b5xk^48
 232^1^0^23^23^1424^0.3301^0.3511^1^Farmer Ray^2589:1:3^
 587^30^0^33^34^1434^0.3050^0.1904^30^Bloodscalp Warrior^1520:4:4,1710:1:1,2592:7:14,2730:1:1,2732:1:1,3816:1:1,3901:7:7,3915:8:8,4306:7:10^
 588^11^0^34^35^1434^0.2566^0.1193^11^Bloodscalp Scout^1519:4:4,2289:1:1,2725:1:1,2732:1:1,2745:1:1,3771:1:1,4306:4:6,13127:1:1^
@@ -363,7 +363,8 @@ GoldScout-export 9^zjvt20l2b5xk^47
 260802^1^0^0^0^0^0.0000^0.0000^0^^286984:1:1^
 260803^2^0^0^0^0^0.0000^0.0000^0^^1074:2:2,1803:1:1^
 262397^19^0^36^38^1434^0.2425^0.2702^19^Brinescale Skirmisher^1645:3:3,4603:3:7,5524:6:6,6149:1:1,17058:5:5,270305:10:10^
-263343^1^0^37^37^2548^0.6872^0.4937^1^Low Plains Buzzard^1464:1:1^
+263307^3^0^37^38^2548^0.6179^0.5888^3^Glade Viper^6444:2:2,6826:1:1^
+263343^12^0^37^38^2548^0.6637^0.5599^12^Low Plains Buzzard^1464:6:6,3404:5:5,5829:1:1,12037:7:7,271793:6:6^
 263886^1^0^0^0^0^0.0000^0.0000^0^^274612:1:1^
 263899^2^0^0^0^0^0.0000^0.0000^0^^3804:1:1^
 264079^2^0^27^28^1412^0.3372^0.1134^2^Gloomrise Hatchling^3167:2:2^
@@ -495,6 +496,7 @@ GoldScout-export 9^zjvt20l2b5xk^47
 @i^3399^Vulture Talon
 @i^3402^Soft Patch of Fur
 @i^3403^Ivory Boar Tusk
+@i^3404^Buzzard Wing
 @i^3467^Dull Iron Key
 @i^3499^Burnished Gold Key
 @i^3601^Syndicate Missive
@@ -623,6 +625,7 @@ GoldScout-export 9^zjvt20l2b5xk^47
 @i^6386^Glimmering Mail Legguards
 @i^6408^Insignia Gloves
 @i^6441^Shadowstalker Scalp
+@i^6444^Forked Tongue
 @i^6464^Wailing Essence
 @i^6530^Nightcrawlers
 @i^6538^Willow Robe of Strength
@@ -785,6 +788,7 @@ GoldScout-export 9^zjvt20l2b5xk^47
 @i^270333^Voodoo-Infused Artifact
 @i^270866^Titan Relic
 @i^271100^Thicket Raptor Meat
+@i^271793^Plains Buzzard Feather
 @i^273001^Gloomrise Toxin Sample
 @i^273022^Supple Bellyskin Leggings
 @i^273028^Reliquary Mantle
@@ -931,6 +935,7 @@ GoldScout-export 9^zjvt20l2b5xk^47
 @q^3399^0:15:0
 @q^3402^0:15:0
 @q^3403^0:15:0
+@q^3404^1:7:1
 @q^3467^1:13:0
 @q^3499^1:13:0
 @q^3601^1:12:0
@@ -1059,6 +1064,7 @@ GoldScout-export 9^zjvt20l2b5xk^47
 @q^6386^2:4:0
 @q^6408^2:4:0
 @q^6441^1:12:0
+@q^6444^0:15:0
 @q^6464^1:0:0
 @q^6530^1:0:0
 @q^6538^2:4:0
@@ -1221,6 +1227,7 @@ GoldScout-export 9^zjvt20l2b5xk^47
 @q^270333^1:12:0
 @q^270866^1:12:0
 @q^271100^1:12:0
+@q^271793^1:12:0
 @q^273001^1:12:0
 @q^273022^3:4:0
 @q^273028^3:4:0
@@ -2190,7 +2197,8 @@ GoldScout-export 9^zjvt20l2b5xk^47
 @a^256952^168:1
 @a^260429^88:1
 @a^262397^104:17,105:2
-@a^263343^193:1
+@a^263307^232:3
+@a^263343^193:2,213:3,232:2,233:2,252:1,253:2
 @a^264079^46:2
 @a^264081^26:8
 @a^264082^26:1
@@ -2217,4 +2225,6 @@ GoldScout-export 9^zjvt20l2b5xk^47
 @t^4676^1:458
 @t^256798^1:14
 @t^262397^19:1245
+@t^263307^3:859
+@t^263343^10:1119
 @l^0^enUS
