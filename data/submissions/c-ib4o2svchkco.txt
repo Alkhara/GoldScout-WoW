@@ -1,4 +1,4 @@
-GoldScout-export 9^ib4o2svchkco^13
+GoldScout-export 9^ib4o2svchkco^14
 92^7^0^39^40^1418^0.1390^0.3516^7^Rock Elemental^4552:1:1,4553:2:2,4784:4:4,7848:5:5,7912:1:1,8150:3:3^
 1488^1^0^44^44^1434^0.3959^0.5953^1^Zanzil Zombie^4016:1:1,4338:1:2^
 1489^2^0^43^44^1434^0.3898^0.5917^2^Zanzil Hunter^4419:1:1,6530:1:1^
@@ -21,6 +21,9 @@ GoldScout-export 9^ib4o2svchkco^13
 2546^1^0^48^48^1434^0.3068^0.8948^1^Fleet Master Firallon^9260:1:1^
 2548^1^0^47^47^1434^0.2921^0.8851^1^Captain Keelhaul^3910:1:1^
 2551^1^0^43^43^1434^0.3290^0.8832^1^Brutus^^
+2652^1^0^43^43^1425^0.3160^0.6311^1^Witherbark Venomblood^1520:1:1,9259:1:1^
+2653^1^0^45^45^1425^0.3564^0.6639^1^Witherbark Sadist^8704:1:1^
+2686^6^0^44^45^1425^0.3391^0.6748^6^Witherbark Broodguard^1074:2:2,4337:1:1,4585:2:2,7544:1:1,9322:1:1,12205:5:5^
 2701^6^0^38^39^1418^0.2928^0.5865^6^Dustbelcher Ogre^4306:2:4,278515:1:1^
 2715^5^0^39^40^1418^0.3016^0.5960^5^Dustbelcher Brute^4306:1:3,248693:1:1^
 2716^9^0^40^41^1418^0.1586^0.7257^9^Dustbelcher Wyrmhunter^4306:3:6^
@@ -36,6 +39,7 @@ GoldScout-export 9^ib4o2svchkco^13
 2892^2^0^39^40^1418^0.6583^0.4422^2^Stonevault Seer^4306:1:4^
 2906^1^0^36^37^1418^0.6352^0.2378^1^Dustbelcher Warrior^^
 2907^1^0^37^37^1418^0.3041^0.5844^1^Dustbelcher Mystic^4306:1:2^
+2927^3^0^42^43^1425^0.2994^0.5975^3^Vicious Owlbeast^4424:1:1^
 3988^1^0^19^20^1442^0.6732^0.4516^1^Venture Co. Operator^^
 3989^1^0^19^19^1442^0.6729^0.4509^1^Venture Co. Logger^1811:1:1,2592:1:1^
 3992^3^0^20^21^1442^0.6379^0.3943^3^Venture Co. Engineer^814:1:1,2589:1:2^
@@ -280,6 +284,7 @@ GoldScout-export 9^ib4o2svchkco^13
 @i^858^Lesser Healing Potion
 @i^866^Monk's Staff of Strength
 @i^954^Scroll of Strength
+@i^1074^Hard Spider Leg Tip
 @i^1179^Ice Cold Milk
 @i^1210^Shadowgem
 @i^1464^Buzzard Talon
@@ -288,6 +293,7 @@ GoldScout-export 9^ib4o2svchkco^13
 @i^1506^Warped Leather Gloves
 @i^1511^Commoner's Sword
 @i^1514^Rusty Warhammer
+@i^1520^Troll Sweat
 @i^1608^Skullcrusher Mace of Strength
 @i^1645^Moonberry Juice
 @i^1688^Long Soft Tail
@@ -394,6 +400,7 @@ GoldScout-export 9^ib4o2svchkco^13
 @i^4556^Speckled Shell Fragment
 @i^4582^Soft Bushy Tail
 @i^4583^Thick Furry Mane
+@i^4585^Dripping Spider Mandible
 @i^4599^Cured Ham Steak
 @i^4601^Soft Banana Bread
 @i^4602^Moon Harvest Pumpkin
@@ -437,6 +444,7 @@ GoldScout-export 9^ib4o2svchkco^13
 @i^7461^Knight's Bracers of the Bear
 @i^7473^Regal Mantle of the Prophet
 @i^7475^Regal Cuffs of the Sorcerer
+@i^7544^Champion's Cape of the Beast
 @i^7666^Shattered Necklace
 @i^7846^Crag Coyote Fang
 @i^7848^Rock Elemental Shard
@@ -460,14 +468,17 @@ GoldScout-export 9^ib4o2svchkco^13
 @i^8483^Wastewander Water Pouch
 @i^8587^Centipaar Insect Parts
 @i^8623^OOX-17 TN Distress Beacon
+@i^8704^OOX-09 HL Distress Beacon
 @i^8723^Caliph Scorpidsting's Head
 @i^8750^Thick Leather Hat
 @i^8751^Overlinked Coif
 @i^8831^Purple Lotus
 @i^9246^Firebeard's Head
+@i^9259^Troll Tribal Necklace
 @i^9260^Volatile Rum
 @i^9276^Pirate's Footlocker
 @i^9287^Field Plate Gauntlets of Defense
+@i^9322^Undamaged Venom Sac
 @i^9401^Nordic Longshank
 @i^9407^Stoneweaver Leggings
 @i^9416^Grimlok's Charge
@@ -632,6 +643,7 @@ GoldScout-export 9^ib4o2svchkco^13
 @q^858^1:0:0
 @q^866^2:2:0
 @q^954^1:0:0
+@q^1074^0:15:0
 @q^1179^1:0:0
 @q^1210^2:7:1
 @q^1464^0:15:0
@@ -640,6 +652,7 @@ GoldScout-export 9^ib4o2svchkco^13
 @q^1506^0:4:0
 @q^1511^0:2:0
 @q^1514^0:2:0
+@q^1520^0:15:0
 @q^1608^2:2:0
 @q^1645^1:0:0
 @q^1688^0:15:0
@@ -746,6 +759,7 @@ GoldScout-export 9^ib4o2svchkco^13
 @q^4556^0:15:0
 @q^4582^1:12:0
 @q^4583^0:15:0
+@q^4585^0:15:0
 @q^4599^1:0:0
 @q^4601^1:0:0
 @q^4602^1:0:0
@@ -789,6 +803,7 @@ GoldScout-export 9^ib4o2svchkco^13
 @q^7461^2:4:0
 @q^7473^2:4:0
 @q^7475^2:4:0
+@q^7544^2:4:0
 @q^7666^2:12:0
 @q^7846^1:12:0
 @q^7848^1:12:0
@@ -812,14 +827,17 @@ GoldScout-export 9^ib4o2svchkco^13
 @q^8483^1:12:0
 @q^8587^1:12:0
 @q^8623^2:12:0
+@q^8704^2:12:0
 @q^8723^1:12:0
 @q^8750^0:4:0
 @q^8751^0:4:0
 @q^8831^1:7:1
 @q^9246^1:12:0
+@q^9259^1:15:0
 @q^9260^1:0:0
 @q^9276^1:15:0
 @q^9287^2:4:0
+@q^9322^1:12:0
 @q^9401^3:2:0
 @q^9407^3:4:0
 @q^9416^3:2:0
@@ -985,6 +1003,7 @@ GoldScout-export 9^ib4o2svchkco^13
 @m^1416^Alterac Mountains
 @m^1418^Badlands
 @m^1420^Tirisfal Glades
+@m^1425^The Hinterlands
 @m^1427^Searing Gorge
 @m^1434^Stranglethorn Vale
 @m^1439^Darkshore
@@ -2293,6 +2312,9 @@ GoldScout-export 9^ib4o2svchkco^13
 @a^2546^346:1
 @a^2548^345:1
 @a^2551^346:1
+@a^2652^246:1
+@a^2653^267:1
+@a^2686^246:1,247:2,266:1,286:2
 @a^2701^225:5,245:1
 @a^2715^225:1,226:2,246:2
 @a^2716^225:1,226:1,282:1,302:6
@@ -2308,6 +2330,7 @@ GoldScout-export 9^ib4o2svchkco^13
 @a^2892^173:2
 @a^2906^92:1
 @a^2907^226:1
+@a^2927^205:1,246:2
 @a^3988^193:1
 @a^3989^193:1
 @a^3992^152:2,172:1
