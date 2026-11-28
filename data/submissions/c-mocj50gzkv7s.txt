@@ -1,4 +1,8 @@
-GoldScout-export 9^mocj50gzkv7s^7
+GoldScout-export 9^mocj50gzkv7s^8
+3840^1^0^0^0^0^0.0000^0.0000^0^^^
+5055^1^0^0^0^0^0.0000^0.0000^0^^4604:1:1,4605:1:1,4606:1:1^
+5056^1^0^0^0^0^0.0000^0.0000^0^^6044:1:1^
+5755^1^0^0^0^0^0.0000^0.0000^0^^15114:1:1^
 5982^2^0^46^48^1419^0.5650^0.3648^2^Black Slayer^1464:1:1,3404:1:1,8168:2:2,11418:1:1^
 10990^2^0^0^0^1459^0.0000^0.0000^0^^17642:2:2^
 10991^1^0^0^0^1459^0.0000^0.0000^0^^^
@@ -30,8 +34,12 @@ GoldScout-export 9^mocj50gzkv7s^7
 @i^3947^Twill Cloak
 @i^3969^Smooth Leather Belt
 @i^3995^Laminated Scale Cloak
+@i^4604^Forest Mushroom Cap
+@i^4605^Red-speckled Mushroom
+@i^4606^Spongy Morel
 @i^5120^Long Tail Hair
 @i^5471^Stag Meat
+@i^6044^Plans: Iron Shield Spike
 @i^8168^Jet Black Feather
 @i^8391^Snickerfang Jowl
 @i^8766^Morning Glory Dew
@@ -51,6 +59,7 @@ GoldScout-export 9^mocj50gzkv7s^7
 @i^13820^Clout Mace
 @i^13821^Bulky Maul
 @i^14047^Runecloth
+@i^15114^Rigid Cape of Stamina
 @i^17327^Stormpike Lieutenant's Flesh
 @i^17422^Armor Scraps
 @i^17642^Alterac Ram Hide
@@ -76,8 +85,12 @@ GoldScout-export 9^mocj50gzkv7s^7
 @q^3947^0:4:0
 @q^3969^0:4:0
 @q^3995^0:4:0
+@q^4604^1:0:0
+@q^4605^1:0:0
+@q^4606^1:0:0
 @q^5120^0:15:0
 @q^5471^1:7:1
+@q^6044^2:9:0
 @q^8168^1:7:1
 @q^8391^1:12:0
 @q^8766^1:0:0
@@ -97,6 +110,7 @@ GoldScout-export 9^mocj50gzkv7s^7
 @q^13820^0:2:0
 @q^13821^0:2:0
 @q^14047^1:7:1
+@q^15114^2:4:0
 @q^17327^1:12:0
 @q^17422^1:12:0
 @q^17642^1:12:0
@@ -118,11 +132,16 @@ GoldScout-export 9^mocj50gzkv7s^7
 @m^1419^Blasted Lands
 @m^1459^Alterac Valley
 @m^2482^Mount Hyjal
+@c^118^
 @c^724^
 @c^733^
 @c^787^
+@c^858^
+@c^929^
 @c^1017^
 @c^1082^
+@c^1251^
+@c^1710^
 @c^2300^
 @c^2302^
 @c^2303^
@@ -140,6 +159,7 @@ GoldScout-export 9^mocj50gzkv7s^7
 @c^2317^
 @c^2318^
 @c^2319^
+@c^2581^
 @c^2679^
 @c^2680^
 @c^2681^
@@ -150,6 +170,8 @@ GoldScout-export 9^mocj50gzkv7s^7
 @c^2687^
 @c^2888^
 @c^3220^
+@c^3530^
+@c^3531^
 @c^3662^
 @c^3663^
 @c^3664^
@@ -160,6 +182,7 @@ GoldScout-export 9^mocj50gzkv7s^7
 @c^3727^
 @c^3728^
 @c^3729^
+@c^3928^
 @c^4231^
 @c^4233^
 @c^4234^
@@ -274,6 +297,10 @@ GoldScout-export 9^mocj50gzkv7s^7
 @c^6219^
 @c^6290^
 @c^6316^
+@c^6450^
+@c^6451^
+@c^6452^
+@c^6453^
 @c^6466^
 @c^6467^
 @c^6468^
@@ -359,6 +386,8 @@ GoldScout-export 9^mocj50gzkv7s^7
 @c^8349^
 @c^8364^
 @c^8367^
+@c^8544^
+@c^8545^
 @c^8957^
 @c^9312^
 @c^9313^
@@ -428,6 +457,7 @@ GoldScout-export 9^mocj50gzkv7s^7
 @c^12632^
 @c^12636^
 @c^12641^
+@c^13446^
 @c^13851^
 @c^13927^
 @c^13928^
@@ -438,6 +468,8 @@ GoldScout-export 9^mocj50gzkv7s^7
 @c^13933^
 @c^13934^
 @c^13935^
+@c^14529^
+@c^14530^
 @c^15045^
 @c^15046^
 @c^15047^
@@ -561,6 +593,7 @@ GoldScout-export 9^mocj50gzkv7s^7
 @c^19157^
 @c^19162^
 @c^19163^
+@c^19440^
 @c^19685^
 @c^19686^
 @c^19687^
@@ -621,6 +654,7 @@ GoldScout-export 9^mocj50gzkv7s^7
 @c^22759^
 @c^22760^
 @c^22761^
+@c^23684^
 @c^34086^
 @c^210147^
 @c^211423^
@@ -673,6 +707,7 @@ GoldScout-export 9^mocj50gzkv7s^7
 @c^227879^
 @c^227882^
 @c^227883^
+@c^232433^
 @c^232436^
 @c^232438^
 @c^233802^
@@ -946,6 +981,14 @@ GoldScout-export 9^mocj50gzkv7s^7
 @c^252605^
 @c^252606^
 @c^252683^
+@c^255715^
+@c^255716^
+@c^255717^
+@c^255718^
+@c^255719^
+@c^255720^
+@c^255721^
+@c^255722^
 @c^260784^
 @c^260792^
 @c^260793^
@@ -1089,15 +1132,18 @@ GoldScout-export 9^mocj50gzkv7s^7
 @c^279258^
 @c^279272^
 @c^279273^
+@c^279940^
 @c^279941^
 @c^279945^
 @c^279949^
 @c^279950^
+@c^279951^
 @c^279957^
 @c^279961^
 @c^279965^
 @c^279966^
 @c^279967^
+@c^279968^
 @c^279974^
 @c^279978^
 @c^279981^

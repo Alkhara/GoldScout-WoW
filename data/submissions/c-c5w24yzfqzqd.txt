@@ -1,4 +1,4 @@
-GoldScout-export 9^c5w24yzfqzqd^23
+GoldScout-export 9^c5w24yzfqzqd^24
 412^1^0^35^35^1431^0.7466^0.4968^1^Stitches^3360:1:1,3815:1:1,4306:1:2^
 667^11^0^39^40^1434^0.4542^0.3627^11^Skullsplitter Warrior^1520:4:4,1524:6:6,2735:1:1,4306:4:8,8151:1:1,8153:1:2^
 669^2^0^41^42^1434^0.4680^0.3884^2^Skullsplitter Hunter^4338:1:2^
@@ -21,6 +21,7 @@ GoldScout-export 9^c5w24yzfqzqd^23
 1084^7^0^35^36^1435^0.3500^0.3987^7^Young Sawtooth Crocolisk^770:5:5,3667:4:4,12037:1:1^
 1557^1^0^40^41^1434^0.3177^0.6768^1^Elder Mistvale Gorilla^2799:1:1,4096:1:1^
 1562^1^0^41^41^1434^0.2796^0.6953^1^Bloodsail Mage^4306:1:1^
+5286^2^0^41^41^1444^0.3064^0.4824^2^Longtooth Runner^4583:2:2,12203:2:2,12208:1:1^
 5419^2^0^42^43^1446^0.4774^0.3025^2^Glasshide Basilisk^11386:1:1,11387:1:1^
 5422^1^0^40^41^1446^0.4816^0.3043^1^Scorpid Hunter^19937:1:1^
 5425^2^0^41^42^1446^0.4772^0.3121^2^Starving Blisterpaw^4583:1:1,12037:1:1,12203:1:1^
@@ -222,6 +223,7 @@ GoldScout-export 9^c5w24yzfqzqd^23
 @i^12203^Red Wolf Meat
 @i^12205^White Spider Meat
 @i^12206^Tender Crab Meat
+@i^12208^Tender Wolf Meat
 @i^13042^Sword of the Magistrate
 @i^15213^Mercenary Blade of the Wolf
 @i^15243^Deadly Kris of the Monkey
@@ -384,6 +386,7 @@ GoldScout-export 9^c5w24yzfqzqd^23
 @q^12203^1:7:1
 @q^12205^1:7:1
 @q^12206^1:7:1
+@q^12208^1:7:1
 @q^13042^3:2:0
 @q^15213^2:2:0
 @q^15243^2:2:0
@@ -441,6 +444,7 @@ GoldScout-export 9^c5w24yzfqzqd^23
 @m^1431^Duskwood
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
+@m^1444^Feralas
 @m^1446^Tanaris
 @m^2548^Riverglades
 @c^724^
@@ -1193,6 +1197,7 @@ GoldScout-export 9^c5w24yzfqzqd^23
 @a^1084^126:1,127:1,128:2,147:1,225:2
 @a^1557^266:1
 @a^1562^265:1
+@a^5286^186:2
 @a^5419^109:1,129:1
 @a^5422^129:1
 @a^5425^129:2
@@ -1269,6 +1274,7 @@ GoldScout-export 9^c5w24yzfqzqd^23
 @a^268831^155:1
 @a^270664^227:4,247:7,267:3,287:1
 @a^272315^216:1
+@t^5286^1:119
 @t^5419^1:53
 @t^5422^1:140
 @t^5425^2:158
