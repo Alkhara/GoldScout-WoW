@@ -1,4 +1,4 @@
-GoldScout-export 9^s3elm9sj0ffi^110
+GoldScout-export 9^s3elm9sj0ffi^111
 3^32^11^24^25^1431^0.2352^0.3728^32^Flesh Eater^884:3:3,885:2:2,887:4:4,929:1:1,1129:7:7,1205:1:1,1795:1:1,1821:2:2,2589:1:1,2592:8:14,2800:1:1,4606:3:3,6530:8:8,262888:1:1^929:1:1,16882:3:3
 6^19^0^1^2^1429^0.4920^0.3592^19^Kobold Vermin^159:1:1,755:10:10,1369:1:1,1370:1:1,1374:1:1,1376:1:1,1378:1:1,1380:1:1,2589:7:7,4536:2:2,247834:1:1,247839:1:1^
 36^42^0^11^12^1436^0.3916^0.4095^42^Harvest Golem^732:13:13,814:12:12,816:1:1,1274:9:9,1511:1:1,1513:1:1,1516:2:2,2214:2:2,2965:1:1,2966:1:1,4359:2:2,4361:1:1,4678:1:1,255007:16:16,255010:4:4^
@@ -222,8 +222,8 @@ GoldScout-export 9^s3elm9sj0ffi^110
 2260^8^13^21^22^1424^0.8046^0.4403^8^Syndicate Rogue^2592:3:5,6381:1:1^422:1:1,929:1:1,16882:2:2,17124:10:10
 2261^24^35^20^21^1424^0.7951^0.4444^24^Syndicate Watchman^422:3:3,929:1:1,1801:1:1,2589:1:2,2592:5:6,3379:1:1,4306:1:1,248683:1:1^929:1:1,5374:3:3,16882:7:7,17124:24:24
 2384^4^0^23^24^1424^0.5606^0.4577^4^Starving Mountain Lion^3198:1:1,3731:1:1,5135:2:2,5136:2:2,5635:1:1^
-2407^1^0^34^34^1416^0.8078^0.5890^1^Hulking Mountain Lion^3731:1:1^
-2408^127^0^30^31^1424^0.6557^0.2865^19^Snapjaw^865:1:1,3712:34:51,4555:29:29,4556:35:35,5524:70:70,6308:19:25,6617:1:1,7450:1:1,9821:1:1,9823:1:1^
+2407^1^0^33^34^1416^0.8078^0.5890^1^Hulking Mountain Lion^3731:1:1^
+2408^188^0^30^31^1424^0.6557^0.2865^19^Snapjaw^865:1:1,3712:48:72,4555:47:47,4556:51:51,5524:99:99,6308:27:38,6617:1:1,7416:1:1,7450:1:1,9821:1:1,9823:1:1,10288:1:1,248689:1:1,248694:1:1^
 2427^0^2^24^24^0^0.0000^0.0000^0^Jailor Eston^^
 2428^1^2^24^24^1424^0.7956^0.4061^1^Jailor Marlgen^1822:1:1,4306:1:1^5374:1:1
 2462^70^0^25^25^1431^0.2378^0.3632^70^Flesh Eating Worm^^
@@ -834,6 +834,7 @@ GoldScout-export 9^s3elm9sj0ffi^110
 @i^7351^Disciple's Boots
 @i^7356^Elder's Cloak of Agility
 @i^7363^Pattern: Pilferer's Gloves
+@i^7416^Phalanx Bracers of the Whale
 @i^7450^Pattern: Green Whelp Armor
 @i^7683^Bloody Brass Knuckles
 @i^7684^Bloodmage Mantle
@@ -859,6 +860,7 @@ GoldScout-export 9^s3elm9sj0ffi^110
 @i^9799^Ivycloth Sash of the Physician
 @i^9821^Durable Bracers of the Hierophant
 @i^9823^Durable Gloves of Healing
+@i^10288^Sage's Circlet of the Elder
 @i^10399^Blackened Defias Armor
 @i^10407^Raider's Shoulderpads
 @i^11407^Torn Bear Pelt
@@ -911,6 +913,7 @@ GoldScout-export 9^s3elm9sj0ffi^110
 @i^248687^Waylaid Crate: Journeyman Ore
 @i^248688^Waylaid Crate: Journeyman Textiles
 @i^248689^Waylaid Crate: Journeyman Curiosities
+@i^248694^Waylaid Crate: Expert Curiosities
 @i^248703^Waylaid Crate: Apprentice Ingots
 @i^248704^Waylaid Crate: Apprentice Parts
 @i^248707^Waylaid Crate: Journeyman Parts
@@ -1482,6 +1485,7 @@ GoldScout-export 9^s3elm9sj0ffi^110
 @q^7351^1:4:0
 @q^7356^2:4:0
 @q^7363^2:9:0
+@q^7416^2:4:0
 @q^7450^2:9:0
 @q^7683^3:2:0
 @q^7684^3:4:0
@@ -1507,6 +1511,7 @@ GoldScout-export 9^s3elm9sj0ffi^110
 @q^9799^2:4:0
 @q^9821^2:4:0
 @q^9823^2:4:0
+@q^10288^2:4:0
 @q^10399^3:4:0
 @q^10407^1:4:0
 @q^11407^1:12:0
@@ -1559,6 +1564,7 @@ GoldScout-export 9^s3elm9sj0ffi^110
 @q^248687^1:0:1
 @q^248688^1:0:1
 @q^248689^1:0:1
+@q^248694^1:0:1
 @q^248703^2:0:1
 @q^248704^2:0:1
 @q^248707^2:0:1
@@ -4091,6 +4097,7 @@ GoldScout-export 9^s3elm9sj0ffi^110
 @t^1400^3:206
 @t^1417^13:992
 @t^2091^1:53
+@t^2408^60:3321
 @t^4463^1:7
 @t^6412^2:64
 @t^12922^1:9

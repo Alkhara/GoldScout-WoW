@@ -1,8 +1,8 @@
-GoldScout-export 9^9m7aq0k1l6hb^3
+GoldScout-export 9^9m7aq0k1l6hb^4
 746^1^0^45^45^1435^0.7764^0.5490^1^Ancestro dragonante^^
-1783^10^0^50^51^1422^0.5282^0.7656^10^Despellejador esquelético^13446:1:1,14047:1:1^
-1784^24^0^51^52^1422^0.5364^0.7818^24^Hechicero esquelético^7972:2:2,8753:1:1,13825:1:1,14047:6:10^
-1791^1^0^51^52^1422^0.5547^0.8000^1^Necrófago esclavizante^8948:1:1,14047:1:1^
+1783^77^0^50^51^1422^0.5074^0.7650^77^Despellejador esquelético^4425:1:1,7972:4:4,8948:3:3,10130:1:1,11989:1:1,13446:3:3,14047:19:27,262890:1:1^
+1784^43^0^51^52^1422^0.5387^0.7876^43^Hechicero esquelético^7972:3:3,8753:1:1,8948:1:1,13825:1:1,14047:11:17,15237:1:1^
+1791^37^0^50^52^1422^0.5054^0.7708^37^Necrófago esclavizante^6530:13:13,7972:1:1,8752:1:1,8766:4:4,8948:4:4,14047:12:19,248697:1:1,248698:1:1^
 2651^1^0^43^43^1425^0.2795^0.5842^1^Desolladora Secacorteza^^
 2686^1^0^44^44^1425^0.3543^0.6542^1^Guardia de la prole Secacorteza^9286:1:1,12205:1:1^
 2923^1^0^41^41^1425^0.1770^0.5239^1^Melenargenta sarnoso^^
@@ -87,13 +87,16 @@ GoldScout-export 9^9m7aq0k1l6hb^3
 @i^6181^Fetiche de Hakkar
 @i^6212^Cabeza de Jammal'an
 @i^6444^Lengua bípeda
+@i^6530^Reptadores nocturnos
 @i^6826^Escama luminosa
 @i^7611^Bastón Escapabruma
 @i^7910^Rubí estrella
 @i^7972^Icor de no-muerto
 @i^7973^Almeja de boca grande
 @i^8152^Frasco de gran mojo
+@i^8752^Aro de escamas laminadas
 @i^8753^Casco de cuero liso
+@i^8766^Rocío de gloria matinal
 @i^8948^Bolete de rey seco
 @i^8959^Mero espinoso crudo
 @i^9286^Armaduras de placas de campo de protección contra las Sombras
@@ -101,6 +104,7 @@ GoldScout-export 9^9m7aq0k1l6hb^3
 @i^9932^Aro brigada del bandido
 @i^9939^Guantes de lego del canalizador
 @i^9956^Brazales de belicista del bandido
+@i^10130^Faja de aparecido de defensa
 @i^10131^Botas de aparecido de defensa
 @i^10286^Corazón del Salvaje
 @i^10450^Pluma de hipogrifo sin estropear
@@ -119,12 +123,14 @@ GoldScout-export 9^9m7aq0k1l6hb^3
 @i^11018^Tierra de Un'Goro
 @i^11116^Un diario destrozado
 @i^11318^Calima Atal'ai
+@i^11989^Anillo de vanadium del mono
 @i^12205^Carne de araña blanca
 @i^13446^Poción de curación sublime
 @i^13825^Mosquete primordial
 @i^14047^Paño rúnico
 @i^14478^Patrón: toga de paño brillante
 @i^14797^Almohadillas protectoras
+@i^15237^Cadáver de cosechador de sanación
 @i^15420^Plumahierro
 @i^15733^Patrón: leotardos de escamas de dragón verde
 @i^17058^Aceite de pescado
@@ -138,8 +144,11 @@ GoldScout-export 9^9m7aq0k1l6hb^3
 @i^213543^Pergamino: COLEGA
 @i^213544^Pergamino: OFELTA DE IKOZAS
 @i^248695^Cajón saqueado: hierbas de artesano terrenales
+@i^248697^Cajón saqueado: menas de artesano
+@i^248698^Cajón saqueado: textiles de artesano
 @i^254100^Patrón: guantes ígneos
 @i^254102^Patrón: guantes negros
+@i^262890^Libranza del artesano sellada
 @q^1520^0:15:0
 @q^1645^1:0:0
 @q^3010^0:15:0
@@ -171,13 +180,16 @@ GoldScout-export 9^9m7aq0k1l6hb^3
 @q^6181^1:12:0
 @q^6212^1:12:0
 @q^6444^0:15:0
+@q^6530^1:0:0
 @q^6826^0:15:0
 @q^7611^2:4:0
 @q^7910^2:7:1
 @q^7972^1:7:1
 @q^7973^1:7:0
 @q^8152^1:7:1
+@q^8752^0:4:0
 @q^8753^0:4:0
+@q^8766^1:0:0
 @q^8948^1:0:0
 @q^8959^1:7:1
 @q^9286^2:4:0
@@ -185,6 +197,7 @@ GoldScout-export 9^9m7aq0k1l6hb^3
 @q^9932^2:4:0
 @q^9939^2:4:0
 @q^9956^2:4:0
+@q^10130^2:4:0
 @q^10131^2:4:0
 @q^10286^1:7:1
 @q^10450^1:12:0
@@ -203,12 +216,14 @@ GoldScout-export 9^9m7aq0k1l6hb^3
 @q^11018^1:12:0
 @q^11116^2:15:0
 @q^11318^1:12:0
+@q^11989^2:4:0
 @q^12205^1:7:1
 @q^13446^1:0:0
 @q^13825^0:2:0
 @q^14047^1:7:1
 @q^14478^2:9:0
 @q^14797^2:4:0
+@q^15237^2:2:0
 @q^15420^1:7:1
 @q^15733^3:9:0
 @q^17058^1:15:0
@@ -222,8 +237,11 @@ GoldScout-export 9^9m7aq0k1l6hb^3
 @q^213543^1:0:0
 @q^213544^1:0:0
 @q^248695^1:0:1
+@q^248697^1:0:1
+@q^248698^1:0:1
 @q^254100^3:9:0
 @q^254102^3:9:0
+@q^262890^3:0:0
 @m^1422^Tierras de la Peste del Oeste
 @m^1425^Tierras del Interior
 @m^1435^Pantano de las Penas
@@ -521,9 +539,9 @@ GoldScout-export 9^9m7aq0k1l6hb^3
 @c^285277^
 @c^285278^
 @a^746^215:1
-@a^1783^227:1,310:9
-@a^1784^207:1,310:21,330:1,331:1
-@a^1791^331:1
+@a^1783^227:1,289:2,309:13,310:58,329:3
+@a^1784^207:1,310:39,330:2,331:1
+@a^1791^290:1,309:9,310:21,329:4,330:1,331:1
 @a^2651^225:1
 @a^2686^267:1
 @a^2923^203:1
@@ -549,9 +567,9 @@ GoldScout-export 9^9m7aq0k1l6hb^3
 @a^7768^267:2
 @a^8136^285:1
 @a^8761^69:2,89:1,90:2,110:4,130:2
-@t^1783^9:292
-@t^1784^23:1120
-@t^1791^1:64
+@t^1783^75:2877
+@t^1784^42:1788
+@t^1791^37:1353
 @t^2651^1:131
 @t^2686^1:6
 @t^5243^10:2217

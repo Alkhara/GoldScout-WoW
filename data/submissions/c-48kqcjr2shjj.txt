@@ -1,9 +1,10 @@
-GoldScout-export 9^48kqcjr2shjj^15
+GoldScout-export 9^48kqcjr2shjj^16
 681^5^0^30^31^1434^0.3477^0.1214^5^Young Stranglethorn Tiger^1686:1:1,1687:1:1,12202:3:3^
 682^8^0^32^33^1434^0.4272^0.1443^8^Stranglethorn Tiger^1686:3:3,1687:2:2,6407:1:1,12202:3:3^
 683^3^0^30^31^1434^0.3957^0.1358^3^Young Panther^1687:1:1,5637:2:2^
+684^1^0^37^37^1434^0.4891^0.2137^1^Shadowmaw Panther^1688:1:1,262889:1:1^
 685^7^0^33^34^1434^0.2744^0.1610^7^Stranglethorn Raptor^1696:2:2,3685:4:4,4461:2:2,12184:3:3^
-686^6^0^35^36^1434^0.3366^0.2489^6^Lashtail Raptor^1696:3:3,3685:1:1,4461:2:2,12184:2:2^
+686^8^0^35^36^1434^0.3373^0.2496^8^Lashtail Raptor^1696:3:3,3685:2:2,4461:4:4,12184:4:4^
 698^1^0^35^35^1434^0.2799^0.1119^1^Bloodscalp Tiger^^
 699^1^0^35^35^1434^0.2799^0.1119^1^Bloodscalp Beastmaster^2749:1:1^
 729^1^0^37^37^1434^0.3223^0.1707^1^Sin'Dall^3879:1:1,12202:1:1^
@@ -92,6 +93,8 @@ GoldScout-export 9^48kqcjr2shjj^15
 4275^1^0^0^0^0^0.0000^0.0000^0^^3385:1:1,5442:1:1^
 4490^1^0^31^31^1441^0.2639^0.5606^1^Grenka Bloodscreech^5117:1:1,5843:1:1^
 4723^1^0^38^38^1434^0.4258^0.1854^1^Foreman Cozzle^2744:1:1,5851:1:1^
+4802^1^0^20^20^1414^0.4451^0.3486^1^Blackfathom Tide Priestess^5524:1:1,16790:1:1^
+4803^1^0^21^22^1414^0.4435^0.3504^1^Blackfathom Oracle^1796:1:1,5524:1:1^
 4823^2^0^0^0^0^0.0000^0.0000^0^^2674:1:1,2675:1:1,3010:1:1,5524:1:1,5569:1:1^
 4825^1^0^0^0^0^0.0000^0.0000^0^^15334:1:1^
 4827^1^0^0^0^0^0.0000^0.0000^0^^2608:1:1,17057:1:1^
@@ -138,12 +141,14 @@ GoldScout-export 9^48kqcjr2shjj^15
 @i^1529^Jade
 @i^1686^Bristly Whisker
 @i^1687^Retractable Claw
+@i^1688^Long Soft Tail
 @i^1696^Curved Raptor Talon
 @i^1701^Curved Basilisk Claw
 @i^1702^Intact Basilisk Spine
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
 @i^1756^Reinforced Chain Bracers
+@i^1796^Rawhide Boots
 @i^1824^Shiny War Axe
 @i^1974^Mindthrust Bracers
 @i^2212^Cracked Buckler
@@ -265,6 +270,7 @@ GoldScout-export 9^48kqcjr2shjj^15
 @i^15970^Native Branch of Intellect
 @i^16646^Shredder Operating Manual - Page 2
 @i^16782^Strange Water Globe
+@i^16790^Damp Note
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
 @i^19807^Speckled Tastyfish
@@ -280,6 +286,7 @@ GoldScout-export 9^48kqcjr2shjj^15
 @i^248688^Waylaid Crate: Journeyman Textiles
 @i^248704^Waylaid Crate: Apprentice Parts
 @i^262888^Sealed Journeyman's Writ
+@i^262889^Sealed Expert's Writ
 @i^273003^Searing Dagger
 @i^273637^Blade of Silverlaine
 @i^284459^Dendweller's Hammer
@@ -304,12 +311,14 @@ GoldScout-export 9^48kqcjr2shjj^15
 @q^1529^2:7:1
 @q^1686^0:15:0
 @q^1687^0:15:0
+@q^1688^0:15:0
 @q^1696^0:15:0
 @q^1701^0:15:0
 @q^1702^0:15:0
 @q^1708^1:0:0
 @q^1710^1:0:0
 @q^1756^0:4:0
+@q^1796^0:4:0
 @q^1824^0:2:0
 @q^1974^3:4:0
 @q^2212^0:4:0
@@ -431,6 +440,7 @@ GoldScout-export 9^48kqcjr2shjj^15
 @q^15970^2:4:0
 @q^16646^1:12:0
 @q^16782^2:12:0
+@q^16790^1:15:0
 @q^17056^1:15:1
 @q^17057^1:15:0
 @q^19807^1:15:0
@@ -446,12 +456,14 @@ GoldScout-export 9^48kqcjr2shjj^15
 @q^248688^1:0:1
 @q^248704^2:0:1
 @q^262888^3:0:0
+@q^262889^3:0:0
 @q^273003^3:2:0
 @q^273637^3:2:0
 @q^284459^3:2:0
 @m^1411^Durotar
 @m^1412^Mulgore
 @m^1413^The Barrens
+@m^1414^Kalimdor
 @m^1416^Alterac Mountains
 @m^1421^Silverpine Forest
 @m^1424^Hillsbrad Foothills
@@ -1244,8 +1256,9 @@ GoldScout-export 9^48kqcjr2shjj^15
 @a^681^46:3,47:2
 @a^682^46:1,49:3,66:1,69:3
 @a^683^48:2,67:1
+@a^684^89:1
 @a^685^45:1,65:6
-@a^686^86:2,87:1,106:2,107:1
+@a^686^86:3,87:1,106:3,107:1
 @a^698^45:1
 @a^699^45:1
 @a^729^66:1
@@ -1317,6 +1330,8 @@ GoldScout-export 9^48kqcjr2shjj^15
 @a^4249^190:1
 @a^4490^225:1
 @a^4723^68:1
+@a^4802^128:1
+@a^4803^148:1
 @a^5894^167:1
 @a^5915^45:1
 @a^8518^65:1
@@ -1329,8 +1344,9 @@ GoldScout-export 9^48kqcjr2shjj^15
 @t^681^4:555
 @t^682^8:1050
 @t^683^2:219
+@t^684^1:350
 @t^685^7:928
-@t^686^5:409
+@t^686^6:439
 @t^698^1:0
 @t^699^1:87
 @t^729^1:230
