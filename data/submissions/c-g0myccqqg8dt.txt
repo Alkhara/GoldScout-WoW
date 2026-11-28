@@ -1,4 +1,4 @@
-GoldScout-export 9^g0myccqqg8dt^19
+GoldScout-export 9^g0myccqqg8dt^20
 92^639^0^39^40^1418^0.4123^0.8041^639^Rock Elemental^1207:1:1,3864:3:3,4068:1:1,4552:86:86,4553:252:252,4636:1:1,4784:325:325,7067:61:61,7475:2:2,7489:1:1,7909:1:1,7912:126:189,8150:133:133,9292:1:1,9866:1:1,9880:1:1,9894:1:1,213546:1:1,213547:3:3,248690:1:1,248692:1:1,248694:2:2,248709:1:1^
 1120^1^0^8^8^1426^0.7010^0.3962^1^Frostmane Troll^^
 2252^25^0^34^35^1416^0.5003^0.5719^25^Crushridge Ogre^2843:5:5,3658:3:3,3771:3:3,3782:1:1,4306:8:12,4414:1:1,248690:1:1^
@@ -21,6 +21,7 @@ GoldScout-export 9^g0myccqqg8dt^19
 5426^2^0^44^45^1446^0.4929^0.3479^2^Blisterpaw Hyena^12208:1:1^
 5428^2^0^41^42^1446^0.4868^0.3304^2^Roc^12207:1:1^
 5429^1^0^45^45^1446^0.4912^0.3480^1^Fire Roc^3404:1:1,12207:1:1^
+14123^81^0^42^43^1446^0.6746^0.3619^81^Steeljaw Snapper^3712:32:32,4555:44:44,4556:42:42,4603:2:2,7973:21:21,14826:1:1,248690:1:1,248693:1:1,262889:1:1^
 245999^2^0^0^0^1416^0.0000^0.0000^0^^273031:1:1,273035:1:1^
 246008^1^0^0^0^1416^0.0000^0.0000^0^^273040:1:1^
 246016^1^0^0^0^1416^0.0000^0.0000^0^^273044:1:1^
@@ -61,6 +62,7 @@ GoldScout-export 9^g0myccqqg8dt^19
 @i^2843^Dirty Knucklebones
 @i^3404^Buzzard Wing
 @i^3658^Recovered Tome
+@i^3712^Turtle Meat
 @i^3771^Wild Hog Shank
 @i^3782^Large War Club
 @i^3783^Light Scimitar
@@ -85,10 +87,13 @@ GoldScout-export 9^g0myccqqg8dt^19
 @i^4552^Smooth Stone Chip
 @i^4553^Jagged Piece of Stone
 @i^4554^Shiny Polished Stone
+@i^4555^Thick Scaly Tail
+@i^4556^Speckled Shell Fragment
 @i^4580^Sabertooth Fang
 @i^4582^Soft Bushy Tail
 @i^4583^Thick Furry Mane
 @i^4584^Large Trophy Paw
+@i^4603^Raw Spotted Yellowtail
 @i^4636^Strong Iron Lockbox
 @i^4637^Steel Lockbox
 @i^4784^Lifeless Stone
@@ -115,6 +120,7 @@ GoldScout-export 9^g0myccqqg8dt^19
 @i^7489^Captain's Gauntlets of Intellect
 @i^7909^Aquamarine
 @i^7912^Solid Stone
+@i^7973^Big-mouth Clam
 @i^8139^Chromite Gauntlets
 @i^8144^Chromite Pauldrons
 @i^8146^Wicked Claw
@@ -140,6 +146,7 @@ GoldScout-export 9^g0myccqqg8dt^19
 @i^12207^Giant Egg
 @i^12208^Tender Wolf Meat
 @i^13038^Swiftwind
+@i^14826^Symbolic Gauntlets
 @i^15243^Deadly Kris of the Wolf
 @i^15251^Headstriker Sword of the Bear
 @i^15260^Stone Hammer of Power
@@ -183,6 +190,7 @@ GoldScout-export 9^g0myccqqg8dt^19
 @q^2843^1:12:0
 @q^3404^1:7:1
 @q^3658^1:12:0
+@q^3712^1:7:1
 @q^3771^1:0:0
 @q^3782^0:2:0
 @q^3783^0:2:0
@@ -207,10 +215,13 @@ GoldScout-export 9^g0myccqqg8dt^19
 @q^4552^0:15:0
 @q^4553^0:15:0
 @q^4554^0:15:0
+@q^4555^0:15:0
+@q^4556^0:15:0
 @q^4580^0:15:0
 @q^4582^1:12:0
 @q^4583^0:15:0
 @q^4584^0:15:0
+@q^4603^1:7:1
 @q^4636^2:15:0
 @q^4637^2:15:0
 @q^4784^0:15:0
@@ -237,6 +248,7 @@ GoldScout-export 9^g0myccqqg8dt^19
 @q^7489^2:4:0
 @q^7909^2:7:1
 @q^7912^1:7:1
+@q^7973^1:7:0
 @q^8139^2:4:0
 @q^8144^2:4:0
 @q^8146^1:7:1
@@ -262,6 +274,7 @@ GoldScout-export 9^g0myccqqg8dt^19
 @q^12207^1:7:1
 @q^12208^1:7:1
 @q^13038^3:2:0
+@q^14826^2:4:0
 @q^15243^2:2:0
 @q^15251^2:2:0
 @q^15260^2:2:0
@@ -685,6 +698,7 @@ GoldScout-export 9^g0myccqqg8dt^19
 @a^5426^130:1,149:1
 @a^5428^129:1,149:1
 @a^5429^129:1
+@a^14123^73:1,92:1,93:3,133:16,153:54,173:6
 @a^259052^231:4,232:1,251:8
 @a^259054^211:1,231:4
 @a^259055^211:2,231:9
@@ -698,4 +712,5 @@ GoldScout-export 9^g0myccqqg8dt^19
 @t^2736^296:8992
 @t^2752^1:15
 @t^2831^1:2
+@t^14123^80:2792
 @l^0^enUS
