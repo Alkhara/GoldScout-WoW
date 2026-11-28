@@ -1,8 +1,9 @@
-GoldScout-export 9^uczq0zrfdjuo^47
+GoldScout-export 9^uczq0zrfdjuo^48
 1511^2^0^41^42^1434^0.3485^0.6119^2^Enraged Silverback Gorilla^2799:2:2^
 1557^1^0^40^40^1434^0.3454^0.6283^1^Elder Mistvale Gorilla^4097:1:1,5637:1:1^
 1565^1^0^45^45^1434^0.2941^0.8923^1^Bloodsail Sea Dog^2751:1:1^
 1653^2^0^44^44^1434^0.2923^0.8862^2^Bloodsail Elder Magus^4338:2:2,9260:1:1^
+1766^7^0^11^12^1421^0.5933^0.1050^7^Mottled Worg^2672:7:7,3164:3:3,3299:2:2,3300:2:2^
 1783^1^0^50^51^1422^0.3879^0.5527^1^Skeletal Flayer^^
 1784^2^0^51^52^1422^0.3779^0.5620^2^Skeletal Sorcerer^10305:1:1,12840:1:1,14047:1:2^
 1787^12^0^54^55^1422^0.4313^0.7026^12^Skeletal Executioner^7972:3:3,8766:1:1,8948:1:1,12840:3:3,14047:3:3,14619:9:9^
@@ -483,11 +484,14 @@ GoldScout-export 9^uczq0zrfdjuo^47
 @i^2447^Peacebloom
 @i^2452^Swiftthistle
 @i^2589^Linen Cloth
+@i^2672^Stringy Wolf Meat
 @i^2751^Green Hills of Stranglethorn - Page 27
 @i^2778^Cheap Blunderbuss
 @i^2799^Gorilla Fang
+@i^3164^Discolored Worg Heart
 @i^3279^Battle Chain Boots
 @i^3299^Fractured Canine
+@i^3300^Rabbit's Foot
 @i^3669^Gelatinous Goo
 @i^3671^Lifeless Skull
 @i^3676^Slimy Ichor
@@ -964,11 +968,14 @@ GoldScout-export 9^uczq0zrfdjuo^47
 @q^2447^1:7:1
 @q^2452^1:7:1
 @q^2589^1:7:1
+@q^2672^1:7:1
 @q^2751^1:12:0
 @q^2778^0:2:0
 @q^2799^1:12:0
+@q^3164^1:12:0
 @q^3279^1:4:0
 @q^3299^0:15:0
+@q^3300^0:15:0
 @q^3669^0:15:0
 @q^3671^0:15:0
 @q^3676^0:15:0
@@ -1433,6 +1440,7 @@ GoldScout-export 9^uczq0zrfdjuo^47
 @q^282028^1:12:0
 @m^1413^The Barrens
 @m^1414^Kalimdor
+@m^1421^Silverpine Forest
 @m^1422^Western Plaguelands
 @m^1423^Eastern Plaguelands
 @m^1425^The Hinterlands
@@ -2576,6 +2584,7 @@ GoldScout-export 9^uczq0zrfdjuo^47
 @a^1557^246:1
 @a^1565^345:1
 @a^1653^345:2
+@a^1766^32:3,51:4
 @a^1783^227:1
 @a^1784^227:2
 @a^1787^248:1,249:1,268:1,269:1,287:1,288:6,289:1
@@ -2875,6 +2884,7 @@ GoldScout-export 9^uczq0zrfdjuo^47
 @a^269254^250:1,331:2
 @a^276138^269:1,290:1
 @a^278137^293:8
+@t^1766^6:324
 @f^1413^0^18^100^6303:6:6,6353:1:1,6358:3:3,6361:12:12^152:18
 @f^1434^0^6^105^4603:5:6,6358:3:3,6362:2:2^285:6
 @f^1454^0^8^111^6289:5:6,6308:3:3^133:8

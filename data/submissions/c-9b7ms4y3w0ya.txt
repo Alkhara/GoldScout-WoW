@@ -1,4 +1,4 @@
-GoldScout-export 9^9b7ms4y3w0ya^24
+GoldScout-export 9^9b7ms4y3w0ya^25
 92^5^0^39^40^1418^0.4426^0.8393^5^Elémentaire de roche^4553:4:4,4784:3:3,7067:1:1,7912:1:2,8150:1:1^
 440^1^0^19^20^1433^0.3216^0.4490^1^Grunt rochenoire^2287:1:1,2592:1:2^
 485^2^0^20^20^1433^0.3219^0.4476^2^Estafette rochenoire^1770:1:1,2592:1:2^
@@ -69,6 +69,8 @@ GoldScout-export 9^9b7ms4y3w0ya^24
 6733^4^0^39^39^1418^0.6481^0.4281^4^Cogneur Cavepierre^1708:1:1,4306:1:1,4338:1:3^
 11562^1^0^33^33^1443^0.2627^0.7842^1^Rampant Claquesec^^
 12902^1^0^0^0^0^0.0000^0.0000^0^^253986:1:1,273841:1:1^
+250873^1^0^1^1^2521^0.4374^0.2843^1^Jeune vuldrène^7073:1:1,7074:1:1^
+251169^1^0^1^1^2521^0.4373^0.2843^1^Mouche-cirrus agaçante^251927:1:1^
 254560^17^0^39^40^2548^0.4747^0.4705^17^Ténébromancienne du Crépuscule^4306:5:11,4338:1:1,266425:8:14,266427:1:1,267073:4:7^
 255769^10^0^37^38^2548^0.2652^0.6445^10^Brute des Carmines^3402:1:1,4306:2:5,213547:1:1,248690:1:1^
 255770^8^0^36^37^2548^0.2167^0.6780^8^Mystique des Carmines^3402:1:1,4306:4:8^
@@ -265,6 +267,8 @@ GoldScout-export 9^9b7ms4y3w0ya^24
 @i^6904^Morsure de Serra'kis
 @i^6905^Hache des récifs
 @i^7067^Terre élémentaire
+@i^7073^Croc brisé
+@i^7074^Griffes émoussées
 @i^7431^Pantalon du crépuscule de la baleine
 @i^7536^Pavois de champion de héraut
 @i^7846^Croc de coyote des rochers
@@ -324,6 +328,7 @@ GoldScout-export 9^9b7ms4y3w0ya^24
 @i^248692^Caisse détournée : minerai d'expert
 @i^248694^Caisse détournée : curiosités d'expert
 @i^248710^Caisse détournée : composants d'expert
+@i^251927^Dard de mouche-cirrus ébréché
 @i^252816^Patron : casque de défenseur en cuir
 @i^253986^Patron : diadème brillant filigrané
 @i^262889^Commission d'expert scellée
@@ -476,6 +481,8 @@ GoldScout-export 9^9b7ms4y3w0ya^24
 @q^6904^3:2:0
 @q^6905^3:2:0
 @q^7067^1:7:1
+@q^7073^0:15:0
+@q^7074^0:15:0
 @q^7431^2:4:0
 @q^7536^2:4:0
 @q^7846^1:12:0
@@ -535,6 +542,7 @@ GoldScout-export 9^9b7ms4y3w0ya^24
 @q^248692^1:0:1
 @q^248694^1:0:1
 @q^248710^2:0:1
+@q^251927^0:15:0
 @q^252816^3:9:0
 @q^253986^3:9:0
 @q^262889^3:0:0
@@ -594,6 +602,7 @@ GoldScout-export 9^9b7ms4y3w0ya^24
 @m^1444^Féralas
 @m^1445^Marécage d'Âprefange
 @m^1446^Tanaris
+@m^2521^Île de Zéphras
 @m^2548^Rives Claires
 @c^118^
 @c^724^
@@ -1360,6 +1369,8 @@ GoldScout-export 9^9b7ms4y3w0ya^24
 @a^5287^211:1
 @a^6733^172:1,173:2,192:1
 @a^11562^305:1
+@a^250873^108:1
+@a^251169^108:1
 @a^254560^169:2,189:12,190:1,209:2
 @a^255769^225:4,246:1,263:2,266:2,283:1
 @a^255770^245:1,263:4,265:1,283:2
@@ -1470,6 +1481,7 @@ GoldScout-export 9^9b7ms4y3w0ya^24
 @t^5254^1:118
 @t^6733^4:276
 @t^11562^1:622
+@t^251169^1:55
 @t^256795^5:407
 @t^256797^1:3
 @t^256799^1:8
