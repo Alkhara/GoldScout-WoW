@@ -1,5 +1,13 @@
-GoldScout-export 9^f9xv1p2cdu8i^2
+GoldScout-export 9^f9xv1p2cdu8i^3
 5422^1^0^40^41^1446^0.5406^0.2522^1^Cazador escórpido^19936:1:1^
+5471^3^0^45^46^1446^0.4781^0.6726^3^Ogro Machacaduna^252908:1:1,278186:1:1^
+5472^4^0^46^47^1446^0.4385^0.6901^4^Déspota Machacaduna^^
+5473^1^0^46^47^1446^0.4820^0.6507^1^Ogro mago Machacaduna^^
+5474^7^0^47^48^1446^0.4330^0.6938^7^Tosco Machacaduna^4338:2:5^
+5475^1^0^47^48^1446^0.4829^0.6498^1^Brujo Machacaduna^4338:1:3^
+5481^5^0^47^48^1446^0.2884^0.6485^5^Colector de rocío Cardizal^1645:1:1,8428:1:1,8429:2:2,8430:3:3,10286:2:2^
+5485^5^0^49^50^1446^0.2904^0.6571^5^Enraizador Cardizal^4608:1:1,8845:1:1^
+5490^4^0^48^49^1446^0.3011^0.6418^4^Cardizal nudoso^3357:1:1^
 7855^15^0^44^45^1446^0.7275^0.4717^15^Pirata de los Mares del Sur^1645:1:1,3927:1:1,4338:4:7,7909:1:1,14781:1:1,20519:6:6^
 7856^13^0^44^45^1446^0.7305^0.4780^13^Filibustero de los Mares del Sur^3927:1:1,3967:1:1,4306:1:1,4338:4:8,9276:1:1,14834:1:1,20519:3:3,213547:1:1^
 7857^22^0^44^45^1446^0.7375^0.4781^22^Portuario de los Mares del Sur^3927:2:2,3928:1:1,3939:1:1,4306:2:3,4338:6:8,9276:2:2,14841:1:1,15607:1:1,20519:6:6^
@@ -7,6 +15,7 @@ GoldScout-export 9^f9xv1p2cdu8i^2
 7883^2^0^45^45^1446^0.7334^0.4698^2^Andre Barbafuego^9246:1:1,14654:1:1,20519:2:2,213546:1:1^
 9165^1^0^49^49^1449^0.7992^0.6130^1^Pterrordáctilo volantón^11116:1:1^
 @i^1645^Zumo de baya lunar
+@i^3357^Vidarraíz
 @i^3927^Queso cheddar curado bueno
 @i^3928^Poción de sanación excelente
 @i^3939^Capa de ganchillo
@@ -14,13 +23,19 @@ GoldScout-export 9^f9xv1p2cdu8i^2
 @i^4306^Paño de seda
 @i^4338^Paño de tejido mágico
 @i^4603^Serviola moteada cruda
+@i^4608^Trufa negra cruda
 @i^6359^Pargo de fuego
 @i^6362^Bacalao piedrescama crudo
 @i^7909^Aguamarina
 @i^7973^Almeja de boca grande
+@i^8428^Glándula cargada de rocío
+@i^8429^Glándula perforada
+@i^8430^Glándula de rocío vacía
+@i^8845^Champiñón fantasma
 @i^9246^Cabeza de Barbafuego
 @i^9260^Ron volátil
 @i^9276^Baúl de pirata
+@i^10286^Corazón de lo Salvaje
 @i^11116^Un diario destrozado
 @i^13422^Anguila escama pétrea
 @i^13754^Vigorpez lustroso crudo
@@ -34,7 +49,10 @@ GoldScout-export 9^f9xv1p2cdu8i^2
 @i^20519^Sombrero de pirata de los Mares del Sur
 @i^213546^Pergamino: CUCAMONGA
 @i^213547^Pergamino: QÉUSAPEDA
+@i^252908^Patrón: botas de escórpido flexibles
+@i^278186^Brazalete con pulido brillante
 @q^1645^1:0:0
+@q^3357^1:7:1
 @q^3927^1:0:0
 @q^3928^1:0:0
 @q^3939^0:4:0
@@ -42,13 +60,19 @@ GoldScout-export 9^f9xv1p2cdu8i^2
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4603^1:7:1
+@q^4608^1:0:0
 @q^6359^1:7:1
 @q^6362^1:7:1
 @q^7909^2:7:1
 @q^7973^1:7:0
+@q^8428^1:12:0
+@q^8429^0:15:0
+@q^8430^0:15:0
+@q^8845^1:7:1
 @q^9246^1:12:0
 @q^9260^1:0:0
 @q^9276^1:15:0
+@q^10286^1:7:1
 @q^11116^2:15:0
 @q^13422^1:7:1
 @q^13754^1:7:1
@@ -62,6 +86,8 @@ GoldScout-export 9^f9xv1p2cdu8i^2
 @q^20519^1:12:0
 @q^213546^1:0:0
 @q^213547^1:0:0
+@q^252908^2:9:0
+@q^278186^1:12:0
 @m^1446^Tanaris
 @m^1449^Cráter de Un'Goro
 @c^118^
@@ -429,12 +455,27 @@ GoldScout-export 9^f9xv1p2cdu8i^2
 @c^279990^
 @c^286152^
 @a^5422^110:1
+@a^5471^269:3
+@a^5472^249:1,269:1,287:1,288:1
+@a^5473^269:1
+@a^5474^269:3,288:4
+@a^5475^249:1
+@a^5481^245:3,265:2
+@a^5485^245:1,265:3,266:1
+@a^5490^245:2,246:1,266:1
 @a^7855^174:1,194:14
 @a^7856^194:13
 @a^7857^194:22
 @a^7858^194:9,195:1
 @a^7883^194:2
 @a^9165^255:1
+@t^5471^3:105
+@t^5472^4:166
+@t^5473^1:3
+@t^5474^7:340
+@t^5481^1:9
+@t^5485^1:35
+@t^5490^3:444
 @t^7855^14:915
 @t^7856^13:915
 @t^7857^22:1398

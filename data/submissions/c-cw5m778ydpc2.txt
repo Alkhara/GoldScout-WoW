@@ -1,4 +1,4 @@
-GoldScout-export 9^cw5m778ydpc2^61
+GoldScout-export 9^cw5m778ydpc2^62
 3^6^0^24^25^1431^0.2272^0.3615^6^Flesh Eater^884:3:3,887:1:1,2592:4:6^
 36^22^0^11^12^1436^0.5086^0.3443^22^Harvest Golem^732:7:7,814:11:11,1274:6:6,1510:1:1,1512:1:1,1513:1:1,1514:1:1,1516:1:1,2763:1:1,3375:1:1,255007:7:7,255010:2:2^
 46^10^0^9^10^1429^0.7887^0.6487^10^Murloc Forager^779:4:4,1420:1:1,1429:1:1,2643:1:1,2960:1:1,6303:2:3,6344:1:1,250366:1:1^
@@ -260,6 +260,13 @@ GoldScout-export 9^cw5m778ydpc2^61
 2322^6^0^14^16^1439^0.4987^0.2838^6^Foreststrider^4775:3:3,5114:1:1,5469:3:3,14117:1:1^
 2324^7^0^13^14^1439^0.3988^0.5470^7^Blackwood Windtalker^1511:1:1,2589:4:9,3192:1:1,3307:1:1^
 2336^6^0^16^17^1439^0.5564^0.2635^6^Dark Strand Fanatic^2592:2:2,5348:4:4^
+2354^1^0^22^23^1424^0.5490^0.5255^1^Vicious Gray Bear^11406:1:1^
+2376^10^0^30^31^1424^0.4446^0.6648^10^Torn Fin Oracle^1780:1:1,5524:4:4,5785:1:1,6308:1:3,17057:2:2,17058:2:2,249881:2:2^
+2377^10^0^31^32^1424^0.4434^0.6578^10^Torn Fin Tidehunter^5524:2:2,6308:1:1,17057:5:5,17058:3:3^
+2384^1^0^24^24^1424^0.5571^0.5063^1^Starving Mountain Lion^5136:1:1^
+2406^2^0^32^32^1416^0.7835^0.5102^2^Mountain Lion^1686:1:1,3731:1:1,5637:1:1^
+2407^2^0^33^34^1416^0.8058^0.5842^2^Hulking Mountain Lion^1687:1:1,3731:1:1^
+2408^24^0^30^31^1424^0.6149^0.3998^11^Snapjaw^3712:7:11,4555:11:11,4556:5:5,5524:12:12,6308:4:8^
 2462^32^0^25^25^1431^0.2355^0.3536^32^Flesh Eating Worm^^
 2575^1^0^32^32^1417^0.4813^0.8809^1^Dark Iron Supplier^4306:1:2^
 2893^6^0^39^40^1418^0.5038^0.7050^6^Stonevault Bonesnapper^4306:2:4,248692:1:1^
@@ -504,6 +511,8 @@ GoldScout-export 9^cw5m778ydpc2^61
 @i^1514^Rusty Warhammer
 @i^1516^Worn Hatchet
 @i^1598^Rot Blossom
+@i^1686^Bristly Whisker
+@i^1687^Retractable Claw
 @i^1696^Curved Raptor Talon
 @i^1697^Keen Raptor Tooth
 @i^1712^Scroll of Spirit II
@@ -522,6 +531,7 @@ GoldScout-export 9^cw5m778ydpc2^61
 @i^1760^Reinforced Chain Shoulderpads
 @i^1764^Canvas Shoes
 @i^1769^Canvas Shoulderpads
+@i^1780^Cross-stitched Sandals
 @i^1782^Cross-stitched Cloak
 @i^1784^Cross-stitched Pants
 @i^1787^Patched Leather Belt
@@ -693,11 +703,13 @@ GoldScout-export 9^cw5m778ydpc2^61
 @i^3671^Lifeless Skull
 @i^3685^Raptor Egg
 @i^3702^Bear Gall Bladder
+@i^3712^Turtle Meat
 @i^3722^Familiar Hide
 @i^3723^Familiar Fang
 @i^3724^Familiar Claw
 @i^3725^Familiar Horn
 @i^3730^Big Bear Meat
+@i^3731^Lion Meat
 @i^3770^Mutton Chop
 @i^3882^Buzzard Feather
 @i^3931^Poisoned Spider Fang
@@ -714,6 +726,8 @@ GoldScout-export 9^cw5m778ydpc2^61
 @i^4540^Tough Hunk of Bread
 @i^4542^Moist Cornbread
 @i^4553^Jagged Piece of Stone
+@i^4555^Thick Scaly Tail
+@i^4556^Speckled Shell Fragment
 @i^4561^Scalping Tomahawk of Fire Protection
 @i^4564^Spiked Club of the Bear
 @i^4566^Sturdy Quarterstaff of the Bear
@@ -786,6 +800,7 @@ GoldScout-export 9^cw5m778ydpc2^61
 @i^5637^Large Fang
 @i^5734^Super Reaper 6000 Blueprints
 @i^5784^Slimy Murloc Scale
+@i^5785^Thick Murloc Scale
 @i^5808^Pridewing Venom Sac
 @i^5871^Large Hoof
 @i^6205^Burrowing Shovel
@@ -901,6 +916,7 @@ GoldScout-export 9^cw5m778ydpc2^61
 @i^248703^Waylaid Crate: Apprentice Ingots
 @i^248704^Waylaid Crate: Apprentice Parts
 @i^248705^Waylaid Crate: Journeyman Fabrics
+@i^249881^Recipe: Root Tea
 @i^250187^Recipe: Tasty Raptor Bites
 @i^250188^Recipe: Breakfast Omelette
 @i^250366^Recipe: Minor Cleric's Elixir
@@ -1049,6 +1065,8 @@ GoldScout-export 9^cw5m778ydpc2^61
 @q^1514^0:2:0
 @q^1516^0:2:0
 @q^1598^1:12:0
+@q^1686^0:15:0
+@q^1687^0:15:0
 @q^1696^0:15:0
 @q^1697^0:15:0
 @q^1712^1:0:0
@@ -1067,6 +1085,7 @@ GoldScout-export 9^cw5m778ydpc2^61
 @q^1760^0:4:0
 @q^1764^0:4:0
 @q^1769^0:4:0
+@q^1780^0:4:0
 @q^1782^0:4:0
 @q^1784^0:4:0
 @q^1787^0:4:0
@@ -1238,11 +1257,13 @@ GoldScout-export 9^cw5m778ydpc2^61
 @q^3671^0:15:0
 @q^3685^1:7:1
 @q^3702^0:15:0
+@q^3712^1:7:1
 @q^3722^0:15:0
 @q^3723^0:15:0
 @q^3724^0:15:0
 @q^3725^0:15:0
 @q^3730^1:7:1
+@q^3731^1:7:1
 @q^3770^1:0:0
 @q^3882^0:15:0
 @q^3931^0:15:0
@@ -1259,6 +1280,8 @@ GoldScout-export 9^cw5m778ydpc2^61
 @q^4540^1:0:0
 @q^4542^1:0:0
 @q^4553^0:15:0
+@q^4555^0:15:0
+@q^4556^0:15:0
 @q^4561^2:2:0
 @q^4564^2:2:0
 @q^4566^2:2:0
@@ -1331,6 +1354,7 @@ GoldScout-export 9^cw5m778ydpc2^61
 @q^5637^1:7:1
 @q^5734^1:12:0
 @q^5784^1:7:1
+@q^5785^1:7:1
 @q^5808^1:12:0
 @q^5871^0:15:0
 @q^6205^2:2:0
@@ -1446,6 +1470,7 @@ GoldScout-export 9^cw5m778ydpc2^61
 @q^248703^2:0:1
 @q^248704^2:0:1
 @q^248705^2:0:1
+@q^249881^1:9:0
 @q^250187^1:9:0
 @q^250188^1:9:0
 @q^250366^1:9:0
@@ -1497,8 +1522,10 @@ GoldScout-export 9^cw5m778ydpc2^61
 @m^1413^The Barrens
 @m^1414^Kalimdor
 @m^1415^Eastern Kingdoms
+@m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
 @m^1418^Badlands
+@m^1424^Hillsbrad Foothills
 @m^1426^Dun Morogh
 @m^1429^Elwynn Forest
 @m^1431^Duskwood
@@ -3570,6 +3597,13 @@ GoldScout-export 9^cw5m778ydpc2^61
 @a^2322^109:4,110:1,130:1
 @a^2324^207:5,208:1,227:1
 @a^2336^110:1,111:5
+@a^2354^210:1
+@a^2376^249:2,268:8
+@a^2377^249:1,268:9
+@a^2384^211:1
+@a^2406^195:1,215:1
+@a^2407^215:1,256:1
+@a^2408^53:1,93:1,113:1,171:1,172:2,191:3,211:1,231:1
 @a^2462^124:13,144:15,145:4
 @a^2575^349:1
 @a^2893^269:1,270:2,289:2,290:1
@@ -3777,6 +3811,13 @@ GoldScout-export 9^cw5m778ydpc2^61
 @t^2044^1:83
 @t^2091^2:126
 @t^2108^1:61
+@t^2354^1:262
+@t^2376^9:253
+@t^2377^8:306
+@t^2384^1:105
+@t^2406^2:165
+@t^2407^2:54
+@t^2408^24:1837
 @t^2462^32:254
 @t^4062^3:53
 @t^4463^2:178

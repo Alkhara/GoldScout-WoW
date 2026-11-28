@@ -1,4 +1,4 @@
-GoldScout-export 9^xrd550wlq8vp^8
+GoldScout-export 9^xrd550wlq8vp^9
 123^4^0^13^14^1436^0.3048^0.5782^4^Riverpaw Mongrel^2589:2:6^
 458^9^0^16^17^1436^0.2732^0.5799^9^Murloc Hunter^730:4:4,5523:2:2,5784:3:3^
 501^2^0^14^15^1436^0.3054^0.5779^2^Riverpaw Herbalist^1401:1:5,2589:1:1^
@@ -81,6 +81,7 @@ GoldScout-export 9^xrd550wlq8vp^8
 @i^3800^Hardened Leather Belt
 @i^3804^Hardened Leather Gloves
 @i^3816^Reflective Heater
+@i^3827^Mana Potion
 @i^3864^Citrine
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
@@ -102,6 +103,8 @@ GoldScout-export 9^xrd550wlq8vp^8
 @i^6294^12 Pound Mud Snapper
 @i^6303^Raw Slitherskin Mackerel
 @i^6308^Raw Bristle Whisker Catfish
+@i^6310^19 Pound Catfish
+@i^6311^22 Pound Catfish
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
 @i^6361^Raw Rainbow Fin Albacore
@@ -115,6 +118,7 @@ GoldScout-export 9^xrd550wlq8vp^8
 @i^7710^Loksey's Training Stick
 @i^7711^Robe of Doan
 @i^7714^Hypnotic Blade
+@i^8365^Raw Mithril Head Trout
 @i^12203^Red Wolf Meat
 @i^13422^Stonescale Eel
 @i^15226^Giant Club of Nature Protection
@@ -163,6 +167,7 @@ GoldScout-export 9^xrd550wlq8vp^8
 @q^3800^0:4:0
 @q^3804^0:4:0
 @q^3816^0:4:0
+@q^3827^1:0:0
 @q^3864^2:7:1
 @q^4306^1:7:1
 @q^4338^1:7:1
@@ -184,6 +189,8 @@ GoldScout-export 9^xrd550wlq8vp^8
 @q^6294^1:15:0
 @q^6303^1:7:1
 @q^6308^1:7:1
+@q^6310^1:15:0
+@q^6311^1:15:0
 @q^6358^1:7:1
 @q^6359^1:7:1
 @q^6361^1:7:1
@@ -197,6 +204,7 @@ GoldScout-export 9^xrd550wlq8vp^8
 @q^7710^3:2:0
 @q^7711^2:4:0
 @q^7714^3:2:0
+@q^8365^1:7:1
 @q^12203^1:7:1
 @q^13422^1:7:1
 @q^15226^2:2:0
@@ -273,6 +281,7 @@ GoldScout-export 9^xrd550wlq8vp^8
 @t^501^2:2
 @t^517^10:63
 @t^6250^8:139
+@f^1416^0^61^175^1710:1:1,3827:1:1,6308:17:17,6310:1:1,6311:1:1,8365:40:40^324:61
 @f^1429^0^137^1^6289:57:57,6291:78:78,6294:1:1,6643:1:1^249:137
 @f^1433^0^72^150^6289:19:19,6308:53:53^204:72
 @f^1436^0^11^168^6289:3:3,6303:3:3,6308:1:1,6361:4:4^205:7,229:3,249:1

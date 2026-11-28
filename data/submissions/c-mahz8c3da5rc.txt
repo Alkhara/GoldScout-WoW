@@ -1,4 +1,4 @@
-GoldScout-export 6^mahz8c3da5rc^25
+GoldScout-export 6^mahz8c3da5rc^26
 36^21^0^11^12^1436^0.4692^0.6709^21^Harvest Golem^732:3:3,814:5:5,816:1:1,1274:9:9,1513:1:1,1514:1:1,1732:1:1,2215:2:2,9760:1:1,255007:7:7^
 94^1^0^5^6^1429^0.3998^0.5533^1^Defias Cutpurse^2589:1:2^
 95^1^0^11^11^1436^0.4655^0.5328^1^Defias Smuggler^^
@@ -186,10 +186,22 @@ GoldScout-export 6^mahz8c3da5rc^25
 3823^1^0^19^20^1440^0.2936^0.2308^1^Ghostpaw Runner^3301:1:1^
 4064^3^0^20^21^1433^0.5785^0.5983^3^Blackrock Scout^1705:1:1,2592:1:4,2783:1:1,211855:1:1^
 4065^7^0^21^22^1433^0.5889^0.5898^7^Blackrock Sentry^857:1:1,1205:1:1,1818:1:1^
+4107^6^0^28^29^1441^0.1066^0.3588^6^Highperch Wyvern^5137:4:4,5809:5:5^
+4109^9^0^28^29^1441^0.1090^0.3626^9^Highperch Consort^5136:1:1,5137:7:7,5809:5:5,15125:1:1^
+4139^5^0^33^34^1441^0.7559^0.7325^5^Scorpid Terror^1288:2:2,5794:1:1,12037:3:3,19938:1:1^
+4140^17^0^31^32^1441^0.7699^0.6922^17^Scorpid Reaver^5794:5:5,12037:8:8,19937:1:1,19938:8:8^
+4142^2^0^30^31^1441^0.7496^0.6249^2^Sparkleshell Tortoise^5795:1:1^
+4143^13^0^34^35^1441^0.7947^0.7040^13^Sparkleshell Snapper^3712:5:5,4555:6:6,4556:5:5,5795:5:5^
+4144^1^0^32^32^1441^0.8316^0.7844^1^Sparkleshell Borer^3712:1:1,5795:1:1^
+4147^1^0^30^31^1441^0.7287^0.6231^1^Saltstone Basilisk^1701:1:1,6045:1:1,211855:1:1^
+4151^1^0^32^33^1441^0.8338^0.6695^1^Saltstone Crystalhide^1702:1:1^
+4154^5^0^30^32^1441^0.7955^0.6255^5^Salt Flats Scavenger^729:4:4,5114:2:2,5116:1:1,5848:5:5,11416:1:1,12037:1:1^
 4462^1^0^23^24^1433^0.6408^0.5692^1^Blackrock Hunter^^
 4463^5^0^22^23^1433^0.2613^0.0863^5^Blackrock Summoner^2592:2:3,6586:1:1^
 6123^5^0^10^11^1426^0.7717^0.5938^5^Dark Iron Spy^2589:1:1,2763:1:1,7108:1:1,274268:1:1^
 6170^2^0^32^32^1431^0.7397^0.7786^2^Gutspill^^
+7873^1^0^33^33^1413^0.4512^0.8917^1^Razorfen Battleguard^248707:1:1^
+9377^1^0^34^34^1441^0.8187^0.6946^1^Swirling Vortex^^
 10323^1^0^19^19^1439^0.3550^0.7652^1^Murkdeep^5523:1:1^
 12922^5^0^22^32^1417^0.3477^0.4124^3^Imp Minion^^
 14222^1^0^35^35^1416^0.3956^0.8864^1^Araga^283253:1:1^
@@ -276,6 +288,8 @@ GoldScout-export 6^mahz8c3da5rc^25
 @i^1686^Bristly Whisker
 @i^1687^Retractable Claw
 @i^1696^Curved Raptor Talon
+@i^1701^Curved Basilisk Claw
+@i^1702^Intact Basilisk Spine
 @i^1705^Lesser Moonstone
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
@@ -436,7 +450,9 @@ GoldScout-export 6^mahz8c3da5rc^25
 @i^5113^Mark of the Syndicate
 @i^5114^Severed Talon
 @i^5115^Broken Wishbone
+@i^5116^Long Tail Feather
 @i^5135^Thin Black Claw
+@i^5136^Torn Furry Ear
 @i^5137^Bright Eyeball
 @i^5465^Small Spider Leg
 @i^5469^Strider Meat
@@ -446,6 +462,11 @@ GoldScout-export 6^mahz8c3da5rc^25
 @i^5635^Sharp Claw
 @i^5637^Large Fang
 @i^5784^Slimy Murloc Scale
+@i^5794^Salty Scorpid Venom
+@i^5795^Hardened Tortoise Shell
+@i^5809^Highperch Venom Sac
+@i^5848^Hollow Vulture Bone
+@i^6045^Plans: Iron Counterweight
 @i^6269^Pioneer Trousers of Spirit
 @i^6308^Raw Bristle Whisker Catfish
 @i^6378^Seer's Cape
@@ -478,16 +499,21 @@ GoldScout-export 6^mahz8c3da5rc^25
 @i^10424^Plans: Silvered Bronze Leggings
 @i^11152^Formula: Enchant Gloves - Fishing
 @i^11406^Rotting Bear Carcass
+@i^11416^Delicate Ribcage
+@i^12037^Mystery Meat
 @i^12184^Raptor Flesh
 @i^12202^Tiger Meat
 @i^14129^Ritual Sandals of Intellect
 @i^14174^Buccaneer's Boots of Spirit
+@i^15125^Robust Gloves of the Bandit
 @i^15223^Jagged Star of Healing
 @i^15248^Gleaming Claymore of the Bear
 @i^15250^Glimmering Flamberge of the Bandit
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
+@i^19937^Small Scorpid Claw
+@i^19938^Heavy Scorpid Leg
 @i^20576^Pattern: Black Whelp Tunic
 @i^211780^Scroll: KWYJIBO
 @i^211784^Scroll: WUBBA WUBBA
@@ -508,6 +534,7 @@ GoldScout-export 6^mahz8c3da5rc^25
 @i^248694^Waylaid Crate: Expert Curiosities
 @i^248702^Waylaid Crate: Apprentice Fabrics
 @i^248705^Waylaid Crate: Journeyman Fabrics
+@i^248707^Waylaid Crate: Journeyman Parts
 @i^251388^Plans: Hard Gold Leggings
 @i^255007^Golem Isospring
 @i^255010^Harvester Gyrostabilizer
@@ -597,6 +624,8 @@ GoldScout-export 6^mahz8c3da5rc^25
 @q^1686^0:15:0
 @q^1687^0:15:0
 @q^1696^0:15:0
+@q^1701^0:15:0
+@q^1702^0:15:0
 @q^1705^2:7:1
 @q^1707^1:0:0
 @q^1708^1:0:0
@@ -757,7 +786,9 @@ GoldScout-export 6^mahz8c3da5rc^25
 @q^5113^0:15:0
 @q^5114^0:15:0
 @q^5115^0:15:0
+@q^5116^1:7:1
 @q^5135^0:15:0
+@q^5136^0:15:0
 @q^5137^0:15:0
 @q^5465^1:7:1
 @q^5469^1:7:1
@@ -767,6 +798,11 @@ GoldScout-export 6^mahz8c3da5rc^25
 @q^5635^1:7:1
 @q^5637^1:7:1
 @q^5784^1:7:1
+@q^5794^1:12:0
+@q^5795^1:12:0
+@q^5809^1:12:0
+@q^5848^1:12:0
+@q^6045^2:9:0
 @q^6269^2:4:0
 @q^6308^1:7:1
 @q^6378^2:4:0
@@ -799,16 +835,21 @@ GoldScout-export 6^mahz8c3da5rc^25
 @q^10424^2:9:0
 @q^11152^2:9:0
 @q^11406^0:15:0
+@q^11416^0:15:0
+@q^12037^1:7:1
 @q^12184^1:7:1
 @q^12202^1:7:1
 @q^14129^2:4:0
 @q^14174^2:4:0
+@q^15125^2:4:0
 @q^15223^2:2:0
 @q^15248^2:2:0
 @q^15250^2:2:0
 @q^17056^1:15:1
 @q^17057^1:15:0
 @q^17058^1:15:0
+@q^19937^0:15:0
+@q^19938^0:15:0
 @q^20576^1:9:0
 @q^211780^1:0:0
 @q^211784^1:0:0
@@ -829,6 +870,7 @@ GoldScout-export 6^mahz8c3da5rc^25
 @q^248694^1:0:1
 @q^248702^2:0:1
 @q^248705^2:0:1
+@q^248707^2:0:1
 @q^251388^2:9:0
 @q^255007^1:7:1
 @q^255010^1:12:0
@@ -848,6 +890,7 @@ GoldScout-export 6^mahz8c3da5rc^25
 @q^281147^1:15:0
 @q^283253^2:4:0
 @q^286325^1:12:0
+@m^1413^The Barrens
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
 @m^1424^Hillsbrad Foothills
@@ -861,6 +904,7 @@ GoldScout-export 6^mahz8c3da5rc^25
 @m^1437^Wetlands
 @m^1439^Darkshore
 @m^1440^Ashenvale
+@m^1441^Thousand Needles
 @c^118^
 @c^724^
 @c^733^
@@ -3077,10 +3121,22 @@ GoldScout-export 6^mahz8c3da5rc^25
 @a^3823^85:1
 @a^4064^211:1,251:2
 @a^4065^191:1,212:1,232:2,251:1,270:1,271:1
+@a^4107^122:2,141:1,142:3
+@a^4109^121:1,141:1,142:7
+@a^4139^276:1,294:2,296:1,313:1
+@a^4140^254:1,256:2,275:5,276:2,294:5,295:1,314:1
+@a^4142^235:1,274:1
+@a^4143^235:1,256:2,276:2,295:2,296:1,297:1,313:1,314:2,317:1
+@a^4144^316:1
+@a^4147^254:1
+@a^4151^276:1
+@a^4154^236:1,256:3,273:1
 @a^4462^232:1
 @a^4463^24:1,25:2,26:1,44:1
 @a^6123^235:5
 @a^6170^314:2
+@a^7873^349:1
+@a^9377^276:1
 @a^10323^307:1
 @a^12922^147:1,166:1,167:1
 @a^14222^347:1

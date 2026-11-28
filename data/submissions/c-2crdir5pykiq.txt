@@ -1,4 +1,4 @@
-GoldScout-export 9^2crdir5pykiq^19
+GoldScout-export 9^2crdir5pykiq^20
 154^1^0^16^16^1436^0.5891^0.5825^1^Großer Fleischreißer^729:1:1,4775:1:1,6889:1:1,17056:1:1^
 428^254^0^18^19^1433^0.5415^0.7605^254^Terrorkondor^556:21:21,1080:91:91,1206:1:1,1210:1:1,1464:25:25,2079:1:1,4412:1:1,4575:1:1,4775:113:113,4776:43:43,5114:16:16,5115:6:6,6546:1:1,6889:172:172,9784:1:1,15222:1:1,17056:81:81,211784:3:3,211853:3:3,211854:1:1,211855:3:3,250188:9:9^
 441^30^0^17^18^1433^0.5300^0.7463^30^Schwarzer Großdrachenwelpe^3176:1:1,3177:5:5,6540:1:1,9785:1:1,211854:1:1,211855:1:1,248683:1:1^
@@ -31,7 +31,13 @@ GoldScout-export 9^2crdir5pykiq^19
 1715^5^0^0^0^0^0.0000^0.0000^0^^422:1:1,3201:1:1,211855:1:1^
 1716^1^0^0^0^0^0.0000^0.0000^0^^273824:1:1^
 1717^1^0^0^0^0^0.0000^0.0000^0^^273811:1:1^
+2250^1^0^33^33^1416^0.3997^0.7353^1^Bergyeti^^
+2254^10^0^36^37^1416^0.4111^0.4741^10^Crushridge-Raufer^1708:1:1,2843:4:4,3812:1:1,4306:2:2,4338:1:2,7084:1:1,213543:1:1^
+2255^2^0^37^38^1416^0.4111^0.4631^2^Crushridge-Magier^2843:2:2^
+2256^7^0^38^39^1416^0.3934^0.5753^7^Crushridge-Vollstrecker^1710:1:1,2843:2:2,3658:2:2,3817:1:1,4306:2:3^
+2287^5^0^39^40^1416^0.3899^0.5666^5^Crushridge-Kriegstreiber^2843:1:1,3658:3:3,4306:1:1,7454:1:1^
 2408^12^0^30^31^1424^0.6488^0.3461^12^Schnappkiefer^3712:4:7,4555:3:3,4556:5:5,5524:3:3,6308:4:6,213546:1:1^
+2417^2^0^39^39^1416^0.3937^0.4661^2^Grel'borg der Horter^1708:1:1,3684:1:1^
 2554^23^0^32^33^1417^0.6687^0.6314^23^Axtwerfer der Witherbark^3780:1:1,3809:1:1,4306:7:10,4503:8:8,6410:1:1,7273:8:8,7421:1:1,213545:1:1^
 2555^18^0^33^34^1417^0.6873^0.6743^18^Hexendoktor der Witherbark^1477:1:1,3771:2:2,3782:1:1,3784:1:1,3802:1:1,4306:4:6,4503:2:2,4522:4:4,7273:2:2,7409:1:1,213544:1:1,216483:1:1^
 2556^10^0^34^35^1417^0.6902^0.7359^10^Kopfjägerin der Bleichborken^1988:1:1,3385:1:1,3771:1:1,4306:1:2,9836:1:1,216483:1:1^
@@ -155,6 +161,7 @@ GoldScout-export 9^2crdir5pykiq^19
 @i^2677^Eberrippchen
 @i^2785^Steifer Doppelbogen
 @i^2786^Geölte Donnerbüchse
+@i^2843^Schmutzige Knöchelknochen
 @i^2973^Jagdtunika
 @i^3172^Ebergedärme
 @i^3174^Spinnensekret
@@ -166,7 +173,9 @@ GoldScout-export 9^2crdir5pykiq^19
 @i^3403^Elfenbeineberhauer
 @i^3639^Balgaras' Ohr
 @i^3640^Deepfurys Kopf
+@i^3658^Zurückgeholter Foliant
 @i^3667^Zartes Krokiliskenfleisch
+@i^3684^Perenolde-Tiara
 @i^3712^Schildkrötenfleisch
 @i^3770^Hammelkoteletts
 @i^3771^Wildschweinschenkel
@@ -178,6 +187,8 @@ GoldScout-export 9^2crdir5pykiq^19
 @i^3802^Gehärtete Lederarmschienen
 @i^3809^Doppelpanzerstiefel
 @i^3811^Doppelt genähter Umhang
+@i^3812^Doppelpanzerhandschuhe
+@i^3817^Verstärkter Rundschild
 @i^3931^Vergifteter Spinnenfangzahn
 @i^4097^Gesplitterter Gorillazahn
 @i^4306^Seidenstoff
@@ -224,10 +235,12 @@ GoldScout-export 9^2crdir5pykiq^19
 @i^6694^Herz von Agammagan
 @i^6889^Kleines Ei
 @i^6893^Werkstattschlüssel
+@i^7084^Muster: Purpurrote Seidenschultern
 @i^7273^Totemstecken der Witherbark
 @i^7409^Spitzelstiefel des Propheten
 @i^7415^Derwischschiftung des Banditen
 @i^7421^Phalanx-Handschuhe des Wals
+@i^7454^Ritterbrustplatte der Bestie
 @i^9277^Techbots Speicherkern
 @i^9279^Weiße Lochkarte
 @i^9308^Schmutzverkrustetes Objekt
@@ -316,6 +329,7 @@ GoldScout-export 9^2crdir5pykiq^19
 @q^2677^1:7:1
 @q^2785^0:2:0
 @q^2786^0:2:0
+@q^2843^1:12:0
 @q^2973^2:4:0
 @q^3172^1:7:1
 @q^3174^1:7:1
@@ -327,7 +341,9 @@ GoldScout-export 9^2crdir5pykiq^19
 @q^3403^0:15:0
 @q^3639^1:12:0
 @q^3640^1:12:0
+@q^3658^1:12:0
 @q^3667^1:7:1
+@q^3684^1:12:0
 @q^3712^1:7:1
 @q^3770^1:0:0
 @q^3771^1:0:0
@@ -339,6 +355,8 @@ GoldScout-export 9^2crdir5pykiq^19
 @q^3802^0:4:0
 @q^3809^0:4:0
 @q^3811^0:4:0
+@q^3812^0:4:0
+@q^3817^0:4:0
 @q^3931^0:15:0
 @q^4097^0:15:0
 @q^4306^1:7:1
@@ -385,10 +403,12 @@ GoldScout-export 9^2crdir5pykiq^19
 @q^6694^3:4:0
 @q^6889^1:7:1
 @q^6893^1:13:0
+@q^7084^2:9:0
 @q^7273^1:12:0
 @q^7409^2:4:0
 @q^7415^2:4:0
 @q^7421^2:4:0
+@q^7454^2:4:0
 @q^9277^1:12:0
 @q^9279^1:12:0
 @q^9308^1:12:0
@@ -435,6 +455,7 @@ GoldScout-export 9^2crdir5pykiq^19
 @q^279537^1:15:0
 @m^1413^Das Brachland
 @m^1415^Östliche Königreiche
+@m^1416^Alteracgebirge
 @m^1417^Arathihochland
 @m^1424^Vorgebirge von Hillsbrad
 @m^1426^Dun Morogh
@@ -1191,7 +1212,13 @@ GoldScout-export 9^2crdir5pykiq^19
 @a^1270^155:1
 @a^1364^112:1
 @a^1417^146:1
+@a^2250^287:1
+@a^2254^187:3,188:7
+@a^2255^187:1,188:1
+@a^2256^207:1,227:3,228:2,247:1
+@a^2287^207:1,227:1,228:3
 @a^2408^73:1,93:2,113:2,133:1,152:1,153:2,172:1,191:1,230:1
+@a^2417^187:2
 @a^2554^253:21,254:1,273:1
 @a^2555^253:7,273:2,274:4,293:5
 @a^2556^274:2,293:3,294:1,313:4
