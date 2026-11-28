@@ -1,4 +1,4 @@
-GoldScout-export 9^vf0sukgh9ym6^54
+GoldScout-export 9^vf0sukgh9ym6^55
 667^12^8^39^40^1434^0.4360^0.3617^12^Skullsplitter Warrior^1520:3:3,1524:4:4,2749:1:1,3771:1:1,3916:5:5,4306:5:8,4338:1:1,5427:1:1,8151:2:2^5427:1:1
 669^5^4^41^42^1434^0.4483^0.4289^5^Skullsplitter Hunter^1520:1:1,3916:2:2,4338:1:1,8151:1:1,8153:1:3^4599:1:1
 670^1^1^42^42^1434^0.4495^0.4269^1^Skullsplitter Witch Doctor^^
@@ -357,6 +357,8 @@ GoldScout-export 9^vf0sukgh9ym6^54
 247013^1^0^53^53^1447^0.6984^0.2858^1^Ranger Lydrea^246722:1:1^
 247033^1^0^53^53^1447^0.6985^0.2861^1^Bloodshrike^^
 247470^5^0^50^51^1447^0.4779^0.4685^5^Makrinni Burrower^7973:1:1,246684:4:4^
+250873^12^0^1^1^2521^0.4463^0.2498^12^Juvenile Vuldren^2672:2:2,3365:1:1,4865:3:3,7073:4:4,7074:7:7^
+251169^7^0^1^1^2521^0.4596^0.2696^7^Pesky Cirrusfly^1370:1:1,3365:1:1,251927:2:2,251928:5:5^
 253524^1^0^42^42^2652^0.7156^0.2317^1^Bristleback Nomad^^
 253526^1^0^42^43^2652^0.7193^0.2307^1^Bristleback Skullcrusher^4338:1:1^
 253529^1^0^42^42^2652^0.7156^0.2317^1^Bristleback Snortsnout^^
@@ -422,6 +424,7 @@ GoldScout-export 9^vf0sukgh9ym6^54
 @i^770^Pointy Crocolisk Tooth
 @i^1074^Hard Spider Leg Tip
 @i^1205^Melon Juice
+@i^1370^Ragged Leather Bracers
 @i^1464^Buzzard Talon
 @i^1465^Tigerbane
 @i^1477^Scroll of Agility II
@@ -451,6 +454,7 @@ GoldScout-export 9^vf0sukgh9ym6^54
 @i^2453^Bruiseweed
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2672^Stringy Wolf Meat
 @i^2728^Green Hills of Stranglethorn - Page 4
 @i^2730^Green Hills of Stranglethorn - Page 6
 @i^2732^Green Hills of Stranglethorn - Page 8
@@ -470,6 +474,7 @@ GoldScout-export 9^vf0sukgh9ym6^54
 @i^3187^Sacrificial Kris of Frost Protection
 @i^3199^Battle Slayer of the Falcon
 @i^3358^Khadgar's Whisker
+@i^3365^Frayed Bracers
 @i^3378^Brocade Belt
 @i^3385^Lesser Mana Potion
 @i^3402^Soft Patch of Fur
@@ -586,6 +591,7 @@ GoldScout-export 9^vf0sukgh9ym6^54
 @i^4637^Steel Lockbox
 @i^4784^Lifeless Stone
 @i^4787^Burning Pitch
+@i^4865^Ruined Pelt
 @i^5113^Mark of the Syndicate
 @i^5117^Vibrant Plume
 @i^5120^Long Tail Hair
@@ -636,6 +642,8 @@ GoldScout-export 9^vf0sukgh9ym6^54
 @i^7067^Elemental Earth
 @i^7068^Elemental Fire
 @i^7072^Naga Scale
+@i^7073^Broken Fang
+@i^7074^Chipped Claw
 @i^7077^Heart of Fire
 @i^7078^Essence of Fire
 @i^7437^Twilight Cuffs of Intellect
@@ -851,6 +859,8 @@ GoldScout-export 9^vf0sukgh9ym6^54
 @i^251439^Plans: Blessed Plate Boots
 @i^251440^Plans: Blessed Plate Gauntlet
 @i^251462^Plans: Mithril Claymore
+@i^251927^Chipped Cirrusfly Stinger
+@i^251928^Torn Insect Wing
 @i^252918^Pattern: Stalker's Mail Gauntlets
 @i^254877^Namida's Hoof
 @i^256037^Grass Clippings
@@ -886,6 +896,7 @@ GoldScout-export 9^vf0sukgh9ym6^54
 @q^770^0:15:0
 @q^1074^0:15:0
 @q^1205^1:0:0
+@q^1370^0:4:0
 @q^1464^0:15:0
 @q^1465^2:2:0
 @q^1477^1:0:0
@@ -915,6 +926,7 @@ GoldScout-export 9^vf0sukgh9ym6^54
 @q^2453^1:7:1
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2672^1:7:1
 @q^2728^1:12:0
 @q^2730^1:12:0
 @q^2732^1:12:0
@@ -934,6 +946,7 @@ GoldScout-export 9^vf0sukgh9ym6^54
 @q^3187^2:2:0
 @q^3199^2:2:0
 @q^3358^1:7:1
+@q^3365^0:4:0
 @q^3378^0:4:0
 @q^3385^1:0:0
 @q^3402^0:15:0
@@ -1050,6 +1063,7 @@ GoldScout-export 9^vf0sukgh9ym6^54
 @q^4637^2:15:0
 @q^4784^0:15:0
 @q^4787^0:15:0
+@q^4865^0:15:0
 @q^5113^0:15:0
 @q^5117^1:12:0
 @q^5120^0:15:0
@@ -1100,6 +1114,8 @@ GoldScout-export 9^vf0sukgh9ym6^54
 @q^7067^1:7:1
 @q^7068^1:7:1
 @q^7072^1:7:1
+@q^7073^0:15:0
+@q^7074^0:15:0
 @q^7077^1:7:1
 @q^7078^2:7:1
 @q^7437^2:4:0
@@ -1315,6 +1331,8 @@ GoldScout-export 9^vf0sukgh9ym6^54
 @q^251439^2:9:0
 @q^251440^2:9:0
 @q^251462^2:9:0
+@q^251927^0:15:0
+@q^251928^0:15:0
 @q^252918^3:9:0
 @q^254877^1:12:0
 @q^256037^0:15:0
@@ -1366,6 +1384,7 @@ GoldScout-export 9^vf0sukgh9ym6^54
 @m^1449^Un'Goro Crater
 @m^1452^Winterspring
 @m^1454^Orgrimmar
+@m^2521^Zephras Isle
 @m^2548^Riverglades
 @m^2652^Shen'dralas
 @c^118^
@@ -2483,6 +2502,8 @@ GoldScout-export 9^vf0sukgh9ym6^54
 @a^247013^113:1
 @a^247033^113:1
 @a^247470^169:1,189:3,209:1
+@a^250873^89:7,108:5
+@a^251169^109:7
 @a^253524^94:1
 @a^253526^94:1
 @a^253529^94:1
@@ -2585,6 +2606,8 @@ GoldScout-export 9^vf0sukgh9ym6^54
 @t^9879^2:221
 @t^11141^1:153
 @t^12922^7:1016
+@t^250873^11:218
+@t^251169^7:112
 @f^1413^0^55^96^6303:19:19,6358:9:9,6361:27:27^152:55
 @f^1440^0^59^122^6289:20:20,6308:33:33,6310:1:1,6311:1:1,21071:3:3,21113:1:1^275:59
 @f^1443^0^23^143^4603:3:3,6358:1:1,6359:7:7,6362:11:11,21151:1:1^87:23

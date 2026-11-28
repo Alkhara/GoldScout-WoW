@@ -1,4 +1,4 @@
-GoldScout-export 9^37dfqf16vx2u^53
+GoldScout-export 9^37dfqf16vx2u^54
 46^5^0^9^10^1429^0.7889^0.6705^5^Murlocfutterwühler^779:1:1,1425:1:1^
 48^1^0^21^21^1431^0.8199^0.6861^1^Skelettkrieger^^
 94^2^0^5^6^1429^0.3473^0.5779^2^Taschendieb der Defias^2070:1:1^
@@ -236,11 +236,15 @@ GoldScout-export 9^37dfqf16vx2u^53
 253195^2^0^8^8^2521^0.6068^0.6513^2^Prediger der Al'Aketh^1413:1:1,2589:1:2,252022:1:1,267474:1:2^
 254589^1^0^8^8^2521^0.4259^0.5276^1^Vulgara der Instabile^2672:1:1,3299:1:1^
 256092^16^0^10^11^2521^0.6053^0.3487^16^Schattenwindkreischling^1421:1:1,1495:1:1,2642:1:1,2777:1:1,3299:5:5,4672:1:1,5635:1:1,15482:1:1,252671:11:11^
+259052^11^0^38^39^2548^0.6323^0.5273^11^Wilderer von Rog'mar^4306:4:11,4338:1:1,9886:1:1^
+259054^3^0^38^39^2548^0.5952^0.5304^3^Wildebenenpatriarch^1686:1:1,1688:2:2,5637:1:1,266888:1:1^
+259055^9^0^38^39^2548^0.5923^0.5358^9^Wildebenenjägerin^1686:2:2,1688:5:5,5637:1:1,266888:7:7^
 259269^2^0^39^39^2548^0.3470^0.6980^2^Hochebenenbussard^5829:1:1,11418:1:1^
 261306^1^0^0^0^0^0.0000^0.0000^0^^271096:1:1^
 261311^1^0^0^0^0^0.0000^0.0000^0^^270228:1:1^
 261316^1^0^0^0^0^0.0000^0.0000^0^^270230:1:1^
 261319^1^0^0^0^0^0.0000^0.0000^0^^270256:1:1^
+263307^7^0^37^38^2548^0.6246^0.5878^7^Lichtungsviper^6444:2:2,6826:5:5^
 263389^4^0^0^0^0^0.0000^0.0000^0^^1503:1:1,2589:1:2,4577:1:1,275895:1:1^
 263390^4^0^0^0^0^0.0000^0.0000^0^^1506:1:1,2974:1:1,15210:1:1^
 263396^5^0^0^0^0^0.0000^0.0000^0^^1737:1:1,2079:1:1,2589:3:8,275893:1:1^
@@ -314,6 +318,7 @@ GoldScout-export 9^37dfqf16vx2u^53
 @i^1516^Abgenutztes Kriegsbeil
 @i^1686^Gesträubtes Schnurrbarthaar
 @i^1687^Einziehbare Klaue
+@i^1688^Langer weicher Schwanz
 @i^1708^Süßer Nektar
 @i^1710^Großer Heiltrank
 @i^1737^Abgenutzte Panzerweste
@@ -516,6 +521,7 @@ GoldScout-export 9^37dfqf16vx2u^53
 @i^6359^Feuerflossenschnapper
 @i^6362^Roher Steinschuppenkabeljau
 @i^6391^Muster: Modisches grünes Hemd
+@i^6444^Gespaltene Zunge
 @i^6539^Weidengürtel der Ausdauer
 @i^6543^Weidenarmschienen der Ausdauer
 @i^6548^Soldatengurt des Frostschutzes
@@ -525,6 +531,7 @@ GoldScout-export 9^37dfqf16vx2u^53
 @i^6560^Soldatenschild des heiligen Zorns
 @i^6652^Reagenzienbeutel
 @i^6655^Leuchtendes Holzscheit
+@i^6826^Blitzende Schuppe
 @i^6889^Kleines Ei
 @i^7070^Elementarwasser
 @i^7073^Zerbrochener Fangzahn
@@ -548,6 +555,7 @@ GoldScout-export 9^37dfqf16vx2u^53
 @i^9778^Banditen-Rundschild des Verteidigers
 @i^9782^Banditen-Wams der Beweglichkeit
 @i^9815^Befestigte Gamaschen des Wals
+@i^9886^Jägersmann-Bänder des Hierophanten
 @i^10399^Geschwärzte Rüstung der Defias
 @i^11081^Formel: Schild - Geringer Schutz
 @i^11406^Faulendes Bärengerippe
@@ -598,6 +606,7 @@ GoldScout-export 9^37dfqf16vx2u^53
 @i^255007^Golemisofeder
 @i^255663^Windstein
 @i^262888^Versiegelte Verfügung des Gesellen
+@i^266888^Geschätztes Löwenfell
 @i^267415^Gestohlenes Sprengpulver
 @i^267474^Sturmgepeitschter Waldpilz
 @i^268548^Leeres Pulverfass
@@ -681,6 +690,7 @@ GoldScout-export 9^37dfqf16vx2u^53
 @q^1516^0:2:0
 @q^1686^0:15:0
 @q^1687^0:15:0
+@q^1688^0:15:0
 @q^1708^1:0:0
 @q^1710^1:0:0
 @q^1737^0:4:0
@@ -883,6 +893,7 @@ GoldScout-export 9^37dfqf16vx2u^53
 @q^6359^1:7:1
 @q^6362^1:7:1
 @q^6391^2:9:0
+@q^6444^0:15:0
 @q^6539^2:4:0
 @q^6543^2:4:0
 @q^6548^2:4:0
@@ -892,6 +903,7 @@ GoldScout-export 9^37dfqf16vx2u^53
 @q^6560^2:4:0
 @q^6652^1:12:0
 @q^6655^1:12:0
+@q^6826^0:15:0
 @q^6889^1:7:1
 @q^7070^1:7:1
 @q^7073^0:15:0
@@ -915,6 +927,7 @@ GoldScout-export 9^37dfqf16vx2u^53
 @q^9778^2:4:0
 @q^9782^2:4:0
 @q^9815^2:4:0
+@q^9886^2:4:0
 @q^10399^3:4:0
 @q^11081^2:9:0
 @q^11406^0:15:0
@@ -965,6 +978,7 @@ GoldScout-export 9^37dfqf16vx2u^53
 @q^255007^1:7:1
 @q^255663^1:0:0
 @q^262888^3:0:0
+@q^266888^1:12:0
 @q^267415^1:12:0
 @q^267474^1:0:0
 @q^268548^1:12:0
@@ -3245,7 +3259,11 @@ GoldScout-export 9^37dfqf16vx2u^53
 @a^253195^252:1,272:1
 @a^254589^208:1
 @a^256092^132:12,152:4
+@a^259052^191:1,192:2,193:1,211:1,212:2,232:1,233:3
+@a^259054^211:2,212:1
+@a^259055^211:3,212:3,231:2,232:1
 @a^259269^266:1,287:1
+@a^263307^231:1,232:5,252:1
 @a^270196^228:1
 @a^270693^192:1
 @a^272034^147:1
