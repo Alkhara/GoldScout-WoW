@@ -1,4 +1,4 @@
-GoldScout-export 9^37dfqf16vx2u^56
+GoldScout-export 9^37dfqf16vx2u^57
 46^5^0^9^10^1429^0.7889^0.6705^5^Murlocfutterwühler^779:1:1,1425:1:1^
 48^1^0^21^21^1431^0.8199^0.6861^1^Skelettkrieger^^
 94^2^0^5^6^1429^0.3473^0.5779^2^Taschendieb der Defias^2070:1:1^
@@ -159,8 +159,8 @@ GoldScout-export 9^37dfqf16vx2u^56
 2563^2^0^32^33^1417^0.5566^0.4431^2^Ebenenkrabbler^1081:2:2,2251:1:1^
 2564^1^0^33^34^1417^0.3283^0.4554^1^Vollstrecker der Felsfäuste^^
 2572^16^0^35^36^1417^0.8168^0.3829^16^Kobold der Trockenstoppel^1708:1:1,2592:1:1,3816:1:1,4306:6:8,4338:1:1,4435:3:3,4539:3:3,248690:1:1^
-2573^58^0^37^38^1417^0.8475^0.3184^58^Feldvermesser der Trockenstoppel^1708:2:2,1710:1:1,3778:1:1,3782:1:1,3827:1:1,4306:17:39,4338:2:2,4435:4:4,4480:1:1,4539:3:3^
-2574^107^0^36^37^1417^0.8493^0.3222^107^Buddler der Trockenstoppel^1708:4:4,3827:1:1,4306:33:67,4338:3:3,4424:1:1,4435:5:5,4479:1:1,4539:3:3,8188:1:1,213544:1:1,248690:1:1,248710:1:1^
+2573^80^0^37^38^1417^0.8496^0.3181^80^Feldvermesser der Trockenstoppel^1477:1:1,1708:2:2,1710:1:1,3778:2:2,3782:1:1,3827:1:1,4306:23:52,4338:3:3,4435:4:4,4480:1:1,4539:3:3^
+2574^151^0^35^37^1417^0.8503^0.3202^151^Buddler der Trockenstoppel^1708:6:6,3197:1:1,3808:1:1,3827:1:1,4306:47:96,4338:4:4,4421:2:2,4424:1:1,4435:5:5,4479:3:3,4539:5:5,8188:1:1,8746:1:1,213544:1:1,248690:1:1,248710:1:1,262889:1:1^
 2578^1^0^31^32^1417^0.5042^0.4196^1^Junger Mesabussard^5116:1:1,12037:1:1^
 2618^2^0^33^33^1417^0.6040^0.5758^2^Peon von Hammerfall^4306:1:2^
 2619^8^0^34^35^1417^0.5986^0.5677^8^Grunzer von Hammerfall^2592:2:5,3771:2:2,4306:2:3^
@@ -305,6 +305,7 @@ GoldScout-export 9^37dfqf16vx2u^56
 @i^1433^Flickwerkrüstung
 @i^1468^Murlocflosse
 @i^1476^Abgeknicktes Spinnengliedmaß
+@i^1477^Rolle der Beweglichkeit II
 @i^1495^Kattunschuhe
 @i^1497^Kattunumhang
 @i^1498^Kattunhandschuhe
@@ -409,6 +410,7 @@ GoldScout-export 9^37dfqf16vx2u^56
 @i^3184^Hakendolch der Eule
 @i^3189^Holzfällerbeil
 @i^3192^Kurzes Bastardschwert der Heilung
+@i^3197^Steinfräser-Claymore des Banditen
 @i^3202^Waldleder-Armschienen
 @i^3288^Stammesweste
 @i^3299^Gerissener Eckzahn
@@ -436,12 +438,14 @@ GoldScout-export 9^37dfqf16vx2u^56
 @i^3782^Große Kriegskeule
 @i^3786^Glänzender Langdolch
 @i^3802^Gehärtete Lederarmschienen
+@i^3808^Doppelpanzergürtel
 @i^3816^Reflektierender Langschild
 @i^3827^Manatrank
 @i^3882^Bussardfeder
 @i^4306^Seidenstoff
 @i^4338^Magiestoff
 @i^4345^Muster: Rote Wollstiefel
+@i^4421^Rolle des Schutzes III
 @i^4424^Rolle der Willenskraft III
 @i^4428^Spinnentaster
 @i^4435^Korn von Myzrael
@@ -551,6 +555,7 @@ GoldScout-export 9^37dfqf16vx2u^56
 @i^8180^Jagdbogen
 @i^8188^Explosive Schrotflinte
 @i^8344^Silbrige Spinndrüsen
+@i^8746^Geflochtene Kutte
 @i^9451^Blubberwasser
 @i^9752^Reisebänder
 @i^9758^Kadettengürtel
@@ -612,6 +617,7 @@ GoldScout-export 9^37dfqf16vx2u^56
 @i^255007^Golemisofeder
 @i^255663^Windstein
 @i^262888^Versiegelte Verfügung des Gesellen
+@i^262889^Versiegelte Verfügung des Experten
 @i^266888^Geschätztes Löwenfell
 @i^267415^Gestohlenes Sprengpulver
 @i^267474^Sturmgepeitschter Waldpilz
@@ -682,6 +688,7 @@ GoldScout-export 9^37dfqf16vx2u^56
 @q^1433^0:4:0
 @q^1468^1:7:1
 @q^1476^0:15:0
+@q^1477^1:0:0
 @q^1495^0:4:0
 @q^1497^0:4:0
 @q^1498^0:4:0
@@ -786,6 +793,7 @@ GoldScout-export 9^37dfqf16vx2u^56
 @q^3184^2:2:0
 @q^3189^1:2:0
 @q^3192^2:2:0
+@q^3197^2:2:0
 @q^3202^2:4:0
 @q^3288^2:4:0
 @q^3299^0:15:0
@@ -813,12 +821,14 @@ GoldScout-export 9^37dfqf16vx2u^56
 @q^3782^0:2:0
 @q^3786^0:2:0
 @q^3802^0:4:0
+@q^3808^0:4:0
 @q^3816^0:4:0
 @q^3827^1:0:0
 @q^3882^0:15:0
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4345^2:9:0
+@q^4421^1:0:0
 @q^4424^1:0:0
 @q^4428^0:15:0
 @q^4435^1:12:0
@@ -928,6 +938,7 @@ GoldScout-export 9^37dfqf16vx2u^56
 @q^8180^2:2:0
 @q^8188^2:2:0
 @q^8344^1:12:0
+@q^8746^0:4:0
 @q^9451^1:0:0
 @q^9752^1:4:0
 @q^9758^1:4:0
@@ -989,6 +1000,7 @@ GoldScout-export 9^37dfqf16vx2u^56
 @q^255007^1:7:1
 @q^255663^1:0:0
 @q^262888^3:0:0
+@q^262889^3:0:0
 @q^266888^1:12:0
 @q^267415^1:12:0
 @q^267474^1:0:0
@@ -3197,8 +3209,8 @@ GoldScout-export 9^37dfqf16vx2u^56
 @a^2563^170:1,192:1
 @a^2564^186:1
 @a^2572^155:1,156:13,175:2
-@a^2573^116:2,117:1,136:31,137:23,156:1
-@a^2574^116:2,136:45,137:53,156:7
+@a^2573^116:3,117:1,136:36,137:39,156:1
+@a^2574^116:4,117:1,136:62,137:77,156:7
 @a^2578^170:1
 @a^2618^232:2
 @a^2619^211:1,231:1,232:5,252:1
@@ -3285,7 +3297,7 @@ GoldScout-export 9^37dfqf16vx2u^56
 @t^2559^1:219
 @t^2563^1:167
 @t^2572^2:66
-@t^2573^25:1988
-@t^2574^45:4646
+@t^2573^47:3530
+@t^2574^88:7122
 @f^1434^0^41^150^4603:5:5,6358:6:6,6359:7:7,6362:18:18,13422:3:4,21151:2:4^305:41
 @l^0^deDE
