@@ -1,4 +1,4 @@
-GoldScout-export 9^e0nzpt5vk2wn^34
+GoldScout-export 9^e0nzpt5vk2wn^35
 114^2^0^15^15^1436^0.3718^0.5062^2^Harvest Watcher^732:1:1,211780:1:1,255007:1:1^
 1520^9^0^6^7^1420^0.4587^0.3936^9^Rattlecage Soldier^2589:2:3,3162:3:3,4604:1:1^
 1522^6^0^7^8^1420^0.4622^0.3876^6^Darkeye Bonecaster^2589:3:5,3163:3:3,4604:1:1^
@@ -64,6 +64,8 @@ GoldScout-export 9^e0nzpt5vk2wn^34
 2503^1^0^27^28^1424^0.2615^0.5835^1^Hillsbrad Foreman^^
 2529^1^0^0^0^0^0.0000^0.0000^0^^1210:1:1^
 2540^2^0^15^17^1421^0.6020^0.6342^2^Dalaran Serpent^^
+2955^9^0^1^2^1412^0.4643^0.7956^9^Plainstrider^1376:1:1,3365:1:1,4739:7:7,4740:7:7,4757:5:5,7096:4:4,7097:2:2^
+2961^13^0^3^3^1412^0.4998^0.8845^13^Mountain Cougar^4742:10:10,4865:4:4,7073:7:7,7074:5:5^
 3098^10^0^1^2^1411^0.4499^0.7005^10^Mottled Boar^1364:1:1,1370:2:2,2649:1:1,4865:6:6,7098:7:7^
 3099^8^0^6^7^1411^0.4550^0.4297^8^Dire Mottled Boar^769:8:8,771:2:2,3171:2:2^
 3100^7^0^8^9^1411^0.4295^0.2930^7^Elder Mottled Boar^769:6:6,771:1:1,3171:2:2^
@@ -463,6 +465,10 @@ GoldScout-export 9^e0nzpt5vk2wn^34
 @i^4604^Forest Mushroom Cap
 @i^4605^Red-speckled Mushroom
 @i^4687^Barbaric Cloth Belt
+@i^4739^Plainstrider Meat
+@i^4740^Plainstrider Feather
+@i^4742^Mountain Cougar Pelt
+@i^4757^Cracked Egg Shells
 @i^4775^Cracked Bill
 @i^4776^Ruffled Feather
 @i^4784^Lifeless Stone
@@ -558,6 +564,8 @@ GoldScout-export 9^e0nzpt5vk2wn^34
 @i^6826^Brilliant Scale
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
+@i^7096^Plucked Feather
+@i^7097^Leg Meat
 @i^7098^Splintered Tusk
 @i^7099^Severed Pincer
 @i^7100^Sticky Ichor
@@ -841,6 +849,10 @@ GoldScout-export 9^e0nzpt5vk2wn^34
 @q^4604^1:0:0
 @q^4605^1:0:0
 @q^4687^1:4:0
+@q^4739^1:12:0
+@q^4740^1:12:0
+@q^4742^1:12:0
+@q^4757^0:15:0
 @q^4775^0:15:0
 @q^4776^0:15:0
 @q^4784^0:15:0
@@ -936,6 +948,8 @@ GoldScout-export 9^e0nzpt5vk2wn^34
 @q^6826^0:15:0
 @q^7073^0:15:0
 @q^7074^0:15:0
+@q^7096^0:15:0
+@q^7097^1:0:0
 @q^7098^0:15:0
 @q^7099^0:15:0
 @q^7100^0:15:0
@@ -1022,6 +1036,7 @@ GoldScout-export 9^e0nzpt5vk2wn^34
 @q^285351^2:4:0
 @q^286326^1:12:0
 @m^1411^Durotar
+@m^1412^Mulgore
 @m^1413^The Barrens
 @m^1414^Kalimdor
 @m^1420^Tirisfal Glades
@@ -1865,6 +1880,8 @@ GoldScout-export 9^e0nzpt5vk2wn^34
 @a^2270^245:1
 @a^2503^225:1
 @a^2540^251:1,252:1
+@a^2955^309:6,329:3
+@a^2961^349:7,350:6
 @a^3098^269:3,288:6,289:1
 @a^3099^168:3,169:5
 @a^3100^69:3,89:1,167:3
@@ -2007,6 +2024,8 @@ GoldScout-export 9^e0nzpt5vk2wn^34
 @a^276020^176:1,196:1
 @a^276061^230:1
 @a^277882^50:1,52:1
+@t^2955^8:230
+@t^2961^12:300
 @t^3240^1:40
 @t^3245^1:5
 @t^3258^3:96

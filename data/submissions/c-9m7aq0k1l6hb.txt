@@ -1,5 +1,8 @@
-GoldScout-export 9^9m7aq0k1l6hb^2
+GoldScout-export 9^9m7aq0k1l6hb^3
 746^1^0^45^45^1435^0.7764^0.5490^1^Ancestro dragonante^^
+1783^10^0^50^51^1422^0.5282^0.7656^10^Despellejador esquelético^13446:1:1,14047:1:1^
+1784^24^0^51^52^1422^0.5364^0.7818^24^Hechicero esquelético^7972:2:2,8753:1:1,13825:1:1,14047:6:10^
+1791^1^0^51^52^1422^0.5547^0.8000^1^Necrófago esclavizante^8948:1:1,14047:1:1^
 2651^1^0^43^43^1425^0.2795^0.5842^1^Desolladora Secacorteza^^
 2686^1^0^44^44^1425^0.3543^0.6542^1^Guardia de la prole Secacorteza^9286:1:1,12205:1:1^
 2923^1^0^41^41^1425^0.1770^0.5239^1^Melenargenta sarnoso^^
@@ -22,6 +25,7 @@ GoldScout-export 9^9m7aq0k1l6hb^2
 5333^10^0^44^45^1444^0.2786^0.6919^10^Guardia Serpiente Crestafuria^4424:1:1,7973:5:5,17058:2:2^
 5336^1^0^44^44^1444^0.2699^0.6833^1^Hechicera Crestafuria^7973:1:1^
 5401^3^0^48^48^1435^0.7618^0.4907^3^Kazkaz el Blasfemo^1520:1:1,4023:1:1,4338:1:3,8152:1:1,17682:1:1,248695:1:1^
+5422^1^0^40^41^1446^0.5876^0.3256^1^Cazador escórpido^19937:1:1^
 5708^1^0^0^0^0^0.0000^0.0000^0^^6826:1:1,10802:1:1^
 5709^1^0^0^0^0^0.0000^0.0000^0^^10454:1:1,10828:1:1,10835:1:1^
 5710^1^0^0^0^0^0.0000^0.0000^0^^6212:1:1,10806:1:1^
@@ -86,8 +90,10 @@ GoldScout-export 9^9m7aq0k1l6hb^2
 @i^6826^Escama luminosa
 @i^7611^Bastón Escapabruma
 @i^7910^Rubí estrella
+@i^7972^Icor de no-muerto
 @i^7973^Almeja de boca grande
 @i^8152^Frasco de gran mojo
+@i^8753^Casco de cuero liso
 @i^8948^Bolete de rey seco
 @i^8959^Mero espinoso crudo
 @i^9286^Armaduras de placas de campo de protección contra las Sombras
@@ -114,6 +120,9 @@ GoldScout-export 9^9m7aq0k1l6hb^2
 @i^11116^Un diario destrozado
 @i^11318^Calima Atal'ai
 @i^12205^Carne de araña blanca
+@i^13446^Poción de curación sublime
+@i^13825^Mosquete primordial
+@i^14047^Paño rúnico
 @i^14478^Patrón: toga de paño brillante
 @i^14797^Almohadillas protectoras
 @i^15420^Plumahierro
@@ -121,6 +130,7 @@ GoldScout-export 9^9m7aq0k1l6hb^2
 @i^17058^Aceite de pescado
 @i^17413^Códice: Rezo de Entereza
 @i^17682^Libro: Obsequio de las fieras
+@i^19937^Garra de escórpido pequeña
 @i^20017^Cuernos perfectos
 @i^20019^Diente de Morphaz
 @i^20087^Escamas de vándalo marino
@@ -164,8 +174,10 @@ GoldScout-export 9^9m7aq0k1l6hb^2
 @q^6826^0:15:0
 @q^7611^2:4:0
 @q^7910^2:7:1
+@q^7972^1:7:1
 @q^7973^1:7:0
 @q^8152^1:7:1
+@q^8753^0:4:0
 @q^8948^1:0:0
 @q^8959^1:7:1
 @q^9286^2:4:0
@@ -192,6 +204,9 @@ GoldScout-export 9^9m7aq0k1l6hb^2
 @q^11116^2:15:0
 @q^11318^1:12:0
 @q^12205^1:7:1
+@q^13446^1:0:0
+@q^13825^0:2:0
+@q^14047^1:7:1
 @q^14478^2:9:0
 @q^14797^2:4:0
 @q^15420^1:7:1
@@ -199,6 +214,7 @@ GoldScout-export 9^9m7aq0k1l6hb^2
 @q^17058^1:15:0
 @q^17413^3:9:0
 @q^17682^3:9:0
+@q^19937^0:15:0
 @q^20017^1:15:0
 @q^20019^1:15:0
 @q^20087^1:15:0
@@ -208,9 +224,11 @@ GoldScout-export 9^9m7aq0k1l6hb^2
 @q^248695^1:0:1
 @q^254100^3:9:0
 @q^254102^3:9:0
+@m^1422^Tierras de la Peste del Oeste
 @m^1425^Tierras del Interior
 @m^1435^Pantano de las Penas
 @m^1444^Feralas
+@m^1446^Tanaris
 @m^1447^Azshara
 @m^1449^Cráter de Un'Goro
 @c^2840^
@@ -503,6 +521,9 @@ GoldScout-export 9^9m7aq0k1l6hb^2
 @c^285277^
 @c^285278^
 @a^746^215:1
+@a^1783^227:1,310:9
+@a^1784^207:1,310:21,330:1,331:1
+@a^1791^331:1
 @a^2651^225:1
 @a^2686^267:1
 @a^2923^203:1
@@ -514,6 +535,7 @@ GoldScout-export 9^9m7aq0k1l6hb^2
 @a^5333^265:9,285:1
 @a^5336^265:1
 @a^5401^195:3
+@a^5422^131:1
 @a^6347^16:1,36:2,37:2,57:1,58:2,78:3
 @a^6348^97:1,117:2
 @a^6370^117:1
@@ -527,6 +549,9 @@ GoldScout-export 9^9m7aq0k1l6hb^2
 @a^7768^267:2
 @a^8136^285:1
 @a^8761^69:2,89:1,90:2,110:4,130:2
+@t^1783^9:292
+@t^1784^23:1120
+@t^1791^1:64
 @t^2651^1:131
 @t^2686^1:6
 @t^5243^10:2217
