@@ -1,4 +1,4 @@
-GoldScout-export 9^aflnkruqxfzo^34
+GoldScout-export 9^aflnkruqxfzo^35
 157^1^0^15^15^1436^0.3561^0.5731^1^Goretusk^723:1:1,731:1:1^
 449^1^0^17^17^1436^0.3688^0.7589^1^Defias Knuckleduster^^
 587^14^0^33^34^1434^0.3083^0.1853^14^Bloodscalp Warrior^1519:7:7,1520:2:2,2592:1:1,2742:1:1,3783:1:1,4306:4:7,15286:1:1^
@@ -282,6 +282,7 @@ GoldScout-export 9^aflnkruqxfzo^34
 12902^1^0^0^0^0^0.0000^0.0000^0^^273841:1:1^
 12918^1^0^26^26^1440^0.5648^0.6353^1^Chief Murgut^^
 13019^1^0^33^33^1443^0.5532^0.3016^1^Burning Blade Seer^15750:1:1^
+260023^1^0^38^38^2548^0.7496^0.3369^1^Farholde Ambusher^^
 264079^3^0^27^28^1412^0.3291^0.0948^3^Gloomrise Hatchling^3167:2:2^
 264081^3^0^28^28^1412^0.3336^0.0856^3^Gloomrise Spinner^878:2:2,1081:1:1,3931:1:1,273181:3:3^
 264083^5^0^28^29^1412^0.3445^0.0982^5^Gloomrise Soldier^1081:2:2,3167:1:1,3174:2:2^
@@ -579,6 +580,7 @@ GoldScout-export 9^aflnkruqxfzo^34
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
 @i^20310^Flayed Demon Skin
+@i^20708^Tightly Sealed Trunk
 @i^20763^Broken Weapon
 @i^211269^Primitive Drawing
 @i^211784^Scroll: WUBBA WUBBA
@@ -897,6 +899,7 @@ GoldScout-export 9^aflnkruqxfzo^34
 @q^17057^1:15:0
 @q^17058^1:15:0
 @q^20310^1:12:0
+@q^20708^1:15:0
 @q^20763^0:15:0
 @q^211269^1:12:0
 @q^211784^1:0:0
@@ -937,6 +940,7 @@ GoldScout-export 9^aflnkruqxfzo^34
 @m^1442^Stonetalon Mountains
 @m^1443^Desolace
 @m^1445^Dustwallow Marsh
+@m^2548^Riverglades
 @c^118^
 @c^724^
 @c^733^
@@ -1916,10 +1920,12 @@ GoldScout-export 9^aflnkruqxfzo^34
 @a^12856^275:1,294:3
 @a^12918^251:1
 @a^13019^131:1
+@a^260023^134:1
 @a^264079^26:2,46:1
 @a^264081^26:3
 @a^264083^26:3,46:2
 @a^264096^26:2
 @t^2358^2:205
+@f^1413^0^5^115^6358:4:4,20708:1:1^152:5
 @f^1440^0^7^111^6358:2:2,6361:5:5^122:7
 @l^0^enUS

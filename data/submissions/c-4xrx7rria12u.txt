@@ -1,4 +1,4 @@
-GoldScout-export 9^4xrx7rria12u^40
+GoldScout-export 9^4xrx7rria12u^41
 3^9^0^24^25^1431^0.2428^0.3563^9^Dévoreur^885:1:1,887:2:2,1129:3:3,1205:1:1,2589:1:1,2592:2:3,2783:1:1,6530:2:2^
 48^12^0^21^22^1431^0.7991^0.6958^12^Guerrier squelette^929:1:1,1747:1:1,1751:1:1,1798:1:1,1824:1:1,2378:6:6,2592:4:5,3012:1:1^
 121^5^0^15^16^1436^0.5003^0.7668^5^Eclaireuse défias^1766:1:1,2217:1:1,2589:1:1,7997:1:1^
@@ -236,6 +236,8 @@ GoldScout-export 9^4xrx7rria12u^40
 4064^1^0^20^21^1433^0.6090^0.4912^1^Eclaireur rochenoire^3014:1:1^
 4107^13^0^28^29^1441^0.1130^0.3542^13^Wyverne de Haut-perchoir^5136:1:1,5137:8:8,5635:2:2,5637:1:1,5809:7:7^
 4109^6^0^28^29^1441^0.1142^0.3561^6^Concubine de Haut-perchoir^5137:5:5,5635:2:2,5809:2:2^
+4143^2^0^34^35^1441^0.8323^0.7374^2^Mordeuse nacrétoile^4556:1:1,5795:1:1,6362:1:1^
+4158^1^0^34^34^1441^0.8293^0.7188^1^Vautour des Salines^729:1:1,5848:1:1,11416:1:1^
 4416^7^0^0^0^0^0.0000^0.0000^0^^414:2:2,915:2:2,1180:1:1,2836:1:3^
 4417^3^0^0^0^0^0.0000^0.0000^0^^2592:1:4^
 4418^1^0^0^0^0^0.0000^0.0000^0^^2592:1:1^
@@ -260,6 +262,7 @@ GoldScout-export 9^4xrx7rria12u^40
 @i^422^Caprice des nains
 @i^556^Bec de busard
 @i^723^Foie de Broche-tripes
+@i^729^Viande filandreuse de vautour
 @i^730^Oeil de murloc
 @i^765^Feuillargent
 @i^769^Morceau de viande de sanglier
@@ -498,10 +501,13 @@ GoldScout-export 9^4xrx7rria12u^40
 @i^5734^Plan du Super-Découpeur 6000
 @i^5784^Ecailles de murloc visqueuses
 @i^5785^Ecailles de murloc épaisses
+@i^5795^Carapace de tortue durcie
 @i^5809^Glande à venin de Haut-perchoir
+@i^5848^Os creux de vautour
 @i^5972^Patron : Pantalon élégant en cuir
 @i^6289^Lutjan à longue mâchoire cru
 @i^6308^Poisson-chat moustachu cru
+@i^6362^Morue rochécaille crue
 @i^6375^Formule : Enchantement de bracelet (Esprit inférieur)
 @i^6379^Ceinture en cuir gravé
 @i^6530^Asticots
@@ -531,6 +537,7 @@ GoldScout-export 9^4xrx7rria12u^40
 @i^10403^Ceinture défias noircie
 @i^10405^Epaulières de bandit
 @i^10424^Plans : Jambières en bronze argenté
+@i^11416^Cage thoracique délicate
 @i^11965^Anneau de quartz du singe
 @i^11982^Anneau viridien de la chouette
 @i^12990^Lacératrice
@@ -585,6 +592,7 @@ GoldScout-export 9^4xrx7rria12u^40
 @q^422^1:0:0
 @q^556^0:15:0
 @q^723^1:7:1
+@q^729^1:7:1
 @q^730^1:7:1
 @q^765^1:7:1
 @q^769^1:7:1
@@ -823,10 +831,13 @@ GoldScout-export 9^4xrx7rria12u^40
 @q^5734^1:12:0
 @q^5784^1:7:1
 @q^5785^1:7:1
+@q^5795^1:12:0
 @q^5809^1:12:0
+@q^5848^1:12:0
 @q^5972^2:9:0
 @q^6289^1:7:1
 @q^6308^1:7:1
+@q^6362^1:7:1
 @q^6375^2:9:0
 @q^6379^2:4:0
 @q^6530^1:0:0
@@ -856,6 +867,7 @@ GoldScout-export 9^4xrx7rria12u^40
 @q^10403^3:4:0
 @q^10405^1:4:0
 @q^10424^2:9:0
+@q^11416^0:15:0
 @q^11965^2:4:0
 @q^11982^2:4:0
 @q^12990^3:2:0
@@ -1892,6 +1904,8 @@ GoldScout-export 9^4xrx7rria12u^40
 @a^4064^192:1
 @a^4107^122:5,142:8
 @a^4109^122:2,142:4
+@a^4143^296:2
+@a^4158^296:1
 @a^4463^25:6,26:2,44:2,45:2,46:1,64:3,65:1,313:1
 @a^4969^234:2
 @a^5043^290:8
@@ -1911,5 +1925,7 @@ GoldScout-export 9^4xrx7rria12u^40
 @a^272291^236:1
 @t^4107^12:507
 @t^4109^5:236
+@t^4143^1:35
+@t^4158^1:41
 @f^1453^0^9^1^6289:7:7,6308:2:2^271:9
 @l^0^frFR
