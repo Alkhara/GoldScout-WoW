@@ -1,4 +1,4 @@
-GoldScout-export 9^3e6rbwslj6cu^4
+GoldScout-export 9^3e6rbwslj6cu^5
 1783^4^0^50^51^1422^0.4077^0.6020^4^Skeletal Flayer^7972:1:1,8766:1:1,14047:1:2^
 1784^3^0^51^52^1422^0.3782^0.5423^3^Skeletal Sorcerer^8766:1:1,14047:2:2^
 1785^6^0^52^54^1422^0.4724^0.5074^6^Skeletal Terror^7972:1:1,8948:1:1,14047:3:5^
@@ -76,6 +76,10 @@ GoldScout-export 9^3e6rbwslj6cu^4
 11290^7^0^53^54^1423^0.2406^0.7248^7^Mossflayer Zombie^3972:1:1,14047:1:2^
 11291^8^0^54^55^1423^0.2386^0.7330^8^Unliving Mossflayer^8766:2:2,13444:1:1,14047:3:9,262890:1:1^
 11611^1^0^57^57^1422^0.5499^0.2316^1^Cavalier Durgen^^
+11804^2^0^60^60^1451^0.4085^0.4194^2^Twilight Keeper Havunth^20396:2:2^
+11880^25^0^58^59^1451^0.3907^0.4515^25^Twilight Avenger^5759:1:1,13446:1:1,14047:7:19,20404:3:3^
+11881^16^0^59^60^1451^0.3824^0.4462^16^Twilight Geolord^8766:2:2,13446:1:1,14047:5:9,14800:1:1,20404:4:4^
+11882^7^0^59^60^1451^0.3895^0.4434^7^Twilight Stonecaller^14047:3:6,20404:3:3^
 12248^1^0^60^60^1423^0.6095^0.1222^1^Infiltrator Hameya^15767:1:1^
 12250^1^0^55^55^1423^0.2315^0.7296^1^Zaeldarr the Outcast^15785:1:1^
 12261^1^0^57^58^1423^0.6097^0.1233^1^Infected Mossflayer^^
@@ -95,6 +99,7 @@ GoldScout-export 9^3e6rbwslj6cu^4
 @i^4585^Dripping Spider Mandible
 @i^4791^Enchanted Water
 @i^5758^Mithril Lockbox
+@i^5759^Thorium Lockbox
 @i^6300^Husk Fragment
 @i^6302^Delicate Insect Wing
 @i^6530^Nightcrawlers
@@ -143,12 +148,15 @@ GoldScout-export 9^3e6rbwslj6cu^4
 @i^14047^Runecloth
 @i^14506^Pattern: Felcloth Robe
 @i^14619^Skeletal Fragments
+@i^14800^Bloodlust Buckler
 @i^15420^Ironfeather
 @i^15447^Living Rot
 @i^15767^Hameya's Key
 @i^15785^Zaeldarr's Head
 @i^17346^Encrusted Silithid Object
 @i^18512^Larval Acid
+@i^20396^Twilight Lexicon - Chapter 3
+@i^20404^Encrypted Twilight Text
 @i^248696^Waylaid Crate: Flowering Artisan Herbs
 @i^248697^Waylaid Crate: Artisan Ore
 @i^248698^Waylaid Crate: Artisan Textiles
@@ -172,6 +180,7 @@ GoldScout-export 9^3e6rbwslj6cu^4
 @q^4585^0:15:0
 @q^4791^1:0:0
 @q^5758^2:15:0
+@q^5759^2:15:0
 @q^6300^0:15:0
 @q^6302^0:15:0
 @q^6530^1:0:0
@@ -220,12 +229,15 @@ GoldScout-export 9^3e6rbwslj6cu^4
 @q^14047^1:7:1
 @q^14506^2:9:0
 @q^14619^1:12:0
+@q^14800^2:4:0
 @q^15420^1:7:1
 @q^15447^1:12:0
 @q^15767^1:12:0
 @q^15785^1:12:0
 @q^17346^1:12:0
 @q^18512^1:7:1
+@q^20396^1:12:0
+@q^20404^1:12:0
 @q^248696^1:0:1
 @q^248697^1:0:1
 @q^248698^1:0:1
@@ -316,6 +328,10 @@ GoldScout-export 9^3e6rbwslj6cu^4
 @a^11290^284:7
 @a^11291^284:8
 @a^11611^90:1
+@a^11804^167:1,168:1
+@a^11880^167:4,168:7,187:12,188:2
+@a^11881^167:9,168:1,187:5,188:1
+@a^11882^167:7
 @a^12248^52:1
 @a^12250^284:1
 @a^12261^52:1
@@ -385,5 +401,9 @@ GoldScout-export 9^3e6rbwslj6cu^4
 @t^11290^7:1544
 @t^11291^8:1351
 @t^11611^1:469
+@t^11804^2:83
+@t^11880^23:1223
+@t^11881^15:759
+@t^11882^7:118
 @t^12261^1:149
 @l^0^enUS

@@ -1,4 +1,4 @@
-GoldScout-export 6^fbnmwsa88eef^17
+GoldScout-export 6^fbnmwsa88eef^18
 94^1^0^5^5^1429^0.4377^0.5516^1^Defias Cutpurse^2589:1:1^
 205^17^0^28^29^1431^0.6201^0.7306^17^Nightbane Dark Runner^3770:2:2,5635:2:2,5637:1:1^
 206^10^0^29^30^1431^0.7048^0.6930^10^Nightbane Vile Fang^929:1:1,2221:1:1,3770:1:1^
@@ -37,12 +37,14 @@ GoldScout-export 6^fbnmwsa88eef^17
 1044^2^0^26^27^1437^0.6531^0.3963^2^Flamesnorting Whelp^279385:1:1^
 1069^5^0^25^26^1437^0.6263^0.3743^5^Crimson Whelp^3175:1:1,4402:1:1,5635:1:1,279385:1:1^
 1110^15^0^27^28^1431^0.1634^0.3530^15^Skeletal Raider^929:1:1,2766:1:1,3385:1:1,4306:3:5^
-1134^3^0^5^6^1426^0.4275^0.5460^3^Young Wendigo^^
+1128^3^0^6^6^1426^0.4631^0.5400^3^Young Black Bear^6952:1:1,7073:1:1,7074:1:1^
+1134^9^0^5^6^1426^0.4256^0.5504^9^Young Wendigo^1369:1:1,1420:1:1,2671:2:2^
 1135^7^0^6^7^1426^0.4192^0.5061^7^Wendigo^117:1:1,1412:1:1,1417:1:1,3373:1:1^
 1157^13^0^26^27^1437^0.1396^0.3003^13^Cursed Sailor^2592:2:3,3385:1:1,4306:3:3^
 1158^8^0^27^28^1437^0.1482^0.2488^8^Cursed Marine^2592:1:2,3385:1:1,4306:3:5^
 1159^1^0^29^29^1437^0.1402^0.3042^1^First Mate Snellig^3619:1:1^
 1160^1^0^30^30^1437^0.1540^0.2368^1^Captain Halyndor^2629:1:1,4306:1:1^
+1196^1^0^8^8^1426^0.5141^0.4568^1^Ice Claw Bear^3169:1:1,6952:1:1^
 1353^1^0^29^29^1437^0.3282^0.5105^1^Sarltooth^3638:1:1^
 1400^1^0^23^24^1437^0.4100^0.3198^1^Wetlands Crocolisk^770:1:1^
 1418^26^0^28^29^1437^0.0929^0.6938^26^Bluegill Raider^730:9:9,1468:12:12,1758:1:1,1803:1:1,2221:1:1,2702:4:4,5524:13:13,17057:8:8,17058:3:3,248689:1:1^
@@ -87,6 +89,7 @@ GoldScout-export 6^fbnmwsa88eef^17
 @i^1412^Crude Bastard Sword
 @i^1417^Beaten Battle Axe
 @i^1418^Worn Leather Belt
+@i^1420^Worn Leather Bracers
 @i^1431^Patchwork Pants
 @i^1468^Murloc Fin
 @i^1696^Curved Raptor Talon
@@ -116,8 +119,10 @@ GoldScout-export 6^fbnmwsa88eef^17
 @i^2635^Loose Chain Belt
 @i^2650^Flimsy Chain Boots
 @i^2652^Flimsy Chain Cloak
+@i^2671^Wendigo Mane
 @i^2702^Lightforge Ingot
 @i^2766^Deft Stiletto
+@i^3169^Chipped Bear Tooth
 @i^3175^Ruined Dragonhide
 @i^3180^Flecked Raptor Scale
 @i^3182^Spider's Silk
@@ -156,6 +161,7 @@ GoldScout-export 6^fbnmwsa88eef^17
 @i^6362^Raw Rockscale Cod
 @i^6566^Shimmering Amice
 @i^6601^Dervish Boots of the Gorilla
+@i^6952^Thick Bear Fur
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
 @i^7098^Splintered Tusk
@@ -203,6 +209,7 @@ GoldScout-export 6^fbnmwsa88eef^17
 @q^1412^0:2:0
 @q^1417^0:2:0
 @q^1418^0:4:0
+@q^1420^0:4:0
 @q^1431^0:4:0
 @q^1468^1:7:1
 @q^1696^0:15:0
@@ -232,8 +239,10 @@ GoldScout-export 6^fbnmwsa88eef^17
 @q^2635^0:4:0
 @q^2650^0:4:0
 @q^2652^0:4:0
+@q^2671^1:12:0
 @q^2702^1:12:0
 @q^2766^0:2:0
+@q^3169^0:15:0
 @q^3175^0:15:0
 @q^3180^0:15:0
 @q^3182^1:7:1
@@ -272,6 +281,7 @@ GoldScout-export 6^fbnmwsa88eef^17
 @q^6362^1:7:1
 @q^6566^1:4:0
 @q^6601^2:4:0
+@q^6952^1:12:0
 @q^7073^0:15:0
 @q^7074^0:15:0
 @q^7098^0:15:0
@@ -1679,12 +1689,14 @@ GoldScout-export 6^fbnmwsa88eef^17
 @a^1044^152:1,173:1
 @a^1069^132:1,152:3,172:1
 @a^1110^123:7,143:8
-@a^1134^208:1,228:2
+@a^1128^189:1,229:2
+@a^1134^208:2,228:7
 @a^1135^188:5,208:2
 @a^1157^102:4,122:9
 @a^1158^82:5,83:2,122:1
 @a^1159^122:1
 @a^1160^83:1
+@a^1196^190:1
 @a^1353^206:1
 @a^1400^128:1
 @a^1418^242:5,261:3,262:2,281:15,282:1
