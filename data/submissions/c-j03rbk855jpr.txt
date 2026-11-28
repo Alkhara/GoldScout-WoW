@@ -1,4 +1,4 @@
-GoldScout-export 9^j03rbk855jpr^49
+GoldScout-export 9^j03rbk855jpr^50
 38^15^0^3^4^1429^0.5316^0.4835^15^Nervi défias^159:3:3,752:12:12,1372:1:1,1376:1:1,2070:5:5,2211:1:1,2589:3:3,2652:1:1,2654:1:1,2656:1:1^
 40^24^0^6^7^1429^0.5004^0.6734^24^Mineur kobold^159:1:1,772:4:4,773:5:5,1181:1:1,1417:1:1,1431:1:1,2589:3:4,2635:1:1,4536:2:2,248001:3:3^
 46^1^0^10^10^1429^0.8059^0.5349^1^Fourrageur murloc^780:1:1^
@@ -81,7 +81,11 @@ GoldScout-export 9^j03rbk855jpr^49
 892^2^0^27^27^1431^0.3369^0.7122^2^Sous-chef Brisepoing^^
 930^9^0^24^25^1431^0.3573^0.5340^9^Jeune veuve noire^878:4:4,1081:5:5,1130:1:1,2251:4:4,3174:6:6,4428:3:3^
 937^10^0^32^33^1434^0.4466^0.1007^10^Guerrier de la jungle de Kurzen^2728:1:1,2732:2:2,2749:1:1,4306:3:4,4720:1:1,9833:1:1^
+938^7^0^34^35^1434^0.4626^0.0783^7^Commando de Kurzen^2592:1:3,2745:1:1,4306:1:2^
+939^4^0^36^37^1434^0.4842^0.0761^4^Troupe d'élite de Kurzen^4306:2:5,216616:1:1^
 940^6^0^32^33^1434^0.4487^0.1044^6^Guérisseur de Kurzen^1710:1:1,2633:1:1,3357:2:2,3358:1:1,4306:2:3^
+941^2^0^34^35^1434^0.4737^0.0770^2^Réducteur de tête de Kurzen^2633:1:1,4306:2:4^
+942^3^0^36^37^1434^0.4862^0.0777^3^Sorcier-docteur de Kurzen^1707:1:1,2633:1:1,248709:1:1^
 1016^2^0^24^25^1437^0.5879^0.2318^2^Flagellant des hautes-terres^3685:2:2^
 1018^7^0^27^28^1437^0.6985^0.3229^7^Tranchegueule des hautes-terres^1696:1:1,1705:1:1,3685:5:5,4299:1:1,9820:1:1^
 1019^11^0^29^29^1437^0.6875^0.3001^11^Ancien tranchegueule^1696:2:2,1697:4:4,3685:6:6,7415:1:1,211853:1:1^
@@ -484,6 +488,7 @@ GoldScout-export 9^j03rbk855jpr^49
 @i^2740^Les vertes collines de Strangleronce - Page 16
 @i^2742^Les vertes collines de Strangleronce - Page 18
 @i^2744^Les vertes collines de Strangleronce - Page 20
+@i^2745^Les vertes collines de Strangleronce - Page 21
 @i^2749^Les vertes collines de Strangleronce - Page 25
 @i^2750^Les vertes collines de Strangleronce - Page 26
 @i^2765^Couteau de chasse
@@ -741,6 +746,7 @@ GoldScout-export 9^j03rbk855jpr^49
 @i^211786^Parchemin : CHAP BALK WELLES
 @i^211853^Parchemin : VOCE WELL
 @i^213544^Parchemin : ZOO ET DU KAFÊ
+@i^216616^Clé de cage de la base
 @i^247883^Effigie en cire rudimentaire
 @i^248001^Livre perdu
 @i^248002^Livre d'images : Les Joyeux Élémentaires
@@ -756,6 +762,7 @@ GoldScout-export 9^j03rbk855jpr^49
 @i^248704^Caisse détournée : composants d'apprenti
 @i^248705^Caisse détournée : étoffes de compagnon
 @i^248707^Caisse détournée : composants de compagnon
+@i^248709^Caisse détournée : lingots d'expert
 @i^249881^Recette : thé aux racines
 @i^250182^Recette : poitrine d'ours
 @i^250188^Recette : omelette de petit déjeuner
@@ -968,6 +975,7 @@ GoldScout-export 9^j03rbk855jpr^49
 @q^2740^1:12:0
 @q^2742^1:12:0
 @q^2744^1:12:0
+@q^2745^1:12:0
 @q^2749^1:12:0
 @q^2750^1:12:0
 @q^2765^0:2:0
@@ -1225,6 +1233,7 @@ GoldScout-export 9^j03rbk855jpr^49
 @q^211786^1:0:0
 @q^211853^1:0:0
 @q^213544^1:0:0
+@q^216616^1:12:0
 @q^247883^2:7:0
 @q^248001^1:12:0
 @q^248002^1:12:0
@@ -1240,6 +1249,7 @@ GoldScout-export 9^j03rbk855jpr^49
 @q^248704^2:0:1
 @q^248705^2:0:1
 @q^248707^2:0:1
+@q^248709^2:0:1
 @q^249881^1:9:0
 @q^250182^1:9:0
 @q^250188^1:9:0
@@ -3212,7 +3222,11 @@ GoldScout-export 9^j03rbk855jpr^49
 @a^892^286:2
 @a^930^185:3,205:1,215:1,225:1,226:3
 @a^937^28:4,48:3,49:3
+@a^938^29:7
+@a^939^29:4
 @a^940^28:3,48:2,49:1
+@a^941^29:2
+@a^942^29:3
 @a^1016^91:2
 @a^1018^113:2,114:1,133:1,134:1,153:1,154:1
 @a^1019^113:5,114:1,133:5
@@ -3352,6 +3366,9 @@ GoldScout-export 9^j03rbk855jpr^49
 @t^682^5:215
 @t^683^6:438
 @t^702^3:165
+@t^938^2:47
+@t^939^1:1
+@t^942^1:438
 @t^1150^3:272
 @t^2252^1:16
 @t^2253^2:148

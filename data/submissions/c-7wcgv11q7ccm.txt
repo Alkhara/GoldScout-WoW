@@ -1,4 +1,4 @@
-GoldScout-export 9^7wcgv11q7ccm^34
+GoldScout-export 9^7wcgv11q7ccm^35
 92^24^0^39^40^1418^0.3028^0.6182^24^Rock Elemental^4552:7:7,4553:10:10,4627:3:3,4784:17:17,7067:4:4,7848:5:5,7912:4:7,8150:5:5^
 588^2^0^34^35^1434^0.2484^0.1190^2^Bloodscalp Scout^2740:1:1,4306:1:1^
 595^2^0^34^35^1434^0.2387^0.1265^2^Bloodscalp Hunter^3809:1:1,4306:2:3^
@@ -321,6 +321,8 @@ GoldScout-export 9^7wcgv11q7ccm^34
 247016^2^0^0^0^1416^0.0000^0.0000^0^^1205:1:1,6567:1:1^
 247126^1^0^0^0^1416^0.0000^0.0000^0^^273036:1:1^
 250187^2^0^0^0^0^0.0000^0.0000^0^^3787:1:1,262889:1:1^
+250873^20^0^1^1^2521^0.4527^0.2524^20^Juvenile Vuldren^1370:2:2,1376:1:1,1378:1:1,1380:2:2,2652:1:1,2654:1:1,2672:2:2,3363:1:1,4865:5:5,7073:9:9,7074:8:8^
+251169^10^0^1^1^2521^0.4662^0.2705^10^Pesky Cirrusfly^1366:1:1,1372:1:1,2654:1:1,251927:6:6,251928:4:4^
 254560^19^0^39^40^2548^0.4756^0.4726^19^Twilight Shadowmancer^3671:3:3,4306:4:7,4338:1:1,6438:1:1,265745:3:3,267073:3:4^
 255068^4^0^0^0^1416^0.0000^0.0000^0^^6600:1:1^
 255069^2^0^0^0^1416^0.0000^0.0000^0^^2592:1:2^
@@ -441,6 +443,12 @@ GoldScout-export 9^7wcgv11q7ccm^34
 @i^1205^Melon Juice
 @i^1206^Moss Agate
 @i^1288^Large Venom Sac
+@i^1366^Ragged Leather Pants
+@i^1370^Ragged Leather Bracers
+@i^1372^Ragged Cloak
+@i^1376^Frayed Cloak
+@i^1378^Frayed Pants
+@i^1380^Frayed Robe
 @i^1414^Cracked Sledge
 @i^1415^Carpenter's Mallet
 @i^1422^Worn Leather Gloves
@@ -483,6 +491,9 @@ GoldScout-export 9^7wcgv11q7ccm^34
 @i^2592^Wool Cloth
 @i^2646^Loose Chain Pants
 @i^2648^Loose Chain Vest
+@i^2652^Flimsy Chain Cloak
+@i^2654^Flimsy Chain Pants
+@i^2672^Stringy Wolf Meat
 @i^2677^Boar Ribs
 @i^2725^Green Hills of Stranglethorn - Page 1
 @i^2730^Green Hills of Stranglethorn - Page 6
@@ -507,6 +518,7 @@ GoldScout-export 9^7wcgv11q7ccm^34
 @i^3182^Spider's Silk
 @i^3197^Stonecutter Claymore of the Prophet
 @i^3358^Khadgar's Whisker
+@i^3363^Frayed Belt
 @i^3385^Lesser Mana Potion
 @i^3395^Recipe: Limited Invulnerability Potion
 @i^3399^Vulture Talon
@@ -644,6 +656,7 @@ GoldScout-export 9^7wcgv11q7ccm^34
 @i^4776^Ruffled Feather
 @i^4784^Lifeless Stone
 @i^4791^Enchanted Water
+@i^4865^Ruined Pelt
 @i^4867^Broken Scorpid Leg
 @i^4869^Fizzle's Claw
 @i^4875^Slimy Bone
@@ -717,6 +730,8 @@ GoldScout-export 9^7wcgv11q7ccm^34
 @i^7067^Elemental Earth
 @i^7070^Elemental Water
 @i^7072^Naga Scale
+@i^7073^Broken Fang
+@i^7074^Chipped Claw
 @i^7288^Pattern: Rugged Leather Pants
 @i^7413^Infiltrator Cap of Arcane Protection
 @i^7414^Infiltrator Pants of Intellect
@@ -872,6 +887,8 @@ GoldScout-export 9^7wcgv11q7ccm^34
 @i^248708^Waylaid Crate: Expert Fabrics
 @i^248709^Waylaid Crate: Expert Ingots
 @i^248710^Waylaid Crate: Expert Parts
+@i^251927^Chipped Cirrusfly Stinger
+@i^251928^Torn Insect Wing
 @i^251961^Arcane Mote
 @i^252817^Pattern: Totemic Leather Helm
 @i^252845^Pattern: Warden's Leather Shoes
@@ -965,6 +982,12 @@ GoldScout-export 9^7wcgv11q7ccm^34
 @q^1205^1:0:0
 @q^1206^2:7:1
 @q^1288^1:7:1
+@q^1366^0:4:0
+@q^1370^0:4:0
+@q^1372^0:4:0
+@q^1376^0:4:0
+@q^1378^0:4:0
+@q^1380^0:4:0
 @q^1414^0:2:0
 @q^1415^0:2:0
 @q^1422^0:4:0
@@ -1007,6 +1030,9 @@ GoldScout-export 9^7wcgv11q7ccm^34
 @q^2592^1:7:1
 @q^2646^0:4:0
 @q^2648^0:4:0
+@q^2652^0:4:0
+@q^2654^0:4:0
+@q^2672^1:7:1
 @q^2677^1:7:1
 @q^2725^1:12:0
 @q^2730^1:12:0
@@ -1031,6 +1057,7 @@ GoldScout-export 9^7wcgv11q7ccm^34
 @q^3182^1:7:1
 @q^3197^2:2:0
 @q^3358^1:7:1
+@q^3363^0:4:0
 @q^3385^1:0:0
 @q^3395^2:9:0
 @q^3399^0:15:0
@@ -1168,6 +1195,7 @@ GoldScout-export 9^7wcgv11q7ccm^34
 @q^4776^0:15:0
 @q^4784^0:15:0
 @q^4791^1:0:0
+@q^4865^0:15:0
 @q^4867^0:15:0
 @q^4869^1:12:0
 @q^4875^0:15:0
@@ -1241,6 +1269,8 @@ GoldScout-export 9^7wcgv11q7ccm^34
 @q^7067^1:7:1
 @q^7070^1:7:1
 @q^7072^1:7:1
+@q^7073^0:15:0
+@q^7074^0:15:0
 @q^7288^2:9:0
 @q^7413^2:4:0
 @q^7414^2:4:0
@@ -1396,6 +1426,8 @@ GoldScout-export 9^7wcgv11q7ccm^34
 @q^248708^2:0:1
 @q^248709^2:0:1
 @q^248710^2:0:1
+@q^251927^0:15:0
+@q^251928^0:15:0
 @q^251961^1:12:0
 @q^252817^3:9:0
 @q^252845^3:9:0
@@ -1489,6 +1521,7 @@ GoldScout-export 9^7wcgv11q7ccm^34
 @m^1441^Thousand Needles
 @m^1443^Desolace
 @m^1446^Tanaris
+@m^2521^Zephras Isle
 @m^2548^Riverglades
 @c^118^
 @c^724^
@@ -2941,6 +2974,8 @@ GoldScout-export 9^7wcgv11q7ccm^34
 @a^11876^111:1
 @a^12865^369:1
 @a^12922^204:2,224:1,325:1,346:1
+@a^250873^88:1,89:7,108:6,109:6
+@a^251169^109:10
 @a^254560^169:6,188:1,189:9,209:3
 @a^255769^225:2,226:1,246:3,263:2,265:1,266:7,283:5
 @a^255770^226:1,246:3,265:1,266:5,283:2
@@ -3053,6 +3088,8 @@ GoldScout-export 9^7wcgv11q7ccm^34
 @t^3560^3:188
 @t^10928^2:49
 @t^12922^5:909
+@t^250873^19:260
+@t^251169^10:125
 @t^255851^4:677
 @t^255898^17:1255
 @t^255899^2:6

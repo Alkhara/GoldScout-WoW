@@ -1,7 +1,11 @@
-GoldScout-export 9^mtml8njsvulg^13
+GoldScout-export 9^mtml8njsvulg^14
+659^1^0^50^50^1448^0.4015^0.4572^1^El Pollo Grande^^
 5277^1^0^0^0^0^0.0000^0.0000^0^^^
 5280^1^0^0^0^0^0.0000^0.0000^0^^^
 5283^8^0^0^0^0^0.0000^0.0000^0^^^
+5677^1^0^20^20^1458^0.8627^0.2646^1^Summoned Succubus^^
+5682^1^0^20^20^1421^0.4541^0.8526^1^Dalin Forgewright^6312:1:1^
+5683^1^0^22^22^1437^0.5014^0.1246^1^Corma Villard^6313:1:1^
 5709^1^0^0^0^0^0.0000^0.0000^0^^10829:1:1,10835:1:1,272026:1:1^
 5722^1^0^0^0^0^0.0000^0.0000^0^^12243:1:1^
 6010^1^0^54^55^1419^0.6291^0.5235^1^Felhound^4583:1:1^
@@ -81,6 +85,7 @@ GoldScout-export 9^mtml8njsvulg^13
 13282^1^0^0^0^0^0.0000^0.0000^0^^4791:1:2,17702:1:1,17746:1:1^
 13596^2^0^0^0^0^0.0000^0.0000^0^^770:2:2,17730:1:1,17732:1:1,254100:1:1^
 13601^2^0^0^0^0^0.0000^0.0000^0^^4338:2:8,17717:1:1,17718:1:1,251406:1:1,254106:1:1^
+14467^1^0^55^55^1448^0.4513^0.3517^1^Kroshius^18625:1:1^
 247207^1^0^0^0^0^0.0000^0.0000^0^^280066:1:1^
 247234^1^0^0^0^0^0.0000^0.0000^0^^272027:1:1,280075:1:1^
 247237^3^0^0^0^0^0.0000^0.0000^0^^274964:3:3^
@@ -124,6 +129,8 @@ GoldScout-export 9^mtml8njsvulg^13
 @i^5128^Shed Lizard Skin
 @i^5133^Seeping Gizzard
 @i^5759^Thorium Lockbox
+@i^6312^Dalin's Heart
+@i^6313^Corma's Heart
 @i^6530^Nightcrawlers
 @i^7076^Essence of Earth
 @i^7909^Aquamarine
@@ -263,6 +270,7 @@ GoldScout-export 9^mtml8njsvulg^13
 @i^18103^Band of Rumination
 @i^18104^Feralsurge Girdle
 @i^18623^Flawless Fel Essence (Dark Portal)
+@i^18625^Kroshius' Infernal Core
 @i^18725^Peacemaker
 @i^18726^Magistrate's Cuffs
 @i^18737^Bone Slicing Hatchet
@@ -326,6 +334,8 @@ GoldScout-export 9^mtml8njsvulg^13
 @q^5128^0:15:0
 @q^5133^0:15:0
 @q^5759^2:15:0
+@q^6312^1:12:0
+@q^6313^1:12:0
 @q^6530^1:0:0
 @q^7076^2:7:1
 @q^7909^2:7:1
@@ -465,6 +475,7 @@ GoldScout-export 9^mtml8njsvulg^13
 @q^18103^3:4:0
 @q^18104^3:4:0
 @q^18623^1:12:0
+@q^18625^1:12:0
 @q^18725^3:2:0
 @q^18726^3:4:0
 @q^18737^3:2:0
@@ -512,11 +523,15 @@ GoldScout-export 9^mtml8njsvulg^13
 @q^280075^3:4:0
 @m^1414^Kalimdor
 @m^1419^Blasted Lands
+@m^1421^Silverpine Forest
 @m^1423^Eastern Plaguelands
 @m^1425^The Hinterlands
 @m^1428^Burning Steppes
+@m^1437^Wetlands
 @m^1447^Azshara
+@m^1448^Felwood
 @m^1449^Un'Goro Crater
+@m^1458^Undercity
 @m^2482^Mount Hyjal
 @c^724^
 @c^733^
@@ -1205,6 +1220,10 @@ GoldScout-export 9^mtml8njsvulg^13
 @c^279985^
 @c^279987^
 @c^286152^
+@a^659^188:1
+@a^5677^117:1
+@a^5682^349:1
+@a^5683^50:1
 @a^6010^212:1
 @a^6011^192:2,212:2
 @a^6505^313:1
@@ -1217,8 +1236,11 @@ GoldScout-export 9^mtml8njsvulg^13
 @a^9162^114:1,134:2,154:1,274:1
 @a^9165^133:1
 @a^10996^232:1
+@a^14467^149:1
 @a^248395^311:1
 @a^280424^107:1
+@t^659^1:139
+@t^5677^1:180
 @t^6010^1:21
 @t^6011^3:201
 @l^0^enUS

@@ -1,4 +1,4 @@
-GoldScout-export 9^9m7aq0k1l6hb^4
+GoldScout-export 9^9m7aq0k1l6hb^5
 746^1^0^45^45^1435^0.7764^0.5490^1^Ancestro dragonante^^
 1783^77^0^50^51^1422^0.5074^0.7650^77^Despellejador esquelético^4425:1:1,7972:4:4,8948:3:3,10130:1:1,11989:1:1,13446:3:3,14047:19:27,262890:1:1^
 1784^43^0^51^52^1422^0.5387^0.7876^43^Hechicero esquelético^7972:3:3,8753:1:1,8948:1:1,13825:1:1,14047:11:17,15237:1:1^
@@ -45,6 +45,7 @@ GoldScout-export 9^9m7aq0k1l6hb^4
 6510^3^0^51^52^1449^0.5303^0.1496^3^Despellejador pétalo de sangre^3818:1:1,4606:1:1,11018:2:2,11116:1:1^
 6512^4^0^52^53^1449^0.3817^0.3731^4^Trampero pétalo de sangre^4607:1:1,4608:1:1,11018:2:2^
 6519^1^0^54^54^1449^0.4548^0.1504^1^Señor Tar^8948:1:1^
+7132^14^0^53^54^1448^0.5006^0.2532^14^Horror tóxico^4791:8:29,7070:4:4,7079:4:4,7080:2:2,281018:1:1^
 7768^2^0^25^25^1425^0.3519^0.6540^2^Sangrador Secacorteza^^
 8136^1^0^47^47^1444^0.2828^0.7035^1^Lord Shalzaru^^
 8311^4^0^0^0^0^0.0000^0.0000^0^^3669:2:2,3676:2:2^
@@ -76,6 +77,7 @@ GoldScout-export 9^9m7aq0k1l6hb^4
 @i^4607^Moho de cueva delicado
 @i^4608^Trufa negra cruda
 @i^4637^Arcón de acero
+@i^4791^Agua encantada
 @i^5117^Pluma vibrante
 @i^5119^Pelo suelto refinado
 @i^5120^Pelo de cola larga
@@ -89,6 +91,9 @@ GoldScout-export 9^9m7aq0k1l6hb^4
 @i^6444^Lengua bípeda
 @i^6530^Reptadores nocturnos
 @i^6826^Escama luminosa
+@i^7070^Elemental de agua
+@i^7079^Globo de agua
+@i^7080^Esencia de agua
 @i^7611^Bastón Escapabruma
 @i^7910^Rubí estrella
 @i^7972^Icor de no-muerto
@@ -149,6 +154,7 @@ GoldScout-export 9^9m7aq0k1l6hb^4
 @i^254100^Patrón: guantes ígneos
 @i^254102^Patrón: guantes negros
 @i^262890^Libranza del artesano sellada
+@i^281018^Pergamino: LE TARSOPERTON GÓLLE
 @q^1520^0:15:0
 @q^1645^1:0:0
 @q^3010^0:15:0
@@ -169,6 +175,7 @@ GoldScout-export 9^9m7aq0k1l6hb^4
 @q^4607^1:0:0
 @q^4608^1:0:0
 @q^4637^2:15:0
+@q^4791^1:0:0
 @q^5117^1:12:0
 @q^5119^0:15:0
 @q^5120^0:15:0
@@ -182,6 +189,9 @@ GoldScout-export 9^9m7aq0k1l6hb^4
 @q^6444^0:15:0
 @q^6530^1:0:0
 @q^6826^0:15:0
+@q^7070^1:7:1
+@q^7079^1:7:1
+@q^7080^2:7:1
 @q^7611^2:4:0
 @q^7910^2:7:1
 @q^7972^1:7:1
@@ -242,12 +252,14 @@ GoldScout-export 9^9m7aq0k1l6hb^4
 @q^254100^3:9:0
 @q^254102^3:9:0
 @q^262890^3:0:0
+@q^281018^1:0:0
 @m^1422^Tierras de la Peste del Oeste
 @m^1425^Tierras del Interior
 @m^1435^Pantano de las Penas
 @m^1444^Feralas
 @m^1446^Tanaris
 @m^1447^Azshara
+@m^1448^Frondavil
 @m^1449^Cráter de Un'Goro
 @c^2840^
 @c^2841^
@@ -564,6 +576,7 @@ GoldScout-export 9^9m7aq0k1l6hb^4
 @a^6510^50:2,70:1
 @a^6512^147:2,148:2
 @a^6519^69:1
+@a^7132^89:2,90:5,109:3,110:4
 @a^7768^267:2
 @a^8136^285:1
 @a^8761^69:2,89:1,90:2,110:4,130:2
@@ -588,6 +601,7 @@ GoldScout-export 9^9m7aq0k1l6hb^4
 @t^6510^2:80
 @t^6512^4:264
 @t^6519^1:72
+@t^7132^13:1556
 @t^7768^2:263
 @t^8136^1:10
 @t^8761^10:335
