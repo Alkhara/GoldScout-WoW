@@ -1,4 +1,4 @@
-GoldScout-export 9^qe4onuht0uwd^36
+GoldScout-export 9^qe4onuht0uwd^37
 30^1^0^6^6^1429^0.3584^0.5331^1^Forest Spider^^
 442^1^0^15^16^1433^0.1049^0.7213^1^Tarantula^^
 587^10^0^33^34^1434^0.2897^0.2012^10^Bloodscalp Warrior^1519:2:2,1520:1:1,1708:1:1,3385:1:1,3771:1:1,4306:2:3^
@@ -6,6 +6,7 @@ GoldScout-export 9^qe4onuht0uwd^36
 595^2^0^34^35^1434^0.2482^0.1329^2^Bloodscalp Hunter^1519:1:1,3797:1:1,4306:1:2^
 597^4^0^36^37^1434^0.2438^0.0869^4^Bloodscalp Berserker^1519:1:1,2750:1:1,4306:2:6^
 660^3^0^37^37^1434^0.2477^0.0939^3^Bloodscalp Witch Doctor^1519:1:1,4306:1:1^
+667^3^0^39^40^1434^0.4307^0.3982^3^Skullsplitter Warrior^2745:1:1,3771:1:1^
 671^4^0^36^37^1434^0.2438^0.0903^4^Bloodscalp Headhunter^1519:2:2,2728:1:1^
 674^3^0^40^41^1434^0.4173^0.4451^3^Venture Co. Strip Miner^1630:1:1,3917:1:1^
 675^1^0^42^42^1434^0.4210^0.4568^1^Venture Co. Foreman^^
@@ -34,6 +35,8 @@ GoldScout-export 9^qe4onuht0uwd^36
 731^1^0^43^43^1434^0.3837^0.3480^1^King Bangalash^3880:1:1^
 736^7^0^32^43^1434^0.2976^0.1266^7^Panther^1686:2:2,5637:1:1^
 772^4^0^37^38^1434^0.4278^0.3119^4^Stranglethorn Tigress^12202:2:2^
+780^5^0^39^40^1434^0.4336^0.4001^5^Skullsplitter Mystic^1520:1:1,1710:1:1,2466:4:4,4306:1:3,8151:1:1,213127:1:1^
+782^1^0^41^42^1434^0.4592^0.3953^1^Skullsplitter Scout^1520:1:1,4338:1:1^
 808^1^0^5^5^1426^0.3007^0.7919^1^Grik'nir the Cold^2004:1:1,2589:1:1,2651:1:1,2770:1:1^
 814^1^0^38^38^1434^0.4684^0.0586^1^Sergeant Malthus^^
 855^1^0^30^30^1434^0.2455^0.1564^1^Young Stranglethorn Raptor^3685:1:1,4461:1:1,12184:1:1^
@@ -275,6 +278,7 @@ GoldScout-export 9^qe4onuht0uwd^36
 @i^1706^Azuredeep Shards
 @i^1707^Stormwind Brie
 @i^1708^Sweet Nectar
+@i^1710^Greater Healing Potion
 @i^1711^Scroll of Stamina II
 @i^1741^Laced Cloak
 @i^1743^Laced Mail Pants
@@ -309,6 +313,7 @@ GoldScout-export 9^qe4onuht0uwd^36
 @i^2251^Gooey Spider Leg
 @i^2452^Swiftthistle
 @i^2455^Minor Mana Potion
+@i^2466^Skullsplitter Fetish
 @i^2589^Linen Cloth
 @i^2591^Dirty Trogg Cloth
 @i^2592^Wool Cloth
@@ -327,6 +332,7 @@ GoldScout-export 9^qe4onuht0uwd^36
 @i^2734^Green Hills of Stranglethorn - Page 10
 @i^2740^Green Hills of Stranglethorn - Page 16
 @i^2744^Green Hills of Stranglethorn - Page 20
+@i^2745^Green Hills of Stranglethorn - Page 21
 @i^2748^Green Hills of Stranglethorn - Page 24
 @i^2749^Green Hills of Stranglethorn - Page 25
 @i^2750^Green Hills of Stranglethorn - Page 26
@@ -482,6 +488,7 @@ GoldScout-export 9^qe4onuht0uwd^36
 @i^7558^Shimmering Stave of the Boar
 @i^7973^Big-mouth Clam
 @i^8146^Wicked Claw
+@i^8151^Flask of Mojo
 @i^8183^Precision Bow
 @i^8365^Raw Mithril Head Trout
 @i^9277^Techbot's Memory Core
@@ -549,6 +556,7 @@ GoldScout-export 9^qe4onuht0uwd^36
 @i^21243^Bloated Glossy Mightfish
 @i^211853^Scroll: VOCE WELL
 @i^211854^Scroll: OMIT KESA
+@i^213127^Partial Mystical Notes
 @i^213543^Scroll: UPDOG
 @i^213544^Scroll: TOPAZ YORAK
 @i^213547^Scroll: THAW WORDS
@@ -654,6 +662,7 @@ GoldScout-export 9^qe4onuht0uwd^36
 @q^1706^0:15:0
 @q^1707^1:0:0
 @q^1708^1:0:0
+@q^1710^1:0:0
 @q^1711^1:0:0
 @q^1741^0:4:0
 @q^1743^0:4:0
@@ -688,6 +697,7 @@ GoldScout-export 9^qe4onuht0uwd^36
 @q^2251^1:7:1
 @q^2452^1:7:1
 @q^2455^1:0:0
+@q^2466^1:12:0
 @q^2589^1:7:1
 @q^2591^0:15:0
 @q^2592^1:7:1
@@ -706,6 +716,7 @@ GoldScout-export 9^qe4onuht0uwd^36
 @q^2734^1:12:0
 @q^2740^1:12:0
 @q^2744^1:12:0
+@q^2745^1:12:0
 @q^2748^1:12:0
 @q^2749^1:12:0
 @q^2750^1:12:0
@@ -861,6 +872,7 @@ GoldScout-export 9^qe4onuht0uwd^36
 @q^7558^2:4:0
 @q^7973^1:7:0
 @q^8146^1:7:1
+@q^8151^1:7:1
 @q^8183^2:2:0
 @q^8365^1:7:1
 @q^9277^1:12:0
@@ -928,6 +940,7 @@ GoldScout-export 9^qe4onuht0uwd^36
 @q^21243^2:15:0
 @q^211853^1:0:0
 @q^211854^1:0:0
+@q^213127^1:15:0
 @q^213543^1:0:0
 @q^213544^1:0:0
 @q^213547^1:0:0
@@ -2512,6 +2525,7 @@ GoldScout-export 9^qe4onuht0uwd^36
 @a^595^44:1,45:1
 @a^597^24:4
 @a^660^24:2,44:1
+@a^667^148:3
 @a^671^24:4
 @a^674^168:1,188:2
 @a^675^188:1
@@ -2540,6 +2554,8 @@ GoldScout-export 9^qe4onuht0uwd^36
 @a^731^127:1
 @a^736^45:4,46:2,66:1
 @a^772^109:2,127:2
+@a^780^148:3,168:2
+@a^782^149:1
 @a^808^306:1
 @a^814^29:1
 @a^855^64:1
@@ -2651,6 +2667,8 @@ GoldScout-export 9^qe4onuht0uwd^36
 @a^272228^291:2
 @a^276003^171:6,191:3
 @a^276009^171:1
+@t^667^3:156
+@t^780^5:778
 @f^1433^0^10^225^3820:1:3,20708:1:1,251524:8:8^292:10
 @f^1434^0^139^211^3820:16:34,4603:6:6,6358:18:20,6359:5:5,6362:15:15,8365:1:1,13422:4:10,16969:1:1,21150:21:21,21151:8:12,21153:29:29,21228:22:22^26:4,27:10,46:3,47:4,67:6,84:3,85:18,87:4,88:3,105:4,106:3,107:10,126:5,145:5,146:9,165:6,184:5,185:4,204:8,224:13,244:6,264:6
 @f^1435^0^4^225^4603:1:1,6358:1:1,6359:1:1,6362:1:1,16970:1:1^14:4

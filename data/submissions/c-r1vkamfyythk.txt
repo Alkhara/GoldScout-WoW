@@ -1,4 +1,4 @@
-GoldScout-export 9^r1vkamfyythk^43
+GoldScout-export 9^r1vkamfyythk^44
 667^5^0^39^40^1434^0.4653^0.3971^5^Guerrero Machacacráneos^2728:1:1,2738:1:1^
 669^8^0^41^42^1434^0.4615^0.4160^8^Cazador Machacacráneos^1520:2:2,3916:5:5,4306:1:2,4338:2:3,4599:2:2^
 670^5^0^41^42^1434^0.4545^0.4257^5^Médico Brujo Machacacráneos^1524:2:2,2728:1:1,4306:1:2,4338:1:1,4421:1:1,4599:1:1,8151:1:1^
@@ -205,7 +205,9 @@ GoldScout-export 9^r1vkamfyythk^43
 256891^1^0^46^46^2548^0.2980^0.4105^1^Verdugo Morg^269351:1:1^
 256899^2^0^41^41^2548^0.4514^0.5118^2^Chogg'Zac^5431:2:2,265750:1:1,265751:1:1^
 256952^11^0^39^40^2548^0.4782^0.4742^11^Asaltante Crepuscular^4306:1:3,4338:1:1,6438:1:1,267073:6:13^
+257915^4^0^44^45^2548^0.7938^0.3411^4^Asaltante de Estemar^6428:1:1^
 257926^36^0^38^39^2548^0.5040^0.6904^36^Exploradora de Farholde^4306:9:15,4725:1:1,9877:1:1^
+258331^1^0^36^37^2548^0.7196^0.3563^1^Colmipálido joven^2295:1:1^
 258588^1^0^38^40^2548^0.4309^0.5012^1^Centollo gigante^^
 259046^1^0^38^39^2548^0.5380^0.5036^1^Crocolisco de agua dulce^770:1:1^
 260023^2^0^38^40^2548^0.7576^0.3486^2^Emboscadora de Farholde^4338:2:4^
@@ -226,6 +228,7 @@ GoldScout-export 9^r1vkamfyythk^43
 267308^4^0^18^19^1413^0.5783^0.2630^4^Comecarnes Crines de Acero^2589:2:4,211853:1:1^
 267314^3^0^18^19^1413^0.5810^0.2588^3^Rabioso Crines de Acero^2589:1:1^
 268624^15^0^16^19^1413^0.4949^0.5014^15^Asaltante Crines de Acero^1764:1:1,2589:1:1,2592:4:6,277277:4:4^
+268831^1^0^39^40^2548^0.6804^0.3651^1^Merodeador de las llanuras^4583:1:1^
 270667^5^0^38^39^2548^0.5135^0.7055^5^Sacerdotisa de Farholde^7489:1:1^
 @i^414^Pincho Dalaran
 @i^730^Ojo de múrloc
@@ -390,6 +393,7 @@ GoldScout-export 9^r1vkamfyythk^43
 @i^4564^Garrote con pinchos de agilidad
 @i^4569^Martillo acérrimo del gorila
 @i^4570^Gran maza de madera de abedul de aguante
+@i^4583^Melena espesa
 @i^4599^Filete de jamón curado
 @i^4605^Champiñón con motas rojas
 @i^4636^Arcón de hierro fuerte
@@ -459,6 +463,7 @@ GoldScout-export 9^r1vkamfyythk^43
 @i^6308^Siluro mostacherizo crudo
 @i^6358^Bocanegra graso
 @i^6361^Atún blanco arco iris crudo
+@i^6428^Guantes Escapabruma
 @i^6438^Brazal elemental mate
 @i^6444^Lengua bípeda
 @i^6537^Botas de sauce de espíritu
@@ -479,6 +484,7 @@ GoldScout-export 9^r1vkamfyythk^43
 @i^8151^Frasco de mojo
 @i^8153^Atriplex salvaje
 @i^8177^Espada de prácticas
+@i^8365^Trucha cabeza de mitril cruda
 @i^9762^Guanteletes de cadete
 @i^9780^Guantes de bandido del lobo
 @i^9877^Capa hechicero de la ballena
@@ -521,6 +527,8 @@ GoldScout-export 9^r1vkamfyythk^43
 @i^17056^Pluma ligera
 @i^20708^Baúl bien sellado
 @i^20709^Ron Rumsey ligero
+@i^21150^Baúl recubierto de hierro
+@i^21153^Sabiola cruda superior
 @i^211780^Pergamino: KWYJIBO
 @i^211784^Pergamino: WUBBA WUBBA
 @i^211785^Pergamino: CWAL
@@ -726,6 +734,7 @@ GoldScout-export 9^r1vkamfyythk^43
 @q^4564^2:2:0
 @q^4569^2:2:0
 @q^4570^2:2:0
+@q^4583^0:15:0
 @q^4599^1:0:0
 @q^4605^1:0:0
 @q^4636^2:15:0
@@ -795,6 +804,7 @@ GoldScout-export 9^r1vkamfyythk^43
 @q^6308^1:7:1
 @q^6358^1:7:1
 @q^6361^1:7:1
+@q^6428^2:4:0
 @q^6438^0:15:0
 @q^6444^0:15:0
 @q^6537^2:4:0
@@ -815,6 +825,7 @@ GoldScout-export 9^r1vkamfyythk^43
 @q^8151^1:7:1
 @q^8153^1:7:1
 @q^8177^1:2:0
+@q^8365^1:7:1
 @q^9762^1:4:0
 @q^9780^2:4:0
 @q^9877^2:4:0
@@ -857,6 +868,8 @@ GoldScout-export 9^r1vkamfyythk^43
 @q^17056^1:15:1
 @q^20708^1:15:0
 @q^20709^1:0:0
+@q^21150^1:15:0
+@q^21153^1:7:1
 @q^211780^1:0:0
 @q^211784^1:0:0
 @q^211785^1:0:0
@@ -1915,7 +1928,9 @@ GoldScout-export 9^r1vkamfyythk^43
 @a^256891^165:1
 @a^256899^208:1,209:1
 @a^256952^170:1,188:2,189:7,190:1
+@a^257915^135:2,155:1,156:1
 @a^257926^248:1,249:1,269:7,270:7,290:20
+@a^258331^154:1
 @a^258588^208:1
 @a^259046^210:1
 @a^260023^135:1,155:1
@@ -1936,6 +1951,7 @@ GoldScout-export 9^r1vkamfyythk^43
 @a^267308^111:4
 @a^267314^111:3
 @a^268624^189:4,209:9,210:2
+@a^268831^153:1
 @a^270667^270:1,290:4
 @t^1888^9:370
 @t^1889^7:342
@@ -1953,4 +1969,5 @@ GoldScout-export 9^r1vkamfyythk^43
 @t^8996^1:39
 @t^212753^1:70
 @f^1413^0^21^157^3820:1:1,6358:11:11,6361:1:1,20708:4:4,20709:4:10^152:21
+@f^2548^0^4^162^8365:1:1,21150:1:1,21153:2:2^190:4
 @l^0^esES

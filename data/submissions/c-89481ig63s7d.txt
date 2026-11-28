@@ -1,4 +1,4 @@
-GoldScout-export 6^89481ig63s7d^74
+GoldScout-export 6^89481ig63s7d^75
 92^3^0^39^40^1418^0.1393^0.3483^3^Rock Elemental^4553:1:1,4627:3:3,4784:2:2,7912:1:1,8150:2:2^
 441^1^0^17^18^1433^0.6105^0.7508^1^Black Dragon Whelp^818:1:1^
 505^1^0^20^20^1433^0.4720^0.4558^1^Greater Tarantula^3931:1:1^
@@ -102,6 +102,7 @@ GoldScout-export 6^89481ig63s7d^74
 11561^9^1^37^42^2652^0.3523^0.3418^8^Undead Ravager^1708:1:1,4306:2:5^16883:1:1
 11562^8^2^33^34^1443^0.2047^0.8096^8^Drysnap Crawler^6362:1:2,17057:2:2^
 12922^3^0^38^46^1447^0.1985^0.6319^2^Imp Minion^^
+236028^6^0^47^49^1447^0.1931^0.5286^6^Honey Wasp^4638:1:1,6300:3:3,6302:1:1,238503:4:6,248698:1:1^
 252711^2^0^42^43^2652^0.4374^0.3452^2^Decrepit Pylon Protector^286647:1:1^
 253272^2^2^42^43^2652^0.4265^0.5372^2^Magram Necromancer^^5429:1:1
 253274^0^1^45^45^0^0.0000^0.0000^0^Magram Necrokhan^^
@@ -245,6 +246,7 @@ GoldScout-export 6^89481ig63s7d^74
 @i^4634^Iron Lockbox
 @i^4636^Strong Iron Lockbox
 @i^4637^Steel Lockbox
+@i^4638^Reinforced Steel Lockbox
 @i^4699^Seer's Belt
 @i^4784^Lifeless Stone
 @i^4787^Burning Pitch
@@ -362,11 +364,13 @@ GoldScout-export 6^89481ig63s7d^74
 @i^213546^Scroll: SHOOBEEDOOP
 @i^213547^Scroll: THAW WORDS
 @i^238463^Mosshoof Hide
+@i^238503^Wild Honey
 @i^248690^Waylaid Crate: Earthly Expert Herbs
 @i^248691^Waylaid Crate: Flowering Expert Herbs
 @i^248692^Waylaid Crate: Expert Ore
 @i^248693^Waylaid Crate: Expert Textiles
 @i^248694^Waylaid Crate: Expert Curiosities
+@i^248698^Waylaid Crate: Artisan Textiles
 @i^248708^Waylaid Crate: Expert Fabrics
 @i^248710^Waylaid Crate: Expert Parts
 @i^251524^Whimsyfin
@@ -488,6 +492,7 @@ GoldScout-export 6^89481ig63s7d^74
 @q^4634^2:15:0
 @q^4636^2:15:0
 @q^4637^2:15:0
+@q^4638^2:15:0
 @q^4699^2:4:0
 @q^4784^0:15:0
 @q^4787^0:15:0
@@ -605,11 +610,13 @@ GoldScout-export 6^89481ig63s7d^74
 @q^213546^1:0:0
 @q^213547^1:0:0
 @q^238463^1:12:0
+@q^238503^1:12:0
 @q^248690^1:0:1
 @q^248691^1:0:1
 @q^248692^1:0:1
 @q^248693^1:0:1
 @q^248694^1:0:1
+@q^248698^1:0:1
 @q^248708^2:0:1
 @q^248710^2:0:1
 @q^251524^1:7:1
@@ -1737,6 +1744,7 @@ GoldScout-export 6^89481ig63s7d^74
 @a^11561^84:1,86:4,108:1,208:1,307:1
 @a^11562^303:2,304:1,324:3,343:2
 @a^12922^243:1,244:1
+@a^236028^203:4,204:2
 @a^252711^128:1,148:1
 @a^253272^208:2
 @a^254283^267:1

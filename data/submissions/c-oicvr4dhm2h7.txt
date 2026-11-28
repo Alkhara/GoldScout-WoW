@@ -1,8 +1,11 @@
-GoldScout-export 7^oicvr4dhm2h7^16
+GoldScout-export 7^oicvr4dhm2h7^18
 682^1^0^33^33^1434^0.3455^0.1734^1^Stranglethorn Tiger^^
 686^1^0^35^35^1434^0.3251^0.2264^1^Lashtail Raptor^3685:1:1,4461:1:1,12184:1:1^
 1563^1^0^42^43^1434^0.2781^0.8252^1^Bloodsail Swashbuckler^^
 2761^3^0^38^38^1417^0.6703^0.3039^3^Cresting Exile^4791:1:4^
+3999^16^0^21^22^1442^0.7288^0.6097^16^Windshear Digger^1210:1:1,2589:1:2,2592:3:4,4306:1:1,4538:2:2^
+4003^1^0^21^21^1442^0.7376^0.6009^1^Windshear Geomancer^^
+4004^2^0^21^21^1442^0.7283^0.6110^2^Windshear Overlord^9767:1:1^
 4341^2^0^35^36^1445^0.4276^0.2490^2^Drywallow Crocolisk^770:1:1,3667:1:1,12037:1:1^
 4342^6^0^36^37^1445^0.4183^0.2745^6^Drywallow Vicejaw^770:1:1,3667:2:2^
 4343^1^0^37^38^1445^0.3512^0.3368^1^Drywallow Snapper^770:1:1,3667:1:1^
@@ -160,6 +163,7 @@ GoldScout-export 7^oicvr4dhm2h7^16
 @i^4416^Schematic: Goblin Land Mine
 @i^4460^Ripped Wing Webbing
 @i^4461^Raptor Hide
+@i^4538^Snapvine Watermelon
 @i^4539^Goldenbark Apple
 @i^4585^Dripping Spider Mandible
 @i^4587^Tribal Raptor Feathers
@@ -214,6 +218,7 @@ GoldScout-export 7^oicvr4dhm2h7^16
 @i^8385^Pattern: Turtle Scale Gloves
 @i^8746^Interlaced Cowl
 @i^9355^Hoop Earring
+@i^9767^Greenweave Sandals of Healing
 @i^9783^Raider's Chestpiece of Intellect
 @i^9789^Raider's Legguards of Holy Wrath
 @i^9793^Ivycloth Bracelets of Intellect
@@ -402,6 +407,7 @@ GoldScout-export 7^oicvr4dhm2h7^16
 @q^4416^2:9:0
 @q^4460^0:15:0
 @q^4461^1:7:1
+@q^4538^1:0:0
 @q^4539^1:0:0
 @q^4585^0:15:0
 @q^4587^0:15:0
@@ -456,6 +462,7 @@ GoldScout-export 7^oicvr4dhm2h7^16
 @q^8385^1:9:0
 @q^8746^0:4:0
 @q^9355^0:15:0
+@q^9767^2:4:0
 @q^9783^2:4:0
 @q^9789^2:4:0
 @q^9793^2:4:0
@@ -551,6 +558,7 @@ GoldScout-export 7^oicvr4dhm2h7^16
 @m^1415^Eastern Kingdoms
 @m^1417^Arathi Highlands
 @m^1434^Stranglethorn Vale
+@m^1442^Stonetalon Mountains
 @m^1445^Dustwallow Marsh
 @m^2548^Riverglades
 @c^118^
@@ -1427,6 +1435,9 @@ GoldScout-export 7^oicvr4dhm2h7^16
 @a^686^86:1
 @a^1563^325:1
 @a^2761^113:2,133:1
+@a^3999^234:1,254:15
+@a^4003^254:1
+@a^4004^254:2
 @a^4341^89:1,107:1
 @a^4342^68:1,89:1,108:2,147:1,148:1
 @a^4343^127:1
@@ -1487,6 +1498,9 @@ GoldScout-export 7^oicvr4dhm2h7^16
 @a^263380^289:1
 @a^270664^227:1,267:1
 @a^270667^249:1,270:1,290:2
+@t^3999^13:465
+@t^4003^1:32
+@t^4004^2:206
 @t^254560^10:461
 @t^255769^13:242
 @t^255770^20:339
