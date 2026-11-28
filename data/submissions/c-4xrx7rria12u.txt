@@ -1,4 +1,4 @@
-GoldScout-export 9^4xrx7rria12u^42
+GoldScout-export 9^4xrx7rria12u^43
 3^9^0^24^25^1431^0.2428^0.3563^9^Dévoreur^885:1:1,887:2:2,1129:3:3,1205:1:1,2589:1:1,2592:2:3,2783:1:1,6530:2:2^
 48^12^0^21^22^1431^0.7991^0.6958^12^Guerrier squelette^929:1:1,1747:1:1,1751:1:1,1798:1:1,1824:1:1,2378:6:6,2592:4:5,3012:1:1^
 121^5^0^15^16^1436^0.5003^0.7668^5^Eclaireuse défias^1766:1:1,2217:1:1,2589:1:1,7997:1:1^
@@ -236,9 +236,14 @@ GoldScout-export 9^4xrx7rria12u^42
 4064^1^0^20^21^1433^0.6090^0.4912^1^Eclaireur rochenoire^3014:1:1^
 4107^13^0^28^29^1441^0.1130^0.3542^13^Wyverne de Haut-perchoir^5136:1:1,5137:8:8,5635:2:2,5637:1:1,5809:7:7^
 4109^6^0^28^29^1441^0.1142^0.3561^6^Concubine de Haut-perchoir^5137:5:5,5635:2:2,5809:2:2^
-4143^3^0^34^35^1441^0.8300^0.7387^3^Mordeuse nacrétoile^3712:1:1,4556:1:1,5795:2:2,6362:1:1^
+4139^1^0^33^34^1441^0.8726^0.7355^1^Scorpide terrifiant^19938:1:1^
+4140^9^0^31^32^1441^0.8297^0.5767^9^Scorpide ravageur^5794:6:6,12037:3:3,19938:2:2^
+4142^4^0^30^31^1441^0.7715^0.5612^4^Tortue nacrétoile^3712:3:3,4555:1:1,4556:1:1,15147:1:1,15973:1:1,262888:1:1^
+4143^8^0^34^35^1441^0.8277^0.6226^8^Mordeuse nacrétoile^3712:4:4,4555:2:2,4556:2:2,5795:3:3,6362:1:1,213544:1:1^
 4144^1^0^32^32^1441^0.8261^0.7815^1^Tortue fouisseuse nacrétoile^3712:1:1^
-4158^1^0^34^34^1441^0.8293^0.7188^1^Vautour des Salines^729:1:1,5848:1:1,11416:1:1^
+4151^1^0^32^33^1441^0.8666^0.6063^1^Peau de cristal du sel gemme^1701:1:1^
+4154^8^0^30^32^1441^0.8764^0.6406^8^Charognard des Salines^729:3:3,3399:3:3,5114:3:3,5116:3:3,5636:1:1,5848:8:8,11416:3:3,12037:4:4,17056:2:2^
+4158^2^0^34^34^1441^0.8510^0.7272^2^Vautour des Salines^729:1:1,5848:2:2,11416:2:2^
 4416^7^0^0^0^0^0.0000^0.0000^0^^414:2:2,915:2:2,1180:1:1,2836:1:3^
 4417^3^0^0^0^0^0.0000^0.0000^0^^2592:1:4^
 4418^1^0^0^0^0^0.0000^0.0000^0^^2592:1:1^
@@ -311,6 +316,7 @@ GoldScout-export 9^4xrx7rria12u^42
 @i^1598^Racine pourrie
 @i^1696^Griffe de raptor
 @i^1697^Dent de raptor
+@i^1701^Griffe de basilic
 @i^1710^Potion de soins supérieure
 @i^1712^Parchemin d'Esprit II
 @i^1742^Gants en mailles entrelacées
@@ -424,6 +430,7 @@ GoldScout-export 9^4xrx7rria12u^42
 @i^3381^Brassards à couture croisée
 @i^3385^Potion de mana inférieure
 @i^3397^Peau de jeune crocilisque
+@i^3399^Serre de vautour
 @i^3401^Ecaille de crocilisque grossière
 @i^3402^Touffe de fourrure douce
 @i^3614^Patte de Couineur
@@ -474,6 +481,7 @@ GoldScout-export 9^4xrx7rria12u^42
 @i^5108^Cuir sombrefer
 @i^5114^Griffe abîmée
 @i^5115^Os brisé
+@i^5116^Longue plume de queue
 @i^5134^Petite patte en fourrure
 @i^5135^Fine griffe noire
 @i^5136^Oreille de fourrure déchirée
@@ -498,10 +506,12 @@ GoldScout-export 9^4xrx7rria12u^42
 @i^5568^Caillou lisse
 @i^5573^Sac vert en cuir
 @i^5635^Griffe aiguisée
+@i^5636^Plume délicate
 @i^5637^Grand croc
 @i^5734^Plan du Super-Découpeur 6000
 @i^5784^Ecailles de murloc visqueuses
 @i^5785^Ecailles de murloc épaisses
+@i^5794^Venin de scorpide acide
 @i^5795^Carapace de tortue durcie
 @i^5809^Glande à venin de Haut-perchoir
 @i^5848^Os creux de vautour
@@ -541,25 +551,30 @@ GoldScout-export 9^4xrx7rria12u^42
 @i^11416^Cage thoracique délicate
 @i^11965^Anneau de quartz du singe
 @i^11982^Anneau viridien de la chouette
+@i^12037^Viande mystère
 @i^12990^Lacératrice
 @i^12996^Anneau de purification
 @i^14113^Echarpe aborigène de l'aigle
 @i^14166^Brassards de boucanier de la baleine
 @i^14370^Pantalon de mystique
 @i^15016^Protège-mains lupins d'endurance
+@i^15147^Cape d'âme errante de protection contre l'ombre
 @i^15212^Epée large des guerriers du singe
 @i^15224^Ecrasante de l'ours
 @i^15241^Couteau de combat du singe
 @i^15505^Espauliers d'estafette
 @i^15507^Brassards de grunt de courroux sacré
 @i^15508^Cape de grunt de protection contre le givre
+@i^15973^Etoile de gardien d'endurance
 @i^17056^Plume légère
 @i^17057^Ecailles de poisson brillantes
 @i^17058^Huile de poisson
+@i^19938^Patte de scorpide épaisse
 @i^20576^Patron : Tunique de dragonnet noir
 @i^211784^Parchemin : WUBBA WUBBA
 @i^211853^Parchemin : VOCE WELL
 @i^211854^Parchemin : OMIT KESA
+@i^213544^Parchemin : ZOO ET DU KAFÊ
 @i^248682^Caisse détournée : plantes d'apprenti
 @i^248683^Caisse détournée : minerai d'apprenti
 @i^248685^Caisse détournée : curiosités d'apprenti
@@ -641,6 +656,7 @@ GoldScout-export 9^4xrx7rria12u^42
 @q^1598^1:12:0
 @q^1696^0:15:0
 @q^1697^0:15:0
+@q^1701^0:15:0
 @q^1710^1:0:0
 @q^1712^1:0:0
 @q^1742^0:4:0
@@ -754,6 +770,7 @@ GoldScout-export 9^4xrx7rria12u^42
 @q^3381^0:4:0
 @q^3385^1:0:0
 @q^3397^1:12:0
+@q^3399^0:15:0
 @q^3401^0:15:0
 @q^3402^0:15:0
 @q^3614^1:12:0
@@ -804,6 +821,7 @@ GoldScout-export 9^4xrx7rria12u^42
 @q^5108^1:4:0
 @q^5114^0:15:0
 @q^5115^0:15:0
+@q^5116^1:7:1
 @q^5134^1:12:0
 @q^5135^0:15:0
 @q^5136^0:15:0
@@ -828,10 +846,12 @@ GoldScout-export 9^4xrx7rria12u^42
 @q^5568^1:6:0
 @q^5573^1:1:0
 @q^5635^1:7:1
+@q^5636^0:15:0
 @q^5637^1:7:1
 @q^5734^1:12:0
 @q^5784^1:7:1
 @q^5785^1:7:1
+@q^5794^1:12:0
 @q^5795^1:12:0
 @q^5809^1:12:0
 @q^5848^1:12:0
@@ -871,25 +891,30 @@ GoldScout-export 9^4xrx7rria12u^42
 @q^11416^0:15:0
 @q^11965^2:4:0
 @q^11982^2:4:0
+@q^12037^1:7:1
 @q^12990^3:2:0
 @q^12996^3:4:0
 @q^14113^2:4:0
 @q^14166^2:4:0
 @q^14370^2:4:0
 @q^15016^2:4:0
+@q^15147^2:4:0
 @q^15212^2:2:0
 @q^15224^2:2:0
 @q^15241^2:2:0
 @q^15505^1:4:0
 @q^15507^2:4:0
 @q^15508^2:4:0
+@q^15973^2:4:0
 @q^17056^1:15:1
 @q^17057^1:15:0
 @q^17058^1:15:0
+@q^19938^0:15:0
 @q^20576^1:9:0
 @q^211784^1:0:0
 @q^211853^1:0:0
 @q^211854^1:0:0
+@q^213544^1:0:0
 @q^248682^1:0:1
 @q^248683^1:0:1
 @q^248685^1:0:1
@@ -1905,9 +1930,14 @@ GoldScout-export 9^4xrx7rria12u^42
 @a^4064^192:1
 @a^4107^122:5,142:8
 @a^4109^122:2,142:4
-@a^4143^296:3
+@a^4139^297:1
+@a^4140^215:3,216:1,256:1,257:4
+@a^4142^215:2,234:1,236:1
+@a^4143^216:3,236:1,237:1,296:3
 @a^4144^316:1
-@a^4158^296:1
+@a^4151^257:1
+@a^4154^237:1,257:4,277:3
+@a^4158^296:1,297:1
 @a^4463^25:6,26:2,44:2,45:2,46:1,64:3,65:1,313:1
 @a^4969^234:2
 @a^5043^290:8
@@ -1927,8 +1957,12 @@ GoldScout-export 9^4xrx7rria12u^42
 @a^272291^236:1
 @t^4107^12:507
 @t^4109^5:236
-@t^4143^1:35
+@t^4140^8:422
+@t^4142^4:354
+@t^4143^6:337
 @t^4144^1:49
-@t^4158^1:41
+@t^4151^1:112
+@t^4154^8:492
+@t^4158^2:42
 @f^1453^0^9^1^6289:7:7,6308:2:2^271:9
 @l^0^frFR

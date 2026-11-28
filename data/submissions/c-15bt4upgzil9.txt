@@ -1,4 +1,4 @@
-GoldScout-export 9^15bt4upgzil9^45
+GoldScout-export 9^15bt4upgzil9^47
 30^3^0^5^6^1429^0.3920^0.7417^3^Araña del bosque^1476:2:2,2590:3:3,5465:2:3^
 40^22^0^5^7^1429^0.4293^0.7621^22^Minero kóbold^159:1:1,772:2:2,773:4:4,828:1:1,1389:1:1,1411:1:1,1427:1:1,1433:1:1,2589:14:23,2773:1:1,4536:1:1,5571:1:1^
 46^4^0^9^10^1429^0.8017^0.5695^4^Batidor múrloc^779:2:2,1429:1:1,2138:1:1^
@@ -116,9 +116,13 @@ GoldScout-export 9^15bt4upgzil9^45
 2651^0^3^43^43^0^0.0000^0.0000^0^Desollador Secacorteza^^4601:1:1,16884:1:1
 2652^0^1^43^43^0^0.0000^0.0000^0^Sangreveneno Secacorteza^^
 2676^1^0^41^41^1434^0.4148^0.4440^1^Segador de la cosecha compacto^^
+2723^9^0^38^39^1418^0.4123^0.2772^9^Gólem de piedra^7912:3:4,8150:1:1^
 2727^5^0^35^36^1418^0.5325^0.2476^5^Coyote del risco^4583:1:1,7846:2:4,12029:1:1,213546:1:1^
 2739^7^0^35^36^1418^0.5328^0.3281^7^Tunelador de Forjatiniebla^4306:4:8,4616:1:1,255726:2:2,278402:7:7^
 2740^1^0^36^37^1418^0.5146^0.3418^1^Tejeoscuro de Forjatiniebla^4306:1:1,278402:1:1^
+2742^11^21^38^39^1418^0.4096^0.2705^11^Corista de Forjatiniebla^3780:1:1,4306:3:6^1710:3:3,4544:1:1,5431:1:1,16883:2:2
+2743^12^34^38^39^1418^0.4097^0.2844^12^Guerrero de Forjatiniebla^2289:1:1,3778:1:1,3801:1:1,4306:3:7,213544:1:1^1707:1:1,1710:1:1,4539:3:3,4544:1:1,5431:4:4,16883:4:4
+2745^2^0^42^42^1418^0.4198^0.2875^2^Embajador Infernus^4787:1:1,7068:1:1^
 2760^1^0^38^39^1417^0.2525^0.3102^1^Exiliado ardiente^7068:1:1^
 2776^2^0^40^40^1417^0.3565^0.7967^2^Marea vengativa^^
 2783^1^0^40^40^1417^0.2926^0.6171^1^Marez Cogulla^4515:1:1^
@@ -351,6 +355,7 @@ GoldScout-export 9^15bt4upgzil9^45
 @i^2211^Escudo grande doblado
 @i^2212^Rodela rajada
 @i^2251^Pata pegajosa de araña
+@i^2289^Pergamino de fuerza II
 @i^2295^Colmillo de jabalí grande
 @i^2449^Raíz de tierra
 @i^2466^Fetiche Machacacráneos
@@ -398,6 +403,8 @@ GoldScout-export 9^15bt4upgzil9^45
 @i^3672^Cabeza de Nagaz
 @i^3712^Carne de tortuga
 @i^3771^Pata de marrano salvaje
+@i^3778^Arco compuesto tenso
+@i^3780^Mosquete de cañón largo
 @i^3781^Mandoble ancho
 @i^3792^Cinturón entrelazado
 @i^3794^Brazales entrelazados
@@ -458,6 +465,7 @@ GoldScout-export 9^15bt4upgzil9^45
 @i^4525^Varita de invocación de Trelane
 @i^4536^Manzana roja lustrosa
 @i^4539^Manzana de Corteza de oro
+@i^4544^Pan de especias de Mulgore
 @i^4555^Cola escamosa espesa
 @i^4556^Fragmento de caparazón moteado
 @i^4582^Cola tupida suave
@@ -472,6 +480,7 @@ GoldScout-export 9^15bt4upgzil9^45
 @i^4715^Capa blasonada
 @i^4727^Faja de brigadier
 @i^4784^Piedra inerte
+@i^4787^Brea ardiente
 @i^4791^Agua encantada
 @i^4814^Colmillo descolorido
 @i^4865^Pelambre estropeada
@@ -533,11 +542,13 @@ GoldScout-export 9^15bt4upgzil9^45
 @i^7487^Leotardos de capitán del bandido
 @i^7524^Manteo delicado del profeta
 @i^7846^Colmillo de coyote del risco
+@i^7912^Piedra sólida
 @i^7972^Icor de no-muerto
 @i^7973^Almeja de boca grande
 @i^7993^Diseño: estoque de mitril deslumbrante
 @i^8144^Espaldares de cromita
 @i^8146^Garra maligna
+@i^8150^Sal de roca
 @i^8151^Frasco de mojo
 @i^8152^Frasco de gran mojo
 @i^8153^Atriplex salvaje
@@ -716,6 +727,7 @@ GoldScout-export 9^15bt4upgzil9^45
 @q^2211^0:4:0
 @q^2212^0:4:0
 @q^2251^1:7:1
+@q^2289^1:0:0
 @q^2295^0:15:0
 @q^2449^1:7:1
 @q^2466^1:12:0
@@ -763,6 +775,8 @@ GoldScout-export 9^15bt4upgzil9^45
 @q^3672^1:12:0
 @q^3712^1:7:1
 @q^3771^1:0:0
+@q^3778^0:2:0
+@q^3780^0:2:0
 @q^3781^0:2:0
 @q^3792^0:4:0
 @q^3794^0:4:0
@@ -823,6 +837,7 @@ GoldScout-export 9^15bt4upgzil9^45
 @q^4525^1:12:0
 @q^4536^1:0:0
 @q^4539^1:0:0
+@q^4544^1:0:0
 @q^4555^0:15:0
 @q^4556^0:15:0
 @q^4582^1:12:0
@@ -837,6 +852,7 @@ GoldScout-export 9^15bt4upgzil9^45
 @q^4715^2:4:0
 @q^4727^2:4:0
 @q^4784^0:15:0
+@q^4787^0:15:0
 @q^4791^1:0:0
 @q^4814^0:15:0
 @q^4865^0:15:0
@@ -898,11 +914,13 @@ GoldScout-export 9^15bt4upgzil9^45
 @q^7487^2:4:0
 @q^7524^2:4:0
 @q^7846^1:12:0
+@q^7912^1:7:1
 @q^7972^1:7:1
 @q^7973^1:7:0
 @q^7993^2:9:0
 @q^8144^2:4:0
 @q^8146^1:7:1
+@q^8150^1:7:1
 @q^8151^1:7:1
 @q^8152^1:7:1
 @q^8153^1:7:1
@@ -3000,9 +3018,13 @@ GoldScout-export 9^15bt4upgzil9^45
 @a^2649^224:2
 @a^2650^224:1
 @a^2676^168:1
+@a^2723^107:1,108:8
 @a^2727^70:2,90:2,150:1
 @a^2739^130:7
 @a^2740^130:1
+@a^2742^108:11
+@a^2743^108:11,128:1
+@a^2745^108:2
 @a^2760^125:1
 @a^2776^307:2
 @a^2783^245:1
@@ -3188,6 +3210,10 @@ GoldScout-export 9^15bt4upgzil9^45
 @t^1125^2:87
 @t^1718^6:285
 @t^1922^1:72
+@t^2723^9:2017
+@t^2742^10:1469
+@t^2743^11:2024
+@t^2745^2:271
 @t^4196^8:64
 @t^5232^7:327
 @t^5234^3:396

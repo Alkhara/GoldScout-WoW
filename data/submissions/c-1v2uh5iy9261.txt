@@ -1,4 +1,4 @@
-GoldScout-export 9^1v2uh5iy9261^30
+GoldScout-export 9^1v2uh5iy9261^31
 116^1^0^9^9^1429^0.7090^0.7976^1^Defias Bandit^2589:1:2^
 473^1^0^10^10^1429^0.7082^0.7892^1^Morgan the Collector^^
 678^1^0^43^44^1434^0.5150^0.2709^1^Mosh'Ogg Mauler^^
@@ -293,7 +293,8 @@ GoldScout-export 9^1v2uh5iy9261^30
 271530^4^0^7^8^1426^0.4109^0.4642^4^Elder Wendigo^117:1:1,2642:1:1^
 271587^1^0^9^9^1426^0.3945^0.4874^1^Frosthowl^280426:1:1^
 271784^1^0^0^0^0^0.0000^0.0000^0^^4338:1:2^
-276003^1^0^8^8^1426^0.5337^0.4408^1^Minor Ice Elemental^1431:1:1,4877:1:1^
+276003^6^0^7^8^1426^0.5615^0.4492^6^Minor Ice Elemental^1417:1:1,1420:1:1,1425:1:1,1431:1:1,4877:3:3,5446:1:1^
+276009^1^0^8^8^1426^0.5820^0.4208^1^Avala^5446:1:1,286325:1:1^
 @i^117^Tough Jerky
 @i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
@@ -309,7 +310,9 @@ GoldScout-export 9^1v2uh5iy9261^30
 @i^1412^Crude Bastard Sword
 @i^1414^Cracked Sledge
 @i^1415^Carpenter's Mallet
+@i^1417^Beaten Battle Axe
 @i^1420^Worn Leather Bracers
+@i^1425^Worn Leather Vest
 @i^1429^Patchwork Cloak
 @i^1431^Patchwork Pants
 @i^1464^Buzzard Talon
@@ -439,6 +442,7 @@ GoldScout-export 9^1v2uh5iy9261^30
 @i^5117^Vibrant Plume
 @i^5128^Shed Lizard Skin
 @i^5133^Seeping Gizzard
+@i^5446^Broken Elemental Bracer
 @i^5637^Large Fang
 @i^5785^Thick Murloc Scale
 @i^6149^Greater Mana Potion
@@ -675,6 +679,7 @@ GoldScout-export 9^1v2uh5iy9261^30
 @i^278186^Brilliantly Polished Bangle
 @i^279225^Vilebranch Totem
 @i^280426^Sack of Fish
+@i^286325^Avala's Core
 @i^286647^Depleted Crystal Heart
 @q^117^1:0:0
 @q^118^1:0:0
@@ -691,7 +696,9 @@ GoldScout-export 9^1v2uh5iy9261^30
 @q^1412^0:2:0
 @q^1414^0:2:0
 @q^1415^0:2:0
+@q^1417^0:2:0
 @q^1420^0:4:0
+@q^1425^0:4:0
 @q^1429^0:4:0
 @q^1431^0:4:0
 @q^1464^0:15:0
@@ -821,6 +828,7 @@ GoldScout-export 9^1v2uh5iy9261^30
 @q^5117^1:12:0
 @q^5128^0:15:0
 @q^5133^0:15:0
+@q^5446^0:15:0
 @q^5637^1:7:1
 @q^5785^1:7:1
 @q^6149^1:0:0
@@ -1057,6 +1065,7 @@ GoldScout-export 9^1v2uh5iy9261^30
 @q^278186^1:12:0
 @q^279225^1:12:0
 @q^280426^1:12:0
+@q^286325^1:12:0
 @q^286647^1:12:0
 @m^1414^Kalimdor
 @m^1418^Badlands
@@ -2081,7 +2090,8 @@ GoldScout-export 9^1v2uh5iy9261^30
 @a^271486^188:4
 @a^271530^188:4
 @a^271587^187:1
-@a^276003^170:1
+@a^276003^170:1,171:1,191:4
+@a^276009^171:1
 @t^116^1:12
 @t^473^1:1
 @t^881^1:1
@@ -2105,6 +2115,8 @@ GoldScout-export 9^1v2uh5iy9261^30
 @t^6555^3:408
 @t^271486^2:54
 @t^271530^3:95
+@t^276003^4:130
+@t^276009^1:79
 @f^1434^0^2^141^13422:2:3^285:2
 @f^2548^0^4^141^6359:4:4^216:1,351:3
 @l^0^enUS
