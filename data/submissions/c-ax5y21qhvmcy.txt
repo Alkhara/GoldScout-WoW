@@ -1,4 +1,4 @@
-GoldScout-export 9^ax5y21qhvmcy^12
+GoldScout-export 9^ax5y21qhvmcy^13
 587^2^0^33^34^1434^0.2938^0.1986^2^Bloodscalp Warrior^1520:1:1,2749:1:1,4634:1:1^
 588^3^0^34^35^1434^0.2557^0.1142^3^Bloodscalp Scout^3901:1:1,4306:2:4^
 595^4^0^34^35^1434^0.2498^0.1156^4^Bloodscalp Hunter^2592:1:3,3901:2:2,4306:1:2^
@@ -63,6 +63,8 @@ GoldScout-export 9^ax5y21qhvmcy^12
 3103^9^0^6^7^1411^0.6459^0.7355^9^Makrura Clacker^118:1:1,4873:1:1,4887:4:4,6303:1:3^
 3104^3^0^6^7^1411^0.5620^0.7822^3^Makrura Shellhide^^
 3106^10^0^5^6^1411^0.5537^0.8030^10^Pygmy Surf Crawler^4873:4:4,4874:1:1,4888:8:8^
+3119^7^0^6^7^1411^0.4846^0.7951^7^Kolkar Drudge^1417:1:1,2589:1:1^
+3120^8^0^7^8^1411^0.4762^0.7940^8^Kolkar Outrunner^2589:3:6,2642:1:1^
 3121^6^0^7^8^1411^0.6489^0.8362^6^Durotar Tiger^4813:2:2,4814:1:1,4892:4:4^
 3122^2^0^6^8^1411^0.6736^0.7747^2^Bloodtalon Taillasher^4877:2:2^
 3124^21^0^3^3^1411^0.4087^0.6659^21^Scorpid Worker^1369:1:1,1372:1:1,1374:1:1,2652:1:1,2656:1:1,3365:1:1,4862:9:9,4867:3:3,7099:3:3,7100:5:5,7101:5:5^
@@ -162,6 +164,8 @@ GoldScout-export 9^ax5y21qhvmcy^12
 255560^8^0^39^41^1443^0.6823^0.8015^8^Magram Guardian^2592:1:1,3385:1:1,4306:2:4,6067:4:4,254432:1:1^
 260429^1^0^39^39^1434^0.4353^0.2033^1^Venture Co. Agent^2589:1:3^
 262397^29^0^36^38^1434^0.2271^0.2808^29^Brinescale Skirmisher^2744:1:1,2745:1:1,3798:1:1,3928:1:1,4603:1:3,5524:11:11,17058:8:8,270305:10:10^
+266849^6^0^5^6^1411^0.5173^0.6077^6^Ridgeshade Lurker^1476:2:2,2590:4:4,5465:4:5^
+266851^1^0^8^8^1411^0.4952^0.5671^1^Ukorsbane^1476:1:1,275722:1:1^
 268530^1^0^9^9^1411^0.6872^0.7179^1^Bloodtalon Matriarch^4877:1:1,277128:1:1^
 269175^3^0^36^38^1434^0.3324^0.2624^3^Carnivorous Weed^256037:3:3^
 @i^117^Tough Jerky
@@ -180,6 +184,8 @@ GoldScout-export 9^ax5y21qhvmcy^12
 @i^1377^Frayed Gloves
 @i^1378^Frayed Pants
 @i^1380^Frayed Robe
+@i^1417^Beaten Battle Axe
+@i^1476^Snapped Spider Limb
 @i^1510^Heavy Hammer
 @i^1512^Crude Battle Axe
 @i^1520^Troll Sweat
@@ -202,7 +208,9 @@ GoldScout-export 9^ax5y21qhvmcy^12
 @i^2289^Scroll of Strength II
 @i^2290^Scroll of Intellect II
 @i^2589^Linen Cloth
+@i^2590^Forest Spider Webbing
 @i^2592^Wool Cloth
+@i^2642^Loose Chain Boots
 @i^2649^Flimsy Chain Belt
 @i^2652^Flimsy Chain Cloak
 @i^2654^Flimsy Chain Pants
@@ -302,6 +310,7 @@ GoldScout-export 9^ax5y21qhvmcy^12
 @i^5117^Vibrant Plume
 @i^5136^Torn Furry Ear
 @i^5137^Bright Eyeball
+@i^5465^Small Spider Leg
 @i^5524^Thick-shelled Clam
 @i^5637^Large Fang
 @i^5741^Rock Chip
@@ -386,6 +395,7 @@ GoldScout-export 9^ax5y21qhvmcy^12
 @i^260347^Tattered Journal
 @i^262889^Sealed Expert's Writ
 @i^270305^Brinescale Trident
+@i^275722^Ukor's Lost Pack
 @i^275724^Hexed Pendant
 @i^277128^Bloodtalon Matriarch Eggs
 @i^277957^Primitive Key
@@ -405,6 +415,8 @@ GoldScout-export 9^ax5y21qhvmcy^12
 @q^1377^0:4:0
 @q^1378^0:4:0
 @q^1380^0:4:0
+@q^1417^0:2:0
+@q^1476^0:15:0
 @q^1510^0:2:0
 @q^1512^0:2:0
 @q^1520^0:15:0
@@ -427,7 +439,9 @@ GoldScout-export 9^ax5y21qhvmcy^12
 @q^2289^1:0:0
 @q^2290^1:0:0
 @q^2589^1:7:1
+@q^2590^0:15:0
 @q^2592^1:7:1
+@q^2642^0:4:0
 @q^2649^0:4:0
 @q^2652^0:4:0
 @q^2654^0:4:0
@@ -527,6 +541,7 @@ GoldScout-export 9^ax5y21qhvmcy^12
 @q^5117^1:12:0
 @q^5136^0:15:0
 @q^5137^0:15:0
+@q^5465^1:7:1
 @q^5524^1:7:0
 @q^5637^1:7:1
 @q^5741^0:15:0
@@ -611,6 +626,7 @@ GoldScout-export 9^ax5y21qhvmcy^12
 @q^260347^1:15:0
 @q^262889^3:0:0
 @q^270305^1:12:0
+@q^275722^1:12:0
 @q^275724^2:7:0
 @q^277128^1:12:0
 @q^277957^1:12:0
@@ -2002,6 +2018,8 @@ GoldScout-export 9^ax5y21qhvmcy^12
 @a^3103^272:1,292:4,293:1,313:2,314:1
 @a^3104^272:1,330:2
 @a^3106^311:6,330:3,331:1
+@a^3119^309:5,310:1,329:1
+@a^3120^309:5,329:3
 @a^3121^293:1,333:2,352:2,372:1
 @a^3122^294:1,312:1
 @a^3124^248:3,268:18
@@ -2082,6 +2100,8 @@ GoldScout-export 9^ax5y21qhvmcy^12
 @a^255560^313:2,333:6
 @a^260429^88:1
 @a^262397^104:29
+@a^266849^230:2,250:4
+@a^266851^229:1
 @a^268530^293:1
 @a^269175^106:3
 @t^587^2:27
