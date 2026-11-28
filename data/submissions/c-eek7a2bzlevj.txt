@@ -1,4 +1,4 @@
-GoldScout-export 9^eek7a2bzlevj^23
+GoldScout-export 9^eek7a2bzlevj^24
 1756^2^0^60^60^1453^0.7852^0.4034^2^Onyxia's Elite Guard^^
 1791^1^0^52^52^1422^0.5135^0.7702^1^Slavering Ghoul^^
 1993^1^0^10^10^1438^0.4432^0.6173^1^Greenpaw^^
@@ -154,6 +154,8 @@ GoldScout-export 9^eek7a2bzlevj^23
 222525^1^0^0^0^0^0.0000^0.0000^0^^4005:1:1,14047:1:2^
 248041^3^0^56^57^2482^0.7628^0.7511^3^Hyjal Stag^5119:2:2,5471:1:1,251641:2:2^
 248042^1^0^55^55^2482^0.7213^0.7493^1^Tainted Hyjal Stag^5471:1:1^
+248395^17^0^55^56^2482^0.6012^0.7111^17^Tainted Shrubbery^3819:1:1,8271:1:1,8948:2:2,12803:3:3,13446:2:2,247892:12:12^
+249051^1^0^57^57^2482^0.6614^0.6967^1^Celastrus the Bitter^282028:1:1^
 269213^1^0^60^60^1452^0.6807^0.5858^1^Hailspite^278091:1:1^
 272096^2^0^10^11^1438^0.5047^0.4475^2^Befouled Webwood^1476:1:1,5465:2:3^
 272116^1^0^12^12^1438^0.5138^0.4478^1^Xethorr the Wicked^281023:1:1^
@@ -184,6 +186,7 @@ GoldScout-export 9^eek7a2bzlevj^23
 @i^3190^Beatstick
 @i^3373^Patchwork Bracers
 @i^3669^Gelatinous Goo
+@i^3819^Wintersbite
 @i^3857^Coal
 @i^3928^Superior Healing Potion
 @i^3945^Twill Boots
@@ -230,12 +233,14 @@ GoldScout-export 9^eek7a2bzlevj^23
 @i^8248^Imperial Red Cloak
 @i^8252^Imperial Red Robe
 @i^8268^Ebonhold Girdle
+@i^8271^Ebonhold Leggings
 @i^8295^Traveler's Bracers
 @i^8302^Hero's Bracers
 @i^8304^Hero's Cape
 @i^8305^Hero's Gauntlets
 @i^8363^Shaman Voodoo Charm
 @i^8766^Morning Glory Dew
+@i^8948^Dried King Bolete
 @i^8950^Homemade Cherry Pie
 @i^8952^Roasted Quail
 @i^8953^Deep Fried Plantains
@@ -315,6 +320,7 @@ GoldScout-export 9^eek7a2bzlevj^23
 @i^12771^Empty Firewater Flask
 @i^12780^General Drakkisath's Command
 @i^12793^Mixologist's Tunic
+@i^12803^Living Essence
 @i^12804^Powerful Mojo
 @i^12820^Winterfall Firewater
 @i^12822^Toxic Horror Droplet
@@ -367,6 +373,7 @@ GoldScout-export 9^eek7a2bzlevj^23
 @i^22397^Idol of Ferocity
 @i^22400^Libram of Truth
 @i^211785^Scroll: CWAL
+@i^247892^Verdant Leaves
 @i^248695^Waylaid Crate: Earthly Artisan Herbs
 @i^248696^Waylaid Crate: Flowering Artisan Herbs
 @i^248698^Waylaid Crate: Artisan Textiles
@@ -384,6 +391,7 @@ GoldScout-export 9^eek7a2bzlevj^23
 @i^281023^Mature Fel Moss
 @i^281241^Chillwind Chimaera Fur
 @i^281242^Winterspring Owl Feather
+@i^282028^Broken Frond of Celastrus
 @q^118^1:0:0
 @q^159^1:0:0
 @q^774^2:7:1
@@ -411,6 +419,7 @@ GoldScout-export 9^eek7a2bzlevj^23
 @q^3190^1:2:0
 @q^3373^0:4:0
 @q^3669^0:15:0
+@q^3819^1:7:1
 @q^3857^1:7:1
 @q^3928^1:0:0
 @q^3945^0:4:0
@@ -457,12 +466,14 @@ GoldScout-export 9^eek7a2bzlevj^23
 @q^8248^2:4:0
 @q^8252^2:4:0
 @q^8268^2:4:0
+@q^8271^2:4:0
 @q^8295^2:4:0
 @q^8302^2:4:0
 @q^8304^2:4:0
 @q^8305^2:4:0
 @q^8363^1:12:0
 @q^8766^1:0:0
+@q^8948^1:0:0
 @q^8950^1:0:0
 @q^8952^1:0:0
 @q^8953^1:0:0
@@ -542,6 +553,7 @@ GoldScout-export 9^eek7a2bzlevj^23
 @q^12771^1:12:0
 @q^12780^1:12:0
 @q^12793^3:4:0
+@q^12803^2:7:1
 @q^12804^1:7:1
 @q^12820^1:0:0
 @q^12822^1:12:0
@@ -594,6 +606,7 @@ GoldScout-export 9^eek7a2bzlevj^23
 @q^22397^3:4:0
 @q^22400^3:4:0
 @q^211785^1:0:0
+@q^247892^1:12:0
 @q^248695^1:0:1
 @q^248696^1:0:1
 @q^248698^1:0:1
@@ -611,6 +624,7 @@ GoldScout-export 9^eek7a2bzlevj^23
 @q^281023^1:12:0
 @q^281241^1:12:0
 @q^281242^1:12:0
+@q^282028^1:12:0
 @m^1422^Western Plaguelands
 @m^1427^Searing Gorge
 @m^1428^Burning Steppes
@@ -2052,6 +2066,8 @@ GoldScout-export 9^eek7a2bzlevj^23
 @a^14372^186:3
 @a^248041^295:1,314:1,315:1
 @a^248042^294:1
+@a^248395^271:3,272:5,291:4,292:1,293:1,311:3
+@a^249051^273:1
 @a^269213^233:1
 @a^272096^170:1,189:1
 @a^272116^170:1
@@ -2073,4 +2089,5 @@ GoldScout-export 9^eek7a2bzlevj^23
 @t^10916^2:104
 @t^14372^3:131
 @t^248041^3:195
+@t^248395^16:942
 @l^0^enUS

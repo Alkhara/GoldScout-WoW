@@ -1,9 +1,13 @@
-GoldScout-export 9^5su0xxfwyjyr^21
+GoldScout-export 9^5su0xxfwyjyr^22
 3851^1^0^0^0^0^0.0000^0.0000^0^^1792:1:1^
 3861^1^0^0^0^0^0.0000^0.0000^0^^1015:1:1^
-3927^1^0^0^0^0^0.0000^0.0000^0^^3748:1:1^
-4274^1^0^0^0^0^0.0000^0.0000^0^^1015:1:1,3402:1:1,5635:1:1,273646:1:1^
-4275^1^0^0^0^0^0.0000^0.0000^0^^3385:1:2,6392:1:1^
+3887^1^0^0^0^0^0.0000^0.0000^0^^273637:1:1^
+3914^1^0^0^0^0^0.0000^0.0000^0^^273456:1:1^
+3927^2^0^0^0^0^0.0000^0.0000^0^^3748:1:1,6314:1:1,251349:1:1^
+4274^2^0^0^0^0^0.0000^0.0000^0^^1015:2:2,3230:1:1,3402:2:2,5635:1:1,273646:1:1^
+4275^2^0^0^0^0^0.0000^0.0000^0^^3385:2:3,6392:2:2,251349:1:1^
+4278^1^0^0^0^0^0.0000^0.0000^0^^2592:1:4,6320:1:1^
+4279^1^0^0^0^0^0.0000^0.0000^0^^6319:1:1^
 5256^3^0^0^0^0^0.0000^0.0000^0^^1520:1:1,4338:2:6,10130:1:1^
 5259^7^0^0^0^0^0.0000^0.0000^0^^1520:2:2,4026:1:1,8248:1:1^
 5267^2^0^0^0^0^0.0000^0.0000^0^^1520:1:1,4338:1:1^
@@ -160,6 +164,8 @@ GoldScout-export 9^5su0xxfwyjyr^21
 @i^1645^Jus de baie lunaire
 @i^1688^Longue queue soyeuse
 @i^1792^Pantalon raccommodé en cuir
+@i^2592^Etoffe de laine
+@i^3230^Brassards du loup noir
 @i^3385^Potion de mana inférieure
 @i^3402^Touffe de fourrure douce
 @i^3669^Bave gélatineuse
@@ -204,6 +210,9 @@ GoldScout-export 9^5su0xxfwyjyr^21
 @i^6291^Goujon brillant cru
 @i^6302^Aile d'insecte délicate
 @i^6308^Poisson-chat moustachu cru
+@i^6314^Cape de meneur de loups
+@i^6319^Ceinturon du guetteur aveugle
+@i^6320^Cimier de commandant
 @i^6358^Bouche-noire huileux
 @i^6361^Thon arc-en-ciel cru
 @i^6392^Ceinture d'Arugal
@@ -420,6 +429,7 @@ GoldScout-export 9^5su0xxfwyjyr^21
 @i^249695^Chair gangrenée
 @i^249698^Collier de charmes ornés de plumes
 @i^250183^Recette : effiloché de raptor préhistorique
+@i^251349^Plans : jambières de croisé en anneaux
 @i^262890^Commission d'artisan scellée
 @i^272026^Larme d'Ysera
 @i^272027^Marque de Xavius
@@ -428,6 +438,8 @@ GoldScout-export 9^5su0xxfwyjyr^21
 @i^273128^Étincelle d'invention
 @i^273129^Essence d'anarchie
 @i^273131^Cris en bouteille
+@i^273456^Griffes du gardien de cellule
+@i^273637^Lame d'Argelaine
 @i^273646^Bottes à moitié dévorées
 @i^274964^Granule de magie instable
 @i^276396^Sceau d'authenticité d'Ezra
@@ -469,6 +481,8 @@ GoldScout-export 9^5su0xxfwyjyr^21
 @q^1645^1:0:0
 @q^1688^0:15:0
 @q^1792^0:4:0
+@q^2592^1:7:1
+@q^3230^3:4:0
 @q^3385^1:0:0
 @q^3402^0:15:0
 @q^3669^0:15:0
@@ -513,6 +527,9 @@ GoldScout-export 9^5su0xxfwyjyr^21
 @q^6291^1:7:1
 @q^6302^0:15:0
 @q^6308^1:7:1
+@q^6314^3:4:0
+@q^6319^3:4:0
+@q^6320^3:4:0
 @q^6358^1:7:1
 @q^6361^1:7:1
 @q^6392^3:4:0
@@ -729,6 +746,7 @@ GoldScout-export 9^5su0xxfwyjyr^21
 @q^249695^1:12:0
 @q^249698^1:12:0
 @q^250183^1:9:0
+@q^251349^3:9:0
 @q^262890^3:0:0
 @q^272026^3:12:0
 @q^272027^3:12:0
@@ -737,6 +755,8 @@ GoldScout-export 9^5su0xxfwyjyr^21
 @q^273128^2:15:1
 @q^273129^2:15:1
 @q^273131^2:15:1
+@q^273456^3:2:0
+@q^273637^3:2:0
 @q^273646^3:4:0
 @q^274964^1:15:0
 @q^276396^3:4:0

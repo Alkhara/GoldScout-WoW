@@ -1,4 +1,4 @@
-GoldScout-export 9^ngcu3n2c2b19^29
+GoldScout-export 9^ngcu3n2c2b19^30
 598^9^0^0^0^0^0.0000^0.0000^0^^858:1:1,2592:2:2,2836:1:2^
 634^3^0^0^0^0^0.0000^0.0000^0^^1206:1:1,1741:1:1,2592:1:2,7997:2:2^
 644^1^0^0^0^0^0.0000^0.0000^0^^5187:1:1,252774:1:1^
@@ -158,6 +158,14 @@ GoldScout-export 9^ngcu3n2c2b19^29
 5760^1^0^40^40^1443^0.5611^0.7454^1^Seigneur Azrethoc^^
 5771^1^0^40^40^1443^0.5584^0.7783^1^Jugkar Grim'rod^^
 5881^1^0^45^45^1444^0.5473^0.6718^1^Sycomore maudit^^
+5979^8^0^45^47^1419^0.4790^0.1729^8^Perdu décati^4020:1:1,6149:1:1^
+5982^6^0^46^48^1419^0.5008^0.1687^6^Pourfendeur noir^1464:5:5,3404:3:3,5117:1:1,8146:1:1,8168:3:3,8396:3:3,11418:3:3,12037:2:2,12207:1:1^
+5984^15^0^45^46^1419^0.4857^0.2230^15^Raillecroc affamée^4583:1:1,4584:1:1,8146:2:2,8391:6:6,12037:5:5,12203:8:8,12208:5:5,248697:1:1^
+5988^9^0^50^51^1419^0.4793^0.2401^9^Aiguillonneur scorpok^8393:4:4,12037:3:3,19934:6:6,19935:3:3^
+5990^1^0^47^48^1419^0.5455^0.2906^1^Basilic Rougepierre^11386:1:1^
+5991^2^0^51^51^1419^0.4877^0.3684^2^Peau de cristal Rougepierre^8394:1:1,11387:2:2^
+5992^2^0^48^49^1419^0.5796^0.2970^2^Sanglier cendré^2295:1:1,8392:2:2^
+5993^1^0^52^53^1419^0.4419^0.3810^1^Sanglier infernal^2295:1:1,8392:1:1^
 6069^3^0^39^40^1443^0.2977^0.5256^3^Garde du khan maraudine^3816:1:1,4306:1:3^
 6388^3^0^46^46^1434^0.3929^0.5719^3^Squelette Zanzil^^
 6549^1^0^40^40^1445^0.4584^0.5739^1^Démon de l'Orbe^^
@@ -195,6 +203,7 @@ GoldScout-export 9^ngcu3n2c2b19^29
 7977^1^0^48^48^1425^0.7845^0.6085^1^Gammerita^19023:1:1^
 7997^1^0^42^43^1444^0.6842^0.4713^1^Fée fléchetteuse capturée^^
 8567^1^0^0^0^0^0.0000^0.0000^0^^274385:1:1^
+8675^1^0^50^51^1419^0.4387^0.3367^1^Gangrebête^4583:1:1^
 8996^1^0^42^43^1446^0.5893^0.2340^1^Sbire marcheur du Vide^^
 10928^5^0^42^43^1434^0.3219^0.8696^5^Succube démoniaque^^
 11559^1^0^40^40^2652^0.3252^0.2626^1^Nécromancien renégat^260347:1:1^
@@ -474,9 +483,15 @@ GoldScout-export 9^ngcu3n2c2b19^29
 @i^8152^Flacon de grand mojo
 @i^8153^Sauvageonne
 @i^8158^Gantelets de jouteur
+@i^8168^Plume noire
 @i^8188^Fusil explosif
 @i^8365^Truite tête-mithril crue
 @i^8387^Patron : Masque du grand vaudou
+@i^8391^Joues de Raillecroc
+@i^8392^Poumon de sanglier éclaté
+@i^8393^Pince de scorpok
+@i^8394^Cerveau de basilic
+@i^8396^Gésier de vautour
 @i^8399^Patron : Bottes armées du scorpide
 @i^8428^Glande de rosée remplie
 @i^8429^Glande de rosée éclatée
@@ -511,6 +526,7 @@ GoldScout-export 9^ngcu3n2c2b19^29
 @i^10770^Crâne sans vie de Mordresh
 @i^11208^Formule : Enchantement d'arme (Tueur de démon)
 @i^11386^Oeil spongieux de basilic
+@i^11387^Coeur de basilic
 @i^11409^Flanc d'ours
 @i^11410^Griffe d'ours sauvage
 @i^11416^Cage thoracique délicate
@@ -563,6 +579,8 @@ GoldScout-export 9^ngcu3n2c2b19^29
 @i^19023^Le meilleur appât de Katoom
 @i^19025^Plume de Seigneur du ciel
 @i^19034^Repas de Lard
+@i^19934^Grande griffe de scorpide
+@i^19935^Glande à venin vide
 @i^20519^Chapeau de pirate des Mers du sud
 @i^213127^Notes mystiques partielles
 @i^213529^Venin visqueux
@@ -815,9 +833,15 @@ GoldScout-export 9^ngcu3n2c2b19^29
 @q^8152^1:7:1
 @q^8153^1:7:1
 @q^8158^2:4:0
+@q^8168^1:7:1
 @q^8188^2:2:0
 @q^8365^1:7:1
 @q^8387^2:9:0
+@q^8391^1:12:0
+@q^8392^1:12:0
+@q^8393^1:12:0
+@q^8394^1:12:0
+@q^8396^1:12:0
 @q^8399^2:9:0
 @q^8428^1:12:0
 @q^8429^0:15:0
@@ -852,6 +876,7 @@ GoldScout-export 9^ngcu3n2c2b19^29
 @q^10770^3:4:0
 @q^11208^2:9:0
 @q^11386^0:15:0
+@q^11387^0:15:0
 @q^11409^0:15:0
 @q^11410^0:15:0
 @q^11416^0:15:0
@@ -904,6 +929,8 @@ GoldScout-export 9^ngcu3n2c2b19^29
 @q^19023^1:12:0
 @q^19025^1:12:0
 @q^19034^1:12:0
+@q^19934^0:15:0
+@q^19935^0:15:0
 @q^20519^1:12:0
 @q^213127^1:15:0
 @q^213529^1:15:0
@@ -978,6 +1005,7 @@ GoldScout-export 9^ngcu3n2c2b19^29
 @q^287011^3:4:0
 @m^1413^Les Tarides
 @m^1415^Royaumes de l'est
+@m^1419^Terres foudroyées
 @m^1424^Contreforts de Hautebrande
 @m^1425^Les Hinterlands
 @m^1434^Vallée de Strangleronce
@@ -1861,6 +1889,14 @@ GoldScout-export 9^ngcu3n2c2b19^29
 @a^5760^291:1
 @a^5771^311:1
 @a^5881^270:1
+@a^5979^49:1,69:7
+@a^5982^69:4,70:2
+@a^5984^69:7,88:1,89:2,109:1,110:4
+@a^5988^69:2,88:1,89:2,108:1,110:3
+@a^5990^110:1
+@a^5991^149:1,150:1
+@a^5992^111:1,131:1
+@a^5993^148:1
 @a^6069^205:3
 @a^6388^227:3
 @a^6549^229:1
@@ -1878,6 +1914,7 @@ GoldScout-export 9^ngcu3n2c2b19^29
 @a^7883^194:1
 @a^7977^255:1
 @a^7997^193:1
+@a^8675^128:1
 @a^8996^91:1
 @a^10928^345:2,346:3
 @a^11559^106:1
@@ -1985,7 +2022,16 @@ GoldScout-export 9^ngcu3n2c2b19^29
 @t^5358^6:234
 @t^5363^1:74
 @t^5472^1:61
+@t^5979^7:665
+@t^5982^6:970
+@t^5984^15:1562
+@t^5988^9:431
+@t^5990^1:156
+@t^5991^2:407
+@t^5992^2:211
+@t^5993^1:105
 @t^7584^2:120
+@t^8675^1:45
 @t^14748^1:221
 @f^1413^0^21^153^6303:6:6,6358:2:2,6361:13:13^152:21
 @f^1434^0^37^156^4603:8:8,6358:5:5,6359:10:10,6362:14:14^305:37
