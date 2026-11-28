@@ -1,4 +1,4 @@
-GoldScout-export 9^m23khgtw51x7^18
+GoldScout-export 9^m23khgtw51x7^19
 6^20^0^1^2^1429^0.4941^0.3602^20^Kobold Vermin^159:2:2,755:4:4,1368:2:2,1377:1:1,1378:1:1,2589:7:7,2652:1:1,2656:1:1,4536:2:2,247834:2:2,247839:4:4^
 30^1^0^5^6^1429^0.4412^0.7279^1^Forest Spider^5465:1:2^
 38^33^0^3^4^1429^0.5456^0.4671^33^Defias Thug^159:3:3,752:12:12,1374:1:1,1376:1:1,1378:1:1,1380:1:1,2070:3:3,2589:8:8,2651:2:2,2654:1:1,2656:1:1,3365:1:1^
@@ -80,6 +80,8 @@ GoldScout-export 9^m23khgtw51x7^18
 1732^5^0^0^0^0^0.0000^0.0000^0^^1769:1:1,2589:1:5,2592:1:4,2982:1:1,14167:1:1^
 1763^1^0^0^0^0^0.0000^0.0000^0^^2589:1:5^
 1922^8^0^7^8^1429^0.6727^0.6440^8^Gray Forest Wolf^2672:5:5,3299:3:3,247877:4:4^
+1984^4^0^1^2^1438^0.5993^0.4530^4^Young Thistle Boar^117:1:1,1377:1:1,3363:1:1,4865:1:1,7098:2:2^
+2031^7^0^1^1^1438^0.6146^0.4430^7^Young Nightsaber^1364:1:1,1369:1:1,4865:3:3,7073:5:5,7074:1:1^
 2044^1^0^25^25^1453^0.4348^0.7140^1^Forlorn Spirit^2592:1:1^
 2242^1^0^35^35^1416^0.5600^0.4527^1^Syndicate Spy^4306:1:1^
 2252^2^0^34^35^1416^0.5507^0.4265^2^Crushridge Ogre^3385:1:1,4306:2:3^
@@ -152,6 +154,7 @@ GoldScout-export 9^m23khgtw51x7^18
 271898^1^0^18^18^1433^0.5000^0.3900^1^Greater Tarantula^3174:1:1^
 272260^1^0^24^24^1431^0.6781^0.3050^1^Lost Stalker^275895:1:1,281143:1:1^
 272291^1^0^25^25^1431^0.7750^0.6939^1^Lost Knight^275895:1:1,281147:1:1^
+@i^117^Tough Jerky
 @i^118^Minor Healing Potion
 @i^159^Refreshing Spring Water
 @i^182^Garrick's Head
@@ -187,6 +190,7 @@ GoldScout-export 9^m23khgtw51x7^18
 @i^1195^Kobold Mining Shovel
 @i^1205^Melon Juice
 @i^1212^Gnoll Spittle
+@i^1364^Ragged Leather Vest
 @i^1366^Ragged Leather Pants
 @i^1368^Ragged Leather Gloves
 @i^1369^Ragged Leather Belt
@@ -263,6 +267,7 @@ GoldScout-export 9^m23khgtw51x7^18
 @i^3299^Fractured Canine
 @i^3300^Rabbit's Foot
 @i^3301^Sharp Canine
+@i^3363^Frayed Belt
 @i^3365^Frayed Bracers
 @i^3378^Brocade Belt
 @i^3385^Lesser Mana Potion
@@ -317,6 +322,7 @@ GoldScout-export 9^m23khgtw51x7^18
 @i^6694^Heart of Agamaggan
 @i^7073^Broken Fang
 @i^7074^Chipped Claw
+@i^7098^Splintered Tusk
 @i^7230^Smite's Mighty Hammer
 @i^7357^Elder's Hat of the Eagle
 @i^7421^Phalanx Gauntlets of the Falcon
@@ -374,6 +380,7 @@ GoldScout-export 9^m23khgtw51x7^18
 @i^281143^Ira's Dagger
 @i^281147^Grant's Shield
 @i^285292^Dull Sawblade
+@q^117^1:0:0
 @q^118^1:0:0
 @q^159^1:0:0
 @q^182^1:12:0
@@ -409,6 +416,7 @@ GoldScout-export 9^m23khgtw51x7^18
 @q^1195^1:2:0
 @q^1205^1:0:0
 @q^1212^0:15:0
+@q^1364^0:4:0
 @q^1366^0:4:0
 @q^1368^0:4:0
 @q^1369^0:4:0
@@ -485,6 +493,7 @@ GoldScout-export 9^m23khgtw51x7^18
 @q^3299^0:15:0
 @q^3300^0:15:0
 @q^3301^0:15:0
+@q^3363^0:4:0
 @q^3365^0:4:0
 @q^3378^0:4:0
 @q^3385^1:0:0
@@ -539,6 +548,7 @@ GoldScout-export 9^m23khgtw51x7^18
 @q^6694^3:4:0
 @q^7073^0:15:0
 @q^7074^0:15:0
+@q^7098^0:15:0
 @q^7230^3:2:0
 @q^7357^2:4:0
 @q^7421^2:4:0
@@ -607,6 +617,7 @@ GoldScout-export 9^m23khgtw51x7^18
 @m^1434^Stranglethorn Vale
 @m^1436^Westfall
 @m^1437^Wetlands
+@m^1438^Teldrassil
 @m^1440^Ashenvale
 @m^1445^Dustwallow Marsh
 @m^1453^Stormwind City
@@ -1432,6 +1443,8 @@ GoldScout-export 9^m23khgtw51x7^18
 @a^1693^91:1
 @a^1726^308:1
 @a^1922^233:1,253:4,254:1,273:2
+@a^1984^171:1,191:1,192:2
+@a^2031^172:4,192:3
 @a^2044^288:1
 @a^2242^191:1
 @a^2252^170:1,171:1
@@ -1487,6 +1500,8 @@ GoldScout-export 9^m23khgtw51x7^18
 @t^1258^3:163
 @t^1270^20:811
 @t^1922^8:828
+@t^1984^3:115
+@t^2031^7:235
 @t^3817^2:463
 @t^3919^1:68
 @t^6170^3:79
