@@ -1,8 +1,11 @@
-GoldScout-export 9^i3ri8kknbioy^13
+GoldScout-export 9^i3ri8kknbioy^16
 94^2^0^5^6^1429^0.4461^0.5228^2^Defias Cutpurse^1372:1:1^
+97^2^0^8^9^1429^0.2649^0.8548^2^Riverpaw Runt^782:2:2,2589:1:2^
 116^2^0^9^9^1429^0.3078^0.5713^2^Defias Bandit^2070:1:1,2589:1:2^
+448^1^0^11^11^1429^0.2368^0.9265^1^Hogger^2777:1:1^
 474^1^0^9^9^1429^0.2974^0.6103^1^Defias Rogue Wizard^2589:1:2^
-478^3^0^9^10^1429^0.2654^0.8261^3^Riverpaw Outrunner^782:1:1,2589:1:2^
+478^13^0^9^10^1429^0.2624^0.8586^13^Riverpaw Outrunner^117:2:2,118:1:1,159:1:1,781:1:1,782:6:6,1425:1:1,2589:5:9,4562:1:1,6521:1:1^
+822^2^0^8^8^1429^0.2592^0.8736^2^Young Forest Bear^4865:1:1,7074:1:1^
 2761^53^0^38^39^1417^0.6669^0.2926^53^Cresting Exile^1207:1:1,4481:22:22,4791:27:84,7070:11:11,9886:1:1,248690:1:1,248710:1:1^
 254560^1^0^39^40^2548^0.4411^0.5047^1^Twilight Shadowmancer^4306:1:1,266425:1:2^
 256798^11^0^37^38^2548^0.4403^0.4973^11^Twilight Neophyte^4059:1:1,4306:3:6,4338:2:2,5429:1:1,5431:1:1,266425:11:21,266427:1:1^
@@ -11,22 +14,32 @@ GoldScout-export 9^i3ri8kknbioy^13
 258588^5^0^38^40^2548^0.4411^0.5436^5^Jumbo Crawfish^5524:1:1,266157:2:2^
 258922^3^0^37^38^2548^0.4616^0.7078^3^Hungry Crocolisk^^
 270664^2^0^37^38^2548^0.3897^0.5976^2^Venomweb Spitter^1074:1:1,4585:1:1,12205:2:2^
+@i^117^Tough Jerky
+@i^118^Minor Healing Potion
+@i^159^Refreshing Spring Water
+@i^781^Stone Gnoll Hammer
 @i^782^Painted Gnoll Armband
 @i^1074^Hard Spider Leg Tip
 @i^1207^Murphstar of Intellect
 @i^1372^Ragged Cloak
+@i^1425^Worn Leather Vest
 @i^2070^Darnassian Bleu
 @i^2589^Linen Cloth
+@i^2777^Feeble Shortbow
 @i^4059^Glyphed Bracers
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
 @i^4481^Cresting Charm
+@i^4562^Severing Axe of Healing
 @i^4585^Dripping Spider Mandible
 @i^4791^Enchanted Water
+@i^4865^Ruined Pelt
 @i^5429^A Pretty Rock
 @i^5431^Empty Hip Flask
 @i^5524^Thick-shelled Clam
+@i^6521^Pioneer Gloves
 @i^7070^Elemental Water
+@i^7074^Chipped Claw
 @i^9879^Sorcerer Bracelets of the Prophet
 @i^9886^Huntsman's Bands of Power
 @i^12205^White Spider Meat
@@ -38,22 +51,32 @@ GoldScout-export 9^i3ri8kknbioy^13
 @i^266425^Twilight Charm
 @i^266427^Field Marshal's Log
 @i^267266^Mudfin Murloc Head
+@q^117^1:0:0
+@q^118^1:0:0
+@q^159^1:0:0
+@q^781^1:2:0
 @q^782^1:12:0
 @q^1074^0:15:0
 @q^1207^2:2:0
 @q^1372^0:4:0
+@q^1425^0:4:0
 @q^2070^1:0:0
 @q^2589^1:7:1
+@q^2777^0:2:0
 @q^4059^2:4:0
 @q^4306^1:7:1
 @q^4338^1:7:1
 @q^4481^1:0:0
+@q^4562^2:2:0
 @q^4585^0:15:0
 @q^4791^1:0:0
+@q^4865^0:15:0
 @q^5429^0:15:0
 @q^5431^0:15:0
 @q^5524^1:7:0
+@q^6521^1:4:0
 @q^7070^1:7:1
+@q^7074^0:15:0
 @q^9879^2:4:0
 @q^9886^2:4:0
 @q^12205^1:7:1
@@ -427,9 +450,12 @@ GoldScout-export 9^i3ri8kknbioy^13
 @c^279990^
 @c^286152^
 @a^94^189:1,228:1
+@a^97^345:2
 @a^116^226:2
+@a^448^364:1
 @a^474^245:1
-@a^478^325:3
+@a^478^325:4,345:8,365:1
+@a^822^325:1,365:1
 @a^2761^112:1,113:36,133:16
 @a^254560^208:1
 @a^256798^188:8,209:3
@@ -439,9 +465,12 @@ GoldScout-export 9^i3ri8kknbioy^13
 @a^258922^289:3
 @a^270664^227:1,247:1
 @t^94^1:408
+@t^97^2:63
 @t^116^1:21
+@t^448^1:167
 @t^474^1:33
-@t^478^3:298
+@t^478^10:440
+@t^822^2:29
 @t^2761^33:5145
 @t^254560^1:56
 @t^256798^11:775

@@ -1,4 +1,4 @@
-GoldScout-export 9^s9r7ooqna9x5^28
+GoldScout-export 9^s9r7ooqna9x5^29
 587^4^0^33^34^1434^0.3047^0.1952^4^Krieger der Bloodscalp^1520:1:1,2730:1:1,3779:1:1,3915:1:1,4306:2:3^
 588^8^0^34^35^1434^0.2494^0.1301^8^Späher der Bloodscalp^1519:2:2,1710:1:1,2725:1:1,3771:1:1,3901:2:2,3915:5:5,4306:6:9^
 595^16^0^34^35^1434^0.2443^0.1254^16^Jäger der Bloodscalp^1519:3:3,2592:1:1,3901:2:2,3915:4:4,4306:6:11,213543:1:1^
@@ -65,8 +65,8 @@ GoldScout-export 9^s9r7ooqna9x5^28
 2588^5^0^36^37^1417^0.2816^0.6176^5^Streuner des Syndikats^4306:1:3,6986:1:1^
 2590^2^0^35^36^1417^0.2768^0.6292^2^Herbeizauberin des Syndikats^4440:1:1^
 2592^2^0^38^39^1417^0.3651^0.5669^2^Rumpelnder Verbannter^4552:1:1,4784:1:1^
-2595^1^0^38^39^1417^0.2241^0.8475^1^Räuber der Säbelflossen^^
-2596^3^0^39^40^1417^0.2268^0.8466^3^Zauberhexerin der Säbelflossen^6362:1:2,7072:1:1,17057:1:1^
+2595^8^0^38^39^1417^0.2082^0.8563^8^Räuber der Säbelflossen^2289:1:1,7072:5:5,7472:1:1,17058:2:2,248694:1:1^
+2596^4^0^39^40^1417^0.2223^0.8470^4^Zauberhexerin der Säbelflossen^6362:1:2,7072:1:1,17057:1:1,17058:1:1^
 2611^1^0^42^42^1417^0.5083^0.5243^1^Fozruk^4469:1:1^
 2667^4^0^36^37^1434^0.3709^0.3096^4^Zauberschutz von Laze^^
 2763^1^0^42^42^1417^0.3574^0.5761^1^Thenan^4018:1:1,7912:1:2^
@@ -189,6 +189,7 @@ GoldScout-export 9^s9r7ooqna9x5^28
 @i^1710^Großer Heiltrank
 @i^1725^Große Reisetasche
 @i^2251^Klebriges Spinnenbein
+@i^2289^Rolle der Stärke II
 @i^2290^Rolle der Intelligenz II
 @i^2592^Wollstoff
 @i^2672^Sehniges Wolfsfleisch
@@ -235,6 +236,7 @@ GoldScout-export 9^s9r7ooqna9x5^28
 @i^3813^Doppelpanzerhose
 @i^3815^Doppelpanzerweste
 @i^3816^Reflektierender Langschild
+@i^3820^Würgetang
 @i^3827^Manatrank
 @i^3838^Schattentatzenklaue
 @i^3839^Makelloser Tigerinnen-Fangzahn
@@ -304,6 +306,7 @@ GoldScout-export 9^s9r7ooqna9x5^28
 @i^6302^Zierlicher Insektenflügel
 @i^6308^Roher Stoppelfühlerwels
 @i^6309^17-pfündiger Wels
+@i^6361^Roher Regenbogenflossenthunfisch
 @i^6362^Roher Steinschuppenkabeljau
 @i^6407^Nachthauchgelenkbänder
 @i^6416^Aurorastiefel
@@ -315,6 +318,7 @@ GoldScout-export 9^s9r7ooqna9x5^28
 @i^7072^Nagaschuppe
 @i^7331^Phalanxschild der Willenskraft
 @i^7444^Schildwachenstiefel des Frostschutzes
+@i^7472^Königliche Stiefel des Arkanschutzes
 @i^7912^Robuster Stein
 @i^8146^Tückische Klaue
 @i^8150^Tiefsteinsalz
@@ -354,6 +358,8 @@ GoldScout-export 9^s9r7ooqna9x5^28
 @i^19937^Kleine Skorpidklaue
 @i^19938^Schweres Skorpidbein
 @i^20310^Geschundene Dämonenhaut
+@i^21113^Wasserdichter Koffer
+@i^21114^Dunkler Rumsey-Rum
 @i^211247^Muster: Phönixbindungen
 @i^213543^Schriftrolle: UPDOG
 @i^213546^Schriftrolle: SCHUBIDU
@@ -397,6 +403,7 @@ GoldScout-export 9^s9r7ooqna9x5^28
 @q^1710^1:0:0
 @q^1725^1:1:0
 @q^2251^1:7:1
+@q^2289^1:0:0
 @q^2290^1:0:0
 @q^2592^1:7:1
 @q^2672^1:7:1
@@ -443,6 +450,7 @@ GoldScout-export 9^s9r7ooqna9x5^28
 @q^3813^0:4:0
 @q^3815^0:4:0
 @q^3816^0:4:0
+@q^3820^1:7:1
 @q^3827^1:0:0
 @q^3838^1:12:0
 @q^3839^1:12:0
@@ -512,6 +520,7 @@ GoldScout-export 9^s9r7ooqna9x5^28
 @q^6302^0:15:0
 @q^6308^1:7:1
 @q^6309^1:15:0
+@q^6361^1:7:1
 @q^6362^1:7:1
 @q^6407^2:4:0
 @q^6416^2:4:0
@@ -523,6 +532,7 @@ GoldScout-export 9^s9r7ooqna9x5^28
 @q^7072^1:7:1
 @q^7331^2:4:0
 @q^7444^2:4:0
+@q^7472^2:4:0
 @q^7912^1:7:1
 @q^8146^1:7:1
 @q^8150^1:7:1
@@ -562,6 +572,8 @@ GoldScout-export 9^s9r7ooqna9x5^28
 @q^19937^0:15:0
 @q^19938^0:15:0
 @q^20310^1:12:0
+@q^21113^1:15:0
+@q^21114^1:0:0
 @q^211247^2:9:0
 @q^213543^1:0:0
 @q^213546^1:0:0
@@ -583,6 +595,7 @@ GoldScout-export 9^s9r7ooqna9x5^28
 @m^1412^Mulgore
 @m^1416^Alteracgebirge
 @m^1417^Arathihochland
+@m^1424^Vorgebirge von Hillsbrad
 @m^1434^Schlingendorntal
 @m^1441^Tausend Nadeln
 @m^1443^Desolace
@@ -1454,8 +1467,8 @@ GoldScout-export 9^s9r7ooqna9x5^28
 @a^2588^225:1,245:4
 @a^2590^225:1,265:1
 @a^2592^227:2
-@a^2595^324:1
-@a^2596^324:3
+@a^2595^323:3,324:1,344:4
+@a^2596^324:4
 @a^2611^210:1
 @a^2667^127:4
 @a^2763^227:1
@@ -1563,8 +1576,9 @@ GoldScout-export 9^s9r7ooqna9x5^28
 @t^2579^3:208
 @t^2580^1:58
 @t^2592^1:37
-@t^2595^1:95
-@t^2596^2:651
+@t^2595^6:484
+@t^2596^3:775
+@f^1424^0^5^115^3820:1:1,6361:1:1,21113:2:2,21114:1:2^353:5
 @f^1454^0^39^10^6289:24:24,6291:6:6,6308:9:9^113:2,133:14,134:23
 @f^1458^0^100^49^6289:32:32,6291:13:13,6297:21:21,6299:13:13,6308:20:20,6309:1:1^92:2,136:16,192:18,193:6,196:58
 @l^0^deDE

@@ -1,4 +1,4 @@
-GoldScout-export 9^0i6tk6txxcvo^56
+GoldScout-export 9^0i6tk6txxcvo^57
 92^3^0^39^40^1418^0.3686^0.7419^3^Rock Elemental^4552:1:1,4553:1:1,4627:3:3,4784:1:1,7912:1:2,8150:2:2,213545:1:1^
 588^15^0^34^35^1434^0.2458^0.1148^15^Bloodscalp Scout^1519:2:2,2734:1:1,2742:1:1,2750:1:1,3771:1:1,3786:1:1,3817:1:1,3915:6:6,4306:5:6^
 595^10^0^34^35^1434^0.2452^0.1161^10^Bloodscalp Hunter^1519:2:2,2728:1:1,2750:1:1,3771:1:1,3784:1:1,3915:2:2,4306:2:4^
@@ -419,6 +419,10 @@ GoldScout-export 9^0i6tk6txxcvo^56
 6377^1^0^49^49^1447^0.4573^0.3620^1^Thunderhead Stagwing^11418:1:1^
 6505^13^0^48^49^1449^0.6395^0.7069^13^Ravasaur^4587:1:1,4588:3:3,11018:1:1,11116:4:4,11477:3:3,12184:5:5,20015:1:1,280459:2:2^
 6506^12^0^49^50^1449^0.6328^0.6843^12^Ravasaur Runner^4587:4:4,4588:1:1,8146:1:1,11018:5:5,11116:4:4,11477:4:4,12184:7:7,20015:2:2,280459:3:3^
+6510^4^0^51^52^1449^0.5348^0.1513^4^Bloodpetal Flayer^3357:1:1,4606:1:1,4607:2:2,11018:1:1^
+6513^4^0^51^52^1449^0.6518^0.1663^4^Un'Goro Stomper^2799:3:3,4099:2:2,11018:1:1,11479:2:2,15180:1:1^
+6514^5^0^50^51^1449^0.6620^0.1528^5^Un'Goro Gorilla^2799:2:2,4096:2:2,4099:1:1,11478:2:2^
+6516^2^0^52^53^1449^0.6602^0.1660^2^Un'Goro Thunderer^2799:1:1,4099:1:1,11480:2:2^
 7034^2^0^51^52^1428^0.7498^0.3928^2^Firegut Ogre Mage^8080:1:1,14047:1:2^
 7035^1^0^52^52^1428^0.7965^0.4163^1^Firegut Brute^15732:1:1^
 7047^8^0^51^52^1428^0.8776^0.3409^8^Black Broodling^4557:1:1,7909:1:1^
@@ -714,6 +718,7 @@ GoldScout-export 9^0i6tk6txxcvo^56
 @i^3198^Battering Hammer of Fire Protection
 @i^3210^Brutal War Axe of the Bear
 @i^3301^Sharp Canine
+@i^3357^Liferoot
 @i^3379^Brocade Bracers
 @i^3380^Cross-stitched Belt
 @i^3385^Lesser Mana Potion
@@ -833,6 +838,7 @@ GoldScout-export 9^0i6tk6txxcvo^56
 @i^4093^Large Basilisk Tail
 @i^4096^Coarse Gorilla Hair
 @i^4097^Chipped Gorilla Tooth
+@i^4099^Tuft of Gorilla Hair
 @i^4104^Snapjaw Crocolisk Skin
 @i^4105^Elder Crocolisk Skin
 @i^4106^Tumbled Crystal
@@ -1061,6 +1067,9 @@ GoldScout-export 9^0i6tk6txxcvo^56
 @i^11417^Feathery Wing
 @i^11418^Hollow Wing Bone
 @i^11477^White Ravasaur Claw
+@i^11478^Un'Goro Gorilla Pelt
+@i^11479^Un'Goro Stomper Pelt
+@i^11480^Un'Goro Thunderer Pelt
 @i^11503^Blood Amber
 @i^11509^Ravasaur Pheromone Gland
 @i^11818^Grimesilt Outhouse Key
@@ -1109,6 +1118,7 @@ GoldScout-export 9^0i6tk6txxcvo^56
 @i^14951^Bloodforged Sabatons of Holy Wrath
 @i^14955^Bloodforged Shoulder Pads of the Whale
 @i^15167^Imposing Bandana of the Gorilla
+@i^15180^Praetorian Girdle of Shadow Protection
 @i^15215^Furious Falchion of Stamina
 @i^15234^Greater Scythe of the Bandit
 @i^15251^Headstriker Sword of Fire Protection
@@ -1346,6 +1356,7 @@ GoldScout-export 9^0i6tk6txxcvo^56
 @q^3198^2:2:0
 @q^3210^2:2:0
 @q^3301^0:15:0
+@q^3357^1:7:1
 @q^3379^0:4:0
 @q^3380^0:4:0
 @q^3385^1:0:0
@@ -1465,6 +1476,7 @@ GoldScout-export 9^0i6tk6txxcvo^56
 @q^4093^0:15:0
 @q^4096^1:15:0
 @q^4097^0:15:0
+@q^4099^0:15:0
 @q^4104^1:12:0
 @q^4105^1:12:0
 @q^4106^1:12:0
@@ -1693,6 +1705,9 @@ GoldScout-export 9^0i6tk6txxcvo^56
 @q^11417^0:15:0
 @q^11418^0:15:0
 @q^11477^1:12:0
+@q^11478^1:12:0
+@q^11479^1:12:0
+@q^11480^1:12:0
 @q^11503^1:12:0
 @q^11509^1:12:0
 @q^11818^1:12:0
@@ -1741,6 +1756,7 @@ GoldScout-export 9^0i6tk6txxcvo^56
 @q^14951^2:4:0
 @q^14955^2:4:0
 @q^15167^2:4:0
+@q^15180^2:4:0
 @q^15215^2:2:0
 @q^15234^2:2:0
 @q^15251^2:2:0
@@ -3288,6 +3304,10 @@ GoldScout-export 9^0i6tk6txxcvo^56
 @a^6377^149:1
 @a^6505^252:3,273:1,291:1,292:2,293:4,312:1,331:1
 @a^6506^252:3,253:1,272:3,273:1,292:1,293:1,311:1,312:1
+@a^6510^50:2,70:2
+@a^6513^53:1,72:2,73:1
+@a^6514^53:3,72:1,73:1
+@a^6516^73:2
 @a^7034^155:1,174:1
 @a^7035^175:1
 @a^7047^116:1,135:1,137:2,138:1,158:2,177:1
@@ -3485,6 +3505,10 @@ GoldScout-export 9^0i6tk6txxcvo^56
 @t^6377^1:348
 @t^6505^12:1025
 @t^6506^12:1104
+@t^6510^3:77
+@t^6513^4:264
+@t^6514^5:919
+@t^6516^2:95
 @t^7100^9:585
 @t^7101^5:232
 @t^7109^1:584

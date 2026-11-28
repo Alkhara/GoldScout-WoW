@@ -1,4 +1,4 @@
-GoldScout-export 9^e52go9enxmfq^60
+GoldScout-export 9^e52go9enxmfq^61
 92^7^0^39^40^1418^0.1452^0.3618^7^Rock Elemental^4552:2:2,4553:1:1,4627:3:3,4784:6:6,7067:1:1,7848:1:1,7912:1:2,8150:2:2^
 587^20^0^33^34^1434^0.3127^0.1829^20^Bloodscalp Warrior^1519:5:5,1520:2:2,1708:1:1,2735:1:1,2742:1:1,3771:1:1,3778:1:1,3901:2:2,3915:6:6,4306:4:6^
 588^1^0^34^35^1434^0.2239^0.1297^1^Bloodscalp Scout^2744:1:1^
@@ -1088,11 +1088,13 @@ GoldScout-export 9^e52go9enxmfq^60
 @i^6302^Delicate Insect Wing
 @i^6303^Raw Slitherskin Mackerel
 @i^6308^Raw Bristle Whisker Catfish
+@i^6309^17 Pound Catfish
 @i^6321^Silverlaine's Family Seal
 @i^6324^Robes of Arugal
 @i^6353^Small Chest
 @i^6356^Battered Chest
 @i^6358^Oily Blackmouth
+@i^6359^Firefin Snapper
 @i^6361^Raw Rainbow Fin Albacore
 @i^6362^Raw Rockscale Cod
 @i^6386^Glimmering Mail Legguards
@@ -1159,6 +1161,7 @@ GoldScout-export 9^e52go9enxmfq^60
 @i^8153^Wildvine
 @i^8181^Hunting Rifle
 @i^8188^Explosive Shotgun
+@i^8365^Raw Mithril Head Trout
 @i^8490^Cat Carrier (Siamese)
 @i^8746^Interlaced Cowl
 @i^8747^Hardened Leather Helm
@@ -1856,11 +1859,13 @@ GoldScout-export 9^e52go9enxmfq^60
 @q^6302^0:15:0
 @q^6303^1:7:1
 @q^6308^1:7:1
+@q^6309^1:15:0
 @q^6321^3:4:0
 @q^6324^3:4:0
 @q^6353^1:15:0
 @q^6356^1:15:0
 @q^6358^1:7:1
+@q^6359^1:7:1
 @q^6361^1:7:1
 @q^6362^1:7:1
 @q^6386^2:4:0
@@ -1927,6 +1932,7 @@ GoldScout-export 9^e52go9enxmfq^60
 @q^8153^1:7:1
 @q^8181^1:2:0
 @q^8188^2:2:0
+@q^8365^1:7:1
 @q^8490^1:15:0
 @q^8746^0:4:0
 @q^8747^0:4:0
@@ -2180,6 +2186,7 @@ GoldScout-export 9^e52go9enxmfq^60
 @m^1441^Thousand Needles
 @m^1442^Stonetalon Mountains
 @m^1443^Desolace
+@m^1454^Orgrimmar
 @m^1456^Thunder Bluff
 @m^1458^Undercity
 @m^2548^Riverglades
@@ -3911,6 +3918,9 @@ GoldScout-export 9^e52go9enxmfq^60
 @f^1411^0^133^5^6289:29:29,6291:54:54,6292:2:2,6303:47:47,6356:1:1^51:48,69:85
 @f^1413^0^169^75^6289:25:25,6291:8:8,6303:49:49,6308:6:6,6353:1:1,6358:21:21,6361:47:47,6522:11:11,20709:1:3^149:50,152:119
 @f^1424^0^50^115^3820:2:4,6289:9:9,6308:19:19,21071:19:19,21113:1:1^53:9,73:7,93:5,153:29
+@f^1434^0^5^154^8365:5:5^126:5
+@f^1454^0^53^156^6289:27:27,6291:12:12,6308:13:13,6309:1:1^113:1,347:52
 @f^1456^0^4^1^6291:2:2,6308:2:2^228:4
 @f^1458^0^66^134^6289:26:26,6291:5:5,6297:8:8,6299:12:12,6308:15:15^193:66
+@f^2548^0^108^169^4603:19:19,6308:8:8,6358:14:14,6359:7:7,6362:41:41,8365:19:19^210:27,215:81
 @l^0^enUS
