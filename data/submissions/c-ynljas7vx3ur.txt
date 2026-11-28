@@ -1,4 +1,4 @@
-GoldScout-export 6^ynljas7vx3ur^1
+GoldScout-export 6^ynljas7vx3ur^2
 1769^3^0^10^11^1421^0.4941^0.3254^3^Moonrage Whitescalp^^
 1770^2^0^11^12^1421^0.5051^0.2656^2^Moonrage Darkrunner^^
 1778^2^0^11^12^1421^0.4938^0.2178^2^Ferocious Grizzled Bear^3169:1:1,3173:1:1,3253:1:1^
@@ -12,13 +12,32 @@ GoldScout-export 6^ynljas7vx3ur^1
 1971^1^0^13^13^1421^0.5177^0.1394^1^Ivar the Foul^3621:1:1^
 1972^1^0^15^15^1421^0.5813^0.4484^1^Grimson the Pale^3634:1:1^
 1983^1^0^14^14^1421^0.4575^0.2079^1^Nightlash^3622:1:1^
+3197^14^0^9^10^1411^0.5278^0.0867^14^Burning Blade Fanatic^117:3:3,159:1:1,1431:1:1,2212:1:1,2589:4:7,14544:1:1,15008:1:1^
+3198^8^0^10^11^1411^0.5289^0.0873^8^Burning Blade Apprentice^117:2:2,159:1:1,2589:2:3^
+3204^1^0^14^14^1411^0.5188^0.0957^1^Gazz'uz^4903:1:1^
+8996^8^0^10^14^1411^0.5286^0.0870^8^Voidwalker Minion^^
+11322^10^0^0^0^0^0.0000^0.0000^0^^1509:1:1,2287:1:1,2589:7:20,14110:1:1^
+11323^9^0^0^0^0^0.0000^0.0000^0^^858:1:1,1498:1:1,1514:1:1,2589:3:5,3374:1:1,4577:1:1^
+11324^5^0^0^0^0^0.0000^0.0000^0^^818:1:1,2287:2:2,2589:2:5,14395:1:1,14396:1:1^
+11518^1^0^0^0^0^0.0000^0.0000^0^^1817:1:1,14150:1:1,252775:1:1^
+11520^1^0^0^0^0^0.0000^0.0000^0^^14149:1:1,14540:1:1,251340:1:1^
 277882^1^0^12^13^1421^0.4211^0.1813^1^Foothills Duskbat^6293:1:1^
+@i^117^Tough Jerky
+@i^159^Refreshing Spring Water
+@i^818^Tigerseye
+@i^858^Lesser Healing Potion
 @i^955^Scroll of Intellect
 @i^1179^Ice Cold Milk
+@i^1431^Patchwork Pants
 @i^1475^Small Venom Sac
 @i^1497^Calico Cloak
+@i^1498^Calico Gloves
+@i^1509^Warped Leather Vest
 @i^1513^Old Greatsword
+@i^1514^Rusty Warhammer
 @i^1516^Worn Hatchet
+@i^1817^Stock Shortsword
+@i^2212^Cracked Buckler
 @i^2287^Haunch of Meat
 @i^2455^Minor Mana Potion
 @i^2589^Linen Cloth
@@ -34,22 +53,44 @@ GoldScout-export 6^ynljas7vx3ur^1
 @i^3174^Spider Ichor
 @i^3253^Grizzled Bear Heart
 @i^3254^Skittering Blood
+@i^3374^Calico Belt
 @i^3621^Ivar's Head
 @i^3622^Essence of Nightlash
 @i^3634^Head of Grimson
 @i^4577^Compact Shotgun
+@i^4903^Eye of Burning Shadow
 @i^5465^Small Spider Leg
 @i^5635^Sharp Claw
 @i^6293^Dried Bat Blood
 @i^6537^Willow Boots of the Owl
 @i^6555^Bard's Cloak
 @i^9742^Simple Cord
+@i^14110^Native Sandals
+@i^14149^Subterranean Cape
+@i^14150^Robe of Evocation
+@i^14395^Spells of Shadow
+@i^14396^Incantations from the Nether
+@i^14540^Taragaman the Hungerer's Heart
+@i^14544^Lieutenant's Insignia
+@i^15008^Primal Mitts
+@i^251340^Plans: Veteran's Chain Shirt
+@i^252775^Pattern: Stormrider's Leather Armor
+@q^117^1:0:0
+@q^159^1:0:0
+@q^818^2:7:1
+@q^858^1:0:0
 @q^955^1:0:0
 @q^1179^1:0:0
+@q^1431^0:4:0
 @q^1475^1:7:1
 @q^1497^0:4:0
+@q^1498^0:4:0
+@q^1509^0:4:0
 @q^1513^0:2:0
+@q^1514^0:2:0
 @q^1516^0:2:0
+@q^1817^0:2:0
+@q^2212^0:4:0
 @q^2287^1:0:0
 @q^2455^1:0:0
 @q^2589^1:7:1
@@ -65,16 +106,29 @@ GoldScout-export 6^ynljas7vx3ur^1
 @q^3174^1:7:1
 @q^3253^1:12:0
 @q^3254^1:12:0
+@q^3374^0:4:0
 @q^3621^1:12:0
 @q^3622^1:12:0
 @q^3634^1:12:0
 @q^4577^2:2:0
+@q^4903^1:12:0
 @q^5465^1:7:1
 @q^5635^1:7:1
 @q^6293^0:15:0
 @q^6537^2:4:0
 @q^6555^1:4:0
 @q^9742^1:4:0
+@q^14110^1:4:0
+@q^14149^3:4:0
+@q^14150^3:4:0
+@q^14395^1:12:0
+@q^14396^1:12:0
+@q^14540^1:12:0
+@q^14544^1:12:0
+@q^15008^1:4:0
+@q^251340^3:9:0
+@q^252775^3:9:0
+@m^1411^Durotar
 @m^1421^Silverpine Forest
 @c^4357^
 @c^4358^
@@ -360,5 +414,9 @@ GoldScout-export 6^ynljas7vx3ur^1
 @a^1971^50:1
 @a^1972^171:1
 @a^1983^89:1
+@a^3197^30:13,50:1
+@a^3198^30:7,50:1
+@a^3204^30:1
+@a^8996^30:8
 @a^277882^68:1
 @l^0^enUS

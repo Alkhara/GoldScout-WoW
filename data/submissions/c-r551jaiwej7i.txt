@@ -1,4 +1,4 @@
-GoldScout-export 6^r551jaiwej7i^29
+GoldScout-export 6^r551jaiwej7i^30
 114^1^0^14^15^1436^0.3561^0.5098^1^Harvest Watcher^732:1:1,814:1:1,4361:1:1^
 1172^4^0^10^11^1432^0.3996^0.2301^4^Tunnel Rat Vermin^2455:1:1,2589:1:2^
 1186^1^0^11^11^1432^0.4001^0.3276^1^Elder Black Bear^3169:1:1,4577:1:1^
@@ -116,12 +116,14 @@ GoldScout-export 6^r551jaiwej7i^29
 3467^2^0^16^16^1413^0.6358^0.4889^2^Baron Longshore^414:1:1,5084:2:2,5498:1:1^
 3471^2^0^16^16^1413^0.5295^0.1062^2^Tinkerer Sniggles^5089:2:2^
 3475^2^0^16^16^1413^0.5585^0.1710^2^Echeyakee^5100:2:2,5135:1:1^
-3988^2^0^19^20^1442^0.6652^0.4567^2^Venture Co. Operator^^
-3989^2^0^18^19^1442^0.6645^0.4586^2^Venture Co. Logger^2589:1:1^
+3988^6^0^19^20^1442^0.6393^0.5106^6^Venture Co. Operator^1794:1:1,2589:2:6,5734:1:1^
+3989^17^0^18^19^1442^0.6563^0.5435^17^Venture Co. Logger^858:2:2,1210:1:1,1745:1:1,1788:1:1,2287:1:1,2589:2:2,2592:4:4,2781:1:1^
+3991^2^0^19^20^1442^0.6573^0.5683^2^Venture Co. Deforester^^
 3992^5^0^20^21^1442^0.6386^0.3967^5^Venture Co. Engineer^814:1:1,2589:2:3,4359:1:2^
 3993^3^0^21^22^1442^0.6348^0.4011^3^Venture Co. Machine Smith^1802:1:1,2592:1:1,4377:1:1^
-4006^1^0^19^19^1442^0.6908^0.4080^1^Deepmoss Webspinner^3182:1:1^
-4007^3^0^17^18^1442^0.5389^0.5316^3^Deepmoss Venomspitter^1081:1:1,3174:2:2,14366:1:1,14367:1:1^
+4005^5^0^16^17^1442^0.5880^0.7967^5^Deepmoss Creeper^1081:4:4,1475:1:1,3174:1:1,3931:1:1^
+4006^2^0^19^20^1442^0.6137^0.5632^2^Deepmoss Webspinner^3174:1:1,3182:1:1^
+4007^10^0^17^18^1442^0.5602^0.6365^10^Deepmoss Venomspitter^1081:2:2,3174:8:8,3182:1:1,3931:2:2,14366:1:1,14367:1:1^
 4070^4^0^20^21^1442^0.6403^0.3937^4^Venture Co. Builder^2589:2:3^
 4127^9^0^15^16^1413^0.5151^0.2623^9^Hecklefang Hyena^3299:1:1,3301:5:5,5635:2:2,248703:1:1^
 4202^1^0^27^27^1442^0.6284^0.4070^1^Gerenzo Wrenchwhistle^4306:1:2,5736:1:1^
@@ -143,6 +145,12 @@ GoldScout-export 6^r551jaiwej7i^29
 11518^1^0^0^0^0^0.0000^0.0000^0^^14151:1:1^
 11519^1^0^0^0^0^0.0000^0.0000^0^^2589:1:3,273003:1:1^
 11520^1^0^0^0^0^0.0000^0.0000^0^^14149:1:1,14540:1:1^
+11858^3^0^18^18^1442^0.7379^0.8597^3^Grundig Darkcloud^2592:1:1,3770:1:1^
+11910^15^0^14^15^1442^0.8151^0.8968^15^Grimtotem Ruffian^1179:1:1,1735:1:1,2589:10:19,2778:1:1^
+11911^6^0^14^15^1442^0.8182^0.8921^6^Grimtotem Mercenary^2589:2:3^
+11912^9^0^15^15^1442^0.7465^0.8685^9^Grimtotem Brute^2214:1:1,2589:1:3^
+11913^6^0^15^16^1442^0.7424^0.8667^6^Grimtotem Sorcerer^1813:1:1,2589:2:5^
+11921^1^0^21^21^1442^0.5427^0.7186^1^Besseleth^3174:1:1,16192:1:1^
 12433^1^0^15^15^1421^0.3561^0.0861^1^Krethis Shadowspinner^6558:1:1^
 259433^2^0^10^11^1420^0.1397^0.6468^2^Tarnished Zealot^774:1:1,2589:1:1^
 259434^1^0^10^10^1420^0.1311^0.6585^1^Tarnished Drudge^8178:1:1^
@@ -223,6 +231,7 @@ GoldScout-export 6^r551jaiwej7i^29
 @i^1515^Rough Wooden Staff
 @i^1516^Worn Hatchet
 @i^1734^Worn Mail Gloves
+@i^1735^Worn Mail Pants
 @i^1737^Worn Mail Vest
 @i^1738^Laced Mail Belt
 @i^1744^Laced Mail Shoulderpads
@@ -230,10 +239,12 @@ GoldScout-export 6^r551jaiwej7i^29
 @i^1766^Canvas Cloak
 @i^1769^Canvas Shoulderpads
 @i^1787^Patched Leather Belt
+@i^1788^Patched Leather Boots
 @i^1789^Patched Leather Bracers
 @i^1794^Patched Leather Jerkin
 @i^1802^Rawhide Tunic
 @i^1812^Short-handled Battle Axe
+@i^1813^Chipped Quarterstaff
 @i^1814^Battered Mallet
 @i^1815^Ornamental Mace
 @i^1816^Unbalanced Axe
@@ -271,6 +282,7 @@ GoldScout-export 6^r551jaiwej7i^29
 @i^2773^Cracked Shortbow
 @i^2777^Feeble Shortbow
 @i^2778^Cheap Blunderbuss
+@i^2781^Dirty Blunderbuss
 @i^2940^Bloody Bear Paw
 @i^2965^Warrior's Tunic
 @i^2968^Warrior's Gloves
@@ -312,6 +324,8 @@ GoldScout-export 6^r551jaiwej7i^29
 @i^3669^Gelatinous Goo
 @i^3670^Large Slimy Bone
 @i^3676^Slimy Ichor
+@i^3770^Mutton Chop
+@i^3931^Poisoned Spider Fang
 @i^4306^Silk Cloth
 @i^4346^Pattern: Heavy Woolen Cloak
 @i^4359^Handful of Copper Bolts
@@ -393,6 +407,7 @@ GoldScout-export 6^r551jaiwej7i^29
 @i^5523^Small Barnacled Clam
 @i^5573^Green Leather Bag
 @i^5635^Sharp Claw
+@i^5734^Super Reaper 6000 Blueprints
 @i^5736^Gerenzo's Mechanical Arm
 @i^5786^Pattern: Murloc Scale Belt
 @i^6269^Pioneer Trousers of the Monkey
@@ -453,6 +468,7 @@ GoldScout-export 6^r551jaiwej7i^29
 @i^15494^Bloodspattered Shield of the Defender
 @i^15495^Bloodspattered Wristbands of the Owl
 @i^15945^Runic Stave
+@i^16192^Besseleth's Fang
 @i^17056^Light Feather
 @i^211780^Scroll: KWYJIBO
 @i^211785^Scroll: CWAL
@@ -540,6 +556,7 @@ GoldScout-export 6^r551jaiwej7i^29
 @q^1515^0:2:0
 @q^1516^0:2:0
 @q^1734^0:4:0
+@q^1735^0:4:0
 @q^1737^0:4:0
 @q^1738^0:4:0
 @q^1744^0:4:0
@@ -547,10 +564,12 @@ GoldScout-export 6^r551jaiwej7i^29
 @q^1766^0:4:0
 @q^1769^0:4:0
 @q^1787^0:4:0
+@q^1788^0:4:0
 @q^1789^0:4:0
 @q^1794^0:4:0
 @q^1802^0:4:0
 @q^1812^0:2:0
+@q^1813^0:2:0
 @q^1814^0:2:0
 @q^1815^0:2:0
 @q^1816^0:2:0
@@ -588,6 +607,7 @@ GoldScout-export 6^r551jaiwej7i^29
 @q^2773^0:2:0
 @q^2777^0:2:0
 @q^2778^0:2:0
+@q^2781^0:2:0
 @q^2940^0:15:0
 @q^2965^2:4:0
 @q^2968^1:4:0
@@ -629,6 +649,8 @@ GoldScout-export 6^r551jaiwej7i^29
 @q^3669^0:15:0
 @q^3670^0:15:0
 @q^3676^0:15:0
+@q^3770^1:0:0
+@q^3931^0:15:0
 @q^4306^1:7:1
 @q^4346^2:9:0
 @q^4359^1:7:1
@@ -710,6 +732,7 @@ GoldScout-export 6^r551jaiwej7i^29
 @q^5523^1:7:0
 @q^5573^1:1:0
 @q^5635^1:7:1
+@q^5734^1:12:0
 @q^5736^1:12:0
 @q^5786^1:9:0
 @q^6269^2:4:0
@@ -770,6 +793,7 @@ GoldScout-export 6^r551jaiwej7i^29
 @q^15494^2:4:0
 @q^15495^2:4:0
 @q^15945^2:4:0
+@q^16192^1:12:0
 @q^17056^1:15:1
 @q^211780^1:0:0
 @q^211785^1:0:0
@@ -1997,12 +2021,14 @@ GoldScout-export 6^r551jaiwej7i^29
 @a^3467^192:2
 @a^3471^50:2
 @a^3475^71:2
-@a^3988^193:2
-@a^3989^193:2
+@a^3988^193:2,212:4
+@a^3989^193:2,212:3,213:2,232:3,233:7
+@a^3991^232:1,233:1
 @a^3992^152:3,172:2
 @a^3993^152:1,172:2
-@a^4006^173:1
-@a^4007^189:1,210:1,252:1
+@a^4005^310:3,333:1,353:1
+@a^4006^173:1,290:1
+@a^4007^189:1,210:1,232:2,251:1,252:1,290:3,310:1
 @a^4070^152:3,172:1
 @a^4127^30:1,50:2,88:2,112:1,169:1,171:1,190:1
 @a^4202^172:1
@@ -2013,6 +2039,12 @@ GoldScout-export 6^r551jaiwej7i^29
 @a^5836^31:1
 @a^5865^69:1
 @a^9336^11:1
+@a^11858^354:3
+@a^11910^356:6,375:2,376:6,396:1
+@a^11911^356:4,376:2
+@a^11912^334:1,335:1,354:5,375:1,376:1
+@a^11913^354:5,375:1
+@a^11921^290:1
 @a^12433^27:1
 @a^259433^242:2
 @a^259434^262:1

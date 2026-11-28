@@ -1,17 +1,26 @@
-GoldScout-export 9^9d90iqjtch4s^4
+GoldScout-export 9^9d90iqjtch4s^8
+213^1^0^19^19^1431^0.7982^0.2021^1^Starving Dire Wolf^893:1:1,1015:1:1^
+569^1^0^21^21^1431^0.7528^0.2290^1^Green Recluse^2251:1:1^
 1417^6^0^21^22^1437^0.0996^0.5077^6^Young Wetlands Crocolisk^770:2:2,3397:2:2,3667:3:3^
 @i^770^Pointy Crocolisk Tooth
+@i^893^Dire Wolf Fang
+@i^1015^Lean Wolf Flank
+@i^2251^Gooey Spider Leg
 @i^3397^Young Crocolisk Skin
 @i^3667^Tender Crocolisk Meat
 @i^6289^Raw Longjaw Mud Snapper
 @i^6291^Raw Brilliant Smallfish
 @i^6308^Raw Bristle Whisker Catfish
 @q^770^0:15:0
+@q^893^0:15:0
+@q^1015^1:7:1
+@q^2251^1:7:1
 @q^3397^1:12:0
 @q^3667^1:7:1
 @q^6289^1:7:1
 @q^6291^1:7:1
 @q^6308^1:7:1
+@m^1431^Duskwood
 @m^1437^Wetlands
 @m^1455^Ironforge
 @c^724^
@@ -227,7 +236,11 @@ GoldScout-export 9^9d90iqjtch4s^4
 @c^279985^
 @c^279987^
 @c^286152^
+@a^213^95:1
+@a^569^95:1
 @a^1417^181:1,201:3,202:2
+@t^569^1:46
 @t^1417^3:459
+@f^1431^0^9^18^6289:5:5,6291:4:4^58:9
 @f^1455^0^12^6^6289:8:8,6291:1:1,6308:3:3^49:12
 @l^0^enUS
