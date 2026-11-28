@@ -1,11 +1,13 @@
-GoldScout-export 9^9b7ms4y3w0ya^25
+GoldScout-export 9^9b7ms4y3w0ya^26
 92^5^0^39^40^1418^0.4426^0.8393^5^Elémentaire de roche^4553:4:4,4784:3:3,7067:1:1,7912:1:2,8150:1:1^
 440^1^0^19^20^1433^0.3216^0.4490^1^Grunt rochenoire^2287:1:1,2592:1:2^
 485^2^0^20^20^1433^0.3219^0.4476^2^Estafette rochenoire^1770:1:1,2592:1:2^
 742^1^0^42^42^1435^0.6461^0.6238^1^Wyrmide vert^^
-1184^1^0^14^14^1432^0.4797^0.7052^1^Rôdeuse des falaises^5465:1:1^
+1184^2^0^13^14^1432^0.5517^0.6314^2^Rôdeuse des falaises^3167:1:1,5465:2:3^
 1186^1^0^11^11^1432^0.4178^0.5116^1^Ancien ours noir^3169:1:1^
 1188^1^0^14^14^1432^0.4373^0.5677^1^Vieil ours noir^3173:1:1^
+1191^1^0^14^14^1432^0.6077^0.5769^1^Sanglier des montagnes galeux^769:1:2,2677:1:1,3172:1:1^
+1693^1^0^14^14^1432^0.5871^0.5852^1^Crocilisque du loch^3181:1:1,3401:1:1,3643:1:1^
 2164^4^0^13^13^1439^0.3778^0.7041^4^Ours des chardons enragé^3169:2:2,3170:2:2,3173:2:2,11406:1:1^
 2165^1^0^16^16^1439^0.3707^0.8425^1^Vieil ours des chardons^3169:1:1,3173:1:1^
 2167^2^0^12^12^1439^0.3909^0.5487^2^Guide Noirbois^2589:1:2^
@@ -61,7 +63,7 @@ GoldScout-export 9^9b7ms4y3w0ya^25
 4830^1^0^0^0^0^0.0000^0.0000^0^^2608:1:1,6904:1:1^
 4831^1^0^0^0^0^0.0000^0.0000^0^^1802:1:1,5524:1:1,11121:1:1,17058:1:1^
 4832^1^0^0^0^0^0.0000^0.0000^0^^1825:1:1,5881:1:1,6903:1:1^
-4846^1^0^36^36^1418^0.4357^0.1165^1^Terrassier Ombreforge^4306:1:4^
+4846^2^0^35^36^1418^0.4555^0.1119^2^Terrassier Ombreforge^4306:1:4,7666:1:1^
 4887^1^0^0^0^0^0.0000^0.0000^0^^3712:1:1,4555:1:1,273839:1:1^
 5254^1^0^43^43^1444^0.4820^0.4491^1^Mystique Griffebois^^
 5287^1^0^43^43^1444^0.5542^0.5014^1^Hurleur Longues-dents^12208:1:1^
@@ -162,6 +164,7 @@ GoldScout-export 9^9b7ms4y3w0ya^25
 270664^4^0^37^38^2548^0.3887^0.6297^4^Crache-toile venimeux^4337:2:2,4585:3:3,248692:1:1^
 272228^2^0^36^37^2548^0.5535^0.7473^2^Factionnaire de la moisson^4306:2:3^
 @i^730^Oeil de murloc
+@i^769^Morceau de viande de sanglier
 @i^770^Croc pointu de crocilisque
 @i^864^Epée longue des chevaliers du loup
 @i^929^Potion de soins
@@ -188,16 +191,22 @@ GoldScout-export 9^9b7ms4y3w0ya^25
 @i^2608^Ambre gris de battrodon
 @i^2674^Chair de clampant
 @i^2675^Pince de clampant
+@i^2677^Côtes de sanglier
 @i^3010^Sable fin
+@i^3167^Poil d'araignée épais
 @i^3169^Dent d'ours abîmée
 @i^3170^Grand croc d'ours
+@i^3172^Tripes de sanglier
 @i^3173^Viande d'ours
+@i^3181^Viande partiellement digérée
 @i^3187^Kris sacrificiel d'endurance
 @i^3381^Brassards à couture croisée
 @i^3385^Potion de mana inférieure
+@i^3401^Ecaille de crocilisque grossière
 @i^3402^Touffe de fourrure douce
 @i^3403^Défense de sanglier en ivoire
 @i^3404^Aile de busard
+@i^3643^Brassards de lieur de sort
 @i^3671^Crâne pourrissant
 @i^3712^Viande de tortue
 @i^3731^Viande de lion
@@ -271,6 +280,7 @@ GoldScout-export 9^9b7ms4y3w0ya^25
 @i^7074^Griffes émoussées
 @i^7431^Pantalon du crépuscule de la baleine
 @i^7536^Pavois de champion de héraut
+@i^7666^Collier brisé
 @i^7846^Croc de coyote des rochers
 @i^7847^Gésier de busard
 @i^7909^Aigue-marine
@@ -376,6 +386,7 @@ GoldScout-export 9^9b7ms4y3w0ya^25
 @i^281676^Protège-épaules de recrue de Rog'mar
 @i^286428^Bague du boss
 @q^730^1:7:1
+@q^769^1:7:1
 @q^770^0:15:0
 @q^864^2:2:0
 @q^929^1:0:0
@@ -402,16 +413,22 @@ GoldScout-export 9^9b7ms4y3w0ya^25
 @q^2608^0:15:0
 @q^2674^1:7:1
 @q^2675^1:7:1
+@q^2677^1:7:1
 @q^3010^0:15:0
+@q^3167^0:15:0
 @q^3169^0:15:0
 @q^3170^0:15:0
+@q^3172^1:7:1
 @q^3173^1:7:1
+@q^3181^0:15:0
 @q^3187^2:2:0
 @q^3381^0:4:0
 @q^3385^1:0:0
+@q^3401^0:15:0
 @q^3402^0:15:0
 @q^3403^0:15:0
 @q^3404^1:7:1
+@q^3643^1:4:0
 @q^3671^0:15:0
 @q^3712^1:7:1
 @q^3731^1:7:1
@@ -485,6 +502,7 @@ GoldScout-export 9^9b7ms4y3w0ya^25
 @q^7074^0:15:0
 @q^7431^2:4:0
 @q^7536^2:4:0
+@q^7666^2:12:0
 @q^7846^1:12:0
 @q^7847^1:12:0
 @q^7909^2:7:1
@@ -1327,9 +1345,11 @@ GoldScout-export 9^9b7ms4y3w0ya^25
 @a^440^166:1
 @a^485^166:2
 @a^742^252:1
-@a^1184^289:1
+@a^1184^232:1,289:1
 @a^1186^208:1
 @a^1188^228:1
+@a^1191^232:1
+@a^1693^231:1
 @a^2164^267:3,307:1
 @a^2165^327:1
 @a^2167^207:1,227:1
@@ -1364,7 +1384,7 @@ GoldScout-export 9^9b7ms4y3w0ya^25
 @a^4400^232:4,251:2
 @a^4402^191:2
 @a^4648^347:1
-@a^4846^48:1
+@a^4846^48:1,49:1
 @a^5254^169:1
 @a^5287^211:1
 @a^6733^172:1,173:2,192:1
@@ -1446,8 +1466,9 @@ GoldScout-export 9^9b7ms4y3w0ya^25
 @a^272228^290:1,311:1
 @t^92^5:243
 @t^485^2:7
-@t^1184^1:87
+@t^1184^2:113
 @t^1188^1:37
+@t^1191^1:31
 @t^2164^4:355
 @t^2165^1:54
 @t^2167^1:66

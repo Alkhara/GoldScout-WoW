@@ -1,4 +1,4 @@
-GoldScout-export 9^mtml8njsvulg^11
+GoldScout-export 9^mtml8njsvulg^13
 5277^1^0^0^0^0^0.0000^0.0000^0^^^
 5280^1^0^0^0^0^0.0000^0.0000^0^^^
 5283^8^0^0^0^0^0.0000^0.0000^0^^^
@@ -74,11 +74,13 @@ GoldScout-export 9^mtml8njsvulg^11
 10996^1^0^59^59^1423^0.6111^0.5875^1^Fallen Hero^^
 11121^1^0^0^0^0^0.0000^0.0000^0^^276434:1:1^
 11792^2^0^0^0^0^0.0000^0.0000^0^^4306:1:4^
-12201^1^0^0^0^0^0.0000^0.0000^0^^17711:1:1,17713:1:1^
+12201^3^0^0^0^0^0.0000^0.0000^0^^7912:2:3,8150:1:1,17707:1:1,17710:1:1,17711:1:1,17713:2:2,17714:1:1,254100:1:1^
 12221^2^0^0^0^0^0.0000^0.0000^0^^20763:1:1^
 12225^1^0^0^0^0^0.0000^0.0000^0^^17739:1:1^
 12236^1^0^0^0^0^0.0000^0.0000^0^^17703:1:1,17754:1:1^
 13282^1^0^0^0^0^0.0000^0.0000^0^^4791:1:2,17702:1:1,17746:1:1^
+13596^2^0^0^0^0^0.0000^0.0000^0^^770:2:2,17730:1:1,17732:1:1,254100:1:1^
+13601^2^0^0^0^0^0.0000^0.0000^0^^4338:2:8,17717:1:1,17718:1:1,251406:1:1,254106:1:1^
 247207^1^0^0^0^0^0.0000^0.0000^0^^280066:1:1^
 247234^1^0^0^0^0^0.0000^0.0000^0^^272027:1:1,280075:1:1^
 247237^3^0^0^0^0^0.0000^0.0000^0^^274964:3:3^
@@ -104,12 +106,14 @@ GoldScout-export 9^mtml8njsvulg^11
 272318^1^0^0^0^1414^0.0000^0.0000^0^^3857:1:1^
 272561^1^0^0^0^1414^0.0000^0.0000^0^^280032:1:1^
 280424^1^0^57^57^1447^0.3668^0.2947^1^Blackmaw Headhunter^274964:1:1^
+@i^770^Pointy Crocolisk Tooth
 @i^1074^Hard Spider Leg Tip
 @i^3857^Coal
 @i^3949^Twill Pants
 @i^3987^Deflecting Tower
 @i^3990^Crested Buckler
 @i^4306^Silk Cloth
+@i^4338^Mageweave Cloth
 @i^4460^Ripped Wing Webbing
 @i^4552^Smooth Stone Chip
 @i^4554^Shiny Polished Stone
@@ -243,8 +247,15 @@ GoldScout-export 9^mtml8njsvulg^11
 @i^17683^Book: Gift of the Wild II
 @i^17702^Celebrian Rod
 @i^17703^Celebrian Diamond
+@i^17707^Gemshard Heart
+@i^17710^Charstone Dirk
 @i^17711^Elemental Rockridge Leggings
 @i^17713^Blackstone Ring
+@i^17714^Bracers of the Stone Princess
+@i^17717^Megashot Rifle
+@i^17718^Gizlock's Hypertech Buckler
+@i^17730^Gatorbite Axe
+@i^17732^Rotgrip Mantle
 @i^17739^Grovekeeper's Drape
 @i^17746^Noxxion's Shackles
 @i^17754^Infernal Trickster Leggings
@@ -272,6 +283,9 @@ GoldScout-export 9^mtml8njsvulg^11
 @i^248713^Waylaid Crate: Artisan Parts
 @i^249520^Formula: Molten Heart of the Mountain
 @i^249695^Fel-Tainted Flesh
+@i^251406^Plans: Prefect's Gloves
+@i^254100^Pattern: Fiery Gloves
+@i^254106^Pattern: Radiant Gloves
 @i^262890^Sealed Artisan's Writ
 @i^264360^Diemetradon Meat
 @i^272026^Ysera's Tear
@@ -294,12 +308,14 @@ GoldScout-export 9^mtml8njsvulg^11
 @i^280032^Bolt's Charged Eyeball
 @i^280066^Trousers of the Ebon Giant
 @i^280075^Bleak Eye Shoulderplates
+@q^770^0:15:0
 @q^1074^0:15:0
 @q^3857^1:7:1
 @q^3949^0:4:0
 @q^3987^0:4:0
 @q^3990^0:4:0
 @q^4306^1:7:1
+@q^4338^1:7:1
 @q^4460^0:15:0
 @q^4552^0:15:0
 @q^4554^0:15:0
@@ -433,8 +449,15 @@ GoldScout-export 9^mtml8njsvulg^11
 @q^17683^3:9:0
 @q^17702^1:12:0
 @q^17703^1:12:0
+@q^17707^3:4:0
+@q^17710^3:2:0
 @q^17711^3:4:0
 @q^17713^3:4:0
+@q^17714^3:4:0
+@q^17717^3:2:0
+@q^17718^3:4:0
+@q^17730^3:2:0
+@q^17732^3:4:0
 @q^17739^3:4:0
 @q^17746^3:4:0
 @q^17754^3:4:0
@@ -462,6 +485,9 @@ GoldScout-export 9^mtml8njsvulg^11
 @q^248713^2:0:1
 @q^249520^3:9:0
 @q^249695^1:12:0
+@q^251406^3:9:0
+@q^254100^3:9:0
+@q^254106^3:9:0
 @q^262890^3:0:0
 @q^264360^1:12:0
 @q^272026^3:12:0

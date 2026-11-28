@@ -1,4 +1,4 @@
-GoldScout-export 9^8lznqwdll0m0^42
+GoldScout-export 9^8lznqwdll0m0^43
 589^1^0^15^15^1436^0.4202^0.6962^1^Defias Pillager^2589:1:3^
 590^2^0^13^14^1436^0.4197^0.6959^2^Defias Looter^2589:1:1^
 678^3^0^43^44^1434^0.4986^0.2808^3^Mosh'Ogg Mauler^4599:1:1,213545:1:1^
@@ -156,6 +156,15 @@ GoldScout-export 9^8lznqwdll0m0^42
 5650^6^0^0^0^0^0.0000^0.0000^0^^1520:1:1,9523:1:1^
 5756^3^0^0^0^0^0.0000^0.0000^0^^6444:2:2,6445:1:1,14124:1:1,211784:1:1^
 5761^1^0^0^0^0^0.0000^0.0000^0^^^
+5839^8^0^43^44^1427^0.6341^0.6036^8^Dark Iron Geologist^4306:3:4,4338:2:2,4601:1:1^
+5840^9^0^46^47^1427^0.3975^0.4956^9^Dark Iron Steamsmith^4020:1:1,4338:5:11,4601:1:1,11818:1:1,18959:1:1^
+5844^3^0^45^46^1427^0.3730^0.4867^3^Dark Iron Slaver^4338:1:3^
+5850^2^0^47^47^1427^0.4299^0.3668^2^Blazing Elemental^4787:1:1,10509:2:2^
+5852^2^0^48^49^1427^0.2894^0.7020^2^Inferno Elemental^3857:1:1,7077:1:1,10509:1:1^
+5853^1^0^46^47^1427^0.6375^0.5919^1^Tempered War Golem^^
+5854^4^0^48^49^1427^0.3441^0.5024^4^Heavy War Golem^4552:2:2,7912:1:2,8150:1:1,10511:3:3^
+5855^5^0^46^48^1427^0.3077^0.6687^5^Magma Elemental^3857:1:1,4787:3:3,7068:1:1,7077:1:1,10509:1:1,10511:1:1^
+5858^3^0^47^49^1427^0.3022^0.6804^3^Searing Lava Spider^1074:2:2,4585:1:1,12205:2:2^
 5979^1^0^46^47^1419^0.4696^0.1819^1^Wretched Lost One^^
 5981^1^0^51^51^1419^0.5289^0.3716^1^Portal Seeker^^
 5982^50^0^46^48^1419^0.5239^0.3190^50^Black Slayer^1464:23:23,3404:18:18,4089:1:1,5117:3:3,5829:8:8,8168:37:37,8396:14:14,9941:1:1,11417:2:2,11418:12:12,12037:19:19,12207:15:15,248713:1:1^
@@ -209,6 +218,7 @@ GoldScout-export 9^8lznqwdll0m0^42
 8120^1^0^0^0^0^0.0000^0.0000^0^^4092:1:1,11386:1:1^
 8207^1^0^46^46^1446^0.4745^0.3467^1^Greater Firebird^1464:1:1,3404:1:1,9959:1:1,11418:1:1^
 8636^1^0^50^50^1425^0.4949^0.6833^1^Morta'gya the Keeper^^
+8637^3^0^44^45^1427^0.6315^0.5888^3^Dark Iron Watchman^248710:1:1^
 8675^1^0^50^51^1419^0.5058^0.3531^1^Felbeast^4584:1:1^
 8996^11^0^42^43^1446^0.5976^0.3578^11^Voidwalker Minion^^
 9396^1^0^41^43^1446^0.5150^0.3263^1^Ground Pounder^^
@@ -328,6 +338,7 @@ GoldScout-export 9^8lznqwdll0m0^42
 @i^3799^Interlaced Vest
 @i^3814^Double Mail Shoulderpads
 @i^3820^Stranglekelp
+@i^3857^Coal
 @i^3864^Citrine
 @i^3927^Fine Aged Cheddar
 @i^3928^Superior Healing Potion
@@ -388,6 +399,7 @@ GoldScout-export 9^8lznqwdll0m0^42
 @i^4636^Strong Iron Lockbox
 @i^4638^Reinforced Steel Lockbox
 @i^4784^Lifeless Stone
+@i^4787^Burning Pitch
 @i^4791^Enchanted Water
 @i^5116^Long Tail Feather
 @i^5117^Vibrant Plume
@@ -412,8 +424,10 @@ GoldScout-export 9^8lznqwdll0m0^42
 @i^6470^Deviate Scale
 @i^6530^Nightcrawlers
 @i^6894^Whirlwind Heart
+@i^7068^Elemental Fire
 @i^7070^Elemental Water
 @i^7072^Naga Scale
+@i^7077^Heart of Fire
 @i^7079^Globe of Water
 @i^7909^Aquamarine
 @i^7910^Star Ruby
@@ -476,6 +490,8 @@ GoldScout-export 9^8lznqwdll0m0^42
 @i^10183^Swashbuckler's Boots of the Prophet
 @i^10286^Heart of the Wild
 @i^10411^Footpads of the Fang
+@i^10509^Heart of Flame
+@i^10511^Golem Oil
 @i^10593^Imperfect Draenethyst Fragment
 @i^10660^First Mosh'aru Tablet
 @i^10661^Second Mosh'aru Tablet
@@ -490,6 +506,7 @@ GoldScout-export 9^8lznqwdll0m0^42
 @i^11418^Hollow Wing Bone
 @i^11477^White Ravasaur Claw
 @i^11509^Ravasaur Pheromone Gland
+@i^11818^Grimesilt Outhouse Key
 @i^12032^Onyx Choker of Regeneration
 @i^12037^Mystery Meat
 @i^12184^Raptor Flesh
@@ -539,6 +556,7 @@ GoldScout-export 9^8lznqwdll0m0^42
 @i^18947^Rage Scar Yeti Hide
 @i^18956^Miniaturization Residue
 @i^18958^Water Elemental Core
+@i^18959^Smithing Tuyere
 @i^18961^Zukk'ash Carapace
 @i^18962^Stinglasher's Glands
 @i^19023^Katoom's Best Lure
@@ -672,6 +690,7 @@ GoldScout-export 9^8lznqwdll0m0^42
 @q^3799^0:4:0
 @q^3814^0:4:0
 @q^3820^1:7:1
+@q^3857^1:7:1
 @q^3864^2:7:1
 @q^3927^1:0:0
 @q^3928^1:0:0
@@ -732,6 +751,7 @@ GoldScout-export 9^8lznqwdll0m0^42
 @q^4636^2:15:0
 @q^4638^2:15:0
 @q^4784^0:15:0
+@q^4787^0:15:0
 @q^4791^1:0:0
 @q^5116^1:7:1
 @q^5117^1:12:0
@@ -756,8 +776,10 @@ GoldScout-export 9^8lznqwdll0m0^42
 @q^6470^1:7:1
 @q^6530^1:0:0
 @q^6894^1:12:0
+@q^7068^1:7:1
 @q^7070^1:7:1
 @q^7072^1:7:1
+@q^7077^1:7:1
 @q^7079^1:7:1
 @q^7909^2:7:1
 @q^7910^2:7:1
@@ -820,6 +842,8 @@ GoldScout-export 9^8lznqwdll0m0^42
 @q^10183^2:4:0
 @q^10286^1:7:1
 @q^10411^3:4:0
+@q^10509^1:12:0
+@q^10511^1:12:0
 @q^10593^2:12:0
 @q^10660^1:12:0
 @q^10661^1:12:0
@@ -834,6 +858,7 @@ GoldScout-export 9^8lznqwdll0m0^42
 @q^11418^0:15:0
 @q^11477^1:12:0
 @q^11509^1:12:0
+@q^11818^1:12:0
 @q^12032^2:4:0
 @q^12037^1:7:1
 @q^12184^1:7:1
@@ -883,6 +908,7 @@ GoldScout-export 9^8lznqwdll0m0^42
 @q^18947^1:12:0
 @q^18956^1:12:0
 @q^18958^1:12:0
+@q^18959^1:12:0
 @q^18961^1:12:0
 @q^18962^1:12:0
 @q^19023^1:12:0
@@ -962,6 +988,7 @@ GoldScout-export 9^8lznqwdll0m0^42
 @m^1419^Blasted Lands
 @m^1424^Hillsbrad Foothills
 @m^1425^The Hinterlands
+@m^1427^Searing Gorge
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
 @m^1436^Westfall
@@ -1818,6 +1845,15 @@ GoldScout-export 9^8lznqwdll0m0^42
 @a^5617^91:1,132:3,151:5,152:2
 @a^5618^91:6,92:5,132:2
 @a^5623^151:3,152:2
+@a^5839^232:3,252:5
+@a^5840^187:8,208:1
+@a^5844^186:2,208:1
+@a^5850^128:1,148:1
+@a^5852^245:1,305:1
+@a^5853^232:1
+@a^5854^186:1,187:2,246:1
+@a^5855^246:3,286:2
+@a^5858^265:1,266:1,285:1
 @a^5979^69:1
 @a^5981^150:1
 @a^5982^69:10,70:5,89:4,111:1,150:9,151:8,170:7,171:5,191:1
@@ -1851,6 +1887,7 @@ GoldScout-export 9^8lznqwdll0m0^42
 @a^8075^28:1
 @a^8207^129:1
 @a^8636^269:1
+@a^8637^232:3
 @a^8675^150:1
 @a^8996^91:1,132:3,151:5,152:2
 @a^9396^130:1
@@ -1869,6 +1906,14 @@ GoldScout-export 9^8lznqwdll0m0^42
 @a^270807^264:3,265:2
 @t^589^1:4
 @t^590^1:4
+@t^5839^8:676
+@t^5840^8:524
+@t^5844^3:432
+@t^5850^2:179
+@t^5852^2:236
+@t^5854^4:301
+@t^5855^5:506
+@t^5858^3:488
 @t^5979^1:54
 @t^5981^1:36
 @t^5982^48:4253
@@ -1881,6 +1926,7 @@ GoldScout-export 9^8lznqwdll0m0^42
 @t^5993^14:1187
 @t^6505^13:611
 @t^6506^6:511
+@t^8637^3:58
 @t^8675^1:110
 @t^9683^2:252
 @f^1434^0^5^225^6362:2:2,16969:1:1,21151:2:4,21228:1:1^265:5
