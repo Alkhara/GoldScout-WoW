@@ -1,4 +1,4 @@
-GoldScout-export 9^wyfmuls8sc8c^35
+GoldScout-export 9^wyfmuls8sc8c^36
 6^16^0^1^2^1429^0.5031^0.3691^16^Kobold Vermin^755:7:7,1364:1:1,1370:1:1,1378:1:1,2589:6:6,3365:3:3,4536:4:4,247834:1:1,247839:4:4^
 30^1^0^5^5^1429^0.3970^0.7649^1^Forest Spider^2590:1:1^
 36^31^0^11^12^1436^0.4952^0.3353^31^Harvest Golem^732:9:9,814:10:10,816:3:3,1274:11:11,1512:1:1,1515:1:1,4363:1:1,255007:9:9^
@@ -214,6 +214,18 @@ GoldScout-export 9^wyfmuls8sc8c^35
 4275^1^0^0^0^0^0.0000^0.0000^0^^6220:1:1^
 4278^1^0^0^0^0^0.0000^0.0000^0^^251347:1:1,273643:1:1^
 4279^1^0^0^0^0^0.0000^0.0000^0^^273645:1:1^
+4358^2^0^35^36^1445^0.5612^0.2131^2^Mirefin Puddlejumper^5785:1:1,5847:1:1,17057:1:1^
+4359^4^0^35^36^1445^0.5653^0.2124^4^Mirefin Murloc^3780:1:1,5785:1:1,5847:1:1,6362:2:4,17057:1:1,17058:2:2^
+4361^17^0^36^37^1445^0.5784^0.1602^17^Mirefin Muckdweller^5785:2:2,5847:3:3,6362:1:3,17057:6:6,17058:11:11^
+4362^23^0^36^37^1445^0.5715^0.1611^23^Mirefin Coastrunner^1708:1:1,4421:2:2,5785:4:4,5847:7:7,6362:1:2,17057:10:10,17058:3:3,213547:1:1^
+4363^1^0^37^38^1445^0.6271^0.1811^1^Mirefin Oracle^17058:1:1^
+4376^6^0^35^36^1445^0.3429^0.2184^6^Darkmist Spider^1074:1:1,4337:1:1,4585:3:3,5884:6:14,12205:1:1^
+4377^7^0^37^38^1445^0.3181^0.2200^7^Darkmist Lurker^4585:3:3,5884:6:11,12205:3:3^
+4378^3^0^36^37^1445^0.3445^0.2143^3^Darkmist Recluse^4585:1:1,5884:3:7^
+4379^6^0^38^39^1445^0.3148^0.2209^6^Darkmist Silkspinner^1074:2:2,4585:2:2,5637:1:1,5884:5:8,12205:2:2^
+4396^3^0^36^37^1445^0.6036^0.2325^3^Mudrock Tortoise^3712:2:2,4556:1:1,15144:1:1^
+4397^5^0^37^38^1445^0.6285^0.2926^5^Mudrock Spikeshell^3712:1:1,4555:4:4,5883:1:1,6362:1:2^
+4411^1^0^37^37^1445^0.6164^0.2680^1^Darkfang Lurker^1074:1:1,12205:1:1^
 4422^1^0^0^0^0^0.0000^0.0000^0^^274160:1:1^
 4424^1^0^0^0^0^0.0000^0.0000^0^^274158:1:1^
 4427^1^0^0^0^0^0.0000^0.0000^0^^2592:1:3^
@@ -438,6 +450,7 @@ GoldScout-export 9^wyfmuls8sc8c^35
 @i^1697^Keen Raptor Tooth
 @i^1705^Lesser Moonstone
 @i^1707^Stormwind Brie
+@i^1708^Sweet Nectar
 @i^1711^Scroll of Stamina II
 @i^1732^Worn Mail Bracers
 @i^1742^Laced Mail Gloves
@@ -573,6 +586,7 @@ GoldScout-export 9^wyfmuls8sc8c^35
 @i^3731^Lion Meat
 @i^3748^Feline Mantle
 @i^3770^Mutton Chop
+@i^3780^Long-barreled Musket
 @i^3781^Broad Claymore
 @i^3786^Shiny Dirk
 @i^3787^Stone Club
@@ -581,11 +595,13 @@ GoldScout-export 9^wyfmuls8sc8c^35
 @i^3857^Coal
 @i^3871^Plans: Golden Scale Shoulders
 @i^4306^Silk Cloth
+@i^4337^Thick Spider's Silk
 @i^4338^Mageweave Cloth
 @i^4361^Copper Tube
 @i^4363^Copper Modulator
 @i^4402^Small Flame Sac
 @i^4408^Schematic: Mechanical Squirrel
+@i^4421^Scroll of Protection III
 @i^4428^Spider Palp
 @i^4482^Sealed Folder
 @i^4503^Witherbark Tusk
@@ -595,8 +611,11 @@ GoldScout-export 9^wyfmuls8sc8c^35
 @i^4538^Snapvine Watermelon
 @i^4542^Moist Cornbread
 @i^4553^Jagged Piece of Stone
+@i^4555^Thick Scaly Tail
+@i^4556^Speckled Shell Fragment
 @i^4568^Grunt Axe of Healing
 @i^4576^Light Bow
+@i^4585^Dripping Spider Mandible
 @i^4603^Raw Spotted Yellowtail
 @i^4604^Forest Mushroom Cap
 @i^4605^Red-speckled Mushroom
@@ -644,10 +663,14 @@ GoldScout-export 9^wyfmuls8sc8c^35
 @i^5637^Large Fang
 @i^5741^Rock Chip
 @i^5784^Slimy Murloc Scale
+@i^5785^Thick Murloc Scale
 @i^5808^Pridewing Venom Sac
 @i^5825^Treshala's Pendant
+@i^5847^Mirefin Head
 @i^5879^Twilight Pendant
 @i^5881^Head of Kelris
+@i^5883^Forked Mudrock Tongue
+@i^5884^Unpopped Darkmist Eye
 @i^5952^Corrupted Brain Stem
 @i^5972^Pattern: Fine Leather Pants
 @i^6044^Plans: Iron Shield Spike
@@ -662,6 +685,7 @@ GoldScout-export 9^wyfmuls8sc8c^35
 @i^6358^Oily Blackmouth
 @i^6359^Firefin Snapper
 @i^6361^Raw Rainbow Fin Albacore
+@i^6362^Raw Rockscale Cod
 @i^6388^Glimmering Mail Pauldrons
 @i^6438^Dull Elemental Bracer
 @i^6439^Broken Binding Bracer
@@ -721,6 +745,7 @@ GoldScout-export 9^wyfmuls8sc8c^35
 @i^11407^Torn Bear Pelt
 @i^11968^Amber Hoop of the Channeler
 @i^11994^Coral Band of Stamina
+@i^12205^White Spider Meat
 @i^12220^Intact Elemental Bracer
 @i^12238^Darkshore Grouper
 @i^14123^Ritual Cape of Spirit
@@ -733,6 +758,7 @@ GoldScout-export 9^wyfmuls8sc8c^35
 @i^15005^Primal Bands
 @i^15114^Rigid Cape of Agility
 @i^15132^Cutthroat's Armguards of the Bandit
+@i^15144^Ghostwalker Rags of Power
 @i^15223^Jagged Star of Spirit
 @i^15224^Battlesmasher of the Whale
 @i^15230^Ridge Cleaver of Frost Protection
@@ -752,6 +778,7 @@ GoldScout-export 9^wyfmuls8sc8c^35
 @i^15537^Wicked Chain Cloak of the Bear
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
+@i^17058^Fish Oil
 @i^20709^Rumsey Rum Light
 @i^21071^Raw Sagefish
 @i^21113^Watertight Trunk
@@ -760,6 +787,7 @@ GoldScout-export 9^wyfmuls8sc8c^35
 @i^211785^Scroll: CWAL
 @i^211854^Scroll: OMIT KESA
 @i^211855^Scroll: STHENIC LUNATE
+@i^213547^Scroll: THAW WORDS
 @i^216483^Witherbark Mallet
 @i^247826^Croaky's Head
 @i^247834^Nibbled-On Book
@@ -912,6 +940,7 @@ GoldScout-export 9^wyfmuls8sc8c^35
 @q^1697^0:15:0
 @q^1705^2:7:1
 @q^1707^1:0:0
+@q^1708^1:0:0
 @q^1711^1:0:0
 @q^1732^0:4:0
 @q^1742^0:4:0
@@ -1047,6 +1076,7 @@ GoldScout-export 9^wyfmuls8sc8c^35
 @q^3731^1:7:1
 @q^3748^3:4:0
 @q^3770^1:0:0
+@q^3780^0:2:0
 @q^3781^0:2:0
 @q^3786^0:2:0
 @q^3787^0:2:0
@@ -1055,11 +1085,13 @@ GoldScout-export 9^wyfmuls8sc8c^35
 @q^3857^1:7:1
 @q^3871^3:9:0
 @q^4306^1:7:1
+@q^4337^1:7:1
 @q^4338^1:7:1
 @q^4361^1:7:1
 @q^4363^1:7:1
 @q^4402^1:7:1
 @q^4408^2:9:0
+@q^4421^1:0:0
 @q^4428^0:15:0
 @q^4482^1:12:0
 @q^4503^1:12:0
@@ -1069,8 +1101,11 @@ GoldScout-export 9^wyfmuls8sc8c^35
 @q^4538^1:0:0
 @q^4542^1:0:0
 @q^4553^0:15:0
+@q^4555^0:15:0
+@q^4556^0:15:0
 @q^4568^2:2:0
 @q^4576^2:2:0
+@q^4585^0:15:0
 @q^4603^1:7:1
 @q^4604^1:0:0
 @q^4605^1:0:0
@@ -1118,10 +1153,14 @@ GoldScout-export 9^wyfmuls8sc8c^35
 @q^5637^1:7:1
 @q^5741^0:15:0
 @q^5784^1:7:1
+@q^5785^1:7:1
 @q^5808^1:12:0
 @q^5825^1:12:0
+@q^5847^1:12:0
 @q^5879^1:12:0
 @q^5881^1:12:0
+@q^5883^1:12:0
+@q^5884^1:12:0
 @q^5952^1:12:0
 @q^5972^2:9:0
 @q^6044^2:9:0
@@ -1136,6 +1175,7 @@ GoldScout-export 9^wyfmuls8sc8c^35
 @q^6358^1:7:1
 @q^6359^1:7:1
 @q^6361^1:7:1
+@q^6362^1:7:1
 @q^6388^2:4:0
 @q^6438^0:15:0
 @q^6439^0:15:0
@@ -1195,6 +1235,7 @@ GoldScout-export 9^wyfmuls8sc8c^35
 @q^11407^1:12:0
 @q^11968^2:4:0
 @q^11994^2:4:0
+@q^12205^1:7:1
 @q^12220^1:12:0
 @q^12238^1:0:0
 @q^14123^2:4:0
@@ -1207,6 +1248,7 @@ GoldScout-export 9^wyfmuls8sc8c^35
 @q^15005^1:4:0
 @q^15114^2:4:0
 @q^15132^2:4:0
+@q^15144^2:4:0
 @q^15223^2:2:0
 @q^15224^2:2:0
 @q^15230^2:2:0
@@ -1226,6 +1268,7 @@ GoldScout-export 9^wyfmuls8sc8c^35
 @q^15537^2:4:0
 @q^17056^1:15:1
 @q^17057^1:15:0
+@q^17058^1:15:0
 @q^20709^1:0:0
 @q^21071^1:7:1
 @q^21113^1:15:0
@@ -1234,6 +1277,7 @@ GoldScout-export 9^wyfmuls8sc8c^35
 @q^211785^1:0:0
 @q^211854^1:0:0
 @q^211855^1:0:0
+@q^213547^1:0:0
 @q^216483^1:0:0
 @q^247826^1:12:0
 @q^247834^1:15:0
@@ -1846,6 +1890,18 @@ GoldScout-export 9^wyfmuls8sc8c^35
 @a^4026^245:4,246:1
 @a^4028^266:1
 @a^4030^246:1
+@a^4358^91:2
+@a^4359^91:4
+@a^4361^50:1,51:4,70:1,71:9,72:2
+@a^4362^70:4,71:18,72:1
+@a^4363^72:1
+@a^4376^86:6
+@a^4377^86:7
+@a^4378^86:3
+@a^4379^86:6
+@a^4396^50:1,72:1,152:1
+@a^4397^72:1,92:1,112:1,152:1,172:1
+@a^4411^112:1
 @a^4788^148:1
 @a^4789^128:1
 @a^4803^128:1

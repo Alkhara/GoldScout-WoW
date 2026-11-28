@@ -1,4 +1,4 @@
-GoldScout-export 9^bc8q9lt657eo^18
+GoldScout-export 9^bc8q9lt657eo^19
 117^2^0^11^12^1436^0.4906^0.1679^2^Riverpaw Gnoll^2589:1:1^
 199^1^0^10^11^1436^0.3649^0.2551^1^Young Fleshripper^555:1:1,729:1:1,6889:1:1,17056:1:1^
 550^1^0^15^15^1436^0.3915^0.4648^1^Defias Messenger^2589:1:3^
@@ -31,6 +31,8 @@ GoldScout-export 9^bc8q9lt657eo^18
 1397^5^0^8^9^1426^0.4134^0.4391^5^Frostmane Seer^117:1:1,118:1:1,2589:2:3,2676:2:2,2968:1:1,5767:1:1^
 1718^2^0^3^4^1426^0.3513^0.6857^2^Rockjaw Raider^^
 2244^7^0^21^22^1424^0.7756^0.4184^7^Syndicate Shadow Mage^422:1:1,1777:1:1,1797:1:1,2592:3:4,5620:5:5^
+2248^33^0^29^31^1424^0.4505^0.3056^33^Cave Yeti^1708:1:1,1758:1:1,3385:1:1,3771:1:1,4048:1:1,5637:1:1^
+2249^15^0^30^32^1424^0.4375^0.3023^15^Ferocious Yeti^1710:1:1,3771:2:2,3780:1:1^
 2260^8^0^21^22^1424^0.7956^0.4335^8^Syndicate Rogue^1775:1:1,2589:1:2,2592:2:3,4306:1:1,4697:1:1^
 2261^13^0^20^21^1424^0.7805^0.4194^13^Syndicate Watchman^422:1:1,929:1:1,1205:1:1,1799:1:1,2592:1:1,7608:1:1,248688:1:1^
 2265^4^0^24^25^1424^0.3173^0.4485^4^Hillsbrad Apprentice Blacksmith^1205:1:1,2589:1:1,2592:1:2,3692:1:1^
@@ -220,12 +222,15 @@ GoldScout-export 9^bc8q9lt657eo^18
 @i^1415^Carpenter's Mallet
 @i^1427^Patchwork Shoes
 @i^1485^Pitchfork
+@i^1708^Sweet Nectar
+@i^1710^Greater Healing Potion
 @i^1712^Scroll of Spirit II
 @i^1749^Linked Chain Cloak
 @i^1750^Linked Chain Gloves
 @i^1752^Linked Chain Shoulderpads
 @i^1754^Reinforced Chain Belt
 @i^1757^Reinforced Chain Cloak
+@i^1758^Reinforced Chain Gloves
 @i^1759^Reinforced Chain Pants
 @i^1772^Brocade Shoes
 @i^1774^Brocade Cloak
@@ -309,8 +314,11 @@ GoldScout-export 9^bc8q9lt657eo^18
 @i^3730^Big Bear Meat
 @i^3731^Lion Meat
 @i^3770^Mutton Chop
+@i^3771^Wild Hog Shank
+@i^3780^Long-barreled Musket
 @i^3857^Coal
 @i^3931^Poisoned Spider Fang
+@i^4048^Emblazoned Hat
 @i^4306^Silk Cloth
 @i^4377^Heavy Blasting Powder
 @i^4402^Small Flame Sac
@@ -370,6 +378,7 @@ GoldScout-export 9^bc8q9lt657eo^18
 @i^5620^Vial of Innocent Blood
 @i^5635^Sharp Claw
 @i^5636^Delicate Feather
+@i^5637^Large Fang
 @i^5736^Gerenzo's Mechanical Arm
 @i^5741^Rock Chip
 @i^5767^Violet Robes
@@ -491,12 +500,15 @@ GoldScout-export 9^bc8q9lt657eo^18
 @q^1415^0:2:0
 @q^1427^0:4:0
 @q^1485^0:2:0
+@q^1708^1:0:0
+@q^1710^1:0:0
 @q^1712^1:0:0
 @q^1749^0:4:0
 @q^1750^0:4:0
 @q^1752^0:4:0
 @q^1754^0:4:0
 @q^1757^0:4:0
+@q^1758^0:4:0
 @q^1759^0:4:0
 @q^1772^0:4:0
 @q^1774^0:4:0
@@ -580,8 +592,11 @@ GoldScout-export 9^bc8q9lt657eo^18
 @q^3730^1:7:1
 @q^3731^1:7:1
 @q^3770^1:0:0
+@q^3771^1:0:0
+@q^3780^0:2:0
 @q^3857^1:7:1
 @q^3931^0:15:0
+@q^4048^2:4:0
 @q^4306^1:7:1
 @q^4377^1:7:1
 @q^4402^1:7:1
@@ -641,6 +656,7 @@ GoldScout-export 9^bc8q9lt657eo^18
 @q^5620^1:12:0
 @q^5635^1:7:1
 @q^5636^0:15:0
+@q^5637^1:7:1
 @q^5736^1:12:0
 @q^5741^0:15:0
 @q^5767^1:4:0
@@ -1564,6 +1580,8 @@ GoldScout-export 9^bc8q9lt657eo^18
 @a^1397^168:5
 @a^1718^267:2
 @a^2244^155:1,175:5,195:1
+@a^2248^108:7,109:3,128:11,129:12
+@a^2249^108:6,109:1,128:8
 @a^2260^175:4,176:2,196:2
 @a^2261^155:2,174:1,175:7,176:2,195:1
 @a^2265^166:2,186:2
@@ -1734,6 +1752,8 @@ GoldScout-export 9^bc8q9lt657eo^18
 @t^1201^10:628
 @t^1211^31:1331
 @t^1397^5:245
+@t^2248^32:1878
+@t^2249^15:894
 @t^2406^1:126
 @t^2408^25:1582
 @t^3239^1:98

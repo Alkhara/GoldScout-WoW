@@ -1,4 +1,4 @@
-GoldScout-export 9^dpb5de213klc^24
+GoldScout-export 9^dpb5de213klc^25
 92^6^0^39^40^1418^0.4261^0.8162^6^Rock Elemental^4552:2:2,4553:1:1,4784:4:4,7912:1:2,8150:2:2^
 672^3^0^44^44^1434^0.4739^0.4377^3^Skullsplitter Spiritchaser^1520:1:1,1524:1:1,3916:1:1^
 781^2^0^43^44^1434^0.4744^0.4314^2^Skullsplitter Headhunter^1520:1:1,2750:1:1,3916:1:1,4338:1:1^
@@ -120,6 +120,10 @@ GoldScout-export 9^dpb5de213klc^24
 5715^1^0^0^0^0^0.0000^0.0000^0^^1520:1:1^
 5719^1^0^0^0^0^0.0000^0.0000^0^^^
 5721^1^0^0^0^0^0.0000^0.0000^0^^4460:1:1,12243:1:1^
+5850^1^0^46^46^1427^0.4314^0.3503^1^Blazing Elemental^871:1:1,3857:1:1^
+5853^4^0^46^47^1427^0.6233^0.6068^4^Tempered War Golem^4025:1:1,4026:1:1,4552:3:3,7912:1:2,8150:1:1^
+5854^3^0^47^49^1427^0.4893^0.4643^3^Heavy War Golem^4552:1:1,4554:1:1,7912:3:3,8150:2:2^
+5855^2^0^46^47^1427^0.4392^0.3843^2^Magma Elemental^4787:1:1,10509:1:1^
 6906^2^0^0^0^0^0.0000^0.0000^0^^9399:2:346,9400:1:1,9401:1:1^
 6907^2^0^0^0^0^0.0000^0.0000^0^^2459:1:1,9394:1:1,9398:1:1^
 6908^1^0^0^0^0^0.0000^0.0000^0^^1177:1:2,4265:1:1,9403:1:1^
@@ -331,6 +335,7 @@ GoldScout-export 9^dpb5de213klc^24
 @i^769^Chunk of Boar Meat
 @i^770^Pointy Crocolisk Tooth
 @i^866^Monk's Staff of the Channeler
+@i^871^Flurry Axe
 @i^1074^Hard Spider Leg Tip
 @i^1177^Oil of Olaf
 @i^1207^Murphstar of Frost Protection
@@ -376,6 +381,7 @@ GoldScout-export 9^dpb5de213klc^24
 @i^3809^Double Mail Boots
 @i^3819^Wintersbite
 @i^3827^Mana Potion
+@i^3857^Coal
 @i^3864^Citrine
 @i^3916^Split Bone Necklace
 @i^3919^Mistvale Giblets
@@ -438,6 +444,7 @@ GoldScout-export 9^dpb5de213klc^24
 @i^4644^The Legacy Heart
 @i^4646^Star of Xil'yeh
 @i^4784^Lifeless Stone
+@i^4787^Burning Pitch
 @i^4791^Enchanted Water
 @i^5011^Welken Ring
 @i^5113^Mark of the Syndicate
@@ -550,6 +557,7 @@ GoldScout-export 9^dpb5de213klc^24
 @i^10286^Heart of the Wild
 @i^10454^Essence of Eranikus
 @i^10460^Hakkari Blood
+@i^10509^Heart of Flame
 @i^10660^First Mosh'aru Tablet
 @i^10661^Second Mosh'aru Tablet
 @i^10663^Essence of Hakkar
@@ -733,6 +741,7 @@ GoldScout-export 9^dpb5de213klc^24
 @q^769^1:7:1
 @q^770^0:15:0
 @q^866^2:2:0
+@q^871^4:2:0
 @q^1074^0:15:0
 @q^1177^1:0:0
 @q^1207^2:2:0
@@ -778,6 +787,7 @@ GoldScout-export 9^dpb5de213klc^24
 @q^3809^0:4:0
 @q^3819^1:7:1
 @q^3827^1:0:0
+@q^3857^1:7:1
 @q^3864^2:7:1
 @q^3916^1:12:0
 @q^3919^1:12:0
@@ -840,6 +850,7 @@ GoldScout-export 9^dpb5de213klc^24
 @q^4644^1:12:0
 @q^4646^1:12:0
 @q^4784^0:15:0
+@q^4787^0:15:0
 @q^4791^1:0:0
 @q^5011^2:4:0
 @q^5113^0:15:0
@@ -952,6 +963,7 @@ GoldScout-export 9^dpb5de213klc^24
 @q^10286^1:7:1
 @q^10454^2:12:0
 @q^10460^1:13:0
+@q^10509^1:12:0
 @q^10660^1:12:0
 @q^10661^1:12:0
 @q^10663^1:0:0
@@ -1139,6 +1151,7 @@ GoldScout-export 9^dpb5de213klc^24
 @m^1416^Alterac Mountains
 @m^1418^Badlands
 @m^1425^The Hinterlands
+@m^1427^Searing Gorge
 @m^1434^Stranglethorn Vale
 @m^1435^Swamp of Sorrows
 @m^1443^Desolace
@@ -1748,6 +1761,10 @@ GoldScout-export 9^dpb5de213klc^24
 @a^5617^112:1,151:1,152:8,153:1,172:1
 @a^5618^112:3,132:5,133:2
 @a^5623^132:2,133:1,151:3,152:1,153:1
+@a^5850^148:1
+@a^5853^232:2,252:2
+@a^5854^148:1,170:1,250:1
+@a^5855^148:1,149:1
 @a^7092^187:5
 @a^7327^290:1
 @a^7332^290:3
@@ -1825,4 +1842,8 @@ GoldScout-export 9^dpb5de213klc^24
 @a^263348^172:1,192:1,193:2
 @a^266862^113:2,114:1
 @a^268831^154:3
+@t^5850^1:166
+@t^5853^3:305
+@t^5854^3:365
+@t^5855^1:53
 @l^0^enUS
