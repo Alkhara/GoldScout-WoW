@@ -1,4 +1,4 @@
-GoldScout-export 9^01brebf605sh^37
+GoldScout-export 9^01brebf605sh^38
 127^1^0^18^18^1436^0.3549^0.8378^1^Murloc Tidehunter^730:1:1^
 1501^12^0^1^1^1420^0.3291^0.6387^12^Mindless Zombie^159:2:2,2589:2:2,3363:1:1,4604:1:1^
 1502^9^0^1^2^1420^0.3242^0.6341^9^Wretched Zombie^1369:1:1,1374:2:2,2589:1:1,2652:1:1,4604:4:4^
@@ -47,6 +47,10 @@ GoldScout-export 9^01brebf605sh^37
 2061^1^0^13^13^1421^0.4658^0.7418^1^Councilman Thatcher^1734:1:1^
 2068^1^0^15^15^1421^0.4648^0.7458^1^Lord Mayor Morrison^3643:1:1^
 2283^1^0^22^22^1421^0.5813^0.6998^1^Ravenclaw Regent^6576:1:1^
+2349^1^0^25^25^1424^0.6978^0.3122^1^Giant Moss Creeper^878:1:1,1081:1:1,2251:1:1,4428:1:1^
+2350^2^0^20^21^1424^0.7130^0.3477^2^Forest Moss Creeper^1081:1:1,2251:2:2^
+2354^2^0^22^23^1424^0.7092^0.3419^2^Vicious Gray Bear^3476:1:1,3730:1:1,11406:2:2^
+2356^1^0^25^25^1424^0.6952^0.2886^1^Elder Gray Bear^2940:1:1^
 2529^4^0^0^0^0^0.0000^0.0000^0^^929:1:1,1772:1:1^
 2967^1^0^9^9^1412^0.6189^0.6264^1^Galak Centaur^^
 2968^1^0^9^10^1412^0.6202^0.6326^1^Galak Outrunner^2589:1:2^
@@ -239,6 +243,7 @@ GoldScout-export 9^01brebf605sh^37
 @i^805^Small Red Pouch
 @i^818^Tigerseye
 @i^858^Lesser Healing Potion
+@i^878^Fist-sized Spinneret
 @i^929^Healing Potion
 @i^955^Scroll of Intellect
 @i^1081^Crisp Spider Meat
@@ -303,6 +308,7 @@ GoldScout-export 9^01brebf605sh^37
 @i^2214^Wooden Buckler
 @i^2215^Wooden Shield
 @i^2217^Rectangular Shield
+@i^2251^Gooey Spider Leg
 @i^2287^Haunch of Meat
 @i^2406^Pattern: Fine Leather Boots
 @i^2447^Peacebloom
@@ -320,6 +326,7 @@ GoldScout-export 9^01brebf605sh^37
 @i^2836^Coarse Stone
 @i^2883^Plans: Deadly Bronze Poniard
 @i^2924^Crocolisk Meat
+@i^2940^Bloody Bear Paw
 @i^2967^Warrior's Boots
 @i^2972^Spellbinder Gloves
 @i^2986^Inscribed Leather Pants
@@ -360,6 +367,7 @@ GoldScout-export 9^01brebf605sh^37
 @i^3376^Canvas Belt
 @i^3401^Rough Crocolisk Scale
 @i^3402^Soft Patch of Fur
+@i^3476^Gray Bear Tongue
 @i^3610^Plans: Gemmed Copper Gauntlets
 @i^3612^Plans: Green Iron Gauntlets
 @i^3621^Ivar's Head
@@ -370,11 +378,13 @@ GoldScout-export 9^01brebf605sh^37
 @i^3670^Large Slimy Bone
 @i^3674^Decomposed Boot
 @i^3676^Slimy Ichor
+@i^3730^Big Bear Meat
 @i^3770^Mutton Chop
 @i^3931^Poisoned Spider Fang
 @i^4293^Pattern: Hillman's Leather Vest
 @i^4306^Silk Cloth
 @i^4349^Pattern: Phoenix Pants
+@i^4428^Spider Palp
 @i^4537^Tel'Abim Banana
 @i^4555^Thick Scaly Tail
 @i^4561^Scalping Tomahawk of Healing
@@ -611,6 +621,7 @@ GoldScout-export 9^01brebf605sh^37
 @q^805^1:1:0
 @q^818^2:7:1
 @q^858^1:0:0
+@q^878^0:7:0
 @q^929^1:0:0
 @q^955^1:0:0
 @q^1081^1:7:1
@@ -675,6 +686,7 @@ GoldScout-export 9^01brebf605sh^37
 @q^2214^0:4:0
 @q^2215^0:4:0
 @q^2217^0:4:0
+@q^2251^1:7:1
 @q^2287^1:0:0
 @q^2406^2:9:0
 @q^2447^1:7:1
@@ -692,6 +704,7 @@ GoldScout-export 9^01brebf605sh^37
 @q^2836^1:7:1
 @q^2883^2:9:0
 @q^2924^1:7:1
+@q^2940^0:15:0
 @q^2967^1:4:0
 @q^2972^1:4:0
 @q^2986^2:4:0
@@ -732,6 +745,7 @@ GoldScout-export 9^01brebf605sh^37
 @q^3376^0:4:0
 @q^3401^0:15:0
 @q^3402^0:15:0
+@q^3476^1:12:0
 @q^3610^2:9:0
 @q^3612^2:9:0
 @q^3621^1:12:0
@@ -742,11 +756,13 @@ GoldScout-export 9^01brebf605sh^37
 @q^3670^0:15:0
 @q^3674^0:15:0
 @q^3676^0:15:0
+@q^3730^1:7:1
 @q^3770^1:0:0
 @q^3931^0:15:0
 @q^4293^2:9:0
 @q^4306^1:7:1
 @q^4349^2:9:0
+@q^4428^0:15:0
 @q^4537^1:0:0
 @q^4555^0:15:0
 @q^4561^2:2:0
@@ -978,6 +994,7 @@ GoldScout-export 9^01brebf605sh^37
 @m^1414^Kalimdor
 @m^1420^Tirisfal Glades
 @m^1421^Silverpine Forest
+@m^1424^Hillsbrad Foothills
 @m^1436^Westfall
 @m^1440^Ashenvale
 @m^1442^Stonetalon Mountains
@@ -1394,6 +1411,10 @@ GoldScout-export 9^01brebf605sh^37
 @a^2061^289:1
 @a^2068^289:1
 @a^2283^271:1
+@a^2349^133:1
+@a^2350^134:1,154:1
+@a^2354^134:1,154:1
+@a^2356^113:1
 @a^2967^252:1
 @a^2968^252:1
 @a^3115^109:1
@@ -1513,6 +1534,9 @@ GoldScout-export 9^01brebf605sh^37
 @t^1889^7:356
 @t^1973^2:98
 @t^1974^4:136
+@t^2349^1:34
+@t^2350^2:61
+@t^2354^2:130
 @t^3239^5:435
 @t^3247^1:228
 @t^3257^1:118

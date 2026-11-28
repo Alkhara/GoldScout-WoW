@@ -1,4 +1,10 @@
-GoldScout-export 9^dou7x6sr2x05^4
+GoldScout-export 9^dou7x6sr2x05^5
+705^10^0^1^1^1426^0.2886^0.7341^10^Ragged Young Wolf^750:8:8,2656:1:1,3365:1:1,4865:2:2,7073:5:5,7074:6:6^
+706^14^0^3^4^1426^0.2527^0.7860^14^Frostmane Troll Whelp^117:1:1,159:1:1,2589:3:3,2650:1:1,2651:2:2,2652:1:1^
+707^6^0^1^2^1426^0.2333^0.7301^6^Rockjaw Trogg^117:2:2,1368:1:1,1370:1:1,2589:2:2,2650:1:1,3365:1:1^
+708^12^0^3^3^1426^0.2196^0.7073^12^Small Crag Boar^117:4:4,4865:6:6,7098:4:4^
+724^6^0^2^2^1426^0.2549^0.7543^6^Burly Rockjaw Trogg^159:2:2,1367:1:1,2589:1:1,2649:1:1^
+808^1^0^5^5^1426^0.3054^0.7998^1^Grik'nir the Cold^117:1:1,1377:1:1,2004:1:1,2589:1:1^
 2529^6^0^0^0^0^0.0000^0.0000^0^^1206:1:1,3378:1:1^
 3849^1^0^0^0^0^0.0000^0.0000^0^^1770:1:1^
 3851^7^0^0^0^0^0.0000^0.0000^0^^1205:1:1,1811:1:1,2764:1:1,15926:1:1^
@@ -73,10 +79,17 @@ GoldScout-export 9^dou7x6sr2x05^4
 11578^1^0^32^34^1443^0.6333^0.7081^1^Whirlwind Shredder^4634:1:1^
 12369^1^0^38^38^1443^0.2824^0.0678^1^Lord Kragaru^15803:1:1^
 12922^2^0^38^39^1443^0.5386^0.7937^2^Imp Minion^^
+@i^117^Tough Jerky
+@i^159^Refreshing Spring Water
+@i^750^Tough Wolf Meat
 @i^929^Healing Potion
 @i^1015^Lean Wolf Flank
 @i^1205^Melon Juice
 @i^1206^Moss Agate
+@i^1367^Ragged Leather Boots
+@i^1368^Ragged Leather Gloves
+@i^1370^Ragged Leather Bracers
+@i^1377^Frayed Gloves
 @i^1464^Buzzard Talon
 @i^1484^Witching Stave
 @i^1529^Jade
@@ -96,14 +109,21 @@ GoldScout-export 9^dou7x6sr2x05^4
 @i^1820^Wooden Maul
 @i^1824^Shiny War Axe
 @i^1974^Mindthrust Bracers
+@i^2004^Grelin Whitebeard's Journal
 @i^2220^Box Shield
 @i^2289^Scroll of Strength II
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2649^Flimsy Chain Belt
+@i^2650^Flimsy Chain Boots
+@i^2651^Flimsy Chain Bracers
+@i^2652^Flimsy Chain Cloak
+@i^2656^Flimsy Chain Vest
 @i^2764^Small Dagger
 @i^3040^Hunter's Muzzle Loader
 @i^3199^Battle Slayer of Arcane Protection
 @i^3301^Sharp Canine
+@i^3365^Frayed Bracers
 @i^3378^Brocade Belt
 @i^3385^Lesser Mana Potion
 @i^3402^Soft Patch of Fur
@@ -120,6 +140,7 @@ GoldScout-export 9^dou7x6sr2x05^4
 @i^4603^Raw Spotted Yellowtail
 @i^4606^Spongy Morel
 @i^4634^Iron Lockbox
+@i^4865^Ruined Pelt
 @i^5011^Welken Ring
 @i^5116^Long Tail Feather
 @i^5128^Shed Lizard Skin
@@ -147,6 +168,9 @@ GoldScout-export 9^dou7x6sr2x05^4
 @i^6986^Crimson Lotus
 @i^7069^Elemental Air
 @i^7072^Naga Scale
+@i^7073^Broken Fang
+@i^7074^Chipped Claw
+@i^7098^Splintered Tusk
 @i^7476^Regal Sash of the Sorcerer
 @i^7722^Triune Amulet
 @i^7909^Aquamarine
@@ -177,10 +201,17 @@ GoldScout-export 9^dou7x6sr2x05^4
 @i^273643^Worgenbane Talisman
 @i^273645^Blindwatcher's Sight
 @i^273646^Half-Eaten Boots
+@q^117^1:0:0
+@q^159^1:0:0
+@q^750^1:12:0
 @q^929^1:0:0
 @q^1015^1:7:1
 @q^1205^1:0:0
 @q^1206^2:7:1
+@q^1367^0:4:0
+@q^1368^0:4:0
+@q^1370^0:4:0
+@q^1377^0:4:0
 @q^1464^0:15:0
 @q^1484^3:2:0
 @q^1529^2:7:1
@@ -200,14 +231,21 @@ GoldScout-export 9^dou7x6sr2x05^4
 @q^1820^0:2:0
 @q^1824^0:2:0
 @q^1974^3:4:0
+@q^2004^1:12:0
 @q^2220^0:4:0
 @q^2289^1:0:0
 @q^2589^1:7:1
 @q^2592^1:7:1
+@q^2649^0:4:0
+@q^2650^0:4:0
+@q^2651^0:4:0
+@q^2652^0:4:0
+@q^2656^0:4:0
 @q^2764^0:2:0
 @q^3040^2:2:0
 @q^3199^2:2:0
 @q^3301^0:15:0
+@q^3365^0:4:0
 @q^3378^0:4:0
 @q^3385^1:0:0
 @q^3402^0:15:0
@@ -224,6 +262,7 @@ GoldScout-export 9^dou7x6sr2x05^4
 @q^4603^1:7:1
 @q^4606^1:0:0
 @q^4634^2:15:0
+@q^4865^0:15:0
 @q^5011^2:4:0
 @q^5116^1:7:1
 @q^5128^0:15:0
@@ -251,6 +290,9 @@ GoldScout-export 9^dou7x6sr2x05^4
 @q^6986^0:15:0
 @q^7069^1:7:1
 @q^7072^1:7:1
+@q^7073^0:15:0
+@q^7074^0:15:0
+@q^7098^0:15:0
 @q^7476^2:4:0
 @q^7722^3:4:0
 @q^7909^2:7:1
@@ -282,6 +324,7 @@ GoldScout-export 9^dou7x6sr2x05^4
 @q^273645^3:4:0
 @q^273646^3:4:0
 @m^1425^The Hinterlands
+@m^1426^Dun Morogh
 @m^1437^Wetlands
 @m^1443^Desolace
 @c^118^
@@ -843,6 +886,12 @@ GoldScout-export 9^dou7x6sr2x05^4
 @c^285279^
 @c^285280^
 @c^285281^
+@a^705^285:10
+@a^706^304:2,305:12
+@a^707^284:5,305:1
+@a^708^264:4,284:8
+@a^724^284:2,304:2,305:2
+@a^808^306:1
 @a^4654^206:1,227:1,247:3
 @a^4655^226:1,227:1,247:2,248:1
 @a^4658^205:2,206:1
@@ -881,6 +930,12 @@ GoldScout-export 9^dou7x6sr2x05^4
 @a^11578^292:1
 @a^12369^25:1
 @a^12922^311:1,330:1
+@t^705^9:125
+@t^706^14:900
+@t^707^6:210
+@t^708^12:322
+@t^724^6:456
+@t^808^1:174
 @t^4654^5:304
 @t^4655^5:191
 @t^4658^2:79

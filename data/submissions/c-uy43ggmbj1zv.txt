@@ -1,4 +1,4 @@
-GoldScout-export 9^uy43ggmbj1zv^29
+GoldScout-export 9^uy43ggmbj1zv^30
 587^2^0^33^34^1434^0.3025^0.1837^2^Bloodscalp Warrior^3901:1:1,3915:1:1^
 588^17^0^34^35^1434^0.2537^0.1102^17^Bloodscalp Scout^1519:3:3,2592:1:3,2730:1:1,2742:1:1,2750:1:1,3771:1:1,3796:1:1,3817:1:1,3915:1:1,4074:1:1,4306:3:3,4338:1:1,277957:1:1^
 595^13^0^34^35^1434^0.2532^0.1160^13^Bloodscalp Hunter^1519:2:2,2744:1:1,3812:1:1,3817:1:1,3901:1:1,3915:2:2,4306:4:7^
@@ -11,6 +11,7 @@ GoldScout-export 9^uy43ggmbj1zv^29
 684^9^0^37^38^1434^0.3745^0.3550^9^Shadowmaw Panther^1686:1:1,1688:2:2,3838:7:7,248693:1:1^
 685^8^0^33^34^1434^0.2714^0.1645^8^Stranglethorn Raptor^1696:2:2,3685:2:2,4461:2:2,12184:4:4^
 686^14^0^35^36^1434^0.3140^0.2359^14^Lashtail Raptor^1696:2:2,3685:6:6,4461:5:5,4586:1:1,12184:8:8^
+687^11^0^40^41^1434^0.3255^0.3832^11^Jungle Stalker^3863:5:5,4461:4:4,4586:2:2,4587:3:3,5637:1:1,12184:5:5,15214:1:1^
 689^27^0^34^35^1434^0.4824^0.0840^27^Crystal Spine Basilisk^1701:10:10,1702:10:10,1703:3:3,3197:1:1,3918:10:10,4634:1:1,7414:1:1,8146:1:1,11386:1:1,213544:1:1,248691:1:1^
 694^7^0^33^34^1434^0.2992^0.1941^7^Bloodscalp Axe Thrower^1519:2:2,3771:1:1,3901:2:2,3915:3:3,4306:2:3^
 697^8^0^33^34^1434^0.3027^0.1882^8^Bloodscalp Shaman^1519:3:3,2750:1:1,3771:1:1,3901:2:2,3915:3:3,4306:3:3^
@@ -263,6 +264,7 @@ GoldScout-export 9^uy43ggmbj1zv^29
 @i^3818^Fadeleaf
 @i^3838^Shadowmaw Claw
 @i^3839^Pristine Tigress Fang
+@i^3863^Jungle Stalker Feather
 @i^3864^Citrine
 @i^3879^Paw of Sin'Dall
 @i^3901^Bloodscalp Tusk
@@ -283,6 +285,7 @@ GoldScout-export 9^uy43ggmbj1zv^29
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
 @i^4586^Smooth Raptor Skin
+@i^4587^Tribal Raptor Feathers
 @i^4634^Iron Lockbox
 @i^4757^Cracked Egg Shells
 @i^4775^Cracked Bill
@@ -346,6 +349,7 @@ GoldScout-export 9^uy43ggmbj1zv^29
 @i^14093^Beaded Cord
 @i^14206^Vital Bracelets of the Sorcerer
 @i^15128^Robust Tunic of the Bear
+@i^15214^Nobles Brand of Fire Protection
 @i^15540^Wicked Chain Helmet of the Beast
 @i^15541^Wicked Chain Legguards of Stamina
 @i^15750^Sceptre of Light
@@ -522,6 +526,7 @@ GoldScout-export 9^uy43ggmbj1zv^29
 @q^3818^1:7:1
 @q^3838^1:12:0
 @q^3839^1:12:0
+@q^3863^1:12:0
 @q^3864^2:7:1
 @q^3879^1:12:0
 @q^3901^1:12:0
@@ -542,6 +547,7 @@ GoldScout-export 9^uy43ggmbj1zv^29
 @q^4555^0:15:0
 @q^4556^0:15:0
 @q^4586^0:15:0
+@q^4587^0:15:0
 @q^4634^2:15:0
 @q^4757^0:15:0
 @q^4775^0:15:0
@@ -605,6 +611,7 @@ GoldScout-export 9^uy43ggmbj1zv^29
 @q^14093^1:4:0
 @q^14206^2:4:0
 @q^15128^2:4:0
+@q^15214^2:2:0
 @q^15540^2:4:0
 @q^15541^2:4:0
 @q^15750^1:12:0
@@ -1412,6 +1419,7 @@ GoldScout-export 9^uy43ggmbj1zv^29
 @a^684^127:4,147:5
 @a^685^65:8
 @a^686^86:14
+@a^687^146:10,166:1
 @a^689^29:24,49:3
 @a^694^65:3,66:1,85:2,86:1
 @a^697^65:2,66:4,85:2
@@ -1522,4 +1530,5 @@ GoldScout-export 9^uy43ggmbj1zv^29
 @a^257521^149:10
 @a^262397^84:1,104:19,124:1
 @a^269175^106:3,126:1,127:1
+@t^687^10:496
 @l^0^enUS

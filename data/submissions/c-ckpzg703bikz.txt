@@ -1,4 +1,4 @@
-GoldScout-export 9^ckpzg703bikz^25
+GoldScout-export 9^ckpzg703bikz^26
 92^1^0^39^40^1418^0.3595^0.7635^1^Rock Elemental^4553:1:1,4784:1:1^
 587^2^0^34^34^1434^0.3063^0.1865^2^Bloodscalp Warrior^2592:1:3,4306:1:1^
 588^1^0^35^35^1434^0.2639^0.1335^1^Bloodscalp Scout^4306:1:1^
@@ -188,6 +188,15 @@ GoldScout-export 9^ckpzg703bikz^25
 5650^3^0^0^0^0^0.0000^0.0000^0^^1520:1:1,4338:1:3,4599:1:1,6149:1:1^
 5881^1^0^45^45^1444^0.5495^0.6744^1^Cursed Sycamore^4608:1:1^
 6388^3^0^46^46^1434^0.3875^0.6139^3^Zanzil Skeleton^^
+6505^1^0^49^49^1449^0.6251^0.6625^1^Ravasaur^4587:1:1^
+6509^3^0^48^49^1449^0.7258^0.3891^3^Bloodpetal Lasher^4606:1:1,4607:1:1,11018:1:1^
+6510^2^0^51^52^1449^0.4404^0.2826^2^Bloodpetal Flayer^4607:1:1,10286:1:1^
+6511^1^0^49^50^1449^0.6983^0.4077^1^Bloodpetal Thresher^11018:1:1^
+6512^2^0^52^53^1449^0.3457^0.2284^2^Bloodpetal Trapper^2447:1:1,10286:1:1,11018:2:2^
+6520^2^0^53^54^1449^0.5052^0.4618^2^Scorching Elemental^4787:2:2,11829:2:2^
+6553^1^0^51^51^1449^0.4991^0.8117^1^Gorishi Reaver^6300:1:1^
+6556^1^0^48^49^1449^0.6850^0.3637^1^Muculent Ooze^^
+6557^4^0^51^52^1449^0.5849^0.6367^4^Primal Ooze^^
 7246^6^0^0^0^0^0.0000^0.0000^0^^3966:1:1,3986:1:1,8151:1:1,9242:1:1,9523:2:2^
 7267^1^0^0^0^0^0.0000^0.0000^0^^1645:1:1,9477:1:1,14918:1:1^
 7269^10^0^0^0^0^0.0000^0.0000^0^^6300:2:2,6302:2:2,9238:5:5,262889:1:1^
@@ -218,6 +227,12 @@ GoldScout-export 9^ckpzg703bikz^25
 8120^1^0^0^0^0^0.0000^0.0000^0^^11386:1:1,11387:1:1^
 8127^1^0^0^0^0^0.0000^0.0000^0^^9640:1:1^
 8996^7^0^42^43^1446^0.5893^0.3755^7^Voidwalker Minion^^
+9157^1^0^40^40^1449^0.4378^0.0754^1^Bloodpetal Pest^^
+9163^18^0^51^52^1449^0.5764^0.6056^18^Diemetradon^5133:8:8,11018:7:7,11114:8:8,11830:8:8,281015:1:1^
+9164^3^0^54^55^1449^0.3463^0.2963^3^Elder Diemetradon^5133:3:3,11018:1:1,15254:1:1^
+9166^5^0^50^52^1449^0.5527^0.8389^5^Pterrordax^5128:2:2,5133:2:2,8146:2:2,11018:2:2^
+9167^11^0^52^54^1449^0.3511^0.2927^11^Frenzied Pterrordax^5128:4:4,5133:3:3,8146:1:1,11018:1:1,11116:1:1,11831:8:8,280459:1:1^
+9477^1^0^50^50^1449^0.5863^0.6889^1^Cloned Ooze^11018:1:1^
 10928^3^0^42^43^1434^0.2979^0.8409^3^Succubus Minion^^
 12046^1^0^49^49^1446^0.4145^0.5779^1^Gor'marok the Ravager^^
 12922^4^0^0^0^1434^0.2873^0.8264^3^Imp Minion^^
@@ -362,6 +377,7 @@ GoldScout-export 9^ckpzg703bikz^25
 @i^2211^Bent Large Shield
 @i^2289^Scroll of Strength II
 @i^2295^Large Boar Tusk
+@i^2447^Peacebloom
 @i^2589^Linen Cloth
 @i^2590^Forest Spider Webbing
 @i^2592^Wool Cloth
@@ -491,6 +507,7 @@ GoldScout-export 9^ckpzg703bikz^25
 @i^4583^Thick Furry Mane
 @i^4584^Large Trophy Paw
 @i^4585^Dripping Spider Mandible
+@i^4587^Tribal Raptor Feathers
 @i^4588^Pristine Raptor Skull
 @i^4589^Long Elegant Feather
 @i^4590^Curved Yellow Bill
@@ -498,11 +515,14 @@ GoldScout-export 9^ckpzg703bikz^25
 @i^4601^Soft Banana Bread
 @i^4603^Raw Spotted Yellowtail
 @i^4604^Forest Mushroom Cap
+@i^4606^Spongy Morel
+@i^4607^Delicious Cave Mold
 @i^4608^Raw Black Truffle
 @i^4636^Strong Iron Lockbox
 @i^4729^Aurora Mantle
 @i^4736^Mistscape Sash
 @i^4784^Lifeless Stone
+@i^4787^Burning Pitch
 @i^4791^Enchanted Water
 @i^4859^Burning Blade Medallion
 @i^4860^Glistening Frenzy Scale
@@ -518,6 +538,7 @@ GoldScout-export 9^ckpzg703bikz^25
 @i^5116^Long Tail Feather
 @i^5117^Vibrant Plume
 @i^5128^Shed Lizard Skin
+@i^5133^Seeping Gizzard
 @i^5429^A Pretty Rock
 @i^5431^Empty Hip Flask
 @i^5465^Small Spider Leg
@@ -612,10 +633,16 @@ GoldScout-export 9^ckpzg703bikz^25
 @i^10315^Pattern: Red Mageweave Shoulders
 @i^10660^First Mosh'aru Tablet
 @i^10661^Second Mosh'aru Tablet
+@i^11018^Un'Goro Soil
+@i^11114^Dinosaur Bone
+@i^11116^A Mangled Journal
 @i^11386^Squishy Basilisk Eye
 @i^11387^Basilisk Heart
 @i^11417^Feathery Wing
 @i^11418^Hollow Wing Bone
+@i^11829^Un'Goro Ash
+@i^11830^Webbed Diemetradon Scale
+@i^11831^Webbed Pterrordax Scale
 @i^12030^Jet Chain of the Bear
 @i^12037^Mystery Meat
 @i^12184^Raptor Flesh
@@ -632,6 +659,7 @@ GoldScout-export 9^ckpzg703bikz^25
 @i^14918^Jade Belt of Power
 @i^15214^Nobles Brand of Nature Protection
 @i^15244^Razor Blade of Stamina
+@i^15254^Dark Espadon of the Bandit
 @i^15376^Wolf Rider's Padded Armor of Intellect
 @i^15382^Rageclaw Cloak of the Champion
 @i^15599^Ancient Greaves of the Whale
@@ -711,6 +739,8 @@ GoldScout-export 9^ckpzg703bikz^25
 @i^276894^Ancient Gurubashi Idol
 @i^277112^Zum'rah's Head
 @i^278186^Brilliantly Polished Bangle
+@i^280459^Crystal Infused Scale
+@i^281015^Scroll: DOST OREM
 @i^281052^Ombassa's Hide
 @i^286429^Big-Belly Belt
 @i^287019^Defias Enforcer's Mask
@@ -756,6 +786,7 @@ GoldScout-export 9^ckpzg703bikz^25
 @q^2211^0:4:0
 @q^2289^1:0:0
 @q^2295^0:15:0
+@q^2447^1:7:1
 @q^2589^1:7:1
 @q^2590^0:15:0
 @q^2592^1:7:1
@@ -885,6 +916,7 @@ GoldScout-export 9^ckpzg703bikz^25
 @q^4583^0:15:0
 @q^4584^0:15:0
 @q^4585^0:15:0
+@q^4587^0:15:0
 @q^4588^0:15:0
 @q^4589^1:7:1
 @q^4590^0:15:0
@@ -892,11 +924,14 @@ GoldScout-export 9^ckpzg703bikz^25
 @q^4601^1:0:0
 @q^4603^1:7:1
 @q^4604^1:0:0
+@q^4606^1:0:0
+@q^4607^1:0:0
 @q^4608^1:0:0
 @q^4636^2:15:0
 @q^4729^2:4:0
 @q^4736^2:4:0
 @q^4784^0:15:0
+@q^4787^0:15:0
 @q^4791^1:0:0
 @q^4859^1:12:0
 @q^4860^0:15:0
@@ -912,6 +947,7 @@ GoldScout-export 9^ckpzg703bikz^25
 @q^5116^1:7:1
 @q^5117^1:12:0
 @q^5128^0:15:0
+@q^5133^0:15:0
 @q^5429^0:15:0
 @q^5431^0:15:0
 @q^5465^1:7:1
@@ -1006,10 +1042,16 @@ GoldScout-export 9^ckpzg703bikz^25
 @q^10315^2:9:0
 @q^10660^1:12:0
 @q^10661^1:12:0
+@q^11018^1:12:0
+@q^11114^1:12:0
+@q^11116^2:15:0
 @q^11386^0:15:0
 @q^11387^0:15:0
 @q^11417^0:15:0
 @q^11418^0:15:0
+@q^11829^1:12:0
+@q^11830^1:12:0
+@q^11831^1:12:0
 @q^12030^2:4:0
 @q^12037^1:7:1
 @q^12184^1:7:1
@@ -1026,6 +1068,7 @@ GoldScout-export 9^ckpzg703bikz^25
 @q^14918^2:4:0
 @q^15214^2:2:0
 @q^15244^2:2:0
+@q^15254^2:2:0
 @q^15376^2:4:0
 @q^15382^2:4:0
 @q^15599^2:4:0
@@ -1105,6 +1148,8 @@ GoldScout-export 9^ckpzg703bikz^25
 @q^276894^1:12:0
 @q^277112^1:12:0
 @q^278186^1:12:0
+@q^280459^1:12:0
+@q^281015^1:0:0
 @q^281052^1:12:0
 @q^286429^3:4:0
 @q^287019^3:4:0
@@ -1121,6 +1166,7 @@ GoldScout-export 9^ckpzg703bikz^25
 @m^1444^Feralas
 @m^1445^Dustwallow Marsh
 @m^1446^Tanaris
+@m^1449^Un'Goro Crater
 @m^2548^Riverglades
 @c^118^
 @c^724^
@@ -2866,6 +2912,15 @@ GoldScout-export 9^ckpzg703bikz^25
 @a^5623^132:2,151:7,152:2,153:1
 @a^5881^270:1
 @a^6388^247:3
+@a^6505^272:1
+@a^6509^154:2,175:1
+@a^6510^108:2
+@a^6511^173:1
+@a^6512^86:1,87:1
+@a^6520^189:1,190:1
+@a^6553^329:1
+@a^6556^153:1
+@a^6557^211:1,251:1,271:2
 @a^7584^88:1,291:2
 @a^7768^266:6,285:2,286:16
 @a^7769^271:4,290:6,291:2
@@ -2882,6 +2937,12 @@ GoldScout-export 9^ckpzg703bikz^25
 @a^7902^370:1
 @a^8075^28:1
 @a^8996^151:6,152:1
+@a^9157^28:1
+@a^9163^191:4,211:2,231:1,251:3,271:6,291:2
+@a^9164^105:1,107:1,108:1
+@a^9166^252:1,350:2,351:1,371:1
+@a^9167^86:2,106:2,107:1,126:2,127:2,128:1,147:1
+@a^9477^271:1
 @a^10928^325:1,326:1,345:1
 @a^12046^228:1
 @a^12922^325:2,326:1
@@ -2977,9 +3038,23 @@ GoldScout-export 9^ckpzg703bikz^25
 @t^5485^7:288
 @t^5490^8:447
 @t^5881^1:48
+@t^6505^1:88
+@t^6509^3:491
+@t^6510^2:222
+@t^6511^1:110
+@t^6512^2:412
+@t^6520^2:216
+@t^6553^1:51
+@t^6556^1:73
+@t^6557^4:105
 @t^7584^3:709
 @t^7848^3:83
 @t^8075^1:45
+@t^9163^18:1250
+@t^9164^3:470
+@t^9166^5:758
+@t^9167^11:798
+@t^9477^1:3
 @t^14661^1:22
 @f^1417^0^4^196^3820:1:1,6358:3:3^345:4
 @f^1434^0^138^186^3820:3:6,4603:14:14,6358:24:24,6359:18:18,6362:63:63,16969:1:1,21150:14:14,21151:2:4^43:18,64:8,84:3,105:33,126:5,305:67,326:4
