@@ -1,4 +1,4 @@
-GoldScout-export 9^j383pozg5wqs^18
+GoldScout-export 9^j383pozg5wqs^19
 36^1^0^11^12^1436^0.3287^0.3509^1^Harvest Golem^814:1:1^
 117^2^0^11^12^1436^0.4079^0.2200^2^Riverpaw Gnoll^2075:1:1,2589:2:3^
 123^1^0^13^14^1436^0.3564^0.3281^1^Riverpaw Mongrel^^
@@ -19,6 +19,9 @@ GoldScout-export 9^j383pozg5wqs^18
 2623^5^0^32^32^1424^0.3018^0.2815^5^Spirit of Old^^
 3100^2^0^8^9^1411^0.5101^0.1420^2^Elder Mottled Boar^769:1:1,771:1:1,3171:1:1^
 3983^1^0^0^0^0^0.0000^0.0000^0^^7683:1:1,253986:1:1^
+4093^10^0^25^26^1441^0.4198^0.3677^10^Galak Wrangler^1712:1:1,2592:3:4,4306:1:1^
+4094^9^0^24^25^1441^0.4331^0.3909^9^Galak Scout^929:1:1,3770:1:1,4306:1:1^
+4096^10^0^24^25^1441^0.4326^0.3854^10^Galak Windchaser^2592:1:2,3770:1:1,4306:2:2^
 4283^1^0^0^0^0^0.0000^0.0000^0^^4306:1:2^
 4293^1^0^0^0^0^0.0000^0.0000^0^^4306:1:2^
 4306^2^0^0^0^0^0.0000^0.0000^0^^2592:1:3^
@@ -150,6 +153,7 @@ GoldScout-export 9^j383pozg5wqs^18
 @i^1697^Keen Raptor Tooth
 @i^1705^Lesser Moonstone
 @i^1711^Scroll of Stamina II
+@i^1712^Scroll of Spirit II
 @i^1748^Linked Chain Bracers
 @i^1756^Reinforced Chain Bracers
 @i^1757^Reinforced Chain Cloak
@@ -218,6 +222,7 @@ GoldScout-export 9^j383pozg5wqs^18
 @i^3685^Raptor Egg
 @i^3692^Hillsbrad Human Skull
 @i^3731^Lion Meat
+@i^3770^Mutton Chop
 @i^3804^Hardened Leather Gloves
 @i^3810^Double Mail Bracers
 @i^3872^Plans: Golden Scale Leggings
@@ -411,6 +416,7 @@ GoldScout-export 9^j383pozg5wqs^18
 @q^1697^0:15:0
 @q^1705^2:7:1
 @q^1711^1:0:0
+@q^1712^1:0:0
 @q^1748^0:4:0
 @q^1756^0:4:0
 @q^1757^0:4:0
@@ -479,6 +485,7 @@ GoldScout-export 9^j383pozg5wqs^18
 @q^3685^1:7:1
 @q^3692^1:12:0
 @q^3731^1:7:1
+@q^3770^1:0:0
 @q^3804^0:4:0
 @q^3810^0:4:0
 @q^3872^2:9:0
@@ -652,6 +659,7 @@ GoldScout-export 9^j383pozg5wqs^18
 @m^1424^Hillsbrad Foothills
 @m^1436^Westfall
 @m^1437^Wetlands
+@m^1441^Thousand Needles
 @m^1456^Thunder Bluff
 @c^118^
 @c^724^
@@ -1363,8 +1371,12 @@ GoldScout-export 9^j383pozg5wqs^18
 @a^2384^150:1,170:2,171:3
 @a^2623^106:5
 @a^3100^50:1,69:1
+@a^4093^127:2,147:1,148:5,169:2
+@a^4094^148:7,169:2
+@a^4096^127:1,148:5,168:2,169:2
 @a^6132^368:1
 @a^260803^250:1
+@t^4096^1:139
 @f^1412^0^77^1^118:1:1,828:1:1,6289:30:30,6291:43:43,6292:1:1,6294:1:1^248:77
 @f^1456^0^15^75^6289:11:11,6291:1:1,6308:3:3^227:2,228:2,248:11
 @l^0^enUS
