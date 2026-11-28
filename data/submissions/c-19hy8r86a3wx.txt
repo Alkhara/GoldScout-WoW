@@ -1,4 +1,4 @@
-GoldScout-export 5^19hy8r86a3wx^64
+GoldScout-export 5^19hy8r86a3wx^65
 3^5^0^24^25^1431^0.2327^0.3718^5^Flesh Eater^884:1:1,887:2:2,1129:2:2,2592:1:1,5529:1:1,211855:1:1^
 6^9^0^1^2^1429^0.4832^0.3608^9^Kobold Vermin^159:1:1,755:2:2,1378:1:1,2589:2:2,4536:1:1,247834:1:1,247839:3:3^
 36^1^0^11^12^1436^0.4831^0.3302^1^Harvest Golem^814:1:1^
@@ -69,7 +69,7 @@ GoldScout-export 5^19hy8r86a3wx^64
 740^3^0^35^35^1435^0.1322^0.6033^3^Adolescent Whelp^^
 741^2^0^35^36^1435^0.1411^0.6294^2^Dreaming Whelp^^
 767^1^0^36^37^1435^0.1177^0.5832^1^Swamp Jaguar^1688:1:1^
-772^1^0^38^38^1434^0.4565^0.2686^1^Stranglethorn Tigress^1688:1:1^
+772^1^0^37^38^1434^0.4565^0.2686^1^Stranglethorn Tigress^1688:1:1^
 785^1^0^29^29^1431^0.1725^0.3341^1^Skeletal Warder^^
 824^1^0^15^16^1415^0.4110^0.7990^1^Defias Digger^2455:1:1^
 858^1^0^37^37^1435^0.2927^0.5346^1^Sorrow Spinner^4337:1:1^
@@ -319,7 +319,7 @@ GoldScout-export 5^19hy8r86a3wx^64
 10160^12^0^12^14^1439^0.4610^0.4775^12^Raging Moonkin^1499:1:1,1502:1:1,5114:2:2,5115:1:1,6889:8:8,17056:4:4^
 10323^2^0^19^19^1439^0.3615^0.7668^2^Murkdeep^730:2:2^
 10373^1^0^19^19^1439^0.5214^0.3368^1^Xabraxxis^^
-11562^2^0^33^33^1443^0.3346^0.3071^2^Drysnap Crawler^1711:1:1,6362:1:3,15878:1:1^
+11562^2^0^33^34^1443^0.3346^0.3071^2^Drysnap Crawler^1711:1:1,6362:1:3,15878:1:1^
 12369^1^0^38^38^1443^0.2843^0.0640^1^Lord Kragaru^15803:1:1,17057:1:1^
 13019^1^0^33^33^1443^0.5514^0.3010^1^Burning Blade Seer^15750:1:1^
 14222^1^0^35^35^1416^0.3000^0.7134^1^Araga^283253:1:1^
@@ -716,6 +716,7 @@ GoldScout-export 5^19hy8r86a3wx^64
 @i^4576^Light Bow
 @i^4577^Compact Shotgun
 @i^4586^Smooth Raptor Skin
+@i^4603^Raw Spotted Yellowtail
 @i^4604^Forest Mushroom Cap
 @i^4605^Red-speckled Mushroom
 @i^4606^Spongy Morel
@@ -816,8 +817,11 @@ GoldScout-export 5^19hy8r86a3wx^64
 @i^6295^15 Pound Mud Snapper
 @i^6308^Raw Bristle Whisker Catfish
 @i^6310^19 Pound Catfish
+@i^6358^Oily Blackmouth
+@i^6359^Firefin Snapper
 @i^6361^Raw Rainbow Fin Albacore
 @i^6362^Raw Rockscale Cod
+@i^6364^32 Pound Catfish
 @i^6378^Seer's Cape
 @i^6395^Silver-thread Amice
 @i^6439^Broken Binding Bracer
@@ -931,6 +935,9 @@ GoldScout-export 5^19hy8r86a3wx^64
 @i^12220^Intact Elemental Bracer
 @i^12237^Fine Crab Chunks
 @i^13049^Deanship Claymore
+@i^13757^Lightning Eel
+@i^13758^Raw Redgill
+@i^13760^Raw Sunscale Salmon
 @i^14086^Beaded Sandals
 @i^14090^Beaded Britches of Spirit
 @i^14115^Aboriginal Bands
@@ -963,6 +970,10 @@ GoldScout-export 5^19hy8r86a3wx^64
 @i^15881^Rackmore's Golden Key
 @i^15969^Beaded Orb of Healing
 @i^16882^Battered Junkbox
+@i^16967^Feralas Ahi
+@i^16968^Sar'theris Striker
+@i^16969^Savage Coast Blue Sailfin
+@i^16970^Misty Reed Mahi Mahi
 @i^17056^Light Feather
 @i^17057^Shiny Fish Scales
 @i^17058^Fish Oil
@@ -1452,6 +1463,7 @@ GoldScout-export 5^19hy8r86a3wx^64
 @q^4576^2:2:0
 @q^4577^2:2:0
 @q^4586^0:15:0
+@q^4603^1:7:1
 @q^4604^1:0:0
 @q^4605^1:0:0
 @q^4606^1:0:0
@@ -1552,8 +1564,11 @@ GoldScout-export 5^19hy8r86a3wx^64
 @q^6295^1:15:0
 @q^6308^1:7:1
 @q^6310^1:15:0
+@q^6358^1:7:1
+@q^6359^1:7:1
 @q^6361^1:7:1
 @q^6362^1:7:1
+@q^6364^1:15:0
 @q^6378^2:4:0
 @q^6395^2:4:0
 @q^6439^0:15:0
@@ -1667,6 +1682,9 @@ GoldScout-export 5^19hy8r86a3wx^64
 @q^12220^1:12:0
 @q^12237^1:12:0
 @q^13049^3:2:0
+@q^13757^1:7:1
+@q^13758^1:7:1
+@q^13760^1:7:1
 @q^14086^1:4:0
 @q^14090^2:4:0
 @q^14115^1:4:0
@@ -1699,6 +1717,10 @@ GoldScout-export 5^19hy8r86a3wx^64
 @q^15881^1:12:0
 @q^15969^2:4:0
 @q^16882^1:15:0
+@q^16967^1:15:0
+@q^16968^1:12:0
+@q^16969^1:12:0
+@q^16970^1:12:0
 @q^17056^1:15:1
 @q^17057^1:15:0
 @q^17058^1:15:0
@@ -1822,6 +1844,7 @@ GoldScout-export 5^19hy8r86a3wx^64
 @m^1440^Ashenvale
 @m^1442^Stonetalon Mountains
 @m^1443^Desolace
+@m^1444^Feralas
 @m^1445^Dustwallow Marsh
 @m^1453^Stormwind City
 @c^118^
@@ -3124,6 +3147,9 @@ GoldScout-export 5^19hy8r86a3wx^64
 @c^279961^
 @c^279962^
 @c^279964^
+@c^279965^
+@c^279966^
+@c^279967^
 @c^279968^
 @c^279969^
 @c^279974^
@@ -3469,5 +3495,11 @@ GoldScout-export 5^19hy8r86a3wx^64
 @a^272046^106:1
 @a^275703^251:1,252:1,270:3,271:1,272:2,291:1
 @f^1429^0^76^1^6289:21:21,6291:52:52,6292:2:2,6295:1:1^249:76
+@f^1434^0^2^225^6358:1:1,6362:1:1,16969:1:1^126:2
+@f^1435^0^13^225^4603:4:4,6358:1:1,6359:2:2,6362:6:6,16970:1:1^298:13
+@f^1440^0^317^130^929:1:1,3827:1:1,6289:110:110,6308:203:203,6310:1:1,6364:1:1^270:317
+@f^1443^0^4^225^4603:2:2,6362:2:2,16968:1:1^305:4
+@f^1444^0^14^225^6358:1:1,8365:1:1,13757:1:1,13758:6:6,13760:5:5,16967:1:1^212:14
+@f^1445^0^134^205^4603:33:33,6308:3:3,6358:14:14,6359:18:18,6362:62:62,8365:4:4^212:127,269:6,270:1
 @f^1453^0^108^75^6289:71:71,6291:18:18,6308:18:18,6310:1:1^270:31,271:77
 @l^0^enUS

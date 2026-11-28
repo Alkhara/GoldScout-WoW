@@ -1,6 +1,6 @@
-GoldScout-export 9^behvwruj7d06^57
+GoldScout-export 9^behvwruj7d06^58
 412^1^0^35^35^1431^0.7402^0.5616^1^Stitches^3360:1:1,4306:1:2^
-442^1^0^15^15^1433^0.0844^0.7112^1^Tarantula^^
+442^1^0^15^16^1433^0.0844^0.7112^1^Tarantula^^
 667^12^0^39^40^1434^0.4536^0.3612^12^Skullsplitter Warrior^1520:2:2,1524:6:6,3780:1:1,3782:1:1,4306:5:12,4338:1:1,8151:1:1,15233:1:1^
 669^6^0^41^42^1434^0.4534^0.4199^6^Skullsplitter Hunter^1520:1:1,1524:1:1,4338:1:2,7910:1:1,8151:2:2,8153:1:2^
 670^5^0^41^42^1434^0.4529^0.4248^5^Skullsplitter Witch Doctor^1520:2:2,1524:1:1,4025:1:1,4306:2:4,4338:2:3^
@@ -223,6 +223,12 @@ GoldScout-export 9^behvwruj7d06^57
 5860^4^0^47^48^1427^0.2413^0.3762^4^Twilight Dark Shaman^3968:1:1,4338:1:4^
 5861^7^0^48^49^1427^0.2553^0.3269^7^Twilight Fire Guard^3963:1:1,4338:2:7,10458:1:1,10552:1:1,14476:1:1^
 5862^2^0^49^50^1427^0.2996^0.2688^2^Twilight Geomancer^4025:1:1,4338:1:3^
+5991^1^0^51^52^1419^0.5418^0.4138^1^Redstone Crystalhide^11387:1:1^
+5993^6^0^52^53^1419^0.4867^0.4678^6^Helboar^2295:2:2,3403:1:1,8392:4:4^
+6004^4^0^51^52^1419^0.6559^0.3207^4^Shadowsworn Cultist^3997:1:1,13820:1:1,14047:1:2^
+6005^8^0^52^53^1419^0.6530^0.3225^8^Shadowsworn Thug^8952:1:1,14047:2:3^
+6006^9^0^52^53^1419^0.6577^0.3135^9^Shadowsworn Adept^14047:3:6^
+6008^1^0^54^54^1419^0.4294^0.4280^1^Shadowsworn Warlock^13446:1:1^
 6069^4^0^39^40^1443^0.2956^0.5203^4^Maraudine Khan Guard^^
 6426^6^0^0^0^0^0.0000^0.0000^0^^4306:1:1,6396:1:1,9842:1:1,248710:1:1^
 6427^1^0^0^0^0^0.0000^0.0000^0^^^
@@ -494,6 +500,7 @@ GoldScout-export 9^behvwruj7d06^57
 @i^1820^Wooden Maul
 @i^2073^Dwarven Hatchet of the Eagle
 @i^2079^Sergeant's Warhammer of Magic
+@i^2295^Large Boar Tusk
 @i^2452^Swiftthistle
 @i^2589^Linen Cloth
 @i^2592^Wool Cloth
@@ -527,6 +534,7 @@ GoldScout-export 9^behvwruj7d06^57
 @i^3378^Brocade Belt
 @i^3385^Lesser Mana Potion
 @i^3402^Soft Patch of Fur
+@i^3403^Ivory Boar Tusk
 @i^3404^Buzzard Wing
 @i^3667^Tender Crocolisk Meat
 @i^3669^Gelatinous Goo
@@ -581,6 +589,7 @@ GoldScout-export 9^behvwruj7d06^57
 @i^3986^Protective Pavise
 @i^3989^Blocking Targe
 @i^3996^Laminated Scale Gloves
+@i^3997^Laminated Scale Pants
 @i^4003^Overlinked Chain Cloak
 @i^4016^Zanzil's Mixture
 @i^4017^Sharp Shortsword
@@ -706,6 +715,7 @@ GoldScout-export 9^behvwruj7d06^57
 @i^8194^Goblin Nutcracker of the Defender
 @i^8199^Battlefield Destroyer of the Boar
 @i^8365^Raw Mithril Head Trout
+@i^8392^Blasted Boar Lung
 @i^8395^Pattern: Tough Scorpid Breastplate
 @i^8428^Laden Dew Gland
 @i^8429^Punctured Dew Gland
@@ -722,6 +732,7 @@ GoldScout-export 9^behvwruj7d06^57
 @i^8766^Morning Glory Dew
 @i^8839^Blindweed
 @i^8948^Dried King Bolete
+@i^8952^Roasted Quail
 @i^8973^Thick Yeti Hide
 @i^9234^Tiara of the Deep
 @i^9238^Uncracked Scarab Shell
@@ -820,6 +831,7 @@ GoldScout-export 9^behvwruj7d06^57
 @i^13758^Raw Redgill
 @i^13759^Raw Nightfin Snapper
 @i^13760^Raw Sunscale Salmon
+@i^13820^Clout Mace
 @i^13821^Bulky Maul
 @i^13825^Primed Musket
 @i^13876^40 Pound Yellowtail
@@ -1031,6 +1043,7 @@ GoldScout-export 9^behvwruj7d06^57
 @q^1820^0:2:0
 @q^2073^2:2:0
 @q^2079^2:2:0
+@q^2295^0:15:0
 @q^2452^1:7:1
 @q^2589^1:7:1
 @q^2592^1:7:1
@@ -1064,6 +1077,7 @@ GoldScout-export 9^behvwruj7d06^57
 @q^3378^0:4:0
 @q^3385^1:0:0
 @q^3402^0:15:0
+@q^3403^0:15:0
 @q^3404^1:7:1
 @q^3667^1:7:1
 @q^3669^0:15:0
@@ -1118,6 +1132,7 @@ GoldScout-export 9^behvwruj7d06^57
 @q^3986^0:4:0
 @q^3989^0:4:0
 @q^3996^0:4:0
+@q^3997^0:4:0
 @q^4003^0:4:0
 @q^4016^1:12:0
 @q^4017^0:2:0
@@ -1243,6 +1258,7 @@ GoldScout-export 9^behvwruj7d06^57
 @q^8194^2:2:0
 @q^8199^2:2:0
 @q^8365^1:7:1
+@q^8392^1:12:0
 @q^8395^2:9:0
 @q^8428^1:12:0
 @q^8429^0:15:0
@@ -1259,6 +1275,7 @@ GoldScout-export 9^behvwruj7d06^57
 @q^8766^1:0:0
 @q^8839^1:7:1
 @q^8948^1:0:0
+@q^8952^1:0:0
 @q^8973^1:12:0
 @q^9234^1:12:0
 @q^9238^1:12:0
@@ -1357,6 +1374,7 @@ GoldScout-export 9^behvwruj7d06^57
 @q^13758^1:7:1
 @q^13759^1:7:1
 @q^13760^1:7:1
+@q^13820^0:2:0
 @q^13821^0:2:0
 @q^13825^0:2:0
 @q^13876^1:15:0
@@ -1516,6 +1534,7 @@ GoldScout-export 9^behvwruj7d06^57
 @q^287025^3:2:0
 @m^1414^Kalimdor
 @m^1418^Badlands
+@m^1419^Blasted Lands
 @m^1422^Western Plaguelands
 @m^1424^Hillsbrad Foothills
 @m^1425^The Hinterlands
@@ -2871,6 +2890,12 @@ GoldScout-export 9^behvwruj7d06^57
 @a^5860^144:3,145:1
 @a^5861^105:2,125:2,144:2,145:1
 @a^5862^105:1,106:1
+@a^5991^170:1
+@a^5993^149:2,169:1,210:1,230:2
+@a^6004^132:1,133:3
+@a^6005^132:2,133:6
+@a^6006^132:2,133:7
+@a^6008^168:1
 @a^6069^205:4
 @a^6505^252:1,273:2,292:1
 @a^6506^273:1
@@ -3007,6 +3032,11 @@ GoldScout-export 9^behvwruj7d06^57
 @t^5481^10:421
 @t^5485^7:238
 @t^5490^8:668
+@t^5991^1:214
+@t^5993^6:862
+@t^6004^4:152
+@t^6005^8:273
+@t^6006^8:218
 @t^6505^4:589
 @t^6506^1:2
 @t^6507^2:7
