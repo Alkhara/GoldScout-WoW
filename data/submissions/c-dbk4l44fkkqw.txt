@@ -1,10 +1,11 @@
-GoldScout-export 7^dbk4l44fkkqw^7
+GoldScout-export 7^dbk4l44fkkqw^8
 745^3^0^43^44^1435^0.8299^0.4612^3^Scalebane Captain^4599:2:2,5803:1:1,8194:1:1^
 746^3^0^45^45^1435^0.8294^0.4594^3^Elder Dragonkin^1613:1:1^
 766^1^0^40^40^1435^0.5742^0.4991^1^Tangled Horror^^
 862^1^0^37^37^1435^0.9231^0.4432^1^Stonard Explorer^^
 922^9^0^40^41^1435^0.8280^0.1284^9^Silt Crawler^3010:2:2,5569:2:2,5938:9:12,7973:2:2,12206:1:1,17057:2:2^
 1087^2^0^41^42^1435^0.8258^0.1373^2^Sawtooth Snapper^770:2:3,3667:1:1^
+2736^8^0^42^44^1418^0.1489^0.8644^8^Greater Rock Elemental^4552:2:2,4554:2:2,4784:7:7,7075:1:1,7912:1:2,8150:2:2^
 245999^1^0^0^0^1416^0.0000^0.0000^0^^273035:1:1^
 246003^2^0^0^0^1416^0.0000^0.0000^0^^273038:1:1,273039:1:1^
 246008^2^0^0^0^1416^0.0000^0.0000^0^^273040:1:1,273041:1:1^
@@ -92,9 +93,12 @@ GoldScout-export 7^dbk4l44fkkqw^7
 @i^4021^Blunting Mace
 @i^4306^Silk Cloth
 @i^4338^Mageweave Cloth
+@i^4552^Smooth Stone Chip
+@i^4554^Shiny Polished Stone
 @i^4583^Thick Furry Mane
 @i^4599^Cured Ham Steak
 @i^4637^Steel Lockbox
+@i^4784^Lifeless Stone
 @i^5431^Empty Hip Flask
 @i^5524^Thick-shelled Clam
 @i^5569^Seaweed
@@ -104,12 +108,15 @@ GoldScout-export 7^dbk4l44fkkqw^7
 @i^6438^Dull Elemental Bracer
 @i^6444^Forked Tongue
 @i^6826^Brilliant Scale
+@i^7075^Core of Earth
 @i^7470^Regal Wizard Hat of Stamina
 @i^7471^Regal Gloves of the Owl
 @i^7472^Regal Boots of the Sorcerer
 @i^7473^Regal Mantle of the Sorcerer
 @i^7479^Ranger Helm of Strength
+@i^7912^Solid Stone
 @i^7973^Big-mouth Clam
+@i^8150^Deeprock Salt
 @i^8183^Precision Bow
 @i^8194^Goblin Nutcracker of Healing
 @i^9920^Tracker's Gloves of the Owl
@@ -182,9 +189,12 @@ GoldScout-export 7^dbk4l44fkkqw^7
 @q^4021^0:2:0
 @q^4306^1:7:1
 @q^4338^1:7:1
+@q^4552^0:15:0
+@q^4554^0:15:0
 @q^4583^0:15:0
 @q^4599^1:0:0
 @q^4637^2:15:0
+@q^4784^0:15:0
 @q^5431^0:15:0
 @q^5524^1:7:0
 @q^5569^0:15:0
@@ -194,12 +204,15 @@ GoldScout-export 7^dbk4l44fkkqw^7
 @q^6438^0:15:0
 @q^6444^0:15:0
 @q^6826^0:15:0
+@q^7075^1:7:1
 @q^7470^2:4:0
 @q^7471^2:4:0
 @q^7472^2:4:0
 @q^7473^2:4:0
 @q^7479^2:4:0
+@q^7912^1:7:1
 @q^7973^1:7:0
+@q^8150^1:7:1
 @q^8183^2:2:0
 @q^8194^2:2:0
 @q^9920^2:4:0
@@ -253,6 +266,7 @@ GoldScout-export 7^dbk4l44fkkqw^7
 @q^287012^3:4:0
 @m^1415^Eastern Kingdoms
 @m^1416^Alterac Mountains
+@m^1418^Badlands
 @m^1435^Swamp of Sorrows
 @m^2548^Riverglades
 @c^118^
@@ -912,6 +926,7 @@ GoldScout-export 7^dbk4l44fkkqw^7
 @a^862^178:1
 @a^922^35:1,36:2,56:3,76:1,77:2
 @a^1087^56:2
+@a^2736^322:1,323:1,342:3,343:2,362:1
 @a^255849^53:1,73:4
 @a^255850^53:4,73:3,93:4
 @a^255851^214:2
@@ -949,6 +964,7 @@ GoldScout-export 7^dbk4l44fkkqw^7
 @t^766^1:178
 @t^922^8:343
 @t^1087^2:72
+@t^2736^7:438
 @t^255849^5:273
 @t^255850^11:727
 @t^255851^1:83
