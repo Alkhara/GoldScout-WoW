@@ -1,4 +1,4 @@
-GoldScout-export 9^jkty2t8embfo^27
+GoldScout-export 9^jkty2t8embfo^28
 587^14^0^33^34^1434^0.3038^0.1857^14^Bloodscalp Warrior^1519:5:5,1520:3:3,2592:1:3,2742:1:1,2745:1:1,3800:1:1,3901:1:1,3915:5:5,4306:2:3^
 681^8^0^30^31^1434^0.3567^0.1251^8^Young Stranglethorn Tiger^1686:5:5,1687:1:1,12202:2:2^
 682^7^0^32^33^1434^0.4690^0.1329^7^Stranglethorn Tiger^1686:5:5,12202:5:5,213545:1:1^
@@ -119,6 +119,12 @@ GoldScout-export 9^jkty2t8embfo^27
 14278^1^0^28^28^1424^0.6455^0.5953^1^Ro'Bark^3041:1:1,9828:1:1^
 14281^1^0^34^34^1416^0.4907^0.8031^1^Jimmy the Bleeder^4306:1:2,13127:1:1^
 32454^1^0^28^28^1416^0.1830^0.8501^1^Dalaran Citizen^^
+250187^1^0^0^0^0^0.0000^0.0000^0^^3786:1:1^
+258799^7^0^0^0^0^0.0000^0.0000^0^^1988:1:1,4306:2:5,5567:1:1,7432:1:1,15234:1:1^
+258804^1^0^0^0^0^0.0000^0.0000^0^^4306:1:1^
+258849^1^0^0^0^0^0.0000^0.0000^0^^9851:1:1^
+258924^1^0^0^0^0^0.0000^0.0000^0^^274613:1:1^
+263196^1^0^0^0^0^0.0000^0.0000^0^^^
 @i^729^Stringy Vulture Meat
 @i^770^Pointy Crocolisk Tooth
 @i^878^Fist-sized Spinneret
@@ -139,6 +145,7 @@ GoldScout-export 9^jkty2t8embfo^27
 @i^1710^Greater Healing Potion
 @i^1711^Scroll of Stamina II
 @i^1759^Reinforced Chain Pants
+@i^1988^Chief Brigadier Gauntlets
 @i^2077^Magician Staff of Spirit
 @i^2251^Gooey Spider Leg
 @i^2289^Scroll of Strength II
@@ -178,6 +185,7 @@ GoldScout-export 9^jkty2t8embfo^27
 @i^3778^Taut Compound Bow
 @i^3781^Broad Claymore
 @i^3784^Metal Stave
+@i^3786^Shiny Dirk
 @i^3797^Interlaced Pants
 @i^3799^Interlaced Vest
 @i^3800^Hardened Leather Belt
@@ -210,6 +218,7 @@ GoldScout-export 9^jkty2t8embfo^27
 @i^5137^Bright Eyeball
 @i^5214^Wand of Eventide
 @i^5524^Thick-shelled Clam
+@i^5567^Silver Hook
 @i^5569^Seaweed
 @i^5637^Large Fang
 @i^5794^Salty Scorpid Venom
@@ -238,10 +247,12 @@ GoldScout-export 9^jkty2t8embfo^27
 @i^6986^Crimson Lotus
 @i^7072^Naga Scale
 @i^7417^Phalanx Boots of the Boar
+@i^7432^Twilight Cowl of the Sorcerer
 @i^8365^Raw Mithril Head Trout
 @i^8385^Pattern: Turtle Scale Gloves
 @i^8747^Hardened Leather Helm
 @i^9828^Scaled Leather Boots of the Eagle
+@i^9851^Conjurer's Breeches of the Channeler
 @i^9867^Renegade Cloak of the Bandit
 @i^11384^Broken Basilisk Teeth
 @i^11385^Basilisk Scale
@@ -254,6 +265,7 @@ GoldScout-export 9^jkty2t8embfo^27
 @i^13127^Frostreaver Crown
 @i^13542^Demon Box
 @i^14409^Stonecloth Cape
+@i^15234^Greater Scythe of the Monkey
 @i^15750^Sceptre of Light
 @i^15803^Book of the Ancients
 @i^15874^Soft-shelled Clam
@@ -279,6 +291,7 @@ GoldScout-export 9^jkty2t8embfo^27
 @i^254432^Carved Centaur Totem
 @i^255723^Manual: Greater Healing Potion
 @i^262889^Sealed Expert's Writ
+@i^274613^Priestess Cloak
 @i^278225^Surgical Spidersilk
 @q^729^1:7:1
 @q^770^0:15:0
@@ -300,6 +313,7 @@ GoldScout-export 9^jkty2t8embfo^27
 @q^1710^1:0:0
 @q^1711^1:0:0
 @q^1759^0:4:0
+@q^1988^2:4:0
 @q^2077^2:2:0
 @q^2251^1:7:1
 @q^2289^1:0:0
@@ -339,6 +353,7 @@ GoldScout-export 9^jkty2t8embfo^27
 @q^3778^0:2:0
 @q^3781^0:2:0
 @q^3784^0:2:0
+@q^3786^0:2:0
 @q^3797^0:4:0
 @q^3799^0:4:0
 @q^3800^0:4:0
@@ -371,6 +386,7 @@ GoldScout-export 9^jkty2t8embfo^27
 @q^5137^0:15:0
 @q^5214^2:2:0
 @q^5524^1:7:0
+@q^5567^0:15:0
 @q^5569^0:15:0
 @q^5637^1:7:1
 @q^5794^1:12:0
@@ -399,10 +415,12 @@ GoldScout-export 9^jkty2t8embfo^27
 @q^6986^0:15:0
 @q^7072^1:7:1
 @q^7417^2:4:0
+@q^7432^2:4:0
 @q^8365^1:7:1
 @q^8385^1:9:0
 @q^8747^0:4:0
 @q^9828^2:4:0
+@q^9851^2:4:0
 @q^9867^2:4:0
 @q^11384^0:15:0
 @q^11385^0:15:0
@@ -415,6 +433,7 @@ GoldScout-export 9^jkty2t8embfo^27
 @q^13127^3:4:0
 @q^13542^1:12:0
 @q^14409^2:4:0
+@q^15234^2:2:0
 @q^15750^1:12:0
 @q^15803^1:12:0
 @q^15874^1:13:0
@@ -440,6 +459,7 @@ GoldScout-export 9^jkty2t8embfo^27
 @q^254432^2:15:0
 @q^255723^2:9:0
 @q^262889^3:0:0
+@q^274613^3:4:0
 @q^278225^1:12:0
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
