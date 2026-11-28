@@ -1,4 +1,4 @@
-GoldScout-export 6^2kk5dqew2x81^15
+GoldScout-export 9^2kk5dqew2x81^16
 157^1^0^14^14^1436^0.5679^0.5802^1^Goretusk^769:1:2,3172:1:1^
 206^4^0^29^30^1431^0.7406^0.6897^4^Nightbane Vile Fang^^
 212^8^0^29^30^1431^0.3320^0.7190^8^Splinter Fist Warrior^1205:2:2,1826:1:1,3770:1:1,4306:2:3^
@@ -67,6 +67,7 @@ GoldScout-export 6^2kk5dqew2x81^15
 2560^2^0^33^34^1417^0.3175^0.6291^2^Highland Thrasher^3685:1:1,12184:1:1^
 2563^2^0^32^33^1417^0.3741^0.6382^2^Plains Creeper^1081:1:1,4585:1:1^
 2575^1^0^32^32^1417^0.4694^0.8818^1^Dark Iron Supplier^4306:1:2^
+2955^9^0^1^2^1412^0.4635^0.7749^9^Plainstrider^1364:1:1,2654:1:1,3365:1:1,4739:7:7,4740:7:7,4757:2:2,7096:7:7,7097:1:1^
 4062^3^0^30^31^1417^0.4662^0.8816^3^Dark Iron Bombardier^4306:1:2^
 4457^1^0^36^36^1434^0.3689^0.2124^1^Murkgill Forager^17057:1:1,17058:1:1^
 6412^1^0^24^25^1437^0.4527^0.4316^1^Skeleton^^
@@ -154,6 +155,9 @@ GoldScout-export 6^2kk5dqew2x81^15
 @i^4586^Smooth Raptor Skin
 @i^4603^Raw Spotted Yellowtail
 @i^4636^Strong Iron Lockbox
+@i^4739^Plainstrider Meat
+@i^4740^Plainstrider Feather
+@i^4757^Cracked Egg Shells
 @i^5113^Mark of the Syndicate
 @i^5136^Torn Furry Ear
 @i^5524^Thick-shelled Clam
@@ -166,6 +170,8 @@ GoldScout-export 6^2kk5dqew2x81^15
 @i^6362^Raw Rockscale Cod
 @i^6382^Forest Leather Belt
 @i^6444^Forked Tongue
+@i^7096^Plucked Feather
+@i^7097^Leg Meat
 @i^7408^Infiltrator Shoulders of the Wolf
 @i^9860^Archer's Cloak of the Beast
 @i^11150^Formula: Enchant Gloves - Mining
@@ -269,6 +275,9 @@ GoldScout-export 6^2kk5dqew2x81^15
 @q^4586^0:15:0
 @q^4603^1:7:1
 @q^4636^2:15:0
+@q^4739^1:12:0
+@q^4740^1:12:0
+@q^4757^0:15:0
 @q^5113^0:15:0
 @q^5136^0:15:0
 @q^5524^1:7:0
@@ -281,6 +290,8 @@ GoldScout-export 6^2kk5dqew2x81^15
 @q^6362^1:7:1
 @q^6382^2:4:0
 @q^6444^0:15:0
+@q^7096^0:15:0
+@q^7097^1:0:0
 @q^7408^2:4:0
 @q^9860^2:4:0
 @q^11150^2:9:0
@@ -310,6 +321,7 @@ GoldScout-export 6^2kk5dqew2x81^15
 @q^279385^1:12:0
 @q^279537^1:15:0
 @q^280103^1:12:0
+@m^1412^Mulgore
 @m^1416^Alterac Mountains
 @m^1417^Arathi Highlands
 @m^1420^Tirisfal Glades
@@ -1151,6 +1163,7 @@ GoldScout-export 6^2kk5dqew2x81^15
 @a^2560^246:2
 @a^2563^226:1,288:1
 @a^2575^349:1
+@a^2955^309:9
 @a^4062^349:3
 @a^4457^87:1
 @a^6412^169:1
@@ -1164,6 +1177,7 @@ GoldScout-export 6^2kk5dqew2x81^15
 @a^263307^232:1
 @a^270589^83:1
 @a^271334^91:1,112:1,171:1
+@t^2955^8:139
 @f^1439^0^1^32^12238:1:1^166:1
 @f^2548^0^7^146^4603:1:1,6358:1:1,6359:3:3,6362:2:2^331:7
 @l^0^enUS

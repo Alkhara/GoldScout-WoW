@@ -1,4 +1,4 @@
-GoldScout-export 9^29uswtmvi1hp^20
+GoldScout-export 9^29uswtmvi1hp^21
 232^4^0^23^23^1424^0.3328^0.3495^4^Farmer Ray^422:1:1,1485:2:2,4538:1:1^
 1085^2^0^34^35^1434^0.3402^0.1967^2^Elder Stranglethorn Tiger^1686:1:1,12202:1:1^
 2240^8^0^32^33^1416^0.4787^0.8055^8^Syndicate Footpad^3601:1:1,4306:4:5,5113:1:1^
@@ -86,10 +86,10 @@ GoldScout-export 9^29uswtmvi1hp^20
 2558^1^0^36^37^1417^0.2173^0.6561^1^Witherbark Berserker^^
 2559^26^0^30^31^1417^0.5384^0.4911^26^Highland Strider^1696:4:4,3685:12:12,4461:10:10,4512:10:10,4586:1:1,12184:8:8^
 2560^4^0^33^34^1417^0.5137^0.5374^4^Highland Thrasher^3685:4:4,4461:1:1,4586:1:1,5637:1:1,12184:1:1^
-2561^90^0^36^37^1417^0.4878^0.7470^90^Highland Fleshstalker^1696:21:21,3685:47:47,4461:37:37,4513:12:12,4586:8:8,4636:1:1,5637:5:5,6417:1:1,12184:41:41,262889:1:1^
+2561^100^0^36^37^1417^0.4915^0.7399^100^Highland Fleshstalker^1696:23:23,3685:52:52,4067:1:1,4461:40:40,4513:12:12,4586:8:8,4636:1:1,5637:5:5,6417:1:1,11204:1:1,12184:44:44,15213:1:1,262889:1:1^
 2562^13^0^32^33^1417^0.3425^0.4695^13^Boulderfist Ogre^1710:1:1,2290:1:1,2592:1:1,3771:1:1,4306:4:6,4338:1:1,213422:1:1^
 2564^15^0^33^34^1417^0.3304^0.4527^15^Boulderfist Enforcer^2592:1:1,4306:4:7,213544:1:1^
-2565^4^0^35^36^1417^0.4952^0.7143^4^Giant Plains Creeper^878:2:2,1074:1:1,2251:3:3,4585:2:2^
+2565^5^0^35^36^1417^0.5009^0.6996^5^Giant Plains Creeper^878:3:3,1074:1:1,1081:1:1,2251:4:4,3182:1:1,4585:2:2^
 2566^11^0^35^36^1417^0.5439^0.7625^11^Boulderfist Brute^1708:1:1,1710:1:1,2592:1:3,3385:1:1,3771:1:1,3805:1:1,4306:3:5^
 2567^4^0^36^37^1417^0.5388^0.7746^4^Boulderfist Magus^4306:1:3^
 2569^11^0^37^38^1417^0.2312^0.6594^11^Boulderfist Mauler^3803:1:1,4306:4:8,248691:1:1^
@@ -319,6 +319,7 @@ GoldScout-export 9^29uswtmvi1hp^20
 @i^3864^Citrine
 @i^4049^Emblazoned Bracers
 @i^4060^Glyphed Leggings
+@i^4067^Glyphed Buckler
 @i^4072^Glimmering Mail Gauntlets
 @i^4087^Trueshot Bow of the Bandit
 @i^4093^Large Basilisk Tail
@@ -426,6 +427,7 @@ GoldScout-export 9^29uswtmvi1hp^20
 @i^9885^Huntsman's Boots of the Bear
 @i^10406^Scaled Leather Headband of Spirit
 @i^11167^Formula: Enchant Boots - Lesser Spirit
+@i^11204^Formula: Enchant Bracer - Greater Spirit
 @i^11384^Broken Basilisk Teeth
 @i^11385^Basilisk Scale
 @i^11386^Squishy Basilisk Eye
@@ -446,6 +448,7 @@ GoldScout-export 9^29uswtmvi1hp^20
 @i^14593^Hawkeye's Cloak
 @i^15142^Ghostwalker Boots of Arcane Protection
 @i^15212^Fighter Broadsword of Fire Protection
+@i^15213^Mercenary Blade of the Monkey
 @i^15230^Ridge Cleaver of the Boar
 @i^15261^Sequoia Branch of Strength
 @i^15269^Massive Battle Axe of the Tiger
@@ -597,6 +600,7 @@ GoldScout-export 9^29uswtmvi1hp^20
 @q^3864^2:7:1
 @q^4049^2:4:0
 @q^4060^2:4:0
+@q^4067^2:4:0
 @q^4072^2:4:0
 @q^4087^2:2:0
 @q^4093^0:15:0
@@ -704,6 +708,7 @@ GoldScout-export 9^29uswtmvi1hp^20
 @q^9885^2:4:0
 @q^10406^2:4:0
 @q^11167^2:9:0
+@q^11204^2:9:0
 @q^11384^0:15:0
 @q^11385^0:15:0
 @q^11386^0:15:0
@@ -724,6 +729,7 @@ GoldScout-export 9^29uswtmvi1hp^20
 @q^14593^2:4:0
 @q^15142^2:4:0
 @q^15212^2:2:0
+@q^15213^2:2:0
 @q^15230^2:2:0
 @q^15261^2:2:0
 @q^15269^2:2:0
@@ -1640,10 +1646,10 @@ GoldScout-export 9^29uswtmvi1hp^20
 @a^2558^264:1
 @a^2559^153:1,170:4,189:1,190:8,191:7,209:2,213:1,308:2
 @a^2560^148:1,230:1,250:2
-@a^2561^250:2,269:2,270:22,271:2,289:11,290:1,309:33,329:17
+@a^2561^250:4,269:3,270:28,271:2,289:11,290:1,309:34,329:17
 @a^2562^167:1,186:7,187:5
 @a^2564^166:7,186:8
-@a^2565^270:2,309:2
+@a^2565^250:1,270:2,309:2
 @a^2566^290:3,291:1,310:6,330:1
 @a^2567^290:1,310:3
 @a^2569^244:3,264:8

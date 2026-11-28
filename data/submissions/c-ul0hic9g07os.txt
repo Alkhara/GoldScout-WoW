@@ -1,4 +1,4 @@
-GoldScout-export 9^ul0hic9g07os^48
+GoldScout-export 9^ul0hic9g07os^49
 3^13^0^24^25^1431^0.2382^0.3748^13^Flesh Eater^885:2:2,1129:3:3,1777:1:1,2220:1:1,2592:1:2,2794:1:1,4306:2:2,4606:1:1,5529:1:1,6530:2:2^
 48^13^0^21^22^1431^0.7903^0.7090^13^Skeletal Warrior^2378:6:6,2592:3:4,2783:1:1^
 202^33^0^23^24^1431^0.2518^0.4631^33^Skeletal Horror^1205:2:2,1598:4:4,1774:1:1,2589:1:2,2592:11:17,3385:1:1,4306:1:1,4606:5:5,9814:1:1,248689:1:1^
@@ -378,12 +378,16 @@ GoldScout-export 9^ul0hic9g07os^48
 256952^32^0^39^40^2548^0.4840^0.4906^32^Twilight Raider^3671:1:1,3785:1:1,4306:10:18,4338:1:1,5429:1:1,5431:1:1,6438:1:1,213545:1:1,248693:1:1,266148:7:7,267073:3:5^
 257001^1^0^42^42^2548^0.7747^0.7232^1^Old Rot-Chum^268341:1:1^
 257017^3^0^37^38^2548^0.4611^0.4637^3^Twilight Worg^4582:2:2^
+257900^4^0^0^0^1415^0.0000^0.0000^0^^^
 258032^1^0^46^46^2548^0.2830^0.4627^1^Twilight Forgemaster^5429:1:1,281665:1:1^
+258042^5^0^0^0^1415^0.0000^0.0000^0^^3817:1:1,3962:1:1,4602:1:1,10606:1:1,267234:3:3^
 258522^1^0^38^38^2548^0.5441^0.8557^1^Sootfur^4582:1:1,265738:1:1^
 258573^18^0^36^37^2548^0.4632^0.6767^18^Mudfin Oracle^3928:1:1,4421:1:1,5524:10:10,9859:1:1,17058:7:7,267266:5:5^
 258574^19^0^37^38^2548^0.4760^0.7046^19^Mudfin Warrior^3786:1:1,3795:1:1,3798:1:1,3928:2:2,4603:1:1,5524:6:6,17058:7:7,267266:3:3^
 258588^14^0^38^40^2548^0.4391^0.5869^14^Jumbo Crawfish^1708:1:1,5524:3:3,266157:4:4^
+258687^2^0^0^0^1415^0.0000^0.0000^0^^4601:1:1^
 258922^4^0^37^38^2548^0.4605^0.7092^4^Hungry Crocolisk^^
+258966^1^0^0^0^1415^0.0000^0.0000^0^^274997:1:1^
 259046^1^0^38^39^2548^0.4382^0.5059^1^Freshwater Crocolisk^^
 259052^12^0^38^39^2548^0.6146^0.5857^12^Rog'mar Poacher^4306:6:10,4338:1:1^
 259054^10^0^38^39^2548^0.5945^0.5324^10^Wildplains Patriarch^1688:4:4,4636:1:1,5637:1:1,213543:1:1,266888:2:2^
@@ -619,6 +623,7 @@ GoldScout-export 9^ul0hic9g07os^48
 @i^3939^Crochet Cloak
 @i^3941^Crochet Pants
 @i^3942^Crochet Shoulderpads
+@i^3962^Thick Leather Boots
 @i^3965^Thick Leather Gloves
 @i^4019^Heavy Flint Axe
 @i^4047^Mistscape Boots
@@ -648,6 +653,8 @@ GoldScout-export 9^ul0hic9g07os^48
 @i^4585^Dripping Spider Mandible
 @i^4586^Smooth Raptor Skin
 @i^4599^Cured Ham Steak
+@i^4601^Soft Banana Bread
+@i^4602^Moon Harvest Pumpkin
 @i^4603^Raw Spotted Yellowtail
 @i^4606^Spongy Morel
 @i^4607^Delicious Cave Mold
@@ -789,6 +796,7 @@ GoldScout-export 9^ul0hic9g07os^48
 @i^9923^Tracker's Shoulderpads of the Gorilla
 @i^9956^Warmonger's Bracers of the Bear
 @i^10185^Swashbuckler's Cape of Frozen Wrath
+@i^10606^Schematic: Parachute Cloak
 @i^10660^First Mosh'aru Tablet
 @i^10661^Second Mosh'aru Tablet
 @i^10760^Swine Fists
@@ -914,6 +922,7 @@ GoldScout-export 9^ul0hic9g07os^48
 @i^266427^Field Marshal's Log
 @i^266888^Prized Lion Hide
 @i^267073^Twilight Finger Bone
+@i^267234^Twilight Bangle
 @i^267266^Mudfin Murloc Head
 @i^268341^Rot-Covered Harpoon
 @i^268344^Saltwater Murloc Eye
@@ -945,6 +954,7 @@ GoldScout-export 9^ul0hic9g07os^48
 @i^274648^The Desert Rose
 @i^274652^Wall of Water
 @i^274655^Peacekeeper Wand
+@i^274997^Chain of Binding
 @i^277112^Zum'rah's Head
 @i^277917^Stonetalon Supply Bundle
 @i^277957^Primitive Key
@@ -1145,6 +1155,7 @@ GoldScout-export 9^ul0hic9g07os^48
 @q^3939^0:4:0
 @q^3941^0:4:0
 @q^3942^0:4:0
+@q^3962^0:4:0
 @q^3965^0:4:0
 @q^4019^0:2:0
 @q^4047^2:4:0
@@ -1174,6 +1185,8 @@ GoldScout-export 9^ul0hic9g07os^48
 @q^4585^0:15:0
 @q^4586^0:15:0
 @q^4599^1:0:0
+@q^4601^1:0:0
+@q^4602^1:0:0
 @q^4603^1:7:1
 @q^4606^1:0:0
 @q^4607^1:0:0
@@ -1315,6 +1328,7 @@ GoldScout-export 9^ul0hic9g07os^48
 @q^9923^2:4:0
 @q^9956^2:4:0
 @q^10185^2:4:0
+@q^10606^2:9:0
 @q^10660^1:12:0
 @q^10661^1:12:0
 @q^10760^3:4:0
@@ -1440,6 +1454,7 @@ GoldScout-export 9^ul0hic9g07os^48
 @q^266427^1:12:0
 @q^266888^1:12:0
 @q^267073^1:12:0
+@q^267234^1:12:0
 @q^267266^1:12:0
 @q^268341^1:12:0
 @q^268344^1:12:0
@@ -1471,6 +1486,7 @@ GoldScout-export 9^ul0hic9g07os^48
 @q^274648^3:4:0
 @q^274652^3:4:0
 @q^274655^3:2:0
+@q^274997^3:4:0
 @q^277112^1:12:0
 @q^277917^1:12:0
 @q^277957^1:12:0
