@@ -1,4 +1,8 @@
-GoldScout-export 6^6ltwoqwruze8^11
+GoldScout-export 9^6ltwoqwruze8^12
+6^4^0^1^2^1429^0.4798^0.3744^4^Kobold Vermin^1377:1:1,2589:1:1,2656:1:1,4536:1:1^
+69^2^0^2^2^1429^0.4807^0.3833^2^Timber Wolf^750:2:2,2654:1:1,4865:1:1^
+257^1^0^3^3^1429^0.4817^0.3749^1^Kobold Worker^2652:1:1,247834:1:1^
+299^7^0^1^1^1429^0.4807^0.3796^7^Young Wolf^750:4:4,2211:1:1,2672:1:1,4865:5:5,7073:2:2,7074:1:1^
 682^9^0^32^33^1434^0.4708^0.1429^9^Stranglethorn Tiger^1686:5:5,1687:2:2,8146:1:1,12202:3:3^
 685^9^0^33^34^1434^0.2643^0.1600^9^Stranglethorn Raptor^1696:1:1,3685:7:7,4461:3:3,12184:2:2,213547:1:1^
 689^23^0^34^35^1434^0.2521^0.1771^23^Crystal Spine Basilisk^1701:8:8,1702:7:7,1703:3:3,3918:10:10,4093:1:1,5637:2:2,11386:2:2^
@@ -66,12 +70,14 @@ GoldScout-export 6^6ltwoqwruze8^11
 12576^1^0^25^25^1441^0.3200^0.2178^1^Grish Longrunner^^
 260429^1^0^39^39^1434^0.4348^0.2033^1^Venture Co. Agent^^
 @i^729^Stringy Vulture Meat
+@i^750^Tough Wolf Meat
 @i^770^Pointy Crocolisk Tooth
 @i^865^Leaden Mace of Intellect
 @i^878^Fist-sized Spinneret
 @i^1081^Crisp Spider Meat
 @i^1206^Moss Agate
 @i^1288^Large Venom Sac
+@i^1377^Frayed Gloves
 @i^1464^Buzzard Talon
 @i^1630^Broken Electro-lantern
 @i^1686^Bristly Whisker
@@ -82,8 +88,14 @@ GoldScout-export 6^6ltwoqwruze8^11
 @i^1703^Crystal Basilisk Spine
 @i^1708^Sweet Nectar
 @i^1710^Greater Healing Potion
+@i^2211^Bent Large Shield
 @i^2251^Gooey Spider Leg
+@i^2589^Linen Cloth
 @i^2592^Wool Cloth
+@i^2652^Flimsy Chain Cloak
+@i^2654^Flimsy Chain Pants
+@i^2656^Flimsy Chain Vest
+@i^2672^Stringy Wolf Meat
 @i^2748^Green Hills of Stranglethorn - Page 24
 @i^2749^Green Hills of Stranglethorn - Page 25
 @i^2751^Green Hills of Stranglethorn - Page 27
@@ -111,9 +123,11 @@ GoldScout-export 6^6ltwoqwruze8^11
 @i^4428^Spider Palp
 @i^4461^Raptor Hide
 @i^4482^Sealed Folder
+@i^4536^Shiny Red Apple
 @i^4555^Thick Scaly Tail
 @i^4556^Speckled Shell Fragment
 @i^4784^Lifeless Stone
+@i^4865^Ruined Pelt
 @i^5114^Severed Talon
 @i^5115^Broken Wishbone
 @i^5116^Long Tail Feather
@@ -143,6 +157,8 @@ GoldScout-export 6^6ltwoqwruze8^11
 @i^6986^Crimson Lotus
 @i^7069^Elemental Air
 @i^7072^Naga Scale
+@i^7073^Broken Fang
+@i^7074^Chipped Claw
 @i^8146^Wicked Claw
 @i^8365^Raw Mithril Head Trout
 @i^8748^Double Mail Coif
@@ -181,18 +197,21 @@ GoldScout-export 6^6ltwoqwruze8^11
 @i^211855^Scroll: STHENIC LUNATE
 @i^213544^Scroll: TOPAZ YORAK
 @i^213547^Scroll: THAW WORDS
+@i^247834^Nibbled-On Book
 @i^248691^Waylaid Crate: Flowering Expert Herbs
 @i^248692^Waylaid Crate: Expert Ore
 @i^248706^Waylaid Crate: Journeyman Ingots
 @i^252804^Pattern: Hillman's Leather Boots
 @i^262888^Sealed Journeyman's Writ
 @q^729^1:7:1
+@q^750^1:12:0
 @q^770^0:15:0
 @q^865^2:2:0
 @q^878^0:7:0
 @q^1081^1:7:1
 @q^1206^2:7:1
 @q^1288^1:7:1
+@q^1377^0:4:0
 @q^1464^0:15:0
 @q^1630^0:15:0
 @q^1686^0:15:0
@@ -203,8 +222,14 @@ GoldScout-export 6^6ltwoqwruze8^11
 @q^1703^1:0:0
 @q^1708^1:0:0
 @q^1710^1:0:0
+@q^2211^0:4:0
 @q^2251^1:7:1
+@q^2589^1:7:1
 @q^2592^1:7:1
+@q^2652^0:4:0
+@q^2654^0:4:0
+@q^2656^0:4:0
+@q^2672^1:7:1
 @q^2748^1:12:0
 @q^2749^1:12:0
 @q^2751^1:12:0
@@ -232,9 +257,11 @@ GoldScout-export 6^6ltwoqwruze8^11
 @q^4428^0:15:0
 @q^4461^1:7:1
 @q^4482^1:12:0
+@q^4536^1:0:0
 @q^4555^0:15:0
 @q^4556^0:15:0
 @q^4784^0:15:0
+@q^4865^0:15:0
 @q^5114^0:15:0
 @q^5115^0:15:0
 @q^5116^1:7:1
@@ -264,6 +291,8 @@ GoldScout-export 6^6ltwoqwruze8^11
 @q^6986^0:15:0
 @q^7069^1:7:1
 @q^7072^1:7:1
+@q^7073^0:15:0
+@q^7074^0:15:0
 @q^8146^1:7:1
 @q^8365^1:7:1
 @q^8748^0:4:0
@@ -302,6 +331,7 @@ GoldScout-export 6^6ltwoqwruze8^11
 @q^211855^1:0:0
 @q^213544^1:0:0
 @q^213547^1:0:0
+@q^247834^1:15:0
 @q^248691^1:0:1
 @q^248692^1:0:1
 @q^248706^2:0:1
@@ -310,6 +340,7 @@ GoldScout-export 6^6ltwoqwruze8^11
 @m^1413^The Barrens
 @m^1417^Arathi Highlands
 @m^1424^Hillsbrad Foothills
+@m^1429^Elwynn Forest
 @m^1434^Stranglethorn Vale
 @m^1440^Ashenvale
 @m^1441^Thousand Needles
@@ -1006,6 +1037,10 @@ GoldScout-export 6^6ltwoqwruze8^11
 @c^285280^
 @c^285281^
 @c^286152^
+@a^6^149:4
+@a^69^149:2
+@a^257^149:1
+@a^299^149:7
 @a^682^49:5,69:4
 @a^685^45:1,64:2,65:6
 @a^689^64:12,65:11

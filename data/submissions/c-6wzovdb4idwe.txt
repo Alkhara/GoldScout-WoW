@@ -1,4 +1,4 @@
-GoldScout-export 9^6wzovdb4idwe^15
+GoldScout-export 9^6wzovdb4idwe^16
 667^2^0^39^40^1434^0.4624^0.3219^2^Guerrero Machacacráneos^1524:1:1,4306:2:4^
 670^1^0^41^42^1434^0.4564^0.4255^1^Médico brujo Machacacráneos^^
 672^1^0^44^44^1434^0.4456^0.4393^1^Cazaespíritus Machacacráneos^4338:1:1^
@@ -19,6 +19,8 @@ GoldScout-export 9^6wzovdb4idwe^15
 854^1^0^36^37^1434^0.3172^0.4284^1^Acechador joven de la selva^^
 1059^1^0^45^45^1434^0.4454^0.4404^1^Ana'thek el Cruel^3909:1:1^
 1557^8^0^40^41^1434^0.3302^0.6504^8^Gorila Velo de Bruma anciano^2799:1:1^
+1815^4^0^51^52^1422^0.3646^0.6491^4^Oso negro malsano^11408:1:1,11409:1:1,11410:2:2,20611:3:3^
+1822^6^0^50^51^1422^0.3300^0.6217^6^Rondador Brumatósigo^1074:2:2,4337:1:1,12205:2:2,20610:4:4^
 2521^1^0^50^50^1434^0.4036^0.8305^1^Gorila Cieloleno^2799:1:1,4099:1:1^
 2522^1^0^50^50^1434^0.3847^0.8082^1^Acechador de Jaguero^4581:1:1^
 2649^1^0^40^40^1425^0.2392^0.5774^1^Arrancacabelleras Secacorteza^1520:1:1,4338:1:1^
@@ -213,6 +215,7 @@ GoldScout-export 9^6wzovdb4idwe^15
 272313^3^0^39^40^2548^0.7428^0.7186^3^Pinzador caparasal^^
 @i^769^Trozo de carne de jabalí
 @i^770^Diente de crocolisco puntiagudo
+@i^1074^Punta de pata de araña dura
 @i^1464^Garfa de águila ratonera
 @i^1477^Pergamino de agilidad II
 @i^1520^Sudor trol
@@ -368,6 +371,9 @@ GoldScout-export 9^6wzovdb4idwe^15
 @i^11386^Ojo de basilisco fangoso
 @i^11391^Ala de murciélago con púas
 @i^11394^Corazón de murciélago
+@i^11408^Mandíbula de oso
+@i^11409^Costillar de oso
+@i^11410^Garra de oso indómito
 @i^11416^Caja torácica delicada
 @i^11418^Hueso hueco de ala
 @i^11971^Sortija de amatista del oso
@@ -424,6 +430,8 @@ GoldScout-export 9^6wzovdb4idwe^15
 @i^19935^Glándula de veneno vacía
 @i^19936^Caparazón de escórpido seco
 @i^20519^Sombrero de pirata de los Mares del Sur
+@i^20610^Ojo de araña tirosangre
+@i^20611^Garra negra gruesa
 @i^20763^Arma rota
 @i^20767^Bolsa cubierta de suciedad
 @i^213545^Pergamino: TOPSE ALTOMIAGU
@@ -461,6 +469,7 @@ GoldScout-export 9^6wzovdb4idwe^15
 @i^287070^Jabalina traspasanubes
 @q^769^1:7:1
 @q^770^0:15:0
+@q^1074^0:15:0
 @q^1464^0:15:0
 @q^1477^1:0:0
 @q^1520^0:15:0
@@ -616,6 +625,9 @@ GoldScout-export 9^6wzovdb4idwe^15
 @q^11386^0:15:0
 @q^11391^0:15:0
 @q^11394^0:15:0
+@q^11408^0:15:0
+@q^11409^0:15:0
+@q^11410^0:15:0
 @q^11416^0:15:0
 @q^11418^0:15:0
 @q^11971^2:4:0
@@ -672,6 +684,8 @@ GoldScout-export 9^6wzovdb4idwe^15
 @q^19935^0:15:0
 @q^19936^0:15:0
 @q^20519^1:12:0
+@q^20610^1:15:0
+@q^20611^1:15:0
 @q^20763^0:15:0
 @q^20767^1:15:0
 @q^213545^1:0:0
@@ -711,6 +725,7 @@ GoldScout-export 9^6wzovdb4idwe^15
 @m^1414^Kalimdor
 @m^1415^Reinos del Este
 @m^1418^Tierras Inhóspitas
+@m^1422^Tierras de la Peste del Oeste
 @m^1425^Tierras del Interior
 @m^1434^Vega de Tuercespina
 @m^1444^Feralas
@@ -1274,6 +1289,8 @@ GoldScout-export 9^6wzovdb4idwe^15
 @a^854^166:1
 @a^1059^168:1
 @a^1557^246:2,266:6
+@a^1815^246:1,247:1,267:2
+@a^1822^245:2,246:1,247:3
 @a^2521^328:1
 @a^2522^327:1
 @a^2649^224:1
@@ -1360,6 +1377,8 @@ GoldScout-export 9^6wzovdb4idwe^15
 @a^263348^213:3,233:7
 @a^269577^70:1
 @a^272313^294:3
+@t^1815^3:459
+@t^1822^6:966
 @t^2655^6:1182
 @t^2656^3:77
 @t^2925^2:451

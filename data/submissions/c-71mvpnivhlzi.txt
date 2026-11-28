@@ -1,4 +1,4 @@
-GoldScout-export 9^71mvpnivhlzi^20
+GoldScout-export 9^71mvpnivhlzi^23
 115^1^0^18^18^1436^0.6248^0.6183^1^Segador de la cosecha^1274:1:1^
 565^1^0^20^20^1431^0.1371^0.6949^1^Lobo feroz rabioso^^
 573^1^0^20^20^1436^0.6248^0.6183^1^Revientaenemigos 4000^732:1:1,933:1:1,1274:1:1^
@@ -68,9 +68,16 @@ GoldScout-export 9^71mvpnivhlzi^20
 2572^7^8^35^36^1417^0.8043^0.3688^7^Kóbold Mostacho Seco^4306:4:7,4435:1:1,4539:1:1^3771:1:1,5429:1:1,16883:1:1
 2573^4^5^37^38^1417^0.8429^0.3125^4^Perito Mostacho Seco^1710:1:1,3810:1:1,4306:4:9,4435:2:2^
 2574^10^14^36^37^1417^0.8494^0.3197^10^Cavador Mostacho Seco^4306:1:2,4435:5:5,4479:1:1,4539:1:1^1710:2:2,3771:1:1,5429:1:1,16883:1:1
+2618^1^0^34^34^1417^0.6028^0.5828^1^Peón Sentencia^4306:1:1^
+2619^1^2^34^35^1417^0.5875^0.5965^1^Bruto Sentencia^^3771:1:1
+2636^1^0^39^39^1417^0.3324^0.8114^1^Marinero de cubierta Aguasnegras^^
 2714^1^1^35^35^1417^0.3806^0.5339^1^Mensajero Renegado^4482:1:1^
+2733^1^0^36^36^1417^0.6012^0.5929^1^Boticario Jorell^4607:1:1^
 2742^0^1^39^39^0^0.0000^0.0000^0^Corista Forjatiniebla^^
 2743^0^1^38^39^0^0.0000^0.0000^0^Guerrero Forjatiniebla^^
+2761^2^0^39^39^1417^0.6591^0.2969^2^Éxilu coronador^4481:1:1,4791:1:2,7070:1:1^
+2768^1^0^38^38^1417^0.3581^0.7933^1^Profesor Fiseltor^^
+2776^1^0^40^40^1417^0.3571^0.7968^1^Marea vengativa^^
 3560^4^0^33^34^1417^0.7043^0.6950^4^Guarda de sanación^^
 3712^1^0^19^20^1440^0.1196^0.3004^1^Filón Colafuria^5523:1:1^
 3713^14^3^18^19^1440^0.1404^0.2498^14^Jinete de olas Colafuria^929:1:1,5523:5:5,6308:1:1^
@@ -163,6 +170,7 @@ GoldScout-export 9^71mvpnivhlzi^20
 @i^4435^Mota de Myzrael
 @i^4461^Pellejo de raptor
 @i^4479^Talismán ardiente
+@i^4481^Talismán blasonado
 @i^4482^Carpeta sellada
 @i^4503^Colmillo Secacorteza
 @i^4522^Faltriquera de medicinas secacorteza
@@ -172,6 +180,7 @@ GoldScout-export 9^71mvpnivhlzi^20
 @i^4556^Fragmento de concha moteada
 @i^4585^Mandíbula de araña chorreando
 @i^4586^Piel de raptor lisa
+@i^4607^Moho de cueva delicado
 @i^4634^Arcón de hierro
 @i^4713^Capa de hilo de plata
 @i^4791^Agua encantada
@@ -291,6 +300,7 @@ GoldScout-export 9^71mvpnivhlzi^20
 @q^4435^1:12:0
 @q^4461^1:7:1
 @q^4479^1:0:0
+@q^4481^1:0:0
 @q^4482^1:12:0
 @q^4503^1:12:0
 @q^4522^1:12:0
@@ -300,6 +310,7 @@ GoldScout-export 9^71mvpnivhlzi^20
 @q^4556^0:15:0
 @q^4585^0:15:0
 @q^4586^0:15:0
+@q^4607^1:0:0
 @q^4634^2:15:0
 @q^4713^2:4:0
 @q^4791^1:0:0
@@ -1212,7 +1223,14 @@ GoldScout-export 9^71mvpnivhlzi^20
 @a^2572^135:2,155:1,156:4
 @a^2573^117:1,136:3
 @a^2574^136:6,137:4
+@a^2618^232:1
+@a^2619^231:1
+@a^2636^326:1
 @a^2714^207:1
+@a^2733^232:1
+@a^2761^113:1,133:1
+@a^2768^307:1
+@a^2776^307:1
 @a^3560^274:2,293:1,294:1
 @a^3712^122:1
 @a^3713^82:1,83:4,102:9
@@ -1242,5 +1260,8 @@ GoldScout-export 9^71mvpnivhlzi^20
 @t^2572^5:782
 @t^2573^4:425
 @t^2574^10:450
+@t^2636^1:66
+@t^2761^1:101
+@t^2768^1:36
 @t^3560^4:64
 @l^0^esES
