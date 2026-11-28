@@ -1,4 +1,4 @@
-GoldScout-export 9^9d90iqjtch4s^19
+GoldScout-export 9^9d90iqjtch4s^20
 213^1^0^19^19^1431^0.7982^0.2021^1^Starving Dire Wolf^893:1:1,1015:1:1^
 569^1^0^21^21^1431^0.7528^0.2290^1^Green Recluse^2251:1:1^
 1417^6^0^21^22^1437^0.0996^0.5077^6^Young Wetlands Crocolisk^770:2:2,3397:2:2,3667:3:3^
@@ -22,7 +22,10 @@ GoldScout-export 9^9d90iqjtch4s^19
 3733^2^0^18^19^1440^0.3165^0.2280^2^Forsaken Herbalist^2592:2:3^
 3734^8^0^20^20^1440^0.3182^0.2346^8^Forsaken Thug^2592:2:3,14370:1:1^
 3740^1^0^21^21^1440^0.1994^0.4151^1^Saltspittle Muckdweller^5463:1:1,17057:1:1^
-3809^1^0^22^22^1440^0.3321^0.3976^1^Ashenvale Bear^2940:1:1^
+3780^6^0^21^23^1440^0.4713^0.4666^6^Shadethicket Moss Eater^211855:1:1^
+3809^8^0^21^22^1440^0.4696^0.5013^8^Ashenvale Bear^2940:4:4,3702:2:2,3730:4:4,11406:3:3^
+3817^1^0^23^23^1440^0.5135^0.4519^1^Shadowhorn Stag^5471:1:1^
+3819^1^0^20^20^1440^0.4501^0.5353^1^Wildthorn Stalker^2251:1:1^
 3925^1^0^23^24^1440^0.3322^0.3977^1^Thistlefur Avenger^^
 8996^1^0^18^19^1440^0.3215^0.2995^1^Voidwalker Minion^^
 12922^4^0^18^19^1440^0.3136^0.3010^4^Imp Minion^^
@@ -49,6 +52,8 @@ GoldScout-export 9^9d90iqjtch4s^19
 @i^3173^Bear Meat
 @i^3397^Young Crocolisk Skin
 @i^3667^Tender Crocolisk Meat
+@i^3702^Bear Gall Bladder
+@i^3730^Big Bear Meat
 @i^4306^Silk Cloth
 @i^4542^Moist Cornbread
 @i^4681^Brackwater Girdle
@@ -56,6 +61,7 @@ GoldScout-export 9^9d90iqjtch4s^19
 @i^5348^Worn Parchment
 @i^5366^Glowing Soul Gem
 @i^5463^Glowing Gem
+@i^5471^Stag Meat
 @i^5523^Small Barnacled Clam
 @i^5568^Smooth Pebble
 @i^5784^Slimy Murloc Scale
@@ -64,7 +70,9 @@ GoldScout-export 9^9d90iqjtch4s^19
 @i^6303^Raw Slitherskin Mackerel
 @i^6308^Raw Bristle Whisker Catfish
 @i^6358^Oily Blackmouth
+@i^6359^Firefin Snapper
 @i^6361^Raw Rainbow Fin Albacore
+@i^11406^Rotting Bear Carcass
 @i^12237^Fine Crab Chunks
 @i^12238^Darkshore Grouper
 @i^14123^Ritual Cape of the Wolf
@@ -75,6 +83,7 @@ GoldScout-export 9^9d90iqjtch4s^19
 @i^15489^Bloodspattered Sabatons of Stamina
 @i^17057^Shiny Fish Scales
 @i^20708^Tightly Sealed Trunk
+@i^211855^Scroll: STHENIC LUNATE
 @q^414^1:0:0
 @q^730^1:7:1
 @q^770^0:15:0
@@ -98,6 +107,8 @@ GoldScout-export 9^9d90iqjtch4s^19
 @q^3173^1:7:1
 @q^3397^1:12:0
 @q^3667^1:7:1
+@q^3702^0:15:0
+@q^3730^1:7:1
 @q^4306^1:7:1
 @q^4542^1:0:0
 @q^4681^1:4:0
@@ -105,6 +116,7 @@ GoldScout-export 9^9d90iqjtch4s^19
 @q^5348^1:12:0
 @q^5366^1:12:0
 @q^5463^1:12:0
+@q^5471^1:7:1
 @q^5523^1:7:0
 @q^5568^1:6:0
 @q^5784^1:7:1
@@ -113,7 +125,9 @@ GoldScout-export 9^9d90iqjtch4s^19
 @q^6303^1:7:1
 @q^6308^1:7:1
 @q^6358^1:7:1
+@q^6359^1:7:1
 @q^6361^1:7:1
+@q^11406^0:15:0
 @q^12237^1:12:0
 @q^12238^1:0:0
 @q^14123^2:4:0
@@ -124,6 +138,7 @@ GoldScout-export 9^9d90iqjtch4s^19
 @q^15489^2:4:0
 @q^17057^1:15:0
 @q^20708^1:15:0
+@q^211855^1:0:0
 @m^1431^Duskwood
 @m^1437^Wetlands
 @m^1439^Darkshore
@@ -804,6 +819,9 @@ GoldScout-export 9^9d90iqjtch4s^19
 @c^279957^
 @c^279959^
 @c^279961^
+@c^279965^
+@c^279966^
+@c^279967^
 @c^279972^
 @c^279973^
 @c^279974^
@@ -836,7 +854,10 @@ GoldScout-export 9^9d90iqjtch4s^19
 @a^3733^86:2
 @a^3734^86:8
 @a^3740^163:1
-@a^3809^146:1
+@a^3780^189:6
+@a^3809^146:1,188:1,190:1,209:2,230:3
+@a^3817^190:1
+@a^3819^209:1
 @a^3925^146:1
 @a^8996^106:1
 @a^12922^106:2,126:2
@@ -859,11 +880,16 @@ GoldScout-export 9^9d90iqjtch4s^19
 @t^3732^2:477
 @t^3733^2:70
 @t^3734^8:185
+@t^3780^6:362
+@t^3809^5:244
+@t^3817^1:81
+@t^3819^1:145
 @t^3925^1:17
 @t^8996^1:47
 @t^12922^4:24
 @f^1431^0^9^18^6289:5:5,6291:4:4^58:9
-@f^1439^0^36^45^6303:8:8,6358:3:3,6361:9:9,12238:14:14,20708:2:2^89:16,108:2,147:11,166:4,307:3
+@f^1437^0^40^75^6358:9:9,6359:1:1,6361:30:30^221:40
+@f^1439^0^38^45^6303:9:9,6358:3:3,6361:10:10,12238:14:14,20708:2:2^89:16,108:2,147:11,166:6,307:3
 @f^1440^0^1^75^6308:1:1^164:1
 @f^1455^0^12^6^6289:8:8,6291:1:1,6308:3:3^49:12
 @l^0^enUS

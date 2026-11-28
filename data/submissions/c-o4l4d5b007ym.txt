@@ -1,4 +1,4 @@
-GoldScout-export 9^o4l4d5b007ym^23
+GoldScout-export 9^o4l4d5b007ym^24
 588^1^0^34^35^1434^0.2259^0.1211^1^Bloodscalp Scout^3901:1:1^
 595^1^0^34^35^1434^0.2270^0.1246^1^Bloodscalp Hunter^3901:1:1^
 597^2^0^36^37^1434^0.2436^0.1026^2^Bloodscalp Berserker^3915:2:2^
@@ -256,6 +256,8 @@ GoldScout-export 9^o4l4d5b007ym^23
 @i^5840^Searing Tongue
 @i^5841^Searing Heart
 @i^6149^Greater Mana Potion
+@i^6291^Raw Brilliant Smallfish
+@i^6294^12 Pound Mud Snapper
 @i^6308^Raw Bristle Whisker Catfish
 @i^6309^17 Pound Catfish
 @i^6310^19 Pound Catfish
@@ -309,6 +311,9 @@ GoldScout-export 9^o4l4d5b007ym^23
 @i^12203^Red Wolf Meat
 @i^12206^Tender Crab Meat
 @i^13145^Enormous Ogre Belt
+@i^13758^Raw Redgill
+@i^13759^Raw Nightfin Snapper
+@i^13760^Raw Sunscale Salmon
 @i^14238^Darkmist Boots of the Owl
 @i^15233^Savage Axe of Magic
 @i^15798^Chipped Ogre Teeth
@@ -476,6 +481,8 @@ GoldScout-export 9^o4l4d5b007ym^23
 @q^5840^1:12:0
 @q^5841^1:12:0
 @q^6149^1:0:0
+@q^6291^1:7:1
+@q^6294^1:15:0
 @q^6308^1:7:1
 @q^6309^1:15:0
 @q^6310^1:15:0
@@ -529,6 +536,9 @@ GoldScout-export 9^o4l4d5b007ym^23
 @q^12203^1:7:1
 @q^12206^1:7:1
 @q^13145^3:4:0
+@q^13758^1:7:1
+@q^13759^1:7:1
+@q^13760^1:7:1
 @q^14238^2:4:0
 @q^15233^2:2:0
 @q^15798^0:15:0
@@ -610,9 +620,11 @@ GoldScout-export 9^o4l4d5b007ym^23
 @q^279601^1:12:0
 @q^286428^3:4:0
 @q^287010^3:4:0
+@m^1412^Mulgore
 @m^1415^Eastern Kingdoms
 @m^1417^Arathi Highlands
 @m^1434^Stranglethorn Vale
+@m^1444^Feralas
 @m^1445^Dustwallow Marsh
 @m^1446^Tanaris
 @m^2548^Riverglades
@@ -1083,7 +1095,9 @@ GoldScout-export 9^o4l4d5b007ym^23
 @t^255772^5:365
 @t^255774^6:920
 @t^255899^4:208
+@f^1412^0^2^193^6291:1:1,6294:1:1^228:2
 @f^1417^0^173^149^6308:65:65,6309:1:1,6310:1:1,6363:1:1,8365:105:105^204:173
+@f^1444^0^45^194^6358:1:1,8365:3:3,13758:30:30,13759:6:6,13760:5:5^175:45
 @f^1446^0^11^190^4603:6:6,6358:3:3,6359:1:1,7973:1:1^93:11
 @f^2548^0^11^191^6308:6:6,8365:5:5^270:11
 @l^0^enUS

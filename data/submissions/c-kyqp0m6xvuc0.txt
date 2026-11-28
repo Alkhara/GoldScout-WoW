@@ -1,4 +1,8 @@
-GoldScout-export 9^kyqp0m6xvuc0^4
+GoldScout-export 9^kyqp0m6xvuc0^5
+2559^9^0^30^31^1417^0.5757^0.4602^9^Arpenteur des hautes-terres^1696:2:2,3685:3:3,4461:6:6,12184:4:4,211854:1:1^
+2563^2^0^32^33^1417^0.6593^0.4960^2^Rampant des plaines^878:1:1,1074:1:1,1081:1:1,2251:2:2^
+2578^1^0^31^32^1417^0.6559^0.4924^1^Jeune busard des mésas^1464:1:1,3404:1:1^
+2762^11^0^38^39^1417^0.5181^0.5063^11^Exilé foudroyant^4480:6:6,7069:7:7,248690:1:1^
 2957^1^0^9^9^1412^0.4917^0.3257^1^Vieux trotteur des plaines^4757:1:1^
 2959^21^0^7^8^1412^0.4910^0.5003^21^Traqueur des prairies^774:1:1,2672:14:14,3300:3:3,4565:1:1,4801:6:6^
 2960^25^0^9^10^1412^0.4354^0.2339^21^Loup Alpha des prairies^2672:19:19,3299:7:7,3300:6:6,4803:8:8,211785:1:1^
@@ -31,6 +35,9 @@ GoldScout-export 9^kyqp0m6xvuc0^4
 @i^159^Eau de source
 @i^774^Malachite
 @i^828^Petite bourse bleue
+@i^878^Petite filière
+@i^1074^Patte d'araignée
+@i^1081^Chair croustillante d'araignée
 @i^1412^Bâtarde rudimentaire
 @i^1413^Epée médiocre
 @i^1414^Masse craquelée
@@ -40,10 +47,13 @@ GoldScout-export 9^kyqp0m6xvuc0^4
 @i^1425^Gilet usé en cuir
 @i^1429^Cape en patchwork
 @i^1430^Gants en patchwork
+@i^1464^Serre de busard
 @i^1513^Vieille épée longue
+@i^1696^Griffe de raptor
 @i^1733^Cape usée
 @i^2212^Targe craquelée
 @i^2215^Bouclier en bois
+@i^2251^Patte d'araignée fondante
 @i^2589^Etoffe de lin
 @i^2643^Brassards en anneaux distendus
 @i^2646^Pantalon en anneaux distendus
@@ -56,7 +66,11 @@ GoldScout-export 9^kyqp0m6xvuc0^4
 @i^3286^Gants tribaux
 @i^3299^Canine cassée
 @i^3300^Patte de lapin
+@i^3404^Aile de busard
 @i^3609^Plans : Lorica en cuivre
+@i^3685^Oeuf de raptor
+@i^4461^Peau de raptor
+@i^4480^Charme de tonnerre
 @i^4565^Dague simple
 @i^4669^Ceinturon de bataille en anneaux
 @i^4672^Ceinture ancestrale
@@ -77,9 +91,11 @@ GoldScout-export 9^kyqp0m6xvuc0^4
 @i^4903^Oeil de l'ombre ardente
 @i^5203^Griffe de Rôdeur des basses plaines
 @i^6889^Petit oeuf
+@i^7069^Air élémentaire
 @i^7096^Plume arrachée
 @i^8177^Epée d'entraînement
 @i^8181^Carabine de chasse
+@i^12184^Chair de raptor
 @i^14089^Gants perlés
 @i^14098^Cape indigène
 @i^14544^Insigne de lieutenant
@@ -90,6 +106,8 @@ GoldScout-export 9^kyqp0m6xvuc0^4
 @i^17056^Plume légère
 @i^211785^Parchemin : FIGERF
 @i^211787^Parchemin : LOWER PING WHOMEVER
+@i^211854^Parchemin : OMIT KESA
+@i^248690^Caisse détournée : plantes terreuses d'expert
 @i^270302^Fourrure de Chakuyak
 @i^281031^Plans d'expansion de Mulgore
 @i^281048^Clé de déboiseur
@@ -99,6 +117,9 @@ GoldScout-export 9^kyqp0m6xvuc0^4
 @q^159^1:0:0
 @q^774^2:7:1
 @q^828^1:1:0
+@q^878^0:7:0
+@q^1074^0:15:0
+@q^1081^1:7:1
 @q^1412^0:2:0
 @q^1413^0:2:0
 @q^1414^0:2:0
@@ -108,10 +129,13 @@ GoldScout-export 9^kyqp0m6xvuc0^4
 @q^1425^0:4:0
 @q^1429^0:4:0
 @q^1430^0:4:0
+@q^1464^0:15:0
 @q^1513^0:2:0
+@q^1696^0:15:0
 @q^1733^0:4:0
 @q^2212^0:4:0
 @q^2215^0:4:0
+@q^2251^1:7:1
 @q^2589^1:7:1
 @q^2643^0:4:0
 @q^2646^0:4:0
@@ -124,7 +148,11 @@ GoldScout-export 9^kyqp0m6xvuc0^4
 @q^3286^1:4:0
 @q^3299^0:15:0
 @q^3300^0:15:0
+@q^3404^1:7:1
 @q^3609^2:9:0
+@q^3685^1:7:1
+@q^4461^1:7:1
+@q^4480^1:0:0
 @q^4565^1:2:0
 @q^4669^1:4:0
 @q^4672^1:4:0
@@ -145,9 +173,11 @@ GoldScout-export 9^kyqp0m6xvuc0^4
 @q^4903^1:12:0
 @q^5203^1:12:0
 @q^6889^1:7:1
+@q^7069^1:7:1
 @q^7096^0:15:0
 @q^8177^1:2:0
 @q^8181^1:2:0
+@q^12184^1:7:1
 @q^14089^1:4:0
 @q^14098^1:4:0
 @q^14544^1:12:0
@@ -158,12 +188,15 @@ GoldScout-export 9^kyqp0m6xvuc0^4
 @q^17056^1:15:1
 @q^211785^1:0:0
 @q^211787^1:0:0
+@q^211854^1:0:0
+@q^248690^1:0:1
 @q^270302^1:12:0
 @q^281031^1:12:0
 @q^281048^1:12:0
 @q^286075^1:12:0
 @m^1411^Durotar
 @m^1412^Mulgore
+@m^1417^Hautes-terres d'Arathi
 @c^724^
 @c^733^
 @c^787^
@@ -848,6 +881,10 @@ GoldScout-export 9^kyqp0m6xvuc0^4
 @c^279985^
 @c^279987^
 @c^286152^
+@a^2559^171:2,172:1,190:3,191:2,192:1
+@a^2563^193:2
+@a^2578^193:1
+@a^2762^190:3,210:8
 @a^2957^129:1
 @a^2959^169:6,188:2,189:3,208:3,210:2,230:1,231:3,251:1
 @a^2960^47:1,67:1,68:1,87:3,88:5,89:5,108:2,109:1,129:1,169:1
@@ -875,4 +912,8 @@ GoldScout-export 9^kyqp0m6xvuc0^4
 @a^272173^171:1
 @a^275767^252:1
 @a^276105^231:1
+@t^2559^7:482
+@t^2563^2:28
+@t^2578^1:77
+@t^2762^11:617
 @l^0^frFR
