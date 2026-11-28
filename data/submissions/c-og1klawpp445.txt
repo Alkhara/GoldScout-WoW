@@ -1,4 +1,4 @@
-GoldScout-export 8^og1klawpp445^64
+GoldScout-export 8^og1klawpp445^65
 3^2^0^24^25^1431^0.2190^0.3446^2^Flesh Eater^887:1:1,1129:1:1^
 48^23^0^21^22^1431^0.7894^0.7114^23^Skeletal Warrior^929:1:1,1748:1:1,1820:1:1,2378:3:3,2592:5:10,4306:1:1,4606:1:1,248685:1:1,251336:1:1^
 114^1^0^14^14^1436^0.3757^0.5077^1^Harvest Watcher^1274:1:1,3374:1:1^
@@ -197,8 +197,11 @@ GoldScout-export 8^og1klawpp445^64
 2589^1^0^31^31^1417^0.3358^0.2951^1^Syndicate Mercenary^^
 2592^3^0^38^39^1417^0.3626^0.5634^3^Rumbling Exile^4552:1:1,4727:1:1,4784:1:1,7067:1:1,7912:2:3^
 2635^1^0^38^38^1434^0.2517^0.1911^1^Elder Saltwater Crocolisk^3667:1:1,4105:1:1^
+2653^2^0^44^44^1425^0.3478^0.6735^2^Witherbark Sadist^1520:1:1,9259:1:1^
+2686^1^0^44^45^1425^0.3429^0.6299^1^Witherbark Broodguard^4585:1:1^
 2727^1^0^35^36^1418^0.5441^0.2580^1^Crag Coyote^12203:1:1^
 2791^2^0^42^42^1418^0.5322^0.7970^2^Enraged Rock Elemental^4552:1:1,4784:1:1,7067:1:1,7912:1:1,213546:1:1^
+2924^1^0^43^44^1425^0.3159^0.6466^1^Silvermane Wolf^12203:1:1^
 3379^1^0^10^10^1413^0.4799^0.1887^1^Burning Blade Bruiser^^
 3380^1^0^11^11^1413^0.4799^0.1887^1^Burning Blade Acolyte^^
 3630^1^0^15^16^1414^0.5190^0.5483^1^Deviate Coiler^6443:1:1^
@@ -379,6 +382,8 @@ GoldScout-export 8^og1klawpp445^64
 5763^4^0^0^0^0^0.0000^0.0000^0^^2219:1:1,3669:1:1,3670:2:2,3674:1:1,3676:3:3^
 5775^1^0^0^0^0^0.0000^0.0000^0^^858:1:1,1206:1:1,2449:1:1,6630:1:1^
 5841^1^0^17^17^1413^0.5346^0.4447^1^Rocklance^14722:1:1,285339:1:1^
+6125^1^0^46^46^1447^0.2171^0.6057^1^Haldarr Satyr^^
+6127^1^0^47^47^1447^0.2138^0.6122^1^Haldarr Felsworn^^
 6523^1^0^27^28^1437^0.4912^0.1634^1^Dark Iron Rifleman^^
 8886^5^0^0^0^0^0.0000^0.0000^0^^6443:2:2,6444:3:3^
 9377^1^0^33^34^1441^0.8073^0.6417^1^Swirling Vortex^15243:1:1^
@@ -887,6 +892,7 @@ GoldScout-export 8^og1klawpp445^64
 @i^8181^Hunting Rifle
 @i^8492^Parrot Cage (Green Wing Macaw)
 @i^8746^Interlaced Cowl
+@i^9259^Troll Tribal Necklace
 @i^9451^Bubbling Water
 @i^9766^Greenweave Sash of the Whale
 @i^9768^Greenweave Bracers of Intellect
@@ -1490,6 +1496,7 @@ GoldScout-export 8^og1klawpp445^64
 @q^8181^1:2:0
 @q^8492^1:15:0
 @q^8746^0:4:0
+@q^9259^1:15:0
 @q^9451^1:0:0
 @q^9766^2:4:0
 @q^9768^2:4:0
@@ -1672,6 +1679,7 @@ GoldScout-export 8^og1klawpp445^64
 @m^1417^Arathi Highlands
 @m^1418^Badlands
 @m^1424^Hillsbrad Foothills
+@m^1425^The Hinterlands
 @m^1426^Dun Morogh
 @m^1429^Elwynn Forest
 @m^1431^Duskwood
@@ -1686,6 +1694,7 @@ GoldScout-export 8^og1klawpp445^64
 @m^1442^Stonetalon Mountains
 @m^1443^Desolace
 @m^1445^Dustwallow Marsh
+@m^1447^Azshara
 @m^1457^Darnassus
 @m^2521^Zephras Isle
 @m^2548^Riverglades
@@ -2926,8 +2935,11 @@ GoldScout-export 8^og1klawpp445^64
 @a^2589^106:1
 @a^2592^227:3
 @a^2635^65:1
+@a^2653^246:1,286:1
+@a^2686^246:1
 @a^2727^110:1
 @a^2791^310:2
+@a^2924^246:1
 @a^3379^69:1
 @a^3380^69:1
 @a^3630^210:1
@@ -3061,6 +3073,8 @@ GoldScout-export 8^og1klawpp445^64
 @a^5622^72:1
 @a^5643^110:1
 @a^5841^170:1
+@a^6125^244:1
+@a^6127^244:1
 @a^6523^69:1
 @a^9377^256:1
 @a^10617^127:1
